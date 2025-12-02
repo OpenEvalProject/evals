@@ -1,0 +1,2111 @@
+{
+  "submission": {
+    "id": "ad0c0e39-0da5-4971-a64c-ec1ffb77a98e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:59:37.796425Z",
+    "updated_at": "2025-12-02T11:59:37.796425Z"
+  },
+  "content": [
+    {
+      "id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "submission_id": "ad0c0e39-0da5-4971-a64c-ec1ffb77a98e",
+      "content_type": "manuscript",
+      "content_text": "# Androgen-regulated transcription of ESRP2 drives alternative splicing patterns in prostate cancer\n\n## Authors\n\n- Jennifer Munkley<sup>1</sup> ([ORCID: 0000-0002-8631-4531](https://orcid.org/0000-0002-8631-4531)) \u2020\n- Ling Li<sup>2</sup>\n- S R Gokul Krishnan<sup>1</sup> ([ORCID: 0000-0003-4886-2710](https://orcid.org/0000-0003-4886-2710))\n- Gerald Hysenaj<sup>1</sup>\n- Emma Scott<sup>1</sup>\n- Caroline Dalgliesh<sup>1</sup>\n- Htoo Zarni Oo<sup>3</sup>\n- Teresa Mendes Maia<sup>5</sup> ([ORCID: 0000-0003-0038-9629](https://orcid.org/0000-0003-0038-9629))\n- Kathleen Cheung<sup>9</sup>\n- Ingrid Ehrmann<sup>1</sup>\n- Karen E Livermore<sup>1</sup>\n- Hanna Zielinska<sup>2</sup>\n- Oliver Thompson<sup>2</sup>\n- Bridget Knight<sup>10</sup>\n- Paul McCullagh<sup>11</sup>\n- John McGrath<sup>12</sup>\n- Malcolm Crundwell<sup>13</sup>\n- Lorna W Harries<sup>2</sup>\n- Mads Daugaard<sup>3</sup>\n- Simon Cockell<sup>9</sup>\n- Nuno L Barbosa-Morais<sup>5</sup> ([ORCID: 0000-0002-1215-0538](https://orcid.org/0000-0002-1215-0538)) \u2020\n- Sebastian Oltean<sup>2</sup> \u2020\n- David J Elliott<sup>1</sup> ([ORCID: 0000-0002-6930-0699](https://orcid.org/0000-0002-6930-0699)) \u2020\n\n### Affiliations\n\n1. Institute of Genetic Medicine University of Newcastle Newcastle United Kingdom\n2. Institute of Biomedical and Clinical Sciences, Medical School, College of Medicine and Health University of Exeter Exeter United Kingdom\n3. Department of Urologic Sciences University of British Columbia Vancouver Canada\n4. Vancouver Prostate Centre Vancouver Canada\n5. Instituto de Medicina Molecular Jo\u00e3o Lobo Antunes, Faculdade de Medicina Universidade de Lisboa Lisboa Portugal\n6. VIB Center for Medical Biotechnology VIB Ghent Belgium\n7. VIB Proteomics Core VIB Ghent Belgium\n8. Department for Biomolecular Medicine Ghent University Ghent Belgium\n9. Bioinformatics Support Unit, Faculty of Medical Sciences Newcastle University Newcastle United Kingdom\n10. NIHR Exeter Clinical Research Facility Royal Devon and Exeter NHS Foundation Trust Exeter United Kingdom\n11. Department of Pathology Royal Devon and Exeter NHS Foundation Trust Exeter United Kingdom\n12. Exeter Surgical Health Services Research Unit Royal Devon and Exeter NHS Foundation Trust Exeter United Kingdom\n13. Department of Urology Royal Devon and Exeter NHS Foundation Trust Exeter United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nProstate is the most frequent cancer in men. Prostate cancer progression is driven by androgen steroid hormones, and delayed by androgen deprivation therapy (ADT). Androgens control transcription by stimulating androgen receptor (AR) activity, yet also control pre-mRNA splicing through less clear mechanisms. Here we find androgens regulate splicing through AR-mediated transcriptional control of the epithelial-specific splicing regulator ESRP2. Both ESRP2 and its close paralog ESRP1 are highly expressed in primary prostate cancer. Androgen stimulation induces splicing switches in many endogenous ESRP2-controlled mRNA isoforms, including splicing switches correlating with disease progression. ESRP2 expression in clinical prostate cancer is repressed by ADT, which may thus inadvertently dampen epithelial splice programmes. Supporting this, treatment with the AR antagonist bicalutamide (Casodex) induced mesenchymal splicing patterns of genes including FLNB and CTNND1. Our data reveals a new mechanism of splicing control in prostate cancer with important implications for disease progression.\n\n## Introduction\n\nProstate is the most common male sex-specific cancer (Center et al., 2012). Prostate cancer progression is controlled by androgen steroid hormones including testosterone and its active metabolite 5-\u03b1 dihydroxytestosterone. Androgens stimulate androgen receptor (AR) signalling in prostate cancer cells to control transcription, including of genes that regulate the cell cycle, central metabolism and biosynthesis, as well as housekeeping functions (Livermore et al., 2016). The roles of both androgens and the AR in transcription have been intensively investigated. However, androgens and the AR also regulate alternative pre-mRNA splicing through still largely unknown mechanisms (Munkley et al., 2018; Rajan et al., 2011). This represents a very important knowledge gap: alternative splicing patterns in cancer cells can generate protein isoforms with different biological functions (Oltean and Bates, 2014), and is a key process in the generation of biological heterogeneity in prostate cancer (Rajan et al., 2009).\n\nAndrogens are also closely linked to prostate cancer treatment, with androgen deprivation therapy (ADT) being the principal pharmacological strategy for locally advanced and metastatic disease. ADT utilises drugs to inhibit gonadal and extra-gonadal androgen biosynthesis and competitive AR antagonists to block androgen binding and abrogate AR function (Livermore et al., 2016). ADT delays disease progression, but after 2\u20133 years tumours often grow again, developing castration resistance with a median survival time of 16 months (Karantanos et al., 2013). The central role of androgens and the AR in prostate cancer, and the poor clinical outlook of castration-resistance prostate cancer (CRPCa), have made it crucially important to identify androgen-regulated target genes and mechanisms of function \u2013particularly those that relate to metastasis. The process of epithelial-mesenchymal transition (EMT) plays a pivotal role in prostate cancer metastasis (Gravdal et al., 2007; Matuszak and Kyprianou, 2011; Min et al., 2010; Saini et al., 2011; Xie et al., 2010). While the mechanisms driving EMT in prostate cancer are poorly understood, ADT has recently been shown to directly induce EMT in both mouse and human prostate tissue (Sun et al., 2012; Zhifang et al., 2015). Importantly, changes in alternative splicing patterns can have dramatic effects on EMT and on metastatic disease progression (Pradella et al., 2017).\n\nWhile the mechanisms through which androgens regulate splicing control are not well understood, splicing itself takes place in the spliceosome, which is a multi-component structure containing a core of essential proteins and small nuclear RNAs (Papasaikas and Valc\u00e1rcel, 2016). Splicing inclusion of alternative exons is often controlled by splicing regulator proteins that bind either to regulated exons or within their adjacent flanking intron sequences (Gabut et al., 2008). The estrogen and progesterone steroid nuclear hormone receptors control splicing via recruitment of alternative splicing regulators (including the RNA helicases Ddx5 and Ddx17) (Auboeuf et al., 2007; Auboeuf et al., 2004; Auboeuf et al., 2002), and by changing RNA polymerase II extension rates and chromatin structure to affect splice site selection (Kornblihtt et al., 2009; Naftelberg et al., 2015). Steroid hormones can also drive selection of alternative promoters to include different upstream exons in mRNAs (Dutertre et al., 2010; Munkley et al., 2018). However, to what extent the above mechanisms may contribute to androgen-mediated splicing is largely unknown.\n\nWe reasoned that a potential model to unify the role of androgens and the AR in transcription and splicing control could be via transcriptional regulation of genes that encode splicing regulatory proteins.To address this we analysed\u00a0a recently described set of genes that reciprocally change expression in response to androgen stimulation in culture and ADT in patients (Munkley et al., 2016). Here we identify AR-mediated transcriptional control of the key splicing regulator protein Epithelial Splicing Regulator Protein 2 (ESRP2). Importantly, many ESRP2-regulated exons switch splicing in response to androgen stimulation. ESRP2 and its close relative ESRP1 (60% identical to ESRP2 protein) are important regulators of epithelial alternative splicing patterns (Bebee et al., 2015; Kalluri and Weinberg, 2009; Oltean and Bates, 2014; Valastyan and Weinberg, 2011; Warzecha et al., 2010; Warzecha et al., 2009a; Warzecha et al., 2009b), reduced expression of which can drive critical aspects of EMT (Hayakawa et al., 2017; Pradella et al., 2017; Warzecha et al., 2010). Our data identify an AR-ESRP2 axis controlling splicing patterns in prostate cancer cells, and further suggest that reduced ESRP2 levels in response to ADT may inadvertently help prime prostate cancer cells to facilitate longer term disease progression.\n\n## Results\n\n### ESRP2 is a direct target for AR regulation in prostate cancer cells\n\nTo first gain insight into how androgens may mediate patterns of splicing control, we analysed a recently generated dataset of genes that exhibit reciprocal expression patterns on acute androgen stimulation in vitro versus clinical ADT (Munkley et al., 2016). While a number of genes encoding splicing factors changed expression in response to acute androgen stimulation in vitro, ESRP2 also showed a reciprocal expression switch between acute androgen stimulation in culture and ADT in patients (Munkley et al., 2016). ESRP2 expression decreased following ADT in 7/7 prostate cancer patients (Rajan et al., 2014) (Figure 1A). Furthermore, RNAseq data prepared from different stages of LTL331 patient-derived xenografts (Akamatsu et al., 2015) showed reduced ESRP2 mRNA levels following castration and relapse neuroendocrine prostate cancer (NEPC, Figure 1B). We similarly analysed expression of ESRP1. ESRP1 is a close paralog of ESRP2, but was not identified in our initial screen to identify androgen-regulated genes\u00a0(Munkley et al., 2016). ESRP1 expression levels also reduced following ADT (Figure 1A). However, ESRP1 showed less change in gene expression compared to ESRP2 in patient-derived xenografts following castration or relapse NEPC (Figure 1C) (Akamatsu et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig1-v2.jpg)\n\n**Figure 1.:** (A) Analysis of RNAseq data from human prostate cancer pre- and post- androgen deprivation therapy (ADT) (Chen et al., 2018; Rajan et al., 2014) shows that there is a significant downregulation of ESRP1 and ESRP2 mRNA following ADT in all seven patients tested (p=6e-04, Mann Whitney U test). (B\u2013C) RNAseq data from LTL331 patient-derived xenografts grown in mice (Akamatsu et al., 2015) show a greater reduction in (B) ESRP2 mRNA levels following castration compared to (C) ESRP1 mRNA levels. (D) Western blot analysis of ESRP2 levels in a range of prostate cancer cell lines (actin was used as a loading control). (E) Western blot analysis of ESRP1 levels in prostate cancer cell lines. (F) Real-time PCR analysis of ESRP2 and ESRP1 mRNAs in LNCaP cells grown in steroid deplete (SD) or androgen (A+) treated conditions for 24 hr (statistical significance calculated by t test). (G) Real-time PCR analysis of ESRP2 mRNA in RWPE-1 cells grown in steroid deplete (SD) or androgen (A+) treated conditions for 24 hr. (H) Western blots analysis of ESRP1 and 2 protein in LNCaP cells treated with 10nm R1881 (androgens) for 24 and 48 hr. (I) Quantitative analysis (real-time PCR) of ESRP2 mRNA expression over a 24 hr time course following androgen exposure. (J) Real-time PCR analysis of AR-ChIP performed in LNCaP cells treated with 10nM R1881 for 24 hr revealed AR binding proximal to the ESRP2 gene. (K) Induction of ESRP2 is evident in LNCaP cells treated with R1881 concentrations between 1 to 100 nM (p value of 0.029 is for the comparison between 0 nm and 10nm R1881). Statistical significances were calculated by t tests, apart from (A) which used a Mann Whitney U test, and H which used Two-way ANOVA. Real time PCR analyses used at least three independent biological replicates (RNA prepared from separate samples), apart from the AR ChIP (panel I) for which each value shown is a mean of 3 technical replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Detection of ESRP1 and ESRP2 proteins in PC3 cells by Western blot. Note that both specific antibodies are able to detect the endogenous protein and the specific over-expressed protein, but they do not cross-react. (B) Detection of ESRP1 and ESRP2 proteins in LNCaP cells by Western blot, using protein isolated from cells treated with a control siRNA, or after siRNA-mediated depletion of ESRP1 and ESRP2. (C) Detection of ESRP1 and ESRP2 proteins in PC3 cells by immunohistochemistry.\n\nFurther analyses supported androgen-mediated control of ESRP2 but not ESRP1 in prostate cancer cell lines. Western blots detected high endogenous levels of both ESRP1 and ESRP2 proteins within the AR positive LNCaP and CWR22 RV1 prostate cancer cell lines, as compared to the AR negative PC3 and DU145 prostate cancer cell lines (Figure 1D and E). However, qPCR analysis showed that while androgens activated ESRP2 gene expression in response to in AR-positive LNCaP cells, this was not observed for ESRP1 gene expression (Figure 1F). Androgen mediated-control of ESRP2 expression was also detected in two additional AR-expressing prostate cell lines (VCaP and RWPE-1, Figure 1G). ESRP2 protein expression was detected 48 hr after androgen exposure, with ESRP1 protein levels not changing over this same time-period (Figure 1H). The specificity of the ESRP1 and ESRP2 antibodies used in these experiments was confirmed by detection of over-expressed protein and detection of siRNA mediated protein depletion by western blot (Figure 1\u2014figure supplement 1).\n\nFurther experimental analyses also supported ESRP2 as an early and so likely direct target for transcriptional control by the AR: (i) ESRP2 gene expression in LNCaP cells was rapidly induced in response to 10 nM of the synthetic androgen analogue R1881 (methytrienolone) (Figure 1I). (ii) Chromatin immunoprecipitation (ChIP) from LNCaP cells confirmed direct AR binding to a site within 20 Kb of the ESRP2 gene promoter that had been previously predicted from a genome-wide study (at position chr16: 68210834\u201368211293 on human genome assembly hg38) (Massie et al., 2011) (Figure 1J). The AR ChIP signal adjacent to ESRP2 was similar to that detected in parallel for KLK3 (encoding prostate specific antigen, or PSA), which is a known AR-regulated gene. (iii) Consistent with ESRP2 regulation at physiological androgen concentrations, ESRP2 transcription in LNCaP cells was induced over a wide range of R1881 concentrations, ranging from 1 nM to 100 nM (Figure 1K). Each of these above data are consistent with AR-mediated regulation of ESRP2 expression levels within prostate cancer cell lines as well as tissue.\n\n### ESRP2 and its paralog ESRP1 are highly expressed in primary prostate tumours and inhibit tumour growth in vivo\n\nWe next monitored ESRP1 and ESRP2 expression profiles from prostate cancer patients. Meta-analysis of 719 clinical prostate cancer tumours from 11 previously published studies detected significant up-regulation of both ESRP1 and ESRP2 in 9/11 datasets (Figure 2\u2014source data 1) (Arredouani et al., 2009; Cancer Genome Atlas Research Network, 2015; Fraser et al., 2017; Grasso et al., 2012; Lapointe et al., 2004; Liu et al., 2006; Luo et al., 2002; Taylor et al., 2010; Tomlins et al., 2007; Vanaja et al., 2003; Varambally et al., 2005; Wallace et al., 2008). We experimentally validated this meta-analysis using two independent panels of clinical samples. Real-time PCR showed significant up-regulation of both ESRP1 and ESRP2 mRNA in (1) prostate carcinoma relative to benign prostate hyperplasia (BPH) (Figure 2A); and (2) in nine prostate tumour samples relative to matched normal tissue from the same patient (Figure 2B). A recent study by Walker et al. (2017) identified a molecular subgroup of prostate cancers with metastatic potential at presentation. Within this dataset ESRP1 was 2.76 fold up-regulated in the \u2018metastatic-subgroup\u2019 compared to the \u2018non-metastatic subgroup\u2019. Using RNA from a subset of samples from the Walker et al. study, we confirmed significant (p<0.05) upregulation of the ESRP1 gene in primary prostate cancer patients presenting with a metastatic biology (Figure 2C). ESRP2 gene expression did not significantly increase in the 20 samples studied. We also used these same samples to assess if the observed up-regulation of ESRP1 and ESRP2 could result from prostate tumours consisting of a more pure population of epithelial-derived cells compared to matched tissue. Arguing against this possibility, levels of E-Cadherin were not significantly increased between BPH compared to prostate carcinoma, or between matched tumour and normal prostate tissue from patients (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig2-v2.jpg)\n\n**Figure 2.:** (A) Real-time PCR analysis of ESRP1 and ESRP2 mRNA from patients with benign prostate hyperplasia (BPH) and 17 malignant samples from transurothelial resection of the prostate (TURP) samples. (B) Real-time PCR analysis of ESRP1 and ESRP2 mRNA from normal and matched prostate cancer tissue from nine patients obtained from radical prostatectomy. (C) Analysis of ESRP1 and ESRP2 mRNA levels in samples from the Walker et al. (2017) cohort. Statistical analysis in parts (A)-(C) were performed using t tests. (D) Interrogation of the TCGA PRAD (PRostate ADenocarcinoma) cohort using KM-express (Chen et al., 2018). ESRP1 expression levels linked to a reduced time to PSA biochemical recurrence (bifurcate gene expression at average, log-rank test p=0.022). Over-expression of (E) ESRP1, (F) ESRP2, or (G) both ESRP1 and ESRP2 in PC3 cells significantly slowed the growth of prostate cancer xenografts in vivo. Data were analysed by Two-way ANOVA, and the p value is for the overall difference between two groups.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Real-time PCR analysis of E-Cadherin mRNA from patients with benign prostate hyperplasia (BPH) and 17 malignant samples from transurothelial resection of the prostate (TURP) samples. (B) Real-time PCR analysis of E-Cadherin mRNA from normal and matched prostate cancer tissue from nine patients obtained from radical prostatectomy.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) PC3 and (B) DU145 cell line models reduced prostate cancer cell growth in vitro. Data were analysed by Two-way ANOVA, and the p value is for the overall difference between two groups.\n\nEach of the above data showed that ESRP1 and ESRP2 expression levels are relatively high in primary prostate cancer compared to normal prostate tissue. High ESRP2 expression was not prognostic of disease progression in the TCGA (PRostate ADenocarcinoma) PRAD cohort analysed using KM-express (Chen et al., 2018), but high expression of ESRP1 associated with a significantly reduced time to first biochemical recurrence (p=0.022) (Figure 2D). We tested our antibodies against ESRP1 and ESRP2 proteins on prostate cancer FFPE tissue and cell blocks, but they did not pass our stringent quality control tests (Figure 1\u2014figure supplement 1C).\u00a0While this manuscript was in preparation, another group used an alternative ESRP1 antibody to show up-regulation of ESRP1 in 12,000 prostate cancer tissue microarray tumours (Gerhauser et al., 2018).\n\nWe next investigated the effects of ESRP1/2 expression on the biology of prostate cancer cells in vivo. Because of their low normal endogenous expression profiles (Figure 1C and D), we selected PC3 and DU145 cells to study the effects on prostate cancer cells of ESRP1/ESRP2 protein up-regulation. Ectopic expression of ESRP1 and ESRP2 protein expression in AR negative PC3 and DU145 cell line models reduced prostate cancer cell growth in vitro (Figure 2\u2014figure supplement 2). Over-expression of both ESRP1 and ESRP2 (either alone or together) in PC3 cells also significantly slowed growth of prostate cancer xenografts in vivo (Figure 2E\u2013G). Taken together, the above data show that ectopic expression of ESRP1 and ESRP2 proteins slow the growth of PC3 and DU145 prostate cancer cell lines and are strongly suggestive that high levels of ESRP2 protein inhibit growth of prostate cancer cells.\n\n### Identification of endogenous ESRP1/ESRP2-regulated targets in prostate cancer cells\n\nTo enable us to test whether androgens may control splicing indirectly via transcriptional regulation of ESRP2, we next set out to identify a panel of endogenous ESRP2-responsive exons within prostate cancer cells. We first used siRNAs to jointly deplete both ESRP1 and ESRP2 proteins from LNCaP cells (since ESRP1 and ESRP2 can regulate overlapping targets); and in parallel treated LNCaP cells with a control siRNA. We then used RNAseq to monitor the effects of these treatments on the LNCaP transcriptome. Bioinformatic analysis (Trincado et al., 2018) of these RNAseq data (GSE129540) predicted 446 ESRP1/ESRP2 regulated alternative splicing events across 319 genes (\u0394PSI\u00a0>\u00a010%, p<0.05) (Figure 3\u2014source data 1). We experimentally validated splicing switches for 44 predicted ESRP1/ESRP2-controlled exons by RT-PCR analysis, after LNCaP cells were treated with either of two independent sets of siRNAs directed against ESRP1 and ESRP2 or control siRNAs (Figure 3 and Figure 3\u2014source data 2). We detected similar splicing switches for 35/44 of these skipped exons after jointly depleting ESRP1 and 2 from the AR-positive CWR22 RV1 prostate cancer cell line. 28/44 of these splicing switches were also observed after jointly depleting ESRP1 and ESRP2 from the AR positive PNT2 cells that model the normal prostate epithelium (Figure 3 and Figure 3\u2014source data 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig3-v2.jpg)\n\n**Figure 3.:** Heat map showing mean PSI levels for a panel of ESRP-regulated exons in prostate cancer cell lines (CWR22RV1, PNT2, LNCaP and PC3). Mean PSIs were calculated for ESRP-regulated isoforms between cells treated with siRNAs specific to ESRP1 and ESRP2, or control siRNAs (CWR22RV1, PNT2, LNCaP), between PC3 cells with and without ectopic expression of ESRP1 or ESRP2, and between LNCaP cells grown in steroid deplete versus androgen stimulated conditions (10nM R1881 for 48 hr). Biological triplicate samples were used for CWR22RV1, PNT2 and LNCaP cells, and technical replicate samples were used for RNAs prepared from PC3 cells. PSI levels were measured using RT-PCR analysis averaged from three replicates (mean data given in Figure 3\u2014source data 2), and clustered in the heat map according to splicing patterns across the different conditions. The heatmap was generated using heatmap.2 function using R\u2019s \u2018gplots\u2019 package. The black shading in the heatmap denotes non-detection of the mRNA isoform after RT-PCR, and white denotes no change detected.\n\nGiven this set of endogenous target exons, we carried out further analyses to next identify target exons that respond to increasing levels of either ESRP2 or ESRP1 expression in PC3 cells (which normally express low levels of endogenous ESRP1/ESRP2) (Figure 1D and E). Ectopic expression of either ESRP1 or ESRP2 in PC3 cells induced splicing switches for 31/42 exons analysed. Importantly, the splicing switches induced by ectopic expression of either ESRP2 or ESRP1 were reciprocal to the splicing switches detected after siRNA depletion of ESRP1/ESRP2 (Figure 3). Experimentally validated ESRP-regulated exons fell into two groups. Splicing of one group of exons were repressed by ectopic expression of ESRP1 or ESRP2 in PC3 cells, and reciprocally activated by endogenous ESRP1/ESRP2 depletion in LNCaP cells (these exons are in the top of the heatmap in Figure 3, from OSBL3 to FN1). Splicing of the second group of exons were activated by ectopic expression of ESRP1 or ESRP2, and reciprocally repressed by ESRP1/ESRP2 depletion (from TRIP10 to ITGA6 in Figure 3).\n\n### An androgen steroid hormone-ESRP2 axis controls alternative splicing in AR-positive prostate cancer cells\n\nThe above data identified a robust panel of alternative exons within prostate cancer cells that responded to ESRP1/ESRP2 expression levels. We next tested if this panel of ESRP2-regulated exons are additionally regulated by ambient androgen concentrations. LNCaP cells were harvested after growth in steroid deplete media and after 48 hr of androgen stimulation (this timing was designed to enable full levels of androgen-mediated ESRP2 protein induction, Figure 1H). Our prediction was that androgen stimulation of LNCaP cells would activate ESRP2 expression to regulate our panel of endogenous test exons. If this was the case, splicing switches in response to androgen stimulation should occur in a reciprocal direction to splicing changes induced by ESRP1/ESRP2 protein depletion in LNCaP cells. Consistent with these expectations, more than 70% (37/44) exons in our test panel demonstrated androgen regulated splicing (Figure 3\u2014source data 2). Importantly, plotting the percent spliced-in (PSI) for each exon after 48 hr androgen stimulation (Y axis) versus the PSI after ESRP1/ESRP2 depletion (X axis) showed a significant negative correlation (slope\u00a0=\u00a0\u22120.66, R2\u00a0=\u00a00.64, p<0.0001) (Figure 4A). Thus, exons that showed more exon skipping in response to ESRP1/ESRP2 depletion had higher splicing inclusion after androgen stimulation (which would induce ESRP2 expression) (examples shown in Figure 4A and B). Reciprocally, exons that showed higher splicing inclusion in response to ESRP1/2 depletion also had less splicing inclusion after androgen stimulation (examples shown in Figure 4A and C). These results experimentally support an androgen-ESRP2 axis that controls splicing patterns in prostate cancer cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig4-v2.jpg)\n\n**Figure 4.:** (A) ESRP2-regulated exons are frequently also controlled by androgens in prostate cancer cells. 31/48 of the ESRP target exons (identified by RNAseq analysis of LNCaP cells depleted of ESRP1 and ESRP2) were regulated in the opposite direction in LNCaP cells treated by androgens (10nM R1881) for 48 hr (which would induce ESRP2 protein expression). Plotting the splicing responses to androgen stimulation with those after ESRP1/ESRP2 depletion revealed a negative correlation (slope\u00a0=\u00a0\u22120.66+/\u22120.09, Rsquare\u00a0=\u00a00.64, p<0.0001, calculated using Graphpad). Individual values for this graph are given in Figure 3\u2014source data 2, and are averages from three biological replicates. (B) Capillary gel electrophoretograms showing splicing patterns of 3 biological replicates grown in steroid deplete media, or steroid deplete media supplemented with R1881, for alternative exons that are activated by androgen exposure in the MINK1, MAP3K1, GRHL1, FLNB, ITGA6 and NUMB genes. (C) Capillary gel electrophoretograms showing splicing patterns of 3 biological replicates grown in steroid deplete media, or steroid deplete media supplemented with R1881, for alternative exons that are repressed by 48 hr androgen exposure in the DOCK7, RPS24, CTNND1, FN1, MYH10 and MAGI1 genes that were repressed by four androgen treatment. For parts (B\u2013C) the p values were calculated using unpaired t tests, apart for CTNND1 where zero inclusion of exons 2 and 3 were detected in the presence of androgens. For CTNND1, an RT-PCR product derived from a splice variant joining exons 1\u20134 via an alternative splice site is asterisked.\n\nThe genes containing ESRP-activated exons that were also activated by androgen exposure (Figure 4B) included: MINK1 (exon 18) which encodes a pro-migratory serine/threonine kinase; MAP3K7 (exon 12) which encodes a serine/threonine kinase that regulates signalling and apoptosis, activates NFKappaB, and is lost in aggressive prostate cancer (Kluth et al., 2013; Rodrigues et al., 2015); GRLH1 (exon 5) that encodes a transcription factor involved in epithelial cell functions (Jacobs et al., 2018); and FLNB (exon 30), alternative splicing of which has been identified as a key switch contributing to breast cancer metastasis (Li et al., 2018; Ravipaty et al., 2017). Amongst the genes containing ESRP2-repressed exons that were also skipped in response to androgen stimulation (Figure 4C) were DOCK7 (exon 23), which encodes a guanine nucleotide exchange factor involved in cell migration (Gadea and Blangy, 2014); and RPS24 (exon 5), a gene that is highly expressed in prostate cancer (Arthurs et al., 2017).\n\n### The AR-ESRP2 axis controls splicing of mRNA isoforms that are important for prostate cancer disease progression\n\nTo visualise the amplitude of ESRP2-mediated splicing control, we plotted PSIs measured in vitro after ectopic expression of ESRP1/ESRP2 versus PSI values after siRNA mediated depletion of ESRP1/ESRP2 (Figure 5A, using data from Figure 3 and Figure 3\u2014source data 2, slope\u00a0=\u00a0\u22120.74, R2\u00a0=\u00a00.6221, p<0.0001). Consistent with the heat map (Figure 3), ESRP2-regulated exons fell into two groups. Splicing of one group of exons were ESRP2-activated, and splicing of these were conversely repressed by ESRP1/ESRP2 depletion, while the second group of ESRP2-repressed exons had the reverse properties.\n\nTo assess how important ESRP2-regulated mRNAs might be in prostate cancer we monitored associated data for time taken to first biochemical tumour recurrence available in the TCGA PRAD cohort, in which information for 38/44 ESRP-regulated exons was available. This analysis revealed 3 groups of ESRP-regulated exons with different clinical associations. The group of ESRP1/ESRP2-promoted splice isoforms that correlated with decreased time to biochemical recurrence are shown in black on Figure 5A (individual plots are shown in Figure 5\u2014figure supplement 1, and the functions of these genes and their associated splice isoforms in Figure 5\u2014source data 1). Skipping of RPS24 exon five correlates with a worse prognosis, and is the splice isoform promoted by ESRP2. Splicing inclusion of RPS24 exon five is needed to maintain the RPS24 open reading frame (Wang et al., 2015). Splicing inclusion of NUMB exon three also correlated with a worse prognosis, and is activated by ESRP2. NUMB exon three encodes peptide information enabling protein interactions between NUMB and MDM2, a protein that influence p53 stability (Colaluca et al., 2018).\n\nExpression of the second group of ESRP1/ESRP2-promoted mRNA isoforms correlated with an increased time to biochemical occurrence. These exons are shown in green in Figure 5A, and include exons in the FLNB, SLK and ITGA6 genes (functions of these genes and exons are summarised in Figure 5\u2014source data 2). For example, inclusion of ITGA6 exon 25 is activated by ESRP2, and predicted to alter signalling pathways activated by the encoded protein (Groulx et al., 2014). Splicing inclusion of the third set of exons did not correlate with time to biochemical recurrence (identified as grey dots in Figure 5A, and summarised in\u00a0Figure 5\u2014source data 3). These exons included GRHL1 exon 5, splicing of which is needed to maintain the GRHL1 reading frame. GRHL1 encodes a transcription factor important for the operation of epithelial enhancer sequences (Cieply et al., 2016; Jacobs et al., 2018).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig5-v2.jpg)\n\n**Figure 5.:** (A) Graphical representation of levels of average PSI levels in response to ectopic ESRP2 expression in PC3 cells (Y axis) versus after ESRP1/ESRP2 depletion in LNCaP cells. Individual PSI values to make this graph are averaged from three biological replicates, and are given in Figure 3\u2014source data 2. Note that the PSI values for ESRP over-expression refer to ESRP2 over-expression, with the exception of FNIP1 and SLC37A2 that are for ESRP1 over-expression (see Figure 3\u2014source data 2). Linear regression analysis of this data was analysed using Graphpad. Individual splice forms were correlated with clinical data for time to PSA biochemical recurrence within the PRAD cohort (Saraiva-Agostinho and Barbosa-Morais, 2019). Points on this graph corresponding to individual ESRP-regulated splice isoforms are coloured differently according to whether they correlate with an increased time to PSA biochemical recurrence (blue dots), a decreased time to biochemical recurrence (red dots) or had no significant correlation (black dots) is shown. (B\u2013C) Kaplan-Meier plots showing data from TCGA PRAD cohort of percentage of tumours that are free of biochemical recurrence versus time in years, associated with expressing the alternative splice isoforms of (B) RPS24 exon 5 (PSI cut off 0.44), and (C) FLNB exon 30 (PSI cut off 0.78) (Saraiva-Agostinho and Barbosa-Morais, 2019). (D) Violin plots of distributions of significance of biochemical recurrence (BCR) free survival difference between better and worse prognosis groups of patients defined by PSI cut-off values in primary tumour samples, for ESRP-regulated and all other exons whose PSI variance across TCGA primary tumours was\u00a0\u22650.005 (approximately the minimum for regulated events, to avoid biasing the potential functional relevance towards these). The survival difference significance for each exon is given by -log10 of the p-value of the log-rank test used to compare survival distributions and the PSI cut-off value is the one minimising that p-value, given by psichomics (Saraiva-Agostinho and Barbosa-Morais, 2019).The depicted statistical significance (p) of the difference between the distributions summarised by the violins was calculated with a two-sided Wilcoxon signed-rank test. (E) Volcano plot showing alternative splicing analysis (Saraiva-Agostinho and Barbosa-Morais, 2019) of RNAseq data performed between normal prostate tissue and prostate tumour tissue from the TCGA PRAD cohort (consisting of 497 prostate tumour samples and 52 normal tissue). The t-test p-value (Benjamini-Hochberg adjusted for multiple testing) was used as metric of statistical significance. Significantly differentially spliced events (|\u0394 median PSI|\u00a0\u2265\u00a00.1 and FDR\u00a0\u2264\u00a00.01) are highlighted in orange, others in grey. ESRP2-activated exons are labelled in red text, and ESRP2-repressed exons are labelled in blue text. (F) Percentage splicing inclusion (PSI), quantified by RT-PCR, of DOCK7 exon 23 within samples of prostate tumour and adjacent normal tissue (statistical significance calculated using t test). (G) Percentage splicing inclusion (PSI), quantified by RT-PCR, of RPS24 exon 2 within nine matched samples of prostate tumour and adjacent normal tissue (statistical significance calculated using t test).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig5-figsupp1-v2.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig5-figsupp2-v2.jpg)\n\nTo provide some measurement of the enrichment for clinically-relevant events, we compared the significance of optimal biochemical reoccurrence (BCR) survival difference between ESRP-regulated and all other exons whose PSI variance across TCGA primary tumours was\u00a0\u22650.005 (approximately the minimum for regulated events, to avoid biasing the potential relevance towards these). As illustrated in the violin plot in Figure 5D, there was a significant trend for a stronger prognostic value amongst the ESRP-regulated exons.\n\nFurther analysis of the PRAD cohort revealed that 19/38 ESRP-regulated exons also have different patterns of splicing inclusion between tumour and normal tissue (Figure 5E and Figure 3\u2014source data 2). These differentially spliced exons include the AR-ESRP2-controlled alternative exons in the DOCK7 and RPS24 genes (both of which were excluded in prostate tumours compared to normal prostate tissue); and the alternative exons in the MINK1 and MAP3K7 genes (each of which had increased levels of splicing inclusion in prostate tumours compared to normal tissue). Further qRT-PCR analysis of an independent cohort confirmed more frequent skipping of DOCK7 (exon 23) and RPS24 (exon 5) in prostate tumour tissue compared to normal prostate (Figure 5F and G).\n\nSome exons had more subtle changes than would be apparent from just comparing overall exon skipping and exon inclusion in prostate cancer. NUMB exon three and ITGA6 exon 25 (both activated by ESRP2) are predominantly skipped in prostate tumours compared to normal tumour tissue, yet their PSI levels increase in larger, more advanced tumours to produce their respective mRNA isoforms that are associated with a decreased time to biochemical recurrence (Figure 5\u2014figure supplement 2A and B). RAC1 exon 3A (activated by ESRP2) falls into the \u2018grey\u2019 area when comparing inclusion in normal versus prostate cancer, but more detailed analysis show that this exon is highly included in higher Gleason grades of prostate cancer, again to produce the RAC1 splicing isoform associated with a decreased time to biochemical recurrence (Figure 5\u2014figure supplement 2C). RPS24 exon 5 (repressed by ESRP2, and overall more skipped in tumours) is skipped more in larger more advanced tumours, making the mRNA isoform associated with a decreased time to biochemical recurrence (Figure 5\u2014figure supplement 2D). Similarly, MYO1B exon 23 (skipped in response to ESRP2) is both overall more skipped in prostate tumour versus normal, and more skipped in higher Gleason grade cancers (Figure 5\u2014figure supplement 2E). FLNB exon 31 (activated by ESRP2) actually shows slightly reduced splicing inclusion in larger, more aggressive tumours (Figure 5\u2014figure supplement 2F).\n\n### Splicing of key exons are switched by a drug that antagonises AR activity\n\nThe above data identified a subset of ESRP2-regulated splicing switches that associated with biochemical recurrence of prostate cancer after treatment. Since ESRP2 expression was repressed by ADT in patient prostate cancer tissue, we next investigated whether AR inactivation may influence mRNA splice isoforms that correlate with cancer progression. To test this, androgen induction of ESRP2 mRNA expression was blocked using the androgen antagonist bicalutamide (Casodex) (Figure 6A). Consistent with Casodex preventing expression of some potentially harmful isoforms in prostate cancer cells, the splicing inclusion of NUMB exon three and TUFT1 exon two were reduced by Casodex (both these exons are normally activated by androgen exposure and ESRP2). Likewise, exon skipping events in the RPS24, FN1 and MYH10 genes that correlated with a poorer prognosis were also reduced by Casodex (these exons are normally skipped in response to ESRP2). Not all the splicing switches induced by Casodex correlate with increased time to biochemical recurrence. Skipping of CTNND1 exon 2 and 3 correlates with a decreased time to biochemical recurrence within the TGCA dataset (Figure 5\u2014figure supplement 1), and this is the mRNA isoform promoted\u00a0by Casodex treatment (Figure 6C). Splicing inclusion of MAGI1 exon 7 (normally repressed by ESRP2) and RALGPS2 exon 15 were also increased by Casodex treatment (Figure 6B and C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig6-v2.jpg)\n\n**Figure 6.:** (A) ESRP2 mRNA expression in cells grown in steroid deplete (SD) conditions, and after addition of androgens (A+) (quantified by real-time PCR from three biological replicates). Androgen-mediated activation of ESRP2 expression was inhibited in the presence of 10 \u03bcM of the anti-androgen bicalutamide (Casodex). Cells were cultured for 24 hr. The p value shows the statistical significance that was calculated using a t test between the A + vehicle and the A + casodex samples. (B\u2013C) Capillary gel electrophoretogram showing RT-PCR analysis the splicing response +\u00a0/-\u00a024 hr Casodex treatment for exons that are normally (B) activated or (C) repressed by androgens (three biological samples shown, statistical significances were calculated using a t test, with the exception of CTNND1 where there was zero inclusion detected for exons 2 and 3 before depletion of ESRP2, and FN1 where there was zero inclusion of exon 25 before Casodex treatment).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Western blot showing levels of the AR, ESRP2 and actin in samples of LNCaP cells following growth in steroid deplete media (SD), or plus androgens for 48 hr (A+). Cells were transfected with esiRNAs designed to deplete the AR, or a control siRNA (NTesiRNA). Statistical significance was calculated using a t test.\u00a0(B) Capillary gel electrophoretograms showing RT-PCR analysis of 3 biological replicate RNA samples, measuring splicing inclusion levels for FLNB exon 30 and TUFT1 exon two after siRNA depletion of the AR or treatment with a control siRNA.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A\u2013C) Capillary gel electrophoretograms showing RT-PCR analysis of 3 biological replicate RNA samples, measuring splicing inclusion levels for MAP3K7 exon 12; an ESRP2 regulated exons between exons 7 and 8 in the ARFGAP2 gene (this exon is currently unannotated so designated with an asterisk); and CTNND1 exons 2 and 3 after siRNA depletion of the AR or treatment with a control siRNA. p values were calculated using graphpad, with the exception of CTNND1 where there was zero inclusion detected for exons 2 and 3 before depletion of ESRP2.\n\nESRP2 and ESRP1 are important to maintain epithelial splicing programmes. We thus considered whether by repressing ESRP2 expression, ADT might also inadvertently switch splicing towards mesenchymal patterns that could facilitate metastasis. Consistent with this prediction, treatment of LNCaP cells with Casodex reduced splicing inclusion levels of the FLNB gene exon 30 by almost 20% (Figure 6B). Although it is not differentially spliced between normal prostate and prostate cancer (Figure 5E), increased skipping of FLNB exon 30 has been recently reported as a key driver of EMT in breast cancer development (Li et al., 2018). Similarly, Casodex treatment also increased splicing inclusion of what are normally mesenchymal-expressed exons in the CTNND1 gene (Warzecha et al., 2009b) (Figure 6C).\n\nWe used siRNA as a further strategy to reduce AR expression (Figure 6\u2014figure supplement 1A). As predicted, ESRP2 protein expression was reduced by siRNA depletion of the AR (Figure 6\u2014figure supplement 1A). Furthermore, siRNA-mediated depletion of AR reduced levels of FLNB splicing inclusion from 84% to 69%, and levels of TUFT1 exon 2 splicing from 23% to 9% (Figure 6\u2014figure supplement 1B). Both these data support a scenario where splicing inclusion of ESRP2-dependent exons are controlled by expression levels of the AR.\n\n### Splicing patterns respond to changes in the expression of ESRP2 alone\n\nThe above data suggested a model where decreases in ESRP2 expression in response to inhibition of AR activity are sufficient to induce splicing changes, even though ESRP1 was still expressed. To further investigate whether loss of ESRP2 alone would be sufficient to induce splicing changes we carried out individual siRNA-mediated depletion of ESRP2 both within both LNCaP and\u00a0CWR22RV1 cells. Consistent with our model, single ESRP2 depletion was able to switch splicing patterns of exons within the MAP3K7, ARFGAP2 and CTNND1 genes (Figure 6\u2014figure supplement 2; Figure 3\u2014source data 2). As examples, individual depletion of ESRP2 reduced splicing inclusion of MAP3K7 exon 12, and activated splicing inclusion of CTNND1 exons 2 and 3 (Figure 6 \u2013 Figure 3\u2014source data 2). Furthermore, splicing patterns of ESRP1/ESRP2 target exons were also responsive to single up-regulation of either ESRP1 or ESRP2 (Figure 3\u2014source data 2).\n\n## Discussion\n\nIn this study we report a novel molecular mechanism that explains how androgen steroid hormones control splicing patterns in prostate cancer cells, and unifies the functions of the AR both as a transcription factor and being able to control splicing. In this model, the AR controls expression of the master splicing regulator protein ESRP2, which then regulates the splicing patterns of key genes important for prostate cancer biology (Figure 7). Amongst the key data supporting this proposed model, we find that ESRP2 is a direct and early target for transcriptional activation by the AR in prostate cancer cells. Furthermore, endogenous splice isoform patterns controlled by ESRP1 and ESRP2 also respond to androgen stimulation, siRNA-mediated depletion of the AR and/or the AR inhibitor bicalutamide (Casodex). While intuitively straightforward, this model is conceptually different from the mechanisms through which estrogen and progesterone have been shown to regulate splicing (via recruitment of splicing regulators as transcriptional cofactors, and by modulation of transcription speeds and chromatin structure).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig7-v2.jpg)\n\n**Figure 7.:** Androgen exposure leads to transcription of the gene encoding the master splicing regulator protein ESRP2. This promotes epithelial splicing patterns within prostate cancer cells. Lower levels of circulating androgens after ADT lead to transcriptional repression of ESRP2. This results in a dampening of epithelial splicing patterns, and production of normally mesenchymal splice patterns including for the FLNB, CTNND1 and MAP3K7 genes. This image was created using BioRender.\n\nAndrogens are already known to substantially modify transcriptional levels in prostate cancer, with important implications for cell behaviour and cancer progression (Munkley et al., 2016). The data presented here imply that androgens also have an important role in controlling splicing patterns, particularly those that relate to epithelial/mesenchymal functions. Previous studies identified just a small number of alternative exons that are controlled by androgens in prostate cancer cells, none of which overlapped with the current study (Munkley et al., 2018; Rajan et al., 2011). We suggest that an important reason for this discrepancy is because previously splicing patterns were monitored after 24 hr of androgen exposure. Since we now show that splicing regulation by androgens operates indirectly through transcriptional control of ESRP2, 24 hr androgen exposure would not be sufficient to upregulate ESRP2 levels. In the current study we analysed androgen-dependent splicing switches after 48 hr, to allow sufficient time for ESRP2 induction at the protein level and re-equilibration of downstream splice isoform ratios. ESRP1 expression levels also decreased in prostate tumours following ADT so might also be under androgen-control in tissue, although did not reciprocally increase following androgen stimulation of cultured cells.\n\nESRP1 has recently been shown to be amplified in an aggressive subgroup of early onset prostate cancer, but how this contributes to disease progression has been not well understood (Gerhauser et al., 2018). Our data here show that ESRP1 and ESRP2 control a number of individual mRNA splice isoforms that correlate with time to biochemical recurrence (Figure 5\u2014figure supplement 2 and Figure 5\u2014figure supplement 1), including of MAP3K7 exon 12 inclusion which is associated with a shorter time to biochemical reoccurrence in the TGCA database. Deletion of the MAP3K7 gene occurs in 30\u201340% of prostate tumours, and is associated with a poor clinical prognosis (Goodall et al., 2016; Kluth et al., 2013; Liu et al., 2007; Wu et al., 2012). MAP3K7 is a key gene in prostate cancer, and MAP3K7 exon 12 splicing is associated with epithelial properties of prostate cancer cells (Dittmar et al., 2012). More generally, epithelial splicing patterns may play an important role early in prostate cancer development in establishing primary tumours (Figure 7).\n\nThe expression of ESRPs appears to be plastic during cancer progression (Hayakawa et al., 2017; Ishii et al., 2014; Ueda et al., 2014). ESRPs have previously been shown to have a dual role in carcinogenesis with both gain and loss associated with poor patient prognosis (Hayakawa et al., 2017). ESRP1 expression is linked to poor survival and metastasis in lung cancer (Yae et al., 2012), and both ESRP1 and ESRP2 are upregulated in oral squamous cell carcinoma relative to normal epithelium (Ishii et al., 2014). Since ESRP2 is a critical component of epithelial-specific splicing programmes, we suggest that down-regulation of ESRP2 levels in response to ADT could dampen epithelial splicing patterns, helping to prime prostate cancer cells for future mesenchymal development and possibly contribute to development of metastasis. Supporting this, mesenchymal splicing patterns were induced by bicalutamide (Casodex) treatment of LNCaP cells, including in the FLNB, CTNND1 and MAP3K7 genes. FLNB encodes an actin binding protein which is linked to cancer cell motility and invasion (Del Valle-P\u00e9rez et al., 2010; Iguchi et al., 2015). Skipping of FLNB exon 30 is sufficient to initiate metastatic progression in breast cancer (Li et al., 2018). In experiments reported here androgens promote the FLNB isoform that is not associated with metastasis. Expression of the metastatic FLNB variant is promoted by bicalutamide (Casodex) treatment. In breast cancer, the metastatic effects of FLNB alternative splicing are mediated via the FOXC1 transcription factor. The role FOXC1 plays in prostate cancer progression is unknown, but FOXC1 expression may be linked to androgen receptor levels (van der Heul-Nieuwenhuijsen et al., 2009). ESRP2 also promotes skipping of epithelial-expressed exons in the CTNND1 gene (catenin delta 2, encoding a protein involved in cell adhesion and signalling), while Casodex treatment induces expression of a normally mesenchyme-specific splice isoform (Warzecha et al., 2009b). The Map3k12\u0394exon12 splice isoform is produced in response to ESRP2 depletion, and is usually expressed in highly metastatic cancer cell lines (Tripathi et al., 2019).\n\nThe clinical prognosis of metastatic prostate cancer is poor (Livermore et al., 2016). This makes the mechanisms that control metastasis of prostate cancer cells, and any links with ADT of prime importance. In prostate cancer EMT has been linked to a common mechanism underlying therapeutic resistance and is associated with poor prognosis (Gravdal et al., 2007). Sun et al. showed that although ADT can effectively control prostate tumour size initially, it simultaneously promotes EMT, an unintended consequence that could ultimately lead to CRPCa (Sun et al., 2012). Such direct links between ADT and EMT uncover an important yet overlooked consequence of the standard care treatment for advanced prostate cancer (Byrne et al., 2016). Although the causes of EMT in prostate cancer progression to CRPCa are likely to be complex, the down-regulation of ESRP proteins has been shown to be essential for EMT progression (Horiguchi et al., 2012). Thus, loss of ESRP expression may provide a molecular explanation why AR positive prostate cancer cells show increased susceptibility to EMT in response to ADT, and so is relevant to consider with regard to therapy. Our findings have important implications for second line treatment strategies in a clinical setting, and suggest an alternative approach may be to inhibit EMT in combination with ADT to prevent disease progression.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>ESRP1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>ESRP2</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>LNCaP</td>\n      <td>ATCC</td>\n      <td>CRL-1740</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>PC3</td>\n      <td>ATCC</td>\n      <td>CRL-1435</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>CWR-RV1</td>\n      <td>ATCC</td>\n      <td>CRL-2505</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>PNT2</td>\n      <td>Sigma Aldrich</td>\n      <td>95012613</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>RWPE-1</td>\n      <td>ATCC</td>\n      <td>CRL-11609</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-ESRP2</td>\n      <td>Genetex</td>\n      <td>GTX123665</td>\n      <td>1:1000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-ESRP1</td>\n      <td>Sigma,</td>\n      <td>HPA023719</td>\n      <td>1:1000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-AR</td>\n      <td>BD Bioscience,</td>\n      <td>554226</td>\n      <td>1:10000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-actin rabbit polyclonal antibody</td>\n      <td>Sigma</td>\n      <td>A2668</td>\n      <td>1:2000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-FLAG mouse monoclonal antibody</td>\n      <td>Sigma</td>\n      <td>F3165</td>\n      <td>1:2000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>normal rabbit IgG</td>\n      <td>Jackson labs</td>\n      <td>711-035-152</td>\n      <td>1:2000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>normal mouse IgG</td>\n      <td>Jackson labs</td>\n      <td>715-036-150</td>\n      <td>1:2000 dilution</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>ESRP1 plasmid</td>\n      <td>Gift from Prof Russ Carstens (University of Philadelphia. USA)</td>\n      <td>PIBX-C-FF-B-ESRP1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>ESRP2 plasmid</td>\n      <td>Gift from Dr Keith Brown (University of Bristol. UK)</td>\n      <td>pBIGi hESRP2-FLAG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence based reagent</td>\n      <td>Primers to detect splice isoforms</td>\n      <td>This paper</td>\n      <td></td>\n      <td>designed using Primer3 http://primer3.ut.ee/</td>\n    </tr>\n    <tr>\n      <td>Sequence based reagent</td>\n      <td>qPCR primers</td>\n      <td>This paper</td>\n      <td></td>\n      <td>designed using Primer3 http://primer3.ut.ee/</td>\n    </tr>\n    <tr>\n      <td>Sequence based reagent</td>\n      <td>siRNAs</td>\n      <td>hs.Ri.ESRP1.13.1, hs.Ri.ESRP1.13.2, hs.Ri.ESRP2.13.1, hs.Ri.ESRP2.13.2, IDT (51-01-14-04), AR esiRNA EHU025951 Control esiRNA EHUEGFP Sigma</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercialassay or kit</td>\n      <td>Rnaeasy plus kit</td>\n      <td>Qiagen</td>\n      <td>catalog number 74134</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercialassay or kit</td>\n      <td>DNA free</td>\n      <td>Ambion</td>\n      <td>catalog number AM1906</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Graphpad prism</td>\n      <td>https://graphpad.com</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>synthetic androgen analogue methyltrienolone (R1881)</td>\n      <td>Perkin\u2013Elmer</td>\n      <td>NLP005005MG</td>\n      <td>10 nM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bicalutamide (Casodex)</td>\n      <td>Sigma</td>\n      <td>B9061</td>\n      <td>10 \u03bcM</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines and cell culture\n\nCell culture and androgen treatment of cells was as described previously (Munkley et al., 2015a; Munkley et al., 2015b; Munkley et al., 2015c; Munkley et al., 2014; Rajan et al., 2011). All cells were grown at 37\u00b0C in 5% CO2. LNCaP cells (CRL-1740, ATCC) were maintained in RPMI-1640 with L-Glutamine (PAA Laboratories, R15-802) supplemented with 10% Fetal Bovine Serum (FBS) (PAA Laboratories, A15-101). For androgen treatment of LNCaP cells, medium was supplemented with 10% dextran charcoal stripped FBS (PAA Laboratories, A15-119) to produce a steroid-deplete medium. Following culture for 72 hr, 10 nM synthetic androgen analogue methyltrienolone (R1881) (Perkin\u2013Elmer, NLP005005MG) was added (Androgen +) or absent (Steroid deplete) for the times indicated. Similarly, LNCaP cells were pre-treated with with 10 \u03bcM bicalutamide (Casodex) or ethanol (vehicle) for 2 hr prior to addition of 10nM R1881 for 48 hr. Cell line validation was carried out using STR profiling was according to the ATCC guidelines. All cell lines underwent regular mycoplasma testing.\n\n### Antibodies\n\nThe following antibodies were used for western blotting: Anti-ESRP2 rabbit antibody (Genetex, GTX123665), anti-rabbit ESRP1 (Sigma, HPA023719), anti-AR mouse antibody (BD Bioscience, 554226), anti-actin rabbit antibody (Sigma, A2668), anti-FLAG mouse monoclonal antibody (Sigma, F3165), normal rabbit IgG (711-035-152 Jackson labs) and normal mouse IgG (715-036-150 Jackson labs). For immunohistochemistry the following ESRP antibodies were tested: anti-rabbit ESRP1 (Sigma, HPA023719) and anti-rabbit ESRP2 (Abcam ab113486) but were found not to be specific for FFPE cell pellets.\n\n### RT-qPCR\n\nCells were harvested and total RNA extracted using TRI-reagent (Invitrogen, 15596\u2013026), according to the manufacturer\u2019s instructions. RNA was treated with DNase 1 (Ambion) and cDNA was generated by reverse transcription of 500 ng of total RNA using the Superscript VILO cDNA synthesis kit (Invitrogen, 11754\u2013050). Quantitative PCR (qPCR) was performed in triplicate on cDNA using SYBR Green PCR Master Mix (Invitrogen, 4309155) using the QuantStudio 7 Flex Real-Time PCR System (Life Technologies). ESRP1 was detected using (ESRP1 for AGCACTACAGAGGCACAAACA; ESRP1 Rev TGGAGAGAAACTGGGCTACC). ESRP2 was detected using the primer combination (ESRP2 For CCT GAA CTA CAC AGC CTA CTA CCC; ESRP2 Rev TCC TGA CTG GGA CAA CAC TG). Samples were normalised using the average of three reference genes: GAPDH (GAPDH For AAC AGC GAC ACC CAT CCT C; GAPDH Rev TAGCACAGCCTGGATAGCAAC); \u03b2\u2013tubulin (TUBB For CTTCGGCCAGATCTTCAGAC; TUBB Rev AGAGAGTGGGTCAGCTGGAA); and actin (ACTIN For CATCGAGCACGGCATCGTCA; ACTIN Rev TAGCACAGCCTGGATAGCAAC).\n\n### siRNA\n\nsiRNA mediated protein depletion of ESRP1/2 was carried out using Lipofectamine RNAiMAX Transfection Reagent (Thermo Fisher, 13778075) as per the manufacturer\u2019s instructions and for the times indicated. The siRNA sequences used were ESRP1 siRNA1 (hs.Ri.ESRP1.13.1); ESRP1 siRNA2 (hs.Ri.ESRP1.13.2); ESRP2 siRNA 1 (hs.Ri.ESRP2.13.1); ESRP2 siRNA 2 (hs.Ri.ESRP2.13.2); and a negative control siRNA (IDT (51-01-14-04)). AR esiRNA was as described previously (Munkley et al., 2016).\n\n### Immunohistochemistry\n\nFreshly cut tissue sections were analysed for immunoexpression using Ventana Discovery Ultra autostainer (Ventana Medical Systems, Tucson, Arizona). In brief, tissue sections were incubated in Cell conditioning solution 1 (CC1, Ventana) at 95\u00b0C to retrieve antigenicity, followed by incubation with respective primary antibodies described above. Bound primary antibodies were visualized using UltraMap DAB anti-Rb Detection Kit.\n\n### AR-ChIP\n\nLNCaP cells were stimulated with 10 nM R1881 overnight. The ChIP assay was performed using the one step ChIP kit (Abcam ab117138) as per manufacturer\u2019s instruction. Briefly, cells were fixed and crosslinked in 1% formaldehyde for 10 min at 37\u00b0C and incubated with protease inhibitors. Chromatin was isolated from cell lysates and enzymatically fragmented using an EZ-Zyme Chromatin Prep Kit (Merck 17 375). 10 ug of anti - AR antibody (Abcam ab74272) or IgG control antibody was used to precipitate DNA crosslinked with the androgen receptor. Enriched DNA was then probed by qPCR using primers targeting the ESRP2 regulatory region to assess AR binding intensity. Primer sequences used to detect PSA were (PSA ChIP for GCC TGG ATC TGA GAG AGA TAT CAT C; PSA Chip rev ACA CCT TTT TTT TTC TGG ATT GTT G). Primers used to detect AR binding near to ESRP2 were (ESRP2 Chip for TCCCGAGTAGCTGGGACTAC; ESRP2 Chip rev CAGTGGCTTACACCTGGGAG).\n\n### Creation of PC3 stable cell lines\n\nThe ESRP1 plasmid (PIBX-C-FF-B-ESRP1) was a gift from Prof Russ Carstens (University of Philadelphia. USA) and the ESRP2 plasmid (pBIGi hESRP2-FLAG) from Dr Keith Brown (University of Bristol, UK). PC3 cells were transfected using FuGene HD Transfection Reagent as per manufacturer\u2019s instructions. Stable transfectants with ESRP1 was selected using 10 \u00b5g/ml Blasticidin and ESRP2 plasmid was selected using 150 ug/ml Hygromycin. ESRP2 Plasmid was inducible by 2.5 ug/ml doxycycline for 48 hr. PC3 ESRP1 overexpressed cells were transfected with pBIGi hESRP2-FLAG plasmid using the same protocol.\n\n### In vitro cell proliferation analysis\n\nFor cell growth curves (carried out for in vitro analysis of PC3 stable cell lines), PC3 cells were seeded 100,000 cells per well in 12-well plate in eight plates. Cells were counted every 24 hr after seeding in the plate. All the treatments had 12 repeats. WST assays were carried out over 7 days as per manufacturer\u2019s instructions (Cayman, CAY10008883). For DU145 cells 10,000 cells were seeded per well in a 96 well plate. All data was tested by two-way ANOVA.\n\n### RNAseq analysis\n\nLNCaP cells (passage 19) were treated with either control siRNAs or siRNAs targeting ESRP1 and ESRP2 for 72 hr (samples prepared in triplicate). RNA was extracted 72 hr after siRNA treatment using the Qiagen RNAeasy kit (Cat No. 74104) as per the manufacturer's instructions. RNAseq was carried out using TruSeq Stranded mRNA Sequencing NextSeq High-Output to obtain 2 \u00d7 75 bp reads. Quality control of reads was performed using FastQC. Reads were mapped to the hg38 transcriptome using Salmon. Differential gene expression analysis was performed using DESeq2. Percent spliced-in (PSI) estimates for splicing events were calculated using SUPPA2 (Trincado et al., 2018) based on isoform transcripts per million (TPM) estimates from Salmon (Patro et al., 2017). Quantification utilised Gencode gene models (release 28). Differential PSI was calculated using DiffSplice using the empirical method (Hu et al., 2013). Events with a delta PSI\u00a0>\u00a010% and FDR\u00a0<\u00a00.05 were considered as significant.\n\n### Psichomics and bioinformatic analysis of PRAD cohort\n\nClinical expression patterns of ESRP2-regulated exons were monitored using psichomics (Saraiva-Agostinho and Barbosa-Morais, 2019). Differential splicing analysis between primary solid tumour and solid tissue normal samples were subsequently performed to evaluate relative higher inclusion levels in either tumour or normal tissue samples using \u0394 median and t-test p-value (Benjamini-Hochberg adjusted) values. Survival analysis based on TCGA clinical data derived from prostate cancer patient samples was performed with time to first PSA biochemical recurrence being the event of interest. Additional statistical analyses and generation of plots were performed in R (R Development Core Team, 2019). Violin plots were created with R package vioplot (Adler and Kelly, 2018).\n\n### Tumour xenografts\n\nStable overexpression of ESRP1 and stable doxycycline-inducible overexpression of either ESRP2 alone or ESRP1 and 2 were obtained using PC3 cells (that have the low endogenous levels of both proteins). One million PC3 overexpressing ESRP1 or control cells were injected subcutaneously in the flank of male nude mice and tumour volumes were monitored. Two million PC3 cells overexpressing ESRP2, overexpressing ESRP1 and 2, or control cells were injected subcutaneously in the flank of male nude mice and tumour volumes were monitored. PC3 ESRP2 and PC3 ESRP1/2 cells were cultured in medium supplemented with 2.5 ug/ml doxycycline for 48 hr prior to injecting into nude mice to induce ESRP2 expression and mice were administered Doxycycline repeatedly. Tumour diameters were measured using calipers.\n\n### Clinical samples\n\nOur study made use of RNA from 32 benign samples from patients with benign prostatic hyperplasia (BPH) and 17 malignant samples from transurethral resection of the prostate (TURP) samples. Malignant status and Gleason score were obtained for these patients by histological analysis. We also analysed normal and matched PCa tissue from nine patients obtained by radical prostectomy. The samples were obtained with ethical approval through the Exeter NIHR Clinical Research Facility tissue bank (Ref: STB20). Written informed consent for the use of surgically obtained tissue was provided by all patients. The RNA samples analysed in Figure 2C were previously published (Walker et al., 2017).\n\n### Statistical analyses\n\nAll statistical analyses were performed using GraphPad Prism 6 (GraphPad Software, Inc). Statistical analyses were conducted using the GraphPad Prism software (version 5.04/d). PCR quantification of mRNA isoforms was assessed using the unpaired student\u2019s t-test. Data are presented as the mean of three independent samples\u00a0\u00b1\u00a0standard error of the mean (SEM). Statistical significance is denoted as *p<0.05, **p<0.01, ***p<0.001 and ****p<0.0001.\n",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "2326c4c9-d638-4287-83fe-287a96b5bcb9",
+      "submission_id": "ad0c0e39-0da5-4971-a64c-ec1ffb77a98e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Juan Valc\u00e1rcel, Centre de Regulaci\u00f3 Gen\u00f2mica (CRG) Spain\n\nReviewers:\n- Juan Valc\u00e1rcel, Centre de Regulaci\u00f3 Gen\u00f2mica (CRG) Spain\n\n## Review text\n\nDOI: [10.7554/eLife.47678.027](https://doi.org/10.7554/eLife.47678.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Androgen-regulated transcription of ESRP2 drives alternative splicing patterns in prostate cancer\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Juan Valc\u00e1rcel as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by James Manley as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript from Munkley, Elliott and colleagues shows that the epithelial splicing regulator ESRP2 is transcriptionally upregulated by the androgen receptor (AR), an observation based on a previous study of gene expression changes in response to androgen in the androgen receptor positive LNCaP prostate cancer cell line by some of these investigators. ESRP2 upregulation leads to a series of changes in alternative splicing, including switches with potential effects in disease relapse and metastasis which correlate with disease outcomes. Prostate cancer is driven by androgens via AR, and therapy involves androgen deprivation (ADT) to slow progression. However, it has also been reported that ADT promotes epithelial mesenchymal transition (EMT) (e.g. Sun et al., 2012), which might be related to the common progression to castration resistant prostate cancer following ADT. Munkley et al. show that levels of ESRP2 are reduced after androgen deprivation in 7 prostate cancer patients. A number of other analyses using additional cell lines, a xenograft model, and data from other published prostate cancer samples leads to a general proposal that a decrease in ESRP2 expression (but not ESRP1) and some splicing changes associated with its depletion following androgen deprivation may be associated with prostate cancer progression and worse outcomes. One highlighted example is exon 30 in FLNB, skipping of which is associated with metastatic progression in breast cancer.\n\nA number of papers describing roles for ESRP1/2 in various cancers including breast, colorectal, lung, and ovarian carcinomas have yielded conflicting conclusions on the role of ESRPs or epithelial-specific isoforms it regulates, such as CD44, in cancer progression and/or patient outcomes. In some cases ESRPs are proposed to be tumor suppressors, whereas in other cases they are proposed to promote more aggressive cancers (see, for example, Zhang et al., Genes and Dev 33: 166-179 and references therein). As cited by the authors, a recent manuscript reports that duplication and increased expression of ESRP1 (which would largely promote the same splicing events as ESRP2) is associated with more aggressive human prostate cancers. Thus, a central question is whether the current manuscript can provide further clarity regarding the general role of ESRPs (including ESRP2) in cancer, including prostate cancer.\n\nMunkley et al. raise the clinically-relevant point that current treatments for prostate cancer might have undesirable side-effects by inhibiting ESRP2 mediated splicing events. Overall, the manuscript is clearly presented. The data documenting the ESRP and AR regulated splicing program, and the restriction of tumor growth by ESRPs (Figures 1-4, 6) are very clear with very nice correlations between responses to ESRP overexpression, knockdown and androgen stimulation.\n\nEssential revisions:\n\n1) A key concern relates to the relative levels and effects of ESRP1 and ESPR2 under conditions of androgen induction or ADT in prostate cells. The authors do a good job documenting that ESRP2 is under transcriptional control of the androgen receptor, while ESRP1 is not, and that there is a 2-fold reduction in ESPR2 expression post-ADT in cancer samples. On the other hand, (a) both ESRP1 and ESRP2 seem down-regulated at the protein level in androgen receptor-negative prostate cancer cells lines (probably by different mechanisms), (b) both ESRP1 and ESRP2 mRNAs are up-regulated in tumor samples compared to controls, (c) both ESRP1 and ESRP2 are up-regulated in a cohort of metastatic patient samples, (d) the correlation between ESRP levels and recurrence free survival is a more significant for ESRP1 than ESRP2, and (e) a number of functional assays from this manuscript and other publications argue that both ESRP1 and ESPR2 can contribute to regulate overlapping targets relevant for epithelial-specific splicing. Therefore one key question that remains is to what extent the androgen-mediated transcriptional regulation of ESRP2 does contribute to splicing regulation in the context of the relative levels/activities of ESRP1: while a number of the results presented show that androgen treatment can promote splicing towards a stronger \"epithelial\" pattern, the authors should make additional efforts to demonstrate that ablation of ESRP2 alone (in the presence of ESRP1) leads to substantial changes in splicing that would be expected to explain the association of a loss of ESRP2 with worse outcomes, which is an essential point for the validity of their model. For example, an analysis similar to that of Figure 1A for ESRP1 should be included, as well as other experiments aimed to determine whether the activity of ESRP1 can buffer the effects of ATD on ESRP2.\n\n2) There is also a need for clarity in terms of the coherence of the predicted biological effects of the alternative splice site switches and at least one proof-of-principle demonstration that they are relevant for any property of prostate cells relevant to cancer, as it is difficult to draw firm conclusions from the data presented as to whether the regulation of ESRP2 by androgens is definitively associated with prostate cancer progression or outcomes in a positive or negative manner.\n\na) Figure 5A shows exons that are more included or skipped in prostate cancer vs. normal using TCGA data. But only 6 of the 44 ESRP-AR regulated events are highlighted on the plot, two of which do not change significantly, including FLNB which is highlighted in the Abstract and is the only event used to test the response to the AR antagonist Casodex. All of the events from Figure 3 should be highlighted in Figure 5A, with ESRP activated and repressed exons clearly distinguished by colour or symbol. The authors should explain \u2013 when known \u2013 the nature of the differential activities of the isoforms and whether the isoform switch observed in the presence of androgens/mediated by ESRPs is predicted to contribute, repress or be neutral to tumor cell growth, apoptosis, motility, metastasis, etc. and therefore whether a functionally coherent program of alternative splicing is coordinated by ERSPs or whether various contrasting contributions are predicted whose relative significance will depend on context, etc. If not, is it possible to stratify the data e.g. by tumor grade, or by ESRP expression level? Would this for instance, reveal different classes where events such as FLNB do show a difference between cancer and normal in some classes?\n\nb) In Figure 6, why is FLNB e30 the only splicing event monitored for response to Casodex \u2013 especially since this is one of the events that is not altered between prostate cancer and normal tissue? This figure should be more systematic with more splicing events.\n\nc) Increased inclusion of exon 30 in FLNB (which occurs for example upon androgen stimulation) is consistent with inhibition of EMT (something that could be stated more clearly in the text). But there is no mechanistic model presented as to how a change in FLNB splicing (or other targets) impacts prostate CA. What about the other alternative splicing events highlighted in Figures 4/5? Even if FLNB splicing switches have been shown to influence expression of EMT markers in breast cancer cells (Li et al., 2018), it will be essential to show that the degree of switch observed in prostate cancer cells (for FLNB or any other gene) has a relevant biological readout.\n",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "edd7d9fe-bb22-4084-9f05-f7d0ce4126ca",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C1",
+      "claim": "Prostate cancer is the most frequent cancer in men.",
+      "claim_type": "EXPLICIT",
+      "source": "Prostate is the most frequent cancer in men.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and introduction, citing Center et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "1f122954-302f-4234-89bd-6c66d37471fc",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C2",
+      "claim": "Prostate cancer progression is driven by androgen steroid hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "Prostate cancer progression is driven by androgen steroid hormones, and delayed by androgen deprivation therapy (ADT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "93b0c034-d076-4cb4-92ca-14bd26f64fa9",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C3",
+      "claim": "Prostate cancer progression is delayed by androgen deprivation therapy (ADT).",
+      "claim_type": "EXPLICIT",
+      "source": "Prostate cancer progression is driven by androgen steroid hormones, and delayed by androgen deprivation therapy (ADT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "d926f7ba-66b4-4ba8-bc15-619b521d661f",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C4",
+      "claim": "Androgens control transcription by stimulating androgen receptor (AR) activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Androgens control transcription by stimulating androgen receptor (AR) activity, yet also control pre-mRNA splicing through less clear mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "fe5bc5b6-4566-4c77-8596-f6230a890de9",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C5",
+      "claim": "Androgens control pre-mRNA splicing through less clear mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Androgens control transcription by stimulating androgen receptor (AR) activity, yet also control pre-mRNA splicing through less clear mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a knowledge gap",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "68e98afe-f2a3-4807-ae10-526e9f92b8c4",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C6",
+      "claim": "Androgens regulate splicing through AR-mediated transcriptional control of ESRP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we find androgens regulate splicing through AR-mediated transcriptional control of the epithelial-specific splicing regulator ESRP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data including ChIP, qPCR, and Western blot analyses shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "a9c024cb-8580-4631-aae9-0b0c170a6263",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C7",
+      "claim": "ESRP2 is highly expressed in primary prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ESRP2 and its close paralog ESRP1 are highly expressed in primary prostate cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by meta-analysis of 719 clinical prostate cancer tumours and experimental validation shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "aabbcb46-31f5-4dbc-8b6b-292b3694209b",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C8",
+      "claim": "ESRP1 is highly expressed in primary prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ESRP2 and its close paralog ESRP1 are highly expressed in primary prostate cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by meta-analysis of 719 clinical prostate cancer tumours and experimental validation shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "83ec2b99-2934-40a2-abf3-beb853321804",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C9",
+      "claim": "Androgen stimulation induces splicing switches in many endogenous ESRP2-controlled mRNA isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Androgen stimulation induces splicing switches in many endogenous ESRP2-controlled mRNA isoforms, including splicing switches correlating with disease progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR analysis of splicing patterns shown in Figures 3 and 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "27ad34c3-9f3d-4208-adad-68629cb36246",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C10",
+      "claim": "Some ESRP2-controlled splicing switches correlate with disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Androgen stimulation induces splicing switches in many endogenous ESRP2-controlled mRNA isoforms, including splicing switches correlating with disease progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of TCGA PRAD cohort data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "4fe3a357-dd44-4dfb-ae4f-ca59afa92a59",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C11",
+      "claim": "ESRP2 expression in clinical prostate cancer is repressed by ADT.",
+      "claim_type": "EXPLICIT",
+      "source": "ESRP2 expression in clinical prostate cancer is repressed by ADT, which may thus inadvertently dampen epithelial splice programmes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data from human prostate cancer pre- and post-ADT shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "8dadb81a-9530-47d6-8a4b-3a7216188234",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C12",
+      "claim": "ADT may inadvertently dampen epithelial splice programmes.",
+      "claim_type": "EXPLICIT",
+      "source": "ESRP2 expression in clinical prostate cancer is repressed by ADT, which may thus inadvertently dampen epithelial splice programmes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that ESRP2 is repressed by ADT and ESRP2 controls epithelial splicing patterns",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "c75b3bb9-1cf8-4dc1-a91d-1150c9a5c3c3",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C13",
+      "claim": "Treatment with the AR antagonist bicalutamide (Casodex) induced mesenchymal splicing patterns of genes including FLNB and CTNND1.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this, treatment with the AR antagonist bicalutamide (Casodex) induced mesenchymal splicing patterns of genes including FLNB and CTNND1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR analysis shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "8c234fa4-9b03-4104-9dea-d22b4ac1f001",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C14",
+      "claim": "ESRP2 expression decreased following ADT in 7/7 prostate cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "ESRP2 expression decreased following ADT in 7/7 prostate cancer patients (Rajan et al., 2014) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of RNAseq data from patients and shown in Figure 1A",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "7dae8d4b-5f26-4193-a1c1-f84efac735e9",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C15",
+      "claim": "RNAseq data from LTL331 patient-derived xenografts showed reduced ESRP2 mRNA levels following castration and relapse neuroendocrine prostate cancer (NEPC).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, RNAseq data prepared from different stages of LTL331 patient-derived xenografts (Akamatsu et al., 2015) showed reduced ESRP2 mRNA levels following castration and relapse neuroendocrine prostate cancer (NEPC, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of published RNAseq data shown in Figure 1B",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "3e8ec21f-5227-4ba0-8200-31af13e6547e",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C16",
+      "claim": "ESRP1 expression levels reduced following ADT.",
+      "claim_type": "EXPLICIT",
+      "source": "ESRP1 expression levels also reduced following ADT (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data analysis shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "e8ec5abe-2968-485e-8d54-90448269b20c",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C17",
+      "claim": "ESRP1 showed less change in gene expression compared to ESRP2 in patient-derived xenografts following castration or relapse NEPC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ESRP1 showed less change in gene expression compared to ESRP2 in patient-derived xenografts following castration or relapse NEPC (Figure 1C) (Akamatsu et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of RNAseq data shown in Figures 1B and 1C",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "08087aa6-c731-47fa-a788-b6ead77c2ac3",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C18",
+      "claim": "High endogenous levels of both ESRP1 and ESRP2 proteins are detected within the AR positive LNCaP and CWR22 RV1 prostate cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blots detected high endogenous levels of both ESRP1 and ESRP2 proteins within the AR positive LNCaP and CWR22 RV1 prostate cancer cell lines, as compared to the AR negative PC3 and DU145 prostate cancer cell lines (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figures 1D and 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "b8055d46-9dec-42ec-8111-f3279605e4a2",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C19",
+      "claim": "AR negative PC3 and DU145 prostate cancer cell lines have lower levels of ESRP1 and ESRP2 proteins compared to AR positive cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blots detected high endogenous levels of both ESRP1 and ESRP2 proteins within the AR positive LNCaP and CWR22 RV1 prostate cancer cell lines, as compared to the AR negative PC3 and DU145 prostate cancer cell lines (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figures 1D and 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "c1a68750-5a46-4070-b66d-11b94fbd3721",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C20",
+      "claim": "Androgens activated ESRP2 gene expression in AR-positive LNCaP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, qPCR analysis showed that while androgens activated ESRP2 gene expression in response to in AR-positive LNCaP cells, this was not observed for ESRP1 gene expression (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "3ab08a68-a8f7-4edd-97bc-42da17056d02",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C21",
+      "claim": "Androgens did not activate ESRP1 gene expression in AR-positive LNCaP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, qPCR analysis showed that while androgens activated ESRP2 gene expression in response to in AR-positive LNCaP cells, this was not observed for ESRP1 gene expression (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "7ca4f835-292d-485b-aee0-a15cd98c7ddc",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C22",
+      "claim": "Androgen mediated-control of ESRP2 expression was detected in VCaP and RWPE-1 AR-expressing prostate cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Androgen mediated-control of ESRP2 expression was also detected in two additional AR-expressing prostate cell lines (VCaP and RWPE-1, Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "16a5725f-6494-46cb-bb88-99c4d038616c",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C23",
+      "claim": "ESRP2 protein expression was detected 48 hr after androgen exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "ESRP2 protein expression was detected 48 hr after androgen exposure, with ESRP1 protein levels not changing over this same time-period (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 1H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "fcbc75f0-2454-453a-983a-7b065c65f657",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C24",
+      "claim": "ESRP1 protein levels did not change over 48 hr after androgen exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "ESRP2 protein expression was detected 48 hr after androgen exposure, with ESRP1 protein levels not changing over this same time-period (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 1H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "1b1542e8-0bcd-4a47-bf21-3c45085571d9",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C25",
+      "claim": "ESRP2 gene expression in LNCaP cells was rapidly induced in response to 10 nM of R1881.",
+      "claim_type": "EXPLICIT",
+      "source": "ESRP2 gene expression in LNCaP cells was rapidly induced in response to 10 nM of the synthetic androgen analogue R1881 (methytrienolone) (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time course qPCR data shown in Figure 1I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "e003a5c0-1013-4926-9034-1482c5fad699",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C26",
+      "claim": "Chromatin immunoprecipitation from LNCaP cells confirmed direct AR binding to a site within 20 Kb of the ESRP2 gene promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin immunoprecipitation (ChIP) from LNCaP cells confirmed direct AR binding to a site within 20 Kb of the ESRP2 gene promoter that had been previously predicted from a genome-wide study (at position chr16: 68210834\u201368211293 on human genome assembly hg38) (Massie et al., 2011) (Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-qPCR data shown in Figure 1J",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "064bf031-72fa-4135-8a3a-9a8a7bf87a00",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C27",
+      "claim": "ESRP2 transcription in LNCaP cells was induced over a wide range of R1881 concentrations, ranging from 1 nM to 100 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with ESRP2 regulation at physiological androgen concentrations, ESRP2 transcription in LNCaP cells was induced over a wide range of R1881 concentrations, ranging from 1 nM to 100 nM (Figure 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "09db3d99-3e5c-4662-ad68-e7c1d7e8aa99",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C28",
+      "claim": "Meta-analysis of 719 clinical prostate cancer tumours from 11 previously published studies detected significant up-regulation of both ESRP1 and ESRP2 in 9/11 datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Meta-analysis of 719 clinical prostate cancer tumours from 11 previously published studies detected significant up-regulation of both ESRP1 and ESRP2 in 9/11 datasets (Figure 2\u2014source data 1) (Arredouani et al., 2009; Cancer Genome Atlas Research Network, 2015; Fraser et al., 2017; Grasso et al., 2012; Lapointe et al., 2004; Liu et al., 2006; Luo et al., 2002; Taylor et al., 2010; Tomlins et al., 2007; Vanaja et al., 2003; Varambally et al., 2005; Wallace et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by meta-analysis of published datasets",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "09d033e0-6262-4902-bdee-39b67d8edafb",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C29",
+      "claim": "Real-time PCR showed significant up-regulation of both ESRP1 and ESRP2 mRNA in prostate carcinoma relative to benign prostate hyperplasia (BPH).",
+      "claim_type": "EXPLICIT",
+      "source": "Real-time PCR showed significant up-regulation of both ESRP1 and ESRP2 mRNA in (1) prostate carcinoma relative to benign prostate hyperplasia (BPH) (Figure 2A); and (2) in nine prostate tumour samples relative to matched normal tissue from the same patient (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "7983e004-aba8-4fe6-bdf3-d5103701ad29",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C30",
+      "claim": "Real-time PCR showed significant up-regulation of both ESRP1 and ESRP2 mRNA in nine prostate tumour samples relative to matched normal tissue from the same patient.",
+      "claim_type": "EXPLICIT",
+      "source": "Real-time PCR showed significant up-regulation of both ESRP1 and ESRP2 mRNA in (1) prostate carcinoma relative to benign prostate hyperplasia (BPH) (Figure 2A); and (2) in nine prostate tumour samples relative to matched normal tissue from the same patient (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "66c7d323-7d88-4fb3-bd1b-d3315c5a6b53",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C31",
+      "claim": "ESRP1 was 2.76 fold up-regulated in the 'metastatic-subgroup' compared to the 'non-metastatic subgroup' in the Walker et al. (2017) study.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study by Walker et al. (2017) identified a molecular subgroup of prostate cancers with metastatic potential at presentation. Within this dataset ESRP1 was 2.76 fold up-regulated in the 'metastatic-subgroup' compared to the 'non-metastatic subgroup'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of published data from Walker et al. (2017)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "34a95c51-f58f-448d-81f1-77e284489daa",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C32",
+      "claim": "ESRP1 gene expression was significantly upregulated in primary prostate cancer patients presenting with a metastatic biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Using RNA from a subset of samples from the Walker et al. study, we confirmed significant (p<0.05) upregulation of the ESRP1 gene in primary prostate cancer patients presenting with a metastatic biology (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "dfc9483b-20ba-4e30-91f1-b59777b73ab3",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C33",
+      "claim": "ESRP2 gene expression did not significantly increase in the 20 samples studied from the Walker et al. cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "ESRP2 gene expression did not significantly increase in the 20 samples studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of samples from the Walker et al. cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "70a9ecd8-614a-4b8f-b175-8a05c59445b8",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C34",
+      "claim": "Levels of E-Cadherin were not significantly increased between BPH compared to prostate carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Arguing against this possibility, levels of E-Cadherin were not significantly increased between BPH compared to prostate carcinoma, or between matched tumour and normal prostate tissue from patients (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "d26b32ff-1c9d-4f76-b30b-91134e887b75",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C35",
+      "claim": "Levels of E-Cadherin were not significantly increased between matched tumour and normal prostate tissue from patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Arguing against this possibility, levels of E-Cadherin were not significantly increased between BPH compared to prostate carcinoma, or between matched tumour and normal prostate tissue from patients (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "8da0d6ca-c106-456f-bc00-1324a24a01eb",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C36",
+      "claim": "High ESRP1 expression associated with a significantly reduced time to first biochemical recurrence (p=0.022) in the TCGA PRAD cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "High ESRP2 expression was not prognostic of disease progression in the TCGA (PRostate ADenocarcinoma) PRAD cohort analysed using KM-express (Chen et al., 2018), but high expression of ESRP1 associated with a significantly reduced time to first biochemical recurrence (p=0.022) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival analysis of TCGA data shown in Figure 2D",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "5a8b9ac9-c584-4250-bf33-fa3e43082ab2",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C37",
+      "claim": "High ESRP2 expression was not prognostic of disease progression in the TCGA PRAD cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "High ESRP2 expression was not prognostic of disease progression in the TCGA (PRostate ADenocarcinoma) PRAD cohort analysed using KM-express (Chen et al., 2018), but high expression of ESRP1 associated with a significantly reduced time to first biochemical recurrence (p=0.022) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of TCGA data using KM-express",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "a8b5e2bd-f1f1-4bd9-b293-10e1cf3a5fe7",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C38",
+      "claim": "Ectopic expression of ESRP1 and ESRP2 protein expression in AR negative PC3 and DU145 cell line models reduced prostate cancer cell growth in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of ESRP1 and ESRP2 protein expression in AR negative PC3 and DU145 cell line models reduced prostate cancer cell growth in vitro (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell growth assay data shown in Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "02b39918-1927-44bb-ba5f-7b3506e472f4",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C39",
+      "claim": "Over-expression of ESRP1 in PC3 cells significantly slowed growth of prostate cancer xenografts in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-expression of both ESRP1 and ESRP2 (either alone or together) in PC3 cells also significantly slowed growth of prostate cancer xenografts in vivo (Figure 2E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by xenograft tumor growth data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "24de4c70-ea02-4a4c-866d-656cff1c7d24",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C40",
+      "claim": "Over-expression of ESRP2 in PC3 cells significantly slowed growth of prostate cancer xenografts in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-expression of both ESRP1 and ESRP2 (either alone or together) in PC3 cells also significantly slowed growth of prostate cancer xenografts in vivo (Figure 2E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by xenograft tumor growth data shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "fe9736a9-9a5f-4d04-9db9-49d3a4c900c4",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C41",
+      "claim": "Over-expression of both ESRP1 and ESRP2 together in PC3 cells significantly slowed growth of prostate cancer xenografts in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-expression of both ESRP1 and ESRP2 (either alone or together) in PC3 cells also significantly slowed growth of prostate cancer xenografts in vivo (Figure 2E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by xenograft tumor growth data shown in Figure 2G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "86db86ad-c927-4411-b5fe-515c2989e324",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C42",
+      "claim": "Bioinformatic analysis predicted 446 ESRP1/ESRP2 regulated alternative splicing events across 319 genes (\u0394PSI > 10%, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Bioinformatic analysis (Trincado et al., 2018) of these RNAseq data (GSE129540) predicted 446 ESRP1/ESRP2 regulated alternative splicing events across 319 genes (\u0394PSI > 10%, p<0.05) (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic analysis of RNAseq data using SUPPA2",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "2e73725e-f00c-4666-8ccb-97ebc0bd0545",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C43",
+      "claim": "44 predicted ESRP1/ESRP2-controlled exons were experimentally validated by RT-PCR analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We experimentally validated splicing switches for 44 predicted ESRP1/ESRP2-controlled exons by RT-PCR analysis, after LNCaP cells were treated with either of two independent sets of siRNAs directed against ESRP1 and ESRP2 or control siRNAs (Figure 3 and Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR validation data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "8588ca37-67ce-4b67-938d-3641705814e1",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C44",
+      "claim": "Similar splicing switches were detected for 35/44 of these skipped exons after jointly depleting ESRP1 and 2 from the AR-positive CWR22 RV1 prostate cancer cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected similar splicing switches for 35/44 of these skipped exons after jointly depleting ESRP1 and 2 from the AR-positive CWR22 RV1 prostate cancer cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data from CWR22 RV1 cells shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "76cc7e2f-11e7-4bae-9e98-6dc7cf4dbebf",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C45",
+      "claim": "28/44 of these splicing switches were observed after jointly depleting ESRP1 and ESRP2 from the AR positive PNT2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "28/44 of these splicing switches were also observed after jointly depleting ESRP1 and ESRP2 from the AR positive PNT2 cells that model the normal prostate epithelium (Figure 3 and Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data from PNT2 cells shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "b2597da6-5002-477f-bf8e-e0ebe61b2a24",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C46",
+      "claim": "Ectopic expression of either ESRP1 or ESRP2 in PC3 cells induced splicing switches for 31/42 exons analysed.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of either ESRP1 or ESRP2 in PC3 cells induced splicing switches for 31/42 exons analysed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR analysis of PC3 cells with ectopic ESRP expression shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "fff6625c-2f37-43db-850b-d8042418fa3c",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C47",
+      "claim": "The splicing switches induced by ectopic expression of either ESRP2 or ESRP1 were reciprocal to the splicing switches detected after siRNA depletion of ESRP1/ESRP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the splicing switches induced by ectopic expression of either ESRP2 or ESRP1 were reciprocal to the splicing switches detected after siRNA depletion of ESRP1/ESRP2 (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of RT-PCR data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "ae2d58fa-8543-47fd-bbfa-9eb7f1f13d94",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C48",
+      "claim": "More than 70% (37/44) exons in the test panel demonstrated androgen regulated splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these expectations, more than 70% (37/44) exons in our test panel demonstrated androgen regulated splicing (Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR analysis of LNCaP cells treated with androgens",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "b41c2161-d1e8-4243-8a58-b741e6caba6d",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C49",
+      "claim": "Plotting the PSI for each exon after 48 hr androgen stimulation versus the PSI after ESRP1/ESRP2 depletion showed a significant negative correlation (slope = \u22120.66, R2 = 0.64, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, plotting the percent spliced-in (PSI) for each exon after 48 hr androgen stimulation (Y axis) versus the PSI after ESRP1/ESRP2 depletion (X axis) showed a significant negative correlation (slope = \u22120.66, R2 = 0.64, p<0.0001) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of RT-PCR data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "ef5530f9-598a-45aa-a8c2-d77e5bca3b43",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C50",
+      "claim": "Exons that showed more exon skipping in response to ESRP1/ESRP2 depletion had higher splicing inclusion after androgen stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, exons that showed more exon skipping in response to ESRP1/ESRP2 depletion had higher splicing inclusion after androgen stimulation (which would induce ESRP2 expression) (examples shown in Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the negative correlation shown in Figure 4A and examples in Figure 4B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "50a00376-409d-4420-8e35-8ff373c35e8c",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C51",
+      "claim": "Exons that showed higher splicing inclusion in response to ESRP1/2 depletion had less splicing inclusion after androgen stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Reciprocally, exons that showed higher splicing inclusion in response to ESRP1/2 depletion also had less splicing inclusion after androgen stimulation (examples shown in Figure 4A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the negative correlation shown in Figure 4A and examples in Figure 4C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "4a2ba240-d49a-4071-bda0-c48545e6c42c",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C52",
+      "claim": "19/38 ESRP-regulated exons have different patterns of splicing inclusion between tumour and normal tissue in the PRAD cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of the PRAD cohort revealed that 19/38 ESRP-regulated exons also have different patterns of splicing inclusion between tumour and normal tissue (Figure 5E and Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of TCGA PRAD cohort data shown in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "3ad4c65a-1e4d-4cc8-a8da-438f652f0302",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C53",
+      "claim": "DOCK7 exon 23 is excluded more frequently in prostate tumours compared to normal prostate tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "These differentially spliced exons include the AR-ESRP2-controlled alternative exons in the DOCK7 and RPS24 genes (both of which were excluded in prostate tumours compared to normal prostate tissue); and the alternative exons in the MINK1 and MAP3K7 genes (each of which had increased levels of splicing inclusion in prostate tumours compared to normal tissue).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of TCGA PRAD cohort data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "ea178f0e-968a-452d-9d29-38446816a239",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C54",
+      "claim": "RPS24 exon 5 is excluded more frequently in prostate tumours compared to normal prostate tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "These differentially spliced exons include the AR-ESRP2-controlled alternative exons in the DOCK7 and RPS24 genes (both of which were excluded in prostate tumours compared to normal prostate tissue); and the alternative exons in the MINK1 and MAP3K7 genes (each of which had increased levels of splicing inclusion in prostate tumours compared to normal tissue).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of TCGA PRAD cohort data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "ab02ab60-03e2-4e94-a0ed-973ca64edb89",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C55",
+      "claim": "MINK1 alternative exons had increased levels of splicing inclusion in prostate tumours compared to normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "These differentially spliced exons include the AR-ESRP2-controlled alternative exons in the DOCK7 and RPS24 genes (both of which were excluded in prostate tumours compared to normal prostate tissue); and the alternative exons in the MINK1 and MAP3K7 genes (each of which had increased levels of splicing inclusion in prostate tumours compared to normal tissue).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of TCGA PRAD cohort data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "188939f0-1272-415f-9dc7-74e9c62a186e",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C56",
+      "claim": "MAP3K7 alternative exons had increased levels of splicing inclusion in prostate tumours compared to normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "These differentially spliced exons include the AR-ESRP2-controlled alternative exons in the DOCK7 and RPS24 genes (both of which were excluded in prostate tumours compared to normal prostate tissue); and the alternative exons in the MINK1 and MAP3K7 genes (each of which had increased levels of splicing inclusion in prostate tumours compared to normal tissue).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of TCGA PRAD cohort data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "8ec4a010-dbec-46d4-a279-4004ef240f55",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C57",
+      "claim": "qRT-PCR analysis of an independent cohort confirmed more frequent skipping of DOCK7 exon 23 in prostate tumour tissue compared to normal prostate.",
+      "claim_type": "EXPLICIT",
+      "source": "Further qRT-PCR analysis of an independent cohort confirmed more frequent skipping of DOCK7 (exon 23) and RPS24 (exon 5) in prostate tumour tissue compared to normal prostate (Figure 5F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "8a92a324-a58f-4bb5-b099-aa6144bf9b04",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C58",
+      "claim": "qRT-PCR analysis of an independent cohort confirmed more frequent skipping of RPS24 exon 5 in prostate tumour tissue compared to normal prostate.",
+      "claim_type": "EXPLICIT",
+      "source": "Further qRT-PCR analysis of an independent cohort confirmed more frequent skipping of DOCK7 (exon 23) and RPS24 (exon 5) in prostate tumour tissue compared to normal prostate (Figure 5F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "fed1de16-169e-4e68-ae06-b835cb1846b1",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C59",
+      "claim": "Androgen induction of ESRP2 mRNA expression was blocked using the androgen antagonist bicalutamide (Casodex).",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, androgen induction of ESRP2 mRNA expression was blocked using the androgen antagonist bicalutamide (Casodex) (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "27e6ffd0-ca62-48b1-9e84-2a40fcb4ce1b",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C60",
+      "claim": "Casodex reduced the splicing inclusion of NUMB exon three.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with Casodex preventing expression of some potentially harmful isoforms in prostate cancer cells, the splicing inclusion of NUMB exon three and TUFT1 exon two were reduced by Casodex (both these exons are normally activated by androgen exposure and ESRP2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "1e73be71-5bf6-48b9-b6b7-871e2953fe6d",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C61",
+      "claim": "Casodex reduced the splicing inclusion of TUFT1 exon two.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with Casodex preventing expression of some potentially harmful isoforms in prostate cancer cells, the splicing inclusion of NUMB exon three and TUFT1 exon two were reduced by Casodex (both these exons are normally activated by androgen exposure and ESRP2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "43c90ae5-83cd-4a99-b650-b0f4f51b068b",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C62",
+      "claim": "Exon skipping events in the RPS24, FN1 and MYH10 genes that correlated with a poorer prognosis were reduced by Casodex.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, exon skipping events in the RPS24, FN1 and MYH10 genes that correlated with a poorer prognosis were also reduced by Casodex (these exons are normally skipped in response to ESRP2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "bcb95b0c-66cd-446d-8751-e00219dbd079",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C63",
+      "claim": "Skipping of CTNND1 exon 2 and 3 correlates with a decreased time to biochemical recurrence within the TGCA dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Skipping of CTNND1 exon 2 and 3 correlates with a decreased time to biochemical recurrence within the TGCA dataset (Figure 5\u2014figure supplement 1), and this is the mRNA isoform promoted by Casodex treatment (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival analysis of TCGA data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "360ce84c-243a-4adf-bb23-d956d8b113f5",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C64",
+      "claim": "Casodex treatment promotes the CTNND1 mRNA isoform with skipping of exons 2 and 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Skipping of CTNND1 exon 2 and 3 correlates with a decreased time to biochemical recurrence within the TGCA dataset (Figure 5\u2014figure supplement 1), and this is the mRNA isoform promoted by Casodex treatment (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "efa0cd7c-1bda-4c78-b255-335fd6438699",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C65",
+      "claim": "Casodex treatment increased splicing inclusion of MAGI1 exon 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Splicing inclusion of MAGI1 exon 7 (normally repressed by ESRP2) and RALGPS2 exon 15 were also increased by Casodex treatment (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "29b52a41-253d-4b33-8c97-9b34b7450409",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C66",
+      "claim": "Casodex treatment increased splicing inclusion of RALGPS2 exon 15.",
+      "claim_type": "EXPLICIT",
+      "source": "Splicing inclusion of MAGI1 exon 7 (normally repressed by ESRP2) and RALGPS2 exon 15 were also increased by Casodex treatment (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "0b349024-1d65-495f-8c51-466c51021ca2",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C67",
+      "claim": "Casodex treatment reduced splicing inclusion levels of FLNB gene exon 30 by almost 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this prediction, treatment of LNCaP cells with Casodex reduced splicing inclusion levels of the FLNB gene exon 30 by almost 20% (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "5d5f47ef-a1c4-4355-8e6d-170cdba9672a",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C68",
+      "claim": "Increased skipping of FLNB exon 30 has been reported as a key driver of EMT in breast cancer development.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is not differentially spliced between normal prostate and prostate cancer (Figure 5E), increased skipping of FLNB exon 30 has been recently reported as a key driver of EMT in breast cancer development (Li et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation of Li et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "4182e5d1-818a-4028-817b-56e46251b257",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C69",
+      "claim": "Casodex treatment increased splicing inclusion of normally mesenchymal-expressed exons in the CTNND1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Casodex treatment also increased splicing inclusion of what are normally mesenchymal-expressed exons in the CTNND1 gene (Warzecha et al., 2009b) (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6C and citation of Warzecha et al., 2009b",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "e022259c-5a63-452a-a952-a378451ffa77",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C70",
+      "claim": "ESRP2 protein expression was reduced by siRNA depletion of the AR.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, ESRP2 protein expression was reduced by siRNA depletion of the AR (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 6\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "c5c5f6a6-5cee-4339-b683-b5ebcfc40e8d",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C71",
+      "claim": "siRNA-mediated depletion of AR reduced levels of FLNB splicing inclusion from 84% to 69%.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, siRNA-mediated depletion of AR reduced levels of FLNB splicing inclusion from 84% to 69%, and levels of TUFT1 exon 2 splicing from 23% to 9% (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "f564413a-8a81-44e3-ae23-f1d3b136d7f4",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C72",
+      "claim": "siRNA-mediated depletion of AR reduced levels of TUFT1 exon 2 splicing from 23% to 9%.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, siRNA-mediated depletion of AR reduced levels of FLNB splicing inclusion from 84% to 69%, and levels of TUFT1 exon 2 splicing from 23% to 9% (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "05518c29-5de9-453b-bb97-f81776530565",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C73",
+      "claim": "Single ESRP2 depletion was able to switch splicing patterns of exons within the MAP3K7, ARFGAP2 and CTNND1 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our model, single ESRP2 depletion was able to switch splicing patterns of exons within the MAP3K7, ARFGAP2 and CTNND1 genes (Figure 6\u2014figure supplement 2; Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "32482dbc-7fd1-45d1-9915-447768087439",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C74",
+      "claim": "Individual depletion of ESRP2 reduced splicing inclusion of MAP3K7 exon 12.",
+      "claim_type": "EXPLICIT",
+      "source": "As examples, individual depletion of ESRP2 reduced splicing inclusion of MAP3K7 exon 12, and activated splicing inclusion of CTNND1 exons 2 and 3 (Figure 6 \u2013 Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "d17f36d9-ad09-43f7-b27c-b81a9624a248",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C75",
+      "claim": "Individual depletion of ESRP2 activated splicing inclusion of CTNND1 exons 2 and 3.",
+      "claim_type": "EXPLICIT",
+      "source": "As examples, individual depletion of ESRP2 reduced splicing inclusion of MAP3K7 exon 12, and activated splicing inclusion of CTNND1 exons 2 and 3 (Figure 6 \u2013 Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "e4b39536-3cc4-4ac9-8eca-1e1f7a2ea6eb",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C76",
+      "claim": "Splicing patterns of ESRP1/ESRP2 target exons were responsive to single up-regulation of either ESRP1 or ESRP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, splicing patterns of ESRP1/ESRP2 target exons were also responsive to single up-regulation of either ESRP1 or ESRP2 (Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 3\u2014source data 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "6bf10601-2b03-4dab-a9d3-f12b0ef06741",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C77",
+      "claim": "The AR controls expression of the master splicing regulator protein ESRP2, which then regulates the splicing patterns of key genes important for prostate cancer biology.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, the AR controls expression of the master splicing regulator protein ESRP2, which then regulates the splicing patterns of key genes important for prostate cancer biology (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary model based on the collective experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "7570aa22-e8bf-4110-b3d7-3cfc4b43b485",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C78",
+      "claim": "ESRP2 is a direct and early target for transcriptional activation by the AR in prostate cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst the key data supporting this proposed model, we find that ESRP2 is a direct and early target for transcriptional activation by the AR in prostate cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP data showing AR binding near ESRP2 and rapid induction of ESRP2 expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "582719ae-e8d2-4135-a13d-93a0273254b2",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C79",
+      "claim": "Endogenous splice isoform patterns controlled by ESRP1 and ESRP2 respond to androgen stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, endogenous splice isoform patterns controlled by ESRP1 and ESRP2 also respond to androgen stimulation, siRNA-mediated depletion of the AR and/or the AR inhibitor bicalutamide (Casodex).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data showing splicing changes in response to these treatments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "44cde9ae-2c24-4902-8803-9cb7d081fee4",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C80",
+      "claim": "Endogenous splice isoform patterns controlled by ESRP1 and ESRP2 respond to siRNA-mediated depletion of the AR.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, endogenous splice isoform patterns controlled by ESRP1 and ESRP2 also respond to androgen stimulation, siRNA-mediated depletion of the AR and/or the AR inhibitor bicalutamide (Casodex).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data showing splicing changes after AR depletion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "53e5ce96-38fb-4696-83be-d037eabb82e3",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C81",
+      "claim": "Endogenous splice isoform patterns controlled by ESRP1 and ESRP2 respond to the AR inhibitor bicalutamide (Casodex).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, endogenous splice isoform patterns controlled by ESRP1 and ESRP2 also respond to androgen stimulation, siRNA-mediated depletion of the AR and/or the AR inhibitor bicalutamide (Casodex).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data showing splicing changes after Casodex treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "9e3d8ce4-97bf-4515-89b8-2182842ccc77",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C82",
+      "claim": "ADT utilises drugs to inhibit gonadal and extra-gonadal androgen biosynthesis and competitive AR antagonists to block androgen binding and abrogate AR function.",
+      "claim_type": "EXPLICIT",
+      "source": "ADT utilises drugs to inhibit gonadal and extra-gonadal androgen biosynthesis and competitive AR antagonists to block androgen binding and abrogate AR function (Livermore et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "95c537d8-fce5-4062-a959-171a7fedecad",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C83",
+      "claim": "After 2\u20133 years of ADT, tumours often grow again, developing castration resistance with a median survival time of 16 months.",
+      "claim_type": "EXPLICIT",
+      "source": "ADT delays disease progression, but after 2\u20133 years tumours often grow again, developing castration resistance with a median survival time of 16 months (Karantanos et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "d050a135-efff-4583-b07b-5c9db2cdb18b",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C84",
+      "claim": "The process of epithelial-mesenchymal transition (EMT) plays a pivotal role in prostate cancer metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The process of epithelial-mesenchymal transition (EMT) plays a pivotal role in prostate cancer metastasis (Gravdal et al., 2007; Matuszak and Kyprianou, 2011; Min et al., 2010; Saini et al., 2011; Xie et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with multiple citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "424249e5-aebf-4a02-816e-c0b1014a6631",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C85",
+      "claim": "ADT has been shown to directly induce EMT in both mouse and human prostate tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "While the mechanisms driving EMT in prostate cancer are poorly understood, ADT has recently been shown to directly induce EMT in both mouse and human prostate tissue (Sun et al., 2012; Zhifang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Sun et al., 2012 and Zhifang et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "2a5d6950-cfb4-4f7b-8a4d-095d919e3e7b",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C86",
+      "claim": "Changes in alternative splicing patterns can have dramatic effects on EMT and on metastatic disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, changes in alternative splicing patterns can have dramatic effects on EMT and on metastatic disease progression (Pradella et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Pradella et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "b143e2f9-b03b-4d4d-a088-133f73586136",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C87",
+      "claim": "ESRP1 and ESRP2 are important regulators of epithelial alternative splicing patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "ESRP2 and its close relative ESRP1 (60% identical to ESRP2 protein) are important regulators of epithelial alternative splicing patterns (Bebee et al., 2015; Kalluri and Weinberg, 2009; Oltean and Bates, 2014; Valastyan and Weinberg, 2011; Warzecha et al., 2010; Warzecha et al., 2009a; Warzecha et al., 2009b), reduced expression of which can drive critical aspects of EMT (Hayakawa et al., 2017; Pradella et al., 2017; Warzecha et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with multiple citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "5bff44e8-08fb-4b0d-858a-3a50f701ca54",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C88",
+      "claim": "Reduced expression of ESRP1 and ESRP2 can drive critical aspects of EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "ESRP2 and its close relative ESRP1 (60% identical to ESRP2 protein) are important regulators of epithelial alternative splicing patterns (Bebee et al., 2015; Kalluri and Weinberg, 2009; Oltean and Bates, 2014; Valastyan and Weinberg, 2011; Warzecha et al., 2010; Warzecha et al., 2009a; Warzecha et al., 2009b), reduced expression of which can drive critical aspects of EMT (Hayakawa et al., 2017; Pradella et al., 2017; Warzecha et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Hayakawa et al., 2017; Pradella et al., 2017; Warzecha et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "0295e753-81a0-4d47-b7ea-029b5cca285b",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C89",
+      "claim": "Reduced ESRP2 levels in response to ADT may inadvertently help prime prostate cancer cells to facilitate longer term disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data identify an AR-ESRP2 axis controlling splicing patterns in prostate cancer cells, and further suggest that reduced ESRP2 levels in response to ADT may inadvertently help prime prostate cancer cells to facilitate longer term disease progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the collective findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "00a4e8e5-80c9-4d6f-9211-8307940eb8c1",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C90",
+      "claim": "There was a significant trend for a stronger prognostic value amongst the ESRP-regulated exons compared to other exons.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in the violin plot in Figure 5D, there was a significant trend for a stronger prognostic value amongst the ESRP-regulated exons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "3e1f4b4a-3023-434e-a1a6-fb69d05ca2b4",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C91",
+      "claim": "Deletion of the MAP3K7 gene occurs in 30\u201340% of prostate tumours, and is associated with a poor clinical prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the MAP3K7 gene occurs in 30\u201340% of prostate tumours, and is associated with a poor clinical prognosis (Goodall et al., 2016; Kluth et al., 2013; Liu et al., 2007; Wu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "b2adcf57-8734-41f1-9872-828dfd4b4b8a",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C92",
+      "claim": "MAP3K7 exon 12 splicing is associated with epithelial properties of prostate cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MAP3K7 is a key gene in prostate cancer, and MAP3K7 exon 12 splicing is associated with epithelial properties of prostate cancer cells (Dittmar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Dittmar et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "302ed50f-7fc8-432f-b87a-2658d55c8a46",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C93",
+      "claim": "ESRP1 expression is linked to poor survival and metastasis in lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "ESRP1 expression is linked to poor survival and metastasis in lung cancer (Yae et al., 2012), and both ESRP1 and ESRP2 are upregulated in oral squamous cell carcinoma relative to normal epithelium (Ishii et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Yae et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "268ebafe-ce26-42b7-b840-5c4c916b7306",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C94",
+      "claim": "Both ESRP1 and ESRP2 are upregulated in oral squamous cell carcinoma relative to normal epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "ESRP1 expression is linked to poor survival and metastasis in lung cancer (Yae et al., 2012), and both ESRP1 and ESRP2 are upregulated in oral squamous cell carcinoma relative to normal epithelium (Ishii et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Ishii et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "f65a7b5c-46b9-4c9c-900b-9677a8dbae06",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C95",
+      "claim": "Down-regulation of ESRP2 levels in response to ADT could dampen epithelial splicing patterns, helping to prime prostate cancer cells for future mesenchymal development and possibly contribute to development of metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ESRP2 is a critical component of epithelial-specific splicing programmes, we suggest that down-regulation of ESRP2 levels in response to ADT could dampen epithelial splicing patterns, helping to prime prostate cancer cells for future mesenchymal development and possibly contribute to development of metastasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "d59c056a-1bd0-4ebf-8719-de8594a00165",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C96",
+      "claim": "Mesenchymal splicing patterns were induced by bicalutamide (Casodex) treatment of LNCaP cells, including in the FLNB, CTNND1 and MAP3K7 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this, mesenchymal splicing patterns were induced by bicalutamide (Casodex) treatment of LNCaP cells, including in the FLNB, CTNND1 and MAP3K7 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "e18b891f-75a9-485a-b1c9-b453a626b8bb",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C97",
+      "claim": "FLNB encodes an actin binding protein which is linked to cancer cell motility and invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "FLNB encodes an actin binding protein which is linked to cancer cell motility and invasion (Del Valle-P\u00e9rez et al., 2010; Iguchi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "a7c00121-9112-4a04-842b-c37585c7e3e1",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C98",
+      "claim": "Skipping of FLNB exon 30 is sufficient to initiate metastatic progression in breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Skipping of FLNB exon 30 is sufficient to initiate metastatic progression in breast cancer (Li et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Li et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "faa994f3-061d-4624-b517-b2d795ae2117",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C99",
+      "claim": "Androgens promote the FLNB isoform that is not associated with metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In experiments reported here androgens promote the FLNB isoform that is not associated with metastasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that androgens increase FLNB exon 30 inclusion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "a56ba356-0cbe-4147-9924-a1a6722a3bb5",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C100",
+      "claim": "Expression of the metastatic FLNB variant is promoted by bicalutamide (Casodex) treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the metastatic FLNB variant is promoted by bicalutamide (Casodex) treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data showing reduced FLNB exon 30 inclusion after Casodex treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "0553d6a1-a7ce-47ef-ae4c-98751a14d4b0",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C101",
+      "claim": "In breast cancer, the metastatic effects of FLNB alternative splicing are mediated via the FOXC1 transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "In breast cancer, the metastatic effects of FLNB alternative splicing are mediated via the FOXC1 transcription factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "d1bdae69-2e9b-4c7c-812e-fc010372674f",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C102",
+      "claim": "The clinical prognosis of metastatic prostate cancer is poor.",
+      "claim_type": "EXPLICIT",
+      "source": "The clinical prognosis of metastatic prostate cancer is poor (Livermore et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Livermore et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "edb09e49-1474-4e31-9d18-32b9adb371a8",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C103",
+      "claim": "In prostate cancer EMT has been linked to a common mechanism underlying therapeutic resistance and is associated with poor prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In prostate cancer EMT has been linked to a common mechanism underlying therapeutic resistance and is associated with poor prognosis (Gravdal et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Gravdal et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "b357770c-de56-40d0-97a4-707948f8ffcf",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C104",
+      "claim": "Although ADT can effectively control prostate tumour size initially, it simultaneously promotes EMT, an unintended consequence that could ultimately lead to CRPCa.",
+      "claim_type": "EXPLICIT",
+      "source": "Sun et al. showed that although ADT can effectively control prostate tumour size initially, it simultaneously promotes EMT, an unintended consequence that could ultimately lead to CRPCa (Sun et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Sun et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "1241b848-d0e1-40ac-809e-b78d3d66dcdb",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C105",
+      "claim": "The down-regulation of ESRP proteins has been shown to be essential for EMT progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the causes of EMT in prostate cancer progression to CRPCa are likely to be complex, the down-regulation of ESRP proteins has been shown to be essential for EMT progression (Horiguchi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Horiguchi et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "b8cbf67d-2bb6-402a-9fe8-2fedba707829",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C106",
+      "claim": "Loss of ESRP expression may provide a molecular explanation why AR positive prostate cancer cells show increased susceptibility to EMT in response to ADT.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, loss of ESRP expression may provide a molecular explanation why AR positive prostate cancer cells show increased susceptibility to EMT in response to ADT, and so is relevant to consider with regard to therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "2eb58013-1739-4634-abee-d00647fc5485",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "claim_id": "C107",
+      "claim": "An alternative approach may be to inhibit EMT in combination with ADT to prevent disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings have important implications for second line treatment strategies in a clinical setting, and suggest an alternative approach may be to inhibit EMT in combination with ADT to prevent disease progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative therapeutic suggestion based on the findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b1da41b7-7414-4ab3-ad2e-fa98acd831d2",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Androgens regulate ESRP2 expression through direct AR-mediated transcriptional control. ESRP2 expression decreases following ADT in patients and xenografts, while androgens rapidly induce ESRP2 mRNA and protein in AR-positive prostate cancer cell lines. ChIP confirms direct AR binding near the ESRP2 promoter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C14-C15, C20-C27, C78 collectively demonstrate that ESRP2 is a direct AR target through multiple lines of evidence: patient data showing ESRP2 reduction after ADT (C14-C15), cell line experiments showing androgen-induced ESRP2 expression (C20-C25, C27), ChIP data confirming AR binding (C26), and protein-level validation (C23). The convergence of clinical, cellular, and molecular evidence strongly supports this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "1082874c-4bee-4a8f-9fd6-60c3deda1fa7",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ESRP1 and ESRP2 are highly expressed in primary prostate cancer compared to normal tissue. Meta-analysis of 719 tumors and experimental validation show significant upregulation in prostate carcinoma. High ESRP1 expression associates with reduced time to biochemical recurrence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C28-C32, C36 provide robust evidence through meta-analysis (C28), independent experimental validation in multiple cohorts (C29-C30, C32), and clinical outcome data (C36). The consistency across multiple datasets and validation approaches supports the conclusion that ESRPs are upregulated in prostate cancer with prognostic significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "1dc740c1-9017-49f4-8fee-c54f42462068",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ectopic expression of ESRP1 and/or ESRP2 in AR-negative prostate cancer cells reduces cell growth in vitro and significantly slows xenograft tumor growth in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 demonstrate consistent growth inhibition across in vitro (C38) and in vivo (C39-C41) models. The xenograft data show significant effects for ESRP1 alone, ESRP2 alone, and both together, providing robust evidence that ESRP overexpression inhibits prostate cancer growth. Statistical significance is reported for the in vivo experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "9f6c219c-fe41-4806-8303-595e005cc264",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Bioinformatic analysis identified 446 ESRP1/ESRP2-regulated splicing events, with 44 experimentally validated by RT-PCR. These splicing switches were reproducible across multiple prostate cell lines and showed reciprocal responses to ESRP overexpression versus depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 describe a systematic approach to identifying ESRP targets: computational prediction (C42), experimental validation (C43), reproducibility across cell lines (C44-C45), and functional validation through gain-of-function experiments (C46-C47). The reciprocal nature of splicing changes (C47) provides strong evidence for direct ESRP regulation of these exons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "15f6ba0d-822f-459a-8d19-f6f8cb83a81c",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Androgen stimulation induces splicing switches in ESRP-regulated exons that are reciprocal to changes induced by ESRP depletion. Over 70% of ESRP-regulated exons respond to androgens, with a significant negative correlation (R\u00b2=0.64, p<0.0001) between androgen-induced and ESRP-depletion effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51, C9, C79-C81 establish the androgen-ESRP-splicing axis through quantitative analysis showing strong negative correlation (C49) and high proportion of responsive exons (C48). The reciprocal nature of splicing changes (C50-C51) and responses to multiple AR perturbations (C79-C81) provide compelling evidence that androgens control splicing through ESRP2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "ce4e14c1-32e6-46f5-8445-9ff3c666fb61",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ESRP-regulated exons show differential splicing between prostate tumors and normal tissue, with 19/38 exons differentially spliced in the TCGA PRAD cohort. ESRP-regulated exons show significantly stronger prognostic value compared to other exons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C58, C10, C90 demonstrate clinical relevance through TCGA analysis (C52-C56), independent validation (C57-C58), and statistical enrichment for prognostic significance (C90). The violin plot analysis (C90) provides quantitative evidence that ESRP-regulated exons are enriched for clinically relevant splicing events.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "56ecc82c-68c8-4ad4-9353-126f2f62454b",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Treatment with the AR antagonist bicalutamide (Casodex) blocks androgen-induced ESRP2 expression and induces mesenchymal splicing patterns in genes including FLNB, CTNND1, and others. Casodex reduces inclusion of some exons associated with poor prognosis while increasing others.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C67, C69, C13, C96 demonstrate that AR inhibition affects splicing patterns through ESRP2. The data show Casodex blocks ESRP2 induction (C59) and induces specific splicing changes (C60-C67, C69) including mesenchymal patterns (C67, C69, C96). However, the clinical implications are complex as some changes may be beneficial (C60-C62) while others detrimental (C63-C64).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "89a03530-bccc-4ce3-a867-8a4e8ea66247",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "siRNA-mediated depletion of AR reduces ESRP2 protein expression and alters splicing of ESRP-regulated exons. Single ESRP2 depletion is sufficient to switch splicing patterns of multiple target exons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C76 provide complementary evidence using siRNA approaches. AR depletion reduces ESRP2 (C70) and affects splicing (C71-C72), while single ESRP2 depletion is sufficient for splicing changes (C73-C75). This supports the model that ESRP2 is a key mediator of AR effects on splicing, though the sufficiency of ESRP2 alone (without ESRP1) is notable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "c86867c7-0999-4b38-8e91-d36b50491364",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ADT represses ESRP2 expression in clinical prostate cancer, which may inadvertently dampen epithelial splice programs and prime cells for mesenchymal development, potentially contributing to disease progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C11-C12, C89, C95, C106 present a speculative model linking ADT-induced ESRP2 repression to disease progression. While ESRP2 repression by ADT is well-supported (C11), the downstream consequences (C12, C89, C95, C106) are largely inferential. The evidence for mesenchymal splicing after Casodex treatment supports this hypothesis, but direct evidence linking this to clinical progression or EMT in patients is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "7c0a2051-1724-4607-a76d-5f153297f1e5",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ESRP1 expression is reduced following ADT but shows less change than ESRP2 in xenografts. Androgens do not activate ESRP1 gene expression in cell lines, and ESRP1 protein levels do not change after androgen exposure. ESRP2 expression is not prognostic in the TCGA PRAD cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17, C21, C24, C33, C37 establish important distinctions between ESRP1 and ESRP2 regulation. While both are reduced by ADT (C16), ESRP2 shows greater response (C17), and only ESRP2 is directly androgen-regulated in cell lines (C21, C24). These negative results are important for understanding the specificity of androgen-ESRP2 regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "7690b0eb-f423-4a99-8a3e-4b20b41fcadf",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AR-positive LNCaP and CWR22 RV1 prostate cancer cell lines have high endogenous levels of ESRP1 and ESRP2 proteins, while AR-negative PC3 and DU145 cell lines have lower levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 establish baseline expression patterns across cell lines, supported by Western blot data. This provides important context for subsequent experiments and suggests a correlation between AR status and ESRP expression, though causation is not directly tested here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "b2b0d4f1-f8b5-4b4a-b639-b3d3c6a95906",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "E-Cadherin levels were not significantly increased between BPH and prostate carcinoma, or between matched tumor and normal prostate tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 address a potential confounding explanation for ESRP upregulation (increased epithelial cell purity in tumors). The lack of E-Cadherin increase argues against this alternative explanation, strengthening the interpretation that ESRP upregulation is a specific feature of prostate cancer cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "5d7121be-899b-4d41-b30d-86c7704c7719",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Skipping of CTNND1 exons 2 and 3 correlates with decreased time to biochemical recurrence in the TCGA dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 reports a specific clinical correlation supported by survival analysis. This is important for understanding the clinical implications of Casodex-induced splicing changes, as Casodex promotes this unfavorable isoform.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "0208e0c7-04e6-4cd2-bf5e-d6660073179e",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The AR controls expression of ESRP2, which regulates splicing patterns of key genes important for prostate cancer biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is a summary model statement supported by the collective experimental findings. This integrative claim is well-supported by the mechanistic data (AR\u2192ESRP2 transcription) and functional data (ESRP2\u2192splicing changes), though it represents a synthesis rather than a single experimental result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "60f0ae53-f16e-485d-bb79-6281e8991bf6",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background knowledge claims about prostate cancer, androgens, ADT, EMT, ESRPs, and specific genes (MAP3K7, FLNB) based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C82-C88, C91-C94, C97-C98, C101-C105 represent established knowledge from prior literature, appropriately cited. These provide necessary context for the current work. The accuracy of these claims depends on the cited literature, which appears appropriate based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "1294d7b4-8120-4dea-b7c7-00e79f38e4c7",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Androgens promote the FLNB isoform not associated with metastasis, while Casodex treatment promotes the metastatic FLNB variant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C100 connect the splicing data to functional implications based on prior work showing FLNB exon 30 skipping drives metastasis in breast cancer. The inference that androgens promote the non-metastatic isoform (C99) is supported by data showing androgens increase exon 30 inclusion, while Casodex reduces it (C100).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    },
+    {
+      "id": "c92579e5-6f2f-49f8-935b-2ec98289adb1",
+      "content_id": "1ce95e38-0405-4a9a-b7f5-0376011660a8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "An alternative therapeutic approach may be to inhibit EMT in combination with ADT to prevent disease progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C107 is a speculative therapeutic suggestion. While it follows logically from the findings that ADT may promote mesenchymal splicing patterns, this represents a hypothesis for future testing rather than a supported conclusion from the current work. No experimental evidence for combination therapy is provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:59:37.796425Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "68e98afe-f2a3-4807-ae10-526e9f92b8c4",
+      "result_id": "b1da41b7-7414-4ab3-ad2e-fa98acd831d2"
+    },
+    {
+      "claim_id": "8c234fa4-9b03-4104-9dea-d22b4ac1f001",
+      "result_id": "b1da41b7-7414-4ab3-ad2e-fa98acd831d2"
+    },
+    {
+      "claim_id": "7dae8d4b-5f26-4193-a1c1-f84efac735e9",
+      "result_id": "b1da41b7-7414-4ab3-ad2e-fa98acd831d2"
+    },
+    {
+      "claim_id": "c1a68750-5a46-4070-b66d-11b94fbd3721",
+      "result_id": "b1da41b7-7414-4ab3-ad2e-fa98acd831d2"
+    },
+    {
+      "claim_id": "3ab08a68-a8f7-4edd-97bc-42da17056d02",
+      "result_id": "b1da41b7-7414-4ab3-ad2e-fa98acd831d2"
+    },
+    {
+      "claim_id": "7ca4f835-292d-485b-aee0-a15cd98c7ddc",
+      "result_id": "b1da41b7-7414-4ab3-ad2e-fa98acd831d2"
+    },
+    {
+      "claim_id": "16a5725f-6494-46cb-bb88-99c4d038616c",
+      "result_id": "b1da41b7-7414-4ab3-ad2e-fa98acd831d2"
+    },
+    {
+      "claim_id": "fcbc75f0-2454-453a-983a-7b065c65f657",
+      "result_id": "b1da41b7-7414-4ab3-ad2e-fa98acd831d2"
+    },
+    {
+      "claim_id": "1b1542e8-0bcd-4a47-bf21-3c45085571d9",
+      "result_id": "b1da41b7-7414-4ab3-ad2e-fa98acd831d2"
+    },
+    {
+      "claim_id": "e003a5c0-1013-4926-9034-1482c5fad699",
+      "result_id": "b1da41b7-7414-4ab3-ad2e-fa98acd831d2"
+    },
+    {
+      "claim_id": "064bf031-72fa-4135-8a3a-9a8a7bf87a00",
+      "result_id": "b1da41b7-7414-4ab3-ad2e-fa98acd831d2"
+    },
+    {
+      "claim_id": "7570aa22-e8bf-4110-b3d7-3cfc4b43b485",
+      "result_id": "b1da41b7-7414-4ab3-ad2e-fa98acd831d2"
+    },
+    {
+      "claim_id": "a9c024cb-8580-4631-aae9-0b0c170a6263",
+      "result_id": "1082874c-4bee-4a8f-9fd6-60c3deda1fa7"
+    },
+    {
+      "claim_id": "aabbcb46-31f5-4dbc-8b6b-292b3694209b",
+      "result_id": "1082874c-4bee-4a8f-9fd6-60c3deda1fa7"
+    },
+    {
+      "claim_id": "09db3d99-3e5c-4662-ad68-e7c1d7e8aa99",
+      "result_id": "1082874c-4bee-4a8f-9fd6-60c3deda1fa7"
+    },
+    {
+      "claim_id": "09d033e0-6262-4902-bdee-39b67d8edafb",
+      "result_id": "1082874c-4bee-4a8f-9fd6-60c3deda1fa7"
+    },
+    {
+      "claim_id": "7983e004-aba8-4fe6-bdf3-d5103701ad29",
+      "result_id": "1082874c-4bee-4a8f-9fd6-60c3deda1fa7"
+    },
+    {
+      "claim_id": "66c7d323-7d88-4fb3-bd1b-d3315c5a6b53",
+      "result_id": "1082874c-4bee-4a8f-9fd6-60c3deda1fa7"
+    },
+    {
+      "claim_id": "34a95c51-f58f-448d-81f1-77e284489daa",
+      "result_id": "1082874c-4bee-4a8f-9fd6-60c3deda1fa7"
+    },
+    {
+      "claim_id": "8da0d6ca-c106-456f-bc00-1324a24a01eb",
+      "result_id": "1082874c-4bee-4a8f-9fd6-60c3deda1fa7"
+    },
+    {
+      "claim_id": "a8b5e2bd-f1f1-4bd9-b293-10e1cf3a5fe7",
+      "result_id": "1dc740c1-9017-49f4-8fee-c54f42462068"
+    },
+    {
+      "claim_id": "02b39918-1927-44bb-ba5f-7b3506e472f4",
+      "result_id": "1dc740c1-9017-49f4-8fee-c54f42462068"
+    },
+    {
+      "claim_id": "24de4c70-ea02-4a4c-866d-656cff1c7d24",
+      "result_id": "1dc740c1-9017-49f4-8fee-c54f42462068"
+    },
+    {
+      "claim_id": "fe9736a9-9a5f-4d04-9db9-49d3a4c900c4",
+      "result_id": "1dc740c1-9017-49f4-8fee-c54f42462068"
+    },
+    {
+      "claim_id": "86db86ad-c927-4411-b5fe-515c2989e324",
+      "result_id": "9f6c219c-fe41-4806-8303-595e005cc264"
+    },
+    {
+      "claim_id": "2e73725e-f00c-4666-8ccb-97ebc0bd0545",
+      "result_id": "9f6c219c-fe41-4806-8303-595e005cc264"
+    },
+    {
+      "claim_id": "8588ca37-67ce-4b67-938d-3641705814e1",
+      "result_id": "9f6c219c-fe41-4806-8303-595e005cc264"
+    },
+    {
+      "claim_id": "76cc7e2f-11e7-4bae-9e98-6dc7cf4dbebf",
+      "result_id": "9f6c219c-fe41-4806-8303-595e005cc264"
+    },
+    {
+      "claim_id": "b2597da6-5002-477f-bf8e-e0ebe61b2a24",
+      "result_id": "9f6c219c-fe41-4806-8303-595e005cc264"
+    },
+    {
+      "claim_id": "fff6625c-2f37-43db-850b-d8042418fa3c",
+      "result_id": "9f6c219c-fe41-4806-8303-595e005cc264"
+    },
+    {
+      "claim_id": "ae2d58fa-8543-47fd-bbfa-9eb7f1f13d94",
+      "result_id": "15f6ba0d-822f-459a-8d19-f6f8cb83a81c"
+    },
+    {
+      "claim_id": "b41c2161-d1e8-4243-8a58-b741e6caba6d",
+      "result_id": "15f6ba0d-822f-459a-8d19-f6f8cb83a81c"
+    },
+    {
+      "claim_id": "ef5530f9-598a-45aa-a8c2-d77e5bca3b43",
+      "result_id": "15f6ba0d-822f-459a-8d19-f6f8cb83a81c"
+    },
+    {
+      "claim_id": "50a00376-409d-4420-8e35-8ff373c35e8c",
+      "result_id": "15f6ba0d-822f-459a-8d19-f6f8cb83a81c"
+    },
+    {
+      "claim_id": "83ec2b99-2934-40a2-abf3-beb853321804",
+      "result_id": "15f6ba0d-822f-459a-8d19-f6f8cb83a81c"
+    },
+    {
+      "claim_id": "582719ae-e8d2-4135-a13d-93a0273254b2",
+      "result_id": "15f6ba0d-822f-459a-8d19-f6f8cb83a81c"
+    },
+    {
+      "claim_id": "44cde9ae-2c24-4902-8803-9cb7d081fee4",
+      "result_id": "15f6ba0d-822f-459a-8d19-f6f8cb83a81c"
+    },
+    {
+      "claim_id": "53e5ce96-38fb-4696-83be-d037eabb82e3",
+      "result_id": "15f6ba0d-822f-459a-8d19-f6f8cb83a81c"
+    },
+    {
+      "claim_id": "4a2ba240-d49a-4071-bda0-c48545e6c42c",
+      "result_id": "ce4e14c1-32e6-46f5-8445-9ff3c666fb61"
+    },
+    {
+      "claim_id": "3ad4c65a-1e4d-4cc8-a8da-438f652f0302",
+      "result_id": "ce4e14c1-32e6-46f5-8445-9ff3c666fb61"
+    },
+    {
+      "claim_id": "ea178f0e-968a-452d-9d29-38446816a239",
+      "result_id": "ce4e14c1-32e6-46f5-8445-9ff3c666fb61"
+    },
+    {
+      "claim_id": "ab02ab60-03e2-4e94-a0ed-973ca64edb89",
+      "result_id": "ce4e14c1-32e6-46f5-8445-9ff3c666fb61"
+    },
+    {
+      "claim_id": "188939f0-1272-415f-9dc7-74e9c62a186e",
+      "result_id": "ce4e14c1-32e6-46f5-8445-9ff3c666fb61"
+    },
+    {
+      "claim_id": "8ec4a010-dbec-46d4-a279-4004ef240f55",
+      "result_id": "ce4e14c1-32e6-46f5-8445-9ff3c666fb61"
+    },
+    {
+      "claim_id": "8a92a324-a58f-4bb5-b099-aa6144bf9b04",
+      "result_id": "ce4e14c1-32e6-46f5-8445-9ff3c666fb61"
+    },
+    {
+      "claim_id": "27ad34c3-9f3d-4208-adad-68629cb36246",
+      "result_id": "ce4e14c1-32e6-46f5-8445-9ff3c666fb61"
+    },
+    {
+      "claim_id": "00a4e8e5-80c9-4d6f-9211-8307940eb8c1",
+      "result_id": "ce4e14c1-32e6-46f5-8445-9ff3c666fb61"
+    },
+    {
+      "claim_id": "fed1de16-169e-4e68-ae06-b835cb1846b1",
+      "result_id": "56ecc82c-68c8-4ad4-9353-126f2f62454b"
+    },
+    {
+      "claim_id": "27e6ffd0-ca62-48b1-9e84-2a40fcb4ce1b",
+      "result_id": "56ecc82c-68c8-4ad4-9353-126f2f62454b"
+    },
+    {
+      "claim_id": "1e73be71-5bf6-48b9-b6b7-871e2953fe6d",
+      "result_id": "56ecc82c-68c8-4ad4-9353-126f2f62454b"
+    },
+    {
+      "claim_id": "43c90ae5-83cd-4a99-b650-b0f4f51b068b",
+      "result_id": "56ecc82c-68c8-4ad4-9353-126f2f62454b"
+    },
+    {
+      "claim_id": "360ce84c-243a-4adf-bb23-d956d8b113f5",
+      "result_id": "56ecc82c-68c8-4ad4-9353-126f2f62454b"
+    },
+    {
+      "claim_id": "efa0cd7c-1bda-4c78-b255-335fd6438699",
+      "result_id": "56ecc82c-68c8-4ad4-9353-126f2f62454b"
+    },
+    {
+      "claim_id": "29b52a41-253d-4b33-8c97-9b34b7450409",
+      "result_id": "56ecc82c-68c8-4ad4-9353-126f2f62454b"
+    },
+    {
+      "claim_id": "0b349024-1d65-495f-8c51-466c51021ca2",
+      "result_id": "56ecc82c-68c8-4ad4-9353-126f2f62454b"
+    },
+    {
+      "claim_id": "4182e5d1-818a-4028-817b-56e46251b257",
+      "result_id": "56ecc82c-68c8-4ad4-9353-126f2f62454b"
+    },
+    {
+      "claim_id": "c75b3bb9-1cf8-4dc1-a91d-1150c9a5c3c3",
+      "result_id": "56ecc82c-68c8-4ad4-9353-126f2f62454b"
+    },
+    {
+      "claim_id": "d59c056a-1bd0-4ebf-8719-de8594a00165",
+      "result_id": "56ecc82c-68c8-4ad4-9353-126f2f62454b"
+    },
+    {
+      "claim_id": "e022259c-5a63-452a-a952-a378451ffa77",
+      "result_id": "89a03530-bccc-4ce3-a867-8a4e8ea66247"
+    },
+    {
+      "claim_id": "c5c5f6a6-5cee-4339-b683-b5ebcfc40e8d",
+      "result_id": "89a03530-bccc-4ce3-a867-8a4e8ea66247"
+    },
+    {
+      "claim_id": "f564413a-8a81-44e3-ae23-f1d3b136d7f4",
+      "result_id": "89a03530-bccc-4ce3-a867-8a4e8ea66247"
+    },
+    {
+      "claim_id": "05518c29-5de9-453b-bb97-f81776530565",
+      "result_id": "89a03530-bccc-4ce3-a867-8a4e8ea66247"
+    },
+    {
+      "claim_id": "32482dbc-7fd1-45d1-9915-447768087439",
+      "result_id": "89a03530-bccc-4ce3-a867-8a4e8ea66247"
+    },
+    {
+      "claim_id": "d17f36d9-ad09-43f7-b27c-b81a9624a248",
+      "result_id": "89a03530-bccc-4ce3-a867-8a4e8ea66247"
+    },
+    {
+      "claim_id": "e4b39536-3cc4-4ac9-8eca-1e1f7a2ea6eb",
+      "result_id": "89a03530-bccc-4ce3-a867-8a4e8ea66247"
+    },
+    {
+      "claim_id": "4fe3a357-dd44-4dfb-ae4f-ca59afa92a59",
+      "result_id": "c86867c7-0999-4b38-8e91-d36b50491364"
+    },
+    {
+      "claim_id": "8dadb81a-9530-47d6-8a4b-3a7216188234",
+      "result_id": "c86867c7-0999-4b38-8e91-d36b50491364"
+    },
+    {
+      "claim_id": "0295e753-81a0-4d47-b7ea-029b5cca285b",
+      "result_id": "c86867c7-0999-4b38-8e91-d36b50491364"
+    },
+    {
+      "claim_id": "f65a7b5c-46b9-4c9c-900b-9677a8dbae06",
+      "result_id": "c86867c7-0999-4b38-8e91-d36b50491364"
+    },
+    {
+      "claim_id": "b8cbf67d-2bb6-402a-9fe8-2fedba707829",
+      "result_id": "c86867c7-0999-4b38-8e91-d36b50491364"
+    },
+    {
+      "claim_id": "3e8ec21f-5227-4ba0-8200-31af13e6547e",
+      "result_id": "7c0a2051-1724-4607-a76d-5f153297f1e5"
+    },
+    {
+      "claim_id": "e8ec5abe-2968-485e-8d54-90448269b20c",
+      "result_id": "7c0a2051-1724-4607-a76d-5f153297f1e5"
+    },
+    {
+      "claim_id": "3ab08a68-a8f7-4edd-97bc-42da17056d02",
+      "result_id": "7c0a2051-1724-4607-a76d-5f153297f1e5"
+    },
+    {
+      "claim_id": "fcbc75f0-2454-453a-983a-7b065c65f657",
+      "result_id": "7c0a2051-1724-4607-a76d-5f153297f1e5"
+    },
+    {
+      "claim_id": "dfc9483b-20ba-4e30-91f1-b59777b73ab3",
+      "result_id": "7c0a2051-1724-4607-a76d-5f153297f1e5"
+    },
+    {
+      "claim_id": "5a8b9ac9-c584-4250-bf33-fa3e43082ab2",
+      "result_id": "7c0a2051-1724-4607-a76d-5f153297f1e5"
+    },
+    {
+      "claim_id": "08087aa6-c731-47fa-a788-b6ead77c2ac3",
+      "result_id": "7690b0eb-f423-4a99-8a3e-4b20b41fcadf"
+    },
+    {
+      "claim_id": "b8055d46-9dec-42ec-8111-f3279605e4a2",
+      "result_id": "7690b0eb-f423-4a99-8a3e-4b20b41fcadf"
+    },
+    {
+      "claim_id": "70a9ecd8-614a-4b8f-b175-8a05c59445b8",
+      "result_id": "b2b0d4f1-f8b5-4b4a-b639-b3d3c6a95906"
+    },
+    {
+      "claim_id": "d26b32ff-1c9d-4f76-b30b-91134e887b75",
+      "result_id": "b2b0d4f1-f8b5-4b4a-b639-b3d3c6a95906"
+    },
+    {
+      "claim_id": "bcb95b0c-66cd-446d-8751-e00219dbd079",
+      "result_id": "5d7121be-899b-4d41-b30d-86c7704c7719"
+    },
+    {
+      "claim_id": "6bf10601-2b03-4dab-a9d3-f12b0ef06741",
+      "result_id": "0208e0c7-04e6-4cd2-bf5e-d6660073179e"
+    },
+    {
+      "claim_id": "edd7d9fe-bb22-4084-9f05-f7d0ce4126ca",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "1f122954-302f-4234-89bd-6c66d37471fc",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "93b0c034-d076-4cb4-92ca-14bd26f64fa9",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "d926f7ba-66b4-4ba8-bc15-619b521d661f",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "fe5bc5b6-4566-4c77-8596-f6230a890de9",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "9e3d8ce4-97bf-4515-89b8-2182842ccc77",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "95c537d8-fce5-4062-a959-171a7fedecad",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "d050a135-efff-4583-b07b-5c9db2cdb18b",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "424249e5-aebf-4a02-816e-c0b1014a6631",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "2a5d6950-cfb4-4f7b-8a4d-095d919e3e7b",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "b143e2f9-b03b-4d4d-a088-133f73586136",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "5bff44e8-08fb-4b0d-858a-3a50f701ca54",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "3e1f4b4a-3023-434e-a1a6-fb69d05ca2b4",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "b2adcf57-8734-41f1-9872-828dfd4b4b8a",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "302ed50f-7fc8-432f-b87a-2658d55c8a46",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "268ebafe-ce26-42b7-b840-5c4c916b7306",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "e18b891f-75a9-485a-b1c9-b453a626b8bb",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "a7c00121-9112-4a04-842b-c37585c7e3e1",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "0553d6a1-a7ce-47ef-ae4c-98751a14d4b0",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "d1bdae69-2e9b-4c7c-812e-fc010372674f",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "edb09e49-1474-4e31-9d18-32b9adb371a8",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "b357770c-de56-40d0-97a4-707948f8ffcf",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "1241b848-d0e1-40ac-809e-b78d3d66dcdb",
+      "result_id": "60f0ae53-f16e-485d-bb79-6281e8991bf6"
+    },
+    {
+      "claim_id": "faa994f3-061d-4624-b517-b2d795ae2117",
+      "result_id": "1294d7b4-8120-4dea-b7c7-00e79f38e4c7"
+    },
+    {
+      "claim_id": "a56ba356-0cbe-4147-9924-a1a6722a3bb5",
+      "result_id": "1294d7b4-8120-4dea-b7c7-00e79f38e4c7"
+    },
+    {
+      "claim_id": "2eb58013-1739-4634-abee-d00647fc5485",
+      "result_id": "c92579e5-6f2f-49f8-935b-2ec98289adb1"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Prior experimental work has demonstrated optimal Bayesian integration of multisensory cues across various sensory modalities, including visual-vestibular integration for heading direction and visual-auditory integration for object location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are well-supported by multiple experimental citations (Fetsch et al., 2013; Alais and Burr, 2004; Jacobs, 1999; van Beers et al., 1999; Ernst and Banks, 2002). These are established findings in the field that provide the empirical foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C5"
+    ],
+    "result": "Multisensory integration inevitably causes information loss about individual cues, with the amount of lost information increasing with the extent of integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C5 are supported by mathematical analysis in the Materials and methods section and illustrated in Figure 1 and Figure 1\u2014figure supplement 1. The theoretical derivation shows that Fisher information of individual cues decreases after integration, with the percentage of information loss proportional to the integration strength parameter \u03ba_s.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "MSTd and VIP contain two types of neurons in comparable numbers: congruent neurons with similar tuning curves for visual and vestibular cues, and opposite neurons whose tuning curves are shifted by 180\u00b0 between modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 are well-supported by experimental citations (Gu et al., 2008; Chen et al., 2013) and illustrated in Figure 2. These are established neurophysiological observations that form the empirical basis for the computational model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Congruent neurons are responsible for cue integration, while the computational role of opposite neurons remains largely unknown, though they are associated with cue disparity information as their responses vary with disparity between cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 accurately summarize the state of knowledge in the field based on multiple citations (Gu et al., 2008; Gu et al., 2012; Zhang et al., 2016; Ma et al., 2006; Morgan et al., 2008). The claims correctly identify the gap in understanding that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The proposed decentralized network model consists of two reciprocally connected modules (MSTd and VIP), each containing congruent and opposite neurons modeled as continuous attractor neural networks, with congruent neurons connected in a congruent manner and opposite neurons connected in an opposite manner (180\u00b0 offset).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 and C60-C62 describe the proposed model architecture, which is clearly specified in the text and illustrated in Figure 4A. The model structure is internally consistent and biologically motivated by experimental observations (C61 cites Chen et al., 2011; Gu et al., 2006). However, the specific connectivity patterns (C18-C19) are proposed hypotheses rather than experimentally verified features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The network model reproduces the tuning properties of congruent and opposite neurons, with congruent neurons showing enhanced responses and opposite neurons showing suppressed responses when cues are congruent, matching experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C32-C35 are supported by simulation results shown in Figure 5A-B. The model successfully reproduces key experimental observations (Gu et al., 2008; Chen et al., 2013), demonstrating that the proposed connectivity structure can generate the observed neuronal response properties. The tuning properties emerge naturally from the network dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The model reproduces bimodal tuning curves showing cue-reliability-dependent responses and the distribution of intermediate neurons observed in experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by simulation results in Figure 5C-H compared with experimental protocols (Morgan et al., 2008; Gu et al., 2006; Chen et al., 2011). The model successfully captures additional experimental phenomena beyond basic tuning properties, including the effects of adding random components to connections to generate intermediate neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Optimal multisensory integration and segregation can be geometrically interpreted as vector summation and subtraction of posteriors, with vector lengths indicating confidence and enabling assessment of integration validity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C26-C30 present a geometric interpretation of Bayesian integration and segregation using von Mises distributions. The mathematical derivations (Equations 3-7) are correct, and the geometric interpretation is illustrated in Figure 3. The framework provides theoretical predictions for how integration and segregation should behave as a function of cue reliability and disparity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The network implements optimal integration and segregation, with input intensity encoding likelihood reliability and reciprocal connection strength representing prior reliability, and this performance is robust over a large parameter range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by systematic comparison of network simulations with theoretical predictions in Figure 6F-I and Figure 6\u2014figure supplement 2. The network's estimates closely match Bayesian predictions across varying input intensities, cue disparities, and connection strengths (R\u00b2 > 0.96 in Figure 6\u2014figure supplement 2), demonstrating that the proposed architecture implements optimal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Congruent neuron activity decreases while opposite neuron activity increases with cue disparity, with equal activity at 90\u00b0 disparity, enabling the brain to judge integration validity through competition between these neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by simulation results in Figure 7A showing complementary activity patterns. However, C44 is more speculative\u2014while the complementary activities provide a basis for assessing integration validity, the specific mechanism of how the brain implements this decision is not demonstrated in the model and is deferred to the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The neural system can recover lost stimulus information from direct cues by combining activities of congruent and opposite neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by mathematical analysis (Equation 8) and simulation results in Figure 7D showing high correlation (R\u00b2=0.985) between recovered and actual estimates. The recovery mechanism is theoretically grounded in the relationship between integration and segregation posteriors, though the actual neural implementation is not fully specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Opposite neurons discriminate cue disparity much more finely than congruent neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by ROC analysis shown in Figure 8C, demonstrating that opposite neurons have lower discrimination thresholds for cue disparity than congruent neurons. This provides a testable experimental prediction and functional interpretation of opposite neurons' role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The brain can sense differences between cues during integration, multisensory areas are reciprocally connected, and decentralized models successfully reproduce multisensory integration phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C15-C17 are supported by multiple experimental citations (Wallace et al., 2004; Girshick and Banks, 2009; Gu et al., 2008; Chen et al., 2013; Boussaoud et al., 1990; Baizer et al., 1991; Zhang et al., 2016; Fetsch et al., 2013; Stein and Stanford, 2008). These establish the biological plausibility of the decentralized architecture and concurrent processing hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "While opposite neurons have been observed experimentally for years, their functional role has remained unclear, though recent computational work suggests they provide complementary information; the current study proposes they encode cue disparity information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 accurately characterize prior work (Chen et al., 2013; Gu et al., 2008; Kim et al., 2016; Sasaki et al., 2017) and position the current study's contribution. The claims correctly identify the gap in understanding and how the current work extends previous computational studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The study demonstrates that congruent neurons implement Bayesian integration within a single-component prior framework and opposite neurons encode disparity information, but does not explore full Bayesian causal inference, though opposite neurons might help implement such inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 accurately describe the scope and limitations of the current study. C52 correctly summarizes what was demonstrated, C53 acknowledges what was not explored (full causal inference with multiple prior components), and C54 appropriately speculates about future directions. This is an honest assessment of the work's boundaries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The model can potentially be generalized to more than two cues, and opposite neurons (or similar mechanisms) may be a general feature of neural processing involving feature integration and segregation, as suggested by 'what not' detectors in the visual system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C57 are speculative extensions supported by citations (Wozny et al., 2008; Born, 2000; Thiele et al., 2002; Nadler et al., 2013; Goncalves and Welchman, 2017; Rideaux and Welchman, 2018). While the generalization to multiple cues is mathematically outlined (Equation 10), it has not been implemented or tested. The analogy to 'what not' detectors is suggestive but not rigorously established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C63",
+      "C64"
+    ],
+    "result": "The probabilistic model using von Mises distributions is widely adopted in multisensory research, and the network model uses biologically motivated parameters including moderate recurrent connections (no persistent activity) and 180 neurons per module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C63, and C64 describe methodological choices that are well-justified. C58 is supported by multiple citations (Bresciani et al., 2006; Ernst, 2006; Roach et al., 2006; Sato et al., 2007). C63 correctly notes that recurrent connections are set below the threshold for persistent activity, consistent with experimental observations. C64 specifies simulation parameters.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C60",
+      "C61",
+      "C64",
+      "C65",
+      "C66",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors determined multiple cryo-EM and X-ray structures of VcINDY and LaINDY in four different states: VcINDY in Ci-Na+ state (3.15 \u00c5 with Fab84, 3.16 \u00c5 in amphipol), VcINDY-terephthalate in Ci-Na+-S state (3.92 \u00c5), LaINDY in Co apo state (3.09 \u00c5), and LaINDY in Co-S states with malate (3.36 \u00c5), \u03b1KG (3.71 \u00c5), and both substrates (2.86 \u00c5). These represent the first outward-facing structures of any DASS family protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural determinations are well-documented with appropriate resolution statistics (Tables 1-2), validation metrics, and multiple independent approaches (cryo-EM with Fab, amphipol, and X-ray crystallography). The maps show sufficient quality for model building (C52), and the two VcINDY cryo-EM structures are nearly identical (r.m.s.d. 0.750 \u00c5, C53), validating the methods. The novelty claim about first outward-facing structures is supported by prior literature citations (C6, C31, C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C133"
+    ],
+    "result": "LaINDY functions as a dicarboxylate exchanger, as demonstrated by complementation assays showing growth on \u03b1KG as sole carbon source in a knockout E. coli strain, and transport assays showing accumulation of radioactive succinate that is reduced upon addition of excess cold succinate or \u03b1KG, consistent with exchange activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional characterization is supported by multiple independent assays (C56-C58) and is consistent with phylogenetic classification (C133). The complementation assay provides evidence for \u03b1KG transport activity, while the radioactive succinate uptake and competition experiments demonstrate exchange activity. However, the authors acknowledge that proteoliposome reconstitution experiments are needed to confirm strict substrate coupling and examine sodium/proton dependence (C134).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "LaINDY adopts an outward-facing (Co) conformation with the transport domain repositioned 13.0 \u00c5 toward the periplasm with a 37.4\u00b0 rotation compared to VcINDY's inward-facing state. The individual domains show strong structural homology (r.m.s.d. 2.897 \u00c5 for scaffold, 2.044 \u00c5 for transport), supporting a rigid-body elevator mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural characterization is well-supported by high-resolution cryo-EM data (3.09 \u00c5, C60, C69) with clear domain assignments (C71-C72). The quantitative comparison with VcINDY (C81-C82) provides specific measurements of domain repositioning. The structural conservation of individual domains combined with their different relative positions (C83) provides strong evidence for the elevator mechanism, consistent with prior models (C35, C131).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Substrate binding to LaINDY in the outward-facing state introduces minimal conformational changes, with all three Co-S structures (malate, \u03b1KG, and mixed) showing pairwise r.m.s.d. of 0.41-0.52 \u00c5 compared to the apo Co structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is well-supported by quantitative structural comparisons (C87) across multiple substrate-bound states determined by both cryo-EM and X-ray crystallography (C64-C66, C84). The presence of substrate density in omit maps (C86) confirms substrate binding. The minimal conformational change upon substrate binding (C88) is a direct inference from the small r.m.s.d. values and contrasts with the behavior of VcINDY cotransporter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C132"
+    ],
+    "result": "LaINDY contains conserved positively-charged residues (Arg159 and His392) at positions equivalent to the Na1 and Na2 sodium binding sites in VcINDY. These residues are proposed to act as permanent Na+ surrogates, making LaINDY a sodium-independent exchanger, similar to substitutions observed in other transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observations are well-documented (C90-C91) and supported by sequence conservation analysis (C92) and phylogenetic classification (C30, C132). The cation binding sites are more enclosed in LaINDY than VcINDY (C93), supporting the inference that sodium cannot bind as in cotransporters (C94). The hypothesis of Na+ surrogates (C95) is reasonable given precedent in other transporters (C96), though direct functional validation of sodium-independence is acknowledged as needed (C134).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "MD simulations reveal that the Co-S to Ci-S transition involves a 39\u00b0 rigid-body rotation and 8.3 \u00c5 translation of the transport domain. The arm helices H4c and H9c remain fixed relative to the scaffold domain, while flexible hinge loops L4-HPin and L9-HPout allow ~30\u00b0 angle changes. Substrate and Na+ surrogate residues remain stable throughout the transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MD simulation approach is well-described (C67-C68) with custom biased protocols and unbiased equilibration. The quantitative measurements of domain movements (C98, C103) are supported by detailed analysis shown in figures. The structural basis for arm rigidity (conserved salt bridges and bulky residue interactions, C100) is validated by mutagenesis data in NaCT (C101). The stability of substrate and Na+ surrogates during transition (C104-C105) is documented in time-series data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C141",
+      "C142"
+    ],
+    "result": "Substrate release from VcINDY induces significant local conformational changes in the Ci-Na+ state compared to Ci-Na+-S, including Pro422 movement (1.5 \u00c5), His432 rotation (73\u00b0), Tyr178 rotation (41\u00b0), formation of Arg175-Glu437 salt bridge, and movement of hairpin helices (1.4 \u00c5 toward scaffold domain).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural changes are well-documented through comparison of two independent Ci-Na+ structures (r.m.s.d. 0.75 \u00c5, C107) with previous Ci-Na+-S structures. The specific movements are quantified (C109-C113) and supported by structural data in Figure 7. The functional importance is validated by disease mutations at equivalent positions in human NaCT (C114). The cascade of conformational changes provides a plausible mechanism for coupling substrate release to conformational transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Substrate release in VcINDY causes prominent changes on the periplasmic surface, including movement of the HPoutb-TM10a loop, unwinding of HPoutb C-terminus (one turn), breaking of the Glu394-Lys337 salt bridge, and insertion of Trp461 between TM6, TM10a, and TM11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The periplasmic surface changes are well-documented through structural comparison (C115) with specific residue movements identified (C116-C118, C120). The functional relevance is supported by disease mutations in human NaCT at equivalent positions (Pro400, Val401) that abolish transport and cause SLC13A5 Deficiency (C119). The intermediate position of the loop in the Fab84-bound structure (C121-C122) provides additional validation of the conformational changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The authors propose a charge-compensation mechanism for preventing slippage in DASS transporters. In exchangers, positively-charged residues at cation sites create an electrostatic barrier in the apo state that is neutralized upon divalent substrate binding. In cotransporters, Na+ ions serve the same role, ensuring transitions only occur when fully loaded or unloaded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The charge-compensation mechanism is a reasonable hypothesis based on structural observations (C89-C95, C145-C147) and has precedent in other transporters (C152). However, it remains speculative (evidence_type: SPECULATION, INFERENCE) without direct experimental validation. The mechanism would require demonstration that: (1) apo exchangers cannot transition between Co and Ci states, (2) substrate binding enables the transition, and (3) charge neutralization is the causative factor. The authors acknowledge that proteoliposome experiments are needed (C134), which would be essential to test this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The structural and MD simulation data reveal that DASS proteins operate via an elevator mechanism where the transport domain moves within a framework formed by two horizontal \u03b1-helix arms (H4c and H9c) on opposing membrane surfaces, alternating substrate access between membrane sides. This mechanism is similar to GltPh but with surface-exposed rather than transmembrane arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The elevator mechanism is well-supported by multiple lines of evidence: structural comparisons between Co and Ci states (C8, C82), MD simulations showing domain movements (C98-C99), and the rigid arm framework (C99-C100). The comparison with GltPh (C137) is appropriate and highlights both similarities and differences. The mechanism integrates structural data from both VcINDY and LaINDY with computational modeling, providing a comprehensive description of the transport cycle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C143",
+      "C144"
+    ],
+    "result": "DASS cotransporters and exchangers employ both unique and shared mechanisms to prevent slippage. Cotransporters use substrate-release induced conformational changes (distinct from GltPh hairpin gates), while exchangers show no major conformational changes between apo and substrate-bound outward-facing states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential behavior between cotransporters and exchangers is well-documented: VcINDY shows significant conformational changes upon substrate release (C141-C142), while LaINDY shows minimal changes upon substrate binding (C87-C88, C144). The distinction from GltPh mechanism (C143) is supported by structural comparisons. However, the complete prevention of slippage also depends on the proposed charge-compensation mechanism (C145-C151), which remains to be experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "TCA cycle intermediates (citrate, \u03b1KG, succinate) play essential roles beyond metabolism, including regulation of fatty acid synthesis, glycolysis, histone acetylation, DNA transcription/replication, and cell fate determination in stem cells and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established biochemical knowledge (C1, C11-C12) and are supported by appropriate citations to primary literature (C13-C17). The claims provide important biological context for the significance of DASS transporters but are not novel findings of this study. All statements are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The DASS family of transporters imports di- and tricarboxylates in mammalian cells via NaCT, NaDC1, and NaDC3 (SLC13 family). DASS proteins are 45-65 kDa homodimers that include both Na+-coupled cotransporters (2-4 Na+ per substrate) and exchangers, which separate into distinct phylogenetic clades (DASS-C and DASS-E). Mutations cause various diseases including encephalopathy and leukoencephalopathy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established background information supported by extensive citations to prior literature (C18-C25) and phylogenetic analysis (C30). The molecular weight (C26), oligomeric state (C27), and transport stoichiometry (C28-C29) are supported by both literature and experimental data in this study (Figure 2\u2014figure supplement 1e). The disease associations (C20-C23) are well-documented in the literature. This provides essential context but is not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C44"
+    ],
+    "result": "Prior to this work, all DASS structures were of VcINDY in the inward-facing Ci-Na+-S state, showing scaffold and transport domains with substrate coordinated by conserved SNT motifs that also form Na+-binding sites. While an elevator mechanism was proposed, detailed structural changes and exchanger mechanisms were unknown, as was the mechanism preventing Na+ slippage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe the state of knowledge prior to this work, supported by appropriate citations to previous VcINDY structures (C31, C44) and functional studies (C38). The structural features (C32-C34) and proposed elevator mechanism (C35) are well-documented in prior literature. The knowledge gaps (C36-C37, C40) provide clear justification for the current study. These are accurate statements of prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C55",
+      "C59",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors developed multiple technical approaches to overcome challenges in DASS structure determination, including use of Fab84 to increase particle mass for VcINDY (96 kDa dimer), amphipol preservation for thin ice, terephthalate as a substrate analog for clear density, and thermostability screening to identify stabilizing substrates for LaINDY.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The technical developments are well-documented with appropriate experimental details and validation. The small size challenge (C46-C47) is clearly stated, and the solutions (Fab development C48, amphipol use C50) are validated by producing nearly identical structures (C53). The terephthalate strategy (C55) is a reasonable hypothesis that proved successful (C54). The thermostability screening (C62-C63) successfully identified suitable substrates. These represent important methodological advances that enabled the structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "LaINDY exhibits several unique structural features compared to VcINDY, including bends in hairpin helices (Val163 in HPinb, Ala404 in HPoutb), a periplasmic extrusion between TM3-TM4, an additional cytoplasmic helix linker (H6b), and a smooth hydrophobic domain interface with only two hydrogen bonds, similar to GltPh.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural features are clearly documented in the high-resolution LaINDY structure (3.09 \u00c5, C60) and supported by structural comparisons with VcINDY (C72, C76). The domain interface characteristics (C77-C78) are validated by comparison with GltPh. These represent detailed structural observations that contribute to understanding DASS exchanger architecture but are descriptive rather than mechanistically central.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Fab84 binds the periplasmic surface of VcINDY covering the HPoutb-TM10a loop region, resulting in an intermediate conformation between Ci-Na+-S and Ci-Na+ states. A lipid molecule was observed at the transport-scaffold domain interface, potentially involved in regulating conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Fab84 epitope and its effect on loop conformation (C121-C122) are supported by structural data. The lipid observation (C123) is documented in the structure, but its proposed regulatory role (C124) is speculative (evidence_type: SPECULATION). These observations provide useful information about the structural biology but are secondary findings that do not fundamentally alter the main conclusions about the transport mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors report structures of two DASS proteins in four states, including three previously unobserved states (Ci-Na+, Co, Co-S), representing the first outward-facing DASS structures. These advance understanding from a conceptual elevator model to an atomic description of transport domain movement, generally agreeing with a previous VcINDY Co model (r.m.s.d. 3.7 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize the major achievements of the study. The novelty of the states (C126, C130) is validated by literature review (C6, C31, C44). The agreement with previous modeling (C131) validates both the current structures and prior computational predictions. The advancement from conceptual to atomic description (C129) is well-supported by the comprehensive structural and computational data. These represent appropriate summary statements of the study's significance.",
+    "result_type": "MAJOR"
+  }
+]

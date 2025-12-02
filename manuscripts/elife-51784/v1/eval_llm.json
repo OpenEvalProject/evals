@@ -1,0 +1,460 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The study recorded EEG from 20 healthy participants (10 musicians, 10 non-musicians) and ECoG from 3 epilepsy patients with varying musical backgrounds while they listened to monophonic Bach melodies synthesized as piano sounds. Each 150s musical piece was presented multiple times in random order.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide comprehensive methodological details about participant recruitment, recording parameters, stimulus preparation, and experimental design. The descriptions are internally consistent and sufficiently detailed for replication, with appropriate ethical approvals mentioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "EEG responses to music were significantly better predicted by models combining acoustic features and melodic expectations (AM) compared to acoustic features alone (A), with this effect significant at both group level (p<10\u207b\u2076, d=1.64) and individual level (16/20 subjects, p<0.05). The predictive enhancement increased with longer local context used to estimate expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21, C118-C120 demonstrate robust statistical evidence for melodic expectation encoding in EEG. The effect is replicated across multiple levels of analysis (group, individual, single electrode), with appropriate statistical tests, effect sizes, and control analyses ruling out dimensionality confounds. The context-length analysis (C21) provides additional mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C76"
+    ],
+    "result": "Melodic expectations did not alter EEG topographical distributions compared to acoustic-only responses, but induced distinct temporal dynamics with response latencies centered around 200ms (compared to 50ms for acoustic envelope), corresponding to latencies of ERP components like ERAN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 and C76 demonstrate that melodic expectations modulate response timing rather than spatial distribution. The statistical tests are appropriate (topographical dissimilarity analysis, FDR correction), and the 200ms latency aligns with established literature on musical violation responses, providing convergent validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "ECoG recordings revealed that melodic expectations significantly modulated responses in planum temporale (PT) and transverse temporal sulcus (TTS) across all patients, with smaller effects in Heschl's gyrus (HG). The effect was significantly larger in PT than HG (p=0.011) and showed right lateralization in Patient 3 (p=0.038), while envelope tracking showed no hemispheric bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 provide detailed spatial characterization of melodic expectation encoding using invasive recordings. The statistical tests are appropriate (permutation tests, FDR correction, Wilcoxon rank sum), and the hierarchical pattern (PT>HG) is consistent with the hypothesis that melodic expectations are processed in higher-order auditory areas. The correlation with EEG (C33) provides cross-modal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "High-gamma ECoG analysis revealed that melodic expectations produced the largest effects in PT, TTS, and HG electrodes near the PT-HG junction (up to ~50% enhancement in Patient 1), with distinct temporal dynamics compared to low-rate signals: acoustic features showed sharp, short-latency responses while melodic features showed temporally extended responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 demonstrate frequency-specific encoding of melodic expectations in high-gamma signals, which are thought to reflect local neuronal activity. The spatial pattern is consistent with low-rate findings, and the distinct temporal dynamics between acoustic and melodic features support the hypothesis of hierarchical processing. Specific quantitative values are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C138",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Event-related potential analysis demonstrated that musical notes with identical acoustic envelopes but different melodic surprise values elicited significantly different neural responses, with higher surprise producing larger responses (p<0.05 at N1/P2 peaks for pitch surprise; p=0.001 for overall ERP power). This effect was present for pitch and onset entropy but not onset surprise, and was observed in both EEG and ECoG (TTS but not HG).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C138, C142-C145 provide direct evidence that melodic expectations modulate cortical responses independently of acoustic features through careful stimulus matching. The statistical tests are appropriate, and the spatial pattern (TTS but not HG) is consistent with TRF findings. The result complements the TRF analysis by controlling for potential confounds from overlapping responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C156"
+    ],
+    "result": "Temporal response function analysis revealed distinct temporal dynamics for different melodic expectation features: responses up to 350ms were dominated by alternating surprise and entropy (p<0.05), note-onset dominant responses emerged only up to 200ms, while pitch dominant responses persisted up to 400ms, suggesting dissociation between pitch and onset-time expectation processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C149-C153, C156 demonstrate feature-specific temporal dynamics using appropriate statistical tests (permutation tests, FDR correction). The dissociation between pitch and onset-time processing is consistent with prior literature (C154) and provides mechanistic insight into how different aspects of melodic expectations are encoded. The complementary nature of surprise and entropy is theoretically motivated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Neural tracking of music correlated strongly with the average onset-time surprise (So) of musical pieces (r=0.98, p<0.001 for EEG non-musicians; r=0.96, p<0.001 for musicians; r=0.88, p=0.002 for ECoG), but not with pitch surprise or entropy. This effect was specific to onset-time features, and small envelope tracking due to low So did not prevent encoding of pitch expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C159-C161 demonstrate that onset-time predictability strongly influences overall neural tracking quality, with very high correlations and appropriate statistical tests (Spearman correlation). The specificity to onset-time (C160) and dissociation from pitch encoding (C161) provide important mechanistic insights. However, the causal interpretation requires caution as this is correlational evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C77",
+      "C78",
+      "C162",
+      "C166"
+    ],
+    "result": "Musicians showed significantly larger melodic expectation encoding than non-musicians in frontal EEG channels (cluster statistics), despite no significant differences in subjective familiarity with the musical pieces. However, it remains unclear whether musicians encode expectations more strongly or whether the IDyOM model better captures musicians' predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42, C77-C78, C162, C166 demonstrate a musical training effect using appropriate cluster statistics, and the behavioral control (C42) rules out familiarity confounds. However, the authors explicitly acknowledge (C166) that the interpretation is ambiguous: the effect could reflect stronger encoding in musicians or better model fit to musicians' expectations. Additional experiments with different expectation models would be needed to resolve this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C113",
+      "C114"
+    ],
+    "result": "Neural signals were filtered to 1-8 Hz for analysis, with results replicated using broader frequency ranges (0.1-30 Hz). EEG was re-referenced to mastoids to maximize auditory responses, and ECoG was re-referenced to common average. Electrode localization used CT-MRI registration with anatomical assignment via the Destrieux atlas confirmed by blinded expert inspection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98, C113-C114 describe standard preprocessing procedures with appropriate citations and methodological justification. The replication with broader frequency ranges (C93, C114) demonstrates robustness. The electrode localization procedure is well-established and includes appropriate validation (blinded expert confirmation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study used IDyOM, a variable-order Markov model framework combining long-term (pre-trained on Western music corpus) and short-term (online learning from current piece) models to estimate melodic expectations. High-gamma ECoG (70-150 Hz) was used as a proxy for local neuronal activity. These methodological choices were motivated by prior empirical validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100, C103-C109 describe well-established methods with appropriate citations to prior validation studies. The IDyOM model has been extensively validated against human behavioral data (C108-C109), and high-gamma as a neural activity proxy is well-supported (C99-C100). The combination of long-term and short-term models is theoretically motivated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Behavioral validation showed that participants reported repeated musical pieces as more familiar across repetitions (p<0.001), but there was no significant difference in familiarity ratings between musicians and non-musicians.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 provide important behavioral controls with appropriate statistical tests (paired t-test, two-sample t-test, Bonferroni correction). The lack of familiarity differences between groups (C102) is crucial for interpreting the neural differences observed in C41, ruling out a simple familiarity confound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Four melodic expectation features were extracted from IDyOM: entropy of pitch (Hp) and onset-time (Ho), representing uncertainty before observing an event, and surprise of pitch (Sp) and onset-time (So), representing inverse probability of the observed event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 clearly define the melodic features based on information theory principles. The definitions are mathematically sound and the distinction between entropy (pre-event uncertainty) and surprise (post-event unexpectedness) is theoretically motivated and well-established in the predictive coding literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C121",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The temporal response function (TRF) approach was used to dissociate effects of expectations from acoustic envelope changes and to handle rapidly presented stimuli by accounting for dependencies among note sequences. The time-lag window was restricted to 0-350ms based on backward elimination analysis, and control analyses confirmed that improved predictions were not due to increased dimensionality. However, the TRF approach is most effective for time-locked responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117, C121, C163-C165 describe the TRF methodology with appropriate justification and validation. The backward elimination procedure (C117) provides data-driven support for the time window choice. The dimensionality control (C121) addresses a key confound. The acknowledged limitation (C163-C164) regarding time-locked responses is appropriate and suggests future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "TRF models were initially fit using a -150 to 750ms window, then restricted to 0-350ms for prediction analysis to reduce dimensionality. Backward elimination (first iteration only, for computational reasons) was used to identify relevant time lags. For ERP analysis, notes were grouped by surprise values (top/bottom 20%) with matched envelopes (25% closest to median), and statistical significance was assessed using FDR-corrected permutation tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C185 provide detailed methodological specifications for the TRF and ERP analyses. The procedures are standard and appropriate, with proper statistical corrections. The limitation to first iteration of backward elimination (C177) is acknowledged as a computational constraint. The ERP matching procedure (C180-C181) is well-designed to control for acoustic confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "Statistical analyses used two-tailed permutation tests for pairwise comparisons, FDR correction for multiple comparisons, one-way ANOVA for multi-group comparisons (with Greenhouse-Geisser correction when sphericity was violated), Cohen's d for effect sizes, and topographical dissimilarity analysis with randomization tests (100 permutations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C192 describe appropriate statistical methods with proper corrections for multiple comparisons and violations of assumptions. The use of permutation tests is appropriate for neural data that may not meet parametric assumptions. Effect size reporting (C190) is good practice. The topographical analysis method (C191) is cited to established work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C74",
+      "C79",
+      "C172",
+      "C173"
+    ],
+    "result": "The study demonstrates that neural responses are consistent with statistical learning frameworks, with melodic expectations encoded in both low-rate and high-gamma responses of higher cortical regions (PT, TTS, HG, SMG). The TRF methodology enables objective assessment of melodic expectation encoding from non-invasive recordings during passive listening, and validates the neurophysiological basis of Markov-based models of melodic expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71, C74, C79, C172-C173 provide high-level synthesis of the study's contributions. These summary claims are well-supported by the detailed results in other claim groups. The methodological contribution (C71, C74) is novel and the validation of IDyOM (C173) is an important theoretical contribution. However, the claim about 'physiological validity' should be interpreted cautiously as it's based on correlation, not causal manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "The TRF framework is more resistant than ERP approaches to issues with continuous/rapidly presented stimuli because it assumes linear time-invariant transformation. Previous studies have shown TRF effectiveness with various stimulus types. Melodic expectations modulate acoustic responses, with the positive expectation component at 150-250ms latencies corresponding to ERAN components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C75-C76 provide methodological justification with appropriate citations to prior work. The comparison to ERAN (C76) provides convergent validity. However, the claim about TRF being 'more resistant' (C72) is somewhat overstated - the TRF approach has its own assumptions and limitations (acknowledged in C163-C164), and the comparison to ERP is not empirically tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C170",
+      "C171"
+    ],
+    "result": "The study's approach of combining predictive models with neural recordings has been effective in speech perception research. While there is evidence for overlapping brain responses in music and language processing, it remains unclear whether this reflects domain-specific or domain-general functions. The melodic expectation responses showed different spatio-temporal patterns than speech N400/P600 but aligned with syntax surprisal responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87, C170-C171 appropriately contextualize the findings within the broader literature on music-language relationships. The comparisons are well-cited and the acknowledged uncertainties (C82) are appropriate. The observed differences from semantic/syntactic speech responses (C85-C86) and similarities to syntax surprisal (C87) are interesting but require caution in interpretation as they are cross-study comparisons without direct within-subject testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "While IDyOM (statistical learning) has a prominent role in melodic expectations, rule-based approaches may contribute independently. The melodic expectation signals may only partly represent music responses. The results suggest possible right hemispheric bias in melodic expectation processing, but this requires further investigation with larger samples and controls for engagement differences between musicians and non-musicians.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89, C166-C169 appropriately acknowledge limitations and alternative interpretations. The possibility of incomplete representation (C89) and the ambiguity about musician effects (C166) are important caveats. The right hemisphere bias (C167) is suggested but not definitively established. The proposed future studies (C168-C169) are appropriate. These claims demonstrate good scientific practice in acknowledging uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C90",
+      "C91"
+    ],
+    "result": "The introduction and abstract establish that music engagement depends on cultural background and interest, which modulate anticipation of musical events and induce neural responses. Prior work has established that listeners have strong musical expectations that depend on culture, and violations elicit consistent ERPs (MMN, ERAN). The study aims to investigate melodic expectation encoding during naturalistic listening using IDyOM and TRF approaches, providing novel insights into spatio-temporal dynamics and validating predictive statistical models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C66, C90-C91 provide appropriate background and framing for the study, with extensive citations to prior work. The theoretical framework (predictive coding, statistical learning) is well-established. The hypotheses (C60-C61, C63) are clearly stated and theoretically motivated. The claimed novelty (C64-C65, C90) is justified given the naturalistic stimuli and combined EEG/ECoG approach. These are primarily framing claims rather than empirical results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The study hypothesized that melodic expectation signals would be generated at higher hierarchical cortical levels than acoustic responses, based on prior work indicating HG as primary auditory cortex, PT as intermediary, and STG as higher-level. The ECoG-EEG similarities suggest EEG results may originate from temporal regions between PT and HG, and/or parietal regions like SMG, but more direct evidence is needed for confident localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C131 present a clear hypothesis with appropriate citations to prior anatomical/functional work. The inference about EEG sources (C129) is reasonable given the ECoG-EEG correlations but appropriately cautious (C130) about the need for more direct evidence (source localization or within-subject comparisons). The limited IFG coverage (C128) is appropriately acknowledged as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C137",
+      "C139",
+      "C140",
+      "C141",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The ERP analysis examined whether responses time-locked to note onsets are modulated by melodic expectations beyond acoustic features. Pre-stimulus responses in ERPs were due to temporal regularities in music, and could be eliminated by selecting long inter-note intervals, though this reduced epoch numbers. The ERP approach has limitations regarding overlapping responses and feature isolation, but validity is confirmed by parallel TRF findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137, C139-C141, C146-C148 provide appropriate methodological context for the ERP analysis. The explanation of pre-stimulus responses (C139) is reasonable and the control analysis (C140) demonstrates understanding of the issue. The acknowledged limitations (C146-C147) are appropriate, and the cross-validation with TRF results (C148) strengthens confidence in the findings despite these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C157",
+      "C158"
+    ],
+    "result": "Based on prior evidence for dissociation between pitch and sound onset processing, the study expected similar differences in expectation processing. Results indicate brain responses are modulated by melodic expectations, consistent with the hypothesis that more surprising notes elicit larger responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C155, C157-C158 present hypotheses based on prior work and summary interpretations of results. The hypothesis (C155) is appropriately motivated by prior literature (C154). The summary statements (C157-C158) are supported by the detailed results in other claim groups and include appropriate citations to theoretical frameworks.",
+    "result_type": "MINOR"
+  }
+]

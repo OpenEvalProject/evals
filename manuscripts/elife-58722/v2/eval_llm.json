@@ -1,0 +1,504 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C32",
+      "C33",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The study investigated 287 healthy volunteers (150 left-handers) from the BIL and GIN database who completed fMRI tasks (sentence production, listening, reading) and resting-state scans, along with anatomical imaging and cognitive testing. The sample had a mean age of 25.8 years and mean education of 15.6 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C32, C33, C166-C169 provide consistent and detailed description of the study sample, including sample size, handedness distribution, age, education level, and assessment battery. These are straightforward descriptive statistics that are internally consistent across the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C88"
+    ],
+    "result": "Hierarchical clustering based on task-induced asymmetries and resting-state connectivity identified three optimal clusters: TYP_STRONG (N=125) with strong leftward asymmetries, TYP_MILD (N=132) with moderate leftward asymmetries, and ATYP (N=30) with rightward asymmetries. The three-cluster solution was validated by 14 of 30 statistical indices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 and C88 describe the clustering methodology and results with specific sample sizes and validation metrics. The use of multiple statistical indices (14/30) to validate cluster number provides methodological rigor, though the manuscript does not specify which indices were used or why 14/30 is considered sufficient validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Task performance did not differ across language organization groups: response times were independent of group classification (all p>0.49), mean words per sentence was 12.4\u00b12.0 and independent of group (p=0.97), and sentence recall averaged 9.42\u00b10.96 out of 10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 demonstrate that the three groups performed equivalently on the language tasks, which is important for establishing that group differences in brain organization are not confounded by performance differences. Statistical tests appropriately controlled for age, handedness, and sex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The ATYP group had a significantly higher proportion of left-handers (83.3%) compared to TYP_MILD (49.3%) and TYP_STRONG (46.4%) groups (p=0.0007). Women were more frequent in TYP_MILD (58%) than TYP_STRONG (38%, p=0.0013), but not different from ATYP (50%). Age and education did not differ across groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 report demographic differences across groups with appropriate statistical tests. The strong association between left-handedness and atypical language lateralization is well-established in prior literature and replicated here. The sex difference between typical groups is novel and appropriately tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "A significant task \u00d7 language organization interaction was found for task-induced asymmetries (p<10\u207b\u2074). The ATYP group showed no differences in asymmetry across tasks (all p>0.99 for SENT_CORE, p>0.83 for SENT_HUBS), while both typical groups showed stronger asymmetry during production than reading (p<0.001), and reading stronger than listening (p<0.017).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe a key finding distinguishing ATYP from typical groups. The statistical evidence is strong (p<10\u207b\u2074 for interaction), and the pattern is clear: typical individuals show a gradient of asymmetry across tasks while atypical individuals do not. This is visualized in Figure 1 and Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "A language organization \u00d7 handedness interaction was significant for SENT_CORE (p=10\u207b\u2074) but not SENT_HUBS (p=0.12). In TYP_STRONG, right-handers had higher asymmetry than left-handers (p=0.03), while in ATYP, left-handers had stronger asymmetry than right-handers (uncorrected p=0.0075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C48 report an interaction that reaches significance for SENT_CORE but not SENT_HUBS, suggesting inconsistency across ROI definitions. The ATYP comparison uses an uncorrected p-value (0.0075) which may not survive multiple comparison correction, and the manuscript notes this is uncorrected, raising concerns about the robustness of this specific finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Handedness did not affect resting-state connectivity (p>0.52). Language organization significantly affected Rs_mIHHC (p=0.0077), with TYP_STRONG showing lower values than ATYP (p=0.01). Mean Rs_DC differed by language organization (p<10\u207b\u2074): ATYP > TYP_MILD and TYP_STRONG (p<10\u207b\u2074 and p=0.013), and TYP_STRONG > TYP_MILD (p<10\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 establish that resting-state connectivity differences are related to language organization but not handedness per se. The statistical evidence is strong with very small p-values for main effects. This contrasts with prior findings (C13) and the manuscript acknowledges this discrepancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A language organization \u00d7 side interaction was significant for Rs_DC (p<10\u207b\u2074). ATYP showed no leftward asymmetry (p=0.80), while both typical groups showed significant leftward asymmetry (both p<10\u207b\u2074). In the left hemisphere, TYP_MILD had lower Rs_DC than TYP_STRONG (p=0.0018) but was not different from ATYP (p=0.063). In the right hemisphere, ATYP had the highest Rs_DC values, exceeding both typical groups (both p<10\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe a critical finding: ATYP individuals have high bilateral connectivity rather than reversed asymmetry. The statistical evidence is strong and the pattern is clearly visualized in Figure 2. This supports the main conclusion that atypical organization is not simply a mirror of typical organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Twenty-three individuals (8%) exhibited dissociations in asymmetries across language tasks. Dissociations were significantly more frequent in ATYP (40%, 12/30) than TYP_MILD (6.82%, 9/132) or TYP_STRONG (1.6%, 2/125) (both p<10\u207b\u2074). Dissociated individuals were more likely to be left-handed (74% vs. rest of sample, p=0.02) but sex distribution was not different (p=0.60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 establish that dissociations are common in ATYP individuals and rare in typical individuals. The statistical evidence is strong and the association with left-handedness is significant. This is a key finding supporting the concept of loose hemispheric specialization in ATYP individuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C146"
+    ],
+    "result": "In ATYP individuals, the predominant dissociation pattern (9/12) was leftward asymmetry during production with rightward asymmetry during reading and listening. Only 3/12 showed the reverse pattern. This pattern held for both SENT_CORE and SENT_HUBS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 and C146 describe the specific pattern of dissociations in ATYP individuals, supported by Figure 3. The predominance of one pattern (9/12) over the reverse (3/12) suggests a systematic organization rather than random variation, though the small sample size (N=12) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Dissociated individuals in ATYP and TYP_MILD groups had lower asymmetry strength than congruent individuals (both p<0.013). CROSSED_ATYP individuals had significantly higher mean Rs_DC than all TYP individuals (p<0.0027) and higher Rs_mIHHC than CROSSED_TYP individuals (p<0.016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 link dissociations to connectivity patterns, with statistical support. The finding that CROSSED_ATYP individuals have the highest interhemispheric connectivity (Figure 4) supports the hypothesis that strong bilateral connectivity enables dissociations. Post-hoc tests were corrected for multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "ATYP individuals had smaller gray and white matter hemispheric asymmetries than typical individuals (p=0.03). CROSSED_ATYP individuals had larger corpus callosum volume than CROSSED_TYP individuals (uncorrected p=0.037, HSD-corrected p=0.16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is supported with p=0.03 after adjusting for covariates. However, C67 reports a corpus callosum difference that does not survive multiple comparison correction (HSD p=0.16), though the uncorrected p=0.037 is reported. The manuscript acknowledges this limitation by reporting both values, but the result should be considered preliminary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "PCA of cognitive test residuals (after adjusting for age, sex, education, handedness) identified four components explaining 49% of variance: spatial (SPA: mental rotation, Corsi, maze, Raven), phonological (PHONO: pseudoword, rhyming), memory (MEM: word and pseudoword learning), and verbal (VERB: fluency, reading/listening span, vocabulary).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 describe the PCA results with specific loadings for each component. The four-component structure is reasonable and the variance explained (49%) is modest but acceptable for cognitive data. The components align with theoretical expectations for cognitive domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "A significant language organization \u00d7 cognitive component interaction was found (p=0.0003). TYP_STRONG had higher spatial scores than both other groups (uncorrected p<0.0063), while ATYP had lower memory scores than both other groups (p<0.043). No effects were found for VERB or PHONO components (p>0.13), and dissociations were not related to cognitive performance (p=0.17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 establish specific cognitive differences across groups, visualized in Figure 5. The interaction is highly significant (p=0.0003) and the pattern is clear: TYP_STRONG excels at spatial tasks while ATYP shows deficits in verbal memory. However, post-hoc tests for spatial differences are uncorrected, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Comparison with prior Gaussian mixture modeling classification showed high concordance for typicals (98%). All 9 strong-atypicals from GMM were classified as ATYP. However, 15 GMM-ambilaterals were classified as ATYP, and 6 GMM-typicals were classified as ATYP, indicating the multitask approach identifies additional atypical individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 demonstrate that the multitask multimodal approach captures all individuals identified as strongly atypical by the single-task GMM method, plus additional individuals. This is visualized in Figure 6 and supports the value of the multitask approach, though it also raises questions about the boundaries of atypicality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Five right-handers (3.7%) were classified as ATYP, but only 3 (2%) showed atypical organization in all three tasks. The ATYP cluster captured 77% of individuals with right-hemisphere dominance by SVM and 77% of codominant individuals. Among right-hemisphere dominant ATYP individuals, 41% were also codominant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 establish that atypical organization is rare in right-handers (2-3.7%) and show good correspondence with SVM classification. The high proportion of codominance in ATYP individuals (41%) supports the bilateral organization hypothesis. The data are clearly presented and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "TYP_STRONG individuals (N=125, 46.4% left-handers) showed strong leftward lateralization for task-induced asymmetry and intrinsic connectivity with low interhemispheric connectivity, strong anatomical asymmetries, and high visuospatial performance. TYP_MILD individuals (N=132, 50.7% left-handers) showed moderate leftward asymmetries, lower left Rs_DC, higher interhemispheric connectivity, more frequent in women, more dissociations (7% vs. 1.6%), and lower visuospatial abilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 synthesize multiple findings to characterize the two typical groups. All component claims are supported by prior results in the manuscript. The characterization is comprehensive and internally consistent, though the causal relationships between features (e.g., connectivity patterns and cognitive abilities) remain correlational.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "ATYP individuals (N=30, 83% left-handers) showed rightward mean asymmetry with no differences across tasks, bilateral high intrahemispheric connectivity, strong interhemispheric connectivity, high dissociation rate (40%), lower anatomical asymmetries, larger corpus callosum when dissociated, and lower verbal memory abilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 synthesize the comprehensive characterization of ATYP individuals. Most component claims are well-supported, though C99 (larger corpus callosum in dissociated ATYP) did not survive multiple comparison correction (see C67). The overall pattern strongly supports the concept of loose hemispheric specialization in ATYP individuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "All individuals with rightward lateralization for production (by GMM) were classified as ATYP, suggesting rightward production lateralization is a clear criterion of atypicality validated by Wada studies. However, the classification did not identify a distinct ambilateral cluster, indicating that weak production lateralization alone is insufficient to ascertain atypicality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 synthesize the comparison with prior classification methods. C102 appropriately cites Wada validation (C7), and the inference that weak lateralization is insufficient for atypicality diagnosis is supported by the data showing ambilaterals distributed across groups. This is an important methodological conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Among GMM-ambilaterals, those classified as ATYP had significantly lower task-induced asymmetry and Rs_DC asymmetry than those classified as typical (all p<0.002). In left-handers, weak production asymmetry predicts atypical organization in 80% of cases, while in right-handers, the same pattern predicts typical organization in 86% of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 provide important insights into the differential meaning of weak lateralization by handedness. The statistical evidence is strong (p<0.002) and the predictive values (80% and 86%) are clinically meaningful. This supports the importance of considering handedness when interpreting weak lateralization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "80% of ATYP individuals were left-handed, consistent with prior research. The multitask approach identified atypical organization in 12% of left-handers (vs. 6% with production only) and 3.6% of right-handers. Right-handed ATYP individuals had lower asymmetry strength than left-handed ATYP individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 establish the relationship between handedness and atypical organization with appropriate citations to prior work (C8, C109). The doubling of detection rate in left-handers (6% to 12%) demonstrates the value of the multitask approach. The difference between right- and left-handed ATYP individuals (C112) is descriptive but not statistically tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "ATYP individuals showed high and symmetrical Rs_DC values, with left hemisphere Rs_DC not different from TYP_STRONG but right hemisphere Rs_DC higher than TYP_STRONG. This bilateral high connectivity, combined with high interhemispheric connectivity, suggests the left hemisphere is wired for language by default even in individuals with rightward task-induced asymmetries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 are well-supported by the data (C53-C56, Figure 7). However, C120 (left hemisphere as default language hemisphere) is labeled as speculation in the evidence and represents a hypothesis rather than a demonstrated fact. The inference is reasonable but goes beyond what the data directly show.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "In right-handers, there is a positive correlation between task-induced asymmetries and Rs_DC asymmetries. However, ATYP individuals showed no mean Rs_DC asymmetry despite rightward task-induced asymmetries. Both CROSSED and CONGRUENT ATYP individuals had left hemisphere Rs_DC as strong as TYP_STRONG, but ATYP differed in having high right hemisphere Rs_DC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 describe the dissociation between task-induced and resting-state asymmetries in ATYP individuals. C121 cites prior work (Labache et al., 2019), and C122-C124 are supported by the current data (C53-C56, Figure 7). This is a key finding distinguishing ATYP from typical organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "ATYP individuals showed more bilateral anatomical organization with decreased hemispheric asymmetries, likely resulting in flexibility for hosting language tasks in either hemisphere. ATYP hosted the largest proportion of dissociations (40%), and CROSSED_ATYP individuals had significantly higher interhemispheric connectivity than other groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 synthesize anatomical and functional findings to explain dissociations. C125 is supported by C66 and C98, C126 by C58 and C97, and C127 by C64-C65. The causal inference that anatomical bilaterality enables functional dissociations is reasonable but remains correlational.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The segregation of typical individuals into TYP_STRONG and TYP_MILD is consistent with prior GMM findings. TYP_MILD showed lower task-induced asymmetries, lower Rs_DC, higher Rs_mIHHC, and a pattern of looser hemispheric specialization consistent with higher dissociation occurrence (7% vs. 1.6% in TYP_STRONG).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 characterize TYP_MILD as intermediate between TYP_STRONG and ATYP. C128 appropriately cites prior work (Mazoyer et al., 2014), and C129-C130 are supported by connectivity findings (C50-C56). The inference in C131 linking connectivity patterns to dissociation occurrence is reasonable and supported by the data (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Women were overrepresented in TYP_MILD (58%) compared to TYP_STRONG (38%) and the overall sample (49%), consistent with prior reports of reduced lateralization in women. However, sex differences were only present in typical groups, not ATYP. Left-handers were not more frequent in TYP_MILD than TYP_STRONG, confirming that handedness relates to rightward lateralization rather than decreased lateralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 establish important relationships between sex, handedness, and language organization. C132 is supported by C42 and cites prior literature. C133-C134 are supported by demographic data (C41-C42). C135 appropriately cites prior work (Mazoyer et al., 2014) and the inference is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Dissociations were detected with higher sensitivity using SENT_HUBS than SENT_CORE. In typical individuals, dissociations were rare (4% in right-handers), consistent with prior literature. In TYP_MILD, dissociations mainly involved reading (5/9 in SENT_HUBS), with reading more lateralized than listening on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 describe methodological aspects and patterns of dissociations in typical individuals. C137 appropriately cites prior literature showing rare dissociations in right-handers. C138-C139 are supported by the data (C57-C62, Figure 3). The focus on reading dissociations in TYP_MILD is novel and interesting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Language development proceeds from early perceptual abilities (fetal auditory processing, phoneme discrimination, newborn speech response) through production (babbling) to late-developing reading, which requires integration of language with object recognition and visuospatial/visuomotor processes including eye movements that are sensitive to syntactic complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C145 summarize developmental neuroscience literature with appropriate citations (McMahon et al., 2012; Hepper & Shahidullah, 1994; Dehaene-Lambertz et al., 2002; Kassuba et al., 2011; Petit et al., 2009; Lopopolo et al., 2019). This provides theoretical context for interpreting dissociation patterns, particularly the special status of reading.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "In ATYP individuals, reading lateralization follows listening rather than production, demonstrating prevalence of sensory integration over action. This pattern, with more frequent rightward lateralization during listening than production, is consistent with clinical observations of dissociated deficits in left-handed aphasics. Handedness showed a modest effect, with the hemisphere controlling the dominant hand acting as a slight attractor for language lateralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C150 interpret the dissociation patterns in ATYP individuals. C147 is an inference from C61-C62 and C146. C148 appropriately cites clinical literature (H\u00e9caen et al., 1981). C149 is supported by C44-C46. C150 is supported by C47-C48, though the statistical evidence for the handedness effect is weaker (uncorrected p-values).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Better visuospatial performance in TYP_STRONG individuals (who had largest hemispheric differences and lowest interhemispheric connectivity) suggests that strong leftward language lateralization is associated with better visuospatial performance. This may explain prior reports of better spatial abilities in right-handers, as TYP_STRONG hosted the highest proportion of right-handers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 link lateralization patterns to cognitive performance. C152 is supported by C74 and C89-C90. C153-C154 are inferences that appropriately cite prior literature (Somers et al., 2015b) and are consistent with the data, though the causal mechanism remains speculative. The crowding hypothesis is mentioned but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Decreased verbal memory in ATYP suggests that atypical reorganization has a cost in terms of cognitive functioning, while mild leftward lateralization (TYP_MILD) appears as efficient as strong lateralization for language processing. These findings are consistent with prior reports of lower performance in ambilaterals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 interpret the cognitive findings (C75-C76). C155 and C156 are reasonable inferences from the data, though causality cannot be established. C157 appropriately cites prior work (Mellet et al., 2014b) and notes that the ATYP group included 15 ambilaterals from that study, providing continuity with prior findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Atypical individuals do not simply mirror typical organization but show loose hemispheric specialization with bilateral language networks. Lower anatomical asymmetries suggest early developmental origins. Dissociations between production and comprehension (early-developing functions) in atypicals versus reading dissociations (late-developing) in typicals support early establishment of atypical organization. Atypical organization has costs (reduced verbal memory) and the findings argue for multitask assessment, especially in left-handers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C165 synthesize the main conclusions. C158-C159 are well-supported by the comprehensive findings. C160 is labeled as inference/speculation and represents a hypothesis about developmental origins. C161-C163 provide supporting evidence for the developmental hypothesis. C164 is supported by cognitive findings (C75). C165 is a methodological recommendation supported by the classification comparisons (C78-C87, C106-C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The SENT_CORE network consists of 18 pairs of homotopic frontal and temporal regions previously identified in right-handers, containing antero-posterior high-order language areas consistent with meta-analyses. The network includes three intrinsic connectivity hubs: inferior frontal gyrus (F3t) and two superior temporal sulcus regions (STS3, STS4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C172 describe the regions of interest used in the study. C170 cites prior work (Labache et al., 2019) establishing the network. C171 appropriately cites meta-analyses (Price 2010, 2012; Vigneau et al., 2006) showing consistency with established language networks. The hub identification is clearly described and visualized in Figure 1.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,205 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Experimental and computational studies demonstrate that neurons and circuits with similar behaviors can have widely different conductance values, with 2-6 fold variability observed in individual components and significant cell-to-cell variability in ion channel expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 are well-supported by multiple experimental citations (Schulz et al., Temporal et al., Tobin et al., Prinz et al.) demonstrating biological variability in conductances and ion channel expression. The inference that similar activities arise from different mechanisms (C6) follows logically from the cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C20",
+      "C21",
+      "C22",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors developed a landscape optimization approach using evolutionary techniques with objective functions based on Poincar\u00e9 sections and thresholds to efficiently find hundreds of model neurons displaying target bursting activity within minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C20-C22, C98-C100 describe the methodological approach and its performance. The method is clearly described and the authors report successful generation of hundreds of models in minutes (C99), which is a concrete performance claim. The approach builds on prior work (C8-C9) with novel modifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C26",
+      "C27",
+      "C28",
+      "C104",
+      "C113"
+    ],
+    "result": "The authors introduce 'currentscapes' - stacked area plots that visualize the percent contribution of each ionic current to total membrane current at each time step, providing insight into current dynamics during neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C26-C28 describe the currentscape visualization method with clear mathematical definitions provided in the Materials and methods. Figure 2 demonstrates the method. Claims C104 and C113 about generalizability and utility are reasonable assertions supported by the demonstrated application, though broader validation would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C63",
+      "C116"
+    ],
+    "result": "The authors developed a probability distribution representation of membrane potential V(t) that visualizes how waveforms change as conductances are perturbed, revealing both smooth deformations and abrupt transitions at specific parameter values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C63 describe the probability distribution method shown in Figures 3, 12-13. The method successfully captures waveform features and transitions as demonstrated in the figures. Claim C116 about this being a necessary step toward classification is a reasonable forward-looking statement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C111"
+    ],
+    "result": "Six model neurons with similar bursting activity (1 Hz frequency, 20% duty cycle) but different conductance densities were generated, demonstrating that similar membrane activities can arise from different current compositions with non-trivial relationships between maximal conductances and current contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 and C111 are supported by Figure 4 and Table 1, which show the six models with similar activity but different conductance values. The observation that the relationship between conductance and contribution is non-trivial (C36-C39) is demonstrated through specific examples in the text and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "ISI distributions in response to current injection reveal complex patterns including period doubling routes to chaos, with models showing both periodic and non-periodic activity across parameter ranges, suggesting aperiodic regimes are ubiquitous rather than special cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C105-C106 are supported by Figures 5-6 showing ISI distributions. The connection to period doubling and chaos (C107-C109) is supported by appropriate citations. The inference that aperiodic regimes are ubiquitous (C110) is reasonable given the data showing proximity to irregular regimes, though this is a broader generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C51",
+      "C67",
+      "C69"
+    ],
+    "result": "Gradual reduction of CaT conductance produces diverse responses across models: some transition to tonic spiking at different thresholds, others show irregular spiking patterns, demonstrating model-specific resilience to perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C51, C67, C69 are directly supported by observations from Figures 7-9 showing differential responses to CaT reduction. The data clearly show different transition points and activity patterns across the six models, supporting the claim of diverse responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C112",
+      "C114",
+      "C115"
+    ],
+    "result": "Perturbations that remove one current cause complex reorganization of all other currents, with the effect on the removed current being predictable but effects on other currents being complicated, resulting in diverse population responses that are difficult to describe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C112, C114-C115 are supported by Figure 15 and the comprehensive perturbation analysis in Figures 7-13. The observation that diagonal effects (same current) are predictable while off-diagonal effects are complex is clearly demonstrated. The diversity and complexity of responses is evident throughout the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C102",
+      "C103"
+    ],
+    "result": "Conductance-based models generate large amounts of complex data that are difficult to visualize, and while models provide access to all state variables, representing this information is challenging, motivating the need for novel visualization methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C13, C102-C103 establish the motivation for the work. These are reasonable statements about the challenges of complex models supported by general knowledge and citation (C103). The claims accurately describe a recognized problem in computational neuroscience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C121",
+      "C126"
+    ],
+    "result": "The model is a single-compartment Hodgkin-Huxley neuron with eight currents based on Liu et al. (1998) and related work, with kinetics from experimental data, and can display multistability for some parameter values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C121, C126 describe the model structure and are supported by appropriate citations. The model equations are provided in Materials and methods. The claim about multistability (C126) is supported by citations to Cymbalyuk et al. and Shilnikov et al.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Plateau oscillations observed in the models have been reported in models of leech heart interneurons and experiments in lamprey spinal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by citations to Cymbalyuk and Calabrese (2000) and Wang et al. (2014). This contextualizes an observed phenomenon within existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C101"
+    ],
+    "result": "The discussion contextualizes ensemble modeling approaches, comparing database and landscape optimization methods, noting their respective advantages and challenges in incorporating biological variability while capturing target activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C97, C101 provide context and discussion of modeling approaches with appropriate citations. These are reasonable assessments of the state of the field and the relative merits of different approaches, supported by references to relevant literature.",
+    "result_type": "MINOR"
+  }
+]

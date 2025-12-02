@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Inner-zone GCs exhibit lower excitability and higher firing thresholds compared to outer-zone GCs. Inner-zone GCs required higher current injections to fire action potentials (56.8\u00b12.6 pA vs 39.4\u00b12.0 pA) and to achieve maximum firing rate (224.6\u00b19.8 pA vs 174.3\u00b19.0 pA), had more depolarized voltage thresholds (-38.0\u00b10.7 mV vs -41.4\u00b10.6 mV), lower input resistance (486\u00b127 M\u03a9 vs 791\u00b163 M\u03a9), larger capacitance (5.8\u00b10.2 pF vs 4.6\u00b10.1 pF), longer first spike delays, and shorter action potential half-widths (122\u00b12 \u00b5s vs 143\u00b14 \u00b5s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by extensive electrophysiological measurements with appropriate statistical testing (Kruskal-Wallis tests with p<0.05). The data show consistent gradients across multiple parameters (n=37-38 cells per zone), and the measurements are internally consistent (e.g., lower input resistance correlates with higher capacitance in inner-zone GCs). The experimental approach using whole-cell current-clamp recordings is appropriate for these measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Inner-zone GCs have higher voltage-gated potassium (Kv) channel density than outer-zone GCs. The maximum Kv current at -60 mV was significantly higher in inner-zone GCs (282\u00b129 pA) compared to outer-zone GCs (221\u00b128 pA), while steady-state activation, inactivation kinetics, and steady-state inactivation were similar between zones, suggesting similar channel composition but different density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by outside-out patch recordings with appropriate statistical testing (Mann-Whitney U test, p=0.04, n=48-54 patches). The inference that similar kinetics but different maximum currents indicates different channel density rather than different channel types is reasonable and well-supported. The connection to shorter action potential duration in inner-zone GCs is a logical inference consistent with the biophysical role of Kv channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C4",
+      "C5"
+    ],
+    "result": "Inner- and outer-zone GCs preferentially respond to different frequency ranges of mossy fiber inputs, enabling Fourier-like frequency decomposition. Dynamic Clamp experiments showed that at -70 mV holding potential, inner-zone GCs responded preferentially to high-frequency inputs (mean phase angle 162\u00b18\u00b0, corresponding to 284 Hz) while outer-zone GCs responded to low-frequency inputs (mean phase angle 100\u00b120\u00b0, corresponding to 116 Hz), despite similar EPSC properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by Dynamic Clamp experiments with appropriate controls (no differences in EPSC amplitude or kinetics between zones). The experimental design using sinusoidally varying input frequencies (30-300 Hz) is appropriate for testing frequency preferences. Statistical significance was demonstrated (Mann-Whitney test, p=0.02, n=7-10 cells), though the sample size is modest. The inference about Fourier-like transformation is reasonable given the frequency-dependent responses, though the analogy has acknowledged limitations (partial separation, temporal constraints).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The position of GC somata in the granule cell layer is correlated with the position of parallel fiber bifurcation in the molecular layer. DiI labeling experiments showed a strong negative correlation (R=-0.86, p<0.001, n=39 axons) between normalized GC soma position and PF bifurcation position, indicating that inner-zone GCs give rise to PFs near the Purkinje cell layer while outer-zone GCs give rise to PFs near the cortical surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is well-supported by anatomical tracing experiments with appropriate statistical analysis (Pearson correlation, p<0.001). The sample size (n=39 axons from 6 mice) is adequate, and the normalization procedure accounts for variability in layer thickness. The strong correlation coefficient (R=-0.86) indicates a robust relationship. The inference about preferential positioning is justified by the correlation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Inner-zone parallel fibers have larger diameters and faster conduction velocities than outer-zone PFs. Electron microscopy showed significantly larger diameters for inner-zone PFs (182\u00b12.6 nm) compared to outer-zone PFs (145\u00b11.7 nm, p<0.0001, n=703-1024 axons), and compound action potential recordings demonstrated higher conduction velocity in inner-zone PFs (0.334\u00b10.003 m/s) compared to outer-zone PFs (0.287\u00b10.007 m/s, p<0.0001, n=8 recordings).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are strongly supported by two independent measurement approaches (electron microscopy and electrophysiology) with large sample sizes and appropriate statistical testing (Kruskal-Wallis tests). The gradient in axon diameter is consistent with prior literature in multiple species (cat, monkey, rat, mouse), and the correlation between diameter and conduction velocity follows established biophysical principles. The inference that inner-zone PFs are specialized for fast signaling is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C7"
+    ],
+    "result": "Inner-zone PF inputs to Purkinje cells have faster kinetics and less temporal summation than outer-zone PF inputs. Stimulation of inner-zone PFs resulted in EPSPs with shorter rise times (0.57\u00b10.04 ms vs 1.83\u00b10.33 ms, p=0.0001) and decay times (21.9\u00b11.5 ms vs 40.8\u00b14.1 ms, p=0.0004) compared to outer-zone PFs. During high-frequency stimulation, inner-zone PF EPSPs showed clearer individual peaks and less summation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by whole-cell recordings from Purkinje cells with appropriate statistical testing (Kruskal-Wallis tests, n=4-12 cells). The experimental design controlled for EPSP amplitude to isolate kinetic differences. The inference that faster kinetics result from less dendritic filtering is supported by citations to prior modeling work, though alternative explanations (e.g., different receptor composition) are not fully excluded. The conclusion about more faithful timing information transmission is a reasonable inference from the summation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C8",
+      "C9",
+      "C67",
+      "C68",
+      "C69",
+      "C76"
+    ],
+    "result": "Computational modeling demonstrates that the experimentally observed gradients improve Purkinje cell spike-timing precision, accelerate frequency-switching, and reduce the number of GCs required for learning. Models with all gradients required approximately half the number of GCs (400 vs 800) to achieve the same van Rossum error as models without gradients, showed ~30% faster frequency-switching, and improved learning of spike sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modeling results are supported by systematic simulations with 300 different random MF input sets, providing statistical robustness. The model incorporates experimentally measured parameters and uses appropriate learning algorithms. The van Rossum error metric is well-established for comparing spike trains. However, the model makes simplifications (no active dendrites, no tonic PC activity, simplified circuitry) that may affect quantitative predictions. The qualitative conclusion that gradients improve performance is well-supported, but the specific quantitative improvements (50% reduction in GC number, 30% faster switching) should be interpreted cautiously given model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Individual gradients contribute additively to overall network performance, but maximum optimization requires correct connectivity. Modeling showed that individual gradients (GC properties, PF conduction velocity, EPSP kinetics) each improved performance, with near-additive effects when combined. However, randomly intermixing the connectivity between GCs, PFs, and EPSPs reduced performance compared to anatomically correct connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by systematic modeling experiments comparing models with different combinations of gradients. The finding of near-additive effects is demonstrated across multiple GC population sizes. The importance of correct connectivity is shown by comparing models with all gradients but mixed connectivity to those with correct connectivity. However, the model's simplifications limit the generalizability of these specific quantitative relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The impact of gradients increases with longer time constants and benefits rate-coded signaling. Modeling showed that the benefit of gradients increased with increasing van Rossum error time constant, and models with all gradients showed ~30% faster frequency-switching (transition time) than models without gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by systematic variation of the van Rossum time constant (2-300 ms) and analysis of transition times using sigmoid fits. The inference that rate-coded signaling especially benefits from gradients is reasonable given the increased impact at longer time constants. However, the specific quantitative values depend on model parameters and assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "The depth axis represents a third axis of cerebellar heterogeneity orthogonal to known medio-lateral (zebrin) and rostro-caudal (lobular) axes. GCs in lobule IX are tuned to lower frequencies than lobule V, consistent with the anterior cerebellum processing high-frequency signals and vestibulo-cerebellum processing lower frequencies. Along the depth axis, inner-zone GCs are tuned to higher frequencies than outer-zone GCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by experimental data showing similar gradients in both lobule V and IX (Figure 1\u2014figure supplement 2), with lobule-specific differences in absolute values. The interpretation is consistent with prior literature on lobular differences. The identification of the depth axis as a third orthogonal axis of heterogeneity is well-justified by the experimental data, though the exact nature of the gradient (continuous vs. discrete populations) remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C5"
+    ],
+    "result": "The granule cell layer performs a Fourier-like transformation of mossy fiber inputs by separating signals into frequency components. The separation of signals into frequency components resembles a Fourier transformation, though with acknowledged limitations including partial separation, temporal constraints, and inability to separate simultaneous frequencies from a single MF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by the frequency-dependent responses demonstrated in Dynamic Clamp experiments. The authors appropriately acknowledge the limitations of the Fourier transformation analogy (partial separation, temporal separation required, single MF cannot transmit two frequencies simultaneously). The inference is reasonable as a conceptual framework for understanding the functional consequences of the observed gradients, though it should be understood as an analogy rather than a literal mathematical transformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The frequency gradients along the depth axis are consistent with nucleo-cortical feedback pathways that target outer-zone GCs with slow signals. Nucleo-cortical MFs and PCs specifically target GCs close to the PC layer, sending slow feedback signals to outer-zone GCs which are ideally suited to process such signals. MFs exhibit heterogeneity and have rosettes throughout the depth of the GC layer, allowing each type of MF input to be split into frequency components along the depth axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims integrate the current findings with prior anatomical literature on nucleo-cortical connections and MF anatomy. The inference that outer-zone GCs are suited to process slow feedback signals is well-supported by the frequency preference data. However, this represents an interpretation connecting multiple lines of evidence rather than direct experimental demonstration of the proposed functional relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Superficial GCs imaged in recent studies would preferentially convey low-frequency signals and might not represent the full frequency range present across the depth of the GC layer. This prediction is based on the observed frequency gradients and has implications for interpreting calcium imaging studies of superficial GCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a reasonable prediction based on the demonstrated frequency gradients, though it remains untested. The claim appropriately frames this as a prediction rather than a demonstrated fact. The implication for interpreting prior imaging studies is valid, as most two-photon imaging is limited to superficial layers due to light penetration constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The reduction in required GC number enabled by gradients could represent an evolutionary advantage by minimizing neuronal maintenance energy. Given the large number of cerebellar GCs in the brain, a significant reduction in GC number could minimize neuronal maintenance energy, providing an evolutionary explanation for the emergence of gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is speculative evolutionary reasoning based on the modeling results and general principles of neuronal energy costs. While the modeling shows that gradients reduce the number of GCs needed for a given performance level, the evolutionary argument requires assumptions about selective pressures and energy constraints that are not directly tested. The claim is presented as speculation (\"could represent\") which is appropriate, but it remains uncertain without additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims establishing context for the study, including: GCs are the most numerous neurons in the vertebrate brain; Fourier transformations are used in digital compression; pyramidal neurons in cortex and hippocampus show input tuning; PC firing is related to movement; cerebellar pathology impairs motor precision and timing; and MFs show diverse signaling frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from prior literature, appropriately cited. They provide necessary context for the study but are not novel findings. The claims are supported by appropriate citations to established literature and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C84",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Discussion claims contextualizing findings within broader neuroscience, including: other axes of cerebellar heterogeneity (zebrin stripes, lobular organization); molecular layer interneuron organization; comparison to other neural systems (spinal cord, hippocampus, entorhinal cortex, neocortex); and speculation about similar mechanisms in other brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion claims appropriately contextualize the findings within broader neuroscience literature. They are well-supported by citations to prior work and represent reasonable interpretations and comparisons. The speculative elements (e.g., similar mechanisms in spinal cord) are appropriately framed as speculation. These claims help interpret the significance of the findings but are not primary experimental results.",
+    "result_type": "MINOR"
+  }
+]

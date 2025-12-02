@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The authors selected 24 bona fide lncRNAs from over 2000 identified zebrafish lncRNAs (727 confirmed as non-coding) based on synteny, sequence conservation, expression dynamics, and proximity to developmental regulatory genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the background and selection criteria for the study. The identification of lncRNAs (C1, C2) is supported by appropriate citations to prior transcriptomic and ribosome profiling studies. The selection criteria (C3) are clearly stated and documented in Table 1, providing a rational basis for choosing candidates likely to have functional importance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors generated 32 deletion alleles using CRISPR-Cas9 for 25 zebrafish lncRNAs, including 24 TSS-deletions (244-736 bp) and 8 gene deletions (1-203 kb), achieving an average 94\u00b16% reduction in targeted lncRNA transcript levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 describe the mutagenesis approach and its effectiveness. The data in Table 1 and supplementary figures support the generation of deletions and confirm transcript reduction by qRT-PCR and in situ hybridization. The technical execution appears sound with appropriate controls and validation methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "None of the 25 lncRNAs analyzed were essential for embryogenesis, viability, or fertility, with 31/32 mutants showing no notable abnormalities, surviving to adulthood, and remaining fertile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C69-C71 present the core negative finding of the study. The phenotypic screening is supported by systematic visual assessment (C68) following established protocols, with data documented in Table 1. At least 15 adult homozygous pairs per allele were tested (C89), providing adequate sample sizes for fertility assessment. The one exception (lnc-phox2bb gene deletion) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C80",
+      "C81"
+    ],
+    "result": "LncRNA promoter deletions affected neighboring gene expression in vivo, with 10/40 neighboring genes showing >2-fold expression changes, supporting observations from mammalian cell culture systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C80-C81 demonstrate cis-regulatory effects of lncRNA loci. The expression changes are documented in Figure 1\u2014figure supplement 1-4 using qRT-PCR with appropriate replicates. This provides in vivo validation of cell culture observations (C80), though the functional significance of these expression changes remains unclear given the lack of overt phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Cyrano mutants (TSS and gene deletions including the miR-7 binding site) developed normally and were viable and fertile, contradicting previous morpholino studies that showed embryonic defects, which were demonstrated to be non-specific off-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20, C82-C85 present a critical re-evaluation of cyrano function. The genetic evidence (C16-C18) clearly shows no phenotype in mutants lacking cyrano or its miR-7 binding site. The morpholino control experiment (C19) is particularly strong: injecting morpholinos into mutants lacking the target sequence still produced phenotypes, definitively demonstrating off-target effects. This directly contradicts prior morpholino-based conclusions (C12-C15, C82) and is consistent with recent mouse findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C86"
+    ],
+    "result": "Gas5 mutants lacking the TSS showed complete loss of gas5 expression and altered expression of neighboring (osbpl9) and trans-acting target genes (ptena), but developed normally, reached adulthood, and were fertile, representing the first developmental study of this lncRNA in vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C31, C86 characterize gas5 function. The mutant allele (C26) effectively eliminates expression as shown by in situ and qRT-PCR (Figure 3B, D). Expression changes in neighboring (C27) and proposed trans targets (C30) are documented with statistical significance. Despite these molecular changes and prior cell culture studies suggesting important functions (C24-C25, C28-C29), no developmental phenotype was observed (C31), challenging the developmental relevance of this conserved lncRNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Lnc-setd1ba mutants showed complete loss of lncRNA expression and strong upregulation of the divergently transcribed histone methyltransferase setd1ba during cleavage stages, but maternal-zygotic mutants developed normally and produced normal progeny despite the mouse homolog being essential for development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 examine lnc-setd1ba, the zebrafish ortholog of human LIMT. The gene deletion (C36) eliminates lncRNA expression (C37) and causes dramatic upregulation of setd1ba (C38-C39), shown by in situ and qRT-PCR (Figure 4C-E). Despite this and the essentiality of the mouse setd1ba homolog (C35), no phenotype was observed (C40). The contrast with mouse development is notable but species differences in gene requirements are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Squint deletion mutants lacking most of the coding region and 3'UTR (including the Dorsal Localization Element) showed partially penetrant cyclopia similar to protein-disrupting alleles, but defects attributed to non-coding RNA functions were not detected, and rescue experiments failed to support non-coding roles, indicating squint is not a cncRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C51 test proposed non-coding functions of squint mRNA. The deletion allele (C44-C45) removes the DLE and most coding sequence, reducing transcript ~90% (C46). The cyclopia phenotype (C47) matches protein-disrupting alleles, but proposed non-coding defects were absent (C48). The rescue experiments (C49) are particularly informative: only wild-type squint mRNA rescued, while non-coding versions did not, strongly arguing against non-coding functions (C50-C51). This contradicts prior morpholino/overexpression studies (C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The lnc-phox2bb locus demonstrates that DNA regulatory elements, not the lncRNA transcript itself, are functionally important: whole-gene deletion caused jaw deformation, swim bladder defects, and lethality with altered phox2bb and smtnl1 expression, while TSS-deletion eliminating the transcript had no phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C65 provide the clearest example of distinguishing lncRNA transcript function from genomic regulatory elements. The critical comparison between TSS-deletion (no phenotype, C57) and gene deletion (severe phenotype, C55-C56) with both lacking lncRNA expression (C57) demonstrates the phenotype results from loss of DNA elements, not RNA (C63-C65). The deleted region contains enhancers, CNEs, and histone marks (C59-C61) supporting this interpretation. This is an important control often missing from lncRNA studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The authors conclude that the majority of individual zebrafish lncRNAs have no overt roles in embryogenesis, viability, and fertility, though they may have redundant, subtle, or context-dependent roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 extrapolates from 25 lncRNAs to the majority of zebrafish lncRNAs. While the systematic negative results are compelling, several limitations affect this generalization: (1) the selection criteria biased toward conserved, highly expressed lncRNAs near developmental genes, which should enrich for functional candidates; (2) visual phenotypic screening may miss subtle defects (acknowledged in C67); (3) redundancy among lncRNAs was not tested; (4) context-dependent functions (stress, disease, specific behaviors) were not examined. The conclusion is reasonable but requires appropriate caveats about the scope of phenotypic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Visual assessment of live embryos and larvae is a powerful approach to identify mutant phenotypes based on previous large-scale screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is well-supported by citations to landmark zebrafish mutagenesis screens (Driever et al., 1996; Haffter et al., 1996) that successfully identified thousands of developmental mutants through visual screening. However, this approach has known limitations for detecting subtle, behavioral, physiological, or molecular phenotypes that may be relevant for lncRNA functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The literature on lncRNA functions shows established roles for specific lncRNAs in dosage compensation and imprinting, but conflicting results from morpholino versus genetic studies have created controversy about the developmental importance of lncRNAs in vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 provide important context from prior literature. The well-established functions (C73-C74) are appropriately cited. The controversy (C79) is documented by conflicting mouse studies (C75-C76) and the megamind example in zebrafish (C77-C78) where morpholino phenotypes were not reproduced in mutants. This context justifies the systematic genetic approach taken in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study used TL/AB zebrafish maintained under standard conditions, with at least 15 adult homozygous mutant pairs per allele tested for fertility and maternal-zygotic mutant generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 describe basic methodological details that are clearly stated and appropriate. The sample size of 15 pairs per allele (C89) is reasonable for assessing fertility and generating maternal-zygotic mutants, though larger samples might detect subtle fertility defects.",
+    "result_type": "MINOR"
+  }
+]

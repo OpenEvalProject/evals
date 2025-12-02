@@ -1,0 +1,454 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C16",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "Single-cell RNA sequencing of ~9,400 E13.5 mouse cerebellar cells identified 19 major cell groups using the Seurat pipeline. After quality filtering, 9,326 cells and 15,823 genes were retained. The identified cell groups and their proportions were highly reproducible in downsampled datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11, C12 provide consistent cell numbers (~9,400 initial, 9,326 after filtering) and clearly describe the methodology (10X Genomics, Seurat pipeline). The reproducibility analysis (C16) validates the robustness of clustering. The methodological details (C183-C187) are appropriately documented, and data availability (C188) supports reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The 19 cell groups were categorized into VZ neural progenitor cells expressing Hes1/Hes5, GABAergic neurons and precursors expressing Lhx1/Lhx5, and glutamatergic neurons and precursors expressing Atoh1/Barhl1, based on known marker genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citations to established literature (Kageyama et al. 2008, Morales and Hatten 2006, Ben-Arie et al. 1997) and are consistent with the known biology of cerebellar development. The marker-based classification is a standard approach in scRNA-seq analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Refined clustering of neural progenitor cells revealed four spatially distinct groups along the anteroposterior axis of the VZ. Groups 3 and 4 are enriched for Wnt signaling pathway genes, with group 4 specifically expressing Fgf17 and Calb2 and forming a longitudinal column along the cerebellar midline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering analysis (C17) is supported by pathway enrichment analysis (C18-C19) and validated by ISH/IHC showing spatial expression patterns (C21-C25). The identification of group 3 as resembling the C1 domain (C24) is supported by citation to Chizhikov et al. 2006.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The midline cells (group 4) express Fgf17 and are surrounded by proliferating cells and pERK+ cells, indicating active Fgf-ERK signaling. These Sox2+/Mki67-/EdU- cells appear to be quiescent progenitors. Both midline and C1 cells show Wnt/\u03b2-catenin signaling activity and are proposed to function as organizing centers, with the midline cells designated as the 'midline organizer' (MidO).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The molecular characterization is well-supported by IHC data (C26-C31) showing Fgf17 protein, pERK activation, and proliferation markers. The BAT-gal reporter confirms Wnt signaling activity (C31). However, the functional designation as 'organizing centers' (C32-C34) is interpretive and would benefit from functional validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The MidO cells originate from the roof plate, as demonstrated by Wnt1-lineage tracing showing contribution to the midline and expression of Lmx1a protein (but not mRNA) at E16.5. The persistence of Lmx1a protein without transcripts suggests these cells carry residual protein from their roof plate origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lineage tracing data (C38-C39) combined with the protein/mRNA discrepancy (C40) provide strong evidence for roof plate origin. The interpretation (C41) is consistent with prior literature (Chizhikov et al. 2006). The speculation about protein persistence (C42) is reasonable but remains untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Pseudotemporal analysis using Monocle revealed a bifurcating trajectory from NPCs into Bergmann glia and GABAergic precursors, with 1,314 differentially expressed genes. The analysis correctly inferred known gene expression cascades (Etv4/Etv5 before Bergmann glia markers; Ptf1a/Kirrel2 > Olig2 > Lhx1/5 > Neurog1 in GABAergic neurons) and also predicted spatial gene expression patterns along the anteroposterior axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pseudotemporal analysis is validated by agreement with known developmental sequences (C47-C49, supported by citations). The spatial prediction (C51) is confirmed by ISH data. The methodology is appropriate and the validation against established biology strengthens confidence in the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "A cell cluster (NPC group 3/cluster 6) displays mixed molecular features of VZ, RL, and roof plate. Pseudotemporal analysis suggests this represents a 'posterior transitory zone' containing bipotent progenitors that can give rise to both RL and roof plate derivatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the molecular characterization (C53, C56) is supported by expression data, the interpretation of bipotency (C57) is based solely on computational trajectory inference without direct experimental validation such as clonal analysis or lineage tracing. The pseudotemporal analysis shows branching but does not definitively prove bipotency at the single-cell level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Refined clustering of the GABAergic lineage identified nine cell groups, including two GABAergic precursor groups with different combinations of Ptf1a and proneural genes, interneurons expressing Pax2/Gad1/Pnoc/Glra2, and five PC subgroups distinguished by Etv1, Nrgn, En1, Cck, and Foxp1 expression. The Foxp1+ PCs robustly express RELN receptors (Vldlr, Lrp8) and adaptor Dab1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering is supported by differential gene expression analysis (C62-C69) and validated by ISH/IHC data (referenced in C70-C71). The identification of PC subgroups is consistent with known PC heterogeneity (C67, supported by citations to Fujita et al. 2012, Larouche et al. 2006).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The PC subgroups identified by scRNA-seq show distinct spatial distributions in the developing cerebellum, with complementary expression patterns of Etv1/Foxp1 and Foxp1/Nrgn confirmed by ISH at E13.5 and IHC at E14.5 and E18.5. Foxp1+/Foxp2+ PCs are restricted to specific lateral regions of the cerebellar hemisphere, suggesting that PC subtypes are specified shortly after birth and their molecular features dictate their settlement patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial validation by ISH and IHC (C70-C74) provides strong support for the scRNA-seq findings. The temporal persistence of molecular features (C71-C72) supports the interpretation that these represent stable subtypes. However, the causal claim that molecular features 'dictate' settlement (C75) is correlative and would require functional perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Clustering of the glutamatergic lineage identified 10 cell groups, including proliferating granule cell precursors and multiple spatially distinct populations in the anterior cerebellar anlage. The NTZ can be subdivided into anterior (Lhx9+) and posterior (Neurod1+) compartments, with the posterior compartment further divided into ventral-lateral (Olig2+) and dorsal-medial (Lmx1a+/Tbr1+) domains. Additional populations include Isl1+ cells contiguous with mesencephalic cells and a discrete Atoh1+/Th+ population at the anterior NTZ limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering analysis is supported by spatial mapping using the Allen Brain Atlas (C80) and ISH data (C82-C87). The identification of multiple spatially distinct populations is well-documented. However, the functional significance of these subdivisions requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Genetic fate mapping using Gbx2-creER and Fgf8-creER demonstrates that the anterior and posterior compartments of the NTZ are derived from the VZ and RL, respectively. Gbx2-lineage cells (labeled at E10.5) occupy the anterior NTZ and express high Meis2, while being absent from the RL and posterior NTZ. Fgf8-lineage cells are restricted to the isthmus and anterior NTZ limit. Isl1+ cells, which are Otx2+ and not labeled by Gbx2 or Fgf8 lineage tracing, originate from the mesencephalon and persist in the superior medullary velum but do not contribute to cerebellar nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fate mapping experiments (C92-C94, C99-C102) provide direct evidence for the developmental origins of NTZ compartments. The use of multiple Cre lines and temporal control strengthens the conclusions. The identification of mesencephalon-derived Isl1+ cells (C95-C100) is well-supported by Otx2 expression and lineage tracing, contradicting a previous preprint (C167).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "URD trajectory analysis of RL-derived cells reconstructed developmental trajectories from the posterior transitory zone into granule cells, medial cerebellar nuclei, and lateral cerebellar nuclei. The analysis identified 80, 36, and 47 differentially expressed genes along each trajectory, respectively, including both known regulators (Barhl1, Neurod1, Lmx1a, Olig2, Lhx9) and novel genes not previously associated with RL derivative development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The URD analysis is validated by the presence of known marker genes along appropriate trajectories (C109-C111, supported by multiple citations). The identification of novel genes (C112) is a valuable contribution, though functional validation would strengthen these findings. The trajectory reconstruction is consistent with known developmental biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Integration of E13.5 data with published E14.5, E15.5, and E16.5 datasets using Seurat3 successfully recovered matching cell groups across stages despite technical variations. All E13.5 cell groups were detected at later stages, with expected changes in proportions (increased granule cell precursors and glia, decreased PCs and cerebellar nuclear neurons). This suggests cerebellar cell types display coherent molecular signatures until at least E16.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration analysis (C114) demonstrates technical robustness. The temporal persistence of cell types (C115) and expected proportional changes (C116) are consistent with known developmental biology. The conclusion about coherent molecular signatures (C117) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The study proposes a model where roof-plate-derived midline cells produce Fgf17 and act as a signaling center (MidO) that regulates mediolateral patterning of the cerebellar vermis. This model is supported by mouse and human genetic studies showing FGF17 is important for vermis development, and by the established role of Fgf8 in inducing the isthmic node and Fgf17 expression. The findings suggest a novel mechanism potentially contributing to congenital cerebellar hypoplasia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the molecular characterization of MidO cells is well-supported (C125), the functional role as a signaling center (C126) and the proposed model (C130) are largely interpretive. The supporting genetic evidence (C127-C129) is from prior literature, not the current study. The clinical relevance (C132) is speculative. Functional experiments (e.g., conditional deletion of Fgf17 in MidO cells) would be needed to definitively establish the organizing center function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The study identifies a 'posterior transitory zone' at the intersection of VZ, RL, and roof plate that expresses numerous Wnt/\u03b2-catenin signaling pathway genes (Wnt1, Wnt3a, Wnt9a). This region is proposed to contain progenitors with mixed VZ/RL/roof plate features, suggesting that cell-fate specification among these germinal zones is not absolute. Wnt/\u03b2-catenin signaling is proposed to play an important role in progenitor recruitment, maintenance, and/or progression through this zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The molecular characterization (C137-C139) is supported by scRNA-seq and ISH data. However, the functional interpretation regarding Wnt signaling (C140) and the nature of these cells as bipotent progenitors (C136-C137) requires experimental validation. The claim that fate specification is 'not absolute' (C136) is based on prior fate mapping studies (C135) rather than direct evidence from the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The study provides the first unbiased systematic characterization of newly born PC molecular features, identifying at least five PC subgroups that are specified at or immediately after terminal differentiation. The molecular features persist at later stages, suggesting these represent canonical subtypes rather than transient states. The level and combination of Foxp1 and Foxp2 are proposed to regulate PC subtype identity and settlement, with Foxp1+/Foxp2+ PCs being particularly sensitive to RELN signaling and lacking Ebf2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The molecular characterization (C148) and temporal persistence (C150) are well-supported by scRNA-seq and validation data. The agreement with prior literature on PC specification timing (C149) strengthens the findings. However, the proposed regulatory role of Foxp1/Foxp2 (C155) is interpretive and based on correlative data and in vitro studies (C151-C152), requiring functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The study resolves a controversy about NTZ origins by demonstrating that anterior and posterior NTZ compartments are derived from VZ and RL, respectively. Supporting evidence includes: (1) fate mapping showing Gbx2-lineage (VZ) in anterior NTZ but not posterior NTZ; (2) unpublished Ptpn11 knockout data showing specific loss of anterior NTZ while preserving cerebellar nuclei; (3) evidence that Atoh1-expressing cells at the isthmus are VZ-derived and Fgf-dependent, unlike RL-derived cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fate mapping data (C92-C94, C101-C102) provide strong direct evidence for the dual origin of the NTZ. The unpublished Ptpn11 data (C162) supports the interpretation but should be viewed cautiously until published. The integration with prior literature (C156-C160) appropriately contextualizes the findings. The conclusion (C161, C164) is well-supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Mesencephalon-derived Isl1+ cells persist in the superior medullary velum but do not contribute to cerebellar nuclei, contradicting a previous preprint. The functional significance of these cells remains undetermined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fate mapping data (C99-C100) clearly demonstrate that Isl1-lineage cells do not contribute to cerebellar nuclei. This directly contradicts Rashimi-Balaei et al. 2017 (C167). The acknowledgment that functional significance is unknown (C168) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The scRNA-seq data provide a resource describing molecular features and gene expression cascades for cerebellar cell types, enabling future systematic interrogation of cell fate decisions. However, the dataset contains fewer lateral cerebellar nuclear neurons than medial, and cannot distinguish interposed from dentate nuclei, suggesting lateral nuclear neuron development lags behind medial. Additional scRNA-seq after E13.5 may be needed to resolve these populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The value of the resource (C173) is supported by the comprehensive characterization presented. The limitations (C175-C176) are honestly acknowledged, and the interpretation about developmental timing (C177) is reasonable. The suggestion for future work (C178) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "The study resolves inter- and intra-population heterogeneity, identifies rare cell types, and reconstructs single-cell resolved specification trajectories during early cerebellar neurogenesis. Histological and genetic fate mapping validate the scRNA-seq data and reveal previously unappreciated complexity in developmental origins. This represents an initial step toward reconstructing developmental trajectories of all cerebellar cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims accurately reflect the major contributions of the study. The validation by orthogonal methods (C180) strengthens confidence in the findings. The framing as an initial step (C181) is appropriately modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Reiterative clustering identified major cerebellar cell types and subpopulations, and pseudotemporal ordering reconstructed developmental trajectories and identified novel transcriptional programs controlling cell fate specification from the VZ and RL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These abstract claims are supported by the detailed results throughout the manuscript, including the clustering analysis (C12, C17, C60, C79), pseudotemporal analysis (C44-C52, C54-C58, C107-C113), and identification of novel genes and cell populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims about cerebellar function, development, and cellular organization are presented, including the role of cerebellum in cognition and motor coordination, its derivation from rhombomere 1, the differential origins of GABAergic and glutamatergic neurons from VZ and RL, and the presence of up to 50 PC clusters in late gestation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from the literature, appropriately cited (Ito 2008, Altman and Bayer 1997, Millet et al. 1996, Ben-Arie et al. 1997, Dastjerdi et al. 2012, etc.). They provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C43",
+      "C59",
+      "C76",
+      "C77",
+      "C78",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Additional background claims about cerebellar development are presented, including timing of cell type generation, migration patterns, vermis formation, Fgf8 function, PC heterogeneity and function, and knowledge gaps regarding cerebellar nuclei development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are appropriately cited to established literature and provide context for the study's findings. They accurately represent the state of knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C182"
+    ],
+    "result": "All animal procedures were approved by the University of Connecticut Health Center Animal Care Committee (protocol #101849-0621) and complied with national and state laws.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a standard ethics statement with specific protocol number, indicating appropriate institutional oversight.",
+    "result_type": "MINOR"
+  }
+]

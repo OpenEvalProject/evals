@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The spatial frequency response of retinal ganglion cells (RGCs) in macaques deviates sharply from the psychophysical contrast sensitivity function (CSF), particularly at low spatial frequencies where RGCs show stronger responses than predicted by the CSF. This mismatch persists even when accounting for differences in stimuli and nonlinear attenuation, and cannot be reconciled with standard difference-of-Gaussians models without unrealistic parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C13-C16, C25-C31 collectively establish a well-documented mismatch between neurophysiological measurements of RGC spatial sensitivity and behavioral CSF measurements. The evidence includes direct comparisons shown in Figure 1A, citations to multiple neurophysiological studies, and quantitative modeling analysis (Figure 1\u2014figure supplement 1) demonstrating that realistic DoG parameters cannot account for the CSF shape. The claims are mutually reinforcing and supported by both empirical data and theoretical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Fixational eye movements, particularly ocular drift, continuously displace stimuli on the retina and redistribute the DC (0 Hz) power of static stimuli to non-zero temporal frequencies in a spatial frequency-dependent manner. The dynamic power increases with spatial frequency up to approximately 30 cpd (matching photoreceptor resolution limits), while contrast modulations from stimulus onset/offset are frequency-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C41 describe the spectral transformation caused by fixational drift, supported by empirical measurements (Figure 2) and prior work. The frequency-dependent power redistribution is demonstrated quantitatively, and the distinction between drift-induced and display-induced modulations is clearly established. The claim about 30 cpd corresponding to photoreceptor limits (C38) is appropriately qualified as an observation rather than a proven causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "When standard models of M and P retinal ganglion cells are exposed to simulated retinal input including fixational drift, their combined responses accurately predict the human CSF for stationary gratings across all relevant spatial frequencies. Without eye movements, the same models produce a low-pass CSF that deviates considerably from human measurements, particularly at low spatial frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 present the core finding of the study, supported by modeling results shown in Figure 3. The comparison between conditions with and without drift is direct and quantitative. The linear combination approach is simple and the parameters (C98) are used only for alignment, not to explain the CSF shape. The result is robust across different model implementations (Figure 4\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The model accounts for the space-time inseparability of the CSF, predicting the transition from band-pass to low-pass shape as temporal frequency increases. This transition occurs around 3 Hz and results from the interplay between drift-induced modulations (which enhance high spatial frequencies) and stimulus temporal modulations (which shift DC power to the modulation frequency).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C61 demonstrate that the model explains not only static CSF but also its dependence on temporal frequency. The predictions match psychophysical data from Robson (1966) across multiple temporal frequencies (Figure 4B), and the transition frequency (~3 Hz) agrees with prior measurements (C57). The mechanistic explanation (C52-C56) is clearly articulated and supported by spectral analysis (Figure 4C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The model predicts that reducing retinal image motion (as in retinal stabilization experiments) attenuates contrast sensitivity while maintaining band-pass shape and shifting peak sensitivity to higher spatial frequencies. Model predictions with reduced diffusion constant (D=2) closely match Kelly (1979) stabilization data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 show the model successfully predicts CSF changes under retinal stabilization. The quantitative match to Kelly (1979) data (Figure 5B) is strong, and the mechanistic explanation via Brownian motion scaling (C67, C69) is well-grounded in prior work. The acknowledgment of residual motion in stabilization experiments (C65) appropriately qualifies the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C62",
+      "C72",
+      "C73",
+      "C80",
+      "C83"
+    ],
+    "result": "The transformation of spatial scenes into temporal modulations by eye movements reconciles human CSF with RGC response characteristics, suggesting a fundamental integration between perception and action where eye movements work synergistically with retinal neuron sensitivities to encode spatial information temporally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C62, C72, C73, C80, C83 present the overarching conclusion of the study. This conclusion is well-supported by the convergent evidence from multiple experimental conditions (stationary gratings, temporally modulated gratings, retinal stabilization) and the consistent failure of models without drift to account for the CSF. The framework is parsimonious and unifies diverse phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The efficient coding theory of Atick and Redlich, which attributes the CSF to spatial decorrelation by RGCs, conflicts with the observed mismatch between RGC responses and the CSF. When stimulus transients override drift effects, RGC responses show enhanced low spatial frequency sensitivity and broad spatial correlations, inconsistent with optimal decorrelation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C74-C79 critique prior theory and explain why it fails. The critique is supported by citations to neurophysiological studies showing spatial correlations (C77) and is consistent with the model's predictions. The explanation (C78-C79) logically connects the model to the observed deviations from efficient coding predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The model assumes RGCs have negligible sensitivity below ~0.2-0.3 Hz, based on limited neurophysiological data suggesting linear decline at low temporal frequencies and practical considerations about noise in psychophysical experiments. Results are robust to different implementations of this low-frequency attenuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 address a key model assumption. The assumption is justified by citations to relevant studies (C86-C87), theoretical considerations (C88), and robustness analysis (C89, Figure 4\u2014figure supplement 2). The authors appropriately acknowledge the challenges in measuring low-frequency sensitivity (C85) and the limitations of extrapolated transfer functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study focused on fixational drift due to its ubiquitous presence and known influence on pattern vision, while excluding saccades and microsaccades which are suppressed during CSF measurements. Different eye movement types provide different spectral modulations and may contribute to coarse-to-fine processing dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 justify the scope of the study. The focus on drift is well-motivated by citations (C90) and empirical observations about saccade suppression (C91). The speculation about complementary roles of different eye movements (C93-C94) is appropriately qualified and supported by citation to Boi et al. (2017).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The model's robustness stems from using real eye movement traces from human subjects and standard M/P filters from neurophysiological literature, with only two parameters (global gain and M-P ratio) used for quantitative alignment rather than explaining CSF shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 emphasize methodological strengths. The use of real eye movement data (C96) and standard neuronal models (C97) with minimal free parameters (C98) supports the claim of robustness. This is a legitimate methodological point that strengthens confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The model predicts that RGC spatial sensitivity will exhibit more pronounced band-pass behavior with peak shifted to higher frequencies when measured with fixational drift present compared to immobilized conditions. This prediction is difficult to test in vivo but could be investigated in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C107 present a testable neurophysiological prediction. The prediction logically follows from the model (C105-C106) and is contextualized by prior neurophysiological findings (C100-C104). The acknowledgment of experimental challenges (C107) is appropriate. This represents a clear, falsifiable prediction that could validate or refute the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The amplitude of fixational drift regulates power available in different spatial frequency bands, with smaller drifts shifting amplification to higher frequencies. The visual system could potentially exploit this relationship by dynamically matching drift scale to scene content or task demands, and individual differences in drift may explain perceptual differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C109 are supported by data (Figure 5A), but C110-C114 are largely speculative. While the speculation is reasonable and C112 cites supporting evidence for drift control, the claims about dynamic matching (C110-C111) and individual differences (C113-C114) lack direct empirical support. These are interesting hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The model predicts that enlarging fixational jitter increases power at low spatial frequencies, improving contrast sensitivity in this range. This prediction is consistent with improvements in word/object recognition in patients with central visual loss when images are jittered, as enlarged motion brings more power into the sensitivity range of peripheral RGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 present a clinically relevant prediction with supporting evidence. The prediction (C115-C116) follows logically from the model, and C117 provides convergent evidence from patient studies. The explanation via peripheral RGC properties (C118-C119) is mechanistically sound. This represents a well-supported translational implication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study predicts that disturbances in fixational oculomotor control will affect visual sensitivity. Oculomotor anomalies and impaired sensitivity co-occur in dyslexia and schizophrenia, suggesting a potential link between fine-scale eye movements and visual deficits that may inspire novel therapeutic approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C124 present clinical implications. While C121-C123 document co-occurrence of oculomotor and visual deficits (supported by citations), the causal link suggested by C124 is speculative. The model provides a plausible mechanistic framework, but the claim that this link \"has not yet been investigated\" (C124) indicates this is a hypothesis rather than an established finding requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C128"
+    ],
+    "result": "Eye movements were recorded from five female observers (age 21-31) with normal, uncorrected vision. Only traces collected around threshold sensitivity containing no saccades, microsaccades, or blinks were used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125, C126, C128 describe the data collection methodology. The sample size (N=5) is small but appropriate for this type of modeling study where individual traces are used as inputs. The inclusion criteria (normal vision, no saccades/blinks) are clearly stated and appropriate for the study's focus on drift.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The CSF is a fundamental measure of visual performance describing how sensitivity varies with spatial frequency. Under photopic conditions with stationary gratings, it exhibits band-pass shape peaking at 3-5 cpd. High-frequency decline is explained by optical filtering and photoreceptor sampling, but low-frequency attenuation mechanisms remain unclear. The CSF also depends on temporal frequency, transitioning from band-pass to low-pass with increasing temporal modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7-C10, C22-C24 establish background knowledge about the CSF. These are well-established facts in the field, supported by multiple classic citations (Robson 1966, Campbell & Robson 1968, De Valois et al. 1974, Kelly 1979). The identification of low-frequency attenuation as an open question (C10) appropriately motivates the study.",
+    "result_type": "MINOR"
+  }
+]

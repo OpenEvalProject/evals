@@ -1,0 +1,1947 @@
+{
+  "submission": {
+    "id": "1671e394-71d9-43de-8c15-c77a3d1ea52f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:07:00.483096Z",
+    "updated_at": "2025-12-02T20:07:00.483096Z"
+  },
+  "content": [
+    {
+      "id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "submission_id": "1671e394-71d9-43de-8c15-c77a3d1ea52f",
+      "content_type": "manuscript",
+      "content_text": "# Apelin signaling drives vascular endothelial cells toward a pro-angiogenic state\n\n## Authors\n\n- Christian SM Helker<sup>1</sup> ([ORCID: 0000-0003-0427-5338](https://orcid.org/0000-0003-0427-5338)) \u2020\n- Jean Eberlein<sup>1</sup>\n- Kerstin Wilhelm<sup>3</sup>\n- Toshiya Sugino<sup>3</sup> ([ORCID: 0000-0002-6330-7275](https://orcid.org/0000-0002-6330-7275))\n- Julian Malchow<sup>2</sup>\n- Annika Schuermann<sup>4</sup>\n- Stefan Baumeister<sup>2</sup>\n- Hyouk-Bum Kwon<sup>1</sup>\n- Hans-Martin Maischein<sup>1</sup>\n- Michael Potente<sup>3</sup>\n- Wiebke Herzog<sup>4</sup>\n- Didier YR Stainier<sup>1</sup> ([ORCID: 0000-0002-0382-0026](https://orcid.org/0000-0002-0382-0026)) \u2020\n\n### Affiliations\n\n1. Department of Developmental Genetics, Max Planck Institute for Heart and Lung Research Bad Nauheim Germany\n2. Philipps-University Marburg, Faculty of Biology, Cell Signaling and Dynamics Marburg Germany\n3. Angiogenesis and Metabolism Laboratory, Max Planck Institute for Heart and Lung Research Bad Nauheim Germany\n4. University of Muenster Muenster Germany\n5. DZHK (German Center for Cardiovascular Research), partner site Frankfurt Rhine-Main Berlin Germany\n6. Max Planck Institute for Molecular Biomedicine Muenster Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo form new blood vessels (angiogenesis), endothelial cells (ECs) must be activated and acquire highly migratory and proliferative phenotypes. However, the molecular mechanisms that govern these processes are incompletely understood. Here, we show that Apelin signaling functions to drive ECs into such an angiogenic state. Zebrafish lacking Apelin signaling exhibit defects in endothelial tip cell morphology and sprouting. Using transplantation experiments, we find that in mosaic vessels, wild-type ECs leave the dorsal aorta (DA) and form new vessels while neighboring ECs defective in Apelin signaling remain in the DA. Mechanistically, Apelin signaling enhances glycolytic activity in ECs at least in part by increasing levels of the growth-promoting transcription factor c-Myc. Moreover, APELIN expression is regulated by Notch signaling in human ECs, and its function is required for the hypersprouting phenotype in Delta-like 4 (Dll4) knockdown zebrafish embryos. These data provide new insights into fundamental principles of blood vessel formation and Apelin signaling, enabling a better understanding of vascular growth in health and disease.\n\n## Introduction\n\nEndothelial cell sprouting is a fundamental process of physiological and pathological blood vessel growth. Attracted by growth factors such as vascular endothelial growth factor-A (VEGF-A) secreted from hypoxic tissues, endothelial cells (ECs) break out of the quiescent vessel wall to form new vessel branches (Ferrara et al., 2003; Koch and Claesson-Welsh, 2012). ECs with higher levels of VEGF-A signaling become invasive tip cells that lead new vascular sprouts, while neighboring ECs with lower VEGF-A signaling become trailing stalk cells (Gerhardt et al., 2003). This process is coordinated by Delta-like 4 (DLL4)/Notch signaling. Activation of Notch receptors by their ligand DLL4, expressed by tip cells, represses tip cell behavior in stalk cells (Hellstr\u00f6m et al., 2007; Leslie et al., 2007; Siekmann and Lawson, 2007; Suchting et al., 2007). Loss of Notch signaling, on the other hand, causes excessive tip cell formation and vascular overgrowth (Hellstr\u00f6m et al., 2007; Leslie et al., 2007; Siekmann and Lawson, 2007; Suchting et al., 2007).\n\nApelin (Apln) is a small secreted peptide, which was initially identified because of its inotropic activity (Szokodi et al., 2002). Apelin was subsequently described as a tip cell-enriched gene (del Toro et al., 2010). Apelin (Tatemoto et al., 1998), as well as the newly identified ligand Apela (Chng et al., 2013; Pauli et al., 2014), can both activate the Apelin receptor (Aplnr), a 7-transmembrane G-protein-coupled receptor (GPCR). Mouse and frog embryos lacking Apln or Aplnr function exhibit reduced vascular outgrowth, decreased EC proliferation, smaller vessel diameter as well as defects in the alignment of arteries and veins (Cox et al., 2006; K\u00e4lin et al., 2007; Kidoya et al., 2008; del Toro et al., 2010; Kidoya et al., 2010; Kidoya et al., 2015; Papangeli et al., 2016). In addition, Apelin signaling has been implicated in several cardiovascular diseases including pulmonary hypertension (Goetze et al., 2006; Alastalo et al., 2011; Chandra et al., 2011), atherosclerosis (Hashimoto et al., 2007; Chun et al., 2008; Kojima et al., 2010; Pitkin et al., 2010), myocardial infarction (Tempel et al., 2012; Wang et al., 2013; Zhang et al., 2016; Chen et al., 2017), and tumor angiogenesis (Kidoya et al., 2012; Zhao et al., 2018; Uribesalgo et al., 2019). However, the cellular mechanisms by which Apelin signaling functions within the vasculature remain elusive. Using zebrafish mutants combined with mosaic analyses, high-resolution time-lapse imaging, and metabolic studies, we find that Apelin signaling is required to boost endothelial metabolic activity during angiogenic sprouting. Furthermore, we show that Apelin signaling acts downstream of Notch signaling, where it is required for Notch-controlled angiogenesis.\n\n## Results\n\n### Apelin signaling is required for angiogenic sprouting\n\nTo examine the expression pattern of the apelin ligand and receptor genes during angiogenic sprouting in zebrafish embryos, we first performed whole-mount in situ hybridization during intersegmental vessel (ISV) formation. We detected clear alpn, but no apela, expression within the sprouting ISVs (Figure 1\u2014figure supplement 1 arrowheads). For the receptor genes, we could only detect aplnrb expression in the ISVs (Figure 1\u2014figure supplement 1 arrowheads).\n\nTo visualize apln and aplnrb expression at single cell resolution, we developed reporters using Bacterial artificial chromosome (BAC) recombineering (Figure 1\u2014figure supplement 2). To this end, we replaced the ATG of an apln containing BAC with an EGFP cassette. Similarly, we replaced the stop codon of an aplnrb containing BAC with a tandem fluorescent timer (TagRFP-sfGFP) cassette leading to a fusion protein. We injected both modified BACs into one-cell stage zebrafish embryos to generate stable transgenic lines, Tg(apln:EGFP) and Tg(aplnrb:aplnrb-TagRFP-sfGFP) (hereafter referred to Tg(aplnrb:aplnrb-sfGFP)) (Figure 1\u2014figure supplement 2). We first detected weak apln:EGFP expression in sprouting ISVs at 30 hpf (Figure 1A). At 54 hpf, all ECs within the dorsal longitudinal anastomotic vessel (DLAV) \u2013 a vessel formed by tip cells \u2013 were labeled (Figure 1A, arrowheads) while some stalk cells also exhibited weak apln:GFP expression (Figure 1A, arrows). Of note, aplnrb:Aplrnb-sfGFP expression at 26 hpf was visible in the entire ISV sprout (Figure 1B arrowheads), but it was absent from non-angiogenic ECs within the dorsal aorta (DA). At 54 hpf, aplnrb:Aplrnb-sfGFP expression was detected in all ECs that had sprouted out of the DA but also weakly in ECs within the DA (Figure 1B). These results suggest that apln is expressed in tip cells while aplnrb is expressed in all sprouting ECs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig1-v2.jpg)\n\n**Figure 1.:** Visualization of apelin and apelin receptor b expression using transgenic reporter lines. Confocal projection images of the trunk region of zebrafish embryos. (A) TgBAC(apln:EGFP) expression is detectable in growing ISVs at 30 and 54 hpf. Arrowheads point to strong apln expression in tip cells, while arrows point to weak apln expression in stalk cells. (B) TgBAC(aplnrb:aplnrb-EGFP) expression is detectable in sprouting ECs (arrowheads) at 26 hpf and is clearly present in the ISVs and DLAV at 54 hpf. (C) Inactivation of Apelin ligand and receptor genes impairs angiogenesis. Confocal projection images of the blood vasculature in the trunk region of Tg(fli1a:EGFP) embryos. apln -/-; apela -/- as well as aplnra -/-; aplnrb -/- embryos exhibit a reduction in vascular sprouting at 28 and 54 hpf. Arrowheads point to stalled ISVs. Scale bars: A\u2019, 10 \u00b5m; A\u2019\u2019, B\u2019, C\u2019, C\u2019\u2019, 20 \u00b5m; B\u2019\u2019, 15 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Expression of apelin ligand and receptor genes at 24 and 32 hpf.\u00a0apln is expressed in ISVs (arrowheads). apela is not detected in blood vessels. aplnra is expressed in the posterior cardinal vein. aplnrb is expressed in the posterior cardinal vein and ISVs (arrowheads). Scale bars: 500 \u00b5m; insets, 100 \u00b5m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** BAC engineering was used to generate the apln:EGFP and aplnrb:aplnrb-TagRFP-sfGFP constructs. The clone RP71-2G21 was engineered to replace the ATG of apln with an EGFP cassette. The clone CH211-102K8 was engineered to replace the stop codon of aplnrb with a TagRFP-sfGFP cassette. To enhance the frequency of insertion into the genome, tol2 arms were added to the backbone of the BAC.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Confocal projection images of the trunk region of Tg(fli1a:EGFP) embryos at 30 hpf. Analysis of the offspring of apln +/-; apela+/- (n\u00a0=\u00a085) and aplnra +/-; aplnrb +/- (n\u00a0=\u00a071) fish resulted in different phenotypic categories according to the extent of ISV development. Genotyping of single embryos revealed an additive effect for apln and apela ligands and aplnra and aplnrb receptors. Mild phenotypes correlated with loss of single ligand or receptor genes, while deficiency in apln resulted in stronger phenotypes than deficiency in apela. aplnrb deficiency resulted in stronger phenotypes than deficiency in aplnra. Deficiencies in both ligands or both receptors resulted in more severe phenotypes. Scale bar: 40 \u00b5m.\n\nTo examine the function of Apelin signaling during sprouting angiogenesis in zebrafish, we used mutants for aplnra (Helker et al., 2015), aplnrb (Helker et al., 2015), apln (Helker et al., 2015) and apela (Chng et al., 2013). Homozygous aplnra mutant embryos exhibited no obvious defects during ISV formation (Figure 1\u2014figure supplement 3). However, homozygous aplnrb mutant embryos exhibited reduced ISV length and failed to form the DLAV (Figure 1\u2014figure supplement 3). This phenotype was more severe in embryos lacking both aplnra and aplnrb (Figure 1C, Figure 1\u2014figure supplement 3), indicating partial compensation. We also analyzed apln and apela mutants. Homozygous apela mutant embryos displayed only a mild delay in ISV outgrowth (Figure 1\u2014figure supplement 3), while homozygous apln mutant embryos exhibited defects in ISV outgrowth and failure to form the DLAV (Figure 1\u2014figure supplement 3). Loss of both ligands increased the severity of the phenotype leading to ISV stalling at the horizontal myoseptum (Figure 1C, Figure 1\u2014figure supplement 3). Consistent with studies in the mouse retina (del Toro et al., 2010), our studies identify apln expression as a marker of endothelial tip cells in zebrafish and show that Apelin signaling is required for angiogenic sprouting.\n\n### Apelin signaling regulates tip cell morphology\n\nTo investigate when the sprouting defects in Apelin signaling-deficient embryos first appear, we analyzed developmental time points when tip cells start to sprout out of the DA. However, no differences in sprout initiation or tip cell specification were observed in double homozygous receptor or ligand mutants (Figure 2\u2014figure supplement 1, Figure 2A). Instead, we found that sprout elongation was slower in these mutant embryos, resulting in an overall reduction of sprout length (Figure 2A, Figure 2\u2014video 1, Figure 2\u2014video 2). Furthermore, while endothelial tip cells in wild-type embryos formed long filopodia which extended toward the dorsal side of the animal (Figure 2A I, II, Figure 2\u2014video 1), aplnr mutant embryos (aplnra+/-; aplnrb -/-\u00a0and aplnra -/-; aplnrb -/-) as well as aplnrb morpholino (MO) injected embryos (morphants) displayed a blunted tip cell morphology (Figure 2A III, 2A IV, 2B, C, Figure 2\u2014video 2), a phenotype which did not recover over time.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig2-v2.jpg)\n\n**Figure 2.:** (A) Still images from confocal time-lapse movies of vascular development in wild-type and aplnra +/-; aplnrb -/- embryos. During sprouting, wild-type tip cells send out filopodia (arrowheads). aplnra +/-; aplnrb -/- embryos exhibit smaller sprouts and fail to form filopodia. (B) Confocal images of the blood vasculature in 24 hpf Tg(kdrl:HsHRAS-EGFP) embryos injected with Ctr MO and aplnrb MO. aplnrb morphant embryos exhibit smaller sprouts and fail to form filopodia (arrowheads). (C) aplnrb morphant embryos exhibit a reduction in the number of endothelial filopodia (Ctr MO, n\u00a0=\u00a010; aplnrb MO, n\u00a0=\u00a015). (D) Confocal images of the blood vasculature of 30 and 52 hpf Tg(fli1a:nEGFP) wild-type and aplnra +/-; aplnrb -/- embryos showing EC cell nuclei. (E) aplnra +/-; aplnrb -/- embryos exhibit reduced EC numbers in the ISVs (30 hpf: aplnr +/+, n\u00a0=\u00a03; aplnr +/-, n\u00a0=\u00a010; aplnr -/-, n\u00a0=\u00a08; 52 hpf: aplnr +/+, n\u00a0=\u00a05; aplnr +/-, n\u00a0=\u00a010; aplnr -/-, n\u00a0=\u00a09). n.s. not significant (two-tailed t-test). Scale bars: A, D, 20 \u00b5m; B, 40 \u00b5m; B, inset 10 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Confocal projection images of the trunk region of Tg(fli1a:EGFP) embryos at 21 hpf. Sprouting of ECs from the DA does not appear to be altered in Apelin signaling-deficient embryos. Scale bar: 50 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Confocal projection images of the trunk region of Tg(kdrl:NLS-EGFP); Tg(fli1a:B4GALT1-mCherry) embryos at 24 hpf. Apelin deficiency does not cause obvious defects in EC polarity (aplnr +/+, n\u00a0=\u00a06; aplnr -/-, n\u00a0=\u00a08). Arrowheads point to polarized tip cells in the ISVs. Scale bar: 20 \u00b5m.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Confocal projection images of the trunk region of Tg(fli1a:LIFEACT-GFP) embryos at 23 and 48 hpf. apln expression was induced by a single heatshock at 19.5 hpf for 1 hr at 39\u00b0C and analyzed at 23 hpf or heatshocked at 42 and 45 hpf for 1 hr at 39\u00b0C and analyzed at 48 hpf. Global overexpression of apln does not lead to ectopic vascular sprouting but mispatterning of the string of parachordal lymphangioblasts (arrows).\n\nPreviously, we reported a role for Apelin signaling in establishing blood flow-induced EC polarity (Kwon et al., 2016). To determine whether the observed defects during sprouting were caused by defects in EC polarity, we analyzed the location of the Golgi apparatus during ISV formation in wild-type and mutant embryos. However, we could not detect obvious differences in EC polarity during angiogenic sprouting (Figure 2\u2014figure supplement 2, arrowheads point to polarized ECs). Next, we asked whether Apelin signaling regulates the number of ECs, and so combined aplnr mutants with the Tg(fli1a:nEGFP) reporter line (Roman et al., 2002) to visualize EC nuclei. Compared to controls, aplnr mutants exhibited a reduction in ISV EC numbers of 1 cell at 30 hpf (4 instead of 5) and 2 cells at 52 hpf (5 instead of 7) (Figure 2D,E). We next assessed whether apln overexpression leads to ectopic sprouting. To this end, we generated an inducible transgenic line to overexpress apln under the control of the hsp70l promoter. However, global overexpression of apln did not lead to ectopic sprouting of blood vessels but led to mispatterned lymphatic vessels (Figure 2\u2014figure supplement 3, arrows). Altogether, these data indicate that the angiogenic defects in Apelin signaling-deficient embryos are caused by filopodia defects and impaired cell migration. Apelin signaling also regulates the number of ECs within the ISV sprouts.\n\n### Apelin signaling drives the sprouting behavior of ECs\n\nWe hypothesized that aplnrb expression (Figure 1B) provides an advantage for ECs to sprout. To test this hypothesis, we generated chimeric embryos using wild-type and aplnr deficient embryos (Figure 3A). Upon transplantation of wild-type donor cells into wild-type hosts, 34,5% of the donor-derived ECs were present in the ISVs at 24 hpf (Figure 3B,C). In contrast, upon transplantation of wild-type donor cells into aplnr-deficient hosts, 80% of the donor-derived ECs were present in the ISVs at 24 hpf (Figure 3B,C). Together these data show that the apelin receptors function cell-autonomously in endothelial sprouting. The Apelin receptor has been shown to signal mainly through the G-protein G\u03b1i (Habata et al., 1999). Therefore, we blocked G\u03b1i function through the mosaic and vascular-specific overexpression of pertussis toxin (PTX). Our results show that ECs deficient for signaling though G\u03b1i behave similarly to aplnr mutant ECs indicating that the Apelin receptor mediates its angiogenic effect through G\u03b1i (Figure 3\u2014figure supplement 1). Notably, wild-type donor-derived ECs in aplnr deficient embryos populated the entire dorsal part of the vasculature which is usually missing in these mutants, further confirming the cell-autonomous function of the Apelin receptors during angiogenesis (Figure 3\u2014figure supplement 2). Together, these results indicate that apelin signaling primes ECs toward a sprouting state.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig3-v2.jpg)\n\n**Figure 3.:** (A) Experimental design: At the blastula stage, cells from Tg(kdrl:HsHRAS-mCherry) embryos were transplanted into host embryos obtained from Tg(fli1a:EGFP) aplnra +/-; aplnrb +/- incrosses. At 24 hpf, the mosaic embryos were imaged and the donor-derived ECs scored for their position. (B, C) 34,5% of wild-type donor-derived ECs in wild-type hosts were found within the ISVs. 80% of wild-type donor-derived ECs in aplnra +/-; aplnrb -/- hosts were found within the ISVs. Notably, wild-type ECs transplanted into aplnr- deficient embryos completely substituted for the lack of cells in the dorsal part of the vasculature at 54 hpf (Figure 3\u2014figure supplement 2). Scale bars: B, 20 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Confocal projection images of the trunk region of Tg(kdrl:HsHRAS-mCherry) embryos at 24 hpf. PTX was overexpressed by injecting a bidirectional fli1a promoter driving PTX and GFP at the same time. ECs expressing PTX were detected only in the DA while mCherry expressing control ECs were also detected in the ISVs. Scale bar: 20 \u00b5m.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Confocal projection images of the trunk region of Tg(fli1a:EGFP) embryos at 54 hpf. At the blastula stage, cells from Tg(kdrl:HsHRAS-mCherry) embryos were transplanted into host embryos obtained from Tg(fli1a:EGFP) aplnra +/-; aplnrb +/- incrosses. At 54 hpf, the mosaic embryos were imaged and the donor-derived ECs scored for their position. Notably, wild-type ECs transplanted into aplnr deficient embryos completely substituted for the lack of cells in the dorsal part of the vasculature at 54 hpf (Figure 3\u2014figure supplement 1). Scale bar: 30 \u00b5m.\n\n### Apelin signaling functions downstream of Notch signaling\n\nIt has been previously reported that Notch-deficient ECs outcompete wild-type ECs during ISV sprouting (Siekmann and Lawson, 2007), an observation consistent with data in mouse (Jakobsson et al., 2010; Pitulescu et al., 2017). Since wild-type ECs similarly outcompete aplnr mutant ECs, we wanted to investigate potential links between Apelin and Notch signaling. Hence, we first blocked Notch signaling in TgBAC(apln:EGFP) embryos by injecting a dll4 MO. As previously reported (Leslie et al., 2007; Siekmann and Lawson, 2007), dll4 morphants exhibited a hypersprouting ISV phenotype (Figure 4A). Notably, we also observed a clear increase in apln:EGFP expression in the ectopic sprouts (Figure 4A). To test whether Apelin signaling is required as a downstream effector of Notch signaling during angiogenesis, we injected the dll4 MO into the offspring of apln and aplnrb heterozygous parents and compared the phenotype in homozygous mutant embryos versus their wild-type siblings. Strikingly, the hypersprouting phenotype of dll4 morphants was not present when Apln or Aplnrb function was lost (Figure 4B, Figure 4\u2014figure supplement 1). To examine whether other hypersprouting phenotypes require Apelin signaling, we analyzed aplnrb, plexinD1 (plxnd1) double mutant embryos (Figure 4C,E). aplnrb mutant embryos exhibit reduced sprouting and plxnd1 mutant embryos exhibit ectopic sprouting in line with published data (Torres-V\u00e1zquez et al., 2004; Figure 4C,E). Loss of aplnrb function in the background of the plxnd1 mutant did not alter its hypersprouting phenotype (Figure 4C,E), suggesting that it is independent of Apelin function. Similar results were obtained when we analyzed ectopic venous sprouting in response to bmp2b overexpression (Wiley et al., 2011; Figure 4D,F). Together these data indicate that Apelin signaling is specifically required for Notch-modulated angiogenesis. To investigate whether apln expression is itself regulated by Notch signaling, we performed cell culture assays. We treated HUVECs with the Notch inhibitor DAPT and analyzed APLN expression by RT-qPCR. Consistent with the observations in zebrafish (Figure 4A), we observed an increase in APLN expression upon Notch inhibition (Figure 4G, Figure 4\u2014source data 1). Next, we activated Notch signaling by stimulating HUVECs with the Notch ligand DLL4. Conversely to the Notch inhibition data, activating Notch signaling in HUVECs suppressed APLN expression (Figure 4H, Figure 4\u2014source data 1). Together these data suggest that the increased sprouting in response to Notch inhibition is, in part, driven by the upregulation of apln.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig4-v2.jpg)\n\n**Figure 4.:** (A - D) Confocal projection images of the blood vasculature in the trunk region of Tg(flt1:tdTomato) (A) and Tg(fli1a:EGFP) (B\u2013D) animals at 54 (B\u2013D) and 72 (A) hpf. (A) Injection of a dll4 morpholino leads to an increase in TgBAC(apln:EGFP) expression. (B) Loss of Apelin function can block excessive endothelial sprouting in dll4 morphants. (C, E) Angiogenic response in aplnrb -/-, plxnd1 -/-, and aplnrb -/-; plxnd1 -/- embryos (arrowheads) (n\u00a0=\u00a095). (D, F) Angiogenic response to bmp2b overexpression in aplnr +/- and aplnr -/- embryos (arrowheads). (E) Genotype of embryos for aplnrb after sorting them according to phenotype. (G) RT-qPCR analysis of APELIN mRNA levels in HUVECs treated with DAPT for 24 hr. Blocking Notch signaling with DAPT induces APELIN expression. (H) RT-qPCR analysis of APELIN mRNA levels in HUVECs cultured on DLL4 to activate Notch signaling. Activating Notch signaling represses APELIN expression. Arrowheads point to ectopic sprouts. n.s. not significant (two-tailed t-test). Ct values can be found in Figure 4\u2014source data 1. Scale bars: A, C, 20 \u00b5m; B, 15 \u00b5m; D, 30 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Confocal projection images of the trunk region of Tg(fli1a:EGFP) embryos at 54 hpf. Loss of aplnrb function can rescue excessive endothelial sprouting in dll4 morphants. Arrowheads point to ectopic sprouts and asterisks indicate missing DLAV fragments. Scale bar: 30 \u00b5m.\n\n### Apelin signaling positively regulates EC metabolism\n\nBecause EC sprouting requires an increase in metabolic activity (Dobrina and Rossi, 1983; Kr\u00fctzfeldt et al., 1990; Mertens et al., 1990; De Bock et al., 2013a; Vandekeere et al., 2015) and Apelin signaling has been shown to control cell metabolism in other contexts (Dray et al., 2008; Sawane et al., 2013), we asked whether Apelin signaling promotes EC metabolism. Previous studies have demonstrated that ECs rely on glycolysis for sprouting (De Bock et al., 2013a; Vandekeere et al., 2015). Therefore, we measured the extracellular acidification rate (ECAR) as a surrogate parameter of glycolysis in Apelin signaling-deficient HUVECs (Figure 5A,B). Notably, we observed a marked reduction in glycolysis after knockdown of Apelin signaling (Figure 5A), whereas mitochondrial oxygen consumption appeared unchanged (Figure 5B). To gain insight into the underlying mechanisms, we analyzed key regulators of metabolism and found a reduction in c-MYC protein levels after depletion of Apelin signaling (Figure 5C). Furthermore, expression of PFKFB3, which encodes an enzyme that sustains high glycolytic rates, was also reduced in Apelin signaling-deficient HUVECs (Figure 5D). In order to analyze whether a reduction in EC metabolic activity causes the vascular phenotype observed in aplnrb mutants, we performed mosaic rescue experiments and overexpressed pfkfb3 in ECs. In agreement with our in vitro data, we found that overexpression of pfkfb3 in endothelial tip cells leads to a partial rescue of the vascular phenotype in aplnrb mutants (Figure 5E arrowheads, 5F, Figure 4\u2014source data 1). Thus, Apelin signaling controls the expression of regulators of glucose metabolism as well as glycolytic activity in developing endothelial cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig5-v2.jpg)\n\n**Figure 5.:** (A - B) Extracellular acidification aate (ECAR) (A) and oxygen consumption rates (OCR) (B) in siScr and APLN+APLNR siRNA-treated HUVECs under basal conditions and in response to oligomycin, fluoro-carbonyl cyanide phenylhydrazone (FCCP) and antimycin A (AA)/rotenone. (A) Reduced basal and maximal glycolytic activity in APLN+APLNR siRNA-treated compared to siScr-treated HUVECs. (B) No significant difference in oxygen consumption in APLN+APLNR siRNA-treated compared to siScr-treated HUVECs. (C) Reduced c-MYC levels in APLN+APLNR siRNA-treated compared to siScr-treated HUVECs. (D) RT-qPCR analysis of PFKFB3 mRNA levels in APLN+APLNR siRNA-treated compared to siScr-treated HUVECs. (E) Confocal projection images of the blood vasculature in the trunk region of a 54 hpf Tg(kdrl:HsHRAS-mCherry) animal injected with an EGFP:fli1a:pfkfb3 plasmid. Arrowheads point to formed DLAV fragments while asterisks indicate missing DLAV fragments. (F) Quantification of the rescue of the DLAV fragment by mosaic pfkfb3 overexpression in aplnrb -/- embryos. n.s. not significant (two-tailed t-test). Scale bar: E, 50 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55589/elife-55589-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Schematic model of the developing blood vessels in the zebrafish trunk depicting the expression of Apelin and Aplnr and the relationship between Notch signaling and Apln expression during ISV sprouting.\n\n## Discussion\n\nDuring the formation of the first embryonic blood vessels, angioblasts migrate to the midline where they coalesce to form the future DA and cardinal vein. We have previously reported that vasculogenesis relies on the function of the ligand Apela (Helker et al., 2015). Here, we show that angiogenesis depends mostly on the function of the ligand Apln. However, Apela can partially compensate for the loss of Apln. This stage-specific ligand usage is in agreement with previous studies showing that apela expression is reduced by the end of vasculogenesis when apln starts to be expressed (Chng et al., 2013; Pauli et al., 2014).\n\nDuring angiogenesis in embryos lacking Apelin signaling, we observed a severe sprouting defect with a reduction in EC numbers and filopodia. As ECs proliferate, extend filopodia, and migrate during ISV formation, it is challenging to assign the cause of the sprouting defect to the EC proliferation or filopodia formation defects. However, Phng et al., 2013 reported that the inhibition of filopodia formation by Latrunculin B treatment reduces ISV sprout length, suggesting that the ISV sprouting defects in apln mutants is caused by the filopodia defects. However, one cannot exclude the possibility that defects in EC numbers are also contributing to the ISV sprouting defects.\n\nWhile we observed a severe angiogenesis phenotype when Apelin signaling was impaired, global overexpression of apln did not lead to ectopic sprouting. However, these experiments were done in the presence of endogenous Apelin, and thus, it is possible that the endogenous Apelin gradient prevents ECs from ectopic sprouting. In addition, Apelin might need to be expressed from a discrete source, rather than globally, to elicit a sprouting response.\n\nDuring sprouting angiogenesis, ECs within a sprout are highly heterogenous in their shape, gene expression and function, which led to the model of tip and stalk cells (Gerhardt et al., 2003). While differences in expression between tip and stalk cells have been reported for several genes (Tammela et al., 2008), (Hellstr\u00f6m et al., 2007; Siekmann and Lawson, 2007; Leslie et al., 2007; Suchting et al., 2007; del Toro et al., 2010; Bussmann et al., 2011; Herbert et al., 2012), little is known about the molecular differences between sprouting and resting ECs (Schlereth et al., 2018). By analyzing novel reporter lines for apln and aplnrb expression, we observed high apln expression in tip cells while we could not observe any difference in aplnrb expression between tip and stalk cells (Figure 5\u2014figure supplement 1). Interestingly, aplnrb is highly expressed in sprouting ECs in ISVs while being absent from non-angiogenic ECs in the DA (Figure 5\u2014figure supplement 1). These observations are in line with a recent study showing that ECs during tumor angiogenesis can be labeled by a CreERT2 transgene in the Aplnr locus while quiescent blood vessels in the surrounding tissue are not labeled (Zhao et al., 2018).\n\nAt the molecular level, vascular sprouting and cell positioning within the sprout is tightly regulated by VEGF and Notch signaling\u00a0(Hellstr\u00f6m et al., 2007; Lobov et al., 2007; Siekmann and Lawson, 2007; Suchting et al., 2007; Jakobsson et al., 2010). In addition to these signaling pathways, we propose Apelin signaling as a molecular switch to drive ECs into a pro-angiogenic state. In line with the expression of aplnrb in sprouting but not quiescent ECs, we show that aplnrb function regulates the ability of ECs to sprout or stay quiescent. Similarly, Notch signaling regulates the behavior of ECs (Siekmann and Lawson, 2007): rbpj deficient ECs contribute to the ISVs while wild-type ECs stay within the DA (Siekmann and Lawson, 2007). Of note, we found that Notch signaling regulates the expression of apln in vitro as well as in vivo and that Apelin signaling is a key downstream effector of Notch signaling during angiogenesis (Figure 5\u2014figure supplement 1). However, it is very unlikely that apln is a direct Notch target gene since activation of Notch signaling leads to a downregulation of APLN expression. Thus far, two downstream effectors of Notch signaling have been reported to control angiogenesis namely PTEN (Serra et al., 2015) and CXCR4, another GPCR (Hasan et al., 2017; Pitulescu et al., 2017). While PTEN has been shown to be required for Notch induced arrest in EC proliferation (Serra et al., 2015), CXCR4 mediates Notch-controlled EC migration (Hasan et al., 2017; Pitulescu et al., 2017). PTEN and Apelin both regulate AKT phosphorylation (Davies et al., 1998; Masri et al., 2004). Thus, one might speculate that AKT function is a common effector of PTEN and Apelin signaling in EC proliferation. Furthermore, we found that Apelin was required for EC migration in the absence of Notch signaling. Similarly, CXCR4 is required for EC migration in the absence of Notch signaling (Hasan et al., 2017; Pitulescu et al., 2017). CXCR4 and APLNR both signal through the G-protein G\u03b1i (Moepps et al., 1997; Habata et al., 1999), and they might therefore have similar effects. Gpr124, another GPCR, has been reported to be required in tip cells during zebrafish angiogenesis (Vanhollebeke et al., 2015), similar to Aplnr. However, Gpr124 is required in tip cells only in the brain (Vanhollebeke et al., 2015), while Aplnr is required in tip cells in the ISVs, where it is most highly expressed.\n\nSprouting angiogenesis is controlled by genetically encoded signal transducers as well as by the metabolic state. However, how environmental signals modulate the metabolic activity of ECs is incompletely understood. Here, we show that Apelin signaling regulates the expression of PFKFB3 and c-MYC, two powerful drivers of EC metabolism (Wilhelm et al., 2016; De Bock et al., 2013b). Recently it has been shown that Apelin signaling promotes FOXO1 phosphorylation (Hwangbo et al., 2017), which negatively regulates its activity. Consistent with these findings, FOXO1 has been shown to suppress c-MYC expression (Wilhelm et al., 2016). Together these data raise the possibility that Apelin signals through FOXO1 to regulate c-MYC levels. Of note, genetic deletion of Pfkfb3 in mouse ECs leads to a reduction in their number as well as defects in filopodia formation and extension (De Bock et al., 2013b), phenocopying aplnr mutant embryos.\n\nTaken together, our findings provide novel insights into a druggable pathway regulating angiogenesis and suggest that manipulating the angiogenic state of ECs by controlling Apln signaling might have therapeutic potential to control vascular growth in pathological settings.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>Tg(fli1a:EGFP)y1</td>\n      <td>Lawson and Weinstein, 2002</td>\n      <td>ZFIN: y1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>Tg(fli1a:nEGFP)y7</td>\n      <td>Roman et al., 2002,</td>\n      <td>ZFIN: y7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>Tg(kdrl:HsHRAS-mCherry)s896</td>\n      <td>Chi et al., 2008</td>\n      <td>ZFIN: s896</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>aplnramu296</td>\n      <td>Helker et al., 2015</td>\n      <td>ZFIN: mu296</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>aplnrbmu281</td>\n      <td>codes for another allele of aplnrb from Helker et al., 2015</td>\n      <td>ZFIN: mu281</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>aplnmu267</td>\n      <td>Helker et al., 2015</td>\n      <td>ZFIN: mu267</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>Tg(hsp70:bmp2b)fr13</td>\n      <td>Chocron et al., 2007</td>\n      <td>ZFIN: fr13</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>apelabr13</td>\n      <td>Chng et al., 2013,</td>\n      <td>ZFIN: br13</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>Tg(fli:lifeact-GFP)mu240</td>\n      <td>Hamm et al., 2016</td>\n      <td>ZFIN: mu240</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>Tg(fli1a:Hsa.B4GALT1-mCherry)bns9</td>\n      <td>Kwon et al., 2016</td>\n      <td>ZFIN: bns9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>Tg(hsp70:apln)mu269</td>\n      <td>This manuscript</td>\n      <td>ZFIN: mu269</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>Tg(kdrl:HsHRAS-EGFP)mu280</td>\n      <td>This manuscript</td>\n      <td>ZFIN: mu280</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>Tg(apln:EGFP)bns157</td>\n      <td>This manuscript</td>\n      <td>ZFIN: bns157</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. rerio)</td>\n      <td>Tg(aplnrb:aplnrb-TagRFP- sfGFP)bns309</td>\n      <td>This manuscript</td>\n      <td>ZFIN: bns309</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-FOXO1 (rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat#2880</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-pThr24FOXO1/pThr32FOXO3a (rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat#9464</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-c-MYC (rabbit polyclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat#9402</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-Tubulin (rabbit polyclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat#2148</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Taqman probe APLN</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Hs00175572_m1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Taqman probe APLNR</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Hs00270873_s1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Taqman probe PFKFB3</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Hs00270873_s1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Taqman probe ACTB</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Hs01060665_g1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>In-Fusion HD Cloning Plus</td>\n      <td>Takara Bio</td>\n      <td>Cat# 638910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>transfected construct (human)</td>\n      <td>APLN</td>\n      <td>Dharmacon</td>\n      <td>Cat# L-017023-01-0005</td>\n      <td>50 nM</td>\n    </tr>\n    <tr>\n      <td>transfected construct (human)</td>\n      <td>APLNR</td>\n      <td>Dharmacon</td>\n      <td>Cat# L-005430-00-0005</td>\n      <td>50 nM</td>\n    </tr>\n    <tr>\n      <td>transfected construct (human)</td>\n      <td>ON-TARGETplus Non-targeting Pool</td>\n      <td>Dharmacon</td>\n      <td>Cat# D-001810-10-05</td>\n      <td>50 nM</td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>mMessage mMachine SP6 Transcription Kit</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# AM1340</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>DIG RNA labelling kit</td>\n      <td>Roche</td>\n      <td>Cat# 11277073910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>SuperScript III First-Strand Synthesis System</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat#18080051</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>RNA Clean and Concentrator Kit</td>\n      <td>Zymo Research</td>\n      <td>Cat# R1013</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>ZEN Blue 2012</td>\n      <td>Zeiss, Germany</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>ZEN Black 2012</td>\n      <td>Zeiss, Germany</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Imaris - Version 8.4.0</td>\n      <td>Bitplane, UK</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>GraphPad Prism 6</td>\n      <td>GraphPad Software, USA</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Zebrafish husbandry and strains\n\nAll zebrafish housing and husbandry were performed under standard conditions in accordance with institutional (Max Planck Society) and national ethical and animal welfare guidelines approved by the ethics committee for animal experiments at the Regierungspr\u00e4sidium Darmstadt, Germany, as well as the FELASA guidelines (Alestr\u00f6m et al., 2020). Embryos were staged by hours post fertilization (hpf) at 28.5\u00b0C (Kimmel et al., 1995). The following lines were used: Tg(fli1a:EGFP)y1 (Lawson and Weinstein, 2002), Tg(fli1a:nEGFP)y7 (Roman et al., 2002), Tg(kdrl:HsHRAS-mCherry)s896 (Chi et al., 2008), aplnramu296 (Helker et al., 2015), the aplnrbmu281 allele was generated using the same CRISPR as in Helker et al., 2015 and contains a 4 bp insertion 137 bp downstream of the ATG leading to a premature stop codon 196 bp downstream of the ATG, aplnmu267 (Helker et al., 2015), Tg(hsp70:bmp2b)fr13 (Chocron et al., 2007), apelabr13 (Chng et al., 2013), Tg(fli1a:LIFEACT-GFP)mu240 (Hamm et al., 2016), Tg(fli1a:Hsa.B4GALT1-mCherry)bns9 (Kwon et al., 2016), Tg(hsp70:apln)mu269 (this study), Tg(kdrl:HsHRAS-EGFP)mu280 (this study), Tg(apln:EGFP)bns157 (this study) and Tg(aplnrb:aplnrb-TagRFP-sfGFP)bns309 (this study).\n\n### Generation of the TgBAC(apln:EGFP)bns157, TgBAC(aplnrb:aplnrb-TagRFP-sfGFP)bns309, Tg(kdrl:HsHRAS-EGFP)mu280,\u00a0and Tg(hsp70l:apln)mu269lines\n\nTo generate the apln and aplnrb bacterial artificial chromosome (BAC) constructs, we used the BAC clones RP71-2G21 containing the apln locus and CH211-102K containing the aplnrb locus. All recombineering steps were performed as described in Bussmann and Schulte-Merker, 2011 with the modifications as described in Helker et al., 2019. The following homology arms were used to generate the targeting PCR products of the EGFP_Kan, and TagRFP-sfGFP_Kan cassettes:apln-HA1: 5\u2019-ccactacagtatatcagctagcgactggcagggaaacggaggggagagcaaccatggtgagcaagggcgaggag-3\u2019 and apln-HA2: 5\u2019-cacagcagagaaaccaccagcacaatcaccagcgtcaagatcttcacattttccagaagtagtgaggag-3\u2019;aplnrb-HA1:5\u2019-gctccctttcttcacagaagaccgaggcccagtcgctggctacgaaggtgcttggacctggactcggatc-\u20183 and aplnrb-HA2: 5\u2019-taattgctgacttgttaccccaattctgcgtcacccttccgttctcctcctgaccatgattacgccaagc-\u20183.\n\nTo generate the Tg(kdrl:HsHRAS-EGFP) and Tg(hsp70:apln) lines, the gateway recombination system (Invitrogen) using entry vectors and the pTolDest destination vector (Villefranc et al., 2007) was used. The apln coding sequence was amplified from cDNA. 100 pg DNA of the plasmids and 50 pg of tol2 mRNA were injected into one-cell stage zebrafish embryos for stable germline transmission.\n\n### Morpholino injections\n\nMorpholinos were obtained from Gene Tools, resuspended in distilled H2O and around 2 nl was injected into 1 cell stage embryos. The following morpholinos were used: aplnrb MO (Helker et al., 2015) at 0.5 ng/embryo, dll4 MO (Hogan et al., 2009) at 3 ng/embryo. An equal amount of the standard control MO: 5\u2019-CCTCTTACCTCAGTTACAATTTATA-3\u2019 was used for each experiment.\n\n### Transplantation experiments\n\nAt the sphere stage, cells were removed from Tg(kdrl:HsHRAS-mCherry) donor embryos and transferred to Tg(fli1a:EGFP) aplnr mutant hosts using a glass capillary. Transplanted ECs were identified by transgenic mCherry expression.\n\n### Whole-mount in situ hybridization\n\nSingle in situ hybridizations were performed as described (Thisse and Thisse, 2008; Helker et al., 2013). The following probes were synthesized: apln (Helker et al., 2015), apela (Chng et al., 2013), aplnra (Helker et al., 2015), and aplnrb (Helker et al., 2015).\n\n### Confocal microscopy\n\nZebrafish larvae were mounted in 1% low melt agarose. Egg water and agarose were supplemented with 19.2 mg/l Tricaine. All fluorescent images were acquired using an upright Zeiss LSM 780, 800 or 880 or a Leica SP5 or SP8 confocal microscope. Maximum projection images were analyzed and generated using Imaris (Bitplane).\n\n### Quantification of mutant phenotypes\n\nFor every embryo, somites 5 to 15 were analyzed (normal: 10 fully developed ISVs and connected DLAV; mild: 10 ISVs fully developed but no DLAV; strong: 1 to 6 ISVs shortened; severe: 1 to 10 ISVs shortened).\n\n### Quantification of filopodia\n\nOnly filopodia with more than 10 \u00b5m in length were used for quantification.\n\nISVs were categorized as filopodia rich ISVs (more than six filopodia) or filopodia poor ISVs (less than six filopodia). A total of 49 ISVs were quantified for the Ctr MO and 103 ISVs for the aplnrb MO.\n\n### pfkfb3 rescue experiments\n\npfkfb3 was cloned downstream of a bidirectional fli1a promoter driving EGFP in one direction and pfkfb3 in the other direction. aplnrb mutant embryos were injected with 20 pg EGFP:fli1a:pfkfb3 DNA and 30 pg Tol2 mRNA to generate mosaic blood vessels. EGFP positive tip cells were analyzed to quantify the percentage of connected DLAV segments. Neighboring EGFP negative tip cells were used as controls.\n\n### Cell culture\n\nPooled human umbilical vein endothelial cells (HUVECs) were purchased from Lonza (#CC-2519) and cultured in endothelial basal medium (EBM, Lonza) supplemented with hydrocortisone (1 \u03bcg/ml), bovine brain extract (12 \u03bcg/ml), gentamicin (50 \u03bcg/ml), amphotericin B (50 ng/ml), epidermal growth factor (10 ng/ml), and 10% fetal bovine serum (FBS, Life Technologies). HUVECs were tested for mycoplasma and cultured until the fourth passage. Cells were maintained at 37\u00b0C in a humidified atmosphere with 5% CO2.\n\n### RNA interference\n\nTo silence APLN and APLNR gene expression, HUVECs were transfected with 50 nM APLN and APLNR ON-TARGET SMARTpool siRNA (Dharmacon). As a control, a non-targeting siRNA pool was used (Dharmacon). HUVECs were grown to 70% confluency and transfected with Lipofectamine RNAiMAX (Life Technologies) according to manufacturer's instructions.\n\n### Western blot analysis and antibodies\n\nWestern blot analyses were performed with precast gradient gels (Bio-Rad) using standard methods. Briefly, cells were lysed in RIPA buffer (Sigma; 150 mM NaCl, 1.0% IGEPAL CA-630, 0.5% sodium deoxycholate, 0.1% SDS, and 50 mM Tris, pH 8.0) supplemented with Complete Protease Inhibitor Cocktail (Roche) and 1 mM PMSF. Proteins were separated by SDS-PAGE (Tris-glycine gels with Tris/glycine/SDS buffer, Bio-Rad) and transferred onto nitrocellulose membranes using the Trans Turbo Blot system (Bio-Rad). Membranes were probed with specific primary antibodies and then with peroxidase-conjugated secondary antibodies. The following primary antibodies were used: FOXO1 (Cell Signaling Technology, #2880, 1:1000), pThr24FOXO1/pThr32FOXO3a (Cell Signaling Technology, #9464, 1:1000), c-MYC (Cell Signaling Technology, #9402, 1:1000), Tubulin (Cell Signaling Technology, #2148, 1:1000), Secondary antibodies are peroxidase-conjugated Goat IgGs (1:5000) purchased from Jackson Immuno Research Labs. The target proteins were visualized by chemiluminescence using an ECL detection kit (Clarity Western ECL Substrate, Bio-Rad) and a ChemiDoc MP Imaging System (Bio-Rad).\n\n### RT-qPCR\n\nTotal RNA from HUVECs was extracted using a RNeasy Mini Kit (Qiagen). Reverse transcription polymerase chain reaction (RT-PCR) was performed using a SuperScript III First-Strand Synthesis System (Invitrogen) according to manufacturer\u2019s instructions. RT-qPCR was carried out to quantify gene expression levels on a CFX connect Realtime System (Bio-Rad) with the following Taqman probes: APLN Hs00175572_m1, APLNR Hs00270873_s1, PFKFB3 Hs00270873_s1. Each sample was normalized to the housekeeping probe ACTB Hs01060665_g1.\n\n### Metabolic assay\n\nThe metabolism of cells was assessed by the measurement of extracellular acidification (ECAR) and oxygen consumption rates (OCR) using a Seahorse XFe96 analyser (Agilent). Four hours before the measurement, 40.000 HUVECs per well were seeded in a fibronectin-coated XFe96 microplate. The measurement was done following manufacturer\u2019s protocol. To monitor glycolysis, the glycolysis stress test kit was used. The following substances were sequentially injected after a baseline measurement: Glucose (10 mM), Oligomycin (3 \u00b5M) and 2-Deoxyglucose (2-DG; 100 mM). The oxygen consumption rate was assessed using the Mito stress test kit. After a baseline measurement, the following substances were sequentially injected: Oligomycin (3 \u00b5M), the mitochondrial uncoupler carbonyl cyanide-4-(trifluoromethoxy)phenyl-hydrazone (FCCP; 1 \u00b5M) as well as a mixture of antimycin A (1.5 \u00b5M) and rotenone (3 \u00b5M).\n\n### Statistics\n\nStandard error of the mean and P-values from a two-tailed t-test were calculated using Prism.\n",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "fde0f453-edb9-45bd-9470-6ef6eea0565a",
+      "submission_id": "1671e394-71d9-43de-8c15-c77a3d1ea52f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Caroline E Burns, Boston Children's Hospital United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55589.sa1](https://doi.org/10.7554/eLife.55589.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe finding that Apelin signaling alters metabolism to drive angiogenesis downstream of the Notch pathway is interesting and novel. The most impressive additions that were made during the revision period to substantiate the author's claims include new panels at 30 hpf showing apln:EGFP is more prominent in the tips cells than in the stalk, the increase of filopodia and endothelial cell numbers in apln mutants that show excessive sprouting, suppression of the hyper-sprouting phenotype in dll morphants by aplnrb loss-of-function, and pfkfb3 endothelial cell (EC)-specific overexpression that increases EC metabolic activity rescues sprouting in aplnrb mutants. While the conclusions could have been better substantiated by the additional experiments proposed by the reviewers (specifically the experiments that address the link between metabolism and ISV sprouting), the revision is reasonable.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Apelin signaling drives vascular endothelial cells towards a pro-angiogenic state\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Naoki Mochizuki (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript \"Apelin signaling drives vascular endothelial cells towards a pro-angiogenic state\" by Helker et al. uses genetic approaches in zebrafish embryos to provide new insights into the regulation of vessel growth by apelin signaling. Specifically, they address expression of Apelin and the Apelin receptor and their functional roles in sprouting intersomitic vessels (ISVs) in the embryonic trunk using new transgenic reporters, existing genetic mutants, and mosaic analyses. Furthermore, they show that Apelin signaling is required for the hypersprouting phenotype resulting from compromised Notch function. A final set of data links Apelin to endothelial cell metabolism.\n\nEssential revisions:\n\n1) The claim that apelin is expressed in tip cells is not well supported by the data provided. It appears that apln:EGFP staining at 26 hpf is very prominent outside the vasculature (presumably, notochord and spinal cord), which makes it difficult to appreciate the fluorescent signal in tip cells (Figure 1A). The authors should clarify whether apln expression is found outside the vasculature and provide clearer images of tip cell expression. In addition, it is important to know whether the sprouts shown on the far left in A' are composed of a single (tip) cell or multiple cells. In case of the latter, it is not obvious that tips are positive whereas stalk cells are not.\n\n2) The cellular mechanism underlying the observed ISV sprouting defect in apelin mutants is not well-defined. Specifically, does apelin primarily regulate filopodia or endothelial cell numbers to alter ISV sprouting? Is it known that tip cell filapodia number correlate with sprout length/distance? If so, do Notch-deficient embryos that show excessive sprouting have increased numbers of tip cell filopodia? Does taking Apelin signaling away from dll morphant embryos decrease filapodia number? It is argued that the overexpression of apln does not lead to ectopic sprouting. Nevertheless, the images shown in Figure 2\u2014figure supplement 3 suggest that filopodia numbers, morphology, or extension might be altered. Please clarify.\n\n3) There is an internal inconsistency regarding heightened Apelin expression must be rectified. The authors claim that heightened Apelin expression in Notch-deficient embryos is responsible for the observed hyperspouting phenotype. However, overexpression of Apelin in their hsp70:apelin transgenic line fails to show a hypersprouting phenotype. One possibility is that expression of the Apelin receptor is limiting. Is there a constitutively active apelin receptor that could be used to test whether the Apelin signaling axis is sufficient to promote angiogenesis? Can the hyper-sprouting phenotype observed in Notch-deficient embryos also be suppressed by loss of the Apelin receptor? (Dll4 morpholino into alpnr-/- embryos)? Experimental clarification of the model is needed.\n\n4) The link between Apelin and Notch is interesting, but it is unclear whether this effect is mediated by VEGF or increased hypoxia, which were previously linked to the regulation of apln expression. The authors should try to clarify the link between Notch and Apelin.\n\n5) The claim that Apelin drives angiogenesis by increasing endothelial cell glycolysis/metabolism is not well supported. Specifically, the connection between apln and metabolic alterations has been only explored in cultured cells in vitro and its relevance for the observed phenotypes in zebrafish remains unclear. The authors should validate their key findings in vivo and explore how apelin regulates the metabolic properties of ECs. For example, could 2-DG be used to inhibit glycolysis in zebrafish embryos and ISV sprouting examined? Is glycolysis/metabolism increased in Notch-inhibited vessels that show hypersprouting? Can this phenotype be suppressed by 2-DG? Is there a method to artificially increase metabolism in order to learn whether this is sufficient to promote ISV sprouting? If so, does it rescue sprouting in apelin mutants?\n",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0e38034c-af3a-48ee-9667-283fb53091f6",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C1",
+      "claim": "Zebrafish lacking Apelin signaling exhibit defects in endothelial tip cell morphology and sprouting.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish lacking Apelin signaling exhibit defects in endothelial tip cell morphology and sprouting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding, which is supported by experimental observations throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "a9fc595e-75aa-4846-93bc-3f483a036404",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C2",
+      "claim": "In mosaic vessels, wild-type ECs leave the dorsal aorta (DA) and form new vessels while neighboring ECs defective in Apelin signaling remain in the DA.",
+      "claim_type": "EXPLICIT",
+      "source": "Using transplantation experiments, we find that in mosaic vessels, wild-type ECs leave the dorsal aorta (DA) and form new vessels while neighboring ECs defective in Apelin signaling remain in the DA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by transplantation experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "8ef3bfba-453c-4e7a-bfd4-14150b09dd13",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C3",
+      "claim": "Apelin signaling enhances glycolytic activity in ECs at least in part by increasing levels of the growth-promoting transcription factor c-Myc.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, Apelin signaling enhances glycolytic activity in ECs at least in part by increasing levels of the growth-promoting transcription factor c-Myc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanistic claim is supported by metabolic assays and protein level measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "b4ed04fe-ed03-4820-a0d2-30d892e52bd4",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C4",
+      "claim": "APELIN expression is regulated by Notch signaling in human ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, APELIN expression is regulated by Notch signaling in human ECs, and its function is required for the hypersprouting phenotype in Delta-like 4 (Dll4) knockdown zebrafish embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cell culture experiments with Notch inhibition and activation in HUVECs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "8992543f-af93-4131-abd7-cd1d9331b640",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C5",
+      "claim": "Apelin function is required for the hypersprouting phenotype in Delta-like 4 (Dll4) knockdown zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, APELIN expression is regulated by Notch signaling in human ECs, and its function is required for the hypersprouting phenotype in Delta-like 4 (Dll4) knockdown zebrafish embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genetic experiments showing that loss of Apelin signaling blocks the dll4 morphant hypersprouting phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "bf25e12a-b31b-4f71-807f-3514fc72c1b7",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C6",
+      "claim": "Apelin (Apln) is a small secreted peptide, which was initially identified because of its inotropic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Apelin (Apln) is a small secreted peptide, which was initially identified because of its inotropic activity (Szokodi et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "589e3066-af63-43b5-b582-f8b19cd5cdf4",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C7",
+      "claim": "Apelin was subsequently described as a tip cell-enriched gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Apelin was subsequently described as a tip cell-enriched gene (del Toro et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "ea5387e5-e90b-4021-80b7-93cd582dfae6",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C8",
+      "claim": "Apelin (Tatemoto et al., 1998), as well as the newly identified ligand Apela (Chng et al., 2013; Pauli et al., 2014), can both activate the Apelin receptor (Aplnr), a 7-transmembrane G-protein-coupled receptor (GPCR).",
+      "claim_type": "EXPLICIT",
+      "source": "Apelin (Tatemoto et al., 1998), as well as the newly identified ligand Apela (Chng et al., 2013; Pauli et al., 2014), can both activate the Apelin receptor (Aplnr), a 7-transmembrane G-protein-coupled receptor (GPCR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "40cd66df-ca51-433b-9e3a-d58a61c2148c",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C9",
+      "claim": "Mouse and frog embryos lacking Apln or Aplnr function exhibit reduced vascular outgrowth, decreased EC proliferation, smaller vessel diameter as well as defects in the alignment of arteries and veins.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse and frog embryos lacking Apln or Aplnr function exhibit reduced vascular outgrowth, decreased EC proliferation, smaller vessel diameter as well as defects in the alignment of arteries and veins (Cox et al., 2006; K\u00e4lin et al., 2007; Kidoya et al., 2008; del Toro et al., 2010; Kidoya et al., 2010; Kidoya et al., 2015; Papangeli et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "83d030ac-e92a-42a0-80f2-1045d50a3786",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C10",
+      "claim": "Apelin signaling has been implicated in several cardiovascular diseases including pulmonary hypertension, atherosclerosis, myocardial infarction, and tumor angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Apelin signaling has been implicated in several cardiovascular diseases including pulmonary hypertension (Goetze et al., 2006; Alastalo et al., 2011; Chandra et al., 2011), atherosclerosis (Hashimoto et al., 2007; Chun et al., 2008; Kojima et al., 2010; Pitkin et al., 2010), myocardial infarction (Tempel et al., 2012; Wang et al., 2013; Zhang et al., 2016; Chen et al., 2017), and tumor angiogenesis (Kidoya et al., 2012; Zhao et al., 2018; Uribesalgo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "b422debe-f564-4554-bc95-b8a31ad437a6",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C11",
+      "claim": "apln, but not apela, expression was detected within the sprouting ISVs.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected clear alpn, but no apela, expression within the sprouting ISVs (Figure 1\u2014figure supplement 1 arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by whole-mount in situ hybridization data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "a134e83e-2d6b-4e7e-9fc0-e2c92906fb9c",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C12",
+      "claim": "aplnrb expression was detected in the ISVs.",
+      "claim_type": "EXPLICIT",
+      "source": "For the receptor genes, we could only detect aplnrb expression in the ISVs (Figure 1\u2014figure supplement 1 arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by whole-mount in situ hybridization data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "f0ee9512-921e-493c-979c-f759646ba7a7",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C13",
+      "claim": "apln:EGFP expression was first detected in sprouting ISVs at 30 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We first detected weak apln:EGFP expression in sprouting ISVs at 30 hpf (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging of the transgenic reporter line shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "cdc96585-48d3-4245-9f6b-e2f0812b57fd",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C14",
+      "claim": "At 54 hpf, all ECs within the dorsal longitudinal anastomotic vessel (DLAV) were labeled with apln:EGFP.",
+      "claim_type": "EXPLICIT",
+      "source": "At 54 hpf, all ECs within the dorsal longitudinal anastomotic vessel (DLAV) \u2013 a vessel formed by tip cells \u2013 were labeled (Figure 1A, arrowheads) while some stalk cells also exhibited weak apln:GFP expression (Figure 1A, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging of the transgenic reporter line shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "498bf112-4105-4d78-9bae-0e197be42375",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C15",
+      "claim": "aplnrb:Aplrnb-sfGFP expression at 26 hpf was visible in the entire ISV sprout but absent from non-angiogenic ECs within the dorsal aorta (DA).",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, aplnrb:Aplrnb-sfGFP expression at 26 hpf was visible in the entire ISV sprout (Figure 1B arrowheads), but it was absent from non-angiogenic ECs within the dorsal aorta (DA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging of the transgenic reporter line shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "b0025c09-35f3-4081-afb8-779dd473fbc9",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C16",
+      "claim": "At 54 hpf, aplnrb:Aplrnb-sfGFP expression was detected in all ECs that had sprouted out of the DA but also weakly in ECs within the DA.",
+      "claim_type": "EXPLICIT",
+      "source": "At 54 hpf, aplnrb:Aplrnb-sfGFP expression was detected in all ECs that had sprouted out of the DA but also weakly in ECs within the DA (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging of the transgenic reporter line shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "4c1b970d-7311-4afc-871f-d6abade6fc8b",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C17",
+      "claim": "apln is expressed in tip cells while aplnrb is expressed in all sprouting ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that apln is expressed in tip cells while aplnrb is expressed in all sprouting ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the expression patterns observed in the transgenic reporter lines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "2847f75a-59cd-40e8-8ebe-0a0112510c96",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C18",
+      "claim": "apln -/-; apela -/- embryos exhibit a reduction in vascular sprouting at 28 and 54 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "apln -/-; apela -/- as well as aplnra -/-; aplnrb -/- embryos exhibit a reduction in vascular sprouting at 28 and 54 hpf.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging of mutant embryos shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "153247fc-cd5c-41c3-aecc-f1e993773111",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C19",
+      "claim": "aplnra -/-; aplnrb -/- embryos exhibit a reduction in vascular sprouting at 28 and 54 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "apln -/-; apela -/- as well as aplnra -/-; aplnrb -/- embryos exhibit a reduction in vascular sprouting at 28 and 54 hpf.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging of mutant embryos shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "8e8847eb-160a-41be-b514-ecd940784bd9",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C20",
+      "claim": "Homozygous aplnra mutant embryos exhibited no obvious defects during ISV formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous aplnra mutant embryos exhibited no obvious defects during ISV formation (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phenotypic analysis shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "257df4fb-6590-42e5-a93d-89de5ae1c60a",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C21",
+      "claim": "Homozygous aplnrb mutant embryos exhibited reduced ISV length and failed to form the DLAV.",
+      "claim_type": "EXPLICIT",
+      "source": "However, homozygous aplnrb mutant embryos exhibited reduced ISV length and failed to form the DLAV (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phenotypic analysis shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "614c1fe9-82b1-4c0e-a8de-652fff70ce2d",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C22",
+      "claim": "The phenotype in aplnrb mutants was more severe in embryos lacking both aplnra and aplnrb, indicating partial compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype was more severe in embryos lacking both aplnra and aplnrb (Figure 1C, Figure 1\u2014figure supplement 3), indicating partial compensation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phenotypic analysis comparing single and double mutants shown in Figure 1C and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "d92f041b-5326-4140-8198-11ae95e5b0bb",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C23",
+      "claim": "Homozygous apela mutant embryos displayed only a mild delay in ISV outgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous apela mutant embryos displayed only a mild delay in ISV outgrowth (Figure 1\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phenotypic analysis shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "0a704645-7f40-47f5-8bbb-242c1d46a70d",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C24",
+      "claim": "Homozygous apln mutant embryos exhibited defects in ISV outgrowth and failure to form the DLAV.",
+      "claim_type": "EXPLICIT",
+      "source": "while homozygous apln mutant embryos exhibited defects in ISV outgrowth and failure to form the DLAV (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phenotypic analysis shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "9e0bbc3f-c198-47e3-ae2a-bfc5bdeff0d9",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C25",
+      "claim": "Loss of both apln and apela ligands increased the severity of the phenotype leading to ISV stalling at the horizontal myoseptum.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of both ligands increased the severity of the phenotype leading to ISV stalling at the horizontal myoseptum (Figure 1C, Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phenotypic analysis of double mutants shown in Figure 1C and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "eb4dabed-850f-4281-9da6-58dc9480ff9f",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C26",
+      "claim": "No differences in sprout initiation or tip cell specification were observed in double homozygous receptor or ligand mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no differences in sprout initiation or tip cell specification were observed in double homozygous receptor or ligand mutants (Figure 2\u2014figure supplement 1, Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-lapse imaging and analysis shown in Figure 2\u2014figure supplement 1 and Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "644ebb33-1598-46a4-8b33-4302925ddea6",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C27",
+      "claim": "Sprout elongation was slower in Apelin signaling-deficient mutant embryos, resulting in an overall reduction of sprout length.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we found that sprout elongation was slower in these mutant embryos, resulting in an overall reduction of sprout length (Figure 2A, Figure 2\u2014video 1, Figure 2\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-lapse imaging shown in Figure 2A and associated videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "30b2389d-d909-4d98-b6a3-6d717e815554",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C28",
+      "claim": "Endothelial tip cells in wild-type embryos formed long filopodia which extended toward the dorsal side of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while endothelial tip cells in wild-type embryos formed long filopodia which extended toward the dorsal side of the animal (Figure 2A I, II, Figure 2\u2014video 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-lapse imaging shown in Figure 2A and associated video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "c03f2b8d-6646-4fc3-a8ba-4509c5bd74ac",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C29",
+      "claim": "aplnr mutant embryos and aplnrb morphants displayed a blunted tip cell morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "aplnr mutant embryos (aplnra+/-; aplnrb -/- and aplnra -/-; aplnrb -/-) as well as aplnrb morpholino (MO) injected embryos (morphants) displayed a blunted tip cell morphology (Figure 2A III, 2A IV, 2B, C, Figure 2\u2014video 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging of mutant and morphant embryos shown in Figure 2A, 2B, 2C and associated video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "4db6fcc1-77fc-45c4-b002-3024d8a509f9",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C30",
+      "claim": "aplnrb morphant embryos exhibit a reduction in the number of endothelial filopodia.",
+      "claim_type": "EXPLICIT",
+      "source": "(C) aplnrb morphant embryos exhibit a reduction in the number of endothelial filopodia (Ctr MO, n = 10; aplnrb MO, n = 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of filopodia shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "ac36c0d5-3364-4e55-aa85-e46c40ae34fd",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C31",
+      "claim": "Apelin deficiency does not cause obvious defects in EC polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Apelin deficiency does not cause obvious defects in EC polarity (aplnr +/+, n = 6; aplnr -/-, n = 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of Golgi apparatus location shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "c4c65a41-d324-4553-b863-833508ecce8c",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C32",
+      "claim": "aplnr mutants exhibited a reduction in ISV EC numbers of 1 cell at 30 hpf (4 instead of 5) and 2 cells at 52 hpf (5 instead of 7).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to controls, aplnr mutants exhibited a reduction in ISV EC numbers of 1 cell at 30 hpf (4 instead of 5) and 2 cells at 52 hpf (5 instead of 7) (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of EC nuclei shown in Figure 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "7293fc43-2ade-4105-be57-3e49a5105b25",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C33",
+      "claim": "Global overexpression of apln did not lead to ectopic sprouting of blood vessels but led to mispatterned lymphatic vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, global overexpression of apln did not lead to ectopic sprouting of blood vessels but led to mispatterned lymphatic vessels (Figure 2\u2014figure supplement 3, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging of heat-shocked transgenic embryos shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "900fe891-7aec-42e2-9ef5-505e35657b79",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C34",
+      "claim": "Upon transplantation of wild-type donor cells into wild-type hosts, 34.5% of the donor-derived ECs were present in the ISVs at 24 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon transplantation of wild-type donor cells into wild-type hosts, 34,5% of the donor-derived ECs were present in the ISVs at 24 hpf (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of transplantation experiments shown in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "816c2ab4-49ea-4b57-ab50-617dba35cb79",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C35",
+      "claim": "Upon transplantation of wild-type donor cells into aplnr-deficient hosts, 80% of the donor-derived ECs were present in the ISVs at 24 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, upon transplantation of wild-type donor cells into aplnr-deficient hosts, 80% of the donor-derived ECs were present in the ISVs at 24 hpf (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of transplantation experiments shown in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "21b662e9-0e8a-4ba4-95e6-824e2d68dfc2",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C36",
+      "claim": "The apelin receptors function cell-autonomously in endothelial sprouting.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data show that the apelin receptors function cell-autonomously in endothelial sprouting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the transplantation experiments showing differential behavior of wild-type vs. mutant ECs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "5460029d-6331-432c-b289-4ab8cef563e6",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C37",
+      "claim": "ECs deficient for signaling though G\u03b1i behave similarly to aplnr mutant ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that ECs deficient for signaling though G\u03b1i behave similarly to aplnr mutant ECs indicating that the Apelin receptor mediates its angiogenic effect through G\u03b1i (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pertussis toxin overexpression experiments shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "8c9f30cf-d539-4158-807f-5dd612c53333",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C38",
+      "claim": "The Apelin receptor mediates its angiogenic effect through G\u03b1i.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that ECs deficient for signaling though G\u03b1i behave similarly to aplnr mutant ECs indicating that the Apelin receptor mediates its angiogenic effect through G\u03b1i (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the similarity between G\u03b1i inhibition and aplnr mutation phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "8e68e9aa-efd7-4f96-8766-938df95657cd",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C39",
+      "claim": "Wild-type donor-derived ECs in aplnr deficient embryos populated the entire dorsal part of the vasculature which is usually missing in these mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, wild-type donor-derived ECs in aplnr deficient embryos populated the entire dorsal part of the vasculature which is usually missing in these mutants, further confirming the cell-autonomous function of the Apelin receptors during angiogenesis (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging of transplanted embryos at 54 hpf shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "2f7cb34e-acef-4969-888b-2692d04350ae",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C40",
+      "claim": "dll4 morphants exhibited a hypersprouting ISV phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported (Leslie et al., 2007; Siekmann and Lawson, 2007), dll4 morphants exhibited a hypersprouting ISV phenotype (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging of dll4 morphants shown in Figure 4A and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "c780e57f-5ba8-4e8f-9ffb-afd84f256c86",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C41",
+      "claim": "A clear increase in apln:EGFP expression was observed in the ectopic sprouts of dll4 morphants.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we also observed a clear increase in apln:EGFP expression in the ectopic sprouts (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging of dll4 morphants in the apln:EGFP reporter background shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "a6ba65b7-3e36-408d-855d-31b7b0be26e8",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C42",
+      "claim": "The hypersprouting phenotype of dll4 morphants was not present when Apln or Aplnrb function was lost.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the hypersprouting phenotype of dll4 morphants was not present when Apln or Aplnrb function was lost (Figure 4B, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging of dll4 morphants in apln and aplnrb mutant backgrounds shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "d75e5351-a3b8-45c2-a4f5-f52f149d33fc",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C43",
+      "claim": "Loss of aplnrb function in the background of the plxnd1 mutant did not alter its hypersprouting phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of aplnrb function in the background of the plxnd1 mutant did not alter its hypersprouting phenotype (Figure 4C,E), suggesting that it is independent of Apelin function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging and quantification of double mutants shown in Figure 4C and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "e955c32a-05f5-44e6-aa23-8e524d27c910",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C44",
+      "claim": "Ectopic venous sprouting in response to bmp2b overexpression is independent of Apelin function.",
+      "claim_type": "IMPLICIT",
+      "source": "Similar results were obtained when we analyzed ectopic venous sprouting in response to bmp2b overexpression (Wiley et al., 2011; Figure 4D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that aplnr mutants still show ectopic sprouting in response to bmp2b overexpression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "97e6d0db-4a5d-4ba4-b086-d8c98e0f3962",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C45",
+      "claim": "Apelin signaling is specifically required for Notch-modulated angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data indicate that Apelin signaling is specifically required for Notch-modulated angiogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the differential requirement for Apelin in dll4 vs. plxnd1 and bmp2b hypersprouting phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "b4efc78c-46e9-4b0f-a53d-94e5294b66ba",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C46",
+      "claim": "An increase in APLN expression was observed upon Notch inhibition in HUVECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the observations in zebrafish (Figure 4A), we observed an increase in APLN expression upon Notch inhibition (Figure 4G, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR analysis of HUVECs treated with DAPT shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "d5603e65-410f-4593-9cc5-fae03cc8868f",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C47",
+      "claim": "Activating Notch signaling in HUVECs suppressed APLN expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely to the Notch inhibition data, activating Notch signaling in HUVECs suppressed APLN expression (Figure 4H, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR analysis of HUVECs stimulated with DLL4 shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "3be3c030-ef5d-4482-9958-3116ea4ed796",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C48",
+      "claim": "The increased sprouting in response to Notch inhibition is, in part, driven by the upregulation of apln.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data suggest that the increased sprouting in response to Notch inhibition is, in part, driven by the upregulation of apln.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined observations that Notch inhibition increases apln expression and that Apelin is required for the dll4 morphant hypersprouting phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "57dfdafb-09bb-4e01-b1c7-ce48ca1d7f92",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C49",
+      "claim": "A marked reduction in glycolysis was observed after knockdown of Apelin signaling in HUVECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed a marked reduction in glycolysis after knockdown of Apelin signaling (Figure 5A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ECAR measurements shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "10624512-3ec7-41ad-97b0-ced769ff3b0a",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C50",
+      "claim": "Mitochondrial oxygen consumption appeared unchanged after knockdown of Apelin signaling in HUVECs.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas mitochondrial oxygen consumption appeared unchanged (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by OCR measurements shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "8304c255-544f-4ef3-94a4-4f26bb3dd1b9",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C51",
+      "claim": "A reduction in c-MYC protein levels was observed after depletion of Apelin signaling in HUVECs.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain insight into the underlying mechanisms, we analyzed key regulators of metabolism and found a reduction in c-MYC protein levels after depletion of Apelin signaling (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "6644e801-fa3c-41b6-9458-dd17f7a07b7e",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C52",
+      "claim": "Expression of PFKFB3 was reduced in Apelin signaling-deficient HUVECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, expression of PFKFB3, which encodes an enzyme that sustains high glycolytic rates, was also reduced in Apelin signaling-deficient HUVECs (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "c273184f-144f-41e7-8e6e-140993c67a60",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C53",
+      "claim": "Overexpression of pfkfb3 in endothelial tip cells leads to a partial rescue of the vascular phenotype in aplnrb mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our in vitro data, we found that overexpression of pfkfb3 in endothelial tip cells leads to a partial rescue of the vascular phenotype in aplnrb mutants (Figure 5E arrowheads, 5F, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mosaic rescue experiments shown in Figure 5E and 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "54dc390e-bdd0-4472-8bff-b8c3e96ff4fc",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C54",
+      "claim": "Apelin signaling controls the expression of regulators of glucose metabolism as well as glycolytic activity in developing endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Apelin signaling controls the expression of regulators of glucose metabolism as well as glycolytic activity in developing endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the metabolic findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "2c3ae35b-e62d-4b9c-bf9d-48f3d7a95364",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C55",
+      "claim": "Angiogenesis depends mostly on the function of the ligand Apln.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that angiogenesis depends mostly on the function of the ligand Apln.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the phenotypic analysis of apln and apela mutants showing stronger defects in apln mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "59eccf05-6d96-47e4-9adb-7c6969150cd7",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C56",
+      "claim": "Apela can partially compensate for the loss of Apln.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Apela can partially compensate for the loss of Apln.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that double mutants have more severe phenotypes than single mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "9a380f3f-7502-48fe-8e8f-695af98ab506",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C57",
+      "claim": "Stage-specific ligand usage is in agreement with previous studies showing that apela expression is reduced by the end of vasculogenesis when apln starts to be expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "This stage-specific ligand usage is in agreement with previous studies showing that apela expression is reduced by the end of vasculogenesis when apln starts to be expressed (Chng et al., 2013; Pauli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on temporal expression patterns.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "b3653f4f-a2b0-4a48-bbe0-e118f03224e9",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C58",
+      "claim": "The inhibition of filopodia formation by Latrunculin B treatment reduces ISV sprout length.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Phng et al., 2013 reported that the inhibition of filopodia formation by Latrunculin B treatment reduces ISV sprout length, suggesting that the ISV sprouting defects in apln mutants is caused by the filopodia defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "f100bc1b-24a7-4ca4-8501-98d359df6ae2",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C59",
+      "claim": "The ISV sprouting defects in apln mutants is caused by the filopodia defects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Phng et al., 2013 reported that the inhibition of filopodia formation by Latrunculin B treatment reduces ISV sprout length, suggesting that the ISV sprouting defects in apln mutants is caused by the filopodia defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the similarity between Latrunculin B treatment effects and apln mutant phenotypes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "21a9307b-6510-4bf4-8e98-032b0b9ec7ca",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C60",
+      "claim": "Defects in EC numbers may also be contributing to the ISV sprouting defects in apln mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one cannot exclude the possibility that defects in EC numbers are also contributing to the ISV sprouting defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement acknowledging alternative explanations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "40640440-b263-43f4-8a75-05f090440763",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C61",
+      "claim": "Endogenous Apelin gradient might prevent ECs from ectopic sprouting in apln overexpression experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these experiments were done in the presence of endogenous Apelin, and thus, it is possible that the endogenous Apelin gradient prevents ECs from ectopic sprouting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the lack of ectopic sprouting upon apln overexpression.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "b1c54001-2a08-420a-a19d-ed4932734179",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C62",
+      "claim": "Apelin might need to be expressed from a discrete source, rather than globally, to elicit a sprouting response.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Apelin might need to be expressed from a discrete source, rather than globally, to elicit a sprouting response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the lack of ectopic sprouting upon global apln overexpression.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "a6d812b3-df50-4c14-b086-c2aec8bfc974",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C63",
+      "claim": "aplnrb is highly expressed in sprouting ECs in ISVs while being absent from non-angiogenic ECs in the DA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, aplnrb is highly expressed in sprouting ECs in ISVs while being absent from non-angiogenic ECs in the DA (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the expression pattern observed in the aplnrb reporter line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "1f4eab23-9dfe-40e2-9d10-787dcf3274b4",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C64",
+      "claim": "ECs during tumor angiogenesis can be labeled by a CreERT2 transgene in the Aplnr locus while quiescent blood vessels in the surrounding tissue are not labeled.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are in line with a recent study showing that ECs during tumor angiogenesis can be labeled by a CreERT2 transgene in the Aplnr locus while quiescent blood vessels in the surrounding tissue are not labeled (Zhao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "1da2863f-1e55-4a57-8688-a51f0b2407a6",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C65",
+      "claim": "Apelin signaling is a molecular switch to drive ECs into a pro-angiogenic state.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these signaling pathways, we propose Apelin signaling as a molecular switch to drive ECs into a pro-angiogenic state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the collective findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "720e7d52-d27f-4bab-967f-4e649ba67c17",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C66",
+      "claim": "aplnrb function regulates the ability of ECs to sprout or stay quiescent.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the expression of aplnrb in sprouting but not quiescent ECs, we show that aplnrb function regulates the ability of ECs to sprout or stay quiescent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the transplantation experiments showing differential behavior of wild-type vs. aplnr mutant ECs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "562b01ab-9bdd-4a6d-a9b3-6f6c54f60d36",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C67",
+      "claim": "Notch signaling regulates the behavior of ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Notch signaling regulates the behavior of ECs (Siekmann and Lawson, 2007): rbpj deficient ECs contribute to the ISVs while wild-type ECs stay within the DA (Siekmann and Lawson, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "ad11f5dd-58a4-4fe8-bf02-8570c15a9e2a",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C68",
+      "claim": "Notch signaling regulates the expression of apln in vitro as well as in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we found that Notch signaling regulates the expression of apln in vitro as well as in vivo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the HUVEC experiments and zebrafish dll4 morphant observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "b64a194e-9195-4f28-9578-b44a38495a7e",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C69",
+      "claim": "Apelin signaling is a key downstream effector of Notch signaling during angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "and that Apelin signaling is a key downstream effector of Notch signaling during angiogenesis (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the genetic epistasis experiments showing that Apelin is required for the dll4 morphant phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "f76b0ed0-91ae-4121-ac40-81120bd6c820",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C70",
+      "claim": "It is very unlikely that apln is a direct Notch target gene since activation of Notch signaling leads to a downregulation of APLN expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is very unlikely that apln is a direct Notch target gene since activation of Notch signaling leads to a downregulation of APLN expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that Notch activation suppresses APLN expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "7950b12c-31a8-4302-adcd-7646991c3dfd",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C71",
+      "claim": "PTEN has been shown to be required for Notch induced arrest in EC proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "While PTEN has been shown to be required for Notch induced arrest in EC proliferation (Serra et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "44376663-7dbf-4199-98ad-68e1c7bed558",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C72",
+      "claim": "CXCR4 mediates Notch-controlled EC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "CXCR4 mediates Notch-controlled EC migration (Hasan et al., 2017; Pitulescu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "e6eff50a-18e2-437c-9d4a-b6f225b59c6d",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C73",
+      "claim": "PTEN and Apelin both regulate AKT phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "PTEN and Apelin both regulate AKT phosphorylation (Davies et al., 1998; Masri et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "fd2241d1-8238-40bc-a01a-341bf75f3888",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C74",
+      "claim": "AKT function might be a common effector of PTEN and Apelin signaling in EC proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, one might speculate that AKT function is a common effector of PTEN and Apelin signaling in EC proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the shared regulation of AKT by PTEN and Apelin.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "a384b284-49f4-487d-9af5-a28da6dd7939",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C75",
+      "claim": "Apelin was required for EC migration in the absence of Notch signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that Apelin was required for EC migration in the absence of Notch signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the observation that Apelin is required for the dll4 morphant hypersprouting phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "cc6d0b41-174f-461a-a1a5-6427586377d5",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C76",
+      "claim": "CXCR4 is required for EC migration in the absence of Notch signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, CXCR4 is required for EC migration in the absence of Notch signaling (Hasan et al., 2017; Pitulescu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "4c340d46-bab8-4279-9e56-d2dc55732dec",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C77",
+      "claim": "CXCR4 and APLNR both signal through the G-protein G\u03b1i.",
+      "claim_type": "EXPLICIT",
+      "source": "CXCR4 and APLNR both signal through the G-protein G\u03b1i (Moepps et al., 1997; Habata et al., 1999), and they might therefore have similar effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "59e999ee-09fa-4d58-b530-95395c8916aa",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C78",
+      "claim": "CXCR4 and APLNR might have similar effects due to their shared signaling through G\u03b1i.",
+      "claim_type": "EXPLICIT",
+      "source": "CXCR4 and APLNR both signal through the G-protein G\u03b1i (Moepps et al., 1997; Habata et al., 1999), and they might therefore have similar effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the shared signaling mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "80bea355-fb50-4c59-98df-8116cc95214f",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C79",
+      "claim": "Gpr124 has been reported to be required in tip cells during zebrafish angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Gpr124, another GPCR, has been reported to be required in tip cells during zebrafish angiogenesis (Vanhollebeke et al., 2015), similar to Aplnr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "4db68912-a81f-4f8e-874e-f4cb4eb80f14",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C80",
+      "claim": "Gpr124 is required in tip cells only in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Gpr124 is required in tip cells only in the brain (Vanhollebeke et al., 2015), while Aplnr is required in tip cells in the ISVs, where it is most highly expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature and contrasts with the broader expression of Aplnr.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "d10233d9-46be-4162-8c84-c3d3f4b050f7",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C81",
+      "claim": "Apelin signaling regulates the expression of PFKFB3 and c-MYC, two powerful drivers of EC metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Apelin signaling regulates the expression of PFKFB3 and c-MYC, two powerful drivers of EC metabolism (Wilhelm et al., 2016; De Bock et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the Western blot and RT-qPCR data showing reduced c-MYC and PFKFB3 levels upon Apelin knockdown.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "be41a8fd-29ef-466c-a206-f4765a4d56dd",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C82",
+      "claim": "Apelin signaling promotes FOXO1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently it has been shown that Apelin signaling promotes FOXO1 phosphorylation (Hwangbo et al., 2017), which negatively regulates its activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "2d91c416-18bf-41a9-8cb1-ce2dd6b23035",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C83",
+      "claim": "FOXO1 has been shown to suppress c-MYC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, FOXO1 has been shown to suppress c-MYC expression (Wilhelm et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "36e70204-3c42-4044-b76b-f084469bedab",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C84",
+      "claim": "Apelin might signal through FOXO1 to regulate c-MYC levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data raise the possibility that Apelin signals through FOXO1 to regulate c-MYC levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the known relationships between Apelin, FOXO1, and c-MYC.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "5263cc1f-2c9b-44f4-b520-40895494bf2a",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C85",
+      "claim": "Genetic deletion of Pfkfb3 in mouse ECs leads to a reduction in their number as well as defects in filopodia formation and extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, genetic deletion of Pfkfb3 in mouse ECs leads to a reduction in their number as well as defects in filopodia formation and extension (De Bock et al., 2013b), phenocopying aplnr mutant embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "1ce89fff-c4f8-48b3-a0f0-21c421f0b265",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C86",
+      "claim": "Genetic deletion of Pfkfb3 in mouse ECs phenocopies aplnr mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, genetic deletion of Pfkfb3 in mouse ECs leads to a reduction in their number as well as defects in filopodia formation and extension (De Bock et al., 2013b), phenocopying aplnr mutant embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the similarity between Pfkfb3 deletion and aplnr mutant phenotypes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "969a0b44-43ca-41bd-bb19-9ae2bd08f9a5",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C87",
+      "claim": "Manipulating the angiogenic state of ECs by controlling Apln signaling might have therapeutic potential to control vascular growth in pathological settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our findings provide novel insights into a druggable pathway regulating angiogenesis and suggest that manipulating the angiogenic state of ECs by controlling Apln signaling might have therapeutic potential to control vascular growth in pathological settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential therapeutic applications based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "6310caee-b99d-4afe-8090-0d910475d80f",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C88",
+      "claim": "ECs with higher levels of VEGF-A signaling become invasive tip cells that lead new vascular sprouts.",
+      "claim_type": "EXPLICIT",
+      "source": "ECs with higher levels of VEGF-A signaling become invasive tip cells that lead new vascular sprouts, while neighboring ECs with lower VEGF-A signaling become trailing stalk cells (Gerhardt et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "7e54a025-b43c-4a7e-b734-7b0c2f2edb09",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C89",
+      "claim": "Neighboring ECs with lower VEGF-A signaling become trailing stalk cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ECs with higher levels of VEGF-A signaling become invasive tip cells that lead new vascular sprouts, while neighboring ECs with lower VEGF-A signaling become trailing stalk cells (Gerhardt et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "cce79448-770d-4f60-99ec-4d0d21b1b8ad",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C90",
+      "claim": "Activation of Notch receptors by their ligand DLL4, expressed by tip cells, represses tip cell behavior in stalk cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of Notch receptors by their ligand DLL4, expressed by tip cells, represses tip cell behavior in stalk cells (Hellstr\u00f6m et al., 2007; Leslie et al., 2007; Siekmann and Lawson, 2007; Suchting et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "74ae937e-50b1-4020-acd8-f91098a0c349",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C91",
+      "claim": "Loss of Notch signaling causes excessive tip cell formation and vascular overgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Notch signaling, on the other hand, causes excessive tip cell formation and vascular overgrowth (Hellstr\u00f6m et al., 2007; Leslie et al., 2007; Siekmann and Lawson, 2007; Suchting et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "0f22ec0f-e272-44e6-87fd-812bdfef77cf",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C92",
+      "claim": "EC sprouting requires an increase in metabolic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Because EC sprouting requires an increase in metabolic activity (Dobrina and Rossi, 1983; Kr\u00fctzfeldt et al., 1990; Mertens et al., 1990; De Bock et al., 2013a; Vandekeere et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "7a1e98d4-f5b5-4770-b224-5a95f63c9c18",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C93",
+      "claim": "Apelin signaling has been shown to control cell metabolism in other contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "and Apelin signaling has been shown to control cell metabolism in other contexts (Dray et al., 2008; Sawane et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "b1d49a6a-2746-4724-ab04-274f5c8bc249",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C94",
+      "claim": "ECs rely on glycolysis for sprouting.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that ECs rely on glycolysis for sprouting (De Bock et al., 2013a; Vandekeere et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "585ccc67-c4b9-41f3-a0e8-37b9099808f2",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C95",
+      "claim": "The Apelin receptor has been shown to signal mainly through the G-protein G\u03b1i.",
+      "claim_type": "EXPLICIT",
+      "source": "The Apelin receptor has been shown to signal mainly through the G-protein G\u03b1i (Habata et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "9fc8940d-9d81-4f2a-ae15-7a012aed4c5f",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C96",
+      "claim": "Notch-deficient ECs outcompete wild-type ECs during ISV sprouting.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously reported that Notch-deficient ECs outcompete wild-type ECs during ISV sprouting (Siekmann and Lawson, 2007), an observation consistent with data in mouse (Jakobsson et al., 2010; Pitulescu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "97a51f87-44ba-40bc-a54f-f8e32bd18411",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C97",
+      "claim": "Vascular sprouting and cell positioning within the sprout is tightly regulated by VEGF and Notch signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "At the molecular level, vascular sprouting and cell positioning within the sprout is tightly regulated by VEGF and Notch signaling (Hellstr\u00f6m et al., 2007; Lobov et al., 2007; Siekmann and Lawson, 2007; Suchting et al., 2007; Jakobsson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "42b5f8e1-b0d3-4f0b-9ddd-e33d3e787a2c",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C98",
+      "claim": "PTEN and CXCR4 are downstream effectors of Notch signaling that control angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus far, two downstream effectors of Notch signaling have been reported to control angiogenesis namely PTEN (Serra et al., 2015) and CXCR4, another GPCR (Hasan et al., 2017; Pitulescu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "89083276-1366-45a8-860b-79ca3c24f83a",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "claim_id": "C99",
+      "claim": "Vasculogenesis relies on the function of the ligand Apela.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously reported that vasculogenesis relies on the function of the ligand Apela (Helker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f38fa856-5e9f-4972-93be-d35758ea31ed",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors characterize the spatial and temporal expression patterns of apln and aplnrb during zebrafish angiogenesis using transgenic reporter lines and in situ hybridization. They find that apln is expressed in tip cells while aplnrb is expressed in all sprouting ECs but absent from quiescent ECs in the dorsal aorta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C17 are well-supported by imaging data from transgenic reporter lines (Figures 1A, 1B) and in situ hybridization (Figure 1\u2014figure supplement 1). The temporal progression and spatial localization are clearly documented with appropriate controls and multiple time points.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "134b98c8-e0e8-447f-830c-36ffda99ea8c",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Loss of Apelin ligands (apln and apela) or receptors (aplnra and aplnrb) causes defects in vascular sprouting during zebrafish development. The phenotypes show additive effects with double mutants being more severe than single mutants, indicating partial compensation between ligands and between receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C25 are supported by systematic phenotypic analysis of single and double mutants (Figures 1C, 1\u2014figure supplement 3). The genetic analysis demonstrates clear additive effects and appropriate genotype-phenotype correlations. Sample sizes appear adequate though exact numbers are not always provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "bbaad5f6-3cd1-438c-b615-8e3f92bb3241",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Apelin signaling regulates tip cell morphology and filopodia formation during angiogenic sprouting. Mutants show slower sprout elongation and blunted tip cell morphology with reduced filopodia, but normal sprout initiation and tip cell specification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 are supported by time-lapse imaging (Figure 2A, videos) and quantification of filopodia (Figure 2B, C). The distinction between initiation (unaffected) and elongation (affected) is clearly demonstrated. Sample sizes are provided (n=10-15 for filopodia counts).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "6a09ed48-1305-4692-8fea-1ec3972ec7ef",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Apelin deficiency does not affect EC polarity but reduces EC numbers in ISVs by 1 cell at 30 hpf and 2 cells at 52 hpf compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are supported by Golgi localization analysis (Figure 2\u2014figure supplement 2) and nuclear counting (Figure 2D, E). Sample sizes are adequate (n=6-10). The polarity analysis uses an appropriate marker (Golgi apparatus) and the EC counting is quantitative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "3d6a6efc-9a53-4b5e-9d29-865fe3591666",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Global overexpression of apln does not lead to ectopic blood vessel sprouting but causes mispatterning of lymphatic vessels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C33 is based on heat-shock inducible overexpression (Figure 2\u2014figure supplement 3). However, the authors acknowledge this was done in the presence of endogenous Apelin (C61, C62), which may mask effects. The lack of ectopic sprouting could be due to experimental design rather than biological mechanism. Additional experiments in mutant backgrounds would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "76ca4b7d-74bd-41d7-a215-26614365f623",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Wild-type ECs preferentially populate ISVs over the dorsal aorta when transplanted into aplnr-deficient hosts (80% vs 34.5% in wild-type hosts), demonstrating cell-autonomous function of Apelin receptors in promoting sprouting behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36, C39 are supported by well-designed mosaic transplantation experiments (Figure 3B, C, Figure 3\u2014figure supplement 2). The quantification shows a statistically significant difference (p=0.0191) with adequate sample sizes (n=6-8). The rescue of dorsal vasculature by wild-type cells in mutant hosts provides strong evidence for cell autonomy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "3f44e543-32b1-4d81-9539-0c9b7c72c966",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Apelin receptor mediates its angiogenic effects through G\u03b1i signaling, as ECs with inhibited G\u03b1i (via pertussis toxin) phenocopy aplnr mutant ECs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by pertussis toxin overexpression experiments (Figure 3\u2014figure supplement 1) combined with prior literature (C95). The phenotypic similarity between PTX-expressing and aplnr mutant ECs provides functional evidence for G\u03b1i involvement. Sample sizes are adequate (n=6-7).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "4b80919f-72d8-454f-87d2-f818d623cafa",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Apelin signaling functions downstream of Notch signaling during angiogenesis. Notch inhibition increases apln expression and causes hypersprouting, but this hypersprouting requires Apelin function. Notch activation suppresses APLN expression in HUVECs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42, C45-C48, C68-C69 are supported by genetic epistasis experiments in zebrafish (Figure 4A, B, Figure 4\u2014figure supplement 1) and cell culture experiments in HUVECs (Figure 4G, H). The dll4 morphant phenotype is blocked by loss of Apelin signaling, establishing epistasis. RT-qPCR data show bidirectional regulation of APLN by Notch. However, the claim that apln is not a direct Notch target (C70) is inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "43efd350-5e64-4f5d-943b-ae12ff50eb9b",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Apelin signaling is specifically required for Notch-modulated angiogenesis but not for other hypersprouting phenotypes (plxnd1 mutants or bmp2b overexpression).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 are supported by genetic interaction experiments showing that aplnrb loss does not suppress plxnd1 or bmp2b-induced hypersprouting (Figure 4C-F). This specificity strengthens the conclusion that Apelin acts specifically in the Notch pathway. Sample sizes are adequate (n=95 for plxnd1 analysis).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "1e636da2-a74c-4164-b2c9-ae1caf1936a6",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Apelin signaling enhances glycolytic activity in ECs by regulating expression of metabolic regulators c-MYC and PFKFB3. Knockdown of Apelin signaling reduces glycolysis (ECAR) but not mitochondrial respiration (OCR) in HUVECs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52, C54, C81 are supported by Seahorse metabolic assays (Figure 5A, B), Western blots (Figure 5C), and RT-qPCR (Figure 5D). The data clearly show reduced glycolysis with unchanged respiration, and reduced levels of key metabolic regulators. The mechanistic link is further supported by prior literature on c-MYC and PFKFB3 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "a162bed1-5531-4e75-ae6d-caf3a6fe7d1a",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Overexpression of pfkfb3 in endothelial tip cells partially rescues the vascular phenotype in aplnrb mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by mosaic rescue experiments (Figure 5E, F) showing increased DLAV formation when pfkfb3 is overexpressed in aplnrb mutant tip cells. The partial rescue (rather than complete) is appropriate given that PFKFB3 is only one downstream effector. Statistical significance is shown (p=0.0002).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "40542f69-b110-4fe1-b6ff-39d1be5a252c",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Angiogenesis depends primarily on the ligand Apln, with Apela providing partial compensation. This stage-specific ligand usage aligns with temporal expression patterns where apela decreases as apln increases during the transition from vasculogenesis to angiogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by the differential severity of phenotypes in single vs double ligand mutants (Figure 1\u2014figure supplement 3) and are consistent with prior expression studies (C99, citations). The interpretation of stage-specific function is reasonable given the phenotypic data and temporal expression patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "d11086ff-588f-4477-a362-9055db701e70",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The ISV sprouting defects in apln mutants are likely caused by filopodia defects, though defects in EC numbers may also contribute.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C60 represent the authors' interpretation of causality. While C58 cites prior work showing Latrunculin B reduces sprout length, the causal relationship between filopodia defects and sprouting defects in apln mutants (C59) is inferential. The authors appropriately acknowledge uncertainty about the contribution of reduced EC numbers (C60). Additional experiments manipulating filopodia independently of proliferation would be needed to definitively establish causality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "bc370981-2a92-4ad8-b6ae-cb32ecc2f1a5",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Aplnrb expression distinguishes sprouting from quiescent ECs, and Apelin signaling functions as a molecular switch to drive ECs into a pro-angiogenic state, regulating their ability to sprout or remain quiescent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 are supported by the aplnrb reporter expression pattern (Figure 1B, Figure 5\u2014figure supplement 1) and the transplantation experiments showing differential sprouting behavior (C34-C36). The 'molecular switch' model (C65) is a reasonable interpretation of the collective data, though it represents a conceptual framework rather than a directly tested mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "ed63f490-4828-4d1f-8a21-e6d9a5d9e5a2",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Apelin likely regulates c-MYC levels indirectly through FOXO1 phosphorylation, as Apelin promotes FOXO1 phosphorylation (which inhibits FOXO1) and FOXO1 suppresses c-MYC expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70, C82-C84 are based on integration of the current findings with prior literature. While the logic is sound (Apelin\u2192pFOXO1\u2192reduced FOXO1 activity\u2192increased c-MYC), this pathway is not directly tested in the current study. The authors appropriately present this as speculation (C84: 'raise the possibility'). Direct measurement of FOXO1 phosphorylation in their system would strengthen this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about Apelin signaling, angiogenesis, Notch signaling, and EC metabolism from the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10, C67, C71-C73, C76-C77, C79-C80, C85, C88-C98 are all supported by appropriate citations to prior literature. These provide necessary context for the current work. The citations appear accurate and relevant based on the content described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    },
+    {
+      "id": "e38b342f-26d6-4da0-9636-99e4a0891e01",
+      "content_id": "c2c82efa-754b-471a-a6b0-d061dbd9b5c3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Speculative claims about mechanisms and therapeutic potential that are not directly tested in the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C62, C74, C78, C84, C87 represent speculations and hypotheses for future work. The authors appropriately qualify these statements with language like 'might', 'may', 'one might speculate', etc. These are reasonable hypotheses based on the data but require additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:07:00.483096Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b422debe-f564-4554-bc95-b8a31ad437a6",
+      "result_id": "f38fa856-5e9f-4972-93be-d35758ea31ed"
+    },
+    {
+      "claim_id": "a134e83e-2d6b-4e7e-9fc0-e2c92906fb9c",
+      "result_id": "f38fa856-5e9f-4972-93be-d35758ea31ed"
+    },
+    {
+      "claim_id": "f0ee9512-921e-493c-979c-f759646ba7a7",
+      "result_id": "f38fa856-5e9f-4972-93be-d35758ea31ed"
+    },
+    {
+      "claim_id": "cdc96585-48d3-4245-9f6b-e2f0812b57fd",
+      "result_id": "f38fa856-5e9f-4972-93be-d35758ea31ed"
+    },
+    {
+      "claim_id": "498bf112-4105-4d78-9bae-0e197be42375",
+      "result_id": "f38fa856-5e9f-4972-93be-d35758ea31ed"
+    },
+    {
+      "claim_id": "b0025c09-35f3-4081-afb8-779dd473fbc9",
+      "result_id": "f38fa856-5e9f-4972-93be-d35758ea31ed"
+    },
+    {
+      "claim_id": "4c1b970d-7311-4afc-871f-d6abade6fc8b",
+      "result_id": "f38fa856-5e9f-4972-93be-d35758ea31ed"
+    },
+    {
+      "claim_id": "2847f75a-59cd-40e8-8ebe-0a0112510c96",
+      "result_id": "134b98c8-e0e8-447f-830c-36ffda99ea8c"
+    },
+    {
+      "claim_id": "153247fc-cd5c-41c3-aecc-f1e993773111",
+      "result_id": "134b98c8-e0e8-447f-830c-36ffda99ea8c"
+    },
+    {
+      "claim_id": "8e8847eb-160a-41be-b514-ecd940784bd9",
+      "result_id": "134b98c8-e0e8-447f-830c-36ffda99ea8c"
+    },
+    {
+      "claim_id": "257df4fb-6590-42e5-a93d-89de5ae1c60a",
+      "result_id": "134b98c8-e0e8-447f-830c-36ffda99ea8c"
+    },
+    {
+      "claim_id": "614c1fe9-82b1-4c0e-a8de-652fff70ce2d",
+      "result_id": "134b98c8-e0e8-447f-830c-36ffda99ea8c"
+    },
+    {
+      "claim_id": "d92f041b-5326-4140-8198-11ae95e5b0bb",
+      "result_id": "134b98c8-e0e8-447f-830c-36ffda99ea8c"
+    },
+    {
+      "claim_id": "0a704645-7f40-47f5-8bbb-242c1d46a70d",
+      "result_id": "134b98c8-e0e8-447f-830c-36ffda99ea8c"
+    },
+    {
+      "claim_id": "9e0bbc3f-c198-47e3-ae2a-bfc5bdeff0d9",
+      "result_id": "134b98c8-e0e8-447f-830c-36ffda99ea8c"
+    },
+    {
+      "claim_id": "eb4dabed-850f-4281-9da6-58dc9480ff9f",
+      "result_id": "bbaad5f6-3cd1-438c-b615-8e3f92bb3241"
+    },
+    {
+      "claim_id": "644ebb33-1598-46a4-8b33-4302925ddea6",
+      "result_id": "bbaad5f6-3cd1-438c-b615-8e3f92bb3241"
+    },
+    {
+      "claim_id": "30b2389d-d909-4d98-b6a3-6d717e815554",
+      "result_id": "bbaad5f6-3cd1-438c-b615-8e3f92bb3241"
+    },
+    {
+      "claim_id": "c03f2b8d-6646-4fc3-a8ba-4509c5bd74ac",
+      "result_id": "bbaad5f6-3cd1-438c-b615-8e3f92bb3241"
+    },
+    {
+      "claim_id": "4db6fcc1-77fc-45c4-b002-3024d8a509f9",
+      "result_id": "bbaad5f6-3cd1-438c-b615-8e3f92bb3241"
+    },
+    {
+      "claim_id": "ac36c0d5-3364-4e55-aa85-e46c40ae34fd",
+      "result_id": "6a09ed48-1305-4692-8fea-1ec3972ec7ef"
+    },
+    {
+      "claim_id": "c4c65a41-d324-4553-b863-833508ecce8c",
+      "result_id": "6a09ed48-1305-4692-8fea-1ec3972ec7ef"
+    },
+    {
+      "claim_id": "7293fc43-2ade-4105-be57-3e49a5105b25",
+      "result_id": "3d6a6efc-9a53-4b5e-9d29-865fe3591666"
+    },
+    {
+      "claim_id": "900fe891-7aec-42e2-9ef5-505e35657b79",
+      "result_id": "76ca4b7d-74bd-41d7-a215-26614365f623"
+    },
+    {
+      "claim_id": "816c2ab4-49ea-4b57-ab50-617dba35cb79",
+      "result_id": "76ca4b7d-74bd-41d7-a215-26614365f623"
+    },
+    {
+      "claim_id": "21b662e9-0e8a-4ba4-95e6-824e2d68dfc2",
+      "result_id": "76ca4b7d-74bd-41d7-a215-26614365f623"
+    },
+    {
+      "claim_id": "8e68e9aa-efd7-4f96-8766-938df95657cd",
+      "result_id": "76ca4b7d-74bd-41d7-a215-26614365f623"
+    },
+    {
+      "claim_id": "5460029d-6331-432c-b289-4ab8cef563e6",
+      "result_id": "3f44e543-32b1-4d81-9539-0c9b7c72c966"
+    },
+    {
+      "claim_id": "8c9f30cf-d539-4158-807f-5dd612c53333",
+      "result_id": "3f44e543-32b1-4d81-9539-0c9b7c72c966"
+    },
+    {
+      "claim_id": "2f7cb34e-acef-4969-888b-2692d04350ae",
+      "result_id": "4b80919f-72d8-454f-87d2-f818d623cafa"
+    },
+    {
+      "claim_id": "c780e57f-5ba8-4e8f-9ffb-afd84f256c86",
+      "result_id": "4b80919f-72d8-454f-87d2-f818d623cafa"
+    },
+    {
+      "claim_id": "a6ba65b7-3e36-408d-855d-31b7b0be26e8",
+      "result_id": "4b80919f-72d8-454f-87d2-f818d623cafa"
+    },
+    {
+      "claim_id": "97e6d0db-4a5d-4ba4-b086-d8c98e0f3962",
+      "result_id": "4b80919f-72d8-454f-87d2-f818d623cafa"
+    },
+    {
+      "claim_id": "b4efc78c-46e9-4b0f-a53d-94e5294b66ba",
+      "result_id": "4b80919f-72d8-454f-87d2-f818d623cafa"
+    },
+    {
+      "claim_id": "d5603e65-410f-4593-9cc5-fae03cc8868f",
+      "result_id": "4b80919f-72d8-454f-87d2-f818d623cafa"
+    },
+    {
+      "claim_id": "3be3c030-ef5d-4482-9958-3116ea4ed796",
+      "result_id": "4b80919f-72d8-454f-87d2-f818d623cafa"
+    },
+    {
+      "claim_id": "ad11f5dd-58a4-4fe8-bf02-8570c15a9e2a",
+      "result_id": "4b80919f-72d8-454f-87d2-f818d623cafa"
+    },
+    {
+      "claim_id": "b64a194e-9195-4f28-9578-b44a38495a7e",
+      "result_id": "4b80919f-72d8-454f-87d2-f818d623cafa"
+    },
+    {
+      "claim_id": "d75e5351-a3b8-45c2-a4f5-f52f149d33fc",
+      "result_id": "43efd350-5e64-4f5d-943b-ae12ff50eb9b"
+    },
+    {
+      "claim_id": "e955c32a-05f5-44e6-aa23-8e524d27c910",
+      "result_id": "43efd350-5e64-4f5d-943b-ae12ff50eb9b"
+    },
+    {
+      "claim_id": "57dfdafb-09bb-4e01-b1c7-ce48ca1d7f92",
+      "result_id": "1e636da2-a74c-4164-b2c9-ae1caf1936a6"
+    },
+    {
+      "claim_id": "10624512-3ec7-41ad-97b0-ced769ff3b0a",
+      "result_id": "1e636da2-a74c-4164-b2c9-ae1caf1936a6"
+    },
+    {
+      "claim_id": "8304c255-544f-4ef3-94a4-4f26bb3dd1b9",
+      "result_id": "1e636da2-a74c-4164-b2c9-ae1caf1936a6"
+    },
+    {
+      "claim_id": "6644e801-fa3c-41b6-9458-dd17f7a07b7e",
+      "result_id": "1e636da2-a74c-4164-b2c9-ae1caf1936a6"
+    },
+    {
+      "claim_id": "54dc390e-bdd0-4472-8bff-b8c3e96ff4fc",
+      "result_id": "1e636da2-a74c-4164-b2c9-ae1caf1936a6"
+    },
+    {
+      "claim_id": "d10233d9-46be-4162-8c84-c3d3f4b050f7",
+      "result_id": "1e636da2-a74c-4164-b2c9-ae1caf1936a6"
+    },
+    {
+      "claim_id": "c273184f-144f-41e7-8e6e-140993c67a60",
+      "result_id": "a162bed1-5531-4e75-ae6d-caf3a6fe7d1a"
+    },
+    {
+      "claim_id": "2c3ae35b-e62d-4b9c-bf9d-48f3d7a95364",
+      "result_id": "40542f69-b110-4fe1-b6ff-39d1be5a252c"
+    },
+    {
+      "claim_id": "59eccf05-6d96-47e4-9adb-7c6969150cd7",
+      "result_id": "40542f69-b110-4fe1-b6ff-39d1be5a252c"
+    },
+    {
+      "claim_id": "9a380f3f-7502-48fe-8e8f-695af98ab506",
+      "result_id": "40542f69-b110-4fe1-b6ff-39d1be5a252c"
+    },
+    {
+      "claim_id": "b3653f4f-a2b0-4a48-bbe0-e118f03224e9",
+      "result_id": "d11086ff-588f-4477-a362-9055db701e70"
+    },
+    {
+      "claim_id": "f100bc1b-24a7-4ca4-8501-98d359df6ae2",
+      "result_id": "d11086ff-588f-4477-a362-9055db701e70"
+    },
+    {
+      "claim_id": "21a9307b-6510-4bf4-8e98-032b0b9ec7ca",
+      "result_id": "d11086ff-588f-4477-a362-9055db701e70"
+    },
+    {
+      "claim_id": "a6d812b3-df50-4c14-b086-c2aec8bfc974",
+      "result_id": "bc370981-2a92-4ad8-b6ae-cb32ecc2f1a5"
+    },
+    {
+      "claim_id": "1f4eab23-9dfe-40e2-9d10-787dcf3274b4",
+      "result_id": "bc370981-2a92-4ad8-b6ae-cb32ecc2f1a5"
+    },
+    {
+      "claim_id": "1da2863f-1e55-4a57-8688-a51f0b2407a6",
+      "result_id": "bc370981-2a92-4ad8-b6ae-cb32ecc2f1a5"
+    },
+    {
+      "claim_id": "720e7d52-d27f-4bab-967f-4e649ba67c17",
+      "result_id": "bc370981-2a92-4ad8-b6ae-cb32ecc2f1a5"
+    },
+    {
+      "claim_id": "f76b0ed0-91ae-4121-ac40-81120bd6c820",
+      "result_id": "ed63f490-4828-4d1f-8a21-e6d9a5d9e5a2"
+    },
+    {
+      "claim_id": "be41a8fd-29ef-466c-a206-f4765a4d56dd",
+      "result_id": "ed63f490-4828-4d1f-8a21-e6d9a5d9e5a2"
+    },
+    {
+      "claim_id": "2d91c416-18bf-41a9-8cb1-ce2dd6b23035",
+      "result_id": "ed63f490-4828-4d1f-8a21-e6d9a5d9e5a2"
+    },
+    {
+      "claim_id": "36e70204-3c42-4044-b76b-f084469bedab",
+      "result_id": "ed63f490-4828-4d1f-8a21-e6d9a5d9e5a2"
+    },
+    {
+      "claim_id": "bf25e12a-b31b-4f71-807f-3514fc72c1b7",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "589e3066-af63-43b5-b582-f8b19cd5cdf4",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "ea5387e5-e90b-4021-80b7-93cd582dfae6",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "40cd66df-ca51-433b-9e3a-d58a61c2148c",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "83d030ac-e92a-42a0-80f2-1045d50a3786",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "562b01ab-9bdd-4a6d-a9b3-6f6c54f60d36",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "7950b12c-31a8-4302-adcd-7646991c3dfd",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "44376663-7dbf-4199-98ad-68e1c7bed558",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "e6eff50a-18e2-437c-9d4a-b6f225b59c6d",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "cc6d0b41-174f-461a-a1a5-6427586377d5",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "4c340d46-bab8-4279-9e56-d2dc55732dec",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "80bea355-fb50-4c59-98df-8116cc95214f",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "4db68912-a81f-4f8e-874e-f4cb4eb80f14",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "5263cc1f-2c9b-44f4-b520-40895494bf2a",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "6310caee-b99d-4afe-8090-0d910475d80f",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "7e54a025-b43c-4a7e-b734-7b0c2f2edb09",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "cce79448-770d-4f60-99ec-4d0d21b1b8ad",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "74ae937e-50b1-4020-acd8-f91098a0c349",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "0f22ec0f-e272-44e6-87fd-812bdfef77cf",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "7a1e98d4-f5b5-4770-b224-5a95f63c9c18",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "b1d49a6a-2746-4724-ab04-274f5c8bc249",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "585ccc67-c4b9-41f3-a0e8-37b9099808f2",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "9fc8940d-9d81-4f2a-ae15-7a012aed4c5f",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "97a51f87-44ba-40bc-a54f-f8e32bd18411",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "42b5f8e1-b0d3-4f0b-9ddd-e33d3e787a2c",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "89083276-1366-45a8-860b-79ca3c24f83a",
+      "result_id": "6c16ae17-57ba-4ef0-a687-946d5c4357c3"
+    },
+    {
+      "claim_id": "40640440-b263-43f4-8a75-05f090440763",
+      "result_id": "e38b342f-26d6-4da0-9636-99e4a0891e01"
+    },
+    {
+      "claim_id": "b1c54001-2a08-420a-a19d-ed4932734179",
+      "result_id": "e38b342f-26d6-4da0-9636-99e4a0891e01"
+    },
+    {
+      "claim_id": "fd2241d1-8238-40bc-a01a-341bf75f3888",
+      "result_id": "e38b342f-26d6-4da0-9636-99e4a0891e01"
+    },
+    {
+      "claim_id": "59e999ee-09fa-4d58-b530-95395c8916aa",
+      "result_id": "e38b342f-26d6-4da0-9636-99e4a0891e01"
+    },
+    {
+      "claim_id": "36e70204-3c42-4044-b76b-f084469bedab",
+      "result_id": "e38b342f-26d6-4da0-9636-99e4a0891e01"
+    },
+    {
+      "claim_id": "969a0b44-43ca-41bd-bb19-9ae2bd08f9a5",
+      "result_id": "e38b342f-26d6-4da0-9636-99e4a0891e01"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "During oculomotor behavior in monkeys and mice, both mean spike rate and mean spike irregularity (CV2) of floccular Purkinje cells were correlated with gaze velocity across multiple visual and vestibular stimulus conditions. The correlations were roughly linear for both spike rate (r=0.81\u00b10.02 in monkeys, r=0.71\u00b10.04 in mice) and irregularity (r=-0.53\u00b10.03 in monkeys, r=-0.47\u00b10.05 in mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40-C45 are well-supported by extensive electrophysiological recordings in both species (n=120 cells in monkeys, n=33 cells in mice) across multiple behavioral conditions. The data in Figure 1 clearly demonstrate the correlations, with appropriate statistical analysis (correlation coefficients with p-values). The linear relationships are consistently observed across individual cells and population averages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Mean spike rate and mean spike irregularity covaried during oculomotor behavior, with an inverse relationship: higher spike rates were associated with lower CV2 (more regular spiking) and vice versa. This relationship was observed across different Purkinje cell subtypes and could not be fully explained by refractory period effects alone, suggesting contributions from voltage-gated conductances and synaptic input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 are supported by data in Figure 1E and supplementary figures. The inverse relationship is clearly demonstrated, and simulations (Figure 1\u2014figure supplement 3) show that refractory period alone cannot account for the observed correlation. The interpretation is strengthened by citations to prior mechanistic studies. However, the exact contributions of different factors remain incompletely characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Moment-to-moment variations in eye velocity during oculomotor behavior could be predicted from fluctuations in Purkinje cell spike rate but not from fluctuations in spike irregularity (CV2). Linear mixed effects modeling found significant contributions of residual spike rate (p=0.006 in monkeys, p=0.035 in mice) but not residual CV2 (p=0.56 in monkeys, p=0.38 in mice) to residual eye velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 are strongly supported by rigorous statistical analysis using linear mixed effects models (Figure 2, Supplementary file 1). The residual analysis effectively dissociates spike rate from irregularity by removing trial-averaged responses. The 50 ms time bin is appropriately justified. The lack of correlation between residual CV2 and eye velocity (Figure 2E,F) provides compelling negative evidence. Sample sizes are adequate (n=120 monkeys, n=33 mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Optogenetic stimulation using ChR2 expressed selectively in Purkinje cells successfully dissociated spike rate and irregularity in vivo. Purkinje cells responded reliably to individual light pulses (median latency 1.24\u00b10.07 ms) with spike rates following stimulus rates in a roughly 1:1 manner up to 100 Hz. Irregular stimulus trains (CV=1) drove slightly lower mean spike rates than regular trains (CV=0), but the overall irregularity of Purkinje cell spiking consistently reflected stimulus train irregularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C75 are well-supported by electrophysiological recordings during optogenetic stimulation (Figure 3). The genetic approach using L7/Pcp2-Cre is validated by citations. Cell identification criteria are rigorous (latency, waveform, spontaneous rate, location). The experimental design with matched pulse numbers but varying irregularity is appropriate. Statistical analysis confirms significant effects of stimulus irregularity on both spike rate and CV (two-way ANOVA, p<0.0001). Sample size (n=12-13 cells) is adequate for within-subject comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Optogenetic stimulation of Purkinje cells elicited robust eye movements with mean eye velocity increasing with stimulus rate. When controlled for actual Purkinje cell spike rate (rather than stimulus rate), there was no significant difference in mean eye velocity between regular and irregular spike trains (p=0.86), contrary to prior predictions that irregular trains would be less effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 are supported by behavioral measurements during optogenetic stimulation (Figure 4). The key finding that irregularity does not affect mean eye velocity after controlling for spike rate is supported by linear mixed effects modeling (p=0.86). The experimental design appropriately accounts for the slightly lower spike rates during irregular stimulation. Sample size (n=16 flocculi from 10 mice) is adequate. The result directly contradicts prior modeling predictions (Luthman et al., 2011), which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Eye movement trajectories tracked individual optogenetic stimuli and could be well-described by a rapid, linear population rate code. Mutual information analysis revealed optimal decoding at 3-5 ms temporal windows, with equal information transmitted during regular and irregular stimulation. A single linear temporal filter predicted eye velocity equally well for both regular and irregular spike trains (RMSE not significantly different, p=0.92).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C92 are strongly supported by sophisticated analyses (Figure 5). The mutual information analysis appropriately identifies the temporal decoding window. The linear filter modeling uses proper cross-validation (training on irregular non-repeated, testing on regular and irregular repeated trains). The finding that the same filter works for both conditions is compelling evidence for rate coding. Statistical comparisons are appropriate (paired t-test). The 6 ms delay is empirically determined. However, the choice of total least squares regression could be better justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Simulations of 50 Purkinje cells firing asynchronously showed that higher spike irregularity increased moment-to-moment variability in population spike rate, degrading the ability to discriminate distinct motor commands (ROC analysis). This effect was subtle for normal irregularity levels (CV=0.55-0.82) but pronounced for pathological levels (CV=1.7), suggesting that pathological irregularity in ataxia may impair motor control by degrading the accuracy of the population rate code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 are supported by straightforward simulations (Figure 6) using Gamma distributions to generate spike trains. The simulation parameters are based on empirical observations and prior literature. The ROC analysis appropriately quantifies discriminability. However, this is a relatively simple simulation that makes assumptions about independence of Purkinje cell firing and does not incorporate realistic network dynamics. The hypothesis about ataxia (C98) is speculative but reasonably grounded in the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C109"
+    ],
+    "result": "A biophysical conductance-based model of Purkinje cell-target neuron synapses initially predicted that irregular spike trains would be less effective than regular trains (using original parameters from Luthman et al., 2011). However, this prediction was inconsistent with experimental observations. Adjusting biologically realistic parameters\u2014specifically removing short-term depression (based on recent findings in adult mice) and increasing the excitation/inhibition ratio\u2014allowed the model to reproduce experimental results showing no effect of spike irregularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C109 are supported by systematic biophysical modeling (Figure 7). The model is well-established (Luthman et al., 2011) and appropriately adapted. The key insight that removing short-term depression alone is insufficient is important. The parameter space exploration of E/I ratios is thorough and identifies biologically plausible parameters that match experimental data. The justification for removing short-term depression is well-supported by recent literature (Turecek et al., 2016, 2017). However, the model has many parameters, and not all are systematically explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "A simple random walk integrate-and-fire model revealed that the effect of input variance on target neuron spike rate depends on parameter space location. Increased variance can increase, decrease, or have minimal effect on spike rate depending on factors like E/I balance and membrane potential constraints. The experiments appear to have identified a biological example of an intermediate parameter regime where changes in input variability within the normal range have minimal impact on the rate code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 are supported by random walk modeling (Figure 9) with analytic approximations from Salinas and Sejnowski (2000). The model is appropriately simple and reveals general principles. The key insight about non-monotonic relationships between variance and output rate is well-demonstrated. The connection to experimental findings is reasonable but somewhat speculative. The model provides a useful conceptual framework but lacks the biological detail of the conductance-based model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C120",
+      "C128",
+      "C129",
+      "C146",
+      "C148",
+      "C149"
+    ],
+    "result": "The convergent evidence from recording, optogenetic stimulation, and computational modeling demonstrates that cerebellar Purkinje cells control eye movements through a remarkably rapid rate code (3-5 ms temporal precision) that is invariant to spike irregularity. No evidence was found for temporal coding in the rigorous sense\u2014spike irregularity does not influence motor output beyond what can be accounted for by the population spike rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7, C120, C128, C129, C146, C148, C149 represent the main conclusions and are strongly supported by the convergent evidence from three complementary approaches: (1) recordings showing no correlation between residual CV2 and eye velocity, (2) optogenetic experiments showing equal efficacy of regular and irregular trains after controlling for rate, and (3) modeling identifying parameter regimes consistent with observations. The definition of temporal coding is appropriately rigorous. The conclusions are well-justified but appropriately acknowledge limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Trial-to-trial variations in eye movements could be predicted from spike rate fluctuations in single Purkinje cells, suggesting shared fluctuations across the population. The lack of correlation with CV2 fluctuations could indicate either that irregularity effects are too small to detect in single cells or that irregularity does not influence eye velocity. Optogenetic experiments favor the latter interpretation, though synchrony during optogenetic stimulation was likely higher than during natural behavior. Biophysical modeling predicts even smaller effects under more natural asynchronous conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 provide important interpretation of the recording results. The inference about shared population fluctuations (C122) is reasonable given the ability to predict behavior from single cells, supported by citation to Chaisanguanthum et al. (2014). The two alternative interpretations (C123, C124) are appropriately presented. The conclusion favoring C124 based on optogenetic results (C125) is justified. The acknowledgment of higher synchrony during optogenetic stimulation (C126) is important, and the modeling prediction of smaller effects under asynchronous conditions (C127, Figure 8) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The study extended prior work by demonstrating a linear relationship between Purkinje cell spike rate and eye velocity over a wide range (0-100 sp/s above baseline). The population spike rate is decoded by downstream oculomotor circuitry on a 3-5 ms timescale, which is less than a typical ISI in individual cells but reasonable for a population of ~50 converging Purkinje cells. Similar rapid rate coding likely occurs in other motor circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 are well-supported. The linear relationship (C131) is demonstrated in Figure 4E and consistent with extensive prior literature (multiple citations). The 3-5 ms decoding timescale (C134) is rigorously established by mutual information and linear filter analyses. The interpretation regarding population coding (C135) is reasonable given known anatomy (~50 Purkinje cells per target). The suggestion of similar coding in other motor systems (C136) is appropriately supported by citations (Tang et al., 2014; Srivastava et al., 2017; Brown and Raman, 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The rapid 3-5 ms decoding timescale could endow the circuit with sensitivity to spike irregularity and synchrony by affecting the population rate over short timescales. Convergence of ~50 Purkinje cells averages out noise, but this averaging must occur rapidly. High irregularity in ataxia (CV=0.7-2.3 vs. 0.4-0.6 in controls) could degrade movement accuracy by degrading population rate precision, while normal variations may be well-tolerated. Synchrony can be reframed as rapid population rate changes that influence behavior through the rate code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 provide important mechanistic interpretation. The inference about potential sensitivity to irregularity and synchrony (C137) is logical given the rapid decoding. The point about rapid averaging (C138, C139) is well-supported by the experimental findings (Figure 5). The hypothesis about ataxia (C140) is supported by simulations (Figure 6) and appropriate citations to prior work on irregularity levels in ataxic mice. The reframing of synchrony as population rate changes (C142) is insightful and supported by extensive citations. These claims appropriately distinguish between normal and pathological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C147",
+      "C150",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The study distinguishes rapid rate coding from true temporal coding, defining the latter as influences of spike timing that cannot be accounted for by population rate over biologically relevant timescales. While no evidence for temporal coding was found in the flocculus, the impact of spike irregularity could vary across cerebellar regions due to variations in Purkinje cell properties and target neuron characteristics. Biophysical modeling indicates that parameter variations (e.g., E/I ratio) could create sensitivity to irregularity in other regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C159 provide important conceptual clarification and acknowledge limitations. The definition of temporal coding (C145) is appropriately rigorous and supported by citation (Theunissen and Miller, 1995). The acknowledgment that other forms of temporal coding are not ruled out (C147) is appropriate. The speculation about regional differences (C150, C156) is reasonable given documented variations in Purkinje cell and target neuron properties (C151, C152, multiple citations). The modeling support for parameter-dependent effects (C153, C155) is demonstrated in Figure 7. The citation to Sarnaik and Raman (2018) regarding lobulus simplex (C157) provides some support for regional differences. The call for additional research (C158, C159) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background claims establish that rate coding is widely used throughout the brain for encoding information, affecting downstream neurons, and driving motor output. Temporal patterns of spikes can also encode information, but it is unclear how such information is transmitted to influence behavior. In the cerebellum, Purkinje cells (the sole output of cerebellar cortex) show spike irregularity that varies during sensory processing, and it has been hypothesized that this irregularity affects motor control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C21 provide essential background and are well-supported by extensive citations to established literature. These are primarily knowledge claims and citations to prior work that set up the research question. The citations are appropriate and comprehensive. Claim C16 (Purkinje cells as sole output) is established anatomical fact. The hypothesis about irregularity affecting motor control (C17) is appropriately attributed to prior work (De Zeeuw et al., 2011).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior work has proposed that pathological alterations in Purkinje cell spike irregularity may cause ataxia and autism. Mouse models of ataxia and autism show increased irregularity, while some manipulations that increase regularity also cause motor deficits. Short-term synaptic depression has been proposed as a mechanism by which irregularity could influence downstream targets. However, causal evidence is mixed: treatments reversing irregularity have reversed motor deficits in some but not all cases, and severity of deficits does not always correlate with severity of irregularity perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C34 accurately summarize prior literature on the relationship between Purkinje cell irregularity and motor disorders. Each claim is supported by appropriate citations. The summary appropriately notes that the evidence is mixed (C31) and includes both positive (C32) and negative (C33) findings. This provides important context for the current study's investigation of whether irregularity affects motor control in normal animals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Floccular Purkinje cells are located two synapses from eye muscle motor neurons and are a key node in transforming visual and vestibular signals into oculomotor commands. Prior recording and stimulation studies have established that Purkinje cell spike rate influences eye movements. The possibility that spike irregularity also influences eye movements has been suggested by observations of abnormal oculomotor behavior in ataxic mice. The spike rate of most floccular Purkinje cells encodes gaze velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide essential background on the oculomotor system and are well-supported. The anatomical claims (C35) are established knowledge. The functional role (C36) is well-established. The influence of spike rate on eye movements (C37) is supported by extensive prior literature (multiple citations). The suggestion about irregularity (C38) appropriately cites prior observations in ataxic mice. The encoding of gaze velocity (C39) is established by extensive prior work (multiple citations).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Understanding neural codes is central to understanding neural computation and can guide development of treatments for brain disorders. While temporal patterns of neural activity have been extensively analyzed, it has been difficult to determine how spike timing information is read out in most mammalian circuits. The current study leveraged the close link between floccular Purkinje cells and eye movements to analyze contributions of spike rate and irregularity. Modeling results indicate that biologically realistic parameter variations could allow spike timing to influence downstream responses, and this may vary across synapses or behavioral states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C167 provide important context about the broader significance of the work and are appropriately supported. The general importance of understanding neural codes (C160) is self-evident. The clinical relevance (C161) is supported by appropriate citations. The challenge in the field (C163) is accurately stated. The description of the current study's approach (C164) is accurate. The modeling conclusions (C165-C167) are appropriately cautious and acknowledge that the findings may not generalize to all synapses or conditions.",
+    "result_type": "MINOR"
+  }
+]

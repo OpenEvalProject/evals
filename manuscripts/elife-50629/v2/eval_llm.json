@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C38",
+      "C42",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "PBP2 molecules exist in three distinct motion states: diffusive (78%), immobile bound (13%), and persistently moving bound (9%). Bound molecules transition between immobile and persistently moving states with measured transition rates (kip = 0.014-0.063 s\u207b\u00b9, kpi = 0.009-0.031 s\u207b\u00b9), and have a minimum average lifetime of 30 s with run lengths of 0.3-1.6 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, C38, C42 are directly supported by single-molecule tracking data shown in Figure 1. The transition rates (C57, C58) and unbinding kinetics (C59, C60) are derived from rigorous experimental measurements and computational simulations (Figure 2). The three-state model is validated through multiple independent approaches including jump-length distributions and MSD analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C47",
+      "C48",
+      "C49",
+      "C53",
+      "C54"
+    ],
+    "result": "Both PAmCherry-PBP2 and msfGFP-PBP2 fusions are functional, expressed at near-native levels, maintain normal cell shape and growth, though they show different bound fractions (22% vs 36.5%) and persistent fractions (42% vs 76-83%). The persistent fraction remains constant across a 20-fold range of expression levels for both fusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 and C47-C49 are well-supported by mass spectrometry, Bocillin labeling, cell morphology measurements, and growth curves (Figure 1\u2014figure supplements 1, 8). The differences between the two fusions (C48, C53) are documented with appropriate controls. The constant persistent fraction across expression levels (C54) is a key finding supported by systematic measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C43",
+      "C45",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Upon PBP2 overexpression, the bound fraction decreases from 22% to 12.3%, while the persistent fraction remains constant, indicating that the number of active Rod complexes increases approximately two-fold. This suggests PBP2 is an important limiting component for Rod-complex activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The decrease in bound fraction upon overexpression (C39, C40) is clearly documented in Figure 1H-I. The constant persistent fraction (C43) combined with increased total PBP2 leads to the logical inference of increased active complexes (C127). The conclusion that PBP2 is limiting (C45, C128) is a reasonable interpretation supported by the data, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "A22 treatment abolishes MreB and RodZ rotational motion and reduces their spot numbers, but does not affect the spotty pattern or bound fraction of PBP2. The persistent fraction of PBP2 nearly vanishes after A22 treatment. This demonstrates that MreB filaments are not the binding substrate for PBP2 and do not affect PBP2 binding/unbinding rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are directly supported by fluorescence microscopy data in Figure 3A-D. The maintenance of PBP2 bound fraction (C66) combined with loss of persistent motion (C67) after A22 treatment provides strong evidence that MreB is not the binding substrate (C65, C68). The experimental design with appropriate controls and multiple protein fusions strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "MreB depolymerization does not change the diffusion constant of freely diffusing PBP2 molecules, indicating MreB does not constrain PBP2 diffusion. Mecillinam treatment (which blocks PBP2 active site) does not reduce the bound fraction, demonstrating PBP2 binds its target with a moiety different from its active site. Together, these show PBP2 binding locations are independent of MreB and Rod-complex activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by diffusion measurements in Figure 3E. The Mecillinam experiment (C73-C74) provides strong evidence for active-site-independent binding. The logical inference that PBP2 binding is independent of MreB (C71) and Rod-complex activity (C72) follows from the combined experimental evidence. The conclusions are well-reasoned though some alternative mechanisms are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Bound-Molecule FRAP experiments in A22-treated cells show that the bound fraction recovers within 2-4 min after bleaching (kdb = 4.3\u00d710\u207b\u00b3 s\u207b\u00b9), with an unbinding rate of kbd = 0.02 s\u207b\u00b9. The average lifetime of bound PBP2 (~1 min) is 70-fold shorter than cell doubling time, indicating almost all bound molecules have undergone multiple binding/unbinding cycles. This confirms PBP2 binds its substrate at locations independent of MreB filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FRAP recovery kinetics (C76-C77) are clearly shown in Figure 4B with appropriate fitting. The unbinding rate (C79) is independently confirmed by lifetime measurements (Figure 4C). The inference about multiple binding cycles (C80-C81) is mathematically sound. The conclusion about MreB-independent binding (C82) logically follows from the combined evidence, though it relies on the assumption that diffusion is not constrained by MreB (previously established).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C95",
+      "C96"
+    ],
+    "result": "Depletion experiments show that bound fractions remain constant upon RodA or MreCD depletion, suggesting neither is the main binding substrate. RodZ depletion causes a significant reduction in bound fraction (p=0.021), suggesting RodZ modulates PBP2 binding rates. However, evidence indicates that none of the known Rod-complex components (RodA, MreCD, RodZ) provide the sole rate-limiting substrate for PBP2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The depletion experiments (C83, C87) are documented in Figure 5C with appropriate statistical analysis. The inference that RodA is not the main substrate (C84-C85) is supported by stoichiometric calculations. The conclusion that none of the tested components is the sole substrate (C95-C96) is reasonable given the data, though residual protein levels after depletion (acknowledged by authors) prevent definitive conclusions. The RodZ effect (C88) is a significant finding but the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Deletion of ponA (PBP1a) leads to a drop in the bound fraction of PBP2, indicating that while PBP1a is not required for PBP2 binding, it might aid binding or stabilize bound PBP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The decrease in bound fraction upon PBP1a deletion (C93) is shown in Figure 5. The interpretation that PBP1a aids but is not required for binding (C94) is reasonable given that binding still occurs in the deletion strain. However, the mechanism by which PBP1a affects PBP2 binding is not elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "MreB-curvature correlations are dominated by cell poles. When analysis is constrained to cylindrical cell regions, correlations are reduced five-fold. In straight cell segments, no significant correlations between MreB and contour curvature are found. All residual correlations can be attributed to weak spontaneous cell bending, not to bending-independent bulges or indentations. This contradicts the model that MreB is recruited to regions of specific cell-envelope curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reduction of correlations when excluding poles (C100) is clearly shown in Figure 6C. The absence of correlations in straight segments (C103) is documented in Figure 6D. Two independent correction approaches (C106-C107, Figure 6\u2014figure supplement 2) both support the conclusion that residual correlations are due to cell bending (C108). The analysis is rigorous and addresses potential confounders. The conclusion directly challenges prior work (Ursell et al. 2014) with strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Computational simulations show that the encounter rate between freely diffusing PBP2 and Rod-complex sites is at least three times lower than the physiological cross-linking rate, indicating free diffusion cannot account for Rod-complex activity. While facilitated diffusion along MreB filaments increases encounter rates, it would cause asymmetric diffusion not observed experimentally. Therefore, Rod-complex activity requires stable association between transglycosylase and transpeptidase, and only persistently moving PBP2 contributes substantially to cross-linking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational simulations (C111) are shown in Figure 7B-C with clear methodology. The conclusion that free diffusion is insufficient (C112) is mathematically sound. The facilitated diffusion model (C113-C114) makes testable predictions that are contradicted by experimental data (C115, Figure 7F). The inference that stable association is required (C116) and that only persistent molecules contribute (C117) logically follows from the combined computational and experimental evidence. This is a strong mechanistic conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C56"
+    ],
+    "result": "Persistently moving PBP2 molecules show similar speed and orientation distributions as MreB filaments. The hyperactive PBP2(L61R) mutant shows a reduced persistent fraction compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The similarity between PBP2 and MreB motion (C41) is documented in Figure 1F-G with appropriate statistical comparisons. The reduced persistent fraction in the L61R mutant (C56) is shown in Figure 1\u2014figure supplement 8A with statistical significance (p=0.016). Both findings are well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Near-wild-type levels of msfGFP-PBP2 at low induction lead to loss of rod shape at long times, accompanied by an almost two-fold increase in bound fraction. The hyperactive msfGFP-PBP2(L61R) shows about two-fold increased number of bound molecules compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The shape defects and increased bound fraction (C50-C51) are documented in Figure 1\u2014figure supplements 9A-B. The increased binding of the L61R mutant (C52) is confirmed in Figure 1\u2014figure supplement 8C and is consistent with prior work (Rohs et al. 2018). These observations suggest a potential feedback between cell-wall architecture and PBP2 binding, though the mechanism is not fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Despite RodZ depletion causing an initial decrease in bound fraction, the bound fraction increases after 6 hr despite continued low RodZ levels. The spatial pattern of RodZ but not PBP2 depends on MreB filaments, and correlations between PBP2 and RodZ spatial patterns are low, suggesting PBP2 localization does not depend on RodZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The recovery of bound fraction despite continued RodZ depletion (C89) is shown in Figure 5\u2014figure supplement 2C,F. The differential dependence on MreB (C90) is documented in Figure 3. The low spatial correlation (C92) is shown in Figure 5\u2014figure supplement 3. Together, these support the inference that PBP2 localization is RodZ-independent (C91), though RodZ may still modulate binding kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C120",
+      "C121"
+    ],
+    "result": "Long-term treatment with Mecillinam or A22 (120 min) increases bound fraction and decreases diffusion constant, coinciding with loss of rod shape. Similarly, depletion of RodA, RodZ, MreCD, or overexpression of PBP2 causes decreased diffusion constants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The effects of long-term drug treatment (C75) are shown in Figure 3E and Figure 3\u2014figure supplement 4C. The effects of protein depletion (C120) are documented in Figure 5\u2014figure supplement 2E. The overexpression effect (C121) is shown in Figure 1\u2014figure supplement 2. These observations suggest that cell-wall architecture affects PBP2 diffusion, supporting the model that PBP2 weakly interacts with the cell wall even during diffusion. However, the molecular mechanism is not determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C122"
+    ],
+    "result": "PBP2 diffusion is much slower than similar-size membrane proteins or truncated PBP2, suggesting PBP2 might weakly bind the cell wall even during diffusion. During cell-wall insertion, Rod complexes might stay connected to the local cell wall through PBP2-template strand associations, independent of enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of slow diffusion (C118) is supported by comparison to literature values. However, the inference that this is due to weak cell-wall binding (C119) is speculative and not directly tested. The model of template-strand association (C122) is explicitly presented as speculation by the authors. While these ideas are plausible and consistent with the data, they lack direct experimental validation. Additional experiments (e.g., testing binding of isolated PBP2 domains to cell wall) would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C110"
+    ],
+    "result": "The observations suggest that PBP2 or an unknown protein determines the initial localization of newly forming Rod complexes. The authors speculate that the local cell-wall architecture provides the cue for Rod-complex initiation, and the observations are compatible with a model of MreB-independent initiation through PBP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the experimental evidence strongly supports MreB-independent PBP2 binding (well-established in other results), the positive identification of what PBP2 binds to remains uncertain. Claim C28 acknowledges this uncertainty ('PBP2 or an unknown protein'). Claim C29 is explicitly speculative. The compatibility with MreB-independent initiation (C110) is a reasonable inference, but the actual binding substrate and mechanism of Rod-complex initiation are not definitively established. This represents an important gap that the authors appropriately acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims establishing the current understanding of the Rod complex, its components (RodA, PBP2, RodZ, MreB, MreC, MreD, PBP1a, PBP1b), their interactions, and prior hypotheses about MreB's role in Rod-complex localization and recruitment to sites of specific cell-envelope curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C22) are all supported by appropriate citations to prior literature. They establish the scientific context and prior hypotheses that the current work addresses. The authors accurately represent prior work, including competing hypotheses about MreB-curvature relationships (C17-C19) that their work challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C46",
+      "C97",
+      "C98",
+      "C109",
+      "C124",
+      "C125",
+      "C129"
+    ],
+    "result": "Supporting claims citing prior work: the hyperactive PBP2(L61R) mutant increases active Rod complexes and causes more/shorter MreB filaments; Ursell et al. observed MreB exclusion from positive Gaussian curvature and enrichment at negative curvature; persistent rotational motion can explain bending-induced MreB enrichment; RodZ-PBP2 interactions have been previously observed; PBP2 activates RodA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite and represent prior published work. They are used to support interpretations of the current findings or to establish context. The citations appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "RodZ depletion led to a reduction of the bound fraction of PBP2, suggesting that RodZ directly modulates PBP2 binding or the stability of the bound form of PBP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by the depletion experiments shown in Figure 5C and the rapid kinetics shown in Figure 5\u2014figure supplement 2F. The inference that RodZ 'directly' modulates binding is reasonable given the rapid effect, though the molecular mechanism is not determined. The claim appropriately uses 'suggesting' to indicate this is an interpretation.",
+    "result_type": "MINOR"
+  }
+]

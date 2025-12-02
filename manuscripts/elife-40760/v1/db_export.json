@@ -1,0 +1,2113 @@
+{
+  "submission": {
+    "id": "378495b1-f4d5-4227-8b02-f2bfef78bc07",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:42:49.074593Z",
+    "updated_at": "2025-12-02T08:42:49.074593Z"
+  },
+  "content": [
+    {
+      "id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "submission_id": "378495b1-f4d5-4227-8b02-f2bfef78bc07",
+      "content_type": "manuscript",
+      "content_text": "# Mismatch repair-signature mutations activate gene enhancers across human colorectal cancer epigenomes\n\n## Authors\n\n- Stevephen Hung<sup>1</sup> ([ORCID: 0000-0001-7067-9125](https://orcid.org/0000-0001-7067-9125))\n- Alina Saiakhova<sup>1</sup>\n- Zachary J Faber<sup>1</sup>\n- Cynthia F Bartels<sup>1</sup> ([ORCID: 0000-0001-8790-4288](https://orcid.org/0000-0001-8790-4288))\n- Devin Neu<sup>1</sup>\n- Ian Bayles<sup>1</sup>\n- Evelyn Ojo<sup>2</sup>\n- Ellen S Hong<sup>1</sup>\n- W Dean Pontius<sup>3</sup> ([ORCID: 0000-0002-3883-0048](https://orcid.org/0000-0002-3883-0048))\n- Andrew R Morton<sup>1</sup>\n- Ruifu Liu<sup>2</sup>\n- Matthew F Kalady<sup>3</sup> ([ORCID: 0000-0002-2114-114X](https://orcid.org/0000-0002-2114-114X))\n- David N Wald<sup>2</sup>\n- Sanford Markowitz<sup>1</sup>\n- Peter C Scacheri<sup>1</sup> ([ORCID: 0000-0002-7629-918X](https://orcid.org/0000-0002-7629-918X)) \u2020\n\n### Affiliations\n\n1. Department of Genetics and Genome Sciences Case Western Reserve University Cleveland United States\n2. Department of Pathology Case Western Reserve University Cleveland United States\n3. Department of Molecular Medicine, Lerner Research Institute Cleveland Clinic Cleveland United States\n4. Department of Cancer Biology, Lerner Research Institute Cleveland Clinic Cleveland United States\n5. Department of Colorectal Surgery, Digestive Disease and Surgery Institute Cleveland Clinic Cleveland United States\n6. Case Comprehensive Cancer Center Case Western Reserve University Cleveland United States\n7. Department of Medicine Case Western Reserve University Cleveland United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCommonly-mutated genes have been found for many cancers, but less is known about mutations in cis-regulatory elements. We leverage gains in tumor-specific enhancer activity, coupled with allele-biased mutation detection from H3K27ac ChIP-seq data, to pinpoint potential enhancer-activating mutations in colorectal cancer (CRC). Analysis of a genetically-diverse cohort of CRC specimens revealed that microsatellite instable (MSI) samples have a high indel rate within active enhancers. Enhancers with indels show evidence of positive selection, increased target gene expression, and a subset is highly recurrent. The indels affect short homopolymer tracts of A/T and increase affinity for FOX transcription factors. We further demonstrate that signature mismatch-repair (MMR) mutations activate enhancers using a xenograft tumor metastasis model, where mutations are induced naturally via CRISPR/Cas9 inactivation of MLH1 prior to tumor cell injection. Our results suggest that MMR signature mutations activate enhancers in CRC tumor epigenomes to provide a selective advantage.\n\n## Introduction\n\nIn the past decade, tumor sequencing efforts by TCGA, ICGC, and others have identified the most frequently mutated driver genes in most common forms of cancer\u00a0(Lawrence et al., 2014; Kandoth et al., 2013). Outside protein-coding genes, mutations in non-coding regions that disrupt enhancer-gene control are emerging as a major mechanism of cancer development. Examples include large chromosomal rearrangements that hijack enhancers to oncogenes, such as the Burkitt lymphoma translocation that repositions IgH enhancers upstream of MYC (Battey et al., 1983). Copy number alterations can amplify enhancer sequences near oncogenes. Deletions can remove boundaries between enhancers and proto-oncogenes, and inversions can flip enhancers to proto-oncogenes (Zhang et al., 2016; Beroukhim et al., 2016; Hnisz et al., 2016). Besides large structural variants that rewire gene-enhancer interactions, small-scale mutations that lie within regulatory elements and alter their activity can occur. The first discovered were recurrent point mutations in the TERT promoter in melanoma and other cancers\u00a0(Huang et al., 2013). Other examples include an indel in T-ALL that creates a super-enhancer that drives overexpression of the TAL1 oncogene (Mansour et al., 2014), and recurrent enhancer substitutions and indels that affect the expression of PAX5 in CLL (Puente et al., 2015). The discovery of these driver events has motivated searches for additional enhancer mutations in other common cancers, but so far their prevalence and relevance to the cancer phenotype remain largely undetermined.\n\nThe identification of functional enhancer mutations is challenging due to several confounding factors. First, mutation rates vary considerably between different tumor types and even among tumors of the same subtype. Second, tumor epigenomes are heterogeneous and mutation rates are profoundly influenced by chromatin states, with euchromatic, early-replicating regions showing a low mutation rate relative to heterochromatic, late-replicating regions (Schuster-B\u00f6ckler and Lehner, 2012; Polak et al., 2015). Given the variation, the conventional approach of overlaying mutations detected through tumor sequencing with a \u2018reference\u2019 epigenome is suboptimal. Strategies that facilitate simultaneous capture of both sequence content and regulatory activity are more suitable. Third and perhaps most importantly, for many cancers the cell type of origin is unknown or unavailable for epigenomic studies. The lack of the normal comparator makes it difficult to assess whether a putative mutation influenced the activity of the regulatory element relative to the normal cell from which the tumor was derived.\n\nThrough ChIP-seq analysis of enhancer histone marks (H3K4me1 and H3K27ac), we previously compared the enhancer epigenomes of a genetically-diverse cohort of human CRC models to normal colonic crypts, the cell type of origin for CRC. We identified Variant Enhancer Loci (VELs) as sites that differed in the levels of H3K4me1 and H3K27ac between normal crypts and CRC (Akhtar-Zaidi et al., 2012; Cohen et al., 2017). Here, we pinpoint functional enhancer mutations in VELs directly from H3K27ac ChIP-seq data, using the logic that a DNA variant in an enhancer with higher H3K27ac levels in CRC than normal may have contributed to the activation of that \u2018gained\u2019 enhancer. Our analysis shows that CRC samples with underlying deficiencies in mismatch\u00a0repair harbor an exceptionally high indel rate in gained enhancers compared to their already high background mutation rate. We provide evidence that these non-coding mutations, previously presumed to be passengers, are functional.\n\n## Results\n\n### Identification of putative enhancer activating indels\n\nWe looked for candidate mutations that augment enhancer activity by identifying somatic mutations in regions with elevated levels of H3K27ac in CRC relative to normal colon (Figure 1a). A key step in the analysis is identifying instances of allele bias, where H3K27ac ChIP-seq read depth is higher on the allele containing the mutation than on the reference allele. We further eliminate mutations that are not predictive of gained H3K27ac enrichment (i.e., the mutation occurs in a cell line with the gained enhancer, but not in other cell lines with that same enhancer), as these are likely passenger events. We focused on indels because they have previously been shown to stimulate enhancer activation through de novo creation of transcription factor binding sites (Mansour et al., 2014). Using H3K27ac ChIP-seq data from 24 cell lines derived from all clinical stages of CRC, we detected a total of 355 candidate enhancer-activating indels (example shown in Figure 1b). H3K27ac and H3K4me1 levels were highly enriched at the candidate enhancer-activating indels relative to these sites in normal colon (Figure 1\u2014figure supplement 1a\u2013b). Eighty five percent were located distal (>5 kb) to transcription start sites (Figure 1c), 76% overlapped H3K4me1 peaks, and 73% were located\u00a0<1 kb from a DNase\u00a0I hypersensitive site. Nineteen out of 20 indels detected through our analysis pipeline were validated through Sanger sequencing, indicating high specificity of our method (Figure 1\u2014figure supplement 2a\u2013b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40760/elife-40760-fig1-v1.jpg)\n\n**Figure 1.:** (A) Overview of approach. (B) (left) Genome Browser snapshot of a putative enhancer-activating indel detected at a CRC-specific H3K27ac peak. Y-axis scales are all 0 to 25. (right) H3K27ac ChIP-seq reads covering indel locus. (C) Distribution of CRC-specific H3K27ac peaks containing indels relative to transcription start sites. (D) Number of gained enhancer-associated indels with and without allele bias detected in each CRC cell line. Enhancer mutations are provided in Figure 1\u2014source data 1. (E) (left) Distribution of indel lengths detected in gained enhancers in MSI and MSS CRC samples. Pie chart shows the fraction of indels detected in homopolymers. (right) Number of insertion (blue) and deletion (red) mutations in homopolymers of T, G, C, or A in MSI cell lines.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40760/elife-40760-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Aggregate plot of H3K27ac signal in MSI lines harboring putative enhancer-activating indels and in normal crypt cells. (B) Same, but plotting the H3K4me1 signal.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40760/elife-40760-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Example of a gained enhancer indel confirmed by Sanger sequencing. (top) Genome Browser snapshot of a putative enhancer-activating indel detected in HCT-116 cells. (bottom) Sanger traces of the locus and zoomed in view of the peak for HCT-116 cells, and two non-indel cell lines (LoVo and V457). Y-axis scales are all 0 to 24. (B) Fraction of enhancer indels (19/20) validated by Sanger sequencing. (C) (left) Number of enhancer indels detected in four primary tumors. Pie chart shows fraction of indels detected in the CRC_6A sample that lie in homopolymers (17/20, or 85%). (right) Number of indels in homopolymers of A,C,G, or T in the CRC_6A sample.\n\nAn analysis of the distribution of enhancer indel mutations across the full CRC cohort revealed two main classes, stratified by microsatellite stability (Figure 1d, Figure 1\u2014source data 1). Microsatellite stable (MSS) samples harbored a lower enhancer mutation rate than MSI samples, which are deficient in mismatch repair (MMR) genes: MLH1, MSH2, and PMS2. The enhancer indels in MSI samples were predominantly short (1\u20132 bp) contractions of homopolymer runs of T\u2019s and A\u2019s (Figure 1e), the classic mutational signature found in coding regions of MSI tumors (Ionov et al., 1993; Kim et al., 2013). As expected, MLH1 and MSH2 -deficient cell lines also showed higher indel rates than PMS2 -deficient cells (Baross-Francis et al., 2001; Hegan et al., 2006). To further test the relevance of these findings, we analyzed H3K27ac ChIP-seq data from four primary tumors (Cohen et al., 2017) of unknown microsatellite status. One of the four samples showed an elevated enhancer mutation rate and the signature MSI mutation of poly A/T homopolymers (Figure 1\u2014figure supplement 2c). This was subsequently identified as the only MSI sample in the group, obtained from a Lynch syndrome patient. The results indicate that enhancer mutations are prevalent in MSI-forms of CRC, and they show the same MMR signature as coding regions. The presence of enhancer mutations in both cell lines and primary tumors rules out an in vitro-specific mechanism of enhancer activation.\n\n### MSI enhancer mutations show evidence of positive selection\n\nSimilar to previous studies correlating point mutation rates with active histones (Makova and Hardison, 2015; Kim et al., 2013), indel mutation rate and H3K27ac levels were anti-correlated in MSS CRC (Pearson r 95% CI [\u22120.63,\u20130.59]). In contrast, there was no overall correlation between indel rate and H3K27ac levels in the MSI samples (Pearson r 95% CI [\u22120.020, 0.031]) (Figure 2a, Figure 2\u2014figure supplement 1a\u2013b, Figure 2\u2014source data 1), with both H3K27ac-enriched and depleted regions showing a mutation rate 68 times higher than in MSS CRC. This result is consistent with previous studies indicating that open regions of chromatin are no longer protected upon loss of MMR (Supek and Lehner, 2015). This raises the question whether gained enhancers in MSI CRC are a target for mutation simply because they lie in open chromatin, or if the mutations are truly functional. We reasoned that if the indels activate enhancers, then gained enhancers should show a higher proportion of allele-biased indels compared to enhancers that are already open, i.e, enhancers shared between CRC and normal crypt. In all 5 MSI samples, the proportion of allele-biased gained enhancers was higher than that of shared enhancers (Figure 2b). Even after controlling for enhancer length and H3K27ac signal intensity, gained enhancers were more likely to contain allele-biased indels than shared enhancers (Figure 2c, Figure 2\u2014source data 2), indicating positive selection of the gained enhancers with indels.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40760/elife-40760-fig2-v1.jpg)\n\n**Figure 2.:** (A) MSS (top) and MSI (bottom) mutations (red) are overlaid on H3K27ac profiles (blue) of representative MSS (V410) and MSI (HCT-116) lines in 0.2 Mb bins on chromosome 14. Median mutation rates are shown next to left Y axis. The H3K27ac signal is inverted to better show anti-correlation. Pearson correlation values are shown. (B) Proportion of gained enhancers (black) and enhancers shared with normal crypt (grey) with at least one allele-biased indel. *p<1e-10, Z-test for two proportions. (C) Rate of allele-biased indels in gained (red) and shared (blue) enhancers, as a function of H3K27ac signal. **, p<1e-10; *p<0.05, t-test (Figure 2\u2014source data 1).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40760/elife-40760-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) MSS mutations (red) overlaid on H3K27ac profiles (blue) of representative MSS (V410) line in bins of 0.5 Mb, for chromosomes 1\u201322 and X. Ninety-five percent confidence intervals for Pearson correlation coefficient are reported. (B) Same, but for MSI mutations overlaid on HCT-116 H3K27ac. See Figure 2\u2014source data 1.\n\n### MSI enhancer mutations increase expression of their predicted gene targets\n\nWe next tested the effect of the indels in gained enhancers on target gene expression. To isolate the effect of the indel from that of the gained enhancer, we retrieved genes associated with gained enhancer indels, and compared their expression in cell lines with both the indel and the gained enhancer to that of cell lines with only the gained enhancer. Genes regulated by gained enhancers containing indels were more highly expressed than those same genes regulated by gained enhancers containing the wildtype sequence (Figure 3a, Figure 3\u2014source data 1). We further verified that this expression difference was unlikely to be due to differences in the levels of H3K27ac between the two test groups (Figure 3\u2014figure supplement 1a,\u00a0Figure 3\u2014source data 2). Gene Ontology terms significantly enriched among indel-associated genes included tissue development and embryogenesis, regulation of biosynthesis, and cell proliferation (Figure 3b). Collectively, the results suggest that the MSI enhancer indels lead to increased expression of target genes, several of which function in cell growth and early development and may therefore enhance fitness or contribute to changes in cell state.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40760/elife-40760-fig3-v1.jpg)\n\n**Figure 3.:** (A) Mean fold-change of expression (CRC/crypts) of genes associated with gained enhancers containing indels (grey; n\u00a0=\u00a0352 sample-gene pairs) versus the same genes in cell lines with gained enhancers but lacking indels (black; n\u00a0=\u00a02384 sample-gene pairs). *p<0.01, 2-sample t-test (Figure 3\u2014source data 1). (B) Enriched GO terms associated with enhancer indel genes. (C) (black) Distribution of number of TCGA samples with recurrent indel and (grey) average recurrence distribution from random sampling of TCGA indels (p<0.05, \u03c72 test). Listed genes have indels recurrent in three or more TCGA samples. Pie chart shows fraction of enhancer indels that are recurrent in at least one primary CRC tumor (Figure 3\u2014source data 2). (D) Enriched GO terms associated with recurrent enhancer indel genes. (E). Distribution of dependency scores in HCT-116 cells for all expressed genes (grey; n\u00a0=\u00a013,584), indel genes (red; n\u00a0=\u00a0100), recurrent indel genes (dotted-red; n\u00a0=\u00a017), and recurrent indel genes with \u2018Cell Proliferation\u2019 annotation (dotted-blue; n\u00a0=\u00a05). *p<0.05 for \u2018Cell Proliferation\u2019 recurrent indel gene versus all expressed genes, Wilcox ranksum test. (F) Genes ranked by dependency scores, showing select oncogenes (black circles), and recurrent indel genes with (red circles) and without (blue circles) enhancer mutation in HCT-116 cells. Data for recurrent indel genes shown in \u2018C\u2019 (USP8, AP4E1, MRPS22) were not available.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40760/elife-40760-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0Mean fold-change of expression (CRC/crypts) of genes corresponding to all gained enhancers containing indels (n\u00a0=\u00a010,971 gene-sample pairs; grey), versus the same genes in cell lines with gained enhancers but lacking indels (n\u00a0=\u00a058,412 gene-sample pairs; black). *p<0.05, 2-sample t-test.\u00a0(B) Rate of substitutions and indels detected in cohort of 50 primary CRC samples, ordered by total mutation rate. (C) Proportion of gained enhancers (black) and enhancers shared with normal crypt (grey) with at least one indel recurrent in primary CRC tumors. *p<0.05, Z-test of proportions. (D) Distribution of dependency scores for UBE2V2 in MSI lines (red) compared to all other lines (grey), from the DepMap CRISPR-knockout screen. Black dot indicates score for LoVo cell line. P value is from 2-sample t-test.\n\n### MSI enhancer mutations are recurrent\n\nTo test if any of the enhancer mutations were recurrent, we analyzed whole genome sequence data from 47 primary CRC samples (TCGA), 3 CRC cell lines (in house), and their matched normal DNAs. In total, we detected 1,111,539 somatic substitutions and 374,859 indels in the tumor enhancerome. Mutation rates in the enhancerome were similar to those reported for the exome\u00a0(Lawrence et al., 2014), with a clear separation of hypermutator and non-hypermutator samples (Figure 3\u2014figure supplement 1b). Of the 16 hypermutated samples, 10 had MMR-mutational signatures and were designated MSI, and six had POLE-mutational signatures\u00a0(Alexandrov et al., 2013). Thirteen percent (46/355) of enhancer indels detected in the CRC cell lines were found to be recurrent in at least one of the 50 WGS samples. Fifteen indels were significantly recurrent in two or more primary CRC samples (Figure 3c, Figure 3\u2014source data 1). The recurrent indels were found predominantly in MSI samples, and also occasionally in MSS samples with elevated mutation rates, suggesting that enhancer activation by indels occurs whenever a sufficiently high mutation rate is reached. Furthermore, consistent with their positive selection, recurrent indels occurred more frequently in gained enhancers than in enhancers shared between tumor and normal crypts (Figure 3\u2014figure supplement 1c). Genes associated with the most recurrent indels (3\u20134 of 50 samples) include UBE2V2, a ubiquitin-conjugating enzyme linked to chemoresistance (Santarpia et al., 2013), USP8, a deubiquitinase linked to EGFR signaling (Kim et al., 2017), and COPB2, a vesicle coating protein linked to regulation of cell proliferation and apoptosis (Mi et al., 2016) (Figure 3c). The top-enriched GO terms for recurrent enhancer indel genes reflect known cancer hallmarks, including cell proliferation, signal transduction, and cell communication (Figure 3d).\n\nWe next leveraged data from gene-knockdown studies from the DepMap project to test if the recurrent enhancer genes affect cell viability. As a set, these genes were not significantly enriched for dependency genes (p=0.15). However, among the set, genes associated with the GO term \u2018cell proliferation\u2019 showed significantly lower fitness scores than all expressed genes, indicating that these genes enhance cell viability (p=0.046; Figure 3e). Moreover, COPB2, associated with an enhancer mutation in HCT116 cells that is recurrent in three primary CRC tumors, was a dependency gene in these cells (Figure 3f). Another recurrent indel gene, UBE2V2, scored as a CRC-specific dependency gene specifically in MSI tumors and not in MSS tumors (Figure 3\u2014figure supplement 1d). Together, the data indicate that recurrent enhancer indels likely promote fitness by enhancing cell growth or other processes that confer a selective advantage. We suspect this selective advantage arises over time, as somatic mutations accumulate in the tumor cells due to MMR-deficiency.\n\n### MSI enhancer mutations recruit FOX transcription factors\n\nWe set out to identify transcription factors recruited to the indels and potentially responsible for enhancer activation. DNA motif scanning tools revealed forkhead (FOX) sites as most enriched at indels in gained enhancers (Table 1). FOX are known pioneer transcription factors in many cell types (Ang et al., 1993; Lupien et al., 2008; Iwafuchi-Doi et al., 2016), and are associated with enhancer re-programming (Pomerantz et al., 2015; Roe et al., 2007). FOX also scored as the top hit among factors predicted to bind with higher affinity to the indel than the wildtype sequence (Figure 4a\u2013b, Figure 4\u2014source data 1) and was the second most enriched motif (behind CPEB) in the recurrent indels detected in the TCGA CRC cohort. Through integrative analyses of available FOX ChIP-seq datasets (Yan et al., 2013) with H3K27ac ChIP-seq data from LoVo cells, we determined that 83% (64/77) of gained enhancer indels show evidence of FOX enrichment by ChIP-seq. An example of an indel locus enriched for both FOXA2 and FOXO3 is shown in Figure 4c. Moreover, at the majority of FOX peaks with sufficient coverage at the indel to assess allelic imbalance, FOX ChIP reads support allele-specific FOX binding (Figure 4d).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40760/elife-40760-fig4-v1.jpg)\n\n**Figure 4.:** (A) Examples of FOX motifs at MSI indels, with change in affinity scores. (B) Fraction of indels predicted to increase transcription factor affinity by TF family, supported by one (black) or multiple (red) computational programs. (Figure 4\u2014source data 1). (C) Genome Browser snapshot of MSI enhancer indel overlapping FOXA2 and FOXO3 peaks in LoVo cells. Motif of FOXA2 generated by DeepBind, which predicts increased binding of FOXA2 to the indel alelle, is shown. (D) (left) Fraction of LoVo enhancer indels overlapping a FOX factor peak. (right) Fraction of indels in FOX factor peaks and with\u00a0>3 FOX ChIP read coverage showing allele-bias. (E) Motifs of FOX factors expressed in MSI lines and predicted to bind preferentially to indel alleles. (F) Number of gained enhancers at TGTTT(Tn) motif in MSI versus MSS lines. *p<0.05, Wilcox ranksum test.\n\n**Table 1.**\n Top motifs enriched at indels.The logo displayed is for representative factors from each TF family (FOXC1, IRF1, SOX2, SP1, and EGR1). The total number of indels is 355.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>TF (% of indels)</th>\n      <th>Motifs</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>FOX (20%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>IRF (4%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SOX (4%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SP (4%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>EGR (3%)</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nWe examined the consensus motifs of FOX TFs expressed in MSI samples. The motifs are all A/T-rich sequences that closely resemble the ones most frequently mutated in MMR-deficient tumors. All share a core \u2018TGTTT\u2019 within the consensus motif (Figure 4e, underlined). We hypothesized that if gained enhancers in MSI lines are formed by MMR-signature mutations that instigate FOX recruitment, then MSI samples should contain a higher frequency of gained enhancers at TGTTT(Tn) sequences than MSS samples. We retrieved all TGTTT(Tn) sequences across the genome and queried for gained H3K27ac enrichment. Strikingly, this unbiased analysis revealed that MSI samples had 50% more gained enhancers at TGTTT(Tn) sequences than MSS samples (Figure 4f). These observations indicate that gained enhancers arise more frequently at the sequences most prone to mutation as a result of MMR-deficiency. Coupled with the finding that these sites closely resemble the consensus motifs of FOX factors, the computational prediction that the indels increase FOX affinity, and the ChIP-seq results indicating allele-biased FOX binding to the indels, these observations suggest FOX factors mediate enhancer activation at the indels. However, given the degenerate nature of the FOX consensus motifs, additional studies are needed to determine the specific FOX factors responsible for enhancer activation, if they act in cooperation with other factors, and if there is intertumor heterogeneity.\n\n### Induction of MSI phenotype yields enhancer mutations\n\nTo functionally test if mutations resulting from MMR deficiency can activate enhancers, we set out to introduce signature MMR mutations in CRC cells in a manner that recapitulates the natural way in which these mutations arise in MSI tumors. If they are indeed functional, introduction of the indels should lead to enhancer activation in combination with a bias in the H3K27ac ChIP-seq signal. We used CRISPR/Cas9 to knockout the MLH1 gene in Colo-205, a microsatellite stable CRC cell line (workflow summarized in Figure 5a). Homozygous MLH1 knockout was confirmed by sequencing and western blot (Figure 5b). Following 2.5 months of cell culture, subcloning, and expansion, several MLH1-/- clones tested positive by PCR assay for the MSI phenotype (Figure 5c). Two MLH1-/- and two parental wildtype clones were selected for H3K27ac ChIP-seq analysis. Applying our analysis pipeline, we uncovered enhancer indels matching the MMR-associated signature observed in the MSI lines of our panel, namely a high indel rate affecting homopolymers (10x the rate in the WT clones), a bias for short, 1\u20132 bp deletions, and a bias for poly-(A/T) tracts (Figure 5d, Figure 5\u2014source data 1). Most indels in the MLH1-/- cells (1087/1413, or 77%) arose in H3K27ac peaks that were already present at similar levels in parental wildtype clones. This was not unexpected, and likely reflects the switch from low to high mutation rate in open chromatin upon loss of MMR function, as observed previously in Figure 2a. We identified 30 indels in enhancers that showed a 1.5 fold or greater increase in the H3K27ac signal in MLH1-/- cells compared to parental wildtype cells (Figure 5e shows an example). We compared the percentage of mutant-allele reads at the gained enhancer indels to that of the shared enhancer indels. Strikingly, the gained enhancer indels were more often allele-biased (Figure 5f) suggesting the basis of enhancer activation was acquisition of the indel. We further note that the frequency of indel-gained enhancer events detected in this experiment is likely to be lower than in naturally-derived MSI tumors, since the CRISPR-engineered cells spent a limited time in culture and were grown under conditions that do not recapitulate selective pressures of the tumor microenvironment.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40760/elife-40760-fig5-v1.jpg)\n\n**Figure 5.:** (A) Overview of MSI induction experiment. (B) CRISPR-mediated knockout of MLH1. Mutations highlighted in orange. (bottom) Western blot analysis of MLH1 in MLH1 wildtype and mutant clones. Beta-actin is shown as a loading control. (C) PCR assay of five MSI markers in MLH1+/+ and MLH1-/- clones. (D) Distribution of enhancer indel lengths. Pie chart represents fraction of indels affecting homopolymers. (right) Count of homopolymer insertion (blue) and deletion (red) mutations by mononucleotide repeat. (E) Genome browser snapshot of indel (red bar) associated with increase in H3K27ac signal. Y-axis scales are all 0 to 90. (F) Mutant allele fraction at indels in shared and gained H3K27ac peaks. (top) Density of H3K27ac signal fold change (MLH1-/-/MLH1+/+) for shared (blue) and gained (red) peaks in MLH1-/- cells, relative to MLH1+/+ cells. (bottom) Dot plot of the mutant allele fraction for indels in shared (n\u00a0=\u00a01087) and gained (n\u00a0=\u00a030) peaks. *p<0.001, Wilcox ranksum test (Figure 5\u2014source data 1).\n\n### MSI enhancer indels are propagated in tumors\n\nTo test if loss of MLH1 induces indels that activate enhancers in vivo, we introduced MLH1 knockout (clone 6e6-3) and wildtype (clone 1f12-2) cells into mice via intrasplenic injection (workflow is summarized in Figure 6a). In this assay, tumor cells typically form clonal liver metastases, but are also known to form peritoneal tumors (Lee et al., 2014). To simulate different micro-environmental pressures, we used two mouse strains (nude and NSG) with different levels of immune competence. Three months post-injection, five liver tumors were harvested from mice seeded with MLH1-/- cells (four tumors from one nude mouse and one tumor from one NSG mouse). Two peritoneal tumors were harvested from one NSG mouse injected with MLH1+/+ cells. We then performed H3K27ac ChIP-seq profiling of all seven tumors. Unsupervised cluster analysis of the enhancer landscapes separated MLH1+/+ from MLH1-/- tumors, and there was remarkable consistency among tumors with matched genotypes (Figure 6b). Analysis of the mutations detected from H3K27ac ChIP-seq of the MLH1-/- tumors again revealed predominantly small 1\u20132 bp deletions in mononucleotide tracts of A/T repeats (Figure 6c, Figure 6\u2014source data 1). We also noted a shift in the proportion of non-homopolymer mutations, including indels in larger tandem repeats and in non-tandem repeat regions. In each MLH1-/- tumor, 5\u201310% of the indels were located in enhancers that showed 1.5 fold or greater increase in the H3K27ac signal relative to MLH1+/+ tumors. Consistent with an enhancer-activating role, indels in gained peaks again showed higher mutant allele fractions compared to indels in H3K27ac peaks already present at similar levels in the parental cells (Figure 6c, bottom). To account for potential site-specific differences, we looked not only for enhancer activating mutations in liver tumors versus the peritoneal tumors, but also between individual liver tumors. We identified 31 indels in MLH1-/- tumors that showed a perfect correlation with an increase in H3K27ac (see Figure 6d for examples). Strikingly, these indels also showed high mutant allele fractions (Figure 6e). Interestingly, amongst the predicted target genes of the gained enhancer indels, OGDH was found as an MSI CRC-specific dependency gene. Together, these data provide further functional support that MSI signature mutations activate enhancers in vivo.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/40760/elife-40760-fig6-v1.jpg)\n\n**Figure 6.:** (A) Overview of mouse tumor formation assay. (B) Heatmap of R2 values from Pearson correlation of H3K27ac signal at enhancers. (C) (top) Pie charts show distribution of types of mutations (mono-, di-, tri-nucleotide or higher, and non-short tandem repeat). (2nd row) Histogram of indel sizes. (3rd row) Bar plots of homopolymer indel frequency by mononucleotide repeat. (bottom) Boxplots of the mutant allele fraction distribution for indels in gained peaks and peaks shared with wildtype tumors. *p<0.001, Wilcox ranksum test. (D) Genome Browser snapshots of indels (red bars) detected in MLH1-/- tumors and associated with increased H3K27ac signal (left, Y-axis scales are all 0\u2013156; right, Y-axis scales are all 0\u201395). (E) Dot plot of the mutant allele fraction for homopolymer indels in shared (n\u00a0=\u00a0894) peaks and those correlating with gained H3K27ac enrichment (n\u00a0=\u00a031). *p<0.001, Wilcox ranksum test. See Figure 6\u2014source data 1.\n\n## Discussion\n\nThe search for functional mutations in non-coding regions of tumor genomes is an area of intense investigation. Beyond those affecting TERT, ER, FOXA1 and others, regulatory mutations are presumed rare and many are considered passengers (Fredriksson et al., 2014; Cuykendall et al., 2017). Consistent with this supposition, the majority of samples in our CRC cohort showed a low enhancer mutation rate. However, a clear exception are CRC tumors whose mutation rates across the genome are extraordinarily high, like the MSI subtype. In MSI CRC samples, we detected a large number of indel mutations that correlate with higher levels of H3K27ac in tumor cells relative to normal colon cells. In addition to showing allele-bias, several lines of evidence indicate these indels functionally activate enhancers and are not merely random passengers. First, they show signatures of positive selection. Second, their target genes, in addition to being enriched for cancer-related functions, are more highly expressed when both the gained enhancer and indel are present compared to when only the gained enhancer is present. Third, a higher-than-expected number of the enhancer indels are recurrent across primary CRC tumor samples. Fourth, the indels are predicted to enhance FOX binding and an unbiased genome-wide scan of the core FOX motif sequence TGTTT(Tn) showed 50% more gained H3K27ac signals at this motif in MSI samples than MSS samples. Lastly, introduction of the indels via CRISPR-Cas9 inactivation of MLH1 - thereby mimicking the natural way in which these mutations occur - led to allele-biased enhancer activation and selection of enhancers both in cell culture and in full blown tumors, suggesting that the basis of enhancer activation in these cells was acquisition of the mutation. Based on these findings, we conclude that in CRC, deficiencies in mismatch repair lead to the appearance of indels that are recognized by FOX factors, which turn these sites into functional cis-regulatory elements. It has long been established that signature MMR-mutations, when they arise in coding regions, can impact gene splicing or shift the reading frame. Indel mutations that induce a frameshift in TGFBR2 are a notable example (Markowitz et al., 1995). Our studies here expand the repertoire of functional MSI-type mutations to non-coding regions, and offer a new strategy for identifying functional mutations in regulatory elements.\n\nThere are notable differences between the functional regulatory mutations described here and those previously linked to TERT, ER, TAL1, MYC, and FOXA1. The latter are considered tumor-initiating events and activate bona fide drivers of oncogenesis. In contrast, most of the enhancer mutations reported here are a consequence of MMR-inactivation and confer a fitness advantage beyond that conferred by mutations in the canonical CRC driver genes. In support of this model, several of the genes with mutated enhancers are modest dependency genes linked to proliferative functions. The key finding is that the prevalence of these mutations in MSI CRC is especially high, suggesting that their cumulative effect on growth is substantial. Given their prevalence and widespread effects on gene expression, MSI enhancer mutations could be considered \u2018reprogrammers\u2019 of cell identity. We further note, given that MSI is a continuously evolving phenotype, that enhancer mutations due to MMR-deficiencies could play an important role in tumor evolution and the emergence of drug resistance. Furthermore, as the MSI subset of CRC is a particularly good candidate for immunotherapy, it would be worth investigating if enhancer mutations instigate expression of PD-1 pathway genes or neoantigen-producing genes that contribute to tumor immunogenicity and may therefore be exploited for refining response prediction.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>LoVo</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0399</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>Colo-205</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0218</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>6d10-1</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Derived from Colo-205. These cells were CRISPR-edited to knock out MLH1 (to get MLH1-/- cells), cultured for 2.5 months, then subcloned.</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>6e6-3</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Derived from Colo-205. These cells were CRISPR-edited to knock out MLH1 (to get MLH1-/- cells), cultured for 2.5 months, then subcloned.</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>1e2-3</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Derived from Colo-205. These cells were from the same nucleofected pool as MLH1-ko clones but were not edited (are MLH1+/+ cells), cultured for 2.5 months, then subcloned.</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>1f12-2</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Derived from Colo-205. These cells were from the same nucleofected pool as MLH1-ko clones but were not edited (are MLH1+/+ cells), cultured for 2.5 months, then subcloned.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-MLH1 (mouse monoclonal)</td>\n      <td>BD Pharmingen</td>\n      <td>RRID:AB_394040</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-beta actin (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>RRID:AB_2305186</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-rabbit IgG (H\u00a0+\u00a0L) (goat polyclonal)</td>\n      <td>ThermoFisher</td>\n      <td>RRID:AB_228341</td>\n      <td>(1:20000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-H3K27ac (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>RRID:AB_2118291</td>\n      <td>(1:50)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>indel calling pipeline</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Stores scripts used to call indel mutations from H3K27ac ChIP-seq data. Available at https://github.com/scacherilab/indel_calling_pipeline (Saiakhova, 2019; copy archived at https://github.com/elifesciences-publications/indel_calling_pipeline).</td>\n    </tr>\n  </tbody>\n</table>\n\n### ChIP-seq\n\nH3K27ac and H3K4me1 ChIP-seq datasets from CRC cell lines and primary tumors are previously described in our previous publications (Cohen et al., 2017; Akhtar-Zaidi et al., 2012) and available in GEO (Accession numbers GSE36401 and GSE77737). H3K27ac ChIP-seq was performed on LoVo, Colo-205, and MLH1-/- Colo-205 cells as previously described. ChIP data processing, alignment, peak-calling, and identification of differentially enriched-peaks relative to normal colonic crypts were done as previously described.\n\n### Detection of enhancer mutations\n\nH3K27ac ChIP seq reads were aligned to the human genome (hg19) with Bowtie2. Reads were realigned around regions with evidence of indels (>1 indel supporting read) using GATK v.2\u20132-gec30cee. A custom FASTA file was created incorporating the candidate indel sequences and their flanking regions such that the length of the flanking region equals the length of the longest aligned read. Any read that aligned perfectly to both reference and custom indel genomes was discarded. Samtools 1.2 was used to generate a multi-way pileup output file for each filtered BAM. Indels were called using VarScan.v2.4.0 from the pileup output, requiring at least 10X coverage and 20% of reads supporting the indel. To exclude possible germline variants, indels matching dbSNPs from the 1000 Genomes Project and/or SNP142 indels were filtered out.\n\nCandidate enhancer-activating mutations were prioritized based on whether they correlate with gained H3K27ac enrichment. Binary matrices of indels and RPKM matrices were constructed for all H3K27ac peaks. A peak was reported as correlating with an indel if the following conditions were met:\n\nIndels were filtered if they overlapped artifact regions in the consensus Blacklist (https://sites.google.com/site/anshulkundaje/projects/blacklists). An empirical approach was used to identify indel calls that are likely alignment errors. For each indel, the sequence 50 bp upstream and downstream was aligned to the human genome (Blat, from UCSC Genome Browser). The reference allele was replaced with the indel allele, to simulate the alignment of indel-supporting ChIP reads. Indels whose second-highest alignment score was\u00a0>50 indicated potential alignment error and were discarded.\n\nIndels with imbalanced read distributions favoring the indel allele were prioritized, as this suggests a scenario whereby the enhancer signal and indel co-occur on the same allele. Bias in the number of reads supporting the mutation was quantified by the complement of the cumulative binomial distribution (upper-tail), with a probability of success of 0.5. Multiple test correction was performed using the Benjamini-Hochberg method controlling the FDR at 0.2.\n\n### Correlation of H3K27ac enrichment and indel rate\n\nChromosome 14 was split into 537 bins of 200 kb. For each bin, the median H3K27ac signal from the V410 or HCT-116 bigWig was retrieved. Indel calls from either MSS samples or MSI samples in the TCGA cohort were pooled and indels were counted in each bin. The H3K27ac signal and indel rate were quantile-normalized and smoothed. This analysis was repeated for chromosomes 1 through 22 and chromosome X using 0.5 Mb genomic bins, to obtain genome-wide correlations of H3K27ac and mutation density. For comparisons of the indel rate in gained and shared enhancers, the indel rate was defined as the number of indels divided by the length of the enhancer peak, and plotted as a function of the peak\u2019s median H3K27ac bigWig signal. Regression analysis using a generalized linear model (binomial distribution) was performed to get the significance of gained enhancer status as a predictor for indel rate.\n\n### Prediction of indel gained enhancer gene targets\n\nGREAT (version 3.3.0) was used to pair gene targets with enhancers at each locus (\u2018basal plus extension\u2019 setting), and to get the distance to the nearest transcription start site. For each predicted target gene, the (quantile-normalized) expression from microarray data was retrieved for the line harboring the indel gained enhancer, and lines harboring gained enhancers without indels at the locus. Fold change relative to the median expression of that gene in five normal crypt lines was calculated. Enriched gene ontology terms were obtained by inputting (expressed) GREAT genes to the GSEA web tool to compute overlap with the \u2018C5\u2019, or GO gene sets in the MSigDB database. Data from gene knock-down studies in HCT-116 cells were downloaded from the DepMap project data portal (McFarland et al., 2018).\n\n### Mutation calling from TCGA COAD and in-house WGS data\n\nWhole genome sequence reads aligned to GRCh37 (.bam files) of tumor and normal matched pairs were downloaded from the Cancer Genomics Hub (UCSC) using the GeneTorrent tool, and re-processed according to GATK best practices. First, base quality scores were reverted (Picard v.1.104 RevertSam), but duplicate and alignment information was retained. Next, the alignment of reads around indels was redone and then base quality scores were re-calibrated using GATK IndelRealinger and BaseRecalibrator (version 3.2\u20132-gec30cee), respectively. Somatic substitutions and indels were called using two mutation callers, MuTect2 (v3.5\u20130-g3628e4) and Varscan2 (v2.3.9) using default settings, and the intersection of the calls was used for further analysis. Variants in common dbSNP and in 1000 Genomes were filtered out as likely germline events. Significance of the recurrence distribution was determined by randomly picking indels (same number as actual recurrent indel set) from the binary matrix and finding the average recurrence distribution of those random indels.\n\n### Transcription factor motif analysis\n\nTen (non-homopolymer) base pairs of the reference genome (hg19) upstream and downstream of the indel were retrieved and used to flank either the reference allele or the indel allele. Both indel and reference sequences were input to three computational programs which score the affinity of their interaction with transcription factors: Deepbind (Alipanahi et al., 2015), FIMO (Grant et al., 2011) with the HOCOMOCO v.10 motif database, and Footprint (Sebastian and Contreras-Moreira, 2014), with the Human-TF v2.0 (Jolma et al., 2015) motif database. For each program, a \u2018binding score\u2019 was retrieved for each TF-sequence pair, and compared between reference and indel alleles. A prediction of increased binding was counted if binding scoreindel\u00a0>binding scorereference and the predicted TF is expressed in the cell line harboring the indel. TF predictions were collapsed by TF family. Unless otherwise noted, logos were created from HOCOMOCO v.10 PWM\u2019s. FOX ChIP-seq data from the LoVo cell line (Yan et al., 2013) was downloaded (GEO GSE51142). Reads were re-aligned to the human reference genome (hg19) using Bowtie2 to generate BAM files. Peaks were called using macs1.4. Reads at indel loci were retrieved using samtools view command. To calculate allele bias, indels with coverage of 4 or more FOX ChIP-seq reads were selected, and the complement of the cumulative binomial distribution, with a probability of success of 0.5, was used. A false discovery rate of 0.2 was used, such that tests with p-value<0.11 were deemed significant.\n\n### CRISPR-mediated MLH1-knockout in Colo-205 cells\n\nMLH1 knockout was performed in collaboration with the Genome Engineering and iPSC Center (GEiC) at Washington University. Guide RNAs were designed to target a conserved exon (exon 12) of the MLH1 gene. The gRNAs and Cas9 were nucleofected into Colo-205 (MSS) cells, and then individual lines were subcloned. CRISPR-induced indels were verified by targeted NGS. WT controls were unmodified clones from the same nucleofected pool of cells.\n\n### Cell culture\n\nMLH1 knockout and parental WT lines were cultured for 2.5 months in RPMI-1640 media supplemented with 10% fetal bovine serum (ThermoFisher 11875093) to accumulate mutations. Monoclonal cells were then derived by limiting dilution, assayed for instability at MSI markers, and then expanded for 3\u20134 weeks before using in H3K27ac ChIP-seq experiment. Cell lines were checked for mycoplasma contamination and found to be negative.\n\n### PCR assay for microsatellite instability\n\nGenomic DNA was extracted and PCR-amplified at five MSI markers (Buhard et al., 2004; Buhard et al., 2006). PCR primers are from Buhard et al. (2006), with one primer in each pair labeled with a fluorescent dye for combined analysis. PCR products were run on a Genetic Analyzer ABI 3730 to produce fragment profiles, which were visualized using Peak Scanner version 1.0 (ThermoFisher).\n\n### Mice\n\nTwo 6 week old female Nod-Scid IL-2Rg\u2212/\u2212 (NSG) mice and two nude mice were each injected intra-splenically with 106 (6e6-3 cells or 1f12-2) cells. After 3 months, mice were sacrificed. Tumors were harvested and homogenized for H3K27ac ChIP-seq experiment. All mouse experiments were done according to Institutional Animal Care and Use Committees (IACUC) guidelines.\n",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "3a57a4ce-850f-459f-9f28-abfce3a2fff3",
+      "submission_id": "378495b1-f4d5-4227-8b02-f2bfef78bc07",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thomas R Gingeras, Cold Spring Harbor Laboratory United States\n\nReviewers:\n- Charles Y Lin, Baylor College of Medicine United States\n\n## Review text\n\nDOI: [10.7554/eLife.40760.031](https://doi.org/10.7554/eLife.40760.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mismatch-repair signature mutations activate gene enhancers across colorectal cancer epigenomes\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aviv Regev as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Charles Y Lin (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nStudies of mutations in regulatory regions in cancer have lagged substantially behind those of coding mutations, due to both limited ability to interpret them, and lack of consensus in the field regarding their importance (\"driver\" vs. \"passenger\"). The manuscript describes new computational and experimental methods for the analysis of mutation at cis-regulatory regions, including analytical tools and the generation of engineered cell lines for the investigation of MMR on establishing enhancer indels. Combined, these resources are valuable tools to understand the role of non-coding region mutations on oncogenesis.\n\nIn application to colorectal cancer, the authors show that microsatellite instable (MSI) tumors have a higher rate of enhancer indels leading to gain of enhancer function and that gained enhancers undergo positive selection. The authors\u2019 schema to identify gained enhancers using allelic imbalance and presence only in CRC specific gained enhancers validates well by sanger sequencing. They present an overall model where defects in mismatch repair (MMR) lead to widespread indels at both open and closed regions of chromatin. Gained enhancers show evidence of positive selection as indicated by maintained allelic imbalance, increased expression of putative target genes. The authors conclude with a thought provoking finding that \"in CRC, deficiencies in mismatch repair lead to the appearance of indels that are recognized by FOX factors, which turn these sites into functional-regulatory elements\".\n\nEssential revisions:\n\nThe study claims are provocative and interesting, and the methods are important resources for studying regulatory mutations. However, as explained in these major comments, the authors did not provide definitive evidence for these claims, and several analyses and explanations are required in the revision to assess enhancer activity, gene regulation and TF binding prior to publication at eLife.\n\n1) Strengthening of the oncogenic role of the phenomenon.\n\nIt is logical to assume that any enhancer activating the expression of an oncogene will undergo positive selection and also be considered an oncogenic event. Although the authors clearly demonstrate the positive selection aspect, we would like them to consider ways to bolster the oncogenic part of the argument.\n\n\u2022 Do recurrent indels actually confer an oncogenic advantage? Is there any evidence of recurrent indels at the pathway level (indels at different loci, but converging on the same pathways)?\n\n\u2022 Are genes associated with recurrent indels more likely to be tumor dependencies than non-recurrent genes? For example, in the Dependency Map data, USP8 seems to be a good dependency, but MSX2 is not.\n\n\u2022 If data is available, is there any evidence of recurrent indels undergoing clonal selection?\n\n\u2022 If most indels are potentially regulated by FOX TFs, would it be reasonable to hypothesize that MSI CRCs are more susceptible to KD of FOX TFs than MSS CRCs? Such a result would go a long way to supporting the claim that \"While some of the enhancer indel targets could be oncogenes, most are genes with cancer-related functions that likely provide a selective growth advantage.\"\n\nWe appreciate that some of these queries would be more straightforward to address than others, but expect the authors to address at least some, which can be answered with existing data.\n\n2) More comprehensive demonstration of the statistical associations.\n\nIn two key places the authors make statements about association (or lack thereof) to chromatin state, but either do not show the data or choose a partial view:\n\n\u2022 The authors mentioned that enhancer regions overlapped with a large percentage of H3K4me1 ChIP-seq, but the data has not been shown. The authors should add the data supporting for this claim.\n\n\u2022 On Figure 2A, the authors claimed that there were no associations between mutation rate and H3K27ac regions in MSI samples. Given that the image on Figure 2A shows the distribution of H3K27ac peaks and mutations specific to chromosome 14, the authors' conclusion would be better supported with a genome-wide association analysis of H3K27ac levels and indels. This should be readily rectified.\n\n3) Explanation of the analysis of tumors from mice from different locations.\n\nIn Figure 6, the authors injected CRISPR-Cas9 induced MMR CRC cells, and control parental lines, into the portal vein of mice to allow for tumor development and downstream epigenomic/genomic analysis. The authors described that CRISPR-Cas9 induced MMR CRC tumors were harvested from liver, while control parental tumors were harvested from peritoneum. However the authors did not justify why tumors at different locations were chosen for the analysis. In addition, the authors did not investigate possible changes on liver tumor development or tumor histology that could indicate changes to oncogenesis induced by increased enhance activity or mutations. A more in depth analysis of these points could provide further support to the authors final hypothesis.\n",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0c65782d-98d2-47b8-afeb-332a648c58c7",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C1",
+      "claim": "Microsatellite instable (MSI) colorectal cancer samples have a high indel rate within active enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of a genetically-diverse cohort of CRC specimens revealed that microsatellite instable (MSI) samples have a high indel rate within active enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding based on analysis of CRC specimens.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "166cbd2c-4bcf-4259-b1c8-7d3020f047a5",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C2",
+      "claim": "Enhancers with indels show evidence of positive selection in MSI colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancers with indels show evidence of positive selection, increased target gene expression, and a subset is highly recurrent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "7f305432-f097-48fe-9e38-6fcc2af6b545",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C3",
+      "claim": "Enhancers with indels show increased target gene expression in MSI colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancers with indels show evidence of positive selection, increased target gene expression, and a subset is highly recurrent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "5773eade-1293-440f-88b6-24d3b138dabb",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C4",
+      "claim": "A subset of enhancer indels is highly recurrent in MSI colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancers with indels show evidence of positive selection, increased target gene expression, and a subset is highly recurrent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "770f0305-2e06-4d89-a6ec-2164b3539bb4",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C5",
+      "claim": "The indels in MSI colorectal cancer enhancers affect short homopolymer tracts of A/T.",
+      "claim_type": "EXPLICIT",
+      "source": "The indels affect short homopolymer tracts of A/T and increase affinity for FOX transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this characteristic of the indels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "de5b2b8c-3670-4e5e-a8f0-7eacb3f7cddb",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C6",
+      "claim": "The indels in MSI colorectal cancer enhancers increase affinity for FOX transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The indels affect short homopolymer tracts of A/T and increase affinity for FOX transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "8dcd678b-1ec9-41c8-a9db-6a525fe340ff",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C7",
+      "claim": "Signature mismatch-repair (MMR) mutations activate enhancers in a xenograft tumor metastasis model.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that signature mismatch-repair (MMR) mutations activate enhancers using a xenograft tumor metastasis model, where mutations are induced naturally via CRISPR/Cas9 inactivation of MLH1 prior to tumor cell injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding from the xenograft model experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "45e1e516-1385-4585-a4a2-225c921b9e33",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C8",
+      "claim": "MMR signature mutations activate enhancers in CRC tumor epigenomes to provide a selective advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that MMR signature mutations activate enhancers in CRC tumor epigenomes to provide a selective advantage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "234d0195-c820-4ecc-84d3-d12ee18732f0",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C9",
+      "claim": "TCGA, ICGC, and others have identified the most frequently mutated driver genes in most common forms of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past decade, tumor sequencing efforts by TCGA, ICGC, and others have identified the most frequently mutated driver genes in most common forms of cancer (Lawrence et al., 2014; Kandoth et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Lawrence et al., 2014 and Kandoth et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "b38df7b5-0528-460d-8e65-050285207ea4",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C10",
+      "claim": "Mutations in non-coding regions that disrupt enhancer-gene control are emerging as a major mechanism of cancer development.",
+      "claim_type": "EXPLICIT",
+      "source": "Outside protein-coding genes, mutations in non-coding regions that disrupt enhancer-gene control are emerging as a major mechanism of cancer development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established trend in the field, supported by subsequent examples.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "6277589d-7f6f-4c7e-9eeb-47813b08ea57",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C11",
+      "claim": "The Burkitt lymphoma translocation repositions IgH enhancers upstream of MYC.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples include large chromosomal rearrangements that hijack enhancers to oncogenes, such as the Burkitt lymphoma translocation that repositions IgH enhancers upstream of MYC (Battey et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Battey et al., 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "aafe52ba-e92c-4f3f-a7ee-9797a9693603",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C12",
+      "claim": "Copy number alterations can amplify enhancer sequences near oncogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Copy number alterations can amplify enhancer sequences near oncogenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known mechanism in cancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "e234f68c-f019-4a92-812c-9fa2fbb3ed4c",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C13",
+      "claim": "Deletions can remove boundaries between enhancers and proto-oncogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletions can remove boundaries between enhancers and proto-oncogenes, and inversions can flip enhancers to proto-oncogenes (Zhang et al., 2016; Beroukhim et al., 2016; Hnisz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zhang et al., 2016; Beroukhim et al., 2016; Hnisz et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "0a019839-7e1b-4712-b141-0385f1a429ec",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C14",
+      "claim": "Inversions can flip enhancers to proto-oncogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletions can remove boundaries between enhancers and proto-oncogenes, and inversions can flip enhancers to proto-oncogenes (Zhang et al., 2016; Beroukhim et al., 2016; Hnisz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zhang et al., 2016; Beroukhim et al., 2016; Hnisz et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "f093dd1d-22bc-41ad-b580-9c2109b72ab6",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C15",
+      "claim": "Recurrent point mutations in the TERT promoter occur in melanoma and other cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The first discovered were recurrent point mutations in the TERT promoter in melanoma and other cancers (Huang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Huang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "365c7071-47a1-4e7f-8e12-fa1e6ec71f7d",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C16",
+      "claim": "An indel in T-ALL creates a super-enhancer that drives overexpression of the TAL1 oncogene.",
+      "claim_type": "EXPLICIT",
+      "source": "Other examples include an indel in T-ALL that creates a super-enhancer that drives overexpression of the TAL1 oncogene (Mansour et al., 2014), and recurrent enhancer substitutions and indels that affect the expression of PAX5 in CLL (Puente et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mansour et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "23bf8fce-4991-4cfc-9361-b9de85dff201",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C17",
+      "claim": "Recurrent enhancer substitutions and indels affect the expression of PAX5 in CLL.",
+      "claim_type": "EXPLICIT",
+      "source": "Other examples include an indel in T-ALL that creates a super-enhancer that drives overexpression of the TAL1 oncogene (Mansour et al., 2014), and recurrent enhancer substitutions and indels that affect the expression of PAX5 in CLL (Puente et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Puente et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "4b5983d2-ca7f-4740-9c1f-ff22aeb39f45",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C18",
+      "claim": "The prevalence and relevance of enhancer mutations to the cancer phenotype remain largely undetermined.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of these driver events has motivated searches for additional enhancer mutations in other common cancers, but so far their prevalence and relevance to the cancer phenotype remain largely undetermined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "3904d00d-759d-4f12-a53b-2e49ab0e66a0",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C19",
+      "claim": "Mutation rates vary considerably between different tumor types and even among tumors of the same subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "First, mutation rates vary considerably between different tumor types and even among tumors of the same subtype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known challenge in identifying functional enhancer mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "226b9a36-7cfe-4046-856f-36685b2dadc9",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C20",
+      "claim": "Tumor epigenomes are heterogeneous and mutation rates are profoundly influenced by chromatin states.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, tumor epigenomes are heterogeneous and mutation rates are profoundly influenced by chromatin states, with euchromatic, early-replicating regions showing a low mutation rate relative to heterochromatic, late-replicating regions (Schuster-B\u00f6ckler and Lehner, 2012; Polak et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schuster-B\u00f6ckler and Lehner, 2012; Polak et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "a79c2753-e096-45d2-929d-05f01c9dbd48",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C21",
+      "claim": "Euchromatic, early-replicating regions show a low mutation rate relative to heterochromatic, late-replicating regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, tumor epigenomes are heterogeneous and mutation rates are profoundly influenced by chromatin states, with euchromatic, early-replicating regions showing a low mutation rate relative to heterochromatic, late-replicating regions (Schuster-B\u00f6ckler and Lehner, 2012; Polak et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schuster-B\u00f6ckler and Lehner, 2012; Polak et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "c3ca4672-d357-4c5d-9f98-76c7a94dff23",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C22",
+      "claim": "The conventional approach of overlaying mutations detected through tumor sequencing with a 'reference' epigenome is suboptimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the variation, the conventional approach of overlaying mutations detected through tumor sequencing with a 'reference' epigenome is suboptimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on the heterogeneity of tumor epigenomes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "74808184-23a2-48a5-8d36-b640bc895bd9",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C23",
+      "claim": "For many cancers the cell type of origin is unknown or unavailable for epigenomic studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Third and perhaps most importantly, for many cancers the cell type of origin is unknown or unavailable for epigenomic studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known challenge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "ed4f8dfb-5487-4e62-869e-3e618935529f",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C24",
+      "claim": "Variant Enhancer Loci (VELs) are sites that differ in the levels of H3K4me1 and H3K27ac between normal crypts and CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified Variant Enhancer Loci (VELs) as sites that differed in the levels of H3K4me1 and H3K27ac between normal crypts and CRC (Akhtar-Zaidi et al., 2012; Cohen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by the authors (Akhtar-Zaidi et al., 2012; Cohen et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "26f9e01c-81cf-4d94-86e3-1f1eab9b1f62",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C25",
+      "claim": "A total of 355 candidate enhancer-activating indels were detected using H3K27ac ChIP-seq data from 24 cell lines derived from all clinical stages of CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Using H3K27ac ChIP-seq data from 24 cell lines derived from all clinical stages of CRC, we detected a total of 355 candidate enhancer-activating indels (example shown in Figure 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the number of indels detected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "b60160d1-3218-4eb4-aacd-6e8317849702",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C26",
+      "claim": "H3K27ac and H3K4me1 levels were highly enriched at the candidate enhancer-activating indels relative to these sites in normal colon.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K27ac and H3K4me1 levels were highly enriched at the candidate enhancer-activating indels relative to these sites in normal colon (Figure 1\u2014figure supplement 1a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 1\u2014figure supplement 1a\u2013b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "99fa67d1-a485-4f72-a0d0-b4581c969967",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C27",
+      "claim": "Eighty five percent of candidate enhancer-activating indels were located distal (>5 kb) to transcription start sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighty five percent were located distal (>5 kb) to transcription start sites (Figure 1c), 76% overlapped H3K4me1 peaks, and 73% were located <1 kb from a DNase I hypersensitive site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "7d1e43d1-a78d-4c71-a831-fc74b268df16",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C28",
+      "claim": "76% of candidate enhancer-activating indels overlapped H3K4me1 peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighty five percent were located distal (>5 kb) to transcription start sites (Figure 1c), 76% overlapped H3K4me1 peaks, and 73% were located <1 kb from a DNase I hypersensitive site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the percentage of indels overlapping H3K4me1 peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "20b31efb-5603-4e95-8203-f79c85888e99",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C29",
+      "claim": "73% of candidate enhancer-activating indels were located <1 kb from a DNase I hypersensitive site.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighty five percent were located distal (>5 kb) to transcription start sites (Figure 1c), 76% overlapped H3K4me1 peaks, and 73% were located <1 kb from a DNase I hypersensitive site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the percentage of indels near DNase I hypersensitive sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "5319f52c-894e-45cf-a7be-f78a0aa9656f",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C30",
+      "claim": "Nineteen out of 20 indels detected through the analysis pipeline were validated through Sanger sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Nineteen out of 20 indels detected through our analysis pipeline were validated through Sanger sequencing, indicating high specificity of our method (Figure 1\u2014figure supplement 2a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 1\u2014figure supplement 2a\u2013b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "b8f9bdd7-c3cd-441f-b0d3-8b83ec3ff643",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C31",
+      "claim": "The enhancer indels in MSI samples were predominantly short (1\u20132 bp) contractions of homopolymer runs of T's and A's.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhancer indels in MSI samples were predominantly short (1\u20132 bp) contractions of homopolymer runs of T's and A's (Figure 1e), the classic mutational signature found in coding regions of MSI tumors (Ionov et al., 1993; Kim et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 1e and citations to Ionov et al., 1993; Kim et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "abe26c0d-1e6d-4e15-a453-7f67fabdd64d",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C32",
+      "claim": "MLH1 and MSH2-deficient cell lines showed higher indel rates than PMS2-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, MLH1 and MSH2 -deficient cell lines also showed higher indel rates than PMS2 -deficient cells (Baross-Francis et al., 2001; Hegan et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citations to Baross-Francis et al., 2001; Hegan et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "063239c4-9d51-46ca-b8a7-d21eb0e00971",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C33",
+      "claim": "One of four primary tumors analyzed showed an elevated enhancer mutation rate and the signature MSI mutation of poly A/T homopolymers.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the four samples showed an elevated enhancer mutation rate and the signature MSI mutation of poly A/T homopolymers (Figure 1\u2014figure supplement 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 1\u2014figure supplement 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "29d2e10f-920f-4d63-85a5-781bddf2d4e0",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C34",
+      "claim": "The primary tumor with elevated enhancer mutation rate was subsequently identified as the only MSI sample in the group, obtained from a Lynch syndrome patient.",
+      "claim_type": "EXPLICIT",
+      "source": "This was subsequently identified as the only MSI sample in the group, obtained from a Lynch syndrome patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the identity of the sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "18a5ddc9-c1b7-4cc1-9616-b4c928c58d4d",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C35",
+      "claim": "Enhancer mutations are prevalent in MSI-forms of CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that enhancer mutations are prevalent in MSI-forms of CRC, and they show the same MMR signature as coding regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the analysis of cell lines and primary tumors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "a4582411-ae30-4b34-aa03-6565f9620d7a",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C36",
+      "claim": "Enhancer mutations in MSI CRC show the same MMR signature as coding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that enhancer mutations are prevalent in MSI-forms of CRC, and they show the same MMR signature as coding regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "5d0debb0-8c41-4e36-ba5b-ace7fe829600",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C37",
+      "claim": "The presence of enhancer mutations in both cell lines and primary tumors rules out an in vitro-specific mechanism of enhancer activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of enhancer mutations in both cell lines and primary tumors rules out an in vitro-specific mechanism of enhancer activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the observation of mutations in both cell lines and primary tumors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "e271acb1-ec2c-4240-8966-b59fcae387cc",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C38",
+      "claim": "Indel mutation rate and H3K27ac levels were anti-correlated in MSS CRC (Pearson r 95% CI [\u22120.63,\u20130.59]).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to previous studies correlating point mutation rates with active histones (Makova and Hardison, 2015; Kim et al., 2013), indel mutation rate and H3K27ac levels were anti-correlated in MSS CRC (Pearson r 95% CI [\u22120.63,\u20130.59]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a specific correlation coefficient and supported by citations to Makova and Hardison, 2015; Kim et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "e8728ca6-07d1-439d-bb1e-30058e555d89",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C39",
+      "claim": "There was no overall correlation between indel rate and H3K27ac levels in the MSI samples (Pearson r 95% CI [\u22120.020, 0.031]).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there was no overall correlation between indel rate and H3K27ac levels in the MSI samples (Pearson r 95% CI [\u22120.020, 0.031]) (Figure 2a, Figure 2\u2014figure supplement 1a\u2013b, Figure 2\u2014source data 1), with both H3K27ac-enriched and depleted regions showing a mutation rate 68 times higher than in MSS CRC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with a specific correlation coefficient and supported by reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "692a7ce1-4f3e-495c-92f0-708a9105d897",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C40",
+      "claim": "Both H3K27ac-enriched and depleted regions in MSI samples show a mutation rate 68 times higher than in MSS CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there was no overall correlation between indel rate and H3K27ac levels in the MSI samples (Pearson r 95% CI [\u22120.020, 0.031]) (Figure 2a, Figure 2\u2014figure supplement 1a\u2013b, Figure 2\u2014source data 1), with both H3K27ac-enriched and depleted regions showing a mutation rate 68 times higher than in MSS CRC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the mutation rate difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "d315d14c-1dad-49cc-a8c8-4fa80dfdb18e",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C41",
+      "claim": "Open regions of chromatin are no longer protected upon loss of MMR.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with previous studies indicating that open regions of chromatin are no longer protected upon loss of MMR (Supek and Lehner, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Supek and Lehner, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "179a3b6e-a57c-4ecb-b1c4-01be6bf27e10",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C42",
+      "claim": "In all 5 MSI samples, the proportion of allele-biased gained enhancers was higher than that of shared enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In all 5 MSI samples, the proportion of allele-biased gained enhancers was higher than that of shared enhancers (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "730a3131-edf9-4463-901f-c96658e5b56d",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C43",
+      "claim": "Even after controlling for enhancer length and H3K27ac signal intensity, gained enhancers were more likely to contain allele-biased indels than shared enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Even after controlling for enhancer length and H3K27ac signal intensity, gained enhancers were more likely to contain allele-biased indels than shared enhancers (Figure 2c, Figure 2\u2014source data 2), indicating positive selection of the gained enhancers with indels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "783fbe10-6ed6-43e5-b153-363dcbd06dbb",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C44",
+      "claim": "Genes regulated by gained enhancers containing indels were more highly expressed than those same genes regulated by gained enhancers containing the wildtype sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes regulated by gained enhancers containing indels were more highly expressed than those same genes regulated by gained enhancers containing the wildtype sequence (Figure 3a, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "a65c8f1d-786f-46ad-a8dd-e4061497e103",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C45",
+      "claim": "Gene Ontology terms significantly enriched among indel-associated genes included tissue development and embryogenesis, regulation of biosynthesis, and cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology terms significantly enriched among indel-associated genes included tissue development and embryogenesis, regulation of biosynthesis, and cell proliferation (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "7854b6c5-4362-4787-8f33-250c6ee2f012",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C46",
+      "claim": "The MSI enhancer indels lead to increased expression of target genes, several of which function in cell growth and early development.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the results suggest that the MSI enhancer indels lead to increased expression of target genes, several of which function in cell growth and early development and may therefore enhance fitness or contribute to changes in cell state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the gene expression and GO term analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "856836e7-b5c5-4294-9106-0d201467e36f",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C47",
+      "claim": "In total, 1,111,539 somatic substitutions and 374,859 indels were detected in the tumor enhancerome from 47 primary CRC samples and 3 CRC cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we detected 1,111,539 somatic substitutions and 374,859 indels in the tumor enhancerome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the number of mutations detected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "8978a71c-808d-4301-a250-8cc99b53044d",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C48",
+      "claim": "Mutation rates in the enhancerome were similar to those reported for the exome.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation rates in the enhancerome were similar to those reported for the exome (Lawrence et al., 2014), with a clear separation of hypermutator and non-hypermutator samples (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by citation to Lawrence et al., 2014 and reference to Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "e520e5e0-260e-46b3-aa89-008e3b5c4290",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C49",
+      "claim": "Of the 16 hypermutated samples, 10 had MMR-mutational signatures and were designated MSI, and six had POLE-mutational signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 16 hypermutated samples, 10 had MMR-mutational signatures and were designated MSI, and six had POLE-mutational signatures (Alexandrov et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citation to Alexandrov et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "a44f0f12-b430-482a-894c-16193ec726b7",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C50",
+      "claim": "Thirteen percent (46/355) of enhancer indels detected in the CRC cell lines were found to be recurrent in at least one of the 50 WGS samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirteen percent (46/355) of enhancer indels detected in the CRC cell lines were found to be recurrent in at least one of the 50 WGS samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the recurrence rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "14fd0a66-d653-490f-bf2f-c94765b92afc",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C51",
+      "claim": "Fifteen indels were significantly recurrent in two or more primary CRC samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifteen indels were significantly recurrent in two or more primary CRC samples (Figure 3c, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "de633efe-ca57-44a1-8138-03b8d393366c",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C52",
+      "claim": "The recurrent indels were found predominantly in MSI samples, and also occasionally in MSS samples with elevated mutation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The recurrent indels were found predominantly in MSI samples, and also occasionally in MSS samples with elevated mutation rates, suggesting that enhancer activation by indels occurs whenever a sufficiently high mutation rate is reached.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as an observation from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "710f24ed-0aac-49bb-80d0-4cfc24e0904c",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C53",
+      "claim": "Recurrent indels occurred more frequently in gained enhancers than in enhancers shared between tumor and normal crypts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, consistent with their positive selection, recurrent indels occurred more frequently in gained enhancers than in enhancers shared between tumor and normal crypts (Figure 3\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 3\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "4b5674b8-bc4b-4f34-9ed1-422f0dc11d8c",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C54",
+      "claim": "Genes associated with the most recurrent indels (3\u20134 of 50 samples) include UBE2V2, USP8, and COPB2.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes associated with the most recurrent indels (3\u20134 of 50 samples) include UBE2V2, a ubiquitin-conjugating enzyme linked to chemoresistance (Santarpia et al., 2013), USP8, a deubiquitinase linked to EGFR signaling (Kim et al., 2017), and COPB2, a vesicle coating protein linked to regulation of cell proliferation and apoptosis (Mi et al., 2016) (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by citations and reference to Figure 3c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "228283bc-1d5d-422c-b70b-0f698547d208",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C55",
+      "claim": "UBE2V2 is a ubiquitin-conjugating enzyme linked to chemoresistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes associated with the most recurrent indels (3\u20134 of 50 samples) include UBE2V2, a ubiquitin-conjugating enzyme linked to chemoresistance (Santarpia et al., 2013), USP8, a deubiquitinase linked to EGFR signaling (Kim et al., 2017), and COPB2, a vesicle coating protein linked to regulation of cell proliferation and apoptosis (Mi et al., 2016) (Figure 3c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Santarpia et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "aab90b90-b877-448a-9505-6fba656f24ef",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C56",
+      "claim": "USP8 is a deubiquitinase linked to EGFR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes associated with the most recurrent indels (3\u20134 of 50 samples) include UBE2V2, a ubiquitin-conjugating enzyme linked to chemoresistance (Santarpia et al., 2013), USP8, a deubiquitinase linked to EGFR signaling (Kim et al., 2017), and COPB2, a vesicle coating protein linked to regulation of cell proliferation and apoptosis (Mi et al., 2016) (Figure 3c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kim et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "241b4bd7-2e42-4ecb-acbb-31ee672dc124",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C57",
+      "claim": "COPB2 is a vesicle coating protein linked to regulation of cell proliferation and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes associated with the most recurrent indels (3\u20134 of 50 samples) include UBE2V2, a ubiquitin-conjugating enzyme linked to chemoresistance (Santarpia et al., 2013), USP8, a deubiquitinase linked to EGFR signaling (Kim et al., 2017), and COPB2, a vesicle coating protein linked to regulation of cell proliferation and apoptosis (Mi et al., 2016) (Figure 3c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mi et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "93275db1-593e-4c93-af18-51639ef93213",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C58",
+      "claim": "The top-enriched GO terms for recurrent enhancer indel genes reflect known cancer hallmarks, including cell proliferation, signal transduction, and cell communication.",
+      "claim_type": "EXPLICIT",
+      "source": "The top-enriched GO terms for recurrent enhancer indel genes reflect known cancer hallmarks, including cell proliferation, signal transduction, and cell communication (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "c30e83c3-e4ba-4742-9409-25f0d62c1ef1",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C59",
+      "claim": "Among recurrent enhancer indel genes, genes associated with the GO term 'cell proliferation' showed significantly lower fitness scores than all expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, among the set, genes associated with the GO term 'cell proliferation' showed significantly lower fitness scores than all expressed genes, indicating that these genes enhance cell viability (p=0.046; Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with a p-value and supported by reference to Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "a844cbd4-3478-4190-b561-df7a6e2843dc",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C60",
+      "claim": "COPB2, associated with an enhancer mutation in HCT116 cells that is recurrent in three primary CRC tumors, was a dependency gene in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, COPB2, associated with an enhancer mutation in HCT116 cells that is recurrent in three primary CRC tumors, was a dependency gene in these cells (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "8d2f601a-e648-420a-b2a1-300159941e51",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C61",
+      "claim": "UBE2V2 scored as a CRC-specific dependency gene specifically in MSI tumors and not in MSS tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Another recurrent indel gene, UBE2V2, scored as a CRC-specific dependency gene specifically in MSI tumors and not in MSS tumors (Figure 3\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 3\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "a910c851-52d7-4442-af9a-8275676517b3",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C62",
+      "claim": "Recurrent enhancer indels likely promote fitness by enhancing cell growth or other processes that confer a selective advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the data indicate that recurrent enhancer indels likely promote fitness by enhancing cell growth or other processes that confer a selective advantage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the dependency gene analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "40185a42-2617-4347-882d-657bc18ce862",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C63",
+      "claim": "DNA motif scanning tools revealed forkhead (FOX) sites as most enriched at indels in gained enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA motif scanning tools revealed forkhead (FOX) sites as most enriched at indels in gained enhancers (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "43e5c17e-b943-4042-adcb-c48acc9e605b",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C64",
+      "claim": "FOX are known pioneer transcription factors in many cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "FOX are known pioneer transcription factors in many cell types (Ang et al., 1993; Lupien et al., 2008; Iwafuchi-Doi et al., 2016), and are associated with enhancer re-programming (Pomerantz et al., 2015; Roe et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ang et al., 1993; Lupien et al., 2008; Iwafuchi-Doi et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "0d49cae9-3231-42c1-b7db-a498a23ce5b6",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C65",
+      "claim": "FOX are associated with enhancer re-programming.",
+      "claim_type": "EXPLICIT",
+      "source": "FOX are known pioneer transcription factors in many cell types (Ang et al., 1993; Lupien et al., 2008; Iwafuchi-Doi et al., 2016), and are associated with enhancer re-programming (Pomerantz et al., 2015; Roe et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pomerantz et al., 2015; Roe et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "5ae7ecb7-499c-4386-a33b-e3a2f3c9c98e",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C66",
+      "claim": "FOX scored as the top hit among factors predicted to bind with higher affinity to the indel than the wildtype sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "FOX also scored as the top hit among factors predicted to bind with higher affinity to the indel than the wildtype sequence (Figure 4a\u2013b, Figure 4\u2014source data 1) and was the second most enriched motif (behind CPEB) in the recurrent indels detected in the TCGA CRC cohort.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 4a\u2013b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "883a800e-f9ca-4e5f-860d-bb71a1e23d16",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C67",
+      "claim": "FOX was the second most enriched motif (behind CPEB) in the recurrent indels detected in the TCGA CRC cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "FOX also scored as the top hit among factors predicted to bind with higher affinity to the indel than the wildtype sequence (Figure 4a\u2013b, Figure 4\u2014source data 1) and was the second most enriched motif (behind CPEB) in the recurrent indels detected in the TCGA CRC cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "6e0ab4f8-9ece-4a38-9c86-616a376e20c3",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C68",
+      "claim": "83% (64/77) of gained enhancer indels show evidence of FOX enrichment by ChIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Through integrative analyses of available FOX ChIP-seq datasets (Yan et al., 2013) with H3K27ac ChIP-seq data from LoVo cells, we determined that 83% (64/77) of gained enhancer indels show evidence of FOX enrichment by ChIP-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citation to Yan et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "c16d1651-d531-4732-bd8c-221921422216",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C69",
+      "claim": "At the majority of FOX peaks with sufficient coverage at the indel to assess allelic imbalance, FOX ChIP reads support allele-specific FOX binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, at the majority of FOX peaks with sufficient coverage at the indel to assess allelic imbalance, FOX ChIP reads support allele-specific FOX binding (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "922ed469-40ca-4d0f-a9fc-9f431ff99716",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C70",
+      "claim": "The consensus motifs of FOX TFs expressed in MSI samples are all A/T-rich sequences that closely resemble the ones most frequently mutated in MMR-deficient tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the consensus motifs of FOX TFs expressed in MSI samples. The motifs are all A/T-rich sequences that closely resemble the ones most frequently mutated in MMR-deficient tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as an observation from the motif analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "00005751-617b-4cd3-b6d1-c22fea65e2e6",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C71",
+      "claim": "All FOX consensus motifs share a core 'TGTTT' within the consensus motif.",
+      "claim_type": "EXPLICIT",
+      "source": "All share a core 'TGTTT' within the consensus motif (Figure 4e, underlined).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "6b9540e6-662c-402e-8362-7e820621fadd",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C72",
+      "claim": "MSI samples had 50% more gained enhancers at TGTTT(Tn) sequences than MSS samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, this unbiased analysis revealed that MSI samples had 50% more gained enhancers at TGTTT(Tn) sequences than MSS samples (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "fa07eedf-3524-419f-9077-0fb369bcc73f",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C73",
+      "claim": "FOX factors mediate enhancer activation at the indels.",
+      "claim_type": "EXPLICIT",
+      "source": "Coupled with the finding that these sites closely resemble the consensus motifs of FOX factors, the computational prediction that the indels increase FOX affinity, and the ChIP-seq results indicating allele-biased FOX binding to the indels, these observations suggest FOX factors mediate enhancer activation at the indels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from multiple lines of evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "c2686e38-e9de-4ca2-bbb1-68daea8ce57e",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C74",
+      "claim": "CRISPR/Cas9 was used to knockout the MLH1 gene in Colo-205, a microsatellite stable CRC cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "We used CRISPR/Cas9 to knockout the MLH1 gene in Colo-205, a microsatellite stable CRC cell line (workflow summarized in Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "5af609b2-981a-47ce-8d07-29d805416ee1",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C75",
+      "claim": "Homozygous MLH1 knockout was confirmed by sequencing and western blot.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous MLH1 knockout was confirmed by sequencing and western blot (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "3dc38884-1970-41c8-b7bb-0931189f6adb",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C76",
+      "claim": "Following 2.5 months of cell culture, subcloning, and expansion, several MLH1-/- clones tested positive by PCR assay for the MSI phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Following 2.5 months of cell culture, subcloning, and expansion, several MLH1-/- clones tested positive by PCR assay for the MSI phenotype (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "6444978b-bcbf-4149-8531-4a5e3645e17e",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C77",
+      "claim": "Enhancer indels in MLH1-/- cells matched the MMR-associated signature observed in the MSI lines, namely a high indel rate affecting homopolymers (10x the rate in the WT clones), a bias for short, 1\u20132 bp deletions, and a bias for poly-(A/T) tracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying our analysis pipeline, we uncovered enhancer indels matching the MMR-associated signature observed in the MSI lines of our panel, namely a high indel rate affecting homopolymers (10x the rate in the WT clones), a bias for short, 1\u20132 bp deletions, and a bias for poly-(A/T) tracts (Figure 5d, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "b9595637-e60e-4f92-9490-6a518fde2b59",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C78",
+      "claim": "Most indels in the MLH1-/- cells (1087/1413, or 77%) arose in H3K27ac peaks that were already present at similar levels in parental wildtype clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Most indels in the MLH1-/- cells (1087/1413, or 77%) arose in H3K27ac peaks that were already present at similar levels in parental wildtype clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the percentage of indels in shared peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "6ee8fc13-3c9f-4874-9a46-740bba21509a",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C79",
+      "claim": "30 indels were identified in enhancers that showed a 1.5 fold or greater increase in the H3K27ac signal in MLH1-/- cells compared to parental wildtype cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 30 indels in enhancers that showed a 1.5 fold or greater increase in the H3K27ac signal in MLH1-/- cells compared to parental wildtype cells (Figure 5e shows an example).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "5b94076e-7c58-42e9-afda-d5d43cfa3162",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C80",
+      "claim": "The gained enhancer indels in MLH1-/- cells were more often allele-biased than shared enhancer indels.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the gained enhancer indels were more often allele-biased (Figure 5f) suggesting the basis of enhancer activation was acquisition of the indel.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "db18d68a-e2cd-494e-a060-852b965faaf3",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C81",
+      "claim": "The frequency of indel-gained enhancer events detected in the CRISPR-engineered cells is likely to be lower than in naturally-derived MSI tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "We further note that the frequency of indel-gained enhancer events detected in this experiment is likely to be lower than in naturally-derived MSI tumors, since the CRISPR-engineered cells spent a limited time in culture and were grown under conditions that do not recapitulate selective pressures of the tumor microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a caveat about the experimental conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "f37e7023-fdd4-4527-8de2-7a3332dddd0c",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C82",
+      "claim": "MLH1 knockout (clone 6e6-3) and wildtype (clone 1f12-2) cells were introduced into mice via intrasplenic injection.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if loss of MLH1 induces indels that activate enhancers in vivo, we introduced MLH1 knockout (clone 6e6-3) and wildtype (clone 1f12-2) cells into mice via intrasplenic injection (workflow is summarized in Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "a654480d-f666-461a-8c9d-79918e8bdf8f",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C83",
+      "claim": "Three months post-injection, five liver tumors were harvested from mice seeded with MLH1-/- cells (four tumors from one nude mouse and one tumor from one NSG mouse).",
+      "claim_type": "EXPLICIT",
+      "source": "Three months post-injection, five liver tumors were harvested from mice seeded with MLH1-/- cells (four tumors from one nude mouse and one tumor from one NSG mouse).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the number and source of tumors harvested.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "5f49397e-66af-4e6c-ade6-1726412a8947",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C84",
+      "claim": "Two peritoneal tumors were harvested from one NSG mouse injected with MLH1+/+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Two peritoneal tumors were harvested from one NSG mouse injected with MLH1+/+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the number and source of tumors harvested.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "22002e7d-b8d0-4843-8093-da9b19500508",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C85",
+      "claim": "Unsupervised cluster analysis of the enhancer landscapes separated MLH1+/+ from MLH1-/- tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupervised cluster analysis of the enhancer landscapes separated MLH1+/+ from MLH1-/- tumors, and there was remarkable consistency among tumors with matched genotypes (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "f4113151-d5a3-419f-b33f-f08c5472c298",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C86",
+      "claim": "Analysis of the mutations detected from H3K27ac ChIP-seq of the MLH1-/- tumors revealed predominantly small 1\u20132 bp deletions in mononucleotide tracts of A/T repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the mutations detected from H3K27ac ChIP-seq of the MLH1-/- tumors again revealed predominantly small 1\u20132 bp deletions in mononucleotide tracts of A/T repeats (Figure 6c, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "ad9ee165-e4e8-416c-a4a1-a03f7f188d4b",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C87",
+      "claim": "In each MLH1-/- tumor, 5\u201310% of the indels were located in enhancers that showed 1.5 fold or greater increase in the H3K27ac signal relative to MLH1+/+ tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "In each MLH1-/- tumor, 5\u201310% of the indels were located in enhancers that showed 1.5 fold or greater increase in the H3K27ac signal relative to MLH1+/+ tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the percentage of indels in gained enhancers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "13862189-47bd-4f86-8ab6-e9b8746d7cd7",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C88",
+      "claim": "Indels in gained peaks in MLH1-/- tumors showed higher mutant allele fractions compared to indels in H3K27ac peaks already present at similar levels in the parental cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with an enhancer-activating role, indels in gained peaks again showed higher mutant allele fractions compared to indels in H3K27ac peaks already present at similar levels in the parental cells (Figure 6c, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "6aec2491-b4a4-4b80-9525-0159d037d52b",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C89",
+      "claim": "31 indels were identified in MLH1-/- tumors that showed a perfect correlation with an increase in H3K27ac.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 31 indels in MLH1-/- tumors that showed a perfect correlation with an increase in H3K27ac (see Figure 6d for examples).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "183e047a-131b-4965-bb08-bdc3ecca5769",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C90",
+      "claim": "The 31 indels that showed a perfect correlation with an increase in H3K27ac also showed high mutant allele fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, these indels also showed high mutant allele fractions (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 6e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "a3d51204-1f8a-421e-a240-dbe4d17729cb",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C91",
+      "claim": "OGDH was found as an MSI CRC-specific dependency gene amongst the predicted target genes of the gained enhancer indels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, amongst the predicted target genes of the gained enhancer indels, OGDH was found as an MSI CRC-specific dependency gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "d61dc0d0-a4bd-4c40-b906-ee36c0f7e509",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C92",
+      "claim": "MSI signature mutations activate enhancers in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data provide further functional support that MSI signature mutations activate enhancers in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the mouse tumor experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "5ebbc578-17a7-4134-8e98-77ec30d4bac7",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C93",
+      "claim": "Beyond those affecting TERT, ER, FOXA1 and others, regulatory mutations are presumed rare and many are considered passengers.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond those affecting TERT, ER, FOXA1 and others, regulatory mutations are presumed rare and many are considered passengers (Fredriksson et al., 2014; Cuykendall et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fredriksson et al., 2014; Cuykendall et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "337fbf34-eaa8-42cb-ab1e-53452886a141",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C94",
+      "claim": "The majority of samples in the CRC cohort showed a low enhancer mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this supposition, the majority of samples in our CRC cohort showed a low enhancer mutation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "505bd017-cb04-40b1-9c29-5a02c68e7abd",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C95",
+      "claim": "In CRC, deficiencies in mismatch repair lead to the appearance of indels that are recognized by FOX factors, which turn these sites into functional cis-regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we conclude that in CRC, deficiencies in mismatch repair lead to the appearance of indels that are recognized by FOX factors, which turn these sites into functional cis-regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "e2c7ce86-343e-4725-a161-82fdae5b87be",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C96",
+      "claim": "Signature MMR-mutations, when they arise in coding regions, can impact gene splicing or shift the reading frame.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been established that signature MMR-mutations, when they arise in coding regions, can impact gene splicing or shift the reading frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "9c16aee0-46be-479a-98a2-86fd5b485008",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C97",
+      "claim": "Indel mutations that induce a frameshift in TGFBR2 are a notable example of functional MMR-mutations in coding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indel mutations that induce a frameshift in TGFBR2 are a notable example (Markowitz et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Markowitz et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "3452462d-ad90-4395-9c55-b3d2579dc7e2",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C98",
+      "claim": "The functional regulatory mutations described in this study are different from those previously linked to TERT, ER, TAL1, MYC, and FOXA1.",
+      "claim_type": "EXPLICIT",
+      "source": "There are notable differences between the functional regulatory mutations described here and those previously linked to TERT, ER, TAL1, MYC, and FOXA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to other known regulatory mutations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "c4635564-273b-445e-82e8-dbbb38bd2758",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C99",
+      "claim": "Regulatory mutations previously linked to TERT, ER, TAL1, MYC, and FOXA1 are considered tumor-initiating events and activate bona fide drivers of oncogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter are considered tumor-initiating events and activate bona fide drivers of oncogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of previously known regulatory mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "355ead73-4bdf-48b0-92e0-01e8abadbff7",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C100",
+      "claim": "Most of the enhancer mutations reported in this study are a consequence of MMR-inactivation and confer a fitness advantage beyond that conferred by mutations in the canonical CRC driver genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, most of the enhancer mutations reported here are a consequence of MMR-inactivation and confer a fitness advantage beyond that conferred by mutations in the canonical CRC driver genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "1a2e8f5a-37fc-4421-bdb1-ef0f65c8feaa",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C101",
+      "claim": "The prevalence of enhancer mutations in MSI CRC is especially high, suggesting that their cumulative effect on growth is substantial.",
+      "claim_type": "EXPLICIT",
+      "source": "The key finding is that the prevalence of these mutations in MSI CRC is especially high, suggesting that their cumulative effect on growth is substantial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding and conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "c0be4e9d-1236-4ecf-8abb-d35b12e86a01",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C102",
+      "claim": "Given their prevalence and widespread effects on gene expression, MSI enhancer mutations could be considered 'reprogrammers' of cell identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given their prevalence and widespread effects on gene expression, MSI enhancer mutations could be considered 'reprogrammers' of cell identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "79c311e6-1df1-406a-9487-e41131b8d557",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C103",
+      "claim": "MSI is a continuously evolving phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We further note, given that MSI is a continuously evolving phenotype, that enhancer mutations due to MMR-deficiencies could play an important role in tumor evolution and the emergence of drug resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of MSI.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "c7b14a38-f7d0-4068-999a-108ec9480f41",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C104",
+      "claim": "Enhancer mutations due to MMR-deficiencies could play an important role in tumor evolution and the emergence of drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "We further note, given that MSI is a continuously evolving phenotype, that enhancer mutations due to MMR-deficiencies could play an important role in tumor evolution and the emergence of drug resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "4ad5b5ac-ea24-4df4-811c-f3277a03f41c",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C105",
+      "claim": "The MSI subset of CRC is a particularly good candidate for immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as the MSI subset of CRC is a particularly good candidate for immunotherapy, it would be worth investigating if enhancer mutations instigate expression of PD-1 pathway genes or neoantigen-producing genes that contribute to tumor immunogenicity and may therefore be exploited for refining response prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "2fb5df15-35f8-407a-b106-03d2eebb46ca",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C106",
+      "claim": "It would be worth investigating if enhancer mutations instigate expression of PD-1 pathway genes or neoantigen-producing genes that contribute to tumor immunogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as the MSI subset of CRC is a particularly good candidate for immunotherapy, it would be worth investigating if enhancer mutations instigate expression of PD-1 pathway genes or neoantigen-producing genes that contribute to tumor immunogenicity and may therefore be exploited for refining response prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "834510a4-5b29-4c26-b19e-8c1cab2f7666",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C107",
+      "claim": "Microsatellite stable (MSS) samples harbored a lower enhancer mutation rate than MSI samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Microsatellite stable (MSS) samples harbored a lower enhancer mutation rate than MSI samples, which are deficient in mismatch repair (MMR) genes: MLH1, MSH2, and PMS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the analysis shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "9ebfc6e6-d117-4e15-8a15-df39444f1814",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C108",
+      "claim": "MSI samples are deficient in mismatch repair (MMR) genes: MLH1, MSH2, and PMS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Microsatellite stable (MSS) samples harbored a lower enhancer mutation rate than MSI samples, which are deficient in mismatch repair (MMR) genes: MLH1, MSH2, and PMS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of MSI samples.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "63dc7705-a464-42b2-be6e-269fe1d5ad70",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "claim_id": "C109",
+      "claim": "The classic mutational signature found in coding regions of MSI tumors is short (1\u20132 bp) contractions of homopolymer runs of T's and A's.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhancer indels in MSI samples were predominantly short (1\u20132 bp) contractions of homopolymer runs of T's and A's (Figure 1e), the classic mutational signature found in coding regions of MSI tumors (Ionov et al., 1993; Kim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ionov et al., 1993; Kim et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cab0aedd-42af-45bb-94f0-734ea60ad28e",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MSI colorectal cancer samples exhibit a high rate of indel mutations within active enhancers, characterized by short (1-2 bp) contractions of homopolymer runs of A/T. This finding was validated in both cell lines and primary tumors, with 355 candidate enhancer-activating indels detected from 24 CRC cell lines, 95% validation by Sanger sequencing, and confirmation in a Lynch syndrome patient tumor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C25-C37, and C107 collectively demonstrate that MSI CRC samples have elevated indel rates in enhancers with the characteristic MMR signature. The validation rate (C30: 19/20 by Sanger sequencing) indicates high specificity. The finding in both cell lines and primary tumors (C33-C34, C37) strengthens the conclusion that this is not an artifact of cell culture. The characterization of indel properties (C27-C29, C31) is well-supported by the data presented in Figure 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "641c92a1-c9a4-443d-b19e-a4abb5854305",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Enhancers with indels in MSI CRC show evidence of positive selection, as gained enhancers are significantly more likely to contain allele-biased indels compared to shared enhancers, even after controlling for enhancer length and H3K27ac signal intensity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C42, and C43 are supported by the data in Figure 2b-c showing that in all 5 MSI samples, gained enhancers had higher proportions of allele-biased indels than shared enhancers. The statistical control for confounding variables (enhancer length and H3K27ac intensity) in C43 strengthens the inference of positive selection. However, the manuscript does not provide explicit p-values for all comparisons, which would strengthen the statistical rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "4bd2809d-150b-467d-bf27-c5f25af5057e",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Enhancers with indels show increased target gene expression in MSI CRC. Genes regulated by gained enhancers containing indels were more highly expressed than the same genes regulated by gained enhancers without indels, with enrichment for GO terms related to tissue development, embryogenesis, and cell proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C44-C46 are supported by the expression analysis shown in Figure 3a-b. The comparison design (same genes in cells with vs. without indels) appropriately controls for baseline enhancer activity. The GO enrichment analysis (C45) provides biological context. However, the manuscript notes that H3K27ac levels were verified to be similar between comparison groups (Figure 3\u2014figure supplement 1a), which is important for interpretation but suggests the effect size may be modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "1e08f568-bfca-4439-8566-a018069ca8e4",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A subset of enhancer indels is highly recurrent across primary CRC tumors. Analysis of 50 whole-genome sequenced samples revealed that 13% (46/355) of cell line indels were recurrent in at least one primary tumor, with 15 indels significantly recurrent in two or more samples, occurring predominantly in MSI samples and more frequently in gained enhancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C47-C53 are well-supported by the WGS analysis of 47 primary CRC samples and 3 cell lines. The recurrence analysis (C50-C51) provides strong evidence for functional relevance, as random passenger mutations would not be expected to recur. The enrichment in gained enhancers (C53) further supports positive selection. The statistical significance of recurrence (C51) is stated but the specific test and p-values are not fully detailed in the text, though Figure 3c indicates \u03c7\u00b2 test with p<0.05.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "44225311-ebdf-4d76-974f-2b9593ddf036",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Recurrent enhancer indels are associated with genes that promote cell fitness and proliferation. The most recurrent indels target genes including UBE2V2, USP8, and COPB2, with GO enrichment for cancer hallmarks. Genes associated with 'cell proliferation' showed significantly lower fitness scores (p=0.046), and specific genes like COPB2 and UBE2V2 were identified as dependency genes in relevant cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C62 are supported by integration with DepMap dependency data. The p-value for cell proliferation genes (C59: p=0.046) is marginally significant and the manuscript notes that recurrent indel genes as a set were not significantly enriched for dependency genes (p=0.15). However, the specific examples of COPB2 (C60) and UBE2V2 (C61) as dependency genes, particularly the MSI-specific dependency of UBE2V2, provide compelling evidence for functional relevance of at least a subset of recurrent indels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "6a103df1-b0fc-4736-8f1c-db5b29318009",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The indels in MSI CRC enhancers affect short homopolymer tracts of A/T and increase affinity for FOX transcription factors. FOX motifs are most enriched at indels in gained enhancers, 83% of gained enhancer indels show FOX enrichment by ChIP-seq with evidence of allele-specific binding, and MSI samples have 50% more gained enhancers at TGTTT(Tn) sequences (the core FOX motif) than MSS samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C63-C73 are well-supported by multiple lines of computational and experimental evidence: motif enrichment analysis (C63, Table 1), computational prediction of increased FOX binding affinity (C66), FOX ChIP-seq showing 83% overlap and allele-specific binding (C68-C69), and the unbiased genome-wide analysis showing 50% more gained enhancers at FOX motif sequences in MSI vs MSS (C72). The convergence of these independent analyses strongly supports the conclusion that FOX factors mediate enhancer activation (C73).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "95845bb2-90c5-4a0d-b7be-ce6850421ef2",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9-mediated MLH1 knockout in MSS CRC cells induces the MSI phenotype and generates enhancer-activating indels with the characteristic MMR signature. After 2.5 months of culture, MLH1-/- cells showed a 10-fold increase in indel rate, with 30 indels in gained enhancers showing allele-bias, though the frequency is likely lower than in naturally-derived MSI tumors due to limited culture time and lack of selective pressure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C74-C81 describe a well-designed functional experiment that recapitulates the natural acquisition of MSI mutations. The CRISPR knockout was validated (C75), MSI phenotype confirmed (C76), and the resulting indels matched the expected signature (C77). The key finding of allele-biased indels in gained enhancers (C80) supports causality. The caveat in C81 about lower frequency than natural tumors is appropriately noted and reflects experimental limitations rather than a flaw in the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "c9355214-7eb4-44b0-ba75-be328cea2d2a",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MSI signature mutations activate enhancers in vivo in a xenograft tumor metastasis model. MLH1-/- cells injected into mice formed tumors with characteristic MMR-signature indels, 5-10% of which were in gained enhancers with higher mutant allele fractions, and 31 indels showed perfect correlation with H3K27ac increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C92 describe in vivo validation of enhancer activation by MSI mutations. The experimental design (C82-C84) is appropriate, with controls (MLH1+/+ cells) and consistency across tumors (C85). The mutation signature matches expectations (C86), and the key findings of allele-biased indels in gained enhancers (C87-C88) and perfect correlation cases (C89-C90) provide strong evidence for in vivo enhancer activation. The identification of OGDH as an MSI-specific dependency gene (C91) adds functional relevance. However, the sample size is limited (5 MLH1-/- tumors, 2 MLH1+/+ tumors).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "f8ae636f-740f-42ed-ab12-2ebade09e78c",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "MMR signature mutations activate enhancers in CRC tumor epigenomes to provide a selective advantage. The prevalence of these mutations in MSI CRC is especially high, and they confer a fitness advantage beyond that of canonical CRC driver genes, with their cumulative effect on growth being substantial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C95, C100-C101 represent the main conclusions of the study, synthesizing evidence from multiple experiments. The conclusion is well-supported by the convergence of: (1) positive selection evidence (C2, C42-C43), (2) increased target gene expression (C3, C44), (3) recurrence in primary tumors (C4, C50-C53), (4) association with dependency genes (C59-C61), (5) functional validation in CRISPR-engineered cells (C74-C80), and (6) in vivo validation (C82-C92). The inference of selective advantage is reasonable given the multiple lines of evidence, though direct measurement of fitness effects would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "99c1d1ba-e1c2-4d3c-b014-71953a077ee6",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In MSS CRC, indel mutation rate and H3K27ac levels are anti-correlated (Pearson r 95% CI [-0.63,-0.59]), but in MSI samples there is no correlation (Pearson r 95% CI [-0.020, 0.031]), with both H3K27ac-enriched and depleted regions showing a 68-fold higher mutation rate than MSS CRC, consistent with loss of protection in open chromatin upon MMR loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are supported by the correlation analysis shown in Figure 2a and Figure 2\u2014figure supplement 1. The specific correlation coefficients with confidence intervals (C38-C39) indicate appropriate statistical analysis. The 68-fold increase (C40) is a striking finding. The interpretation (C41) is supported by citation to prior work (Supek and Lehner, 2015). This result provides important context for understanding the distribution of mutations in MSI tumors and supports the subsequent analysis of positive selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript provides background on cancer genomics and the challenges of identifying functional enhancer mutations, including the heterogeneity of tumor epigenomes, variable mutation rates, and the difficulty of determining the cell type of origin for many cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C23 represent background knowledge and context from the introduction. These claims are appropriately supported by citations to relevant literature (Lawrence et al., 2014; Kandoth et al., 2013; Battey et al., 1983; Zhang et al., 2016; Beroukhim et al., 2016; Hnisz et al., 2016; Huang et al., 2013; Mansour et al., 2014; Puente et al., 2015; Schuster-B\u00f6ckler and Lehner, 2012; Polak et al., 2015). These claims establish the scientific context and rationale for the study but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "c8d341c1-5650-4fd0-b306-3eb2b678c773",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Variant Enhancer Loci (VELs) are sites that differ in the levels of H3K4me1 and H3K27ac between normal crypts and CRC, as previously defined by the authors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 describes a methodological approach previously published by the authors (Akhtar-Zaidi et al., 2012; Cohen et al., 2017). This is appropriately cited and provides context for the current study's approach to identifying gained enhancers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "c31d59f1-7111-4841-9840-f91141c6b0a6",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "FOX transcription factors are known pioneer factors in many cell types and are associated with enhancer re-programming, as established in prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 represent established knowledge from the literature, appropriately supported by citations (Ang et al., 1993; Lupien et al., 2008; Iwafuchi-Doi et al., 2016; Pomerantz et al., 2015; Roe et al., 2007). This provides important biological context for interpreting the FOX enrichment findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "1dc17601-b10b-4b57-95ad-02e9c497aca6",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript provides discussion context, including that regulatory mutations are generally considered rare passengers, that MMR mutations in coding regions can affect splicing/frameshift (e.g., TGFBR2), that MSI is continuously evolving, and that MSI CRC is a good candidate for immunotherapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C94, C96-C97, C99, C103, C105, C108-C109 represent discussion points and established knowledge that provide context for interpreting the study's findings. These are appropriately supported by citations where relevant (Fredriksson et al., 2014; Cuykendall et al., 2017; Markowitz et al., 1995; Ionov et al., 1993; Kim et al., 2013) and by the study's own data (C94).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    },
+    {
+      "id": "40b11e2c-9daf-4473-8326-bb6e0783d417",
+      "content_id": "04d3c4c4-879c-4093-ab22-aa88c313314b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript discusses how the functional regulatory mutations described differ from previously known examples (TERT, ER, TAL1, MYC, FOXA1), speculates that MSI enhancer mutations could be 'reprogrammers' of cell identity, and suggests future investigations into their role in tumor evolution, drug resistance, and immunotherapy response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98, C102, C104, and C106 represent interpretations and speculations about the implications of the findings. While C98 is a reasonable comparison supported by the data, C102 is explicitly speculative ('could be considered'), and C104 and C106 are suggestions for future research ('could play an important role', 'it would be worth investigating'). These are appropriate discussion points but represent hypotheses rather than demonstrated findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:42:49.074593Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0c65782d-98d2-47b8-afeb-332a648c58c7",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "26f9e01c-81cf-4d94-86e3-1f1eab9b1f62",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "b60160d1-3218-4eb4-aacd-6e8317849702",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "99fa67d1-a485-4f72-a0d0-b4581c969967",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "7d1e43d1-a78d-4c71-a831-fc74b268df16",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "20b31efb-5603-4e95-8203-f79c85888e99",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "5319f52c-894e-45cf-a7be-f78a0aa9656f",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "b8f9bdd7-c3cd-441f-b0d3-8b83ec3ff643",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "abe26c0d-1e6d-4e15-a453-7f67fabdd64d",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "063239c4-9d51-46ca-b8a7-d21eb0e00971",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "29d2e10f-920f-4d63-85a5-781bddf2d4e0",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "18a5ddc9-c1b7-4cc1-9616-b4c928c58d4d",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "a4582411-ae30-4b34-aa03-6565f9620d7a",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "5d0debb0-8c41-4e36-ba5b-ace7fe829600",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "834510a4-5b29-4c26-b19e-8c1cab2f7666",
+      "result_id": "cab0aedd-42af-45bb-94f0-734ea60ad28e"
+    },
+    {
+      "claim_id": "166cbd2c-4bcf-4259-b1c8-7d3020f047a5",
+      "result_id": "641c92a1-c9a4-443d-b19e-a4abb5854305"
+    },
+    {
+      "claim_id": "179a3b6e-a57c-4ecb-b1c4-01be6bf27e10",
+      "result_id": "641c92a1-c9a4-443d-b19e-a4abb5854305"
+    },
+    {
+      "claim_id": "730a3131-edf9-4463-901f-c96658e5b56d",
+      "result_id": "641c92a1-c9a4-443d-b19e-a4abb5854305"
+    },
+    {
+      "claim_id": "7f305432-f097-48fe-9e38-6fcc2af6b545",
+      "result_id": "4bd2809d-150b-467d-bf27-c5f25af5057e"
+    },
+    {
+      "claim_id": "783fbe10-6ed6-43e5-b153-363dcbd06dbb",
+      "result_id": "4bd2809d-150b-467d-bf27-c5f25af5057e"
+    },
+    {
+      "claim_id": "a65c8f1d-786f-46ad-a8dd-e4061497e103",
+      "result_id": "4bd2809d-150b-467d-bf27-c5f25af5057e"
+    },
+    {
+      "claim_id": "7854b6c5-4362-4787-8f33-250c6ee2f012",
+      "result_id": "4bd2809d-150b-467d-bf27-c5f25af5057e"
+    },
+    {
+      "claim_id": "5773eade-1293-440f-88b6-24d3b138dabb",
+      "result_id": "1e08f568-bfca-4439-8566-a018069ca8e4"
+    },
+    {
+      "claim_id": "856836e7-b5c5-4294-9106-0d201467e36f",
+      "result_id": "1e08f568-bfca-4439-8566-a018069ca8e4"
+    },
+    {
+      "claim_id": "8978a71c-808d-4301-a250-8cc99b53044d",
+      "result_id": "1e08f568-bfca-4439-8566-a018069ca8e4"
+    },
+    {
+      "claim_id": "e520e5e0-260e-46b3-aa89-008e3b5c4290",
+      "result_id": "1e08f568-bfca-4439-8566-a018069ca8e4"
+    },
+    {
+      "claim_id": "a44f0f12-b430-482a-894c-16193ec726b7",
+      "result_id": "1e08f568-bfca-4439-8566-a018069ca8e4"
+    },
+    {
+      "claim_id": "14fd0a66-d653-490f-bf2f-c94765b92afc",
+      "result_id": "1e08f568-bfca-4439-8566-a018069ca8e4"
+    },
+    {
+      "claim_id": "de633efe-ca57-44a1-8138-03b8d393366c",
+      "result_id": "1e08f568-bfca-4439-8566-a018069ca8e4"
+    },
+    {
+      "claim_id": "710f24ed-0aac-49bb-80d0-4cfc24e0904c",
+      "result_id": "1e08f568-bfca-4439-8566-a018069ca8e4"
+    },
+    {
+      "claim_id": "4b5674b8-bc4b-4f34-9ed1-422f0dc11d8c",
+      "result_id": "44225311-ebdf-4d76-974f-2b9593ddf036"
+    },
+    {
+      "claim_id": "228283bc-1d5d-422c-b70b-0f698547d208",
+      "result_id": "44225311-ebdf-4d76-974f-2b9593ddf036"
+    },
+    {
+      "claim_id": "aab90b90-b877-448a-9505-6fba656f24ef",
+      "result_id": "44225311-ebdf-4d76-974f-2b9593ddf036"
+    },
+    {
+      "claim_id": "241b4bd7-2e42-4ecb-acbb-31ee672dc124",
+      "result_id": "44225311-ebdf-4d76-974f-2b9593ddf036"
+    },
+    {
+      "claim_id": "93275db1-593e-4c93-af18-51639ef93213",
+      "result_id": "44225311-ebdf-4d76-974f-2b9593ddf036"
+    },
+    {
+      "claim_id": "c30e83c3-e4ba-4742-9409-25f0d62c1ef1",
+      "result_id": "44225311-ebdf-4d76-974f-2b9593ddf036"
+    },
+    {
+      "claim_id": "a844cbd4-3478-4190-b561-df7a6e2843dc",
+      "result_id": "44225311-ebdf-4d76-974f-2b9593ddf036"
+    },
+    {
+      "claim_id": "8d2f601a-e648-420a-b2a1-300159941e51",
+      "result_id": "44225311-ebdf-4d76-974f-2b9593ddf036"
+    },
+    {
+      "claim_id": "a910c851-52d7-4442-af9a-8275676517b3",
+      "result_id": "44225311-ebdf-4d76-974f-2b9593ddf036"
+    },
+    {
+      "claim_id": "770f0305-2e06-4d89-a6ec-2164b3539bb4",
+      "result_id": "6a103df1-b0fc-4736-8f1c-db5b29318009"
+    },
+    {
+      "claim_id": "de5b2b8c-3670-4e5e-a8f0-7eacb3f7cddb",
+      "result_id": "6a103df1-b0fc-4736-8f1c-db5b29318009"
+    },
+    {
+      "claim_id": "40185a42-2617-4347-882d-657bc18ce862",
+      "result_id": "6a103df1-b0fc-4736-8f1c-db5b29318009"
+    },
+    {
+      "claim_id": "5ae7ecb7-499c-4386-a33b-e3a2f3c9c98e",
+      "result_id": "6a103df1-b0fc-4736-8f1c-db5b29318009"
+    },
+    {
+      "claim_id": "883a800e-f9ca-4e5f-860d-bb71a1e23d16",
+      "result_id": "6a103df1-b0fc-4736-8f1c-db5b29318009"
+    },
+    {
+      "claim_id": "6e0ab4f8-9ece-4a38-9c86-616a376e20c3",
+      "result_id": "6a103df1-b0fc-4736-8f1c-db5b29318009"
+    },
+    {
+      "claim_id": "c16d1651-d531-4732-bd8c-221921422216",
+      "result_id": "6a103df1-b0fc-4736-8f1c-db5b29318009"
+    },
+    {
+      "claim_id": "922ed469-40ca-4d0f-a9fc-9f431ff99716",
+      "result_id": "6a103df1-b0fc-4736-8f1c-db5b29318009"
+    },
+    {
+      "claim_id": "00005751-617b-4cd3-b6d1-c22fea65e2e6",
+      "result_id": "6a103df1-b0fc-4736-8f1c-db5b29318009"
+    },
+    {
+      "claim_id": "6b9540e6-662c-402e-8362-7e820621fadd",
+      "result_id": "6a103df1-b0fc-4736-8f1c-db5b29318009"
+    },
+    {
+      "claim_id": "fa07eedf-3524-419f-9077-0fb369bcc73f",
+      "result_id": "6a103df1-b0fc-4736-8f1c-db5b29318009"
+    },
+    {
+      "claim_id": "8dcd678b-1ec9-41c8-a9db-6a525fe340ff",
+      "result_id": "95845bb2-90c5-4a0d-b7be-ce6850421ef2"
+    },
+    {
+      "claim_id": "c2686e38-e9de-4ca2-bbb1-68daea8ce57e",
+      "result_id": "95845bb2-90c5-4a0d-b7be-ce6850421ef2"
+    },
+    {
+      "claim_id": "5af609b2-981a-47ce-8d07-29d805416ee1",
+      "result_id": "95845bb2-90c5-4a0d-b7be-ce6850421ef2"
+    },
+    {
+      "claim_id": "3dc38884-1970-41c8-b7bb-0931189f6adb",
+      "result_id": "95845bb2-90c5-4a0d-b7be-ce6850421ef2"
+    },
+    {
+      "claim_id": "6444978b-bcbf-4149-8531-4a5e3645e17e",
+      "result_id": "95845bb2-90c5-4a0d-b7be-ce6850421ef2"
+    },
+    {
+      "claim_id": "b9595637-e60e-4f92-9490-6a518fde2b59",
+      "result_id": "95845bb2-90c5-4a0d-b7be-ce6850421ef2"
+    },
+    {
+      "claim_id": "6ee8fc13-3c9f-4874-9a46-740bba21509a",
+      "result_id": "95845bb2-90c5-4a0d-b7be-ce6850421ef2"
+    },
+    {
+      "claim_id": "5b94076e-7c58-42e9-afda-d5d43cfa3162",
+      "result_id": "95845bb2-90c5-4a0d-b7be-ce6850421ef2"
+    },
+    {
+      "claim_id": "db18d68a-e2cd-494e-a060-852b965faaf3",
+      "result_id": "95845bb2-90c5-4a0d-b7be-ce6850421ef2"
+    },
+    {
+      "claim_id": "f37e7023-fdd4-4527-8de2-7a3332dddd0c",
+      "result_id": "c9355214-7eb4-44b0-ba75-be328cea2d2a"
+    },
+    {
+      "claim_id": "a654480d-f666-461a-8c9d-79918e8bdf8f",
+      "result_id": "c9355214-7eb4-44b0-ba75-be328cea2d2a"
+    },
+    {
+      "claim_id": "5f49397e-66af-4e6c-ade6-1726412a8947",
+      "result_id": "c9355214-7eb4-44b0-ba75-be328cea2d2a"
+    },
+    {
+      "claim_id": "22002e7d-b8d0-4843-8093-da9b19500508",
+      "result_id": "c9355214-7eb4-44b0-ba75-be328cea2d2a"
+    },
+    {
+      "claim_id": "f4113151-d5a3-419f-b33f-f08c5472c298",
+      "result_id": "c9355214-7eb4-44b0-ba75-be328cea2d2a"
+    },
+    {
+      "claim_id": "ad9ee165-e4e8-416c-a4a1-a03f7f188d4b",
+      "result_id": "c9355214-7eb4-44b0-ba75-be328cea2d2a"
+    },
+    {
+      "claim_id": "13862189-47bd-4f86-8ab6-e9b8746d7cd7",
+      "result_id": "c9355214-7eb4-44b0-ba75-be328cea2d2a"
+    },
+    {
+      "claim_id": "6aec2491-b4a4-4b80-9525-0159d037d52b",
+      "result_id": "c9355214-7eb4-44b0-ba75-be328cea2d2a"
+    },
+    {
+      "claim_id": "183e047a-131b-4965-bb08-bdc3ecca5769",
+      "result_id": "c9355214-7eb4-44b0-ba75-be328cea2d2a"
+    },
+    {
+      "claim_id": "a3d51204-1f8a-421e-a240-dbe4d17729cb",
+      "result_id": "c9355214-7eb4-44b0-ba75-be328cea2d2a"
+    },
+    {
+      "claim_id": "d61dc0d0-a4bd-4c40-b906-ee36c0f7e509",
+      "result_id": "c9355214-7eb4-44b0-ba75-be328cea2d2a"
+    },
+    {
+      "claim_id": "45e1e516-1385-4585-a4a2-225c921b9e33",
+      "result_id": "f8ae636f-740f-42ed-ab12-2ebade09e78c"
+    },
+    {
+      "claim_id": "505bd017-cb04-40b1-9c29-5a02c68e7abd",
+      "result_id": "f8ae636f-740f-42ed-ab12-2ebade09e78c"
+    },
+    {
+      "claim_id": "355ead73-4bdf-48b0-92e0-01e8abadbff7",
+      "result_id": "f8ae636f-740f-42ed-ab12-2ebade09e78c"
+    },
+    {
+      "claim_id": "1a2e8f5a-37fc-4421-bdb1-ef0f65c8feaa",
+      "result_id": "f8ae636f-740f-42ed-ab12-2ebade09e78c"
+    },
+    {
+      "claim_id": "e271acb1-ec2c-4240-8966-b59fcae387cc",
+      "result_id": "99c1d1ba-e1c2-4d3c-b014-71953a077ee6"
+    },
+    {
+      "claim_id": "e8728ca6-07d1-439d-bb1e-30058e555d89",
+      "result_id": "99c1d1ba-e1c2-4d3c-b014-71953a077ee6"
+    },
+    {
+      "claim_id": "692a7ce1-4f3e-495c-92f0-708a9105d897",
+      "result_id": "99c1d1ba-e1c2-4d3c-b014-71953a077ee6"
+    },
+    {
+      "claim_id": "d315d14c-1dad-49cc-a8c8-4fa80dfdb18e",
+      "result_id": "99c1d1ba-e1c2-4d3c-b014-71953a077ee6"
+    },
+    {
+      "claim_id": "234d0195-c820-4ecc-84d3-d12ee18732f0",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "b38df7b5-0528-460d-8e65-050285207ea4",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "6277589d-7f6f-4c7e-9eeb-47813b08ea57",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "aafe52ba-e92c-4f3f-a7ee-9797a9693603",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "e234f68c-f019-4a92-812c-9fa2fbb3ed4c",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "0a019839-7e1b-4712-b141-0385f1a429ec",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "f093dd1d-22bc-41ad-b580-9c2109b72ab6",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "365c7071-47a1-4e7f-8e12-fa1e6ec71f7d",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "23bf8fce-4991-4cfc-9361-b9de85dff201",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "4b5983d2-ca7f-4740-9c1f-ff22aeb39f45",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "3904d00d-759d-4f12-a53b-2e49ab0e66a0",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "226b9a36-7cfe-4046-856f-36685b2dadc9",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "a79c2753-e096-45d2-929d-05f01c9dbd48",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "c3ca4672-d357-4c5d-9f98-76c7a94dff23",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "74808184-23a2-48a5-8d36-b640bc895bd9",
+      "result_id": "c7e71acd-a40f-4df1-9c56-e89d4f1ef085"
+    },
+    {
+      "claim_id": "ed4f8dfb-5487-4e62-869e-3e618935529f",
+      "result_id": "c8d341c1-5650-4fd0-b306-3eb2b678c773"
+    },
+    {
+      "claim_id": "43e5c17e-b943-4042-adcb-c48acc9e605b",
+      "result_id": "c31d59f1-7111-4841-9840-f91141c6b0a6"
+    },
+    {
+      "claim_id": "0d49cae9-3231-42c1-b7db-a498a23ce5b6",
+      "result_id": "c31d59f1-7111-4841-9840-f91141c6b0a6"
+    },
+    {
+      "claim_id": "5ebbc578-17a7-4134-8e98-77ec30d4bac7",
+      "result_id": "1dc17601-b10b-4b57-95ad-02e9c497aca6"
+    },
+    {
+      "claim_id": "337fbf34-eaa8-42cb-ab1e-53452886a141",
+      "result_id": "1dc17601-b10b-4b57-95ad-02e9c497aca6"
+    },
+    {
+      "claim_id": "e2c7ce86-343e-4725-a161-82fdae5b87be",
+      "result_id": "1dc17601-b10b-4b57-95ad-02e9c497aca6"
+    },
+    {
+      "claim_id": "9c16aee0-46be-479a-98a2-86fd5b485008",
+      "result_id": "1dc17601-b10b-4b57-95ad-02e9c497aca6"
+    },
+    {
+      "claim_id": "c4635564-273b-445e-82e8-dbbb38bd2758",
+      "result_id": "1dc17601-b10b-4b57-95ad-02e9c497aca6"
+    },
+    {
+      "claim_id": "79c311e6-1df1-406a-9487-e41131b8d557",
+      "result_id": "1dc17601-b10b-4b57-95ad-02e9c497aca6"
+    },
+    {
+      "claim_id": "4ad5b5ac-ea24-4df4-811c-f3277a03f41c",
+      "result_id": "1dc17601-b10b-4b57-95ad-02e9c497aca6"
+    },
+    {
+      "claim_id": "9ebfc6e6-d117-4e15-8a15-df39444f1814",
+      "result_id": "1dc17601-b10b-4b57-95ad-02e9c497aca6"
+    },
+    {
+      "claim_id": "63dc7705-a464-42b2-be6e-269fe1d5ad70",
+      "result_id": "1dc17601-b10b-4b57-95ad-02e9c497aca6"
+    },
+    {
+      "claim_id": "3452462d-ad90-4395-9c55-b3d2579dc7e2",
+      "result_id": "40b11e2c-9daf-4473-8326-bb6e0783d417"
+    },
+    {
+      "claim_id": "c0be4e9d-1236-4ecf-8abb-d35b12e86a01",
+      "result_id": "40b11e2c-9daf-4473-8326-bb6e0783d417"
+    },
+    {
+      "claim_id": "c7b14a38-f7d0-4068-999a-108ec9480f41",
+      "result_id": "40b11e2c-9daf-4473-8326-bb6e0783d417"
+    },
+    {
+      "claim_id": "2fb5df15-35f8-407a-b106-03d2eebb46ca",
+      "result_id": "40b11e2c-9daf-4473-8326-bb6e0783d417"
+    }
+  ],
+  "comparisons": []
+}

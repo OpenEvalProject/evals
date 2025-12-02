@@ -1,0 +1,1532 @@
+{
+  "submission": {
+    "id": "c2d2f9e3-f76e-45c0-b8cc-6a627bdf5431",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:22:14.275073Z",
+    "updated_at": "2025-12-02T17:22:14.275073Z"
+  },
+  "content": [
+    {
+      "id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "submission_id": "c2d2f9e3-f76e-45c0-b8cc-6a627bdf5431",
+      "content_type": "manuscript",
+      "content_text": "# Signaling diversity enabled by Rap1-regulated plasma membrane ERK with distinct temporal dynamics\n\n## Authors\n\n- Jeremiah Keyes<sup>1</sup> ([ORCID: 0000-0003-4253-6834](https://orcid.org/0000-0003-4253-6834))\n- Ambhighainath Ganesan<sup>2</sup>\n- Olivia Molinar-Inglis<sup>1</sup>\n- Archer Hamidzadeh<sup>3</sup>\n- Jinfan Zhang<sup>1</sup>\n- Megan Ling<sup>4</sup>\n- JoAnn Trejo<sup>1</sup>\n- Andre Levchenko<sup>3</sup>\n- Jin Zhang<sup>1</sup> ([ORCID: 0000-0001-7145-7823](https://orcid.org/0000-0001-7145-7823)) \u2020\n\n### Affiliations\n\n1. Department of Pharmacology, University of California San Diego La Jolla United States\n2. Department of Pharmacology and Molecular Sciences, The Johns Hopkins University School of Medicine Baltimore United States\n3. Department of Biomedical Engineering and Yale Systems Biology Institute, Yale University New Haven United States\n4. Department of Chemistry and Biochemistry, University of California San Diego La Jolla United States\n5. Department of Bioengineering, University of California San Diego La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nA variety of different signals induce specific responses through a common, extracellular-signal regulated kinase (ERK)-dependent cascade. It has been suggested that signaling specificity can be achieved through precise temporal regulation of ERK activity. Given the wide distrubtion of ERK susbtrates across different subcellular compartments, it is important to understand how ERK activity is temporally regulated at specific subcellular locations. To address this question, we have expanded the toolbox of F\u00f6rster Resonance Energy Transfer (FRET)-based ERK biosensors by creating a series of improved biosensors targeted to various subcellular regions via sequence specific motifs to measure spatiotemporal changes in ERK activity. Using these sensors, we showed that EGF induces sustained ERK activity near the plasma membrane in sharp contrast to the transient activity observed in the cytoplasm and nucleus. Furthermore, EGF-induced plasma membrane ERK activity involves Rap1, a noncanonical activator, and controls cell morphology and EGF-induced membrane protrusion dynamics. Our work strongly supports that spatial and temporal regulation of ERK activity is integrated to control signaling specificity from a single extracellular signal to multiple cellular processes.\n\n## Introduction\n\nDue to its central role in signal transduction, extracellular-signal regulated kinase (ERK) has been the subject of intense study for over three decades (Seger et al., 1991; Seger and Krebs, 1995); this research has elucidated many of the key mechanisms of ERK regulation. This pathway is utilized by a host of different extracellular cues to regulate cellular processes such as proliferation, differentiation, and survival (Keshet and Seger, 2010; Roskoski, 2012). However, studies have shown that ERK is also critically involved in regulating many other cellular processes, such as cell migration (Mendoza et al., 2015; Mendoza et al., 2011), cell cycle progression (Roberts et al., 2006; Chambard et al., 2007), autophagy (Hui et al., 2016; Jo et al., 2014), metabolism (Shin et al., 2015; Jiao et al., 2013), insulin secretion (Ozaki et al., 2016), or even apoptosis (Li, 2014; Cagnol and Chambard, 2010). The variety of processes induced through the ERK pathway presents a conundrum: how do extracellular cues specifically regulate the ERK pathway to induce the proper cellular response?\n\nThe canonical mode of regulation is activation by phosphorylation at the end of a kinase cascade. ERK is phosphorylated by the protein kinase mitogen-activated protein kinase kinase (MEK), which is first activated by the protein kinase Raf. Raf kinases are activated through the GTPase Ras, which is activated downstream of extracellular signals such as Epidermal Growth Factor (EGF) (Roskoski, 2012; Canagarajah et al., 1997). However, because ERK is activated by phosphorylation by a host of divergent extracellular signals, more complex modes of regulation must exist in order to direct ERK activity toward appropriate responses.\n\nPrevious studies have shown that different extracellular signals induce distinct temporal patterns of ERK activation to encode specific signaling information (Murphy et al., 2002; Herrero et al., 2016; Sasagawa et al., 2005). For example, in model cell lines such as PC12 or MCF7, EGF treatment leads to transient ERK phosphorylation and cell proliferation, whereas alternate extracellular signals such as Nerve Growth Factor (NGF) or heregulin, respectively, induces sustained ERK phosphorylation and cell differentiation. In the case of PC12 cells, the latter includes neurite formation and an enlarged cell body, modeling differentiated neurons. However, previous studies primarily used immunoblotting techniques to monitor ERK activation dynamics. While this technique has yielded crucial information, it is ultimately limited in its spatiotemporal resolution and unable to resolve single-cell behavior or differential dynamics between subcellular compartments.\n\nERK substrates have been identified in many subcellular compartments including at the Golgi Apparatus (Jesch et al., 2001; Shaul and Seger, 2006; Wainstein and Seger, 2016), at the mitochondrial membrane (Tomer et al., 2018; Nagdas et al., 2019), and near the plasma membrane (Mendoza et al., 2015; Mendoza et al., 2011). However, studies investigating the spatial regulation of ERK have primarily focused on understanding its activation and role in shuttling between the nucleus and cytoplasm, leaving the regulation and function of ERK in other subcellular compartments relatively unexplored. We hypothesize that spatial compartmentalization of ERK activity is required for signaling specificity in order for signals such as EGF to regulate different functional responses via distinct compartmentalized ERK activity. To test our hypothesis, we utilized genetically encoded molecular tools to visualize and perturb the activities of specific subcellular pools of endogenous ERK. Using this native biochemistry approach (Sample et al., 2014; Mehta and Zhang, 2017; Lin et al., 2019), we discovered that ERK activity associated with the plasma membrane exhibits distinct temporal dynamics in contrast to cytoplasmic and nuclear pools of ERK. We further dissected the mechanism of this distinct regulation and discovered that plasma membrane ERK activity is required for regulating Rac1 and controlling actin protrusion dynamics.\n\n## Results\n\n### EGF-induced ERK activity is transient in the cytoplasm but sustained near the plasma membrane\n\nWhile previous studies revealed that the temporal dynamics of ERK activation play a pivotal role in promoting specific cellular responses to extracellular stimuli (Murphy et al., 2002; Herrero et al., 2016; Herbst et al., 2011), studies on the spatial activation of ERK in signal transduction has been mostly focused on its translocation to the nucleus despite the fact that ERK has hundreds of substrates in other subcellular compartments (Yoon and Seger, 2006). For example, ERK has several known substrates near the plasma membrane, including Focal Adhesion Kinase (Jiang et al., 2007) and the actin-effector Wiskott\u2013Aldrich Syndrome Protein (WASP) (Mendoza et al., 2011). Thus, we sought to determine whether a single extracellular signal could induce different activity dynamics of spatially distinct pools of ERK to promote functional cellular processes. To address this question, we developed a new toolset of genetically\u00a0encoded, spatially\u00a0localized fluorescent biosensors based on the ERK Kinase Activity Reporter (EKAR) (Herbst et al., 2011; Komatsu et al., 2011), an engineered fluorescent ERK substrate that will exhibit different FRET properties in response to phosphorylation by ERK. These biosensors consist of two fluorescent proteins flanking a WW phosphopeptide-binding domain, a linker region, and an ERK-specific substrate domain (Figure 1A). Upon phosphorylation of the substrate sequence by ERK, the WW phosphopeptide-binding domain interacts with the phosphorylated substrate sequence, bringing the two fluorescent proteins into close proximity, thereby increasing FRET (Stryer, 1978). Thus, by expressing the biosensor within cells, one can monitor ERK activity in living cells in real-time by exciting the donor fluorescent protein and measuring the changes in the ratio of acceptor to donor fluorescence, yellow over cyan (Y/C), which is often reported as a percent increase over basal signal. Previous versions of EKAR include EKAR-EV, EKAR2G, and EKAR3 (Komatsu et al., 2011; Fritz et al., 2013; Sparta et al., 2015). While each of these biosensors has improved upon past biosensors, each of their reported average response to EGF is below 50%, which limits their utility to be used when targeted to specific subcellular locations. In seeking to develop a new EKAR biosensor with sufficient dynamic range in order to maximize signal when the biosensor is restrained to specific locations, we found that switching the positions of the fluorescent proteins within the EKAR-EV biosensor such that Ypet was positioned C-terminally and ECFP was positioned N-terminally (Figure 1A) yielded a biosensor that generated an 74.5 \u00b1 2.3% increase in the Y/C emission ratio in PC-12 cells (n\u00a0=\u00a083) (Figure 1\u2014figure supplement 1). We also directly compared EKAR4 to EKAR2G1 and EKAR-EV in HEK-293 cells and observed a significantly improved dynamic range from the previous biosensors (Figure 1\u2014figure supplement 1). We reasoned that this enhanced EKAR, which we have termed EKAR4, can then be targeted to specific subcellular locations, such as the cytoplasm, plasma membrane, or nucleus, to enable reliable tracking of ERK temporal dynamics in these specific locations. Thus, we used a Nuclear export signal (NES) to create a cytosolic targeted EKAR4 (cytoEKAR4), a nuclear localization sequence (NLS) to create a nuclear targeted EKAR4 (nuclearEKAR4), and the hypervariable region of KRas including a polylysine and CAAX box sequence to create a plasma membrane-localized EKAR4 (pmEKAR4), each of which displayed correct localization (Herbst et al., 2009;\u00a0Figure 1B, Figure 1\u2014figure supplement 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig1-v2.jpg)\n\n**Figure 1.:** (A) Domain structure of improved ERK-kinase activity reporter (EKAR4). EKAR4 has two fluorescent proteins (ECFP and YPet) on N- and C-termini, respectively, with an ERK-specific substrate sequence, a phosphopeptide-binding domain (WW), and the EV-linker developed by Komatsu et al., 2011 (B) Pseudocolor images representing the yellow over cyan (Y/C) emission ratio of cytosolic EKAR4 (cytoEKAR4) (top) versus plasma membrane-targeted EKAR4 (bottom) after EGF treatment at time 0. Warmer colors indicate higher Y/C emission ratio, scale bar\u00a0=\u00a010 \u00b5m. (C) Spatiotemporal dynamics of EGF-induced ERK activity in the cytosol. Cytoplasmic ERK activity was monitored using cytoEKAR4 in cells treated with 100 ng/\u00b5l EGF (black dotted line, n\u00a0=\u00a083) or pretreated with 10 \u00b5M SCH772984 (ERK inhibitor) 20 min before EGF (blue, triangles, n\u00a0=\u00a019). Each trace is a combined average of all cells. (D) Spatiotemporal dynamics of EGF-induced ERK activity at the plasma membrane. Plasma membrane localized ERK activity was monitored using the plasma membrane targeted EKAR4 (pmEKAR4) in cells treated with 100 ng/\u00b5l EGF (black dotted line, n\u00a0=\u00a071) or pretreated with 10 \u00b5M SCH772984 (ERK inhibitor) 20 min before EGF (blue, triangles, n\u00a0=\u00a024). Each trace is a combined average of all cells (see Figure 1\u2014figure supplement 1A, B for traces of all cells for C and D; Error bars represent 95% CI.) E) Activity persistence differences of ERK response to EGF between the cytoplasm and plasma membrane. Using the SAM40 metric (Equation 1), the transient versus sustained nature of ERK response to EGF at the cytoplasm (n\u00a0=\u00a083) and plasma membrane (n\u00a0=\u00a071) was quantified. (****p<0.0001 using one-way ANOVA multiple comparisons, see Figure 1\u2014figure supplement 1D for comparison to nuclear ERK activity.) See also Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) HEK-293T cells expressing either EKAR-EV (color, ref), EKAR2G1 (Color, ref), or EKAR4 (Color) were treated with 100 ng/ml EGF. Traces represent average activation curves from indicated replicates. (B) Amplitude of EGF-induced responses was compared between different EKARs. (p<0.0001).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Representative cells expressing either pmEKAR4 (A), cytoEKAR4 (B), or nuclear EKAR4 (C) were analyzed by measuring fluorescence intensity of the donor (ECFP) across the indicated line. Scale bar indicates 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) All cell traces (n\u00a0=\u00a071) from plasma membrane targeted EKAR4 (pmEKAR4) in cells treated with EGF at time 0.\u00a0Average shown in red. (B) All cell traces (n\u00a0=\u00a083) of cytosolic EKAR4 (cytoEKAR4) in cell treated with EGF at time 0. (C) All cell traces (n\u00a0=\u00a029) of nuclear-localized EKAR4 (nuclear EKAR4) in cells treated with EGF at time 0. (D) Sustained activity metric (SAM40) comparing cytoplasmic, nuclear, and plasma membrane EKAR responses. (E) Maximum FRET to donor emission ratio for each EKAR4. (F) EKAR4 response time comparisons between cytoplasmic, nuclear, and plasma membrane compartments. The time to \u00bd maximum responses was recorded and tabulated. Interestingly, cytoEKAR4 and nuclear EKAR4 respond before pmEKAR4, suggesting faster accumulation of ERK activity in cytosol which is dependent on both ERK and phosphatases. (Metric comparisons analyzed via one-way Anova with multiple comparisons, *p<0.05, **p<0.01, ****p<0.0001).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Max Y/C Ratios plotted against SAM40 values for cytoEKAR4 (pearson\u2019s correlation coefficient 0.165). (B) Max Y/C Ratios plotted against SAM40 values for pmEKAR4 (pearson\u2019s correlation coefficient 0.2913).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Cells were treated with 100 ng/mL EGF and harvested at indicated time points. Samples from each replicate were loaded on two separate gels and were subjected to western blot against both pERK1/2 (Gel 1) and total ERK1/2 (Gel 2) using \u03b2-Tubulin as loading control for each gel. Both ERK1/2 and pERK1/2 bands were normalized to associated \u03b2-tubulin loading control. After loading control normalization pERK1/2 was normalized total ERK signals, then the intensity at 7.5 min was set to 1 (n\u00a0=\u00a02 independent replicates).\n\nLive-cell imaging experiments revealed striking differences in the temporal patterns of ERK activity at different subcellular locations. EGF induced transient ERK activity in the cytosol and nucleus (Figure 1C, Figure 1\u2014figure supplement 3B,C), consistent with previous reports. In contrast, EGF-stimulated pmEKAR4 response was much more sustained at the plasma membrane (Figure 1D, Figure 1\u2014figure supplement 3A), compared to cytosol and nucleus. We developed a metric to quantitate the relative temporal dynamics between conditions (Equation 1), which we refer to as Sustained Activity Metric at 40 min post-treatment (SAM40), where R represents the normalized emission ratio at the indicated condition in subscript.\n\n$$\n\\frac{R_{40}\u2212R_{0}}{R_{max}\u2212R_{0}}\n$$\n\nAn advantage of this metric is\u00a0that it presents the residual signal at 40 min from the maximum signal after treatment. Using this metric, we were able to determine that EKAR4 response at the plasma membrane was indeed statistically different from the cytoplasmic and nuclear ERK responses (Figure 1E, Figure 1\u2014figure supplement 3D, Figure 1\u2014figure supplement 4). Interestingly, we also found that the kinetics of ERK activity accumulation were slower at the plasma membrane versus cytosol and nucleus (Figure 1\u2014figure supplement 3F), using the time to \u00bd maximum responses as a proxy (B\u00fcnemann et al., 2003; Ryu et al., 2015; Wan et al., 2019), which is dependent on both ERK and phosphatase activity.\n\nWe also compared the EKAR4 responses to conventional methods of evaluating ERK by treating PC-12 cells with EGF and harvesting cells before treatment (control), at 7.5 min, 15 min, 30 min, and 40 min post-EGF treatment (Figure 1\u2014figure supplement 5) and subjected cell lysates to immunoblot for phosphorylated and total ERK. In this time course, we observe a dramatic increase in phosphorylated ERK 7.5 min after EGF treatment, followed by a dramatic decrease by 15 min. It is interesting that after 15 min we see a slight increase in phospho-ERK at the 30- and 40 min time points. The activation profile is broadly similar to the EKAR response. The decrease in phospho-ERK is faster than the EKAR signal, likely because the EKAR biosensor signal dynamics is dependent on both ERK and phosphatase activities.\n\nTo test if the sustained response at the plasma membrane requires continuously active ERK at the plasma membrane, we treated the cells with a membrane permeable ERK inhibitor SCH772984 (Morris et al., 2013) and examined the pmEKAR4 responses. We found that addition of 10 \u00b5M SCH772984, but not of DMSO (Figure 2\u2014figure supplement 1C,D), either at 10 min after EGF stimulation (Figure 2A blue curve) or at 40 min post-stimulation (Figure 2A orange curve) resulted in an immediate change in the slope of pmEKAR4 signal, indicating that ERK was still actively phosphorylating pmEKAR4 at these time points (Figure 2A, Figure 2\u2014figure supplement 1). Interestingly, inhibitor addition at these different time points appears to exhibit different slopes of decay, which we surmise to be due to changing phosphatase activities between these time points. Furthermore, addition of U0126, an inhibitor of the upstream kinase MEK, at 10 min or 40 min post EGF also led to decreases in the slope of pmEKAR4 signal (Figure 2\u2014figure supplement 2), indicating MEK was also active.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig2-v2.jpg)\n\n**Figure 2.:** (A) PC12 cells treated with the ERK inhibitor SCH772984 (10 \u00b5M) after EGF treatment at 10 min (n\u00a0=\u00a08) or 40 min (n\u00a0=\u00a08) post-EGF resulted in an immediate change in the slope of pmEKAR4 signal. (B) PC12 cells were harvested at select time points after EGF treatment and the lysates underwent subcellular fractionation, which is verified in Figure 2\u2014figure supplement 1E. After successful fractionation between the plasma membrane and other cellular components, a western blot against the phosphorylated and total form of ERK1/2 indicates that the levels of phospho-ERK remain relatively consistent up to 40 min after EGF treatment. Quantitation from five independent replicates is shown in panel C. (*p<0.05, ****p<0.0001, calculated using one-way ANOVA with multiple comparisons.) See also Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) All Traces (n\u00a0=\u00a022) of pmEKAR in cells treated with 10 \u00b5M SCH772984 10 min after EGF. (B) All traces of pmEKAR in cells treated with 10 \u00b5M SCH772984 40 min after EGF addition (n\u00a0=\u00a017). (C) Average traces of EGF only (black trace) and DMSO-treated at 10 min post-EGF (blue trace) of pmEKAR response to EGF. (D) All pmEKAR traces of DMSO-treatment (n\u00a0=\u00a07). E. Verification that DMSO addition does not affect max pmEKAR response (p=0.75) F. Verification that DMSO does not affect pmEKAR4 signal persistence, as measured by the SAM40 metric (p=0.86).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013B) Addition of 20 \u03bcM U0126 (MEK inhibitor) resulted in a decrease in slope of decay of pmEKAR4 signal (****p<0.0001 compared to both U0126 (n\u00a0=\u00a021) and SCH772984 (n\u00a0=\u00a028)). (C\u2013D) Addition of 20 \u03bcM U0126 (n\u00a0=\u00a029) at 40 min post EGF also led to a decrease in the slope of pmEKAR4 signal, indicating MEK was active (p<0.0001 with Ordinary one-way Anova with multiple Comparisons \u2013 each condition compared to every other condition.).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** PC12 cells treated with EGF at indicated time points were harvested and subjected to subcellular fractionation and immunoblot as described in Materials and methods.\n\nTo further validate the ERK activity dynamics at different subcellular compartments, we performed biochemical subcellular fractionation (Figure 2\u2014figure supplement 3) to separate and quantitate ERK phosphorylation at the plasma membrane and cytoplasm of PC12 cells to assess the temporal dynamics of phosphorylated ERK. ERK was phosphorylated transiently in the cytoplasm and ERK associated with the plasma membrane was, on average, equally phosphorylated between the 15- and 40 min time points (Figure 2B, quantitated from five independent replicates in C), indicating the presence of a continuously phosphorylated pool of ERK at the plasma membrane. In conclusion, these data indicate that ERK activity associated with the membrane is sustained in contrast to the transient response in the cytoplasm and nucleus, and thus differentially regulated between these subcellular compartments.\n\n### Rap1 GTPase significantly contributes to plasma membrane ERK activity\n\nThe unique temporal pattern of ERK activity at the plasma membrane prompted us to determine whether plasma membrane ERK activity is distinctly regulated. The classical pathway of ERK activation is through the Ras family of GTPases, including K-ras, H-ras, and N-Ras (Figure 3\u2014figure supplement 1A). However, it has been shown that Rap1, a GTPase in the Ras family, can in some cases specifically interact with B-Raf and lead to sustained ERK activity under certain conditions (Takahashi et al., 2017; Li et al., 2016; York et al., 1998). For example, NGF-induced sustained ERK activation in PC12 cells is mediated through Rap1 (York et al., 1998). More recent reports suggest that while Ras activates a rapid and intense ERK response, Rap1 induces a slow and steady ERK response (Li et al., 2016), mimicking the observed kinetic difference between responses of pmEKAR4 and cytoEKAR4. In addition, Wang et al. showed that in order for Rap1 to activate the ERK pathway, Rap1 needs to be localized near the plasma membrane (Wang et al., 2006). These observations led us to hypothesize that a plasma membrane-associated pool of active Rap1 exists to regulate plasma membrane ERK activity.\n\nThe classical way to measure GTPase activation involves affinity capture of the active GTPase and subsequent immunodetection for the presence of the GTPase in the precipitated fraction. We reasoned that because the plasma membrane-associated pool of Rap1 may be relatively small compared to the cytosolic and perinuclear pools of Rap1, this classical method involving affinity-capture would not be suitable to test whether EGF induces Rap1\u00a0(Wang et al., 2006; Obara et al., 2007). Recently, O\u2019Shaughnessy et al. reported novel dual-chain biosensors for both of the isoforms of Rap1, Rap1A and Rap1B (O'Shaughnessy et al., 2019). In these biosensors known as Rap1A/B-FLARE, either Rap1A or Rap1B is fused to the donor fluorophore, mCerulean3, on its N-terminus and the Rap1-binding domain (RBD) from RalGDS is fused to the acceptor fluorophore Ypet. Rap1 activation leads to intermolecular binding between Rap1 and RBD, thereby increasing FRET. Using these biosensors in PC12 cells (see Figure 3\u2014figure supplement 1B for diagram of pathway including inhibitors and biosensors utilized throughout this study), we observed that EGF consistently induced increases in Y/C emission ratios, indicating activation of both Rap1A (25.4 \u00b1 4.7%, n\u00a0=\u00a011) and Rap1B (26 \u00b1 3.4%, n\u00a0=\u00a08); this effect was completely abrogated by either co-expression of the Rap1-specific GTPase-activating protein Rap1GAP, which selectively inactivates Rap1 by inducing the hydrolysis of the bound GTP to GDP (Figure 3A,B, red curves, Figure 3\u2014figure supplement 2;\u00a0Brinkmann et al., 2002; Chen et al., 1997), or by GGTI-298, a geranylgeranyltransferase I inhibitor that has been used to inhibit the processing, and thus action, of Rap1 (Figure 3\u2014figure supplement 3;\u00a0Chenette and Der, 2011; Ke et al., 2019; McGuire et al., 1996). We also tested Rap1 activation near the plasma membrane by using Total Internal Reflection Microscopy (TIRF) to monitor the translocation to the plasma membrane of a FP-tagged effector molecule that binds to GTP bound form of Rap1. For this assay, we utilized the RBD from diffusible, FP-tagged RalGDS (Wang et al., 2006). We also co-expressed a membrane-targeted variant of RFP, mCherry, in PC12 cells in order to aid in finding cells in TIRF microscopy and to control for changes in fluorescence intensity due to cell spreading and/or movement. In these cells, EGF induced an average maximum response of 64.8 \u00b1 11% (n\u00a0=\u00a011) increase in ratio of EGFP to mCherry at the basal membrane, while control cells expressing EGFP showed no changes in EGFP fluorescence intensity at the membrane (Figure 3\u2014figure supplement 4). Furthermore, co-expression of Rap1GAP abolished the translocation of the RBD, further confirming the specificity of the response.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig3-v2.jpg)\n\n**Figure 3.:** Cells expressing either (A) diffusible Rap1A FLARE (n\u00a0=\u00a011) or (B) diffusible Rap1B FLARE (n\u00a0=\u00a09) were treated with EGF at time 0, increase in yellow over cyan (Y/C) emission ratio indicates Rap1 activation. The observed increases in ratio are abrogated by co-expression of the Rap1-specific GAP Rap1GAP (red curves, n\u00a0=\u00a014, n\u00a0=\u00a015, respectively). (C, E) Rap1GAP expression significantly dampened pmEKAR4 response (n\u00a0=\u00a040). (D, F) Rap1GAP expression had no significant effect on cytosolic ERK activity (n\u00a0=\u00a040). (****p<0.0001, n.s.\u00a0=\u00a0not significant, calculated using student\u2019s t-test with Welch\u2019s correction) See also Figure 3\u2014figure supplements 1\u20136.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Canonical ERK/MAPK signaling pathway. (B) EGFR signaling pathway components with inhibitors and biosensors used in this study.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Rap1A FLARE responses of all replicates, average shown in red (n\u00a0=\u00a011). (B) Rap1B FLARE responses of all replicates with average shown in red (n\u00a0=\u00a09). (C) Effect of Rap1GAP expression on Rap1A FLARE response, all replicates (n\u00a0=\u00a014). (D) Effect of Rap1GAP on Rap1B Flare response, all replicates (n\u00a0=\u00a015). (E) Effect of Rap1GAP on pmEKAR4 responses, all replicates (n\u00a0=\u00a040). (F) Effect of Rap1GAP on cytoEKAR4 responses, all replicates (n\u00a0=\u00a040).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) 30 \u03bcM GGTI-298 addition to cells 150 min before EGF treatment led to a drastic decrease in the Rap1A response to EGF. (n\u00a0=\u00a024 GGTI control; n\u00a0=\u00a015 +GGTI) B) 30 \u03bcM GGTI-298 addition to cells 150 min before EGF dampens pmEKAR4 response to EGF (n\u00a0=\u00a020 GGTI control; n\u00a0=\u00a028 +GGTI control.) C-E) individual traces of all replicates for indicated conditions, red curve represents average.) F) Quantitation of max amplitude of pmEKAR4 response with and without GGTI-298 preincubation. (***p=0.0002, unpaired t-test).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Cells expressing either a plasma membrane targeted mCherry-CAAX (mCh) in combination with either EGFP-RalGDS (black curve, n\u00a0=\u00a011 cells), EGFP only (green curve, n\u00a0=\u00a03 cells), or EGFP-RalGDS with Rap1GAP overexpression (orange curve, n\u00a0=\u00a05 cells) were analyzed using TIRF microscopy to track EGFP translocation to the basal membrane, indicating the formation of GTP-bound Rap1 at the plasma membrane.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Rap1A N17 expression had no effect on Rap1A FLARE\u00a0response (A, C) or pmEKAR response to EGF (E, G). Rap1B N17 expression significantly dampened Rap1B response (B, D) and dampened pmEKAR4 response (F, G) (n\u00a0=\u00a023). Note, Rap1 DN expression resulted in similar trends as Rap1GAP expression, but the effect had more cell-to-cell variability. (***p<0.001, student\u2019s t-test; **p<0.01, one-way Anova comparison to no dominant negative control).\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (A\u2013B) HRasN17 expression completely abrogates cytosolic ERK response (n\u00a0=\u00a021). (C\u2013D) Plasma membrane localized ERK exhibits a dampened, slow response to EGF (n\u00a0=\u00a021). (E) Quantification of average amplitude value at 40 min post EGF. (n.s.\u00a0=\u00a0not significant).\n\nHaving verified EGF induces Rap1 activation near the plasma membrane, we investigated how abrogation of Rap1 would affect plasma membrane localized ERK activity. We used several different approaches to inhibit Rap1. First, Rap1GAP-mediated inhibition of both Rap1A and Rap1B led to a dramatic dampening of EGF-induced ERK activity near the plasma membrane (Figure 3C,E, and Figure 3\u2014figure supplement 2). However, Rap1GAP had no effect on cytosolic ERK activity (Figure 3D,F), indicating that the effect of Rap1GAP is plasma membrane specific. Secondly, we expressed Rap1A and Rap1B dominant-negative isoforms (Rap1A N17 and Rap1B N17) (Maly et al., 1994). While Rap1A N17 was not able to inhibit Rap1A activation, Rap1B N17 dramatically decreased Rap1B activation (Figure 3\u2014figure supplement 5B,D) and led to a similar effect on pmEKAR response as Rap1GAP expression (Figure 3\u2014figure supplement 5F,G). In addition, acute Rap1A inhibition by GGTI-298 also resulted in a drastically decreased pmEKAR4 response (Figure 3\u2014figure supplement 3). These data indicate that Rap1 is critically involved in regulating plasma membrane ERK activity. However, we note that Rap1 inhibition does not completely abrogate plasma membrane ERK response. We thus used HRas-N17, a dominant negative form of H-Ras that inhibits all Ras isoforms (Matallanas et al., 2003), to probe how inhibition of Ras affects both cytosolic and plasma membrane localized ERK. We found that cytosolic ERK activity was completely abolished (Figure 3\u2014figure supplement 6A,B). We also found that plasma membrane localized ERK activity was altered, but not abolished like the cytoEKAR4 response. Instead of an initial peak response approximately 10 min after EGF followed by a slow decay, we observed a slowly increasing plasma membrane ERK response (Figure 3\u2014figure supplement 6C,D). Interestingly, the amplitude of pmEKAR4 at 40 min was not different between HRas-N17 expressing cells and control cells, indicating that Rap1, not Ras, is responsible for plasma membrane ERK activity at later time points. This mechanism is notably different from the canonical Ras-mediated activation of ERK, which appears to regulate the cytoplasmic and nuclear ERK activities.\n\n### Plasma membrane ERK activity regulates cellular morphology and EGF-induced protrusion dynamics\n\nAfter identifying a distinct pool of ERK with different temporal dynamics and pathway of activation than cytosolic or nuclear pools of ERK, we sought to identify the function of this pool of ERK near the membrane. We utilized an ERK monobody binder (EMBer) (Mann et al., 2013) that interacts with ERK and inhibits its activity but does not interact with JNK or p38, kinases from the same family as ERK. Using plasma membrane targeted EMBer tagged with mCherry (pmEMBer), we observed a significantly reduced ERK activity near the plasma membrane (Figure 4A) but not in the cytosol (Figure 4B) or nucleus (Figure 4\u2014figure supplement 1). Thus, plasma membrane targeted EMBer could indeed be used to selectively inhibit the plasma membrane ERK activity. In cells expressing pmEMBer, we first observed an apparent change in cell morphology from primarily circular to primarily elliptical (Figure 4C). We quantified this morphological change by measuring the ratio of the minor to major axes of each cell, comparing between pmEMBer expressing cells and non-pmEMBer expressing cells (Figure 4D, Left panel). In cells without pmEMBer, 58% of imaged cells have a minor:major axes ratio greater than 0.8, indicating that the majority of cells were nearly perfectly round. Only\u00a0~8% of cells without pmEMBer had a ratio below 0.6. In contrast, 42% of pmEMBer expressing cells had a ratio below 0.6. This drastic change in cell morphology, which is dependent on pmEMBer expression at the plasma membrane, indicates that ERK activity near the membrane has an important role in controlling cell morphology.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig4-v2.jpg)\n\n**Figure 4.:** (A) Effect on pmEKAR4 response to EGF in PC12 cells expressing a plasma membrane-targeted monobody EMBer7.1 (pmEMBer) (Mann et al., 2013) which binds to ERK and dampens ERK activity (n\u00a0=\u00a036 cells, red curve). (B) Effect on cytoEKAR4 response to EGF in PC12 cells expressing pmEMBer (n\u00a0=\u00a037 cells, red curve) (C) Representative images of cell morphology and protrusion dynamics in response to EGF in PC12 cells with (bottom row) or without (top row) pmEMBer expression. (D) (Left-most panel) Major and minor axes of each cell was measured using ImageJ and the ratio of minor: major was calculated for each cell with and without pmEMBer expression. Kymographs generated from major axes of each cell plotting distance and time (Figure 4\u2014figure supplement 2) were used to quantitate protrusion length in \u00b5m and protrusion persistence in min. (Middle and right panels) (n\u00a0=\u00a0103 pmEMBer, n\u00a0=\u00a057 +pmEMBer, ***p=0.0002, ****p<0.0001) (E) Using Rac1-2G biosensor to measure Rac1 activity (O'Shaughnessy et al., 2019), cells either expressing pmEMBer (red curve, n\u00a0=\u00a024 cells) or pm-mCherry (black curve, n\u00a0=\u00a019 cells) were treated with EGF. (F) Quantitation of Max Rac1-2G response to EGF. (p<0.0001, Welch\u2019s t-test to correct for different variances.) See also Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2, Figure 4\u2014figure supplement 3.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Effect of pmEMBer expression on nuclear ERK response to EGF. (B) All traces of nuclear ERK responses in EGF stimulated cells expressing pmEMBer (n\u00a0=\u00a032). (C) All traces of cytoplasmic ERK responses in EGF-stimulated cells expressing pmEMBer (n\u00a0=\u00a075). (D) All traces of plasma membrane ERK responses in EGF-stimulated cells expressing pmEMBer (n\u00a0=\u00a036). (E) Effect of pmEMBer expression on sustainment of ERK responses, measured by SAM40 metric (Equation 1). Each condition was compared to every other condition using one-way ANOVA with multiple comparisons. Each location (plasma membrane, cytoplasm nucleus) showed no significant change in persistence of ERK activity. (F) Effect of pmEMBer on maximum response (Y/C ratio) at the cytoplasm, plasma membrane, and nucleus. Each condition was compared to every other condition using one-way ANOVA with multiple comparisons. (n.s.\u00a0=\u00a0not significant, *p<0.05.).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A, D) Kymograph of indicated area in was obtained along the major axis to quantitate cell protrusions. (B, E) Kymographs of cell shown in (A) and (D), respectively. Scale bar represents 10 \u00b5m. (C, F) Kymographs from (B or E) were rotated so that the horizontal axis represents time. Scale bar represents 600 s (10 min.).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57410/elife-57410-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) All traces (n\u00a0=\u00a019) of the effect of EGF on Rac1 measured by the Rac-2G biosensor. Average displayed as red trace. (B) All Traces of Rac1 activity in presence of pmEMBer, n\u00a0=\u00a024. (C) Average traces comparing RhoA activation in response to EGF with or without pmEMBer expression. (D) All traces of RhoA activation in cells expressing mCh-CAAX control (n\u00a0=\u00a050). (E) All traces of RhoA activation in cells expressing pmEMBer (n\u00a0=\u00a030).\n\nIn conjunction with the observed changes in morphology, we observed apparent changes in EGF-induced membrane protrusion dynamics. To quantitate these observations, we co-expressed either pmEMBer or plasma membrane targeted mCherry with LifeAct-Venus (Hertel et al., 2016) to visualize actin dynamics. In each of these conditions, cells were treated with EGF and imaged every 30 s for up to 45 min after stimulation. To quantitate the differences in protrusion dynamics, lines were drawn across the major axis of each cell and a kymograph was generated to quantitate the spatial and temporal aspects of protrusion dynamics (Figure 4\u2014figure supplement 2). Under control conditions, EGF induced relatively short-lived, evenly distributed small protrusions (Figure 4D, middle, right panels). However, under conditions of selective plasma membrane inhibition of ERK activity near the plasma membrane, cells exhibited longer and polarized protrusion dynamics (Figure 4D, middle, right panels). Specifically, in normal conditions, 28% of cells had protrusions longer than 5 \u00b5m and the protrusions of 25% of these cells lasted for longer than 15 min. In contrast, in plasma mebrane ERK (pmERK)-inhibited conditions, 70% of cells had protrusions longer than 5 \u00b5m and 75% of pmERK-inhibited cells had protrusions lasting longer than 15 min.\n\nAs described earlier, there are known ERK substrates near the membrane that could have the observed effect on cell morphology and protrusions, such as WASP, FAK, among others (\u00dcnal et al., 2017). Furthermore, it is well established that the Rho family of GTPases, Rac1 and RhoA, are significant players in cell protrusion and migration processes. Importantly, Rac1 is a known substrate for ERK, and EGF-induced Rac1 phosphorylation by ERK in COS-7 cells was shown to lead to inhibition of Rac1 and its removal from the plasma membrane (Tong et al., 2013). Thus, we sought to examine how inhibition of plasma membrane ERK affected Rac1 and RhoA activity in PC12 cells.\n\nIn order to monitor Rac1 and RhoA activation, we took advantage of established single-chain Rac1 and RhoA biosensors: Rac1-2G (Fritz et al., 2015) and RhoA-DORA\u00a0(van Unen et al., 2015). Rac1-2G consists of mTFP (variant of CFP) on the N-terminus, a circularly permutated variant of Venus, with the PAK effector binding domain in between the two fluorescent proteins and a full length Rac1 at the C-terminal end; upon Rac1 binding with GTP, the PAK effector domain will interact with Rac1-GTP, bringing the two fluorescent proteins into close proximity to increase FRET. The RhoA biosensor has a similar design, with a circularly permutated Rho-binding domain of PKN1 on the N-terminus, followed by cpVenus, a linker region, Cerulean, and then full-length RhoA. We expressed either of these biosensors in cells along with either plasma membrane targeted mCherry (control) or pmEMBer. Although we could not observe RhoA activity under either condition (Figure 4\u2014figure supplement 3C,D,E), using Rac1-2G we did observe a robust 6.4 \u00b1 0.7% increase in response to EGF (n\u00a0=\u00a019, control; n\u00a0=\u00a024, with pmEMBer) under pmERK-inhibited conditions but not under control conditions (Figure 4E,F), indicating endogenous pmERK inhibits Rac1 activation. This observation is consistent with previous reports in which ERK phosphorylation of Rac1 on T108 inhibits Rac1 and leads to relocalization of Rac1 away from the membrane (Tong et al., 2013) and indicates that plasma membrane ERK activity inhibits Rac1, which could contribute to the regulation of membrane protrusion dynamics.\n\n## Discussion\n\nAlthough ERK is ubiquitously utilized by a host of different cellular processes, the majority of studies on ERK focus on its primary role in proliferation and survival. Previous studies often focus on investigating the extent of ERK phosphorylation and its effect on transcription factors in the nucleus. However, ERK is known to have hundreds of substrates localized in different subcellular compartments and play key roles in differentiation, migration, and others (Roskoski, 2012; \u00dcnal et al., 2017; Maik-Rachline et al., 2019). Despite our knowledge of substrate localization, little is known about the regulation of ERK in specific subcellular compartments outside of the nucleus. This is largely due to the traditional method of using phospho-specific antibodies on whole lysates, which are equated, perhaps erroneously (Keyes et al., 2017; Takahashi et al., 2012), with full activity, and may mask subpopulations of ERK amidst the majority population. While we know that temporal dynamics plays a major role in determining cellular processes resulting from an extracellular cue, we have been unable to critically assess whether an individual extracellular signal can induce distinct temporal dynamics among two or more different subcellular compartments.\n\nIn this study, we established the use of fluorescent, FRET-based biosensors to study the spatiotemporal dynamics of ERK activity by targeting the biosensors to specific subcellular regions, particularly the plasma membrane, cytosol, and nucleus. Using this technique, we discovered that EGF simultaneously activates at least three divergent sub-populations of ERK with unique temporal dynamics from each other: the cytosol (Figure 1C), the Plasma membrane (Figure 1D), and the nucleus (Figure 1\u2014figure supplement 3C). Indeed, the nuclear EKAR4 response exhibits the most transient of the targeted EKAR4 biosensors, followed by cytoEKAR4, with the pmEKAR4 exhibiting an apparent persistent response (Figure 1D,E). By using a membrane-permeable ERK inhibitor, we confirmed that the sustained pmEKAR4 signal was a direct result of continued ERK phosphorylation of the biosensor and not because the biosensor was unable to be dephosphorylated by a lack of phosphatases near the membrane (Figure 2A). Additionally, we utilized subcellular fractionation and immunoblotting to confirm the presence of sustained ERK phosphorylation in the plasma membrane fraction (Figure 2B,C).\n\nTo delineate into the mechanism by which ERK activity at the membrane is activated, we examined the upstream GTPase responsible for ERK activation and discovered a noncanonical Rap1-mediated pathway. Past studies have linked Rap1 to ERK signaling because Rap1 is able to interact with and activate B-Raf (Takahashi et al., 2017). However, this point has been controversial and it is not clear whether or not Rap1 actually activates ERK in a cellular environment, with studies giving disparate reports on whether EGF induces Rap1 activation in PC12 cells (Wang et al., 2006; Zwartkruis et al., 1998; Kao et al., 2001; Wu et al., 2001; Bouschet et al., 2003; Li et al., 2006). These contradicting observations are likely due to the fact that the traditional biochemical method for measuring enzyme activation may not capture transient or specific subcellularly\u00a0localized activation (Wang et al., 2006). In this study, with the use of recently reported Rap1 biosensors (Figure 3A\u2013B;\u00a0O'Shaughnessy et al., 2019) and our live-cell TIRF-based EGFP-RalGDS translocation assay (Figure 3\u2014figure supplement 4), we were able to show that, in PC12 cells, EGF does indeed activate Rap1 at the plasma membrane. Using Rap1GAP (Figure 3C\u2013F), a dominant negative form of Rap1B (Figure 3\u2014figure supplement 5), and the geranylgeranyl transferase I inhibitor (Figure 3\u2014figure supplement 3), combined with our plasma membrane ERK activity reporter, we further showed that Rap1 is critically involved in regulating plasma membrane ERK activity but does not appear to contribute to the Ras-dependent cytosolic or nuclear ERK activities, whereas Ras appears to primarily contribute to the initial, but not sustained, component of plasma membrane ERK activity (Figure 3\u2014figure supplement 6). Future studies will test the involvement of Rap1 GEFs and B-Raf in Rap1-mediated plasma membrane ERK activation.\n\nFurthermore, our study provides a striking example where an individual extracellular signal, such as EGF, can temporally regulate subcellular ERK populations to control distinct cellular processes. We showed that inhibition of membrane-localized ERK activity potentiates EGF-induced Rac1 activation and leads to enhanced membrane protrusion dynamics. These data suggest that EGF, in addition to inducing cell proliferation, also stimulates plasma membrane ERK activity to suppress Rac1 activity to prevent unwanted membrane protrusions and polarization. The latter effect likely requires the sustained ERK activity at the plasma membrane. It is tempting to speculate that the ERK-suppressed morphology and protrusions are related to PC12 cell differentiation, due to the qualitative resemblance of shape and protrusion dynamics for pmEMBer-expressing cells compared to cells shortly after NGF treatment (Robinson et al., 1998). Thus, spatial and temporal dynamics are intricately linked to encode specific signaling information and regulate distinct cellular processes that result from individual extracellular signals such as EGF. With the genetically targeted molecular tools for both visualization and manipulation of specific signaling events, our work also lays the foundation to enable future studies to further elucidate the mechanisms of regulation and functional roles of distinct subcellular populations of ERK.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SCH772984</td>\n      <td>selleckchem</td>\n      <td>S7101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>U0126</td>\n      <td>Sigma</td>\n      <td>U120</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Epidermal Growth Factor (EGF)</td>\n      <td>Sigma</td>\n      <td>E9644</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-phosphoERK1/2 rabbit, polyclonal</td>\n      <td>Cell Signalling Technology</td>\n      <td>Cat# 9102 RRID:AB_330744</td>\n      <td>(1:1000) dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-ERK1/2 rabbit, polyclonal</td>\n      <td>Cell Signalling Technology</td>\n      <td>Cat# 9101 RRID:AB_331646</td>\n      <td>(1:1000) dilution</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or Kit</td>\n      <td>Lipofectamine-2000</td>\n      <td>Invitrogen</td>\n      <td>11668019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA Reagent</td>\n      <td>pCDNA3 EKAR-EV</td>\n      <td>PMID:21976697</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA Reagent</td>\n      <td>pTriEx4 Rap1A-FLARE</td>\n      <td>PMID:31444239</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA Reagent</td>\n      <td>pTriEx4 Rap1B-FLARE</td>\n      <td>PMID:31444239</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA Reagent</td>\n      <td>pcDNA3 Flag-Rap1GAP</td>\n      <td>PMID:23946483</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA Reagent</td>\n      <td>pcDNA3 EMBer7.1</td>\n      <td>PMID:23227961</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell Line (Rattus norvegicus)</td>\n      <td>PC-12</td>\n      <td>PMID:1065897</td>\n      <td>RRID:CVCL_0481</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell Line (Homo sapiens)</td>\n      <td>HEK293-T</td>\n      <td></td>\n      <td>RRID:CVCL_0063</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FIJI</td>\n      <td></td>\n      <td>RRID:SCR_014294</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MetaFluor</td>\n      <td></td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td></td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Reagents\n\nERK inhibitor SCH772984 was obtained from Sellek chemicals. ERK1/2 (Cell Signaling Technology Cat# 9102, RRID:AB_330744) and phospho-ERK1/2 (Cell Signaling Technology Cat# 9101, RRID:AB_331646) antibodies were from CST. Epidermal growth factor (EGF) was from Sigma-Aldrich.\n\n### Plasmid generation and molecular biology\n\nEKAR-EV was kindly provided by Michiyuki Matsuda. To generate EKAR4, locations of ECFP and Ypet were swapped by restriction digest. Subcellular targeting sequences were subcloned onto the C-terminal end of EKAR4 in between the EcoRI and XbaI restriction sites. The sequences include: for nuclear export sequence (5'-GAATTCCTGCCCCCCCTGGAGCGCCTGACCCTGTAA-3'), for nuclear import sequence (5'-CCAAAAAAGAAGAGAaaggtggaagacgca-3'), and for plasma membrane localization (5'-AAGAAGAAGAAGAAGAGCAAGACCAAGTGCGTGATCATGTAA-3'.) The corresponding peptide sequences are LPPLERLTL, PKKKRKVEDA, and KKKKKSKTKCVIM, respectively. The full annotated sequence for cytoEKAR4 is included as Supplementary file 1 and the sequence for pmEKAR4 is included as Supplementary file 2. Flag-Rap1GAP, Rap1A-N17 and Rap1B-N17, and EGFP-RalGDS was kindly provided by Philip Stork. Flag-Rap1GAP was PCR-purified out of the provided plasmid using the forward primer (5'- gggatctgtacgacgatgacgataagGATCCCATGATTGAGAAGATGCAGGGAAGCAGGA-3\u2019) and reverse primer (5\u2019- ACAGCCCAGCTGGGGCATGCCCTTGCTCACCATGTCGACAAAGGTACC-3\u2019). The PCR product was then subcloned using Gibson assembly into pcDNA3 containing mCherry using the following primers: (5\u2019- TCTGAGCAGCACATGCCCCAGCTGGGCTGTGGTACCTTTGTCGACATGGTGAGCAAGGGC-3\u2019), (5\u2019-cttatcgtcatcgtcgtacagatcccgacc-3\u2019), (5\u2019- ATTGCATCGCATTGTCTGAGTAGGTG-3\u2019), and (5\u2019-CGCTCTTTCTGGTCATCCAGGCGAA-3\u2019). Sequences for ERK monobody binders kindly provided by Sheldon Park. EMBer7.1 was subcloned into pRset containing the mCherry fluorescent protein between the BamHI and SacI sites such that EMBer7.1 would be tagged with mCherry on its C-terminal end. EMBer7.1-mCherry was then subcloned into pcDNA three after silent mutation of the internal BamHI site within EMBer7.1 between the BamHI and EcoRI sites. The plasma membrane targeting sequence was inserted on the C-terminal end of mCherry between the EcoRI and XbaI sites; the subsequent product was termed pmEMBer7.1. Creation of LifeAct-Venus was previously reported (Hertel et al., 2016). Rac1-2g in pTriEx4 was a gift from Oliver Pertz (Addgene plasmid # 66110), and Dora-RhoA was kindly provided by Yi Wu (University of Connecticut). Rap1A-FLARE and Rap1B-FLARE were kindly provided by Klaus Hahn (UNC-Chapel Hill).\n\n### Cell culture and transfection\n\nPC12 cells were grown in Dulbecco modified Eagle medium (DMEM) cell culture medium supplemented with 10% fetal bovine serum (FBS) and 5% donor horse serum (DHS) at 37\u00b0C with 5% CO2. HEK293T cells were maintained using Dulbecco\u2019s Modified Eagle\u2019s Medium (DMEM) supplemented with 10% fetal bovine serum (FBS) and 1% penicillin/streptomycin. Cells were plated onto 35 mm glass-bottom dishes for imaging, 60 mm culture dishes for immunoblotting studies, or 15 cm culture dishes for fractionation studies. When necessary, cells were transfected at 50% to 60% confluence via Lipofectamine 2000 (Invitrogen) for 24\u201348 hr prior to imaging. Cells were recovered from frozen stocks, maintained for limited passages and screened regularly to confirm the absence of mycoplasma contamination using Hoechst staining.\n\n### Cellular fractionation and immunoblotting\n\nPC12 cells were washed 2x with ice cold 1X PBS and harvested in 1X PBS. Cells were centrifuged for 5 min at 5000 RPM at 4 \u00b0C, resuspended in 250 \u00b5L of 1X hypotonic lysis buffer (20 mM HEPES, pH 7.4, 10 mM NaCl, 3 mM MgCl2, Roche protease cocktail inhibitors and 1 mM PMSF), and incubated from 30 min to 1 hr to allow for cell lysis. Cells were passed through a 27 \u00bd G needle 10x to maximize lysis and centrifuged 2x at 5000 RPM to pellet nucleus. BCA quantification was performed and protein levels were normalized to the lowest protein concentration (2\u20132.5 mg/mL). Pellets were washed 2x and combined in 250 \u00b5L of hypotonic buffer. Supernatant was ultracentrifuged at 52,000 RPM for 1 hr at 4 \u00b0C. Supernatant was saved as the cytoplasmic fraction. Membrane pellet was resuspended in 250 \u00b5L of hypotonic buffer and passed sample through a 27 \u00bd G syringe 10x, and centrifuged for 45 min at 52,000 RPM at 4 \u00b0C. Supernatant was combined with the cytoplasmic for a total of 500 \u00b5L. Membrane pellet was resuspended in 250 \u00b5L of hypotonic buffer, combined with the nuclear fractions with membrane fractions and solubilized membrane by adding NP-40 at a final concentration of 0.5%. Lysates were centrifuged 2x at 5000 RPM to pellet nucleus where your supernatant is the membrane fraction. The pellets were combined in 500 mL of hypotonic and sonicated to solubilize. Samples were prepared with LSB+DTT and assessed via SDS-PAGE. 9% gels were resolved and transferred to PVDF membranes. Membranes were blocked for 1 hr in 4% BSA and probed for rb\u03b1Na+/K ATPase+ (1:1000), ms\u03b1P84 (1:2000), ms\u03b1GAPDH (1:50,000), p-ERK (1:1000) and total ERK (1:1000). Phospho-ERK was normalized to total ERK within its corresponding fraction. Fraction of maximal response was obtained and analyzed repeats in Prism via Two-way ANOVA.\n\n### Cellular imaging and analysis\n\n#### Epifluorescence imaging\n\nCells were washed twice with Hank\u2019s balanced salt solution (HBSS, Gibco) and incubated at 37\u00b0C for 30 min prior to imaging. Cells were subsequently imaged in HBSS in the dark at 37\u00b0C. Epidermal growth factor (EGF; Sigma-Aldrich) and SCH772984 (Selleck) were added as indicated; a minimum of three biological replicates (individual dish) were collected for each condition. Images were acquired on a Zeiss AxioObserver Z1 microscope (Carl Zeiss) equipped with a 40\u00d7/1.3NA objective and a Photometrics Evolve 512 EMCCD (Photometrics) controlled by METAFLUOR 7.7 software (Molecular Devices). Dual cyan/yellow emission ratio imaging was performed using a 420DF20 excitation filter, a 450DRLP dichroic mirror and two emission filters (475DF40 for CFP and 535DF25 for YFP). All filter sets were alternated by a Lambda 10\u20132 filter-changer (Sutter Instruments). Exposure times ranged between 50 and 500 ms, with the EM gain set from 10 to 50, and images were acquired every 30 s. Raw fluorescence images were corrected by subtracting the background fluorescence intensity of a cell-free region from the emission intensities of biosensor-expressing cells. Yellow/cyan emission ratios were then calculated at each time point. The resulting time courses were normalized by dividing the ratio at each time point by the basal value at time zero (R/R0), which was defined as the time point immediately preceding drug addition. Maximum ratio (\u0394R/R) changes were calculated as (Rmax\u2212Rmin)/Rmin, where Rmax and Rmin are the maximum and minimum ratio value recorded after stimulation, respectively. Metric for sustained/transient comparisons was calculated as a ratio of remaining C/Y emission ratio 40 min after EGF stimulation to the maximum ratio response (R40-R0)/(Rmax-R0). Where R40 is the ratio at 40 min post-EGF treatment, R0 is the point preceding EGF stimulation, and Rmax is the maximum ratio value recorded after stimulation. Graphs were plotted using GraphPad Prism 7 (GraphPad Software). Sample size reported as number of individual cells.\n\n#### Morphology and protrusion analysis\n\nMorphology was measured using ImageJ software to measure the distance, in microns, of the major and minor axes of each cell, and the ratio of the minor:major axes was compared between cells with versus without pmEMBer expression. Protrusion dynamics was measured using ImageJ software by creating a line across the major axis of each cell, and subsequently creating a kymograph from the stack of time course images. For the kymograph, the x-axis indicated distance (microns) and the y-axis indicated time (30 s per pixel). Using the kymographs, length in distance and time of each protrusion was measured and compared between conditions (Figure 4\u2014figure supplement 2).\n\n#### Total internal reflection microscopy (TIRF)\n\nImages were acquired on an\u00a0Olympus IX-71 inverted microscope under a 150\u00a0\u00d7\u00a0objective. An optical system with a 488 and 561 nm solid-state sapphire, coherent excitation laser and an EMCCD camera (iXon DU897E, Andor Technology) was used to examine the samples (emission, ZET488/561 m, Chroma Technology). Images in green (488 nm) and red (561 nm) channels were taken every 30 s before and after 100 ng/ml EGF stimulation. Resulting time course images were analyzed using ImageJ software. Intensity of each cell was measured throughout time course, ratio of GFP/RFP was taken to account for cell spreading that sometimes occurs after EGF treatment.\n\n#### Statistical analysis\n\nStatistics were calculated using Graphpad Prism seven software. When comparing average metrics of single cell curves, outliers were identified using ROUT with Q + 1%. Reported average is the mean\u00a0\u00b1\u00a0SEM. Experiments comparing multiple conditions were compared were analyzed using Ordinary one-way ANOVA with multiple comparisons. Situations where only two conditions were compared were analyzed by an unpaired t-test, with Welch's correction if variances were shown to be different between the conditions. Statistical significance was assessed using p<0.05 as a cutoff value. In combining single cell data, cells with clear unusual behavior (apoptotic blebbing) were cut from analysis, along with cells with extremely high or low start ratios or unusually bright or dim fluorescence (determined individually per condition by calculating Pearson's correlation coefficient between response metrics and Ratio or fluorescent starting conditions. This analysis was done to remove cells from analysis in which extremely high or low expression of the biosensor affected cell behavior; cells were cut from each condition until Pearson's correlation coefficient was below 0.5.\n",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "3146d140-5661-4f48-b75d-eb4a618fc5eb",
+      "submission_id": "c2d2f9e3-f76e-45c0-b8cc-6a627bdf5431",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Roger J Davis, University of Massachusetts Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57410.sa1](https://doi.org/10.7554/eLife.57410.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study examines the temporal and spatial dynamics of ERK signaling using a newly developed sensor. The authors demonstrate that cell surface signaling to ERK is mediated initially by both Ras and Rap pathways, but long-term ERK activation is mediated by the Rap pathway. This finding provides novel insight into ERK signaling dynamics and clarifies the relative roles of the Ras and Rap pathways.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Signaling diversity enabled by Rap1-regulated plasma membrane ERK with distinct temporal dynamics\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation among the reviewers. Based on these discussions and the individual reviews below, the reviewers concluded that revision of your manuscript would require more than 2 months, and thus we cannot formally invite a revised version according to eLife policy. Nevertheless, the reviewers remain interested in your study and are willing to consider a new version of this manuscript that addresses the points raised during the review.\n\nThis manuscript describes a new probe for ERK activity (EKAR4) that is employed to probe ERK signaling in live cells. A focus of the analysis is a demonstration that cell surface ERK activity is dependent upon the Rap1 signaling pathway. These are elegant and interesting studies. However, further characterization of EKAR4 was requested by the reviewers and additional data to support the conclusions concerning the role of Rap1 are required. These concerns are elaborated in the appended reviews.\n\nReviewer #1:\n\nThis is an interesting study that describes the use of an improved biosensor for ERK activity (EKAR4) to investigate the spatiotemporal dynamics of ERK activity in response to treatment of PC12 cells with EGF. Many of the observations do not break new ground. However, the analysis of the role of Rap1 in cell surface activation of ERK does contribute to an unresolved area of previous research. The authors present data indicating the cell surface ERK activity is sustained and that this depends on Rap1.\n\nThe authors show that Rap1 is activated by EGF and that both RapGAP and dnRap1 suppresses cell surface activation of ERK. The function of cell surface ERK activation was probed using a targeted ERK monobody to demonstrate a role in membrane protrusion that may be mediated by a Rac1-dependent process. The analysis presented uses elegant optical probes and is interesting. However, the depth of mechanistic insight is limited \u2013 thus is a problem for a controversial area of research. For example, a caveat on the interpretation of the RapGAP and dnRap1 studies is that the transfection protocol may cause long-term changes in EGFR signaling due to trafficking or some other EGFR signaling property. It is therefore not certain that Rap1 mediates the effects of EGF on cell surface ERK activity rather than some indirect action of Rap1 on EGFR signaling. Control studies are needed. First, does blocking the Ras pathway prevent cell surface ERK activation? Presumably, if Rap1 (and not Ras) is required for cell surface ERK activation, then blocking Ras would not alter cell surface ERK activation. Second, does acute Rap1-deficiency prevent cell surface ERK activation \u2013 for example using induced Rap1 protein degradation. These studies are required to strengthen the conclusions of the current study and are important because of the existing controversy in this field.\n\nReviewer #2:\n\nGeneral assessment of work:\n\nThis manuscript reports a new genetically encoded FRET sensor for ERK, named EKAR4, which has enhanced dynamic range compared to previous EKAR versions. The EKAR4 construct targeted to the plasma membrane is used to reveal novel evidence for sustained activation of membrane-localized ERK. The sensor is used in combination with inhibitors of Rap1 (Rap1-GAP and DN-Rap1) to address a previous claim that Rap1 is needed for ERK activation, which has been controversial and difficult to corroborate. The results show convincingly that plasma membrane associated ERK is partially dependent on Rap1-GTP. A plasma membrane targeted ERK monobody (EMBer) is used to demonstrate the importance of plasma membrane ERK on cell morphology and membrane protrusions.\n\nThis manuscript represents an important contribution to the signaling field, by describing a new probe for ERK signaling and using it to address long held ambiguities about the activation and function of plasma membrane associated kinase. The experiments are carefully done and the results will be of broad interest.\n\nA number of points are raised to improve accuracy and clarity.\n\nDetailed comments:\n\n1) Figure 1\u2014figure supplement 1, Results paragraph one. It is unclear how the figure shows a 74.5% increase in Y/C emission ratio. Needed is a panel showing the direct comparison of EKAR4 against the previous generation EKARs, to document performance of the new sensor.\n\n2) Figure 2B,C. The Western blot in panel B looks as if phosphoERK at the membrane nearly returns to baseline after 40 min, while phosphoERK in the cytosol remains higher than baseline at 40 min. This seems inconsistent with the quantitative data in panel C.\n\n3) Figure 3\u2014figure supplement 2 panel F. The experiments showing that Rap1GAP does not affect cytoEKAR (EKAR4-NES?) were averaged from n=15, whereas pmEKAR experiments were averaged from n=40. Data for pmEKAR with Rap1GAP showed a wide range of responses, where many time courses overlapped those of control. Concievably cytoEKAR might also show the same, if assayed to the same depth. Alternatively, the Rap1BN17 experiments should be performed with EKAR4-NES to confirm that the cytoplasmic sensor is unresponsive to Rap1 inhibition.\n\nReviewer #3:\n\nKeyes et al. describe a refinement of the EKAR genetically encoded biosensor for Extracellular regulated kinase (ERK) activity. Using similar technology that was used to engineer the original biosensor, the authors have improved sensitivity as evidenced by a 74 % increase in the Y/C emission ratio. More direct comparison to conventional methods of evaluating ERK activation should be also included. While there is no doubt that the development of this new reporter is valuable, the utilization of EKAR4 in this study does not reveal any substantial biological advances.\n\n1) Experiments in Figure 1 suggest that the signal to noise ratio of the membrane associated EKAR4 is less than cytoplasmic. Control experiments need to be included to ensure that the sustained activity metric presented in Figure 1E is really significant. Cytoplasm is spelt wrong in the title of Figure 1C.\n\n2) Additional drug experiments with MEK inhibitors should be added to the data in Figure 2A. Targeting this upstream kinase in the RAF-MEK-ERK pathway is a more standard method of pathway inhibition. These experiments could be used to further justify the development of another ERAR and establish if there are any MEK independent effects.\n\n3) The usage of multiple fluorescent biosensors to detect events upstream ERK signaling such as Rap 1 activations makes this work harder to follow. Also, can the authors show that activation of Eapc1 is involved in this process by treating with selective cAMP analog activators.\n\n4) It is stated in the discussion \"we found that ERK activation in the nucleus was transient, slightly more sustained in the cytoplasm and drastically more sustained near the plasma membrane\". This seems a rather obvious statement since the agonist used to stimulate ERK activation is delivered from the plasma membrane. The authors need to provide more compelling evidence and rational for this conclusion.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Signaling Diversity Enabled by Rap1-Regulated Plasma Membrane ERK with Distinct Temporal Dynamics\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Philip Cole as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nThis manuscript represents an important contribution to the signaling field, by describing a new probe for ERK signaling and using it to address long-held ambiguities about the activation and function of plasma membrane associated kinase. The experiments are carefully done and the results will be of broad interest. The responses to the reviews were thorough and comprehensive. The findings of the revised manuscript are significant and at a level appropriate for this journal.\n\nTwo minor issues should be addressed by the authors before the paper is published.\n\n1) The new supplemental data presented in Figure 3\u2014figure supplement 6 appears to be noisy (particularly figure D). It might help interpretation if the analyses used the same scale for the quantification of the Y/C ratio as figure C. There is a similar issue, but to a lesser extent, with Figure 3\u2014figure supplement 6 (A and C).\n\n2) New immunoblot data presented in Figure 1\u2014figure supplement 5. Please confirm in the figure legend that this figure panel represents the same extract examined in separate blots for ERK and pERK and that this is why two tubulin loading controls are presented. Otherwise, please explain.\n",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c9616775-5143-4568-94cf-bcd083faadf3",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C1",
+      "claim": "ERK is activated by phosphorylation by a host of divergent extracellular signals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because ERK is activated by phosphorylation by a host of divergent extracellular signals, more complex modes of regulation must exist in order to direct ERK activity toward appropriate responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction, drawing from the scientific consensus about ERK activation mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "8b895633-a4f5-48bb-b52e-833f3a0467fb",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C2",
+      "claim": "Different extracellular signals induce distinct temporal patterns of ERK activation to encode specific signaling information.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that different extracellular signals induce distinct temporal patterns of ERK activation to encode specific signaling information (Murphy et al., 2002; Herrero et al., 2016; Sasagawa et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "e44bbebd-9467-4eda-8b72-e2cd5bf224c7",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C3",
+      "claim": "In PC12 cells, EGF treatment leads to transient ERK phosphorylation and cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in model cell lines such as PC12 or MCF7, EGF treatment leads to transient ERK phosphorylation and cell proliferation, whereas alternate extracellular signals such as Nerve Growth Factor (NGF) or heregulin, respectively, induces sustained ERK phosphorylation and cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from previous studies in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "41f047e2-eb78-42e8-b2a6-49e7c5620c07",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C4",
+      "claim": "NGF induces sustained ERK phosphorylation and cell differentiation in PC12 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in model cell lines such as PC12 or MCF7, EGF treatment leads to transient ERK phosphorylation and cell proliferation, whereas alternate extracellular signals such as Nerve Growth Factor (NGF) or heregulin, respectively, induces sustained ERK phosphorylation and cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from previous studies in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "04dadc89-f6df-4e2d-b7c8-005e1440542a",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C5",
+      "claim": "ERK substrates have been identified in many subcellular compartments including at the Golgi Apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "ERK substrates have been identified in many subcellular compartments including at the Golgi Apparatus (Jesch et al., 2001; Shaul and Seger, 2006; Wainstein and Seger, 2016), at the mitochondrial membrane (Tomer et al., 2018; Nagdas et al., 2019), and near the plasma membrane (Mendoza et al., 2015; Mendoza et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "d9c592fe-00bc-42a3-b5e6-e2bd33f92a54",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C6",
+      "claim": "ERK substrates have been identified at the mitochondrial membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "ERK substrates have been identified in many subcellular compartments including at the Golgi Apparatus (Jesch et al., 2001; Shaul and Seger, 2006; Wainstein and Seger, 2016), at the mitochondrial membrane (Tomer et al., 2018; Nagdas et al., 2019), and near the plasma membrane (Mendoza et al., 2015; Mendoza et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "bbada875-7fb1-456c-87fb-80a391d8f7a5",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C7",
+      "claim": "ERK substrates have been identified near the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "ERK substrates have been identified in many subcellular compartments including at the Golgi Apparatus (Jesch et al., 2001; Shaul and Seger, 2006; Wainstein and Seger, 2016), at the mitochondrial membrane (Tomer et al., 2018; Nagdas et al., 2019), and near the plasma membrane (Mendoza et al., 2015; Mendoza et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "da96f6ad-0d63-4d96-bf19-ae2ac6515b3e",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C8",
+      "claim": "EKAR4 was created by swapping the positions of ECFP and Ypet fluorescent proteins within the EKAR-EV biosensor.",
+      "claim_type": "EXPLICIT",
+      "source": "In seeking to develop a new EKAR biosensor with sufficient dynamic range in order to maximize signal when the biosensor is restrained to specific locations, we found that switching the positions of the fluorescent proteins within the EKAR-EV biosensor such that Ypet was positioned C-terminally and ECFP was positioned N-terminally (Figure 1A) yielded a biosensor that generated an 74.5 \u00b1 2.3% increase in the Y/C emission ratio in PC-12 cells (n = 83) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing the biosensor response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "5bdd4055-3def-4510-8a04-7ea3a6512eb4",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C9",
+      "claim": "EKAR4 generates a 74.5 \u00b1 2.3% increase in the Y/C emission ratio in PC-12 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In seeking to develop a new EKAR biosensor with sufficient dynamic range in order to maximize signal when the biosensor is restrained to specific locations, we found that switching the positions of the fluorescent proteins within the EKAR-EV biosensor such that Ypet was positioned C-terminally and ECFP was positioned N-terminally (Figure 1A) yielded a biosensor that generated an 74.5 \u00b1 2.3% increase in the Y/C emission ratio in PC-12 cells (n = 83) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from 83 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "54723b4b-cbd1-47d6-8524-342d004175c0",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C10",
+      "claim": "EKAR4 has a significantly improved dynamic range compared to EKAR2G1 and EKAR-EV in HEK-293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also directly compared EKAR4 to EKAR2G1 and EKAR-EV in HEK-293 cells and observed a significantly improved dynamic range from the previous biosensors (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing the biosensors, shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "2ec9a2e6-3c28-40d0-8f72-669874d69195",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C11",
+      "claim": "EGF induces transient ERK activity in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "EGF induced transient ERK activity in the cytosol and nucleus (Figure 1C, Figure 1\u2014figure supplement 3B,C), consistent with previous reports.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "c516fb3a-865e-4d84-927f-c6969707152d",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C12",
+      "claim": "EGF induces transient ERK activity in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "EGF induced transient ERK activity in the cytosol and nucleus (Figure 1C, Figure 1\u2014figure supplement 3B,C), consistent with previous reports.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "9d1fe807-44b0-4c87-a2c1-1f7548f93690",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C13",
+      "claim": "EGF-stimulated pmEKAR4 response is much more sustained at the plasma membrane compared to cytosol and nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, EGF-stimulated pmEKAR4 response was much more sustained at the plasma membrane (Figure 1D, Figure 1\u2014figure supplement 3A), compared to cytosol and nucleus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "03012d5c-e29e-434a-bad9-23d000333b5f",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C14",
+      "claim": "EKAR4 response at the plasma membrane is statistically different from the cytoplasmic and nuclear ERK responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this metric, we were able to determine that EKAR4 response at the plasma membrane was indeed statistically different from the cytoplasmic and nuclear ERK responses (Figure 1E, Figure 1\u2014figure supplement 3D, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "f55ef36a-ce84-41a1-8fb7-3ce27c4cd0ac",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C15",
+      "claim": "The kinetics of ERK activity accumulation are slower at the plasma membrane versus cytosol and nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also found that the kinetics of ERK activity accumulation were slower at the plasma membrane versus cytosol and nucleus (Figure 1\u2014figure supplement 3F), using the time to \u00bd maximum responses as a proxy (B\u00fcnemann et al., 2003; Ryu et al., 2015; Wan et al., 2019), which is dependent on both ERK and phosphatase activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 3F and citations to methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "1ae605c7-96b1-4d7a-b6f3-8fd9e03e2aa0",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C16",
+      "claim": "Addition of 10 \u00b5M SCH772984 at 10 min after EGF stimulation results in an immediate change in the slope of pmEKAR4 signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that addition of 10 \u00b5M SCH772984, but not of DMSO (Figure 2\u2014figure supplement 1C,D), either at 10 min after EGF stimulation (Figure 2A blue curve) or at 40 min post-stimulation (Figure 2A orange curve) resulted in an immediate change in the slope of pmEKAR4 signal, indicating that ERK was still actively phosphorylating pmEKAR4 at these time points (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "d8e2dc15-bfb3-42e4-9588-afc92c832966",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C17",
+      "claim": "Addition of 10 \u00b5M SCH772984 at 40 min post-stimulation results in an immediate change in the slope of pmEKAR4 signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that addition of 10 \u00b5M SCH772984, but not of DMSO (Figure 2\u2014figure supplement 1C,D), either at 10 min after EGF stimulation (Figure 2A blue curve) or at 40 min post-stimulation (Figure 2A orange curve) resulted in an immediate change in the slope of pmEKAR4 signal, indicating that ERK was still actively phosphorylating pmEKAR4 at these time points (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "e71a268c-8a3a-454e-a038-5614f0bdcbe0",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C18",
+      "claim": "ERK is still actively phosphorylating pmEKAR4 at 10 and 40 minutes after EGF stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that addition of 10 \u00b5M SCH772984, but not of DMSO (Figure 2\u2014figure supplement 1C,D), either at 10 min after EGF stimulation (Figure 2A blue curve) or at 40 min post-stimulation (Figure 2A orange curve) resulted in an immediate change in the slope of pmEKAR4 signal, indicating that ERK was still actively phosphorylating pmEKAR4 at these time points (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the experimental observation that ERK inhibitor addition causes immediate changes in biosensor signal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "c2f3fc58-204a-4701-96ad-2c94b0057ff3",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C19",
+      "claim": "Addition of U0126 at 10 min or 40 min post EGF leads to decreases in the slope of pmEKAR4 signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, addition of U0126, an inhibitor of the upstream kinase MEK, at 10 min or 40 min post EGF also led to decreases in the slope of pmEKAR4 signal (Figure 2\u2014figure supplement 2), indicating MEK was also active.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "b36d4be1-b9c8-4b14-ac98-3b312ee1287e",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C20",
+      "claim": "MEK is active at 10 and 40 minutes after EGF stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, addition of U0126, an inhibitor of the upstream kinase MEK, at 10 min or 40 min post EGF also led to decreases in the slope of pmEKAR4 signal (Figure 2\u2014figure supplement 2), indicating MEK was also active.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the experimental observation that MEK inhibitor addition causes changes in biosensor signal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "34c771d7-dffa-4445-94bc-d52e6c1bd434",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C21",
+      "claim": "ERK associated with the plasma membrane is equally phosphorylated between the 15- and 40 min time points after EGF treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "ERK was phosphorylated transiently in the cytoplasm and ERK associated with the plasma membrane was, on average, equally phosphorylated between the 15- and 40 min time points (Figure 2B, quantitated from five independent replicates in C), indicating the presence of a continuously phosphorylated pool of ERK at the plasma membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by biochemical fractionation data shown in Figure 2B and quantified in Figure 2C from five independent replicates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "0a7e31a0-9d00-4675-a69f-c5dac963281b",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C22",
+      "claim": "ERK is phosphorylated transiently in the cytoplasm after EGF treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "ERK was phosphorylated transiently in the cytoplasm and ERK associated with the plasma membrane was, on average, equally phosphorylated between the 15- and 40 min time points (Figure 2B, quantitated from five independent replicates in C), indicating the presence of a continuously phosphorylated pool of ERK at the plasma membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by biochemical fractionation data shown in Figure 2B and quantified in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "039ee5f2-857d-4322-bc9a-dda16e7f626b",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C23",
+      "claim": "There is a continuously phosphorylated pool of ERK at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "ERK was phosphorylated transiently in the cytoplasm and ERK associated with the plasma membrane was, on average, equally phosphorylated between the 15- and 40 min time points (Figure 2B, quantitated from five independent replicates in C), indicating the presence of a continuously phosphorylated pool of ERK at the plasma membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that plasma membrane ERK phosphorylation remains constant between 15 and 40 minutes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "c9bf5ed5-df35-476b-a49d-1ac939f4cc3e",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C24",
+      "claim": "Rap1 can specifically interact with B-Raf and lead to sustained ERK activity under certain conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has been shown that Rap1, a GTPase in the Ras family, can in some cases specifically interact with B-Raf and lead to sustained ERK activity under certain conditions (Takahashi et al., 2017; Li et al., 2016; York et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "40476835-7151-419c-82f1-4b8b5080e9e4",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C25",
+      "claim": "NGF-induced sustained ERK activation in PC12 cells is mediated through Rap1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, NGF-induced sustained ERK activation in PC12 cells is mediated through Rap1 (York et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "7a92e078-4e93-420a-9f01-d1510343f7ea",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C26",
+      "claim": "Ras activates a rapid and intense ERK response.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent reports suggest that while Ras activates a rapid and intense ERK response, Rap1 induces a slow and steady ERK response (Li et al., 2016), mimicking the observed kinetic difference between responses of pmEKAR4 and cytoEKAR4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "cf529a27-0807-446d-9138-0ccb5269be5b",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C27",
+      "claim": "Rap1 induces a slow and steady ERK response.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent reports suggest that while Ras activates a rapid and intense ERK response, Rap1 induces a slow and steady ERK response (Li et al., 2016), mimicking the observed kinetic difference between responses of pmEKAR4 and cytoEKAR4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "c41b5800-f90d-4570-b643-3fa96b05b95d",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C28",
+      "claim": "Rap1 needs to be localized near the plasma membrane in order to activate the ERK pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Wang et al. showed that in order for Rap1 to activate the ERK pathway, Rap1 needs to be localized near the plasma membrane (Wang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "dae2c9cf-2a44-42b8-bcdd-480a713f7dba",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C29",
+      "claim": "EGF induces activation of Rap1A in PC12 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these biosensors in PC12 cells (see Figure 3\u2014figure supplement 1B for diagram of pathway including inhibitors and biosensors utilized throughout this study), we observed that EGF consistently induced increases in Y/C emission ratios, indicating activation of both Rap1A (25.4 \u00b1 4.7%, n = 11) and Rap1B (26 \u00b1 3.4%, n = 8); this effect was completely abrogated by either co-expression of the Rap1-specific GTPase-activating protein Rap1GAP, which selectively inactivates Rap1 by inducing the hydrolysis of the bound GTP to GDP (Figure 3A,B, red curves, Figure 3\u2014figure supplement 2; Brinkmann et al., 2002; Chen et al., 1997), or by GGTI-298, a geranylgeranyltransferase I inhibitor that has been used to inhibit the processing, and thus action, of Rap1 (Figure 3\u2014figure supplement 3; Chenette and Der, 2011; Ke et al., 2019; McGuire et al., 1996).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 11 cells using Rap1A-FLARE biosensor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "89926f45-0b41-4f65-a467-79c81193a27e",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C30",
+      "claim": "EGF induces activation of Rap1B in PC12 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these biosensors in PC12 cells (see Figure 3\u2014figure supplement 1B for diagram of pathway including inhibitors and biosensors utilized throughout this study), we observed that EGF consistently induced increases in Y/C emission ratios, indicating activation of both Rap1A (25.4 \u00b1 4.7%, n = 11) and Rap1B (26 \u00b1 3.4%, n = 8); this effect was completely abrogated by either co-expression of the Rap1-specific GTPase-activating protein Rap1GAP, which selectively inactivates Rap1 by inducing the hydrolysis of the bound GTP to GDP (Figure 3A,B, red curves, Figure 3\u2014figure supplement 2; Brinkmann et al., 2002; Chen et al., 1997), or by GGTI-298, a geranylgeranyltransferase I inhibitor that has been used to inhibit the processing, and thus action, of Rap1 (Figure 3\u2014figure supplement 3; Chenette and Der, 2011; Ke et al., 2019; McGuire et al., 1996).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 8 cells using Rap1B-FLARE biosensor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "2f3326e2-187c-4057-9a82-a50fcfb1d262",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C31",
+      "claim": "Co-expression of Rap1GAP completely abrogates EGF-induced Rap1A and Rap1B activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these biosensors in PC12 cells (see Figure 3\u2014figure supplement 1B for diagram of pathway including inhibitors and biosensors utilized throughout this study), we observed that EGF consistently induced increases in Y/C emission ratios, indicating activation of both Rap1A (25.4 \u00b1 4.7%, n = 11) and Rap1B (26 \u00b1 3.4%, n = 8); this effect was completely abrogated by either co-expression of the Rap1-specific GTPase-activating protein Rap1GAP, which selectively inactivates Rap1 by inducing the hydrolysis of the bound GTP to GDP (Figure 3A,B, red curves, Figure 3\u2014figure supplement 2; Brinkmann et al., 2002; Chen et al., 1997), or by GGTI-298, a geranylgeranyltransferase I inhibitor that has been used to inhibit the processing, and thus action, of Rap1 (Figure 3\u2014figure supplement 3; Chenette and Der, 2011; Ke et al., 2019; McGuire et al., 1996).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A,B and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "5df1e5f0-38b3-4138-a034-d3cecb7f8ed3",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C32",
+      "claim": "GGTI-298 completely abrogates EGF-induced Rap1A and Rap1B activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these biosensors in PC12 cells (see Figure 3\u2014figure supplement 1B for diagram of pathway including inhibitors and biosensors utilized throughout this study), we observed that EGF consistently induced increases in Y/C emission ratios, indicating activation of both Rap1A (25.4 \u00b1 4.7%, n = 11) and Rap1B (26 \u00b1 3.4%, n = 8); this effect was completely abrogated by either co-expression of the Rap1-specific GTPase-activating protein Rap1GAP, which selectively inactivates Rap1 by inducing the hydrolysis of the bound GTP to GDP (Figure 3A,B, red curves, Figure 3\u2014figure supplement 2; Brinkmann et al., 2002; Chen et al., 1997), or by GGTI-298, a geranylgeranyltransferase I inhibitor that has been used to inhibit the processing, and thus action, of Rap1 (Figure 3\u2014figure supplement 3; Chenette and Der, 2011; Ke et al., 2019; McGuire et al., 1996).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "c1de9ce3-2e75-4bda-830a-4fef81d20f7c",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C33",
+      "claim": "EGF induces an average maximum response of 64.8 \u00b1 11% increase in ratio of EGFP to mCherry at the basal membrane in TIRF microscopy assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cells, EGF induced an average maximum response of 64.8 \u00b1 11% (n = 11) increase in ratio of EGFP to mCherry at the basal membrane, while control cells expressing EGFP showed no changes in EGFP fluorescence intensity at the membrane (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 11 cells using TIRF microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "d33b061f-9dcd-4b34-85fe-1f1b4d79b606",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C34",
+      "claim": "Co-expression of Rap1GAP abolishes the translocation of RBD to the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, co-expression of Rap1GAP abolished the translocation of the RBD, further confirming the specificity of the response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "3ddb6001-b914-45cf-a506-f5e1674cf4ab",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C35",
+      "claim": "Rap1GAP expression significantly dampens pmEKAR4 response.",
+      "claim_type": "EXPLICIT",
+      "source": "Having verified EGF induces Rap1 activation near the plasma membrane, we investigated how abrogation of Rap1 would affect plasma membrane localized ERK activity. We used several different approaches to inhibit Rap1. First, Rap1GAP-mediated inhibition of both Rap1A and Rap1B led to a dramatic dampening of EGF-induced ERK activity near the plasma membrane (Figure 3C,E, and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C,E and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "45f10331-911d-4464-888c-8b223a6f4c07",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C36",
+      "claim": "Rap1GAP has no effect on cytosolic ERK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Rap1GAP had no effect on cytosolic ERK activity (Figure 3D,F), indicating that the effect of Rap1GAP is plasma membrane specific.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "f689caa6-e222-41aa-b691-3cdc327882f9",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C37",
+      "claim": "The effect of Rap1GAP is plasma membrane specific.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Rap1GAP had no effect on cytosolic ERK activity (Figure 3D,F), indicating that the effect of Rap1GAP is plasma membrane specific.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that Rap1GAP affects plasma membrane but not cytosolic ERK activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "e4c4ecb4-1471-400c-9ca4-cbbc3bacbd3e",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C38",
+      "claim": "Rap1B N17 dramatically decreases Rap1B activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, we expressed Rap1A and Rap1B dominant-negative isoforms (Rap1A N17 and Rap1B N17) (Maly et al., 1994). While Rap1A N17 was not able to inhibit Rap1A activation, Rap1B N17 dramatically decreased Rap1B activation (Figure 3\u2014figure supplement 5B,D) and led to a similar effect on pmEKAR response as Rap1GAP expression (Figure 3\u2014figure supplement 5F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 5B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "9d18ee87-1136-4692-ad4a-90958802edcb",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C39",
+      "claim": "Rap1B N17 leads to a similar effect on pmEKAR response as Rap1GAP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, we expressed Rap1A and Rap1B dominant-negative isoforms (Rap1A N17 and Rap1B N17) (Maly et al., 1994). While Rap1A N17 was not able to inhibit Rap1A activation, Rap1B N17 dramatically decreased Rap1B activation (Figure 3\u2014figure supplement 5B,D) and led to a similar effect on pmEKAR response as Rap1GAP expression (Figure 3\u2014figure supplement 5F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 5F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "9070cbb9-e158-4053-897a-074808ebf86b",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C40",
+      "claim": "Acute Rap1A inhibition by GGTI-298 results in a drastically decreased pmEKAR4 response.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, acute Rap1A inhibition by GGTI-298 also resulted in a drastically decreased pmEKAR4 response (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "84bd8b5e-13d5-4be9-bc47-ec4c71913324",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C41",
+      "claim": "Rap1 is critically involved in regulating plasma membrane ERK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that Rap1 is critically involved in regulating plasma membrane ERK activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from multiple experiments showing that Rap1 inhibition reduces plasma membrane ERK activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "39cc4fe9-44aa-46af-9528-799a7ae145f9",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C42",
+      "claim": "Rap1 inhibition does not completely abrogate plasma membrane ERK response.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that Rap1 inhibition does not completely abrogate plasma membrane ERK response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observations from the experimental data showing residual ERK activity after Rap1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "bdcae7c6-06ac-4650-9791-d9c6439f8b15",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C43",
+      "claim": "HRas-N17 completely abolishes cytosolic ERK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus used HRas-N17, a dominant negative form of H-Ras that inhibits all Ras isoforms (Matallanas et al., 2003), to probe how inhibition of Ras affects both cytosolic and plasma membrane localized ERK. We found that cytosolic ERK activity was completely abolished (Figure 3\u2014figure supplement 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "88e6813c-a0d0-4d5f-b563-162adc080676",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C44",
+      "claim": "HRas-N17 alters but does not abolish plasma membrane localized ERK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that plasma membrane localized ERK activity was altered, but not abolished like the cytoEKAR4 response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing the effects of HRas-N17 on plasma membrane versus cytosolic ERK.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "e6b5b84e-7455-4834-bd30-7091344a01ad",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C45",
+      "claim": "The amplitude of pmEKAR4 at 40 min is not different between HRas-N17 expressing cells and control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the amplitude of pmEKAR4 at 40 min was not different between HRas-N17 expressing cells and control cells, indicating that Rap1, not Ras, is responsible for plasma membrane ERK activity at later time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "9dffbfca-c651-4865-bb9b-a1e12733a873",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C46",
+      "claim": "Rap1, not Ras, is responsible for plasma membrane ERK activity at later time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the amplitude of pmEKAR4 at 40 min was not different between HRas-N17 expressing cells and control cells, indicating that Rap1, not Ras, is responsible for plasma membrane ERK activity at later time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that HRas-N17 does not affect late-phase plasma membrane ERK activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "199d503d-fb65-4011-9d38-b99cdc7bd31e",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C47",
+      "claim": "Plasma membrane targeted EMBer significantly reduces ERK activity near the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Using plasma membrane targeted EMBer tagged with mCherry (pmEMBer), we observed a significantly reduced ERK activity near the plasma membrane (Figure 4A) but not in the cytosol (Figure 4B) or nucleus (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "00f07416-d632-48c1-a53e-bad1110c5459",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C48",
+      "claim": "Plasma membrane targeted EMBer does not reduce ERK activity in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Using plasma membrane targeted EMBer tagged with mCherry (pmEMBer), we observed a significantly reduced ERK activity near the plasma membrane (Figure 4A) but not in the cytosol (Figure 4B) or nucleus (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "9a367383-3abe-468c-a16d-75c2ac171fa5",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C49",
+      "claim": "Plasma membrane targeted EMBer does not reduce ERK activity in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Using plasma membrane targeted EMBer tagged with mCherry (pmEMBer), we observed a significantly reduced ERK activity near the plasma membrane (Figure 4A) but not in the cytosol (Figure 4B) or nucleus (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "3cc5c9b7-ee6b-427d-819a-ee2ddf987f8d",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C50",
+      "claim": "In cells expressing pmEMBer, there is an apparent change in cell morphology from primarily circular to primarily elliptical.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing pmEMBer, we first observed an apparent change in cell morphology from primarily circular to primarily elliptical (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by visual observations shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "7d6230fe-e12e-4789-96e6-00209952c51e",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C51",
+      "claim": "In cells without pmEMBer, 58% of imaged cells have a minor:major axes ratio greater than 0.8.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells without pmEMBer, 58% of imaged cells have a minor:major axes ratio greater than 0.8, indicating that the majority of cells were nearly perfectly round.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative morphology analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "5f351592-d4ef-4ff4-9dff-5b8ed6adb63f",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C52",
+      "claim": "42% of pmEMBer expressing cells have a minor:major axes ratio below 0.6.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 42% of pmEMBer expressing cells had a ratio below 0.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative morphology analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "8deb1c61-f7b1-430c-a7a8-8b046abdac90",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C53",
+      "claim": "ERK activity near the membrane has an important role in controlling cell morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "This drastic change in cell morphology, which is dependent on pmEMBer expression at the plasma membrane, indicates that ERK activity near the membrane has an important role in controlling cell morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that pmEMBer expression changes cell morphology.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "a9f89936-c487-460e-82f2-fdf2f8d58b40",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C54",
+      "claim": "In normal conditions, 28% of cells have protrusions longer than 5 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in normal conditions, 28% of cells had protrusions longer than 5 \u00b5m and the protrusions of 25% of these cells lasted for longer than 15 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of protrusion dynamics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "2731c645-0f06-4124-9b62-5fb7fc4a21a3",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C55",
+      "claim": "In normal conditions, 25% of cells have protrusions lasting longer than 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in normal conditions, 28% of cells had protrusions longer than 5 \u00b5m and the protrusions of 25% of these cells lasted for longer than 15 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of protrusion dynamics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "fd869b96-4fbd-4e01-b060-069ae9fcc900",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C56",
+      "claim": "In pmERK-inhibited conditions, 70% of cells have protrusions longer than 5 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in plasma mebrane ERK (pmERK)-inhibited conditions, 70% of cells had protrusions longer than 5 \u00b5m and 75% of pmERK-inhibited cells had protrusions lasting longer than 15 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of protrusion dynamics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "9ae61bc5-98db-442e-92eb-308519751986",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C57",
+      "claim": "In pmERK-inhibited conditions, 75% of cells have protrusions lasting longer than 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in plasma mebrane ERK (pmERK)-inhibited conditions, 70% of cells had protrusions longer than 5 \u00b5m and 75% of pmERK-inhibited cells had protrusions lasting longer than 15 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of protrusion dynamics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "b4e32a32-8399-4aad-bd08-394b59870c9d",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C58",
+      "claim": "Rac1 is a known substrate for ERK.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Rac1 is a known substrate for ERK, and EGF-induced Rac1 phosphorylation by ERK in COS-7 cells was shown to lead to inhibition of Rac1 and its removal from the plasma membrane (Tong et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "6410ed5e-1440-4057-8bc4-108471b04704",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C59",
+      "claim": "EGF-induced Rac1 phosphorylation by ERK in COS-7 cells leads to inhibition of Rac1 and its removal from the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Rac1 is a known substrate for ERK, and EGF-induced Rac1 phosphorylation by ERK in COS-7 cells was shown to lead to inhibition of Rac1 and its removal from the plasma membrane (Tong et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "5e401203-4a69-4f3f-bfc9-4253daa88539",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C60",
+      "claim": "A robust 6.4 \u00b1 0.7% increase in Rac1-2G response to EGF is observed under pmERK-inhibited conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we could not observe RhoA activity under either condition (Figure 4\u2014figure supplement 3C,D,E), using Rac1-2G we did observe a robust 6.4 \u00b1 0.7% increase in response to EGF (n = 19, control; n = 24, with pmEMBer) under pmERK-inhibited conditions but not under control conditions (Figure 4E,F), indicating endogenous pmERK inhibits Rac1 activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 24 cells with pmEMBer shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "06ee81e2-c2b5-476b-bea5-1595563d969a",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C61",
+      "claim": "No Rac1-2G response to EGF is observed under control conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we could not observe RhoA activity under either condition (Figure 4\u2014figure supplement 3C,D,E), using Rac1-2G we did observe a robust 6.4 \u00b1 0.7% increase in response to EGF (n = 19, control; n = 24, with pmEMBer) under pmERK-inhibited conditions but not under control conditions (Figure 4E,F), indicating endogenous pmERK inhibits Rac1 activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 19 control cells shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "525eace8-8ba0-40e8-97a2-754bfa434f21",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C62",
+      "claim": "Endogenous pmERK inhibits Rac1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we could not observe RhoA activity under either condition (Figure 4\u2014figure supplement 3C,D,E), using Rac1-2G we did observe a robust 6.4 \u00b1 0.7% increase in response to EGF (n = 19, control; n = 24, with pmEMBer) under pmERK-inhibited conditions but not under control conditions (Figure 4E,F), indicating endogenous pmERK inhibits Rac1 activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that Rac1 activation is only observed when plasma membrane ERK is inhibited.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "4c3dd01a-ca67-4d41-91b9-91694c2a4cca",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C63",
+      "claim": "Plasma membrane ERK activity inhibits Rac1, which could contribute to the regulation of membrane protrusion dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with previous reports in which ERK phosphorylation of Rac1 on T108 inhibits Rac1 and leads to relocalization of Rac1 away from the membrane (Tong et al., 2013) and indicates that plasma membrane ERK activity inhibits Rac1, which could contribute to the regulation of membrane protrusion dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from experimental data and supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "153bba2f-20ec-4e9c-b47d-bfeda739ce3d",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C64",
+      "claim": "EGF simultaneously activates at least three divergent sub-populations of ERK with unique temporal dynamics: the cytosol, the plasma membrane, and the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we established the use of fluorescent, FRET-based biosensors to study the spatiotemporal dynamics of ERK activity by targeting the biosensors to specific subcellular regions, particularly the plasma membrane, cytosol, and nucleus. Using this technique, we discovered that EGF simultaneously activates at least three divergent sub-populations of ERK with unique temporal dynamics from each other: the cytosol (Figure 1C), the Plasma membrane (Figure 1D), and the nucleus (Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "a9dd5662-e8a2-4835-9bb1-0721fbca9794",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C65",
+      "claim": "The nuclear EKAR4 response exhibits the most transient of the targeted EKAR4 biosensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the nuclear EKAR4 response exhibits the most transient of the targeted EKAR4 biosensors, followed by cytoEKAR4, with the pmEKAR4 exhibiting an apparent persistent response (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "26263e48-34f4-4a18-8a21-336067ba2795",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C66",
+      "claim": "The sustained pmEKAR4 signal is a direct result of continued ERK phosphorylation of the biosensor.",
+      "claim_type": "EXPLICIT",
+      "source": "By using a membrane-permeable ERK inhibitor, we confirmed that the sustained pmEKAR4 signal was a direct result of continued ERK phosphorylation of the biosensor and not because the biosensor was unable to be dephosphorylated by a lack of phosphatases near the membrane (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the experimental observation that ERK inhibitor addition causes immediate changes in biosensor signal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "9999abf8-6562-4535-85dc-54a4f8f22737",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C67",
+      "claim": "EGF does activate Rap1 at the plasma membrane in PC12 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, with the use of recently reported Rap1 biosensors (Figure 3A\u2013B; O'Shaughnessy et al., 2019) and our live-cell TIRF-based EGFP-RalGDS translocation assay (Figure 3\u2014figure supplement 4), we were able to show that, in PC12 cells, EGF does indeed activate Rap1 at the plasma membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data using Rap1 biosensors and TIRF microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "0ba8a193-43e7-4d6e-a900-419eda804704",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C68",
+      "claim": "Rap1 is critically involved in regulating plasma membrane ERK activity but does not appear to contribute to the Ras-dependent cytosolic or nuclear ERK activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Rap1GAP (Figure 3C\u2013F), a dominant negative form of Rap1B (Figure 3\u2014figure supplement 5), and the geranylgeranyl transferase I inhibitor (Figure 3\u2014figure supplement 3), combined with our plasma membrane ERK activity reporter, we further showed that Rap1 is critically involved in regulating plasma membrane ERK activity but does not appear to contribute to the Ras-dependent cytosolic or nuclear ERK activities, whereas Ras appears to primarily contribute to the initial, but not sustained, component of plasma membrane ERK activity (Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by multiple experimental approaches shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "a752cb69-aba7-438d-aa17-4a2b2f501152",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C69",
+      "claim": "Ras appears to primarily contribute to the initial, but not sustained, component of plasma membrane ERK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Rap1GAP (Figure 3C\u2013F), a dominant negative form of Rap1B (Figure 3\u2014figure supplement 5), and the geranylgeranyl transferase I inhibitor (Figure 3\u2014figure supplement 3), combined with our plasma membrane ERK activity reporter, we further showed that Rap1 is critically involved in regulating plasma membrane ERK activity but does not appear to contribute to the Ras-dependent cytosolic or nuclear ERK activities, whereas Ras appears to primarily contribute to the initial, but not sustained, component of plasma membrane ERK activity (Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "fc5ecef3-7b48-4c8f-9f8c-74050b202c95",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C70",
+      "claim": "Inhibition of membrane-localized ERK activity potentiates EGF-induced Rac1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our study provides a striking example where an individual extracellular signal, such as EGF, can temporally regulate subcellular ERK populations to control distinct cellular processes. We showed that inhibition of membrane-localized ERK activity potentiates EGF-induced Rac1 activation and leads to enhanced membrane protrusion dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing increased Rac1 activation when plasma membrane ERK is inhibited.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "95675e6f-ac64-449e-ac24-08584c19f83c",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C71",
+      "claim": "Inhibition of membrane-localized ERK activity leads to enhanced membrane protrusion dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our study provides a striking example where an individual extracellular signal, such as EGF, can temporally regulate subcellular ERK populations to control distinct cellular processes. We showed that inhibition of membrane-localized ERK activity potentiates EGF-induced Rac1 activation and leads to enhanced membrane protrusion dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing changes in protrusion dynamics when plasma membrane ERK is inhibited.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "747c8f8a-42a1-4d14-97b9-f2f2c6b1a732",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C72",
+      "claim": "EGF stimulates plasma membrane ERK activity to suppress Rac1 activity to prevent unwanted membrane protrusions and polarization.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that EGF, in addition to inducing cell proliferation, also stimulates plasma membrane ERK activity to suppress Rac1 activity to prevent unwanted membrane protrusions and polarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations about the relationship between plasma membrane ERK, Rac1, and protrusion dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "387bd9b9-4e05-4902-bc3c-94d02adf8e3d",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C73",
+      "claim": "The sustained ERK activity at the plasma membrane is required for the effect on morphology and protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter effect likely requires the sustained ERK activity at the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed sustained ERK activity and its functional effects.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "bf111612-0a98-4ff4-92ac-af147ce10d15",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "claim_id": "C74",
+      "claim": "Spatial and temporal dynamics are intricately linked to encode specific signaling information and regulate distinct cellular processes that result from individual extracellular signals such as EGF.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, spatial and temporal dynamics are intricately linked to encode specific signaling information and regulate distinct cellular processes that result from individual extracellular signals such as EGF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the experimental findings presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b71f8451-b6d6-4012-9119-f2922481b33e",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed EKAR4, a new FRET-based ERK biosensor with improved dynamic range. EKAR4 was created by swapping the positions of ECFP and Ypet fluorescent proteins within the EKAR-EV biosensor, generating a 74.5 \u00b1 2.3% increase in Y/C emission ratio in PC-12 cells (n=83) and showing significantly improved dynamic range compared to EKAR2G1 and EKAR-EV in HEK-293 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 provide converging evidence for the development and characterization of EKAR4. The biosensor design is clearly described (C8), quantitative performance data with adequate sample size is provided (C9, n=83), and comparative validation against previous biosensors is shown (C10). The experimental approach is sound and the data support the conclusion of improved biosensor performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "e5a82240-cc9d-4b4c-b90e-572dd7e7d24c",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "EGF induces spatially distinct ERK activity dynamics in different subcellular compartments. EGF induces transient ERK activity in the cytosol and nucleus, but sustained ERK activity at the plasma membrane. The plasma membrane ERK response is statistically different from cytoplasmic and nuclear responses, with slower kinetics of ERK activity accumulation at the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15, C64-C65 collectively demonstrate spatially distinct ERK dynamics using targeted EKAR4 biosensors. The data show clear differences in temporal patterns between compartments with statistical validation (C14) and quantitative metrics (SAM40). Sample sizes are adequate (n=71-83 cells) and the findings are internally consistent across multiple figures. This represents a core finding of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "9467fbd0-4f05-418e-9435-47fe917749ef",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The sustained plasma membrane ERK activity is due to continued active ERK phosphorylation rather than lack of dephosphorylation. Addition of ERK inhibitor SCH772984 or MEK inhibitor U0126 at 10 or 40 minutes post-EGF stimulation causes immediate changes in pmEKAR4 signal slope, indicating that ERK and MEK remain actively phosphorylating the biosensor at these time points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20, C66 provide strong evidence through pharmacological inhibition experiments. The immediate response to inhibitor addition at multiple time points (10 and 40 min) demonstrates ongoing kinase activity. DMSO controls are included (Figure 2\u2014figure supplement 1C,D), and both ERK and MEK inhibitors show consistent effects. The inference that sustained signal reflects active phosphorylation (C18, C20, C66) is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "29cef8a5-e4f1-4cff-94b9-6297d6a04fa8",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Biochemical fractionation experiments confirm the presence of a continuously phosphorylated pool of ERK at the plasma membrane. ERK phosphorylation is transient in the cytoplasm but remains equally phosphorylated at the plasma membrane between 15 and 40 minutes after EGF treatment, as shown by five independent replicates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by orthogonal biochemical validation (Figure 2B,C) with adequate replication (n=5 independent replicates). The fractionation approach provides independent confirmation of the biosensor data. The inference of a continuously phosphorylated pool (C23) is reasonable given the sustained phosphorylation levels between 15-40 min. However, the manuscript notes that the decrease in phospho-ERK by immunoblot is faster than EKAR signal, likely due to phosphatase activity differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "f74005da-d8c0-4e53-945a-d17b74515553",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "EGF induces activation of both Rap1A and Rap1B at the plasma membrane in PC12 cells. Using Rap1-FLARE biosensors and TIRF-based EGFP-RalGDS translocation assays, the authors demonstrate that EGF induces Rap1A (25.4 \u00b1 4.7%, n=11) and Rap1B (26 \u00b1 3.4%, n=8) activation, which is completely abrogated by Rap1GAP or GGTI-298.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34, C67 provide multiple lines of evidence for EGF-induced Rap1 activation using complementary approaches (FRET biosensors and TIRF translocation assays). Sample sizes are modest but adequate for biosensor studies. The specificity is validated through Rap1GAP and GGTI-298 inhibition. This addresses a controversial point in the literature and provides clear evidence for Rap1 activation by EGF in PC12 cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "eb1fe75a-6e95-4281-9470-1fdf2c940af9",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Rap1 is critically involved in regulating plasma membrane ERK activity but does not contribute to cytosolic or nuclear ERK activities. Multiple approaches to inhibit Rap1 (Rap1GAP, Rap1B N17, GGTI-298) dramatically dampen plasma membrane ERK activity while having no effect on cytosolic ERK activity, indicating plasma membrane-specific regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41, C68 demonstrate Rap1's role through multiple independent inhibition strategies with consistent results. The spatial specificity (plasma membrane vs. cytosol) is clearly shown (C35-C37). However, the authors acknowledge that Rap1 inhibition does not completely abolish plasma membrane ERK response (C42), suggesting additional regulatory mechanisms. The convergence of multiple approaches strengthens the conclusion despite incomplete inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "f3cd6675-2555-4d74-afa7-1bc012263fa0",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ras contributes primarily to the initial, but not sustained, component of plasma membrane ERK activity. HRas-N17 completely abolishes cytosolic ERK activity but only alters (not abolishes) plasma membrane ERK activity. The amplitude of pmEKAR4 at 40 min is not different between HRas-N17 expressing cells and controls, indicating Rap1, not Ras, is responsible for late-phase plasma membrane ERK activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46, C69 provide evidence for differential roles of Ras and Rap1 in plasma membrane ERK regulation. The complete abolition of cytosolic ERK by HRas-N17 (C43) contrasts with the partial effect on plasma membrane ERK (C44), and the lack of effect at 40 min (C45) supports the temporal distinction. The inference that Rap1 is responsible for late-phase activity (C46, C69) is reasonable given the data, though it relies on the assumption that HRas-N17 effectively inhibits all Ras isoforms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "720fdcbb-d0cb-4852-95ae-c8acfeac9889",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Plasma membrane-targeted EMBer (pmEMBer) specifically inhibits ERK activity at the plasma membrane without affecting cytosolic or nuclear ERK activity. This demonstrates the spatial specificity of the inhibition tool and validates its use for functional studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 demonstrate the spatial specificity of pmEMBer inhibition through targeted biosensor measurements in different compartments. The data show selective inhibition at the plasma membrane (C47) with no effect in cytosol (C48) or nucleus (C49), validating the tool for subsequent functional experiments. This is critical for establishing causality in the morphology and protrusion experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "8a4d8a10-8760-4b3a-b867-0b2e3daac8b6",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Inhibition of plasma membrane ERK activity causes dramatic changes in cell morphology. Cells expressing pmEMBer shift from primarily circular (58% with minor:major axis ratio >0.8 in controls) to primarily elliptical (42% with ratio <0.6 with pmEMBer), indicating that plasma membrane ERK activity has an important role in controlling cell morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 provide quantitative morphological analysis showing clear differences between control and pmEMBer-expressing cells. The shift in axis ratio distribution is substantial and well-documented. The inference that plasma membrane ERK controls morphology (C53) is reasonable given the dependence on pmEMBer expression, though the sample sizes for the morphology analysis are not explicitly stated in the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "05fc68b3-efff-4322-88ec-d29ed444f54a",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Inhibition of plasma membrane ERK activity leads to enhanced membrane protrusion dynamics. Under pmERK-inhibited conditions, 70% of cells have protrusions longer than 5 \u00b5m (vs. 28% in controls) and 75% have protrusions lasting longer than 15 min (vs. 25% in controls), demonstrating that plasma membrane ERK activity regulates protrusion dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57, C70-C71 provide quantitative analysis of protrusion dynamics using kymograph analysis. The differences between control and pmEMBer conditions are substantial and clearly documented. Sample sizes are adequate (n=103 control, n=57 pmEMBer from Figure 4D). The conclusion that plasma membrane ERK regulates protrusion dynamics is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "d599db84-2630-4d32-bb7b-e0dd7dae17d0",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Plasma membrane ERK activity inhibits Rac1 activation. Using the Rac1-2G biosensor, a robust 6.4 \u00b1 0.7% increase in Rac1 activity is observed under pmERK-inhibited conditions (n=24) but not under control conditions (n=19), indicating that endogenous plasma membrane ERK inhibits Rac1 activation, which could contribute to regulation of membrane protrusion dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 provide mechanistic insight linking plasma membrane ERK to Rac1 regulation. The Rac1-2G biosensor data show clear activation only when plasma membrane ERK is inhibited, with adequate sample sizes. The inference that pmERK inhibits Rac1 (C62) is well-supported. The connection to protrusion dynamics (C63) is reasonable given prior literature (C58-C59) and the observed phenotypes, though the causal chain could be strengthened with additional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "520d99be-ad68-4d6a-93a7-b1ef15cc82f5",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose that EGF stimulates plasma membrane ERK activity to suppress Rac1 and prevent unwanted membrane protrusions and polarization, and that sustained ERK activity at the plasma membrane is required for this effect. They conclude that spatial and temporal dynamics are intricately linked to encode specific signaling information and regulate distinct cellular processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C74 represent interpretive conclusions that extend beyond the direct experimental evidence. While the data support that plasma membrane ERK inhibits Rac1 and affects protrusions, the claim that this 'prevents unwanted' protrusions (C72) is speculative. The requirement for sustained activity (C73) is explicitly noted as speculative ('likely requires'). The broader conclusion about spatiotemporal encoding (C74) is a reasonable synthesis but represents an interpretive framework rather than a directly tested hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "a7ea08c4-8cf7-497c-86d8-b8c71ffcdc09",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing that ERK is activated by diverse extracellular signals, that different signals induce distinct temporal patterns of ERK activation, and that ERK substrates are found in multiple subcellular compartments including the Golgi, mitochondria, and plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 represent established background knowledge supported by citations to prior literature. These provide context for the current study but are not novel findings. The claims are appropriately cited and represent accurate summaries of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "d019ee25-9ab7-4a19-af4f-0b1d67c4952b",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing that Rap1 can interact with B-Raf to produce sustained ERK activity, that NGF-induced sustained ERK in PC12 cells is mediated through Rap1, that Ras activates rapid/intense ERK while Rap1 induces slow/steady ERK, and that Rap1 needs to be localized near the plasma membrane to activate ERK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 represent prior literature that motivates the current study's focus on Rap1. These are appropriately cited and provide important context for why the authors investigated Rap1's role in plasma membrane ERK activity. The claims accurately represent the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "976bc7ec-a3ed-487a-933c-a51f07a1e197",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establishing that Rac1 is a known ERK substrate and that EGF-induced Rac1 phosphorylation by ERK in COS-7 cells leads to Rac1 inhibition and removal from the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 cite prior literature (Tong et al., 2013) that provides mechanistic context for the observed Rac1 regulation by plasma membrane ERK. These background claims are appropriately used to interpret the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    },
+    {
+      "id": "36c25cec-e2d4-420f-8d27-c702ab9b90bc",
+      "content_id": "821ac314-7591-4ff1-bac0-83bd1d338a80",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors acknowledge that Rap1 inhibition does not completely abrogate plasma membrane ERK response, suggesting additional regulatory mechanisms beyond Rap1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 represents an important caveat noted by the authors based on their experimental observations. This acknowledgment of incomplete inhibition is appropriate and suggests complexity in the regulatory mechanisms. This honest assessment strengthens rather than weakens the overall conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:22:14.275073Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "da96f6ad-0d63-4d96-bf19-ae2ac6515b3e",
+      "result_id": "b71f8451-b6d6-4012-9119-f2922481b33e"
+    },
+    {
+      "claim_id": "5bdd4055-3def-4510-8a04-7ea3a6512eb4",
+      "result_id": "b71f8451-b6d6-4012-9119-f2922481b33e"
+    },
+    {
+      "claim_id": "54723b4b-cbd1-47d6-8524-342d004175c0",
+      "result_id": "b71f8451-b6d6-4012-9119-f2922481b33e"
+    },
+    {
+      "claim_id": "2ec9a2e6-3c28-40d0-8f72-669874d69195",
+      "result_id": "e5a82240-cc9d-4b4c-b90e-572dd7e7d24c"
+    },
+    {
+      "claim_id": "c516fb3a-865e-4d84-927f-c6969707152d",
+      "result_id": "e5a82240-cc9d-4b4c-b90e-572dd7e7d24c"
+    },
+    {
+      "claim_id": "9d1fe807-44b0-4c87-a2c1-1f7548f93690",
+      "result_id": "e5a82240-cc9d-4b4c-b90e-572dd7e7d24c"
+    },
+    {
+      "claim_id": "03012d5c-e29e-434a-bad9-23d000333b5f",
+      "result_id": "e5a82240-cc9d-4b4c-b90e-572dd7e7d24c"
+    },
+    {
+      "claim_id": "f55ef36a-ce84-41a1-8fb7-3ce27c4cd0ac",
+      "result_id": "e5a82240-cc9d-4b4c-b90e-572dd7e7d24c"
+    },
+    {
+      "claim_id": "153bba2f-20ec-4e9c-b47d-bfeda739ce3d",
+      "result_id": "e5a82240-cc9d-4b4c-b90e-572dd7e7d24c"
+    },
+    {
+      "claim_id": "a9dd5662-e8a2-4835-9bb1-0721fbca9794",
+      "result_id": "e5a82240-cc9d-4b4c-b90e-572dd7e7d24c"
+    },
+    {
+      "claim_id": "1ae605c7-96b1-4d7a-b6f3-8fd9e03e2aa0",
+      "result_id": "9467fbd0-4f05-418e-9435-47fe917749ef"
+    },
+    {
+      "claim_id": "d8e2dc15-bfb3-42e4-9588-afc92c832966",
+      "result_id": "9467fbd0-4f05-418e-9435-47fe917749ef"
+    },
+    {
+      "claim_id": "e71a268c-8a3a-454e-a038-5614f0bdcbe0",
+      "result_id": "9467fbd0-4f05-418e-9435-47fe917749ef"
+    },
+    {
+      "claim_id": "c2f3fc58-204a-4701-96ad-2c94b0057ff3",
+      "result_id": "9467fbd0-4f05-418e-9435-47fe917749ef"
+    },
+    {
+      "claim_id": "b36d4be1-b9c8-4b14-ac98-3b312ee1287e",
+      "result_id": "9467fbd0-4f05-418e-9435-47fe917749ef"
+    },
+    {
+      "claim_id": "26263e48-34f4-4a18-8a21-336067ba2795",
+      "result_id": "9467fbd0-4f05-418e-9435-47fe917749ef"
+    },
+    {
+      "claim_id": "34c771d7-dffa-4445-94bc-d52e6c1bd434",
+      "result_id": "29cef8a5-e4f1-4cff-94b9-6297d6a04fa8"
+    },
+    {
+      "claim_id": "0a7e31a0-9d00-4675-a69f-c5dac963281b",
+      "result_id": "29cef8a5-e4f1-4cff-94b9-6297d6a04fa8"
+    },
+    {
+      "claim_id": "039ee5f2-857d-4322-bc9a-dda16e7f626b",
+      "result_id": "29cef8a5-e4f1-4cff-94b9-6297d6a04fa8"
+    },
+    {
+      "claim_id": "dae2c9cf-2a44-42b8-bcdd-480a713f7dba",
+      "result_id": "f74005da-d8c0-4e53-945a-d17b74515553"
+    },
+    {
+      "claim_id": "89926f45-0b41-4f65-a467-79c81193a27e",
+      "result_id": "f74005da-d8c0-4e53-945a-d17b74515553"
+    },
+    {
+      "claim_id": "2f3326e2-187c-4057-9a82-a50fcfb1d262",
+      "result_id": "f74005da-d8c0-4e53-945a-d17b74515553"
+    },
+    {
+      "claim_id": "5df1e5f0-38b3-4138-a034-d3cecb7f8ed3",
+      "result_id": "f74005da-d8c0-4e53-945a-d17b74515553"
+    },
+    {
+      "claim_id": "c1de9ce3-2e75-4bda-830a-4fef81d20f7c",
+      "result_id": "f74005da-d8c0-4e53-945a-d17b74515553"
+    },
+    {
+      "claim_id": "d33b061f-9dcd-4b34-85fe-1f1b4d79b606",
+      "result_id": "f74005da-d8c0-4e53-945a-d17b74515553"
+    },
+    {
+      "claim_id": "9999abf8-6562-4535-85dc-54a4f8f22737",
+      "result_id": "f74005da-d8c0-4e53-945a-d17b74515553"
+    },
+    {
+      "claim_id": "3ddb6001-b914-45cf-a506-f5e1674cf4ab",
+      "result_id": "eb1fe75a-6e95-4281-9470-1fdf2c940af9"
+    },
+    {
+      "claim_id": "45f10331-911d-4464-888c-8b223a6f4c07",
+      "result_id": "eb1fe75a-6e95-4281-9470-1fdf2c940af9"
+    },
+    {
+      "claim_id": "f689caa6-e222-41aa-b691-3cdc327882f9",
+      "result_id": "eb1fe75a-6e95-4281-9470-1fdf2c940af9"
+    },
+    {
+      "claim_id": "e4c4ecb4-1471-400c-9ca4-cbbc3bacbd3e",
+      "result_id": "eb1fe75a-6e95-4281-9470-1fdf2c940af9"
+    },
+    {
+      "claim_id": "9d18ee87-1136-4692-ad4a-90958802edcb",
+      "result_id": "eb1fe75a-6e95-4281-9470-1fdf2c940af9"
+    },
+    {
+      "claim_id": "9070cbb9-e158-4053-897a-074808ebf86b",
+      "result_id": "eb1fe75a-6e95-4281-9470-1fdf2c940af9"
+    },
+    {
+      "claim_id": "84bd8b5e-13d5-4be9-bc47-ec4c71913324",
+      "result_id": "eb1fe75a-6e95-4281-9470-1fdf2c940af9"
+    },
+    {
+      "claim_id": "0ba8a193-43e7-4d6e-a900-419eda804704",
+      "result_id": "eb1fe75a-6e95-4281-9470-1fdf2c940af9"
+    },
+    {
+      "claim_id": "bdcae7c6-06ac-4650-9791-d9c6439f8b15",
+      "result_id": "f3cd6675-2555-4d74-afa7-1bc012263fa0"
+    },
+    {
+      "claim_id": "88e6813c-a0d0-4d5f-b563-162adc080676",
+      "result_id": "f3cd6675-2555-4d74-afa7-1bc012263fa0"
+    },
+    {
+      "claim_id": "e6b5b84e-7455-4834-bd30-7091344a01ad",
+      "result_id": "f3cd6675-2555-4d74-afa7-1bc012263fa0"
+    },
+    {
+      "claim_id": "9dffbfca-c651-4865-bb9b-a1e12733a873",
+      "result_id": "f3cd6675-2555-4d74-afa7-1bc012263fa0"
+    },
+    {
+      "claim_id": "a752cb69-aba7-438d-aa17-4a2b2f501152",
+      "result_id": "f3cd6675-2555-4d74-afa7-1bc012263fa0"
+    },
+    {
+      "claim_id": "199d503d-fb65-4011-9d38-b99cdc7bd31e",
+      "result_id": "720fdcbb-d0cb-4852-95ae-c8acfeac9889"
+    },
+    {
+      "claim_id": "00f07416-d632-48c1-a53e-bad1110c5459",
+      "result_id": "720fdcbb-d0cb-4852-95ae-c8acfeac9889"
+    },
+    {
+      "claim_id": "9a367383-3abe-468c-a16d-75c2ac171fa5",
+      "result_id": "720fdcbb-d0cb-4852-95ae-c8acfeac9889"
+    },
+    {
+      "claim_id": "3cc5c9b7-ee6b-427d-819a-ee2ddf987f8d",
+      "result_id": "8a4d8a10-8760-4b3a-b867-0b2e3daac8b6"
+    },
+    {
+      "claim_id": "7d6230fe-e12e-4789-96e6-00209952c51e",
+      "result_id": "8a4d8a10-8760-4b3a-b867-0b2e3daac8b6"
+    },
+    {
+      "claim_id": "5f351592-d4ef-4ff4-9dff-5b8ed6adb63f",
+      "result_id": "8a4d8a10-8760-4b3a-b867-0b2e3daac8b6"
+    },
+    {
+      "claim_id": "8deb1c61-f7b1-430c-a7a8-8b046abdac90",
+      "result_id": "8a4d8a10-8760-4b3a-b867-0b2e3daac8b6"
+    },
+    {
+      "claim_id": "a9f89936-c487-460e-82f2-fdf2f8d58b40",
+      "result_id": "05fc68b3-efff-4322-88ec-d29ed444f54a"
+    },
+    {
+      "claim_id": "2731c645-0f06-4124-9b62-5fb7fc4a21a3",
+      "result_id": "05fc68b3-efff-4322-88ec-d29ed444f54a"
+    },
+    {
+      "claim_id": "fd869b96-4fbd-4e01-b060-069ae9fcc900",
+      "result_id": "05fc68b3-efff-4322-88ec-d29ed444f54a"
+    },
+    {
+      "claim_id": "9ae61bc5-98db-442e-92eb-308519751986",
+      "result_id": "05fc68b3-efff-4322-88ec-d29ed444f54a"
+    },
+    {
+      "claim_id": "fc5ecef3-7b48-4c8f-9f8c-74050b202c95",
+      "result_id": "05fc68b3-efff-4322-88ec-d29ed444f54a"
+    },
+    {
+      "claim_id": "95675e6f-ac64-449e-ac24-08584c19f83c",
+      "result_id": "05fc68b3-efff-4322-88ec-d29ed444f54a"
+    },
+    {
+      "claim_id": "5e401203-4a69-4f3f-bfc9-4253daa88539",
+      "result_id": "d599db84-2630-4d32-bb7b-e0dd7dae17d0"
+    },
+    {
+      "claim_id": "06ee81e2-c2b5-476b-bea5-1595563d969a",
+      "result_id": "d599db84-2630-4d32-bb7b-e0dd7dae17d0"
+    },
+    {
+      "claim_id": "525eace8-8ba0-40e8-97a2-754bfa434f21",
+      "result_id": "d599db84-2630-4d32-bb7b-e0dd7dae17d0"
+    },
+    {
+      "claim_id": "4c3dd01a-ca67-4d41-91b9-91694c2a4cca",
+      "result_id": "d599db84-2630-4d32-bb7b-e0dd7dae17d0"
+    },
+    {
+      "claim_id": "747c8f8a-42a1-4d14-97b9-f2f2c6b1a732",
+      "result_id": "520d99be-ad68-4d6a-93a7-b1ef15cc82f5"
+    },
+    {
+      "claim_id": "387bd9b9-4e05-4902-bc3c-94d02adf8e3d",
+      "result_id": "520d99be-ad68-4d6a-93a7-b1ef15cc82f5"
+    },
+    {
+      "claim_id": "bf111612-0a98-4ff4-92ac-af147ce10d15",
+      "result_id": "520d99be-ad68-4d6a-93a7-b1ef15cc82f5"
+    },
+    {
+      "claim_id": "c9616775-5143-4568-94cf-bcd083faadf3",
+      "result_id": "a7ea08c4-8cf7-497c-86d8-b8c71ffcdc09"
+    },
+    {
+      "claim_id": "8b895633-a4f5-48bb-b52e-833f3a0467fb",
+      "result_id": "a7ea08c4-8cf7-497c-86d8-b8c71ffcdc09"
+    },
+    {
+      "claim_id": "e44bbebd-9467-4eda-8b72-e2cd5bf224c7",
+      "result_id": "a7ea08c4-8cf7-497c-86d8-b8c71ffcdc09"
+    },
+    {
+      "claim_id": "41f047e2-eb78-42e8-b2a6-49e7c5620c07",
+      "result_id": "a7ea08c4-8cf7-497c-86d8-b8c71ffcdc09"
+    },
+    {
+      "claim_id": "04dadc89-f6df-4e2d-b7c8-005e1440542a",
+      "result_id": "a7ea08c4-8cf7-497c-86d8-b8c71ffcdc09"
+    },
+    {
+      "claim_id": "d9c592fe-00bc-42a3-b5e6-e2bd33f92a54",
+      "result_id": "a7ea08c4-8cf7-497c-86d8-b8c71ffcdc09"
+    },
+    {
+      "claim_id": "bbada875-7fb1-456c-87fb-80a391d8f7a5",
+      "result_id": "a7ea08c4-8cf7-497c-86d8-b8c71ffcdc09"
+    },
+    {
+      "claim_id": "c9bf5ed5-df35-476b-a49d-1ac939f4cc3e",
+      "result_id": "d019ee25-9ab7-4a19-af4f-0b1d67c4952b"
+    },
+    {
+      "claim_id": "40476835-7151-419c-82f1-4b8b5080e9e4",
+      "result_id": "d019ee25-9ab7-4a19-af4f-0b1d67c4952b"
+    },
+    {
+      "claim_id": "7a92e078-4e93-420a-9f01-d1510343f7ea",
+      "result_id": "d019ee25-9ab7-4a19-af4f-0b1d67c4952b"
+    },
+    {
+      "claim_id": "cf529a27-0807-446d-9138-0ccb5269be5b",
+      "result_id": "d019ee25-9ab7-4a19-af4f-0b1d67c4952b"
+    },
+    {
+      "claim_id": "c41b5800-f90d-4570-b643-3fa96b05b95d",
+      "result_id": "d019ee25-9ab7-4a19-af4f-0b1d67c4952b"
+    },
+    {
+      "claim_id": "b4e32a32-8399-4aad-bd08-394b59870c9d",
+      "result_id": "976bc7ec-a3ed-487a-933c-a51f07a1e197"
+    },
+    {
+      "claim_id": "6410ed5e-1440-4057-8bc4-108471b04704",
+      "result_id": "976bc7ec-a3ed-487a-933c-a51f07a1e197"
+    },
+    {
+      "claim_id": "39cc4fe9-44aa-46af-9528-799a7ae145f9",
+      "result_id": "36c25cec-e2d4-420f-8d27-c702ab9b90bc"
+    }
+  ],
+  "comparisons": []
+}

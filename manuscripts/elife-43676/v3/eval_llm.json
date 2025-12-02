@@ -1,0 +1,386 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Two crystal structures of SETD3 in complex with \u03b2-actin peptides were determined: a 1.95 \u00c5 structure with methylated \u03b2-actin (post-methyl transfer state) and a 2.15 \u00c5 structure with unmodified \u03b2-actin (pre-methyl transfer state). The methylation in the first structure occurred during crystallization due to AdoMet from E. coli binding to SETD3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32, C38 provide the core structural data with appropriate resolution and crystallographic details (C33, C34, C39). The interpretation of pre- and post-methyl transfer states (C37, C41) is supported by density map analysis (C35, C40) and the mechanistic explanation for unexpected methylation (C36) is reasonable given the experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "SETD3 adopts a V-shaped architecture composed of N-SET, SET, iSET, and C-SET domains. The overall fold is highly similar to LSMT and SETD6 (RMSD 3.8 \u00c5 and 2.8 \u00c5, respectively) despite low sequence identity (24-25%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 provide detailed structural descriptions of SETD3 domains with appropriate secondary structure assignments. The structural similarity to LSMT and SETD6 (C48) is supported by DALI server analysis with quantitative metrics (Z-scores, RMSD values), providing robust comparative structural evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "AdoHcy binds in a cleft formed by SET and C-SET domains with extensive hydrogen bonding and stacking interactions. The binding mode is similar to LSMT and SETD6, with conserved residues (Asn278, His279, Phe327) and SETD3-specific residue Arg75.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 provide detailed molecular interactions supported by structural data. The comparative analysis (C58-C61) with LSMT and SETD6 identifies both conserved and unique binding residues. Conservation analysis (C57) supports functional conservation across SETD3 orthologs. The structural evidence is comprehensive and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In the substrate-bound structure, the \u03b2-actin peptide binds in a narrow groove with His73 positioned in a hydrophobic pocket. Peptide binding induces conformational changes in SETD3, with loops shifting 4.2-6.8 \u00c5. The N3 atom of His73 is 3.7 \u00c5 from the AdoHcy sulfur atom, consistent with a pre-methyl transfer state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C71 describe the substrate-bound complex with specific structural details including distances, hydrogen bonds, and conformational changes. The 3.7 \u00c5 distance (C71) is appropriate for a pre-catalytic state. The conformational changes (C64, C65) are quantified and supported by structural comparison. The molecular interactions are detailed and consistent with the crystallographic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In the product-bound structure, His73 is methylated (His73me) with the methyl group 3.2 \u00c5 from AdoHcy sulfur. The imidazole ring rotates ~90\u00b0 after methylation while maintaining hydrogen bonds with Tyr313 and Arg316. The substrate and product complexes are highly similar (RMSD 0.19 \u00c5 for protein, 0.32 \u00c5 for peptide).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 describe the product complex with quantitative structural data. The 90\u00b0 rotation (C76) is a key mechanistic finding supported by structural superposition (C73). The maintained hydrogen bonds (C75) and new interaction with Asn256 (C77) are consistent with the structural data. The low RMSD values indicate minimal overall conformational change despite the rotation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "SETD3's histidine-binding pocket is too shallow for lysine and lacks the phenylalanine found in lysine methyltransferases. Instead, Asn256 in SETD3 creates histidine-specific interactions, explaining why SETD3 is a histidine rather than lysine methyltransferase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 provide structural rationale for substrate specificity. The shallow pocket argument (C78) and potential steric clashes (C79) are reasonable based on structural comparison. The Asn256 substitution (C80, C81) is supported by structural data and mutagenesis (referenced in later claims). This represents a key mechanistic insight distinguishing SETD3 from lysine methyltransferases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Residues flanking His73 in \u03b2-actin make extensive contacts with SETD3. The N-terminal region (Leu67-Glu72) contacts the SET domain, while the C-terminal region (Gly74-Glu83) contacts the iSET domain. These interactions involve hydrophobic contacts, hydrogen bonds, and induce conformational changes in SETD3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C101 provide comprehensive description of peptide-protein interactions with specific residue-level details. The interactions are categorized by region and type (hydrophobic, hydrogen bonds). The conformational changes (C88, C90) are consistent with earlier claims (C64, C65). The level of detail is appropriate for high-resolution crystal structures and the interactions are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "SETD3 binds \u03b2-actin peptide (66-88) with Kd = 0.17 \u03bcM and methylates it at His73, but does not bind or methylate H3K4 or H3K36 peptides. The H73A mutant binds with 2.5-fold weaker affinity (Kd = 0.45 \u03bcM) but is not methylated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 present ITC binding data and mass spectrometry results demonstrating substrate specificity. The Kd values are quantitative with appropriate controls (C25, C28). The H73A mutant data (C29, C30) shows that His73 is essential for catalysis but contributes modestly to binding, supporting sequence-specific recognition. The data are internally consistent and support the specificity claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Mutagenesis and ITC studies show that flanking sequences of His73 are critical for SETD3 binding. R215A and R316A show 21- and 42-fold reduced binding. Mutations of \u03b2-actin residues (Y69A, I71A, D80A, D81A, M82A) reduce binding 5-90 fold. Recognition by SETD3 is highly sequence-selective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C117 present systematic mutagenesis data with quantitative binding measurements. The fold-changes are substantial and consistent with the structural interactions described in earlier claims. The conclusion that flanking sequences are more important than His73 itself (C116) is supported by the H73A data (C30) showing only 2.5-fold reduction. The sequence selectivity conclusion (C117) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Kinetic analysis shows wildtype SETD3 has high affinity for AdoMet (KM \u2248 0.1 \u03bcM) and \u03b2-actin (KM \u2248 0.5 \u03bcM) but low kcat (0.7-0.8 min\u207b\u00b9). Mutants R75A, N278A, R215A, N256A, Y313F, and R316A show 2-2000-fold reduced catalytic efficiency, confirming the importance of these residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C130 present comprehensive kinetic data for wildtype and mutant enzymes. The KM and kcat values are quantitative with appropriate replicates (Table 3). The reduced catalytic efficiency of mutants (C122, C123) validates the structural findings. The interpretation that N256A and Y313F affect catalysis more than binding (C126, C127) is supported by the kinetic parameters and consistent with their roles in orienting His73.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Asn256 and Tyr313 interact with His73 and orient its imidazole ring for efficient methyl transfer. Mutations N256A and Y313F decrease kcat 26-36-fold while maintaining similar KM for \u03b2-actin. R215A and R316A, which contact flanking sequences, show 2-fold higher KM and 3.5-4.5-fold lower kcat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 integrate structural and kinetic data to propose a mechanistic model. The differential effects on KM vs kcat (C126-C128, C135) support distinct roles for active site residues (catalysis) vs flanking sequence recognition residues (binding). The interpretation (C132, C133) that N256A/Y313F affect the rate of successful methylation is reasonable given the kinetic data and structural context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "SETD3 catalyzes \u03b2-actin methylation across pH 6.0-9.0, with activity increasing with pH and reaching maximum at pH 9.0. The activity at neutral pH is consistent with histidine deprotonation, though the pH dependence suggests the imidazolium pKa may be perturbed or proton transfer is not rate-limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 present pH-dependent activity data showing broad pH range and pH optimum. The interpretation (C139) linking activity to histidine deprotonation is chemically reasonable. However, C140 is speculative about the mechanistic implications of the pH profile. The data support activity across a pH range, but the mechanistic interpretation of the pH dependence is uncertain without additional experiments (e.g., pH-rate profiles, kinetic isotope effects).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Comparison with CARNMT1 shows SETD3 and CARNMT1 have different folds, AdoHcy-binding modes, and histidine recognition mechanisms. CARNMT1 uses Asp316 for histidine deprotonation, while SETD3 uses Tyr313 and Asp275 for orientation. The 90\u00b0 rotation of His73me is unique to SETD3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145 compare SETD3 with CARNMT1, another histidine methyltransferase. The comparison is supported by structural data from both enzymes (C142 cites Cao et al., 2018). The mechanistic differences (C143, C144) are supported by the structural and mutagenesis data. The unique 90\u00b0 rotation (C145) is a key distinguishing feature. This comparative analysis strengthens the mechanistic conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The \u03b2-actin peptide sequence is conserved in \u03b1- and \u03b3-actin proteins, suggesting SETD3 might also recognize and methylate other actin isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is a reasonable inference based on sequence conservation. However, this is a prediction that would require experimental validation with other actin isoforms. The claim is appropriately qualified with 'might' and 'suggesting', indicating it is a hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "In native \u03b2-actin, His73 is methylated and located near ATP-binding phosphates. The \u03b2-actin peptide (residues 66-84) adopts an extended conformation when bound to SETD3, different from its native structure (three \u03b2 strands and an \u03b1-helix), suggesting local structural remodeling during methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C146 cites prior structural work (Kabsch et al., 1990). Claims C147-C148 compare the peptide conformation in the SETD3 complex with native \u03b2-actin structure. The observation of conformational change is supported by structural comparison (Figure 2\u2014figure supplement 3). The inference of structural remodeling (C148) is reasonable but would be strengthened by studies with full-length actin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C149",
+      "C150"
+    ],
+    "result": "SETD3 co-purifies with other factors such as ERF3A, suggesting it might require assistance from other proteins to methylate actin His73.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C149 cites prior work (Kwiatkowski et al., 2018) showing SETD3 co-purifies with ERF3A. However, C150 is speculative ('might require') without direct evidence that ERF3A or other factors are functionally required for methylation. The current study demonstrates methylation activity with purified SETD3 and \u03b2-actin peptide, suggesting additional factors are not strictly required for catalysis, though they might be important in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C151"
+    ],
+    "result": "SETD3 displays very high substrate specificity toward \u03b2-actin His73.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C151 summarizes the overall findings. The high specificity is supported by: (1) no activity on H3K4/H3K36 peptides (C25-C27), (2) sequence-dependent recognition (C116-C117), (3) specific His73 pocket (C62-C63, C78-C82), and (4) extensive flanking sequence interactions (C83-C101). This is a well-supported summary conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "SETD3 overexpression is associated with malignant cancer. The high-resolution structures might help understand the role of actin histidine methylation in cancer and facilitate design of SETD3 inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C152 cites prior work (Cheng et al., 2017) on SETD3 in cancer. Claims C153-C154 are speculative about potential applications ('might be helpful', 'might provide'). While the structures provide a foundation for inhibitor design, no inhibitors are presented or designed in this study. These are reasonable future directions but not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background information on SETD3, \u03b2-actin, and histidine methylation from prior literature, including SETD3's classification as a SET domain protein, \u03b2-actin's cellular functions, the discovery of His73 methylation in 1967, and previous reports of SETD3 as a histone methyltransferase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 provide background context from prior literature with appropriate citations. These are not new findings from this study but establish the scientific context. C19 cites prior reports of SETD3 as a histone methyltransferase, which the current study contradicts (C21, C25-C27), representing an important correction to the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C3",
+      "C7",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors previously identified SETD3 as an actin-specific histidine methyltransferase. This study is the first to show the catalytic mechanism, revealing that SETD3 recognizes \u03b2-actin in a sequence-dependent manner and uses a specific pocket for N3-methylation of His73.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C21 reference the authors' prior work identifying SETD3 as the actin methyltransferase. Claims C7, C22-C23 state this is the first mechanistic study, which is supported by the novel structural and biochemical data presented. The claim of being 'first' (C7) is appropriate given the novelty of the structural and mechanistic insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C155",
+      "C156"
+    ],
+    "result": "During peer review, Wilkinson et al. (2019) published structures of SETD3 with unmodified actin peptide (66-80). The current study's structures contain a longer fragment (66-88) and include a methylated complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C156 acknowledge concurrent work and compare the two studies. The comparison is factual regarding peptide length and methylation state. This represents appropriate scientific disclosure of related work published during review. The longer peptide and methylated structure represent incremental but meaningful additions to the Wilkinson et al. structures.",
+    "result_type": "MINOR"
+  }
+]

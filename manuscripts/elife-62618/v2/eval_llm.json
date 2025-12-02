@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "In Gabra2 cKO mice, where GABAergic inputs to SACs are selectively eliminated, direction selectivity of On-Off DSGCs is normal with noise-free backgrounds but impaired with noisy backgrounds. This demonstrates that inhibitory inputs to SACs are specifically required for noise resilience of direction selectivity, not for its basic implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C21 provide converging evidence from genetic manipulation (Gabra2 cKO), electrophysiology (spiking and voltage clamp recordings), and visual stimulation paradigms (noise-free vs. noisy backgrounds). The data in Figure 1 clearly show preserved direction selectivity in noise-free conditions but impaired selectivity in noisy conditions, with appropriate statistical comparisons and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C27",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The SAC-SAC-DSGC microcircuit is identified as the specific disinhibitory motif underlying noise resilience. Comparison of Gabra2 cKO (all GABAergic inputs to SACs removed) and Vgat cKO (only SAC-SAC inhibition impaired) mice shows similar deficits, indicating that SAC-SAC lateral inhibition is the primary contributor to preserving motion-evoked DSGC inhibition in noisy backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C38-C41 are supported by systematic comparison of two genetic models (Figure 2). The similar phenotypes in Gabra2 cKO and Vgat cKO mice, combined with the known specificity of these manipulations, provide strong evidence that SAC-SAC inhibition is the critical component. The use of multiple visual stimuli (moving bar and contracting ring) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27"
+    ],
+    "result": "The impaired direction selectivity in Gabra2 cKO mice with noisy backgrounds is due to attenuated inhibitory postsynaptic currents (IPSCs) in DSGCs during null-direction motion, while excitatory inputs and baseline inhibition remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are supported by voltage clamp recordings showing reduced null-direction IPSCs in Gabra2 cKO mice during noisy bar stimuli (Figure 1g-j), while EPSCs are unaffected (Figure 1\u2014figure supplement 3) and baseline IPSCs are similar between groups (Figure 1\u2014figure supplement 1). This provides a clear mechanistic link between the genetic manipulation and the behavioral phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "SACs exhibit center-surround receptive field organization where motion entering the surround suppresses flicker-evoked activity before the center response. This surround suppression is impaired in Gabra2 cKO mice, particularly in noisy backgrounds, while baseline and center responses remain intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37 are supported by current clamp recordings of SAC membrane potential (Figure 2). The data show clear surround suppression in control SACs that is significantly reduced in Gabra2 cKO mice, with appropriate quantification and statistical analysis. The preservation of baseline and center responses provides important controls demonstrating specificity of the deficit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The SAC-DSGC GABAergic synapse exhibits pronounced short-term depression in adult mice, as demonstrated by paired-pulse stimulation in paired recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by paired voltage clamp recordings (Figure 3) showing clear paired-pulse depression with appropriate inter-pulse intervals. The citation to prior developmental work (C42) provides context, while the new adult data (C43-C44) extend these findings to the relevant age range. The paired-pulse ratio analysis is appropriate for assessing short-term plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Computational modeling indicates that SAC somatic and distal dendritic membrane potentials have comparable peak amplitudes during visual stimulation, but voltage clamp at the soma produces approximately 25% of the depolarization at dendritic tips due to electrotonic isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by biophysical modeling using digitized SAC morphology and experimentally measured parameters (Figure 4). The modeling approach is appropriate for estimating dendritic voltage attenuation, and the results are used to inform the scaling of command waveforms in subsequent paired recordings. Citations to prior work on SAC electrotonic properties strengthen the modeling assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C52"
+    ],
+    "result": "In paired SAC-DSGC recordings using voltage clamp command waveforms that mimic control vs. cKO SAC activation patterns, the cKO pattern (with enhanced flicker response before motion) produces smaller motion-evoked DSGC IPSCs due to short-term depression. This effect is robust across multiple scaling factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C52 are supported by paired voltage clamp recordings (Figure 5a-d) where SACs are driven with scaled waveforms mimicking in vivo activation patterns. The experimental design cleverly uses the baseline period as an internal control for each pair, and the motion-evoked responses show clear differences between control and cKO patterns. Testing multiple scaling factors (C48) demonstrates robustness. The conclusion (C52) is well-supported by the convergence of these data with the short-term depression findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C63",
+      "C64"
+    ],
+    "result": "The duration of SAC surround suppression varies with motion speed (sub-millisecond range), and at all tested speeds (110, 440, 1320 \u03bcm/s), noise-evoked SAC activation within the surround suppression window can induce synaptic depression of motion-evoked DSGC IPSCs. The short period immediately before motion response is critical for shaping SAC transmitter release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 and C63-C64 are supported by recordings at multiple speeds (Figure 5e-h) showing speed-dependent surround suppression duration and consistent effects of noise within this window on synaptic depression. The experimental design systematically varies speed and demonstrates that the protective function of surround suppression persists even at high speeds where the window is shorter. The quantification of noise-induced suppression across speeds is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The SAC-SAC-DSGC disinhibitory motif preserves motion-evoked DSGC inhibition in noisy backgrounds through an inverted algorithm involving three components: (1) lateral SAC inhibition creating strong surround suppression, (2) motion-evoked surround suppression preventing noise-evoked SAC activation before center response, and (3) short-term depression at SAC-DSGC synapses matching the timescale of noise-triggered dynamics. This represents context-dependent computation arising from interaction between network dynamics and synaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C16-C18, and C55-C58 synthesize the major findings into a coherent mechanistic model. The three components are each supported by specific experimental evidence: lateral inhibition (Figure 2, Vgat cKO experiments), surround suppression (Figure 2, SAC recordings), and short-term depression (Figures 3 and 5, paired recordings). The integration of these components into an 'inverted' algorithm is well-justified by the data showing preservation rather than enhancement of inhibition. The claims about context-dependence (C56-C57) are appropriately framed as interpretations of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Synaptic depression attenuates SAC-SAC hyperpolarization in noisy backgrounds, but motion still triggers sufficient GABA release from neighboring SACs to suppress noise responses in the postsynaptic SAC ahead of the moving object.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by comparison of SAC hyperpolarization in noise-free vs. noisy backgrounds (Figure 2e vs. 2h), showing weakened but still present surround suppression. The interpretation (C54) that sufficient inhibition remains is consistent with the observed surround suppression in noisy conditions, though this is somewhat inferential. The claims appropriately acknowledge the complexity of the interconnected SAC network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The protective function of SAC surround suppression does not require chronic depression of the SAC-DSGC synapse by baseline noise or depend critically on recovery from depression during the suppression window. At higher speeds, the shorter suppression window may allow depression even with intact SAC-SAC inhibition. The enhanced depression in cKO is due to both less recovery and additional depression from extra noise activity within the suppression window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by the observation of similar baseline IPSCs in control and cKO groups (C24, Figure 1\u2014figure supplement 1), indicating no chronic depression. Claims C61-C62 are appropriately framed as reasoning based on the speed-dependent data (Figure 5), with C61 being somewhat speculative about potential effects at very high speeds. The interpretation in C62 is supported by the paired recording data showing enhanced depression with cKO waveforms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The SAC-SAC-DSGC motif is present in the Off pathway and may play a similar role in noise resilience, but eliminating inhibition onto Off SACs impairs direction selectivity even without noise, making it difficult to separate roles in generation vs. noise resilience. This suggests context-dependent computations by anatomically symmetric motifs for bright vs. dark motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65 and C67 are supported by citations to prior work. However, C66 is explicitly speculative ('may play a similar role'), and the authors acknowledge in C67 that the Off pathway cannot be cleanly analyzed with current data. Claim C68 is an interpretation that, while reasonable, goes beyond what is directly demonstrated. The uncertainty stems from lack of direct experimental evidence for the Off pathway in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Wide-field amacrine cells contribute to SAC surround inhibition but are not sufficient to suppress noise responses in the absence of SAC-SAC inhibition in the tested stimulus conditions. Wide-field inhibition may serve a different function of detecting discontinuities while SAC-SAC inhibition mediates strong surround suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C72 are supported by citations to prior work. Claim C70 is supported by the Vgat cKO data showing insufficient noise suppression without SAC-SAC inhibition. Claim C71 is appropriately speculative about untested conditions. Claim C73 is a reasonable interpretation integrating prior work on wide-field function with current findings, though it remains somewhat inferential. The overall conclusion about differential roles is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The mechanistic components underlying the inverted disinhibitory function (surround suppression, short-term plasticity, network dynamics) are broadly relevant to other brain circuits. Disinhibitory motifs in cortex and hippocampus, such as VIP+ interneuron circuits, may exhibit similar algorithmic flexibility. Context-dependent computation is likely a general property of microcircuit motifs due to universal interactions between synaptic plasticity and network activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74 and C76 are supported by citations establishing the prevalence of similar mechanisms in other circuits. However, claims C75, C77, C78, and C79 are explicitly speculative about potential implications for other brain regions. While the reasoning is sound and the speculation is appropriate for a Discussion section, these claims go beyond what is directly demonstrated in the study. The generalizability remains to be tested experimentally in other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "During the noisy bar stimulus, DSGC excitatory postsynaptic currents (EPSCs) originate predominantly from glutamatergic bipolar cells and are not affected in Gabra2 cKO mice compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by voltage clamp recordings (Figure 1\u2014figure supplement 2 and 3) and pharmacological experiments with cholinergic receptor antagonists. The data show that EPSCs are similar between control and cKO groups, and that blocking cholinergic receptors reduces EPSCs in noisy but not noise-free conditions, indicating bipolar cells are the predominant source during noisy stimuli. This provides an important control demonstrating specificity of the inhibitory deficit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Methodological details: Mice aged P21-60 were used; moving bar intensity was ~6.3\u00d710^4 R*/rod/s (photopic); noise-free background was ~1800 R*/rod/s (lower photopic); noisy background consisted of 55\u00d755 \u03bcm checks at 0 or ~1\u00d710^4 R*/rod/s refreshed at 15 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are straightforward methodological details clearly stated in the Materials and methods section. These are factual descriptions of experimental parameters that are appropriately documented. The light intensity calculations and stimulus parameters are standard for retinal physiology studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Space clamp is an intrinsic limitation of voltage clamp, but light-evoked EPSCs and IPSCs of DSGCs measured by somatic voltage clamp have been shown to well approximate proximal synaptic inputs based on pharmacological and conductance analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is established knowledge about electrophysiological methods. Claim C86 is supported by citations to prior validation studies. The authors appropriately acknowledge this limitation while justifying their approach based on prior work. This is a standard methodological consideration in dendritic recording studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background on disinhibitory circuits: Disinhibitory microcircuits are involved in sensory processing, learning, memory, and action selection across brain regions, with functions attributed to relieving principal neurons from ongoing inhibition. In the retina, On-Off DSGCs receive directional inhibition from SACs, which themselves receive inhibition from neighboring SACs and wide-field amacrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 are background information supported by multiple citations to prior research. These establish the context for the current study by describing known functions of disinhibitory circuits in other brain regions and the anatomical organization of the retinal direction-selective circuit. The claims are appropriately referenced and provide necessary background.",
+    "result_type": "MINOR"
+  }
+]

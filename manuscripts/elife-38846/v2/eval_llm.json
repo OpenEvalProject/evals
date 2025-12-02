@@ -1,0 +1,412 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Thalamocortical E-I ratio is either unchanged (V1b) or shifts toward excitation (V1m) following brief MD, despite depression at thalamocortical synapses. This is demonstrated through optogenetic stimulation of ChR2-labeled thalamocortical axons while recording paired EPSCs and IPSCs from layer 4 pyramidal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 report the primary experimental finding with appropriate statistical support (p=0.80 for V1b, p=0.0063 for V1m). Claims C25-C30 provide methodological validation showing linear E-I scaling and monosynaptic nature of EPSCs through TTX+4-AP experiments. The experimental design is sound with proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Brief MD induces LTD-like depression at thalamocortical synapses onto layer 4 pyramidal neurons, evidenced by reduced quantal amplitude and occlusion of further LTD induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 demonstrate reduced thalamocortical quantal amplitude (p<0.05) with appropriate controls showing no changes in passive properties or spontaneous mEPSCs. Claims C36-C38 show occlusion of LTD induction in deprived neurons (p=0.042), providing converging evidence for LTD-like mechanisms. The experimental approach is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C44",
+      "C45"
+    ],
+    "result": "Brief MD induces greater depression of thalamocortical synapses onto PV+ interneurons compared to pyramidal neurons, as shown by paired recordings demonstrating increased pyramidal/PV EPSC charge ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 present paired recording data showing differential depression with statistical support (p=0.0103). Claims C44-C45 provide baseline characterization showing expected properties and linear scaling. The paired recording approach directly tests the hypothesis and controls for variability in stimulation intensity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Intrinsic excitability of PV+ interneurons and pyramidal neurons is unaffected by brief MD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 report no changes in firing rate, input resistance, or rheobase for either cell type following MD. The data are presented with appropriate F-I curves and statistical comparisons. This negative result is important for ruling out intrinsic excitability changes as a mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C52",
+      "C53"
+    ],
+    "result": "Unitary synaptic strength from PV+ interneurons to pyramidal neurons is unchanged following brief MD, as measured by optogenetic minimal stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 report no change in mean amplitude (p=0.73) or distribution (p=0.90) of unitary IPSCs. Claims C52-C53 validate the optogenetic approach by showing equivalence to spike-evoked IPSCs. The high-throughput approach samples many connections, strengthening the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C63",
+      "C64"
+    ],
+    "result": "Intracortical E-I ratio shifts toward inhibition in V1m following brief MD, diverging from thalamocortical E-I ratio which shifts toward excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 demonstrate the key finding of opposite shifts in feedforward vs feedback E-I ratios with strong statistical support (p=0.022 for intracortical, p=4.1\u00d710\u207b\u2075 for divergence). Claims C63-C64 validate the specificity of ChR2 expression to excitatory neurons. This is a central finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Brief MD potentiates excitatory synapses onto PV+ interneurons, evidenced by increased mEPSC amplitude and faster kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C75 report significant increases in mEPSC amplitude (p=0.044) and faster decay kinetics (p=0.003), while C74 shows no change in frequency. Claim C76 appropriately infers this as a mechanism for reduced intracortical E-I ratio. The data support postsynaptic potentiation at pyramidal-to-PV synapses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C78",
+      "C79",
+      "C102",
+      "C104"
+    ],
+    "result": "Computational modeling demonstrates that opposing shifts in feedforward and feedback E-I ratios produce overall suppression of layer 4 excitability, with intracortical changes dominating over thalamocortical changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C78-C79 state the modeling conclusion, while C102 and C104 explain the mechanism through numerical dominance of recurrent inputs. The modeling is validated across 2,491 parameter sets (Figure 9D) and shows consistent suppression. The model appropriately implements measured synaptic changes and tests their combined effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C81",
+      "C94"
+    ],
+    "result": "Feedforward and feedback E-I ratios can be independently regulated by visual experience, with enhanced feedback inhibition being the primary driver of loss of visual responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions of the paper, synthesizing the experimental findings (C94) and modeling results (C7-C8, C81). The conclusion is well-supported by the combination of experimental data showing opposite changes in feedforward vs feedback circuits and modeling demonstrating the dominance of intracortical effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C39"
+    ],
+    "result": "The major factor increasing feedforward thalamocortical E-I ratio is disproportionate reduction in thalamic drive to PV+ interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize findings from paired recordings (C46-C47) and E-I ratio measurements (C4), ruling out contributions from PV-to-pyramidal synapses (C54-C55) and intrinsic excitability (C49-C51). The inference is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establishing the critical period, effects of MD, and prevailing LTD hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential background context and are appropriately supported by citations to established literature. They set up the scientific question addressed by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims establishing the importance of E-I ratio and the architecture of feedforward and feedback circuits in layer 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the conceptual framework for the study, supported by appropriate citations. The distinction between feedforward and feedback circuits is central to the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PV+ interneurons receive stronger thalamic drive than SST+ interneurons and mediate the majority of feedforward inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by multiple citations, while C42-C43 provide experimental validation showing low firing threshold of PV+ cells to thalamocortical stimulation (p<0.0001). This justifies focusing on PV+ interneurons for feedforward inhibition studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "PV+ to pyramidal synapses and pyramidal-to-pyramidal synapses are unchanged by brief MD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims rule out alternative mechanisms for the observed E-I ratio changes. C69 references Figure 6 data, while C70-C71 show no change in spontaneous mEPSC amplitude. These negative results are important controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Brief MD does not reduce thalamocortical circuit excitability; instead, intracortical inhibition is enhanced, suppressing layer 4 excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize the main findings, contrasting with the prevailing LTD hypothesis. They are well-supported by the E-I ratio measurements and modeling results, though they represent interpretations of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In V1b, there must be concurrent depression of feedforward inhibition, and intracortical changes likely contribute to loss of responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims extend the V1m findings to V1b through inference. While C3 shows constant E-I ratio in V1b and C88 cites evidence for thalamocortical depression, the intracortical mechanisms in V1b were not directly tested. The reasoning is sound but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Previous VEP studies showing LTD blockade prevents response loss primarily measure thalamocortical responses and may not capture intracortical changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims reinterpret prior literature (Yoon et al., 2009) in light of current findings. C82-C83 are supported by citations, while C84 is a reasonable inference from the paired recording data showing depression at both synapse types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "Changes in intracortical inhibition following sensory deprivation are highly dynamic and context-dependent, and PV+ synapses are known to be plastic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide context for the complexity of inhibitory plasticity, supported by multiple citations. They explain why isolating feedforward and feedback inhibition is important and challenging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Independent regulation of feedforward and feedback inhibition is achieved through differential recruitment of the same PV+ interneurons by thalamocortical vs intracortical drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C96 presents the logical possibilities, while C97 identifies the mechanism supported by the data (depression of thalamocortical synapses onto PV+ cells plus potentiation of intracortical synapses onto PV+ cells). This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Under baseline conditions, PV+ interneurons mediate most feedforward and feedback inhibition in layer 4, while SST+ interneurons primarily disinhibit pyramidal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the baseline circuit architecture, supported by appropriate citations. They justify focusing on PV+ interneurons and suggest SST+ cells are unlikely to mediate the observed changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Recurrent excitatory synapses greatly outnumber thalamocortical synapses, allowing intracortical changes to have disproportionate effects on excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the anatomical basis for why intracortical changes dominate, supported by citations to anatomical studies. This is a key premise for the modeling and interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "MD-induced decorrelation of thalamocortical input drives LTD more effectively at synapses onto PV+ interneurons than pyramidal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C105-C106 are supported by citations, but C107 is an inference about mechanism that was not directly tested. While consistent with the data, the specific mechanisms driving differential LTD at the two synapse types remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C108",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The combined changes may serve to enhance signal-to-noise ratio by boosting thalamic drive while preventing recurrent amplification of noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims propose functional interpretations of the observed plasticity. While plausible and supported by one citation (C108), they are speculative and would require additional experiments to test directly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "The change in feedback inhibition is driven by prolongation of inhibitory current rather than peak amplitude changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C109 reports the observation from Figure 7F, while C110 infers the mechanism. The observation is clear from the data, and the inference about prolonged recruitment of inhibitory neurons is reasonable given the potentiation of pyramidal-to-PV synapses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Modeling predicts that feedforward changes alone would enhance firing and synchrony, potentially driving intracortical plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C111 reports a modeling prediction from Figure 9B, while C112 speculates about its role in driving subsequent plasticity. The modeling result is clear, but the causal relationship between feedforward and feedback changes remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Brief MD reduces visual responsiveness, signal propagation, and firing rates in V1m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the in vivo phenotype that the study aims to explain, supported by appropriate citations. They provide the functional context for the slice physiology experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Prior work showed MD potentiates synapses from pyramidal neurons onto FS interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim cites Maffei et al., 2006 and provides context for the current findings. The current study confirms and extends this observation with more specific measurements.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C39"
+    ],
+    "result": "The manuscript establishes that heading direction circuits in insect central complex (CX) resemble ring attractors, based on prior experimental work in fruit flies and locusts. These circuits show conserved topographic structure across species but with anatomical differences at the single-neuron level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 and C39 collectively establish the background context from prior literature about heading direction circuits in insects. These claims are well-supported by extensive citations to experimental and theoretical work (C8-C23, C38), anatomical descriptions (C13-C15), and comparative observations (C39). The claims appropriately distinguish between established knowledge and the current study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Three main anatomical differences exist between fruit fly and locust CX circuits: (1) the locust EB is crescent-shaped rather than ring-shaped, (2) locusts have 8 PB glomeruli per hemisphere versus 9 in fruit flies, and (3) Delta7 neurons show different dendritic distribution patterns\u2014uniform in fruit flies but restricted to specific glomeruli in locusts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C51 describe anatomical differences supported by both citations to prior anatomical studies (C46, C47, C49, C50) and visual evidence in Figures 1-2. The observations are consistent with established comparative neuroanatomy and provide the foundation for the modeling work. The anatomical characterizations are well-documented in the literature cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C67"
+    ],
+    "result": "The inhibitory connectivity patterns differ fundamentally between species: in fruit flies, each Delta7 neuron inhibits all other Delta7 neurons (global inhibition), while in locusts, each Delta7 neuron inhibits only a subset with weakening strengths toward neighbors (local inhibition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 and C67 describe the derived inhibitory connectivity patterns shown in Figure 2 and supported by anatomical citations (C53). The global versus local inhibition distinction is consistent with the anatomical observations and aligns with prior experimental findings (C54 cites Kim et al., 2017). The inference from anatomy to functional connectivity is reasonable given the overlap-based synapse assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C64",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Despite anatomical differences, the effective circuit structure is equivalent between species, forming closed ring attractors organized in eight octants with identical functional roles for each neuron class. Different anatomical solutions achieve ring closure: the torus-shaped EB in fruit flies versus cross-innervation of medial glomeruli in locusts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C61, C64, C118-C121 describe the core finding of circuit equivalence shown in Figures 3-5. The derivation of effective circuits from anatomical data is methodologically sound, using graph-theoretic analysis to reveal functional equivalence despite structural differences. The identification of convergent evolutionary solutions (C118-C119) is well-supported by the circuit analysis. This represents a major conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The locust circuit contains reciprocal P-EN to E-PG connections within the same octant that are absent in fruit flies, resulting from a half-tile versus whole-tile shift in P-EN synaptic domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 identify a key structural difference shown in Figures 3-4. The observation is clearly documented in the figures and follows logically from the anatomical projection patterns. This difference has functional consequences explored in later results regarding noise tolerance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Optimization of synaptic strengths revealed consistent patterns: P-EN to E-PG and P-EG to E-PG synapses were weakest, E-PG to P-EG/P-EN synapses were strongest, and inhibitory Delta7 synapses were stronger in locusts than fruit flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 report results from the optimization procedure shown in Figure 6. The optimization methodology is described in Materials and Methods, using biologically plausible constraints. The predicted synaptic strength patterns are internally consistent and provide testable predictions. However, these are model predictions rather than experimental measurements, which should be noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Both circuits operate as ring attractors but with distinct activity patterns: locust Delta7 neurons show strong heading-dependent modulation with silent neurons at the bump location, while fruit fly Delta7 neurons show minimal modulation (~10%). Locust neurons are consistently tuned ~20% more narrowly than fruit fly neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C82 describe simulation results shown in Figure 7 and Tables 1-2. The differences in Delta7 firing patterns (C73-C76) are clearly demonstrated and consistent with the global versus local inhibition architecture. The prediction of pronounced firing rate variation in locusts (C73-C74) is supported by existing electrophysiological data (C77). The tuning width differences (C78-C82) are quantified in the tables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The fruit fly heading signal can jump abruptly between states while the locust circuit exhibits gradual transitions. This difference is due to connectivity rather than neuron model choice, as confirmed by both spiking and rate-based implementations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 describe a key dynamical difference shown in Figure 7 and Figure 7\u2014figure supplement 1. The validation using both spiking and rate-based models (C84-C85) strengthens the conclusion that connectivity drives the difference. This is a well-supported finding with clear mechanistic basis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Hybrid-species modeling demonstrates that the inhibition pattern is the main determinant of response dynamics: changing from global to local inhibition produces gradual transitions. The fruit fly circuit stabilizes to new headings in approximately half the time of the locust circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 describe results from the hybrid-species model shown in Figure 8. The experimental design effectively isolates the effect of inhibition pattern by swapping only the Delta7 connectivity. The quantification of response times (C87, C90) provides clear evidence for the functional consequences of the anatomical differences. This is a well-controlled computational experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Systematic variation of inhibitory synaptic domain width (\u03c3) reveals that transition mode depends on both \u03c3 and angular heading change magnitude. Low \u03c3 values produce gradual transitions while high \u03c3 produces abrupt jumps, with \u03c3=0.8 approximating the locust pattern based on dendritic density estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 describe parameter exploration shown in Figure 9. The systematic variation of \u03c3 provides insight into the relationship between anatomy and dynamics. However, the choice of \u03c3=0.8 for the locust (C94) is based on visual estimates of dendritic density rather than quantitative measurements, introducing some uncertainty. The general conclusion about inhibition pattern importance (C95) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Both circuits have discrete attractor states, but locust attractor states are more stable and clearly delineated than fruit fly states, which show wider distributions of bump locations, indicating greater robustness to drift and noise in the locust.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 describe attractor basin analysis shown in Figure 10. The experimental design (applying stimuli at varying positions and measuring final bump location) appropriately tests attractor stability. The quantification of standard deviations provides clear evidence for the stability difference. The conclusion about noise robustness (C99) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The locust circuit is significantly more tolerant to structural (synaptic) noise than the fruit fly circuit. Comparison with the hybrid-species model demonstrates that reciprocal P-EN to E-PG connections provide this increased robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 describe noise tolerance experiments shown in Figure 11A. The comparison between locust and hybrid-species models effectively isolates the contribution of P-EN to E-PG reciprocal connections. The inference (C101) is well-supported by the data showing the hybrid-species model has intermediate robustness between fruit fly and locust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "P-EG neurons substantially increase robustness to synaptic strength imbalances in P-EN to E-PG synapses in both species, as demonstrated by comparing models with and without P-EG neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 describe ablation experiments shown in Figure 11B-C. The experimental design (removing P-EG neurons and testing asymmetry tolerance) appropriately tests the functional role of these neurons. The results clearly show increased tolerance range with P-EG neurons present. The conclusion about P-EG contribution to stability (C103) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The locust model is more robust to neuronal heterogeneity in membrane properties than the fruit fly model, but the distinct transition regimes (gradual versus jump) are preserved regardless of heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 describe heterogeneity experiments shown in Figure 12 and Figure 12\u2014figure supplement 1. The systematic variation of membrane parameters tests model robustness to biological variability. The preservation of transition dynamics (C105) despite heterogeneity strengthens the conclusion that connectivity determines these dynamics. The results are clearly presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Both models reproduce experimental response dynamics to P-EN stimulation. The heading signal shift rate increases exponentially with stimulation strength, more steeply in fruit flies, which also require lower stimulus thresholds for initiating bump shifting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 describe validation against experimental data (Turner-Evans et al., 2017) shown in Figures 13-14. The reproduction of experimental dynamics (C106) validates the models. The quantification of exponential relationships (C107-C109) and interpretation regarding saccade tracking (C110) are well-supported by the data. This provides important experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Continuous angular velocity input causes the heading signal to wrap around from one edge of the PB to the other in both models, independent of EB physical shape, supported by the effective closed ring structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 describe wrap-around behavior from simulations. The observation (C111) is clearly demonstrated, and the conclusion that this is independent of EB shape (C112) follows from observing it in both species. The connection to the effective ring structure (C113) is logical. This demonstrates functional equivalence despite anatomical differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C114",
+      "C115",
+      "C116",
+      "C122",
+      "C123"
+    ],
+    "result": "The study demonstrates that the locust circuit can operate as a ring attractor, with differences in inhibition pattern enabling faster fruit fly responses to heading changes while additional recurrent connections render the locust circuit more noise-tolerant. These differences may reflect behavioral adaptations: fast saccades in fruit flies versus sustained heading maintenance in migratory locusts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C114-C116, C122-C123 synthesize the main findings and their behavioral interpretation. The core results (C4-C6) are well-supported by the modeling and analysis. The behavioral interpretations (C114-C115) are supported by citations to behavioral studies. The evolutionary speculation (C116) is appropriately tentative. The mechanistic conclusions (C122-C123) accurately summarize the findings. This represents the paper's main contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "The preservation of the heading tracking circuit across 400 million years of evolutionary divergence suggests it is an essential, potentially fundamental, part of the insect brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 makes an evolutionary inference based on the demonstrated circuit conservation. The inference is reasonable given the functional equivalence despite anatomical differences, though it is necessarily speculative about evolutionary history. The claim is appropriately qualified as a suggestion rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  }
+]

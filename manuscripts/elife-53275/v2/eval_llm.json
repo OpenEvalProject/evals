@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C10",
+      "C11",
+      "C14",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Synthetic datasets are created using statistical methods (specifically CART in synthpop) that preserve relationships between variables while eliminating disclosure risk by ensuring no synthetic record represents a real individual. The method was originally developed for census data and has been refined over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C10-C11, C14, and C17-C20 collectively establish the methodological foundation of synthetic data generation. These claims are well-supported by citations to established methodological literature (Little, 1993; Reiter, 2005a/b; Rubin, 1993; Duncan and Elliot, 2011; Drechsler, 2011) and provide consistent descriptions of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Two approaches assess synthetic dataset quality: general utility (overall statistical similarity assessed via visualization) and specific utility (model-specific fit assessed via lack-of-fit tests and confidence interval overlap). Higher CI overlap indicates greater specific utility and valid inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 describe established methods for evaluating synthetic data utility, supported by citations to methodological work (Snoke et al., 2018; Nowok et al., 2016; Karr et al., 2006). The framework is logically coherent and the evaluation metrics are well-defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "A synthetic version of the Van Cappellen et al. oxytocin-spirituality dataset demonstrated good general utility, with similar distributions between synthetic and original data for all four main variables, no replicated values, and similar bivariate relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 present visual and descriptive evidence (Figure 1A and supplements) showing similarity between synthetic and original datasets. The assessment is based on appropriate visualization methods (C23-C25) and the conclusion of good general utility (C39) follows logically from the presented comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "For the Van Cappellen et al. t-test comparing nasal spray groups on spirituality, the synthetic dataset reproduced the original non-significant result (p=0.26 in both) with extremely high specific utility (99.94% CI overlap, non-significant lack-of-fit test p=0.995, standardized difference p=0.998).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 provide comprehensive statistical evidence for high specific utility. The lack-of-fit test, standardized differences, and CI overlap all meet established thresholds for good specific utility (C27-C29). The p-values and effect sizes are precisely reported with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "For the Van Cappellen et al. correlation between age and spirituality, the synthetic dataset reproduced the original non-significant result with high specific utility (90.8% CI overlap, non-significant lack-of-fit p=0.94, standardized difference p=0.72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 demonstrate high specific utility for the correlation analysis using the same rigorous metrics as the t-test. The CI overlap of 90.8% is substantial, and all statistical tests support the validity of inference from the synthetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "For the Van Cappellen et al. ANCOVA examining oxytocin effects on spirituality controlling for religious affiliation, the synthetic dataset showed high specific utility (87.8% and 82.3% CI overlap for the two coefficients, non-significant lack-of-fit p=0.82), though the synthetic model p-value was borderline (p=0.07) compared to the original (p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 show good but not perfect replication. The lack-of-fit test and CI overlaps indicate high specific utility (C52-C54), and the authors correctly note (C55) that the difference in significance between p=0.03 and p=0.07 does not necessarily indicate different effects. The emphasis on effect size and CI overlap over p-value dichotomy is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A synthetic version of the Jones and DeBruine sociosexual orientation dataset (9,627 individuals, 14 variables) demonstrated good general utility and high specific utility for a linear model predicting sexual behavior from attractiveness, age, and location (non-significant lack-of-fit p=0.83, CI overlaps of 91.8%, 92.9%, and 72.4% for the three predictors).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C69 provide comprehensive evidence for both general and specific utility in a large dataset. The visual evidence (Figure 2A) supports general utility (C59), and the statistical tests (C62-C68) demonstrate high specific utility. The lower CI overlap for location (72.4%, C68) is noted but still indicates reasonable utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In the Jones and DeBruine synthetic dataset, 213 replicated individuals (2.3%) were identified and removed to reduce disclosure risk. After removal, the model maintained high specific utility (non-significant lack-of-fit p=0.6, CI overlaps of 92.4%, 81.2%, and 75.8%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 demonstrate that removing replicated individuals (a disclosure risk mitigation strategy from C20, C107) maintains specific utility. The statistical evidence (C71-C72) shows minimal impact on model performance, supporting the conclusion in C73. This addresses an important practical consideration for synthetic data sharing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Simulation of 27 HRV datasets varying in sample size (40, 100, 10,000), skewness (none, low, high), and missingness (0%, 5%, 20%) showed that synthpop is generally robust, with all lack-of-fit tests non-significant and most CI overlaps strong. However, performance was borderline for low-skew datasets with 10,000 cases, indicating that utility assessment is crucial for each dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C88 present a systematic simulation study with appropriate design (C79-C80). The results show generally good performance (C81-C83, C85-C86) but identify a specific limitation (C84, C87). The conclusion (C88) appropriately emphasizes the need for case-by-case utility assessment. The evidence is presented in figures and supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Open data provide substantial benefits but face challenges from disclosure risks. Traditional anonymization methods (removing identifiers, adding noise, aggregation) are insufficient as individuals can still be identified with high accuracy, and these methods can distort variable relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C9 establish the motivation for synthetic data by describing the open data landscape and limitations of traditional approaches. All claims are supported by appropriate citations to prior work (Arzberger et al., 2004; Ohm, 2009; Rocher et al., 2019; Purdam and Elliot, 2007). This provides essential context for the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C95",
+      "C96",
+      "C99",
+      "C100",
+      "C103",
+      "C111"
+    ],
+    "result": "Synthetic data enable exploratory analysis that can be verified by data custodians, improve transparency for reviewers, facilitate data sharing when consent is lacking, support machine learning in data-scarce domains, encourage collaboration between secondary analysts and original authors, and will improve reproducibility in biobehavioral research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C95-C96, C99-C100, C103, and C111 describe various benefits of synthetic data. These are logical inferences from the properties of synthetic data (C12-C13) or supported by citations (C96, C99, C111). The claims about collaboration (C99-C100) are particularly well-reasoned given that verification requires access to original data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Participants generally favor data sharing, and researchers should include data sharing provisions in consent. However, obtaining retrospective consent is resource-intensive, and traditional deidentification may be insufficient. Synthetic data offer a solution, as demonstrated by Arslan et al. (2018) who shared synthetic data for sensitive research without original consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 address practical and ethical considerations for data sharing. The claims about participant attitudes (C89) and recommendations (C90) are supported by citations. The example of Arslan et al. (C93-C94) provides concrete evidence that synthetic data can address consent challenges in practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C101",
+      "C102"
+    ],
+    "result": "Concerns about data sharing include loss of first-mover advantage for original researchers, and 'available upon request' policies often fail in practice due to unreachable authors or lost datasets. Journals have adopted varying data archiving policies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 and C101-C102 describe challenges in the current data sharing landscape, all supported by appropriate citations (Lo, 2015; Ross et al., 2012; Taichman et al., 2016; Sholler et al., 2019; Couture et al., 2018; Stodden et al., 2018; Wicherts et al., 2006). These provide important context for why synthetic data are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Synthetic data have limitations: they may have poor utility, current methods limit inference to linear models, and disclosure risk is only negligible if complete records don't match the original data and extreme values are absent. Complete matching records should be removed to reduce disclosure risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 appropriately acknowledge limitations. C104 is a logical statement about potential poor utility. C105 accurately describes a methodological limitation. C106 is supported by citations (Drechsler, 2011; Duncan and Elliot, 2011) and C107 provides a practical recommendation. These limitations are important for balanced assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Synthetic data use is emerging in biobehavioral sciences but not widely known. The method was considered 'radical' when first proposed in the 1990s but has been continuously improved. The synthpop R package now provides an accessible implementation tool, with code for this manuscript available online.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C108-C110 provide historical context and practical information. C15 is supported by citations to recent examples (Arslan et al., 2018; Newbury et al., 2018). C16 provides reproducibility information. C108-C110 trace the development of the method with appropriate citations (Rubin, 1993; Reiter, 2005a/b). These claims establish the novelty and accessibility of the approach.",
+    "result_type": "MINOR"
+  }
+]

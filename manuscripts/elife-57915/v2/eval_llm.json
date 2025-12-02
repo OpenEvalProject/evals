@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C13",
+      "C14",
+      "C84"
+    ],
+    "result": "ICEclc is an integrative and conjugative element in Pseudomonas that exhibits bistable transfer competence, arising in only 3-5% of cells during stationary phase. Transfer competent cells represent a differentiated stable state that eventually arrests division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C11, C13, C14, and C84 collectively establish the basic characteristics of ICEclc transfer competence. These claims are well-supported by citations to previous work and are consistent with the experimental observations presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "TciR is the first transcription factor in the upstream regulatory cascade that activates ICEclc transfer competence by directly activating the bisR promoter, but does not directly activate downstream promoters like Pint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17-C24 demonstrate through epistasis experiments and reporter assays that TciR activates PbisR (C23, p=0.0042) but cannot activate Pint without ICE (C20-C22). The experimental evidence from Figure 2 strongly supports this regulatory relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "BisR represents a new regulator family with no detectable Pfam domains, though structural analysis suggests a DNA-binding domain. BisR homologs are widely conserved among Beta-, Alpha- and Gammaproteobacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C28 are supported by bioinformatic analyses (Phyre2, BlastP) showing BisR lacks known domains but has predicted DNA-binding capability (38-53% confidence). The phylogenetic distribution data in Figure 1\u2014figure supplement 2 supports the conservation claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "BisR is an intermediate transcription activator in the regulatory cascade that acts downstream of TciR and activates the alpA promoter, but cannot directly activate Pint or PinR without additional ICE factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 demonstrate through epistasis experiments (Figure 3A) and reporter assays (Figure 3B-D) that BisR can restore transfer in tciR deletions (C31), strongly activates PalpA (C36), but requires ICE factors to activate Pint/PinR (C33-C34). The epistatic relationships clearly establish BisR's position in the cascade.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "BisDC is a heteromeric transcription factor complex that acts as the final step in the regulatory cascade. Both subunits are required together to activate Pint and PinR promoters, with BisDC being the minimum unit sufficient for downstream activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are strongly supported by systematic deletion analysis (Figure 4B) showing that neither bisC nor bisD alone activates Pint (C42), but the combination does (C44). The epistasis experiments in Figure 4D confirm BisDC as the terminal activator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "BisDC can bypass upstream regulators TciR and BisR to induce ICE transfer, but complementation of bisD deletions in trans shows reduced efficiency, suggesting a requirement for cis-encoded reinforcement mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by transfer frequency data (Figure 4D) showing BisDC can restore transfer in tciR and bisR deletions (C47) but trans-complementation of bisD deletion shows 100-fold reduced transfer (C50). This suggests additional cis-acting mechanisms, though their nature remains uncharacterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "BisDC participates in a positive autoregulatory feedback loop by activating its own promoter (PalpA), with AlpA providing modulatory repression. BisDC alone produces bistable output in only a small subpopulation, while upstream elements enhance activation to all cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C52-C57 are supported by experimental data in Figure 5 showing BisDC activates PalpA (C52-C53), AlpA represses it (C54), and BisDC alone yields subpopulation activation while parA-shi-bisDC activates all cells (C57). This establishes the feedback architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Stochastic modeling demonstrates that the BisDC feedback loop generates bimodal output with zero and positive states. BisR input scales the proportion of activated cells but not the BisDC quantity in positive cells. The feedback loop is essential for maintaining sufficient downstream protein output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by computational simulations (Figure 6B-E) showing bimodal BisDC output (C58), parameter dependencies (C59), and that BisR affects proportion but not magnitude of positive state (C61). The modeling appropriately uses stochastic simulations (n=10,000) with biologically relevant parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The ICEclc regulatory network functions as an analog-to-digital converter, transforming unimodal BisR input into bistable BisDC output in a scalable manner. Experimental validation shows IPTG-induced BisR produces concentration-dependent proportions of activated cells with constant fluorescence intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C64-C71 are strongly supported by experimental validation (Figure 7) showing unimodal BisR input (C66) produces bistable output (C67) with proportion scaling with IPTG (C69) but constant median fluorescence (C70). This matches model predictions (C69) and confirms the analog-to-digital conversion concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C85",
+      "C86",
+      "C87",
+      "C93",
+      "C94",
+      "C96",
+      "C99",
+      "C100"
+    ],
+    "result": "The complete ICEclc regulatory network consists of an upstream cascade (MfsR-TciR-BisR), a bistability generator (BisDC feedback loop), and downstream functions. The feedback loop enables prolonged BisDC production to ensure faithful completion of transfer competence during stationary phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C85-C87, C93-C94, C96, C99-C100 synthesize the complete regulatory architecture. The upstream cascade and bistability generator are well-supported by experimental data. The functional advantage of prolonged output (C99-C100) is reasonably inferred from modeling and the stationary phase context, though direct experimental validation of this specific advantage is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "BisDC subunits show structural similarities to known regulators: BisC contains a DUF2857 domain with similarity to FlhC (flagellar activator subunit), while BisD carries a ParB domain with predicted DNA binding capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by Pfam and Phyre2 structural analyses (Figure 1\u2014figure supplement 2). The domain predictions provide functional context, though the confidence levels for some predictions are modest. The analogy to FlhDC is appropriate given the structural similarities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The ICEclc regulatory constellation (bisR-alpA-bisDC-inrR) is widely conserved among Gamma- and Beta-proteobacteria, including pathogenic strains. These elements are found in PAGI-2 and PAGI-16 pathogenicity islands and are associated with virulence factors and antibiotic resistance genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C76-C80, C106-C109 are supported by phylogenetic analysis (Figure 1\u2014figure supplement 3-4) and database searches showing conservation across multiple species. The association with pathogenicity islands and resistance genes is documented with appropriate citations. This establishes the broad biological significance of the regulatory system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The upstream regulatory branch is controlled by MfsR autorepression leading to low unimodal TciR levels. TciR is a weak activator of PbisR, while BisR is a potent activator of PalpA, creating a scalable transmission of the activation signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 integrate previous work on MfsR (C88-C89, cited) with current observations of TciR and BisR activity (C90-C91). The characterization of TciR as 'weak' and BisR as 'potent' is supported by the reporter data (Figures 2-3) and modeling results (C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "The ICEclc transfer competence system has two mathematical states (zero and positive). Transfer competent cells do not revert to silent state but become damaged and arrest division. The low proportion of tc cells prevents fitness costs to the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C97-C98 are supported by mathematical characterization (C95), citations to previous experimental work on tc cell fate (C97), and fitness studies (C98). The bistable nature is well-established both theoretically and experimentally throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Additional regulatory factors (InrR, AlpA, RpoS) modulate the ICEclc network. InrR is required for transfer but is not a direct transcription activator. AlpA represses PalpA. RpoS may be important for multiple ICE promoters. Upstream regions enhance BisDC activation through uncharacterized mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C105 identify auxiliary factors but their mechanisms remain incompletely characterized. InrR's role is established (C101, cited) but its mechanism is unclear (C102). AlpA repression is shown (C103) but not fully characterized. The enhancement by upstream regions (C104) and broader RpoS role (C105) are suggested but require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C15",
+      "C16",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Background on bistability and ICE biology: Bistability refers to two mutually exclusive stable states in genetically identical populations and may serve as a bet-hedging strategy. ICE horizontal transfer is costly and occurs at low frequency (<10^-5 per cell), requiring mechanisms that operate with high success under low opportunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C15-C16, C81-C83 provide background context supported by appropriate citations. These establish the biological and theoretical framework for understanding the ICEclc regulatory system. The claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "Transfer competent cells excise and replicate the ICE upon resuming growth, which can then conjugate to recipient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by citations to previous work characterizing ICEclc transfer mechanics. This is established background knowledge relevant to understanding the regulatory system.",
+    "result_type": "MINOR"
+  }
+]

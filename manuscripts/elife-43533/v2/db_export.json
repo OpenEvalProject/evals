@@ -1,0 +1,1801 @@
+{
+  "submission": {
+    "id": "2c3cfc62-3a22-48e5-93e6-58ffba4e0792",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:50:41.869509Z",
+    "updated_at": "2025-12-02T09:50:41.869509Z"
+  },
+  "content": [
+    {
+      "id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "submission_id": "2c3cfc62-3a22-48e5-93e6-58ffba4e0792",
+      "content_type": "manuscript",
+      "content_text": "# The impact of bilateral ongoing activity on evoked responses in mouse cortex\n\n## Authors\n\n- Daisuke Shimaoka<sup>1</sup> ([ORCID: 0000-0002-9435-5448](https://orcid.org/0000-0002-9435-5448))\n- Nicholas A Steinmetz<sup>1</sup> ([ORCID: 0000-0001-7029-2908](https://orcid.org/0000-0001-7029-2908))\n- Kenneth D Harris<sup>2</sup> ([ORCID: 0000-0002-5930-6456](https://orcid.org/0000-0002-5930-6456))\n- Matteo Carandini<sup>1</sup> ([ORCID: 0000-0003-4880-7682](https://orcid.org/0000-0003-4880-7682)) \u2020\n\n### Affiliations\n\n1. UCL Institute of Ophthalmology University College London London United Kingdom\n2. UCL Institute of Neurology University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn the absence of external stimuli or overt behavior, the activity of the left and right cortical hemispheres shows fluctuations that are largely bilateral. Here, we show that these fluctuations are largely responsible for the variability observed in cortical responses to sensory stimuli. Using widefield imaging of voltage and calcium signals, we measured activity in the cortex of mice performing a visual detection task. Bilateral fluctuations invested all areas, particularly those closest to the midline. Activity was less bilateral in the monocular region of primary visual cortex and, especially during task engagement, in secondary motor cortex. Ongoing bilateral fluctuations dominated unilateral visual responses, and interacted additively with them, explaining much of the variance in trial-by-trial activity. Even though these fluctuations occurred in regions necessary for the task, they did not affect detection behavior. We conclude that bilateral ongoing activity continues during visual stimulation and has a powerful additive impact on visual responses.\n\n## Introduction\n\nEven in the absence of external stimuli or overt behavior, the patterns of activity exhibited by the awake cerebral cortex, known as ongoing activity, can display a striking degree of bilateral symmetry. When one region of cortex becomes active, this activity is often accompanied by activity in the symmetrical region in the opposite hemisphere. This bilateral symmetry has been documented both in awake mice (Mohajerani et al., 2010) and in awake humans (Fox et al., 2006; Tyszka et al., 2011). The degree of symmetry varies across cortical areas (Mohajerani et al., 2010), but the rules behind the differences across areas remain unknown.\n\nBilateral ongoing activity coexists with event-related activity, which is not necessarily bilateral. For instance, when human subjects move their right hand, the movement-related BOLD (Blood-oxygen-level-dependent) response in left motor cortex coexists with bilateral ongoing fluctuations in both left and right motor cortices (Fox et al., 2006).\n\nIt is not clear, however, to what extent this bilateral ongoing activity can influence sensory-evoked activity. Similar to the activity associated with movements, the activity evoked by visual stimuli in cortex is not generally bilateral. For instance, a visual stimulus presented to the side of the animal would evoke unilateral responses in the contralateral visual cortex. It is not known whether the bilateral ongoing activity coexists with the visually\u00a0evoked activity, or whether it is quenched by the onset of visual responses (Churchland et al., 2010; He, 2013).\n\nIf bilateral ongoing activity persists during sensory responses, it could contribute to the large trial-by-trial variability seen in these responses. Even in response to an identical visual stimulus, neural responses in primary visual cortex are well-known to vary strongly from trial to trial (Tolhurst et al., 1983). This variability has been observed not only in the spike trains but also in intracellular recordings from single neurons (Anderson et al., 2000; Carandini, 2004) and in voltage imaging of neural populations (Arieli et al., 1996; Carandini et al., 2015). How much of this trial-by-trial variability is explained by bilateral ongoing activity?\n\nIf much of trial-by-trial variability is explained by bilateral ongoing activity, then bilateral measurements may become necessary to estimate true sensory responses. How would such a procedure compare to the standard method (Arieli et al., 1996) of measuring activity before a stimulus and removing it from the subsequent activity? Moreover, it is not known how bilateral ongoing activity interacts with visual responses, for\u00a0example whether the interaction can be described as simply additive or multiplicative (Arieli et al., 1996; Ecker et al., 2014; Goris et al., 2014; He, 2013; Lin et al., 2015; Sch\u00f6lvinck et al., 2015). Likewise, it is not known whether the bilateral fluctuations impair stimulus coding (Averbeck et al., 2006) and therefore impact perception.\n\nTo address these questions, we performed widefield optical imaging from both cortical hemispheres of mice performing a visual detection task. Widefield imaging allowed us to monitor bilateral ongoing activity and visually\u00a0evoked response across hemispheres. To observe these forms of activity both in membrane potential and in spiking activity, we measured both from mice expressing a voltage sensor and from mice expressing a calcium sensor. These measurements revealed that bilateral ongoing activity has a prominent impact on visually\u00a0evoked responses. An additive model for the interaction of ongoing and evoked activities provided excellent fits to the data, explaining up to 60% of trial-by-trial variance in the observed imaging signal. On the other hand, bilateral ongoing activity did not seem to affect perceptual decisions, suggesting that it does not impact stimulus coding.\n\n## Results\n\nWe performed widefield imaging in the cerebral cortex of transgenic mice expressing voltage indicator VSFPB1.2 or calcium indicator GCaMP6 in excitatory neurons (Figure 1). The imaging window covered the dorsal part of both cortical hemispheres. We defined the location of sensory and motor areas by aligning the images to the Common Coordinate Framework of the Allen Brain Atlas (Figure 1A). We confirmed the outlines of the visual areas based on functional mapping (visual field sign, Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig1-v2.jpg)\n\n**Figure 1.:** (A) Location of somatosensory and motor areas based on the anatomical database by Allen Brain Atlas. The background image indicate a raw fluorescence signal obtained from voltage imaging. Superimposed green contour lines indicate borders registered in the Common Coordinate Framework of the Allen Brain Atlas. (B) Location of individual visual areas, identified by visual field sign. The border of its sign indicates the border of visual areas. (C) Three example sequences of voltage signals during the period before visual stimulation when a mouse was holding the wheel without detectable eye movements. (D) Relative power spectral density of the bilateral and unilateral ongoing voltage components with respect to measured ongoing voltage signal, averaged across the visual areas from the example mouse. Different color indicates symmetrical component of activities between the hemispheres, computed as (left\u00a0+\u00a0right)/2 (blue), asymmetrical component of activities, computed as (left-right)/2 (red). Both components were divided by the total signal measured in each frequency. Background shades indicate S.E. across two animals. (E:\u00a0Same as C), for widefield imaging of calcium signals. (F: Same as D), for seven mice expressing calcium indicators. The video of activity in these three trials is available at Figure 1\u2014video 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Singular Value Decomposition efficiently compresses calcium-imaging data. Example GCaMP traces in V1, using 5 numbers of SVD components, from 50 to 2000 components. The resulting five traces look identical. (B) A few tens of components are sufficient to capture close to 100% of the variance, both in the calcium-sensitive channel (blue) and in the calcium-independent channel (red). In this study, we use 500 components (arrow). Shaded area represents s.d. across imaging sessions. Similar results were obtained when imaging Voltage-Sensitive Fluorescent Proteins. (C,D) Power spectral density of measured, bilateral, and unilateral signals before (D) and after (C) bandpass filtering. In both cases, the power of bilateral and unilateral signals relative to measured signals is as in Figure 1H (filtering does not affect the ratio).\n\nWe then measured activity while the mice performed a visual two-alternative task (Burgess et al., 2017; Zatka-Haas et al., 2019). In the task, mice reported the location of a grating stimulus presented on the left or right visual field. Before the stimulus application, the mice were required to hold the wheel still for at least 500 ms. We begin by examining the ongoing activity measured in this pre-stimulus interval, focusing on trials when mice held the wheel without making eye movements.\n\n### Ongoing cortical activity is largely bilateral\n\nDuring the pre-stimulus interval, we observed strong bilateral voltage activity over the entire dorsal cortex (Figure 1C\u2013D). This activity involved multiple cortical areas (Figure 1C) and was not accompanied by any obvious body movement (Figure 1\u2014video 1). As reported in previous studies (Mohajerani et al., 2010; Shimaoka et al., 2017), activity was largely symmetric between the left and right hemispheres. Indeed, this symmetric, bilateral activity accounted for most of the power of the measured voltage signals, at all measured frequencies (Figure 1D): we did not observe significant difference in coherence across frequencies (2\u20137 Hz, p>0.05, one-way ANOVA).\n\nThese phenomena were not limited to voltage fluctuations, which might in principle be entirely subthreshold: they were also seen in calcium signals, which reflect neuronal spiking (Figure 1E\u2013F). Calcium activity during the pre-stimulus interval involved multiple cortical areas and was also typically symmetric between the hemispheres (Figure 1E, Figure 1\u2014video 1). Just as with voltage signals, bilateral calcium activity accounted for most of the power of the measured calcium signals, and seemed to do so at all measured frequencies (Figure 1F).\n\n### Bilateral ongoing fluctuations differ across areas\n\nThe bilateral symmetry of ongoing activity, however, was not equal for all cortical areas, and tended to decrease with distance from the midline (Figure 2). For each cortical area of interest, we computed the temporal correlation of that area (\u2018seed area\u2019) against all the other pixels. Both in mice-expressing voltage indicators (Figure 2A) and in mice-expressing calcium indicators (Figure 2B), the resulting seed-area maps showed high correlation in the corresponding region in the opposite hemisphere. This bilateral correlation was particularly strong in primary somatosensory cortex (S1) and in medial visual areas such as PM (Figure 2C,D). Bilateral correlation tended to decrease with a region\u2019s distance from the midline, both in mice-expressing voltage indicators (Figure 2C, pairwise correlation \u03c1\u00a0=\u00a0\u22120.44) and in mice-expressing calcium indicators (Figure 2D, pairwise correlation \u03c1\u00a0=\u00a0\u22120.42).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig2-v2.jpg)\n\n**Figure 2.:** (A) Seed-area maps of correlation from an example animal expressing a voltage indicator. Correlation was computed against the average signal within the red square to signals of the all the other pixels. (B, as in A), for an animal expressing a calcium indicator. (C) Correlation between left and right symmetrical ROIs (Regions of interest), as a function of distance ROI and the midline. Each dot represents average of two mice expressing voltage indicators. Data for area M2 is shown during passive (white) and active (black) conditions. Data for other areas are averages of active and passive conditions (gray). Gray line indicates a result of linear fit without using M2 and V1m. (D) Same as (C), for four mice expressing a calcium indicator.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** This analysis was performed on six mice where we had measured both active and passive condition, and where all six visual areas were identified functionally. Two of these mice expressed VSFP (orange) and four expressed GCaMP (green). The genotypes of the latter was Snap25-GCaMP6s (circles), or TetO-GCaMP6s;Camk2a-tTA (diamonds). For area M2 (H), p-value was p\u00a0=\u00a00.0013 before Bonferroni correction, p\u00a0=\u00a00.013 afterwards.\n\nHowever, correlation was lower than expected in the monocular region of primary visual cortex, V1m and, when the animal was engaged in the task, in secondary motor cortex (M2, Figure 2C,D). In area M2, this low bilateral correlation may be related to task engagement, because bilateral correlation seemed to be higher when the animal was in a passive condition (Figure 2C,D, white circle). Indeed, the reduction in bilateral fluctuations seen with task engagement was specific to area M2, where it was significant (Figure 2\u2014figure supplement 1). For each cortical area, we compared bilateral correlation in the active task vs. the passive condition using VSFP and GCaMP data. For all areas except M2, there was no significant change in correlations across the two conditions. This included V1m, where correlations were lower than in other areas but not significantly different across the two conditions (p>0.05 after Bonferroni correction, paired t test, n\u00a0=\u00a06 mice, Figure 2\u2014figure supplement 1D). In M2, instead, there was a significant reduction during the active task (p\u00a0=\u00a00.0013/0.013 before/after Bonferroni correction, paired t test, n\u00a0=\u00a06 mice, Figure 2\u2014figure supplement 1H).\n\n### Bilateral ongoing fluctuations continue during unilateral visual responses\n\nBilateral ongoing fluctuations continued following the onset of the visual stimulus and were typically larger than the unilateral visual responses (Figure 3). For example, consider the voltage responses to three presentations of a 50% contrast stimulus in the right monocular visual field (Figure 3A). In all these trials, activity before visual stimulation was largely bilateral and continued to fluctuate after stimulus onset. Only by acquiring multiple trials could these ongoing fluctuations be averaged out to reveal the underlying unilateral response to the visual stimulus (258 trials, Figure 3B). Similar results were obtained with calcium imaging. The bilateral activity seemed to continue unperturbed following presentation of a stimulus in the left monocular visual field (Figure 3C, Figure 3\u2014video 1). Averaging the calcium activity over 104 trials revealed localized visual responses in area V1 and higher visual areas, which grew between 50 and 150 ms after stimulus onset (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig3-v2.jpg)\n\n**Figure 3.:** (A) Three example sequences of voltage signal during the period after presentation of 50% contrast to the left monocular visual field in an example mouse expressing VSFP. In each examples, the right-most number in a parenthesis indicates correlation coefficient of the sequence to the average across repeats (B). (B) Average neural activity across repeats. (C, D)\u00a0Same as (A), (B), for a mouse expressing calcium indicator. The video of activity in these three trials is available at Figure 3\u2014video 1.\n\nConfirming these observations, we measured the activity evoked by our stimuli in areas V1 and PM, and observed that in the first 150 ms following stimulus presentation this activity was exclusively unilateral (Figure 4). Task stimuli elicited visual activity solely in contralateral cortex, both in area V1 (Figure 4A, red traces) and in area PM (Figure 4B, red traces). The mean activity rose in the period 50\u2013150 ms after stimulus onset, and increased with contrast as expected (Figure 4E,F). Consistent with known variability of neural activity, this increase in mean was accompanied by an increase in standard deviation across trials (Figure 4C,D). By contrast, in the unstimulated hemisphere, the stimuli affected neither the mean activity (Figure 4A,B, black traces) nor the standard deviation of activity (Figure 4C,D, black traces). These results suggest that bilateral fluctuations are not reduced by the onset of visual stimuli.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig4-v2.jpg)\n\n**Figure 4.:** (A) Mean calcium signal across trials from seven animals in the right stimulated V1 (red) and in the left unstimulated V1 (black). Time period of 50\u2013150 ms after stimulus onset (shaded area) was used for subsequent analysis of visually\u00a0evoked response. (B) Same as (A) in PM. (C.D) Same as panels\u00a0(A) and (B) for standard deviation across trials. (E) Average neural activity 50\u2013150 ms after visual stimulation to different contrasts (contrast-response curve) in V1. Activity in the stimulated and unstimulated V1 is shown as red and black lines. Error bars indicate S.E. across seven animals. (F) Same as panel (E) in PM.\n\n### Bilateral fluctuations and visually\u00a0evoked responses add linearly\n\nWe exploited the unilateral nature of visual responses to study their interaction with bilateral fluctuations. We illustrate these analyses with calcium imaging, where we have larger numbers of animals.\n\nInspection of trial-by-trial calcium signals suggested an additive interaction of stimulus-evoked responses and bilateral ongoing activity (Figure 5A,B). Consider, for instance, the trial-by-trial fluorescence measured in left and right area PM following the onset of a 100% contrast stimulus on the left (Figure 5A,B). Activities were highly variable across trials both in the left, unstimulated hemisphere and in the right, stimulated hemisphere (Figure 5A). This variability persisted at the time of the visual response, 50\u2013150 ms after stimulus onset (Figure 5A), and showed strong bilateral correlation (Figure 5B, dots).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig5-v2.jpg)\n\n**Figure 5.:** (A) Single trial traces aligned by the onset of visual stimulation of 100% contrast to the left visual field in the left unstimulated PM and right stimulated PM. The time period (50\u2013150 ms) used for the analysis of visually\u00a0evoked response is indicated as a gray bracket. (B) Relationship between left PM (abscissa) and right PM (ordinate) 50\u2013150 ms after visual stimulation. Single trial activity to 100% contrast stimulation is shown as cyan and blue dots. Moving average along left PM is shown as thick black (100% contrast) and gray (0% contrast) lines. (C) Contrast responses from trial groups of high (cyan) and low (blue) contralateral ongoing activity in one animal. Data points and error bars indicate median and median absolute deviation across trials from one animal. Curves indicate contrast-response functions where scale parameter is free (solid curve) or fixed (dotted curve) between the high and low ongoing activities. (D) Contrast responses, average of seven animals. Error bars represent S.E. across animals. (E,\u00a0F)\u00a0Parameters of contrast-response functions across animals. Offset (E) and scale (F) parameters were estimated individually from trial groups of low (abscissa) and high (ordinate) ongoing activities. Genetic background was Snap25-GCaMP6s (circles), TetO-GCaMP6s;Camk2a-tTA (diamonds) or Vglut1-Cre;Ai95 (squares). (G,\u00a0H) Same as panels (E) and (F), for all the visual areas.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Template obtained as average visual response to left and right 100% contrast stimuli obtained from one animal. (B) Example single-trial responses to after presentation of 100% contrast the the right monocular visual field, when ongoing activity at stimulus onset is negatively (top, \u03c1\u00a0=\u00a0\u22120.34) and positively (bottom, \u03c1\u00a0=\u00a00.44) correlated with the template (A). (C) Correlation between single-trial movie and the template, sorted by correlation at stimulus onset. (D) Contrast responses from trial groups of positive (light green) and negative (dark green) visually-evoked motifs at t\u00a0=\u00a00 in one animal. Data points and error bars indicate median and median absolute deviation across trials from one animal in V1. (E) Contrast responses, average of seven animals. Error bars represent S.E. across animals. (F,\u00a0G) Parameters of contrast-response functions across animals. Offset (F) and scale (G) parameters were estimated individually from trial groups of negative (abscissa) and positive (ordinate) correlation to visually-evoked motifs.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Instantaneous amplitude at unstimulated PM (vertical axis) and pre-stimulus fluctuation amplitude between 2\u20137 Hz at stimulated PM (horizontal axis) of single trials in area PM. Each dot represents single trial drawn from one animal. We then set thresholds to divide trials between \u2018Synchronized\u2019 and \u2018Desynchronized\u2019 states (vertical line) and between high vs. low instantaneous activity (50\u2013150 ms after stimulus onset, horizontal line). (B) Contrast responses from trials of high (cyan) and low (blue) bilateral ongoing activity in synchronized state in one animal. Black dotted curve indicates grand average across all the trials. Error bars represent median absolute deviation across trials. (C) Contrast responses from trials of high (magenta) and low (purple) bilateral ongoing activity in desynchronized state in one animal. Black dotted curve indicates grand average across all the trials as in panel\u00a0(B). Error bars represent median absolute deviation across trials. (D) Offset measured as a vertical distance from the grand average curve, against instantaneous amplitude at unstimulated area PM. Symbol colors indicate trial conditions as in panel\u00a0(A). Each circle represents average across trials in response to different contrasts. (E\u2013G) Same as in panels (B-D) but from averaged data across seven mice.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Same as Figure 5\u2014figure supplement 2, except that trials are divided by prestimulus pupil diameter instead of cortical state.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) Cross-correlation between activity in left and right PM, in individual mice (colored traces) and across all seven mice (black trace). (B) Activities 50\u2013150 ms after visual stimulation of 100% contrast in the stimulated PM (ordinate), against activities 0\u2013100 ms before stimulation in the same ROI (abscissa). Each dot represents single trial activity. (C) Contrast responses from trials of high (cyan) and low (blue) bilateral ongoing activity when prestimulus activity is in Down phase in one animal. Black dotted curve indicates grand average across all the trials. Error bars represent median absolute deviation across trials. (D) Contrast responses from trials of high (magenta) and low (purple) bilateral ongoing when prestimulus activity is in Up phase in one animal. Black dotted curve indicates grand average across all the trials as in panel\u00a0(B). Error bars represent median absolute deviation across trials. (E) Offset measured as a vertical distance from the grand average curve, against instantaneous amplitude in unstimulated area PM. Symbol colors indicate trial conditions as in panel (B) Each circle represents average across trials in response to different contrasts. (F\u2013H) Same as in panels\u00a0(B-D) but from averaged data across seven mice.\n\nTo quantify the relationship between left and right PM in the response period we computed a sliding average of right PM activity as a function of left PM activity, separately for 100% contrast visual stimulus (Figure 5B black curve), and 0% contrast stimulus (Figure 5B gray curve). Consistent with an additive interaction, the effect of the stimulus was to elevate this right-hemisphere activity by a constant amount, irrespective of left-hemisphere activity (Figure 5B, black vs. gray curves).\n\nTo test whether the interaction between ongoing activity and visually evoked responses is additive, we examined the effects of variations in each factor\u2019s amplitude: the contrast of the stimulus, and the simultaneous amplitude of the bilateral fluctuation (Figure 5C\u2013H). We divided trials into two groups according to fluorescence at the time of the responses (50\u2013150 ms) in the unstimulated hemisphere (Figure 5B; blue vs. cyan). For all stimulus contrasts, the visual responses obtained when ongoing activity was high (Figure 5C,D, cyan) appeared additively shifted compared to those obtained when ongoing activity was low (Figure 5C,D, blue). To quantify this effect, we fitted the contrast responses with a curve with two free parameters: offset and scale. The offset parameter was significantly higher when ongoing activity was high (p\u00a0=\u00a00.0009, paired t test, n\u00a0=\u00a07 mice Figure 5E). The scale parameter was much less affected: it appeared to show a mild increase when bilateral activity was high, but this increase was not significant (p>0.05, paired t test, n\u00a0=\u00a07 mice Figure 5F). This result held not only for PM but also for all other visual areas: bilateral ongoing activity changed offset but not scale (n\u00a0=\u00a07 in V1, n\u00a0=\u00a05 mice in AL, LM and RL, Figure 5G,H). Similar results were seen when we chose different criteria for distinguishing high vs. low ongoing activity.\n\nThe additive interaction between bilateral ongoing activity and visual responses held regardless of the degree to which ongoing activity resembled visual responses (Figure 5\u2014figure supplement 1). Ongoing activity sometimes resembles the responses evoked by visual stimulation (Kenet et al., 2003; Mohajerani et al., 2013). To assess whether this similarity affects the interaction between ongoing activity and visually\u00a0evoked responses, we created a template based on the average response to a visual stimulus, made it bilateral, and divided trials into two groups according to correlation with this template at the time of the stimulus onset. For all stimulus contrasts, the visual responses obtained when ongoing activity was positively or negatively correlated with the template differed by a single additive factor (Offset: p>0.05 in V1 n\u00a0=\u00a07 mice, p<0.05 in other visual areas n\u00a0=\u00a05 mice, paired t test; Scale: p>0.05 in all areas, paired t test, n\u00a0=\u00a07 mice in V1, n\u00a0=\u00a05 mice in AL, LM, and RL, Figure 5\u2014figure supplement 1F,G).\n\nBilateral fluctuations are rapid and their effect is independent of arousal. These effects of bilateral ongoing activity were due to fast changes in cortical activation, not to slow changes in cortical state (Figure 5\u2014figure supplement 2). Slow state changes might in principle have been able to explain these results; for instance, there may be more opportunities for bilateral ongoing activity to be \u2018high\u2019 when the cortex is in a more synchronized state, and this state might be the fundamental factor that leads to elevated visual responses. To assess slow changes in cortical state, we computed the amplitude of 2\u20137 Hz fluctuations in bilateral activity before the stimulus, and thus divided trials in four groups, for all combinations of state (more desynchronized vs. more synchronized) and instantaneous activity (low vs. high, Figure 5\u2014figure supplement 2A). The interaction between instantaneous ongoing activity and visually\u00a0evoked responses was seen in synchronized and desynchronized states (Figure 5\u2014figure supplement 2B,C). The offset associated with high bilateral activity seemed to be larger in the synchronized state (Figure 5\u2014figure supplement 2C). However, this larger offset was explained by the fact that in the synchronized state, the bilateral ongoing activity tended to reach higher levels (Figure 5\u2014figure supplement 2A,D). Similar results were seen across the other mice (Figure 5\u2014figure supplement 2E\u2013G): fast fluctuations, rather than cortical state, determine the size of the additive interaction on visually\u00a0evoked responses.\n\nSimilarly, the effects of bilateral ongoing activity were not related to slow changes in level of arousal (Figure 5\u2014figure supplement 3). We gauged the level of arousal by measuring pupil diameter, and we divided the trials according to pupil diameter (small vs. large, Figure 5\u2014figure supplement 3A), and found that the effect of bilateral activity was present in both cases (Figure 5\u2014figure supplement 3B,C,E,F). Once again, responses could be explained based on fast ongoing fluctuations, with no need to include pupil dilation as a predictor (Figure 5\u2014figure supplement 3D,G).\n\nBecause ongoing activity changed rapidly and was largely bilateral, its impact could not be estimated through the typical procedure of measuring unilateral activity before stimulus onset (Figure 5\u2014figure supplement 4). Ongoing activity is often estimated from prestimulus measurements (Arieli et al., 1996), and these estimates are often subtracted from the subsequent measurements. This procedure is likely to be less effective in the face of strong, fast bilateral ongoing activity. Indeed, the cross-correlation between corresponding regions on the two hemispheres typically decreased to 0 in\u00a0~100 ms, and in some mice became negative afterwards (Figure 5\u2014figure supplement 4A). As a result, estimates of bilateral ongoing activity obtained from the unstimulated hemisphere were superior to estimates obtained in the stimulated hemisphere before stimulus onset. This can be seen by dividing all trials into four groups, for all combinations of prestimulus activity in the stimulated hemisphere (down vs. up) and poststimulus activity in the unstimulated hemisphere (low vs. high Figure 5\u2014figure supplement 4B). The strong effect of bilateral activity was present in both up and down groups (Figure 5\u2014figure supplement 4C,D,F,G), and responses could be explained based on fast bilateral fluctuations (Figure 5\u2014figure supplement 4E,H).\n\n### Bilateral fluctuations do not affect perceptual reports\n\nDo these fast fluctuations in bilateral ongoing activity result in percepts? On the one hand, one might imagine that they do, because they impact cortical areas that are necessary for the performance of the task (Burgess et al., 2017; Zatka-Haas et al., 2019), so one might expect that whatever affects their activity will influence the percept of the animal. On the other hand, as the correlation structure of bilateral spontaneous activity differs from that of unilateral sensory responses, it may have little impact on information coding (Averbeck et al., 2006): interpreted naively, bilateral activations would constitute stimuli with a peculiar mirror symmetry across the vertical midline, which would be unlikely to be confused with actual images.\n\nBilateral ongoing fluctuations did not affect the behavior of the mouse in the task (Figure 6). We divided trials according to whether bilateral ongoing activity in PM was low or high (as in Figure 5C,D), and computed psychometric curves in each group. The two psychometric curves were essentially identical: there was no effect of bilateral activity on the probability of choosing the correct side (Figure 6A,C), or to choose a no-go response, which would be appropriate when stimulus is zero (Figure 6B,D). We fitted the behavioral responses with a simple probabilistic observer model (Burgess et al., 2017; Zatka-Haas et al., 2019), and measured offset and scale parameters of the perceptual contrast sensitivity function inferred by the model. Neither offset nor scale were significantly affected by bilateral ongoing activity (p>0.05, paired t test, n\u00a0=\u00a07 mice, Figure 6E,G). Similar results were seen when we used other visual areas to measure bilateral activity (p>0.05, n\u00a0=\u00a07 mice in V1, n\u00a0=\u00a05 mice in AL, LM, and RL, Figure 6F,H).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig6-v2.jpg)\n\n**Figure 6.:** (A) Probability of turning the wheel to the correct direction as a function of stimulus contrast in one animal. The probability is computed separately in trial groups of low (blue) and high (cyan) ongoing activity measured in area PM. Error bars indicate 95% binomial confidence intervals. Curves indicate psychometric functions obtained by fitting a probabilistic observer model (Burgess et al., 2017) separately to the two sets of responses. (B) Same as (A), for probability of no-go. (C,\u00a0D) Same as (A), (B), averaged across mice. Error bars represent S.E. across seven mice. (E) Offset parameter of the perceptual contrast sensitivity function inferred by the model, measured when bilateral activity in PM was low (abscissa) vs. high (ordinate). Symbols indicate parameters from individual animals. Genetic background was Snap25-GCaMP6s (circles), TetO-GCaMP6s;Camk2a-tTA (diamonds) or Vglut1-Cre;Ai95 (squares). (F Same as E), for all visual areas. (G,\u00a0H) Same as\u00a0(E),\u00a0(F), for the scale parameter of the perceptual contrast sensitivity function.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Probability of turning the wheel to the correct direction as a function of stimulus contrast in one animal. The probability is computed separately in trial groups of negative (dark green) and positive (light green) correlation to visually\u00a0evoked motifs. Error bars indicate 95% binomial confidence intervals. Curves indicate psychometric functions obtained by fitting a probabilistic observer model (Burgess et al., 2017) separately to the two sets of responses. (B) Same as (A), for probability of no-go. (C,\u00a0D) Same as (A) and\u00a0(B), averaged across mice. Error bars represent S.E. across seven mice. (E) Offset parameter of the perceptual contrast sensitivity function inferred by the model, measured when correlation between ongoing activity and visually\u00a0evoked motif was negative (abscissa) vs. positive (ordinate). Symbols indicate parameters from individual animals. Genetic background was Snap25-GCaMP6s (circles), TetO-GCaMP6s;Camk2a-tTA (diamonds) or Vglut1-Cre;Ai95 (squares). (F) Same as (E), for the scale parameter.\n\nThese results indicate that the bilateral ongoing activity did not affect perceptual reports. We next asked whether this result could be explained by the bilateral activity having very different features from the visually evoked activity. To test this hypothesis, we restricted the analysis to cases when the ongoing activity resembled the visual responses (Mohajerani et al., 2013). Even in these cases, we saw no significant effects on the performance of the animal (p>0.05, n\u00a0=\u00a07 mice, Figure 6\u2014figure supplement 1).\n\n### Bilateral fluctuations dominate trial-by-trial variations in evoked visual responses\n\nTo compare the effects of bilateral ongoing fluctuations and evoked visual responses we fit a simple additive model (Figure 7A). In the model, the activity in a predicted visual area in trial i at time t from stimulus onset is the sum of a visual component\u00a0$Vc_{i},t$, which depends only on contrast$c_{i}$, and a contribution from bilateral fluctuation\u00a0$F_{i}t$, that varies across trials independently of the stimulus\n\n$$\nf_{i}t=Vc_{i},t+F_{i}t.\n$$\n\nTo estimate the visual component\u00a0$Vc_{i},t$, we used the average across trials of the activity measured at each stimulus contrast. To estimate the amount of bilateral fluctuation $F_{i}t$ on trial i, we measured the activity $f_{i}^{'}t$ contralateral to the predicted area, subtracting any trial-triggered activity $V^{'}(c_{i},t)$ that may be seen there:\n\n$$\nB_{i}t=h[f_{i}^{'}t-V^{'}(c_{i},t)]\n$$\n\nThe weight $h$\u22641\u00a0is a fixed coefficient, and was obtained from trials with no stimulus (0% contrast) by linear regression against the contralateral fluorescence.\n\nThe additive model provided good estimates of trial-by-trial activity (Figure 7B). Consider again the activity measured in right area PM in response to 100% contrast stimuli presented in the left visual field (as in Figure 5A). The bilateral ongoing activity $F_{i}t$ estimated from left area PM showed strong fluctuations across time and trials (Figure 7B1). These fluctuations were often as large as the visually\u00a0evoked response\u00a0$V100,t$, obtained by averaging activity across trials in right area PM (Figure 7B2). The sum of these two components yields predicted single-trial activities in right area PM (Figure 7B3). This predicted activity closely resembles the observed data (Figure 7B4).\n\nThe additive model was most successful when bilateral ongoing fluctuations were measured across symmetrical cortical locations (Figure 7C). We asked whether the model would degrade if bilateral activity $F_{i}t$ was measured not from the contralateral PM but rather from other contralateral areas. Doing so strongly decreased the explained variance: explained variance was highest when the region used to estimate the bilateral activity was contralateral PM or regions near it, and decreased with distance from contralateral PM (Figure 7D). Similar results were obtained in the other visual areas (Figure 7\u2014figure supplement 1), confirming that the bilateral ongoing activity contributing to the observed variability is not global, but rather local to individual areas.\n\nThis simple additive model worked well in all visual areas, and revealed that bilateral ongoing fluctuations had a much larger effect on cortical activity than evoked visual responses (Figure 7D). In area PM, the additive model explained 58 \u00b1 3% of the variance (S.E. n = 7 mice). This is a very high performance, and the bilateral component is crucial to obtain it. Indeed, the visually evoked responses $Vc_{i},t$\u00a0were only able to account for 12 \u00b1 4% of the variance. Similar effects were seen in area AM, and to a large extent also in the remaining visual areas (Figure 7D).\n\nMoreover, the model performed well also on the data obtained with voltage imaging (Figure 7E,F). For area PM, for instance, the additive model accounted for up to 34% of trial-by-trial variability in the voltage signals (Figure 7E). This value was significantly higher than the variance explained by the visually evoked responses, which is known to be particularly low for voltage signals (Figure 7F). Much of the large variability observed across trials when performing widefield imaging experiments (Arieli et al., 1996; Carandini et al., 2015), therefore, is not due to imaging noise, but rather to structured ongoing neural activity tightly coordinated across the hemispheres.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic representation of the additive model (Equation 1). (B) Single-trial PM traces predicted by the additive model. (B1) bilateral activity, estimated from left PM. (B2) visually\u00a0evoked response of the right PM, estimated as average across trials of right PM. (B3) predicted activity of the right PM by the additive model. (B4) observed activity of the right PM. (B5) difference between predicted and observed activity in right PM. (C) Variance of activity in PM explained by the additive model, as a function of distance from location of PM to location of ROI used as a regressor. Circles represent average across animals. Gray curve indicates a result of exponential fit. (D) Variance explained by the visually\u00a0evoked and bilateral activities (additive model, red), and by the visually\u00a0evoked activity alone (black). Circles and error bars indicate average and S.E. across animals. Dots represent different animals. (E) As in (C), for voltage signals (n\u00a0=\u00a02 mice). Circles represent average across animals. (F\u00a0aAs in D) for voltage signals (circles, n\u00a0=\u00a02 mice).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43533/elife-43533-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Variance of activity in each visual area explained by the additive model, as a function of distance from location of the corresponding area in the other hemisphere. Gray curves indicate results of exponential fit. (B) Variance explained by the additive model using different ROIs as regressors (abscissa). Variance was normalized in each target ROI across regressor ROIs, by dividing maximum explained variance.\n\n## Discussion\n\nBy taking advantage of widefield imaging, we monitored both cortical hemispheres in mice performing a visual detection task, and found that bilateral ongoing activity has a powerful additive impact on sensory processing. As reported previously (Mohajerani et al., 2010; Shimaoka et al., 2017; Vanni et al., 2017; Vanni and Murphy, 2014), voltage and calcium signals exhibited strong bilateral fluctuations in ongoing activity. In both types of signal, the impact of these bilateral fluctuations varied across cortical areas, and was stronger in areas closer to the midline. Two exceptions were the monocular region of area V1, where activity was less bilateral in all conditions, and area M2, where activity was less bilateral during task engagement. Bilateral ongoing fluctuations continued following the onset of the visual stimulus, and typically swamped the resulting unilateral visual responses. Higher bilateral ongoing activity increased visual responses equally at all contrasts, regardless of response amplitude, indicating that the interaction between ongoing activity and visually evoked responses was additive. A simple additive model provided good estimates of trial-by-trial visual response in all visual areas, and revealed that bilateral ongoing fluctuations had a much larger effect on cortical activity than evoked visual responses.\n\nBilateral fluctuations have been observed in multiple circumstances, but in the absence of overt movements their functional significance is not clear. The cortex exhibits clear bilateral activity during motor behavior (Musall et al., 2018), which is understandable given the symmetry involved in many body movements. It is less clear, however, why there should be bilateral symmetry in sensory responses, and even less clear why there should be symmetry in ongoing activity, both in wakefulness and in anesthesia (Mohajerani et al., 2010; Shimaoka et al., 2017; Vanni and Murphy, 2014).\n\nRegardless of their origin, it is likely that bilateral fluctuations are at least partially mediated by callosal connections. A number of brain structures connect the two cerebral hemispheres, including anterior commissure, cingulum, interhemispheric thalamic connections, and corpus callosum. Among these, the corpus callosum is the largest white matter tract connecting the cerebral hemispheres in placental mammalian brains. Ongoing activity is less correlated across hemispheres in mutant mice that lack the corpus callosum (Mohajerani et al., 2010) and in rats after surgical section of the corpus callosum (Magnuson et al., 2014). However, ongoing bilateral activity is also reported in humans born without a corpus callosum (Tyszka et al., 2011), suggesting that bilateral fluctuations can also be sustained by other brain structures.\n\nBilateral fluctuation represents shared activity across neurons, which impacts on response variability. Our widefield imaging result conforms to the previous electrophysiological report by Sch\u00f6lvinck et al. (2015), that ongoing activity is shared across large proportions of neurons and interacts additively with visually\u00a0evoked responses, and that it accounts for a large fraction of trial-by-trial fluctuations in observed visually\u00a0evoked activities. The present study extends this idea by demonstrating that such global fluctuation is actually shared across hemispheres, yet in an area-specific manner.\n\nOur results indicate that a full understanding of activity in a population of neurons in one hemisphere may require recordings from the corresponding area of the other hemisphere. Because ongoing activity changed rapidly and was largely bilateral, its impact could not be estimated through the typical procedure of measuring unilateral activity before stimulus onset (Arieli et al., 1996). Indeed, compared to bilateral activity, activity in the prestimulus period had a smaller impact on evoked responses than simultaneously measured activity in the contralateral hemisphere. Given the specificity that we have observed in bilateral fluctuations, the ideal placement of a sensor in the contralateral hemisphere would be one that monitored the symmetrical populations to the ones of interest. Experiments with this design are emerging in electrophysiology (Cohen and Maunsell, 2009; Rabinowitz et al., 2015), and a promising strategy would be to pair them with simultaneous widefield imaging.\n\nEven though bilateral fluctuations occurred in regions necessary for this visual task (Burgess et al., 2017), they did not impact choice behavior. Perhaps, a downstream readout mechanism removes the bilateral fluctuations by taking the difference of activity on left and right visual cortices (Zatka-Haas et al., 2019). It might thus be easy for the brain to ignore them during perceptual decisions based on vision, even though the fluctuations continue during visual stimulation and have a powerful additive impact on visual processing. One possible test of this hypothesis might be to perform optogenetic stimulation (e.g. O'Connor et al., 2013; Sreenivasan et al., 2016) both unilaterally and bilaterally, and ask whether the animal finds it easier to ignore bilateral activations during behavior.\n\n## Materials and methods\n\nExperimental procedures were conducted according to the UK Animals Scientific Procedures Act (1986), under personal and project licenses released by the Home Office following appropriate ethics review.\n\n### Transgenic lines\n\nTo obtain mice-expressing GCaMP6s in selected neuronal populations, we used Snap25-GCaMP6s (B6.Cg-Snap25tm3.1Hze/J), Jax025111. This mouse line expresses GCaMP6s in all neurons. Alternatively, we crossed two lines of mice: (1) TetO-GCaMP6s Jax024742 (Wekselblatt et al., 2016); (2) a line expressing tTA in excitatory neurons, Camk2a-tTA line, Jax007004. The results of this crossing were mice-expressing GCaMP6s in all excitatory neurons.\n\nTo obtain mice expressing GCaMP6f, we crossed two lines of mice: (1) the Cre-dependent GCaMP6f reporter line Ai95, Jax028865; (2) a line expressing Cre in Vglut1-expressing cells, Vglut1-Cre, Jax023527. The results of this crossing were mice expressing GCaMP6f in Vglut1-expressing excitatory neurons.\n\nTo obtain mice-expressing voltage-sensitive fluorescent protein (VSFP) Butterfly 1.2 in selected neuronal populations, we crossed three lines of mice: (1) the Cre/tTA-dependent VSFP reporter line Ai78, Jax023528 (Madisen et al., 2015); (2) a line expressing tTA in excitatory neurons, Camk2a-tTA line, Jax007004; (3) a line expressing Cre in neurons of all layers, Emx1-Cre, Jax005628. The results of this crossing were mice expressing VSFP\u00a0Butterfly 1.2 of all layers (Emx1-Cre;Camk2a-tTA;Ai78, n\u00a0=\u00a02).\n\n### Surgery\n\nThe nine mice (six males) were implanted with a head post and a thinned or intact skull cranial window (Drew et al., 2010) over the dorsal part of the both cortical hemispheres. An analgesic (Rimadyl) was administered on the day of the surgery (0.05 ml, s.c.), and on subsequent 2 days (in the diet). Anesthesia was obtained with isoflurane at 2\u20133% and kept 1\u20131.5% during surgery. To prevent dehydration during surgery, saline was administered every hour (0.01 ml/g/h, i.p.). Body temperature was maintained at 37\u00b0C using a feedback-controlled heating pad, and the eyes were protected with ophthalmic gel. The head was shaved and disinfected with iodine, the cranium was exposed, and the bone was thinned for VSFP animals with a dental drill and a scalpel over the dorsal part of the cortex. A 3D-printed light-isolation cone surrounding the frontal and parietal bones was attached to the skull with cyanoacrylate. Subsequently, a metal or 3D-printed head plate was secured with dental cement. After the cement solidified, this opening was filled with transparent cement.\n\n### Behavioral task\n\nThe general framework of the task and training procedure is found in Burgess et al. (2017). The sequence of trial events was as follows. First, the mouse kept the wheel still (quiescent period) to initiate the trial. Second, a visual grating stimulus was presented, and, during an \u2018open loop\u2019 period, wheel movements were ignored. Third, a go tone was played, after which point the wheel turns resulted in movements of the visual stimuli (\u2018closed loop\u2019). If the mouse turned the wheel such that the stimulus reached the center of the screen, the mouse received water reward (1\u20133 ml). If instead the mouse moved the stimulus by the same distance in the opposite direction, this incorrect decision was penalized with a timeout (typically, 2 s) signaled by auditory noise. In either case, the grating remained locked in its response position for 1 s and then disappeared. In this paper, we added slight modifications to the two-alternative task for GCaMP and VSFP animals. For GCaMP animals, we extended the two-alternative tasks by adding a \u2018no-go\u2019 response option when there was no stimulus. The result is the two-alternative unforced-choice (2AUC) task. Training started on the two-alternative forced-choice task, then we constrained the response window to 1.5 s and added the no-go condition: when the stimulus was absent (zero contrast), mice earned the reward by not turning the wheel (no-go; Figure 3A) for 1.5 s (Figure 3B). For VSFP animals, we used the 2AFC version of the task, where the mice were trained to hold the wheel after the stimulus presentation at least for 800 ms. If the mice did not respond within 5 s, the trial was aborted. When the stimulus was absent (zero contrast), water reward was randomly assigned to either to the left or right wheel turning. We analyzed VSFP activity in all sessions (25 sessions in two mice) and GCaMP activity in 37/61 sessions in seven mice, selected to have\u00a0>100 trials and overall hit rate\u00a0>65%.\n\nIn subset of mice, we also acquired widefield data during a passive condition, in which the same visual stimuli were applied but the waterspout was retracted. In this condition, the mouse quickly learned to stay still without moving the wheel.\n\nFor investigating visually\u00a0evoked neural activity and ongoing activity without mice\u2019s body movement, we ran custom-made algorithm to detect movement of the wheel, eye blinks and saccades (Engbert and Kliegl, 2003). Trials including more than one of these events around the time of the visual stimulus onset (GCaMP: \u2212500\u00a0~\u00a0200 ms; VSFP: \u2212500\u00a0~\u00a0800 ms) were excluded from the further analysis.\n\n### Imaging\n\nWe monitored GCaMP/VSFP signals with macroscope based on the tandem lens design and epi-illumination system (Ratzlaff and Grinvald, 1991), which we used in previous reports (Carandini et al., 2015; Madisen et al., 2015).\n\nFor GCaMP imaging, excitation light was provided by alternating blue (470 nm) and purple (405 nm) LEDs (Cairn OptoLED, P1110/002/000), through an additional band-pass filter (Semrock FF01-466/40-25 for blue, Chroma ET405/20x for purple). Illumination light passed through a dichroic (425 nm; Chroma T425lpxr), and 3-mm-core optical fiber (Cairn Research, P135/015/003), then reflected off another dichroic (495 nm; Semrock FF495-Di03\u221250 \u00d7 70) to the brain. Emitted light was passed through the second dichroic and emission filter (Edmund Optics 525/50\u201355 (86-963)) to single sCMOS camera (PCO pco.edge 5.5). The light intensity measured at cortical surface ranged from 0.04 to 0.09 mW/mm2 for the blue LED, and from 0.08 to 0.12 mW/mm2 for the purple LED. Imaging was conducted at 35 Hz in each purple and blue channel (70 Hz in total) with a nominal spatial resolution of 21.7 \u03bcm/pixel.\n\nFor VSFP imaging, excitation light was provided by a blue LED (Brainvision\u00a0LEX2-B), through a band-pass filter (482 nm;\u00a0Semrock FF01-482/35) and a dichroic mirror (Semrock FF506-Di03). This blue LED was alternated with red (631 nm) and green (528 nm) LEDs for simultaneous reflectance imaging to estimate blood volume and oxygenation. Fluorescence signals of VSFP FRET chromophores (mKate2 and mCitrine), as well as the reflectance signals were imaged via two of the sCMOS cameras. When the blue LED was turned on, first camera recorded the emitted fluorescence from mCitrine, which was reflected by a second dichroic mirror (Semrock\u00a0FF593-Di03), passed through an emission filter (Semrock\u00a0FF01-543/50-25). The second camera recorded the emitted fluorescence from mKate2, passed through the second dichroic mirror and an emission filter (Semrock\u00a0BLP01-594R-25). When the red and green LEDs were turned on at one time, the first and the second cameras recorded reflectance of cortical surface emitted by the red and green LEDs, respectively. Imaging was conducted at 35 Hz in each blue and red/green channel (total 70 Hz), with a nominal spatial resolution of 21.7 \u03bcm/pixel.\n\n### Signal processing\n\nWe used a data compression method by computing the singular value decomposition of the 3D image stack, and storing the top 500 singular values, that\u00a0is 500 images and 500 time courses (Steinmetz et al., 2017). Using 500 components provided excellent fidelity in reconstructing the individual pixel traces (Figure 1\u2014figure supplement 1).\n\nFor GCaMP data, the acquired fluorescence signal was contaminated by signals originating outside of the target fluorophores expressed in neurons. To reduce this artifact, simultaneously measured fluorescence signal excited by the purple LED was scaled by the regression coefficient with the signal excited by the blue LED, and subtracted out from it. Subsequently, to extract the time of firing from the slow temporal kinetics of GCaMP6s, we applied a temporal derivative and rectification (Markowitz et al., 2018). Finally, the signal was lowpass filtered with a cutoff of 7 Hz to attenuate signals from heartbeats. Filtering did not affect the ratio of unilateral to bilateral responses (Figure 1\u2014figure supplement 1).\n\nFor VSFP data, the red and yellow fluorescence signals were analyzed using the gain-equalization method (Akemann et al., 2012; Carandini et al., 2015), by equalizing the gains at the heart beat frequency between the two cameras. The gain equalization factors were obtained once per recording session at each pixel-basis. To further exclude the hemodynamic signals in the ratiometric signal, simultaneously measured red and green reflectance signals were scaled by the regression coefficient with the ratiometric signal, and subtracted out from the ratiometric signal (Ma et al., 2016). Finally the signal was filtered below 0.5 Hz and above 7 Hz to eliminate signals from heartbeats.\n\n### Identification of sensory areas\n\nVisual stimuli were presented via LCD monitors (Iiyama\u00a0ProLite E1980) placed 19 cm away from the animal. To identify areas six visual areas (V1, LM, AL, RL, AM, PM), we used vertical or horizontal bars sweeping across the visual field (Garrett et al., 2014; Kalatsky and Stryker, 2003). We built maps of retinotopy then parcellated the activated region into distinct visual areas by identifying changes in the sign of the retinotopic mapping between the screen and the cortical surface. This sign is positive if clockwise circles in the visual field map to clockwise circles on cortex and negative if they map to anti-clockwise circles (Sereno et al., 1994). Additionally in VSFP animals, train of auditory or somatosensory stimuli was used to identify these sensory areas. Somatosensory stimuli were air puffs delivered from a pressure injector (Toohey Company\u00a0Pressure system IIe) towards the bulk of the whiskers at a pressure of 40 PSI via a silicone tube (0.5 mm open tip diameter). Auditory stimuli were 13 kHz tones at 80 dB SPL via a magnetic speaker (Tucker-Davis Technologies) placed 19 cm away from the animal. We obtained location of the S1 barrel cortex and auditory cortex, by calculating the response amplitude at the stimulation frequency.\n\n### Fitting contrast-response curves\n\nTo quantify the contrast sensitivity of the recorded signal, we fitted the contrast-response relationship with the Naka-Rushton function:\n\n$$\nRc=R_{0}+R_{max}\\frac{C^{n}}{C_{50}^{n}+C^{n}}\n$$\n\nwhere R is the neuronal activity, R0 is the background discharge, Rmax is maximal response, C is the contrast of grating stimuli, n is exponent of the power function, and C50 is contrast for half of Rmax. In each area, we first estimated all the parameters for the curve of grand average. Subsequently, we estimated R0 and Rmax for individual curves subdivided by ongoing activity.\n\nAs noted in the paper, in many occasions we fit these curves to two halves of the data, segregated according to some criterion. We verified that the results remain the same if we change the criterion.\n\n### Fitting single-trial responses\n\nWe fitted single-trial signals with the additive model $f_{i}t$ (Equation 1). To evaluate how well the model accounts for variability in observed activity$r_{i}t$, we averaged both model and responses over an interval of 50-150 ms after stimulus onset, and we computed explained variance as:\n\n$$\n1001-\\frac{\\sum_{i}r_{i}-f_{i}^{2}}{\\sum_{i}r_{i}-r\u00af^{2}},\n$$\n\nwhere $r\u00af$ is the average response across trials i. We averaged this quantity across trials of >0% contrasts to obtain the explained variance in each ROI. Note that the explained variance was measured with cross-validation: weights were estimated based on a training set (0% contrast trials) and used to explain the variance of the test set (>0% contrast trials).\n\n### Fitting psychometric curves\n\nTo quantify the contrast sensitivity of the animal\u2019s perceptual report, we fitted the choice probability with multinomial logistic regression (similar to Burgess et al., 2017). In the model, choices depend on two decision variables, one for choosing L and the one choosing R, depending on the contrast cL and cR:\n\n$$\nz_{L}=b+sg(c_{L}),z_{R}=b+sg(c_{R})\n$$\n\nHere, g() is the function in Equation 3, b represent offset toward choosing left or right relative to no-go, and s measure the weight assigned to visual evidence. The decision variables, in turn, determine the probabilities pL, pR, p0 of choosing L, R, or no-go, and specifically the log odds of choosing correct versus choosing no-go:\n\n$$\nlog\u2061(p_{L}/p_{0})=z_{L},log\u2061(p_{R}/p_{0})=z_{R}\n$$\n\nAs the resulting psychometric curves are symmetrical between choosing left and right, we only showed one side in Figure 6. We fit the two parameters of the decision variables (Equation 5) to the data obtained using all trials per animal or all animals through multinomial logistic regression, and optimized the two additional two parameters describing contrast sensitivity (Equation 3). After fixing the parameters describing contrast sensitivity (Equation 3), we fit the two parameters of the decision variables (Equation 5) again in each of the two trial groups of high and low bilateral ongoing activity.\n",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "65785faa-9a11-445c-a2fb-53950aae15df",
+      "submission_id": "2c3cfc62-3a22-48e5-93e6-58ffba4e0792",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephanie Palmer, University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.43533.026](https://doi.org/10.7554/eLife.43533.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The impact of bilateral ongoing activity on evoked responses in mouse cortex\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Joshua Gold as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nSpontaneous neural activity is ubiquitous, but its impact on perception and evoked neural activity is not well understood. The manuscript investigates bilaterally symmetrical cortical activation observed in mice during an awake resting state condition and during a visual discrimination task. The authors extend previous work by a number of labs defining bilaterally symmetrical activity dynamics in the mouse brain. Strikingly, these bilateral dynamics are preserved under conditions of spontaneous activity or even anesthesia states. The authors examine the interactions of this ongoing activity with task-evoked activity. They find that although ongoing activity is of greater amplitude than task-dependent signals, it does not interfere with the ability to perform the task. In addition, other significant findings are reported, such as the lack of a relationship between task-dependent and ongoing activity, and a linear interaction between the spontaneous activity and the evoked activity, with no impact on behavioral performance. The results are very surprising, as most studies have suggested that the ongoing activity will, at least to some degree, affect behavior and evoked responses (e.g. Mcginley et al., Neuron 2015). Mesoscopic imaging of these spontaneous neural activity patterns and its impact on a behavior is an important and novel advance for the field. The paper is well-written and it is relatively clear in its presentation and accessible to a wide range of readers.\n\nEssential revisions:\n\n1) Mesoscopic calcium/voltage imaging is becoming a very important tool in systems neuroscience, but it would be good to show some more details on the data processing pipeline, given the importance and impact of the results shown in this manuscript.\n\nThe pre-processing step in the data analysis presented in the paper needs to be more clearly described and discussed. There are concerns that the pre-processing, combined with subsequent band-pass filtering could amplify relatively small parts of the original signal. Could this artificially hide some non-linear interaction between the spontaneous and evoked activity? Does the linear relationship between the evoked and spontaneous activity persist in the raw data?\n\nTo address these concerns, particularly that the noise removal steps might remove most of the signal in the 0.5 \u2013 7.0 Hz range, it is suggested that the authors:\n\n\u2013 Show analyses both of the raw and \"denoised\" data, including some example traces before and after pre-processing and bandpass filtering, as well as the power spectra of these signals.\n\n\u2013 Perform their denoising SVD in the space-frequency domain (rather than in the temporal domain) (see Prechtl et al., 1997 PNAS), and use the resulting components with substantial power in the 0.5-7 Hz band.\n\n2) The manuscript needs to better define the behavioral state of the animal. Are there particular bilateral limb, whisker, or facial movements during sensory-motor bilateral activity? Videos of the animal body, if available, might help make this point a bit more clear to the reader.\n\n3) The term \"ongoing activity\" should be more clearly defined.\n\n4) Points made in Figure 3A such as ongoing activity dominating stimulus-dependent activity should be stated quantitatively. The current draft only states when \"acquiring a large number of trials could ongoing fluctuations be averaged out\". Please state what a \"large number of trials\" is and exactly what the impact can be. Presumably, this effect is dependent on where ongoing spontaneous activity occurs and what particular spatial temporal characteristics it contains. One could imagine ongoing activity could have discreet motifs, as described in Mohajerani et al., 2013, which should also be referenced.\n\n5) The authors elegantly show that bilateral activity adds linearly to stimulus trial evoked activity. While the authors have clearly defined this, it needs to also be stated that this conclusion only holds for a visual stimulus. In the experiments, sequences of activity were chosen where mice were attending to visual stimuli and not doing other tasks such a forelimb or whisker-dependent task. It is possible that most of the ongoing activity has origins outside the visual system, making it unlikely that ongoing activity would interfere with visual processing. In contrast, if the task were a whisker or forelimb-dependent one, and the mouse was also moving these body parts, very different results could be obtained. Please mention this caveat in the Abstract and also discuss it more in the manuscript.\n\n5b) The authors should contrast their findings on ongoing visual-like activity and task success rate and response additivity with activity that features different sensory systems (perhaps forelimb and whisker). One way to do this is by using a template-matching or similar scheme as in, e.g. Mohajerani et al., 2013, to find the visual-system-like versus whisker-like ongoing activity and see whether these have any specific impact on a visual task. It would be good to see a quantification of the general composition of the ongoing activity: how much is whisker- versus visual-like, etc. These would be additional analyses, but require no new data collection.\n\nTo add to the Discussion section:\n\n6) In other recent work, it has been shown that a form of ongoing activity derived from optogenetic stimulation can bias behavioral activity. Why does optogenetic stimulation have an impact, but not the forms of spontaneous ongoing activity monitored here? e.g. O'Connor et al., 2014 and Sreenivasan et al., 2016\n\n7) Can one conclude that the ipsilateral hemisphere really is independent during the visual task? Perhaps, instead, it gets inhibited, potentially dampening its utility for reporting the impact of ongoing activity on evoked activity?\n",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0fa9618f-0d83-4a45-a882-8891ba532355",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C1",
+      "claim": "In the absence of external stimuli or overt behavior, the activity of the left and right cortical hemispheres shows fluctuations that are largely bilateral.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of external stimuli or overt behavior, the activity of the left and right cortical hemispheres shows fluctuations that are largely bilateral.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "0ca2f0ea-4271-4a3e-9dd3-70e68ad15794",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C2",
+      "claim": "Bilateral fluctuations are largely responsible for the variability observed in cortical responses to sensory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that these fluctuations are largely responsible for the variability observed in cortical responses to sensory stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the additive model results showing that bilateral fluctuations explain up to 60% of trial-by-trial variance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "de236dbc-982e-45b5-8e3c-8f2d6b827ac3",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C3",
+      "claim": "Bilateral fluctuations invested all cortical areas, particularly those closest to the midline.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral fluctuations invested all areas, particularly those closest to the midline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis showing higher bilateral correlation in areas closer to the midline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "64d0fb73-2bae-448e-a75c-257b465af27e",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C4",
+      "claim": "Activity was less bilateral in the monocular region of primary visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity was less bilateral in the monocular region of primary visual cortex and, especially during task engagement, in secondary motor cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2C,D where V1m shows lower bilateral correlation than expected based on distance from midline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "56ed6dca-7fae-43b5-8511-b9bef6dea78e",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C5",
+      "claim": "Activity was less bilateral in secondary motor cortex during task engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity was less bilateral in the monocular region of primary visual cortex and, especially during task engagement, in secondary motor cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Figure 2\u2014figure supplement 1H showing significant reduction in M2 bilateral correlation during active task (p = 0.0013/0.013 before/after Bonferroni correction).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "02252644-484d-4b24-b4be-e37a92a89f79",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C6",
+      "claim": "Ongoing bilateral fluctuations dominated unilateral visual responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Ongoing bilateral fluctuations dominated unilateral visual responses, and interacted additively with them, explaining much of the variance in trial-by-trial activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the additive model results in Figure 7 showing bilateral fluctuations explain more variance than visual responses alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "28874d4a-f2e3-49cb-b027-07d5e1f368b1",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C7",
+      "claim": "Bilateral fluctuations interacted additively with visual responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Ongoing bilateral fluctuations dominated unilateral visual responses, and interacted additively with them, explaining much of the variance in trial-by-trial activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Figure 5 showing that bilateral ongoing activity changed offset but not scale parameters of contrast-response functions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "29293970-d5e6-4c66-acc9-d406cd31f74d",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C8",
+      "claim": "Bilateral ongoing activity did not affect detection behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though these fluctuations occurred in regions necessary for the task, they did not affect detection behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 6 showing no significant effect of bilateral activity on psychometric curves (p>0.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "8e2e91d3-517d-42a1-a969-3693cef5a063",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C9",
+      "claim": "Bilateral ongoing activity continues during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that bilateral ongoing activity continues during visual stimulation and has a powerful additive impact on visual responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3 and Figure 4 where bilateral fluctuations persist after stimulus onset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "bbf62c44-b1d0-4bd4-8075-436c2bc5a844",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C10",
+      "claim": "Bilateral symmetry in ongoing activity has been documented in awake mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This bilateral symmetry has been documented both in awake mice (Mohajerani et al., 2010) and in awake humans (Fox et al., 2006; Tyszka et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "0ad9ba24-ce36-4fea-af2d-b56048e25510",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C11",
+      "claim": "Bilateral symmetry in ongoing activity has been documented in awake humans.",
+      "claim_type": "EXPLICIT",
+      "source": "This bilateral symmetry has been documented both in awake mice (Mohajerani et al., 2010) and in awake humans (Fox et al., 2006; Tyszka et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "50105a34-dbd7-4aa2-adae-dfce7e725ca4",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C12",
+      "claim": "The degree of bilateral symmetry varies across cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of symmetry varies across cortical areas (Mohajerani et al., 2010), but the rules behind the differences across areas remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and by the current study's data in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "1eadb6cc-91a2-4962-86dd-9b80245ce5e7",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C13",
+      "claim": "Neural responses in primary visual cortex vary strongly from trial to trial even in response to an identical visual stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in response to an identical visual stimulus, neural responses in primary visual cortex are well-known to vary strongly from trial to trial (Tolhurst et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "a6a687c8-c83d-4dfa-90ef-2e527700a076",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C14",
+      "claim": "Trial-by-trial variability has been observed in spike trains.",
+      "claim_type": "EXPLICIT",
+      "source": "This variability has been observed not only in the spike trains but also in intracellular recordings from single neurons (Anderson et al., 2000; Carandini, 2004) and in voltage imaging of neural populations (Arieli et al., 1996; Carandini et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "b284bc6d-399c-4e39-b5a2-7449c68c92d5",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C15",
+      "claim": "Trial-by-trial variability has been observed in intracellular recordings from single neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This variability has been observed not only in the spike trains but also in intracellular recordings from single neurons (Anderson et al., 2000; Carandini, 2004) and in voltage imaging of neural populations (Arieli et al., 1996; Carandini et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "45219c54-73ee-4a92-aadf-8a72023ab20a",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C16",
+      "claim": "Trial-by-trial variability has been observed in voltage imaging of neural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This variability has been observed not only in the spike trains but also in intracellular recordings from single neurons (Anderson et al., 2000; Carandini, 2004) and in voltage imaging of neural populations (Arieli et al., 1996; Carandini et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "7bd46d1f-c9fc-4c3b-9a4b-5055f8a6604b",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C17",
+      "claim": "Widefield imaging allowed monitoring of bilateral ongoing activity and visually evoked response across hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "Widefield imaging allowed us to monitor bilateral ongoing activity and visually evoked response across hemispheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by the experimental design described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "935a2dc7-a7d0-47b6-8285-257bc0cfc420",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C18",
+      "claim": "Measurements were performed from mice expressing a voltage sensor and from mice expressing a calcium sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "To observe these forms of activity both in membrane potential and in spiking activity, we measured both from mice expressing a voltage sensor and from mice expressing a calcium sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by the experimental design described in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "d7a0a792-2bf4-4159-aca1-595fd5973300",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C19",
+      "claim": "An additive model for the interaction of ongoing and evoked activities provided excellent fits to the data.",
+      "claim_type": "EXPLICIT",
+      "source": "An additive model for the interaction of ongoing and evoked activities provided excellent fits to the data, explaining up to 60% of trial-by-trial variance in the observed imaging signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the modeling results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "31127f91-37b1-42b9-ad26-a50e8dd9ae21",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C20",
+      "claim": "The additive model explained up to 60% of trial-by-trial variance in the observed imaging signal.",
+      "claim_type": "EXPLICIT",
+      "source": "An additive model for the interaction of ongoing and evoked activities provided excellent fits to the data, explaining up to 60% of trial-by-trial variance in the observed imaging signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative results in Figure 7D showing 58 \u00b1 3% variance explained in area PM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "25544e07-4d9f-4f27-82e3-d379686b26d3",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C21",
+      "claim": "Bilateral ongoing activity did not seem to affect perceptual decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, bilateral ongoing activity did not seem to affect perceptual decisions, suggesting that it does not impact stimulus coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral analysis in Figure 6 showing no significant effects on psychometric curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "98c29644-aaa1-4e62-80a6-f93e208b43c2",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C22",
+      "claim": "Bilateral ongoing activity does not impact stimulus coding.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, bilateral ongoing activity did not seem to affect perceptual decisions, suggesting that it does not impact stimulus coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of behavioral effects shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "70108693-4f56-4e46-8723-4186f0bdb470",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C23",
+      "claim": "During the pre-stimulus interval, strong bilateral voltage activity was observed over the entire dorsal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "During the pre-stimulus interval, we observed strong bilateral voltage activity over the entire dorsal cortex (Figure 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "4a8f0060-f2a6-4818-b7aa-947e92da5a3e",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C24",
+      "claim": "Bilateral voltage activity involved multiple cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "This activity involved multiple cortical areas (Figure 1C) and was not accompanied by any obvious body movement (Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C and the associated video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "0899e116-a5ee-4877-90c9-f277da9a2856",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C25",
+      "claim": "Bilateral voltage activity was not accompanied by any obvious body movement.",
+      "claim_type": "EXPLICIT",
+      "source": "This activity involved multiple cortical areas (Figure 1C) and was not accompanied by any obvious body movement (Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1\u2014video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "8414928c-b02c-4c78-9724-8f167762c41a",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C26",
+      "claim": "Activity was largely symmetric between the left and right hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported in previous studies (Mohajerani et al., 2010; Shimaoka et al., 2017), activity was largely symmetric between the left and right hemispheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and by the current study's data in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "6b919efe-025c-4c09-a271-196c0460e3ab",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C27",
+      "claim": "Symmetric, bilateral activity accounted for most of the power of the measured voltage signals at all measured frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this symmetric, bilateral activity accounted for most of the power of the measured voltage signals, at all measured frequencies (Figure 1D): we did not observe significant difference in coherence across frequencies (2\u20137 Hz, p>0.05, one-way ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1D with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "87071c0c-baa5-4c1c-ac5c-2d1402590c90",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C28",
+      "claim": "There was no significant difference in coherence across frequencies (2\u20137 Hz) for voltage signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this symmetric, bilateral activity accounted for most of the power of the measured voltage signals, at all measured frequencies (Figure 1D): we did not observe significant difference in coherence across frequencies (2\u20137 Hz, p>0.05, one-way ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from one-way ANOVA testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "506adc74-c466-4d3d-8d3a-bbc2307eb6e9",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C29",
+      "claim": "Calcium signals reflect neuronal spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "These phenomena were not limited to voltage fluctuations, which might in principle be entirely subthreshold: they were also seen in calcium signals, which reflect neuronal spiking (Figure 1E\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about calcium imaging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "20437384-04e3-4c92-b927-524a2ba7e236",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C30",
+      "claim": "Calcium activity during the pre-stimulus interval involved multiple cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium activity during the pre-stimulus interval involved multiple cortical areas and was also typically symmetric between the hemispheres (Figure 1E, Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E and the associated video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "411f360a-ada6-430b-b37e-7eaa5b72df47",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C31",
+      "claim": "Calcium activity during the pre-stimulus interval was typically symmetric between the hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium activity during the pre-stimulus interval involved multiple cortical areas and was also typically symmetric between the hemispheres (Figure 1E, Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E and the associated video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "3839f9ed-ac6b-4e1e-8227-ea25e3939b4e",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C32",
+      "claim": "Bilateral calcium activity accounted for most of the power of the measured calcium signals at all measured frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Just as with voltage signals, bilateral calcium activity accounted for most of the power of the measured calcium signals, and seemed to do so at all measured frequencies (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "ead99d9a-e7da-43ad-b630-e9c91e93a7bc",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C33",
+      "claim": "Bilateral correlation was particularly strong in primary somatosensory cortex (S1).",
+      "claim_type": "EXPLICIT",
+      "source": "This bilateral correlation was particularly strong in primary somatosensory cortex (S1) and in medial visual areas such as PM (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "0f587ff3-5b0e-4cf0-b7c4-3104d38177ff",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C34",
+      "claim": "Bilateral correlation was particularly strong in medial visual areas such as PM.",
+      "claim_type": "EXPLICIT",
+      "source": "This bilateral correlation was particularly strong in primary somatosensory cortex (S1) and in medial visual areas such as PM (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "cf3858f7-60f9-458d-b332-2e73b59a2c85",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C35",
+      "claim": "Bilateral correlation tended to decrease with a region's distance from the midline in mice expressing voltage indicators.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral correlation tended to decrease with a region's distance from the midline, both in mice-expressing voltage indicators (Figure 2C, pairwise correlation \u03c1 = \u22120.44) and in mice-expressing calcium indicators (Figure 2D, pairwise correlation \u03c1 = \u22120.42).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C with quantitative correlation coefficient.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "1d83cd5b-6692-436d-8b47-b7dd0536e62e",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C36",
+      "claim": "Bilateral correlation tended to decrease with a region's distance from the midline in mice expressing calcium indicators.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral correlation tended to decrease with a region's distance from the midline, both in mice-expressing voltage indicators (Figure 2C, pairwise correlation \u03c1 = \u22120.44) and in mice-expressing calcium indicators (Figure 2D, pairwise correlation \u03c1 = \u22120.42).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2D with quantitative correlation coefficient.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "6db60121-01b3-4755-8a79-8d3bfff275c2",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C37",
+      "claim": "Correlation was lower than expected in the monocular region of primary visual cortex (V1m).",
+      "claim_type": "EXPLICIT",
+      "source": "However, correlation was lower than expected in the monocular region of primary visual cortex, V1m and, when the animal was engaged in the task, in secondary motor cortex (M2, Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "6d6f13ca-f7e2-4806-b572-d0800554118a",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C38",
+      "claim": "In area M2, low bilateral correlation may be related to task engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "In area M2, this low bilateral correlation may be related to task engagement, because bilateral correlation seemed to be higher when the animal was in a passive condition (Figure 2C,D, white circle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C,D comparing active and passive conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "718e1da4-5ec3-4e5b-bed5-07b1dadf57a0",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C39",
+      "claim": "The reduction in bilateral fluctuations seen with task engagement was specific to area M2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the reduction in bilateral fluctuations seen with task engagement was specific to area M2, where it was significant (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1 with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "2348c7c7-ed11-4ca1-b966-afcdb147519a",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C40",
+      "claim": "In M2, there was a significant reduction in bilateral correlation during the active task (p = 0.0013/0.013 before/after Bonferroni correction, paired t test, n = 6 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "In M2, instead, there was a significant reduction during the active task (p = 0.0013/0.013 before/after Bonferroni correction, paired t test, n = 6 mice, Figure 2\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from paired t-test shown in Figure 2\u2014figure supplement 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "8d990c83-1b14-427a-b6a5-9613d319a78c",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C41",
+      "claim": "Bilateral ongoing fluctuations continued following the onset of the visual stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral ongoing fluctuations continued following the onset of the visual stimulus and were typically larger than the unilateral visual responses (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "78fd1565-6b1b-45dc-891b-061cbf936f3b",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C42",
+      "claim": "Bilateral ongoing fluctuations were typically larger than the unilateral visual responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral ongoing fluctuations continued following the onset of the visual stimulus and were typically larger than the unilateral visual responses (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "cafe8571-029f-4c33-b66f-3b325adc741e",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C43",
+      "claim": "Task stimuli elicited visual activity solely in contralateral cortex in area V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Task stimuli elicited visual activity solely in contralateral cortex, both in area V1 (Figure 4A, red traces) and in area PM (Figure 4B, red traces).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "cd9cdd12-4fce-4400-abf5-19289950ed9c",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C44",
+      "claim": "Task stimuli elicited visual activity solely in contralateral cortex in area PM.",
+      "claim_type": "EXPLICIT",
+      "source": "Task stimuli elicited visual activity solely in contralateral cortex, both in area V1 (Figure 4A, red traces) and in area PM (Figure 4B, red traces).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "557bd888-88f5-4b6c-810e-1a23e0e73621",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C45",
+      "claim": "The mean activity rose in the period 50\u2013150 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean activity rose in the period 50\u2013150 ms after stimulus onset, and increased with contrast as expected (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "e97bc7b4-d958-434d-83d4-28b1efb2a2d5",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C46",
+      "claim": "Mean activity increased with contrast as expected.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean activity rose in the period 50\u2013150 ms after stimulus onset, and increased with contrast as expected (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4E,F and is consistent with known properties of visual responses.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "5af53a37-bfdd-4df8-8d32-86ced3b9ed5f",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C47",
+      "claim": "The increase in mean activity was accompanied by an increase in standard deviation across trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with known variability of neural activity, this increase in mean was accompanied by an increase in standard deviation across trials (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "90a76b7e-e1a7-47b7-b927-c516d1f59bf8",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C48",
+      "claim": "In the unstimulated hemisphere, the stimuli affected neither the mean activity nor the standard deviation of activity.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the unstimulated hemisphere, the stimuli affected neither the mean activity (Figure 4A,B, black traces) nor the standard deviation of activity (Figure 4C,D, black traces).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "4156f3b5-1e8a-496d-8f5a-6441491bc077",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C49",
+      "claim": "Bilateral fluctuations are not reduced by the onset of visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that bilateral fluctuations are not reduced by the onset of visual stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that standard deviation in the unstimulated hemisphere does not change after stimulus onset.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "7a8cf57a-a639-4d76-a962-22b82da885ce",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C50",
+      "claim": "The offset parameter was significantly higher when ongoing activity was high (p = 0.0009, paired t test, n = 7 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "The offset parameter was significantly higher when ongoing activity was high (p = 0.0009, paired t test, n = 7 mice Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from paired t-test shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "23d19e1f-0499-433d-8898-c3f6b3249a9d",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C51",
+      "claim": "The scale parameter showed a mild increase when bilateral activity was high, but this increase was not significant (p>0.05, paired t test, n = 7 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "The scale parameter was much less affected: it appeared to show a mild increase when bilateral activity was high, but this increase was not significant (p>0.05, paired t test, n = 7 mice Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from paired t-test shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "3307524b-e74d-48cf-8788-b89d76d303a7",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C52",
+      "claim": "Bilateral ongoing activity changed offset but not scale in all visual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "This result held not only for PM but also for all other visual areas: bilateral ongoing activity changed offset but not scale (n = 7 in V1, n = 5 mice in AL, LM and RL, Figure 5G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5G,H across multiple visual areas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "badbcc26-df3b-43cc-b5ba-3a1a99ac1f8d",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C53",
+      "claim": "The effects of bilateral ongoing activity were due to fast changes in cortical activation, not to slow changes in cortical state.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral fluctuations are rapid and their effect is independent of arousal. These effects of bilateral ongoing activity were due to fast changes in cortical activation, not to slow changes in cortical state (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5\u2014figure supplement 2 by analyzing synchronized vs. desynchronized states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "c0e3e97b-1fea-4a39-afeb-dc018e8d9651",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C54",
+      "claim": "The effects of bilateral ongoing activity were not related to slow changes in level of arousal.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the effects of bilateral ongoing activity were not related to slow changes in level of arousal (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5\u2014figure supplement 3 by analyzing trials with different pupil diameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "9555771a-a697-44af-8999-d492d375cdcf",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C55",
+      "claim": "The impact of bilateral ongoing activity could not be estimated through the typical procedure of measuring unilateral activity before stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Because ongoing activity changed rapidly and was largely bilateral, its impact could not be estimated through the typical procedure of measuring unilateral activity before stimulus onset (Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5\u2014figure supplement 4 showing that prestimulus activity is less predictive than contralateral activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "09624201-4d6a-4414-8c59-500eb063e2ba",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C56",
+      "claim": "The cross-correlation between corresponding regions on the two hemispheres typically decreased to 0 in ~100 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the cross-correlation between corresponding regions on the two hemispheres typically decreased to 0 in ~100 ms, and in some mice became negative afterwards (Figure 5\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "553171a8-b0ca-4437-a514-fc2ed3f152f0",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C57",
+      "claim": "Bilateral ongoing fluctuations did not affect the behavior of the mouse in the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral ongoing fluctuations did not affect the behavior of the mouse in the task (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6 showing no effect on psychometric curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "b8021ff1-ae05-4a13-ab92-ededf16186ae",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C58",
+      "claim": "There was no effect of bilateral activity on the probability of choosing the correct side.",
+      "claim_type": "EXPLICIT",
+      "source": "The two psychometric curves were essentially identical: there was no effect of bilateral activity on the probability of choosing the correct side (Figure 6A,C), or to choose a no-go response, which would be appropriate when stimulus is zero (Figure 6B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "c993145e-1be6-4870-88ab-d97ce487b243",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C59",
+      "claim": "There was no effect of bilateral activity on the probability to choose a no-go response.",
+      "claim_type": "EXPLICIT",
+      "source": "The two psychometric curves were essentially identical: there was no effect of bilateral activity on the probability of choosing the correct side (Figure 6A,C), or to choose a no-go response, which would be appropriate when stimulus is zero (Figure 6B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "ec6a3675-12b3-48b0-ae2a-e71acf78efd9",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C60",
+      "claim": "Neither offset nor scale parameters of the perceptual contrast sensitivity function were significantly affected by bilateral ongoing activity (p>0.05, paired t test, n = 7 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "We fitted the behavioral responses with a simple probabilistic observer model (Burgess et al., 2017; Zatka-Haas et al., 2019), and measured offset and scale parameters of the perceptual contrast sensitivity function inferred by the model. Neither offset nor scale were significantly affected by bilateral ongoing activity (p>0.05, paired t test, n = 7 mice, Figure 6E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from paired t-test shown in Figure 6E,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "89a17a30-d5e7-4140-a59e-63f6dc981720",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C61",
+      "claim": "The additive model explained 58 \u00b1 3% of the variance in area PM (S.E. n = 7 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "In area PM, the additive model explained 58 \u00b1 3% of the variance (S.E. n = 7 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the additive model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "ec3d23ee-5aae-4e37-8e49-7ac1ee6a66d0",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C63",
+      "claim": "The additive model accounted for up to 34% of trial-by-trial variability in the voltage signals for area PM.",
+      "claim_type": "EXPLICIT",
+      "source": "For area PM, for instance, the additive model accounted for up to 34% of trial-by-trial variability in the voltage signals (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "f3073132-7aff-4a85-afa2-2dcc096e9647",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C64",
+      "claim": "Much of the large variability observed across trials when performing widefield imaging experiments is not due to imaging noise, but rather to structured ongoing neural activity tightly coordinated across the hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "Much of the large variability observed across trials when performing widefield imaging experiments (Arieli et al., 1996; Carandini et al., 2015), therefore, is not due to imaging noise, but rather to structured ongoing neural activity tightly coordinated across the hemispheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high variance explained by the bilateral component in the additive model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "c6fd9e4c-6dee-4c9c-9561-02800576246e",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C65",
+      "claim": "Voltage and calcium signals exhibited strong bilateral fluctuations in ongoing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported previously (Mohajerani et al., 2010; Shimaoka et al., 2017; Vanni et al., 2017; Vanni and Murphy, 2014), voltage and calcium signals exhibited strong bilateral fluctuations in ongoing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and by the current study's data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "3f34b659-d0a1-4c29-9945-a2fe6a40efe6",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C66",
+      "claim": "The impact of bilateral fluctuations varied across cortical areas, and was stronger in areas closer to the midline.",
+      "claim_type": "EXPLICIT",
+      "source": "In both types of signal, the impact of these bilateral fluctuations varied across cortical areas, and was stronger in areas closer to the midline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "9c0a71b0-a69d-433c-8255-794dbf3c8b07",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C67",
+      "claim": "Higher bilateral ongoing activity increased visual responses equally at all contrasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher bilateral ongoing activity increased visual responses equally at all contrasts, regardless of response amplitude, indicating that the interaction between ongoing activity and visually evoked responses was additive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5 where offset but not scale parameters changed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "b136a984-d6ac-4ed8-9de3-7ee22f95f5b1",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C68",
+      "claim": "The interaction between ongoing activity and visually evoked responses was additive.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher bilateral ongoing activity increased visual responses equally at all contrasts, regardless of response amplitude, indicating that the interaction between ongoing activity and visually evoked responses was additive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the additive model results in Figure 5 and Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "fd3951b0-39e3-486f-95cb-3afdaae1bb6b",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C69",
+      "claim": "Bilateral ongoing fluctuations had a much larger effect on cortical activity than evoked visual responses.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple additive model provided good estimates of trial-by-trial visual response in all visual areas, and revealed that bilateral ongoing fluctuations had a much larger effect on cortical activity than evoked visual responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 7D where bilateral component explains more variance than visual responses alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "9c50132f-2b7f-4ac3-b4c8-996dcd93e435",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C70",
+      "claim": "The cortex exhibits clear bilateral activity during motor behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The cortex exhibits clear bilateral activity during motor behavior (Musall et al., 2018), which is understandable given the symmetry involved in many body movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "aef5bd07-42c6-471d-b43e-dc9627f2380b",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C71",
+      "claim": "It is likely that bilateral fluctuations are at least partially mediated by callosal connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of their origin, it is likely that bilateral fluctuations are at least partially mediated by callosal connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from anatomical knowledge and supported by subsequent discussion of callosal effects.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "1210f848-9220-471d-9654-6825c1ce2c12",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C72",
+      "claim": "The corpus callosum is the largest white matter tract connecting the cerebral hemispheres in placental mammalian brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, the corpus callosum is the largest white matter tract connecting the cerebral hemispheres in placental mammalian brains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "fccf728a-c714-4be3-8601-32c2376e26f6",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C73",
+      "claim": "Ongoing activity is less correlated across hemispheres in mutant mice that lack the corpus callosum.",
+      "claim_type": "EXPLICIT",
+      "source": "Ongoing activity is less correlated across hemispheres in mutant mice that lack the corpus callosum (Mohajerani et al., 2010) and in rats after surgical section of the corpus callosum (Magnuson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "897f31b3-b119-44f9-882c-92c300184e2e",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C74",
+      "claim": "Ongoing activity is less correlated across hemispheres in rats after surgical section of the corpus callosum.",
+      "claim_type": "EXPLICIT",
+      "source": "Ongoing activity is less correlated across hemispheres in mutant mice that lack the corpus callosum (Mohajerani et al., 2010) and in rats after surgical section of the corpus callosum (Magnuson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "11fe73e0-6307-4d3e-b758-8d57f02e47a7",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C75",
+      "claim": "Bilateral ongoing activity is reported in humans born without a corpus callosum.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ongoing bilateral activity is also reported in humans born without a corpus callosum (Tyszka et al., 2011), suggesting that bilateral fluctuations can also be sustained by other brain structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "4462d12f-b1c5-478d-9770-3741ad387815",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C76",
+      "claim": "Bilateral fluctuations can be sustained by brain structures other than the corpus callosum.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ongoing bilateral activity is also reported in humans born without a corpus callosum (Tyszka et al., 2011), suggesting that bilateral fluctuations can also be sustained by other brain structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of bilateral activity in acallosal humans.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "0a1a0739-7557-469c-8718-8902a34ff233",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C77",
+      "claim": "Bilateral fluctuation represents shared activity across neurons, which impacts on response variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral fluctuation represents shared activity across neurons, which impacts on response variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the results showing bilateral fluctuations explain much of trial-by-trial variability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "d9fa6daf-7216-436a-b2e8-25c01ad5bb1b",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C78",
+      "claim": "Ongoing activity is shared across large proportions of neurons and interacts additively with visually evoked responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our widefield imaging result conforms to the previous electrophysiological report by Sch\u00f6lvinck et al. (2015), that ongoing activity is shared across large proportions of neurons and interacts additively with visually evoked responses, and that it accounts for a large fraction of trial-by-trial fluctuations in observed visually evoked activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature and confirmed by current study's results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "f6cffd9b-17da-4d10-ba05-83d43801ebde",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C79",
+      "claim": "Ongoing activity accounts for a large fraction of trial-by-trial fluctuations in observed visually evoked activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Our widefield imaging result conforms to the previous electrophysiological report by Sch\u00f6lvinck et al. (2015), that ongoing activity is shared across large proportions of neurons and interacts additively with visually evoked responses, and that it accounts for a large fraction of trial-by-trial fluctuations in observed visually evoked activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature and confirmed by current study's results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "fc8486fe-b3e0-4314-b10b-0d92b0a68d76",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C80",
+      "claim": "Global fluctuation is shared across hemispheres in an area-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study extends this idea by demonstrating that such global fluctuation is actually shared across hemispheres, yet in an area-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the area-specific patterns of bilateral correlation shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "365b779d-109c-4c3a-823e-48cb9a3c2c25",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C81",
+      "claim": "A full understanding of activity in a population of neurons in one hemisphere may require recordings from the corresponding area of the other hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that a full understanding of activity in a population of neurons in one hemisphere may require recordings from the corresponding area of the other hemisphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that contralateral activity is necessary to explain trial-by-trial variance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "8837e441-ef81-4c27-bf50-c1c7aa1bd359",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C82",
+      "claim": "Activity in the prestimulus period had a smaller impact on evoked responses than simultaneously measured activity in the contralateral hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, compared to bilateral activity, activity in the prestimulus period had a smaller impact on evoked responses than simultaneously measured activity in the contralateral hemisphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "136bfe90-eb99-44df-b69e-9eb60bcd6ca5",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C83",
+      "claim": "The ideal placement of a sensor in the contralateral hemisphere would be one that monitored the symmetrical populations to the ones of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the specificity that we have observed in bilateral fluctuations, the ideal placement of a sensor in the contralateral hemisphere would be one that monitored the symmetrical populations to the ones of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that bilateral fluctuations are area-specific (Figure 7C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "0d42edf8-8607-4eff-8cdf-bc3d5e81d1dc",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C84",
+      "claim": "A downstream readout mechanism may remove the bilateral fluctuations by taking the difference of activity on left and right visual cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps, a downstream readout mechanism removes the bilateral fluctuations by taking the difference of activity on left and right visual cortices (Zatka-Haas et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation and inferred from the lack of behavioral effects.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "42dfcf92-5eca-451b-8f96-30c57ba953c3",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C85",
+      "claim": "It might be easy for the brain to ignore bilateral fluctuations during perceptual decisions based on vision.",
+      "claim_type": "EXPLICIT",
+      "source": "It might thus be easy for the brain to ignore them during perceptual decisions based on vision, even though the fluctuations continue during visual stimulation and have a powerful additive impact on visual processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that bilateral fluctuations do not affect behavior despite affecting neural responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "4fe90756-d5ae-4bf8-8d24-75549b10d5cd",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C86",
+      "claim": "Mice were implanted with a head post and a thinned or intact skull cranial window over the dorsal part of both cortical hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "The nine mice (six males) were implanted with a head post and a thinned or intact skull cranial window (Drew et al., 2010) over the dorsal part of the both cortical hemispheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the surgical procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "2256401c-02c7-4ab1-8567-82422d2d5da4",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C87",
+      "claim": "Imaging was conducted at 35 Hz in each purple and blue channel (70 Hz in total) for GCaMP imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging was conducted at 35 Hz in each purple and blue channel (70 Hz in total) with a nominal spatial resolution of 21.7 \u03bcm/pixel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the imaging parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "d61266db-6f82-45a2-8b92-de0286664f6c",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C88",
+      "claim": "Imaging was conducted at 35 Hz in each blue and red/green channel (total 70 Hz) for VSFP imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging was conducted at 35 Hz in each blue and red/green channel (total 70 Hz), with a nominal spatial resolution of 21.7 \u03bcm/pixel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the imaging parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "11a1a78c-56b4-4d0b-af48-81d8b9c17745",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C89",
+      "claim": "Using 500 SVD components provided excellent fidelity in reconstructing the individual pixel traces.",
+      "claim_type": "EXPLICIT",
+      "source": "Using 500 components provided excellent fidelity in reconstructing the individual pixel traces (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "42712241-cebc-4382-8d67-7898b1d99ce9",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "claim_id": "C90",
+      "claim": "Filtering did not affect the ratio of unilateral to bilateral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the signal was lowpass filtered with a cutoff of 7 Hz to attenuate signals from heartbeats. Filtering did not affect the ratio of unilateral to bilateral responses (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1c3618d9-8d43-40b1-9073-ee8db15eef02",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ongoing cortical activity in the absence of external stimuli or overt behavior exhibits strong bilateral symmetry across hemispheres. This bilateral activity was observed in both voltage and calcium signals, involved multiple cortical areas, was not accompanied by obvious body movements, and accounted for most of the power of measured signals at all frequencies (2-7 Hz).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C23-C32, and C65 provide converging evidence from both voltage and calcium imaging showing bilateral symmetry in ongoing activity. The data are supported by statistical testing (one-way ANOVA, p>0.05 for frequency differences) and visual evidence in Figures 1C-F. The findings replicate prior literature (C10-C11, C26) and are demonstrated across multiple recording modalities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "0ece9e41-9349-43c2-aaaa-582225774a74",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The strength of bilateral correlation varies systematically across cortical areas, being strongest in areas closest to the midline (particularly S1 and PM) and decreasing with distance from the midline (\u03c1 = -0.44 for voltage, \u03c1 = -0.42 for calcium).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C33-C36, and C66 are well-supported by quantitative correlation analysis shown in Figure 2C-D. The negative correlation between bilateral correlation strength and distance from midline is demonstrated with specific correlation coefficients for both voltage and calcium imaging across multiple cortical areas.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "249422ac-e545-4e42-9dfb-2b59998cd8cb",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Activity in the monocular region of primary visual cortex (V1m) showed lower bilateral correlation than expected based on distance from the midline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C37 are supported by data in Figure 2C-D showing V1m as an outlier with lower bilateral correlation than predicted by its distance from midline. However, the manuscript notes this was not statistically significant after Bonferroni correction (Figure 2\u2014figure supplement 1D, p>0.05).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "8e2e2aec-255e-449c-925c-0d40c805b675",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Secondary motor cortex (M2) showed reduced bilateral correlation specifically during task engagement compared to passive conditions (p = 0.0013/0.013 before/after Bonferroni correction, n = 6 mice).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C38-C40 are supported by statistical analysis in Figure 2\u2014figure supplement 1H showing significant reduction in M2 bilateral correlation during active task. The effect was specific to M2 and not observed in other areas, with appropriate statistical testing (paired t-test with Bonferroni correction).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "6d604669-972c-4b93-a468-8f9c4125f9de",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Bilateral ongoing fluctuations continued following visual stimulus onset, were typically larger than unilateral visual responses, and were not reduced by visual stimulation. In the unstimulated hemisphere, visual stimuli affected neither mean activity nor standard deviation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42, C9, C48-C49 are well-supported by data in Figures 3 and 4 showing persistence of bilateral fluctuations after stimulus onset. The observation that standard deviation in the unstimulated hemisphere remains unchanged (Figure 4C-D) provides strong evidence that bilateral fluctuations are not quenched by visual stimulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "7efc88a7-e040-4094-9403-05e7c0362341",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Visual stimuli elicited unilateral responses solely in contralateral cortex (V1 and PM), with mean activity rising 50-150 ms after stimulus onset, increasing with contrast, and accompanied by increased standard deviation across trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are supported by data in Figure 4A-F showing expected properties of visual responses: contralateral specificity, appropriate timing, contrast dependence, and increased variability. These are well-established properties of visual cortex responses, providing validation of the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "516b9d92-dffd-47b3-a956-34255bbce55b",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Bilateral ongoing activity interacted additively with visual responses, changing the offset parameter significantly (p = 0.0009, n = 7 mice) but not the scale parameter (p>0.05) of contrast-response functions across all visual areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C50-C52, C67-C68 are strongly supported by systematic analysis in Figure 5 showing that high bilateral activity shifts contrast-response curves vertically (offset) without changing their slope (scale). This additive interaction is demonstrated across multiple visual areas with appropriate statistical testing (paired t-tests).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "070e5d02-04c6-4937-b566-5fa203d5e9d6",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The effects of bilateral ongoing activity on visual responses were due to fast changes in cortical activation rather than slow changes in cortical state or arousal level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by control analyses in Figure 5\u2014figure supplements 2-3 showing that the additive effect persists when controlling for synchronized/desynchronized states and pupil diameter (arousal). The offset associated with bilateral activity is explained by instantaneous fluctuations rather than slow state changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "46243bcc-bda8-4067-913a-a403e18e4714",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The impact of bilateral ongoing activity could not be estimated through the typical procedure of measuring prestimulus activity, as cross-correlation between hemispheres decreased to zero in ~100 ms. Contralateral activity had greater impact than prestimulus activity in the same hemisphere.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 and C82 are supported by analysis in Figure 5\u2014figure supplement 4 showing rapid decorrelation between hemispheres and demonstrating that contralateral measurements are superior to prestimulus measurements for estimating ongoing activity effects. This has important methodological implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "8664265c-c294-40cc-8086-d5a3c2e679c6",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Bilateral ongoing fluctuations did not affect detection behavior or perceptual decisions. Neither offset nor scale parameters of perceptual contrast sensitivity functions were significantly affected (p>0.05, n = 7 mice).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C21-C22, C57-C60 are supported by behavioral analysis in Figure 6 showing no significant effects of bilateral activity on psychometric curves or model parameters. The lack of behavioral effects despite strong neural effects is a key finding, though the inference that this means no impact on stimulus coding (C22) is more speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "32fccdd2-2661-4fde-96d9-3b16aea51816",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "An additive model combining bilateral ongoing activity and visual responses explained up to 60% of trial-by-trial variance in calcium signals (58\u00b13% in PM) and 34% in voltage signals. Bilateral fluctuations had a much larger effect on cortical activity than evoked visual responses alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C6, C19-C20, C61, C63, C69 are strongly supported by modeling results in Figure 7 showing that the additive model explains substantially more variance than visual responses alone. The quantitative estimates are provided with appropriate error bars (S.E.) and the model is validated across multiple areas and recording modalities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "241d7905-efe4-40ce-93f9-98d8b2b5b5e8",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Much of the trial-by-trial variability in widefield imaging is not due to imaging noise but to structured bilateral ongoing activity. This extends previous findings by showing that global fluctuations are shared across hemispheres in an area-specific manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C77-C80 are supported by the high variance explained by the bilateral component in the additive model and by area-specific patterns of bilateral correlation (Figure 7C, Figure 7\u2014figure supplement 1). The findings extend prior electrophysiology work (Sch\u00f6lvinck et al., 2015) to widefield imaging.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "5ef5eed8-acc0-4e4d-b877-1330767e0510",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Bilateral fluctuations are likely at least partially mediated by callosal connections, though they can also be sustained by other brain structures as evidenced by their presence in acallosal humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C76 are supported by citations to prior literature showing reduced bilateral correlation in acallosal mice and callosotomized rats, but persistence in acallosal humans. However, these are literature-based claims rather than direct experimental findings from this study. The inference about callosal mediation (C71) is reasonable but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "91d92b8e-65b3-4e68-8e65-4a2e1b7aee57",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A full understanding of activity in one hemisphere may require recordings from the corresponding area of the other hemisphere, with ideal sensor placement monitoring symmetrical populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81 and C83 are supported by the finding that contralateral activity is necessary to explain trial-by-trial variance and that bilateral fluctuations are area-specific (Figure 7C). This represents an important methodological recommendation, though it is somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "a3adc1ab-a04c-4675-83a0-842e2c9e8c98",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The brain may ignore bilateral fluctuations during perceptual decisions by taking the difference of activity between left and right visual cortices, making it easy to ignore them despite their powerful additive impact on visual processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C85 are speculative explanations for why bilateral fluctuations don't affect behavior despite affecting neural responses. While the speculation is reasonable and supported by citation (Zatka-Haas et al., 2019), it is not directly tested in this study. The proposed mechanism remains a hypothesis requiring future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "1f7a40d0-f383-454d-8d09-41b331749b64",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Widefield imaging at 70 Hz total (35 Hz per channel) with SVD compression (500 components) and 7 Hz lowpass filtering provided excellent fidelity for monitoring bilateral ongoing activity and visual responses in both voltage and calcium signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18, C86-C90 describe methodological approaches that are validated by control analyses in Figure 1\u2014figure supplement 1 showing that 500 SVD components provide excellent reconstruction fidelity and that filtering does not affect the ratio of unilateral to bilateral responses. These are appropriate technical validations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    },
+    {
+      "id": "260e8c59-bc90-45b9-a147-aeff58342c65",
+      "content_id": "b1da780f-48c2-4028-986c-3f4453a8d2af",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior literature has documented bilateral symmetry in ongoing activity in awake mice and humans, variability in the degree of symmetry across cortical areas, trial-by-trial variability in visual responses, and bilateral activity during motor behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C16 and C70 are literature review claims supported by appropriate citations. These establish the context for the current study and are accurately represented. However, these are not novel findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:41.869509Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0fa9618f-0d83-4a45-a882-8891ba532355",
+      "result_id": "1c3618d9-8d43-40b1-9073-ee8db15eef02"
+    },
+    {
+      "claim_id": "70108693-4f56-4e46-8723-4186f0bdb470",
+      "result_id": "1c3618d9-8d43-40b1-9073-ee8db15eef02"
+    },
+    {
+      "claim_id": "4a8f0060-f2a6-4818-b7aa-947e92da5a3e",
+      "result_id": "1c3618d9-8d43-40b1-9073-ee8db15eef02"
+    },
+    {
+      "claim_id": "0899e116-a5ee-4877-90c9-f277da9a2856",
+      "result_id": "1c3618d9-8d43-40b1-9073-ee8db15eef02"
+    },
+    {
+      "claim_id": "8414928c-b02c-4c78-9724-8f167762c41a",
+      "result_id": "1c3618d9-8d43-40b1-9073-ee8db15eef02"
+    },
+    {
+      "claim_id": "6b919efe-025c-4c09-a271-196c0460e3ab",
+      "result_id": "1c3618d9-8d43-40b1-9073-ee8db15eef02"
+    },
+    {
+      "claim_id": "87071c0c-baa5-4c1c-ac5c-2d1402590c90",
+      "result_id": "1c3618d9-8d43-40b1-9073-ee8db15eef02"
+    },
+    {
+      "claim_id": "506adc74-c466-4d3d-8d3a-bbc2307eb6e9",
+      "result_id": "1c3618d9-8d43-40b1-9073-ee8db15eef02"
+    },
+    {
+      "claim_id": "20437384-04e3-4c92-b927-524a2ba7e236",
+      "result_id": "1c3618d9-8d43-40b1-9073-ee8db15eef02"
+    },
+    {
+      "claim_id": "411f360a-ada6-430b-b37e-7eaa5b72df47",
+      "result_id": "1c3618d9-8d43-40b1-9073-ee8db15eef02"
+    },
+    {
+      "claim_id": "3839f9ed-ac6b-4e1e-8227-ea25e3939b4e",
+      "result_id": "1c3618d9-8d43-40b1-9073-ee8db15eef02"
+    },
+    {
+      "claim_id": "c6fd9e4c-6dee-4c9c-9561-02800576246e",
+      "result_id": "1c3618d9-8d43-40b1-9073-ee8db15eef02"
+    },
+    {
+      "claim_id": "de236dbc-982e-45b5-8e3c-8f2d6b827ac3",
+      "result_id": "0ece9e41-9349-43c2-aaaa-582225774a74"
+    },
+    {
+      "claim_id": "ead99d9a-e7da-43ad-b630-e9c91e93a7bc",
+      "result_id": "0ece9e41-9349-43c2-aaaa-582225774a74"
+    },
+    {
+      "claim_id": "0f587ff3-5b0e-4cf0-b7c4-3104d38177ff",
+      "result_id": "0ece9e41-9349-43c2-aaaa-582225774a74"
+    },
+    {
+      "claim_id": "cf3858f7-60f9-458d-b332-2e73b59a2c85",
+      "result_id": "0ece9e41-9349-43c2-aaaa-582225774a74"
+    },
+    {
+      "claim_id": "1d83cd5b-6692-436d-8b47-b7dd0536e62e",
+      "result_id": "0ece9e41-9349-43c2-aaaa-582225774a74"
+    },
+    {
+      "claim_id": "3f34b659-d0a1-4c29-9945-a2fe6a40efe6",
+      "result_id": "0ece9e41-9349-43c2-aaaa-582225774a74"
+    },
+    {
+      "claim_id": "64d0fb73-2bae-448e-a75c-257b465af27e",
+      "result_id": "249422ac-e545-4e42-9dfb-2b59998cd8cb"
+    },
+    {
+      "claim_id": "6db60121-01b3-4755-8a79-8d3bfff275c2",
+      "result_id": "249422ac-e545-4e42-9dfb-2b59998cd8cb"
+    },
+    {
+      "claim_id": "56ed6dca-7fae-43b5-8511-b9bef6dea78e",
+      "result_id": "8e2e2aec-255e-449c-925c-0d40c805b675"
+    },
+    {
+      "claim_id": "6d6f13ca-f7e2-4806-b572-d0800554118a",
+      "result_id": "8e2e2aec-255e-449c-925c-0d40c805b675"
+    },
+    {
+      "claim_id": "718e1da4-5ec3-4e5b-bed5-07b1dadf57a0",
+      "result_id": "8e2e2aec-255e-449c-925c-0d40c805b675"
+    },
+    {
+      "claim_id": "2348c7c7-ed11-4ca1-b966-afcdb147519a",
+      "result_id": "8e2e2aec-255e-449c-925c-0d40c805b675"
+    },
+    {
+      "claim_id": "8d990c83-1b14-427a-b6a5-9613d319a78c",
+      "result_id": "6d604669-972c-4b93-a468-8f9c4125f9de"
+    },
+    {
+      "claim_id": "78fd1565-6b1b-45dc-891b-061cbf936f3b",
+      "result_id": "6d604669-972c-4b93-a468-8f9c4125f9de"
+    },
+    {
+      "claim_id": "8e2e91d3-517d-42a1-a969-3693cef5a063",
+      "result_id": "6d604669-972c-4b93-a468-8f9c4125f9de"
+    },
+    {
+      "claim_id": "90a76b7e-e1a7-47b7-b927-c516d1f59bf8",
+      "result_id": "6d604669-972c-4b93-a468-8f9c4125f9de"
+    },
+    {
+      "claim_id": "4156f3b5-1e8a-496d-8f5a-6441491bc077",
+      "result_id": "6d604669-972c-4b93-a468-8f9c4125f9de"
+    },
+    {
+      "claim_id": "cafe8571-029f-4c33-b66f-3b325adc741e",
+      "result_id": "7efc88a7-e040-4094-9403-05e7c0362341"
+    },
+    {
+      "claim_id": "cd9cdd12-4fce-4400-abf5-19289950ed9c",
+      "result_id": "7efc88a7-e040-4094-9403-05e7c0362341"
+    },
+    {
+      "claim_id": "557bd888-88f5-4b6c-810e-1a23e0e73621",
+      "result_id": "7efc88a7-e040-4094-9403-05e7c0362341"
+    },
+    {
+      "claim_id": "e97bc7b4-d958-434d-83d4-28b1efb2a2d5",
+      "result_id": "7efc88a7-e040-4094-9403-05e7c0362341"
+    },
+    {
+      "claim_id": "5af53a37-bfdd-4df8-8d32-86ced3b9ed5f",
+      "result_id": "7efc88a7-e040-4094-9403-05e7c0362341"
+    },
+    {
+      "claim_id": "28874d4a-f2e3-49cb-b027-07d5e1f368b1",
+      "result_id": "516b9d92-dffd-47b3-a956-34255bbce55b"
+    },
+    {
+      "claim_id": "7a8cf57a-a639-4d76-a962-22b82da885ce",
+      "result_id": "516b9d92-dffd-47b3-a956-34255bbce55b"
+    },
+    {
+      "claim_id": "23d19e1f-0499-433d-8898-c3f6b3249a9d",
+      "result_id": "516b9d92-dffd-47b3-a956-34255bbce55b"
+    },
+    {
+      "claim_id": "3307524b-e74d-48cf-8788-b89d76d303a7",
+      "result_id": "516b9d92-dffd-47b3-a956-34255bbce55b"
+    },
+    {
+      "claim_id": "9c0a71b0-a69d-433c-8255-794dbf3c8b07",
+      "result_id": "516b9d92-dffd-47b3-a956-34255bbce55b"
+    },
+    {
+      "claim_id": "b136a984-d6ac-4ed8-9de3-7ee22f95f5b1",
+      "result_id": "516b9d92-dffd-47b3-a956-34255bbce55b"
+    },
+    {
+      "claim_id": "badbcc26-df3b-43cc-b5ba-3a1a99ac1f8d",
+      "result_id": "070e5d02-04c6-4937-b566-5fa203d5e9d6"
+    },
+    {
+      "claim_id": "c0e3e97b-1fea-4a39-afeb-dc018e8d9651",
+      "result_id": "070e5d02-04c6-4937-b566-5fa203d5e9d6"
+    },
+    {
+      "claim_id": "9555771a-a697-44af-8999-d492d375cdcf",
+      "result_id": "46243bcc-bda8-4067-913a-a403e18e4714"
+    },
+    {
+      "claim_id": "09624201-4d6a-4414-8c59-500eb063e2ba",
+      "result_id": "46243bcc-bda8-4067-913a-a403e18e4714"
+    },
+    {
+      "claim_id": "8837e441-ef81-4c27-bf50-c1c7aa1bd359",
+      "result_id": "46243bcc-bda8-4067-913a-a403e18e4714"
+    },
+    {
+      "claim_id": "29293970-d5e6-4c66-acc9-d406cd31f74d",
+      "result_id": "8664265c-c294-40cc-8086-d5a3c2e679c6"
+    },
+    {
+      "claim_id": "25544e07-4d9f-4f27-82e3-d379686b26d3",
+      "result_id": "8664265c-c294-40cc-8086-d5a3c2e679c6"
+    },
+    {
+      "claim_id": "98c29644-aaa1-4e62-80a6-f93e208b43c2",
+      "result_id": "8664265c-c294-40cc-8086-d5a3c2e679c6"
+    },
+    {
+      "claim_id": "553171a8-b0ca-4437-a514-fc2ed3f152f0",
+      "result_id": "8664265c-c294-40cc-8086-d5a3c2e679c6"
+    },
+    {
+      "claim_id": "b8021ff1-ae05-4a13-ab92-ededf16186ae",
+      "result_id": "8664265c-c294-40cc-8086-d5a3c2e679c6"
+    },
+    {
+      "claim_id": "c993145e-1be6-4870-88ab-d97ce487b243",
+      "result_id": "8664265c-c294-40cc-8086-d5a3c2e679c6"
+    },
+    {
+      "claim_id": "ec6a3675-12b3-48b0-ae2a-e71acf78efd9",
+      "result_id": "8664265c-c294-40cc-8086-d5a3c2e679c6"
+    },
+    {
+      "claim_id": "0ca2f0ea-4271-4a3e-9dd3-70e68ad15794",
+      "result_id": "32fccdd2-2661-4fde-96d9-3b16aea51816"
+    },
+    {
+      "claim_id": "02252644-484d-4b24-b4be-e37a92a89f79",
+      "result_id": "32fccdd2-2661-4fde-96d9-3b16aea51816"
+    },
+    {
+      "claim_id": "d7a0a792-2bf4-4159-aca1-595fd5973300",
+      "result_id": "32fccdd2-2661-4fde-96d9-3b16aea51816"
+    },
+    {
+      "claim_id": "31127f91-37b1-42b9-ad26-a50e8dd9ae21",
+      "result_id": "32fccdd2-2661-4fde-96d9-3b16aea51816"
+    },
+    {
+      "claim_id": "89a17a30-d5e7-4140-a59e-63f6dc981720",
+      "result_id": "32fccdd2-2661-4fde-96d9-3b16aea51816"
+    },
+    {
+      "claim_id": "ec3d23ee-5aae-4e37-8e49-7ac1ee6a66d0",
+      "result_id": "32fccdd2-2661-4fde-96d9-3b16aea51816"
+    },
+    {
+      "claim_id": "fd3951b0-39e3-486f-95cb-3afdaae1bb6b",
+      "result_id": "32fccdd2-2661-4fde-96d9-3b16aea51816"
+    },
+    {
+      "claim_id": "f3073132-7aff-4a85-afa2-2dcc096e9647",
+      "result_id": "241d7905-efe4-40ce-93f9-98d8b2b5b5e8"
+    },
+    {
+      "claim_id": "0a1a0739-7557-469c-8718-8902a34ff233",
+      "result_id": "241d7905-efe4-40ce-93f9-98d8b2b5b5e8"
+    },
+    {
+      "claim_id": "d9fa6daf-7216-436a-b2e8-25c01ad5bb1b",
+      "result_id": "241d7905-efe4-40ce-93f9-98d8b2b5b5e8"
+    },
+    {
+      "claim_id": "f6cffd9b-17da-4d10-ba05-83d43801ebde",
+      "result_id": "241d7905-efe4-40ce-93f9-98d8b2b5b5e8"
+    },
+    {
+      "claim_id": "fc8486fe-b3e0-4314-b10b-0d92b0a68d76",
+      "result_id": "241d7905-efe4-40ce-93f9-98d8b2b5b5e8"
+    },
+    {
+      "claim_id": "aef5bd07-42c6-471d-b43e-dc9627f2380b",
+      "result_id": "5ef5eed8-acc0-4e4d-b877-1330767e0510"
+    },
+    {
+      "claim_id": "1210f848-9220-471d-9654-6825c1ce2c12",
+      "result_id": "5ef5eed8-acc0-4e4d-b877-1330767e0510"
+    },
+    {
+      "claim_id": "fccf728a-c714-4be3-8601-32c2376e26f6",
+      "result_id": "5ef5eed8-acc0-4e4d-b877-1330767e0510"
+    },
+    {
+      "claim_id": "897f31b3-b119-44f9-882c-92c300184e2e",
+      "result_id": "5ef5eed8-acc0-4e4d-b877-1330767e0510"
+    },
+    {
+      "claim_id": "11fe73e0-6307-4d3e-b758-8d57f02e47a7",
+      "result_id": "5ef5eed8-acc0-4e4d-b877-1330767e0510"
+    },
+    {
+      "claim_id": "4462d12f-b1c5-478d-9770-3741ad387815",
+      "result_id": "5ef5eed8-acc0-4e4d-b877-1330767e0510"
+    },
+    {
+      "claim_id": "365b779d-109c-4c3a-823e-48cb9a3c2c25",
+      "result_id": "91d92b8e-65b3-4e68-8e65-4a2e1b7aee57"
+    },
+    {
+      "claim_id": "136bfe90-eb99-44df-b69e-9eb60bcd6ca5",
+      "result_id": "91d92b8e-65b3-4e68-8e65-4a2e1b7aee57"
+    },
+    {
+      "claim_id": "0d42edf8-8607-4eff-8cdf-bc3d5e81d1dc",
+      "result_id": "a3adc1ab-a04c-4675-83a0-842e2c9e8c98"
+    },
+    {
+      "claim_id": "42dfcf92-5eca-451b-8f96-30c57ba953c3",
+      "result_id": "a3adc1ab-a04c-4675-83a0-842e2c9e8c98"
+    },
+    {
+      "claim_id": "7bd46d1f-c9fc-4c3b-9a4b-5055f8a6604b",
+      "result_id": "1f7a40d0-f383-454d-8d09-41b331749b64"
+    },
+    {
+      "claim_id": "935a2dc7-a7d0-47b6-8285-257bc0cfc420",
+      "result_id": "1f7a40d0-f383-454d-8d09-41b331749b64"
+    },
+    {
+      "claim_id": "4fe90756-d5ae-4bf8-8d24-75549b10d5cd",
+      "result_id": "1f7a40d0-f383-454d-8d09-41b331749b64"
+    },
+    {
+      "claim_id": "2256401c-02c7-4ab1-8567-82422d2d5da4",
+      "result_id": "1f7a40d0-f383-454d-8d09-41b331749b64"
+    },
+    {
+      "claim_id": "d61266db-6f82-45a2-8b92-de0286664f6c",
+      "result_id": "1f7a40d0-f383-454d-8d09-41b331749b64"
+    },
+    {
+      "claim_id": "11a1a78c-56b4-4d0b-af48-81d8b9c17745",
+      "result_id": "1f7a40d0-f383-454d-8d09-41b331749b64"
+    },
+    {
+      "claim_id": "42712241-cebc-4382-8d67-7898b1d99ce9",
+      "result_id": "1f7a40d0-f383-454d-8d09-41b331749b64"
+    },
+    {
+      "claim_id": "bbf62c44-b1d0-4bd4-8075-436c2bc5a844",
+      "result_id": "260e8c59-bc90-45b9-a147-aeff58342c65"
+    },
+    {
+      "claim_id": "0ad9ba24-ce36-4fea-af2d-b56048e25510",
+      "result_id": "260e8c59-bc90-45b9-a147-aeff58342c65"
+    },
+    {
+      "claim_id": "50105a34-dbd7-4aa2-adae-dfce7e725ca4",
+      "result_id": "260e8c59-bc90-45b9-a147-aeff58342c65"
+    },
+    {
+      "claim_id": "1eadb6cc-91a2-4962-86dd-9b80245ce5e7",
+      "result_id": "260e8c59-bc90-45b9-a147-aeff58342c65"
+    },
+    {
+      "claim_id": "a6a687c8-c83d-4dfa-90ef-2e527700a076",
+      "result_id": "260e8c59-bc90-45b9-a147-aeff58342c65"
+    },
+    {
+      "claim_id": "b284bc6d-399c-4e39-b5a2-7449c68c92d5",
+      "result_id": "260e8c59-bc90-45b9-a147-aeff58342c65"
+    },
+    {
+      "claim_id": "45219c54-73ee-4a92-aadf-8a72023ab20a",
+      "result_id": "260e8c59-bc90-45b9-a147-aeff58342c65"
+    },
+    {
+      "claim_id": "9c50132f-2b7f-4ac3-b4c8-996dcd93e435",
+      "result_id": "260e8c59-bc90-45b9-a147-aeff58342c65"
+    }
+  ],
+  "comparisons": []
+}

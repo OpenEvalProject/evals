@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C19",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "V1-projecting neurons in auditory cortex (AC) are predominantly located in layer 5 and show enrichment for loud onset responses (48% of clustered neurons) compared to layer 2/3 (21%) and layer 5 overall (36%). These neurons also convey other envelope features and some frequency information, indicating projection specificity influences feature selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C19, C22-C26, C66-C67, C70-C72, and C74 collectively demonstrate through two-photon calcium imaging with retrograde labeling that V1-projecting AC neurons show a distinct bias toward loud onset encoding. The quantitative data (Figure 1F) and statistical comparisons (\u03c72 test, p<10\u22129) provide strong evidence. Electrophysiological validation (Figure 1\u2014figure supplement 2) and frequency tuning data (Figure 1\u2014figure supplement 3) further support the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C75",
+      "C76"
+    ],
+    "result": "Auditory responses in V1 are context-dependent: sounds produce net inhibition in darkness and net excitation in dim light. This context-dependence arises within V1 (not in AC inputs), is sufficient when the contralateral eye is covered, and shows stronger asymmetry for loud onsets in excitatory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20, C30-C36, C38, C75-C76 are well-supported by calcium imaging data from 18,925 V1 neurons across multiple conditions (Figure 3B,C). The context-dependence is demonstrated with appropriate controls including eye-tracking to exclude saccade artifacts (C27-C29, C35), imaging of V1-projecting AC neurons showing no modulation (C38, Figure 3F), and contralateral eye occlusion experiments (C34). Statistical significance is shown (Wilcoxon signed rank test, Figure 3C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Context-dependent auditory inputs to V1 are mediated by direct AC to V1 projections, as demonstrated by muscimol inactivation and chemogenetic silencing experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by pharmacological (muscimol) and chemogenetic (hM4Di/CNO) inactivation experiments (Figure 4). Muscimol injections almost completely abolished auditory responses in V1 (C40), and targeted chemogenetic inhibition of V1-projecting AC neurons decreased sound responses (C41). However, the chemogenetic effects were more variable and incomplete, likely due to incomplete targeting of all V1-projecting neurons as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C68"
+    ],
+    "result": "A small subpopulation of layer 1 interneurons (12.8% significantly activated in dark, 4.9% responding more in dark than light) gates cross-modal information flow in a context-dependent manner. This is the only supragranular GABAergic population showing this property, while L2/3 neurons (both excitatory and inhibitory) show uniform context-dependent responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C42-C51, C68 are supported by calcium imaging of identified GABAergic neurons using GAD2-Cre mice (Figure 5). Statistical analysis (Wilcoxon rank-sum test, p<0.01) identifies the specific L1 interneuron subpopulation with context-dependent properties (C44-C49). The comparison with L2/3 neurons (C42, C45, C50) strengthens the conclusion. The inference that this population gates information flow (C2, C51) is reasonable given the data, though the mechanism requires modeling support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C69",
+      "C88"
+    ],
+    "result": "When sound coincides with visual stimuli, visual responses in V1 are boosted, most strongly after loud sound onsets. This boosting is visible at population level, AC-dependent, affects 11% of neurons significantly, and is preferential for loud onsets over quiet onsets. The effect is stronger in V1 than in neighboring associative areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21, C52-C60, C69, C88 are well-supported by bimodal stimulation experiments (Figure 6). Statistical analysis using Generalized Linear Model (p<0.05) identifies 11% of neurons with significant supra-additive boosting (C52). Clustering analysis (7 clusters, 49.5\u00b111.2% variance explained, C54) with bootstrap testing demonstrates boosting across multiple cell types responding to visual onsets (C56). Muscimol inactivation confirms AC-dependence (C53). The preferential boosting by loud onsets is supported by comparison with up-ramps (C57) and relates to earlier findings on AC projection bias (C1, C19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C85"
+    ],
+    "result": "A minimal computational model incorporating AC excitation of both pyramidal cells and L1 interneurons, with visual modulation of interneurons and non-linear response functions in both populations, can explain both context-dependent inhibition and visual response boosting. The model suggests threshold mechanisms and possible dendritic calcium spike involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61-C65, C85 present a computational model that integrates the experimental findings. The model successfully reproduces key observations: context-dependent sign inversion (C61, Figure 7B-C) and boosting effects (C63, Figure 7D-E). Supporting experimental observation of baseline fluorescence changes in the relevant L1 interneuron subpopulation (C62, Figure 7B inset) provides biological plausibility. The proposed dendritic mechanism (C64) is speculative but well-grounded in cited literature (Larkum et al., 2007). The model is appropriately described as 'minimal' and sufficient rather than unique or complete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C83",
+      "C84"
+    ],
+    "result": "Areas adjacent to V1 (secondary visual or associative areas) display excitatory responses to sounds in both lit and dark conditions, unlike V1. This context-dependence is restricted to V1, indicating AC projections impact local circuits differently across cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C83-C84 are supported by imaging data from areas outside V1 (Figure 3D). The comparison clearly shows that neighboring areas lack the context-dependent sign inversion observed in V1. The inference that AC projections impact circuits differently (C84) is reasonable given the data, though the underlying mechanisms remain unexplored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Sounds, especially those with loud onsets, occasionally trigger predominantly horizontal saccadic eye movements and changes in pupil diameter. In lit conditions, saccades trigger responses in V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by eye-tracking data (Figure 3A-B, Figure 2D). These observations are important for experimental design as they necessitate trial filtering to exclude saccade-related confounds. The data justify the authors' decision to exclude trials with saccades >2\u00b0 visual angle (84% of trials retained).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background claims establishing prior knowledge about multisensory integration, auditory-visual connections, and auditory cortex feature encoding, including the existence of intensity-tuned onset/offset neurons and the role of temporal coincidence in multisensory perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C18 are background/context claims supported by appropriate citations to prior literature. These establish the scientific foundation for the current work. C18 involves some inference about sound types and neuron activation but is reasonable given cited work (Deneux et al., 2016b).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C86",
+      "C87"
+    ],
+    "result": "Discussion claims relating current findings to prior work, including similar results in somatosensory cortex, reconciliation with conflicting prior reports, connections to orientation tuning studies, VIP-negative interneuron involvement, and potential mechanisms including dendritic calcium spikes and cholinergic modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C78-C82, C86-C87 appropriately contextualize the findings within existing literature through citations. C78 and C87 are somewhat speculative about functional roles and mechanisms but are clearly presented as hypotheses. C82 makes a specific exclusion claim based on data (Figure 3F) and is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C89"
+    ],
+    "result": "Speculative claims about potential mechanisms and functional roles: L2/3 pyramidal cells may receive projections almost exclusively from AC loud onset neurons while interneurons receive mixed inputs; the boosting effect might highlight visual events responsible for sounds and contribute to sound source localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77 and C89 are explicitly speculative (C77: 'It is thus possible'; C89: 'An interesting hypothesis'). While C77 is a reasonable inference from the observed asymmetries in responses (C76), it lacks direct experimental support. C89 proposes a functional role that is plausible given the data but would require behavioral experiments to validate. These are appropriately presented as hypotheses for future work.",
+    "result_type": "MINOR"
+  }
+]

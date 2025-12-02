@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C43"
+    ],
+    "result": "The SIR3-EBD system functions as an inducible tool for studying silencing establishment. SIR3-EBD strains grown without estradiol fail to repress HMR (mimicking sir3\u0394), while those grown with estradiol repress HMR to levels similar to wild-type SIR3 strains. The tagged Sir4-myc used in ChIP experiments is functional for silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, and C43 are directly supported by RT-qPCR data in Figure 1B showing that the SIR3-EBD system is functional and estradiol-dependent. The system provides a valid experimental tool for the subsequent studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Silencing establishment at HMR requires cell cycle progression through S phase. In cycling cells, silencing occurs gradually over several hours, but G1-arrested cells show no repression even after prolonged estradiol treatment. Cells passing through a single S phase show partial (~60%) repression that remains stable in G2/M arrest, while full repression requires multiple cell cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 are well-supported by RT-qPCR time-course data in Figures 1C-E showing cell-cycle-dependent silencing establishment. The experiments include appropriate controls (ethanol vs. estradiol) and demonstrate that S phase is necessary but not sufficient for complete silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C5"
+    ],
+    "result": "Neither cohesin depletion nor deletion of the tRNA gene tT(AGU)C adjacent to HMR affects silencing establishment requirements in SIR3-EBD strains, contradicting some prior reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, and C5 are supported by experimental data in Figure 1\u2014figure supplement 1 showing no effect of Mcd1 depletion or tRNA gene deletion on silencing establishment. However, the authors acknowledge discrepancies with prior studies and suggest possible explanations in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C4"
+    ],
+    "result": "HML and HMR have identical cell-cycle requirements for silencing establishment. Using a mutant HML* allele that avoids confounding a1/\u03b12 repression, both loci require S phase for partial silencing establishment, though the magnitude of repression differs between genes at the two loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 and C4 are supported by RT-qPCR data in Figure 1\u2014figure supplement 2 showing S-phase-dependent silencing at HML*. The identification of Ste12 binding sites (C32) explains \u03b1-factor-induced hyperactivation. The conclusion that both loci have identical cell-cycle requirements contradicts prior work but is well-supported by the new data using the improved HML* system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C2"
+    ],
+    "result": "Silencing establishment proceeds via gradual repression of transcription in individual cells over multiple cell cycles, rather than through discrete all-or-nothing transitions. Single-molecule RNA-FISH shows that after one S phase, the average number of transcripts per cell decreases, indicating partially repressive intermediate states at both HMR and HML.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 and C2 are strongly supported by quantitative smRNA-FISH data in Figure 2 showing a shift in the distribution of transcript numbers per cell rather than just an increase in zero-transcript cells. This directly addresses the two alternative models and provides single-cell resolution evidence for gradual silencing establishment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "MNase-based ChIP-seq provides increased signal-to-noise over sonication-based ChIP-seq, though with the limitation that non-nucleosomal DNA regions (silencers, tRNA genes) are under-recovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 are supported by comparative ChIP-seq data in Figure 3 and supplements showing improved signal quality with MNase digestion. The limitation regarding non-nucleosomal DNA is acknowledged and demonstrated in Figure 3\u2014figure supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C44"
+    ],
+    "result": "Sir4-myc binds strongly throughout HML* and HMR in wild-type and SIR3-EBD cells grown with estradiol. Weak Sir4-myc binding is detectable in sir3\u0394 cells and SIR3-EBD cells without estradiol, confirmed by multiple replicates and controls. Sir3-EBD binding is estradiol-dependent and co-localizes with Sir4-myc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 and C44 are supported by ChIP-seq data in Figure 3 and supplements. The weak Sir4 binding in sir3\u0394 cells is validated by appropriate controls (untagged Sir4, multiple replicates, different crosslinking times), addressing potential artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C3"
+    ],
+    "result": "Sir protein binding across HML* and HMR is not sufficient for gene silencing. In G1-arrested cells, estradiol induces strong Sir4-myc binding without any gene repression. Repression only occurs after S phase passage, demonstrating that cell-cycle-regulated steps downstream of Sir protein recruitment are required for silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 and C3 are strongly supported by combined ChIP-seq and RT-qPCR data in Figure 3 showing Sir4 binding in G1 without repression, and increased binding with repression after S phase. This is a key mechanistic finding that separates Sir protein recruitment from transcriptional repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C6"
+    ],
+    "result": "Removal of H3K79 methylation is a crucial S-phase-specific step in silencing establishment. Deletion of DOT1 or mutation of H3K79 to arginine (H3K79R) allows robust silencing establishment in G1-arrested cells. H3K79R mutants establish silencing more strongly than dot1\u0394, while H3K79L and H3K79M mutants fail to establish silencing, confirming the importance of the positive charge at this position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 and C6 are well-supported by RT-qPCR data in Figure 4 showing G1 silencing establishment in dot1\u0394 and H3K79R mutants but not in H3K79L/M mutants. The use of multiple alleles and the sir3-8 temperature-sensitive system (C64) provide strong genetic evidence for the role of H3K79 methylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C96",
+      "C97"
+    ],
+    "result": "Even in the absence of H3K79 methylation, S phase still promotes silencing establishment. G1-arrested H3K79R cells show incomplete silencing (~15-fold) compared to fully silenced cells (>1000-fold), and S phase passage accelerates silencing in dot1\u0394 cells, indicating additional S-phase-dependent mechanisms beyond H3K79me removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 and C96-C97 are supported by RT-qPCR data comparing G1-arrested and S-phase-transited dot1\u0394 and H3K79R cells in Figure 4. This identifies a limitation of the H3K79me removal model and points to additional mechanisms, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Removal of H3K79me regulates silencing establishment independently of Sir protein binding. In dot1\u0394 G1-arrested cells, partial silencing occurs with Sir4-myc binding levels indistinguishable from wild-type cells that show no repression, demonstrating that H3K79me removal affects transcriptional output rather than Sir protein recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by combined ChIP-seq and RT-qPCR data in Figure 4F showing similar Sir4 binding but different transcriptional outcomes in dot1\u0394 vs. wild-type cells. This mechanistic insight is important for understanding how H3K79me prevents silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "H3K79me3 is depleted from HML* and HMR in wild-type cells but present in sir3\u0394 mutants. During silencing establishment, Sir protein binding in G1 is insufficient to change H3K79me3 levels, but H3K79me3 is partially depleted after S phase passage, occurring concomitantly with S phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by H3K79me3 ChIP-seq data in Figure 4\u2014figure supplement 2 showing cell-cycle-dependent changes in H3K79me3 levels. The data directly demonstrate that H3K79me3 removal requires S phase and cannot occur through Sir binding alone in G1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C6",
+      "C7"
+    ],
+    "result": "Sas2 and Rtt109, in addition to Dot1, inhibit silencing establishment outside of S phase. Both sas2\u0394 and rtt109\u0394 mutations lead to partial G1 silencing establishment (weaker than dot1\u0394 but significant), and show additive effects with dot1\u0394 but not with each other. The triple mutant sas2\u0394 rtt109\u0394 dot1\u0394 shows no improvement over dot1\u0394 alone, indicating these three enzymes constitute the major S-phase-regulated barrier to silencing establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95, C6, and C7 are supported by RT-qPCR data in Figure 5 showing genetic interactions between dot1\u0394, sas2\u0394, and rtt109\u0394. The epistasis analysis is appropriate and the statistical significance is reported. However, the rtt109\u0394 results should be interpreted cautiously due to noted growth defects and \u03b1-factor sensitivity (Figure 5\u2014figure supplement 1D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C98",
+      "C99"
+    ],
+    "result": "Background knowledge about histone modifications relevant to silencing: Dot1 methylates H3K79 (interfering with Sir3 binding) and lacks a demethylase; Sas2 acetylates H4K16 during S phase; Rtt109 acetylates H3K9 and H3K56 during S phase (removed by Hst3/Hst4 by mitosis); ~90% of H3 is methylated at K79 outside S phase; newly-synthesized H3 during S phase lacks K79 methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 and C84-C87, C98-C99 represent established knowledge from cited literature. These are appropriately cited and provide necessary context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "A model for S-phase-dependent silencing establishment: During S phase, histone incorporation through replication-coupled or replication-independent mechanisms would incorporate unmethylated H3K79, explaining why silencing can occur at HMR whether replicated or not. Replication-independent histone exchange can occur throughout the cell cycle but would incorporate methylated H3 outside S phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C102 represent a mechanistic model to explain prior observations about replication-independent silencing establishment. While C100 and C102 are based on cited literature, C101 is explicitly speculative ('might explain'). The model is plausible and consistent with the data, but direct experimental validation of histone incorporation dynamics at HMR during S phase is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background and prior work on silencing establishment: Silent chromatin at HML/HMR depends on S phase progression; silencing requires SIR1-4 genes; silencers recruit DNA-binding proteins and Sir proteins spread via histone deacetylation; DNA replication per se is not required; Sir protein recruitment can occur without cell-cycle progression; removal of euchromatic histone marks occurs over multiple cell cycles and modulates silencing establishment speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C16 represent established knowledge from prior literature that provides context for the current study. These are appropriately cited and accurately represent the state of the field.",
+    "result_type": "MINOR"
+  }
+]

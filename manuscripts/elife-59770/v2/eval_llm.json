@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The smFISH probes successfully detect alpha-satellite RNA transcripts in HeLa cells, with signal confirmed to be from RNA (not DNA) by RNase A treatment. DNA FISH validation shows expected centromere distribution patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 provide converging evidence for successful smFISH probe validation. The RNase A control (C22-C23) confirms RNA specificity, and DNA FISH (C24-C26) validates that probes target centromeric regions. The experimental design includes appropriate positive and negative controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C2",
+      "C34",
+      "C35"
+    ],
+    "result": "Alpha-satellite RNA transcript levels vary across cell lines, with HeLa cells showing ~4 foci/cell and RPE-1 cells showing significantly lower levels by both smFISH and RT-qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 demonstrate cell line variation in alpha-satellite transcripts using two independent methods (smFISH and RT-qPCR). The data show consistent trends across techniques, with RPE-1 cells displaying lower transcript levels than HeLa cells. Statistical analysis supports the differences observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Eliminating p53 in RPE-1 cells does not substantially alter alpha-satellite transcript levels, suggesting other factors control transcript abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 show that p53 status does not explain the difference in transcript levels between cell lines. This negative result is well-controlled and leads to the reasonable inference that other factors are responsible, setting up subsequent investigations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C49"
+    ],
+    "result": "Alpha-satellite RNA transcripts localize to the nucleus in interphase but only ~10% overlap with centromeres. During mitosis, transcripts are excluded from chromatin and distributed in the cytoplasm, remaining cytoplasmic when cells enter G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 and C49 provide detailed localization data across the cell cycle. The ~10% centromere overlap (C42) is quantified, and the mitotic exclusion pattern (C43-C45) is clearly documented. This contradicts prior work (C47) but the authors provide a reasonable hypothesis (C48) to explain the discrepancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C5"
+    ],
+    "result": "The cell-cycle dependent localization of alpha-satellite transcripts, including mitotic exclusion from chromatin, is similar to other long non-coding RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C5 appropriately contextualize the observed localization patterns by comparison to known lncRNA behaviors. The citation to prior work on lncRNAs (C46) supports this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C55",
+      "C57",
+      "C3"
+    ],
+    "result": "Alpha-satellite transcript levels fluctuate over the cell cycle, increasing in S/G2 and remaining stable through mitosis, but decreasing as cells exit into G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C55, and C57 describe cell cycle-dependent changes in transcript levels based on smFISH quantification. The data contradict prior work (C52) but are internally consistent. The proposed mechanism for G1 reduction (C56) is speculative but reasonable given the localization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C6"
+    ],
+    "result": "Alpha-satellite transcripts are produced by RNA Polymerase II-dependent transcription. Inhibition of Pol II (via CDK7 inhibitor THZ1) reduces transcript levels, while Pol I or Pol III inhibition does not reduce (and Pol I inhibition actually increases) transcript levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 demonstrate RNA Pol II dependence through pharmacological inhibition experiments. Both smFISH and RT-qPCR data (C62-C63) support the conclusion. The unexpected increase with Pol I inhibition (C61) is noted and explored further in subsequent experiments. Controls for Pol I and Pol III are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C7"
+    ],
+    "result": "Alpha-satellite transcription does not require centromere or kinetochore components (CENP-A, CENP-B, CENP-C, CENP-N, CENP-W, HJURP, Ndc80) or diverse cell division components. Instead, eliminating these factors often increases transcript levels, suggesting they act to restrict transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 present systematic knockout experiments across multiple centromere and cell division proteins. The consistent finding that knockouts do not eliminate (and often increase) transcripts is well-documented. The conclusion that these factors restrict rather than promote transcription (C72-C73) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "CENP-C knockout causes a substantial increase in alpha-satellite transcripts. This increase depends on RNA Pol II and reflects increased transcription rather than increased transcript stability, as transcript half-life remains similar in control and CENP-C knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C74, C76-C79 provide detailed characterization of the CENP-C knockout phenotype. The half-life experiments (C78-C79) effectively distinguish between increased transcription versus increased stability. The Pol II dependence (C76) confirms the mechanism. The intensity analysis (C77) supports the interpretation of increased transcript number.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C8",
+      "C103"
+    ],
+    "result": "An inverse relationship exists between the fraction of nucleolar-localized centromeres and alpha-satellite transcript levels. RPE-1 cells have more nucleolar-localized centromeres and fewer transcripts than HeLa cells. CENP-C knockout reduces nucleolar-localized centromeres and increases transcripts. This supports a model where centromere-nucleolar associations repress alpha-satellite transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C93 and C103 present a coherent model linking nucleolar associations to transcript repression. The inverse correlation (C89, C93) is demonstrated across multiple conditions (cell lines, CENP-C knockout). The hypothesis (C85) is well-supported by the data. Figure 5E provides clear visualization of the relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C97",
+      "C98",
+      "C9"
+    ],
+    "result": "Disrupting nucleolar components (Ki-67, Fibrillarin) increases alpha-satellite transcript levels. Ki-67 knockout cells show a 2-3 fold increase in transcripts by smFISH while proliferating normally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94, C97-C98 show increased transcripts upon nucleolar disruption by smFISH. However, C99 indicates no significant change by RT-qPCR, creating an inconsistency. The authors speculate about technical reasons (C100) but this discrepancy weakens confidence in the magnitude of the effect. The direction of change (increase) appears consistent, but the quantitative assessment is uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Despite increased alpha-satellite transcripts in Ki-67 knockout cells by smFISH, no significant change was detected by RT-qPCR, and no consequences to centromere protein levels or chromosome segregation were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 document the discrepancy between smFISH and RT-qPCR results and the lack of functional consequences. The authors acknowledge the inconsistency (C100) and provide possible explanations. The lack of phenotypic consequences (C101-C102) is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C111"
+    ],
+    "result": "The authors propose that the process of centromere transcription itself, rather than the alpha-satellite RNA products, is important for centromere biology, potentially promoting chromatin dynamics and turnover of DNA-bound proteins including CENP-A nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106 and C111 present the authors' mechanistic model. While the localization data (C104) supports the conclusion that transcripts don't have direct structural roles, the positive proposal (C105-C106, C111) is speculative. The model is reasonable and supported by prior work (C107-C109) but lacks direct experimental validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C112"
+    ],
+    "result": "Centromere-nucleolar contacts provide a mechanism to modulate centromere transcription and chromatin dynamics across diverse cell states and conditions, with potential implications for disease states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C112 present the main conclusion and broader implications. The mechanism is well-supported by the experimental data showing the inverse relationship between nucleolar associations and transcription. The speculation about broader implications (C112) is reasonable given the established variation across cell types and states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "SmFISH probes designed against chromosome 7 and X centromere sequences did not detect transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 reports a negative result that is clearly documented. The authors appropriately note that this could reflect technical limitations rather than absence of transcription, and chose not to pursue these probes further.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Antisense alpha-satellite transcripts were detected at similar levels (~3 foci/cell) to sense transcripts (~4 foci/cell) in HeLa cells, consistent with prior reports of bidirectional centromere transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 document bidirectional transcription. The quantification is clear and the finding is contextualized with appropriate citations to prior work showing antisense transcription across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "CENP-B knockout does not alter centromere-nucleolar associations or smFISH foci numbers, serving as a negative control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 provides an important negative control showing specificity of the CENP-C effect. This strengthens the overall conclusions about the relationship between specific centromere proteins and nucleolar associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The smFISH probes detect transcripts from both active centromere regions (~100 kb) and flanking pericentric alpha-satellite DNA (spanning megabases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 appropriately acknowledge the limitation that the probes cannot distinguish between centromeric and pericentric transcripts. This is an important caveat for interpretation but is clearly stated.",
+    "result_type": "MINOR"
+  }
+]

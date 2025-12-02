@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "CRISPR-Cas9 genome editing was successfully established in P. knowlesi using a two-plasmid system with a single selectable marker. The system achieved 8.4% transfection efficiency and 83.3% integration efficiency by day 12, with correct integration detectable by PCR within 3 days and markerless clones obtained through negative selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C39 collectively demonstrate successful establishment of CRISPR-Cas9 in P. knowlesi with quantitative efficiency metrics (C35, C36), temporal dynamics (C33, C34), and validation through multiple approaches including PCR, fluorescence microscopy, and clonal analysis (C39). The co-transfection data (C31, C32) supports the rationale for the two-plasmid approach, and controls (C37, C38) demonstrate specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "A rapid three-step PCR-based method was developed to generate repair templates by fusing homology regions with desired insertions. PCR-generated templates achieved 74% integration efficiency, comparable to plasmid-based templates, with each reaction completable in 40-90 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 describe a scalable PCR method with demonstrated efficiency (C42) matching plasmid-based approaches and rapid turnaround time (C43). The method is well-documented with experimental validation showing comparable performance to traditional approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Systematic optimization revealed that homology region (HR) length proportionately affects integration efficiency in P. knowlesi. Integration was detected with HRs as short as 50 bp, but efficient editing required HRs of 200-800 bp, with optimal length of at least ~800 bp based on GFP positivity (79-81%), PCR yields, and recovery time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 present a systematic analysis of HR length effects with quantitative data across multiple HR lengths (50-1600 bp). The conclusion about optimal HR length (C49) is appropriately qualified as inference based on multiple parameters (GFP positivity, PCR yields, recovery time), though the exact optimal length remains somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Integration efficiency declined with distance from the Cas9-induced double-strand break (DSB), but this effect was surprisingly modest and could be offset by increasing HR length. HRs placed 5 kb from the DSB yielded 14% efficiency with 400 bp HRs, which increased to 54.8% with 800 bp HRs, enabling deletion of genes up to 10 kb (covering ~98% of P. knowlesi genes) from a single PAM site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 demonstrate that HR length can compensate for distance from DSB with quantitative data (C51, C52). The inference about targeting 98% of genes (C55) is appropriately supported by citation to genome composition data (Pain et al., 2008) and the demonstrated 10 kb deletion capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Five genes with diverse subcellular localizations (AMA1, RON2, MyoA, CRT, K13) were successfully tagged using the PCR-based CRISPR-Cas9 approach. All lines showed rapid growth (reaching 1% parasitemia in 8-15 days) and localization patterns consistent with P. falciparum, demonstrating the flexibility and robustness of the system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 demonstrate successful application across diverse targets with appropriate validation (localization, Western blot). The comparison to P. falciparum (C60, C61) highlights advantages of P. knowlesi for this approach, though this is a secondary observation rather than a core result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Successful orthologue replacement of PkDBP\u03b1 with PvDBP was achieved in P. knowlesi, with limiting dilution cloning yielding 100% integrated clones for PkDBP\u03b1OR and 40% for PvDBPOR. The successful growth of PvDBPOR parasites demonstrates that PvDBP can functionally complement PkDBP\u03b1 in DARC-dependent invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 demonstrate successful orthologue replacement with quantitative cloning efficiency data (C65) and functional validation through parasite growth. The inference that PvDBP complements PkDBP\u03b1 function (C68) is well-supported by the successful growth of the replacement line.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Whole genome sequencing revealed a ~44 kb truncation at one end of chromosome 14 in the PkDBP\u03b1OR and PvDBPOR lines, which occurred in the A1-H.1 parental line prior to transfection rather than as a result of Cas9 targeting. No off-target mutations were detected in the four most similar sequences to the PkDBP\u03b1 sgRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 provide thorough characterization of an unexpected genomic deletion with multiple lines of evidence ruling out Cas9-mediated off-target effects (C70, C71, C72). The whole genome sequencing data (C69) and control experiments support the conclusion that this was a pre-existing deletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "PkDBP\u03b2 and PkDBP\u03b3 are dispensable for multiplication in human RBCs, and their loss leads to significantly increased multiplication rates. The PkDBP\u03b1OR/\u039414\u0394\u03b3 line showed 8.9-fold growth compared to 6.9-fold for wild type (p<0.001), while the PvDBPOR/\u039414\u0394\u03b3 line showed a minor growth reduction compared to its control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 demonstrate that DBP\u03b2 and DBP\u03b3 are not only dispensable but may actually impede invasion in human RBCs, supported by statistically significant growth data (C76) across 21 blood donations. The inference that these proteins impede invasion (C75) is reasonable given the increased growth upon deletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Loss of DBP\u03b2 and DBP\u03b3 in the PkDBP\u03b1OR/\u039414\u0394\u03b3 line did not reduce multiplication in macaque RBCs but slightly increased it, demonstrating that both proteins are dispensable for macaque RBC invasion and that PkDBP\u03b1 alone is sufficient to retain full growth rate in macaque cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 show that the DBP paralogues are dispensable in macaque cells with quantitative data on host preference ratios. The inference that PkDBP\u03b1 is sufficient (C80) is well-supported by the maintained growth rates in parasites lacking the paralogues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The PvDBPOR/\u039414\u0394\u03b3 line showed a 40% reduction in macaque multiplication rates compared to the PkDBP\u03b1OR/\u039414\u0394\u03b3 line, resulting in a shift to human RBC preference (host preference ratio 0.75). This suggests that PvDBP is less effective at facilitating invasion of macaque cells than human cells in the absence of redundant DBP pathways, but can support invasion of both host cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 demonstrate altered host tropism with quantitative data (C81, C82) and appropriate inference about differential efficiency (C83, C84). The data support the conclusion that PvDBP can invade both cell types but with reduced efficiency in macaque cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "No significant association was observed between growth of the PvDBPOR/\u039414\u0394\u03b3 line and Duffy haplotype (Fya, Fyb, Fy(a+b+)). All three parasite lines (wild type, PkDBP\u03b1OR/\u039414\u0394\u03b3, and PvDBPOR/\u039414\u0394\u03b3) showed similar average growth rates across the three Fy subtypes with no significant difference between Fya and Fyb RBCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 present negative results from testing across 21 blood donations with three Duffy phenotypes. The statistical analysis appropriately shows no significant differences, though the authors acknowledge this doesn't rule out subtle effects that could be clinically relevant over the course of an infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C117"
+    ],
+    "result": "Transgenic P. knowlesi parasites expressing PvDBP in place of PkDBP\u03b1 showed no restriction to reticulocytes, invading human RBCs (containing <0.5% reticulocytes) with the same efficiency as parasites expressing PkDBP\u03b1. This provides compelling evidence that PvDBP plays no role in reticulocyte restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C117 directly contradict prior work (C10, C116) suggesting PvDBP mediates reticulocyte restriction. The experimental evidence is strong\u2014parasites expressing only PvDBP grow efficiently in human blood with minimal reticulocytes. This is a clear, well-controlled experiment that definitively addresses the reticulocyte restriction question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C109"
+    ],
+    "result": "PvDBP can alter the macaque/human host cell tropism of P. knowlesi, but the PvDBP protein alone is unlikely to represent a significant barrier to P. vivax infection of macaques. While PvDBP-expressing parasites showed reduced growth in macaque cells, the multiplication rate remained close to that seen for human RBCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C109 address the role of PvDBP in host tropism. The data show altered tropism (C81, C82) but the multiplication rate in macaque cells remained substantial, supporting the conclusion that PvDBP alone is not a major barrier to macaque infection (C109). This contradicts prior hypotheses (C11, C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Growth inhibition assays demonstrated that PvDBPOR parasite lines were potently inhibited by antibodies against PvDBP_RII (reaching ~75% inhibition at 10 mg/ml and 24.6-29.6% at 2.5 mg/ml, p<0.001 vs controls), while showing only low-level inhibition (~30% at 10 mg/ml) for wild type and PkDBP\u03b1OR lines. The PkDBP\u03b1 orthologues PkDBP\u03b3 and \u03b2 appeared to play no interactive role in antibody-mediated inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 demonstrate successful functional validation of the transgenic line as a vaccine testing platform. The differential inhibition between PvDBPOR and control lines is statistically significant and substantial in magnitude. The inference about lack of interference from DBP paralogues (C95) is supported by the similar inhibition in lines with and without these genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The CRISPR-Cas9 system demonstrated high robustness with 25/25 successful transfections at the p230p locus and only 1/10 sgRNAs failing at different loci. No off-target effects were detected, and each round of genome editing requires only ~30 days including dilution cloning, enabling unlimited iterative modifications through plasmid recycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 provide quantitative metrics of system robustness and efficiency. The high success rate (C96, C97), absence of off-target effects (C98), and rapid turnaround time (C99) are well-documented. These claims effectively summarize the overall performance characteristics of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The PCR-based approach successfully generated constructs up to 6.1 kb in length (2 \u00d7 1.6 kb HRs flanking the 2.9 kb eGFP expression cassette), but attempts to generate a larger 9.3 kb construct (2 \u00d7 3.2 kb HRs) failed during the final PCR step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 define the practical size limits of the PCR-based approach. The successful generation of 6.1 kb constructs and failure at 9.3 kb provides useful information about the method's limitations, though this is a technical detail rather than a major finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The increased growth rate in macaque cells upon deletion of DBP\u03b3 and DBP\u03b2 suggests that PkDBP\u03b1 is the preferred and more efficient invasion pathway even when the paralogues are functional. This suggests that loss of DBP\u03b3 and DBP\u03b2 could provide an adaptation route to increased growth/virulence in human infections, though this would require sacrificing redundancy in macaque hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106 present speculative evolutionary interpretations (C105, C106 are explicitly marked as speculation) based on the growth data. While the inference about PkDBP\u03b1 being the preferred pathway (C104) is reasonable given the data, the evolutionary implications (C105, C106) are hypothetical and would require additional evidence such as competition assays or field surveillance data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The invasion process is very tolerant of even quite large changes in receptor-ligand affinity, as demonstrated by the lack of significant growth differences between Duffy subtypes despite known differences in PvDBP_RII binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 draws an important mechanistic inference from the Duffy subtype data (C88, C89). The conclusion is appropriately qualified\u2014the authors acknowledge they cannot rule out subtle effects but demonstrate that major growth differences are absent despite known 50% differences in binding efficiency (C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "Low-level cross-reactivity of PvDBP_RII antibodies against P. knowlesi suggests cross-immunity between the two species could exist in the field, which may have a significant impact on disease outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C122 is marked as speculation and represents a hypothesis based on the observed low-level cross-reactivity (C91). While the observation of cross-reactivity is supported, the implications for field immunity and disease outcome are speculative and would require epidemiological studies in co-endemic areas.",
+    "result_type": "MINOR"
+  }
+]

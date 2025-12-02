@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Hippo pathway transcription factors and cofactors (Vgll4l, Vgll4b, Yap, Taz, Tead1a, Tead3a) are expressed in LRO progenitors and their loss of function strongly disrupts embryo laterality. This was demonstrated through morpholino knockdowns, drug treatment, and CRISPR-Cas9 mutants, with specificity confirmed by rescue experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 collectively demonstrate that Hippo TFs/TcoFs are expressed in the appropriate tissue (C1, C6) and that multiple independent loss-of-function approaches (morpholinos, drug treatment, CRISPR mutants) all produce laterality defects (C7-C12, C14-C18). The specificity is validated by rescue experiments (C13) and the use of multiple non-overlapping morpholinos. The convergence of evidence from different experimental approaches strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Yap and Taz exhibit partial functional redundancy in zebrafish, with taz single mutants showing mild laterality defects that are greatly enhanced in double Yap/Taz knockdowns or when combined with yap heterozygosity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 demonstrate functional redundancy through genetic interaction experiments. The mild phenotype of taz single mutants (C20) that becomes severe in double knockdowns (C21) or with reduced yap dosage (C22) provides clear evidence of redundancy. This is consistent with prior work in mouse (C19) and follows expected patterns for redundant gene pairs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Hippo TFs/TcoFs are not required for specification of LRO progenitors but are essential for KV formation, controlling KV size and DFC number at the end of gastrulation. Gain of Yap function increases KV size and cell number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 establish the temporal specificity of Hippo pathway function. The presence of DFCs at early gastrula (C23, C27) but reduced numbers at late gastrula (C28) and decreased KV size (C25) indicates a role in maintenance rather than specification. The gain-of-function experiment (C26) provides complementary evidence. However, the data for C23 is described as 'not shown', which weakens this specific claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Loss of Hippo TFs/TcoFs affects DFC proliferation and survival, with moderate effects on mitotic index for some factors (Vgll4l, Yap/Taz, Tead1a) but not others (Vgll4b, Tead3a), and increased apoptosis in all loss-of-function conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 provide mechanistic insight into how Hippo factors control DFC number. The differential effects on proliferation (C29-C30) versus the consistent effects on apoptosis (C31) suggest multiple mechanisms. The data are supported by quantitative measurements shown in Figure 2G-H with appropriate statistical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Hippo TFs/TcoFs are required for motile ciliogenesis, with all loss-of-function conditions showing significant cilia shortening. This resolves contradictory prior reports about Yap's role in ciliogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 establish a novel role for Hippo signaling in motile ciliogenesis. The consistent cilia shortening across all loss-of-function conditions (C32) with quantitative measurements (Figure 3) strongly supports this conclusion. The discussion of prior contradictory literature (C34-C36) appropriately contextualizes the findings, though the resolution of this contradiction (C37) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Vgll4l and Yap/Taz regulate expression of DFC-specific genes, with 30% (24/78) of tested genes downregulated in Vgll4l loss of function, including genes essential for KV formation involved in cilium assembly, lumen expansion, and Nodal signaling. DFC-specific knockdowns confirm this regulation occurs within LRO progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C48 establish transcriptional regulation by Hippo factors through candidate gene analysis. The in situ hybridization data (C38, Figure 4) and DFC-specific knockdowns (C47-C48) demonstrate tissue-autonomous regulation. The functional relevance is supported by the known roles of downregulated genes (C39-C44). However, the distinction between direct and indirect regulation (C46) remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Transcriptome analysis reveals that Vgll4l and Yap/Taz loss of function produce distinct transcriptional profiles in DFCs, with 9,215 and 7,925 differentially expressed genes respectively. Quality control confirms consistency with in situ hybridization results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 establish the quality and scope of the transcriptome analysis. The PCA analysis (C49-C51) demonstrates reproducibility and distinct effects. The large number of DEGs (C52-C53) indicates broad transcriptional control. The validation against in situ data (C54) provides important quality control. The experimental design with four biological replicates is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Contrary to expectations from other systems, Vgll4l and Yap/Taz regulate genes similarly rather than antagonistically during LRO formation, with 84% of overlapping DEGs regulated in the same direction and 82.5% of mammalian Yap target gene homologs similarly regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 present a surprising finding that challenges the established model of Vgll4 as a Yap antagonist (C57). The transcriptome data showing similar regulation patterns (C55-C56, C60-C61) is compelling, particularly the analysis of known Yap target genes (C58-C62). However, the inference that these genes are direct targets in zebrafish (C62) is reasonable but not directly demonstrated. The conclusion (C63) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "GO term analysis reveals that DEGs are enriched for biological processes related to LRO formation and function (LR symmetry, cilium movement, cilium organization, epithelium development), with Yap/Taz associated with mitotic cell cycle and Vgll4l with chromatin modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 provide functional annotation of the transcriptome changes. The enrichment for LRO-relevant processes (C64) validates the biological relevance of the findings. The differential GO term associations (C65-C66) suggest distinct but complementary roles. The analysis appears appropriately conducted with statistical correction mentioned in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "A substantial fraction of genes known to cause DFC/KV phenotypes when mutated are downregulated in Hippo TF/TcoF loss of function (62% for Vgll4l, 50% for Yap/Taz), including 75% and 52% respectively of genes involved in motile ciliogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 connect the transcriptome changes to known functional genes. The high percentage of known KV genes affected (C69-C70) and especially ciliogenesis genes (C71-C72) provides strong support for the functional importance of Hippo pathway regulation. The analysis leverages existing knowledge from ZFIN database (C67) appropriately. The conclusion (C73) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Vgll4l and Yap/Taz regulate expression of key components of major signaling pathways (Nodal, FGF, non-canonical Wnt, Notch) that control LRO formation, positioning them as upstream master regulators. Distinct mechanisms regulate Nodal signaling, with Vgll4l affecting lefty expression and Dnmts while Yap/Taz does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C85 establish Hippo factors as upstream regulators of multiple signaling pathways. The downregulation of ligands, receptors, and pathway components (C75-C84) is well-documented with quantitative data (Figure 6). The differential regulation of Nodal pathway components (C76-C80) suggests mechanistic complexity. However, C78 is speculative about the autoregulatory loop disruption. The master regulator conclusion (C85) is inferential but well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Vgll4l and Yap/Taz act upstream of previously identified TFs essential for LRO formation (Sox32, Sox17, Tbxta, Tbx16, Foxj1a, Rfx2), with all six significantly downregulated in loss-of-function conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 establish a transcriptional hierarchy. The downregulation of all previously known LRO TFs (C90-C91) with quantitative data (Figure 7) strongly supports the upstream position of Hippo factors. The contextual claims about TF importance in development (C86-C89) appropriately frame the findings. The conclusion (C92) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Vgll4l regulates expression of epigenetic factors in DFCs, including writers (de novo DNA methyltransferases Dnmt3ba, Dnmt3bb.1, Dnmt3bb.2, and maintenance methyltransferase Dnmt1) and readers (Methyl-CpG-Binding Domain proteins Mbd1b, Mbd2, Mbd3a, Mbd3b, Mbd6) of DNA methylation marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 establish a novel role for Vgll4l in epigenetic regulation. The downregulation of multiple Dnmts and Mbds (C95-C97) is supported by transcriptome data (Figure 8). The contextual information about Mbd3 function in different vertebrates (C98-C99) is appropriately cited. This represents a significant finding linking transcription factor activity to epigenetic machinery expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Loss of function of DNA methylation writers (Dnmt3bb.1, Dnmt3bb.2, Dnmt3ba) and readers (Mbd3a, Mbd3b) affects LR asymmetry establishment and produces KV phenotypes similar to Vgll4l loss of function. Dnmt3bb.1 overexpression partially rescues Vgll4l laterality defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 establish functional importance of the epigenetic factors regulated by Vgll4l. The laterality defects (C100-C103) and similar KV phenotypes (C104) provide strong support. The partial rescue experiment (C106) is particularly compelling evidence for a functional relationship. However, 'partial rescue' indicates incomplete restoration, suggesting additional mechanisms may be involved. The conclusion (C105) is appropriately cautious ('at least in part').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Vgll4l loss of function results in decreased DNA methylation in DFC nuclei, as measured by anti-5-methylcytosine immunofluorescence in both morphants and homozygous mutants, demonstrating that Vgll4l regulates epigenetic programming in LRO progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 provide direct evidence of epigenetic changes downstream of Vgll4l. The quantitative immunofluorescence data (Figure 10) in both morphants and mutants strengthens the conclusion. This connects the transcriptional regulation of Dnmts (previous result) to actual changes in DNA methylation. The conclusion (C108) is well-supported, though the mechanism (direct vs. indirect regulation of Dnmts) remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The study establishes the KV as a model system for studying transcriptional and epigenetic control of organogenesis, identifying Hippo pathway components as novel regulators that control signaling pathways, gene expression, and epigenetic programming essential for ciliated epithelium formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C119 provide context and summarize the major findings. The rationale for using KV as a model (C110-C113) is well-justified. The identification of Hippo pathway components as novel regulators (C114-C117) is supported by the extensive experimental evidence. The integration of transcriptional and epigenetic control (C118-C119) represents a significant conceptual advance. These are primarily summary and contextual claims that frame the specific experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Hippo TFs/TcoFs regulate multiple aspects of KV formation beyond cell number, including epithelium formation and cilia organization. Vgll4s function similarly to Yap/Taz rather than antagonistically, positioning these factors as master regulators and revealing the first transcriptional networks during ciliated epithelium formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C126 synthesize the findings into broader conclusions. The multi-faceted role beyond cell number (C122) is supported by the diverse phenotypes observed. The similar function of Vgll4s and Yap/Taz (C123-C124) is well-supported by the transcriptome data. The 'master regulator' designation (C126) is justified by the upstream position and broad effects. The claim of describing 'first transcriptional networks' (C125) is strong but may be difficult to verify comprehensively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Vgll4l and Yap/Taz control Nodal signaling in DFCs through distinct mechanisms: Vgll4l represses lefty expression likely through positive control of Dnmt expression (supported by decreased DNA methylation in Vgll4l mutants), while Yap/Taz regulates ndr1 without affecting lefty or Dnmt expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C137 propose distinct regulatory mechanisms for Nodal signaling. The differential effects on lefty and Dnmt expression (C129-C133) are well-documented. However, the proposed mechanism linking Vgll4l to lefty repression through Dnmt regulation (C136) is speculative and not directly tested. The correlation between Dnmt downregulation and lefty upregulation is suggestive but does not prove causation. The DNA methylation data (C137) supports the model but ChIP or other direct evidence of lefty promoter methylation would be needed for full support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "This study reveals that Vgll4l regulates epigenetics in a temporal and spatial manner by controlling expression of epigenetic factors in LRO progenitors, opening a new field of exploration for understanding gene expression regulation during cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C141 place the findings in the broader context of epigenetic regulation. The observation that a transcription cofactor controls expression of epigenetic machinery (C140) is well-supported by the data. The temporal and spatial specificity (C141) is demonstrated by the DFC-specific expression and function. The claim of opening 'a new field' (C141) is somewhat promotional but the findings do represent a significant conceptual advance in understanding how epigenetic programming is regulated during development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background on Vgll4 and TEAD family: Vgll4 family members function through interaction with TEAD transcription factors, which bind Yap/Taz to activate target genes. In human cancer cells, Vgll4 negatively regulates Hippo signaling by competing with Yap/Taz for TEADs. The zebrafish genome encodes three Vgll4 family members and four TEADs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 provide established background information supported by appropriate citations (C2, C4) and genomic information (C5). These are knowledge claims that contextualize the study but do not represent novel findings. The information is accurately presented and properly attributed.",
+    "result_type": "MINOR"
+  }
+]

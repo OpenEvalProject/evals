@@ -1,0 +1,2283 @@
+{
+  "submission": {
+    "id": "1f0c65e7-a7d3-4f62-944f-dd37ad04c324",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:23:25.583514Z",
+    "updated_at": "2025-12-02T15:23:25.583514Z"
+  },
+  "content": [
+    {
+      "id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "submission_id": "1f0c65e7-a7d3-4f62-944f-dd37ad04c324",
+      "content_type": "manuscript",
+      "content_text": "# Large-scale cell-type-specific imaging of protein synthesis in a vertebrate brain\n\n## Authors\n\n- Or David Shahar<sup>1</sup> ([ORCID: 0000-0002-5039-8307](https://orcid.org/0000-0002-5039-8307))\n- Erin Margaret Schuman<sup>1</sup> ([ORCID: 0000-0002-7053-1005](https://orcid.org/0000-0002-7053-1005)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for Brain Research Frankfurt Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nDespite advances in methods to detect protein synthesis, it has not been possible to measure endogenous protein synthesis levels in vivo in an entire vertebrate brain. We developed a transgenic zebrafish line that allows for cell-type-specific labeling and imaging of nascent proteins in the entire animal. By replacing leucine with glycine in the zebrafish MetRS-binding pocket (MetRS-L270G), we enabled the cell-type-specific incorporation of the azide-bearing non-canonical-amino-acid azidonorleucine (ANL) during protein synthesis. Newly synthesized proteins were then labeled via 'click chemistry'. Using a Gal4-UAS-ELAV3 line to express MetRS-L270G in neurons, we measured protein synthesis intensities across the entire nervous system. We visualized endogenous protein synthesis and demonstrated that seizure-induced neural activity results in enhanced translation levels in neurons. This method allows for robust analysis of endogenous protein synthesis in a cell-type-specific manner, in vivo at single-cell resolution.\n\n## Introduction\n\nProtein synthesis is critical for remodeling synaptic proteomes, especially when this process is associated with information storage (Sutton and Schuman, 2006). Chemical stimuli and changes in behavioral states alter protein expression in the nervous system. It has been shown in different model organisms that protein synthesis, during or shortly after learning, is essential for the formation of long-term memory (Davis and Squire, 1984; Agranoff et al., 1966; Agranoff and Klinger, 1964; Costa-Mattioli et al., 2009). Despite the importance of neuronal\u00a0protein synthesis for many biological processes such as learning (Flexner et al., 1962; Hinz et al., 2013; Roberts et al., 2013), stress responses (Langebeck\u2010Jensen et al., 2019), and epilepsy (Brooks-Kayal et al., 1998; Hinz et al., 2012; Baraban et al., 2005; Del Bel et al., 1998), little is known about the endogenous neuronal protein synthesis levels and their changes in vivo.\n\nZebrafish are vertebrates that exhibit a variety of complex behaviors (Orger and de Polavieja, 2017) including swimming and rheotaxis (e.g. Olszewski et al., 2012; Oteiza et al., 2017; Marques et al., 2018), hunting (e.g. Bianco et al., 2011; Semmelhack et al., 2014), learning (eg. Hinz et al., 2013; Roberts et al., 2013; Aizenberg and Schuman, 2011; Kenney et al., 2017; Ahrens et al., 2012; Valente et al., 2012) and social behaviors (e.g. Hinz et al., 2013; Peichel, 2004; Oliveira, 2013; Gerlai, 2014; Teles et al., 2016; Stednitz et al., 2018; Dreosti et al., 2015). Moreover, a variety of neurological syndromes including epilepsy have been investigated (Kundap et al., 2017). The zebrafish larval brain is small and translucent, enabling high-resolution imaging of cells. The complexity of brain tissue, however, is still an issue. Neurons, in particular, have long processes, which are tightly entangled in their respective tissues. As such, monitoring protein synthesis levels with cell-type and temporal resolution has so far been impossible in zebrafish neurons, highlighting the need for the methodology developed here (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic demonstrating the method to visualize newly synthesized proteins in the brain in a cell-type-specific manner. (B) The protein sequence of the catalytic core domain of the MetRS in a number of species including Danio Rerio shows strong conservation (green). Leucine 270 (bold green) was mutated to Glycine to develop cell-type-specific metabolic labeling in zebrafish. (C) Schematic of the binding pocket of the MetRS and the ribosome during translation. The wt MetRS allows the charging of Met (black) that can be incorporated during translation\u00a0initiation and elongation (left). The non-canonical amino acid ANL (blue), which contains an azide group, does not fit into the binding pocket of the wt MetRS, and thus is\u00a0notincorporated into nascent protein (center). The mutant MetRSL270G can charge ANL, which is then incorporated into newly synthesized proteins (in cells expressing the MetRSL270G). (D) Schematic of the UAS-CFP-MetRSL270G line transgene. Crossing the line with any Gal4-expressing line allows for the metabolic\u00a0labeling of newly synthesized proteins in any accessible cell type. (E) A scheme demonstrating the use of the ELAVL3-Gal4:UAS-CFP-MetRSL270G line. Left: a zebrafish larva expressing the transgene in neurons (cyan). Following addition of ANL to the water bath, newly synthesized proteins in neurons incorporate ANL (blue). Right: a whole mount click reaction with a fluorescent alkyne reveals the newly synthesized proteins (red). (F) The effect of different ANL concentrations on swim speed after 24 hr of ANL exposure (measurement was done in the presence of ANL). 10 mM ANL, which had no significant effect on larvae swimming, was used in further experiments. N\u00a0=\u00a05 to 6 larvae for each concentration. (G) Projections of confocal images of zebrafish larval brains after click reactions demonstrating the specificity of fluorescently labeled nascent protein in the MetRSL270G larva treated with ANL, but not in controls. Scale bar\u00a0=\u00a050 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of the experimental setup. The chamber was placed in a custom-built, enclosed behavioral box that isolated the larvae from outside visual or acoustic stimuli. The behavioral box had a semitransparent bottom, onto which different light environments were projected to each half of the swimming lanes, using a computer-controlled monitor, while the position of the larvae was captured every second using a camera mounted above. The larvae swam for 3 min, then\u00a0the light and dark regions were\u00a0shifted every minute in an alternating manner (light region became dark and dark region became light) as indicated by\u00a0the\u00a0scheme. (B) Percentage of time spent in light environment by larval zebrafish during the entire experiment. Positions were recorded after 5 s from the time of the light shift and each dot represents the percentage of time for a single larva. Blue line: average, box range: standard error, whiskers show min and max. n\u00a0=\u00a06 for 0 mM ANL, and 7 larvae for every other ANL concentration. This experiment shows that the larvae maintain the ability to sense the light/dark environment, react to it and keep their natural preferences when\u00a0exposed\u00a0to ANL concentrations between 5 and 20 mM.\n\nBio-orthogonal approaches based on metabolic precursors enable the labeling of nascent\u00a0proteins or protein modifications\u00a0(Hinz et al., 2012;\u00a0Beatty et al., 2006;\u00a0Laughlin et al., 2008),\u00a0and have been combined with immunostaining to measure protein synthesis in specific cell types (Liu and Cline, 2016). These platforms have recently been coupled with genetic control, allowing access to particular cell types. For example, the wild-type Methionyl-tRNA synthetase (MetRS) can be modified to enable the charging of a different azide-bearing non-canonical amino acid, the methionine analog azidonorleucine (ANL), which cannot be charged by the wild-type MetRS. By using cell-type-specific promoters, the mutant MetRS can be expressed in cell types of interest and the nascent proteins can be labeled via the administration of ANL, as has been demonstrated in Caenorhabditis elegans (Yuet et al., 2015), Drosophila melanogaster (Erdmann et al., 2015) and Mus musculus (Alvarez-Castelao et al., 2017).\n\nTo date, overall levels of protein synthesis within neurons across the entire intact brain have not yet been measured and imaged in any vertebrate. The existing protein synthesis reporters used for most single cell analyses rely on fluorescent tagging of individual protein species and therefore do not measure endogenous nascent protein levels. Here we demonstrate for the first time the ability to label and image in situ newly synthesized proteins in vivo in a cell-type-specific manner. We visualized nascent neuronal proteins across the entire animal. Combining a specific Gal4 reporter line with the UAS-MetRSL270G and adding ANL for various durations enabled cell-type-specific labeling with temporal control. We also demonstrate the sensitivity of the protein synthesis signal to alterations in neuronal activity.\n\n## Results\n\n### Cell-type-specific nascent protein tagging\n\nTo enable cell-type-specific non-canonical amino acid tagging in zebrafish, we cloned and mutated the zebrafish MetRS to introduce a point mutation (L270G) at a conserved position in the methionine binding pocket (Figure 1B\u2013C). We developed a transgenic line in which the conditional expression of CFP and the MetRSL270G (separated by T2A) is under the control of the UAS enhancer. When these fish are crossed to a Gal4 line with a cell-type-specific promoter, cell-type-specific incorporation of azidonorleucine (ANL) into nascent proteins can be achieved (Figure 1C\u2013D). In order to realize cell-type-specific labeling of newly synthesized proteins in neurons, we crossed the UAS-CFP- MetRSL270G line with a well-established pan neuronal driver Gal4 line, ELAVL3-Gal4 (Figure 1D\u2013E). Following the addition of ANL, the charging of ANL by MetRSL270G and its incorporation into protein, a click reaction was performed and newly synthesized proteins were visualized (Figure 1E). In a previous study, we showed that zebrafish nascent proteins can be globally labeled with the non-canonical amino acid azidohomoalanine (AHA) via its addition to the swim water (Hinz et al., 2012). We added ANL to the swim water and determined whether there were any apparent behavioral effects. Freely swimming larvae were incubated with different concentrations of ANL for 24 hr (hrs) and the average swim speed was measured. We found that ANL concentrations of 10 mM or less did not affect larval swimming behavior (Figure 1F). Zebrafish larvae exhibit a preference for illuminated regions of their habitat (Hinz et al., 2013). We also observed that the ELAVL3-MetRSL270G larvae maintained their light preference in the presence of ANL (Figure 1\u2014figure supplement 1). We next incubated larvae with 10 mM ANL for 24 hr, fixed the larvae and performed a whole-mount click reaction (see Materials\u00a0and\u00a0methods). Confocal images acquired across the brain revealed newly synthesized proteins in neurons in ELAVL3-MetRSL270G larvae that were incubated with ANL. Only weak fluorescence was detected in WT larvae that were incubated with ANL, or ELAVL3-MetRSL270G larvae that were not incubated with ANL (Figure 1G, for images of single z-sections see Figure 1\u2014video 1 and Figure 1\u2014video 2).\n\n### Detection of endogenous nascent proteins in different neuronal populations\n\nWe performed bio-orthogonal non-canonical amino-acid tagging (BONCAT) (Dieterich et al., 2007; Dieterich et al., 2006) on proteins extracted from WT or MetRSL270G larvae (4 dpf) after metabolic labeling (24 hr, 10 mM ANL) or MetRSL270G fish without metabolic labeling. Western blot analysis revealed an abundance of biotinylated nascent proteins, spanning various molecular weights, in head tissue from ANL-treated MetRSL270G larvae (Figure 2A, Figure 2\u2014figure supplement 1) and only low background levels of biotinylated proteins in the controls (WT ANL+, MetRSL270G ANL- in Figure 2A). To examine the robustness and specificity of the labeling, we visualized newly synthesized proteins in different brain regions. We incubated 3 dpf larvae with 10 mM ANL for 24 hr, fixed the larvae (at 4 dpf) and performed a whole-mount click reaction using a fluorescent alkyne tag. We performed immunostaining for CFP to visualize neurons expressing CFP (and therefore MetRSL270G) in the same larvae. We then imaged the entire nervous system visualizing both nascent protein and CFP (Figure 2, Figure 2\u2014figure supplements 2\u20135). We detected nascent protein signal across the nervous system including in the subpallium, habenula, anterior pretectum, optic tectum, hindbrain, medulla and the spinal cord (Figure 2, Figure 2\u2014figure supplement 2). In order to quantify the nascent protein signal, we segmented the cell somata volumes using the 3D CFP signal (Figure 2\u2014figure supplements 6\u20137 and Figure 2\u2014video 1). We then measured the average voxel intensity in the fluorescent-alkyne channel to determine the level of nascent protein in each cell. We segmented hundreds to over two thousand cells in each larva. We calculated the average signal intensity in a specific brain region, the habenula (Figure 2G), and in the entire nervous system (Figure 2H). The same click reaction performed on larvae that were not incubated with ANL revealed only low levels of background fluorescence (Figure 2C\u2013D,G\u2013H). In some neurons, we could detect a nascent protein signal in neurites indicating the sensitivity of the method to visualize newly synthesized proteins in dendrites or axons (Figure 2\u2014figure supplement 2C\u2013D, Figure 2\u2014figure supplement 8). These newly synthesized proteins could have either been synthesized in somata and moved to the processes, or could have been synthesized locally in the processes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-v1.jpg)\n\n**Figure 2.:** 3 dpf larvae were incubated with 10 mM ANL for 24 hr in vivo, fixed (at 4 dpf) and clicked to a biotin tag for BONCAT or a fluorescent tag to visualize\u00a0nascent proteins in situ. (A) Immunoblot detecting newly synthesized proteins in WT larvae treated with ANL (WT ANL+, control), MetRSL270G (MerRS*) larvae treated with ANL (ANL +) or not (ANL-, control). (B) Dorsal view collage projection of confocal images showing fluorescently labeled newly synthesized neuronal proteins (red). (C-F) High magnification view of different brain regions. 4\u20136 confocal planes are shown (~10 microns in depth). Note the overlap between the CFP channel (Ab staining, green) and the nascent\u00a0protein channel (click labeling, red), indicating that the\u00a0signal is specific to cells expressing the MetRSL270G. (C-D) Optic tectum (Ot). (C) Shown are 4 planes of the region indicated by the square in B. (D) The same region in a larva not incubated with ANL demonstrating the CFP but not nascent\u00a0protein labeling. (E) Maximal projection of labelled\u00a0newly synthesized proteins in an entire brain (dorsal view and lateral view) (see Figure 2\u2014figure supplement 2A\u2013B for lower brightness). White frames indicate the subpallium (Sp), habenula (Hb) and anterior pretectum (Apt), regions zoomed in (in F). (F) CFP Ab staining and nascent\u00a0protein\u00a0labeling in 4\u20136 confocal images indicated in the white frames in E. See Figure 2\u2014figure supplement 2 for more brain regions. (G-H) Quantification of the average nascent protein levels in the habenula (G) and the entire nervous system (H). Neurons were segmented in 3D using the CFP channel (see supplementary material and Figure 2\u2014figure supplements 6\u20137) and the average voxel fluorescence intensity for the CFP and fluorescently labeled nascent protein was measured in each cell. Plotted are the average fluorescence intensities in single cells. 30 to 60 neurons were segmented for each habenula of 4 ANL-treated and 3 control larvae (G). (H) Quantification of the average CFP and nascent protein fluorescence intensity in neurons across the entire nervous system. More than 1000 neurons were segmented in 3D using the CFP channel (similar to G). Plotted are the mean fluorescence intensities in single cells from 3 larvae treated (ANL+, squares) or not treated (ANL-, circles) with ANL. See Figure 2\u2014figure supplement 5 for statistical differences between the groups. Squares: ANL- (control), circles: ANL+, blue: CFP, red: Nascent protein, black line \u2013 mean fluorescence intensity within a single larva. One cell had a\u00a0nascent protein intensity value below ten and is shown on the x-axis. Scale bars\u00a0=\u00a020 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Average intensity was measured for each of the three lanes and normalized to the WT, ANL+ sample. (B) Average intensity was measured for each of the three lanes and normalized to the WT, ANL+ sample as in A. Shown is an average of two independent experiments. Bars indicate standard error of the mean.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A-B) Maximum intensity projection of newly synthesized protein labeling in an entire brain (A) - dorsal view, B - lateral view) (same image as in Figure 2E,F with lower brightness to demonstrate the variability of nascent protein intensity in regions that appear saturated in Figure 2). White frames indicate the subpallium, habenula and anterior pretectum as in Figure 2E,F. (C-E) Maximum intensity projections of nascent\u00a0protein labeling (red, top), and CFP Ab staining (green, middle) in indicated brain areas: hindbrain (C), the medulla (D), and the spinal cord (E). Note the nascent protein labeling in neuronal processes indicated in some examples (gray arrows in C, D). Scale bar\u00a0=\u00a020 \u03bcm.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** CFP Ab staining and ANL labeling were performed on WT zebrafish larvae. Shown are confocal images of the similar regions of the same dimensions (X, Y, Z) of the confocal images shown in Figure 2F. The same procedure indicated in Figure 2 was performed and the same microscopy settings were used for the imaging.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** 3 dpf larvae were incubated with 10 mM ANL for 24 hr in vivo, fixed (at 4 dpf) and clicked to a fluorescent alkyne tag to label nascent proteins in situ. Shown are single planes of CFP Ab staining and nascent\u00a0protein labeling of the regions in the images in Figure 2F. Scale bars\u00a0=\u00a020 \u03bcm.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Quantification of the average levels of nascent proteins in the habenula (data from Figure 2G). Neurons were segmented in 3D using the CFP channel. 30 to 60 neurons were segmented for each habenula and the average voxel intensity for the CFP and nascent protein synthesis channels was measured in each cell. The average neuronal fluorescence intensity in the CFP channel or the nascent protein was calculated for each larva (average data in Figure 2G). Plotted is the average of 4 ANL-treated and 3 control larvae. Bars indicate SEM. (B) Quantification of the averaged fluorescent nascent protein intensity in neurons across the entire nervous system (data from Figure 2H). More than 1000 neurons were segmented in 3D using the CFP channel (similar to Figure 2H). The average fluorescence intensity of CFP or nascent proteins was calculated for each larva (averaged data in Figure 2H). Plotted are the mean intensities of 3 larvae treated (ANL+) or not treated (ANL-) before click chemistry. **p<0.01 (0.0071 and 0.0061 for A and B respectively).\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Click chemistry was performed to label nascent proteins. Antibody staining for CFP was performed to detect cells expressing CFP (and MetRSL270G) across the larvae. Individual\u00a0neurons were segmented in 3D according to the CFP signal, before measuring nascent proteins (in the segmented ROIs). (A) Projection of the surface of segmented neurons across a larva following semi-automatic segmentation using Zen and Imaris 9.2 software (see Materials\u00a0and\u00a0methods for details). (B-G) Zoom-in on a representative ROI (white frame in A showing the raw data and segmentation. Projections of\u00a0~20 microns in depth, of the same ROI from different viewpoints (demonstrated by rotating the image (B-D)) are used to show the overlay with the surface after segmentation (E-G respectively). A ROI with a relatively low density of neurons was chosen for visualization purposes. 1805 cells were segmented in this larva (A). Yellow \u2013 surfaces (segmentation), Scale bars: A\u00a0=\u00a050 \u03bcm, B-G\u00a0=\u00a05 \u03bcm.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp7-v1.jpg)\n\n**Figure 2\u2014figure supplement 7.:** Zoom-in on a more challenging densely labeled ROI in the habenula. (A-C) Projections of the CFP channel from different viewpoints and their respective surfaces after segmentation (D-F respectively). The watershed algorithm (in Imaris) was used to separate adjacent cells. Cells that were not detected by Imaris were not included. Scale bars\u00a0=\u00a05 \u03bcm.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp8-v1.jpg)\n\n**Figure 2\u2014figure supplement 8.:** Representative images of cells exhibiting labeling of nascent proteins in neurites. Maximum intensity projections of 3\u20136 confocal planes (5.7\u201312 microns) are shown. Freely swimming larvae were incubated with ANL for 24 hr (same larvae as in Figures 2 and 3). Click chemistry was performed to label nascent proteins prior to imaging. Nascent proteins in neuronal processes were detected in different brain regions including optic tectum (A, note the staining in the neuropil in the top left corner), Mauthner cells (B, C), hindbrain (D) and forebrain (E). Gray arrows indicate neurites. Scale bars\u00a0=\u00a05 \u03bcm.\n\n### Detecting nascent proteins with different periods of labeling\n\nWe found that 24 hr of ANL exposure was sufficient to allow the detection of nascent protein signal (Figure 2). In order to determine if an even shorter incubation period would result in labeling, we incubated 3 dpf zebrafish larvae for 12 hr with the same ANL concentration (10 mM). Quantification of the average nascent protein intensity in neurons revealed significant labeling compared to the control, but these levels were significantly lower than levels observed following 24 hr of ANL incubation (Figure 3). This relatively short labeling window could thus be used for comparing protein synthesis intensities between experimental and control fish in various behavioral paradigms.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig3-v1.jpg)\n\n**Figure 3.:** Larvae were incubated with 10 mM ANL in their water bath for the indicated durations before fixation and click reaction. (A) Neurons in the habenula of MetRSL270G larvae were segmented in 3D using the CFP channel and the fnascent proteinintensity was measured in each neuron. Plotted are the average intensities of 3 larvae for each treatment (N\u00a0=\u00a03 for each treatment). Error bars indicate the SEM (N\u00a0=\u00a03). *p<0.05 (0.005 for 12 hr and 0.009 for 24 hr). (B) Representative images. Shown are maximal projections of 10 planes (~4 \u03bcm) of confocal images in the nascent proteins channel of the forebrain focusing on the olfactory bulb. Calibration bar \u2013 top left, scale bar\u00a0=\u00a010 \u03bcm.\n\n### Detection of altered neuronal protein synthesis levels following seizures\n\nWe next addressed whether the nascent protein signal was sensitive to global alterations in neural activity. The GABAergic receptor antagonist Pentylenetetrazole (PTZ) induces epileptic-like neuronal discharges and seizure-like behaviors in rodents and zebrafish (Baraban et al., 2005; Baraban et al., 2007; Naumann et al., 2010). PTZ has been shown to induce expression of immediate early genes in larval zebrafish (Baraban et al., 2005). To determine the effect of elevated neural activity and behavioral seizures on protein synthesis levels in neurons in vivo, we incubated 3 dpf MetRSL270G larvae with ANL for 12 hr and induced seizures by adding PTZ for the last 2.5 hr (Figure 4A). We then measured neuronal protein synthesis levels within single cells in two different brain regions, the spinal cord and the habenula (Figure 4B\u2013E). We segmented tens to hundreds of neurons in the spinal cord or right habenula and calculated the average protein synthesis signal in each cell (Figure 4D). Following PTZ exposure, we detected a significant (~60%)\u00a0increase in protein synthesis levels in the habenula and a modest, though not significant, increase in the spinal cord (Figure 4D\u2013E) when calculating the average intensity between several larvae.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of the experiment. Freely swimming larvae were incubated with ANL. After 10 hr incubation, PTZ was added for 2.5 hr, inducing seizures. Following fixation, whole-mount click with a fluorescent alkyne and confocal imaging were performed. (B-C) Representative images of the ANL signal in the spinal cord (B) or habenula (C). Shown are maximum projections of 4 confocal planes of the specific regions of larvae treated or non-treated with the protein synthesis inhibitor puromycin (PSI) and treated or non-treated with PTZ. (D) Quantification of the images shown in (B-C). Cells were segmented in 3D using the CFP channel, and the mean nascent protein labeling was measured in each cell using the fluorescent-alkyne channel. The dots represent the mean intensity in cells in the corresponding image (of B-C respectively). Red line \u2013 mean, whiskers - STDEV. (E) Bar plot showing the average nascent\u00a0protein intensity in 3 to 5 larvae PTZ- and PTZ+, respectively. CFP positive cells in the spinal cord or the habenula were segmented in 3D using the CFP antibody staining. The levels of newly synthesized proteins were measured using the fluorescent alkyne (similar to D). More than 100 neurons in the spinal cord and 30 neurons in the habenula were analyzed. The average intensity was calculated for each larva. Plotted are the averaged intensities for each treatment (N\u00a0=\u00a03 to 5 larvae for each treatment). Error bars indicate SEM. *p<0.05, **p<0.01***p<0.001. Scale bars\u00a0=\u00a05 \u03bcm (B, C).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Larvae were incubated with ANL and PTZ and were processed as described in Figure 4, for the ELAVL3-MetRSL270G line.\u00a0Scale\u00a0bar\u00a0=\u00a05\u00a0\u03bcm.\n\n## Discussion\n\nWe have developed a system that enables the labeling of nascent proteins in living zebrafish larvae in a cell-type-specific manner. We describe a UAS line that allows one to tag newly synthesized endogenous proteins in a cell type-of-interest simply by crossing it with any specific Gal4 driver line.\n\nGiven the importance of protein synthesis for many biological processes, labeling nascent proteins for imaging within the intact organism will be useful for future studies. Non-canonical amino acids have been used to elucidate different biological processes including protein turnover (Cohen et al., 2013), protein dynamics (Zhang et al., 2010; Schanzenb\u00e4cher et al., 2016) and local protein synthesis (Dieterich et al., 2006; Tcherkezian et al., 2010; Yoon et al., 2012). We have previously used AHA to label nascent proteins in zebrafish larvae (Hinz et al., 2012) without cell type specificity. To achieve cell-type-specific labeling in mice and other species, we have mutated the MetRS in the evolutionarily well-conserved methionine-binding pocket, resulting in cell type specificity of nascent protein labeling in vivo (Erdmann et al., 2015; Mahdavi et al., 2016; Alvarez-Castelao et al., 2017).\n\nWe detected CFP expression levels above background in all cells with ANL labeling (Figure 2). Generally, we observed a positive correlation between the intensity levels of CFP (a proxy for the MetRSL270G mutant expression) and nascent\u00a0protein, but there were a few cells detected with a very low expression of CFP and high nascent\u00a0protein\u00a0intensity or vice versa (Figure 2). The general positive correlation between CFP and nascent\u00a0protein is expected because CFP is synthesized within the cells of interest and its level of protein synthesis will likely reflect the general translational activity of the cell. Cases in which the expression of CFP is not proportional to the nascent\u00a0protein labeling may be explained by the following: the CFP labeling intensity is a result of both expression and degradation. CFP may thus\u00a0bedegraded to a greater or lesser extent in some neurons. Zebrafish larvae exhibit high levels of neural activity during swimming and other natural behaviors (Chen et al., 2018). Many neuronal activity-dependent regulatory\u00a0processes use both protein synthesis and proteasome-dependent protein degradation (Sutton and Schuman, 2006; Hinz et al., 2013; Langebeck\u2010Jensen et al., 2019; Djakovic et al., 2009; Bingol and Schuman, 2006) to remodel the proteome. Recently, evidence for the coordination of protein synthesis and proteasome dependent degradation has been observed, including the degradation of nascent proteins by a neuron-specific 20S membrane proteasome complex (for example Ramachandran et al., 2018). It is possible that dynamic translation and degradation processes result in diverging levels of CFP and other proteins.\n\nThe fact that we detect neurons in which there is strong intensity of nascent proteins with only a faint CFP signal may suggest that even a low amount of the MetRSL270G mutant is sufficient for ANL incorporation into nascent proteins. We observed variation in the nascent protein intensities between larvae and between cells within the same larva and even within the same region and between neighboring cells (Figure 2). This is consistent with previous findings visualizing fluorescently labeled newly synthesized proteins using the non-canonical amino acid AHA (Liu and Cline, 2016).\n\nANL incorporation into nascent proteins was detectable in situ following 12 hr of exposure in the swim water, circumventing the need for ANL administration through food or drink (Erdmann et al., 2015; Alvarez-Castelao et al., 2017), and allowing better control over the concentration and duration of ANL exposure. This relatively short time window opens opportunities to measure protein synthesis levels in many biological paradigms. We have tried shorter incubation durations but the signal was sparse, the signal-to noise was too low and the variability between cells and between different larvae was high, indicating that shorter incubation time is not sufficient to measure nascent protein levels under these conditions. As far as we know, the 12 hr duration demonstrated here is the shortest available time frame so far for cell-type-specific metabolic labeling.\n\nWe demonstrate that this method can be used to address biological questions by labeling nascent proteins in neurons during an induced seizure-like behavior. PTZ-induced seizure-like behavior in zebrafish larvae results in higher expression levels of immediately early genes (Hinz et al., 2012; Baraban et al., 2005). We have previously shown a general increase in protein synthesis, using the non-canonical amino acid AHA which can incorporate into nascent proteins in all cell types (Hinz et al., 2012),\u00a0following exposure of zebrafish larvae to PTZ. However, it was not possible in that study to determine whether the increased protein\u00a0synthesis\u00a0signal arose from neurons or other cell types. Here, we used PTZ to induce seizures and revealed an increase in neuronal protein synthesis. Furthermore, the specific labeling of newly synthesized proteins in neurons reduces background signals and noise from other cell types, thereby allowing us to compare different brain regions and neuron groups. For example, the habenula is a highly conserved structure that has been implicated in decision-making (Hikosaka, 2010). We found a significant increase in protein synthesis in the habenula following PTZ-induced seizures. Our findings are consistent with an increase in immediately early gene expression following PTZ-induced seizures in the habenula as has\u00a0been\u00a0reported in rats (Del Bel et al., 1998).\n\nThe method described here is robust: ANL, which is incorporated into nascent proteins, and the fluorescent alkyne used for imaging form a strong covalent bond allowing for stringent washes and hence low background signal. While the click chemistry used here precludes live imaging, the ANL incorporation takes place in vivo while the larvae are freely swimming and behaving. Therefore, the duration of the labeling can be chosen according to the studied cell-type, the protein synthesis levels (and degradation), and the biological question. The ability to label newly synthesized proteins in vivo for a pre-chosen duration and to then \u2018freeze\u2019 the result before imaging has advantages. Because of the strong stability of the fluorescently labeled newly synthesized proteins following the click reaction one can image the entire larvae, as demonstrated here. This is especially useful for labeling neural networks during dynamic physiological processes such as cumulative calcium influx activity (Fosque et al., 2015) or protein synthesis following neural activity (demonstrated here). Beyond the contribution to neuroscience, this platform can be adopted by crossing the UAS-MetRSL270G zebrafish line described here to any existing Gal4 driver line of interest.\n\nZebrafish larvae have the advantage of being both translucent and smaller than mammals, therefore allowing one to label and image nascent proteins in an entire intact brain or other tissues without the need to slice the tissue. Future experiments using cell-type-specific newly synthesized proteins in zebrafish could include investigating the loci of learning and memory formation. Protein synthesis is essential for the formation of many types of long-term memory (Davis and Squire, 1984; Agranoff et al., 1966; Flexner et al., 1962; Hinz et al., 2013; Roberts et al., 2013). The method described here, combined with zebrafish larva learning paradigms (reviewed in Roberts et al., 2013), will enable future studies to reveal the neural networks in which protein synthesis occurs during learning and memory formation. Therefore, methods combining zebrafish larva with cell-type-specific protein synthesis labeling will be widely applicable.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti GFP</td>\n      <td>Invitrogen</td>\n      <td>Cat# A11122</td>\n      <td>IF(1:600)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Chicken polyclonal anti GFP</td>\n      <td>Aves</td>\n      <td>Cat# GFP 1010</td>\n      <td>WB(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey polyclonal anti-chicken IR680</td>\n      <td>Licor</td>\n      <td>Cat# 926\u201368075</td>\n      <td>WB(1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit IR800</td>\n      <td>Licor</td>\n      <td>Cat# 925\u201332211</td>\n      <td>WB(1:10000)</td>\n    </tr>\n    <tr>\n      <td>Zebrafish line</td>\n      <td>HuC-Gal4</td>\n      <td>Stevenson, T. J. et al</td>\n      <td></td>\n      <td>Schuman lab, See Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Zebrafish line</td>\n      <td>UAS-MetRSL270</td>\n      <td>Tefor-Amagen/ This paper</td>\n      <td></td>\n      <td>Schuman lab, See Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Zebrafish line</td>\n      <td>ELAVL3-MetRSL270G</td>\n      <td>Tefor-Amagen/ This paper</td>\n      <td></td>\n      <td>Schuman lab, See Materials and methods section</td>\n    </tr>\n  </tbody>\n</table>\n\n### Zebrafish husbandry\n\nAdult fish strains AB, UAS-MetRSL270, ELAVL3-MetRSL270G and HuC-Gal4 were kept at 28\u00b0C on a 14 hr light/10 hr dark cycle, in a Techinplast Zebtec system. Embryos were obtained from natural spawning using a Techinplast breeding system, and were maintained in E3 embryo medium (5 mM NaCl, 0.17 mM KCl, 0.33 mM CaCl2, 0.33 mM MgSO4) at 28\u00b0C on a 14 hr light/10 hr dark cycle.\n\n### Constructs and transgenic zebrafish\n\nThe following plasmid was injected to wt (AB strain) eggs at one cell stage: pBT2_4xnr UAS-CFP (Tol2-4xnr UAS:cerulean-2A-MetRS-6x His \u2013Tol2). MetRS (Methionyl-tRNA synthetase (AAH57463.1) Danio rerio with mutation to L270G. The 4x non-repetitive (nr) UAS sequence was designed by the Halpern lab (Akitake et al., 2011). The following primers were used for genotyping: forward- gcaagggcgaggagctg, reverse: gctcaggtagtggttgtcg. The PCR product size was 602 bp. Huc:Gal4 was generated by the Piotrowski lab (Stevenson et al., 2012).\n\n### ANL administration\n\nAzidonorleucine (ANL) was synthesized as previously described Mahdavi et al. (2016). ANL was kept as powder and was freshly dissolved in E3 solution prior to experiments at\u00a0the\u00a0indicated concentrations (0, 5, 10 and 20 mM). For the dosage determination experiment, Konstanz wt or ELAVL3-MetRSL270G freely swimming zebrafish larvae were supplemented with ANL or mock E3 exchange for 24 hr. During the last 20 min, larvae were moved to a chamber with swimming lanes that allowed single larvae to freely swim. The positions of the larvae were recorded with a camera at 1 Hz, and tracked automatically with a Matlab script to measure swimming distance and speed. In all the fluorescent labeling experiments, the ANL concentration was 10 mM. 0.1 mM 1-phenyl 2-thiourea (PTU) was added to the E3 water at 1 dpf for all larvae in Figures 2\u20134.\n\n### Click chemistry for fluorescent tagging\n\n3\u20134 dpf old larvae were anaesthetized on ice for 45 min. Larvae were transferred to 1.5 ml tubes and washed once with clean E3. E3 was removed and replaced with 1 ml fixation solution (4% PFA, 4% Sucrose in PBS (137 mM NaCl, 2.7 mM KCl, 4.3 mM Na2HPO4, 1.4 mM KH2PO4)), and\u00a0incubated\u00a0overnight at 4\u00b0C with gentle shaking. Next, larvae were dehydrated in Methanol at \u221220\u00b0C overnight. Samples were gradually rehydrated through successive 5 min washes with 75% methanol in PBST (PBS+0.1% Tween-20), 50% methanol in PBST, 25% methanol in PBST and PBST. Samples were incubated 3 times for 5 min in PBDTT (PBST + 1% DMSO and 0.5% Triton X-100) and digested with 1 mg/ml collagenase (Sigma-Aldrich) in PBST for 45 min for permeabilization. Following one wash with PBST, larvae were post-fixed for 20 min in 4% PFA and 4% Sucrose in PBS. Samples were washed 3 times for 5 min in PBDTT and incubated for 3 hr at 4\u00b0C in blocking\u00a0buffer (5% BSA, 10% goat serum in PBDTT). Samples were then washed 3 times for at least 10 min in PBST (pH 7.8). ANL labeled proteins were tagged using a click reaction. To 1 ml PBS (pH 7.8) TBTA (Sigma-Aldrich) 1:500 (stock 200 mM in DMSO, final 0.2 mM) was added followed by a 10 s vortex, TCEP (Thermo Scientific) 1:400 (stock 40 mM in H2O, final 0.5 mM), 10 s vortex, 1:500 AlexaFluor-647-alkyne (Invitrogen, stock 2 mM in DMSO, final 2 \u03bcM), 10 s vortex, and 1:500 CuSO4 (stock 200 mM in H2O, final 0.2 mM) followed by 30 s vortex. The above click reaction buffer was immediately added to tubes containing the larvae and kept overnight in the dark, at 4\u00b0C with gentle agitation. Samples were washed 4 times for 30 min in PBDTT with 0.5 mM EDTA and twice for one hour in PBDTT and kept in PBS (pH 7.4) until mounting. For immunofluorescence, samples were incubated in blocking buffer (10% serum in PBS) for 1 hr and incubated with 1:600 rabbit anti GFP antibody (Invitrogen A11122; to detect CFP) in blocking buffer overnight with gentle agitation at 4\u00b0C. Samples were washed in PBST twice and PBS 3 times (~10 min each wash), incubated with blocking buffer for ten minutes and incubated with an Alexa-488 fluorescent secondary antibody (goat anti rabbit, ThermoFisher A1008) overnight with gentle agitation at 4\u00b0C. Samples were washed twice with PBST and PBS (pH 7.4). After click or immunofluorescence, the samples were gradually moved to glycerol through successive 5 min washes (25% glycerol in PBS, 50% glycerol in PBS, 75% glycerol in PBS) and finally 100% glycerol and kept at 4\u00b0C in dark.\n\n### BONCAT\n\nLarvae were incubated with 10 mM ANL for 24 hr. After incubation, the media was replaced with fresh E3. Larvae were sacrificed on ice-cold water (30 min). Heads were dissected using a scalpel and immediately snap frozen in tubes (1.5 ml, Eppendorf) that were pre-cooled using dry ice and stored at \u221280C until lysis. Tissue was homogenized and lysed using a pestle in lysis buffer (1% in Triton X100, 0.4% (w/v) SDS in PBS pH 7.8, 1:1000 EDTA free protease inhibitors (Calbiochem) and benzonase (Sigma, 1:1,000), and denatured at 75\u00b0C, 13,000 rpm for 10 min. Lysates were then cleared by centrifugation. BONCAT was performed as previously described (Dieterich et al., 2007). In brief, 60 \u03bcg proteins were dissolved in 120 \u03bcL PBS pH 7.8 supplemented with 0.01% SDS, 0.1% Triton, 300 \u03bcM Triazol (Sigma, 678937), 50 \u03bcM biotin-alkyne tag (Thermo, B10185) and 83 \u03bcg/mL CuBr (prepared by dilution of fresh 10 mg/mL solution in DMSO) at 4\u00b0C overnight in the\u00a0dark. Biotinylated proteins were then separated by gel electrophoresis and immunoblotted with 1:1000 chicken anti-GFP (Aves), 1:1000 rabbit anti-biotin (Cell signaling) and Donkey anti-chicken IR680, goat anti-rabbit IR800 (IB, 1:10,000, Licor) antibodies.\n\n### Microscopy\n\nLarvae were directly, or after dissection to remove the eyes and yolk sack (Figures 2\u20134), mounted on Mattek dishes with the dorsal side facing the glass bottom of the dish prior to imaging. Larvae were imaged using a Zeiss LSM880 confocal microscope and a 25X glycerol objective (NA 0.8, PSF: X 0.389, Y 0.336, Z 1.62). Spacing between z planes\u00a0=\u00a01.89 micron. 488 and 633 lasers were used for Alexa488 and Alexa647, respectively (filters: 504\u2013563\u00a0and 652\u2013702, respectively). To image the entire brain, tiling was done with 10% overlap using the ZEN program with a scaling of 0.332 micron per pixel and a 12-bit mode; tiles were stitched together using the ZEN program after imaging. In Figure 2, in order to allow for the clear visualization of 3-dimensional data of an entire larva in 2 dimensions, a collage was made to exclude non-relevant planes (e.g: in each region of the tail, only 3\u20135 planes out of\u00a0~150 contain neurons, therefore a maximal projection of the entire stack would impede a clear visualization of the neurons).\n\n### 3D fluorescence intensity analysis\n\nStitched images were imported to Imaris 9.2. Cell segmentation was conducted using CFP channel intensities. Surface segmentation of cells in the entire image was based on the Marching cube algorithm (Lorensen and Cline, 1987) using the Imaris program. In some regions where we noticed that the segmentation did not perform well, a regional segmentation was performed again using the same algorithm with a manual threshold in smaller specific ROIs. False positive objects that were not real cells, such as salt crystals, were deleted based on morphology. Splitting of touching objects was allowed using the watershed algorithm. In some cases where splitting of touching objects failed due to a high density of neurons, a few cells were inevitably considered as one. The threshold of the minimal volume was set to 10 \u03bcm3, and of the minimal \u2018sphericity\u2019 was set to 0.75. An example of segmentation in a low density ROI can be found in Figure 2\u2014figure supplement 6, and in Figure 2\u2014video 1. Segmentation of a densely labeled ROI in the habenula is demonstrated in Figure 2\u2014figure supplement 7. After segmentation in the CFP channel, the intensity values were measured in both the CFP and the ANL channels (for Figure 2) or for the ANL channel (Figures 3\u20134). For each cell, the average voxel intensity was calculated and documented. Next, based on the average cell intensities, the average intensity of cell in a region or an entire larva was calculated. Finally the mean intensity between 3 to 4 larvae was calculated for each region or entire larvae and plotted (n\u00a0=\u00a03 or 4). The error bars in all the graphs represent Standard Error of the Mean (SEM), unless otherwise noted. In Figure 4D, the bars represent SEM between cells. In all the other graphs, error bars represent SEM between the average intensities of several larvae. One-tailed, two-sample unequal variance (heteroscedastic) TTESTs were used for calculating all the p values (p).\n",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "a7f7898c-c9c4-4717-ac98-3a2541252892",
+      "submission_id": "1f0c65e7-a7d3-4f62-944f-dd37ad04c324",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vatsala Thirumalai, National Centre for Biological Sciences India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.50564.sa1](https://doi.org/10.7554/eLife.50564.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis article describes a tool for marking newly synthesized proteins in a cell-type specific manner in larval zebrafish. Such a tool would likely be of use to mark nascent proteins in a cell-type specific or tissue-specific manner in order to understand how novel protein synthesis is involved in development or disease for example.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Large scale cell-type-specific imaging of protein synthesis in a vertebrate brain\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nWhile all three reviewers agreed that this tool was useful for the zebrafish field and could be easily adopted by investigators, the fact that this method has already been established in other model organisms and is an extension of previous work diminished the overall novelty and significance of this tool. In addition, reviewers also had suggestions for improving demonstration of specificity of this tool (see full comments below).\n\nReviewer #1:\n\nShahar and Schuman apply a bio-orthogonal approach to study the dynamics and extent of protein synthesis in a cell type specific manner in zebrafish. By driving MetRSL270G expression under the ELAVL3 neuron-specific promoter, and adding the unnatural amino acid, azidonorleucine (ANL) to the swim water, the authors observe ANL incorporation indicative of new protein synthesis in neurons in the heterogenous environment of the brain and spinal cord. Using this approach. They then show that protein expression is increased upon seizure induction using the GAG receptor antagonist, PTZ. The authors suggest that the approach can, in principle, be extended to other tissues and cell types and questions, with the UAS line generated serving as a tool for the community.\n\nPreviously, the Schuman lab showed that it is possible to examine protein synthesis using a similar approach in whole larvae (Hinz et al., 2011). They now extend their previous findings to a tissue-specific manner (i.e larval brain and spinal cord neurons) and which (as they report in the Introduction) has been shown previously in other organisms. The Gal4 UAS system for cell type specific expression has been used in zebrafish for a long time. The ability to image sites of protein synthesis in the brain of intact animals post behaviour is likely to be of use to identify regions of the brain important for behaviour (- which is currently visualised in vivo by large through calcium imaging). Overall, the manuscript is straightforward and easy to understand. However, it does not represent a significant advance.\n\n\u2013 The authors should examine ANL incorporation upon inhibition of protein synthesis using cycloheximide or other protein synthesis inhibitor. This will determine if the labelling is specific.\n\n\u2013 The 12 hour incorporation window for the UNAA appears rather long in the context of a fast developing zebrafish larva. What is the half -life of ANL? And what is the shortest ANL exposure window within which incorporation can be detected. Though the 2 hour PTZ treatment shows clear differences over control larvae, a shorter ANL exposure might decrease noise from protein synthesis.\n\n\u2013 It would be helpful to discuss the advantages/disadvantages of this approach as compared to other approaches to estimate newly synthesized proteins.\n\n\u2013 Figure 4 graph D is specific for the animal shown in images B and C, but does not appear to be representative for all the animals analysed, as shown in graph E. It would be useful to do this experiment without ANL and with ANL in wild type controls to examine background autofluorescence or non-specific click reactions post PTZ incubation.\n\nReviewer #2:\n\nOr and Schuman describe a method for cell type specific evaluation of new protein synthesis in intact Zebrafish using transgene expression of a mutant MetRS, that is modified to only charge the non-canonical amino acid, azidonorleucine (ANL). This is a valuable method that will likely be widely used in the Zebrafish community. The method and analysis are described in sufficient detail to allow most investigators to apply it successfully.\n\nAddressing the following points would strengthen the paper.\n\n1) Previous studies in Drosophila suggested that expression of mutant MetRS during development was detrimental. Does use of HuC-gal4 address this problem? In addition to swimming speed, the authors should test behaviors indicative of brain function, such as sensory information processing, to address the concern of developmental toxicity.\n\n2) The data (for instance Figure 2G) indicate that NSP labeling is not consistently proportional to CFP levels, as a proxy for mutant MetRS expression. Although there are many potential reasons for this, the authors should comment on this potentially interesting observation, and in particular mention variation in rates of protein synthesis and rapid turnover of NSPs within the 24h period examined.\n\n3) It is not correct to refer to 'the intensity of protein synthesis' since NSP lifetimes can be <24h.\n\n4) Similarly 'averaged translation intensity' is not an accurate term.\n\n5) Can the authors comment on the efficiency of ANL labeling NSPs compared to other available methods?\n\n6) Is application of this method limited to Zebrafish larvae or can is be used in older animals? Does ANL penetrance to the brain change over larval development?\n\n7) The text and figure legends differ in statements about use 3 or 4 dpf larvae.\n\n8) The subsection \u201cInduced seizures result in higher protein synthesis levels in neurons\u201d refers to 2.5 h in PTZ. Figure 4A legend and schematic say 2 h.\n\n9) Subsection \u201cDetection of endogenous nascent proteins in neurons across the brain\u201d. The FUNCAT label in neuronal processes could be NSPs that were synthesized in somata and transported into processes. It is not accurate to claim demonstration of sensitivity to detect dendritic protein synthesis in vivo.\n\n10) The demonstration of the cell body segmentation in sparsely labeled brain is very nice, but segmentation using Imaris is challenging in densely labeled regions like the habenula. Can you include an example of the segmented images from habenula?\n\n11) Discussion, third paragraph. The observation that PTZ induces NSPs in habenula in Zebrafish is consistent with the previous study by Del Bel et al. in rats, not the other way around.\n\n12) Subsection \u201cZebrafish husbandry\u201d. For non-Zebrafish aficionados, it would be helpful to provide more information on the breeding strategy. For instance, how were the HuC-Gal4 and nacre animals used?\n\n13) Subsection \u201cConstructs and transgenic zebrafish\u201d. What are 'AB' eggs?\n\n14) Subsection \u201cBONCAT\u201d. 'pistil' should be 'pestle'?\n\n15) Figure 1G. The black images suggest extreme contrast settings.\n\n16) Figure 2. Figure panel labels don't all match text in figure legend.\n\n17) Figure 4D. Explain the box and whiskers and red line. Are the data plotted from a single animal, only from images shown in B and C?\n\n18) The Liu and Cline paper showing cell type analysis of AHA labeling should be cited.\n\n19) The Schanzenbacher paper is not listed numerically in the references.\n\nReviewer #3:\n\nIn this paper, Shahar and Schuman report a cell-type specific method for labeling newly synthesized proteins in zebrafish larvae. The method relies on expressing a mutated Methionyl tRNA synthetase in neurons using the well-established elav promoter. The mutated enzyme loads the unnatural amino acid azidonorleucine (ANL) instead of methionine into polypeptides. ANL can then be visualized using click-chemistry with a fluorescent alkyne. Using this protocol, authors show brain wide labeling in neurons and increase in intensity following chemically-induced seizures. As mentioned by the authors in the Introduction, cell-type specific labeling of new proteins has been shown before in C. elegans, Drosophila and mice and its establishment in zebrafish larvae is not a major advancement. All of the images in the manuscript are of fixed larvae. Given the obvious advantages of zebrafish for in vivo imaging, the paper would have been exciting if the authors were able to track novel protein synthesis in live animals. But the permeabilization steps required for click-labeling preclude such a possibility. There are other possibilities too such as cell-type specific proteomics characterization of the ANL-labeled proteins but this manuscript does not go that far.\n\nIn addition, the authors could address the following to make the manuscript stronger:\n\n1) The authors will do well to establish better the specificity of this tool by showing more control data. Figure 2A shows that there is some labeling even in wild type. Authors need to show the corresponding fluorescence image (WT+ANL+) in Figure 1G. WT+ANL+ control data must also be added to Figure 3. Additionally, even without ANL addition, there is some labeling (Figure 2A, middle lane), probably corresponding to non-specific binding of the fluorescent tag. Thus, not all the signal observed corresponds to novel protein synthesis. A quantification of this non-specific background is required.\n\n2) Related to the point above, were the ANL- samples in Figures 1 and 2 processed for click-dye labeling? Why are the images completely dark?\n\n3) In Figure 2G, authors show colocalization of CFP and click-label in confocal stacks made from 4-6 planes spanning several cell layer thickness. Single optical slices need to be shown.\n\n4) Authors report average of averages in Figures 2H and 2I. As such, the variability in signal amplitude seen in different neurons will likely be much higher than the spread shown. It is not clear how much variability is seen within one region, say habenula, in a single larva. It will also be better to show the data scatter for the bar plots shown in 2H and 2I. This is now standard practice.\n\n5) Why were the spinal cord and habenula alone chosen for the PTZ experiment?\n\n6) Authors call data in Figure 4D and E \"Protein Synthesis Level\". This is too strong \u2013 the signal likely reflects NET incorporation of ANL deriving from both synthesis and degradation of proteins.\n\n7) Supplementary Figure 3 does not seem to be referred anywhere in the text.\n\n8) There are several places where the figure panels and their description in legends or the Results section are mismatched.\n",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "77c7435b-3207-4da3-9b73-0b0b181d9f75",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C1",
+      "claim": "It has not been possible to measure endogenous protein synthesis levels in vivo in an entire vertebrate brain despite advances in methods to detect protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite advances in methods to detect protein synthesis, it has not been possible to measure endogenous protein synthesis levels in vivo in an entire vertebrate brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current capabilities in the abstract, establishing the context for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "7b6e9085-9403-4af5-b492-0387e999ae23",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C2",
+      "claim": "A transgenic zebrafish line was developed that allows for cell-type-specific labeling and imaging of nascent proteins in the entire animal.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a transgenic zebrafish line that allows for cell-type-specific labeling and imaging of nascent proteins in the entire animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this as a primary achievement of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "85025a0a-a3ed-4b6d-844f-50adc0c77c6e",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C3",
+      "claim": "Replacing leucine with glycine in the zebrafish MetRS-binding pocket (MetRS-L270G) enables cell-type-specific incorporation of azidonorleucine (ANL) during protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "By replacing leucine with glycine in the zebrafish MetRS-binding pocket (MetRS-L270G), we enabled the cell-type-specific incorporation of the azide-bearing non-canonical-amino-acid azidonorleucine (ANL) during protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the mutation and its functional consequence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "8472a5bb-2654-4ece-9097-c11f3e63e491",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C4",
+      "claim": "Newly synthesized proteins were labeled via 'click chemistry'.",
+      "claim_type": "EXPLICIT",
+      "source": "Newly synthesized proteins were then labeled via 'click chemistry'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states the method used for labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "f40ffe45-5df2-4202-9d54-ddd95257642f",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C5",
+      "claim": "A Gal4-UAS-ELAV3 line was used to express MetRS-L270G in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a Gal4-UAS-ELAV3 line to express MetRS-L270G in neurons, we measured protein synthesis intensities across the entire nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the genetic system used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "991f064c-cbcf-4cf6-98b2-038cc5b7f0af",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C6",
+      "claim": "Protein synthesis intensities were measured across the entire nervous system using the Gal4-UAS-ELAV3 line expressing MetRS-L270G.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a Gal4-UAS-ELAV3 line to express MetRS-L270G in neurons, we measured protein synthesis intensities across the entire nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this measurement was performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "200a4ed4-df8c-48fa-a2f5-20b1b3977577",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C7",
+      "claim": "Endogenous protein synthesis was visualized in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "We visualized endogenous protein synthesis and demonstrated that seizure-induced neural activity results in enhanced translation levels in neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that endogenous protein synthesis was visualized.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "abb04582-efde-4d48-b206-8da7d550b629",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C8",
+      "claim": "Seizure-induced neural activity results in enhanced translation levels in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We visualized endogenous protein synthesis and demonstrated that seizure-induced neural activity results in enhanced translation levels in neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "f379a910-fef8-4c43-ae00-843c8e320dd9",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C9",
+      "claim": "The method allows for robust analysis of endogenous protein synthesis in a cell-type-specific manner, in vivo at single-cell resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This method allows for robust analysis of endogenous protein synthesis in a cell-type-specific manner, in vivo at single-cell resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract concludes with this characterization of the method's capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "44b1c23d-a1ba-4ee6-9f5a-ca253a3095c9",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C10",
+      "claim": "Protein synthesis is critical for remodeling synaptic proteomes, especially when associated with information storage.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein synthesis is critical for remodeling synaptic proteomes, especially when this process is associated with information storage (Sutton and Schuman, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "3d366a11-14d2-4f7c-b423-6ddfa36c6c42",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C11",
+      "claim": "Chemical stimuli and changes in behavioral states alter protein expression in the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical stimuli and changes in behavioral states alter protein expression in the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "f78e69cd-17d9-4c8e-8c02-8c4dbe0c48a6",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C12",
+      "claim": "Protein synthesis during or shortly after learning is essential for the formation of long-term memory in different model organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown in different model organisms that protein synthesis, during or shortly after learning, is essential for the formation of long-term memory (Davis and Squire, 1984; Agranoff et al., 1966; Agranoff and Klinger, 1964; Costa-Mattioli et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "27a144f3-094a-434d-933c-f9b3c077c8e8",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C13",
+      "claim": "Neuronal protein synthesis is important for learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the importance of neuronal protein synthesis for many biological processes such as learning (Flexner et al., 1962; Hinz et al., 2013; Roberts et al., 2013), stress responses (Langebeck\u2010Jensen et al., 2019), and epilepsy (Brooks-Kayal et al., 1998; Hinz et al., 2012; Baraban et al., 2005; Del Bel et al., 1998), little is known about the endogenous neuronal protein synthesis levels and their changes in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "ab45837d-529b-44a8-a9b3-f8c0f9d1924e",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C14",
+      "claim": "Neuronal protein synthesis is important for stress responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the importance of neuronal protein synthesis for many biological processes such as learning (Flexner et al., 1962; Hinz et al., 2013; Roberts et al., 2013), stress responses (Langebeck\u2010Jensen et al., 2019), and epilepsy (Brooks-Kayal et al., 1998; Hinz et al., 2012; Baraban et al., 2005; Del Bel et al., 1998), little is known about the endogenous neuronal protein synthesis levels and their changes in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "212e27e5-7d50-4a08-b9db-8f0a8d04baec",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C15",
+      "claim": "Neuronal protein synthesis is important for epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the importance of neuronal protein synthesis for many biological processes such as learning (Flexner et al., 1962; Hinz et al., 2013; Roberts et al., 2013), stress responses (Langebeck\u2010Jensen et al., 2019), and epilepsy (Brooks-Kayal et al., 1998; Hinz et al., 2012; Baraban et al., 2005; Del Bel et al., 1998), little is known about the endogenous neuronal protein synthesis levels and their changes in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "72af805e-0711-43ef-84a7-821cca42d6ab",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C16",
+      "claim": "Little is known about the endogenous neuronal protein synthesis levels and their changes in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the importance of neuronal protein synthesis for many biological processes such as learning (Flexner et al., 1962; Hinz et al., 2013; Roberts et al., 2013), stress responses (Langebeck\u2010Jensen et al., 2019), and epilepsy (Brooks-Kayal et al., 1998; Hinz et al., 2012; Baraban et al., 2005; Del Bel et al., 1998), little is known about the endogenous neuronal protein synthesis levels and their changes in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "ca170049-e1b5-4826-88fa-7f3e97298614",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C17",
+      "claim": "Zebrafish exhibit a variety of complex behaviors including swimming and rheotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish are vertebrates that exhibit a variety of complex behaviors (Orger and de Polavieja, 2017) including swimming and rheotaxis (e.g. Olszewski et al., 2012; Oteiza et al., 2017; Marques et al., 2018), hunting (e.g. Bianco et al., 2011; Semmelhack et al., 2014), learning (eg. Hinz et al., 2013; Roberts et al., 2013; Aizenberg and Schuman, 2011; Kenney et al., 2017; Ahrens et al., 2012; Valente et al., 2012) and social behaviors (e.g. Hinz et al., 2013; Peichel, 2004; Oliveira, 2013; Gerlai, 2014; Teles et al., 2016; Stednitz et al., 2018; Dreosti et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "a638a3fc-98c4-4842-bc2b-34695c805752",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C18",
+      "claim": "Zebrafish exhibit hunting behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish are vertebrates that exhibit a variety of complex behaviors (Orger and de Polavieja, 2017) including swimming and rheotaxis (e.g. Olszewski et al., 2012; Oteiza et al., 2017; Marques et al., 2018), hunting (e.g. Bianco et al., 2011; Semmelhack et al., 2014), learning (eg. Hinz et al., 2013; Roberts et al., 2013; Aizenberg and Schuman, 2011; Kenney et al., 2017; Ahrens et al., 2012; Valente et al., 2012) and social behaviors (e.g. Hinz et al., 2013; Peichel, 2004; Oliveira, 2013; Gerlai, 2014; Teles et al., 2016; Stednitz et al., 2018; Dreosti et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "ef593dd8-118a-41a3-a853-1fed5afc3e01",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C19",
+      "claim": "Zebrafish exhibit learning behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish are vertebrates that exhibit a variety of complex behaviors (Orger and de Polavieja, 2017) including swimming and rheotaxis (e.g. Olszewski et al., 2012; Oteiza et al., 2017; Marques et al., 2018), hunting (e.g. Bianco et al., 2011; Semmelhack et al., 2014), learning (eg. Hinz et al., 2013; Roberts et al., 2013; Aizenberg and Schuman, 2011; Kenney et al., 2017; Ahrens et al., 2012; Valente et al., 2012) and social behaviors (e.g. Hinz et al., 2013; Peichel, 2004; Oliveira, 2013; Gerlai, 2014; Teles et al., 2016; Stednitz et al., 2018; Dreosti et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "3e319838-8077-44bb-a2e8-ff54420db530",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C20",
+      "claim": "Zebrafish exhibit social behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish are vertebrates that exhibit a variety of complex behaviors (Orger and de Polavieja, 2017) including swimming and rheotaxis (e.g. Olszewski et al., 2012; Oteiza et al., 2017; Marques et al., 2018), hunting (e.g. Bianco et al., 2011; Semmelhack et al., 2014), learning (eg. Hinz et al., 2013; Roberts et al., 2013; Aizenberg and Schuman, 2011; Kenney et al., 2017; Ahrens et al., 2012; Valente et al., 2012) and social behaviors (e.g. Hinz et al., 2013; Peichel, 2004; Oliveira, 2013; Gerlai, 2014; Teles et al., 2016; Stednitz et al., 2018; Dreosti et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "ee5c3d02-07c4-46a0-ac79-ba24d5ed56d9",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C21",
+      "claim": "A variety of neurological syndromes including epilepsy have been investigated in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a variety of neurological syndromes including epilepsy have been investigated (Kundap et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "6c9a2498-bdbc-48ae-9e6d-e2ac556f52e5",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C22",
+      "claim": "The zebrafish larval brain is small and translucent, enabling high-resolution imaging of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The zebrafish larval brain is small and translucent, enabling high-resolution imaging of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of zebrafish larvae.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "b712380c-3f7b-4b60-8846-8acb6abeb517",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C23",
+      "claim": "Monitoring protein synthesis levels with cell-type and temporal resolution has been impossible in zebrafish neurons prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, monitoring protein synthesis levels with cell-type and temporal resolution has so far been impossible in zebrafish neurons, highlighting the need for the methodology developed here (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "7bc631f0-d8ea-4f24-865c-6efc9da40867",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C24",
+      "claim": "The protein sequence of the catalytic core domain of the MetRS shows strong conservation across multiple species including Danio rerio.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein sequence of the catalytic core domain of the MetRS in a number of species including Danio Rerio shows strong conservation (green).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1B shows sequence alignment demonstrating conservation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "c2ed43a0-0330-4ff5-8122-a0644a307cfa",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C25",
+      "claim": "Leucine 270 in MetRS was mutated to Glycine to develop cell-type-specific metabolic labeling in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Leucine 270 (bold green) was mutated to Glycine to develop cell-type-specific metabolic labeling in zebrafish.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1B caption explicitly states this mutation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "a03ce80f-87b5-4790-a998-0d31e04e84b1",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C26",
+      "claim": "The wild-type MetRS allows the charging of Met that can be incorporated during translation initiation and elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "The wt MetRS allows the charging of Met (black) that can be incorporated during translation initiation and elongation (left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1C caption describes the function of wild-type MetRS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "8fdcce09-67f8-4628-bdbf-f759bdbdfe0b",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C27",
+      "claim": "The non-canonical amino acid ANL does not fit into the binding pocket of the wild-type MetRS and is not incorporated into nascent protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-canonical amino acid ANL (blue), which contains an azide group, does not fit into the binding pocket of the wt MetRS, and thus is notincorporated into nascent protein (center).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1C caption describes the inability of wild-type MetRS to charge ANL.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "367e9c38-40f0-401c-9300-2efbfb2fcbfa",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C28",
+      "claim": "The mutant MetRSL270G can charge ANL, which is then incorporated into newly synthesized proteins in cells expressing the MetRSL270G.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutant MetRSL270G can charge ANL, which is then incorporated into newly synthesized proteins (in cells expressing the MetRSL270G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1C caption describes the function of the mutant MetRS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "734a5b61-25db-4723-8304-99389fed1e37",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C29",
+      "claim": "Crossing the UAS-CFP-MetRSL270G line with any Gal4-expressing line allows for metabolic labeling of newly synthesized proteins in any accessible cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "Crossing the line with any Gal4-expressing line allows for the metabolic labeling of newly synthesized proteins in any accessible cell type.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1D caption describes the versatility of the transgenic system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "1a8d0a06-25d5-4e71-bcf0-91a50a123b19",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C30",
+      "claim": "10 mM ANL had no significant effect on larvae swimming after 24 hr of ANL exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "10 mM ANL, which had no significant effect on larvae swimming, was used in further experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1F caption states this finding based on the data shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "079aa036-bb32-4938-94f8-80540a9d8651",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C31",
+      "claim": "Fluorescently labeled nascent protein is specific to MetRSL270G larvae treated with ANL, but not in controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Projections of confocal images of zebrafish larval brains after click reactions demonstrating the specificity of fluorescently labeled nascent protein in the MetRSL270G larva treated with ANL, but not in controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1G caption describes the specificity demonstrated in the images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "47b18832-8d29-4c11-bc5b-34977b3a7d7a",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C32",
+      "claim": "Larvae maintain the ability to sense the light/dark environment, react to it and keep their natural preferences when exposed to ANL concentrations between 5 and 20 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment shows that the larvae maintain the ability to sense the light/dark environment, react to it and keep their natural preferences when exposed to ANL concentrations between 5 and 20 mM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 1B caption states this conclusion based on the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "c8316c61-afaf-4bc1-b17b-f08066e27b26",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C33",
+      "claim": "Bio-orthogonal approaches based on metabolic precursors enable the labeling of nascent proteins or protein modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Bio-orthogonal approaches based on metabolic precursors enable the labeling of nascent proteins or protein modifications (Hinz et al., 2012; Beatty et al., 2006; Laughlin et al., 2008), and have been combined with immunostaining to measure protein synthesis in specific cell types (Liu and Cline, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "d534dec1-5224-4698-88b9-c354462eaa40",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C34",
+      "claim": "Bio-orthogonal approaches have been combined with immunostaining to measure protein synthesis in specific cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Bio-orthogonal approaches based on metabolic precursors enable the labeling of nascent proteins or protein modifications (Hinz et al., 2012; Beatty et al., 2006; Laughlin et al., 2008), and have been combined with immunostaining to measure protein synthesis in specific cell types (Liu and Cline, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "949d1818-4c4b-44c1-9e93-2354f0b735bc",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C35",
+      "claim": "The wild-type MetRS can be modified to enable the charging of azidonorleucine (ANL), which cannot be charged by the wild-type MetRS.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the wild-type Methionyl-tRNA synthetase (MetRS) can be modified to enable the charging of a different azide-bearing non-canonical amino acid, the methionine analog azidonorleucine (ANL), which cannot be charged by the wild-type MetRS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the principle behind the genetic modification used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "ac712cfb-be4b-467e-b87f-6cbfb8a3d229",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C36",
+      "claim": "Cell-type-specific promoters can be used to express mutant MetRS in cell types of interest, allowing nascent proteins to be labeled via ANL administration, as demonstrated in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "By using cell-type-specific promoters, the mutant MetRS can be expressed in cell types of interest and the nascent proteins can be labeled via the administration of ANL, as has been demonstrated in Caenorhabditis elegans (Yuet et al., 2015), Drosophila melanogaster (Erdmann et al., 2015) and Mus musculus (Alvarez-Castelao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research in C. elegans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "ee704575-ec0f-4d4d-9926-a8b407463464",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C37",
+      "claim": "Cell-type-specific promoters can be used to express mutant MetRS in cell types of interest, allowing nascent proteins to be labeled via ANL administration, as demonstrated in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "By using cell-type-specific promoters, the mutant MetRS can be expressed in cell types of interest and the nascent proteins can be labeled via the administration of ANL, as has been demonstrated in Caenorhabditis elegans (Yuet et al., 2015), Drosophila melanogaster (Erdmann et al., 2015) and Mus musculus (Alvarez-Castelao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research in Drosophila.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "8067f145-316e-4a14-b097-fedf49f6e1db",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C38",
+      "claim": "Cell-type-specific promoters can be used to express mutant MetRS in cell types of interest, allowing nascent proteins to be labeled via ANL administration, as demonstrated in Mus musculus.",
+      "claim_type": "EXPLICIT",
+      "source": "By using cell-type-specific promoters, the mutant MetRS can be expressed in cell types of interest and the nascent proteins can be labeled via the administration of ANL, as has been demonstrated in Caenorhabditis elegans (Yuet et al., 2015), Drosophila melanogaster (Erdmann et al., 2015) and Mus musculus (Alvarez-Castelao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "1df0cf8d-1852-4482-acef-ae0604345e85",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C39",
+      "claim": "Overall levels of protein synthesis within neurons across the entire intact brain have not yet been measured and imaged in any vertebrate prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, overall levels of protein synthesis within neurons across the entire intact brain have not yet been measured and imaged in any vertebrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "064d5464-a8e4-4385-9ff7-121277c438b4",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C40",
+      "claim": "Existing protein synthesis reporters used for most single cell analyses rely on fluorescent tagging of individual protein species and do not measure endogenous nascent protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The existing protein synthesis reporters used for most single cell analyses rely on fluorescent tagging of individual protein species and therefore do not measure endogenous nascent protein levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "b0adb2cb-5ad1-4c4f-8f10-132fa2021eb3",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C41",
+      "claim": "This study demonstrates for the first time the ability to label and image in situ newly synthesized proteins in vivo in a cell-type-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate for the first time the ability to label and image in situ newly synthesized proteins in vivo in a cell-type-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a primary achievement of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "c194dd87-c296-4825-aab7-0833ff3985e9",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C42",
+      "claim": "Nascent neuronal proteins were visualized across the entire animal.",
+      "claim_type": "EXPLICIT",
+      "source": "We visualized nascent neuronal proteins across the entire animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an achievement of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "655a2f0a-8a84-47ce-92d8-e145a080bfa7",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C43",
+      "claim": "Combining a specific Gal4 reporter line with the UAS-MetRSL270G and adding ANL for various durations enabled cell-type-specific labeling with temporal control.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining a specific Gal4 reporter line with the UAS-MetRSL270G and adding ANL for various durations enabled cell-type-specific labeling with temporal control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "02911598-af70-4363-90f7-23cf3933990b",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C44",
+      "claim": "The protein synthesis signal is sensitive to alterations in neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrate the sensitivity of the protein synthesis signal to alterations in neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "5b5c7c10-06e6-414c-a9db-f29b9561aaa5",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C45",
+      "claim": "The zebrafish MetRS was cloned and mutated to introduce a point mutation (L270G) at a conserved position in the methionine binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "To enable cell-type-specific non-canonical amino acid tagging in zebrafish, we cloned and mutated the zebrafish MetRS to introduce a point mutation (L270G) at a conserved position in the methionine binding pocket (Figure 1B\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular biology performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "058d0285-2999-456a-b8f8-1cff81e32557",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C46",
+      "claim": "A transgenic line was developed in which the conditional expression of CFP and the MetRSL270G (separated by T2A) is under the control of the UAS enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a transgenic line in which the conditional expression of CFP and the MetRSL270G (separated by T2A) is under the control of the UAS enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the transgenic line created in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "6e2635c7-eadb-46c2-a8d7-a2b0f339f570",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C47",
+      "claim": "When UAS-CFP-MetRSL270G fish are crossed to a Gal4 line with a cell-type-specific promoter, cell-type-specific incorporation of azidonorleucine (ANL) into nascent proteins can be achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "When these fish are crossed to a Gal4 line with a cell-type-specific promoter, cell-type-specific incorporation of azidonorleucine (ANL) into nascent proteins can be achieved (Figure 1C\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functional outcome of the genetic system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "e7a399fc-bd67-485a-8f7e-38fc751cbc38",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C48",
+      "claim": "The UAS-CFP-MetRSL270G line was crossed with the ELAVL3-Gal4 pan neuronal driver line to realize cell-type-specific labeling of newly synthesized proteins in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to realize cell-type-specific labeling of newly synthesized proteins in neurons, we crossed the UAS-CFP- MetRSL270G line with a well-established pan neuronal driver Gal4 line, ELAVL3-Gal4 (Figure 1D\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific genetic cross performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "80a517c2-87e3-45a8-8129-f87e46c6df12",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C49",
+      "claim": "Zebrafish nascent proteins can be globally labeled with the non-canonical amino acid azidohomoalanine (AHA) via its addition to the swim water.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, we showed that zebrafish nascent proteins can be globally labeled with the non-canonical amino acid azidohomoalanine (AHA) via its addition to the swim water (Hinz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "580866e2-6eac-4cd2-960e-a2c9fbe82ab9",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C50",
+      "claim": "ANL concentrations of 10 mM or less did not affect larval swimming behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ANL concentrations of 10 mM or less did not affect larval swimming behavior (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the behavioral assay shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "39277d69-309e-457a-85f2-81eba41b492a",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C51",
+      "claim": "ELAVL3-MetRSL270G larvae maintained their light preference in the presence of ANL.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that the ELAVL3-MetRSL270G larvae maintained their light preference in the presence of ANL (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the behavioral assay shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "9ad6343b-5ae9-4b21-b492-ea5917598b65",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C52",
+      "claim": "Confocal images acquired across the brain revealed newly synthesized proteins in neurons in ELAVL3-MetRSL270G larvae that were incubated with ANL.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal images acquired across the brain revealed newly synthesized proteins in neurons in ELAVL3-MetRSL270G larvae that were incubated with ANL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "e79fb66e-7ba0-4a68-9e79-761092c74fa6",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C53",
+      "claim": "Only weak fluorescence was detected in WT larvae that were incubated with ANL.",
+      "claim_type": "EXPLICIT",
+      "source": "Only weak fluorescence was detected in WT larvae that were incubated with ANL, or ELAVL3-MetRSL270G larvae that were not incubated with ANL (Figure 1G, for images of single z-sections see Figure 1\u2014video 1 and Figure 1\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the control results shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "c72859a9-3b01-4844-bbcf-69cb1093564a",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C54",
+      "claim": "Only weak fluorescence was detected in ELAVL3-MetRSL270G larvae that were not incubated with ANL.",
+      "claim_type": "EXPLICIT",
+      "source": "Only weak fluorescence was detected in WT larvae that were incubated with ANL, or ELAVL3-MetRSL270G larvae that were not incubated with ANL (Figure 1G, for images of single z-sections see Figure 1\u2014video 1 and Figure 1\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the control results shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "69472fca-14d9-440a-be95-070954548875",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C55",
+      "claim": "Western blot analysis revealed an abundance of biotinylated nascent proteins, spanning various molecular weights, in head tissue from ANL-treated MetRSL270G larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis revealed an abundance of biotinylated nascent proteins, spanning various molecular weights, in head tissue from ANL-treated MetRSL270G larvae (Figure 2A, Figure 2\u2014figure supplement 1) and only low background levels of biotinylated proteins in the controls (WT ANL+, MetRSL270G ANL- in Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the Western blot results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "a89f5b7d-dccd-4119-ad8b-24235a02a5b6",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C56",
+      "claim": "Only low background levels of biotinylated proteins were detected in controls (WT ANL+, MetRSL270G ANL-).",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis revealed an abundance of biotinylated nascent proteins, spanning various molecular weights, in head tissue from ANL-treated MetRSL270G larvae (Figure 2A, Figure 2\u2014figure supplement 1) and only low background levels of biotinylated proteins in the controls (WT ANL+, MetRSL270G ANL- in Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the control results from the Western blot shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "e9bb3ea0-df6e-4b7e-8622-b05927c099f7",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C57",
+      "claim": "Nascent protein signal was detected across the nervous system including in the subpallium, habenula, anterior pretectum, optic tectum, hindbrain, medulla and the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected nascent protein signal across the nervous system including in the subpallium, habenula, anterior pretectum, optic tectum, hindbrain, medulla and the spinal cord (Figure 2, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the distribution of nascent protein signal observed in the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "fb6370e0-1eb6-44ea-ba38-4f54201b09f6",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C58",
+      "claim": "Cell somata volumes were segmented using the 3D CFP signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to quantify the nascent protein signal, we segmented the cell somata volumes using the 3D CFP signal (Figure 2\u2014figure supplements 6\u20137 and Figure 2\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the image analysis method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "945c1a7f-cc2d-4713-983d-9ee006462bd5",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C59",
+      "claim": "The average voxel intensity in the fluorescent-alkyne channel was measured to determine the level of nascent protein in each cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We then measured the average voxel intensity in the fluorescent-alkyne channel to determine the level of nascent protein in each cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quantification method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "2b6a8e1e-ccf3-49d4-8ffa-a26608f7843c",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C60",
+      "claim": "Hundreds to over two thousand cells were segmented in each larva.",
+      "claim_type": "EXPLICIT",
+      "source": "We segmented hundreds to over two thousand cells in each larva.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scale of the analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "e182443a-32e6-44f1-a893-be1c80d6a72d",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C61",
+      "claim": "The same click reaction performed on larvae that were not incubated with ANL revealed only low levels of background fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "The same click reaction performed on larvae that were not incubated with ANL revealed only low levels of background fluorescence (Figure 2C\u2013D,G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the control results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "db366fd6-b1af-40ae-a8c9-04815681a04c",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C62",
+      "claim": "Nascent protein signal was detected in neurites in some neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In some neurons, we could detect a nascent protein signal in neurites indicating the sensitivity of the method to visualize newly synthesized proteins in dendrites or axons (Figure 2\u2014figure supplement 2C\u2013D, Figure 2\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an observation from the imaging data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "ea656ad4-c5a1-440c-abca-9435cc25e1dc",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C63",
+      "claim": "Newly synthesized proteins detected in neurites could have either been synthesized in somata and moved to the processes, or could have been synthesized locally in the processes.",
+      "claim_type": "EXPLICIT",
+      "source": "These newly synthesized proteins could have either been synthesized in somata and moved to the processes, or could have been synthesized locally in the processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the neurite labeling observation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "98f00948-c06f-41dd-aa3e-4322e15ef5ae",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C64",
+      "claim": "24 hr of ANL exposure was sufficient to allow the detection of nascent protein signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 24 hr of ANL exposure was sufficient to allow the detection of nascent protein signal (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the time-course experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "c6d1d23a-881d-4c2f-a276-66927d227320",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C65",
+      "claim": "12 hr of ANL incubation resulted in significant labeling compared to the control, but these levels were significantly lower than levels observed following 24 hr of ANL incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the average nascent protein intensity in neurons revealed significant labeling compared to the control, but these levels were significantly lower than levels observed following 24 hr of ANL incubation (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the time-course experiment shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "e6561d43-7c51-427d-97c2-42b6b2d30683",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C66",
+      "claim": "The relatively short labeling window of 12 hr could be used for comparing protein synthesis intensities between experimental and control fish in various behavioral paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "This relatively short labeling window could thus be used for comparing protein synthesis intensities between experimental and control fish in various behavioral paradigms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "2331e9e0-c2a0-4a61-b2c6-60fbcfbf6b15",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C67",
+      "claim": "Pentylenetetrazole (PTZ) induces epileptic-like neuronal discharges and seizure-like behaviors in rodents and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "The GABAergic receptor antagonist Pentylenetetrazole (PTZ) induces epileptic-like neuronal discharges and seizure-like behaviors in rodents and zebrafish (Baraban et al., 2005; Baraban et al., 2007; Naumann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "7280f5c6-a896-4150-b272-15c47aa39cc0",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C68",
+      "claim": "PTZ has been shown to induce expression of immediate early genes in larval zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "PTZ has been shown to induce expression of immediate early genes in larval zebrafish (Baraban et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "234a6c00-1bf1-4692-8e38-cdcea9c8e051",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C69",
+      "claim": "Following PTZ exposure, a significant (~60%) increase in protein synthesis levels was detected in the habenula.",
+      "claim_type": "EXPLICIT",
+      "source": "Following PTZ exposure, we detected a significant (~60%) increase in protein synthesis levels in the habenula and a modest, though not significant, increase in the spinal cord (Figure 4D\u2013E) when calculating the average intensity between several larvae.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the PTZ experiment shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "7eaff060-9a21-48ea-9cd2-864265ade21f",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C70",
+      "claim": "Following PTZ exposure, a modest, though not significant, increase in protein synthesis levels was detected in the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Following PTZ exposure, we detected a significant (~60%) increase in protein synthesis levels in the habenula and a modest, though not significant, increase in the spinal cord (Figure 4D\u2013E) when calculating the average intensity between several larvae.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the PTZ experiment shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "afa31250-793b-463c-a367-9f744b6bcfd3",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C71",
+      "claim": "A system was developed that enables the labeling of nascent proteins in living zebrafish larvae in a cell-type-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We have developed a system that enables the labeling of nascent proteins in living zebrafish larvae in a cell-type-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the study's achievement in the discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "589f05e5-c1e2-4b49-bac0-7bc7b4861e47",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C72",
+      "claim": "A UAS line was described that allows one to tag newly synthesized endogenous proteins in a cell type-of-interest simply by crossing it with any specific Gal4 driver line.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe a UAS line that allows one to tag newly synthesized endogenous proteins in a cell type-of-interest simply by crossing it with any specific Gal4 driver line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the study's achievement in the discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "d5dab044-e91d-4276-b259-8ecdaf02e1cc",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C73",
+      "claim": "Labeling nascent proteins for imaging within the intact organism will be useful for future studies given the importance of protein synthesis for many biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the importance of protein synthesis for many biological processes, labeling nascent proteins for imaging within the intact organism will be useful for future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential impact of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "280da122-ec4c-4e7a-89f5-b83c032678b9",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C74",
+      "claim": "Non-canonical amino acids have been used to elucidate different biological processes including protein turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-canonical amino acids have been used to elucidate different biological processes including protein turnover (Cohen et al., 2013), protein dynamics (Zhang et al., 2010; Schanzenb\u00e4cher et al., 2016) and local protein synthesis (Dieterich et al., 2006; Tcherkezian et al., 2010; Yoon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "849831c4-fdb6-4db6-8f42-5d41f74200a1",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C75",
+      "claim": "Non-canonical amino acids have been used to elucidate protein dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-canonical amino acids have been used to elucidate different biological processes including protein turnover (Cohen et al., 2013), protein dynamics (Zhang et al., 2010; Schanzenb\u00e4cher et al., 2016) and local protein synthesis (Dieterich et al., 2006; Tcherkezian et al., 2010; Yoon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "cb952d8b-6b3f-42db-9f5b-5120c7637c32",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C76",
+      "claim": "Non-canonical amino acids have been used to elucidate local protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-canonical amino acids have been used to elucidate different biological processes including protein turnover (Cohen et al., 2013), protein dynamics (Zhang et al., 2010; Schanzenb\u00e4cher et al., 2016) and local protein synthesis (Dieterich et al., 2006; Tcherkezian et al., 2010; Yoon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "015060bf-add8-4954-b554-515e3734ef37",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C77",
+      "claim": "AHA was previously used to label nascent proteins in zebrafish larvae without cell type specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously used AHA to label nascent proteins in zebrafish larvae (Hinz et al., 2012) without cell type specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "dfb01af7-55c4-496a-b5c0-6cb2d8bbb4f4",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C78",
+      "claim": "The MetRS was mutated in the evolutionarily well-conserved methionine-binding pocket to achieve cell-type-specific labeling in mice and other species.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve cell-type-specific labeling in mice and other species, we have mutated the MetRS in the evolutionarily well-conserved methionine-binding pocket, resulting in cell type specificity of nascent protein labeling in vivo (Erdmann et al., 2015; Mahdavi et al., 2016; Alvarez-Castelao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research by the authors and collaborators.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "174da173-8863-4b66-8fb0-2f7146e86d25",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C79",
+      "claim": "CFP expression levels above background were detected in all cells with ANL labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected CFP expression levels above background in all cells with ANL labeling (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the imaging data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "787c9985-67e2-4e75-8e1c-fc536099d5a5",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C80",
+      "claim": "A positive correlation was generally observed between the intensity levels of CFP and nascent protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, we observed a positive correlation between the intensity levels of CFP (a proxy for the MetRSL270G mutant expression) and nascent protein, but there were a few cells detected with a very low expression of CFP and high nascent protein intensity or vice versa (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the quantitative analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "e68aca02-fb2e-40f9-a752-77d6340024dc",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C81",
+      "claim": "A few cells were detected with a very low expression of CFP and high nascent protein intensity or vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, we observed a positive correlation between the intensity levels of CFP (a proxy for the MetRSL270G mutant expression) and nascent protein, but there were a few cells detected with a very low expression of CFP and high nascent protein intensity or vice versa (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the quantitative analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "bc9f70c5-36f5-416f-b371-714eede70028",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C82",
+      "claim": "The general positive correlation between CFP and nascent protein is expected because CFP is synthesized within the cells of interest and its level of protein synthesis will likely reflect the general translational activity of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The general positive correlation between CFP and nascent protein is expected because CFP is synthesized within the cells of interest and its level of protein synthesis will likely reflect the general translational activity of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the observed correlation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "13b71090-0cc8-42a7-8c7c-4d961df00d9b",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C83",
+      "claim": "Cases in which the expression of CFP is not proportional to the nascent protein labeling may be explained by differential degradation of CFP in some neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Cases in which the expression of CFP is not proportional to the nascent protein labeling may be explained by the following: the CFP labeling intensity is a result of both expression and degradation. CFP may thus bedegraded to a greater or lesser extent in some neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible explanation for the observed variability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "816327d8-5bf4-4d2c-b779-18d5b9f323a2",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C84",
+      "claim": "Zebrafish larvae exhibit high levels of neural activity during swimming and other natural behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish larvae exhibit high levels of neural activity during swimming and other natural behaviors (Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "61e27431-d615-4122-ad10-6a29906f3946",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C85",
+      "claim": "Many neuronal activity-dependent regulatory processes use both protein synthesis and proteasome-dependent protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Many neuronal activity-dependent regulatory processes use both protein synthesis and proteasome-dependent protein degradation (Sutton and Schuman, 2006; Hinz et al., 2013; Langebeck\u2010Jensen et al., 2019; Djakovic et al., 2009; Bingol and Schuman, 2006) to remodel the proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "7b0123fb-7245-4eaa-9e5a-713d2aedb8a5",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C86",
+      "claim": "Evidence for the coordination of protein synthesis and proteasome dependent degradation has been observed, including the degradation of nascent proteins by a neuron-specific 20S membrane proteasome complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, evidence for the coordination of protein synthesis and proteasome dependent degradation has been observed, including the degradation of nascent proteins by a neuron-specific 20S membrane proteasome complex (for example Ramachandran et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "f92ea4ae-e0df-44dd-9c40-c1fe516f3ee1",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C87",
+      "claim": "Dynamic translation and degradation processes may result in diverging levels of CFP and other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that dynamic translation and degradation processes result in diverging levels of CFP and other proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible explanation for observed variability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "8d8e891f-b290-4ec7-be2e-26dbff868a78",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C88",
+      "claim": "Even a low amount of the MetRSL270G mutant may be sufficient for ANL incorporation into nascent proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that we detect neurons in which there is strong intensity of nascent proteins with only a faint CFP signal may suggest that even a low amount of the MetRSL270G mutant is sufficient for ANL incorporation into nascent proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the observation of strong nascent protein signal with low CFP.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "0b8b1aa0-ccdd-40e1-81fd-2115b7d3588f",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C89",
+      "claim": "Variation in nascent protein intensities was observed between larvae and between cells within the same larva and even within the same region and between neighboring cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed variation in the nascent protein intensities between larvae and between cells within the same larva and even within the same region and between neighboring cells (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the quantitative analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "ebb34cd8-bf61-4061-bb8b-cc6a9d6e06a7",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C90",
+      "claim": "The observed variation in nascent protein intensities is consistent with previous findings visualizing fluorescently labeled newly synthesized proteins using the non-canonical amino acid AHA.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous findings visualizing fluorescently labeled newly synthesized proteins using the non-canonical amino acid AHA (Liu and Cline, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "ebf94c97-19c2-4b64-b860-a78af1b7afca",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C91",
+      "claim": "ANL incorporation into nascent proteins was detectable in situ following 12 hr of exposure in the swim water.",
+      "claim_type": "EXPLICIT",
+      "source": "ANL incorporation into nascent proteins was detectable in situ following 12 hr of exposure in the swim water, circumventing the need for ANL administration through food or drink (Erdmann et al., 2015; Alvarez-Castelao et al., 2017), and allowing better control over the concentration and duration of ANL exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "2171e041-58a9-460c-aef4-3427c7abd496",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C92",
+      "claim": "The 12 hr ANL exposure circumvents the need for ANL administration through food or drink and allows better control over the concentration and duration of ANL exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "ANL incorporation into nascent proteins was detectable in situ following 12 hr of exposure in the swim water, circumventing the need for ANL administration through food or drink (Erdmann et al., 2015; Alvarez-Castelao et al., 2017), and allowing better control over the concentration and duration of ANL exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "aeaff07f-f6a0-4eea-9780-0a95775baf2a",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C93",
+      "claim": "The relatively short time window of 12 hr opens opportunities to measure protein synthesis levels in many biological paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "This relatively short time window opens opportunities to measure protein synthesis levels in many biological paradigms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "4833b150-7e1a-4230-a30f-d90066268268",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C94",
+      "claim": "Shorter incubation durations than 12 hr resulted in sparse signal, low signal-to-noise ratio, and high variability between cells and larvae, indicating that shorter incubation time is not sufficient to measure nascent protein levels under these conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We have tried shorter incubation durations but the signal was sparse, the signal-to noise was too low and the variability between cells and between different larvae was high, indicating that shorter incubation time is not sufficient to measure nascent protein levels under these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of attempts to use shorter labeling times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "8ce144b6-1c9e-4fc0-a38e-08ec790cff7f",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C95",
+      "claim": "The 12 hr duration demonstrated in this study is the shortest available time frame so far for cell-type-specific metabolic labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "As far as we know, the 12 hr duration demonstrated here is the shortest available time frame so far for cell-type-specific metabolic labeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to other methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "26c74a84-9b03-4cea-b5da-9cbc8b801bba",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C96",
+      "claim": "This method can be used to address biological questions by labeling nascent proteins in neurons during an induced seizure-like behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that this method can be used to address biological questions by labeling nascent proteins in neurons during an induced seizure-like behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a demonstration of the method's utility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "06249a68-49b3-4f5c-89b4-cf2525a9a91e",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C97",
+      "claim": "PTZ-induced seizure-like behavior in zebrafish larvae results in higher expression levels of immediately early genes.",
+      "claim_type": "EXPLICIT",
+      "source": "PTZ-induced seizure-like behavior in zebrafish larvae results in higher expression levels of immediately early genes (Hinz et al., 2012; Baraban et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "e8f1256c-a751-4ef1-86db-93e436728ae5",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C98",
+      "claim": "A general increase in protein synthesis was previously shown using the non-canonical amino acid AHA following exposure of zebrafish larvae to PTZ.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown a general increase in protein synthesis, using the non-canonical amino acid AHA which can incorporate into nascent proteins in all cell types (Hinz et al., 2012), following exposure of zebrafish larvae to PTZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "e49a1db8-b421-44cb-af9c-18f48f0b753f",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C99",
+      "claim": "It was not possible in the previous AHA study to determine whether the increased protein synthesis signal arose from neurons or other cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was not possible in that study to determine whether the increased protein synthesis signal arose from neurons or other cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the prior study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "93ea44a9-c488-4737-9432-491bba5f9c92",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C100",
+      "claim": "PTZ was used to induce seizures and revealed an increase in neuronal protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used PTZ to induce seizures and revealed an increase in neuronal protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "02a9921a-11ea-4a03-8970-9c73f0d14e69",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C101",
+      "claim": "The specific labeling of newly synthesized proteins in neurons reduces background signals and noise from other cell types, allowing comparison of different brain regions and neuron groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the specific labeling of newly synthesized proteins in neurons reduces background signals and noise from other cell types, thereby allowing us to compare different brain regions and neuron groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "5af2420b-81a7-463f-b884-12ee28144f13",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C102",
+      "claim": "The habenula is a highly conserved structure that has been implicated in decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the habenula is a highly conserved structure that has been implicated in decision-making (Hikosaka, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "e38029cc-04c0-4599-9612-c6b6e8ae67fa",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C103",
+      "claim": "A significant increase in protein synthesis was found in the habenula following PTZ-induced seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant increase in protein synthesis in the habenula following PTZ-induced seizures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "1500ea96-9404-449a-b0f4-5bf175bd93b8",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C104",
+      "claim": "The findings are consistent with an increase in immediately early gene expression following PTZ-induced seizures in the habenula as has been reported in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with an increase in immediately early gene expression following PTZ-induced seizures in the habenula as has been reported in rats (Del Bel et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research in rats.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "951056c6-67d4-43af-8ddc-a75015480684",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C105",
+      "claim": "The method described is robust: ANL and the fluorescent alkyne form a strong covalent bond allowing for stringent washes and low background signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The method described here is robust: ANL, which is incorporated into nascent proteins, and the fluorescent alkyne used for imaging form a strong covalent bond allowing for stringent washes and hence low background signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of the method's robustness.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "4a91c99c-0393-4c8c-b48e-ed20c9a1faad",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C106",
+      "claim": "While the click chemistry used precludes live imaging, the ANL incorporation takes place in vivo while the larvae are freely swimming and behaving.",
+      "claim_type": "EXPLICIT",
+      "source": "While the click chemistry used here precludes live imaging, the ANL incorporation takes place in vivo while the larvae are freely swimming and behaving.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "bce172d7-c8bd-42dd-8789-e080bfcc545d",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C107",
+      "claim": "The duration of the labeling can be chosen according to the studied cell-type, the protein synthesis levels (and degradation), and the biological question.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the duration of the labeling can be chosen according to the studied cell-type, the protein synthesis levels (and degradation), and the biological question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a flexible feature of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "e0d8ac8b-3b5c-4f60-a55f-5a8be7799c4d",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C108",
+      "claim": "The ability to label newly synthesized proteins in vivo for a pre-chosen duration and to then 'freeze' the result before imaging has advantages.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to label newly synthesized proteins in vivo for a pre-chosen duration and to then 'freeze' the result before imaging has advantages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "58fdfc71-76e0-4d2f-8d13-880c30894016",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C109",
+      "claim": "Because of the strong stability of the fluorescently labeled newly synthesized proteins following the click reaction, one can image the entire larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the strong stability of the fluorescently labeled newly synthesized proteins following the click reaction one can image the entire larvae, as demonstrated here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage enabled by the method's stability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "ea2ce8a3-3966-407b-9cbf-46d488e3404d",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C110",
+      "claim": "The platform is useful for labeling neural networks during dynamic physiological processes such as cumulative calcium influx activity or protein synthesis following neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially useful for labeling neural networks during dynamic physiological processes such as cumulative calcium influx activity (Fosque et al., 2015) or protein synthesis following neural activity (demonstrated here).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "1a93febf-c497-457f-a87b-edb9aee514f2",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C111",
+      "claim": "The platform can be adopted by crossing the UAS-MetRSL270G zebrafish line to any existing Gal4 driver line of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the contribution to neuroscience, this platform can be adopted by crossing the UAS-MetRSL270G zebrafish line described here to any existing Gal4 driver line of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the method beyond the specific experiments shown.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "f2f6186b-aeac-49f8-9750-5886399ed5ed",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C112",
+      "claim": "Zebrafish larvae have the advantage of being both translucent and smaller than mammals, allowing one to label and image nascent proteins in an entire intact brain or other tissues without the need to slice the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish larvae have the advantage of being both translucent and smaller than mammals, therefore allowing one to label and image nascent proteins in an entire intact brain or other tissues without the need to slice the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of using zebrafish for this method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "d2d284ac-f544-4f92-8dc3-054bee70fab1",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C113",
+      "claim": "Future experiments using cell-type-specific newly synthesized proteins in zebrafish could include investigating the loci of learning and memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Future experiments using cell-type-specific newly synthesized proteins in zebrafish could include investigating the loci of learning and memory formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential future application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "9e8f6449-7988-4345-8766-fb931d78f1b3",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C114",
+      "claim": "The method combined with zebrafish larva learning paradigms will enable future studies to reveal the neural networks in which protein synthesis occurs during learning and memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The method described here, combined with zebrafish larva learning paradigms (reviewed in Roberts et al., 2013), will enable future studies to reveal the neural networks in which protein synthesis occurs during learning and memory formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential future application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "eb6a4402-c4af-42cf-b1ec-5835dd158332",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "claim_id": "C115",
+      "claim": "Methods combining zebrafish larva with cell-type-specific protein synthesis labeling will be widely applicable.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, methods combining zebrafish larva with cell-type-specific protein synthesis labeling will be widely applicable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion about the potential impact of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e7d5afa1-c825-4624-8c84-d9d12388a44c",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A transgenic zebrafish line (UAS-CFP-MetRSL270G) was developed that enables cell-type-specific incorporation of ANL into nascent proteins. The L270G mutation in the conserved MetRS binding pocket allows ANL charging, and crossing with Gal4 driver lines (e.g., ELAVL3-Gal4 for neurons) enables cell-type-specific labeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C24, C25, C45-C48 collectively describe the development and validation of the transgenic system. The sequence conservation (C24), specific mutation (C25, C45), transgenic construct design (C46), and functional validation through genetic crosses (C47, C48) provide converging evidence for successful development of the tool.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "f3bf97aa-36a0-4d65-a932-684c6019d8f7",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ANL at 10 mM concentration does not significantly affect zebrafish larval behavior, including swimming speed and light preference, after 24 hr exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C32, C50, C51 are supported by behavioral data shown in Figures 1F and Figure 1\u2014figure supplement 1. The experiments tested multiple ANL concentrations and behavioral parameters, demonstrating that 10 mM ANL does not impair normal larval behavior, which is critical for validating the method's utility for in vivo studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "1b1088f7-ea3d-45b1-b233-2422ab6ff7a6",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Fluorescent labeling of nascent proteins is specific to MetRSL270G larvae treated with ANL, with minimal background in control conditions (WT+ANL or MetRSL270G without ANL).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C52-C56 are supported by confocal imaging (Figure 1G) and Western blot data (Figure 2A). The controls demonstrate specificity: WT larvae with ANL show minimal signal, as do MetRSL270G larvae without ANL, while MetRSL270G+ANL shows robust labeling across multiple molecular weights.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "00d0f2c2-1508-459a-918d-33a8f73d0649",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Nascent protein signal was detected and quantified across the entire nervous system using 3D cell segmentation based on CFP signal. Hundreds to thousands of cells were analyzed per larva, revealing a general positive correlation between CFP and nascent protein intensity, with some exceptions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60, C79-C81 describe the imaging and quantification approach. The methods are well-documented (Figure 2\u2014figure supplements 6-7), showing segmentation of large numbers of cells across multiple brain regions. The positive correlation between CFP and nascent protein (C80) with occasional exceptions (C81) is consistent with the expected biology and demonstrates the method's sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "79062feb-002b-4d9b-a1c2-2c4a60221173",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Nascent protein signal was detected in neurites of some neurons, which could represent either local synthesis or transport from the soma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 are supported by imaging data in Figure 2\u2014figure supplement 2C-D and Figure 2\u2014figure supplement 8. However, C63 appropriately acknowledges that the method cannot distinguish between local synthesis and transport, which is an honest limitation. The detection of neurite labeling demonstrates the method's sensitivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "15ec976a-3c58-4f3a-9945-c9b35833896a",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ANL labeling is detectable after 12 hr exposure, though signal is significantly lower than after 24 hr. Shorter durations (<12 hr) resulted in insufficient signal quality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C65, C91, C94 are supported by the time-course experiment in Figure 3. The data show significant labeling at 12 hr compared to controls, but lower than 24 hr (C65). The statement about shorter durations (C94) is based on attempted experiments, though the negative data are not shown. The 12 hr window represents a technical advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "5dee74c9-ad0e-4ac5-988b-01748bb445d5",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PTZ-induced seizures resulted in a significant (~60%) increase in neuronal protein synthesis in the habenula, with a modest non-significant increase in the spinal cord.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C70, C100, C103 are supported by the PTZ experiment data in Figure 4D-E. The habenula shows a statistically significant increase (p<0.01), while the spinal cord shows a trend that does not reach significance. The authors appropriately report both significant and non-significant findings, and the habenula result is consistent with prior literature on immediate early gene expression (C104).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "98cdf50b-b8e1-44d6-966f-1cd057c489f9",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior to this study, it was not possible to measure endogenous protein synthesis levels in vivo across an entire vertebrate brain with cell-type specificity and temporal resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C16, C23, C39, C40 establish the knowledge gap that motivates the study. These claims are consistent with the cited literature and accurately describe limitations of existing methods. The statement that existing reporters rely on tagging individual proteins (C40) correctly distinguishes this approach from fluorescent protein reporters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "fdfa8255-c6b1-4ea8-af70-d9fcfb7d5585",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "This study demonstrates for the first time the ability to label and image newly synthesized proteins in vivo in a cell-type-specific manner across an entire vertebrate animal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C42, C71, C72 represent the main achievement of the study. The data from Figures 1-4 collectively support this conclusion, showing cell-type-specific labeling across the entire nervous system with appropriate controls. The novelty claim is justified given the prior literature cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "df64f8fe-29d3-4b78-a888-6a14824d1588",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The positive correlation between CFP and nascent protein is expected due to CFP being synthesized in the same cells, but exceptions may be explained by differential protein degradation or the sufficiency of low MetRSL270G levels for ANL incorporation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82, C83, C87, C88 are interpretations and speculations about the observed variability in CFP/nascent protein correlation. While the reasoning is plausible and supported by citations to protein degradation literature (C85, C86), these remain hypotheses that are not directly tested. The speculation is reasonable but not experimentally validated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "90cbc910-c2b2-42a0-a995-fb1cc6993013",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Variation in nascent protein intensities was observed between larvae, between cells within larvae, and between neighboring cells, consistent with previous findings using AHA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 describe observed variability in the data (Figure 2) and compare it to prior work (Liu and Cline, 2016). The observation of cell-to-cell variability is well-documented in the figures and is consistent with biological expectations and prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "fd325cc3-9619-46d9-ada7-6aa2c4090ed4",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The 12 hr labeling duration demonstrated in this study is the shortest available time frame for cell-type-specific metabolic labeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C95 makes a comparative statement ('shortest available time frame so far') that is qualified with 'As far as we know.' While the 12 hr window is shorter than some cited methods (which use food/drink administration), a comprehensive comparison across all published cell-type-specific metabolic labeling methods is not provided. The claim may be accurate but lacks sufficient comparative data for full verification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "169d475c-b694-4c15-bc63-4d99a70f6bad",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The method's temporal control (12-24 hr labeling windows) and ability to 'freeze' labeling before imaging enables applications in various behavioral paradigms and dynamic physiological processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C92, C93, C107, C108, C110 describe advantages and potential applications of the method. These are supported by the demonstrated temporal control (Figure 3) and the PTZ experiment (Figure 4) which shows application to a dynamic process. The claims about future applications are reasonable extrapolations from the demonstrated capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "1e1350a4-cf28-4363-bb84-b43a6b0ab138",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The method is robust due to the strong covalent bond formed during click chemistry, allowing stringent washes and low background. While click chemistry precludes live imaging, ANL incorporation occurs in vivo during natural behavior, and the stability allows imaging of entire larvae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105, C106, C109 describe technical features of the method. The robustness (C105) is supported by the low background in controls (Figures 1G, 2). The limitation regarding live imaging (C106) is honestly stated. The ability to image entire larvae (C109) is demonstrated throughout the figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "263f6515-39f4-4448-9cfd-cb774faf4bac",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about protein synthesis importance, zebrafish behaviors, and brain properties establish the biological context and rationale for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C22 are background statements supported by appropriate citations to prior literature. These establish the importance of protein synthesis in various biological processes and the advantages of zebrafish as a model system. All claims are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work on bio-orthogonal labeling, MetRS mutations, and PTZ-induced seizures in various model organisms provides the foundation and context for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38, C49, C67-C68, C74-C78, C84-C86, C97-C99, C102, C104 are citations to prior literature that establish the methodological foundation and biological context. All claims are appropriately referenced and accurately represent the cited work based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "8dd39388-4f63-432e-8b71-740397f84e0c",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The biochemical mechanism involves wild-type MetRS charging Met but not ANL, while the L270G mutant can charge ANL for incorporation into nascent proteins, which are then labeled via click chemistry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C26-C28 describe the biochemical mechanism underlying the method. These are supported by the schematic in Figure 1C and are consistent with prior work on MetRS mutations cited in the paper. The mechanism is validated by the specificity controls showing no labeling in WT+ANL conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "d19c2611-89bc-49f9-96cc-355635f1f521",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The UAS-MetRSL270G line can be crossed with any Gal4 driver line to enable cell-type-specific labeling in any accessible cell type, with zebrafish larvae offering advantages of translucency and small size for whole-brain imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C43, C111, C112 describe the versatility and advantages of the system. The genetic flexibility (C29, C111) is inherent to the Gal4-UAS system and is demonstrated with the ELAVL3-Gal4 line. The advantages of zebrafish (C112) are demonstrated by the whole-brain imaging shown throughout the paper.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "7687d334-4d51-4ccd-9713-74148f59b0d6",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The method will be useful for future studies of protein synthesis in various biological processes, including learning and memory formation, and will be widely applicable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73, C113-C115 are forward-looking statements about potential applications. These are reasonable extrapolations based on the demonstrated capabilities of the method and the established importance of protein synthesis in the cited processes. However, these remain prospective claims rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "53c7008e-602c-42e0-9fe7-a611f0b60345",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The method is sensitive to alterations in neuronal activity, as demonstrated by detecting increased neuronal protein synthesis following PTZ-induced seizures, with cell-type specificity reducing background from other cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C96, C100, C101 describe the sensitivity of the method to activity-dependent changes. This is supported by the PTZ experiment (Figure 4) showing significant increases in the habenula. The advantage of cell-type specificity (C101) is a logical inference from the design, though direct comparison to non-specific labeling is not shown in this experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    },
+    {
+      "id": "e4acda2c-650b-4011-baac-1f19cee04bee",
+      "content_id": "7c1d3a81-76d1-4a60-b34e-7ad4937d6d63",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Control larvae not incubated with ANL showed only low levels of background fluorescence after click reaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is directly supported by the control images in Figure 2C-D, G-H, which show minimal signal in the absence of ANL. This is a critical control demonstrating the specificity of the labeling method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:25.583514Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7b6e9085-9403-4af5-b492-0387e999ae23",
+      "result_id": "e7d5afa1-c825-4624-8c84-d9d12388a44c"
+    },
+    {
+      "claim_id": "85025a0a-a3ed-4b6d-844f-50adc0c77c6e",
+      "result_id": "e7d5afa1-c825-4624-8c84-d9d12388a44c"
+    },
+    {
+      "claim_id": "7bc631f0-d8ea-4f24-865c-6efc9da40867",
+      "result_id": "e7d5afa1-c825-4624-8c84-d9d12388a44c"
+    },
+    {
+      "claim_id": "c2ed43a0-0330-4ff5-8122-a0644a307cfa",
+      "result_id": "e7d5afa1-c825-4624-8c84-d9d12388a44c"
+    },
+    {
+      "claim_id": "5b5c7c10-06e6-414c-a9db-f29b9561aaa5",
+      "result_id": "e7d5afa1-c825-4624-8c84-d9d12388a44c"
+    },
+    {
+      "claim_id": "058d0285-2999-456a-b8f8-1cff81e32557",
+      "result_id": "e7d5afa1-c825-4624-8c84-d9d12388a44c"
+    },
+    {
+      "claim_id": "6e2635c7-eadb-46c2-a8d7-a2b0f339f570",
+      "result_id": "e7d5afa1-c825-4624-8c84-d9d12388a44c"
+    },
+    {
+      "claim_id": "e7a399fc-bd67-485a-8f7e-38fc751cbc38",
+      "result_id": "e7d5afa1-c825-4624-8c84-d9d12388a44c"
+    },
+    {
+      "claim_id": "1a8d0a06-25d5-4e71-bcf0-91a50a123b19",
+      "result_id": "f3bf97aa-36a0-4d65-a932-684c6019d8f7"
+    },
+    {
+      "claim_id": "47b18832-8d29-4c11-bc5b-34977b3a7d7a",
+      "result_id": "f3bf97aa-36a0-4d65-a932-684c6019d8f7"
+    },
+    {
+      "claim_id": "580866e2-6eac-4cd2-960e-a2c9fbe82ab9",
+      "result_id": "f3bf97aa-36a0-4d65-a932-684c6019d8f7"
+    },
+    {
+      "claim_id": "39277d69-309e-457a-85f2-81eba41b492a",
+      "result_id": "f3bf97aa-36a0-4d65-a932-684c6019d8f7"
+    },
+    {
+      "claim_id": "079aa036-bb32-4938-94f8-80540a9d8651",
+      "result_id": "1b1088f7-ea3d-45b1-b233-2422ab6ff7a6"
+    },
+    {
+      "claim_id": "9ad6343b-5ae9-4b21-b492-ea5917598b65",
+      "result_id": "1b1088f7-ea3d-45b1-b233-2422ab6ff7a6"
+    },
+    {
+      "claim_id": "e79fb66e-7ba0-4a68-9e79-761092c74fa6",
+      "result_id": "1b1088f7-ea3d-45b1-b233-2422ab6ff7a6"
+    },
+    {
+      "claim_id": "c72859a9-3b01-4844-bbcf-69cb1093564a",
+      "result_id": "1b1088f7-ea3d-45b1-b233-2422ab6ff7a6"
+    },
+    {
+      "claim_id": "69472fca-14d9-440a-be95-070954548875",
+      "result_id": "1b1088f7-ea3d-45b1-b233-2422ab6ff7a6"
+    },
+    {
+      "claim_id": "a89f5b7d-dccd-4119-ad8b-24235a02a5b6",
+      "result_id": "1b1088f7-ea3d-45b1-b233-2422ab6ff7a6"
+    },
+    {
+      "claim_id": "e9bb3ea0-df6e-4b7e-8622-b05927c099f7",
+      "result_id": "00d0f2c2-1508-459a-918d-33a8f73d0649"
+    },
+    {
+      "claim_id": "fb6370e0-1eb6-44ea-ba38-4f54201b09f6",
+      "result_id": "00d0f2c2-1508-459a-918d-33a8f73d0649"
+    },
+    {
+      "claim_id": "945c1a7f-cc2d-4713-983d-9ee006462bd5",
+      "result_id": "00d0f2c2-1508-459a-918d-33a8f73d0649"
+    },
+    {
+      "claim_id": "2b6a8e1e-ccf3-49d4-8ffa-a26608f7843c",
+      "result_id": "00d0f2c2-1508-459a-918d-33a8f73d0649"
+    },
+    {
+      "claim_id": "174da173-8863-4b66-8fb0-2f7146e86d25",
+      "result_id": "00d0f2c2-1508-459a-918d-33a8f73d0649"
+    },
+    {
+      "claim_id": "787c9985-67e2-4e75-8e1c-fc536099d5a5",
+      "result_id": "00d0f2c2-1508-459a-918d-33a8f73d0649"
+    },
+    {
+      "claim_id": "e68aca02-fb2e-40f9-a752-77d6340024dc",
+      "result_id": "00d0f2c2-1508-459a-918d-33a8f73d0649"
+    },
+    {
+      "claim_id": "db366fd6-b1af-40ae-a8c9-04815681a04c",
+      "result_id": "79062feb-002b-4d9b-a1c2-2c4a60221173"
+    },
+    {
+      "claim_id": "ea656ad4-c5a1-440c-abca-9435cc25e1dc",
+      "result_id": "79062feb-002b-4d9b-a1c2-2c4a60221173"
+    },
+    {
+      "claim_id": "98f00948-c06f-41dd-aa3e-4322e15ef5ae",
+      "result_id": "15ec976a-3c58-4f3a-9945-c9b35833896a"
+    },
+    {
+      "claim_id": "c6d1d23a-881d-4c2f-a276-66927d227320",
+      "result_id": "15ec976a-3c58-4f3a-9945-c9b35833896a"
+    },
+    {
+      "claim_id": "ebf94c97-19c2-4b64-b860-a78af1b7afca",
+      "result_id": "15ec976a-3c58-4f3a-9945-c9b35833896a"
+    },
+    {
+      "claim_id": "4833b150-7e1a-4230-a30f-d90066268268",
+      "result_id": "15ec976a-3c58-4f3a-9945-c9b35833896a"
+    },
+    {
+      "claim_id": "234a6c00-1bf1-4692-8e38-cdcea9c8e051",
+      "result_id": "5dee74c9-ad0e-4ac5-988b-01748bb445d5"
+    },
+    {
+      "claim_id": "7eaff060-9a21-48ea-9cd2-864265ade21f",
+      "result_id": "5dee74c9-ad0e-4ac5-988b-01748bb445d5"
+    },
+    {
+      "claim_id": "93ea44a9-c488-4737-9432-491bba5f9c92",
+      "result_id": "5dee74c9-ad0e-4ac5-988b-01748bb445d5"
+    },
+    {
+      "claim_id": "e38029cc-04c0-4599-9612-c6b6e8ae67fa",
+      "result_id": "5dee74c9-ad0e-4ac5-988b-01748bb445d5"
+    },
+    {
+      "claim_id": "77c7435b-3207-4da3-9b73-0b0b181d9f75",
+      "result_id": "98cdf50b-b8e1-44d6-966f-1cd057c489f9"
+    },
+    {
+      "claim_id": "72af805e-0711-43ef-84a7-821cca42d6ab",
+      "result_id": "98cdf50b-b8e1-44d6-966f-1cd057c489f9"
+    },
+    {
+      "claim_id": "b712380c-3f7b-4b60-8846-8acb6abeb517",
+      "result_id": "98cdf50b-b8e1-44d6-966f-1cd057c489f9"
+    },
+    {
+      "claim_id": "1df0cf8d-1852-4482-acef-ae0604345e85",
+      "result_id": "98cdf50b-b8e1-44d6-966f-1cd057c489f9"
+    },
+    {
+      "claim_id": "064d5464-a8e4-4385-9ff7-121277c438b4",
+      "result_id": "98cdf50b-b8e1-44d6-966f-1cd057c489f9"
+    },
+    {
+      "claim_id": "b0adb2cb-5ad1-4c4f-8f10-132fa2021eb3",
+      "result_id": "fdfa8255-c6b1-4ea8-af70-d9fcfb7d5585"
+    },
+    {
+      "claim_id": "c194dd87-c296-4825-aab7-0833ff3985e9",
+      "result_id": "fdfa8255-c6b1-4ea8-af70-d9fcfb7d5585"
+    },
+    {
+      "claim_id": "afa31250-793b-463c-a367-9f744b6bcfd3",
+      "result_id": "fdfa8255-c6b1-4ea8-af70-d9fcfb7d5585"
+    },
+    {
+      "claim_id": "589f05e5-c1e2-4b49-bac0-7bc7b4861e47",
+      "result_id": "fdfa8255-c6b1-4ea8-af70-d9fcfb7d5585"
+    },
+    {
+      "claim_id": "bc9f70c5-36f5-416f-b371-714eede70028",
+      "result_id": "df64f8fe-29d3-4b78-a888-6a14824d1588"
+    },
+    {
+      "claim_id": "13b71090-0cc8-42a7-8c7c-4d961df00d9b",
+      "result_id": "df64f8fe-29d3-4b78-a888-6a14824d1588"
+    },
+    {
+      "claim_id": "f92ea4ae-e0df-44dd-9c40-c1fe516f3ee1",
+      "result_id": "df64f8fe-29d3-4b78-a888-6a14824d1588"
+    },
+    {
+      "claim_id": "8d8e891f-b290-4ec7-be2e-26dbff868a78",
+      "result_id": "df64f8fe-29d3-4b78-a888-6a14824d1588"
+    },
+    {
+      "claim_id": "0b8b1aa0-ccdd-40e1-81fd-2115b7d3588f",
+      "result_id": "90cbc910-c2b2-42a0-a995-fb1cc6993013"
+    },
+    {
+      "claim_id": "ebb34cd8-bf61-4061-bb8b-cc6a9d6e06a7",
+      "result_id": "90cbc910-c2b2-42a0-a995-fb1cc6993013"
+    },
+    {
+      "claim_id": "8ce144b6-1c9e-4fc0-a38e-08ec790cff7f",
+      "result_id": "fd325cc3-9619-46d9-ada7-6aa2c4090ed4"
+    },
+    {
+      "claim_id": "e6561d43-7c51-427d-97c2-42b6b2d30683",
+      "result_id": "169d475c-b694-4c15-bc63-4d99a70f6bad"
+    },
+    {
+      "claim_id": "2171e041-58a9-460c-aef4-3427c7abd496",
+      "result_id": "169d475c-b694-4c15-bc63-4d99a70f6bad"
+    },
+    {
+      "claim_id": "aeaff07f-f6a0-4eea-9780-0a95775baf2a",
+      "result_id": "169d475c-b694-4c15-bc63-4d99a70f6bad"
+    },
+    {
+      "claim_id": "bce172d7-c8bd-42dd-8789-e080bfcc545d",
+      "result_id": "169d475c-b694-4c15-bc63-4d99a70f6bad"
+    },
+    {
+      "claim_id": "e0d8ac8b-3b5c-4f60-a55f-5a8be7799c4d",
+      "result_id": "169d475c-b694-4c15-bc63-4d99a70f6bad"
+    },
+    {
+      "claim_id": "ea2ce8a3-3966-407b-9cbf-46d488e3404d",
+      "result_id": "169d475c-b694-4c15-bc63-4d99a70f6bad"
+    },
+    {
+      "claim_id": "951056c6-67d4-43af-8ddc-a75015480684",
+      "result_id": "1e1350a4-cf28-4363-bb84-b43a6b0ab138"
+    },
+    {
+      "claim_id": "4a91c99c-0393-4c8c-b48e-ed20c9a1faad",
+      "result_id": "1e1350a4-cf28-4363-bb84-b43a6b0ab138"
+    },
+    {
+      "claim_id": "58fdfc71-76e0-4d2f-8d13-880c30894016",
+      "result_id": "1e1350a4-cf28-4363-bb84-b43a6b0ab138"
+    },
+    {
+      "claim_id": "44b1c23d-a1ba-4ee6-9f5a-ca253a3095c9",
+      "result_id": "263f6515-39f4-4448-9cfd-cb774faf4bac"
+    },
+    {
+      "claim_id": "3d366a11-14d2-4f7c-b423-6ddfa36c6c42",
+      "result_id": "263f6515-39f4-4448-9cfd-cb774faf4bac"
+    },
+    {
+      "claim_id": "f78e69cd-17d9-4c8e-8c02-8c4dbe0c48a6",
+      "result_id": "263f6515-39f4-4448-9cfd-cb774faf4bac"
+    },
+    {
+      "claim_id": "27a144f3-094a-434d-933c-f9b3c077c8e8",
+      "result_id": "263f6515-39f4-4448-9cfd-cb774faf4bac"
+    },
+    {
+      "claim_id": "ab45837d-529b-44a8-a9b3-f8c0f9d1924e",
+      "result_id": "263f6515-39f4-4448-9cfd-cb774faf4bac"
+    },
+    {
+      "claim_id": "212e27e5-7d50-4a08-b9db-8f0a8d04baec",
+      "result_id": "263f6515-39f4-4448-9cfd-cb774faf4bac"
+    },
+    {
+      "claim_id": "ca170049-e1b5-4826-88fa-7f3e97298614",
+      "result_id": "263f6515-39f4-4448-9cfd-cb774faf4bac"
+    },
+    {
+      "claim_id": "a638a3fc-98c4-4842-bc2b-34695c805752",
+      "result_id": "263f6515-39f4-4448-9cfd-cb774faf4bac"
+    },
+    {
+      "claim_id": "ef593dd8-118a-41a3-a853-1fed5afc3e01",
+      "result_id": "263f6515-39f4-4448-9cfd-cb774faf4bac"
+    },
+    {
+      "claim_id": "3e319838-8077-44bb-a2e8-ff54420db530",
+      "result_id": "263f6515-39f4-4448-9cfd-cb774faf4bac"
+    },
+    {
+      "claim_id": "ee5c3d02-07c4-46a0-ac79-ba24d5ed56d9",
+      "result_id": "263f6515-39f4-4448-9cfd-cb774faf4bac"
+    },
+    {
+      "claim_id": "6c9a2498-bdbc-48ae-9e6d-e2ac556f52e5",
+      "result_id": "263f6515-39f4-4448-9cfd-cb774faf4bac"
+    },
+    {
+      "claim_id": "c8316c61-afaf-4bc1-b17b-f08066e27b26",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "d534dec1-5224-4698-88b9-c354462eaa40",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "949d1818-4c4b-44c1-9e93-2354f0b735bc",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "ac712cfb-be4b-467e-b87f-6cbfb8a3d229",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "ee704575-ec0f-4d4d-9926-a8b407463464",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "8067f145-316e-4a14-b097-fedf49f6e1db",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "80a517c2-87e3-45a8-8129-f87e46c6df12",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "2331e9e0-c2a0-4a61-b2c6-60fbcfbf6b15",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "7280f5c6-a896-4150-b272-15c47aa39cc0",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "280da122-ec4c-4e7a-89f5-b83c032678b9",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "849831c4-fdb6-4db6-8f42-5d41f74200a1",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "cb952d8b-6b3f-42db-9f5b-5120c7637c32",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "015060bf-add8-4954-b554-515e3734ef37",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "dfb01af7-55c4-496a-b5c0-6cb2d8bbb4f4",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "816327d8-5bf4-4d2c-b779-18d5b9f323a2",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "61e27431-d615-4122-ad10-6a29906f3946",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "7b0123fb-7245-4eaa-9e5a-713d2aedb8a5",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "06249a68-49b3-4f5c-89b4-cf2525a9a91e",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "e8f1256c-a751-4ef1-86db-93e436728ae5",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "e49a1db8-b421-44cb-af9c-18f48f0b753f",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "5af2420b-81a7-463f-b884-12ee28144f13",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "1500ea96-9404-449a-b0f4-5bf175bd93b8",
+      "result_id": "13dcaa5a-43c8-412c-99e3-8819ea210bc5"
+    },
+    {
+      "claim_id": "8472a5bb-2654-4ece-9097-c11f3e63e491",
+      "result_id": "8dd39388-4f63-432e-8b71-740397f84e0c"
+    },
+    {
+      "claim_id": "a03ce80f-87b5-4790-a998-0d31e04e84b1",
+      "result_id": "8dd39388-4f63-432e-8b71-740397f84e0c"
+    },
+    {
+      "claim_id": "8fdcce09-67f8-4628-bdbf-f759bdbdfe0b",
+      "result_id": "8dd39388-4f63-432e-8b71-740397f84e0c"
+    },
+    {
+      "claim_id": "367e9c38-40f0-401c-9300-2efbfb2fcbfa",
+      "result_id": "8dd39388-4f63-432e-8b71-740397f84e0c"
+    },
+    {
+      "claim_id": "734a5b61-25db-4723-8304-99389fed1e37",
+      "result_id": "d19c2611-89bc-49f9-96cc-355635f1f521"
+    },
+    {
+      "claim_id": "655a2f0a-8a84-47ce-92d8-e145a080bfa7",
+      "result_id": "d19c2611-89bc-49f9-96cc-355635f1f521"
+    },
+    {
+      "claim_id": "1a93febf-c497-457f-a87b-edb9aee514f2",
+      "result_id": "d19c2611-89bc-49f9-96cc-355635f1f521"
+    },
+    {
+      "claim_id": "f2f6186b-aeac-49f8-9750-5886399ed5ed",
+      "result_id": "d19c2611-89bc-49f9-96cc-355635f1f521"
+    },
+    {
+      "claim_id": "d5dab044-e91d-4276-b259-8ecdaf02e1cc",
+      "result_id": "7687d334-4d51-4ccd-9713-74148f59b0d6"
+    },
+    {
+      "claim_id": "d2d284ac-f544-4f92-8dc3-054bee70fab1",
+      "result_id": "7687d334-4d51-4ccd-9713-74148f59b0d6"
+    },
+    {
+      "claim_id": "9e8f6449-7988-4345-8766-fb931d78f1b3",
+      "result_id": "7687d334-4d51-4ccd-9713-74148f59b0d6"
+    },
+    {
+      "claim_id": "eb6a4402-c4af-42cf-b1ec-5835dd158332",
+      "result_id": "7687d334-4d51-4ccd-9713-74148f59b0d6"
+    },
+    {
+      "claim_id": "02911598-af70-4363-90f7-23cf3933990b",
+      "result_id": "53c7008e-602c-42e0-9fe7-a611f0b60345"
+    },
+    {
+      "claim_id": "26c74a84-9b03-4cea-b5da-9cbc8b801bba",
+      "result_id": "53c7008e-602c-42e0-9fe7-a611f0b60345"
+    },
+    {
+      "claim_id": "93ea44a9-c488-4737-9432-491bba5f9c92",
+      "result_id": "53c7008e-602c-42e0-9fe7-a611f0b60345"
+    },
+    {
+      "claim_id": "02a9921a-11ea-4a03-8970-9c73f0d14e69",
+      "result_id": "53c7008e-602c-42e0-9fe7-a611f0b60345"
+    },
+    {
+      "claim_id": "e182443a-32e6-44f1-a893-be1c80d6a72d",
+      "result_id": "e4acda2c-650b-4011-baac-1f19cee04bee"
+    }
+  ],
+  "comparisons": []
+}

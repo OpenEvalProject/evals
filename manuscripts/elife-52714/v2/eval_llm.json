@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C10",
+      "C11"
+    ],
+    "result": "Proteasome inhibition leads to a dose-dependent, coordinate reduction in neuronal protein synthesis in both cell bodies and dendrites, including in isolated neuronal processes. This effect is reversible and not due to cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7, C10-C11 are well-supported by multiple orthogonal methods (BONCAT, puromycylation), two different proteasome inhibitors, dose-response data, cell viability assays, and washout experiments. The isolated neurite experiments (C10-C11) demonstrate local proteostatic mechanisms, though the inference about feedback mechanisms functioning locally is reasonable but extends slightly beyond direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Genetic inhibition of proteasome function via overexpression of dominant-negative ubiquitin (K48R+G76A) also decreases protein synthesis, confirming that the effect is due to impaired proteasome activity rather than off-target effects of pharmacological inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 provide orthogonal validation using a genetic approach. The characterization of the K48R+G76A mutant is supported by appropriate citations (C9), and the experimental data (C8) shows reduced protein synthesis consistent with pharmacological inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The proteasome inhibition-induced reduction in protein synthesis is independent of transcription, amino acid availability, and phosphorylation of translation factors eIF4B, eIF4EBP1/2, and eIF4G.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 systematically rule out alternative mechanisms. Actinomycin D experiments (C12), amino acid measurements (C13), and western blots for multiple translation factors (C14) provide negative controls that strengthen the subsequent identification of eIF2\u03b1 as the key mediator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Proteasome inhibition causes rapid phosphorylation of eIF2\u03b1 without changing total eIF2\u03b1 levels, and this phosphorylation is causally responsible for the reduction in protein synthesis, as demonstrated by rescue with ISRIB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 establish eIF2\u03b1 phosphorylation as the mechanistic link. The time course (C15), ISRIB rescue (C17), and specificity controls (C19) provide strong causal evidence. The citation to prior work (C16, C18) appropriately contextualizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Among the four eIF2\u03b1 kinases, HRI is the primary kinase responsible for proteasome inhibition-induced eIF2\u03b1 phosphorylation in neurons. Genetic deletion of GCN2, PERK, or pharmacological inhibition of PKR does not prevent the response, while HRI knockout dramatically reduces both protein synthesis inhibition and eIF2\u03b1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C30 systematically test all four eIF2\u03b1 kinases using genetic knockouts and pharmacological inhibition. The HRI KO data (C27-C29) show dramatic but incomplete rescue, suggesting HRI is the major but not exclusive mediator. The prior literature citations (C20-C22, C26) are appropriate. The incomplete rescue in HRI KO (residual ~30% inhibition) is acknowledged but not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "HRI mRNA is the most abundant eIF2\u03b1 kinase transcript in hippocampal neurons and is localized to both somata and dendrites, but HRI protein expression is extremely low in brain compared to heme-rich tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 establish a paradox between high mRNA and low protein levels. RNA-seq data (C31), FISH validation (C32), and comparative western blots (C33) are appropriate methods. This discrepancy motivates subsequent mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Proteasome inhibition increases HRI protein levels without changing mRNA levels. HRI has an extremely short half-life (~4.2 hr) under basal conditions and is stabilized by proteasome inhibition. HRI is degraded by the 20S proteasome in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 demonstrate post-translational regulation of HRI. The ddPCR (C34), immunoprecipitation (C35), pulse-chase (C37-C38), and in vitro degradation assays (C36) are appropriate. The inability to detect HRI polyubiquitination (mentioned but not shown) is a minor weakness, though 20S proteasome can degrade some proteins in a ubiquitin-independent manner.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C78"
+    ],
+    "result": "HRI translation is severely restricted under basal conditions due to abundant rare codons in its coding sequence. Codon optimization increases HRI protein expression and reduces the polysome shift observed during proteasome inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C43-C47, C78 establish translational control via rare codons. The bi-directional expression system (C39) cleverly demonstrates differential expression from the same promoter. Codon adaptation index analysis (C44-C45) and codon-optimized construct experiments (C46-C47) provide strong support. The 86.78% percentile statistic (C45) is appropriately calculated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C48",
+      "C49",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "During proteasome inhibition, while bulk mRNAs shift from polysomes to monosomes (reflecting reduced translation), HRI mRNA paradoxically shifts to polysomes. This is explained by increased availability of charged tRNAs for rare codons when global translation is reduced. Two complementary mechanisms enhance HRI expression: protein stabilization and enhanced translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C48-C49, C79-C81 describe the paradoxical HRI mRNA behavior. Polysome profiling with ddPCR validation (C40-C42) is rigorous. The rare codon hypothesis (C80) is supported by the codon-optimized HRI failing to show the polysome shift (C81). However, the tRNA availability mechanism (C71, C80) is somewhat speculative and relies heavily on citation to Saikia et al., 2016 without direct measurement of tRNA charging states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "HRI activation following proteasome inhibition is not mediated by reactive oxygen species (ROS), nitric oxide (NO), or enhanced heme breakdown, as demonstrated by failure of ROS scavengers, NO synthase inhibitors, and heme oxygenase inhibitors to prevent protein synthesis reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 systematically rule out known HRI activation mechanisms from erythrocyte biology. Multiple inhibitors for each pathway (C52-C53) strengthen the conclusions. The negative results are important for establishing that neuronal HRI regulation differs from erythrocytes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C63",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Neurons have extremely low or undetectable free heme levels (orders of magnitude lower than blood). In vitro kinase assays demonstrate that heme inhibits HRI activity and that HRI is more active in hippocampal lysates compared to blood lysates, indicating that low neuronal heme levels favor constitutive HRI activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59, C63, C85-C87 establish the heme-dependent regulation mechanism. Direct heme measurements (C55-C56) show dramatic differences between neurons and blood. In vitro kinase assays with recombinant proteins (C57) and cellular lysates (C58-C59) provide mechanistic validation. The quantitative heme measurements (hippocampus: 36\u00b18 fmol/\u03bcg vs blood: 126\u00b118 pmol/\u03bcg) represent ~3000-fold difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C88"
+    ],
+    "result": "Exogenous hemin rescues the proteasome inhibition-induced decrease in protein synthesis and reduces eIF2\u03b1 phosphorylation. This effect is HRI-dependent, as hemin has no effect on basal protein synthesis in HRI knockout neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C88 provide definitive causal evidence linking low heme to HRI activity. The hemin rescue experiments (C60-C61) and HRI KO control (C62) are well-designed. This is perhaps the strongest evidence that heme availability regulates neuronal HRI activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "In neurons, the cytoplasmic environment is permissive for constitutive HRI activity upon expression. Neurons expressing appreciable HRI levels exhibit significantly reduced protein synthesis, and small increases in HRI expression have significant impacts on translation, explaining why HRI expression is normally maintained at low levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 demonstrate HRI's potent effect on neuronal translation. The overexpression experiments (C65) and correlation analysis (C66) support the conclusion. The inference about cellular pressure to keep HRI low (C67) is reasonable given the data, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C68",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose a three-step mechanism for proteostatic feedback: (i) proteasome inhibition stabilizes short-lived HRI protein, (ii) low neuronal heme causes constitutive HRI activation leading to eIF2\u03b1 phosphorylation and reduced translation initiation, (iii) reduced global translation increases charged rare tRNA availability, further enhancing HRI translation. This mechanism coordinates protein synthesis and degradation and functions both globally and locally in neuronal processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73, C68, C89-C91 synthesize the findings into a coherent model. Steps (i) and (ii) are well-supported by direct experimental evidence. Step (iii) regarding tRNA availability (C71) is more speculative, relying on inference and citation rather than direct measurement. The model is internally consistent and explains the observations, though some mechanistic details remain to be tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Despite high HRI mRNA levels, HRI protein is expressed at very low levels under basal conditions, suggesting strong cellular pressure to limit HRI expression. HRI levels increase upon proteasome inhibition, consistent with proteasomal degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 reiterate the mRNA-protein discrepancy and its regulation. These claims synthesize earlier findings (C31-C38) and are well-supported by the experimental data. The inference about 'cellular pressure' (C76) is reasonable but somewhat anthropomorphic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In erythrocytes, HRI regulates globin synthesis in response to heme availability to maintain proper hemoglobin stoichiometry (2\u03b1:2\u03b2:4 heme), which is critical because imbalanced components are cytotoxic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe established erythrocyte biology from prior literature. These are appropriately cited background claims (C82 cites Han et al., 2001) and represent established knowledge (C83-C84). They provide important context for understanding the novelty of neuronal HRI function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C95",
+      "C96"
+    ],
+    "result": "HRI is the major kinase responsible for proteasome inhibition-induced feedback regulation of neuronal protein synthesis, though other eIF2\u03b1 kinases may play roles when HRI is absent or during prolonged proteasome inhibition. Physiological and pathophysiological conditions causing proteasome dysfunction may favor HRI expression and activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92, C95-C96 make broader interpretations and predictions. C95 is well-supported by the HRI KO data. However, C96 is speculative about other kinases' roles, and C92 extrapolates to pathophysiological conditions without direct evidence. The incomplete rescue in HRI KO (~30% residual inhibition) suggests other mechanisms exist but these are not characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "All four eIF2\u03b1 kinases have been associated with proteasome inhibition-induced eIF2\u03b1 phosphorylation in non-neuronal cell types, and mTOR pathway activation has also been linked to protein synthesis reduction following proteasome inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 accurately cite prior literature (Jiang and Wek, 2005; Yerlikaya et al., 2008; Zhang et al., 2010, 2014). These provide important context showing that the neuronal mechanism differs from other cell types. The citations appear accurate based on the descriptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "HRI's role in neuronal function is poorly explored, but it has been linked to synaptic protein translation and learning. Proteasome dysfunction is central to neurodegenerative diseases, and increased eIF2\u03b1 phosphorylation is found in Alzheimer's disease brains. Prion infection and ischemic stroke also inhibit proteasomes, while hemorrhagic stroke liberates heme in the brain. The authors suggest HRI expression and heme regulation should be considered in neurodegeneration and iron dyshomeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 discuss implications and prior literature. The citations appear appropriate (C97-C98: Ramos-Fern\u00e1ndez et al., 2016; ILL-Raga et al., 2013; C99-C104: various disease-related papers). However, C105 is speculative about considering HRI in disease contexts. These claims provide important context but don't present new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Protein synthesis and degradation via the ubiquitin-proteasome system both play important roles in synaptic function and plasticity. In neurons, proteome regulation occurs in cell bodies, dendrites, and axons. Alterations in these processes are implicated in many disease states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 provide background context from established literature with appropriate citations (Holt et al., 2019; Sutton and Schuman, 2006; Bingol and Schuman, 2006; Tai and Schuman, 2008; Ramachandran and Margolis, 2017; Ciechanover and Brundin, 2003; Labbadia and Morimoto, 2015). These are well-established facts that motivate the study.",
+    "result_type": "MINOR"
+  }
+]

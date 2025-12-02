@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors developed and validated VAMP-seq to measure the abundance of 2,695 VKOR missense variants in cultured human cells. The assay uses eGFP-tagged VKOR variants where properly folded variants maintain high fluorescence while misfolded variants are degraded. The library covered 92.5% of possible missense variants with high reproducibility (mean Pearson's r = 0.73) and validation experiments showed strong concordance with flow cytometry and Western blot measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C33-C43 collectively demonstrate successful development and validation of VAMP-seq for VKOR. The experimental design is clearly described (C33-C35), controls show expected behavior (C37-C38), library coverage is high (C39), replicates are well-correlated (C40), and independent validation by flow cytometry (C42) and Western blot (C43) confirm the scores. The data support the claimed measurement of 2,695 variants (C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors developed a gamma-glutamyl carboxylation reporter assay to measure VKOR variant activity in HEK293 cells with both VKORC1 and VKORC1L1 knocked out. The assay measured activity for 697 missense variants (21.5% of possible variants) across six replicates with moderate reproducibility (mean Pearson's r = 0.62), showing that most variants had wild-type-like activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe the activity assay development and results. The cell line engineering is documented (C44), functionality is demonstrated (C45), and the final dataset is quantified (C46). While the correlation between replicates is lower than for abundance (r=0.62 vs 0.73), this is still acceptable for biological assays. The observation that most variants have WT-like activity (C47) is consistent with the data shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Multiple lines of evidence support a four transmembrane domain topology for human VKOR. Sliding window analysis of charged vs. aliphatic substitutions revealed four regions where charged substitutions profoundly reduced abundance and activity. Evolutionary coupling analysis of 6,910 sequences predicted four helices overlapping 70/82 residues in the bacterial structure (p=3.26\u00d710\u207b\u00b2\u00b3) and identified antiparallel contacts between TMD1-TMD2 and TMD1-TMD4 consistent only with a four-helix topology. Computational folding yielded a structure similar to bacterial VKOR (RMSD=2.58\u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C48-C55 provide converging evidence for four transmembrane domains. The functional data (C48-C50) independently identify four minima matching transmembrane regions. The evolutionary coupling analysis (C51-C52) provides orthogonal computational support with statistical significance. The predicted tertiary contacts (C54-C55) are diagnostic for four-helix topology and inconsistent with three-helix models. The multiple independent lines of evidence strongly support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Analysis of specific activity (activity/abundance ratio) identified 11 functionally constrained positions organized around catalytic cysteines C132 and C135 that define the VKOR active site. Six of these positions overlap with previous vitamin K docking predictions. Of four conserved cysteines, only three (C43, C132, C135) are absolutely required for activity, as C51 substitutions caused only modest activity loss despite all C51 substitutions decreasing abundance, possibly due to disruption of the C51-C132 disulfide bond important for folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C67-C73 describe active site identification and cysteine requirements. The specific activity metric appropriately identifies functionally important positions (C67), and overlap with prior docking studies (C68) provides validation. The differential requirement for cysteines is well-supported: C51 shows modest activity loss (C70) but strong abundance effects (C71), consistent with its role in a folding-critical disulfide bond (C72-C73). The conclusion that only three of four cysteines are absolutely required is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Hierarchical clustering of abundance scores identified four groups of positions with distinct mutational patterns that map to spatially distinct structural regions. Group 1 positions (including K30, R33, R35, R37) showed increased abundance upon substitution, violating the positive-inside rule. Group 4 positions (G19, Y88, I141, L145) showed catastrophic abundance loss and had dramatically lower solvent accessibility, forming the protein core. The lowest mode of VKOR's trimodal abundance distribution consisted almost exclusively of deleterious transmembrane domain substitutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 describe structural interpretation of abundance data. The clustering analysis (C58) reveals biologically meaningful groups that correspond to structural features (C59). The positive-inside rule violation (C60-C62) is well-established in membrane protein biology and provides mechanistic insight. The correlation between low solvent accessibility and mutational intolerance (C63-C64) is expected for core residues. The explanation for trimodal distribution (C65-C66) is logical and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Analysis of putative ER retention motifs showed that the dilysine motif (K159-K161) is essential for VKOR abundance, with nearly all variants at K159 (14/18) and K161 (17/19) showing low abundance, while the diarginine motif (R98-R100) showed less stringent requirements with only 6/19 R98 and 7/14 R100 variants having low abundance. The authors infer that the dilysine motif at positions 159-163 is essential for VKOR ER localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C77 describe ER retention motif analysis. The abundance data (C74-C75) clearly show differential effects between the two motifs. However, the inference about ER localization (C77) is not directly tested\u2014no localization experiments were performed (acknowledged in C74). While the reasoning is plausible given the coupling between localization and degradation, this remains an inference rather than a demonstrated result. Direct localization experiments would be needed to confirm this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Classification of 215 curated human VKOR variants showed that 25% of missense variants have reduced abundance or activity. Of 193 variants classified for abundance, 60% were WT-like, 30 were low abundance, and 12 were high abundance. The known pathogenic variant R98W was low abundance. Of 54 variants classified for activity, only one (A115V) showed low activity with WT-like abundance. The warfarin sensitivity variant W5X was low abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C78-C88 describe human variant classification. The 25% figure (C13) is supported by the detailed breakdown (C81-C83). Controls behave as expected: synonymous variants are mostly WT-like (C79), nonsense variants are low abundance (C80), and known pathogenic/sensitivity variants show expected phenotypes (C84, C88). The identification of A115V as having low activity but WT-like abundance (C86-C87) demonstrates the assays can distinguish these phenotypes. The classifications are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Warfarin resistance variants span a range of abundances with a distribution not different from missense variants generally (Kolmogorov-Smirnov test p=0.438). Five resistance variants had low abundance, one (A26T) had high abundance, and five tested variants (R58G, W59L, V66M, G71A, N77S) all had WT-like activity. The authors conclude that warfarin resistance arises largely from variants that block warfarin binding rather than from increased abundance or activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 analyze warfarin resistance mechanisms. The statistical test (C90) appropriately shows resistance variants don't have systematically altered abundance. The observation that tested resistance variants have WT-like activity (C93) combined with varied abundance (C89, C91-C92) supports the conclusion that altered drug binding is the primary mechanism (C94). This is consistent with structural understanding of warfarin binding and the high IC50 values mentioned in the discussion. The inference is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Median abundance scores correlate with the apparent free energy of membrane insertion (\u0394\u0394Gapp) for different amino acids. TMD3 shows high mutational tolerance with many WT-like substitutions, which may be explained by its favorable insertion energy predicted by both \u0394G prediction server and TopGraph.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 relate abundance data to membrane insertion energetics. The correlation with published insertion energies (C56) validates the abundance assay and shows it captures thermodynamic principles. The observation about TMD3 tolerance (C57) is supported by both the data and independent computational predictions of favorable insertion energy. This provides mechanistic insight into the mutational tolerance patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The introduction establishes background knowledge about VKOR including its role in the vitamin K cycle, inhibition by warfarin, contribution to warfarin dosing variability (~25%), clinical variants causing disease or altered drug response, lack of human structure, conflicting topology models, and the importance of four conserved cysteines whose orientation differs between proposed topologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C14-C32 present established background knowledge supported by appropriate citations. These claims describe the biological context, clinical significance, and open questions that motivate the study. The citations to prior work appear appropriate and the factual claims about VKOR function, warfarin mechanism, sequence identity to bacterial homologs, and conflicting topology models are well-established in the literature.",
+    "result_type": "MINOR"
+  }
+]

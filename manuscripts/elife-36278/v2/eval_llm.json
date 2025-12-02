@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The study generated draft genomes from three placozoan haplotypes (H4, H6, H11) collected from Hawaii and Spain. Quality control measures including metagenomics binning and BUSCO assessment indicate minimal contamination in the assembled scaffolds used for gene prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C63-C65 describe the sampling, assembly, and quality control of new placozoan genomes. The methods are clearly documented with specific locations and dates (C63-C64), and quality metrics in Table 1 support the lack of contamination (C65). These are standard genomic methods appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Orthology assignment from 59 proteomes yielded 4294 gene trees, from which 1388 well-aligned orthologues were obtained. A subset of 430 most-informative orthologues was selected based on tree-likeness scores, yielding a 73,547 amino acid matrix with 37.55% gaps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 describe the computational pipeline for orthologue identification and matrix construction. The methods are standard in phylogenomics, with appropriate filtering steps and clear reporting of matrix characteristics. The tree-likeness scoring approach (C23) is properly cited to Misof et al., 2013.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Phylogenetic analysis of the 430-gene matrix places Cnidaria and Placozoa as sister groups with full posterior probability under CAT+GTR+\u03934 (Bayesian) and with marginal support under C60+LG+FO+R4 (ML). This topology is robust to removal of newly-added placozoan genomes and shows little internal branch diversity within Placozoa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 present the primary phylogenetic result with appropriate statistical support values and sensitivity analyses. The use of site-heterogeneous models (CAT+GTR) is appropriate for deep phylogenetic questions. The robustness test (C28) strengthens confidence that the result is not driven solely by the new data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Quartet-based concordance analyses show no strong phylogenetic conflicts among gene trees, but internode certainty metrics near 0 for key clades including Cnidaria+Placozoa suggest that support for ancient relationships may be masked by gene-tree estimation errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 appropriately apply concordance metrics to assess gene tree conflict. The low internode certainty values (C30) indicate genuine uncertainty in the phylogenetic signal, which the authors correctly interpret as potentially reflecting gene-tree estimation error rather than true biological conflict. This nuanced interpretation is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Compositional heterogeneity of amino-acid frequencies is a known source of phylogenetic error not modeled by CAT+GTR. Previous work shows placozoans and choanoflagellates deviate strongly from mean metazoan amino-acid composition, possibly due to GC content differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 correctly cite established knowledge about compositional bias as a systematic error source. The citations to multiple studies (C31) support this general principle, and the specific observation about placozoans/choanoflagellates (C32) is properly attributed to Nosenko et al., 2013. The speculation about GC content (C33) is appropriately tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Dayhoff-6 recoding of the 430-gene matrix recovers full support for Cnidaria+Placozoa under CAT+GTR, with the only major topological change being Porifera (rather than Ctenophora) as sister to all other animals. Similar recoding effects have been observed in other studies and interpreted as evidence for compositional bias affecting Ctenophora placement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 describe the effect of alphabet recoding on phylogenetic inference. The Dayhoff-6 recoding is a standard approach to mitigate compositional bias. The consistency with other studies (C36-C37) provides external validation. However, the interpretation that recoding necessarily corrects bias (rather than introducing different biases) remains debated in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Multiple research groups have consistently reported strong support for Planulozoa (Cnidaria+Bilateria) under CAT+GTR. A 303-gene BUSCO matrix constructed in this study also shows full support for Planulozoa in both amino-acid and Dayhoff-6 recoded analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 accurately summarize prior literature and present new analyses that replicate the Planulozoa result. The BUSCO-based matrix (C39) provides an independent test using a different gene selection strategy, and the consistency with published work (C38) is well-documented with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Both the 430-gene and 303-gene BUSCO matrices fail posterior predictive tests for compositional homogeneity, with the BUSCO matrix failing more severely (z-scores 330-340 vs 176-187). The difference in z-scores is largely attributable to placozoans, with additional contributions from choanoflagellates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 present posterior predictive test results with specific quantitative values from Table 2 and Figure 3C. The tests appropriately assess model adequacy, and the identification of specific taxa driving compositional heterogeneity (C42) provides mechanistic insight. The more severe failure of the BUSCO matrix is notable and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "A null-simulation test identifies 55% (764/1388) of genes as compositionally biased at \u03b1=0.10. This test is less prone to Type II errors than the conventional \u03c7\u00b2 test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 describe a rigorous test for compositional bias applied to individual genes. The high proportion of biased genes (55%) is striking and well-quantified. The citation to Foster, 2004 (C44) appropriately supports the methodological choice. The conservative \u03b1 threshold strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Genes passing the compositional bias test show strong support for Cnidaria+Placozoa, while genes failing the test show strong support for Cnidaria+Bilateria (Planulozoa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 present the key experimental result demonstrating that phylogenetic signal depends on compositional bias. This is a direct test of the hypothesis that compositional heterogeneity drives support for Planulozoa. The opposing results from test-passing vs test-failing genes provide compelling evidence for systematic error. Figure 4 supports these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In the test-failing matrix, CAT+GTR analysis supports Porifera-sister in both amino-acid and Dayhoff-6 alphabets, while profile mixture models support Ctenophora-sister. The difference between models need not reflect compositional heterogeneity, as both assume a single composition vector, but CAT+GTR better accommodates site-heterogeneous substitution patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 provide important insight into model differences. The observation that CAT+GTR and profile mixture models give different results even when both assume compositional homogeneity (C49) is well-reasoned and properly cited. This distinguishes compositional bias from other forms of model inadequacy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Dayhoff-6 recoding impacts only the test-passing matrix, where it shifts support from Ctenophora-sister to Porifera-sister and diminishes support for Placozoa+Cnidaria, possibly reflecting information loss from alphabet reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe differential effects of recoding on the two gene sets. The observation that recoding affects test-passing but not test-failing genes is interesting and well-documented in Figure 4. The speculation about information loss (C51) is appropriately tentative and acknowledges the shorter matrix length as a potential confounding factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Mean trimmed alignment length may be a hidden variable related to phylogenetic discordance, with test-passing and 430-gene matrices having shorter alignments than test-failing and BUSCO matrices. Alignment length has been shown to predict other phylogenetically relevant metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53 identify a potential confounding variable but acknowledge uncertainty about its significance. While the correlation between alignment length and compositional bias test results is noted, no analysis is presented to determine whether length independently affects phylogenetic inference or is merely correlated with compositional properties. This requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The phylogenetic link between cnidarians and placozoans seen in compositionally unbiased gene sets requires further testing with other analyses and data modalities such as rare genomic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 appropriately acknowledges that the Cnidaria+Placozoa result, while supported by the compositionally unbiased gene set, requires independent validation. This is a reasonable and scientifically conservative statement. The suggestion of rare genomic changes as an alternative data type is appropriate for testing deep phylogenetic relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Support for Cnidaria+Bilateria can be assigned to compositional heterogeneity as a systematic error source. Depending on orthologue selection, strong support can be obtained for either Cnidaria+Placozoa or Cnidaria+Bilateria using site-heterogeneous models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 summarize the main findings of the study. The demonstration that gene selection based on compositional bias testing yields opposing phylogenetic results (C71) provides strong evidence that compositional heterogeneity is a systematic error source (C70). This is the central contribution of the paper and is well-supported by the analyses in C43-C46.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors argue that placozoans should not be dismissed as irrelevant to understanding early bilaterian evolution despite their simplicity. They advocate for testing homology hypotheses by including placozoans in comparisons with cnidarians and bilaterians, noting recent methodological progress in placozoan research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 present the authors' perspective on the evolutionary significance of placozoans. This is appropriately framed as interpretation rather than established fact. The citations to recent methodological advances (C59) support the feasibility of the proposed research agenda. The argument for equal consideration of placozoans as an outgroup (C57) is logically sound given the phylogenetic results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "If Cnidaria+Placozoa is correct, homologous characters between Bilateria and Cnidaria must have originated earlier in animal evolution and should either occur cryptically in placozoans or have been lost. This has implications for paleobiological scenarios and molecular clock estimates of early animal evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 present logical inferences from the phylogenetic hypothesis. The reasoning is sound: if placozoans are sister to Cnidaria+Bilateria, then shared cnidarian-bilaterian characters must predate the placozoan divergence (C60-C61). The implications for paleobiology (C62) are appropriately cited and represent reasonable consequences of the phylogenetic revision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Placozoans are simple microscopic animals with six morphological cell types (though more are apparent via single-cell RNA-seq), lacking conventional organ systems but showing coordinated behavior. They reproduce asexually in lab conditions, with sexual reproduction remaining elusive despite genetic evidence of recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide background on placozoan biology, all properly cited to primary literature. These are established facts about placozoan anatomy, physiology, and reproduction that contextualize the phylogenetic study. The citations are appropriate and the claims accurately represent current knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Early molecular analyses struggled to place Placozoa phylogenetically but revealed high cryptic diversity (up to 27% 16S rRNA divergence). A 2008 genome analysis supported Placozoa as sister to Cnidaria+Bilateria (Planulozoa) and revealed a surprisingly bilaterian-like developmental gene toolkit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 accurately summarize prior work on placozoan phylogenetics and genomics, with appropriate citations. The paradox of simple morphology with complex gene content (C13) is well-established in the literature and properly attributed to Dunn et al., 2015. This provides essential context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The major controversy in metazoan phylogenetics concerns whether Porifera or Ctenophora is sister to other animals. Different studies support different positions, with debates over artifacts, gene selection effects, and implications for trait evolution. New placozoan data have been slow to emerge during this controversy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 provide comprehensive background on the Porifera vs Ctenophora debate with extensive appropriate citations. This contextualizes why resolving placozoan position matters and why compositional bias is a concern. The observation that placozoan data have lagged (C19) motivates the current study.",
+    "result_type": "MINOR"
+  }
+]

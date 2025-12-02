@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "TMC1 mediates a background leak current in outer hair cells (OHCs). Wild-type OHCs exhibit a background current (Im) of ~73 pA in Na+-containing solution that is reduced when Na+ is replaced with NMDG+, demonstrating ion channel-mediated conductance. This background current is markedly diminished in Tmc1-knockout OHCs (~18 pA vs ~71 pA in wild-type).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C24 provide converging evidence from multiple experimental approaches (ion substitution, voltage-clamp analysis, knockout comparison) demonstrating that TMC1 is essential for a background leak current in OHCs. The data are internally consistent and show appropriate controls (NMDG substitution to isolate ion channel-mediated current).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Overexpression of wild-type TMC1 increases the background current in OHCs. Exogenously expressed TMC1 localizes to the soma, and overexpression of TMC1_WT increases IBG ~2.5-fold (43 pA) compared to controls (EGFP: 18 pA, TMC1_dn: 16 pA), demonstrating that TMC1 functionally contributes to leak conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 demonstrate gain-of-function evidence supporting TMC1's role in leak conductance. The use of appropriate controls (EGFP, deafness mutant) and the dose-dependent relationship between TMC1 expression and current amplitude strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "TMC2 does not contribute to the background leak current, while LHFPL5 is required. The leak current is absent in Lhfpl5-knockout OHCs but unaffected in Tmc2-knockout OHCs at P1, P3, and P6. Overexpression of TMC2 does not alter the current baseline, and TMC2 localizes to hair bundles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 provide clear negative controls demonstrating specificity for TMC1 over TMC2, and establish that LHFPL5 functions in the same pathway as TMC1. The temporal analysis across developmental stages (P1, P3, P6) and overexpression experiments strengthen the conclusion. However, C33 relies on data not shown, which is a minor weakness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The TMC1-mediated leak current is distinct from the resting open MET channel current. Mechanical closure of hair bundles or pharmacological blockade with DHS does not eliminate the leak current (ILeak), which persists at ~51 pA in wild-type and ~17 pA in Tmc1-knockout OHCs. The leak current is predominantly localized to hair bundles, as removal of hair bundles reduces ILeak from 48 pA to 10 pA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C47 provide strong evidence that the leak current is mechanistically distinct from the MET current through multiple independent approaches (mechanical closure, pharmacological blockade, hair bundle removal). The experiments are well-controlled and the conclusions are appropriately conservative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Specific amino acids in TMC1 are critical for leak conductance. Cysteine substitutions at G411, N447, D528, and D569 nearly abolished ILeak, while T532C partially restored it and M412C behaved like wild-type. TMC1_WT restored leak current in Tmc1-knockout OHCs, but TMC1_dn did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 demonstrate structure-function relationships through mutagenesis experiments with appropriate controls. The differential effects of mutations on leak vs MET currents (shown in supplemental data) support the conclusion that these are distinct mechanisms. The M412C result is particularly interesting as it dissociates leak function from the Beethoven deafness phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The leak current and MET current have different molecular mechanisms. MTSET treatment did not affect the leak current in OHCs expressing cysteine-substituted TMC1 constructs, despite changing MET current amplitude in M412C-expressing cells. The cysteine replacements showed inconsistent patterns between leak and MET currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 provide evidence for distinct mechanisms through differential sensitivity to MTSET modification. The comparison between leak and MET current responses to the same mutations is compelling, though the inference of 'different molecular mechanisms' (C57) could be more precisely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The leak conductance is inhibited by MET channel blockers but with lower affinity. DHS, dTC, and amiloride inhibit the leak current with IC50 values 5-30-fold higher than for the MET channel. Trivalent cations (Gd3+, La3+) also show differential blocking: Gd3+ IC50 is 66 \u03bcM for MET vs 524 \u03bcM for leak; La3+ IC50 is 259 \u03bcM for MET vs 531 \u03bcM for leak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 provide systematic pharmacological characterization demonstrating that leak and MET channels share some pharmacological properties but with distinct sensitivities. The dose-response curves and IC50 determinations are appropriately quantified, supporting the conclusion of mechanistic differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The leak channel has distinct ionic permeability properties, particularly for Ca2+. Most cations (Li+, Ba2+, Zn2+, Co2+, Mg2+) conduct ILeak similar to Na+, except Cs+ (slightly larger) and Ca2+ (blocks at 75 mM). The leak current is highly sensitive to [Ca2+]o, increasing when Ca2+ declines and decreasing when Ca2+ escalates, with Ca2+ providing an inhibitory function distinct from the MET channel's Ca2+ permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 provide comprehensive ionic permeability analysis demonstrating distinct properties of the leak channel, particularly the inhibitory effect of Ca2+. The comparison to published MET channel permeability data (C70) strengthens the conclusion. The dose-response relationships are well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The TMC1-mediated leak current modulates membrane excitability and action potential firing in inner hair cells (IHCs). Tmc1-knockout IHCs show hyperpolarized resting membrane potential, absence of spontaneous action potential firing, and require ~20 pA more injected current to induce firing compared to wild-type. The firing rate is lower in Tmc1-knockout IHCs with stepped current injection, though similar maximal rates are reached with larger currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C83 demonstrate the physiological relevance of the leak current through current-clamp recordings in IHCs. The experiments show clear effects on membrane potential and excitability with appropriate controls. The smaller leak current in IHCs vs OHCs (C79) is noted and attributed to different K+ channel expression, which is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The TMC1-mediated leak current exhibits a tonotopic gradient along the cochlear coil that is coupled to the MET current gradient. The leak current increases from apex to base in wild-type OHCs but this gradient is abolished in Tmc1-knockout OHCs. High [Ca2+]o (35 mM) blocks the leak current and severely blunts the tonotopic gradient of MET current amplitude. The leak current amplitude increases developmentally from P3 to P6 to P14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 demonstrate that the leak current follows the tonotopic organization of the cochlea and is functionally coupled to the MET current gradient. The experiments manipulating [Ca2+]o to dissect the relationship between leak and MET currents are particularly insightful. The developmental time course matches TMC1 expression patterns from the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Extracellular Ca2+ modulates both leak conductance and MET channel properties. High [Ca2+]o (35 mM) reduces unitary MET channel current to ~5 pA in both low-frequency and high-frequency OHCs, eliminating the tonotopic gradient in unitary conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 provide single-channel analysis supporting the conclusion that Ca2+ coordinately regulates leak and MET channel properties. The elimination of the tonotopic gradient at the single-channel level strengthens the mechanistic link between leak and MET currents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "TMC1 has a non-MET role in mammals by mediating a leak conductance that regulates tonotopy and membrane excitability. At least four amino acids are critical for leak conductance, the leak is inhibited by MET channel blockers, TMC1 deficiency hyperpolarizes resting membrane potential and abolishes spontaneous firing in IHCs, and removal of leak conductance abolishes the gradient of MET conductances in OHCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 synthesize the major findings of the study. The evidence from multiple experimental approaches (knockout, overexpression, mutagenesis, pharmacology, electrophysiology) converges to support the conclusion that TMC1 mediates a functionally important leak conductance distinct from its MET channel role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "TMC proteins commonly upregulate cellular excitability across diverse organisms. Leak conductance regulates neuronal excitability in the nervous system, TMC orthologues function diversely in other species according to expression patterns, and the results support the hypothesis that TMC proteins commonly upregulate excitability in processes from sensory transduction to motor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 place the findings in broader evolutionary and functional context. The claims are supported by appropriate citations to the literature on TMC function in invertebrates and general principles of leak conductance. The inference (C103) is reasonable given the data and literature, though it remains a hypothesis requiring further testing across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The leak conductance differs from MET conductance in multiple properties despite both involving TMC1. The leak current does not stem from resting open MET channels, shows different patterns of conductance change with amino acid substitutions, is insensitive to MTSET while MET current is sensitive, shares antagonists with MET channels but at different affinities (5-10-fold higher IC50), and is blocked by high extracellular Ca2+ while MET channels are not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C114 systematically document the differences between leak and MET conductances. The multiple lines of evidence (mechanical/pharmacological separation, mutagenesis, pharmacology, ion permeability) converge to support the conclusion that these are mechanistically distinct conductances. The M412K Beethoven mouse data (C110) provides additional support from the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The TMC1-mediated leak conductance exhibits tonotopic organization parallel to the MET current. The leak current exists in Tmc2-knockout but not Tmc1- or Lhfpl5-knockout OHCs, consistent with literature showing gradient loss in Tmc1/Lhfpl5 but not Tmc2 knockouts. Both leak and MET conductances increase in wild-type but decrease in Tmc1-knockout OHCs along the cochlear coil, coinciding with graded TMC1 expression. High [Ca2+]o abolishes both leak current and MET response gradient, reflecting different working mechanisms for the two channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C124 integrate the tonotopic findings with the literature and demonstrate coordinate regulation of leak and MET conductances. The experiments manipulating Ca2+ to dissect the mechanisms are well-designed. The inference that leak and MET channels have 'different working mechanisms to [Ca2+]o' (C123) is supported by the differential dose-response relationships shown in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "A working model proposes that extra TMC1 proteins not at the MET site functionally couple with leak channels. There are increasing numbers of TMC molecules (8-20) per MET site from low- to high-frequency OHCs, but not all TMC1 proteins localize to MET sites where only up to two MET channel complexes exist. The model suggests TMC1 functionally incorporates into both leak and MET channels rather than being the pore of either, but this hypothesis requires further structural and functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C129 present a speculative working model based on the data and literature. While the model is consistent with the observations (graded TMC1 expression, graded leak conductance, limited number of MET channel complexes), it remains a hypothesis. The authors appropriately acknowledge (C129) that structural and functional studies are needed to test this model. The claim that TMC1 is not the pore of either channel contradicts some prior literature suggesting TMC1 is the MET channel pore.",
+    "result_type": "MINOR"
+  }
+]

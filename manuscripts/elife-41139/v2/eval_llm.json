@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C134",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The MEN integrates spatial and temporal signals at different steps of the signaling pathway. High mitotic CDK activity prevents MEN activation in metaphase even when a SPB moves into the bud (C60). APC/C-Cdc20 dependent cyclin degradation and FEAR network activation of Cdc14 lower CDK activity to permit MEN activation (C61). CDK antagonism targets downstream MEN kinases Cdc15 and Mob1-Dbf2, not the GTPase Tem1 (C62), preventing feedback loop initiation (C63). This creates a logical 'AND gate' requiring both SPB movement into the bud AND lowering of CDK activity (C64, C134, C161).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65, C134, C157-C161 are strongly supported by multiple experimental approaches including live cell imaging (Figures 1, 4, 5), biochemical assays (Figures 2, 3, 6), and genetic manipulations. The data consistently demonstrate that MEN activation requires both spatial (spindle position) and temporal (CDK inactivation) signals integrated at different pathway steps. The cdc15-7A mob1-2A double mutant phenotype (C155-C157) provides particularly strong evidence for CDK phosphorylation of downstream kinases as the inhibitory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Movement of a SPB into the bud during metaphase is insufficient to activate the MEN. In cdc23-1 mutants arrested in metaphase, SPB movement into the bud caused only weak, inconsistent Mob1 association with SPBs (C71), Cdc14 was not released from the nucleolus (C72), and cells failed to exit mitosis (C73). Spindle elongation induced by cohesin inactivation (mcd1-1) also failed to activate the MEN in metaphase-arrested cells (C82-C85). Cdc20 depletion prevented MEN activation regardless of spindle elongation (C86-C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C88 are well-supported by live cell imaging data (Figure 1C-F) showing that metaphase-arrested cells fail to activate the MEN despite SPB movement into the bud. Multiple experimental conditions (cdc23-1, cdc23-1 mcd1-1 mad1\u0394, Cdc20 depletion) consistently demonstrate this phenotype. The weak Mob1 association observed (C74) suggests partial MEN responsiveness to spindle position, but insufficient for full activation, supporting the conclusion that additional temporal signals are required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101"
+    ],
+    "result": "The FEAR network contributes to timely MEN activation but cannot explain metaphase MEN inhibition. FEAR network inactivation causes a consistent 15-20 min delay in MEN activation (C90-C95), while cdc14-3 mutants show a 30 min delay (C96). However, FEAR network inhibition by non-degradable Pds1 delays MEN activation by only 20 min (C100), whereas Cdc20 depletion completely prevents MEN activation (C99), demonstrating that APC/C-Cdc20 has an additional role beyond FEAR network activation (C101).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C101 are supported by multiple experimental approaches including synchronous release experiments (Figures 2, 3) and live cell imaging (Figure 3B-D). The consistent 15-20 min delay across different FEAR network mutants (GAL-PDS1dB\u0394, esp1-1, slk19\u0394, spo12\u0394 bns1\u0394) provides strong evidence for the FEAR network's role in timely MEN activation. The comparison between FEAR network inhibition and Cdc20 depletion (Figure 4A) clearly demonstrates an additional APC/C-Cdc20 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "High CDK activity is sufficient to inhibit the MEN. Overexpression of non-degradable Clb2 (Clb2dB\u0394) prevented MEN activation during anaphase as judged by reduced Mob1 association with SPBs (C103) and failure to form new buds (C104). Combining Clb2dB\u0394 overexpression with cdc14-3 completely abolished Mob1 binding to SPBs (C105), demonstrating that high mitotic CDK activity prevents MEN activation during metaphase (C106).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by live cell imaging data (Figure 4B-C, Figure 4\u2014figure supplement 1) showing that Clb2dB\u0394 overexpression prevents MEN activation. The additive effect with cdc14-3 (C105) strengthens the conclusion that CDK activity directly inhibits the MEN. However, the mechanism by which Clb2dB\u0394 prevents MEN activation is not fully elucidated in these experiments alone\u2014the phosphorylation of downstream kinases is demonstrated in subsequent experiments (C143-C157).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C119",
+      "C120",
+      "C121",
+      "C132",
+      "C133"
+    ],
+    "result": "Exit from mitosis depends on both mitotic CDK activity and spindle position. In cdc20-1 mutants, lowering CDK activity with clb2-VI caused spindle position-dependent mitotic exit (C119-C120), with exit occurring only when the nucleus moved into the bud. Deletion of BUB2 in cdc20-1 mutants caused delayed, partially spindle position-dependent exit (C110-C113), confirming GAP-independent MEN inhibition by CDK (C114). Exit in cdc20-1 clb2-VI cells required MEN activity, as cdc15-2 prevented exit (C132-C133).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C133 are strongly supported by live cell imaging experiments (Figure 5A-F) using Cdc3 localization as a mitotic exit marker and the novel NLSCdc14 assay to measure MEN activity. The spindle position dependence of mitotic exit in cdc20-1 clb2-VI cells (C120) and the requirement for MEN activity (C132-C133) provide compelling evidence for the integration of spatial and temporal signals. The long delay in cdc20-1 bub2\u0394 cells (C113) supports GAP-independent CDK inhibition of the MEN.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "CDK inhibits the MEN by phosphorylating multiple MEN kinases. Cdc15 has 7 CDK phosphorylation sites and Mob1 has 2 (C143-C144). Mutation to alanine (cdc15-7A, mob1-2A) prevents CDK phosphorylation (C145). In cdc20-1 metaphase arrest, 21% of cdc15-7A cells and 52% of mob1-2A cells exited mitosis in a spindle position-dependent manner (C146-C149). The cdc15-7A mob1-2A double mutant showed additive effects with 80% of cells exiting when the nucleus moved into the bud (C155), but only 15% when it remained in the mother (C156).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C156 are well-supported by live cell imaging experiments (Figure 6A-D) showing that preventing CDK phosphorylation of Cdc15 and Mob1 allows spindle position-dependent mitotic exit in metaphase-arrested cells. The additive effect of combining cdc15-7A and mob1-2A (C154-C155) provides strong evidence that CDK phosphorylates multiple MEN kinases to inhibit the pathway. The 15% exit rate in cells where the nucleus remained in the mother (C156) is appropriately attributed to transient, unobserved SPB excursions (C150), though this remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "DNA damage prevents MEN activation through multiple mechanisms beyond high CDK activity. Deletion of BUB2 increased mitotic exit in DNA damage-arrested cells (cdc13-1, cdc9-1, HU treatment) (C136, C140), but combining clb2-VI with DNA damage did not increase exit (C137), indicating additional inhibitory mechanisms (C138). Previous work showed DNA damage activates the MEN GAP Bub2-Bfa1 (C139), likely representing this additional mechanism (C142).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C142 are supported by live cell imaging data (Figure 5G) showing differential effects of BUB2 deletion versus clb2-VI in DNA damage conditions. The observation that clb2-VI does not promote exit in DNA damage-arrested cells (C137), unlike in cdc20-1 cells (C119-C120), provides strong evidence for additional inhibitory mechanisms. The interpretation that Bub2-Bfa1 activation by DNA damage represents this mechanism (C142) is reasonable given the cited literature (C139), though not directly tested in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "A novel NLSCdc14 assay specifically reports MEN-dependent Cdc14 control. The MEN kinase Dbf2-Mob1 phosphorylates the NLS of Cdc14 (C124), and release of NLSCdc14 from nucleus to cytoplasm depends on MEN activity (C125). In slk19\u0394 mutants, NLSCdc14 export was delayed by 20 min (C126), consistent with the FEAR network delay. The time difference between full-length Cdc14 release and NLSCdc14 export was smaller in FEAR mutants than wild-type (C128), demonstrating that NLSCdc14 specifically reports MEN activity (C127).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C131 are well-supported by live cell imaging data (Figure 5\u2014figure supplement 1, Figure 5E-F). The validation experiments showing MEN-dependence (C125) and the differential timing in FEAR network mutants (C126-C128) provide strong evidence that this assay specifically measures MEN activity. This novel assay is then successfully used to demonstrate MEN activation in various genetic backgrounds (C129-C131), supporting the main conclusions about signal integration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C8",
+      "C9",
+      "C66",
+      "C67"
+    ],
+    "result": "Serial signal integration provides a rationale for multi-step signaling pathways. The authors propose that regulating the MEN cascade in series decreases susceptibility to noise (C162), with downstream CDK dependence insulating against premature spindle movement (C163). They suggest signal integration rather than signal amplification explains why signal transduction pathways are multi-step processes (C164, C9, C67), and that this represents a generalizable principle in GTPase signaling (C8, C66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C164, C8-C9, C66-C67 are speculative proposals extending beyond the experimental data. While the experimental evidence for serial signal integration in the MEN is strong, the broader claims about noise reduction (C162-C163) and generalizability to other GTPase pathways (C8, C66) lack direct experimental support. The proposal that signal integration rather than amplification explains multi-step pathways (C164, C9, C67) is an interesting hypothesis but would require additional theoretical or experimental validation across multiple systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "CDK regulation creates anaphase-specific ultrasensitivity in MEN signaling. Positive feedback loops (MEN-Cdc14) and double-negative feedback loops (CDK-MEN) create ultrasensitive responses (C165-C166), but this ultrasensitivity is isolated to anaphase due to APC/C-Cdc20 dependence (C167). APC/C-Cdc20 activates Cdc14 through FEAR and degrades cyclins (C168-C169), priming the MEN for robust anaphase signaling (C170). Without FEAR, the Cdc14 feedback loop is disrupted (C173); without APC/C-Cdc20 cyclin degradation, the CDK-MEN feedback is weighted toward CDK activity (C174).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C174 integrate experimental findings with established principles of feedback loop dynamics. The experimental data showing weak, inconsistent MEN activation in metaphase (C171-C172) and the delays in FEAR network mutants (C173) and Cdc20-depleted cells (C174) support the model. However, the ultrasensitivity itself is not directly measured\u2014the claims rely on established knowledge about feedback loops (C165-C166) combined with the experimental demonstration of feedback loop components and their regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "MEN regulatory signals control multiple pathway steps, protecting against inappropriate activation. Previous work focused on Tem1 regulation by spindle position and DNA damage (C175-C176), but this study reveals regulation at every pathway step (C177). Cdc15 is regulated by Cdc5 and CDK (C178-C179), and Mob1-Dbf2 by CDK (C180). The cdc15-7A mob1-2A phenotype indicates this protects against spindle movements during metaphase arrest (C181), which occur physiologically (C182-C185). Even transient SPB excursions could activate Tem1 inappropriately (C186-C187), making downstream CDK inhibition essential (C188).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C188 are well-supported by the experimental data, particularly the cdc15-7A mob1-2A double mutant analysis (Figure 6). The observation that wild-type cells arrest in metaphase at appreciable frequency with spindle movement into the bud (C184-C185) provides physiological relevance. The interpretation that 15% of cdc15-7A mob1-2A cells exit without obvious spindle movement reflects transient excursions (C186-C187) is reasonable but remains speculative. The overall conclusion that multi-level regulation protects against inappropriate MEN activation (C188) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "Additional MEN components may be regulated by CDKs. Mass spectrometry studies detected CDK-consistent phosphorylation on many MEN components including Bfa1, Cdc5, Cdc14, Lte1, Nud1, Tem1, and Dbf2 (C190). Tem1 harbors five putative CDK consensus motifs (C191), but mutation of these sites caused partial loss of Tem1 function (C192), suggesting the possibility of additional CDK regulation beyond Cdc15 and Mob1 (C189).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C189-C192 acknowledge limitations and suggest future directions. The mass spectrometry data (C190) provides correlative evidence for additional CDK phosphorylation sites, but functional validation is lacking. The observation that Tem1 CDK site mutations cause loss of function (C192) complicates interpretation and prevents definitive conclusions about CDK regulation of Tem1. The speculation about additional CDK targets (C189) is reasonable given the phenotypic similarity between cdc15-7A mob1-2A and clb2-VI, but requires further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "Serial signal integration may be conserved in Hippo pathway family members. The MEN is a member of the Hippo pathway family (C193), with conserved core components but fast-evolving signaling (C194-C195). In fission yeast, the SIN GTPase Spg1 responds to spindle position (C200) and is inhibited by CDK (C201), suggesting serial integration may occur (C199). The mammalian Hippo pathway responds to multiple signals (C202), and the MEN offers a paradigm for how integration could occur (C203).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C193-C203 are largely speculative, extending the findings to other systems without direct experimental evidence. The established knowledge about Hippo pathway conservation (C193-C195) and the cited evidence for SIN regulation (C200-C201) provide some support for the speculation about serial integration in fission yeast (C199). However, the proposal that this represents a general principle in Hippo signaling (C198, C203) requires experimental validation in other systems. The mammalian Hippo pathway's response to multiple signals (C202) is consistent with the possibility but does not demonstrate serial integration.",
+    "result_type": "MINOR"
+  }
+]

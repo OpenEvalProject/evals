@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study characterized facial phenotypes in 18,032 individuals across seven cohorts using 78 Euclidean distances derived from 13 facial landmarks. Phenotype analysis revealed that most facial traits follow normal distribution, show significant sex and age effects explaining up to 21% of variance, and demonstrate high heritability (mean h\u00b2=0.52-0.55) in twin studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide comprehensive phenotype characterization with appropriate statistical validation (Shapiro-Wilk test, C3), quantified effects of covariates (C4), and twin-based heritability estimates from two independent cohorts (C5-C6). The methodology is clearly described and results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Discovery GWAS meta-analysis in 10,115 Europeans identified 24 genetic loci at suggestive significance (p<5\u00d710\u207b\u2078), including 6 loci at study-wide significance (p<1.2\u00d710\u207b\u2079). Among these, 17 loci were novel, including two study-wide significant novel loci (INTU and TBX3), while 7 loci confirmed previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 describe a well-powered discovery GWAS with appropriate multiple testing correction using matrix spectral decomposition (C7-C8). The identification of 24 loci with minimal heterogeneity (C15) and clear distinction between novel and replicated findings is well-documented. Statistical thresholds and methods are appropriate for the study design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Multi-ethnic replication in 7,917 individuals confirmed 10 of 24 loci (p<2.1\u00d710\u207b\u00b3), including 6 novel loci (CASZ1, INTU, KIF6, TBX3, C14orf64, RPGRIP1L) and 4 previously reported loci (PAX3, SFRP2, ROR2, PAX1). The authors acknowledge conservative replication due to methodological differences between discovery and replication cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 demonstrate successful replication with appropriate Bonferroni correction. The authors appropriately acknowledge limitations (C78-C80) including ancestry differences, phenotyping methods, and potential false negatives. The conservative replication approach and transparent discussion of limitations strengthen confidence in replicated findings while appropriately cautioning about non-replicated loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C77"
+    ],
+    "result": "A multivariable model with 31 SNPs explains up to 4.62% of variance in individual facial phenotypes. Polygenic scores show population-differentiated facial features consistent with anthropological patterns, with EUR showing longest vertical distances and AFR showing widest horizontal features, though potential European discovery bias is acknowledged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 present polygenic score analysis with modest but significant variance explained. The population differentiation patterns are consistent with known anthropological differences. The authors appropriately acknowledge potential bias from European-only discovery (C77), which is a critical limitation for interpreting population differences. The modest variance explained (4.62%) is realistic for complex traits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Gene ontology enrichment analysis of 24 face-associated loci identified 67 biological process terms and 7 molecular function terms (FDR<0.01), with top enrichment for embryonic digit and appendage morphogenesis (FDR<1\u00d710\u207b\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 describe appropriate GO enrichment analysis with stringent statistical thresholds. The enrichment for embryonic morphogenesis terms is biologically plausible for facial development genes. However, the connection between digit/appendage morphogenesis and facial features, while reflecting shared developmental pathways, could benefit from additional discussion of the biological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Multi-tissue cis-eQTL analysis identified significant effects (adjusted p<0.05) for three genes: ARHGEF19, RPE65, and TBX15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 reports eQTL findings with appropriate multiple testing correction. However, the result is limited by the lack of face-relevant tissues in GTEx, as the authors acknowledge. The finding of only 3 genes with eQTL effects out of 24 loci suggests either tissue-specific regulation not captured by GTEx or that many variants act through non-eQTL mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Expression analysis showed 24 face-associated genes have significantly higher expression in cranial neural crest cells (CNCCs) compared to background genes (p=3.8\u00d710\u207b\u2076), with 16 genes (66.7%) showing preferential CNCC expression. Top preferentially expressed genes were PAX3, INTU, and ROR2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 demonstrate appropriate expression analysis comparing face-associated genes to genome background across multiple cell types. The significant enrichment in CNCCs is biologically relevant given their role in facial development. Statistical testing with multiple testing correction is appropriate. The preferential expression of 66.7% of genes in CNCCs provides strong support for CNCC involvement in facial variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Six face-associated loci (25%) showed significant enrichment (adjusted p<0.05) of cis-regulatory elements at the top 0.1% genome-wide level in at least one CNCC epigenomic track.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 describes appropriate epigenomic enrichment analysis with Bonferroni correction. The finding that 25% of loci show enrichment in CNCC regulatory elements is substantial and biologically meaningful. The stringent threshold (top 0.1% genome-wide) provides confidence in the regulatory potential of these regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Luciferase reporter assays in CD271+ neural crest progenitor cells demonstrated statistically significant allele-specific enhancer activity for SNPs in 4q28.1 (INTU) and 2q36.1 (PAX3) regions. The 4q28.1 derived alleles showed decreased expression (10.4-33.5\u00d7) and reduced nose feature length, while 2q36.1 derived alleles showed increased expression (1.5-3.7\u00d7) and increased nasion-related feature length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 provide direct experimental validation of enhancer function with appropriate cell type (neural crest progenitors). The allele-specific effects are substantial and directionally consistent with GWAS effect sizes. The correlation between luciferase activity and facial phenotype effects strengthens the functional interpretation. This represents strong functional follow-up of GWAS findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Literature integration demonstrates that identified face-associated genes have established roles in craniofacial development, with 10 genes consistently identified across independent facial GWASs. Novel genes (INTU, RPGRIP1L, TBX3, KIF6, ROR2) have documented roles in facial/skeletal development through syndromic mutations or animal models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C47 provide comprehensive literature support for biological plausibility of identified loci. The citations to previous studies, syndromic associations, and animal models strengthen confidence in the findings. The integration of prior GWAS results (C33) and functional evidence from model organisms provides strong convergent evidence for gene involvement in facial morphology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The authors discuss evidence for adaptive evolution of facial features, noting that nasal shape correlates with climate variables and that EDAR shows Asian-specific effects on facial morphology, though EDARV370A is rare in Europeans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 appropriately cite previous literature on adaptive evolution and population-specific effects. These claims provide context for interpreting population differentiation in polygenic scores. The discussion is appropriately cautious and acknowledges both shared and population-specific genetic architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Of 122 previously reported face-associated SNPs, 44 (36%) showed significant association (adjusted p<0.05) in the current study. None of 5 SNPs from a previous African GWAS replicated in Europeans, likely due to different phenotypes rather than allele frequency differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 demonstrate appropriate validation of previous findings with 36% replication rate. The authors provide reasonable explanation for non-replication of African GWAS SNPs (different phenotypes) supported by allele frequency data. This represents appropriate integration with prior literature and transparent reporting of replication rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C76"
+    ],
+    "result": "Among 60 SNPs in 38 loci previously associated with non-syndromic cleft lip/palate (NSCL/P), 17 SNPs in 13 loci showed significant face associations, with 11 SNPs involving cleft-related landmarks. NSCL/P polygenic scores explained up to 1.2% of variance in nose-mouth phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71, C76 demonstrate meaningful overlap between NSCL/P and normal facial variation genetics. The enrichment for cleft-related landmarks (C71) provides biological validation. The modest variance explained (1.2%) is appropriate for cross-trait polygenic prediction. This supports the continuum between normal variation and pathological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Six of 24 loci showed high population differentiation (allele frequency difference >0.2, Fst p<0.05), and three loci (RPE65, RPGRIP1L, CASC17) showed signals of positive selection (iHS p<0.01). None overlapped with recent selection signals (SDS), suggesting older selective pressures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 appropriately apply population genetics methods to identify differentiation and selection signals. The lack of overlap with SDS signals (C74-C75) provides temporal context, though the inference about timing (C75) is appropriately cautious ('may indicate'). The analysis is methodologically sound with appropriate statistical thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The study identified 24 genetic loci (17 novel) associated with facial shape in 10,115 Europeans, with 10 loci (6 novel) replicated in 7,917 multi-ethnic individuals. Polygenic scores show population-differentiated patterns, epigenomic analysis reveals CNCC regulatory activity, and luciferase assays confirm enhancer function of face-associated variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 accurately summarize the main findings from the abstract. These high-level claims are supported by the detailed results presented in other claim groups. The integration of GWAS, replication, functional genomics, and experimental validation represents a comprehensive approach to understanding facial genetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The introduction establishes that facial features are highly heritable with similarity between relatives, but genetic knowledge remains limited despite nine previous GWASs identifying largely non-overlapping loci. The true number of face-associated genes is likely much larger than currently known, and experimental evidence for functional variants is lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 appropriately establish the scientific context and knowledge gaps. The characterization of facial traits as highly heritable (C56-C57) is well-established. The acknowledgment of limited genetic knowledge (C58, C61) and lack of functional evidence (C64) appropriately motivates the current study. The inference about many undiscovered genes (C60) is reasonable given high heritability and small effect sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Cranial neural crest cells (CNCCs) arise during weeks 3-6 of human gestation, migrate into branchial arches, and form the embryonic face, establishing facial morphology. CNCCs have been successfully derived in vitro from human embryonic stem cells or induced pluripotent stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 accurately describe CNCC biology based on cited literature. This background appropriately motivates the use of CNCC expression and epigenomic data for functional interpretation of GWAS findings. The availability of in vitro CNCC models (C67) enables the experimental validation performed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "All participating cohorts obtained appropriate ethical approvals from relevant institutional review boards and ethics committees, and all participants provided written informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C91 document appropriate ethical oversight for all cohorts. The specific approval numbers and committee names are provided, demonstrating compliance with research ethics standards. This is essential for human subjects research involving genetic data and facial images.",
+    "result_type": "MINOR"
+  }
+]

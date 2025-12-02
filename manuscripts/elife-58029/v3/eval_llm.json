@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Sox17 morpholino knockdown in Xenopus tropicalis effectively depletes Sox17 protein, produces a phenotype consistent with previous reports and mouse mutants, and can be rescued by mouse Sox17 mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 establish a validated Sox17 loss-of-function model. The morpholino targets all three sox17 paralogs (C6), achieves robust protein knockdown confirmed by immunostaining (C7), produces a phenotype consistent with prior work (C8), and is rescued by heterologous Sox17 (C9), confirming specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Sox17 regulates 1023 genes including 73 transcription factors, with >75% of changes occurring during mid-late gastrula. Sox17 promotes endoderm genes while repressing ectoderm/mesoderm genes and negatively regulating Nodal pathway components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 define the Sox17-regulated transcriptome through RNA-seq with appropriate statistical thresholds (>2 fold, FDR<5%). The temporal dynamics (C12), spatial enrichment analysis (C14), and identification of repressed alternative lineage genes (C14-C15) and Nodal feedback (C16-C17) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Sox17 ChIP-seq identifies 8436 Sox17-bound CRMs associated with 4801 genes, predominantly at distal enhancers co-occupied with Ep300. Integration with RNA-seq identifies 315 direct targets including 197 activated and 118 repressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26 present comprehensive ChIP-seq analysis with appropriate validation (antibody specificity confirmed by C23, motif enrichment by C22, Ep300 co-occupancy by C21). The integration of ChIP-seq and RNA-seq to identify direct targets (C24-C26) is methodologically sound with proper statistical thresholds (IDR p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "\u03b2-catenin regulates 2568 genes including 251 transcription factors and directly regulates ~200 endoderm-enriched genes, contrary to the prevailing view that \u03b2-catenin primarily acts through Nodal ligand activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 establish the \u03b2-catenin-regulated transcriptome through RNA-seq and integration with published ChIP-seq data. The identification of direct endoderm targets (C34) and the challenge to prevailing models (C35) are well-supported by the genomic data showing \u03b2-catenin binding at endoderm gene loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "\u03b2-catenin-bound peaks are more enriched for Sox motifs than canonical Tcf motifs, a finding replicated across multiple independent ChIP-seq datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 report a surprising motif enrichment pattern validated across three independent datasets. The consistency across studies (C37) strengthens this finding, though the functional significance requires further investigation through the reporter assays described in later claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Sox17 and \u03b2-catenin co-occupy 3956 genomic loci (one-third of Sox17 binding) with active enhancer signatures, and co-regulate 415 transcripts (~40% of Sox17-regulated genes), indicating extensive functional interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 demonstrate extensive Sox17-\u03b2-catenin co-occupancy through ChIP-seq integration with appropriate statistical validation (hypergeometric tests). The epigenetic signatures (C38) and transcriptional co-regulation (C40) provide strong evidence for functional interaction, though the mechanistic basis requires the functional studies in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Among co-bound and co-regulated peaks, 53% contain both Sox17 and Tcf motifs while 24% have Sox motifs without Tcf sites. ChIP-reChIP experiments confirm Sox17 and \u03b2-catenin bind the same enhancers in the same cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 provide motif analysis and direct biochemical evidence for co-occupancy. The ChIP-reChIP experiments (C45) are critical validation showing that co-occupancy occurs in the same cells rather than different populations, though the resolution (~150 bp) cannot definitively prove direct protein-protein interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The 84 co-bound and co-regulated genes fall into four regulatory categories: 32 activated by both factors, 27 activated by \u03b2-catenin but repressed by Sox17, 19 activated by Sox17 but repressed by \u03b2-catenin, and 6 repressed by both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 categorize co-regulated genes based on RNA-seq data from both knockdowns. The classification is data-driven and reveals context-dependent Sox17 activity (C51), though the molecular mechanisms underlying these different regulatory modes require the functional studies in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Epistasis experiments demonstrate that Sox17 and \u03b2-catenin are both required for normal expression of six1, osr1, lhx5, and dkk1, indicating they coordinate spatial gene expression in a complex gene-specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 present epistasis experiments showing that neither Sox17 nor \u03b2-catenin alone can rescue expression of key target genes in the other's absence. This provides strong functional evidence for their interdependence, though the experiments are qualitative (in situ hybridization) rather than quantitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The evolutionarily conserved -1kb six1 enhancer contains Sox-binding sites but no Tcf sites, is bound by SOX17 in human endoderm, and requires both Sox17 and \u03b2-catenin for activation in Xenopus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 establish the six1 enhancer as a model for Sox17-\u03b2-catenin synergy. The evolutionary conservation (C55-C57) and functional requirement for both factors (C58) are well-demonstrated through luciferase assays with appropriate rescue experiments, providing strong evidence for Tcf-independent regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Sox17 restricts \u03b2-catenin-mediated activation of dkk1 and lhx5 enhancers. Sox17 alone activates six1 reporters while \u03b2-catenin alone activates dkk1/lhx5 reporters, with Sox17 suppressing \u03b2-catenin activation of the latter. This activity requires Sox17 DNA-binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 demonstrate opposite regulatory modes on different enhancers through luciferase assays in ectopic expression contexts. The requirement for Sox17 DNA-binding (C62) using a characterized mutant provides mechanistic insight. The experiments are well-controlled with appropriate tissue-specific injections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Tcf7l1-VP16 activates dkk1 and lhx5 but not six1 reporters. Mutation of Sox sites abolishes six1 reporter activity but increases dkk1 activity, while deletion of Tcf sites abolishes dkk1 reporter activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 use constitutively active Tcf and site-directed mutagenesis to dissect the roles of Sox and Tcf binding sites. The differential effects on six1 vs dkk1 enhancers (C63-C66) provide strong evidence for distinct regulatory mechanisms, with appropriate controls and multiple independent enhancers tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Two additional enhancers (osr1 and igf3) lacking Tcf sites are synergistically activated by Sox17 and \u03b2-catenin but not by Tcf7l1-VP16, supporting Tcf-independent regulation. In contrast, dkk1 and lhx5 enhancers are activated through \u03b2-catenin/Tcf with Sox17 spatially restricting this activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 extend the findings to additional enhancers and synthesize the two regulatory modes. The identification of multiple enhancers with similar properties (C67) strengthens the generalizability, though the sample size remains limited. The conclusions (C68-C69) are well-supported by the collective luciferase data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "20% of Xenopus Sox17-bound genes are also SOX17-bound in human PSC-derived endoderm, with GO enrichment for TGF\u03b2 receptor activity and \u03b2-catenin binding, indicating conserved functional interactions with Nodal and Wnt pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 demonstrate evolutionary conservation through comparison with published human data. The significant overlap (C76) and GO enrichment (C77) support conservation of the Sox17-regulated GRN, though the 20% overlap also indicates substantial species-specific differences that are not discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Sox17-activated genes are enriched for LIM-homeodomain binding sites while Sox17-repressed genes are enriched for Tbx or Pou motifs, suggesting Sox17 coordinately engages enhancers with other TFs to mediate context-dependent activation or repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 identify differential motif enrichment in activated vs repressed genes through computational analysis. While the motif enrichment is data-driven (C27), the interpretation of coordinate TF engagement (C28) is speculative and would require additional experiments to validate functional interactions with these TF families.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Sox17 sits atop the regulatory hierarchy regulating endoderm differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by the observation that Sox17 regulates 73 TFs and multiple signaling pathways (C13). However, this is an interpretive claim about hierarchical position that could be strengthened by temporal analysis showing Sox17 acts upstream of these factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Sox17 acts as a tissue-specific modifier of Wnt responses, establishing a paradigm where genomic specificity of Wnt/\u03b2-catenin transcription is determined through functional interactions between lineage-specific Sox TFs and \u03b2-catenin/Tcf complexes, with broad implications for development and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 present the major conceptual conclusions. While C89 is well-supported by the collective data showing Sox17 modulates Wnt responses, C90 extrapolates to a general paradigm for Sox TFs that is speculative beyond Sox17. C91's broader implications are reasonable speculation but lack direct evidence in other contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Sox17 is a key endoderm transcription factor with few identified direct targets. Prior work shows Sox17 can initiate endoderm development, is enhanced by \u03b2-catenin, and can physically interact with \u03b2-catenin to suppress Tcf/\u03b2-catenin reporter activity in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C70-C75 summarize established knowledge from prior work, appropriately cited. These provide context for the current study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Nodal and Wnt signaling cooperate to specify endoderm through core transcription factors. In Xenopus, maternal Wnt/\u03b2-catenin activates nodal expression, then Nodal and Wnt cooperate to promote endoderm TFs and organizer genes, with zygotic wnt8 promoting ventral/posterior identities. Tcfs have identical DNA-binding specificities and may interact with lineage-specific TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 provide background on endoderm specification and Wnt signaling from prior literature, with appropriate citations. These establish the context and open questions that motivate the current study but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

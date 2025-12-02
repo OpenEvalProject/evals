@@ -1,0 +1,422 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C10",
+      "C11",
+      "C74",
+      "C75",
+      "C76",
+      "C97"
+    ],
+    "result": "The authors developed a fully automated workflow for generating automated midbrain organoids (AMOs) in standard 96-well plates using small molecule neural precursor cells (smNPCs) as starting material, with all steps from seeding through maturation performed by robotic liquid handling systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, C10, C11, C74, C75, C76, and C97 collectively describe the automated workflow setup. The methodology is clearly documented with specific details (9000 cells per well, 0.4% PVA, Beckman Coulter Biomek FXP system), and Figure 1a provides a visual schematic. The approach is technically sound and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The automated workflow achieves high sample retention rates (99.7% for culture, 96.5% for staining/transfer, 93.9% after quality control) and produces AMOs with low intra- and inter-batch variability in size (average CV 3.56%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 report specific quantitative metrics with standard deviations. Figure 1b-d provides supporting data showing size measurements across batches and sample retention at each processing step. The statistics are appropriate and the sample sizes appear adequate (n\u226520 organoids per data point for size, multiple 96-well plates for retention).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "AMOs demonstrate highly homogeneous morphology, size, cellular composition, and protein expression within and between batches, with significantly lower variability than automated hiPSC-derived organoids from the same cell line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C44-C49 are supported by extensive quantitative imaging data in Figure 6d-g showing CVs of 5% for Sox2 and 9% for Map2. The comparison to hiPSC organoids (Figure 7e-h) demonstrates 5-10 fold higher CVs in the hiPSC organoids. However, a minor edge effect (~10% difference) was detected for Map2 but not Sox2 (C47, Figure 6\u2014supplement 1), which is acknowledged but doesn't undermine the overall homogeneity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "AMOs express appropriate midbrain markers (TH, Foxa2, Lmx1a, Nurr1, Pitx3) and neural markers (Map2, TUBB3, DCX, nestin, Sox2), contain synapses and astrocytes, and self-organize into concentric zones with distinct cellular orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C28 are supported by extensive immunofluorescence imaging (Figure 2a-g and supplements) and ultrastructural analysis (Figure 2\u2014supplement 3). The presence of multiple cell types and markers is well-documented. The zonal organization is clearly visible in the images. However, the interpretation of ultrastructural features as synaptic vesicles (C28) is based on morphology alone without functional validation, which is a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "qPCR analysis demonstrates increasing expression of neural, midbrain, and glia-specific markers with concomitant decreases in neural precursor markers over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by Figure 3 showing temporal expression profiles for multiple markers. The data show appropriate trends (maturation markers increasing, precursor markers decreasing). Error bars (SEM) are shown with n=3. The analysis is straightforward and appropriate for the data type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "AMOs display spontaneous, aggregate-wide synchronized calcium activity that can be abolished by cobalt(II) chloride treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by calcium imaging data in Figure 4a-g and Video 2. The synchronous activity across different regions of interest is clearly demonstrated. The CoCl2 experiment provides a control showing the calcium-dependence of the activity. The methodology is appropriate for detecting calcium transients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Multielectrode array (MEA) measurements reveal spontaneous electrical activity in AMOs with synchronized oscillations at 1 Hz and 14 Hz frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by MEA data in Figure 4h-k. The synchronized electrical activity across multiple electrodes and the FFT analysis showing specific frequencies are clearly demonstrated. The methodology is appropriate and n=3 is stated. However, the relatively small sample size is a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Patch-clamp recordings demonstrate that cells from AMOs possess typical excitable, neuron-like electrophysiological properties with an average membrane potential of \u221241.9 \u00b1 15.2 mV (n=29).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by patch-clamp data in Figure 4l-n and Figure 4\u2014supplement 1. The I-V curves and action potentials are characteristic of neurons. The sample size (29 of 62 cells showing neuronal properties) is adequate. The methodology is standard and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "RNA sequencing demonstrates that AMOs resemble fetal brain/spinal cord tissue and primary human midbrain more closely than published midbrain organoids, show high reproducibility within and between batches, exhibit no edge effects at the gene expression level, and are enriched for neuronal and synaptic activity genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are supported by comprehensive RNA-seq analysis in Figure 5. The correlation analysis (5a-b), PCA (5c), and GO term analysis (5d) are appropriate. The sample size is substantial (n=64 AMOs from 3 batches vs n=6 published organoids). The lack of positional effects in gene expression is clearly shown. The statistical methods (DESeq2, correlation analysis) are standard and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C113",
+      "C115"
+    ],
+    "result": "The automated whole mount staining and clearing workflow enables quantitative analysis of entire dense organoids (>800 \u03bcm diameter) with single-cell resolution, as demonstrated by a highly linear relationship (R\u00b2>0.99) between cell number and measured brightness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C113, and C115 are supported by the dose-response experiment in Figure 6a showing linearity of detection across different aggregate sizes. The methodology is well-described in the Materials and methods. The R\u00b2 values are excellent. This validates the quantitative nature of the imaging workflow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "AMOs respond most strongly to dopaminergic modulation in MEA measurements, while automated hiPSC-derived cortical organoids respond most strongly to glutamatergic modulation, consistent with their respective brain region identities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by MEA pharmacology data in Figure 8e-k. The differential responses to dopaminergic vs glutamatergic modulators between AMOs and cortical organoids are clearly shown. However, the sample size is small (n=4, with n=3 for one condition), and the quantification method (sum of absolute field potentials) is somewhat unconventional. These are minor limitations but don't invalidate the main finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "AMOs contain 70-80% mature (Sox2-negative) cells after 30 days and spontaneously secrete dopamine at levels similar to adult human cerebrospinal fluid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by high-content imaging data (Figure 8d) and ELISA measurements (Figure 8c). The maturity assessment is based on Sox2 negativity, which is a reasonable proxy for mature cells. The dopamine secretion levels are compared to published CSF values (Goldstein et al., 2012). Sample sizes appear adequate (multiple batches, multiple cell lines).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The dopaminergic neurotoxins 6-OHD and MPP+ specifically ablate TH-positive neurons from AMOs in a dose-dependent manner, with 6-OHD showing greater specificity, and AMOs show lower variance in toxicity studies than iPSC-organoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by dose-response data in Figure 8a-b and Figure 8\u2014supplement 1g,i. The differential effects on TH+ vs Map2+ neurons are clearly shown. The comparison of variance between AMOs and hiPSC organoids is demonstrated. The methodology (high-content imaging after toxin treatment) is appropriate. Sample sizes appear adequate (n\u22656 per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The workflow uses BABB-based tissue clearing combined with extended whole mount immunostaining (6 days primary, 6 days secondary antibodies) to enable 3D reconstruction and analysis of entire AMOs, with BABB proving superior to other clearing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 and C77-C82 describe the clearing and staining methodology. Figure 1\u2014supplement 1 provides quantitative comparison of clearing methods showing BABB's superiority in detection depth (~3x deeper) and light transmission. The detailed protocol is provided in Materials and methods. The statistical analysis (unpaired t-tests, n=10 per method) is appropriate. Video 1 demonstrates the 3D reconstruction capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C63",
+      "C64",
+      "C121"
+    ],
+    "result": "AMOs present significant features of the human midbrain with key cell populations and structural organization similar to published midbrain organoids, though they do not represent the full complexity of the actual human midbrain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C63, C64, and C121 represent the authors' overall assessment of AMO relevance. The presence of midbrain features is supported by marker expression (C18-C24), functional activity (C30-C36), and RNA-seq data (C37-C42). The acknowledgment of limitations (C63) is appropriate and scientifically honest. The claim of similarity to published organoids is supported by the RNA-seq comparison (Figure 5b).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C62",
+      "C120"
+    ],
+    "result": "Automation of the entire workflow enhances reproducibility and results in highly reproducible, homogeneous, functionally coupled, and electrophysiologically active human 3D microtissues by starting with neural precursor cells rather than PSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C62, and C120 represent the authors' interpretation of the benefits of their approach. The enhanced reproducibility is supported by RNA-seq data (Figure 5c) and imaging data (Figure 6d-g). The functional coupling is demonstrated by calcium imaging (C30-C32) and MEA data (C33-C34). The comparison to hiPSC organoids (Figure 7) supports the claim that starting with precursors improves homogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The use of smNPCs as starting material improves predictability while maintaining self-organization ability, but sacrifices some cell fate potential and complexity, excluding formation of microglia and delaying oligodendrocyte emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 and C133-C138 represent the authors' discussion of trade-offs in their approach. The improved predictability is supported by the homogeneity data (C44-C46). The limitation regarding microglia is based on developmental biology knowledge (smNPCs are ectodermal). The claims about oligodendrocyte timing are supported by citations (C135-C137). This is an honest assessment of limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors adapted a published cortical organoid protocol for automation by using single-cell suspensions from feeder-free cultures and 96-well U-bottom plates, which may have changed outcomes but provides a rigorous comparison to the AMO approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 describe modifications to the Pa\u015fca/Sloan protocol. Figure 7\u2014supplement 1 clearly documents the changes. The rationale for modifications (scalability, reproducibility) is reasonable. The acknowledgment that modifications may have changed outcomes (C130) is appropriate. The characterization data (Figure 7\u2014supplement 2) confirms cortical differentiation. This provides a fair comparison despite the modifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The workflow uses standard commercial equipment and software for imaging (Operetta, Harmony/Columbus) and RNA-seq analysis (TopHat2, HTSeq, Cufflinks, DESeq2, Gorilla, REViGO) with appropriate parameters and data deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 and C101-C107 describe the technical infrastructure and analysis methods. All software versions are specified. The RNA-seq pipeline is standard and appropriate. Data deposition in GEO (GSE119060) enables reproducibility. The imaging parameters are clearly stated. This represents good scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C65",
+      "C67",
+      "C68",
+      "C122",
+      "C123",
+      "C124",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The workflow enables assessment of drug effects at single-cell level in 3D and may enable various future applications including HTS for Parkinson's disease, Zika virus infection, and other 3D phenotypic screens, contributing to next-generation disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C65, C67-C68, C122-C124, and C140-C145 represent potential applications and future directions. While the technical capability is demonstrated (C54-C56 show drug testing), most of these claims are speculative about future use. The toxin experiments provide proof-of-principle, but actual HTS campaigns for disease modeling are not demonstrated. These are reasonable projections but remain to be validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C9",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The manuscript includes various background claims about neural development, brain structure, and prior organoid work based on cited literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C87-C96 represent background knowledge and citations. These are appropriately referenced to published literature. The citations appear relevant and accurate based on the context. These provide necessary background for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C61",
+      "C110",
+      "C111",
+      "C112",
+      "C114",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The workflow is compatible with manual pipetting, uses standard 96-well format, omits matrix embedding, minimizes batch effects, abolishes need for tissue sections, and allows for easy scale-up and implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C110-C119 describe practical features and advantages of the workflow. The compatibility with manual pipetting (C61, C119) is stated but not explicitly demonstrated. The use of standard format (C117) and omission of matrigel (C118) are clearly documented. The minimization of batch effects (C111) is supported by the RNA-seq data. The elimination of sectioning (C112) is inherent to the whole-mount approach. Most claims are supported, though manual pipetting compatibility is not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C139"
+    ],
+    "result": "The authors propose future approaches including ectopic addition of oligodendrocytes/microglia to reach screenable states earlier, and position AMOs as filling a gap between heterogeneous PSC-derived organoids and less physiological 2D/spheroid formats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73 and C139 represent proposed solutions and positioning statements. The suggestion to add oligodendrocytes/microglia (C71) is reasonable but not demonstrated. The positioning of AMOs as filling a gap (C72) is a subjective assessment, though supported by the comparison data. The contribution to translating strategies like cell painting (C73) is speculative. These are reasonable proposals but lack experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C66",
+      "C132"
+    ],
+    "result": "The authors claim that no available high-throughput-compatible protocols generate midbrain-specific organoids and that mechanical standardization alone cannot compensate for PSC variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is a broad statement about the field that may not account for all published work (only one citation provided). Claim C132 is an interpretation of the comparison data (Figure 7) but represents one possible explanation among others. The comparison is limited to one hiPSC line and one cortical protocol. These claims are plausible but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C108",
+      "C109"
+    ],
+    "result": "The workflow uses specific commercial equipment for calcium imaging (Dragonfly microscope), MEA measurements (USB-MEA256system), patch-clamping (EPC-10 amplifier), viability assays (CellTiter-Glo 3D), and dopamine measurement (Dopamine ELISA Kit).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 and C108-C109 describe the equipment and assays used. All are clearly specified in the Materials and methods section. The equipment choices are appropriate for the measurements. This represents standard methodology documentation.",
+    "result_type": "MINOR"
+  }
+]

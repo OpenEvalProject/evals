@@ -1,0 +1,1720 @@
+{
+  "submission": {
+    "id": "c0509476-06fe-4779-9c4b-30a225a7e189",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:23:01.386191Z",
+    "updated_at": "2025-12-02T18:23:01.386191Z"
+  },
+  "content": [
+    {
+      "id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "submission_id": "c0509476-06fe-4779-9c4b-30a225a7e189",
+      "content_type": "manuscript",
+      "content_text": "# A high-throughput small molecule screen identifies farrerol as a potentiator of CRISPR/Cas9-mediated genome editing\n\n## Authors\n\n- Weina Zhang<sup>1</sup> ([ORCID: 0000-0003-2852-4079](https://orcid.org/0000-0003-2852-4079))\n- Yu Chen<sup>1</sup> ([ORCID: 0000-0002-9661-3914](https://orcid.org/0000-0002-9661-3914))\n- Jiaqing Yang<sup>1</sup>\n- Jing Zhang<sup>1</sup>\n- Jiayu Yu<sup>1</sup>\n- Mengting Wang<sup>1</sup>\n- Xiaodong Zhao<sup>1</sup>\n- Ke Wei<sup>1</sup>\n- Xiaoping Wan<sup>1</sup>\n- Xiaojun Xu<sup>2</sup>\n- Ying Jiang<sup>1</sup>\n- Jiayu Chen<sup>1</sup> ([ORCID: 0000-0003-4755-8901](https://orcid.org/0000-0003-4755-8901)) \u2020\n- Shaorong Gao<sup>1</sup> ([ORCID: 0000-0003-1041-3928](https://orcid.org/0000-0003-1041-3928)) \u2020\n- Zhiyong Mao<sup>1</sup> ([ORCID: 0000-0002-5298-1918](https://orcid.org/0000-0002-5298-1918)) \u2020\n\n### Affiliations\n\n1. Clinical and Translational Research Center of Shanghai First Maternity & Infant Hospital, Shanghai Key Laboratory of Signaling and Disease Research, Frontier Science Center for Stem Cell Research, School of Life Sciences and Technology, Tongji University Shanghai China\n2. State Key Laboratory of Natural Medicines, China Pharmaceutical University Nanjing China\n3. Tsingtao Advanced Research Institute, Tongji University Qingdao China\n\n\u2020 Corresponding author\n\n## Abstract\n\nDirectly modulating the choice between homologous recombination (HR) and non-homologous end joining (NHEJ) - two independent pathways for repairing DNA double-strand breaks (DSBs) - has the potential to improve the efficiency of gene targeting by CRISPR/Cas9. Here, we have developed a rapid and easy-to-score screening approach for identifying small molecules that affect the choice between the two DSB repair pathways. Using this tool, we identified a small molecule, farrerol, that promotes HR but does not affect NHEJ. Further mechanistic studies indicate that farrerol functions through stimulating the recruitment of RAD51 to DSB sites. Importantly, we demonstrated that farrerol effectively promotes precise targeted integration in human cells, mouse cells and mouse embryos at multiple genomic loci. In addition, treating cells with farrerol did not have any obvious negative effect on genomic stability. Moreover, farrerol significantly improved the knock-in efficiency in blastocysts, and the subsequently generated knock-in mice retained the capacity for germline transmission.\n\n## Introduction\n\nThe ability to precisely edit genomes holds great promise for a wide range of applications in both biomedical research and the treatment of human genetic diseases (Su et al., 2016; Tebas et al., 2014). In recent years, a number of genome editing tools including zinc-finger nucleases (Brunet et al., 2009; Miller et al., 2007; Porteus and Baltimore, 2003), transcription activator-like effector nucleases (TALENs) (Wood et al., 2011) and the RNA-guided CRISPR/Cas9 nuclease system (Mali et al., 2013) have been developed. Among them, the adapted Streptococcus pyogenes CRISPR/Cas9 (SpCRISPR/Cas9) has received the greatest attention due to its simplicity, relative high precision and flexibility (Jinek et al., 2012). The SpCRISPR/Cas9-mediated genome editing system consists of the Cas9 nuclease protein and a single guide RNA (sgRNA) containing a 20-nucleotide (nt) sequence with complementary pairing to a target genomic locus adjacent to a 5\u2019NGG3\u2019 protospacer adjacent motif (PAM). When combined with an sgRNA, the Cas9 nuclease generates a DNA double-strand break (DSB) around 3 bp upstream the target PAM sequence (Cong et al., 2013; Mali et al., 2013).\n\nUpon DSB induction, two different DSB repair mechanisms are available to repair the lesion \u2013 homologous recombination (HR) and non-homologous end joining (NHEJ). The choice of DSB repair pathway determines the outcome of the genome editing. In the presence of a homologous template, successful HR results in a precise knock-in event (Ran et al., 2013). By contrast, the error-prone NHEJ probably leads to a phenotype of gene knock-out (Zhang et al., 2014). Many factors, including cell cycle stage (Yang et al., 2016), competition between DNA damage repair factors such as RIF1/53BP1 vs. BRCA1/CtIP (Hollick et al., 2003; Srivastava et al., 2012) and cell type collectively influence the choice between HR and NHEJ. Great efforts have been made to improve the efficiency of SpCRISPR/Cas9-mediated knock-in (Smirnikhina et al., 2019). Knocking down the DNA damage response factor, 53BP1, which favors the choice of NHEJ (Callen et al., 2013); or important NHEJ factors such as KU70, KU80 and LIG4 (Chu et al., 2015) promotes the SpCRISPR/Cas9-mediated knock-in efficiency (Ye et al., 2018). In addition, a number of small molecules inhibiting NHEJ or promoting HR have been shown to improve knock-in efficiency (Riesenberg and Maricic, 2018). For instance, suppressing NHEJ by blocking LIG4 activity with SCR7, or inhibiting DNA-PKcs kinase activity with NU7441 or NU7026, has been shown to improve the precise targeting efficiency of SpCRISPR/Cas9 (Chu et al., 2015; Robert et al., 2015; Zhang et al., 2017). Similarly, stimulating the HR factor, RAD51, with RS-1 also improved SpCRISPR/Cas9 editing efficiency (Jayathilaka et al., 2008). However, both inhibiting NHEJ and stimulating the activity of the recombinase involved in HR are potentially harmful to the maintenance of genome integrity (Chen et al., 2008; Vartak and Raghavan, 2015). NHEJ is the major pathway for mending the broken ends in mammalian cells in all cell cycle stages (Mao et al., 2008a). Loss of this pathway often leads to high cancer incidences and premature aging (Lombard et al., 2005; Vogel et al., 1999). The risk of activating RAD51 is that it might increase the chance of the spontaneous recombination with prevalent repetitive sequences in mammalian cells, resulting in the loss of large amounts of genetic information (Klein, 2008; Richardson et al., 2004). Therefore, there is a need to expand the list of the compounds which can improve the efficiency of precise genome editing with minimal or no effect on global genome stability.\n\nHere, based on our recently developed cell lines containing a dual-reporter for the simultaneous measurement of both HR and NHEJ efficiency at the same chromosomal site (Chen et al., 2019), we generated a novel, rapid, quantitative and easy-to-score screening platform for identifying compounds that could be potentially applied in SpCRISPR/Cas9-mediated genome editing. Using the system, we screened 722 small molecules isolated from herbs used in traditional Chinese medicine. We found that farrerol, a natural compound isolated from Rhododendron dauricum, which exhibits antibechic, anti-bacterial and anti-inflammatory properties\u00a0(Zhang et al., 2015), promoted HR but had no effect on NHEJ. Further mechanistic studies indicated that farrerol stimulated the recruitment of RAD51 to DSB sites rather than changed the expression levels of HR related factors. We then demonstrated that farrerol facilitated SpCRISPR/Cas9-mediated genome targeting at different loci in human somatic cells, mouse embryonic stem cells (ESCs) and mouse embryos. In contrast, SCR7 and RS-1, two most commonly used small molecules for gene targeting, exhibited a position dependent effect on targeting efficiency in different cell lines and also in mouse embryos. Moreover, we demonstrated that farrerol did not destabilize genomes using comet assay, karyotype analysis and immunofluorescence staining of genotoxic markers. Conversely, treating cells with SCR7, which blocks the NHEJ pathway, and RS-1, which activates RAD51, diminished genome integrity. Besides, we also found that farrerol could significantly suppress the efficiency of single strand annealing (SSA), which may cause deletions of large fragments between repetitive sequences in genomes\u00a0(Wyman and Kanaar, 2006), while RS-1 had no effect on SSA efficiency. Moreover, treating mouse ESCs and blastocysts with farrerol had no adverse effect on cell growth and embryo development, whereas we observed abnormal development in mouse blastocysts treated with SCR7, and we failed to observe a remarkable stimulatory effect on knock-in efficiency in RS-1 treated mouse blastocysts. Most intriguingly, farrerol significantly improved the efficiency of SpCRISPR/Cas9-mediated knock-in in blastocysts, and the generated knock-in founder mice retained the capability for germline transmission.\n\n## Results\n\n### Generation of a high-throughput compound screening platform for monitoring the choice of DSB repair pathway\n\nTo identify novel compounds that can potentially enhance precise genome editing efficiency, we created CLZ3, a cell line suitable for high-throughput drug screening. The cell line contains a reporter cassette for the simultaneous detection of both HR and NHEJ efficiency at the same locus upon DSB induction at the I-SceI recognition sites (Figure 1A), and a chromosomally integrated doxycycline-inducible vector encoding the endonuclease, I-SceI (Figure 1B). The CLZ3 cell line was derived from the previously described D4a human fibroblast cell line\u00a0(Chen et al., 2019), which was developed to measure the efficiency of both HR and NHEJ simultaneously at the same chromosomal site. In the dual HR-NHEJ reporter cassette (Figure 1A), the part downstream of the CMV promoter consists of two GFP exons, the engineered rat Pem1 intron separating the two GFP exons, an adenoviral exon (AD2) flanked by recognition sequences for I-SceI endonuclease in an inverted orientation and an ATG-less tdTomato gene. In the part upstream of the CMV promoter, the reporter cassette contains the Pem1 intron and the inserted full length tdTomato gene. The inducible vector for I-SceI expression is comprised of two parts in an inverted orientation to avoid potential interference from one another (Figure 1B). The first part contains the coding sequence of reverse tetracycline-controlled transactivator (rtTA) driven by a constitutively active CAG promoter (PCAG). The second part encodes the I-SceI-NLS (Nuclear localization sequence) -HA endonuclease driven by a TET response element (TRE) promoter.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig1-v2.jpg)\n\n**Figure 1.:** (A) Diagram of the HR-NHEJ dual fluorescent reporter (Chen et al., 2019). SD, splice donor; SA, splice acceptor. In the reporter cassette for simultaneous analysis of HR and NHEJ at the same chromosomal site, it contains two parts separated by a CMV promoter. The part downstream of the promoter contains two GFP exons separated by the engineered Pem1 intron with splice donor and acceptor, an adenoviral exon (AD2) with splice donor and acceptor, two I-SceI recognition sites in an inverted orientation, and an ATG-less tdTomato gene. The second part upstream of the promoter contains the Pem1 intron and a full-length tdTomato gene with a splice donor before start codon ATG. The homology region between the two parts of the reporter is approximately 3.9 kb including the rat Pem1 intron (marked in yellow line) and the tdTomato gene. (B) Schematic diagram of the doxycycline-inducible I-SceI expression vector. rtTA, reverse tetracycline trans-activator protein; PTRE, promoter of tetracycline response element; PCAG, the CAG promoter, a strong synthetic promoter frequently used to drive high levels of gene expression in mammalian systems.\u00a0(C\u2013D) Generation of the compound screening platform. The linearized doxycycline-inducible I-SceI expression vector was nucleofected into D4a cells followed by selection with 30 \u03bcg/mL hygromycin B. Then individual colonies were picked and one of the colonies, CLZ3, was utilized for further studies. I-SceI endonuclease expression could be efficiently induced upon doxycycline supplementation (C), further resulting in the generation of DSBs on the reporter cassette. Successful repair by HR or NHEJ results in functional tdTomato or GFP, turning cells red or green respectively, which could be observed via microscopy (D). (E) Flow cytometry analysis of tdTomato+ and GFP+ cells upon doxycycline addition (left panel). The representative FACS traces are shown (right panel). (F) Workflow of compound screening using the CLZ3 cell line. (G) 722 small molecules were screened using CLZ3 cells and farrerol (highlighted in blue) was identified as an HR enhancer.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Farrerol significantly promotes HR efficiency in HCA2-H15c cells harboring the single HR reporter (left panel), while does not influence NHEJ efficiency in HCA2-I9a cells harboring the single NHEJ reporter (right panel). The HR and NHEJ reporters were generated as previously described (Mao et al., 2008a). SD, splice donor; SA, splice acceptor; the yellow line stands for the homologous arm. (B) Farrerol significantly enhances HR efficiency in mouse ESCs. HR reporter was linearized in vitro with I-SceI to induce DSBs. Mouse ESCs were pretreated with indicated doses of farrerol for 24 hr. Then 0.5 \u03bcg purified linearized HR reporter was transfected into 2\u00a0\u00d7\u00a0105 mouse ESCs along with 100 ng plasmid encoding pDsRed2-N1 for normalizing the transfection efficiency. Farrerol was supplemented into the culture medium of transfected cells until FACS analysis at 48 hr post transfection. The ratio of GFP positive cells versus DsRed positive cells was used as the measure of HR efficiency. Error bars represent the s.d.\u00a0*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, n.s., not significant, t-test. All experiments were repeated at least three times.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Farrerol does not influence the protein level of important HR factors, and 53BP1, a critical negative regulator of HR. (B) Analysis of cell cycle distribution in HCA2-hTERT cells treated with farrerol at indicated concentrations. (C\u2013D) Farrerol does not affect the recruitment of RPA2 in HCA2-hTERT cells post 2 Gy X-Ray treatment. (E\u2013F) Farrerol promotes RAD51 recruitment in HCA2-hTERT cells post 2 Gy X-Ray treatment. Error bars in (B) represent the s.d. Error bars in (D) and (F) represent the s.e.m. **p<0.01, ***p<0.001, ****p<0.0001, t-test.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Schematic diagram of reporter cassette HRF measuring gene conversion, crossing over, and SSA. The cassette contains two copies of defective GFP-Pem1. The first copy has two inverted I-SceI recognition sites, and a 22-nt deletion on the first exon of GFP, and the second copy of GFP lacks the start codon. I-SceI induced DSBs can be repaired by gene conversion, crossing over or SSA, resulting in functional GFP. SD, splice donor; SA, splice acceptor; the yellow line stands for the homologous arm. (B) Schematic diagram of reporter cassette HRIF measuring gene conversion and crossing over. The positions of the two copies of defective GFP is different in HRF and HRIF. In HRF reporter, both copies are downstream CMV promoter while in HRIF reporter the CMV promoter is located between the two copies of GFP. In response to I-SceI digestion, only gene conversion or crossing over can reconstitute functional GFP. SD, splice donor; SA, splice acceptor; the yellow line stands for the homologous arm. (C) Effect of farrerol and RS-1 treatment on SSA efficiency. The two reporters were integrated into HCA2-hTERT cells, and a pool of colonies containing chromosomally integrated reporters were mixed for further analysis. HRF minus HRIF was employed as the measure of SSA efficiency. 5 \u03bcg I-SceI vector and 15 ng pDsRed2-N1 were transfected into reporter cells pre-treated with different small molecules. Small molecules were still added to the cells until FACS analysis three days after transfection. The ratio of GFP positive cells versus DsRed positive cells was used as the measure of repair efficiency. Error bars represent the s.d. *p<0.05, **p<0.01, ***p<0.001, n.s., not significant, t-test. All experiments were repeated at least three times.\n\nIn brief, in the absence of doxycycline, the CLZ3 cells do not express the I-SceI endonuclease, thus no DSBs are generated, and cells remain tdTomato and GFP negative. In contrast, supplementing CLZ3 cells with doxycycline turns on the I-SceI expression (Figure 1C), resulting in the induction of DSBs on the dual-reporter cassette. Successful repair by HR leads to functional tdTomato, therefore turning cells red, while NHEJ restores active GFP, turning cells green (Figure 1A\u2013B). Indeed, using the CLZ3 cell line we found that adding doxycycline into the culture medium leads to the I-SceI expression (Figure 1C), and we observed both tdTomato+ (4.3%) and GFP+ cells (1.5%) either using confocal microscopy or FACS analysis (Figure 1D\u2013E). These data indicate that we successfully obtained the cells for screening compounds that potentially alter the balance between HR and NHEJ.\n\n### The identification of farrerol as an enhancer of HR but not NHEJ using the CLZ3 cell line\n\nWe then employed the CLZ3 cell line to screen a library containing 722 small molecules isolated from herbs used in traditional Chinese medicine. CLZ3 cells were seeded at a density of 10,000 cells per well into a 12-well plate. On day 1 post seeding, cells were supplemented with the chemical compounds at a concentration of 5 \u03bcM. On day 2, doxycycline was then added into the culture medium at a concentration of 0.5 \u00b5g/mL. On day 4 post splitting, cells were harvested for FACS analysis of DSB repair efficiency (Figure 1F). Among the 722 screened compounds, we found that it was farrerol that could significantly improve HR repair but had no detectable effect on NHEJ (Figure 1G). We further validated its stimulatory effect on HR using our well-established HCA2-H15c and HCA2-I9a cell lines for analyzing HR and NHEJ efficiency separately\u00a0(Mao et al., 2008a). Consistent with our observation in CLZ3 cells, farrerol was proved to significantly promote HR and had no obvious influence on NHEJ in these cell lines (Figure 1\u2014figure supplement 1A). In addition, using the extrachromosomal assay we also demonstrated that farrerol significantly promoted HR repair efficiency in mouse ESCs (Figure 1\u2014figure supplement 1B).\n\nTo elucidate the molecular mechanisms of HR activation by farrerol, the protein levels of HR associated factors including RPA2, NBS1, RAD50, RAD51, MRE11, CtIP, BRCA1, EXO1 XRCC2, and 53BP1, a negative regulator of HR, were analyzed by western blot (Figure 1\u2014figure supplement 2A). We did not observe any significant alterations in the expression level of repair-related factors upon farrerol treatment, indicating that enhancement of HR efficiency is probably not due to changes in the expression levels of the analyzed HR factors. Similarly, cell cycle distribution was not significantly impacted by farrerol treatment (Figure 1\u2014figure supplement 2B), suggesting that the promotion of HR by farrerol is not through arresting cells in the HR-dominant S/G2 stage. We then hypothesized that farrerol might improve HR by accelerating the recruitment of HR factors to DNA damage sites. Accordingly, we checked the recruitment of RPA2, a single-strand DNA binding protein, at indicated time points post 2 Gy ionizing irradiation (IR) using immunofluorescence assay (Figure 1\u2014figure supplement 2C\u2013D). However, the result indicated that farrerol has no influence on the recruitment of RPA2. Surprisingly, we found that the average foci number of RAD51 per nucleus was 6.5 and 6.1 in the presence of farrerol (1 and 5 \u03bcM) at 4 hr post IR at 2 Gy, in comparison to 4.4 in control group (Figure 1\u2014figure supplement 2E\u2013F). At 16 hr post IR, the average foci number of RAD51 per nucleus dropped to 3.2 and 4.3 in farrerol treating cells whereas there were still 6.4 RAD51 foci in the control group (Figure 1\u2014figure supplement 2E\u2013F). These data indicate that the rapid recruitment and timely clearance of RAD51 post IR may contribute to the promotion of HR by farrerol.\n\nIn mammalian cells HR can be further categorized into precise gene conversion, crossover, and the SSA pathway which results in deletions of DNA sequences between two direct repeats\u00a0(Johnson and Jasin, 2000). We tested whether farrerol potentially affects SSA, thereby causing a loss of genome integrity. We employed two previously reported reporters HRF, which measures the efficiency of gene conversion, crossover and SSA (Figure 1\u2014figure supplement 3A), and HRIF, which measures only gene conversion and crossover (Figure 1\u2014figure supplement 3B). Therefore, SSA efficiency can be quantified with HRF minus HRIF\u00a0(Mao et al., 2012). The two reporters were integrated into HCA2-hTERT cells, and a pool of colonies containing chromosomally integrated reporters were mixed for further analysis. Consistent with a previous report that RAD51 is not involved in SSA pathway\u00a0(Benitez et al., 2018; Bennardo et al., 2008; Mendez-Dorantes et al., 2018), we found that activating RAD51 with RS-1 had no effect on SSA efficiency. Surprisingly, treating cells with farrerol significantly suppressed SSA efficiency by 3.3-fold and 1.9-fold at concentrations of 5 \u03bcM and 10 \u03bcM respectively (Figure 1\u2014figure supplement 3C), suggesting that farrerol might help maintain genome integrity by avoiding the aberrant recombination between the abundant repetitive sequences across genomes.\n\n### Farrerol promotes the efficiency of SpCRISPR/Cas9-mediated gene targeting in HEK 293FT cells\n\nPrecisely inserting an exogenous gene into a specific locus requires efficient and faithful HR directed repair\u00a0(Pinder et al., 2015). We therefore set out to examine whether farrerol enhances the efficiency of SpCRISPR/Cas9-mediated gene targeting. HEK 293FT cells were pretreated with farrerol or two positive control compounds SCR7\u00a0(Chu et al., 2015; Li et al., 2017a) and RS-1\u00a0(Riesenberg and Maricic, 2018) at the indicated concentrations for 24 hr, followed by co-transfection with vectors encoding Cas9 and sgRNA targeting the AAVS1 site, and a donor plasmid containing a promoter-less puromycin and a GFP gene driven by the CAG promoter (Figure 2A). At 48 hr post transfection, cells were supplemented with 1 \u03bcg/mL puromycin, and puromycin-resistant and GFP+ colonies were then quantified (Figure 2B\u2013C). We further analyzed the knock-in efficiency using PCR with primers as indicated (Table 1; Figure 2A).\u00a0We\u00a0found that farrerol significantly stimulated the knock-in efficiency by\u00a0~2.0 fold at the concentration of 1 and 5 \u00b5M, which was similar to those of RS-1 or SCR7 treatment (Figure 2D\u2013E). In addition, we did not observe any significant effect on cell proliferation in the presence of farrerol at the indicated concentrations (Figure 2F), suggesting a low toxicity of this compound.\n\n**Table 1.**\n PCR primer sequences.Table 1\u2014source data 1.PCR primer sequences.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Target name</th>\n      <th>Primer name</th>\n      <th>Sequence (5'&gt;3')</th>\n      <th>Description</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>AAVS1</td>\n      <td>HR-AAVS1-F</td>\n      <td>gccgtctctctcctgagt</td>\n      <td rowspan=\"2\">Primer 1#</td>\n      <td rowspan=\"2\">PMID:23287722</td>\n    </tr>\n    <tr>\n      <td>AAVS1</td>\n      <td>HR-Puro-R</td>\n      <td>gtgggcttgtactcggtcat</td>\n    </tr>\n    <tr>\n      <td>AAVS1</td>\n      <td>GFP-F</td>\n      <td>acgtaaacggccacaagttc</td>\n      <td rowspan=\"2\">Primer 2#</td>\n      <td rowspan=\"2\">This paper</td>\n    </tr>\n    <tr>\n      <td>AAVS1</td>\n      <td>GFP-R</td>\n      <td>gaactccagcaggaccatgt</td>\n    </tr>\n    <tr>\n      <td>Actb</td>\n      <td>mActb-HR-F</td>\n      <td>ccatctacgagggctatgct</td>\n      <td rowspan=\"2\">5' junction</td>\n      <td rowspan=\"4\">This paper</td>\n    </tr>\n    <tr>\n      <td>Actb</td>\n      <td>mActb-HR-R</td>\n      <td>gtgggcttgtactcggtcat</td>\n    </tr>\n    <tr>\n      <td>Actb</td>\n      <td>3' Actb-puro-F</td>\n      <td>gtgtctctcactcggaaggac</td>\n      <td rowspan=\"2\">3' junction</td>\n    </tr>\n    <tr>\n      <td>Actb</td>\n      <td>3'inner-R</td>\n      <td>gcctaggtttctggaggagt</td>\n    </tr>\n    <tr>\n      <td>Actb</td>\n      <td>5'outer-F</td>\n      <td>ccctgagtgtttcttgtggc</td>\n      <td rowspan=\"4\">5' junction</td>\n      <td rowspan=\"8\">PMID:28524166</td>\n    </tr>\n    <tr>\n      <td>Actb</td>\n      <td>5'outer-R</td>\n      <td>tggagccgtacatgaactga</td>\n    </tr>\n    <tr>\n      <td>Actb</td>\n      <td>5'inner-F</td>\n      <td>ccatctacgagggctatgct</td>\n    </tr>\n    <tr>\n      <td>Actb</td>\n      <td>5'inner-R</td>\n      <td>tgaagcgcatgaactccttg</td>\n    </tr>\n    <tr>\n      <td>Actb</td>\n      <td>3'outer-F</td>\n      <td>gccccgtaatgcagaagaag</td>\n      <td rowspan=\"4\">3' junction</td>\n    </tr>\n    <tr>\n      <td>Actb</td>\n      <td>3'outer-R</td>\n      <td>aggtagtgttagtgcaggcc</td>\n    </tr>\n    <tr>\n      <td>Actb</td>\n      <td>3'inner-F</td>\n      <td>ctacgacgctgaggtcaaga</td>\n    </tr>\n    <tr>\n      <td>Actb</td>\n      <td>3'inner-R</td>\n      <td>gcctaggtttctggaggagt</td>\n    </tr>\n    <tr>\n      <td>Cdx2</td>\n      <td>5'outer-F</td>\n      <td>acttggacagagaaagagcgatt</td>\n      <td rowspan=\"4\">5' junction</td>\n      <td rowspan=\"8\">PMID:28524166</td>\n    </tr>\n    <tr>\n      <td>Cdx2</td>\n      <td>5'outer-R</td>\n      <td>tccatgtgcaccttgaagc</td>\n    </tr>\n    <tr>\n      <td>Cdx2</td>\n      <td>5'inner-F</td>\n      <td>aacaaaggtccagtctacgcat</td>\n    </tr>\n    <tr>\n      <td>Cdx2</td>\n      <td>5'inner-R</td>\n      <td>ggccatgttatcctcctcgc</td>\n    </tr>\n    <tr>\n      <td>Cdx2</td>\n      <td>3'outer-F</td>\n      <td>gacggccccgtaatgcagaa</td>\n      <td rowspan=\"4\">3' junction</td>\n    </tr>\n    <tr>\n      <td>Cdx2</td>\n      <td>3'outer-R</td>\n      <td>tagcttgcaaccagagaagatgt</td>\n    </tr>\n    <tr>\n      <td>Cdx2</td>\n      <td>3'inner-F</td>\n      <td>ctacgacgctgaggtcaaga</td>\n    </tr>\n    <tr>\n      <td>Cdx2</td>\n      <td>3'inner-R</td>\n      <td>cgacttcccttcaccatacaac</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic diagram of the gene targeting strategy at the human AAVS1 locus. A donor vector containing a promoter-less p2A-puromycin and GFP gene driven by the CAG promoter was designed for targeting the AAVS1 locus. The underlined trinucleotide represents the PAM, and the sgRNA targeting site is labeled in blue.\u00a0Puro stands for puromycin. Two pairs of primers used for genotyping are indicated by arrows. The length of the left and right homologous arm is 804 bp and 837 bp, respectively. Primer sequences are listed in the Table 1. (B) Workflow of gene targeting at the AAVS1 locus in HEK 293FT cells. (C) Representative microscopy images of successfully targeted GFP+ HEK 293FT cells post 1 \u03bcg/mL puromycin selection. (D\u2013E) Effect of different small molecules on gene knock-in frequency at the human AAVS1 locus. The surviving colonies post puromycin selection were further validated by genotyping using PCR. (F) Growth curve of HEK 293FT cells treated with the indicated doses of farrerol. For (D) and (E), \u03c72-test was used for statistical analysis. Error bars in (F) represent the s.d. and t-test was used for statistical analysis. *p<0.05, **p<0.01, n.s., not significant. All experiments were repeated at least three times.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic diagram of gene targeting strategy at human AAVS1 locus. Donor vector containing a promoter-less p2A-mCherry was designed for targeting the AAVS1 locus. The underlined trinucleotide represents PAM, and the sgRNA targeting site is labeled in blue. The length of the left and right homologous arm is 804 bp and 837 bp, respectively. (B\u2013C) Effect of different small molecules treatment on gene knock-in frequency at human AAVS1 locus. The representative FACS traces are shown in (B). Knock-in frequency was indicated by the percentage of mCherry+ cells in (C). Error bars represent the s.e.m. *p<0.05, ***p<0.001, ****p<0.0001, n.s., not significant, t-test. All experiments were repeated at least three times.\n\nMore strictly, we further examined whether farrerol could improve the efficiency of SpCRISPR/Cas9-mediated gene targeting using a different targeting vector. The p2A-mCherry-WPRE-polyA vector was then generated which also targeted the AAVS1 locus (Figure 2\u2014figure supplement 1A). Knock-in efficiency was measured by scoring the number of mCherry+ cells with FACS (Figure 2\u2014figure supplement 1B). Consistently, we found that farrerol could significantly improve the targeting efficiency in this system at concentrations ranging from 0.1 \u03bcM to 10 \u03bcM (Figure 2\u2014figure supplement 1B\u2013C).\n\nTaken together, these data reveal that farrerol improves knock-in efficiency in HEK 293FT cells.\n\n### Farrerol promotes SpCRISPR/Cas9-mediated gene knock-in in mouse ESCs\n\nBecause efficient gene targeting in ESCs holds great potential for further application in both basic research and clinical medicine, we set out to test whether farrerol could enhance the efficiency of SpCRISPR/Cas9-mediated insertions in mouse ESCs. We first examined the insertion efficiency at the Actin \u03b2 (Actb) locus, using an sgRNA as previously described\u00a0(Yao et al., 2017). Mouse ESCs were pretreated with farrerol, SCR7 or RS-1 for 24 hr, followed by a co-transfection with vectors encoding Cas9, sgRNA targeting the Actb site, and a donor plasmid containing a promoter-less p2A-puromycin and GFP gene driven by the CAG promoter (Figure 3A). Successful insertion mediated by HR directed repair in this system results in an Actb-puromycin-CAG-GFP fusion protein, converting cells to puromycin resistant and GFP positive. Then, these puromycin-resistant colonies could be stained with Coomassie blue and counted to score insertion efficiency (Figure 3B). Meanwhile, GFP+ colonies could be observed under the fluorescence microscope (Figure 3C). Strikingly, we found that treating cells with an increasing concentration of farrerol significantly promoted knock-in efficiency by as high as 2.8-fold (10 \u03bcM) while both SCR7 and RS-1 had only mild effects on insertion efficiency (Figure 3D). Furthermore, we picked individual mouse ESC colonies, and confirmed the correct insertion into the Actb locus by PCR and Sanger sequencing (Figure 3E). Together, these data demonstrate that farrerol dramatically stimulates the efficiency of SpCRISPR/Cas9-mediated gene targeting into Actb locus of mouse ESCs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic diagram of the gene targeting strategy at the mouse Actb locus. A donor vector containing a promoter-less p2A-puromycin\u00a0(Puro) and GFP gene driven by the CAG promoter was designed for targeting the mouse Actb locus. The underlined trinucleotide represents the PAM, and the sgRNA targeting site is labeled in red.\u00a0The length of the left and right homologous arm is 801 bp and 800 bp, respectively. (B) Representative images of Coomassie blue stained puromycin resistant E14 cells which were successfully knocked in. Transfection of donor only or the mixture of sgRNA and Cas9 were set as the negative control. (C) Representative microscopy images of successfully targeted E14 cells with GFP expression. (D) Effect of different small molecules on gene targeting frequency at the Actb locus in mouse ESCs. The knock-in efficiency was measured by counting the cell colonies which were resistant to puromycin. (E) The Sanger sequencing results of the 5\u2019 and 3\u2019 junction regions of successfully knocked-in cells treated with farrerol. HAL stands for the left homologous arm and HAR stands for the right homologous arm. Error bars represent the s.e.m. **p<0.01, ***p<0.001, n.s., not significant, t-test. All experiments were repeated at least three times.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schematic diagram of gene targeting strategy at the Rosa26 locus in mouse ESCs. Donor vector containing a promoter-less p2A-BFP-WPRE was designed for targeting the mouse Rosa26 locus. The underlined trinucleotide represents PAM, and the sgRNA targeting site is labeled in green. The length of both the left and right homologous arm are 800 bp. (B\u2013C) Effect of different small molecules treatment on gene knock-in frequency at mouse Rosa26 locus. The representative FACS traces are shown in (B). Knock-in frequency was indicated by the percentage of BFP+ cells in (C). Error bars represent the s.e.m. **p<0.01, ***p<0.001, ****p<0.0001, t-test. All experiments were repeated at least three times.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Schematic diagram of gene targeting strategy at the Sox2 locus in mouse ESCs. Donor vector containing a promoter-less p2A-mCherry was designed for targeting the mouse Sox2 locus. The underlined trinucleotide represents PAM, and the sgRNA targeting site is labeled in light brown. The length of the left and right homologous arm is 789 bp and 776 bp, respectively. (B\u2013C) Effect of different small molecules treatment on gene knock-in frequency at mouse Sox2 locus. The representative FACS traces are shown in (B). Knock-in frequency was indicated by the percentage of mCherry+ cells in (C). Error bars represent the s.e.m. **p<0.01, ***p<0.001, ****p<0.0001, t-test. All experiments were repeated at least three times.\n\nIn addition to the Actb locus, we further tested if pretreatment of farrerol facilitated the SpCRISPR/Cas9-mediated targeting into two other loci, Rosa26 and Sox2. A p2A-BFP-WPRE donor was designed to target the Rosa26 locus in mouse ESCs (Figure 3\u2014figure supplement 1A). On day three post transfection of plasmids containing the donor and Cas9 along with sgRNA targeting the Rosa26 site, the percentage of BFP+ cells was measured by FACS. Consistently, treating cells with farrerol significantly improved knock-in efficiency, with the largest increase of 2.9-fold observed at the concentration of 5 \u03bcM (Figure 3\u2014figure supplement 1B\u2013C). Additionally, a 2.0-fold improvement in knock-in efficiency at the Sox2 site could be observed after farrerol treatment at the concentration of 5 \u03bcM, by examining with a previously reported p2A-mCherry donor\u00a0(Yao et al., 2017; Figure 3\u2014figure supplement 2). Collectively, farrerol can efficiently promote HR at multiple loci in mouse ESCs.\n\n### Farrerol has no obvious adverse effects on genomic stability in human fibroblasts or mouse ESCs\n\nTo investigate whether treating cells with farrerol would lead to a destabilized genome, we first performed immunostaining experiments with antibodies against \u03b3H2AX and 53BP1 to examine the potential genotoxic side effects of each small molecule. We observed a mild decrease in \u03b3H2AX foci number or fluorescence intensity, and no obvious change in 53BP1 foci number in farrerol-treated HCA2-hTERT fibroblasts or mouse ESCs (Figure 4A\u2013D; Figure 4\u2014figure supplement 1). However, treating cells with SCR7 and RS-1 resulted in the increase of the percentage of \u03b3H2AX positive cells, suggesting the genotoxic side effects of these two molecules on cells (Figure 4\u2014figure supplement 1A\u2013B). Comet assay was also performed to examine if farrerol had any negative effect on genome integrity, and no significant change was noticed in the presence of farrerol (Figure 4E). By contrast, although fairly mild, we observed a significant increase in genomic instability in mouse ESCs treated with SCR7 (Figure 4E), which inhibits the NHEJ pathway. To further explore the potential influence of drug treatment on large-scale chromosomal rearrangements, we further performed karyotyping analysis. The result showed that farrerol treatment had no obvious influence on the karyotype of mouse ESCs after gene editing. And more surprisingly, treating mouse ESCs with SCR7 or RS-1 for only 48 hr caused a significant decrease in the percentage of cells with normal karyotypes (Figure 4F). Furthermore, we also performed EdU incorporation experiments to examine if farrerol affected DNA replication in mouse ESCs. In agreement with the analysis in HEK 293FT cells (Figure 2F), we did not observe any significant change in DNA replication in mouse ESCs (Figure 4\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative images of \u03b3H2AX immunostaining in mouse ESC E14 treated with indicated doses of small molecules. (B) Analysis of relative intensity of \u03b3H2AX in mouse ESCs in (A). The results were normalized to those in control group. Each dot represents the relative fluorescence intensity of a single nucleus. (n\u00a0\u2265\u00a0180 single nucleus). (C) Representative images of 53BP1 immunostaining in mouse ESC E14 treated with indicated doses of small molecules. (D) Quantification of 53BP1 foci numbers in (C). At least 50 cells were included for each group. (E) Representative images of alkaline comet assay of mouse ESC E14 treated with indicated doses of molecules for 24 hr (left panel). The tail moments of at least 50 cells for each group were quantified using Cometscore software (Sumerduck, VA, USA) (right panel). (F) Karyotyping analysis indicated\u00a0that 48 hr farrerol treatment post spCRSIPR/Cas9 mediated editing did not greatly affect karyotypes (40, XY) of the Oct4-\u0394PE-GFP transgenic C57BL/6 \u00d7 PWK ESCs. Error bars in (B), (D) and (E) represent the s.e.m. Error bars in (F) represent the s.d. *p<0.05, **p<0.01, ***p<0.001, n.s., not significant, t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative images of \u03b3H2AX immunostaining in HCA2-hTERT cells treated with indicated doses of small molecules. (B) Quantification of the percentage of cells with more than 10 \u03b3H2AX foci per nucleus in (A). At least 50 cells were included for each group. (C) Representative images of 53BP1 immunostaining in HCA2-hTERT cells treated with indicated doses of small molecules. (D) Quantification of the percentage of cells with more than 10 53BP1 foci per nucleus in (C). At least 50 cells were included for each group. Error bars represent the s.d. *p<0.05, **p<0.01, ***p<0.001, n.s., not significant, t-test.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Proliferation of mouse ESC E14 treated with indicated doses of molecules was analyzed using EdU incorporation assay. Error bars represent the s.d., n.s., not significant, t-test.\n\nIn summary, these results indicate that farrerol is a safe compound when used to improve the efficiency of precise genome integration.\n\n### Farrerol effectively promotes targeted integration and supports the efficient generation of gene-targeting mice with germline transmission\n\nTo further test the utility of farrerol in the embryo system and whether it could facilitate the generation of gene targeted animals, we first examined its potential toxicity. Mouse zygotes were cultured in media containing either farrerol, RS-1 or SCR7, and we then examined whether these compounds had any impact on the in vitro development potential of mouse embryos. We found that farrerol could fully support the mouse embryos through the hatching of blastocysts as did control and RS-1; by contrast, SCR7 treatment significantly impaired the blastocyst production rate (Figure 5A\u2013B; Figure 5\u2014figure supplement 1A). Considering the SpCRISPR/Cas9-mediated cleavage of DNA and the subsequent HR directed repair occurs and is primarily completed during the 1 cell to 2 cell stage, we then cultured the mouse zygotes in the indicated small molecule containing media through the late 2 cell stage. The results indicated that short-period treatment with the three compounds had nearly no effect on the early embryo development and more than 95% of the 2 cell embryos could develop into the blastocyst stage (Figure 5\u2014figure supplement 1B). However, during the zygotes stage where DSBs were induced due to the injection of Cas9 mRNA and sgRNA targeting the Cdx2 locus, treatment with the three compounds yielded different results. Only 62.5% of SCR7 treated embryos could develop into the blastocyst stage, probably due to the inhibition of NHEJ. By contrast, farrerol treated embryos showed an 82.4% blastocyst production rate (Figure 5C; Figure 5\u2014figure supplement 1C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig5-v2.jpg)\n\n**Figure 5.:** (A) In vitro development potential of mouse embryos treated with indicated doses of compounds during the whole embryonic stages. (B) The development rate of hatching blastocysts at E4.5 treated with indicated doses of compounds. The data is related to (A). (C) Effect of compounds treatment for 24 hr on in vitro development potential of mouse embryos upon DSBs were induced by Cas9 mRNA and sgRNA targeting the Cdx2 locus. (D) Schematic diagram of the gene targeting strategy at the Actb locus in mouse embryos. A donor vector containing a promoter-less p2A-mCherry was designed for targeting the Actb locus. The underlined trinucleotide represents the PAM, and the sgRNA targeting site is labeled in red. The length of the left and right homologous arm is 801 bp and 800 bp, respectively. (E) Diagram of the methods for gene targeting efficiency analysis in mouse blastocysts. (F) Representative fluorescence images of gene-edited mouse embryos at the Actb locus at the blastocyst stage. (G\u2013H) Effect of indicated small compounds on gene knock-in frequencies at the Actb locus. Knock-in frequency was indicated by the percentage of mCherry+ blastocysts in (G), and was confirmed by PCR genotyping analysis using primers amplifying the flanks of the Actb site in (H). Number above each bar, total blastocysts analyzed. Error bars in (A), (B) and (C) represent the s.d. and t-test was used for statistical analysis. For (G) and (H), \u03c72-test was used for statistical analysis. *p<0.05, **p<0.01, n.s., not significant.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Representative images of in vitro cultured mouse embryos treated with indicated compounds until E4.5. (B) In vitro development potential of mouse embryos with short-period treatment of indicated compounds till late 2 cell stage. (C) Representative images of mouse embryos with short-period treatment of indicated compounds upon DSBs were induced with Cas9 mRNA and sgRNA targeting the Cdx2 locus. (D) Analysis of knock-in frequencies at the Actb locus in mouse blastocysts treated with indicated doses of compounds by genotyping analysis. The blastocysts were lysed for genomic DNA extraction, then the 5\u2019 and 3\u2019 junction at the Actb locus were amplified for Sanger sequencing. Error bars in (B) represent the s.d., t-test. For (D), \u03c72-test was used for statistical analysis. *p<0.05, **p<0.01.\n\nTo further investigate whether farrerol could improve knock-in efficiency in mouse embryos, we injected Cas9 mRNA, sgRNA targeting the Actb gene and p2A-mCherry donor cassette into mouse zygotes (Figure 5D\u2013E;\u00a0Yao et al., 2017). Then the injected zygotes were treated with farrerol at a concentration of 0 (control), 0.05 \u03bcM, 0.1 \u03bcM, or SCR7 (20 \u03bcM), RS-1 (7.5 \u03bcM) as previously reported\u00a0(Song et al., 2016). At late 2 cell stage, these embryos were picked out and cultured in normal media until the blastocyst stage, and the integration efficiencies were assessed by mCherry+ fluorescence at E4.5 (Figure 5F). Interestingly, a much higher rate of mCherry+ blastocysts was observed in the presence of farrerol (0.05 \u03bcM, 27.3%; 0.1 \u03bcM, 21.0%), than in the control treatment (14.0%) (Figure 5F\u2013G). Importantly, this efficiency is comparable to or even higher than that mediated by HMEJ (Homology-mediated end joining, 22.7%) and MMEJ (Microhomology-mediated end joining, 11.9%) donors\u00a0(Yao et al., 2017). By contrast, the knock-in efficiency was only slightly improved after SCR7 (19.2%) or RS-1 (16.5%) treatment, which is in agreement with a recent study\u00a0(Song et al., 2016). We then examined the integration fidelity by genotyping the integration sites of individual blastocysts. Consistently, PCR amplification of both the 5\u2019 and 3\u2019 junctions revealed that farrerol treatment led to a higher in-frame integration rate (farrerol: 0.05 \u03bcM, 27.0%; 0.1 \u03bcM, 23.0%) in comparison to the control group (13.0%). However, treatment with SCR7 (15.1%) or RS-1 (17.8%) were shown to have limited effect (Figure 5H; Figure 5\u2014figure supplement 1D).\n\nTo rule out the possibility that the promotion of the SpCRISPR/Cas9-mediated genome targeting efficiency is position-dependent in mouse embryos, we further examined the knock-in efficiency at the Cdx2 locus, by fusing a p2A-mCherry cassette to the C-terminus of the trophectoderm (TE) marker gene (Figure 6A). Successful integration into Cdx2 locus results in mCherry positivity, which can be observed in trophoblast cells in the blastocyst. Embryos treated by farrerol showed a repeatable and remarkable increase of mCherry+ fluorescence signals in TE by 57.4% (0.05 \u03bcM) and 68.3% (0.1 \u03bcM) in comparison to that in control group. As a comparison, SCR7 and RS-1 improved the targeting efficiency by 54.3% and 37.4% respectively (Figure 6B\u2013C). Genotyping analysis further confirmed the capacity of farrerol to robustly stimulate SpCRISPR/Cas9-mediated gene editing (Figure 6D; Figure 6\u2014figure supplement 1A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic diagram of the gene targeting strategy at the Cdx2 locus in mouse embryos. A donor vector containing a promoter-less p2A-mCherry was designed for targeting the Cdx2 locus. The underlined trinucleotide represents the PAM, and the sgRNA targeting site is labeled in brown. The length of both the left and right homologous arm are 800 bp. (B) Representative fluorescence images of gene-edited mouse embryos at the Cdx2 locus at the blastocyst stage. (C\u2013D) Effect of different small molecules treatment on gene knock-in frequency at the Cdx2 locus. Knock-in frequency was indicated by the percentage of mCherry+ blastocysts in (C), and was confirmed by PCR genotyping analysis using primers amplifying the flanks of the Cdx2 site in (D). Number above each bar, total blastocysts analyzed. (E) Effect of different knock-in strategies on generation of gene-targeting mice. The microinjected 2 cell stage embryos with or without farrerol treatment was transplanted into the pseudo-pregnant mice. The HMEJ mediated knock-in assay was applied as a control. The founder mice were genotyped for gene-targeting frequency analysis. The germline transmission abilities of founder mice were also validated. (F) Representative fluorescence images of blastocysts from homozygous Cdx2-mCherry mice. (G) Representative fluorescence images of Cdx2 mCherry signals in embryos at the stage of E7.5 and E9.5 after homozygous Cdx2-mCherry mice mating with wild-type mice. *p<0.05, **p<0.01, ****p<0.0001, n.s., not significant, \u03c72-test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Analysis of knock-in frequencies at the Cdx2 locus in mouse blastocysts treated with indicated doses of molecules by genotyping analysis. The blastocysts were lysed for genomic DNA extraction, then the 5\u2019 and 3\u2019 junction at the Cdx2 locus were amplified for Sanger sequencing. (B) Experimental scheme for targeted Cdx2-p2A-mCherry knock-in founder mouse. (C) Genotyping analysis of gene-targeting mice. Genomic DNA were prepared from mouse tail tips, then the 5\u2019 and 3\u2019 junction at the Cdx2 locus were amplified. H2O is set as negative control. For positive control (PC), the gDNA of mouse blastocysts which has been successfully knocked-in at Cdx2 site using the same sgRNA and donor, was used as the template for PCR. (D) Precise in-frame integration was further confirmed by Sanger sequencing in the five gene-targeting mice in farrerol treatment group.\u00a0HAL stands for the left homologous arm and HAR stands for the right homologous arm. **p<0.01, ****p<0.0001, \u03c72-test.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56008/elife-56008-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A\u2013D) The knock-in efficiencies at the Actb and Cdx2 locus were analyzed in mouse blastocysts. Knock-in frequency was indicated by the percentage of mCherry+ cells at the Actb locus in (A) and at the Cdx2 locus in (B), and was indicated by PCR genotyping analysis using primers amplifying the flanks of Actb site in (C) and Cdx2 site in (D). Number above each bar, total blastocysts analyzed. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, n.s., not significant, \u03c72-test.\n\nIn order to test if farrerol potentially affected the late stages of embryonic development and the generation of knock-in mice, we transplanted farrerol-treated microinjected 2 cell stage embryos into pseudo-pregnant mice (Figure 6\u2014figure supplement 1B). In the farrerol treated group, 12 out of 33 mice showed an in-frame integration (36.4%; potential founders #1, #2, #3, #7, #9, #16, #18, #21, #23, #26, #27, #32), which was confirmed by the PCR amplification of both the 5\u2019 and 3\u2019 junctions at Cdx2 locus (Figure 6E; Figure 6\u2014figure supplement 1C). Sanger sequencing data further supported this conclusion (Figure 6\u2014figure supplement 1D). By contrast, only one knock-in mouse was identified in a total 53 mice generated in control group. In addition, as a further comparison, no knock-in mice were detected by using the HMEJ donor\u00a0(Yao et al., 2017; Figure 6E). Moreover, Cdx2-mCherry mice generated from farrerol treated embryos had germline transmission abilities and the allele with the exogenous gene knocked in could be stably transmitted to the progeny generation (F1) with Mendel\u2019s law of segregation, after being crossed with wild-type C57BL/6 mice (Figure 6E). Furthermore, homozygous Cdx2-mCherry mice could be successfully produced and maintained. And all the blastocysts from these mice after crossing showed the strong mCherry+ fluorescence signals in the trophectoderm (Figure 6F). At the E7.5 stage, these mCherry signals were restricted to extraembryonic ectoderm (ExE) (Figure 6G). At the stage of E9.5, Cdx2 mCherry signals could be observed in embryonic tissues, principally in the posterior part of the gut, tail bud and the caudal part of the neural tube as previously reported (Figure 6G;\u00a0Beck et al., 1995).\n\nSince the glycoprotein matrix, termed the zona pellucida (ZP), surrounding mammalian eggs physically separates the embryo from the external environment which may restrict the actual working concentration of this small molecule, we then asked whether the integration efficiency could be further improved by direct injection of farrerol into the cytoplasm of the zygote. Thus, small molecules (farrerol at final concentration of 0.05 \u03bcM, 0.1 \u03bcM; SCR7 at final concentration of 1 \u03bcM; RS-1 at final concentration of 7.5 \u03bcM) were individually added to the CRISPR/Cas9 mixture (Cas9 mRNA, sgRNA and donor) for microinjection into the zygotes and the injected embryos were cultured in normal medium into blastocysts. Intriguingly, in comparison to control group, we observed a significantly increased rate of gene editing at the Actb site (0.05 \u03bcM, by 2.3-fold; 0.1 \u03bcM, by 2.6-fold) and Cdx2 locus (0.05 \u03bcM, by 2.0-fold; 0.1 \u03bcM, by 2.3-fold) after co-injection of farrerol, while co-injecting the other two compounds had mild effects on integration efficiency (Figure 6\u2014figure supplement 2A\u2013B). The genotyping analysis further confirmed that farrerol could promote gene editing at these two genomic loci (Figure 6\u2014figure supplement 2C\u2013D).\n\nCumulatively, these results demonstrate that farrerol can enhance in-frame integration of exogenous donor DNA and efficiently generate knock-in mice with germline transmission capacity.\n\n## Discussion\n\nRecently developed exogenous enzyme-based genome editing tools have greatly improved the efficiency of gene knock-out as the generated DSBs can be repaired by the error-prone and cell cycle-independent NHEJ pathway, resulting in non-functional genes (Guo et al., 2018; Maeder and Gersbach, 2016). In contrast, precisely knocking genetic material into an endogenous locus requires an active HR pathway, which is not a predominant DSB repair pathway in human cells (Mao et al., 2008a; Mao et al., 2008b). Therefore, promoting HR directed repair or suppressing the NHEJ pathway have been explored as tools for improving the efficiency of SpCRISPR/Cas9-mediated gene targeting (Smirnikhina et al., 2019). Quite different from other screening platforms applied for searching for gene targeting activators, here, we created the screening platform based on DSB repair outcomes. The advantages of this system are that (1) it does not require any transfection of exogenous genes, and therefore avoids any potential interference resulting from transfections, such as changes in cell cycle stages, in which DSB repair pathways differ; (2) it can be easily scored either on FACS or on a high throughput automated high-content IN Cell imaging system; (3) the screened compounds affecting the efficiency of the two DSB repair pathways can be applied to other purposes including targeting cancer alone or in combination with other therapeutic methods, and delaying the onset of aging by improving genome integrity.\n\nOur data clearly indicate that farrerol promotes HR through facilitating the recruitment of RAD51, the critical recombinase involved in HR, to DSB sites, but has no obvious effect on NHEJ. This result explains our observation that farrerol promotes SpCRISPR/Cas9-mediated targeting efficiency at different genomic loci in different cell types, indicating that farrerol holds great potential in applications related to SpCRISPR/Cas9-mediated genome editing. Among a number of compounds that stimulate the efficiency of gene targeting, RS-1 and SCR7 are the best-characterized and the most commonly used. RS-1 physically interacts with RAD51 to promote HR (Jayathilaka et al., 2008). Surprisingly, the promotion of gene targeting by RS-1 is dependent on the size of the homologous arm of the targeting vectors (Pan et al., 2016; Pinder et al., 2015), and the type of cells (Song et al., 2016; Zhang et al., 2017). It is hypothesized that the promotion of gene targeting by SCR7 is through suppressing the canonical NHEJ (c-NHEJ) pathway by blocking the enzymatic activity of DNA LIG4, forcing cells to choose the other DSB repair pathway \u2013 HR (Greco et al., 2016; Srivastava et al., 2012). Although some of our results confirmed previous findings that supplementing SCR7 improves the efficiency of gene targeting (Maruyama et al., 2015; Singh et al., 2015; Song et al., 2016), the effects are rather mild and it does not always function at the given genomic locus or in different types of cells. This can be explained by the fact that in addition to c-NHEJ and HR, alternative NHEJ (alt-NHEJ) can also repair DSBs. Treating cells with SCR7 actually leaves DSBs repaired either by HR and alt-NHEJ. Whether an optimized treatment with farrerol \u2013 such as concentration, treatment time or combinations of these compounds can further improve gene targeting efficiency remains to be further determined. Moreover, a comprehensive and thorough study on the mechanism by which farrerol promotes HR would also help the future application of this compound in genome editing.\n\nSince HR and NHEJ are two competitive pathways when repairing DSBs particularly in the S/G2 phase with sister chromatids available (Mao et al., 2008b), why does not the activation of HR pathway by farrerol cause the decrease in NHEJ? Upon DSB induction, several consequences might occur: (1) DSBs are not repaired and cells undergo cellular senescence or apoptosis; (2) DSBs are repaired by canonical NHEJ or alternative NHEJ; (3) DSBs are repaired by three sub-pathways of HR, gene conversion, crossover and SSA. Since we also observed that farrerol suppresses the mutagenic SSA pathway, it is possible that without affecting the two sub-NHEJ pathways, farrerol promotes the two precise HR pathways \u2013 gene conversion and crossover \u2013 by suppressing SSA pathway. Another possibility is that farrerol might tip cells with DSBs away from entering senescence or apoptosis and towards DSB repair by HR.\n\nSafety is one of the most noteworthy issues in the field of genome editing. Our data suggest that farrerol exhibits no detectable adverse effect on the normal development of mouse blastocysts in vitro. More importantly, healthy founder mice with the precise genomic edit of interest could be efficiently generated, and the edited allele could be successfully transmitted to their offspring. Although some literature has reported that high concentration of SCR7 treatment increased the HR efficiency by as much as 10-fold in mouse embryos (Singh et al., 2015) and mammalian cells (Li et al., 2017a), our data indicated that SCR7 at such a high concentration would lead to adverse effects on karyotype and blastocyst development. The reason might lie in that inhibiting c-NHEJ might lead to inefficient and late repair of DSBs (Chen et al., 2008; Vartak and Raghavan, 2015), resulting in abnormal development. In addition, blocking c-NHEJ may destabilize genomes, increasing the incidence of tumorigenesis and the onset of premature aging (Chen et al., 2008; Sekiguchi et al., 1999; Vogel et al., 1999). Moreover, the further application of compounds activating HR directed repair should also be cognizant of the possibility that aberrantly activated HR might be beneficial to tumor cells, and may disrupt the genome integrity by aberrantly recombining the abundantly available repetitive sequences across the genomes in normal cells\u00a0(Putnam et al., 2009; Sasaki et al., 2010). For instance, increased expression of RAD51 destabilizes genomes by stimulating aneuploidy and making chromosomal rearrangements more likely (Richardson et al., 2004). Future studies on whether and how a short-term treatment of RS-1 or farrerol affects genome integrity are still warranted.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>C57BL/6n</td>\n      <td>Beijing Vital River Laboratory</td>\n      <td>Stock No.:\u00a0213</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>ICR</td>\n      <td>Beijing Vital River Laboratory</td>\n      <td>Stock No.:\u00a0201</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>BDF1</td>\n      <td>This\u00a0paper</td>\n      <td>/</td>\n      <td>The BDF1 hybrid mice were obtained from mating female C57BL/6n mice with male DBA/2 mice.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>DBA/2</td>\n      <td>Beijing Vital River Laboratory</td>\n      <td>Stock No.: 214</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>PWK/PhJ</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No.:\u00a0003715</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>AAVS1</td>\n      <td>GenBank</td>\n      <td>GeneID: 54776</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (M. musculus)</td>\n      <td>Actb</td>\n      <td>GenBank</td>\n      <td>GeneID: 11461</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (M. musculus)</td>\n      <td>Sox2</td>\n      <td>GenBank</td>\n      <td>GeneID: 20674</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (M. musculus)</td>\n      <td>Rosa26</td>\n      <td>GenBank</td>\n      <td>GeneID: 14910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (M. musculus)</td>\n      <td>Cdx2</td>\n      <td>GenBank</td>\n      <td>GeneID: 12591</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Trans109</td>\n      <td>TransGen Biotech</td>\n      <td>CD301</td>\n      <td>Competent cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo\u00a0sapiens)</td>\n      <td>HCA2-hTERT</td>\n      <td>Gorbunova et al., 2002 (doi: 10.1074/jbc.M202671200)</td>\n      <td></td>\n      <td>Human fibroblast</td>\n    </tr>\n    <tr>\n      <td>Cell line(Homo\u00a0sapiens)</td>\n      <td>HEK\u00a0293FT</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_6911</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>E14</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_C320</td>\n      <td>Mouse ES cell line</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Oct4-\u0394PE-GFP transgenic C57BL/6\u00a0\u00d7\u00a0PWK ESC</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Mouse ES cell line</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RPA2 (Rabbit polyclonal)</td>\n      <td>Abclonal</td>\n      <td>A2189 RRID:AB_2764207</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-NBS1 (Rabbit)</td>\n      <td>Cell Signaling Technology</td>\n      <td>3002 RRID:AB_331499</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RAD50 (Rabbit polyclonal)</td>\n      <td>Abclonal</td>\n      <td>A3078 RRID:AB_2764881</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RAD51 (Mouse polyclonal)</td>\n      <td>Abcam</td>\n      <td>ab88572 RRID:AB_2042762</td>\n      <td>IF (1:500), WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-MRE11 (Rabbit polyclonal)</td>\n      <td>Abclonal</td>\n      <td>A2559 RRID:AB_2764447</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-53BP1 (Rabbit polyclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>4937S RRID:AB_10694558</td>\n      <td>IF (1:100), WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CtIP (Rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>ab70163 RRID:AB_1209429</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-BRCA1 (Rabbit polyclonal)</td>\n      <td>Abclonal</td>\n      <td>A0212 RRID:AB_2757026</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-EXO1 (Rabbit polyclonal)</td>\n      <td>Abclonal</td>\n      <td>A6810 RRID:AB_2767391</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-XRCC2 (Rabbit polyclonal)</td>\n      <td>Abclonal</td>\n      <td>A1800 RRID:AB_2763839</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti- TUBULIN (Rabbit polyclonal)</td>\n      <td>Abmart</td>\n      <td>M20005</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-gamma H2AX (Rabbit polyclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>9718S RRID:AB_2118009</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>sgRNA-Cas9 plasmid</td>\n      <td>PMID:28524166</td>\n      <td></td>\n      <td>Kind gift from Hui Yang lab</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Click-iT EdU Assay Kit</td>\n      <td>Invitrogen</td>\n      <td>C10634</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Comet assay</td>\n      <td>Trevigen</td>\n      <td>Cat. # 4250\u2013050 K</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Farrerol</td>\n      <td>Sigma Aldrich</td>\n      <td>SML1389</td>\n      <td>0.05,\u00a00.1, 1, 5, 10 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RS-1</td>\n      <td>ApexBio</td>\n      <td>C3357</td>\n      <td>1, 7.5,\u00a010 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SCR7</td>\n      <td>Selleck</td>\n      <td>S7742</td>\n      <td>0.1, 1,\u00a020 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ software</td>\n      <td>ImageJ (http://imagej.nih.gov/ij/)</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism software</td>\n      <td>GraphPad Prism (http://graphpad.com)</td>\n      <td>RRID:SCR_015807</td>\n      <td>Version 6.0</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CASPLab software</td>\n      <td>CASPLab http://casp.sourceforge.net</td>\n      <td>RRID:SCR_007249</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI stain</td>\n      <td>Abcam</td>\n      <td>ab104939</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Construction of plasmids\n\nTo create a doxycycline-inducible vector expressing the rare endonuclease, I-SceI, the open reading frame (ORF) of I-SceI enzyme was amplified, and inserted into the AAVS1-TRE-GFP-CAG-rtTA vector to replace the GFP gene using SalI and MluI digestion. A hygromycin resistant gene was also amplified and inserted to the vector at the NotI/KpnI site.\n\nTo generate an AAVS1-mCherry donor vector, the backbone was isolated from an AAVS1 donor plasmid (AAVS1-SA-Puromycin-CAG-GFP) (Mali et al., 2013) by BglII digestion and gel purification. The p2A-mCherry insert was amplified from Actb-p2A-mCherry plasmid (Yao et al., 2017). Afterwards, the insert was recombined into the backbone using the ClonExpress MultiS Cloning Kit (Vazyme catalog no.C113).\n\nTo generate the puromycin-GFP donor for targeting the site of the mouse Actb gene, both homologous arms were amplified from the Actb-p2A-mCherry plasmid. They were then subcloned into the donor plasmid (AAVS1-SA-Puromycin-CAG-GFP) by replacing the two AAVS1 homologous arms.\n\nTo create the p2A-BFP-WPRE donor for targeting the mouse Rosa26 locus, the backbone was isolated from a Rosa26-GFP donor plasmid by MluI and PmeI digestion and gel purification. The insert BFP-WPRE fragment was amplified from a pCMV-BFP plasmid. Finally, the insertion fragment was recombined into the backbone vector using the ClonExpress MultiS Cloning Kit (Vazyme catalog no.C113).\n\nAll the generated constructs were validated by Sanger sequencing.\n\n### Generation of small molecule screening platform\n\nThe MscI linearized doxycycline-inducible I-SceI expression vector was transfected to the previously reported D4a cells (Chen et al., 2019) using the Lonza 4D electroporation machine with DT-130 program. At 24 hr post transfection, 30 \u03bcg/mL Hygromycin B was applied to the transfected cells for selection. On day 12, individual colonies were picked and expanded for further study.\n\n### Cell culture and transfection\n\nHCA2-hTERT fibroblasts and all derived cell lines were cultured in MEM (Sigma) supplemented with 10% FBS (Gibco, Cat. #: 10270\u2013106),1% penicillin/streptomycin (Gibco, Cat. #: 15140\u2013122) and 1% NEAA (Gibco, Cat. #: 11140\u2013050). HEK 293FT cells were maintained in DMEM (Sigma, Cat. #: D6429) supplemented with 10% FBS (Gibco, Cat. #: 10270\u2013106) and 1% penicillin/streptomycin (Gibco, Cat. #: 15140\u2013122). All cells were cultured at 37 \u00b0C in a 5% CO2 atmosphere.\n\nMouse ESCs (E14 cells and Oct4-\u0394PE-GFP transgenic C57BL/6\u00a0\u00d7\u00a0PWK ESC) were maintained in DMEM supplemented with 15% fetal bovine serum, 1% nonessential amino acid, 1% penicillin/streptomycin, 1% nucleosides, 1% L-glutamax, 0.1 mM mercaptoethanol, 1000 U/mL LIF, 1 \u03bcM PD0325901 (Selleck) and 3 \u03bcM CHIR99021 (Selleck).\n\nHEK 293FT cells and mouse ESCs were transfected using the Lonza 4D electroporation machine according to the manufacturer\u2019s instructions. For HEK 293FT cells transfection, 2\u00a0\u00d7\u00a0105 cells were transfected with mixed plasmids (1 \u03bcg sg-AAVS1 vector, 1 \u03bcg Cas9 expression plasmid and 1 \u03bcg donor plasmid) using CM130 program. For mouse ESCs, program of CG104 was used to transfect cells. Cells were treated with different small molecules for 24 hr before transfection. Farrerol was purchased from Sigma-Aldrich (SML1389). The concentration of small molecules used in cells were as follows: 0.1 \u03bcM or 1 \u03bcM SCR7 (Selleck) for HEK 293FT and mouse ESCs, and 1 \u03bcM or 20 \u03bcM SCR7 for mouse embryos. 1 \u03bcM or 10 \u03bcM RS-1 (ApexBio) for human and mouse cells, and 7.5 \u03bcM RS-1 for mouse embryos.\u00a00.05\u00a0\u03bcM or 0.1 \u03bcM farrerol for mouse embryos, and 0.1 \u03bcM or 1 \u03bcM or 5 \u03bcM or 10 \u03bcM farrerol for human and mouse cells.\n\nHEK 293FT cell line and mouse ESC E14 were obtained from ATCC. HCA2-hTERT cell line was obtained from Gorbunova lab (Gorbunova et al., 2002). The mouse ESC cell line used in karyotype analysis was derived from Oct4-\u0394PE-GFP transgenic C57BL/6\u00a0(paternal) \u00d7 PWK (maternal) blastocyst. All cell lines were routinely tested to ensure that they were mycoplasma free.\n\n### Zygote injection, embryo culturing and generation of Knock-in mice\n\nZygote injection and culture was performed as previously reported (Zheng et al., 2018). Briefly, embryos were isolated from C57BL/6n or BDF1 female mice (6\u20138 weeks old). The female mice were super ovulated by intraperitoneally injecting with PMSG (5\u20136 IU) (Pregnant mare serum gonadotropin) and hCG (6\u20137 IU) (Human choionic gonadotophin), and then mated to C57BL/6n or BDF1 male mice. The zygotes were harvested from oviducts and received the injection of mixed mCherry-donor (100 ng/\u03bcL), Cas9 mRNA (100 ng/\u03bcL) and sgRNA (70 ng/\u03bcL) targeting Actb or Cdx2 locus, then cultured in G1 plus medium (10128, Vitrolife) with small molecules for\u00a0~24 hr. Then the embryos were washed and cultured in new G1 plus medium without small molecules till blastocyst stage. In some cases, the zygotes were directly injected with small molecules and CRISPR/Cas9 mixture and cultured in G1 plus medium. The phenotype of embryos was evaluated on a fluorescent microscope and individual blastocysts were then picked for genotyping analysis.\n\nFor analysis of the toxicity of small molecules, the mouse zygotes were cultured in G1 plus medium containing individual small molecules till 2 cell stage or blastocyst stage. The in vitro developmental potential of these embryos was recorded until E4.5.\n\nFor generation of Cdx2-mCherry knock-in mice, zygotes were firstly injected with the combination of Cas9 mRNA (100 ng/\u03bcL), sgRNA targeting the Cdx2 locus (70 ng/\u03bcL) and donor (HR donor or HMEJ donor, 100 ng/\u03bcL). Then the injected embryos were cultured in G1 plus medium (10128, Vitrolife) with or without farrerol (0.05 \u03bcM) for about 24 hr. Then, 15\u201320 2-cell-stage embryos were transferred into the oviduct of a pseudopregnant female ICR mouse. The number of transferred embryos and born pups was recorded. The genotype of each offspring was verified through Sanger sequencing.\n\n### Analysis of the genome targeting efficiency\n\nFor the analysis of gene targeting efficiency in HEK 293FT and mouse ESCs, the cells were electroporated with donors in the absence or presence of the indicated compounds. On day two post transfection, cells were treated with 1 \u03bcg/mL puromycin for approximately 1 week. Formed colonies were picked and lysed in 20 \u03bcL lysis buffer (0.45% NP-40, 2 mg/mL Proteinase K) for 1 hr at 56 \u00b0C and 10 min at 95 \u00b0C (Li et al., 2017a). The lysates were used as templates for PCR amplification.\n\nFor the analysis of gene targeting efficiency in mouse embryos, the procedure was performed as previously reported (Yao et al., 2017). Single embryos were transferred into PCR tubes containing 5 \u03bcL buffer G1 (25 mM NaOH, 0.2 mM EDTA, pH 12) and were lysed at 95 \u00b0C for 10 min. Then 5 \u03bcL buffer G2 (40 mM Tris-Cl, pH 5) was added to the PCR tubes for neutralization as the samples were cooled to the room temperature. The lysates were used as templates for nested PCR with two pairs of primers.\n\nThe PCR products were analyzed on 1% agarose gel and the expected bands were purified for sequencing.\n\n### Production of Cas9 mRNA and sgRNA\n\nThe Cas9 mRNA and sgRNA were produced as previously reported (Liu et al., 2017). Briefly, Cas9 mRNA was in vitro transcribed using mMESSAGE mMACHINE T7 ultra transcription kit (Ambion, Thermo Fisher Scientific, USA). Meanwhile, sgRNAs were in vitro transcribed using MEGA shortscript T7 kit (Ambion, Thermo Fisher Scientific, USA). Both Cas9 mRNA and specific sgRNA were purified according to the standard protocol by phenol:chloroform extraction and ethanol precipitation, and then dissolved in DNase/RNase-free water (Life Technologies).\n\n### Comet assay\n\nMouse ESCs were seeded at a density of 1\u00a0\u00d7\u00a0105 cells per well on 6-well plates. On day 2, cells were incubated with compounds at indicated concentrations. On day 3, cells were harvested for the analysis of genomic stability using alkaline comet assay (Trevigen, Gaithersburg, MD, USA, Cat. # 4250\u2013050 K).\n\n### EdU incorporation assay\n\nMouse ESCs at a concentration of 2\u00a0\u00d7\u00a0105 per well were seeded on 6-well plates, followed by compound treatment in 24 hr. After the treatment for another 24 hr, cells were incubated with 10 \u03bcM EdU for 2 hr at 37 \u00b0C. Cells were collected for conducting EdU assay followed by analysis on FACSverse using a Click-iT EdU Assay Kit (Invitrogen, Waltham, MA, USA, C10634).\n\n### Immunofluorescence\n\nFor the immunofluorescence assay, cells cultured on coverslips were fixed with 4% paraformaldehyde for 15 min at room temperature, and washed with PBS for three times. Then the fixed cells were permeabilized with 0.25% Triton X-100 for 10 min, followed by 10 min-PBS washing for three times. Then the cells were blocked with 1% goat serum for 1 hr at room temperature, followed by the incubation with the indicated antibodies including anti-\u03b3H2AX (Cell signaling technology, Cat. #9718S), anti-53BP1 (Cell signaling technology, Cat. #4937S), anti-RAD51 (Abcam, Cat. #ab88572) or anti-RPA2 overnight at 4 \u00b0C. After washing with PBS for three times, the cells were incubated with the secondary antibody (Abcam, goat-anti-rabbit-FITC, Cat. #ab6717) for 1 hr at room temperature. Cells were then washed with PBS for three times before covered with mounting medium with DAPI (Abcam, Cat. #ab104939). The images were taken on a Nikon A1R laser scanning confocal microscope and analyzed with ImageJ.\n\n### Karyotyping assay\n\nThe karyotype analysis was performed as previously reported (Li et al., 2017b). Briefly, one million Oct4-\u0394PE-GFP transgenic C57BL/6\u00a0\u00d7 PWK ESCs were firstly transfected with 3 \u03bcg sgRNA-Cas9 plasmid targeting the Cdx2 locus and 2 \u03bcg donor plasmid. At 48 hr post transfection and treatment of indicated compounds, the cells were cultured in mouse ESC medium with 0.25 mg/mL colcemid (Invitrogen, Thermo Fisher Scientific) for 2\u00a0\u2013\u00a03 hr and collected with 0.05% Trypsin-EDTA (Invitrogen, Thermo Fisher Scientific).\u00a0Then cells were incubated in hypotonic solution containing 0.4% sodium citrate and 0.4% potassium chloride at 37\u00b0C for 5 min, and were then fixed with a methanol/acetic acid mixture (3:1, v/v). The fixed cells were mounted on coverslips and stained with Giemsa at 37\u00b0C for 10\u201315 min after drying.\n",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "1716928f-3b48-48fc-9f4a-23f1c235aca0",
+      "submission_id": "c0509476-06fe-4779-9c4b-30a225a7e189",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wolf-Dietrich Heyer, University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56008.sa1](https://doi.org/10.7554/eLife.56008.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nZhang et al. developed a screening platform using a dual fluorescent reporter for homologous recombination (HR) and non-homologous end joining (NHEJ) activity and report the identification of farrerol, a natural compound isolated from Rhododendron, that specifically enhances HR. The authors report a statistically significant increase in targeted integration using CRISPR-Cas9 mediated DSBs in HEK293 cells at the AAVS1 locus as well as in mouse embryonic stem cells at three different gene loci (Actb, Rosa26, Sox2). The compound does not lead to genotoxic stress as measured by \u03b3H2AX and 53BP1 foci and does not lead to karyotypic changes. Moreover, they show increased targeting activity in mouse embryos, which is statistically significant, an increase in germline transmission, and a control for absence of negative effect during embryonic development. The compound is readily commercially available and may substantially increase the efficiency of targeted integration in human and mouse cells, as well as aid in generating knock-in mice.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A high-throughput small molecule screen identifies farrerol as a potentiator of CRISPR/Cas9-mediated genome editing\" for consideration by eLife as a Tools and Resources article. Your article has been reviewed by two peer reviewers, including Wolf-Dietrich Heyer as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jessica Tyler as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is 'in revision at eLife'. Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThe manuscript describes the development of a screening platform using a dual fluorescent reporter on homologous recombination (HR) and non-homologous end joining (NHEJ) activity and the identification of farrerol, a natural compound isolated from Rhododendron, that appears to specifically enhance HR. The authors show that this compound enhances the HR signal by about 2.5-fold, whereas the NHEJ signal remains unchanged. They show a statistically significant increase in targeted integration using CRISPR-Cas9 mediated DSBs in HEK293 cells at the AAVS1 locus as well as in mouse embryonic stem cells at three different gene loci (Actb, Rosa26, Sox2). Moreover, they show increased targeting activity in mouse embryos, which is statistically significant, an increase in germline transmission, and control for absence of negative effect during embryonic development. The compound is readily commercially available and may substantially increase to efficiency of targeted integration in human and mouse cells, as well as aid in generating knock-in mice.\n\nEssential revisions:\n\n1) The screening platform and the dual reported system is not explained well in Figure 1 and needs substantial clarification. In A, what does SA and SD is not defined. How long is the homology for the HR assay part? What is the control of I-SceI? rtTA, PTRE and PCAG are not defined.\n\n2) The authors must discuss the unexpected result that HR is increased without a concomitant decrease in NHEJ. This is unexpected from the competition between both pathways, and typically mutants in one or the other pathway affect this balance in both directions. This result could also provide a key to understand the underlying mechanism, although it is understood that this contribution cannot address the underlying mechanism, but is focused on the observation as a tool.\n\n3) The limited immunoblot analysis in Figure 1\u2014figure supplement 2 does not allow to conclude that protein level changes are not causative, as only a small selection of HR proteins is analyzed and no negative regulators are considered. Excluding a mechanism by trying to demonstrate a negative from a small selection of targets is not a productive strategy, although it is useful to know that the protein analyzed show no changes.\n\n4) The key issue that would farrerol make a useful tool is that it does induce genotoxic side effects, as shown for the SCR7 or RS-1. The analysis in Figure 4\u2014figure supplement 2 tries to address this but needs to be expanded to include more markers of genotoxic stress (\u03b3H2AX foci, 53BP1 foci), karyotyping, and genomic analysis to monitor gross chromosomal rearrangements.\n\n5) The germline transmission data and conclusion in Figure 5 are based on small numbers (5 versus 0 events), and it is surprising to see no germline transmission in the controls. Any explanation?\n",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8188d930-3f1f-4395-a9a8-eccc63fd9b8c",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C1",
+      "claim": "The CLZ3 cell line was derived from the D4a human fibroblast cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "The CLZ3 cell line was derived from the previously described D4a human fibroblast cell line (Chen et al., 2019), which was developed to measure the efficiency of both HR and NHEJ simultaneously at the same chromosomal site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the derivation of CLZ3 from D4a cells with a citation to Chen et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "13a2074e-b824-4a61-9d9f-55d2d1e93c24",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C2",
+      "claim": "The D4a cell line was developed to measure the efficiency of both HR and NHEJ simultaneously at the same chromosomal site.",
+      "claim_type": "EXPLICIT",
+      "source": "The CLZ3 cell line was derived from the previously described D4a human fibroblast cell line (Chen et al., 2019), which was developed to measure the efficiency of both HR and NHEJ simultaneously at the same chromosomal site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the purpose of the D4a cell line with citation to Chen et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "fc58147a-0203-4ede-92e3-57de3140927e",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C3",
+      "claim": "Adding doxycycline to CLZ3 cells leads to I-SceI expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, using the CLZ3 cell line we found that adding doxycycline into the culture medium leads to the I-SceI expression (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C demonstrating I-SceI expression upon doxycycline addition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "813ab986-19ca-40d8-ac23-d442ea8ecb9d",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C4",
+      "claim": "Doxycycline addition to CLZ3 cells results in 4.3% tdTomato+ cells and 1.5% GFP+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "we observed both tdTomato+ (4.3%) and GFP+ cells (1.5%) either using confocal microscopy or FACS analysis (Figure 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data from FACS analysis and microscopy shown in Figures 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "e68e17e3-a885-4901-bc6a-2fa45ee489da",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C5",
+      "claim": "722 small molecules isolated from herbs used in traditional Chinese medicine were screened.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the system, we screened 722 small molecules isolated from herbs used in traditional Chinese medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the number and source of compounds screened.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "4bbed2cc-f637-46ee-8f1e-91098a938bb4",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C6",
+      "claim": "Farrerol is a natural compound isolated from Rhododendron dauricum.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that farrerol, a natural compound isolated from Rhododendron dauricum, which exhibits antibechic, anti-bacterial and anti-inflammatory properties (Zhang et al., 2015), promoted HR but had no effect on NHEJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly identifies the source of farrerol with citation to Zhang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "2a0690a1-ccc1-423f-b44a-ec0b22f4795b",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C7",
+      "claim": "Farrerol exhibits antibechic, anti-bacterial and anti-inflammatory properties.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that farrerol, a natural compound isolated from Rhododendron dauricum, which exhibits antibechic, anti-bacterial and anti-inflammatory properties (Zhang et al., 2015), promoted HR but had no effect on NHEJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Zhang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "b787d9f4-a244-4495-ae32-bc179092a601",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C8",
+      "claim": "Farrerol promoted HR but had no effect on NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that farrerol, a natural compound isolated from Rhododendron dauricum, which exhibits antibechic, anti-bacterial and anti-inflammatory properties (Zhang et al., 2015), promoted HR but had no effect on NHEJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental screening results described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "3a718531-e3e6-4fb7-ac38-5c36bbab2493",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C9",
+      "claim": "Farrerol significantly promoted HR and had no obvious influence on NHEJ in HCA2-H15c and HCA2-I9a cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our observation in CLZ3 cells, farrerol was proved to significantly promote HR and had no obvious influence on NHEJ in these cell lines (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "6280fb33-6754-4ecf-ae49-879ec4571943",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C10",
+      "claim": "Farrerol significantly promoted HR repair efficiency in mouse ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, using the extrachromosomal assay we also demonstrated that farrerol significantly promoted HR repair efficiency in mouse ESCs (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "896dd146-56a2-4aed-b400-0cce2c62676f",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C11",
+      "claim": "Farrerol did not cause significant alterations in the expression level of HR-related factors including RPA2, NBS1, RAD50, RAD51, MRE11, CtIP, BRCA1, EXO1, XRCC2, and 53BP1.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any significant alterations in the expression level of repair-related factors upon farrerol treatment, indicating that enhancement of HR efficiency is probably not due to changes in the expression levels of the analyzed HR factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on western blot analysis described in the text and shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "11d5f55e-3d2a-49dd-8222-232147e14db6",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C12",
+      "claim": "Enhancement of HR efficiency by farrerol is probably not due to changes in the expression levels of the analyzed HR factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any significant alterations in the expression level of repair-related factors upon farrerol treatment, indicating that enhancement of HR efficiency is probably not due to changes in the expression levels of the analyzed HR factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the western blot data showing no changes in protein levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "e460474a-f7e4-4bb5-af48-ecff26959337",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C13",
+      "claim": "Cell cycle distribution was not significantly impacted by farrerol treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, cell cycle distribution was not significantly impacted by farrerol treatment (Figure 1\u2014figure supplement 2B), suggesting that the promotion of HR by farrerol is not through arresting cells in the HR-dominant S/G2 stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell cycle analysis data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "96269d4b-ae90-4489-858e-78885e9c3f5e",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C14",
+      "claim": "The promotion of HR by farrerol is not through arresting cells in the HR-dominant S/G2 stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, cell cycle distribution was not significantly impacted by farrerol treatment (Figure 1\u2014figure supplement 2B), suggesting that the promotion of HR by farrerol is not through arresting cells in the HR-dominant S/G2 stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference based on cell cycle distribution data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "8c385e9f-09d2-4ccc-a135-80772fd58e55",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C15",
+      "claim": "Farrerol has no influence on the recruitment of RPA2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the result indicated that farrerol has no influence on the recruitment of RPA2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on immunofluorescence assay data shown in Figure 1\u2014figure supplement 2C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "c3b5d39d-e762-4a5b-ab42-1d215e4cb458",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C16",
+      "claim": "The average foci number of RAD51 per nucleus was 6.5 and 6.1 in the presence of farrerol (1 and 5 \u03bcM) at 4 hr post IR at 2 Gy, in comparison to 4.4 in control group.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that the average foci number of RAD51 per nucleus was 6.5 and 6.1 in the presence of farrerol (1 and 5 \u03bcM) at 4 hr post IR at 2 Gy, in comparison to 4.4 in control group (Figure 1\u2014figure supplement 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative immunofluorescence data shown in Figure 1\u2014figure supplement 2E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "be6a8d5f-561e-4260-9f7d-7aa7c72da610",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C17",
+      "claim": "At 16 hr post IR, the average foci number of RAD51 per nucleus dropped to 3.2 and 4.3 in farrerol treating cells whereas there were still 6.4 RAD51 foci in the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "At 16 hr post IR, the average foci number of RAD51 per nucleus dropped to 3.2 and 4.3 in farrerol treating cells whereas there were still 6.4 RAD51 foci in the control group (Figure 1\u2014figure supplement 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative immunofluorescence data shown in Figure 1\u2014figure supplement 2E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "e38cb637-2d48-499e-8956-726ef208938b",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C18",
+      "claim": "The rapid recruitment and timely clearance of RAD51 post IR may contribute to the promotion of HR by farrerol.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the rapid recruitment and timely clearance of RAD51 post IR may contribute to the promotion of HR by farrerol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the RAD51 foci kinetics data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "e3d27c58-c33a-4a4f-87bd-6b58ec50e5b7",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C19",
+      "claim": "RAD51 is not involved in SSA pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a previous report that RAD51 is not involved in SSA pathway (Benitez et al., 2018; Bennardo et al., 2008; Mendez-Dorantes et al., 2018), we found that activating RAD51 with RS-1 had no effect on SSA efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Benitez et al., 2018; Bennardo et al., 2008; Mendez-Dorantes et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "858b7652-56bb-42aa-8a7d-0fa83e9aab85",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C20",
+      "claim": "Activating RAD51 with RS-1 had no effect on SSA efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a previous report that RAD51 is not involved in SSA pathway (Benitez et al., 2018; Bennardo et al., 2008; Mendez-Dorantes et al., 2018), we found that activating RAD51 with RS-1 had no effect on SSA efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "e979bced-63fd-45f3-823f-14af7feca4b3",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C21",
+      "claim": "Treating cells with farrerol significantly suppressed SSA efficiency by 3.3-fold and 1.9-fold at concentrations of 5 \u03bcM and 10 \u03bcM respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, treating cells with farrerol significantly suppressed SSA efficiency by 3.3-fold and 1.9-fold at concentrations of 5 \u03bcM and 10 \u03bcM respectively (Figure 1\u2014figure supplement 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative experimental data shown in Figure 1\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "715e4a05-0799-4179-9b28-1965d443ffa5",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C22",
+      "claim": "Farrerol might help maintain genome integrity by avoiding the aberrant recombination between the abundant repetitive sequences across genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that farrerol might help maintain genome integrity by avoiding the aberrant recombination between the abundant repetitive sequences across genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation based on the SSA suppression data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "8f7c48de-c63a-45c7-a66b-d90f7816c5cf",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C23",
+      "claim": "Farrerol significantly stimulated the knock-in efficiency by ~2.0 fold at the concentration of 1 and 5 \u00b5M at the AAVS1 locus in HEK 293FT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that farrerol significantly stimulated the knock-in efficiency by ~2.0 fold at the concentration of 1 and 5 \u00b5M, which was similar to those of RS-1 or SCR7 treatment (Figure 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative knock-in efficiency data shown in Figure 2D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "0c189e24-e52b-497d-9f00-44a166be6fe1",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C24",
+      "claim": "The stimulation of knock-in efficiency by farrerol at 1 and 5 \u00b5M was similar to those of RS-1 or SCR7 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that farrerol significantly stimulated the knock-in efficiency by ~2.0 fold at the concentration of 1 and 5 \u00b5M, which was similar to those of RS-1 or SCR7 treatment (Figure 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative knock-in efficiency data shown in Figure 2D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "6346f1f4-cf00-43d6-9512-197f410af325",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C25",
+      "claim": "No significant effect on cell proliferation was observed in the presence of farrerol at the indicated concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we did not observe any significant effect on cell proliferation in the presence of farrerol at the indicated concentrations (Figure 2F), suggesting a low toxicity of this compound.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell proliferation data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "78f99fd3-6032-484b-b7c5-34e813a897c7",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C26",
+      "claim": "Farrerol has low toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we did not observe any significant effect on cell proliferation in the presence of farrerol at the indicated concentrations (Figure 2F), suggesting a low toxicity of this compound.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference based on the lack of effect on cell proliferation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "8d754d69-1bb5-40fa-8442-d5aadc109d76",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C27",
+      "claim": "Farrerol could significantly improve the targeting efficiency at the AAVS1 locus at concentrations ranging from 0.1 \u03bcM to 10 \u03bcM using a p2A-mCherry-WPRE-polyA vector.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we found that farrerol could significantly improve the targeting efficiency in this system at concentrations ranging from 0.1 \u03bcM to 10 \u03bcM (Figure 2\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS data shown in Figure 2\u2014figure supplement 1B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "afa4b4fc-eac7-4d2f-ab6e-67ab08b55f3b",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C28",
+      "claim": "Treating cells with an increasing concentration of farrerol significantly promoted knock-in efficiency by as high as 2.8-fold (10 \u03bcM) at the Actb locus in mouse ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that treating cells with an increasing concentration of farrerol significantly promoted knock-in efficiency by as high as 2.8-fold (10 \u03bcM) while both SCR7 and RS-1 had only mild effects on insertion efficiency (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative colony counting data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "28dfaa9f-c634-4b82-83b4-6d4d049e3463",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C29",
+      "claim": "Both SCR7 and RS-1 had only mild effects on insertion efficiency at the Actb locus in mouse ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that treating cells with an increasing concentration of farrerol significantly promoted knock-in efficiency by as high as 2.8-fold (10 \u03bcM) while both SCR7 and RS-1 had only mild effects on insertion efficiency (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "dafe98c6-db7e-407b-8259-0a07c2308675",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C30",
+      "claim": "Treating cells with farrerol significantly improved knock-in efficiency at the Rosa26 locus, with the largest increase of 2.9-fold observed at the concentration of 5 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, treating cells with farrerol significantly improved knock-in efficiency, with the largest increase of 2.9-fold observed at the concentration of 5 \u03bcM (Figure 3\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS data shown in Figure 3\u2014figure supplement 1B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "9f0b9b64-e170-4e9f-8b51-b7645c7ea836",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C31",
+      "claim": "A 2.0-fold improvement in knock-in efficiency at the Sox2 site could be observed after farrerol treatment at the concentration of 5 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a 2.0-fold improvement in knock-in efficiency at the Sox2 site could be observed after farrerol treatment at the concentration of 5 \u03bcM, by examining with a previously reported p2A-mCherry donor (Yao et al., 2017; Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 2 and cites Yao et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "d0efabc6-bce8-4b8a-b3a7-9c825d41037e",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C32",
+      "claim": "Farrerol can efficiently promote HR at multiple loci in mouse ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, farrerol can efficiently promote HR at multiple loci in mouse ESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary inference based on data from multiple genomic loci (Actb, Rosa26, Sox2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "ef464d37-9d58-43cc-96fd-5e4c3ff15131",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C33",
+      "claim": "A mild decrease in \u03b3H2AX foci number or fluorescence intensity was observed in farrerol-treated HCA2-hTERT fibroblasts or mouse ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a mild decrease in \u03b3H2AX foci number or fluorescence intensity, and no obvious change in 53BP1 foci number in farrerol-treated HCA2-hTERT fibroblasts or mouse ESCs (Figure 4A\u2013D; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 4A\u2013D and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "c723c35a-7c8e-46ba-a022-de93a387decf",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C34",
+      "claim": "No obvious change in 53BP1 foci number was observed in farrerol-treated HCA2-hTERT fibroblasts or mouse ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a mild decrease in \u03b3H2AX foci number or fluorescence intensity, and no obvious change in 53BP1 foci number in farrerol-treated HCA2-hTERT fibroblasts or mouse ESCs (Figure 4A\u2013D; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 4A\u2013D and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "850229c9-2d66-474a-9d91-0ed8a605a8b8",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C35",
+      "claim": "Treating cells with SCR7 and RS-1 resulted in the increase of the percentage of \u03b3H2AX positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, treating cells with SCR7 and RS-1 resulted in the increase of the percentage of \u03b3H2AX positive cells, suggesting the genotoxic side effects of these two molecules on cells (Figure 4\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 4\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "3c7122bd-4d5e-419d-9130-d4684f5cfa80",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C36",
+      "claim": "SCR7 and RS-1 have genotoxic side effects on cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, treating cells with SCR7 and RS-1 resulted in the increase of the percentage of \u03b3H2AX positive cells, suggesting the genotoxic side effects of these two molecules on cells (Figure 4\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference based on the increase in \u03b3H2AX positive cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "1d956664-297a-44c6-a65a-07f7719fdeb2",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C37",
+      "claim": "No significant change in genome integrity was noticed in the presence of farrerol by comet assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Comet assay was also performed to examine if farrerol had any negative effect on genome integrity, and no significant change was noticed in the presence of farrerol (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comet assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "04d21697-92e7-4a4a-9c8a-6a17230f19ff",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C38",
+      "claim": "A significant increase in genomic instability in mouse ESCs treated with SCR7 was observed by comet assay.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, although fairly mild, we observed a significant increase in genomic instability in mouse ESCs treated with SCR7 (Figure 4E), which inhibits the NHEJ pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comet assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "7c89ca4d-b711-48b2-beef-bde00972c72a",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C39",
+      "claim": "Farrerol treatment had no obvious influence on the karyotype of mouse ESCs after gene editing.",
+      "claim_type": "EXPLICIT",
+      "source": "The result showed that farrerol treatment had no obvious influence on the karyotype of mouse ESCs after gene editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by karyotyping analysis data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "ed20c3dd-c032-40ff-ace6-455fe2044023",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C40",
+      "claim": "Treating mouse ESCs with SCR7 or RS-1 for only 48 hr caused a significant decrease in the percentage of cells with normal karyotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "And more surprisingly, treating mouse ESCs with SCR7 or RS-1 for only 48 hr caused a significant decrease in the percentage of cells with normal karyotypes (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by karyotyping analysis data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "7519ca29-eb6e-45c1-b55d-0b13e22bfc4e",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C41",
+      "claim": "No significant change in DNA replication in mouse ESCs was observed with farrerol treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the analysis in HEK 293FT cells (Figure 2F), we did not observe any significant change in DNA replication in mouse ESCs (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by EdU incorporation assay data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "03bf0612-bb16-4f89-9e09-7c6888f9c2a5",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C42",
+      "claim": "Farrerol could fully support the mouse embryos through the hatching of blastocysts as did control and RS-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that farrerol could fully support the mouse embryos through the hatching of blastocysts as did control and RS-1; by contrast, SCR7 treatment significantly impaired the blastocyst production rate (Figure 5A\u2013B; Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by embryo development data shown in Figure 5A\u2013B and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "dcce9440-b278-48a9-a1a8-f337a25eeaaa",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C43",
+      "claim": "SCR7 treatment significantly impaired the blastocyst production rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that farrerol could fully support the mouse embryos through the hatching of blastocysts as did control and RS-1; by contrast, SCR7 treatment significantly impaired the blastocyst production rate (Figure 5A\u2013B; Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by embryo development data shown in Figure 5A\u2013B and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "a5ce4830-7846-42ef-a883-271518168675",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C44",
+      "claim": "Short-period treatment with the three compounds had nearly no effect on the early embryo development and more than 95% of the 2 cell embryos could develop into the blastocyst stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated that short-period treatment with the three compounds had nearly no effect on the early embryo development and more than 95% of the 2 cell embryos could develop into the blastocyst stage (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by embryo development data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "85304d61-22d5-4b74-a9cd-72c143c722fb",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C45",
+      "claim": "Only 62.5% of SCR7 treated embryos could develop into the blastocyst stage when DSBs were induced at the zygote stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 62.5% of SCR7 treated embryos could develop into the blastocyst stage, probably due to the inhibition of NHEJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by embryo development data shown in Figure 5C and Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "ca442f07-3211-47f2-8ff1-281f1818bd5a",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C46",
+      "claim": "Farrerol treated embryos showed an 82.4% blastocyst production rate when DSBs were induced at the zygote stage.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, farrerol treated embryos showed an 82.4% blastocyst production rate (Figure 5C; Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by embryo development data shown in Figure 5C and Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "b5835b8c-5455-41c1-ac2b-a897707effc4",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C47",
+      "claim": "A much higher rate of mCherry+ blastocysts was observed in the presence of farrerol (0.05 \u03bcM, 27.3%; 0.1 \u03bcM, 21.0%), than in the control treatment (14.0%) at the Actb locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a much higher rate of mCherry+ blastocysts was observed in the presence of farrerol (0.05 \u03bcM, 27.3%; 0.1 \u03bcM, 21.0%), than in the control treatment (14.0%) (Figure 5F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy and quantification data shown in Figure 5F\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "63464baa-461e-44e5-84b9-beba728f632e",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C48",
+      "claim": "The knock-in efficiency at the Actb locus with farrerol treatment is comparable to or even higher than that mediated by HMEJ (22.7%) and MMEJ (11.9%) donors.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this efficiency is comparable to or even higher than that mediated by HMEJ (Homology-mediated end joining, 22.7%) and MMEJ (Microhomology-mediated end joining, 11.9%) donors (Yao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a comparison with published data from Yao et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "65a40885-1612-4618-913d-ea978fe8dcba",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C49",
+      "claim": "The knock-in efficiency at the Actb locus was only slightly improved after SCR7 (19.2%) or RS-1 (16.5%) treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the knock-in efficiency was only slightly improved after SCR7 (19.2%) or RS-1 (16.5%) treatment, which is in agreement with a recent study (Song et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and cites Song et al., 2016 for agreement.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "694ce1a3-13fe-4c70-ac33-0f7b5a7d06e6",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C50",
+      "claim": "PCR amplification of both the 5' and 3' junctions revealed that farrerol treatment led to a higher in-frame integration rate (farrerol: 0.05 \u03bcM, 27.0%; 0.1 \u03bcM, 23.0%) in comparison to the control group (13.0%) at the Actb locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, PCR amplification of both the 5' and 3' junctions revealed that farrerol treatment led to a higher in-frame integration rate (farrerol: 0.05 \u03bcM, 27.0%; 0.1 \u03bcM, 23.0%) in comparison to the control group (13.0%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by PCR genotyping data shown in Figure 5H and Figure 5\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "eda812ca-8131-416d-95c8-75c661c2e45b",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C51",
+      "claim": "Treatment with SCR7 (15.1%) or RS-1 (17.8%) had limited effect on in-frame integration rate at the Actb locus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, treatment with SCR7 (15.1%) or RS-1 (17.8%) were shown to have limited effect (Figure 5H; Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PCR genotyping data shown in Figure 5H and Figure 5\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "33076e79-c6bf-43b6-b9b8-730f95a29c6c",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C52",
+      "claim": "Embryos treated by farrerol showed a repeatable and remarkable increase of mCherry+ fluorescence signals in TE by 57.4% (0.05 \u03bcM) and 68.3% (0.1 \u03bcM) in comparison to that in control group at the Cdx2 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos treated by farrerol showed a repeatable and remarkable increase of mCherry+ fluorescence signals in TE by 57.4% (0.05 \u03bcM) and 68.3% (0.1 \u03bcM) in comparison to that in control group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 6B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "96071759-372e-4e74-837c-5925a87d606f",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C53",
+      "claim": "SCR7 and RS-1 improved the targeting efficiency at the Cdx2 locus by 54.3% and 37.4% respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "As a comparison, SCR7 and RS-1 improved the targeting efficiency by 54.3% and 37.4% respectively (Figure 6B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 6B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "cc2e74b7-053d-4443-a371-b87f59ab8347",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C54",
+      "claim": "In the farrerol treated group, 12 out of 33 mice showed an in-frame integration (36.4%) at the Cdx2 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "In the farrerol treated group, 12 out of 33 mice showed an in-frame integration (36.4%; potential founders #1, #2, #3, #7, #9, #16, #18, #21, #23, #26, #27, #32), which was confirmed by the PCR amplification of both the 5' and 3' junctions at Cdx2 locus (Figure 6E; Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PCR genotyping data shown in Figure 6E and Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "f2d97f07-74c8-488e-87f2-3bc7b2e7a387",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C55",
+      "claim": "Only one knock-in mouse was identified in a total 53 mice generated in control group at the Cdx2 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, only one knock-in mouse was identified in a total 53 mice generated in control group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genotyping data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "577d4453-edc9-404f-909a-156bca66dd82",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C56",
+      "claim": "No knock-in mice were detected by using the HMEJ donor at the Cdx2 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, as a further comparison, no knock-in mice were detected by using the HMEJ donor (Yao et al., 2017; Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6E and cites Yao et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "32d3fd64-b161-46e3-8ed6-f185d2d7ffa2",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C57",
+      "claim": "Cdx2-mCherry mice generated from farrerol treated embryos had germline transmission abilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Cdx2-mCherry mice generated from farrerol treated embryos had germline transmission abilities and the allele with the exogenous gene knocked in could be stably transmitted to the progeny generation (F1) with Mendel's law of segregation, after being crossed with wild-type C57BL/6 mice (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by breeding data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "932c3c97-f420-4958-a0de-a75b7da6963e",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C58",
+      "claim": "The allele with the exogenous gene knocked in could be stably transmitted to the progeny generation (F1) with Mendel's law of segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Cdx2-mCherry mice generated from farrerol treated embryos had germline transmission abilities and the allele with the exogenous gene knocked in could be stably transmitted to the progeny generation (F1) with Mendel's law of segregation, after being crossed with wild-type C57BL/6 mice (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by breeding data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "f050f490-2147-4ade-a0ab-9909ec43f1c4",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C59",
+      "claim": "Homozygous Cdx2-mCherry mice could be successfully produced and maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, homozygous Cdx2-mCherry mice could be successfully produced and maintained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by breeding experiments described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "38e956fe-7c94-4a66-8710-9c3b47c9fa01",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C60",
+      "claim": "All the blastocysts from homozygous Cdx2-mCherry mice after crossing showed the strong mCherry+ fluorescence signals in the trophectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "And all the blastocysts from these mice after crossing showed the strong mCherry+ fluorescence signals in the trophectoderm (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "83e31222-ce04-4609-ae78-f7480f0b4079",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C61",
+      "claim": "At the E7.5 stage, mCherry signals from Cdx2-mCherry embryos were restricted to extraembryonic ectoderm (ExE).",
+      "claim_type": "EXPLICIT",
+      "source": "At the E7.5 stage, these mCherry signals were restricted to extraembryonic ectoderm (ExE) (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "4a102518-0f57-44c3-af2c-f1fe5c81719c",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C62",
+      "claim": "At the stage of E9.5, Cdx2 mCherry signals could be observed in embryonic tissues, principally in the posterior part of the gut, tail bud and the caudal part of the neural tube.",
+      "claim_type": "EXPLICIT",
+      "source": "At the stage of E9.5, Cdx2 mCherry signals could be observed in embryonic tissues, principally in the posterior part of the gut, tail bud and the caudal part of the neural tube as previously reported (Figure 6G; Beck et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 6G and cites Beck et al., 1995.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "481ad72c-d332-46ed-bf93-37bbc9d8a3e6",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C63",
+      "claim": "A significantly increased rate of gene editing at the Actb site (0.05 \u03bcM, by 2.3-fold; 0.1 \u03bcM, by 2.6-fold) was observed after co-injection of farrerol compared to control group.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, in comparison to control group, we observed a significantly increased rate of gene editing at the Actb site (0.05 \u03bcM, by 2.3-fold; 0.1 \u03bcM, by 2.6-fold) and Cdx2 locus (0.05 \u03bcM, by 2.0-fold; 0.1 \u03bcM, by 2.3-fold) after co-injection of farrerol, while co-injecting the other two compounds had mild effects on integration efficiency (Figure 6\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 6\u2014figure supplement 2A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "9136558f-6630-4fd6-8667-55f8feafe69a",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C64",
+      "claim": "A significantly increased rate of gene editing at the Cdx2 locus (0.05 \u03bcM, by 2.0-fold; 0.1 \u03bcM, by 2.3-fold) was observed after co-injection of farrerol compared to control group.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, in comparison to control group, we observed a significantly increased rate of gene editing at the Actb site (0.05 \u03bcM, by 2.3-fold; 0.1 \u03bcM, by 2.6-fold) and Cdx2 locus (0.05 \u03bcM, by 2.0-fold; 0.1 \u03bcM, by 2.3-fold) after co-injection of farrerol, while co-injecting the other two compounds had mild effects on integration efficiency (Figure 6\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 6\u2014figure supplement 2A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "6943073e-186b-41a6-893a-9faa27116487",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C65",
+      "claim": "Co-injecting SCR7 or RS-1 had mild effects on integration efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, in comparison to control group, we observed a significantly increased rate of gene editing at the Actb site (0.05 \u03bcM, by 2.3-fold; 0.1 \u03bcM, by 2.6-fold) and Cdx2 locus (0.05 \u03bcM, by 2.0-fold; 0.1 \u03bcM, by 2.3-fold) after co-injection of farrerol, while co-injecting the other two compounds had mild effects on integration efficiency (Figure 6\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative data shown in Figure 6\u2014figure supplement 2A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "b2df6d03-bf01-4054-9ab5-9c5741afa6b3",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C66",
+      "claim": "Farrerol promotes HR through stimulating the recruitment of RAD51 to DSB sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Further mechanistic studies indicate that farrerol functions through stimulating the recruitment of RAD51 to DSB sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on immunofluorescence data showing increased RAD51 foci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "ebc3e1ca-3145-4ec4-8924-ee4d1e5f4073",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C67",
+      "claim": "Farrerol effectively promotes precise targeted integration in human cells, mouse cells and mouse embryos at multiple genomic loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we demonstrated that farrerol effectively promotes precise targeted integration in human cells, mouse cells and mouse embryos at multiple genomic loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of experimental results from multiple cell types and genomic loci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "e7cd458c-1d91-4c7a-8e05-8ed7515163cf",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C68",
+      "claim": "Treating cells with farrerol did not have any obvious negative effect on genomic stability.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, treating cells with farrerol did not have any obvious negative effect on genomic stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comet assay, karyotype analysis, and immunofluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "efe328ba-f120-4433-be33-de28701356ef",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C69",
+      "claim": "Farrerol significantly improved the knock-in efficiency in blastocysts.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, farrerol significantly improved the knock-in efficiency in blastocysts, and the subsequently generated knock-in mice retained the capacity for germline transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on fluorescence microscopy and genotyping data from blastocysts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "801c2a18-cacb-4a3e-9374-a3cef70f1490",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C70",
+      "claim": "The subsequently generated knock-in mice retained the capacity for germline transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, farrerol significantly improved the knock-in efficiency in blastocysts, and the subsequently generated knock-in mice retained the capacity for germline transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on breeding experiments showing transmission to F1 generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "ec2f6396-6005-4f46-942c-5c99f1b0a83b",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C71",
+      "claim": "The adapted Streptococcus pyogenes CRISPR/Cas9 (SpCRISPR/Cas9) has received the greatest attention due to its simplicity, relative high precision and flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, the adapted Streptococcus pyogenes CRISPR/Cas9 (SpCRISPR/Cas9) has received the greatest attention due to its simplicity, relative high precision and flexibility (Jinek et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Jinek et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "860c2655-5ac9-4e9c-a8a4-ae611ac87b8e",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C72",
+      "claim": "The SpCRISPR/Cas9-mediated genome editing system consists of the Cas9 nuclease protein and a single guide RNA (sgRNA) containing a 20-nucleotide (nt) sequence with complementary pairing to a target genomic locus adjacent to a 5'NGG3' protospacer adjacent motif (PAM).",
+      "claim_type": "EXPLICIT",
+      "source": "The SpCRISPR/Cas9-mediated genome editing system consists of the Cas9 nuclease protein and a single guide RNA (sgRNA) containing a 20-nucleotide (nt) sequence with complementary pairing to a target genomic locus adjacent to a 5'NGG3' protospacer adjacent motif (PAM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes established knowledge about the CRISPR/Cas9 system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "bd443717-b497-4e3a-ac43-d87fe7764255",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C73",
+      "claim": "When combined with an sgRNA, the Cas9 nuclease generates a DNA double-strand break (DSB) around 3 bp upstream the target PAM sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "When combined with an sgRNA, the Cas9 nuclease generates a DNA double-strand break (DSB) around 3 bp upstream the target PAM sequence (Cong et al., 2013; Mali et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cong et al., 2013 and Mali et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "6db074d0-00dd-42e1-9ff7-3677a4aec71d",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C74",
+      "claim": "In the presence of a homologous template, successful HR results in a precise knock-in event.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of a homologous template, successful HR results in a precise knock-in event (Ran et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ran et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "1d74239a-d934-4f6a-83e6-8ea844df0889",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C75",
+      "claim": "The error-prone NHEJ probably leads to a phenotype of gene knock-out.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the error-prone NHEJ probably leads to a phenotype of gene knock-out (Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Zhang et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "32e63efa-a275-46a5-8aa6-c52ec37d5f2c",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C76",
+      "claim": "Many factors, including cell cycle stage, competition between DNA damage repair factors such as RIF1/53BP1 vs. BRCA1/CtIP and cell type collectively influence the choice between HR and NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Many factors, including cell cycle stage (Yang et al., 2016), competition between DNA damage repair factors such as RIF1/53BP1 vs. BRCA1/CtIP (Hollick et al., 2003; Srivastava et al., 2012) and cell type collectively influence the choice between HR and NHEJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Yang et al., 2016; Hollick et al., 2003; Srivastava et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "a96f093f-b8af-4364-b364-e567bb9edacf",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C77",
+      "claim": "Knocking down 53BP1 promotes the SpCRISPR/Cas9-mediated knock-in efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down the DNA damage response factor, 53BP1, which favors the choice of NHEJ (Callen et al., 2013); or important NHEJ factors such as KU70, KU80 and LIG4 (Chu et al., 2015) promotes the SpCRISPR/Cas9-mediated knock-in efficiency (Ye et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Callen et al., 2013; Chu et al., 2015; Ye et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "160a89ed-59e1-4e73-9e3d-dfc028ae8632",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C78",
+      "claim": "Suppressing NHEJ by blocking LIG4 activity with SCR7 has been shown to improve the precise targeting efficiency of SpCRISPR/Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, suppressing NHEJ by blocking LIG4 activity with SCR7, or inhibiting DNA-PKcs kinase activity with NU7441 or NU7026, has been shown to improve the precise targeting efficiency of SpCRISPR/Cas9 (Chu et al., 2015; Robert et al., 2015; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chu et al., 2015; Robert et al., 2015; Zhang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "206b237e-0916-43d7-a21a-2bc519a6ff05",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C79",
+      "claim": "Inhibiting DNA-PKcs kinase activity with NU7441 or NU7026 has been shown to improve the precise targeting efficiency of SpCRISPR/Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, suppressing NHEJ by blocking LIG4 activity with SCR7, or inhibiting DNA-PKcs kinase activity with NU7441 or NU7026, has been shown to improve the precise targeting efficiency of SpCRISPR/Cas9 (Chu et al., 2015; Robert et al., 2015; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chu et al., 2015; Robert et al., 2015; Zhang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "44c4cbf5-c8f6-4ec4-b11e-1bab29707bd9",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C80",
+      "claim": "Stimulating the HR factor, RAD51, with RS-1 improved SpCRISPR/Cas9 editing efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, stimulating the HR factor, RAD51, with RS-1 also improved SpCRISPR/Cas9 editing efficiency (Jayathilaka et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Jayathilaka et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "7463433c-e57f-45e6-86bc-7ed3856b9659",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C81",
+      "claim": "Both inhibiting NHEJ and stimulating the activity of the recombinase involved in HR are potentially harmful to the maintenance of genome integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both inhibiting NHEJ and stimulating the activity of the recombinase involved in HR are potentially harmful to the maintenance of genome integrity (Chen et al., 2008; Vartak and Raghavan, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chen et al., 2008; Vartak and Raghavan, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "6113af4a-de46-4ca4-83f0-d24225994994",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C82",
+      "claim": "NHEJ is the major pathway for mending the broken ends in mammalian cells in all cell cycle stages.",
+      "claim_type": "EXPLICIT",
+      "source": "NHEJ is the major pathway for mending the broken ends in mammalian cells in all cell cycle stages (Mao et al., 2008a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mao et al., 2008a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "34fac196-1667-4fc8-9a55-d893530ec0a0",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C83",
+      "claim": "Loss of NHEJ pathway often leads to high cancer incidences and premature aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of this pathway often leads to high cancer incidences and premature aging (Lombard et al., 2005; Vogel et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lombard et al., 2005; Vogel et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "8fd66159-d399-4290-9869-5753fd7d28d7",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C84",
+      "claim": "Activating RAD51 might increase the chance of the spontaneous recombination with prevalent repetitive sequences in mammalian cells, resulting in the loss of large amounts of genetic information.",
+      "claim_type": "EXPLICIT",
+      "source": "The risk of activating RAD51 is that it might increase the chance of the spontaneous recombination with prevalent repetitive sequences in mammalian cells, resulting in the loss of large amounts of genetic information (Klein, 2008; Richardson et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Klein, 2008; Richardson et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "62b67692-812a-4787-b520-631ff70d88cf",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C85",
+      "claim": "The promotion of gene targeting by RS-1 is dependent on the size of the homologous arm of the targeting vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the promotion of gene targeting by RS-1 is dependent on the size of the homologous arm of the targeting vectors (Pan et al., 2016; Pinder et al., 2015), and the type of cells (Song et al., 2016; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Pan et al., 2016; Pinder et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "9a29d70c-d234-4492-a4c7-8dd10da03df4",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C86",
+      "claim": "The promotion of gene targeting by RS-1 is dependent on the type of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the promotion of gene targeting by RS-1 is dependent on the size of the homologous arm of the targeting vectors (Pan et al., 2016; Pinder et al., 2015), and the type of cells (Song et al., 2016; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Song et al., 2016; Zhang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "f463bdee-d8c6-46e4-b0bb-347688b567f8",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C87",
+      "claim": "The promotion of gene targeting by SCR7 is through suppressing the canonical NHEJ (c-NHEJ) pathway by blocking the enzymatic activity of DNA LIG4.",
+      "claim_type": "EXPLICIT",
+      "source": "It is hypothesized that the promotion of gene targeting by SCR7 is through suppressing the canonical NHEJ (c-NHEJ) pathway by blocking the enzymatic activity of DNA LIG4, forcing cells to choose the other DSB repair pathway \u2013 HR (Greco et al., 2016; Srivastava et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis supported by citations to Greco et al., 2016; Srivastava et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "078cb5ac-f7e9-4107-842a-27f2441d7cba",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C88",
+      "claim": "In addition to c-NHEJ and HR, alternative NHEJ (alt-NHEJ) can also repair DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be explained by the fact that in addition to c-NHEJ and HR, alternative NHEJ (alt-NHEJ) can also repair DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established knowledge about DSB repair pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "96b95a15-ed16-4de7-a382-6042ba6ce996",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C89",
+      "claim": "Treating cells with SCR7 actually leaves DSBs repaired either by HR and alt-NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Treating cells with SCR7 actually leaves DSBs repaired either by HR and alt-NHEJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on knowledge of DSB repair pathways.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "63ff09f7-442c-46b8-88b4-61822e68d927",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C90",
+      "claim": "Increased expression of RAD51 destabilizes genomes by stimulating aneuploidy and making chromosomal rearrangements more likely.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, increased expression of RAD51 destabilizes genomes by stimulating aneuploidy and making chromosomal rearrangements more likely (Richardson et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Richardson et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "efffc906-423a-4e7a-8ec5-443162c30ff5",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C91",
+      "claim": "Inhibiting c-NHEJ might lead to inefficient and late repair of DSBs, resulting in abnormal development.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason might lie in that inhibiting c-NHEJ might lead to inefficient and late repair of DSBs (Chen et al., 2008; Vartak and Raghavan, 2015), resulting in abnormal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation supported by citations to Chen et al., 2008; Vartak and Raghavan, 2015.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "6467b0cd-9532-4c87-ae85-83ab69f3652a",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C92",
+      "claim": "Blocking c-NHEJ may destabilize genomes, increasing the incidence of tumorigenesis and the onset of premature aging.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, blocking c-NHEJ may destabilize genomes, increasing the incidence of tumorigenesis and the onset of premature aging (Chen et al., 2008; Sekiguchi et al., 1999; Vogel et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chen et al., 2008; Sekiguchi et al., 1999; Vogel et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "8078ee94-e56a-41cb-bcf9-c045103c00d8",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C93",
+      "claim": "Aberrantly activated HR might be beneficial to tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the further application of compounds activating HR directed repair should also be cognizant of the possibility that aberrantly activated HR might be beneficial to tumor cells, and may disrupt the genome integrity by aberrantly recombining the abundantly available repetitive sequences across the genomes in normal cells (Putnam et al., 2009; Sasaki et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation supported by citations to Putnam et al., 2009; Sasaki et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "c01c7b76-386a-4607-a54d-860909457216",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "claim_id": "C94",
+      "claim": "Aberrantly activated HR may disrupt the genome integrity by aberrantly recombining the abundantly available repetitive sequences across the genomes in normal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the further application of compounds activating HR directed repair should also be cognizant of the possibility that aberrantly activated HR might be beneficial to tumor cells, and may disrupt the genome integrity by aberrantly recombining the abundantly available repetitive sequences across the genomes in normal cells (Putnam et al., 2009; Sasaki et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation supported by citations to Putnam et al., 2009; Sasaki et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1862bcc9-4897-432a-b2d0-50073ac165f6",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a CLZ3 cell line for high-throughput screening of compounds affecting DSB repair pathway choice. The CLZ3 cell line was derived from D4a cells and contains a dual-reporter system that measures both HR and NHEJ efficiency simultaneously at the same chromosomal site, along with a doxycycline-inducible I-SceI expression system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 collectively establish the successful generation and validation of the CLZ3 screening platform. The derivation from D4a cells (C1, C2) is supported by citation, and functional validation showing doxycycline-induced I-SceI expression (C3) and resulting tdTomato+ and GFP+ cells (C4) is supported by experimental data in Figures 1C-E.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "5ae13af9-8e17-4f63-ba79-0bb165b18a95",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Through screening 722 small molecules from traditional Chinese medicine, the authors identified farrerol as a compound that promotes HR but has no effect on NHEJ. This effect was validated in multiple cell lines including CLZ3, HCA2-H15c, HCA2-I9a, and mouse ESCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C10 describe the screening and initial validation of farrerol. The screening of 722 compounds (C5) and identification of farrerol (C6-C8) are supported by experimental data in Figure 1G. Validation in multiple cell lines (C9-C10) is supported by data in Figure 1\u2014figure supplement 1A-B, demonstrating reproducibility across different systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "a256885a-5eab-4a9e-a174-58e8e7d5b881",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Farrerol promotes HR through stimulating the recruitment of RAD51 to DSB sites rather than by altering expression levels of HR-related factors or cell cycle distribution. Farrerol treatment resulted in increased RAD51 foci at 4 hr post-IR (6.5 and 6.1 vs 4.4 in control) and faster clearance at 16 hr post-IR (3.2 and 4.3 vs 6.4 in control).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C18 and C66 establish the mechanism of farrerol action. Western blot data (C11, Figure 1\u2014figure supplement 2A) shows no changes in protein expression, cell cycle analysis (C13, Figure 1\u2014figure supplement 2B) shows no cell cycle effects, and immunofluorescence data (C15-C17, Figure 1\u2014figure supplement 2E-F) demonstrates altered RAD51 recruitment kinetics. The mechanistic conclusion (C18, C66) is well-supported by this converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "7a0679c5-acf7-44a0-85e1-e34d17d6fa0c",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Farrerol significantly suppressed SSA efficiency by 3.3-fold and 1.9-fold at concentrations of 5 \u03bcM and 10 \u03bcM respectively, while RS-1 had no effect on SSA. This suggests farrerol might help maintain genome integrity by avoiding aberrant recombination between repetitive sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 describe farrerol's effect on SSA. The lack of RAD51 involvement in SSA (C19) is supported by citations and confirmed experimentally with RS-1 (C20). Farrerol's suppression of SSA (C21) is supported by quantitative data in Figure 1\u2014figure supplement 3C. The speculation about genome integrity (C22) is a reasonable inference from the data, though it remains to be directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "94c49082-ff09-4fa5-ae95-2450dc1656e4",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Farrerol significantly stimulated CRISPR/Cas9-mediated knock-in efficiency by ~2.0 fold at the AAVS1 locus in HEK 293FT cells at concentrations of 1 and 5 \u03bcM, with effects similar to RS-1 or SCR7 treatment. Farrerol showed no significant effect on cell proliferation, suggesting low toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 demonstrate farrerol's application in genome editing. Knock-in efficiency data (C23-C24) is supported by Figures 2D-E and validated with an alternative donor vector (C27, Figure 2\u2014figure supplement 1B-C). Cell proliferation data (C25-C26, Figure 2F) supports the low toxicity claim. The results are consistent across different experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "33e253cf-afb2-4a52-bd91-76a816bd7891",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Farrerol significantly promoted CRISPR/Cas9-mediated knock-in efficiency in mouse ESCs at multiple genomic loci: 2.8-fold at Actb (10 \u03bcM), 2.9-fold at Rosa26 (5 \u03bcM), and 2.0-fold at Sox2 (5 \u03bcM). In contrast, SCR7 and RS-1 had only mild effects at the Actb locus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 demonstrate farrerol's efficacy across multiple loci in mouse ESCs. Data for Actb (C28-C29, Figure 3D), Rosa26 (C30, Figure 3\u2014figure supplement 1B-C), and Sox2 (C31, Figure 3\u2014figure supplement 2) consistently show significant improvements. The summary conclusion (C32) is well-supported by data from all three loci, demonstrating reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "34403815-5595-4f05-b565-9e3e5b9b6af9",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Farrerol treatment had no obvious negative effects on genomic stability in human fibroblasts or mouse ESCs, as assessed by \u03b3H2AX and 53BP1 immunostaining, comet assay, karyotype analysis, and DNA replication assays. In contrast, SCR7 and RS-1 showed genotoxic side effects including increased \u03b3H2AX positive cells, genomic instability, and abnormal karyotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C41 and C68 comprehensively assess genomic stability. Multiple independent assays (immunofluorescence in Figures 4A-D, comet assay in Figure 4E, karyotyping in Figure 4F, EdU incorporation in Figure 4\u2014figure supplement 2) consistently show no adverse effects of farrerol while revealing problems with SCR7 and RS-1. The convergence of multiple orthogonal approaches strongly supports the safety conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "347f0de9-76ab-4589-bfea-1734c83f69d6",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Farrerol fully supported mouse embryo development through blastocyst hatching similar to control and RS-1, while SCR7 significantly impaired blastocyst production. Short-period treatment with all three compounds had minimal effects on early embryo development, but when DSBs were induced at the zygote stage, farrerol-treated embryos showed 82.4% blastocyst production compared to only 62.5% for SCR7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 assess compound effects on embryo development. Data in Figures 5A-C and Figure 5\u2014figure supplement 1A-C demonstrate that farrerol does not impair development while SCR7 does. The distinction between continuous treatment and short-period treatment (C44) and the effects when DSBs are induced (C45-C46) provide important context for the compound's safety and efficacy in embryos.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "b6977a6c-804d-40aa-9f5a-ec1d8fd07256",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Farrerol significantly improved CRISPR/Cas9-mediated knock-in efficiency in mouse blastocysts at the Actb locus. The rate of mCherry+ blastocysts was 27.3% (0.05 \u03bcM) and 21.0% (0.1 \u03bcM) compared to 14.0% in controls, with in-frame integration rates of 27.0% and 23.0% versus 13.0% in controls. This efficiency was comparable to or higher than HMEJ (22.7%) and MMEJ (11.9%) methods, while SCR7 and RS-1 showed only slight improvements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 and C69 demonstrate farrerol's efficacy in blastocysts. Fluorescence data (C47, Figures 5F-G) and PCR genotyping (C50, Figure 5H) provide complementary evidence. The comparison to HMEJ/MMEJ methods (C48) and to SCR7/RS-1 (C49, C51) contextualizes the results. The data consistently support the conclusion across multiple measurement approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "9ecf0919-70c8-4144-a12f-2ce4bd515486",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Farrerol significantly improved knock-in efficiency at the Cdx2 locus in mouse embryos and enabled efficient generation of knock-in mice with germline transmission capacity. In farrerol-treated embryos, mCherry+ signals in trophectoderm increased by 57.4-68.3%, and 12 of 33 mice (36.4%) showed in-frame integration compared to only 1 of 53 in controls. The generated Cdx2-mCherry mice showed proper expression patterns at E7.5 and E9.5 and transmitted the allele to F1 offspring following Mendelian segregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C62 and C70 demonstrate successful generation of knock-in mice. Blastocyst data (C52-C53, Figures 6B-C), founder mouse generation (C54-C56, Figure 6E), germline transmission (C57-C58, Figure 6E), homozygous line establishment (C59-C60, Figure 6F), and proper expression patterns (C61-C62, Figure 6G) provide comprehensive evidence. The complete characterization from blastocyst to F1 generation strongly supports the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "e4110eff-d921-4abd-8eff-4001b2ff5469",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Co-injection of farrerol with CRISPR/Cas9 components into zygotes significantly increased gene editing rates at both Actb (2.3-2.6 fold) and Cdx2 (2.0-2.3 fold) loci, while co-injection of SCR7 or RS-1 had mild effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 describe an alternative delivery method. Data in Figure 6\u2014figure supplement 2A-D show that direct co-injection of farrerol with CRISPR components improves efficiency at both loci tested. This provides additional evidence for farrerol's efficacy and demonstrates flexibility in application methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    },
+    {
+      "id": "679b30e1-27a4-4f1c-a453-2f0d82f8c2d5",
+      "content_id": "37f02471-ee17-4448-9101-f6360e053cb3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Farrerol effectively promotes precise targeted integration in human cells, mouse cells and mouse embryos at multiple genomic loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is a summary statement supported by the collective evidence from multiple experiments across different cell types (HEK 293FT, mouse ESCs, mouse embryos) and genomic loci (AAVS1, Actb, Rosa26, Sox2, Cdx2). This claim integrates findings from multiple result groups and is well-supported by the comprehensive dataset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:01.386191Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8188d930-3f1f-4395-a9a8-eccc63fd9b8c",
+      "result_id": "1862bcc9-4897-432a-b2d0-50073ac165f6"
+    },
+    {
+      "claim_id": "13a2074e-b824-4a61-9d9f-55d2d1e93c24",
+      "result_id": "1862bcc9-4897-432a-b2d0-50073ac165f6"
+    },
+    {
+      "claim_id": "fc58147a-0203-4ede-92e3-57de3140927e",
+      "result_id": "1862bcc9-4897-432a-b2d0-50073ac165f6"
+    },
+    {
+      "claim_id": "813ab986-19ca-40d8-ac23-d442ea8ecb9d",
+      "result_id": "1862bcc9-4897-432a-b2d0-50073ac165f6"
+    },
+    {
+      "claim_id": "e68e17e3-a885-4901-bc6a-2fa45ee489da",
+      "result_id": "5ae13af9-8e17-4f63-ba79-0bb165b18a95"
+    },
+    {
+      "claim_id": "4bbed2cc-f637-46ee-8f1e-91098a938bb4",
+      "result_id": "5ae13af9-8e17-4f63-ba79-0bb165b18a95"
+    },
+    {
+      "claim_id": "2a0690a1-ccc1-423f-b44a-ec0b22f4795b",
+      "result_id": "5ae13af9-8e17-4f63-ba79-0bb165b18a95"
+    },
+    {
+      "claim_id": "b787d9f4-a244-4495-ae32-bc179092a601",
+      "result_id": "5ae13af9-8e17-4f63-ba79-0bb165b18a95"
+    },
+    {
+      "claim_id": "3a718531-e3e6-4fb7-ac38-5c36bbab2493",
+      "result_id": "5ae13af9-8e17-4f63-ba79-0bb165b18a95"
+    },
+    {
+      "claim_id": "6280fb33-6754-4ecf-ae49-879ec4571943",
+      "result_id": "5ae13af9-8e17-4f63-ba79-0bb165b18a95"
+    },
+    {
+      "claim_id": "896dd146-56a2-4aed-b400-0cce2c62676f",
+      "result_id": "a256885a-5eab-4a9e-a174-58e8e7d5b881"
+    },
+    {
+      "claim_id": "11d5f55e-3d2a-49dd-8222-232147e14db6",
+      "result_id": "a256885a-5eab-4a9e-a174-58e8e7d5b881"
+    },
+    {
+      "claim_id": "e460474a-f7e4-4bb5-af48-ecff26959337",
+      "result_id": "a256885a-5eab-4a9e-a174-58e8e7d5b881"
+    },
+    {
+      "claim_id": "96269d4b-ae90-4489-858e-78885e9c3f5e",
+      "result_id": "a256885a-5eab-4a9e-a174-58e8e7d5b881"
+    },
+    {
+      "claim_id": "8c385e9f-09d2-4ccc-a135-80772fd58e55",
+      "result_id": "a256885a-5eab-4a9e-a174-58e8e7d5b881"
+    },
+    {
+      "claim_id": "c3b5d39d-e762-4a5b-ab42-1d215e4cb458",
+      "result_id": "a256885a-5eab-4a9e-a174-58e8e7d5b881"
+    },
+    {
+      "claim_id": "be6a8d5f-561e-4260-9f7d-7aa7c72da610",
+      "result_id": "a256885a-5eab-4a9e-a174-58e8e7d5b881"
+    },
+    {
+      "claim_id": "e38cb637-2d48-499e-8956-726ef208938b",
+      "result_id": "a256885a-5eab-4a9e-a174-58e8e7d5b881"
+    },
+    {
+      "claim_id": "b2df6d03-bf01-4054-9ab5-9c5741afa6b3",
+      "result_id": "a256885a-5eab-4a9e-a174-58e8e7d5b881"
+    },
+    {
+      "claim_id": "e3d27c58-c33a-4a4f-87bd-6b58ec50e5b7",
+      "result_id": "7a0679c5-acf7-44a0-85e1-e34d17d6fa0c"
+    },
+    {
+      "claim_id": "858b7652-56bb-42aa-8a7d-0fa83e9aab85",
+      "result_id": "7a0679c5-acf7-44a0-85e1-e34d17d6fa0c"
+    },
+    {
+      "claim_id": "e979bced-63fd-45f3-823f-14af7feca4b3",
+      "result_id": "7a0679c5-acf7-44a0-85e1-e34d17d6fa0c"
+    },
+    {
+      "claim_id": "715e4a05-0799-4179-9b28-1965d443ffa5",
+      "result_id": "7a0679c5-acf7-44a0-85e1-e34d17d6fa0c"
+    },
+    {
+      "claim_id": "8f7c48de-c63a-45c7-a66b-d90f7816c5cf",
+      "result_id": "94c49082-ff09-4fa5-ae95-2450dc1656e4"
+    },
+    {
+      "claim_id": "0c189e24-e52b-497d-9f00-44a166be6fe1",
+      "result_id": "94c49082-ff09-4fa5-ae95-2450dc1656e4"
+    },
+    {
+      "claim_id": "6346f1f4-cf00-43d6-9512-197f410af325",
+      "result_id": "94c49082-ff09-4fa5-ae95-2450dc1656e4"
+    },
+    {
+      "claim_id": "78f99fd3-6032-484b-b7c5-34e813a897c7",
+      "result_id": "94c49082-ff09-4fa5-ae95-2450dc1656e4"
+    },
+    {
+      "claim_id": "8d754d69-1bb5-40fa-8442-d5aadc109d76",
+      "result_id": "94c49082-ff09-4fa5-ae95-2450dc1656e4"
+    },
+    {
+      "claim_id": "afa4b4fc-eac7-4d2f-ab6e-67ab08b55f3b",
+      "result_id": "33e253cf-afb2-4a52-bd91-76a816bd7891"
+    },
+    {
+      "claim_id": "28dfaa9f-c634-4b82-83b4-6d4d049e3463",
+      "result_id": "33e253cf-afb2-4a52-bd91-76a816bd7891"
+    },
+    {
+      "claim_id": "dafe98c6-db7e-407b-8259-0a07c2308675",
+      "result_id": "33e253cf-afb2-4a52-bd91-76a816bd7891"
+    },
+    {
+      "claim_id": "9f0b9b64-e170-4e9f-8b51-b7645c7ea836",
+      "result_id": "33e253cf-afb2-4a52-bd91-76a816bd7891"
+    },
+    {
+      "claim_id": "d0efabc6-bce8-4b8a-b3a7-9c825d41037e",
+      "result_id": "33e253cf-afb2-4a52-bd91-76a816bd7891"
+    },
+    {
+      "claim_id": "ef464d37-9d58-43cc-96fd-5e4c3ff15131",
+      "result_id": "34403815-5595-4f05-b565-9e3e5b9b6af9"
+    },
+    {
+      "claim_id": "c723c35a-7c8e-46ba-a022-de93a387decf",
+      "result_id": "34403815-5595-4f05-b565-9e3e5b9b6af9"
+    },
+    {
+      "claim_id": "850229c9-2d66-474a-9d91-0ed8a605a8b8",
+      "result_id": "34403815-5595-4f05-b565-9e3e5b9b6af9"
+    },
+    {
+      "claim_id": "3c7122bd-4d5e-419d-9130-d4684f5cfa80",
+      "result_id": "34403815-5595-4f05-b565-9e3e5b9b6af9"
+    },
+    {
+      "claim_id": "1d956664-297a-44c6-a65a-07f7719fdeb2",
+      "result_id": "34403815-5595-4f05-b565-9e3e5b9b6af9"
+    },
+    {
+      "claim_id": "04d21697-92e7-4a4a-9c8a-6a17230f19ff",
+      "result_id": "34403815-5595-4f05-b565-9e3e5b9b6af9"
+    },
+    {
+      "claim_id": "7c89ca4d-b711-48b2-beef-bde00972c72a",
+      "result_id": "34403815-5595-4f05-b565-9e3e5b9b6af9"
+    },
+    {
+      "claim_id": "ed20c3dd-c032-40ff-ace6-455fe2044023",
+      "result_id": "34403815-5595-4f05-b565-9e3e5b9b6af9"
+    },
+    {
+      "claim_id": "7519ca29-eb6e-45c1-b55d-0b13e22bfc4e",
+      "result_id": "34403815-5595-4f05-b565-9e3e5b9b6af9"
+    },
+    {
+      "claim_id": "e7cd458c-1d91-4c7a-8e05-8ed7515163cf",
+      "result_id": "34403815-5595-4f05-b565-9e3e5b9b6af9"
+    },
+    {
+      "claim_id": "03bf0612-bb16-4f89-9e09-7c6888f9c2a5",
+      "result_id": "347f0de9-76ab-4589-bfea-1734c83f69d6"
+    },
+    {
+      "claim_id": "dcce9440-b278-48a9-a1a8-f337a25eeaaa",
+      "result_id": "347f0de9-76ab-4589-bfea-1734c83f69d6"
+    },
+    {
+      "claim_id": "a5ce4830-7846-42ef-a883-271518168675",
+      "result_id": "347f0de9-76ab-4589-bfea-1734c83f69d6"
+    },
+    {
+      "claim_id": "85304d61-22d5-4b74-a9cd-72c143c722fb",
+      "result_id": "347f0de9-76ab-4589-bfea-1734c83f69d6"
+    },
+    {
+      "claim_id": "ca442f07-3211-47f2-8ff1-281f1818bd5a",
+      "result_id": "347f0de9-76ab-4589-bfea-1734c83f69d6"
+    },
+    {
+      "claim_id": "b5835b8c-5455-41c1-ac2b-a897707effc4",
+      "result_id": "b6977a6c-804d-40aa-9f5a-ec1d8fd07256"
+    },
+    {
+      "claim_id": "63464baa-461e-44e5-84b9-beba728f632e",
+      "result_id": "b6977a6c-804d-40aa-9f5a-ec1d8fd07256"
+    },
+    {
+      "claim_id": "65a40885-1612-4618-913d-ea978fe8dcba",
+      "result_id": "b6977a6c-804d-40aa-9f5a-ec1d8fd07256"
+    },
+    {
+      "claim_id": "694ce1a3-13fe-4c70-ac33-0f7b5a7d06e6",
+      "result_id": "b6977a6c-804d-40aa-9f5a-ec1d8fd07256"
+    },
+    {
+      "claim_id": "eda812ca-8131-416d-95c8-75c661c2e45b",
+      "result_id": "b6977a6c-804d-40aa-9f5a-ec1d8fd07256"
+    },
+    {
+      "claim_id": "efe328ba-f120-4433-be33-de28701356ef",
+      "result_id": "b6977a6c-804d-40aa-9f5a-ec1d8fd07256"
+    },
+    {
+      "claim_id": "33076e79-c6bf-43b6-b9b8-730f95a29c6c",
+      "result_id": "9ecf0919-70c8-4144-a12f-2ce4bd515486"
+    },
+    {
+      "claim_id": "96071759-372e-4e74-837c-5925a87d606f",
+      "result_id": "9ecf0919-70c8-4144-a12f-2ce4bd515486"
+    },
+    {
+      "claim_id": "cc2e74b7-053d-4443-a371-b87f59ab8347",
+      "result_id": "9ecf0919-70c8-4144-a12f-2ce4bd515486"
+    },
+    {
+      "claim_id": "f2d97f07-74c8-488e-87f2-3bc7b2e7a387",
+      "result_id": "9ecf0919-70c8-4144-a12f-2ce4bd515486"
+    },
+    {
+      "claim_id": "577d4453-edc9-404f-909a-156bca66dd82",
+      "result_id": "9ecf0919-70c8-4144-a12f-2ce4bd515486"
+    },
+    {
+      "claim_id": "32d3fd64-b161-46e3-8ed6-f185d2d7ffa2",
+      "result_id": "9ecf0919-70c8-4144-a12f-2ce4bd515486"
+    },
+    {
+      "claim_id": "932c3c97-f420-4958-a0de-a75b7da6963e",
+      "result_id": "9ecf0919-70c8-4144-a12f-2ce4bd515486"
+    },
+    {
+      "claim_id": "f050f490-2147-4ade-a0ab-9909ec43f1c4",
+      "result_id": "9ecf0919-70c8-4144-a12f-2ce4bd515486"
+    },
+    {
+      "claim_id": "38e956fe-7c94-4a66-8710-9c3b47c9fa01",
+      "result_id": "9ecf0919-70c8-4144-a12f-2ce4bd515486"
+    },
+    {
+      "claim_id": "83e31222-ce04-4609-ae78-f7480f0b4079",
+      "result_id": "9ecf0919-70c8-4144-a12f-2ce4bd515486"
+    },
+    {
+      "claim_id": "4a102518-0f57-44c3-af2c-f1fe5c81719c",
+      "result_id": "9ecf0919-70c8-4144-a12f-2ce4bd515486"
+    },
+    {
+      "claim_id": "801c2a18-cacb-4a3e-9374-a3cef70f1490",
+      "result_id": "9ecf0919-70c8-4144-a12f-2ce4bd515486"
+    },
+    {
+      "claim_id": "481ad72c-d332-46ed-bf93-37bbc9d8a3e6",
+      "result_id": "e4110eff-d921-4abd-8eff-4001b2ff5469"
+    },
+    {
+      "claim_id": "9136558f-6630-4fd6-8667-55f8feafe69a",
+      "result_id": "e4110eff-d921-4abd-8eff-4001b2ff5469"
+    },
+    {
+      "claim_id": "6943073e-186b-41a6-893a-9faa27116487",
+      "result_id": "e4110eff-d921-4abd-8eff-4001b2ff5469"
+    },
+    {
+      "claim_id": "ebc3e1ca-3145-4ec4-8924-ee4d1e5f4073",
+      "result_id": "679b30e1-27a4-4f1c-a453-2f0d82f8c2d5"
+    }
+  ],
+  "comparisons": []
+}

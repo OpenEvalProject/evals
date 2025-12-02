@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "EGFR-TKIs show enhanced efficacy in 3D spheroid cultures compared to 2D adherent cultures in EGFR-mutated NSCLC cell lines. HCC827 cells showed >1 log enhancement in EGFR-TKI efficacy in 3D cultures for both gefitinib and osimertinib, while H1975 cells showed enhanced osimertinib efficacy in 3D cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by experimental dose-response data presented in Figure 1A showing clear differences in drug efficacy between 2D and 3D culture conditions. The >1 log enhancement is quantifiable from the dose-response curves, and the pattern is consistent across multiple EGFR-TKI treatments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "SOS1 is required for 3D spheroid growth but not 2D proliferation in EGFR-mutated NSCLC cells. SOS1 deletion completely inhibited spheroid growth in HCC827 and H1975 cells and significantly diminished oncogenic transformation across all EGFR-mutated cell lines examined, while SOS2 deletion had variable effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are well-supported by experimental data in Figures 1B-D showing differential effects of SOS1 vs SOS2 deletion on 2D proliferation versus 3D transformation. The conclusion that SOS1 is the major RasGEF (C46) is a reasonable inference from the consistent inhibition of transformation across multiple cell lines. Western blot validation of SOS1 deletion is shown in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The SOS1 inhibitor BAY-293 shows enhanced efficacy in 3D spheroids over 2D cultures and is specific for SOS1. BAY-293 treatment did not inhibit survival of SOS1-deleted spheroids, while SOS2 deletion enhanced BAY-293 efficacy by approximately 1-log, indicating overlapping functions between SOS1 and SOS2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are supported by dose-response data in Figures 1E-F. The specificity claim (C49) is validated by the lack of effect in SOS1-deleted cells (C48). The overlapping function inference (C51) is reasonable given the enhanced BAY-293 efficacy in SOS2-deleted cells (C50). However, the specificity validation could be strengthened with additional off-target profiling data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "EGFR-mutated NSCLC cells are more sensitive to either mutant EGFR or SOS1 inhibition in 3D spheroid culture compared to traditional 2D adherent conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is a summary inference supported by the collective experimental data from Figure 1 (C37-C51). The pattern of enhanced drug efficacy and requirement for SOS1 in 3D but not 2D conditions is consistently demonstrated across multiple cell lines and experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Osimertinib and BAY-293 show significant drug-drug synergy in EGFR-mutated H1975 cells only in 3D spheroid culture conditions, not in 2D adherent cultures. In 2D cultures, the drugs showed additive effects (CI 0.8-1.2), while in 3D cultures they showed significant synergy (CI <0.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by isobologram analysis and Bliss independence analysis presented in Figure 2E-K. Both independent methods of synergy assessment (isobologram and Bliss) converge on the same conclusion. The 3D-specific synergy is a key finding that is rigorously demonstrated with appropriate statistical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "BAY-293 showed significant synergy with both gefitinib and osimertinib across multiple EGFR-mutated cell lines (first-generation TKI-sensitive and T790M-mutated), suggesting SOS1 inhibition can act as a secondary treatment for all EGFR-TKIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by extensive isobologram and Bliss independence analyses across six different EGFR-mutated cell lines presented in Figures 3 and 4. The consistency of synergy across different EGFR mutations and TKI generations strengthens the conclusion (C59, C61) that SOS1 inhibition is broadly applicable. The inference is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "SOS2 deletion sensitized cells to BAY-293 (5-10-fold decrease in EC50) but did not enhance synergy between osimertinib and BAY-293. The synergy between osimertinib and BAY-293 is independent of SOS2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by isobologram analysis in Figure 5A-B showing that while SOS2 deletion increases BAY-293 sensitivity, the combination index values are similar or higher in SOS2 KO cells compared to NT controls. The overlay plots demonstrate overlapping drug combination data points. The conclusion of SOS2-independence (C66) is a reasonable inference from this data, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Combined EGFR and SOS1 inhibition synergistically inhibits both RAF/MEK/ERK and PI3K/AKT signaling pathways. BAY-293 reduced the osimertinib dose required to inhibit ERK and AKT phosphorylation. SOS1 inhibition or SOS2 deletion independently synergized with osimertinib to inhibit RAF/MEK/ERK signaling, with combined SOS1/2 inhibition further enhancing this synergy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by western blot data and Bliss independence analysis of phospho-protein quantitation in Figure 6. The signaling data provides a mechanistic explanation for the observed synergy in cell viability. However, the western blots show some variability in band intensity, and quantitation is based on weighted averages of multiple loading controls. The conclusion (C71) is a reasonable inference but could be strengthened with additional pathway validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Systematic assessment of EGFR/RAS pathway inhibitors revealed that all three cell lines showed drug-drug synergy with any combination of EGFR, SOS1, and SHP2 inhibition (proximal signaling), while inhibition of downstream RAF/MEK/ERK or PI3K/AKT pathways failed to consistently synergize with osimertinib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by the comprehensive drug combination matrix presented in Figure 7B showing combination indices for multiple drug pairs across three cell lines. The pattern is clear: proximal inhibitors synergize while downstream effector inhibitors do not. The conclusion (C74) is a reasonable inference, though the mechanism for why proximal inhibition is required remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "SOS2 plays a role in SHP2-dependent signaling, as synergy between SOS1 and SHP2 inhibition was enhanced by SOS2 deletion. Additionally, SOS1 inhibition synergized with MEK inhibition in SOS2 KO cells, suggesting deep inhibition of MEK signaling is sufficient to inhibit survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by data in Figure 7B showing differential effects of SOS2 deletion on various drug combinations. The inference about SOS2's role in SHP2 signaling (C76) and the sufficiency of deep MEK inhibition (C78) are reasonable interpretations of the data, though the molecular mechanisms remain to be elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Two-drug combinations of osimertinib, BAY-293, and RMC-4550 showed synergy at multiple dose-equivalent ratios. Addition of a third proximal pathway inhibitor further enhanced synergy, though the three-drug combination was not significantly more synergistic than osimertinib plus BAY-293 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by isobologram analysis in Figures 7C-E. The data show consistent synergy for two-drug combinations and incremental benefit from three-drug combinations. The conclusion (C83) that osimertinib plus SOS1 inhibitor may be most effective is reasonable given the data, though it represents an optimization rather than a qualitative difference. The claim is appropriately hedged with 'may be'.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Osimertinib does not broadly synergize with inhibitors of downstream EGFR/RAS/RAS effector signaling; synergy is limited to proximal EGFR signaling intermediates SOS1 and SHP2. SOS1 inhibition enhanced osimertinib-dependent inhibition of both RAF/MEK/ERK and PI3K/AKT signaling, while individual downstream pathway inhibitors did not synergize with osimertinib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by data in Figures 6 and 7. The hypothesis (C100) that therapeutics must inhibit all downstream RAS effector signaling to show synergy is speculative but reasonable given the experimental observations. This represents an important mechanistic insight into why proximal inhibition is more effective than downstream pathway inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The combination of osimertinib and the SOS1 inhibitor BAY-293 shows marked efficacy in 3D spheroid culture and should be pursued as a therapeutic option to treat EGFR-mutated lung adenocarcinoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is supported by the extensive in vitro data presented throughout the manuscript. However, claim C111 is a therapeutic recommendation that requires in vivo validation. The authors acknowledge that BAY-293 has limited bioavailability (C103), making it unsuitable for clinical use. While the data support pursuing SOS1 inhibition as a strategy, the specific recommendation for BAY-293 as a therapeutic option is premature without in vivo efficacy data and a bioavailable compound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on lung cancer epidemiology, EGFR mutations, EGFR-TKI treatment, and mechanisms of resistance to first- and third-generation EGFR-TKIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 represent established knowledge about lung cancer and EGFR-TKI resistance, supported by appropriate citations to the literature. These claims provide necessary context for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C53",
+      "C54"
+    ],
+    "result": "Background on therapeutic strategies for osimertinib resistance, including combining osimertinib with RTK inhibitors or downstream pathway inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C53-C54 represent prior work on combination therapies for EGFR-mutated cancers, supported by appropriate citations. These provide rationale for the current study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "3D spheroid cultures show altered characteristics compared to 2D cultures, including differential RTK expression, altered metabolism, and enhanced drug responses that more closely resemble in vivo conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 represent established knowledge about 3D culture systems, supported by appropriate citations. These claims provide important methodological justification for using 3D cultures but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background on SOS1 and SOS2 as RasGEFs and therapeutic targets, including the identification of BAY-293 as a specific SOS1 inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 provide background on SOS proteins and cite prior work including the authors' own studies. The identification of BAY-293 (C36) is from prior work (Hillig et al., 2019), not this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Discussion of osimertinib as first-line treatment, mechanisms of resistance, ongoing clinical trials, and the rationale for targeting proximal EGFR signaling based on YAP-dependent senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C95 represent discussion points synthesizing prior literature with the current findings. These are appropriately cited and provide context for the significance of the results, but represent interpretation rather than novel experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Discussion of SRC family kinase inhibition, limitations of BAY-293 for in vivo use, recent development of orally available SOS1 inhibitors, and ongoing clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C109 provide important context about related work and future directions. The acknowledgment of BAY-293's limitations (C103) and discussion of newer SOS1 inhibitors (C104-C107) appropriately contextualize the translational potential of the findings.",
+    "result_type": "MINOR"
+  }
+]

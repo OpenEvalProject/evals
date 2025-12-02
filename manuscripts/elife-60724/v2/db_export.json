@@ -1,0 +1,2427 @@
+{
+  "submission": {
+    "id": "69545ece-7071-4f52-b1ef-353530ed03d7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:17:52.529159Z",
+    "updated_at": "2025-12-02T19:17:52.529159Z"
+  },
+  "content": [
+    {
+      "id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "submission_id": "69545ece-7071-4f52-b1ef-353530ed03d7",
+      "content_type": "manuscript",
+      "content_text": "# The Sec1/Munc18 protein Vps45 holds the Qa-SNARE Tlg2 in an open conformation\n\n## Authors\n\n- Travis J Eisemann<sup>1</sup> ([ORCID: 0000-0003-3602-2677](https://orcid.org/0000-0003-3602-2677))\n- Frederick Allen<sup>1</sup> ([ORCID: 0000-0002-2969-8137](https://orcid.org/0000-0002-2969-8137))\n- Kelly Lau<sup>1</sup>\n- Gregory R Shimamura<sup>1</sup> ([ORCID: 0000-0003-2104-5518](https://orcid.org/0000-0003-2104-5518))\n- Philip D Jeffrey<sup>1</sup>\n- Frederick M Hughson<sup>1</sup> ([ORCID: 0000-0002-4057-0281](https://orcid.org/0000-0002-4057-0281)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology, Princeton University Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nFusion of intracellular trafficking vesicles is mediated by the assembly of SNARE proteins into membrane-bridging complexes. SNARE-mediated membrane fusion requires Sec1/Munc18-family (SM) proteins, SNARE chaperones that can function as templates to catalyze SNARE complex assembly. Paradoxically, the SM protein Munc18-1 traps the Qa-SNARE protein syntaxin-1 in an autoinhibited closed conformation. Here we present the structure of a second SM\u2013Qa-SNARE complex, Vps45\u2013Tlg2. Strikingly, Vps45 holds Tlg2 in an open conformation, with its SNARE motif disengaged from its Habc domain and its linker region unfolded. The domain 3a helical hairpin of Vps45 is unfurled, exposing the presumptive R-SNARE binding site to allow template complex formation. Although Tlg2 has a pronounced tendency to form homo-tetramers, Vps45 can rescue Tlg2 tetramers into stoichiometric Vps45\u2013Tlg2 complexes. Our findings demonstrate that SM proteins can engage Qa-SNAREs using at least two different modes, one in which the SNARE is closed and one in which it is open.\n\n## Introduction\n\nMembrane trafficking in eukaryotic cells is mediated by vesicles that transport cargo from one intracellular compartment to another or to the plasma membrane for exocytosis. Cargo delivery requires that the vesicle and target membranes fuse in a process mediated by SNARE proteins (S\u00fcdhof and Rothman, 2009). Most SNAREs are tail-anchored membrane proteins, and they drive fusion by forming membrane-bridging complexes that draw the vesicle and target membranes into close apposition. Essential for this process are conserved regions about 65 residues in length called SNARE motifs, which in most SNAREs are immediately adjacent to a C-terminal transmembrane anchor. Four complementary SNARE motifs\u2014one each from the R-, Qa-, Qb-, and Qc-SNARE groups\u2014zipper together to form a parallel \u03b1-helical bundle (Fasshauer et al., 1998; Kloepper et al., 2007; Sutton et al., 1998). SNARE motifs are grouped according to the zero-layer residue in the middle of the motif, either arginine (R) or glutamine (Q). The four zero-layer residues interact within the otherwise hydrophobic core of the assembled SNARE bundle to help prevent out-of-register assembly of the four \u03b1-helices. The remaining core residues within the SNARE bundle are denoted by layer numbers ranging from approximately \u20138 at the N-terminal end of the SNARE motif to +8 at the C-terminal end.\n\nIn addition to complementary SNAREs embedded in the vesicle and target membranes, fusion requires Sec1/Munc18-family (SM) proteins (Baker and Hughson, 2016). SM proteins function as SNARE chaperones, capable of both inhibiting and catalyzing the assembly of fusogenic SNARE complexes. The first crystal structure of an SM\u2013SNARE complex, the neuronal SM protein Munc18-1 (hereafter called Munc18) bound to the cytoplasmic portion of the Qa-SNARE syntaxin-1 (Stx), was particularly influential (Misura et al., 2000). It showed that an SM protein could function as a clamp to keep the bound SNARE in an autoinhibited closed conformation. In this closed conformation, the three-helix bundle Habc domain of Stx folds back onto the SNARE motif, preventing the SNARE motif from entering into a SNARE complex. The closed conformation of the Qa-SNARE is wedged into a large cleft in the SM protein and requires the intervention of a third protein\u2014Munc13-1\u2014for opening (Ma et al., 2011). Finally, the extreme N-terminal region of Stx, termed the N-peptide, binds to a distinct site on the outside of the SM protein (Burkhardt et al., 2008). Munc18 thus makes direct contact with three different regions\u2014the N-peptide, the Habc domain, and the SNARE motif\u2014distributed along the entire length of the Stx cytoplasmic domain.\n\nTwo recent crystal structures imply that SM proteins, instead of or in addition to functioning as Qa-SNARE clamps, can act as templates to initiate SNARE complex assembly (Baker et al., 2015). These structures showed that the SM protein Vps33 binds the SNARE motifs of the Qa-SNARE Vam3 and the R-SNARE Nyv1 at adjacent sites. Combining these crystal structures yielded a model of the Vps33\u2013Vam3\u2013Nyv1 template complex. In it, the two SNARE motifs adopt a half-zippered configuration, in which their N-terminal halves up to the zero layer are aligned for assembly. Single-molecule force microscopy studies confirmed that the SM proteins Vps33, Munc18, and Munc18-3 all form template complexes with their cognate R- and Qa-SNAREs, and that these template complexes likely represent rate-limiting intermediates in SM-catalyzed SNARE complex assembly (Jiao et al., 2018).\n\nHere, we present X-ray crystal structures of the SM protein Vps45, both alone and in complex with the Qa-SNARE Tlg2 (Cowles et al., 1994; Nichols et al., 1998). Vps45, Tlg2 and its cognate SNAREs, and the CATCHR-family tethering complex GARP all function in trafficking from the endosome to the trans-Golgi network (Abeliovich et al., 1998; Conibear and Stevens, 2000; Holthuis et al., 1998; P\u00e9rez-Victoria and Bonifacino, 2009; Siniossoglou and Pelham, 2001; Siniossoglou and Pelham, 2002). In the crystal structure of the Vps45\u2013Tlg2 complex, Vps45 makes direct contact with the N-peptide, Habc domain, and SNARE motif of Tlg2. In contrast with the Munc18\u2013Stx complex, however, the bound Qa-SNARE adopts an open conformation. Specifically, the Habc does not pack against the N-terminal region of the SNARE motif and instead appears to leave it free to initiate SNARE complex assembly. Thus, Qa-SNARE clamping may be a specialized property of Munc18, rather than a general property shared broadly among SM proteins. Tlg2, but not Vps45\u2013Tlg2, is prone to homo-oligomerization. Taken together, our results underscore the ability of SM proteins to prevent SNARE misassembly and template proper assembly.\n\n## Results\n\n### Crystal structure of Vps45\u2013Tlg2\n\nThere are four families of SM protein\u2014Sec1/Munc18, Sly1, Vps33, and Vps45\u2014and every eukaryote has at least one member of each family (Kloepper et al., 2007; Koumandou et al., 2007). Crystal structures have been reported for representatives of the Munc18, Sly1, and Vps33 families (Baker et al., 2013; Baker et al., 2015; Bracher et al., 2000; Bracher and Weissenhorn, 2002; Burkhardt et al., 2008; Burkhardt et al., 2011; Colbert et al., 2013; Graham et al., 2013; Hackmann et al., 2013; Hu et al., 2011; Hu et al., 2007; Misura et al., 2000). We began, therefore, by determining the crystal structure of a member of the fourth family, Vps45 from the thermotolerant fungus Chaetomium thermophilum, and refining it to 2.0 \u00c5 resolution (Table 1). Like the other structurally characterized SM proteins, Vps45 exhibits a three-domain architecture with a large cleft between domains 1 and 3a (Figure 1A). Three surface regions are particularly well conserved among members of the\u00a0Vps45 family, presumably because they are functionally important (Figure 1\u2014figure supplement 1A). The first conserved region corresponds to the walls of the cleft. The second and third conserved surface regions correspond to the N-peptide and R-SNARE binding sites observed in previous structures (Baker et al., 2015; Bracher and Weissenhorn, 2002; Burkhardt et al., 2008; Hu et al., 2011; Hu et al., 2007). Thus, each of the surface regions known to engage SNARE proteins in one or more of the other SM families is highly conserved in the Vps45 family.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60724/elife-60724-fig1-v2.jpg)\n\n**Figure 1.:** (A) Crystal structures of Vps45 (left) and Vps45\u2013Tlg2 (right, showing only Vps45). The comparison shown in the center was generated by aligning domains 2 and 3b. (B) Crystal structure of Vps45\u2013Tlg2. H3a and H3c are helical regions within the SNARE motif that were defined by Misura et al. based on the Munc18\u2013Stx structure (Misura et al., 2000).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60724/elife-60724-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Sequence conservation of Vps45 surface residues as determined by ConSurf (Ashkenazy et al., 2010). Three highly conserved regions on Vps45 have previously been implicated in R-SNARE binding (bottom left, Vps33\u2013Nyv1 (PDB code 5BV0)), Qa-SNARE SNARE motif binding (bottom middle, Vps33\u2013Vam3 (5BUZ) and Munc18\u2013Stx, (3C98)), and N-peptide binding (right Munc18\u2013Stx (3C98) and Sly1-Sed5 (1MQS)). (B) Sequence conservation heat map comparing the Tlg2 sequences from C. thermophilum and C. globosum. The region deleted from Vps45\u2013Tlg2, residues 201\u2013228, is highlighted. The heat map was produced using Clustal Omega (Sievers and Higgins, 2018).\n\n**Table 1.**\n Data Collection and Refinement Statistics.Values in parenthesis correspond to the highest-resolution shell.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Vps45</th>\n      <th>Vps45\u2013Tlg21-310</th>\n      <th>Vps45\u2013Tlg2</th>\n      <th>Vps45V306D,F335R\u2013Tlg2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Beamline</td>\n      <td>CHESS (F1)</td>\n      <td>NSLSII (FMX)</td>\n      <td>NSLSII (FMX)</td>\n      <td>NSLSII (FMX)</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.9782</td>\n      <td>0.9794</td>\n      <td>0.9794</td>\n      <td>0.9793</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P212121</td>\n      <td>P21221</td>\n      <td>P212121</td>\n      <td>P21</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>62.49, 93.96, 102.62</td>\n      <td>58.38, 89.43, 209.14</td>\n      <td>58.73, 180.06, 202.09</td>\n      <td>89.14, 58.79, 191.18</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90.0, 90.0, 90.0</td>\n      <td>90.0, 90.0, 90.0</td>\n      <td>90.0, 90.0, 90.0</td>\n      <td>90.0, 97.75, 90.0</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>35\u20132.00 (2.03\u20132.00)</td>\n      <td>29\u20133.88 (4.30\u20133.88)</td>\n      <td>30\u20132.80 (2.88\u20132.80)</td>\n      <td>30\u20135.12 (5.73\u20135.12)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.6 (98.9)</td>\n      <td>99.3 (98.1)</td>\n      <td>99.8 (98.9)</td>\n      <td>98.0 (56.4)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>4.6 (4.2)</td>\n      <td>13.0 (13.4)</td>\n      <td>13.4 (12.3)</td>\n      <td>6.2 (5.9)</td>\n    </tr>\n    <tr>\n      <td>Rmerge</td>\n      <td>0.053 (0.564)</td>\n      <td>0.246 (2.149)</td>\n      <td>0.134 (1.880)</td>\n      <td>0.305 (1.222)</td>\n    </tr>\n    <tr>\n      <td>Rmeas</td>\n      <td>0.092 (0.807)</td>\n      <td>0.256 (2.234)</td>\n      <td>0.144 (1.961)</td>\n      <td>0.334 (1.344)</td>\n    </tr>\n    <tr>\n      <td>&lt;I/\u03c3I&gt;</td>\n      <td>11.7 (2.0)</td>\n      <td>6.9 (1.3)</td>\n      <td>13.6 (1.4)</td>\n      <td>3.3 (1.1)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>0.940 (0.743)</td>\n      <td>0.993 (0.649)</td>\n      <td>0.999 (0.731)</td>\n      <td>0.980 (0.564)</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>35\u20132.00 (2.04\u20132.00)</td>\n      <td>30\u20133.90 (4.29\u20133.90)</td>\n      <td>30\u20132.80 (2.85\u20132.80)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Work</td>\n      <td>43025</td>\n      <td>9900</td>\n      <td>51270</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Free</td>\n      <td>2268</td>\n      <td>505</td>\n      <td>2676</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rwork</td>\n      <td>0.178 (0.262)</td>\n      <td>0.191 (0.291)</td>\n      <td>0.194 (0.291)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rfree</td>\n      <td>0.218 (0.300)</td>\n      <td>0.242 (0.382)</td>\n      <td>0.248 (0.326)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td>4551</td>\n      <td>5707</td>\n      <td>11550</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Average B-factor (\u00c52)</td>\n      <td>42.5</td>\n      <td>212.8</td>\n      <td>93.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>RMSD</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.007</td>\n      <td>0.005</td>\n      <td>0.008</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.795</td>\n      <td>0.8</td>\n      <td>0.814</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ramachandran</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>98.5</td>\n      <td>94.4</td>\n      <td>95.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>0.6</td>\n      <td>1.4</td>\n      <td>1.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PDB Code</td>\n      <td>6XJL</td>\n      <td>6XMD</td>\n      <td>6XM1</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nWe next sought to determine the structure of Vps45 in complex with its cognate Qa-SNARE, Tlg2 (Bryant and James, 2001; Burkhardt et al., 2008; Carpp et al., 2006; Dulubova et al., 2002). Bacterial co-expression of C. thermophilum Vps45 and C. thermophilum Tlg2 residues 1\u2013310, including all but the C-terminal 17 residues of the Tlg2 cytoplasmic domain, yielded a stable 1:1 complex. Small crystals were obtained that diffracted to about 3.5 \u00c5 resolution. Better crystals, diffracting to 2.8 \u00c5 resolution, were obtained after deleting Tlg2 residues 201\u2013228, which are missing from the otherwise nearly identical Chaetomium globosum Tlg2 (Figure 1\u2014figure supplement 1B). The deleted segment is located near the beginning of the 58-residue linker that connects the Habc domain and the SNARE motif. The structures of the Vps45\u2013Tlg21-310 and Vps45\u2013Tlg21-310, \u0394201-228 complexes were determined by molecular replacement with Vps45 as a search model (Table 1). Because there were no significant differences between the two structures, we focus hereafter on the higher resolution Vps45\u2013Tlg21-310, \u0394201-228 (henceforth simply Vps45\u2013Tlg2) structure (Figure 1B). All of the well-characterized regions of Tlg2 are visible and interact directly with Vps45: the N-peptide, the Habc domain, and the SNARE motif. The sequences connecting these regions, as well as the C-terminus of the SNARE motif, appear to be disordered based on the lack of interpretable electron density. The corresponding regions were likewise disordered in the Munc18\u2013Stx complex, with the important exception of the linker between the Habc domain and the SNARE motif, which will be discussed below. Comparing the Vps45 and Vps45\u2013Tlg2 structures reveals that Vps45 does not undergo a major conformational change when it binds to Tlg2. The cleft does, however, open up slightly, via small rotations of domains 1 and 3a relative to the rest of Vps45, in order to accommodate Tlg2 (Figure 1A).\n\n### Bound Tlg2 adopts a novel open conformation\n\nThe N-peptide of Tlg2 (residues 1\u201314) binds to the outside (as opposed to the cleft side) of Vps45 domain 1 (Figure 2A). The N-peptide binding mode of Vps45, in which residues 6\u201312 form a short \u03b1-helix, resembles that observed previously for the Munc18 and Sly1 families of SM protein. The interaction between the Tlg2 N-peptide and Vps45 buries 870 \u00c52 of surface accessible area. Arg residues at Tlg2 positions 3, 5, and 13 appear to play especially important roles, each of them forming both H-bonds and salt bridges with Vps45, while Tyr 9 is completely buried in a deep pocket in which its hydroxyl group forms a charge-stabilized H-bond. Previous site-directed mutagenesis supports the importance of Arg 3, Tyr 9 (often Phe), and Arg 13 for high-affinity Vps45\u2013Tlg2 binding (Burkhardt et al., 2008; Carpp et al., 2006; Dulubova et al., 2002). Near the other end of the Tlg2 polypeptide chain, layers 0 to +4 of the SNARE motif interact with the opposite, cleft-facing side of Vps45 domain 1 (Figure 2B). This interaction buries about 930 \u00c52 surface accessible area. As previously observed in the Munc18\u2013Stx complex (and also in the complex between Vps33 and the Vam3 SNARE motif), the +2 and +3 layers of the Qa-SNARE form a short \u03b1-helix (H3c), with the +2 layer Ile (residue 295 in Tlg2) fitting snugly into a deep hydrophobic pocket on domain 1 (Baker et al., 2015; Misura et al., 2000). In sum, two short regions at opposite ends of Tlg2, the N-peptide and the H3c helix, bind to opposite sides of Vps45 domain 1 in a manner that closely resembles the Munc18\u2013Stx complex.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60724/elife-60724-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Interactions between Vps45 and the (A) N-peptide, (B) SNARE motif, and (C) Habc domain of Tlg2. The left panels depict residues contributing to hydrogen bonds and/or salt bridges, with Vps45 residues colored purple. The right panels depict hydrophobic interactions, with residues colored from least (white) to most (green) hydrophobic.\n\nBy contrast, the intervening regions of Vps45\u2014comprising the Habc domain, the linker that connects Habc and the SNARE motif, and the N-terminal half of the SNARE motif\u2014adopt a novel open conformation. Figure 3A compares Sso1 (a yeast exocytic Qa-SNARE that, by itself, is tightly closed [Munson et al., 2000; Nicholson et al., 1998]), Stx (from the Munc18\u2013Stx complex), and Tlg2 (from the Vps45\u2013Tlg2 complex). Instead of folding with the SNARE motif to form a four-helix bundle-like structure, the Habc domain of Tlg2 makes a limited contact with the SNARE motif, centered around the \u22122 layer of the latter and at an approximately 45\u00b0 angle. As noted above, there is no interpretable electron density for the linker connecting the Habc domain and the SNARE motif, which in the Munc18\u2013Stx complex forms a short helix that packs at right angles against the closed Habc-SNARE motif four-helix bundle (Figure 3A). This is particularly notable inasmuch as this region has long been recognized as critical for Stx opening and the initiation of SNARE assembly (Dulubova et al., 1999; Lai et al., 2017; Ma et al., 2011; Misura et al., 2000; Munson et al., 2000; Wang et al., 2017; Yang et al., 2015).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60724/elife-60724-fig3-v2.jpg)\n\n**Figure 3.:** (A) Comparison of uncomplexed Sso1 (PDB code 1FIO), Munc18-bound Stx (3C98), and Vps45-bound Tlg2.\u00a0The locations of the zero-layer Gln residues are indicated with spheres. (B and C) Comparison of the Habc domains and SNARE motifs in the Munc18\u2013Stx and Vps45\u2013Tlg2 complexes. The core residues of the SNARE motifs (layers \u22127 to 0) are depicted as orange spheres. At the right, helical wheel representations depict the relative rotation of the SNARE motifs (layers \u22127 to \u22122, corresponding to helix H3a in Figure 1B) with respect to the rest of the structure.\n\nThe Habc domain interacts with the cleft side of Vps45 domain 1, burying 680 \u00c52 surface accessible area in an interaction that is largely hydrophobic in nature (Figure 2C). Compared to the Munc18\u2013Stx complex, the C-terminal end of the Habc domain has swung away from the SM protein, rotating approximately 15\u00b0 around an axis near the N-terminal end of the domain (Figure 3B,C). As a consequence, the Habc domain does not make contact with domain 3a. Finally, the N-terminal half of the SNARE motif, in lieu of bundling with the Habc domain, forms a helix (H3a) that engages in a limited interaction with the fully extended domain 3a helical hairpin of Vps45 (Figure 3C). This interaction buries a surface accessible area of about 300 \u00c52, with the \u22124 and \u22125 layer residues of H3a packing against the long helix of the hairpin. As a result, H3a is rotated approximately 120\u00b0 around its long axis relative to the Munc18\u2013Stx complex (right-hand panels of Figure 3B,C). Overall, the Vps45\u2013Tlg2 structure establishes that SM proteins can engage the N-peptide, the Habc domain, and the SNARE motif of a cognate Qa-SNARE without simultaneously clamping that SNARE in a closed conformation.\n\n### The Vps45 helical hairpin is unfurled\n\nThe domain 3a helical hairpin (Figure 1A) plays a key role in SM protein function (Baker et al., 2015; Boyd et al., 2008; Hu et al., 2011; Jiao et al., 2018; Parisotto et al., 2014; Sitarska et al., 2017; Wang et al., 2020). In Vps45 alone, the distal tip of the helical hairpin is disordered (Figure 1A). In the Munc18\u2013Stx complex, it adopts a furled conformation in which the distal tip folds back on the more proximal portion, concealing the R-SNARE binding site (Misura et al., 2000;\u00a0Figure 4A,B). The bound Stx, moreover, sterically blocks unfurling (Baker and Hughson, 2016; Hu et al., 2011). In the structures of Vps33 bound to the SNARE motifs of Vam3 and Nyv1, by contrast, the helical hairpin adopts an unfurled, extended conformation (Figure 4B) that interacts extensively with the Qa- and R-SNARE respectively (Baker et al., 2015;\u00a0Figure 4C). An unfurled conformation is also seen in the Vps45\u2013Tlg2 complex (Figures 1A and 4), made possible by the open conformation of the bound Qa-SNARE (Figure 3C). The strong similarity between the unfurled Vps33 and Vps45 hairpins (Figure 4B) suggests that the unfurled conformation may be a well-defined active conformation. Unfortunately, we were unable to identify in vitro conditions under which C. thermophilum Tlg2, with or without Vps45, assembles into SNARE complexes. Nonetheless, based on the crystal structure, the Vps45\u2013Tlg2 complex appears to be primed to bind an R-SNARE and, as demonstrated for SM proteins of the Sec1/Munc18 and Vps33 families (Jiao et al., 2018), to catalyze SNARE assembly (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60724/elife-60724-fig4-v2.jpg)\n\n**Figure 4.:** (A) Structures of SM\u2013Qa-SNARE complexes Munc18\u2013Stx and Vps45\u2013Tlg2, as well as a model of the SM\u2013Qa-SNARE\u2013R-SNARE template complex Vps33\u2013Vam3\u2013Nyv1 (Baker et al., 2015). The Qa-SNARE motifs are dark gray, the remainder of the Qa-SNAREs are light gray, and the R-SNARE Nyv1 is white. The model of the template complex was obtained by combining Vps33 and Vam3 from the Vps33\u2013Vps16\u2013Vam3 structure (5BUZ) with Nyv1 from the Vps33\u2013Vps16\u2013Nyv1 structure (5BV0); both of these structures lack SNARE N-terminal regions and contain only the SNARE motifs. (B) Close-up views of the domain 3a helical hairpins (dashed rectangles in panel A). (C) SM\u2013SNARE interactions, emphasizing the domain 3a helical hairpins and the SNARE motifs. For Vps45, a model of the template complex is suggested by superimposing the outline of Vps33-bound Nyv1. As in Figure 3, the core residues of the SNARE motifs (layers \u22127 to 0) are shown as orange spheres.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60724/elife-60724-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematic representation of asymmetric unit and crystal packing.\u00a0(B\u2013D) Interaction between Tlg2 SNARE motif (blue) with symmetry mate Vps45 (dark gray, named Vps45\u2032). The reciprocal interaction between the symmetry mate Tlg2 (black outline, named Tlg2\u2032) and Vps45 (white) is shown. Residues V306 and F335 were targeted for mutagenesis to disrupt these interactions (purple, V306D and F335R, respectively). Hydrophobic (C) and hydrogen bond/salt bridge (D) stabilizing interactions are shown. Hydrophobicity of each residue is colored on a scale from least (white) to most (green) hydrophobic. (E) Comparison of Vps45\u2013Tlg2 with the electron density map (grey) obtained from Vps45\u2013Tlg2V306D,F335R diffraction data phased using Vps45\u2013Tlg2 (minus the SNARE motif) as the molecular replacement model. The trajectories of the Tlg2 and Tlg2V306D,F335R SNARE motifs (black and pink arrows respectively) diverge near Glu 273 (orange). The unfurled helical hairpin is visible in the right-hand panel.\n\nA caveat to the above conclusions is that, as observed previously in other SM protein structures (Baker et al., 2015; Hu et al., 2011; Wang et al., 2020), the domain 3a helical hairpin in the Vps45\u2013Tlg2 structure participates in crystal contacts that could potentially influence its conformation. Specifically, the hairpin interacts with the Tlg2 SNARE motif (layers \u20138 to \u20134) of a crystallographically adjacent Vps45\u2013Tlg2 complex (Figure 4\u2014figure supplement 1A\u2013D). To examine the potential influence of this crystal contact on the Vps45\u2013Tlg2 structure, we sought to disrupt it via site-directed mutagenesis. The hairpin mutant Vps45V306D,F335R formed stable complexes with Tlg2 that crystallized in a new space group (Table 1). Although these crystals diffracted only to about 5 \u00c5 resolution, electron density maps phased by molecular replacement with a model of Vps45\u2013Tlg2 lacking the SNARE motif allowed us to reach two unambiguous conclusions. First, layers \u20138 to \u20134 of the Tlg2 SNARE motif no longer interact with the helical hairpin, instead curving away to make a minor crystallographic contact with the SNARE motif of a neighboring Tlg2 molecule (Figure 4\u2014figure supplement 1E). Second, while electron density at this resolution cannot reveal subtle differences, the remainder of the structure\u2014including the position of the Habc domain and the unfurled helical hairpin\u2014appears to be unchanged.\n\n### Vps45 prevents Tlg2 oligomerization\n\nAlthough C. thermophilum Vps45\u2013Tlg2 forms a 1:1 complex, the maltose binding protein tagged full-length cytoplasmic region of Tlg2 (MBP-Tlg21-327) formed oligomers as judged by size exclusion chromatography (Figure 5A,B). The Tlg2 SNARE motif (MBP-Tlg2258-327) likewise formed oligomers, whereas the MBP-tagged SNARE motifs from the cognate R-, Qb-, and Qc-SNAREs (Snc2, Vti1, and Tlg1) did not (Figure 5C). These observations suggested that Tlg2 oligomerization, like Stx oligomerization (Lerman et al., 2000; Misura et al., 2001), is driven by the formation of SNARE complex-like bundles of SNARE motifs. Consistent with this hypothesis, sedimentation velocity analytical ultracentrifugation analysis of both MBP-tagged and untagged Tlg2258-327 showed that the Tlg2 SNARE motif behaves as a single species with an apparent molecular mass indicative of a tetramer (Figure 5D,F and Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/60724/elife-60724-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of the Tlg2 constructs used.\u00a0(B) Size exclusion chromatography of MBP-Tlg21-327. The predicted position for a monomer, based on size standards, is indicated. (C) Size-exclusion chromatography of the MBP-tagged C. thermophilum SNARE motifs of Tlg2 (Qa-SNARE), Snc2 (R-SNARE), Vti1 (Qb-SNARE), and Tlg1 (Qc-SNARE). (D\u2013F) Sedimentation velocity analytical ultracentrifugation (AUC) and derived parameters (insets). For MBP-Tlg2258-327 (panel D), the experimental molecular weight (181 kDa) falls between those expected for a trimer (161 kDa) and a tetramer (214 kDa); for untagged Tlg2258-327 (panel F), the experimental molecular weight (33.8 kDa) is in excellent agreement with that expected for a tetramer (33.6 kDa). The Habc domain (Tlg279-200) sediments as a monomer (panel E).\u00a0For data and fits, see Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60724/elife-60724-fig5-figsupp1-v2.jpg)\n\nTo test whether oligomerization is reversible, we mixed MBP-Tlg21-327 with an equimolar amount of Vps45. After a 2 hr incubation, the majority of the Vps45 shifted into two higher molecular weight peaks, one of them likely representing Vps45 bound to MBP-Tlg21-327 oligomers, the other representing the 1:1 Vps45\u2013MBP-Tlg21-327 complex (Figure 6A). At longer incubation times, the 1:1 complex peak became more prominent at the expense of the peak representing Vps45 bound to MBP-Tlg21-327 oligomers, and the Vps45-only peak disappeared altogether. These data imply that Vps45 is able to rescue MBP-Tlg21-327 from the oligomeric state, presumably by trapping MBP-Tlg21-327 monomers that transiently dissociate (Figure 6B). As expected, the N-peptide (MBP-Tlg21-20) bound to Vps45 (Figure 6\u2014figure supplement 1A). The N-peptide:Vps45 interaction appears to underlie the ability of Vps45 to rescue Tlg2 from oligomers, since N-terminally truncated Tlg2 constructs (MBP-Tlg221-327 and MBP-Tlg2258-327) formed oligomers that neither bound to nor were rescued by Vps45 (Figure 6\u2014figure supplement 1B,C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/60724/elife-60724-fig6-v2.jpg)\n\n**Figure 6.:** (A) Size-exclusion chromatography (top) of MBP-Tlg21-327, Vps45, and a 1:1 mixture incubated at 20\u00b0C for 2, 18, or 42 hr.\u00a0The indicated fractions were analyzed by SDS-PAGE (bottom). (B) Schematic representation of Vps45-mediated rescue of Tlg2 from homo-oligomers.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60724/elife-60724-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Analysis by size-exclusion chromatography of Vps45 binding to (A) MBP-Tlg21-20, (B) MBP-Tlg221-327, and (C) MBP-Tlg2258-327.\n\n## Discussion\n\nFor two decades, the only reported structures of a full-length SNARE cytoplasmic domain bound to an SM protein have been those of the mammalian Munc18\u2013Stx complex (Burkhardt et al., 2008; Misura et al., 2000) and the highly similar Munc18\u2013Stx complex from the choanoflagellate Monosiga brevicollis (Burkhardt et al., 2011). These structures have played a pivotal role in the development of models for SM protein function and mechanism. The structure reported here, of the almost full-length cytoplasmic domain of Tlg2 bound to Vps45, is strikingly different. Rather than a four-helix-bundle-like closed conformation, the bound SNARE adopts a much more open conformation, with only a glancing interaction between the Habc domain and the SNARE motif (Figure 3A). The linker between the Habc domain and the SNARE motif, which in the Munc18\u2013Stx complex is a target for Munc13\u2019s Stx-opening activity (Dulubova et al., 1999; Lai et al., 2017; Ma et al., 2011; Misura et al., 2000; Wang et al., 2017; Wang et al., 2020; Yang et al., 2015), appears to be disordered. Finally, the domain 3a helical hairpin, which plays a crucial role in SNARE templating (Baker et al., 2015; Boyd et al., 2008; Hu et al., 2011; Jiao et al., 2018; Parisotto et al., 2014; Sitarska et al., 2017), is furled in the Munc18\u2013Stx complex but unfurled\u2014and therefore primed for R-SNARE binding\u2014in the Vps45\u2013Tlg2 complex (Figure 4).\n\nThere have been conflicting reports regarding the tendency of yeast Tlg2 to oligomerize and/or form a closed conformation (Dulubova et al., 2002; Furgason et al., 2009; Struthers et al., 2009). The SNARE motif of C. thermophilum Tlg2, however, unambiguously forms tetramers (Figure 5D,F). In this respect it resembles the SNARE motif of Stx which, by forming four-helix bundles, can drive the formation of off-pathway products requiring rescue by NSF/\u03b1-SNAP and Munc18 (Ma et al., 2013). In both instances, binding to the cognate SM protein prevents SNARE oligomerization. For Munc18\u2013Stx, this protective effect has been attributed to the closed conformation of Stx. In the Vps45\u2013Tlg2 structure, Tlg2 is open but nevertheless protected from oligomerization. We propose that this protection arises from binding of the SM protein to layers 0 to +4 of the SNARE motif (Figure 2B). The other principal interaction between Vps45 and Tlg2, involving the Tlg2 N-peptide, increases the stability of the Vps45\u2013Tlg2 complex but would not seem capable of preventing SNARE motif self-association. The Tlg2 N-peptide nevertheless plays a key role, by equipping the Tlg2 tetramers with exposed, high-affinity (27 nM for the mammalian orthologues [Burkhardt et al., 2008]) handles for Vps45 to grab onto (Figure 6B). Taken together, our results suggest that Vps45 can rescue Tlg2 from off-pathway oligomers and hold it in an open, non-oligomerization-prone state in preparation for SNARE complex assembly (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/60724/elife-60724-fig7-v2.jpg)\n\n**Figure 7.:** Proposed pathway depicting Tlg2 rescue, vesicle docking accompanied by template complex formation, Qb/Qc-SNARE binding, and membrane fusion.\n\nTemplate complexes containing half-zippered Qa- and R-SNAREs bound to the cognate SM protein are essential intermediates in SM-catalyzed SNARE assembly (Baker et al., 2015; Jiao et al., 2018). Yeast Vps45 was reported to bind the R-SNARE Snc2, but the relevance of this observation to the potential formation of a template complex is uncertain since Tlg2 appeared to displace the Vps45-bound Snc2 (Carpp et al., 2006). Nonetheless, the close structural resemblance between the unfurled helical hairpins of Tlg2-bound Vps45, Vam3-bound Vps33, and Nyv1-bound Vps33, together with the ability of Vps33, Nyv1, and Vam3 to form a ternary complex (Baker et al., 2015), strongly suggests that Tlg2-bound Vps45 is primed for R-SNARE binding (Figure 4C). This binding need not be high affinity in order to promote SNARE assembly; indeed, Munc18 binding to the R-SNARE VAMP2/synaptobrevin is weak (Sitarska et al., 2017) but nonetheless critical for forming the template complex (Jiao et al., 2018). It will be important in future work to develop biochemical and single-molecule methods for elucidating the pathway and energetics of SNARE assembly in the presence of Vps45.\n\nThe stringent regulation of neurotransmitter release requires the control of synaptic SNARE complex formation by Munc18, which clamps Stx in an inactive closed conformation, and Munc13-1, which mediates Stx opening (Brunger et al., 2018; Rizo, 2018). Our Vps45\u2013Tlg2 structure reveals a new mode of interaction in which the Qa-SNARE is held open rather than clamped shut. It is possible that this new mode is the rule, with the Munc18\u2013Stx mode being the exception. It is furthermore attractive to speculate that the task of Munc13-1 is to convert the Munc18\u2013Stx complex into a Vps45\u2013Tlg2-like conformation. Notably, a principal difference between closed Stx and open Tlg2 is the linker between the Habc domain and the SNARE motif, which is folded in the first case and unfolded in the second (Figure 3A). Munc13-1, by binding to the Munc18\u2013Stx complex and destabilizing the Stx linker (Lai et al., 2017; Wang et al., 2017; Wang et al., 2020), may thereby promote the conformational switch that allows Stx to open, the domain 3a helical hairpin to unfurl, and the template complex to form.\n\n## Materials and methods\n\n### Recombinant protein production\n\nC. thermophilum gene sequences were identified by homology with multiple fungal species (BLAST) yielding Vps45 (XP_006692860.1), Tlg2 (XP_006697074.1), Snc2 (XP_006691992.1), Vti1 (XP_006696366.1), and Tlg1 (XP_006693250.1). Coding sequences were amplified from synthetic codon-optimized genes (Genewiz) and cloned into pQLink bacterial expression plasmids (Baker et al., 2015; Scheich et al., 2007). All SNARE protein constructs possessed N-terminal heptahistidine (His7) and MBP tags followed by a tobacco etch virus (TEV) protease cleavage site for tag removal, with the exception of Tlg279-200 which carried N-terminal His7 and\u00a0SUMO\u00a0tags and an Ulp1 cleavage site for tag removal. Vps45 constructs possessed an N-terminal His7 tag for individual expression, or a C-terminal His7 tag for coexpression with Tlg2. The Vps45\u2013Tlg2 coexpression plasmid was generated by first deleting the His7-MBP tag from Tlg2 and then combining the two pQLink plasmids as described (Scheich et al., 2007). Mutations were introduced using QuikChange mutagenesis (Agilent). Tlg2 sub-fragment constructs were generated by introducing stop codons or by using PCR to amplify the desired fragment for sub-cloning.\n\nNative and selenomethionine (SeMet) Vps45 was overproduced using BL21 Rosetta (Novagen) grown in, respectively, LB or M9 minimal media supplemented with 60 mg/L SeMet (Sigma). When the cells reached an OD600 of approximately 0.6, isopropyl \u03b2-D-thiogalactopyranoside (IPTG) was added to a final concentration of 1 mM, after which the cells were grown for 18 hr at 25\u00b0C. MBP-Tlg21-20, MBP-Tlg221-327, MBP-Tlg2258-327, SUMO-Tlg279-200, MBP-Snc222-89, MBP-Tlg1170-225, and MBP-Vti1126-190 were overproduced in a similar manner, but in BL21-Codon Plus (Agilent) cells and with growth following induction at 18\u00b0C. Cell pellets were resuspended in lysis buffer (20 mM Tris-HCl pH 8.0, 150 mM NaCl, 5 mM \u00df-mercaptoethanol) supplemented with 1 mM phenylmethylsulfonyl fluoride and 10 \u03bcg/mL DNase (Roche). The resuspension was processed with an Emulsiflex-C5 homogenizer (Avestin). All subsequent steps were performed on ice or at 4\u00b0C. The cell lysate was clarified by centrifugation at 30,000 g and fractionated using His60 Ni Superflow Resin (ClonTech). The resin was washed using wash buffer (20 mM Tris-HCl pH 8.0, 100 mM NaCl, 20 mM imidazole, 5 mM \u00df-mercaptoethanol), eluted in wash buffer containing 300 mM imidazole, and further purified using a Superdex 200 HR 16/60 size exclusion column (GE Healthcare) in gel filtration buffer (20 mM Tris-HCl pH 8.0, 150 mM NaCl, 5 mM dithiothreitol (DTT)). MBP-Tlg21-327 and the co-expressed Vps45\u2013Tlg2\u00a0complexes were generated in a similar manner with the following modifications: protein was overexpressed in BL21-Codon Plus (Agilent); after IPTG addition the cells were grown at 16\u00b0C; and all buffers contained 5% glycerol and, in place of Tris-HCl, 25 mM HEPES pH 8.0. Cells were lysed, loaded onto His60 Ni Superflow Resin, and washed as previously described. However, the resin was\u00a0then washed with low salt (50 mM NaCl) wash buffer and eluted in low salt wash buffer containing 400 mM imidazole, followed by anion exchange chromatography (MonoQ 10/100; GE Healthcare) using a gradient from 50 mM to 500 mM NaCl. Untagged Tlg279-200 and Tlg2258-327 were produced by cleaving the SUMO- and MBP-tagged fusion proteins with Ulp1 or TEV protease, respectively, following Ni affinity chromatography. Cleavage reactions were allowed to proceed overnight at 4\u00b0C while dialyzing into elution buffer containing\u00a020 mM imidazole and 50 mM NaCl. The cleaved tags were removed using His60 Ni Superflow resin and the proteins were further purified using anion exchange and size exclusion chromatography as described above. For the production of SeMet-substituted Vps45\u2013Tlg2L258M,I272M, protein expression was improved by growing the cells in M63 instead of M9 minimal media. Following size exclusion chromatography, all proteins were concentrated, snap frozen in liquid nitrogen, and stored at \u221280\u00b0C. Protein concentration was measured by absorbance at 280 nm.\n\n### Crystallization, data collection, and refinement\n\nVps45 crystals were grown at 20\u00b0C using the sitting drop vapor diffusion method, with a 1:1 (v/v) mixture of protein at 10 mg/ml and precipitant solution (0.2 M potassium bromide, 0.2 M potassium thiocyanate, 0.1 M sodium acetate pH 6.0, 3% (w/v) poly-\u03b3-glutamic acid (PGA), 5% (w/v) polyethylene glycol (PEG) 3350). The final drop volume was 1 \u00b5l, brought to equilibrium with 500 \u00b5l precipitant solution. SeMet crystals grew to full size within two weeks and native crystals within three weeks. Native and SeMet single wavelength anomalous diffraction data were collected at the Cornell High Energy Synchrotron Source at beamline F1.\n\nThe Vps45 structure was determined by experimental phasing at 2.6 \u00c5 resolution using the single wavelength anomalous dispersion method based on diffraction at the Se K edge (\u03bb\u00a0=\u00a00.9782 \u00c5). The selenium substructure was determined using the program SHELXD (Sheldrick, 2008) and phases were calculated with SHARP (Vonrhein et al., 2011) based on these sites. The electron density map was solvent-flattened using SOLOMON (Abrahams and Leslie, 1996), and the structure built using BUCCANEER (Cowtan, 1998) and Coot (Emsley et al., 2010) and refined against higher-resolution native data using PHENIX REFINE (Liebschner et al., 2019).\n\nAll Vps45\u2013Tlg2 complexes were crystallized using hanging drop vapor diffusion at 20\u00b0C, mixing 1 \u00b5l protein with 1 \u00b5l well buffer solution. Vps45\u2013Tlg21-310 crystals were grown using 4 mg/ml protein\u00a0and well buffer consisting of 0.125 M potassium citrate, 15% (w/v) PEG 3350, 15% (v/v) glycerol, and 1 mM DTT. Crystals were improved by streak seeding with previously grown Vps45\u2013Tlg21-310 crystals. Vps45\u2013Tlg2 (i.e.,\u00a0Vps45\u2013Tlg21-310, \u0394201-228) crystals were grown using 2.5 mg/ml protein and well buffer consisting of 0.1 M HEPES pH 8.0, 0.1 M NaCl, 11% (v/v) 2-propanol, and 5 mM TCEP. Vps45\u2013Tlg2V306D,F335R crystals were grown using 4 mg/ml protein solution and well buffer consisting of 0.2 M potassium citrate, 14% (w/v) PEG 3350, and 5 mM TCEP. SeMet-labeled Vps45\u2013Tlg2L258M,I272M crystals were grown using 5 mg/ml protein solution and\u00a0well buffer consisting of 0.1 M HEPES pH 7.5, 0.2 M NaCl, 10% (v/v) 2-propanol, and 5 mM TCEP. Crystals were improved using streak seeding with Vps45\u2013Tlg2 crystals. Diamond-shaped crystals grew to full size within\u00a0~3 days. Crystals were cryoprotected using a 1:1 mixture of well buffer supplemented with 30% (v/v) glycerol (for Vps45\u2013Tlg21-310 and Vps45\u2013Tlg2V306D,F335R) or 30% (v/v) glycerol plus 10% (v/v) 2-propanol (for Vps45\u2013Tlg2 and SeMet-labeled Vps45\u2013Tlg2L258M,I272M) and then frozen in liquid nitrogen. Data were collected at the National Synchrotron Light Source II (NSLSII) FMX and AMX beamlines.\n\nThe structures of the Vps45\u2013Tlg2 complexes were determined by molecular replacement from the Vps45 monomer structure using the program PHASER (McCoy et al., 2007). Complexes grew in two different crystal forms: a form with a single complex in the asymmetric unit in space group P21221 with typical cell dimensions of a\u00a0=\u00a058.4 \u00c5, b\u00a0=\u00a089.4 \u00c5, c\u00a0=\u00a0209.1 \u00c5, and a form with two complexes in the asymmetric unit in space group P212121 with typical cell dimensions of a\u00a0=\u00a058.7 \u00c5, b\u00a0=\u00a0180.1 \u00c5, c\u00a0=\u00a0202.1 \u00c5. Vps45\u2013Tlg2 grew in both crystal forms but Vps45\u2013Tlg21-310 only grew in the P21221 crystal form. Difference density for the N-terminal peptide, Habc domain, and SNARE helices were visible in the difference map in both cases. Crystal packing is similar in these two crystal forms, with the SNARE helix and domain 3a of Vps45 packing against symmetry-related instances of themselves to stabilize the lattice. Models of the Vps45\u2013Tlg2 complexes were built with Coot and refined with PHENIX.REFINE. At intermediate steps in structure determination we utilized data processed by STARANISO (RRID:SCR_018362) with an anisotropic resolution cutoff to improve map interpretability, but results quoted in Table 1 are refined against data with an isotropic resolution cutoff. Non-crystallographic symmetry restraints were used where available. The useful resolution limits of the data were estimated using the paired refinement technique (Diederichs and Karplus, 1997). Sequence interpretation for Tlg2 was made based on 2Fo-Fc and Fo-Fc electron density and validated by the position of selenium atoms in SAD data collected on SeMet-labeled Vps45\u2013Tlg2L258M,I272M crystals. The selenium sites corresponding to L258M and I272M mutations confirmed the sequence register in the SNARE helix, and selenium sites corresponding to Met 1, Met 153 and Met 170 confirmed the assignment in the N-peptide and Habc domains, with Met 302 confirming the conserved H3c helix assignment. Electron density for Tlg2 is in general less well-resolved than that for Vps45, and especially so at the ends of the Habc helices at the C-terminal end of the bundle (distal to the Vps45:Habc binding site), likely reflecting some static disorder within the crystal. Nevertheless, the similarity with the Habc helices of Stx is striking (rmsd\u00a0=\u00a01.3 \u00c5 for 91 C\u03b1 atoms).\n\n### Binding/rescue assays\n\nVps45 and MBP-Tlg21-327 were mixed at a final concentration of 30 \u00b5M each in gel filtration buffer and incubated at 20\u00b0C. At the specified times, aliquots were removed and snap frozen in liquid nitrogen followed by storage at \u221280\u00b0C. Prior to loading, samples were thawed rapidly in a room temperature water bath and any large aggregates were removed via centrifugation at 14,000 g for 10 min at 4\u00b0C. Samples were then loaded on an S200 Increase 3.2/300 gel filtration column (GE Healthcare) pre-equilibrated with gel filtration buffer. Fractions were resolved using 12.5% SDS-PAGE gels. All other binding experiments were performed using 50 \u00b5M protein concentration(s) in 20 mM Tris-HCl, pH 8.0, 150 mM NaCl, and 1 mM DTT, with a 1 hr incubation at 20\u00b0C followed by centrifugation to remove aggregates and loading onto the size exclusion column.\n\n### Analytical ultracentrifugation\n\nMBP-Tlg2258-327, Tlg279-200, and Tlg2258-327 were diluted to final concentrations of 9, 72, and 168 \u00b5M, respectively, in gel filtration buffer. Samples were centrifuged at 14,000 g for 10 min at 10\u00b0C, loaded into two-sector cells with quartz windows, and placed in an Optima analytical centrifuge (Beckman) with an An-50Ti rotor pre-equilibrated at 20\u00b0C. Absorbance scans at 280 nm were collected at\u00a0~1 min intervals while spinning at 42,000 rpm. Continuous sedimentation coefficient c(S) plots and frictional ratios (f/fo) were generated using SEDFIT by fitting the Lamm equation to the absorbance boundaries (Schuck, 2000). Buffer density (r, 1.0064 g/cm3) and viscosity (h, 0.01 poise) were calculated using SEDNTERP (Laue et al., 1992).\n",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "cd037be9-9fc3-4dc7-bd5e-eca7756ca147",
+      "submission_id": "69545ece-7071-4f52-b1ef-353530ed03d7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Axel T Brunger, Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60724.sa1](https://doi.org/10.7554/eLife.60724.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this paper, the first structure of an SM complex has been determined where the cognate syntaxin (Tlg2) is bound in an open conformation to the SM protein Vps45 in contrast to the closed confirmation that was found in the structure of the syntaxin-Munc18 complex. This structure suggests that ternary SNARE complex formation can occur starting from the Vps45/Tlg2 complex without assistance of a catalyst such as Munc13. These findings have implications how SM proteins have evolved.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The Sec1/Munc18 protein Vps45 holds the Qa-SNARE Tlg2 in an open conformation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Suzanne Pfeffer as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Cong Ma, Christopher Fromme.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nIn this paper, the first structure of an SM complex has been determined where the cognate syntaxin (Tlg2) is bound in an open conformation to the SM protein Vps45 in contrast to the closed confirmation that was found in the structure of the syntaxin-Munc18 complex. A loop that is critical for the Munc13 catalyzed opening of the syntaxin-Munc18 complex is 'unfurled', i.e., it extends out rather than folds back. This structure suggests that ternary SNARE complex formation can occur starting from the Vps45 / Tlg2 complex without assistance of a catalyst such as Munc13. Moreover, Vps45 is capable of dissociating Tlg2 oligomers by formation of 1:1 complexes, suggesting that Vps45 induces a template conformation of Tlg2 for cognate SNARE binding. These findings have implications how SM proteins have evolved.\n\nEssential revisions:\n\n1) The open conformation of Tlg2 bound to Vps45 renders it easier to assemble into the SNARE complex with its partner SNAREs Vti1, Tlg1, and Snc1/2. Please provide additional biochemical data to elucidate the difference of the assembly rate with or without Vps45. In addition, the activity of Vps45-Tlg1-310 and Vps45-Tlg1-310, delete \u0394201-228 in SNARE complex assembly should be carefully examined and compared, because deletion of residues 201-228 might affect the linker structure of Tlg1.\n\n2) The authors write: \"Unfortunately, we were unable to identify in vitro conditions under which C. thermophilum Tlg2 with or without Vps45, assembles into SNARE complexes.\" Were different fragments of the various SNARE motifs tried? It seems very surprising that a SNARE complex cannot be formed in vitro. Please comment.\n\n3) The MBP-Tlg2[1-327] chimera forms oligomers as suggested by size exclusion chromatography and analytical ultracentrifugation. As an optional follow-up experiment it would be instructive to show that tag free Tlg2 forms trimers or tetramers on its own. If tag-free Tlg2 is poorly behaved, perhaps a different tag could be tried.\n\n4) The authors state \"based on the crystal structure, the Vps45-Tlg2 complex appears to be primed to bind an R-SNARE and, as demonstrated for SM proteins of the Munc18/Sec1 and Vps33 families (Jiao et al., 2018), to catalyze SNARE assembly\". Is it possible to generate a structural model by superimposing the Vps33/R-SNARE structure on the Vps45/Qa-SNARE structure?\n\n5) Is it possible that Tlg2 never adopts a canonical \"closed\" structure and this is why it oligomerizes?\n\n6) Similarly, is the Tlg2 Habc domain known to be autoinhibitory? Has this ever been tested for Tlg2?\n",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f4450777-33f2-4897-b11f-675e012fb004",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C1",
+      "claim": "Fusion of intracellular trafficking vesicles is mediated by the assembly of SNARE proteins into membrane-bridging complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusion of intracellular trafficking vesicles is mediated by the assembly of SNARE proteins into membrane-bridging complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by citation to S\u00fcdhof and Rothman, 2009 in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "21db4fd7-8eda-4dc2-a6f9-a84d24e4b6e7",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C2",
+      "claim": "SNARE-mediated membrane fusion requires Sec1/Munc18-family (SM) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "SNARE-mediated membrane fusion requires Sec1/Munc18-family (SM) proteins, SNARE chaperones that can function as templates to catalyze SNARE complex assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citation to Baker and Hughson, 2016 in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "798c83c5-c2b6-4ecf-b6e1-741daec2b68f",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C3",
+      "claim": "SM proteins can function as templates to catalyze SNARE complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "SNARE-mediated membrane fusion requires Sec1/Munc18-family (SM) proteins, SNARE chaperones that can function as templates to catalyze SNARE complex assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Baker et al., 2015 and Jiao et al., 2018 in the Introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "7ce9cd14-7ee3-4697-b040-e5589f1af8a8",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C4",
+      "claim": "The SM protein Munc18-1 traps the Qa-SNARE protein syntaxin-1 in an autoinhibited closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, the SM protein Munc18-1 traps the Qa-SNARE protein syntaxin-1 in an autoinhibited closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystal structure of Munc18-1 bound to syntaxin-1 (Misura et al., 2000) discussed in the Introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "3c0f1c9d-47d7-44b4-8e6e-e02f09462e2f",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C5",
+      "claim": "Vps45 holds Tlg2 in an open conformation, with its SNARE motif disengaged from its Habc domain and its linker region unfolded.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, Vps45 holds Tlg2 in an open conformation, with its SNARE motif disengaged from its Habc domain and its linker region unfolded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure of Vps45-Tlg2 presented in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "b5f57369-7bc6-434b-9fca-44c862c5281c",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C6",
+      "claim": "The domain 3a helical hairpin of Vps45 is unfurled, exposing the presumptive R-SNARE binding site to allow template complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The domain 3a helical hairpin of Vps45 is unfurled, exposing the presumptive R-SNARE binding site to allow template complex formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure and compared to other SM protein structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "eeacf658-1f29-40ad-83a8-81ae5ebb9f7d",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C7",
+      "claim": "Tlg2 has a pronounced tendency to form homo-tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Tlg2 has a pronounced tendency to form homo-tetramers, Vps45 can rescue Tlg2 tetramers into stoichiometric Vps45\u2013Tlg2 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by size exclusion chromatography and analytical ultracentrifugation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "506810c1-7990-400b-b516-88f4a8138468",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C8",
+      "claim": "Vps45 can rescue Tlg2 tetramers into stoichiometric Vps45\u2013Tlg2 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Tlg2 has a pronounced tendency to form homo-tetramers, Vps45 can rescue Tlg2 tetramers into stoichiometric Vps45\u2013Tlg2 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by time-course size exclusion chromatography experiments showing conversion of oligomers to 1:1 complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "ff74ed87-4a86-4ca2-a3af-46f92a97ba10",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C9",
+      "claim": "SM proteins can engage Qa-SNAREs using at least two different modes, one in which the SNARE is closed and one in which it is open.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that SM proteins can engage Qa-SNAREs using at least two different modes, one in which the SNARE is closed and one in which it is open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from comparing the Vps45-Tlg2 structure (open) with the Munc18-Stx structure (closed).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "9ed12164-7df5-4c87-a444-9de3e4e56d85",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C10",
+      "claim": "Most SNAREs are tail-anchored membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Most SNAREs are tail-anchored membrane proteins, and they drive fusion by forming membrane-bridging complexes that draw the vesicle and target membranes into close apposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "70817fa6-e4b4-4aa3-be1b-2c84e0c26296",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C11",
+      "claim": "SNAREs drive fusion by forming membrane-bridging complexes that draw the vesicle and target membranes into close apposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Most SNAREs are tail-anchored membrane proteins, and they drive fusion by forming membrane-bridging complexes that draw the vesicle and target membranes into close apposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Fasshauer et al., 1998; Kloepper et al., 2007; Sutton et al., 1998.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "938d50bc-e26a-4e1c-ad71-885acf914702",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C12",
+      "claim": "SNARE motifs are conserved regions about 65 residues in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Essential for this process are conserved regions about 65 residues in length called SNARE motifs, which in most SNAREs are immediately adjacent to a C-terminal transmembrane anchor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "00b21733-0a0e-47d7-9ff6-70be9b59f95d",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C13",
+      "claim": "In most SNAREs, SNARE motifs are immediately adjacent to a C-terminal transmembrane anchor.",
+      "claim_type": "EXPLICIT",
+      "source": "Essential for this process are conserved regions about 65 residues in length called SNARE motifs, which in most SNAREs are immediately adjacent to a C-terminal transmembrane anchor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "898f6f77-089a-4b65-a12c-05bdc2eed7f5",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C14",
+      "claim": "Four complementary SNARE motifs\u2014one each from the R-, Qa-, Qb-, and Qc-SNARE groups\u2014zipper together to form a parallel \u03b1-helical bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "Four complementary SNARE motifs\u2014one each from the R-, Qa-, Qb-, and Qc-SNARE groups\u2014zipper together to form a parallel \u03b1-helical bundle (Fasshauer et al., 1998; Kloepper et al., 2007; Sutton et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "359b4c61-6205-48f2-95b5-434abd0e925b",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C15",
+      "claim": "SNARE motifs are grouped according to the zero-layer residue in the middle of the motif, either arginine (R) or glutamine (Q).",
+      "claim_type": "EXPLICIT",
+      "source": "SNARE motifs are grouped according to the zero-layer residue in the middle of the motif, either arginine (R) or glutamine (Q).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "c8074a28-27bf-45ed-ba49-f518bebadc5b",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C16",
+      "claim": "The four zero-layer residues interact within the otherwise hydrophobic core of the assembled SNARE bundle to help prevent out-of-register assembly of the four \u03b1-helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The four zero-layer residues interact within the otherwise hydrophobic core of the assembled SNARE bundle to help prevent out-of-register assembly of the four \u03b1-helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "d73a1882-1825-4a1b-bbd9-5bc0c0d26850",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C17",
+      "claim": "SM proteins function as SNARE chaperones, capable of both inhibiting and catalyzing the assembly of fusogenic SNARE complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "SM proteins function as SNARE chaperones, capable of both inhibiting and catalyzing the assembly of fusogenic SNARE complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Baker and Hughson, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "07035243-59c4-458e-a510-f03ef1d93299",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C18",
+      "claim": "In the closed conformation of syntaxin-1, the three-helix bundle Habc domain folds back onto the SNARE motif, preventing the SNARE motif from entering into a SNARE complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In this closed conformation, the three-helix bundle Habc domain of Stx folds back onto the SNARE motif, preventing the SNARE motif from entering into a SNARE complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure of Munc18-Stx (Misura et al., 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "ab2358bb-c984-4bc7-9ab3-f251f1e016ba",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C19",
+      "claim": "The closed conformation of the Qa-SNARE syntaxin-1 is wedged into a large cleft in the SM protein Munc18-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The closed conformation of the Qa-SNARE is wedged into a large cleft in the SM protein and requires the intervention of a third protein\u2014Munc13-1\u2014for opening (Ma et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure of Munc18-Stx (Misura et al., 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "7bdb70e9-b037-439a-9a92-cce189843d8c",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C20",
+      "claim": "The closed conformation of syntaxin-1 requires the intervention of Munc13-1 for opening.",
+      "claim_type": "EXPLICIT",
+      "source": "The closed conformation of the Qa-SNARE is wedged into a large cleft in the SM protein and requires the intervention of a third protein\u2014Munc13-1\u2014for opening (Ma et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ma et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "a14f5625-a4af-4d81-b85f-53b89f6a0e83",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C21",
+      "claim": "The extreme N-terminal region of syntaxin-1, termed the N-peptide, binds to a distinct site on the outside of the SM protein Munc18-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the extreme N-terminal region of Stx, termed the N-peptide, binds to a distinct site on the outside of the SM protein (Burkhardt et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Burkhardt et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "4ac0b06e-369f-41f4-b165-6a3e9d9ff481",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C22",
+      "claim": "Munc18 makes direct contact with three different regions\u2014the N-peptide, the Habc domain, and the SNARE motif\u2014distributed along the entire length of the syntaxin-1 cytoplasmic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Munc18 thus makes direct contact with three different regions\u2014the N-peptide, the Habc domain, and the SNARE motif\u2014distributed along the entire length of the Stx cytoplasmic domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure of Munc18-Stx.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "fb221e16-9639-4076-be9c-f6bcc5d1b3fe",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C23",
+      "claim": "The SM protein Vps33 binds the SNARE motifs of the Qa-SNARE Vam3 and the R-SNARE Nyv1 at adjacent sites.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures showed that the SM protein Vps33 binds the SNARE motifs of the Qa-SNARE Vam3 and the R-SNARE Nyv1 at adjacent sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Baker et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "34e69e0d-9756-48dd-9024-57e25d450d2e",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C24",
+      "claim": "In the Vps33\u2013Vam3\u2013Nyv1 template complex model, the two SNARE motifs adopt a half-zippered configuration, in which their N-terminal halves up to the zero layer are aligned for assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In it, the two SNARE motifs adopt a half-zippered configuration, in which their N-terminal halves up to the zero layer are aligned for assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on combining crystal structures from Baker et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "0a332a44-df8b-446e-b1ae-07db16d9d1a5",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C25",
+      "claim": "Single-molecule force microscopy studies confirmed that the SM proteins Vps33, Munc18, and Munc18-3 all form template complexes with their cognate R- and Qa-SNAREs.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule force microscopy studies confirmed that the SM proteins Vps33, Munc18, and Munc18-3 all form template complexes with their cognate R- and Qa-SNAREs, and that these template complexes likely represent rate-limiting intermediates in SM-catalyzed SNARE complex assembly (Jiao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jiao et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "2ba5b7ad-1717-4f4c-ba52-6526a85ec6d3",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C26",
+      "claim": "Template complexes likely represent rate-limiting intermediates in SM-catalyzed SNARE complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule force microscopy studies confirmed that the SM proteins Vps33, Munc18, and Munc18-3 all form template complexes with their cognate R- and Qa-SNAREs, and that these template complexes likely represent rate-limiting intermediates in SM-catalyzed SNARE complex assembly (Jiao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jiao et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "4d67904b-3c42-4173-ad9f-992b169f923a",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C27",
+      "claim": "Vps45, Tlg2 and its cognate SNAREs, and the CATCHR-family tethering complex GARP all function in trafficking from the endosome to the trans-Golgi network.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps45, Tlg2 and its cognate SNAREs, and the CATCHR-family tethering complex GARP all function in trafficking from the endosome to the trans-Golgi network (Abeliovich et al., 1998; Conibear and Stevens, 2000; Holthuis et al., 1998; P\u00e9rez-Victoria and Bonifacino, 2009; Siniossoglou and Pelham, 2001; Siniossoglou and Pelham, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "dc37d49e-fa9b-447b-a464-03f7d9cba5b2",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C28",
+      "claim": "In the crystal structure of the Vps45\u2013Tlg2 complex, Vps45 makes direct contact with the N-peptide, Habc domain, and SNARE motif of Tlg2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crystal structure of the Vps45\u2013Tlg2 complex, Vps45 makes direct contact with the N-peptide, Habc domain, and SNARE motif of Tlg2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure presented in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "e77398c8-25c0-4cf5-98d4-f557468a0b79",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C29",
+      "claim": "In the Vps45\u2013Tlg2 complex, the Habc domain does not pack against the N-terminal region of the SNARE motif and instead appears to leave it free to initiate SNARE complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with the Munc18\u2013Stx complex, however, the bound Qa-SNARE adopts an open conformation. Specifically, the Habc does not pack against the N-terminal region of the SNARE motif and instead appears to leave it free to initiate SNARE complex assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure and inferred from the structural comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "92807520-a097-4a86-8788-7150bc7965d9",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C30",
+      "claim": "Qa-SNARE clamping may be a specialized property of Munc18, rather than a general property shared broadly among SM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Qa-SNARE clamping may be a specialized property of Munc18, rather than a general property shared broadly among SM proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison between the Vps45-Tlg2 structure (open) and the Munc18-Stx structure (closed).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "b41d06fb-28fd-458e-ad8e-b91465b8aaef",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C31",
+      "claim": "Tlg2, but not Vps45\u2013Tlg2, is prone to homo-oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Tlg2, but not Vps45\u2013Tlg2, is prone to homo-oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by size exclusion chromatography and analytical ultracentrifugation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "bf73e364-6726-4c03-a1ee-332cf56e3edf",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C32",
+      "claim": "SM proteins can prevent SNARE misassembly and template proper assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results underscore the ability of SM proteins to prevent SNARE misassembly and template proper assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and biochemical data presented in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "34e99676-bdb5-4415-b291-bdd089711477",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C33",
+      "claim": "There are four families of SM protein\u2014Sec1/Munc18, Sly1, Vps33, and Vps45.",
+      "claim_type": "EXPLICIT",
+      "source": "There are four families of SM protein\u2014Sec1/Munc18, Sly1, Vps33, and Vps45\u2014and every eukaryote has at least one member of each family (Kloepper et al., 2007; Koumandou et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kloepper et al., 2007 and Koumandou et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "aae99ac6-0f0d-410e-8d67-2062edbe3d7f",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C34",
+      "claim": "Every eukaryote has at least one member of each SM protein family.",
+      "claim_type": "EXPLICIT",
+      "source": "There are four families of SM protein\u2014Sec1/Munc18, Sly1, Vps33, and Vps45\u2014and every eukaryote has at least one member of each family (Kloepper et al., 2007; Koumandou et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kloepper et al., 2007 and Koumandou et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "ed5281c8-870e-4a69-a6cf-d8d730a75494",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C35",
+      "claim": "Crystal structures have been reported for representatives of the Munc18, Sly1, and Vps33 families.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures have been reported for representatives of the Munc18, Sly1, and Vps33 families (Baker et al., 2013; Baker et al., 2015; Bracher et al., 2000; Bracher and Weissenhorn, 2002; Burkhardt et al., 2008; Burkhardt et al., 2011; Colbert et al., 2013; Graham et al., 2013; Hackmann et al., 2013; Hu et al., 2011; Hu et al., 2007; Misura et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "ddafe00a-7138-4387-9148-a7aed0b650c2",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C36",
+      "claim": "The crystal structure of Vps45 from Chaetomium thermophilum was refined to 2.0 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We began, therefore, by determining the crystal structure of a member of the fourth family, Vps45 from the thermotolerant fungus Chaetomium thermophilum, and refining it to 2.0 \u00c5 resolution (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the Results section and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "a1ea4505-3f4c-43f3-8498-b87284bbdd9a",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C37",
+      "claim": "Vps45 exhibits a three-domain architecture with a large cleft between domains 1 and 3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the other structurally characterized SM proteins, Vps45 exhibits a three-domain architecture with a large cleft between domains 1 and 3a (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "fd8d3016-fbcd-49f3-971c-bbac96f2890d",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C38",
+      "claim": "Three surface regions are particularly well conserved among members of the Vps45 family.",
+      "claim_type": "EXPLICIT",
+      "source": "Three surface regions are particularly well conserved among members of the Vps45 family, presumably because they are functionally important (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1A using ConSurf analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "dd43f0c3-74e7-4ce9-87d5-cfee39cd3c06",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C39",
+      "claim": "The first conserved region on Vps45 corresponds to the walls of the cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "The first conserved region corresponds to the walls of the cleft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure and conservation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "42b39c4a-c4fd-48d8-9a7c-6665b210d0ee",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C40",
+      "claim": "The second and third conserved surface regions on Vps45 correspond to the N-peptide and R-SNARE binding sites observed in previous structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The second and third conserved surface regions correspond to the N-peptide and R-SNARE binding sites observed in previous structures (Baker et al., 2015; Bracher and Weissenhorn, 2002; Burkhardt et al., 2008; Hu et al., 2011; Hu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison with previous structures and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "39f1d34c-832a-4359-9183-bcc7f0ddf1b7",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C41",
+      "claim": "Each of the surface regions known to engage SNARE proteins in one or more of the other SM families is highly conserved in the Vps45 family.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, each of the surface regions known to engage SNARE proteins in one or more of the other SM families is highly conserved in the Vps45 family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the conservation analysis and comparison with other SM protein structures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "7b81e1d1-e3f5-404f-bb20-2eaa61e6647d",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C42",
+      "claim": "Bacterial co-expression of C. thermophilum Vps45 and C. thermophilum Tlg2 residues 1\u2013310 yielded a stable 1:1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial co-expression of C. thermophilum Vps45 and C. thermophilum Tlg2 residues 1\u2013310, including all but the C-terminal 17 residues of the Tlg2 cytoplasmic domain, yielded a stable 1:1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "19938657-d0b2-4c2e-b016-317f1db2aac0",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C43",
+      "claim": "Small crystals of Vps45\u2013Tlg2(1-310) were obtained that diffracted to about 3.5 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Small crystals were obtained that diffracted to about 3.5 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "2e864b7a-2c59-4102-b6ed-0d0fa2c18694",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C44",
+      "claim": "Better crystals of Vps45\u2013Tlg2, diffracting to 2.8 \u00c5 resolution, were obtained after deleting Tlg2 residues 201\u2013228.",
+      "claim_type": "EXPLICIT",
+      "source": "Better crystals, diffracting to 2.8 \u00c5 resolution, were obtained after deleting Tlg2 residues 201\u2013228, which are missing from the otherwise nearly identical Chaetomium globosum Tlg2 (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the Results section and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "c1b0d84a-2a13-4b07-9b34-24edb131201e",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C45",
+      "claim": "The deleted segment (Tlg2 residues 201\u2013228) is located near the beginning of the 58-residue linker that connects the Habc domain and the SNARE motif.",
+      "claim_type": "EXPLICIT",
+      "source": "The deleted segment is located near the beginning of the 58-residue linker that connects the Habc domain and the SNARE motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "0638c69b-15d7-400b-b248-a00ed27826a5",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C46",
+      "claim": "The structures of Vps45\u2013Tlg2(1-310) and Vps45\u2013Tlg2(1-310, \u0394201-228) were determined by molecular replacement with Vps45 as a search model.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures of the Vps45\u2013Tlg21-310 and Vps45\u2013Tlg21-310, \u0394201-228 complexes were determined by molecular replacement with Vps45 as a search model (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "a4467732-6654-47a3-89f9-e72f1e726e08",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C47",
+      "claim": "There were no significant differences between the Vps45\u2013Tlg2(1-310) and Vps45\u2013Tlg2(1-310, \u0394201-228) structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Because there were no significant differences between the two structures, we focus hereafter on the higher resolution Vps45\u2013Tlg21-310, \u0394201-228 (henceforth simply Vps45\u2013Tlg2) structure (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "f0a13e73-cc58-4ec5-9267-356f75bb3588",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C48",
+      "claim": "All of the well-characterized regions of Tlg2 (N-peptide, Habc domain, and SNARE motif) are visible and interact directly with Vps45.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the well-characterized regions of Tlg2 are visible and interact directly with Vps45: the N-peptide, the Habc domain, and the SNARE motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "c63daf61-e862-4c08-8338-bec9aba143b2",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C49",
+      "claim": "The sequences connecting the N-peptide, Habc domain, and SNARE motif of Tlg2, as well as the C-terminus of the SNARE motif, appear to be disordered based on the lack of interpretable electron density.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequences connecting these regions, as well as the C-terminus of the SNARE motif, appear to be disordered based on the lack of interpretable electron density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "86952c74-475c-4d92-b1b9-a8698cbcddfd",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C50",
+      "claim": "The corresponding regions were likewise disordered in the Munc18\u2013Stx complex, with the important exception of the linker between the Habc domain and the SNARE motif.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding regions were likewise disordered in the Munc18\u2013Stx complex, with the important exception of the linker between the Habc domain and the SNARE motif, which will be discussed below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with the Munc18-Stx structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "97df85af-84c9-413c-820a-fff2c240a8e4",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C51",
+      "claim": "Vps45 does not undergo a major conformational change when it binds to Tlg2.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the Vps45 and Vps45\u2013Tlg2 structures reveals that Vps45 does not undergo a major conformational change when it binds to Tlg2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed by comparing the two crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "520e9726-eeee-4b94-9eb6-7eb641c0ea8f",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C52",
+      "claim": "The cleft in Vps45 opens up slightly, via small rotations of domains 1 and 3a relative to the rest of Vps45, in order to accommodate Tlg2.",
+      "claim_type": "EXPLICIT",
+      "source": "The cleft does, however, open up slightly, via small rotations of domains 1 and 3a relative to the rest of Vps45, in order to accommodate Tlg2 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the Vps45 and Vps45-Tlg2 structures shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "60f8e0f1-31f6-475a-b173-3db0764de2b1",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C53",
+      "claim": "The N-peptide of Tlg2 (residues 1\u201314) binds to the outside of Vps45 domain 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-peptide of Tlg2 (residues 1\u201314) binds to the outside (as opposed to the cleft side) of Vps45 domain 1 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "ce0b9612-4eab-453c-8c60-232829e04c25",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C54",
+      "claim": "The N-peptide binding mode of Vps45, in which residues 6\u201312 form a short \u03b1-helix, resembles that observed previously for the Munc18 and Sly1 families of SM protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-peptide binding mode of Vps45, in which residues 6\u201312 form a short \u03b1-helix, resembles that observed previously for the Munc18 and Sly1 families of SM protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison with previous structures.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "0dbef289-1679-4840-aa8e-e44b140ca62a",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C55",
+      "claim": "The interaction between the Tlg2 N-peptide and Vps45 buries 870 \u00c52 of surface accessible area.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between the Tlg2 N-peptide and Vps45 buries 870 \u00c52 of surface accessible area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "60a50d6c-e694-482c-bfe8-7f92f826ba92",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C56",
+      "claim": "Arg residues at Tlg2 positions 3, 5, and 13 appear to play especially important roles in N-peptide binding, each forming both H-bonds and salt bridges with Vps45.",
+      "claim_type": "EXPLICIT",
+      "source": "Arg residues at Tlg2 positions 3, 5, and 13 appear to play especially important roles, each of them forming both H-bonds and salt bridges with Vps45, while Tyr 9 is completely buried in a deep pocket in which its hydroxyl group forms a charge-stabilized H-bond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "1cb690e1-4058-4a9f-8fb7-e04c14afcf5a",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C57",
+      "claim": "Tlg2 Tyr 9 is completely buried in a deep pocket in Vps45 in which its hydroxyl group forms a charge-stabilized H-bond.",
+      "claim_type": "EXPLICIT",
+      "source": "Arg residues at Tlg2 positions 3, 5, and 13 appear to play especially important roles, each of them forming both H-bonds and salt bridges with Vps45, while Tyr 9 is completely buried in a deep pocket in which its hydroxyl group forms a charge-stabilized H-bond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "dc54f8bf-fa36-4b41-89d1-74aeeea846b5",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C58",
+      "claim": "Previous site-directed mutagenesis supports the importance of Arg 3, Tyr 9 (often Phe), and Arg 13 for high-affinity Vps45\u2013Tlg2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous site-directed mutagenesis supports the importance of Arg 3, Tyr 9 (often Phe), and Arg 13 for high-affinity Vps45\u2013Tlg2 binding (Burkhardt et al., 2008; Carpp et al., 2006; Dulubova et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous mutagenesis studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "3e1e1cac-1215-40c0-99e5-d75c5f34af84",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C59",
+      "claim": "Layers 0 to +4 of the Tlg2 SNARE motif interact with the opposite, cleft-facing side of Vps45 domain 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Near the other end of the Tlg2 polypeptide chain, layers 0 to +4 of the SNARE motif interact with the opposite, cleft-facing side of Vps45 domain 1 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "c5dd9b88-0dca-40c7-a750-f2e4ab7f68cf",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C60",
+      "claim": "The interaction between layers 0 to +4 of the Tlg2 SNARE motif and Vps45 domain 1 buries about 930 \u00c52 surface accessible area.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction buries about 930 \u00c52 surface accessible area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "4faf5416-47c4-444f-8857-c4b0a8a3e8ea",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C61",
+      "claim": "The +2 and +3 layers of the Tlg2 SNARE motif form a short \u03b1-helix (H3c), with the +2 layer Ile (residue 295) fitting snugly into a deep hydrophobic pocket on Vps45 domain 1.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously observed in the Munc18\u2013Stx complex (and also in the complex between Vps33 and the Vam3 SNARE motif), the +2 and +3 layers of the Qa-SNARE form a short \u03b1-helix (H3c), with the +2 layer Ile (residue 295 in Tlg2) fitting snugly into a deep hydrophobic pocket on domain 1 (Baker et al., 2015; Misura et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure and compared to previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "83071bf3-5171-4fbf-9f05-777e7737c918",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C62",
+      "claim": "Two short regions at opposite ends of Tlg2, the N-peptide and the H3c helix, bind to opposite sides of Vps45 domain 1 in a manner that closely resembles the Munc18\u2013Stx complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, two short regions at opposite ends of Tlg2, the N-peptide and the H3c helix, bind to opposite sides of Vps45 domain 1 in a manner that closely resembles the Munc18\u2013Stx complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of the Vps45-Tlg2 structure with the Munc18-Stx structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "8a859e14-f29b-4800-b255-2364b30358e4",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C63",
+      "claim": "The intervening regions of Tlg2\u2014comprising the Habc domain, the linker that connects Habc and the SNARE motif, and the N-terminal half of the SNARE motif\u2014adopt a novel open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the intervening regions of Vps45\u2014comprising the Habc domain, the linker that connects Habc and the SNARE motif, and the N-terminal half of the SNARE motif\u2014adopt a novel open conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure and compared to previous structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "6362bc97-1b82-4595-bb83-83563e6d8ab6",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C64",
+      "claim": "Instead of folding with the SNARE motif to form a four-helix bundle-like structure, the Habc domain of Tlg2 makes a limited contact with the SNARE motif, centered around the \u22122 layer of the latter and at an approximately 45\u00b0 angle.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of folding with the SNARE motif to form a four-helix bundle-like structure, the Habc domain of Tlg2 makes a limited contact with the SNARE motif, centered around the \u22122 layer of the latter and at an approximately 45\u00b0 angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "56da9e55-8b82-4245-be07-033e6693d61e",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C65",
+      "claim": "There is no interpretable electron density for the linker connecting the Habc domain and the SNARE motif in the Vps45-Tlg2 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted above, there is no interpretable electron density for the linker connecting the Habc domain and the SNARE motif, which in the Munc18\u2013Stx complex forms a short helix that packs at right angles against the closed Habc-SNARE motif four-helix bundle (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "848ee994-16c6-426b-bae2-72cb991e7ceb",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C66",
+      "claim": "The linker region between the Habc domain and SNARE motif has long been recognized as critical for syntaxin-1 opening and the initiation of SNARE assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly notable inasmuch as this region has long been recognized as critical for Stx opening and the initiation of SNARE assembly (Dulubova et al., 1999; Lai et al., 2017; Ma et al., 2011; Misura et al., 2000; Munson et al., 2000; Wang et al., 2017; Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "65708745-efc3-44c5-8498-c7751e35ac26",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C67",
+      "claim": "The Habc domain interacts with the cleft side of Vps45 domain 1, burying 680 \u00c52 surface accessible area in an interaction that is largely hydrophobic in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "The Habc domain interacts with the cleft side of Vps45 domain 1, burying 680 \u00c52 surface accessible area in an interaction that is largely hydrophobic in nature (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "ad4a3bd5-9983-43d0-8b84-3d999088079e",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C68",
+      "claim": "Compared to the Munc18\u2013Stx complex, the C-terminal end of the Habc domain has swung away from the SM protein, rotating approximately 15\u00b0 around an axis near the N-terminal end of the domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the Munc18\u2013Stx complex, the C-terminal end of the Habc domain has swung away from the SM protein, rotating approximately 15\u00b0 around an axis near the N-terminal end of the domain (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the structures shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "028b4e42-01ad-4da9-84d6-5b1a9de90552",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C69",
+      "claim": "As a consequence of the Habc domain rotation, the Habc domain does not make contact with Vps45 domain 3a.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the Habc domain does not make contact with domain 3a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "8cd88866-35fc-44e4-9d6a-c1301eb7489e",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C70",
+      "claim": "The N-terminal half of the Tlg2 SNARE motif forms a helix (H3a) that engages in a limited interaction with the fully extended domain 3a helical hairpin of Vps45.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the N-terminal half of the SNARE motif, in lieu of bundling with the Habc domain, forms a helix (H3a) that engages in a limited interaction with the fully extended domain 3a helical hairpin of Vps45 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "20faa188-98c0-4008-8a14-1ce9d0733dd7",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C71",
+      "claim": "The interaction between the Tlg2 SNARE motif helix H3a and the Vps45 domain 3a helical hairpin buries a surface accessible area of about 300 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction buries a surface accessible area of about 300 \u00c52, with the \u22124 and \u22125 layer residues of H3a packing against the long helix of the hairpin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "2af0006c-d98b-460c-8627-7461ea009123",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C72",
+      "claim": "The \u22124 and \u22125 layer residues of Tlg2 H3a pack against the long helix of the Vps45 domain 3a hairpin.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction buries a surface accessible area of about 300 \u00c52, with the \u22124 and \u22125 layer residues of H3a packing against the long helix of the hairpin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "0844aa85-4440-400f-87e8-024d81c682a9",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C73",
+      "claim": "H3a is rotated approximately 120\u00b0 around its long axis relative to the Munc18\u2013Stx complex.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, H3a is rotated approximately 120\u00b0 around its long axis relative to the Munc18\u2013Stx complex (right-hand panels of Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the structures shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "9e97fec1-48ff-46c8-9086-69917821d2ec",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C74",
+      "claim": "The Vps45\u2013Tlg2 structure establishes that SM proteins can engage the N-peptide, the Habc domain, and the SNARE motif of a cognate Qa-SNARE without simultaneously clamping that SNARE in a closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the Vps45\u2013Tlg2 structure establishes that SM proteins can engage the N-peptide, the Habc domain, and the SNARE motif of a cognate Qa-SNARE without simultaneously clamping that SNARE in a closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "d32f5059-a55f-4ae1-a5d8-dec4a7103992",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C75",
+      "claim": "The domain 3a helical hairpin plays a key role in SM protein function.",
+      "claim_type": "EXPLICIT",
+      "source": "The domain 3a helical hairpin (Figure 1A) plays a key role in SM protein function (Baker et al., 2015; Boyd et al., 2008; Hu et al., 2011; Jiao et al., 2018; Parisotto et al., 2014; Sitarska et al., 2017; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "7e9ed539-50db-4d4e-9333-af194ad734f0",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C76",
+      "claim": "In Vps45 alone, the distal tip of the helical hairpin is disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "In Vps45 alone, the distal tip of the helical hairpin is disordered (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "bbc9907c-c2f7-416a-a82b-f21677f53a71",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C77",
+      "claim": "In the Munc18\u2013Stx complex, the domain 3a helical hairpin adopts a furled conformation in which the distal tip folds back on the more proximal portion, concealing the R-SNARE binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Munc18\u2013Stx complex, it adopts a furled conformation in which the distal tip folds back on the more proximal portion, concealing the R-SNARE binding site (Misura et al., 2000; Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the Munc18-Stx structure and shown in Figure 4A,B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "e5126d32-9ed3-4272-9e0d-909f49968523",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C78",
+      "claim": "The bound syntaxin-1 sterically blocks unfurling of the Munc18 domain 3a helical hairpin.",
+      "claim_type": "EXPLICIT",
+      "source": "The bound Stx, moreover, sterically blocks unfurling (Baker and Hughson, 2016; Hu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "5b825134-30cf-49c6-bc50-2b998441f2e8",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C79",
+      "claim": "In the structures of Vps33 bound to the SNARE motifs of Vam3 and Nyv1, the helical hairpin adopts an unfurled, extended conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the structures of Vps33 bound to the SNARE motifs of Vam3 and Nyv1, by contrast, the helical hairpin adopts an unfurled, extended conformation (Figure 4B) that interacts extensively with the Qa- and R-SNARE respectively (Baker et al., 2015; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the Vps33 structures and shown in Figure 4B,C.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "d938fee1-870c-416c-adbc-ec7acbe1aa1d",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C80",
+      "claim": "An unfurled conformation of the domain 3a helical hairpin is also seen in the Vps45\u2013Tlg2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "An unfurled conformation is also seen in the Vps45\u2013Tlg2 complex (Figures 1A and 4), made possible by the open conformation of the bound Qa-SNARE (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figures 1A and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "fa5989af-4227-4b33-a65e-3ccd6634c8b8",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C81",
+      "claim": "The unfurled conformation of the domain 3a helical hairpin is made possible by the open conformation of the bound Qa-SNARE.",
+      "claim_type": "EXPLICIT",
+      "source": "An unfurled conformation is also seen in the Vps45\u2013Tlg2 complex (Figures 1A and 4), made possible by the open conformation of the bound Qa-SNARE (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural comparison.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "841dba32-97c6-4a53-8292-ec6c632a2568",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C82",
+      "claim": "The strong similarity between the unfurled Vps33 and Vps45 hairpins suggests that the unfurled conformation may be a well-defined active conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong similarity between the unfurled Vps33 and Vps45 hairpins (Figure 4B) suggests that the unfurled conformation may be a well-defined active conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural comparison shown in Figure 4B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "3b899db7-ea0c-4773-8e4b-341cc6a1fe5f",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C83",
+      "claim": "The authors were unable to identify in vitro conditions under which C. thermophilum Tlg2, with or without Vps45, assembles into SNARE complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, we were unable to identify in vitro conditions under which C. thermophilum Tlg2, with or without Vps45, assembles into SNARE complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "28018e76-af26-406b-aec4-2e2fd78cc5ad",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C84",
+      "claim": "Based on the crystal structure, the Vps45\u2013Tlg2 complex appears to be primed to bind an R-SNARE.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, based on the crystal structure, the Vps45\u2013Tlg2 complex appears to be primed to bind an R-SNARE and, as demonstrated for SM proteins of the Sec1/Munc18 and Vps33 families (Jiao et al., 2018), to catalyze SNARE assembly (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structure and comparison with other SM proteins.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "40198b17-c241-4bd0-ae0a-5930cd3f2aeb",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C85",
+      "claim": "The domain 3a helical hairpin in the Vps45\u2013Tlg2 structure participates in crystal contacts that could potentially influence its conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "A caveat to the above conclusions is that, as observed previously in other SM protein structures (Baker et al., 2015; Hu et al., 2011; Wang et al., 2020), the domain 3a helical hairpin in the Vps45\u2013Tlg2 structure participates in crystal contacts that could potentially influence its conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure and noted as a caveat.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "8bacc66b-aed9-4162-a03b-1d74982f5b17",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C86",
+      "claim": "The domain 3a helical hairpin interacts with the Tlg2 SNARE motif (layers \u20138 to \u20134) of a crystallographically adjacent Vps45\u2013Tlg2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the hairpin interacts with the Tlg2 SNARE motif (layers \u20138 to \u20134) of a crystallographically adjacent Vps45\u2013Tlg2 complex (Figure 4\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 4\u2014figure supplement 1A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "b76fe924-799b-48cf-8786-6c54898e5259",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C87",
+      "claim": "The hairpin mutant Vps45(V306D,F335R) formed stable complexes with Tlg2 that crystallized in a new space group.",
+      "claim_type": "EXPLICIT",
+      "source": "The hairpin mutant Vps45V306D,F335R formed stable complexes with Tlg2 that crystallized in a new space group (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the Results section and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "627bbbf8-f869-411f-9723-3b6137737b9a",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C88",
+      "claim": "Crystals of Vps45(V306D,F335R)\u2013Tlg2 diffracted only to about 5 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these crystals diffracted only to about 5 \u00c5 resolution, electron density maps phased by molecular replacement with a model of Vps45\u2013Tlg2 lacking the SNARE motif allowed us to reach two unambiguous conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the Results section and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "67a49005-7d47-46de-b5f5-b112f528687a",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C89",
+      "claim": "In the Vps45(V306D,F335R)\u2013Tlg2 structure, layers \u20138 to \u20134 of the Tlg2 SNARE motif no longer interact with the helical hairpin.",
+      "claim_type": "EXPLICIT",
+      "source": "First, layers \u20138 to \u20134 of the Tlg2 SNARE motif no longer interact with the helical hairpin, instead curving away to make a minor crystallographic contact with the SNARE motif of a neighboring Tlg2 molecule (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the electron density map shown in Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "f3c32622-67fd-4c61-ad48-2d062eedf2a5",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C90",
+      "claim": "In the Vps45(V306D,F335R)\u2013Tlg2 structure, the remainder of the structure\u2014including the position of the Habc domain and the unfurled helical hairpin\u2014appears to be unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, while electron density at this resolution cannot reveal subtle differences, the remainder of the structure\u2014including the position of the Habc domain and the unfurled helical hairpin\u2014appears to be unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the electron density map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "a2e44089-ee3c-40cf-b8c6-d459453ef0a0",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C91",
+      "claim": "C. thermophilum Vps45\u2013Tlg2 forms a 1:1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Although C. thermophilum Vps45\u2013Tlg2 forms a 1:1 complex, the maltose binding protein tagged full-length cytoplasmic region of Tlg2 (MBP-Tlg21-327) formed oligomers as judged by size exclusion chromatography (Figure 5A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by size exclusion chromatography.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "7e9f52e6-c83b-4782-970c-a96635186136",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C92",
+      "claim": "The maltose binding protein tagged full-length cytoplasmic region of Tlg2 (MBP-Tlg2(1-327)) formed oligomers as judged by size exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "Although C. thermophilum Vps45\u2013Tlg2 forms a 1:1 complex, the maltose binding protein tagged full-length cytoplasmic region of Tlg2 (MBP-Tlg21-327) formed oligomers as judged by size exclusion chromatography (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by size exclusion chromatography shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "596a2189-840e-4b5d-8e4b-63558f79d33e",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C93",
+      "claim": "The Tlg2 SNARE motif (MBP-Tlg2(258-327)) formed oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tlg2 SNARE motif (MBP-Tlg2258-327) likewise formed oligomers, whereas the MBP-tagged SNARE motifs from the cognate R-, Qb-, and Qc-SNAREs (Snc2, Vti1, and Tlg1) did not (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by size exclusion chromatography shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "a7c3237c-0deb-4529-abbe-a371eb953c9f",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C94",
+      "claim": "The MBP-tagged SNARE motifs from the cognate R-, Qb-, and Qc-SNAREs (Snc2, Vti1, and Tlg1) did not form oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tlg2 SNARE motif (MBP-Tlg2258-327) likewise formed oligomers, whereas the MBP-tagged SNARE motifs from the cognate R-, Qb-, and Qc-SNAREs (Snc2, Vti1, and Tlg1) did not (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by size exclusion chromatography shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "488bd735-f419-4c1e-a720-6631d2980430",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C95",
+      "claim": "Tlg2 oligomerization is driven by the formation of SNARE complex-like bundles of SNARE motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggested that Tlg2 oligomerization, like Stx oligomerization (Lerman et al., 2000; Misura et al., 2001), is driven by the formation of SNARE complex-like bundles of SNARE motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the SNARE motif alone oligomerizes, and supported by comparison to syntaxin-1.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "23bee20e-b454-43cf-b5ea-0360f79b8f40",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C96",
+      "claim": "Sedimentation velocity analytical ultracentrifugation analysis of both MBP-tagged and untagged Tlg2(258-327) showed that the Tlg2 SNARE motif behaves as a single species with an apparent molecular mass indicative of a tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, sedimentation velocity analytical ultracentrifugation analysis of both MBP-tagged and untagged Tlg2258-327 showed that the Tlg2 SNARE motif behaves as a single species with an apparent molecular mass indicative of a tetramer (Figure 5D,F and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by analytical ultracentrifugation shown in Figure 5D,F and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "d676f55a-1f15-478e-8e94-3a1b3377cdb6",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C97",
+      "claim": "When MBP-Tlg2(1-327) was mixed with an equimolar amount of Vps45 and incubated for 2 hr, the majority of the Vps45 shifted into two higher molecular weight peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "After a 2 hr incubation, the majority of the Vps45 shifted into two higher molecular weight peaks, one of them likely representing Vps45 bound to MBP-Tlg21-327 oligomers, the other representing the 1:1 Vps45\u2013MBP-Tlg21-327 complex (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by size exclusion chromatography shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "34a854bf-a341-464e-8caa-1404ae70b477",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C98",
+      "claim": "At longer incubation times, the 1:1 Vps45\u2013MBP-Tlg2(1-327) complex peak became more prominent at the expense of the peak representing Vps45 bound to MBP-Tlg2(1-327) oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "At longer incubation times, the 1:1 complex peak became more prominent at the expense of the peak representing Vps45 bound to MBP-Tlg21-327 oligomers, and the Vps45-only peak disappeared altogether.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by time-course size exclusion chromatography shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "69d3d965-3e17-4373-ab85-c1ff58aaf4ec",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C99",
+      "claim": "Vps45 is able to rescue MBP-Tlg2(1-327) from the oligomeric state, presumably by trapping MBP-Tlg2(1-327) monomers that transiently dissociate.",
+      "claim_type": "EXPLICIT",
+      "source": "These data imply that Vps45 is able to rescue MBP-Tlg21-327 from the oligomeric state, presumably by trapping MBP-Tlg21-327 monomers that transiently dissociate (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the time-course size exclusion chromatography data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "ae6e6229-0790-4d4e-a1f7-df290548d0fa",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C100",
+      "claim": "The N-peptide (MBP-Tlg2(1-20)) bound to Vps45.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the N-peptide (MBP-Tlg21-20) bound to Vps45 (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by size exclusion chromatography shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "e2e861e9-b59e-427b-a1e4-1332304d8c95",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C101",
+      "claim": "The N-peptide:Vps45 interaction appears to underlie the ability of Vps45 to rescue Tlg2 from oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-peptide:Vps45 interaction appears to underlie the ability of Vps45 to rescue Tlg2 from oligomers, since N-terminally truncated Tlg2 constructs (MBP-Tlg221-327 and MBP-Tlg2258-327) formed oligomers that neither bound to nor were rescued by Vps45 (Figure 6\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that N-terminally truncated Tlg2 constructs are not rescued by Vps45.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "b9dd7935-fd08-4316-8c88-0a5fef989b01",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C102",
+      "claim": "N-terminally truncated Tlg2 constructs (MBP-Tlg2(21-327) and MBP-Tlg2(258-327)) formed oligomers that neither bound to nor were rescued by Vps45.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-peptide:Vps45 interaction appears to underlie the ability of Vps45 to rescue Tlg2 from oligomers, since N-terminally truncated Tlg2 constructs (MBP-Tlg221-327 and MBP-Tlg2258-327) formed oligomers that neither bound to nor were rescued by Vps45 (Figure 6\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by size exclusion chromatography shown in Figure 6\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "05dcfaec-5dd1-453c-a263-475ec2817e76",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C103",
+      "claim": "The structure of the Vps45\u2013Tlg2 complex is strikingly different from the Munc18\u2013Stx complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure reported here, of the almost full-length cytoplasmic domain of Tlg2 bound to Vps45, is strikingly different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from comparing the two structures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "78924812-af84-4be3-a527-617009ee3d50",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C104",
+      "claim": "In the Vps45\u2013Tlg2 structure, the bound SNARE adopts a much more open conformation than in the Munc18\u2013Stx complex, with only a glancing interaction between the Habc domain and the SNARE motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than a four-helix-bundle-like closed conformation, the bound SNARE adopts a much more open conformation, with only a glancing interaction between the Habc domain and the SNARE motif (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "61b8ee3e-da0c-4770-a5a0-e9a6c0d12219",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C105",
+      "claim": "The linker between the Habc domain and the SNARE motif in the Munc18\u2013Stx complex is a target for Munc13's syntaxin-1-opening activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The linker between the Habc domain and the SNARE motif, which in the Munc18\u2013Stx complex is a target for Munc13's Stx-opening activity (Dulubova et al., 1999; Lai et al., 2017; Ma et al., 2011; Misura et al., 2000; Wang et al., 2017; Wang et al., 2020; Yang et al., 2015), appears to be disordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "af4db7ab-b20a-41ab-bdc4-ceb47e6e7730",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C106",
+      "claim": "The domain 3a helical hairpin is furled in the Munc18\u2013Stx complex but unfurled in the Vps45\u2013Tlg2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the domain 3a helical hairpin, which plays a crucial role in SNARE templating (Baker et al., 2015; Boyd et al., 2008; Hu et al., 2011; Jiao et al., 2018; Parisotto et al., 2014; Sitarska et al., 2017), is furled in the Munc18\u2013Stx complex but unfurled\u2014and therefore primed for R-SNARE binding\u2014in the Vps45\u2013Tlg2 complex (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the structures shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "186e6c30-73b3-49a0-b593-aca9a45b2f54",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C107",
+      "claim": "There have been conflicting reports regarding the tendency of yeast Tlg2 to oligomerize and/or form a closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "There have been conflicting reports regarding the tendency of yeast Tlg2 to oligomerize and/or form a closed conformation (Dulubova et al., 2002; Furgason et al., 2009; Struthers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to conflicting reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "6d6b20b5-cf92-4595-822d-ae9184f06e92",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C108",
+      "claim": "The SNARE motif of C. thermophilum Tlg2 unambiguously forms tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNARE motif of C. thermophilum Tlg2, however, unambiguously forms tetramers (Figure 5D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by analytical ultracentrifugation shown in Figure 5D,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "1a8703c4-cc30-4e8b-8f21-3d1991d5720e",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C109",
+      "claim": "The SNARE motif of syntaxin-1, by forming four-helix bundles, can drive the formation of off-pathway products requiring rescue by NSF/\u03b1-SNAP and Munc18.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect it resembles the SNARE motif of Stx which, by forming four-helix bundles, can drive the formation of off-pathway products requiring rescue by NSF/\u03b1-SNAP and Munc18 (Ma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ma et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "a6c652b7-0b04-44a1-8da2-9e85e2356791",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C110",
+      "claim": "In both Munc18\u2013Stx and Vps45\u2013Tlg2, binding to the cognate SM protein prevents SNARE oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "In both instances, binding to the cognate SM protein prevents SNARE oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that Vps45 prevents Tlg2 oligomerization, and from previous work on Munc18-Stx.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "59df73a3-2548-4e67-a4c5-9aed2e545536",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C111",
+      "claim": "For Munc18\u2013Stx, the protective effect against oligomerization has been attributed to the closed conformation of syntaxin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "For Munc18\u2013Stx, this protective effect has been attributed to the closed conformation of Stx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "75874d14-b3e6-47a7-aa4f-e0f725cd55c0",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C112",
+      "claim": "In the Vps45\u2013Tlg2 structure, Tlg2 is open but nevertheless protected from oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Vps45\u2013Tlg2 structure, Tlg2 is open but nevertheless protected from oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure and biochemical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "5f329069-26d1-4e0b-827f-a3e9d32615cf",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C113",
+      "claim": "Protection from oligomerization in the Vps45\u2013Tlg2 complex arises from binding of the SM protein to layers 0 to +4 of the SNARE motif.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that this protection arises from binding of the SM protein to layers 0 to +4 of the SNARE motif (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is proposed based on the structural observation shown in Figure 2B.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "d3d380d5-0879-4015-b605-33daf117f5ec",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C114",
+      "claim": "The other principal interaction between Vps45 and Tlg2, involving the Tlg2 N-peptide, increases the stability of the Vps45\u2013Tlg2 complex but would not seem capable of preventing SNARE motif self-association.",
+      "claim_type": "EXPLICIT",
+      "source": "The other principal interaction between Vps45 and Tlg2, involving the Tlg2 N-peptide, increases the stability of the Vps45\u2013Tlg2 complex but would not seem capable of preventing SNARE motif self-association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and the observation that N-terminally truncated Tlg2 is not rescued by Vps45.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "e4eb7d14-c3c2-45aa-a7a2-1ba429607774",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C115",
+      "claim": "The Tlg2 N-peptide plays a key role by equipping the Tlg2 tetramers with exposed, high-affinity handles for Vps45 to grab onto.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tlg2 N-peptide nevertheless plays a key role, by equipping the Tlg2 tetramers with exposed, high-affinity (27 nM for the mammalian orthologues [Burkhardt et al., 2008]) handles for Vps45 to grab onto (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the data and supported by citation to Burkhardt et al., 2008.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "d480c62c-7524-4c49-98ea-62167b5ee10f",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C116",
+      "claim": "The affinity of the N-peptide for Vps45 is 27 nM for the mammalian orthologues.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tlg2 N-peptide nevertheless plays a key role, by equipping the Tlg2 tetramers with exposed, high-affinity (27 nM for the mammalian orthologues [Burkhardt et al., 2008]) handles for Vps45 to grab onto (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Burkhardt et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "9448c491-6fb0-4c8a-a6e9-7dc52adb8bd6",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C117",
+      "claim": "Vps45 can rescue Tlg2 from off-pathway oligomers and hold it in an open, non-oligomerization-prone state in preparation for SNARE complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that Vps45 can rescue Tlg2 from off-pathway oligomers and hold it in an open, non-oligomerization-prone state in preparation for SNARE complex assembly (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion drawn from the structural and biochemical data, illustrated in Figure 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "d6bd759f-4eb7-454c-8397-a121ed397d4e",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C118",
+      "claim": "Template complexes containing half-zippered Qa- and R-SNAREs bound to the cognate SM protein are essential intermediates in SM-catalyzed SNARE assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Template complexes containing half-zippered Qa- and R-SNAREs bound to the cognate SM protein are essential intermediates in SM-catalyzed SNARE assembly (Baker et al., 2015; Jiao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Baker et al., 2015 and Jiao et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "aeedf6d5-e699-417f-abc0-e737e4da3ca2",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C119",
+      "claim": "Yeast Vps45 was reported to bind the R-SNARE Snc2.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast Vps45 was reported to bind the R-SNARE Snc2, but the relevance of this observation to the potential formation of a template complex is uncertain since Tlg2 appeared to displace the Vps45-bound Snc2 (Carpp et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Carpp et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "e3e87d36-52f6-4fff-9309-bd8e9a3459b4",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C120",
+      "claim": "The relevance of Vps45 binding to Snc2 to the potential formation of a template complex is uncertain since Tlg2 appeared to displace the Vps45-bound Snc2.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast Vps45 was reported to bind the R-SNARE Snc2, but the relevance of this observation to the potential formation of a template complex is uncertain since Tlg2 appeared to displace the Vps45-bound Snc2 (Carpp et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Carpp et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "97d1a147-8754-4724-8e14-1083b8d8edcd",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C121",
+      "claim": "The close structural resemblance between the unfurled helical hairpins of Tlg2-bound Vps45, Vam3-bound Vps33, and Nyv1-bound Vps33 strongly suggests that Tlg2-bound Vps45 is primed for R-SNARE binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the close structural resemblance between the unfurled helical hairpins of Tlg2-bound Vps45, Vam3-bound Vps33, and Nyv1-bound Vps33, together with the ability of Vps33, Nyv1, and Vam3 to form a ternary complex (Baker et al., 2015), strongly suggests that Tlg2-bound Vps45 is primed for R-SNARE binding (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural comparison and supported by citation to Baker et al., 2015.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "0f9f82ae-f229-44d8-bd92-682f1dcf359e",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C122",
+      "claim": "Vps45 binding to the R-SNARE need not be high affinity in order to promote SNARE assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "This binding need not be high affinity in order to promote SNARE assembly; indeed, Munc18 binding to the R-SNARE VAMP2/synaptobrevin is weak (Sitarska et al., 2017) but nonetheless critical for forming the template complex (Jiao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sitarska et al., 2017 and Jiao et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "b4c2bacf-2fcf-43ee-a79f-5ba26680dcd6",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C123",
+      "claim": "Munc18 binding to the R-SNARE VAMP2/synaptobrevin is weak but nonetheless critical for forming the template complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This binding need not be high affinity in order to promote SNARE assembly; indeed, Munc18 binding to the R-SNARE VAMP2/synaptobrevin is weak (Sitarska et al., 2017) but nonetheless critical for forming the template complex (Jiao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sitarska et al., 2017 and Jiao et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "1d7e1c9f-209b-4080-8c68-1f74eeb3c9bc",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C124",
+      "claim": "The stringent regulation of neurotransmitter release requires the control of synaptic SNARE complex formation by Munc18 and Munc13-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The stringent regulation of neurotransmitter release requires the control of synaptic SNARE complex formation by Munc18, which clamps Stx in an inactive closed conformation, and Munc13-1, which mediates Stx opening (Brunger et al., 2018; Rizo, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Brunger et al., 2018 and Rizo, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "4289b762-a91e-4e52-985e-cd43418bf001",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C125",
+      "claim": "Munc18 clamps syntaxin-1 in an inactive closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The stringent regulation of neurotransmitter release requires the control of synaptic SNARE complex formation by Munc18, which clamps Stx in an inactive closed conformation, and Munc13-1, which mediates Stx opening (Brunger et al., 2018; Rizo, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Brunger et al., 2018 and Rizo, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "845b6cde-2a98-493d-be1e-bfe1b6c4dead",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C126",
+      "claim": "Munc13-1 mediates syntaxin-1 opening.",
+      "claim_type": "EXPLICIT",
+      "source": "The stringent regulation of neurotransmitter release requires the control of synaptic SNARE complex formation by Munc18, which clamps Stx in an inactive closed conformation, and Munc13-1, which mediates Stx opening (Brunger et al., 2018; Rizo, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Brunger et al., 2018 and Rizo, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "21ff8716-3267-4cdb-b16a-bb8f3bc8194f",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C127",
+      "claim": "The Vps45\u2013Tlg2 structure reveals a new mode of interaction in which the Qa-SNARE is held open rather than clamped shut.",
+      "claim_type": "EXPLICIT",
+      "source": "Our Vps45\u2013Tlg2 structure reveals a new mode of interaction in which the Qa-SNARE is held open rather than clamped shut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "8ce4fd62-02fa-43f7-b318-839840fe9e42",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C128",
+      "claim": "It is possible that the open mode of SM-SNARE interaction is the rule, with the Munc18\u2013Stx mode being the exception.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that this new mode is the rule, with the Munc18\u2013Stx mode being the exception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the structural comparison.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "74b847e4-b76d-40e1-b0c3-9d3d3406b204",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C129",
+      "claim": "The task of Munc13-1 may be to convert the Munc18\u2013Stx complex into a Vps45\u2013Tlg2-like conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is furthermore attractive to speculate that the task of Munc13-1 is to convert the Munc18\u2013Stx complex into a Vps45\u2013Tlg2-like conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the structural comparison.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "f343e8ee-c777-4a65-bb90-cfbbf3df42f6",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C130",
+      "claim": "A principal difference between closed syntaxin-1 and open Tlg2 is the linker between the Habc domain and the SNARE motif, which is folded in the first case and unfolded in the second.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a principal difference between closed Stx and open Tlg2 is the linker between the Habc domain and the SNARE motif, which is folded in the first case and unfolded in the second (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the structures shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "0fcbb2b1-be07-4bb4-849e-86a60a58f51e",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "claim_id": "C131",
+      "claim": "Munc13-1, by binding to the Munc18\u2013Stx complex and destabilizing the Stx linker, may promote the conformational switch that allows Stx to open, the domain 3a helical hairpin to unfurl, and the template complex to form.",
+      "claim_type": "EXPLICIT",
+      "source": "Munc13-1, by binding to the Munc18\u2013Stx complex and destabilizing the Stx linker (Lai et al., 2017; Wang et al., 2017; Wang et al., 2020), may thereby promote the conformational switch that allows Stx to open, the domain 3a helical hairpin to unfurl, and the template complex to form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the structural comparison and supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a5040dd4-8186-4ea1-ba38-fba9910a3f87",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structure of Vps45 from C. thermophilum was determined at 2.0 \u00c5 resolution, revealing a three-domain architecture with a large cleft between domains 1 and 3a. Three surface regions are particularly well conserved among Vps45 family members, corresponding to the cleft walls, N-peptide binding site, and R-SNARE binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 are well-supported by the crystallographic data presented in Table 1 and Figure 1. The structure was refined to 2.0 \u00c5 resolution with good statistics (Rwork=0.178, Rfree=0.218), and the conservation analysis using ConSurf provides strong evidence for the functionally important surface regions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "3a416652-114e-4c7a-951c-ef1b4c1cf3e9",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Vps45-Tlg2 complex structure was determined at 2.8 \u00c5 resolution. All well-characterized regions of Tlg2 (N-peptide, Habc domain, and SNARE motif) are visible and interact directly with Vps45. Vps45 does not undergo major conformational changes upon Tlg2 binding, though the cleft opens slightly to accommodate Tlg2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C52 are supported by the crystallographic data in Table 1 and structural analysis shown in Figures 1-2. The structure was solved by molecular replacement and refined to 2.8 \u00c5 resolution with acceptable statistics (Rwork=0.194, Rfree=0.248). The deletion of residues 201-228 to improve crystallization is well-justified by comparison to C. globosum Tlg2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In the Vps45-Tlg2 complex, Tlg2 adopts an open conformation with its SNARE motif disengaged from the Habc domain and the linker region unfolded. The N-peptide binds to the outside of Vps45 domain 1 (burying 870 \u00c5\u00b2), layers 0 to +4 of the SNARE motif interact with the cleft-facing side of domain 1 (burying 930 \u00c5\u00b2), and the Habc domain makes limited contact with domain 1 (burying 680 \u00c5\u00b2). This establishes that SM proteins can engage Qa-SNAREs without clamping them in a closed conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C28-C29, C53-C74 are strongly supported by the high-resolution crystal structure data shown in Figures 1-3. The buried surface area calculations are standard structural analyses. The comparison with the Munc18-Stx complex (Figure 3) clearly demonstrates the novel open conformation. Previous mutagenesis studies (C58) provide independent validation of key binding residues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "2ece307b-3463-431b-949c-3d8afa8055fb",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The domain 3a helical hairpin of Vps45 is unfurled in the Vps45-Tlg2 complex, exposing the presumptive R-SNARE binding site. This unfurled conformation is made possible by the open conformation of Tlg2 and closely resembles the unfurled hairpins in Vps33 structures. Crystal contact analysis using the V306D/F335R mutant confirms that the unfurled conformation is not an artifact of crystal packing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C75-C82, C85-C90, C106 are well-supported by structural data in Figure 4 and supplementary figures. The comparison with Vps33 structures provides strong evidence for a conserved active conformation. The V306D/F335R mutant experiment (C87-C90) addresses the important caveat about crystal contacts, though the 5 \u00c5 resolution limits detailed interpretation. The overall conclusion is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "cb431d43-30b9-4995-98ec-30e50b8bb0b1",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Tlg2 has a pronounced tendency to form homo-tetramers. The full-length cytoplasmic region (MBP-Tlg2\u2081\u208b\u2083\u2082\u2087) and the SNARE motif alone (MBP-Tlg2\u2082\u2085\u2088\u208b\u2083\u2082\u2087) both form oligomers by size exclusion chromatography. Analytical ultracentrifugation confirms that the SNARE motif behaves as a tetramer with an apparent molecular mass of 33.8 kDa (untagged) or 181 kDa (MBP-tagged), consistent with SNARE complex-like bundles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C31, C91-C96, C108 are strongly supported by multiple orthogonal biochemical methods shown in Figure 5. Size exclusion chromatography and analytical ultracentrifugation provide converging evidence for tetramer formation. The molecular weight determinations are consistent with expected values. The comparison with cognate SNAREs (C93-C94) strengthens the conclusion that oligomerization is specific to Tlg2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "7ae988f3-0852-423f-8b18-7dc7bc142a7d",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Vps45 can rescue Tlg2 from homo-oligomers into stoichiometric 1:1 complexes. Time-course size exclusion chromatography shows progressive conversion of oligomers to 1:1 complexes over 42 hours. The N-peptide interaction is critical for this rescue activity, as N-terminally truncated Tlg2 constructs are neither bound nor rescued by Vps45. Despite being in an open conformation, Tlg2 is protected from oligomerization when bound to Vps45.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C97-C102, C110, C112, C117 are well-supported by the time-course experiments in Figure 6 and supplementary data. The progressive shift from oligomers to 1:1 complex provides strong evidence for rescue activity. The N-terminal truncation experiments (C101-C102) establish the importance of the N-peptide. The conclusion that Vps45 holds Tlg2 in a non-oligomerization-prone state is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "d64776e4-652e-43c4-8b93-77e9ac7e822a",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SM proteins can engage Qa-SNAREs using at least two different modes: one in which the SNARE is closed (Munc18-Stx) and one in which it is open (Vps45-Tlg2). The Vps45-Tlg2 structure reveals a new mode of interaction in which the Qa-SNARE is held open rather than clamped shut. Qa-SNARE clamping may be a specialized property of Munc18 rather than a general property of SM proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C30, C103-C104, C127 represent the major conceptual advance of this work. The structural comparison between Vps45-Tlg2 and Munc18-Stx (Figure 3) clearly demonstrates two distinct binding modes. The conclusion is well-supported by the high-quality structural data and represents a significant revision of the field's understanding of SM protein function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "b793d38a-bfe6-4fc0-a276-8f991e0d0c60",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Protection from oligomerization in the Vps45-Tlg2 complex is proposed to arise from binding of the SM protein to layers 0 to +4 of the SNARE motif. The N-peptide interaction increases complex stability but would not seem capable of preventing SNARE motif self-association. Instead, the N-peptide provides high-affinity handles (27 nM for mammalian orthologs) for Vps45 to capture Tlg2 tetramers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C113-C115 involve mechanistic proposals that are reasonable but not directly tested. C113 is explicitly labeled as a proposal based on structural observations. The role of the N-peptide (C114-C115) is inferred from truncation experiments, but the specific mechanism by which layers 0 to +4 prevent oligomerization is not experimentally validated. Additional mutagenesis or binding studies would strengthen these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "aabc5cd5-f057-4528-8717-78429dd9946b",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Based on the crystal structure and comparison with Vps33 structures, the Vps45-Tlg2 complex appears to be primed to bind an R-SNARE and catalyze SNARE assembly. The close structural resemblance between the unfurled helical hairpins of Tlg2-bound Vps45, Vam3-bound Vps33, and Nyv1-bound Vps33 strongly suggests that Tlg2-bound Vps45 is primed for R-SNARE binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84 and C121 are reasonable inferences based on structural similarity to Vps33, but they remain speculative. C83 explicitly states that the authors were unable to demonstrate SNARE complex assembly in vitro. While the structural comparison is compelling, direct biochemical or functional evidence for R-SNARE binding and template complex formation is lacking. This represents an important prediction requiring future validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "93ad96cf-e02e-4e8f-96b0-f0281b7b5f50",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "It is speculated that the open mode of SM-SNARE interaction may be the rule, with Munc18-Stx being the exception. The task of Munc13-1 may be to convert the Munc18-Stx complex into a Vps45-Tlg2-like conformation by destabilizing the Stx linker, promoting opening of Stx, unfurling of the helical hairpin, and template complex formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C128-C131 are explicitly presented as speculation in the Discussion. While the hypothesis is attractive and consistent with known functions of Munc13-1, it lacks direct experimental support. The proposal that the open mode is the rule rather than the exception (C128) is based on only two structures and may be premature. These ideas represent interesting hypotheses for future testing rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    },
+    {
+      "id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c",
+      "content_id": "d4d1f9b5-e3e8-422f-ac4a-63696314a4db",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background and context claims about SNARE proteins, SM proteins, and prior structural and functional studies. These include established knowledge about SNARE-mediated fusion, SM protein families, the Munc18-Stx structure, template complex formation, and the roles of Munc13-1 in neurotransmitter release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C10-C27, C33-C35, C66, C75, C105, C107, C109, C111, C116, C118-C126 represent background information supported by appropriate citations to the literature. These claims establish the context for the current work and are generally well-established in the field. They are appropriately cited and accurately represent prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:52.529159Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ddafe00a-7138-4387-9148-a7aed0b650c2",
+      "result_id": "a5040dd4-8186-4ea1-ba38-fba9910a3f87"
+    },
+    {
+      "claim_id": "a1ea4505-3f4c-43f3-8498-b87284bbdd9a",
+      "result_id": "a5040dd4-8186-4ea1-ba38-fba9910a3f87"
+    },
+    {
+      "claim_id": "fd8d3016-fbcd-49f3-971c-bbac96f2890d",
+      "result_id": "a5040dd4-8186-4ea1-ba38-fba9910a3f87"
+    },
+    {
+      "claim_id": "dd43f0c3-74e7-4ce9-87d5-cfee39cd3c06",
+      "result_id": "a5040dd4-8186-4ea1-ba38-fba9910a3f87"
+    },
+    {
+      "claim_id": "42b39c4a-c4fd-48d8-9a7c-6665b210d0ee",
+      "result_id": "a5040dd4-8186-4ea1-ba38-fba9910a3f87"
+    },
+    {
+      "claim_id": "39f1d34c-832a-4359-9183-bcc7f0ddf1b7",
+      "result_id": "a5040dd4-8186-4ea1-ba38-fba9910a3f87"
+    },
+    {
+      "claim_id": "7b81e1d1-e3f5-404f-bb20-2eaa61e6647d",
+      "result_id": "3a416652-114e-4c7a-951c-ef1b4c1cf3e9"
+    },
+    {
+      "claim_id": "19938657-d0b2-4c2e-b016-317f1db2aac0",
+      "result_id": "3a416652-114e-4c7a-951c-ef1b4c1cf3e9"
+    },
+    {
+      "claim_id": "2e864b7a-2c59-4102-b6ed-0d0fa2c18694",
+      "result_id": "3a416652-114e-4c7a-951c-ef1b4c1cf3e9"
+    },
+    {
+      "claim_id": "c1b0d84a-2a13-4b07-9b34-24edb131201e",
+      "result_id": "3a416652-114e-4c7a-951c-ef1b4c1cf3e9"
+    },
+    {
+      "claim_id": "0638c69b-15d7-400b-b248-a00ed27826a5",
+      "result_id": "3a416652-114e-4c7a-951c-ef1b4c1cf3e9"
+    },
+    {
+      "claim_id": "a4467732-6654-47a3-89f9-e72f1e726e08",
+      "result_id": "3a416652-114e-4c7a-951c-ef1b4c1cf3e9"
+    },
+    {
+      "claim_id": "f0a13e73-cc58-4ec5-9267-356f75bb3588",
+      "result_id": "3a416652-114e-4c7a-951c-ef1b4c1cf3e9"
+    },
+    {
+      "claim_id": "c63daf61-e862-4c08-8338-bec9aba143b2",
+      "result_id": "3a416652-114e-4c7a-951c-ef1b4c1cf3e9"
+    },
+    {
+      "claim_id": "86952c74-475c-4d92-b1b9-a8698cbcddfd",
+      "result_id": "3a416652-114e-4c7a-951c-ef1b4c1cf3e9"
+    },
+    {
+      "claim_id": "97df85af-84c9-413c-820a-fff2c240a8e4",
+      "result_id": "3a416652-114e-4c7a-951c-ef1b4c1cf3e9"
+    },
+    {
+      "claim_id": "520e9726-eeee-4b94-9eb6-7eb641c0ea8f",
+      "result_id": "3a416652-114e-4c7a-951c-ef1b4c1cf3e9"
+    },
+    {
+      "claim_id": "3c0f1c9d-47d7-44b4-8e6e-e02f09462e2f",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "dc37d49e-fa9b-447b-a464-03f7d9cba5b2",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "e77398c8-25c0-4cf5-98d4-f557468a0b79",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "60f8e0f1-31f6-475a-b173-3db0764de2b1",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "ce0b9612-4eab-453c-8c60-232829e04c25",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "0dbef289-1679-4840-aa8e-e44b140ca62a",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "60a50d6c-e694-482c-bfe8-7f92f826ba92",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "1cb690e1-4058-4a9f-8fb7-e04c14afcf5a",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "dc54f8bf-fa36-4b41-89d1-74aeeea846b5",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "3e1e1cac-1215-40c0-99e5-d75c5f34af84",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "c5dd9b88-0dca-40c7-a750-f2e4ab7f68cf",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "4faf5416-47c4-444f-8857-c4b0a8a3e8ea",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "83071bf3-5171-4fbf-9f05-777e7737c918",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "8a859e14-f29b-4800-b255-2364b30358e4",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "6362bc97-1b82-4595-bb83-83563e6d8ab6",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "56da9e55-8b82-4245-be07-033e6693d61e",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "65708745-efc3-44c5-8498-c7751e35ac26",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "ad4a3bd5-9983-43d0-8b84-3d999088079e",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "028b4e42-01ad-4da9-84d6-5b1a9de90552",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "8cd88866-35fc-44e4-9d6a-c1301eb7489e",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "20faa188-98c0-4008-8a14-1ce9d0733dd7",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "2af0006c-d98b-460c-8627-7461ea009123",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "0844aa85-4440-400f-87e8-024d81c682a9",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "9e97fec1-48ff-46c8-9086-69917821d2ec",
+      "result_id": "3f83c0b1-f761-412f-a315-d77e1efa6cf3"
+    },
+    {
+      "claim_id": "b5f57369-7bc6-434b-9fca-44c862c5281c",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "d32f5059-a55f-4ae1-a5d8-dec4a7103992",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "7e9ed539-50db-4d4e-9333-af194ad734f0",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "bbc9907c-c2f7-416a-a82b-f21677f53a71",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "e5126d32-9ed3-4272-9e0d-909f49968523",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "5b825134-30cf-49c6-bc50-2b998441f2e8",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "d938fee1-870c-416c-adbc-ec7acbe1aa1d",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "fa5989af-4227-4b33-a65e-3ccd6634c8b8",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "841dba32-97c6-4a53-8292-ec6c632a2568",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "40198b17-c241-4bd0-ae0a-5930cd3f2aeb",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "8bacc66b-aed9-4162-a03b-1d74982f5b17",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "b76fe924-799b-48cf-8786-6c54898e5259",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "627bbbf8-f869-411f-9723-3b6137737b9a",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "67a49005-7d47-46de-b5f5-b112f528687a",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "f3c32622-67fd-4c61-ad48-2d062eedf2a5",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "af4db7ab-b20a-41ab-bdc4-ceb47e6e7730",
+      "result_id": "2ece307b-3463-431b-949c-3d8afa8055fb"
+    },
+    {
+      "claim_id": "eeacf658-1f29-40ad-83a8-81ae5ebb9f7d",
+      "result_id": "cb431d43-30b9-4995-98ec-30e50b8bb0b1"
+    },
+    {
+      "claim_id": "b41d06fb-28fd-458e-ad8e-b91465b8aaef",
+      "result_id": "cb431d43-30b9-4995-98ec-30e50b8bb0b1"
+    },
+    {
+      "claim_id": "a2e44089-ee3c-40cf-b8c6-d459453ef0a0",
+      "result_id": "cb431d43-30b9-4995-98ec-30e50b8bb0b1"
+    },
+    {
+      "claim_id": "7e9f52e6-c83b-4782-970c-a96635186136",
+      "result_id": "cb431d43-30b9-4995-98ec-30e50b8bb0b1"
+    },
+    {
+      "claim_id": "596a2189-840e-4b5d-8e4b-63558f79d33e",
+      "result_id": "cb431d43-30b9-4995-98ec-30e50b8bb0b1"
+    },
+    {
+      "claim_id": "a7c3237c-0deb-4529-abbe-a371eb953c9f",
+      "result_id": "cb431d43-30b9-4995-98ec-30e50b8bb0b1"
+    },
+    {
+      "claim_id": "488bd735-f419-4c1e-a720-6631d2980430",
+      "result_id": "cb431d43-30b9-4995-98ec-30e50b8bb0b1"
+    },
+    {
+      "claim_id": "23bee20e-b454-43cf-b5ea-0360f79b8f40",
+      "result_id": "cb431d43-30b9-4995-98ec-30e50b8bb0b1"
+    },
+    {
+      "claim_id": "6d6b20b5-cf92-4595-822d-ae9184f06e92",
+      "result_id": "cb431d43-30b9-4995-98ec-30e50b8bb0b1"
+    },
+    {
+      "claim_id": "506810c1-7990-400b-b516-88f4a8138468",
+      "result_id": "7ae988f3-0852-423f-8b18-7dc7bc142a7d"
+    },
+    {
+      "claim_id": "d676f55a-1f15-478e-8e94-3a1b3377cdb6",
+      "result_id": "7ae988f3-0852-423f-8b18-7dc7bc142a7d"
+    },
+    {
+      "claim_id": "34a854bf-a341-464e-8caa-1404ae70b477",
+      "result_id": "7ae988f3-0852-423f-8b18-7dc7bc142a7d"
+    },
+    {
+      "claim_id": "69d3d965-3e17-4373-ab85-c1ff58aaf4ec",
+      "result_id": "7ae988f3-0852-423f-8b18-7dc7bc142a7d"
+    },
+    {
+      "claim_id": "ae6e6229-0790-4d4e-a1f7-df290548d0fa",
+      "result_id": "7ae988f3-0852-423f-8b18-7dc7bc142a7d"
+    },
+    {
+      "claim_id": "e2e861e9-b59e-427b-a1e4-1332304d8c95",
+      "result_id": "7ae988f3-0852-423f-8b18-7dc7bc142a7d"
+    },
+    {
+      "claim_id": "b9dd7935-fd08-4316-8c88-0a5fef989b01",
+      "result_id": "7ae988f3-0852-423f-8b18-7dc7bc142a7d"
+    },
+    {
+      "claim_id": "a6c652b7-0b04-44a1-8da2-9e85e2356791",
+      "result_id": "7ae988f3-0852-423f-8b18-7dc7bc142a7d"
+    },
+    {
+      "claim_id": "75874d14-b3e6-47a7-aa4f-e0f725cd55c0",
+      "result_id": "7ae988f3-0852-423f-8b18-7dc7bc142a7d"
+    },
+    {
+      "claim_id": "9448c491-6fb0-4c8a-a6e9-7dc52adb8bd6",
+      "result_id": "7ae988f3-0852-423f-8b18-7dc7bc142a7d"
+    },
+    {
+      "claim_id": "ff74ed87-4a86-4ca2-a3af-46f92a97ba10",
+      "result_id": "d64776e4-652e-43c4-8b93-77e9ac7e822a"
+    },
+    {
+      "claim_id": "92807520-a097-4a86-8788-7150bc7965d9",
+      "result_id": "d64776e4-652e-43c4-8b93-77e9ac7e822a"
+    },
+    {
+      "claim_id": "05dcfaec-5dd1-453c-a263-475ec2817e76",
+      "result_id": "d64776e4-652e-43c4-8b93-77e9ac7e822a"
+    },
+    {
+      "claim_id": "78924812-af84-4be3-a527-617009ee3d50",
+      "result_id": "d64776e4-652e-43c4-8b93-77e9ac7e822a"
+    },
+    {
+      "claim_id": "21ff8716-3267-4cdb-b16a-bb8f3bc8194f",
+      "result_id": "d64776e4-652e-43c4-8b93-77e9ac7e822a"
+    },
+    {
+      "claim_id": "5f329069-26d1-4e0b-827f-a3e9d32615cf",
+      "result_id": "b793d38a-bfe6-4fc0-a276-8f991e0d0c60"
+    },
+    {
+      "claim_id": "d3d380d5-0879-4015-b605-33daf117f5ec",
+      "result_id": "b793d38a-bfe6-4fc0-a276-8f991e0d0c60"
+    },
+    {
+      "claim_id": "e4eb7d14-c3c2-45aa-a7a2-1ba429607774",
+      "result_id": "b793d38a-bfe6-4fc0-a276-8f991e0d0c60"
+    },
+    {
+      "claim_id": "28018e76-af26-406b-aec4-2e2fd78cc5ad",
+      "result_id": "aabc5cd5-f057-4528-8717-78429dd9946b"
+    },
+    {
+      "claim_id": "97d1a147-8754-4724-8e14-1083b8d8edcd",
+      "result_id": "aabc5cd5-f057-4528-8717-78429dd9946b"
+    },
+    {
+      "claim_id": "8ce4fd62-02fa-43f7-b318-839840fe9e42",
+      "result_id": "93ad96cf-e02e-4e8f-96b0-f0281b7b5f50"
+    },
+    {
+      "claim_id": "74b847e4-b76d-40e1-b0c3-9d3d3406b204",
+      "result_id": "93ad96cf-e02e-4e8f-96b0-f0281b7b5f50"
+    },
+    {
+      "claim_id": "f343e8ee-c777-4a65-bb90-cfbbf3df42f6",
+      "result_id": "93ad96cf-e02e-4e8f-96b0-f0281b7b5f50"
+    },
+    {
+      "claim_id": "0fcbb2b1-be07-4bb4-849e-86a60a58f51e",
+      "result_id": "93ad96cf-e02e-4e8f-96b0-f0281b7b5f50"
+    },
+    {
+      "claim_id": "f4450777-33f2-4897-b11f-675e012fb004",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "21db4fd7-8eda-4dc2-a6f9-a84d24e4b6e7",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "798c83c5-c2b6-4ecf-b6e1-741daec2b68f",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "7ce9cd14-7ee3-4697-b040-e5589f1af8a8",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "9ed12164-7df5-4c87-a444-9de3e4e56d85",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "70817fa6-e4b4-4aa3-be1b-2c84e0c26296",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "938d50bc-e26a-4e1c-ad71-885acf914702",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "00b21733-0a0e-47d7-9ff6-70be9b59f95d",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "898f6f77-089a-4b65-a12c-05bdc2eed7f5",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "359b4c61-6205-48f2-95b5-434abd0e925b",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "c8074a28-27bf-45ed-ba49-f518bebadc5b",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "d73a1882-1825-4a1b-bbd9-5bc0c0d26850",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "07035243-59c4-458e-a510-f03ef1d93299",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "ab2358bb-c984-4bc7-9ab3-f251f1e016ba",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "7bdb70e9-b037-439a-9a92-cce189843d8c",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "a14f5625-a4af-4d81-b85f-53b89f6a0e83",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "4ac0b06e-369f-41f4-b165-6a3e9d9ff481",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "fb221e16-9639-4076-be9c-f6bcc5d1b3fe",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "34e69e0d-9756-48dd-9024-57e25d450d2e",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "0a332a44-df8b-446e-b1ae-07db16d9d1a5",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "2ba5b7ad-1717-4f4c-ba52-6526a85ec6d3",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "4d67904b-3c42-4173-ad9f-992b169f923a",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "34e99676-bdb5-4415-b291-bdd089711477",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "aae99ac6-0f0d-410e-8d67-2062edbe3d7f",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "ed5281c8-870e-4a69-a6cf-d8d730a75494",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "848ee994-16c6-426b-bae2-72cb991e7ceb",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "d32f5059-a55f-4ae1-a5d8-dec4a7103992",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "61b8ee3e-da0c-4770-a5a0-e9a6c0d12219",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "186e6c30-73b3-49a0-b593-aca9a45b2f54",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "1a8703c4-cc30-4e8b-8f21-3d1991d5720e",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "59df73a3-2548-4e67-a4c5-9aed2e545536",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "d480c62c-7524-4c49-98ea-62167b5ee10f",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "d6bd759f-4eb7-454c-8397-a121ed397d4e",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "aeedf6d5-e699-417f-abc0-e737e4da3ca2",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "e3e87d36-52f6-4fff-9309-bd8e9a3459b4",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "0f9f82ae-f229-44d8-bd92-682f1dcf359e",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "b4c2bacf-2fcf-43ee-a79f-5ba26680dcd6",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "1d7e1c9f-209b-4080-8c68-1f74eeb3c9bc",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "4289b762-a91e-4e52-985e-cd43418bf001",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    },
+    {
+      "claim_id": "845b6cde-2a98-493d-be1e-bfe1b6c4dead",
+      "result_id": "e16f347b-ce32-4ada-a9e6-030bf8ad377c"
+    }
+  ],
+  "comparisons": []
+}

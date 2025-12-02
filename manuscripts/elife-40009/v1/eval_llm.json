@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors generated an HMGCR-Clover reporter cell line by fusing Clover fluorescent protein to the C-terminus of endogenous HMGCR. This reporter is dynamic and cholesterol-sensitive, showing ~25-fold increase upon sterol depletion and ~80% decrease within 2 hours of sterol repletion. The reporter is stabilized by proteasome, p97/VCP, or HMGCR enzymatic inhibition, and its degradation is Insig-dependent with Insig-1 being dominant over Insig-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C50 collectively demonstrate successful generation and validation of the HMGCR-Clover reporter. The data show appropriate ER localization (C50), sterol-dependent regulation (C38-C40), proteasome-dependent degradation (C42-C44), and Insig-dependence (C45-C49). Multiple complementary approaches (flow cytometry, immunoblotting, microscopy, genetic validation) provide converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C60",
+      "C61"
+    ],
+    "result": "A genome-wide CRISPR/Cas9 screen identified RNF145 as an E3 ligase required for HMGCR degradation, along with known components UBE2G2, AUP1, and Insig-1/2. RNF145 depletion caused a small but reproducible decrease in HMGCR-Clover degradation, suggesting involvement of additional ligases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 describe the genome-wide screen results with appropriate validation. The identification of known components (C52, C53, C55) validates the screening approach, while RNF145 emerges as a novel E3 ligase (C51, C56). The modest phenotype upon RNF145 depletion (C60) is appropriately interpreted as suggesting redundancy (C61), motivating the subsequent targeted screen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "A targeted ubiquitome CRISPR/Cas9 screen in RNF145-deficient cells identified gp78 as a second E3 ligase for HMGCR degradation. Loss of gp78 alone had no effect, but combined loss of RNF145 and gp78 resulted in significant accumulation of HMGCR-Clover and inability to degrade it upon sterol addition, demonstrating partial functional redundancy between the two ligases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 demonstrate a well-designed genetic approach to identify redundant ligases. The targeted screen in RNF145-deficient background (C62) successfully identified gp78 (C62), and the epistasis analysis showing no effect of gp78 alone (C63) but strong effect in combination with RNF145 (C66) provides compelling evidence for redundancy (C67-C68). The conclusion that gp78 was not a false-negative from the initial screen (C64) is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The redundancy between RNF145 and gp78 in HMGCR degradation was confirmed using endogenous wild-type HMGCR. Loss of gp78 alone did not affect HMGCR degradation, but combined loss of gp78 and RNF145 resulted in significant rescue of steady-state HMGCR and marked reduction in sterol-induced degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 validate the findings from the HMGCR-Clover reporter using endogenous HMGCR by immunoblotting. This addresses potential concerns about reporter artifacts and confirms the phenotypes observed with the fluorescent reporter apply to native HMGCR. The data in multiple independent clones strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The E3 ligase activity of RNF145 is critical for HMGCR degradation. Wild-type RNF145, but not a catalytically-inactive RING domain mutant, rescued the block in sterol-induced degradation of HMGCR-Clover in RNF145/gp78 double-knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 demonstrate that RNF145's enzymatic activity is required for its function in HMGCR degradation through a complementation experiment. The use of a RING domain mutant (C552A, H554A) is appropriate for testing E3 ligase activity, and the rescue by wild-type but not mutant RNF145 provides strong evidence for the requirement of catalytic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Endogenous RNF145 has a short half-life (~2 hours) and undergoes rapid, proteasome-mediated degradation in an auto-regulatory manner dependent on UBE2G2. This contrasts with the stable gp78, and the two ligases are not co-regulated. The catalytically-inactive RING mutant of RNF145 exhibited greater steady-state abundance than wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 characterize RNF145 stability through cycloheximide chase experiments in multiple cell lines. The data show RNF145 is intrinsically unstable (C74-C75), contrasting with stable gp78 (C76), and that the ligases are not co-regulated (C77-C78). The stabilization by UBE2G2 deletion (C79) and increased abundance of the RING mutant (C80) support auto-regulation (C81). The experiments are well-controlled and conclusions appropriately drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "RNF145 is a sterol-regulated E3 ubiquitin ligase whose expression is dependent on cellular sterol status. Sterol depletion induced RNF145 mRNA expression (~3-fold increase, p=0.0009) and protein accumulation, which was suppressed by cholesterol addition. In contrast, gp78 abundance remained unaltered by sterol status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 demonstrate sterol-dependent transcriptional regulation of RNF145 through qPCR (C82) and immunoblotting (C84). The statistical significance is reported (C82), and the contrast with gp78 (C85) highlights RNF145's unique regulation. The conclusion that RNF145 is sterol-regulated (C86) is well-supported by the data, though the mechanism of transcriptional regulation could be further explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Endogenous RNF145 shows sterol-dependent interaction with HMGCR and Insig-1. RNF145 binds Insig-1 in a sterol-dependent and HMGCR-independent manner, and in the absence of Insigs, RNF145 cannot bind HMGCR. This demonstrates that Insig proteins are indispensable scaffolds for the sterol-induced engagement of HMGCR by RNF145.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 establish the molecular mechanism of RNF145 recruitment to HMGCR through co-immunoprecipitation experiments. The sterol-dependence of RNF145-HMGCR interaction (C87-C88), sterol-dependent RNF145-Insig-1 interaction (C89-C90), HMGCR-independence of RNF145-Insig-1 binding (C91), and requirement for Insigs in RNF145-HMGCR interaction (C92) collectively support the scaffold model (C93-C94). The experiments in UBE2G2 knockout cells to increase RNF145 levels is a clever approach to overcome detection limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "In the absence of both RNF145 and gp78, Hrd1 partially regulates HMGCR degradation. Loss of Hrd1 in RNF145/gp78 double-knockout cells increased steady-state HMGCR-Clover and caused complete block in sterol-accelerated degradation. Hrd1 depletion had no effect alone or with either RNF145 or gp78 individually, and TRC8 showed no role in HMGCR degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C105 reveal a third ligase (Hrd1) involved in HMGCR degradation through systematic epistasis analysis. The exacerbation of the degradation defect by UBE2G2 ablation in double knockouts (C95) predicted additional ligase involvement (C96). The specific requirement for loss of both RNF145 and gp78 to reveal Hrd1's role (C98-C99, C101, C105) demonstrates a hierarchical redundancy. The exclusion of TRC8 (C97, C102-C103) with functional validation addresses prior literature. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Combined loss of RNF145 and gp78 showed dramatic reduction in HMGCR ubiquitination, but complete loss required depletion of all three ligases (RNF145, gp78, and Hrd1). UBE2G2 depletion also caused marked decrease in HMGCR ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 provide direct biochemical evidence for the roles of the three ligases in HMGCR ubiquitination. The graded effect (dramatic reduction with two ligases, complete loss with three) supports the genetic data and demonstrates that all three ligases contribute to HMGCR ubiquitination. The UBE2G2 result (C108) confirms all ligases use this E2 enzyme.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Three E3 ubiquitin ligases\u2014RNF145, gp78, and Hrd1\u2014are together responsible for HMGCR degradation. RNF145 and gp78 are partially redundant primary ligases, while Hrd1 can compensate only in the absence of both RNF145 and gp78, and in no other combination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 summarize the main findings of the study. The conclusion that three ligases are responsible (C109) is supported by the comprehensive genetic and biochemical data. The characterization of partial redundancy between RNF145 and gp78 (C110) and the specific compensatory role of Hrd1 (C111-C112) accurately reflect the experimental results. This represents a major advance in understanding HMGCR regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "The genome-wide screen successfully identified many components known to be required for sterol-accelerated HMGCR degradation (Insig-1/2, UBE2G2, AUP1, FAF2), validating the genetic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 provides important validation of the screening methodology by demonstrating recovery of known components. This increases confidence in the novel findings (RNF145) and addresses potential concerns about false negatives. The statement is supported by the screen data and cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The introduction establishes the biological context and controversy regarding HMGCR regulation. HMGCR is the rate-limiting enzyme in cholesterol biosynthesis and the target of statins. It is regulated transcriptionally by SREBPs and post-transcriptionally by sterol-accelerated degradation. The identity of the E3 ligase(s) responsible for mammalian HMGCR degradation has been controversial, with conflicting reports about roles for gp78, TRC8, and Hrd1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C36 provide established background knowledge with appropriate citations. These claims set up the scientific problem addressed by the study\u2014the controversial identity of E3 ligases for HMGCR degradation. The conflicting prior reports (C30-C36) justify the need for the current study. All claims are appropriately cited or represent well-established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "RNF145 harbors a YLYF motif at its N-terminus similar to the YIYF motif in the sterol-sensing domains of SCAP and HMGCR that is required for Insig binding. RNF145 shares 27% amino acid identity with TRC8. AUP1 recruits UBE2G2 to lipid droplets and membrane E3 ligases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C57-C59 provide structural and functional context for RNF145 and related proteins. The YLYF motif observation (C57-C58) is important for predicting RNF145's interaction with Insigs, which is later experimentally validated. The sequence similarity to TRC8 (C56) and AUP1's function (C54) are appropriately cited. These claims provide important context but are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The abstract summarizes the main findings: RNF145 and gp78 independently coordinate HMGCR ubiquitination and degradation; RNF145 is a sterol-responsive ER-resident E3 ligase that is unstable but accumulates following sterol depletion; sterol addition triggers RNF145 recruitment to HMGCR via Insigs; and Hrd1 partially regulates HMGCR in the absence of both RNF145 and gp78.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 are summary statements from the abstract that are supported by the detailed experimental results described in other claim groups. These represent accurate summaries of the major findings that are substantiated by the data presented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C123",
+      "C125"
+    ],
+    "result": "The Discussion speculates on the biological significance of ligase redundancy in HMGCR regulation. Possible explanations include: the central role of HMGCR requiring fail-safe mechanisms; different Insig-associated complexes co-existing in the ER; gp78 providing basal control with RNF145 fine-tuning; and conformational changes in HMGCR under sterol-rich conditions being recognized by Hrd1's quality control pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C119, C123, C125 are speculative interpretations about why multiple ligases regulate HMGCR. While these are reasonable hypotheses based on the data and cited literature, they are explicitly presented as speculation and are not directly tested. The speculation is appropriate for a Discussion section but does not constitute supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C124"
+    ],
+    "result": "The Discussion cites prior literature showing that liver-specific ablation of gp78 in mice increased hepatocyte HMGCR levels, while gp78 knockout MEFs showed no impairment in HMGCR degradation. Hrd1's recognized function is ubiquitination of misfolded ER proteins. In yeast, ligand-induced local misfolding ('mallostery') in Hmg2p is a suggested mode of Hrd1p recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122, C124 cite prior literature to provide context for the current findings. These are appropriately cited and help interpret the results, particularly regarding tissue-specific effects (C120-C121) and potential mechanisms for Hrd1 involvement (C122, C124). These represent accurate reporting of prior work.",
+    "result_type": "MINOR"
+  }
+]

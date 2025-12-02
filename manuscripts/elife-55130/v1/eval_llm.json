@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C36",
+      "C44",
+      "C47",
+      "C48"
+    ],
+    "result": "VIP neurons in mouse V1 respond selectively to low contrast (<20%) front-to-back motion (0 degrees, nasal-to-temporal) and are suppressed by high contrast gratings of all directions. This direction bias is consistent across mice and does not result from direction-selective running behavior. VIP neurons are identified as a major source of suppressed-by-contrast (SbC) neurons in V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C19, C27-C32, C36, C44, C47-C48 collectively demonstrate VIP neuron selectivity for low contrast front-to-back motion with suppression at high contrast. The findings are supported by experimental data in Figures 1-3, statistical tests (bootstrapped \u03c7\u00b2 test, p<0.01), and consistency across multiple mice (n=6 sessions, 3 mice). Controls for running behavior (C30) strengthen the interpretation. The identification of VIP neurons as SbC neurons is consistent with prior work (de Vries et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C33",
+      "C34",
+      "C37",
+      "C43"
+    ],
+    "result": "SST neurons exhibit complementary contrast tuning to VIP neurons, responding exclusively at high contrast (>40%) with weak direction and orientation selectivity. Nearly all SST neurons are high contrast-preferring, and common subtypes such as Martinotti-type SST neurons are inferred to share this property.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C18, C33-C34, C37, C43 demonstrate complementary contrast tuning between VIP and SST neurons. The findings are supported by experimental data in Figure 2 and model selection procedures (AIC-based contrast response function fitting). The inference that Martinotti-type SST neurons are high contrast-preferring (C43) is reasonable given that the Sst Cre line labels all transcriptomic SST subtypes and most layer 4 SST neurons are Martinotti cells (C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C20",
+      "C21",
+      "C22",
+      "C38",
+      "C39",
+      "C40",
+      "C56"
+    ],
+    "result": "Layer 2/3 pyramidal neurons contain a substantially larger population of low contrast-preferring neurons than deeper layers and show bias for front-to-back motion specifically at low contrast (5-10%). Deeper layer pyramidal neurons do not show this direction bias. Contrast preference systematically varies across cortical layers, progressing from mixed low/high contrast preference in layer 2/3 to almost exclusively high contrast preference in layers 5 and 6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C20-C22, C38-C40, C56 demonstrate layer-specific contrast tuning and direction bias in pyramidal neurons. The findings are supported by experimental data in Figures 2-3, statistical tests (bootstrapped \u03c7\u00b2 test, vector sum analysis), and model selection procedures. The layer-specific differences are well-documented across multiple Cre lines (Cux2, Rorb, Rbp4, Ntsr1) targeting different cortical layers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Locomotion enhances responses to visual stimuli in VIP neurons, SST neurons, and layer 2/3 and 4 pyramidal neurons. During locomotion, VIP neurons show strong population responses to low contrast front-to-back motion, while stationary responses are weak. There is a substantial enhancement of responses to low contrast visual stimuli during locomotion that is specific to layer 2/3 pyramidal neurons and VIP neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 demonstrate locomotion-dependent modulation of visual responses. The findings are supported by experimental data in Figure 3 and Figure 3\u2014figure supplement 1, with running defined as mean speed \u22651 cm/s. The specificity of low contrast enhancement to layer 2/3 pyramidal neurons and VIP neurons is well-documented. However, the manuscript does not provide statistical tests comparing running vs. stationary conditions, which would strengthen the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C23",
+      "C25",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Network modeling using extended stabilized supralinear network (SSN) models demonstrates that VIP-SST mutual antagonism regulates cortical gain to achieve sensitivity to weak stimuli without compromising network stability. VIP-mediated disinhibition can drive large increases in pyramidal neuron gain at low input despite low SST activity. The network transitions from non-ISN to ISN as external input increases, and gain enhancement occurs only at low input strengths where the network is in a non-ISN regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C23, C25, C66, C68-C80 demonstrate that the SSN model qualitatively reproduces experimental observations and provides mechanistic insights. The model is supported by data in Figure 5, linear stability analysis, and parameter robustness tests (Figure 5j-l). The model makes specific predictions about network dynamics and stability regimes. However, the model is qualitative rather than quantitative, and some parameters (e.g., connection strengths) are not directly constrained by experimental data. The hypothesis (C66) is tested through modeling but not through direct experimental manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C81",
+      "C82"
+    ],
+    "result": "The survey of contrast tuning reveals two distinct regimes of cortical dynamics in superficial layers: a low contrast regime with low SST activity, direction-tuned VIP activity gated by locomotion, and higher layer 2/3 pyramidal activity; and a high contrast regime with high SST activity, suppressed VIP activity, and lower layer 2/3 pyramidal activity. Concerted changes near 20% contrast indicate a phase transition between these regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C81-C82 synthesize the experimental findings into a coherent framework of two distinct cortical regimes. The interpretation is supported by data in Figures 2-3 showing concerted changes in response magnitude near 20% contrast across all Cre lines and layers. The characterization as a 'phase transition' is a reasonable interpretation of the data, though it is not rigorously tested with phase transition analysis methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Generalized Linear Model (GLM) analysis with L1-regularization identifies the key factors contributing to population responses: VIP neurons have highest weights for low contrasts, running, and specific directions; SST neurons have highest weights for high contrasts and running-by-direction interactions; layer 2/3 pyramidal neurons have significant weights for running, low contrasts, and all directions. The analysis confirms the influence of running, stimulus direction, and contrast but suggests limited interactions among these variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 demonstrate that GLM analysis identifies key response determinants. The findings are supported by data in Figure 4, with L1-regularization used to identify significant terms. The model is a Poisson GLM with exponential link function, appropriate for count-like data. However, the manuscript does not report model performance metrics (e.g., R\u00b2, cross-validation error) or compare to alternative models, which would strengthen the evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C35"
+    ],
+    "result": "The majority of neurons across all Cre lines were responsive to the stimulus set, measured by statistically significant bias in responses depending on grating contrast and direction. Pyramidal neurons exhibited substantial direction and orientation selectivity and tiled all eight possible direction preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C35 describe basic response properties across neuron types. The findings are supported by data in Figure 2 and statistical tests (bootstrapped \u03c7\u00b2 test, p<0.01). The responsiveness criterion is clearly defined and appropriate. The tiling of direction preferences by pyramidal neurons is well-documented in Figure 2b, g, h.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C45",
+      "C46"
+    ],
+    "result": "The Vip and Sst Cre lines label all transcriptomic subtypes of VIP and SST neurons, respectively. The Cux2 and Rorb Cre lines label all transcriptomic excitatory neuron types in layers 2/3 and 4, respectively. The finding of both high and low contrast-preferring neurons in layer 4, where there is only a single transcriptomic excitatory neuron type, demonstrates that neurons of the same transcriptomic subtype can differ in contrast preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C45-C46 relate Cre line labeling to transcriptomic neuron types. The findings are supported by citations to Tasic et al., 2018, which characterized Cre line specificity. The inference that neurons of the same transcriptomic subtype can differ in contrast preference (C46) is well-supported by the data in Figure 2e showing mixed contrast preferences in layer 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "VIP neurons are suppressed below baseline (rather than to baseline) in response to high contrast gratings, which might be due to their high spontaneous activity. This high spontaneous activity enables the cortical circuit to raise or lower the amount of disinhibition of pyramidal neurons depending on stimulus contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 describe VIP neuron suppression and its functional implications. The findings are supported by data in Figure 3 and citations to de Vries et al., 2020. The interpretation that high spontaneous activity enables bidirectional modulation of disinhibition (C50) is reasonable but remains an inference rather than a directly tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "VIP and SST neurons in V1 are tuned for weak and strong inputs, respectively, across multiple stimulus dimensions (contrast, size). VIP neuron activity supports a high gain regime that increases sensitivity to weak inputs, whereas SST neuron activity promotes a low gain regime that decreases sensitivity to strong inputs and maintains network stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C89-C90 synthesize findings across stimulus dimensions and propose a general principle. The interpretation is supported by the contrast tuning data (Figures 2-3), modeling results (Figure 5), and citations to prior work on size tuning (Adesnik et al., 2012; Dipoppa et al., 2018) and auditory cortex (Mesik et al., 2015). The generalization across modalities strengthens the interpretation, though direct experimental tests in the current study are limited to contrast tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C98"
+    ],
+    "result": "Prior work establishes that VIP neurons are highly correlated with locomotion, regulate feedback inhibition through SST suppression, are targets of top-down inputs, and that optogenetic activation of VIP neurons lowers contrast detection thresholds. SST neurons inhibit VIP neurons reciprocally. Visual cortex has higher gain at low contrast than high contrast, and disinhibition can drive large increases in pyramidal neuron activity. SSN models account for various contrast-dependent response properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C17, C63-C65, C67, C83-C86, C88, C98 summarize prior work that motivates and contextualizes the current study. These claims are supported by appropriate citations to published work. The citations appear accurate and relevant. This background knowledge is essential for interpreting the current findings but does not constitute a novel result of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C91",
+      "C92"
+    ],
+    "result": "The selective enhancement of front-to-back motion could increase the detection of obstacles approaching head-on during locomotion. Heightened sensitivity to detect low contrast objects approaching head-on might be more behaviorally relevant than other directions. The ability of VIP neurons to promote high gain might indicate a general role at the nexus of top-down and bottom-up processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24, C91-C92 are speculative interpretations of the functional significance of the findings. While these interpretations are plausible and well-motivated by the data, they are not directly tested in the current study. Behavioral experiments testing obstacle detection or attention would be needed to support these claims. The manuscript appropriately presents these as speculative ('could', 'might').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study used standardized methods from the Allen Brain Observatory for data collection and processing, including two-photon calcium imaging with Nikon A1R MP+ microscopes at 30 Hz, 400 \u03bcm field of view, 512\u00d7512 pixel resolution. Events were detected using a changepoint detection algorithm with L0-regularization. The stimulus consisted of full-field drifting sinusoidal gratings at 0.04 cpd, 1 Hz, eight directions, six contrasts (5-80%), presented for 2 s with 1 s inter-stimulus intervals, 15-24 repetitions per condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97, C99-C102 describe the experimental methods. These are clearly stated in the methods section and supported by citations to prior work (de Vries et al., 2020; Jewell and Witten, 2018; Jewell et al., 2019). The methods are appropriate for the study and consistent with established practices in the field. The use of standardized Allen Brain Observatory methods enhances reproducibility.",
+    "result_type": "MINOR"
+  }
+]

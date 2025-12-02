@@ -1,0 +1,2356 @@
+{
+  "submission": {
+    "id": "510befed-1d87-4e00-9f73-4b987cb5c737",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:09:00.235353Z",
+    "updated_at": "2025-12-02T16:09:00.235353Z"
+  },
+  "content": [
+    {
+      "id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "submission_id": "510befed-1d87-4e00-9f73-4b987cb5c737",
+      "content_type": "manuscript",
+      "content_text": "# Approaching boiling point stability of an alcohol dehydrogenase through computationally-guided enzyme engineering\n\n## Authors\n\n- Friso S Aalbers<sup>1</sup> ([ORCID: 0000-0002-2142-9661](https://orcid.org/0000-0002-2142-9661))\n- Maximilian JLJ F\u00fcrst<sup>1</sup> ([ORCID: 0000-0001-7720-9214](https://orcid.org/0000-0001-7720-9214))\n- Stefano Rovida<sup>2</sup>\n- Milos Trajkovic<sup>1</sup>\n- J Rub\u00e9n G\u00f3mez Castellanos<sup>2</sup>\n- Sebastian Bartsch<sup>4</sup>\n- Andreas Vogel<sup>4</sup>\n- Andrea Mattevi<sup>2</sup> ([ORCID: 0000-0002-9523-7128](https://orcid.org/0000-0002-9523-7128))\n- Marco W Fraaije<sup>1</sup> ([ORCID: 0000-0001-6346-5014](https://orcid.org/0000-0001-6346-5014)) \u2020\n\n### Affiliations\n\n1. Molecular Enzymology Group, University of Groningen Groningen Netherlands\n2. Department of Biology and Biotechnology \u201cL. Spallanzani\u201d, University of Pavia Pavia Italy\n3. MRC Laboratory of Molecular Biology, Francis Crick Avenue, Cambridge Biomedical Campus Cambridge United Kingdom\n4. c-LEcta GmbH Leipzig Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nEnzyme instability is an important limitation for the investigation and application of enzymes. Therefore, methods to rapidly and effectively improve enzyme stability are highly appealing. In this study we applied a computational method (FRESCO) to guide the engineering of an alcohol dehydrogenase. Of the 177 selected mutations, 25 mutations brought about a significant increase in apparent melting temperature (\u0394Tm \u2265 +3 \u00b0C). By combining mutations, a 10-fold mutant was generated with a Tm of 94 \u00b0C (+51 \u00b0C relative to wild type), almost reaching water\u2019s boiling point, and the highest increase with FRESCO to date. The 10-fold mutant\u2019s structure was elucidated, which enabled the identification of an activity-impairing mutation. After reverting this mutation, the enzyme showed no loss in activity compared to wild type, while displaying a Tm of 88 \u00b0C (+45 \u00b0C relative to wild type). This work demonstrates the value of enzyme stabilization through computational library design.\n\n## Introduction\n\nThe oxidation of alcohols and reduction of ketones in nature is primarily governed by alcohol dehydrogenases (ADHs) (EC 1.1.1.1) (Kavanagh et al., 2008; Oppermann et al., 2003). There is a vast diversity of ADHs that can transform a large range of substrates, often with high regio- and enantioselectivity. Most ADHs employ nicotinamide cofactors for catalysis. In particular, ketone reductions catalysed by ADHs are used in industry to synthesize chiral alcohols (Nealon et al., 2015; Zheng et al., 2017). Although ADHs have been mainly applied for ketone reductions, recent studies show promising results as biocatalysts for selective oxidations (Sol\u00e9 et al., 2019).\n\nNAD(P)-dependent ADHs catalyse the transfer of a hydride from the reduced nicotinamide coenzyme to reduce ketones to alcohols, or the transfer of a hydride from alcohols to reduce NAD(P)+. A large subset of alcohol dehydrogenases belongs to the family of short-chain reductases/dehydrogenases (SDRs) (Kavanagh et al., 2008). Enzymes from this family encompass around 250 amino acid-long sequences, typically form tetramers, use NAD(H) or NADP(H) as cofactor, and mainly act on secondary alcohols and ketones. The characteristic catalytic triad in SDRs is a combination of Ser-Tyr-Lys (Bhatia et al., 2015). These residues are located close to the C4 of the nicotinamide ring of the cofactor, at which the hydride is located or is transferred to. The catalytic triad, along with several residues in its vicinity, form a proton-relay system that either assists in the deprotonation of an alcohol to initiate alcohol oxidation, or facilitates the protonation of a ketone substrate with concurrent hydride transfer, resulting in ketone reduction.\n\nMost enzymes in nature have evolved to catalyse reactions within cells, in crowded, mild and aqueous conditions, and only for limited periods of time (DePristo et al., 2005; Goldenzweig and Fleishman, 2018). Moreover, enzymes that can be easily degraded after some time enable greater metabolic adaptability for the organism, for instance when a local resource depletes, or a signaling event occurs (DePristo et al., 2005; Parsell and Sauer, 1989). Therefore, many enzymes are only moderately stable. When considering enzymes for applications, this can lead to various difficulties in heterologous expression, degradation upon isolation, and poor biocatalyst performance. Enzymes that have the potential to be applied as biocatalyst are often insufficiently stable (Bommarius and Paye, 2013; Woodley, 2019). One such enzyme is ADHA, an alcohol dehydrogenase from Candida magnoliae DSMZ 70638. This enzyme was isolated for its ability to reduce several ketones with excellent enantioselectivities (Table 1). These catalytic features make ADHA attractive for industrial applications. Although heterologous expression of ADHA is good, the melting temperature of ADHA is moderate, with an apparent Tm of 43 \u00b0C. If stability of ADHA could be improved, it would become a very attractive biocatalyst for selective oxidations or reductions.\n\n**Table 1.**\n Initial measurements of ADHA WT activity and selectivity with several ketones.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Substrate (concentration)</th>\n      <th>kobs* (U/mg)</th>\n      <th>Enantiomeric excess product (ee)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ethyl acetoacetate (100 mM)</td>\n      <td>4.1</td>\n      <td>n.d.</td>\n    </tr>\n    <tr>\n      <td>Cyclohexanone (50 mM)</td>\n      <td>3.2</td>\n      <td>n.a.</td>\n    </tr>\n    <tr>\n      <td>Ethyl 4-chloro-3-oxobutanoate (COBA) (50 mM)</td>\n      <td>0.3</td>\n      <td>&gt;\u00a099% (R)</td>\n    </tr>\n    <tr>\n      <td>4-Chloroacetophenone (4-CAP) (50 mM)</td>\n      <td>2.4</td>\n      <td>97.2% (S)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*kobs values are averages based on 2\u20133 replicates and for each average the error was smaller than 5%._\n\nSeveral studies over the past two decades have developed strategies to stabilize proteins and enzymes. A subset of these strategies specifically targeted the charge of the protein or enzyme surface or interface (Bj\u00f8rk et al., 2004; Gribenko et al., 2009). More recently, the field has mostly aimed at the development of computational methods to predict mutations that improve the stability of proteins (Malakauskas and Mayo, 1998; Murphy et al., 2012; Shah et al., 2007) and/or enzymes (Bednar et al., 2015; Borgo and Havranek, 2012; Korkegian et al., 2005; Moore et al., 2017). Considering the large improvements in stability that were found using these methods with minimal screening work in the lab, such computational approaches are highly appealing.\n\nOur goal was to improve the stability of ADHA through enzyme engineering, guided by a computational method. The requirement for this endeavour was to obtain a crystal structure of the enzyme. The structure is needed as input for our in-house developed method: \u2018framework for rapid enzyme stabilization by computational libraries\u2019 (FRESCO) (Wijma et al., 2018). This computational protocol incorporates two algorithms to calculate folding free energy (\u0394GFold, expressed in kJ mol\u22121), and compares these calculations\u00a0(\u0394\u0394GFold) between the wild-type structure and variants with a single mutation. The calculations are performed for all possible single mutations. The variants with the best scores are simulated with molecular dynamics, to inspect the flexibility and conformational stability. In the last round of enzyme engineering, mutations that improve the stability are combined to obtain a final robust variant. The main motivation to apply FRESCO is that it is relatively fast, because it greatly reduces the required screening effort compared to other enzyme engineering approaches.\n\nHere, we present the results of the application of FRESCO on ADHA. This has led to a variant which has been mutated at 10 positions and displays a drastically increased thermostability (Tm\u00a0=\u00a094.5\u00a0\u00b0C, \u0394 Tm = +51\u00a0\u00b0C). However, it was found that this engineered ADHA displayed very little activity. Elucidation of its crystal structure disclosed the structural basis for the inactivation: one particular mutation, in combination with other introduced mutations, resulted in a reorientation of a loop region through which binding of the nicotinamide cofactor is hampered. By reverting this mutation, a highly stable (Tm\u00a0=\u00a088 \u00b0C) and active ADHA variant was obtained, demonstrating the power of using computationally predicted mutations in combination with structural analysis to engineer robust enzymes.\n\n## Results\n\n### Characterization of ADHA\n\nCharacterization of ADHA immediately indicated a high reductive activity towards a broad panel of ketones (Table 1) with high enantioselectivity (>\u00a097% ee). This result\u00a0illustrated that the enzyme could be applied for the synthesis of various chiral alcohols. Therefore, we concluded that ADHA has great potential for the\u00a0application as a\u00a0biocatalyst. However, we soon realized that most of the enzyme activity is lost in reactions of 8 h or longer, even at moderate temperatures such as 25 \u00b0C\u00a0or 30\u00a0\u00b0C (data not shown). Therefore, we decided to employ FRESCO to generate a more robust variant.\n\n### Crystal structure of wild-type ADHA\n\nA prerequisite for FRESCO is the availability of a crystal structure of the target protein. Therefore, already in the early stages of the project, the untagged ADHA was tested for crystallization trials. The purified enzyme crystallized in many conditions and the enzyme three-dimensional structure was solved in the apo and NADP+-bound state at 2.0 \u00c5 and 1.6 \u00c5 resolution, respectively (Figure 1, Supplementary file 1A). ADHA is a homotetramer as typically observed in most SDRs (Kavanagh et al., 2008). A search for homologous structures in the Protein Data Bank showed that the closest structural homologue is another alcohol dehydrogenase from Candida magnoliae (PDB entry 5MLN [Tavanti et al., 2017]; root-mean-square deviation of 1.0 \u00c5 for 238 C\u03b1 atoms with 64% sequence identity; Figure 1). The structure of ADHA bound to NADP+ unveils, apart from a disordered nicotinamide moiety, a well-defined catalytic pocket with a size suited for small cyclic compounds such as cyclohexanol, a good substrate of the enzyme.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54639/elife-54639-fig1-v2.jpg)\n\n**Figure 1.:** The figure highlights the final weighted 2Fo-Fc map for NADP+ bound to a subunit of the wild-type ADHA (subunit A, contour level 1.2 \u03c3). The nicotinamide moiety of the cofactor is disordered and was not included in the final model.\n\n### FRESCO computational predictions\n\nThe obtained crystal structure of the wild-type tetrameric ADHA allowed us to predict stabilizing mutations through a structure-based computational approach using FRESCO (Wijma et al., 2018). A detailed description of the procedure is available as a step-by-step protocol suitable for biochemists with minimal computational experience and all the scripts are deposited online (Wijma et al., 2018). Licenses for the \u0394GFold-determining software components (Rosetta and FoldX) are free for academic purposes, whereas our preferred software for modelling and MD simulations, YASARA, needs to be purchased. Depending on the size of the protein, a computer cluster may be necessary for the calculation-intensive parts of the predictions. After FRESCO\u2019s in silico screening, a final selection of mutants is expressed, purified and tested for stability in vitro. The experimental part has also been described in great detail (F\u00fcrst et al., 2018) and requires readily purchasable consumables and equipment commonly available in most labs.\n\nBecause the energy prediction algorithms Rosetta and FoldX do not accept non-proteinogenic residues and because the ligand-free enzyme represents the physiologically more relevant form, we used the crystal structure of ADHA without NADP+ for the stabilizing mutation predictions. While FRESCO usually excludes residues of ligand-binding sites, we decided to include such residues for predicting stabilizing mutations. Because the enzyme is relatively small, we could still easily discard activity-impairing mutations in the experimental phase. We did not include the residues that form the canonical catalytic triad (T148, Y161, and K165), which are highly conserved residues and essential for enzyme activity. Curiously, unlike ADHA, the majority of SDRs have a serine at the position of T148. In fact, the catalytic triad of SDRs is usually designated as SYK (serine, tyrosine, lysine). Clearly, a catalytic threonine can also support redox catalysis in an SDR-type alcohol dehydrogenase, and such an\u00a0alternative catalytic triad has also been observed before (King et al., 2007). The calculations for the 4503 possible mutations were ranked and mutations with a \u0394\u0394GFold \u2264 \u22125 kJ mol\u22121 were briefly simulated with molecular dynamics (MD) simulations to probe the flexibility of the variant. The resulting 478 computer-generated mutant structures were visually inspected to remove chemically undesirable mutations (clashes, exposed hydrophobic residues, loss of hydrogen bonds), and highly flexible mutants (based on the short MDs) (Wijma et al., 2018). In addition, several positions (>\u00a020) had more than four suggested beneficial mutations. In those cases, we chose two or three distinct suggested mutations. Finally, we selected 177 single mutations for experimental screening.\n\n### In vitro analysis of mutant library\n\nThe mutant library was prepared using the QuikChange method following the published protocol (F\u00fcrst et al., 2018). After growth of the cells harbouring the genes with each mutation and inducing protein expression, the cells were lysed and the His-tagged ADHA variants were purified by affinity chromatography. The purified samples were desalted and the apparent Tm was measured in an RT-PCR machine in duplicate. 26 mutants repeatedly did not give a clear signal, which may have been caused by insufficient expression. Of the 151 mutants for which a melting temperature could be measured, 52 had a similar Tm when compared to wild-type ADHA (\u22121\u00a0\u2264\u00a0\u0394Tm \u2264\u00a0+1 \u00b0C), 43 were destabilizing (\u0394Tm < \u22121 \u00b0C), and 56 were stabilizing (\u0394Tm > +1 \u00b0C) (Figure 2). Of the 56 stabilizing mutants, 25 had a \u0394Tm \u2265 +3 \u00b0C. However, when measuring activity, 11 of these 25 mutants displayed very poor or no activity (Supplementary file 1B). For the next phase of the engineering project, we focused on 10 mutations that retained most of the activity and resulted in a significantly higher Tm (labelled red in Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54639/elife-54639-fig2-v2.jpg)\n\n**Figure 2.:** The average of two measurements is given and the standard error. The Tm of wild-type ADHA is 43 \u00b0C (set as 0). The 10 stabilizing mutations with a red bar were combined. Melting curves of wild\u00a0type and the final mutant (M9*) are depicted in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54639/elife-54639-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Apparent melting temperatures of wild\u00a0type (in grey) and M9* variant. RFU\u00a0=\u00a0relative fluorescence units. M9* displays a first melting peak at 79 \u00b0C, second peak at 88 \u00b0C. One curve is shown from three technical replicates.\n\n### Combining mutations\n\nThe most stabilizing mutations were ranked according to their thermostability and combined by consecutively introducing them one by one (Table 2). The combined mutants (named MX, with X\u00a0=\u00a0the number of mutations) were made using the plasmid of the previous mutant (e.g. M4 was made from the plasmid of M3). Only in the case of the V193L and T194V mutations, the mutations were introduced in one step as these residues were next to each other (going from M7 to M8). Interestingly, the combined mutants showed superior expression compared to wild-type ADHA, and could be expressed at higher temperatures for shorter periods of time, such as 37 \u00b0C overnight (Supplementary file 2A). Beyond M4, the enzyme gave two melting points in the ThermoFluor measurements (indicated by the values in parentheses, Table 2), of which the first curve appears 10\u201311\u00a0\u00b0C before the second. The first curve is typically significantly lower in intensity compared with the second (major) curve (Figure 2\u2014figure supplement 1) and may reflect a mild unfolding event such as the dissociation of the tetrameric enzyme into (active) dimers.\n\n**Table 2.**\n ADHA mutants with highest \u0394Tm and retained activity.In parentheses the temperature of the first unfolding event (minor peak) is given. Michaelis-Menten kinetics for wild\u00a0type and M9 are shown in Figure 3.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Single mutants</th>\n      <th>kobs* (U/mg)</th>\n      <th>Tm\u00a0app (\u00b0C)</th>\n      <th>\u0394Tm (\u00b0C)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Wild\u00a0type</td>\n      <td>0.6</td>\n      <td>43.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>L150F</td>\n      <td>0.5</td>\n      <td>57.25\u00a0\u00b1\u00a00.25</td>\n      <td>14.0\u00a0\u00b1\u00a00.25</td>\n    </tr>\n    <tr>\n      <td>G149A</td>\n      <td>0.4</td>\n      <td>52.5\u00a0\u00b1\u00a00</td>\n      <td>9.5\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>M157K</td>\n      <td>0.4</td>\n      <td>51.0\u00a0\u00b1\u00a00</td>\n      <td>8.0\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>S197E</td>\n      <td>0.5</td>\n      <td>49\u00a0\u00b1\u00a01</td>\n      <td>7.5\u00a0\u00b1\u00a01</td>\n    </tr>\n    <tr>\n      <td>V238L</td>\n      <td>0.4</td>\n      <td>50.0\u00a0\u00b1\u00a00</td>\n      <td>7.0\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>G159A</td>\n      <td>1.2</td>\n      <td>48.5\u00a0\u00b1\u00a00</td>\n      <td>5.5\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>N212R</td>\n      <td>1.1</td>\n      <td>48.0\u00a0\u00b1\u00a00</td>\n      <td>5.0\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>T194V</td>\n      <td>n.d.</td>\n      <td>47.0\u00a0\u00b1\u00a00</td>\n      <td>4.0\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>V193L</td>\n      <td>n.d.</td>\n      <td>46.5\u00a0\u00b1\u00a00</td>\n      <td>3.5\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>V217P</td>\n      <td>n.d.</td>\n      <td>46.0\u00a0\u00b1\u00a00</td>\n      <td>3.0\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>Combination mutants</td>\n      <td>kobs* (U/mg)</td>\n      <td>Tm\u00a0app (\u00b0C)</td>\n      <td>\u0394Tm (\u00b0C)</td>\n    </tr>\n    <tr>\n      <td>M2 (L150F + M157K)</td>\n      <td>0.4</td>\n      <td>64.0\u00a0\u00b1\u00a00</td>\n      <td>21.0\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>M3 (M2 + S197E)</td>\n      <td>0.1</td>\n      <td>69.0\u00a0\u00b1\u00a00</td>\n      <td>26.0\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>M4 (M3 + V238L)</td>\n      <td>0.2</td>\n      <td>72 (62)\u00a0\u00b1\u00a00.25</td>\n      <td>29.0\u00a0\u00b1\u00a00.25</td>\n    </tr>\n    <tr>\n      <td>M5 (M4 + N212R)</td>\n      <td>0.2</td>\n      <td>75.5 (64)\u00a0\u00b1\u00a00</td>\n      <td>32.5\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>M6 (M5 + G149A)</td>\n      <td>0.1</td>\n      <td>81.0 (69)\u00a0\u00b1\u00a00</td>\n      <td>38.0\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>M7 (M6 + G159A)</td>\n      <td>0.1</td>\n      <td>85.0 (74)\u00a0\u00b1\u00a00</td>\n      <td>42.0\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>M8 (M7 +\u00a0V193L +\u00a0T194V)</td>\n      <td>0.05</td>\n      <td>90.0 (81)\u00a0\u00b1\u00a00.25</td>\n      <td>47.0\u00a0\u00b1\u00a00.25</td>\n    </tr>\n    <tr>\n      <td>M9 (M8 + V217P)</td>\n      <td>0.03</td>\n      <td>94.5 (84)\u00a0\u00b1\u00a00</td>\n      <td>51.5\u00a0\u00b1\u00a00</td>\n    </tr>\n    <tr>\n      <td>M9* (M9 - S197E)</td>\n      <td>0.8</td>\n      <td>88.0 (78.5)\u00a0\u00b1\u00a00</td>\n      <td>45.0\u00a0\u00b1\u00a00</td>\n    </tr>\n  </tbody>\n</table>\n\n_*kobs values are averages based on 2\u20133 replicates and for each average the error was smaller than 5% (between\u00a0\u00b1\u00a00.0015\u20130.04 U/mg). Cyclohexanol was used as substrate._\n\nGratifyingly, we observed that the mutations were additive, as they incrementally increased the enzyme thermostability. The additive effect is not perfect, as the theoretical maximal additive effect would be 56.5\u00a0\u00b0C, while M9 displays an improvement of 51.5\u00a0\u00b0C. This may indicate that some of the mutations are part of the same structural \u201csoft spot\u201d\u00a0that triggers early unfolding events in the wild type. Still, an increase of\u00a0>\u00a050\u00a0\u00b0C by introducing 10 mutations was highly\u00a0gratifying. Adding more hits (S25A, G41N, G75L) from the library beyond the 10th mutation did not increase the apparent melting temperature any further. This prompted us to investigate the M9 mutant in more detail. We found that the M9 enzyme retained catalytic activities, though with a 100-fold higher KM for NADP+ (1.0 mM, compared to 9.5 \u00b5M) and a 4-fold decreased kcat (0.25 s\u22121, compared to 1.1 s\u22121) (Figure 3). We suspected that this would be the result of a shift in optimal temperature for activity, due to the presumed higher rigidity of this highly stabilized mutant. But even at higher temperatures (\u2265\u00a040 \u00b0C), the\u00a0activity of the M9 mutant did not drastically change. Clearly, the multiple mutations did result in a highly stable but catalytically impaired enzyme and it was essential to elucidate the specific structural cause of this.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54639/elife-54639-fig3-v2.jpg)\n\n**Figure 3.:** (A) ADHA wild\u00a0type (B) M9 mutant. Note that the X-axis scaling is different. The inset of B presents the same data with a different Y-axis scaling. Plots are fitted with Michaelis-Menten in GraphPad prism 6.07.\n\n### Crystal structure of the M9 mutant\n\nTo investigate the structural alterations caused by the stabilizing mutations and their effect on enzyme catalysis, we decided to crystallize mutant M9. As with the wild-type ADHA, several conditions gave crystals of the M9 enzyme, enabling determination of its structure at 2.6 \u00c5 resolution. Although the crystallization conditions contained 1.0 mM NADP+, there was no electron density for any ligand in the M9 structure. This was not surprising, considering the high KM (1.0 mM) for NADPH of this mutant. When inspecting the M9 structure, it is worth noting that all the introduced mutations are in the same area of the enzyme three-dimensional structure. Specifically, the mutations are located centrally on each of the two flat faces of the homo-tetramer, where two opposing subunits come together (Figure 4A). Most mutations are located close\u00a0to the tetramer centre (Figure 4B) and many are surface-exposed, or surface-near. Superposition of the wild-type ADHA and M9 tetramers revealed a very close structural similarity with a root-mean-square deviation of 0.58 \u00c5 for 956 C\u03b1 atoms. The only considerable backbone shift (up to 3.1 \u00c5) concerns loop 196\u2013214 (Figure 4B,C). Residues 196\u2013198 in this loop are involved in binding the NADP+ pyrophosphate group as shown by the crystal structure of the wild-type ADHA bound to NADP+. The observed structural alteration in this particular loop immediately provides an explanation for the increase of KM for this cofactor in M9: the introduced E197 seems to occupy the NADP+ pyrophosphate binding site. Along with the shift of the loop, the carboxylate moiety of the S197E mutation induces an interaction with the guanidinium of R18 (Figure 4C) \u2013 a residue that crucially binds the 2\u2019 phosphate of NADP+ in the wild-type structure. While the favourable electrostatics of this new interaction is a likely explanation for the mutation\u2019s stability effect, it also explains the lower affinity for NADP+ (and the absence of the cofactor in the mutant\u2019s crystals), as the salt bridge neutralizes R18 and occupies the NADP+ binding pocket.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54639/elife-54639-fig4-v2.jpg)\n\n**Figure 4.:** (A and B) quaternary structure of M9. The tetramer is organized such that the N-termini are on the outside (on the edge of the top-down view of A and B), whereas the C-termini all point inwards; which is where most and the most stabilizing mutations were found. (A) M9 structure with all atoms represented as balls. The four monomers are shaded in various colours, highlighting the particular clustering of the observed stabilizing mutations. (B) The structure as ribbon model, superimposing the mutant (blue ribbon, red spheres indicate mutated residue) and the wild type (cyan ribbon, yellow spheres). (C) Colour scheme as in B. The loop (196-214) that is dislocated as a result of the S197E mutation, compared to the structure of wild-type ADHA. The shift is accompanied by a flip of R18 into the NADP-binding pocket, likely due to an electrostatic attraction from the mutant glutamate. As a result, the cofactor (green carbons) is only bound in the wild type, while absent from the mutant structure.\n\nClosely located to the S197E mutation are several other introduced mutations: G149A, L150F, V193L, T194V, and V217P. These mutations cause rather small alterations by exchanging a hydroxyl for a methyl group or slightly increasing the bulkiness of aliphatic side chains. These residues are part of a cluster of hydrophobic residues adjacent to the loop 196\u2013214 and involve several aliphatic (I20, P191, M198, I215, I220) and aromatic (F207, W214, Y244) side chains. G149A, L150F (the most stabilizing mutation of all), V193L, T194V, and V217P all contributed substantially to thermostability, with up to 14\u00a0\u00b0C increase in the Tm values at the single mutant level (Table 2). The structural analysis clearly shows that improved side-chain packing and hydrophobic interactions are the likely source of their stabilizing effect. Another mutation causing improved hydrophobic packing is G159A (Tm increase of 5.5\u00a0\u00b0C) that locates close to I102, F171, and L175. V238L (+7\u00a0\u00b0C) is a unique case, promoting more extended interaction of the subunits within the tetramer (Figure 5). Curiously, the mutation does so by allowing a hydrophobic interaction with itself at the dimer interface. V217P is a seemingly conservative mutation at the beginning of an \u03b1-helix and yet caused a significant effect (+3\u00a0\u00b0C; Table 2 and Figure 4C). Prolines often occur at \u2018helical capping\u2019 positions by restraining the backbone conformation and positioning a substituted backbone amino group that is unable to form H-bonding interactions (Richardson and Richardson, 1988). The V217P mutation follows this trend. Among the identified mutations, M157K is the only one that replaces a hydrophobic residue with a hydrophilic and charged side chain (Figure 4C). It has a large (+8\u00a0\u00b0C; Table 2) effect on protein stability, which very likely arises from the removal of a solvent-exposed hydrophobic group and its replacement with the charged and hydrophilic amine of a lysine residue. Lastly, N212R is possibly the most puzzling mutation. It positions an arginine side chain in a fully solvent-exposed location (Figure 4C) and its conspicuous (+5\u00a0\u00b0C) stability can be tentatively attributed to the more pronounced polarity of an arginine side chain as compared to an asparagine (Szil\u00e1gyi and Z\u00e1vodszky, 2000).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54639/elife-54639-fig5-v2.jpg)\n\n**Figure 5.:** (A and B) indicate the different monomers in the ADHA tetramer.\n\nIn summary, the detailed structural analysis of the mutation sites reveals a consistent pattern concerning the stabilizing effects: all stabilizing mutations of M9 promote hydrophobic packing of side chains or install highly polar and charged groups on fully solvent-exposed positions on the protein surface. The crystal structure of M9 also provided a clue to explain the rather low activity of M9.\n\n### Rescue of activity\n\nSince we observed and suspected that the S197E mutation recruits R18 into the cofactor binding pocket and thereby impairs NADP+ binding (Figure 4C), we reverted this mutation. The 9-fold M9* mutant (M9 without S197E) was purified and characterized. As expected, we observed a decrease of 6.5 \u00b0C in Tm for M9* compared to M9 (Table 2). Yet, it was satisfying that M9* displayed proper enzyme activity: the KM for NADP+ of M9* has the same value as wild\u00a0type (9.6 \u00b5M), and its kcat at 25 \u00b0C was only slightly lower (Table 3, Figure 6). With this final stabilized and active variant at hand, some more characterization experiments were carried out to probe its biocatalytic properties.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54639/elife-54639-fig6-v2.jpg)\n\n**Figure 6.:** ADHA wild\u00a0type (grey, triangles) and M9* mutant (M9 with S197E reverted) (black, diamonds). Plots are fitted with the\u00a0Michaelis-Menten\u00a0equation in GraphPad prism 6.07.\n\n**Table 3.**\n Characteristics of wild-type, M9, and M9* ADHA.Activity measurements were performed at 25 \u00b0C in duplicate or triplicate and the respective Michaelis-Menten plots are depicted in Figure 6. Melting curves are depicted in Figure 2\u2014figure supplement 1.\u00a0Conversions were\u00a0performed with 5 \u00b5M of ADHA and 10 mM of prochiral ketone substrate: ethyl 4-chloro-3-oxobutanoate (COBA) and 4-chloroacetophenone (4-CAP). Details and chromatograms are provided in Supplementary file 4.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Enzyme</th>\n      <th>Tm (\u00b0C)</th>\n      <th>kcat (s\u22121)</th>\n      <th>KM,NADP+ (\u00b5M)</th>\n      <th>kcat/KM,NADP+ (s\u22121 mM\u22121)</th>\n      <th>Conversion and ee (COBA)</th>\n      <th>Conversion and ee (4-CAP)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ADHA WT</td>\n      <td>43.0\u00a0\u00b1\u00a00</td>\n      <td>1.1\u00a0\u00b1\u00a00.04</td>\n      <td>9.5\u00a0\u00b1\u00a01.2</td>\n      <td>116\u00a0\u00b1\u00a035</td>\n      <td>&gt;\u00a099% &gt;\u00a099% ee (R)</td>\n      <td>&gt;\u00a099% 97.2% ee (S)</td>\n    </tr>\n    <tr>\n      <td>M9</td>\n      <td>94.5\u00a0\u00b1\u00a00</td>\n      <td>0.27\u00a0\u00b1\u00a00.02</td>\n      <td>1040\u00a0\u00b1\u00a0108</td>\n      <td>0.26\u00a0\u00b1\u00a00.2</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n    </tr>\n    <tr>\n      <td>M9*</td>\n      <td>88.0\u00a0\u00b1\u00a00</td>\n      <td>0.7\u00a0\u00b1\u00a00.01</td>\n      <td>9.6\u00a0\u00b1\u00a00.7</td>\n      <td>73\u00a0\u00b1\u00a014.5</td>\n      <td>&gt;\u00a099% &gt;\u00a099% ee (R)</td>\n      <td>&gt;\u00a099% 98% ee (S)</td>\n    </tr>\n  </tbody>\n</table>\n\nBy measuring the alcohol oxidation activity at various temperatures, a largely shifted and wider temperature optimum was found for M9* (Figure 7A). The enzyme shows highest activity at\u00a055\u201360\u00a0\u00b0C. Only at temperatures > 75 \u00b0C, its activity decreases significantly. Still, the enzyme is also active at\u00a085\u00a0\u00b0C, whereas wild-type ADHA displays hardly any activity\u00a0>\u00a040\u00a0\u00b0C. These data suggest that only the major unfolding event (at a\u00a0relatively high temperature) observed by ThermoFluor results in inactivation of M9*. The apparent melting temperature was also measured in the presence of\u00a00.5\u00a0mM\u00a0NADPH. The M9 mutant showed a +3\u00a0\u00b0C\u00a0increase, which is much smaller than the drastic +9\u00a0\u00b0C\u00a0improvement in the\u00a0Tm of the wild\u00a0type upon NADP+\u00a0binding. We suspect that the regions that are stabilized through binding NADPH in the wild-type ADHA are partially stabilized by the FRESCO mutations, hence the relatively small gain in stability with NADPH as ligand for M9*.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/54639/elife-54639-fig7-v2.jpg)\n\n**Figure 7.:** (A) Temperature-activity profile using cyclohexanol as substrate.\u00a0The dashed lines indicate the Tm\u00a0of the wild type (at 43 \u00b0C) and apparent melting temperatures of M9* (78.5 \u00b0C and 88 \u00b0C) (B) Enzyme activity monitored over time at 37 \u00b0C (buffer\u00a0composition:\u00a050 mM Tris-HCl pH 7.5). Figure 7\u2014figure supplement 1 depicts the enzyme activity over time for 18 days.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54639/elife-54639-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Long-term stability at 37\u00a0\u00b0C of the wild-type protein (in grey, triangles) compared to M9* (in black, diamonds). Plot fitted with one-phase decay in GraphPad prism 6.07.\n\nTo evaluate the stability over time, wild\u00a0type and M9* ADHA were incubated at 37 \u00b0C, and their oxidation activity was measured at several time points (Figure 7B). As wild-type ADHA has a Tm at 43 \u00b0C, it was losing activity steadily over the first couple of hours, with a half-life of around 2 hr. After 22 h at 37 \u00b0C, the remaining activity of wild-type ADHA was only 8.7%, whereas the M9* still displayed full activity. Only after 11 days at 37 \u00b0C, the M9* ADHA lost 50% of its activity (Figure 7\u2014figure supplement 1). The stability of the mutant was largely retained also in the presence of co-solvents, with isopropanol showing the largest \u0394Tm (\u221221\u00a0\u00b0C; Table 4). This tolerance to the presence of 20% cosolvent is quite useful, as it enables higher concentrations of hydrophobic substrates.\n\n**Table 4.**\n Final melting temperatures (Tm) of M9* in various cosolvents (20% v/v).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Cosolvent</th>\n      <th>Tm (\u00b0C)</th>\n      <th>\u0394Tm (\u00b0C)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>-</td>\n      <td>88.0\u00a0\u00b1\u00a00</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Methanol</td>\n      <td>76.0\u00a0\u00b1\u00a00.5</td>\n      <td>\u221212</td>\n    </tr>\n    <tr>\n      <td>Ethanol</td>\n      <td>71.5\u00a0\u00b1\u00a00.5</td>\n      <td>\u221216.5</td>\n    </tr>\n    <tr>\n      <td>Isopropanol</td>\n      <td>67.0\u00a0\u00b1\u00a00.5</td>\n      <td>\u221221</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nWith the aim of creating a robust ADHA variant, we applied FRESCO and reached a 9-fold mutant that shows a significantly improved thermostability with largely retained activity (Table 3). This study achieved the highest improvement of melting temperature of all FRESCO studies to date. Up to now, there have been six studies that applied FRESCO, and it has shown effective improvements in stability with Tm differences up to +35 \u00b0C (Table 5). In particular, enzymes with higher order quaternary structures (e.g. dimeric and tetrameric enzymes) gained significant improvements of +28 \u00b0C and +35 \u00b0C (Table 5). Dimers and tetramers may gain a lot of stability from having subunit-subunit interfaces that stabilize hydrophobic regions of the enzyme. In contrast, enzymes containing cofactors (oxidases, Baeyer-Villiger monooxygenases) showed relatively moderate improvement: the FAD-containing HMF oxidase and cyclohexanone monooxygenase were improved by only 12\u201313\u00a0\u00b0C (Table 5). This may due to the fact that the employed computational algorithms (Rosettaddg and FoldX) cannot take into account the flavin-protein interactions (Wijma et al., 2018).\n\n**Table 5.**\n Studies that have applied FRESCO for stabilization of enzymes, to date.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Enzyme</th>\n      <th>Abbreviation</th>\n      <th>Size (aa)</th>\n      <th>Quaternary structure</th>\n      <th>\u0394Tm</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Limonene epoxide hydrolase</td>\n      <td>LEH</td>\n      <td>149</td>\n      <td>Dimer</td>\n      <td>+35 \u00b0C</td>\n      <td>(Wijma et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>Haloalkane dehalogenase</td>\n      <td>LinB</td>\n      <td>250</td>\n      <td>Monomer</td>\n      <td>+22 \u00b0C</td>\n      <td>(Floor et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>Hydroxymethyl furfural oxidase</td>\n      <td>HMFO</td>\n      <td>525</td>\n      <td>Monomer</td>\n      <td>+12 \u00b0C</td>\n      <td>(Martin et al., 2018)</td>\n    </tr>\n    <tr>\n      <td>Peptide amidase</td>\n      <td>PAM</td>\n      <td>508</td>\n      <td>Monomer</td>\n      <td>+23 \u00b0C</td>\n      <td>(Wu et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>Halohydrin dehalogenase</td>\n      <td>HheC</td>\n      <td>254</td>\n      <td>Tetramer</td>\n      <td>+28 \u00b0C</td>\n      <td>(Arabnejad et al., 2017)</td>\n    </tr>\n    <tr>\n      <td>Cyclohexanone monooxygenase</td>\n      <td>CHMO</td>\n      <td>529</td>\n      <td>Monomer</td>\n      <td>+13 \u00b0C</td>\n      <td>(F\u00fcrst et al., 2019)</td>\n    </tr>\n    <tr>\n      <td>Glucose oxidase</td>\n      <td>GOX</td>\n      <td>605</td>\n      <td>Dimer</td>\n      <td>+8.5 \u00b0C</td>\n      <td>(Mu et al., 2019)</td>\n    </tr>\n    <tr>\n      <td>\u03c9-Transaminase</td>\n      <td>\u03c9-TA</td>\n      <td>455</td>\n      <td>Dimer</td>\n      <td>+23 \u00b0C</td>\n      <td>(Meng et al., 2020)</td>\n    </tr>\n    <tr>\n      <td>Short-chain dehydrogenase</td>\n      <td>ADHA</td>\n      <td>246</td>\n      <td>Tetramer</td>\n      <td>+45 \u00b0C</td>\n      <td>This work</td>\n    </tr>\n  </tbody>\n</table>\n\nThe initial FRESCO calculations and predictions for ADHA had a good hit rate: of the tested 177 mutations, 39 had a stabilizing effect of\u00a0>\u00a02 \u00b0C (22%). This is in line with previous uses of FRESCO, in which 20\u201340% of the FRESCO-predicted mutations were found to be stabilizing (F\u00fcrst et al., 2018; Wijma et al., 2018). To see if the calculated energy values correlate with the observed \u0394Tm, the data were plotted and statistically analysed (Supplementary file 3). The Rosetta calculations bore no relation to the measured melting temperatures, whereas for the FoldX values some correlation was found (Pearson r\u00a0=\u00a00.3, p\u00a0<\u00a00.02). This somewhat better predictive quality of FoldX as compared to Rosetta has been described before (Bu\u00df et al., 2018). Still, 4/9 of the selected mutations were not found by FoldX, despite being highly stabilizing (Supplementary file 3A). Clearly, the combination of both calculations, together with the MD simulations in the FRESCO workflow, results in a satisfactory rate of predicted stabilizing mutations.\n\nIt could be argued that for the computational predictions the residues in close contact with the NADP+ should be excluded, to avoid the complications that were found with the S197E mutation. During the visual screening of the single mutations with MD simulations the introduced glutamic acid was pointing outwards into the solvent, giving the impression of a somewhat harmless, surface-exposed mutation. The interaction it would have with R18, when in the context of the other introduced mutations, was impossible to predict. This newly introduced interaction was blocking binding of the nicotinamide cofactor. Yet, the 10-fold mutant (M9) is still active and could be of use when the enzyme needs to be used under challenging conditions. It also shows the power of combining FRESCO with a thorough structural inspection of the generated thermostable mutant. By structural analysis, the effects of individual mutations can be evaluated and, when needed, alternative structure-inspired mutations can be prepared. In this study, it led to the 9-fold M9* mutant of ADHA, which is highly thermostable, solvent tolerant, and active.\n\nThis study demonstrates how a computational method can give guidance for a path from a moderately stable enzyme to a highly robust enzyme, suitable for industrial settings with long reaction times and cosolvents. Although FRESCO requires some screening effort, the method greatly reduces the time and screening amount compared to directed evolution or semi-rational approaches. Moreover, since individual stabilizing mutations are combined, there is more certainty and freedom compared to computational methods that suggest stable variants with multiple mutations (Goldenzweig et al., 2016; Musil et al., 2017).\n\n### Conclusions\n\nA highly robust ADH was engineered through computational library design. It is the highest improvement in stability obtained with this method so far, with an improvement of \u0394Tm +45 \u00b0C. Although some mutations might be avoided in the future, through careful consideration of cofactor binding, the nine selected mutations caused no significant decrease in activity or NADP+ binding. This method can be effective to stabilize enzymes for industrial applications, in particular if the enzyme has a higher order quaternary structure.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>NEB 10-beta chemically competent E. coli</td>\n      <td>New England Biolabshttps://www.neb.com/</td>\n      <td>C3019I</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence based reagent</td>\n      <td>pBAD Golden gate vector (N-terminal 6xHis, araC, bla)</td>\n      <td>This study</td>\n      <td></td>\n      <td>Molecular Enzymology Group, University of Groningen</td>\n    </tr>\n    <tr>\n      <td>Polymerase</td>\n      <td>PfuUltra II Hotstart PCR Master Mix</td>\n      <td>Agilent Technologies https://www.agilent.com/</td>\n      <td>600852</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Ni chromatography resin</td>\n      <td>GE Healthcare Life Sciences https://www.gelifesciences.com/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Rosetta</td>\n      <td>Rosetta Commons https://www.rosettacommons.org/</td>\n      <td>RRID:SCR_015701</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FoldX</td>\n      <td>FoldXhttp://foldxsuite.crg.eu/</td>\n      <td>RRID:SCR_008522</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>YASARA</td>\n      <td>YASARA Biosciences GmbHhttp://www.yasara.org/</td>\n      <td>RRID:SCR_017591</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FRESCO scripts</td>\n      <td>https://groups.google.com/forum/#!forum/fresco-stabilization-of-proteins</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>GraphPad Prism https://graphpad.com</td>\n      <td>RRID:SCR_015807</td>\n      <td>Version 6</td>\n    </tr>\n  </tbody>\n</table>\n\n### Materials, strains and chemicals\n\nOligonucleotide primers for cloning and mutagenesis were ordered from Sigma-Aldrich. For amplification of the gene inserts or to perform QuikChange mutations, PfuUltra II HotStart PCR (Polymerase) master mix was used, purchased from Agilent Technologies. Other chemicals were purchased from Sigma-Aldrich and Acros Organics. Precast native PAGE gradient gels were ordered from GenScript. As host strain for recombinant DNA and for protein expression, Escherichia coli NEB 10-beta (New England Biolabs) was used. Precultures were grown in lysogeny broth (LB), and the subsequent main cultures in terrific broth (TB) or ZYM505 medium (Studier, 2005).\n\n### Cloning, expression and purification\n\nThe gene of ADHA was identified in a PCR-based genome screening for new ketoreductases from Candida magnoliae DSMZ 70638 using degenerate PCR primers. A gene fragment of a new ketoreductase was identified. By using a refined PCR-primer the full open reading frame of the previously unknown ketoreductase ADHA was identified. The gene encoding for ADHA was cloned into c-LEcta\u2019s proprietary expression vector pLE1A17 (a derivative of pRSF-1b, Novagen). After transformation of electrocompetent E. coli BL21 (DE3) cells with the pLE1A17-ADHA vector, the cells were cultivated in ZYM505 medium (Studier, 2005), supplemented with kanamycin (50 mg/L) at 37\u00a0\u00b0C. Expression was induced at logarithmic phase by IPTG (0.1 mM) and carried out at 30\u00a0\u00b0C for 16\u201318 hr. Cells were harvested by centrifugation (3220 x g, 20 min, 4\u00a0\u00b0C) and disrupted with cell lysis buffer (50 mM Tris-HCl pH 7.0; 2 mM MgCl2, 1x CelLytic B (Sigma-Aldrich); DNA nuclease 0.02 U, lysozyme 0.5 mg/mL). The crude extracts were separated from cell debris by centrifugation (3220 x g 30 min, 4\u00a0\u00b0C). The supernatant was sterile-filtrated over a 0.2 \u00b5m-membrane filter and subsequently freeze dried. A brownish powder was obtained. This sample was purified by anion-exchange (Q Sepharose Fast Flow, GE Healthcare) and gel-permeation chromatography (Superdex 200, GE healthcare) in 50 mM Tris-HCl pH 7.5.\n\nThe genes encoding for the mutant enzymes were cloned into a vector with a cleavable tag (ADHA M9*: N-His-SUMO in pBAD vector). In this way, the proteins could be obtained in high purity, and, after cleavage of the tag, in the native form. A preculture inoculated with a single colony of E. coli NEB 10-beta harbouring the pBAD vector was grown overnight in LB (5 mL) with ampicillin (50 mg/L) at 37\u00a0\u00b0C. This preculture was used to inoculate TB (5 v/v %) and was simultaneously induced with 0.02% L-arabinose. The cells were grown at 24\u00a0\u00b0C for another 38 hr. Then the cells were spun down (3000 x g, 10 min, 4\u00a0\u00b0C), resuspended in buffer (50 mM Tris-HCl pH 7.5), and sonicated (5 s on/off, 70% amplitude) on ice for cell lysis. Debris was spun down (21000 x g, 45 min, 4\u00a0\u00b0C), and the supernatant was applied to an IMAC column (GE Healthcare). After washing with buffer, and buffer with 5 mM imidazole, the His-tagged protein was eluted with 300 mM imidazole in buffer. The sample was subsequently subjected to a gravity-flow desalting column (PD-10, GE healthcare), to remove the imidazole. In case of SUMO-tagged protein, the protein was then incubated overnight at 4\u00a0\u00b0C with SUMO protease. The next day, the cleaved protein was separated from the SUMO-protease by IMAC and further purified by gel-permeation chromatography (Superdex 200, GE healthcare) in 50 mM Tris-HCl pH 7.5. The protein samples were analysed by SDS-PAGE (Supplementary file 2).\n\n### Crystallization and structure determination\n\nWild-type and mutant ADHA, purified as above, crystallized under several conditions. To probe crystallization conditions, several screens were preformed using an Oryx eight robot (Douglas Instruments, UK) starting from PEG Suite, Ammonium Sulphate Suite and Classic Suite (Nextal). Preliminary crystallization experiments were performed in sitting drop using MRC SWISS CI plates, with a 1:1 protein:reservoir ratio and 0.4\u20131 mL crystallization droplets. Crystallization experiments were performed also with proteins incubated with 1 mM NADP+. The best crystals grew in 20% w/v PEG 3350, 0.2 M sodium citrate. These conditions were then used for all (wild\u00a0type and mutant) crystallization experiments. Crystals were harvested from crystallization droplets using nylon cryo-loops (Hampton Research/Molecular Dimensions), shortly soaked in a cryo-protectant solution containing 20% w/v PEG 3350, 0.2 M sodium citrate and 20\u201325% v/v PEG 400, and then flash-cooled in liquid nitrogen. Data collection was performed at ESRF ID23 beam line (European Synchrotron Radiation Facility, Grenoble, France) for the wild-type crystals, and at the Swiss Light Synchrotron (Paul Scherrer Institut, Villigen, SUI) for the M9 mutant. Wild-type crystals diffracted at 1.6\u20132.0 \u00c5, while the resolution of diffraction by the mutant crystals was 2.6 \u00c5. Data processing, structure determination by molecular replacement, and structure refinement were performed with XDS and programs of the CCP4 suited using standard protocols (Kabsch, 1993; Winn et al., 2011). The crystallographic statistics are listed in Supplementary file 1A.\n\n### Computational methods\n\nCalculations for the FRESCO workflow to predict stabilizing mutations were carried out as described (Wijma et al., 2018). Although we also obtained a crystal structure of ADHA in complex with NADP+, we chose the wild-type structure without the ligand for our calculations, because of two reasons: firstly, the FoldX and Rosetta software only accept protein residues and the cofactor would have to be omitted for these parts in any case. Secondly, NADP+ is assumed to interact only transiently to the enzyme and does not bind permanently as a prosthetic group. Thus, to realistically model the enzyme in its most relevant physiological condition, we did not consider the ligand-bound structure for the MD simulations either. In brief, we then prepared the structure using YASARA by adding hydrogens, predicted their optimal H-bonding network, and removed buffer and water molecules from the structure. The Rosettaddg and FoldX algorithms were then applied as described, and the resulting list of energies was used to identify 478 mutations with a \u0394\u0394GFold improvement of < \u22125 kJ mol\u22121. We re-added the water molecules and furthermore solvated the protein in a charge-neutralized simulation cell stretching 7.5 \u00c5 around all atoms. MD simulations were carried out with YASARA using the Yamber3 force field. In five independently seeded simulations, the system was first energy minimized, heated to 298 K in 30 ps, equilibrated for 20 ps, and finally simulated in the production run for 50 ps. The MD trajectories\u2019 average structures were superimposed and compared with those of the wild type in a visual inspection step of all MD-simulated mutants. Taking into account both the predicted static, as well as the MD simulated structures, mutants were not considered for experimental verification if we observed an increased backbone or side-chain flexibility, hydrogen bond impairment, or hydrophobic exposure. The Peregrine high-performance computing cluster (University of Groningen, Groningen) was used to perform all calculations for Rosettaddg, FoldX, and the molecular dynamics (MD) simulations. The MD simulations were carried out using the software Yasara Structure (YASARA Biosciences GmbH).\n\n### Mutagenesis and small-scale growth and expression\n\nFollowing the published protocol (F\u00fcrst et al., 2018), mutant oligonucleotides were designed and ordered, and the mutant library was prepared via QuikChange. QuikChange was also used to prepare mutants in which several mutations were combined. The construct used for small-scale expression of the mutants was an L-arabinose-inducible pBAD vector, where the ADHA gene is fused to an N-terminal His-tag. The plasmid was used to transform chemically competent E. coli NEB 10 beta cells. Cell cultures were grown in four 96-deepwell plates, containing 1 mL per well. When the 1 mL TB medium was inoculated with an overnight preculture (5% v/v), arabinose was also added, and the 96-deepwell plates were incubated for 38 h at 24\u00a0\u00b0C. Then, the cells were centrifuged to create a single pellet for each mutant from 4 mL of culture broth. Cells were resuspended in 50 mM Tris-HCl pH 7.5. After lysis as described (F\u00fcrst et al., 2018), His-tag purification and desalting, the samples were used for determining activity and thermostability melting point determination.\n\n### Melting point determination by ThermoFluor\n\nFor probing the thermostability of each mutant, the apparent melting temperatures were measured by the ThermoFluor method (Pantoliano et al., 2001). For this, purified enzyme was mixed with the SYPRO orange dye and the apparent Tm was measured in an RT-PCR (CFX96 Touch Real-Time PCR, BioRad, signal setting: FRET), in accordance with the described method (Cummings et al., 2006). All 177 enzyme mutants were screened in technical duplicate.\n\n### Activity assay\n\nActivity was measured by monitoring the formation of NADPH at 340 nm. After mixing enzyme (\u22640.1 \u03bcM) with substrate (cyclohexanol, if not stated: at 70 mM) in buffer (50 mM Tris-HCl pH 7.5), 100 \u03bcM NADP+ was added, briefly mixed in a cuvette, and then the reaction was followed (V-330 Spectrophotometer, JASCO). The slopes of the initial 20 s were used to determine the rates, in \u0394Abs/min. This value was then divided by the extinction coefficient of NADPH (\u025b340 = 6.22 mM\u22121 cm\u22121), in accordance with the Lambert-Beer law, resulting in a rate in mM/min. By dividing this value by the protein concentration in the reaction, the kobs values were obtained. All measurements were done in technical duplicates or triplicates.\n\n### Temperature stability\n\nDilutions of wild-type and mutant ADHA were made in buffer (50 mM Tris-HCl pH 7.5), to a concentration of 0.15\u20130.3 mg/mL. These were incubated in a water bath at 37\u00a0\u00b0C. At several intervals, samples were taken, mixed with buffer and substrate (70 mM cyclohexanol) that were prewarmed at 37\u00a0\u00b0C in the same water bath. To start the reaction, cofactor (200 \u00b5M NADP+) was added. Absorbance at 340 nm was monitored (V-330 Spectrophotometer, JASCO), and activity was determined based on the slope.\n\n### Conversions and enantiomeric excess\n\nA solution of ethyl-4-chloro-3-oxobutanoate (COBE) in DMSO (50 \u03bcL, 200 mM) was added to a Tris-HCl buffer (950 \u03bcL, 50 mM, pH 7.5) containing 0.5 mM NADPH, 5 \u03bcM of ADHA (WT or M9*), 5 \u03bcM of PTDH (phosphite dehydrogenase from Pseudomonas stutzeri WM88) and 50 mM sodium phosphite. The mixture was incubated for 24 h in an orbital shaker (150 rpm, 25\u00a0\u00b0C). The solution was extracted with ethyl acetate (EtOAc) (3 \u00d7 1 mL), centrifuging after each extraction (10000 x g, 2 min), and the combined organic solutions were dried over anhydrous Mg2SO4, and analyzed by chiral GC. Enantiomeric excess determinations for COBE were measured by chiral GC-FID. GC\u2013FID analyses were carried out with an Agilent Technologies 7890A GC system. In Supplementary file 4 chromatograms and details are provided regarding the settings for the GC.\n\nA solution of 4-chloroacetophenone (4-CAP) in DMSO (50 \u03bcL, 200 mM) was added to a Tris-HCl buffer (950 \u03bcL, 50 mM, pH 7.5) containing 0.5 mM NADPH, 5 \u03bcM of ADH, 5 \u03bcM of PTDH and 50 mM sodium phosphite. The mixture was incubated for 24 h in an orbital shaker (150 rpm, 25\u00a0\u00b0C). The solution was extracted with EtOAc (3 \u00d7 1 mL), centrifuging after each extraction (10000 x g, 2 min), and the combined organic solutions were dried over anhydrous Mg2SO4. Organic solvent is evaporated under reduced pressure and residue is dissolved in 3 mL heptane/iso-propanol (v/v\u00a0=\u00a095:5) and analyzed by chiral HPLC. Enantiomeric excess determinations for 4-CAP were measured by normal phase (np) HPLC analysis (Chiralcel OD-H column) using UV-detection (Shimadzu SCL-10Avp).In Supplementary file 4 chromatograms and details are provided regarding the settings for the HPLC.\n",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "1c299713-8d44-479a-bff5-97ba5e5c43db",
+      "submission_id": "510befed-1d87-4e00-9f73-4b987cb5c737",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Philip A Cole, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54639.sa1](https://doi.org/10.7554/eLife.54639.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study applies the FRESCO computational method to dramatically enhance the thermal stability of a dehydrogenase enzyme that has potential importance in the biotransformation of industrially relevant compounds. The use of X-ray crystal structural analysis of the optimized enzyme helps explain its exceptional properties. This study serves as an excellent model for what is possible in the thermal engineering of proteins using computational design.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Approaching boiling point stability of an alcohol dehydrogenase through computationally-guided enzyme engineering\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Reviewing/Senior Editor Philip Cole. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an interesting paper that describes the successful application of FRESCO, a computational method for protein stabilization previously reported by the authors, for the stabilization of an alcohol dehydrogenase. Upon screening > 150 computationally selected mutations and combining the most stabilizing ones, the authors were able to obtain a 51 \u00b0C stabilization compared to the parent enzyme, which is an impressive achievement. By removing a stabilizing but deleterious mutation, the authors were able to achieve a significant level of stabilization without losing catalytic activity. This work encompasses a significant amount of work and the results are relevant and important. The structural analyses on the evolved variant nicely complement the characterization studies.\n\nEssential revisions:\n\n\u2013 The authors should clarify how accessible FRESCO is to the scientific community in terms of cost and technical aspects\n\n\u2013 Have the authors determined the ee values for a range of substrates for their most thermostable enzyme? One worries that in the process of incorporating these mutations, stereochemical selectivities associated with the wt enzyme may be reduced or otherwise altered.\n\n\u2013 All tables and graphs except Figure 5 are missing error bars. These should be included.\n\n\u2013 \"Since we suspected the S197E mutation to be problematic concerning coenzyme binding, based on the structural observations (Figure 3C),...\". This is an important point that could be explained more clearly. It is not obvious from the Figure 3C why the S197E mutation should be deleterious for cofactor binding. Due to effect of mutation on the flexibility of the loop? What insights do the MD simulations provide into that? The E197 neg charge could cause electrostatic repulsion with phosphate of NADPH, but what is distance from E197 and the cofactor? And isn't E197 neg charge neutralized by interaction with Arg R18, as discussed in the manuscript? The electrostatic repulsion effect could be probed by comparing/contrasting activity of WT and mutant using NADH.\n\n\u2013 \"The initial FRESCO calculations and predictions for ADHA had a good hit rate: of the tested 177 mutations, 57 had a stabilizing effect of > 1 \u00b0C.\" This number should be adjusted considering error in Tm measurement (+/- 1C). Because of the error, it seems more appropriate to indicate # of mutants with DeltaTm> 2degC as significant.\n\n\u2013 There is barely any reference to literature related to the use of computational design for enzyme stabilization. Below are some relevant papers that should be mentioned/cited (among others):\n\nMalakauskas and Mayo, 1998; Bj\u00f8rk et al., 2004; Korkegian et al., 2005; Gribenko et al., 2009; Borgo and Murphy, 2012; Bednar et al., 2015; Moore et al., 2017; Shah et al., 2007; Murphy et al., 2002.\n\nDepending on the outcome of a thorough literature search, the authors might wish to revise the statement, \"of all studies on stabilization of enzymes or proteins to date, to the best of our knowledge\".\n\n\u2013 Re: \"The structure of ADHA bound to NADP+ unveils a well-defined catalytic pocket\". This seems to be contradicted by the note in Figure 1 that the nicotinamide moiety is disordered.\n\n\u2013 There is an unclear methodology aspect of the (probably too brief) introduction to FRESCO. At the outset it was not clear to what extent the coenzyme was included in the folding free energy or MD calculations. Near the end of the paper the authors say, \"the employed computational algorithms (Rosettaddg and FoldX) cannot take into account the flavin-protein interactions (Wijma et al., 2018).\" Completely omitting the coenzyme during ddG and MD calculations is a surprising enough action that the authors should be very explicit in the methods description.\n\n\u2013 Another methodology clarification request. It is not clear whether visual inspection occurred for the 478 design models, the 478 MD simulations, or the 478 MD simulation final snapshots. The length of the MD simulations is either not mentioned or not sufficiently prominent.\n\n\u2013 It is unclear if there was a quantitative threshold used to filter undesirable mutations? Similarly, when choosing 2 or 3 out of 4 beneficial mutations, how was the choice made? algorithm or biophysical intuition? Similarly, was the final roster of 177 mutations based on an unbiased, quantitative cutoff?\n\n\u2013 Currently the comparison between panels A and B for \"Figure 3. Michaelis-Menten\" is awkward, since not only are there scale changes in both axes but also a unit change that might be overlooked.\n\n\u2013 Re: \"The interaction it would have with R18, when in the context of the other introduced mutations, was impossible predict\". You mean to say, \"impossible to predict\", but might not more sampling reveal the new favored conformation? This seems like an excellent test case for developing improved FRESCO methods.\n\n\u2013 The 6TQ8 difference between R-work and R-free is 10%, which seems rather large. We worry that there might be a significant level of bias in that model. The wwPDB validation report seemingly backs this up as a concern.\n",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "694da3a7-cb7b-4ed0-93fc-ac6403c1e2db",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C1",
+      "claim": "Alcohol dehydrogenases (ADHs) primarily govern the oxidation of alcohols and reduction of ketones in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "The oxidation of alcohols and reduction of ketones in nature is primarily governed by alcohol dehydrogenases (ADHs) (EC 1.1.1.1) (Kavanagh et al., 2008; Oppermann et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kavanagh et al., 2008 and Oppermann et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "89fe65e3-28aa-4586-9535-46d8d4c4b5dc",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C2",
+      "claim": "There is a vast diversity of ADHs that can transform a large range of substrates, often with high regio- and enantioselectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a vast diversity of ADHs that can transform a large range of substrates, often with high regio- and enantioselectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about ADH diversity",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "a2b38397-df39-45cd-95ce-485038daf6d2",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C3",
+      "claim": "Most ADHs employ nicotinamide cofactors for catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Most ADHs employ nicotinamide cofactors for catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about ADH cofactor requirements",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "cb109099-bdc7-42c0-aedb-a8e961b5e241",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C4",
+      "claim": "Ketone reductions catalysed by ADHs are used in industry to synthesize chiral alcohols.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, ketone reductions catalysed by ADHs are used in industry to synthesize chiral alcohols (Nealon et al., 2015; Zheng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nealon et al., 2015 and Zheng et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "2ea18d3b-5908-47c7-97ae-eb621f2f8792",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C5",
+      "claim": "Recent studies show promising results for ADHs as biocatalysts for selective oxidations.",
+      "claim_type": "EXPLICIT",
+      "source": "Although ADHs have been mainly applied for ketone reductions, recent studies show promising results as biocatalysts for selective oxidations (Sol\u00e9 et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sol\u00e9 et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "03dcfbd3-9de3-4516-8652-83fc2adabb16",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C6",
+      "claim": "A large subset of alcohol dehydrogenases belongs to the family of short-chain reductases/dehydrogenases (SDRs).",
+      "claim_type": "EXPLICIT",
+      "source": "A large subset of alcohol dehydrogenases belongs to the family of short-chain reductases/dehydrogenases (SDRs) (Kavanagh et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kavanagh et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "9f26c702-45da-44fa-b159-0876aeb81a8e",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C7",
+      "claim": "Enzymes from the SDR family encompass around 250 amino acid-long sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymes from this family encompass around 250 amino acid-long sequences, typically form tetramers, use NAD(H) or NADP(H) as cofactor, and mainly act on secondary alcohols and ketones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about SDR family characteristics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "b60ae936-6ad7-4cae-aa2d-39470a21154a",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C8",
+      "claim": "SDR enzymes typically form tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymes from this family encompass around 250 amino acid-long sequences, typically form tetramers, use NAD(H) or NADP(H) as cofactor, and mainly act on secondary alcohols and ketones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about SDR family characteristics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "9124d168-7e90-47e7-99d8-91dc2db0bd80",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C9",
+      "claim": "SDR enzymes use NAD(H) or NADP(H) as cofactor.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymes from this family encompass around 250 amino acid-long sequences, typically form tetramers, use NAD(H) or NADP(H) as cofactor, and mainly act on secondary alcohols and ketones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about SDR family characteristics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "72d81db4-ea2f-4e76-93be-fb847631e1d8",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C10",
+      "claim": "SDR enzymes mainly act on secondary alcohols and ketones.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymes from this family encompass around 250 amino acid-long sequences, typically form tetramers, use NAD(H) or NADP(H) as cofactor, and mainly act on secondary alcohols and ketones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about SDR family characteristics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "3783751c-99df-461a-9aa8-d1751a0a6b62",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C11",
+      "claim": "The characteristic catalytic triad in SDRs is a combination of Ser-Tyr-Lys.",
+      "claim_type": "EXPLICIT",
+      "source": "The characteristic catalytic triad in SDRs is a combination of Ser-Tyr-Lys (Bhatia et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bhatia et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "1ca092a8-fcb0-42e7-ad1c-2064ec818b4a",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C12",
+      "claim": "Most enzymes in nature have evolved to catalyse reactions within cells, in crowded, mild and aqueous conditions, and only for limited periods of time.",
+      "claim_type": "EXPLICIT",
+      "source": "Most enzymes in nature have evolved to catalyse reactions within cells, in crowded, mild and aqueous conditions, and only for limited periods of time (DePristo et al., 2005; Goldenzweig and Fleishman, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to DePristo et al., 2005 and Goldenzweig and Fleishman, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "b11523f3-6675-44a1-b5c4-469258352a7e",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C13",
+      "claim": "Many enzymes are only moderately stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, many enzymes are only moderately stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the discussion of enzyme evolution and metabolic adaptability",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "410a130f-b5c2-41da-9f64-192843a05780",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C14",
+      "claim": "Enzymes that have the potential to be applied as biocatalyst are often insufficiently stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymes that have the potential to be applied as biocatalyst are often insufficiently stable (Bommarius and Paye, 2013; Woodley, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bommarius and Paye, 2013 and Woodley, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "4d408374-d4dd-444a-94fc-8d228673d472",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C15",
+      "claim": "ADHA is an alcohol dehydrogenase from Candida magnoliae DSMZ 70638.",
+      "claim_type": "EXPLICIT",
+      "source": "One such enzyme is ADHA, an alcohol dehydrogenase from Candida magnoliae DSMZ 70638.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the enzyme source",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "869cd191-8288-4812-8333-71f80f33b020",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C16",
+      "claim": "ADHA was isolated for its ability to reduce several ketones with excellent enantioselectivities.",
+      "claim_type": "EXPLICIT",
+      "source": "This enzyme was isolated for its ability to reduce several ketones with excellent enantioselectivities (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Table 1 showing enantioselectivity data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "0d24521d-26e0-41a9-b9e2-a0777f9b8ff2",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C17",
+      "claim": "The melting temperature of ADHA is moderate, with an apparent Tm of 43 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Although heterologous expression of ADHA is good, the melting temperature of ADHA is moderate, with an apparent Tm of 43 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement of melting temperature",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "01005041-76a0-42d5-8b5e-91b99d28f557",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C18",
+      "claim": "ADHA has a kobs of 4.1 U/mg with ethyl acetoacetate (100 mM) as substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Ethyl acetoacetate (100 mM) 4.1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "84830541-8f12-4ead-9cb5-1670ad2d1c63",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C19",
+      "claim": "ADHA has a kobs of 3.2 U/mg with cyclohexanone (50 mM) as substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclohexanone (50 mM) 3.2",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "d5690294-fff5-4044-9061-337e88e44d63",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C20",
+      "claim": "ADHA has a kobs of 0.3 U/mg with ethyl 4-chloro-3-oxobutanoate (COBA) (50 mM) as substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Ethyl 4-chloro-3-oxobutanoate (COBA) (50 mM) 0.3",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "0870dbd8-416a-4591-9b92-7d0ce318f4e1",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C21",
+      "claim": "ADHA produces > 99% (R) enantiomeric excess with ethyl 4-chloro-3-oxobutanoate (COBA) as substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Ethyl 4-chloro-3-oxobutanoate (COBA) (50 mM) 0.3 > 99% (R)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "384be860-ab14-4eeb-8233-74a6894f9b1c",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C22",
+      "claim": "ADHA has a kobs of 2.4 U/mg with 4-chloroacetophenone (4-CAP) (50 mM) as substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "4-Chloroacetophenone (4-CAP) (50 mM) 2.4",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "525f4d6a-a152-42df-b908-0ae1ef9671f4",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C23",
+      "claim": "ADHA produces 97.2% (S) enantiomeric excess with 4-chloroacetophenone (4-CAP) as substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "4-Chloroacetophenone (4-CAP) (50 mM) 2.4 97.2% (S)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "0b6b33b6-a5e6-43db-890c-c5f0313d73ff",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C24",
+      "claim": "FRESCO is an in-house developed method for framework for rapid enzyme stabilization by computational libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "This computational protocol incorporates two algorithms to calculate folding free energy (\u0394GFold, expressed in kJ mol\u22121), and compares these calculations (\u0394\u0394GFold) between the wild-type structure and variants with a single mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the FRESCO method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "cc192cd6-0349-4e3b-afcf-04ebbeb8d000",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C25",
+      "claim": "FRESCO incorporates two algorithms to calculate folding free energy (\u0394GFold).",
+      "claim_type": "EXPLICIT",
+      "source": "This computational protocol incorporates two algorithms to calculate folding free energy (\u0394GFold, expressed in kJ mol\u22121), and compares these calculations (\u0394\u0394GFold) between the wild-type structure and variants with a single mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the FRESCO computational approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "44f5fa9e-8265-4d81-bb39-9772e78525ee",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C26",
+      "claim": "A 10-fold mutant of ADHA was generated with a Tm of 94 \u00b0C (+51 \u00b0C relative to wild type).",
+      "claim_type": "EXPLICIT",
+      "source": "By combining mutations, a 10-fold mutant was generated with a Tm of 94 \u00b0C (+51 \u00b0C relative to wild type), almost reaching water's boiling point, and the highest increase with FRESCO to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental measurement of melting temperature",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "8d5bf0e6-95fe-48a3-99cf-7341986810b5",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C27",
+      "claim": "The 10-fold mutant represents the highest increase in Tm with FRESCO to date.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining mutations, a 10-fold mutant was generated with a Tm of 94 \u00b0C (+51 \u00b0C relative to wild type), almost reaching water's boiling point, and the highest increase with FRESCO to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previous FRESCO studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "207deba1-b697-417f-8a7f-639c65ff4acf",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C28",
+      "claim": "After reverting one mutation, the enzyme showed no loss in activity compared to wild type, while displaying a Tm of 88 \u00b0C (+45 \u00b0C relative to wild type).",
+      "claim_type": "EXPLICIT",
+      "source": "After reverting this mutation, the enzyme showed no loss in activity compared to wild type, while displaying a Tm of 88 \u00b0C (+45 \u00b0C relative to wild type).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental measurement of activity and melting temperature",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "dd7bec56-6588-41c1-92e0-b2ec97f7d545",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C29",
+      "claim": "ADHA displays high reductive activity towards a broad panel of ketones with high enantioselectivity (> 97% ee).",
+      "claim_type": "EXPLICIT",
+      "source": "Characterization of ADHA immediately indicated a high reductive activity towards a broad panel of ketones (Table 1) with high enantioselectivity (> 97% ee).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental characterization data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "9d5b5068-6ce0-4bd8-8902-1afffe29b229",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C30",
+      "claim": "Most of the ADHA enzyme activity is lost in reactions of 8 h or longer, even at moderate temperatures such as 25 \u00b0C or 30 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we soon realized that most of the enzyme activity is lost in reactions of 8 h or longer, even at moderate temperatures such as 25 \u00b0C or 30 \u00b0C (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation of enzyme stability over time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "41ffbae1-382b-4b1b-974f-5c37aabd06d3",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C31",
+      "claim": "The purified ADHA enzyme crystallized in many conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The purified enzyme crystallized in many conditions and the enzyme three-dimensional structure was solved in the apo and NADP+-bound state at 2.0 \u00c5 and 1.6 \u00c5 resolution, respectively (Figure 1, Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental crystallization results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "e8f17878-da4f-4c1c-a126-59b0a500692f",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C32",
+      "claim": "The enzyme three-dimensional structure was solved in the apo state at 2.0 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The purified enzyme crystallized in many conditions and the enzyme three-dimensional structure was solved in the apo and NADP+-bound state at 2.0 \u00c5 and 1.6 \u00c5 resolution, respectively (Figure 1, Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "9ae726a3-7247-4b67-9612-0f47137ff96e",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C33",
+      "claim": "The enzyme three-dimensional structure was solved in the NADP+-bound state at 1.6 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The purified enzyme crystallized in many conditions and the enzyme three-dimensional structure was solved in the apo and NADP+-bound state at 2.0 \u00c5 and 1.6 \u00c5 resolution, respectively (Figure 1, Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "a158e354-ac8b-413f-8dde-8e1bcd4e9547",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C34",
+      "claim": "ADHA is a homotetramer as typically observed in most SDRs.",
+      "claim_type": "EXPLICIT",
+      "source": "ADHA is a homotetramer as typically observed in most SDRs (Kavanagh et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural determination supported by citation to Kavanagh et al., 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "6c057269-fe80-406a-932a-b628d79dd007",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C35",
+      "claim": "The closest structural homologue to ADHA is another alcohol dehydrogenase from Candida magnoliae (PDB entry 5MLN).",
+      "claim_type": "EXPLICIT",
+      "source": "A search for homologous structures in the Protein Data Bank showed that the closest structural homologue is another alcohol dehydrogenase from Candida magnoliae (PDB entry 5MLN [Tavanti et al., 2017]; root-mean-square deviation of 1.0 \u00c5 for 238 C\u03b1 atoms with 64% sequence identity; Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural comparison with PDB database",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "ee8b130a-79d9-4aca-9882-a1ea8bb3213b",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C36",
+      "claim": "ADHA has a root-mean-square deviation of 1.0 \u00c5 for 238 C\u03b1 atoms with 64% sequence identity to PDB entry 5MLN.",
+      "claim_type": "EXPLICIT",
+      "source": "A search for homologous structures in the Protein Data Bank showed that the closest structural homologue is another alcohol dehydrogenase from Candida magnoliae (PDB entry 5MLN [Tavanti et al., 2017]; root-mean-square deviation of 1.0 \u00c5 for 238 C\u03b1 atoms with 64% sequence identity; Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural comparison data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "5f07561f-8578-4912-9765-08ab9432037e",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C37",
+      "claim": "177 single mutations were selected for experimental screening using FRESCO.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, several positions (> 20) had more than four suggested beneficial mutations. In those cases, we chose two or three distinct suggested mutations. Finally, we selected 177 single mutations for experimental screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the computational screening process",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "dc9f564a-6384-4131-9fa2-38d800ca3948",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C38",
+      "claim": "Of the 177 selected mutations, 25 mutations brought about a significant increase in apparent melting temperature (\u0394Tm \u2265 +3 \u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 177 selected mutations, 25 mutations brought about a significant increase in apparent melting temperature (\u0394Tm \u2265 +3 \u00b0C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental screening results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "f05ded99-e89e-4aa0-87d0-b2a0f6682a0c",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C39",
+      "claim": "26 mutants repeatedly did not give a clear signal in melting temperature measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "26 mutants repeatedly did not give a clear signal, which may have been caused by insufficient expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "b2ecd7af-939b-4d3e-9743-21c993f2fc83",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C40",
+      "claim": "Of the 151 mutants for which a melting temperature could be measured, 52 had a similar Tm when compared to wild-type ADHA (\u22121 \u2264 \u0394Tm \u2264 +1 \u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 151 mutants for which a melting temperature could be measured, 52 had a similar Tm when compared to wild-type ADHA (\u22121 \u2264 \u0394Tm \u2264 +1 \u00b0C), 43 were destabilizing (\u0394Tm < \u22121 \u00b0C), and 56 were stabilizing (\u0394Tm > +1 \u00b0C) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental screening data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "65038891-c5f4-4be7-b1ac-f71af1f26268",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C41",
+      "claim": "43 mutants were destabilizing (\u0394Tm < \u22121 \u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 151 mutants for which a melting temperature could be measured, 52 had a similar Tm when compared to wild-type ADHA (\u22121 \u2264 \u0394Tm \u2264 +1 \u00b0C), 43 were destabilizing (\u0394Tm < \u22121 \u00b0C), and 56 were stabilizing (\u0394Tm > +1 \u00b0C) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental screening data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "c4e5cde9-7404-4752-b3c7-321ff8c79251",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C42",
+      "claim": "56 mutants were stabilizing (\u0394Tm > +1 \u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 151 mutants for which a melting temperature could be measured, 52 had a similar Tm when compared to wild-type ADHA (\u22121 \u2264 \u0394Tm \u2264 +1 \u00b0C), 43 were destabilizing (\u0394Tm < \u22121 \u00b0C), and 56 were stabilizing (\u0394Tm > +1 \u00b0C) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental screening data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "e23e9c6c-35ad-40a8-bb22-cce503f09206",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C43",
+      "claim": "11 of the 25 most stabilizing mutants displayed very poor or no activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when measuring activity, 11 of these 25 mutants displayed very poor or no activity (Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Activity measurements reported in Supplementary file 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "15fe3a1b-9e88-49e7-90b3-b48012c213c2",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C44",
+      "claim": "The L150F mutation has a \u0394Tm of 14.0 \u00b1 0.25 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "L150F 0.5 57.25 \u00b1 0.25 14.0 \u00b1 0.25",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "5533c406-393d-4e10-82a6-1a30c6334c1f",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C45",
+      "claim": "The G149A mutation has a \u0394Tm of 9.5 \u00b1 0 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "G149A 0.4 52.5 \u00b1 0 9.5 \u00b1 0",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "55f41836-7b63-403f-aa01-0a7deece1bb5",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C46",
+      "claim": "The M157K mutation has a \u0394Tm of 8.0 \u00b1 0 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "M157K 0.4 51.0 \u00b1 0 8.0 \u00b1 0",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "b4e6c27a-f810-4287-b78e-5a211452a246",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C47",
+      "claim": "The S197E mutation has a \u0394Tm of 7.5 \u00b1 1 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "S197E 0.5 49 \u00b1 1 7.5 \u00b1 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "97d1afd4-7418-47e7-93ea-008abb5c78a8",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C48",
+      "claim": "The V238L mutation has a \u0394Tm of 7.0 \u00b1 0 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "V238L 0.4 50.0 \u00b1 0 7.0 \u00b1 0",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "a35b41e2-ec6e-4e25-9c22-947a6b82750e",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C49",
+      "claim": "The G159A mutation has a \u0394Tm of 5.5 \u00b1 0 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "G159A 1.2 48.5 \u00b1 0 5.5 \u00b1 0",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "51af883d-0400-4cf8-832b-20e45b05c4dd",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C50",
+      "claim": "The N212R mutation has a \u0394Tm of 5.0 \u00b1 0 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "N212R 1.1 48.0 \u00b1 0 5.0 \u00b1 0",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "ee5bdf5d-d057-4953-9f41-9e8a732ec4d7",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C51",
+      "claim": "The combined mutants showed superior expression compared to wild-type ADHA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the combined mutants showed superior expression compared to wild-type ADHA, and could be expressed at higher temperatures for shorter periods of time, such as 37 \u00b0C overnight (Supplementary file 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation of expression levels",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "3934d67c-e7e3-4f69-8e9a-5a0ba7b8bdf9",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C52",
+      "claim": "Beyond M4, the enzyme gave two melting points in the ThermoFluor measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond M4, the enzyme gave two melting points in the ThermoFluor measurements (indicated by the values in parentheses, Table 2), of which the first curve appears 10\u201311 \u00b0C before the second.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation in ThermoFluor measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "8236ce9e-5ef6-47f9-84ba-6c14e7c2fbaf",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C53",
+      "claim": "The M9 mutant has a 100-fold higher KM for NADP+ (1.0 mM, compared to 9.5 \u00b5M) than wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the M9 enzyme retained catalytic activities, though with a 100-fold higher KM for NADP+ (1.0 mM, compared to 9.5 \u00b5M) and a 4-fold decreased kcat (0.25 s\u22121, compared to 1.1 s\u22121) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Kinetic measurements shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "ad89adc0-4555-4c2e-88ad-d6eac776a2dc",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C54",
+      "claim": "The M9 mutant has a 4-fold decreased kcat (0.25 s\u22121, compared to 1.1 s\u22121) compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the M9 enzyme retained catalytic activities, though with a 100-fold higher KM for NADP+ (1.0 mM, compared to 9.5 \u00b5M) and a 4-fold decreased kcat (0.25 s\u22121, compared to 1.1 s\u22121) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Kinetic measurements shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "1b2f8e83-8697-4873-bb00-8ec9fc23d8e0",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C55",
+      "claim": "The M9 structure was determined at 2.6 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the wild-type ADHA, several conditions gave crystals of the M9 enzyme, enabling determination of its structure at 2.6 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "49f065db-473c-4816-af62-86269fe11c54",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C56",
+      "claim": "There was no electron density for any ligand in the M9 structure despite crystallization conditions containing 1.0 mM NADP+.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the crystallization conditions contained 1.0 mM NADP+, there was no electron density for any ligand in the M9 structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Crystallographic observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "faa36ef5-e0c9-47ee-911b-6721af3b0843",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C57",
+      "claim": "All the introduced mutations in M9 are in the same area of the enzyme three-dimensional structure.",
+      "claim_type": "EXPLICIT",
+      "source": "When inspecting the M9 structure, it is worth noting that all the introduced mutations are in the same area of the enzyme three-dimensional structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural analysis of M9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "bdad2abf-6e8c-4b38-a019-27c3fe794b7a",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C58",
+      "claim": "The mutations in M9 are located centrally on each of the two flat faces of the homo-tetramer, where two opposing subunits come together.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the mutations are located centrally on each of the two flat faces of the homo-tetramer, where two opposing subunits come together (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural analysis shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "78b9592b-21d5-44b7-8e32-de02ee9ff438",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C59",
+      "claim": "Superposition of the wild-type ADHA and M9 tetramers revealed a very close structural similarity with a root-mean-square deviation of 0.58 \u00c5 for 956 C\u03b1 atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Superposition of the wild-type ADHA and M9 tetramers revealed a very close structural similarity with a root-mean-square deviation of 0.58 \u00c5 for 956 C\u03b1 atoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural comparison data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "6b8553cb-8635-4095-bca0-1604d9533ce3",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C60",
+      "claim": "The only considerable backbone shift (up to 3.1 \u00c5) in M9 compared to wild type concerns loop 196\u2013214.",
+      "claim_type": "EXPLICIT",
+      "source": "The only considerable backbone shift (up to 3.1 \u00c5) concerns loop 196\u2013214 (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural comparison shown in Figure 4B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "4a21aeb0-f6b4-4ee6-b70b-afccb8b02d91",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C61",
+      "claim": "Residues 196\u2013198 in loop 196-214 are involved in binding the NADP+ pyrophosphate group.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues 196\u2013198 in this loop are involved in binding the NADP+ pyrophosphate group as shown by the crystal structure of the wild-type ADHA bound to NADP+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural analysis of wild-type ADHA bound to NADP+",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "b8994b9a-dd2a-480e-86af-de456fc60752",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C62",
+      "claim": "The introduced E197 seems to occupy the NADP+ pyrophosphate binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed structural alteration in this particular loop immediately provides an explanation for the increase of KM for this cofactor in M9: the introduced E197 seems to occupy the NADP+ pyrophosphate binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural analysis and inference from crystal structure",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "a90fc149-daa0-4a80-8649-5fd7e37fd2f7",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C63",
+      "claim": "The carboxylate moiety of the S197E mutation induces an interaction with the guanidinium of R18.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with the shift of the loop, the carboxylate moiety of the S197E mutation induces an interaction with the guanidinium of R18 (Figure 4C) \u2013 a residue that crucially binds the 2' phosphate of NADP+ in the wild-type structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural observation shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "e6a0144f-5cef-4501-ab74-b68c03744da2",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C64",
+      "claim": "R18 crucially binds the 2' phosphate of NADP+ in the wild-type structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with the shift of the loop, the carboxylate moiety of the S197E mutation induces an interaction with the guanidinium of R18 (Figure 4C) \u2013 a residue that crucially binds the 2' phosphate of NADP+ in the wild-type structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural analysis of wild-type ADHA",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "eeff9286-7a39-4ba7-ab6b-bb0b2cc47a95",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C65",
+      "claim": "The KM for NADP+ of M9* has the same value as wild type (9.6 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed a decrease of 6.5 \u00b0C in Tm for M9* compared to M9 (Table 2). Yet, it was satisfying that M9* displayed proper enzyme activity: the KM for NADP+ of M9* has the same value as wild type (9.6 \u00b5M), and its kcat at 25 \u00b0C was only slightly lower (Table 3, Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Kinetic measurements shown in Table 3 and Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "9053b39b-12bc-4277-b564-9e15f26a5ab6",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C66",
+      "claim": "M9* has a Tm of 88.0 \u00b1 0 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "M9* (M9 - S197E) 0.8 88.0 (78.5) \u00b1 0 45.0 \u00b1 0",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "ec71ad30-698e-412d-b2fd-e8387d396957",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C67",
+      "claim": "Wild-type ADHA has a kcat of 1.1 \u00b1 0.04 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "ADHA WT 43.0 \u00b1 0 1.1 \u00b1 0.04 9.5 \u00b1 1.2 116 \u00b1 35",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "33fc4575-a21c-42c6-ac48-1349a8179a52",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C68",
+      "claim": "Wild-type ADHA has a KM,NADP+ of 9.5 \u00b1 1.2 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "ADHA WT 43.0 \u00b1 0 1.1 \u00b1 0.04 9.5 \u00b1 1.2 116 \u00b1 35",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "92b71191-3180-4d7b-ad50-b11dfce8cce1",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C69",
+      "claim": "M9 has a kcat of 0.27 \u00b1 0.02 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "M9 94.5 \u00b1 0 0.27 \u00b1 0.02 1040 \u00b1 108 0.26 \u00b1 0.2",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "9a34b631-4273-4a21-bc3a-b120deafb8ec",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C70",
+      "claim": "M9 has a KM,NADP+ of 1040 \u00b1 108 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "M9 94.5 \u00b1 0 0.27 \u00b1 0.02 1040 \u00b1 108 0.26 \u00b1 0.2",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "cce2b1f2-bef8-417a-81b6-153cf0572308",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C71",
+      "claim": "M9* has a kcat of 0.7 \u00b1 0.01 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "M9* 88.0 \u00b1 0 0.7 \u00b1 0.01 9.6 \u00b1 0.7 73 \u00b1 14.5",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "1e8322fc-7d4a-4674-bb24-ff4c2f7fd1b7",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C72",
+      "claim": "M9* has a KM,NADP+ of 9.6 \u00b1 0.7 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "M9* 88.0 \u00b1 0 0.7 \u00b1 0.01 9.6 \u00b1 0.7 73 \u00b1 14.5",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "c339b76c-0d19-4dab-aeb8-b89a63262098",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C73",
+      "claim": "Wild-type ADHA achieves > 99% conversion and > 99% ee (R) with COBA as substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "ADHA WT 43.0 \u00b1 0 1.1 \u00b1 0.04 9.5 \u00b1 1.2 116 \u00b1 35 > 99% > 99% ee (R)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "dec84b1a-af02-4601-a4f6-1baaf168c398",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C75",
+      "claim": "M9* achieves > 99% conversion and > 99% ee (R) with COBA as substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "M9* 88.0 \u00b1 0 0.7 \u00b1 0.01 9.6 \u00b1 0.7 73 \u00b1 14.5 > 99% > 99% ee (R)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "fac59153-03f0-4641-a8bd-27438415e357",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C77",
+      "claim": "M9* shows highest activity at 55\u201360 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The enzyme shows highest activity at 55\u201360 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temperature-activity profile measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "a9b70d29-2933-4332-96a6-f92f9909d56e",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C78",
+      "claim": "M9* is active at 85 \u00b0C, whereas wild-type ADHA displays hardly any activity > 40 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, the enzyme is also active at 85 \u00b0C, whereas wild-type ADHA displays hardly any activity > 40 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temperature-activity profile measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "f9acfb5d-1751-48a2-ac2c-e8f51313ad5c",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C79",
+      "claim": "The M9 mutant showed a +3 \u00b0C increase in Tm in the presence of 0.5 mM NADPH.",
+      "claim_type": "EXPLICIT",
+      "source": "The M9 mutant showed a +3 \u00b0C increase, which is much smaller than the drastic +9 \u00b0C improvement in the Tm of the wild type upon NADP+ binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "ThermoFluor measurements with NADPH",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "2404a287-ca79-413b-82d3-f89209dedf90",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C80",
+      "claim": "Wild-type ADHA showed a +9 \u00b0C improvement in Tm upon NADP+ binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The M9 mutant showed a +3 \u00b0C increase, which is much smaller than the drastic +9 \u00b0C improvement in the Tm of the wild type upon NADP+ binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "ThermoFluor measurements with NADP+",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "efb00428-8394-486a-afaf-f4dd440c63d6",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C81",
+      "claim": "Wild-type ADHA has a half-life of around 2 hr at 37 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "As wild-type ADHA has a Tm at 43 \u00b0C, it was losing activity steadily over the first couple of hours, with a half-life of around 2 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Long-term stability measurements at 37 \u00b0C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "cff01d79-f99b-455a-8841-6e47a7de103e",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C82",
+      "claim": "After 22 h at 37 \u00b0C, the remaining activity of wild-type ADHA was only 8.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "After 22 h at 37 \u00b0C, the remaining activity of wild-type ADHA was only 8.7%, whereas the M9* still displayed full activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Long-term stability measurements at 37 \u00b0C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "68f10050-2afa-42c0-9c89-40f77b1fedbc",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C83",
+      "claim": "M9* still displayed full activity after 22 h at 37 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "After 22 h at 37 \u00b0C, the remaining activity of wild-type ADHA was only 8.7%, whereas the M9* still displayed full activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Long-term stability measurements at 37 \u00b0C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "2c791171-3c01-408d-aa76-461ef8954efc",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C84",
+      "claim": "After 11 days at 37 \u00b0C, the M9* ADHA lost 50% of its activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Only after 11 days at 37 \u00b0C, the M9* ADHA lost 50% of its activity (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Long-term stability measurements shown in Figure 7\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "90407575-026c-4354-b8e0-e3e886cd9d77",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C85",
+      "claim": "M9* has a Tm of 76.0 \u00b1 0.5 \u00b0C in the presence of 20% methanol (\u0394Tm = \u221212 \u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Methanol 76.0 \u00b1 0.5 \u221212",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "36054065-7b72-4702-8dc0-5dba4f1656e6",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C86",
+      "claim": "M9* has a Tm of 71.5 \u00b1 0.5 \u00b0C in the presence of 20% ethanol (\u0394Tm = \u221216.5 \u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Ethanol 71.5 \u00b1 0.5 \u221216.5",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "b0b672f9-5a9e-4f90-92d8-0d308d0a6994",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C87",
+      "claim": "M9* has a Tm of 67.0 \u00b1 0.5 \u00b0C in the presence of 20% isopropanol (\u0394Tm = \u221221 \u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Isopropanol 67.0 \u00b1 0.5 \u221221",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "f5e86aad-1bc3-44a6-9b9c-ba4e0dba9a66",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C88",
+      "claim": "This study achieved the highest improvement of melting temperature of all FRESCO studies to date.",
+      "claim_type": "EXPLICIT",
+      "source": "This study achieved the highest improvement of melting temperature of all FRESCO studies to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previous FRESCO studies shown in Table 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "9fd7d9b2-e7b7-4509-bc2d-0a3ba39fbec6",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C89",
+      "claim": "Up to now, there have been six studies that applied FRESCO, and it has shown effective improvements in stability with Tm differences up to +35 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Up to now, there have been six studies that applied FRESCO, and it has shown effective improvements in stability with Tm differences up to +35 \u00b0C (Table 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of previous FRESCO studies in Table 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "d75f51db-75bc-4910-a0bd-fc8e558567d9",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C90",
+      "claim": "Limonene epoxide hydrolase (LEH) was improved by +35 \u00b0C using FRESCO.",
+      "claim_type": "EXPLICIT",
+      "source": "Limonene epoxide hydrolase LEH 149 Dimer +35 \u00b0C (Wijma et al., 2014)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 5",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "dfd1d623-b107-4ef7-9a03-8654424d5e46",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C91",
+      "claim": "Haloalkane dehalogenase (LinB) was improved by +22 \u00b0C using FRESCO.",
+      "claim_type": "EXPLICIT",
+      "source": "Haloalkane dehalogenase LinB 250 Monomer +22 \u00b0C (Floor et al., 2014)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 5",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "eabf89ab-af5c-4bc3-a1ca-8a47fa972b34",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C92",
+      "claim": "Hydroxymethyl furfural oxidase (HMFO) was improved by +12 \u00b0C using FRESCO.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydroxymethyl furfural oxidase HMFO 525 Monomer +12 \u00b0C (Martin et al., 2018)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 5",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "1e94b718-892f-4296-ac4b-240832cbf9ef",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C93",
+      "claim": "Peptide amidase (PAM) was improved by +23 \u00b0C using FRESCO.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptide amidase PAM 508 Monomer +23 \u00b0C (Wu et al., 2016)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 5",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "4edf6383-a98a-4e9e-b2f6-198bb77a8e2d",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C94",
+      "claim": "Halohydrin dehalogenase (HheC) was improved by +28 \u00b0C using FRESCO.",
+      "claim_type": "EXPLICIT",
+      "source": "Halohydrin dehalogenase HheC 254 Tetramer +28 \u00b0C (Arabnejad et al., 2017)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 5",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "8d302080-b8bd-4d4d-9855-2eafdfaa3bc2",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C95",
+      "claim": "Cyclohexanone monooxygenase (CHMO) was improved by +13 \u00b0C using FRESCO.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclohexanone monooxygenase CHMO 529 Monomer +13 \u00b0C (F\u00fcrst et al., 2019)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 5",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "22506587-2382-4db6-a4fe-e32fcee96692",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C96",
+      "claim": "Glucose oxidase (GOX) was improved by +8.5 \u00b0C using FRESCO.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose oxidase GOX 605 Dimer +8.5 \u00b0C (Mu et al., 2019)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 5",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "612185fc-e013-491a-8bc6-7dcdfef4f699",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C97",
+      "claim": "\u03c9-Transaminase (\u03c9-TA) was improved by +23 \u00b0C using FRESCO.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03c9-Transaminase \u03c9-TA 455 Dimer +23 \u00b0C (Meng et al., 2020)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 5",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "f7025bd2-5721-4c74-9976-d9c412b63999",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C98",
+      "claim": "The initial FRESCO calculations and predictions for ADHA had a hit rate of 22% (39 out of 177 tested mutations had a stabilizing effect of > 2 \u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "The initial FRESCO calculations and predictions for ADHA had a good hit rate: of the tested 177 mutations, 39 had a stabilizing effect of > 2 \u00b0C (22%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of screening results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "9d9cbd69-b8b0-4564-98f9-73e0fb57195d",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C99",
+      "claim": "In previous uses of FRESCO, 20\u201340% of the FRESCO-predicted mutations were found to be stabilizing.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with previous uses of FRESCO, in which 20\u201340% of the FRESCO-predicted mutations were found to be stabilizing (F\u00fcrst et al., 2018; Wijma et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to F\u00fcrst et al., 2018 and Wijma et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "a6274a35-1d38-4e0c-911f-178442f2556f",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C100",
+      "claim": "For the FoldX values some correlation was found with measured melting temperatures (Pearson r = 0.3, p < 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "The Rosetta calculations bore no relation to the measured melting temperatures, whereas for the FoldX values some correlation was found (Pearson r = 0.3, p < 0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of computational predictions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "34d505de-ec67-49a9-bd25-105d6f9ce4a2",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C101",
+      "claim": "The Rosetta calculations bore no relation to the measured melting temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rosetta calculations bore no relation to the measured melting temperatures, whereas for the FoldX values some correlation was found (Pearson r = 0.3, p < 0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of computational predictions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "8c80de62-372c-4e60-9bdd-7501309b1f4f",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C102",
+      "claim": "4 out of 9 of the selected mutations were not found by FoldX, despite being highly stabilizing.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, 4/9 of the selected mutations were not found by FoldX, despite being highly stabilizing (Supplementary file 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of computational predictions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "803ad420-2024-47b0-8948-a31904d60ed7",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C103",
+      "claim": "The somewhat better predictive quality of FoldX as compared to Rosetta has been described before.",
+      "claim_type": "EXPLICIT",
+      "source": "This somewhat better predictive quality of FoldX as compared to Rosetta has been described before (Bu\u00df et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bu\u00df et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "87cb0b8e-984d-4b92-8351-27388fd05b8b",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C104",
+      "claim": "The gene of ADHA was identified in a PCR-based genome screening for new ketoreductases from Candida magnoliae DSMZ 70638 using degenerate PCR primers.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene of ADHA was identified in a PCR-based genome screening for new ketoreductases from Candida magnoliae DSMZ 70638 using degenerate PCR primers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of gene identification method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "05793c4c-2c6d-4635-9cdb-980a76726296",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C105",
+      "claim": "Wild-type crystals diffracted at 1.6\u20132.0 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type crystals diffracted at 1.6\u20132.0 \u00c5, while the resolution of diffraction by the mutant crystals was 2.6 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "15f30aac-6993-40d3-9cd1-573fc9c05299",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C106",
+      "claim": "The resolution of diffraction by the M9 mutant crystals was 2.6 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type crystals diffracted at 1.6\u20132.0 \u00c5, while the resolution of diffraction by the mutant crystals was 2.6 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "8876f0a4-83af-4652-add3-cc3b33a5a5d3",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C107",
+      "claim": "The catalytic triad of SDRs is usually designated as SYK (serine, tyrosine, lysine).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the catalytic triad of SDRs is usually designated as SYK (serine, tyrosine, lysine).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about SDR catalytic triads",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "017c1a76-8259-4c7e-a478-436c32fc1c83",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C108",
+      "claim": "A catalytic threonine can support redox catalysis in an SDR-type alcohol dehydrogenase.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, a catalytic threonine can also support redox catalysis in an SDR-type alcohol dehydrogenase, and such an alternative catalytic triad has also been observed before (King et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to King et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "40ec09aa-10cc-4910-bd06-9df051e20401",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C109",
+      "claim": "The structure of ADHA bound to NADP+ unveils a well-defined catalytic pocket with a size suited for small cyclic compounds such as cyclohexanol.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of ADHA bound to NADP+ unveils, apart from a disordered nicotinamide moiety, a well-defined catalytic pocket with a size suited for small cyclic compounds such as cyclohexanol, a good substrate of the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural analysis of NADP+-bound ADHA",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "07c1fa2b-6dbc-4763-b7b1-f051dff8931e",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C110",
+      "claim": "The nicotinamide moiety of NADP+ is disordered in the wild-type ADHA structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The figure highlights the final weighted 2Fo-Fc map for NADP+ bound to a subunit of the wild-type ADHA (subunit A, contour level 1.2 \u03c3). The nicotinamide moiety of the cofactor is disordered and was not included in the final model.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Crystallographic observation shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "7087f96a-ff12-4ad8-b10e-ec14c5330f82",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C111",
+      "claim": "Enzymes that can be easily degraded after some time enable greater metabolic adaptability for the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, enzymes that can be easily degraded after some time enable greater metabolic adaptability for the organism, for instance when a local resource depletes, or a signaling event occurs (DePristo et al., 2005; Parsell and Sauer, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to DePristo et al., 2005 and Parsell and Sauer, 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "8ca77247-7544-4aa1-967e-94b81ddf978c",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C112",
+      "claim": "Improved side-chain packing and hydrophobic interactions are the likely source of the stabilizing effect of mutations G149A, L150F, V193L, T194V, and V217P.",
+      "claim_type": "EXPLICIT",
+      "source": "G149A, L150F (the most stabilizing mutation of all), V193L, T194V, and V217P all contributed substantially to thermostability, with up to 14 \u00b0C increase in the Tm values at the single mutant level (Table 2). The structural analysis clearly shows that improved side-chain packing and hydrophobic interactions are the likely source of their stabilizing effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural analysis and inference from crystal structure data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "c3690274-d363-4d9e-b431-861f6cc9c4df",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C113",
+      "claim": "V238L promotes more extended interaction of the subunits within the tetramer by allowing a hydrophobic interaction with itself at the dimer interface.",
+      "claim_type": "EXPLICIT",
+      "source": "V238L (+7 \u00b0C) is a unique case, promoting more extended interaction of the subunits within the tetramer (Figure 5). Curiously, the mutation does so by allowing a hydrophobic interaction with itself at the dimer interface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural analysis shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "2e715553-c3d2-4d51-832a-85849c2c8220",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C114",
+      "claim": "The large (+8 \u00b0C) stability effect of M157K very likely arises from the removal of a solvent-exposed hydrophobic group and its replacement with the charged and hydrophilic amine of a lysine residue.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the identified mutations, M157K is the only one that replaces a hydrophobic residue with a hydrophilic and charged side chain (Figure 4C). It has a large (+8 \u00b0C; Table 2) effect on protein stability, which very likely arises from the removal of a solvent-exposed hydrophobic group and its replacement with the charged and hydrophilic amine of a lysine residue.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural analysis and inference from mutation characteristics",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "a4ba2314-9768-4828-8180-55e606a47fd7",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C115",
+      "claim": "The conspicuous (+5 \u00b0C) stability of N212R can be tentatively attributed to the more pronounced polarity of an arginine side chain as compared to an asparagine.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, N212R is possibly the most puzzling mutation. It positions an arginine side chain in a fully solvent-exposed location (Figure 4C) and its conspicuous (+5 \u00b0C) stability can be tentatively attributed to the more pronounced polarity of an arginine side chain as compared to an asparagine (Szil\u00e1gyi and Z\u00e1vodszky, 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural analysis and inference supported by citation to Szil\u00e1gyi and Z\u00e1vodszky, 2000",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "aaf08546-7498-4116-9331-7bf59d7ab1d8",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C116",
+      "claim": "All stabilizing mutations of M9 promote hydrophobic packing of side chains or install highly polar and charged groups on fully solvent-exposed positions on the protein surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the detailed structural analysis of the mutation sites reveals a consistent pattern concerning the stabilizing effects: all stabilizing mutations of M9 promote hydrophobic packing of side chains or install highly polar and charged groups on fully solvent-exposed positions on the protein surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of structural analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "91650098-f316-4dc6-8513-dc330620ea5c",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C117",
+      "claim": "Prolines often occur at 'helical capping' positions by restraining the backbone conformation and positioning a substituted backbone amino group that is unable to form H-bonding interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Prolines often occur at 'helical capping' positions by restraining the backbone conformation and positioning a substituted backbone amino group that is unable to form H-bonding interactions (Richardson and Richardson, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Richardson and Richardson, 1988",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "cf19431c-26bd-4b2b-bbb1-5ff537096c0b",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C118",
+      "claim": "The V217P mutation follows the trend of prolines occurring at helical capping positions.",
+      "claim_type": "EXPLICIT",
+      "source": "V217P is a seemingly conservative mutation at the beginning of an \u03b1-helix and yet caused a significant effect (+3 \u00b0C; Table 2 and Figure 4C). Prolines often occur at 'helical capping' positions by restraining the backbone conformation and positioning a substituted backbone amino group that is unable to form H-bonding interactions (Richardson and Richardson, 1988). The V217P mutation follows this trend.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural analysis and inference from known proline behavior",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "8a69026b-82fe-461d-b33a-56ebe5f587c8",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C119",
+      "claim": "Dimers and tetramers may gain a lot of stability from having subunit-subunit interfaces that stabilize hydrophobic regions of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimers and tetramers may gain a lot of stability from having subunit-subunit interfaces that stabilize hydrophobic regions of the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of FRESCO results across different enzyme types",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "c06beb15-3552-4821-a5f3-556563341dd3",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C120",
+      "claim": "Enzymes containing cofactors (oxidases, Baeyer-Villiger monooxygenases) showed relatively moderate improvement with FRESCO.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, enzymes containing cofactors (oxidases, Baeyer-Villiger monooxygenases) showed relatively moderate improvement: the FAD-containing HMF oxidase and cyclohexanone monooxygenase were improved by only 12\u201313 \u00b0C (Table 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of FRESCO results shown in Table 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "f0aaf965-5872-49a7-93fa-0d108570f4c2",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C121",
+      "claim": "The employed computational algorithms (Rosettaddg and FoldX) cannot take into account the flavin-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This may due to the fact that the employed computational algorithms (Rosettaddg and FoldX) cannot take into account the flavin-protein interactions (Wijma et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wijma et al., 2018",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "111290d9-3b4d-4c02-b17c-e5f1882fe24f",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "claim_id": "C122",
+      "claim": "The combination of both Rosetta and FoldX calculations, together with the MD simulations in the FRESCO workflow, results in a satisfactory rate of predicted stabilizing mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, the combination of both calculations, together with the MD simulations in the FRESCO workflow, results in a satisfactory rate of predicted stabilizing mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from analysis of computational prediction results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "acedafde-4d8a-4650-883f-dbbf57b1b6b2",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on alcohol dehydrogenases (ADHs), particularly the short-chain dehydrogenase/reductase (SDR) family, describing their catalytic properties, substrate range, cofactor requirements, and structural characteristics including the characteristic Ser-Tyr-Lys catalytic triad.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 are well-supported by appropriate citations to established literature (Kavanagh et al., 2008; Oppermann et al., 2003; Bhatia et al., 2015; Nealon et al., 2015; Zheng et al., 2017; Sol\u00e9 et al., 2019) and represent accepted knowledge in the field. These background claims provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "d378ea55-ea6e-46b7-97f5-be5c0b006c70",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript establishes the rationale for enzyme stabilization by explaining that many enzymes have evolved for intracellular conditions and limited lifespans, resulting in moderate stability that is often insufficient for biocatalytic applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 and C111 are supported by appropriate citations (DePristo et al., 2005; Goldenzweig and Fleishman, 2018; Bommarius and Paye, 2013; Woodley, 2019; Parsell and Sauer, 1989) and represent well-established concepts in protein engineering. This provides clear motivation for the stabilization work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "77fc6d11-72f5-4cd5-b0d2-62fd692cb2d1",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ADHA from Candida magnoliae DSMZ 70638 displays high reductive activity toward various ketones with excellent enantioselectivity (>97% ee) but has moderate thermostability (Tm = 43\u00b0C) and loses most activity in reactions lasting 8 hours or longer at 25-30\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C23, C29-C30, and C104 are supported by experimental data presented in Table 1 showing substrate-specific activities and enantioselectivities. The Tm measurement (C17) and stability observations (C30) provide clear justification for pursuing enzyme stabilization. The data are internally consistent and appropriately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "19e2b920-0b29-441e-806a-9189b277b2c3",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The crystal structure of wild-type ADHA was solved in both apo (2.0 \u00c5) and NADP+-bound (1.6 \u00c5) states, revealing a homotetrameric structure typical of SDRs with closest structural homology to another C. magnoliae ADH (PDB 5MLN, RMSD 1.0 \u00c5, 64% sequence identity).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36, C105, C109-C110 are supported by crystallographic data with appropriate resolution (1.6-2.0 \u00c5) and structural analysis. The structural comparison to PDB 5MLN is quantitatively documented. The observation of a disordered nicotinamide moiety (C110) is a crystallographic detail that becomes relevant later. Crystallographic statistics are referenced in Supplementary file 1A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "328c7c61-4d1e-4456-8b67-ffe56d29b53e",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The FRESCO computational method was applied to predict stabilizing mutations by calculating folding free energy changes (\u0394\u0394GFold) using two algorithms, followed by molecular dynamics simulations and visual inspection, resulting in selection of 177 mutations for experimental screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 and C37 describe the computational methodology appropriately. The FRESCO method is previously published (Wijma et al., 2018) and the selection process is clearly described. The number of mutations selected (177) is specific and forms the basis for subsequent experimental work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "a1692efd-b815-4416-9a49-e5d728e24cdc",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Experimental screening of 177 FRESCO-predicted mutations identified 25 significantly stabilizing mutations (\u0394Tm \u2265 +3\u00b0C), though 11 of these showed poor or no activity. The most stabilizing single mutations included L150F (+14\u00b0C), G149A (+9.5\u00b0C), M157K (+8\u00b0C), and S197E (+7.5\u00b0C).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C50 are supported by experimental data shown in Figure 2 and Table 2. The screening results are quantitatively reported with error estimates. The observation that some stabilizing mutations impair activity (C43) is an important finding that demonstrates the trade-off between stability and function. Technical replicates are mentioned and error bars are provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "c85bc794-204e-444c-a435-3c013806fadd",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Combined mutants showed superior expression compared to wild-type and could be expressed at 37\u00b0C overnight. Beyond the M4 mutant, enzymes displayed two melting points in ThermoFluor measurements, with the first appearing 10-11\u00b0C before the second major peak.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by experimental observations documented in Supplementary file 2A and Table 2. The appearance of two melting points (C52) is an interesting biophysical observation that may reflect partial unfolding or tetramer dissociation, as the authors suggest. This is appropriately documented in the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "232e3c2d-95d8-4141-999b-b87ebb00a988",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The 10-fold M9 mutant achieved a Tm of 94\u00b0C (+51\u00b0C), representing the highest FRESCO improvement to date, but showed impaired catalytic properties with 100-fold higher KM for NADP+ (1.0 mM vs 9.5 \u00b5M) and 4-fold decreased kcat (0.27 s\u207b\u00b9 vs 1.1 s\u207b\u00b9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27, C53-C54, C69-C70 are supported by experimental data in Tables 2-3 and Figure 3. The dramatic stability improvement is well-documented, as is the impairment in catalytic parameters. The kinetic measurements appear properly conducted with appropriate error estimates. The comparison to previous FRESCO studies (C27) is supported by Table 5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "475f2ae7-95e6-435e-ac23-f616a460c19b",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The M9 crystal structure (2.6 \u00c5 resolution) revealed that all mutations cluster in the same region at the tetramer interface, with overall structure very similar to wild-type (RMSD 0.58 \u00c5). The major structural change is a 3.1 \u00c5 shift in loop 196-214, where the S197E mutation occupies the NADP+ binding site and interacts with R18, explaining the increased KM for cofactor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C64 and C106 are supported by crystallographic data and structural analysis shown in Figure 4. The structural explanation for the impaired cofactor binding is logical and well-supported by the electron density maps showing absence of NADP+ despite its presence in crystallization conditions (C56). The RMSD value (C59) and loop shift measurement (C60) are quantitative and appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "a0ade212-7e0b-4978-87c6-bd0e41e0c422",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Structural analysis reveals that stabilizing mutations work through two main mechanisms: improved hydrophobic packing (G149A, L150F, V193L, T194V, V217P, V238L) or installation of polar/charged groups on solvent-exposed surfaces (M157K, N212R).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C118 provide structural rationalization for the stabilizing effects, supported by crystal structure analysis in Figures 4-5 and appropriate citations (Richardson and Richardson, 1988; Szil\u00e1gyi and Z\u00e1vodszky, 2000). The mechanistic explanations are reasonable based on protein stability principles. The V238L dimer interface interaction (C113) is particularly well-illustrated in Figure 5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "22e129e3-3eb3-420a-bf12-fef02ca64f00",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Reverting the S197E mutation in M9 to create M9* rescued activity while maintaining high stability (Tm = 88\u00b0C, +45\u00b0C), with KM for NADP+ restored to wild-type levels (9.6 \u00b5M) and only slightly reduced kcat (0.7 s\u207b\u00b9), while retaining excellent enantioselectivity (>99% ee).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C65-C66, C71-C73, C75 are supported by kinetic data in Table 3 and Figure 6. The rational design approach of reverting S197E based on structural analysis successfully rescued activity while maintaining most of the stability improvement. This demonstrates the power of combining computational prediction with structural analysis. The enantioselectivity data confirm that the active site geometry is preserved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "a1d5bb21-54cc-4d94-9700-abf9fec3dc29",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "M9* shows optimal activity at 55-60\u00b0C and remains active at 85\u00b0C, whereas wild-type shows little activity above 40\u00b0C. The stabilizing effect of NADP+ binding is reduced in M9 (+3\u00b0C) compared to wild-type (+9\u00b0C).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 are supported by temperature-activity profile data in Figure 7A and cofactor binding experiments. The shifted temperature optimum is consistent with the increased thermostability. The reduced stabilization by cofactor binding in M9 (C79-C80) suggests that the mutations partially stabilize regions normally stabilized by cofactor, which is a reasonable interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "87d19c92-8b20-48d7-8d0e-c7fa05995c38",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Long-term stability testing at 37\u00b0C showed wild-type ADHA has a half-life of ~2 hours with only 8.7% activity remaining after 22 hours, while M9* maintained full activity after 22 hours and had a half-life of 11 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 are supported by stability data in Figure 7B and Figure 7\u2014figure supplement 1. The dramatic improvement in operational stability (from 2 hours to 11 days half-life) is highly significant for practical applications. The measurements appear properly conducted with appropriate time points.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "147d7f86-530e-461f-a90b-3b173596d3f9",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "M9* retains substantial stability in the presence of 20% cosolvents, with Tm values of 76\u00b0C (methanol), 71.5\u00b0C (ethanol), and 67\u00b0C (isopropanol), representing decreases of 12-21\u00b0C from the cosolvent-free Tm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 are supported by data in Table 4. The cosolvent tolerance is practically important for biocatalytic applications with hydrophobic substrates. The magnitude of Tm decrease follows the expected trend based on cosolvent hydrophobicity. Error estimates are provided (\u00b10.5\u00b0C).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "1d123a7c-293e-4c30-9e3f-9c7fad8181df",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "This study achieved a +45\u00b0C improvement in Tm, the highest for FRESCO to date. Previous FRESCO applications on eight other enzymes achieved improvements ranging from +8.5\u00b0C to +35\u00b0C, with dimeric and tetrameric enzymes generally showing larger improvements than monomeric enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C97 are supported by comparative data in Table 5 with appropriate citations. The comparison to previous FRESCO studies is fair and well-documented. The observation that quaternary structure may influence the magnitude of improvement (C119-C120) is a reasonable inference from the data, though it would benefit from more systematic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "a7c6c530-5c8a-4ed6-beb9-333a117c35ec",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "FRESCO predictions for ADHA had a 22% hit rate (39/177 mutations with >2\u00b0C stabilization). FoldX showed weak correlation with experimental Tm (Pearson r=0.3, p<0.02) while Rosetta showed no correlation, though 4/9 final mutations were not predicted by FoldX alone, demonstrating the value of combining both algorithms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C103 and C122 provide appropriate analysis of the computational predictions. The hit rate (22%) is consistent with previous FRESCO studies (C99). The statistical analysis (C100-C101) is appropriate, though the correlation is weak. The observation that some highly stabilizing mutations were missed by FoldX alone (C102) supports the value of the combined approach. The citation to Bu\u00df et al., 2018 (C103) appropriately contextualizes the FoldX vs Rosetta comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "c47d2712-3a9c-4f3e-bf39-2fd51fff71a2",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Analysis of FRESCO results across enzyme types suggests that dimeric and tetrameric enzymes may achieve greater stability improvements than monomeric enzymes, while cofactor-containing enzymes show more moderate improvements, possibly because current algorithms cannot account for cofactor-protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C119-C121 represent reasonable inferences from the comparative data in Table 5, but the analysis is limited. The sample size is small (9 enzymes total), and multiple confounding factors (enzyme size, starting stability, structural features) are not systematically controlled. The explanation for cofactor-containing enzymes (C121) is plausible and supported by citation to Wijma et al., 2018, but remains speculative without direct testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "b92121ff-c5c3-43aa-a7c1-eccb93082426",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "While the typical SDR catalytic triad is Ser-Tyr-Lys, ADHA contains Thr-Tyr-Lys, demonstrating that a catalytic threonine can support redox catalysis in SDR-type alcohol dehydrogenases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C108 are supported by structural data and appropriate citation to King et al., 2007 showing precedent for this alternative catalytic triad. This is a minor but interesting structural observation that does not affect the main conclusions of the stabilization work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    },
+    {
+      "id": "20bee53d-ac97-416a-9d18-97667b8e5a32",
+      "content_id": "8f920519-4dfb-4980-b8d3-77f47cdd460e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Wild-type ADHA has kinetic parameters of kcat = 1.1 \u00b1 0.04 s\u207b\u00b9 and KM,NADP+ = 9.5 \u00b1 1.2 \u00b5M with cyclohexanol as substrate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 provide baseline kinetic characterization supported by data in Table 3 and Figure 6. The measurements include appropriate error estimates and appear to be conducted in duplicate or triplicate as stated in methods. These values serve as the reference for evaluating mutant enzymes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:09:00.235353Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "694da3a7-cb7b-4ed0-93fc-ac6403c1e2db",
+      "result_id": "acedafde-4d8a-4650-883f-dbbf57b1b6b2"
+    },
+    {
+      "claim_id": "89fe65e3-28aa-4586-9535-46d8d4c4b5dc",
+      "result_id": "acedafde-4d8a-4650-883f-dbbf57b1b6b2"
+    },
+    {
+      "claim_id": "a2b38397-df39-45cd-95ce-485038daf6d2",
+      "result_id": "acedafde-4d8a-4650-883f-dbbf57b1b6b2"
+    },
+    {
+      "claim_id": "cb109099-bdc7-42c0-aedb-a8e961b5e241",
+      "result_id": "acedafde-4d8a-4650-883f-dbbf57b1b6b2"
+    },
+    {
+      "claim_id": "2ea18d3b-5908-47c7-97ae-eb621f2f8792",
+      "result_id": "acedafde-4d8a-4650-883f-dbbf57b1b6b2"
+    },
+    {
+      "claim_id": "03dcfbd3-9de3-4516-8652-83fc2adabb16",
+      "result_id": "acedafde-4d8a-4650-883f-dbbf57b1b6b2"
+    },
+    {
+      "claim_id": "9f26c702-45da-44fa-b159-0876aeb81a8e",
+      "result_id": "acedafde-4d8a-4650-883f-dbbf57b1b6b2"
+    },
+    {
+      "claim_id": "b60ae936-6ad7-4cae-aa2d-39470a21154a",
+      "result_id": "acedafde-4d8a-4650-883f-dbbf57b1b6b2"
+    },
+    {
+      "claim_id": "9124d168-7e90-47e7-99d8-91dc2db0bd80",
+      "result_id": "acedafde-4d8a-4650-883f-dbbf57b1b6b2"
+    },
+    {
+      "claim_id": "72d81db4-ea2f-4e76-93be-fb847631e1d8",
+      "result_id": "acedafde-4d8a-4650-883f-dbbf57b1b6b2"
+    },
+    {
+      "claim_id": "3783751c-99df-461a-9aa8-d1751a0a6b62",
+      "result_id": "acedafde-4d8a-4650-883f-dbbf57b1b6b2"
+    },
+    {
+      "claim_id": "1ca092a8-fcb0-42e7-ad1c-2064ec818b4a",
+      "result_id": "d378ea55-ea6e-46b7-97f5-be5c0b006c70"
+    },
+    {
+      "claim_id": "b11523f3-6675-44a1-b5c4-469258352a7e",
+      "result_id": "d378ea55-ea6e-46b7-97f5-be5c0b006c70"
+    },
+    {
+      "claim_id": "410a130f-b5c2-41da-9f64-192843a05780",
+      "result_id": "d378ea55-ea6e-46b7-97f5-be5c0b006c70"
+    },
+    {
+      "claim_id": "7087f96a-ff12-4ad8-b10e-ec14c5330f82",
+      "result_id": "d378ea55-ea6e-46b7-97f5-be5c0b006c70"
+    },
+    {
+      "claim_id": "4d408374-d4dd-444a-94fc-8d228673d472",
+      "result_id": "77fc6d11-72f5-4cd5-b0d2-62fd692cb2d1"
+    },
+    {
+      "claim_id": "869cd191-8288-4812-8333-71f80f33b020",
+      "result_id": "77fc6d11-72f5-4cd5-b0d2-62fd692cb2d1"
+    },
+    {
+      "claim_id": "0d24521d-26e0-41a9-b9e2-a0777f9b8ff2",
+      "result_id": "77fc6d11-72f5-4cd5-b0d2-62fd692cb2d1"
+    },
+    {
+      "claim_id": "01005041-76a0-42d5-8b5e-91b99d28f557",
+      "result_id": "77fc6d11-72f5-4cd5-b0d2-62fd692cb2d1"
+    },
+    {
+      "claim_id": "84830541-8f12-4ead-9cb5-1670ad2d1c63",
+      "result_id": "77fc6d11-72f5-4cd5-b0d2-62fd692cb2d1"
+    },
+    {
+      "claim_id": "d5690294-fff5-4044-9061-337e88e44d63",
+      "result_id": "77fc6d11-72f5-4cd5-b0d2-62fd692cb2d1"
+    },
+    {
+      "claim_id": "0870dbd8-416a-4591-9b92-7d0ce318f4e1",
+      "result_id": "77fc6d11-72f5-4cd5-b0d2-62fd692cb2d1"
+    },
+    {
+      "claim_id": "384be860-ab14-4eeb-8233-74a6894f9b1c",
+      "result_id": "77fc6d11-72f5-4cd5-b0d2-62fd692cb2d1"
+    },
+    {
+      "claim_id": "525f4d6a-a152-42df-b908-0ae1ef9671f4",
+      "result_id": "77fc6d11-72f5-4cd5-b0d2-62fd692cb2d1"
+    },
+    {
+      "claim_id": "dd7bec56-6588-41c1-92e0-b2ec97f7d545",
+      "result_id": "77fc6d11-72f5-4cd5-b0d2-62fd692cb2d1"
+    },
+    {
+      "claim_id": "9d5b5068-6ce0-4bd8-8902-1afffe29b229",
+      "result_id": "77fc6d11-72f5-4cd5-b0d2-62fd692cb2d1"
+    },
+    {
+      "claim_id": "87cb0b8e-984d-4b92-8351-27388fd05b8b",
+      "result_id": "77fc6d11-72f5-4cd5-b0d2-62fd692cb2d1"
+    },
+    {
+      "claim_id": "41ffbae1-382b-4b1b-974f-5c37aabd06d3",
+      "result_id": "19e2b920-0b29-441e-806a-9189b277b2c3"
+    },
+    {
+      "claim_id": "e8f17878-da4f-4c1c-a126-59b0a500692f",
+      "result_id": "19e2b920-0b29-441e-806a-9189b277b2c3"
+    },
+    {
+      "claim_id": "9ae726a3-7247-4b67-9612-0f47137ff96e",
+      "result_id": "19e2b920-0b29-441e-806a-9189b277b2c3"
+    },
+    {
+      "claim_id": "a158e354-ac8b-413f-8dde-8e1bcd4e9547",
+      "result_id": "19e2b920-0b29-441e-806a-9189b277b2c3"
+    },
+    {
+      "claim_id": "6c057269-fe80-406a-932a-b628d79dd007",
+      "result_id": "19e2b920-0b29-441e-806a-9189b277b2c3"
+    },
+    {
+      "claim_id": "ee8b130a-79d9-4aca-9882-a1ea8bb3213b",
+      "result_id": "19e2b920-0b29-441e-806a-9189b277b2c3"
+    },
+    {
+      "claim_id": "05793c4c-2c6d-4635-9cdb-980a76726296",
+      "result_id": "19e2b920-0b29-441e-806a-9189b277b2c3"
+    },
+    {
+      "claim_id": "40ec09aa-10cc-4910-bd06-9df051e20401",
+      "result_id": "19e2b920-0b29-441e-806a-9189b277b2c3"
+    },
+    {
+      "claim_id": "07c1fa2b-6dbc-4763-b7b1-f051dff8931e",
+      "result_id": "19e2b920-0b29-441e-806a-9189b277b2c3"
+    },
+    {
+      "claim_id": "0b6b33b6-a5e6-43db-890c-c5f0313d73ff",
+      "result_id": "328c7c61-4d1e-4456-8b67-ffe56d29b53e"
+    },
+    {
+      "claim_id": "cc192cd6-0349-4e3b-afcf-04ebbeb8d000",
+      "result_id": "328c7c61-4d1e-4456-8b67-ffe56d29b53e"
+    },
+    {
+      "claim_id": "5f07561f-8578-4912-9765-08ab9432037e",
+      "result_id": "328c7c61-4d1e-4456-8b67-ffe56d29b53e"
+    },
+    {
+      "claim_id": "dc9f564a-6384-4131-9fa2-38d800ca3948",
+      "result_id": "a1692efd-b815-4416-9a49-e5d728e24cdc"
+    },
+    {
+      "claim_id": "f05ded99-e89e-4aa0-87d0-b2a0f6682a0c",
+      "result_id": "a1692efd-b815-4416-9a49-e5d728e24cdc"
+    },
+    {
+      "claim_id": "b2ecd7af-939b-4d3e-9743-21c993f2fc83",
+      "result_id": "a1692efd-b815-4416-9a49-e5d728e24cdc"
+    },
+    {
+      "claim_id": "65038891-c5f4-4be7-b1ac-f71af1f26268",
+      "result_id": "a1692efd-b815-4416-9a49-e5d728e24cdc"
+    },
+    {
+      "claim_id": "c4e5cde9-7404-4752-b3c7-321ff8c79251",
+      "result_id": "a1692efd-b815-4416-9a49-e5d728e24cdc"
+    },
+    {
+      "claim_id": "e23e9c6c-35ad-40a8-bb22-cce503f09206",
+      "result_id": "a1692efd-b815-4416-9a49-e5d728e24cdc"
+    },
+    {
+      "claim_id": "15fe3a1b-9e88-49e7-90b3-b48012c213c2",
+      "result_id": "a1692efd-b815-4416-9a49-e5d728e24cdc"
+    },
+    {
+      "claim_id": "5533c406-393d-4e10-82a6-1a30c6334c1f",
+      "result_id": "a1692efd-b815-4416-9a49-e5d728e24cdc"
+    },
+    {
+      "claim_id": "55f41836-7b63-403f-aa01-0a7deece1bb5",
+      "result_id": "a1692efd-b815-4416-9a49-e5d728e24cdc"
+    },
+    {
+      "claim_id": "b4e6c27a-f810-4287-b78e-5a211452a246",
+      "result_id": "a1692efd-b815-4416-9a49-e5d728e24cdc"
+    },
+    {
+      "claim_id": "97d1afd4-7418-47e7-93ea-008abb5c78a8",
+      "result_id": "a1692efd-b815-4416-9a49-e5d728e24cdc"
+    },
+    {
+      "claim_id": "a35b41e2-ec6e-4e25-9c22-947a6b82750e",
+      "result_id": "a1692efd-b815-4416-9a49-e5d728e24cdc"
+    },
+    {
+      "claim_id": "51af883d-0400-4cf8-832b-20e45b05c4dd",
+      "result_id": "a1692efd-b815-4416-9a49-e5d728e24cdc"
+    },
+    {
+      "claim_id": "ee5bdf5d-d057-4953-9f41-9e8a732ec4d7",
+      "result_id": "c85bc794-204e-444c-a435-3c013806fadd"
+    },
+    {
+      "claim_id": "3934d67c-e7e3-4f69-8e9a-5a0ba7b8bdf9",
+      "result_id": "c85bc794-204e-444c-a435-3c013806fadd"
+    },
+    {
+      "claim_id": "44f5fa9e-8265-4d81-bb39-9772e78525ee",
+      "result_id": "232e3c2d-95d8-4141-999b-b87ebb00a988"
+    },
+    {
+      "claim_id": "8d5bf0e6-95fe-48a3-99cf-7341986810b5",
+      "result_id": "232e3c2d-95d8-4141-999b-b87ebb00a988"
+    },
+    {
+      "claim_id": "8236ce9e-5ef6-47f9-84ba-6c14e7c2fbaf",
+      "result_id": "232e3c2d-95d8-4141-999b-b87ebb00a988"
+    },
+    {
+      "claim_id": "ad89adc0-4555-4c2e-88ad-d6eac776a2dc",
+      "result_id": "232e3c2d-95d8-4141-999b-b87ebb00a988"
+    },
+    {
+      "claim_id": "92b71191-3180-4d7b-ad50-b11dfce8cce1",
+      "result_id": "232e3c2d-95d8-4141-999b-b87ebb00a988"
+    },
+    {
+      "claim_id": "9a34b631-4273-4a21-bc3a-b120deafb8ec",
+      "result_id": "232e3c2d-95d8-4141-999b-b87ebb00a988"
+    },
+    {
+      "claim_id": "1b2f8e83-8697-4873-bb00-8ec9fc23d8e0",
+      "result_id": "475f2ae7-95e6-435e-ac23-f616a460c19b"
+    },
+    {
+      "claim_id": "49f065db-473c-4816-af62-86269fe11c54",
+      "result_id": "475f2ae7-95e6-435e-ac23-f616a460c19b"
+    },
+    {
+      "claim_id": "faa36ef5-e0c9-47ee-911b-6721af3b0843",
+      "result_id": "475f2ae7-95e6-435e-ac23-f616a460c19b"
+    },
+    {
+      "claim_id": "bdad2abf-6e8c-4b38-a019-27c3fe794b7a",
+      "result_id": "475f2ae7-95e6-435e-ac23-f616a460c19b"
+    },
+    {
+      "claim_id": "78b9592b-21d5-44b7-8e32-de02ee9ff438",
+      "result_id": "475f2ae7-95e6-435e-ac23-f616a460c19b"
+    },
+    {
+      "claim_id": "6b8553cb-8635-4095-bca0-1604d9533ce3",
+      "result_id": "475f2ae7-95e6-435e-ac23-f616a460c19b"
+    },
+    {
+      "claim_id": "4a21aeb0-f6b4-4ee6-b70b-afccb8b02d91",
+      "result_id": "475f2ae7-95e6-435e-ac23-f616a460c19b"
+    },
+    {
+      "claim_id": "b8994b9a-dd2a-480e-86af-de456fc60752",
+      "result_id": "475f2ae7-95e6-435e-ac23-f616a460c19b"
+    },
+    {
+      "claim_id": "a90fc149-daa0-4a80-8649-5fd7e37fd2f7",
+      "result_id": "475f2ae7-95e6-435e-ac23-f616a460c19b"
+    },
+    {
+      "claim_id": "e6a0144f-5cef-4501-ab74-b68c03744da2",
+      "result_id": "475f2ae7-95e6-435e-ac23-f616a460c19b"
+    },
+    {
+      "claim_id": "15f30aac-6993-40d3-9cd1-573fc9c05299",
+      "result_id": "475f2ae7-95e6-435e-ac23-f616a460c19b"
+    },
+    {
+      "claim_id": "8ca77247-7544-4aa1-967e-94b81ddf978c",
+      "result_id": "a0ade212-7e0b-4978-87c6-bd0e41e0c422"
+    },
+    {
+      "claim_id": "c3690274-d363-4d9e-b431-861f6cc9c4df",
+      "result_id": "a0ade212-7e0b-4978-87c6-bd0e41e0c422"
+    },
+    {
+      "claim_id": "2e715553-c3d2-4d51-832a-85849c2c8220",
+      "result_id": "a0ade212-7e0b-4978-87c6-bd0e41e0c422"
+    },
+    {
+      "claim_id": "a4ba2314-9768-4828-8180-55e606a47fd7",
+      "result_id": "a0ade212-7e0b-4978-87c6-bd0e41e0c422"
+    },
+    {
+      "claim_id": "aaf08546-7498-4116-9331-7bf59d7ab1d8",
+      "result_id": "a0ade212-7e0b-4978-87c6-bd0e41e0c422"
+    },
+    {
+      "claim_id": "91650098-f316-4dc6-8513-dc330620ea5c",
+      "result_id": "a0ade212-7e0b-4978-87c6-bd0e41e0c422"
+    },
+    {
+      "claim_id": "cf19431c-26bd-4b2b-bbb1-5ff537096c0b",
+      "result_id": "a0ade212-7e0b-4978-87c6-bd0e41e0c422"
+    },
+    {
+      "claim_id": "207deba1-b697-417f-8a7f-639c65ff4acf",
+      "result_id": "22e129e3-3eb3-420a-bf12-fef02ca64f00"
+    },
+    {
+      "claim_id": "eeff9286-7a39-4ba7-ab6b-bb0b2cc47a95",
+      "result_id": "22e129e3-3eb3-420a-bf12-fef02ca64f00"
+    },
+    {
+      "claim_id": "9053b39b-12bc-4277-b564-9e15f26a5ab6",
+      "result_id": "22e129e3-3eb3-420a-bf12-fef02ca64f00"
+    },
+    {
+      "claim_id": "cce2b1f2-bef8-417a-81b6-153cf0572308",
+      "result_id": "22e129e3-3eb3-420a-bf12-fef02ca64f00"
+    },
+    {
+      "claim_id": "1e8322fc-7d4a-4674-bb24-ff4c2f7fd1b7",
+      "result_id": "22e129e3-3eb3-420a-bf12-fef02ca64f00"
+    },
+    {
+      "claim_id": "c339b76c-0d19-4dab-aeb8-b89a63262098",
+      "result_id": "22e129e3-3eb3-420a-bf12-fef02ca64f00"
+    },
+    {
+      "claim_id": "dec84b1a-af02-4601-a4f6-1baaf168c398",
+      "result_id": "22e129e3-3eb3-420a-bf12-fef02ca64f00"
+    },
+    {
+      "claim_id": "fac59153-03f0-4641-a8bd-27438415e357",
+      "result_id": "a1d5bb21-54cc-4d94-9700-abf9fec3dc29"
+    },
+    {
+      "claim_id": "a9b70d29-2933-4332-96a6-f92f9909d56e",
+      "result_id": "a1d5bb21-54cc-4d94-9700-abf9fec3dc29"
+    },
+    {
+      "claim_id": "f9acfb5d-1751-48a2-ac2c-e8f51313ad5c",
+      "result_id": "a1d5bb21-54cc-4d94-9700-abf9fec3dc29"
+    },
+    {
+      "claim_id": "2404a287-ca79-413b-82d3-f89209dedf90",
+      "result_id": "a1d5bb21-54cc-4d94-9700-abf9fec3dc29"
+    },
+    {
+      "claim_id": "efb00428-8394-486a-afaf-f4dd440c63d6",
+      "result_id": "87d19c92-8b20-48d7-8d0e-c7fa05995c38"
+    },
+    {
+      "claim_id": "cff01d79-f99b-455a-8841-6e47a7de103e",
+      "result_id": "87d19c92-8b20-48d7-8d0e-c7fa05995c38"
+    },
+    {
+      "claim_id": "68f10050-2afa-42c0-9c89-40f77b1fedbc",
+      "result_id": "87d19c92-8b20-48d7-8d0e-c7fa05995c38"
+    },
+    {
+      "claim_id": "2c791171-3c01-408d-aa76-461ef8954efc",
+      "result_id": "87d19c92-8b20-48d7-8d0e-c7fa05995c38"
+    },
+    {
+      "claim_id": "90407575-026c-4354-b8e0-e3e886cd9d77",
+      "result_id": "147d7f86-530e-461f-a90b-3b173596d3f9"
+    },
+    {
+      "claim_id": "36054065-7b72-4702-8dc0-5dba4f1656e6",
+      "result_id": "147d7f86-530e-461f-a90b-3b173596d3f9"
+    },
+    {
+      "claim_id": "b0b672f9-5a9e-4f90-92d8-0d308d0a6994",
+      "result_id": "147d7f86-530e-461f-a90b-3b173596d3f9"
+    },
+    {
+      "claim_id": "f5e86aad-1bc3-44a6-9b9c-ba4e0dba9a66",
+      "result_id": "1d123a7c-293e-4c30-9e3f-9c7fad8181df"
+    },
+    {
+      "claim_id": "9fd7d9b2-e7b7-4509-bc2d-0a3ba39fbec6",
+      "result_id": "1d123a7c-293e-4c30-9e3f-9c7fad8181df"
+    },
+    {
+      "claim_id": "d75f51db-75bc-4910-a0bd-fc8e558567d9",
+      "result_id": "1d123a7c-293e-4c30-9e3f-9c7fad8181df"
+    },
+    {
+      "claim_id": "dfd1d623-b107-4ef7-9a03-8654424d5e46",
+      "result_id": "1d123a7c-293e-4c30-9e3f-9c7fad8181df"
+    },
+    {
+      "claim_id": "eabf89ab-af5c-4bc3-a1ca-8a47fa972b34",
+      "result_id": "1d123a7c-293e-4c30-9e3f-9c7fad8181df"
+    },
+    {
+      "claim_id": "1e94b718-892f-4296-ac4b-240832cbf9ef",
+      "result_id": "1d123a7c-293e-4c30-9e3f-9c7fad8181df"
+    },
+    {
+      "claim_id": "4edf6383-a98a-4e9e-b2f6-198bb77a8e2d",
+      "result_id": "1d123a7c-293e-4c30-9e3f-9c7fad8181df"
+    },
+    {
+      "claim_id": "8d302080-b8bd-4d4d-9855-2eafdfaa3bc2",
+      "result_id": "1d123a7c-293e-4c30-9e3f-9c7fad8181df"
+    },
+    {
+      "claim_id": "22506587-2382-4db6-a4fe-e32fcee96692",
+      "result_id": "1d123a7c-293e-4c30-9e3f-9c7fad8181df"
+    },
+    {
+      "claim_id": "612185fc-e013-491a-8bc6-7dcdfef4f699",
+      "result_id": "1d123a7c-293e-4c30-9e3f-9c7fad8181df"
+    },
+    {
+      "claim_id": "f7025bd2-5721-4c74-9976-d9c412b63999",
+      "result_id": "a7c6c530-5c8a-4ed6-beb9-333a117c35ec"
+    },
+    {
+      "claim_id": "9d9cbd69-b8b0-4564-98f9-73e0fb57195d",
+      "result_id": "a7c6c530-5c8a-4ed6-beb9-333a117c35ec"
+    },
+    {
+      "claim_id": "a6274a35-1d38-4e0c-911f-178442f2556f",
+      "result_id": "a7c6c530-5c8a-4ed6-beb9-333a117c35ec"
+    },
+    {
+      "claim_id": "34d505de-ec67-49a9-bd25-105d6f9ce4a2",
+      "result_id": "a7c6c530-5c8a-4ed6-beb9-333a117c35ec"
+    },
+    {
+      "claim_id": "8c80de62-372c-4e60-9bdd-7501309b1f4f",
+      "result_id": "a7c6c530-5c8a-4ed6-beb9-333a117c35ec"
+    },
+    {
+      "claim_id": "803ad420-2024-47b0-8948-a31904d60ed7",
+      "result_id": "a7c6c530-5c8a-4ed6-beb9-333a117c35ec"
+    },
+    {
+      "claim_id": "111290d9-3b4d-4c02-b17c-e5f1882fe24f",
+      "result_id": "a7c6c530-5c8a-4ed6-beb9-333a117c35ec"
+    },
+    {
+      "claim_id": "8a69026b-82fe-461d-b33a-56ebe5f587c8",
+      "result_id": "c47d2712-3a9c-4f3e-bf39-2fd51fff71a2"
+    },
+    {
+      "claim_id": "c06beb15-3552-4821-a5f3-556563341dd3",
+      "result_id": "c47d2712-3a9c-4f3e-bf39-2fd51fff71a2"
+    },
+    {
+      "claim_id": "f0aaf965-5872-49a7-93fa-0d108570f4c2",
+      "result_id": "c47d2712-3a9c-4f3e-bf39-2fd51fff71a2"
+    },
+    {
+      "claim_id": "8876f0a4-83af-4652-add3-cc3b33a5a5d3",
+      "result_id": "b92121ff-c5c3-43aa-a7c1-eccb93082426"
+    },
+    {
+      "claim_id": "017c1a76-8259-4c7e-a478-436c32fc1c83",
+      "result_id": "b92121ff-c5c3-43aa-a7c1-eccb93082426"
+    },
+    {
+      "claim_id": "ec71ad30-698e-412d-b2fd-e8387d396957",
+      "result_id": "20bee53d-ac97-416a-9d18-97667b8e5a32"
+    },
+    {
+      "claim_id": "33fc4575-a21c-42c6-ac48-1349a8179a52",
+      "result_id": "20bee53d-ac97-416a-9d18-97667b8e5a32"
+    }
+  ],
+  "comparisons": []
+}

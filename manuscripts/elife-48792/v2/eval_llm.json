@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C10",
+      "C11",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C108"
+    ],
+    "result": "Four cryo-EM structures of full-length rat TRPV2 in nanodiscs were determined: two apo states (TRPV2APO_1 at 3.7 \u00c5 and TRPV2APO_2 at 4.0 \u00c5) and two CBD-bound states (TRPV2CBD_1 at 3.4 \u00c5 and TRPV2CBD_2 at 3.2 \u00c5). All structures show the expected tetrameric architecture with six transmembrane helices and ankyrin repeat domains, and were processed using RELION 3.0 with C4 symmetry assignment based on PHENIX Map Symmetry analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C10-C11, C44-C47, and C108 collectively describe the primary structural determination results with appropriate resolutions, symmetry assignments, and architectural features. The cryo-EM data processing workflow is documented (Figure 1 supplements 1-4), resolution metrics are provided (Table 1), and the tetrameric architecture is consistent with prior TRPV2 structures. The use of nanodiscs for lipid environment reconstitution is well-established methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C12",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C109"
+    ],
+    "result": "CBD binds to TRPV2 in a novel hydrophobic pocket located between S5 and S6 helices of adjacent subunits, distinct from known ligand/lipid binding sites in other TRP channels. The binding site is lined by hydrophobic and aromatic residues (Leu631, Tyr634, Val635, Leu638 on S6; Leu537, Phe540, Leu541 on S5; Met640 on adjacent S6; Phe601, Thr604 on pore helix), with CBD's hydrophobic headgroup entering deepest into the pocket and the acyl tail extending toward the lipid bilayer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C12, C51-C54, C59-C60, C62-C63, C65-C69, and C109 describe the CBD binding site identification and characterization. The presence of CBD density only in CBD-bound structures and not in apo structures (Figure 1, Figure 1\u2014figure supplement 10) provides strong evidence. The binding site residues are clearly identified in the atomic models (Figure 2), and alternative CBD poses were tested during refinement (C68-C69, Figure 2\u2014figure supplement 1). The claim that this site differs from known TRP channel ligand sites (C7) is supported by structural comparisons with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C91"
+    ],
+    "result": "Pore analysis reveals that all four structures adopt non-conducting conformations with distinct occlusion patterns: TRPV2APO_1 is occluded at both the selectivity filter (Gly606, Met607) and lower gate (Met645, His651) representing a closed state; TRPV2APO_2 has an open selectivity filter but remains non-conducting, suggesting a partially open state; both CBD-bound structures (TRPV2CBD_1 and TRPV2CBD_2) are in non-conducting states despite CBD occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C39-C43, and C91 describe pore conformations based on structural analysis. The pore radius profiles (Figure 1C-D) directly support the occlusion patterns described. The assignment of TRPV2APO_1 as closed (C40) and TRPV2APO_2 as partially open (C42) is based on selectivity filter analysis. The conclusion that CBD-bound structures are non-conducting (C13, C43, C91) is supported by pore analysis, though the functional interpretation as 'pre-open or desensitized states' (C16, C43) is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C14",
+      "C15",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C90",
+      "C110",
+      "C143",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "CBD binding induces conformational changes in TRPV2, with the S4-S5 linker playing a critical role in gating. TRPV2CBD_1 is nearly identical to TRPV2APO_1 (0.4 \u00c5 RMSD on pore, 0.6 \u00c5 global) with only minor S4-S5 linker shifts. TRPV2CBD_2 shows more substantial changes from TRPV2APO_1 (0.5 \u00c5 RMSD on pore, 1.9 \u00c5 global), including S4-S5 linker movement (2.6 \u00c5 closer to S5), coupled 8\u00b0 TRP helix rotation, ARD pivoting (1.5\u00b0 outward, 3.5\u00b0 downward, 4.5 \u00c5 swing at AR1), and distal C-terminus transition from helix to coil.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C14-C15, C77-C81, C90, C110, C143, C145-C148 describe CBD-induced structural changes with quantitative measurements. The RMSD values (C77-C80) are calculated from structural alignments. The S4-S5 linker movements and coupled conformational changes in TRPV2CBD_2 (C143, C145-C148) are documented in Figure 3D-F with specific distance and angle measurements. The conclusion that the S4-S5 linker plays a critical role in gating (C8) is a reasonable inference from these observations, consistent with prior literature on TRP channel gating mechanisms (C124).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C17",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C127",
+      "C128"
+    ],
+    "result": "Two distinct apo TRPV2 states were visualized in nanodiscs (TRPV2APO_1 and TRPV2APO_2, 1.8 \u00c5 RMSD). TRPV2APO_2 shows an open selectivity filter with Met607 rotated away from the pore and Gly606 carbonyl shifted 5 \u00c5 outward (2.5 \u00c5 from pore helix movement, 2.5 \u00c5 from loop shift), while Glu609 rotates toward the pore. The S5-PH-S6 region rotates 8\u00b0 counterclockwise with 2.3 \u00c5 outward movement, causing S6 base curvature while His651 anchors the lower gate. These changes are transmitted through 12\u00b0 S4-S5 linker rotation coupled to 7\u00b0 TRP helix and 8\u00b0 ARD rotation, suggesting a semi-open state supporting TRPV2's constitutive activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C17, C92-C101, C103-C104, C127-C128 describe the TRPV2APO_2 structure and its implications. The structural measurements (distances, angles) are documented in Figure 4 with clear visual evidence. The open selectivity filter (C93-C95) is supported by pore analysis (Figure 1C-D, Figure 4A-B). The coupled rotations and movements (C98-C99, C103-C104) are quantified. The interpretation as a 'semi-open state' (C128) and connection to constitutive activity (C127) is speculative but reasonable given prior electrophysiology data (C106, C126) and the structural features observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C105",
+      "C107"
+    ],
+    "result": "Lipids play an important role in TRPV2 channel transitions between closed and open states. All TRPV2 maps show extra non-protein density attributed to lipids, and the membrane environment in nanodiscs permits observation of different conformational states. Unlike other TRPV channels where ligand binding sites are occupied by lipids in apo structures, the CBD binding pocket in TRPV2 is not lipid-occupied in apo states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18, C55-C58, C105, C107 make assertions about lipid roles in channel function. While lipid densities are observed in the maps (C55, Figure 1A), the specific assignment to lipids is tentative ('could be attributed to lipids'). The comparison with other TRPV channels (C56-C57) is supported by citations, and the absence of lipids in the CBD pocket (C58) is supported by density analysis. However, the causal claim that lipids 'play an important role' in state transitions (C18, C107) is speculative inference from observing different states in lipid nanodiscs, without direct functional evidence. The flexibility of the S4-S5 linker-S5 loop contributing to conformational coupling (C105) is also speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Mutagenesis and electrophysiology experiments tested the functional role of CBD binding site residues. The Leu541Phe-Leu631Phe double mutant showed a higher CBD/2-APB current ratio compared to wild-type TRPV2, while the Val635Phe mutant was non-functional. These results suggest Leu541 and Leu631 are involved in CBD modulation, while Val635 may be critical for channel function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 describe functional validation experiments. The electrophysiology data (Figure 2\u2014figure supplement 4) shows altered CBD/2-APB current ratios in the Leu541Phe-Leu631Phe mutant (C73), with statistical significance (p=0.0014). The non-functionality of Val635Phe (C75) is stated but data are not shown. The interpretation that Leu541 and Leu631 are involved in CBD modulation (C76) is reasonable from the altered response. However, the increased CBD/2-APB ratio could reflect altered CBD sensitivity, 2-APB sensitivity, or both\u2014the mechanism is not fully resolved. The prediction that mutations would 'alter CBD access' (C70) is somewhat supported but the exact mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C121",
+      "C122"
+    ],
+    "result": "All four TRPV2 structures lack fully resolved density for the pore turret region between S5 and the pore helix. Partial density indicates the pore turret forms a flexible loop perpendicular to the lipid membrane, consistent with observations in rabbit TRPV2 but disagreeing with a prior report of parallel membrane orientation in rat TRPV2 in detergent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C121-C122 describe pore turret observations and comparisons with prior work. The lack of fully resolved density (C48) is evident in Figure 1\u2014figure supplement 9. The partial density orientation perpendicular to the membrane (C49, C122) is consistent with rabbit TRPV2 structures (Zubcevic et al., 2019a). The disagreement with Dosey et al., 2019 (C50, C121) regarding parallel orientation is a comparative assessment. This is a valid structural observation, though the authors' criticism of prior work quality (C38) is somewhat subjective. The perpendicular orientation is more consistent with the charged/polar nature of the pore turret.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The CBD binding site in TRPV2 is highly conserved among TRPV channels and coincides with the location of the \u03c0-helix on S6 in TRPV1 structures. All TRPV2 structures reported here have standard \u03b1-helices in this S6 region, as do rabbit TRPV2 and frog TRPV4, while TRPV3 studies proposed \u03b1-helix to \u03c0-helix transitions are critical for opening. It remains unclear whether the \u03c0-helix presence in TRPV1 and TRPV3 would affect CBD binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 compare the CBD binding site across TRPV channels. The conservation of the binding site (C113) is supported by sequence alignment (Figure 2\u2014figure supplement 3). The coincidence with the TRPV1 \u03c0-helix location (C114) and presence of \u03b1-helices in TRPV2 (C115) are structural observations supported by comparison with prior structures (C116-C117). The statement of uncertainty about \u03c0-helix effects on CBD binding (C118) is appropriate given the current data. This represents valid comparative structural analysis, though functional implications remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "No evidence of two-fold to four-fold symmetry transitions was observed in the full-length rat TRPV2 nanodisc datasets, contrasting with prior reports of symmetry transitions in engineered RTx-sensitive rabbit TRPV2 upon RTx binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 report the absence of symmetry transitions in the current data. The prior work on rabbit TRPV2 (C119, Zubcevic et al., 2018b, 2019a) is accurately cited. The statement that no two-fold symmetry was observed (C120) is supported by the data processing workflow showing C4 symmetry assignment throughout (Figure 1 supplements 2, 4). This is a valid negative result, though differences could be due to species (rat vs. rabbit), ligand (CBD vs. RTx), or the engineered nature of the prior construct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Structural changes likely originate at the S4-S5 linker, the closest divergent region to the CBD binding site. This region has been proposed to function as a 'gearbox' in TRP channels, mediating force transmission between the pore and the rest of the channel, consistent with observations in engineered RTx-sensitive rabbit TRPV2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 propose a mechanism for CBD-induced gating. The suggestion that changes originate at the S4-S5 linker (C123) is logical given its proximity to the CBD site and the observed conformational changes. The 'gearbox' concept (C124) is supported by citation to Hofmann et al., 2017, and consistency with rabbit TRPV2 studies (C125, Zubcevic et al., 2019a) strengthens the interpretation. However, this remains mechanistic speculation from static structures\u2014the temporal sequence and causality of conformational changes cannot be definitively established without dynamic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The selectivity filter is important for TRPV2 channel gating, similar to TRPV1. His651 plays a prominent role in rat TRPV2 structures but is not conserved (human TRPV2 has serine at this position). Similar selectivity filter conformations have been observed in TRPV1 upon agonist application, and recent TRPV2 studies suggest TRPV1 and TRPV2 share similar gating mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 discuss the selectivity filter's role in gating. The lack of His651 conservation (C129) is documented in sequence alignment (Figure 2\u2014figure supplement 3). The comparison with TRPV1 selectivity filter conformations (C130-C131, Figure 4\u2014figure supplement 2) is supported by citations (Cao et al., 2013; Gao et al., 2016). The conclusion that TRPV1 and TRPV2 share similar gating mechanisms (C132-C133) is supported by multiple recent studies (Zubcevic et al., 2019a, 2016) and the current structural data. The lack of His651 conservation raises questions about species-specific gating mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C136",
+      "C137",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The distal N- and C-termini show different conformations across structures. TRPV2APO_1, TRPV2APO_2, and TRPV2CBD_1 have helical distal C-termini (resolved to Leu719) and resolved distal N-termini (Gln30-Asn45), with specific inter-subunit interactions. TRPV2CBD_2 has a coil C-terminus extending to Pro729 with altered interaction patterns. These terminal regions make extensive contacts with ARDs and \u03b2-sheet regions of adjacent subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89, C136-C137, C148-C153 describe terminal domain structures and interactions. The resolution of distal termini (C82, C86) is supported by cryo-EM density (Figure 3\u2014figure supplements 2-3). The specific residue interactions (C84-C85, C87-C89, C149-C153) are documented in the atomic models with distance measurements (Figure 3\u2014figure supplement 3). The conformational differences between structures (C136, C148) are clearly shown. These are well-supported structural observations, though the functional significance of these conformational changes remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The distal C-terminus in TRPV1-TRPV3 structures can adopt helical or coil conformations, which may be associated with channel gating. There is ambiguity in the assignment of distal terminal regions across different TRPV3 structures. Further structural analysis is needed to clarify the role of distal intracellular domains in channel gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135, C138-C140 discuss terminal domain conformations across TRPV channels. The observation of helical/coil conformations (C134-C135) is supported by citation to Zubcevic et al., 2019b. The ambiguity in assignments between studies (C138, Singh et al., 2018) is acknowledged. The conclusion that conformational changes occur (C139) and that further work is needed (C140) are reasonable assessments. This represents appropriate contextualization of the current findings within the broader TRPV literature, acknowledging uncertainties in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C106",
+      "C111",
+      "C112",
+      "C126",
+      "C141",
+      "C142"
+    ],
+    "result": "Background claims establish TRPV2's physiological roles, CBD as a TRPV2 agonist, prior structural studies on TRPV2, and the therapeutic potential of TRPV2 targeting. The study provides new molecular insights into TRPV2 gating and reveals a novel drug binding site that could guide therapeutic design for glioblastoma and other TRPV2-associated conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C19-C38, C106, C111-C112, C126, C141-C142 provide context and summarize findings. The background claims about TRPV2 function (C1, C19-C24), CBD properties (C2-C4, C22, C25-C27), and prior structural work (C29-C38) are supported by appropriate citations. The summary claims (C141-C142) accurately reflect the study's contributions. The therapeutic potential statement (C142) is speculative but reasonable given the structural insights obtained. These contextual claims appropriately frame the study's significance.",
+    "result_type": "MINOR"
+  }
+]

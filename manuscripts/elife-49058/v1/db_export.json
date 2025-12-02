@@ -1,0 +1,1382 @@
+{
+  "submission": {
+    "id": "e9ab91ac-12d1-4432-a163-950969cffc4f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:02:55.274845Z",
+    "updated_at": "2025-12-02T13:02:55.274845Z"
+  },
+  "content": [
+    {
+      "id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "submission_id": "e9ab91ac-12d1-4432-a163-950969cffc4f",
+      "content_type": "manuscript",
+      "content_text": "# Modeling the dynamics of Plasmodium falciparum gametocytes in humans during malaria infection\n\n## Authors\n\n- Pengxing Cao<sup>1</sup> ([ORCID: 0000-0003-3721-9850](https://orcid.org/0000-0003-3721-9850)) \u2020\n- Katharine A Collins<sup>2</sup> ([ORCID: 0000-0002-7080-2215](https://orcid.org/0000-0002-7080-2215))\n- Sophie Zaloumis<sup>4</sup> ([ORCID: 0000-0002-8253-8896](https://orcid.org/0000-0002-8253-8896))\n- Thanaporn Wattanakul<sup>5</sup> ([ORCID: 0000-0002-7570-4665](https://orcid.org/0000-0002-7570-4665))\n- Joel Tarning<sup>5</sup> ([ORCID: 0000-0003-4566-4030](https://orcid.org/0000-0003-4566-4030))\n- Julie A Simpson<sup>4</sup> ([ORCID: 0000-0002-2660-2013](https://orcid.org/0000-0002-2660-2013))\n- James McCarthy<sup>3</sup> ([ORCID: 0000-0001-6596-9718](https://orcid.org/0000-0001-6596-9718))\n- James M McCaw<sup>1</sup> ([ORCID: 0000-0002-2452-3098](https://orcid.org/0000-0002-2452-3098)) \u2020\n\n### Affiliations\n\n1. School of Mathematics and Statistics University of Melbourne Melbourne Australia\n2. Department of Medical Microbiology Radboud University Medical Center Nijmegen Netherlands\n3. QIMR Berghofer Medical Research Institute Brisbane Australia\n4. Centre for Epidemiology and Biostatistics, Melbourne School of Population and Global Health University of Melbourne Melbourne Australia\n5. Mahidol-Oxford Tropical Medicine Research Unit, Faculty of Tropical Medicine Mahidol University Bangkok Thailand\n6. Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine University of Oxford Oxford United Kingdom\n7. Epidemiology Peter Doherty Institute for Infection and Immunity Parkville Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nRenewed efforts to eliminate malaria have highlighted the potential to interrupt human-to-mosquito transmission \u2014 a process mediated by gametocyte kinetics in human hosts. Here we study the in vivo dynamics of Plasmodium falciparum gametocytes by establishing a framework which incorporates improved measurements of parasitemia, a novel gametocyte dynamics model and model fitting using Bayesian hierarchical inference. We found that the model provides an excellent fit to the clinical data from 17 volunteers infected with P. falciparum (3D7 strain) and reliably predicts observed gametocytemia. We estimated the sexual commitment rate and gametocyte sequestration time to be 0.54% (95% credible interval: 0.30\u20131.00%) per asexual replication cycle and 8.39 (6.54\u201310.59) days respectively. We used the data-calibrated model to investigate human-to-mosquito transmissibility, providing a method to link within-human host infection kinetics to epidemiological-scale infection and transmission patterns.\n\n## Introduction\n\nMalaria is a mosquito-borne parasitic disease caused by protozoan parasites of the Plasmodium genus. It is estimated to have caused approximately 219 million new cases and 435,000 deaths in 2017, primarily due to Plasmodium falciparum (The World Health Organization, 2018). New tools will be required to achieve the ambitious goal of malaria elimination. Among the tools proposed are novel interventions to block transmission from human hosts to vector mosquitoes (The malERA Refresh Consultative Panel on Tools for Malaria Elimination, 2017).\u00a0P. falciparum malaria is transmitted from humans to the mosquito when terminally differentiated male and female sexual-stages of the parasite, called gametocytes, are taken up by female Anopheles mosquito during a blood meal (Bousema and Drakeley, 2011; Josling and Llin\u00e1s, 2015). The level of gametocytes in the blood, often referred to as gametocytemia, is highly associated with the probability of human-to-mosquito transmission (Bradley et al., 2018; Churcher et al., 2013). Gametocyte levels below a certain threshold (i.e.,\u00a0<1000 per mL blood) minimize the probability that a mosquito will take up both a male and female gametocyte during a blood-meal, which is necessary to propagate infection (Collins et al., 2018). An accurate understanding of the kinetics of gametocyte development in the human host is essential to predict the probability of transmission. A mathematical model that accurately captures the processes that give rise to observed gametocyte kinetics would be an important predictive tool to facilitate the design and evaluation of effective intervention strategies.\n\nThere is significant uncertainty surrounding fundamental aspects of P. falciparum gametocyte dynamics in humans. Parameters such as how many gametocytes are produced during each asexual replication cycle, the period of time in which early gametocytes disappear from the circulation before mature gametocytes appear (referred to as sequestration), and the period in which gametocytes circulate are poorly quantified. These gaps in understanding are due to a range of technical and logistic limitations. The first is the relatively poor sensitivity of the standard diagnostic test, namely microscopic examination of blood-films. Previous in vivo estimates of gametocyte kinetic parameters have been primarily based on historical data from neurosyphilis patients who were treated with so-called malariotherapy (Diebner et al., 2000; Eichner et al., 2001). In these studies, the limit of quantification was approximately 104 parasites/mL blood, at least two orders of magnitude higher than that of current quantitative PCR (qPCR) assays (Rockett et al., 2011). This high limit of quantification prevents an accurate estimation of onset of emergence of both asexual parasites and mature gametocytes in peripheral blood. The second limitation is that the available estimates of gametocyte dynamics parameters based on in vitro cultures (Filarsky et al., 2018; Gebru et al., 2017) may not be applicable to natural infection with P. falciparum gametocytes due to in vitro conditions that may not mimic the human host (Bousema and Drakeley, 2011).\n\nRecent advances in experimental medicine using volunteer infection studies (VIS), otherwise known as controlled human malaria infection (CHMI) studies (Coffeng et al., 2017), allow prospective study design and data collection with the explicit aim of collecting in vivo data (McCarthy et al., 2011), in particular an improved quantification of P. falciparum gametocyte kinetics by qPCR applied in a novel VIS (Collins et al., 2018). Furthermore, the models and fitting methods used in the neurosyphilis patient studies have been superseded for parameter estimation by increasingly sophisticated within-host models (Khoury et al., 2018) and improvements in computational algorithms for Bayesian statistical inference (Piray et al., 2019). Therefore, there is an emerging opportunity to improve our quantitative understanding of the dynamics of P. falciparum gametocytes in human hosts by combining the novel VIS data and advanced modeling approaches.\n\nIn this study, we developed a novel mathematical model of gametocyte dynamics, fitted the model to the VIS data and estimated the gametocyte dynamics parameters using a Bayesian hierarchical inference method. We demonstrate that the data-calibrated model can reliably predict the time-course of gametocytemia and thus should form an essential part of modeling studies of malaria transmission.\n\n## Results\n\n### Model fitting and validation\n\nThe outcome variable used in model fitting was the total parasitemia (total circulating asexual parasites and gametocytes per mL blood measured using qPCR) collected from a previously published VIS (Collins et al., 2018), with other measurements from the same study, such as the asexual parasitemia (circulating asexual parasites per mL blood) and gametocytemia (circulating female and male gametocytes per mL blood), used to validate model predictions.\n\nThe results of fitting the mathematical model to total parasitemia data for all 17 volunteers are given in Figure 1 where 12 of 17 volunteers experienced recrudescence. The median of posterior predictions and 95% prediction interval (PI) were computed from 5000 model simulations based on 5000 samples from the posterior parameter distribution (see Materials and methods). The results show that the predicted total parasitemia (median and 95% PI) is able to accurately capture the trends of the data through the (visual) posterior predictive check. Furthermore, the narrow 95% PI indicates a low level of uncertainty in predicted total parasitemia.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-v1.jpg)\n\n**Figure 1.:** Data are presented by circles. The median of posterior predictions (solid line) and 95% prediction interval (PI, shaded area) are generated by 5000 model simulations based on 5000 samples from the posterior parameter distribution as described in the Materials and methods. The histograms showing the posterior distributions of population mean and standard deviation hyperparameters are given in Figure 1\u2014figure supplements 1 and 2. The posterior distribution of each model parameter (see the Materials and methods) for individual volunteers are given in Figure 1\u2014figure supplements 3\u201314 Posterior distributions for some biological parameters are given in Figure 1\u2014figure supplement 15, which are generated based on the posterior samples of population mean parameters (see the Materials and methods) and will be used to support the results in Table 1 shown later. The source data and computer code with instructions of implementation to generate Figure 1 and Figure 1\u2014figure supplements 1\u201315 are fully publicly available at https://doi.org/10.26188/5cde4c26c8201.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** 5000 samples are used to generate the distributions. The dashed curves indicate the uniform prior distributions. p.i.: post-inoculation. Note that the y-axis is probability density instead of number of samples. Relevant details of the hyperparameters are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** 5000 samples are used to generate the distributions. The dashed curves indicate the half-normal prior distributions. p.i.: post-inoculation. Note that the y-axis is probability density instead of number of samples. Relevant details of the hyperparameters are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The marginal posterior distributions of the individual parameter of $P_{init}$ (inoculation size) for all 17 volunteers.The violin plots (gray area) show the distributions of 5000 posterior samples. Box plots show the 25%, 50% (median) and 75% quantiles with outliers indicated by red dots. Relevant details of the individual parameter are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The violin plots (gray area) show the distributions of 5000 posterior samples. Box plots show the 25%, 50% (median) and 75% quantiles with outliers indicated by red dots. Relevant details of the individual parameter are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** The marginal posterior distributions of the individual parameter of $\\sigma$ (Standard deviation of the initial parasite age distribution) for all 17 volunteers.The violin plots (gray area) show the distributions of 5000 posterior samples. Box plots show the 25%, 50% (median) and 75% quantiles with outliers indicated by red dots. Relevant details of the individual parameter are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** The marginal posterior distributions of the individual parameter of $r_{P}$ (parasite replication rate) for all 17 volunteers.The violin plots (gray area) show the distributions of 5000 posterior samples. Box plots show the 25%, 50% (median) and 75% quantiles with outliers indicated by red dots. Relevant details of the individual parameter are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp7-v1.jpg)\n\n**Figure 1\u2014figure supplement 7.:** The marginal posterior distributions of the individual parameter of $k_{max}$ (maximum rate of parasite killing by PQP) for all 17 volunteers.The violin plots (gray area) show the distributions of 5000 posterior samples. Box plots show the 25%, 50% (median) and 75% quantiles with outliers indicated by red dots. Relevant details of the individual parameter are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp8-v1.jpg)\n\n**Figure 1\u2014figure supplement 8.:** The marginal posterior distributions of the individual parameter of $EC_{50}$ (half-maximum effective PQP concentration) for all 17 volunteers.The violin plots (gray area) show the distributions of 5000 posterior samples. Box plots show the 25%, 50% (median) and 75% quantiles with outliers indicated by red dots. Relevant details of the individual parameter are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp9-v1.jpg)\n\n**Figure 1\u2014figure supplement 9.:** The marginal posterior distributions of the individual parameter of $\\gamma$ (Hill coefficient for PQP) for all 17 volunteers.The violin plots (gray area) show the distributions of 5000 posterior samples. Box plots show the 25%, 50% (median) and 75% quantiles with outliers indicated by red dots. Relevant details of the individual parameter are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp10-v1.jpg)\n\n**Figure 1\u2014figure supplement 10.:** The marginal posterior distributions of the individual parameter of $f$ (sexual commitment rate; not converted to percentage) for all 17 volunteers.The violin plots (gray area) show the distributions of 5000 posterior samples. Box plots show the 25%, 50% (median) and 75% quantiles with outliers indicated by red dots. Relevant details of the individual parameter are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp11-v1.jpg)\n\n**Figure 1\u2014figure supplement 11.:** The marginal posterior distributions of the individual parameter of $\\delta_{P}$ (death rate of asexual and sexual parasites) for all 17 volunteers.The violin plots (gray area) show the distributions of 5000 posterior samples. Box plots show the 25%, 50% (median) and 75% quantiles with outliers indicated by red dots. Relevant details of the individual parameter are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp12-v1.jpg)\n\n**Figure 1\u2014figure supplement 12.:** The marginal posterior distributions of the individual parameter of $m$ (maturation rate of gametocytes) for all 17 volunteers.The violin plots (gray area) show the distributions of 5000 posterior samples. Box plots show the 25%, 50% (median) and 75% quantiles with outliers indicated by red dots. Relevant details of the individual parameter are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 13.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp13-v1.jpg)\n\n**Figure 1\u2014figure supplement 13.:** The marginal posterior distributions of the individual parameter of $\\delta_{G}$ (death rate of sequestered gametocytes) for all 17 volunteers.The violin plots (gray area) show the distributions of 5000 posterior samples. Box plots show the 25%, 50% (median) and 75% quantiles with outliers indicated by red dots. Relevant details of the individual parameter are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 14.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp14-v1.jpg)\n\n**Figure 1\u2014figure supplement 14.:** The marginal posterior distributions of the individual parameter of $\\delta_{Gm}$ (death rate of circulating gametocytes) for all 17 volunteers.The violin plots (gray area) show the distributions of 5000 posterior samples. Box plots show the 25%, 50% (median) and 75% quantiles with outliers indicated by red dots. Relevant details of the individual parameter are provided in the Materials and methods in the main text.\n\n![Figure 1\u2014figure supplement 15.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig1-figsupp15-v1.jpg)\n\n**Figure 1\u2014figure supplement 15.:** 5000 samples from the posterior parameter distribution are used to generate the figures. Full details about the definitions and expressions of those biological parameters are provided in the Materials and methods in the main text. Note that a logarithm is taken for the mean lifespan of circulating gametocyte for a better visualisation of the distribution.\n\n**Table 1.**\n Estimates of some key biological parameters and comparison with the literature.The estimates of the biological parameters (middle column) are shown as the median and 95% credible interval (CI) of the marginal posterior parameter distribution (Figure 1\u2014figure supplement 15). Estimates from the literature (third column) are shown in the format of either \u2018mean estimate (95% confidence interval)\u2019 or \u2018mean estimate [minimum \u2013 maximum estimate]\u2019 or simply \u2018a low estimate \u2013 a high estimate\u2019. Note some quoted estimates are from either in vivo or in vitro studies of P. falciparum. The source data and computer code with instructions of implementation to generate our model estimates (middle column) in Table 1 are fully publicly available at https://doi.org/10.26188/5cde4c26c8201.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Biological parameters (unit)</th>\n      <th>Median estimate (95% CI)</th>\n      <th>Estimates in the literature</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sexual commitment rate (%/asexual replication cycle)</td>\n      <td>0.54 (0.30\u20131.00)</td>\n      <td>11 (6.2\u201315.8) (Filarsky et al., 2018) (in vitro) 0.64 [0.027\u201313.5] (Eichner et al., 2001) (in vivo)</td>\n    </tr>\n    <tr>\n      <td>Gametocyte sequestration time (days)</td>\n      <td>8.39 (6.54\u201310.59)</td>\n      <td>7.4 [4 \u2013 12] (Eichner et al., 2001) (in vivo)</td>\n    </tr>\n    <tr>\n      <td>Circulating gametocyte lifespan (days)</td>\n      <td>63.5 (12.7\u20131513.9)</td>\n      <td>16\u201332 (Gebru et al., 2017) (in vitro) 6.4 [1.3\u201322.2] (Eichner et al., 2001) (in vivo)</td>\n    </tr>\n    <tr>\n      <td>Parasite multiplication factor (per asexual replication cycle)</td>\n      <td>21.8 (17.6\u201326.9)</td>\n      <td>10\u201333 (Wockner et al., 2017) (in vivo) 16.4 (15.1\u201317.8)a (in vivo)</td>\n    </tr>\n  </tbody>\n</table>\n\n_a JS McCarthy, personal communication, May 2019._\n\nHaving calibrated the model against total parasitemia, the 5000 posterior parameter sets were used to calculate the median of posterior predictions and 95% PI of the asexual parasitemia and gametocytemia versus time profiles. Model predictions of the asexual parasitemia and gametocytemia for all 17 volunteers are shown in Figure 2 and Figure 3 respectively (curves: median prediction; shaded areas: 95% PI) and are compared to the asexual parasitemia and gametocytemia data (circles). We emphasize that this was not a fitting exercise, rather an independent validation of the calibrated model.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig2-v1.jpg)\n\n**Figure 2.:** Data are presented by circles. The median of posterior predictions (solid curve) and 95% PI (shaded area) are generated by 5000 model simulations based on 5000 samples from the posterior parameter distribution as described in the Materials and methods. The data points with one parasite/mL (i.e., those points which lie on the dotted line) indicate measurements for which no parasites were detected. No data are available for Volunteer 101 and 106 to validate the model predictions. The source data and computer code with instructions of implementation to generate Figure 2 are fully publicly available at https://doi.org/10.26188/5cde4c26c8201.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig3-v1.jpg)\n\n**Figure 3.:** Data are presented by circles. The median of posterior predictions (solid curve) and 95% PI (shaded area) are generated by 5000 model simulations based on 5000 samples from the posterior parameter distribution as described in the Materials and methods. The data points with one parasite/mL (i.e. those points which lie on the dotted line) indicate measurements for which no parasites were detected. The source data and computer code with instructions of implementation to generate Figure 3 are fully publicly available at https://doi.org/10.26188/5cde4c26c8201.\n\nFor the majority of asexual parasitemia data the model predictions (median and 95% PI) can faithfully capture the trends of the data (Figure 2), in particular the accurate predictions for both the recrudescent case where a portion of asexual parasitemia data diverge from the total parasitemia measurement (e.g., Volunteer 103, 104, 105, 201, 203, 304 and 307) and the non-recrudescent case where the posterior-median prediction curve (solid red curve) lies below the limit of detection (one asexual parasite/mL) (e.g., Volunteer 202, 301 and 302). However, there are some discrepant observations. The model under-predicts (Volunteer 204) or over-predicts (Volunteer 303, 305 and 306) a portion of the asexual parasitemia data. Furthermore, for some volunteers such as 202, 301 and 302, the 95% PI (red shaded area) extends into the detectable region again after the asexual parasitemia reaches below the detection limit, indicating that there was a small chance that the patients may have suffered a recrudescence during the observation period (of course, they did not) or after the observation period (although this predication cannot be evaluated because artemisinin combination therapy was given immediately after the period).\n\nFigure 3 shows the data and model predictions for the gametocytemia. Despite some discrepant observations for asexual parasitemia in Figure 2, we found that the model predictions of gametocytemia were able to capture the trends and levels of the gametocytemia data for all 17 volunteers.\n\n### Estimation of gametocyte dynamics parameters\n\nThe model calibration process provided the joint posterior density for the model parameters, which were used to estimate some key biological parameters governing the dynamics of P. falciparum gametocytes (detailed in the Materials and methods). As shown in Table 1, the sexual commitment rate \u2014 the percentage of asexual parasites entering sexual development during each asexual replication cycle \u2014 is estimated to be 0.54%/asexual replication cycle (95% credible interval (CI): 0.30\u20131.00%). This in vivo estimate of 0.54%/asexual replication cycle is much lower than 11%/asexual replication cycle that was estimated from in vitro data (Filarsky et al., 2018). The proportion of committed asexual parasites that survive to become mature gametocytes, calculated by discounting the sexual commitment rate by the probability of survival from the immature (stages I\u2013IV) to mature (stage V) gametocyte life-stage, is 0.52%/asexual replication cycle (95% CI: 0.28\u20130.95%). The gametocyte sequestration time is the average time that immature gametocytes (stages I\u2013IV) cannot be observed in the peripheral circulation. They re-emerge in the peripheral circulation as mature gametocytes (stage V). It was estimated to be 8.39 days (95% CI: 6.54\u201310.59 days). The estimate for the circulating gametocyte lifespan is 63.5 days, with a broad 95% CI (12.7\u20131513.9 days) resulting from the long-tailed posterior distribution (Figure 1\u2014figure supplement 15) and is much longer than the previous in vitro estimate of 16\u201332 days (Gebru et al., 2017) (note that our lower bound of the 95% CI is lower than the in vitro estimated range). The wide estimate for the circulating gametocyte lifespan, and in particular the high upper bound of the 95% CI, is due to the limited observation time in the VIS which does not enable the lifespan to be accurately determined (explored in more detail in the Discussion).\n\nAs shown in Table 1, there are similarities in parameter estimates for P. falciparum between our analysis and the analysis of historical neurosyphilis patient data (Eichner et al., 2001). We found that they exhibited similar in vivo sexual commitment rate (median 0.54%/asexual replication cycle vs. mean 0.64%/asexual replication cycle with overlapping plausible ranges) and gametocyte sequestration time (median 8.39 days vs. mean 7.4 days with overlapping plausible ranges).\n\nFinally, we provided an estimate for the parasite multiplication factor which is the average number of infected red blood cells produced by a single infected red blood cells after one replication cycle. The parasite multiplication factor is an important parameter that quantifies the net growth of asexual parasites and thus influences the rate of gametocyte generation. Our posterior-median estimate is 21.8 parasites per asexual replication cycle (95% CI: 17.6\u201326.9), consistent with previous estimates which lie in the range 10\u201333 (Wockner et al., 2017), and a bit larger than an updated estimate calculated from a pooled analysis of parasite counts from 177 volunteers infected with the same P. falciparum strain using a statistical model (16.4 parasites per asexual replication cycle) (JS McCarthy, personal communication, May 2019).\n\n### Predicting the impact of gametocyte kinetics on human-to-mosquito transmissibility\n\nHaving validated our mathematical model of asexual parasitemia and gametocyte dynamics, we were able to predict how the gametocyte dynamics parameters influence the transmissibility of P. falciparum malaria from humans to mosquitoes in various epidemiological scenarios. In particular, we focused on the early phase of infection where the innate immune response is minimal and treatment has not been administered (in order to avoid complications that our mathematical model was not designed to capture). Two scenarios were considered:\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig4-v1.jpg)\n\n**Figure 4.:** (A) illustration of the first scenario: predicting the critical gametocytemia level (indicated by Gc) at the time when the total parasitemia reaches 108 parasites/mL. (B) illustration of the second scenario: predicting the non-infectious period (indicated by tc), which is defined to be time from inoculation of infected red blood cells to the time when the gametocytemia reaches 103 parasites/mL (a threshold below which human-to-mosquito transmission was not observed [Collins et al., 2018]). (C and D) Heatmaps showing the dependence of the critical gametocytemia Gc and the non-infectious period tc on the sexual commitment rate and gametocyte sequestration time. The black dots represent the value obtained by simulating the gametocyte dynamics model using the median estimates of the posterior samples of the population mean parameters as described in the Materials and methods. The red curve in C is the level curve for Gc\u00a0=\u00a0103 parasites/mL. The red curve in D is the level curve for tc\u00a0=\u00a013.42 days which is the non-infectious period obtained by model simulation using the posterior estimates of the population mean parameters. The source data and computer code with instruction of implementation to generate Figure 4 are fully publicly available at https://doi.org/10.26188/5cde4c26c8201.\n\nA higher sexual commitment rate or a lower gametocyte sequestration time leads to a higher gametocytemia (Gc) at the time of hospitalization (Figure 4C). The red curve in Figure 4C indicates the level curve of 103 gametocytes/mL (i.e., the threshold for infectiousness as mentioned above) dividing the heatmap into two regions. To the left, Gc is below 103 gametocytes/mL, suggesting clinical presentation precedes infectiousness, while to the right Gc is above 103 gametocytes/mL and the converse applies. The Gc value obtained by model simulation using the median estimates of the population mean parameters (indicated by the black dot) is below 103 gametocytes/mL, suggesting that newly hospitalized malaria patients are less likely to be infectious, and thus efforts to identify and treat infections in a timely manner may have a substantial impact in terms of reduced transmission potential. Note that patients from clinical observations of uncomplicated malaria in endemic settings may have higher gametocyte counts at the time of presentation than what our model predicts. For example one study from the TRACII clinical trial reported a range of 16\u20135120 gametocytes/\u00b5L, which is much higher than our prediction of below one gametocytes/\u00b5L (or 103 gametocytes/mL) (van der Pluijm et al., 2019). One plausible explanation for the difference is that our model predicted a very fast rise in total parasitemia to 108 parasites/mL while the rise in parasitemia among patients in endemic settings may be slower due to the effect of immunity on the parasite multiplication. Immunity was not considered in our model due to the design of our VIS where only malaria na\u00efve volunteers were recruited.\n\nFigure 4D reinforces the result in Figure 4C using the non-infectious period (tc). As the sexual commitment rate increases or the gametocyte sequestration time decreases, tc decreases. However, for large values of the sexual commitment rate (e.g.,\u00a0>20%), we observed an increase in tc as the sexual commitment rate increases (see the top-right corner of ). This is because an increased sexual commitment rate leads to both a decrease in the rate of asexual parasite growth (due to a direct loss of asexual parasites as they convert to gametocytes) and an increase in the number of sexually committed parasites. For a very high sexual commitment rate, the impact of the former more than counterbalances that of the latter.\n\n## Discussion\n\nWe have developed a novel mathematical model of gametocyte dynamics that combines an existing multi-state asexual cycle model with a new model for the development of gametocytes. Model parameters were estimated by fitting the model to data from 17 malaria-na\u00efve volunteers inoculated with P. falciparum-infected red blood cells (3D7 strain). Compared to previous studies, our work is distinguished by three novel contributions: (1) the use of a prospectively planned clinical trial to collect more accurate quantitative data of parasite levels measured by qPCR; (2) the development of a novel dynamics mathematical model which allows for robust and biologically-informed extrapolation and hypothesis testing/scenario analysis; and (3) the use of a Bayesian hierarchical inference method for model calibration and parameter estimation.\n\nFor gametocyte kinetic parameters, we found that our in vivo estimate of the P. falciparum sexual commitment rate was similar to that found in the neurosyphilis patient data (Eichner et al., 2001) but was much smaller than previous in vitro estimates (Table 1). Importantly, our estimate follows directly from the structure of our mathematical model, and accounts for the fact that some early committed gametocytes may not complete development and thus not emerge in peripheral circulation as mature gametocytes. Novel VIS data using biomarkers specific to early sexual parasites (e.g. AP2-G [Bancells et al., 2019] and PfGEXP5 [Tib\u00farcio et al., 2015]) would enable a direct (statistical) estimate of the sexual commitment rate, providing an independent validation of our gametocyte dynamics model. Our in vivo estimate for the circulating gametocyte lifespan is imprecise (i.e., has a very wide credible interval) due to the lack of available data for gametocyte clearance (treatment was initiated before gametocyte were naturally cleared in the VIS study). P. falciparum data with gametocytemia measurements over a longer period of time to capture the natural decay of circulating gametocytes, would greatly improve these estimates.\n\nWe also predicted the effects of altered gametocyte kinetic parameters on the transmissibility from humans to mosquitoes, focusing on two scenarios: the infectiousness of newly hospitalized clinical malaria cases (i.e.,\u00a0the gametocytemia when total parasitemia first reaches a level typically seen upon hospitalization \u2014 108 parasites/mL in the model); and the non-infectious period of malaria patients (i.e., the time from the inoculation of infected red blood cells to the time when the gametocytemia reaches a minimal transmission threshold of 103 parasites/mL in the model). We explored how the sexual commitment rate and gametocyte sequestration time influenced the gametocyte level and the non-infectious period. We would like to emphasize that human-to-mosquito transmissibility is determined by both the level of gametocytemia and the relationship between gametocytemia and the probability of transmission per bite. A reliable prediction of the former is essential but not a sole determinant of transmissibility. Therefore, it is also important to improve our quantitative understanding of the probability of transmission per bite, which may be complicated by and also influenced by the densities and ratios of female and male gametocytes (Bradley et al., 2018; Churcher et al., 2013; Da et al., 2015).\n\nOur study has some limitations. The gametocyte dynamics model, that has been shown to have sufficient complexity to reproduce the clinical observations, is still a rather coarse simplification of the actual biological processes. For example, the model does not assume an adaptive sexual commitment rate (Schneider et al., 2018), nor does it consider the mechanisms of sexual commitment (Bancells et al., 2019). Furthermore, the model assumes a constant gametocyte death rate but does not consider other non-constant formulations as have been previously proposed (Diebner et al., 2000). Another limitation is that we assumed a fixed duration for the asexual replication cycle of 42 hr, while previous work by our group suggests that the replication cycle may be altered by up to a few hours in response to antimalarial drugs (e.g., artemisinin [Cao et al., 2017; Dogovski et al., 2015]), though there is no evidence that piperaquine (which was administered in this VIS) has a similar effect.\n\nIn conclusion, we have developed a novel mathematical model of gametocyte dynamics, and demonstrated that it reliably predicts time series data of gametocytemia. The model provides a powerful predictive tool for informing the design of future volunteer infection studies which aim to test transmission-blocking interventions. Furthermore, the within human host transmission model can be incorporated into epidemiological-scale models to refine predictions of the impacts of various antimalarial treatments and transmission interventions.\n\n## Materials and methods\n\n### Study population and measurements\n\nThe data used in this modeling study are from a previously published VIS (Collins et al., 2018) where 17 malaria-na\u00efve volunteers were inoculated with approximately 2800 P. falciparum-infected red blood cells (3D7 strain). The study was approved by the QIMR Berghofer Human Research Ethics Committee and registered with ClinicalTrials.gov (NCT02431637 and NCT02431650). The volunteers were treated with 480 mg piperaquine phosphate (PQP) on day 7 or 8 post-inoculation to attenuate asexual parasite growth and a second dose of 960 mg PQP was given to any volunteer for treatment of recrudescent asexual parasitemia. All volunteers received a course of artemether/lumefantrine and, if required, a single dose of primaquine (45 mg) to clear all parasites. Parasitemia in the volunteers was monitored approximately daily following inoculation, but with notable variability in the frequency of data collection at later times as described by Collins et al. (2018).\n\nMolecular analysis of parasite levels was carried out throughout the study. The total parasitemia was measured by 18S qPCR (total circulating asexual parasites and gametocytes per mL blood), asexual parasitemia was measured by SBP1 qRT-PCR (circulating asexual parasites per mL blood), and gametocytemia was measured by Pfs25 and PfMGET qRT-PCR (circulating female and male gametocytes per mL blood). Plasma concentrations of PQP were also determined at multiple time points after inoculation. Further details about the VIS are given in Collins et al. (2018). It is important to note that the data used in model fitting is the total parasitemia (from the first measurement to the time before any treatment other than PQP) and the other data, that\u00a0is asexual parasitemia and gametocytemia (also up to the time of treatment other than PQP) are used to validate the model.\n\n### Gametocyte dynamics model\n\nThe mathematical model extends the published models of asexual parasite replication cycle\u00a0(Saralamba et al., 2011; Zaloumis et al., 2012) by incorporating the development of gametocytes. The model is comprised of three parts describing three populations of parasites: asexual parasites (P), sexually committed parasites (PG) and gametocytes (G). A schematic diagram of the development of those populations based on current knowledge (Bancells et al., 2019; Filarsky et al., 2018) is shown in Figure 5.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig5-v1.jpg)\n\n**Figure 5.:** The model is comprised of three parts describing three populations of parasites: asexual parasites ($Pa,t$), sexually committed parasites ($P_{G}a,t$) and gametocytes ($Gt$). P and PG are functions of asexual parasite age $a$ and time $t$. Square compartments in the inner loop represent the asexual parasite population which follows a cycle of maturation and replication every $a_{L}$ hours. Sexual commitment occurs from age $a_{s}$ and a fraction of asexual parasites become sexually committed (the bigger square compartments in the outer loop) and eventually enter the development of stage I\u2013V gametocytes (G1\u2013G5). The compartments with a dashed boundary are sequestered to tissues and thus not measurable in a blood smear. The notation for each compartment is consistent with those in the model equations and is explained in the main text.\n\nAsexual parasites develop and replicate in the red blood cells (RBCs) until cell rupture at the end of each replication cycle and the released free parasites (merozoites) can initiate new cycles of replication if they successfully invade susceptible RBCs. At the time of inoculation (i.e., $t=0$ hours in the model), we define the inoculum size to be $P_{init}$ and assume the age distribution of inoculated parasites is Gaussian with mean \u03bc and standard deviation $\\sigma$. As time increments by one hour, the asexual parasites of age $a$ at time $t$ (denoted as $P(a,t)$) follow the iterative equation:\n\n$$\nP(a,t)={P(a\u22121,t\u22121)e^{\u2212k_{d}\u00af\u2212\\delta_{P}},a=2,3,...,a_{L}r_{P}P(a_{L},t\u22121)e^{\u2212k_{d}\u00af\u2212\\delta_{P}},a=1\n$$\n\nwhere $k_{d}\u00af$ represents the average rate of asexual parasite killing by PQP and $\\delta_{P}$ is the rate of asexual parasite death due to processes other than PQP. $k_{d}\u00af$ is approximated by the average of $k_{d}(t-1)$ and $k_{d}(t)$ and $k_{d}t=k_{max}Ct^{\\gamma}/(Ct^{\\gamma}+EC_{50}^{\\gamma})$ where $k_{max}$ is the maximum killing rate, $EC_{50}$ is the PQP concentration at which half maximum killing is achieved, and $\\gamma$ is the Hill coefficient determining the curvature of the dose-response curve. $Ct$ is the PQP concentration which is simulated by a pharmacokinetic model introduced below. $a_{L}$ is the length of each asexual replication cycle and $r_{P}$ is the parasite replication rate indicating the average number of newly infected RBCs attributable to the rupture of a single infected RBC. Note that we distinguish the parasite replication rate $r_{P}$ from the so-called parasite multiplication factor, the latter of which is a 'net replication rate' quantified by the (per cycle) increase in parasite numbers due to replication ($r_{P}$) and the decrease in parasite numbers due to death or sexual commitment. Sexual commitment is assumed to occur at the first age of the trophozoite stage (denoted to be $a_{s}$) and a fraction ($f$) of asexual parasites leave the asexual replication cycle and start sexual development in the next hour, which is modeled by\n\n$$\nP(a_{s}+1,t)=(1\u2212f)P(a_{s},t\u22121)e^{\u2212k_{d}\u00af\u2212\\delta_{P}}\n$$\n\n\n\n$$\nP_{G}(a_{s}+1,t)=fP(a_{s},t\u22121)e^{\u2212k_{d}\u00af\u2212\\delta_{P}}.\n$$\n\nThe first equation describes the proportion of parasites remaining in the asexual replication cycle while the second equation describes the proportion of parasites becoming sexually committed parasites ($P_{G}$). According to Figure 5, the sexually committed parasites continue the rest of the replication cycle and a part of the next replication cycle (note that they appear indistinguishable from asexual parasites by microscopy) before becoming stage I gametocytes. The process is modeled by\n\n$$\nP(a,t)={P(a\u22121,t\u22121)e^{\u2212\\delta_{P}},a=2,3,...,a_{L}excepta=a_{s}anda=a_{s}+1r_{P}P(a_{L},t\u22121)e^{\u2212\\delta_{P}},a=1\n$$\n\nNote that we assumed in our model that PQP does not kill gametocytes. Our assumption was based on evidence from both in vitro and in vivo experiments that suggests that PQP has little activity against sexually committed parasites and gametocytes (Collins et al., 2018; Pasay et al., 2016; Bolscher et al., 2015), although we note there is some evidence that PQP might have activity against early-stage I/II gametocytes (Adjalley et al., 2011). The changes of the sequestered stage I\u2013IV gametocytes ($G_{1}$\u2013$G_{4}$) are governed by difference equations\n\n$$\nG_{1}(t)=G_{1}(t\u22121)e^{\u2212(m+\\delta_{G})}+\\frac{P_{G}(a_{s}\u22121,t\u22121)e^{\u2212\\delta_{P}}(1\u2212e^{\u2212(m+\\delta_{G})})}{m+\\delta_{G}},\n$$\n\n\n\n$$\nG_{2}(t)=G_{2}(t\u22121)e^{\u2212(m+\\delta_{G})}+\\frac{mG_{1}(t\u22121)(1\u2212e^{\u2212(m+\\delta_{G})})}{m+\\delta_{G}},\n$$\n\n\n\n$$\nG_{3}(t)=G_{3}(t\u22121)e^{\u2212(m+\\delta_{G})}+\\frac{mG_{2}(t\u22121)(1\u2212e^{\u2212(m+\\delta_{G})})}{m+\\delta_{G}},\n$$\n\n\n\n$$\nG_{4}(t)=G_{4}(t\u22121)e^{\u2212(m+\\delta_{G})}+\\frac{mG_{3}(t\u22121)(1\u2212e^{\u2212(m+\\delta_{G})})}{m+\\delta_{G}},\n$$\n\nwhere m is the rate of gametocyte maturation and $\\delta_{G}$ is the death rate of sequestered gametocytes. Stage V gametocytes are circulating in bloodstream (and therefore can be measured from the peripheral blood film) modeled by\n\n$$\nG_{5}(t)=G_{5}(t\u22121)e^{\u2212\\delta_{Gm}}+\\frac{mG_{4}(t\u22121)(1\u2212e^{\u2212\\delta_{Gm}})}{\\delta_{Gm}},\n$$\n\nwhere $\\delta_{Gm}$ is the death rate of mature circulating gametocytes.\n\nThe total parasitemia in the model is given by $\\sum_{a=1}^{a=a_{s}-1}Pa,t+P_{G}a,t+G_{5}(t)$, which was fitted to the VIS data. After model fitting, we simulated the asexual parasitemia $\\sum_{a=1}^{a=a_{s}-1}P(a,t)$ and gametocytemia $G_{5}(t)$ and compared them with associated data for model validation. Table 2 presents all the model parameters and their units and descriptions.\n\n**Table 2.**\n Details of the gametocyte dynamics model parameters.The table includes the unit, description and prior distribution for each model parameter. For the uniform prior distributions (U), the lower bounds are non-negative based on the definitions of the model parameters and the upper bounds for the prior distributions were chosen to be sufficiently wide in order to accommodate all biologically plausible values from the literature (Zaloumis et al., 2012). We assumed parasites younger than 25h are circulating and thus fix $a_{s}$ to be 25h. For 3D7 strain, the asexual replication cycle is approximately 39\u201345h (based on in vitro estimates [Duffy and Avery, 2017] and personal communication [JS McCarthy, personal communication, May 2019]) and we fix $a_{L}$ to be 42h.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Unit</th>\n      <th>Description</th>\n      <th>Prior distribution</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pinit</td>\n      <td>parasites/mL</td>\n      <td>inoculation size</td>\n      <td>U(0, 10)</td>\n    </tr>\n    <tr>\n      <td>\u03bc</td>\n      <td>h</td>\n      <td>mean of the initial parasite age distribution</td>\n      <td>U(0, 35)</td>\n    </tr>\n    <tr>\n      <td>\u03c3</td>\n      <td>h</td>\n      <td>SD of the initial parasite age distribution</td>\n      <td>U(0, 20)</td>\n    </tr>\n    <tr>\n      <td>rP</td>\n      <td>(unitless)</td>\n      <td>parasite replication rate</td>\n      <td>U(0, 100)</td>\n    </tr>\n    <tr>\n      <td>kmax</td>\n      <td>h\u22121</td>\n      <td>maximum rate of parasite killing by PQP</td>\n      <td>U(0, 1)</td>\n    </tr>\n    <tr>\n      <td>EC50</td>\n      <td>ng/mL</td>\n      <td>half-maximum effective PQP concentration</td>\n      <td>U(1, 100)</td>\n    </tr>\n    <tr>\n      <td>\u03b3</td>\n      <td>(unitless)</td>\n      <td>Hill coefficient for PQP</td>\n      <td>U(0, 20)</td>\n    </tr>\n    <tr>\n      <td>f</td>\n      <td>(unitless)</td>\n      <td>the fraction of parasites entering sexual development per asexual replication cycle</td>\n      <td>U(0, 1)</td>\n    </tr>\n    <tr>\n      <td>\u03b4P</td>\n      <td>h\u22121</td>\n      <td>death rate of asexual and sexual parasites</td>\n      <td>U(0, 0.2)</td>\n    </tr>\n    <tr>\n      <td>m</td>\n      <td>h\u22121</td>\n      <td>maturation rate of gametocytes</td>\n      <td>U(0, 0.1)</td>\n    </tr>\n    <tr>\n      <td>\u03b4G</td>\n      <td>h\u22121</td>\n      <td>death rate of sequestered gametocytes</td>\n      <td>U(0, 0.1)</td>\n    </tr>\n    <tr>\n      <td>\u03b4Gm</td>\n      <td>h\u22121</td>\n      <td>death rate of circulating gametocytes</td>\n      <td>U(0, 0.1)</td>\n    </tr>\n    <tr>\n      <td>as</td>\n      <td>h</td>\n      <td>sequestration age of asexual parasites</td>\n      <td>fixed to be 25</td>\n    </tr>\n    <tr>\n      <td>aL</td>\n      <td>h</td>\n      <td>length of life cycle of asexual parasites</td>\n      <td>fixed to be 42</td>\n    </tr>\n  </tbody>\n</table>\n\n_SD: standard deviation; h: hour._\n\n### Pharmacokinetic model of piperaquine (PQP)\n\nIn the within-host model, the killing rate $k_{d}(t)$ is determined by PQP concentration $Ct$ which was simulated from a pharmacokinetic (PK) model introduced in this section. The PK model, provided by Thanaporn Wattanakul and Joel Tarning (Mahidol-Oxford Tropical Medicine Research Unit, Bangkok), is a three-compartment disposition model with two transit compartments for absorption (see the schematic diagram in Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig6-v1.jpg)\n\n**Figure 6.:** The model is a three-compartment disposition model with two transit compartments for absorption. State D represents the dose of PQP. T1 and T2 represent the two transit compartments. C is the central compartment and PQP concentration in this compartment was measured (which are shown in Figure 6\u2014figure supplement 1). P1 and P2 represent two peripheral compartments. kT, q1, q2 and qc are the rates of flow into or out of compartments.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49058/elife-49058-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The details of the optimization approach are provided in the Materials and methods in the main text and Appendix 1. Some volunteers have two peaks of PQP concentrations because they had recrudescent asexual parasitemia (see Figure 1 in the main text) and were treated with a second dose of 960 mg PQP. The source data and computer code with instructions of implementation to generate Figure 6\u2014figure supplement 1 are fully publicly available at https://doi.org/10.26188/5cde4c26c8201.\n\nBased on Figure 6, the model is formulated to be a system of ordinary differential equations:\n\n$$\n\\frac{dD}{dt}=\u2212k_{T}D,\n$$\n\n\n\n$$\n\\frac{dT_{1}}{dt}=k_{T}D\u2212k_{T}T_{1},\n$$\n\n\n\n$$\n\\frac{dT_{2}}{dt}=k_{T}T_{1}\u2212k_{T}T_{2},\n$$\n\n\n\n$$\n\\frac{dC}{dt}=\\frac{k_{T}T_{2}+q_{1}P_{1}+q_{2}P_{2}\u2212q_{1}C\u2212q_{2}C\u2212q_{c}C}{V_{c}}_{\u00a0},\n$$\n\n\n\n$$\n\\frac{dP_{1}}{dt}=\\frac{q_{1}C\u2212q_{1}P_{1}}{V_{1}}_{\u00a0},\n$$\n\n\n\n$$\n\\frac{dP_{2}}{dt}=\\frac{q_{2}C\u2212q_{2}P_{2}}{V_{2}}_{\u00a0},\n$$\n\nwhere $k_{T}$ and $q$\u2019s are rate constants as shown in Figure 6 and $V_{c}$, $V_{1}$ and $V_{2}$ are the volume of distribution for the central compartment (in which PQP concentration is C), peripheral compartment 1 (in which PQP concentration is P1) and peripheral compartment 2 (in which PQP concentration is P2) respectively.\n\nUnder the sequential pharmacokinetic-pharmacodynamic (PK-PD) approach we have taken, a PQP concentration curve (C(t)) for each volunteer is a required input into the gametocyte dynamics model. The VIS, with its limited sampling of PQP for each volunteer, was not designed to provide this PQP concentration curve directly, so we used a PK model, informed by data from a previous VIS with rich sampling. We drew on an analysis of that previous VIS by Thanaporn Wattanakul and Joel Tarning (unpublished data and estimates). Their analysis provides population-level PQP PK model parameter estimates.\n\nWe used MATLAB\u2019s (version 2016b; The MathWorks, Natick, MA) built-in least-squares optimizer lsqcurvefit (with the default setting) to optimize the PK curve for each volunteer in the VIS study. We applied the optimizer to each volunteer\u2019s (limited) PQP data, using the parameter estimates provided by Thanaporn Wattanakul and Joel Tarning as initial values. We applied some further model parameter constraints as specified in Appendix 1. This approach provided us with a data-informed PK curve for each volunteer in the VIS, sufficient for our primary purpose of studying the asexual and sexual parasite dynamics. Of note, Volunteers 202, 301, 302 or 307 had fewer PK data points than PK model parameters, preventing application of this optimization procedure. For these volunteers, their predicted PQP PK curve was derived using the population-level mean PK parameter from Wattanakul and Tarning\u2019s analysis. The MATLAB code (with detailed comments) is publicly available at https://doi.org/10.26188/5cde4c26c8201 The details of the initial conditions, starting point and constraints for the PK curve optimization procedure are provided in Appendix 1. The optimized PK curves and associated parameter values for all volunteers are provided in Figure 6\u2014figure supplement 1 and Appendix 1.\n\n### Fitting the model to parasitemia data\n\nWe took a Bayesian hierarchical modeling approach (Gelman et al., 2013) to fit the gametocyte dynamics model to the data from all 17 volunteers. In detail, each volunteer has 12 model parameters (i.e., those in Table 2 except $a_{s}$ and $a_{L}$; also called the individual parameters) and lower and upper bounds of the parameters are given in Table 2. If denoting the individual parameters to be $\\theta_{ind}$and lower and upper bounds to be $b_{L}$ and $b_{U}$ respectively, the following transformations are used to convert the bounded individual parameters to unbounded ones (denoted by $\\phi_{ind}$) in order to in order to improve computational efficiency (Lesaffre et al., 2007; Stan Development Team, 2017):\n\n$$\n\\phi_{ind}=ln\u2061(\\frac{\\theta_{ind}\u2212b_{L}}{b_{U}\u2212\\theta_{ind}}),\n$$\n\no$\\phi_{ind}$\u00a0beys a multivariate normal distribution $\ud835\udca9$($\\phi_{pop}$, $\u03a9_{pop}$) where\n\n$$\n\\phi_{pop}=ln\u2061(\\frac{\\theta_{pop}\u2212b_{L}}{b_{U}\u2212\\theta_{pop}})\n$$\n\nand $\\theta_{pop}$ is a vector containing 12 population mean parameters (hyperparameters) corresponding to the 12 gametocyte dynamics model parameters. $\u03a9_{pop}$ is the covariance matrix. For more efficient sampling process, $\\phi_{ind}~\ud835\udca9$($\\phi_{pop}$, $\u03a9_{pop}$) was reparameterised to a non-centerd form $\\phi_{ind}=\\phi_{pop}+\\omega_{pop}L\u03b7$, where $\\omega_{pop}$ is the diagonal standard deviation (SD) matrix whose diagonal elements are the 12 population SD parameters (hyperparameters); $L$ is the lower Cholesky factor of the correlation matrix; $\u03b7$ obeys standard multivariate normal distribution. Note that $\u03a9_{pop}=\\omega_{pop}LL^{T}\\omega_{pop}$ where $LL^{T}$ is the correlation matrix. The prior distributions for the 12 population mean parameters $\\theta_{pop}$ are given by uniform distributions with bounds given in Table 2. The prior distribution for the 12 population SD parameters is standard half-normal and the prior distribution for the lower Cholesky factor of the correlation matrix $L$ is given by Cholesky LKJ correlation distribution with shape parameter of 2 (Lewandowski et al., 2009; Stan Development Team, 2017). The distribution of the observed parasitemia measurements is assumed to be a log normal distribution with mean given by the model-simulated values and SD parameter with prior distribution of a half-Cauchy distribution with a location parameter of zero and a scale parameter of 5. The distribution for the observed parasitemia measurements was used to calculate the likelihood function and the M3 method (Ahn et al., 2008) was used to penalise the likelihood for data points below the limit of detection for the total parasitemia (10 parasites/mL; Collins et al., 2018).\n\nModel fitting was implemented in R (version 3.2.3) (R Development Core Team, 2017) and Stan (RStan 2.17.3) (Stan Development Team, 2017) using the Hamiltonian Monte Carlo (HMC) optimized by the No-U-Turn Sampler (NUTS) to draw samples from the joint posterior distribution of the parameters including the individual parameters (12 parameters for each volunteer) and population mean parameters (12 hyperparameters). Five chains with different starting points (set by different random seeds) were implemented and 1000 posterior samples retained from each chain after a burn-in of 1000 iterations (in total 5000 samples were drawn from the joint posterior distribution). The marginal posterior and prior distributions of the population mean and SD parameters are shown in Figure 1\u2014figure supplements 1 and 2. The marginal posterior distributions of the individual parameters for all 17 volunteers are shown in Figure 1\u2014figure supplements 3\u201314 (using violin plots). For each volunteer, the 5000 sets of individual parameters are used to simulate the gametocyte dynamics model and generate 5000 simulated model outputs (e.g., 5000 time series of total parasitemia, asexual parasitemia or gametocytemia). The posterior prediction and 95% prediction interval (PI) are given by the median and quantiles of 2.5% and 97.5% of the 5000 model outputs at each time respectively (see Figures 1\u20133 for example).\n\nThe estimates of some key biological parameters (Table 1) were calculated using the 5000 posterior draws of the 12 population mean parameters, that\u00a0is median and 2.5%- and 97.5%-quantile (95% credible interval). The sexual commitment rate was calculated by $f_{pop}\\times100%$ ($f_{pop}$ is the population mean parameter for $f$) and the proportion of committed asexual parasites that survive to become mature gametocytes was calculated by $f_{pop}(m_{pop}/(m_{pop}+\\delta_{G}_{pop}))^{4}$ where the factor of four arises due to the four sequestered gametocyte stages (I to IV). Circulating gametocyte lifespan was calculated by $1/\\delta_{Gm}_{pop}/24$\u00a0(the factor of 24 converts hours into days). Gametocyte sequestration time was calculated by $4/m_{pop}/24$ where 4 indicates four sequestered state (stage I to IV) and 24 converts hours into days. Parasite multiplication factor is calculated by $r_{P}_{pop}exp\u2061(-\\delta_{P}_{pop}a_{L})(1-f_{pop})$ where the term $exp\u2061(-\\delta_{P}_{pop}a_{L})(1-f_{pop})$ gives the fraction of surviving asexual parasites after death and sexual conversion per replication cycle.\n\nThe gametocyte dynamics model with parameters given by the median estimates of the population mean parameters was used to simulate the two scenarios predicting the dependence of human-to-mosquito transmissibility on the sexual commitment rate and gametocyte sequestration time (Figure 4).\n\nFinal analysis and visualization were performed in MATLAB. All computer codes (R, Stan, MATLAB), data and fitting results (CSV and MAT files) and an instruction document (note that reading the document first will make the code much easy to follow) are publicly available at https://doi.org/10.26188/5cde4c26c8201.\n",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "93fdbcec-5800-4dda-b779-346890cb5885",
+      "submission_id": "e9ab91ac-12d1-4432-a163-950969cffc4f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Isabel Rodriguez-Barraquer, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.49058.032](https://doi.org/10.7554/eLife.49058.032)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Modelling the dynamics of Plasmodium falciparum gametocytes in humans during malaria infection\" for consideration by eLife. Your article has been reviewed by Neil Ferguson as the Senior Editor, a Reviewing Editor, and two reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this work, the authors have extended a within-host model of a P. falciparum infection to include gametocyte production. The model is calibrated to parasitaemia from 17 volunteers in a controlled human infection study. Although well thought out and well written, a number of concerns remain: (1) several clarifications need to be made in the description of the models; (2) additional justification is needed for the statistical validation of the results; (3) the section on predicting the impact of gametocyte kinetics seems poorly supported.\n\nEssential revisions:\n\n1) Model description\n\n- a and t in the model are never defined (subsection \u201cStudy population and measurements\u201d).\n\n- \u0393 is never defined (subsection \u201cGametocyte dynamics model\u201d).\n\n- Where do the parameters ranges from Table 2 originate? Why are the death rates so high? For example, the maximum death rate of gametocytes is 0.1/hr, suggesting an average life span of 10 hours.\n\n- Although never stated in this manuscript, it seems that the inoculum from the Collins paper was 2800 parasites. Discuss how the range of 0-10 parasites/mL relates to this.\n\n- Vc, V1 and V2 are never defined (subsection \u201cPharmacokinetic model of piperaquine (PQP)\u201d).\n\n- How are the initial conditions of the drug model chosen? Why are there two spikes for some patients and only one for others (Figure 6\u2014figure supplement 1)?\n\n- In the fitting of the PK model, was only a single starting set considered? Why is it necessary and valid to increase the upper bound for qc? For different parameters, several patients hit the upper or lower bounds. In particular, Volunteers 105 and 20 hit the bounds on almost all parameters. Could their optimal fit be outside the range?\n\n- Justification for all parameter choices and ranges, specifically when the fitted parameters fall on the bound of these ranges is necessary. If there is a specific biological reason to keep the bounds as they are that should be noted. If there is not a biological reason, the bounds should be widened to show that the parameters fitted, and thus the major conclusions, are not impacted by their choice of bounds.\n\n- Throughout the paper there is discussion of \"sexual commitment rate\" but reference is always to the percentage commitment. That distinction should be clear and consistent throughout the manuscript. (See Table 1; subsection \u201cPredicting the impact of gametocyte kinetics on human-to-mosquito transmissibility\u201d; Figure 4CD axes labels; Discussion section; Table 2; subsection \u201cFitting the model to parasitaemia data\u201d; Figure 1\u2014figure supplement 15A axes label; Figure1\u2014figure supplement 1 caption; Figure 1\u2014figure supplement 2 caption; Figure 1\u2014figure supplement 10 caption).\n\n2) Statistical quantification in subsection \u201cModel fitting and validation\u201d, can \"very well\" be quantified? Can \"excellent predictive\" be quantified? Also, \"very persistent\" seems in contradiction of the previous paragraph of discussion of discrepancies. Why is there no discussion in the text of Figure 3? It seems a major point of the paper. How does one validate \"visually capture the data\" in the caption of Appendix 1?\n\n3) Predicting likelihood of transmission. Although a reference is given for the choice of 108 parasite/mL for newly hospitalized cases, this number differs from the values seen in other important references (Eichner et al.,). For the non-infectious period, the 103 parasites/mL is listed as a value below which there is no transmission. As written in the manuscript it sounds like transmission is likely above this value. Furthermore, Figure 4 is confusing. What is the line in D? The only mention refers to when Gc=103, which is all of the values in D. The scaling (log vs linear) in these figures is confusing. Why use log on the fraction of sexual commitment? Why use linear on the Gc value?\n\n4) Subsection \u201cPredicting the impact of gametocyte kinetics on human-to-mosquito transmissibility\u201d seem to suggest that, when determining the point during the infection at which the patient is hospitalised, total parasite density is a better indicator that asexual parasite density. This statement surprised me: a reference to Saralambda et al., 2010 is provided, but I can't find any mention of this. Have I understood the statement correctly, and is there any evidence of this? This is an important point, as the results presented in Figure 4 depend on the determination of the time of hospitalisation (which presumably is a proxy for the patient becoming febrile). The asexual parasite population is responsible for the rupturing of red blood cells every 48 hours, which is often linked to symptomatic malaria. The statement in subsection \u201cPredicting the impact of gametocyte kinetics on human-to-mosquito transmissibility\u201d seems to be contradicted in the Discussion section, which is a bit confusing.\n\n5) In subsection \u201cGametocyte dynamics model\u201d the authors state that piperaquine does not kill immature or mature gametocytes, although there is no reference for this. in vitro evidence (S.H. Adjalley et al., 2011) suggests that the drug does have some effect on very young gametocytes (stages I and II). I think it is reasonable to neglect these effects in the model, but less reasonable to state that there aren't any (I appreciate that I'm being a bit fussy here). Neglecting this drug effect may lead to an increased estimate for the death rate of immature gametocytes, but this is just speculation on my part and I'm not suggesting that the model should be re-fitted at this stage.\n\n6) In Figure 2, several of the panels contain data points that look to be below the stated limit of detected (e.g. all data points after day 14 for Volunteer 202). I imagine that these represent zeros (data points for which the parasitaemia was below the limit of detection), this should be stated somewhere if so.\n\n7) I'm a bit confused by the red line in Figure 4D. The caption of the figure states that, \"The red curves indicate the cases corresponding to gametocytaemia of 103 parasites/mL\". But my understanding of Figure 4D is that at every point (of the 2D surface) gametocytaemia has reached 103 gametocytes / mL. Have I understood this correctly? It could be that the red line on this panel is a contour of constant tc, which should be clearly stated if this is the case. *The results presented in Figure 4C suggest that newly hospitalised malaria patients are unlikely to be infectious. How do these results compare with clinical trial data? Baseline gametocytaemia is routinely recorded in clinical trials of uncomplicated malaria. It would be interesting to see how the results compare (and why they might be different).\n\n8) One limitation of the study is that the circulation time of mature gametocytes cannot be estimated with any accuracy, due to the lack of patient follow-up. The authors do acknowledge this, but I think the statement (subsection \u201cEstimation of gametocyte dynamics parameters\u201d), \"\u2026 we found that the circulating gametocyte lifespan\u2026 was much longer than that estimated from the neurosyphilis patient data\u2026\" is too strong and should be adjusted. In particular, using a constant hazard for gametocyte death (which was not found to provide the best model fit to the neurosyphilis patient data) in the case where an adequate follow up period was not available will overestimate the circulation time of the gametocytes.\n\n9) In Table 2, I wonder if the prior on parameter f should be 0-100%, not 0-1%. Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 10 suggests that the relevant marginal posteriors extend beyond 0.01 (here f not converted to a percentage). Furthermore, in Table 1 the authors compare the commitment rate to the much higher values obtained elsewhere, particularly in vitro. It would be a curious comparison, if higher values were excluded from the model by using a uniform prior between 0-1%.\n\n10) In Figure 1\u2014figure supplement 1, I was initially confused by the high values for rp. Toward the end of the Methods section, the authors do explain how to convert this value to a net multiplication rate, which does clarify the matter. This parameter could be called (e.g.) the raw multiplication rate, but I leave this to the authors' discretion.\n",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "305011a8-256a-4812-ae30-85dd4ddabbe7",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C1",
+      "claim": "Malaria is estimated to have caused approximately 219 million new cases in 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated to have caused approximately 219 million new cases and 435,000 deaths in 2017, primarily due to Plasmodium falciparum (The World Health Organization, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to The World Health Organization, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "d0265634-de3e-436c-817f-fa3a46eb2d28",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C2",
+      "claim": "Malaria is estimated to have caused 435,000 deaths in 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated to have caused approximately 219 million new cases and 435,000 deaths in 2017, primarily due to Plasmodium falciparum (The World Health Organization, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to The World Health Organization, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "3f11a438-6b90-4e43-89fb-3d67628363d7",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C3",
+      "claim": "The majority of malaria deaths in 2017 were primarily due to Plasmodium falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated to have caused approximately 219 million new cases and 435,000 deaths in 2017, primarily due to Plasmodium falciparum (The World Health Organization, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to The World Health Organization, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "f47e2e7c-e378-492f-b756-2ec40ca25505",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C4",
+      "claim": "P. falciparum malaria is transmitted from humans to mosquitoes when gametocytes are taken up by female Anopheles mosquitoes during a blood meal.",
+      "claim_type": "EXPLICIT",
+      "source": "P. falciparum malaria is transmitted from humans to the mosquito when terminally differentiated male and female sexual-stages of the parasite, called gametocytes, are taken up by female Anopheles mosquito during a blood meal (Bousema and Drakeley, 2011; Josling and Llin\u00e1s, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bousema and Drakeley, 2011 and Josling and Llin\u00e1s, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "305776ec-d038-4dc1-a9bf-0dd647487f90",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C5",
+      "claim": "Gametocytemia is highly associated with the probability of human-to-mosquito transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of gametocytes in the blood, often referred to as gametocytemia, is highly associated with the probability of human-to-mosquito transmission (Bradley et al., 2018; Churcher et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bradley et al., 2018 and Churcher et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "6d30a9b9-ccf5-43f7-b438-da033b011f8a",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C6",
+      "claim": "Gametocyte levels below 1000 per mL blood minimize the probability that a mosquito will take up both a male and female gametocyte during a blood-meal.",
+      "claim_type": "EXPLICIT",
+      "source": "Gametocyte levels below a certain threshold (i.e., <1000 per mL blood) minimize the probability that a mosquito will take up both a male and female gametocyte during a blood-meal, which is necessary to propagate infection (Collins et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Collins et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "3508534e-ab16-4bc9-9b8a-93c1d2055c93",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C7",
+      "claim": "The limit of quantification for microscopic examination of blood-films is approximately 10^4 parasites/mL blood.",
+      "claim_type": "EXPLICIT",
+      "source": "In these studies, the limit of quantification was approximately 104 parasites/mL blood, at least two orders of magnitude higher than that of current quantitative PCR (qPCR) assays (Rockett et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Rockett et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "c769334d-a95f-49e8-85c6-13379604bb06",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C8",
+      "claim": "The limit of quantification for microscopic examination is at least two orders of magnitude higher than that of current qPCR assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In these studies, the limit of quantification was approximately 104 parasites/mL blood, at least two orders of magnitude higher than that of current quantitative PCR (qPCR) assays (Rockett et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Rockett et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "69ce913b-f153-43e6-82cc-b9c493de9264",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C9",
+      "claim": "The study used data from 17 malaria-na\u00efve volunteers inoculated with P. falciparum-infected red blood cells (3D7 strain).",
+      "claim_type": "EXPLICIT",
+      "source": "The data used in this modeling study are from a previously published VIS (Collins et al., 2018) where 17 malaria-na\u00efve volunteers were inoculated with approximately 2800 P. falciparum-infected red blood cells (3D7 strain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section and supported by a citation to Collins et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "d77f0d4d-15d6-4e10-bac8-476618e33294",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C10",
+      "claim": "Volunteers were inoculated with approximately 2800 P. falciparum-infected red blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The data used in this modeling study are from a previously published VIS (Collins et al., 2018) where 17 malaria-na\u00efve volunteers were inoculated with approximately 2800 P. falciparum-infected red blood cells (3D7 strain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section and supported by a citation to Collins et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "3ce1bae7-89cc-4dcf-9376-7566d77a1b20",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C11",
+      "claim": "Volunteers were treated with 480 mg piperaquine phosphate (PQP) on day 7 or 8 post-inoculation.",
+      "claim_type": "EXPLICIT",
+      "source": "The volunteers were treated with 480 mg piperaquine phosphate (PQP) on day 7 or 8 post-inoculation to attenuate asexual parasite growth and a second dose of 960 mg PQP was given to any volunteer for treatment of recrudescent asexual parasitemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "35fd6b82-b535-4b7e-a42b-a71aa41cca0b",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C12",
+      "claim": "A second dose of 960 mg PQP was given to volunteers for treatment of recrudescent asexual parasitemia.",
+      "claim_type": "EXPLICIT",
+      "source": "The volunteers were treated with 480 mg piperaquine phosphate (PQP) on day 7 or 8 post-inoculation to attenuate asexual parasite growth and a second dose of 960 mg PQP was given to any volunteer for treatment of recrudescent asexual parasitemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "75f4686a-0c2a-4c4e-83ae-2dd2fa2bd981",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C13",
+      "claim": "12 of 17 volunteers experienced recrudescence.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of fitting the mathematical model to total parasitemia data for all 17 volunteers are given in Figure 1 where 12 of 17 volunteers experienced recrudescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "1c4c30e5-c5eb-4a3f-b93f-c2a37d2ee07c",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C14",
+      "claim": "The sexual commitment rate is estimated to be 0.54% (95% credible interval: 0.30\u20131.00%) per asexual replication cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated the sexual commitment rate and gametocyte sequestration time to be 0.54% (95% credible interval: 0.30\u20131.00%) per asexual replication cycle and 8.39 (6.54\u201310.59) days respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Abstract and supported by model fitting to data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "fa20f620-f953-47e9-85a8-2bd86cd14d9d",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C15",
+      "claim": "The gametocyte sequestration time is estimated to be 8.39 (6.54\u201310.59) days.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated the sexual commitment rate and gametocyte sequestration time to be 0.54% (95% credible interval: 0.30\u20131.00%) per asexual replication cycle and 8.39 (6.54\u201310.59) days respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Abstract and supported by model fitting to data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "baf0ba44-37a7-4015-849a-bd54aa7992c8",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C16",
+      "claim": "The in vivo sexual commitment rate estimate of 0.54%/asexual replication cycle is much lower than the in vitro estimate of 11%/asexual replication cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This in vivo estimate of 0.54%/asexual replication cycle is much lower than 11%/asexual replication cycle that was estimated from in vitro data (Filarsky et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares the study's estimate with a cited in vitro estimate from Filarsky et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "2ef01c1a-c2d1-4aac-8ba3-ec0fe2130edb",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C17",
+      "claim": "The proportion of committed asexual parasites that survive to become mature gametocytes is 0.52%/asexual replication cycle (95% CI: 0.28\u20130.95%).",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of committed asexual parasites that survive to become mature gametocytes, calculated by discounting the sexual commitment rate by the probability of survival from the immature (stages I\u2013IV) to mature (stage V) gametocyte life-stage, is 0.52%/asexual replication cycle (95% CI: 0.28\u20130.95%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section and is calculated from model parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "9ae2c6f4-b108-4233-8559-a101e4af2e1f",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C18",
+      "claim": "The circulating gametocyte lifespan is estimated to be 63.5 days with a 95% CI of 12.7\u20131513.9 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimate for the circulating gametocyte lifespan is 63.5 days, with a broad 95% CI (12.7\u20131513.9 days) resulting from the long-tailed posterior distribution (Figure 1\u2014figure supplement 15) and is much longer than the previous in vitro estimate of 16\u201332 days (Gebru et al., 2017) (note that our lower bound of the 95% CI is lower than the in vitro estimated range).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section and supported by model fitting to data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "86b40240-d049-4059-89a0-eed6e883a1fd",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C19",
+      "claim": "The circulating gametocyte lifespan estimate is much longer than the previous in vitro estimate of 16\u201332 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimate for the circulating gametocyte lifespan is 63.5 days, with a broad 95% CI (12.7\u20131513.9 days) resulting from the long-tailed posterior distribution (Figure 1\u2014figure supplement 15) and is much longer than the previous in vitro estimate of 16\u201332 days (Gebru et al., 2017) (note that our lower bound of the 95% CI is lower than the in vitro estimated range).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares the study's estimate with a cited in vitro estimate from Gebru et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "a884c80d-da7a-434c-b3e3-4ec52b338c0e",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C20",
+      "claim": "The parasite multiplication factor is estimated to be 21.8 parasites per asexual replication cycle (95% CI: 17.6\u201326.9).",
+      "claim_type": "EXPLICIT",
+      "source": "Our posterior-median estimate is 21.8 parasites per asexual replication cycle (95% CI: 17.6\u201326.9), consistent with previous estimates which lie in the range 10\u201333 (Wockner et al., 2017), and a bit larger than an updated estimate calculated from a pooled analysis of parasite counts from 177 volunteers infected with the same P. falciparum strain using a statistical model (16.4 parasites per asexual replication cycle) (JS McCarthy, personal communication, May 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section and supported by model fitting to data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "7cafa3cb-1513-476a-8893-8f88f2af37dd",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C21",
+      "claim": "The parasite multiplication factor estimate is consistent with previous estimates which lie in the range 10\u201333.",
+      "claim_type": "EXPLICIT",
+      "source": "Our posterior-median estimate is 21.8 parasites per asexual replication cycle (95% CI: 17.6\u201326.9), consistent with previous estimates which lie in the range 10\u201333 (Wockner et al., 2017), and a bit larger than an updated estimate calculated from a pooled analysis of parasite counts from 177 volunteers infected with the same P. falciparum strain using a statistical model (16.4 parasites per asexual replication cycle) (JS McCarthy, personal communication, May 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares the study's estimate with cited previous estimates from Wockner et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "af3e697b-b12d-43d2-8b75-a2df07878166",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C22",
+      "claim": "The model provides an excellent fit to the clinical data from 17 volunteers infected with P. falciparum (3D7 strain).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the model provides an excellent fit to the clinical data from 17 volunteers infected with P. falciparum (3D7 strain) and reliably predicts observed gametocytemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Abstract and supported by model fitting results shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "d01374c6-2855-47be-a739-99720244a99b",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C23",
+      "claim": "The model reliably predicts observed gametocytemia.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the model provides an excellent fit to the clinical data from 17 volunteers infected with P. falciparum (3D7 strain) and reliably predicts observed gametocytemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Abstract and supported by validation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "67e545b2-deb2-4cb9-a499-9ae7b4c642a2",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C24",
+      "claim": "The model predictions of gametocytemia were able to capture the trends and levels of the gametocytemia data for all 17 volunteers.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3 shows the data and model predictions for the gametocytemia. Despite some discrepant observations for asexual parasitemia in Figure 2, we found that the model predictions of gametocytemia were able to capture the trends and levels of the gametocytemia data for all 17 volunteers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the Results section and supported by Figure 3 showing model predictions versus data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "76838b57-a7dd-4c90-8aa7-bb0972e60298",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C25",
+      "claim": "The in vivo sexual commitment rate estimate is similar to that found in neurosyphilis patient data.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that they exhibited similar in vivo sexual commitment rate (median 0.54%/asexual replication cycle vs. mean 0.64%/asexual replication cycle with overlapping plausible ranges) and gametocyte sequestration time (median 8.39 days vs. mean 7.4 days with overlapping plausible ranges).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares the study's estimate with estimates from Eichner et al., 2001 based on neurosyphilis patient data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "e78e3e30-838c-4e77-a0c5-1a38789eda5a",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C26",
+      "claim": "The gametocyte sequestration time estimate is similar to that found in neurosyphilis patient data.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that they exhibited similar in vivo sexual commitment rate (median 0.54%/asexual replication cycle vs. mean 0.64%/asexual replication cycle with overlapping plausible ranges) and gametocyte sequestration time (median 8.39 days vs. mean 7.4 days with overlapping plausible ranges).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares the study's estimate with estimates from Eichner et al., 2001 based on neurosyphilis patient data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "d6e4844a-f8e2-46c0-abac-5e7567900cee",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C27",
+      "claim": "A higher sexual commitment rate leads to a higher gametocytemia at the time of hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "A higher sexual commitment rate or a lower gametocyte sequestration time leads to a higher gametocytemia (Gc) at the time of hospitalization (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the Results section and supported by Figure 4C showing the relationship.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "8ea53526-26e5-4c89-9b22-cfbe02e97262",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C28",
+      "claim": "A lower gametocyte sequestration time leads to a higher gametocytemia at the time of hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "A higher sexual commitment rate or a lower gametocyte sequestration time leads to a higher gametocytemia (Gc) at the time of hospitalization (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the Results section and supported by Figure 4C showing the relationship.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "e287f706-0ee2-4a54-b85c-d0587819f1ff",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C29",
+      "claim": "Newly hospitalized malaria patients are less likely to be infectious based on model predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gc value obtained by model simulation using the median estimates of the population mean parameters (indicated by the black dot) is below 103 gametocytes/mL, suggesting that newly hospitalized malaria patients are less likely to be infectious, and thus efforts to identify and treat infections in a timely manner may have a substantial impact in terms of reduced transmission potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model simulations and inference from the predicted gametocyte levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "ddc3320c-222e-48da-baa1-8d68378e28f8",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C31",
+      "claim": "The model assumes a fixed duration for the asexual replication cycle of 42 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Another limitation is that we assumed a fixed duration for the asexual replication cycle of 42 hr, while previous work by our group suggests that the replication cycle may be altered by up to a few hours in response to antimalarial drugs (e.g., artemisinin [Cao et al., 2017; Dogovski et al., 2015]), though there is no evidence that piperaquine (which was administered in this VIS) has a similar effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Discussion section as a model assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "5d915625-3dbb-4966-887e-7f943f867e6f",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C32",
+      "claim": "PQP has little activity against sexually committed parasites and gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our assumption was based on evidence from both in vitro and in vivo experiments that suggests that PQP has little activity against sexually committed parasites and gametocytes (Collins et al., 2018; Pasay et al., 2016; Bolscher et al., 2015), although we note there is some evidence that PQP might have activity against early-stage I/II gametocytes (Adjalley et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Collins et al., 2018; Pasay et al., 2016; and Bolscher et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "91abb0f9-cc1c-4d72-8005-d2a95afee1d5",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C33",
+      "claim": "There is some evidence that PQP might have activity against early-stage I/II gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our assumption was based on evidence from both in vitro and in vivo experiments that suggests that PQP has little activity against sexually committed parasites and gametocytes (Collins et al., 2018; Pasay et al., 2016; Bolscher et al., 2015), although we note there is some evidence that PQP might have activity against early-stage I/II gametocytes (Adjalley et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Adjalley et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "4485302c-5045-40f9-a702-68e5e7d478f9",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C34",
+      "claim": "The model does not assume an adaptive sexual commitment rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the model does not assume an adaptive sexual commitment rate (Schneider et al., 2018), nor does it consider the mechanisms of sexual commitment (Bancells et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Discussion section as a model limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "76c55c06-3035-4bf5-baea-6e94c8cd334f",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C35",
+      "claim": "The model assumes a constant gametocyte death rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the model assumes a constant gametocyte death rate but does not consider other non-constant formulations as have been previously proposed (Diebner et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Discussion section as a model assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "23f03282-3103-4b3a-8aa4-697128ec1c89",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C36",
+      "claim": "The wide estimate for the circulating gametocyte lifespan is due to the limited observation time in the VIS.",
+      "claim_type": "EXPLICIT",
+      "source": "The wide estimate for the circulating gametocyte lifespan, and in particular the high upper bound of the 95% CI, is due to the limited observation time in the VIS which does not enable the lifespan to be accurately determined (explored in more detail in the Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section and explained as a limitation of the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "fd11af46-5e31-4778-9e13-bce6ab356906",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C37",
+      "claim": "The model was fitted using Bayesian hierarchical inference.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we study the in vivo dynamics of Plasmodium falciparum gametocytes by establishing a framework which incorporates improved measurements of parasitemia, a novel gametocyte dynamics model and model fitting using Bayesian hierarchical inference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "a963582f-bbf3-4dc0-8df0-8a5044c415f6",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C38",
+      "claim": "Total parasitemia was measured by 18S qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The total parasitemia was measured by 18S qPCR (total circulating asexual parasites and gametocytes per mL blood), asexual parasitemia was measured by SBP1 qRT-PCR (circulating asexual parasites per mL blood), and gametocytemia was measured by Pfs25 and PfMGET qRT-PCR (circulating female and male gametocytes per mL blood).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "6f7e57de-38e9-4ff6-8067-30505b2ddbf1",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C39",
+      "claim": "Asexual parasitemia was measured by SBP1 qRT-PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The total parasitemia was measured by 18S qPCR (total circulating asexual parasites and gametocytes per mL blood), asexual parasitemia was measured by SBP1 qRT-PCR (circulating asexual parasites per mL blood), and gametocytemia was measured by Pfs25 and PfMGET qRT-PCR (circulating female and male gametocytes per mL blood).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "0ea1ccc1-9995-437c-b599-2cfdf480013b",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C40",
+      "claim": "Gametocytemia was measured by Pfs25 and PfMGET qRT-PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The total parasitemia was measured by 18S qPCR (total circulating asexual parasites and gametocytes per mL blood), asexual parasitemia was measured by SBP1 qRT-PCR (circulating asexual parasites per mL blood), and gametocytemia was measured by Pfs25 and PfMGET qRT-PCR (circulating female and male gametocytes per mL blood).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "66beefd3-60ff-49cf-80fc-6027ba31ab41",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C41",
+      "claim": "The limit of detection for total parasitemia is 10 parasites/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution for the observed parasitemia measurements was used to calculate the likelihood function and the M3 method (Ahn et al., 2008) was used to penalise the likelihood for data points below the limit of detection for the total parasitemia (10 parasites/mL; Collins et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section and supported by a citation to Collins et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "f7c33836-30bd-429f-914c-2098ebbf26b2",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C44",
+      "claim": "The model incorporates a three-compartment disposition model with two transit compartments for absorption for PQP pharmacokinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "The PK model, provided by Thanaporn Wattanakul and Joel Tarning (Mahidol-Oxford Tropical Medicine Research Unit, Bangkok), is a three-compartment disposition model with two transit compartments for absorption (see the schematic diagram in Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section and illustrated in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "fee4c937-2018-4621-9af2-656961fc222f",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C45",
+      "claim": "The study used a sequential pharmacokinetic-pharmacodynamic (PK-PD) approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the sequential pharmacokinetic-pharmacodynamic (PK-PD) approach we have taken, a PQP concentration curve (C(t)) for each volunteer is a required input into the gametocyte dynamics model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "1a1ea695-5b69-4580-b62a-f532ba86c773",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C46",
+      "claim": "Five chains with different starting points were implemented for model fitting.",
+      "claim_type": "EXPLICIT",
+      "source": "Five chains with different starting points (set by different random seeds) were implemented and 1000 posterior samples retained from each chain after a burn-in of 1000 iterations (in total 5000 samples were drawn from the joint posterior distribution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "09b55b30-ebcb-4810-98f2-0208fcc6f3ba",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C47",
+      "claim": "1000 posterior samples were retained from each chain after a burn-in of 1000 iterations.",
+      "claim_type": "EXPLICIT",
+      "source": "Five chains with different starting points (set by different random seeds) were implemented and 1000 posterior samples retained from each chain after a burn-in of 1000 iterations (in total 5000 samples were drawn from the joint posterior distribution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "fd4c8b54-2138-49f3-89b6-63e2548ff15c",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C48",
+      "claim": "In total 5000 samples were drawn from the joint posterior distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Five chains with different starting points (set by different random seeds) were implemented and 1000 posterior samples retained from each chain after a burn-in of 1000 iterations (in total 5000 samples were drawn from the joint posterior distribution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "0b3be0d6-0dd5-41d8-af5b-5083d6c8e6e0",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C49",
+      "claim": "The model fitting was implemented in R (version 3.2.3) and Stan (RStan 2.17.3).",
+      "claim_type": "EXPLICIT",
+      "source": "Model fitting was implemented in R (version 3.2.3) (R Development Core Team, 2017) and Stan (RStan 2.17.3) (Stan Development Team, 2017) using the Hamiltonian Monte Carlo (HMC) optimized by the No-U-Turn Sampler (NUTS) to draw samples from the joint posterior distribution of the parameters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "37bca8f9-84b9-4cee-a4c0-b2ce84c85077",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C50",
+      "claim": "The model fitting used Hamiltonian Monte Carlo (HMC) optimized by the No-U-Turn Sampler (NUTS).",
+      "claim_type": "EXPLICIT",
+      "source": "Model fitting was implemented in R (version 3.2.3) (R Development Core Team, 2017) and Stan (RStan 2.17.3) (Stan Development Team, 2017) using the Hamiltonian Monte Carlo (HMC) optimized by the No-U-Turn Sampler (NUTS) to draw samples from the joint posterior distribution of the parameters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "c68d2a08-6406-4e31-908d-8288e8eaf667",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C51",
+      "claim": "The data-calibrated model can be used to investigate human-to-mosquito transmissibility.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the data-calibrated model to investigate human-to-mosquito transmissibility, providing a method to link within-human host infection kinetics to epidemiological-scale infection and transmission patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "f062a4f5-4d2e-4109-afc2-10c4e982da20",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C52",
+      "claim": "The model provides a method to link within-human host infection kinetics to epidemiological-scale infection and transmission patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the data-calibrated model to investigate human-to-mosquito transmissibility, providing a method to link within-human host infection kinetics to epidemiological-scale infection and transmission patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "52427266-d2c1-4c94-a856-7e1373b4cb90",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C53",
+      "claim": "The within human host transmission model can be incorporated into epidemiological-scale models to refine predictions of the impacts of various antimalarial treatments and transmission interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the within human host transmission model can be incorporated into epidemiological-scale models to refine predictions of the impacts of various antimalarial treatments and transmission interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "70b776a3-9dcc-4cba-b477-d0209d9c8f38",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C54",
+      "claim": "Efforts to identify and treat infections in a timely manner may have a substantial impact in terms of reduced transmission potential.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gc value obtained by model simulation using the median estimates of the population mean parameters (indicated by the black dot) is below 103 gametocytes/mL, suggesting that newly hospitalized malaria patients are less likely to be infectious, and thus efforts to identify and treat infections in a timely manner may have a substantial impact in terms of reduced transmission potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from model predictions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "aabdb5ca-aeec-4a63-9101-fc1ae6643ac4",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C55",
+      "claim": "The model under-predicts a portion of the asexual parasitemia data for Volunteer 204.",
+      "claim_type": "EXPLICIT",
+      "source": "The model under-predicts (Volunteer 204) or over-predicts (Volunteer 303, 305 and 306) a portion of the asexual parasitemia data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section based on comparison of model predictions with data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "67a2ffaa-b925-4050-a923-52ca03f25078",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C56",
+      "claim": "The model over-predicts a portion of the asexual parasitemia data for Volunteers 303, 305 and 306.",
+      "claim_type": "EXPLICIT",
+      "source": "The model under-predicts (Volunteer 204) or over-predicts (Volunteer 303, 305 and 306) a portion of the asexual parasitemia data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section based on comparison of model predictions with data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "fd08c19d-df39-4c25-a514-f9c69c36c898",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C57",
+      "claim": "As the sexual commitment rate increases, the non-infectious period decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4D reinforces the result in Figure 4C using the non-infectious period (tc). As the sexual commitment rate increases or the gametocyte sequestration time decreases, tc decreases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the Results section and supported by Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "8ccc5b5a-0935-45db-9e80-ed71d2b3e92f",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C58",
+      "claim": "As the gametocyte sequestration time decreases, the non-infectious period decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4D reinforces the result in Figure 4C using the non-infectious period (tc). As the sexual commitment rate increases or the gametocyte sequestration time decreases, tc decreases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the Results section and supported by Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "67568d05-e04b-47d7-a6b4-5f8cb7629699",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C59",
+      "claim": "For very high sexual commitment rates, the impact of decreased asexual parasite growth more than counterbalances the increase in sexually committed parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because an increased sexual commitment rate leads to both a decrease in the rate of asexual parasite growth (due to a direct loss of asexual parasites as they convert to gametocytes) and an increase in the number of sexually committed parasites. For a very high sexual commitment rate, the impact of the former more than counterbalances that of the latter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section as an explanation for model behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "308784da-d255-4929-93d1-f8f4249e2b10",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C60",
+      "claim": "The model predicted a very fast rise in total parasitemia to 10^8 parasites/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "One plausible explanation for the difference is that our model predicted a very fast rise in total parasitemia to 108 parasites/mL while the rise in parasitemia among patients in endemic settings may be slower due to the effect of immunity on the parasite multiplication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "480dd33f-aa2b-478a-b093-2d45dac7df9d",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C61",
+      "claim": "Immunity was not considered in the model due to the design of the VIS where only malaria na\u00efve volunteers were recruited.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunity was not considered in our model due to the design of our VIS where only malaria na\u00efve volunteers were recruited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section as a model limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "ecdb0b66-d89a-452b-bc43-52bf14c7aa3a",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C62",
+      "claim": "The study was approved by the QIMR Berghofer Human Research Ethics Committee.",
+      "claim_type": "EXPLICIT",
+      "source": "The study was approved by the QIMR Berghofer Human Research Ethics Committee and registered with ClinicalTrials.gov (NCT02431637 and NCT02431650).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "56a30eef-396c-4a23-9a32-2da39baacc3b",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C63",
+      "claim": "The study was registered with ClinicalTrials.gov (NCT02431637 and NCT02431650).",
+      "claim_type": "EXPLICIT",
+      "source": "The study was approved by the QIMR Berghofer Human Research Ethics Committee and registered with ClinicalTrials.gov (NCT02431637 and NCT02431650).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "492ab439-d2c6-4117-a1c7-cfcdecba88d9",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C64",
+      "claim": "All volunteers received a course of artemether/lumefantrine to clear all parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "All volunteers received a course of artemether/lumefantrine and, if required, a single dose of primaquine (45 mg) to clear all parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "cab6037b-dece-48f9-a8e4-a8799280c4ab",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C65",
+      "claim": "Some volunteers received a single dose of primaquine (45 mg) if required to clear all parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "All volunteers received a course of artemether/lumefantrine and, if required, a single dose of primaquine (45 mg) to clear all parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "46946b4b-c071-4c03-8ae8-2af98458b8b2",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C66",
+      "claim": "The model extends published models of asexual parasite replication cycle by incorporating the development of gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The mathematical model extends the published models of asexual parasite replication cycle (Saralamba et al., 2011; Zaloumis et al., 2012) by incorporating the development of gametocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "b2166162-59f7-4dda-903c-7d2d7e432b65",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C67",
+      "claim": "The model is comprised of three parts describing asexual parasites, sexually committed parasites, and gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The model is comprised of three parts describing three populations of parasites: asexual parasites (P), sexually committed parasites (PG) and gametocytes (G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "376381b0-518f-4717-8d10-e7409d005c21",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C69",
+      "claim": "The model assumes PQP does not kill gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that we assumed in our model that PQP does not kill gametocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section as a model assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "5ab3efb3-4b54-49f5-b151-c83ba34e729b",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "claim_id": "C70",
+      "claim": "The distribution of the observed parasitemia measurements is assumed to be a log normal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of the observed parasitemia measurements is assumed to be a log normal distribution with mean given by the model-simulated values and SD parameter with prior distribution of a half-Cauchy distribution with a location parameter of zero and a scale parameter of 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Materials and methods section as a model assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "13bf1ec0-aa23-4dba-a605-77ccab6b17ef",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used data from 17 malaria-na\u00efve volunteers inoculated with approximately 2800 P. falciparum-infected red blood cells (3D7 strain), treated with piperaquine phosphate (PQP) at specified doses, with 12 of 17 volunteers experiencing recrudescence. The study was approved by the QIMR Berghofer Human Research Ethics Committee and registered with ClinicalTrials.gov.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 and C62-C65 describe the study design, population, treatment protocol, and ethical approvals. These are well-documented methodological details supported by citation to the primary data source (Collins et al., 2018) and direct statements in the Materials and methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "d9065e52-5f1b-4b33-847c-04252359d53c",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study measured total parasitemia by 18S qPCR, asexual parasitemia by SBP1 qRT-PCR, and gametocytemia by Pfs25 and PfMGET qRT-PCR, with a limit of detection for total parasitemia of 10 parasites/mL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 describe the molecular measurement methods used in the study. These are clearly stated in the Materials and methods section and are supported by citation to the primary data source (Collins et al., 2018), providing appropriate technical detail for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "eaf17b88-f794-473c-9162-df5fa43f7bb1",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The mathematical model extends published asexual parasite replication models by incorporating gametocyte development across three parasite populations (asexual, sexually committed, and gametocytes), with specific assumptions including a fixed 42-hour asexual replication cycle, no adaptive sexual commitment rate, constant gametocyte death rate, and that PQP does not kill gametocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 and C31-C35, C69-C70 describe the model structure and key assumptions. These are clearly stated in the Materials and methods section with appropriate citations to prior work. The authors acknowledge limitations of these assumptions in the Discussion, demonstrating appropriate scientific rigor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "a7fa9f00-2257-4918-994f-3bf3d9309b65",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model was fitted using Bayesian hierarchical inference implemented in R (version 3.2.3) and Stan (RStan 2.17.3) using Hamiltonian Monte Carlo optimized by the No-U-Turn Sampler, with five chains and 1000 posterior samples retained from each chain after burn-in, totaling 5000 samples. The model incorporates a three-compartment PK model for PQP using a sequential PK-PD approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37 and C44-C50 describe the computational methods and software used for model fitting. These are clearly stated in the Materials and methods section with appropriate version numbers and parameter specifications, providing sufficient detail for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "bf3d3428-a485-46fc-8d3d-2952bf277092",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model provides an excellent fit to total parasitemia data from 17 volunteers and reliably predicts observed gametocytemia, capturing trends and levels for all volunteers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 describe the model's predictive performance. Figure 1 shows excellent fit to total parasitemia data (narrow 95% prediction intervals), and Figure 3 demonstrates that gametocytemia predictions capture trends and levels for all 17 volunteers despite some discrepancies in asexual parasitemia (Figure 2). The validation approach (fitting to total parasitemia, then predicting asexual and gametocyte components) is scientifically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "1a95f549-f614-4a38-b40d-0007d3436c4d",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The sexual commitment rate is estimated to be 0.54% (95% CI: 0.30-1.00%) per asexual replication cycle, the gametocyte sequestration time is 8.39 (6.54-10.59) days, and the proportion of committed parasites surviving to mature gametocytes is 0.52% (95% CI: 0.28-0.95%) per asexual replication cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 and C17 present key parameter estimates from the Bayesian model fitting. These estimates are derived from 5000 posterior samples and are presented with appropriate credible intervals. The estimates are biologically plausible and the methodology (Bayesian hierarchical inference with HMC/NUTS) is appropriate for this type of analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "4ce453bc-cbd9-442b-af6f-9fc7f35ad6f9",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The circulating gametocyte lifespan is estimated to be 63.5 days (95% CI: 12.7-1513.9 days), which is much longer than the previous in vitro estimate of 16-32 days. The wide credible interval is due to limited observation time in the VIS that does not enable accurate determination of lifespan.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C18-C19 and C36 present the gametocyte lifespan estimate with an extremely wide credible interval spanning two orders of magnitude. While the authors acknowledge this limitation (C36), the upper bound of 1513.9 days (~4 years) is biologically implausible for circulating gametocytes. The wide interval indicates the data cannot reliably constrain this parameter, making the point estimate of 63.5 days unreliable despite the model fitting well otherwise.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "255e86b3-cde1-4983-bbd6-07dd65e98594",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The parasite multiplication factor is estimated to be 21.8 parasites per asexual replication cycle (95% CI: 17.6-26.9), consistent with previous estimates in the range 10-33.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 present the parasite multiplication factor estimate with a reasonable credible interval. The estimate is consistent with prior literature (Wockner et al., 2017) and slightly higher than a more recent pooled analysis (16.4, personal communication). The consistency with prior work and narrow credible interval support this estimate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "edd4b5e4-58f2-4da4-bab4-0bf5663390bd",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The in vivo sexual commitment rate estimate (0.54%/cycle) is much lower than the in vitro estimate (11%/cycle) but similar to estimates from neurosyphilis patient data (0.64%/cycle). The gametocyte sequestration time estimate (8.39 days) is also similar to neurosyphilis patient data (7.4 days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C25-C26 compare the study's estimates with prior literature. The comparison with in vitro data (Filarsky et al., 2018) and historical in vivo data (Eichner et al., 2001) is appropriate and well-supported. The discrepancy with in vitro estimates is biologically plausible as in vitro conditions may not reflect in vivo dynamics, and the consistency with historical in vivo data provides validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "5601273c-bffa-4bc1-a285-3d95ffd9856e",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Higher sexual commitment rates and lower gametocyte sequestration times lead to higher gametocytemia at hospitalization and shorter non-infectious periods. However, for very high sexual commitment rates (>20%), the non-infectious period increases due to decreased asexual parasite growth counterbalancing increased sexually committed parasites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 and C57-C59 describe model predictions about the relationship between gametocyte kinetic parameters and transmissibility. These predictions are supported by Figure 4C-D showing heatmaps of these relationships. The non-monotonic behavior at very high sexual commitment rates (C59) is explained mechanistically and represents a biologically plausible trade-off.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "f60917bc-48ee-4697-8937-332cc2fafe43",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Model predictions suggest newly hospitalized malaria patients are less likely to be infectious (gametocytemia below 10^3/mL threshold), suggesting timely treatment may reduce transmission. However, the model predicts faster parasitemia rise than observed in endemic settings, possibly due to not accounting for immunity in malaria-na\u00efve volunteers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29 and C54 make public health inferences based on model predictions, but C60-C61 acknowledge a significant limitation: the model predicts faster parasitemia rise than observed in endemic settings, likely because immunity was not modeled. This discrepancy undermines confidence in the transmissibility predictions for real-world endemic settings, as clinical data from endemic areas show much higher gametocyte counts at presentation (16-5120/\u00b5L vs. <1/\u00b5L predicted).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "70f75bf7-d096-4f26-a92a-07e1fc45b585",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model under-predicts asexual parasitemia for Volunteer 204 and over-predicts for Volunteers 303, 305, and 306.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 acknowledge specific model misfits for asexual parasitemia in 4 of 17 volunteers, as shown in Figure 2. This honest reporting of model limitations is appropriate, though the authors note that gametocytemia predictions remain accurate despite these discrepancies (C24).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "31d3fec6-bf8a-4e87-ab59-51cf6ee61b66",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The data-calibrated model can be used to investigate human-to-mosquito transmissibility and provides a method to link within-human host infection kinetics to epidemiological-scale patterns. The model can be incorporated into epidemiological-scale models to refine predictions of antimalarial treatment and transmission intervention impacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C53 propose future applications of the model. While the model successfully predicts gametocytemia in malaria-na\u00efve volunteers, the acknowledged discrepancy with endemic patient data (C60-C61) and the very uncertain gametocyte lifespan estimate (C18) raise questions about direct applicability to epidemiological models without further validation. These are reasonable research directions but require additional work to validate the model in endemic settings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "6b2a6b51-7fd9-4dbe-8806-84e85e6fb721",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PQP has little activity against sexually committed parasites and gametocytes based on in vitro and in vivo evidence, though there is some evidence for activity against early-stage I/II gametocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 summarize prior literature on PQP activity against gametocytes, supported by multiple citations (Collins et al., 2018; Pasay et al., 2016; Bolscher et al., 2015; Adjalley et al., 2011). The authors appropriately acknowledge conflicting evidence about early-stage gametocyte activity, demonstrating balanced assessment of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    },
+    {
+      "id": "0fbb0826-1bb7-48a4-a2b0-936df6849c12",
+      "content_id": "8468a7a0-cfa5-4a26-bbcb-3c5d3986feeb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Malaria caused approximately 219 million cases and 435,000 deaths in 2017, primarily due to P. falciparum. Transmission occurs when gametocytes are taken up by mosquitoes, with gametocytemia highly associated with transmission probability. Historical microscopy had a limit of quantification (~10^4 parasites/mL) at least two orders of magnitude higher than current qPCR assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide background information on malaria epidemiology and diagnostic methods, all supported by appropriate citations to WHO reports and peer-reviewed literature. These establish the context and motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:02:55.274845Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "69ce913b-f153-43e6-82cc-b9c493de9264",
+      "result_id": "13bf1ec0-aa23-4dba-a605-77ccab6b17ef"
+    },
+    {
+      "claim_id": "d77f0d4d-15d6-4e10-bac8-476618e33294",
+      "result_id": "13bf1ec0-aa23-4dba-a605-77ccab6b17ef"
+    },
+    {
+      "claim_id": "3ce1bae7-89cc-4dcf-9376-7566d77a1b20",
+      "result_id": "13bf1ec0-aa23-4dba-a605-77ccab6b17ef"
+    },
+    {
+      "claim_id": "35fd6b82-b535-4b7e-a42b-a71aa41cca0b",
+      "result_id": "13bf1ec0-aa23-4dba-a605-77ccab6b17ef"
+    },
+    {
+      "claim_id": "75f4686a-0c2a-4c4e-83ae-2dd2fa2bd981",
+      "result_id": "13bf1ec0-aa23-4dba-a605-77ccab6b17ef"
+    },
+    {
+      "claim_id": "ecdb0b66-d89a-452b-bc43-52bf14c7aa3a",
+      "result_id": "13bf1ec0-aa23-4dba-a605-77ccab6b17ef"
+    },
+    {
+      "claim_id": "56a30eef-396c-4a23-9a32-2da39baacc3b",
+      "result_id": "13bf1ec0-aa23-4dba-a605-77ccab6b17ef"
+    },
+    {
+      "claim_id": "492ab439-d2c6-4117-a1c7-cfcdecba88d9",
+      "result_id": "13bf1ec0-aa23-4dba-a605-77ccab6b17ef"
+    },
+    {
+      "claim_id": "cab6037b-dece-48f9-a8e4-a8799280c4ab",
+      "result_id": "13bf1ec0-aa23-4dba-a605-77ccab6b17ef"
+    },
+    {
+      "claim_id": "a963582f-bbf3-4dc0-8df0-8a5044c415f6",
+      "result_id": "d9065e52-5f1b-4b33-847c-04252359d53c"
+    },
+    {
+      "claim_id": "6f7e57de-38e9-4ff6-8067-30505b2ddbf1",
+      "result_id": "d9065e52-5f1b-4b33-847c-04252359d53c"
+    },
+    {
+      "claim_id": "0ea1ccc1-9995-437c-b599-2cfdf480013b",
+      "result_id": "d9065e52-5f1b-4b33-847c-04252359d53c"
+    },
+    {
+      "claim_id": "66beefd3-60ff-49cf-80fc-6027ba31ab41",
+      "result_id": "d9065e52-5f1b-4b33-847c-04252359d53c"
+    },
+    {
+      "claim_id": "46946b4b-c071-4c03-8ae8-2af98458b8b2",
+      "result_id": "eaf17b88-f794-473c-9162-df5fa43f7bb1"
+    },
+    {
+      "claim_id": "b2166162-59f7-4dda-903c-7d2d7e432b65",
+      "result_id": "eaf17b88-f794-473c-9162-df5fa43f7bb1"
+    },
+    {
+      "claim_id": "ddc3320c-222e-48da-baa1-8d68378e28f8",
+      "result_id": "eaf17b88-f794-473c-9162-df5fa43f7bb1"
+    },
+    {
+      "claim_id": "4485302c-5045-40f9-a702-68e5e7d478f9",
+      "result_id": "eaf17b88-f794-473c-9162-df5fa43f7bb1"
+    },
+    {
+      "claim_id": "76c55c06-3035-4bf5-baea-6e94c8cd334f",
+      "result_id": "eaf17b88-f794-473c-9162-df5fa43f7bb1"
+    },
+    {
+      "claim_id": "376381b0-518f-4717-8d10-e7409d005c21",
+      "result_id": "eaf17b88-f794-473c-9162-df5fa43f7bb1"
+    },
+    {
+      "claim_id": "5ab3efb3-4b54-49f5-b151-c83ba34e729b",
+      "result_id": "eaf17b88-f794-473c-9162-df5fa43f7bb1"
+    },
+    {
+      "claim_id": "fd11af46-5e31-4778-9e13-bce6ab356906",
+      "result_id": "a7fa9f00-2257-4918-994f-3bf3d9309b65"
+    },
+    {
+      "claim_id": "f7c33836-30bd-429f-914c-2098ebbf26b2",
+      "result_id": "a7fa9f00-2257-4918-994f-3bf3d9309b65"
+    },
+    {
+      "claim_id": "fee4c937-2018-4621-9af2-656961fc222f",
+      "result_id": "a7fa9f00-2257-4918-994f-3bf3d9309b65"
+    },
+    {
+      "claim_id": "1a1ea695-5b69-4580-b62a-f532ba86c773",
+      "result_id": "a7fa9f00-2257-4918-994f-3bf3d9309b65"
+    },
+    {
+      "claim_id": "09b55b30-ebcb-4810-98f2-0208fcc6f3ba",
+      "result_id": "a7fa9f00-2257-4918-994f-3bf3d9309b65"
+    },
+    {
+      "claim_id": "fd4c8b54-2138-49f3-89b6-63e2548ff15c",
+      "result_id": "a7fa9f00-2257-4918-994f-3bf3d9309b65"
+    },
+    {
+      "claim_id": "0b3be0d6-0dd5-41d8-af5b-5083d6c8e6e0",
+      "result_id": "a7fa9f00-2257-4918-994f-3bf3d9309b65"
+    },
+    {
+      "claim_id": "37bca8f9-84b9-4cee-a4c0-b2ce84c85077",
+      "result_id": "a7fa9f00-2257-4918-994f-3bf3d9309b65"
+    },
+    {
+      "claim_id": "af3e697b-b12d-43d2-8b75-a2df07878166",
+      "result_id": "bf3d3428-a485-46fc-8d3d-2952bf277092"
+    },
+    {
+      "claim_id": "d01374c6-2855-47be-a739-99720244a99b",
+      "result_id": "bf3d3428-a485-46fc-8d3d-2952bf277092"
+    },
+    {
+      "claim_id": "67e545b2-deb2-4cb9-a499-9ae7b4c642a2",
+      "result_id": "bf3d3428-a485-46fc-8d3d-2952bf277092"
+    },
+    {
+      "claim_id": "1c4c30e5-c5eb-4a3f-b93f-c2a37d2ee07c",
+      "result_id": "1a95f549-f614-4a38-b40d-0007d3436c4d"
+    },
+    {
+      "claim_id": "fa20f620-f953-47e9-85a8-2bd86cd14d9d",
+      "result_id": "1a95f549-f614-4a38-b40d-0007d3436c4d"
+    },
+    {
+      "claim_id": "2ef01c1a-c2d1-4aac-8ba3-ec0fe2130edb",
+      "result_id": "1a95f549-f614-4a38-b40d-0007d3436c4d"
+    },
+    {
+      "claim_id": "9ae2c6f4-b108-4233-8559-a101e4af2e1f",
+      "result_id": "4ce453bc-cbd9-442b-af6f-9fc7f35ad6f9"
+    },
+    {
+      "claim_id": "86b40240-d049-4059-89a0-eed6e883a1fd",
+      "result_id": "4ce453bc-cbd9-442b-af6f-9fc7f35ad6f9"
+    },
+    {
+      "claim_id": "23f03282-3103-4b3a-8aa4-697128ec1c89",
+      "result_id": "4ce453bc-cbd9-442b-af6f-9fc7f35ad6f9"
+    },
+    {
+      "claim_id": "a884c80d-da7a-434c-b3e3-4ec52b338c0e",
+      "result_id": "255e86b3-cde1-4983-bbd6-07dd65e98594"
+    },
+    {
+      "claim_id": "7cafa3cb-1513-476a-8893-8f88f2af37dd",
+      "result_id": "255e86b3-cde1-4983-bbd6-07dd65e98594"
+    },
+    {
+      "claim_id": "baf0ba44-37a7-4015-849a-bd54aa7992c8",
+      "result_id": "edd4b5e4-58f2-4da4-bab4-0bf5663390bd"
+    },
+    {
+      "claim_id": "76838b57-a7dd-4c90-8aa7-bb0972e60298",
+      "result_id": "edd4b5e4-58f2-4da4-bab4-0bf5663390bd"
+    },
+    {
+      "claim_id": "e78e3e30-838c-4e77-a0c5-1a38789eda5a",
+      "result_id": "edd4b5e4-58f2-4da4-bab4-0bf5663390bd"
+    },
+    {
+      "claim_id": "d6e4844a-f8e2-46c0-abac-5e7567900cee",
+      "result_id": "5601273c-bffa-4bc1-a285-3d95ffd9856e"
+    },
+    {
+      "claim_id": "8ea53526-26e5-4c89-9b22-cfbe02e97262",
+      "result_id": "5601273c-bffa-4bc1-a285-3d95ffd9856e"
+    },
+    {
+      "claim_id": "fd08c19d-df39-4c25-a514-f9c69c36c898",
+      "result_id": "5601273c-bffa-4bc1-a285-3d95ffd9856e"
+    },
+    {
+      "claim_id": "8ccc5b5a-0935-45db-9e80-ed71d2b3e92f",
+      "result_id": "5601273c-bffa-4bc1-a285-3d95ffd9856e"
+    },
+    {
+      "claim_id": "67568d05-e04b-47d7-a6b4-5f8cb7629699",
+      "result_id": "5601273c-bffa-4bc1-a285-3d95ffd9856e"
+    },
+    {
+      "claim_id": "e287f706-0ee2-4a54-b85c-d0587819f1ff",
+      "result_id": "f60917bc-48ee-4697-8937-332cc2fafe43"
+    },
+    {
+      "claim_id": "70b776a3-9dcc-4cba-b477-d0209d9c8f38",
+      "result_id": "f60917bc-48ee-4697-8937-332cc2fafe43"
+    },
+    {
+      "claim_id": "308784da-d255-4929-93d1-f8f4249e2b10",
+      "result_id": "f60917bc-48ee-4697-8937-332cc2fafe43"
+    },
+    {
+      "claim_id": "480dd33f-aa2b-478a-b093-2d45dac7df9d",
+      "result_id": "f60917bc-48ee-4697-8937-332cc2fafe43"
+    },
+    {
+      "claim_id": "aabdb5ca-aeec-4a63-9101-fc1ae6643ac4",
+      "result_id": "70f75bf7-d096-4f26-a92a-07e1fc45b585"
+    },
+    {
+      "claim_id": "67a2ffaa-b925-4050-a923-52ca03f25078",
+      "result_id": "70f75bf7-d096-4f26-a92a-07e1fc45b585"
+    },
+    {
+      "claim_id": "c68d2a08-6406-4e31-908d-8288e8eaf667",
+      "result_id": "31d3fec6-bf8a-4e87-ab59-51cf6ee61b66"
+    },
+    {
+      "claim_id": "f062a4f5-4d2e-4109-afc2-10c4e982da20",
+      "result_id": "31d3fec6-bf8a-4e87-ab59-51cf6ee61b66"
+    },
+    {
+      "claim_id": "52427266-d2c1-4c94-a856-7e1373b4cb90",
+      "result_id": "31d3fec6-bf8a-4e87-ab59-51cf6ee61b66"
+    },
+    {
+      "claim_id": "5d915625-3dbb-4966-887e-7f943f867e6f",
+      "result_id": "6b2a6b51-7fd9-4dbe-8806-84e85e6fb721"
+    },
+    {
+      "claim_id": "91abb0f9-cc1c-4d72-8005-d2a95afee1d5",
+      "result_id": "6b2a6b51-7fd9-4dbe-8806-84e85e6fb721"
+    },
+    {
+      "claim_id": "305011a8-256a-4812-ae30-85dd4ddabbe7",
+      "result_id": "0fbb0826-1bb7-48a4-a2b0-936df6849c12"
+    },
+    {
+      "claim_id": "d0265634-de3e-436c-817f-fa3a46eb2d28",
+      "result_id": "0fbb0826-1bb7-48a4-a2b0-936df6849c12"
+    },
+    {
+      "claim_id": "3f11a438-6b90-4e43-89fb-3d67628363d7",
+      "result_id": "0fbb0826-1bb7-48a4-a2b0-936df6849c12"
+    },
+    {
+      "claim_id": "f47e2e7c-e378-492f-b756-2ec40ca25505",
+      "result_id": "0fbb0826-1bb7-48a4-a2b0-936df6849c12"
+    },
+    {
+      "claim_id": "305776ec-d038-4dc1-a9bf-0dd647487f90",
+      "result_id": "0fbb0826-1bb7-48a4-a2b0-936df6849c12"
+    },
+    {
+      "claim_id": "6d30a9b9-ccf5-43f7-b438-da033b011f8a",
+      "result_id": "0fbb0826-1bb7-48a4-a2b0-936df6849c12"
+    },
+    {
+      "claim_id": "3508534e-ab16-4bc9-9b8a-93c1d2055c93",
+      "result_id": "0fbb0826-1bb7-48a4-a2b0-936df6849c12"
+    },
+    {
+      "claim_id": "c769334d-a95f-49e8-85c6-13379604bb06",
+      "result_id": "0fbb0826-1bb7-48a4-a2b0-936df6849c12"
+    }
+  ],
+  "comparisons": []
+}

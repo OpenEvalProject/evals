@@ -1,0 +1,1971 @@
+{
+  "submission": {
+    "id": "4801e688-12bc-4080-85c4-ae87c908e6ff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:39:12.970443Z",
+    "updated_at": "2025-12-02T07:39:12.970443Z"
+  },
+  "content": [
+    {
+      "id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "submission_id": "4801e688-12bc-4080-85c4-ae87c908e6ff",
+      "content_type": "manuscript",
+      "content_text": "# Reactive oxygen species regulate activity-dependent neuronal plasticity in Drosophila\n\n## Authors\n\n- Matthew CW Oswald<sup>1</sup> ([ORCID: 0000-0001-8586-9351](https://orcid.org/0000-0001-8586-9351)) \u2020\n- Paul S Brooks<sup>1</sup>\n- Maarten F Zwart<sup>2</sup>\n- Amrita Mukherjee<sup>1</sup>\n- Ryan JH West<sup>3</sup> ([ORCID: 0000-0001-9873-2258](https://orcid.org/0000-0001-9873-2258))\n- Carlo NG Giachello<sup>3</sup>\n- Khomgrit Morarach<sup>1</sup>\n- Richard A Baines<sup>3</sup> ([ORCID: 0000-0001-8571-4376](https://orcid.org/0000-0001-8571-4376))\n- Sean T Sweeney<sup>4</sup> \u2020\n- Matthias Landgraf<sup>1</sup> ([ORCID: 0000-0001-5142-1997](https://orcid.org/0000-0001-5142-1997)) \u2020\n\n### Affiliations\n\n1. Department of Zoology University of Cambridge Cambridge United Kingdom\n2. HHMI Janelia Research Campus Ashburn United States\n3. Faculty of Biology, Medicine and Health University of Manchester Manchester United Kingdom\n4. Department of Biology University of York York United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nReactive oxygen species (ROS) have been extensively studied as damaging agents associated with ageing and neurodegenerative conditions. Their role in the nervous system under non-pathological conditions has remained poorly understood. Working with the Drosophila larval locomotor network, we show that in neurons ROS act as obligate signals required for neuronal activity-dependent structural plasticity, of both pre- and postsynaptic terminals. ROS signaling is also necessary for maintaining evoked synaptic transmission at the neuromuscular junction, and for activity-regulated homeostatic adjustment of motor network output, as measured by larval crawling behavior. We identified the highly conserved Parkinson\u2019s disease-linked protein DJ-1\u03b2 as a redox sensor in neurons where it regulates structural plasticity, in part via modulation of the PTEN-PI3Kinase pathway. This study provides a new conceptual framework of neuronal ROS as second messengers required for neuronal plasticity and for network tuning, whose dysregulation in the ageing brain and under neurodegenerative conditions may contribute to synaptic dysfunction.\n\n## Introduction\n\nLevels of reactive oxygen species (ROS) in the brain increase with ageing and high levels of ROS are a hallmark of neurodegeneration, including Alzheimer\u2019s and Parkinson\u2019s disease (H\u00f6hn and Grune, 2013; Martins et al., 1986; Spina and Cohen, 1989) for review see (Milton and Sweeney, 2012). Mitochondria are a\u00a0significant source of ROS, which form as obligate byproducts of respiratory ATP synthesis by \u2018leakage\u2019 of the electron transport chain, thus leading to the generation of superoxide anions (O2-) and hydrogen peroxide (H2O2) (Halliwell, 1992). Implicit in their name, ROS are highly reactive, containing one or more unpaired electrons, with the potential to modify and damage by oxidation proteins, lipids and DNA (Gladyshev, 2014; Harman, 1956; Stuart et al., 2014). Importantly, ROS have also been recognized as signaling molecules in metabolic pathways (Liemburg-Apers et al., 2015) and controlling the activity of transcription factors such as AP-1 and Nrf2 (Jindra et al., 2004; Soriano et al., 2009). Moreover, several kinase signaling pathways are enhanced by ROS, either by oxidation of kinase interacting modulators, such as thioredoxin or glutathione-S-transferases (Adler et al., 1999; Saitoh et al., 1998), or through inhibition of counteracting phosphatases, for\u00a0example PTEN, by oxidation of the active site cysteine residue (Finkel, 2011; Stuart et al., 2014; Tonks, 2005).\n\nWe previously showed in a model for lysosomal storage diseases that ROS can regulate neuromuscular junction (NMJ) structure (Milton et al., 2011). NMDA receptor stimulation can lead to ROS generation (Bindokas et al., 1996; Brennan et al., 2009; Dugan et al., 1995), and in hippocampal and spinal cord slices ROS have been shown sufficient and necessary for inducing \u2018Hebbian\u2019 forms of plasticity (LTP) (Kamsler and Segal, 2003a; Kamsler and Segal, 2003b; Klann, 1998; Knapp and Klann, 2002; Lee et al., 2010). Conversely, disturbing the ROS balance by over-expression of the scavenger superoxide dismutase caused defects in hippocampal LTP and learning paradigms in mice (Gahtan et al., 1998; Levin et al., 1998; Thiels et al., 2000). Recent studies have linked increased ROS levels with neurodevelopmental conditions such as schizophrenia, bipolar and autism spectrum disorders (Do et al., 2015; Steullet et al., 2017).\n\nHere, we set out to investigate potential roles for ROS in the nervous system under non-pathological conditions, which are much less well understood. The brain is arguably the most energy demanding organ and mitochondrial oxidative phosphorylation is a major source of ROS (Attwell and Laughlin, 2001; Hallermann et al., 2012; Zhu et al., 2012). We therefore asked whether neurons might utilize mitochondrial metabolic ROS as feedback signals to mediate activity-regulated changes. As an experimental model we used the motor system of the fruitfly larva, Drosophila melanogaster, which allows access to uniquely identifiable motoneurons in the ventral nerve cord and their specific body wall target muscles (Kohsaka et al., 2012). We established an experimental paradigm for studying activity-regulated structural adjustments across an identified motoneuron, quantifying changes at both pre- and postsynaptic terminals. We show that thermogenetic neuronal over-activation leads to the generation of ROS at presynaptic terminals, and that ROS signaling is necessary and sufficient for the activity-regulated structural adjustments. As a cellular ROS sensor we identified the conserved redox sensitive protein DJ-1\u03b2, a homologue of vertebrate DJ-1 (PARK7) (Meulener et al., 2005), and the phosphatase and tensin homolog (PTEN) and PI3kinase as downstream effectors of activity-ROS-mediated structural plasticity. We find that ROS signaling is also required for maintaining constancy of evoked transmission at the neuromuscular junction (NMJ) with a separate ROS pathway regulating the amplitude of spontaneous vesicle release events. Behaviourally, ROS signaling is required for the motor network to adjust homeostatically to return to a set crawling speed following prolonged overactivation.\n\nIn summary, this study establishes a new framework for studying ROS in the nervous system: as obligatory regulators that inform neurons about their activation status, and as obligatory mediators of activity-induced plasticity, both structural and physiological.\n\n## Results\n\n### Structural plasticity of synaptic terminals is regulated by neuronal activity\n\nOur aim was to explore roles for activity-regulated ROS signaling in the nervous system under non-pathological conditions. Working with the Drosophila larval neuromuscular system allowed us to target manipulations to identified nerve cells in vivo that manifest structural and functional plasticity (Frank et al., 2013; Tripodi et al., 2008; Wolfram and Baines, 2013; Zwart et al., 2013). We focused on two well characterized motoneurons, \u2018aCC\u2019 and \u2018RP2\u2019, which jointly innervate the dorsal acute muscle 1 (DA1) (Figure 1A) (Baines et al., 1999; Baines et al., 2001; Bate, 1993; Choi et al., 2004; Hoang and Chiba, 2001; Landgraf et al., 2003; Sink and Whitington, 1991). First, we characterized activity-regulated morphological changes at the presynaptic neuromuscular junction (NMJ) and, in the central nervous system (CNS), the branched postsynaptic dendritic arbors that receive input from premotor interneurons (Baines et al., 1999; Schneider-Mizell et al., 2016; Zwart et al., 2013). A simple method for increasing activity in the larval locomotor network is to increase ambient temperature from the default standard of 25\u00b0C to 29\u00b0C or 32\u00b0C.\u00a0Sigrist et al. (2003) and Zhong and Wu (2004) previously demonstrated this to trigger increased locomotor activity and to result in increased varicosity (bouton) number at presynaptic NMJs (Sigrist et al., 2003; Zhong and Wu, 2004). We were able to reproduce and extend these findings: rearing larvae at higher ambient temperatures results in NMJs having more boutons than controls by the third instar wandering stage, 100 hr after larval hatching (ALH) (grey data in Figure 1B\u2013C, compare 25\u00b0C with 29\u00b0C and 32\u00b0C conditions). To complement these systemic manipulations and to exclude potential non-specific effects we turned to a cell-specific activation paradigm of selectively overactivating the aCC and RP2 motoneurons via targeted mis-expression of the warmth-gated cation channel dTrpA1. Expression of dTrpA1 in neurons is a well established method for temperature controlled neuronal overactivation (Hamada et al., 2008; Owald et al., 2015). For larval motoneurons in particular, Pulver and colleagues demonstrated that dTrpA1 is activated above 24\u00b0C, at 25\u00b0C leading to action potential firing frequencies of 9\u201312 Hz (moderate activation) and 22\u201330 Hz at 27\u00b0C (stronger activation) (Pulver et al., 2009). These activation levels are within the physiological range of larval motoneurons, thought to operate at approximately 42 Hz during muscle contraction cycles (Chouhan et al., 2010). Similar to the systemic manipulations, we found that cell-specific thermogenetic dTrpA1 activation of single motoneurons also led to titratable increases in bouton number at presynaptic NMJs (blue data in Figure 1B\u2013C). Note that these cell-specific dTrpA1-mediated activity manipulations were carried out at 25\u00b0C and 27\u00b0C, sufficient to activate dTrpA1 expressing neurons, but otherwise not causing significant changes in NMJ morphology in non-expressing motoneurons (Tsai et al., 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39393/elife-39393-fig1-v3.jpg)\n\n**Figure 1.:** (A) Graphical illustration of a stereotypical larval motoneuron (MN) (adapted from Kohsaka et al., 2012). Pre-motor interneurons make synaptic connections with the MN dendritic arbor (input) in the larval ventral nerve cord (equivalent of mammalian spinal cord). The MN extends an axonal projection into the periphery where it connects with a target muscle via an NMJ, characterized by varicose swellings (boutons) each containing multiple individual neurotransmitter release sites (active zones). (B and C) Representative images of muscle DA1 [muscle one according to (Crossley, 1978)] NMJs from third instar larvae (100 hr ALH). Dot-plot quantification shows NMJ bouton number increases in response to systemic and cell-specific activity increases. (D and E) Active zone number increases following low-level overactivation (29\u00b0C), but progressively reduces upon stronger overactivation. (F and G) Digital reconstructions and dot plots show that overactivation leads to reduced total dendritic arbor length of aCC motoneurons (24 hr ALH). \u2018aCC/RP2-GAL4\u2019 expresses GAL4 in all, \u2018aCC-FLP-GAL4\u2019 in single aCC and RP2 motoneurons (see Methods for details); \u2018Control\u2019 in (B\u2013G) is heterozygous aCC/RP2-GAL4 or aCC-FLP-GAL4, achieved by crossing the respective GAL4 line to Oregon-R wild type. Mean\u00a0\u00b1\u00a0SEM, ANOVA, ns\u00a0=\u00a0not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, n\u00a0=\u00a0replicate number. Comparisons with control are directly above data points.\n\nNext, we quantified synapse number at the presynaptic NMJ on muscle DA1, measured by active zones (visualized with the nc82 antibody against the active zone protein Bruchpilot (Wagh et al., 2006)). This describes a more complex relationship. As previously published, a moderate increase in activity, for\u00a0example by\u00a0rearing larvae at 29\u00b0C, causes both more boutons and also more active zones to be formed, potentiating transmission at the NMJ (Sigrist et al., 2003). In contrast, further increases in network activity, as effected by rearing larvae at 32\u00b0C or by cell-specific dTrpA1-mediated motoneuron activation at increasing temperatures led to progressive active zone reductions (Figure 1D,E).\n\nWe then looked at activity-regulated structural changes of the postsynaptic dendritic arbor of the aCC motoneuron, which is known to be plastic during embryonic and larval stages (Hartwig et al., 2008; Tripodi et al., 2008). To this end, we targeted GAL4 and dTrpA1 expression to individual aCC motoneurons (Ou et al., 2008). Morphometric analysis revealed that the size of the aCC postsynaptic dendritic arbor decreased with rising levels of temperature-gated dTrpA1 activity (Figure 1F,G). We and others previously showed that dendritic length of these neurons correlates with input synapse number and synaptic drive (Schneider-Mizell et al., 2016; Zwart et al., 2013).\n\nIn summary, we find that the synaptic terminals of larval motoneurons undergo titratable structural changes in response to neuronal overactivation. Postsynaptic dendritic arbor size, and by inference synapse number and synaptic drive (Zwart et al., 2013), negatively correlate with activation levels. At the presynaptic NMJ, synapse number also correlates negatively with activation level - bar a narrow low level activity window that can lead to potentiation (Ataman et al., 2008; Piccioli and Littleton, 2014; Sigrist et al., 2003). Boutons provide an additional anatomical readout for NMJ plasticity, increasing in number with levels of activity. However, no functional significance of bouton number and size has been documented and changes in these bouton parameters are not predictive of changes in synaptic transmission (Campbell and Ganetzky, 2012).\n\n### Neuronal overactivation leads to ROS generation in presynaptic terminals\n\nNext, we asked if in vivo overactivation of individual motoneurons is associated with increased ROS levels, as reported for hippocampal neurons in culture (Hongpaisan et al., 2004). To this end, we co-expressed in aCC and RP2 motoneurons the mitochondrion-targeted ratiometric ROS reporter UAS-mito-roGFP2-Orp1 (Gutscher et al., 2009) along with UAS-dTrpA1. We focused on mitochondria at the muscle DA1 NMJs of wandering third instar larvae (100 hr ALH). Quantification shows a clear trend of increasing temperature and dTrpA1-mediated activation resulting in progressively greater mean oxidation levels of this ROS sensor in mitochondria at the NMJ (Figure 2A). These data show that in vivo dTrpA1-mediated overactivation of Drosophila larval motoneurons leads to increased mitochdondrial ROS at presynaptic NMJs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39393/elife-39393-fig2-v3.jpg)\n\n**Figure 2.:** (A) Elevated cell-specific activity increases mitochondrial ROS production at NMJs. Dot plots of mitochondrion-targeted ratiometric H2O2 sensor (UAS-mito-roGFP2-Orp1 [Gutscher et al., 2009]) in wandering third instar larval NMJs (100 hr ALH) at 23\u02daC (control, dTrpA1 inactive), 25\u02daC (moderate), 27\u02daC (strong) and 29\u02daC (very strong) dTrpA1-mediated overactivation. (B) Bouton number at the NMJ is increased by UAS-dTrpA1-mediated overactivation. This is exacerbated by co-expression of UAS-SOD2 (converts O2- to H2O2) and rescued by expression of the H2O2 scavenger UAS-Catalase. Cell-specific ROS elevation by scavenger knockdown is sufficient to induce NMJ elaboration. aCC/RP2-GAL4, \u2018Control\u2019 is aCC/RP2-GAL4 alone. (C) Total dendritic arbor length is reduced by single cell overactivation, but rescued by co-expression of the H2O2 scavenger UAS-Catalase (aCC motoneurons, 24 hr ALH). aCC-FLP-GAL4, \u2018Control\u2019 is aCC-FLP-GAL4 alone, heterozygous, achieved by crossing the GAL4 driver to Oregon-R wild type flies. Larvae were reared at 25\u00b0C unless indicated otherwise. Mean\u00a0\u00b1\u00a0SEM, ANOVA, ns\u00a0=\u00a0not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, n\u00a0=\u00a0replicate number..\n\n### Activity generated ROS regulate structural plasticity at synaptic terminals\n\nWe then tested whether or not ROS are required for activity-dependent structural synaptic terminal plasticity. To this end we increased neuronal activity in the aCC and RP2 motoneurons via dTrpA1 expression, rearing larvae at 25\u00b0C, the lower threshold of dTrpA1 activation that leads to activity-dependent changes of synaptic terminals. At the same time we additionally over-expressed in these neurons ROS scavenging enzymes: Superoxide Dismutase 2 (SOD2), which catalyses O2- to H2O2 reduction; or Catalase, which converts H2O2 into H2O and O2. Over-expression of either ROS scavenger enzyme alone showed no effect on NMJ bouton number (Figure 2B). For Catalase over-expression we further quantified active zone number at the NMJ and dendritic arbor size and there too found this indistinguishable from controls (Figures 2C and 3B). In contrast, co-expression of UAS-Catalase with UAS-dTrpA1 significantly counteracted changes in bouton and active zone number otherwise caused by dTrpA1-mediated neuronal overactivation (25\u00b0C) (Figures 2B and 3B). Similarly, at the motoneuron input terminals in the CNS, Catalase co-expression rescued dendritic arbor size (Figure 2C). Conversely, SOD2 co-expression enhanced the dTrpA1-mediated increase of bouton number at the NMJ, presumably by potentiating conversion of activity-generated increase of O2- into H2O2 (Figure 2B). We next asked if increasing neuronal ROS was sufficient to invoke structural plasticity in the absence of dTrpA1 activity manipulations. Indeed, cell-specific RNAi knock down of any one of three endogenous ROS scavengers, SOD1, SOD2 or Catalase, led to NMJs with increased bouton number, in agreement with a prior study by Milton et al. (2011), who had demonstrated oxidative stress causing NMJ growth. These structural NMJ changes are similar to those produced by neuronal overactivation (Figure 2B) and implicate ROS, specifically H2O2, as a signal for regulating activity-dependent structural plasticity at input and output terminals.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39393/elife-39393-fig3-v3.jpg)\n\n**Figure 3.:** (A) DJ-1\u03b2 is required for ROS and neuronal-activity-induced NMJ elaboration (100 hr ALH). Larvae reared at 25\u00b0C. (B) Cell-specific expression of DJ-1\u03b2C104A, non-oxidizable on conserved cysteine C104, prevents activity-induced reduction of active zone number. \u2018Control\u2019 is aCC/RP2-GAL4 alone. Larvae were reared at 25\u00b0C. (C) Activity-generated ROS sensing is dose sensitive. Removal of one copy of DJ-1\u03b2 (in DJ-1\u03b2\u039493 /+\u00a0heterozygotes) is sufficient to significantly rescue activity-induced reduction of total dendritic arbor length of motoneurons in 24 hr ALH larvae. \u2018Control\u2019 is aCC-FLP-GAL4 alone, heterozygous, achieved by crossing the GAL4 driver to Oregon-R wild type flies.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39393/elife-39393-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Representative TEM bouton cross-sectional images showing that presynaptic architecture is intact including active-zones with associated clustered synaptic vesicles (arrowed).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39393/elife-39393-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) DJ-1\u03b2 null mutant (DJ-1\u03b2\u039493) larvae do not show systemic activity-dependent NMJ elaboration. Normalised bouton number dot plot showing significantly increased NMJ elaboration in OregonR, but not DJ-1\u03b2\u039493, larvae reared at 29\u00b0C vs 25\u00b0C. (B) DJ-1\u03b2\u039493 larvae also do not show systemic activity-dependent increase in active zone number. OregonR, but not DJ-1\u03b2\u039493, show significantly increased NMJ active zone number when reared at 29\u00b0C vs 25\u00b0C. Mean\u00a0\u00b1\u00a0SEM, ANOVA **p<0.01, ***p<0.001, n\u00a0=\u00a0replicate number.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/39393/elife-39393-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** This response is absent in DJ-1\u03b2 null mutant larvae and is re-established via neuronal (aCC and RP2) specific miss-expression of UAS-DJ-1\u03b2. UAS-DJ-1\u03b2 expression alone elevates bouton number, which is exacerbated when combined with DEM feeding. Normalised bouton number dot plot, Control is aCC-FLP-GAL4 alone in heterozygous condition. Mean\u00a0\u00b1\u00a0SEM, ANOVA *p<0.05, ****p<0.0001, n\u00a0=\u00a0replicate number.\n\n### DJ-1\u03b2 acts as a ROS sensor in neurons\n\nWe then investigated how neurons might sense changes in activity-induced ROS levels. ROS are known to post-translationally modify many different proteins, principally on cysteine or methionine residues, including transcription factors, cytoskeletal proteins, cell adhesion molecules and phosphatases (for review see Milton and Sweeney, 2012). We identified DJ-1\u03b2, the fly ortholog of DJ-1 (PARK7), as a candidate ROS sensor. DJ-1 codes for a highly conserved, ubiquitously expressed redox-sensitive protein, that protects against oxidative stress and regulates mitochondrial function (Ariga et al., 2013; Nagakubo et al., 1997). A mutant allele is also linked to a rare form of familial Parkinsonism (Bonifati et al., 2003). DJ-1 null mutants are viable without any conspicuous defects and adult flies have been reported to have increased sensitivity to oxidative stress, for example as induced by exposure to paraquat or H2O2 (Meulener et al., 2005). We found that DJ-1\u03b2 null mutant (DJ-1\u03b2\u039493) larvae develop normally, indistinguishable from wild type controls, and have structurally normal NMJs (Figure 3A and Figure 3\u2014figure supplement 1). Interestingly, in larvae homozygous for the DJ-1\u03b2\u039493 null mutation, NMJs fail to respond to elevated ROS levels and do not generate additional boutons, as typical for controls when feeding 10 mM paraquat, which causes elevated O2- release from mitochondrial complex 1, or 10 mM diethyl maleate (DEM), which inactivates the ROS scavenger glutathione (Milton et al., 2011) (Figure 3A). Similarly, loss of DJ-1\u03b2 also significantly rescues NMJ bouton addition phenotypes induced by targeted expression of the ROS generator Duox in aCC and RP2 motoneurons, or their dTrpA1-mediated overactivation (Figure 3A). DJ-1\u03b2\u039493 mutant larvae also failed to produce the presynaptic bouton and active zone addition that result from raising larvae at 29\u00b0C (Sigrist et al., 2003) (Figure 3\u2014figure supplement 2). The neuronal requirement for DJ-1\u03b2 was further tested via rescue experiments where neuronal UAS-DJ-1\u03b2 miss-expression in a DJ-1\u03b2 null-mutant background proved sufficient to re-establish sensitivity to DEM (see Figure 3\u2014figure supplement 3). Next, we cell-autonomously changed the ability of DJ-1\u03b2 to act as a redox sensor. DJ-1 is known to form dimers (Lin et al., 2012a). We expressed in aCC and RP2 motoneurons a dominant-acting mutant form of DJ-1\u03b2 that is non-oxidizable at the conserved cysteine 104, UAS-DJ-1\u03b2C104A (Meulener et al., 2006). Expression of DJ-1\u03b2C104A abrogated ROS-induced (following DEM feeding) as well as dTrpA1 activity-mediated NMJ structural adjustment, both with respect to bouton number (Figure 3A) and active zone number (Figure 3B). Looking at activity-dependent structural plasticity of the postsynaptic dendritic arbor, we found this is sensitive to DJ-1\u03b2 levels; halving the copy number of DJ-1\u03b2 (in DJ-1\u03b2\u039493/+ heterozygotes) was sufficient to significantly suppress dTrpA1-mediated changes to dendritic arbor size (Figure 3C).\n\nIn summary, these data show that DJ-1\u03b2 is necessary for activity-induced structural changes, compatible with DJ-1\u03b2 functioning as a sensor for ROS. DJ-1\u03b2 appears to be required in motoneurons for increasing NMJ bouton and active zone numbers in response to mild overactivation regimes that lead to potentiation of transmission at the NMJ (raising larvae at 29\u00b0C) (Sigrist et al., 2003). At higher levels, as induced by dTrpA1-mediated overactivation, DJ-1\u03b2 is also necessary in motoneurons, though under these conditions for decreasing active zone numbers at the NMJ and the size of postsynaptic dendritic arbors.\n\n### PTEN and PI3K are downstream effectors of the DJ-1\u03b2 ROS sensor\n\nNext, we looked for downstream effector pathways responsible for implementing activity and ROS-dependent structural plasticity. DJ-1 is a known redox-regulated inhibitor of PTEN and as such disinhibits PI3Kinase signaling (Kim et al., 2005; Kim et al., 2009b). PI3Kinase was previously shown to regulate bouton and active zone number during NMJ development (Jord\u00e1n-\u00c1lvarez et al., 2012; Mart\u00edn-Pe\u00f1a et al., 2006). To test if DJ-1\u03b2 - PTEN interactions mediate ROS-dependent NMJ adjustments, we performed genetic interaction experiments in the context of DEM-induced ROS elevation (Milton et al., 2011) (Figure 4A). We used different DEM dosages to generate a dose-response curve and focused on changes in NMJ bouton number as a quantitative readout. We found that in controls bouton number increases linearly with exposure to increasing DEM concentrations, peaking at 10 mM DEM (Figure 4A). Removal of one copy of DJ-1\u03b2 (DJ-1\u03b2\u039493/+) was sufficient to suppress these DEM-induced increases in bouton number. Conversely, removing one copy of the PI3Kinase antagonist PTEN (PTENCO76/+) resulted in increased sensitivity to DEM, as indicated by the left-shifted dose response curve. Larvae made heterozygous mutant for both DJ-1\u03b2 and PTEN (PTENCO76/+; DJ-1\u03b2\u039493/+) were overall less sensitive to DEM than controls, though at higher concentrations displayed greater sensitivity to DEM than DJ-1\u03b2\u039493/+ heterozygotes, as might be expected when lowering PTEN copy number. These genetic interactions support previous studies (Kim et al., 2005) and complement biochemical data that showed increased binding of DJ-1\u03b2 to PTEN following oxidation by H2O2, thus effecting PTEN inhibition (Kim et al., 2009b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39393/elife-39393-fig4-v3.jpg)\n\n**Figure 4.:** (A) DJ-1\u03b2 and PTEN genetically interact to regulate systemic ROS-induced NMJ elaboration. NMJ bouton number varies with ROS (DEM) levels (grey data). Removal of one copy of PTEN sensitizes (red) while heterozygosity for DJ-1\u03b2 desensitizes NMJs to ROS levels (yellow), partially restored in double heterozygotes (blue). Dashed boundaries indicate 95% confidence intervals (n\u00a0\u2265\u00a038). (B) Systemic ROS and activity-induced NMJ structural adjustments require PTEN and PI3Kinase signaling. Over-expression of the PI3Kinase antagonist PTEN or a dominant negative PI3Kinase form abrogates activity-induced NMJ elaboration. \u2018Control\u2019 is aCC/RP2-GAL4 alone, heterozygous, achieved by crossing the GAL4 driver to Oregon-R wild type flies. Mean\u00a0\u00b1\u00a0SEM, ANOVA, ns\u00a0=\u00a0not significant, **p<0.01, ***p<0.001, ****p<0.0001, n\u00a0=\u00a0replicate number.\n\nTo further test specificity, we manipulated PTEN and PI3Kinase activities in single cells. Targeted knock-down of endogenous PTEN in aCC and RP2 motoneurons sensitized these to ROS, exacerbating the DEM-induced bouton addition phenotype (Figure 4B). In contrast, over-expression of PTEN or mis-expression of a dominant negative form of PI3Kinase significantly reduced NMJ elaboration normally caused by DEM exposure or dTrpA1-mediated overactivation (Figure 4B). Together these genetic interactions suggest a working model whereby PTEN and PI3Kinase act downstream of DJ-1\u03b2; and neural activity-generated ROS, via oxidation of DJ-1\u03b2, leads to PTEN inhibition. This in turn facilitates a rise in PI3Kinase / PIP3 signaling, which mediates at least part of the structural synaptic terminal plasticity by regulating bouton and active zone number at the NMJ (Figure 7).\n\n### Activity-regulated ROS signaling is necessary for homeostatic adjustment of synaptic transmission at the NMJ\n\nTo complement our studies of structural plasticity at the NMJ, we carried out sharp electrode recordings from the target muscle co-innervated by the aCC and RP2 motoneurons, muscle dorsal acute 1 (DA1) (Hoang and Chiba, 2001; Landgraf et al., 2003; Mauss et al., 2009). In Oregon-R wild type larvae we recorded evoked excitatory junction potentials (eEJPs) of 18\u00a0\u00b1\u00a02 mV (Figure 5A,D) and miniature excitatory junction potentials (mEJPs) indicative of spontaneous vesicle fusion of 1 mV (Figure 5B,D). Therefore, on average each action potential triggers fusion of 18 vesicles at this NMJ (quantal content) (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39393/elife-39393-fig5-v3.jpg)\n\n**Figure 5.:** (A) Overactivated motoneurons (expressing dTrpA1 at 25\u00b0C, 27\u00b0C) show similar eEJP amplitude to control, despite reduced mEJP amplitude (see B). Catalase co-expression prevents this adaptation, significantly reducing eEJP amplitude, whereas DJ-1\u03b2 appears not to be required. (B) Increased neuronal activity, mediated by dTrpA1 expression at 25\u00b0C or by elevating ambient temperature to 27\u00b0C, reduces mEJP amplitude. Co-expression of DJ-1\u03b2C104A rescues this effect. (C) Quantal content (eEJP amplitude/mEJP amplitude) shows no significant difference between groups due to high variance within some conditions. (D) Representative eEJP and mEJP traces. ANOVA, ns\u00a0=\u00a0not significant, *p<0.05, ****p<0.0001.\n\nWe investigated how these parameters of NMJ transmission might change following cell-specific dTrpA1-mediated overactivation of the aCC and RP2 motoneurons (at 25\u00b0C and 27\u00b0C). We then tested if these activity-driven changes in transmission required ROS signaling, by co-expressing the ROS scavenger Catalase or by abrogating ROS sensor function through co-expression of the dominant acting, non-oxidizable DJ-1\u03b2 variant, DJ-1\u03b2C104A. Transmission at NMJs in Drosophila is characteristically robust due to several homeostatic regulatory mechanisms working toward maintaining constancy of eEJPs (for reviews see Frank, 2014; Frank et al., 2013; Harris and Littleton, 2015). Following dTrpA1-mediated overactivation (rearing larvae at 25\u00b0C and 27\u00b0C) evoked NMJ transmission at the muscle DA1 NMJ remains intact and homeostatically balanced (Figure 5A,D). Recordings from controls and larvae with dTrpA1 expressing motoneurons reared at 27\u00b0C showed noticeably less variability of eEJP amplitude than those made from genetically identical siblings reared at 25\u00b0C, the dTrpA1 activation threshold, potentially reflecting variable efficacy in motoneuron manipulation (Hamada et al., 2008; Pulver et al., 2009). Overexpression of either Catalase or DJ-1\u03b2C104A has no effect on eEJP amplitude. However, co-expression of Catalase with dTrpA1-mediated overactivation leads to reduction of eEJP amplitude to 7\u20139 mV. This suggests that ROS are required for mechanisms that homeostatically maintain eEJP amplitude (Figure 5A,D).\n\nIn contrast, the amplitude of spontaneous vesicle fusion events (mEJP) adjusts inversely with progressively stronger overactivation of motoneurons. These reductions in mEJP amplitude are not specific to dTrpA1-mediated overactivation. Along with others (Ueda and Wu, 2015; Yeates et al., 2017) we also recorded similarly reduced mEJP amplitudes in wild type Oregon-R larvae that had been reared at an elevated temperature (27\u00b0C versus controls reared at 25\u00b0C) (Figure 5B). Co-expression of DJ-1\u03b2C104A abrogates this activity-dependent reduction of mEJP amplitude (Figure 5B,D), while Catalase co-expression has no effect on mEJP amplitude. Our analysis of quantal content (the mean number of vesicles releasing transmitter per action potential, calculated as the ratio of eEJP/mEJP amplitudes) showed that dTrpA1-mediated motoneuron over-activation at 27\u00b0C leads to significantly increased quantal content, and that this is brought back to control levels with co-expression of the H2O2 scavenger Catalase, as might be expected from the reduced eEJP amplitudes under such conditions.\n\nIn summary, evoked transmission at the NMJ is homeostatically maintained despite increased dTrpA1-mediated neuronal overactivation. The maintenance of eEJP amplitude requires ROS and is compromised when the H2O2 scavenger Catalase is expressed by the presynaptic motoneuron. Activity-regulated changes in mEJP amplitude also depend on ROS signaling, though this is not impacted by the over-expression of cytoplasmic Catalase; instead we found this aspect of synaptic transmission sensitive to oxidation of DJ-1\u03b2.\n\n### Structural plasticity of synaptic terminals is required for homeostatic adjustment of locomotor behavior\n\nWe wondered what impact the observed activity-ROS-regulated structural adjustments might have on network output. To test this we used larval crawling speed as a quantifiable readout for a simple locomotor behavior. In agreement with previous studies (Sigrist et al., 2003; Zhong and Wu, 2004), we found that crawling speed increases upon acutely shifting mid-3rd instar larvae (72 hr ALH) to higher ambient temperatures (e.g., from 25\u00b0C to 29\u00b0C or 32\u00b0C) (blue data in Figure 6A). This is to be expected given that these animals have an innate preference for approximately 25\u00b0C (Dillon et al., 2009; Hamada et al., 2008; Luo et al., 2017; Rosenzweig et al., 2005). In contrast, following prolonged exposure to an elevated temperature, achieved by rearing larvae at 29\u00b0C or 32\u00b0C, larvae crawled at the same speed characteristic of controls reared at 25\u00b0C (average of 0.65\u20130.72 mm/second; grey horizontal dotted line in Figure 6A). This crawling speed adaptation is suggestive of a homeostatic adjustment of the locomotor network. Increased network drive might be counteracted by reduced neuronal excitability and/or synaptic input, thus allowing motor output to be returned to the default crawling speed; in which case one would expect greater adjustment in larvae reared at 32\u00b0C than 29\u00b0C. To reveal such adjustments we acutely shifted warmth-adapted animals to 25\u00b0C, which caused reduced crawling speed (green data in Figure 6A). Indeed, following this downward-shift 32\u00b0C-adjusted larvae crawled significantly slower than 29\u00b0C-adjusted animals, suggesting the degree of neuronal adjustment is proportional to the level of temperature-induced overactivation. These experiments suggest that during prolonged activity manipulations the larval locomotor network output homeostatically adjusts toward a default crawling speed.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/39393/elife-39393-fig6-v3.jpg)\n\n**Figure 6.:** (A) Larval motor network activity, assayed by crawling speed 72 hr after larval hatching (AHL), increases in response to acute temperature upshifts (blue) in wild type larvae. In contrast, with prolonged exposure (grey) to elevated temperatures (29\u00b0C or 32\u00b0C) the motor network adapts homeostatically generating the same crawling speed as 25\u00b0C reared controls. This adaptation is further revealed by acute temperature downshifts (green). Each data point represents crawling speed from an individual uninterrupted continuous forward crawl, n\u00a0=\u00a0specimen replicate number, up to three crawls assayed for each larva. Genotype\u00a0=\u00a0OregonR. (B) Prolonged overactivation targeted to motoneurons (dVGlut-GAL4; UAS-dTrpA1) also leads to adaptation with reduced crawling speed (dTRPA1 channels open at 27\u00b0C, closed at 22\u00b0C). Mean\u00a0\u00b1SEM, control is dVGlut-GAL4 / +. ****p<0.0001 students t test, n\u00a0=\u00a0replicate number. (C) Larvae with expression of UAS-DJ-1\u03b2C104A targeted to motoneurons (dVGlut-GAL4) are unable to adapt motor network output (crawling speed) to elevated rearing temperatures. Control is dVGlut-GAL4 alone, in heterozygous condition. Each data point represents crawling speed from an individual uninterrupted continuous forward crawl, n\u00a0=\u00a0specimen replicate number, up to three crawls assayed for each larva. Mean\u00a0\u00b1\u00a0SEM, ANOVA, ns\u00a0=\u00a0not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/39393/elife-39393-fig7-v3.jpg)\n\n**Figure 7.:** DJ-1\u03b2 is a redox signaling hub that coordinates structural synaptic plasticity at motoneuron synaptic input and output terminals. Activity-induced ROS oxidize DJ-1\u03b2, leading to PTEN inhibition and thus to a gain in PI3Kinase signaling, which regulates activity-induced NMJ elaboration of boutons and active zones. At higher activity/ROS thresholds additional, yet to be defined, pathways downstream of DJ-1\u03b2 are activated, implementing adaptive reductions of active zones at the NMJ and dendritic arbor length in the CNS.\n\nNext, we wanted to test the role of the motoneurons in this form of network adjustment. The motoneurons integrate all pre-motor input within their dendritic arbors and produce the output of the motor network. We targeted expression of dTrpA1 to the motoneurons (and other glutamatergic cells, using dVGlut-GAL4) and reared these animals at 27\u00b0C, a temperature that robustly activates dTrpA1-expressing neurons (Hamada et al., 2008; Pulver et al., 2009). Upon acute removal of this overstimulation (by shifting animals to 22\u00b0C where the dTrpA1 channel is closed) larval crawling speed reduced significantly relative to non-dTrpA1 expressing controls (Figure 6B). We then asked whether this ROS-mediated structural plasticity of synaptic terminal growth was required for homeostatic adjustment of larval crawling speed, which ensues after prolonged overactivation. We manipulated the ability of neurons to sense increases in ROS levels by targeting expression of the dominant acting non-oxidizable DJ-1\u03b2C104A variant to motoneurons. We then tested the behavior of these animals for adjustment in response to chronic temperature-induced elevation of motor network activity. Our previous set of experiments showed that expression of non-oxidizable DJ-1\u03b2C104A in motoneurons prevents structural adjustment of bouton number and the decrease in active zone number normally caused by overactivation (see Figure 3A and B). Expression of non-oxidizable DJ-1\u03b2C104A in motoneurons per se did not alter larval crawling speed at the control temperature of 25\u00b0C. However, when rearing these larvae at 32\u00b0C, which is associated with elevated motor network activation, unlike controls they failed to homeostatically adjust toward the default crawling speed (Figure 6C). Consequently, such larvae reared at elevated temperatures (29\u00b0C or 32\u00b0C) also responded less strongly than controls to acute temperature downshifts (Figure 6C). These data suggest that activity-induced structural plasticity, implemented through the ROS sensor DJ-1\u03b2, is necessary for activity-directed homeostatic adjustment of larval locomotor behavior.\n\n## Discussion\n\n### ROS signaling is required for neuronal activity-dependent structural plasticity\n\nBuilding on previous work that had shown oxidative stress as inducing NMJ growth (Milton et al., 2011), we have in this study identified ROS as obligatory signals for activity-regulated structural plasticity\u00a0(Figure 7). We further show that ROS are also sufficient to bring about structural changes at synaptic terminals that largely mimic those induced by neuronal overactivation (Figure 2B,C). A mitochondrially targeted ROS reporter (Albrecht et al., 2011; Gutscher et al., 2009) suggests a positive correlation between levels of neuronal activity and ROS generated in mitochondria, potentially as a byproduct of increased ATP metabolism or triggered by mitochondrial calcium influx (Peng and Jou, 2010) (Figure 2A). Although we did not specifically investigate the nature of the active ROS in this context, three lines of evidence suggest that H2O2, generated by the dismutation of O2-, is the principal signaling species. First, under conditions of neuronal overactivation (but not control levels of activity) over-expression of the O2- to H2O2 converting enzyme SOD2 potentiated structural plasticity phenotypes (Figure 2B). Second, over-expression of the H2O2 scavenger Catalase efficiently counter-acts all activity-induced changes we have quantified, at both postsynaptic dendritic and presynaptic NMJ terminals. Third, over-expression of the H2O2 generator Duox in motoneurons is sufficient to induce NMJ bouton phenotypes that mimic overactivation (Figure 3A). In addition to mitochondria, other sources of ROS include several oxidases, notably NADPH oxidases. These have been implicated during nervous system development in the regulation of axon growth and synaptic plasticity (Kishida et al., 2006; Munnamalai and Suter, 2009; Munnamalai et al., 2014; Olgu\u00edn-Albuerne and Mor\u00e1n, 2015; Serrano et al., 2003; Tejada-Simon et al., 2005; Wilson et al., 2016; Wilson et al., 2015). NADPH oxidases can be regulated by NMDA receptor stimulation (Brennan et al., 2009) and activity-associated pathways, including calcium, Protein kinases C and A and calcium/calmodulin-dependent kinase II (CamKII) (B\u00e1nfi et al., 2004; Massaad and Klann, 2011; Pandey et al., 2011; Sorce et al., 2017; Tirone and Cox, 2007). The precise sources of activity-regulated ROS, potentially for distinct roles in plasticity, will be interesting to investigate.\n\n### ROS as gatekeepers of activity-dependent synaptic structural plasticity\n\nWe demonstrated that ROS are necessary for activity-dependent structural plasticity of Drosophila motoneurons, at both their postsynaptic dendrites in the CNS and presynaptic NMJs in the periphery\u00a0(Figure 7). The mechanisms by which ROS intersect with other known plasticity pathways now need to be investigated. Among well documented signaling pathways regulating synaptic plasticity, are Wnts (Budnik and Salinas, 2011), BMPs (Bayat et al., 2011; Berke et al., 2013), PKA, CREB and the immediate early gene transcription factor AP-1 (Cho et al., 2015; Davis, 2006; Davis and M\u00fcller, 2015; Davis et al., 1998; Davis et al., 1996; Kim et al., 2009a; Koles and Budnik, 2012; Osses and Henr\u00edquez, 2014; Sanyal et al., 2003; Sanyal et al., 2002; Sulkowski et al., 2014; Walker et al., 2013). ROS signaling could be synergistic with other neuronal plasticity pathways, potentially integrating metabolic feedback. Indeed, ROS modulate BMP signaling in cultured sympathetic neurons (Chandrasekaran et al., 2015) and Wnt pathways in non-neuronal cells (Funato et al., 2006; Love et al., 2013; Rharass et al., 2014). Biochemically, ROS are well known regulators of kinase pathways via oxidation-mediated inhibition of phosphatases (Finkel and Holbrook, 2000; Tonks, 2006). Redox modifications also regulate the activity of the immediate early genes Jun and Fos, which are required for LTP in vertebrates, and in Drosophila for activity-dependent plasticity of motoneurons, both at the NMJ and central dendrites (Hartwig et al., 2008; Jindra et al., 2004; Loebrich and Nedivi, 2009; Milton and Sweeney, 2012; Milton et al., 2011; Sanyal et al., 2002). We therefore hypothesize that ROS may provide neuronal activity-regulated modulation of multiple canonical synaptic plasticity pathways.\n\n### Structural plasticity and its coordination between pre- and postsynaptic terminals\n\nWe focused on three aspects of synaptic terminal plasticity: dendritic arbor size in the CNS, and bouton and active zone numbers at the NMJ. We used these as phenotypic indicators for activity-regulated changes. By working with identified motoneurons we could observe adaptations across the entire neuron, relating adjustments of postsynaptic dendritic input terminals in the CNS to changes of the presynaptic output terminals at the NMJ in the periphery\u00a0(Figure 7). For the aCC motoneuron, the degree of neuronal overactivation correlates with changes in synaptic terminal growth: notably reductions of dendritic arbor size centrally and of active zones at the NMJ. Interestingly, presynaptic active zone numbers did not show a linear response profile. Within a certain range low-level activity increases lead to more active zones, associated with potentiation (as previously shown by\u00a0Sigrist et al., 2003); however, with stronger overactivation active zone number decrease (Figure 1D,E). Reduction of active zones, as we observed at the NMJ, and of Brp levels by increased activation was previously also reported in photoreceptor terminals of the Drosophila adult visual system (Sugie et al., 2015). At a finer level of resolution it will be interesting to determine how these activity-ROS-mediated structural changes might change active zone cytomatrix composition, which can impact on transmission properties, such as vesicle release probability (Davydova et al., 2014; Lazarevic et al., 2011; Matz et al., 2010; Peled et al., 2014; Weyhersm\u00fcller et al., 2011)\n\nWe previously found that in these motoneurons dendritic length correlates with the number of input synapses and with synaptic drive (Zwart et al., 2013). Therefore, we tentatively interpret the negative correlation between the degree of overactivation and the reduction in central dendritic arbors as compensatory. In agreement, we found that blockade of activity-induced structural adjustment targeted to the motoneurons prevents behavioral adaptation normally seen after prolonged overactivation (Figure 6). Less clear is if and how overactivation-induced structural changes at the NMJ might be adaptive. Unlike many central synapses that facilitate graded analogue computation, the NMJ is a highly specialized synapse with a large safety factor and intricate mechanisms that ensure constancy of evoked transmission in essentially digital format (Frank et al., 2013; Marrus and DiAntonio, 2005). Rearing larvae at 29\u00b0C (which acutely increases motor activity) leads to more active zones at the NMJ and potentiated transmission, yet these larvae crawl at the same default speed as other larvae reared at 25\u00b0C (control) or 32\u00b0C with reduced numbers of active zones (compare Figure 1E with Figure 6B). This suggests that at least with regard to regulating crawling speed, plasticity mechanisms probably operate at the network level, rather than transmission properties of the NMJ. Indeed, our recordings of transmission at the NMJ, and those reported by others, show homeostatic maintenance of eEJP amplitude irrespective of changes in bouton and active zone number (Figure 5) (Campbell and Ganetzky, 2012). Though in this study we focused on anatomical changes, we expect these structural adjustments to be linked to, and probably preceded by compensatory changes in neuronal excitability that have been documented (Baines et al., 2001; Davis, 2006; Davis et al., 1996; Davis et al., 1998; Driscoll et al., 2013; Frank et al., 2006; Frank et al., 2009; Gavi\u00f1o et al., 2015; Giachello and Baines, 2017; Lin et al., 2012b; Mee et al., 2004; M\u00fcller and Davis, 2012; Wang et al., 2014; Younger et al., 2013; O'Leary et al., 2013; Prinz, 2006; Prinz et al., 2004).\n\nOur observations of activity-regulated adjustments of both dendritic arbor size and NMJ structure give the impression of processes coordinated across the entire neuron. If this was the case, it could be mediated by transcriptional changes, potentially via immediate early genes (AP-1), which are involved in activity and ROS-induced structural changes at the NMJ (Milton et al., 2011; Sanyal et al., 2002) and motoneuron dendrites (Hartwig et al., 2008).\n\n### Identification of DJ-1\u03b2 as a neuronal ROS sensor\n\nWe discovered that in neurons the highly conserved protein DJ-1\u03b2 is critical for both structural and physiological changes in response to activity-generated ROS (Figure 3 and Figure 5). In neurons DJ-1\u03b2 might act as a redox sensor for activity-generated ROS. In agreement with this idea, DJ-1\u03b2 has been shown to be oxidized by H2O2 at the conserved cysteine residue C106 (C104 in Drosophila) (Lin et al., 2012a; Meulener et al., 2006). Oxidation of DJ-1 leads to changes in DJ-1 function, including translocation from the cytoplasm to the mitochondrial matrix, aiding protection against oxidative damage (Blackinton et al., 2009; Canet-Avil\u00e9s et al., 2004; Waak et al., 2009) and maintenance of ATP levels (Cal\u00ec et al., 2015). We found that the ability of motoneurons to respond to increased activation is potently sensitive to DJ-1\u03b2 dosage. It is also blocked by expression of mutant DJ-1\u03b2C104A that is non-oxidisable on the conserved Cys104 (Hao et al., 2010; Meulener et al., 2006). These observations suggest that DJ-1\u03b2 is critical to ROS sensing in neurons. They also predict that cell type-specific DJ-1\u03b2 levels, and associated DJ-1\u03b2 reducing mechanisms, could contribute to setting cell type-specific sensitivity thresholds to neuronal activity.\n\n### DJ-1\u03b2downstream pathways implement activity-regulated plasticity\n\nOur data suggest that DJ-1\u03b2 could potentially be part of a signaling hub. At the NMJ, this might mediate plasticity across a range, from the addition of active zones associated with potentiation to, following stronger overactivation, the reduction of active zones. We identified disinhibition of PI3Kinase signaling as one DJ-1\u03b2 downstream pathway (Figure 4) (Kim et al., 2005; Kim et al., 2009b), a well-studied intermediate in metabolic pathways and a known regulator of synaptic terminal growth, including active zone addition (Jord\u00e1n-\u00c1lvarez et al., 2012; Mart\u00edn-Pe\u00f1a et al., 2006). However, with stronger overactivation DJ-1\u03b2 might engage additional downstream effectors that reduce active zone addition or maintenance, potentially promoting active zone disassembly. While at the presynaptic NMJ PI3Kinase disinhibition explains activity-regulated changes in bouton addition, different DJ-1\u03b2 effectors likely operate in the somato-dendritic compartment, which responds to overactivation with reduced growth and possibly pruning (Brierley et al., 2009). Thus, sub-cellular compartmentalization of the activity-ROS-DJ-1\u03b2 signaling axis could produce distinct plasticity responses in pre- versus postsynaptic terminals.\n\n### Homeostatic maintenance of synaptic transmission requires presynaptic ROS signaling\n\nPrevious studies demonstrated a requirement for ROS for LTP (Huddleston et al., 2008; Kamsler and Segal, 2003a; Kamsler and Segal, 2003b; Klann, 1998; Knapp and Klann, 2002; Lee et al., 2010) and found learning defects in animal models with reduced NADPH oxidase activity (Kishida et al., 2006), suggesting that synaptic ROS signaling might be a conserved feature of communication in the nervous system. Our sharp electrode recordings from muscle DA1 revealed three interesting aspects. First, that changing ROS signaling in the presynaptic motoneuron under normal activity conditions does not obviously impact on NMJ transmission. Second, quenching of presynaptic ROS by expression of Catalase under overactivation conditions led to a significant decrease in eEJP amplitude and concomitantly reduced quantal content (Figure 5A,C). This shows that upon chronic neuronal overactivation ROS signaling is critically required in the presynaptic motoneuron for maintaining eEJP amplitude by increasing vesicle release at the NMJ. This could be achieved by increasing vesicle release probability, which would counteract the reduction in active zone number following a period of neuronal overactivation. In this context it is interesting that components of the presynaptic release machinery, including SNAP25, are thought to be directly modulated by ROS (Giniatullin et al., 2006), while others, such as Complexin, might be indirectly affected, for example via ROS-mediated inhibition of phosphatases leading disinhibition of kinase activity (Cho et al., 2015). Third, we found that overactivation of motoneurons leads to reduced mEJP amplitude, also recently reported by others (Yeates et al., 2017). Curiously, mEJP amplitude, unlike eEJP amplitude, is regulated by DJ-1\u03b2, but is not impacted on by artificially increased cytoplasmic levels of the H2O2 scavenger Catalase. How it is that under conditions of neuronal overactivation eEJP and mEJP amplitudes are differentially sensitive to cytoplasmic Catalase versus DJ-1\u03b2 oxidation is unclear, though it marks these two processes as distinct. One possibility is that cytoplasmic Catalase changes the local redox status, which could directly affect the properties of the presynaptic active zone cytomatrix. In contrast, mEJP amplitude regulation might be indirect and cell non-autonomous, via modulation of glutamate receptors in the postsynaptic target muscle (Davis et al., 1998).\n\nThus, several distinct ROS responsive pathways appear to operate at the NMJ. Structural adjustments in terms of synaptic terminal growth and synapse number are mediated by mechanisms sensitive to DJ-1\u03b2 oxidation, potentially regulated via local reducing systems, including Catalase. In addition and distinct from these structural changes, at least in part, are the ROS-regulated adjustments in synaptic transmission that show different ROS sensitivities, one maintaining quantal content of evoked transmission while the other reduces mEJP amplitude when neuronal activity goes up (Figure 5B). It is conceivable that spatially distinct sources of ROS, for example\u00a0mitochondria versus membrane localized NADPH oxidases, with different temporal dynamics could potentially mediate such differences in ROS sensitivities at the NMJ.\n\n### Homeostatic adjustment of larval crawling speed depends on redox modification of DJ-1\u03b2\n\nOur experiments exploring the potential behavioral relevance of activity-regulated structural plasticity demonstrated that network drive is regulated by ambient temperature. Acute elevation in ambient temperature produces faster crawling, while acute temperature reduction has the opposite effect. In contrast, with chronic temperature manipulations, larval crawling returns to its default speed (approx. 0.65\u20130.72 mm/sec) (Figure 6A). This adaptation to chronic manipulations might overall be energetically more favorable. It also allows larvae to retain a dynamic range of responses to relative changes in ambient temperature (i.e. speeding up or slowing down).\n\nWhere in the locomotor network these adjustments take place remains to be worked out. It is reasonable to assume that proprioceptive sensory neurons, and potentially also central recurrent connections, provide feedback information that facilitates homeostatic adjustment of network output. Our manipulations of the glutamatergic motoneurons show these cells are clearly important. For example, cell type-specific overactivation of the glutamatergic motoneurons (via dTrpA1) on the one hand, and blockade of activity-induced structural adjustment (by mis-expression of non-oxidizable DJ-1\u03b2C104A) on the other demonstrated that ROS-DJ-1\u03b2-mediated processes that we showed important for structural adjustment are also required for implementing homeostatic tuning of locomotor network output (Figure 6B,C). The capacity of motoneurons as important elements in shaping motor network output, might be explicable in that these neurons constitute the final integrators on which all pre-motor inputs converge (Fushiki et al., 2016; Itakura et al., 2015; Kohsaka et al., 2014; Schneider-Mizell et al., 2016; Zwart et al., 2016).\n\nIn conclusion, here we identified ROS in neurons as novel signals that are critical for activity-induced structural plasticity\u00a0(Figure 7). ROS levels regulated by neuronal activity have the potential for operating as metabolic feedback signals. We further identified the conserved redox-sensitive protein DJ-1\u03b2 as important to neuronal ROS sensing, and the PTEN/PI3Kinase synaptic growth pathway as a downstream effector pathway for NMJ growth in response to neuronal overactivation. These findings suggest that in the nervous system ROS operate as feedback signals that inform cells about their activity levels. The observation that ROS are important signals for homeostatic processes explains why ROS buffering is comparatively low in neurons (Bell et al., 2015). This view also shines a new light on the potential impact of ROS dysregulation with age or under neurodegenerative conditions, potentially interfering with neuronal adaptive adjustments and thereby contributing to network malfunction and synapse loss.\n\n## Materials and methods\n\n### Electrophysiology\n\nLate wandering third instar larvae were fillet dissected in standard HL3 buffer (adapted from Stewart et al., 1994), 70 mM NaCl, 5 mM KCl, 20 mM MgCl2, 10 mM NaHCO3, 115 mM Sucrose, 5 mM HEPES, 1.5 mM CaCl, pH 7.25) ventral surface down with a lateral incision in order preserve both the ventral and dorsal midlines. Suction (GC150F-10 Harvard Apparatus) and sharp (GC100F-10 Harvard Apparatus) electrodes were pulled using a P-97 pipette puller (Sutter Instrument Company). Sharp electrode muscle impalement (DA1 muscle, at the dorsal midline) and inter-segmental nerve suction (ventral midline) were performed using an Olympus BX50WI compound microscope with 10X air (Olympus 10x/0.25\u00a0N.A.) and 20X dipping (Olympus UMPlanFL 20x/0.5 N.A.) objective lenses. Recordings were made at 21\u00b0C in HL3 using an Axopatch-1D amplifier (Axon Instruments), a 1322A DigiData (Axon Instruments), a DS2A-MkII Constant Voltage Isolated Stimulator (Digitimer Ltd.) and pCLAMP 10.4 acquisition software (Molecular Devices). mEJP (2\u20133 min) and eEJP (3 rounds of 20 stimulations, 5V) recordings were made in current-clamp mode from muscle cells with an input resistance above 8MOhm and a stable resting membrane potential between \u221240 mV and \u221270 mV. Analysis of eEJPs was performed using Clampfit10.6 (Molecular Devices) and mEJPs using Mini-Analysis6.0.7 (Synaptosoft).\n\n### Fly strains and husbandry\n\nWild-type and transgenic strains were maintained on standard yeast\u2013agar\u2013cornmeal medium at 25\u00b0C. The following fly strains were used: OregonR and PTENCO76 (Bloomington Stock Center, Indiana University), UAS-dTrpA1 (Hamada et al., 2008), UAS-SOD2 (Missirlis et al., 2003), UAS-Catalase (Missirlis et al., 2001), UAS-Duox (Ha et al., 2005), DJ-11\u00df\u039493 (Meulener et al., 2005), UAS-DJ-1\u03b2C104A (Meulener et al., 2006), UAS-RNAi lines targeting SOD1, SOD2, Catalase and PTEN (KK collection, Vienna Drosophila Resource Centre) (Dietzl et al., 2007), UAS-PI3KDN (Leevers et al., 1996), UAS-PTEN (Gao et al., 2000). The following two GAL4 expression lines were used to target GAL4 to the aCC and RP2 motoneurons: aCC-FLP-GAL4 (eveRN2-Flippase, UAS-myr::mRFP1, UAS-Flp, tubulin84B-FRT-CD2-FRT-GAL4) (Roy et al., 2007) expresses GAL4 stochastically in single aCC and RP2 motoneurons allowing the imaging of aCC neurons in isolation, as required for dendritic arbor resolution and reconstruction. aCC/RP2-GAL4 (eveRN2-GAL4 [Fujioka et al., 2003], UAS-myr-mRFP1, UAS-Flp, tubulin84B-FRT-CD2-FRT-GAL4; RRaGAL4, 20xUAS-6XmCherry::HA [Shearin et al., 2014]) was used for NMJ analysis as it expresses GAL4 in every aCC and RP2 motoneuron. eveRN2-GAL4 expression is restricted to the embryo and FLPase-gated tubulin84B-FRT-CD2-FRT-GAL4 maintains GAL4 expression at high levels during larval stages.\n\n### Dissection and immunocytochemistry\n\n#### 1stinstar Ventral Nerve Cord (VNC)\n\nFlies were allowed to lay eggs on apple juice-based agar medium for 24 hr at 25\u00b0C. Embryos were dechorionated using bleach (3.5 min room temperature) then incubated (25\u00b0C) in pre-warmed Sorensen\u2019s saline (pH 7.2, 0.075 M) whilst adhered to a petri dish. Hatched larvae (floating) were recovered hourly and transferred to pre-warmed apple-juice agar plates supplemented with yeast paste. Larvae were allowed to develop for a further 24 hr (24 hr after larval hatching, ALH) at 25\u00b0C, 27\u00b0C or 29\u00b0C prior to dissection in Sorensen\u2019s saline. A fine hypodermic needle (30 1/2 G; Microlance) was used as a scalpel to cut off the anterior end of each larva, allowing gut, fat body, and trachea to be removed. The ventral nerve chord and brain lobes, extruded with viscera upon decapitation, were dissected out and transferred to a cover glass coated with poly-L-lysine (Sigma-Aldrich), positioned dorsal side up in Sorensen\u2019s saline. A clean cover glass was placed on top of the preparation, with strips of double-sided sticky tape as spacers positioned along the edges.\n\n#### Wandering third\u00a0Instar\n\nFlies were allowed to lay eggs on apple-juice agar based medium overnight at 25\u00b0C, larvae were then incubated at 25\u00b0C or 27\u00b0C until the late wandering third\u00a0instar stage. Larvae were reared on yeast paste colored with Bromophenol Blue Sodium Salt (Sigma-Aldrich) to allow visualization of gut-clearance, an indicator of the late wandering third\u00a0instar stage. For diethyl\u00a0maleate (DEM) (Sigma-Aldrich) and paraquat (Sigma-Aldrich) feeding, yeast paste was made using a 5 mM \u2013 15 mM aqueous solution. Larvae were \u2018fillet\u2019 dissected in Sorensen\u2019s saline and fixed for 15 min at room temperature in 4% formaldehyde (in Sorenson\u2019s saline). Specimens were then washed and stained in Sorensen\u2019s saline containing 0.3% Triton X-100 (Sigma-Aldrich) using the following primary/secondary antibodies; Goat-anti-HRP Alexa Fluor 594 (1:400) (Jackson ImmunoResearch Cat. No. 123-585-021), Rabbit-anti-dsRED (1:1200) (ClonTech Cat. No. 632496), Donkey-anti-Rabbit CF568 (1:1200) (Biotium Cat. No. 20098) incubated overnight at 4\u00b0C or 2 hr at room temperature. Specimens were mounted in EverBrite mounting medium (Biotium).\n\n### Image acquisition and analysis\n\n#### 1stinstar Ventral Nerve Cord (VNC)\n\nVentral nerve cords were pre-screened for fluorescently labeled, isolated, aCC motoneurons using a Zeiss Axiophot compound epifluorescence microscope and a Zeiss Plan-Neofluar 40x/0.75 N.A. objective lens. Suitable VNCs were imaged immediately with a Yokagawa CSU-22 spinning disk confocal field scanner mounted on an Olympus BX51WI microscope, using a 60\u00d7/1.2 N.A. Olympus water immersion objective. Images were acquired with a voxel size of 0.2\u00a0\u00d7\u00a00.2\u00a0\u00d7\u00a00.3 \u00b5m using a QuantEM cooled EMCCD camera (Photometrics), operated via MetaMorph software (Molecular Devices). Dendritic trees were digitally reconstructed using Amira Resolve RT 4.1 (Visualization Sciences Group and Zuse Institute), supplemented with a 3D reconstruction algorithm (Evers et al., 2005; Schmitt et al., 2004), and images were processed using Amira and ImageJ (National Institutes of Health).\n\n#### Wandering third\u00a0Instar\n\nDissected specimens were imaged using a Leica SP5 point-scanning confocal, and a 63x/1.3 N.A. (Leica) glycerol immersion objective lens and LAS AF (Leica Application Suite Advanced Fluorescence) software. Confocal images were processed using ImageJ and Photoshop (Adobe). Bouton number of the NMJ on muscle DA1 (Adler et al., 1999) from segments A3-A5 was determined by counting every distinct spherical varicosity along the NMJ branch. DA1 muscles were imaged using a Zeiss Axiophot compound microscope and a Zeiss Plan-Neofluar 10x/0.3 N.A. objective lens. Muscle surface area (MSA) was determined by multiplying muscle length by width using ImageJ. In order to correct for subtle differences in animal size (typically 5\u201310%) bouton number normalization was performed using the following calculation: (mean control MSA/mean experimental MSA) x test bouton number\u00a0=\u00a0normalized experimental bouton number.\n\n#### Ratiometric ROS reporter\n\naCC/RP2-Gal4 was used to drive the expression of UAS-mito-roGFP2-Orp1 (Albrecht et al., 2011; Gutscher et al., 2009) in all aCC and RP2 motoneurons. Wandering third instar larvae were fillet dissected in PBS-NEM (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4, 20 mM N-ethylmaleimide (NEM), pH 7.4). Larval fillet preparations were incubated for 5 min in PBS-NEM then fixed for 8 min in 4% formaldehyde (in PBS-NEM). Specimens were washed three times in PBS-NEM and then equilibrated in 70% glycerol. Specimens were mounted in glycerol and imaged the same day. Imaging was performed on a Leica SP5 point-scanning confocal, using a 63x/1.3 N.A. (Leica) glycerol immersion objective lens. The reporter was excited sequentially at 405 nm and 488 nm (Albrecht et al., 2011) with emission detected at 500\u2013535 nm. 16-bit images were acquired using Leica LAS AF software and processed using ImageJ. Z-stack images were maximally projected and converted to 32-bit. To remove fringing artefacts around bouton edges 488 nm images were thresholded using the \u2018Intermodes\u2019 algorithm with values below threshold set to \u2018not a number\u2019, and ratio images were created by dividing the 405 nm image by the 488 nm image pixel by pixel (Albrecht et al., 2011). Regions of Interest were taken on the ratio image spanning the entire NMJ and the mean value obtained from each NMJ was used for statistical analysis.\n\n#### Transmission electron microscopy\n\nThird instar wandering larvae were fillet dissected in PBS and fixed overnight in 0.1M NaPO4, pH 7.4, 1% glutaraldehyde, and 4% formaldehyde, pH 7.3. Fixed specimens were washed 3\u00a0\u00d7\u00a0in 0.1M NaPO4 before incubation in OsO4 (1% in 0.1M NaPO4; 2 hr). Preparations were washed 3\u00a0\u00d7\u00a0in distilled water, incubated in 1% uranyl acetate, then washed again (3\u00a0\u00d7\u00a0distilled water) and dehydrated through a graded ethanol series: 20% increments starting at 30% followed by two 100% changes and then 2\u00a0\u00d7\u00a0100% propylene oxide. Specimens were incubated in a graded series of epon araldite resin (in propylene oxide): 25% increments culminating in 3\u00a0\u00d7\u00a0100% changes. Individual muscles were then dissected and transferred into embedding molds, followed by polymerization at 60\u00b0C for 48 hr. Resin mounted specimens were sectioned (60\u201370 nm) using glass knives upon a microtome (Ultracut UCT; Leica). Sections were placed onto grids, incubated in uranyl acetate (50% in ethanol), washed in distilled water and incubated in lead citrate. Sections were imaged using a transmission electron microscope (TECNAI 12 G2; FEI) with a camera (Soft Imaging Solutions MegaView; Olympus) and Tecnai user interface v2.1.8 and analySIS v3.2 (Soft Imaging Systems).\n\n### Behavior \u2013 larval crawling analysis\n\nTo record larval crawling, mid-3rd instar larvae (72 hr ALH) were briefly rinsed in water to remove any food and yeast residues, then up to 12 larvae were placed into a 24 cm x 24 cm arena of 0.8% agar in water, poured to 5 mm thickness. Crawling behavior was recorded in a temperature and humidity controlled incubator at temperatures ranging from 25\u201332\u00b0C, as indicated for each experiment. Larvae were allowed to acclimatise for 5 min, then recorded for 15 min under infrared LED illumination (intensity from 14.33 nW/mm2 in the edge to 9.12 nW/mm2 in the center), using frustrated total internal reflection using a modified FIM tracker (Risse et al., 2013) https://www.uni-muenster.de/PRIA/en/FIM/index.html.\u00a0Larvae were recorded with a Basler acA2040-180km CMOS camera using Pylon and StreamPix software, mounted with a 16 mm KOWA IJM3sHC.SW VIS-NIR Lens. Images were acquired at five frames per second. For each larvae, average crawling speed was calculated from long, uninterrupted forward crawls identified manually using FIMTrack. The 15 min recording period was partitioned into 5 min sections with each larvae being assayed once within each section, allowing each specimen to be sampled a maximum of 3 times. We observed no change in average crawling speed within the duration of the 15 min recording.\n\n### Data analysis\n\nAll data handling was performed using Prism software (GraphPad). NMJ bouton number and ratiometric ROS reporter data were tested for normal/Gaussian distribution using the D\u2019Agostino-Pearson omnibus normality test. Due to a lower replicate number, dendritic arbor reconstruction data were tested for normality using the Kolmogorov-Smirnov with Dallal-Wilkinson-Lilliefor P value test. Normal distribution was thus confirmed for all data presented, which were compared using one-way analysis of variance (ANOVA), with Tukey\u2019s multiple comparisons test where *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "d0924643-7451-40c4-a4f6-39c05ed28677",
+      "submission_id": "4801e688-12bc-4080-85c4-ae87c908e6ff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Graeme W Davis, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39393.020](https://doi.org/10.7554/eLife.39393.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Reactive Oxygen Species Regulate Activity-Dependent Neuronal Plasticity in Drosophila\" for consideration by eLife. Your article has been reviewed by Eve Marder as the Senior Editor, a Reviewing Editor, and two reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Konrad Zinsmaier (Reviewer #2); Stephan J Sigrist (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nROS are notoriously implicated in the course of neurodegenerative disease, but much less is known how ROS intersect with \"normal\" mechanisms of synaptic development and plasticity. Here, the authors use genetically encoded over-activation of motoneurons to establish a paradigm for studying the role of ROS for morphological outgrowth of axonal arbors, the number of active zones, dendrite elaboration, NMJ physiology and finally behavioral output. These data are retrieved from identified motoneurons under highly standardized conditions.\n\nThe authors demonstrate that two perturbations, (1) high temperature rearing and (2) the use of temperature-activated TRPA1, both trigger NMJ outgrowth with lower active zone density. To involve ROS production, they use a mitochondrion targeted ratiometric ROS reporter UAS-mito-roGFP2-Orp1, which detects a small but significant increase of ROS levels upon TRPA1 activation. In order to functionally imply ROS in their activity triggered changes, they co-over-express the ROS scavenging enzymes SOD2 and catalase, which specifically \"rescued\" the activity induced phenotypes in the predicted direction. In a candidate approach for protein machinery to sense ROS they test for a role of DJ-1\u03b2, the fly ortholog of DJ-1 (PARK7), as a candidate ROS sensor. To evaluate a role of DJ-1\u03b2 they turn into feeding paraquat (triggering the ROS NMJ response) and find that expression of a mutant form of DJ-1\u03b2 that is non-oxidizable at the conserved cysteine 104 abrogates the paraquat response. They go on to involve PTEN and PI3K as downstream effectors of the DJ-1\u03b2 ROS sensor. The study ends by demonstrating an interesting adaptation and rebound effect regarding larval locomotion, which they observe by combining chronic high temperature rearing and acute temperature shifts of the larvae. They show that the mutated DJ-1\u03b2 ROS sensor can to a degree abrogate these adaptive/plastic effects.\n\nReviewers generally agree that the findings in the paper are both interesting and important. A highlight of the work is the extension of work on ROS to an in vivo system where neurodevelopment of synaptic connections and neuronal morphology can be easily and clearly quantified. A number of issues were raised in the review process that, if addressed, would solidify the major conclusions of the study.\n\nEssential revisions:\n\n1) The effect of the DJ-1\u03b2 \u039493 null mutation on the ROS-induced (DEM or paraquat) increase in bouton number (Figure 3A) is key for the main conclusion of the present study. To ensure that this effect is specific to the loss of DJ-1\u03b2, it should be genetically rescued by expression of normal DJ-1\u03b2 in \u039493 null mutants.\n\n2) What is the effect of expressing only DJ-1\u03b2C104A on the ROS-induced increase in the number of boutons (Figure 3A)?\n\n3) Concerns were raised regarding the genetic controls for anatomical experiments. In some instances, control genotypes appear to be either Oregon R or unspecified. In instances where comparisons are made between genotypes expressing transgenes, then the appropriate controls should include the heterozygous driver and/or UAS-transgene in the absence of a driver. Please include these controls where appropriate and ensure that statistically significant changes remain robust.\n\n4) Given the variance in the electrophysiological recordings, sample sizes of 4 or 5 synapses seem quite small. The effects seem robust, but it would be important to extend these sample sizes to ensure that the effects are not simply due to sampling errors from overlapping data distributions with large variance.\n\n5) More explanation is necessary regarding some of the major conclusions. How can we explain that catalase is needed for \"homeostatic maintenance\" but not DJ-1\u03b2? Does this mean that though catalase and DJ-1\u03b2 manipulate parameters such as bouton number and active zone number similarly, their impact on release is uncoupled from these parameters?\n\n6) There was discussion about the assertion that crawling behavior is homeostatically stabilized through some type of network process. Here, the reviewers recommend more careful discussion. Is normal crawling speed an emergent property of homeostatic mechanisms acting at a cellular level? It is hard to imagine that the animal has a fundamental crawling speed that is sensed and used as feedback information to instruct neural function or development. To support such a conclusion, it might be necessary to confront the animals with more challenging behavioral paradigms that specifically stress the ability of the animals to crawl, rather than acting primarily at the cellular level. Without such an experiment, a more measured discussion of homeostasis and potential mechanisms that might underlie the observed stabilization of crawling speed seems appropriate.\n",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c7b31df2-4fed-4a64-9ca2-308f67c57e7e",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C1",
+      "claim": "ROS act as obligate signals required for neuronal activity-dependent structural plasticity of both pre- and postsynaptic terminals in Drosophila larval locomotor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Working with the Drosophila larval locomotor network, we show that in neurons ROS act as obligate signals required for neuronal activity-dependent structural plasticity, of both pre- and postsynaptic terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding, which is supported by experimental data throughout the manuscript showing ROS necessity for structural changes at both dendritic and NMJ terminals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "385a8c35-6496-4aa2-ba89-68ef950f3057",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C2",
+      "claim": "ROS signaling is necessary for maintaining evoked synaptic transmission at the neuromuscular junction.",
+      "claim_type": "EXPLICIT",
+      "source": "ROS signaling is also necessary for maintaining evoked synaptic transmission at the neuromuscular junction, and for activity-regulated homeostatic adjustment of motor network output, as measured by larval crawling behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by electrophysiological recordings showing that Catalase expression reduces eEJP amplitude under overactivation conditions (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "51aafdd7-1f23-4c98-9957-74549c8697df",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C3",
+      "claim": "ROS signaling is necessary for activity-regulated homeostatic adjustment of motor network output as measured by larval crawling behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "ROS signaling is also necessary for maintaining evoked synaptic transmission at the neuromuscular junction, and for activity-regulated homeostatic adjustment of motor network output, as measured by larval crawling behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by behavioral data showing that expression of non-oxidizable DJ-1\u03b2C104A prevents homeostatic adjustment of crawling speed (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "20ec9627-7a15-40f6-acad-cf4f4a982a6c",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C4",
+      "claim": "DJ-1\u03b2 is a redox sensor in neurons that regulates structural plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the highly conserved Parkinson's disease-linked protein DJ-1\u03b2 as a redox sensor in neurons where it regulates structural plasticity, in part via modulation of the PTEN-PI3Kinase pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by genetic experiments showing DJ-1\u03b2 is required for ROS-induced structural changes and that non-oxidizable DJ-1\u03b2C104A blocks these changes (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "7e4778a7-14b5-4926-9041-7b2e69a98f92",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C5",
+      "claim": "DJ-1\u03b2 regulates structural plasticity in part via modulation of the PTEN-PI3Kinase pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the highly conserved Parkinson's disease-linked protein DJ-1\u03b2 as a redox sensor in neurons where it regulates structural plasticity, in part via modulation of the PTEN-PI3Kinase pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by genetic interaction experiments showing DJ-1\u03b2 and PTEN interact to regulate ROS-induced NMJ elaboration (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "03d1600d-2eca-4244-b913-35000f469ddd",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C6",
+      "claim": "ROS levels in the brain increase with ageing.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of reactive oxygen species (ROS) in the brain increase with ageing and high levels of ROS are a hallmark of neurodegeneration, including Alzheimer's and Parkinson's disease (H\u00f6hn and Grune, 2013; Martins et al., 1986; Spina and Cohen, 1989) for review see (Milton and Sweeney, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (H\u00f6hn and Grune, 2013; Martins et al., 1986; Spina and Cohen, 1989; Milton and Sweeney, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "793dad71-165f-4118-9c97-c55b5ac3cfa1",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C7",
+      "claim": "High levels of ROS are a hallmark of neurodegeneration, including Alzheimer's and Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of reactive oxygen species (ROS) in the brain increase with ageing and high levels of ROS are a hallmark of neurodegeneration, including Alzheimer's and Parkinson's disease (H\u00f6hn and Grune, 2013; Martins et al., 1986; Spina and Cohen, 1989) for review see (Milton and Sweeney, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (H\u00f6hn and Grune, 2013; Martins et al., 1986; Spina and Cohen, 1989; Milton and Sweeney, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "ea225e04-e028-4fc7-8589-c437899b9e57",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C8",
+      "claim": "Mitochondria are a significant source of ROS, which form as obligate byproducts of respiratory ATP synthesis by 'leakage' of the electron transport chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria are a significant source of ROS, which form as obligate byproducts of respiratory ATP synthesis by 'leakage' of the electron transport chain, thus leading to the generation of superoxide anions (O2-) and hydrogen peroxide (H2O2) (Halliwell, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Halliwell, 1992) and represents established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "6695f5e6-3523-4461-bf53-e4171295c504",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C9",
+      "claim": "Electron transport chain leakage leads to the generation of superoxide anions (O2-) and hydrogen peroxide (H2O2).",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria are a significant source of ROS, which form as obligate byproducts of respiratory ATP synthesis by 'leakage' of the electron transport chain, thus leading to the generation of superoxide anions (O2-) and hydrogen peroxide (H2O2) (Halliwell, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Halliwell, 1992) and represents established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "28ead176-da14-476c-83ec-c47e2f6c23fd",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C10",
+      "claim": "ROS have the potential to modify and damage by oxidation proteins, lipids and DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Implicit in their name, ROS are highly reactive, containing one or more unpaired electrons, with the potential to modify and damage by oxidation proteins, lipids and DNA (Gladyshev, 2014; Harman, 1956; Stuart et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Gladyshev, 2014; Harman, 1956; Stuart et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "7f606b4e-f9ec-4631-ab13-bcc965a36f4c",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C11",
+      "claim": "ROS have been recognized as signaling molecules in metabolic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, ROS have also been recognized as signaling molecules in metabolic pathways (Liemburg-Apers et al., 2015) and controlling the activity of transcription factors such as AP-1 and Nrf2 (Jindra et al., 2004; Soriano et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Liemburg-Apers et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "5fdec1a4-63ad-4c83-bbe0-45ed6abf39b6",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C12",
+      "claim": "ROS control the activity of transcription factors such as AP-1 and Nrf2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, ROS have also been recognized as signaling molecules in metabolic pathways (Liemburg-Apers et al., 2015) and controlling the activity of transcription factors such as AP-1 and Nrf2 (Jindra et al., 2004; Soriano et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Jindra et al., 2004; Soriano et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "71d7f6c2-d017-454f-be57-e4e3fa8dfd49",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C13",
+      "claim": "Several kinase signaling pathways are enhanced by ROS through oxidation of kinase interacting modulators such as thioredoxin or glutathione-S-transferases.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, several kinase signaling pathways are enhanced by ROS, either by oxidation of kinase interacting modulators, such as thioredoxin or glutathione-S-transferases (Adler et al., 1999; Saitoh et al., 1998), or through inhibition of counteracting phosphatases, for example PTEN, by oxidation of the active site cysteine residue (Finkel, 2011; Stuart et al., 2014; Tonks, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Adler et al., 1999; Saitoh et al., 1998).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "6fba49cb-50db-4a9b-a4b3-b2dbeac7c3e6",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C14",
+      "claim": "ROS enhance kinase signaling pathways through inhibition of counteracting phosphatases, for example PTEN, by oxidation of the active site cysteine residue.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, several kinase signaling pathways are enhanced by ROS, either by oxidation of kinase interacting modulators, such as thioredoxin or glutathione-S-transferases (Adler et al., 1999; Saitoh et al., 1998), or through inhibition of counteracting phosphatases, for example PTEN, by oxidation of the active site cysteine residue (Finkel, 2011; Stuart et al., 2014; Tonks, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Finkel, 2011; Stuart et al., 2014; Tonks, 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "a0f2de34-b727-4767-84d9-9ceb0967ee77",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C15",
+      "claim": "ROS can regulate neuromuscular junction (NMJ) structure in a model for lysosomal storage diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed in a model for lysosomal storage diseases that ROS can regulate neuromuscular junction (NMJ) structure (Milton et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors (Milton et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "b1b3f225-9ca2-4b73-9c6f-72191a32b392",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C16",
+      "claim": "NMDA receptor stimulation can lead to ROS generation.",
+      "claim_type": "EXPLICIT",
+      "source": "NMDA receptor stimulation can lead to ROS generation (Bindokas et al., 1996; Brennan et al., 2009; Dugan et al., 1995), and in hippocampal and spinal cord slices ROS have been shown sufficient and necessary for inducing 'Hebbian' forms of plasticity (LTP) (Kamsler and Segal, 2003a; Kamsler and Segal, 2003b; Klann, 1998; Knapp and Klann, 2002; Lee et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Bindokas et al., 1996; Brennan et al., 2009; Dugan et al., 1995).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "168e3d66-5c23-4edb-90be-a75182ff0fc6",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C17",
+      "claim": "In hippocampal and spinal cord slices ROS have been shown sufficient and necessary for inducing 'Hebbian' forms of plasticity (LTP).",
+      "claim_type": "EXPLICIT",
+      "source": "NMDA receptor stimulation can lead to ROS generation (Bindokas et al., 1996; Brennan et al., 2009; Dugan et al., 1995), and in hippocampal and spinal cord slices ROS have been shown sufficient and necessary for inducing 'Hebbian' forms of plasticity (LTP) (Kamsler and Segal, 2003a; Kamsler and Segal, 2003b; Klann, 1998; Knapp and Klann, 2002; Lee et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Kamsler and Segal, 2003a; Kamsler and Segal, 2003b; Klann, 1998; Knapp and Klann, 2002; Lee et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "7f6aa4c9-0571-408a-b5d6-8bd7bd2a2776",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C18",
+      "claim": "Disturbing the ROS balance by over-expression of the scavenger superoxide dismutase caused defects in hippocampal LTP and learning paradigms in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, disturbing the ROS balance by over-expression of the scavenger superoxide dismutase caused defects in hippocampal LTP and learning paradigms in mice (Gahtan et al., 1998; Levin et al., 1998; Thiels et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Gahtan et al., 1998; Levin et al., 1998; Thiels et al., 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "ead3a6d7-8d4e-48f0-a491-86ef26f8fb1b",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C19",
+      "claim": "Recent studies have linked increased ROS levels with neurodevelopmental conditions such as schizophrenia, bipolar and autism spectrum disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have linked increased ROS levels with neurodevelopmental conditions such as schizophrenia, bipolar and autism spectrum disorders (Do et al., 2015; Steullet et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Do et al., 2015; Steullet et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "6a65d47a-bb4d-4bb4-9e69-108ea4bcefff",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C20",
+      "claim": "The brain is the most energy demanding organ.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain is arguably the most energy demanding organ and mitochondrial oxidative phosphorylation is a major source of ROS (Attwell and Laughlin, 2001; Hallermann et al., 2012; Zhu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Attwell and Laughlin, 2001; Hallermann et al., 2012; Zhu et al., 2012) and represents established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "5d174363-6dc2-4138-ade0-61004a2f37dd",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C21",
+      "claim": "Mitochondrial oxidative phosphorylation is a major source of ROS.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain is arguably the most energy demanding organ and mitochondrial oxidative phosphorylation is a major source of ROS (Attwell and Laughlin, 2001; Hallermann et al., 2012; Zhu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Attwell and Laughlin, 2001; Hallermann et al., 2012; Zhu et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "4dda6f77-0cd7-421a-97ba-5268530f88a7",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C22",
+      "claim": "Rearing larvae at higher ambient temperatures results in NMJs having more boutons than controls by the third instar wandering stage, 100 hr after larval hatching (ALH).",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to reproduce and extend these findings: rearing larvae at higher ambient temperatures results in NMJs having more boutons than controls by the third instar wandering stage, 100 hr after larval hatching (ALH) (grey data in Figure 1B\u2013C, compare 25\u00b0C with 29\u00b0C and 32\u00b0C conditions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 1B-C comparing bouton numbers at different temperatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "d43f19da-e437-4a20-bf06-398a5c807e43",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C23",
+      "claim": "Expression of dTrpA1 in neurons is a well established method for temperature controlled neuronal overactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of dTrpA1 in neurons is a well established method for temperature controlled neuronal overactivation (Hamada et al., 2008; Owald et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Hamada et al., 2008; Owald et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "1ae7c636-76b4-4a22-bf48-86b42b08cd3e",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C24",
+      "claim": "For larval motoneurons, dTrpA1 is activated above 24\u00b0C, at 25\u00b0C leading to action potential firing frequencies of 9\u201312 Hz (moderate activation) and 22\u201330 Hz at 27\u00b0C (stronger activation).",
+      "claim_type": "EXPLICIT",
+      "source": "For larval motoneurons in particular, Pulver and colleagues demonstrated that dTrpA1 is activated above 24\u00b0C, at 25\u00b0C leading to action potential firing frequencies of 9\u201312 Hz (moderate activation) and 22\u201330 Hz at 27\u00b0C (stronger activation) (Pulver et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Pulver et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "e6fdafc9-e80b-47a9-b70b-48915f160cb8",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C25",
+      "claim": "Larval motoneurons are thought to operate at approximately 42 Hz during muscle contraction cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "These activation levels are within the physiological range of larval motoneurons, thought to operate at approximately 42 Hz during muscle contraction cycles (Chouhan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Chouhan et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "e2129475-cc16-4871-87da-b75cd5ed7803",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C26",
+      "claim": "Cell-specific thermogenetic dTrpA1 activation of single motoneurons led to titratable increases in bouton number at presynaptic NMJs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the systemic manipulations, we found that cell-specific thermogenetic dTrpA1 activation of single motoneurons also led to titratable increases in bouton number at presynaptic NMJs (blue data in Figure 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "fb6c280e-b381-4c78-ae5c-8b18cfbcd405",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C27",
+      "claim": "A moderate increase in activity, for example by rearing larvae at 29\u00b0C, causes both more boutons and also more active zones to be formed, potentiating transmission at the NMJ.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously published, a moderate increase in activity, for example by rearing larvae at 29\u00b0C, causes both more boutons and also more active zones to be formed, potentiating transmission at the NMJ (Sigrist et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Sigrist et al., 2003) and data in Figure 1D,E.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "ad8e2450-e823-463d-bc5a-d6674f9b596a",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C28",
+      "claim": "Further increases in network activity, as effected by rearing larvae at 32\u00b0C or by cell-specific dTrpA1-mediated motoneuron activation at increasing temperatures led to progressive active zone reductions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, further increases in network activity, as effected by rearing larvae at 32\u00b0C or by cell-specific dTrpA1-mediated motoneuron activation at increasing temperatures led to progressive active zone reductions (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "c52ceb63-82f3-475d-8c69-0362a85537ab",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C29",
+      "claim": "The size of the aCC postsynaptic dendritic arbor decreased with rising levels of temperature-gated dTrpA1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphometric analysis revealed that the size of the aCC postsynaptic dendritic arbor decreased with rising levels of temperature-gated dTrpA1 activity (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative morphometric data shown in Figure 1F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "d4afe52e-2d08-4911-b891-f65683aad80e",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C30",
+      "claim": "Dendritic length of aCC and RP2 motoneurons correlates with input synapse number and synaptic drive.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others previously showed that dendritic length of these neurons correlates with input synapse number and synaptic drive (Schneider-Mizell et al., 2016; Zwart et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Schneider-Mizell et al., 2016; Zwart et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "71b9dcb1-e2ad-4d76-a4cc-b7610af8ae11",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C31",
+      "claim": "In vivo dTrpA1-mediated overactivation of Drosophila larval motoneurons leads to increased mitochondrial ROS at presynaptic NMJs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that in vivo dTrpA1-mediated overactivation of Drosophila larval motoneurons leads to increased mitochdondrial ROS at presynaptic NMJs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ratiometric ROS reporter data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "5ab2c8f5-88a9-4d2b-bf12-0e599697a0ac",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C32",
+      "claim": "There is a clear trend of increasing temperature and dTrpA1-mediated activation resulting in progressively greater mean oxidation levels of the mito-roGFP2-Orp1 ROS sensor in mitochondria at the NMJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification shows a clear trend of increasing temperature and dTrpA1-mediated activation resulting in progressively greater mean oxidation levels of this ROS sensor in mitochondria at the NMJ (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from the ratiometric ROS reporter shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "408dbb14-c20b-4d85-bd96-d47c2b8d0f71",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C33",
+      "claim": "Co-expression of UAS-Catalase with UAS-dTrpA1 significantly counteracted changes in bouton and active zone number otherwise caused by dTrpA1-mediated neuronal overactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, co-expression of UAS-Catalase with UAS-dTrpA1 significantly counteracted changes in bouton and active zone number otherwise caused by dTrpA1-mediated neuronal overactivation (25\u00b0C) (Figures 2B and 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figures 2B and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "d231c6d4-be17-4ae9-9fd4-03ef432cb70d",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C34",
+      "claim": "Catalase co-expression rescued dendritic arbor size changes caused by dTrpA1-mediated overactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, at the motoneuron input terminals in the CNS, Catalase co-expression rescued dendritic arbor size (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "21c1a876-e6e3-4104-8613-bdd818dc8a78",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C35",
+      "claim": "SOD2 co-expression enhanced the dTrpA1-mediated increase of bouton number at the NMJ, presumably by potentiating conversion of activity-generated increase of O2- into H2O2.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, SOD2 co-expression enhanced the dTrpA1-mediated increase of bouton number at the NMJ, presumably by potentiating conversion of activity-generated increase of O2- into H2O2 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 2B. The mechanism is speculative (indicated by 'presumably').",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "db0e5db5-8c6e-442f-8cdd-50cceb6ab18e",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C36",
+      "claim": "Cell-specific RNAi knock down of any one of three endogenous ROS scavengers, SOD1, SOD2 or Catalase, led to NMJs with increased bouton number.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, cell-specific RNAi knock down of any one of three endogenous ROS scavengers, SOD1, SOD2 or Catalase, led to NMJs with increased bouton number, in agreement with a prior study by Milton et al. (2011), who had demonstrated oxidative stress causing NMJ growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 2B and citation to prior literature (Milton et al., 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "7fb68040-0f1a-468d-850a-07db8637b57a",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C37",
+      "claim": "DJ-1 codes for a highly conserved, ubiquitously expressed redox-sensitive protein, that protects against oxidative stress and regulates mitochondrial function.",
+      "claim_type": "EXPLICIT",
+      "source": "DJ-1 codes for a highly conserved, ubiquitously expressed redox-sensitive protein, that protects against oxidative stress and regulates mitochondrial function (Ariga et al., 2013; Nagakubo et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Ariga et al., 2013; Nagakubo et al., 1997).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "7bc7af7a-2af9-449c-93df-4d0703112845",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C38",
+      "claim": "A mutant allele of DJ-1 is linked to a rare form of familial Parkinsonism.",
+      "claim_type": "EXPLICIT",
+      "source": "A mutant allele is also linked to a rare form of familial Parkinsonism (Bonifati et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Bonifati et al., 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "18f49bc0-78a0-4796-bdb1-e4e8700cf90e",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C39",
+      "claim": "DJ-1 null mutants are viable without any conspicuous defects.",
+      "claim_type": "EXPLICIT",
+      "source": "DJ-1 null mutants are viable without any conspicuous defects and adult flies have been reported to have increased sensitivity to oxidative stress, for example as induced by exposure to paraquat or H2O2 (Meulener et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Meulener et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "d636166d-07ce-432b-ae44-9ed51e202bcc",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C40",
+      "claim": "Adult DJ-1 null mutant flies have increased sensitivity to oxidative stress, for example as induced by exposure to paraquat or H2O2.",
+      "claim_type": "EXPLICIT",
+      "source": "DJ-1 null mutants are viable without any conspicuous defects and adult flies have been reported to have increased sensitivity to oxidative stress, for example as induced by exposure to paraquat or H2O2 (Meulener et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Meulener et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "165517d2-9d14-477b-b459-9f9bd4a9023a",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C41",
+      "claim": "DJ-1\u03b2 null mutant (DJ-1\u03b2\u039493) larvae develop normally, indistinguishable from wild type controls, and have structurally normal NMJs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that DJ-1\u03b2 null mutant (DJ-1\u03b2\u039493) larvae develop normally, indistinguishable from wild type controls, and have structurally normal NMJs (Figure 3A and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "16628bbf-6a62-481b-8fca-5d3c3a67a16e",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C42",
+      "claim": "In larvae homozygous for the DJ-1\u03b2\u039493 null mutation, NMJs fail to respond to elevated ROS levels and do not generate additional boutons when feeding 10 mM paraquat or 10 mM diethyl maleate (DEM).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in larvae homozygous for the DJ-1\u03b2\u039493 null mutation, NMJs fail to respond to elevated ROS levels and do not generate additional boutons, as typical for controls when feeding 10 mM paraquat, which causes elevated O2- release from mitochondrial complex 1, or 10 mM diethyl maleate (DEM), which inactivates the ROS scavenger glutathione (Milton et al., 2011) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 3A and citation to prior literature (Milton et al., 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "a0875326-cd61-4fd1-8220-06db213c4f11",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C43",
+      "claim": "Loss of DJ-1\u03b2 significantly rescues NMJ bouton addition phenotypes induced by targeted expression of the ROS generator Duox in aCC and RP2 motoneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, loss of DJ-1\u03b2 also significantly rescues NMJ bouton addition phenotypes induced by targeted expression of the ROS generator Duox in aCC and RP2 motoneurons, or their dTrpA1-mediated overactivation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "4ef37d9b-2ece-4f85-8cfa-e8e69a489250",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C44",
+      "claim": "Loss of DJ-1\u03b2 significantly rescues NMJ bouton addition phenotypes induced by dTrpA1-mediated overactivation of aCC and RP2 motoneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, loss of DJ-1\u03b2 also significantly rescues NMJ bouton addition phenotypes induced by targeted expression of the ROS generator Duox in aCC and RP2 motoneurons, or their dTrpA1-mediated overactivation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "98268cda-c9c6-44a5-8d58-1d721ab00af5",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C45",
+      "claim": "DJ-1\u03b2\u039493 mutant larvae failed to produce the presynaptic bouton and active zone addition that result from raising larvae at 29\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "DJ-1\u03b2\u039493 mutant larvae also failed to produce the presynaptic bouton and active zone addition that result from raising larvae at 29\u00b0C (Sigrist et al., 2003) (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 3\u2014figure supplement 2 and citation to prior literature (Sigrist et al., 2003).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "dd4dcd55-ec84-410d-a039-8aed022d7701",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C46",
+      "claim": "Neuronal UAS-DJ-1\u03b2 miss-expression in a DJ-1\u03b2 null-mutant background proved sufficient to re-establish sensitivity to DEM.",
+      "claim_type": "EXPLICIT",
+      "source": "The neuronal requirement for DJ-1\u03b2 was further tested via rescue experiments where neuronal UAS-DJ-1\u03b2 miss-expression in a DJ-1\u03b2 null-mutant background proved sufficient to re-establish sensitivity to DEM (see Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "a28711ad-a8ff-4698-8716-a27743b76d10",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C47",
+      "claim": "DJ-1 is known to form dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "DJ-1 is known to form dimers (Lin et al., 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Lin et al., 2012a).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "21112f44-0bd3-4b0a-8cbe-af990a2593b4",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C48",
+      "claim": "Expression of DJ-1\u03b2C104A abrogated ROS-induced (following DEM feeding) as well as dTrpA1 activity-mediated NMJ structural adjustment, both with respect to bouton number and active zone number.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of DJ-1\u03b2C104A abrogated ROS-induced (following DEM feeding) as well as dTrpA1 activity-mediated NMJ structural adjustment, both with respect to bouton number (Figure 3A) and active zone number (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "7cf2eb5c-a69c-434f-bbca-1cfb41219455",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C49",
+      "claim": "Halving the copy number of DJ-1\u03b2 (in DJ-1\u03b2\u039493/+ heterozygotes) was sufficient to significantly suppress dTrpA1-mediated changes to dendritic arbor size.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking at activity-dependent structural plasticity of the postsynaptic dendritic arbor, we found this is sensitive to DJ-1\u03b2 levels; halving the copy number of DJ-1\u03b2 (in DJ-1\u03b2\u039493/+ heterozygotes) was sufficient to significantly suppress dTrpA1-mediated changes to dendritic arbor size (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "309ddccc-fdee-4a5e-8dab-fd3d88728693",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C50",
+      "claim": "DJ-1 is a known redox-regulated inhibitor of PTEN and as such disinhibits PI3Kinase signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "DJ-1 is a known redox-regulated inhibitor of PTEN and as such disinhibits PI3Kinase signaling (Kim et al., 2005; Kim et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Kim et al., 2005; Kim et al., 2009b).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "893b555b-edb7-4ca6-999a-a5ceb5af4544",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C51",
+      "claim": "PI3Kinase was previously shown to regulate bouton and active zone number during NMJ development.",
+      "claim_type": "EXPLICIT",
+      "source": "PI3Kinase was previously shown to regulate bouton and active zone number during NMJ development (Jord\u00e1n-\u00c1lvarez et al., 2012; Mart\u00edn-Pe\u00f1a et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Jord\u00e1n-\u00c1lvarez et al., 2012; Mart\u00edn-Pe\u00f1a et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "b2f82145-5b05-4679-9cc4-1b2c773193ec",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C52",
+      "claim": "In controls bouton number increases linearly with exposure to increasing DEM concentrations, peaking at 10 mM DEM.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in controls bouton number increases linearly with exposure to increasing DEM concentrations, peaking at 10 mM DEM (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative dose-response data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "d55ec8dc-eab6-4174-bc41-b81c79190d11",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C53",
+      "claim": "Removal of one copy of DJ-1\u03b2 (DJ-1\u03b2\u039493/+) was sufficient to suppress DEM-induced increases in bouton number.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of one copy of DJ-1\u03b2 (DJ-1\u03b2\u039493/+) was sufficient to suppress these DEM-induced increases in bouton number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative dose-response data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "1808957e-31ec-4a94-8b20-627edf358751",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C54",
+      "claim": "Removing one copy of the PI3Kinase antagonist PTEN (PTENCO76/+) resulted in increased sensitivity to DEM, as indicated by the left-shifted dose response curve.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, removing one copy of the PI3Kinase antagonist PTEN (PTENCO76/+) resulted in increased sensitivity to DEM, as indicated by the left-shifted dose response curve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative dose-response data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "3ddc5368-8673-4d8c-927f-79547b873d77",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C55",
+      "claim": "Oxidation of DJ-1 leads to increased binding of DJ-1\u03b2 to PTEN, thus effecting PTEN inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "These genetic interactions support previous studies (Kim et al., 2005) and complement biochemical data that showed increased binding of DJ-1\u03b2 to PTEN following oxidation by H2O2, thus effecting PTEN inhibition (Kim et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Kim et al., 2005; Kim et al., 2009b).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "02a30ee1-7cfc-4f82-9c88-53b65bcd3f1c",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C56",
+      "claim": "Targeted knock-down of endogenous PTEN in aCC and RP2 motoneurons sensitized these to ROS, exacerbating the DEM-induced bouton addition phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted knock-down of endogenous PTEN in aCC and RP2 motoneurons sensitized these to ROS, exacerbating the DEM-induced bouton addition phenotype (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "322db003-ca90-4418-bf5e-98cfd2df0d0e",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C57",
+      "claim": "Over-expression of PTEN or mis-expression of a dominant negative form of PI3Kinase significantly reduced NMJ elaboration normally caused by DEM exposure or dTrpA1-mediated overactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, over-expression of PTEN or mis-expression of a dominant negative form of PI3Kinase significantly reduced NMJ elaboration normally caused by DEM exposure or dTrpA1-mediated overactivation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "a70229f7-36fd-44d2-918c-0e600b0cad7a",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C58",
+      "claim": "In Oregon-R wild type larvae, evoked excitatory junction potentials (eEJPs) are 18 \u00b1 2 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "In Oregon-R wild type larvae we recorded evoked excitatory junction potentials (eEJPs) of 18 \u00b1 2 mV (Figure 5A,D) and miniature excitatory junction potentials (mEJPs) indicative of spontaneous vesicle fusion of 1 mV (Figure 5B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological recordings shown in Figure 5A,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "0ff7cfc5-c7f9-4781-80c0-788f9edfb060",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C59",
+      "claim": "In Oregon-R wild type larvae, miniature excitatory junction potentials (mEJPs) indicative of spontaneous vesicle fusion are 1 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "In Oregon-R wild type larvae we recorded evoked excitatory junction potentials (eEJPs) of 18 \u00b1 2 mV (Figure 5A,D) and miniature excitatory junction potentials (mEJPs) indicative of spontaneous vesicle fusion of 1 mV (Figure 5B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological recordings shown in Figure 5B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "6217c62c-5f3e-4c80-a511-b6e14aa4e4e1",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C60",
+      "claim": "On average each action potential triggers fusion of 18 vesicles at the DA1 NMJ (quantal content).",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, on average each action potential triggers fusion of 18 vesicles at this NMJ (quantal content) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the eEJP and mEJP measurements and is supported by data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "577fc01d-a286-4ba8-865b-8925710e6f49",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C61",
+      "claim": "Following dTrpA1-mediated overactivation (rearing larvae at 25\u00b0C and 27\u00b0C) evoked NMJ transmission at the muscle DA1 NMJ remains intact and homeostatically balanced.",
+      "claim_type": "EXPLICIT",
+      "source": "Following dTrpA1-mediated overactivation (rearing larvae at 25\u00b0C and 27\u00b0C) evoked NMJ transmission at the muscle DA1 NMJ remains intact and homeostatically balanced (Figure 5A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological recordings shown in Figure 5A,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "8b18d9c9-1a07-42b5-8322-1e8bf28b9977",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C62",
+      "claim": "Co-expression of Catalase with dTrpA1-mediated overactivation leads to reduction of eEJP amplitude to 7\u20139 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "However, co-expression of Catalase with dTrpA1-mediated overactivation leads to reduction of eEJP amplitude to 7\u20139 mV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological recordings shown in Figure 5A,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "e716f02f-052e-4400-a845-7004e0a161f9",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C63",
+      "claim": "ROS are required for mechanisms that homeostatically maintain eEJP amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that ROS are required for mechanisms that homeostatically maintain eEJP amplitude (Figure 5A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that Catalase co-expression reduces eEJP amplitude under overactivation conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "9bf761b6-1a00-4d65-ac41-097e449edd18",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C64",
+      "claim": "The amplitude of spontaneous vesicle fusion events (mEJP) adjusts inversely with progressively stronger overactivation of motoneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the amplitude of spontaneous vesicle fusion events (mEJP) adjusts inversely with progressively stronger overactivation of motoneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological recordings shown in Figure 5B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "2f0315bb-2203-421f-86fc-8b6b27450846",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C65",
+      "claim": "Wild type Oregon-R larvae reared at an elevated temperature (27\u00b0C versus controls reared at 25\u00b0C) show reduced mEJP amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with others (Ueda and Wu, 2015; Yeates et al., 2017) we also recorded similarly reduced mEJP amplitudes in wild type Oregon-R larvae that had been reared at an elevated temperature (27\u00b0C versus controls reared at 25\u00b0C) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological recordings shown in Figure 5B and citations to prior literature (Ueda and Wu, 2015; Yeates et al., 2017).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "119bdd86-cd51-49a2-a024-6d0aea7f1325",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C66",
+      "claim": "Co-expression of DJ-1\u03b2C104A abrogates the activity-dependent reduction of mEJP amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of DJ-1\u03b2C104A abrogates this activity-dependent reduction of mEJP amplitude (Figure 5B,D), while Catalase co-expression has no effect on mEJP amplitude.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological recordings shown in Figure 5B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "a6a41505-3fb0-4a22-a13a-b9929c02e4c6",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C67",
+      "claim": "Catalase co-expression has no effect on mEJP amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of DJ-1\u03b2C104A abrogates this activity-dependent reduction of mEJP amplitude (Figure 5B,D), while Catalase co-expression has no effect on mEJP amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological recordings shown in Figure 5B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "6ae82807-dd2f-42d7-9faf-fca5d297f3ad",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C68",
+      "claim": "dTrpA1-mediated motoneuron over-activation at 27\u00b0C leads to significantly increased quantal content.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of quantal content (the mean number of vesicles releasing transmitter per action potential, calculated as the ratio of eEJP/mEJP amplitudes) showed that dTrpA1-mediated motoneuron over-activation at 27\u00b0C leads to significantly increased quantal content, and that this is brought back to control levels with co-expression of the H2O2 scavenger Catalase, as might be expected from the reduced eEJP amplitudes under such conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological recordings and calculations shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "a7d780ff-2be1-49b7-8a78-5084c0c50cc5",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C69",
+      "claim": "Increased quantal content from dTrpA1-mediated overactivation is brought back to control levels with co-expression of the H2O2 scavenger Catalase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of quantal content (the mean number of vesicles releasing transmitter per action potential, calculated as the ratio of eEJP/mEJP amplitudes) showed that dTrpA1-mediated motoneuron over-activation at 27\u00b0C leads to significantly increased quantal content, and that this is brought back to control levels with co-expression of the H2O2 scavenger Catalase, as might be expected from the reduced eEJP amplitudes under such conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological recordings and calculations shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "1cc8321a-bad1-4774-8b52-86862d37d2f1",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C70",
+      "claim": "Crawling speed increases upon acutely shifting mid-3rd instar larvae (72 hr ALH) to higher ambient temperatures (e.g., from 25\u00b0C to 29\u00b0C or 32\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous studies (Sigrist et al., 2003; Zhong and Wu, 2004), we found that crawling speed increases upon acutely shifting mid-3rd instar larvae (72 hr ALH) to higher ambient temperatures (e.g., from 25\u00b0C to 29\u00b0C or 32\u00b0C) (blue data in Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 6A and citations to prior literature (Sigrist et al., 2003; Zhong and Wu, 2004).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "f020b3de-e71b-46f8-bf81-d8a63bd24b79",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C71",
+      "claim": "Following prolonged exposure to an elevated temperature, achieved by rearing larvae at 29\u00b0C or 32\u00b0C, larvae crawled at the same speed characteristic of controls reared at 25\u00b0C (average of 0.65\u20130.72 mm/second).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, following prolonged exposure to an elevated temperature, achieved by rearing larvae at 29\u00b0C or 32\u00b0C, larvae crawled at the same speed characteristic of controls reared at 25\u00b0C (average of 0.65\u20130.72 mm/second; grey horizontal dotted line in Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "29bcea36-c912-4ac8-b26e-89207688be5f",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C72",
+      "claim": "Following a downward temperature shift, 32\u00b0C-adjusted larvae crawled significantly slower than 29\u00b0C-adjusted animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, following this downward-shift 32\u00b0C-adjusted larvae crawled significantly slower than 29\u00b0C-adjusted animals, suggesting the degree of neuronal adjustment is proportional to the level of temperature-induced overactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "51eacbbf-9788-450e-9088-2ccbd9926afc",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C73",
+      "claim": "The degree of neuronal adjustment is proportional to the level of temperature-induced overactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, following this downward-shift 32\u00b0C-adjusted larvae crawled significantly slower than 29\u00b0C-adjusted animals, suggesting the degree of neuronal adjustment is proportional to the level of temperature-induced overactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the behavioral data showing differential responses to temperature downshifts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "277fc909-52fe-4429-abc0-21cbe25e9c77",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C74",
+      "claim": "Prolonged overactivation targeted to motoneurons (dVGlut-GAL4; UAS-dTrpA1) leads to adaptation with reduced crawling speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Prolonged overactivation targeted to motoneurons (dVGlut-GAL4; UAS-dTrpA1) also leads to adaptation with reduced crawling speed (dTRPA1 channels open at 27\u00b0C, closed at 22\u00b0C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "c9d7e836-a600-4728-b3f2-9bcfd208464f",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C75",
+      "claim": "Larvae with expression of UAS-DJ-1\u03b2C104A targeted to motoneurons (dVGlut-GAL4) are unable to adapt motor network output (crawling speed) to elevated rearing temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Larvae with expression of UAS-DJ-1\u03b2C104A targeted to motoneurons (dVGlut-GAL4) are unable to adapt motor network output (crawling speed) to elevated rearing temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "db216f3a-c4c7-4b19-9b18-1088f7c8fa96",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C76",
+      "claim": "Expression of non-oxidizable DJ-1\u03b2C104A in motoneurons per se did not alter larval crawling speed at the control temperature of 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of non-oxidizable DJ-1\u03b2C104A in motoneurons per se did not alter larval crawling speed at the control temperature of 25\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "fd706667-58e9-4e75-b933-0efecb0186bc",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C77",
+      "claim": "Activity-induced structural plasticity, implemented through the ROS sensor DJ-1\u03b2, is necessary for activity-directed homeostatic adjustment of larval locomotor behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that activity-induced structural plasticity, implemented through the ROS sensor DJ-1\u03b2, is necessary for activity-directed homeostatic adjustment of larval locomotor behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the behavioral data showing that blocking DJ-1\u03b2 oxidation prevents homeostatic adjustment of crawling speed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "a3b4ad0a-5869-4ba4-b36d-e665d0d4fbde",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C78",
+      "claim": "Transmission at NMJs in Drosophila is characteristically robust due to several homeostatic regulatory mechanisms working toward maintaining constancy of eEJPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission at NMJs in Drosophila is characteristically robust due to several homeostatic regulatory mechanisms working toward maintaining constancy of eEJPs (for reviews see Frank, 2014; Frank et al., 2013; Harris and Littleton, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles (Frank, 2014; Frank et al., 2013; Harris and Littleton, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "931913d1-50d1-49db-a623-6669ad3cb106",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C79",
+      "claim": "Components of the presynaptic release machinery, including SNAP25, are thought to be directly modulated by ROS.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context it is interesting that components of the presynaptic release machinery, including SNAP25, are thought to be directly modulated by ROS (Giniatullin et al., 2006), while others, such as Complexin, might be indirectly affected, for example via ROS-mediated inhibition of phosphatases leading disinhibition of kinase activity (Cho et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Giniatullin et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "236a05b7-a846-44d4-9eaa-1ceb37adb0e2",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C80",
+      "claim": "Complexin might be indirectly affected by ROS, for example via ROS-mediated inhibition of phosphatases leading to disinhibition of kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context it is interesting that components of the presynaptic release machinery, including SNAP25, are thought to be directly modulated by ROS (Giniatullin et al., 2006), while others, such as Complexin, might be indirectly affected, for example via ROS-mediated inhibition of phosphatases leading disinhibition of kinase activity (Cho et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Cho et al., 2015) and involves speculative reasoning about mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "ae6352a8-ff70-4c48-a643-65da99b65216",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C81",
+      "claim": "NADPH oxidases have been implicated during nervous system development in the regulation of axon growth and synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to mitochondria, other sources of ROS include several oxidases, notably NADPH oxidases. These have been implicated during nervous system development in the regulation of axon growth and synaptic plasticity (Kishida et al., 2006; Munnamalai and Suter, 2009; Munnamalai et al., 2014; Olgu\u00edn-Albuerne and Mor\u00e1n, 2015; Serrano et al., 2003; Tejada-Simon et al., 2005; Wilson et al., 2016; Wilson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Kishida et al., 2006; Munnamalai and Suter, 2009; Munnamalai et al., 2014; Olgu\u00edn-Albuerne and Mor\u00e1n, 2015; Serrano et al., 2003; Tejada-Simon et al., 2005; Wilson et al., 2016; Wilson et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "8376524d-6b1c-4a0a-b6b4-e39f8047b8bd",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C82",
+      "claim": "NADPH oxidases can be regulated by NMDA receptor stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "NADPH oxidases can be regulated by NMDA receptor stimulation (Brennan et al., 2009) and activity-associated pathways, including calcium, Protein kinases C and A and calcium/calmodulin-dependent kinase II (CamKII) (B\u00e1nfi et al., 2004; Massaad and Klann, 2011; Pandey et al., 2011; Sorce et al., 2017; Tirone and Cox, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Brennan et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "05713dcb-01f4-459f-95f0-566917115c53",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C83",
+      "claim": "NADPH oxidases can be regulated by activity-associated pathways, including calcium, Protein kinases C and A and calcium/calmodulin-dependent kinase II (CamKII).",
+      "claim_type": "EXPLICIT",
+      "source": "NADPH oxidases can be regulated by NMDA receptor stimulation (Brennan et al., 2009) and activity-associated pathways, including calcium, Protein kinases C and A and calcium/calmodulin-dependent kinase II (CamKII) (B\u00e1nfi et al., 2004; Massaad and Klann, 2011; Pandey et al., 2011; Sorce et al., 2017; Tirone and Cox, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (B\u00e1nfi et al., 2004; Massaad and Klann, 2011; Pandey et al., 2011; Sorce et al., 2017; Tirone and Cox, 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "2df41156-6abb-46e7-ac8a-8a0a5046b6e9",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C84",
+      "claim": "ROS modulate BMP signaling in cultured sympathetic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, ROS modulate BMP signaling in cultured sympathetic neurons (Chandrasekaran et al., 2015) and Wnt pathways in non-neuronal cells (Funato et al., 2006; Love et al., 2013; Rharass et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Chandrasekaran et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "e84323cc-51d6-4c1f-8170-2f3516c7416e",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C85",
+      "claim": "ROS modulate Wnt pathways in non-neuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, ROS modulate BMP signaling in cultured sympathetic neurons (Chandrasekaran et al., 2015) and Wnt pathways in non-neuronal cells (Funato et al., 2006; Love et al., 2013; Rharass et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Funato et al., 2006; Love et al., 2013; Rharass et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "18e31292-0210-45de-83b9-448f0659a26e",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C86",
+      "claim": "ROS are well known regulators of kinase pathways via oxidation-mediated inhibition of phosphatases.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemically, ROS are well known regulators of kinase pathways via oxidation-mediated inhibition of phosphatases (Finkel and Holbrook, 2000; Tonks, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Finkel and Holbrook, 2000; Tonks, 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "f10a6b54-71ec-4ef7-895c-70bd93f6f437",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C87",
+      "claim": "Redox modifications regulate the activity of the immediate early genes Jun and Fos, which are required for LTP in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Redox modifications also regulate the activity of the immediate early genes Jun and Fos, which are required for LTP in vertebrates, and in Drosophila for activity-dependent plasticity of motoneurons, both at the NMJ and central dendrites (Hartwig et al., 2008; Jindra et al., 2004; Loebrich and Nedivi, 2009; Milton and Sweeney, 2012; Milton et al., 2011; Sanyal et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Hartwig et al., 2008; Jindra et al., 2004; Loebrich and Nedivi, 2009; Milton and Sweeney, 2012; Milton et al., 2011; Sanyal et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "6814a551-261b-4844-aee7-006cd4573f21",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C88",
+      "claim": "Jun and Fos are required in Drosophila for activity-dependent plasticity of motoneurons, both at the NMJ and central dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Redox modifications also regulate the activity of the immediate early genes Jun and Fos, which are required for LTP in vertebrates, and in Drosophila for activity-dependent plasticity of motoneurons, both at the NMJ and central dendrites (Hartwig et al., 2008; Jindra et al., 2004; Loebrich and Nedivi, 2009; Milton and Sweeney, 2012; Milton et al., 2011; Sanyal et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Hartwig et al., 2008; Jindra et al., 2004; Loebrich and Nedivi, 2009; Milton and Sweeney, 2012; Milton et al., 2011; Sanyal et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "29564ad4-fd58-4996-937e-697443a16d62",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C89",
+      "claim": "ROS may provide neuronal activity-regulated modulation of multiple canonical synaptic plasticity pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore hypothesize that ROS may provide neuronal activity-regulated modulation of multiple canonical synaptic plasticity pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings and prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "ea2cbeb8-3142-4259-88a2-2a7c8ae27001",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C90",
+      "claim": "No functional significance of bouton number and size has been documented and changes in these bouton parameters are not predictive of changes in synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no functional significance of bouton number and size has been documented and changes in these bouton parameters are not predictive of changes in synaptic transmission (Campbell and Ganetzky, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Campbell and Ganetzky, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "4b37db7d-9b56-4a8c-9ee8-5825b51e6532",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C91",
+      "claim": "Reduction of active zones at the NMJ by increased activation was previously reported in photoreceptor terminals of the Drosophila adult visual system.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction of active zones, as we observed at the NMJ, and of Brp levels by increased activation was previously also reported in photoreceptor terminals of the Drosophila adult visual system (Sugie et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Sugie et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "aa354d3b-4867-453a-97b3-b3477e9b8989",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C92",
+      "claim": "Active zone cytomatrix composition can impact on transmission properties, such as vesicle release probability.",
+      "claim_type": "EXPLICIT",
+      "source": "At a finer level of resolution it will be interesting to determine how these activity-ROS-mediated structural changes might change active zone cytomatrix composition, which can impact on transmission properties, such as vesicle release probability (Davydova et al., 2014; Lazarevic et al., 2011; Matz et al., 2010; Peled et al., 2014; Weyhersm\u00fcller et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Davydova et al., 2014; Lazarevic et al., 2011; Matz et al., 2010; Peled et al., 2014; Weyhersm\u00fcller et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "fc201a08-f640-4451-9b80-c3fadc3fa936",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C93",
+      "claim": "The NMJ is a highly specialized synapse with a large safety factor and intricate mechanisms that ensure constancy of evoked transmission in essentially digital format.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike many central synapses that facilitate graded analogue computation, the NMJ is a highly specialized synapse with a large safety factor and intricate mechanisms that ensure constancy of evoked transmission in essentially digital format (Frank et al., 2013; Marrus and DiAntonio, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Frank et al., 2013; Marrus and DiAntonio, 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "b9265e20-b4d4-446b-a9eb-ce0903e6e93b",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C94",
+      "claim": "DJ-1 has been shown to be oxidized by H2O2 at the conserved cysteine residue C106 (C104 in Drosophila).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this idea, DJ-1\u03b2 has been shown to be oxidized by H2O2 at the conserved cysteine residue C106 (C104 in Drosophila) (Lin et al., 2012a; Meulener et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Lin et al., 2012a; Meulener et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "9de74e65-86f9-430f-89da-121e5c02ca56",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C95",
+      "claim": "Oxidation of DJ-1 leads to translocation from the cytoplasm to the mitochondrial matrix, aiding protection against oxidative damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxidation of DJ-1 leads to changes in DJ-1 function, including translocation from the cytoplasm to the mitochondrial matrix, aiding protection against oxidative damage (Blackinton et al., 2009; Canet-Avil\u00e9s et al., 2004; Waak et al., 2009) and maintenance of ATP levels (Cal\u00ec et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Blackinton et al., 2009; Canet-Avil\u00e9s et al., 2004; Waak et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "f76c3ed5-8d59-4233-9b3b-b6ea7dd7648f",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C96",
+      "claim": "Oxidation of DJ-1 leads to maintenance of ATP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxidation of DJ-1 leads to changes in DJ-1 function, including translocation from the cytoplasm to the mitochondrial matrix, aiding protection against oxidative damage (Blackinton et al., 2009; Canet-Avil\u00e9s et al., 2004; Waak et al., 2009) and maintenance of ATP levels (Cal\u00ec et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Cal\u00ec et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "9d2f67bc-a241-452f-a659-ef312495d91a",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C97",
+      "claim": "Cell type-specific DJ-1\u03b2 levels, and associated DJ-1\u03b2 reducing mechanisms, could contribute to setting cell type-specific sensitivity thresholds to neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that DJ-1\u03b2 is critical to ROS sensing in neurons. They also predict that cell type-specific DJ-1\u03b2 levels, and associated DJ-1\u03b2 reducing mechanisms, could contribute to setting cell type-specific sensitivity thresholds to neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction made by the authors based on their findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "69c433e2-b739-4d28-b161-05fd66d2ec71",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C98",
+      "claim": "ROS buffering is comparatively low in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that ROS are important signals for homeostatic processes explains why ROS buffering is comparatively low in neurons (Bell et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Bell et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "5d23d126-0713-4b53-8350-4a432748efdd",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "claim_id": "C99",
+      "claim": "ROS dysregulation with age or under neurodegenerative conditions may interfere with neuronal adaptive adjustments and thereby contribute to network malfunction and synapse loss.",
+      "claim_type": "EXPLICIT",
+      "source": "This view also shines a new light on the potential impact of ROS dysregulation with age or under neurodegenerative conditions, potentially interfering with neuronal adaptive adjustments and thereby contributing to network malfunction and synapse loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation by the authors about the implications of their findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "36c3dca3-b589-40f8-874a-a19d332f9f20",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Neuronal activity regulates structural plasticity at both presynaptic NMJs and postsynaptic dendrites in Drosophila larval motoneurons. Temperature-induced systemic activation and cell-specific dTrpA1-mediated overactivation both lead to titratable increases in NMJ bouton number. Active zone numbers show a biphasic response: moderate activation (29\u00b0C) increases active zones, while stronger activation progressively reduces them. Dendritic arbor size decreases with increasing levels of dTrpA1-mediated overactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C26-C29 provide converging evidence from both systemic temperature manipulations and cell-specific dTrpA1 activation showing dose-dependent structural changes at synaptic terminals. The data in Figures 1B-G demonstrate quantitative relationships between activity levels and structural parameters at both pre- and postsynaptic sites, with appropriate controls and statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "3c066801-455b-4132-9e4f-45cb1d0c086c",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In vivo dTrpA1-mediated overactivation of Drosophila larval motoneurons leads to increased mitochondrial ROS at presynaptic NMJs. A ratiometric ROS reporter (mito-roGFP2-Orp1) shows progressively greater oxidation levels with increasing temperature and dTrpA1-mediated activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are supported by quantitative ratiometric imaging data in Figure 2A showing a clear dose-response relationship between activation level and mitochondrial ROS. The use of a validated ratiometric reporter provides robust evidence for activity-dependent ROS generation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "b87c8cfa-7218-4c62-9b6b-67835d6306b8",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ROS are necessary and sufficient for activity-dependent structural plasticity at synaptic terminals. Co-expression of Catalase (H2O2 scavenger) counteracts dTrpA1-induced changes in bouton number, active zone number, and dendritic arbor size. SOD2 co-expression enhances bouton addition, while knockdown of endogenous ROS scavengers (SOD1, SOD2, or Catalase) increases bouton number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 demonstrate both necessity (Catalase rescue) and sufficiency (scavenger knockdown) of ROS signaling for structural plasticity. The data in Figures 2B-C and 3B show consistent effects across multiple structural parameters with appropriate genetic controls. The SOD2 enhancement result (C35) provides additional mechanistic insight about H2O2 as the active species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "966f8017-04cf-4cd7-9679-be16a4c4763c",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DJ-1\u03b2 functions as a redox sensor in neurons that is required for ROS-induced and activity-dependent structural plasticity. DJ-1\u03b2 null mutants develop normally with structurally normal NMJs but fail to respond to elevated ROS (paraquat, DEM) or dTrpA1-mediated overactivation. Expression of non-oxidizable DJ-1\u03b2C104A blocks ROS-induced and activity-mediated structural adjustments. DJ-1\u03b2 dosage is critical, with heterozygotes showing suppressed responses to overactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C41-C46, C48-C49 provide comprehensive genetic evidence for DJ-1\u03b2 as a ROS sensor. The data include loss-of-function (null mutants), dominant-negative (C104A), rescue experiments, and dosage sensitivity analyses shown in Figure 3 and supplements. The convergence of multiple genetic approaches strongly supports DJ-1\u03b2's role as a redox sensor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "60d38924-71fd-435d-a4c1-ba4868e59790",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DJ-1\u03b2 regulates structural plasticity via modulation of the PTEN-PI3Kinase pathway. Genetic interaction experiments show that DJ-1\u03b2 and PTEN interact to regulate ROS-induced NMJ elaboration: DJ-1\u03b2 heterozygotes suppress DEM-induced bouton addition while PTEN heterozygotes enhance sensitivity to DEM. Cell-specific PTEN knockdown exacerbates ROS-induced phenotypes, while PTEN overexpression or dominant-negative PI3Kinase suppress them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C50-C54, C56-C57 demonstrate genetic interactions between DJ-1\u03b2 and the PTEN-PI3K pathway through dose-response curves (Figure 4A) and cell-specific manipulations (Figure 4B). The bidirectional genetic interactions and dose-dependent responses provide strong evidence for this pathway, though the authors appropriately note this is only part of the mechanism ('in part').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "13c81e8c-67f9-4d7c-b6c9-44435f660797",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ROS signaling is necessary for maintaining evoked synaptic transmission at the NMJ during overactivation. Under dTrpA1-mediated overactivation, eEJP amplitude remains homeostatically balanced despite structural changes. However, co-expression of Catalase with dTrpA1 reduces eEJP amplitude, indicating ROS are required for homeostatic maintenance. Overactivation increases quantal content, which is normalized by Catalase co-expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C58-C63, C68-C69 are supported by electrophysiological recordings in Figure 5A,C,D showing that ROS scavenging disrupts homeostatic maintenance of transmission. The measurements of eEJP, mEJP, and calculated quantal content provide quantitative evidence. However, the mechanism by which ROS maintain eEJP amplitude remains unclear and would benefit from further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "164a49ae-58c5-41d7-bc19-46b7f09e0394",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Activity-dependent regulation of spontaneous vesicle fusion (mEJP amplitude) requires DJ-1\u03b2 oxidation but not cytoplasmic Catalase. Overactivation reduces mEJP amplitude, and this reduction is blocked by non-oxidizable DJ-1\u03b2C104A but not affected by Catalase co-expression, indicating a distinct ROS-sensitive pathway from eEJP regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 demonstrate differential ROS sensitivity for mEJP versus eEJP regulation through electrophysiological recordings in Figure 5B,D. The dissociation between Catalase and DJ-1\u03b2C104A effects on mEJP suggests distinct subcellular ROS pools or pathways, though the mechanism remains to be elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "a0c9ba55-36e7-4e7c-8236-8a61b01dcd29",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ROS-mediated structural plasticity through DJ-1\u03b2 is necessary for homeostatic adjustment of motor network output. Larvae show acute increases in crawling speed with temperature upshifts but adapt to default speed with chronic exposure. Expression of non-oxidizable DJ-1\u03b2C104A in motoneurons prevents this homeostatic adaptation without affecting baseline crawling speed, demonstrating that activity-induced structural plasticity is required for behavioral homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C70-C77 link molecular and structural findings to behavioral output through crawling speed measurements in Figure 6. The experiments show both acute and chronic temperature effects, and demonstrate that blocking DJ-1\u03b2 oxidation specifically prevents adaptation without affecting baseline behavior. This provides strong evidence that ROS-DJ-1\u03b2-mediated structural plasticity is functionally relevant for network homeostasis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "01a1b16f-70ac-456d-8c31-7d1fc5460fb7",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ROS act as obligate signals required for neuronal activity-dependent structural plasticity of both pre- and postsynaptic terminals in Drosophila larval locomotor neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 represents the central conclusion of the manuscript and is supported by the convergence of multiple result groups above. The evidence includes: (1) activity increases ROS, (2) ROS manipulations affect structural plasticity, (3) DJ-1\u03b2 acts as a ROS sensor, (4) the PTEN-PI3K pathway mediates effects, and (5) these changes are functionally relevant for behavior. The term 'obligate' is justified by the necessity demonstrated through scavenging and genetic experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "158d6fc8-bfba-4046-8738-29882ae20cfb",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on ROS in the nervous system: ROS levels increase with aging and in neurodegeneration; mitochondria generate ROS as byproducts of respiration; ROS can damage cellular components but also function as signaling molecules; ROS regulate kinase pathways and transcription factors; prior work showed ROS involvement in LTP and NMJ structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C21 provide literature context supported by appropriate citations. These are established findings from prior work that motivate the current study. The claims accurately represent the cited literature and provide necessary background, though they are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "fd73a0fc-b9e1-4b3f-b466-fc6042d886f1",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Methodological validation: dTrpA1 is an established method for temperature-controlled neuronal activation in Drosophila, producing physiologically relevant firing frequencies (9-12 Hz at 25\u00b0C, 22-30 Hz at 27\u00b0C) within the normal operating range of larval motoneurons (~42 Hz). Dendritic length correlates with input synapse number and synaptic drive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25, C30 establish the validity of the experimental approach through citations to prior characterization studies. These methodological claims are well-supported by the cited literature and provide important context for interpreting the activity manipulations used throughout the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "0ace54fe-8cf8-4bbf-bd95-7209df65738b",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on DJ-1: DJ-1 is a conserved redox-sensitive protein that protects against oxidative stress, regulates mitochondrial function, and is linked to familial Parkinsonism. DJ-1 forms dimers and is oxidized at conserved cysteine C106 (C104 in Drosophila), leading to mitochondrial translocation and functional changes. Null mutants are viable but show increased oxidative stress sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40, C47, C94-C96 provide established background on DJ-1 from prior literature, appropriately cited. These claims contextualize why DJ-1\u03b2 was investigated as a candidate ROS sensor and support the rationale for the C104A mutation experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "2d8f0bd3-b84a-4cd0-aef9-5c27cb6cbeac",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior biochemical work showed that oxidation of DJ-1 by H2O2 increases binding to PTEN, effecting PTEN inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 cites prior biochemical studies demonstrating the DJ-1-PTEN interaction mechanism. This provides important mechanistic context for the genetic interaction experiments performed in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "e96c174f-e705-483b-bdf4-585028170f75",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on NMJ transmission: Drosophila NMJs have robust homeostatic mechanisms maintaining eEJP constancy. Bouton number and size changes are not predictive of transmission changes. Active zone reduction by activation was previously reported in photoreceptors. Active zone composition can affect release probability. The NMJ is a specialized synapse with high safety factor and digital transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78, C90-C93 provide context from prior literature about NMJ properties and plasticity. These are appropriately cited and help interpret the structural and functional findings. The acknowledgment that bouton number doesn't predict transmission (C90) is important for interpreting the structural data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "42e4b958-9491-40ce-998c-66f162d7f5a9",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Discussion of potential ROS signaling mechanisms: ROS may directly modulate presynaptic release machinery (SNAP25) or indirectly affect proteins like Complexin. NADPH oxidases are alternative ROS sources regulated by NMDA receptors and activity-associated pathways. ROS modulate BMP and Wnt signaling, regulate kinase pathways via phosphatase inhibition, and control immediate early genes (Jun/Fos) required for plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C88 discuss potential mechanisms and pathways through which ROS might act, appropriately citing prior literature. These provide context for interpreting the findings and suggest future directions, though they represent speculation about mechanisms not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "a8c2a7d0-2f2a-4fc6-b145-65234e4c7e11",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Speculative interpretations and predictions: ROS may provide activity-regulated modulation of multiple canonical plasticity pathways. Cell type-specific DJ-1\u03b2 levels could set sensitivity thresholds to neuronal activity. ROS dysregulation in aging or neurodegeneration may interfere with adaptive adjustments, contributing to network malfunction and synapse loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89, C97, C99 represent hypotheses and predictions based on the findings rather than directly tested conclusions. While these are reasonable interpretations supported by the data, they extend beyond what was experimentally demonstrated and would require additional experiments to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    },
+    {
+      "id": "aa3d2a7d-d1ef-4818-a5ab-d3cc154688ca",
+      "content_id": "1bd27c40-a7f7-4bc5-89a9-c02d1bbc37dc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "ROS buffering is comparatively low in neurons, which is explained by ROS serving as important signals for homeostatic processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 cites prior work showing low ROS buffering in neurons and provides a new interpretation based on the current findings. The interpretation is reasonable given the demonstrated signaling role of ROS, though it represents an inference rather than a directly tested hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:12.970443Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4dda6f77-0cd7-421a-97ba-5268530f88a7",
+      "result_id": "36c3dca3-b589-40f8-874a-a19d332f9f20"
+    },
+    {
+      "claim_id": "e2129475-cc16-4871-87da-b75cd5ed7803",
+      "result_id": "36c3dca3-b589-40f8-874a-a19d332f9f20"
+    },
+    {
+      "claim_id": "fb6c280e-b381-4c78-ae5c-8b18cfbcd405",
+      "result_id": "36c3dca3-b589-40f8-874a-a19d332f9f20"
+    },
+    {
+      "claim_id": "ad8e2450-e823-463d-bc5a-d6674f9b596a",
+      "result_id": "36c3dca3-b589-40f8-874a-a19d332f9f20"
+    },
+    {
+      "claim_id": "c52ceb63-82f3-475d-8c69-0362a85537ab",
+      "result_id": "36c3dca3-b589-40f8-874a-a19d332f9f20"
+    },
+    {
+      "claim_id": "71b9dcb1-e2ad-4d76-a4cc-b7610af8ae11",
+      "result_id": "3c066801-455b-4132-9e4f-45cb1d0c086c"
+    },
+    {
+      "claim_id": "5ab2c8f5-88a9-4d2b-bf12-0e599697a0ac",
+      "result_id": "3c066801-455b-4132-9e4f-45cb1d0c086c"
+    },
+    {
+      "claim_id": "408dbb14-c20b-4d85-bd96-d47c2b8d0f71",
+      "result_id": "b87c8cfa-7218-4c62-9b6b-67835d6306b8"
+    },
+    {
+      "claim_id": "d231c6d4-be17-4ae9-9fd4-03ef432cb70d",
+      "result_id": "b87c8cfa-7218-4c62-9b6b-67835d6306b8"
+    },
+    {
+      "claim_id": "21c1a876-e6e3-4104-8613-bdd818dc8a78",
+      "result_id": "b87c8cfa-7218-4c62-9b6b-67835d6306b8"
+    },
+    {
+      "claim_id": "db0e5db5-8c6e-442f-8cdd-50cceb6ab18e",
+      "result_id": "b87c8cfa-7218-4c62-9b6b-67835d6306b8"
+    },
+    {
+      "claim_id": "20ec9627-7a15-40f6-acad-cf4f4a982a6c",
+      "result_id": "966f8017-04cf-4cd7-9679-be16a4c4763c"
+    },
+    {
+      "claim_id": "165517d2-9d14-477b-b459-9f9bd4a9023a",
+      "result_id": "966f8017-04cf-4cd7-9679-be16a4c4763c"
+    },
+    {
+      "claim_id": "16628bbf-6a62-481b-8fca-5d3c3a67a16e",
+      "result_id": "966f8017-04cf-4cd7-9679-be16a4c4763c"
+    },
+    {
+      "claim_id": "a0875326-cd61-4fd1-8220-06db213c4f11",
+      "result_id": "966f8017-04cf-4cd7-9679-be16a4c4763c"
+    },
+    {
+      "claim_id": "4ef37d9b-2ece-4f85-8cfa-e8e69a489250",
+      "result_id": "966f8017-04cf-4cd7-9679-be16a4c4763c"
+    },
+    {
+      "claim_id": "98268cda-c9c6-44a5-8d58-1d721ab00af5",
+      "result_id": "966f8017-04cf-4cd7-9679-be16a4c4763c"
+    },
+    {
+      "claim_id": "dd4dcd55-ec84-410d-a039-8aed022d7701",
+      "result_id": "966f8017-04cf-4cd7-9679-be16a4c4763c"
+    },
+    {
+      "claim_id": "21112f44-0bd3-4b0a-8cbe-af990a2593b4",
+      "result_id": "966f8017-04cf-4cd7-9679-be16a4c4763c"
+    },
+    {
+      "claim_id": "7cf2eb5c-a69c-434f-bbca-1cfb41219455",
+      "result_id": "966f8017-04cf-4cd7-9679-be16a4c4763c"
+    },
+    {
+      "claim_id": "7e4778a7-14b5-4926-9041-7b2e69a98f92",
+      "result_id": "60d38924-71fd-435d-a4c1-ba4868e59790"
+    },
+    {
+      "claim_id": "309ddccc-fdee-4a5e-8dab-fd3d88728693",
+      "result_id": "60d38924-71fd-435d-a4c1-ba4868e59790"
+    },
+    {
+      "claim_id": "893b555b-edb7-4ca6-999a-a5ceb5af4544",
+      "result_id": "60d38924-71fd-435d-a4c1-ba4868e59790"
+    },
+    {
+      "claim_id": "b2f82145-5b05-4679-9cc4-1b2c773193ec",
+      "result_id": "60d38924-71fd-435d-a4c1-ba4868e59790"
+    },
+    {
+      "claim_id": "d55ec8dc-eab6-4174-bc41-b81c79190d11",
+      "result_id": "60d38924-71fd-435d-a4c1-ba4868e59790"
+    },
+    {
+      "claim_id": "1808957e-31ec-4a94-8b20-627edf358751",
+      "result_id": "60d38924-71fd-435d-a4c1-ba4868e59790"
+    },
+    {
+      "claim_id": "02a30ee1-7cfc-4f82-9c88-53b65bcd3f1c",
+      "result_id": "60d38924-71fd-435d-a4c1-ba4868e59790"
+    },
+    {
+      "claim_id": "322db003-ca90-4418-bf5e-98cfd2df0d0e",
+      "result_id": "60d38924-71fd-435d-a4c1-ba4868e59790"
+    },
+    {
+      "claim_id": "385a8c35-6496-4aa2-ba89-68ef950f3057",
+      "result_id": "13c81e8c-67f9-4d7c-b6c9-44435f660797"
+    },
+    {
+      "claim_id": "a70229f7-36fd-44d2-918c-0e600b0cad7a",
+      "result_id": "13c81e8c-67f9-4d7c-b6c9-44435f660797"
+    },
+    {
+      "claim_id": "0ff7cfc5-c7f9-4781-80c0-788f9edfb060",
+      "result_id": "13c81e8c-67f9-4d7c-b6c9-44435f660797"
+    },
+    {
+      "claim_id": "6217c62c-5f3e-4c80-a511-b6e14aa4e4e1",
+      "result_id": "13c81e8c-67f9-4d7c-b6c9-44435f660797"
+    },
+    {
+      "claim_id": "577fc01d-a286-4ba8-865b-8925710e6f49",
+      "result_id": "13c81e8c-67f9-4d7c-b6c9-44435f660797"
+    },
+    {
+      "claim_id": "8b18d9c9-1a07-42b5-8322-1e8bf28b9977",
+      "result_id": "13c81e8c-67f9-4d7c-b6c9-44435f660797"
+    },
+    {
+      "claim_id": "e716f02f-052e-4400-a845-7004e0a161f9",
+      "result_id": "13c81e8c-67f9-4d7c-b6c9-44435f660797"
+    },
+    {
+      "claim_id": "6ae82807-dd2f-42d7-9faf-fca5d297f3ad",
+      "result_id": "13c81e8c-67f9-4d7c-b6c9-44435f660797"
+    },
+    {
+      "claim_id": "a7d780ff-2be1-49b7-8a78-5084c0c50cc5",
+      "result_id": "13c81e8c-67f9-4d7c-b6c9-44435f660797"
+    },
+    {
+      "claim_id": "9bf761b6-1a00-4d65-ac41-097e449edd18",
+      "result_id": "164a49ae-58c5-41d7-bc19-46b7f09e0394"
+    },
+    {
+      "claim_id": "2f0315bb-2203-421f-86fc-8b6b27450846",
+      "result_id": "164a49ae-58c5-41d7-bc19-46b7f09e0394"
+    },
+    {
+      "claim_id": "119bdd86-cd51-49a2-a024-6d0aea7f1325",
+      "result_id": "164a49ae-58c5-41d7-bc19-46b7f09e0394"
+    },
+    {
+      "claim_id": "a6a41505-3fb0-4a22-a13a-b9929c02e4c6",
+      "result_id": "164a49ae-58c5-41d7-bc19-46b7f09e0394"
+    },
+    {
+      "claim_id": "51aafdd7-1f23-4c98-9957-74549c8697df",
+      "result_id": "a0c9ba55-36e7-4e7c-8236-8a61b01dcd29"
+    },
+    {
+      "claim_id": "1cc8321a-bad1-4774-8b52-86862d37d2f1",
+      "result_id": "a0c9ba55-36e7-4e7c-8236-8a61b01dcd29"
+    },
+    {
+      "claim_id": "f020b3de-e71b-46f8-bf81-d8a63bd24b79",
+      "result_id": "a0c9ba55-36e7-4e7c-8236-8a61b01dcd29"
+    },
+    {
+      "claim_id": "29bcea36-c912-4ac8-b26e-89207688be5f",
+      "result_id": "a0c9ba55-36e7-4e7c-8236-8a61b01dcd29"
+    },
+    {
+      "claim_id": "51eacbbf-9788-450e-9088-2ccbd9926afc",
+      "result_id": "a0c9ba55-36e7-4e7c-8236-8a61b01dcd29"
+    },
+    {
+      "claim_id": "277fc909-52fe-4429-abc0-21cbe25e9c77",
+      "result_id": "a0c9ba55-36e7-4e7c-8236-8a61b01dcd29"
+    },
+    {
+      "claim_id": "c9d7e836-a600-4728-b3f2-9bcfd208464f",
+      "result_id": "a0c9ba55-36e7-4e7c-8236-8a61b01dcd29"
+    },
+    {
+      "claim_id": "db216f3a-c4c7-4b19-9b18-1088f7c8fa96",
+      "result_id": "a0c9ba55-36e7-4e7c-8236-8a61b01dcd29"
+    },
+    {
+      "claim_id": "fd706667-58e9-4e75-b933-0efecb0186bc",
+      "result_id": "a0c9ba55-36e7-4e7c-8236-8a61b01dcd29"
+    },
+    {
+      "claim_id": "c7b31df2-4fed-4a64-9ca2-308f67c57e7e",
+      "result_id": "01a1b16f-70ac-456d-8c31-7d1fc5460fb7"
+    },
+    {
+      "claim_id": "03d1600d-2eca-4244-b913-35000f469ddd",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "793dad71-165f-4118-9c97-c55b5ac3cfa1",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "ea225e04-e028-4fc7-8589-c437899b9e57",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "6695f5e6-3523-4461-bf53-e4171295c504",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "28ead176-da14-476c-83ec-c47e2f6c23fd",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "7f606b4e-f9ec-4631-ab13-bcc965a36f4c",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "5fdec1a4-63ad-4c83-bbe0-45ed6abf39b6",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "71d7f6c2-d017-454f-be57-e4e3fa8dfd49",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "6fba49cb-50db-4a9b-a4b3-b2dbeac7c3e6",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "a0f2de34-b727-4767-84d9-9ceb0967ee77",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "b1b3f225-9ca2-4b73-9c6f-72191a32b392",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "168e3d66-5c23-4edb-90be-a75182ff0fc6",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "7f6aa4c9-0571-408a-b5d6-8bd7bd2a2776",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "ead3a6d7-8d4e-48f0-a491-86ef26f8fb1b",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "6a65d47a-bb4d-4bb4-9e69-108ea4bcefff",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "5d174363-6dc2-4138-ade0-61004a2f37dd",
+      "result_id": "158d6fc8-bfba-4046-8738-29882ae20cfb"
+    },
+    {
+      "claim_id": "d43f19da-e437-4a20-bf06-398a5c807e43",
+      "result_id": "fd73a0fc-b9e1-4b3f-b466-fc6042d886f1"
+    },
+    {
+      "claim_id": "1ae7c636-76b4-4a22-bf48-86b42b08cd3e",
+      "result_id": "fd73a0fc-b9e1-4b3f-b466-fc6042d886f1"
+    },
+    {
+      "claim_id": "e6fdafc9-e80b-47a9-b70b-48915f160cb8",
+      "result_id": "fd73a0fc-b9e1-4b3f-b466-fc6042d886f1"
+    },
+    {
+      "claim_id": "d4afe52e-2d08-4911-b891-f65683aad80e",
+      "result_id": "fd73a0fc-b9e1-4b3f-b466-fc6042d886f1"
+    },
+    {
+      "claim_id": "7fb68040-0f1a-468d-850a-07db8637b57a",
+      "result_id": "0ace54fe-8cf8-4bbf-bd95-7209df65738b"
+    },
+    {
+      "claim_id": "7bc7af7a-2af9-449c-93df-4d0703112845",
+      "result_id": "0ace54fe-8cf8-4bbf-bd95-7209df65738b"
+    },
+    {
+      "claim_id": "18f49bc0-78a0-4796-bdb1-e4e8700cf90e",
+      "result_id": "0ace54fe-8cf8-4bbf-bd95-7209df65738b"
+    },
+    {
+      "claim_id": "d636166d-07ce-432b-ae44-9ed51e202bcc",
+      "result_id": "0ace54fe-8cf8-4bbf-bd95-7209df65738b"
+    },
+    {
+      "claim_id": "a28711ad-a8ff-4698-8716-a27743b76d10",
+      "result_id": "0ace54fe-8cf8-4bbf-bd95-7209df65738b"
+    },
+    {
+      "claim_id": "b9265e20-b4d4-446b-a9eb-ce0903e6e93b",
+      "result_id": "0ace54fe-8cf8-4bbf-bd95-7209df65738b"
+    },
+    {
+      "claim_id": "9de74e65-86f9-430f-89da-121e5c02ca56",
+      "result_id": "0ace54fe-8cf8-4bbf-bd95-7209df65738b"
+    },
+    {
+      "claim_id": "f76c3ed5-8d59-4233-9b3b-b6ea7dd7648f",
+      "result_id": "0ace54fe-8cf8-4bbf-bd95-7209df65738b"
+    },
+    {
+      "claim_id": "3ddc5368-8673-4d8c-927f-79547b873d77",
+      "result_id": "2d8f0bd3-b84a-4cd0-aef9-5c27cb6cbeac"
+    },
+    {
+      "claim_id": "a3b4ad0a-5869-4ba4-b36d-e665d0d4fbde",
+      "result_id": "e96c174f-e705-483b-bdf4-585028170f75"
+    },
+    {
+      "claim_id": "ea2cbeb8-3142-4259-88a2-2a7c8ae27001",
+      "result_id": "e96c174f-e705-483b-bdf4-585028170f75"
+    },
+    {
+      "claim_id": "4b37db7d-9b56-4a8c-9ee8-5825b51e6532",
+      "result_id": "e96c174f-e705-483b-bdf4-585028170f75"
+    },
+    {
+      "claim_id": "aa354d3b-4867-453a-97b3-b3477e9b8989",
+      "result_id": "e96c174f-e705-483b-bdf4-585028170f75"
+    },
+    {
+      "claim_id": "fc201a08-f640-4451-9b80-c3fadc3fa936",
+      "result_id": "e96c174f-e705-483b-bdf4-585028170f75"
+    },
+    {
+      "claim_id": "931913d1-50d1-49db-a623-6669ad3cb106",
+      "result_id": "42e4b958-9491-40ce-998c-66f162d7f5a9"
+    },
+    {
+      "claim_id": "236a05b7-a846-44d4-9eaa-1ceb37adb0e2",
+      "result_id": "42e4b958-9491-40ce-998c-66f162d7f5a9"
+    },
+    {
+      "claim_id": "ae6352a8-ff70-4c48-a643-65da99b65216",
+      "result_id": "42e4b958-9491-40ce-998c-66f162d7f5a9"
+    },
+    {
+      "claim_id": "8376524d-6b1c-4a0a-b6b4-e39f8047b8bd",
+      "result_id": "42e4b958-9491-40ce-998c-66f162d7f5a9"
+    },
+    {
+      "claim_id": "05713dcb-01f4-459f-95f0-566917115c53",
+      "result_id": "42e4b958-9491-40ce-998c-66f162d7f5a9"
+    },
+    {
+      "claim_id": "2df41156-6abb-46e7-ac8a-8a0a5046b6e9",
+      "result_id": "42e4b958-9491-40ce-998c-66f162d7f5a9"
+    },
+    {
+      "claim_id": "e84323cc-51d6-4c1f-8170-2f3516c7416e",
+      "result_id": "42e4b958-9491-40ce-998c-66f162d7f5a9"
+    },
+    {
+      "claim_id": "18e31292-0210-45de-83b9-448f0659a26e",
+      "result_id": "42e4b958-9491-40ce-998c-66f162d7f5a9"
+    },
+    {
+      "claim_id": "f10a6b54-71ec-4ef7-895c-70bd93f6f437",
+      "result_id": "42e4b958-9491-40ce-998c-66f162d7f5a9"
+    },
+    {
+      "claim_id": "6814a551-261b-4844-aee7-006cd4573f21",
+      "result_id": "42e4b958-9491-40ce-998c-66f162d7f5a9"
+    },
+    {
+      "claim_id": "29564ad4-fd58-4996-937e-697443a16d62",
+      "result_id": "a8c2a7d0-2f2a-4fc6-b145-65234e4c7e11"
+    },
+    {
+      "claim_id": "9d2f67bc-a241-452f-a659-ef312495d91a",
+      "result_id": "a8c2a7d0-2f2a-4fc6-b145-65234e4c7e11"
+    },
+    {
+      "claim_id": "5d23d126-0713-4b53-8350-4a432748efdd",
+      "result_id": "a8c2a7d0-2f2a-4fc6-b145-65234e4c7e11"
+    },
+    {
+      "claim_id": "69c433e2-b739-4d28-b161-05fd66d2ec71",
+      "result_id": "aa3d2a7d-d1ef-4818-a5ab-d3cc154688ca"
+    }
+  ],
+  "comparisons": []
+}

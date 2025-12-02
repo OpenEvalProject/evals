@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study documented high rates of 3GC-R K. pneumoniae colonization in a Cambodian neonatal unit, with 42% of infants colonized on admission and 57% of initially negative infants acquiring colonization during their stay. Almost all isolates (99%) were ESBL producers, with very low carbapenem resistance (0.35%). The median length of stay was 6 days, and ampicillin+gentamicin was the most commonly used antibiotic combination (19% of patient days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 provide descriptive epidemiological and microbiological data directly observed in the study. These are straightforward observational findings with clear denominators and numerators, representing basic characterization of the study population and setting. The data are internally consistent and appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C25",
+      "C26",
+      "C27",
+      "C33",
+      "C34"
+    ],
+    "result": "Risk factor modeling identified that all widely-used antibiotics except imipenem were associated with increased daily acquisition risk of 3GC-R K. pneumoniae (OR ~1.5-2.0), with ampicillin+gentamicin showing OR 1.96 (95% CrI 1.18, 3.36). Protective factors included breast milk feeding (OR 0.69) and increased nurse staffing (OR 0.55 for three nurses vs. zero). The median daily acquisition probability was 0.15, with considerable heterogeneity ranging from 0.047 to 0.35 across patient days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C34 report results from Bayesian risk factor models with appropriate statistical methodology (MCMC, credible intervals, model diagnostics shown in supplementary figures). The findings are biologically plausible and consistent with known mechanisms of antibiotic-driven dysbiosis. The wide credible intervals for some estimates (e.g., breast feeding, nurse staffing) appropriately reflect uncertainty, though the direction of effects is consistent. Model validation through posterior predictive checks (Figure 2D) supports the model fit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Whole-genome sequencing of 317 isolates revealed 62 distinct sequence types across three Klebsiella species (K. pneumoniae, K. quasipneumoniae, K. variicola). The diversity observed in this single neonatal unit over four months was comparable to global K. pneumoniae diversity. The most common STs were ST334 (n=29), ST101 (n=21), ST1074 (n=21), and ST45 (n=17), with CTX-M-15 being the predominant ESBL gene (63%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 report genomic characterization data with appropriate methodology (Illumina sequencing, assembly, ST typing). The comparison to global diversity (C39) is supported by citation to Holt et al. 2015 and is a reasonable inference from the phylogenetic analysis shown in Figure 3A. The high diversity suggests repeated importation rather than clonal expansion, which is consistent with the study's transmission findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Transmission modeling incorporating genomic data found that colonization pressure was associated with higher transmission risk, with evidence for sequence type heterogeneity in transmissibility. The best-fitting model (transmission model 2) estimated \u03b1=0.0019 and \u03b2=0.0097. Environmental contamination was estimated to decay rapidly with a half-life of 3.6 hours (95% CrI 2.4-7.6), suggesting minimal role for persistent environmental reservoirs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C45 report results from mechanistic transmission models with appropriate Bayesian methodology and model comparison (WAIC). The finding that colonization pressure matters only became apparent when considering ST-specific transmission (C42), which is a key insight. The rapid environmental decay (C44-C45) is consistent with cited literature (Weber et al. 2015) and the prior was appropriately informed by this. Model diagnostics (Figure 3\u2014figure supplement 1) show adequate convergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "SNP analysis of ST101 and ST45 isolates revealed that within-host diversity was comparable to between-host diversity. For ST101, pairwise SNP differences between infants ranged from 15-68 (median 30) compared to within-host diversity of 18-38 SNPs (median 28). For ST45, between-host differences ranged from 13-223 (median 125) compared to within-host diversity of 55-212 SNPs (median 124).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 report SNP diversity analysis with appropriate methodology (read mapping, variant calling with conservative filtering). The finding that within-host and between-host diversity are similar is important for interpreting transmission patterns. The high within-host diversity, particularly for ST45, is notable and appropriately acknowledged as potentially complicating transmission inference. Sequencing depth was adequate (>20x mean, >90% genome at >5x coverage per C79-C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C57",
+      "C58"
+    ],
+    "result": "The ward-level reproduction number (RA) was estimated at 0.65 (95% interval 0.36-1.09), indicating that within-ward transmission was insufficient to maintain endemicity (RA<1). This finding implies that repeated importation into the unit is necessary to sustain the endemic state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C51, C57-C58 report the reproduction number from agent-based simulations using parameters from the transmission models. The methodology is appropriate and the conclusion that RA<1 requires importation to maintain endemicity is logically sound. The 95% interval includes values >1, indicating some uncertainty, but the median estimate and the weight of evidence support the conclusion. This finding is consistent with comparable studies cited in the discussion (Gurieva et al. 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Agent-based simulations of interventions showed that increasing the nurse-patient ratio had the largest impact on reducing colonization, with infant:nurse ratios of 1:1 vs 3:1 resulting in median proportions remaining uncolonized of 0.81 vs 0.54 in high importation settings. Probiotic use showed minimal effect (0.59 vs 0.54 for 100% vs 0% probiotic use).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C52-C54 report forward simulation results using parameters from the fitted models. The methodology is appropriate, combining transmission parameters with risk factor effect sizes. The finding that nurse staffing has the largest impact is consistent with the risk factor analysis (C26) and supported by cited literature on healthcare worker transmission. The minimal effect of probiotics is disappointing but appropriately reported and discussed. The simulations appropriately explore different importation scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C72"
+    ],
+    "result": "The study provides strong evidence that patient-to-patient transmission mediated by healthcare workers is the main driver of resistant K. pneumoniae acquisition, with colonized patients representing the primary reservoir. This conclusion integrates findings from transmission modeling, genomic analysis, and the lack of persistent environmental contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C72 represent the study's main mechanistic conclusion, integrating multiple lines of evidence: (1) colonization pressure effects in transmission models, (2) temporal clustering of related STs, (3) rapid environmental decay, (4) lack of model improvement with environmental terms, and (5) cited evidence of no persistent environmental contamination (Smit et al. 2018). While individual pieces of evidence have uncertainty, the convergence of multiple independent analyses strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Rectal swab sensitivity for detecting 3GC-R K. pneumoniae was estimated at 0.90 (95% CrI 0.88-0.92) under the assumption that all negatives following a positive are false negatives, or 0.93 (95% CrI 0.91-0.94) assuming three consecutive negatives represent true decolonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 report swab sensitivity estimates using appropriate Bayesian methodology with conjugate priors. The two scenarios provide bounds on the estimate. The sensitivity estimates are reasonable and the uncertainty is appropriately quantified. However, the study assumes 100% culture sensitivity in the main analysis, which could affect acquisition risk estimates if false negatives are common.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The study recommends that control measures should be coordinated regionally and targeted to the wider hospital patient referral network, based on the finding that importation is necessary to maintain endemicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is a public health recommendation logically derived from the finding that RA<1 and importation maintains endemicity. The recommendation is supported by citations to similar conclusions in other settings (Donker et al. 2012, Ciccolini et al. 2013). While the recommendation is reasonable, it represents an inference about policy rather than a direct empirical finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study interprets antibiotic effects as consistent with mechanisms involving reduced microbiome diversity and increased susceptibility to colonization. The selection of a 96-hour antibiotic exposure window is supported by microbiome literature showing peak dysbiosis at 4 days. The small \u03b1 relative to \u03b2 in transmission models suggests background selection plays a minor role compared to person-to-person transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 provide mechanistic interpretation of the antibiotic effects, appropriately supported by citations (Lipsitch et al. 2000, Palleja et al. 2018). The 96-hour window selection is justified by external evidence. The inference about background selection vs. transmission (C62) is reasonable given the parameter estimates, though the study acknowledges it cannot definitively separate these mechanisms. These are appropriate interpretations of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study provides mechanistic explanations for observed protective effects: breast milk feeding promotes healthy microbiome development, diverse microbiomes compete against pathogens, understaffing reduces attention to infection control, and lower nurse:patient ratios increase cross-transmission through reduced cohorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 provide mechanistic explanations for observed associations, appropriately supported by citations to relevant literature. These are reasonable biological and operational mechanisms consistent with the data, though they represent interpretations rather than direct empirical findings from this study. The explanations help contextualize the quantitative findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The study found considerable heterogeneity in acquisition risk across patient days (8-fold variation) and high genomic diversity reflecting repeated introductions of diverse isolates. This heterogeneity challenges assumptions of compartmental models that treat patients as homogeneous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 report important findings about population heterogeneity with implications for modeling approaches. The 8-fold variation in risk (C67) is directly observed from the model (Figure 2B). The inference about repeated introductions (C69) is well-supported by the genomic diversity data. The critique of compartmental models (C68) is appropriately supported by citations and represents a valid methodological insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The study highlights that within-host diversity can hinder transmission network reconstruction and emphasizes the importance of capturing this diversity in sequencing studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 make an important methodological point supported by the study's findings of high within-host diversity and by citations to relevant literature (Worby et al. 2014, Didelot et al. 2016). This is a valid inference from the SNP analysis results and represents an important consideration for future genomic epidemiology studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The study quantifies the role of different antibiotics in driving the 3GC-R K. pneumoniae epidemic through risk factor modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is a summary statement accurately reflecting the antibiotic risk factor analysis (C2-C3, C28-C32). The quantification is provided through odds ratios with credible intervals. This represents a key contribution of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84"
+    ],
+    "result": "The study describes its methodology including the setting (Cambodian neonatal unit, Sept 2013-Sept 2014), sampling protocol (rectal swabs within 48h and every 2-3 days), sequencing approach (317 isolates, Illumina HiSeq 2500, 150bp paired-end), and statistical methods (Bayesian MCMC in Stan, agent-based modeling in Python).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82, C84 provide methodological details that are clearly stated and appropriately documented. Sequencing quality metrics (C79-C81) are adequate. Code availability is provided (C84). These methodological details support reproducibility and allow assessment of the study's validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17"
+    ],
+    "result": "The introduction provides background on the clinical importance of multidrug-resistant K. pneumoniae, WHO prioritization of ESBL-producing Enterobacteriaceae, higher mortality in developing countries, historical research on transmission mechanisms, and recent outbreak investigations suggesting environmental contamination may play a role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C17 provide background context appropriately supported by citations to relevant literature. These are not findings from the current study but rather establish the scientific context and rationale. The citations appear appropriate and the statements accurately represent the cited work based on the context provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The study cites literature showing that carbapenem-resistant K. pneumoniae has a half-life of approximately 12 hours on hospital surfaces, which informed the prior distribution for the environmental decay parameter in transmission model 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 appropriately cites external evidence (Weber et al. 2015) to inform the prior distribution for the environmental decay parameter. This is good practice in Bayesian modeling to incorporate relevant external information. The use of this prior is transparent and sensitivity analysis is provided (Figure 3\u2014figure supplement 2).",
+    "result_type": "MINOR"
+  }
+]

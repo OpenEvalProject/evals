@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors recorded from 78 monosynaptically-connected pyramidal-interneuron pairs in the dorsal CA1 hippocampus of 5 rats during four exploration sessions (FAM1, NOV, FAML with optogenetic stimulation, and FAM2). Monosynaptic connections were identified using cross-correlation analysis with correction for chance firing probability. Light stimulation did not affect animal behavior (speed or occupancy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C39 describe the experimental design, recording methods, and basic data collection procedures. The methodology is clearly described with appropriate controls (C33, C38) and established techniques (C34-C36). The sample size of 78 pairs from 5 animals (C39) is modest but reasonable for this type of in vivo electrophysiology study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Optogenetic inhibition via Halorhodopsin/Archaerhodopsin led to direct suppression of some pyramidal cells and interneurons, and indirect disinhibition of other pyramidal cells. During the FAML session, firing rates of connected pairs changed significantly (lower correlation than within-session variability, p<0.0001), though median rates did not differ. Spike transmission probabilities also changed during FAML, with significant reduction in median transmission (p<0.01) and lower correlation than within-session variability (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C50 demonstrate immediate effects of optogenetic manipulation on network activity. The statistical comparisons are appropriate, using within-session variability as a control (C45, C48). The finding that median rates didn't change (C46) while correlations did (C45) suggests reorganization rather than uniform suppression. The correction for chance firing probability (C50) strengthens the interpretation that true connection weights changed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Spike transmission changes persisted after light application ended. Changes between FAM2-FAM1 were ~30% weaker than NOV-FAM1 or FAML-FAM1 but still significant (p<0.001) and larger than within-session variability (p<0.0268). Linear mixed model analysis showed that both FAM1 and FAML independently predicted FAM2 transmission (p<0.0105), while NOV did not predict FAM2 when FAM1 was considered (p=0.4453). Light application caused lasting, context-specific changes in spike transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C63 establish lasting plasticity using appropriate statistical methods (linear mixed models with animal as random effect). The finding that NOV changes didn't persist (C60-C61) while FAML changes did (C59, C63) supports activity-dependent plasticity rather than general instability. The ~30% reduction in FAM2-FAM1 changes (C54) indicates partial but not complete reorganization, which is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The direction of spike transmission change during FAML predicted the direction of lasting change in FAM2. Cell pairs with decreased transmission during FAML maintained weaker transmission in FAM2, while pairs with increased transmission during FAML showed persistent increases in FAM2 (p<0.0001). The magnitude of relative change between FAML-FAM1 predicted the magnitude of change between FAM2-FAM1 (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 demonstrate bidirectional plasticity with appropriate statistics. The correlation between FAML-FAM1 and FAM2-FAM1 changes (C66) provides strong evidence for activity-dependent mechanisms. The bidirectional nature (C64-C65) rules out nonspecific effects and supports Hebbian-like plasticity rules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Interneuron firing rate changes during FAML predicted lasting spike transmission changes in FAM2, even when controlling for FAM2 rate changes (p<0.0064). Pyramidal cell rate changes during FAML did not independently predict transmission changes when FAM2 rates were considered (p=0.0999). Interneurons with increased rates during FAML showed increased transmission in FAM2, while suppressed interneurons showed decreased transmission (p<0.0001). Two-way ANOVA confirmed interneuron but not pyramidal cell rate changes predicted transmission changes (interneuron: p<0.0004; pyramidal: p=0.4067). Place field remapping did not predict transmission changes (p=0.1612).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C78 identify postsynaptic interneuron activity as the key predictor of plasticity using appropriate multivariate analyses. The independence from pyramidal rate changes (C70, C74, C78) and place field remapping (C72) strengthens the conclusion. The two-way ANOVA (C77-C78) properly controls for interactions. This represents a mechanistic advance over prior correlational studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Spike pairing events in 50 ms windows predicted transmission changes (p<0.00099 with multiple testing correction), but not in other time windows (p>0.0517). However, spike pairing no longer predicted transmission changes when interneuron and pyramidal rates were jointly considered (p>0.417), because pairing was strongly predicted by firing rates (R\u00b2>0.859). The authors conclude that rate-predicted pairing is as predictive as actual pairing, leaving ambiguity about whether pairing independently contributes to plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C82 and C126-C134 present conflicting evidence about spike pairing's role. While pairing in 50 ms windows correlates with plasticity (C79, C126), this effect disappears when controlling for rates (C81, C131), and pairing is highly predicted by rates (C82). The authors acknowledge they cannot exclude that rates alone drive plasticity without pairing contributing (C134). The 50 ms window specificity (C80, C130) is intriguing but the loss of significance in multivariate models undermines confidence in associative mechanisms. Additional experiments manipulating pairing independently of rates would be needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Spike transmission changed between FAM1 and the novel environment (NOV), with larger changes than between familiar sessions. However, these changes were environment-specific and did not persist in subsequent familiar sessions (FAM2). NOV exposure did not influence FAM2 transmission. Transmission changes between familiar and novel environments were predicted by interneuron but not pyramidal rate changes, suggesting postsynaptic depolarization differences across contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C110 demonstrate context-dependent but transient plasticity in novel environments. The lack of persistence (C86, C104) contrasts with FAML effects and suggests different mechanisms. The prediction by interneuron rates (C107) is consistent with the FAML findings. The interpretation that depolarization differences drive context-dependent transmission (C105, C108) is reasonable but somewhat speculative given the lack of direct depolarization measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102"
+    ],
+    "result": "The study lacked YFP-only controls, so optogenetic channel expression or light itself might enhance plasticity. However, similar activity-dependent changes were observed during spatial learning in prior work (Dupret et al., 2013), suggesting light-mediated rate alteration was the primary driver. Interneuron excitability changes during FAML predicted FAM2 transmission changes beyond FAM2 rate changes alone, indicating lasting connection weight changes beyond transient excitability effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C102 address a critical control issue. The lack of YFP-only controls (C88) is a significant limitation that the authors acknowledge (C89). While the comparison to spatial learning (C90) provides some support, it doesn't definitively rule out that optogenetic manipulation enhanced plasticity susceptibility. The finding that FAML rate changes predict FAM2 transmission independent of FAM2 rates (C100, C102) is important but doesn't address whether the magnitude of plasticity is artificially enhanced. This uncertainty affects interpretation of the physiological relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors compare their findings to spatial learning (Dupret et al., 2013), noting that both involve plasticity in familiar environments with place field remapping. During spatial learning, transmission changes depended on both pyramidal and interneuron rates, whereas in the current study interneuron rates were the primary predictor. Both paradigms involved some place cells remapping their fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 provide useful context by comparing to prior work. The comparison highlights both similarities (familiar environment, remapping) and differences (pyramidal vs. interneuron rate dependence) between optogenetic manipulation and natural learning. This strengthens the interpretation that the observed plasticity mechanisms are relevant to learning, though the differences suggest the optogenetic manipulation may not perfectly recapitulate natural learning conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors discuss potential mechanisms, noting that CA1 pyramidal layer interneurons express Ca\u00b2\u207a-permeable AMPA receptors that mediate LTP/LTD requiring synaptic input stimulation and hyperpolarization/non-depolarized states. Interneuron firing rate was the strongest predictor of transmission changes, potentially reflecting both afferent excitation and light-induced inhibition. Excitability changes from light stimulation likely contributed because both FAML-FAM1 and FAM2-FAM1 rate changes independently predicted transmission changes. The majority of interneurons showed rate reduction, suggesting both up- and down-regulation of excitation is possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C125 provide mechanistic context linking findings to known plasticity mechanisms. The discussion of Ca\u00b2\u207a-permeable AMPA receptors (C117-C118) and mGluR regulation (C119) is well-supported by citations. The interpretation that firing rates reflect both excitation and inhibition (C121) is reasonable. The finding that both FAML and FAM2 rates independently predict transmission (C122) supports lasting excitability changes. However, these remain interpretations without direct measurements of receptor function or intracellular Ca\u00b2\u207a.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The introduction reviews prior work showing that excitatory inputs to hippocampal interneurons undergo various forms of plasticity in vitro, with rules differing from those for principal cells and varying by interneuron type and experimental conditions. In vivo work during anesthesia demonstrated plasticity at afferent-interneuron connections. Behavioral studies showed state-dependent modulation and learning-dependent changes in pyramidal-interneuron spike transmission, but no prior work established causal links between pre/postsynaptic firing and connection strength changes during behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 accurately summarize prior literature and identify the gap this study addresses. The citations appear appropriate and the characterization of prior work as correlational rather than causal (C22) correctly motivates the optogenetic approach. This provides solid context for the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C83",
+      "C84",
+      "C87",
+      "C137",
+      "C138"
+    ],
+    "result": "The study demonstrates that optogenetic manipulation of CA1 network activity triggers lasting alterations in pyramidal-interneuron spike transmission. Changes in postsynaptic interneuron rates and spike pairing probability predicted transmission changes. The authors conclude that altered interneuron firing rate and activity-dependent spike pairing can modify connection weights during exploratory behavior, with learning potentially being a natural condition where such changes occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 and C83-C87 summarize the main findings. The evidence for lasting transmission changes is strong (see Result 3). The role of interneuron rates is well-established (see Result 5), though the independent contribution of spike pairing remains uncertain (see Result 6). The speculation about learning (C138) is reasonable given the comparison to spatial learning studies but remains speculative. Overall, the core claims about activity-dependent plasticity are well-supported, though mechanistic details remain partially resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "The authors suggest future experiments selectively altering interneuron firing rates via optogenetics to test the independent contribution of postsynaptic depolarization to plasticity, while acknowledging that even such manipulations would indirectly affect pyramidal rates through disinhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 appropriately identify limitations and suggest follow-up experiments. The acknowledgment that even targeted manipulations will have indirect effects (C136) shows realistic understanding of circuit complexity. These are reasonable suggestions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "The study recorded 1842 pyramidal cells and 91 interneurons in total.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C139 reports the total cell counts. While only 78 pairs showed monosynaptic connections (C39), recording from larger populations allows for proper cell classification and connection detection. The numbers are consistent with the experimental design.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,174 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C21",
+      "C22",
+      "C32",
+      "C36",
+      "C37",
+      "C38",
+      "C54",
+      "C55"
+    ],
+    "result": "Experience with live prey increases prey consumption in zebrafish larvae at 7 dpf, primarily through improved capture success rather than increased hunt rate. Live-fed (LF) larvae showed approximately double the consumption rate of control groups (NF and DF), with capture success rates of 32% (LF) vs 21% (NF) and 18% (DF). This represents the first demonstration of experience-dependent hunting improvement at this early developmental stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C21, C22, C36-C38, C54-C55 collectively demonstrate that experience increases consumption primarily through improved capture efficiency rather than hunt rate. The statistical modeling (C37, C38) and experimental design with appropriate controls (C28-C30, C60) support the conclusion that differences are due to experience-dependent skill changes rather than nutrition or growth effects. The modest increase in hunt rate (C21, C32) combined with marked increase in capture success (C22, C36, C37) provides converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Experienced larvae exhibit undershooting behavior in their initial turn-to-prey, with a mean turn ratio of 0.73 for LF compared to 0.87 (NF) and 0.92 (DF). This undershooting is a kinematic adaptation that develops specifically from rearing with live prey, as inexperienced larvae align more closely with prey azimuth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C45-C47 demonstrate undershooting behavior in experienced larvae using linear regression modeling of turn-to-prey data. The statistical model (C45) provides quantitative evidence with clear separation between groups. The finding is consistent with prior work (C43-C44) and the paradoxical nature of the result (inexperienced larvae appear more accurate but are less successful) strengthens the interpretation that undershooting is an adaptive strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Experienced larvae employ high-speed capture swims more frequently (41% in LF vs 28% NF and 21% DF) and initiate them at longer distances from prey. Capture speed is coordinated with prey distance, particularly in experienced larvae, and time to reach prey remains constant regardless of distance traveled during the capture swim.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C39-C42 demonstrate that experienced larvae use fast capture swims more frequently and coordinate speed with distance. The clustering analysis (C39-C40) provides objective classification, and correlation analyses (C41-C42) show speed-distance coordination is stronger in LF group. The finding that time to reach prey is independent of distance (C42) supports the interpretation of coordinated motor control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C27",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Experience jointly modifies the initial turn-to-prey and final capture maneuver, and these coordinated modifications predict capture success. The relationship between undershooting and fast-capture swims is not innate but develops through experience. Two principal components of hunting behavior can predict capture efficiency with ~32% variance explained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C27, C49-C53 demonstrate that experience coordinates multiple behavioral components rather than modifying them independently. The hierarchical statistical model (C51-C52) and PCA analysis (C53) provide evidence that these behaviors are integrated. The finding that the undershooting-fast capture relationship is absent in control groups (C49-C50) supports the claim that coordination develops through experience. However, the modest predictive power (32% variance) suggests other unmeasured factors contribute to hunting success.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C60",
+      "C61"
+    ],
+    "result": "The experimental design included three feeding regimes (LF, NF, DF) to control for nutritional and growth effects. The superior capture efficiency of LF larvae is not explained by growth differences, as DF larvae (which are larger than NF) show the lowest capture efficiency, indicating that behavioral changes rather than size drive improved hunting performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30, C60-C61 describe the experimental design and control for confounding factors. The inclusion of the DF group as a nutrition control is appropriate, and the finding that DF larvae have the lowest capture efficiency despite being larger than NF larvae (C60) provides strong evidence against a growth-based explanation. The small but significant growth differences (C30) are appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors propose that increased capture distance reduces aiming errors caused by prey motion, and that larvae adjust swim speed as a function of prey distance to coordinate timing with stereotyped gape-cycle timing. Undershooting is hypothesized to be an active sensing strategy that improves prey distance perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C68 present mechanistic hypotheses to explain the observed behavioral adaptations. While these hypotheses are plausible and consistent with the data, they are explicitly stated as interpretations and speculation (C67-C68 marked as SPECULATION). The claims about prey motion effects (C66) are supported by geometric analysis in Appendix 5, but direct experimental tests of these mechanisms are not provided. These remain testable hypotheses requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Learning does not modify individual behavioral components independently but rather coordinates multiple components of the hunting sequence. The authors propose that learning is constrained to specific environmental information rather than arbitrary behavioral chaining, and that brief (two-day) hunting experience rescues or triggers maturation of initially ineffective hunting behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C79, C82-C84 present interpretations about the nature of learning in this system. While the evidence for coordinated behavioral changes is strong (supported by correlation analyses), the mechanistic claims about learning constraints (C82) and the rescue/maturation interpretation (C84) are more speculative. The distribution of hunt efficiency (Figure 3D) provides some support for the rescue hypothesis, but alternative explanations (e.g., individual variation in learning rates) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A companion study found that experience-dependent changes in hunt rate are associated with increased forebrain activity and functional connectivity between tectum and forebrain, suggesting that adaptations are manifested via a tectal-forebrain pathway operating in parallel to innate hunt initiation pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 describe findings from a companion study (Oldfield et al., 2020) that provide neural circuit evidence consistent with the behavioral findings. The forebrain ablation experiments (C89) demonstrate that forebrain contributes to hunt frequency but is not necessary for hunting, supporting the parallel pathway model (C90-C91). However, these claims rely entirely on the companion study and cannot be independently evaluated from the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Changes in tectal encoding of prey position do not underlie differences in turn behavior between experienced and naive larvae, as tectal activity maps for prey location are not altered by experience. The authors propose that turn-gain modulation occurs downstream, possibly at reticulospinal neurons via modulatory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by citations to prior work showing that tectal sensory maps are not experience-dependent, and by the companion study showing no changes in tectal activity maps (C96). The inference that turn-gain modulation occurs downstream (C97) is logical given this evidence. However, the specific proposal about reticulospinal modulation (C98) is explicitly speculative and requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study demonstrates that prior experience of live prey modifies and associates components of the larval zebrafish hunting sequence to improve capture success, suggesting that hunting behavior ontogeny relies on learning by experience. Learning may be constrained to particular tasks at 7 dpf but is sophisticated enough to alter multidimensional behavioral parameters to improve innate goal-oriented behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 summarize the main findings and conclusions of the study, which are well-supported by the experimental evidence. The claim about learning constraints (C103) is supported by comparison with failed conditioning studies (C80) and successful hunting-specific learning. Claims C104-C105 about conservation of learning principles across species are supported by citations but represent broader generalizations beyond the scope of the current data.",
+    "result_type": "MAJOR"
+  }
+]

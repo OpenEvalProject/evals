@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C55",
+      "C60"
+    ],
+    "result": "Stable microscopic droplets form around bacterial aggregates on drying surfaces under moderate humidity due to capillary pinning and deliquescence. Larger aggregates are surrounded by larger droplets, while solitary cells are surrounded by miniscule droplets. Both particulates and deliquescent solutes are essential for this phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C41, C55, and C60 collectively demonstrate through microscopy (Figures 2A-B, 2E, Videos 1-3) and control experiments (C47-C54) that stable microdroplets form around bacterial aggregates via capillary pinning and deliquescence. The time-lapse imaging directly visualizes the pinning mechanism, and experiments with beads and pure water confirm the necessity of both particulates and deliquescent solutes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C57"
+    ],
+    "result": "Droplet size increases with aggregate size, following a power law distribution. A clear positive correlation exists between cell abundance within droplets and droplet size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42-C45, and C57 are supported by quantitative analysis of thousands of droplets (Figure 2C-D). The power law distribution is characterized with specific exponents (\u03b3 = \u22121.2 \u00b1 0.15 for P. fluorescens and \u22121.0 \u00b1 0.45 for P. putida), and the correlation between cell abundance and droplet size is clearly demonstrated. The results are consistent across different substrates (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C66",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Cell survival increases with droplet size. Survival is nearly exclusively restricted to large droplets (>10\u00b3 \u00b5m\u00b2), with <5% survival in small droplets (<10\u00b2 \u00b5m\u00b2) and >50% survival in the largest droplets (>10\u2074 \u00b5m\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C66, C69-C71 are strongly supported by survival assay data using propidium iodide staining (Figures 3A-E). The trend is consistent across both strains studied and multiple experiments, despite some variability in overall survival rates (C68). The quantitative measurements provide clear evidence for the size-dependent survival effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "Droplet size has a stronger effect on bacterial survival than aggregate size. Large droplets promote cell survival even when aggregates are absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 and C75 are supported by multivariate analysis (Figures 3F-G, Figure 3\u2014figure supplement 3) and late-inoculation experiments with mostly solitary cells (C74, Figure 3\u2014figure supplement 4). The multinomial logistic regression model quantitatively demonstrates that droplet size contributes more significantly to survival than aggregate size for both strains, and the late-inoculation experiments confirm survival in large droplets even without aggregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C54"
+    ],
+    "result": "The presence of particles is necessary for droplet formation, whereas biological activity is not. Solutes control droplet formation and retention through their deliquescent properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by systematic control experiments with fluorescent beads (C47-C49, Figure 2\u2014figure supplement 2) showing similar droplet formation patterns as with bacteria, experiments without particulates showing minimal droplet formation (C50), and experiments with pure water showing no droplets (C53). These experiments effectively isolate the physical-chemical mechanisms from biological activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Microdroplets contain highly concentrated solutions, estimated to be 23.3 \u00b1 3.5 times more concentrated than standard M9 (~50 times more concentrated than the 0.5x M9 used), with an estimated osmolarity of ~6.7 Osm/L that likely imposes severe osmotic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by fluorescent dye calibration experiments (Figure 2\u2014figure supplement 3). The methodology using Alexa Fluor 647 as a concentration reporter is appropriate, and the calibration curve validation (testing intensity changes with RH changes) strengthens confidence in the measurements. The inference about osmotic stress (C63) is reasonable given the measured concentrations and is supported by growth inhibition data (C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Growth curves in liquid cultures of equivalent concentrated M9 and M9+NaCl media showed delayed or complete growth inhibition, consistent with the observation that cell divisions within droplets were rarely seen at 85% RH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by growth curve data (Figure 3\u2014figure supplement 5, Supplementary file 2) showing that the high concentrations measured in droplets inhibit growth. This provides independent validation of the osmotic stress inference and explains the lack of cell division observed in droplets during experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Experiments with 16 additional strains from diverse microbial habitats yielded qualitatively similar results: larger droplets formed around aggregates or densely populated areas, and higher survival was observed in larger droplets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by data in Table 1 showing results from 13 bacterial species total (18 strains). While the depth of analysis is less than for the two main strains, the qualitative consistency across Gram-negative and Gram-positive bacteria from various habitats (phyllosphere, soil, water, human gut) strengthens the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Stable microdroplets formed around natural microbiota cells using solutes and microbiota extracted from natural leaf surfaces, with microscopic wetness visibly similar to experiments with synthetic medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by experiments with ivy and citrus leaf washes (Figure 4, Figure 4\u2014figure supplement 1). The observation that some cases required higher RH or lower temperatures (C80) suggests condensation may also contribute, which is a reasonable inference. These experiments provide important validation that the phenomenon occurs with natural leaf microbiota and solutes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C56",
+      "C59"
+    ],
+    "result": "Two central mechanisms promote microdroplet formation and stability: (1) pinning of the liquid-air interface due to capillary forces on rough particulate surfaces, and (2) deliquescent properties of solutes preventing complete evaporation at RH above the deliquescence point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C56, and C59 synthesize the experimental observations into a mechanistic explanation supported by time-lapse imaging (Videos 1-3), control experiments with beads and pure water, and established physical-chemical principles cited from the literature. The explanation is consistent with all experimental observations and provides a coherent physical basis for the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C89",
+      "C90"
+    ],
+    "result": "Bacterial aggregation improves hydration by retaining large stable droplets around aggregates, and self-organization can improve survival in environments with recurrent drying by increasing the fraction of the population in large droplets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C89-C90 are supported by the combined evidence showing that aggregates retain larger droplets (C5, C45) and that larger droplets improve survival (C6, C69). Figure 5B and Figure 5\u2014figure supplement 1 provide direct evidence that aggregation increases the fraction of the population in large droplets. This represents a novel functional role for bacterial aggregation beyond the conventional EPS protection mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The ecological origin of bacterial strains did not always predict survival rates. Some phyllospheric bacteria exhibited low survival, soil bacteria showed variable survival, E. coli showed medium survival, and the aquatic strain P. veronii showed high survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by observations from experiments with multiple strains (Table 1). The unexpected patterns (e.g., some phyllosphere bacteria having low survival, E. coli having medium survival) are clearly documented. However, the interpretation that survival is a complex trait (C96) requiring both physiological adaptation and collective protection is speculative, though reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Microscopic surface wetness can explain how microorganisms survive on leaf surfaces during daytime by avoiding complete desiccation, implying that phyllospheric bacteria have evolved mechanisms to cope with highly concentrated solutions and that salt tolerance may be a ubiquitous trait for phyllospheric bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is a reasonable inference from the experimental findings, but it remains speculative without direct validation on actual leaf surfaces. Claims C105-C106 about evolved mechanisms and ubiquitous salt tolerance are logical inferences but lack direct experimental support. The simplified experimental system may not fully capture the complexity of natural leaf surfaces (C97, C99-C103), limiting confidence in these broader ecological conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Why survival is enhanced in larger droplets remains an open question, though the authors hypothesize it may be due to higher water potential in larger droplets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 accurately acknowledge a limitation of the study. The hypothesis about water potential (C86) is reasonable but explicitly stated as requiring further research. This honest assessment of what remains unknown is appropriate given the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Deliquescent microscopic wetness likely occurs in many microbial habitats beyond leaf surfaces, including soil, rock surfaces, built environments, human and animal skin, and potentially extraterrestrial systems, with potential impacts on motility, communication, competition, and genetic exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C109 are speculative extrapolations from the findings. While the logic is sound (deliquescent substances are prevalent in these habitats), direct evidence for the occurrence and impact of microscopic wetness in these other environments is not provided. The citations support the prevalence of deliquescent substances but not the specific formation of microdroplets or their biological impacts in these contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "At 85% RH, bulk water evaporated in about 14 \u00b1 1 hr, during which cells attached, grew, and formed aggregates or pellicles, with the surface appearing macroscopically dry afterward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 describe basic experimental observations that are straightforward and well-documented. These provide the temporal and observational context for the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The introduction establishes that the phyllosphere is a globally important microbial habitat where bacteria face diurnal wet-dry cycles, that microscopic surface wetness from deliquescence exists on leaves during daytime, and that the interplay between droplet formation, bacterial colonization, and survival has not been systematically studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C30 establish the background and motivation for the study through citations to prior literature and statements about knowledge gaps. These are appropriately supported by references and accurately represent the state of the field. The identification of the research gap (C26) is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The authors hypothesized that microscale hydration conditions depend on cellular organization and that droplet size affects cell survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 state the central hypotheses of the study, which are clearly articulated and subsequently tested through the experiments. The hypotheses are well-motivated by the background literature and knowledge gaps identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C46",
+      "C58"
+    ],
+    "result": "The phenomenon was observed on both glass and hydrophobic polystyrene substrates, and droplets were not formed through the wetting direction of deliquescence but rather through prevention of complete evaporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C58 provide important methodological validation and mechanistic clarification. The observation on different substrates (Figure 2\u2014figure supplement 1) strengthens generalizability, and the clarification about the mechanism (C58) is important for accurate interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The simplified experimental system may not capture survival strategies triggered by environmental cues or community interactions. Natural leaf surfaces differ in topography, hydrophobicity, and chemical composition, all of which likely affect microscopic wetness formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 appropriately acknowledge limitations of the experimental system and discuss how natural leaf surfaces differ from the simplified model. These are reasonable caveats supported by citations about leaf surface properties. The acknowledgment of limitations strengthens rather than weakens the overall work.",
+    "result_type": "MINOR"
+  }
+]

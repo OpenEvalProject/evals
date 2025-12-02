@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Prior research established that context promotes object recognition, but the prevailing view held that face and body neurons in primate IT cortex process categories independently, with face neurons not responding to bodies and vice versa. These studies typically presented objects in isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C6, C7, C8, and C9 accurately characterize prior work through appropriate citations (Bar and Ullman 1996; Meeren et al. 2005; Rice et al. 2013; Afraz et al. 2015; Freiwald and Tsao 2010; Chang and Tsao 2017; Issa and DiCarlo 2012). These claims establish the scientific context and motivation for the current study by highlighting the apparent discrepancy between behavioral evidence for contextual effects and neurophysiological evidence for independent category processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C11",
+      "C12"
+    ],
+    "result": "The main finding is that category-selective neurons, specifically face-selective neurons, do not code categories in isolation but are sensitive to object relationships reflecting statistical regularities of the environment. Face-selective neurons respond to parts of images where contextual cues (e.g., a body) indicate a face ought to be, even when no face is present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C11, and C12 represent the central findings of the manuscript and are well-supported by the extensive experimental data presented in Figures 1-7. The claims are consistent across multiple experiments (occluded faces, masked faces, face-swapped images, body orientation manipulations) and replicated in two monkeys across multiple recording sites (C10, C13). Statistical significance is demonstrated with appropriate tests (C34, C41, C47) and the effects are shown at both population and individual channel levels (C33, C40, C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Recordings were made from fMRI-defined face-selective regions (ML and PL) in two macaque monkeys using chronically implanted multi-electrode arrays. The recorded neurons showed strong face selectivity with small receptive fields in central visual space, consistent with prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C13-C21, and C120-C129 describe the experimental methodology and basic characterization of recorded neurons. The methods are clearly described with appropriate detail about subjects, recording equipment, behavioral tasks, and ethical approvals. The face selectivity indices (C16, C17, C18, C20, C21) are quantified and consistent with prior work (C19), providing confidence in the recording sites. The use of fMRI-guided targeting (C13) and characterization with isolated stimuli (C15) follows established best practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Face-selective neurons showed spatially specific responses to faces in complex natural images, with activity emerging earlier in PL than ML. Eye-specific activity appeared first, followed by responses to the rest of the face at longer latencies. This hierarchical processing persisted even when eyes were occluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 describe the spatial and temporal response properties of face-selective neurons to complex scenes. The findings are supported by Figures 1-2 and supplementary figures. The hierarchical organization (C25, C30) is consistent with prior anatomical and physiological work (Grimaldi et al. 2016; Moeller et al. 2008). The eye-specific responses (C26, C28) replicate prior findings (Issa and DiCarlo 2012). The observation that PL activity precedes ML even for eyeless faces (C30, C31) provides important evidence for bottom-up processing of contextual information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Face-selective neurons in ML responded to occluded faces (where the face was covered by objects) more than to non-face parts of images. These responses were statistically significant, apparent in individual channels, and occurred with a ~30-40 ms delay compared to intact faces, similar to the latency for eyeless faces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 describe the occluded face experiment, a key finding supported by Figure 3 and supplementary figures. Statistical significance is demonstrated with appropriate t-tests corrected for multiple comparisons (C34). The effect is shown at both population and single-channel levels (C33). The latency analysis (C35-C38) provides important mechanistic insight by linking the occluded face response to the eyeless face response, suggesting a common underlying mechanism. The quantification of response timing strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Face-selective neurons in ML responded to masked faces (people wearing masks, baskets, or paper bags). These responses were statistically significant, apparent in individual channels, and had similar latencies to eyeless faces. The effect was more prominent in ML than PL, suggesting hierarchical processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 describe the masked face experiment, supported by Figure 4 and supplementary figures. The findings parallel the occluded face results, strengthening the overall conclusion. Statistical significance is demonstrated (C41), and the effect is shown at multiple levels of analysis (C40). The comparison between ML and PL (C43, C44, C45) provides evidence for hierarchical processing of contextual information, with stronger effects at later stages of the ventral visual pathway. The lack of significance in PL for masked faces (C44) is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In face-swapped images where non-face objects were positioned above bodies, face-selective neurons in ML responded more strongly to objects above bodies than to the same objects elsewhere. This body facilitation effect was statistically significant and had similar latency to eyeless faces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 describe the face-swapped image experiment, supported by Figure 5 and supplementary figures. This experiment provides critical evidence that the contextual effect is specifically driven by the spatial relationship between bodies and the expected face location, not merely by the presence of bodies in the image. Statistical significance is demonstrated (C47), and the effect is shown at both population and individual channel levels (C46). The latency analysis (C48) links this effect to the occluded and masked face responses. The lack of significance in PL (C49) is consistent with hierarchical processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Bodies facilitated responses to face-ambiguous stimuli (face-shaped noise, face outlines, non-face objects) but not to intact faces, suggesting a ceiling effect. Face-selective neurons responded to the region above a body even without a foreground object, indicating that body presence below the receptive field is sufficient to drive these cells in the absence of a clear face.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 describe experiments testing the specificity of body facilitation, supported by Figure 6 and supplementary figures. The ceiling effect interpretation (C56) is reasonable given the data showing no facilitation for intact faces (C51) but significant facilitation for face-ambiguous stimuli (C52, C54, C55). The response to headless bodies (C57) provides strong evidence that the effect is not simply due to the presence of face-like features in the occluding objects. The conclusion that body presence is sufficient (C58) is well-supported by the data, though alternative interpretations involving top-down processes cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Face-selective neurons responded maximally to body positions where a face would be expected, largely irrespective of body orientation. The preferred body orientation varied systematically to position the expected face location within the receptive field center. Neurons also responded to body extremities (feet), suggesting that 'end-of-body' serves as a cue for face location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 describe the body orientation experiment, supported by Figure 7A. This experiment provides crucial evidence that the contextual effect reflects information about where a face ought to be for a given body configuration, not simply a response to bodies positioned below the receptive field. The systematic variation in preferred orientation (C60) and the composite orientation maps demonstrate sophisticated spatial processing. The response to feet (C61, C62) suggests multiple cues for face expectation. The conclusion (C63) that responses reflect face expectation rather than simple body detection is well-supported, though the inference about 'information' representation should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Inversion effects were modest for intact faces with bodies but substantial for face-shaped noise with bodies, suggesting body facilitation is maximal when face presence is ambiguous and in typical spatial configurations. Face-selective neurons were responsive to headless bodies at various positions but most strongly when bodies were positioned below the activating region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 describe inversion experiments, supported by Figure 7B. The differential inversion effect for intact faces versus face-shaped noise (C64, C65, C68) provides additional evidence for the ceiling effect interpretation. The citation of prior work on inversion effects (C66) appropriately contextualizes the findings. The speculative interpretation (C67) is clearly marked as such. The preference for upright configurations with face-ambiguous stimuli (C69, C70) and for bodies positioned below the receptive field (C71) supports the conclusion that contextual responses are strongest for typical spatial configurations (C72). However, the number of images tested may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Analysis of AlexNet, a convolutional neural network trained on natural images, showed that face and body representations merge in deeper layers without explicit training on faces or bodies. This overlap was specific to trained networks and suggests that co-occurrence in training images drives representational overlap through shared variance in informativeness for class labels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C92 describe the computational modeling analysis, supported by Figure 8 and supplementary figures. The analysis demonstrates that face-body representational overlap can emerge through learning without explicit face-body training (C86), providing a plausible mechanistic account for the neurophysiological findings. The comparison between trained and untrained networks (C85) is critical for establishing that the effect is learning-dependent. The interpretation about shared variance (C88, C89) is reasonable. However, the limitations of convolutional networks for modeling retinotopic specificity are appropriately acknowledged (C91, C92). The speculation about unsupervised learning (C90) is clearly marked as such. The analysis would be strengthened by testing additional network architectures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The current findings reconcile apparent discrepancies with prior work showing independence of face and body processing. While face neurons don't respond to bodies presented in isolation at fixation, they do respond to bodies positioned to indicate face location. Some prior fMRI studies found similar facilitation effects. The contextual effects emerge rapidly in posterior face patches, suggesting feedforward rather than purely top-down mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C109 contextualize the findings relative to prior work and discuss mechanisms. The reconciliation with prior neurophysiology (C93, C96-C99) is well-argued: prior studies presented stimuli at fixation, whereas the current study varied spatial position. The speculation about how prior studies might have obtained different results (C100) is reasonable but untestable. The citations to prior fMRI work (C101-C106) appropriately acknowledge related findings. The discussion of fMRI limitations (C107) is accurate. The conclusion about feedforward mechanisms (C109) is supported by the latency analysis showing PL responses precede ML responses, though the possibility of rapid feedback cannot be completely excluded. The alternative hypothesis about experience-sculpted feedforward inputs (C110) is clearly marked as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors propose that face-selective neurons are sensitive to statistical regularities of cumulative experience, with facilitation reflecting a lifetime of experiencing faces with bodies. They suggest that retinotopic organization guides development of category selectivity and contextual learning, potentially explaining why face and body patches emerge in adjacent cortical regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C119 present the authors' theoretical framework and developmental hypothesis. While the hypothesis is plausible and consistent with the data, it remains speculative (C110, C113, C116, C117 are explicitly marked as proposals/hypotheses). The citations to prior work on retinotopic organization and development (C114, C118) provide some support. However, the current study does not directly test developmental predictions or manipulate experience, so the developmental claims cannot be evaluated as supported by the present data. The hypothesis generates testable predictions (e.g., effects of developmental experience manipulation) but requires future work for validation. The connection to adjacent face and body patches (C117) is an interesting prediction but indirect.",
+    "result_type": "MAJOR"
+  }
+]

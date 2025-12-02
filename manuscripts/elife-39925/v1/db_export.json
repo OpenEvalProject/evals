@@ -1,0 +1,2288 @@
+{
+  "submission": {
+    "id": "d90da517-20e3-4dfd-8995-01a05edf23f9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:26:39.433640Z",
+    "updated_at": "2025-12-02T07:26:39.433640Z"
+  },
+  "content": [
+    {
+      "id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "submission_id": "d90da517-20e3-4dfd-8995-01a05edf23f9",
+      "content_type": "manuscript",
+      "content_text": "# Glucose intake hampers PKA-regulated HSP90 chaperone activity\n\n## Authors\n\n- Yu-Chen Chen<sup>1</sup> ([ORCID: 0000-0001-8434-7084](https://orcid.org/0000-0001-8434-7084))\n- Pei-Heng Jiang<sup>1</sup>\n- Hsuan-Ming Chen<sup>1</sup>\n- Chang-Han Chen<sup>1</sup>\n- Yi-Ting Wang<sup>2</sup>\n- Yu-Ju Chen<sup>2</sup>\n- Chia-Jung Yu<sup>3</sup>\n- Shu-Chun Teng<sup>1</sup> ([ORCID: 0000-0002-6492-2560](https://orcid.org/0000-0002-6492-2560)) \u2020\n\n### Affiliations\n\n1. Department of Microbiology, College of Medicine National Taiwan University Taipei Taiwan\n2. Institute of Chemistry, Academia Sinica Taipei Taiwan\n3. Department of Cell and Molecular Biology, College of Medicine Chang Gung University Tao-Yuan Taiwan\n4. Department of Thoracic Medicine Chang Gung Memorial Hospital Tao-Yuan Taiwan\n5. Center of Precision Medicine National Taiwan University Taipei Taiwan\n\n\u2020 Corresponding author\n\n## Abstract\n\nAging is an intricate phenomenon associated with the gradual loss of physiological functions, and both nutrient sensing and proteostasis control lifespan. Although multiple approaches have facilitated the identification of candidate genes that govern longevity, the molecular mechanisms that link aging pathways are still elusive. Here, we conducted a quantitative mass spectrometry screen and identified all phosphorylation/dephosphorylation sites on yeast proteins that significantly responded to calorie restriction, a well-established approach to extend lifespan. Functional screening of 135 potential regulators uncovered that Ids2 is activated by PP2C under CR and inactivated by PKA under glucose intake. ids2\u0394 or ids2 phosphomimetic cells displayed heat sensitivity and lifespan shortening. Ids2 serves as a co-chaperone to form a complex with Hsc82 or the redundant Hsp82, and phosphorylation impedes its association with chaperone HSP90. Thus, PP2C and PKA may orchestrate glucose sensing and protein folding to enable cells to maintain protein quality for sustained longevity.\n\n## Introduction\n\nAging is a complex process in which cells gradually lose their ability to execute regular functions and organs show increased susceptibility to disease (Harman, 1981). The causes of aging have been attributed to nine hallmarks (L\u00f3pez-Ot\u00edn et al., 2013). However, crosstalk between these hallmarks is rare. Calorie restriction (CR) is the most effective intervention known to extend lifespan (McCay et al., 1989), improve organism function, and retard cell senescence in a variety of species from yeast to mammals (McCay et al., 1989; de Cabo et al., 2015; de Cabo et al., 2014; Lin et al., 2002). CR delays the onset and/or reduces the incidence of many age-related diseases, including cancer, diabetes, and cardiovascular disorders (Mattson and Wan, 2005; Roth et al., 2001).\n\nBudding yeast has been perceived as an advantageous model to conveniently examine and isolate new components in aging-related pathways. In yeast, CR can be modeled by reducing the glucose concentration of the media from 2% as the ad libitum concentration to 0.5% (or lower), resulting in a 30\u201340% increase in lifespan (Lin et al., 2002; Lin et al., 2000). Two different lifespan paradigms are established in querying the lifespan of yeast cells: the replicative lifespan (Tesch et al., 1978) and chronological lifespan (CLS). RLS denotes the number of daughter cells that a single mother cell can generate before senescence, representing the division potential of the mother cell (Mortimer and Johnston, 1959), whereas CLS refers to the length of time for which yeast cells remain viable in a non-dividing state (Longo and Fabrizio, 2012).\n\nCR exerts anti-aging effects by regulating metabolism (Kapahi et al., 2004) and enhancing stress resistance (Fabrizio et al., 2001). These processes down-regulate the amino acid-sensing mTOR and the glucose-sensing PKA signaling pathways (Wei et al., 2008). Attenuation of Tor1, Sch9, and PKA kinases promotes activation of Rim15 kinase-mediated transcription factors Msn2/4 and Gis1 to increase pathways in glycogen accumulation, antioxidant enzyme formation, heat shock protein expression, and autophagy (Fontana et al., 2010). Moreover, CR-mediated Tor1 repression enhances Snf1 kinase (the mammalian AMP kinase homologue in yeast) (Orlova et al., 2006) to extend CLS by promoting respiration, acetyl-CoA levels, and autophagy (Lin et al., 2003; Wierman et al., 2017; Wang et al., 2001; Wright and Poyton, 1990). Although these signaling pathways regulated by CR-modulated phosphorylation have been studied thoroughly, we speculate that there are other unknown regulators remaining to be explored. Here, we developed a screening procedure to discover additional pathways regulated under CR.\n\n## Results\n\n### A phosphoproteomic screening method identified Ids2 dephosphorylation under CR\n\nTo explore anti-aging mechanisms, we performed mass spectrometry-based quantitative phosphoproteomic profiling to globally define the phosphorylation and dephosphorylation sites of regulated proteins under CR. The triplicate phosphoproteome maps generated from each calorie-restricted or normal glucose-treated sample were annotated with the phosphopeptides of unambiguously identified phosphorylated amino acid sequences (Figure 1\u2014figure supplement 1). Over 2672 unique phosphopeptides on 949 proteins were identified (p\u00a0<\u00a00.05, Figure 1\u2013source file 1). The rightward shift in the 2% glucose/0.5% glucose ratio of phosphopeptides in Figure 1\u2014figure supplement 1B indicated that the abundance of phosphopeptides decreased under 0.5% glucose, which is in agreement with that many kinases, such as Tor, Sch9, and PKA, were downregulated under CR (Wei et al., 2008). Among these phosphopeptides, 318 proteins (508 phosphopeptides) showed a 2-fold increase under 0.5% glucose, meaning that these peptides were phosphorylated under a glucose-limited CR environment; 427 proteins (825 phosphopeptides) showed a 2-fold decrease under 0.5% glucose, indicating that these peptides were phosphorylated under a glucose-enriched environment; and 113 proteins contained both increased and decreased phosphopeptides on the same protein under 0.5% glucose.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39925/elife-39925-fig1-v1.jpg)\n\n**Figure 1.:** (A) A schematic diagram highlights the steps in candidate screening. (B) Growth curves at 30\u00b0C were monitored in triplicate and represented as the mean\u00a0\u00b1S.E. (standard errors). (C) Tenfold serially diluted cells were grown under heat shock (37\u00b0C) in 2% glucose or at 30\u00b0C in 3% glycerol. WT and S148D mutants were compared using Student\u2019s t-test. *, p\u00a0<\u00a00.05. **, p\u00a0<\u00a00.01. (D) For the chronological lifespan assay, CFU viability was determined. 10-fold serial dilutions were spotted on YEPD plates. Quantitative CLS assay was assessed in triplicate by colony-forming capacity on YEPD plates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39925/elife-39925-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Experimental workflow for quantitative proteomics-identified CR-regulated proteins in yeast. (B) Venn diagrams represent the increased abundance of phosphorylated peptides (proteins) under normal conditions compared to CR by over 50% (log2\u00a0>1) or the decreased abundance of phosphorylated peptides (proteins) under normal conditions versus CR treatment by over 50% (log2 < \u22121). The distribution of log2 (2% glucose/0.5% glucose) ratios for phosphopeptides are illustrated by a density plot. (C) GO term analysis of phosphorylated proteins regulated by CR. The top six enriched biological processes are shown. (D) Some phosphoproteins regulated by CR are factors in the glucose-sensing pathway. The phosphoproteins with a greater than 2-fold change are labeled with different colours to indicate their ratios. The phosphoproteins containing both phosphorylation and dephosphorylation sites under CR are labeled in yellow.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39925/elife-39925-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Phosphorylation site mutants as indicated were spotted onto YPD plates. Images were taken after 3 days under different stresses. Of the 53 phosphorylation site mutants, only some representative examples are shown here.\n\nTo discover additional pathways regulated by phosphorylation under CR, we designed an in silico and functional screening procedure (Figure 1A). Harman, 1981 total of 632 proteins quantified with 2-fold differential phosphorylation to Gene Ontology (GO) analysis (Mi et al., 2013). Among them, 334 phosphoproteins were annotated to participate in biological processes including glycolysis (p\u00a0<\u00a00.01), cytokinesis (p\u00a0<\u00a00.01), signal transduction (p < 1.0 \u00d7 10\u22123), cell communication (p < 1.0 \u00d7 10\u22123), transcription (p < 1.0 \u00d7 10\u22125), and stress response (p < 1.0 \u00d7 10\u22124) (Figure 1\u2014figure supplement 1C). Many instances of phosphorylation regulation in our database coincided with the existing CR/nutrient-sensing pathways (Dilova et al., 2007), such as PKA, Tor, and Snf1 (Wei et al., 2008) (Figure 1\u2014figure supplement 1D). In previous studies, CR has been shown to extend lifespan through an increase in respiration (Lin et al., 2002), augmentation of cellular protection (Wei et al., 2008), and induction of autophagy (Morselli et al., 2010). Thus, we challenged the deletion strains of 135 candidates in the top categories of the GO analysis with various stresses, including heat shock, oxidative stress, DNA replicative stress, and/or nonfermentable carbon growth. We also verified the efficiency of autophagy by a GFP-Atg8 cleavage assay (Cheong et al., 2005). Phenotypic analyses exhibited that 53 deletion strains showed defective phenotypes (Figure 1\u2014source data 2 and Figure 1\u2014figure supplement 2). Phosphomimetic and/or dephosphomimetic mutations of these 53 candidates were generated to verify the functions observed in the deletion strains, and only the ids2-S148D phosphomimetic strain displayed a growth defect in heat shock and glycerol (Figure 1B). According to our mass spectrometry data (Figure 2\u2014figure supplement 1A), S148 on Ids2 was identified (Ids2 RRSS148IQDVQWIR) to be dephosphorylated under CR. The growth defect under CR was observed in ids2\u0394 and ids2-S148D cells (Figure 1C). Moreover, the ids2-S148D phosphomimetic strains showed shortened CLS (Figure 1D). Ids2 is involved in the modulation of Ime2 during meiosis (Sia and Mitchell, 1995); however, it is a functionally unknown protein in the mitotic cell cycle. We, therefore, speculated that Ids2-S148 phosphorylation may play an important role in stress response and lifespan control.\n\n### PKA phosphorylates Ids2 upon glucose intake, and PP2C dephosphorylates Ids2 under CR\n\nBecause the protein level of Ids2 did not change under CR (Figure 2\u2014figure supplement 1B), we hypothesized that the phosphorylation status of Ids2 may modulate its function. To verify the CR-mediated Ids2 phosphorylation, an antibody against S148 phosphorylation was generated (Figure 2\u2014figure supplement 1C). Western blot analysis showed that Ids2-S148 phosphorylation decreased under CR (Figure 2A and Figure 2\u2014figure supplement 1D) but not under nitrogen starvation or TOR pathway inhibition (Figure 2B and Figure 2\u2014figure supplement 1D). Based on the PhosphoGRID and pkaPS databases (Neuberger et al., 2007), Ids2 RRSS148IQD may be phosphorylated by PKA (score\u00a0=\u00a01.57). Deletion of one PKA catalytic subunit, TPK3, reduced the Ids2 phosphorylation significantly (Figure 2C), suggesting that Tpk3 may phosphorylate S148. Deletion of RAS2 or GPA2, the two PKA upstream regulators did not affect Ids2 phosphorylation (Figure 2\u2014figure supplement 1E), implying that they act in a redundant manner. An in vitro kinase assay demonstrated that GST-Ids2 was phosphorylated by wild-type PKA kinase from the extract of the KT1115 strain (Figure 2D) or by the bovine heart PKA catalytic subunit C (Figure 2\u2014figure supplement 1F) but not by the extract of the PKA kinase-dead strain (Figure 2D). These results indicated that PKA may directly phosphorylate Ids2-S148.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39925/elife-39925-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013C, E) Strains were transformed with pRS426-Ids2-Myc13, and lysates were examined by Western blot analysis with the indicated antibodies. The numbers below are the means of the intensity ratios of Ids2-p148/Myc compared with that of WT treated with 2% glucose. (B) Overnight cells were refreshed in medium with different treatments for 3 hr. (D,F) In vitro kinase and phosphatase assays were conducted as described in the Methods section. (G) Cells were spotted in 10-fold dilutions on YEPD or YEPG plates and grown at 30 or 37\u00b0C.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39925/elife-39925-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The mass spectrum of the phosphopeptide Ids2 S148 recorded in the linear mode. (B) Lysates of the Ids2-Myc13 strain from 2% and 0.5% glucose cultures were subjected to western blot analysis. The numbers below are the intensity ratios of Myc in 0.5% glucose compared with that in 2% glucose. (C) Peptide spotting showed the specificity of the phospho-Ids2-S148 antibodies. (D) The phosphorylation level of Ids2-S148 under different conditions. The WT strain was transformed with pRS426-Ids2-Myc13 (WT) or pRS426-Ids2-S148A-Myc13 (ids2-S148A). Overnight cultures of these strains were refreshed to OD600\u00a0=\u00a00.3 in SC-Ura with 4%, 2%, 1%, 0.5%, 0.25%, and 0.125% glucose for 3 hr. For nitrogen starvation, the overnight culture was refreshed to OD600\u00a0=\u00a00.3 in SC-Ura with 2% glucose for 3 hr and then transferred to SC medium lacking nitrogen (SD-N) with 2% glucose for 2 hr. Cell lysates were prepared for Western blot analysis. The numbers below are the intensity ratios of Ids2-p148/Myc compared with those of WT. (E) WT and deletion strains were transformed with pRS426-Ids2-Myc13. Cells were grown in SC medium with 2% glucose, and lysates were prepared for Western blot analysis. (F) In vitro PKA activity was assayed using bovine heart catalytic subunit C (Cb), and the PKA inhibitor PKI 6\u201322 was used as a negative control. GST-Ids2 and GST-Ids2-S148A served as substrates. Activities were detected by Western blot analysis using the phosphospecific antibody. The total amount of Ids2 protein was detected by a GST antibody.\n\nTo determine the phosphatase(s) dephosphorylating Ids2-S148, we examined the phosphorylation levels in the mutants of major phosphatases. The Ids2 phosphorylation level increased in ptc2\u0394 ptc3\u0394 cells compared with that in the wild-type (Figure 2E). An in vitro phosphatase assay showed that recombinant Ptc2 removed the S148 phosphorylation (Figure 2F), indicating that PP2C may directly dephosphorylate Ids2. Moreover, a spotting assay showed that the ids2-S148A mutation could rescue the growth defect in the ptc2\u0394, ptc3\u0394 and ptc2\u0394 ptc3\u0394 mutants (Figure 2G), suggesting that the PP2C phosphatases (Sharmin et al., 2014) may dephosphorylate Ids2.\n\n### Ids2 interacts with chaperone HSP90 in a phosphorylation-modulated manner\n\nTo understand the molecular mechanism that Ids2 participates in under CR, we searched for its interaction partners via tandem affinity purification (TAP) and mass spectrometry analysis (Liu et al., 2015). The bead-bound proteins were separated (Figure 3 and Figure 3\u2014figure supplement 1), and spectrometry analysis revealed two closely related proteins, Hsc82 and Hsp82 (Schopf et al., 2017), in the yeast HSP90 family (Figure 3\u2013source file 1). Expression of Hsc82 is tenfold higher than that of Hsp82 under normal conditions, suggesting that Hsc82 plays a more prominent role (Schopf et al., 2017). The co-immunoprecipitation assay showed that Hsc82-HA3 co-precipitated with Ids2-Myc13 (Figure 3B). A yeast two-hybrid analysis revealed that amino acids 92\u2013256 of Ids2 interact with amino acids 272\u2013579 of Hsc82 (Figure 3\u2014figure supplement 2). Immunoprecipitation of Ids2-S148D with Hsc82 was significantly decreased, while the Ids2-S148A mutation increases the interaction with Hsc82 (Figure 3C). In addition, the phosphomimetic S148D mutation of purified recombinant Ids2 impaired the Ids2-Hsc82 interaction in the affinity pull-down assay (Figure 3D), suggesting that the phosphorylation of S148, which is located within the interacting motif (92-256), may inhibit the Ids2-Hsc82 interaction. To examine the interaction between Ids2 and Hsc82 under CR, an overnight culture was refreshed in medium with 2% or 0.5% glucose. As expected, CR significantly increased the Ids2-Hsc82 interaction (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39925/elife-39925-fig3-v1.jpg)\n\n**Figure 3.:** (A) A silver-stained gel of the affinity-purified Ids2. Both HSP90 families, Hsc82 and Hsp82, were identified by LC-MS/MS analysis. (B) A co-immunoprecipitation assay was conducted using chromosomal-tagged Ids2-Myc13 and Hsc82-HA3. (C) Co-immunoprecipitation assay between Hsc82 and Ids2 mutants. The levels of signal compared with that of WT are shown below. (D) Purified recombinant GST-Ids2 and His6-Hsc82 proteins were subjected to a His-tagged Metal Affinity Purification assay. (E) Tagged strains were incubated in 2% (normal) or 0.5% (French et al., 2013) glucose. Ids2-Myc13 was used to co-immunoprecipitate Hsc82-HA3. The numbers below are the means of the intensity ratios of HA/Myc compared with that of WT.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39925/elife-39925-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A silver-stained gel of the affinity-purified Ids2. Cells expressing TAP tag alone were served as a control. The corresponding band of HSP90 was detected by western blot analysis using an HSP90 antibody.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39925/elife-39925-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) The upper panel shows a schematic diagram of various pGBDU-Ids2 truncations. The two-hybrid assay was conducted using various truncated Ids2 proteins as the bait and full-length Hsc82 as the prey. Cells were restreaked onto SC-Leu-Ura-Ade-His glucose plates to investigate the bait-prey reciprocity. (B) The upper panel depicts a schematic diagram of various Hsc82 truncations. The assay was conducted as described in (A) to define the Ids2-Hsc82 interaction domain in Hsc82.\n\n### Ids2 acts as a co-chaperone in the HSP90-mediated protein-folding process\n\nHSP90 is an essential eukaryotic chaperone with a well-established role in folding and maintenance of proteins that are associated with the cell signaling response, such as kinases and hormone receptors (Schopf et al., 2017). However, the active participation of co-chaperone proteins at various stages of the chaperone folding cycle is crucial for the completion of the folding process (Li et al., 2012). Due to the physical interaction between Ids2 and Hsc82, we speculated that Ids2 may function as either a substrate or a regulator of HSP90. Deletion of HSC82 did not change the stability of Ids2, suggesting that Ids2 may not be a substrate of Hsc82 (Figure 4\u2014figure supplement 1). Many co-chaperones can regulate HSP90 ATPase, an activity essential for its chaperoning action (Richter et al., 2004; Wolmarans et al., 2016). To test whether Ids2 could modulate the ATPase activity of Hsc82, we performed an Hsc82 ATPase assay with increasing concentration of Ids2 or Ids2-S148D. The assay revealed that Ids2 triggers ATPase activity of Hsc82 and phosphorylation of Ids2 attenuates the reaction (Figure 4A). Hsc82 is required for mitochondrial F1-ATPase assembly (Francis and Thorsness, 2011). The ids2\u0394 and ids2-S148D strains displayed a growth defect in glycerol (Figure 1C), and formed white colonies (Figure 4B), which are caused by the loss of mitochondrial function in the W303-1A strain (Wang et al., 2007), implying that the phosphorylation of Ids2 may hamper the Hsc82 chaperone activity and thereby diminish the mitochondrial function.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39925/elife-39925-fig4-v1.jpg)\n\n**Figure 4.:** (A) The purified Hsc82 was mixed with Ids2 or Ids2-S148D, and the ATPase reaction was incubated for 90 min at 37\u00b0C. Error bars represent the standard deviation (SD) calculated from three independent experiments. (B) Cells, as indicated, were streaked on SC glucose, and the plate image was captured after 3 days. (C) An in vivo chaperone assay was conducted using an exogenously expressed firefly luciferase, and Western blot analysis was performed. (D) Endogenously expressed Gln1-GFP in WT and mutant cells was measured after 45 min without glucose. At least 200 cells were counted for each strain (**, p\u00a0<\u00a00.01, Student\u2019s t-test, two-tailed). The mRNA levels of GLN1 were determined by quantitative RT-PCR relative to the housekeeping gene, ACT1. Error bars represent SD for three biological replicates.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39925/elife-39925-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Chromosomally tagged Ids2-Myc13 and Hsc82-HA3 strains were cultured under normal (30\u00b0C) or heat-shock (37\u00b0C) conditions for 3 hr. Cell lysates were examined by Western blot analysis using Myc or HA antibodies. Actin served as a loading control.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39925/elife-39925-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) For the GR maturation assay, cells were transformed with plasmids encoding the mammalian GR and the \u03b2-galactosidase reporter (Schena and Yamamoto, 1988). After the addition of synthetic hormone to cultures for five hours, \u03b2-galactosidase activity was quantified. Results are mean\u00a0\u00b1SD of three experiments (**, p\u00a0<\u00a00.01; ***, p\u00a0<\u00a00.001; one-way ANOVA) (B) Cells containing v-Src or c-Src controlled by a GAL promoter were grown on plates with glucose or galactose. (C) CLS of indicated strains were performed in medium containing 2% glucose or 0.5% glucose (CR). Quantitative CLS assay was assessed by colony-forming capacity on YEPD plates.\n\nWe next asked whether Ids2 acts as a co-chaperone of HSP90 in the establishment of the HSP90-mediated protein-folding process. A firefly luciferase reporter assay was used to determine the ability of HSP90-dependent protein refolding (Distel et al., 1992). Western blot analysis revealed that the protein abundance of firefly luciferase was slightly reduced in ids2\u0394 cells compared to that in hsc82\u0394 cells at 30\u00b0C; however, luciferase expression was completely lost in ids2-S148D cells, while ids2-S148A cells expressed an amount of firefly luciferase equivalent to that of the wild-type (Figure 4C). Meanwhile, firefly luciferase could not be detected in the ids2\u0394 and hsc82\u0394 strains at 37\u00b0C. Since the accumulation of misfolded proteins would result in degradation (Distel et al., 1992), a mutant HSP90 chaperone or a dissociation of the chaperone folding network could cause mass accumulation and subsequent degradation of HSP90-dependent substrates. To further investigate the influence of phosphorylated Ids2 on the chaperone function of Hsc82, we conducted the glucocorticoid receptor (GR) maturation (Schena and Yamamoto, 1988) and v-Src toxicity (Taipale et al., 2012; Nathan and Lindquist, 1995) assays. GR activities in the ids2\u0394 and ids2-S148D strains decreased about 30% compared with that in the wild-type cells (Figure 4\u2014figure supplement 2A). Consistently, the v-Src toxicity, which is strictly dependent on yeast HSP90 in vivo (Taipale et al., 2012; Nathan and Lindquist, 1995), reduced in the ids2\u0394 and ids2-S148D strains (Figure 4\u2014figure supplement 2B). Taken together, these findings further elucidate that Ids2 may act as a co-regulator for the chaperone activity of HSP90.\n\nProtein aggregates are found in a variety of diseases, including type II diabetes, Parkinson\u2019s disease, and Alzheimer\u2019s disease (Chiti and Dobson, 2017). In yeast, many cellular protein aggregates form during aging, for example, Gln1 aggregates with HSP90 upon glucose deprivation and cellular aging (O'Connell et al., 2014). Thus, we speculated that compromising the function of Ids2 may lead to aggregation of Gln1. We examined the Gln1-GFP localization in ids2 phosphomimetic mutants under glucose deprivation (Figure 4D). The number of Gln1 foci in ids2-S148D mutants was dramatically increased compared to that in wild-type and ids2-S148A strains, implying that Ids2 phosphorylation may trigger Gln1 aggregation through down-regulation of HSP90 activity.\n\nTo determine if dephosphorylation of Ids2 is important for CR-induced lifespan extension, the CLS of ids2\u0394, hsc82\u0394, ids2-S148A and ids2-S148D were examined under CR (Figure 4\u2014figure supplement 2C). CLS of the ids2-S148A strains under CR prolonged to the same extent as that of the wild-type strain, while the ids2-S148D strains lost CR-mediated lifespan extension. Therefore, dephosphorylated Ids2 is critical for the extended lifespan under CR.\n\n## Discussion\n\nMultiple approaches that integrate large genomic and proteomic datasets have facilitated the identification of factors governing longevity. However, crosstalk between these aging pathways is rare. Both nutrient sensing and proteostasis control lifespan. Here, our phosphoproteomic screen mapped 632 yeast proteins containing CR-responsive phosphorylation, although we could not rule out the possibility that some of the alterations might be due to a change in the abundance of the protein itself. Coupled with functional analyses, we identified a co-chaperone protein, Ids2, which is inactivated under glucose intake. The PKA writer and PP2C eraser may orchestrate glucose sensing and protein folding, and phosphorylation of Ids2 impedes its association with HSP90. Thus, glucose concentration may influence the HSP90 chaperone activity, enabling cells to control protein quality under environmental conditions for sustained longevity (Figure 5). Our findings are consistent with a previous large-scale analysis of the genetic interaction between HSP90 and Ids2 (Franzosa et al., 2011). We predict that Ids2 is a key regulator in promoting cellular tolerance to stress. HSP90 is a conserved protein controlling late protein-folding steps. Interestingly, sequence alignments of Ids2 show a certain degree of sequence similarity across homologues of HSP90 co-chaperones (Figure 5\u2014figure supplement 1), including the S148 residue. It will be interesting to learn whether Ids2 homologues in other organisms also control lifespan.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39925/elife-39925-fig5-v1.jpg)\n\n**Figure 5.:** After glucose ingestion, cells convert ATP to cAMP to activate the PKA pathway.\u00a0Activated PKA phosphorylates co-chaperone Ids2 to dissociate it from the HSP90 chaperone and reduce chaperone function, eventually leading to protein unfolding, mitochondrial dysfunction, and protein aggregation. However, under CR, dephosphorylated Ids2 might be essential for the full function of HSP90 to extend lifespan.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39925/elife-39925-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Multiple sequence alignment was performed between Ids2 and its predicted homologues by Clustal Omega program (Sievers and Higgins, 2014). S148 of Ids2 is marked with an asterisk. H, Homo sapiens; M, Mus musculus; D, Drosophila melanogaster; C, Caenorhabditis elegans: Y, Saccharomyces cerevisiae.\n\nTwo lines of observation demonstrated that glucose intake modulates HSP90: high-glucose consumption boosts rat HSP90 expression (Yang et al., 2016) and PKA-mediated porcine HSP90\u03b1 phosphorylation enhances the translocation of endothelial HSP90\u03b1 to the cell surface (Lei et al., 2007). Through this study, we discovered a previously underappreciated glucose-mediated chaperone regulatory process: glucose concentration modulates HSP90 activity by PKA-dependent co-chaperone phosphorylation. Other than glucose consumption, heat shock (Verna et al., 1997) and oxidative stress (Petkova et al., 2010) have been shown to regulate the PKA pathway. Indeed, heat shock and oxidative stress both hamper Ids2 phosphorylation, suggesting that cells may use Ids2 dephosphorylation to stimulate chaperone activity for coping with various stresses.\n\nWe revealed that PP2C phosphatase antagonizes the function of PKA to extend lifespan. S. cerevisiae encodes seven phosphatases in the type 2C Ser/Thr phosphatase (PP2C) superfamily (Ptc1-Ptc7) (Ari\u00f1o et al., 2011), and Ptc1, Ptc2, and Ptc3 are negative regulators of MAPK (Warmka et al., 2001). In deficiencies of the MAPK pathway, cells elevate their stress tolerance ability to extend CLS (Aluru et al., 2017). Although currently there is no direct evidence that PP2C may control stress tolerance through the MAPK pathway, our study provides a means by which PP2C governs stress tolerance: PP2C removes PKA-mediated Ids2 phosphorylation to maintain ample chaperone activity.\n\nFinally, what is the role of Ids2 in protein folding at the molecular level? HSP90 forms a homodimeric complex, which consists of an N-terminal nucleotide-binding domain (NBD), a middle domain (M), and a C-terminal dimerization domain (CTD) (Ali et al., 2006). Co-chaperones can bind to specific domains of HSP90 to stabilize its conformation and further modulate its function. For example, yeast Sti1/Hop and human FKBP51 and FKBP52 utilize their tetratricopeptide (TPR) domains to interact with the C-terminal EEVD motif of HSP90 (R\u00f6hl et al., 2013) to stabilize chaperones. Moreover, the N-terminal region of co-chaperone Aha1 interacts with the M domain of HSP90 to stabilize its closed state conformation and thereby increase its ATPase activity (Meyer et al., 2004). Our domain mapping results determined that Ids2 also binds to the M domain of HSP90 and stimulates the ATPase activity of HSP90. In addition, Ids2 forms complex with Aha1 in our MS/MS data of the Ids2-TAP complex. Thus, it will be of interest to investigate the different controlling mechanisms and client specificities of Ids2 and Aha1 in modulating HSP90. Much work will be required to understand the mechanistic role of co-chaperone Ids2.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Myc (mouse monoclonal)</td>\n      <td>Roche</td>\n      <td>11667149001; RRID: AB_390912</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-HA (12CA5) (mouse monoclonal)</td>\n      <td>Roche</td>\n      <td>11583816001; RRID: AB_514506</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-ACTIN (rabbit polyclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>A2066; RRID:AB_476693</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Hsp90 (rabbit polyclonal)</td>\n      <td>PMID: 23434373</td>\n      <td></td>\n      <td>(1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GST (rabbit polyclonal)</td>\n      <td>GeneTex</td>\n      <td>GTX110736; RRID: AB_1949427</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Pgk1 (mouse monoclonal)</td>\n      <td>Invitrogen</td>\n      <td>459250</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-(P) S148-Ids2 (rabbit purified polyclonal antibody)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Firefly Luciferase</td>\n      <td>GeneTex</td>\n      <td>GTX125849; RRID: AB_11173184</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>EnzChek phosphate assay kit</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>E6646</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>KAPA SYBR FAST qPCR Master Mix Kit</td>\n      <td>Sigma- Aldrich</td>\n      <td>KK4600</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Calmodulin Sepharose 4B</td>\n      <td>GE Healthcare</td>\n      <td>17-0529-01</td>\n      <td>Affinity resin</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>TALON Superflow</td>\n      <td>GE Healthcare</td>\n      <td>28-9574-99</td>\n      <td>Affinity resin</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>IgG Sepharose 6 Fast Flow</td>\n      <td>Amersham Pharmacia Biotech AB</td>\n      <td>17-0969-01</td>\n      <td>Affinity resin</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Glutathione Sepharose 4 Fast Flow</td>\n      <td>GE Healthcare</td>\n      <td>17-5132-01</td>\n      <td>Affinity resin</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Deoxycorticosterone acetate</td>\n      <td>Sigma- Aldrich</td>\n      <td>D7000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Protease inhibitor cocktail tablets</td>\n      <td>Roche</td>\n      <td>4693132001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PKA, catalytic subunit, bovine heart</td>\n      <td>Millipore</td>\n      <td>539576</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Image J</td>\n      <td></td>\n      <td>RRID: SCR_003070</td>\n      <td>Image analysis</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>GraphPad Prism5</td>\n      <td></td>\n      <td>RRID: SCR_002798</td>\n      <td>Statistical analysis and graph representation</td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmids and yeast strains\n\nThe yeast strains and plasmids used in this study are listed in Supplementary file 1. Standard genetic and cloning methods were used for all constructions. pYES2-Ids2-TAP was generated by ligation of a PCR product from the Ids2-TAP HISMX6 strain into the KpnI-XhoI-treated pYES2. Kanamycin-resistant knockout strains were constructed through the transformation of kanamycin selection cassette fragments derived from PCR of BY4741. pRS306-ids2 and other yeast integrating plasmids were PCR-amplified and cloned into pRS306. Single-point or multiple-site mutations were introduced into pRS306-based plasmids by site-directed mutagenesis. The oligonucleotides designed for mutagenesis and double crossover are listed in S4 Data. To generate chromosomal mutants of these genes, the pRS306-based plasmids were linearized by the appropriate restriction enzymes and transformed into the wild-type strain. After confirming the pop-in structure by Southern blot analysis and 5-FOA selection, the URA3 pop-out mutants were selected and verified by PCR and sequencing. The C-terminal-tagged Gln1 was created by insertion of the PCR products of the GFP-HIS3 cassette.\n\n### Sample preparation for phosphopeptide enrichment\n\nYeast cells were grown in yeast extract peptone dextrose (YPD) medium (1% yeast extract, 2% bacto-peptone) supplemented with 2% (normal condition) or 0.5% glucose (calorie-restricted) for 3 hr and then harvested from log-phase growing cultures. Protein samples were extracted and subjected to gel-assisted digestion (Wang et al., 2010). First, proteins were fixed by sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) directly, and the gel was cut into five pieces for trypsin proteolytic digestion. Digested peptides were extracted three times for 30 mins each and completely dried by vacuum centrifugation at room temperature. Then, we used a homemade immobilized metal affinity column for phosphopeptide enrichment (Kanehisa and Goto, 2000). An Ultra-Performance LCTM system (Waters) was used for automated purification of phosphopeptides. The Ni2+ ions were removed, and the nitrilotriacetic acid resin was activated. The peptide samples from trypsin digestion were re-established in loading buffer and loaded into an activated immobilized metal affinity chromatography column. Finally, the unbound peptides were removed, and the bound peptides were eluted.\n\n### LC-MS/MS Analysis\n\nThe purified phosphopeptides were analyzed in triplicate LC-MS/MS by an LTQ-Orbitrap XL hybrid mass spectrometer interfaced with an Agilent 1100 series HPLC. Survey full-scan MS spectra were acquired in the Orbitrap (m/z 350\u20131600) with the resolution set to 60,000 at m/z 400 and the automatic gain control target at 106. The 10 most intense ions were sequentially isolated for an MS/MS scan using collision-induced dissociation and detection in the linear ion trap with previously selected ions and dynamic exclusion for 90 s. All the measurements in the Orbitrap were performed with the lock mass option for internal calibration. Raw MS/MS data from the LTQ-Orbitrap were transformed to msm files using RAW2MSM software (version 1.1). The msm files were searched using Mascot (version 2.2.1) against the Swiss-Prot Saccharomyces cerevisiae database (version 54.2, 6493 sequences) with the following exceptions: only tryptic peptides with up to two missed cleavage sites were allowed, the fragment ion mass tolerance was set at 10 ppm, and the parent ion tolerance was set at 0.6 Da. Phosphorylation (Portela et al., 2002) and oxidation (M) were specified as variable modifications. Peptides were considered identified if their Mascot individual ion score was greater than 20 (p-0.05). The false discovery rates for Orbitrap data were determined with a Mascot score greater than 20 (p-0.05). The quantitative analysis of phosphopeptides was performed with the SEMI label-free algorithm (Roskoski, 1983). The raw data files acquired from the LTQ-Orbitrap were converted into files of the mzXML format by the program ReAdW, and the search results in MASCOT were exported in Extensible Markup Language data (.xml) format. After data conversion, the confident peptide identification results (p-0.05) from each LC-MS/MS run were loaded and merged to establish a global peptide information list (sequence, elution time, and mass-to-charge ratio). Alignment of elution time was then performed based on the peptide information list using linear regression in different LC-MS/MS runs followed by correction of aberrational chromatographic shifts across fragmental elution-time domains. The mass spectrometry raw datasets were deposited to the ProteomeXchange Consortium (Vizca\u00edno et al., 2014;\u00a0http://proteomecentral.proteomexchange.org) dataset identifier PXD001368 and DOI 10.6019/PXD001368. The quantitation results for phosphopeptides listed in S1 Data were obtained using IDEAL-Q software and further checked manually (Ashburner et al., 2000).\n\n### Bioinformatics analysis - Gene Ontology enrichment analysis and KEGG orthology analysis\n\nTo functionally define the genes identified in this study, we performed Gene Ontology (GO), network, and pathway analyses using the PANTHER classification system (Mi et al., 2013;\u00a0http://www.pantherdb.org/). The genes showing a 2-fold change with Bonferroni multiple correction testing were annotated for GO terms. The spatial-compartmental relationship and the genome annotation between the phosphopeptides were defined through the use of KEGG (Kyoto Encyclopedia of Genes and Genomes) orthology, a genomic, biochemical and enzyme-substrate metabolism-based online database developed by the team of Minoru Kanehisa of Kyoto University (Dennis et al., 2003).\n\n### Stress resistance assay\n\nYeast cells were first grown overnight in yeast extract peptone (YEP) or synthetic complete\u00a0(Vizca\u00edno et al., 2014) glucose medium at 30\u00b0C. Then, cells were re-inoculated into fresh YEP or SC medium and grown to exponential phase (OD600\u00a0=\u00a00.5). Tenfold serial dilutions of indicated strains were spotted onto YEP with 2% glucose (YEPD), YEP with 3% glycerol (YEPG), or SC glucose plates containing various concentrations of chemicals: 0.04% Methyl methanesulfonate (MMS), 100 mM hydroxyurea, 10 mM H2O2, 400 mM LiCl, 50 \u00b5g/ml hygromycin B (Hyg B), and 5 nM rapamycin, and incubated at 30\u00b0C (normal) or 37\u00b0C (heat shock) for 2\u20133 days.\n\n### Chronological lifespan assay\n\nThe CLS assay of wild-type, ids2\u0394, ids2-S148A, and ids2-S148D strains were carried out as previously described (Postnikoff and Harkness, 2014; Longo et al., 2012). Viability at day 3, when the yeast had reached stationary phase, was defined as the point of 100% survival. Thereafter, aliquots from the culture were diluted according to the estimated survival and plated on YEPD plates every other day. After 3 days of incubation at 30\u00b0C, colony-forming units were calculated. A semi-quantitative CLS spotting assay was also performed as previously described (Smith et al., 2007). In brief, the same cell numbers from the culture were serially diluted 10-fold and spotted on YEPD plates every 2 days.\n\n### Tandem Affinity Purification\n\nTandem affinity purification of Ids2 was performed as previously described (Tsai et al., 2008) in the protocol from the Yeast Resource Center of the University of Washington. In brief, the BJ2168 pYES2-Ids2-TAP strain was inoculated into one liter SC with 2% raffinose and grown to log phase prior to adding galactose to induce protein overexpression. Cells were lysed with lysis buffer (150 mM NaCl, 1% Nonidet P-40, 50 mM Tris-HCl pH 7.5, and protease inhibitors) and with the use of glass beads and a homogenizer. Then, 250 \u00b5L of IgG Sepharose 6 Fast Flow prep in 1:1 slurry in NP-40 was added to the lysate and incubated at 4\u00b0C for 2 hr with gentle shaking. Beads were washed three times with lysis buffer and once with TEV cleavage buffer. Fifty units of TEV protease (Thermos) was added, and the solution was incubated overnight. The supernatant was collected, and calmodulin-binding buffer (25 mM Tris-HCl pH 8.0, 150 mM NaCl, 1 mM Mg acetate, 1 mM imidazole, 2 mM CaCl2, 10 mM \u03b2-mercaptoethanol, 0.1 % NP-40) and 200 \u00b5L of calmodulin sepharose beads (GE Healthcare) were added for a 2 hr incubation at 4\u00b0C. Samples were washed, and the bound proteins were eluted into fractions with calmodulin elution buffer (25 mM Tris-HCl, pH 8.0, 150 mM NaCl, 1 mM Mg acetate, 1 mM imidazole, 20 mM EGTA, 10 mM \u03b2-mercaptoethanol, 0.1 % NP-40). The eluents were combined and precipitated with 25% trichloroacetic acid. The samples were analyzed with 10% SDS-PAGE gels and stained with silver stain. Bands were cut out and trypsinized for mass spectrometry analysis.\n\n### One-dimensional SDS-PAGE combined nano-LC-MS/MS (GeLC-MS/MS)\n\nTo identify the Ids2-TAP interacting proteins, GeLC-MS/MS, one of the targeted proteomics approaches, was applied as described previously (Liu et al., 2015). Briefly, gel pieces were destained in 50 mM NH4HCO3/ACN (3:2, v/v) three times for 25 min each, dehydrated in ACN and dried in a SpeedVac. In-gel proteins were reduced with 10 mM dithiothreitol in 25 mM NH4HCO3 at 56\u00b0C for 45 min, allowed to stand at room temperature (RT) for 10 min, and then alkylated with 55 mM iodoacetamide in the dark for 30 min at RT. After the proteins were digested by sequencing grade modified porcine trypsin (1:100; Promega, Madison, WI) overnight at 37\u00b0C, peptides were extracted from the gel with ACN to a final concentration of 50%, dried in a SpeedVac, and then stored at 20\u00b0C for further use. For reverse-phase LC-MS/MS analysis, each peptide mixture was resuspended in HPLC buffer A (0.1% formic acid, Sigma, St. Louis, MO) and loaded into a trap column (Zorbax 300 SB-C18, 0.3\u00a0\u00d7\u00a05 mm, Agilent Technologies, Wilmington, DE) at a flow rate of 0.2 \u03bcL/min in HPLC buffer A. The salts were washed with buffer A at a flow rate of 20 \u03bcL/min for 10 min, and the desalted peptides were then separated on a 10 cm analytical C18 column (inner diameter, 75 \u03bcm). The peptides were eluted by a linear gradient of 0\u201310% HPLC buffer B (99.9% ACN containing 0.1% formic acid) for 3 min, 10\u201330% buffer B for 35 min, 30\u201335% buffer B for 4 min, 35\u201350% buffer B for 1 min, 50\u201395% buffer B for 1 min, and 95% buffer B for 8 min at a flow rate of 0.25 \u03bcL/min across the analytical column. The LC setup was coupled online to an LTQ-Orbitrap linear ion trap mass spectrometer (Thermo Scientific, San Jose, CA) operated using Xcalibur 2.0.7 software (Thermo Scientific). Full-scan MS was performed using the Orbitrap in an MS range of 400\u20132000 Da, and the intact peptides were detected at a resolution of 30,000. Internal calibration was performed using the ion signal of cyclosiloxane peaks at m/z 536.165365 as a lock mass. A data-dependent procedure was applied that alternated between one MS survey scan and six MS/MS scans for the six most abundant precursor ions in the MS survey scan with a 2 Da window and fragmentation via CID with 35% normalized collision energy. The electrospray voltage applied was 1.8 kV. Both MS and MS/MS spectra were acquired using one microscan with a maximum fill-time of 1000 and 150 ms for MS analysis, respectively. Automatic gain control was used to prevent overfilling of the ion trap, and 5\u00a0\u00d7\u00a0104 ions were accumulated in the ion trap to generate the MS/MS spectra. All the MS and MS/MS data were analyzed and processed using Proteome Discoverer (version 1.4, Thermo Scientific). The top six fragment ions per 100 Da of each MS/MS spectrum were extracted for a protein database search using the Mascot search engine (version 2.4, Matrix Science) against the UniProtKB/Swiss-Prot sequence database. The top-six-peaks filter node improved the number of peptides identified with high confidence by reducing the number of peaks in the searched peak lists. This method avoids matching peptide candidates to spurious or noise peaks, thereby avoiding false peptide matches. The search parameters were set as follows: carbamidomethylation (C) as the fixed modification, oxidation (M), N-acetyl (protein), pyro-Glu/Gln (N-term Q), six ppm for MS tolerance, 0.8 Da for MS/MS tolerance, and two for missing cleavage. After database searching, the following filter criteria were applied to all the results: a minimum peptide length of six, a minimum of two unique peptides for the assigned protein, and peptide and protein identification with FDR less than 1% peptide filter were accepted. For precursor ion quantification, Proteome Discoverer was employed using a standard deviation of 2 ppm mass precision to create an extracted ion chromatogram (EIC) for the designated peptide.\n\n### Antibody generation and western blot analysis\n\nCells were grown at 30\u00b0C in YEPD medium. Cell lysates were prepared with lysis buffer (150 mM NaCl, 1% nonidet P-40, 1% deoxycholate, 0.1% SDS, 50 mM Tris-HCl, pH 7.5, and protease inhibitors) or precipitated with trichloroacetic acid. To generate antibodies, rabbits were boosted with carrier-conjugated phosphopeptides once per month. Pre-immune sera were collected before boosting. Blood was collected every 2 weeks, incubated at 37\u00b0C for 30 mins, and separated via high-speed centrifugation. Clarified serum was incubated at 56\u00b0C for 30 mins to remove complement. The specificity of antibodies was verified by means of peptide dot blot analysis. Images were captured and quantified by a bioluminescence imaging system (UVP BioSpectrum AC Imagine System, UVP).\n\n### In Vitro kinase and phosphatase assays\n\nThe Ids2 ORF was cloned into the EcoRI and XhoI sites of pGEX-4T-1 for expression of GST-Ids2. A point mutation of Ids2-S148 was created to express GST-Ids2-S148A. Bovine heart catalytic subunit C (Cb) was purchased from Millipore and PKI 6\u201322 (Millipore) was used as a negative control. PKA was obtained from crude extracts of yeast strain KT1115, and the PKA kinase-dead strain was used as a negative control (Toone and Jones, 1998). For the phosphatase assay, the full-length Ptc2 and the C terminal-truncated Ptc2 (1-312) sequences were cloned into the BamHI and SalI sites of pGEX-4T-1 for the expression of GST-Ptc2 and GST-Ptc2 (1-312)-kinase-dead, respectively. GST proteins were expressed in the BL21 (DE3) pLysS strain in LB plus Amp and induced with 1 mM isopropyl-1-thio-\u03b2-D-galactopyranoside (IPTG) at 37\u00b0C for 3 hr. The GST-tagged proteins were purified with Glutathione Sepharose 4B (GE) in binding buffer (140 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4 pH 7.5, 1% Triton X-100, 10% glycerol) for 1 hr and eluted with elution buffer (50 mM Tris-HCl, 10 mM reduced glutathione pH 8.0).\n\nThe kinase assay was started by mixing different sources of PKA (50 mM extracts from KT1115) with GST-Ids2 substrates in kinase buffer (50 mM potassium phosphate pH 7.5, 0.1 mM EGTA, 0.1 mM EDTA, 15 mM MgCl2, 10 mM \u03b2-mercaptoethanol, 100 mM ATP). After 15 min at 30\u00b0C, the samples were analyzed by Western blotting with Ids2 S148 phosphospecific antibodies. For the isotope assay, additional \u03b3-32P-ATP was added to the mixture, and the aliquots were processed according to the phosphocellulose paper method (Toone and Jones, 1998).\n\nFor the phosphatase assay, phosphorylated Ids2 was generated by incubating GST-Ids2 with bovine heart catalytic subunit C (Cb) in kinase buffer for 15 min at 30\u00b0C. The reaction was stopped by incubating with PKI 6\u201322 at 30\u00b0C for 10 min. GST-Ptc2 or GST-Ptc2 (1-312) was then added to the mixture for the phosphatase reaction. After 15 min at 30\u00b0C, samples were analyzed by Western blotting with Ids2 S148 phosphospecific antibodies.\n\n### Co-immunoprecipitation assay\n\nW303 strains containing chromosomally-tagged HSC82-HA3 and IDS2 plasmids (pRS426-IDS2-Myc13, pRS426-ids2-S148A-Myc13, or pRS426-ids2-S148D-Myc13) were grown to exponential phase, and cells were harvested. Pellets were resuspended in lysis buffer (50 mM NaCl, 0.1 % NP-40, 150 mM Tris-HCl pH 8.0) supplemented with protease inhibitors (Roche). Cells were broken by a FastPrep-24 5G Homogenizer (MP biomedical) and supernatants were collected after centrifugation. The supernatants were mixed with either anti-HA (Roche) or anti-Myc (Roche) antibodies, and followed by incubation with protein G Sepharose beads. Immunoprecipitates were washed four times with lysis buffer and then eluted by boiling in sample buffer. Samples were resolved by 7% SDS-PAGE and analyzed by Western blotting using the appropriate antibodies.\n\n### Yeast Two-hybrid analysis\n\nTo investigate the interaction between Ids2 and Hsc82, a DNA fragment encoding the full length or N-terminal amino acids of Ids2 was ligated downstream of the Gal4 DNA-binding domain in pGBDU-C1. A fragment encoding the full length or N-terminal amino acids of Hsc82 was inserted in pGAD-C1 downstream of the Gal4 DNA-activating domain. The resulting plasmids were transformed into PJ69-4A and Leu+ and Ura+ cells were selected. Cells were restreaked on SC-Leu-Ure-Ade-His glucose plates to inspect the bait-prey reciprocity.\n\n### His-tagged metal affinity purification assay\n\nAn expression construct bearing Hsc82 with an N-terminal His6-tag was transformed into E. coli. E. coli cultures were grown in LB media to an OD600 of 0.8 and then induced with 0.5 mM IPTG for 4 hr. The His6-tag proteins were purified with TALON His-tagged Protein Purification Resins (GE) in binding buffer (50 mM Tris-HCl pH 8.0, 100 mM NaCl, 50 mM imidazole, 1% Triton X-100) for 1 hr and eluted with elution buffer (50 mM Tris-HCl pH 8.0, 250 mM imidazole, 10% glycerol).\n\nFor the His6-Hsc82 pull-down assay, purified His6-Hsc82 were incubated with purified GST-Ids2 or GST-Ids2-S148D in incubation buffer (20 mM Tris-HCl pH 7.5, 50 mM NaCl, 5% glycerol, 0.01% Triton X-100, 2 mM DTT) at 4\u00b0C for 1 hr. The reaction was precipitated with TALON His-tagged Protein Purification Resins (GE) at 4\u00b0C for 1 hr. After washing three times with incubation buffer, the His6-tagged Hsc82 and co-purified Ids2 proteins were recovered by elution with imidazole.\n\n### ATPase assay\n\nFor the ATPase assay, His6-Hsc82, GST-Ids2, and GST-Ids2-S148D proteins were isolated on appropriate columns (a HisTrap FF column for His-tagged proteins and a GSTrap FF column for GST-tagged proteins) using AKTA Explorer FPLC (GE Healthcare) and further purified by size exclusion chromatography on a Superdex 200 column (GE healthcare) in 25 mM Hepes pH 7.2, 50 mM NaCl, and 5 mM \u03b2-mercaptoethanol.\n\nThe ATPase activity of Hsc82 was measured by using EnzChek phosphate assay kit (Molecular Probes, Inc.) as previously described (Wolmarans et al., 2016). The His6-Hsc82 protein (2 \u03bcM) was incubated with Ids2 or Ids2-S148D protein at 37\u00b0C with 1 mM ATPase buffer (40 mM HEPES pH 7.5, 150 mM KCl, 5 mM MgCl2, 2 mM DTT). The reactions were incubated for 90 min and then diluted 1:5 into a 100 \u03bcl phosphate assay reaction as outlined by the manufacturer's instructions. A standard curve was generated using the inorganic phosphate solution provided by the manufacturer (Molecular Probes, Inc.).\n\n### In Vivo chaperone assay\n\nFor the luciferase assay, a pRS316 plasmid containing the GAL1-10 promoter and the SEL-allele of firefly luciferase (Distel et al., 1992) was purchased from Addgene and transformed into wild-type, ids2\u0394, hsc82\u0394, ids2-S148A, and ids2-S148D cells. Cells were inoculated into raffinose medium and cultured overnight prior to 3 hr galactose induction in 25\u00b0C temperatures. Then, the culture aliquoted and transferred to an incubator at 30\u00b0C and 37\u00b0C temperature, respectively. After 2 hr incubation, the protein was precipitated by TCA and Western blot analysis was performed with anti-firefly luciferase antibodies (Genetex).\n\nThe GR maturation assay was performed as previously described (Zuehlke et al., 2017). In brief, pG/N795 (Addgene) encoding mammalian steroid receptor GR and pUC\u0394SS-26X (Addgene) encoding the \u03b2-galactosidase reporter were transformed into wild-type, ids2\u0394, hsc82\u0394, ids2-S148A, and ids2-S148D cells. Each strain from the overnight culture was diluted to 0.4 OD600 in fresh media containing 10 \u03bcM synthetic hormone analog deoxycorticosterone (Sigma). After 5 hr incubation, the cells were harvested and the \u03b2-galactosidase activity was measured.\n\nFor the v-Src toxicity assay, cells were transformed with plasmids containing either v-Src or c-Src in pY413 (Boczek et al., 2015). After stationary phase growth in glucose-containing selection medium, 3 \u03bcl aliquots from the serial dilutions were spotted on plates containing galactose and raffinose.\n\n### Induction of Gln1 foci by glucose deprivation\n\nCells with Gln1-GFP expression were inoculated into fresh SC glucose selection medium to 0.3 OD/ml from an overnight culture. When cells were regrown to 1 OD/ml, cells were washed with PBS and then resuspended in SC medium without glucose for 45 min to induce foci formation. After induction, cells were harvested and fixed with 3.7% formaldehyde. Statistical significance was analyzed by the student\u2019s t-test using GraphPad Prism 5 (GraphPad Software, Inc.). The amount of GLN1 and ACT1 mRNA was quantified by real-time reverse transcription polymerase chain reaction (RT-PCR) (Kappa), using primers listed in Supplementary file 1.\n",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "666900c0-946f-475b-9198-19be9dbaa00e",
+      "submission_id": "d90da517-20e3-4dfd-8995-01a05edf23f9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew Dillin, Howard Hughes Medical Institute, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39925.023](https://doi.org/10.7554/eLife.39925.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Glucose intake hampers PKA-regulated HSP90 chaperone activity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Philip Cole as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nOverall, the data in this paper position Ids2 as a previously unknown target of a phosphorylation switch and as a modulator of cellular stress, lifespan, and potentially as a regulator of Hsp90. These are important findings. However, the authors claim that these data highlight a previously unknown link between CR/lifespan and proteostasis is not supported, and this conclusion needs to be softened. In addition, direct effects of this putative co-chaperone on Hsp90 function, using established cell-based and in vitro assays, is essential to support the role of this factor on Hsp90 activity. In turn, the fact that Ids2 was reported as a DNA binding factor suggests instead that it might act with Hsp90 via the established role of Hsp90 and select co-chaperones as a regulator of transcription. This might explain changes in luciferase expression and Gln1-GFP aggregates presented and should be discussed.\n\nThe authors should make clear one major caveat of the initial phosphoproteomics data \u2013 that it is not normalized to changes in total protein levels upon caloric restriction. Therefore, it is not possible to differentiate between the phospopeptides that are changed due to a change in the abundance of the protein itself from those that are actually changed due to phosphorylation/desphosphorylation events.\n\nThe control for the Ids2-TAP IP-MS experiment is not ideal. A better control would be cells expressing just the TAP tag alone (Protein A + CBP), to discount non-specific hits that bind either of these two proteins. This is especially important given that Hsc82/Hsp82 are common contaminants in affinity proteomics experiments (as defined by the CRAPome database).\n\nFinally, the authors suggest that this Ids2-dependent regulation of Hsc90 activity is key to longevity control, allows survival during chronological aging (starvation in stationary phase), and is required for CR to retard aging in stationary phase (it is stated, for example, that \"PP2C phosphatase antagonizes the function of PKA to extend lifespan\"). In this respect, the data does not at present support these conclusions and more data is required for making this link. For example, the authors should test whether Ids2 and Hsc90 are required for CR to prolong lifespan \u2013 no CR experiments are included presently. Also, for the conclusions stated it is expected that the ids2-S148A mutant should display a longer lifespan even without CR \u2013 is this true and if so, does it depend on Hsc90?\n",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4e5e71a1-3f89-466d-9d2f-d13c990b510f",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C1",
+      "claim": "Over 2672 unique phosphopeptides on 949 proteins were identified with p < 0.05 in the phosphoproteomic screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 2672 unique phosphopeptides on 949 proteins were identified (p < 0.05, Figure 1\u2013source file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number of phosphopeptides and proteins identified with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "ed007565-c7df-4bfc-8482-d24316b7c6ac",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C2",
+      "claim": "The abundance of phosphopeptides decreased under 0.5% glucose compared to 2% glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "The rightward shift in the 2% glucose/0.5% glucose ratio of phosphopeptides in Figure 1\u2014figure supplement 1B indicated that the abundance of phosphopeptides decreased under 0.5% glucose, which is in agreement with that many kinases, such as Tor, Sch9, and PKA, were downregulated under CR (Wei et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 1B and is consistent with known kinase downregulation under CR.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "2ff90578-1756-4ba6-97a2-8d7c909cd951",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C3",
+      "claim": "318 proteins (508 phosphopeptides) showed a 2-fold increase in phosphorylation under 0.5% glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these phosphopeptides, 318 proteins (508 phosphopeptides) showed a 2-fold increase under 0.5% glucose, meaning that these peptides were phosphorylated under a glucose-limited CR environment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly reports quantitative phosphoproteomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "2c96cd19-9065-41e8-b2b1-b2f267284699",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C4",
+      "claim": "427 proteins (825 phosphopeptides) showed a 2-fold decrease in phosphorylation under 0.5% glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "427 proteins (825 phosphopeptides) showed a 2-fold decrease under 0.5% glucose, indicating that these peptides were phosphorylated under a glucose-enriched environment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly reports quantitative phosphoproteomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "ca57799c-afa8-41b9-818c-094bd0e30c88",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C5",
+      "claim": "113 proteins contained both increased and decreased phosphopeptides on the same protein under 0.5% glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "113 proteins contained both increased and decreased phosphopeptides on the same protein under 0.5% glucose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly reports quantitative phosphoproteomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "9a33cc5e-de6a-4e0b-bf29-afc1f7cf667f",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C6",
+      "claim": "334 phosphoproteins were annotated to participate in biological processes including glycolysis, cytokinesis, signal transduction, cell communication, transcription, and stress response.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, 334 phosphoproteins were annotated to participate in biological processes including glycolysis (p < 0.01), cytokinesis (p < 0.01), signal transduction (p < 1.0 \u00d7 10\u22123), cell communication (p < 1.0 \u00d7 10\u22123), transcription (p < 1.0 \u00d7 10\u22125), and stress response (p < 1.0 \u00d7 10\u22124) (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Gene Ontology analysis with statistical significance values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "a873d8b6-2c0b-44b9-9c35-bc319ceef613",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C7",
+      "claim": "Many instances of phosphorylation regulation in the database coincided with existing CR/nutrient-sensing pathways such as PKA, Tor, and Snf1.",
+      "claim_type": "EXPLICIT",
+      "source": "Many instances of phosphorylation regulation in our database coincided with the existing CR/nutrient-sensing pathways (Dilova et al., 2007), such as PKA, Tor, and Snf1 (Wei et al., 2008) (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison with previously published pathways.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "f9457aa0-b1e3-4ee9-b000-26921bfc9c50",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C8",
+      "claim": "53 deletion strains showed defective phenotypes in stress resistance assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic analyses exhibited that 53 deletion strains showed defective phenotypes (Figure 1\u2014source data 2 and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from phenotypic screening.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "df6eaf4d-b190-4e21-975a-0ebc6d6d83fa",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C9",
+      "claim": "The ids2-S148D phosphomimetic strain displayed a growth defect in heat shock and glycerol.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphomimetic and/or dephosphomimetic mutations of these 53 candidates were generated to verify the functions observed in the deletion strains, and only the ids2-S148D phosphomimetic strain displayed a growth defect in heat shock and glycerol (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth assay data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "d9c8ee49-a40f-46f2-bd70-2dddc23abf25",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C10",
+      "claim": "S148 on Ids2 was identified to be dephosphorylated under CR.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our mass spectrometry data (Figure 2\u2014figure supplement 1A), S148 on Ids2 was identified (Ids2 RRSS148IQDVQWIR) to be dephosphorylated under CR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "c974165c-58f7-4018-a353-0062e41d3655",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C11",
+      "claim": "The growth defect under CR was observed in ids2\u0394 and ids2-S148D cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth defect under CR was observed in ids2\u0394 and ids2-S148D cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "019ff0b2-93d3-423a-a0a1-3bcdee3165b7",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C12",
+      "claim": "The ids2-S148D phosphomimetic strains showed shortened chronological lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the ids2-S148D phosphomimetic strains showed shortened CLS (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by chronological lifespan assay data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "ec27557d-a153-406c-abcb-7da81ec199b6",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C13",
+      "claim": "Ids2 is involved in the modulation of Ime2 during meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ids2 is involved in the modulation of Ime2 during meiosis (Sia and Mitchell, 1995); however, it is a functionally unknown protein in the mitotic cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "c628d185-6d64-4841-b8f3-ed349ee9f6f9",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C14",
+      "claim": "The protein level of Ids2 did not change under CR.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the protein level of Ids2 did not change under CR (Figure 2\u2014figure supplement 1B), we hypothesized that the phosphorylation status of Ids2 may modulate its function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "6535b53a-54a3-4675-b12e-de72d6cbf0f0",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C15",
+      "claim": "Ids2-S148 phosphorylation decreased under CR.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed that Ids2-S148 phosphorylation decreased under CR (Figure 2A and Figure 2\u2014figure supplement 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figures 2A and 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "ddd67dbf-3683-4175-8160-02b9fd25dfae",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C16",
+      "claim": "Ids2-S148 phosphorylation did not decrease under nitrogen starvation or TOR pathway inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed that Ids2-S148 phosphorylation decreased under CR (Figure 2A and Figure 2\u2014figure supplement 1D) but not under nitrogen starvation or TOR pathway inhibition (Figure 2B and Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figures 2B and 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "4fc81c08-3309-436e-848d-555334624459",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C17",
+      "claim": "Ids2 RRSS148IQD may be phosphorylated by PKA according to PhosphoGRID and pkaPS databases.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the PhosphoGRID and pkaPS databases (Neuberger et al., 2007), Ids2 RRSS148IQD may be phosphorylated by PKA (score = 1.57).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational prediction from databases.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "b9458d95-9923-4198-a79e-c70d8cee7c9d",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C18",
+      "claim": "Deletion of TPK3 reduced Ids2 phosphorylation significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of one PKA catalytic subunit, TPK3, reduced the Ids2 phosphorylation significantly (Figure 2C), suggesting that Tpk3 may phosphorylate S148.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "277144e7-575e-4a6c-96d7-df01dbf5032c",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C19",
+      "claim": "Deletion of RAS2 or GPA2 did not affect Ids2 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of RAS2 or GPA2, the two PKA upstream regulators did not affect Ids2 phosphorylation (Figure 2\u2014figure supplement 1E), implying that they act in a redundant manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "076f4623-f018-48cd-a322-90086d7286be",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C20",
+      "claim": "GST-Ids2 was phosphorylated by wild-type PKA kinase from the extract of the KT1115 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "An in vitro kinase assay demonstrated that GST-Ids2 was phosphorylated by wild-type PKA kinase from the extract of the KT1115 strain (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro kinase assay data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "423d9db4-5799-4640-bbf0-878c27aa31a0",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C21",
+      "claim": "GST-Ids2 was phosphorylated by the bovine heart PKA catalytic subunit C.",
+      "claim_type": "EXPLICIT",
+      "source": "An in vitro kinase assay demonstrated that GST-Ids2 was phosphorylated by wild-type PKA kinase from the extract of the KT1115 strain (Figure 2D) or by the bovine heart PKA catalytic subunit C (Figure 2\u2014figure supplement 1F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro kinase assay data shown in Figure 2\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "2f1ff7d1-5494-4d2a-b6ff-a18e17936614",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C22",
+      "claim": "GST-Ids2 was not phosphorylated by the extract of the PKA kinase-dead strain.",
+      "claim_type": "EXPLICIT",
+      "source": "An in vitro kinase assay demonstrated that GST-Ids2 was phosphorylated by wild-type PKA kinase from the extract of the KT1115 strain (Figure 2D) or by the bovine heart PKA catalytic subunit C (Figure 2\u2014figure supplement 1F) but not by the extract of the PKA kinase-dead strain (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro kinase assay data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "dfa16d5c-1ff0-46a7-866c-f9f9be78e289",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C23",
+      "claim": "PKA may directly phosphorylate Ids2-S148.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that PKA may directly phosphorylate Ids2-S148.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the in vitro kinase assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "63c84f91-7c10-4788-99e3-240fd5087f0f",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C24",
+      "claim": "The Ids2 phosphorylation level increased in ptc2\u0394 ptc3\u0394 cells compared with wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ids2 phosphorylation level increased in ptc2\u0394 ptc3\u0394 cells compared with that in the wild-type (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "6500f5e9-63c7-4ddb-b36d-4fd866fca834",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C25",
+      "claim": "Recombinant Ptc2 removed the S148 phosphorylation in an in vitro phosphatase assay.",
+      "claim_type": "EXPLICIT",
+      "source": "An in vitro phosphatase assay showed that recombinant Ptc2 removed the S148 phosphorylation (Figure 2F), indicating that PP2C may directly dephosphorylate Ids2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro phosphatase assay data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "bf342a06-e829-49ed-8469-151c9c600967",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C26",
+      "claim": "PP2C may directly dephosphorylate Ids2.",
+      "claim_type": "EXPLICIT",
+      "source": "An in vitro phosphatase assay showed that recombinant Ptc2 removed the S148 phosphorylation (Figure 2F), indicating that PP2C may directly dephosphorylate Ids2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the in vitro phosphatase assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "3ebd8287-accb-4ddc-bea9-752473e6cc03",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C27",
+      "claim": "The ids2-S148A mutation could rescue the growth defect in the ptc2\u0394, ptc3\u0394 and ptc2\u0394 ptc3\u0394 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a spotting assay showed that the ids2-S148A mutation could rescue the growth defect in the ptc2\u0394, ptc3\u0394 and ptc2\u0394 ptc3\u0394 mutants (Figure 2G), suggesting that the PP2C phosphatases (Sharmin et al., 2014) may dephosphorylate Ids2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by spotting assay data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "a2c2216e-a11d-42aa-bfba-a7a785d6df43",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C28",
+      "claim": "PP2C phosphatases may dephosphorylate Ids2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a spotting assay showed that the ids2-S148A mutation could rescue the growth defect in the ptc2\u0394, ptc3\u0394 and ptc2\u0394 ptc3\u0394 mutants (Figure 2G), suggesting that the PP2C phosphatases (Sharmin et al., 2014) may dephosphorylate Ids2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from genetic rescue experiments and supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "a52bcb68-ab2c-4a51-ba3c-d2897cc0248b",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C29",
+      "claim": "Hsc82 and Hsp82 were identified as Ids2 interaction partners by tandem affinity purification and mass spectrometry analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the molecular mechanism that Ids2 participates in under CR, we searched for its interaction partners via tandem affinity purification (TAP) and mass spectrometry analysis (Liu et al., 2015). The bead-bound proteins were separated (Figure 3 and Figure 3\u2014figure supplement 1), and spectrometry analysis revealed two closely related proteins, Hsc82 and Hsp82 (Schopf et al., 2017), in the yeast HSP90 family (Figure 3\u2013source file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TAP-MS data shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "d3329714-a376-4158-bb9e-0e05b50735d1",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C30",
+      "claim": "Expression of Hsc82 is tenfold higher than that of Hsp82 under normal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Hsc82 is tenfold higher than that of Hsp82 under normal conditions, suggesting that Hsc82 plays a more prominent role (Schopf et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "482f1b51-891c-41d1-88d2-93e3f9b32d8f",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C31",
+      "claim": "Hsc82-HA3 co-precipitated with Ids2-Myc13.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-immunoprecipitation assay showed that Hsc82-HA3 co-precipitated with Ids2-Myc13 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "3be0a3a8-9e97-4754-ae47-02b050b1baf1",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C32",
+      "claim": "Amino acids 92\u2013256 of Ids2 interact with amino acids 272\u2013579 of Hsc82.",
+      "claim_type": "EXPLICIT",
+      "source": "A yeast two-hybrid analysis revealed that amino acids 92\u2013256 of Ids2 interact with amino acids 272\u2013579 of Hsc82 (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by yeast two-hybrid data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "b8f0ad7b-b997-4919-9933-d9bebc11636f",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C33",
+      "claim": "Immunoprecipitation of Ids2-S148D with Hsc82 was significantly decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation of Ids2-S148D with Hsc82 was significantly decreased, while the Ids2-S148A mutation increases the interaction with Hsc82 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "babbca7a-5330-4425-9ce4-ead137803fb4",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C34",
+      "claim": "The Ids2-S148A mutation increases the interaction with Hsc82.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation of Ids2-S148D with Hsc82 was significantly decreased, while the Ids2-S148A mutation increases the interaction with Hsc82 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "e1daf557-d85b-4774-91eb-46b85279ef31",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C35",
+      "claim": "The phosphomimetic S148D mutation of purified recombinant Ids2 impaired the Ids2-Hsc82 interaction in the affinity pull-down assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the phosphomimetic S148D mutation of purified recombinant Ids2 impaired the Ids2-Hsc82 interaction in the affinity pull-down assay (Figure 3D), suggesting that the phosphorylation of S148, which is located within the interacting motif (92-256), may inhibit the Ids2-Hsc82 interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by affinity pull-down assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "f0fac3dd-7f77-41ee-997f-0285235df4f5",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C36",
+      "claim": "The phosphorylation of S148 may inhibit the Ids2-Hsc82 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the phosphomimetic S148D mutation of purified recombinant Ids2 impaired the Ids2-Hsc82 interaction in the affinity pull-down assay (Figure 3D), suggesting that the phosphorylation of S148, which is located within the interacting motif (92-256), may inhibit the Ids2-Hsc82 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the affinity pull-down assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "0140c1c0-e19f-4879-857e-88bd5595062e",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C37",
+      "claim": "CR significantly increased the Ids2-Hsc82 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the interaction between Ids2 and Hsc82 under CR, an overnight culture was refreshed in medium with 2% or 0.5% glucose. As expected, CR significantly increased the Ids2-Hsc82 interaction (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "65ff4143-3133-43da-9f8f-3aff3cfc0419",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C38",
+      "claim": "Deletion of HSC82 did not change the stability of Ids2.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of HSC82 did not change the stability of Ids2, suggesting that Ids2 may not be a substrate of Hsc82 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "529f963a-d8a9-4afc-bf71-7378aaf7569f",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C39",
+      "claim": "Ids2 may not be a substrate of Hsc82.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of HSC82 did not change the stability of Ids2, suggesting that Ids2 may not be a substrate of Hsc82 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the stability data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "f0a9b8e0-1262-48ce-87e7-eb0d12396594",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C40",
+      "claim": "Ids2 triggers ATPase activity of Hsc82.",
+      "claim_type": "EXPLICIT",
+      "source": "The assay revealed that Ids2 triggers ATPase activity of Hsc82 and phosphorylation of Ids2 attenuates the reaction (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ATPase assay data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "64af94a8-8936-42c5-8b06-3981370b50c0",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C41",
+      "claim": "Phosphorylation of Ids2 attenuates the ATPase activity of Hsc82.",
+      "claim_type": "EXPLICIT",
+      "source": "The assay revealed that Ids2 triggers ATPase activity of Hsc82 and phosphorylation of Ids2 attenuates the reaction (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ATPase assay data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "afe252fc-c39c-4f3d-99be-7fd5b6107eb6",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C42",
+      "claim": "Hsc82 is required for mitochondrial F1-ATPase assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsc82 is required for mitochondrial F1-ATPase assembly (Francis and Thorsness, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "b570805a-6f50-4bef-adbf-0c67b1b5771a",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C43",
+      "claim": "The ids2\u0394 and ids2-S148D strains displayed a growth defect in glycerol.",
+      "claim_type": "EXPLICIT",
+      "source": "The ids2\u0394 and ids2-S148D strains displayed a growth defect in glycerol (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "e3d37ab1-be0b-43e1-bde0-d32d8f470a85",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C44",
+      "claim": "The ids2\u0394 and ids2-S148D strains formed white colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "The ids2\u0394 and ids2-S148D strains displayed a growth defect in glycerol (Figure 1C), and formed white colonies (Figure 4B), which are caused by the loss of mitochondrial function in the W303-1A strain (Wang et al., 2007)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colony color data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "5655ad9b-45e8-4c74-b8d8-14fdc865aebb",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C45",
+      "claim": "White colonies are caused by the loss of mitochondrial function in the W303-1A strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The ids2\u0394 and ids2-S148D strains displayed a growth defect in glycerol (Figure 1C), and formed white colonies (Figure 4B), which are caused by the loss of mitochondrial function in the W303-1A strain (Wang et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "85a1c7d7-afc3-4bf6-bc67-2f486c5a21a2",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C46",
+      "claim": "The phosphorylation of Ids2 may hamper the Hsc82 chaperone activity and thereby diminish the mitochondrial function.",
+      "claim_type": "EXPLICIT",
+      "source": "The ids2\u0394 and ids2-S148D strains displayed a growth defect in glycerol (Figure 1C), and formed white colonies (Figure 4B), which are caused by the loss of mitochondrial function in the W303-1A strain (Wang et al., 2007), implying that the phosphorylation of Ids2 may hamper the Hsc82 chaperone activity and thereby diminish the mitochondrial function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the growth and colony color data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "a2daef43-2664-4b72-8986-4645e3814491",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C47",
+      "claim": "The protein abundance of firefly luciferase was slightly reduced in ids2\u0394 cells compared to hsc82\u0394 cells at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis revealed that the protein abundance of firefly luciferase was slightly reduced in ids2\u0394 cells compared to that in hsc82\u0394 cells at 30\u00b0C; however, luciferase expression was completely lost in ids2-S148D cells, while ids2-S148A cells expressed an amount of firefly luciferase equivalent to that of the wild-type (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "2739bede-ef50-41f2-aa3c-371bb5fe5420",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C48",
+      "claim": "Luciferase expression was completely lost in ids2-S148D cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis revealed that the protein abundance of firefly luciferase was slightly reduced in ids2\u0394 cells compared to that in hsc82\u0394 cells at 30\u00b0C; however, luciferase expression was completely lost in ids2-S148D cells, while ids2-S148A cells expressed an amount of firefly luciferase equivalent to that of the wild-type (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "90ee98e7-2b68-4e08-adaa-21479de5fb6f",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C49",
+      "claim": "ids2-S148A cells expressed an amount of firefly luciferase equivalent to that of the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis revealed that the protein abundance of firefly luciferase was slightly reduced in ids2\u0394 cells compared to that in hsc82\u0394 cells at 30\u00b0C; however, luciferase expression was completely lost in ids2-S148D cells, while ids2-S148A cells expressed an amount of firefly luciferase equivalent to that of the wild-type (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "f8d10428-490b-496f-b60e-1c6d3fb70ba8",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C50",
+      "claim": "Firefly luciferase could not be detected in the ids2\u0394 and hsc82\u0394 strains at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, firefly luciferase could not be detected in the ids2\u0394 and hsc82\u0394 strains at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the Western blot data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "511260bc-0a82-41f7-a941-d4f5f35517b9",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C51",
+      "claim": "GR activities in the ids2\u0394 and ids2-S148D strains decreased about 30% compared with wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GR activities in the ids2\u0394 and ids2-S148D strains decreased about 30% compared with that in the wild-type cells (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GR maturation assay data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "9e28771b-877f-4249-b680-5b298c47a80f",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C52",
+      "claim": "v-Src toxicity reduced in the ids2\u0394 and ids2-S148D strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the v-Src toxicity, which is strictly dependent on yeast HSP90 in vivo (Taipale et al., 2012; Nathan and Lindquist, 1995), reduced in the ids2\u0394 and ids2-S148D strains (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by v-Src toxicity assay data shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "20f8aa87-a4cd-4591-99a3-7649d41916e1",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C53",
+      "claim": "v-Src toxicity is strictly dependent on yeast HSP90 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the v-Src toxicity, which is strictly dependent on yeast HSP90 in vivo (Taipale et al., 2012; Nathan and Lindquist, 1995), reduced in the ids2\u0394 and ids2-S148D strains (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "50f8b33e-9783-444f-bdf6-be14239bd7e9",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C54",
+      "claim": "Ids2 may act as a co-regulator for the chaperone activity of HSP90.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings further elucidate that Ids2 may act as a co-regulator for the chaperone activity of HSP90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "1daa56d6-6867-4caa-bf41-9b8294546f29",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C55",
+      "claim": "Many cellular protein aggregates form during aging, for example, Gln1 aggregates with HSP90 upon glucose deprivation and cellular aging.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, many cellular protein aggregates form during aging, for example, Gln1 aggregates with HSP90 upon glucose deprivation and cellular aging (O'Connell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "8fa05f5a-c2a1-4046-bf12-254f178bccc6",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C56",
+      "claim": "The number of Gln1 foci in ids2-S148D mutants was dramatically increased compared to wild-type and ids2-S148A strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of Gln1 foci in ids2-S148D mutants was dramatically increased compared to that in wild-type and ids2-S148A strains, implying that Ids2 phosphorylation may trigger Gln1 aggregation through down-regulation of HSP90 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Gln1-GFP localization data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "6d458cf3-5c70-4553-baeb-69d2de28a431",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C57",
+      "claim": "Ids2 phosphorylation may trigger Gln1 aggregation through down-regulation of HSP90 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of Gln1 foci in ids2-S148D mutants was dramatically increased compared to that in wild-type and ids2-S148A strains, implying that Ids2 phosphorylation may trigger Gln1 aggregation through down-regulation of HSP90 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the Gln1 aggregation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "c84fc0bf-3755-4154-b8c3-d3e483ed1d93",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C58",
+      "claim": "CLS of the ids2-S148A strains under CR prolonged to the same extent as that of the wild-type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "CLS of the ids2-S148A strains under CR prolonged to the same extent as that of the wild-type strain, while the ids2-S148D strains lost CR-mediated lifespan extension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by CLS data shown in Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "adae5713-149f-443d-9f3f-bbe1c463cd92",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C59",
+      "claim": "The ids2-S148D strains lost CR-mediated lifespan extension.",
+      "claim_type": "EXPLICIT",
+      "source": "CLS of the ids2-S148A strains under CR prolonged to the same extent as that of the wild-type strain, while the ids2-S148D strains lost CR-mediated lifespan extension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by CLS data shown in Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "7c682a45-dc31-400d-81c4-535b8245bad2",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C60",
+      "claim": "Dephosphorylated Ids2 is critical for the extended lifespan under CR.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, dephosphorylated Ids2 is critical for the extended lifespan under CR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the CLS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "63d9c745-a0c1-4250-82f9-f69748431098",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C61",
+      "claim": "The phosphoproteomic screen mapped 632 yeast proteins containing CR-responsive phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, our phosphoproteomic screen mapped 632 yeast proteins containing CR-responsive phosphorylation, although we could not rule out the possibility that some of the alterations might be due to a change in the abundance of the protein itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the phosphoproteomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "dac126bb-b29e-4859-9d35-1f924b7ed8c9",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C62",
+      "claim": "Ids2 is a co-chaperone protein which is inactivated under glucose intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Coupled with functional analyses, we identified a co-chaperone protein, Ids2, which is inactivated under glucose intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "e23e5927-f70d-49d3-922e-ce8f903b7d23",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C63",
+      "claim": "The PKA writer and PP2C eraser may orchestrate glucose sensing and protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "The PKA writer and PP2C eraser may orchestrate glucose sensing and protein folding, and phosphorylation of Ids2 impedes its association with HSP90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "8afc43ae-44be-4f79-81af-03b9eb7ff0e0",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C64",
+      "claim": "Phosphorylation of Ids2 impedes its association with HSP90.",
+      "claim_type": "EXPLICIT",
+      "source": "The PKA writer and PP2C eraser may orchestrate glucose sensing and protein folding, and phosphorylation of Ids2 impedes its association with HSP90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation and pull-down assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "1e24c5b8-6149-4348-a744-4ff13f824c05",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C65",
+      "claim": "Glucose concentration may influence the HSP90 chaperone activity, enabling cells to control protein quality under environmental conditions for sustained longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, glucose concentration may influence the HSP90 chaperone activity, enabling cells to control protein quality under environmental conditions for sustained longevity (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the experimental data and summarized in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "2fc4db1f-010c-4a4d-92ac-5e279295b28a",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C66",
+      "claim": "The findings are consistent with a previous large-scale analysis of the genetic interaction between HSP90 and Ids2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with a previous large-scale analysis of the genetic interaction between HSP90 and Ids2 (Franzosa et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "81e790b6-5dc1-4554-b715-30e6f3e5d0e8",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C67",
+      "claim": "Ids2 is a key regulator in promoting cellular tolerance to stress.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that Ids2 is a key regulator in promoting cellular tolerance to stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "48744d15-2f29-467b-960c-3254bfc4457d",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C68",
+      "claim": "HSP90 is a conserved protein controlling late protein-folding steps.",
+      "claim_type": "EXPLICIT",
+      "source": "HSP90 is a conserved protein controlling late protein-folding steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "5837f7b5-4199-4e02-8b57-90c1d1946c29",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C69",
+      "claim": "Sequence alignments of Ids2 show a certain degree of sequence similarity across homologues of HSP90 co-chaperones, including the S148 residue.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, sequence alignments of Ids2 show a certain degree of sequence similarity across homologues of HSP90 co-chaperones (Figure 5\u2014figure supplement 1), including the S148 residue.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence alignment data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "f427804e-ae4b-4c12-9a66-13519d80650b",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C70",
+      "claim": "High-glucose consumption boosts rat HSP90 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Two lines of observation demonstrated that glucose intake modulates HSP90: high-glucose consumption boosts rat HSP90 expression (Yang et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "8afa98b6-806d-4ce0-93f4-b07bf7476e8b",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C71",
+      "claim": "PKA-mediated porcine HSP90\u03b1 phosphorylation enhances the translocation of endothelial HSP90\u03b1 to the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Two lines of observation demonstrated that glucose intake modulates HSP90: high-glucose consumption boosts rat HSP90 expression (Yang et al., 2016) and PKA-mediated porcine HSP90\u03b1 phosphorylation enhances the translocation of endothelial HSP90\u03b1 to the cell surface (Lei et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "fb32c2c1-87ca-4d42-970e-38ec8e6abf27",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C72",
+      "claim": "Glucose concentration modulates HSP90 activity by PKA-dependent co-chaperone phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Through this study, we discovered a previously underappreciated glucose-mediated chaperone regulatory process: glucose concentration modulates HSP90 activity by PKA-dependent co-chaperone phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "bb371ac3-eef0-4bca-a989-5cce806ccd8d",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C73",
+      "claim": "Heat shock has been shown to regulate the PKA pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Other than glucose consumption, heat shock (Verna et al., 1997) and oxidative stress (Petkova et al., 2010) have been shown to regulate the PKA pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "e8eb14ce-6615-4bda-80be-497d5fe640c6",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C74",
+      "claim": "Oxidative stress has been shown to regulate the PKA pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Other than glucose consumption, heat shock (Verna et al., 1997) and oxidative stress (Petkova et al., 2010) have been shown to regulate the PKA pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "61135816-7d92-4463-9e13-d606f7fb0bdd",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C75",
+      "claim": "Heat shock and oxidative stress both hamper Ids2 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, heat shock and oxidative stress both hamper Ids2 phosphorylation, suggesting that cells may use Ids2 dephosphorylation to stimulate chaperone activity for coping with various stresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "bd3cc232-4a6c-4b99-a47f-852fc8671226",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C76",
+      "claim": "Cells may use Ids2 dephosphorylation to stimulate chaperone activity for coping with various stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, heat shock and oxidative stress both hamper Ids2 phosphorylation, suggesting that cells may use Ids2 dephosphorylation to stimulate chaperone activity for coping with various stresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "9a6603a5-b118-4b76-b1bc-27a003c0beaa",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C77",
+      "claim": "PP2C phosphatase antagonizes the function of PKA to extend lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "We revealed that PP2C phosphatase antagonizes the function of PKA to extend lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "ccda8e8a-9b6b-474c-82df-2a0e276b676c",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C78",
+      "claim": "S. cerevisiae encodes seven phosphatases in the type 2C Ser/Thr phosphatase (PP2C) superfamily (Ptc1-Ptc7).",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae encodes seven phosphatases in the type 2C Ser/Thr phosphatase (PP2C) superfamily (Ptc1-Ptc7) (Ari\u00f1o et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "b657b5ad-7ebe-475f-b9cb-b6cd4f3a7058",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C79",
+      "claim": "Ptc1, Ptc2, and Ptc3 are negative regulators of MAPK.",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae encodes seven phosphatases in the type 2C Ser/Thr phosphatase (PP2C) superfamily (Ptc1-Ptc7) (Ari\u00f1o et al., 2011), and Ptc1, Ptc2, and Ptc3 are negative regulators of MAPK (Warmka et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "bde46f41-b2d6-4eeb-bf61-cefb2b9add97",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C80",
+      "claim": "In deficiencies of the MAPK pathway, cells elevate their stress tolerance ability to extend CLS.",
+      "claim_type": "EXPLICIT",
+      "source": "In deficiencies of the MAPK pathway, cells elevate their stress tolerance ability to extend CLS (Aluru et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "3fff0d31-6928-4ec9-88c7-1cd4bfaceef3",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C81",
+      "claim": "PP2C governs stress tolerance by removing PKA-mediated Ids2 phosphorylation to maintain ample chaperone activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although currently there is no direct evidence that PP2C may control stress tolerance through the MAPK pathway, our study provides a means by which PP2C governs stress tolerance: PP2C removes PKA-mediated Ids2 phosphorylation to maintain ample chaperone activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "05644682-4593-44be-bada-d6201e4589ce",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C82",
+      "claim": "HSP90 forms a homodimeric complex, which consists of an N-terminal nucleotide-binding domain (NBD), a middle domain (M), and a C-terminal dimerization domain (CTD).",
+      "claim_type": "EXPLICIT",
+      "source": "HSP90 forms a homodimeric complex, which consists of an N-terminal nucleotide-binding domain (NBD), a middle domain (M), and a C-terminal dimerization domain (CTD) (Ali et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "c633f8fa-fadd-409a-8745-748d34057d33",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C83",
+      "claim": "Yeast Sti1/Hop and human FKBP51 and FKBP52 utilize their tetratricopeptide (TPR) domains to interact with the C-terminal EEVD motif of HSP90 to stabilize chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, yeast Sti1/Hop and human FKBP51 and FKBP52 utilize their tetratricopeptide (TPR) domains to interact with the C-terminal EEVD motif of HSP90 (R\u00f6hl et al., 2013) to stabilize chaperones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "4bc90c30-b993-43c3-b4cb-980f1a20f82c",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C84",
+      "claim": "The N-terminal region of co-chaperone Aha1 interacts with the M domain of HSP90 to stabilize its closed state conformation and thereby increase its ATPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the N-terminal region of co-chaperone Aha1 interacts with the M domain of HSP90 to stabilize its closed state conformation and thereby increase its ATPase activity (Meyer et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "169306ae-bb0d-4fd9-bf33-105b41a8a2f2",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C85",
+      "claim": "Ids2 binds to the M domain of HSP90.",
+      "claim_type": "EXPLICIT",
+      "source": "Our domain mapping results determined that Ids2 also binds to the M domain of HSP90 and stimulates the ATPase activity of HSP90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by yeast two-hybrid data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "261a040b-3403-4041-aba2-f9076b180b07",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C86",
+      "claim": "Ids2 stimulates the ATPase activity of HSP90.",
+      "claim_type": "EXPLICIT",
+      "source": "Our domain mapping results determined that Ids2 also binds to the M domain of HSP90 and stimulates the ATPase activity of HSP90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ATPase assay data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "1199b2cc-7c6c-4be1-a8bc-31fc43039053",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C87",
+      "claim": "Ids2 forms complex with Aha1 in the MS/MS data of the Ids2-TAP complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Ids2 forms complex with Aha1 in our MS/MS data of the Ids2-TAP complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "c7dc36cb-1eb5-4e8e-bca7-a64b47198d1e",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C88",
+      "claim": "Aging is an intricate phenomenon associated with the gradual loss of physiological functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging is an intricate phenomenon associated with the gradual loss of physiological functions, and both nutrient sensing and proteostasis control lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "1e068a8e-28a9-410a-813f-c18816c19ccd",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C89",
+      "claim": "Both nutrient sensing and proteostasis control lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging is an intricate phenomenon associated with the gradual loss of physiological functions, and both nutrient sensing and proteostasis control lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "0006e339-17d9-4c36-b30d-f5ac044871b7",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C90",
+      "claim": "Calorie restriction is a well-established approach to extend lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we conducted a quantitative mass spectrometry screen and identified all phosphorylation/dephosphorylation sites on yeast proteins that significantly responded to calorie restriction, a well-established approach to extend lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "695540b8-a3f1-4207-b39d-64b74b6aa2bd",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C91",
+      "claim": "Ids2 is activated by PP2C under CR.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional screening of 135 potential regulators uncovered that Ids2 is activated by PP2C under CR and inactivated by PKA under glucose intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phosphatase assay and genetic rescue data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "bf8f31d9-f99d-492e-a631-1a5d3526516c",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C92",
+      "claim": "Ids2 is inactivated by PKA under glucose intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional screening of 135 potential regulators uncovered that Ids2 is activated by PP2C under CR and inactivated by PKA under glucose intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by kinase assay and phosphorylation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "8d218b9b-12e2-4df8-a3a4-17eddcf9a642",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C93",
+      "claim": "ids2\u0394 cells displayed heat sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "ids2\u0394 or ids2 phosphomimetic cells displayed heat sensitivity and lifespan shortening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by growth assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "0d5d7a7f-d4a2-408c-b214-2aed60ca1ad8",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C94",
+      "claim": "ids2 phosphomimetic cells displayed heat sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "ids2\u0394 or ids2 phosphomimetic cells displayed heat sensitivity and lifespan shortening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by growth assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "dbefc1cc-ddc4-45f4-8c6e-15776a1ade10",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C95",
+      "claim": "ids2\u0394 cells displayed lifespan shortening.",
+      "claim_type": "EXPLICIT",
+      "source": "ids2\u0394 or ids2 phosphomimetic cells displayed heat sensitivity and lifespan shortening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by chronological lifespan assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "1de8d575-5f6c-4ebf-808d-30979327bbf3",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C96",
+      "claim": "ids2 phosphomimetic cells displayed lifespan shortening.",
+      "claim_type": "EXPLICIT",
+      "source": "ids2\u0394 or ids2 phosphomimetic cells displayed heat sensitivity and lifespan shortening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by chronological lifespan assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "a8394b4b-0598-4942-b219-77a1258cdfd1",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C97",
+      "claim": "Ids2 serves as a co-chaperone to form a complex with Hsc82 or the redundant Hsp82.",
+      "claim_type": "EXPLICIT",
+      "source": "Ids2 serves as a co-chaperone to form a complex with Hsc82 or the redundant Hsp82, and phosphorylation impedes its association with chaperone HSP90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by TAP-MS and co-immunoprecipitation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "74b233f4-a0c8-44ff-9d17-34d0f36e998d",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C98",
+      "claim": "Phosphorylation impedes Ids2's association with chaperone HSP90.",
+      "claim_type": "EXPLICIT",
+      "source": "Ids2 serves as a co-chaperone to form a complex with Hsc82 or the redundant Hsp82, and phosphorylation impedes its association with chaperone HSP90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation and pull-down assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "b1ef4c68-d0de-4c3e-be6b-84994aded1e6",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C99",
+      "claim": "PP2C and PKA may orchestrate glucose sensing and protein folding to enable cells to maintain protein quality for sustained longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PP2C and PKA may orchestrate glucose sensing and protein folding to enable cells to maintain protein quality for sustained longevity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "41cadafb-1026-4cc4-93b7-915989e19846",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C100",
+      "claim": "Aging is a complex process in which cells gradually lose their ability to execute regular functions and organs show increased susceptibility to disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging is a complex process in which cells gradually lose their ability to execute regular functions and organs show increased susceptibility to disease (Harman, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "54fd1c37-7846-4c1f-b7c6-f90f0f3bceee",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C101",
+      "claim": "The causes of aging have been attributed to nine hallmarks.",
+      "claim_type": "EXPLICIT",
+      "source": "The causes of aging have been attributed to nine hallmarks (L\u00f3pez-Ot\u00edn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "f77925ae-1fc0-44fd-b8d2-24b10f1608ba",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C102",
+      "claim": "Crosstalk between aging hallmarks is rare.",
+      "claim_type": "EXPLICIT",
+      "source": "However, crosstalk between these hallmarks is rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' assessment of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "90cd94f9-c724-43a2-8e52-74d421db8bdf",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C103",
+      "claim": "Calorie restriction is the most effective intervention known to extend lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Calorie restriction (CR) is the most effective intervention known to extend lifespan (McCay et al., 1989), improve organism function, and retard cell senescence in a variety of species from yeast to mammals (McCay et al., 1989; de Cabo et al., 2015; de Cabo et al., 2014; Lin et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "4dc4649f-290a-44f3-8507-c87de9350f70",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C104",
+      "claim": "CR improves organism function in a variety of species from yeast to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Calorie restriction (CR) is the most effective intervention known to extend lifespan (McCay et al., 1989), improve organism function, and retard cell senescence in a variety of species from yeast to mammals (McCay et al., 1989; de Cabo et al., 2015; de Cabo et al., 2014; Lin et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "4adf16d7-e6e3-49e9-8702-26f0afee72ad",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C105",
+      "claim": "CR retards cell senescence in a variety of species from yeast to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Calorie restriction (CR) is the most effective intervention known to extend lifespan (McCay et al., 1989), improve organism function, and retard cell senescence in a variety of species from yeast to mammals (McCay et al., 1989; de Cabo et al., 2015; de Cabo et al., 2014; Lin et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "e803bc54-dedb-411b-9f11-cb910a962f58",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C106",
+      "claim": "CR delays the onset and/or reduces the incidence of many age-related diseases, including cancer, diabetes, and cardiovascular disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "CR delays the onset and/or reduces the incidence of many age-related diseases, including cancer, diabetes, and cardiovascular disorders (Mattson and Wan, 2005; Roth et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "95cb26ed-bd15-44a3-ad1e-d19f336eb7b3",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C107",
+      "claim": "Budding yeast has been perceived as an advantageous model to conveniently examine and isolate new components in aging-related pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Budding yeast has been perceived as an advantageous model to conveniently examine and isolate new components in aging-related pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "801ae9ef-ef5b-49fe-b6a0-b0083eba4dc9",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C108",
+      "claim": "In yeast, CR can be modeled by reducing the glucose concentration of the media from 2% to 0.5% (or lower), resulting in a 30\u201340% increase in lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, CR can be modeled by reducing the glucose concentration of the media from 2% as the ad libitum concentration to 0.5% (or lower), resulting in a 30\u201340% increase in lifespan (Lin et al., 2002; Lin et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "727b4140-15b9-4eec-8955-27730750f98d",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C109",
+      "claim": "RLS denotes the number of daughter cells that a single mother cell can generate before senescence, representing the division potential of the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "RLS denotes the number of daughter cells that a single mother cell can generate before senescence, representing the division potential of the mother cell (Mortimer and Johnston, 1959)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "b8f01a2c-7f62-440b-b3bd-a8896b7349dc",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C110",
+      "claim": "CLS refers to the length of time for which yeast cells remain viable in a non-dividing state.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas CLS refers to the length of time for which yeast cells remain viable in a non-dividing state (Longo and Fabrizio, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "84f090ad-02a5-4d5e-8d87-c264c5428201",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C111",
+      "claim": "CR exerts anti-aging effects by regulating metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "CR exerts anti-aging effects by regulating metabolism (Kapahi et al., 2004) and enhancing stress resistance (Fabrizio et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "6ef84c1d-91fb-49fc-948e-691596fae7eb",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C112",
+      "claim": "CR exerts anti-aging effects by enhancing stress resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "CR exerts anti-aging effects by regulating metabolism (Kapahi et al., 2004) and enhancing stress resistance (Fabrizio et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "68c944b5-7278-4e4d-b74d-37f13d3be9b3",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C113",
+      "claim": "CR down-regulates the amino acid-sensing mTOR and the glucose-sensing PKA signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "These processes down-regulate the amino acid-sensing mTOR and the glucose-sensing PKA signaling pathways (Wei et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "5a5c98ec-9800-4e00-b652-b29662c8725e",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C114",
+      "claim": "Attenuation of Tor1, Sch9, and PKA kinases promotes activation of Rim15 kinase-mediated transcription factors Msn2/4 and Gis1 to increase pathways in glycogen accumulation, antioxidant enzyme formation, heat shock protein expression, and autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Attenuation of Tor1, Sch9, and PKA kinases promotes activation of Rim15 kinase-mediated transcription factors Msn2/4 and Gis1 to increase pathways in glycogen accumulation, antioxidant enzyme formation, heat shock protein expression, and autophagy (Fontana et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "f6b4e54d-53c8-4e68-9b07-b6d10a849f42",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C115",
+      "claim": "CR-mediated Tor1 repression enhances Snf1 kinase (the mammalian AMP kinase homologue in yeast).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, CR-mediated Tor1 repression enhances Snf1 kinase (the mammalian AMP kinase homologue in yeast) (Orlova et al., 2006) to extend CLS by promoting respiration, acetyl-CoA levels, and autophagy (Lin et al., 2003; Wierman et al., 2017; Wang et al., 2001; Wright and Poyton, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "f1598b97-6cf7-4b94-abae-bc2ee6fb5fa6",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "claim_id": "C116",
+      "claim": "CR-mediated Tor1 repression extends CLS by promoting respiration, acetyl-CoA levels, and autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, CR-mediated Tor1 repression enhances Snf1 kinase (the mammalian AMP kinase homologue in yeast) (Orlova et al., 2006) to extend CLS by promoting respiration, acetyl-CoA levels, and autophagy (Lin et al., 2003; Wierman et al., 2017; Wang et al., 2001; Wright and Poyton, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b6697af3-bb21-4e69-9a1c-74f4a2edf863",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A phosphoproteomic screen identified 2672 unique phosphopeptides on 949 proteins with differential phosphorylation under calorie restriction (CR) versus normal glucose conditions. The abundance of phosphopeptides generally decreased under CR, consistent with known kinase downregulation. Among these, 318 proteins showed increased phosphorylation under CR, 427 showed decreased phosphorylation, and 113 showed both. Gene Ontology analysis revealed enrichment in biological processes including glycolysis, cytokinesis, signal transduction, transcription, and stress response, with many phosphorylation events coinciding with known CR/nutrient-sensing pathways (PKA, Tor, Snf1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 collectively describe a comprehensive phosphoproteomic screen with appropriate statistical thresholds (p < 0.05), quantitative data, and bioinformatic validation through GO analysis. The results are consistent with prior knowledge of CR-mediated kinase regulation and are supported by multiple figures showing mass spectrometry data, distribution plots, and pathway analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "7837aa28-d823-41f6-92f2-f5085e5ac251",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Functional screening of 135 candidate proteins identified Ids2 as a key regulator under CR. The ids2-S148D phosphomimetic strain displayed growth defects under heat shock, glycerol, and CR conditions, and showed shortened chronological lifespan (CLS). Mass spectrometry identified S148 on Ids2 as dephosphorylated under CR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 describe a systematic functional screen with phenotypic validation. The identification of Ids2-S148 dephosphorylation by mass spectrometry (C10) and the consistent phenotypes of ids2\u0394 and ids2-S148D mutants in multiple assays (growth, stress resistance, CLS) provide strong converging evidence. The data are shown in Figures 1B-D and Figure 2\u2014figure supplement 1A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "948977c0-6b19-4cf8-946f-20d4e6cb683d",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PKA directly phosphorylates Ids2 at S148 in response to glucose. Ids2-S148 phosphorylation decreased under CR but not under nitrogen starvation or TOR inhibition. Computational prediction and genetic analysis suggested PKA as the kinase, with deletion of TPK3 significantly reducing Ids2 phosphorylation. In vitro kinase assays demonstrated that both yeast PKA and bovine PKA catalytic subunit phosphorylate GST-Ids2, but not the S148A mutant or when using PKA kinase-dead extracts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C23 provide multiple lines of evidence for PKA-mediated phosphorylation of Ids2-S148: Western blot analysis with phospho-specific antibodies (C15-C16), computational prediction (C17), genetic analysis (C18-C19), and in vitro kinase assays with appropriate controls (C20-C22). The convergence of computational, genetic, and biochemical evidence strongly supports the conclusion that PKA directly phosphorylates Ids2-S148.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "16352c6e-c6a7-453c-9ecd-022034cdbd3b",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PP2C phosphatases (Ptc2/Ptc3) dephosphorylate Ids2-S148 under CR. Ids2 phosphorylation increased in ptc2\u0394 ptc3\u0394 cells, and recombinant Ptc2 removed S148 phosphorylation in vitro. The ids2-S148A mutation rescued growth defects in ptc2\u0394, ptc3\u0394, and ptc2\u0394 ptc3\u0394 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 provide genetic and biochemical evidence for PP2C-mediated dephosphorylation: increased phosphorylation in phosphatase mutants (C24), in vitro phosphatase activity (C25), and genetic rescue experiments (C27). The convergence of these approaches strongly supports PP2C as the phosphatase for Ids2-S148.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "a5c4aa29-611b-4352-8733-54687a578175",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ids2 physically interacts with HSP90 chaperones (Hsc82/Hsp82) in a phosphorylation-dependent manner. TAP-MS identified Hsc82 and Hsp82 as Ids2 interaction partners. Co-immunoprecipitation and yeast two-hybrid assays confirmed the interaction, mapping it to amino acids 92-256 of Ids2 and 272-579 of Hsc82. The phosphomimetic S148D mutation significantly decreased the Ids2-Hsc82 interaction, while the S148A mutation increased it. CR significantly enhanced the Ids2-Hsc82 interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C37 provide comprehensive evidence for phosphorylation-regulated Ids2-Hsc82 interaction using multiple complementary approaches: TAP-MS (C29), co-immunoprecipitation (C31, C33-C34, C37), yeast two-hybrid (C32), and in vitro pull-down assays (C35). The consistent effects of phosphomimetic and dephosphomimetic mutations across multiple assays strongly support the phosphorylation-dependent regulation of this interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "8af142f6-317a-43e7-a0d0-f9234c5a27f9",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ids2 acts as a co-chaperone that stimulates HSP90 ATPase activity rather than serving as an HSP90 substrate. Deletion of HSC82 did not affect Ids2 stability. In vitro ATPase assays showed that Ids2 triggers Hsc82 ATPase activity, and phosphorylation of Ids2 attenuates this activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 distinguish between Ids2 as a substrate versus regulator of HSP90. The stability data (C38) rules out Ids2 as a substrate, while the ATPase assay (C40-C41) demonstrates a regulatory role. The phosphorylation-dependent modulation of ATPase activity provides a mechanistic link between Ids2 phosphorylation and HSP90 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "0b8462e2-452c-44c7-8cf4-9fc8a267aabb",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ids2 phosphorylation impairs mitochondrial function. The ids2\u0394 and ids2-S148D strains displayed growth defects on glycerol and formed white colonies, indicative of mitochondrial dysfunction. This is consistent with Hsc82's known role in mitochondrial F1-ATPase assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 link Ids2 phosphorylation to mitochondrial function through phenotypic analysis (growth on glycerol, colony color) and citation to prior work on Hsc82's role in mitochondrial function. The consistent phenotypes of ids2\u0394 and ids2-S148D support the inference that Ids2 phosphorylation impairs Hsc82 chaperone activity, leading to mitochondrial defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "42e9ac81-7f42-4bc3-8467-6fe4178bd195",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ids2 functions as a co-regulator of HSP90 chaperone activity in protein folding. Multiple HSP90-dependent assays showed impaired function in ids2\u0394 and ids2-S148D strains: firefly luciferase expression was reduced or lost, glucocorticoid receptor (GR) activity decreased by ~30%, and v-Src toxicity was reduced. The ids2-S148A mutant showed wild-type levels of luciferase expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C54 provide multiple independent HSP90-dependent functional assays (luciferase folding, GR maturation, v-Src toxicity) that consistently show impaired HSP90 function in ids2\u0394 and ids2-S148D strains. The rescue by the S148A mutation (C49) and the consistency across different HSP90 substrates strongly support Ids2 as a co-regulator of HSP90 chaperone activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "9bce7bfb-4b49-4785-b116-d23164749efb",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ids2 phosphorylation promotes protein aggregation. The number of Gln1-GFP foci dramatically increased in ids2-S148D mutants compared to wild-type and ids2-S148A strains under glucose deprivation, suggesting that Ids2 phosphorylation triggers protein aggregation through downregulation of HSP90 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 use a well-established protein aggregation marker (Gln1-GFP foci) to demonstrate that Ids2 phosphorylation promotes aggregation. The dramatic increase in foci in the phosphomimetic mutant (C56) and the rescue by the dephosphomimetic mutation provide strong evidence. The mRNA levels were controlled (Figure 4D), ruling out transcriptional effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "36c1bcf7-ea8f-4737-ad74-eccb8c357aa5",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dephosphorylated Ids2 is critical for CR-mediated lifespan extension. The ids2-S148A strain showed normal CR-mediated CLS extension, while the ids2-S148D strain lost CR-mediated lifespan extension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 directly link Ids2 phosphorylation status to CR-mediated longevity. The differential effects of phosphomimetic versus dephosphomimetic mutations on CLS under CR (Figure 4\u2014figure supplement 2C) provide strong evidence that Ids2 dephosphorylation is required for CR-mediated lifespan extension.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "7e7fec88-304c-46b7-96ac-777f716e59fe",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study establishes a mechanistic link between glucose sensing and protein quality control through PKA-mediated phosphorylation of the HSP90 co-chaperone Ids2. The phosphoproteomic screen mapped 632 CR-responsive proteins, leading to identification of Ids2 as a co-chaperone inactivated by glucose intake. PKA and PP2C orchestrate glucose sensing and protein folding, with Ids2 phosphorylation impeding its association with HSP90, thereby linking glucose concentration to HSP90 chaperone activity and cellular longevity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 synthesize the major findings into a coherent model. The claims are well-supported by the comprehensive experimental evidence from phosphoproteomics, genetics, biochemistry, and functional assays presented throughout the manuscript. The model is summarized in Figure 5 and represents a novel mechanistic connection between nutrient sensing and proteostasis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "958e018f-9336-4de7-9f20-f03bf02558b5",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The findings are consistent with prior genetic interaction data and suggest evolutionary conservation. Previous large-scale analysis showed genetic interaction between HSP90 and Ids2. Sequence alignments show conservation of Ids2 homologues across species, including the S148 residue, suggesting potential conservation of this regulatory mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 place the findings in broader context. The consistency with prior genetic interaction data (C66) and sequence conservation analysis (C69) support the biological significance of the findings. However, C67 is speculative and would require additional experimental validation in other organisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "022a4d16-dd41-420d-a3f8-1c3062280979",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study reveals a previously underappreciated mechanism of glucose-mediated chaperone regulation: glucose concentration modulates HSP90 activity through PKA-dependent co-chaperone phosphorylation. This is supported by prior observations that glucose intake modulates HSP90 expression and PKA-mediated HSP90\u03b1 phosphorylation in mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 contextualize the findings within existing literature on glucose-HSP90 connections in mammals. The citations to prior work (C70-C71) support the broader relevance of the mechanism discovered in yeast. The claim of a 'previously underappreciated' mechanism (C72) is justified by the novelty of the co-chaperone phosphorylation mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "fe5a8822-917e-44cc-8b30-e35b478ec30e",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Heat shock and oxidative stress reduce Ids2 phosphorylation, suggesting a general stress response mechanism. Cells may use Ids2 dephosphorylation to stimulate chaperone activity for coping with various stresses beyond glucose limitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 extend the findings beyond glucose sensing to general stress responses. The experimental data showing reduced Ids2 phosphorylation under heat shock and oxidative stress (C75) support this extension. However, C76 is somewhat speculative and would benefit from additional functional validation under these stress conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "ab5dcd37-da95-4efb-92d8-1631777b868b",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PP2C phosphatases antagonize PKA function to extend lifespan by maintaining HSP90 chaperone activity. While PP2C phosphatases are known negative regulators of MAPK, and MAPK deficiency extends CLS, this study provides an alternative mechanism: PP2C removes PKA-mediated Ids2 phosphorylation to maintain chaperone activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 propose a mechanism for PP2C-mediated lifespan extension through Ids2 dephosphorylation. The genetic rescue experiments (C27) and in vitro phosphatase assays (C25) support this mechanism. The discussion acknowledges the lack of direct evidence for PP2C control of stress tolerance through MAPK (C81), making the alternative mechanism through Ids2 a valuable contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "098d0afb-ba7d-4ba6-8c13-d364d372120b",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Ids2 binds to the middle domain (M) of HSP90 and stimulates its ATPase activity, similar to the co-chaperone Aha1. Domain mapping showed that Ids2 binds to amino acids 272-579 (M domain) of Hsc82. Ids2 also forms a complex with Aha1 in TAP-MS data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C87 place Ids2 within the established framework of HSP90 co-chaperones. The domain mapping by yeast two-hybrid (C85, Figure 3\u2014figure supplement 2) and ATPase stimulation assays (C86, Figure 4A) are well-supported. The detection of Aha1 in the Ids2-TAP complex (C87) suggests potential functional relationships, though the mechanistic details remain to be elucidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "0ff5133c-540a-44f4-8628-fa0d3ad36019",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Summary of the main findings: A phosphoproteomic screen identified Ids2 as a key regulator linking nutrient sensing to proteostasis. Ids2 is activated by PP2C under CR and inactivated by PKA under glucose intake. Loss of Ids2 function (deletion or phosphomimetic mutation) causes heat sensitivity and lifespan shortening. Ids2 serves as a co-chaperone for HSP90, and phosphorylation impedes this association. PP2C and PKA orchestrate glucose sensing and protein folding to maintain protein quality for longevity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C99 summarize the major findings from the abstract and introduction. These claims are well-supported by the comprehensive experimental evidence presented throughout the manuscript, including phosphoproteomics, genetics, biochemistry, cell biology, and lifespan assays. The integration of nutrient sensing and proteostasis through Ids2 phosphorylation represents a significant conceptual advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "aeaf587a-ef65-4f80-8c07-172493505290",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background and context: Aging involves gradual loss of physiological functions and has been attributed to nine hallmarks, but crosstalk between hallmarks is rare. Calorie restriction (CR) is the most effective intervention to extend lifespan across species. In yeast, CR (0.5% vs 2% glucose) extends lifespan by 30-40% through metabolic regulation and enhanced stress resistance, involving downregulation of mTOR and PKA pathways and activation of Rim15, Msn2/4, Gis1, and Snf1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C116 provide established background information supported by appropriate citations. These claims set the context for the study and justify the experimental approach. The characterization of yeast CR models and known signaling pathways is well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    },
+    {
+      "id": "b18a12d4-e48f-4872-8b27-9bd14f05c84a",
+      "content_id": "3172cc92-8611-40ee-a67f-424ec7e6ba1f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Ids2 is involved in modulation of Ime2 during meiosis but is functionally unknown in the mitotic cell cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C13 is supported by citation to prior work (Sia and Mitchell, 1995) and provides context for why Ids2 was not previously recognized as important in mitotic cells. This background information justifies the novelty of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:26:39.433640Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4e5e71a1-3f89-466d-9d2f-d13c990b510f",
+      "result_id": "b6697af3-bb21-4e69-9a1c-74f4a2edf863"
+    },
+    {
+      "claim_id": "ed007565-c7df-4bfc-8482-d24316b7c6ac",
+      "result_id": "b6697af3-bb21-4e69-9a1c-74f4a2edf863"
+    },
+    {
+      "claim_id": "2ff90578-1756-4ba6-97a2-8d7c909cd951",
+      "result_id": "b6697af3-bb21-4e69-9a1c-74f4a2edf863"
+    },
+    {
+      "claim_id": "2c96cd19-9065-41e8-b2b1-b2f267284699",
+      "result_id": "b6697af3-bb21-4e69-9a1c-74f4a2edf863"
+    },
+    {
+      "claim_id": "ca57799c-afa8-41b9-818c-094bd0e30c88",
+      "result_id": "b6697af3-bb21-4e69-9a1c-74f4a2edf863"
+    },
+    {
+      "claim_id": "9a33cc5e-de6a-4e0b-bf29-afc1f7cf667f",
+      "result_id": "b6697af3-bb21-4e69-9a1c-74f4a2edf863"
+    },
+    {
+      "claim_id": "a873d8b6-2c0b-44b9-9c35-bc319ceef613",
+      "result_id": "b6697af3-bb21-4e69-9a1c-74f4a2edf863"
+    },
+    {
+      "claim_id": "f9457aa0-b1e3-4ee9-b000-26921bfc9c50",
+      "result_id": "7837aa28-d823-41f6-92f2-f5085e5ac251"
+    },
+    {
+      "claim_id": "df6eaf4d-b190-4e21-975a-0ebc6d6d83fa",
+      "result_id": "7837aa28-d823-41f6-92f2-f5085e5ac251"
+    },
+    {
+      "claim_id": "d9c8ee49-a40f-46f2-bd70-2dddc23abf25",
+      "result_id": "7837aa28-d823-41f6-92f2-f5085e5ac251"
+    },
+    {
+      "claim_id": "c974165c-58f7-4018-a353-0062e41d3655",
+      "result_id": "7837aa28-d823-41f6-92f2-f5085e5ac251"
+    },
+    {
+      "claim_id": "019ff0b2-93d3-423a-a0a1-3bcdee3165b7",
+      "result_id": "7837aa28-d823-41f6-92f2-f5085e5ac251"
+    },
+    {
+      "claim_id": "c628d185-6d64-4841-b8f3-ed349ee9f6f9",
+      "result_id": "948977c0-6b19-4cf8-946f-20d4e6cb683d"
+    },
+    {
+      "claim_id": "6535b53a-54a3-4675-b12e-de72d6cbf0f0",
+      "result_id": "948977c0-6b19-4cf8-946f-20d4e6cb683d"
+    },
+    {
+      "claim_id": "ddd67dbf-3683-4175-8160-02b9fd25dfae",
+      "result_id": "948977c0-6b19-4cf8-946f-20d4e6cb683d"
+    },
+    {
+      "claim_id": "4fc81c08-3309-436e-848d-555334624459",
+      "result_id": "948977c0-6b19-4cf8-946f-20d4e6cb683d"
+    },
+    {
+      "claim_id": "b9458d95-9923-4198-a79e-c70d8cee7c9d",
+      "result_id": "948977c0-6b19-4cf8-946f-20d4e6cb683d"
+    },
+    {
+      "claim_id": "277144e7-575e-4a6c-96d7-df01dbf5032c",
+      "result_id": "948977c0-6b19-4cf8-946f-20d4e6cb683d"
+    },
+    {
+      "claim_id": "076f4623-f018-48cd-a322-90086d7286be",
+      "result_id": "948977c0-6b19-4cf8-946f-20d4e6cb683d"
+    },
+    {
+      "claim_id": "423d9db4-5799-4640-bbf0-878c27aa31a0",
+      "result_id": "948977c0-6b19-4cf8-946f-20d4e6cb683d"
+    },
+    {
+      "claim_id": "2f1ff7d1-5494-4d2a-b6ff-a18e17936614",
+      "result_id": "948977c0-6b19-4cf8-946f-20d4e6cb683d"
+    },
+    {
+      "claim_id": "dfa16d5c-1ff0-46a7-866c-f9f9be78e289",
+      "result_id": "948977c0-6b19-4cf8-946f-20d4e6cb683d"
+    },
+    {
+      "claim_id": "63c84f91-7c10-4788-99e3-240fd5087f0f",
+      "result_id": "16352c6e-c6a7-453c-9ecd-022034cdbd3b"
+    },
+    {
+      "claim_id": "6500f5e9-63c7-4ddb-b36d-4fd866fca834",
+      "result_id": "16352c6e-c6a7-453c-9ecd-022034cdbd3b"
+    },
+    {
+      "claim_id": "bf342a06-e829-49ed-8469-151c9c600967",
+      "result_id": "16352c6e-c6a7-453c-9ecd-022034cdbd3b"
+    },
+    {
+      "claim_id": "3ebd8287-accb-4ddc-bea9-752473e6cc03",
+      "result_id": "16352c6e-c6a7-453c-9ecd-022034cdbd3b"
+    },
+    {
+      "claim_id": "a2c2216e-a11d-42aa-bfba-a7a785d6df43",
+      "result_id": "16352c6e-c6a7-453c-9ecd-022034cdbd3b"
+    },
+    {
+      "claim_id": "a52bcb68-ab2c-4a51-ba3c-d2897cc0248b",
+      "result_id": "a5c4aa29-611b-4352-8733-54687a578175"
+    },
+    {
+      "claim_id": "d3329714-a376-4158-bb9e-0e05b50735d1",
+      "result_id": "a5c4aa29-611b-4352-8733-54687a578175"
+    },
+    {
+      "claim_id": "482f1b51-891c-41d1-88d2-93e3f9b32d8f",
+      "result_id": "a5c4aa29-611b-4352-8733-54687a578175"
+    },
+    {
+      "claim_id": "3be0a3a8-9e97-4754-ae47-02b050b1baf1",
+      "result_id": "a5c4aa29-611b-4352-8733-54687a578175"
+    },
+    {
+      "claim_id": "b8f0ad7b-b997-4919-9933-d9bebc11636f",
+      "result_id": "a5c4aa29-611b-4352-8733-54687a578175"
+    },
+    {
+      "claim_id": "babbca7a-5330-4425-9ce4-ead137803fb4",
+      "result_id": "a5c4aa29-611b-4352-8733-54687a578175"
+    },
+    {
+      "claim_id": "e1daf557-d85b-4774-91eb-46b85279ef31",
+      "result_id": "a5c4aa29-611b-4352-8733-54687a578175"
+    },
+    {
+      "claim_id": "f0fac3dd-7f77-41ee-997f-0285235df4f5",
+      "result_id": "a5c4aa29-611b-4352-8733-54687a578175"
+    },
+    {
+      "claim_id": "0140c1c0-e19f-4879-857e-88bd5595062e",
+      "result_id": "a5c4aa29-611b-4352-8733-54687a578175"
+    },
+    {
+      "claim_id": "65ff4143-3133-43da-9f8f-3aff3cfc0419",
+      "result_id": "8af142f6-317a-43e7-a0d0-f9234c5a27f9"
+    },
+    {
+      "claim_id": "529f963a-d8a9-4afc-bf71-7378aaf7569f",
+      "result_id": "8af142f6-317a-43e7-a0d0-f9234c5a27f9"
+    },
+    {
+      "claim_id": "f0a9b8e0-1262-48ce-87e7-eb0d12396594",
+      "result_id": "8af142f6-317a-43e7-a0d0-f9234c5a27f9"
+    },
+    {
+      "claim_id": "64af94a8-8936-42c5-8b06-3981370b50c0",
+      "result_id": "8af142f6-317a-43e7-a0d0-f9234c5a27f9"
+    },
+    {
+      "claim_id": "afe252fc-c39c-4f3d-99be-7fd5b6107eb6",
+      "result_id": "0b8462e2-452c-44c7-8cf4-9fc8a267aabb"
+    },
+    {
+      "claim_id": "b570805a-6f50-4bef-adbf-0c67b1b5771a",
+      "result_id": "0b8462e2-452c-44c7-8cf4-9fc8a267aabb"
+    },
+    {
+      "claim_id": "e3d37ab1-be0b-43e1-bde0-d32d8f470a85",
+      "result_id": "0b8462e2-452c-44c7-8cf4-9fc8a267aabb"
+    },
+    {
+      "claim_id": "5655ad9b-45e8-4c74-b8d8-14fdc865aebb",
+      "result_id": "0b8462e2-452c-44c7-8cf4-9fc8a267aabb"
+    },
+    {
+      "claim_id": "85a1c7d7-afc3-4bf6-bc67-2f486c5a21a2",
+      "result_id": "0b8462e2-452c-44c7-8cf4-9fc8a267aabb"
+    },
+    {
+      "claim_id": "a2daef43-2664-4b72-8986-4645e3814491",
+      "result_id": "42e9ac81-7f42-4bc3-8467-6fe4178bd195"
+    },
+    {
+      "claim_id": "2739bede-ef50-41f2-aa3c-371bb5fe5420",
+      "result_id": "42e9ac81-7f42-4bc3-8467-6fe4178bd195"
+    },
+    {
+      "claim_id": "90ee98e7-2b68-4e08-adaa-21479de5fb6f",
+      "result_id": "42e9ac81-7f42-4bc3-8467-6fe4178bd195"
+    },
+    {
+      "claim_id": "f8d10428-490b-496f-b60e-1c6d3fb70ba8",
+      "result_id": "42e9ac81-7f42-4bc3-8467-6fe4178bd195"
+    },
+    {
+      "claim_id": "511260bc-0a82-41f7-a941-d4f5f35517b9",
+      "result_id": "42e9ac81-7f42-4bc3-8467-6fe4178bd195"
+    },
+    {
+      "claim_id": "9e28771b-877f-4249-b680-5b298c47a80f",
+      "result_id": "42e9ac81-7f42-4bc3-8467-6fe4178bd195"
+    },
+    {
+      "claim_id": "20f8aa87-a4cd-4591-99a3-7649d41916e1",
+      "result_id": "42e9ac81-7f42-4bc3-8467-6fe4178bd195"
+    },
+    {
+      "claim_id": "50f8b33e-9783-444f-bdf6-be14239bd7e9",
+      "result_id": "42e9ac81-7f42-4bc3-8467-6fe4178bd195"
+    },
+    {
+      "claim_id": "1daa56d6-6867-4caa-bf41-9b8294546f29",
+      "result_id": "9bce7bfb-4b49-4785-b116-d23164749efb"
+    },
+    {
+      "claim_id": "8fa05f5a-c2a1-4046-bf12-254f178bccc6",
+      "result_id": "9bce7bfb-4b49-4785-b116-d23164749efb"
+    },
+    {
+      "claim_id": "6d458cf3-5c70-4553-baeb-69d2de28a431",
+      "result_id": "9bce7bfb-4b49-4785-b116-d23164749efb"
+    },
+    {
+      "claim_id": "c84fc0bf-3755-4154-b8c3-d3e483ed1d93",
+      "result_id": "36c1bcf7-ea8f-4737-ad74-eccb8c357aa5"
+    },
+    {
+      "claim_id": "adae5713-149f-443d-9f3f-bbe1c463cd92",
+      "result_id": "36c1bcf7-ea8f-4737-ad74-eccb8c357aa5"
+    },
+    {
+      "claim_id": "7c682a45-dc31-400d-81c4-535b8245bad2",
+      "result_id": "36c1bcf7-ea8f-4737-ad74-eccb8c357aa5"
+    },
+    {
+      "claim_id": "63d9c745-a0c1-4250-82f9-f69748431098",
+      "result_id": "7e7fec88-304c-46b7-96ac-777f716e59fe"
+    },
+    {
+      "claim_id": "dac126bb-b29e-4859-9d35-1f924b7ed8c9",
+      "result_id": "7e7fec88-304c-46b7-96ac-777f716e59fe"
+    },
+    {
+      "claim_id": "e23e5927-f70d-49d3-922e-ce8f903b7d23",
+      "result_id": "7e7fec88-304c-46b7-96ac-777f716e59fe"
+    },
+    {
+      "claim_id": "8afc43ae-44be-4f79-81af-03b9eb7ff0e0",
+      "result_id": "7e7fec88-304c-46b7-96ac-777f716e59fe"
+    },
+    {
+      "claim_id": "1e24c5b8-6149-4348-a744-4ff13f824c05",
+      "result_id": "7e7fec88-304c-46b7-96ac-777f716e59fe"
+    },
+    {
+      "claim_id": "2fc4db1f-010c-4a4d-92ac-5e279295b28a",
+      "result_id": "958e018f-9336-4de7-9f20-f03bf02558b5"
+    },
+    {
+      "claim_id": "81e790b6-5dc1-4554-b715-30e6f3e5d0e8",
+      "result_id": "958e018f-9336-4de7-9f20-f03bf02558b5"
+    },
+    {
+      "claim_id": "48744d15-2f29-467b-960c-3254bfc4457d",
+      "result_id": "958e018f-9336-4de7-9f20-f03bf02558b5"
+    },
+    {
+      "claim_id": "5837f7b5-4199-4e02-8b57-90c1d1946c29",
+      "result_id": "958e018f-9336-4de7-9f20-f03bf02558b5"
+    },
+    {
+      "claim_id": "f427804e-ae4b-4c12-9a66-13519d80650b",
+      "result_id": "022a4d16-dd41-420d-a3f8-1c3062280979"
+    },
+    {
+      "claim_id": "8afa98b6-806d-4ce0-93f4-b07bf7476e8b",
+      "result_id": "022a4d16-dd41-420d-a3f8-1c3062280979"
+    },
+    {
+      "claim_id": "fb32c2c1-87ca-4d42-970e-38ec8e6abf27",
+      "result_id": "022a4d16-dd41-420d-a3f8-1c3062280979"
+    },
+    {
+      "claim_id": "bb371ac3-eef0-4bca-a989-5cce806ccd8d",
+      "result_id": "fe5a8822-917e-44cc-8b30-e35b478ec30e"
+    },
+    {
+      "claim_id": "e8eb14ce-6615-4bda-80be-497d5fe640c6",
+      "result_id": "fe5a8822-917e-44cc-8b30-e35b478ec30e"
+    },
+    {
+      "claim_id": "61135816-7d92-4463-9e13-d606f7fb0bdd",
+      "result_id": "fe5a8822-917e-44cc-8b30-e35b478ec30e"
+    },
+    {
+      "claim_id": "bd3cc232-4a6c-4b99-a47f-852fc8671226",
+      "result_id": "fe5a8822-917e-44cc-8b30-e35b478ec30e"
+    },
+    {
+      "claim_id": "9a6603a5-b118-4b76-b1bc-27a003c0beaa",
+      "result_id": "ab5dcd37-da95-4efb-92d8-1631777b868b"
+    },
+    {
+      "claim_id": "ccda8e8a-9b6b-474c-82df-2a0e276b676c",
+      "result_id": "ab5dcd37-da95-4efb-92d8-1631777b868b"
+    },
+    {
+      "claim_id": "b657b5ad-7ebe-475f-b9cb-b6cd4f3a7058",
+      "result_id": "ab5dcd37-da95-4efb-92d8-1631777b868b"
+    },
+    {
+      "claim_id": "bde46f41-b2d6-4eeb-bf61-cefb2b9add97",
+      "result_id": "ab5dcd37-da95-4efb-92d8-1631777b868b"
+    },
+    {
+      "claim_id": "3fff0d31-6928-4ec9-88c7-1cd4bfaceef3",
+      "result_id": "ab5dcd37-da95-4efb-92d8-1631777b868b"
+    },
+    {
+      "claim_id": "05644682-4593-44be-bada-d6201e4589ce",
+      "result_id": "098d0afb-ba7d-4ba6-8c13-d364d372120b"
+    },
+    {
+      "claim_id": "c633f8fa-fadd-409a-8745-748d34057d33",
+      "result_id": "098d0afb-ba7d-4ba6-8c13-d364d372120b"
+    },
+    {
+      "claim_id": "4bc90c30-b993-43c3-b4cb-980f1a20f82c",
+      "result_id": "098d0afb-ba7d-4ba6-8c13-d364d372120b"
+    },
+    {
+      "claim_id": "169306ae-bb0d-4fd9-bf33-105b41a8a2f2",
+      "result_id": "098d0afb-ba7d-4ba6-8c13-d364d372120b"
+    },
+    {
+      "claim_id": "261a040b-3403-4041-aba2-f9076b180b07",
+      "result_id": "098d0afb-ba7d-4ba6-8c13-d364d372120b"
+    },
+    {
+      "claim_id": "1199b2cc-7c6c-4be1-a8bc-31fc43039053",
+      "result_id": "098d0afb-ba7d-4ba6-8c13-d364d372120b"
+    },
+    {
+      "claim_id": "c7dc36cb-1eb5-4e8e-bca7-a64b47198d1e",
+      "result_id": "0ff5133c-540a-44f4-8628-fa0d3ad36019"
+    },
+    {
+      "claim_id": "1e068a8e-28a9-410a-813f-c18816c19ccd",
+      "result_id": "0ff5133c-540a-44f4-8628-fa0d3ad36019"
+    },
+    {
+      "claim_id": "0006e339-17d9-4c36-b30d-f5ac044871b7",
+      "result_id": "0ff5133c-540a-44f4-8628-fa0d3ad36019"
+    },
+    {
+      "claim_id": "695540b8-a3f1-4207-b39d-64b74b6aa2bd",
+      "result_id": "0ff5133c-540a-44f4-8628-fa0d3ad36019"
+    },
+    {
+      "claim_id": "bf8f31d9-f99d-492e-a631-1a5d3526516c",
+      "result_id": "0ff5133c-540a-44f4-8628-fa0d3ad36019"
+    },
+    {
+      "claim_id": "8d218b9b-12e2-4df8-a3a4-17eddcf9a642",
+      "result_id": "0ff5133c-540a-44f4-8628-fa0d3ad36019"
+    },
+    {
+      "claim_id": "0d5d7a7f-d4a2-408c-b214-2aed60ca1ad8",
+      "result_id": "0ff5133c-540a-44f4-8628-fa0d3ad36019"
+    },
+    {
+      "claim_id": "dbefc1cc-ddc4-45f4-8c6e-15776a1ade10",
+      "result_id": "0ff5133c-540a-44f4-8628-fa0d3ad36019"
+    },
+    {
+      "claim_id": "1de8d575-5f6c-4ebf-808d-30979327bbf3",
+      "result_id": "0ff5133c-540a-44f4-8628-fa0d3ad36019"
+    },
+    {
+      "claim_id": "a8394b4b-0598-4942-b219-77a1258cdfd1",
+      "result_id": "0ff5133c-540a-44f4-8628-fa0d3ad36019"
+    },
+    {
+      "claim_id": "74b233f4-a0c8-44ff-9d17-34d0f36e998d",
+      "result_id": "0ff5133c-540a-44f4-8628-fa0d3ad36019"
+    },
+    {
+      "claim_id": "b1ef4c68-d0de-4c3e-be6b-84994aded1e6",
+      "result_id": "0ff5133c-540a-44f4-8628-fa0d3ad36019"
+    },
+    {
+      "claim_id": "41cadafb-1026-4cc4-93b7-915989e19846",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "54fd1c37-7846-4c1f-b7c6-f90f0f3bceee",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "f77925ae-1fc0-44fd-b8d2-24b10f1608ba",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "90cd94f9-c724-43a2-8e52-74d421db8bdf",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "4dc4649f-290a-44f3-8507-c87de9350f70",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "4adf16d7-e6e3-49e9-8702-26f0afee72ad",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "e803bc54-dedb-411b-9f11-cb910a962f58",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "95cb26ed-bd15-44a3-ad1e-d19f336eb7b3",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "801ae9ef-ef5b-49fe-b6a0-b0083eba4dc9",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "727b4140-15b9-4eec-8955-27730750f98d",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "b8f01a2c-7f62-440b-b3bd-a8896b7349dc",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "84f090ad-02a5-4d5e-8d87-c264c5428201",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "6ef84c1d-91fb-49fc-948e-691596fae7eb",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "68c944b5-7278-4e4d-b74d-37f13d3be9b3",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "5a5c98ec-9800-4e00-b652-b29662c8725e",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "f6b4e54d-53c8-4e68-9b07-b6d10a849f42",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "f1598b97-6cf7-4b94-abae-bc2ee6fb5fa6",
+      "result_id": "aeaf587a-ef65-4f80-8c07-172493505290"
+    },
+    {
+      "claim_id": "ec27557d-a153-406c-abcb-7da81ec199b6",
+      "result_id": "b18a12d4-e48f-4872-8b27-9bd14f05c84a"
+    }
+  ],
+  "comparisons": []
+}

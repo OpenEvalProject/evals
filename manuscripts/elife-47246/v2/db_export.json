@@ -1,0 +1,1323 @@
+{
+  "submission": {
+    "id": "d15cde82-4335-480d-be59-5a398b57065e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:25:40.910212Z",
+    "updated_at": "2025-12-02T11:25:40.910212Z"
+  },
+  "content": [
+    {
+      "id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "submission_id": "d15cde82-4335-480d-be59-5a398b57065e",
+      "content_type": "manuscript",
+      "content_text": "# Molecular basis for dyneinopathies reveals insight into dynein regulation and dysfunction\n\n## Authors\n\n- Matthew G Marzo<sup>1</sup> ([ORCID: 0000-0002-2571-6377](https://orcid.org/0000-0002-2571-6377))\n- Jacqueline M Griswold<sup>1</sup>\n- Kristina M Ruff<sup>1</sup>\n- Rachel E Buchmeier<sup>1</sup>\n- Colby P Fees<sup>2</sup>\n- Steven M Markus<sup>1</sup> ([ORCID: 0000-0002-3098-0236](https://orcid.org/0000-0002-3098-0236)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biology Colorado State University Fort Collins United States\n2. Department of Cell and Developmental Biology University of Colorado School of Medicine Aurora United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCytoplasmic dynein plays critical roles within the developing and mature nervous systems, including effecting nuclear migration, and retrograde transport of various cargos. Unsurprisingly, mutations in dynein are causative of various developmental neuropathies and motor neuron diseases. These \u2018dyneinopathies\u2019 define a broad spectrum of diseases with no known correlation between mutation identity and disease state. To circumvent complications associated with dynein studies in human cells, we employed budding yeast as a screening platform to characterize the motility properties of seventeen disease-correlated dynein mutants. Using this system, we determined the molecular basis for several classes of etiologically related diseases. Moreover, by engineering compensatory mutations, we alleviated the mutant phenotypes in two of these cases, one of which we confirmed with recombinant human dynein. In addition to revealing molecular insight into dynein regulation, our data provide additional evidence that the type of disease may in fact be dictated by the degree of dynein dysfunction.\n\n## Introduction\n\nMotor-mediated intracellular transport is essential for numerous critical cellular processes (Roberts et al., 2013;\u00a0Kardon and Vale, 2009; Vallee et al., 2012). This is especially apparent in motor neurons, in which cargoes must be transported over long distances to support various neuronal functions. For instance, the soma is the primary site of metabolic function where RNAs and proteins are synthesized and degraded. Thus, to maintain neuronal health, it is critical that cargoes are transported from the soma to the axon terminus (i.e., along the axon) and vice versa. For example, neurofilaments, which provide structural stability to a cell, are transported to the axon terminus by plus end-directed microtubule motors (kinesins; Xia et al., 2003) and to the soma by the minus end-directed microtubule motor, cytoplasmic dynein (hereafter referred to as dynein) (He et al., 2005; Wagner et al., 2004; Shah et al., 2000). Dynein has also been shown to play a key role in trafficking numerous other neuronal cargoes in various model organisms (He et al., 2005; Wagner et al., 2004; Shah et al., 2000; Bowman et al., 2000; Berg et al., 2000; Barkus et al., 2008; Hendricks et al., 2010; Rosa-Ferreira and Munro, 2011; Maday et al., 2012; Kamal et al., 2000; Lazarov et al., 2005; Fu and Holzbaur, 2013; Almenar-Queralt et al., 2014; Rao et al., 2017), including autophagosomes (Ravikumar et al., 2005; Katsumata et al., 2010; Cheng et al., 2015), mitochondria, and ionotropic glutamate receptors (Horak et al., 2014). Defects or perturbations in dynein function lead to mislocalization of these cargoes, and results in an accumulation of protein aggregates at the neurite tip (Ravikumar et al., 2005; Levy et al., 2006). In fact, accumulation of misfolded protein aggregates in the neuronal cytoplasm is a common pathological hallmark for motor neuron disease (He et al., 2005; LaMonte et al., 2002; Lin and Schlaepfer, 2006). Consistent with an important role for dynein in neuronal health (Schiavo et al., 2013), mouse models with dynein mutations exhibit severe neuropathy, and decreased rates of retrograde axonal transport, among other defects (Hafezparast et al., 2003; Chen et al., 2007; Ori-McKenney et al., 2010).\n\nIn addition to its key role in the retrograde trafficking of cargoes, dynein also plays a critical and conserved role during neuronal development by promoting interkinetic nuclear migration (INM) in neuronal progenitor cells, and in the subsequent migration of young postmitotic neurons. During the former process, which is critical for neurogenesis, nuclear envelope anchored dynein motors promote migration of the nucleus from the basal to the apical surface of the neuroepithelium where mitotic divisions occur (Tsai et al., 2010; Hu et al., 2013; Del Bene et al., 2008). Thus, defects in dynein-mediated nuclear migration can lead to defects in early brain development.\n\nGiven its myriad roles in neuronal processes, it is unsurprising that mutations within the catalytic component of the dynein complex (the dynein heavy chain, or DHC, which is encoded by the DYNC1H1 gene) are found in individuals suffering from a wide array of neurodegenerative diseases. For instance, mutations in dynein underlie many cases of malformations of cortical development (MCD), spinal muscular atrophy with lower extremity dominance (SMA-LED), congenital muscular dystrophy (CMD), and Charcot-Marie-Tooth disease (CMT) (Harms et al., 2012; Tsurusaki et al., 2012; Scoto et al., 2015; Peeters et al., 2015; Strickland et al., 2015; Weedon et al., 2011; Fiorillo et al., 2014). Although mutations in the dynein regulator LIS1 are causative of the MCD disease lissencephaly (Wynshaw-Boris, 2007; Wynshaw-Boris and Gambello, 2001; Reiner et al., 1993) (characterized by a smooth brain due to reduced or absent cortical folding), mutations in dynein more often lead to polymicrogyria, which is characterized by excessive small folds in the cerebral cortex (Poirier et al., 2013; Laquerriere et al., 2017; Willemsen et al., 2012; Vissers et al., 2010). Although a clear link has been established between dynein dysfunction and various neurological diseases, the underlying molecular basis for disease onset or progression is unknown.\n\nAn unambiguous mechanistic dissection of mutant dynein function in animal cells is complicated by the diverse cellular functions in which dynein participates (e.g., axonal transport, centrosome separation, spindle assembly, nuclear envelope breakdown, spindle checkpoint inactivation) (Rusan et al., 2002; G\u00f6nczy et al., 1999; Salina et al., 2002; Howell et al., 2001; Wojcik et al., 2001; Chevalier-Larsen and Holzbaur, 2006), and the difficulties and expense associated with generating and analyzing mutant cell lines (e.g., compromised viability, pleiotropism, heterozygosity). To overcome these issues, we have employed the versatility and power of the budding yeast Saccharomyces cerevisiae to understand how mutations found in individuals suffering from various neurological diseases lead to dynein dysfunction. In addition to their genetic amenability, low maintenance costs, and rapid generation time, the study of dynein function in budding yeast is simplified by several factors. In contrast to animal cells in which dynein performs numerous functions, the only known function for dynein in budding yeast is to position the mitotic spindle at the future site of cytokinesis (Li et al., 1993; Eshel et al., 1993; Carminati and Stearns, 1997), making functional studies of dynein mutants in this organism simple and unambiguous. As in higher eukaryotes, the yeast dynein complex is comprised of light (Dyn2), light-intermediate (Dyn3), intermediate (Pac11), and heavy chains (Dyn1), the latter of which is the ATPase that powers motility along microtubules (see Figure 1A) (Markus and Lee, 2011a). Whereas in humans, the non-catalytic subunits exist in different isoforms encoded by multiple genes and tissue-specific isoforms (Pfister et al., 2006; Raaijmakers et al., 2013), each of the accessory chains in budding yeast is encoded by only a single gene, enabling simple genetic analysis and manipulation. Moreover, studies have revealed a high degree of structural similarity between yeast and human dynein (Carter, 2013; Schmidt and Carter, 2016), rendering structure-function studies in this organism relevant and translatable to animal cells. Compounded by the genetic amenability, ease of imaging, and the simple one-step method for isolation of recombinant, motile dynein motors (Reck-Peterson et al., 2006; Markus et al., 2012; Markus and Lee, 2011b), budding yeast are a powerful model system for studies of dynein function.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig1-v2.jpg)\n\n**Figure 1.:** (A) Color-coded cartoon representation of the full-length dynein complex (left; with associated accessory chains; Dyn2, dynein light chain; Dyn3, dynein light-intermediate chain; Pac11, dynein intermediate chain; Dyn1, dynein heavy chain), and a linear schematic of Dyn1 with indicated disease-correlated mutations (right; DD, dimerization domain; CC, coiled-coil; MTBD, microtubule-binding domain). The equivalent human residues and disease-correlated substitutions are indicated in parentheses for each residue. \u2021Note that we mistakenly substituted an asparagine for residue R3201 instead of a glutamine, the latter of which was identified as correlating with MCD (Poirier et al., 2013). R3201N was used throughout this study. (B) Representative fluorescence image (left; green, GFP-Tub1; red, contrast enhanced brightfield image to illustrate cell cortex) and quantitation of spindle positioning phenotypes in the 17 disease-correlated Dyn1 mutants, along with wild-type and dynein knock-out (dyn1\u2206) cells. Each data point represents the fraction of mispositioned anaphase spindles along with standard error (weighted mean\u00a0\u00b1\u00a0weighted standard error of proportion; n\u00a0\u2265\u00a099 anaphase spindles from three independent experiments for each strain). Statistical significance was determined by calculating Z scores, as described in the Materials and methods (*, p\u22640.1; **, p\u22640.05; ***, p\u22640.001). Also see Figure 1\u2014source data 1.\n\nFor this study, we focused on a library of 17 single point mutations in the dynein heavy chain (Dyn1), which are found in patients suffering from a broad spectrum of neurological diseases (Figure 1A). These mutations were selected based on their conservation with corresponding residues in yeast dynein. Our findings reveal phenotypic signatures associated with the mutant library that range from partial to complete loss-of-function, and even gain-of-function in some respects. In some cases, the altered function was intrinsic to dynein, while in others, the effects could be attributed to alterations in the activity of the holo-dynein-dynactin complex. The rapid nature of our phenotypic analysis combined with the wealth of structural information available for dynein has enabled us to assess the likely structural basis for dysfunction in two instances. Moreover, consistent with recent findings from another group (Hoang et al., 2017), our work reveals a correlation between the degree of dynein dysfunction and disease type. Overall, we describe a rapid and unambiguous set of tools that can be used to understand how disease-correlated mutations in dynein genes lead to onset or progression of disease.\n\n## Results\n\n### Budding yeast as a model organism for dynein dysfunction\n\nGenomic alterations in individuals suffering from a variety of neurological diseases have been mapped to numerous unique sites throughout the dynein heavy chain (Figure 1A). The tail domain (~1400 amino acids) is the site of interaction for accessory chains (light-intermediate and intermediate chains), as well as adaptors that link dynein to the dynactin regulatory complex and various cellular cargoes (Urnavicius et al., 2015). The motor domain (~3000 amino acids) forms the catalytic core of dynein, where ATP binding and hydrolysis is translated into movement of the linker element that powers motility along microtubules (Carter, 2013; Schmidt et al., 2015; Roberts et al., 2013). Although the genetic basis for dyneinopathies is known, there exists very limited data on how these mutations are causative of motor dysfunction. Indeed, the mutations map throughout the entire heavy chain, with no clear correlation between disease state (i.e., symptoms, severity, age of onset) and mutation identity. To understand how disease-correlated point mutations affect dynein function, we employed a series of well-established methodologies to assess the function of 17 single point mutants in budding yeast.\n\nThe first such assessment was to determine if the mutant motors were capable of correctly positioning the mitotic spindle, the only known function for dynein in budding yeast. To this end, we performed a spindle positioning assay using haploid yeast cells expressing mRuby2-Tub1 (\u03b1-tubulin; to visualize the mitotic spindle) and the mutant dynein from the native dynein locus. Given the dispensable nature of dynein function for yeast cell viability (Li et al., 1993; Eshel et al., 1993), a complete loss-of-function mutant would not be expected to compromise viability, but to simply affect spindle position. In this assay, single time-point images of mutant cells are acquired, and the position of the mitotic spindle is deemed to be either correct (i.e., the anaphase spindle extended through the bud neck along the mother-bud axis) or incorrect (see Figure 1B, left).\n\nThis analysis revealed that eight mutants exhibited varying degrees of spindle positioning defects that significantly differed from wild-type (Figure 1B, right). All of those mutants with defects were those with substitutions in the motor domain, which encompasses the six AAA (ATPase associated with various cellular activities) domains, the linker element that performs the powerstroke, and the microtubule-binding domain (MTBD). All but one of the motor domain mutations led to significant defects. Seven out of the nine mutations linked to malformations in cortical development (MCD) were among those with defects in this assay, whereas none of the mutations associated with the other neurological diseases exhibited significant defects. Although most of these mutants differed to a small but significant degree from wild-type, H3639P exhibited defects as severe as loss of DYN1 (dyn1\u2206).\n\n### Spindle tracking in live cells provides a sensitive readout for dynein-dynactin dysfunction\n\nGiven the somewhat binary nature of the spindle positioning assay, it provides only a coarse assessment of mutant functionality. Thus, as a more sensitive readout of mutant dynein function, we imaged dynein-mediated spindle movements in yeast cells and quantitatively assessed various parameters of these movements. Given the reliance of dynein on dynactin for this activity in cells, assessment of spindle movements is in fact a read-out of dynein-dynactin activity. To ensure that spindle translocation events were a consequence of dynein-dynactin activity, we performed these assays in cells deleted for KAR9, a genetic component of a pathway that promotes orientation of the spindle along the mother-bud axis (Yin et al., 2000; Hwang et al., 2003; Liakopoulos et al., 2003) (see Figure 2\u2014figure supplement 1). Moreover, we treated these cells with hydroxyurea (HU), an inhibitor of DNA synthesis that arrests yeast in a prometaphase-like state that precludes anaphase onset. This relatively simple but sensitive assay permits detection of subtle defects (or enhancements) in the motility parameters of dynein-dynactin (Moore et al., 2009). In addition to obtaining velocity and displacement values, this assay also provides a readout for relative activity (i.e., how active dynein-dynactin is within the cell). Moreover, by scoring for \u2018neck transit\u2019 success frequency \u2013 events in which a dynein-dynactin-mediated spindle translocation results in successfully transiting the narrow mother-bud neck \u2013 we are also able to determine if there are potential defects in force production. Previous studies have shown that neck transits are compromised in cases where dynein\u2019s microtubule-binding affinity is weakened (Ecklund et al., 2017), or when the CAP-gly domain of Nip100 (homolog of human p150 component of the dynactin complex) is genetically ablated (Moore et al., 2009). Subsequent to HU arrest, full Z-stacks of the mitotic spindle and astral microtubules (via GFP-Tub1) were acquired every 10 s (see Figure 2A for example), and the position of the spindle was subsequently tracked using a combination of manual (e.g., to assess neck transit success) and automated 3-dimensional tracking (using a custom written Matlab-based routine).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cartoon and representative time-lapse inverse fluorescence images of a hydroxyurea (HU)-arrested kar9\u2206 cell exhibiting typical dynein-mediated spindle movements, analysis of which is presented in panels (B\u00a0\u2013\u00a0F). Maximum intensity (X-Y projection; top) and Y-Z projections (bottom) are shown for\u00a0each time point (NT, neck transit; note, line spans time frames over which the NT occurs). (B \u2013 F) Plots of indicated parameters for spindle dynamics in haploid wild-type and mutant strains. Briefly, the mitotic spindles were tracked in 3-dimensions using a custom written Matlab code. Dynein-mediated spindle movements were manually selected from the tracking data, from which velocity (B), displacement (C, per event; or, E, per minute), and the number of dynein-mediated spindle movements per minute (F) were obtained. The fraction of successful neck transits (successful attempts divided by total attempts) were manually scored (i.o., insufficient observations; for H3639P, only one unsuccessful neck transit attempt was observed). Each bar represents the weighted mean\u00a0\u00b1\u00a0weighted standard error (or standard error of proportion for D; n\u00a0=\u00a042 to 60 HU-arrested cells from three independent experiments were analyzed for each strain; diamonds represent mean values obtained from each independent replicate experiment). Statistical significance was determined using an unpaired Welch\u2019s t test (B and E), a Mann-Whitney test (C), or by calculating Z scores (D and F; *, p\u22640.1; **, p\u22640.05; ***, p\u22640.005). Also see Figure 2\u2014figure supplements 1, 2, 3 and 4, and Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Cells expressing dyn1H3639P exhibit synthetic growth defects with kar9\u2206 that are as severe as dyn1\u2206 kar9\u2206. Tetrads were dissected on YPAD media, and subsequently genotyped by growth on selective media. One representative tetrad each from a mating of a kar9\u2206 strain with either dyn1H3639P or dyn1\u2206 is shown. Double mutants are indicated with red boxes. Note that none of the other dynein mutants exhibited apparent synthetic growth defects with kar9\u2206 (not shown).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A and B) Scatter plots depicting (A) velocity per spindle displacement event, and (B) displacement per spindle displacement event (from Figure 2). Mean values and standard deviations are also depicted with red lines.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Structural model of the dynein motor domain (from PDB 4RH7; Schmidt et al., 2015) with zoomed in regions depicting the linker domain, the AAA3/AAA4 interface, and the MTBD bound to microtubules (R4H7 docked into 3J1T; Redwine et al., 2012). Red spheres denote mutations.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Cartoon model depicting two dynein dimers (dimer A, composed of chains HCA1 and HCA2; and, dimer B, composed of chains HCB1 and HCB2) bound to a single dynactin complex with adapter BicDR1 (Urnavicius et al., 2018). (B) Zoom-in view of the N-terminal dimerization domain of dynein (PDB 6F1T; Urnavicius et al., 2018) with red spheres denoting mutated residues (labeled on dynein heavy chain A2). (C) Zoom-in view of the contact point between dynein heavy chain HCB1 and the intermediate chain bound (ICA2) to heavy chain HCA2. Note that 3 of the 4 mutated residues cluster to the HCB1-ICA2 contact surface (K540, E545, I554), while one of them (W612) is somewhat distal from this region (red spheres, mutated residues; yellow spheres, contact points between HCB1 and ICA2). (D) Sequence alignment of the region shown in panel C.\n\nThis analysis revealed a broader more nuanced array of defects in our library of mutants (Figure 2B\u2013F, and Figure 2\u2014figure supplement 2A and B). Strikingly, all mutants exhibited varying degrees of alterations in their motility parameters with respect to wild-type cells. At the most severe end of the spectrum, H3639P cells \u2013 which also had the most severe spindle positioning phenotype \u2013 exhibited only 10 dynein-mediated spindle displacement events from all cells observed (compare to a mean of 244 events for all other strains; see Figure 2\u2014figure supplement 2A and B for scatter plots illustrating density of datasets). Consequently, this mutant had extremely low \u2018activity\u2019 parameters (i.e., total spindle displacement, Figure 2E; and, number of dynein-mediated spindle movements per minute, Figure 2F). The mutant with the second most severe spindle positioning phenotype, R1852C, exhibited significant defects in all motility metrics, including velocity, displacement (per event), neck transit success, and the two activity parameters. The relative phenotypic severity of these two mutants is consistent with findings from another group in which disease-correlated dynein mutants were assessed using recombinant human dynein complexes (Hoang et al., 2017). This group identified the human equivalents of R1852C (R1962C) and H3639P (H3822P) as being the most severe loss-of-function mutants in their reconstituted motility assays (see Discussion).\n\nAnother noteworthy mutant was K1475Q, a substitution within the linker domain, the mechanical element that is responsible for the powerstroke (Figure 2\u2014figure supplement 3). This mutation led to a reduction in spindle velocity, displacement, and also reduced the activity metrics of the motor. Given the position of this mutation, it may affect dynein activity by compromising linker remodeling during the priming or powerstroke movement of the linker. However, a recent study identified the equivalent human residue (R1567) as being at least partly required for the formation of an autoinhibited conformation of human dynein called the phi-particle (Zhang et al., 2017) (due to its resemblance to the Greek letter; Amos, 1989), thus raising the possibility that yeast dynein also adopts this conformation. Thus, the altered motility of this mutant may be a consequence of altered activity regulation (see below and Discussion).\n\nAll three mutations within the AAA3 module of the motor domain led to varying degrees of spindle motility alterations (D2439K, R2543K, and L2557M; Figure 2\u2014figure supplement 3). Interestingly, the most striking defect we observed with L2557M was a reduction in the neck transit success rate (Figure 2D), which is the likely cause of the spindle positioning defect. This suggests that this mutation \u2013 which is buried within the large subdomain of AAA3, and makes hydrophobic contacts with a closely apposed helix \u2013 is likely affecting force generation by the motor.\n\nAll three microtubule-binding domain (MTBD) mutants exhibited fairly similar degrees and types of defects in effecting spindle movements (reductions in velocity, displacement, and neck transit success). Structural analysis revealed that all three mutations mapped to the surface of the MTBD that makes contacts with the microtubule (Figure 2\u2014figure supplement 3). Given all three substitutions lead to loss of a positive charge, it is likely that these mutations each lead to a reduction in the affinity of the motor for the negatively charged surface of the microtubule. The reduced activity metrics for R3152N and R3201N could thus be a reflection of a reduction in association kinetics of the mutants for the microtubule. This is supported by a study that found reduced microtubule binding for similar amino acid substitutions in a mouse dynein MTBD fragment (Poirier et al., 2013).\n\nAlthough none of them led to significant spindle positioning defects, all of the tail domain mutations led to altered spindle motility parameters. Structural analysis revealed that most of these mutations (7 out of the 8) clustered to two distinct regions: (1) adjacent to, or within the N-terminal dimerization domain, or (2) at a surface that interfaces with the intermediate chain of a neighboring heavy chain in a two dynein:1 dynactin complex (Figure 2\u2014figure supplement 4). This latter region was recently identified as being important to stabilize the binding of a second dynein complex to dynactin, and ensuring that all four heavy chains are properly aligned for efficient motility of the human dynein-dynactin complex (Urnavicius et al., 2018). Our data suggest that the ability to recruit two dynein complexes to dynactin is conserved in yeast, and that disrupting this complex can compromise force generation (Figure 2D) or activity (Figure 2E and F). Although the last tail domain mutation, W612C, is in close proximity to this latter region, it is sufficiently far from the contact point with the second dynein complex to suggest that it is likely affecting some other facet of dynein-dynactin function.\n\n### Mutations exert dominant negative effects on spindle dynamics\n\nGiven the heterozygous nature of these mutations in affected patients, we wondered how the mutants would behave in the presence of a second, wild-type copy of dynein. It is currently unclear whether cells with two copies of DYN1 (e.g., wild-type and mutant) assemble dynein complexes comprised of two different copies (e.g., wild-type/mutant heterodimers), or whether they are comprised of only one copy (e.g., wild-type homodimers, or mutant homodimers). This latter phenomenon could be a consequence of co-translational dimerization (Natan et al., 2017). To distinguish between these two possibilities, we generated diploid yeast strains that contained one copy of a GFP-tagged dynein heavy chain (DYN1-GFP), and a second copy that was fused to an N-terminal affinity tag and a C-terminal HALO tag (ZZ-DYN1-HALO), the latter of which could be used to fluorescently label the motor (Figure 3A). Lysate from these cells was subjected to affinity chromatography, and subsequent to incubation with a red fluorescent HALO ligand (HALO-TMR), the bound protein was eluted and used in a single molecule imaging experiment. If heterodimers assemble within cells, we expected to observe dual-color labeled molecules (green and red); however, if only homodimers form, then we expected to observe only red molecules (see Figure 3A). Although we observed a small number of motile green molecules (0.9% of the total; likely due to contaminating Dyn1-GFP molecules in the protein preparation), and a single dual labeled molecule (0.3% of the total; Figure 3B, arrow), the vast majority of motile molecules (98.8%) were exclusively red, indicating that dynein very rarely, if ever, forms heterodimers (Figure 3C). This suggests a co-translational dimerization model for dynein complex assembly, similar to what has been observed for p53 (Nicholls et al., 2002).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic depicting experimental approach to determine whether distinct proteins from two different dynein alleles homo- or heterodimerize. (B and C) Representative kymograph (B) depicting large proportion of red (HALO-tagged) dynein molecules walking along microtubules (only one of which colocalized with a GFP-tagged dynein; arrow), along with associated quantitation (C). (D \u2013 E) Schematic depicting experimental approach to assess dynein-dynactin activity in heterozygous diploid cells (D), and representative inverse fluorescence images of a diploid hydroxyurea (HU)-arrested kar9\u2206/kar9\u2206 cell exhibiting typical dynein-mediated spindle movements. Maximum intensity (X-Y projection; top) and Y-Z projections (bottom) are shown for each time point. (F \u2013 I) Plots of indicated parameters for spindle dynamics in indicated diploid yeast strains. Each bar represents the weighted mean\u00a0\u00b1weighted standard error (or standard error of proportion for I; n\u00a0\u2265\u00a029 HU-arrested cells from two independent experiments were analyzed for each strain; diamonds represent mean values obtained from each independent replicate experiment). Statistical significance was determined using an unpaired Welch\u2019s t test (F and H), a Mann-Whitney test (G), or by calculating Z scores (I). Also see Figure 3\u2014figure supplement 1, and Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A and B) Scatter plots depicting (A) velocity per spindle displacement event, and (B) displacement per spindle displacement event (from Figure 3). Mean values and standard deviations are also depicted with red and black lines.\n\nNext, we wished to recapitulate the heterozygous nature of some mutations in our budding yeast system. To this end, we chose three mutants \u2013 E545V, R1852C, H3639P \u2013 and determined whether they could affect dynein activity in heterozygous diploid yeast strains. We mated haploid wild-type cells with haploid mutant cells to generate heterozygous diploid cells (e.g., DYN1/dyn1R1852C; Figure 3D). In addition to comparing dynein activity in these cells to that from homozygous wild-type cells (i.e., DYN1/DYN1), we also compared them to hemizygous cells with only one copy of DYN1 (i.e., DYN1/dyn1\u2206; Figure 3E\u2013I, and Figure 3\u2014figure supplement 1). Although homozygous wild-type cells exhibited similar dynein-dynactin activity to the hemizygotes, the velocity was somewhat reduced in the latter, suggesting a critical concentration of dynein is required for effecting maximal spindle velocity (Figure 3F, and Figure 3\u2014figure supplement 1). Analysis of the heterozygous mutants revealed that all three exhibited partial loss-of-function phenotypes in almost all assays with respect to the hemizygous cells, indicating that they are all indeed dominant alleles. Taken together, these data indicate that homodimers of mutant dynein are sufficient to compromise the activity of wild-type homodimers within the cell.\n\n### Single molecule motility assays reveal insight into dynein-intrinsic dysfunction\n\nFindings from our spindle tracking assay revealed the consequences of mutations on various parameters of dynein-dynactin-mediated spindle movements. These movements are mediated by cortically anchored dynein-dynactin complexes that are regulated at various levels by numerous effector molecules (e.g., Pac1, Ndl1, Num1, She1; Markus et al., 2012; Markus and Lee, 2011b; Li et al., 2005; Lammers and Markus, 2015). For instance, cortical targeting of dynein is affected by various molecules, including Pac1, which tethers dynein to microtubule plus ends (Lee et al., 2003), and Num1, which anchors dynein-dynactin complexes to the cortex (Heil-Chapdelaine et al., 2000). Thus, mutations that alter the ability of dynein to interact with or be affected by these molecules will result in alterations in dynein-dynactin-mediated spindle movements. To determine whether mutations affect dynein-intrinsic activities, it is therefore important to specifically assess dynein activity without these complicating factors. To this end, we employed a single molecule motility assay, in which the movement of individual purified dynein motors is quantitatively assessed. Performing this assay using yeast dynein has one key advantage over human dynein: unlike human dynein, which requires dynactin and one of several adaptor molecules for processive single molecule motility (e.g., BicD2, Hook3; McKenney et al., 2014; Schlager et al., 2014), yeast dynein is a processive motor without these factors (Reck-Peterson et al., 2006). This somewhat unique property of yeast dynein thus permits an unbiased assessment of dynein-intrinsic motility.\n\nSingle molecule motility analysis of each mutant revealed that thirteen of those that exhibited defects in the spindle tracking assay showed some degree of motility alteration in the in vitro assay (Figure 4; see Figure 4\u2014figure supplement 1 for scatter plots and some example kymographs). Interestingly, the precise defect in vivo was not always predictive of the alteration in dynein motility in vitro. Although the reasons for this are unclear, they are likely due in part to the differences in requirements for spindle transport versus those for unloaded single molecule motility (i.e., in which there is no resistance to transport). Additionally, small defects in single motor motility may lead to more pronounced defects in the context of a motor ensemble, as may be the case for dynein at the cell cortex (Markus et al., 2011). Such mutants included W612C and R1852C, both of which led to a reduction in all spindle tracking metrics in cells, but had very little effect on the displacement (run length) of single molecules in vitro. Similarly, R2543K, which reduced spindle velocity by\u00a0~50% had only a minor effect on single molecule velocity values.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cartoon representation of experimental approach. (B \u2013 D) Quantitation of indicated parameters of single molecule motility. Each bar represents the weighted mean\u00a0\u00b1\u00a0weighted standard error (or standard error of proportion for D; n\u00a0\u2265\u00a0284 single molecules from at least two experiments from independent protein preparations; diamonds represent mean values obtained from each independent protein preparation). Technical difficulties precluded us from generating the L213I mutant in the yeast strain used for protein purification. Statistical significance was determined using an unpaired Welch\u2019s t test (B), a Mann-Whitney test (C) or by calculating Z scores (D; *, p\u22640.1; **, p\u22640.05; ***, p\u22640.005). Also see Figure 4\u2014figure supplements 1 and 2, and Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A and B) Scatter plots depicting (A) velocity, and (B) displacement values for single molecule motility assays (from Figure 4). Mean values and standard deviations are depicted with red lines. (C) Representative kymographs depicting single molecules of full-length dynein (wild-type or mutants, as indicated) walking along microtubules in vitro. Green arrow within H3639P panel depicts the only moving complex within the kymograph.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Histogram of fluorescence intensity values for single molecules of motile wild-type (top; n\u00a0=\u00a0254 molecules) and K1475Q (bottom; n\u00a0=\u00a0115 molecules) dynein, along with accompanying Gaussian fits and modeled parameters (determined using the model-based clustering algorithm Mclust; Fraley and Raftery, 2007). The percentages reflect the relative proportion of molecules that fall within each component (i.e., for mean 1, and mean 2). The two mean values for each (indicated with asterisks) likely represent single-labeled (mean 1, *) and dual-labeled (mean 2, **) dynein dimers, respectively. Importantly, the values for K1475Q are not higher than wild-type, indicating the increased processivity for this mutant is not a consequence of increased motor number.\n\nIn a few cases, we observed little or no difference from wild-type in single molecule motility parameters in spite of differences in the spindle tracking assay (i.e., E109I, K540C, E545V, I554M, D2439K, L2557M). In two of these cases (E545V and L2557M), one of these changes was a reduction in the neck transit success rate (see Figure 2D). As discussed above, this phenomenon is potentially a readout of force generation. Given the unloaded nature of single molecule motility, this assay would be unable to detect differences in force generation by dynein. Although the molecular determinants of dynein force production are not well understood, it is possible that these mutations specifically affect the ability of dynein to remain bound to microtubules under conditions of high load.\n\nAlthough most mutants exhibited loss-of-function phenotypes in the in vitro assay, a few mutations led to gain-of-functions. For instance, R241L, N283R, and K1475Q all led to an increase in velocity, while K1475Q also caused an increase in run length and a small but significant increase in the fraction of active motors (see Figure 4\u2014figure supplement 1C for example kymograph). We confirmed the increased run length for K1475Q was not a consequence of motor aggregates, which could presumably lead to an increase in apparent processivity (Derr et al., 2012) (Figure 4\u2014figure supplement 2). As mentioned above, R241 and N283 are adjacent to the N-terminal dimerization domain, and K1475 is within the linker domain (see Figure 2\u2014figure supplements 3 and 4). In the cases of R241L and N283R, the gain-of-functions observed in vitro are possibly causative of the in vivo deficiencies, indicating that a faster or more processive motor is not advantageous for the spindle positioning function (see below and Discussion regarding K1475Q). This is consistent with recent studies that showed gain-of-functions in dynein (or dynein regulators) can lead to defects in dynein-mediated neuronal maturation (Huynh and Vale, 2017), or spindle orientation (Zhang et al., 2017).\n\nIn summary, in all cases in which motility parameters were altered in vitro as a consequence of a particular mutation, we are able to conclude that the underlying molecular defect is most likely intrinsic to dynein itself, and is likely not a consequence of an altered interaction with either accessories or regulators.\n\n### Localization phenotypes provide mechanistic basis for dysfunction in a subset of mutants\n\nOur in vivo and in vitro functional data described above revealed the particular parameters of dynein motility that were altered by the mutations, and also whether the altered motility was in fact intrinsic to dynein (i.e., if there was an in vitro phenotype), or was possibly a consequence of alterations in interactions with regulators such as dynactin. As discussed above, proper dynein function in yeast relies on the coordinated action of various molecules to localize dynein to microtubule plus ends, from where it is offloaded to its site of action: the cell cortex (Figure 5A) (Markus and Lee, 2011b). For instance, dynein plus end localization occurs in a dynactin-independent manner (Moore et al., 2008), but requires an interaction with Pac1 (the LIS1 homolog) (Lee et al., 2003), as well as the accessory chains Dyn3 (Markus and Lee, 2011a) (light-intermediate chain) and Pac11 (intermediate chain) (Lee et al., 2005). In contrast, dynactin is required for dynein to localize to cortical Num1 receptor sites (Moore et al., 2008). Thus, quantitative assessment of dynein localization can reveal potentially altered interactions with various regulators or accessories.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig5-v2.jpg)\n\n**Figure 5.:** (A) Cartoon representation depicting the two main sites of dynein localization, and the molecular basis for each. Dynein plus end localization (1) requires Bik1, Pac1, and possibly Bim1, but does not require dynactin. Rather, dynactin plus end localization (2) relies on dynein. Association of dynein with the cortex (3)\u00a0requires dynactin and the cortical receptor, Num1. (B) The frequency of dynein localization to either microtubule plus ends or the cell cortex is plotted for indicated strains. To enrich for mitotic cells, overnight cultures were diluted into fresh media for 1.5 hr prior to imaging. To further reduce variability due to cell cycle-dependent changes (Markus et al., 2009), localization frequency was scored for mitotic cells only. Each data point represents the weighted mean\u00a0\u00b1\u00a0weighted standard error (68 to 111 mitotic cells from at least two independent experiments were analyzed for each strain). (C and D) Fluorescence intensity values for either plus end (C) or cortical (D) dynein foci observed in mitotic cells described in B (4 to 59 plus end foci, and 4 to 22 cortical foci from two independent experiments were analyzed; i.o., insufficient observations; only one cortical focus was observed for both R1852C and H3639P). Statistical significance was determined by calculating Z scores (B), or by applying an unpaired Welch\u2019s t test (C and D; *, p\u22640.1; **, p\u22640.05; ***, p\u22640.005). Also see Figure 5\u2014figure supplements 1 and 2, and Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Cartoon representation depicting the dynein-dependent localization of dynactin to plus ends (Moore et al., 2008). Note that the limiting amount of dynactin at plus ends with respect to dynein (~3 dynein:1 dynactin), as depicted, is based on previous quantitative ratiometric imaging (Markus et al., 2011). (B) Scatter plot (shown with bars depicting mean and standard deviation values) of the ratios of fluorescence intensity values for Jnm1-3mCherry:Dyn1-3GFP at microtubule plus ends and SPBs (n\u00a0=\u00a097\u2013131 foci from two independent experiments). Background corrected intensity values of colocalizing Jnm1-3mCherry and Dyn1-3GFP foci were divided to obtain individual ratio values. Statistical significance was determined by applying an unpaired Welch\u2019s t test.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Immunoblots from three independent experiments (i.e., blot #1, #2 and #3) along with plot depicting mean relative band intensity\u00a0\u00b1\u00a0standard deviation for each. Equal amounts of total cell lysate were loaded into each lane, transferred to PVDF and probed with a monoclonal anti-GFP antibody (also see Materials and methods). Note the high degree of variability between each independent immunoblot is likely a consequence of variations in transfer efficiency for the enormous dynein heavy chain protein to the PVDF membrane.\n\nFor this analysis, we focused on a select group of mutants: those with substitutions within the N-terminal tail domain (which is the site for interaction with the accessory chains, dynactin, and Num1; Markus et al., 2009), those with the most severe phenotypes (R1852C, R2543K, and H3639P), and two of the MTBD mutants. We acquired time-lapse images of haploid cells expressing fluorescently-labeled tubulin (mRuby2-Tub1; \u03b1-tubulin) and 3GFP-tagged copies of each dynein mutant. Plus end and cortical foci were identified from movies, and their targeting frequency (i.e., percent cells with foci) and fluorescence intensities (a readout of molecule number per site) were quantified.\n\nThis analysis revealed significantly altered localization frequencies or intensities for most of the mutants, including L213I, N283R, E545V, I554M, W612C, K1475Q, R1852C, R2543K, and H3639P (Figure 5B\u2013D). For instance, the K1475Q substitution (within the linker) led to a large increase in the frequency of observing cortical foci (2.2-fold; p=0.0011), but a concomitant reduction in the number of molecules per cortical focus (38% reduction in fluorescence intensity; p=0.0117), whereas W612C, R1852C and H3639P all exhibited a reduction in dynein levels at plus end and cortical sites (see Discussion). Finally, immunoblotting revealed that protein expression differences likely do not account for the observed localization or activity phenotypes (Figure 5\u2014figure supplement 2).\n\nThe increased frequency of cortical foci for K1475Q suggests that this mutant may exhibit higher affinity for Pac1 and/or dynactin, the former of which is limiting for plus end association, and the latter of which is limiting for offloading to cortical Num1 sites (Markus et al., 2011). Given the importance of the human equivalent of K1475 (R1567) in stabilizing the autoinhibited \u2018phi\u2019 particle conformation \u2013 which exhibits lower affinity for dynactin than the open, uninhibited state (Zhang et al., 2017) \u2013 we wondered whether K1475Q interacts more readily with dynactin. To address this, we measured the relative ratio of dynein (using Dyn1-3GFP) to dynactin (Jnm1-3mCherry, homolog of p50/dynamitin) at microtubule plus ends, where dynactin recruitment is wholly dependent on dynein (Moore et al., 2008). Since assembled dynein-dynactin complexes are readily offloaded to cortical Num1 receptor sites (Markus and Lee, 2011b), we chose to perform this analysis in cells lacking Num1 (num1\u2206) to exclude any contribution from the offloading process to the relative ratio of dynein to dynactin at plus ends (Figure 5\u2014figure supplement 1A). Interestingly, this analysis indeed revealed a significantly increased ratio of dynactin to dynein at plus ends (Figure 5\u2014figure supplement 1B; from a mean of 1.07 to 1.52; p<0.0001), indicating that K1475Q interacts more readily with dynactin than wild-type dynein, and that this mutation may in fact be disrupting a potential autoinhibited state of yeast dynein.\n\n### Proline-dependent structural constraint is the likely cause for dysfunction in dynein H3639P\n\nGiven the wealth of structural information currently available for dynein, we sought to determine the structural basis for dysfunction in two of the mutants: R1852C and H3639P. Analysis of available dynein structures revealed that H3639 is situated within a conserved loop that connects two alpha helices, one of which is an extension of the buttress, a structural element that helps to communicate nucleotide-dependent structural rearrangements within the AAA ring to the MTBD (Figure 6A) (Schmidt et al., 2015). We first asked whether gain of proline or loss of histidine is the cause for the severe loss-of-function. To this end, we substituted H3639 with either a serine (to preserve the polar nature and hydrogen-bonding capabilities of histidine), valine (a hydrophobic residue), or asparagine (found in the equivalent position of human dynein-2), and assessed the activity of these mutants in the spindle positioning assay. None of these substitutions led to significant spindle positioning defects, indicating that gain of proline is the reason for dynein dysfunction in H3639P (Figure 6B). We next asked if proline substitutions are tolerated at other sites within this inter-helical loop. Using the spindle positioning assay, we found that proline was well tolerated at all sites within the inter-helical loop except for position 3641 (2 residues C-terminal to 3639; Figure 6B). Thus, introduction of a proline at two distinct sites within this loop are sufficient to severely compromise dynein function.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig6-v2.jpg)\n\n**Figure 6.:** (A) Color-coded structural model of the dynein motor domain (from PDB 4RH7; Schmidt et al., 2015) with zoomed in region depicting H3639 residing within an inter-helical loop within AAA5. (B) Fraction of cells with mispositioned spindles are plotted for yeast strains with indicated dynein mutations. Each data point represents the fraction of mispositioned anaphase spindles along with standard error (weighted mean\u00a0\u00b1\u00a0weighted standard error of proportion; n\u00a0\u2265\u00a067 anaphase spindles from at least two independent experiments for each strain; ***, p\u22640.0001). (C) Representative time-lapse inverse fluorescence images of two hydroxyurea (HU)-arrested kar9\u2206 cells with indicated dynein mutations. Note the lack of spindle translocation in H3639P, but the clear dynein-mediated movement in the F3638G H3639P W3640G mutant\u00a0(dashed lines provide a point of reference). Maximum intensity projections are shown for each time point. (D \u2013 E) Plots of two activity parameters for spindle dynamics in indicated haploid strains (total displacement, D; and, number of events per minute, E). Each data point represents the weighted mean\u00a0\u00b1\u00a0weighted standard error (D) or standard error of proportion (E; n\u00a0\u2265\u00a029 HU-arrested cells from at least two independent experiments were analyzed for each strain). (F and G) The frequency of dynein localization to either microtubule plus ends, the cell cortex, or spindle pole bodies (SPBs) is plotted for indicated strains and drug treatment (for mitotic cells only). In addition to the indicated alleles and drug treatment, the plot in panel G depicts cells that possess the prd1-DBD-CYC8 allele, which represses transcription of pleiotropic drug resistance genes (Stepanov et al., 2008), thus promoting intracellular retention of MG132. These cells were treated with 75 \u00b5M MG132 for 1.5 hr prior to imaging (control cells were treated with an equal volume of DMSO). Each data point represents the weighted mean\u00a0\u00b1\u00a0weighted standard error (73 to 107 mitotic cells from two independent experiments were analyzed for each strain). Statistical significance was determined by calculating Z scores (B, E, F and G), or by applying an unpaired t-test with Welch\u2019s correction (D). Also see Figure 6\u2014figure supplement 1, Figure 6\u2014source datas 1 and 2, and Figure 4\u2014source data 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A - D) Plots depicting the velocity (A and C) and displacement (B and D; per event) values obtained from the spindle dynamics assay for the indicated haploid strains. For panels A and B, each data point represents the weighted mean\u00a0\u00b1\u00a0weighted standard error (at least 29 HU-arrested cells from at least two independent experiments were analyzed for each strain). For panels C and D, mean values and standard deviations are depicted with black lines. (E \u2013 I) Quantitation of indicated parameters of single molecule motility. For panels E \u2013 G, each data point represents the weighted mean\u00a0\u00b1\u00a0weighted standard error (E and F), or\u00a0\u00b1\u00a0standard error of proportion (for G; at least 234 single molecules from at least two independent experiments were analyzed for each motor variant). For panels (H and I), mean values and standard deviations are depicted with black lines. Statistical significance was determined using an unpaired Welch\u2019s t test (A, C, E and H), a Mann-Whitney test (B, D, F and I), or by calculating Z scores (G).\n\nWe hypothesized that prolines are not tolerated in these two regions (residues 3639 and 3641) of the inter-helical loop because of the structural constraints imposed by prolines due to bond angle restrictions. If this were true, then we reasoned that increasing the structural flexibility in the immediate vicinity of P3639 might rescue the proline-dependent defects. To test this, we introduced glycine substitutions at either the N-terminal residue (F3638), the C-terminal residue (W3640), or both. For reasons that are unclear, both double mutants (i.e., F3638G H3639P, and H3639P W3640G) led to spindle positioning defects that were significantly more severe than H3639P and dynein knock-out cells (dyn1\u2206; p<0.0001; Figure 6B). Strikingly, however, the triple mutant \u2013 in which P3639 is flanked by glycines (i.e., F3638G H3639P W3640G) \u2013 exhibited spindle positioning defects that were significantly less severe than H3639P (p<0.0001).\n\nTo confirm these findings, we assessed the activity of the triple mutant using the spindle tracking assay. Although the activity of this mutant was much less than that of wild-type dynein-expressing cells, it was significantly greater than the H3639P single mutant (p\u22640.0361; Figure 6C\u2013E). In spite of the increase in activity, the quality of the spindle movements (velocity and displacement per event) were nearly identical between H3639P and the triple mutant (Figure 6\u2014figure supplement 1A\u2013D). Interestingly, the single molecule assay revealed that the triple mutant was no better than the single mutant in any metrics (Figure 6\u2014figure supplement 1E\u2013I). This indicates that the triple mutant does not rescue dynein motility, but some other metric of in vivo dynein (or dynein-dynactin) activity. We next performed live cell imaging to determine if the triple mutant alters any aspects of dynein localization. Although the flanking glycines did not rescue plus end or cortical localization, it did lead to a large increase in the fraction of cells exhibiting dynein foci at the spindle pole bodies (SPBs; Figure 6F; p<0.0001), suggesting that the triple mutant shifts the balance toward more semi-active \u2013 or properly folded \u2013 dynein within cells with respect to the single H3639P. The relevance of dynein localization to the SPB is unclear, but previous work from our lab demonstrate that this localization requires the MTBD (Lammers and Markus, 2015). In light of our other observations, the increased localization frequency of the triple mutant suggests that the flanking glycines rescue H3639P cellular defects by reducing proline-dependent inflexibility, which in turn may prevent global misfolding of Dyn1, thus increasing the relative concentration of active dynein within the cell. If H3639P causes some fraction of Dyn1 to be misfolded within the cell, then we reasoned that increasing the total amount of protein in cells would lead to an increase in the number of active Dyn1 molecules, and thus an increase in the apparent degree of H3639P localization. To test this, we assessed dynein localization in the absence or presence of MG132, a proteasome inhibitor, addition of which would lead to an increase in total protein content, including dynein. Addition of MG132 increased the frequency of wild-type cortical dynein foci by approximately 2-fold (p=0.0013), but had no significant effect on the frequency of either SPB or plus end targeting (Figure 6G). Consistent with our hypothesis, MG132 treatment increased the frequency of plus end targeting of H3639P by 3.7-fold (p<0.0001) to levels comparable to wild-type dynein; however, the frequency of cortical targeting of H3639P was unaffected by proteasome inhibition.\n\n### An ectopic disulfide bond is the likely cause for R1852C dysfunction\n\nClose inspection revealed a cysteine situated within very close proximity to R1852 (~3 \u00c5; Figure 7A), which lies within the first AAA module (AAA1). Given the mutation results in a cysteine substitution at this site, we reasoned that an ectopic disulfide bond may be responsible for the phenotypic consequences. To determine whether this was the case, we mutated the closely apposed, highly conserved cysteine to a serine (C1822S; Figure 7B), which would eliminate the potential for disulfide bond formation at this site. We then used several of our assays to quantitate the degree to which C1822S might rescue defects due to R1852C.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig7-v2.jpg)\n\n**Figure 7.:** (A) Color-coded structural model of the dynein motor domain (from PDB 4RH7; Schmidt et al., 2015) with zoomed in region depicting R1852 residing within AAA1 near its interface with AAA2. (B) Sequence alignment illustrating the high degree of conservation for C1822 (yellow star) and R1852 (red star) among various dynein heavy chains. (C and D) Plots of two activity parameters for spindle dynamics in indicated haploid strains (total displacement, C; and, fraction of successful neck transits, D). Each data point represents the weighted mean\u00a0\u00b1\u00a0weighted standard error (C) or standard error of proportion (D; n\u00a0\u2265\u00a028 HU-arrested cells from two independent experiments were analyzed for each strain). (E) Plot of velocity values for single molecules of indicated GST-dynein331 variants (n\u00a0\u2265\u00a0158 single molecules from at least two independent experiments were analyzed for each motor variant). (F) Representative fields of microtubules being translocated by surface-adsorbed recombinant human dynein complexes. (G and H) Plots depicting velocity (G) and fraction (H) of microtubules (at least 50 microtubules from two independent experiments were analyzed for each variant; \u2018n.o.\u201d, none observed). Statistical significance was determined by calculating Z scores (B and E), or by applying an unpaired Welch\u2019s t test (D). Also see Figure 7\u2014figure supplements 1 and 2, Figure 7\u2014source data 1, and Figure 4\u2014source data 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A \u2013 C) Plots depicting the indicated motility parameter values obtained from the spindle dynamics assay for the indicated haploid strains. Each data point represents the weighted mean\u00a0\u00b1\u00a0weighted standard error (at least 28 HU-arrested cells from at least two independent experiments were analyzed for each strain). (D) The frequency of dynein localization to either microtubule plus ends or the cell cortex is plotted for indicated strains (scored as described in Figure 5 legend). Each data point represents the weighted mean\u00a0\u00b1\u00a0weighted standard error (94 to 105 mitotic cells from at least two independent experiments were analyzed for each strain). (E) Plot depicting the fraction of active motors for the indicated full-length complexes (left), or the minimal motile fragment (GST-dynein331; see text; right). Note the minimal fragment rescues the reduced fraction of active motors in the R1852C mutant. (F) Plot depicting single molecule run length values for indicated GST-dynein331 variants. (G) Representative kymographs depicting single molecules of GST-dynein331 (wild-type or mutants, as indicated) walking along microtubules in vitro. Statistical significance was determined using an unpaired Welch\u2019s t test (A\u00a0and C), a Mann-Whitney test (B and F), or by calculating Z scores (D and E).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A and B) Scatter plots depicting the velocity and displacement (per event) obtained from the spindle dynamics assay for the indicated haploid strains (from Figure 7\u2014figure supplement 1). Mean values and standard deviations are depicted with black lines. (C \u2013 E) Scatter plots depicting velocity, and displacement values for single molecule motility assays from Figure 7 and Figure 7\u2014figure supplement 1. Mean values and standard deviations are depicted with black lines.\n\nAlthough C1822S alone compromised all parameters of dynein-dynactin-mediated spindle movements, this substitution led to a partial restoration of most of the parameters in the R1852C mutant (i.e., C1822S R1852C double mutant; Figure 7C and D, and Figure 7\u2014figure supplement 1A\u2013C). We observed a similar restoration of function in a C1822A R1852C double mutant. We ruled out the possibility that the partially hydrophobic nature of cysteine is the cause for the dysfunction in R1852C by assessing an R1852V mutant, which exhibited defects that were significantly less severe than R1852C. Moreover, combining C1822S with R1852V led to no degree of rescue with respect to the single R1852V mutant, which is in stark contrast to our observations with the double C1822S R1852C mutant (Figure 7C and D, and Figure 7\u2014figure supplement 1A\u2013C). We also found that C1822S rescued the localization of R1852C to plus ends and the cell cortex almost to wild-type levels (Figure 7\u2014figure supplement 1D). As with the spindle tracking assay, although R1852V led to localization defects, the C1822S R1852V double mutant was almost identical to R1852V alone.\n\nBefore assessing the extent of rescue with the single molecule assay, we first tested whether using a minimal dynein fragment that is sufficient for processive motility (Reck-Peterson et al., 2006) would rescue any of the motility defects we observed with the R1852C mutant (GST-dynein331). This fragment \u2013 a glutathione S-transferase (GST)-dimerized motor domain that exhibits motility parameters that are very similar to the full-length molecule (Reck-Peterson et al., 2006) \u2013 lacks the tail domain, and thus does not co-purify with or rely on any of the accessory chains. If protein misfolding is partly to blame for mutant dysfunction \u2013 as suggested from the single molecule (only 23.2% active motors; Figure 4D) and localization assays (severe reduction in localization frequency; Figure 5B) \u2013 then we reasoned that the simplicity and compact fold of GST-dynein331 might rescue some of these defects. In striking contrast to the full-length mutant, the fraction of active GST-dynein331 R1852C motors was almost identical to that of the wild-type GST-dynein331 motor (note the same construct did not rescue the H3639P mutant; Figure 7\u2014figure supplement 1E), suggesting that the holoenzyme complex is more susceptible to defects arising from this mutation than is the truncated motor domain. However, much like the full-length molecule, the velocity of the GST-dynein331 mutant was severely reduced with respect to wild-type (Figure 7E and Figure 7\u2014figure supplement 1G). Consistent with the spindle tracking data, C1822S was indeed sufficient to significantly rescue the single molecule velocity defect in the minimal dynein fragment (Figure 7E and Figure 7\u2014figure supplement 1G). Taken together, these findings indicate that an ectopic disulfide bond is the likely cause for R1852C dysfunction.\n\n### Compensatory mutation partially suppresses motility defects of human dynein mutant\n\nFinally, we sought to determine whether the compensatory cysteine to serine substitution would also rescue motility defects in human dynein. To this end, we engineered the equivalent mutations (C1932S, R1962C, or C1932S R1962C) into an insect cell expression plasmid encoding an affinity-tagged human dynein complex (ZZ-SNAPf-DYNC1H1, IC2, LIC2, Tctex1, Robl1, LC8; a kind gift from Andrew Carter). Subsequent to purification of recombinant complexes, we assessed their function using a microtubule gliding assay in which free microtubules are translocated by dynein complexes non-specifically adsorbed to the glass surface. This assay permits an assessment of dynein-intrinsic motility parameters without the need for additional factors that are required for single molecule motility of human dynein (i.e., dynactin and a requisite adaptor [McKenney et al., 2014; Schlager et al., 2014]). Consistent with previous findings, the single R1962C mutation (equivalent to R1852C) was sufficient to completely disrupt microtubule gliding activity (Hoang et al., 2017) (Figure 7F\u2013H); however, as with yeast dynein, substitution of the closely apposed cysteine to a serine (C1932S) was sufficient to restore some of the lost function. Although the compensatory mutation did not restore activity to wild-type levels (note the low velocity and degree of activity with respect to wild-type in Figure 7G and H), the same was true for the full-length yeast dynein complex, which was only partially rescued by the mutation (see Figure 7C and D, and Figure 7\u2014figure supplement 1A\u2013C). Although unclear, the different degrees of rescue by the compensatory mutation with yeast dynein (observed in vivo; Figure 7C and D, and Figure 7\u2014figure supplement 1A\u2013D) versus human dynein (observed in vitro; Fig. F-H) may be due to the presence of quality control mechanisms at play in live yeast cells which ensure that mostly properly folded motors are delivered to cortical receptor sites. No such mechanism is present to prevent adsorption of inactive recombinantly produced human dynein motors to the glass in the in vitro gliding assay. In summary, these results confirm our findings with yeast dynein, and moreover validates yeast as a powerful model system to understand the molecular basis for dynein dysfunction in patients.\n\n### Severity of dynein dysfunction correlates with disease type\n\nIn an effort to identify potential correlations between degree of dynein dysfunction and disease, we summarized the findings from all of our various assessments into a heat map in which the variance (or lack thereof) from wild-type was assigned a color based on the statistical significance (e.g., green, p\u22650.100; red, p\u22640.005; Figure 8A). Unsurprisingly, on average, mutations within the highly conserved motor domain exhibited more statistically significant differences from wild-type than those in the tail domain. Moreover, this broad view of dysfunction in the mutant library revealed that the more severe loss-of-function mutants appeared to correlate with MCD, while those with lesser defects mainly correlate with motor neuron diseases (SMA-LED, CMT or CMD).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig8-v2.jpg)\n\n**Figure 8.:** (A) Heat map depicting degree of statistical significance for difference between each mutant and wild-type cells for the indicated assays (SP, spindle positioning; V, velocity; D, displacement per event; A, activity; NT, neck transit; L, localization; %A, percent active motors; MCD, malformations in cortical development; CMT, Charcot-Marie-Tooth disease; SMA-LED, spinal muscular atrophy with lower extremity dominance; CMD, congenital muscular dystrophy). Red asterisks depict mutants that were assessed in a previous study using recombinant human dynein (Hoang et al., 2017). \u2021Note that we mistakenly substituted an asparagine for residue R3201 instead of a glutamine, the latter of which was identified as correlating with MCD (Poirier et al., 2013). R3201N was used throughout this study. Deviation from wild-type cells in either the \u2018total spindle displacement\u2019 (see Figure 2E), or the \u2018number of dynein-mediated spindle movements per minute\u2019 (see Figure 2F) metric was used for the activity column (\u2018A\u2019). Mutants are listed from N- to C-terminus of Dyn1 (shading indicates in which domain of Dyn1 each mutation resides). Significance was calculated as indicated in previous figure legends. (B) Each mutant ranked by their coefficient of dynein dysfunction score (CDD; see text and Figure 8\u2014figure supplement 1). As shown, above a CDD score of\u00a0~\u00a018, the correlation with malformations in cortical development increases, while that with motor neuron diseases decreases. Also see Figure 8\u2014figure supplement 1.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47246/elife-47246-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Z scores (see Materials\u00a0and\u00a0methods) and q values for differences between mutant and wild-type cells for each assay. Graphpad Prism was used to calculate q values (the difference between the two means divided by the standard error of that difference). (B) Relative difference between mean values (Z scores and q values, \u2018v\u2019) for mutant and wild-type cells are expressed as normalized relative variance (nrv), where nrv = |v|/vmax for each column. Colors indicate relative degree of difference between mutant and wild-type for each value. (C) Coefficient of dynein dysfunction (CDD) was calculated from the values shown in panel B. In the two cases where a value wasn\u2019t determined (due to insufficient observations), the denominator was reduced from 6 to 5. Note that in two instances, the Z score for spindle positioning was negative (due to a lower number of mispositioned spindles being observed in K540C and D2439K cells than in wild-type cells; see Figure 1B). These two values were corrected to 0 so as to avoid them skewing the nrvSP values. Also see Materials and methods.\n\nTo more quantitatively assess our data for potential correlations between dynein dysfunction and disease type, we developed a system in which the degrees of variance from wild-type for each mutant were assigned numerical scores that we then used to tabulate a single value that represents the degree of dynein dysfunction for each mutation (coefficient of dynein dysfunction, or CDD). For tabulation of the CDD value, we focused on the in vivo data only. The reasons for this were two-fold: (1) defects observed in the in vivo assays were largely reflective of the degree of dysfunction, whereas the in vitro data generally revealed the mechanisms of dysfunction (e.g., whether the mutation affected dynein-intrinsic or extrinsic function); and, (2) all mutants with in vivo defects also exhibited in vitro defects, and so we chose to include only the in vivo data to avoid redundancies in the CDD tabulation. In addition to the spindle positioning assay, values from the following spindle dynamics metrics were used to compile the CDD: velocity, displacement per event, neck transit success rate, total spindle displacement per minute, and number of events per minute. The latter two were both included in the CDD tabulation since they revealed two different aspects of dynein activity: the extent to which the mutant dynein-dynactin complexes could move the spindle (total displacement per minute), and the ability to initiate a spindle movement event (number of events per minute). Since the spindle positioning assay reveals gross perturbations in dynein function, we increased the weight of this score with respect to each of the other metrics, such that the summed spindle dynamics metrics were weighed equally with that of the spindle positioning assay (see Figure 8\u2014figure supplement 1 for additional details on CDD tabulation). This analysis revealed a broad range of dynein dysfunction ranging from low (<10) to high CDDs (>30) for the mutant library. For comparison, the CDDs for wild-type and dyn1\u2206 cells were set to 0 and 100, respectively. Thus, considering the phenotypic severity of H3639P (CDD\u00a0=\u00a082) \u2013 which had a spindle positioning defect as severe as dyn1\u2206, but exhibited some dynein activity in the spindle dynamics assays \u2013 we find that the CDD score accurately reflects the degree of dysfunction for each mutant.\n\nRanking the mutants according to their CDD scores (from low to high; Figure 8B) revealed an apparent correlation between dynein dysfunction and disease type. Specifically, we found that above a CDD value of\u00a0~\u00a018, the likelihood of the mutation correlating with MCD increased, while its correlation with SMA-LED, CMT or CMD decreased. This suggests that the two general types of diseases (motor neuron disease, and defects in brain development) are each caused by different degrees of dynein dysfunction, and that there exists a lower threshold of dynein activity that is required for neurological development (see Discussion).\n\n## Discussion\n\nNeurodegenerative or developmental diseases that arise as a consequence of mutations within the dynein gene \u2013 or dyneinopathies \u2013 are a broad range of devastating diseases that include muscular atrophy, muscular dystrophy, and malformations in cortical development (MCD). The ages of onset for these diseases range from birth to late adulthood, while the severity of the symptoms associated with them also cover a broad range (Poirier et al., 2013; Laquerriere et al., 2017; Willemsen et al., 2012; Vissers et al., 2010). Although the underlying reasons behind this symptomatic diversity are unclear, our findings suggest that the degree of dysfunction is at least a potential genetic determinant of the type of disease. Specifically, motor neuron diseases appear to be more susceptible to even small degrees of dysfunction (CDD from 5 to 18), while MCD tends to correlate with larger degrees of dynein dysfunction (CDD\u00a0\u2265\u00a019). The reasons for this are unclear, but we hypothesize that the differences are due to the somewhat distinct types of dynein-mediated transport required to maintain motor neuron health, versus that required to effect nuclear or neuronal migration in the developing neocortex. Motor neurons possess extremely long axons (\u22641 m), and thus require a high degree of processive transport for the myriad vesicular cargoes that are moved from the soma to the axon terminal and back. This transport takes place not only during development and in growing children, but also in fully matured adults. Thus, it stands to reason that even subtle loss-of-functions in dynein-mediated transport can, over time, compromise motor neuron health. This is apparent from the wide range in ages-of-onset (from birth to adulthood), and in the range of severity for dynein-based motor neuron diseases (from weakness in the lower limbs to gross motor difficulties). On the other hand, during early brain development, dynein plays key roles in interkinetic nuclear migration (INM) and neuronal migration during development of the neocortex (Tsai et al., 2010; Hu et al., 2013; Tsai et al., 2007). Nuclear envelope-anchored dyneins move the nucleus tens of microns from the basal to the apical surface of the neuroepithelium (Hu et al., 2013). In addition to being a shorter distance traveled compared to axonal transport in a motor neuron, the number of motors engaged with microtubules during a nuclear migration event is likely far greater. Immunofluorescence reveals dynein is present along most of the nuclear envelope surface (Hu et al., 2013). Moreover, live cell imaging revealed that the microtubule network is fairly extensive in the proximity of the nucleus (Tsai et al., 2010; Tsai et al., 2007). A similar process may be at play during post-INM neuronal migration, when dynein assists in centrosome advancement of the postmitotic neuron. Evidence suggests that, as in budding yeast, astral microtubules make contacts with teams of cortically anchored dynein motors to move the centrosome (Tsai et al., 2007). Thus, for both INM and neuronal migration, many dynein molecules are likely engaging with microtubules to effect neurogenesis. This is in contrast to a vesicle that is being transported along the axon of a motor neuron, which likely possesses far fewer motors (~3\u20137 per vesicle [Hendricks et al., 2010; Rai et al., 2013]), of which potentially only a subset are engaged due to the geometric constraints associated with a three-dimensional vesicle engaging with a single filament. Thus, the minimal functional requirements for individual dynein motors during INM or neuronal migration are potentially lower due to the large number of motors engaged during a migration event. In such a scenario, teams of motors comprised of a mixture of wild-type and mutant variants (due to the heterozygous nature of these diseases) can work together to effect INM, but are less able to effectively transport single vesicular cargoes along the axon.\n\nOur data indicate that K1475Q \u2013 a mutation in the linker domain \u2013 increases dynein run length in vitro, and alters its localization pattern in vivo. The position of this mutation (at an intermolecular interface that helps mediate formation of an autoinhibited Phi particle conformation of human dynein; Zhang et al., 2017) suggests that the associated phenotypes may be a consequence of altered activity regulation. Given this mutant exhibited dynein-intrinsic enhancements in in vitro activity, the reduction in cellular dynein-dynactin activity is likely a consequence of the altered localization pattern. Specifically, the localization phenotype raises the possibility that a reduction in the number of dynein-dynactin complexes per cortical site (as apparent by the reduced fluorescence intensity of cortical foci; Figure 5D) \u2013 which would result in fewer motor complexes being engaged for a spindle movement event \u2013 is the basis for cellular dysfunction. Given the autoinhibited Phi particle exhibits reduced affinity for dynactin (Zhang et al., 2017), the altered localization pattern of the mutant may be due to disruption of a similar autoinhibitory conformation in yeast, consequent increased dynactin binding \u2013 which is supported by our ratiometric fluorescence imaging (Figure 5\u2014figure supplement 1) \u2013 and thus an increase in the frequency of cortical off-loading events (Markus and Lee, 2011b). Previous studies have suggested that dynein\u2019s interaction with dynactin is a limiting step in the delivery of dynein-dynactin complexes to cortical Num1 sites (Markus et al., 2011). We are currently focused on assessing whether yeast dynein indeed adopts such an autoinhibited state, and what role this conformation plays in the regulation of dynein activity.\n\nIn addition to revealing the potential molecular basis for disease onset or progression in affected patients, our findings also identified the potential structural basis for dynein dysfunction in two of the mutants. In the case of H3639P, our data support a model wherein the proline substitution compromises structural plasticity within an inter-helical loop in AAA5 that ultimately leads to a loss of activity in a large fraction of the motors, potentially as a consequence of protein misfolding. This conclusion is based on the reduced localization phenotype (Figure 5B and C) that is rescued by flanking glycines (Figure 6F) and proteasome inhibition (Figure 6G), and the large proportion of non-motile microtubule-bound motors we observed in the single molecule assay (Figure 4D). Since nearly all these motors exhibit persistent microtubule binding but no motility (96%; see kymograph in Figure 4\u2014figure supplement 1), we propose that a structural defect within the AAA ring is compromising the ability of nucleotide binding or hydrolysis to communicate with the microtubule-binding domain. It is interesting to note that the small fraction of motors that do exhibit processive motility in vitro (4.5%) move at velocities that are roughly similar to wild-type motors (80 versus 58 nm/sec for wild-type and H3639P, respectively). We observed a similar phenomenon during dynein-mediated spindle translocation in vivo (42 versus 22 nm/sec). These findings are consistent with the notion that a small fraction of the motors are capable of overcoming folding defects to adopt a native, motility-competent conformation.\n\nSubsequent to initiating this study, another group published findings describing the in vitro motility properties of a subset of the mutants analyzed here (Hoang et al., 2017). In this study, the authors utilized a recombinant human dynein in complex with dynactin and the adaptor BicD2 to assess single molecule motility parameters. With only two exceptions (E109I and N283R), the findings from this highly informative study largely corroborate our own data in that the dynein mutants assessed compromised the processivity of dynein-dynactin complexes (see Figure 8A, left, \u2018D\u2019). For instance, the two mutants with the most severe phenotypic consequences were the same as those observed here (R1962C and H3822P). Although one of the exceptions \u2013 E109I \u2013 did not exhibit reduced processivity in our assays, the authors\u2019 observation that this mutation leads to a reduction in the number of processive motors (Hoang et al., 2017) is similar to our observation of reduced cellular dynein-dynactin activity for this mutant (Figure 8A, left, \u2018A\u2019). Interestingly, this same study also noted a similar correlation between degree of dynein dysfunction and disease type (i.e., the most severe phenotypes correlated with MCD, while the least severe phenotypes correlated with SMA-LED), providing further validation for budding yeast as a model system for dynein studies.\n\nIn summary, we have established yeast as a medium-throughput model system that can be used to assess the molecular basis for dysfunction of disease-correlated dynein mutants. Our rapid and economical toolbox can be easily applied to understand the underlying basis for dysfunction in newly identified dynein mutants found in patients suffering from neurological diseases. We have also demonstrated the feasibility of rapidly testing hypotheses generated from our battery of assays using the wealth of available structural information that is available for dynein and its regulators.\n\n## Materials and methods\n\n### Media and strain construction\n\nStrains are derived from either W303 or YEF473A (Bi and Pringle, 1996) and are listed in Supplementary file 1. We transformed yeast strains using the lithium acetate method (Knop et al., 1999). Strains carrying mutations were constructed by PCR product-mediated transformation (Longtine et al., 1998) or by mating followed by tetrad dissection. Proper tagging and mutagenesis was confirmed by PCR, and in most cases sequencing (all point mutations were confirmed via sequencing). Fluorescent tubulin-expressing yeast strains were generated using plasmids and strategies described previously (Markus et al., 2015; Song and Lee, 2001). Yeast synthetic defined (SD) media was obtained from Sunrise Science Products (San Diego, CA).\n\n### Plasmid generation\n\nFor expression and purification of human dynein complex mutants (or wild-type), mutations were engineered into the human dynein heavy chain (DHC)-containing plasmid, pbiG1a:6His-ZZ-SNAPf-DHC1. We used Gibson assembly to engineer point mutations \u2013 C1932S, R1962C, or both \u2013 into this plasmid. The PmeI-digested gene expression cassette from this plasmid was co-assembled with the PmeI-digested poly-gene cassette from pbiG1b:IC2/LIC2/Tctex1/Robl1/LC8 (encoding all dynein accessory chains) into PmeI-digested pbiG2ab using biGBac cloning strategies as previously described (Weissmann et al., 2016) (all wild-type plasmids were kind gifts from Andrew Carter). The final, sequence-verified plasmids (wild-type and mutant variants of pbiG2ab:6His-ZZ-SNAPf-DHC1/IC2/LIC2/Tctex1/Robl1/LC8) were used to generate recombinant baculoviral genomes by Tn7 transposition into DH10Bac cells (Life Technologies). White, PCR-confirmed colonies were inoculated into LB media supplemented with 7 \u00b5g/ml gentamycin, 10 \u00b5g/ml tetracycline and 50 \u00b5g/ml kanamycin and grown overnight at 37\u00b0C. Bacmid preparation was performed as described previously (Zhang et al., 2017), stored at 4\u00b0C, and used within 2 weeks for subsequent virus production (see below).\n\n### Protein purification\n\nPurification of yeast dynein (ZZ-TEV-Dyn1-HALO, under the native DYN1 promoter; or, ZZ-TEV-6His-GFP-3HA-GST-dynein331-HALO, under the control of the galactose-inducible promoter, GAL1p) was performed as previously described (Ecklund et al., 2017; Huang et al., 2012). Briefly, yeast cultures were grown in YPA supplemented with either 2% glucose (for full-length dynein) or 2% galactose (for GST-dynein331), harvested, washed with cold water, and then resuspended in a small volume of water. The resuspended cell pellet was drop frozen into liquid nitrogen and then lysed in a coffee grinder (Hamilton Beach). After lysis, 0.25 vol of 4X dynein lysis buffer (1X buffer: 30 mM HEPES, pH 7.2, 50 mM potassium acetate, 2 mM magnesium acetate, 0.2 mM EGTA) supplemented with 1 mM DTT, 0.1 mM Mg-ATP, 0.5 mM Pefabloc SC (concentrations for 1X buffer) was added, and the lysate was clarified at 22,000 x g for 20 min. The supernatant was then bound to IgG sepharose six fast flow resin (GE) for 1\u20131.5 hr at 4\u00b0C, which was subsequently washed three times in 5 ml lysis buffer, and twice in TEV buffer (50 mM Tris, pH 8.0, 150 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 0.005% Triton X-100, 10% glycerol, 1 mM DTT, 0.1 mM Mg-ATP, 0.5 mM Pefabloc SC). To fluorescently label the motors for single molecule analyses, the bead-bound protein was incubated with either 6.7 \u00b5M HaloTag-AlexaFluor660 (Promega) for 10 min at room temperature. The resin was then washed four more times in TEV digest buffer, then incubated in TEV buffer supplemented with TEV protease for 1\u20131.5 hr at 16\u00b0C. Following TEV digest, the beads were pelleted, and the resulting supernatant was aliquoted, flash frozen in liquid nitrogen, and stored at \u221280\u00b0C.\n\nThe human dynein complex was expressed and purified from insect cells (ExpiSf9 cells; Life Technologies) as previously described with minor modifications (Zhang et al., 2017; Schlager et al., 2014). Briefly, 4 ml of ExpiSf9 cells at 2.5 \u00d7 106 cells/ml, which were maintained in ExpiSf CD Medium (Life Technologies), were transfected with 1 \u00b5g of bacmid DNA (see above) using ExpiFectamine (Life Technologies) according to the manufacturer\u2019s instructions. 5 days following transfection, the cells were pelleted, and 1 ml of the resulting supernatant (P1) was used to infect 300 ml of ExpiSf9 cells (5 \u00d7 106 cells/ml). 72 hr later, the cells were harvested (2000 x g, 20 min), washed with phosphate buffered saline (pH 7.2), pelleted again (1810 x g, 20 min), and resuspended in an equal volume of human dynein lysis buffer (50 mM HEPES, pH 7.4, 100 mM NaCl, 10% glycerol, 1 mM DTT, 0.1 mM Mg-ATP, 1 mM PMSF). The resulting cell suspension was drop frozen in liquid nitrogen and stored at \u221280\u00b0C. For protein purification, 30 ml of additional human dynein lysis buffer supplemented with cOmplete protease inhibitor cocktail (Roche) was added to the frozen cell pellet, which was then rapidly thawed in a 37\u00b0C water bath prior to incubation on ice. Cells were lysed in a dounce-type tissue grinder (Wheaton) using\u00a0\u2265\u00a0150 strokes (lysis was monitored by microscopy). Subsequent to clarification at 40,000 x g, 45 min, the supernatant was applied to 2 ml of IgG sepharose fast flow resin (GE) pre-equilibrated in human dynein lysis buffer, and incubated at 4\u00b0C for 2\u20134 hr. Beads were then washed with 50 ml of human dynein lysis buffer, and 50 ml of human dynein TEV buffer (50 mM Tris pH 7.4, 150 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 10% glycerol, 1 mM DTT, 0.1 mM Mg-ATP). The bead-bound protein was incubated with 3 \u00b5M SNAP-Surface Alexa Fluor 647 (NEB) for 40\u201360 min at 4\u00b0C (to fluorescently label the protein), washed five times in human dynein TEV buffer, then incubated with TEV protease overnight at 4\u00b0C. The next morning, the recovered supernatant was applied to a Superose six gel filtration column (GE) equilibrated in GF150 buffer (25 mM HEPES pH 7.4, 150 mM KCl, 1 mM MgCl2, 5 mM DTT, 0.1 mM Mg-ATP) using an AKTA Pure. Peak fractions (determined by UV 260 nm absorbance and SDS-PAGE) were pooled, concentrated, aliquoted, flash frozen, then stored at \u221280\u00b0C.\n\n### Cell lysis and immunoblotting\n\nYeast cultures were grown to similar mid-log phase densities (OD600\u00a0~\u00a02) in 4 ml SD media, and harvested. Cell pellets were resuspended in 0.2 ml of 0.1 M NaOH and incubated for 10 min at room temperature as described (Kushnirov, 2000). Following centrifugation, the resulting cell pellet was resuspended in sample buffer. Equal amounts of total cell lysate (as determined from cell density prior to lysis) were loaded into each lane, transferred to PVDF and probed with a monoclonal anti-GFP antibody (at 1:250; Abm) followed by an HRP-conjugated goat anti-mouse antibody (at 1:10,000; Jackson ImmunoResearch Laboratories). Electroblotting to PVDF was performed in 25 mM Tris, 192 mM glycine supplemented with 0.05% SDS and 20% methanol. Chemiluminescence signal was acquired with a Chemidoc MP (BioRad). Immunoblots were exposed (durations ranged from 2 to 5 min) without saturating the camera\u2019s pixels.\n\n### Single and ensemble molecule motility assays\n\nThe yeast dynein single-molecule motility assay was performed as previously described with minor modifications (Ecklund et al., 2017). Briefly, flow chambers constructed using slides and plasma cleaned and silanized coverslips attached with double-sided adhesive tape were coated with anti-tubulin antibody (8 \u03bcg/ml, YL1/2; Accurate Chemical and Scientific Corporation) then blocked with 1% Pluronic F-127 (Fisher Scientific). Taxol-stabilized microtubules assembled from unlabeled and fluorescently-labeled porcine tubulin (10:1 ratio; Cytoskeleton) were introduced into the chamber. Following a 5\u201310 min incubation, the chamber was washed with dynein lysis buffer (see above) supplemented with 20 \u03bcM taxol, and then purified dynein motors were introduced in the chamber. After a 1 min incubation, motility buffer (30 mM HEPES pH 7.2, 50 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 1 mM DTT, 1 mM Mg-ATP) supplemented with 0.05% Pluronic F-127, 20 \u00b5M taxol, and an oxygen-scavenging system (1.5% glucose, 1 U/ml glucose oxidase, 125 U/ml catalase) was added. TIRFM images were collected using a 1.49 NA 100X TIRF objective on a Nikon Ti-E inverted microscope equipped with a Ti-S-E motorized stage, piezo Z-control (Physik Instrumente), and an iXon X3 DU897 cooled EM-CCD camera (Andor). 488 nm, 561 nm, and 640 nm lasers (Coherent) were used along with a multi-pass quad filter cube set (C-TIRF for 405/488/561/638 nm; Chroma) and emission filters mounted in a filter wheel (525/50 nm, 600/50 nm and 700/75 nm; Chroma). We acquired images at 2 s intervals for 8 min. Velocity and run length values were determined from kymographs generated using the MultipleKymograph plugin for ImageJ (http://www.embl.de/eamnet/html/body_kymograph.html).\n\nHuman dynein-mediated microtubule gliding assays were performed as previously described (Zhang et al., 2017) with minor modifications. Briefly, flow chambers were prepared by affixing an ethanol-flamed coverslip to a glass slide using double-stick tape. The chamber was then incubated on an ice block, washed with 1% Pluronic F-127, following by addition of purified dynein (five chamber volumes of 60 nM dynein complex). Unbound motors were washed out with GF150 buffer. Subsequently, motility buffer (30 mM HEPES pH 7.0, 50 mM KCl, 5 mM MgSO4, 1 mM EGTA, 1 mM DTT, 2.5 mM Mg-ATP, 40 \u00b5M taxol) supplemented with 1.5% glucose, the oxygen scavenging system (see above), and 150 nM fluorescent microtubules was added to the chamber. Images were acquired every 1 s (for wild-type) or 5 s (for mutants), and velocity values were determined from kymographs generated as above.\n\n### Live cell imaging experiments\n\nFor the single time point spindle position assay, the percentage of cells with a misoriented anaphase spindle was determined after growth overnight (12\u201316 hr) at a low temperature (16\u00b0C), as previously described (Li et al., 2005; Markus et al., 2009; Sheeman et al., 2003). A single z-stack of wide-field fluorescence images was acquired for mRuby2-Tub1. For the spindle dynamics assay, cells were arrested with hydroxyurea (HU) for 2.5 hr, and then mounted on agarose pads containing HU for fluorescence microscopy. Full Z-stacks (23 planes at 0.2 \u00b5m spacing) of GFP-labeled microtubules (GFP-Tub1) were acquired every 10 s for 10 min on a stage pre-warmed to 30\u00b0C. To image dynein localization in live cells, cells were grown to mid-log phase in SD media supplemented with 2% glucose, and mounted on agarose pads. Images were collected on a Nikon Ti-E microscope equipped with a 1.49 NA 100X TIRF objective, a Ti-S-E motorized stage, piezo Z-control (Physik Instrumente), an iXon DU888 cooled EM-CCD camera (Andor), a stage-top incubation system (Okolab), and a spinning disc confocal scanner unit (CSUX1; Yokogawa) with an emission filter wheel (ET525/50M for GFP, and ET632/60M for mRuby2; Chroma). Lasers (488 nm and 561 nm) housed in a LU-NV laser unit equipped with AOTF control (Nikon) were used to excite GFP and mRuby2, respectively. The microscope was controlled with NIS Elements software (Nikon).\n\n### Statistical analyses\n\nStatistical tests were performed as described in the figure legends. Unpaired Welch\u2019s t tests (for gaussian distributed velocity data) and Mann-Whitney test (for exponentially distributed dispalcement data) were performed using Graphpad Prism. Z scores, which are a quantitative measure of difference between two proportions, were calculated using the following formula:\n\n$$\nZ=\\frac{(p^_{1}\u2212p^_{2})}{p^(1\u2212p^)(\\frac{1}{n_{1}}+\\frac{1}{n_{2}})}\n$$\n\nwhere:\n\n$$\np^=\\frac{y_{1}+y_{2}}{n_{1}+n_{2}}\n$$\n\nZ scores were converted to two-tailed P values using an online calculator.\n\n### Coefficient of dynein dysfunction (CDD) score calculation\n\nTo calculate the CDD scores, we used the following approach which permitted a quantitative measure of difference between mean values obtained for wild-type versus those obtained for each mutant. Graphpad Prism was used to calculate q values (i.e., the difference between the two means divided by the standard error of that difference), whereas Z scores were calculated as described above (all values are shown in Figure 8\u2014figure supplement 1). We then converted the q values and Z scores for each mutant (for each assay) into a \u2018normalized relative variance\u2019 score (nrv), which reflects the relative difference between two mean values (e.g., between wild-type and mutant 1; as reflected in the Z scores and q values, or \u2018v\u2019), where nrv = |v|/vmax for each range of scores (for each column shown in Figure 8\u2014figure supplement 1A). To convert the nrv values into a final CDD score for each mutant, we used the formula shown in Figure 8\u2014figure supplement 1C. Briefly, the nrv values for each assay for a given mutant was added, with the spindle positioning nrv (nrvSP) weighed five times that of the others, as described within the Results. In the two cases where a value wasn\u2019t determined (due to insufficient observations, such as in the case for neck transit success for the H3639P mutant), the denominator was reduced from 6 to 5. In the two instances where the Z score for spindle positioning was negative (due to a lower number of mispositioned spindles being observed in K540C and D2439K cells than in wild-type cells; see Figure 1B), we adjusted the values to 0 so as to avoid them skewing the nrvSP values.\n",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "4920b0aa-53b9-4e48-8208-54539d5d994b",
+      "submission_id": "d15cde82-4335-480d-be59-5a398b57065e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew P Carter, MRC Laboratory of Molecular Biology United Kingdom\n\nReviewers:\n- Richard J McKenney, Howard Hughes Medical Institute, University of California, San Francisco United States\n- Giampietro Schiavo, Cancer Research UK - London Research Institute United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.47246.037](https://doi.org/10.7554/eLife.47246.037)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Molecular basis for dyneinopathies reveals insight into dynein regulation and dysfunction\" for consideration by eLife. Your article has been reviewed by four peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Richard J McKenney (Reviewer #2); Giampietro Schiavo (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and I have drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nYour manuscript represents a tour-de-force analysis of cytoplasmic dynein mutations that have been previously discovered in human patients. You use a budding yeast system to perform in vivo and in vitro analysis of a panel of dynein mutants that cause various human maladies. This study nicely builds on previous work from Bullock lab (Hoang et al.) by combining in vitro measurements, which largely agree with the previously published data, with a range of in vivo assays to assess particular cellular defects associated with each mutation. We felt think this paper will be broadly interesting to readers and will serve as a resource and example of how to approach the characterization of dynein mutations discovered in the future.\n\nThe reviewers were supportive of publishing the work in eLife after the following essential revisions have been addressed.\n\nEssential revisions:\n\n1) Were the single molecule data in Figure 4 derived from one protein preparation per variant? If so, data needs to be provided that supports the reproducibility of results between different preparations. For example, the authors could present data comparing the consistency of values for three wild-type dynein preps, or for a subset of mutants. The authors should state how many preps were tried with each mutant and each assay.\n\n2) The authors need to compare the expression levels of the different mutations in yeast. Can they rule out that some of the mutations affect protein levels?\n\n3) The authors should verify the amount of yeast dynactin (NIP100) associated to the different mutants via direct immunoprecipitation. These results would greatly help them to reach firm conclusions regarding the points raised in the third paragraph of the Discussion.\n\nOther points:\n\n1) In Figure 7G the degree of rescue for the double mutant is actually very low (note the split y-axis). The authors should make this clearer in the text and discuss the possible reasons.\n\n2) Poirier et al. (2013) described R3384Q. Is R3384N, which is modeled by Marzo et al. in the current study, also a human mutation?\n\n3) It would be helpful for the reader to see directly which mutations were tested in the 2017 study. This could, for example, be added in the graphic in Figure 8A.\n\n4) Including the amino acid positions for the human mutations in parentheses in Figure 1A would make it easier to cross reference studies.\n\n5) Figure 3B. The identity of each channel should be labeled in the figure for clarity.\n\n6) 'Stabilized' is spelled incorrectly in Figure 4A.\n\n7) Figure 2 legend: state what i.o. means.\n\n8) \"Moreover, combining C1822S with R1852V led to no degree of rescue\". Do the authors mean compared to each of the single mutants? This could be clarified.\n\n9) \"Compensatory mutation rescues motility of human dynein mutant\". It would be more accurate to say that the mutation suppresses or partially suppresses the mutant phenotype.\n\n10) For the parameters in Figure 2 what are the typical values for the full dynein mutant? This information is not essential but if it is available it would help the reader judge the scale of the effects caused by the disease mutations.\n\n11) The authors should be careful with color usage in Figure 1A (and all figures). Some of the dynein domains are the same color as the annotated mutations.\n\n12) Is the neck-transit arrow pointing in the correct direction in Figure 2A, top panel? The movement in the images appears opposite to the arrow.\n\n13) The observation of potential co-translational dimerization is intriguing. The authors could cite and discuss the recent finding of DynAPs in the assembly of ciliary dyneins: https://elifesciences.org/articles/38497.\n\n14) The color-coding of mutations in the bar charts is helpful and should be displayed in all figures. For instance it is missing in Figures 3 and 4.\n\n15) The authors fail to discuss prior literature on the characterized dynein mutations that cause similar phenotypes in other organisms such as mice (i.e. LOA, CRA, SWA mutations).\n\n16) The increased run-length for K1475Q is intriguing. The authors should measure single molecule intensities and compare to WT motors to be sure this isn't due to aggregation.\n\n17) I don't understand the conclusion that the full-length R1852C mutant motors are aggregated/misfolded but the minimal motor construct is not. More explanation is needed here. Why would the mutation in the motor domain more strongly affect the full-length motor versus the truncated motor?\n\n18) Did the authors try adding in different concentrations or types of reducing agents to their in vitro assays to determine if an ectopic disulfide bond really is to blame for the phenotypes?\n\n19) It\u2019s hard to follow the logic of why the authors jumped to the conclusion that a protein degradation response was to blame for the defects in H3639P mutant cells?\n\n20) It would be more transparent to plot most of the data points either directly on to the bar charts or replace the bar charts with box and whisker plots.\n\n21) The Abstract states there is no correlation between mutations and disease state, but then the authors find one. Should the first statement be \"There is no known correlation [...]\"?\n\n22) Figure 1: the authors should add the meaning of CC and DD in the legend of panel A and use the green color to indicate the bar for K1475Q (mutation in the linker domain) in panel B.\n\n23) The authors should try and remove some redundant wording (e.g. subsection \u201cSingle molecule motility assays reveal insight into dynein-intrinsic dysfunction \u201c: the content of the parentheses in the first paragraph \"e.g. Pac.1...\" is redundant in light of the following two paragraphs) and modify some sentences (e.g. the kymograph in Figure 4\u2014figure supplement 1 readily displays an increase in speed of K1475Q motors; however, it is difficult, if not impossible, to evince from this figure an increase in run length or in the fraction of active motors).\n\n24) Likewise, the authors should consider being a little bit more cautious in some of their conclusions (e.g. it is almost impossible to rule out a contribution of adaptors and accessory factors to the phenotype observed in mammalian cells) or speculations (geometric constrains limiting the amount of motor complexes engaged in transport of a vesicle \u2013 an organelle is almost never perfectly round, which the exception of synaptic vesicles which are assembled after transport at synapses).\n\n25) Would it be possible to remove the term i.o. (insufficient observations) from some of the Figures (e.g. Figure 5) by increasing the number of observations or at least state the number of observed events in the figure legend?\n\n26) The readability of panels B and F of Figure 7 should be improved.\n\n27) The CDD calculation method should be included in the Material and methods section of the main text.\n\n28) The authors should consider including in the reference section some early references demonstrating the key role of cytoplasmic dynein in the nervous system of Metazoa (e.g. Saxton's lab, Drosophila; Fisher's lab, mouse), and some key reviews discussing the links between deficits in axonal transport and nervous system disorders, and the complexity of the clinical phenotypes caused by mutations in the DYNC1H1 gene.\n\n29) Please justify the decision of using one-way ANOVA OR unpaired t-test OR Z-scores for panels of the same figure (e.g. Figure 2). To the readers, these panels are indistinguishable in nature (they are derived from the same experimental dataset). This comment applies to the majority of main and supplemental figures.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Molecular basis for dyneinopathies reveals insight into dynein regulation and dysfunction\" for further consideration at eLife. Your revised article has been favorably evaluated by Anna Akhmanova as the Senior Editor, a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) Address the following comments about toning down the claims of novelty.\n\nSome of the claims about the novelty of the finding that there is a correlation between disease type and strength of the mutations' effects on dynein activity are too strong, and need to be toned down.\n\nFor example, the authors write in the Abstract \"In addition to revealing molecular insight into dynein regulation, our data reveal an unexpected correlation between the degree of dynein dysfunction and disease type\".\n\nThe last part of the sentence is misleading as Hoang et al., 2017, reached a similar conclusion:\n\n\"Interestingly, of the 16 human or mouse mutations that support production of the recombinant dynein complex, the 6 with the strongest effects on dynein motility are associated with MCD in humans (Figure 6). All three SMALED mutations that could be assayed in the context of the purified motor complex fell into the class with the weakest effects (Figure 6). These mutations are among the group that only compromised run lengths of processive dynein-dynactin-BICD2N complexes. These findings raise the possibility that MCD and SMALED are caused by different degrees of inhibition of dynein motility, rather than inactivation of distinct dynein-related processes\".\n\nWhilst the confirmation and extension of this correlation by Marzo et al. valuable, it would seem uncharitable not to mention that it had been reported before (and is therefore not unexpected to find this in the current study).\n\nThe authors could, for example, write in the Abstract that \"our data strengthen the evidence that different disease types arise from different degrees of dynein function\", and must include an acknowledgement in the main text (e.g. in the Discussion) that Hoang et al. proposed this previously based on their observations.\n\nThere is a similar statement in the last paragraph of the Introduction that also needs toning down.\n\n2) It was not clear to us from the legends to the new Figure 5\u2014figure supplement 2 what the two images for each blot represent. Are these different blots of the same extracts, or from two different extracts per experiment? This information should be included in the legend.\n",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3f73ff0d-27bb-4284-b114-94d8246dd5d7",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C1",
+      "claim": "Cytoplasmic dynein plays critical roles within the developing and mature nervous systems, including effecting nuclear migration and retrograde transport of various cargos.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic dynein plays critical roles within the developing and mature nervous systems, including effecting nuclear migration, and retrograde transport of various cargos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that summarizes established knowledge about dynein's roles in the nervous system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "7cd6a2dc-26c8-4627-92a6-cc62dd098908",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C2",
+      "claim": "Mutations in dynein are causative of various developmental neuropathies and motor neuron diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, mutations in dynein are causative of various developmental neuropathies and motor neuron diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature establishing the link between dynein mutations and disease.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "a824afdb-bb99-4deb-ad0c-6955ff2e2607",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C3",
+      "claim": "Seventeen disease-correlated dynein mutants were characterized using budding yeast as a screening platform.",
+      "claim_type": "EXPLICIT",
+      "source": "To circumvent complications associated with dynein studies in human cells, we employed budding yeast as a screening platform to characterize the motility properties of seventeen disease-correlated dynein mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach taken in the study, which is detailed throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "5de9d566-892d-4e5d-a1be-fff2c612f71a",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C4",
+      "claim": "The molecular basis for several classes of etiologically related diseases was determined using the yeast system.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this system, we determined the molecular basis for several classes of etiologically related diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "6316fc55-91b0-402b-a692-5db414315c0b",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C5",
+      "claim": "Compensatory mutations alleviated mutant phenotypes in two cases, one of which was confirmed with recombinant human dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, by engineering compensatory mutations, we alleviated the mutant phenotypes in two of these cases, one of which we confirmed with recombinant human dynein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing rescue of R1852C and H3639P mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "c2b3e9f7-1ca5-42e5-a32b-5ef25e04b9ec",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C6",
+      "claim": "The type of disease may be dictated by the degree of dynein dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to revealing molecular insight into dynein regulation, our data provide additional evidence that the type of disease may in fact be dictated by the degree of dynein dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the correlation analysis between CDD scores and disease types presented in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "42563ca1-7403-4c39-8c55-32e5d73d8e3f",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C7",
+      "claim": "Neurofilaments are transported to the axon terminus by kinesins.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, neurofilaments, which provide structural stability to a cell, are transported to the axon terminus by plus end-directed microtubule motors (kinesins; Xia et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Xia et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "529160f1-2bcb-493e-8b63-1ef48241c284",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C8",
+      "claim": "Neurofilaments are transported to the soma by cytoplasmic dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "neurofilaments, which provide structural stability to a cell, are transported to the axon terminus by plus end-directed microtubule motors (kinesins; Xia et al., 2003) and to the soma by the minus end-directed microtubule motor, cytoplasmic dynein (hereafter referred to as dynein) (He et al., 2005; Wagner et al., 2004; Shah et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to He et al., 2005; Wagner et al., 2004; Shah et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "1e847556-81c8-4394-b16e-55ab9fa135fc",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C9",
+      "claim": "Dynein plays a key role in trafficking numerous neuronal cargoes including autophagosomes, mitochondria, and ionotropic glutamate receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynein has also been shown to play a key role in trafficking numerous other neuronal cargoes in various model organisms (He et al., 2005; Wagner et al., 2004; Shah et al., 2000; Bowman et al., 2000; Berg et al., 2000; Barkus et al., 2008; Hendricks et al., 2010; Rosa-Ferreira and Munro, 2011; Maday et al., 2012; Kamal et al., 2000; Lazarov et al., 2005; Fu and Holzbaur, 2013; Almenar-Queralt et al., 2014; Rao et al., 2017), including autophagosomes (Ravikumar et al., 2005; Katsumata et al., 2010; Cheng et al., 2015), mitochondria, and ionotropic glutamate receptors (Horak et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "d5095001-8f58-41e9-9a5b-2cc921b2f3e1",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C10",
+      "claim": "Defects in dynein function lead to mislocalization of cargoes and accumulation of protein aggregates at the neurite tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects or perturbations in dynein function lead to mislocalization of these cargoes, and results in an accumulation of protein aggregates at the neurite tip (Ravikumar et al., 2005; Levy et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Ravikumar et al., 2005; Levy et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "6ab36af5-2d63-45a8-9560-8af9280703d1",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C11",
+      "claim": "Accumulation of misfolded protein aggregates in the neuronal cytoplasm is a common pathological hallmark for motor neuron disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, accumulation of misfolded protein aggregates in the neuronal cytoplasm is a common pathological hallmark for motor neuron disease (He et al., 2005; LaMonte et al., 2002; Lin and Schlaepfer, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to He et al., 2005; LaMonte et al., 2002; Lin and Schlaepfer, 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "5fab532f-8412-4748-8612-28cbf583647a",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C12",
+      "claim": "Mouse models with dynein mutations exhibit severe neuropathy and decreased rates of retrograde axonal transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with an important role for dynein in neuronal health (Schiavo et al., 2013), mouse models with dynein mutations exhibit severe neuropathy, and decreased rates of retrograde axonal transport, among other defects (Hafezparast et al., 2003; Chen et al., 2007; Ori-McKenney et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Hafezparast et al., 2003; Chen et al., 2007; Ori-McKenney et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "0381fa6c-bd40-4c8e-949a-12ff676cf317",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C13",
+      "claim": "Dynein promotes interkinetic nuclear migration in neuronal progenitor cells during neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its key role in the retrograde trafficking of cargoes, dynein also plays a critical and conserved role during neuronal development by promoting interkinetic nuclear migration (INM) in neuronal progenitor cells, and in the subsequent migration of young postmitotic neurons. During the former process, which is critical for neurogenesis, nuclear envelope anchored dynein motors promote migration of the nucleus from the basal to the apical surface of the neuroepithelium where mitotic divisions occur (Tsai et al., 2010; Hu et al., 2013; Del Bene et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Tsai et al., 2010; Hu et al., 2013; Del Bene et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "dbcf4895-7c68-4443-a53c-4e7a63b6af74",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C14",
+      "claim": "Defects in dynein-mediated nuclear migration can lead to defects in early brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, defects in dynein-mediated nuclear migration can lead to defects in early brain development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the established role of dynein in INM.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "dd4fb8ff-4ea1-4a5d-8a2c-05acc41fdb0f",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C15",
+      "claim": "Mutations in the dynein heavy chain (DYNC1H1 gene) are found in individuals suffering from malformations of cortical development, spinal muscular atrophy with lower extremity dominance, congenital muscular dystrophy, and Charcot-Marie-Tooth disease.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, mutations in dynein underlie many cases of malformations of cortical development (MCD), spinal muscular atrophy with lower extremity dominance (SMA-LED), congenital muscular dystrophy (CMD), and Charcot-Marie-Tooth disease (CMT) (Harms et al., 2012; Tsurusaki et al., 2012; Scoto et al., 2015; Peeters et al., 2015; Strickland et al., 2015; Weedon et al., 2011; Fiorillo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "b9e81b59-5849-4e4f-b447-038737ea5e4b",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C16",
+      "claim": "Mutations in the dynein regulator LIS1 are causative of lissencephaly.",
+      "claim_type": "EXPLICIT",
+      "source": "Although mutations in the dynein regulator LIS1 are causative of the MCD disease lissencephaly (Wynshaw-Boris, 2007; Wynshaw-Boris and Gambello, 2001; Reiner et al., 1993) (characterized by a smooth brain due to reduced or absent cortical folding)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Wynshaw-Boris, 2007; Wynshaw-Boris and Gambello, 2001; Reiner et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "03518ba9-60e6-4fa5-94a5-a54217a531f4",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C17",
+      "claim": "Mutations in dynein more often lead to polymicrogyria than lissencephaly.",
+      "claim_type": "EXPLICIT",
+      "source": "mutations in dynein more often lead to polymicrogyria, which is characterized by excessive small folds in the cerebral cortex (Poirier et al., 2013; Laquerriere et al., 2017; Willemsen et al., 2012; Vissers et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Poirier et al., 2013; Laquerriere et al., 2017; Willemsen et al., 2012; Vissers et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "a70e6c7c-56f1-4d3e-9578-6a8c0cbcdc2a",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C18",
+      "claim": "The only known function for dynein in budding yeast is to position the mitotic spindle at the future site of cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to animal cells in which dynein performs numerous functions, the only known function for dynein in budding yeast is to position the mitotic spindle at the future site of cytokinesis (Li et al., 1993; Eshel et al., 1993; Carminati and Stearns, 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Li et al., 1993; Eshel et al., 1993; Carminati and Stearns, 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "77738ac8-de87-4e4c-961c-95f3cdf56dff",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C19",
+      "claim": "The yeast dynein complex is comprised of light, light-intermediate, intermediate, and heavy chains.",
+      "claim_type": "EXPLICIT",
+      "source": "As in higher eukaryotes, the yeast dynein complex is comprised of light (Dyn2), light-intermediate (Dyn3), intermediate (Pac11), and heavy chains (Dyn1), the latter of which is the ATPase that powers motility along microtubules (see Figure 1A) (Markus and Lee, 2011a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by a citation to Markus and Lee, 2011a and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "79a65318-3eec-4fe3-8e4f-58c188557d04",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C20",
+      "claim": "Each of the accessory chains in budding yeast is encoded by only a single gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas in humans, the non-catalytic subunits exist in different isoforms encoded by multiple genes and tissue-specific isoforms (Pfister et al., 2006; Raaijmakers et al., 2013), each of the accessory chains in budding yeast is encoded by only a single gene, enabling simple genetic analysis and manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement contrasts human and yeast dynein, supported by citations to Pfister et al., 2006; Raaijmakers et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "3ca6f591-5e86-476d-ab00-8cf05377eba4",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C21",
+      "claim": "Studies have revealed a high degree of structural similarity between yeast and human dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, studies have revealed a high degree of structural similarity between yeast and human dynein (Carter, 2013; Schmidt and Carter, 2016), rendering structure-function studies in this organism relevant and translatable to animal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Carter, 2013; Schmidt and Carter, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "75f40414-19a7-48e0-96e6-1daaa9ce6270",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C22",
+      "claim": "Eight mutants exhibited varying degrees of spindle positioning defects that significantly differed from wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that eight mutants exhibited varying degrees of spindle positioning defects that significantly differed from wild-type (Figure 1B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "71fa3980-0bd2-4f75-9dba-5791f1ce7659",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C23",
+      "claim": "All mutants with spindle positioning defects had substitutions in the motor domain.",
+      "claim_type": "EXPLICIT",
+      "source": "All of those mutants with defects were those with substitutions in the motor domain, which encompasses the six AAA (ATPase associated with various cellular activities) domains, the linker element that performs the powerstroke, and the microtubule-binding domain (MTBD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the spindle positioning assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "cc1d7b8f-4c9d-4b5a-8caf-c3edf953eef7",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C24",
+      "claim": "Seven out of nine mutations linked to malformations in cortical development were among those with defects in the spindle positioning assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven out of the nine mutations linked to malformations in cortical development (MCD) were among those with defects in this assay, whereas none of the mutations associated with the other neurological diseases exhibited significant defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the spindle positioning assay results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "4ea2caec-63d7-47fa-9cfc-f84cf95aa30d",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C25",
+      "claim": "H3639P exhibited spindle positioning defects as severe as loss of DYN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although most of these mutants differed to a small but significant degree from wild-type, H3639P exhibited defects as severe as loss of DYN1 (dyn1\u2206).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "45bcb2cd-c834-4c6a-8e79-e8b5822a866a",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C26",
+      "claim": "All mutants exhibited varying degrees of alterations in their motility parameters with respect to wild-type cells in the spindle tracking assay.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed a broader more nuanced array of defects in our library of mutants (Figure 2B\u2013F, and Figure 2\u2014figure supplement 2A and B). Strikingly, all mutants exhibited varying degrees of alterations in their motility parameters with respect to wild-type cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "8a0cb145-91d2-4da6-a208-b5fb249d0140",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C27",
+      "claim": "H3639P cells exhibited only 10 dynein-mediated spindle displacement events from all cells observed.",
+      "claim_type": "EXPLICIT",
+      "source": "At the most severe end of the spectrum, H3639P cells \u2013 which also had the most severe spindle positioning phenotype \u2013 exhibited only 10 dynein-mediated spindle displacement events from all cells observed (compare to a mean of 244 events for all other strains; see Figure 2\u2014figure supplement 2A and B for scatter plots illustrating density of datasets).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the spindle tracking assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "372fcd87-4626-4312-a26a-b126bdba5ade",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C28",
+      "claim": "R1852C exhibited significant defects in all motility metrics including velocity, displacement, neck transit success, and activity parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutant with the second most severe spindle positioning phenotype, R1852C, exhibited significant defects in all motility metrics, including velocity, displacement (per event), neck transit success, and the two activity parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "b9fdda52-6a33-4c20-b271-8f6bc9f5fe4a",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C29",
+      "claim": "K1475Q mutation led to a reduction in spindle velocity, displacement, and activity metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "Another noteworthy mutant was K1475Q, a substitution within the linker domain, the mechanical element that is responsible for the powerstroke (Figure 2\u2014figure supplement 3). This mutation led to a reduction in spindle velocity, displacement, and also reduced the activity metrics of the motor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "f22acd95-1e0a-4e92-8802-e5f9b2e0c7f6",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C30",
+      "claim": "L2557M mutation led to a reduction in neck transit success rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the most striking defect we observed with L2557M was a reduction in the neck transit success rate (Figure 2D), which is the likely cause of the spindle positioning defect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "225fc776-f256-4eef-9566-56740d623b98",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C31",
+      "claim": "All three microtubule-binding domain mutants exhibited reductions in velocity, displacement, and neck transit success.",
+      "claim_type": "EXPLICIT",
+      "source": "All three microtubule-binding domain (MTBD) mutants exhibited fairly similar degrees and types of defects in effecting spindle movements (reductions in velocity, displacement, and neck transit success).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "b569afe7-8e24-4c9d-a609-15386312e684",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C32",
+      "claim": "All three MTBD mutations mapped to the surface that makes contacts with the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural analysis revealed that all three mutations mapped to the surface of the MTBD that makes contacts with the microtubule (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "ee8fa1a2-346e-46bf-9137-51a3c1d01a85",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C33",
+      "claim": "All tail domain mutations led to altered spindle motility parameters despite none causing significant spindle positioning defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Although none of them led to significant spindle positioning defects, all of the tail domain mutations led to altered spindle motility parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data presented in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "4d8513f5-81ce-4c85-ae96-4bc2cb8ddd22",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C34",
+      "claim": "Most tail domain mutations (7 out of 8) clustered to two distinct regions: adjacent to the N-terminal dimerization domain or at a surface that interfaces with the intermediate chain of a neighboring heavy chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural analysis revealed that most of these mutations (7 out of the 8) clustered to two distinct regions: (1) adjacent to, or within the N-terminal dimerization domain, or (2) at a surface that interfaces with the intermediate chain of a neighboring heavy chain in a two dynein:1 dynactin complex (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "44f64471-9cae-427c-b9d6-8943b0d9570f",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C35",
+      "claim": "Dynein very rarely, if ever, forms heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we observed a small number of motile green molecules (0.9% of the total; likely due to contaminating Dyn1-GFP molecules in the protein preparation), and a single dual labeled molecule (0.3% of the total; Figure 3B, arrow), the vast majority of motile molecules (98.8%) were exclusively red, indicating that dynein very rarely, if ever, forms heterodimers (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the single molecule imaging data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "262d0feb-5580-4e26-adf6-24b66d800b0e",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C36",
+      "claim": "The findings suggest a co-translational dimerization model for dynein complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the notion that a small fraction of the motors are capable of overcoming folding defects to adopt a native, motility-competent conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the homodimerization data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "57722d09-239c-447c-8be7-af4b97245e7a",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C37",
+      "claim": "All three heterozygous mutants (E545V, R1852C, H3639P) exhibited partial loss-of-function phenotypes with respect to hemizygous cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the heterozygous mutants revealed that all three exhibited partial loss-of-function phenotypes in almost all assays with respect to the hemizygous cells, indicating that they are all indeed dominant alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "1331be09-fb7b-4f97-b234-de9b022b2dbf",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C38",
+      "claim": "Homodimers of mutant dynein are sufficient to compromise the activity of wild-type homodimers within the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that homodimers of mutant dynein are sufficient to compromise the activity of wild-type homodimers within the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the heterozygous diploid experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "777f63d4-1043-493a-bc54-149a000012d7",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C39",
+      "claim": "Thirteen mutants that exhibited defects in the spindle tracking assay showed some degree of motility alteration in the in vitro single molecule assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Single molecule motility analysis of each mutant revealed that thirteen of those that exhibited defects in the spindle tracking assay showed some degree of motility alteration in the in vitro assay (Figure 4; see Figure 4\u2014figure supplement 1 for scatter plots and some example kymographs).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "e97fa87b-08b2-4d5c-8490-b7bf644c6ed4",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C40",
+      "claim": "R241L, N283R, and K1475Q all led to an increase in velocity in single molecule assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Although most mutants exhibited loss-of-function phenotypes in the in vitro assay, a few mutations led to gain-of-functions. For instance, R241L, N283R, and K1475Q all led to an increase in velocity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "2528c158-a829-40c6-b976-6fdf7a9c3117",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C41",
+      "claim": "K1475Q caused an increase in run length and a small but significant increase in the fraction of active motors.",
+      "claim_type": "EXPLICIT",
+      "source": "while K1475Q also caused an increase in run length and a small but significant increase in the fraction of active motors (see Figure 4\u2014figure supplement 1C for example kymograph).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "edce44ce-5269-45fe-b183-c1a290a6ea40",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C42",
+      "claim": "K1475Q substitution led to a large increase in the frequency of observing cortical foci but a concomitant reduction in the number of molecules per cortical focus.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the K1475Q substitution (within the linker) led to a large increase in the frequency of observing cortical foci (2.2-fold; p=0.0011), but a concomitant reduction in the number of molecules per cortical focus (38% reduction in fluorescence intensity; p=0.0117)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "e8413a57-124d-46d3-b266-1e474822ce5a",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C43",
+      "claim": "K1475Q interacts more readily with dynactin than wild-type dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this analysis indeed revealed a significantly increased ratio of dynactin to dynein at plus ends (Figure 5\u2014figure supplement 1B; from a mean of 1.07 to 1.52; p<0.0001), indicating that K1475Q interacts more readily with dynactin than wild-type dynein",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the ratiometric imaging data presented in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "2f027449-c803-482d-a071-d91b7ace57bc",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C44",
+      "claim": "K1475Q mutation may be disrupting a potential autoinhibited state of yeast dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "and that this mutation may in fact be disrupting a potential autoinhibited state of yeast dynein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the increased dynactin binding and comparison to human dynein studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "8b3e9e5f-cad8-41db-99f1-f8d27318811e",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C45",
+      "claim": "Gain of proline is the reason for dynein dysfunction in H3639P.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these substitutions led to significant spindle positioning defects, indicating that gain of proline is the reason for dynein dysfunction in H3639P (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data from substitution experiments presented in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "a4281a2b-f9f4-4d76-b6ff-57fb2a857fb8",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C46",
+      "claim": "Introduction of a proline at two distinct sites within the inter-helical loop (positions 3639 and 3641) are sufficient to severely compromise dynein function.",
+      "claim_type": "EXPLICIT",
+      "source": "We next asked if proline substitutions are tolerated at other sites within this inter-helical loop. Using the spindle positioning assay, we found that proline was well tolerated at all sites within the inter-helical loop except for position 3641 (2 residues C-terminal to 3639; Figure 6B). Thus, introduction of a proline at two distinct sites within this loop are sufficient to severely compromise dynein function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data from proline scanning experiments presented in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "42f9ad8e-6ba2-4a84-b861-5794ac54b910",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C47",
+      "claim": "The triple mutant F3638G H3639P W3640G exhibited spindle positioning defects that were significantly less severe than H3639P.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, however, the triple mutant \u2013 in which P3639 is flanked by glycines (i.e., F3638G H3639P W3640G) \u2013 exhibited spindle positioning defects that were significantly less severe than H3639P (p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data presented in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "34d9543c-c10d-4456-9b94-69998c304ad3",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C48",
+      "claim": "The activity of the triple mutant F3638G H3639P W3640G was significantly greater than the H3639P single mutant in the spindle tracking assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the activity of this mutant was much less than that of wild-type dynein-expressing cells, it was significantly greater than the H3639P single mutant (p\u22640.0361; Figure 6C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 6C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "f4897f4b-1197-45a2-9307-5e65af94e0f4",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C49",
+      "claim": "The triple mutant does not rescue dynein motility but some other metric of in vivo dynein activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the single molecule assay revealed that the triple mutant was no better than the single mutant in any metrics (Figure 6\u2014figure supplement 1E\u2013I). This indicates that the triple mutant does not rescue dynein motility, but some other metric of in vivo dynein (or dynein-dynactin) activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparing in vivo and in vitro data in Figure 6 and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "d2a6b8ad-5da8-42e9-9a38-808b4bb1f0b6",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C50",
+      "claim": "MG132 treatment increased the frequency of plus end targeting of H3639P by 3.7-fold to levels comparable to wild-type dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, MG132 treatment increased the frequency of plus end targeting of H3639P by 3.7-fold (p<0.0001) to levels comparable to wild-type dynein",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data presented in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "06535ffd-be6b-45a3-9a96-eb60fde22518",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C51",
+      "claim": "An ectopic disulfide bond is the likely cause for R1852C dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings indicate that an ectopic disulfide bond is the likely cause for R1852C dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the rescue experiments with C1822S mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "abfe2d5b-2eb4-4633-9159-9423c855fb91",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C52",
+      "claim": "C1822S was sufficient to significantly rescue the single molecule velocity defect in the minimal dynein fragment GST-dynein331.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the spindle tracking data, C1822S was indeed sufficient to significantly rescue the single molecule velocity defect in the minimal dynein fragment (Figure 7E and Figure 7\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "fe6917fe-9858-4475-9246-1847d5996899",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C53",
+      "claim": "Substitution of the closely apposed cysteine to a serine (C1932S) was sufficient to restore some of the lost function in human dynein R1962C mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings, the single R1962C mutation (equivalent to R1852C) was sufficient to completely disrupt microtubule gliding activity (Hoang et al., 2017) (Figure 7F\u2013H); however, as with yeast dynein, substitution of the closely apposed cysteine to a serine (C1932S) was sufficient to restore some of the lost function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the microtubule gliding assay data presented in Figure 7F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "319a9520-75f2-4401-94f0-c1904b59f2eb",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C54",
+      "claim": "On average, mutations within the highly conserved motor domain exhibited more statistically significant differences from wild-type than those in the tail domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, on average, mutations within the highly conserved motor domain exhibited more statistically significant differences from wild-type than those in the tail domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the heat map analysis in Figure 8A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "808ccc41-c35a-46bd-9f63-7ab3cb3ac0bc",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C55",
+      "claim": "More severe loss-of-function mutants appeared to correlate with MCD, while those with lesser defects mainly correlate with motor neuron diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this broad view of dysfunction in the mutant library revealed that the more severe loss-of-function mutants appeared to correlate with MCD, while those with lesser defects mainly correlate with motor neuron diseases (SMA-LED, CMT or CMD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the heat map and CDD analysis in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "699bba8a-4a50-4f5f-8e75-cb04d5edf25b",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C56",
+      "claim": "Above a CDD value of approximately 18, the likelihood of the mutation correlating with MCD increased, while its correlation with SMA-LED, CMT or CMD decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that above a CDD value of ~ 18, the likelihood of the mutation correlating with MCD increased, while its correlation with SMA-LED, CMT or CMD decreased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the CDD analysis presented in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "e15b9382-ba5b-4881-8bcd-4e50dd901b73",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C57",
+      "claim": "There exists a lower threshold of dynein activity that is required for neurological development.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the two general types of diseases (motor neuron disease, and defects in brain development) are each caused by different degrees of dynein dysfunction, and that there exists a lower threshold of dynein activity that is required for neurological development (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation between CDD scores and disease types.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "6c93aba5-53ce-49c5-baa2-e456c36867aa",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C58",
+      "claim": "Motor neuron diseases appear to be more susceptible to even small degrees of dysfunction (CDD from 5 to 18).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, motor neuron diseases appear to be more susceptible to even small degrees of dysfunction (CDD from 5 to 18), while MCD tends to correlate with larger degrees of dynein dysfunction (CDD \u2265 19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the CDD analysis and disease correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "479c0782-2ef3-4d8d-af7c-9bae7b321611",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C59",
+      "claim": "MCD tends to correlate with larger degrees of dynein dysfunction (CDD \u2265 19).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, motor neuron diseases appear to be more susceptible to even small degrees of dysfunction (CDD from 5 to 18), while MCD tends to correlate with larger degrees of dynein dysfunction (CDD \u2265 19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the CDD analysis and disease correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "447b26b1-d459-4eff-9188-4c3894dcf6e0",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C60",
+      "claim": "The differences in disease susceptibility are due to the distinct types of dynein-mediated transport required to maintain motor neuron health versus that required to effect nuclear or neuronal migration in the developing neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The reasons for this are unclear, but we hypothesize that the differences are due to the somewhat distinct types of dynein-mediated transport required to maintain motor neuron health, versus that required to effect nuclear or neuronal migration in the developing neocortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed in the Discussion to explain the disease correlation findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "6b222e5c-ca6c-477d-942a-d55e6d78252c",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C61",
+      "claim": "Motor neurons possess extremely long axons (\u22641 m) and require a high degree of processive transport for vesicular cargoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Motor neurons possess extremely long axons (\u22641 m), and thus require a high degree of processive transport for the myriad vesicular cargoes that are moved from the soma to the axon terminal and back.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about motor neuron biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "fa1eba5a-a895-4586-bd3b-bae63a5dcd8f",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C62",
+      "claim": "Even subtle loss-of-functions in dynein-mediated transport can, over time, compromise motor neuron health.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it stands to reason that even subtle loss-of-functions in dynein-mediated transport can, over time, compromise motor neuron health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the requirements of motor neurons and the disease correlation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "c7826190-566b-4365-a4b4-bf9d966e5955",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C63",
+      "claim": "During INM and neuronal migration, many dynein molecules are likely engaging with microtubules to effect neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, for both INM and neuronal migration, many dynein molecules are likely engaging with microtubules to effect neurogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the biology of INM and neuronal migration.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "82e00ec2-fc9d-400a-877f-c5155ed438af",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C64",
+      "claim": "The minimal functional requirements for individual dynein motors during INM or neuronal migration are potentially lower due to the large number of motors engaged during a migration event.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the minimal functional requirements for individual dynein motors during INM or neuronal migration are potentially lower due to the large number of motors engaged during a migration event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the differential disease susceptibility.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "62d9e4c2-2ea0-427a-a4f6-8406a689830a",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "claim_id": "C65",
+      "claim": "Teams of motors comprised of a mixture of wild-type and mutant variants can work together to effect INM, but are less able to effectively transport single vesicular cargoes along the axon.",
+      "claim_type": "EXPLICIT",
+      "source": "In such a scenario, teams of motors comprised of a mixture of wild-type and mutant variants (due to the heterozygous nature of these diseases) can work together to effect INM, but are less able to effectively transport single vesicular cargoes along the axon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis to explain the differential disease susceptibility based on motor requirements.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "35242ed7-b2e7-4495-b16a-28c0373e8d42",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Eight of seventeen disease-correlated dynein mutants exhibited spindle positioning defects in yeast, with all defective mutants having motor domain substitutions. Seven of nine MCD-associated mutations showed defects, while motor neuron disease mutations did not. H3639P was as severe as dynein knockout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 provide clear quantitative data from the spindle positioning assay (Figure 1B) with statistical significance testing (Z scores, n\u226599 cells). The correlation between motor domain mutations and defects (C23) and the disease-type pattern (C24) are direct observations from the data. The severity of H3639P (C25) is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "7cb337c8-1ac3-482e-b32d-844c54f6de5c",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Spindle tracking assays revealed that all mutants exhibited altered motility parameters including velocity, displacement, neck transit success, and activity. Motor domain mutants showed more severe defects than tail domain mutants, with specific structural correlations identified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C34 are supported by comprehensive quantitative data in Figure 2 with appropriate statistical tests (Welch's t-test, Mann-Whitney, Z scores) and n=42-60 cells per strain. Structural analyses (C32, C34) correlate mutations with known functional domains. The data clearly distinguish between different types of defects across the mutant library.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "04e08e58-06ec-40bc-b03c-01cab866e605",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Dynein forms homodimers rather than heterodimers (98.8% red-only molecules), suggesting co-translational dimerization. Heterozygous mutants exhibited dominant negative effects, with mutant homodimers compromising wild-type homodimer activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is strongly supported by single-molecule imaging data (Figure 3B-C) showing 98.8% red-only molecules. Claims C37-C38 are supported by heterozygous diploid experiments (Figure 3E-I) with appropriate controls (hemizygous cells) and statistical analyses. The co-translational dimerization model (C36) is a reasonable inference consistent with p53 literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "65518e91-9ef1-4bda-9780-bda84a358b82",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Single molecule motility assays revealed that thirteen mutants showed altered dynein-intrinsic motility. While most exhibited loss-of-function, three mutations (R241L, N283R, K1475Q) showed gain-of-function with increased velocity, and K1475Q also showed increased run length and fraction of active motors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by quantitative single-molecule data (Figure 4) with n\u2265284 molecules per condition and appropriate statistical tests. The gain-of-function phenotypes are clearly documented and statistically significant. Figure 4\u2014figure supplement 2 confirms increased processivity is not due to aggregation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "1ba88607-44df-4451-913c-9ad91e5abf94",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "K1475Q mutation increased cortical foci frequency 2.2-fold but reduced molecules per focus by 38%. Ratiometric imaging showed increased dynactin:dynein ratio at plus ends (1.07 to 1.52), suggesting disruption of an autoinhibited state of yeast dynein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by quantitative localization data (Figure 5) and ratiometric imaging (Figure 5\u2014figure supplement 1B) with statistical significance (p<0.0001). The autoinhibition hypothesis (C44) is a reasonable inference based on comparison to human dynein phi-particle studies, though it remains to be directly tested in yeast.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "7f6f250d-e8fb-4071-b4eb-238be8e2b641",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "H3639P dysfunction is caused by gain of proline creating structural constraints. Flanking glycines (F3638G H3639P W3640G triple mutant) partially rescued in vivo activity but not in vitro motility. MG132 treatment increased H3639P plus end targeting 3.7-fold, suggesting the mutation causes protein misfolding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by systematic substitution and proline scanning experiments (Figure 6B). The partial rescue by flanking glycines (C47-C48) is well-documented with statistical significance. The differential rescue in vivo vs in vitro (C49) is clearly shown. MG132 rescue (C50) provides strong evidence for the misfolding hypothesis. All data have appropriate controls and statistics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "dd1ad7c5-8f5b-4600-ad33-42a6f55e523e",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "R1852C dysfunction is caused by an ectopic disulfide bond with nearby C1822. The compensatory C1822S mutation rescued defects in yeast dynein (both full-length and minimal fragment) and partially restored function in human dynein R1962C mutant in microtubule gliding assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are strongly supported by systematic rescue experiments in yeast (Figure 7C-E, Figure 7\u2014figure supplement 1) with multiple controls (C1822A, R1852V, C1822S R1852V). Claim C53 validates the finding in human dynein (Figure 7F-H), though rescue is partial. The structural proximity of C1822 to R1852 (~3\u00c5) provides mechanistic support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "2978444b-2736-4109-85e5-d8c599acde0b",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Motor domain mutations exhibited more severe dysfunction than tail domain mutations. A coefficient of dynein dysfunction (CDD) score revealed correlation between dysfunction severity and disease type: motor neuron diseases correlate with CDD 5-18, while MCD correlates with CDD \u226519, suggesting a threshold of dynein activity required for neurological development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by comprehensive heat map analysis (Figure 8A) and CDD scoring (Figure 8B, Figure 8\u2014figure supplement 1). The CDD calculation methodology is clearly described and appropriately weights different assays. The correlation between CDD scores and disease types (C58-C59) is clearly demonstrated. The threshold hypothesis (C57) is a reasonable inference from the data pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "3fe3a696-c57c-4d91-af14-cadcd5f7318e",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The differential disease susceptibility is hypothesized to result from distinct requirements for dynein function: motor neurons require highly processive transport over long distances where subtle defects accumulate over time, while INM/neuronal migration involves many motors working together, potentially tolerating greater individual motor dysfunction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C65 represent a mechanistic hypothesis to explain the CDD-disease correlation. While the hypothesis is logical and consistent with known biology (C61 is established knowledge), it remains speculative (explicitly stated as hypothesis in C60). The model makes testable predictions but lacks direct experimental validation in this study. Claims C64-C65 are reasonable inferences but require future experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "3f30989d-486e-40e3-b8ee-f146dca21ba8",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on dynein function and disease: Dynein mediates retrograde transport and nuclear migration in neurons. Mutations cause various neurological diseases including MCD, SMA-LED, CMD, and CMT. Mouse models show neuropathy and transport defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C17 represent established knowledge from prior literature, all supported by appropriate citations. These provide context for the study but are not novel findings. The citations appear appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "bfb95f3a-5dd7-4c53-8f13-342ba6d60e64",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Budding yeast is an appropriate model system for dynein studies: dynein's only function is spindle positioning, the complex structure is similar to human dynein, and genetic manipulation is simplified by single-gene encoding of accessory chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 are supported by appropriate citations and represent established knowledge justifying the model system choice. The structural similarity (C21) is particularly important for translating findings to human disease. This provides strong rationale for the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    },
+    {
+      "id": "dd25b5e8-9337-4e49-9bf2-1c76f21dfd60",
+      "content_id": "d8adfb09-dc99-448d-b26a-5afe9478087f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study determined molecular bases for disease classes and engineered compensatory mutations that alleviated phenotypes in two cases (one confirmed in human dynein). The data provide evidence that disease type is dictated by degree of dynein dysfunction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are summary claims from the abstract that are supported by the detailed results throughout the manuscript. Claim C4 is supported by the H3639P and R1852C mechanistic studies. Claim C5 is supported by the rescue experiments. Claim C6 is supported by the CDD analysis. These represent accurate summaries of the major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:25:40.910212Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a824afdb-bb99-4deb-ad0c-6955ff2e2607",
+      "result_id": "35242ed7-b2e7-4495-b16a-28c0373e8d42"
+    },
+    {
+      "claim_id": "75f40414-19a7-48e0-96e6-1daaa9ce6270",
+      "result_id": "35242ed7-b2e7-4495-b16a-28c0373e8d42"
+    },
+    {
+      "claim_id": "71fa3980-0bd2-4f75-9dba-5791f1ce7659",
+      "result_id": "35242ed7-b2e7-4495-b16a-28c0373e8d42"
+    },
+    {
+      "claim_id": "cc1d7b8f-4c9d-4b5a-8caf-c3edf953eef7",
+      "result_id": "35242ed7-b2e7-4495-b16a-28c0373e8d42"
+    },
+    {
+      "claim_id": "4ea2caec-63d7-47fa-9cfc-f84cf95aa30d",
+      "result_id": "35242ed7-b2e7-4495-b16a-28c0373e8d42"
+    },
+    {
+      "claim_id": "45bcb2cd-c834-4c6a-8e79-e8b5822a866a",
+      "result_id": "7cb337c8-1ac3-482e-b32d-844c54f6de5c"
+    },
+    {
+      "claim_id": "8a0cb145-91d2-4da6-a208-b5fb249d0140",
+      "result_id": "7cb337c8-1ac3-482e-b32d-844c54f6de5c"
+    },
+    {
+      "claim_id": "372fcd87-4626-4312-a26a-b126bdba5ade",
+      "result_id": "7cb337c8-1ac3-482e-b32d-844c54f6de5c"
+    },
+    {
+      "claim_id": "b9fdda52-6a33-4c20-b271-8f6bc9f5fe4a",
+      "result_id": "7cb337c8-1ac3-482e-b32d-844c54f6de5c"
+    },
+    {
+      "claim_id": "f22acd95-1e0a-4e92-8802-e5f9b2e0c7f6",
+      "result_id": "7cb337c8-1ac3-482e-b32d-844c54f6de5c"
+    },
+    {
+      "claim_id": "225fc776-f256-4eef-9566-56740d623b98",
+      "result_id": "7cb337c8-1ac3-482e-b32d-844c54f6de5c"
+    },
+    {
+      "claim_id": "b569afe7-8e24-4c9d-a609-15386312e684",
+      "result_id": "7cb337c8-1ac3-482e-b32d-844c54f6de5c"
+    },
+    {
+      "claim_id": "ee8fa1a2-346e-46bf-9137-51a3c1d01a85",
+      "result_id": "7cb337c8-1ac3-482e-b32d-844c54f6de5c"
+    },
+    {
+      "claim_id": "4d8513f5-81ce-4c85-ae96-4bc2cb8ddd22",
+      "result_id": "7cb337c8-1ac3-482e-b32d-844c54f6de5c"
+    },
+    {
+      "claim_id": "44f64471-9cae-427c-b9d6-8943b0d9570f",
+      "result_id": "04e08e58-06ec-40bc-b03c-01cab866e605"
+    },
+    {
+      "claim_id": "262d0feb-5580-4e26-adf6-24b66d800b0e",
+      "result_id": "04e08e58-06ec-40bc-b03c-01cab866e605"
+    },
+    {
+      "claim_id": "57722d09-239c-447c-8be7-af4b97245e7a",
+      "result_id": "04e08e58-06ec-40bc-b03c-01cab866e605"
+    },
+    {
+      "claim_id": "1331be09-fb7b-4f97-b234-de9b022b2dbf",
+      "result_id": "04e08e58-06ec-40bc-b03c-01cab866e605"
+    },
+    {
+      "claim_id": "777f63d4-1043-493a-bc54-149a000012d7",
+      "result_id": "65518e91-9ef1-4bda-9780-bda84a358b82"
+    },
+    {
+      "claim_id": "e97fa87b-08b2-4d5c-8490-b7bf644c6ed4",
+      "result_id": "65518e91-9ef1-4bda-9780-bda84a358b82"
+    },
+    {
+      "claim_id": "2528c158-a829-40c6-b976-6fdf7a9c3117",
+      "result_id": "65518e91-9ef1-4bda-9780-bda84a358b82"
+    },
+    {
+      "claim_id": "edce44ce-5269-45fe-b183-c1a290a6ea40",
+      "result_id": "1ba88607-44df-4451-913c-9ad91e5abf94"
+    },
+    {
+      "claim_id": "e8413a57-124d-46d3-b266-1e474822ce5a",
+      "result_id": "1ba88607-44df-4451-913c-9ad91e5abf94"
+    },
+    {
+      "claim_id": "2f027449-c803-482d-a071-d91b7ace57bc",
+      "result_id": "1ba88607-44df-4451-913c-9ad91e5abf94"
+    },
+    {
+      "claim_id": "8b3e9e5f-cad8-41db-99f1-f8d27318811e",
+      "result_id": "7f6f250d-e8fb-4071-b4eb-238be8e2b641"
+    },
+    {
+      "claim_id": "a4281a2b-f9f4-4d76-b6ff-57fb2a857fb8",
+      "result_id": "7f6f250d-e8fb-4071-b4eb-238be8e2b641"
+    },
+    {
+      "claim_id": "42f9ad8e-6ba2-4a84-b861-5794ac54b910",
+      "result_id": "7f6f250d-e8fb-4071-b4eb-238be8e2b641"
+    },
+    {
+      "claim_id": "34d9543c-c10d-4456-9b94-69998c304ad3",
+      "result_id": "7f6f250d-e8fb-4071-b4eb-238be8e2b641"
+    },
+    {
+      "claim_id": "f4897f4b-1197-45a2-9307-5e65af94e0f4",
+      "result_id": "7f6f250d-e8fb-4071-b4eb-238be8e2b641"
+    },
+    {
+      "claim_id": "d2a6b8ad-5da8-42e9-9a38-808b4bb1f0b6",
+      "result_id": "7f6f250d-e8fb-4071-b4eb-238be8e2b641"
+    },
+    {
+      "claim_id": "06535ffd-be6b-45a3-9a96-eb60fde22518",
+      "result_id": "dd1ad7c5-8f5b-4600-ad33-42a6f55e523e"
+    },
+    {
+      "claim_id": "abfe2d5b-2eb4-4633-9159-9423c855fb91",
+      "result_id": "dd1ad7c5-8f5b-4600-ad33-42a6f55e523e"
+    },
+    {
+      "claim_id": "fe6917fe-9858-4475-9246-1847d5996899",
+      "result_id": "dd1ad7c5-8f5b-4600-ad33-42a6f55e523e"
+    },
+    {
+      "claim_id": "319a9520-75f2-4401-94f0-c1904b59f2eb",
+      "result_id": "2978444b-2736-4109-85e5-d8c599acde0b"
+    },
+    {
+      "claim_id": "808ccc41-c35a-46bd-9f63-7ab3cb3ac0bc",
+      "result_id": "2978444b-2736-4109-85e5-d8c599acde0b"
+    },
+    {
+      "claim_id": "699bba8a-4a50-4f5f-8e75-cb04d5edf25b",
+      "result_id": "2978444b-2736-4109-85e5-d8c599acde0b"
+    },
+    {
+      "claim_id": "e15b9382-ba5b-4881-8bcd-4e50dd901b73",
+      "result_id": "2978444b-2736-4109-85e5-d8c599acde0b"
+    },
+    {
+      "claim_id": "6c93aba5-53ce-49c5-baa2-e456c36867aa",
+      "result_id": "2978444b-2736-4109-85e5-d8c599acde0b"
+    },
+    {
+      "claim_id": "479c0782-2ef3-4d8d-af7c-9bae7b321611",
+      "result_id": "2978444b-2736-4109-85e5-d8c599acde0b"
+    },
+    {
+      "claim_id": "447b26b1-d459-4eff-9188-4c3894dcf6e0",
+      "result_id": "3fe3a696-c57c-4d91-af14-cadcd5f7318e"
+    },
+    {
+      "claim_id": "6b222e5c-ca6c-477d-942a-d55e6d78252c",
+      "result_id": "3fe3a696-c57c-4d91-af14-cadcd5f7318e"
+    },
+    {
+      "claim_id": "fa1eba5a-a895-4586-bd3b-bae63a5dcd8f",
+      "result_id": "3fe3a696-c57c-4d91-af14-cadcd5f7318e"
+    },
+    {
+      "claim_id": "c7826190-566b-4365-a4b4-bf9d966e5955",
+      "result_id": "3fe3a696-c57c-4d91-af14-cadcd5f7318e"
+    },
+    {
+      "claim_id": "82e00ec2-fc9d-400a-877f-c5155ed438af",
+      "result_id": "3fe3a696-c57c-4d91-af14-cadcd5f7318e"
+    },
+    {
+      "claim_id": "62d9e4c2-2ea0-427a-a4f6-8406a689830a",
+      "result_id": "3fe3a696-c57c-4d91-af14-cadcd5f7318e"
+    },
+    {
+      "claim_id": "3f73ff0d-27bb-4284-b114-94d8246dd5d7",
+      "result_id": "3f30989d-486e-40e3-b8ee-f146dca21ba8"
+    },
+    {
+      "claim_id": "7cd6a2dc-26c8-4627-92a6-cc62dd098908",
+      "result_id": "3f30989d-486e-40e3-b8ee-f146dca21ba8"
+    },
+    {
+      "claim_id": "42563ca1-7403-4c39-8c55-32e5d73d8e3f",
+      "result_id": "3f30989d-486e-40e3-b8ee-f146dca21ba8"
+    },
+    {
+      "claim_id": "529160f1-2bcb-493e-8b63-1ef48241c284",
+      "result_id": "3f30989d-486e-40e3-b8ee-f146dca21ba8"
+    },
+    {
+      "claim_id": "1e847556-81c8-4394-b16e-55ab9fa135fc",
+      "result_id": "3f30989d-486e-40e3-b8ee-f146dca21ba8"
+    },
+    {
+      "claim_id": "d5095001-8f58-41e9-9a5b-2cc921b2f3e1",
+      "result_id": "3f30989d-486e-40e3-b8ee-f146dca21ba8"
+    },
+    {
+      "claim_id": "6ab36af5-2d63-45a8-9560-8af9280703d1",
+      "result_id": "3f30989d-486e-40e3-b8ee-f146dca21ba8"
+    },
+    {
+      "claim_id": "5fab532f-8412-4748-8612-28cbf583647a",
+      "result_id": "3f30989d-486e-40e3-b8ee-f146dca21ba8"
+    },
+    {
+      "claim_id": "0381fa6c-bd40-4c8e-949a-12ff676cf317",
+      "result_id": "3f30989d-486e-40e3-b8ee-f146dca21ba8"
+    },
+    {
+      "claim_id": "dbcf4895-7c68-4443-a53c-4e7a63b6af74",
+      "result_id": "3f30989d-486e-40e3-b8ee-f146dca21ba8"
+    },
+    {
+      "claim_id": "dd4fb8ff-4ea1-4a5d-8a2c-05acc41fdb0f",
+      "result_id": "3f30989d-486e-40e3-b8ee-f146dca21ba8"
+    },
+    {
+      "claim_id": "b9e81b59-5849-4e4f-b447-038737ea5e4b",
+      "result_id": "3f30989d-486e-40e3-b8ee-f146dca21ba8"
+    },
+    {
+      "claim_id": "03518ba9-60e6-4fa5-94a5-a54217a531f4",
+      "result_id": "3f30989d-486e-40e3-b8ee-f146dca21ba8"
+    },
+    {
+      "claim_id": "a70e6c7c-56f1-4d3e-9578-6a8c0cbcdc2a",
+      "result_id": "bfb95f3a-5dd7-4c53-8f13-342ba6d60e64"
+    },
+    {
+      "claim_id": "77738ac8-de87-4e4c-961c-95f3cdf56dff",
+      "result_id": "bfb95f3a-5dd7-4c53-8f13-342ba6d60e64"
+    },
+    {
+      "claim_id": "79a65318-3eec-4fe3-8e4f-58c188557d04",
+      "result_id": "bfb95f3a-5dd7-4c53-8f13-342ba6d60e64"
+    },
+    {
+      "claim_id": "3ca6f591-5e86-476d-ab00-8cf05377eba4",
+      "result_id": "bfb95f3a-5dd7-4c53-8f13-342ba6d60e64"
+    },
+    {
+      "claim_id": "5de9d566-892d-4e5d-a1be-fff2c612f71a",
+      "result_id": "dd25b5e8-9337-4e49-9bf2-1c76f21dfd60"
+    },
+    {
+      "claim_id": "6316fc55-91b0-402b-a692-5db414315c0b",
+      "result_id": "dd25b5e8-9337-4e49-9bf2-1c76f21dfd60"
+    },
+    {
+      "claim_id": "c2b3e9f7-1ca5-42e5-a32b-5ef25e04b9ec",
+      "result_id": "dd25b5e8-9337-4e49-9bf2-1c76f21dfd60"
+    }
+  ],
+  "comparisons": []
+}

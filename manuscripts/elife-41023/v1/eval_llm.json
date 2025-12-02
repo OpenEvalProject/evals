@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study enrolled 3,229 villagers across four villages in Myanmar, with 80 clinical P. falciparum cases and 201 uPCR-detected infections documented during the study period. Post-MDA, 66 of 80 clinical episodes (82.5%) occurred in a single village (TOT), demonstrating highly uneven spatial distribution of malaria transmission after intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide clear descriptive statistics about the study population and infection distribution. The data are internally consistent and supported by the figures showing spatial patterns. Sample sizes and case counts are explicitly stated with appropriate precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "uPCR-detected P. falciparum infections were widespread across all villages at baseline with statistically significant spatial clusters, but MDA significantly reduced infections in all villages and eliminated detectable spatial clustering. Two control villages (TPN and HKT) showed infection reductions even prior to receiving MDA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are well-supported by Figure 2 showing spatial-temporal patterns and SaTScan cluster analysis results. The reduction in infections post-MDA is clearly demonstrated, though the pre-MDA reduction in control villages (C12) suggests potential secular trends or contamination between study arms that warrant consideration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Spatial clustering of clinical P. falciparum episodes occurred in two villages post-MDA: a minor cluster in KNH (4 episodes, M5-M7) and two clusters in TOT including a major western cluster (35 episodes, M12-M18) and a household cluster in the east (5 episodes among 4 members, M15-M18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 provide detailed spatial-temporal characterization of clinical episode clusters supported by Figures 2 and 3. The quantitative details (episode counts, timing, household composition) are specific and internally consistent, demonstrating clear spatial heterogeneity in post-MDA transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Statistically significant spatial clusters of MDA non-participation were detected in three villages (TPN, HKT, TOT), with the TOT cluster comprising 115 individuals (12.5% of village population) in the western portion of the village, while HKT and TPN clusters included 206 and 15 individuals respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by spatial cluster analysis (Appendix 1-figure 2) using appropriate statistical methods (SaTScan). The quantitative characterization of cluster sizes is precise and the spatial overlap with subsequent clinical episodes (C22) strengthens the finding's importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Following MDA completion in TOT village (M3), sporadic clinical episodes occurred initially, followed by an outbreak beginning in M12 that originated in the area of MDA non-participation clustering and subsequently spread throughout much of the village by M15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe a clear temporal and spatial progression of the outbreak supported by Figures 2 and 3. The spatial overlap between outbreak origin and non-participation cluster provides strong evidence for the role of incomplete coverage in transmission resurgence, though causality cannot be definitively established without genetic data (acknowledged in C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C64",
+      "C65"
+    ],
+    "result": "Individuals in neighborhoods with high MDA non-adherence had significantly higher cumulative incidence of clinical episodes (9.6%) compared to mid (7.6%) and low (4.4%) non-adherence neighborhoods (p=0.0485). High-adherence neighborhoods experienced approximately 1-month delayed onset of episodes during the outbreak and never reached infection levels seen in low-adherence areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C64-C65 are supported by survival analysis (Figure 4A) with appropriate statistical testing (log-rank test). The temporal lag and differential attack rates provide strong evidence for neighborhood-level protective effects, though the marginal p-value (0.0485) and lack of multiple testing correction warrant cautious interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C69"
+    ],
+    "result": "Multivariable analysis identified significant risk factors for clinical P. falciparum episodes in TOT village: age 5-14 years (AOR=3.41, CI:1.33-8.77), household member with concurrent episode (AOR=3.43, CI:1.52-7.72), high neighborhood MDA non-adherence (AOR=2.85, CI:1.28-6.37), and human biting rate (AOR=1.09 per unit, CI:1.05-1.13), after adjusting for individual MDA participation and other covariates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28, C69 present results from mixed-effects logistic regression (Table 1) with appropriate adjustment for repeated measures and confounders. The confidence intervals exclude 1.0 for significant predictors. However, the analysis is limited to one village (TOT) and potential issues with overlapping neighborhoods (acknowledged by authors) may underestimate standard errors for the neighborhood variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C47",
+      "C63",
+      "C66",
+      "C67"
+    ],
+    "result": "The study provides evidence for a herd effect from MDA, where neighborhood-level adherence protects individuals regardless of personal participation. Individuals in high-adherence neighborhoods who did not participate in MDA had lower risk than MDA participants in low-adherence neighborhoods. Clinical episodes decreased for longer than the 1-month prophylactic period of the drugs, suggesting community-level transmission interruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C31, C47, C63, C66-C67 present the study's central conclusion about herd effects. While the neighborhood-level association (C27) and differential risk patterns (C66-C67) support this interpretation, several limitations create uncertainty: (1) analysis restricted to one village, (2) overlapping neighborhood definitions may bias confidence intervals, (3) no formal test of interaction between individual and neighborhood participation, (4) secular trends in control villages (C12) suggest unmeasured confounding, (5) claim of 'first documentation' (C47) is strong given limited prior empirical work. The evidence is suggestive but not definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C48",
+      "C49",
+      "C51"
+    ],
+    "result": "The outbreak in TOT coincided with increased human biting rate (HBR) beginning in M12. While HBR also peaked in HKT at the same time, this occurred without a detectable parasite reservoir and did not persist. The combination of persistent parasite reservoir and sustained high HBR (M13-M18) in TOT likely explains the differential elimination outcomes between villages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C48-C49, C51 are supported by entomological data (Appendix 1-figure 3) and multivariable analysis showing HBR as a significant predictor (C28). The temporal correlation between HBR increase and outbreak onset is clear, and the comparison with HKT (similar HBR peak but no outbreak) strengthens the inference that both vector density and parasite reservoir are necessary for transmission resurgence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C34"
+    ],
+    "result": "Among the 80 individuals with clinical episodes, 24% also had uPCR-detected infections in at least one survey. uPCR-detected infections were significantly more prevalent in males (UOR=2.03, CI:1.50-2.76). Having an asymptomatic infection was identified as a predictor of clinical episodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C34 present straightforward descriptive and bivariate statistics. The gender difference in uPCR-detected infections is statistically significant with a clear confidence interval. However, C34's claim that asymptomatic infection predicts clinical episodes is not directly supported by presented regression results (Table 1 does not include prior uPCR status as a predictor), creating some inconsistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "High mosquito biting rates and living in a house with someone else with malaria were identified as predictors of clinical episodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are directly supported by the multivariable regression results (C28, C26) showing significant associations for both HBR and household member with concurrent episode. These findings are biologically plausible and statistically robust.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C60"
+    ],
+    "result": "Evidence suggests the malaria post (MP) in TOT was not functioning well during the first year of the study, which could have led to undiagnosed clinical episodes and likely would have reduced outbreak size if functioning better.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50, C52, C60 rely on citation to prior work (Landier et al., 2017a) for the evidence of poor MP function. While this is a plausible explanation for differential outcomes, the claims are speculative (C52 uses 'would likely') and the extent of MP dysfunction and its impact on case detection are not quantified in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The observed clustering patterns suggest reactive case detection would have detected some additional cases within and near affected households but would have missed most infections and not halted transmission. Conversely, village-scale MDA with high participation appears effective at reducing P. falciparum prevalence, incidence, and transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 present reasonable inferences from the spatial clustering data (C13, C14-C17) and are supported by appropriate citations (Parker et al., 2016; Landier et al., 2018b). The limited spatial clustering post-baseline (C13) supports the inference that reactive case detection would have limited effectiveness, while the overall MDA impact (C11) supports the effectiveness claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Individuals who did not participate in MDA also did not participate in post-MDA blood surveys, likely resulting in underdiagnosis of uPCR-detected infections that probably clustered spatially with MDA non-adherence. These underdiagnosed infections, combined with high HBR, likely led to the resurgence of clinical episodes in TOT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C59 identify an important limitation regarding differential participation in surveillance. While C56 is a factual observation, C57-C59 are inferences about unmeasured infections and their causal role in outbreak resurgence. The authors acknowledge no genetic analysis was performed (C59), which would be needed to confirm local transmission versus importation. This represents a significant source of uncertainty in causal interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Some infections are likely acquired outside villages, leading to complex spatial patterns. Within-household clustering can result from either within-household transmission or shared external exposure among household members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 acknowledge important limitations in spatial interpretation. These are reasonable caveats given the study design and are appropriately presented as limitations rather than definitive findings. The lack of genetic data or detailed travel history prevents distinguishing between these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The finding that non-participants in high-adherence neighborhoods had low risk may be related to relative perceptions of risk and potential complacency among individuals in lower-malaria areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 offers a behavioral explanation for the paradoxical finding in C67, supported by citation to Koenker et al., 2013. However, this is speculative as no data on risk perceptions or motivations for non-participation were collected. Alternative explanations (e.g., differential exposure patterns, unmeasured confounders) are not considered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C35",
+      "C110",
+      "C111",
+      "C112",
+      "C114"
+    ],
+    "result": "Spatial clustering of MDA non-adherence, even in villages with high overall participation, may frustrate elimination efforts. Elimination succeeded in three of four villages despite similar overall adherence between successful village HKT and unsuccessful village TOT, suggesting no single adherence threshold applies universally. When high-prevalence villages are spatially clustered, targeting units above the village level may be necessary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C110-C112, C114 present important programmatic implications supported by the differential outcomes across villages (C110-C111) and the spatial clustering of non-adherence (C18-C20). The inference that spatial patterns matter beyond overall coverage is well-supported. However, C114's recommendation is somewhat speculative given the limited number of villages studied and lack of data on inter-village transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The study was conducted in four villages along the Myanmar-Thailand border from May 2013 to June 2015, using restricted randomization to assign early versus deferred MDA. Comprehensive methods included population census, GPS coordinates for all houses, baseline and follow-up blood surveys using uPCR (detection limit 22 parasites/mL), community-based malaria posts with RDT diagnosis, MDA with 3-day DHA+P plus primaquine repeated monthly for 3 months, and monthly mosquito collections using human landing catches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C92 describe the study design and methods in detail. These are well-documented with appropriate citations to prior publications and methods papers. The methods are generally rigorous, though some limitations are noted: (1) restricted randomization with only 4 villages limits inference, (2) no G6PD testing prevented P. vivax radical cure (C84), (3) villages are geographically dispersed (105 km range, C72) limiting inter-village transmission but also generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C113"
+    ],
+    "result": "The manuscript provides extensive background on MDA for malaria, including historical use, recent trials, concerns about drug resistance from past programs, theoretical basis for herd effects, suggested 80% coverage thresholds, and current implementation practices. MDA is positioned as a potential elimination tool for addressing asymptomatic infections that are not normally diagnosed or treated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C46, C94-C109, C113 present background information supported by appropriate citations to WHO guidelines, historical studies, and recent literature. These contextual claims are generally accurate and well-referenced, providing necessary framing for the study's contribution. The claim that herd effects have not been examined empirically (C46) appropriately sets up the study's novelty claim (C47).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The prophylactic effect of the administered antimalarials (DHA+P) is approximately 1 month.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 states a pharmacological fact about DHA+P prophylactic duration that is consistent with known drug properties. This is used as a baseline for interpreting the longer duration of protection observed (C63), which supports the herd effect hypothesis.",
+    "result_type": "MINOR"
+  }
+]

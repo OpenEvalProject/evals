@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C89",
+      "C111"
+    ],
+    "result": "Reporter-ChIP-nexus successfully detects Pol II pausing on transfected plasmids, recapitulating endogenous Pol II profiles. The authors demonstrate that ChIP-nexus captures paused Pol II on plasmids containing various promoter sequences, with Pol II profiles and transcription start sites closely matching those at endogenous loci (C37, C38, C44). This indicates that promoter-dependent Pol II pausing can be studied outside the genomic context using this plasmid-based assay (C45, C46, C89, C111).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C46, C89, and C111 are well-supported by experimental data in Figures 1 and 2, showing strong Pol II pausing signals on plasmids with profiles matching endogenous loci. The 5' RNA sequencing confirms correct transcription start sites (C41, C43), and Pearson correlations support the similarity between plasmid and endogenous profiles (C44). The conclusion that promoter sequence is the primary determinant of pausing is justified by these data (C45, C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The stability of paused Pol II can be measured on plasmids using triptolide treatment. The authors show that paused Pol II is lost after triptolide treatment on plasmids, and the degree of loss is proportional to the stability observed at endogenous promoters (C49, C50), demonstrating that promoter-specific pausing stability can be assessed using this reporter system (C51).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by experimental data in Figure 2B and Figure 2\u2014figure supplement 4, showing that triptolide treatment reduces paused Pol II on plasmids in a manner consistent with endogenous promoter behavior. The normalization approach using genomic reads as internal controls is appropriate, and the reproducibility across biological replicates strengthens the conclusion (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Downstream promoter sequences (pausing elements: MTE, DPE, PB) influence the stability of Pol II pausing. The authors demonstrate through promoter swapping experiments that replacing downstream sequences with those from stably paused promoters increases Pol II pausing stability (C54, C55), confirming the functional role of these elements in stabilizing paused Pol II (C5, C52, C53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C52-C55 are supported by experimental data in Figure 3, showing that downstream sequence swapping increases paused Pol II stability after triptolide treatment. The quantification shows approximately 2-fold increases in pausing stability (C54), and the conclusion is consistent with prior correlative studies (C52, C53). The experimental design appropriately tests the causal role of downstream sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The TATA box shows context-dependent effects on Pol II pausing stability. Genome-wide analysis reveals that TATA-containing promoters have shorter Pol II half-lives (C56, C57, C61, C62), but experimental manipulation shows variable effects depending on promoter context (C63-C66). Only the pk promoter showed strong reduction in pausing upon TATA insertion, while comm2 and dve showed minimal effects (C64, C65), suggesting that TATA's role in destabilizing paused Pol II depends on the overall promoter architecture (C66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C66 are supported by genome-wide analysis (Figure 4A) and experimental data (Figures 4C-D, 5\u2014figure supplement 1). The genome-wide correlations are statistically significant (C61, C62), and the experimental manipulations show reproducible but context-dependent effects (C63-C66). The conclusion that promoter context matters is justified by the variable responses across different promoters. However, the mechanism remains unclear, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C91"
+    ],
+    "result": "The Inr sequence plays a strong and independent role in stabilizing Pol II pausing. The authors demonstrate that replacing the Inr sequence alone (without changing the upstream TATA region) strongly reduces Pol II pausing stability (C70, C71), and that the Inr's effect is independent of the TATA box (C71). This establishes the Inr as a major determinant of pausing stability (C6, C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C67-C71, and C91 are well-supported by experimental data in Figure 5, showing that Inr replacement alone causes strong reductions in pausing stability (>3-fold for dve promoter). The experimental design appropriately isolates the Inr's contribution by comparing constructs with and without upstream sequence changes. The conclusion that the Inr acts independently of TATA is justified by the data (C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C39",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C85",
+      "C86",
+      "C87",
+      "C92",
+      "C93"
+    ],
+    "result": "A guanine at the +2 position of the Inr (Inr-G) is critical for stable Pol II pausing. Sequence analysis reveals that stably paused promoters contain G at +2 in 90% of cases versus 26% in TATA promoters (C74-C76), and genome-wide analysis shows Inr-G promoters have median half-lives of ~44 min versus ~14 min for Inr-nonG (C77-C78). Mutagenesis experiments demonstrate that mutating G to A or T dramatically reduces pausing stability (2-5 fold reduction) across multiple promoters (C85-C87), establishing the +2 G as the strongest determinant of Pol II pausing (C7, C39, C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C39, C72-C80, C85-C87, C92-C93 are strongly supported by converging evidence from sequence analysis (Figure 6B), genome-wide correlations (Figure 7A), and mutagenesis experiments (Figures 7C-D). The statistical significance of the genome-wide associations is very high (p<10^-46 to 10^-62), and the mutagenesis results are reproducible across multiple promoters with different architectures. This represents the most robust finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The Inr-G variant acts dominantly over TATA in determining Pol II pausing stability. While TATA generally correlates with shorter half-lives (C81), promoters with both TATA and Inr-G show very stable pausing (median ~59 min) compared to TATA with Inr-nonG (median ~11 min) (C82, C83), demonstrating that the Inr variant determines pausing behavior even in the presence of TATA (C84).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by genome-wide analysis in Figure 7A showing statistically significant differences (Wilcoxon p<10^-7) between TATA+Inr-G and TATA+Inr-nonG promoters. This epistatic relationship is consistent with the experimental data showing that TATA insertion had minimal effects on promoters with strong Inr sequences. The conclusion of Inr dominance is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C110",
+      "C112",
+      "C114"
+    ],
+    "result": "Reporter-ChIP-nexus is a valuable tool for dissecting promoter sequence contributions to Pol II pausing. The method successfully identified the previously unknown role of the Inr +2 G in pausing (C88), demonstrates sufficient sensitivity to detect changes upon sequence alterations (C112), and promises future applications for studying promoter-pausing relationships (C110, C114).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C110, C112, and C114 are supported by the successful application of the method throughout the study, culminating in the discovery of the Inr-G role. The sensitivity is demonstrated by detecting 2-5 fold changes in multiple experiments (C112). The forward-looking statements (C114) are reasonable given the demonstrated utility, though they represent future potential rather than current results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "For some promoters like RpL13A, larger genomic regions are required to recapitulate Pol II pausing on plasmids. The RpL13A promoter required a 2 kb region (but not 300 bp) to show proper pausing and H3K4me3 enrichment on the plasmid (C47, C48), suggesting that chromatin context is important for certain promoter types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by experimental data in Figure 2\u2014figure supplement 3, showing clear differences between constructs with different insert sizes. The correlation between H3K4me3 and successful pausing recapitulation suggests a chromatin-dependent mechanism for this promoter class. However, this represents a limitation of the method rather than a primary finding, and the authors appropriately acknowledge that further optimization may be needed for such promoters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Replacement of core promoter regions bound by TFIID tended to change paused Pol II stability in the expected direction, but promoter context remained important. This summary claim integrates the findings on downstream sequences, TATA, and Inr (C90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is a summary statement supported by the collective experimental data from Figures 3-5, showing that while promoter element swapping generally produces expected effects, the magnitude varies with context. This is a fair characterization of the results, acknowledging both the successes and limitations of the simple element-swapping approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "TATA-containing promoters have more degenerate Inr sequences, and TATA and Inr co-occur infrequently in Drosophila and human promoters. Sequence analysis shows that TATA promoters have degenerate Inr sequences (C94), explaining the infrequent co-occurrence of these elements in genomic studies (C95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by sequence analysis in Figure 6B and citations to previous genomic studies. The observation that TATA promoters have degenerate Inr sequences is clearly demonstrated, and the explanation for infrequent co-occurrence is logical and consistent with the data. This provides a mechanistic explanation for previous correlative observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "While G and T at Inr +2 are equally functional in vitro transcription assays, the G is critical for stable Pol II pausing in vivo. Previous in vitro studies showed no difference between G and T (C96), but the current study demonstrates that G is essential for pausing stability in cells (C97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by citation to previous work (Lo and Smale, 1996) and experimental data in Figure 7. This highlights an important distinction between transcription initiation (measured in vitro) and pausing stability (measured in vivo), suggesting that the Inr +2 position has a specific role in pausing that is not captured by standard in vitro transcription assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Degenerate Inr-nonG sequences in TATA promoters may represent a tradeoff between supporting transcription initiation and reducing pausing. The authors speculate that weak Inr sequences in TATA promoters retain sufficient function for start site selection while allowing reduced pausing (C98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is explicitly speculative (\"it is therefore possible\") and represents a hypothesis rather than a demonstrated result. While consistent with the data, this tradeoff model is not directly tested. Alternative explanations (e.g., lack of selective pressure for strong pausing at TATA promoters) are also mentioned but not distinguished experimentally. This remains an interesting hypothesis requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The Inr-G variant may be under evolutionary selection in paused promoters. Comparative genomics identified TCAGTT (an Inr-G variant) as the most conserved Inr sequence in Drosophila (C99), suggesting evolutionary selection for this variant in paused promoters (C100).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by citation to Stark et al., 2007 for the conservation data, and the inference of selection is reasonable given the functional importance demonstrated in this study. However, the evolutionary analysis is not performed in this manuscript, so the selection hypothesis relies on integrating prior conservation data with the current functional results. The conclusion is plausible but would benefit from direct evolutionary analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Human Inr sequences are more degenerate than Drosophila and may also differentially affect Pol II pausing. The authors note that human Inr sequences lack significant G enrichment at +2 (C101) but speculate that human Inr variants might still differentially affect pausing (C102).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 are based on citations to previous studies showing human Inr degeneracy, but C102 is explicitly speculative (\"it is therefore possible\"). No experimental data on human promoters are presented. The speculation is reasonable given the conservation of TFIID, but this remains untested and represents a direction for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "TFIID may influence Pol II pausing stability through differential DNA contacts at promoter elements. The authors propose a model where TFIID binding to Inr and downstream elements constrains Pol II and promotes pausing (C107), while TATA binding promotes a less constrained mode favoring pause release (C108). This model is supported by structural studies showing TFIID can bind all elements (C103), evidence for TFIID in re-initiation (C104), and ChIP-nexus data showing TFIID extends beyond the pause site (C105).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C109 represent a mechanistic model that integrates the current findings with prior structural and biochemical data. While the model is consistent with the data and supported by citations (C103-C105, C109), it is explicitly speculative (\"it is possible,\" \"may\"). The model makes testable predictions but is not directly validated in this study. Claims C107-C108 are particularly speculative, representing hypotheses about TFIID dynamics that would require additional experiments (e.g., TFIID ChIP on mutant promoters, structural studies of TFIID-promoter complexes) to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "The reporter-ChIP-nexus assay has higher accuracy and reproducibility for promoters with longer Pol II half-lives. The authors note that longer triptolide treatment times reduce experimental fluctuations, making the assay more reliable for stably paused promoters (C113).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is supported by the authors' experience throughout the study, where promoters with longer half-lives showed more consistent results across replicates. This is a reasonable technical observation based on the principle that longer treatment times allow better signal-to-noise ratios and reduce the impact of timing variations. However, this represents a limitation of the current implementation rather than a fundamental constraint.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Pol II pausing is a general regulatory step in transcription with variable stability across genes. These claims establish the background knowledge that Pol II pausing is widespread (C1, C8-C12) but varies in stability between genes (C2), setting up the motivation for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C12 are well-established background knowledge supported by multiple citations to prior work. These are not novel findings of this study but rather establish the context and motivation. The citations are appropriate and the statements accurately reflect the current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Pol II pausing correlates with promoter sequences and core promoter elements. Prior work has shown correlations between pausing and promoter elements (C3, C17), and that pausing is largely a promoter property (C14), though it can be influenced by activation (C13). These correlations motivated the functional studies in this manuscript.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C13-C18 accurately summarize prior work establishing correlations between promoter sequences and pausing. The citations are appropriate, and these claims correctly identify the gap in knowledge (correlation vs. causation) that this study addresses. These are not novel findings but important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Drosophila highly paused promoters have well-defined core promoter elements recognized by TFIID. These claims establish that Drosophila is a good model system for studying pausing (C19-C21) and describe the structure and recognition of core promoter elements by TFIID (C22-C30), providing essential background for interpreting the experimental results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C30 are well-supported by citations to prior work and represent established knowledge about Drosophila promoters and TFIID. The statements are accurate and provide necessary context for understanding why the authors chose this system and these promoter elements for study. These are not novel findings but essential background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Triptolide treatment allows measurement of paused Pol II stability through time-course analysis. These claims describe the methodological approach using triptolide to measure pausing stability (C31-C34), the advantages of ChIP-nexus for this purpose (C35), and prior validation of this approach (C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 accurately describe the triptolide-based method for measuring pausing stability, which is established in prior work (including the authors' previous study, C35-C36). These claims provide methodological context and justify the experimental approach used throughout the study. The method is well-validated by prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "D. pseudoobscura promoters are sufficiently diverged from D. melanogaster to allow unambiguous mapping. The authors use evolutionary divergence (~25 million years) to justify using D. pseudoobscura promoters in D. melanogaster cells (C42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is a reasonable inference based on known evolutionary divergence between these species. The experimental results (successful mapping and analysis) validate this design choice. This is a minor technical point about experimental design rather than a primary finding.",
+    "result_type": "MINOR"
+  }
+]

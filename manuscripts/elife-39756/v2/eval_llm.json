@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A genetic screen of 613 genes in C. elegans PLM mechanosensory neurons identified 49 genes promoting axon regrowth and 34 genes inhibiting regrowth. The hit rate was similar to a previous screen, suggesting the screen is far from saturated, with genes affecting regrowth distributed across all functional classes tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide explicit experimental data on the number of genes screened and hits identified. Claims C7, C88-C91 provide methodological details and comparative analysis supporting the conclusion that the screen is not saturated. The data are internally consistent and appropriately controlled (at least 10 animals per strain, 24hr timepoint).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Combined analysis of >1200 genes from multiple screens reinforces that regenerative axon regrowth requires many genetic pathways, most of which are not involved in developmental axon outgrowth or guidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 synthesize findings from the current screen (613 genes) and previous work (>600 genes from Chen et al., 2011) to reach this conclusion. The broad distribution of hits across functional classes (C90) and comparison to prior screens (C7) support this inference, though the claim about developmental roles relies on unstated selection criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "NMAT-2/NMNAT, an NAD+ biosynthesis enzyme, inhibits axon regeneration through both cell-autonomous and non-autonomous mechanisms requiring its enzymatic activity. Two independent nmat-2 null mutants showed enhanced PLM regrowth, which was rescued by transgenic expression. An active site mutant phenocopied the null, indicating enzymatic activity is required. The effect is independent of sterility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C23, C29-C31 provide strong genetic evidence: two independent null alleles (tm2905, ju1512) show enhanced regrowth, single-copy genomic rescue restores wild-type phenotype, and an active site mutant (ju1514) phenocopies the null. FUdR experiments (C18) and prior germline ablation data (C19) rule out sterility as a confound. The paralog nmat-1 shows no effect (C11), supporting specificity. The inference about sustained low NAD+ (C31) is reasonable but not directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "NMAT-2 acts in multiple tissues (epidermis, intestine, and mechanosensory neurons) to inhibit axon regeneration. Individual tissue-specific expression was insufficient for rescue, but combined expression in all three tissues restored normal regeneration and partially rescued sterility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 describe tissue-specific rescue experiments showing that NMAT-2 function requires expression in multiple tissues. The experimental design is appropriate, though the manuscript does not provide statistical analysis or specify the number of independent transgenic lines tested. The conclusion of non-autonomous function (C27) is well-supported by the requirement for multi-tissue expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "NMNAT may function via distinct mechanisms for neuroprotection versus axon regeneration, with conserved roles across species. In Drosophila, NMNAT loss also enhanced sensory axon regeneration, while neuroprotection is cell-autonomous in flies and mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 synthesize the current findings with prior literature. The inference of distinct mechanisms (C33) is reasonable given the non-autonomous function in regeneration (C27) versus cell-autonomous neuroprotection (C32). The conservation claim (C35) is supported by the Drosophila data (C34), though limited to two invertebrate species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "JPH-1/Junctophilin inhibits axon-axon fusion in an EFF-1-dependent manner. jph-1 mutants showed increased reconnection between regrowing axons and distal fragments, which was suppressed in eff-1; jph-1 double mutants. Non-reconnected jph-1 axons showed reduced regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 describe a clear genetic interaction: jph-1 loss increases fusion (C37), which is EFF-1-dependent (C41). The double mutant analysis (C41) provides strong evidence for epistasis. However, the reduced regrowth in non-reconnected jph-1 axons (C38) may reflect selection bias, as the authors acknowledge. The conclusion about JPH-1 restricting fusion (C42) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "ESYT-2, the sole C. elegans E-Syt protein, localizes to peripheral ER in mechanosensory neurons and rapidly condenses into puncta upon axon injury (<1s), likely in response to calcium influx. However, esyt-2 null mutants show normal axon development and regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 describe ESYT-2 localization and injury response with appropriate microscopy evidence (C45-C47). The rapid relocalization (C47) is striking, and the calcium hypothesis (C48) is reasonable given prior work (C49, C95). However, the lack of phenotype in null mutants (C50-C51) indicates ESYT-2 is not essential for regeneration, suggesting functional redundancy or that the observed relocalization is not functionally critical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Among ER-PM contact site proteins, only the quadruple obr mutant (affecting four OSBP-related proteins) showed reduced axon regrowth. Single obr mutants and anoctamin (anoh-1, anoh-2) mutants showed normal regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 demonstrate extensive functional redundancy among MCS proteins. The quadruple mutant analysis (C54) is appropriate for testing redundancy, though the manuscript does not specify whether this is a true null combination. The negative results for anoctamins (C52) are clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Lipolysis pathways (neutral and lipophagy) do not play essential roles in PLM axon regeneration. Single mutants for all genes in neutral lipolysis and lipophagy showed normal PLM regrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 report negative results for multiple lipolysis pathway components. The conclusion (C57) is appropriately cautious ('may not play an essential role'). However, the lack of phenotypes could reflect functional redundancy, incomplete pathway coverage, or that these pathways are not rate-limiting under the experimental conditions. The manuscript acknowledges the need for tissue-specific and temporal manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The Kennedy pathway for phospholipid biosynthesis may affect axon regeneration. Among Kennedy pathway enzymes, only cept-2 null mutants showed significantly reduced regrowth. cept-1; cept-2 double mutants are lethal, preventing analysis of redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 identify CEPT-2 as a potential regulator of regeneration. The single mutant phenotype (C58) is clear, but the lethality of the double mutant (C59) prevents definitive conclusions about redundancy. The conclusion (C60) is appropriately tentative. Additional experiments (tissue-specific knockdown, temporal manipulation) would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "IVNS-1, a conserved BTB-Kelch protein, inhibits axon regrowth. Two independent ivns-1 mutants showed increased regrowth as early as 6hr post-injury, which was rescued by transgenic expression. Growth cone formation was normal, and the effect was specific to ivns-1 among BTB-Kelch proteins tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 provide strong genetic evidence: two independent alleles (gk252, ok3171) show enhanced regrowth (C61), genomic rescue restores wild-type phenotype (C62), and early timepoint analysis (C63) indicates effects on regrowth rather than initiation. The specificity (C65) is supported by testing other BTB-Kelch proteins. The mechanism remains unclear but the genetic evidence is solid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Basement membrane components and ADAMTS proteases have complex roles in axon regrowth. Loss-of-function in EPI-1/Laminin \u03b1 and gain-of-function in EMB-9/Type IV collagen both enhanced regrowth. Among ADAMTS proteins, ADT-1 and ADT-3 promote regrowth while MIG-17 inhibits it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 describe opposing roles for ECM components. The data are clear, though the manuscript's interpretation of ADAMTS function (in Discussion) is speculative. The gain-of-function EMB-9 allele (C67) is appropriately cited. The complexity of ECM roles is well-established, and these results extend prior findings (C126).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "RAB-8, but not RAB-11.2, is required for PLM axon regrowth, suggesting post-Golgi vesicle trafficking rather than endosome recycling is important for regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 identify a specific trafficking requirement. The differential requirement for RAB-8 versus RAB-11.2 (C70-C71) supports the inference about post-Golgi trafficking (C72), though this interpretation relies on established functions of these GTPases (C131-C132). The conclusion is reasonable but would benefit from additional functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Among Annexin proteins, NEX-1 and NEX-2 inhibit PLM regrowth while NEX-3 and NEX-4 have no effect, suggesting cell-type-specific roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 show differential requirements for Annexin family members. The results contrast with prior work showing NEX-1 promotes motor neuron regeneration (C135), supporting the inference of cell-type specificity mentioned in the Discussion. The data are clear though the mechanism is unexplored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "MEC-17-dependent microtubule acetylation is permissive for axon regrowth. MEC-17, but not ATAT-2, is required for normal regrowth, and mec-17; atat-2 double mutants phenocopy the mec-17 single mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 demonstrate a specific requirement for MEC-17-mediated tubulin acetylation. The double mutant analysis (C76) shows MEC-17 is epistatic to ATAT-2, supporting the conclusion about MEC-17-dependent acetylation (C77). This extends prior work on MT stabilization (C136-C139) and is consistent with the pro-regenerative role of acetylated MTs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Specific tubulin isotypes have differential roles in axon regrowth. Loss of mec-12 or tba-9 reduced regrowth, while loss of tba-7 enhanced regrowth, consistent with TBA-7 functioning as an MT destabilizing factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 show clear differential requirements for tubulin isotypes. The interpretation of TBA-7 as a destabilizing factor (C80) is supported by recent literature (cited). These results support the general principle that MT stabilization promotes regeneration and extend understanding of isotype-specific functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Actin-binding proteins have differential roles in regrowth. Partial loss-of-function in fli-1/Gelsolin reduced regrowth, while loss of twf-2/Twinfilin increased regrowth, despite both proteins promoting actin disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 show opposing effects of two actin-disassembly factors. The results are clear, though the manuscript notes this is unexpected given both proteins promote disassembly (C144-C145). The use of partial loss-of-function for fli-1 (C81) may complicate interpretation. The differential roles suggest context-dependent functions in regenerating axons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Novel ion channels and transporters affect PLM regeneration. Loss of tmc-1 (sodium-sensitive channel) and lgc-12 (acetylcholine receptor) enhanced regeneration, while loss of mfsd-6 (major facilitator superfamily transporter) reduced regrowth. The mfsd-6 phenotype was rescued by pan-neuronal expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 identify new regulators of regeneration. The mfsd-6 data (C85-C86) include appropriate rescue experiments. The manuscript appropriately cites prior functional characterization of these genes (C147-C148). The inference about non-autonomous acetylcholine signaling (C150) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C151",
+      "C152"
+    ],
+    "result": "The frequency of axon regrowth phenotypes (3.9% enhanced regrowth) is consistent with a recent mouse cortical neuron screen (3% hit rate), suggesting conservation across screening platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C151-C152 compare hit rates across species and experimental systems. The comparison is appropriate and the similarity is notable, though the screens differ in design (genetic mutants in C. elegans vs. RNAi in mouse neurons). The conclusion about consistency (C87) is reasonable but should be interpreted cautiously given methodological differences.",
+    "result_type": "MINOR"
+  }
+]

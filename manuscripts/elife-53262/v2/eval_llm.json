@@ -1,0 +1,378 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The DopAct framework proposes that distinct populations of dopaminergic neurons encode different prediction errors: neurons in valuation and goal-directed systems encode reward prediction errors, while neurons in the habit system encode differences between chosen and habitual actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C25-C30 collectively present the core theoretical proposal of the framework. The proposal is internally consistent and builds logically on the integration of prior theories (C11, C21). While this is a theoretical framework rather than experimental data, it is well-supported as a coherent theoretical contribution that extends existing models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C44",
+      "C47",
+      "C48"
+    ],
+    "result": "The framework proposes that action selection involves Bayesian inference combining a goal-directed system (learning reward-action relationships) and a habit system (learning state-action relationships), weighted by their relative certainties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21, C44, C47-C48 describe the computational architecture of the framework. The theoretical proposal is mathematically formalized (C44 references Equation 3.1) and builds on established Bayesian inference principles (C13, C46). The framework is internally consistent and represents a well-developed theoretical contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C56"
+    ],
+    "result": "In the goal-directed system, dopamine plays a dual role in both action planning and learning by encoding prediction errors that are reduced through formulating motor plans (within trials) and through synaptic plasticity (across trials).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43, C56 describe a key mechanistic feature of the framework integrating active inference principles (C41). The proposal is theoretically coherent and provides a novel explanation for dopamine's role in movement initiation. While theoretical, it addresses a known gap in classical reinforcement learning (C5, C6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C83",
+      "C84",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Habits form through a process where the habit system learns to mimic the goal-directed system, driven by prediction errors encoding differences between chosen and habitual actions rather than reward prediction errors. The goal-directed system must remain partially active to enable behavioral reversal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34, C83-C84, C131-C133 describe the habit formation mechanism. The proposal is supported by anatomical evidence (C33-C34) and simulation results (C84). The mechanism differs from prior models (C32) and is internally consistent, though it acknowledges limitations in complete habit dominance (C133).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C84"
+    ],
+    "result": "Simulations demonstrate that the model reproduces key experimental phenomena including robustness of habitual responses to dopamine depletion, resistance to reward devaluation after extensive training, Pavlovian-instrumental transfer, and competition between systems during reversal learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C66, C77-C81, C84 report simulation results that qualitatively match experimental data. The simulations are based on the mathematical framework and demonstrate internal consistency. However, these are qualitative reproductions rather than quantitative fits, and parameter choices are not fully justified (acknowledged in C153).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C57",
+      "C60",
+      "C61"
+    ],
+    "result": "The framework can be implemented in neural circuits where action intensity is jointly determined by striatal neurons in goal-directed and habit systems, with dopaminergic neurons computing prediction errors locally and modulating striatal excitability only in the goal-directed system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C57, C60-C61 describe the neural implementation. The proposal maps onto known basal ganglia anatomy (C22-C24) and is mathematically formalized (Figures 5-6). The local computation claim (C57) is supported by the network architecture, though some anatomical details remain simplified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C82"
+    ],
+    "result": "The framework makes testable predictions including: (1) dopaminergic neurons in the habit system should respond more to non-habitual movements, especially after reversals; (2) dopaminergic responses in the goal-directed system should last longer when action planning takes more time or is prevented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C141-C147, C82 present specific, testable experimental predictions that follow logically from the framework's core assumptions. The predictions are clearly stated and include proposed experimental manipulations (C143). These represent falsifiable hypotheses that could validate or refute key aspects of the framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The DopAct framework differs from classical reinforcement learning by assuming animals aim to achieve desired reserve levels rather than always maximizing resource acquisition, offering flexibility to stop acquiring resources when reserves reach desired levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 articulate a key conceptual difference from classical reinforcement learning. The proposal is supported by citations to relevant theories (C87-C88) and addresses a limitation of standard algorithms (C90). However, the valuation system implementing this principle is not fully developed in the current work (acknowledged in C152).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "The framework is consistent with experimental observations showing anatomical segregation of dopaminergic responses: reward-responding neurons are located in VTA while movement-responding neurons are predominantly in SNc, with diversity in whether movement responses depend on reward availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109, C111 cite experimental data that align with the framework's predictions. The cited studies (Howe and Dombeck 2016; Jin and Costa 2010) provide empirical support for the proposed functional segregation. However, the framework's specific prediction about non-habitual movements (C129-C130) has not yet been systematically tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The DopAct framework differs from the influential Daw et al. (2005) model by proposing that the goal-directed (not habit) system learns via reward prediction error, and that habit formation is driven by action prediction errors rather than reward prediction errors. This is more consistent with the anatomical distribution of dopaminergic neurons encoding reward prediction errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C130 present a critical comparison with prior theory. The argument is well-supported by anatomical evidence (C126-C128) showing that VTA (encoding reward prediction error) does not project strongly to dorsolateral striatum (underlying habits). The alternative mechanism is theoretically coherent, though the key prediction (C129-C130) requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "The framework maps valuation, goal-directed, and habit systems onto ventral, dorsomedial, and dorsolateral striatum respectively, consistent with patterns of neural activity and lesion studies showing dorsomedial striatum is critical for reward-action learning while dorsolateral striatum is critical for habit formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101, C103 propose an anatomical mapping supported by multiple lines of experimental evidence including activity patterns (C98-C99) and lesion studies (C100-C101, C103). The mapping is acknowledged as approximate (C97) and represents a reasonable interpretation of existing data, though some details remain simplified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The framework is consistent with clinical and experimental observations that dopamine depletion specifically impairs goal-directed but not habitual movements, including difficulties with voluntary movements in Parkinson's disease and the time-dependent nature of habitual action production after reversal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 cite experimental and clinical data consistent with the framework's predictions. The evidence spans multiple studies (Choi et al. 2005; de Wit et al. 2011; Johnson et al. 2016; Rochester et al. 2005; Hardwick et al. 2019) and supports the proposed functional distinction between systems. The framework provides a mechanistic explanation for these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The framework proposes that dopaminergic activity in the goal-directed system is normalized by uncertainty, consistent with experimental observations that dopaminergic responses adapt to the range of available rewards and with similar proposals in other models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 describe a feature of the framework supported by experimental data (C114, Tobler et al. 2005) and convergent theoretical work (C113, Gershman 2017). The normalization by uncertainty is mathematically implemented in the model (Equation 6.3) and represents a well-supported theoretical feature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C136",
+      "C138",
+      "C140"
+    ],
+    "result": "The framework provides an explanation for why habits are more difficult to produce in variable ratio than variable interval schedules: the linear relationship between action and reward in variable ratio schedules results in lower uncertainty in the goal-directed system, making it less likely to defer to the habit system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136, C138, C140 provide a theoretical explanation for an experimental observation (C136, Dickinson et al. 1983). The explanation is logically consistent with the framework's principles regarding uncertainty-weighted competition between systems. However, this remains a theoretical prediction without direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C70",
+      "C73"
+    ],
+    "result": "Under certain assumptions, models developed in the DopAct framework are closely related to previous models of reinforcement learning and habit formation, with action selection depending on uncertainty-weighted inputs from both systems and a tendency to maximize resources when reserves are low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C70, C73 establish connections to prior models (Miller et al. 2019; classical reinforcement learning). The mathematical relationships are demonstrated (Equation 9.9-9.10), showing that the framework generalizes existing approaches. This strengthens the framework by showing it encompasses prior successful models as special cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The framework shares similarities with predictive coding networks and relates to other theories of dopamine function, including proposals about movement vigor and incentive salience, while making specific predictions about phasic rather than tonic dopamine determining vigor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 position the framework relative to other theories. The connections are supported by appropriate citations (Friston 2005; Niv et al. 2007; da Silva et al. 2018; Berridge and Robinson 1998). The framework integrates elements from multiple theories while making specific predictions that differ from some prior proposals (C94).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The framework predicts that dopamine should have larger effects on excitability of striatal neurons in the goal-directed than habit system, with dopaminergic modulation in dorsolateral striatum primarily affecting plasticity rather than excitability, despite dopaminergic receptors being expressed throughout the striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 present testable predictions about differential dopaminergic modulation across striatal regions. The predictions follow logically from the framework's assumptions about dopamine's role in action planning (C61). The prediction is acknowledged as potentially surprising (C150) but is consistent with behavioral data (C116, Choi et al. 2005).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The authors acknowledge multiple limitations and directions for future work, including incomplete description of the valuation system, lack of mechanistic explanation for how striatal neurons distinguish plasticity from excitability effects, omission of D2-expressing neurons and subthalamic nucleus, inability to reproduce dopaminergic ramping, and lack of extension to regions beyond basal ganglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C162 transparently acknowledge limitations of the current framework. These are appropriate caveats that identify important gaps and suggest specific directions for future development. The acknowledgment of limitations strengthens rather than weakens the contribution by clearly delineating the scope of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Classical reinforcement learning theory successfully explains dopaminergic responses to unexpected rewards and their role in striatal plasticity, but does not account for dopamine's role in action planning and movement initiation, as evidenced by Parkinson's disease symptoms and diverse dopaminergic responses to movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 establish the motivation for the framework by reviewing prior work. The claims are well-supported by extensive citations to established findings (Schultz et al. 1997; Reynolds et al. 2001; multiple studies on movement responses). The identification of a gap in classical theory (C5) is justified by clinical observations (C6) and neurophysiological data (C7-C8).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C13"
+    ],
+    "result": "The framework integrates principles from active inference (prediction errors minimized by learning and action), habit formation theory (distinct prediction errors for habit and goal-directed systems), and planning as inference (Bayesian action selection).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C13 describe the theoretical foundations of the framework. Each principle is supported by appropriate citations (Friston 2010; Miller et al. 2019; Solway and Botvinick 2012). The integration of these principles represents a novel synthesis, though each individual principle is established in prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The framework maps its computational systems onto the anatomical spectrum of cortico-basal ganglia loops, with probability distributions encoded in synaptic connection strengths, particularly cortico-striatal connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 describe the anatomical implementation. The mapping is supported by citations to established anatomy (Alexander et al. 1986; Burton et al. 2015) and represents a standard approach in computational neuroscience. The proposal is plausible though simplified compared to actual anatomy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The framework proposes that goal-directed and habit systems are not fundamentally different but rather analogous segments of neural machinery performing inference at different levels of a hierarchical probabilistic model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 presents a high-level conceptual interpretation of the framework. This perspective is consistent with the mathematical formulation (Figure 1A) and represents a unifying principle. However, this is primarily a theoretical reframing rather than a testable prediction.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "CVD is responsible for about a third of deaths in both humans and captive chimpanzees, but the pathology differs between species. Human CVD predominantly results from coronary artery atherosclerosis leading to ischemic damage, while chimpanzee CVD is often associated with interstitial myocardial fibrosis, a pattern also seen in other great apes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the comparative CVD context through citations to established literature (WHO, Varki et al., Lammey et al., Lowenstine et al.). These background claims provide well-documented evidence for species differences in CVD pathology that motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The heart is highly oxygen-dependent, with 20-40 minutes of oxygen deprivation causing irreparable damage. Mouse models have limitations for studying human CVD due to electrophysiological differences, while iPSC-CMs can effectively model gene regulation in human and chimpanzee hearts and are useful for studying CVD phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 provide well-cited background establishing the rationale for the experimental system. The claims about oxygen sensitivity, limitations of mouse models, and utility of iPSC-CMs are supported by appropriate citations to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Cardiomyocytes were successfully differentiated from iPSCs of eight human and seven chimpanzee individuals, expressing appropriate markers (TNNT2, ACTN1, IRX4) in both species with comparable purity (median 78%) and no stress induced by transfer to 10% oxygen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 describe the experimental system with supporting data from immunostaining (C15), flow cytometry (C16), and LDH assays (C17). The methods are appropriate and the data support successful differentiation with comparable quality between species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "DNA oxidation damage (8-OHdG) increased following hypoxia and re-oxygenation in both species with no inter-species difference. Lipid peroxidation (8-iso-PGF2\u03b1) increased significantly in chimpanzees following hypoxia and long-term re-oxygenation, but the increase in humans was not significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18-C21 report oxidative damage measurements with statistical support for 8-OHdG (C18) but acknowledge incomplete power for 8-iso-PGF2\u03b1 differences (C21). The authors note the human increase is not significant (p=0.2), suggesting the species difference may reflect power limitations rather than true biological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C44",
+      "C45"
+    ],
+    "result": "Approximately 4,000 genes (about one-third of all expressed genes) respond to six hours of hypoxic stress in both humans and chimpanzees, with many returning to baseline within 24 hours of re-oxygenation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C44, and C45 describe the scale of transcriptional response supported by differential expression analysis at 10% FDR (C24, Figure 2). The magnitude and recovery dynamics are clearly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C46",
+      "C47",
+      "C68",
+      "C73"
+    ],
+    "result": "The transcriptional response to hypoxia is highly conserved between humans and chimpanzees, with strong correlation (median Spearman \u03c1=0.78) and 1,920 genes (75% of responding genes) showing similar responses. This conservation is much greater than that observed for immune responses to infection between the species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C46, C47, C68, and C73 establish the high degree of conservation through correlation analysis (Figure 3) and Bayesian clustering (Figure 5). The comparison to immune response studies (C47) provides appropriate context, though it relies on a single comparative study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Using species-by-condition interaction analysis and Bayesian clustering, genes were categorized into four groups: 9,414 non-response genes, 1,920 conserved response genes, 430 chimpanzee-specific response genes, and 199 human-specific response genes. Additionally, 147 genes showed significant species-by-condition interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 describe gene categorization using two complementary approaches: linear model interactions (C26, Figure 4) and Bayesian clustering (C27-C30, Figure 5). Both methods are statistically appropriate and the results are consistent between approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "HIF1\u03b1 and HIF2\u03b1 binding sites are enriched near conserved response genes compared to both non-response genes and species-specific response genes. Chimpanzee-specific response genes are depleted for HIF binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 integrate published ChIP-seq data with the gene expression categories, showing statistically significant enrichment patterns (Figure 6A). The analysis appropriately uses chi-squared tests and the results are consistent with known HIF biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Antisense transcripts are enriched in conserved response genes compared to non-response genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 reports significant enrichment (p=0.001) of antisense transcripts among conserved response genes (Figure 6C). The statistical test is appropriate and the finding suggests a role for non-coding regulation in conserved stress responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C48"
+    ],
+    "result": "Non-response genes are enriched for KEGG pathways related to heart function, while genes responding to hypoxia in both species are significantly depleted for cardiovascular-associated genes, suggesting hypoxic stress response genes are active in multiple tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C36, and C48 describe pathway enrichment patterns supported by KEGG analysis (Figure 6\u2014figure supplement 2) and cardiovascular gene analysis (Figure 6D, p=8.3\u00d710\u207b\u2076). The interpretation that response genes are multi-tissue is reasonable given the depletion of tissue-specific genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C49",
+      "C71"
+    ],
+    "result": "Conserved response genes are depleted for eQTLs identified in heart and other tissues, with significantly lower eQTL effect sizes compared to non-response genes. This depletion is observed across multiple tissues including heart left ventricle, heart right atrial appendage, and iPSC-derived cardiomyocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, C49, and C71 integrate GTEx eQTL data with response categories, showing consistent depletion across tissues (Figure 7A, Figure 7\u2014figure supplement 1). The statistical tests are appropriate and the lower effect sizes (C38, p=0.001) provide additional support for reduced genetic variability in stress response genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C70"
+    ],
+    "result": "Conserved response genes are enriched for loss-of-function intolerant genes, with significantly higher pLI scores compared to non-response genes, while being depleted in the non-response category.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C70 show enrichment of LoF-intolerant genes in conserved response genes (p=0.02) and depletion in non-response genes (p=0.005), with supporting pLI score analysis (Figure 7D, Figure 7\u2014figure supplement 4). This pattern is consistent with the eQTL depletion findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "There is less tolerance for genetic variability that results in variation in the expression of genes necessary for eliciting a response to stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is an interpretive conclusion drawn from the combined evidence of eQTL depletion (C37-C38) and LoF intolerance enrichment (C39) in conserved response genes. The inference is logical and well-supported by the data, though it represents an interpretation rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "LDH activity showed a marginal but significant increase following hypoxia in humans and a significant increase following short-term re-oxygenation in both species, indicating cellular stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C41 report LDH measurements with statistical support (p<0.05, Figure 8A). However, the description of the human hypoxia response as \"marginal yet significant\" suggests the effect size may be small, and no inter-species statistical comparison is reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "TGF\u03b2-1 release increased significantly following re-oxygenation after hypoxic stress in both species (p<0.007), with no difference between species under any condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 report TGF\u03b2-1 ELISA results with clear statistical support (Figure 8B). The lack of species difference is notable given the known role of TGF\u03b2-1 in fibrosis and the different CVD pathologies between species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "RASD1 is up-regulated specifically in humans following hypoxia (most significant interaction), while LRRC25 responds to hypoxia specifically in chimpanzees and inhibits NF-\u03ba\u03b2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C52 identify the top species-specific response genes from the interaction analysis (Figure 4). The statistical support is clear, and the functional annotation for LRRC25 is appropriately cited (Feng et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "RASD1 is up-regulated in ischemic disease patients, and the RAI1-PEMT-RASD1 locus is a genome-wide significant locus for coronary artery disease and ischemic stroke. The associated SNP is an eQTL for RASD1 in monocytes but is not associated with vascular-related traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 integrate the RASD1 finding with published GWAS and eQTL data through appropriate citations. The pattern of associations (CAD and ischemic stroke but not vascular traits) supports a link to oxygen deprivation rather than vascular pathology, consistent with the human-specific hypoxia response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Baseline DNA oxidation and lipid peroxidation levels are similar between species. DNA oxidation increases following recovery from hypoxia in both species, while lipid peroxidation shows a trend toward increase in both species but is only significant in chimpanzees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C61 describe oxidative damage patterns, but C61 acknowledges the increase is only significant in chimpanzees. The authors suggest this may reflect power limitations rather than true species differences, making the biological interpretation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "A previous study in blood samples found no significant difference in 8-OHdG levels between humans and chimpanzees, but significantly elevated 8-iso-PGF2\u03b1 levels in chimpanzees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C63 cite a prior study (Videan et al., 2009) showing patterns consistent with the current findings. This provides external validation, though the comparison is between blood and cardiomyocytes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The secreted metabolome is highly correlated between human and rhesus macaque cardiomyocytes after 24 hours of hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 cites a comparative study (Zhao et al., 2018) showing conservation at the metabolome level, providing additional support for conserved cellular responses to hypoxia across primates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Only 16% of genes responding to hypoxia and 23% of species-by-condition interaction genes were differentially expressed between hearts and iPSC-CMs in a previous study, suggesting the cell culture system does not introduce systematic bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 compare the current results to a prior study (Pavlovic et al., 2018) to assess the relevance of iPSC-CMs to in vivo hearts. The relatively low overlap suggests the hypoxia response genes are not systematically biased by the cell culture system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Cardiomyocytes are more sensitive to superoxide radicals than cardiac fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 cites prior work (Li et al., 1999) to support the focus on cardiomyocytes as the most relevant cell type for studying oxidative stress in the heart.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Hundreds of species-specific regulatory responses were identified, including in genes previously associated with CVD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 summarizes the species-specific findings (147 interaction genes, 199 human-specific, 430 chimpanzee-specific response genes) with examples like RASD1 that have CVD associations. The claim is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Genes that respond to hypoxia in both species are depleted for cardiovascular-related genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by cardiovascular gene enrichment analysis (Figure 6D, p=8.3\u00d710\u207b\u2076). This finding suggests hypoxia response genes have broad tissue expression rather than being heart-specific.",
+    "result_type": "MAJOR"
+  }
+]

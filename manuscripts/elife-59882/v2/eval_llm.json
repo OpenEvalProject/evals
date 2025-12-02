@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript provides background on CO2 concentrating mechanisms (CCMs), rubisco function, and their evolutionary context. CCMs catalyze approximately 50% of global photosynthesis and arose multiple times over the last 2 billion years to overcome rubisco's limitations by concentrating CO2 near the enzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 establish well-documented background knowledge about CCMs, rubisco, and photosynthesis, all supported by appropriate citations to the scientific literature. These claims provide essential context for understanding the experimental work but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The bacterial CCM consists of two essential components: energy-coupled inorganic carbon uptake and carboxysome structures that encapsulate rubisco with carbonic anhydrase. A genome-wide screen in H. neapolitanus demonstrated that a 20-gene cluster encodes all activities required for the CCM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C42 describe the composition and organization of the bacterial CCM based on prior work, particularly the authors' previous genome-wide screen (C41). These claims are well-supported by citations and provide the foundation for the reconstitution experiments, though they represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors engineered an E. coli strain (CCMB1) that depends on rubisco carboxylation for growth by deleting ribose 5-phosphate isomerase and carbonic anhydrases. CCMB1 expressing rubisco and prk grows in 10% CO2 but not in ambient air, displaying the 'high-CO2 requiring' phenotype characteristic of CCM mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C55 describe the rational design and validation of the CCMB1 strain, supported by experimental data in Figures 2 and supplements. The strain design is based on sound metabolic logic, and the phenotypes are well-documented. The demonstration that carboxylation alone is sufficient (C54-C55) is particularly important for interpreting subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Expression of 20 CCM genes on two plasmids (pCB' and pCCM') enabled CCMB1 to grow reproducibly in ambient air. Selection experiments isolated mutant plasmids with mutations only in regulatory sequences, suggesting that the 20 genes expressed are sufficient to produce a heterologous CCM without genomic mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 describe the core experimental achievement of the paper, supported by growth data in Figure 3 and sequencing data (C61). The requirement for selection (C58-C59) and the nature of the mutations (C61) are clearly documented. However, the inference that 20 genes are sufficient (C63) is somewhat weakened by the need for regulatory mutations to achieve growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Targeted mutations to known CCM components (rubisco, carbonic anhydrase, carboxysome shell proteins, and inorganic carbon transporter) eliminated growth in ambient air while permitting growth in high CO2, demonstrating that growth depends on functional CCM components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by experimental data in Figure 4 showing that mutations to each essential CCM component ablate growth in ambient air. The experimental design appropriately distinguishes between rubisco-dependent growth (which requires high CO2) and CCM-dependent growth (which enables growth in ambient air). Statistical analysis is provided in supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Electron microscopy revealed polyhedral inclusions of approximately 100 nm diameter in CCMB1:pCB'+pCCM' cells. Purified carboxysomes were similar in appearance to those from the native host, though more heterogeneous, and contained rubisco as confirmed by SDS-PAGE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by electron microscopy data in Figure 5 and biochemical data in supplements. The morphological characterization provides important evidence that the reconstituted system produces bona fide carboxysome structures. The noted heterogeneity (C70) is an honest assessment of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Isotopic labeling experiments using 13C-glycerol and 12CO2 from ambient air showed that serine from CCMB1:pCB'+pCCM' contained threefold more 12C than controls. Rubisco carboxylation was responsible for at least 10% of 3PG synthesis, confirming CO2 fixation from ambient air and representing the first functional reconstitution of any CCM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by isotopic labeling data in Figure 6 and detailed flux analysis in Appendix 3. The experimental design appropriately uses 13C-labeled substrate to trace CO2 fixation. The claim of 'first functional reconstitution' (C74) appears justified given the demonstration of growth, carboxysome formation, and CO2 fixation in a heterologous host.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The \u03b1-carboxysome CCM from H. neapolitanus can be readily transferred between species and confers a large growth benefit. At most 20 gene products are required to produce a bacterial CCM, demonstrating that the \u03b1-carboxysome CCM is genetically compact and 'portable' between organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 represent key conclusions from the experimental work. The successful reconstitution (C75) and growth benefit (C76) are well-documented. The claim about horizontal transfer (C77) is a reasonable inference supported by citations. The conclusion about genetic compactness (C78-C79) is supported by the data, though the need for regulatory mutations suggests some caveats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Rubisco chaperones are strictly dispensable for producing a functional bacterial CCM, although removing acRAF produced a substantial growth defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by experimental data in Figure 4\u2014figure supplement 1. The distinction between 'strictly dispensable' (growth is possible) and 'substantial growth defect' (growth is impaired) is appropriate and honestly represents the data. This finding refines understanding of CCM requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Expressing bacterial CCMs in non-native autotrophic hosts may improve CO2 assimilation and growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is explicitly speculative ('It is possible, therefore...') and represents a potential application rather than a demonstrated result. While the successful reconstitution in E. coli provides some support for this possibility, the manuscript also notes that previous attempts in plants have failed (C39), suggesting significant challenges remain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "There is great interest in transplanting CCMs into crops, and carboxysome-based CCMs are attractive because they function in single cells and rely on a tractable number of genes. However, expressing bacterial rubiscos and carboxysome components has uniformly resulted in transgenic plants displaying impaired growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide important context about the motivation for this work and the challenges in the field. All claims are supported by appropriate citations. The honest acknowledgment of previous failures (C39) strengthens the significance of the current work by highlighting the difficulty of the problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "All contemporary Cyanobacteria have CCM genes found in two convergently evolved varieties, suggesting their ancestor lacked a CCM. Land plant CCMs arose only in the last 100 million years. Pyrenoid CCMs are responsible for 70-80% of oceanic photosynthesis, yet many questions remain about algal CCMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 provide evolutionary and ecological context for CCMs, all supported by appropriate citations. These claims help frame the broader significance of the work but represent established knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The CCMB1 strain has genotype BW25113 \u0394rpiAB \u0394edd \u0394cynT \u0394can. Expressing the full complement of CCM genes led to an increase in culture density of approximately 0.6 OD units after 80 hr with a 99.9% confidence interval of 0.56-0.64 OD units. Maximal growth rates ranged from 0.03 to 0.06 hr\u207b\u00b9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 provide technical details about the strain and quantitative growth measurements. The statistical analysis (C91) using bootstrapping is appropriate, and the confidence intervals are clearly stated. The growth rates (C92) are honestly reported despite being quite slow, which is expected for this engineered system.",
+    "result_type": "MINOR"
+  }
+]

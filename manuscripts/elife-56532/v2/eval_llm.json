@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C61"
+    ],
+    "result": "Cell fate choice models in homeostatic tissues can be categorized into exactly two universality classes (GIA and GPA), distinguished by a conservation law. Models within the same class predict identical clonal statistics under asymptotic conditions, with GIA models conserving R-cell numbers and GPA models lacking such conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C21-C22, C38-C41, and C61 collectively establish the core theoretical framework through mathematical analysis (Equations 3-9, Figure 1) and demonstrate convergence through numerical simulations (Figures 2-4). The conservation law distinction is rigorously defined and the universality property is demonstrated both analytically (Appendix) and numerically across randomly generated models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C50",
+      "C51",
+      "C57"
+    ],
+    "result": "Models within the same universality class cannot be distinguished by clonal data under asymptotic conditions, while models from different classes can be distinguished. Specifically, all GPA models converge to an Exponential clone size distribution at large times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C50-C51 are strongly supported by numerical simulations in Figure 3(b) showing convergence of all GPA models to the same rescaled Exponential distribution. Claim C57 is supported by mathematical analysis in the Appendix. The distinction between classes (C7) follows from their different limiting distributions (Exponential vs. Normal).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Mean clone size dynamics differ fundamentally between model classes: GIA models exhibit saturation to a plateau value while GPA models show steady increase over time due to progressive clone extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are directly demonstrated in Figure 2 through numerical simulations of randomly generated models. Claim C49 provides the theoretical explanation citing branching process theory (Haccou et al., 2005), which is appropriate for this well-established result. The mechanistic explanation is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Homeostatic cell state networks can be decomposed into two compartments based on eigenvalue analysis: a Renewing compartment (R) at the apex with \u03bc=0 that maintains itself, and a Committed compartment (C) with \u03bc<0 whose progeny is eventually lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 establish the mathematical framework for compartment decomposition, illustrated in Figure 1. The eigenvalue conditions and their biological interpretation are rigorously derived from the linear system (Equation 7) and strongly connected component analysis. The Appendix provides detailed mathematical justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Classical models (IA, PA, DH) can be reclassified under the new framework: IA is GIA, while both PA and DH are GPA models. This explains why PA and DH predict identical Exponential clone size distributions despite having different division types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 demonstrate how the new classification resolves the PA/DH indistinguishability problem. The reclassification follows logically from the definitions (C38-C39) and compartment analysis. Claim C46 is supported by citation to prior work (Greulich and Simons, 2016) and the current theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C65"
+    ],
+    "result": "Intrinsic limitations exist for identifying stem cell self-renewal strategies through clonal data because different models generate identical clonal statistics. Model distinction is fundamentally limited to the R vs. C categorization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 and C65 represent the main biological conclusion, directly supported by the universality results (C2-C3, C50-C51, C61). The limitation is demonstrated through both mathematical analysis and numerical simulations showing convergence of diverse models to identical distributions within each class.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The DH and PA models cannot be distinguished via clonal data alone, demonstrating that classical definitions of asymmetric and symmetric divisions are insufficient for distinguishing cell fate strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by citation to prior work (Greulich and Simons, 2016) and provide key motivation for the current study. The indistinguishability is explained by both models being GPA (C44-C46), which is rigorously demonstrated in the current work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Model distinction remains possible in regimes where asymptotic conditions are not fulfilled, particularly when committed progenitor cells cycle faster than stem cells. However, caution is needed as Exponential distributions can arise from either GIA or GPA models under certain conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C69 discuss scenarios where universality breaks down, but these are largely speculative (C67, C68 marked as SPECULATION in evidence). While the logic is sound, no direct experimental or simulation data is provided to validate these predictions. Claim C69 is an inference without supporting data showing GIA models producing Exponential distributions under the specified conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C23"
+    ],
+    "result": "The convergence of different models to identical statistics represents weak convergence of random variables and corresponds to universality as known from statistical physics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C23 establish the connection to statistical physics concepts. The analogy is appropriate and supported by citation to probability theory (Billingsley, 1968) and prior work (Klein and Simons, 2011). The mathematical framework of weak convergence correctly describes the observed phenomena.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C70"
+    ],
+    "result": "Universality implies that simplistic models are often equally accurate for experimental data with higher statistical power, and Markovian approximations become increasingly accurate at long times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C70 represent practical implications of the universality finding. These follow logically from the main results: if models converge to the same statistics, simpler models with fewer parameters are preferable (C66), and the convergence property justifies Markovian approximations at long times (C70).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Advanced model inference schemes integrating data from different experimental sources might reveal details of stem cell self-renewal strategies in the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is marked as SPECULATION in the evidence and represents a future direction rather than a demonstrated result. While reasonable as a suggestion, no evidence or framework is provided to support the feasibility or methodology of such integration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The results apply to most renewing tissues (epithelial sheets, volumnar organs) but not to one-dimensional arrangements of stem cells, where spatial models may produce different clonal statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 appropriately scope the applicability of the results based on cited theoretical work (Klein and Simons, 2011; Bramson and Griffeath, 1980). The limitation to non-1D arrangements is well-established in the literature and correctly acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C25",
+      "C27"
+    ],
+    "result": "Two classical stem cell self-renewal strategies exist: Invariant Asymmetry (IA) with only asymmetric divisions (r=0) that strictly conserves stem cell numbers, and Population Asymmetry (PA) with balanced symmetric divisions that maintains homeostasis on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 and C25, C27 describe established knowledge supported by multiple citations to prior literature (Potten and Loeffler, 1990; Simons and Clevers, 2011a; Watt and Hogan, 2000; Klein and Simons, 2011). The mathematical definitions are standard and the conservation property of IA follows directly from r=0.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C29"
+    ],
+    "result": "Experimental lineage-tracing studies have shown that Exponential clone size distributions prevail in most mouse tissues, supporting the PA strategy over IA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C29 summarize prior experimental findings supported by multiple citations (Clayton et al., 2007; Lopez-Garcia et al., 2010; Simons and Clevers, 2011b; Doup\u00e9 et al., 2012; Klein et al., 2010). This represents established experimental knowledge that motivates the current theoretical study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C14",
+      "C15"
+    ],
+    "result": "Adult stem cells maintain self-renewing tissues through cell division and differentiation. Direct observation of divisions is rarely possible in vivo, but genetic lineage-tracing assays enable assessment of clonal statistics and cell fate dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C9, C14-C15 represent established background knowledge supported by appropriate citations (National Institute of Health, 2009) and standard understanding of experimental methods. These provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The Dynamic Heterogeneity (DH) model features cell fate plasticity with asymmetric divisions and agrees with experimental clonal data that also supports the PA strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 accurately describe the DH model from prior work (Greulich and Simons, 2016). The citation is appropriate and the description is consistent with the original work. This provides key motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Alternative experimental approaches (scRNA-seq, intravital imaging) have limitations: scRNA-seq cannot infer reversible trajectories or division modes, while intravital imaging is limited to accessible tissue types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 summarize limitations of alternative experimental approaches based on appropriate citations (Weinreb et al., 2018; Ritsma et al., 2012; Pittet and Weissleder, 2011; Hara et al., 2014; Rompolas et al., 2016). These represent established knowledge about experimental constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "The conditions for emergence of universality are not always fulfilled in real tissues, providing both challenges and opportunities for identifying stem cell fate choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C24 is marked as INFERENCE in the evidence and represents a general statement about applicability. While logically consistent with the theoretical findings, no specific analysis of real tissue parameters is provided to determine when conditions are or are not fulfilled.",
+    "result_type": "MINOR"
+  }
+]

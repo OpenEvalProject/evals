@@ -1,0 +1,1885 @@
+{
+  "submission": {
+    "id": "35c4da68-5140-4b4a-ade2-67c59890717f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:19:29.976511Z",
+    "updated_at": "2025-12-02T20:19:29.976511Z"
+  },
+  "content": [
+    {
+      "id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "submission_id": "35c4da68-5140-4b4a-ade2-67c59890717f",
+      "content_type": "manuscript",
+      "content_text": "# Antinociceptive modulation by the adhesion GPCR CIRL promotes mechanosensory signal discrimination\n\n## Authors\n\n- Sven Dannh\u00e4user<sup>1</sup>\n- Thomas J Lux<sup>3</sup> ([ORCID: 0000-0003-1049-9872](https://orcid.org/0000-0003-1049-9872))\n- Chun Hu<sup>4</sup>\n- Mareike Selcho<sup>1</sup>\n- Jeremy T-C Chen<sup>3</sup>\n- Nadine Ehmann<sup>1</sup>\n- Divya Sachidanandan<sup>1</sup> ([ORCID: 0000-0001-8219-8177](https://orcid.org/0000-0001-8219-8177))\n- Sarah Stopp<sup>1</sup>\n- Dennis Pauls<sup>1</sup>\n- Matthias Pawlak<sup>5</sup>\n- Tobias Langenhan<sup>6</sup> ([ORCID: 0000-0002-9061-3809](https://orcid.org/0000-0002-9061-3809))\n- Peter Soba<sup>4</sup>\n- Heike L Rittner<sup>3</sup> ([ORCID: 0000-0003-4867-0188](https://orcid.org/0000-0003-4867-0188)) \u2020\n- Robert J Kittel<sup>1</sup> ([ORCID: 0000-0002-9199-4826](https://orcid.org/0000-0002-9199-4826)) \u2020\n\n### Affiliations\n\n1. Department of Animal Physiology, Institute of Biology, Leipzig University Leipzig Germany\n2. Carl-Ludwig-Institute for Physiology, Leipzig University Leipzig Germany\n3. Center for Interdisciplinary Pain Medicine, Department of Anaesthesiology, University Hospital W\u00fcrzburg W\u00fcrzburg Germany\n4. Neuronal Patterning and Connectivity, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf Hamburg Germany\n5. Department of Neurophysiology, Institute of Physiology, University of W\u00fcrzburg W\u00fcrzburg Germany\n6. Rudolf Sch\u00f6nheimer Institute of Biochemistry, Division of General Biochemistry, Medical Faculty, Leipzig University Leipzig Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nAdhesion-type GPCRs (aGPCRs) participate in a vast range of physiological processes. Their frequent association with mechanosensitive functions suggests that processing of mechanical stimuli may be a common feature of this receptor family. Previously, we reported that the Drosophila aGPCR CIRL sensitizes sensory responses to gentle touch and sound by amplifying signal transduction in low-threshold mechanoreceptors (Scholz et al., 2017). Here, we show that Cirl is also expressed in high-threshold mechanical nociceptors where it adjusts nocifensive behaviour under physiological and pathological conditions. Optogenetic in vivo experiments indicate that CIRL lowers cAMP levels in both mechanosensory submodalities. However, contrasting its role in touch-sensitive neurons, CIRL dampens the response of nociceptors to mechanical stimulation. Consistent with this finding, rat nociceptors display decreased Cirl1 expression during allodynia. Thus, cAMP-downregulation by CIRL exerts opposing effects on low-threshold mechanosensors and high-threshold nociceptors. This intriguing bipolar action facilitates the separation of mechanosensory signals carrying different physiological information.\n\n## Introduction\n\nMechanical forces are detected and processed by the somatosensory system. Mechanosensation encompasses the distinct submodalities of touch, proprioception, and mechanical nociception. Touch plays an important discriminative role and contributes to social interactions (Abraira and Ginty, 2013; McGlone et al., 2014). Nociception reports incipient or potential tissue damage. It triggers protective behaviours and can give rise to pain sensations (Basbaum et al., 2009). Thus, physically similar signals can carry fundamentally different physiological information, depending on stimulus intensity. Whereas innocuous touch sensations rely on low-threshold mechanosensory neurons, noxious mechanical stimuli activate high-threshold mechanosensory neurons, i.e. nociceptors. While mechanisms to differentiate these mechanosensory submodalities are essential for survival, little is known how this is achieved at cellular and molecular levels.\n\nThe activity of nociceptors can be increased through sensitization, e.g. upon inflammation, and decreased through antinociceptive processes, leading to pain relief. In both cases, G protein-coupled receptors (GPCRs) play an important modulatory role. Receptors that couple to heterotrimeric Gq/11 or Gs proteins, like the prostaglandin EP2 receptor, increase the excitability of nociceptors by activating phospholipase C and adenylyl cyclase pathways, respectively. In contrast, Gi/o-coupled receptors, which are gated by soluble ligands like morphine and endogenous opioid neuropeptides generally inhibit nociceptor signalling. In mammalian nociceptors, cell surface receptors that couple to Gi/o proteins are located at presynaptic sites in the dorsal horn of the spinal cord, where they reduce glutamate release, at somata in dorsal root ganglia (DRG), and at peripheral processes, where they suppress receptor potential generation (Yudin and Rohacs, 2018).\n\nResearch on mechanosensation has focussed mainly on receptors that transduce mechanical force into electrical current, and the function of such mechanosensing ion channels is currently the subject of detailed investigations. In contrast, evidence for mechano-metabotropic signal transfer and compelling models of force conversion into an intracellular second messenger response are limited, despite the vital role of metabotropic modulation in all corners of physiology (Mederos y Schnitzler et al., 2008; Hoffman et al., 2011). Adhesion-type GPCRs (aGPCRs), a large molecule family with over 30 members in humans, operate in diverse physiological settings. Correspondingly, these receptors are associated with diverse human diseases, such as developmental disorders, defects of the nervous system, allergies and cancer (Hamann et al., 2015; Scholz et al., 2016). In contrast to most members of the GPCR phylum, aGPCRs are not activated by soluble ligands. Instead, aGPCRs interact with partner molecules tethered to membranes or fixed to the extracellular matrix via their long, adhesive N-terminal domain. This arrangement positions aGPCRs as metabotropic mechanosensors, which translate a relative displacement of the receptor-bearing cell into an intracellular second messenger signal (Langenhan et al., 2016).\n\nCIRL (ADGRL/Latrophilin, Lphn), one of the oldest members of the aGPCR family, is expressed in the neuronal dendrites and cilia of Drosophila larval chordotonal organs (ChOs), mechanosensory structures that respond to gentle touch, sound, and proprioceptive input (Kernan, 2007; Scholz et al., 2015). Here, mechanical stimulation of CIRL triggers a conformational change of the protein and activation via its tethered agonist (Stachel) (Liebscher et al., 2014; Stoveken et al., 2015). Signalling by the activated receptor reduces intracellular cAMP levels, which in turn sensitizes ChO neurons and potentiates the mechanically-evoked receptor potential (Scholz et al., 2017). In the current study, we show that CIRL also adjusts the activity of nociceptors, which respond to strong mechanical stimuli. Here, too, its function is consistent with Gi/o coupling. However, in contrast to touch-sensitive ChO neurons, nociceptors are sensitized by elevated cAMP concentrations and toned down by an antinociceptive and Stachel-independent action of CIRL. As a result of curtailing cAMP production, CIRL modulates neural processing of noxious harsh and innocuous gentle touch bidirectionally. This elegant signalling logic serves signal discrimination by helping to separate mechanosensory submodalities.\n\n## Results\n\nDrosophila larvae possess two major types of peripheral sensory neurons. Monociliated type one neurons, including ChOs and external sensory organs, and type two neurons with multiple dendritic (md) projections, classified as tracheal dendrite (md-td), bipolar dendrite (md-bd), and dendritic arborization (md-da). Md-da neurons are further subdivided into four classes: C1da-C4da (Ghysen et al., 1986; Bodmer and Jan, 1987; Grueber et al., 2002). Previous work demonstrated prominent expression of Cirl in ChOs, where it modulates sensory processing of innocuous mechanical stimuli (Scholz et al., 2015; Scholz et al., 2017). In addition, Cirl transcription was also noted in md neurons. Motivated by this observation, we now turned our attention to C4da neurons: polymodal nociceptors, which respond to noxious temperatures, intense light and, importantly, harsh mechanical touch (Tracey et al., 2003; Xiang et al., 2010; Zhong et al., 2010; Zhong et al., 2012; Kim et al., 2012; Kim and Johnson, 2014). Degenerin/epithelial sodium channels (DEG/ENaCs) contribute to nociceptive mechanotransduction in invertebrates and mammals (Price et al., 2001; Chatzigeorgiou et al., 2010; Zhong et al., 2010; Gorczyca et al., 2014; Guo et al., 2014; Mauthner et al., 2014). Placing a fluorescent reporter under transcriptional control of the DEG/ENaC subunit pickpocket (ppk) reliably marks C4da neurons (Grueber et al., 2003; Han et al., 2011). We therefore combined a direct GFP-ppk promoter fusion (ppk-CD4::tdGFP) with binary expression of the red photoprotein Tomato by a Cirl promoter element in the UAS/GAL4 system (dCirlpGAL4\u00a0>UAS-CD4::tdTomato) (Brand and Perrimon, 1993; Scholz et al., 2015). This setting revealed Cirl transcription in both ppk-negative ChOs and ppk-positive C4da neurons (Figure 1). Thus, Cirl is expressed in different sensory neurons, including proprioceptors and nociceptors.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig1-v2.jpg)\n\n**Figure 1.:** (A) The Cirl promoter drives Tomato photoprotein expression (magenta; dCirlpGAL4\u00a0>UAS-CD4::tdTomato) in type one larval pentascolopidial ChO (lch5) neurons and type 2 C4da nociceptors, identified by a GFP-ppk promoter fusion (green; ppk-CD4::tdGFP). Magnified view of (B) C4da and (C) ChO neurons. Shown are immunohistochemical stainings against the fluorescent proteins. Scale bars (A) 20 \u00b5m, (B,C) 10 \u00b5m.\n\nGiven CIRL\u2019s role in mechanosensation, we next tested for a specific contribution of the aGPCR to mechanical nociception. Drosophila larvae display a stereotyped response to noxious mechanical insult. Importantly, this innate nocifensive behaviour, characterized by a \u2018corkscrew\u2019 body roll, can be quantified and is distinct from the animals\u2019 reaction to innocuous touch (Figure 2A; Video 1; Tracey et al., 2003; Zhong et al., 2010). Mechanical stimulation with a 40 mN von Frey filament triggered nocifensive behaviour in 53% of control larvae. In contrast, Cirl null mutants (dCirlKO) showed significantly increased nocifensive behaviour and responded in 75% of the trials (Figure 2B; Table 1). Knocking-down Cirl levels specifically in C4da neurons via RNA-interference (RNAi; ppk-GAL4\u00a0>UAS-dCirlRNAi) delivered a mutant phenocopy and re-expressing Cirl in nociceptors rescued the mutant phenotype. Notably, Cirl overexpression had the opposite effect resulting in diminished nocifensive responses (Figure 2B; Table 1). These results show that CIRL curtails mechanical nociception by carrying out a cell-autonomous, dose-dependent function in C4da neurons.\n\n**Table 1.**\n Behaviour and imaging.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Figure</th>\n      <th>Genotype</th>\n      <th>Mean</th>\n      <th>SEM</th>\n      <th>N</th>\n      <th colspan=\"2\">P-value</th>\n      <th>Test</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Figure 2B</td>\n      <td>control</td>\n      <td>53.34</td>\n      <td>1.458</td>\n      <td>7</td>\n      <td rowspan=\"2\" colspan=\"2\">p&lt;0.0001</td>\n      <td rowspan=\"2\">unpaired t-test</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dCirlKO</td>\n      <td>75.37</td>\n      <td>2.676</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>RNAi control</td>\n      <td>54.23</td>\n      <td>3.279</td>\n      <td>8</td>\n      <td rowspan=\"2\" colspan=\"2\">p=0.0169</td>\n      <td rowspan=\"2\">one-way ANOVA, Tukey correction</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0dCirlRNAi</td>\n      <td>68.08</td>\n      <td>2.052</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>GAL4 control</td>\n      <td>53.67</td>\n      <td>3.211</td>\n      <td>14</td>\n      <td colspan=\"2\"></td>\n      <td rowspan=\"4\">one-way ANOVA, Tukey correction</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KO ppk\u00a0&gt;\u00a0dCirl</td>\n      <td>45.7</td>\n      <td>3.627</td>\n      <td>10</td>\n      <td colspan=\"2\">p=0.3345 (GAL4 control)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0dCirl</td>\n      <td>37.12</td>\n      <td>2.778</td>\n      <td>10</td>\n      <td colspan=\"2\">p=0.0023 (GAL4 control)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0dCirl (29\u00b0C)</td>\n      <td>28.67</td>\n      <td>3.125</td>\n      <td>10</td>\n      <td colspan=\"2\">p&lt;0.0001 (GAL4 control)</td>\n    </tr>\n    <tr>\n      <td>Figure 3C</td>\n      <td>control (Canton-S)</td>\n      <td>44</td>\n      <td>3.712</td>\n      <td>10</td>\n      <td rowspan=\"2\" colspan=\"2\">p&lt;0.0001</td>\n      <td rowspan=\"2\">Mann-Whitney</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dunce1</td>\n      <td>72</td>\n      <td>1.106</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>control (f36a)</td>\n      <td>50.5</td>\n      <td>1.167</td>\n      <td>10</td>\n      <td rowspan=\"2\" colspan=\"2\">p&lt;0.0001</td>\n      <td rowspan=\"2\">unpaired t-test</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dunceML</td>\n      <td>79.58</td>\n      <td>0.965</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Figure 3D</td>\n      <td>control (+vehicle)</td>\n      <td>49.67</td>\n      <td>1.445</td>\n      <td>10</td>\n      <td rowspan=\"2\">p&lt;0.0001</td>\n      <td></td>\n      <td rowspan=\"6\">one-way ANOVA, Tukey correction</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dCirlKO(+vehicle)</td>\n      <td>65.67</td>\n      <td>1.725</td>\n      <td>10</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>control (+SQ22536)</td>\n      <td>38.33</td>\n      <td>1.511</td>\n      <td>10</td>\n      <td rowspan=\"2\">p=0.9805</td>\n      <td>p=0.0002 (control +vehicle)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dCirlKO(+SQ22536)</td>\n      <td>40</td>\n      <td>1.406</td>\n      <td>10</td>\n      <td>p&lt;0.0001 (dCirlKO +vehicle)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>control (+DDA)</td>\n      <td>35.67</td>\n      <td>2.334</td>\n      <td>10</td>\n      <td rowspan=\"2\">p=0.6315</td>\n      <td>p&lt;0.0001 (control +vehicle)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dCirlKO(+DDA)</td>\n      <td>39.33</td>\n      <td>1.388</td>\n      <td>10</td>\n      <td>p&lt;0.0001 (dCirlKO +vehicle)</td>\n    </tr>\n    <tr>\n      <td>Figure 4B</td>\n      <td>control</td>\n      <td>1.58</td>\n      <td>0.2794</td>\n      <td>10</td>\n      <td rowspan=\"2\" colspan=\"2\">p=0.0032</td>\n      <td rowspan=\"2\">unpaired t-test</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0dCirlRNAi</td>\n      <td>2.94</td>\n      <td>0.2866</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Figure 4E</td>\n      <td>control</td>\n      <td>54.28</td>\n      <td>1.961</td>\n      <td>10</td>\n      <td></td>\n      <td></td>\n      <td rowspan=\"3\">one-way ANOVA, Tukey correction</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dCirlTT&gt;A</td>\n      <td>55</td>\n      <td>2.274</td>\n      <td>10</td>\n      <td colspan=\"2\">p=0.9660 (control)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dCirlHH&gt;A</td>\n      <td>73.78</td>\n      <td>1.845</td>\n      <td>10</td>\n      <td colspan=\"2\">p&lt;0.0001 (control)</td>\n    </tr>\n    <tr>\n      <td>Figure 5A</td>\n      <td>GAL4 control (+vehicle)</td>\n      <td>53.96</td>\n      <td>3.831</td>\n      <td>19</td>\n      <td colspan=\"2\">p&gt;0.9999 (ppk\u00a0&gt;\u00a0dCirl +paclitaxel)</td>\n      <td rowspan=\"4\">Kruskal-Wallis test</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>GAL4 control (+paclitaxel)</td>\n      <td>95.5</td>\n      <td>1.74</td>\n      <td>10</td>\n      <td colspan=\"2\">p=0.0002 (GAL4 control +vehicle)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0dCirl (+vehicle)</td>\n      <td>37.12</td>\n      <td>2.778</td>\n      <td>10</td>\n      <td colspan=\"2\">p&gt;0.9999 (ppk\u00a0&gt;\u00a0dCirl +paclitaxel)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0dCirl (+paclitaxel)</td>\n      <td>46.34</td>\n      <td>2.374</td>\n      <td>10</td>\n      <td colspan=\"2\">p&lt;0.0001 (GAL4 control +Taxol)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dCirlKO (+vehicle)</td>\n      <td>69.68</td>\n      <td>3.54</td>\n      <td>20</td>\n      <td rowspan=\"2\" colspan=\"2\">p&lt;0.0001</td>\n      <td rowspan=\"2\">Mann-Whitney</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dCirlKO (+paclitaxel)</td>\n      <td>97.05</td>\n      <td>1.097</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Figure 5C</td>\n      <td>GAL4 control (+vehicle)</td>\n      <td>8.256</td>\n      <td>0.1985</td>\n      <td>10</td>\n      <td colspan=\"2\">p=0.0117 (GAL4 control +Taxol)</td>\n      <td rowspan=\"4\">Kruskal-Wallis test</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>GAL4 control (+paclitaxel)</td>\n      <td>6.27</td>\n      <td>0.5574</td>\n      <td>10</td>\n      <td colspan=\"2\">p=0.0017 (ppk\u00a0&gt;\u00a0dCirl +paclitaxel)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0dCirl (+vehicle)</td>\n      <td>5.108</td>\n      <td>0.1603</td>\n      <td>10</td>\n      <td colspan=\"2\">p&lt;0.0001 (GAL4 control +vehicle)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0dCirl (+paclitaxel)</td>\n      <td>3.861</td>\n      <td>0.5961</td>\n      <td>10</td>\n      <td colspan=\"2\">p=0.1848 (ppk\u00a0&gt;\u00a0dCirl +vehicle)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>GAL4 control (+vehicle)</td>\n      <td>22.17</td>\n      <td>0.7015</td>\n      <td>10</td>\n      <td colspan=\"2\">p=0.0014 (GAL4 control +paclitaxel)</td>\n      <td rowspan=\"4\">one-way ANOVA, Tukey correction</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>GAL4 control (+paclitaxel)</td>\n      <td>15.42</td>\n      <td>1.174</td>\n      <td>10</td>\n      <td colspan=\"2\">p&gt;0.9999 (ppk\u00a0&gt;\u00a0dCirl +paclitaxel)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0dCirl (+vehicle)</td>\n      <td>17.26</td>\n      <td>0.6091</td>\n      <td>10</td>\n      <td colspan=\"2\">p=0.0296 (GAL4 control +vehicle)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0dCirl (+paclitaxel)</td>\n      <td>11.22</td>\n      <td>1.716</td>\n      <td>10</td>\n      <td colspan=\"2\">p=0.2557 (ppk\u00a0&gt;\u00a0dCirl +vehicle)</td>\n    </tr>\n    <tr>\n      <td>Figure 5D</td>\n      <td>control</td>\n      <td>4.971</td>\n      <td>0.1747</td>\n      <td>8</td>\n      <td rowspan=\"2\" colspan=\"2\">p=0.0025</td>\n      <td rowspan=\"2\">unpaired t-test</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dCirlKO</td>\n      <td>4.219</td>\n      <td>0.1255</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>control</td>\n      <td>18.11</td>\n      <td>0.5029</td>\n      <td>8</td>\n      <td rowspan=\"2\" colspan=\"2\">p=0.2829</td>\n      <td rowspan=\"2\">unpaired t-test</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dCirlKO</td>\n      <td>17.37</td>\n      <td>0.4384</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Figure 6A</td>\n      <td>control day 0</td>\n      <td>6.972</td>\n      <td>0.8056</td>\n      <td>6</td>\n      <td rowspan=\"2\" colspan=\"2\">p=0.4062</td>\n      <td rowspan=\"4\">unpaired t-test</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>CCI day 0</td>\n      <td>8.003</td>\n      <td>0.8755</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>control day 7</td>\n      <td>8.152</td>\n      <td>0.6647</td>\n      <td>6</td>\n      <td rowspan=\"2\" colspan=\"2\">p&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>CCI day 7</td>\n      <td>0.861</td>\n      <td>0.0982</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Figure 6B</td>\n      <td>IB4 (control)</td>\n      <td>28.6</td>\n      <td>5.148</td>\n      <td>6</td>\n      <td rowspan=\"2\" colspan=\"2\">p=0.0018</td>\n      <td rowspan=\"6\">unpaired t-test</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IB4 (CCI)</td>\n      <td>6.791</td>\n      <td>0.4034</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>CGRP (control)</td>\n      <td>27.89</td>\n      <td>5.529</td>\n      <td>6</td>\n      <td rowspan=\"2\" colspan=\"2\">p=0.3358</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>CGRP (CCI)</td>\n      <td>21.49</td>\n      <td>3.078</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>NF200 (control)</td>\n      <td>26.76</td>\n      <td>2.737</td>\n      <td>6</td>\n      <td rowspan=\"2\" colspan=\"2\">p=0.45</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>NF200 (CCI)</td>\n      <td>33.57</td>\n      <td>8.216</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Figure 6C</td>\n      <td>IB4 (control)</td>\n      <td>10.16</td>\n      <td>2.065</td>\n      <td>6</td>\n      <td rowspan=\"2\" colspan=\"2\">p=0.1293</td>\n      <td rowspan=\"4\">unpaired t-test</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>IB4 (CCI)</td>\n      <td>6.662</td>\n      <td>0.4542</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>CGRP (control)</td>\n      <td>11.5</td>\n      <td>2.103</td>\n      <td>6</td>\n      <td rowspan=\"2\" colspan=\"2\">p=0.0895</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>CGRP (CCI)</td>\n      <td>7.212</td>\n      <td>0.8851</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>NF200 (control)</td>\n      <td>14.25</td>\n      <td>1.965</td>\n      <td>6</td>\n      <td rowspan=\"2\" colspan=\"2\">p=0.3939</td>\n      <td rowspan=\"2\">Mann-Whitney</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>NF200 (CCI)</td>\n      <td>13</td>\n      <td>4.133</td>\n      <td>6</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig2-v2.jpg)\n\n**Figure 2.:** (A) Characteristic nocifensive \u2018corkscrew\u2019 roll of larvae upon mechanical stimulation with a von Frey filament (40 mN force). (B) Quantification of nocifensive behaviour in different genotypes. Increased nocifensive responses were observed in dCirlKO and upon nociceptor-specific expression of an RNAi construct (ppk-GAL4\u00a0>UAS-dCirlRNAi). Cirl re-expression rescued the null mutant (dCirlKO ppk-GAL4\u00a0>UAS-dCirl) and Cirl overexpression (ppk-GAL4\u00a0>UAS-dCirl) reduced nocifensive responses. Raising animals at a higher temperature (29\u00b0C vs. 25\u00b0C) increases UAS/GAL4-dependent transgene expression (Duffy, 2002). Data are presented as mean and individual values (lower bar plot) and as the difference between means with 95% confidence intervals (upper dot plot). Asterisks denote level of significance, *p\u22640.05, **p\u22640.01, ***p\u22640.001.\n\n![Video 1.](https://cdn.elifesciences.org/articles/56738/elife-56738-video1.mp4.jpg)\n\nCIRL sensitizes proprioceptive ChO neurons by translating extracellular mechanical stimulation into a drop of intracellular cAMP. Lower cAMP levels, in turn, enhance the mechanically-evoked receptor potential of ChOs through a yet unresolved molecular mechanism (Scholz et al., 2017). Intriguingly, our behavioural data point towards CIRL exerting the opposite influence on nociceptive C4da neurons, whose sensitivity to mechanical stimulation is decreased by CIRL and increased in the absence of the aGPCR. A possible explanation for the antinociceptive action of CIRL is that the aGPCR also reduces cAMP in nociceptors, but that here the second messenger cascade acts on different molecular targets, i.e. specific ion channels, to produce an inverted effect. According to this model, low cAMP levels would dampen nociceptor activity. Next, we therefore asked whether increasing cAMP in C4da neurons (as may occur in dCirlKO) promotes nocifensive behaviour. Because chronic changes of cAMP levels strongly alter neuronal development (Griffith and Budnik, 2006) we selected an optogenetic approach to trigger a rapid, nociceptor-specific increase of cAMP. The bacterial photoactivated adenylyl cyclase bPAC can be genetically expressed in selected Drosophila neurons to evoke cAMP production upon blue light stimulation (Figure 3A; Stierl et al., 2011; Scholz et al., 2017). Indeed, driving bPAC in C4da neurons (ppk-GAL4\u00a0>UAS-bPAC) led to increased nocifensive behaviour during light exposure, whereas control animals showed no light-induced effects (Figure 3B; Table 2). Notably, bPAC expression also produced some irregular behaviour in the absence of photostimulation (\u2018spontaneous bending\u2019; Figure 3B), which is likely a result of the enzyme\u2019s residual dark activity (Stierl et al., 2011). Nocifensive responses were further enhanced by bPAC in dCirlKO larvae (dCirlKO ppk-GAL4\u00a0>UAS-bPAC), in line with increased cAMP levels in mutant C4da neurons. Independent support for this conclusion was received by analysing larvae carrying mutant alleles of the phosphodiesterase (PDE) dunce (Davis and Kiger, 1981). Here, pronounced nocifensive behaviour accompanies chronically elevated cAMP concentrations (Figure 3C; Table 1).\n\n**Table 2.**\n 0: no response, 1: stimulated rolling, 2: spontaneous bending, 3: spontaneous rolling.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Figure</th>\n      <th>Genotype</th>\n      <th>Mean 0</th>\n      <th>Mean 1</th>\n      <th>Mean 2</th>\n      <th>Mean 3</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Figure 3B</td>\n      <td>wild-type (dark)</td>\n      <td>47.29</td>\n      <td>52.71</td>\n      <td>0.00</td>\n      <td>0.00</td>\n      <td>203</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>wild-type (light)</td>\n      <td>48.00</td>\n      <td>52.00</td>\n      <td>0.00</td>\n      <td>0.00</td>\n      <td>200</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0bPAC (dark)</td>\n      <td>31.25</td>\n      <td>53.13</td>\n      <td>15.63</td>\n      <td>0.00</td>\n      <td>96</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0bPAC (light)</td>\n      <td>5.13</td>\n      <td>56.41</td>\n      <td>28.21</td>\n      <td>10.26</td>\n      <td>39</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KO ppk\u00a0&gt;\u00a0bPAC (dark)</td>\n      <td>0.00</td>\n      <td>70.00</td>\n      <td>26.67</td>\n      <td>3.33</td>\n      <td>30</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KO ppk\u00a0&gt;\u00a0bPAC (light)</td>\n      <td>0.00</td>\n      <td>58.06</td>\n      <td>12.90</td>\n      <td>29.03</td>\n      <td>31</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic illustration of cAMP production by bPAC. (B) Optogenetic assay. Stimulated and spontaneous nocifensive responses can be promoted and elicited, respectively, by bPAC activation in C4da neurons (blue labels, photostimulation). Larval behaviour was observed during 3 min illumination (~200 \u00b5W/mm2 at 475 nm) followed by mechanical stimulation (40 mN von Frey filament). (C) Nocifensive behaviour of PDE mutants with\u00a0~73% (dunce1) and\u00a0~35% (dunceML) residual cAMP hydrolysis rates (Davis and Kiger, 1981). (D) The adenylyl cyclase inhibitors SQ22536 and DDA (500 \u00b5M) reduce nocifensive responses to comparable levels in control and dCirlKO larvae. Data are presented as mean and individual values. Asterisks denote level of significance, ***p\u22640.001.\n\nTo further substantiate that CIRL influences nociception by acting on cAMP-dependent signalling, we inhibited the endogenous adenylyl cyclase activity by pharmacological means. Consistent with nociceptor sensitization by cAMP, dietary supplementation with the adenylyl cyclase inhibitors SQ22536 or DDA (2',3'-dideoxyadenosine) significantly decreased nocifensive behaviour of Drosophila larvae. Importantly, this treatment produced the same responses of control and dCirlKO animals to von Frey filament stimulation (Figure 3D; Table 1). This result shows that CIRL acts in the same pathway as cAMP production by the adenylyl cyclase and supports the notion that the aGPCR exerts its antinociceptive effect by lowering cAMP levels through Gi/o -mediated inhibition of adenylyl cyclase activity.\n\nNext, we used calcium imaging to directly test whether CIRL modulates the mechanically-evoked activity of nociceptors. To this end, we monitored calcium signals in C4da neurons labelled with GCaMP6m (Chen et al., 2013) during von Frey filament stimulation as previously reported (Hu et al., 2017; Figure 4\u2014figure supplement 1). Consistent with the behavioural data describing a CIRL-mediated downregulation of nociceptor function, dCirlRNAi significantly enhanced calcium responses to noxious mechanical stimulation (Figure 4A,B; Table 1). In principle, CIRL could influence the activity of C4da neurons by modulating cellular excitability or by modulating the mechanotransduction process, as is the case in touch-sensitive ChO neurons (Scholz et al., 2017). To differentiate between these possibilities, we again chose an optogenetic strategy and circumvented mechanotransduction by stimulating the nociceptors with light. Photostimulation of C4da neurons via the optimized Channelrhodopsin-2 (ChR2) variant ChR2XXM (Nagel et al., 2003; Scholz et al., 2017) triggered nocifensive behaviour, consistent with previous work (Hwang et al., 2007). Notably, dCirlKO larvae (dCirlKO ppk-GAL4\u00a0>UAS-chop2XXM) responded more strongly than controls (ppk-GAL4\u00a0>UAS-chop2XXM) over a range of different blue light intensities (475 nm; Figure 4C; Table 3). This demonstrates that CIRL decreases the excitability of mechanical nociceptors, contrasting its role in touch-sensitive neurons where the aGPCR specifically enhances mechanotransduction (Scholz et al., 2017).\n\n**Table 3.**\n 0: no photoinduced response, 1: photoinduced response.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Figure</th>\n      <th>Genotype</th>\n      <th>Mean 0</th>\n      <th>Mean 1</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Figure 4C</td>\n      <td>wild-type (10\u22123 mW/mm2)</td>\n      <td>100</td>\n      <td>0</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>wild-type (10\u22122 mW/mm2)</td>\n      <td>100</td>\n      <td>0</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>wild-type (10\u22121 mW/mm2)</td>\n      <td>100</td>\n      <td>0</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0chop2XXM (10\u22123 mW/mm2)</td>\n      <td>95</td>\n      <td>5</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0chop2XXM (10\u22122 mW/mm2)</td>\n      <td>25</td>\n      <td>75</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ppk\u00a0&gt;\u00a0chop2XXM (10\u22121 mW/mm2)</td>\n      <td>36.36</td>\n      <td>63.63</td>\n      <td>22</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dCirlKOppk\u00a0&gt;\u00a0chop2XXM (10\u22123 mW/mm2)</td>\n      <td>57.14</td>\n      <td>42.86</td>\n      <td>21</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dCirlKOppk\u00a0&gt;\u00a0chop2XXM (10\u22122 mW/mm2)</td>\n      <td>9.52</td>\n      <td>90.48</td>\n      <td>21</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>dCirlKOppk\u00a0&gt;\u00a0chop2XXM (10\u22121 mW/mm2)</td>\n      <td>0</td>\n      <td>100</td>\n      <td>20</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig4-v2.jpg)\n\n**Figure 4.:** (A) Calcium imaging of C4da axon terminals expressing GCaMP6m (ppk-GAL4\u00a0>UAS-GCaMP6m) in semi-intact larval preparations. Representative baseline (F0) and maximum calcium responses (Fmax) are shown for control and CirlRNAi animals upon von Frey filament stimulation (45 mN). Scale bar, 10 \u03bcm. (B) Average calcium traces (arrow indicates stimulation) and quantification of the signals (\u0394Fmax/F0). CirlRNAi significantly elevates mechano-nociceptive responses of C4da neurons. (C) Nocifensive responses (red) elicited via ChR2XXM-mediated photostimulation of C4da neurons in control (ppk-GAL4\u00a0>UAS-chop2XXM) and dCirlKO larvae (dCirlKO ppk-GAL4\u00a0>UAS-chop2XXM). (D) Structure of the GPS region in Drosophila CIRL (Scholz et al., 2017). The Stachel sequence (light blue) is part of the GAIN domain (blue) contained in the CTF. Conserved, mutated amino acids required for receptor autoproteolysis at the GPS are shown in red (\u22122: dCirlH>A, +1: dCirlT>A). (E) Quantification of nocifensive behaviour in dCirlT>A and dCirlH>A receptor mutants. Data are presented as mean and individual values. Asterisks denote level of significance, **p\u22640.01, ***p\u22640.001. See also Figure 4\u2014figure supplements 1 and 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig4-figsupp1-v2.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A,B) The genomic transgene dCirlN-RFP (Scholz et al., 2017) reports low protein expression levels in C4da neurons (arrows). (B) Shown are confocal images of immunohistochemical stainings against RFP (A, black; B, magenta) and the membrane marker anti-HRP (horseradish peroxidase; B, green). Scale bar 25 \u00b5m.\n\nWe further asked whether signalling to different subcellular targets may correlate with different activation mechanisms of CIRL in these two types of mechanosensory neurons. Several studies have shown that aGPCR activation can occur by means of an intramolecular tethered agonist, termed Stachel (stalk) (Liebscher et al., 2014; Monk et al., 2015; Stoveken et al., 2015, for Stachel-independent signalling see Kishore et al., 2016; Salzman et al., 2017; Sando et al., 2019). This linker sequence of approximately 20 amino acids begins at the extracellular GPCR proteolysis site (GPS) and connects the GAIN (GPCR autoproteolysis inducing) domain to the 7-transmembrane unit (Figure 4D). In order to test for a role of the Stachel sequence in activating CIRL in mechanical nociceptors, we used two established mutants. Whereas the dCirlT>A allele carries a mutation at the +1 position of the GPS within the Stachel sequence, the \u22122 mutation in the dCirlH>A allele leaves the Stachel intact but reduces protein expression (Figure 4D; Scholz et al., 2017). Our analysis of nocifensive behaviour in these mutants reported normal responses for the T\u00a0>\u00a0A allele and a CirlKO phenocopy for the H\u00a0>\u00a0A allele (Figure 4E, Table 1). Thus, C4da neurons appear to be sensitive to reduced CIRL expression, which is consistent with very low protein levels in wild-type animals (close to the detection threshold; Figure 4\u2014figure supplement 2). An intact tethered agonist, in turn, is dispensable for CIRL function in mechanical nociceptors, contrasting the situation in touch-sensitive ChO neurons, where mutating the Stachel sequence disrupts receptor function (Scholz et al., 2017). Taken together, these observations indicate that the activation mechanism of CIRL differs for the two mechanosensory submodalities.\n\nHaving established that CIRL downregulates nociceptor function under physiological conditions, we sought to investigate a pathological setting. The chemotherapeutic agent paclitaxel, employed to treat solid tumours such as ovarian or breast cancer, causes dose-limiting peripheral neuropathy in patients. Similarly, feeding Drosophila larvae paclitaxel-supplemented food induces axonal injury and degeneration of C4da neurons (Bhattacharya et al., 2012). Next, we therefore examined nocifensive behaviour in the context of this established neuropathy model. Consistent with chemotherapy-induced allodynia in humans, paclitaxel strongly enhanced nocifensive responses of control larvae (Figure 5A). We observed a comparable effect in dCirlKO animals. Overexpressing Cirl, in turn, reverted the paclitaxel-induced sensitization of C4da neurons (Figure 5A; Table 1). Thus, CIRL tones down nociceptors in both physiological and neuropathic hyperexcitable states.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig5-v2.jpg)\n\n**Figure 5.:** (A) Increased nocifensive behaviour following paclitaxel treatment (10 \u00b5M) is counteracted by overexpressing Cirl in nociceptors. (B) Example images of C4da neuron morphology upon paclitaxel administration and Cirl overexpression. Scale bars, 100 \u00b5m. (C, D) Morphometric quantification of dendritic complexity of C4da neurons in the different genotypes. Data are presented as mean and individual values. Asterisks denote level of significance, *p\u22640.05, **p\u22640.01, ***p\u22640.001.\n\nPaclitaxel administration causes structural damage to C4da neurons (Bhattacharya et al., 2012). Following paclitaxel treatment (10 \u00b5M), we observed dendrite loss in the wild-type background and in nociceptors overexpressing Cirl (Figure 5B,C; Table 1). In fact, elevated Cirl expression itself reduced the dendritic complexity of C4da neurons. Thus, increasing CIRL protein copy number counteracts the neuropathic hyperexcitability of mechanical nociceptors independently of neuropathy-associated morphological defects. Consistent with the interpretation that modulation of nociceptor physiology by CIRL is not tightly coupled to morphological changes, dCirlKO C4da neurons displayed only subtle structural alterations (Figure 5D).\n\nConsidering the evolutionary conservation of signalling pathways for nociception (Im and Galko, 2012), we next turned to a rodent model of traumatic neuropathic pain: unilateral chronic constriction injury (CCI) of the sciatic nerve (Reinhold et al., 2019). This model resembles paclitaxel-induced neuropathy in the development of thermal hypersensitivity and mechanical allodynia (Sisignano et al., 2016), i.e. a noxious reaction to innocuous stimuli like touch, reaching a maximum after one week (Figure 6A; Table 1). There are three CIRL proteins in mammals (CIRL1-3 also known as ADGRL1-3 or Lphn1-3) (Langenhan et al., 2016). According to RNA sequencing data from mouse DRG neurons, Cirl1 and Cirl3 are expressed in nociceptors (Thakur et al., 2014). We therefore investigated Cirl1 and Cirl3 expression in subpopulations of DRG neurons via in situ hybridization in the neuropathic context. Interestingly, Cirl1 mRNA probes described significantly reduced transcript levels in isolectin-B4 (IB4)-positive, non-peptidergic nociceptors one week after CCI (Figure 6B,D,E; Table 1). We observed a similar, though statistically insignificant trend in peptidergic nociceptors identified by calcitonin gene-related peptide (CGRP) staining and for Cirl3 probes\u00a0(Figure\u00a06B-E; Table 1). Notably, CCI appeared to neither affect Cirl1 nor Cirl3 gene expression in non-nociceptive, large myelinated neurons marked by neurofilament protein NF200. These correlative results are consistent with the Drosophila data linking low Cirl expression levels to nociceptor sensitization. It remains to be determined whether expression of Drosophila Cirl can be regulated physiologically to adapt or tune nociceptor sensitivity and whether activation of mammalian CIRL, in turn, can provide analgesia.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig6-v2.jpg)\n\n**Figure 6.:** (A) Traumatic injury of the sciatic nerve (CCI, green) in Wistar rats results in mechanical allodynia after one week as measured by von Frey Hairs (paw withdrawal threshold) in comparison to the contralateral side (grey). (B, C) Quantification of Cirl1 (B) and Cirl3 (C) mRNA levels in subpopulations of rat DRG neurons via in situ hybridization (RNAscope). Shown are control conditions (na\u00efve DRGs, grey) and one week after injury (green) following the emergence of allodynia. Data are presented as mean and individual values. Asterisks denote level of significance, **p\u22640.01, ***p\u22640.001. (D, E) Example images of the RNAscope assay in DRG neurons. Shown are projections of confocal stacks stained against IB4 and labelled with probes against Cirl1 and Cirl3 under control conditions (D) and CCI (E). Scale bar 20 \u00b5m.\n\n## Discussion\n\nThe sensations of touch and mechanical pain represent distinct mechanosensory submodalities, which are separated at the initial sites of mechanotransduction. Despite their important roles in health and disease, an understanding of how these mechanistically different transduction processes are carried out at the molecular level is only just beginning to emerge (Delmas et al., 2011; Julius, 2013; Murthy et al., 2017; Szczot et al., 2017; Zhang et al., 2019). Similar to mammalian DRG neurons, Drosophila nociceptors are modulated by GPCRs (Hu et al., 2017;\u00a0Kaneko et al., 2017; Herman et al., 2018) and can be negatively regulated by Gi/o signalling (Christianson et al., 2016; Honjo et al., 2016). In the present study, we provide evidence that CIRL, an evolutionarily conserved aGPCR, reduces nociceptor responses to mechanical insult in Drosophila larvae. This modulation operates in the opposite direction to the sensitization of touch sensitive neurons by CIRL (Figure 7; Scholz et al., 2015; Scholz et al., 2017). In both types of mechanosensors, these effects are connected to CIRL-dependent decreases of cAMP levels. The opposing cell physiological outcomes, in turn, likely arise from specific adjustments of different effector proteins through cAMP-signalling. Candidate effectors are mechanotransduction channels and ion channels, which are mechanically-insensitive but influence the rheobase, i.e. the threshold current of the sensory neuron (Boiko et al., 2017).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig7-v2.jpg)\n\n**Figure 7.:** Scheme summarizing how processing of different levels of mechanical force is bidirectionally modulated by CIRL\u2019s downregulation of cAMP production. Whereas low threshold mechanosensory neurons (ChOs; gentle touch) are less responsive in Cirl mutants, high threshold mechanical nociceptors (C4da neurons; harsh touch) become sensitized.\n\nThe transient receptor potential (TRP)\u00a0channel subunits NOMPC (no receptor potential, TRPN), NAN (nanchung, TRPV), and IAV (inactive, TRPV) govern mechanosensation by larval ChO neurons (Effertz et al., 2012; Lehnert et al., 2013; Zhang et al., 2013). The mechanically gated ion channel Piezo, the DEG/ENaC subunit Pickpocket, and the TRPN channel Painless, on the other hand, are required for mechanical nociception in Drosophila (Tracey et al., 2003; Zhong et al., 2010; Kim et al., 2012; Gorczyca et al., 2014; Guo et al., 2014; Mauthner et al., 2014). It is therefore conceivable that the receptor potential generated by these different mechanotransducers may be modulated in opposite directions, i.e. decreased in ChO neurons and increased in nociceptors, by cAMP/PKA (protein kinase A)-dependent channel phosphorylation. Matching our results in Drosophila, enhanced nociceptor activity in mammals has been linked to elevated cAMP levels. For example, mechanical hyperalgesia during inflammation involves cAMP-modulated HCN channels and sensitization of mammalian Piezo2 via PKA and protein kinase C (PKC)-based signalling (Emery et al., 2011; Dubin et al., 2012). Conversely, Gi/o-coupled receptors, such as opioid, somatostatin, and GABAB receptors, counteract cAMP-dependent nociceptor sensitization (Yudin and Rohacs, 2018). In addition to this second messenger pathway, G\u03b2\u03b3\u00a0subunits of Gi/o-coupled GPCRs can directly interact with ion channels. Thereby nociceptor signalling can be suppressed via activation of G protein regulated inwardly rectifying K+ channels (GIRK) or by inhibition of voltage-gated Ca2+ channels (Logothetis et al., 1987; Marker et al., 2005; Bourinet et al., 2014). Recent work has identified that CIRL2 and CIRL3 promote synapse formation in the mouse hippocampus (Sando et al., 2019). While Drosophila CIRL may also shape synaptic connectivity, our results indicate that CIRL modulates the mechanically-evoked activity of nociceptors independently of such an additional function.\n\nThe present findings show that CIRL decreases the activity of C4da neurons independently of mechanotransduction and that the aGPCR feeds into the same pathway as the adenylyl cyclase. Taken together, this strongly suggests that Gi/o coupling by CIRL regulates cAMP-dependent modulation of ion channels, which control nociceptor excitability. Work in cell culture has put forward a model in which Stachel-dependent and -independent aGPCR activation triggers different downstream signalling pathways (Kishore et al., 2016; Salzman et al., 2017). Here, we provide evidence in support of such a dual activation model in a physiological setting. The dispensability of an intact Stachel sequence in mechanical nociceptors and its necessity in touch-sensitive neurons argues for alternative activation modes of CIRL in these two types of mechanosensory neurons. This raises the intriguing possibility that such functional differentiation may be connected to specific downstream effects, e.g. Stachel-dependent, phasic modulation of mechanotransduction in ChO neurons versus Stachel-independent, tonic modulation of nociceptor excitability (Figure 7).\n\nMany genes display altered expression in DRG neurons in neuropathy (Lopes et al., 2017). For example, receptors and ion channels involved in sensitization are upregulated, whereas endogenous antinociceptive mechanisms, including opioid receptors and their peptides, are downregulated in certain neuropathy models (Herradon et al., 2008; Hervera et al., 2011). Thus, neuropathy not only enhances pro-nociceptive mechanisms but also decreases endogenous antinociceptive pathways. Our analysis of rodent DRGs indicates that neuropathy-induced allodynia correlates with reduced Cirl1 expression in IB4-positive non-peptidergic nociceptors (Fang et al., 2006), a class of neurons, which have been linked to mechanical inflammatory hypersensitivity (Pinto et al., 2019). It is therefore tempting to speculate that CIRL operates via a conserved antinociceptive mechanism in both invertebrate and mammalian nociceptors to reduce cAMP concentrations. Future work will have to test this hypothesis by examining a direct causal relation between CIRL activation and nociceptor attenuation in the mammalian peripheral nervous system and to explore whether metabotropic mechanosensing by CIRL is a possible target for analgesic therapy. Limited options for treating chronic pain have contributed to the current opioid epidemic (Skolnick and Volkow, 2016). Opioids are powerful analgesics but have severe side effects and lead to addiction mainly through activation of receptors in the central nervous system. There is thus a strong incentive to develop novel peripherally acting pain therapeutics.\n\nThe specificity theory, put forward more than 100 years ago (Sherrington, 1906), defines nociceptors as a functionally distinct subtype of nerve endings, which are specifically tuned to detect harmful, high-intensity stimuli. The results reported in the present study are consistent with this validated concept and identify a physiological mechanism, which contributes to the functional specialization. On the one hand, CIRL helps set the high activation threshold of mechanical nociceptors, while on the other hand, CIRL lowers the activation threshold of touch sensitive neurons (Figure 7). This bidirectional adjustment, attributable to cell-specific effects of cAMP, moves both submodalities further apart and sharpens the contrast of mechanosensory signals carrying different information.\n\n## Materials and methods\n\n### Drosophila experiments\n\n#### Fly stocks\n\nAnimals were raised at 25\u00b0C on standard cornmeal and molasses medium. The following fly strains were used in this study:\n\n#### Immunohistochemistry\n\nStainings of the dCirlpGAL4- and ppk-positive neurons (Figure 1) and CIRLN-RFP (Figure 4\u2014figure supplement 2) were performed essentially as previously reported (Ehmann et al., 2014). Third instar larvae were dissected in cold PBS, fixed in 4% paraformaldehyde for 10 or 40 min at room temperature (RT), washed 3 x for 10 min in 0.3% PBT (PBS with 0.3% Triton X-100, Sigma-Aldrich) and blocked for 30 min in 0.3% PBT supplemented with 5% normal goat serum (NGS). The preparations were incubated with primary antibodies (diluted in 0.3% PBT with 5% or 3% NGS) at 4\u00b0C overnight. After washing 6 x for 10 min with 0.3% PBT, the samples were incubated with secondary antibodies (diluted in 0.3% PBT with 5% or 3% NGS) for 120 min at RT or at 4\u00b0C overnight. Following 6 \u00d7 10 min washing steps with 0.3% PBT, the preparations were immersed in Vectashield (Vector Laboratories) and stored for at least one night at 4\u00b0C. The following primary antibodies were used: mouse-\u03b1-GFP (1:200; Sigma-Aldrich, SAB4200681; RRID:AB_2827519), rabbit-\u03b1-RFP (1:200; antibodies-online, ABIN129578; RRID:AB_10781500). Secondary antibodies: Alexa Fluor-488-conjugated goat-\u03b1-mouse (1:250; Invitrogen, A-11001; RRID:AB_2534069), Cy3-conjugated goat-\u03b1-rabbit (1:250; Jackson ImmunoResearch, 111-165-003; RRID:AB_2338006), Alexa Fluor-647 goat- \u03b1-rabbit (1:250; Invitrogen, A-21246; RRID:AB_2535814), and \u03b1-HRP conjugated with Alexa488 (1:250; Jackson ImmunoResearch, 123-545-021;\u00a0RRID:AB_2338965). Samples were mounted in Vectashield and confocal images (Figure 1, Figure 4\u2014figure supplement 2) were acquired with a LSM 800 (Zeiss) and a Leica TCS SP5. Intensity and contrast were set using Fiji (Schindelin et al., 2012) and Photoshop CC 2018 (Adobe).\n\n#### Nociceptor morphometry\n\nFor analyses of C4da neuron morphology, staged third instar larvae (96\u00a0\u00b1\u00a03 hr after egg laying, AEL), raised in density-controlled vials, were mounted in halocarbon oil. Confocal images of photoprotein signals (ppk-GAL4\u00a0>UAS-CD4::tdGFP or UAS-CD4::tdTomato) were collected with a Zeiss LSM700 laser scanning microscope. Image stacks with a Z step size between 0.5\u00a0and\u00a02 \u03bcm were acquired from abdominal segment A5 with a 20\u00d7/0.8 objective and quantified with Imaris (Bitplane) using the filament tracer tool.\n\n#### Nocifensive behaviour\n\nFor mechanical nociception assays, wandering third instar larvae were collected in a sylgard covered Petri dish and stimulated with a 40 mN von Frey filament (made from fishing line, 0.22 mm diameter, Caperlan; calibrated with a precision balance). A single noxious mechanical stimulus was rapidly delivered to midabdominal segments (~A4\u2013A6) on the dorsal side of the larva. A positive response was scored if stimulation elicited at least one nocifensive corkscrew body roll. For all behavioural experiments each animal was tested only once. The adenylyl cyclase inhibitors SQ22536 and DDA were added to the food (giving final concentrations of 500 \u00b5M) one day prior to the experiments (Figure 3D). All data were collected from at least seven trials (N, Table 1) each sampling 6\u201353 larvae.\n\n#### Calcium imaging\n\nCalcium imaging of C4da axon terminals was performed as previously described (Figure 4\u2014figure supplement 1; Hu et al., 2017). Briefly, staged third instar larvae (96\u00a0\u00b1\u00a03 hr AEL) were pinned on a Sylgard (Dow Corning) plate and partially dissected in physiological saline to expose the ventral nerve cord (VNC). C4da neuron axon terminals expressing GCaMP6m were live-imaged by confocal microscopy with a 40\u00a0\u00d7\u00a0water objective (Olympus FV1000MP) with 3x zoom to image at least four segments ensuring the calcium response could be detected. Activation of sensory neurons was achieved by providing a mechanonociceptive cue using a micromanipulator-mounted von Frey filament (45 mN) for stimulation of midabdominal segments (A3\u2013A5). The most robust responses to local von Frey filament stimulation are restricted to a single VNC hemisegment corresponding to the stimulation site on the body wall although the adjacent segment(s) could also be slightly activated. The transient dip in fluorescence intensity (Figure 4B) is due to the larval brain moving out of focus briefly during and after mechanical stimulation. Baseline (F0) and relative maximum intensity change (\u0394Fmax) of GCaMP6m fluorescence were analysed.\n\n#### Optogenetics\n\n##### bPAC\n\nLarvae were placed in a drop of water on a Sylgard-coated Petri dish and monitored with a stereomicroscope (Olympus SZX16). After applying blue light (~200 \u00b5W/mm2 at 475 nm) for 3 min, the animals were mechanically stimulated with a von Frey filament (see above). Each larva was scored according to the following criteria. no response: no nocifensive or irregular behaviour during light or upon mechanical stimulation; stimulated rolling: no nocifensive or irregular behaviour during light, corkscrew body roll upon mechanical stimulation; spontaneous bending: head-swinging or bending during light; spontaneous rolling: corkscrew body roll during light. For each set of experiments, three larvae were analysed simultaneously and each animal was tested only once. In Table 2, N refers to the number of individuals tested.\n\n##### ChR2XXM\n\nLarvae were placed in a Petri dish and illuminated with blue light (either\u00a0~10\u22121 mW/mm2,\u00a0~10\u22122 mW/mm2, or\u00a0~10\u22123 mW/mm2 at 475 nm) for 30 s. Each larva was scored according to the following criteria. No photoinduced response: no nocifensive or irregular behaviour during light exposure; photoinduced response: nocifensive responses such as massive head-swinging, bending, or corkscrew body roll during light exposure. For each experiment, two or three larvae were analysed simultaneously and each animal was tested only once. In\u00a0Table 3, N refers to the number of individuals tested. Larvae were raised on food supplemented with 100 \u00b5M all-trans-retinal (Sigma-Aldrich).\n\n#### Drosophila neuropathy model\n\nDMSO (dimethyl sulfoxide, vehicle, Sigma Aldrich) or paclitaxel (S1150 Absource Diagnostics, dissolved in DMSO) were carefully mixed into the food vials once\u00a0~90% of first instar larvae had hatched. This way, paclitaxel treatment (10 \u00b5M) occurred after completion of neurogenesis and axonal pathfinding (Bhattacharya et al., 2012).\n\n### Rat experiments\n\n#### Traumatic neuropathy (Chronic constriction injury, CCI)\n\nAnimal care and protocols were performed in accordance with international guidelines for the care and use of laboratory animals (EU Directive 2010/63/EU for animal experiments) and were approved by the Government of Unterfranken (protocol numbers 2\u2013733 and 2\u2013264). Humane endpoints and criteria for discontinuation of the experiments with approved score sheets were defined, and the animals were treated accordingly. Animal studies were reported according to the ARRIVE guidelines (McGrath and Lilley, 2015). Male Wistar rats (200\u2013250 g, Janvier labs, Le Genest-St-Isle, France) were housed in groups of six on dry litter (12 hr:12 hr light/dark cycle, 21\u201325\u00b0C, 45\u201355% humidity) with food and water ad libitum. All experiments were performed during the light phase and equal test groups (n\u00a0=\u00a06) were planned. Surgery of the Wistar rats was performed under deep isoflurane anaesthesia (1.8 Vol%, fiO2). After skin incision and exposure of the sciatic nerve by blunt preparation, four loose silk ligatures were made (Perma Silk 6.0, Ethicon Inc) with approximately 1 mm spacing in between (Sauer et al., 2017). After loosely tightening the ligatures, the skin was stitched (Prolene 5.0, Ethicon Inc). Animals were euthanized with CO2 at the end of the experiment.\n\n#### Mechanical nociceptive thresholds\n\nA series of von Frey filaments (Aesthesio set, Ugo Basile) were used to record the withdrawal threshold of the hind paw to identify the mechanical allodynia response (Lux et al., 2019) and touch sensitivity in neuropathy. Filaments were applied to the plantar surface of the hind paw and held for 1\u20133 s, until they were bent to a 45\u00b0 angle. Each paw received stimuli with different filament forces, with a 30 s recovery period between each application. The 50% paw withdrawal threshold for von Frey filament responses was determined using Dixon\u2019s up and down method (Dixon, 1980).\n\n#### In situ hybridization and immunohistochemistry\n\nAfter euthanizing the rats, DRGs were harvested, embedded in Tissue-Tek O.C.T. Compound (Sakura Finetek Europe B.V.), snap frozen in liquid nitrogen, and stored at \u221280\u00b0C. 10 \u00b5m thick cryosections were cut at \u221220\u00b0C (CM3050 S Research Cryostat, Leica Biosystems) and the slides were stored at \u221280\u00b0C until further use. For fixation, tissue sections were placed in precooled 4% PFA in DEPC (diethyl pyrocarbonate)-treated distilled water. Following washing steps with DEPC-treated reagents, probes for rat ADGRL1 and ADGRL3 (tagged with Cy3 and Cy5, respectively) were added for the RNAscope fluorescent multiplex assay (Advanced Cell Diagnostics, Inc), which was performed according to the manufacturer\u2019s instructions (document 320293-USM). After 15 min of incubation at 4\u00b0C the samples were dehydrated in ethanol at RT (50%, 70%, 100%, 100%; 5 min each). Hydrophobic barriers measuring approximately the same area, were drawn around the tissue sections and allowed to dry completely. Afterwards, each section was incubated with two drops of RNAscope Protease IV reagent (15 min at RT). Following the RNAscope assay, samples were washed, blocked with 10% donkey serum in PBS (1 hr at RT), and counterstained with neuronal markers (diluted in 10% donkey serum in PBS and added for two nights at 4\u00b0C). Non peptidergic nociceptors: isolectin B4 (IB4)-FITC conjugate (1:200, Sigma-Aldrich, L2895); large myelinated mechanosensors and proprioceptors: rabbit anti-NF200 (1:200, Sigma-Aldrich, RRID:AB_477272); peptidergic nociceptors: mouse anti-CGRP (1:150, Abcam, RRID:AB_1658411). Following incubation, the sections were washed and secondary antibodies were added (diluted in PBS and incubated for 1 hr at RT). For CGRP: donkey anti-mouse AlexaFluor488 (1:1000, Life Technologies, RRID:AB_141607), for NF200: donkey anti-rabbit AlexaFluor488 (1:1000, Life Technologies, RRID:AB_141708). After washing, the slides were mounted in Vectashield, dried for 15 min at RT, and stored at 4\u00b0C until imaging (<24 hr). All images were acquired in one session by confocal microscopy (Olympus FV1000) with a 20\u00d7/0.75 objective (Olympus UPlan SAPO) using the same parameters for z-stacks (1 \u00b5m step size) of Cy3 and Cy5 channels.\n\n#### Image evaluation\n\nImages were processed with Fiji (Schindelin et al., 2012) by scientists blinded to the test groups. The markers of neuronal subpopulations were used to identify complete and distinguishable cells as regions of interest (ROIs) for further analysis. Thresholds were applied to maximal projections of confocal z-stacks for Cy3 (grey value 1200) and Cy5 (grey value 1150) signals (this procedure was also used for the example images in Figure 6D,E). Elements between 3 and 22 pixels in size, defined as mRNA clusters, were quantified for each channel following background subtraction. An independent approach based on computational image evaluation gave comparable results (data not shown). Here, a convolutional neural network (DeepFLaSh) (Segebarth et al., 2020) was trained with six images for each neuronal marker (NF200, IB4, CGRP) and then used to identify Cy3 and Cy5 clusters.\n\n### Statistics\n\nData were analysed with Prism 8.2 (GraphPad). Group means were compared by an unpaired two- tailed t-test, unless the assumption of normal sample distribution was violated, in which case group means were compared by a nonparametric Mann\u2013Whitney rank sum test. To compare more than two groups an ordinary one-way ANOVA with Tukey correction (normal distribution) or a Kruskal\u2013Wallis test (not normally distributed) were used.\n",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "432a0ce4-cba9-4132-b023-5577888edf94",
+      "submission_id": "35c4da68-5140-4b4a-ade2-67c59890717f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hugo J Bellen, Baylor College of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56738.sa1](https://doi.org/10.7554/eLife.56738.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYou provide compelling evidence that aGPCR is expressed in high-threshold mechanosensory neurons where it regulates nocifensive (pain-like) behaviors. The systemic ablation of cirl, or its specific knockdown in nociceptive neurons, leads to an enhanced nocifensive response, whereas overexpression of the gene elicits an attenuated response. You also provide evidence that vertebrate chronic pain models are associated with diminished expression of the cirl homologs, indicating a potential role in the onset of chronic and pathological pain in vertebrates. Based on these observations the three reviewers agree that your manuscript is appropriate for eLife.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for choosing to send your work, \"Antinociceptive modulation by the adhesion-GPCR CIRL promotes mechanosensory signal discrimination\", for consideration at eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. Although the work is of interest, we regret to inform you that the findings at this stage are too preliminary for consideration at eLife at this time.\n\nThe reviewers felt that the data are interesting but have raised many concerns that will require additional experiments. We realize that at this time, during COVID, most labs are not open and you will not be able to do these experiments. For these reasons, we will give you the option of either going to a different journal entirely, or coming back to eLife with a substantially revised version at some point in the future. If you come back to eLife, we would consider that a new submission but would do everything we can to engage the same reviewers for this process.\n\nWe do not intend any criticism of the quality of the data or the rigor of the science. We wish you good luck with your work and we hope you will consider eLife for future submissions.\n\nReviewer #1:\n\nIn a study that is a follow-up of the original characterization of CIRL in Drosophila mechanotransduction, Dannh\u00e4user et al. demonstrate that the aGPCR is also expressed in high-threshold mechanosensory neurons where it regulates nocifensive (pain-like) behaviors. The authors demonstrate that owing to its coupling with Gi, CIRL lowers cAMP levels in a cell autonomous manner. Either the systemic ablation of cirl, or its specific knockdown in nociceptive neurons, led to an enhanced nocifensive response, whereas overexpression of the gene in those same neurons elicited an attenuated response. The authors claim CIRL influences the overall activity of the nociceptive neurons, an argument based on Ca2+ imaging of nociceptive neurons. Finally, the authors provide experimental evidence that vertebrate chronic pain models are associated with diminished expression of the cirl homologs, which suggests a potential role in in the onset of chronic and pathological pain in vertebrates.\n\nOn the whole the manuscript is well written and makes good use of Drosophila as a model to examine the neurogenetics of nociception. There are, however, some concerns that diminish enthusiasm and need to be addressed before publication in ELife.\n\n1) The authors make no reference to the ligand that is needed for the activation of CIRL in the context of nocifensive behavior. They write that CIRL is activated by a tethered protein ligand encoded by Strachel. Have they not examined whether deletion or knockdown of Strachel leads to similar nocifensive phenotypes? Given that ligand-induced activation of GPCRs is central to our understanding of biological function of those receptors, identification of ligand is critical to the proposed model. This reviewer appreciates the difficulties associated with de novo identification of GPCR ligands, and is not asking for a full examination. However, the role for Strachel in nocifensive behavior can and should be examined.\n\n2) In the Ca2+ imaging data shown in Figure 4 it appears that the authors are imaging regions of the larval brain that harbor the axon termini of nociceptive neurons. They argue that the response amplitudes are larger in following cirl knockdown. These data are not compelling for several reasons. First, the observed Ca2+ responses are probably a function of the pressure applied to the periphery of the animals. Given the involvement of second messengers that typically amplify signals, minute variations in the pressure of the initial 'poke' could elicit Ca2+ responses of wildly different amplitudes. How can the authors know that the location and pressure of the stimulus is comparable between different data points? Second, control animals show increased GCaMP signals in segments A3 and A4, whereas the mutant animals show responses in A4 and A5. Which segments were stimulated in these recordings, and did the responses correlate with the segments that were stimulated? Third, the data should be presented as Ca2+ traces (amplitudes vs. time) so that readers can evaluate the temporal relationships between stimulation and Ca2+ elevation. Fourth, the authors should indicate the frequency of spontaneous activity at the axon termini.\n\n3) The authors demonstrate that in mice with sciatic ligatures, expression of the homologs of cirl decreases. This is a very interesting finding that could be of broad interest to the field of chronic pain. Can the authors provide any evidence that the knockdown of cirl homologs in DRG neurons is associated with an increase in cAMP levels or cAMP-dependent signalling? Is the knockdown of cirl homologs in DRG neurons sufficient to trigger hyperexcitability of elevated Ca2+ responses?\n\n4) A minor textual issue relates to the authors' statement that CIRL modulates the processing of innocuous and noxious stimuli a bidirectional manner. In the opinion of this reviewer, this statement is not fully accurate. In both populations of neurons, CIRL couples to Gi such that engagement of the agonist leads to a decrease in cAMP levels. The molecular function of CIRL \u2013 lowering cAMP levels \u2013 is the same in both populations. The difference in behavior is a function of the neuron type under consideration. In one population, lowering cAMP leads to increased activity whereas the same signal correlates with decreased activity in the other population. If anything, it is cAMP that modulates the processing of innocuous and noxious stimuli a bidirectional manner. Any receptor that mimics CIRL in the regulation of cAMP in those neurons would elicit the similar behaviors. If the authors agree with this notion, they should consider rewording the relevant portions of the manuscript.\n\n5) Another minor comment relates to the use of the term, \"quenches.\" Gi activation decreases the activity of AC leading to a decrease in the synthesis of cAMP. This is not equivalent to a \"quench\", a term that implies the breakdown of cAMP molecules already present in the cell. It is recommended that the authors change the text suitably.\n\nReviewer #2:\n\nThis study by Dannhauser et al. investigates the function of the adhesion GPCR Cirl in modulating nociceptive signalling in pain-sensing neurons in the Drosophila periphery. Building from a previous study published in eLife in which the authors demonstrated that Cirl worked to sensitize sensory responses in low-threshold mechanosensory neurons, this group now characterizes the function of Cirl in nociceptive neurons. As such, this study is well suited as a Research Advance. Using a combination of genetic manipulations, behavioral assays, and functional imaging, the authors show that Cirl essentially functions similarly in nociceptive neurons as it does in mechanosensory neurons, working to reduce cAMP levels. However, the downstream signal transduction machinery in nociceptive neurons apparently interprets the Cirl-dependent reduction in cAMP levels differently, ultimately diminishing the response of nociceptors to mechanical stimulation. Rather than Cirl itself functioning differently between touch and pain neurons, it appears that it is the downstream cAMP signal transduction machinery that operates in different ways.\n\nThe demonstration that the same signal transduction molecules can be interpreted differently by distinct cell types is not particularly surprising, as this has been well understood for decades in diverse fields (developmental patterning, axon guidance, etc). Importantly, Cirl levels are capable of bi-directionally tuning the sensitivity of nociceptive neurons, and the optogenetic experiments manipulating cAMP levels along with the calcium imaging serve to link Cirl-dependent signalling to neuronal output. Overall, this is an interesting study, the manuscript is well written and nicely sets up the framework and significance of the findings. What is missing is an understanding of to what extent CIRL is a target for physiological modulation of nociception in Drosophila \u2013 i.e., in what context and how would Cirl-dependent signalling adaptively (or maladaptively) calibrate the sensitivity of mechanosensation in touch and/or nociception? Similar to the previous study, it is also not clear how cAMP levels are transformed to specific changes in mechanosensitivity. Given the understandable efforts to avoid imposing additional experiments during this time of covid-19 precautions, I would suggest the following to improve the manuscript.\n\n1) Physiological signals that regulate CIRL-mediated modulation of nociception: The rat data shown in Figure 6 is used by the authors to argue that Cirl1 may function in mammals similarly to Drosophila: \"these correlative results are consistent with the Drosophila data linking low Cirl expression levels to nociceptor sensitization\": This language is problematic, as the authors have not shown that downregulation of Cirl expression is an actual mechanism used in vivo in Drosophila to sensitize nociception. Rather, the authors have deliberately manipulated Cirl expression and observed sensitization. This holds true for the experiments in Figure 5 using the paclitaxel assay as well. However, in the rat experiment, the authors seem to imply an endogenous signalling system that ultimately served to reduce Cirl expression in response to chronic activation of neuropathic pain. The authors should make clear these distinctions and the lack of evidence from their Drosophila studies that Cirl activity is directly modulated to calibrate pain sensitivity.\n\nThe authors should also show the primary in situ hybridization images used for quantification in Figure 6 so readers can assess the data.\n\n2) Re-framing the understanding of Cirl and cAMP signalling: Throughout this study, the authors really demonstrate that Cirl functions similarly in nociceptors and low-threshold mechanosensitive neurons \u2013 in both neuronal subtypes, Cirl functions to reduce cAMP signalling. Ultimately, is it simply the signal transduction downstream of cAMP that is unique to the two cell types, not Cirl itself. The authors do a good job of suggesting that the distinctions may be in the separate mechanosensitive proteins expressed in the neuronal subtypes in the Discussion. But at minimum the authors should make it clear that 1) Cirl functions similarly in both neurons to reduce cAMP signalling and 2) there is no evidence yet that Cirl-related signalling actually changes to adapt or tune mechanosensitivity in Drosophila.\n\nReviewer #3:\n\nThe authors examine the role of an adhesion GPCR dCirl in the function of the nociceptive neurons of the Drosophila larva. They show 1) that a reporter for dCirl is expressed in the cIVda nociceptors, 2) mutants for dCirl show hypersensitive mechanical nociception behaviors and the reverse is seen with dCirl over expression. 3) There is elevated Ca in the axon terminals is observed upon mechanical stimulation. 4) increasing cAMP in the neurons via an optogenetic sensitizes nociception responses 5) manipulating dCirl levels affects nociceptor branching 6) dCirl over expression reduces paclitaxel induced hyperalgesia 7) mammalian Cirl genes are down regulated in rats with sciatic nerve ligation injury. Overall, the data appear to be quite robust and the authors do make a convincing case that dCirl negatively regulates the sensitivity of the nociceptive neurons. Nevertheless, the paper is largely descriptive and provides little mechanistic understanding of how the phenotype actually occurs. Neither the mechanisms of how dCirl may be activated in the nociceptors nor the downstream effectors of its action have been determined. The rat experiments seem gratuitously added on and the paclitaxel experiments also provide little insight.\n\nThe authors find that dCirl negatively regulates nociceptor excitability and their prior studies found that dCirl has the opposite effect in chordotonal organs. Based on this they claim that they report \"a new molecular principle underlying the processing of mechanical input.\" This is a vastly overstated claim as it is extremely well understood that same GPCR can have opposing effects in different contexts depending on the downstream effectors. Most GPCRs can be coupled to various G \u03b1 subunits and therefore can have variable effects in different cell-types. As well, signalling can occur through \u03b2-arrestin, GRKs, Srcs etc\u2026 the present study does little to address the mechanism of the opposing effects of dCirl in Cho's vs. cIVda neurons.\n\ndCirlKO enhances the effects of increasing cAMP in the neurons may indicate dCirl loss is increasing cAMP but it could also indicate a parallel pathway. Epistasis experiments of the dCirlKO are needed to resolve this issue.The authors really should investigate the effects of dCirl on thermal nociception and optogenetic triggered to determine if the effect is specific to mechanical nociception or to excitability of the cells in general.\n\nPrior literature in the field that has implicated GPCR signalling in the Drosophila nociception pathways needs to be cited and incorporated into the Discussion:\n\nKaneko et al., 2017; Herman et al., 2018; Honjo et al., 2016 (found G \u03b1 o as a negative regulator of thermal nociception); Christianson, Mauthner and Tracey, 2016 (found G \u03b1 o as a negative regulator of mechanical nociception).\n",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3ae909e4-ec9e-4332-96ee-ebe1e7a130be",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C1",
+      "claim": "CIRL is expressed in Drosophila larval chordotonal organs (ChOs), mechanosensory structures that respond to gentle touch, sound, and proprioceptive input.",
+      "claim_type": "EXPLICIT",
+      "source": "CIRL (ADGRL/Latrophilin, Lphn), one of the oldest members of the aGPCR family, is expressed in the neuronal dendrites and cilia of Drosophila larval chordotonal organs (ChOs), mechanosensory structures that respond to gentle touch, sound, and proprioceptive input (Kernan, 2007; Scholz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Kernan, 2007; Scholz et al., 2015) that established CIRL expression in ChOs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "5b2ec852-b265-4910-bf58-4dbf7058e28e",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C2",
+      "claim": "Mechanical stimulation of CIRL triggers a conformational change of the protein and activation via its tethered agonist (Stachel).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, mechanical stimulation of CIRL triggers a conformational change of the protein and activation via its tethered agonist (Stachel) (Liebscher et al., 2014; Stoveken et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies (Liebscher et al., 2014; Stoveken et al., 2015) that demonstrated the tethered agonist activation mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "1e30493f-2b25-44e2-8ca0-dad86d1fcd48",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C3",
+      "claim": "Signalling by activated CIRL reduces intracellular cAMP levels in chordotonal organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Signalling by the activated receptor reduces intracellular cAMP levels, which in turn sensitizes ChO neurons and potentiates the mechanically-evoked receptor potential (Scholz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Scholz et al., 2017) that demonstrated CIRL's effect on cAMP levels in ChO neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "5aab0eaf-6397-43d1-a27f-bfa2d2e5ad8b",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C4",
+      "claim": "CIRL sensitizes ChO neurons and potentiates the mechanically-evoked receptor potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Signalling by the activated receptor reduces intracellular cAMP levels, which in turn sensitizes ChO neurons and potentiates the mechanically-evoked receptor potential (Scholz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Scholz et al., 2017) that demonstrated CIRL's sensitizing effect on ChO neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "006768a0-3b4c-4de7-9bf5-ce3476e0d541",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C5",
+      "claim": "Cirl is transcribed in md neurons in addition to ChOs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work demonstrated prominent expression of Cirl in ChOs, where it modulates sensory processing of innocuous mechanical stimuli (Scholz et al., 2015; Scholz et al., 2017). In addition, Cirl transcription was also noted in md neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Scholz et al., 2015; Scholz et al., 2017) that noted Cirl transcription in md neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "1e30fc56-4111-42b9-ab9b-3ae0092e3b1f",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C6",
+      "claim": "C4da neurons are polymodal nociceptors that respond to noxious temperatures, intense light, and harsh mechanical touch.",
+      "claim_type": "EXPLICIT",
+      "source": "Motivated by this observation, we now turned our attention to C4da neurons: polymodal nociceptors, which respond to noxious temperatures, intense light and, importantly, harsh mechanical touch (Tracey et al., 2003; Xiang et al., 2010; Zhong et al., 2010; Zhong et al., 2012; Kim et al., 2012; Kim and Johnson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations (Tracey et al., 2003; Xiang et al., 2010; Zhong et al., 2010; Zhong et al., 2012; Kim et al., 2012; Kim and Johnson, 2014) that characterized C4da neurons as polymodal nociceptors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "bce5ba81-dab5-4ba3-9fed-e8d5a178172c",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C7",
+      "claim": "Cirl is expressed in both ppk-negative ChOs and ppk-positive C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This setting revealed Cirl transcription in both ppk-negative ChOs and ppk-positive C4da neurons (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1, which displays immunohistochemical staining showing Cirl promoter-driven expression in both ChOs and C4da neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "54accfa0-540a-407f-b9b0-850968f8ef97",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C8",
+      "claim": "Cirl null mutants (dCirlKO) show significantly increased nocifensive behaviour compared to control larvae when stimulated with a 40 mN von Frey filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanical stimulation with a 40 mN von Frey filament triggered nocifensive behaviour in 53% of control larvae. In contrast, Cirl null mutants (dCirlKO) showed significantly increased nocifensive behaviour and responded in 75% of the trials (Figure 2B; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data presented in Figure 2B and Table 1, showing quantified nocifensive responses in control vs. dCirlKO larvae.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "074e89f8-cbd6-4f3c-9d47-7475a8f33036",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C9",
+      "claim": "Knocking-down Cirl levels specifically in C4da neurons via RNA-interference (ppk-GAL4 >UAS-dCirlRNAi) phenocopies the Cirl null mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking-down Cirl levels specifically in C4da neurons via RNA-interference (RNAi; ppk-GAL4 >UAS-dCirlRNAi) delivered a mutant phenocopy and re-expressing Cirl in nociceptors rescued the mutant phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing that RNAi knockdown in C4da neurons produces the same phenotype as the null mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "e259bde5-1962-4d9a-8a9c-e652c9ad9907",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C10",
+      "claim": "Re-expressing Cirl in nociceptors rescues the dCirlKO mutant phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking-down Cirl levels specifically in C4da neurons via RNA-interference (RNAi; ppk-GAL4 >UAS-dCirlRNAi) delivered a mutant phenocopy and re-expressing Cirl in nociceptors rescued the mutant phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing genetic rescue of the mutant phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "a139c3e9-2de8-4e6f-9d3a-2b75be96b331",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C11",
+      "claim": "Cirl overexpression in C4da neurons results in diminished nocifensive responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Cirl overexpression had the opposite effect resulting in diminished nocifensive responses (Figure 2B; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data presented in Figure 2B and Table 1, showing reduced nocifensive behavior with Cirl overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "8f9ca8a2-1b38-4acb-b60c-144a928ccc23",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C12",
+      "claim": "CIRL curtails mechanical nociception by carrying out a cell-autonomous, dose-dependent function in C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that CIRL curtails mechanical nociception by carrying out a cell-autonomous, dose-dependent function in C4da neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing that Cirl knockdown, knockout, and overexpression in C4da neurons produce dose-dependent effects on nocifensive behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "051de110-cc9d-4a6c-af05-a958295db353",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C13",
+      "claim": "Optogenetic activation of bPAC in C4da neurons (ppk-GAL4 >UAS-bPAC) leads to increased nocifensive behaviour during blue light exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, driving bPAC in C4da neurons (ppk-GAL4 >UAS-bPAC) led to increased nocifensive behaviour during light exposure, whereas control animals showed no light-induced effects (Figure 3B; Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data presented in Figure 3B and Table 2, showing light-induced nocifensive behavior in bPAC-expressing larvae.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "9fbbfa5b-a5b5-4bab-ba94-d1028dbea01f",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C14",
+      "claim": "bPAC expression produces some irregular behaviour in the absence of photostimulation ('spontaneous bending'), likely due to the enzyme's residual dark activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, bPAC expression also produced some irregular behaviour in the absence of photostimulation ('spontaneous bending'; Figure 3B), which is likely a result of the enzyme's residual dark activity (Stierl et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observation (Figure 3B) and a citation to prior work (Stierl et al., 2011) characterizing bPAC's dark activity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "a8616506-7f54-4146-9989-f2c34a503c6e",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C15",
+      "claim": "Nocifensive responses are further enhanced by bPAC in dCirlKO larvae (dCirlKO ppk-GAL4 >UAS-bPAC), consistent with increased cAMP levels in mutant C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Nocifensive responses were further enhanced by bPAC in dCirlKO larvae (dCirlKO ppk-GAL4 >UAS-bPAC), in line with increased cAMP levels in mutant C4da neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing additive effects of bPAC and Cirl mutation, and inferred to be consistent with elevated cAMP in the mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "df0ce2ea-9323-4b1d-90fc-9368d3dcf882",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C16",
+      "claim": "Larvae carrying mutant alleles of the phosphodiesterase dunce show pronounced nocifensive behaviour that accompanies chronically elevated cAMP concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent support for this conclusion was received by analysing larvae carrying mutant alleles of the phosphodiesterase (PDE) dunce (Davis and Kiger, 1981). Here, pronounced nocifensive behaviour accompanies chronically elevated cAMP concentrations (Figure 3C; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data presented in Figure 3C and Table 1, and a citation to prior work (Davis and Kiger, 1981) characterizing dunce mutants.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "09850f7e-2ed4-48a9-9f30-aef95a33e89e",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C17",
+      "claim": "The adenylyl cyclase inhibitors SQ22536 and DDA significantly decrease nocifensive behaviour of Drosophila larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with nociceptor sensitization by cAMP, dietary supplementation with the adenylyl cyclase inhibitors SQ22536 or DDA (2',3'-dideoxyadenosine) significantly decreased nocifensive behaviour of Drosophila larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing reduced nocifensive behavior with adenylyl cyclase inhibitor treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "ebb21836-d06e-419d-ba28-db4d3674d472",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C18",
+      "claim": "Adenylyl cyclase inhibitor treatment produces the same nocifensive responses in control and dCirlKO animals to von Frey filament stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this treatment produced the same responses of control and dCirlKO animals to von Frey filament stimulation (Figure 3D; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data presented in Figure 3D and Table 1, showing that adenylyl cyclase inhibition eliminates the difference between control and mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "b6890896-6a25-4d68-8410-f8c7b8d81c6a",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C19",
+      "claim": "CIRL acts in the same pathway as cAMP production by the adenylyl cyclase.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that CIRL acts in the same pathway as cAMP production by the adenylyl cyclase and supports the notion that the aGPCR exerts its antinociceptive effect by lowering cAMP levels through Gi/o -mediated inhibition of adenylyl cyclase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental result that adenylyl cyclase inhibition eliminates the phenotypic difference between control and dCirlKO animals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "039a1216-119c-4e94-a811-e232210ae427",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C20",
+      "claim": "CIRL exerts its antinociceptive effect by lowering cAMP levels through Gi/o-mediated inhibition of adenylyl cyclase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that CIRL acts in the same pathway as cAMP production by the adenylyl cyclase and supports the notion that the aGPCR exerts its antinociceptive effect by lowering cAMP levels through Gi/o -mediated inhibition of adenylyl cyclase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple experimental results showing that CIRL acts in the cAMP pathway and that elevated cAMP increases nociceptor activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "9269ee92-649e-4643-9b90-0cd030e43613",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C21",
+      "claim": "dCirlRNAi significantly enhances calcium responses to noxious mechanical stimulation in C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the behavioural data describing a CIRL-mediated downregulation of nociceptor function, dCirlRNAi significantly enhanced calcium responses to noxious mechanical stimulation (Figure 4A,B; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by calcium imaging data presented in Figure 4A,B and Table 1, showing increased GCaMP6m signals in dCirlRNAi neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "fad3084b-cafb-488c-b76d-44279cf46858",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C22",
+      "claim": "dCirlKO larvae respond more strongly than controls to photostimulation of C4da neurons via ChR2XXM over a range of different blue light intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, dCirlKO larvae (dCirlKO ppk-GAL4 >UAS-chop2XXM) responded more strongly than controls (ppk-GAL4 >UAS-chop2XXM) over a range of different blue light intensities (475 nm; Figure 4C; Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by optogenetic experimental data presented in Figure 4C and Table 3, showing dose-dependent photoinduced responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "41350869-5e1b-4fbd-b63a-9a2d5ccaaeee",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C23",
+      "claim": "CIRL decreases the excitability of mechanical nociceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that CIRL decreases the excitability of mechanical nociceptors, contrasting its role in touch-sensitive neurons where the aGPCR specifically enhances mechanotransduction (Scholz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the optogenetic experiment showing that CIRL affects responses to direct neuronal activation (bypassing mechanotransduction), and contrasted with prior work (Scholz et al., 2017).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "2176270a-673f-4cd1-bcf7-f5660fa91139",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C24",
+      "claim": "CIRL specifically enhances mechanotransduction in touch-sensitive neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that CIRL decreases the excitability of mechanical nociceptors, contrasting its role in touch-sensitive neurons where the aGPCR specifically enhances mechanotransduction (Scholz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Scholz et al., 2017) that demonstrated CIRL's role in mechanotransduction in ChO neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "77b1ee98-c57c-4709-9b27-c85dfe4906c5",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C25",
+      "claim": "The dCirlT>A allele carries a mutation at the +1 position of the GPS within the Stachel sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the dCirlT>A allele carries a mutation at the +1 position of the GPS within the Stachel sequence, the \u22122 mutation in the dCirlH>A allele leaves the Stachel intact but reduces protein expression (Figure 4D; Scholz et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the description of the mutant alleles and a citation to prior work (Scholz et al., 2017) that characterized these mutations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "37e82fa7-ecce-4340-b193-aead12fe8bd9",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C26",
+      "claim": "The \u22122 mutation in the dCirlH>A allele leaves the Stachel intact but reduces protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the dCirlT>A allele carries a mutation at the +1 position of the GPS within the Stachel sequence, the \u22122 mutation in the dCirlH>A allele leaves the Stachel intact but reduces protein expression (Figure 4D; Scholz et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the description of the mutant alleles and a citation to prior work (Scholz et al., 2017) that characterized these mutations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "fac2ba95-3858-46f7-b0b3-86beb48d4e1d",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C27",
+      "claim": "The dCirlT>A allele shows normal nocifensive responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of nocifensive behaviour in these mutants reported normal responses for the T > A allele and a CirlKO phenocopy for the H > A allele (Figure 4E, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by behavioral data presented in Figure 4E and Table 1, showing that the T>A mutation does not affect nocifensive behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "a41963b4-9c36-4521-befd-c31e620be1be",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C28",
+      "claim": "The dCirlH>A allele phenocopies CirlKO in nocifensive behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of nocifensive behaviour in these mutants reported normal responses for the T > A allele and a CirlKO phenocopy for the H > A allele (Figure 4E, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by behavioral data presented in Figure 4E and Table 1, showing that the H>A mutation produces the same phenotype as the null mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "c7104a2e-fb07-4031-9d93-43839b0bc704",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C29",
+      "claim": "C4da neurons are sensitive to reduced CIRL expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, C4da neurons appear to be sensitive to reduced CIRL expression, which is consistent with very low protein levels in wild-type animals (close to the detection threshold; Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the H>A mutant phenotype and supported by immunohistochemical data in Figure 4\u2014figure supplement 2 showing low CIRL protein levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "e7e8b1c4-c3db-4f69-88cf-80efbef8874b",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C30",
+      "claim": "An intact tethered agonist is dispensable for CIRL function in mechanical nociceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "An intact tethered agonist, in turn, is dispensable for CIRL function in mechanical nociceptors, contrasting the situation in touch-sensitive ChO neurons, where mutating the Stachel sequence disrupts receptor function (Scholz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the normal nocifensive behavior of the dCirlT>A mutant (which disrupts the Stachel) and contrasted with prior work (Scholz et al., 2017).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "089aebd5-2e67-4931-8eed-0ac8070d8292",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C31",
+      "claim": "Mutating the Stachel sequence disrupts CIRL receptor function in touch-sensitive ChO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "An intact tethered agonist, in turn, is dispensable for CIRL function in mechanical nociceptors, contrasting the situation in touch-sensitive ChO neurons, where mutating the Stachel sequence disrupts receptor function (Scholz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Scholz et al., 2017) that demonstrated the requirement for an intact Stachel in ChO neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "7cf45e24-962c-4c4f-be5a-d09e4fc8d6de",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C32",
+      "claim": "The activation mechanism of CIRL differs for the two mechanosensory submodalities (touch-sensitive neurons vs. nociceptors).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations indicate that the activation mechanism of CIRL differs for the two mechanosensory submodalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the differential requirement for the Stachel sequence in ChO neurons vs. C4da neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "e950a931-018d-4fcc-8f2a-95b5dc034131",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C33",
+      "claim": "The chemotherapeutic agent paclitaxel causes dose-limiting peripheral neuropathy in patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The chemotherapeutic agent paclitaxel, employed to treat solid tumours such as ovarian or breast cancer, causes dose-limiting peripheral neuropathy in patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established clinical knowledge about paclitaxel's side effects.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "213f60a2-388e-4ffa-a4b9-b24f2bb62d7d",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C34",
+      "claim": "Feeding Drosophila larvae paclitaxel-supplemented food induces axonal injury and degeneration of C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, feeding Drosophila larvae paclitaxel-supplemented food induces axonal injury and degeneration of C4da neurons (Bhattacharya et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Bhattacharya et al., 2012) that established this Drosophila neuropathy model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "bc961bc4-f261-4b6b-b7b8-60d8ddc419da",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C35",
+      "claim": "Paclitaxel strongly enhances nocifensive responses of control larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with chemotherapy-induced allodynia in humans, paclitaxel strongly enhanced nocifensive responses of control larvae (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data presented in Figure 5A, showing increased nocifensive behavior after paclitaxel treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "43ee1d66-cda5-4927-b018-11f3e832217d",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C36",
+      "claim": "Paclitaxel produces a comparable enhancement of nocifensive responses in dCirlKO animals as in controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a comparable effect in dCirlKO animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing similar paclitaxel-induced increases in nocifensive behavior in both control and dCirlKO larvae.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "45948ff2-3e87-4803-869a-1b29d55b5974",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C37",
+      "claim": "Overexpressing Cirl reverts the paclitaxel-induced sensitization of C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressing Cirl, in turn, reverted the paclitaxel-induced sensitization of C4da neurons (Figure 5A; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data presented in Figure 5A and Table 1, showing that Cirl overexpression prevents paclitaxel-induced increases in nocifensive behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "d6e20716-e45b-4667-8ac1-663b3055c8fa",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C38",
+      "claim": "CIRL tones down nociceptors in both physiological and neuropathic hyperexcitable states.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, CIRL tones down nociceptors in both physiological and neuropathic hyperexcitable states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing that CIRL reduces nociceptor activity under both normal conditions and after paclitaxel treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "db4a741d-49aa-476f-a2a3-0f06bfbff2a5",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C39",
+      "claim": "Paclitaxel administration causes dendrite loss in wild-type C4da neurons and in nociceptors overexpressing Cirl.",
+      "claim_type": "EXPLICIT",
+      "source": "Following paclitaxel treatment (10 \u00b5M), we observed dendrite loss in the wild-type background and in nociceptors overexpressing Cirl (Figure 5B,C; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by morphometric data presented in Figure 5B,C and Table 1, showing reduced dendritic complexity after paclitaxel treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "24893f30-af29-4712-b276-c33cf29e368b",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C40",
+      "claim": "Elevated Cirl expression itself reduces the dendritic complexity of C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, elevated Cirl expression itself reduced the dendritic complexity of C4da neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by morphometric data showing that Cirl overexpression alone reduces dendritic complexity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "ddf93a95-14df-425b-a45b-ed86438d09bb",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C41",
+      "claim": "Increasing CIRL protein copy number counteracts the neuropathic hyperexcitability of mechanical nociceptors independently of neuropathy-associated morphological defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, increasing CIRL protein copy number counteracts the neuropathic hyperexcitability of mechanical nociceptors independently of neuropathy-associated morphological defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that Cirl overexpression reduces paclitaxel-induced hyperexcitability despite also causing dendritic loss.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "7ac72058-abbf-44f4-8fd6-5ee1452f155f",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C42",
+      "claim": "Modulation of nociceptor physiology by CIRL is not tightly coupled to morphological changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the interpretation that modulation of nociceptor physiology by CIRL is not tightly coupled to morphological changes, dCirlKO C4da neurons displayed only subtle structural alterations (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that dCirlKO neurons show altered physiology but minimal morphological changes, as shown in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "a7e74a2e-6066-46dd-97d9-37dad0bf6f15",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C43",
+      "claim": "Unilateral chronic constriction injury (CCI) of the sciatic nerve in rats develops thermal hypersensitivity and mechanical allodynia.",
+      "claim_type": "EXPLICIT",
+      "source": "This model resembles paclitaxel-induced neuropathy in the development of thermal hypersensitivity and mechanical allodynia (Sisignano et al., 2016), i.e. a noxious reaction to innocuous stimuli like touch, reaching a maximum after one week (Figure 6A; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to prior work (Sisignano et al., 2016) and experimental data in Figure 6A and Table 1 showing mechanical allodynia after CCI.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "47b66ffa-f594-44f8-86ca-90b433830eba",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C44",
+      "claim": "Cirl1 and Cirl3 are expressed in mouse DRG nociceptors according to RNA sequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "According to RNA sequencing data from mouse DRG neurons, Cirl1 and Cirl3 are expressed in nociceptors (Thakur et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior RNA sequencing work (Thakur et al., 2014) that identified Cirl1 and Cirl3 expression in nociceptors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "2ac8e1e7-2008-43dc-b556-6ed7b4b48b61",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C45",
+      "claim": "Cirl1 mRNA levels are significantly reduced in isolectin-B4 (IB4)-positive, non-peptidergic nociceptors one week after CCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Cirl1 mRNA probes described significantly reduced transcript levels in isolectin-B4 (IB4)-positive, non-peptidergic nociceptors one week after CCI (Figure 6B,D,E; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data presented in Figure 6B,D,E and Table 1, showing reduced Cirl1 expression in IB4-positive neurons after CCI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "127cae4e-49e3-432f-94eb-bdfcab950073",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C46",
+      "claim": "A similar, though statistically insignificant trend of reduced Cirl1 expression is observed in peptidergic nociceptors identified by CGRP staining after CCI.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a similar, though statistically insignificant trend in peptidergic nociceptors identified by calcitonin gene-related peptide (CGRP) staining and for Cirl3 probes (Figure 6B-E; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data presented in Figure 6B-E and Table 1, showing a non-significant trend toward reduced Cirl1 in CGRP-positive neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "edf6a305-24fc-4356-9c40-c4cb7b1d1605",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C47",
+      "claim": "A similar, though statistically insignificant trend of reduced expression is observed for Cirl3 probes after CCI.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a similar, though statistically insignificant trend in peptidergic nociceptors identified by calcitonin gene-related peptide (CGRP) staining and for Cirl3 probes (Figure 6B-E; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data presented in Figure 6B-E and Table 1, showing a non-significant trend toward reduced Cirl3 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "01d1e113-c945-46b1-88d6-1425bf72f844",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C48",
+      "claim": "CCI does not affect Cirl1 or Cirl3 gene expression in non-nociceptive, large myelinated neurons marked by neurofilament protein NF200.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, CCI appeared to neither affect Cirl1 nor Cirl3 gene expression in non-nociceptive, large myelinated neurons marked by neurofilament protein NF200.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in situ hybridization data showing no significant change in Cirl1 or Cirl3 expression in NF200-positive neurons after CCI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "b4695d18-b564-40ab-b1f9-a68802159ea0",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C49",
+      "claim": "The correlative results from rat DRG are consistent with the Drosophila data linking low Cirl expression levels to nociceptor sensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "These correlative results are consistent with the Drosophila data linking low Cirl expression levels to nociceptor sensitization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the correlation between reduced Cirl1 expression and allodynia in rats, which parallels the Drosophila findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "6eb197f1-bcaa-4e08-b9b5-83f9eb4beb89",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C50",
+      "claim": "Drosophila larvae display a stereotyped nocifensive response to noxious mechanical insult characterized by a 'corkscrew' body roll.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila larvae display a stereotyped response to noxious mechanical insult. Importantly, this innate nocifensive behaviour, characterized by a 'corkscrew' body roll, can be quantified and is distinct from the animals' reaction to innocuous touch (Figure 2A; Video 1; Tracey et al., 2003; Zhong et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to prior work (Tracey et al., 2003; Zhong et al., 2010) and illustrated in Figure 2A and Video 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "15e4c24d-502a-4c33-aa62-9791cee6ac35",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C51",
+      "claim": "The nocifensive 'corkscrew' body roll is distinct from the animals' reaction to innocuous touch.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this innate nocifensive behaviour, characterized by a 'corkscrew' body roll, can be quantified and is distinct from the animals' reaction to innocuous touch (Figure 2A; Video 1; Tracey et al., 2003; Zhong et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to prior work (Tracey et al., 2003; Zhong et al., 2010) that characterized the distinct behavioral responses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "0041a84d-936e-477e-b86b-681966607f0e",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C52",
+      "claim": "DEG/ENaC channels contribute to nociceptive mechanotransduction in invertebrates and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Degenerin/epithelial sodium channels (DEG/ENaCs) contribute to nociceptive mechanotransduction in invertebrates and mammals (Price et al., 2001; Chatzigeorgiou et al., 2010; Zhong et al., 2010; Gorczyca et al., 2014; Guo et al., 2014; Mauthner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations (Price et al., 2001; Chatzigeorgiou et al., 2010; Zhong et al., 2010; Gorczyca et al., 2014; Guo et al., 2014; Mauthner et al., 2014) documenting the role of DEG/ENaCs in mechanotransduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "ef51d6f3-fdcb-4741-8bcc-6a455c156c74",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C53",
+      "claim": "Adhesion-type GPCRs (aGPCRs) participate in a vast range of physiological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Adhesion-type GPCRs (aGPCRs) participate in a vast range of physiological processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the diverse functions of aGPCRs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "71882907-a410-4dd5-950e-7ec6baebbc41",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C54",
+      "claim": "The frequent association of aGPCRs with mechanosensitive functions suggests that processing of mechanical stimuli may be a common feature of this receptor family.",
+      "claim_type": "EXPLICIT",
+      "source": "Their frequent association with mechanosensitive functions suggests that processing of mechanical stimuli may be a common feature of this receptor family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the observed association between aGPCRs and mechanosensitive functions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "24281c60-9876-490e-b0e2-78260b98624b",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C55",
+      "claim": "CIRL sensitizes sensory responses to gentle touch and sound by amplifying signal transduction in low-threshold mechanoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we reported that the Drosophila aGPCR CIRL sensitizes sensory responses to gentle touch and sound by amplifying signal transduction in low-threshold mechanoreceptors (Scholz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Scholz et al., 2017) that demonstrated CIRL's role in low-threshold mechanoreceptors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "4a7cd5f3-c432-4717-9933-23601125da1b",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C56",
+      "claim": "CIRL adjusts nocifensive behaviour under physiological and pathological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Cirl is also expressed in high-threshold mechanical nociceptors where it adjusts nocifensive behaviour under physiological and pathological conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing CIRL's effects on nocifensive behavior under normal conditions and after paclitaxel treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "c75e34ce-43a3-47d2-aca8-677ceb66220a",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C57",
+      "claim": "Optogenetic in vivo experiments indicate that CIRL lowers cAMP levels in both mechanosensory submodalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic in vivo experiments indicate that CIRL lowers cAMP levels in both mechanosensory submodalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from optogenetic experiments using bPAC and the effects of adenylyl cyclase inhibitors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "b737d1c0-5603-49f1-8651-d7ac7221e2a6",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C58",
+      "claim": "Contrasting its role in touch-sensitive neurons, CIRL dampens the response of nociceptors to mechanical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, contrasting its role in touch-sensitive neurons, CIRL dampens the response of nociceptors to mechanical stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing that CIRL reduces nociceptor responses, in contrast to its sensitizing effect in ChO neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "e7c236dc-d037-4c4e-b293-7c7852132865",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C59",
+      "claim": "Rat nociceptors display decreased Cirl1 expression during allodynia.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this finding, rat nociceptors display decreased Cirl1 expression during allodynia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in situ hybridization data showing reduced Cirl1 expression in rat DRG neurons after CCI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "9ee1fd4a-eeab-4182-a15b-1b1aa61f3200",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C60",
+      "claim": "cAMP-downregulation by CIRL exerts opposing effects on low-threshold mechanosensors and high-threshold nociceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cAMP-downregulation by CIRL exerts opposing effects on low-threshold mechanosensors and high-threshold nociceptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing that CIRL lowers cAMP in both cell types but has opposite effects on their activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "7aa2380d-2843-40e8-8ff0-0ad3ab23a433",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C61",
+      "claim": "The bipolar action of CIRL facilitates the separation of mechanosensory signals carrying different physiological information.",
+      "claim_type": "EXPLICIT",
+      "source": "This intriguing bipolar action facilitates the separation of mechanosensory signals carrying different physiological information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that CIRL's opposing effects on touch-sensitive neurons and nociceptors would enhance the contrast between these mechanosensory submodalities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "278c85ff-4f9a-4960-859f-87950dd53d86",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C62",
+      "claim": "Touch plays an important discriminative role and contributes to social interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Touch plays an important discriminative role and contributes to social interactions (Abraira and Ginty, 2013; McGlone et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Abraira and Ginty, 2013; McGlone et al., 2014) on the functions of touch.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "aeb4169b-5aed-408e-a9c6-07c019932096",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C63",
+      "claim": "Nociception reports incipient or potential tissue damage and triggers protective behaviours.",
+      "claim_type": "EXPLICIT",
+      "source": "Nociception reports incipient or potential tissue damage. It triggers protective behaviours and can give rise to pain sensations (Basbaum et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Basbaum et al., 2009) on the function of nociception.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "69fc4384-77ec-4804-b2e0-5a02e8783f7e",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C64",
+      "claim": "Innocuous touch sensations rely on low-threshold mechanosensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas innocuous touch sensations rely on low-threshold mechanosensory neurons, noxious mechanical stimuli activate high-threshold mechanosensory neurons, i.e. nociceptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the neural basis of touch sensation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "4ca557e6-2041-48ec-b24e-def046630a6e",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C65",
+      "claim": "Noxious mechanical stimuli activate high-threshold mechanosensory neurons (nociceptors).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas innocuous touch sensations rely on low-threshold mechanosensory neurons, noxious mechanical stimuli activate high-threshold mechanosensory neurons, i.e. nociceptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the neural basis of nociception.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "a5ba4f0c-cfdd-41a9-a161-c08ea2724edd",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C66",
+      "claim": "The activity of nociceptors can be increased through sensitization, e.g. upon inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of nociceptors can be increased through sensitization, e.g. upon inflammation, and decreased through antinociceptive processes, leading to pain relief.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about nociceptor modulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "ea86179b-96fe-4d05-82ca-eb3e43bd7251",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C67",
+      "claim": "The activity of nociceptors can be decreased through antinociceptive processes, leading to pain relief.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of nociceptors can be increased through sensitization, e.g. upon inflammation, and decreased through antinociceptive processes, leading to pain relief.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about antinociceptive mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "d41c1ee1-275b-4990-9448-7e269f6f4af5",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C68",
+      "claim": "G protein-coupled receptors (GPCRs) play an important modulatory role in nociceptor sensitization and antinociception.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, G protein-coupled receptors (GPCRs) play an important modulatory role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about GPCR function in nociception.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "73966816-3866-4ceb-8cb2-00ab900edbc6",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C69",
+      "claim": "Receptors that couple to heterotrimeric Gq/11 or Gs proteins increase the excitability of nociceptors by activating phospholipase C and adenylyl cyclase pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptors that couple to heterotrimeric Gq/11 or Gs proteins, like the prostaglandin EP2 receptor, increase the excitability of nociceptors by activating phospholipase C and adenylyl cyclase pathways, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about GPCR signaling in nociceptors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "1f2243d4-f57e-4100-8c53-d98850e9ab28",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C70",
+      "claim": "Gi/o-coupled receptors generally inhibit nociceptor signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Gi/o-coupled receptors, which are gated by soluble ligands like morphine and endogenous opioid neuropeptides generally inhibit nociceptor signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Gi/o-coupled receptor function in nociceptors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "432b60ef-124e-475d-a3b5-15774180c630",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C71",
+      "claim": "In mammalian nociceptors, Gi/o-coupled receptors are located at presynaptic sites in the dorsal horn of the spinal cord, at somata in dorsal root ganglia (DRG), and at peripheral processes.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian nociceptors, cell surface receptors that couple to Gi/o proteins are located at presynaptic sites in the dorsal horn of the spinal cord, where they reduce glutamate release, at somata in dorsal root ganglia (DRG), and at peripheral processes, where they suppress receptor potential generation (Yudin and Rohacs, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Yudin and Rohacs, 2018) on the localization and function of Gi/o-coupled receptors in nociceptors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "cc971bf7-0d32-45cf-a8c4-c52dd54a68c4",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C72",
+      "claim": "Gi/o-coupled receptors at presynaptic sites in the dorsal horn reduce glutamate release.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian nociceptors, cell surface receptors that couple to Gi/o proteins are located at presynaptic sites in the dorsal horn of the spinal cord, where they reduce glutamate release, at somata in dorsal root ganglia (DRG), and at peripheral processes, where they suppress receptor potential generation (Yudin and Rohacs, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Yudin and Rohacs, 2018) on Gi/o-coupled receptor function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "6e7d4134-e94e-4329-bd9c-dd1e507404d9",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C73",
+      "claim": "Gi/o-coupled receptors at peripheral processes suppress receptor potential generation.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian nociceptors, cell surface receptors that couple to Gi/o proteins are located at presynaptic sites in the dorsal horn of the spinal cord, where they reduce glutamate release, at somata in dorsal root ganglia (DRG), and at peripheral processes, where they suppress receptor potential generation (Yudin and Rohacs, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Yudin and Rohacs, 2018) on Gi/o-coupled receptor function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "3ae116e9-5ab3-4761-b6d6-51dcf8aa637f",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C74",
+      "claim": "aGPCRs are associated with diverse human diseases, such as developmental disorders, defects of the nervous system, allergies and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, these receptors are associated with diverse human diseases, such as developmental disorders, defects of the nervous system, allergies and cancer (Hamann et al., 2015; Scholz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Hamann et al., 2015; Scholz et al., 2016) on aGPCR-associated diseases.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "2389c3d0-ebb8-4f09-a673-7a612129a300",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C75",
+      "claim": "aGPCRs are not activated by soluble ligands, in contrast to most members of the GPCR phylum.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to most members of the GPCR phylum, aGPCRs are not activated by soluble ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about aGPCR activation mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "88dc161d-2d7d-4391-942d-df377c2b6782",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C76",
+      "claim": "aGPCRs interact with partner molecules tethered to membranes or fixed to the extracellular matrix via their long, adhesive N-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, aGPCRs interact with partner molecules tethered to membranes or fixed to the extracellular matrix via their long, adhesive N-terminal domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about aGPCR structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "47adbab1-dc0e-4e6d-8a37-08958eedb0bb",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C77",
+      "claim": "The arrangement of aGPCRs positions them as metabotropic mechanosensors, which translate a relative displacement of the receptor-bearing cell into an intracellular second messenger signal.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement positions aGPCRs as metabotropic mechanosensors, which translate a relative displacement of the receptor-bearing cell into an intracellular second messenger signal (Langenhan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Langenhan et al., 2016) proposing aGPCRs as metabotropic mechanosensors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "333bb9db-e566-4802-b9b3-b4071749d51f",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C78",
+      "claim": "The TRP channel subunits NOMPC, NAN, and IAV govern mechanosensation by larval ChO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The transient receptor potential (TRP) channel subunits NOMPC (no receptor potential, TRPN), NAN (nanchung, TRPV), and IAV (inactive, TRPV) govern mechanosensation by larval ChO neurons (Effertz et al., 2012; Lehnert et al., 2013; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Effertz et al., 2012; Lehnert et al., 2013; Zhang et al., 2013) on mechanotransduction in ChO neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "36bbaa0d-af1d-4733-a1a8-11361ec7f14c",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C79",
+      "claim": "The mechanically gated ion channel Piezo, the DEG/ENaC subunit Pickpocket, and the TRPN channel Painless are required for mechanical nociception in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanically gated ion channel Piezo, the DEG/ENaC subunit Pickpocket, and the TRPN channel Painless, on the other hand, are required for mechanical nociception in Drosophila (Tracey et al., 2003; Zhong et al., 2010; Kim et al., 2012; Gorczyca et al., 2014; Guo et al., 2014; Mauthner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations (Tracey et al., 2003; Zhong et al., 2010; Kim et al., 2012; Gorczyca et al., 2014; Guo et al., 2014; Mauthner et al., 2014) on mechanotransduction in nociceptors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "681cff9e-06ff-4d1a-9a66-eb682eb55ce7",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C80",
+      "claim": "Enhanced nociceptor activity in mammals has been linked to elevated cAMP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Matching our results in Drosophila, enhanced nociceptor activity in mammals has been linked to elevated cAMP levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about cAMP's role in mammalian nociceptor sensitization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "1f65753a-794f-4612-8ac5-0b31daae9fb8",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C81",
+      "claim": "Mechanical hyperalgesia during inflammation involves cAMP-modulated HCN channels and sensitization of mammalian Piezo2 via PKA and PKC-based signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mechanical hyperalgesia during inflammation involves cAMP-modulated HCN channels and sensitization of mammalian Piezo2 via PKA and protein kinase C (PKC)-based signalling (Emery et al., 2011; Dubin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Emery et al., 2011; Dubin et al., 2012) on cAMP-dependent mechanisms of mechanical hyperalgesia.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "93bf2157-dd9b-465f-940b-38c464005ac9",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C82",
+      "claim": "Gi/o-coupled receptors, such as opioid, somatostatin, and GABAB receptors, counteract cAMP-dependent nociceptor sensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Gi/o-coupled receptors, such as opioid, somatostatin, and GABAB receptors, counteract cAMP-dependent nociceptor sensitization (Yudin and Rohacs, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Yudin and Rohacs, 2018) on Gi/o-coupled receptor function in nociceptors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "20ab9658-738e-4777-aaf6-06d53c117862",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C83",
+      "claim": "G\u03b2\u03b3 subunits of Gi/o-coupled GPCRs can directly interact with ion channels to suppress nociceptor signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this second messenger pathway, G\u03b2\u03b3 subunits of Gi/o-coupled GPCRs can directly interact with ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about G\u03b2\u03b3 subunit function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "ddb20069-4f6c-4a76-aaa8-57e64e521752",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C84",
+      "claim": "Nociceptor signalling can be suppressed via activation of G protein regulated inwardly rectifying K+ channels (GIRK) or by inhibition of voltage-gated Ca2+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereby nociceptor signalling can be suppressed via activation of G protein regulated inwardly rectifying K+ channels (GIRK) or by inhibition of voltage-gated Ca2+ channels (Logothetis et al., 1987; Marker et al., 2005; Bourinet et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Logothetis et al., 1987; Marker et al., 2005; Bourinet et al., 2014) on ion channel modulation by Gi/o signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "9ae62ecc-ac8b-4ba5-b266-10dc273df471",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C85",
+      "claim": "CIRL2 and CIRL3 promote synapse formation in the mouse hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has identified that CIRL2 and CIRL3 promote synapse formation in the mouse hippocampus (Sando et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to recent work (Sando et al., 2019) on CIRL function in synapse formation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "2017b16f-32b7-4e9e-ae73-b48f86989370",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C86",
+      "claim": "Stachel-dependent and -independent aGPCR activation triggers different downstream signalling pathways according to work in cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Work in cell culture has put forward a model in which Stachel-dependent and -independent aGPCR activation triggers different downstream signalling pathways (Kishore et al., 2016; Salzman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Kishore et al., 2016; Salzman et al., 2017) on dual activation modes of aGPCRs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "45e2c8b7-41f4-4225-abd5-c72c19d1990c",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C87",
+      "claim": "Many genes display altered expression in DRG neurons in neuropathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Many genes display altered expression in DRG neurons in neuropathy (Lopes et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Lopes et al., 2017) on gene expression changes in neuropathy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "533c5d11-2cc4-43fb-928c-429493468f5b",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C88",
+      "claim": "Receptors and ion channels involved in sensitization are upregulated in neuropathy.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, receptors and ion channels involved in sensitization are upregulated, whereas endogenous antinociceptive mechanisms, including opioid receptors and their peptides, are downregulated in certain neuropathy models (Herradon et al., 2008; Hervera et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Herradon et al., 2008; Hervera et al., 2011) on gene expression changes in neuropathy models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "4eac5011-98e3-4f00-bafc-fbba4356dbb4",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C89",
+      "claim": "Endogenous antinociceptive mechanisms, including opioid receptors and their peptides, are downregulated in certain neuropathy models.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, receptors and ion channels involved in sensitization are upregulated, whereas endogenous antinociceptive mechanisms, including opioid receptors and their peptides, are downregulated in certain neuropathy models (Herradon et al., 2008; Hervera et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Herradon et al., 2008; Hervera et al., 2011) on gene expression changes in neuropathy models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "5b4e8e89-87ae-4545-9ee9-5b531bb864ac",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C90",
+      "claim": "Neuropathy not only enhances pro-nociceptive mechanisms but also decreases endogenous antinociceptive pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, neuropathy not only enhances pro-nociceptive mechanisms but also decreases endogenous antinociceptive pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the cited literature on gene expression changes in neuropathy.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "cc1be9fe-4ae6-4fe2-8b5a-7d204fbf72d5",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C91",
+      "claim": "IB4-positive non-peptidergic nociceptors have been linked to mechanical inflammatory hypersensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of rodent DRGs indicates that neuropathy-induced allodynia correlates with reduced Cirl1 expression in IB4-positive non-peptidergic nociceptors (Fang et al., 2006), a class of neurons, which have been linked to mechanical inflammatory hypersensitivity (Pinto et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Fang et al., 2006; Pinto et al., 2019) on the function of IB4-positive neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "3b7141e5-7123-4b54-b87d-4cb8bc24c083",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C92",
+      "claim": "Limited options for treating chronic pain have contributed to the current opioid epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Limited options for treating chronic pain have contributed to the current opioid epidemic (Skolnick and Volkow, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Skolnick and Volkow, 2016) on the opioid epidemic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "15f1063e-da33-4050-a83a-37b471e6ddd8",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C93",
+      "claim": "Opioids are powerful analgesics but have severe side effects and lead to addiction mainly through activation of receptors in the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Opioids are powerful analgesics but have severe side effects and lead to addiction mainly through activation of receptors in the central nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about opioid pharmacology and side effects.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "f2eac573-cc7b-47cc-ac0f-f2c246d4dab9",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C94",
+      "claim": "The specificity theory defines nociceptors as a functionally distinct subtype of nerve endings specifically tuned to detect harmful, high-intensity stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity theory, put forward more than 100 years ago (Sherrington, 1906), defines nociceptors as a functionally distinct subtype of nerve endings, which are specifically tuned to detect harmful, high-intensity stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to historical work (Sherrington, 1906) on the specificity theory of nociception.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "7afb8b1b-3be1-4588-9265-26ad2dc1b375",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C95",
+      "claim": "CIRL helps set the high activation threshold of mechanical nociceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, CIRL helps set the high activation threshold of mechanical nociceptors, while on the other hand, CIRL lowers the activation threshold of touch sensitive neurons (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the experimental results showing that CIRL reduces nociceptor excitability, and illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "d11345e0-67ea-40cd-ac4a-463614a8ca8c",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C96",
+      "claim": "CIRL lowers the activation threshold of touch sensitive neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, CIRL helps set the high activation threshold of mechanical nociceptors, while on the other hand, CIRL lowers the activation threshold of touch sensitive neurons (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by prior work cited throughout the manuscript and illustrated in Figure 7.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "5464bca9-4b1b-42e9-8eb4-12c957314c4b",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "claim_id": "C97",
+      "claim": "CIRL's bidirectional adjustment moves both mechanosensory submodalities further apart and sharpens the contrast of mechanosensory signals carrying different information.",
+      "claim_type": "EXPLICIT",
+      "source": "This bidirectional adjustment, attributable to cell-specific effects of cAMP, moves both submodalities further apart and sharpens the contrast of mechanosensory signals carrying different information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that CIRL has opposite effects on the two mechanosensory submodalities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "19f11336-ca37-487f-a981-67b70e1db55d",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cirl is expressed in both ppk-negative ChOs (chordotonal organs) and ppk-positive C4da nociceptors, as demonstrated by immunohistochemical staining showing Cirl promoter-driven expression in both cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C7 is directly supported by experimental data shown in Figure 1, which uses dual labeling with Cirl promoter-driven Tomato and ppk promoter-driven GFP to demonstrate expression in both mechanosensory neuron types. The imaging evidence clearly shows co-localization and separate populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "d03580e3-ac85-4b8d-8b19-5bef37d97889",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CIRL curtails mechanical nociception through a cell-autonomous, dose-dependent function in C4da neurons. Loss of CIRL (dCirlKO or RNAi knockdown) increases nocifensive responses, genetic rescue restores normal behavior, and overexpression reduces nocifensive responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 are well-supported by behavioral data in Figure 2B and Table 1, showing consistent dose-dependent effects across multiple genetic manipulations (knockout, RNAi, rescue, overexpression). The cell-autonomous nature is demonstrated by neuron-specific RNAi and rescue experiments using the ppk-GAL4 driver.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "005441b9-15dd-44f9-872b-22e7b73c2f68",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CIRL exerts its antinociceptive effect by lowering cAMP levels through Gi/o-mediated inhibition of adenylyl cyclase activity. Optogenetic elevation of cAMP via bPAC increases nocifensive behavior, dunce PDE mutants show enhanced nociception, and adenylyl cyclase inhibitors eliminate the difference between control and dCirlKO animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C20 are strongly supported by converging evidence from multiple experimental approaches (optogenetics with bPAC, dunce mutants, pharmacological inhibition). The critical epistasis experiment (C18) showing that adenylyl cyclase inhibition eliminates the dCirlKO phenotype provides strong evidence that CIRL acts in the cAMP pathway. However, direct measurement of cAMP levels in C4da neurons would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "41856d58-ef72-4b26-9d17-1960ff793f72",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CIRL decreases the excitability of mechanical nociceptors rather than specifically modulating mechanotransduction. This is demonstrated by enhanced calcium responses to mechanical stimulation in dCirlRNAi neurons and increased photoinduced responses to ChR2XXM activation in dCirlKO larvae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are well-supported by calcium imaging data (Figure 4A,B) and optogenetic experiments (Figure 4C, Table 3). The ChR2XXM experiment is particularly important as it bypasses mechanotransduction, demonstrating that CIRL affects general neuronal excitability. This contrasts with CIRL's role in ChO neurons where it specifically enhances mechanotransduction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "abc2c006-dc64-4502-8575-51a0af8ec1b3",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The activation mechanism of CIRL differs between mechanosensory submodalities. An intact tethered agonist (Stachel) is dispensable for CIRL function in nociceptors (dCirlT>A shows normal behavior) but required in touch-sensitive ChO neurons. The dCirlH>A allele, which reduces protein expression, phenocopies the null mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 are supported by behavioral analysis of point mutants (Figure 4E, Table 1) and prior work on ChO neurons. The differential requirement for the Stachel sequence provides strong evidence for distinct activation mechanisms. The interpretation that C4da neurons are sensitive to reduced CIRL expression (C29) is consistent with low baseline protein levels shown in Figure 4\u2014figure supplement 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "74f98523-057a-4f09-945f-4b520a0c213e",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CIRL tones down nociceptors in both physiological and neuropathic hyperexcitable states. Paclitaxel treatment enhances nocifensive responses in both control and dCirlKO animals, but Cirl overexpression prevents this sensitization. CIRL's effects on nociceptor physiology are independent of morphological changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C42 are supported by behavioral data (Figure 5A, Table 1) and morphometric analysis (Figure 5B-D). The key finding that Cirl overexpression prevents paclitaxel-induced hyperexcitability despite causing dendritic loss (C39-C41) demonstrates that CIRL's antinociceptive function is separable from morphological effects. The subtle structural changes in dCirlKO neurons (C42) further support this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "e7e25eb1-c0c3-4fef-b83f-ea3691a3cba9",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In a rat model of traumatic neuropathic pain (CCI), Cirl1 mRNA levels are significantly reduced in IB4-positive non-peptidergic nociceptors one week after injury, correlating with the development of mechanical allodynia. Similar non-significant trends are observed for Cirl1 in CGRP-positive neurons and for Cirl3 in both populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 are supported by in situ hybridization data (Figure 6B-E, Table 1) and behavioral measurements (Figure 6A). The significant reduction in Cirl1 expression in IB4-positive neurons provides correlative evidence consistent with the Drosophila findings. However, the results are correlative rather than causal, and the non-significant trends for other populations (C46-C47) suggest cell-type specificity that requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "1dbedb9e-e9ec-4e94-b2b9-43b839ba715b",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior work established that CIRL is expressed in Drosophila ChO neurons where it sensitizes responses to gentle touch and sound by enhancing mechanotransduction through a Stachel-dependent mechanism that reduces cAMP levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C24, C31, and C55 are all supported by citations to prior work (primarily Scholz et al., 2015, 2017). These claims provide essential context for the current study by establishing CIRL's known function in touch-sensitive neurons, which contrasts with its newly discovered role in nociceptors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "5a895503-8387-444c-93fa-44c7b02fb48f",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "C4da neurons are polymodal nociceptors that respond to noxious stimuli with a stereotyped 'corkscrew' body roll distinct from responses to innocuous touch. DEG/ENaC channels contribute to nociceptive mechanotransduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C50-C52 are supported by multiple citations to prior work characterizing C4da neurons and nociceptive behavior in Drosophila. These claims establish the experimental system and provide necessary background for interpreting the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "53a3a067-fd1a-44ab-a9fa-133510a027ab",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Paclitaxel causes peripheral neuropathy in cancer patients and induces axonal injury and degeneration of C4da neurons in Drosophila larvae, providing a model for chemotherapy-induced neuropathy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by established clinical knowledge (C33) and a citation to prior work (Bhattacharya et al., 2012) that established the Drosophila paclitaxel neuropathy model. These claims provide context for the neuropathy experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "3040507c-331f-4b9c-848e-4b096f61afde",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CIRL's bidirectional modulation of mechanosensory neurons\u2014lowering the activation threshold of touch-sensitive neurons while raising the threshold of nociceptors\u2014facilitates the separation of mechanosensory signals carrying different physiological information by sharpening the contrast between submodalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 and C95-C97 represent the main conceptual conclusion of the paper. This interpretation is well-supported by the experimental data showing opposite effects of CIRL on the two mechanosensory submodalities, both mediated by cAMP reduction. The model that this bidirectional adjustment enhances signal discrimination (C61, C97) is a reasonable inference from the data, though direct evidence for improved discrimination is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "0551e4d0-92cd-49f8-a9ff-638172e959f2",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing the physiological roles of touch and nociception, GPCR signaling mechanisms, aGPCR structure and function, mechanotransduction channels, cAMP signaling in nociceptors, and gene expression changes in neuropathy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C94 provide essential background information supported by citations to prior work or established knowledge. These claims contextualize the current findings within the broader literature on mechanosensation, GPCR signaling, and pain mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    },
+    {
+      "id": "69d2904c-0833-4ef2-8dd2-d659140450de",
+      "content_id": "a120d2b1-6594-4a74-8895-5612bb039874",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "aGPCRs participate in diverse physiological processes, and their frequent association with mechanosensitive functions suggests that processing of mechanical stimuli may be a common feature of this receptor family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by established knowledge about aGPCR functions. Claim C54 is speculative but reasonable given the known mechanosensory roles of multiple aGPCRs. This speculation provides motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:29.976511Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bce5ba81-dab5-4ba3-9fed-e8d5a178172c",
+      "result_id": "19f11336-ca37-487f-a981-67b70e1db55d"
+    },
+    {
+      "claim_id": "54accfa0-540a-407f-b9b0-850968f8ef97",
+      "result_id": "d03580e3-ac85-4b8d-8b19-5bef37d97889"
+    },
+    {
+      "claim_id": "074e89f8-cbd6-4f3c-9d47-7475a8f33036",
+      "result_id": "d03580e3-ac85-4b8d-8b19-5bef37d97889"
+    },
+    {
+      "claim_id": "e259bde5-1962-4d9a-8a9c-e652c9ad9907",
+      "result_id": "d03580e3-ac85-4b8d-8b19-5bef37d97889"
+    },
+    {
+      "claim_id": "a139c3e9-2de8-4e6f-9d3a-2b75be96b331",
+      "result_id": "d03580e3-ac85-4b8d-8b19-5bef37d97889"
+    },
+    {
+      "claim_id": "8f9ca8a2-1b38-4acb-b60c-144a928ccc23",
+      "result_id": "d03580e3-ac85-4b8d-8b19-5bef37d97889"
+    },
+    {
+      "claim_id": "051de110-cc9d-4a6c-af05-a958295db353",
+      "result_id": "005441b9-15dd-44f9-872b-22e7b73c2f68"
+    },
+    {
+      "claim_id": "9fbbfa5b-a5b5-4bab-ba94-d1028dbea01f",
+      "result_id": "005441b9-15dd-44f9-872b-22e7b73c2f68"
+    },
+    {
+      "claim_id": "a8616506-7f54-4146-9989-f2c34a503c6e",
+      "result_id": "005441b9-15dd-44f9-872b-22e7b73c2f68"
+    },
+    {
+      "claim_id": "df0ce2ea-9323-4b1d-90fc-9368d3dcf882",
+      "result_id": "005441b9-15dd-44f9-872b-22e7b73c2f68"
+    },
+    {
+      "claim_id": "09850f7e-2ed4-48a9-9f30-aef95a33e89e",
+      "result_id": "005441b9-15dd-44f9-872b-22e7b73c2f68"
+    },
+    {
+      "claim_id": "ebb21836-d06e-419d-ba28-db4d3674d472",
+      "result_id": "005441b9-15dd-44f9-872b-22e7b73c2f68"
+    },
+    {
+      "claim_id": "b6890896-6a25-4d68-8410-f8c7b8d81c6a",
+      "result_id": "005441b9-15dd-44f9-872b-22e7b73c2f68"
+    },
+    {
+      "claim_id": "039a1216-119c-4e94-a811-e232210ae427",
+      "result_id": "005441b9-15dd-44f9-872b-22e7b73c2f68"
+    },
+    {
+      "claim_id": "9269ee92-649e-4643-9b90-0cd030e43613",
+      "result_id": "41856d58-ef72-4b26-9d17-1960ff793f72"
+    },
+    {
+      "claim_id": "fad3084b-cafb-488c-b76d-44279cf46858",
+      "result_id": "41856d58-ef72-4b26-9d17-1960ff793f72"
+    },
+    {
+      "claim_id": "41350869-5e1b-4fbd-b63a-9a2d5ccaaeee",
+      "result_id": "41856d58-ef72-4b26-9d17-1960ff793f72"
+    },
+    {
+      "claim_id": "77b1ee98-c57c-4709-9b27-c85dfe4906c5",
+      "result_id": "abc2c006-dc64-4502-8575-51a0af8ec1b3"
+    },
+    {
+      "claim_id": "37e82fa7-ecce-4340-b193-aead12fe8bd9",
+      "result_id": "abc2c006-dc64-4502-8575-51a0af8ec1b3"
+    },
+    {
+      "claim_id": "fac2ba95-3858-46f7-b0b3-86beb48d4e1d",
+      "result_id": "abc2c006-dc64-4502-8575-51a0af8ec1b3"
+    },
+    {
+      "claim_id": "a41963b4-9c36-4521-befd-c31e620be1be",
+      "result_id": "abc2c006-dc64-4502-8575-51a0af8ec1b3"
+    },
+    {
+      "claim_id": "c7104a2e-fb07-4031-9d93-43839b0bc704",
+      "result_id": "abc2c006-dc64-4502-8575-51a0af8ec1b3"
+    },
+    {
+      "claim_id": "e7e8b1c4-c3db-4f69-88cf-80efbef8874b",
+      "result_id": "abc2c006-dc64-4502-8575-51a0af8ec1b3"
+    },
+    {
+      "claim_id": "089aebd5-2e67-4931-8eed-0ac8070d8292",
+      "result_id": "abc2c006-dc64-4502-8575-51a0af8ec1b3"
+    },
+    {
+      "claim_id": "7cf45e24-962c-4c4f-be5a-d09e4fc8d6de",
+      "result_id": "abc2c006-dc64-4502-8575-51a0af8ec1b3"
+    },
+    {
+      "claim_id": "bc961bc4-f261-4b6b-b7b8-60d8ddc419da",
+      "result_id": "74f98523-057a-4f09-945f-4b520a0c213e"
+    },
+    {
+      "claim_id": "43ee1d66-cda5-4927-b018-11f3e832217d",
+      "result_id": "74f98523-057a-4f09-945f-4b520a0c213e"
+    },
+    {
+      "claim_id": "45948ff2-3e87-4803-869a-1b29d55b5974",
+      "result_id": "74f98523-057a-4f09-945f-4b520a0c213e"
+    },
+    {
+      "claim_id": "d6e20716-e45b-4667-8ac1-663b3055c8fa",
+      "result_id": "74f98523-057a-4f09-945f-4b520a0c213e"
+    },
+    {
+      "claim_id": "db4a741d-49aa-476f-a2a3-0f06bfbff2a5",
+      "result_id": "74f98523-057a-4f09-945f-4b520a0c213e"
+    },
+    {
+      "claim_id": "24893f30-af29-4712-b276-c33cf29e368b",
+      "result_id": "74f98523-057a-4f09-945f-4b520a0c213e"
+    },
+    {
+      "claim_id": "ddf93a95-14df-425b-a45b-ed86438d09bb",
+      "result_id": "74f98523-057a-4f09-945f-4b520a0c213e"
+    },
+    {
+      "claim_id": "7ac72058-abbf-44f4-8fd6-5ee1452f155f",
+      "result_id": "74f98523-057a-4f09-945f-4b520a0c213e"
+    },
+    {
+      "claim_id": "a7e74a2e-6066-46dd-97d9-37dad0bf6f15",
+      "result_id": "e7e25eb1-c0c3-4fef-b83f-ea3691a3cba9"
+    },
+    {
+      "claim_id": "47b66ffa-f594-44f8-86ca-90b433830eba",
+      "result_id": "e7e25eb1-c0c3-4fef-b83f-ea3691a3cba9"
+    },
+    {
+      "claim_id": "2ac8e1e7-2008-43dc-b556-6ed7b4b48b61",
+      "result_id": "e7e25eb1-c0c3-4fef-b83f-ea3691a3cba9"
+    },
+    {
+      "claim_id": "127cae4e-49e3-432f-94eb-bdfcab950073",
+      "result_id": "e7e25eb1-c0c3-4fef-b83f-ea3691a3cba9"
+    },
+    {
+      "claim_id": "edf6a305-24fc-4356-9c40-c4cb7b1d1605",
+      "result_id": "e7e25eb1-c0c3-4fef-b83f-ea3691a3cba9"
+    },
+    {
+      "claim_id": "01d1e113-c945-46b1-88d6-1425bf72f844",
+      "result_id": "e7e25eb1-c0c3-4fef-b83f-ea3691a3cba9"
+    },
+    {
+      "claim_id": "b4695d18-b564-40ab-b1f9-a68802159ea0",
+      "result_id": "e7e25eb1-c0c3-4fef-b83f-ea3691a3cba9"
+    },
+    {
+      "claim_id": "3ae909e4-ec9e-4332-96ee-ebe1e7a130be",
+      "result_id": "1dbedb9e-e9ec-4e94-b2b9-43b839ba715b"
+    },
+    {
+      "claim_id": "5b2ec852-b265-4910-bf58-4dbf7058e28e",
+      "result_id": "1dbedb9e-e9ec-4e94-b2b9-43b839ba715b"
+    },
+    {
+      "claim_id": "1e30493f-2b25-44e2-8ca0-dad86d1fcd48",
+      "result_id": "1dbedb9e-e9ec-4e94-b2b9-43b839ba715b"
+    },
+    {
+      "claim_id": "5aab0eaf-6397-43d1-a27f-bfa2d2e5ad8b",
+      "result_id": "1dbedb9e-e9ec-4e94-b2b9-43b839ba715b"
+    },
+    {
+      "claim_id": "006768a0-3b4c-4de7-9bf5-ce3476e0d541",
+      "result_id": "1dbedb9e-e9ec-4e94-b2b9-43b839ba715b"
+    },
+    {
+      "claim_id": "2176270a-673f-4cd1-bcf7-f5660fa91139",
+      "result_id": "1dbedb9e-e9ec-4e94-b2b9-43b839ba715b"
+    },
+    {
+      "claim_id": "089aebd5-2e67-4931-8eed-0ac8070d8292",
+      "result_id": "1dbedb9e-e9ec-4e94-b2b9-43b839ba715b"
+    },
+    {
+      "claim_id": "24281c60-9876-490e-b0e2-78260b98624b",
+      "result_id": "1dbedb9e-e9ec-4e94-b2b9-43b839ba715b"
+    },
+    {
+      "claim_id": "1e30fc56-4111-42b9-ab9b-3ae0092e3b1f",
+      "result_id": "5a895503-8387-444c-93fa-44c7b02fb48f"
+    },
+    {
+      "claim_id": "6eb197f1-bcaa-4e08-b9b5-83f9eb4beb89",
+      "result_id": "5a895503-8387-444c-93fa-44c7b02fb48f"
+    },
+    {
+      "claim_id": "15e4c24d-502a-4c33-aa62-9791cee6ac35",
+      "result_id": "5a895503-8387-444c-93fa-44c7b02fb48f"
+    },
+    {
+      "claim_id": "0041a84d-936e-477e-b86b-681966607f0e",
+      "result_id": "5a895503-8387-444c-93fa-44c7b02fb48f"
+    },
+    {
+      "claim_id": "e950a931-018d-4fcc-8f2a-95b5dc034131",
+      "result_id": "53a3a067-fd1a-44ab-a9fa-133510a027ab"
+    },
+    {
+      "claim_id": "213f60a2-388e-4ffa-a4b9-b24f2bb62d7d",
+      "result_id": "53a3a067-fd1a-44ab-a9fa-133510a027ab"
+    },
+    {
+      "claim_id": "4a7cd5f3-c432-4717-9933-23601125da1b",
+      "result_id": "3040507c-331f-4b9c-848e-4b096f61afde"
+    },
+    {
+      "claim_id": "c75e34ce-43a3-47d2-aca8-677ceb66220a",
+      "result_id": "3040507c-331f-4b9c-848e-4b096f61afde"
+    },
+    {
+      "claim_id": "b737d1c0-5603-49f1-8651-d7ac7221e2a6",
+      "result_id": "3040507c-331f-4b9c-848e-4b096f61afde"
+    },
+    {
+      "claim_id": "e7c236dc-d037-4c4e-b293-7c7852132865",
+      "result_id": "3040507c-331f-4b9c-848e-4b096f61afde"
+    },
+    {
+      "claim_id": "9ee1fd4a-eeab-4182-a15b-1b1aa61f3200",
+      "result_id": "3040507c-331f-4b9c-848e-4b096f61afde"
+    },
+    {
+      "claim_id": "7aa2380d-2843-40e8-8ff0-0ad3ab23a433",
+      "result_id": "3040507c-331f-4b9c-848e-4b096f61afde"
+    },
+    {
+      "claim_id": "7afb8b1b-3be1-4588-9265-26ad2dc1b375",
+      "result_id": "3040507c-331f-4b9c-848e-4b096f61afde"
+    },
+    {
+      "claim_id": "d11345e0-67ea-40cd-ac4a-463614a8ca8c",
+      "result_id": "3040507c-331f-4b9c-848e-4b096f61afde"
+    },
+    {
+      "claim_id": "5464bca9-4b1b-42e9-8eb4-12c957314c4b",
+      "result_id": "3040507c-331f-4b9c-848e-4b096f61afde"
+    },
+    {
+      "claim_id": "278c85ff-4f9a-4960-859f-87950dd53d86",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "aeb4169b-5aed-408e-a9c6-07c019932096",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "69fc4384-77ec-4804-b2e0-5a02e8783f7e",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "4ca557e6-2041-48ec-b24e-def046630a6e",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "a5ba4f0c-cfdd-41a9-a161-c08ea2724edd",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "ea86179b-96fe-4d05-82ca-eb3e43bd7251",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "d41c1ee1-275b-4990-9448-7e269f6f4af5",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "73966816-3866-4ceb-8cb2-00ab900edbc6",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "1f2243d4-f57e-4100-8c53-d98850e9ab28",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "432b60ef-124e-475d-a3b5-15774180c630",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "cc971bf7-0d32-45cf-a8c4-c52dd54a68c4",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "6e7d4134-e94e-4329-bd9c-dd1e507404d9",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "3ae116e9-5ab3-4761-b6d6-51dcf8aa637f",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "2389c3d0-ebb8-4f09-a673-7a612129a300",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "88dc161d-2d7d-4391-942d-df377c2b6782",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "47adbab1-dc0e-4e6d-8a37-08958eedb0bb",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "333bb9db-e566-4802-b9b3-b4071749d51f",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "36bbaa0d-af1d-4733-a1a8-11361ec7f14c",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "681cff9e-06ff-4d1a-9a66-eb682eb55ce7",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "1f65753a-794f-4612-8ac5-0b31daae9fb8",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "93bf2157-dd9b-465f-940b-38c464005ac9",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "20ab9658-738e-4777-aaf6-06d53c117862",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "ddb20069-4f6c-4a76-aaa8-57e64e521752",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "9ae62ecc-ac8b-4ba5-b266-10dc273df471",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "2017b16f-32b7-4e9e-ae73-b48f86989370",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "45e2c8b7-41f4-4225-abd5-c72c19d1990c",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "533c5d11-2cc4-43fb-928c-429493468f5b",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "4eac5011-98e3-4f00-bafc-fbba4356dbb4",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "5b4e8e89-87ae-4545-9ee9-5b531bb864ac",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "cc1be9fe-4ae6-4fe2-8b5a-7d204fbf72d5",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "3b7141e5-7123-4b54-b87d-4cb8bc24c083",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "15f1063e-da33-4050-a83a-37b471e6ddd8",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "f2eac573-cc7b-47cc-ac0f-f2c246d4dab9",
+      "result_id": "0551e4d0-92cd-49f8-a9ff-638172e959f2"
+    },
+    {
+      "claim_id": "ef51d6f3-fdcb-4741-8bcc-6a455c156c74",
+      "result_id": "69d2904c-0833-4ef2-8dd2-d659140450de"
+    },
+    {
+      "claim_id": "71882907-a410-4dd5-950e-7ec6baebbc41",
+      "result_id": "69d2904c-0833-4ef2-8dd2-d659140450de"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "TDP-43 expression in motor neurons alters glycolytic and pentose phosphate pathway metabolites in Drosophila larvae. Metabolomic profiling shows significantly increased phosphoenolpyruvate (PEP) and pyruvate in both TDP-43WT and TDP-43G298S expressing larvae, with variant-specific changes in pentose phosphate pathway metabolites (decreased ribulose/xylulose 5-phosphate and increased sedoheptulose 7-phosphate in TDP-43G298S). These changes are specific to TDP-43 overexpression and not observed with TDP-43 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C27 provide converging metabolomic evidence with appropriate statistical testing (p<0.05 for all significant changes) and proper controls including TDP-43 knockdown experiments (C22-C23). The data support altered glucose metabolism, though the interpretation that this represents 'increased glycolysis' (C21) is inferential and could reflect other metabolic states. Sample size (N=5) is adequate for metabolomics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36"
+    ],
+    "result": "PFK and G6PD transcript levels are increased in Drosophila ventral nerve cords expressing TDP-43 in motor neurons. PFK shows a 37% increase (p=0.06) for TDP-43WT and 59% increase (p=0.014) for TDP-43G298S. G6PD (Zw) shows a 37% increase (p=0.012) specifically in TDP-43G298S but not TDP-43WT, suggesting variant-dependent upregulation of glycolysis and pentose phosphate pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C36 present qPCR data, but C31 reports a non-significant result (p=0.06) for TDP-43WT that is interpreted as 'increased' and used to support the conclusion of increased glycolytic flux (C33). Only the TDP-43G298S data reach statistical significance for both PFK and G6PD. The inference about 'flux' (C33, C36) from transcript levels alone is not directly validated by flux measurements. Sample size (N=5) is modest for qPCR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "PFK and G6PD transcript levels are significantly increased in human ALS spinal cords and patient-derived iPSC motor neurons. In spinal cords, PFKP increased 80% (p<0.001), PFKM increased 55% (p=0.014), and G6PD increased 49% (p=0.015). In iPSC motor neurons from a TDP-43G298S patient, PFKP increased 58% (p=0.010), PFKM increased 45% (p=0.036), and G6PD increased 52% (p=0.012).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 provide statistically significant qPCR data from human tissues (N=8-9 for spinal cords) and iPSC motor neurons (N=3 independent differentiations) with appropriate controls. All reported increases reach statistical significance. However, the iPSC data come from a single patient line (TDP-43G298S), limiting generalizability. Demographic information is provided in supplementary files.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "TDP-43G298S expressing motor neurons show enhanced glucose uptake capacity compared to controls as measured by FRET-based glucose sensor. TDP-43WT expressing neurons showed no significant difference (p<0.99) while TDP-43G298S showed significant increase (p<0.001) in FRET/CFP signal upon glucose stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 present FRET imaging data with appropriate statistical analysis and controls. The glucose sensor methodology is validated by prior work (C47). The variant-specific effect (significant for G298S but not WT) is consistent with other variant-dependent findings. Sample size (12-14 neurons from 2 ventral nerve cords per condition) is reasonable for imaging experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "High glucose diet differentially affects control versus TDP-43 expressing flies. While high glucose impairs control larvae locomotion (C51), it significantly improves locomotor defects and extends lifespan when TDP-43 is expressed in motor neurons or glia. The effect requires 5-10X glucose concentration; 2X shows no benefit (C55-C56). Lifespan increased from 23.5 to 53 days for TDP-43WT and 14.5 to 41 days for TDP-43G298S (both p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 present dose-response and cell-type specific dietary intervention data with robust statistical significance (p<0.0001 for lifespan). The differential effects in control vs. disease flies support a compensatory mechanism interpretation. Sample sizes are adequate (N\u226530 larvae for turning assays, ~20 adults for survival). The dose-response data (C55-C56) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "GLUT-3 overexpression in motor neurons or glia rescues TDP-43-induced locomotor defects in larvae and adults. In motor neurons, GLUT-3 significantly extended lifespan with TDP-43G298S (18 to 30 days, p<0.0001) but not TDP-43WT. In glia, effects were detected only with Mantel-Cox test (43.5 to 51.5 days, p=0.015). GLUT-3 does not alter TDP-43 protein levels (C70), suggesting a mechanism independent of reducing TDP-43 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C72 provide genetic rescue data across multiple assays (larval turning, adult negative geotaxis, lifespan) with appropriate controls and statistical testing. The use of two different survival analysis methods (C67-C68) is appropriate given different survival curve shapes. Western blot controls (C70) rule out rescue via TDP-43 reduction. Cell-type and variant-dependent effects are systematically documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "GLUT-4 overexpression similarly rescues TDP-43-induced locomotor defects in motor neurons and glia but not muscle. TDP-43 expression in muscle causes locomotor phenotypes (C78), but co-expression of GLUT-3 or GLUT-4 in muscle does not rescue these defects (C79), suggesting the primary metabolic defect is in the nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 provide systematic cell-type comparison showing nervous system-specific rescue. The muscle experiments (C78-C79) serve as important negative controls demonstrating tissue specificity. Data are consistent with GLUT-3 results and support the conclusion about nervous system localization of metabolic defects (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "GLUT-3 overexpression rescues TDP-43-induced neuromuscular junction defects. GLUT-3 significantly increased synaptic bouton numbers in both TDP-43WT (p=0.004) and TDP-43G298S (p=0.023) expressing larvae and partially restored synaptic vesicle endocytosis (p<0.001 for both variants) as measured by FM1-43 dye uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 provide morphological and functional NMJ data with appropriate statistical significance. The rescue of both structural (bouton number) and functional (vesicle recycling) defects strengthens the conclusion that increased glucose availability is neuroprotective. Sample sizes (N=7-10 larvae) are adequate for NMJ analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "PFK overexpression rescues TDP-43-induced locomotor defects in motor neurons. While PFK overexpression alone impairs locomotion (C89), co-expression with TDP-43WT (p=0.003) or TDP-43G298S (p<0.001) rescues defects to control levels. PFK knockdown has no effect alone (p=0.04, 53% knockdown) but worsens TDP-43WT phenotypes (p<0.001) without affecting TDP-43G298S (p=0.767).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 provide genetic interaction data supporting a compensatory upregulation model. The variant-dependent effects of PFK knockdown (significant for WT, not G298S) are intriguing but the interpretation (C96) is speculative. The claim that PFK knockdown had 'no significant effect' (C93) is inconsistent with the reported p=0.04, which is technically significant at \u03b1=0.05.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "PFK manipulation in glial cells shows similar patterns to motor neurons. PFK overexpression alone causes locomotor defects (C97), while co-expression significantly rescues TDP-43G298S (p=0.001) but not TDP-43WT (p>0.302). PFK knockdown worsens TDP-43WT (p<0.001) but not TDP-43G298S (p>0.057). PFK overexpression does not reduce TDP-43 levels (C103).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 extend motor neuron findings to glia with consistent patterns. Two independent RNAi lines were tested in glia (C98), strengthening conclusions. Western blot controls (C103) rule out rescue via TDP-43 reduction. The variant-dependent effects are consistent across cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "PFK mRNA upregulation is not explained by sequestration in TDP-43 insoluble complexes. Fractionation experiments show PFK mRNA is more soluble in TDP-43WT versus TDP-43G298S context, inconsistent with the ribostasis hypothesis and suggesting different TDP-43 variants utilize distinct pathomechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 present fractionation data that rule out one mechanistic hypothesis (ribostasis). The finding of variant-dependent differences in PFK mRNA solubility is consistent with prior work from the authors (C107). However, the data are shown only in a supplement and statistical details are limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C130",
+      "C104",
+      "C126"
+    ],
+    "result": "Glycolysis is upregulated in degenerating motor neurons as a compensatory mechanism, and increased glucose availability is protective. This conclusion integrates findings from metabolomics, transcript profiling, dietary interventions, and genetic manipulations across fly and human models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C130, C104, and C126 represent the main conclusions synthesizing multiple lines of evidence. The compensatory mechanism interpretation is supported by: (1) increased glycolytic metabolites and transcripts, (2) rescue by increasing glucose availability or glycolytic enzymes, (3) worsening by reducing glycolysis, and (4) cell-type specificity. The interpretation is logical though alternative mechanisms (e.g., pyruvate as antioxidant, C137) are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "PFK protein levels in human ALS tissues were not significantly increased despite elevated transcript levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C129 reports unpublished protein data ('data not shown') that appear to contradict the transcript findings. Without access to these data, methods, sample sizes, or statistical analyses, this result cannot be properly evaluated. This discrepancy between transcript and protein levels is important for interpreting the compensatory mechanism hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background and context claims about ALS, TDP-43 pathology, glucose metabolism in the brain, and prior findings in ALS models and patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C16 provide established background information supported by appropriate citations. These contextual claims are well-supported by the literature and provide rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C34",
+      "C37",
+      "C38",
+      "C46",
+      "C47",
+      "C60",
+      "C73",
+      "C111",
+      "C114",
+      "C127"
+    ],
+    "result": "Methodological and biochemical knowledge claims about PFK, G6PD, glucose transporters, and the glucose sensor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C34, C37-C38, C46-C47, C60, C73, C111, C114, and C127 represent established biochemical knowledge or validated methodologies supported by appropriate citations. These provide necessary context for interpreting experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C28",
+      "C52",
+      "C81",
+      "C82",
+      "C108",
+      "C110",
+      "C115",
+      "C116",
+      "C120",
+      "C121",
+      "C124",
+      "C125",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C137"
+    ],
+    "result": "Literature-based claims about prior findings in ALS patients, animal models, and related metabolic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C52, C81-C82, C108, C110, C115-C116, C120-C121, C124-C125, C131-C135, and C137 cite prior literature to support context and interpretation. These are appropriately referenced and provide important context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The fly model findings validate in human patient samples, with human tissues often showing more dramatic changes comparable to mutant TDP-43 in flies, demonstrating the predictive power and relevance of the fly model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 synthesize the cross-species validation showing consistent findings in flies, human spinal cords, and iPSC motor neurons. The observation that human tissues show larger magnitude changes is important for model interpretation. This cross-species validation strengthens the overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C96"
+    ],
+    "result": "Speculative interpretations about the toxicity of high glycolytic activity in normal neurons and the severity of metabolic deficits in TDP-43G298S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90 and C96 are explicitly speculative interpretations of experimental observations. While the underlying data (PFK overexpression impairs control locomotion; PFK knockdown doesn't worsen G298S) are supported, these mechanistic interpretations are not directly tested and represent hypotheses for future work.",
+    "result_type": "MINOR"
+  }
+]

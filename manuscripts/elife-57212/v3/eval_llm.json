@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The S. pombe DNA insert in F1.1 cells exhibits reduced DNA and histone staining intensity on mitotic chromosomes, indicating decreased chromatin per unit length compared to surrounding mouse chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C37 provide converging microscopy evidence (FISH, PI staining, H4 and H2B-GFP immunofluorescence) showing decreased DNA and histone signals across the Sp-DNA insert. Quantitative analysis (C25) confirms statistical significance. Multiple independent measurements support the conclusion of reduced chromatin density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The S. pombe DNA insert in F1.1 is assembled into constitutive H3K9me3-dependent heterochromatin, with high levels of H3K9me3, HP1\u03b1, and CpG methylation, but low levels of active histone marks and H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 provide multiple lines of evidence (ChIP-qPCR, immunofluorescence, bisulfite sequencing) demonstrating heterochromatin formation. The data show high H3K9me3 and HP1\u03b1 (C38, C40, C42), low active marks (C39), low H3K27me3 (C43), and DNA methylation (C45). The heterochromatin is confined to the insert (C46). All techniques converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The distinct mitotic chromosome structure and H3K9me3 heterochromatin formation on S. pombe DNA is reproducible across multiple independent fusion clones in both mouse (NP-F1, NP-F2) and human (HeP-F3) cells, and forms rapidly after integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 demonstrate reproducibility across species and cell lines. FISH, microscopy, ChIP-qPCR, and immunofluorescence data from three new cell lines show the same distinct structure and H3K9me3 enrichment as F1.1. The timing analysis (C51) indicates rapid formation. This strongly supports generalizability of the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Heterochromatin formation on inserted S. pombe DNA does not depend on pre-existing H3K9 methylation in S. pombe, as DNA from clr4\u0394 cells (lacking H3K9me3) still forms heterochromatin in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 provide a critical genetic test using clr4\u0394 S. pombe DNA. Despite lacking the H3K9 methyltransferase, the inserted DNA still shows reduced PI staining (C57) and H3K9me3 enrichment (C58) in mammalian cells. This definitively rules out spreading from pre-existing yeast heterochromatin. C60 is appropriately labeled as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In S. pombe DNA transfection experiments, the level of H3K9me3 heterochromatin formation varies between cell lines and correlates with the distinct mitotic chromosome appearance, with high H3K9me3 levels associated with the most evident structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 describe six transfected cell lines with varying H3K9me3 levels. The correlation between H3K9me3 levels (C66-C68) and distinct structure (C62-C64) is quantitatively demonstrated across multiple cell lines. Statistical analysis confirms the correlation (C65, C69). This provides strong correlative evidence linking heterochromatin to structural changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Hi-C analysis of F1.1 mitotic cells reveals that the S. pombe DNA region shows a sharper drop-off in chromatin interaction frequency at ~150 kb compared to mouse DNA, indicating less chromatin per layer and altered chromatin organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 present Hi-C data showing differential interaction patterns between mouse and S. pombe regions. The P(s) curve analysis (C77) demonstrates an abrupt drop at 150 kb for S. pombe DNA. The interpretation (C78) is based on established polymer modeling principles (C72). The data quality and analysis appear sound, supporting the conclusion of altered loop organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "CTCF binding site density does not explain the altered chromatin organization over the S. pombe DNA insert, as predicted CTCF sites are less frequent in S. pombe DNA and CTCF is not involved in mitotic chromosome shaping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 rule out CTCF as an explanation through computational analysis (C80) and literature support (C82). The lower CTCF site frequency in S. pombe DNA (C80, C81) is opposite to what would be needed to explain smaller loops. The conclusion (C83) is logically sound given the evidence and prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "SMC2 (condensin I/II) and CAPH1 (condensin I) are uniformly distributed along the F1.1 chromosome containing the S. pombe insert, but when normalized to chromatin levels, there is a localized increase in the condensin:chromatin ratio over the insert.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 present immunofluorescence data showing uniform condensin distribution (C84, C85) but increased condensin:chromatin ratio when normalized to DNA or H2B (C88). The inference about condensin I:II ratio (C86) is reasonable given the data, though direct condensin II measurement would strengthen this. The normalization approach is appropriate and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors propose that the S. pombe DNA insert is organized into smaller chromatin loops than surrounding mouse DNA, resulting from increased condensin loading that leads to more frequent blocking of loop extrusion, decreased chromatin per unit length, and narrower chromosome width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 present the main mechanistic model integrating multiple observations: increased condensin:chromatin ratio (C87-C88), Hi-C data showing smaller loops (C77-C78), and microscopy showing decreased chromatin density (C24-C37). The model (C90-C92) is logically consistent with loop extrusion theory and explains all observations. While speculative elements exist, the model is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors propose a model where condensin is enriched at heterochromatin through increased loading, and the higher concentration of condensin complexes blocks or slows loop extrusion, resulting in smaller loops, increased condensin:chromatin ratio, decreased chromatin per unit length, and narrower chromosome diameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 present the detailed mechanistic model illustrated in Figure 7. This integrates all major findings: H3K9me3 heterochromatin (C38-C47), increased condensin:chromatin ratio (C87-C88), smaller loops from Hi-C (C77-C78), and decreased chromatin density (C24-C37). While the mechanism involves speculation (C106), the model is internally consistent and explains all observations. The model is appropriately presented as a proposal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Sequencing analysis reveals that the F1.1 S. pombe DNA insert is highly rearranged, contains ~64% of the S. pombe genome in 10-100 kb stretches, and is located on mouse chromosome 10 at approximately 83.3 Mb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 describe sequencing results using both standard and nanopore methods. The data on rearrangement (C29), genome coverage (C28), contig assembly (C30-C31), and insertion site (C32-C33) are internally consistent and confirmed by multiple methods including FISH. This provides essential characterization of the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims about mitotic chromosome structure, condensin function, loop extrusion model, centromere/telomere structure, and heterochromatin properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 provide established background knowledge supported by appropriate citations. These are well-established facts in the field and provide necessary context for the study. The citations appear appropriate and the claims accurately represent current understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "In mitosis, mammalian cells lose TAD structures and show uniform interaction patterns with a sharp drop-off at longer ranges, where the drop-off distance indicates chromatin amount per loop layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 describe established Hi-C findings from prior studies that provide the interpretive framework for the current Hi-C analysis. These are well-supported by citations and represent accepted knowledge about mitotic chromosome organization. This background is essential for interpreting the F1.1 Hi-C data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Similar narrow chromosome appearances have been reported for S. cerevisiae DNA inserted into mammalian cells, and the distinct appearance is related to H3K9me3-heterochromatin assembly on foreign DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 connect the current findings to prior literature and summarize a key conclusion. C94 is supported by appropriate citations. C95 represents a well-supported inference based on the correlation data from multiple cell lines (C65-C70). This places the work in broader context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Discussion of heterochromatin spreading mechanisms, comparison to centromeres, and the role of H3K9me3 in mitotic chromosome structure, arguing that heterochromatin shapes rather than compacts chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 present discussion points connecting findings to broader questions. C96 provides context about the F1.1 insertion site. C97-C99 compare to centromeres with appropriate caveats. C100-C102 discuss the novel finding that heterochromatin decreases rather than increases chromatin density, challenging prior models. The reasoning is sound and appropriately speculative where needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C34"
+    ],
+    "result": "Background information about the F1.1 cell line, including its origin, S. pombe DNA content, previous observations of distinct structure, and nucleosome repeat length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23, C26-C27, C34 provide background on the F1.1 cell line and relevant genomic properties. All are supported by appropriate citations to prior work. C34 is particularly important as it shows the S. pombe DNA adopts mammalian nucleosome spacing, ruling out this as an explanation for the distinct structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Clr4 is the only H3K9 methyltransferase in S. pombe, is not essential for viability, and its deletion eliminates H3K9me2/3 and heterochromatin in yeast cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 provide essential background about S. pombe genetics that justifies the clr4\u0394 experiment. These are well-established facts supported by appropriate citations. This background is necessary to interpret the significance of the clr4\u0394 fusion experiment (C57-C60).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Mitotic chromosome shaping is achieved by condensin ATPase activity and loop extrusion, and local alterations in condensin activity could explain the altered organization around S. pombe DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 provide mechanistic background (C103, supported by citations) and propose a general explanation (C104) that leads to the detailed model. The reasoning is sound and appropriately speculative. This provides the conceptual framework for the proposed model in C105-C107.",
+    "result_type": "MINOR"
+  }
+]

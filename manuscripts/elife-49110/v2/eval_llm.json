@@ -1,0 +1,200 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C20",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors determined cryo-EM structures of LbCas12a-crRNA bound to AcrVA4 at 3.0 \u00c5 (State I, monomeric) and 4.9 \u00c5 (State II, heterotetrameric) resolution, revealing that the C-terminal binding domain (CBD) of AcrVA4 (residues 136-233) binds to the WED domain of LbCas12a with specific interactions at the pre-crRNA processing nuclease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16, C19-C20, C28-C30 collectively describe the cryo-EM structure determination and key structural features. The resolution, particle numbers, domain assignments, and binding interfaces are directly supported by the experimental data shown in figures and tables. The structural observations are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C39"
+    ],
+    "result": "AcrVA4 recognizes the LbCas12a pre-crRNA processing nuclease by mimicking the pre-crRNA substrate, specifically interacting with the 5'-hydroxyl of mature crRNA, and allosterically inhibits DNA binding by locking the bridge-helix conformation without changing the overall protein architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C23-C26, C31-C36, C39 describe the mechanism of inhibition supported by structural data (cryo-EM), biochemical assays (DNA cleavage with modified crRNAs), and structural comparisons (r.m.s.d. calculations). The allosteric mechanism is well-supported by the observation that AcrVA4 binds away from the DNA binding site and the specific interactions with the bridge-helix.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C37"
+    ],
+    "result": "Point mutations in AcrVA4 (E184A, T201A, K202A, E204A, W178A) reduce or eliminate inhibition of LbCas12a, validating the importance of specific residues at the binding interface and the allosteric mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C37 are supported by DNA cleavage assays shown in Figures 2C and 4C. The mutational analysis provides functional validation of the structural observations. The W178A mutation is particularly important as it demonstrates the role of bridge-helix locking in the allosteric mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C27",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C59"
+    ],
+    "result": "The C-terminal binding domain (CBD) of AcrVA4 alone (\u03941-134) is sufficient for inhibition of LbCas12a both in vitro and in vivo, demonstrating that dimerization and heterotetrameric assembly are not necessary for inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C27, C38, C40-C46, C59 are supported by multiple lines of evidence: SEC-SAXS data showing monomeric behavior of the truncated form (Figure 5, Table 2), DNA cleavage assays (Figure 5D), and phage plaque assays (Figure 5F). The conclusion that dimerization is dispensable is well-supported by the functional data with the truncated construct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C62"
+    ],
+    "result": "AsCas12a contains an ancestral helical bundle in the WED domain that sterically occludes AcrVA4 binding, explaining the narrow spectrum of AcrVA4 inhibition and resistance of AsCas12a to AcrVA4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C47-C49, C62 are supported by structural comparisons showing steric clash between the AsCas12a helical bundle and AcrVA4 (Figure 6A), and by the observation that AsCas12a is not inhibited by AcrVA4 in biochemical and cellular assays. The structural basis for ortholog specificity is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C76",
+      "C77"
+    ],
+    "result": "Rational engineering of chimeric Cas12a proteins by swapping the helical bundle between AsCas12a and LbCas12a successfully reprograms AcrVA4 susceptibility in vitro, in bacterial phage assays, and in human cell editing experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C50-C53, C76-C77 are supported by DNA cleavage assays (Figure 6C), phage plaque assays (Figure 6D), and human cell editing experiments (Figure 6E). The chimeric proteins maintain near wild-type activity while swapping AcrVA4 susceptibility, demonstrating successful rational engineering. The modest reduction in pre-crRNA processing rate is documented and does not compromise the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C63",
+      "C64"
+    ],
+    "result": "Phylogenetic analysis reveals that the helical bundle blocking AcrVA4 binding is ancestral, present in Cas12a orthologs more closely related to TnpB, and was lost in a group of Cas12a orthologs including LbCas12a, creating the co-evolutionary opportunity for AcrVA4 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C63-C64 are supported by phylogenetic reconstructions shown in Figure 6\u2014figure supplement 5 and Figure 7. The phylogenetic analysis using both full-length Cas12a and RuvC domain alone consistently shows that helical bundle-containing orthologs are more closely related to TnpB. The evolutionary interpretation is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C61",
+      "C67"
+    ],
+    "result": "AcrVA4 represents a novel mode of CRISPR-Cas inhibition by targeting the pre-crRNA processing nuclease, highlighting a unique vulnerability in CRISPR-Cas adaptive immunity and demonstrating that structural variability in Cas effectors drives opportunistic co-evolution of specific bacteriophage inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C61, C67 represent interpretive conclusions well-supported by the collective experimental data. The novelty of the mechanism is established by comparison to known Acrs, and the evolutionary interpretation is supported by the phylogenetic and engineering data. These are appropriate conclusions from the presented evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Background claims establishing the CRISPR-Cas system, Cas12a function, anti-CRISPR proteins, and AcrVA4 properties based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C8, C68-C75 are background information supported by citations to established literature. These claims provide necessary context and are appropriately referenced. They are not novel findings of this study but are accurately stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "AcrVA4 is 234 amino acids in length, contains a predicted coiled-coil domain, and its mode of action involves dimerization of Cas12a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are supported by sequence analysis (C9), structural prediction (C10), and previous work combined with structural data from this study (C11). These are descriptive properties of AcrVA4 that are well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C65",
+      "C66"
+    ],
+    "result": "Speculative claims about potential inhibition of other CRISPR systems (e.g., Cas13), possible functions of the AcrVA4 N-terminal domain, and mechanisms of anti-CRISPR resistance evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58, C60, C65-C66 are explicitly speculative as noted in their evidence types. While these are reasonable hypotheses based on the findings, they are not directly tested in this study and represent future directions rather than established results. They should be clearly distinguished from the supported findings.",
+    "result_type": "MINOR"
+  }
+]

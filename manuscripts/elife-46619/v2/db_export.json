@@ -1,0 +1,2128 @@
+{
+  "submission": {
+    "id": "0432dec3-5a6f-4b9e-a2c7-f209659d03a9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:02:31.028374Z",
+    "updated_at": "2025-12-02T14:02:31.028374Z"
+  },
+  "content": [
+    {
+      "id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "submission_id": "0432dec3-5a6f-4b9e-a2c7-f209659d03a9",
+      "content_type": "manuscript",
+      "content_text": "# Invariant representations of mass in the human brain\n\n## Authors\n\n- Sarah Schwettmann<sup>1</sup> ([ORCID: 0000-0001-6385-1396](https://orcid.org/0000-0001-6385-1396)) \u2020\n- Joshua B Tenenbaum<sup>1</sup>\n- Nancy Kanwisher<sup>1</sup>\n\n### Affiliations\n\n1. Department of Brain and Cognitive Sciences Massachusetts Institute of Technology Cambridge United States\n2. Center for Brains, Minds, and Machines Massachusetts Institute of Technology Cambridge United States\n3. McGovern Institute for Brain Research Massachusetts Institute of Technology Cambridge United States\n4. Computer Science and Artificial Intelligence Laboratory Massachusetts Institute of Technology Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAn intuitive understanding of physical objects and events is critical for successfully interacting with the world. Does the brain achieve this understanding by running simulations in a mental physics engine, which represents variables such as force and mass, or by analyzing patterns of motion without encoding underlying physical quantities? To investigate, we scanned participants with fMRI while they viewed videos of objects interacting in scenarios indicating their mass. Decoding analyses in brain regions previously implicated in intuitive physical inference revealed mass representations that generalized across variations in scenario, material, friction, and motion energy. These invariant representations were found during tasks without action planning, and tasks focusing on an orthogonal dimension (object color). Our results support an account of physical reasoning where abstract physical variables serve as inputs to a forward model of dynamics, akin to a physics engine, in parietal and frontal cortex.\n\n## Introduction\n\nEngaging with the world requires a model of its physical structure and dynamics \u2013 how objects rest on and support each other, how much force would be required to move them, and how they behave when they fall, roll, or collide. This intuitive understanding of physics develops early and in a consistent order in childhood; infants can differentiate liquids from solids by 5 months of age (Hespos et al., 2009; Hespos et al., 2016), infer an object\u2019s weight from its compression of a soft material by 11 months (Hauf et al., 2012), and use an object\u2019s center of mass to judge its stability on the edge of a surface by 12 months (Baillargeon, 1998). By adulthood, human physical reasoning is fast and rich, and it generalizes across diverse real-world scenarios. Yet little is known about the brain basis of intuitive physics, which could enable direct tests of computational models by revealing the relevant neural representations and their invariances and automaticity.\n\nA key distinction between computational models of intuitive physics is whether they use model-free pattern recognition (such as deep neural networks) (Lerer et al., 2016), or causal generative models of physical object representations and their dynamics (Battaglia et al., 2013). The generative approach models physical reasoning as approximate probabilistic inference over simulations in a physics engine, an architecture with two core parts: an object-based representation of a 3D scene (which encodes many static variables, such as the size and mass of each object), and a model of physical forces that govern the scene\u2019s dynamics. These models may make use of deep neural networks, but also contain additional structured information about the world. Unlike the pattern recognition approach, the generative framework entails extraction of abstract representations of physical concepts and laws that support generalization, mirroring the human capacity to reason about novel physical scenarios without training. Within this framework, simulation-based models can make robust inferences with accuracy comparable to human performance across many areas of physics, including collisions (Smith et al., 2013a), (Smith et al., 2013b), fluid dynamics (Bates et al., 2015), the motion of granular materials (Kubricht et al., 2016), and predictions about the outcome of applied forces (Ullman et al., 2018; Hamrick et al., 2016).\n\nA recent fMRI study has implicated specific regions in the parietal and frontal lobes in intuitive physical inference in humans (Fischer et al., 2016). These regions responded more strongly during a physical reasoning task (which direction a tower of blocks will fall) than a difficulty-matched non-physical discrimination performed on the same stimuli, and more strongly during viewing of animated shapes depicting physical interactions of inanimate objects than social interactions of agents (Fischer et al., 2016). The candidate regions for intuitive physical inference found in this study resemble regions previously implicated in action planning (Johansson and Flanagan, 2009; Gallivan et al., 2014; Evarts and Thach, 1969; Loh et al., 2010; Chouinard et al., 2005; van Nuenen et al., 2012) and tool use (Gallivan et al., 2013; Brandi et al., 2014; Valyear et al., 2012; Goldenberg and Hagmann, 1998; Goldenberg and Spatt, 2009), consistent with the importance of physical understanding for these functions (Cant and Xu, 2012). However, crucially, it is unknown what these regions represent about physical events. A pattern recognition approach to physical reasoning might predict that the neural representations in these regions would hold information about low-level visual features or situation-specific representations of physical variables. In contrast, if these regions support a generalized engine for physical simulation, we would expect to find that they hold representations of abstract physical dimensions that generalize across scenario and other physical dimensions.\n\nTo answer this question, we conducted three experiments using fMRI to test the generalizability and automaticity of neural representations of a key variable underlying physical reasoning: mass. Mass is not the only physical variable of interest, but it is the most basic scalar quantity that captures a property of all objects and that governs motion in every physical interaction, via Newton\u2019s second law. Hence it is a natural first candidate to probe representationally in neural circuitry putatively instantiating a mental physics engine. Participants were scanned with fMRI while performing physical inference, prediction, and orthogonal tasks on visually-presented stimuli. Each scanning session began with two runs of a previously developed \u2018localizer\u2019 task (Figure 1a) to identify in each subject individually candidate regions engaged in physical reasoning (Fischer et al., 2016). We then we applied pattern classification methods to fMRI data obtained from subjects viewing videos of dynamic objects, to test for invariant representations of mass in these regions (Fischer et al., 2016), as predicted if they implement a causal generative model of the physical world.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46619/elife-46619-fig1-v2.jpg)\n\n**Figure 1.:** (a) Toppling tower task (adapted from Fischer et al., 2016) used as a localizer for all experiments. Still frames show an example tower from two different viewpoints during the 360\u00b0 pan video. Participants were asked in different blocks to determine which side the tower would fall toward (red versus green), or whether the stimulus contained more blue or yellow blocks. (b) Stills extracted from example mass inference videos used Experiments 1 and 2 (top is extracted from early in video, bottom from later). Stills from \u2018splash\u2019 and \u2018pillow\u2019 videos show a heavy object; stills from the \u2018blow' condition depict a light object. (c) Event-related scanning paradigm in Experiment 1. Each run (4 per subject) presented 36 videos in randomized order (144 total trials with each video presented 4 times), each followed by a 1 s response period (\u2018Light or Heavy?\u201d) then a rest period of variable duration (mean 6 s). (d) Experiment 2 used a block design to compare decoding during physics and color blocks. Each run (6 per subject) consisted of 5 color blocks, 5 physics blocks, and 4 (12s) rest blocks. 6 videos were shown in each block (360 total trials with each video presented 5 times in a physics block and 5 times in a color block).\n\n## Results\n\n### Experiment 1: mass inference\n\nWe began by asking whether object mass could be decoded from neural activity in previously-described (Fischer et al., 2016) candidate physics regions while participants performed a mass inference task. Six subjects were scanned using fMRI while viewing 3 s movies of real objects interacting in various physical scenarios: splashing into a container of water, being blown across a flat surface by a hairdryer, and falling onto the soft surface of a pillow (Figure 1b). Three rigid 3D shapes of equal volume were used (a rectangular prism, a cone, and a half-sphere), and movies were filmed for two different colors and two different masses (45 g, 90 g) of each shape (36 total movies). Visual cues from the scene could be used to infer the mass of each object, which was never explicitly stated. After each movie, subjects responded to a text prompt (\u2018Light or Heavy?\u201d) with a button press indicating their inferred mass (Figure 1c). Accuracy on this task was 88% (i.e., percentage of responses matching the ground truth outcome) across six subjects.\n\nWe first identified the set of parietal and frontal voxels implicated in physical inference in each subject individually using the localizer task (see Materials and methods). We then applied multivariate decoding analyses to fMRI responses in the main experiment to each stimulus of each voxel in that set. To test for situation-invariant mass decoding, linear SVMs were trained on the responses to two of the scenarios (e.g., \u2018splash\u2019 and \u2018blow\u2019), and tested on the third (\u2018pillow\u2019). This situation-invariant decoding was significant in the candidate physics system, with a group mean accuracy of 0.64 (p=0.0304, two-sided t-test, t-statistic\u00a0=\u00a02.9913, df\u00a0=\u00a05, significance threshold\u00a0=\u00a00.05). Critically, this representation of object mass does not depend on whether the object is splashing into water, being blown by a hair dryer, or being dropped onto a pillow. Mean classification accuracies across all three scenarios as well as classification accuracies for each left out scenario individually were greater than 50% in each subject. Further, mass representations are not confounded with shape or color, as colors and shapes were represented in equal proportions for both masses in the training and testing data. Decoding could also not be based on the amount of motion in the videos, as heavy objects caused more motion in two of the conditions (splash, pillow), but did not move at all in the third (blow; see Materials and methods). Finally, decoding could not be based on specific motor responses, because the assignment of buttons to responses was switched halfway through the experiment, with equal an equal number of trials per button-press-to-response assignment represented in training and testing data.\n\n### Experiment 2: mass decoding during color judgment\n\nExperiment 1 suggests we can decode an abstract, generalizable representation of mass from candidate physics regions, but two questions remain. First, does mass encoding occur even if not required by the task? Second, an alternative account of our apparent ability to decode object mass is that we may be decoding instead a prepared response to the explicit mass task (\u2018Light or Heavy?\u201d), which is constant across scenarios. Note that our mass decoding could not simply reflect decoding of a literal motor plan, as the assignment of response meanings to button presses was switched halfway through the experiment, but the hypothesis remains that in Experiment 1 we were decoding an abstract response code invariant to the specific motor plan it would later be translated into. To test this hypothesis, as well as the automaticity of the mass representation, we used a design that interleaves blocks of the mass task and a color task on the same stimuli. This design enabled us to ask whether a situation-invariant mass representation can also be decoded from multivoxel activity during blocks where subjects perform the orthogonal color task where mass was not relevant. Subjects viewed the same stimuli used in Experiment 1, and were prompted both at the beginning of each block and after each video to respond whether the object was \u2018Light or Heavy?\u2019 or \u2018Red or Orange?\u2019 (Figure 1d).\n\nIn six new subjects, we replicated the findings of Experiment 1: mean situation-invariant decoding accuracy of 0.63 (across scenarios) was significantly above chance (p=0.0357, two-sided t-test, t-statistic\u00a0=\u00a02.853, df\u00a0=\u00a05), and decoding was found in 6 out of 6 subjects individually during the mass task (task accuracy 87%). More importantly, mass decoding was also significantly above chance (mean\u00a0=\u00a00.61, p=0.0033, two-sided t-test, t-statistic\u00a0=\u00a05.2576, df\u00a0=\u00a05), and present in each subject individually, during the color task. This result shows that mass is represented even when the task does not require it, and further that the decoding of mass we observe cannot be explained as an abstract response code. Further evidence against the idea that the mass representations reflect response codes comes from the fact that color decoding from the same voxel activity during the color task was at chance in all subjects. Thus the candidate physics engine does not represent all task-relevant dimensions and may be more specific to physical variables.\n\nHowever, the results of Experiment 2 do leave open the possibility that a context effect from the mass blocks carried over to and created biases on color blocks, contributing to mass decoding during the color task. This motivated our design of a third experiment to test mass decoding in an experiment where subjects were never asked about mass.\n\n### Experiment 3: physical prediction in a collision task\n\nWe asked in Experiment 3 whether mass could be decoded from candidate physics brain regions during a physical prediction task that requires mass knowledge but never explicitly interrogates it. We created 48 real-world movies. Each 6 s video shows an object (made of aluminum, cardboard, lego, or cork) sliding down a ramp and colliding with a puck (half-ping-pong ball), whose initial location is consistent between videos (Figure 2b). In the task, subjects answer (as immediately as possible) whether they predict the sliding object will launch the puck across a black line, which can lie in three different locations. The mass of the object and its coefficient of friction determine how far it will launch the puck. Importantly, these stimuli were designed in a way that orthogonalizes mass, friction, and motion in the videos (Figure 2a), allowing us to test whether it is possible to decode a generalized representation of mass invariant to friction and motion. Each of the four different materials was used to make two objects, a 2.5\u201d\u00a0cube and a 2.5\u201dx 2.5\u201dx1.25\u201d\u00a0object with half of the volume of the cube and the same surface area in contact with the ramp. Materials were chosen with densities such that same-volume objects made out of aluminum and cardboard have the same mass (15 g for the small volume 30 g for the large volume), and same-volume objects made from lego and cork have the same mass (45 g or 90 g), while pairs along the other invariance dimension (aluminum and legos, cardboard and cork) share similar coefficients of friction with the ramp (aluminum: \u03bck=0.21, lego: \u03bck=0.22; cardboard: \u03bck=0.40, cork: \u03bck=0.46). Accuracy in the prediction task was 71% across 20 subjects.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46619/elife-46619-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic of stimulus design and ramp scenario. To test the invariance of the mass representation to other physical dimensions, this design was chosen to unconfound mass from dimensions of friction, motion, and material (though it was not possible to unconfound these dimensions from each other). (b) Still frames from stimulus videos with examples of 3 material types and 3 possible line locations. Rows (1: lego, 2: cork, 3: aluminum) represent individual videos.\n\nExperiment 3 replicated once again our finding that mass can be decoded from candidate physics regions (mean accuracy of 0.60 was significant, p=0.0392, two-sided t-test, t-statistic\u00a0=\u00a02.2152, df\u00a0=\u00a019, significance threshold\u00a0=\u00a00.05 ). Further, this experiment demonstrates an important new invariance of these mass representations beyond those already found in Experiments 1 and 2: the mass decoding in Experiment 3 required generalization across the friction and material of the object shown (lego to cork for heavy, and cardboard to aluminum for light), as well as generalization across the amount of motion in the videos (calculated by measuring the amount of optical flow; see Materials and methods). To minimize the difference in eye movements across trials, participants were instructed to fixate on a black cross in the center of the screen during each video. Eye movements were recorded for 6 subjects, to verify that subjects were fixating and to ensure that mass decoding was independent of eye movement (see Materials and methods). A two-way ANOVA with mass and friction as repeated-measures factors revealed no significant effects at the .05 significance level of mass or friction on mean eye position (mass: F1,3 = 0.084, p=0.79; friction: F1,3 = 0.31, p=0.62) or mean saccade amplitude (mass: F1,3 = 0.28, p=0.63; friction: F1,3 = 0.46, p=0.55), so it is unlikely that eye movements could explain our decoding results.\n\nWe next tested whether object mass could be decoded from regions beyond candidate physics fROIs, namely, regions in the ventral visual pathway outside traditional motor and premotor areas shown to represent object weight during action planning (Gallivan et al., 2014). Following Gallivan et al., we used a localizer task (Cant and Xu, 2012) based on the contrast of object textures and ensembles versus their scrambled counterparts, to identify LO and texture-sensitive regions of OTC in six participants completing the ramp task in the same session. Although these subjects showed reliable decoding of a mass representation invariant to friction, material, and motion in candidate physics regions during the physical prediction task (Experiment 3), this invariant decoding did not reach significance in LO (p=0.39) or in OTC (p=0.67) during the same task. While the parietal and frontal regions previously implicated in intuitive physics are recruited to compute an abstract representation of mass useful in a generalized model of physics, regions in the ventral stream, canonically associated with visual pattern recognition, may be recruited to infer object mass tied to scene- and task-specific cues such as the visual appearance of object material.\n\n### Analyses across all experiments\n\nWe used all data (two runs per subject) from the toppling towers localizer to perform a whole-brain random-effects group analysis for the physics\u00a0>color contrast (Figure 3A). This group analysis identifies a map of brain regions, primarily premotor and parietal areas, that was first shown in Fischer et al. (2016) to be preferentially engaged in physical reasoning, and is now replicated here in 32 new subjects. We further demonstrate that this candidate physics network encodes an abstract, generalizable representation of object mass that can be decoded from individual subject fROIs (see Materials and methods) in 31 out of 32 subjects (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46619/elife-46619-fig3-v2.jpg)\n\n**Figure 3.:** (a) Group random effects map for the physics\u00a0>color contrast in the localizer task based on all subjects (n\u00a0=\u00a032, two runs per subject p<0.0001 FDR), replicating the pattern reported by Fischer et al. (2016).\u00a0(b) Group parcels and random effects map from all subjects in Fischer et al. (2016). Group parcels for the physics\u00a0>color contrast computed using one run per subject (n\u00a0=\u00a012; left-out data from the other run used for validation); random effects map for the physics\u00a0>color contrast based on all data (two runs per subject). Significant voxels in the group random effects analysis generally fall within the parcels identified in the parcel-based analysis, but not necessarily vice versa (the random effects map may underestimate the extent of the cortex engaged by the task due to anatomical variability across subjects). (c) Mean accuracies decoding mass from candidate physics fROIs in each subject across the three experiments. Decoding analyses were carried out on data from all parcels. A two-way ANOVA did not reveal a significant effect of L or R hemisphere (p=0.54) or frontal or parietal parcel (p=0.86) on decoding accuracy.\n\n## Discussion\n\nIn a network of parietal and frontal brain regions previously implicated in intuitive physical inference, and replicated here in a larger sample (see Figure 3), we find robust decoding of object mass, replicated across three experiments and present numerically in 31 out of 32 participants. Critically, this mass representation is invariant to the scenario revealing the object\u2019s mass (splashing, falling, and blowing), as well as to object material, friction, and motion energy. In everyday physical reasoning, humans are able to use visual cues in a single scene to infer physical properties of an object that can be generalized to predict the object\u2019s dynamics in novel scenes, plan actions upon the object, and make inferences about similar but unfamiliar objects. Here we present the first neural evidence of a mass representation underlying physical reasoning with invariance that supports this kind of flexible, generalizable navigation of the physical world. Among current computational models, those that best exhibit this capacity for generalization are structured generative models such as physics engines (Battaglia et al., 2013; Yildirim et al., 2019), supporting the hypothesis that the network of frontal and parietal fROIs we identify implements in some form a causal generative model of physical objects and their dynamics.\n\nTo date, neural representations underlying physical reasoning have only been studied in action planning tasks. Gallivan et al. (2014). used multivariate decoding methods to find, in multivoxel activity patterns during action planning, representations of object mass in ventral visual pathway areas, specifically the lateral occipital complex (LO), posterior fusiform sulcus (pFs), and texture-sensitive regions of occipitotemporal cortex (OTC), in addition to motor cortex (M1) and dorsal premotor cortex (PMd), where mass information for action planning is known to be represented (Johansson and Flanagan, 2009; Evarts and Thach, 1969; Loh et al., 2010; Chouinard et al., 2005; van Nuenen et al., 2012). Our work goes beyond prior studies reporting neural decoding of mass in two key respects. First, prior studies have provided evidence for representations of mass (Johansson and Flanagan, 2009; Gallivan et al., 2014; Evarts and Thach, 1969; Loh et al., 2010; Chouinard et al., 2005; van Nuenen et al., 2012) only when participants are performing action planning tasks. In contrast, we show that these representations are available when subjects are not asked about mass per se, for instance in the ramp task where mass is relevant to the task but not explicitly reported, and in the color task where mass is not relevant at all. Second, and more importantly, prior studies have decoded representations of mass only within a particular stimulus or scenario, whereas our study finds abstract representations of mass that generalize across scenarios and are invariant to friction, material, and motion. It is the abstractness and invariance of the mass representations reported here that suggests they reflect not just another dimension of visual pattern classification, but the generalizability expected of inputs to a physics engine in the brain.\n\nThese invariant representations of mass are found in a network of frontal and parietal regions (Figure 3) that we suggest support machinery for a neural physics engine. Similar frontal and parietal regions have been implicated in thinking about physical concepts presented as words (Mason and Just, 2016), supporting the hypothesis that this network represents abstract, generalizable physical concepts rather than low-level visual features or situation-specific representations of physical variables. We did not find invariant mass representations in ventral visual pathway areas such as LOC and OTC (in tasks not requiring action planning), suggesting that LOC may not play a causal role in computing object weight. This supports previous findings by Buckingham et al. (2018), which showed that a patient with bilateral lesions including LOC had a preserved ability to judge object weight (Buckingham et al., 2018). This overarching pattern of results suggests that when ventral visual areas do represent motor-relevant object properties (Gallivan et al., 2014), it may be a top-down effect driven by the motor planning process where representations are tied to specific tasks.\n\nIt remains unknown how the brain estimates generalizable physical properties of objects from visual inputs. It could be that feed-forward inference methods, akin to deep-learning based recognition models, are integrated with generative models and provide an efficient means of inference of physical properties that then serve as inputs to physics engines. This account has been explored computationally and has received behavioral support (Yildirim et al., 2019), but how such a model may be instantiated between frontal and parietal regions underlying generalized physical reasoning and traditional object-driven cortex is an open area of investigation. Our results show that at the level of prediction and inference, intuitive physics recruits brain regions and representations outside the ventral stream, the canonical locus of visual pattern recognition.\n\nOur findings open up numerous avenues for further investigation. Mass is just one of the properties underlying intuitive physical reasoning. Future investigations can test whether the same or other brain regions represent other physical dimensions, types of physical forces and events, and domains outside of rigid body physics (e.g. the viscosity of liquids and the restitution of materials). How fine-grained is the neural representation of mass? Future work should also test the relationship between the amount of variance in real world physical properties, and the fine-grainedness of their neural representations. Do the same neural representations that underlie physical inference also underlie action planning (Johansson and Flanagan, 2009; Loh et al., 2010; Chouinard et al., 2005; van Nuenen et al., 2012)? A model-based account of physics in the brain could support both physical inference and action planning in the same underlying brain regions, which may serve as the seat of a neural physics engine. These studies and others can be expected to shed more light on how the frontal and parietal physics network examined here implements a causal generative model of objects and their dynamics.\n\nWe have shown evidence that object mass invariant to physical scenario, friction, object material, and motion, is represented in premotor and parietal brain regions during physical inference and prediction tasks not requiring action. The invariant representation in areas traditionally associated with action during a perceptual judgment suggests that these regions support the type of representation that would serve as the input to a generalized physics engine, useful in understanding forces, dynamics, and even planning actions.\n\n## Materials and methods\n\n### Participants\n\nSix subjects (ages 21\u201326; 3 male, 3 female) participated in Experiment 1, six (ages 21\u201340; 3 male, 3 female) in Experiment 2, and twenty (ages 20\u201332; 9 male, 11 female) in Experiment 3. A power analysis was used to calculate the appropriate number of subjects for each experiment (p0\u00a0= 0.5, p1\u00a0= 1, \u03b1\u00a0=\u00a00.01, desired power\u00a0=\u00a00.9, one-sided binomial). All participants were right-handed and had normal or corrected to normal vision. All participants provided informed consent before participation. The Massachusetts Institute of Technology Institutional Review Board approved all experimental protocols.\n\n### Experimental design\n\nIn each experiment, participants performed 2 runs of a 7 min \u2018localizer\u2019 fMRI task from Fischer et al. (2016), in which subjects viewed 6 s movies depicting stacks (\u2018towers\u2019) of yellow, blue, and white blocks created in Blender 2.70 (Blender Foundation). The block towers were constructed to be unstable such that they would topple if gravity were to take effect. Each tower was positioned in the center of a floor where half of the floor was colored green, and the other half red. In each movie the tower itself remained stationary while the camera viewpoint completed one 360\u00b0 pan, providing a range of vantage points of the tower. While viewing each movie, subjects were instructed to perform one of two tasks: imagine how the blocks would fall and report whether more blocks would come to rest on the red or green side of the floor (physics task), or report whether there are more blue or yellow blocks in the tower (color task). A physics\u00a0>\u00a0color contrast was used to identify candidate physics functional ROIs (fROIs) in each subject individually (see below) within which decoding analyses were subsequently performed.\n\nEach scanning run for this localizer task (2 per subject) consisted of 23 18 s blocks: 10 blocks of the physical task, 10 blocks of the color task, and 3 rest blocks, which consisted of a black screen with a fixation cross. Each nonrest block began with a text cue, displayed for 1 s, which read either \u2018more blue or yellow?\u2019 (color task) or \u2018where will it fall?\u2019 (physics task). The text cue was followed by the presentation of a tower movie (6 s) and then a black screen during a 2 s response period. This sequence was repeated twice within a block, with the same task being cued for both movie presentations within a block.\n\nIn the same scanning session, participants performed 4 to 6 runs of the main experimental paradigm, which was different for each experiment, as described below. Each scanning session lasted 2 hr.\n\n### Experiment 1: mass inference\n\nSubjects viewed 3 s video stimuli (Figure 1) of three different geometric solids interacting in various visual scenes (splashing into water, falling onto a pillow, being blown across a flat surface) that indicated their mass. In an event-related design, each run (four per subject) presented 36 videos in randomized order, each followed by a 1 s response period, then a rest period of variable duration (mean 6 s). During the response period, subjects were instructed to press a button indicating whether the object they saw was light or heavy. After the button press, no feedback was given to participants on correctness. In all three experiments, the assignment of buttons to responses was switched halfway through the experiment, with an equal number of trials per button-press-to-response assignment represented in training and testing data, to ensure mass decoding could not be based on specific motor responses.\n\nObjects were constructed by hand from Learning Resources \u2018View-Thru Geometric Solids.\u2019 Three shapes of equal volume were selected as stimuli: a cone, half-sphere, and rectangular prism. Two different masses were created for each object: the \u2018light\u2019 objects were left empty (45 g), and the \u2018heavy\u2019 objects were filled with a mixture of lead pellets and flour (90 g), and painted the same color. The visual appearance of the objects was identical across masses, only the object\u2019s physical behavior could be used to infer its mass. To create objects of different colors, Adobe Premiere Pro software (Adobe Systems) was used to color-shift the object surface from red to orange, for a total of 36 video stimuli. Decoding analyses in Experiment 1 collapsed across color.\n\nThe objects were filmed interacting in three different visual scenarios. Physical parameters of the scene besides object identity and mass were held constant across videos; that\u00a0is the height from which objects were dropped (splashing, dropping scenarios), the volume of water into which they fell (splashing scenario), or the distance from the hairdryer (air source) at which they were placed (blowing scenario). While the 3D shapes of the objects represented familiar visual forms, the scenarios were selected as novel domains for mass inference. Subjects did not interact physically with the objects before the scan.\n\n### Experiment 2: mass decoding during color judgment\n\nThe same stimuli from Experiment 1 were used in Experiment 2. However, in Experiment 2, participants performed a color task in addition to the mass task on the same objects. The two judgment types were matched for difficulty using data collected from 50 workers with normal color vision on Amazon Mechanical Turk. Each worker performed the light/heavy mass task as well as the red/orange color task for all 36 movies. Mean accuracy on the mass task was 86.2% (\u00b12.4 SD), mean accuracy on the color task was 89% (\u00b13.6 SD). During the scanning session, mass and color trials were presented in blocks of 6 trials each. After each video, participants were asked to press a button indicating whether the object was \u2018Light or Heavy?\u2019 (mass task), or \u2018Red or Orange?\u2019 (color task). Each run (6 per subject) consisted of 5 color blocks, 5 physics blocks, and 4 (12s) rest blocks. Participants did not receive feedback on accuracy.\n\n### Experiment 3: physical prediction in a collision task\n\nIn Experiment 3, participants viewed 6 s videos (Figure 2) of physical objects sliding down a ramp and colliding with a puck (half ping-pong ball) placed the same distance from the ramp in each video. In an event-related design, each run (4 per subject) presented 24 of the 48 videos in randomized order (subjects saw every video twice in total), each followed by a rest period of variable duration (mean 6 s). Before the experiment, subjects were instructed to respond with a button press, as early as they could within each video, whether they predicted the sliding object would launch the puck across a black line. In each video the line could lie in one of 3 different locations, to discourage memorization of outcome by object. Each run contained equal numbers of each line position (8 trials). After the button press, no feedback was given to participants on correctness. To ensure familiarity with the visual appearance of the objects in the videos and their material properties, subjects were exposed to the physical objects before the scan. All objects were placed on a flat surface and subjects were instructed to \u2018interact\u2019 with each for 5 s. This instruction was chosen instead of \u2018lift\u2019 or \u2018pick up\u2019 to avoid priming attention to mass.\n\nObject materials were selected to orthogonalize mass and friction, object material, and motion. Coefficients of friction were found by taking of the tangent of the angle of incline at which the object starts to slide down the ramp at constant speed, after being tapped. Motion in the videos was calculated using the Optical Flow package in Matlab 2016. Optical Flow identifies moving objects and calculates the amount of motion between video frames to determine the overall amount of motion in x and y dimensions in each video. The most motion was found in the movies with lego blocks (x\u00a0=\u00a01.1848 e+04, y\u00a0=\u00a01.8065e+04), followed by aluminum (x\u00a0=\u00a01.0781e+04, y\u00a0=\u00a01.767e+04), cardboard (x\u00a0=\u00a09.6789e+03, y\u00a0=\u00a01.4150e+04), and cork (x\u00a0=\u00a09.0324e+03, y\u00a0=\u00a01.4126e+04).\n\n### Data Acquisition\n\nImaging was performed at the Athinoula A. Martinos Imaging Center at MIT on a Siemens 3T MAGNETOM Tim Trio Scanner with a 32-channel head coil. A high-resolution T1-weighted anatomical image (MPRAGE) was also collected for each subject (TR\u00a0=\u00a02.53 s; TE\u00a0=\u00a01.64, 3.5, 5.36, and 7.22 ms; \u03b1\u00a0=\u00a07\u00b0; FOV\u00a0=\u00a0256 mm; matrix\u00a0=\u00a0256\u00a0\u00d7\u00a0256; slice thickness\u00a0=\u00a01 mm; 176 slices; acceleration factor\u00a0=\u00a03; 32 reference lines). Whole-brain functional data were collected using a T2*-weighted echo planar imaging pulse sequence (TR\u00a0=\u00a02 s; TE\u00a0=\u00a030 ms; flip angle-\u03b1=90\u00b0; FOV\u00a0=\u00a0200 mm; matrix\u00a0=\u00a064\u00a0\u00d7\u00a064 mm; slice thickness\u00a0=\u00a03 mm isotropic; voxel size\u00a0=\u00a03\u00a0\u00d7\u00a03 mm inplane; slice gap\u00a0=\u00a00.6 mm; 32 slices).\n\n### Eye movement recordings\n\nWe recorded eye movements (n\u00a0=\u00a06) with the EyeLink 1000 Eye-Tracker (SR Research) in the scanner. Eye tracking data were preprocessed with EyeLink Data Viewer software and analyzed in MATLAB R2016B (The MathWorks). Data were analyzed to confirm eye movements could not explain mass decoding results. Trials were labeled as light or heavy and low or high friction according to real-world video identity. For each trial, the entire duration of the video (6 s) was used for analysis. Mean eye position (deviation from center of the screen) and mean saccade amplitude (averaging over all saccades that occurred in that trial were calculated. We then used a two-way ANOVA to analyze the interaction between mass and friction and mean eye position and saccade amplitude during the fixation condition and found no significant effects.\n\n### fMRI data preprocessing\n\nData preprocessing and general linear models were performed using FsFast tools in the FreeSurfer Software Suite (freesurfer.net). All other analyses were conducted in MATLAB R2016b (The MathWorks). Preprocessing consisted of 3D motion correction, slice scan time correction, high-pass filtering via a general linear model with a Fourier basis set (cutoff of two cycles per run, which also achieved linear trend removal), and spatial smoothing with a 4 mm FWHM Gaussian kernel. Before spatial smoothing, the functional runs were individually coregistered to the subject\u2019s T1-weighted anatomical image. All individual analyses were performed in each subject\u2019s native volume. For group-level analyses, data were coregistered to standard anatomic coordinates using the Freesurfer FSAverage template. General linear models included 12 nuisance regressors based on the motion estimates generated from the 3D motion correction: x, y, and z translation; x, y, and z rotation; and the approximated first derivatives of each of these motion estimates.\n\n### Group analysis\n\nTo test whether a systematic network of regions across subjects responded more strongly to physical judgments than to color judgments in the localizer task, we performed a surface-based random-effects group analysis across all subjects using Freesurfer. We first projected the contrast difference maps for each subject onto the cortical surface, and then transformed them to a common space (the Freesurfer fsaverage template surface). The random-effects group analysis yielded a network of brain regions (p<0.0001) preferentially engaged in physical reasoning that replicated the pattern reported by Fischer et al. (2016).\n\n### fROI Definition\n\nTo examine the information represented in candidate brain regions for physical inference, we defined functional regions of interest (fROIs) in each subject individually by intersecting subject specific contrast maps with group-level parcels. Following Fischer et al. (2016), we used the towers localizer to identify brain regions in each subject that displayed a stronger response to the physics task than to the color task. These individual subject maps were then intersected with group-level physics parcels identified in Fischer et al. (2016) that were shown to be preferentially engaged in physical reasoning. Specifically, Fischer first identified 11 group-level parcels from the physics\u00a0>color contrast on toppling tower stimuli (Figure 3b). Fischer et al. suggest that the spatial content of the physics task (not present in the color task, as individual block positions were irrelevant) may have contributed to responses in candidate physics regions. A second experiment was used to control for task differences, where physical and social prediction tasks were contrasted on the same set of moving dot stimuli. In this experiment, subjects watched pairs of moving dots with motion implying social interaction (like classic Heider and Simmel animations) or physical interaction (like billiard balls). In each video, one of the dots disappeared and subjects were asked to predict its trajectory. Both conditions required mental simulation of spatial paths, but one implicitly invoked physical prediction and the other implicitly invoked social prediction. Only a subset of the parcels showed a significantly greater response to physical vs. social interactions: P1L and P1R (bilateral parcels in dorsal premotor cortex and supplementary motor area), P3L and P3R (bilateral parcels in parietal cortex situated in somatosensory association cortex and the superior parietal lobule, and P4L (the left supramarginal gyrus). We found individual subject fROIs by intersecting subject data from the physics\u00a0>color contrast with these five parcels (in volumetric space for each subject), retaining only the voxels that fell within the intersection. In this way, fROI locations were allowed to vary across individuals but required to fall within the same parcel to be labeled as a common ROI across subjects. Subsequent decoding analyses were performed in individual subject fROIs.\n\n### Decoding analysis\n\nTo test the representational content of multivoxel activity from candidate physics regions, decoding analyses (Naselaris et al., 2011; Haxby et al., 2014) were run on multivoxel activity across voxels in these fROIs. An SVM was used for classification, restricted to linearly decodable signal under the assumption that a linear kernel implements a plausible readout mechanism for downstream neurons (Shamir and Sompolinsky, 2006; DiCarlo and Cox, 2007). In each of 3 experiments we tested the invariance of physical representations by testing the classifier on data from conditions that differed from those in the data used for training along a key dimension. Trials were classified for decoding based on actual trial identity (whether the object was light or heavy). Only the data from the 3 s video was included in the decoding analysis, the 1 s response period (Experiments 1 and 2) was not used for decoding. A canonical HRF response was assumed, with the HRF aligned to the start of the video. To decode mass in Experiment 1, an SVM was trained on beta values (from all voxels within individually-defined fROIs) classified as corresponding to either \u2018heavy\u2019 or \u2018light\u2019 conditions, collapsing across shape and color. We used two of the three scenario types (splash, blow, pillow) to train the classifier and tested on the third, left-out scenario, forcing the classifier to generalize across physical scenarios and iterating over left-out conditions to obtain a mean classification accuracy for each subject. Correction for multiple comparisons was not performed, given independent data for each subject and repeated replication in multiple individual subjects. In Experiment 2, the same procedure was used to decode mass during both mass and color tasks in the interleaved block design, thus testing (i) whether Experiment 1 replicates and mass can be decoded during the mass task, and (ii) whether mass representations can be decoded from candidate physics regions during an irrelevant (color) task.\n\nWe used similar multivariate analyses to test whether we could decode mass from candidate physics fROIs during the physical prediction task in Experiment 3. Experiment 3 used an event-related design where trials were 6 s videos of objects sliding down a ramp. Decoding analyses were done on data from the entire video, with HRFs aligned to video onset. To test decoding of mass invariant to friction and motion, we trained an SVM on beta values from two conditions that differ in the mass dimension but not in friction or size (e.g. light, low friction versus heavy, low friction), and tested on the left out conditions (e.g. light, high friction versus heavy, high friction) thus forcing the classifier to generalize across coefficients of friction. This procedure was iterated over left-out conditions to obtain a mean classification accuracy. This decoding of mass is also invariant to material, as objects in the training conditions (e.g. aluminum, legos) have different material composition than objects in the testing conditions (e.g. cardboard, cork).\n",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "79a82295-f494-41f8-8df3-2ee379a644b9",
+      "submission_id": "0432dec3-5a6f-4b9e-a2c7-f209659d03a9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thomas Yeo, National University of Singapore Singapore\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.46619.sa1](https://doi.org/10.7554/eLife.46619.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors provide evidence that humans possess a constellation of brain regions involved in encoding the mass of viewed objects (which they refer to as physical inference), and show that this encoding of mass generalizes across objects and various material and physical properties. The reviewers and editors felt that the study was interesting and novel. The experiments and analyses appear to be expertly conducted, and the authors provide considerable evidence in support of their claims. Of the few studies that have investigated the neural coding of object properties such as mass and other physical object properties, few if any have demonstrated that physical inferences of this nature arise in tasks that do not require actions. Therefore, we believe this work will be of great interest to the scientific community.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Invariant representations of mass in the human brain\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Michael Frank as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jacqueline Snow (Reviewer #2); Jason Gallivan (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors provide evidence that humans possess a constellation of brain regions involved in encoding the mass of viewed objects (which they refer to as physical inference), and show that this encoding of mass generalizes across objects and various material and physical properties. The reviewers and editors felt that the study was interesting and novel. That said, there are significant concerns about several technical and interpretation issues that need to be addressed before the paper can be published. The following comments highlight the \"essential revisions\" (which the authors must address in the revised manuscript and response letter).\n\nEssential revisions:\n\n1) In general, the description of the decoding analyses did not contain sufficient details for the study to be replicated. The following points should be clarified in the revised manuscript.\n\nA) What cross-validation procedure was used for the analyses: leave-one-run-out or something else? One gets the sense that trial types were reserved for classifier testing, but that these trials would have also appeared in the same experimental run as the testing trials (e.g., In the Experiment 1 decoding). This could inflate the decoding results.\n\nB) It was also not fully clear how decoding was setup for Experiment 1, and how trials were grouped for leave-one-trial-out classification analysis. Were trials labelled as heavy vs. light in the splash and blow conditions and then tested on pillow trials? This should be clarified.\n\nC) Also, in the Materials and methods, the authors mention that beta values were used on trials 'classified' as\u2026 \u2013 do you mean based on the subject's behavioral responses or the actual trial identity? For example, in Experiment 1 (and other experiments), what were the regressors used? Was the whole 3 seconds modeled as a box? What about the 1s response period? Was reaction time, etc taken into account? Which betas were then used for classification? Was beta estimated for each trial, so classification was done per trial (that would make sense, but just clarifying). We assume a canonical HRF response was assumed? What HRF parameters? Since this is event related design, the hemodynamic response might leak across trials, which might inflate accuracies (e.g., two adjacent trials might be in the training and test sets respectively resulting in information leak). How was this handled in the decoding?\n\nD) We are not sure what's the dimensionality of the input to the SVM. Were the input beta coefficients from all voxels (which would be thousands of voxels) or was it an 11-dimensional vector, corresponding to the beta coefficients of the 11 functional ROIs? If the latter, was the GLM performed for average time courses within each of 11 ROIs? Or GLM was performed for all vertices and then the betas were averaged within each ROI?\n\nE) What regularization parameter was used for the SVM? How was this hyperparameter selected?\n\nF) In Experiment 3, it was unclear when exactly (in time) authors were decoding mass from the videos (was an HRF aligned to the onset of the video?), and was this conflated at all with the requirement that subjects respond as quickly as possible during the video whether the object will cross the line? Also, how did subjects report this?\n\nG) Please provide more details on how LO/pF/OTC texture areas were defined.\n\n2) Why not perform the analysis in each functional ROI separately? This would provide greater specificity about the effects and allow specific claims to be made about regions rather than a massive frontoparietaltemporal network. On that note, to demonstrate the specificity of the effects, we would also like to see a whole-brain searchlight decoding analysis. This would also allow some greater specificity of where in the brain they see effects of the color task (presumably V4), or where in the brain they see effects of object material (e.g., aluminum vs. cork, more on this below). The inclusion of a searchlight analysis would significantly bolster observations.\n\n3) Based on the Experiment 2 design, we are not sure you can make any claims about the automaticity of mass encoding. The study interspersed color and mass blocks, and it is difficult to rule out that the context effect on mass blocks carried over to (and created biases on) color blocks. Moreover, we think it would have strengthened their observations to show that a classifier trained on mass blocks can cross-decode mass on color blocks, rather than just decode mass from the color blocks independently (as was done).\n\n4) The authors said that \"A power analysis was used to calculate the appropriate number of subjects for each experiment.\" We assumed this meant that the authors determine a sample size of 20 was necessary for Experiment 3. Why then did the authors examine mass decoding in the LO/pF/OTC texture areas in only 6 subjects? A fair comparison, to demonstrate equivalent power, would be to demonstrate that object material (e.g., aluminum vs. cork) can be decoded using the same regions (LO/pF/OTC).\n\n5) Eye Movement Control analysis. This analysis was completely unclear. How are the different measures computed, what time windows were used for analysis (specific events in a trial?), how were the trials collapsed for analysis? No details were provided making it difficult to interpret the authors' claims.\n\n6) \"A pattern recognition approach to physical reasoning might predict that the neural representations in these regions would hold information about low-level visual features or situation-specific representations of physical variables. In contrast, if these regions support a generalized engine for physical simulation, we would expect to find that they hold representations of abstract physical dimensions that generalize across scenario and other physical dimensions.\" \u2013 We are a bit unconvinced about the logic. Isn't it possible for a pattern recognition technique to implicitly encode these abstract physical dimensions, which are then detected by your decoding approach? For example, suppose we train a reinforcement learning (RL) algorithm in a virtual environment to perform certain tasks. Isn't it possible that physical dimensions are implicitly encoded by the RL algorithm even though the RL algorithm does not utilize an explicit physical generative model? In fact, one might argue that the use of MVPA (linear SVM) in Experiment 1 suggests that the physical representation is implicit, so the authors might simply be decoding the pattern recognition approach's implicit representation of mass (or some other physical attribute) in the brain?\n\n7) I understand that the authors relied on a network of brain areas that had been identified in a previous study by Fischer et al., 2016, which were shown to be engaged in a physical reasoning paradigm. It does seem, however, from the description of the localizer task, that the contrast of falling direction (i.e., the 'physics' task) vs. color task, would identify a number of different brain areas, not all of which would have similar functions. As one example, intuitively, it seems that the physics task that involved estimating where the leaning tower of blocks would fall would preferentially activate motion-selective areas (i.e., hV5/MT+) \u2013 which have been shown in previous fMRI studies to be activated when observers anticipate motion. The group maps illustrated in Figure 3A do indeed suggest an involvement of such motion-selective cortex, especially in the RH. As such, I wondered how meaningful the results are given that there is such a broad network of areas that is being sampled in the analyses. Is the claim that the network as a whole is operating as a 'physics engine', or are more localized regions within the network accounting for this function more so than others? It is also possible that different regions within the network may be more or less likely to show invariance \u2013 for example in real-world scenarios when, presumably, more specific rather than invariant representations would be beneficial to support possible actions? Perhaps identifying the areas that were part of this 'network' (either in the figure or a new table) would help readers to make their own assessment.\n",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "525e36c2-60e0-45a5-9851-5ffff9e461cd",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C1",
+      "claim": "An intuitive understanding of physical objects and events is critical for successfully interacting with the world.",
+      "claim_type": "EXPLICIT",
+      "source": "An intuitive understanding of physical objects and events is critical for successfully interacting with the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the importance of physical understanding, drawing from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "946d56f7-c690-49d6-b278-f308871ebd59",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C2",
+      "claim": "Infants can differentiate liquids from solids by 5 months of age.",
+      "claim_type": "EXPLICIT",
+      "source": "infants can differentiate liquids from solids by 5 months of age (Hespos et al., 2009; Hespos et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hespos et al., 2009 and 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "f4aaf405-f25c-4523-a804-615a0e5cbb92",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C3",
+      "claim": "Infants can infer an object's weight from its compression of a soft material by 11 months.",
+      "claim_type": "EXPLICIT",
+      "source": "infer an object's weight from its compression of a soft material by 11 months (Hauf et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hauf et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "a8499b48-b74f-47f1-a22a-09984e60e0fd",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C4",
+      "claim": "Infants can use an object's center of mass to judge its stability on the edge of a surface by 12 months.",
+      "claim_type": "EXPLICIT",
+      "source": "use an object's center of mass to judge its stability on the edge of a surface by 12 months (Baillargeon, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Baillargeon, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "35891f43-dec1-443c-9256-9c2002335470",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C5",
+      "claim": "Human physical reasoning is fast and rich by adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "By adulthood, human physical reasoning is fast and rich, and it generalizes across diverse real-world scenarios.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about adult physical reasoning based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "702e4e6d-219d-43aa-b174-3ee680311323",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C6",
+      "claim": "Little is known about the brain basis of intuitive physics.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet little is known about the brain basis of intuitive physics, which could enable direct tests of computational models by revealing the relevant neural representations and their invariances and automaticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field, based on inference from the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "a2341f92-d80e-40fe-a8e3-4f0cbf22d3eb",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C7",
+      "claim": "Model-free pattern recognition approaches to physical reasoning use deep neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "A key distinction between computational models of intuitive physics is whether they use model-free pattern recognition (such as deep neural networks) (Lerer et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lerer et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "c96f0d0e-c2ad-41e5-9839-e5488adf7bf6",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C8",
+      "claim": "The generative approach models physical reasoning as approximate probabilistic inference over simulations in a physics engine.",
+      "claim_type": "EXPLICIT",
+      "source": "The generative approach models physical reasoning as approximate probabilistic inference over simulations in a physics engine, an architecture with two core parts: an object-based representation of a 3D scene (which encodes many static variables, such as the size and mass of each object), and a model of physical forces that govern the scene's dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Battaglia et al., 2013 in the preceding sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "518e2b23-cd61-4680-81ce-cc78a7a0d722",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C9",
+      "claim": "A physics engine has two core parts: an object-based representation of a 3D scene and a model of physical forces.",
+      "claim_type": "EXPLICIT",
+      "source": "an architecture with two core parts: an object-based representation of a 3D scene (which encodes many static variables, such as the size and mass of each object), and a model of physical forces that govern the scene's dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the physics engine architecture, drawing from established computational models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "00041ae2-79d2-4f81-8d61-f65a6318eb43",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C10",
+      "claim": "Simulation-based models can make robust inferences with accuracy comparable to human performance across many areas of physics.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this framework, simulation-based models can make robust inferences with accuracy comparable to human performance across many areas of physics, including collisions (Smith et al., 2013a), (Smith et al., 2013b), fluid dynamics (Bates et al., 2015), the motion of granular materials (Kubricht et al., 2016), and predictions about the outcome of applied forces (Ullman et al., 2018; Hamrick et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to Smith et al., Bates et al., Kubricht et al., Ullman et al., and Hamrick et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "3b36ff05-4669-49e5-9398-e0ab61e0fb4f",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C11",
+      "claim": "Specific regions in the parietal and frontal lobes are implicated in intuitive physical inference in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent fMRI study has implicated specific regions in the parietal and frontal lobes in intuitive physical inference in humans (Fischer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fischer et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "174f8248-9bf4-4dfd-b9fa-831481e62ba1",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C12",
+      "claim": "Candidate physics regions respond more strongly during a physical reasoning task than a difficulty-matched non-physical discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "These regions responded more strongly during a physical reasoning task (which direction a tower of blocks will fall) than a difficulty-matched non-physical discrimination performed on the same stimuli",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fischer et al., 2016 in the preceding sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "7575f836-01ef-4321-b90b-2e58be5e33c7",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C13",
+      "claim": "Candidate physics regions respond more strongly during viewing of animated shapes depicting physical interactions than social interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "more strongly during viewing of animated shapes depicting physical interactions of inanimate objects than social interactions of agents (Fischer et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fischer et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "cd7c3675-a821-4ffc-9b96-8ca249df7505",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C14",
+      "claim": "Candidate physics regions resemble regions previously implicated in action planning.",
+      "claim_type": "EXPLICIT",
+      "source": "The candidate regions for intuitive physical inference found in this study resemble regions previously implicated in action planning (Johansson and Flanagan, 2009; Gallivan et al., 2014; Evarts and Thach, 1969; Loh et al., 2010; Chouinard et al., 2005; van Nuenen et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies on action planning.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "bce75d45-b8e1-4a41-a4ee-858a9b4e7ced",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C15",
+      "claim": "Candidate physics regions resemble regions previously implicated in tool use.",
+      "claim_type": "EXPLICIT",
+      "source": "and tool use (Gallivan et al., 2013; Brandi et al., 2014; Valyear et al., 2012; Goldenberg and Hagmann, 1998; Goldenberg and Spatt, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies on tool use.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "adf8e160-c561-48ea-9f85-aa7fce522706",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C16",
+      "claim": "Physical understanding is important for action planning and tool use.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with the importance of physical understanding for these functions (Cant and Xu, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cant and Xu, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "1fff16cb-893e-4d04-af9e-fa6936f03b9f",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C17",
+      "claim": "It is unknown what candidate physics regions represent about physical events.",
+      "claim_type": "EXPLICIT",
+      "source": "However, crucially, it is unknown what these regions represent about physical events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in knowledge that motivates the current study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "a23d9281-be05-4860-bbc6-58b04e00f210",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C18",
+      "claim": "Mass is the most basic scalar quantity that captures a property of all objects and governs motion in every physical interaction via Newton's second law.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass is not the only physical variable of interest, but it is the most basic scalar quantity that captures a property of all objects and that governs motion in every physical interaction, via Newton's second law.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established physics knowledge (Newton's second law).",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "5d107225-5174-4ed7-bf24-7aeec00ae876",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C19",
+      "claim": "Participants were scanned with fMRI while performing physical inference, prediction, and orthogonal tasks on visually-presented stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were scanned with fMRI while performing physical inference, prediction, and orthogonal tasks on visually-presented stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "7c3b43a0-44e5-406e-bf59-c403c10121ac",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C20",
+      "claim": "Each scanning session began with two runs of a localizer task to identify candidate regions engaged in physical reasoning.",
+      "claim_type": "EXPLICIT",
+      "source": "Each scanning session began with two runs of a previously developed 'localizer' task (Figure 1a) to identify in each subject individually candidate regions engaged in physical reasoning (Fischer et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental procedure, with reference to Figure 1a and citation to Fischer et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "464d9252-e67d-419a-9d85-8667a7b6d861",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C21",
+      "claim": "Pattern classification methods were applied to fMRI data to test for invariant representations of mass.",
+      "claim_type": "EXPLICIT",
+      "source": "We then we applied pattern classification methods to fMRI data obtained from subjects viewing videos of dynamic objects, to test for invariant representations of mass in these regions (Fischer et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "9af30cf3-9bad-4f36-8f89-d558efa1330d",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C22",
+      "claim": "Six subjects participated in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Six subjects were scanned using fMRI while viewing 3 s movies of real objects interacting in various physical scenarios",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "f03d48b7-130c-4a9a-9e5c-5969279cd0ef",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C23",
+      "claim": "Experiment 1 used movies of objects splashing into water, being blown by a hairdryer, and falling onto a pillow.",
+      "claim_type": "EXPLICIT",
+      "source": "Six subjects were scanned using fMRI while viewing 3 s movies of real objects interacting in various physical scenarios: splashing into a container of water, being blown across a flat surface by a hairdryer, and falling onto the soft surface of a pillow (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the stimuli used in Experiment 1, with reference to Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "1f635ba6-74c3-4a16-aa49-482596569f3a",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C24",
+      "claim": "Three rigid 3D shapes of equal volume were used in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Three rigid 3D shapes of equal volume were used (a rectangular prism, a cone, and a half-sphere)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stimuli design in Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "dba343fb-0a21-46d9-9305-8bfa57a4da5b",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C25",
+      "claim": "Movies in Experiment 1 were filmed for two different colors and two different masses of each shape.",
+      "claim_type": "EXPLICIT",
+      "source": "and movies were filmed for two different colors and two different masses (45 g, 90 g) of each shape (36 total movies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stimulus parameters in Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "cfd8dcf5-cea8-4a77-8e48-163e077faf13",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C26",
+      "claim": "Accuracy on the mass inference task in Experiment 1 was 88% across six subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Accuracy on this task was 88% (i.e., percentage of responses matching the ground truth outcome) across six subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports behavioral performance data from Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "a7826714-3db9-4c1d-a1fb-e6bd545367e5",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C27",
+      "claim": "Situation-invariant mass decoding was significant in the candidate physics system with a group mean accuracy of 0.64.",
+      "claim_type": "EXPLICIT",
+      "source": "This situation-invariant decoding was significant in the candidate physics system, with a group mean accuracy of 0.64 (p=0.0304, two-sided t-test, t-statistic = 2.9913, df = 5, significance threshold = 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical results from the decoding analysis in Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "f3ee05b0-ed63-4056-9ce1-9d23cdb742d6",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C28",
+      "claim": "Mean classification accuracies across all three scenarios were greater than 50% in each subject in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean classification accuracies across all three scenarios as well as classification accuracies for each left out scenario individually were greater than 50% in each subject.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports individual subject results from Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "fc05d853-6762-4dc1-8ece-b74e093ba7a2",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C29",
+      "claim": "Mass representations in Experiment 1 are not confounded with shape or color.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, mass representations are not confounded with shape or color, as colors and shapes were represented in equal proportions for both masses in the training and testing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental design controlling for shape and color.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "0d325cee-c449-4060-9dd0-cdfb703c7a70",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C30",
+      "claim": "Decoding in Experiment 1 could not be based on the amount of motion in the videos.",
+      "claim_type": "EXPLICIT",
+      "source": "Decoding could also not be based on the amount of motion in the videos, as heavy objects caused more motion in two of the conditions (splash, pillow), but did not move at all in the third (blow; see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the pattern of motion across conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "fb4cc887-4053-4901-9c7e-b08659374a29",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C31",
+      "claim": "Decoding in Experiment 1 could not be based on specific motor responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, decoding could not be based on specific motor responses, because the assignment of buttons to responses was switched halfway through the experiment, with equal an equal number of trials per button-press-to-response assignment represented in training and testing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental design controlling for motor responses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "6ab19ae5-a535-43e5-b869-a2455503ef05",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C32",
+      "claim": "Experiment 2 used a design that interleaves blocks of the mass task and a color task on the same stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, as well as the automaticity of the mass representation, we used a design that interleaves blocks of the mass task and a color task on the same stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "3b03e394-5975-433b-ad10-0ace1cc7293b",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C33",
+      "claim": "Six new subjects participated in Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "In six new subjects, we replicated the findings of Experiment 1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample for Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "3b5baad1-4574-41e0-8b5a-1204e900f98c",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C34",
+      "claim": "Mean situation-invariant decoding accuracy in Experiment 2 during the mass task was 0.63.",
+      "claim_type": "EXPLICIT",
+      "source": "mean situation-invariant decoding accuracy of 0.63 (across scenarios) was significantly above chance (p=0.0357, two-sided t-test, t-statistic = 2.853, df = 5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical results from Experiment 2 during the mass task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "9566ebc7-f1c6-4c24-8aa4-4d3df181a074",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C35",
+      "claim": "Decoding was found in 6 out of 6 subjects individually during the mass task in Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "and decoding was found in 6 out of 6 subjects individually during the mass task (task accuracy 87%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports individual subject results from Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "f7d715cd-91c9-4f8e-8660-c4f594ca0666",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C36",
+      "claim": "Task accuracy on the mass task in Experiment 2 was 87%.",
+      "claim_type": "EXPLICIT",
+      "source": "and decoding was found in 6 out of 6 subjects individually during the mass task (task accuracy 87%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports behavioral performance data from Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "58a84c75-446d-4362-a243-f2761444b63f",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C37",
+      "claim": "Mass decoding was significantly above chance during the color task in Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, mass decoding was also significantly above chance (mean = 0.61, p=0.0033, two-sided t-test, t-statistic = 5.2576, df = 5), and present in each subject individually, during the color task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical results from Experiment 2 during the color task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "68255906-a536-465d-89a7-ca1cd820241c",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C38",
+      "claim": "Mass is represented even when the task does not require it.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that mass is represented even when the task does not require it",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the finding of mass decoding during the color task.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "bec38788-b8c4-41be-b533-e2240ad131d7",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C39",
+      "claim": "The decoding of mass cannot be explained as an abstract response code.",
+      "claim_type": "EXPLICIT",
+      "source": "and further that the decoding of mass we observe cannot be explained as an abstract response code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the finding of mass decoding during the color task where mass was not task-relevant.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "fea3c1f4-ca66-407c-8280-9a9dee28c4f3",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C40",
+      "claim": "Color decoding from the same voxel activity during the color task was at chance in all subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Further evidence against the idea that the mass representations reflect response codes comes from the fact that color decoding from the same voxel activity during the color task was at chance in all subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a null result for color decoding in Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "416ac8dc-7080-408e-a365-9254340bd53c",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C41",
+      "claim": "The candidate physics engine does not represent all task-relevant dimensions and may be more specific to physical variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the candidate physics engine does not represent all task-relevant dimensions and may be more specific to physical variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the finding that mass but not color could be decoded.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "c0812718-70c0-4745-86d0-4c68910a615b",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C42",
+      "claim": "Experiment 3 used 48 real-world movies of objects sliding down a ramp and colliding with a puck.",
+      "claim_type": "EXPLICIT",
+      "source": "We created 48 real-world movies. Each 6 s video shows an object (made of aluminum, cardboard, lego, or cork) sliding down a ramp and colliding with a puck (half-ping-pong ball), whose initial location is consistent between videos (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the stimuli used in Experiment 3, with reference to Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "a2c5cf78-be1c-4c76-a956-923fc1b2a290",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C43",
+      "claim": "In Experiment 3, subjects answered whether they predict the sliding object will launch the puck across a black line.",
+      "claim_type": "EXPLICIT",
+      "source": "In the task, subjects answer (as immediately as possible) whether they predict the sliding object will launch the puck across a black line, which can lie in three different locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task in Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "891572f8-695d-4444-9be1-0e6853bbc579",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C44",
+      "claim": "The stimuli in Experiment 3 were designed to orthogonalize mass, friction, and motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these stimuli were designed in a way that orthogonalizes mass, friction, and motion in the videos (Figure 2a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the stimulus design in Experiment 3, with reference to Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "fadc8089-6778-4b7c-b3c5-b08a43c869dd",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C45",
+      "claim": "Accuracy in the prediction task in Experiment 3 was 71% across 20 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Accuracy in the prediction task was 71% across 20 subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports behavioral performance data from Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "9e23e458-15ac-479f-b477-d59cdee95f0c",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C46",
+      "claim": "Mass can be decoded from candidate physics regions in Experiment 3 with mean accuracy of 0.60.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiment 3 replicated once again our finding that mass can be decoded from candidate physics regions (mean accuracy of 0.60 was significant, p=0.0392, two-sided t-test, t-statistic = 2.2152, df = 19, significance threshold = 0.05 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical results from the decoding analysis in Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "f01f5f71-01af-43a4-8f67-9cc5bd8c7fe7",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C47",
+      "claim": "Mass decoding in Experiment 3 required generalization across friction and material of the object.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, this experiment demonstrates an important new invariance of these mass representations beyond those already found in Experiments 1 and 2: the mass decoding in Experiment 3 required generalization across the friction and material of the object shown (lego to cork for heavy, and cardboard to aluminum for light)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental design where training and testing used different materials and friction levels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "9915c2ad-f147-4f83-a58f-44ed1294dabc",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C48",
+      "claim": "Mass decoding in Experiment 3 required generalization across the amount of motion in the videos.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as generalization across the amount of motion in the videos (calculated by measuring the amount of optical flow; see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental design and optical flow measurements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "3c47aaf7-8778-44a6-9552-877b9837f8fa",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C49",
+      "claim": "Eye movements were recorded for 6 subjects in Experiment 3 to verify fixation and ensure mass decoding was independent of eye movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye movements were recorded for 6 subjects, to verify that subjects were fixating and to ensure that mass decoding was independent of eye movement (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an additional control measure in Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "c5f8aa6d-f272-4960-b33d-6e407ebf7dcf",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C50",
+      "claim": "A two-way ANOVA revealed no significant effects of mass or friction on mean eye position or mean saccade amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "A two-way ANOVA with mass and friction as repeated-measures factors revealed no significant effects at the .05 significance level of mass or friction on mean eye position (mass: F1,3 = 0.084, p=0.79; friction: F1,3 = 0.31, p=0.62) or mean saccade amplitude (mass: F1,3 = 0.28, p=0.63; friction: F1,3 = 0.46, p=0.55)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical results from eye movement analysis in Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "e6b7607b-cc40-49aa-a368-0fab4f496277",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C51",
+      "claim": "It is unlikely that eye movements could explain the decoding results in Experiment 3.",
+      "claim_type": "EXPLICIT",
+      "source": "so it is unlikely that eye movements could explain our decoding results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the null results from eye movement analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "ea0ebb4c-e3ac-4fd5-b147-dff3e866258b",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C52",
+      "claim": "A localizer task based on the contrast of object textures and ensembles versus their scrambled counterparts was used to identify LO and texture-sensitive regions of OTC.",
+      "claim_type": "EXPLICIT",
+      "source": "Following Gallivan et al., we used a localizer task (Cant and Xu, 2012) based on the contrast of object textures and ensembles versus their scrambled counterparts, to identify LO and texture-sensitive regions of OTC in six participants completing the ramp task in the same session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an additional localizer task used in Experiment 3, with citation to Cant and Xu, 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "1da5602b-bdc6-4300-a958-6c80938eb7fd",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C53",
+      "claim": "Invariant mass decoding did not reach significance in LO during Experiment 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these subjects showed reliable decoding of a mass representation invariant to friction, material, and motion in candidate physics regions during the physical prediction task (Experiment 3), this invariant decoding did not reach significance in LO (p=0.39)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a null result for mass decoding in LO.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "45a1b0a2-3d65-45e5-af6c-9d2b40716c05",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C54",
+      "claim": "Invariant mass decoding did not reach significance in OTC during Experiment 3.",
+      "claim_type": "EXPLICIT",
+      "source": "or in OTC (p=0.67) during the same task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a null result for mass decoding in OTC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "1b66f703-e912-4fef-bafa-4e66478a9d8b",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C55",
+      "claim": "Parietal and frontal regions previously implicated in intuitive physics compute an abstract representation of mass useful in a generalized model of physics.",
+      "claim_type": "EXPLICIT",
+      "source": "While the parietal and frontal regions previously implicated in intuitive physics are recruited to compute an abstract representation of mass useful in a generalized model of physics",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the finding of invariant mass decoding in these regions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "235d279c-e0a9-4d7a-ab36-de77977825dd",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C56",
+      "claim": "Regions in the ventral stream may be recruited to infer object mass tied to scene- and task-specific cues.",
+      "claim_type": "EXPLICIT",
+      "source": "regions in the ventral stream, canonically associated with visual pattern recognition, may be recruited to infer object mass tied to scene- and task-specific cues such as the visual appearance of object material.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the null results in ventral stream regions and their known functions.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "884c1d11-0417-423e-9284-29df4f119010",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C57",
+      "claim": "A whole-brain random-effects group analysis was performed for the physics >color contrast using all data from the toppling towers localizer.",
+      "claim_type": "EXPLICIT",
+      "source": "We used all data (two runs per subject) from the toppling towers localizer to perform a whole-brain random-effects group analysis for the physics >color contrast (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the group-level analysis performed, with reference to Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "582c897f-4498-444a-a230-21a788a8b1dd",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C58",
+      "claim": "The group analysis identifies a map of brain regions, primarily premotor and parietal areas, preferentially engaged in physical reasoning.",
+      "claim_type": "EXPLICIT",
+      "source": "This group analysis identifies a map of brain regions, primarily premotor and parietal areas, that was first shown in Fischer et al. (2016) to be preferentially engaged in physical reasoning, and is now replicated here in 32 new subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the results of the group analysis, with citation to Fischer et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "7d303bc7-f703-4c35-878c-4967c6797892",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C59",
+      "claim": "The candidate physics network encodes an abstract, generalizable representation of object mass that can be decoded from individual subject fROIs in 31 out of 32 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that this candidate physics network encodes an abstract, generalizable representation of object mass that can be decoded from individual subject fROIs (see Materials and methods) in 31 out of 32 subjects (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the main finding across all subjects, with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "71c595a1-9fa2-4c00-9228-8b2fd6ab8bf5",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C60",
+      "claim": "In a network of parietal and frontal brain regions previously implicated in intuitive physical inference, robust decoding of object mass was found, replicated across three experiments and present numerically in 31 out of 32 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "In a network of parietal and frontal brain regions previously implicated in intuitive physical inference, and replicated here in a larger sample (see Figure 3), we find robust decoding of object mass, replicated across three experiments and present numerically in 31 out of 32 participants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This summarizes the main finding of the study, with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "e4bc3c0c-2ac7-47cd-9b79-fcbb07239ff6",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C61",
+      "claim": "The mass representation is invariant to the scenario revealing the object's mass, as well as to object material, friction, and motion energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, this mass representation is invariant to the scenario revealing the object's mass (splashing, falling, and blowing), as well as to object material, friction, and motion energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the key invariances demonstrated across the three experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "88cb4442-b591-4c11-9876-bfabac4229b7",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C62",
+      "claim": "The study presents the first neural evidence of a mass representation underlying physical reasoning with invariance that supports flexible, generalizable navigation of the physical world.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present the first neural evidence of a mass representation underlying physical reasoning with invariance that supports this kind of flexible, generalizable navigation of the physical world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty and significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "3c251fe6-b6c7-4f9d-afbe-0eb556e49297",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C63",
+      "claim": "Among current computational models, structured generative models such as physics engines best exhibit the capacity for generalization found in human physical reasoning.",
+      "claim_type": "EXPLICIT",
+      "source": "Among current computational models, those that best exhibit this capacity for generalization are structured generative models such as physics engines (Battaglia et al., 2013; Yildirim et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Battaglia et al., 2013 and Yildirim et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "97f653cc-a103-42c4-99bc-16ea5518c3d4",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C64",
+      "claim": "The network of frontal and parietal fROIs implements in some form a causal generative model of physical objects and their dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "supporting the hypothesis that the network of frontal and parietal fROIs we identify implements in some form a causal generative model of physical objects and their dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the invariant mass representations found and comparison to computational models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "36f1139a-79e9-4688-b032-223c0b32a2ce",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C65",
+      "claim": "Neural representations underlying physical reasoning have only been studied in action planning tasks to date.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, neural representations underlying physical reasoning have only been studied in action planning tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "70bcde31-2e7a-4e89-910b-492b1f4589e6",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C66",
+      "claim": "Gallivan et al. (2014) used multivariate decoding methods to find representations of object mass in ventral visual pathway areas during action planning.",
+      "claim_type": "EXPLICIT",
+      "source": "Gallivan et al. (2014). used multivariate decoding methods to find, in multivoxel activity patterns during action planning, representations of object mass in ventral visual pathway areas, specifically the lateral occipital complex (LO), posterior fusiform sulcus (pFs), and texture-sensitive regions of occipitotemporal cortex (OTC), in addition to motor cortex (M1) and dorsal premotor cortex (PMd)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gallivan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "c2ffc77b-8180-4924-8d89-e6f558b5c11a",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C67",
+      "claim": "Mass information for action planning is known to be represented in motor cortex (M1) and dorsal premotor cortex (PMd).",
+      "claim_type": "EXPLICIT",
+      "source": "where mass information for action planning is known to be represented (Johansson and Flanagan, 2009; Evarts and Thach, 1969; Loh et al., 2010; Chouinard et al., 2005; van Nuenen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies on motor planning.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "39645671-981d-4b53-9594-99a049ea6138",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C68",
+      "claim": "Prior studies have provided evidence for representations of mass only when participants are performing action planning tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "First, prior studies have provided evidence for representations of mass (Johansson and Flanagan, 2009; Gallivan et al., 2014; Evarts and Thach, 1969; Loh et al., 2010; Chouinard et al., 2005; van Nuenen et al., 2012) only when participants are performing action planning tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of prior work, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "bdb1447c-4145-4b0c-bf3c-d4839dc86848",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C69",
+      "claim": "The current study shows that mass representations are available when subjects are not asked about mass per se.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we show that these representations are available when subjects are not asked about mass per se, for instance in the ramp task where mass is relevant to the task but not explicitly reported, and in the color task where mass is not relevant at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings from Experiments 2 and 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "f97cbb73-9723-465e-bedc-fe14eaba800f",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C70",
+      "claim": "Prior studies have decoded representations of mass only within a particular stimulus or scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, and more importantly, prior studies have decoded representations of mass only within a particular stimulus or scenario, whereas our study finds abstract representations of mass that generalize across scenarios and are invariant to friction, material, and motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of prior work and the novelty of the current findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "71c313d0-77d2-4555-92db-f407fc360e23",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C71",
+      "claim": "The abstractness and invariance of the mass representations suggest they reflect inputs to a physics engine in the brain rather than just another dimension of visual pattern classification.",
+      "claim_type": "EXPLICIT",
+      "source": "It is the abstractness and invariance of the mass representations reported here that suggests they reflect not just another dimension of visual pattern classification, but the generalizability expected of inputs to a physics engine in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of the mass representations found.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "4e69f476-8324-4403-bcd8-5c39a6b0a5de",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C72",
+      "claim": "Invariant representations of mass are found in a network of frontal and parietal regions that support machinery for a neural physics engine.",
+      "claim_type": "EXPLICIT",
+      "source": "These invariant representations of mass are found in a network of frontal and parietal regions (Figure 3) that we suggest support machinery for a neural physics engine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the findings, with reference to Figure 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "55f77b08-cf99-48ff-8283-b33a4136831c",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C73",
+      "claim": "Similar frontal and parietal regions have been implicated in thinking about physical concepts presented as words.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar frontal and parietal regions have been implicated in thinking about physical concepts presented as words (Mason and Just, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mason and Just, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "669c6209-ad1e-42ca-b35b-4a12eef9f18b",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C74",
+      "claim": "The physics network represents abstract, generalizable physical concepts rather than low-level visual features or situation-specific representations.",
+      "claim_type": "EXPLICIT",
+      "source": "supporting the hypothesis that this network represents abstract, generalizable physical concepts rather than low-level visual features or situation-specific representations of physical variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the invariant representations found and comparison to other studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "0bb2cd60-983c-4410-af20-bbf6e796401e",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C75",
+      "claim": "Invariant mass representations were not found in ventral visual pathway areas such as LOC and OTC in tasks not requiring action planning.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find invariant mass representations in ventral visual pathway areas such as LOC and OTC (in tasks not requiring action planning)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a null result for ventral stream regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "0a0d4942-c5bc-4df9-b425-5768369f457d",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C76",
+      "claim": "LOC may not play a causal role in computing object weight.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that LOC may not play a causal role in computing object weight. This supports previous findings by Buckingham et al. (2018), which showed that a patient with bilateral lesions including LOC had a preserved ability to judge object weight (Buckingham et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citation to Buckingham et al., 2018.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "8b994e96-806a-4817-9e0c-2c394dfcd63a",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C77",
+      "claim": "When ventral visual areas represent motor-relevant object properties, it may be a top-down effect driven by the motor planning process where representations are tied to specific tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "This overarching pattern of results suggests that when ventral visual areas do represent motor-relevant object properties (Gallivan et al., 2014), it may be a top-down effect driven by the motor planning process where representations are tied to specific tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the pattern of results and comparison to Gallivan et al., 2014.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "e54d4137-72eb-40ba-b48d-92adcf4a1b9b",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C78",
+      "claim": "It remains unknown how the brain estimates generalizable physical properties of objects from visual inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains unknown how the brain estimates generalizable physical properties of objects from visual inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about an open question in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "09c2643e-dc90-4ebe-acc9-8f1e02d64ec5",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C79",
+      "claim": "Feed-forward inference methods akin to deep-learning based recognition models may be integrated with generative models to provide efficient inference of physical properties.",
+      "claim_type": "EXPLICIT",
+      "source": "It could be that feed-forward inference methods, akin to deep-learning based recognition models, are integrated with generative models and provide an efficient means of inference of physical properties that then serve as inputs to physics engines. This account has been explored computationally and has received behavioral support (Yildirim et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to Yildirim et al., 2019.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "da8f20ac-9dea-4e82-9821-b41e214eacf0",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C80",
+      "claim": "At the level of prediction and inference, intuitive physics recruits brain regions and representations outside the ventral stream.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that at the level of prediction and inference, intuitive physics recruits brain regions and representations outside the ventral stream, the canonical locus of visual pattern recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "9d999bfd-48ad-43f7-8180-8c0707970136",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C81",
+      "claim": "Six subjects participated in Experiment 1 (ages 21\u201326; 3 male, 3 female).",
+      "claim_type": "EXPLICIT",
+      "source": "Six subjects (ages 21\u201326; 3 male, 3 female) participated in Experiment 1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant demographics for Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "913f1559-c2dc-43df-96e5-ec1b61c9becf",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C82",
+      "claim": "Six subjects participated in Experiment 2 (ages 21\u201340; 3 male, 3 female).",
+      "claim_type": "EXPLICIT",
+      "source": "six (ages 21\u201340; 3 male, 3 female) in Experiment 2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant demographics for Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "e4a331ed-2ebe-4810-8687-c0ecb4b1bae0",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C83",
+      "claim": "Twenty subjects participated in Experiment 3 (ages 20\u201332; 9 male, 11 female).",
+      "claim_type": "EXPLICIT",
+      "source": "and twenty (ages 20\u201332; 9 male, 11 female) in Experiment 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant demographics for Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "8f3d3404-df48-479c-8c38-53a418ad5a17",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C84",
+      "claim": "All participants were right-handed and had normal or corrected to normal vision.",
+      "claim_type": "EXPLICIT",
+      "source": "All participants were right-handed and had normal or corrected to normal vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes inclusion criteria for participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "ea58c3b7-af7a-43b1-99a1-2a5c1363e0ed",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C85",
+      "claim": "The Massachusetts Institute of Technology Institutional Review Board approved all experimental protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "The Massachusetts Institute of Technology Institutional Review Board approved all experimental protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "9d19cfd3-e97e-466b-97cd-88dd2817598b",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C86",
+      "claim": "The localizer task used movies depicting stacks of blocks created in Blender 2.70.",
+      "claim_type": "EXPLICIT",
+      "source": "In each experiment, participants performed 2 runs of a 7 min 'localizer' fMRI task from Fischer et al. (2016), in which subjects viewed 6 s movies depicting stacks ('towers') of yellow, blue, and white blocks created in Blender 2.70 (Blender Foundation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stimuli creation method for the localizer task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "24000406-c3d4-4983-a454-5555a759a69c",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C87",
+      "claim": "The block towers in the localizer were constructed to be unstable such that they would topple if gravity were to take effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The block towers were constructed to be unstable such that they would topple if gravity were to take effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the localizer stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "8a59b040-b5a2-48f0-880e-e8891c4ddb86",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C88",
+      "claim": "Each scanning run for the localizer task consisted of 23 18 s blocks: 10 blocks of the physical task, 10 blocks of the color task, and 3 rest blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Each scanning run for this localizer task (2 per subject) consisted of 23 18 s blocks: 10 blocks of the physical task, 10 blocks of the color task, and 3 rest blocks, which consisted of a black screen with a fixation cross.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the localizer task runs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "879746ba-fc98-43df-b0a4-bc87451b91a7",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C89",
+      "claim": "Objects in Experiment 1 were constructed from Learning Resources 'View-Thru Geometric Solids.'",
+      "claim_type": "EXPLICIT",
+      "source": "Objects were constructed by hand from Learning Resources 'View-Thru Geometric Solids.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the materials used to create stimuli in Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "509f16d1-8bb7-46d1-9c42-b2aac8050a1a",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C90",
+      "claim": "The 'light' objects in Experiment 1 were left empty (45 g), and the 'heavy' objects were filled with a mixture of lead pellets and flour (90 g).",
+      "claim_type": "EXPLICIT",
+      "source": "Two different masses were created for each object: the 'light' objects were left empty (45 g), and the 'heavy' objects were filled with a mixture of lead pellets and flour (90 g), and painted the same color.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how different masses were created for Experiment 1 stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "15b76507-6044-4d73-bd97-9242abcf92e2",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C91",
+      "claim": "The visual appearance of the objects in Experiment 1 was identical across masses.",
+      "claim_type": "EXPLICIT",
+      "source": "The visual appearance of the objects was identical across masses, only the object's physical behavior could be used to infer its mass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key control in the stimulus design of Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "8be6c151-386a-49fd-8efe-dcd1d761e4aa",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C92",
+      "claim": "The mass and color tasks in Experiment 2 were matched for difficulty using data collected from 50 workers on Amazon Mechanical Turk.",
+      "claim_type": "EXPLICIT",
+      "source": "The two judgment types were matched for difficulty using data collected from 50 workers with normal color vision on Amazon Mechanical Turk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a control procedure for Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "d14bfd8f-a7ee-4c55-9839-2aef319355c9",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C93",
+      "claim": "Mean accuracy on the mass task in the Mechanical Turk pilot was 86.2% (\u00b12.4 SD).",
+      "claim_type": "EXPLICIT",
+      "source": "Mean accuracy on the mass task was 86.2% (\u00b12.4 SD)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports behavioral data from the pilot study for Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "bba69b9e-2cbe-4b17-b286-9e6125a59688",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C94",
+      "claim": "Mean accuracy on the color task in the Mechanical Turk pilot was 89% (\u00b13.6 SD).",
+      "claim_type": "EXPLICIT",
+      "source": "mean accuracy on the color task was 89% (\u00b13.6 SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports behavioral data from the pilot study for Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "2377c4a5-8509-4deb-bbfa-a31eed32a081",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C95",
+      "claim": "Materials in Experiment 3 were selected to orthogonalize mass and friction.",
+      "claim_type": "EXPLICIT",
+      "source": "Object materials were selected to orthogonalize mass and friction, object material, and motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stimulus design rationale for Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "221795c2-87a6-47e8-8def-5a442469d4e9",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C96",
+      "claim": "Coefficients of friction in Experiment 3 were found by taking the tangent of the angle of incline at which the object starts to slide down the ramp at constant speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Coefficients of friction were found by taking of the tangent of the angle of incline at which the object starts to slide down the ramp at constant speed, after being tapped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for measuring friction in Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "5a183f78-c6ca-4023-93ae-34355ef2e53e",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C97",
+      "claim": "Motion in the videos of Experiment 3 was calculated using the Optical Flow package in Matlab 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "Motion in the videos was calculated using the Optical Flow package in Matlab 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for quantifying motion in Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "467a9fee-3665-4734-b815-2a42dd71b006",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C98",
+      "claim": "The most motion in Experiment 3 videos was found in the movies with lego blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "The most motion was found in the movies with lego blocks (x = 1.1848 e+04, y = 1.8065e+04), followed by aluminum (x = 1.0781e+04, y = 1.767e+04), cardboard (x = 9.6789e+03, y = 1.4150e+04), and cork (x = 9.0324e+03, y = 1.4126e+04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports optical flow measurements for different materials in Experiment 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "aa0a45c6-b3ff-4256-99f9-a959cc0780b4",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C99",
+      "claim": "Imaging was performed on a Siemens 3T MAGNETOM Tim Trio Scanner with a 32-channel head coil.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging was performed at the Athinoula A. Martinos Imaging Center at MIT on a Siemens 3T MAGNETOM Tim Trio Scanner with a 32-channel head coil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MRI equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "cfeda7b6-228e-4493-9c9d-425a25b4133a",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C100",
+      "claim": "Eye tracking data were preprocessed with EyeLink Data Viewer software and analyzed in MATLAB R2016B.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye tracking data were preprocessed with EyeLink Data Viewer software and analyzed in MATLAB R2016B (The MathWorks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis pipeline for eye tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "ca95ed7a-c37a-4d77-881a-4a89bd92b688",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C101",
+      "claim": "Data preprocessing and general linear models were performed using FsFast tools in the FreeSurfer Software Suite.",
+      "claim_type": "EXPLICIT",
+      "source": "Data preprocessing and general linear models were performed using FsFast tools in the FreeSurfer Software Suite (freesurfer.net).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software used for fMRI preprocessing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "1901bca1-f41e-4c94-ae0c-90b55e8b44ac",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C102",
+      "claim": "All other analyses were conducted in MATLAB R2016b.",
+      "claim_type": "EXPLICIT",
+      "source": "All other analyses were conducted in MATLAB R2016b (The MathWorks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software used for additional analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "da9f1e35-f089-4463-bada-d385a7c17784",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C103",
+      "claim": "Fischer et al. (2016) identified 11 group-level parcels from the physics >color contrast on toppling tower stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Fischer first identified 11 group-level parcels from the physics >color contrast on toppling tower stimuli (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the parcels identified in prior work, with reference to Figure 3b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "c1e14f5a-2363-4f8a-833d-5f631ace07ad",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C104",
+      "claim": "Only a subset of the parcels showed a significantly greater response to physical vs. social interactions: P1L, P1R, P3L, P3R, and P4L.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a subset of the parcels showed a significantly greater response to physical vs. social interactions: P1L and P1R (bilateral parcels in dorsal premotor cortex and supplementary motor area), P3L and P3R (bilateral parcels in parietal cortex situated in somatosensory association cortex and the superior parietal lobule, and P4L (the left supramarginal gyrus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the subset of parcels used for fROI definition, based on Fischer et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "4fa55b57-2739-425a-9aea-90ac7e662461",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C105",
+      "claim": "An SVM was used for classification, restricted to linearly decodable signal under the assumption that a linear kernel implements a plausible readout mechanism for downstream neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "An SVM was used for classification, restricted to linearly decodable signal under the assumption that a linear kernel implements a plausible readout mechanism for downstream neurons (Shamir and Sompolinsky, 2006; DiCarlo and Cox, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the decoding method and its rationale, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "e411c841-f852-47e9-b042-a5f15e374a26",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "claim_id": "C106",
+      "claim": "A two-way ANOVA did not reveal a significant effect of L or R hemisphere (p=0.54) or frontal or parietal parcel (p=0.86) on decoding accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "A two-way ANOVA did not reveal a significant effect of L or R hemisphere (p=0.54) or frontal or parietal parcel (p=0.86) on decoding accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical results testing for hemispheric and regional differences in decoding, with reference to Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dfad7920-d3d5-4ff6-abd6-af17db5ce2c1",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Human physical reasoning develops early in infancy and becomes fast, rich, and generalizable by adulthood, but the brain basis of intuitive physics remains poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 establish the developmental trajectory and importance of physical reasoning through citations to established literature (C2-C4) and general knowledge statements (C1, C5). These background claims are well-supported by the cited evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "4d141342-6d75-4205-9dc7-736587a8734f",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Computational models of intuitive physics differ in whether they use model-free pattern recognition or structured generative models (physics engines), with the latter showing human-level performance across diverse physical reasoning tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 describe two computational approaches to physical reasoning, supported by multiple citations (Lerer et al., Battaglia et al., Smith et al., Bates et al., Kubricht et al., Ullman et al., Hamrick et al.). The characterization of these models is well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "399122c4-fef5-4b35-9a0f-92f1862f5db0",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Prior work (Fischer et al., 2016) identified parietal and frontal regions engaged in physical reasoning, which resemble regions involved in action planning and tool use, but what these regions represent about physical events remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C17 accurately summarize prior findings from Fischer et al. (2016) and related literature on action planning and tool use. The gap in knowledge (C17) motivates the current study and is a reasonable inference from the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "5131ac71-dfac-4da9-b290-ce1b7482eac1",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study uses fMRI with a localizer task to identify physics-related brain regions, then applies pattern classification to test for invariant representations of mass, chosen as a fundamental physical variable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 describe the rationale and overall experimental approach. The choice of mass as a target variable is justified by physics principles (C18), and the experimental design using localizer and decoding analyses is clearly described (C19-C21).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "d5a069cb-3206-4b87-b5d2-243f93703c4d",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Experiment 1 demonstrates situation-invariant mass decoding from candidate physics regions (mean accuracy 0.64, p=0.0304) across three physical scenarios, with controls ruling out confounds from shape, color, motion, and motor responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C31 describe Experiment 1's design, results, and controls. The significant decoding result (C27) with n=6 subjects is supported by statistical testing. The experimental design controls for multiple confounds (C29-C31), though the small sample size and lack of multiple comparison correction are potential limitations not addressed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "4533671d-9be6-445f-9400-598b9ea794ac",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Experiment 2 replicates mass decoding during the mass task (mean accuracy 0.63, p=0.0357) and demonstrates automatic mass representation during an orthogonal color task (mean accuracy 0.61, p=0.0033), ruling out response code explanations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C41 describe Experiment 2's block design and key findings. The significant mass decoding during both tasks (C34, C37) with n=6 subjects supports automaticity (C38). The null result for color decoding (C40) strengthens the specificity claim (C41), though the authors acknowledge potential carryover effects from mass blocks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "7d8f370d-4d31-4f43-880e-6545d739bde6",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Experiment 3 demonstrates mass decoding (mean accuracy 0.60, p=0.0392) during physical prediction that generalizes across friction, material, and motion, with eye movement controls ruling out oculomotor confounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C51 describe Experiment 3's design with orthogonalized physical variables (C44) and significant mass decoding (C46) in n=20 subjects. The generalization across friction, material, and motion (C47-C48) is supported by the experimental design. Eye movement controls (C49-C51) address a potential confound, though only 6 subjects had eye tracking data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "868372e1-88fa-41ac-9b80-0e73b726d86d",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Invariant mass decoding was not significant in ventral stream regions (LO and OTC), suggesting these regions may represent task-specific rather than abstract mass information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 report null results in ventral stream regions (C53-C54) using an appropriate localizer (C52). The interpretation (C55-C56) is cautious, acknowledging the null results and offering speculation about functional differences. However, null results with n=6 subjects have limited power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "b4f5d768-3b36-44d7-8e01-aeaf751870da",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Group analysis across 32 subjects replicates the physics network from Fischer et al. (2016), with mass decoding successful in 31/32 subjects and invariant to scenario, material, friction, and motion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 summarize the combined results across all experiments. The group analysis (C57-C58) replicates prior work with a larger sample. The high success rate (31/32 subjects, C59-C60) and demonstrated invariances (C61) support the main conclusions, though individual experiment sample sizes remain small.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "92ba0cca-2dff-4120-8e9b-f026dbf15f1c",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The invariant mass representations found in frontal and parietal regions support the hypothesis that these regions implement a causal generative model (physics engine) rather than pattern recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64, C71-C72, C74 present the main theoretical interpretation. The invariance properties demonstrated across experiments support generative models over pattern recognition (C63, C71). However, this remains an inference from neural data rather than direct evidence of computational mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "25c181c5-c923-432d-9b3f-bdd58a00734d",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The current study extends beyond prior work by demonstrating mass representations during non-action-planning tasks and showing generalization across scenarios, unlike previous studies limited to action planning contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 accurately characterize prior work (C65-C68) and distinguish the current findings (C69-C70). The comparison to Gallivan et al. (2014) is appropriate, highlighting the novelty of task-independent and scenario-invariant representations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "b71130d1-9843-4675-8a04-ff6ced83cb66",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Similar frontal-parietal regions represent abstract physical concepts from words, and the absence of invariant mass representations in ventral stream during non-action tasks suggests these regions may only represent mass during motor planning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 integrate findings with broader literature. The convergence with word-based physical reasoning (C73) supports abstractness. The ventral stream interpretation (C75-C77) is cautious speculation supported by lesion data (C76), though the null results have limited power.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "123af5c4-7aa6-44b2-b3ef-bd9281b3af0f",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study demonstrates that intuitive physics recruits regions outside the ventral stream, though how the brain estimates physical properties from visual input remains unknown and may involve integration of feed-forward and generative models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 acknowledge limitations and future directions. The main conclusion (C80) is supported by the data. The speculation about hybrid models (C79) is appropriately tentative and cites relevant computational work (Yildirim et al., 2019).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "81dd20be-5512-4573-bcc0-3f044634e85e",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study included 6 subjects in Experiments 1 and 2, and 20 subjects in Experiment 3, all right-handed with normal vision, with MIT IRB approval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 report basic methodological details. Sample sizes are clearly stated, though small for Experiments 1-2. Power analysis is mentioned but details are limited. Ethical approval is documented (C85).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "d09e7412-65af-40ae-b623-517ad47a32f0",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The localizer task used unstable block towers with physics vs. color judgments, with fROIs defined by intersecting individual subject maps with group parcels from Fischer et al. (2016) that showed physics-specific responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88, C103-C104 describe the localizer task and fROI definition procedure. The method appropriately uses individually-defined fROIs within group-constrained parcels, balancing individual variability with anatomical consistency. The subset of parcels (C104) was validated in prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "dcf8860f-6fe9-486b-9e23-725ad10b4e4d",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Experiment 1 stimuli were constructed to have identical visual appearance across masses (45g vs 90g), with mass differences created by filling objects with lead pellets and flour.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 describe stimulus construction for Experiment 1. The control for visual appearance (C91) is critical for ensuring mass must be inferred from physical behavior rather than visual cues. The 2:1 mass ratio provides a reasonable discrimination challenge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "ce50b2e0-c0d2-45b9-a916-3928e4c63a2b",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Experiment 2 tasks were matched for difficulty using Amazon Mechanical Turk data (n=50), with mass task accuracy 86.2% and color task accuracy 89%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 describe task difficulty matching. The pilot study with n=50 provides reasonable evidence for comparable difficulty, though the color task was slightly easier. This control strengthens the interpretation of differential decoding results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "aca811a3-fe90-46fb-98aa-ae06f05a02d5",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Experiment 3 materials were selected to orthogonalize mass and friction, with friction coefficients measured empirically and motion quantified using optical flow analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C98 describe the sophisticated stimulus design for Experiment 3. The orthogonalization of physical variables (C95) is critical for testing invariance. Friction measurement (C96) and motion quantification (C97-C98) are appropriate methods, though the claim that variables are fully orthogonalized may be overstated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "77521f13-114a-41a1-94c3-896a06c3167f",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Data were acquired on a 3T Siemens scanner and analyzed using FreeSurfer/FsFast for preprocessing and MATLAB for additional analyses, with eye tracking data processed using EyeLink software.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C102 describe standard neuroimaging acquisition and analysis procedures. The methods are appropriate and software is properly cited. However, details about preprocessing parameters, statistical thresholds, and multiple comparison corrections are limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    },
+    {
+      "id": "c1f09dda-3bdb-4a7e-8291-af77eb2d973f",
+      "content_id": "4ea4fbae-f1d9-4cce-93e4-e3af66538b2e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Linear SVM classification was used for decoding, with no significant hemispheric or regional differences in decoding accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C106 describe the decoding method and regional analysis. The choice of linear SVM is justified by biological plausibility (C105). The null result for regional differences (C106) suggests mass representations are distributed across the physics network, though power to detect differences may be limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:31.028374Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "525e36c2-60e0-45a5-9851-5ffff9e461cd",
+      "result_id": "dfad7920-d3d5-4ff6-abd6-af17db5ce2c1"
+    },
+    {
+      "claim_id": "946d56f7-c690-49d6-b278-f308871ebd59",
+      "result_id": "dfad7920-d3d5-4ff6-abd6-af17db5ce2c1"
+    },
+    {
+      "claim_id": "f4aaf405-f25c-4523-a804-615a0e5cbb92",
+      "result_id": "dfad7920-d3d5-4ff6-abd6-af17db5ce2c1"
+    },
+    {
+      "claim_id": "a8499b48-b74f-47f1-a22a-09984e60e0fd",
+      "result_id": "dfad7920-d3d5-4ff6-abd6-af17db5ce2c1"
+    },
+    {
+      "claim_id": "35891f43-dec1-443c-9256-9c2002335470",
+      "result_id": "dfad7920-d3d5-4ff6-abd6-af17db5ce2c1"
+    },
+    {
+      "claim_id": "a2341f92-d80e-40fe-a8e3-4f0cbf22d3eb",
+      "result_id": "4d141342-6d75-4205-9dc7-736587a8734f"
+    },
+    {
+      "claim_id": "c96f0d0e-c2ad-41e5-9839-e5488adf7bf6",
+      "result_id": "4d141342-6d75-4205-9dc7-736587a8734f"
+    },
+    {
+      "claim_id": "518e2b23-cd61-4680-81ce-cc78a7a0d722",
+      "result_id": "4d141342-6d75-4205-9dc7-736587a8734f"
+    },
+    {
+      "claim_id": "00041ae2-79d2-4f81-8d61-f65a6318eb43",
+      "result_id": "4d141342-6d75-4205-9dc7-736587a8734f"
+    },
+    {
+      "claim_id": "3b36ff05-4669-49e5-9398-e0ab61e0fb4f",
+      "result_id": "399122c4-fef5-4b35-9a0f-92f1862f5db0"
+    },
+    {
+      "claim_id": "174f8248-9bf4-4dfd-b9fa-831481e62ba1",
+      "result_id": "399122c4-fef5-4b35-9a0f-92f1862f5db0"
+    },
+    {
+      "claim_id": "7575f836-01ef-4321-b90b-2e58be5e33c7",
+      "result_id": "399122c4-fef5-4b35-9a0f-92f1862f5db0"
+    },
+    {
+      "claim_id": "cd7c3675-a821-4ffc-9b96-8ca249df7505",
+      "result_id": "399122c4-fef5-4b35-9a0f-92f1862f5db0"
+    },
+    {
+      "claim_id": "bce75d45-b8e1-4a41-a4ee-858a9b4e7ced",
+      "result_id": "399122c4-fef5-4b35-9a0f-92f1862f5db0"
+    },
+    {
+      "claim_id": "adf8e160-c561-48ea-9f85-aa7fce522706",
+      "result_id": "399122c4-fef5-4b35-9a0f-92f1862f5db0"
+    },
+    {
+      "claim_id": "1fff16cb-893e-4d04-af9e-fa6936f03b9f",
+      "result_id": "399122c4-fef5-4b35-9a0f-92f1862f5db0"
+    },
+    {
+      "claim_id": "a23d9281-be05-4860-bbc6-58b04e00f210",
+      "result_id": "5131ac71-dfac-4da9-b290-ce1b7482eac1"
+    },
+    {
+      "claim_id": "5d107225-5174-4ed7-bf24-7aeec00ae876",
+      "result_id": "5131ac71-dfac-4da9-b290-ce1b7482eac1"
+    },
+    {
+      "claim_id": "7c3b43a0-44e5-406e-bf59-c403c10121ac",
+      "result_id": "5131ac71-dfac-4da9-b290-ce1b7482eac1"
+    },
+    {
+      "claim_id": "464d9252-e67d-419a-9d85-8667a7b6d861",
+      "result_id": "5131ac71-dfac-4da9-b290-ce1b7482eac1"
+    },
+    {
+      "claim_id": "9af30cf3-9bad-4f36-8f89-d558efa1330d",
+      "result_id": "d5a069cb-3206-4b87-b5d2-243f93703c4d"
+    },
+    {
+      "claim_id": "f03d48b7-130c-4a9a-9e5c-5969279cd0ef",
+      "result_id": "d5a069cb-3206-4b87-b5d2-243f93703c4d"
+    },
+    {
+      "claim_id": "1f635ba6-74c3-4a16-aa49-482596569f3a",
+      "result_id": "d5a069cb-3206-4b87-b5d2-243f93703c4d"
+    },
+    {
+      "claim_id": "dba343fb-0a21-46d9-9305-8bfa57a4da5b",
+      "result_id": "d5a069cb-3206-4b87-b5d2-243f93703c4d"
+    },
+    {
+      "claim_id": "cfd8dcf5-cea8-4a77-8e48-163e077faf13",
+      "result_id": "d5a069cb-3206-4b87-b5d2-243f93703c4d"
+    },
+    {
+      "claim_id": "a7826714-3db9-4c1d-a1fb-e6bd545367e5",
+      "result_id": "d5a069cb-3206-4b87-b5d2-243f93703c4d"
+    },
+    {
+      "claim_id": "f3ee05b0-ed63-4056-9ce1-9d23cdb742d6",
+      "result_id": "d5a069cb-3206-4b87-b5d2-243f93703c4d"
+    },
+    {
+      "claim_id": "fc05d853-6762-4dc1-8ece-b74e093ba7a2",
+      "result_id": "d5a069cb-3206-4b87-b5d2-243f93703c4d"
+    },
+    {
+      "claim_id": "0d325cee-c449-4060-9dd0-cdfb703c7a70",
+      "result_id": "d5a069cb-3206-4b87-b5d2-243f93703c4d"
+    },
+    {
+      "claim_id": "fb4cc887-4053-4901-9c7e-b08659374a29",
+      "result_id": "d5a069cb-3206-4b87-b5d2-243f93703c4d"
+    },
+    {
+      "claim_id": "6ab19ae5-a535-43e5-b869-a2455503ef05",
+      "result_id": "4533671d-9be6-445f-9400-598b9ea794ac"
+    },
+    {
+      "claim_id": "3b03e394-5975-433b-ad10-0ace1cc7293b",
+      "result_id": "4533671d-9be6-445f-9400-598b9ea794ac"
+    },
+    {
+      "claim_id": "3b5baad1-4574-41e0-8b5a-1204e900f98c",
+      "result_id": "4533671d-9be6-445f-9400-598b9ea794ac"
+    },
+    {
+      "claim_id": "9566ebc7-f1c6-4c24-8aa4-4d3df181a074",
+      "result_id": "4533671d-9be6-445f-9400-598b9ea794ac"
+    },
+    {
+      "claim_id": "f7d715cd-91c9-4f8e-8660-c4f594ca0666",
+      "result_id": "4533671d-9be6-445f-9400-598b9ea794ac"
+    },
+    {
+      "claim_id": "58a84c75-446d-4362-a243-f2761444b63f",
+      "result_id": "4533671d-9be6-445f-9400-598b9ea794ac"
+    },
+    {
+      "claim_id": "68255906-a536-465d-89a7-ca1cd820241c",
+      "result_id": "4533671d-9be6-445f-9400-598b9ea794ac"
+    },
+    {
+      "claim_id": "bec38788-b8c4-41be-b533-e2240ad131d7",
+      "result_id": "4533671d-9be6-445f-9400-598b9ea794ac"
+    },
+    {
+      "claim_id": "fea3c1f4-ca66-407c-8280-9a9dee28c4f3",
+      "result_id": "4533671d-9be6-445f-9400-598b9ea794ac"
+    },
+    {
+      "claim_id": "416ac8dc-7080-408e-a365-9254340bd53c",
+      "result_id": "4533671d-9be6-445f-9400-598b9ea794ac"
+    },
+    {
+      "claim_id": "c0812718-70c0-4745-86d0-4c68910a615b",
+      "result_id": "7d8f370d-4d31-4f43-880e-6545d739bde6"
+    },
+    {
+      "claim_id": "a2c5cf78-be1c-4c76-a956-923fc1b2a290",
+      "result_id": "7d8f370d-4d31-4f43-880e-6545d739bde6"
+    },
+    {
+      "claim_id": "891572f8-695d-4444-9be1-0e6853bbc579",
+      "result_id": "7d8f370d-4d31-4f43-880e-6545d739bde6"
+    },
+    {
+      "claim_id": "fadc8089-6778-4b7c-b3c5-b08a43c869dd",
+      "result_id": "7d8f370d-4d31-4f43-880e-6545d739bde6"
+    },
+    {
+      "claim_id": "9e23e458-15ac-479f-b477-d59cdee95f0c",
+      "result_id": "7d8f370d-4d31-4f43-880e-6545d739bde6"
+    },
+    {
+      "claim_id": "f01f5f71-01af-43a4-8f67-9cc5bd8c7fe7",
+      "result_id": "7d8f370d-4d31-4f43-880e-6545d739bde6"
+    },
+    {
+      "claim_id": "9915c2ad-f147-4f83-a58f-44ed1294dabc",
+      "result_id": "7d8f370d-4d31-4f43-880e-6545d739bde6"
+    },
+    {
+      "claim_id": "3c47aaf7-8778-44a6-9552-877b9837f8fa",
+      "result_id": "7d8f370d-4d31-4f43-880e-6545d739bde6"
+    },
+    {
+      "claim_id": "c5f8aa6d-f272-4960-b33d-6e407ebf7dcf",
+      "result_id": "7d8f370d-4d31-4f43-880e-6545d739bde6"
+    },
+    {
+      "claim_id": "e6b7607b-cc40-49aa-a368-0fab4f496277",
+      "result_id": "7d8f370d-4d31-4f43-880e-6545d739bde6"
+    },
+    {
+      "claim_id": "ea0ebb4c-e3ac-4fd5-b147-dff3e866258b",
+      "result_id": "868372e1-88fa-41ac-9b80-0e73b726d86d"
+    },
+    {
+      "claim_id": "1da5602b-bdc6-4300-a958-6c80938eb7fd",
+      "result_id": "868372e1-88fa-41ac-9b80-0e73b726d86d"
+    },
+    {
+      "claim_id": "45a1b0a2-3d65-45e5-af6c-9d2b40716c05",
+      "result_id": "868372e1-88fa-41ac-9b80-0e73b726d86d"
+    },
+    {
+      "claim_id": "1b66f703-e912-4fef-bafa-4e66478a9d8b",
+      "result_id": "868372e1-88fa-41ac-9b80-0e73b726d86d"
+    },
+    {
+      "claim_id": "235d279c-e0a9-4d7a-ab36-de77977825dd",
+      "result_id": "868372e1-88fa-41ac-9b80-0e73b726d86d"
+    },
+    {
+      "claim_id": "884c1d11-0417-423e-9284-29df4f119010",
+      "result_id": "b4f5d768-3b36-44d7-8e01-aeaf751870da"
+    },
+    {
+      "claim_id": "582c897f-4498-444a-a230-21a788a8b1dd",
+      "result_id": "b4f5d768-3b36-44d7-8e01-aeaf751870da"
+    },
+    {
+      "claim_id": "7d303bc7-f703-4c35-878c-4967c6797892",
+      "result_id": "b4f5d768-3b36-44d7-8e01-aeaf751870da"
+    },
+    {
+      "claim_id": "71c595a1-9fa2-4c00-9228-8b2fd6ab8bf5",
+      "result_id": "b4f5d768-3b36-44d7-8e01-aeaf751870da"
+    },
+    {
+      "claim_id": "e4bc3c0c-2ac7-47cd-9b79-fcbb07239ff6",
+      "result_id": "b4f5d768-3b36-44d7-8e01-aeaf751870da"
+    },
+    {
+      "claim_id": "88cb4442-b591-4c11-9876-bfabac4229b7",
+      "result_id": "b4f5d768-3b36-44d7-8e01-aeaf751870da"
+    },
+    {
+      "claim_id": "3c251fe6-b6c7-4f9d-afbe-0eb556e49297",
+      "result_id": "92ba0cca-2dff-4120-8e9b-f026dbf15f1c"
+    },
+    {
+      "claim_id": "97f653cc-a103-42c4-99bc-16ea5518c3d4",
+      "result_id": "92ba0cca-2dff-4120-8e9b-f026dbf15f1c"
+    },
+    {
+      "claim_id": "71c313d0-77d2-4555-92db-f407fc360e23",
+      "result_id": "92ba0cca-2dff-4120-8e9b-f026dbf15f1c"
+    },
+    {
+      "claim_id": "4e69f476-8324-4403-bcd8-5c39a6b0a5de",
+      "result_id": "92ba0cca-2dff-4120-8e9b-f026dbf15f1c"
+    },
+    {
+      "claim_id": "669c6209-ad1e-42ca-b35b-4a12eef9f18b",
+      "result_id": "92ba0cca-2dff-4120-8e9b-f026dbf15f1c"
+    },
+    {
+      "claim_id": "36f1139a-79e9-4688-b032-223c0b32a2ce",
+      "result_id": "25c181c5-c923-432d-9b3f-bdd58a00734d"
+    },
+    {
+      "claim_id": "70bcde31-2e7a-4e89-910b-492b1f4589e6",
+      "result_id": "25c181c5-c923-432d-9b3f-bdd58a00734d"
+    },
+    {
+      "claim_id": "c2ffc77b-8180-4924-8d89-e6f558b5c11a",
+      "result_id": "25c181c5-c923-432d-9b3f-bdd58a00734d"
+    },
+    {
+      "claim_id": "39645671-981d-4b53-9594-99a049ea6138",
+      "result_id": "25c181c5-c923-432d-9b3f-bdd58a00734d"
+    },
+    {
+      "claim_id": "bdb1447c-4145-4b0c-bf3c-d4839dc86848",
+      "result_id": "25c181c5-c923-432d-9b3f-bdd58a00734d"
+    },
+    {
+      "claim_id": "f97cbb73-9723-465e-bedc-fe14eaba800f",
+      "result_id": "25c181c5-c923-432d-9b3f-bdd58a00734d"
+    },
+    {
+      "claim_id": "55f77b08-cf99-48ff-8283-b33a4136831c",
+      "result_id": "b71130d1-9843-4675-8a04-ff6ced83cb66"
+    },
+    {
+      "claim_id": "0bb2cd60-983c-4410-af20-bbf6e796401e",
+      "result_id": "b71130d1-9843-4675-8a04-ff6ced83cb66"
+    },
+    {
+      "claim_id": "0a0d4942-c5bc-4df9-b425-5768369f457d",
+      "result_id": "b71130d1-9843-4675-8a04-ff6ced83cb66"
+    },
+    {
+      "claim_id": "8b994e96-806a-4817-9e0c-2c394dfcd63a",
+      "result_id": "b71130d1-9843-4675-8a04-ff6ced83cb66"
+    },
+    {
+      "claim_id": "e54d4137-72eb-40ba-b48d-92adcf4a1b9b",
+      "result_id": "123af5c4-7aa6-44b2-b3ef-bd9281b3af0f"
+    },
+    {
+      "claim_id": "09c2643e-dc90-4ebe-acc9-8f1e02d64ec5",
+      "result_id": "123af5c4-7aa6-44b2-b3ef-bd9281b3af0f"
+    },
+    {
+      "claim_id": "da8f20ac-9dea-4e82-9821-b41e214eacf0",
+      "result_id": "123af5c4-7aa6-44b2-b3ef-bd9281b3af0f"
+    },
+    {
+      "claim_id": "9d999bfd-48ad-43f7-8180-8c0707970136",
+      "result_id": "81dd20be-5512-4573-bcc0-3f044634e85e"
+    },
+    {
+      "claim_id": "913f1559-c2dc-43df-96e5-ec1b61c9becf",
+      "result_id": "81dd20be-5512-4573-bcc0-3f044634e85e"
+    },
+    {
+      "claim_id": "e4a331ed-2ebe-4810-8687-c0ecb4b1bae0",
+      "result_id": "81dd20be-5512-4573-bcc0-3f044634e85e"
+    },
+    {
+      "claim_id": "8f3d3404-df48-479c-8c38-53a418ad5a17",
+      "result_id": "81dd20be-5512-4573-bcc0-3f044634e85e"
+    },
+    {
+      "claim_id": "ea58c3b7-af7a-43b1-99a1-2a5c1363e0ed",
+      "result_id": "81dd20be-5512-4573-bcc0-3f044634e85e"
+    },
+    {
+      "claim_id": "9d19cfd3-e97e-466b-97cd-88dd2817598b",
+      "result_id": "d09e7412-65af-40ae-b623-517ad47a32f0"
+    },
+    {
+      "claim_id": "24000406-c3d4-4983-a454-5555a759a69c",
+      "result_id": "d09e7412-65af-40ae-b623-517ad47a32f0"
+    },
+    {
+      "claim_id": "8a59b040-b5a2-48f0-880e-e8891c4ddb86",
+      "result_id": "d09e7412-65af-40ae-b623-517ad47a32f0"
+    },
+    {
+      "claim_id": "da9f1e35-f089-4463-bada-d385a7c17784",
+      "result_id": "d09e7412-65af-40ae-b623-517ad47a32f0"
+    },
+    {
+      "claim_id": "c1e14f5a-2363-4f8a-833d-5f631ace07ad",
+      "result_id": "d09e7412-65af-40ae-b623-517ad47a32f0"
+    },
+    {
+      "claim_id": "879746ba-fc98-43df-b0a4-bc87451b91a7",
+      "result_id": "dcf8860f-6fe9-486b-9e23-725ad10b4e4d"
+    },
+    {
+      "claim_id": "509f16d1-8bb7-46d1-9c42-b2aac8050a1a",
+      "result_id": "dcf8860f-6fe9-486b-9e23-725ad10b4e4d"
+    },
+    {
+      "claim_id": "15b76507-6044-4d73-bd97-9242abcf92e2",
+      "result_id": "dcf8860f-6fe9-486b-9e23-725ad10b4e4d"
+    },
+    {
+      "claim_id": "8be6c151-386a-49fd-8efe-dcd1d761e4aa",
+      "result_id": "ce50b2e0-c0d2-45b9-a916-3928e4c63a2b"
+    },
+    {
+      "claim_id": "d14bfd8f-a7ee-4c55-9839-2aef319355c9",
+      "result_id": "ce50b2e0-c0d2-45b9-a916-3928e4c63a2b"
+    },
+    {
+      "claim_id": "bba69b9e-2cbe-4b17-b286-9e6125a59688",
+      "result_id": "ce50b2e0-c0d2-45b9-a916-3928e4c63a2b"
+    },
+    {
+      "claim_id": "2377c4a5-8509-4deb-bbfa-a31eed32a081",
+      "result_id": "aca811a3-fe90-46fb-98aa-ae06f05a02d5"
+    },
+    {
+      "claim_id": "221795c2-87a6-47e8-8def-5a442469d4e9",
+      "result_id": "aca811a3-fe90-46fb-98aa-ae06f05a02d5"
+    },
+    {
+      "claim_id": "5a183f78-c6ca-4023-93ae-34355ef2e53e",
+      "result_id": "aca811a3-fe90-46fb-98aa-ae06f05a02d5"
+    },
+    {
+      "claim_id": "467a9fee-3665-4734-b815-2a42dd71b006",
+      "result_id": "aca811a3-fe90-46fb-98aa-ae06f05a02d5"
+    },
+    {
+      "claim_id": "aa0a45c6-b3ff-4256-99f9-a959cc0780b4",
+      "result_id": "77521f13-114a-41a1-94c3-896a06c3167f"
+    },
+    {
+      "claim_id": "cfeda7b6-228e-4493-9c9d-425a25b4133a",
+      "result_id": "77521f13-114a-41a1-94c3-896a06c3167f"
+    },
+    {
+      "claim_id": "ca95ed7a-c37a-4d77-881a-4a89bd92b688",
+      "result_id": "77521f13-114a-41a1-94c3-896a06c3167f"
+    },
+    {
+      "claim_id": "1901bca1-f41e-4c94-ae0c-90b55e8b44ac",
+      "result_id": "77521f13-114a-41a1-94c3-896a06c3167f"
+    },
+    {
+      "claim_id": "4fa55b57-2739-425a-9aea-90ac7e662461",
+      "result_id": "c1f09dda-3bdb-4a7e-8291-af77eb2d973f"
+    },
+    {
+      "claim_id": "e411c841-f852-47e9-b042-a5f15e374a26",
+      "result_id": "c1f09dda-3bdb-4a7e-8291-af77eb2d973f"
+    }
+  ],
+  "comparisons": []
+}

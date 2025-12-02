@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The study analyzed 1,269,542 papers on disease-specific medical research published between 2008 and 2014, using matched case-control design with three samples based on author gender. The methodology involved extensive data collection from PubMed and Web of Science, gender determination using Gender API, and matching on institutional prestige, geographic location, and medical specialty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data collection and matching methodology is well-documented with clear sample sizes and exclusion criteria (C28-C34, C131-C148). The use of validated gender determination algorithms (C137-C138) and matching on known confounders (C143-C144) strengthens the study design. The exclusion of 18 countries with unreliable gender estimates (C140-C142) is appropriately justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The descriptive analysis reveals gender disparities in medical research authorship, with male researchers dominating all five specialty groupings and female last authors being underrepresented, particularly in Surgical/Procedural specialties. Geographic variation shows highest female representation in Latin America and lowest in South East Asia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These descriptive findings are directly supported by Table 1 data (C35-C40). The claims are straightforward summaries of observed proportions in the unmatched sample and do not require complex statistical inference. The geographic and specialty-specific patterns are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C94",
+      "C95",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Descriptive analysis shows papers with female authors are cited 6.5-12.6% less than papers with male authors on average, but standardized mean differences are very small (Cohen's d = -0.04 to -0.08) and percentage overlaps between distributions are extensive (93.1-95.6%). Female-authored papers comprise 41-47% of top-cited papers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The descriptive statistics are well-documented with means, standard deviations, medians, effect sizes, and overlap measures (C46-C51, C94-C95). The emphasis on within-group variability and between-group overlap (C47, C49, C51, C58) is appropriate given the small effect sizes. The top-cited paper analysis (C52-C57) provides important context showing substantial female representation at the high end of the distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C96",
+      "C127",
+      "C176"
+    ],
+    "result": "After adjusting for self-citations, number of authors, international collaboration, and field-normalized journal impact using Tweedie regressions, the average citation impact per paper was nearly identical for women and men across all author position combinations, with exponentiated coefficients of 0.96-0.99.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The regression analysis is methodologically sound with appropriate use of Tweedie distributions for the skewed outcome variable (C60, C156-C160). The very small residual gender effects (C63-C66) are precisely estimated with narrow confidence intervals. Robustness checks confirmed the findings (C69-C70). The adjustment for known confounders strengthens causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C97",
+      "C177"
+    ],
+    "result": "Self-citations and field-normalized journal impact (MNCS journal) account for most of the small average gender differences in citation impact. Papers with high self-citation rates and high MNCS journal scores are less likely to be led by female authors, though standardized mean differences are very small with extensive overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The logistic regression analysis (C71-C78) clearly identifies self-citations and MNCS journal as the strongest predictors of author gender. The descriptive analysis (C80-C81) confirms small effect sizes with extensive overlap. The interpretation that these factors account for most observed differences (C97, C177) is supported by the regression coefficients in Figure 2 and the comparison between unadjusted and adjusted models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The average proportion of self-citations for papers in the top 5% most cited is approximately 15% in all three samples, suggesting that at least part of the gender variation in highly cited papers may be attributable to average gender differences in self-citation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of self-citation patterns by citation quantile (C82) is clearly shown in Figure 5. The inference that self-citations contribute to gender variation in highly cited papers (C83) is reasonable given the data. The acknowledgment of the four-year citation window effect (C84) shows appropriate methodological awareness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Most of the observed average gender differences in MNCS journal scores are due to underrepresentation of female-led papers in the most high-impact publication outlets, with the proportion of female-led papers dropping below 50% at the 80th percentile and most notably at the 90th-95th percentile. Female-authored papers comprise 41-45% of papers in top 5% journals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of journal prestige by quantile (C85-C86) is clearly documented in Figure 6. The inference about underrepresentation in high-impact outlets (C87) follows logically from the quantile analysis. The specific percentages for top journals (C88-C90) provide concrete evidence of the gender gap in prestigious publication venues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The gender effect attributable to self-citations likely reflects a generation effect, with more senior male authors having more publications to self-cite. This interpretation is supported by prior research showing that gender differences in self-citation rates are leveled out when adjusting for prior publication output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The generation effect explanation (C99) is a reasonable inference given the known demographics of academic medicine. The supporting citation to Mishra et al. 2018 (C100) provides external validation for this interpretation. However, the current study does not directly test this mechanism with author-level career data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The observed differences in female representation in high-impact journals echo previous research findings. Possible explanations include generation effects, lower submission rates by female authors to high-impact journals, or slightly lower success rates in peer review due to gender or topic bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the observation of underrepresentation in high-impact journals is well-supported (C104), the proposed explanations (C105-C107) are largely speculative. The generation effect (C105) is plausible but not directly tested. The submission and peer review explanations (C106-C107) are cited as possibilities but lack direct evidence from this study. These remain hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Women may receive less credit for their citations due to gender-based double standards in evaluative judgments, with evidence showing women spend one year longer transitioning to R01 grants than men with the same number of citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are based on cited prior research (C101-C103) rather than the current study's findings. The citations to Botelho and Abraham 2017, Moss-Racusin et al. 2012, and Lerchenmueller and Sorenson 2018 provide external support. However, this represents interpretation of prior work rather than new findings from the current analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Gender differences in per-paper citation impact are a negligible factor in stratification in academic medicine. Universities should focus on counteracting broader societal and institutional barriers to women's advancement, which may be critical for improving research rigor and precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion that per-paper citation differences are negligible (C109) is well-supported by the regression results showing near-identical adjusted citation rates. The policy recommendation (C110) follows logically from the findings. The connection to research quality (C111-C113) is supported by cited studies on statistical power and attention to sex/gender variations, though this represents broader implications rather than direct findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study has several limitations: exclusion of 18 countries with unreliable gender determination (7.2% of sample), focus on per-paper rather than cumulative citation impact, use of a specific proxy for scholarly impact, and sensitivity of small differences to data noise and non-random sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors provide a thorough and honest assessment of study limitations (C114-C126). The geographic exclusion (C114-C116) is well-justified but acknowledged as limiting generalizability. The distinction between per-paper and cumulative impact (C117-C120) is an important conceptual limitation. The acknowledgment of measurement specificity (C121-C123) and statistical uncertainty (C124-C126) demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The analysis raises concerns that gender differences reported in prior research may be distorted by methodological limitations and imprecision in interpretation. The study demonstrates the importance of focusing on within-group variability and between-group overlap when interpreting results, while acknowledging the importance of recognizing small drawbacks that can accumulate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological critique of prior research (C128) is justified given the study's comprehensive design and attention to effect sizes and overlap. The emphasis on within-group variability (C130) addresses a key limitation in the literature. The acknowledgment of cumulative disadvantages (C129) shows balanced interpretation that doesn't dismiss small effects entirely.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The study employed rigorous statistical methods including field-normalized citation scores (NCS) using 4,047 micro-level publication clusters, Tweedie regression for skewed outcome data, and Weitzman's measure for distribution overlap. All methods are well-established and appropriately applied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological descriptions are comprehensive and technically sound (C41-C44, C156-C172). The use of field normalization addresses known confounding by citation practices across fields (C165-C166). The choice of Tweedie distributions for zero-inflated, right-skewed data is appropriate (C156-C160). The calculation of overlap measures with sensitivity testing (C170-C172) demonstrates methodological rigor. Low multicollinearity (C161) supports model validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The introduction establishes context showing increased female representation in medical graduates (now >50% in OECD countries) and near-parity in authorship, but persistent gender inequalities in senior positions (21% of US full professors), with various barriers including hostile climates, bias, and funding disparities. Citation metrics are increasingly used in career decisions, making gender differences in citation impact potentially important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These contextual claims are well-supported by appropriate citations to prior literature and reports (C1-C10). The statement about citation metrics in career decisions (C11) reflects current practice. The logical connection to potential perpetuation of inequalities (C12) is a reasonable inference that motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The literature review identifies 22 papers on gender and citations in medical sciences (2006-2016) with heterogeneous results, methodological limitations including convenience samples, North American bias, and lack of attention to within-group variability and between-group overlap. Similar ambiguity exists in studies outside medicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The literature review is systematic and well-documented (C13-C23). The critique of methodological limitations (C24-C27) is substantive and well-reasoned, identifying specific issues with mean-based comparisons and lack of attention to confounders. This effectively establishes the rationale for the current study's more rigorous approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "As sample sizes become larger and study designs more advanced, effect sizes tend to decline towards minuscule effects, consistent with known decline effects in research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim about decline effects (C98) is supported by citation to Ioannidis 2005 and represents an established phenomenon in research methodology. It provides appropriate context for interpreting the small effect sizes found in this large, well-designed study compared to smaller prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C143",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The study's choice of covariates (institutional prestige, geographic region, medical specialty, journal prestige, international collaboration, number of authors, self-citations) is justified by prior research showing these factors influence citation impact and vary by gender.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Each covariate is justified with appropriate citations showing both its influence on citation impact and gender differences in the factor (C143, C149-C155). This demonstrates thoughtful selection of confounders based on prior literature and strengthens the study's ability to isolate gender effects from other factors.",
+    "result_type": "MINOR"
+  }
+]

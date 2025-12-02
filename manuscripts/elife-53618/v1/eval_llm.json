@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "GLUT1 (SLC2A1) and GLUT3 (SLC2A3) are highly expressed in human LUAD and correlate with poor prognosis. In the KP mouse model, which predominantly resembles the NMF4 LUAD subtype with high TP53 mutation frequency, Glut1 expression increases with tumor progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide converging evidence from human TCGA data, tissue microarrays, and mouse models demonstrating high GLUT1/GLUT3 expression in LUAD. The data are internally consistent across multiple platforms (gene expression, IHC, survival analysis) and appropriately link human and mouse models through NMF subtype analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Single deletion of Glut1 in the KP mouse model does not significantly impair overall tumor growth, tumor number, or mouse survival, though it reduces the proportion of high-grade tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 consistently show minimal effects of Glut1 deletion alone across multiple metrics (\u03bcCT growth rates, tumor weight, tumor number, survival). The only significant effect is on tumor grading (C16), which is appropriately measured and statistically supported. The conclusion (C18) appropriately reflects the mixed results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C85",
+      "C86"
+    ],
+    "result": "Glucose-derived biomass accumulates in lamellar body-like organelles within KP tumor cells, and this accumulation is partially dependent on Glut1 as demonstrated by reduced 13C-enrichment in KPG1 tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27, C85-C86 describe a novel finding using sophisticated NanoSIMS and electron microscopy techniques. The organelle identification is based on multiple morphological criteria (size, shape, lamellae), and the Glut1-dependence is demonstrated by quantitative comparison between KP and KPG1 tumors with appropriate statistical analysis (C26, p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "KPG1 tumors show impaired glycolysis ex vivo, except for one outlier with elevated Glut3 expression. Gene expression analysis reveals upregulation of PPAR\u03b1-dependent metabolic pathways in KPG1 tumors, suggesting two potential compensatory mechanisms: Glut3 upregulation or PPAR\u03b1-mediated metabolic shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 provide mechanistic insight into Glut1-deficient tumor adaptation. The Seahorse data (C28-C29) identify both the general phenotype and an important exception. The RNA-seq analysis (C30-C34) is rigorous, using three independent cohorts and GSEA, though the conclusion (C35) is appropriately framed as hypothesis-generating rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Inducible expression of dominant-negative PPAR\u03b1\u039413 successfully downregulates PPAR\u03b1-related pathways but fails to reduce tumor growth in either KP or KPG1 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 test the PPAR\u03b1 hypothesis directly through genetic manipulation. The construct functionality is validated by gene expression analysis (C38), but the lack of phenotypic effect (C36-C37, C39) appropriately refutes PPAR\u03b1 as a major compensatory mechanism. This negative result is important and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C76"
+    ],
+    "result": "Glut3 expression patterns differ between KP and KL tumor models. In KP tumors, Glut3 is expressed heterogeneously, more frequently in larger lesions, and often co-localizes with Glut1. In contrast, Lkb1-deficient KL tumors lack detectable Glut3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49, C76 characterize Glut3 expression across different tumor models using multiple techniques (RT-PCR, IHC). The data reveal important context-dependent differences: KP tumors show heterogeneous Glut3 expression that increases with tumor size (C46), while KL tumors lack Glut3 (C40, C44). This establishes the biological rationale for testing Glut3 deletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Single deletion of Glut3 in the KP mouse model does not affect tumor growth rates, ex vivo glycolysis, mouse survival, or tumor grade distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 demonstrate that Glut3 deletion alone has no detectable phenotype across comprehensive metrics. The data are consistent across multiple assays (\u03bcCT, Seahorse, survival, grading), and the conclusion (C54) appropriately summarizes the null findings. This establishes the need for dual deletion experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C87",
+      "C88"
+    ],
+    "result": "Combined deletion of Glut1 and Glut3 significantly impairs tumor development in the KP model, reducing tumor number, growth rate, size, grade, and extending mouse survival. This synergistic effect is also observed in vitro across multiple human NSCLC cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62, C87-C88 represent the central finding of the manuscript. The dual deletion phenotype is robust and consistent across multiple independent metrics in vivo (tumor number, growth rate, size, grade, survival) with appropriate statistical significance. The in vitro validation (C60-C61) in four human cell lines strengthens translational relevance. The synergy is clearly demonstrated by comparing single versus dual deletions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C89",
+      "C90"
+    ],
+    "result": "18F-FDG-PET imaging demonstrates that Glut1 is the major contributor to glucose uptake in KP tumors. Glut1 deletion significantly reduces FDG uptake, while Glut3 deletion alone does not. Combined Glut1/Glut3 deletion further reduces uptake, and no compensatory upregulation of other glucose transporters occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70, C89-C90 provide functional validation of glucose transporter roles using clinically relevant PET imaging. The data clearly establish Glut1 as the dominant transporter (C63, C70, C90) and show additive effects of dual deletion (C66). The gene expression analysis (C68) rules out compensation by other family members. The interpretation regarding tumor size and Glut3 dependence (C67) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Residual 18F-FDG-PET signal in KPG1G3 tumors may derive from glucose uptake by tumor immune microenvironment cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is explicitly framed as a hypothesis ('might come from') without direct experimental evidence. While plausible given that immune cells can take up FDG and the genetic deletions are tumor-specific, this remains speculative. Testing would require immune cell-specific imaging or depletion experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C92"
+    ],
+    "result": "In Trp53-deficient LUAD, tumor cells depend on a redundant glucose uptake system where either Glut1 or Glut3 is sufficient for tumor growth, and dual blockade is necessary for therapeutic efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C92 synthesize the major findings into a mechanistic model. The redundancy conclusion (C77) is well-supported by the differential effects of single versus dual deletions across all phenotypic measures. The therapeutic implication (C92) logically follows from the data, though appropriately framed as potential ('could reach') rather than proven efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Prior studies have demonstrated the importance of glucose metabolism in lung cancer through Sglt2 inhibition and identification of a glycolytic switch, and Glut1 deletion impairs LUSC development in the KL model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 appropriately contextualize the current work within prior literature. The citations are relevant and accurately represented. These claims establish the scientific foundation and distinguish the current findings (LUAD with Trp53 deficiency) from prior work (LUSC with Lkb1 deficiency).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Dual Glut1 and Glut3 blockade will be necessary to achieve strong anti-tumor efficacy in clinical applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 is a forward-looking clinical prediction ('we anticipate') based on the mouse and in vitro data. While the preclinical evidence is strong, translation to human therapy faces uncertainties including: (1) potential toxicity of dual blockade, (2) differences between genetic deletion and pharmacological inhibition, (3) tumor heterogeneity in human patients, and (4) lack of actual therapeutic studies. The claim is appropriately framed as anticipatory rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "In normal mouse lung, Glut1 expression is weak in the alveolar compartment (containing AT2 cells, the principal cell-of-origin) but strong in bronchiolar epithelium (containing Club cells, another permissive cell type for tumor initiation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 characterize baseline Glut1 expression in normal tissue and identify cells of origin. The IHC data (C9, C11) are clear, and the cell-of-origin claims (C10, C12) are appropriately supported by citations to prior studies. This provides important context for interpreting tumor-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C91"
+    ],
+    "result": "Glucose transporters are rate-limiting for glucose utilization in tumors, which is clinically observed by 18F-FDG-PET. However, targeting glucose transporters is complicated by potential functional redundancy and alternative nutrient sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84, C91 establish the scientific rationale and clinical context for the study. These are well-established concepts appropriately supported by citations. They frame the key question addressed by the manuscript: which glucose transporters should be targeted given potential redundancy.",
+    "result_type": "MINOR"
+  }
+]

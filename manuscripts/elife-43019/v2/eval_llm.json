@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Central vestibular neurons, regular afferents, and irregular afferents display distinct resting discharge characteristics. Central neurons show high variability (CV*=0.44\u00b10.03) with moderate firing rates (51.1\u00b12.8 sp/s), regular afferents show low variability (CV*=0.06\u00b10.005) with high firing rates (102.4\u00b16.7 sp/s), and irregular afferents show high variability (CV*=0.33\u00b10.05) with high firing rates (93.7\u00b18.9 sp/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide direct measurements of resting discharge properties from three neuron types with appropriate statistical characterization (mean\u00b1SEM). The measurements are consistent with prior literature (cited appropriately) and form the baseline characterization necessary for subsequent analyses. Sample sizes are adequate (n=27, 14, 12 respectively).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Central vestibular neurons display temporal whitening of naturalistic self-motion stimuli. While stimulus power decays by >2 orders of magnitude over 0-20 Hz, central neuron response power remains constant across this frequency range, with significantly higher whitening indices (p<0.001) and lower correlation times (p<0.001) compared to the stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10 collectively demonstrate whitening through converging spectral and temporal domain analyses. The power spectrum analysis (C6-C7) is complemented by quantitative whitening indices and correlation times (C8-C9) with appropriate statistical tests. Figure 1 provides visual confirmation. The conclusion (C10) is well-supported by the data, though the term 'optimally encode' requires the additional information-theoretic analysis provided later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Regular afferents do not perform whitening of naturalistic self-motion stimuli. While they show robust responses, their power spectra are not frequency-independent. The whitening index is only slightly higher than the stimulus (p<0.001) and correlation times are not significantly different from the stimulus (p=0.79).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 provide consistent evidence that regular afferents fail to whiten naturalistic stimuli. The spectral analysis (C13), quantitative metrics (C14-C15), and statistical tests support this conclusion. However, the slight but significant increase in whitening index (C14, p<0.001) appears inconsistent with the non-significant correlation time result (C15, p=0.79), suggesting partial but incomplete whitening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Irregular afferents show partial but incomplete whitening of naturalistic self-motion stimuli. Their whitening indices are significantly higher than the stimulus (p<0.001) and correlation times are significantly lower (p<0.001), but their response power spectra are not constant as a function of frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 demonstrate that irregular afferents perform better than regular afferents but do not achieve full whitening. The statistical tests (C17-C18) show significant improvements over the stimulus, but the spectral analysis (C19) reveals non-constant power spectra. This is consistent with the data shown in Figure 2F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Whitening occurs in stages across the vestibular pathway. Central neurons show significantly higher whitening indices than both afferent types (p<0.01), irregular afferents show higher indices than regular afferents (p=0.002), and correlation times follow the same pattern. This demonstrates that whitening is not inherited from afferents but emerges through central processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 provide systematic comparisons across neuron types with appropriate statistical tests (one-way ANOVA with post-hoc comparisons). The staged whitening conclusion (C25) is well-supported by the quantitative comparisons in both frequency and time domains. Figure 3 clearly illustrates these differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Neural tuning alone cannot explain whitening by central vestibular neurons. Predicted whitening indices from tuning are significantly lower than actual values (p<0.001), and static nonlinearities do not account for the discrepancy. In contrast, afferent tuning functions are sufficient to predict their response power spectra, with irregular afferents showing greater whitening due to their high-pass tuning properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 demonstrate through modeling that tuning is insufficient for central neurons but sufficient for afferents. The statistical comparison (C26) and control analyses for nonlinearities (C27) strengthen the conclusion. The contrast with afferents (C28-C29) is well-supported by Figure 4\u2014figure supplement 3. This is a critical negative result that motivates the variability-based explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Computational modeling reveals that optimal whitening requires matching both neural tuning and variability to stimulus statistics. The response power spectrum equals the sum of noise and transmitted power spectra. For maximum information transmission, the variability spectrum must compensate the transmitted power such that their sum is constant. Varying transmitted power significantly affects mutual information for fixed noise, and increasing noise intensity decreases mutual information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 present a coherent theoretical framework supported by modeling results in Figure 4\u2014figure supplement 4. The decomposition of response power (C31) is theoretically sound and well-established (Shannon, Rieke et al.). The modeling predictions (C33-C35) are clearly demonstrated through systematic parameter variations. This provides the theoretical foundation for interpreting the experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The resting discharge variability of central vestibular neurons, combined with their tuning, accounts for whitening. The resting discharge power spectrum increases at higher frequencies and, together with tuning, compensates for decaying stimulus power. Predicted and actual response power spectra show excellent agreement, with no significant difference in whitening indices (p=0.39). The resting discharge power spectrum closely matches trial-to-trial variability during stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 provide the key experimental validation of the theoretical predictions. The agreement between predicted and actual responses (C38-C39) is strong, with appropriate statistical testing. The validation that resting discharge approximates trial-to-trial variability (C40) is critical for the model's validity. Figure 6B-C clearly shows the excellent agreement. This is the central finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Central vestibular neurons achieve near-optimal information transmission. Actual information rates are in good agreement with optimal values, and the normalized mutual information is significantly closer to maximum for central neurons compared to afferents. Despite transmitting less absolute information than afferents due to higher variability, central neurons optimize the information transmitted relative to their noise constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 demonstrate that central neurons achieve optimized coding through the combined effects of tuning and variability. The information-theoretic analysis (C41-C42) with appropriate normalization (Figure 6D) supports the optimization claim. The prediction that absolute information is lower but relative optimization is higher (C43) is consistent with the model and validates the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C49",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C86",
+      "C87"
+    ],
+    "result": "The spectral frequency content of neural variability, matched with tuning, is essential for optimal encoding of natural stimuli. This overturns the prevailing view that whitening is achieved by neural tuning alone. Both tuning and variability significantly influence information transmission, with the frequency spectrum of variability strongly determining coding optimality for a given noise level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C87 (selected) represent the main conclusions synthesizing the experimental and modeling results. The evidence from multiple converging analyses (spectral, temporal, information-theoretic) strongly supports these conclusions. The claim that this 'overturns the prevailing view' (C45) is justified given the demonstration that tuning alone is insufficient (C26-C30) and that variability is necessary (C36-C44). This constitutes the paper's primary contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Resting discharge variability can approximate trial-to-trial variability during stimulation, as predicted by theory. Central vestibular neurons have lower but more variable resting rates than afferents (~50 vs ~100 sp/s), which explains their higher detection thresholds and lower information transmission for artificial stimuli. This increased variability is generally considered detrimental to information transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 establish the relationship between resting discharge and response variability, supported by both theory (Risken 1996) and experimental validation (C40, C73). The characterization of central neuron properties (C74-C75) is well-established in prior literature. The inference about detection thresholds and information transmission (C77-C79) is supported by citations to prior work (Massot et al. 2011). This provides important context for understanding why the spectral structure of variability matters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The spectral content of neural variability strongly influences information transmission. To optimize coding through whitening, the resting discharge spectrum must perfectly compensate the transmitted power. While higher variability in central neurons decreases absolute information transmission relative to afferents, the spectral content is optimized such that normalized mutual information is closer to its maximum value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 synthesize the key insight about how variability affects coding. The 'water filling analogy' (C81) is well-established in information theory. The experimental demonstration (C82-C83) is supported by Figure 6\u2014figure supplement 2 and Figure 6D. This explains the apparent paradox of how increased variability can be beneficial for coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C90"
+    ],
+    "result": "The authors hypothesize that matching stimulus statistics, neural tuning, and variability optimizes population-level coding and that these findings will generalize across sensory systems and species, given the ubiquity of neurons with variable spontaneous activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84 and C90 are explicitly speculative (both use 'hypothesize' or 'speculate'). While the speculation is reasonable given the ubiquity of variable neurons (C89) and findings in other systems (citations provided), these remain untested hypotheses requiring future experimental validation. The authors appropriately identify these as speculation rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study's findings are limited to passive yaw rotation stimuli. Under natural conditions, vestibular stimulation includes both active and passive self-motion. While afferents respond similarly to both, VO neurons show attenuated responses to active self-motion. Natural stimuli also include three-dimensional rotational and translational components not tested here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 appropriately acknowledge important limitations of the study. The distinction between active and passive motion (C91-C93) is well-established in cited literature. The restriction to single-axis rotation (C94) is a significant limitation for generalization to natural behavior. These caveats are important for interpreting the scope of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The study used three male macaque monkeys (aged 7-8 years) with recordings from 27 central VO neurons, 14 regular afferents, and 12 irregular afferents. Afferents were classified based on a bimodal distribution of CV* values (Hartigan's Dip Test, p=0.002) with CV*<0.1 defining regular afferents. All protocols were approved by McGill University Animal Care Committee.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C107 provide methodological details that are clearly stated and appropriate. The sample sizes are reasonable for this type of neurophysiology study and consistent with field standards. The bimodal classification of afferents (C98) is statistically validated and consistent with established methods (C99). Ethical approval is documented (C104).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The probability distributions of both naturalistic stimuli and neuronal firing rates during stimulation were well-fit by Gaussian distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by statistical analysis shown in Figure 1\u2014figure supplement 1B. This is important for validating the assumptions of the linear response theory and information-theoretic calculations used in the modeling. Gaussian distributions are assumed in equations 9-10 for optimal coding calculations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The introduction establishes the theoretical background: sensory systems are adapted to natural stimulus statistics, the prevailing view is that whitening is achieved through neural tuning matching stimulus statistics, but theory predicts that variability structure also plays an essential role. Despite this theoretical prediction, the experimental question of whether variability contributes to optimizing information transmission has not been addressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C60 accurately represent the state of the field based on extensive citations to relevant literature. The characterization of the 'prevailing view' (C54) and the gap in experimental knowledge (C59-C60) appropriately motivates the study. The theoretical predictions about variability (C48, C56-C57) are well-established in cited work (van Hateren, Rieke et al., Tkacik et al.).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C102",
+      "C103",
+      "C108"
+    ],
+    "result": "The vestibular system is well-suited for studying natural stimulus coding due to its well-described organization and easily characterized natural stimuli. Vestibular afferents with varying discharge variability synapse onto central vestibular neurons that project to motor centers and higher brain areas. Resting discharge variability influences response variability and information transmission, as established in prior work using artificial stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C108 (selected) provide appropriate background on the vestibular system, well-supported by citations to established literature. The characterization of the system's organization (C63-C64, C108) and the role of variability (C65-C66) are well-established. The distinction between afferent and central neuron response properties (C102-C103) is important for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C88",
+      "C89"
+    ],
+    "result": "Neural variability increases at central processing stages across multiple sensory systems (visual, auditory, electrosensory), thought to be due to synaptic bombardment. Most previous studies assumed variability was negligible or lacked temporal correlations, but neurons with large, variable spontaneous activity and temporal correlations are ubiquitous across sensory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 accurately characterize findings from other sensory systems based on appropriate citations. The observation that variability increases centrally (C85) is well-documented across systems. The critique of prior studies (C88) and the ubiquity of variable neurons (C89) provide important context for the generalizability of the findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,428 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "ATP3 mRNA exhibits condition-dependent mitochondrial localization, showing low association in fermentative conditions (similar to TOM22) but strong association in respiratory conditions (similar to TIM50), while TIM50 mRNA is constitutively localized to mitochondria under both conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are well-supported by experimental data in Figure 1B showing differential localization patterns. The MS2-MCP live imaging system was validated by smFISH (C127-C129), and the condition-dependent behavior of ATP3 contrasts with previous categorizations, representing a novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "ATP3 protein levels increase 4-fold while mRNA levels increase less than 2-fold during respiratory growth, whereas TIM50 shows no change in either, suggesting a relationship between mRNA localization and protein production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by experimental data in Figure 1C-E using both single-cell measurements and western blotting. The disproportionate increase in protein relative to mRNA for ATP3 provides evidence for post-transcriptional regulation linked to localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Mitochondrial volume fraction increases during respiratory conditions, and mRNA localization correlates with this geometric parameter, with ATP3 showing higher sensitivity to volume fraction changes than TIM50 or TOM22.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by quantitative single-cell analysis in Figure 2A-B. The linear relationship for TOM22 and differential sensitivities for ATP3 and TIM50 are clearly demonstrated. The correlation is independent of nutrient conditions, supporting a geometric mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Multiple perturbations (reg1\u0394, sch9\u0394, chloramphenicol) that increase mitochondrial volume fraction through different mechanisms all increase ATP3 mRNA localization, supporting that volume fraction rather than respiration per se drives localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C55 are supported by experimental data in Figure 2E and supplements. The chloramphenicol experiment is particularly compelling as it inhibits respiration yet increases localization. The sch9\u0394 analysis accounting for vacuole volume demonstrates careful consideration of geometric constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "A simple mathematical model incorporating mitochondrial volume fraction and binding affinities recapitulates experimental mRNA localization patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by the modeling in Figure 2C-D. The model successfully predicts TOM22 behavior as a Brownian particle and fits ATP3/TIM50 data with different affinity parameters (A=2.4 and A=8.8). The model's predictions match experimental perturbations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Most mitochondrial import machinery components show no expression changes between fermentative and respiratory conditions, while OM14 and OM45 increase 7-9 fold in respiratory conditions but not in reg1\u0394 or sch9\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by analysis of published proteomics data and RT-qPCR (Figure 2\u2014figure supplement 5). This argues against receptor upregulation as the primary driver of increased localization across all perturbations, supporting the geometric model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The mitochondrial targeting sequence (MTS) is necessary for mRNA localization, and active translation is required, as translation inhibition with lactimidomycin reduces localization of TIM50 and ATP3 (in respiratory conditions) to mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by experimental data in Figure 3A showing that MTS deletion and ER-targeting abolish localization, and LTM treatment reduces localization. The differential effect on ATP3 in fermentative vs. respiratory conditions is consistent with the volume fraction model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "MTS-swapping experiments reveal that the coding sequence (CDS), not the MTS, determines condition-dependent localization differences between TIM50 and ATP3, with TIM50-CDS conferring constitutive localization and ATP3-CDS conferring condition-dependent localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by chimeric reporter experiments in Figure 3B-D. The systematic swapping of MTS and CDS regions clearly demonstrates that the CDS is the determinant of localization behavior, a surprising and important mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "TIM50 contains a polyproline stretch that causes ribosome stalling, and deletion of this sequence makes TIM50 more sensitive to environmental conditions by reducing protein synthesis and mRNA localization in fermentative conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by sequence analysis, ribosome profiling data (Figure 4\u2014figure supplement 1), and deletion experiments (Figure 4A-D). The polyproline deletion converts TIM50 to a more ATP3-like behavior, supporting the role of translation elongation in localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Inserting a polyproline stretch into ATP3 increases both protein production (1.6-fold) and mRNA localization in fermentative conditions, demonstrating that ribosome stalling enhances mitochondrial localization and protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by experimental data in Figure 4E-F. The gain-of-function experiment complements the TIM50 deletion, providing strong evidence that ribosome stalling increases localization competency. The 1.6-fold increase is modest but statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Cycloheximide treatment causes a 3-fold increase in ATP3 mRNA association with mitochondria in fermentative conditions but does not affect TOM22 and only slightly increases TIM50 localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by experimental data in Figure 5A. The differential effects of CHX on the three mRNAs support the model that slowing translation elongation increases localization competency, with TIM50 already near maximal localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "130 of 551 nuclear-encoded mitochondrial mRNAs are CHX-sensitive (ATP3-type), including all conserved ATP synthase subunits except ATP16, while nonconserved subunits are CHX-insensitive (TIM50-type), as validated for ATP2 and ATP7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by reanalysis of published data (Williams et al., 2014) and experimental validation in Figure 5C-D. The pattern in ATP synthase subunits suggests evolutionary conservation of this regulatory mechanism for core complex components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "ATP3-type mRNAs show >2-fold increased protein production compared to TIM50-type during the shift from fermentation to respiration, driven by increases in both translation efficiency and mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by analysis of published ribosome profiling and proteomics data (Figure 5E, Figure 5\u2014figure supplement 2). The global analysis demonstrates that the ATP3/TIM50 distinction represents a widespread regulatory strategy affecting many mitochondrial proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Artificially tethering mRNAs to mitochondria or ER is sufficient to increase protein production, even for mRNAs lacking mitochondrial coding sequences, demonstrating that localization per se enhances translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by MS2-MCP tethering experiments in Figure 6B-C. The finding that even GFP alone shows increased production when tethered is striking and demonstrates that the effect is not specific to mitochondrial proteins, suggesting a general property of organellar surfaces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Tethering mRNAs to mitochondria increases both mRNA levels and ribosome association (3-fold), with the protein-to-mRNA ratio being much higher, indicating increased translational efficiency on the mitochondrial surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by RT-qPCR and polysome fractionation data in Figure 6D-E. The combination of increased mRNA stability and translation efficiency provides a mechanistic explanation for the enhanced protein production observed with tethering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Redirecting ATP3 and TIM50 mRNAs to the plasma membrane decreases protein levels and causes a growth defect in respiratory conditions, while ER tethering maintains protein production and normal growth, demonstrating that mitochondrial localization is important for optimal respiratory growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by CaaX-anchoring experiments in Figure 6F-G. The growth defect with plasma membrane tethering but not ER tethering demonstrates physiological importance and suggests that organellar surfaces generally support enhanced translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Yeast cells use geometric constraints from increased mitochondrial volume fraction and translation duration to control condition-dependent mitochondrial mRNA localization, with fast-translating ATP3 requiring high volume fraction and slow-translating TIM50 localizing even at low volume fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 represent the central mechanistic model supported by the entire body of experimental evidence. The model integrates geometric constraints, translation kinetics, and binding competency to explain condition-dependent localization. The model in Figure 7 synthesizes all findings coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "mRNA localization to mitochondria functions to upregulate protein synthesis rather than solely facilitating co-translational import, as evidenced by tethering experiments increasing synthesis and plasma membrane anchoring causing growth defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are supported by the tethering and anchoring experiments in Figure 6. This represents a conceptual advance, proposing an alternative function for mitochondrial mRNA localization beyond the traditional co-translational import model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Condition-dependent mRNA localization may tune mitochondrial protein composition to metabolic needs, as evidenced by coordinated regulation of conserved ATP synthase subunits and >2-fold increased protein synthesis for ATP3-type mRNAs during respiratory growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 are supported by the ATP synthase subunit analysis (Table 1) and global data analysis (Figure 5E, Figure 5\u2014figure supplement 2). The coordinated regulation of functionally related proteins suggests an evolved regulatory mechanism for metabolic adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Mitochondrial localization increases both mRNA stability and translation initiation, with ribosome stalling paradoxically increasing protein synthesis by prolonging localization competency and enhancing initiation, which is the rate-limiting step for most mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 are supported by the tethering experiments showing increased mRNA levels (Figure 6D) and the polyproline insertion experiments (Figure 4). The mechanistic explanation reconciles the apparent paradox of stalling increasing synthesis through enhanced initiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Several mechanisms could explain enhanced translation on mitochondrial surfaces, including increased ribosome density, altered translation factor activity near ATP-producing mitochondria, or specialized ribosomes, with evidence that specific ribosomal protein paralogs affect mitochondrial protein translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C124 are largely speculative (C119-C121) or cite previous work (C122-C124). While the cited evidence about Rpl1b is relevant, the manuscript does not directly test these mechanisms. These represent plausible hypotheses for future investigation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "The mitochondrial mRNA localization mechanism controlled by translation elongation and volume fraction may extend to higher eukaryotes, as mammalian ATP synthase mRNAs show CHX-dependent mitochondrial localization similar to yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C126 are speculative regarding broader applicability, though C126 cites supporting evidence from mammalian cells (Fazal et al., 2019). The parallel in mammalian cells is suggestive but not definitive evidence that the same mechanism operates in higher eukaryotes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The MS2-MCP live imaging system reliably detects single mRNA molecules, with >84% of ORF and MS2 sequences representing continuous mRNA and foci numbers matching smFISH counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 are supported by validation experiments in Figure 1\u2014figure supplement 1 comparing live imaging to smFISH. This technical validation is essential for interpreting all subsequent localization experiments and demonstrates the reliability of the imaging approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background on mitochondrial biology, yeast metabolism, and mitochondrial gene expression regulation, including the Crabtree effect, HAP complex function, and translational regulation during metabolic shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 represent established background knowledge supported by citations. These provide necessary context for the study but are not novel findings. They accurately summarize the field and motivate the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C104"
+    ],
+    "result": "Historical and recent work has identified mitochondrial mRNA localization involving 3' UTRs, MTSs, Puf3, translation, TOM complex, OM14, and NAC, with ribosomes localized to mitochondrial surfaces since the 1970s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 and C104 accurately summarize prior work on mitochondrial mRNA localization with appropriate citations. This literature review establishes the foundation for the current study and identifies gaps in understanding the functional importance of localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Summary of main findings: mitochondrial volume fraction increases during respiratory growth and drives condition-dependent mRNA localization, which is necessary and sufficient for increased protein production, with ribosome stalling enhancing both localization and synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 represent the abstract/summary of main findings, which are supported by the detailed experimental results described in other claim groups. These high-level statements accurately reflect the demonstrated findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C51"
+    ],
+    "result": "Background on genetic and pharmacological perturbations: reg1\u0394 increases mitochondrial function in glucose, chloramphenicol inhibits mitochondrial translation while increasing mitochondrial volume, and sch9\u0394 produces small cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C51 cite established properties of these perturbations from previous literature. This background information justifies the choice of experimental perturbations used to test the volume fraction model.",
+    "result_type": "MINOR"
+  }
+]

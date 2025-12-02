@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C81"
+    ],
+    "result": "The authors identified 119 mouse-specific protein-coding genes from intergenic regions using phylostratigraphy and synteny-based approaches, with 110 of these showing direct evidence of translation via ribosome profiling and mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C81 are well-supported by the described computational pipeline combining phylostratigraphy, synteny analysis, ribosome profiling, and mass spectrometry data. The methods are clearly described and appropriate for identifying de novo genes and validating their translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "De novo genes show distinct molecular characteristics compared to other protein-coding genes: lower expression levels, fewer exons and coding exons, shorter protein lengths, less predicted disorder, and similar hydrophobicity. Testis and brain show the highest expression of these genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C9 are supported by statistical comparisons using appropriate tests (Wilcoxon rank sum) with highly significant p-values (<2.2\u00d710^-16 for most comparisons, p=0.0024 for disorder, p=0.52 for hydrophobicity). The tissue expression patterns are derived from ENCODE RNA-Seq data analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Gm13030 is predominantly expressed in the oviduct, not the ovary as initially suggested by ENCODE data, as confirmed by reverse transcription PCR on carefully dissected tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C11 demonstrate appropriate experimental validation. The authors recognized potential tissue contamination in ENCODE data (C10) and performed targeted RT-PCR experiments (C11) to precisely localize expression, showing scientific rigor in addressing potential artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C53",
+      "C85"
+    ],
+    "result": "The Gm13030 ORF emerged 2-4 million years ago through enabler mutations and was retained only in M. m. musculus and M. m. castaneus populations, with M. m. domesticus populations carrying a 17nt deletion disrupting the reading frame. The gene shows no signal of positive selection after emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15, C53, and C85 are supported by comprehensive phylogenetic analysis including sequence alignments, identification of enabler and disabler mutations, and statistical analysis of substitution patterns. The lack of positive selection is demonstrated through dN/dS-like analyses showing no bias toward coding mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "CRISPR/Cas9 generated a 7 bp deletion causing a frameshift in Gm13030, with no detected off-target effects in whole genome sequencing. The knockout line is homozygous viable and fertile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are well-supported. The deletion was verified by sequencing (C16), comprehensive off-target analysis using whole genome sequencing at 35X coverage found no variants near 343 predicted sites (C17), and viability/fertility were directly observed (C18). The off-target analysis is particularly rigorous.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C36",
+      "C61",
+      "C86"
+    ],
+    "result": "Gm13030 knockout affects the oviduct transcriptome only at a specific estrous cycle stage (cluster 1), with 21 genes differentially expressed (adjusted p\u22640.01), but no effect in other cycle stages. The affected stage corresponds to proestrus/early estrus based on hormone receptor expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C36, C61, and C86 demonstrate sophisticated experimental design accounting for estrous cycle variation. The clustering approach (PCA and hierarchical) is appropriate, and the identification of cycle-specific effects is validated by hormone receptor expression patterns. The differential expression analysis using DESeq2 with appropriate statistical thresholds is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C62",
+      "C63"
+    ],
+    "result": "Dcpp1, Dcpp2, and Dcpp3 are significantly upregulated in knockout samples (fold changes 1.45-1.59), and these genes are known to stimulate pre-implantation embryo development in the oviduct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C62 are supported by both RNA-Seq (DESeq2) and independent validation by ddPCR. Claims C24, C25, and C63 appropriately cite prior work (Lee et al., 2006) for the known function of Dcpp genes. The convergence of RNA-Seq and ddPCR provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C64"
+    ],
+    "result": "Homozygous knockout females produce their second litter significantly faster than wildtype or heterozygous females (median 23 vs. 38 days, p=0.042 by Wilcoxon rank sum test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, and C64 are supported by breeding data from both stock breeding and dedicated mating experiments. The use of non-parametric statistics (Wilcoxon rank sum test) is appropriate given the bimodal distribution of the data. However, the p-value of 0.042 is marginal and the sample sizes are modest (N=16 KO, N=20 WT/HET).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C65"
+    ],
+    "result": "About a quarter of litters from homozygous knockout females show infanticide (4/16), while none from wildtype or heterozygous females do (0/20), a statistically significant difference (p=0.031 by Fisher's exact test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C65 are supported by breeding observations and appropriate statistical analysis (Fisher's exact test). However, the p-value is marginal (0.031), and the absolute numbers are small (4 events). The result would benefit from replication with larger sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Homozygous knockout females have similar litter sizes to wildtype or heterozygous females (medians: 6.5 vs. 7.0 for litter 1, 6.5 vs. 7.5 for litter 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by breeding data showing no substantial difference in litter sizes. However, no statistical test is reported for this comparison, which would strengthen the conclusion of no difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C35"
+    ],
+    "result": "Dcpp3 was lost in M. m. domesticus populations, which could potentially compensate for the loss of Gm13030 by lowering overall Dcpp expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C33 is supported by copy number variation data from prior work (Pezer et al., 2015). However, claim C35 is explicitly speculative ('could be considered to compensate') and lacks direct experimental validation. The compensatory mechanism is an interesting hypothesis but remains unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C87",
+      "C88"
+    ],
+    "result": "The loss of Gm13030 should be detrimental in the wild, with faster second litters potentially causing postpartum stress and infanticide. Higher infanticide may explain similar litter sizes if pups were eaten before observation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34, C87, and C88 are speculative interpretations of the phenotypic data. While the observed phenotypes (shorter intervals, infanticide) are real, the inference about wild fitness (C34) and the mechanistic explanations (C87, C88) lack direct evidence. These are reasonable hypotheses but require validation through field studies or additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C82"
+    ],
+    "result": "Dcpp expression is induced by pre-implantation embryos and stimulates embryo maturation. Shj may function to control Dcpp expression in the mother's interest, representing an evolutionary conflict situation that may have driven Shj emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C38 is supported by citation to Lee et al., 2006. However, claims C39, C40, and C82 are explicitly speculative ('could have found its function', 'may have been driven'). While the upregulation of Dcpp genes in knockouts is consistent with a regulatory role for Shj, the specific mechanism and evolutionary conflict hypothesis lack direct experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Shj inactivation alleles segregate at low frequency in M. m. musculus and M. m. castaneus populations, suggesting ongoing evolutionary integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by sequence analysis data shown in Figure 3 and supplements, which document the presence of inactivating mutations at low frequencies in these populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C60"
+    ],
+    "result": "Shj did not require additional protein sequence adaptation to become functional after ORF emergence, challenging the expectation that positive selection is necessary proof of de novo gene functionality. The conversion of non-coding to coding sequence may be sufficient for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C60 are supported by the lack of positive selection signal (C15) combined with demonstrated functional effects (transcriptomic and phenotypic). Claim C55 appropriately cites supporting evidence from Ruiz-Orera et al., 2018. Claims C56 and C59 are interpretive but logically follow from the data. This represents an important conceptual contribution to understanding de novo gene evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The bimodal distribution of time to second litter reflects mouse reproductive biology: females can ovulate shortly after birth (early group, \u226425 days) or have suppressed ovulation during lactation (late group, \u226535 days). More knockout females fall in the early group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 correctly describe established mouse reproductive biology. Claims C92-C94 are supported by the breeding data shown in Figure 5, which clearly demonstrates the bimodal distribution and the shift toward earlier second litters in knockouts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Rxfp1, the receptor for pregnancy hormone relaxin, is differentially expressed in cluster 1, and relaxin signaling is involved in reproductive cycle regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C27 are supported by established knowledge (C26) and appropriate citations (C27 to Valkovic et al., 2019 and Anand-Ivell and Ivell, 2014). Rxfp1 is among the 21 differentially expressed genes in Table 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The authors name Gm13030 as Shiji (Shj) after a female figure born from stone in Chinese mythology, reflecting its de novo origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is a nomenclature decision by the authors, appropriately justified by the de novo origin of the gene and its female-specific function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Previous research has focused on male-biased expression and male fertility effects of de novo genes. Female reproduction should also show accelerated evolution but has been neglected, partly due to estrous cycle complexity and the abundance of meiotic cells in testis versus ovaries. Shj acts in somatic oviduct cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C43, and C46 are supported by appropriate citations to prior work. Claims C44, C45, and C47 represent reasonable assessments of the field and biological complexity. Claim C48 is supported by the oviduct expression data. These claims provide important context for the significance of studying female-specific de novo genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C57",
+      "C58",
+      "C83"
+    ],
+    "result": "Contrary to historical assumptions that functional de novo gene emergence is rare, the authors demonstrate that many well-supported de novo gene transcripts exist, Shj has clear transcriptomic and phenotypic functions, and random protein sequences can convey evolutionarily relevant functions, though early-stage genes are subject to frequent secondary loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by the identification of 119 candidate genes with translation evidence and the functional characterization of Shj. Claims C57, C58, and C83 appropriately cite supporting literature (Bao et al., 2017; Neme et al., 2017; Palmieri et al., 2014) and integrate these with the current findings. This represents a major conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The introduction establishes that while de novo gene emergence is well-documented genomically and duplication-divergence is well-understood, functional analysis of young de novo genes has been lacking. Prior functional studies focused mainly on yeast and male fertility in flies/mice. Mammalian females have complex reproduction and should harbor functional de novo genes affecting female fertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C80 provide appropriate background context, accurately citing prior work and identifying the gap in knowledge that this study addresses. These claims establish the motivation and significance of the research.",
+    "result_type": "MINOR"
+  }
+]

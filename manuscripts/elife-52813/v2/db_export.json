@@ -1,0 +1,1240 @@
+{
+  "submission": {
+    "id": "5dd05614-5af6-46b9-9d3e-c16986fda141",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:59:06.632736Z",
+    "updated_at": "2025-12-02T15:59:06.632736Z"
+  },
+  "content": [
+    {
+      "id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "submission_id": "5dd05614-5af6-46b9-9d3e-c16986fda141",
+      "content_type": "manuscript",
+      "content_text": "# Delayed antibiotic exposure induces population collapse in enterococcal communities with drug-resistant subpopulations\n\n## Authors\n\n- Kelsey M Hallinen<sup>1</sup> ([ORCID: 0000-0003-4081-6699](https://orcid.org/0000-0003-4081-6699))\n- Jason Karslake<sup>1</sup>\n- Kevin B Wood<sup>1</sup> ([ORCID: 0000-0002-0985-7401](https://orcid.org/0000-0002-0985-7401)) \u2020\n\n### Affiliations\n\n1. Department of Biophysics, University of Michigan Ann Arbor United States\n2. Department of Physics, University of Michigan Ann Arbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe molecular underpinnings of antibiotic resistance are increasingly understood, but less is known about how these molecular events influence microbial dynamics on the population scale. Here, we show that the dynamics of E. faecalis communities exposed to antibiotics can be surprisingly rich, revealing scenarios where increasing population size or delaying drug exposure can promote population collapse. Specifically, we demonstrate how density-dependent feedback loops couple population growth and antibiotic efficacy when communities include drug-resistant subpopulations, leading to a wide range of behavior, including population survival, collapse, or one of two qualitatively distinct bistable behaviors where survival is favored in either small or large populations. These dynamics reflect competing density-dependent effects of different subpopulations, with growth of drug-sensitive cells increasing but growth of drug-resistant cells decreasing effective drug inhibition. Finally, we demonstrate how populations receiving immediate drug influx may sometimes thrive, while identical populations exposed to delayed drug influx collapse.\n\n## Introduction\n\nAntibiotic resistance is a growing public health threat (Davies and Davies, 2010). Decades of rapid progress fueled by advances in microbiology, genomics, and structural biology have led to a detailed but still growing understanding of the molecular mechanisms underlying resistance (Blair et al., 2015). At the same time, recent studies have shown that drug resistance can be a collective phenomenon driven by emergent community-level dynamics (Vega and Gore, 2014; Meredith et al., 2015b). For example, drug degradation by a sub-population of enzyme-producing cells can lead to cooperative resistance that allows sensitive (non-producing) cells to survive at otherwise inhibitory drug concentrations (Yurtsev et al., 2013; Sorg et al., 2016; Yurtsev et al., 2016). Additional examples of collective resistance include density-dependent drug efficacy (Brook, 1989; Udekwu et al., 2009; Tan et al., 2012; Karslake et al., 2016), indole-mediated altruism (Lee et al., 2010), and increased resistance in dense surface-associated biofilms (Davies, 2003). The growing evidence for collective resistance underscores the need to understand not just the molecular underpinnings of resistance, but also the ways in which these molecular-level events shape population dynamics at the level of the bacterial community. Indeed, a wave of recent studies are inspiring novel strategies for combating resistance by exploiting different features of the population dynamics, ranging from competition for resources (Hansen et al., 2017; Hansen et al., 2019) or synergy with the immune system (Gjini and Brito, 2016) to temporal and spatial features of growth, selection, or the application of drug (Lipsitch and Levin, 1997; Meredith et al., 2015a; Fuentes-Hernandez et al., 2015; Zhang et al., 2011; Baym et al., 2016a; Greulich et al., 2012; Hermsen et al., 2012; Moreno-Gamez et al., 2015; De Jong and Wood, 2018; Trindade et al., 2009; Borrell et al., 2013; Bonhoeffer et al., 1997; Bergstrom et al., 2004; Bonhoeffer et al., 1997; Yoshida et al., 2017; Nichol et al., 2015; Roemhild et al., 2018; Baym et al., 2016b; Michel et al., 2008; Hegreness et al., 2008; Pena-Miller et al., 2013; Rodriguez de Evgrafov et al., 2015; Munck et al., 2014; Torella et al., 2010; Imamovic and Sommer, 2013; Kim et al., 2014; P\u00e1l et al., 2015; Barbosa et al., 2017; Barbosa et al., 2018; Nichol et al., 2019; Maltas and Wood, 2019; Podnecky et al., 2018; Imamovic et al., 2018; Dean et al., 2020). As a whole, these studies demonstrate the important role of community-level dynamics for understanding and predicting how bacteria respond and adapt to antibiotics. Despite the relatively mature understanding of resistance at the molecular level, however, the population dynamics of microbial communities in the presence of antibiotics are often poorly understood.\n\nHere we investigate dynamics of E. faecalis populations exposed to (potentially time-dependent) influx of ampicillin, a commonly-used \u03b2-lactam. E. faecalis is an opportunistic pathogen that contributes to a number of clinical infections, including infective endocarditis, urinary tract infections, and blood stream infections (Clewell et al., 2014; Huycke et al., 1998; Hancock and Gilmore, 2006; Ch'ng et al., 2019). \u03b2-lactams are among the most commonly used antibiotics for treating E. faecalis infections, though resistance is a growing problem (Miller et al., 2014). Resistance to ampicillin can arise in multiple ways, including by mutations to the targeted penicillin binding proteins or production of \u03b2-lactamase, an enzyme that hydrolyzes the \u03b2-lactam ring and renders the drug ineffective. Enzymatic drug degradation is a common mechanism of antibiotic resistance across species and has been recently linked to cooperative resistance in E. coli (Yurtsev et al., 2013) and S. pneumoniae (Sorg et al., 2016). In addition, E. faecalis populations exhibit density-dependent growth when exposed to a wide rang-lactamse of antibiotics (Karslake et al., 2016). Increasing population density typically leads to decreased growth inhibition by antibiotics, consistent with the classical inoculum effect (IE) (Brook, 1989). However, \u03b2-lactams can also exhibit a surprising \u2018reverse\u2019 inoculum effect (rIE) characterized by increased growth of the population at lower densities (Karslake et al., 2016; Jokipii et al., 1985). In E. faecalis , the rIE arises from a decrease in local pH at increasing cell densities (Karslake et al., 2016), which are associated with increased activity of ampicillin and related drugs (Yang et al., 2014). Similar growth-driven changes in pH have been recently shown to modulate intercellular interactions (Ratzke and Gore, 2018), promote ecological suicide in some species (Ratzke et al., 2018), and even to modulate antibiotic tolerance in multispecies communities (Aranda-D\u00edaz et al., 2020). In addition to these in vitro studies, recent work shows that E. faecalis infections started from high- and low-dose inocula lead to different levels of immune response and colonization in a mouse model (Chong et al., 2017).\n\nIn this work, we show that density-dependent feedback loops couple population growth and drug efficacy in E. faecalis communities comprised of drug-resistant and drug-sensitive cells exposed to time-dependent concentrations of antibiotic. By combining experiments in computer-controlled bioreactors with simple mathematical models, we demonstrate that coupling between cell density and drug efficacy can lead to rich dynamics, including bistabilities where low-density populations survive while high-density populations collapse. In addition, we experimentally show that there are certain scenarios where populations receiving immediate drug influx may eventually thrive, while identical populations exposed to delayed drug influx\u2013which also experience lower average drug concentrations\u2013are vulnerable to population collapse. These results illustrate that the spread of drug resistant determinants exhibits rich and counterintuitive dynamics, even in a simplified single-species population.\n\n## Results\n\n### Resistant and sensitive populations exhibit opposing density-dependent effects on antibiotic inhibition\n\nTo investigate the dynamics of E. faecalis populations exposed to \u03b2-lactams, we first engineered drug resistant E. faecalis strains that contain a multicopy plasmid that constitutively expresses \u03b2-lactamase (Materials\u00a0and\u00a0methods). Sensitive cells harbored a similar plasmid that lacks the \u03b2-lactamase insert. To characterize the drug sensitive and drug resistant strains, we estimated the half maximal inhibitory concentration, IC50, of ampicillin in liquid cultures starting from a range of inoculum densities (Figure 1A; Materials\u00a0and\u00a0methods). We found that the IC50\u00a0for sensitive strains is relatively insensitive to inoculum density over this range, while \u03b2-lactam producing resistant cells exhibit strong inoculum effects (IE) and show no inhibition for inoculum densities greater than 10-5\u00a0(OD units) even at the highest drug concentrations (10 \u00b5g/mL). To directly investigate growth dynamics at larger densities\u2013similar to what can be resolved with standard optical density measurements\u2013we used computer controlled bioreactors to measure per capita growth rates of populations held at constant densities and exposed to a fixed concentration of drug (as in Karslake et al., 2016). At these higher densities, we found that resistant strains are insensitive to even very large drug concentrations (in excess of 103 \u00b5g/mL). By contrast, sensitive populations are inhibited by concentrations smaller than 1 \u00b5g/mL, and the inhibition depends strongly on density, with higher density populations showing significantly decreased growth (Figure 1B)\u2013indicative of a reverse inoculum effect (rIE). Taken together, these results illustrate opposing effects of cell density on drug efficacy in sensitive and resistant populations. In what follows, we focus on dynamics in the regime OD\u00a0>\u00a00.05, where the interplay between these two opposing effects may dictate survival or extinction of resistant populations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig1-v2.jpg)\n\n**Figure 1.:** (A) Half-maximal inhibitory concentration (IC50) of ampicillin as a function of inoculum density for resistant (red squares) and sensitive (blue circles) populations. IC50\u00a0is estimated using a fit to Hill-like function $f\u2062(x)=(1+(x/K)^{h})^{-1}$, where $h$ is a Hill coefficient and $K$ is the IC50. (B) Per capita growth rate of drug-sensitive populations held at a density of OD\u00a0=\u00a00.2 (open squares) and OD\u00a0=\u00a00.8 (filled circles) following addition of ampicillin at time 0. Growth rate is estimated, as in Karslake et al.\u00a0(2016), from the average media flow rate required to maintain populations at the specified density in the presence of a constant drug concentration of 0.5 \u00b5g/mL. Flow rate is averaged over sliding 20 min windows after drug is added. Note that drug-resistant populations exhibit no growth inhibition over these density ranges, even for drug concentrations in excess of 103\u00a0\u00b5g/mL. (C) Schematic of experimental setup. Cell density in planktonic populations is measured via light scattering from IR detector/emitter pairs calibrated to optical density (OD). Fresh media (containing appropriate drug concentrations) is introduced over time using computer-controlled peristaltic pumps, and waste is simultaneously removed to maintain constant volume (see Materials and methods). (D) Top panel: final cell density of drug sensitive populations exposed to constant drug influx over a 20 hr period. Experiments were started from either \u2018high density\u2019 (OD\u00a0=\u00a00.6, red) or \u2018low density\u2019 (OD\u00a0=\u00a00.1, blue) initial populations. Bottom panel: cell density time series for drug-resistant populations exposed to ampicillin influx of approximately 1200 \u00b5g/mL per hour. In all experiments media was refreshed and waste removed at a rate of \u00b50\u00a0\u2248\u00a00.1\u00a0hr\u22121. E. In mixed populations containing both sensitive (green) and resistant (blue, \u2018R\u2019) cells, there are opposing density-dependent effects on drug efficacy. Increasing the density of resistant cells is expected to decrease drug efficacy as a result of increased \u03b2-lactamase production (left side). By contrast, increasing the density of the total cell population decreases the local pH and increases the efficacy of \u03b2-lactam antibiotics (right side).\n\n### Resistant populations exhibit bistability between survival and extinction in the presence of constant drug influx\n\nBacteria in natural or clinical environments may often be exposed to drug concentrations that change over time. To introduce non-constant antibiotic concentrations, we grew populations in computer controlled bioreactors capable of precise control of inflow (e.g. drug and media) and outflow in each growth chamber (Figure 1C; see also Toprak et al., 2012; Toprak et al., 2013; Karslake et al., 2016). Cell density is monitored with light scattering (OD), and each chamber received fresh media and drug at a rate \u00b50\u00a0\u2248\u00a00.1\u00a0hr\u22121, which is approximately an order of magnitude slower than the per capita growth rate of sensitive cells in drug-free media. In the absence of drug, cells reach a steady state population size of $C\u2062(1-\\mu)$, where $C$ is the carrying capacity ($C\u22481$ in our experiments), $\\mu=\\mu_{0}/g_{m\u2062a\u2062x}$, and $g_{m\u2062a\u2062x}$ is the drug-free (maximum) per capita growth rate of bacteria. By changing the concentration of drug $D_{r}$ in the media reservoir, we can expose cells to effective rates of drug influx $F=\\mu_{0}\u2062D_{r}$.\n\nWe first characterized the population dynamics of each cell type (resistant, sensitive) alone in response to different influx rates of ampicillin. In each experiment, we started one population at OD\u00a0=\u00a00.6 (\u2018high-density\u2019) and one at OD\u00a0=\u00a00.1 (\u2018low density\u2019). Not surprisingly, sensitive only populations exhibit a monotonic decrease in final (20 hr) population size with increasing drug concentration (Figure 1D, top panel), with both high- and low-density populations approaching extinction for F\u00a0>0.1 \u00b5g/mL/ per hr. By contrast, high- and low-density populations of resistant cells exhibit divergent behavior, with high-density populations surviving and low-density populations collapsing (Figure 1D, bottom panel). In addition, we note that the resistant strains have dramatically increased minimum inhibitory concentrations (MIC), with high-density populations surviving at $D_{r}=10^{4}$\u00a0\u00b5g/mL (an effective influx of over 1000 \u00b5g/mL/hr). Indeed, the half-maximal inhibitory concentrations (IC50) for sensitive-only and resistant-only populations differ significantly even at very low densities (Figure 1A), suggesting intrinsic differences in resistance even in the absence of density-dependent coupling. This difference corresponds to a direct benefit provided to the enzyme-producing cells, above and beyond any benefit that derives from drug degradation by neighboring cells.\n\nThese results, along with those in previous studies (Karslake et al., 2016), are consistent with a picture of competing density-dependent feedback loops in populations comprised of both sensitive and resistant sub-populations (Figure 1E). Increasing the total population density potentiates the drug, a consequence of the pH-driven reverse inoculum effect (rIE). On the other hand, increasing the size of only the \u03b2-lactamase producing subpopulation is expected to decrease drug efficacy as enzymatic activity decreases the external drug concentration. These opposing effects couple the dynamics of different subpopulations with drug efficacy, which in turn modulates both the size and composition of the community.\n\n### Mathematical model of competing density effects predicts bistability favoring survival of high-density populations at high drug influx rates and low-density populations at low influx rates\n\nTo investigate the potential impact of these competing density effects on population dynamics, we developed a simple phenomenological mathematical model that ascribes density-dependent drug efficacy to a change in the effective concentration of the antibiotic (see SI for alternative models). Specifically, the dynamics of sensitive and resistant populations are described by\n\n$$\n\\frac{dN_{s}}{dt}=g(D)(1\u2212\\frac{N_{s}+N_{r}}{C})N_{s}\u2212\\muN_{s},\\frac{dN_{r}}{dt}=g(D^{\u2032})(1\u2212\\frac{N_{s}+N_{r}}{C})N_{r}\u2212\\muN_{r}\n$$\n\nwhere $N_{s}$ is the density of sensitive cells, $N_{r}$ the density of resistant cells, $C$ is the carrying capacity (set to one without loss of generality), \u00b5 is a rate constant that describes the removal of cells due to (slow) renewal of media and addition of drug, $D$ is the effective concentration of drug (measured in units of MIC of the sensitive cells), and $D^{\u2032}=D/K_{r}$, where $K_{r}$ is a factor that describes the increase in drug minimum inhibitory concentration (MIC) for the resistant (enzyme producing) cells in low-density populations where cooperation is negligible. The function $g\u2062(x)$ is a dose response function that describes the per capita growth rate of a population exposed to concentration $x$ of antibiotic and is given by Udekwu et al. (2009):\n\n$$\ng\u2062(x)=\\frac{(1-x^{h})\u2062g_{m\u2062a\u2062x}\u2062g_{m\u2062i\u2062n}}{x^{h}\u2062g_{m\u2062a\u2062x}+g_{m\u2062i\u2062n}}\n$$\n\nwhere $h$ is a Hill coefficient that describes the steepness of the dose response function, $g_{m\u2062a\u2062x}$ is the growth in the absence of drug, and $g_{m\u2062i\u2062n}>0$ is the maximum death rate. The function $g\u2062(x)$ is a sigmoidal function that equals $g_{m\u2062a\u2062x}$ at $x=0$ (no drug), decreases monotonically and crosses the horizontal axis at $x=1$, and then approaches the maximum death rate $g_{m\u2062i\u2062n}$ as $x$ approaches infinity ($g\u2062(x)\u2192-g_{m\u2062i\u2062n}$). Without loss of generality, we set $g_{m\u2062a\u2062x}=1$, which is equivalent to measuring all rates in time units set by $g_{m\u2062a\u2062x}^{-1}$ (coincidentally, we find that drug-free growth rate under the current experimental conditions is approximately $g_{m\u2062a\u2062x}=1$ hr-1, so measuring rates in units of $g_{m\u2062a\u2062x}^{-1}$ is equivalent to measuring time in hours).\n\nTo account for the density dependence of drug efficacy, we model the effective drug concentration as\n\n$$\n\\frac{d\u2062D}{d\u2062t}=F+\u03f5_{1}\u2062(N_{s}+N_{r})\u2062D-\u03f5_{2}\u2062N_{r}\u2062D-D\u2062\\mu\n$$\n\nwhere $\u03f5_{1}>0$ is an effective rate constant describing the reverse inoculum effect (proportional to total population size), which is modeled as an increase in the effective drug concentration with cell density. We do not mean to imply that the cells physically produce antibiotic; instead, this phenomenological model is intended to capture the increase in drug efficacy due to acidification of the local environment as density increases. Similarly, the parameter $\u03f5_{2}>0$ describes the enzyme-driven \u2018normal\u2019 inoculum effect (proportional to the size of the resistant subpopulation), which corresponds mathematically\u2013and in this case, also physically\u2013to a degradation of antibiotic. $F=D_{r}\u2062\\mu$ is rate of drug influx into the reservoir, which can be adjusted by changing the concentration $D_{r}$ in the drug reservoir. When $\u03f5_{2}\\leq\u03f5_{1}$\u2013when the per capita effect of the inoculum effect (IE) is less than or equal to that of its reverse (rIE) counterpart\u2013the $\u03f5_{1}$ term is always larger in magnitude than the $\u03f5_{2}$ term and the net effect of increasing total cell density is to increase effective drug concentration, regardless of population composition. This regime is inconsistent with experiments, where resistant-only populations exhibit a strong IE and sensitive-only populations a rIE (Figure 1). We therefore focus on the case $\u03f5_{2}>\u03f5_{1}$, where density and composition-dependent trade-offs may lead to counterintuitive behavior.\n\nDespite the simplicity of the model, it predicts surprisingly rich dynamics (Figure 2). At rates of drug influx below a critical threshold ($F<F_{c}$), populations reach a stable fixed point at a density approaching $C\u2062(1-\\mu)$ as influx approaches zero. On the other hand, populations go extinct for large influx rates $F\u226bF_{c}$, regardless of initial density or composition. Between the two regimes lies a region of bistability, where populations are expected to survive or die depending on the initial conditions. To characterize the behavior in this bistable region, we calculated the separatrix\u2013the surface separating regions of phase space leading to survival from those leading to extinction\u2013for different values of the antibiotic influx rate using an iterative bisection algorithm, similar to Cavoretto et al. (2017). The analysis reveals that increasing total population size can lead to qualitatively different behavior\u2013survival or extinction\u2013depending on the rate of drug influx.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig2-v2.jpg)\n\n**Figure 2.:** Top: bifurcation diagram showing stable (filled circles) and unstable (red dashed curves) fixed points for different values of drug influx ($F$) and the total number of cells ($N_{s}+N_{r}$). $F_{c}\u2248\\mu\u2062K$ is the critical value of drug influx above which the zero solution (extinction) becomes stable; \u03bc is the rate at which cells and drugs are removed from the system (and is measure in units of $g_{m\u2062a\u2062x}$, the maximum per capita growth rate of cells in drug-free media, and $K_{r}$ is the factor increase in drug MIC of the resistant strain relative to the wild-type strain. Vertical black dashed lines correspond to $F=F_{1}>F_{c}$ (small drug influx, just above threshold) and $F_{2}\u226bF_{c}$ (large drug influx). Bottom panels: regions of survival (white) and extinction (grey) in the space of sensitive ($N_{s}$) and resistant ($N_{r}$) cells for flow rate $F=F_{1}$ (left) and $F=F_{2}$ (right). Dashed lines show separatrix, the contour separating survival from extinction. Multicolor lines represent constant resistant fractions (1/5, left; 3/4, right) at different total population sizes (ranging from 0 (blue) to a maximum density of 1 (red)). Cell numbers are measured in units of carrying capacity. Specific numerical plots were calculated with $h=1.4$, $g_{m\u2062i\u2062n}=1/3$, $g_{m\u2062a\u2062x}=1$, $\u03f5_{1}=1.1$, $\u03f5_{2}=1.5$, $\\gamma=0.1$, $K_{r}=14$, $F_{1}=1.4$, and $F_{2}=2.2$.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Contour lines separating regions of survival and extinction in the space of sensitive ($N_{s}$) and resistant ($N_{r}$) cells for a series of flow rates (increasing from blue to red) that span the bistable region with (left) and without (right) the reverse inoculum effect. Each contour line shows the separatrix for a particular value of $F$ in the bistable region. For the lowest value of $F$, the region of extinction is shaded gray while the region of survival is white. Cell numbers are measured in units of carrying capacity. Specific numerical plots were calculated with $h=1.4$, $g_{m\u2062i\u2062n}=1/3$, $g_{m\u2062a\u2062x}=1$, $\u03f5_{2}=1.5$, $\\gamma=0.1$, $K_{r}=14$, and flow rates ranging from $1.4<F<2.7$ (left) and $1.4<F<7.1$ (right). $\u03f5_{1}=-1.1$ in the left panel and 0 in the right panel. Initial drug concentration is set to 5x MIC of drug-sensitive cells in all panels, though qualitatively similar (but shifted) contours occur for other initial conditions.\n\nFor influx rates at the upper end of the bistable region\u2013and for sufficiently high initial fractions of resistant cells\u2013 high-density populations survive while low-density populations go extinct (Figure 2, bottom right panel). For example, in populations with an initial resistant fraction of 3/4, small populations approach the extinction fixed point while large populations are expected to survive (Figure 2). Intuitively, the high-density populations have a sufficiently large number of resistant cells, and therefore produce a sufficient quantity of \u03b2-lactamase, that effective drug concentrations reach a steady state value below the MIC of the resistant cells, leading to a density-dependent transition from extinction to survival as the separatrix is crossed (Figure 2, bottom right).\n\nBehavior in the low-influx regime of bistability ($F\u2248F_{c}$) is more surprising. In this regime, the model predicts a region of bistability where initially high-density populations go extinct while low-density populations survive (Figure 2, bottom left). For example, at a resistant fraction of 1/4, low-density populations will approach the survival fixed point while high-density populations will approach extinction as the separatrix is crossed. These counterintuitive dynamics, which we refer to as \u2018inverted bistability\u2019, are governed in part by the reverse inoculum effect, which leads to a rapid increase in drug efficacy in the high-density populations and a corresponding population collapse. Mathematically, the different behavior corresponds to a translation in the separatrix curve as the influx rate is modulated (Figure 2; see also Figure 2\u2014figure supplement 1). Interestingly, the stable solutions that correspond to survival are comprised of only resistant cells. Hence, the model is not predicting a stable coexistence of sensitive and resistant strains (though such coexistence can exist under some conditions; Lenski and Hattingh, 1986); instead, the initial presence of sensitive cells positions the population within the basin of attraction of states (like collapse) that would not be favored in their absence.\n\nTo further characterize the dynamics of the model, we numerically solved the coupled equations (Equations 1, 3) for different initial compositions (resistant cell fraction) and different drug influx rates. In each case, we considered both high-density (OD\u00a0=\u00a00.6) and low-density (OD\u00a0=\u00a00.1) populations. As suggested by the bifurcation analysis (Figure 2), the model exhibits bistability over a range of drug influx rates (Figure 3A). The qualitative behavior within this bistable region can vary significantly. For small resistant fractions and low drug influx, bistability favors survival of low-density populations, while large resistant fractions and high drug influx favor survival of high-density populations. The parameter space is divided into four non-overlapping regions, leading to a phase diagram that predicts regions of extinction, survival, and bistabilities. These qualitative features are not unique the specific model described here, but also occur in alternative models that include, for example, more realistic Monod-style growth (SI; Figure 3\u2014figure supplement 1 through Figure 3\u2014figure supplement 2). It is notable that the dynamics leading to the fixed points can be significantly more complex than simple mononotic increases or decreases in population size (Figure 3A, top panels).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig3-v2.jpg)\n\n**Figure 3.:** (A) Main panel: phase diagram indicating regions of extinction (black), survival (white), bistability (light gray; initially large population survives, small population dies), and \u2018inverted\u2019 bistability (dark gray; initially small population survives, large population dies). Red \u2019x\u2019 marks correspond to the subplots in the top panels. Top panels: time-dependent population sizes starting from a small population (OD\u00a0=\u00a00.1, blue) and large population (OD\u00a0=\u00a00.6, red) at constant drug influx of $F_{2}\u226bF_{c}$ (large drug influx) and $F_{1}>F_{c}$ (small drug influx). $F_{c}$ is the critical influx rate above which the extinct solution (population size 0) first becomes stable; it depends on model parameters, including media refresh rate (\u00b5), maximum kill rate of the antibiotic ($g_{m\u2062i\u2062n}$), the Hill coefficient of the dose response curve ($h$), and the MIC of the drug-resistant population in the low-density limit where cooperation is negligible ($K$). Specific numerical plots were calculated with $h=1.4$, $g_{m\u2062i\u2062n}=1/3$, $g_{m\u2062a\u2062x}=1$, $\u03f5_{1}=1.1$, $\u03f5_{2}=1.5$, $\\gamma=0.1$, $K_{r}=14$, $F_{1}=1.4$, and $F_{2}=2.2$. (B) Experimental time series for mixed populations starting at a total density of OD\u00a0=\u00a00.1 (blue) or OD\u00a0=\u00a00.6 (red). The initial populations are comprised of resistant cells at a total population fraction of 0.2 (left), 0.55 (center), and 0.80 right) for influx rate $F_{1}=650$\u00a0\u00b5g/mL. Light curves are individual experiments, dark curves are means across all experiments. (C) Experimental time series for mixed populations starting at a total density of OD\u00a0=\u00a00.1 (blue) or OD\u00a0=\u00a00.6 (red). The initial populations are comprised of resistant cells at a total population fraction of 0.02 (left), 0.11 (center), and 0.35 right) for influx rate $F_{1}=18$\u00a0\u00b5g/mL. Light curves are individual experiments, dark curves are means across all experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Phase diagrams indicating regions of extinction (black), survival (white), bistability (light gray; initially large population survives, small population dies), and \u2018inverted\u2019 bistability (dark gray; initially small population survives, large population dies). Specific numerical plots were calculated with $h=3$, $g_{m\u2062i\u2062n}=1/3$, $g_{m\u2062a\u2062x}=1$, $\u03f5_{1}=1.1$, $\u03f5_{2}=1.5$, $\\gamma=0.1$, and $K_{r}=14$. In the enzyme release model, simulations were run with $\u03c7=0.1$ (lysed cells degrade drug at 0.1 times the rate of living cells). For simplicity, we also choose $e\u2062p\u2062s_{3}=1$ in the pH-IC50 model and $c_{0}=1$ in the Monod growth model.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Time series of cell density for populations starting from a density of 0.6 (red) or 0.1 (blue) for different values of the drug influx rate (different rows) and initial resistant fractions (different columns). Column headings indicate initial resistant fraction; row headings on right indicate drug influx rate. Specific numerical plots were calculated with $h=3$, $g_{m\u2062i\u2062n}=1/3$, $g_{m\u2062a\u2062x}=1$, $\u03f5_{1}=1.1$, $\u03f5_{2}=1.5$, $\\gamma=0.1$, and $K_{r}=14$. Background color indicates that both populations go extinct (red), both populations survive (white), high-density populations survive while low-density populations go extinct (dark blue; bistable), or high-density populations die while low-density populations survive (green; \u2018inverted bistable\u2019).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Cell density (OD) time series at various initial resistant fractions (columns) and ampicillin influx rate (rows). Populations were started at OD\u00a0=\u00a00.1 (blue curves) or OD\u00a0=\u00a00.6 (red curves). Red shaded plots indicate both populations are near extinction, while green shaded plots indicate that both populations are near carrying capacity at end of experiment (<5 hr).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Time series of cell density for populations starting from a density of 0.6 (red) or 0.1 (blue) for different values of the drug influx rate (different rows) and initial resistant fractions (different columns). Column headings indicate initial resistant fraction; row headings on right indicate drug influx rate. Specific numerical plots were calculated with $h=3$, $g_{m\u2062i\u2062n}=1/3$, $g_{m\u2062a\u2062x}=1$, $\u03f5_{1}=1.1$, $\u03f5_{2}=1.5$, $\\gamma=0.1$, $\u03c7=0.1$, and $K_{r}=14$. Background color indicates that both populations go extinct (red), both populations survive (white), high-density populations survive while low-density populations go extinct (dark blue; bistable), or high-density populations die while low-density populations survive (green; \u2018inverted bistable\u2019).\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Time series of cell density for populations starting from a density of 0.6 (red) or 0.1 (blue) for different values of the drug influx rate (different rows) and initial resistant fractions (different columns). Column headings indicate initial resistant fraction; row headings on right indicate drug influx rate. Specific numerical plots were calculated with $h=3$, $g_{m\u2062i\u2062n}=1/3$, $g_{m\u2062a\u2062x}=1$, $\u03f5_{2}=1.5$, $\u03f5_{3}=1$, $\\gamma=0.1$, and $K_{r}=14$. Background color indicates that both populations go extinct (red), both populations survive (white), high-density populations survive while low-density populations go extinct (dark blue; bistable), or high-density populations die while low-density populations survive (green; \u2018inverted bistable\u2019).\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Time series of cell density for populations starting from a density of 0.6 (red) or 0.1 (blue) for different values of the drug influx rate (different rows) and initial resistant fractions (different columns). Column headings indicate initial resistant fraction; row headings on right indicate drug influx rate. Specific numerical plots were calculated with $h=3$, $g_{m\u2062i\u2062n}=1/3$, $g_{m\u2062a\u2062x}=1$, $\u03f5_{1}=1.1$, $\u03f5_{2}=1.5$, $\\gamma=0.1$, and $K_{r}=14$. Background color indicates that both populations go extinct (red), both populations survive (white), high-density populations survive while low density populations go extinct (dark blue; bistable), or high-density populations die while low-density populations survive (green; \u2018inverted bistable\u2019).\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Dose response curves illustrate effect of AMP on final cell density (left) and per capita growth rate (right). Bold curves correspond to original sensitive (blue) and resistant (red) strains. Light curves correspond to randomly selected single-colony isolates taken from collapse populations (11% initial resistant fraction; drug influx rate of 18 g/mL; initial density of 0.6; see Figure 3C, middle panel, red curves) at the end of the experiment. Points are mean \u00b1 1 SEM over three technical replicates.\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig3-figsupp8-v2.jpg)\n\n**Figure 3\u2014figure supplement 8.:** Populations starting from a density of 0.6 collapse and exhibit long-lived states of nonzero, nearly-constant density on timescales comparable to or longer than those at which low-density populations reach steady state (in this example, approximately 10 hr). These transient long-lived states ultimately collapse or recover, depending on the specific value of $R_{0}$ (the initial resistant fraction).\n\n### Small E. faecalis populations survive and large populations collapse when drug influx is slightly supercritical and resistant subpopulations are small\n\nTo test these predictions experimentally, we first performed a preliminary scan of parameter space in short, 5-hr experiments starting from a wide range of initial population fractions and drug influx rates (Figure 3\u2014figure supplement 3). Based on these experiments, we then narrowed our focus to a region of \u2018high\u2019 influx rate ($F\u2248600-700$\u00a0\u00b5g/mL/hr), where conditions may favor \u2018normal\u2019 bistability, and a region of \u2018low\u2019 influx rate ($F\u224815-20$\u00a0\u00b5g/mL per hour), where conditions may favor \u2018inverted\u2019 bistability. Then, we performed replicate ($N=3$) 20 hr experiments starting from a range of population compositions. Note that in the absence of density-mediated changes in drug concentration, these flow rates are expected to produce drug concentrations that increase over time, rapidly eclipsing the low-density limits for IC50\u2019s of both susceptible and resistant cells (see Figure 1) and exponentially approaching steady state values of $D=F/\\mu\u22488.5\u2062F$ with a time constant of $\\mu^{-1}\u22488.5$ (and therefore $\\mu_{0}=8.5$ hr).\n\nThe experiments confirm the existence of both predicted bistable regimes as well as the expected regimes of survival and extinction (Figure 3B\u2013C). At each of the two flow rates ($F_{1}$ and $F_{2}$), we observe a transition from density-independent extinction\u2013where populations starting from both high and low-densities collapse\u2013to density-independent survival\u2013where both populations survive\u2013as the initial resistant population is increased (Figure 3B\u2013C, left to right). However, in both cases, there are intermediate regimes where initial population density determines whether the population will survive or collapse. When drug influx is relatively high ($F_{2}$) and the population is primarily comprised of resistant cells (55 percent), initially large populations survive while small populations collapse (Figure 3B, middle panel). On the other hand, when initial populations contain 11\u201315% resistant cells and drug influx is relatively small ($F_{1}$), we observe a clear region of \u2018inverted\u2019 bistability (Figure 3C, middle panel). In this regime, high-density populations (red) grow initially before undergoing dramatic collapse, while low-density populations (blue) initially decay before recovering and eventually plateauing near the carrying capacity. In contrast to predictions of the model, the collapsing populations do not entirely go extinct. We confirmed that these populations do indeed contain living cells, and single colony isolates exhibit dose-response characteristics similar to those of the original sensitive and resistant strains, so there is no evidence that additional resistance has evolved during the experiment (Figure 3\u2014figure supplement 4). Mathematical models do indicate the existence of long-lived but transient states of non-zero density near the onset of inverted bistability (Figure 3\u2014figure supplement 4), which may partially explain the lack of complete extinction. However, it is also possible that it reflects features not included in the model. For example, while ampicillin is generally considered to be stable in solution for several days, the degradation rate depends on both temperature and pH (Hou and Poole, 1969), which could induce new dynamics on timescales of 10 s of hours. Similarly, \u03b2-lactamase activity can also vary slightly with pH, adding an additional layer of coupling between the density effects driven by sensitive and resistant cells (Ohsuka et al., 1995).\n\n### Inverted bistability depends on pH-dependent reverse inoculum effect\n\nThe model predicts that the inverted bistability relies on the reverse inoculum effect\u2013specifically, it requires \u03b51>\u00a00\u00a0and is eliminated when \u03b51\u00a0=\u00a00 (Figure 4). Previous work showed that in this system, the reverse inoculum effect is driven by density-modulated changes in the local pH (Karslake et al., 2016). Conveniently, then, it is possible\u2013in principle\u2013to eliminate the effect by strengthening the buffering capacity of the media. To test this prediction, we repeated the experiments in the inverted bistable region in strongly\u00a0buffered media (Figure 4). As predicted by the model, we no longer observe collapse of high-density populations, indicating that the region of inverted bistability is now a region of density-independent survival.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Numerical phase diagram in absence of reverse inoculum effect ($\u03f5_{1}=0$) indicating regions of extinction (black), survival (white), and bistability (light gray; initially large population survives, small population dies). There are no regions of \u2018inverted\u2019 bistability (initially small population survives, large population dies). Red \u2019x\u2019 marks fall along a line that previously traversed a region of inverted bistability in the presence of a reverse inoculum effect (Figure 3) but includes only surviving populations in its absence. $F_{c}$ is the critical influx rate above which the extinct solution (population size 0) first becomes stable; it depends on model parameters, including media refresh rate (\u00b5), maximum kill rate of the antibiotic ($g_{m\u2062i\u2062n}$), the Hill coefficient of the dose-response curve ($h$), and the MIC of the drug-resistant population in the low-density limit where cooperation is negligible ($K$). Specific phase diagram was calculated with same parameters as in Figure 3 except $\u03f5_{1}$, which corresponds to the reverse inoculum effect, is set to 0. (B) Experimental time series for mixed populations starting at a total density of OD\u00a0=\u00a00.1 (blue) or OD\u00a0=\u00a00.6 (red) in regular media (left panels) or strongly buffered media (right panels). The initial populations are comprised of resistant cells at a total population fraction of 0.11 (top) and 0.15 (bottom) and for influx rate of $F_{1}=18$\u00a0\u00b5g/mL. Light curves are individual experiments, dark curves are means across all experiments.\n\n### Delaying antibiotic exposure can promote population collapse\n\nThe competing density-dependent effects on drug efficacy raise the question of whether different time-dependent drug dosing strategies might be favorable for populations with different starting compositions. In particular, we wanted to investigate the effect of delaying the start of antibiotic influx for different population compositions and influx rates. Based on the results of the model, we hypothesized that there would be two possible regimes where delay could dramatically impact survival dynamics: one (corresponding to \u2018normal bistability\u2019) where delaying treatment would lead to larger end-point populations, and a second (corresponding to\u201cinverted bistabillity\u2019) where delaying treatment could, counterintuitively, promote population collapse (see Figure 5\u2014figure supplement 1).\n\nTo test this hypothesis, we measured the population dynamics in mixed populations starting from an initial OD of 0.1 at time zero. We then compared final population size for identical populations experiencing immediate or delayed drug influx, with delay ranging from 0.5 to 2.5 hr. In experiments with non-zero delays, antibiotic influx was replaced by influx of drug-free media (at the same flow rate) during the delay period. In the first case, we chose a relatively small initial resistant fraction (0.11) and a relatively slow drug influx rate ($F=18$\u00a0\u00b5g/mL), while in the second case we chose a larger initial resistant fraction (0.55) and a faster drug influx ($F=650$\u00a0\u00b5g/mL).\n\nRemarkably, we found that delaying treatment can have opposing effects in the two scenarios (Figure 5). At high drug influx rates and largely resistant populations, immediate treatment leads to smallest final populations (Figure 5, right panels), consistent with model predictions of bistability. Intuitively, the delay allows the subpopulation of resistant cells to increase in size, eventually surpassing a critical density where the presence of enzyme is sufficient to counter the inhibitory effects of antibiotic. On the other hand, at lower influx rates and lower initial resistant fractions, we find that immediate treatment leads to initial inhibition followed by a phase of rapid growth as the population thrives; by contrast, delays in treatment allow the population to initially grow rapidly before collapsing (Figure 5, left panels). It is particularly striking that delayed treatments\u2013which also use significantly less total drug\u2013can promote population collapse when immediate treatments appear to fail. Similar to the \u2018inverted bistability\u2019 observed earlier, the beneficial effects of delayed treatment can be traced to density-dependent drug efficacy\u2013in words, the delay means the drug is applied when the population is sufficiently large that pH-mediated drug potentiation promotes collapse.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig5-v2.jpg)\n\n**Figure 5.:** Top panels: experimental time series for mixed populations with small initial resistance and low drug influx (left; initial resistance fraction, 0.11 \u00b5g/mL) or large initial resistance and high drug influx (right; initial resistance fraction, 0.55 \u00b5g/mL). Antibiotic influx was started immediately (blue) or following a delay of up to 2.5 hr (dark red). Light transparent lines are individual replicates; dark lines are means over replicates. In experiments with nonzero delays, antibiotic influx was replaced by influx of drug-free media during the delay. Bottom panels: final cell density (15 hr) as a function of delay (\u2018treatment start time\u2019). small points are individual replicates; large circles are means across replicates.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52813/elife-52813-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Top panels: time series for mixed populations with small initial resistance and low drug influx (left; initial resistance fraction, 0.04) or large small initial resistance and high drug influx (right; initial resistance fraction, 0.56). Antibiotic influx was started immediately (blue) or following a delay of up to 2.5 hr (dark red). Bottom panels: final cell density at finite times (40 hr, dashed curves) or asymptotically long times (150 hr; solid curves) as a function of delay (\u2018treatment start time\u2019). Model parameters are the same as those used in Figure 2.\n\n## Discussion\n\nWe have shown that different types of coupling between cell density and drug efficacy can lead to surprising dynamics in E. faecalis populations exposed to time-dependent ampicillin concentrations. In regimes of relatively fast or slow rates of drug influx, the results are intuitive: populations either survive or collapse, independent of initial population size (density). The intermediate regime, however, is characterized by bistability, meaning that population collapse will depend on initial population size. In regimes where cooperative resistance\u2013in this case, due to enzymatic degradation of drug\u2013dominates, larger populations are favored, similar to results predicted from the classical inoculum effect (Udekwu et al., 2009; Karslake et al., 2016). Under those conditions, it is critical to immediately expose cells to drug influx, as delays lead to increasingly resilient populations. Even more surprisingly, regimes characterized by comparatively smaller resistant populations and slower drug influx can lead to \u2018inverted bistability\u2019 where initially small populations thrive while large populations collapse. In this case, delays to drug exposure can paradoxically promote population collapse. It is notable that the mathematical model suggests these results are not simply transient effects but instead reflect asymptotic behavior where the system approaches one of two stable fixed points (survival or extinction) with very different biological consequences.\n\nOur goal was to understand population dynamics in simple, single-species populations where environmental conditions\u2013including drug influx rate and population composition\u2013can be well controlled. To make sense of experimental results and, more importantly, to generate new testable hypotheses, we developed a minimal mathematical model and analyzed its qualitative behavior using standard tools from dynamical systems and bifurcation theory. We chose to focus on a phenomenological model in an effort to simplify the assumptions and limit the number of unconstrained parameters. However, our model clearly omits a number of potentially relevant biological details. For example, the model neglects evolutionary changes, such as de novo mutations, that would impact behavior on longer time-scales. Similarly, previous work (Meredith et al., 2018) has shown that lysis of resistant cells can effectively increase the concentration of drug-degrading enzyme. We find that extending our phenomenological model to account for free enzyme leads to qualitatively similar behavior (see SI), but more accurate kinetic models may point to different dynamics in some regimes. Constructing detailed mechanistic models is notoriously difficult, but recent work shows that careful pairing of experiment and theory can be used to systematically overcome many common obstacles (Hart et al., 2019). A similar approach could potentially be applied to this system, leading to more accurate quantitative models that account for factors like spontaneous drug degradation (Hou and Poole, 1969), the pH dependence of \u03b2-lactamase activity (Ohsuka et al., 1995), and the kinetics of pH-modulated drug activity.\n\nIt is obvious that the specific in vitro conditions used here fail to capture numerous complexities associated with resistance in clinical settings (Bonten et al., 2001), including substantial spatial heterogeneity, potential for biofilm formation, effects of the host immune system, and drug concentrations that differ in both magnitude and time-course from the specific scenarios considered here. In particular, the effects of delayed antibiotic exposure in a clinical setting will depend on many factors not captured here, and there are unquestionably scenarios where such delay could be detrimental to patient well-being. In fact, our results indicate that delaying drug exposure can have differing effects in different parameter regimes, even in laboratory populations. Future work in clinically motivated in vitro systems, such as biofilms, and ultimately in vivo are needed to assess the feasibility of delayed dosing in more realistic scenarios. In addition, we note that \u03b2-lactamase producing enterococci are thought to be relatively rare, though they have been associated with multi-drug resistant, high-risk enterococcal infections (Murray, 1992; Wells et al., 1992; Arias et al., 2010) and may be more widespread that initially believed because of the difficulty of detection in traditional laboratory tests (Gagetti et al., 2019). Finally, our experimental model system is based on plasmid-mediated resistance, and while this fact is not explicitly assumed in any of our mathematical models, horizontal gene transfer may introduce new dynamics (Lopatkin et al., 2016; Lopatkin et al., 2017), particularly in high-density populations where conjugation is frequent.\n\nOur results show that the response of microbial populations to antibiotic can be surprisingly complex, suggesting that the spread of resistance alleles may not always follow simple selection dynamics. These findings underscore the need for additional metrics (similar to the proposed notion of drug resilience; Meredith et al., 2018) that go beyond short-term growth measurements to for population dynamics over multiple timescales. More generally, we hope these results will motivate continued efforts to understand the potentially surprising ways that molecular level resistance events influence dynamics on the scale of microbial populations.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent (species)</th>\n      <th>Designation</th>\n      <th>Source</th>\n      <th>Additional info</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (E. faecalis )</td>\n      <td>\u03b2-lactamase</td>\n      <td>Zscheck and Murray, 1991; Rice et al. (1991); Rice and Marshall (1992)</td>\n      <td>PCR from strain CH19</td>\n    </tr>\n    <tr>\n      <td>Gtrain (E. faecalis )</td>\n      <td>OG1RF</td>\n      <td>Dunny et al. (1978); Oliver et al. (1977)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Plasmid</td>\n      <td>pBSU101-DasherGFP</td>\n      <td>Aymanns et al. (2011); Hallinen et al. (2019)</td>\n      <td>Reporter plasmid</td>\n    </tr>\n    <tr>\n      <td>Plasmid</td>\n      <td>pBSU101-BFP-BL</td>\n      <td>Hallinen et al. (2019), this paper</td>\n      <td>Expresses \u03b2-lactamase</td>\n    </tr>\n    <tr>\n      <td>Drug</td>\n      <td>Spectinomcyin sulfate</td>\n      <td>MP Biomedicals</td>\n      <td>CAT 0215899302</td>\n    </tr>\n    <tr>\n      <td>Drug</td>\n      <td>Ampicillin Sodium Salt</td>\n      <td>Fisher</td>\n      <td>CAT BP1760-25</td>\n    </tr>\n  </tbody>\n</table>\n\n### Bacterial strains, media, and growth conditions\n\nExperiments were performed with E. faecalis strain OG1RF, a fully sequenced oral isolate. Ampicillin-resistant strains were engineered by transforming (Dunny et al., 1991) OG1RF with a modified version of the multicopy plasmid pBSU101, which was originally developed as a fluorescent reporter for Gram-positive bacteria (Aymanns et al., 2011). The plasmid was chosen because it can be conveniently manipulated and propagated in multiple species (including E. coli) and contains a fluorescent reporter that provides a redundant control for readily identifying the strains. The modified plasmid, named pBSU101-BFP-BL, expresses BFP (rather than GFP in the original plasmid) and also constitutively expresses -lactamase driven by a native promoter isolated from the chromosome of clinical strain CH19 (Rice et al., 1991; Rice and Marshall, 1992). The \u03b2-lactamase gene and reporter are similar to those found in other isolates of enterococci and streptococci (Murray and Mederski-Samaroj, 1983; Zscheck and Murray, 1991). Similarly, sensitive strains were transformed with a similar plasmid, pBSU101-DasherGFP, a pBSU101 derivative that lacks the \u03b2-lactamase insert and where eGFP is replaced by a brighter synthetic GFP (Dasher-GFP; ATUM ProteinPaintbox, https://www.atum.bio/). The plasmids also express a spectinomycin resistance gene, and all media was therefore supplemented with spectinomycin.\n\n### Antibiotics\n\nAntibiotics used in this study included Spectinomycin Sulfate (MP Biomedicals) and Ampicillin Sodium Salt (Fisher).\n\n### Estimating IC50 for sensitive and resistant strains\n\nExperiments to estimate the half-maximal inhibitory concentration (IC50) for each population were performed in 96-well plates using an Enspire Multimodal Plate Reader. Overnight cultures were diluted 102\u00a0-\u00a0108 fold into individual wells containing fresh BHI and a gradient of 6\u201314 drug concentrations. After 20 hr of growth, the optical density at 600 nm (OD) was measured and used to create a dose response curve, which was fit to a Hill-like function $f\u2062(x)=(1+(x/K)^{h})^{-1}$ using nonlinear least squares fitting, where $K$ is the half-maximal inhibitory concentration (IC50) and $h$ is a Hill coefficient describing the steepness of the dose-response relationship.\n\n### Continuous culture device\n\nExperiments were performed in custom-built, computer-controlled continuous culture devices (CCD) as described in Karslake et al. (2016). Briefly, bacterial populations are grown in glass vials containing a fixed volume of 17 mL media. Cell density was measured at 1.5 s intervals in each vial using emitter/detector pairs of infrared LEDs (Radioshack). Detectors register a voltage output that is then converted to optical density using a calibration curve performed with a table top OD reader. Each vial contains input and output channels connected to silicone tubing and attached to a system of peristaltic pumps (Boxer 15000, Clark Solutions) that add drug and/or media and remove excess liquid on a schedule that can be programmed in advance or determined in real time. The entire system is controlled using a collection of DAQ and instrument control modules (Measurement Computing) along with the Matlab (MathWorks) Instrument Control Toolbox.\n\n### Drug dosing protocols\n\nIn \u2018constant flow\u2019 experiments, media (with drug, when relevant) is added at a rate of 1 mL/min for a total of 7.5 s every 3.75 min for an effective flow rate of 2 mL/hr (corresponding to a rate constant of\u00a0\u00b5\u00a0=\u00a010.12\u00a0hr-1\u00a0in 17 mL total volume). Media (plus cells and drug) is removed at an identical rate to maintain constant volume. While drug influx (and waste removal) strictly occurs on discrete on-off intervals, the timescale of those intervals (3\u20134 min) is an order of magnitude slower than the maximum bacterial growth rate under these conditions, which corresponds to a doubling time of approximately 30\u201340 min. The influx of drug is therefore approximately continuous on the timescale of bacterial dynamics. We experimentally modulate the influx rate of drug, $F$, without changing the background refresh rate (\u00b5) by changing the drug concentration in the drug reservoir. For experiments involving time-dependent drug influx\u2013for example, those in Figure 5, the media in the drug reservoirs is exchanged manually at specified times to mimic, for example, delayed treatment start times.\n\n### Experimental mixtures and set up\n\nAll experiments were started from overnight cultures inoculated from single colonies grown on BHI agar plates with streptomycin and incubated in sterile BHI (Remel) with streptomycin (120 \u00b5g/mL) overnight at 37C. Highly buffered media was prepared by supplementing standard BHI with 50 \u00b5M Dibasic Sodium Phosphate (Fisher). Overnight cultures were diluted 100\u2013200 fold with fresh BHI in continuous culture devices and populations were allowed to reach steady state exponential growth at the specified density (typically OD\u00a0=\u00a00.1 or OD\u00a0=\u00a00.6) prior to starting influx and outflow of media and waste. Experiments were typically performed in triplicate.\n",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "26ce7ac2-3e0d-4b52-85be-b639f111a4d1",
+      "submission_id": "5dd05614-5af6-46b9-9d3e-c16986fda141",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wenying Shou, Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52813.sa1](https://doi.org/10.7554/eLife.52813.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nHallinen et al. combine modeling and experiments to show that the density-dependent effects of antibiotic degradation by resistant cells and the pH influence on antibiotic survival can result in complex and counter-intuitive dynamics.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Delayed antibiotic exposure induces population collapse in enterococcal communities with drug-resistant subpopulations\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Wenying Shou as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Lingchong You (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAll three reviewers are positive about your work, although we feel that stating the limitations of your study is important. We are also confused about Figure 4C.\n\nI attach modified full reviews to help with your revision.\n\nReviewer #1:\n\nHallinen et al. showed that the density-dependent effects of antibiotic degradation by resistant cells and the pH influence on antibiotic survival can result in complex and counter intuitive dynamics. Overall, I find the work quite interesting (although I am not intimately familiar with the field).\n\nMajor comments:\n\nHow mechanistic a model is a continuum. A phenomenological model was presented in this study. Have you ever tried constructing a more mechanistic model which would account for important aspects such as enzyme degradation of antibiotics and the pH effects? You can then use this model to explain reverse inoculum effect and possibly other experimental results. In the Discussion section, you delineated why a mechanistic model was not constructed, but I am not convinced, especially since you did not measure all parameters in your phenomenological model anyways. If you have tried to construct a more mechanistic model but it did not work, I think that it is still worth including such efforts in the Discussion section as well as speculations on why it might have failed. If you have not tried constructing a mechanistic model, you can cite examples where mechanistic modeling has been shown to be challenging (e.g. Hart et al., 2019).\n\nFigure 4C middle panel: The red curve did not really go extinct, unlike the model prediction in Figure 3 or Figure 4A. Need to explain this.\n\nReviewer #2:\n\nIn this work, the authors investigate the population-level implications of two density-dependent effects that are known to influence bacterial resistance to \u03b2-lactam antibiotics (mediated by \u03b2-lactamase production). The first, the inoculum effect (IE), suggests that higher densities of resistant cells can decay more drug and therefore reduce its efficacy, while the second, the reverse inoculum effect (RIE), suggests that higher bacterial densities modulate the environment in ways that increase the sensitivity of populations to the drug. They probe this question using both mathematical modeling and bioreactor experiments with a mixed population of sensitive and resistant strains responding to ampicillin treatment. The authors observe both effects in their system and suggest that these competing effects can lead to complex dynamics, especially regions of bistability which implies that under different drug concentrations different initial densities will be favored. The authors attribute the reverse inoculum effect to pH effects, removing it with buffered media. Finally, they exploit this density dependence for populations where the inoculum effect is small (few resistant cells) by delaying treatment until the population density is high enough that the reverse inoculum effect dominates, and show that this delay can allow for population extinction where immediate treatment cannot.\n\nI enjoyed reading the fascinating study, which underscores the rich population dynamics resulting from the interplay between bacterial populations and antibiotics. In particular, what's really interesting is how the composition of a mixture can dictate qualitatively opposite outcomes. The authors elegantly integrate analysis by a coarse-grained model and quantitative experiments throughout the study. The observed dynamics have implications for the effective design of antibiotic dosing when combating bacterial pathogens.\n\nReviewer #3:\n\nThe manuscript by Hallinen et al. is a well-crafted story involving an integration between computer-controlled bioreactors and simple mathematical models that reveals density-dependent feedback loops that address nonintuitive community-level behaviors upon antibiotic treatment. In particular it deals with \u03b2-lactam treatment of the pathogen E. faecalis when communities include a drug-resistant subpopulation that expresses a \u03b2-lactamase. The authors do a careful job of addressing the effects of treatment on resistant and sensitive populations as a function of density (either alone or in combination), and as a result are able to reveal some behaviors that highlight potentially important variables for driving resistant populations extinct.\n\nA key aspect of their system is the reverse inoculum effect of \u03b2-lactams in which there is increased growth at lower densities, arising from changes in local pH. The authors do a good of breaking down the system into its component parts, demonstrating the rIE for their system and using this to motivate their mathematical model, which predicts a region of inverted bistability in which there is a big increase in drug efficacy in the high-density populations and a population collapse.\n\nThe work is well done and the paper is well written. I have a few comments/questions:\n\nIn Figure 4C (middle), the red population does undergo a large collapse, as stated in the paper in subsection \u201cSmall E. faecalis populations survive and large populations collapse when drug influx is slightly supercritical and resistant subpopulations are small\u201d, but then it recovers. Why is this? Is there further resistance selection leading to other mutations (perhaps changes to the level of expression of the \u03b2-lactamase?)\n\nOne thing that pops out from their manuscript is that the conclusions are almost too clear once you know that there is both an inoculum effect and a reverse inoculum effect; nonetheless, it is good to see that the experiments can indeed achieve the predicted inverted bistability.\n\nThey take advantage of the inverted bistability to show that there are beneficial effects of delayed drug treatment. This is an interesting idea, but also very context dependent \u2013 you have to know a lot about drug concentration, relative populations of resistant/sensitive pools, initial density. It seems like this knowledge is important, but really hard to apply in a practical way. [This needs to be explicitly discussed in Discussion section.]\n\nOne thing the authors could do to address the point above is to do an experiment in a biofilm, where if they can see a similar inverted bistability, that would go a long way toward suggesting that this knowledge can be broadly useful. [Since this would be too substantial of a request, you could include this in the subsection \u201cFuture directions\u201d.]\n",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "317b4381-22d8-4e06-a58a-a0a14d521801",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C1",
+      "claim": "Antibiotic resistance is a growing public health threat.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotic resistance is a growing public health threat (Davies and Davies, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Davies and Davies, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "209b037e-60b8-4b8b-beef-7286edea048c",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C2",
+      "claim": "Decades of rapid progress fueled by advances in microbiology, genomics, and structural biology have led to a detailed but still growing understanding of the molecular mechanisms underlying resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Decades of rapid progress fueled by advances in microbiology, genomics, and structural biology have led to a detailed but still growing understanding of the molecular mechanisms underlying resistance (Blair et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Blair et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "118d68e6-f957-4434-97d4-c727a3c6e642",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C3",
+      "claim": "Drug resistance can be a collective phenomenon driven by emergent community-level dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "recent studies have shown that drug resistance can be a collective phenomenon driven by emergent community-level dynamics (Vega and Gore, 2014; Meredith et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vega and Gore, 2014 and Meredith et al., 2015b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "464a80d7-a32b-4030-bfc5-2c478b2f8fe0",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C4",
+      "claim": "Drug degradation by a sub-population of enzyme-producing cells can lead to cooperative resistance that allows sensitive (non-producing) cells to survive at otherwise inhibitory drug concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, drug degradation by a sub-population of enzyme-producing cells can lead to cooperative resistance that allows sensitive (non-producing) cells to survive at otherwise inhibitory drug concentrations (Yurtsev et al., 2013; Sorg et al., 2016; Yurtsev et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yurtsev et al., 2013; Sorg et al., 2016; Yurtsev et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "21714695-4fc3-43aa-9fa0-deb40e11189d",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C5",
+      "claim": "E. faecalis is an opportunistic pathogen that contributes to a number of clinical infections, including infective endocarditis, urinary tract infections, and blood stream infections.",
+      "claim_type": "EXPLICIT",
+      "source": "E. faecalis is an opportunistic pathogen that contributes to a number of clinical infections, including infective endocarditis, urinary tract infections, and blood stream infections (Clewell et al., 2014; Huycke et al., 1998; Hancock and Gilmore, 2006; Ch'ng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Clewell et al., 2014; Huycke et al., 1998; Hancock and Gilmore, 2006; Ch'ng et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "41aefa95-7f04-4906-91f2-f8c9400ef569",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C6",
+      "claim": "\u03b2-lactams are among the most commonly used antibiotics for treating E. faecalis infections.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-lactams are among the most commonly used antibiotics for treating E. faecalis infections, though resistance is a growing problem (Miller et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Miller et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "6c31c1e1-6a51-44cb-9653-94af96ae3f62",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C7",
+      "claim": "Resistance to ampicillin in E. faecalis can arise by mutations to the targeted penicillin binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Resistance to ampicillin can arise in multiple ways, including by mutations to the targeted penicillin binding proteins or production of \u03b2-lactamase, an enzyme that hydrolyzes the \u03b2-lactam ring and renders the drug ineffective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "750bfc35-3a04-424b-8738-77169ec081b7",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C8",
+      "claim": "Resistance to ampicillin in E. faecalis can arise by production of \u03b2-lactamase, an enzyme that hydrolyzes the \u03b2-lactam ring and renders the drug ineffective.",
+      "claim_type": "EXPLICIT",
+      "source": "Resistance to ampicillin can arise in multiple ways, including by mutations to the targeted penicillin binding proteins or production of \u03b2-lactamase, an enzyme that hydrolyzes the \u03b2-lactam ring and renders the drug ineffective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "a81f6f98-57d4-4e0b-a267-8d18ad52b432",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C9",
+      "claim": "Enzymatic drug degradation is a common mechanism of antibiotic resistance across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymatic drug degradation is a common mechanism of antibiotic resistance across species and has been recently linked to cooperative resistance in E. coli (Yurtsev et al., 2013) and S. pneumoniae (Sorg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yurtsev et al., 2013 and Sorg et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "882ae97c-d706-428e-a9e2-e42a27c5df39",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C10",
+      "claim": "E. faecalis populations exhibit density-dependent growth when exposed to a wide range of antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, E. faecalis populations exhibit density-dependent growth when exposed to a wide rang-lactamse of antibiotics (Karslake et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Karslake et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "fb3b6667-af1a-4903-afe9-f363a2380f91",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C11",
+      "claim": "Increasing population density typically leads to decreased growth inhibition by antibiotics, consistent with the classical inoculum effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing population density typically leads to decreased growth inhibition by antibiotics, consistent with the classical inoculum effect (IE) (Brook, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brook, 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "f6cddb6f-6f3a-46f3-a2d2-9e06b504c65a",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C12",
+      "claim": "\u03b2-lactams can exhibit a 'reverse' inoculum effect (rIE) characterized by increased growth of the population at lower densities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, \u03b2-lactams can also exhibit a surprising 'reverse' inoculum effect (rIE) characterized by increased growth of the population at lower densities (Karslake et al., 2016; Jokipii et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Karslake et al., 2016 and Jokipii et al., 1985",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "55cc90f8-2b78-49da-9d9e-c27c93656b4b",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C13",
+      "claim": "In E. faecalis, the reverse inoculum effect arises from a decrease in local pH at increasing cell densities.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. faecalis , the rIE arises from a decrease in local pH at increasing cell densities (Karslake et al., 2016), which are associated with increased activity of ampicillin and related drugs (Yang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Karslake et al., 2016 and Yang et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "110b4429-29ea-4f0b-a850-a44d47013740",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C14",
+      "claim": "Growth-driven changes in pH have been shown to modulate intercellular interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar growth-driven changes in pH have been recently shown to modulate intercellular interactions (Ratzke and Gore, 2018), promote ecological suicide in some species (Ratzke et al., 2018), and even to modulate antibiotic tolerance in multispecies communities (Aranda-D\u00edaz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ratzke and Gore, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "22040ee9-cbef-40c3-9876-9e5cc49c7adc",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C15",
+      "claim": "Growth-driven changes in pH promote ecological suicide in some species.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar growth-driven changes in pH have been recently shown to modulate intercellular interactions (Ratzke and Gore, 2018), promote ecological suicide in some species (Ratzke et al., 2018), and even to modulate antibiotic tolerance in multispecies communities (Aranda-D\u00edaz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ratzke et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "adc07c5e-0727-4903-b2d0-051e9aa6009e",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C16",
+      "claim": "Growth-driven changes in pH modulate antibiotic tolerance in multispecies communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar growth-driven changes in pH have been recently shown to modulate intercellular interactions (Ratzke and Gore, 2018), promote ecological suicide in some species (Ratzke et al., 2018), and even to modulate antibiotic tolerance in multispecies communities (Aranda-D\u00edaz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Aranda-D\u00edaz et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "f7c1e860-130e-4675-bfa5-2ab42da28ef8",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C17",
+      "claim": "E. faecalis infections started from high- and low-dose inocula lead to different levels of immune response and colonization in a mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these in vitro studies, recent work shows that E. faecalis infections started from high- and low-dose inocula lead to different levels of immune response and colonization in a mouse model (Chong et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chong et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "ada57157-f61c-41cf-af6b-967d6277418b",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C18",
+      "claim": "Density-dependent feedback loops couple population growth and drug efficacy in E. faecalis communities comprised of drug-resistant and drug-sensitive cells exposed to time-dependent concentrations of antibiotic.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we show that density-dependent feedback loops couple population growth and drug efficacy in E. faecalis communities comprised of drug-resistant and drug-sensitive cells exposed to time-dependent concentrations of antibiotic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data and mathematical modeling presented throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "724fbef1-b6eb-48f0-9651-b4414e68f9eb",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C20",
+      "claim": "The dynamics of E. faecalis communities exposed to antibiotics reflect competing density-dependent effects of different subpopulations, with growth of drug-sensitive cells increasing but growth of drug-resistant cells decreasing effective drug inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "These dynamics reflect competing density-dependent effects of different subpopulations, with growth of drug-sensitive cells increasing but growth of drug-resistant cells decreasing effective drug inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figure 1 and mathematical modeling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "a2dc8587-0aa7-446a-9f9b-d98b68f9a4d2",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C21",
+      "claim": "Populations receiving immediate drug influx may sometimes thrive, while identical populations exposed to delayed drug influx collapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrate how populations receiving immediate drug influx may sometimes thrive, while identical populations exposed to delayed drug influx collapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "f1bb7834-11bf-4656-980b-72165796c756",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C22",
+      "claim": "Drug resistant E. faecalis strains were engineered by transforming OG1RF with a modified version of the multicopy plasmid pBSU101 that constitutively expresses \u03b2-lactamase.",
+      "claim_type": "EXPLICIT",
+      "source": "Ampicillin-resistant strains were engineered by transforming (Dunny et al., 1991) OG1RF with a modified version of the multicopy plasmid pBSU101, which was originally developed as a fluorescent reporter for Gram-positive bacteria (Aymanns et al., 2011). The plasmid was chosen because it can be conveniently manipulated and propagated in multiple species (including E. coli) and contains a fluorescent reporter that provides a redundant control for readily identifying the strains. The modified plasmid, named pBSU101-BFP-BL, expresses BFP (rather than GFP in the original plasmid) and also constitutively expresses -lactamase driven by a native promoter isolated from the chromosome of clinical strain CH19 (Rice et al., 1991; Rice and Marshall, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used to create the resistant strains",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "8239e8a0-e397-4c3e-ad16-4b70d4abaeab",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C23",
+      "claim": "The IC50 for sensitive strains is relatively insensitive to inoculum density over the range tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the IC50 for sensitive strains is relatively insensitive to inoculum density over this range, while \u03b2-lactam producing resistant cells exhibit strong inoculum effects (IE) and show no inhibition for inoculum densities greater than 10-5 (OD units) even at the highest drug concentrations (10 \u00b5g/mL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "70e1f12c-bacd-4112-a28b-b88cc0edf512",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C24",
+      "claim": "\u03b2-lactamase producing resistant cells exhibit strong inoculum effects and show no inhibition for inoculum densities greater than 10-5 (OD units) even at the highest drug concentrations (10 \u00b5g/mL).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the IC50 for sensitive strains is relatively insensitive to inoculum density over this range, while \u03b2-lactam producing resistant cells exhibit strong inoculum effects (IE) and show no inhibition for inoculum densities greater than 10-5 (OD units) even at the highest drug concentrations (10 \u00b5g/mL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "2d1705dd-eff1-4618-96c2-aff2908baeb4",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C25",
+      "claim": "Resistant strains are insensitive to even very large drug concentrations (in excess of 103 \u00b5g/mL) at higher densities.",
+      "claim_type": "EXPLICIT",
+      "source": "At these higher densities, we found that resistant strains are insensitive to even very large drug concentrations (in excess of 103 \u00b5g/mL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "58783700-d626-469c-953b-9a86a76ecef3",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C26",
+      "claim": "Sensitive populations are inhibited by ampicillin concentrations smaller than 1 \u00b5g/mL, and the inhibition depends strongly on density, with higher density populations showing significantly decreased growth.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, sensitive populations are inhibited by concentrations smaller than 1 \u00b5g/mL, and the inhibition depends strongly on density, with higher density populations showing significantly decreased growth (Figure 1B)\u2013indicative of a reverse inoculum effect (rIE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "60baf12e-864a-4018-9e9d-4feb65d140f8",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C27",
+      "claim": "High-density and low-density populations of resistant cells exhibit divergent behavior when exposed to ampicillin influx, with high-density populations surviving and low-density populations collapsing.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, high- and low-density populations of resistant cells exhibit divergent behavior, with high-density populations surviving and low-density populations collapsing (Figure 1D, bottom panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D, bottom panel",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "1a7553ec-6e27-45f5-9387-bb3c30e45789",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C29",
+      "claim": "The half-maximal inhibitory concentrations (IC50) for sensitive-only and resistant-only populations differ significantly even at very low densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the half-maximal inhibitory concentrations (IC50) for sensitive-only and resistant-only populations differ significantly even at very low densities (Figure 1A), suggesting intrinsic differences in resistance even in the absence of density-dependent coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "65315f37-3000-41aa-b6ca-739aeb063512",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C31",
+      "claim": "For influx rates at the upper end of the bistable region and for sufficiently high initial fractions of resistant cells, high-density populations survive while low-density populations go extinct.",
+      "claim_type": "EXPLICIT",
+      "source": "For influx rates at the upper end of the bistable region\u2013and for sufficiently high initial fractions of resistant cells\u2013 high-density populations survive while low-density populations go extinct (Figure 2, bottom right panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mathematical modeling shown in Figure 2, bottom right panel",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "a02a823d-e692-4c7b-8d41-ed9f22cbf43c",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C33",
+      "claim": "The inverted bistability dynamics are governed in part by the reverse inoculum effect, which leads to a rapid increase in drug efficacy in the high-density populations and a corresponding population collapse.",
+      "claim_type": "EXPLICIT",
+      "source": "These counterintuitive dynamics, which we refer to as 'inverted bistability', are governed in part by the reverse inoculum effect, which leads to a rapid increase in drug efficacy in the high-density populations and a corresponding population collapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the mathematical model and its behavior",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "3785c134-58af-414a-8bcd-1b5af9143b78",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C34",
+      "claim": "The stable solutions that correspond to survival are comprised of only resistant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the stable solutions that correspond to survival are comprised of only resistant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the mathematical model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "11a3f59c-c438-48b1-ad4f-c4ddcbd75729",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C35",
+      "claim": "The model is not predicting a stable coexistence of sensitive and resistant strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the model is not predicting a stable coexistence of sensitive and resistant strains (though such coexistence can exist under some conditions; Lenski and Hattingh, 1986); instead, the initial presence of sensitive cells positions the population within the basin of attraction of states (like collapse) that would not be favored in their absence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mathematical model results, with citation to Lenski and Hattingh, 1986 for context",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "4db973d2-06ea-406c-af37-1b2a75e1107c",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C36",
+      "claim": "The model exhibits bistability over a range of drug influx rates, with qualitative behavior varying significantly within this bistable region.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by the bifurcation analysis (Figure 2), the model exhibits bistability over a range of drug influx rates (Figure 3A). The qualitative behavior within this bistable region can vary significantly. For small resistant fractions and low drug influx, bistability favors survival of low-density populations, while large resistant fractions and high drug influx favor survival of high-density populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mathematical modeling shown in Figures 2 and 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "3cc53385-78e3-4df4-bb8a-8a1baeb80698",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C37",
+      "claim": "The parameter space is divided into four non-overlapping regions, leading to a phase diagram that predicts regions of extinction, survival, and bistabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "The parameter space is divided into four non-overlapping regions, leading to a phase diagram that predicts regions of extinction, survival, and bistabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mathematical modeling shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "a90b06ec-549e-4adc-92ca-47db4ca85fd5",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C38",
+      "claim": "The qualitative features of the model dynamics are not unique to the specific model described, but also occur in alternative models that include more realistic Monod-style growth.",
+      "claim_type": "EXPLICIT",
+      "source": "These qualitative features are not unique the specific model described here, but also occur in alternative models that include, for example, more realistic Monod-style growth (SI; Figure 3\u2014figure supplement 1 through Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mathematical modeling shown in supplementary figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "f4de66a0-cc1c-4f8c-a971-1fd76c6502b5",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C39",
+      "claim": "Experiments confirm the existence of both predicted bistable regimes as well as the expected regimes of survival and extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments confirm the existence of both predicted bistable regimes as well as the expected regimes of survival and extinction (Figure 3B\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3B and 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "845c5310-41da-463e-bc5f-a8f40704a859",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C42",
+      "claim": "The collapsing populations do not entirely go extinct and contain living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to predictions of the model, the collapsing populations do not entirely go extinct. We confirmed that these populations do indeed contain living cells, and single colony isolates exhibit dose-response characteristics similar to those of the original sensitive and resistant strains, so there is no evidence that additional resistance has evolved during the experiment (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 4 (referenced as Figure 3\u2014figure supplement 7 in the actual manuscript)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "f658ef88-b562-4e48-91ec-bdc799331364",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C43",
+      "claim": "Mathematical models indicate the existence of long-lived but transient states of non-zero density near the onset of inverted bistability.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematical models do indicate the existence of long-lived but transient states of non-zero density near the onset of inverted bistability (Figure 3\u2014figure supplement 4), which may partially explain the lack of complete extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mathematical modeling shown in Figure 3\u2014figure supplement 8 (referenced as Figure 3\u2014figure supplement 4 in text)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "b869e7e6-3da7-49cf-9ce5-aa4ddc15a193",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C44",
+      "claim": "The degradation rate of ampicillin depends on both temperature and pH.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is also possible that it reflects features not included in the model. For example, while ampicillin is generally considered to be stable in solution for several days, the degradation rate depends on both temperature and pH (Hou and Poole, 1969), which could induce new dynamics on timescales of 10 s of hours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hou and Poole, 1969",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "e8f7eb7e-03aa-476e-b171-a97b82a88bbb",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C45",
+      "claim": "\u03b2-lactamase activity can vary slightly with pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, \u03b2-lactamase activity can also vary slightly with pH, adding an additional layer of coupling between the density effects driven by sensitive and resistant cells (Ohsuka et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ohsuka et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "373df634-188c-4209-922c-cbeacfe9b1fc",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C46",
+      "claim": "The model predicts that the inverted bistability relies on the reverse inoculum effect and is eliminated when \u03b51 = 0.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicts that the inverted bistability relies on the reverse inoculum effect\u2013specifically, it requires \u03b51> 0 and is eliminated when \u03b51 = 0 (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mathematical modeling shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "f1d883ab-56c4-44d0-8341-2800ac8ba79e",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C47",
+      "claim": "In E. faecalis, the reverse inoculum effect is driven by density-modulated changes in the local pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work showed that in this system, the reverse inoculum effect is driven by density-modulated changes in the local pH (Karslake et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Karslake et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "767e6c5b-e511-424f-95ba-f48633d4c486",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C48",
+      "claim": "When experiments are repeated in strongly buffered media, collapse of high-density populations is no longer observed, indicating that the region of inverted bistability is now a region of density-independent survival.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this prediction, we repeated the experiments in the inverted bistable region in strongly buffered media (Figure 4). As predicted by the model, we no longer observe collapse of high-density populations, indicating that the region of inverted bistability is now a region of density-independent survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "9e0a4db7-257d-45d0-9fd8-32b39e92dbc4",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C49",
+      "claim": "At high drug influx rates and largely resistant populations, immediate treatment leads to smallest final populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we found that delaying treatment can have opposing effects in the two scenarios (Figure 5). At high drug influx rates and largely resistant populations, immediate treatment leads to smallest final populations (Figure 5, right panels), consistent with model predictions of bistability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5, right panels",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "24efba55-bc59-421e-a757-36ea1f929f4c",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C50",
+      "claim": "At lower influx rates and lower initial resistant fractions, immediate treatment leads to initial inhibition followed by a phase of rapid growth as the population thrives, while delays in treatment allow the population to initially grow rapidly before collapsing.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, at lower influx rates and lower initial resistant fractions, we find that immediate treatment leads to initial inhibition followed by a phase of rapid growth as the population thrives; by contrast, delays in treatment allow the population to initially grow rapidly before collapsing (Figure 5, left panels).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5, left panels",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "783bff2b-b278-4451-ab91-49b1fa10736d",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C51",
+      "claim": "Delayed treatments, which use significantly less total drug, can promote population collapse when immediate treatments appear to fail.",
+      "claim_type": "EXPLICIT",
+      "source": "It is particularly striking that delayed treatments\u2013which also use significantly less total drug\u2013can promote population collapse when immediate treatments appear to fail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "470c58ea-1fa2-4775-a94d-dbc9a8fec143",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C52",
+      "claim": "The beneficial effects of delayed treatment can be traced to density-dependent drug efficacy, where the delay means the drug is applied when the population is sufficiently large that pH-mediated drug potentiation promotes collapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the 'inverted bistability' observed earlier, the beneficial effects of delayed treatment can be traced to density-dependent drug efficacy\u2013in words, the delay means the drug is applied when the population is sufficiently large that pH-mediated drug potentiation promotes collapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results based on the understanding of the underlying mechanisms",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "689c3e81-e719-4481-9889-d89ad33d70bd",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C53",
+      "claim": "The specific in vitro conditions used fail to capture numerous complexities associated with resistance in clinical settings, including substantial spatial heterogeneity, potential for biofilm formation, effects of the host immune system, and drug concentrations that differ in both magnitude and time-course.",
+      "claim_type": "EXPLICIT",
+      "source": "It is obvious that the specific in vitro conditions used here fail to capture numerous complexities associated with resistance in clinical settings (Bonten et al., 2001), including substantial spatial heterogeneity, potential for biofilm formation, effects of the host immune system, and drug concentrations that differ in both magnitude and time-course from the specific scenarios considered here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the study, with citation to Bonten et al., 2001",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "bce322df-9c3b-4db0-b64a-a2fa950da14a",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C54",
+      "claim": "\u03b2-lactamase producing enterococci are thought to be relatively rare.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we note that \u03b2-lactamase producing enterococci are thought to be relatively rare, though they have been associated with multi-drug resistant, high-risk enterococcal infections (Murray, 1992; Wells et al., 1992; Arias et al., 2010) and may be more widespread that initially believed because of the difficulty of detection in traditional laboratory tests (Gagetti et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Murray, 1992; Wells et al., 1992; Arias et al., 2010; Gagetti et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "ee43ea59-982d-48cd-99ac-80fa4aa3dbe8",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C55",
+      "claim": "\u03b2-lactamase producing enterococci have been associated with multi-drug resistant, high-risk enterococcal infections.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we note that \u03b2-lactamase producing enterococci are thought to be relatively rare, though they have been associated with multi-drug resistant, high-risk enterococcal infections (Murray, 1992; Wells et al., 1992; Arias et al., 2010) and may be more widespread that initially believed because of the difficulty of detection in traditional laboratory tests (Gagetti et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Murray, 1992; Wells et al., 1992; Arias et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "d1e030db-65e4-4834-9197-626f3c5e6aa8",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C56",
+      "claim": "\u03b2-lactamase producing enterococci may be more widespread than initially believed because of the difficulty of detection in traditional laboratory tests.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we note that \u03b2-lactamase producing enterococci are thought to be relatively rare, though they have been associated with multi-drug resistant, high-risk enterococcal infections (Murray, 1992; Wells et al., 1992; Arias et al., 2010) and may be more widespread that initially believed because of the difficulty of detection in traditional laboratory tests (Gagetti et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gagetti et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "3b5ea14d-a738-45b8-9f30-d10dded97ad2",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C57",
+      "claim": "Horizontal gene transfer may introduce new dynamics in high-density populations where conjugation is frequent.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our experimental model system is based on plasmid-mediated resistance, and while this fact is not explicitly assumed in any of our mathematical models, horizontal gene transfer may introduce new dynamics (Lopatkin et al., 2016; Lopatkin et al., 2017), particularly in high-density populations where conjugation is frequent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lopatkin et al., 2016; Lopatkin et al., 2017",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "4368dae7-0f54-4410-9635-91e97931978a",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C58",
+      "claim": "The response of microbial populations to antibiotic can be surprisingly complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the response of microbial populations to antibiotic can be surprisingly complex, suggesting that the spread of resistance alleles may not always follow simple selection dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental and modeling results presented in the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "7d1a2ec3-96b6-465d-91f1-db802f2f2766",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C59",
+      "claim": "The spread of resistance alleles may not always follow simple selection dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the response of microbial populations to antibiotic can be surprisingly complex, suggesting that the spread of resistance alleles may not always follow simple selection dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental and modeling results presented in the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "3db819d7-165e-46e2-84f2-ba408deeee29",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C60",
+      "claim": "Experiments were performed with E. faecalis strain OG1RF, a fully sequenced oral isolate.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were performed with E. faecalis strain OG1RF, a fully sequenced oral isolate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental strain used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "d9f2f78d-997d-42a7-909b-20dfa88fd12f",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C61",
+      "claim": "The modified plasmid pBSU101-BFP-BL expresses BFP and constitutively expresses \u03b2-lactamase driven by a native promoter isolated from the chromosome of clinical strain CH19.",
+      "claim_type": "EXPLICIT",
+      "source": "The modified plasmid, named pBSU101-BFP-BL, expresses BFP (rather than GFP in the original plasmid) and also constitutively expresses -lactamase driven by a native promoter isolated from the chromosome of clinical strain CH19 (Rice et al., 1991; Rice and Marshall, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental construct used, with citations to Rice et al., 1991; Rice and Marshall, 1992",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "1533f309-e27a-4e7b-afe0-df0c33fd356e",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C62",
+      "claim": "The \u03b2-lactamase gene and reporter are similar to those found in other isolates of enterococci and streptococci.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-lactamase gene and reporter are similar to those found in other isolates of enterococci and streptococci (Murray and Mederski-Samaroj, 1983; Zscheck and Murray, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Murray and Mederski-Samaroj, 1983; Zscheck and Murray, 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "20b561ff-0e98-407a-9bf2-53f765f4e951",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C63",
+      "claim": "Sensitive strains were transformed with plasmid pBSU101-DasherGFP, which lacks the \u03b2-lactamase insert.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, sensitive strains were transformed with a similar plasmid, pBSU101-DasherGFP, a pBSU101 derivative that lacks the \u03b2-lactamase insert and where eGFP is replaced by a brighter synthetic GFP (Dasher-GFP; ATUM ProteinPaintbox, https://www.atum.bio/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental construct used for sensitive strains",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "faa3e2cc-53a3-460c-8c6e-cfa737947f16",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C64",
+      "claim": "All media was supplemented with spectinomycin because the plasmids express a spectinomycin resistance gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The plasmids also express a spectinomycin resistance gene, and all media was therefore supplemented with spectinomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "d174089a-9f11-43d6-a6da-781ec1bf50ff",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C65",
+      "claim": "Cell density was measured at 1.5 s intervals in each vial using emitter/detector pairs of infrared LEDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell density was measured at 1.5 s intervals in each vial using emitter/detector pairs of infrared LEDs (Radioshack).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental measurement method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "f0c58ab1-6599-4748-94ca-b673f2bd1e85",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C66",
+      "claim": "In 'constant flow' experiments, media is added at a rate of 1 mL/min for a total of 7.5 s every 3.75 min for an effective flow rate of 2 mL/hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In 'constant flow' experiments, media (with drug, when relevant) is added at a rate of 1 mL/min for a total of 7.5 s every 3.75 min for an effective flow rate of 2 mL/hr (corresponding to a rate constant of \u00b5 = 10.12 hr-1 in 17 mL total volume).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "80684a4f-180f-4215-bd79-3374badf606f",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C67",
+      "claim": "The timescale of drug influx intervals (3\u20134 min) is an order of magnitude slower than the maximum bacterial growth rate, which corresponds to a doubling time of approximately 30\u201340 min.",
+      "claim_type": "EXPLICIT",
+      "source": "While drug influx (and waste removal) strictly occurs on discrete on-off intervals, the timescale of those intervals (3\u20134 min) is an order of magnitude slower than the maximum bacterial growth rate under these conditions, which corresponds to a doubling time of approximately 30\u201340 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions and bacterial growth characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "bb636d5a-5cb9-4065-af15-efd00e4aff6d",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "claim_id": "C68",
+      "claim": "The influx of drug is approximately continuous on the timescale of bacterial dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The influx of drug is therefore approximately continuous on the timescale of bacterial dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of timescales",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background context for studying antibiotic resistance in E. faecalis, including the clinical relevance of the organism, mechanisms of resistance, density-dependent effects, and prior work on collective resistance and pH-mediated effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C17 are all supported by appropriate citations to prior work and represent established knowledge in the field. These background claims provide the scientific foundation and motivation for the current study and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "c616857d-a1a7-48e8-8e64-0f66563afd41",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors engineered drug-resistant E. faecalis strains by transforming OG1RF with a plasmid constitutively expressing \u03b2-lactamase, and developed a continuous culture device to measure population dynamics under controlled drug influx conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C60-C68 describe the experimental methods and are supported by detailed descriptions in the Materials and Methods section. The strain construction is appropriately referenced, and the experimental setup is clearly described with sufficient detail for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "cb814399-a1b5-4ae9-a3b8-ce7857a83bb1",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sensitive and resistant E. faecalis strains exhibit opposing density-dependent responses to ampicillin: sensitive strains show a reverse inoculum effect (increased inhibition at higher densities), while resistant strains show a classical inoculum effect (decreased inhibition at higher densities).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 are directly supported by experimental data in Figure 1A-B showing IC50 measurements and growth rate measurements at different densities. The opposing density-dependent effects are clearly demonstrated and form the foundation for the subsequent modeling and experimental work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "092c5c99-9243-4ba4-833d-f274b9c043f1",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In constant drug influx experiments, high-density and low-density populations of resistant cells exhibit divergent behavior, with high-density populations surviving and low-density populations collapsing, and IC50 values differ significantly between sensitive and resistant populations even at low densities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C29 are supported by experimental data in Figure 1D and Figure 1A. The bistable behavior of resistant populations at different initial densities is clearly demonstrated, and the intrinsic differences in IC50 are quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "95c3ddf0-9329-4d39-8531-64ee167f3eb9",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A mathematical model predicts that competing density-dependent effects create bistable dynamics, including 'inverted bistability' where low-density populations survive while high-density populations collapse at low drug influx rates, and 'normal bistability' where high-density populations survive at high drug influx rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C20, C31, C33-C38 describe predictions from the mathematical model shown in Figures 2-3. The model is clearly described with equations, and bifurcation analysis supports the existence of different bistable regimes. The qualitative features are shown to be robust across alternative model formulations (Figure 3 supplements).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "b02438b1-aead-45eb-845c-6f4b9659a266",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Experiments confirm the existence of both predicted bistable regimes (normal and inverted) as well as regions of survival and extinction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by experimental data in Figures 3B-C showing time series at different initial densities, resistant fractions, and drug influx rates. The experiments demonstrate both types of bistability predicted by the model, with appropriate replication (N=3).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "c99788ca-ab18-42bc-a56e-bb9386ecbc1c",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Collapsing populations do not entirely go extinct but contain living cells with similar resistance characteristics to the original strains. Mathematical models predict long-lived transient states, and factors not included in the model (pH-dependent ampicillin degradation and \u03b2-lactamase activity) may contribute to the lack of complete extinction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 acknowledge a discrepancy between model predictions and experimental observations. C42 is supported by experimental data (Figure 3 supplement 7) showing that isolates from collapsed populations retain original resistance characteristics. C43 is supported by modeling (Figure 3 supplement 8). C44-C45 are appropriately cited speculations about model limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "3a5b619e-5a1c-4817-b3b7-7affc3052c0c",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The inverted bistability depends on the reverse inoculum effect driven by pH changes. When experiments are repeated in strongly buffered media that eliminates pH changes, the inverted bistability disappears and high-density populations survive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 test a key mechanistic prediction of the model. C46 is supported by modeling (Figure 4A), C47 by prior work (appropriately cited), and C48 by experimental data (Figure 4B) showing that buffered media eliminates the collapse of high-density populations, confirming the pH-dependence of the inverted bistability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "bb170b9e-b9be-41cf-a9cc-3dcb1e7370be",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Delaying antibiotic treatment has opposing effects depending on the regime: at high drug influx with high resistant fractions, immediate treatment is most effective, while at low influx with low resistant fractions, delayed treatment promotes population collapse despite using less total drug.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 are supported by experimental data in Figure 5 showing time series and final densities for different treatment delays. The counterintuitive result that delayed treatment can be more effective is clearly demonstrated with appropriate replication. C52 provides a mechanistic interpretation consistent with the pH-mediated density-dependent effects established earlier.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    },
+    {
+      "id": "8be377a4-1292-4102-8a1f-fd98f07321f6",
+      "content_id": "1ede4864-4163-4c4a-91b8-fbe69515ab40",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors acknowledge limitations of the in vitro system and discuss the clinical relevance and broader implications of their findings, noting that the response of microbial populations to antibiotics can be surprisingly complex and that resistance spread may not follow simple selection dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C59 represent appropriate discussion of limitations and broader implications. C53 acknowledges experimental limitations with appropriate citation. C54-C56 discuss the clinical context of \u03b2-lactamase-producing enterococci with appropriate citations. C57 notes a potential complication (horizontal gene transfer) with citations. C58-C59 are reasonable conclusions drawn from the experimental and modeling results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:59:06.632736Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "317b4381-22d8-4e06-a58a-a0a14d521801",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "209b037e-60b8-4b8b-beef-7286edea048c",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "118d68e6-f957-4434-97d4-c727a3c6e642",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "464a80d7-a32b-4030-bfc5-2c478b2f8fe0",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "21714695-4fc3-43aa-9fa0-deb40e11189d",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "41aefa95-7f04-4906-91f2-f8c9400ef569",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "6c31c1e1-6a51-44cb-9653-94af96ae3f62",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "750bfc35-3a04-424b-8738-77169ec081b7",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "a81f6f98-57d4-4e0b-a267-8d18ad52b432",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "882ae97c-d706-428e-a9e2-e42a27c5df39",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "fb3b6667-af1a-4903-afe9-f363a2380f91",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "f6cddb6f-6f3a-46f3-a2d2-9e06b504c65a",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "55cc90f8-2b78-49da-9d9e-c27c93656b4b",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "110b4429-29ea-4f0b-a850-a44d47013740",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "22040ee9-cbef-40c3-9876-9e5cc49c7adc",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "adc07c5e-0727-4903-b2d0-051e9aa6009e",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "f7c1e860-130e-4675-bfa5-2ab42da28ef8",
+      "result_id": "700f58d7-5420-4c1e-8ea8-4902d9a199a6"
+    },
+    {
+      "claim_id": "f1bb7834-11bf-4656-980b-72165796c756",
+      "result_id": "c616857d-a1a7-48e8-8e64-0f66563afd41"
+    },
+    {
+      "claim_id": "3db819d7-165e-46e2-84f2-ba408deeee29",
+      "result_id": "c616857d-a1a7-48e8-8e64-0f66563afd41"
+    },
+    {
+      "claim_id": "d9f2f78d-997d-42a7-909b-20dfa88fd12f",
+      "result_id": "c616857d-a1a7-48e8-8e64-0f66563afd41"
+    },
+    {
+      "claim_id": "1533f309-e27a-4e7b-afe0-df0c33fd356e",
+      "result_id": "c616857d-a1a7-48e8-8e64-0f66563afd41"
+    },
+    {
+      "claim_id": "20b561ff-0e98-407a-9bf2-53f765f4e951",
+      "result_id": "c616857d-a1a7-48e8-8e64-0f66563afd41"
+    },
+    {
+      "claim_id": "faa3e2cc-53a3-460c-8c6e-cfa737947f16",
+      "result_id": "c616857d-a1a7-48e8-8e64-0f66563afd41"
+    },
+    {
+      "claim_id": "d174089a-9f11-43d6-a6da-781ec1bf50ff",
+      "result_id": "c616857d-a1a7-48e8-8e64-0f66563afd41"
+    },
+    {
+      "claim_id": "f0c58ab1-6599-4748-94ca-b673f2bd1e85",
+      "result_id": "c616857d-a1a7-48e8-8e64-0f66563afd41"
+    },
+    {
+      "claim_id": "80684a4f-180f-4215-bd79-3374badf606f",
+      "result_id": "c616857d-a1a7-48e8-8e64-0f66563afd41"
+    },
+    {
+      "claim_id": "bb636d5a-5cb9-4065-af15-efd00e4aff6d",
+      "result_id": "c616857d-a1a7-48e8-8e64-0f66563afd41"
+    },
+    {
+      "claim_id": "8239e8a0-e397-4c3e-ad16-4b70d4abaeab",
+      "result_id": "cb814399-a1b5-4ae9-a3b8-ce7857a83bb1"
+    },
+    {
+      "claim_id": "70e1f12c-bacd-4112-a28b-b88cc0edf512",
+      "result_id": "cb814399-a1b5-4ae9-a3b8-ce7857a83bb1"
+    },
+    {
+      "claim_id": "2d1705dd-eff1-4618-96c2-aff2908baeb4",
+      "result_id": "cb814399-a1b5-4ae9-a3b8-ce7857a83bb1"
+    },
+    {
+      "claim_id": "58783700-d626-469c-953b-9a86a76ecef3",
+      "result_id": "cb814399-a1b5-4ae9-a3b8-ce7857a83bb1"
+    },
+    {
+      "claim_id": "60baf12e-864a-4018-9e9d-4feb65d140f8",
+      "result_id": "092c5c99-9243-4ba4-833d-f274b9c043f1"
+    },
+    {
+      "claim_id": "1a7553ec-6e27-45f5-9387-bb3c30e45789",
+      "result_id": "092c5c99-9243-4ba4-833d-f274b9c043f1"
+    },
+    {
+      "claim_id": "ada57157-f61c-41cf-af6b-967d6277418b",
+      "result_id": "95c3ddf0-9329-4d39-8531-64ee167f3eb9"
+    },
+    {
+      "claim_id": "724fbef1-b6eb-48f0-9651-b4414e68f9eb",
+      "result_id": "95c3ddf0-9329-4d39-8531-64ee167f3eb9"
+    },
+    {
+      "claim_id": "65315f37-3000-41aa-b6ca-739aeb063512",
+      "result_id": "95c3ddf0-9329-4d39-8531-64ee167f3eb9"
+    },
+    {
+      "claim_id": "a02a823d-e692-4c7b-8d41-ed9f22cbf43c",
+      "result_id": "95c3ddf0-9329-4d39-8531-64ee167f3eb9"
+    },
+    {
+      "claim_id": "3785c134-58af-414a-8bcd-1b5af9143b78",
+      "result_id": "95c3ddf0-9329-4d39-8531-64ee167f3eb9"
+    },
+    {
+      "claim_id": "11a3f59c-c438-48b1-ad4f-c4ddcbd75729",
+      "result_id": "95c3ddf0-9329-4d39-8531-64ee167f3eb9"
+    },
+    {
+      "claim_id": "4db973d2-06ea-406c-af37-1b2a75e1107c",
+      "result_id": "95c3ddf0-9329-4d39-8531-64ee167f3eb9"
+    },
+    {
+      "claim_id": "3cc53385-78e3-4df4-bb8a-8a1baeb80698",
+      "result_id": "95c3ddf0-9329-4d39-8531-64ee167f3eb9"
+    },
+    {
+      "claim_id": "a90b06ec-549e-4adc-92ca-47db4ca85fd5",
+      "result_id": "95c3ddf0-9329-4d39-8531-64ee167f3eb9"
+    },
+    {
+      "claim_id": "f4de66a0-cc1c-4f8c-a971-1fd76c6502b5",
+      "result_id": "b02438b1-aead-45eb-845c-6f4b9659a266"
+    },
+    {
+      "claim_id": "845c5310-41da-463e-bc5f-a8f40704a859",
+      "result_id": "c99788ca-ab18-42bc-a56e-bb9386ecbc1c"
+    },
+    {
+      "claim_id": "f658ef88-b562-4e48-91ec-bdc799331364",
+      "result_id": "c99788ca-ab18-42bc-a56e-bb9386ecbc1c"
+    },
+    {
+      "claim_id": "b869e7e6-3da7-49cf-9ce5-aa4ddc15a193",
+      "result_id": "c99788ca-ab18-42bc-a56e-bb9386ecbc1c"
+    },
+    {
+      "claim_id": "e8f7eb7e-03aa-476e-b171-a97b82a88bbb",
+      "result_id": "c99788ca-ab18-42bc-a56e-bb9386ecbc1c"
+    },
+    {
+      "claim_id": "373df634-188c-4209-922c-cbeacfe9b1fc",
+      "result_id": "3a5b619e-5a1c-4817-b3b7-7affc3052c0c"
+    },
+    {
+      "claim_id": "f1d883ab-56c4-44d0-8341-2800ac8ba79e",
+      "result_id": "3a5b619e-5a1c-4817-b3b7-7affc3052c0c"
+    },
+    {
+      "claim_id": "767e6c5b-e511-424f-95ba-f48633d4c486",
+      "result_id": "3a5b619e-5a1c-4817-b3b7-7affc3052c0c"
+    },
+    {
+      "claim_id": "9e0a4db7-257d-45d0-9fd8-32b39e92dbc4",
+      "result_id": "bb170b9e-b9be-41cf-a9cc-3dcb1e7370be"
+    },
+    {
+      "claim_id": "24efba55-bc59-421e-a757-36ea1f929f4c",
+      "result_id": "bb170b9e-b9be-41cf-a9cc-3dcb1e7370be"
+    },
+    {
+      "claim_id": "783bff2b-b278-4451-ab91-49b1fa10736d",
+      "result_id": "bb170b9e-b9be-41cf-a9cc-3dcb1e7370be"
+    },
+    {
+      "claim_id": "470c58ea-1fa2-4775-a94d-dbc9a8fec143",
+      "result_id": "bb170b9e-b9be-41cf-a9cc-3dcb1e7370be"
+    },
+    {
+      "claim_id": "689c3e81-e719-4481-9889-d89ad33d70bd",
+      "result_id": "8be377a4-1292-4102-8a1f-fd98f07321f6"
+    },
+    {
+      "claim_id": "bce322df-9c3b-4db0-b64a-a2fa950da14a",
+      "result_id": "8be377a4-1292-4102-8a1f-fd98f07321f6"
+    },
+    {
+      "claim_id": "ee43ea59-982d-48cd-99ac-80fa4aa3dbe8",
+      "result_id": "8be377a4-1292-4102-8a1f-fd98f07321f6"
+    },
+    {
+      "claim_id": "d1e030db-65e4-4834-9197-626f3c5e6aa8",
+      "result_id": "8be377a4-1292-4102-8a1f-fd98f07321f6"
+    },
+    {
+      "claim_id": "3b5ea14d-a738-45b8-9f30-d10dded97ad2",
+      "result_id": "8be377a4-1292-4102-8a1f-fd98f07321f6"
+    },
+    {
+      "claim_id": "4368dae7-0f54-4410-9635-91e97931978a",
+      "result_id": "8be377a4-1292-4102-8a1f-fd98f07321f6"
+    },
+    {
+      "claim_id": "7d1a2ec3-96b6-465d-91f1-db802f2f2766",
+      "result_id": "8be377a4-1292-4102-8a1f-fd98f07321f6"
+    }
+  ],
+  "comparisons": []
+}

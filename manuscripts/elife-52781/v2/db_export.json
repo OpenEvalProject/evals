@@ -1,0 +1,1820 @@
+{
+  "submission": {
+    "id": "f1d692f1-8c8e-4bce-a1ab-895f60b62472",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:13:41.717064Z",
+    "updated_at": "2025-12-02T16:13:41.717064Z"
+  },
+  "content": [
+    {
+      "id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "submission_id": "f1d692f1-8c8e-4bce-a1ab-895f60b62472",
+      "content_type": "manuscript",
+      "content_text": "# Dynamics of pattern formation and emergence of swarming in Caenorhabditis elegans\n\n## Authors\n\n- Esin Demir<sup>1</sup>\n- Y Ilker Yaman<sup>2</sup> ([ORCID: 0000-0003-4094-616X](https://orcid.org/0000-0003-4094-616X))\n- Mustafa Basaran<sup>1</sup> ([ORCID: 0000-0002-1895-254X](https://orcid.org/0000-0002-1895-254X))\n- Askin Kocabas<sup>1</sup> ([ORCID: 0000-0002-6930-1202](https://orcid.org/0000-0002-6930-1202)) \u2020\n\n### Affiliations\n\n1. Bio-Medical Sciences and Engineering Program, Ko\u00e7 University, Sar\u0131yer Istanbul Turkey\n2. Department of Physics, Ko\u00e7 University, Sar\u0131yer Istanbul Turkey\n3. Ko\u00e7 University Surface Science and Technology Center, Ko\u00e7 University, Sar\u0131yer Istanbul Turkey\n4. Ko\u00e7 University Research Center for Translational Medicine, Ko\u00e7 University, Sar\u0131yer Istanbul Turkey\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany animals collectively form complex patterns to tackle environmental difficulties. Several biological and physical factors, such as animal motility, population densities, and chemical cues, play significant roles in this process. However, very little is known about how sensory information interplays with these factors and controls the dynamics of pattern formation. Here, we study the direct relation between oxygen sensing, pattern formation, and emergence of swarming in active Caenorhabditis elegans aggregates. We find that when thousands of animals gather on food, bacteria-mediated decrease in oxygen level slows down the animals and triggers motility-induced phase separation. Three coupled factors\u2014bacterial accumulation, aerotaxis, and population density\u2014act together and control the entire dynamics. Furthermore, we find that biofilm-forming bacterial lawns including Bacillus subtilis and Pseudomonas aeruginosa strongly alter the collective dynamics due to the limited diffusibility of bacteria. Additionally, our theoretical model captures behavioral differences resulting from genetic variations and oxygen sensitivity.\n\n## Introduction\n\nSome animals have remarkable abilities to form complex patterns to cope with environmental challenges (Sumpter, 2010; Mart\u00ednez et al., 2016; Miller and Gerlai, 2012; Szopek et al., 2013; Ioannou et al., 2012; Stabentheiner et al., 2003; Peleg et al., 2018; Tennenbaum et al., 2016; Gregor et al., 2010). Formation of these biological patterns is particularly initiated by aggregation. At high population density, animals tend to aggregate as animal-to-animal interactions cause instability in uniform distribution (Gregor et al., 2010; Buhl et al., 2006; Liu et al., 2016; Vicsek et al., 1995). Different factors such as motility of animals and chemical cues can trigger these instabilities by altering the behavior of animals. In particular, sensory information plays a primary role in controlling behaviors. Elucidating how environmental factors interplay with the sensory information is essential to improve our understanding of pattern formation in biological systems. However, this is a challenging problem in complex organisms.\n\nNematode Caenorhabditis elegans allows the use of sophisticated experimental tools and the results provide very precise information regarding the relation between genes, neural circuits, and behaviors (Bargmann and Marder, 2013; Gray et al., 2005; Chalasani et al., 2007; Calarco and Samuel, 2019; Kocabas et al., 2012; Lee et al., 2019). This study is motivated by the possibility of developing a platform that combines both neuronal information and the collective dynamics in this model system.\n\nC. elegans shows a variety of collective responses including, social feeding (de Bono and Bargmann, 1998; de Bono et al., 2002; Macosko et al., 2009; Coates and de Bono, 2002), starvation-induced clustering (Artyukhin et al., 2015), hydrodynamic networking (Sugi et al., 2019) and collective swimming (Yuan et al., 2014; Gray and Lissmann, 1964). Recent studies have shed light on some physical (Sugi et al., 2019; Ding et al., 2019; Oda et al., 2017) and biological (Rogers et al., 2006; Busch et al., 2012; Zhao et al., 2018) aspects of these behaviors and their variations. Oxygen sensitivity is particularly the main source of the variation. Laboratory strain (N2) is known to be solitary nematode with a broad range of oxygen preference while natural isolates exhibit strong aggregation and sharp aerotaxis (Rogers et al., 2006; Persson et al., 2009). Further, oxygen sensing, feeding and aggregation behavior are all intricately related in C. elegans. Bacteria utilize oxygen for growth and C. elegans seeks low oxygen levels for locating the bacteria as a food source. However, in a dense population, all these factors become extremely coupled (Tuval et al., 2005; Gray et al., 2004; Nichols et al., 2017). In this study, we aimed to develop a general model dealing with the dynamics of all these factors.\n\nHere, we report that, C. elegans including the laboratory strain (N2), forms complex patterns during feeding. When thousands of worms are forced to feed together, aggregation-induced bacterial accumulation and oxygen depletion create unstable conditions and further trigger phase separations. The principle of phase separation is mainly based on a sudden change in the animal\u2019s motility (Liu et al., 2016; Cates and Tailleur, 2015). We also found that the dynamics of the entire process is controlled by the sensitivity of the oxygen-sensing neurons, which gives rise to strong variations in animals\u2019 collective response. Further, we also observe the convergence of self-organized patterns to the motile swarming body as a result of complex interactions between oxygen diffusion, bacterial consumption, and motility of animals. Finally, we studied the effects of bacterial diffusibility and biofilm formation of the lawn on the collective dynamics of animals.\n\n## Results\n\nTo investigate the collective response of C. elegans, we began by imaging animals during food search in a crowded environment. We collected thousands of animals (N2) in a droplet and let it dry on an agar plate. The droplet was put a few centimeters away from food. After drying, worms spread and searched for food by tracing the attractive chemicals. This experimental procedure allowed us to increase the worm density around a bacterial lawn to observe their collective movement. When animals found the bacteria, they usually slowed down and penetrated the lawn. However, we observed that, at high densities the majority of the worms did not penetrate the lawn. After reaching the lawn, they suddenly stopped and started accumulating (Figure 1a). As the worms accumulated, they formed a huge aggregate that covered the entrance. Eventually, this large aggregate gained motility and swarmed across the lawn (Figure 1a,b,c, Video 1). This observation was quite different from the previously reported response of the reference strain N2 which generally behaves solitarily (de Bono and Bargmann, 1998; Gray et al., 2004). Further, we tested different mutant strains deficient in several sensing mechanisms and essential neuromodulators; we observed similar aggregation and swarming responses in a wide range of animals (Figure 1\u2014figure supplement 1). We also used various types of food sources including B. subtilis biofilm, filamentous bacteria, or extremely thick bacterial lawns. Surprisingly, animals showed a very rich collective response ranging from complex pattern formations to large scale swarming (Figure 1d,e,f, Figure 1\u2014figure supplement 2). Altogether, these results suggest that the conditions observed in a dense population can broadly trigger the collective response in C. elegans.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig1-v2.jpg)\n\n**Figure 1.:** (a, b) Thousands of animals collectively swarm on a bacterial lawn. (a) While searching for food, worms aggregate around the edge of the bacterial lawn. Small aggregates merge and form a massive swarm. (b) Swarming body eventually gains motility and moves across the lawn while consuming the bacteria. (c) A cryo-SEM image of the swarming body. The heads and the tails of the animals are buried, and the bodies extend on the surface of the swarm. (d, e) Sample images of Turing-like patterns formed by animals on an agar surface under various conditions, such as starvation-induced and on a biofilm. The magnified version of the image is given in the supplementary information. Scale bar, 1 cm (f) Fluorescent image of worms aggregating near the GFP-labeled bacteria. Due to the capillary effect and diffusion of bacteria, worms concentrate the bacteria within the aggregates. Scale bar, 1 mm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Error bar indicates the standard error of measurement. For each experiment, 3000 animals were used. Large variations in the swarm area are originating from the random spreading of worms during the drying process. For N2 animals swarming experiments were repeated 10 times to verify their collective behavior.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig1-figsupp2-v2.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Accumulation of worms around the lawn and the diffusion of GFP-labeled bacteria (bright white color) into the worm aggregates. (b) Worm density vs GFP signal.\n\n![Video 1.](https://cdn.elifesciences.org/articles/52781/elife-52781-video1.mp4.jpg)\n\n**Video 1.:** The video is played 600 X speed and the real elapsed time is indicated in the video (h: min: sec). This video is associated with Figure 1a,b.\n\nThis collective response only occurs on a bacterial lawn. Previous studies reported the same conditions for aggregating strains (de Bono and Bargmann, 1998; Gray et al., 2004). However, how the presence of bacteria contributes to this process is unclear. To clarify this point, we used GFP expressing bacteria (OP50, E. coli) to follow the entire dynamics. Time-lapse fluorescence microscopy revealed that the bacteria are concentrated within the aggregates. This bacterial accumulation further promotes the collective behavior of animals (Figure 1f, Figure 1\u2014figure supplement 3, Figure 1\u2014video 1; Video 2). Following the accumulation of bacteria, the motility of animals is strongly suppressed. The na\u00efve hypothesis explaining this observation is that the process is mainly based on the capillary meniscus around the animals (Rabets et al., 2014; Gart et al., 2011). When animals form aggregates, the structure becomes porous. Thus, due to the capillary effect, the porous aggregate can hold more bacterial suspension. Eventually, concentrated bacteria could make the formation of aggregate more favorable by conditioning the oxygen levels. We can conclude that concentrated bacteria is the primary factor triggering the formation and the maintenance of the aggregation.\n\n![Video 2.](https://cdn.elifesciences.org/articles/52781/elife-52781-video2.mp4.jpg)\n\n**Video 2.:** Worms accumulate around the lawn and form large aggregates. As large aggregates merge, swarm body appears and gains motility. Bacteria accumulate within the aggregates. The video is played 250 X speed and the real elapsed time is indicated in the video (hr: min: s).\n\nWe then focused on the effects of oxygen on the entire process. Previous studies have already shown that the bacterial lawn can decrease oxygen concentration [O2] (Rogers et al., 2006; Gray et al., 2004). To directly observe this effect, we used fiber optic sensors to measure [O2] in both bacterial suspensions and in the swarming body. We observed that the oxygen level drops below 0.1% in the bacterial suspension (Figure 2\u2014figure supplement 1). Moreover, we found similar depletion in [O2] in the swarming body (Figure 2a, Video\u00a03). These results imply that concentrated bacteria deplete [O2] in the swarming body. It should be noted that the fiber optic sensor can only be used to record the oxygen levels in the swarm liquid. Although [O2] is very low, the animals' bodies can extend on the surface of the swarm and they can get sufficient O2 from the environment. Besides the ambient environment, wet agar surface can also provide oxygen by lateral surface diffusion. We independently validated these contributions by covering the aggregate with a glass slide and by using an agar chunk containing oxygen depleting chemical Na2SO3, (Figure 2\u2014figure supplement 2, Figure 1\u2014video 2 and Figure 1\u2014video 3 ). Moreover, we observed that Na2SO3 based oxygen depletion on the agar surface could initiate aggregation behavior in the bacteria-free region (Figure 1\u2014video 4). We also tested animals responses on a very thick bacterial lawn which can significantly decrease the oxygen level. We found that npr-1 worms did not form clusters on the thick bacterial lawn and they avoided extremely thick regions of the lawn (Figure 1\u2014video 5). As a final control experiment we tested the aggregation responses of worms on a dead OP50 lawn. Interestingly, dead bacterial suspensions have different oxygen kinematics and result in small clustering (more discussions about dead bacteria are available in the review file). From these results, we can conclude that animals effectively experience the average O2 levels defined by the ambient environment and the swarm liquid. Altogether, ambient oxygen levels and oxygen depletion are essential factors for aggregation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig2-v2.jpg)\n\n**Figure 2.:** (a) Accumulation of bacterial suspension depletes oxygen in worm aggregates. Oxygen levels measured by the fiber optic sensor while the swarm passes through the sensor. Initially fiber optic sensor records ambient [O2] on the surface and the sudden drop is originating from the complete coverage of the fiber by the swarm body.\u00a0(b) Oxygen-dependent motility of animals. The average speed of the worms as a function of ambient oxygen. The slope of the curve defines the aerotactic response of the animals. The comparison of velocity profiles of N2 (red) (on food), npr-1(blue) (on food), and off-food-N2 (green) response show the difference between the strains. Colored regions indicate the dispersive, stationary and aggregation phases. Error bar indicates the s.e.m.\u00a0=\u00a0\u00b1\u00a018 \u03bcm/s. For each experiment, 25 individual animals were imaged. Measurement error is defined by the error in image processing steps.\u00a0(c) Schematic representation of each phase. The competition between animal dispersion (D) and aerotactic response (\u03b2) defines the collective behavior of worms.\u00a0(d) Simulation results of the model at time 10 min after randomization of the patterns with various initial animal densities. The pattern formation strongly depends on worm density. At low density, worms create clusters. As the worm density increases, clusters converge to stripes and hole patterns.\u00a0(e, f) Experimental results of density-dependent pattern formation.\u00a0(e) At low worm densities (500 worms/cm2), N2 worms do not form patterns. As the density increases, we observed stripes (2000 worms/cm2) and holes (6000 worms/cm2).\u00a0(f) The strong aerotactic response of npr-1 strain enables worms to form patterns even at low densities. An increase in the worm density causes a change in the instability conditions and tunes the patterns. Scale bar, 1 mm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The bacteria deplete O2. [O2] does not depend on the ambient oxygen level (in red). Initially fiber optic sensor records ambient [O2] and the sudden drop is originating from the complete insertion of the fiber into a bacterial suspension.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Schematic representation of a swarming body before (top) and after (bottom) the covering with a glass slide. Blocking oxygen penetration dissociates the swarm structure. (b) Dispersing animals accumulates around the glass-air interface where animals sense the sudden increase in [O2]. (C) Na2SO3 containing agar chunk and d) accumulation of worms around the oxygen-depleted region.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Aggregation behaviors of npr-1 worms on a thin\u00a0(a) and thick\u00a0(b) bacterial lawn. npr-1 animals do not form clusters on a thick bacterial layer.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Plexiglass swarm chamber was\u00a0used\u00a0to set ambient [O2].\u00a0Simultaneously, the fiber optic oxygen sensor can be inserted into the chamber to record [O2] in the swarm fluid.\n\n![Video 3.](https://cdn.elifesciences.org/articles/52781/elife-52781-video3.mp4.jpg)\n\n**Video 3.:** The fiber optic sensor is placed on a bacterial lawn and ambient [O2] is set to 21%. Ambient set [O2] and measured [O2] are indicated in the video as O2\u00a0set (green) and O2m (black), respectively. This video is associated with Figure 2a.\n\nTo quantify the effects of [O2] on the motility of animals, we measured the response of the animals under changing oxygen concentrations. Figure 2b compares the velocity profiles V(O) of both, aggregating strain npr-1 (DA609) and solitary strain N2 and the velocity of the animals moving in the bacteria-free region (off-food). Both strains responded to very low [O2] by increasing their velocities, which mainly triggers dispersive behavior (Video 4). On the contrary, npr-1 suppressed its motility around intermediate oxygen levels (7\u201310%)\u00a0and showed a sharp response when oxygen levels exceeded 15%. In contrast, N2 suppressed its motility in more broader range of oxygen levels, but their velocity slowly increased as [O2] reached 21% or more. These differences appear to be originating from the sensitivity of the oxygen-sensing neurons URX, AQR and PQR that shape the overall oxygen preferences of the animals (Oda et al., 2017; Busch et al., 2012; Zimmer et al., 2009). Although both npr-1 and N2 perform aerotaxis at 7\u201310% oxygen, N2 shows a weaker aerotactic response, thus, they have a broader range of oxygen preference. All these critical features of the strains can be extracted from oxygen-dependent response curve V(O) which is directly related to neuronal sensitivity.\n\n![Video 4.](https://cdn.elifesciences.org/articles/52781/elife-52781-video4.mp4.jpg)\n\n**Video 4.:** In order to minimize the animal to animal interaction isolated bacterial slots were used. This video is associated with Figure 2b.\n\nMotility suppression behavior has been observed in a variety of organisms ranging from bacteria to mussels (Cates and Tailleur, 2015; Cates et al., 2010; Liu et al., 2013; Liu et al., 2014; Dervaux et al., 2017; Liu et al., 2011; Garfinkel et al., 2004). Generally, animals tend to slow down when they come together. The entire process is represented by the density dependence of the animal movement which can lead to the formation of patterns. However, in C. elegans we observed indirect density-dependent suppression. Without bacteria, animals move fast (Figure 2b). In striking contrast, the presence of bacteria results in oxygen depletion and motility suppression. These findings suggest that in the dynamics of oxygen, bacterial concentration and animal motility are the essential physical factors controlling the collective behaviors of C. elegans.\n\nTo gain a more quantitative representation of pattern formation, we developed a mathematical model. Many different models have been used to describe the dynamics of pattern formation. Particularly, dryland vegetation models share similarities in terms of dynamic variables and feedbacks (Gilad et al., 2007; Gilad et al., 2004). However, in our system, we have to implement the activity of the worms based on oxygen concentrations. To do so, we followed the notation and the framework developed for active chemotactic particles (Liebchen and L\u00f6wen, 2018). We set two separate differential equations to represent worm density (W) and oxygen kinematics (O) in two-dimensional space. V(O) is the oxygen-dependent motility response of individual animals. This factor served as an experimentally measurable sensory curve of the animals. This curve defines competition between diffusivity and aerotactic motility. Both effects became minimal around the optimum oxygen level (7\u201310%) at which the animals were almost in a stationary phase (Figure 2b). In low oxygen region, dispersion and reversal of aerotaxis promoted motility. On the other hand, at high oxygen levels, aerotaxis dominated the dynamics and promoted aggregation (Figure 2c). These are the Keller-Segel like equations\u00a0(Keller and Segel, 1970; Wang, 2010) with both, nonlinear diffusion and chemotactic sensitivity (Materials and methods);\n\n$$\n\\frac{\\partialW}{\\partialt}=\\nablaD_{W}\\nablaW+\\nabla\\betaW\\nablaO\n$$\n\n\n\n$$\n\\frac{\\partialO}{\\partialt}=D_{O}\\nabla^{2}O+fO_{am}-O-k_{c}W\n$$\n\nHere, $D_{W}=\\frac{V^{2}}{2\\tau}$ represents motility-dependent dispersion of the worms, $D_{O}$\u00a0is the diffusion coefficient of oxygen on the surface, $\\beta=\\frac{V}{2\\tau}\\frac{\\partialV}{\\partialO}$ is the aerotactic coupling coefficient indicating the strength of the animal response to oxygen gradient. $f$ is the penetration rate of the oxygen from the air to the water surface, $O_{am}$ is the ambient oxygen level, and $k_{c}$\u00a0is the rate of oxygen consumption by worms and bacteria. $k_{c}W$ term in the model covers the hydrodynamics related to the bacterial concentration. Here, we assume that bacterial density is linearly proportional to worm density (Figure 1\u2014figure supplement 3b). Furthermore, the time scale of the bacterial consumption is much longer than the aggregation time, thus we ignore the bacterial consumption term in the equations.\n\nFirst, we focused on the instability criteria. Following the linear stability analysis of the solution in the uniform phase, we predicted that instability occurs when\u00a0$W_{eq}\\betak_{c}>fD_{W\u00a0}$. The detailed derivations are given in Materials and methods. This criterion suggests that population density and aerotactic response favor instability; however, dispersion of animals opposes it. To verify these conditions, we performed simulations by tuning initial worm density. Depending on the density, we observed the formation of uniform distribution, dots, stripes, and holes (Figure 2d). These are the basic patterns that are frequently seen in many biological systems (Liu et al., 2016; Chen et al., 2012).\n\nOur simulations also predict that under low aerotactic response, the increase in population density could complement the instability criteria and give rise to pattern formation. This is because the multiplication of density and aerotactic response simply shifts the dynamics to a new instability zone. This prediction could explain the response of solitary N2 in a dense population. N2 shows weak aerotactic response which results in broad oxygen preference and patterns only appear in a dense environment. On the other hand, the strain npr-1 with sharp aerotactic response can form similar patterns even at low population density. We tested this hypothesis experimentally (Figure 2e and f, Videos 5 and 6) and found that N2 forms stripes and hole-like patterns only at high population density, whereas npr-1 could form small aggregation patterns even at a low density.\n\n![Video 5.](https://cdn.elifesciences.org/articles/52781/elife-52781-video5.mp4.jpg)\n\n**Video 5.:** Top images show N2 and bottom images corresponds to npr-1 strain. The circular region is the bacterial lawn. This video is associated with Figure 2d\u2013f and Figure 3.\n\n![Video 6.](https://cdn.elifesciences.org/articles/52781/elife-52781-video6.mp4.jpg)\n\n**Video 6.:** Top images show N2 and bottom images corresponds to npr-1 strain. The circular region is the bacterial lawn. This video is associated with Figure 2d\u2013f and Figure 3.\n\nAmbient oxygen is the second experimentally controllable factor driving the dynamics of the system. The onset of the pattern formation can be controlled by tuning the ambient oxygen levels at a fixed population density. Further, we tested the contribution of ambient oxygen levels to pattern formation. To be able to control the [O2], we performed the experiments in a chamber where the flow of O2/ N2 mixture is precisely controlled (Figure 2\u2014figure supplement 3). First, we measured the [O2] in a large aggregate accumulated around the bacterial lawn. We started the experiment at 21% O2 and sequentially decreased the [O2] to 1%. We observed that the aggregates respond to decreasing O2 level by increasing their surface area (Figure 3a, Figure 3\u2014figure supplement 1, Video 7). However, [O2] in the aggregate remained low until it reached 7% (Figure 3b). Below this level, the pattern became very porous and oxygen would directly leak into the fiber sensor which led to small fluctuations in readings. It should be noted that the [O2] at 1% completely randomized the patterns by increasing motility and reversing aerotaxis. Subsequently, we increased the [O2] which resulted in similar stripe and hole patterns across the region (Figure 3c, Figure 3\u2014figure supplement 2). We noticed that patterns formed by N2 strain did not change significantly during oxygen scans (Figure 3\u2014figure supplement 3). This was expected, because N2 exhibits low and almost flat aerotactic response within the same range of oxygen levels.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematics show the response of worm aggregates to changing ambient oxygen levels. As oxygen level increases, the size of the clusters shrink and form circular aggregates which balance the oxygen penetration and diffusion. (b) Measured oxygen concentration in worm aggregates. The dashed red line shows the ambient oxygen level. Error bar indicates the s.e.m.\u00a0=\u00a0\u00b1\u00a00.1% (c, d) Simulation and experimental results of pattern formation under various worm densities and ambient oxygen levels. Patterns are formed when the instability criterion is satisfied. The instability zone is bounded by the uniform stable population. Scale bar, 1 cm. Image snapshots representing simulation results are taken at time 10 min after randomization of the patterns. Worm densities vary between 5\u201360 worms / mm2 (Mart\u00ednez et al., 2016) in the experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Snapshots show the response of the swarm to changing ambient [O2]. As ambient [O2] decreases swarm tunes its density by increasing the total surface area. (b) Animal density in the swarm as a function of ambient [O2].\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig3-figsupp3-v2.jpg)\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Simulation parameters were chosen to acquire a few worm thick interface width.\n\n![Video 7.](https://cdn.elifesciences.org/articles/52781/elife-52781-video7.mp4.jpg)\n\nWe further explored the combinatorial effects of oxygen and worm density on pattern formation. As predicted by the instability criterion, in two-dimensional parameter space, the onset of dot, stripe and hole patterns is observed around the zone bounded by high and low uniform animal densities (Figure 3d). An increase in worm density or a decrease in ambient oxygen levels transforms the dot-shaped structure to stripe and hole patterns.\n\nThe other interesting feature of the pattern formation is the coarsening event. We sought to know how the shape of the patterns evolves in time at a fixed oxygen level. Our time-lapse imaging and simulation results validate the coarsening of characteristic domain size (Bray, 1994;\u00a0Figure 4a\u2013c, Figure 4\u2014figure supplement 3, Videos 8,9). In later stages, patterns merge and form a large cluster. This type of a large cluster shares visual similarities with our initial swarming experiments (Figure 1a and b). Interestingly, unlike simulation the width of the of the cluster reaches saturation before they dissociate. Arrested phase seperation was also observed in bacterial system due to birth and death dynamics (Cates et al., 2010). We noticed that, in our case, the consumption of bacteria is significant within the cluster and may limit the growth of the clusters. The similar effect of bacterial depletion was also proposed to explain the motion of the aggregating strain npr-1 (Ding et al., 2019). To investigate the details, we measured the bacterial concentration. GFP signal revealed different bacterial concentrations across the swarm; the front edge of the swarm has more bacteria than the back (Figure 4d\u2013f). Worms in the swarm consumed bacteria and the food continually diffused from the front edge toward the back. As the swarm grows, the gradient profile gradually extends into the swarming body with the average decay length of around \u03bb\u00a0~2\u20134 mm (Figure 4g\u2013h). \u03bb the characteristic length scale of the gradient profile can be simply defined by the bacterial diffusion coefficient (Db) and consumption rate (fb), \u03bb 2 =\u00a0Db/fb. This decay length defines the width of the swarm body. The small clusters show symmetric GFP distribution and do not form a gradient profile (Figure 4\u2014figure supplement 1d).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig4-v2.jpg)\n\n**Figure 4.:** (a, b, c) After the formation of patterns, animals locally consume bacteria which eventually increases the motility of animals. (b) Further, patterns merge and coarsen. (c) Consumption of food eventually results in the formation of a large aggregate which resembles the swarming body. Scale bar, 1 cm.\u00a0(d, e, f) Different stages of a swarming response observed during food search behavior in a dense population. (d) Worms accumulate around the lawn. Unlike isolated worms, diffused bacteria cause the worms to slow down and then the worms form a band around the edge of lawn which eventually converges to aggregates. (e) Small aggregates concentrate bacteria and further accumulate the incoming worms. Consumption and diffusion of bacteria from the lawn leads to a bacterial gradient within the aggregate. (f) Following the formation of a gradient, large aggregate gains motility. The swarm moves through the lawn until finishing the entire lawn and then dissociates. (g) Superposition image of swarming animals and GFP-labeled bacteria indicating the gradient formation across the swarm.\u00a0(h) A gradient profile gradually extends into the swarm at different time points.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Schematic of a cross-sectional view of the swarm with bacterial diffusion from the leading edge. The gradient profile of bacterial concentration develops across the swarming body. (b) The fluorescence image of the swarm is indicating bacterial concentration. (c) PIV signal measured across the swarm. The velocity of the worms increases towards the back. (d) Small clusters (blue arrows) show uniform GFP signal and do not form a gradient profile.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Small aggregates are merging to a large swarm body.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Red: Simulation, Blue: experimental and black: fits. Simulation results show universal growth dynamics with \u03b1\u00a0=\u00a00.32, experimentally measured domain sizes reach saturation around 2 mm. We measured the width of the clusters in the direction of swarming. The length of the swarming body is defined by the size of the bacterial lawn. This limit corresponds to the decay length of the bacteria in a large worm cluster.\n\n![Video 8.](https://cdn.elifesciences.org/articles/52781/elife-52781-video8.mp4.jpg)\n\n![Video 9.](https://cdn.elifesciences.org/articles/52781/elife-52781-video9.mp4.jpg)\n\n**Video 9.:** Bacterial depletion promotes coarsening and the emergence of swarming. This video is associated with\u00a0Figure 4.\n\nNext, we tested whether this concentration profile could change the activity of the animals. The activity of the animals increased towards the back which suggests that the animals crawling at the front edge encountered more bacteria than those at the back. To quantify the activity profile, we measured the mean velocity of animals using Particle Image Velocimetry (PIV) analysis. Indeed, the velocity increased toward the back (Figure 4\u2014figure supplement 1a\u2013c). This response is consistent with our V(O) curve where the animals perform off-food response. Without the availability of bacteria, animals start moving fast. On the whole, due to the balance between bacterial consumption and diffusion, swarm body gains motility and moves across the bacterial lawn (Figure 4\u2014figure supplement 2).\n\nSo far we have studied the interplay between oxygen levels and animal density. Our observations suggest that diffusion of bacteria on the lawn and swarm fluid is an essential factor and physical properties of the bacterial lawn could also play a significant role during pattern formation. To gain more understanding, we tested the responses of the animals on different biofilm-forming bacterial lawns. B. subtilis can form a biofilm which consists of an elongated chain of cells. Due to their long chaining structure, diffusibility of the bacteria could be relatively limited. We used GFP-labeled B. subtilis and overexpressed sinI protein (Yaman et al., 2019) to drive biofilm formation on regular NGM plates. Figure 5 shows the time evolution of animal accumulation on this chaining biofilm. Interestingly, as animals accumulate dark regions appear across the lawn. These regions indicate the bacteria depleted domains that eventually grow and form open holes (Video 10). The appearance of these holes triggered by local bacterial depletion which can be considered as noise in the concentration. These structures Tjhung et al., 2018 strongly resemble the noise-induced bubbly phase seperation (Tjhung et al., 2018) in active particles. In order to get more insights we tested the dynamics of holes in a swarming body moving on isolated E. coli lawn (OP50). Interestingly, on E. coli based swarm, holes gradually disappeared (Figure 5\u2014figure supplement 1). This difference suggests that the dynamics of holes depend on the physical properties of the bacterial lawn. This difference could be related to the reversal of Ostward process observed in active fluids (Tjhung et al., 2018). We leave the details of this process for future work. The na\u00efve explanation behind this process is that on biofilms the diffusibility of the bacteria decreases and could not compensate the local oxygen penetration which further promotes animal motility around these depleted domains.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig5-v2.jpg)\n\n**Figure 5.:** (a\u2013d) Snapshots of aggregating N2 animals on GFP labeled B. subtilis biofilm. Limited diffusibility of the chaining bacteria allows local bacterial depletion and oxygen penetration. An increase in the local oxygen concentration results in periodic hole structures by triggering the animals' motility.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Time evolution of hole structures on E. coli-based swarm body. Holes gradually shrink and disappear. b) The normalized area as a function of time.\n\n![Video 10.](https://cdn.elifesciences.org/articles/52781/elife-52781-video10.mp4.jpg)\n\n**Video 10.:** GFP-labeled bacteria show the concentrated and depleted regions. Depleted regions converge to periodic open holes. This video is associated with\u00a0Figure 5.\n\nAs a final step, we focused on the collective response of animals on pathogenic bacteria. It has been known that pathogenic bacteria Pseudomonas aeruginosa (PA14) trigger immune response and avoidance behavior in C. elegans (Reddy et al., 2011; Zhang et al., 2005). In order to analyze the collective dynamics, we first measured the V(O) curves of both N2 and npr-1 strains on the lawn formed by PA14. The responses of these strains are very different from the behaviors observed on regular OP50; N2 animals are always active on the lawn, on the other hand npr-1 shows a narrowed slowing down window between 3%\u00a0and\u00a05% oxygen (Figure 6a,c). Further, we tested their swarming behaviors in a dense population. As expected from the V(O) curves N2 does not swarm but npr-1 shows accumulation around the lawn (Figure 6\u2014video 1 and Figure 6\u2014video 2). Long-time lapse imaging experiments showed that the consumption of pathogenic bacteria is extremely slow which takes more than a day to finish the lawn completely.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig6-v2.jpg)\n\n**Figure 6.:** Oxygen-dependent motility of the laboratory strain N2\u00a0(a) and\u00a0(c) npr-1 on PA14. Error bar indicates the s.e.m.\u00a0=\u00a0\u00b1\u00a018 \u03bcm/s. Snapshots of distribution high-density animals N2 (b) and np1-1 (d) on PA14. For each experiment N\u00a0=\u00a025 individual animals were imaged.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52781/elife-52781-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Fluorescence image of a GFP-labeled PA14 biofilm lawn on a NGM plate. (b) The edge of the biofilm has a single layer, finger-like bacterial structures extending from the lawn.\n\nThe striking feature we observed in these experiments is the accumulation of N2 worms around the edge of the lawn (Figure 6\u2014video 1). Figure 6b shows these clusters. The most parsimonious hypothesis explaining this observation is that bacteria can diffuse from the biofilm lawn and form a thin layer of isolated bacteria which is sufficient to change the oxygen concentration in the liquid layer on NGM surface. Previous studies showed the instability of the edge of bacterial biofilms (Yaman et al., 2019; Semmler et al., 1999). Thus, pathogenic PA14 show substantial structural differences between biofilms and edges. The bacteria in the biofilm are tightly packed and attached to the extracellular polymeric substances (EPS) matrix, however around the edge they are motile, and they can disperse using their fimbriae. Further we used GFP-labeled PA14 and observed single layer finger-like structures around the lawn (Figure 6\u2014figure supplement 1). The width of this layer is about 1.6 mm for 3 days old PA14 bacterial lawn.\n\nIn contrast to N2, npr-1 animals form a large aggregate (Figure 6d). When we randomize the pattern and set the ambient oxygen to a higher level, we also observed transient clustering on the lawn (Figure 6\u2014video 2). This observation is consistent with our diffusion concept. Animals can initially concentrate the isolated bacteria available on the surface but eventually they cannot get enough bacteria from the biofilm to sustain the aggregation.\n\nFinally, in order to gain more information about the differences between OP50 and PA14, we imaged the dynamics of the bacteria around a single worm during locomotion. We observed that on the OP50 lawn, worms could concentrate the bacteria (Video 11). In contrast, on the PA14 biofilm animals only make a trench but do not concentrate the bacteria (Figure 6\u2014video 3). However, around the edge of the PA14 biofilm animals can concentrate the isolated bacteria (Figure 6\u2014video 4). Altogether these observations suggest that biofilm structure and diffusibility of the bacteria play essential roles during aggregation and pattern formation.\n\n![Video 11.](https://cdn.elifesciences.org/articles/52781/elife-52781-video11.mp4.jpg)\n\n**Video 11.:** Bacteria can diffuse and the worm accumulates the bacteria around the trench left behind.\n\n## Discussion\n\nThe dynamics of pattern formation in biological systems depend on many intricately related factors. The theory of pattern formation in active particles provides a powerful framework to explain the complex interactions between these factors (Cates et al., 2010; Liebchen and L\u00f6wen, 2018). Using Keller-Segel model (Keller and Segel, 1970; Wang, 2010) and motility-induced phase separation principles (Liu et al., 2016; Cates and Tailleur, 2015), this study throws light upon new physical and biological insights of this complex dynamics. We revealed four essential factors; First, hydrodynamic interactions between worms initiate the process of bacterial accumulation within the aggregates, which is the first, and a critical step in the pattern formation. Second, the oxygen-dependent motility of the animals controls the competition between aerotaxis and animal dispersion. This competition links the neuronal sensitivity to the collective response of the animals. Third, the population density can compensate for the neuronal sensitivity to convert the behavior of solitary animals to aggregation. Further, a gradient profile is formed across the aggregate due to the consumption of bacteria, which leads to the initiation of forward motility and swarming behavior. Finally, we observe that bacterial diffusibility and biofilm formation of the lawn strongly alter the collective dynamics of animals. Our results show that collective dynamics and pattern formation of C.\u00a0elegans is particularly driven by slowing down response of animals. Our work also raises the questions of how the activities of sensory neurons coordinate motility and slowing down response of worms. Particularly how head and tail neurons separately sense the oxygen levels and synchronize forward and backward locomotion. Moreover, the relation between slowing down response and pathogenic avoidance behavior should be investigated. Future experiments will help identify the details of the circuit dynamics controlling these behaviors. Altogether, experimental results and mathematical models of this study will shed light on understanding the complex dynamics of biological systems.\n\n## Materials and methods\n\n### Derivation of the mathematical model\n\nThe motion of worms is described as a random walk with oxygen-dependent speed of worms denoted by $VO$. Worms can change their direction at a rate of $\\tau$. The continuity equation reads as:\n\n$$\n\\frac{\\partialW}{\\partialt}=-\\nablaJ\n$$\n\nwhere $W$ is the density of worms and $J$ is the worm flux and given by the following expression:\n\n$$\nJ=-\\frac{VO}{n\\tau}\\nablaVOW\n$$\n\nn is the dimensionality and equals to 2 in our 2-D model. Substituting Equation 4 into Equation 3 leads to:\n\n$$\n\\frac{\u2202W}{\u2202t}=\u2212\u2207[\u2212\\frac{V(O)}{2\\tau}\u2207(V(O)W)]\n$$\n\n\n\n$$\n=\\frac{1}{2\\tau}\u2207[V^{2}\u2207W+VW\u2207V]\n$$\n\n\n\n$$\n=\\frac{1}{2\\tau}\u2207[V^{2}\u2207W+VW\\frac{\u2202V}{\u2202O}\u2207O]\n$$\n\n\n\n$$\n=\u2207[D_{W}\u2207W]+\u2207[\\betaW\u2207O]\n$$\n\nIn the equation above, $D_{W}=\\frac{V^{2}}{2\\tau}$ is worm diffusivity and $\\beta=\\frac{V}{2\\tau}\\frac{\\partialV}{\\partialO}$ is the aerotactic coupling coefficient. The oxygen kinematics can be controlled by three contributing factors. First, oxygen diffuses through the two-dimensional wet agar surface. The second is the penetration of the ambient oxygen from the air to the aggregate. The last contribution is the consumption of oxygen by worms and bacteria. Since the local density of worms and bacteria are linearly correlated as shown in Supplementary Figure 3b, the oxygen consumption can be described with the worm density. Hence, the following equation accounts for the oxygen dynamics on an agar surface:\n\n$$\n\\frac{\\partialO}{\\partialt}=D_{O}\\nabla^{2}O+fO_{am}-O-k_{c}W\n$$\n\nHere, $D_{O}$ is the diffusion coefficient of the oxygen on the surface, $f$ is the penetration rate of the oxygen from the air to the water, $O_{am}$ is the ambient oxygen level and $k_{c}$ is the rate of oxygen consumption by worms and bacteria. We ignore the distribution of the bacteria, since it is linearly correlated with the local worm density.\n\n### Linear stability analysis\n\nOur equations are:\n\n$$\n\\frac{\\partialW}{\\partialt}=\\nablaD_{W}\\nablaW+\\nabla\\betaW\\nablaO\n$$\n\n\n\n$$\n\\frac{\\partialO}{\\partialt}=D_{O}\\nabla^{2}O-k_{c}W+fO_{am}-O\n$$\n\nAt the homogeneous equilibrium state, where $W$ and $O$ are constant over time and space, we have the following solution:\n\n$$\nk_{c}W=fO_{am}-O\n$$\n\nWe denote the equilibrium state as:\n\n$$\nW_{eq},O_{eq}=W_{eq},O_{am}-\\frac{k_{c}}{f}W_{eq}\n$$\n\nThen we introduce small perturbations into this homogeneous equilibrium condition as follows:\n\n$$\nWx,t=W_{eq}+\u0394Wx,t\n$$\n\n\n\n$$\nOx,t=O_{eq}+\u0394Ox,t\n$$\n\nBy applying these variable replacements to Equation 10\u00a0and\u00a0Equation 11, we obtain\n\n$$\n\\frac{\u2202\u0394W}{\u2202t}=\\frac{\u2202}{\u2202x}[D_{W}\\frac{\u2202}{\u2202x}(W_{eq}+\u0394W)]+\\frac{\u2202}{\u2202x}[\\beta(W_{eq}+\u0394W)\\frac{\u2202}{\u2202x}(O_{am}\u2212\\frac{k_{c}}{f}W_{eq}+\u0394O)]\n$$\n\n\n\n$$\n=\\frac{\u2202}{\u2202x}[D_{W}\\frac{\u2202}{\u2202x}(\u0394W)]+\\frac{\u2202}{\u2202x}[\\beta(W_{eq}+\u0394W)\\frac{\u2202}{\u2202x}(\u0394O)]\n$$\n\n\n\n$$\n=\\frac{\u2202D_{W}}{\u2202x}\\frac{\u2202\u0394W}{\u2202x}+D_{W}\\frac{\u2202^{2}\u0394W}{\u2202x^{2}}+\\frac{\u2202\\beta}{\u2202x}W_{eq}\\frac{\u2202\u0394O}{\u2202x}+\\betaW_{eq}\\frac{\u2202^{2}\u0394O}{\u2202x^{2}}\n$$\n\n\n\n$$\n\\frac{\u2202\u0394O}{\u2202t}=D_{O}\\frac{\u2202^{2}}{\u2202x^{2}}(O_{am}\u2212\\frac{k_{c}}{f}W_{eq}+\u0394O)\u2212k_{c}(W_{eq}+\u0394W)+f(O_{am}\u2212(O_{am}\u2212\\frac{k_{c}}{f}W_{eq}+\u0394O))\n$$\n\n\n\n$$\n=D_{o}\\frac{\u2202^{2}\u0394O}{\u2202x^{2}}\u2212k_{c}\u0394W\u2212f\u0394O\n$$\n\nSecond-order terms in perturbations are neglected. We assume:\n\n$$\n\u0394Wx,t=\u0394Wtsin\u2061kx\n$$\n\n\n\n$$\n\u0394Ox,t=\u0394Otsin\u2061kx\n$$\n\nBy doing so, we have decoupled spatial structure and temporal dynamics. By definition, $D_{W}$ and $\\beta$\u00a0are:\n\n$$\nD_{W}=\\frac{V^{2}}{2\\tau}\n$$\n\n\n\n$$\n\\beta=\\frac{V}{2\\tau}\\frac{\\partialV}{\\partialO}\n$$\n\nTherefore, the partial derivatives of diffusivity and aerotactic coupling coefficient with respect to $x$\u00a0are:\n\n$$\n\\frac{\u2202D_{W}}{\u2202x}=\\frac{1}{2\\tau}2V\\frac{\u2202V}{\u2202x}\n$$\n\n\n\n$$\n=\\frac{V}{\\tau}\\frac{\u2202V}{\u2202O}\\frac{\u2202O}{\u2202x}\n$$\n\n\n\n$$\n\\frac{\u2202\\beta}{\u2202x}=\\frac{1}{2\\tau}(\\frac{\u2202V}{\u2202O}\\frac{\u2202V}{\u2202x}+V\\frac{\u2202}{\u2202x}(\\frac{\u2202V}{\u2202O}))\n$$\n\n\n\n$$\n=\\frac{1}{2\\tau}((\\frac{\u2202V}{\u2202O})^{2}\\frac{\u2202O}{\u2202x}+V\\frac{\u2202^{2}V}{\u2202O^{2}}\\frac{\u2202O}{\u2202x})\n$$\n\nIn terms of perturbations around the equilibrium, the equation (12) becomes:\n\n$$\n\\frac{\\partialD_{W}}{\\partialx}=\\frac{V}{\\tau}\\frac{\\partialV}{\\partialO}\\frac{\\partial\u0394O}{\\partialx}\n$$\n\n\n\n$$\n\\frac{\\partial\\beta}{\\partialx}=\\frac{1}{2\\tau}\\frac{\\partialV}{\\partialO}^{2}\\frac{\\partial\u0394O}{\\partialx}+V\\frac{\\partial^{2}V}{\\partialO^{2}}\\frac{\\partial\u0394O}{\\partialx}\n$$\n\nSince each term in the expressions of diffusivity and aerotactic coupling coefficient parameter is first order in small perturbations, their multiplication with another first-order term will be negligible. Therefore, we neglect all higher\u00a0order terms in Equation 18. Finally, these equations become:\n\n$$\nsin\u2061kx\\frac{\\partial\u0394W}{\\partialt}=-D_{W}k^{2}sin\u2061kx\u0394W-\\betaW_{eq}k^{2}sin\u2061kx\u0394O\n$$\n\n\n\n$$\n\\frac{\\partial\u0394W}{\\partialt}=-D_{W}k^{2}\u0394W-\\betaW_{eq}k^{2}\u0394O\n$$\n\n\n\n$$\nsin\u2061kx\\frac{\\partial\u0394O}{\\partialt}=-D_{O}k^{2}sin\u2061kx\u0394O-k_{c}sin\u2061kx\u0394W-fsin\u2061kx\u0394O\n$$\n\n\n\n$$\n\\frac{\\partial\u0394O}{\\partialt}=-D_{O}k^{2}\u0394O-k_{c}\u0394W-f\u0394O\n$$\n\nUsing a linear algebra notation:\n\n$$\n\\frac{\\partial}{\\partialt}\u0394W\u0394O=-D_{W}k^{2}-k_{c}-\\betaW_{eq}k^{2}-D_{O}k^{2}-f\u0394W\u0394O\n$$\n\nWe need to find the eigenvalues of the matrix at Equation 35 and check the signs of their real parts.\n\n$$\n-D_{W}k^{2}-\\lambda-\\betaW_{eq}k^{2}-k_{c}-D_{O}k^{2}-f-\\lambda=0\n$$\n\n\n\n$$\n-D_{W}k^{2}-\\lambda-D_{O}k^{2}-f-\\lambda-\\betaW_{eq}k^{2}k_{c}=0\n$$\n\n\n\n$$\n\\lambda^{2}+D_{W}k^{2}+D_{O}k^{2}+f\\lambda+D_{W}k^{2}D_{O}k^{2}+f-\\betaW_{eq}k^{2}k_{c}=0\n$$\n\n\n\n$$\n\\lambda=\\frac{1}{2}-D_{W}k^{2}+D_{O}k^{2}+f\\pm\\sqrt{D_{W}k^{2}+D_{O}k^{2}+f^{2}-4D_{W}k^{2}D_{O}k^{2}+f-\\betaW_{eq}k^{2}k_{c}}\n$$\n\nEigenvalue must be positive for an unstable condition. Since all the terms before\u00a0\u00b1 are negative, the square root term must be positive and sufficiently large in order to make the real part of the eigenvalue positive. Therefore, the condition for a positive real part is:\n\n$$\nD_{W}k^{2}+D_{O}k^{2}+f<\\sqrt{(D_{W}k^{2}+D_{O}k^{2}+f)^{2}\u22124(D_{W}k^{2}(D_{O}k^{2}+f)\u2212\\betaW_{eq}k^{2}k_{c})}\n$$\n\n\n\n$$\n(D_{W}k^{2}+D_{O}k^{2}+f)^{2}<(D_{W}k^{2}+D_{O}k^{2}+f)^{2}\u22124(D_{W}k^{2}(D_{O}k^{2}+f)\u2212\\betaW_{eq}k^{2}k_{c})\n$$\n\n\n\n$$\nD_{W}k^{2}(D_{O}k^{2}+f)<\\betaW_{eq}k^{2}k_{c}\n$$\n\nIf this inequality holds, the homogenous equilibrium state is unstable. By solving the inequality for $k^{2}$, we find:\n\n$$\n\\frac{W_{eq}\\betak_{c}}{D_{W}}\u2212f>D_{O}k^{2}\n$$\n\nSince $k^{2}$ and $D_{O}$ are positive, we get the following result for instability:\n\n$$\nW_{eq}\\betak_{c}>fD_{W}\n$$\n\n### Numerical solution\n\nWe used numerical methods to solve the coupled partial differential equations. To solve the equations in time and space, we used COMSOL Multiphysics, finite element methods and periodic boundary conditions in space. The coupled partial differential equations are implemented by using general form coupled differential equations:\n\n$$\n\\frac{\\partialW}{\\partialt}=\\nabla\\frac{V^{2}}{2\\tau}\\nablaW+\\frac{V}{2\\tau}\\frac{\\partialV}{\\partialO}W\\nablaO\n$$\n\n\n\n$$\n\\frac{\\partialO}{\\partialt}=D_{O}\\nabla^{2}O+fO_{am}-O-k_{c}W\n$$\n\nHere, we replaced the dispersion and aerotactic coupling coefficients with their definition. In our simulations, we used $V$ as a parabolic function of $O$ which has the following expression:\n\n$$\nV=aO^{2}+bO+c\n$$\n\nAt the beginning of the simulations, worms are uniformly distributed with additional noise. The parameters used in the simulations are given below. f and $k_{c}$ are chosen to acquire the width of experimentally observed domain boundaries and time dynamics. $D_{O}$,$D_{W},\\beta$, $W_{eq},O_{am}$ and velocity parameters are experimentally defined. Realistic worm densities and diffusion were measured by imaging the worms cluster by setting ambient oxygen to 0.\n\n### C. elegans strains\n\nStrains were grown and maintained under standard conditions unless indicated otherwise. All the strains were obtained from Caenorhabditis Genetics Center (CGC).\n\nStrain List: npr1 (DA609), npr1 (CX4148), gcy35 (AX1295), cat2 (CB1112), tph1 (MT15434), bas1 (MT7988), bas1 and cat4 (MT7983), tax2 (PR694), tax4 (PR678), tax2 and tax4 (BR5514), nsy1 (AWC off killed-CX4998), eat2 (DA465), mec4 (CB1611), mec10 (CB1515), osm9 (VC1262), trpa1 (RB1052), dig1 (MT2840), trp4 (VC1141), lite1 (ce314), daf19 and daf12 (JT6924), npr-1(ad609) X.\n\n### Swarming protocol\n\nNematode growth media (NGM) plates having a diameter of 9 cm were used for maintaining the worms. NGM plates were seeded with 1 ml of OP50 culture. After the worms consumed the bacteria, three NGM plates were washed with 1\u00a0\u00d7\u00a0M9 buffer and the wash was centrifuged twice at 2000 rpm for 30 s. Centrifugation was repeated (up to six times) until a clear supernatant was obtained. Since multiple centrifugation cycles might affect the activity of worms, the cycles subsequent to the first two cycles were carried out for 10 s at 2000 rpm. After cleaning the worms, a 150 \u00b5l worm droplet was put on a 6 cm plate seeded with 100 \u00b5l (0.5\u00a0\u00d7\u00a01 cm) of OP50 culture. The optimum swarming pattern was observed in 6-day-old plates and hence 6-day-old plates were used in all further experiments unless indicated otherwise. For NGM plates, M9 buffer preparation and worm synchronization were done based on the standard protocols given in the wormbook.\n\n### Oxygen control and measurements\n\nA plexiglass chamber was used to control the ambient [O2] (Figure 2\u2014figure supplement 4). A 50 sccm mixture of O2 and N2 was used and flow rates were controlled by a flow controller. [O2] was measured by using a normal oxygen sensor (PreSens, Microx TX3). During [O2] measurements the sensor probe should be inserted entirely into swarm fluid in order to read valid signals. The fiber optic sensor has a polymer coating and O2 can easily diffuse from the open air-exposing regions and can quench the fluorescence signal. During fiber optic removal, capillary meniscus around the fiber also affects the reading, we only read the ambient signal [O2] when the meniscus breaks.\n\nAt the beginning of the swarming experiments, the oxygen levels in the chamber were adjusted to 21%. After swarming was first observed, oxygen levels were sequentially decreased to 10%, 7%, 3%, and 1% at an interval of ten minutes. Then, oxygen levels were increased in reverse order. The experiments were recorded using Thorlabs DCC1545M CMOS camera with a Navitar 7000 TV zoom lens.\n",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "d65a7f47-c57d-4869-bc1f-32216759ec39",
+      "submission_id": "f1d692f1-8c8e-4bce-a1ab-895f60b62472",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sandeep Krishna, National Centre for Biological Sciences\u2010Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52781.sa1](https://doi.org/10.7554/eLife.52781.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe manuscript describes the rich phenomenology of swarming behavior of C. elegans worms on a bacterial lawn, forming Turing-like patterns under conditions of low density and oxygen. The study integrates a comprehensive array of experiments with a simple theory, which allows the authors to show that a combination of ambient [O2] and bacterial structure and diffusibility play \u200ecritical roles during this collective swarming behavior.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Dynamics of pattern formation and emergence of swarming in C. elegans\" for consideration by eLife. Your article has been reviewed by Aleksandra Walczak as the Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Alon Zaslaver (Reviewer #1), Vishwesha Guttal (Reviewer #2); Davide Marenduzzo (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll the reviewers have found the swarming behavior intriguing and interesting. However, they have raised some concerns about the interpretation of the observations. In particular, they have suggested some control experiments and additional analyses to rule out alternative explanations and probe the underlying assumptions you have made. Please address the comments in the three reviews attached below in your revision.\n\nReviewer #1:\n\nThe authors describe an interesting complex behavior of C. elegans worms as they collectively swarm \u200ethrough a bacterial food lawn: Initially, solitary worms reach the edge of the bacterial lawn and start to \u200epile up. The intricate concentrate of worms in the aggregate reduces [O2] and as a result worms remain \u200ein the aggregate. The accumulated pile of worms then gets motion once the worms consume the bacteria \u200ewithin the aggregate. The swarm moves along the lawn and consumes all the bacteria, after which the \u200eworms disperse. In sum, a combination of ambient [O2] and bacterial structure and diffusibility play \u200ecritical roles during this collective swarming behavior.\u200e\n\nParts of the data presented in this manuscript had been shown before (e.g, [O2] reduction within the \u200eworms' aggregate, the speed of various mutants across a wide range of [O2], and worm's [O2] \u200epreference; see for example: Gray\u2026 et al., 2004, and Rogers etal\u2026, 2006.\u200e\n\nYet, the authors herein put all these data, as well as additional supporting results and including a \u200emathematical model, in a nice comprehensive framework that describes this intriguing collective \u200ebehavior.\u200e\n\nEssential revisions:\u200e\n\n1) The authors interpret that worms' aggregate makes the bacteria more \u200econcentrated (Results section). The edge of the bacterial lawn is considerably thicker than the inside \u200eof the lawn, especially when using several-days old lawns, as described in this study. The \u200eworms therefore have much space to burrow into this thick border of bacteria and feed on them. \u200eThis by itself suppresses motion. Solitary worms reaching such edges also typically suppress \u200emotion and remain in the lawn periphery. Once this region is consumed, the worms, which are \u200ealready piled up to form an aggregate, continue swarming along the bacterial lawn. It may be that there is no need to \u200econcentrate the bacteria further to get the observed behavior as suggested.\u200e Could the authors comment on that or maybe discuss this as an alternative explanation?\n\n2) The assumption throughout the manuscript is that the bacteria deplete [O2] in the aggregate (for \u200eexample, Figure 1\u2014figure supplement 2). It could, however, be that the viscous solution of \u200ebacteria is poorly permeable to ambient O2. The authors can easily check if it is actually \u200ebacterial respiration that consumes all O2 by measuring O2 level in an aggregate consisted of dead \u200ebacteria (e.g. heat killed bacteria). This will help to support this claim.\n\n\u200e3)\u200e Figure 2B: not understood at all. Is the average speed of individual worms shown in the graph? \u200eThis is not indicated in the legend nor in the Materials and methods section. The green data points which indicate off-\u200efood, are they for the N2 or the npr-1 strain? Also, the legend says error bars are SEM, but no \u200eerror bars appear in the graph. Does this mean that the indicated 18% SEM hold for all data \u200epoints?\u200e\n\n\u200e4)\u200e Figure 3B: legend indicates of error bars but these are not presented. Also, does it show a \u200erepresentative measure or an average of several measurements?\u200e\n\n\u200e5)\u200e Results section: It is noted that glb-5 can form small clusters even at low densities, but no value is \u200egiven for these densities. How is this value compared to N2 and npr-1 worms? The change in \u200ecluster shown in Figure 3C regarding glb-5 different, is it statistically significant different from \u200ewhat is found in npr-1 and N2 worms? \u200e\n\n\u200e6)\u200e Substantial grammar, punctuation, and style revisions are required. Some parts of the manuscript \u200ewere very difficult to understand.\u200e\n\nReviewer #2:\n\nI really enjoyed reading the article on dynamic pattern formation and emergence of swarming in C. elegans. Authors conduct a remarkably comprehensive array of experiments which are exceptionally well matched with a simple theory that the authors develop/modify based on existing models of the literature. Authors show that C. elegans form Turing-like patterns under conditions of low density and oxygen conditions. Such integrative studies are rare, and hence authors deserve much appreciation for the rigour of the work and very fascinating results they have demonstrated. I am not an expert on C. elegans or its mechanisms of motility or swarming. So my review is broadly based on the novelty and comprehensiveness of the study.\n\nI do not have any major comments that I would like the authors to address. However, I am keen to know whether the local positive feedback + long-range inhibition (also called scale-dependent feedback), which is thought to be a fairly universal principle behind such regular Turing-like patterns, is also true in this system. I would appreciate if the authors comment on this aspect. One reference that may be useful in this context is the paper by Rietkerk and van de Koppel, 2008. Although this is written from the perspective of ecosystems and pattern formation, the broader principle of how scale-dependent feedbacks shape patterns will be relevant.\n\nI would also like to see a short discussion on potential alternative mechanisms that may explain these patterns, and also some future directions based on this work.\n\nReviewer #3:\n\nThe authors describe the pattern formation in a system with C. elegans on bacterial lawns or biofilms. They argue that the patterns form because motility decreases with oxygen so that motility-induced phase separation sets up. On top of this, bacteria are consumed by worms and this sets up a swarming behaviour at sufficiently late times. I think this work shows very interesting experiments and the videos are useful to understand the very rich phenomenology.\n\nThe main concern that I think should be addressed in full before publication is with the numerical simulation of the continuum model, which is based on a combination of Keller-Segal equations and motility-induced phase separation ideas. I think the overall motivation/basis of the modelling is sound, but it is unclear to me whether more than quite a qualitative comparison can be made. An important feature concerns coarsening, or macroscopic phase separation versus microphase separation. This is briefly discussed in Figure 5 and in some of the supplementary Videos it is shown that late-time behaviours feature patterns coarsening into a single swarming pattern. But this applies to experiments only and it is related according to the authors to bacteria consumption.\n\nIn the simulations, the times at which the various snapshots in Figure 2 and Figure 3 are shown is not specified. Presumably the times are all the same but it should be mentioned. If I understand correctly, from the dispersion relation it seems to me that in the simulations, which assume no bacterial consumption, there is still coarsening rather than microphase separation and the formation of multiple stable patterns as for instance in MIPS with logistic bacterial replication (Cates et al., 2010). Can the authors clarify whether this is the case? In other words, they should discuss the fate of the simulation patterns at late times. If all patterns coarsen, then it is important to motivate the choice of the intermediate times at which snapshots are shown (as, if this were the case, the end result would be in all cases complete phase separation). Related to this, I did not have the impression that the patterns would coarsen experimentally at timescales for which bacterial consumption becomes relevant. It would be good to comment on this as well.\n",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "327895fe-84e4-4d27-9760-1184f718d65c",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C1",
+      "claim": "Many animals collectively form complex patterns to tackle environmental difficulties.",
+      "claim_type": "EXPLICIT",
+      "source": "Many animals collectively form complex patterns to tackle environmental difficulties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by citations to other work in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "826c21f5-50f9-4929-b6b5-4e8df45e0dd9",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C2",
+      "claim": "Several biological and physical factors, such as animal motility, population densities, and chemical cues, play significant roles in pattern formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Several biological and physical factors, such as animal motility, population densities, and chemical cues, play significant roles in this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge and citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "bbec94bc-d93a-4143-be3f-6ad3e72fe6cf",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C3",
+      "claim": "When thousands of C. elegans gather on food, bacteria-mediated decrease in oxygen level slows down the animals and triggers motility-induced phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that when thousands of animals gather on food, bacteria-mediated decrease in oxygen level slows down the animals and triggers motility-induced phase separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "42af74d7-ca8a-48fc-a26e-c42a67974673",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C4",
+      "claim": "Three coupled factors\u2014bacterial accumulation, aerotaxis, and population density\u2014act together and control the entire dynamics of pattern formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Three coupled factors\u2014bacterial accumulation, aerotaxis, and population density\u2014act together and control the entire dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental observations and modeling throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "693ed358-6f02-42a9-8555-d4112e7e65d4",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C5",
+      "claim": "Biofilm-forming bacterial lawns including Bacillus subtilis and Pseudomonas aeruginosa strongly alter the collective dynamics due to the limited diffusibility of bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find that biofilm-forming bacterial lawns including Bacillus subtilis and Pseudomonas aeruginosa strongly alter the collective dynamics due to the limited diffusibility of bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by experimental data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "a2a9bd30-c72e-4c9f-9463-a5aa2c2c3f69",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C6",
+      "claim": "The theoretical model captures behavioral differences resulting from genetic variations and oxygen sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, our theoretical model captures behavioral differences resulting from genetic variations and oxygen sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mathematical model and simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "d08b86f7-faa7-4bf6-9658-c0ec87d71608",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C7",
+      "claim": "At high population density, animals tend to aggregate as animal-to-animal interactions cause instability in uniform distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "At high population density, animals tend to aggregate as animal-to-animal interactions cause instability in uniform distribution (Gregor et al., 2010; Buhl et al., 2006; Liu et al., 2016; Vicsek et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "f06ff16b-97f6-4d2e-8d89-6f60c11a0d57",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C8",
+      "claim": "C. elegans allows the use of sophisticated experimental tools and the results provide very precise information regarding the relation between genes, neural circuits, and behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Nematode Caenorhabditis elegans allows the use of sophisticated experimental tools and the results provide very precise information regarding the relation between genes, neural circuits, and behaviors (Bargmann and Marder, 2013; Gray et al., 2005; Chalasani et al., 2007; Calarco and Samuel, 2019; Kocabas et al., 2012; Lee et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on C. elegans as a model organism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "337fbc5c-4938-44b2-8508-c275b2579911",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C9",
+      "claim": "C. elegans shows a variety of collective responses including social feeding, starvation-induced clustering, hydrodynamic networking and collective swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans shows a variety of collective responses including, social feeding (de Bono and Bargmann, 1998; de Bono et al., 2002; Macosko et al., 2009; Coates and de Bono, 2002), starvation-induced clustering (Artyukhin et al., 2015), hydrodynamic networking (Sugi et al., 2019) and collective swimming (Yuan et al., 2014; Gray and Lissmann, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "e6ce7c5d-3b83-4c3f-9394-7d1d0690ebae",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C10",
+      "claim": "Oxygen sensitivity is the main source of variation in collective behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxygen sensitivity is particularly the main source of the variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and experimental data in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "4887e6c4-78fb-408b-9fa5-083f04002dda",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C11",
+      "claim": "Laboratory strain (N2) is known to be solitary nematode with a broad range of oxygen preference while natural isolates exhibit strong aggregation and sharp aerotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Laboratory strain (N2) is known to be solitary nematode with a broad range of oxygen preference while natural isolates exhibit strong aggregation and sharp aerotaxis (Rogers et al., 2006; Persson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "52ae7845-1517-4f53-86bc-83cb9bdbc0b9",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C12",
+      "claim": "Oxygen sensing, feeding and aggregation behavior are all intricately related in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, oxygen sensing, feeding and aggregation behavior are all intricately related in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and the experimental findings of the study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "00c7aefd-08e0-4f45-9ce1-1823f5719a40",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C13",
+      "claim": "Bacteria utilize oxygen for growth and C. elegans seeks low oxygen levels for locating the bacteria as a food source.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria utilize oxygen for growth and C. elegans seeks low oxygen levels for locating the bacteria as a food source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "2839f3f9-3556-481c-bc52-0e4a30e3d636",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C14",
+      "claim": "When thousands of N2 worms are forced to feed together, they form a huge aggregate that covers the entrance to the bacterial lawn.",
+      "claim_type": "EXPLICIT",
+      "source": "After reaching the lawn, they suddenly stopped and started accumulating (Figure 1a). As the worms accumulated, they formed a huge aggregate that covered the entrance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "34036282-a428-493c-a0f6-c09fbc22a403",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C15",
+      "claim": "The large aggregate of N2 worms gains motility and swarms across the lawn.",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually, this large aggregate gained motility and swarmed across the lawn (Figure 1a,b,c, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 1 and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "5e6defc4-0d94-4f57-b628-af3922def7fa",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C16",
+      "claim": "The swarming behavior of N2 at high densities is different from the previously reported solitary behavior of this strain.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation was quite different from the previously reported response of the reference strain N2 which generally behaves solitarily (de Bono and Bargmann, 1998; Gray et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with cited literature.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "8ee48448-7adb-4475-9f67-faa4c42d3bc8",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C17",
+      "claim": "Different mutant strains deficient in several sensing mechanisms and essential neuromodulators show similar aggregation and swarming responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we tested different mutant strains deficient in several sensing mechanisms and essential neuromodulators; we observed similar aggregation and swarming responses in a wide range of animals (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "e81f2814-a17a-40f1-88a5-313267e1a15b",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C18",
+      "claim": "Animals show a very rich collective response ranging from complex pattern formations to large scale swarming on various types of food sources.",
+      "claim_type": "EXPLICIT",
+      "source": "We also used various types of food sources including B. subtilis biofilm, filamentous bacteria, or extremely thick bacterial lawns. Surprisingly, animals showed a very rich collective response ranging from complex pattern formations to large scale swarming (Figure 1d,e,f, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 1d,e,f and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "fe4360e7-0df4-483f-abbb-29b373da70f6",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C19",
+      "claim": "The conditions observed in a dense population can broadly trigger the collective response in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results suggest that the conditions observed in a dense population can broadly trigger the collective response in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "b3fbb751-82b8-4c32-9e81-0c823a0d1c0b",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C20",
+      "claim": "The collective response only occurs on a bacterial lawn.",
+      "claim_type": "EXPLICIT",
+      "source": "This collective response only occurs on a bacterial lawn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "b400602d-25c0-43dc-8303-a4d0b1e4535f",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C21",
+      "claim": "Bacteria are concentrated within the aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse fluorescence microscopy revealed that the bacteria are concentrated within the aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 1f and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "f00afe5e-ede5-445a-8025-0466794a6c83",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C22",
+      "claim": "Bacterial accumulation promotes the collective behavior of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This bacterial accumulation further promotes the collective behavior of animals (Figure 1f, Figure 1\u2014figure supplement 3, Figure 1\u2014video 1; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "4237810f-56d4-4607-99dd-39d075cfdb3f",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C23",
+      "claim": "Following the accumulation of bacteria, the motility of animals is strongly suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the accumulation of bacteria, the motility of animals is strongly suppressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "0843c8a4-7282-4a2c-a251-4c9d65a4254d",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C24",
+      "claim": "Due to the capillary effect, the porous aggregate can hold more bacterial suspension.",
+      "claim_type": "EXPLICIT",
+      "source": "When animals form aggregates, the structure becomes porous. Thus, due to the capillary effect, the porous aggregate can hold more bacterial suspension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on physical principles and inference from observations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "1050b80a-0a00-4a26-9bb1-b26b98441953",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C25",
+      "claim": "Concentrated bacteria is the primary factor triggering the formation and the maintenance of the aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "We can conclude that concentrated bacteria is the primary factor triggering the formation and the maintenance of the aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "886a10cf-70b3-43b6-a376-c04e26e256b3",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C26",
+      "claim": "The oxygen level drops below 0.1% in the bacterial suspension.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the oxygen level drops below 0.1% in the bacterial suspension (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by oxygen measurements shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "2494bef1-d894-4b98-8e78-c25cd360719a",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C27",
+      "claim": "Similar oxygen depletion is found in the swarming body.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found similar depletion in [O2] in the swarming body (Figure 2a, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by oxygen measurements shown in Figure 2a and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "e74a2ded-0e94-4257-8563-60cb8636e4d4",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C28",
+      "claim": "Concentrated bacteria deplete oxygen in the swarming body.",
+      "claim_type": "EXPLICIT",
+      "source": "These results imply that concentrated bacteria deplete [O2] in the swarming body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the oxygen measurements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "f161a3e4-a2eb-4b27-91f3-d52201a719b0",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C29",
+      "claim": "Animals' bodies can extend on the surface of the swarm and they can get sufficient O2 from the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Although [O2] is very low, the animals' bodies can extend on the surface of the swarm and they can get sufficient O2 from the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cryo-SEM images and inference from observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "7cffa320-c455-44b9-b835-04ad828e9391",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C30",
+      "claim": "Wet agar surface can provide oxygen by lateral surface diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the ambient environment, wet agar surface can also provide oxygen by lateral surface diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on physical principles and supported by control experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "d864b493-1dd1-4cf8-9987-da85be3420fe",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C31",
+      "claim": "Covering the aggregate with a glass slide dissociates the swarm structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We independently validated these contributions by covering the aggregate with a glass slide and by using an agar chunk containing oxygen depleting chemical Na2SO3, (Figure 2\u2014figure supplement 2, Figure 1\u2014video 2 and Figure 1\u2014video 3 ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "41b6a321-55e6-4f0f-8e4d-0426213f7054",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C32",
+      "claim": "Na2SO3 based oxygen depletion on the agar surface can initiate aggregation behavior in the bacteria-free region.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed that Na2SO3 based oxygen depletion on the agar surface could initiate aggregation behavior in the bacteria-free region (Figure 1\u2014video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 1\u2014video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "f77b9f11-9ab5-4bb4-b855-dd8504583971",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C33",
+      "claim": "npr-1 worms do not form clusters on very thick bacterial lawns and they avoid extremely thick regions of the lawn.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested animals responses on a very thick bacterial lawn which can significantly decrease the oxygen level. We found that npr-1 worms did not form clusters on the thick bacterial lawn and they avoided extremely thick regions of the lawn (Figure 1\u2014video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 1\u2014video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "2d40023d-aef6-455d-a060-017634a0ecdd",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C34",
+      "claim": "Animals effectively experience the average O2 levels defined by the ambient environment and the swarm liquid.",
+      "claim_type": "EXPLICIT",
+      "source": "From these results, we can conclude that animals effectively experience the average O2 levels defined by the ambient environment and the swarm liquid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "41bec6a3-33a9-48fe-93f4-5d179e929856",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C35",
+      "claim": "Ambient oxygen levels and oxygen depletion are essential factors for aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, ambient oxygen levels and oxygen depletion are essential factors for aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "23729401-bf46-45ae-a3dd-6e274034ef96",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C36",
+      "claim": "Both npr-1 and N2 strains respond to very low oxygen by increasing their velocities, which triggers dispersive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Both strains responded to very low [O2] by increasing their velocities, which mainly triggers dispersive behavior (Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by velocity measurements shown in Figure 2b and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "111c6d47-f02a-4e5f-b0c8-4a8dfd6b020b",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C37",
+      "claim": "npr-1 suppresses its motility around intermediate oxygen levels (7\u201310%) and shows a sharp response when oxygen levels exceed 15%.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, npr-1 suppressed its motility around intermediate oxygen levels (7\u201310%) and showed a sharp response when oxygen levels exceeded 15%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by velocity measurements shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "eb9fd9f9-4e92-4650-a092-a4903f480695",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C38",
+      "claim": "N2 suppresses its motility in a broader range of oxygen levels, but their velocity slowly increases as oxygen reaches 21% or more.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, N2 suppressed its motility in more broader range of oxygen levels, but their velocity slowly increased as [O2] reached 21% or more.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by velocity measurements shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "693f2546-0add-4ac6-a1a4-db43ef8b9d58",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C39",
+      "claim": "The differences in oxygen response between npr-1 and N2 appear to originate from the sensitivity of the oxygen-sensing neurons URX, AQR and PQR.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences appear to be originating from the sensitivity of the oxygen-sensing neurons URX, AQR and PQR that shape the overall oxygen preferences of the animals (Oda et al., 2017; Busch et al., 2012; Zimmer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on oxygen-sensing neurons.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "44d6dd5a-1106-4444-94df-e662a408091c",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C40",
+      "claim": "N2 shows a weaker aerotactic response than npr-1, thus they have a broader range of oxygen preference.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both npr-1 and N2 perform aerotaxis at 7\u201310% oxygen, N2 shows a weaker aerotactic response, thus, they have a broader range of oxygen preference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by velocity measurements shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "aa6aa6c5-9ea7-48c6-9274-bb2c41558968",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C41",
+      "claim": "Critical features of the strains can be extracted from oxygen-dependent response curve V(O) which is directly related to neuronal sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "All these critical features of the strains can be extracted from oxygen-dependent response curve V(O) which is directly related to neuronal sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data and modeling.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "3b042b10-a83c-46f0-ae46-256254d50d0b",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C42",
+      "claim": "Motility suppression behavior has been observed in a variety of organisms ranging from bacteria to mussels.",
+      "claim_type": "EXPLICIT",
+      "source": "Motility suppression behavior has been observed in a variety of organisms ranging from bacteria to mussels (Cates and Tailleur, 2015; Cates et al., 2010; Liu et al., 2013; Liu et al., 2014; Dervaux et al., 2017; Liu et al., 2011; Garfinkel et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "41e38705-7186-472f-a50f-2ef663d16239",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C43",
+      "claim": "In C. elegans, indirect density-dependent suppression is observed where the presence of bacteria results in oxygen depletion and motility suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in C. elegans we observed indirect density-dependent suppression. Without bacteria, animals move fast (Figure 2b). In striking contrast, the presence of bacteria results in oxygen depletion and motility suppression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "da87a604-efc1-40bd-883e-e88aa3d220b6",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C44",
+      "claim": "The dynamics of oxygen, bacterial concentration and animal motility are the essential physical factors controlling the collective behaviors of C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that in the dynamics of oxygen, bacterial concentration and animal motility are the essential physical factors controlling the collective behaviors of C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "45fedbe8-d230-47a2-b2f5-d60be452e309",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C45",
+      "claim": "The mathematical model uses Keller-Segel like equations with both nonlinear diffusion and chemotactic sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "These are the Keller-Segel like equations (Keller and Segel, 1970; Wang, 2010) with both, nonlinear diffusion and chemotactic sensitivity (Materials and methods);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mathematical derivation in the Materials and methods section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "18e1a5a4-cf95-4624-a2bd-53fb607f45cc",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C47",
+      "claim": "Population density and aerotactic response favor instability; however, dispersion of animals opposes it.",
+      "claim_type": "EXPLICIT",
+      "source": "This criterion suggests that population density and aerotactic response favor instability; however, dispersion of animals opposes it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the instability criterion derived from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "313b9e91-4f7e-40e2-a4ee-f34b6db69c08",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C48",
+      "claim": "Simulations predict the formation of uniform distribution, dots, stripes, and holes depending on the density.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify these conditions, we performed simulations by tuning initial worm density. Depending on the density, we observed the formation of uniform distribution, dots, stripes, and holes (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation results shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "976bd97a-ec75-4ad6-bf52-0e5369778edb",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C49",
+      "claim": "Under low aerotactic response, the increase in population density can complement the instability criteria and give rise to pattern formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations also predict that under low aerotactic response, the increase in population density could complement the instability criteria and give rise to pattern formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "3c305e1e-62b2-494d-9014-60513a43ea62",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C50",
+      "claim": "N2 forms stripes and hole-like patterns only at high population density.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested this hypothesis experimentally (Figure 2e and f, Videos 5 and 6) and found that N2 forms stripes and hole-like patterns only at high population density",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 2e and Videos 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "753ea9a7-4e11-4867-9274-574114c83649",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C51",
+      "claim": "npr-1 can form small aggregation patterns even at low density.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas npr-1 could form small aggregation patterns even at a low density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 2f and Videos 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "6ded6685-30df-4a25-8661-2e92ea47927a",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C52",
+      "claim": "The onset of pattern formation can be controlled by tuning the ambient oxygen levels at a fixed population density.",
+      "claim_type": "EXPLICIT",
+      "source": "Ambient oxygen is the second experimentally controllable factor driving the dynamics of the system. The onset of the pattern formation can be controlled by tuning the ambient oxygen levels at a fixed population density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "fdf7eb7b-c801-431a-ae73-3212b9e8e36d",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C53",
+      "claim": "Aggregates respond to decreasing O2 level by increasing their surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "We started the experiment at 21% O2 and sequentially decreased the [O2] to 1%. We observed that the aggregates respond to decreasing O2 level by increasing their surface area (Figure 3a, Figure 3\u2014figure supplement 1, Video 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 3a, Figure 3\u2014figure supplement 1, and Video 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "066ccd47-43ee-445d-b6a1-aa69e5fb86be",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C54",
+      "claim": "Oxygen concentration in the aggregate remains low until ambient oxygen reaches 7%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, [O2] in the aggregate remained low until it reached 7% (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by oxygen measurements shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "73ef8c19-6730-45fd-8d5f-e6901d530ada",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C55",
+      "claim": "At 1% ambient oxygen, the pattern becomes very porous and oxygen directly leaks into the fiber sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "Below this level, the pattern became very porous and oxygen would directly leak into the fiber sensor which led to small fluctuations in readings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the oxygen measurement experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "fef98bcf-004a-42ce-bcd7-b4e64700d752",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C56",
+      "claim": "At 1% ambient oxygen, the patterns are completely randomized by increasing motility and reversing aerotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the [O2] at 1% completely randomized the patterns by increasing motility and reversing aerotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "b417b7e1-6ce1-4201-acfd-096ccb463e92",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C57",
+      "claim": "Increasing ambient oxygen after randomization results in similar stripe and hole patterns across the region.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we increased the [O2] which resulted in similar stripe and hole patterns across the region (Figure 3c, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 3c and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "68606fe7-12d9-461c-bc9e-8e66bc9518af",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C58",
+      "claim": "Patterns formed by N2 strain do not change significantly during oxygen scans.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that patterns formed by N2 strain did not change significantly during oxygen scans (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "e74c70f3-5d7e-4f83-8cf0-bfb456bdad79",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C59",
+      "claim": "In two-dimensional parameter space, the onset of dot, stripe and hole patterns is observed around the zone bounded by high and low uniform animal densities.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the instability criterion, in two-dimensional parameter space, the onset of dot, stripe and hole patterns is observed around the zone bounded by high and low uniform animal densities (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation and experimental results shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "40f1d05a-dffb-4d8c-984c-6c3f026cfb58",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C60",
+      "claim": "An increase in worm density or a decrease in ambient oxygen levels transforms the dot-shaped structure to stripe and hole patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in worm density or a decrease in ambient oxygen levels transforms the dot-shaped structure to stripe and hole patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation and experimental results shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "135d0fd5-eca1-4887-8bfe-99afe22d1dff",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C61",
+      "claim": "Time-lapse imaging and simulation results validate the coarsening of characteristic domain size.",
+      "claim_type": "EXPLICIT",
+      "source": "Our time-lapse imaging and simulation results validate the coarsening of characteristic domain size (Bray, 1994; Figure 4a\u2013c, Figure 4\u2014figure supplement 3, Videos 8,9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental and simulation data shown in Figure 4a\u2013c, Figure 4\u2014figure supplement 3, and Videos 8 and 9.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "8676448a-7621-44c8-93a8-cbe7cd0524b8",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C62",
+      "claim": "In later stages, patterns merge and form a large cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "In later stages, patterns merge and form a large cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "4afb9c74-d0f3-46d2-b294-022262f7c9f8",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C63",
+      "claim": "The width of the cluster reaches saturation before they dissociate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, unlike simulation the width of the of the cluster reaches saturation before they dissociate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "cf9518f4-9aed-48a8-9bd0-378ffb04edcb",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C64",
+      "claim": "The consumption of bacteria is significant within the cluster and may limit the growth of the clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that, in our case, the consumption of bacteria is significant within the cluster and may limit the growth of the clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "0cede64a-81d0-429b-ad31-c5072a9a7a84",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C65",
+      "claim": "The front edge of the swarm has more bacteria than the back.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP signal revealed different bacterial concentrations across the swarm; the front edge of the swarm has more bacteria than the back (Figure 4d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging shown in Figure 4d\u2013f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "c3982e5b-16af-4e47-8ae5-3fa8485dce9b",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C66",
+      "claim": "As the swarm grows, the gradient profile gradually extends into the swarming body with the average decay length of around \u03bb ~2\u20134 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "As the swarm grows, the gradient profile gradually extends into the swarming body with the average decay length of around \u03bb ~2\u20134 mm (Figure 4g\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental measurements shown in Figure 4g\u2013h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "d1a35f12-9a46-4c09-84d5-9689b1f28825",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C67",
+      "claim": "The decay length \u03bb defines the width of the swarm body.",
+      "claim_type": "EXPLICIT",
+      "source": "This decay length defines the width of the swarm body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "76b9d92d-fff4-40b9-b2e4-4fd941c960a0",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C68",
+      "claim": "Small clusters show symmetric GFP distribution and do not form a gradient profile.",
+      "claim_type": "EXPLICIT",
+      "source": "The small clusters show symmetric GFP distribution and do not form a gradient profile (Figure 4\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 4\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "9a1e31c5-6ac1-4257-b326-6deb454368c8",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C69",
+      "claim": "The velocity of the worms increases towards the back of the swarm.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify the activity profile, we measured the mean velocity of animals using Particle Image Velocimetry (PIV) analysis. Indeed, the velocity increased toward the back (Figure 4\u2014figure supplement 1a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PIV analysis shown in Figure 4\u2014figure supplement 1a\u2013c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "d4965104-5d95-4973-acbc-8667236049a0",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C70",
+      "claim": "Due to the balance between bacterial consumption and diffusion, swarm body gains motility and moves across the bacterial lawn.",
+      "claim_type": "EXPLICIT",
+      "source": "On the whole, due to the balance between bacterial consumption and diffusion, swarm body gains motility and moves across the bacterial lawn (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from experimental observations shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "b92d3454-93c2-4bdc-8b38-c922e4478d87",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C71",
+      "claim": "Physical properties of the bacterial lawn play a significant role during pattern formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations suggest that diffusion of bacteria on the lawn and swarm fluid is an essential factor and physical properties of the bacterial lawn could also play a significant role during pattern formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "460da2e1-d9fe-4b61-9729-4787bbcc1f2b",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C72",
+      "claim": "On B. subtilis biofilm, dark regions appear across the lawn as animals accumulate, indicating bacteria depleted domains that eventually grow and form open holes.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5 shows the time evolution of animal accumulation on this chaining biofilm. Interestingly, as animals accumulate dark regions appear across the lawn. These regions indicate the bacteria depleted domains that eventually grow and form open holes (Video 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 5 and Video 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "0400b336-55e1-4aab-8736-7a58c4de9578",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C73",
+      "claim": "The appearance of holes on biofilms is triggered by local bacterial depletion which can be considered as noise in the concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of these holes triggered by local bacterial depletion which can be considered as noise in the concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "1438718b-852d-4327-8411-b952495b0936",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C74",
+      "claim": "On E. coli based swarm, holes gradually disappear.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to get more insights we tested the dynamics of holes in a swarming body moving on isolated E. coli lawn (OP50). Interestingly, on E. coli based swarm, holes gradually disappeared (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "74304765-64cb-4b4e-b52e-8550ab6df2ad",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C75",
+      "claim": "The dynamics of holes depend on the physical properties of the bacterial lawn.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference suggests that the dynamics of holes depend on the physical properties of the bacterial lawn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing observations on different bacterial lawns.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "dae9e7a4-bbfc-443f-8781-761c25d5c28e",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C76",
+      "claim": "On biofilms, the diffusibility of the bacteria decreases and cannot compensate the local oxygen penetration which further promotes animal motility around these depleted domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The na\u00efve explanation behind this process is that on biofilms the diffusibility of the bacteria decreases and could not compensate the local oxygen penetration which further promotes animal motility around these depleted domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation based on observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "f1d6676b-6fe6-467b-a4b7-78fba81b75b7",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C77",
+      "claim": "The responses of N2 and npr-1 strains on PA14 are very different from the behaviors observed on regular OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to analyze the collective dynamics, we first measured the V(O) curves of both N2 and npr-1 strains on the lawn formed by PA14. The responses of these strains are very different from the behaviors observed on regular OP50; N2 animals are always active on the lawn, on the other hand npr-1 shows a narrowed slowing down window between 3% and 5% oxygen (Figure 6a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by velocity measurements shown in Figure 6a,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "7629fb7c-23ac-4a01-be4c-fbd3f8a9aca2",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C78",
+      "claim": "N2 does not swarm on PA14 but npr-1 shows accumulation around the lawn.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we tested their swarming behaviors in a dense population. As expected from the V(O) curves N2 does not swarm but npr-1 shows accumulation around the lawn (Figure 6\u2014video 1 and Figure 6\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 6\u2014video 1 and Figure 6\u2014video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "51956dc0-30fc-4846-89e6-1769e08ee024",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C79",
+      "claim": "The consumption of pathogenic bacteria PA14 is extremely slow which takes more than a day to finish the lawn completely.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-time lapse imaging experiments showed that the consumption of pathogenic bacteria is extremely slow which takes more than a day to finish the lawn completely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "068b9bde-7c8a-481b-9ecf-791e6fd14938",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C80",
+      "claim": "N2 worms accumulate around the edge of the PA14 lawn.",
+      "claim_type": "EXPLICIT",
+      "source": "The striking feature we observed in these experiments is the accumulation of N2 worms around the edge of the lawn (Figure 6\u2014video 1). Figure 6b shows these clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 6b and Figure 6\u2014video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "2936dd53-3678-431d-9ac0-486c8246efc2",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C81",
+      "claim": "Bacteria can diffuse from the PA14 biofilm lawn and form a thin layer of isolated bacteria which is sufficient to change the oxygen concentration in the liquid layer on NGM surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The most parsimonious hypothesis explaining this observation is that bacteria can diffuse from the biofilm lawn and form a thin layer of isolated bacteria which is sufficient to change the oxygen concentration in the liquid layer on NGM surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "1cc7ed74-57c6-462f-a8ba-2f1995bd0990",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C82",
+      "claim": "PA14 shows substantial structural differences between biofilms and edges.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed the instability of the edge of bacterial biofilms (Yaman et al., 2019; Semmler et al., 1999). Thus, pathogenic PA14 show substantial structural differences between biofilms and edges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "f3b20d4c-4574-4c47-8c9e-e0ddebe293f4",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C83",
+      "claim": "The bacteria in the PA14 biofilm are tightly packed and attached to the extracellular polymeric substances (EPS) matrix, however around the edge they are motile, and they can disperse using their fimbriae.",
+      "claim_type": "EXPLICIT",
+      "source": "The bacteria in the biofilm are tightly packed and attached to the extracellular polymeric substances (EPS) matrix, however around the edge they are motile, and they can disperse using their fimbriae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of bacterial biofilms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "41e86043-eef4-4972-a7a4-d8ade47e4296",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C84",
+      "claim": "GFP-labeled PA14 shows single layer finger-like structures around the lawn with a width of about 1.6 mm for 3 days old PA14 bacterial lawn.",
+      "claim_type": "EXPLICIT",
+      "source": "Further we used GFP-labeled PA14 and observed single layer finger-like structures around the lawn (Figure 6\u2014figure supplement 1). The width of this layer is about 1.6 mm for 3 days old PA14 bacterial lawn.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "e82ef74f-6ebc-44d1-b1c4-3baa097b8fdc",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C85",
+      "claim": "On the OP50 lawn, worms can concentrate the bacteria during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that on the OP50 lawn, worms could concentrate the bacteria (Video 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Video 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "a3b29d3a-987f-4568-b0e6-03986d8253a8",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C86",
+      "claim": "On the PA14 biofilm, animals only make a trench but do not concentrate the bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, on the PA14 biofilm animals only make a trench but do not concentrate the bacteria (Figure 6\u2014video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 6\u2014video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "883e9186-81e6-42c2-933a-b8b132c3efd4",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C87",
+      "claim": "Around the edge of the PA14 biofilm, animals can concentrate the isolated bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "However, around the edge of the PA14 biofilm animals can concentrate the isolated bacteria (Figure 6\u2014video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 6\u2014video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "0e91be15-664d-4cb7-bc3a-5717fa0ce62f",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C88",
+      "claim": "Biofilm structure and diffusibility of the bacteria play essential roles during aggregation and pattern formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether these observations suggest that biofilm structure and diffusibility of the bacteria play essential roles during aggregation and pattern formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "cfdf5be9-bc13-4549-a3d1-e659abacf9a7",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C89",
+      "claim": "Hydrodynamic interactions between worms initiate the process of bacterial accumulation within the aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "We revealed four essential factors; First, hydrodynamic interactions between worms initiate the process of bacterial accumulation within the aggregates, which is the first, and a critical step in the pattern formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "a6360d40-a15e-4d4f-80cb-375e3bf7a7bf",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C90",
+      "claim": "The oxygen-dependent motility of the animals controls the competition between aerotaxis and animal dispersion.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the oxygen-dependent motility of the animals controls the competition between aerotaxis and animal dispersion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "bc0e0773-2c94-4569-a7d3-e949d8309bc3",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C91",
+      "claim": "The competition between aerotaxis and animal dispersion links the neuronal sensitivity to the collective response of the animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This competition links the neuronal sensitivity to the collective response of the animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "cf9f8a3f-1074-44c6-9163-22a5b7141acb",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C92",
+      "claim": "The population density can compensate for the neuronal sensitivity to convert the behavior of solitary animals to aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the population density can compensate for the neuronal sensitivity to convert the behavior of solitary animals to aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "cf687fa3-a332-4497-af22-69ba50b39f91",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C93",
+      "claim": "A gradient profile is formed across the aggregate due to the consumption of bacteria, which leads to the initiation of forward motility and swarming behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a gradient profile is formed across the aggregate due to the consumption of bacteria, which leads to the initiation of forward motility and swarming behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "db33fd0e-8727-48fe-acb0-81164b740d7b",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C94",
+      "claim": "Bacterial diffusibility and biofilm formation of the lawn strongly alter the collective dynamics of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observe that bacterial diffusibility and biofilm formation of the lawn strongly alter the collective dynamics of animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "7ac3865a-18f9-4cb9-8350-c46420b2a11a",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "claim_id": "C95",
+      "claim": "Collective dynamics and pattern formation of C. elegans is particularly driven by slowing down response of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that collective dynamics and pattern formation of C. elegans is particularly driven by slowing down response of animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "68b672f4-1626-4571-805e-e627a321c728",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study demonstrates that bacteria-mediated oxygen depletion triggers motility-induced phase separation in C. elegans. When thousands of worms gather on food, bacteria accumulate within aggregates via capillary effects, depleting oxygen to below 0.1%, which suppresses animal motility and promotes aggregation. Three coupled factors\u2014bacterial accumulation, aerotaxis, and population density\u2014control the entire dynamics of pattern formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C20-C28, C35, and C44 collectively provide strong experimental evidence for the core mechanism. Oxygen measurements (C26-C27), fluorescence microscopy of bacterial accumulation (C21-C22), motility suppression observations (C23), and control experiments with oxygen depletion (C31-C32) converge to support this central finding. The capillary effect explanation (C24) is physically sound and the conclusion about three coupled factors (C4, C44) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "e3282b48-f4e8-405c-b3f8-ae8355eec84f",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study characterizes oxygen-dependent motility responses V(O) for N2 and npr-1 strains, revealing that npr-1 shows sharp aerotactic response with motility suppression at 7-10% oxygen, while N2 exhibits broader oxygen preference with weaker aerotactic response. These differences originate from the sensitivity of oxygen-sensing neurons URX, AQR, and PQR, and the V(O) curve directly relates neuronal sensitivity to collective behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 and C43 are well-supported by velocity measurements shown in Figure 2b and Video 4. The characterization of strain-specific oxygen responses is quantitative and reproducible. The attribution to specific oxygen-sensing neurons (C39) is supported by citations to prior work. The concept of indirect density-dependent suppression (C43) is a novel insight well-supported by the data comparing on-food vs off-food responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "a6455a3e-dd68-4902-8d37-557bfc2fe595",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A mathematical model based on Keller-Segel equations with nonlinear diffusion and chemotactic sensitivity predicts that population density and aerotactic response favor instability while dispersion opposes it. Simulations predict formation of dots, stripes, and holes depending on density, which is experimentally validated: N2 forms patterns only at high density while npr-1 forms patterns even at low density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 demonstrate strong agreement between theoretical predictions and experimental observations. The instability criterion (C47) is mathematically derived, simulations (C48) show predicted patterns, and experimental validation (C50-C51) confirms the density-dependent pattern formation in both strains. The model successfully captures the key difference between N2 and npr-1 strains based on their aerotactic responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "13a19d5c-586f-4c4a-a1d9-6982f6286485",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ambient oxygen levels control pattern formation onset at fixed population density. Aggregates respond to decreasing oxygen by increasing surface area, with internal oxygen remaining low until ambient oxygen reaches 7%. In two-dimensional parameter space (density vs. oxygen), pattern formation occurs in a zone bounded by uniform distributions, with increasing density or decreasing oxygen transforming dots to stripes to holes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C60 are well-supported by systematic oxygen manipulation experiments shown in Figure 3. The oxygen measurements (C54) are quantitative, the pattern transitions (C53, C56-C57) are documented with imaging, and the two-dimensional parameter space analysis (C59-C60) shows good agreement between simulations and experiments. The observation that N2 patterns don't change significantly (C58) is consistent with their broader oxygen preference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "75a3c1e9-0a23-4736-b306-e0a4bbf600da",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pattern coarsening leads to formation of large clusters with bacterial concentration gradients. The front edge has more bacteria than the back, creating a gradient with decay length \u03bb ~2-4 mm that defines swarm width. This gradient increases animal velocity toward the back, and the balance between bacterial consumption and diffusion enables swarm motility across the lawn.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C70 and C93 are supported by time-lapse imaging, fluorescence microscopy of GFP-bacteria (C65-C66), and PIV analysis (C69). The coarsening dynamics (C61) are validated by both simulation and experiment. The saturation of cluster width (C63) differs from simulations, which the authors attribute to bacterial consumption (C64)\u2014a reasonable inference. The gradient profile measurements (C66) are quantitative and the decay length concept (C67) is physically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "d5bfb56a-14a7-4223-a377-a7a5e2061ec9",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Biofilm-forming bacterial lawns (B. subtilis and P. aeruginosa) strongly alter collective dynamics due to limited bacterial diffusibility. On B. subtilis biofilms, bacteria-depleted domains form holes that grow, while on E. coli lawns holes disappear. The physical properties of the bacterial lawn, particularly diffusibility and biofilm structure, play essential roles in pattern formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C71-C76, C88, and C94 are supported by comparative experiments on different bacterial lawns shown in Figures 5-6. The observation of persistent holes on biofilms vs. disappearing holes on E. coli (C72-C74) is well-documented. However, the mechanistic explanation (C76) is acknowledged as speculative ('na\u00efve explanation'). The overall conclusion about the importance of bacterial diffusibility (C88, C94) is well-supported by the contrasting behaviors observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "56d07cf0-70af-4e7a-9651-803c84971778",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "On pathogenic P. aeruginosa PA14, N2 and npr-1 show different responses than on OP50. N2 remains active and accumulates at lawn edges where bacteria diffuse from the biofilm, while npr-1 shows narrowed slowing response and accumulation around the lawn. Worms can concentrate isolated bacteria at biofilm edges but not within the tightly-packed biofilm itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C87 are supported by V(O) measurements on PA14 (Figure 6a,c), behavioral observations (C78, C80), and fluorescence imaging of GFP-PA14 showing finger-like structures (C84). The hypothesis about bacterial diffusion from biofilm edges (C81) is reasonable but acknowledged as speculative ('most parsimonious hypothesis'). The differential ability to concentrate bacteria (C85-C87) is directly observed in videos. The structural differences between biofilm and edges (C82-C83) are supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "573305d0-78e7-40a1-a419-23625d935ee2",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "At high densities, N2 worms form large aggregates at bacterial lawn entrances that gain motility and swarm across the lawn. This swarming behavior differs from previously reported solitary behavior of N2. Multiple mutant strains and various food sources show similar collective responses, suggesting that high-density conditions broadly trigger collective behavior in C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 are well-supported by experimental observations in Figure 1 and Videos 1-2. The swarming behavior is clearly documented with imaging and cryo-SEM (C14-C15). The comparison with prior literature (C16) is appropriate. Testing multiple mutants (C17) and food sources (C18) strengthens the generality of the finding. The conclusion about broad triggering (C19) is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "a3abc9b5-3638-48d2-885e-0fc5113bd625",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The theoretical model based on Keller-Segel equations captures behavioral differences resulting from genetic variations and oxygen sensitivity between strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C45 are supported by the mathematical model derivation and simulations that successfully predict strain-specific behaviors. The model incorporates experimentally measured V(O) curves and reproduces the observed differences between N2 and npr-1 in pattern formation across different densities and oxygen levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "ca68cca6-7176-4435-873f-d9ab64cbc865",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Animals experience average oxygen levels from both ambient environment and swarm liquid. Worms can access oxygen from the air via body extension on swarm surface and from lateral diffusion through wet agar. Control experiments with glass slides and Na2SO3 validate these oxygen sources, and oxygen depletion alone can initiate aggregation in bacteria-free regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 are supported by cryo-SEM images (C29), control experiments shown in Figure 2\u2014figure supplement 2 (C31-C32), and observations with thick bacterial lawns (C33). The physical reasoning about oxygen sources (C30) is sound. The Na2SO3 experiment (C32) provides strong evidence that oxygen depletion alone is sufficient for aggregation. The conclusion about average oxygen experience (C34) is a reasonable inference from the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "0637b53c-ea9c-4d96-bc6e-e2dc6028ddc7",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study identifies four essential factors controlling pattern formation: (1) hydrodynamic interactions initiate bacterial accumulation, (2) oxygen-dependent motility controls competition between aerotaxis and dispersion, linking neuronal sensitivity to collective response, (3) population density compensates for neuronal sensitivity to convert solitary behavior to aggregation, and (4) collective dynamics is driven by slowing-down response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 and C95 represent the main conclusions synthesizing the study's findings. These are well-supported by the collective evidence from experiments and modeling. Each factor is individually validated: bacterial accumulation (C21-C25), oxygen-dependent motility (C36-C41), density effects (C50-C51), and slowing response (C23, C43). The integration of these factors into a coherent framework is a key contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    },
+    {
+      "id": "3bbb5968-8ea3-4742-87b4-d28138f6b5ed",
+      "content_id": "b11b01bf-5844-4508-9d2e-9f8573164613",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background context establishing that animals form complex patterns through various factors, C. elegans is a suitable model organism with known collective behaviors, and oxygen sensitivity is a main source of variation in these behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C13, and C42 provide background context supported by citations to established literature. These claims accurately represent prior knowledge in the field and appropriately set up the motivation for the current study. The characterization of C. elegans as a model system (C8) and the role of oxygen sensitivity (C10-C11) are well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:41.717064Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bbec94bc-d93a-4143-be3f-6ad3e72fe6cf",
+      "result_id": "68b672f4-1626-4571-805e-e627a321c728"
+    },
+    {
+      "claim_id": "42af74d7-ca8a-48fc-a26e-c42a67974673",
+      "result_id": "68b672f4-1626-4571-805e-e627a321c728"
+    },
+    {
+      "claim_id": "b3fbb751-82b8-4c32-9e81-0c823a0d1c0b",
+      "result_id": "68b672f4-1626-4571-805e-e627a321c728"
+    },
+    {
+      "claim_id": "b400602d-25c0-43dc-8303-a4d0b1e4535f",
+      "result_id": "68b672f4-1626-4571-805e-e627a321c728"
+    },
+    {
+      "claim_id": "f00afe5e-ede5-445a-8025-0466794a6c83",
+      "result_id": "68b672f4-1626-4571-805e-e627a321c728"
+    },
+    {
+      "claim_id": "4237810f-56d4-4607-99dd-39d075cfdb3f",
+      "result_id": "68b672f4-1626-4571-805e-e627a321c728"
+    },
+    {
+      "claim_id": "0843c8a4-7282-4a2c-a251-4c9d65a4254d",
+      "result_id": "68b672f4-1626-4571-805e-e627a321c728"
+    },
+    {
+      "claim_id": "1050b80a-0a00-4a26-9bb1-b26b98441953",
+      "result_id": "68b672f4-1626-4571-805e-e627a321c728"
+    },
+    {
+      "claim_id": "886a10cf-70b3-43b6-a376-c04e26e256b3",
+      "result_id": "68b672f4-1626-4571-805e-e627a321c728"
+    },
+    {
+      "claim_id": "2494bef1-d894-4b98-8e78-c25cd360719a",
+      "result_id": "68b672f4-1626-4571-805e-e627a321c728"
+    },
+    {
+      "claim_id": "e74a2ded-0e94-4257-8563-60cb8636e4d4",
+      "result_id": "68b672f4-1626-4571-805e-e627a321c728"
+    },
+    {
+      "claim_id": "41bec6a3-33a9-48fe-93f4-5d179e929856",
+      "result_id": "68b672f4-1626-4571-805e-e627a321c728"
+    },
+    {
+      "claim_id": "da87a604-efc1-40bd-883e-e88aa3d220b6",
+      "result_id": "68b672f4-1626-4571-805e-e627a321c728"
+    },
+    {
+      "claim_id": "23729401-bf46-45ae-a3dd-6e274034ef96",
+      "result_id": "e3282b48-f4e8-405c-b3f8-ae8355eec84f"
+    },
+    {
+      "claim_id": "111c6d47-f02a-4e5f-b0c8-4a8dfd6b020b",
+      "result_id": "e3282b48-f4e8-405c-b3f8-ae8355eec84f"
+    },
+    {
+      "claim_id": "eb9fd9f9-4e92-4650-a092-a4903f480695",
+      "result_id": "e3282b48-f4e8-405c-b3f8-ae8355eec84f"
+    },
+    {
+      "claim_id": "693f2546-0add-4ac6-a1a4-db43ef8b9d58",
+      "result_id": "e3282b48-f4e8-405c-b3f8-ae8355eec84f"
+    },
+    {
+      "claim_id": "44d6dd5a-1106-4444-94df-e662a408091c",
+      "result_id": "e3282b48-f4e8-405c-b3f8-ae8355eec84f"
+    },
+    {
+      "claim_id": "aa6aa6c5-9ea7-48c6-9274-bb2c41558968",
+      "result_id": "e3282b48-f4e8-405c-b3f8-ae8355eec84f"
+    },
+    {
+      "claim_id": "41e38705-7186-472f-a50f-2ef663d16239",
+      "result_id": "e3282b48-f4e8-405c-b3f8-ae8355eec84f"
+    },
+    {
+      "claim_id": "45fedbe8-d230-47a2-b2f5-d60be452e309",
+      "result_id": "a6455a3e-dd68-4902-8d37-557bfc2fe595"
+    },
+    {
+      "claim_id": "18e1a5a4-cf95-4624-a2bd-53fb607f45cc",
+      "result_id": "a6455a3e-dd68-4902-8d37-557bfc2fe595"
+    },
+    {
+      "claim_id": "313b9e91-4f7e-40e2-a4ee-f34b6db69c08",
+      "result_id": "a6455a3e-dd68-4902-8d37-557bfc2fe595"
+    },
+    {
+      "claim_id": "976bd97a-ec75-4ad6-bf52-0e5369778edb",
+      "result_id": "a6455a3e-dd68-4902-8d37-557bfc2fe595"
+    },
+    {
+      "claim_id": "3c305e1e-62b2-494d-9014-60513a43ea62",
+      "result_id": "a6455a3e-dd68-4902-8d37-557bfc2fe595"
+    },
+    {
+      "claim_id": "753ea9a7-4e11-4867-9274-574114c83649",
+      "result_id": "a6455a3e-dd68-4902-8d37-557bfc2fe595"
+    },
+    {
+      "claim_id": "6ded6685-30df-4a25-8661-2e92ea47927a",
+      "result_id": "13a19d5c-586f-4c4a-a1d9-6982f6286485"
+    },
+    {
+      "claim_id": "fdf7eb7b-c801-431a-ae73-3212b9e8e36d",
+      "result_id": "13a19d5c-586f-4c4a-a1d9-6982f6286485"
+    },
+    {
+      "claim_id": "066ccd47-43ee-445d-b6a1-aa69e5fb86be",
+      "result_id": "13a19d5c-586f-4c4a-a1d9-6982f6286485"
+    },
+    {
+      "claim_id": "73ef8c19-6730-45fd-8d5f-e6901d530ada",
+      "result_id": "13a19d5c-586f-4c4a-a1d9-6982f6286485"
+    },
+    {
+      "claim_id": "fef98bcf-004a-42ce-bcd7-b4e64700d752",
+      "result_id": "13a19d5c-586f-4c4a-a1d9-6982f6286485"
+    },
+    {
+      "claim_id": "b417b7e1-6ce1-4201-acfd-096ccb463e92",
+      "result_id": "13a19d5c-586f-4c4a-a1d9-6982f6286485"
+    },
+    {
+      "claim_id": "68606fe7-12d9-461c-bc9e-8e66bc9518af",
+      "result_id": "13a19d5c-586f-4c4a-a1d9-6982f6286485"
+    },
+    {
+      "claim_id": "e74c70f3-5d7e-4f83-8cf0-bfb456bdad79",
+      "result_id": "13a19d5c-586f-4c4a-a1d9-6982f6286485"
+    },
+    {
+      "claim_id": "40f1d05a-dffb-4d8c-984c-6c3f026cfb58",
+      "result_id": "13a19d5c-586f-4c4a-a1d9-6982f6286485"
+    },
+    {
+      "claim_id": "135d0fd5-eca1-4887-8bfe-99afe22d1dff",
+      "result_id": "75a3c1e9-0a23-4736-b306-e0a4bbf600da"
+    },
+    {
+      "claim_id": "8676448a-7621-44c8-93a8-cbe7cd0524b8",
+      "result_id": "75a3c1e9-0a23-4736-b306-e0a4bbf600da"
+    },
+    {
+      "claim_id": "4afb9c74-d0f3-46d2-b294-022262f7c9f8",
+      "result_id": "75a3c1e9-0a23-4736-b306-e0a4bbf600da"
+    },
+    {
+      "claim_id": "cf9518f4-9aed-48a8-9bd0-378ffb04edcb",
+      "result_id": "75a3c1e9-0a23-4736-b306-e0a4bbf600da"
+    },
+    {
+      "claim_id": "0cede64a-81d0-429b-ad31-c5072a9a7a84",
+      "result_id": "75a3c1e9-0a23-4736-b306-e0a4bbf600da"
+    },
+    {
+      "claim_id": "c3982e5b-16af-4e47-8ae5-3fa8485dce9b",
+      "result_id": "75a3c1e9-0a23-4736-b306-e0a4bbf600da"
+    },
+    {
+      "claim_id": "d1a35f12-9a46-4c09-84d5-9689b1f28825",
+      "result_id": "75a3c1e9-0a23-4736-b306-e0a4bbf600da"
+    },
+    {
+      "claim_id": "76b9d92d-fff4-40b9-b2e4-4fd941c960a0",
+      "result_id": "75a3c1e9-0a23-4736-b306-e0a4bbf600da"
+    },
+    {
+      "claim_id": "9a1e31c5-6ac1-4257-b326-6deb454368c8",
+      "result_id": "75a3c1e9-0a23-4736-b306-e0a4bbf600da"
+    },
+    {
+      "claim_id": "d4965104-5d95-4973-acbc-8667236049a0",
+      "result_id": "75a3c1e9-0a23-4736-b306-e0a4bbf600da"
+    },
+    {
+      "claim_id": "cf687fa3-a332-4497-af22-69ba50b39f91",
+      "result_id": "75a3c1e9-0a23-4736-b306-e0a4bbf600da"
+    },
+    {
+      "claim_id": "693ed358-6f02-42a9-8555-d4112e7e65d4",
+      "result_id": "d5bfb56a-14a7-4223-a377-a7a5e2061ec9"
+    },
+    {
+      "claim_id": "b92d3454-93c2-4bdc-8b38-c922e4478d87",
+      "result_id": "d5bfb56a-14a7-4223-a377-a7a5e2061ec9"
+    },
+    {
+      "claim_id": "460da2e1-d9fe-4b61-9729-4787bbcc1f2b",
+      "result_id": "d5bfb56a-14a7-4223-a377-a7a5e2061ec9"
+    },
+    {
+      "claim_id": "0400b336-55e1-4aab-8736-7a58c4de9578",
+      "result_id": "d5bfb56a-14a7-4223-a377-a7a5e2061ec9"
+    },
+    {
+      "claim_id": "1438718b-852d-4327-8411-b952495b0936",
+      "result_id": "d5bfb56a-14a7-4223-a377-a7a5e2061ec9"
+    },
+    {
+      "claim_id": "74304765-64cb-4b4e-b52e-8550ab6df2ad",
+      "result_id": "d5bfb56a-14a7-4223-a377-a7a5e2061ec9"
+    },
+    {
+      "claim_id": "dae9e7a4-bbfc-443f-8781-761c25d5c28e",
+      "result_id": "d5bfb56a-14a7-4223-a377-a7a5e2061ec9"
+    },
+    {
+      "claim_id": "0e91be15-664d-4cb7-bc3a-5717fa0ce62f",
+      "result_id": "d5bfb56a-14a7-4223-a377-a7a5e2061ec9"
+    },
+    {
+      "claim_id": "db33fd0e-8727-48fe-acb0-81164b740d7b",
+      "result_id": "d5bfb56a-14a7-4223-a377-a7a5e2061ec9"
+    },
+    {
+      "claim_id": "f1d6676b-6fe6-467b-a4b7-78fba81b75b7",
+      "result_id": "56d07cf0-70af-4e7a-9651-803c84971778"
+    },
+    {
+      "claim_id": "7629fb7c-23ac-4a01-be4c-fbd3f8a9aca2",
+      "result_id": "56d07cf0-70af-4e7a-9651-803c84971778"
+    },
+    {
+      "claim_id": "51956dc0-30fc-4846-89e6-1769e08ee024",
+      "result_id": "56d07cf0-70af-4e7a-9651-803c84971778"
+    },
+    {
+      "claim_id": "068b9bde-7c8a-481b-9ecf-791e6fd14938",
+      "result_id": "56d07cf0-70af-4e7a-9651-803c84971778"
+    },
+    {
+      "claim_id": "2936dd53-3678-431d-9ac0-486c8246efc2",
+      "result_id": "56d07cf0-70af-4e7a-9651-803c84971778"
+    },
+    {
+      "claim_id": "1cc7ed74-57c6-462f-a8ba-2f1995bd0990",
+      "result_id": "56d07cf0-70af-4e7a-9651-803c84971778"
+    },
+    {
+      "claim_id": "f3b20d4c-4574-4c47-8c9e-e0ddebe293f4",
+      "result_id": "56d07cf0-70af-4e7a-9651-803c84971778"
+    },
+    {
+      "claim_id": "41e86043-eef4-4972-a7a4-d8ade47e4296",
+      "result_id": "56d07cf0-70af-4e7a-9651-803c84971778"
+    },
+    {
+      "claim_id": "e82ef74f-6ebc-44d1-b1c4-3baa097b8fdc",
+      "result_id": "56d07cf0-70af-4e7a-9651-803c84971778"
+    },
+    {
+      "claim_id": "a3b29d3a-987f-4568-b0e6-03986d8253a8",
+      "result_id": "56d07cf0-70af-4e7a-9651-803c84971778"
+    },
+    {
+      "claim_id": "883e9186-81e6-42c2-933a-b8b132c3efd4",
+      "result_id": "56d07cf0-70af-4e7a-9651-803c84971778"
+    },
+    {
+      "claim_id": "2839f3f9-3556-481c-bc52-0e4a30e3d636",
+      "result_id": "573305d0-78e7-40a1-a419-23625d935ee2"
+    },
+    {
+      "claim_id": "34036282-a428-493c-a0f6-c09fbc22a403",
+      "result_id": "573305d0-78e7-40a1-a419-23625d935ee2"
+    },
+    {
+      "claim_id": "5e6defc4-0d94-4f57-b628-af3922def7fa",
+      "result_id": "573305d0-78e7-40a1-a419-23625d935ee2"
+    },
+    {
+      "claim_id": "8ee48448-7adb-4475-9f67-faa4c42d3bc8",
+      "result_id": "573305d0-78e7-40a1-a419-23625d935ee2"
+    },
+    {
+      "claim_id": "e81f2814-a17a-40f1-88a5-313267e1a15b",
+      "result_id": "573305d0-78e7-40a1-a419-23625d935ee2"
+    },
+    {
+      "claim_id": "fe4360e7-0df4-483f-abbb-29b373da70f6",
+      "result_id": "573305d0-78e7-40a1-a419-23625d935ee2"
+    },
+    {
+      "claim_id": "a2a9bd30-c72e-4c9f-9463-a5aa2c2c3f69",
+      "result_id": "a3abc9b5-3638-48d2-885e-0fc5113bd625"
+    },
+    {
+      "claim_id": "45fedbe8-d230-47a2-b2f5-d60be452e309",
+      "result_id": "a3abc9b5-3638-48d2-885e-0fc5113bd625"
+    },
+    {
+      "claim_id": "f161a3e4-a2eb-4b27-91f3-d52201a719b0",
+      "result_id": "ca68cca6-7176-4435-873f-d9ab64cbc865"
+    },
+    {
+      "claim_id": "7cffa320-c455-44b9-b835-04ad828e9391",
+      "result_id": "ca68cca6-7176-4435-873f-d9ab64cbc865"
+    },
+    {
+      "claim_id": "d864b493-1dd1-4cf8-9987-da85be3420fe",
+      "result_id": "ca68cca6-7176-4435-873f-d9ab64cbc865"
+    },
+    {
+      "claim_id": "41b6a321-55e6-4f0f-8e4d-0426213f7054",
+      "result_id": "ca68cca6-7176-4435-873f-d9ab64cbc865"
+    },
+    {
+      "claim_id": "f77b9f11-9ab5-4bb4-b855-dd8504583971",
+      "result_id": "ca68cca6-7176-4435-873f-d9ab64cbc865"
+    },
+    {
+      "claim_id": "2d40023d-aef6-455d-a060-017634a0ecdd",
+      "result_id": "ca68cca6-7176-4435-873f-d9ab64cbc865"
+    },
+    {
+      "claim_id": "cfdf5be9-bc13-4549-a3d1-e659abacf9a7",
+      "result_id": "0637b53c-ea9c-4d96-bc6e-e2dc6028ddc7"
+    },
+    {
+      "claim_id": "a6360d40-a15e-4d4f-80cb-375e3bf7a7bf",
+      "result_id": "0637b53c-ea9c-4d96-bc6e-e2dc6028ddc7"
+    },
+    {
+      "claim_id": "bc0e0773-2c94-4569-a7d3-e949d8309bc3",
+      "result_id": "0637b53c-ea9c-4d96-bc6e-e2dc6028ddc7"
+    },
+    {
+      "claim_id": "cf9f8a3f-1074-44c6-9163-22a5b7141acb",
+      "result_id": "0637b53c-ea9c-4d96-bc6e-e2dc6028ddc7"
+    },
+    {
+      "claim_id": "7ac3865a-18f9-4cb9-8350-c46420b2a11a",
+      "result_id": "0637b53c-ea9c-4d96-bc6e-e2dc6028ddc7"
+    },
+    {
+      "claim_id": "327895fe-84e4-4d27-9760-1184f718d65c",
+      "result_id": "3bbb5968-8ea3-4742-87b4-d28138f6b5ed"
+    },
+    {
+      "claim_id": "826c21f5-50f9-4929-b6b5-4e8df45e0dd9",
+      "result_id": "3bbb5968-8ea3-4742-87b4-d28138f6b5ed"
+    },
+    {
+      "claim_id": "d08b86f7-faa7-4bf6-9658-c0ec87d71608",
+      "result_id": "3bbb5968-8ea3-4742-87b4-d28138f6b5ed"
+    },
+    {
+      "claim_id": "f06ff16b-97f6-4d2e-8d89-6f60c11a0d57",
+      "result_id": "3bbb5968-8ea3-4742-87b4-d28138f6b5ed"
+    },
+    {
+      "claim_id": "337fbc5c-4938-44b2-8508-c275b2579911",
+      "result_id": "3bbb5968-8ea3-4742-87b4-d28138f6b5ed"
+    },
+    {
+      "claim_id": "e6ce7c5d-3b83-4c3f-9394-7d1d0690ebae",
+      "result_id": "3bbb5968-8ea3-4742-87b4-d28138f6b5ed"
+    },
+    {
+      "claim_id": "4887e6c4-78fb-408b-9fa5-083f04002dda",
+      "result_id": "3bbb5968-8ea3-4742-87b4-d28138f6b5ed"
+    },
+    {
+      "claim_id": "52ae7845-1517-4f53-86bc-83cb9bdbc0b9",
+      "result_id": "3bbb5968-8ea3-4742-87b4-d28138f6b5ed"
+    },
+    {
+      "claim_id": "00c7aefd-08e0-4f45-9ce1-1823f5719a40",
+      "result_id": "3bbb5968-8ea3-4742-87b4-d28138f6b5ed"
+    },
+    {
+      "claim_id": "3b042b10-a83c-46f0-ae46-256254d50d0b",
+      "result_id": "3bbb5968-8ea3-4742-87b4-d28138f6b5ed"
+    }
+  ],
+  "comparisons": []
+}

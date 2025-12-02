@@ -1,0 +1,1605 @@
+{
+  "submission": {
+    "id": "f41808e8-c501-4247-8548-20a185add488",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:41:01.488148Z",
+    "updated_at": "2025-12-02T15:41:01.488148Z"
+  },
+  "content": [
+    {
+      "id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "submission_id": "f41808e8-c501-4247-8548-20a185add488",
+      "content_type": "manuscript",
+      "content_text": "# Flexible linkers in CaMKII control the balance between activating and inhibitory autophosphorylation\n\n## Authors\n\n- Moitrayee Bhattacharyya<sup>1</sup> ([ORCID: 0000-0002-2168-1541](https://orcid.org/0000-0002-2168-1541))\n- Young Kwang Lee<sup>1</sup> ([ORCID: 0000-0003-0056-6357](https://orcid.org/0000-0003-0056-6357))\n- Serena Muratcioglu<sup>1</sup>\n- Baiyu Qiu<sup>1</sup>\n- Priya Nyayapati<sup>1</sup>\n- Howard Schulman<sup>5</sup>\n- Jay T Groves<sup>1</sup> \u2020\n- John Kuriyan<sup>1</sup> ([ORCID: 0000-0002-4414-5477](https://orcid.org/0000-0002-4414-5477)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States\n2. California Institute for Quantitative Biosciences (QB3), University of California, Berkeley Berkeley United States\n3. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n4. Department of Chemistry, University of California, Berkeley Berkeley United States\n5. Panorama Institute of Molecular Medicine Sunnyvale United States\n6. Physical Biosciences Division, Lawrence Berkeley National Laboratory, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe many variants of human Ca2+/calmodulin-dependent protein kinase II (CaMKII) differ in the lengths and sequences of disordered linkers connecting the kinase domains to the oligomeric hubs of the holoenzyme. CaMKII activity depends on the balance between activating and inhibitory autophosphorylation (on Thr 286 and Thr 305/306, respectively, in the human \u03b1 isoform). Variation in the linkers could alter transphosphorylation rates within a holoenzyme and the balance of autophosphorylation outcomes. We show, using mammalian cell expression and a single-molecule assay, that the balance of autophosphorylation is flipped between CaMKII variants with longer and shorter linkers. For the principal isoforms in the brain, CaMKII-\u03b1, with a ~30 residue linker, readily acquires activating autophosphorylation, while CaMKII-\u03b2, with a ~200 residue linker, is biased towards inhibitory autophosphorylation. Our results show how the responsiveness of CaMKII holoenzymes to calcium signals can be tuned by varying the relative levels of isoforms with long and short linkers.\n\n## Introduction\n\nA characteristic feature of signaling by protein kinases is that the kinases are themselves regulated by phosphorylation. For most kinases, this involves the phosphorylation of one or more residues in the activation loop, a regulatory element located at the active site of the kinase (Huse and Kuriyan, 2002; Johnson et al., 1996; Nolen et al., 2004). An exception is provided by Ca2+/calmodulin-dependent protein kinase II (CaMKII), an enzyme that has crucial roles in animal-cell signaling, particularly in the brain and in cardiac tissue (Bayer and Schulman, 2019; Bhattacharyya et al., 2019; Griffith, 2004; Hudmon and Schulman, 2002; Kennedy, 2013; Lisman et al., 2012; Stratton et al., 2013). CaMKII has no phosphorylation sites within its activation loop. Instead, the activity of CaMKII is modulated by autophosphorylation on two sites, Thr 286 and Thr 305/306 (residue numbering corresponds to the sequence of human CaMKII-\u03b1), both located in a regulatory segment that immediately follows the kinase domain (Figure 1a,d).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig1-v2.jpg)\n\n**Figure 1.:** (a) CaMKII is organized as a holoenzyme with kinase domains connected to a central dodecameric/tetradecameric hub by a regulatory segment and a flexible linker, referred to as the kinase-hub linker. All the domains are labeled and this color scheme used will be maintained throughout. The kinase-hub linker is the principle difference between the four CaMKII isoforms: \u03b1/\u03b2/\u03b3/\u03b4. (b) Crystal structure of the autoinhibited kinase domain from human CaMKII-\u03b4 (PDB ID: 2VN9) (Rellos et al., 2010). The regulatory segment places Thr 306 optimally for cis-phosphorylation, while Thr 286, at the base of the kinase can only be phosphorylated in trans. (c) Schematic diagram showing the design principle for all the constructs used in this study. (d) Depiction of the four possible phosphorylation states of CaMKII.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig1-figsupp1-v2.jpg)\n\nPhosphorylation of Thr 286 confers Ca2+/calmodulin-independent activity, referred to as autonomy (Lai et al., 1986; Lou et al., 1986; Miller et al., 1988; Miller and Kennedy, 1986; Saitoh and Schwartz, 1985; Schworer et al., 1986). We refer to Thr 286 phosphorylation as activating phosphorylation, since it prolongs the active state. In contrast, phosphorylation on Thr 305/306 is inhibitory, because it blocks the binding of Ca2+/CaM (Colbran, 1993; Hanson and Schulman, 1992; Hashimoto et al., 1987; Lou and Schulman, 1989; Patton et al., 1990). Mutation of these autophosphorylation sites results in profound alterations in learning and memory (Elgersma et al., 2002; Giese et al., 1998; Giese and Mizuno, 2013; K\u00fcry et al., 2017; Silva et al., 1992).\n\nCaMKII is organized into a dodecameric or tetradecameric holoenzyme consisting of a central ring-shaped hub assembly, to which the kinase domains are connected by flexible linkers (the kinase-hub linkers) (Figure 1a;\u00a0Chao et al., 2011; Myers et al., 2017; Rosenberg et al., 2005). The four isoforms of human CaMKII, denoted \u03b1, \u03b2, \u03b3, and \u03b4, and their\u00a0~\u00a040 splice variants, differ principally in the lengths and sequences of the kinase-hub linkers. The kinase and the hub domains of these isoforms share about 90% and 80% sequence identity, respectively (Tombes et al., 2003). The kinase-hub linkers are highly conserved for a given CaMKII isoform, indicating that there are important isoform-specific roles for these linkers, but what these are is not understood. CaMKII-\u03b1 and CaMKII-\u03b4 have linkers spanning 31 residues each, while CaMKII-\u03b2 and CaMKII-\u03b3 have longer linkers (218 and 110 residues, respectively, in their principal variants). The sequences of the CaMKII kinase-hub linkers are consistent with their being intrinsically disordered, leading to dynamic variability in the disposition of the kinase domains with respect to the central hub (Myers et al., 2017).\n\nOur current understanding of the autoregulation of CaMKII is based on studies that have focused primarily on CaMKII-\u03b1, and it has been assumed that the other three isoforms function similarly. The regulatory segment of CaMKII blocks the kinase active site in the basal state, and this inhibition is released by the binding of Ca2+/calmodulin (Ca2+/CaM) to the regulatory segment (Figure 1d). The binding of Ca2+/CaM facilitates the trans-autophosphorylation of Thr 286 within the regulatory segment of one CaMKII subunit by the activated kinase domain of another subunit in the same holoenzyme (Hanson et al., 1994; Rich and Schulman, 1998). How the balance of phosphorylation between the activating and inhibitory sites is controlled in the different isoforms of CaMKII is poorly understood.\n\nWe developed a single-molecule assay to measure the phosphorylation status of CaMKII expressed in mammalian cells. In this assay, CaMKII is fused to an N-terminal fluorescent protein (a monomeric variant of enhanced GFP, mEGFP, Cormack et al., 1996; Zacharias et al., 2002) and to a biotin tag, enabling the capture and visualization, by total internal reflection fluorescence (TIRF) microscopy, of individual CaMKII holoenzymes on a glass slide coated with streptavidin (Figure 2a). Since CaMKII is captured directly from the cell lysate, this procedure avoids difficulties in expressing and purifying various isoforms of CaMKII, particularly those with longer linkers. In addition, the use of a flow cell allows CaMKII holoenzymes to be activated under different reaction conditions after immobilization on glass. Site-specific antibodies that recognize phosphorylated Thr 286 (pThr 286) or phosphorylated Thr 305/Thr 306 (pThr 305/306) can be used to probe the extent of phosphorylation on activating and inhibitory sites on individual holoenzymes (Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic diagram showing the experimental setup. Biotinylated mEGFP-CaMKII overexpressed in HEK 293T cells was pulled down directly from diluted cell lysate, allowing visualization at a single-molecule resolution. The immobilization onto glass substrates functionalized with streptavidin relies on the interaction between biotinylated CaMKII and streptavidin. Autophosphorylation status of CaMKII holoenzymes can be measured using phosphospecific primary antibodies and Alexa-labeled secondary antibodies. (b) Representative single-molecule TIRF images showing mEGFP-CaMKII holoenzymes (green dots), phosphorylation at Thr 286 (red dots) and phosphorylation at Thr 305/306 (purple dots) from left to right. A 3-color merge of these images reports on the fraction of CaMKII holoenzymes that are phosphorylated at Thr 286 and/or Thr 305/306. (c) Fraction of CaMKII-\u03b1 that shows detectable phosphorylation at Thr 286 is plotted for different Ca2+/CaM concentrations ranging from 0.02 \u03bcM to 5 \u03bcM. The cartoon at the bottom depicts two extreme cases, where only a few holoenzymes are phosphorylated or where most holoenzymes are phosphorylated. (d) Distribution of intensity for pThr 286 (561 nm), at different Ca2+/CaM concentrations, for CaMKII-\u03b1 holoenzymes with detectable phosphorylation\u00a0(see Materials and methods for details of normalization). The cartoon at the bottom shows that a right-shift in the peak value of the intensity histogram represents a higher extent of phosphorylation within a CaMKII holoenzyme.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Mutation/deletion of epitopes for pThr 286 (left) and pThr 305/306 (right)-specific antibodies leads to no detection of phosphosignal at the respective sites.\n\nUsing this assay, we discovered that activation of CaMKII-\u03b1, which has a 31-residue kinase-hub linker, results in robust autophosphorylation on the activating site (Thr 286), with relatively little inhibitory phosphorylation on Thr 305/306. This is consistent with expectation (Baucum et al., 2015). Unexpectedly, CaMKII-\u03b2, with a longer\u00a0~200 residue linker, undergoes robust inhibitory autophosphorylation on Thr 305/306, with less activating phosphorylation on Thr 286. We also monitored autophosphorylation for an artificial construct of CaMKII that is identical to CaMKII-\u03b1, except that the kinase-hub linker is replaced by a 218-residue linker from CaMKII-\u03b2 (Figure 1c). The autophosphorylation pattern for this construct resembles that of CaMKII-\u03b2, showing that the difference in activating and inhibitory autophosphorylation between the two isoforms is due entirely to differences in the kinase-hub linkers.\n\nWhen CaMKII is inactivated after activation, by removing Ca2+/CaM and ATP, we found that the dephosphorylation by phosphatases of activating phosphorylation at Thr 286 is much slower than dephosphorylation of inhibitory phosphorylation at Thr 305/306, which is fast. The protection of activating phosphorylation and the rapid reversal of inhibitory phosphorylation by phosphatases allows CaMKII to act as an integrator of Ca2+ pulses in cells. CaMKII-\u03b1 and CaMKII-\u03b2 can assemble to form mixed holoenzymes, with the balance between activating and inhibitory autophosphorylation determined by the ratio of the two isoforms. Thus, the calcium responsiveness of CaMKII holoenzymes can be tuned by varying the relative levels of the two isoforms.\n\n## Results and discussion\n\n### A single-molecule assay for measuring CaMKII autophosphorylation\n\nWe designed a single-molecule assay to measure autophosphorylation of CaMKII, relying on immediate capture of the holoenzyme after lysis of mammalian cells overexpressing CaMKII (see Materials\u00a0and\u00a0methods) (Figure 2a). This procedure is based on a general single-molecule immunofluorescence assay reported previously (Jain et al., 2011). Our assay enables the rapid isolation of CaMKII for single-molecule analysis while minimizing heterogeneity that can result from proteolysis or aggregation during conventional purification. In this assay, GFP-CaMKII holoenzymes, whether or not phosphorylated, are detected with 488 nm laser excitation (green channel). The phosphorylation levels on Thr 286 and Thr 305/306 are monitored using phosphospecific antibodies labeled with Alexa-594 or Alexa-647, detected with 561 nm (red channel) or 640 nm laser excitation (purple channel), respectively (Figure 2a); see Materials\u00a0and\u00a0methods. Representative three-color TIRF images from these experiments are shown in Figure 2b.\n\nWe quantify the extent of phosphorylation in two ways. First, we measure the fraction of CaMKII holoenzymes that show detectable phosphorylation at Thr 286, regardless of the extent of phosphorylation, by monitoring the co-localization of green and red spots (Figure 2c). To quantify the extent of activating phosphorylation per holoenzyme, we compile intensity distributions for pThr 286 (red channel), taking into account both holoenzymes that are phosphorylated and those that show no detectable phosphorylation (Figure 2d, see Materials\u00a0and\u00a0methods for the details of normalization). The integrated intensity of the pThr 286 signal, normalized by the total number of holoenzymes detected (i.e., the number of green spots), reflects the mean level of phosphorylation per holoenzyme (Figure 2d). Phosphorylation at Thr 305/306 is quantified similarly, using the appropriate antibody.\n\nWe used this assay to measure autophosphorylation levels for CaMKII upon activation. Human CaMKII-\u03b1 overexpressed in HEK 293T cells and captured from cell lysate is in an inactive state, with no detectable phosphorylation at Thr 286 or Thr 305/306 (data not shown). We activated CaMKII-\u03b1 by flowing Ca2+/CaM and ATP over the glass coverslip to which the captured holoenzymes are tethered (Figure 2a). Increasing the concentration of Ca2+/CaM from 20 nM to 5 \u03bcM, while maintaining a constant saturating concentration of Ca2+ (100 \u03bcM), resulted in the detection of increasing levels of phosphorylation at Thr 286 (Figure 2c\u2013d). The EC50 value for CaMKII-\u03b1 activation by Ca2+/CaM derived from these measurements is in the range of 50\u2013100 nM. This is consistent with previously reported values for the EC50 of CaMKII-\u03b1 activation by Ca2+/CaM (Chao et al., 2011; Schulman, 1984; Sloutsky et al., 2019).\n\nA limitation of this assay is that the integrated intensity values cannot be used to determine the absolute number of phosphate groups within each holoenzyme, because we do not know whether every phosphate group necessarily has an antibody bound to it when the maximum signal is obtained. Detection of phosphorylation may be less than complete because of steric interference between antibodies, or interference with the glass support. Due to this limitation, we use the values of the integrated antibody fluorescence intensities to provide a relative, rather than an absolute, measure of the extent of phosphorylation.\n\n### CaMKII-\u03b2, with a long kinase-hub linker, acquires inhibitory autophosphorylation more readily than CaMKII-\u03b1\n\nWe used the single-molecule assay to compare the levels of phosphorylation at the activating (Thr 286) and inhibitory (Thr 305/306) sites in CaMKII-\u03b1 and CaMKII-\u03b2. We expressed CaMKII-\u03b1 and CaMKII-\u03b2 separately in HEK 293T cells and, in parallel experiments, captured the CaMKII isoforms on glass, followed by activation with high concentrations of Ca2+/CaM (5 \u03bcM) and 500 \u03bcM ATP.\n\nThese experiments reveal clear differences in the extent of autophosphorylation at the inhibitory sites in CaMKII-\u03b1 and CaMKII-\u03b2. Whereas 95% of the CaMKII-\u03b2 holoenzymes show detectable phosphorylation at Thr 305/306, only 30% of the CaMKII-\u03b1 holoenzymes do so (Figure 3a-right, inset). The mean value of the integrated intensity for Thr 305/306 phosphorylation per holoenzyme is 5-fold higher for CaMKII-\u03b2 than for CaMKII-\u03b1 (Figure 3a-right). The \u03b1 and \u03b2 isoforms also differ in the extent of activating phosphorylation on Thr 286, with CaMKII-\u03b1 showing more Thr 286 phosphorylation than CaMKII-\u03b2 (Figure 3a-left).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig3-v2.jpg)\n\n**Figure 3.:** (a) Comparison of the extent of autophosphorylation (intensity histogram) within CaMKII-\u03b1 and CaMKII-\u03b2 holoenzymes at the activating site (Thr 286) (left panel) and the inhibitory site (Thr 305/306) (right panel). The insets show the fraction of holoenzymes that exhibit any detectable phosphorylation for the corresponding phosphosite in CaMKII-\u03b1 and CaMKII-\u03b2. (b) Comparison of the extent of autophosphorylation (intensity histograms) between CaMKII-\u03b1 and CaMKII-\u03b2* holoenzymes at the activating site (Thr 286) (left panel) and the inhibitory site (Thr 305/306) (right panel). The insets show the fraction of holoenzymes that exhibit any detectable phosphorylation for the corresponding phosphosite in CaMKII-\u03b1 and CaMKII-\u03b2* (see Materials\u00a0and\u00a0methods for details of normalization). (c) Autophosphorylation status of CaMKII after activation in HEK 293T cells using ionomycin. Fractions of CaMKII-\u03b1 and CaMKII-\u03b2* that show detectable phosphorylation at Thr 286 are plotted for different conditions. (d) Fractions of CaMKII-\u03b1 and CaMKII-\u03b2* that show detectable phosphorylation at Thr 305/306 are plotted for different conditions. + / - depicts the presence or absence of ionomycin and/or phosphatase inhibitors.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Schematic diagram showing the experimental set up. CaMKII was activated, followed by a wash to remove the components of the activation buffer. The pre-activated CaMKII (species A) is then treated with Mg2+-ATP for 30 min to generate species B. (b) Fraction of CaMKII-\u03b1 holoenzymes with detectable phosphorylation at Thr 305/306 is plotted for each species. (c) Intensity distribution of pThr 305/306 (640 nm) for species A and species B with detectable phosphorylation\u00a0. The area under each intensity histogram is scaled by the fraction of holoenzymes that show no detectable phosphorylation under that condition (see Materials\u00a0and\u00a0methods for details of normalization).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Comparison of the extent of autophosphorylation (intensity histogram) among CaMKII-\u03b3*, CaMKII-\u03b4*, CaMKII-\u03b1, and CaMKII-\u03b2* holoenzymes at the activating site (Thr 286) (left panel) and the inhibitory site (Thr 305/306) (right panel). The insets show the fraction of holoenzymes that exhibit any detectable phosphorylation for the corresponding phosphosite in CaMKII-\u03b3* and CaMKII-\u03b4* (see Materials\u00a0and\u00a0methods for details of normalization).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Comparison of the extent of phosphorylation at the activating site (left panel) and the inhibitory site (right panel) for CaMKII-\u03b2 and CaMKII-\u03b2\u2019E holoenzymes with detectable phosphorylation. (b) Comparison of the extent of phosphorylation at the activating site (left panel) and the inhibitory site (right panel) for CaMKII-\u03b2 and CaMKII-\u03b2\u2019E* holoenzymes with detectable phosphorylation. (c) Comparison of the extent of phosphorylation at the activating site (left panel) and the inhibitory site (right panel) for CaMKII-\u03b1, CaMKII-\u03b2 and CaMKII-\u03b1* holoenzymes with detectable phosphorylation\u00a0(see Materials\u00a0and\u00a0methods for details of normalization).\n\nWe verified that the reduced levels of pThr 305/306 seen for CaMKII-\u03b1 are not due to an intrinsic inability to phosphorylate this site. We first activated CaMKII-\u03b1 on glass, as before, and then washed away the Ca2+/CaM. This was followed by the addition of ATP to the flow cell. ATP treatment of pre-activated CaMKII led to robust phosphorylation of CaMKII-\u03b1 on Thr 305/306, at levels comparable to that for CaMKII-\u03b2 (Figure 3\u2014figure supplement 1 (a-c)).\n\nWe found that the differences in autophosphorylation between the \u03b1 and \u03b2 isoforms are due entirely to the differences in the kinase-hub linkers. We created an artificial CaMKII construct in which the kinase-hub linker in CaMKII-\u03b1 is replaced by that from CaMKII-\u03b2 (we refer to this construct as CaMKII-\u03b2*, because the most distinctive difference between the two isoforms is the nature of the kinase-hub linker, Figure 1c). The autophosphorylation pattern for CaMKII-\u03b2* is essentially the same as for CaMKII-\u03b2. Each CaMKII-\u03b2* holoenzyme exhibits about 5-fold greater phosphorylation of Thr 305/306 than is the case for CaMKII-\u03b1 (Figure 3b-right), with about 95% of the CaMKII-\u03b2* holoenzymes showing detectable phosphorylation at pThr 305/306. CaMKII-\u03b2* also shows a lower degree of activating phosphorylation on Thr 286 when compared to CaMKII-\u03b1 (Figure 3b-left).\n\nWe use CaMKII-\u03b2* as a surrogate for CaMKII-\u03b2 in most of the experiments reported in this paper. The sequences flanking the phosphosites being probed by the antibodies are the same in CaMKII-\u03b2* and CaMKII-\u03b1, whereas there are a few small differences in sequence between CaMKII-\u03b2 and CaMKII-\u03b1 in these regions. Thus, when comparing CaMKII-\u03b2* to CaMKII-\u03b1, observed differences in autophosphorylation are not due to differences in the affinities of the antibodies for their cognate sites.\n\nWe also tested two other isoforms, CaMKII-\u03b3 (110-residue kinase-hub linker) and CaMKII-\u03b4 (31-residue kinase-hub linker). We created surrogates for the two isoforms using CaMKII-\u03b1, denoted as CaMKII-\u03b3* and CaMKII-\u03b4*. As for CaMKII-\u03b2*, the kinase-hub linker in CaMKII-\u03b1 is replaced with those from the \u03b3 and \u03b4 isoforms, respectively, in these surrogates. The results for CaMKII-\u03b3*, with the long linker, resemble those for CaMKII-\u03b2/CaMKII-\u03b2* (Figure 3\u2014figure supplement 2). Likewise, the results for CaMKII-\u03b4*, with the short linker, resemble those for CaMKII-\u03b1 (Figure 3\u2014figure supplement 2). The sequences of the linkers in the four CaMKII isoforms are very different, and so these results suggest that linker length alone is an important determinant of phosphorylation outcome (Figure 1\u2014figure supplement 1).\n\nThis conclusion was further reinforced by studying a naturally occurring splice-variant of CaMKII-\u03b2 (CaMKII-\u03b2\u2019E) that has a 55-residue linker, created by deletion of 155 residues. We also designed a construct where this truncated linker from CaMKII-\u03b2\u2019E replaced the linker in CaMKII-\u03b1 (CaMKII-\u03b2\u2019E*). For both these constructs, we see a decrease in inhibitory phosphorylation and a small increase in activating phosphorylation when compared to CaMKII-\u03b2 (Figure 3\u2014figure supplement 3a\u2013b). As an additional control, we designed a construct of CaMKII-\u03b2 in which the kinase-hub linker was replaced by that of CaMKII-\u03b1 (CaMKII-\u03b1*). The autophosphorylation outcome for CaMKII-\u03b1* is similar to that for CaMKII-\u03b1 (Figure 3\u2014figure supplement 3c).\n\nCaMKII-\u03b1 and CaMKII-\u03b2 can assemble into mixed holoenzymes containing both isoforms (Bennett et al., 1983; Brocke et al., 1999; Thiagarajan et al., 2002). We co-transfected mEGFP-CaMKII-\u03b1 and mCherry-CaMKII-\u03b2* in HEK 293T cells in four different ratios (1:0, 3:1, 1:1, and 0:1, \u03b1:\u03b2*, respectively) and activated the resultant holoenzymes after immobilization on glass (Figure 4a). The co-transfection of mEGFP-CaMKII-\u03b1 and mCherry-CaMKII-\u03b2* resulted in predominantly heterooligomeric holoenzymes, with\u00a0~80% colocalization of red and green spots (data not shown). As the proportion of CaMKII-\u03b2* increases, there is an increase in the extent of Thr 305/306 phosphorylation (Figure 4b\u2013c). Thus, alterations in the relative levels of CaMKII-\u03b1 and CaMKII-\u03b2 can result in the generation of mixed CaMKII holoenzymes with different responsiveness to Ca2+/calmodulin.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic diagram showing that co-expression of GFP-CaMKII-\u03b1 and mCherry-CaMKII-\u03b2* leads to the formation of heterooligomers. (b) Bar graph showing the fraction of holoenzymes that show detectable phosphorylation at the inhibitory site (Thr 305/306), which increases as the ratio of CaMKII-\u03b2* increases. (c) Intensity histogram for the homooligomers and heterooligomers. As the ratio of CaMKII-\u03b2* increases, there is a right-shift in the peak value of the intensity histogram (see Materials\u00a0and\u00a0methods for details of normalization).\n\n### The altered balance of phosphorylation in CaMKII-\u03b1 and CaMKII-\u03b2 may arise due to differences in the rates of cis and trans autophosphorylation in the two isoforms\n\nTo understand how changes in the length of the kinase-hub linker can alter the balance of autophosphorylation, we analyzed a simple kinetic model for CaMKII activation in which the holoenzyme contains only two kinase domains (see Appendix). A kinetic model for the activation of a dodecameric CaMKII holoenzyme requires the specification of an extremely large number of intermediate states, and we have not pursued this. In our simple kinetic model, we assume that Thr 286 can only be phosphorylated in trans, because it is located too far from the active site of the kinase (Figure 1b, and see Figure 5). We assume that Thr 305/306 can either be phosphorylated in cis, as suggested by crystal structures (Rellos et al., 2010), or in trans.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig5-v2.jpg)\n\n**Figure 5.:** While Thr 305/306 can get phosphorylated both in cis in the absence of Ca2+/CaM or in trans in the presence of Ca2+/CaM, autophosphorylation of Thr 286 can only happen in trans in the presence of Ca2+/CaM. Ca2+/CaM shows a rapid association and dissociation until CaMKII gets phosphorylated at Thr 286, when its affinity for Ca2+/CaM increases by about 1000-fold. A detailed description of all the different reactions and conditions that form the basis of our kinetic model is provided in the Appendix.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Plot showing the production of all species bearing pThr 286 or pThr 305/306 over simulation time, when (a) the linker-length is short with faster rates of trans-autophosphorylation and when (b) the linker-length is long and the rates of trans-autophosphorylation are 10-fold slower.\n\nFor trans-phosphorylation of either Thr 286 or Thr 305/306, the kinase acting as the enzyme has to have Ca2+/CaM bound to it, otherwise the active site of the enzyme will be blocked. For trans-phosphorylation of Thr 286, the kinase acting as the substrate must also have Ca2+/CaM bound to it, otherwise the Thr 286 is not accessible for phosphorylation (Rich and Schulman, 1998). Autophosphorylation of Thr 305/306 can only occur in the absence of Ca2+/CaM binding to the substrate kinase, because otherwise Thr 305 and Thr 306 would be covered by Ca2+/CaM. A key idea behind this model is that we assume that the longer linker in CaMKII-\u03b2 slows down the rates of trans-phosphorylation reactions within a holoenzyme when compared to CaMKII-\u03b1, but that the rates of cis-phosphorylation are the same in the two isoforms (S\u00f8rensen and Kjaergaard, 2019).\n\nWe analyzed the predicted autophosphorylation kinetics for the CaMKII dimer model using reasonable estimates for the rate constants in the model (see Appendix). Our results show that when the rate of trans-phosphorylation decreases relative to the rate of cis-phosphorylation, as is expected to occur with longer kinase-hub linkers, then there is a switch from Thr 286 phosphorylation dominating to Thr 305/306 phosphorylation dominating (Figure 5\u2014figure supplement 1a\u2013b, see Appendix). If Thr 286 is phosphorylated, the affinity for Ca2+/CaM increases\u00a0~1000 fold, a phenomenon referred to as the calmodulin-trapping (Meyer et al., 1992; Tse et al., 2007). Since Ca2+/CaM covers the inhibitory site (Thr 305/306), phosphorylation at this site is suppressed (Figure 5). The situation is reversed when the linker is long, and cis-phosphorylation is faster than trans-phosphorylation (Figure 5\u2014figure supplement 1b). In this case, activating phosphorylation is suppressed, because Ca2+/CaM binding is blocked.\n\n### The balance between inhibitory and activating autophosphorylation is maintained upon activation of CaMKII in HEK 293T cells\n\nWe tested whether the balance between activating and inhibitory autophosphorylation is maintained when the enzyme is activated in cells. We overexpressed CaMKII-\u03b1 or CaMKII-\u03b2* in HEK 293T cells, along with calmodulin, followed by ionomycin treatment to increase intracellular Ca2+ levels. The cells were then lysed and CaMKII holoenzymes were captured and assayed as before, without any further treatment.\n\nPhosphorylation at Thr 286 increases upon treatment with 10 \u03bcM ionomycin for both CaMKII-\u03b1 and CaMKII-\u03b2*, as expected (Baucum et al., 2015;\u00a0Figure 3c). CaMKII-\u03b1 shows higher phosphorylation at Thr 286 as compared to CaMKII-\u03b2*, in agreement with our in vitro results (Figure 3c). However, no phosphorylation at Thr 305/306 is detected for either CaMKII-\u03b1 or CaMKII-\u03b2* in this experiment (Figure 3d), which is consistent with previous reports (Baucum et al., 2015). There is depletion of ATP levels upon cell lysis, which could result in reduced kinase activity in the presence of phosphatase activity. We therefore incubated cells with okadaic acid and cyclosporin A (250 nM each), which are inhibitors of PP1 and calcineurin, respectively, for 45\u201360 min before activation. This treatment led to detectable levels of phosphorylation at Thr 305/306 for\u00a0~30% of the CaMKII-\u03b2* holoenzymes, but not for CaMKII-\u03b1 (Figure 3d). This is consistent with the increased levels of Thr 305/306 phosphorylation seen for CaMKII-\u03b2* using the single-molecule assay.\n\n### Activating autophosphorylation at Thr 286 is relatively resistant to dephosphorylation\n\nWe incubated CaMKII-\u03b1 and CaMKII-\u03b2* with Ca2+/CaM and ATP on glass, while including increasing amounts of \u03bb-phosphatase, a potent non-specific phosphatase (Zhuo et al., 1993), in the activation buffer (Figure 6a). Active CaMKII-\u03b1 is efficient at maintaining phosphorylation on Thr 286 in the face of competing phosphatase activity, while CaMKII-\u03b2* is less so (Figure 6b,d). For CaMKII-\u03b2*, high levels of inhibitory phosphorylation at Thr 305/306 are maintained in the presence of phosphatase (Figure 6c,e). In contrast, phosphorylation at Thr 305/306 is completely removed by the phosphatase for CaMKII-\u03b1 (Figure 6c,e). Thus, the conclusion that CaMKII-\u03b1 and CaMKII-\u03b2/\u03b2* more readily gain activating and inhibitory phosphorylation, respectively, holds true in the presence of phosphatases during activation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig6-v2.jpg)\n\n**Figure 6.:** (a) Schematic diagram showing the experimental set up. CaMKII was activated in the presence of 0, 200, 400, or 800 units of \u03bb-phosphatase for 45 min. (b\u2013c) Bar graph showing the fraction of CaMKII-\u03b1 and CaMKII-\u03b2* holoenzymes that shows detectable phosphorylation at the activating site (Thr 286) and the inhibitory site (Thr 305/306), respectively, in the presence of \u03bb-phosphatase. (d) Intensity distribution of pThr 286 (561 nm) signal for CaMKII-\u03b1 (left panel) and CaMKII-\u03b2* (right panel) holoenzymes with detectable phosphorylation in the presence of \u03bb-phosphatase. (e) Intensity distribution of pThr 305/306 (640 nm) signal for CaMKII-\u03b1 (left panel) and CaMKII-\u03b2* (right panel) holoenzymes with detectable phosphorylation in the presence of \u03bb-phosphatase (see Materials\u00a0and\u00a0methods for details of normalization).\n\nWe next investigated how efficiently the phosphatase can dephosphorylate the activating and inhibitory sites when the kinase activity is switched off, as would happen after a calcium pulse. We first activated CaMKII on glass, and then washed away Ca2+/CaM and ATP (see Materials\u00a0and\u00a0methods, Figure 7a). In the previous experiments, we determined the concentration of phosphatase that results in the maximum reduction of phosphorylation levels during activation \u2013 we refer to this concentration of phosphatase as a \u2018saturating\u2019 concentration. With the kinase activity switched off, we initiated dephosphorylation reactions by adding a saturating concentration of \u03bb-phosphatase to the phosphorylated CaMKII. The dephosphorylation reaction was then stopped by washing away the phosphatase at defined time points. The extent of phosphorylation at Thr 286 and Thr 305/306 was then measured as before (Figure 7a).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig7-v2.jpg)\n\n**Figure 7.:** (a) Schematic diagram showing the experimental set up. CaMKII was activated, followed by a wash to remove the components of the activation buffer, and then saturating amounts of \u03bb-phosphatase/PP1\u03b1 (400\u2013800 units) were added for 0, 3, 15, or 30 min. (b) Plot showing the fraction of \u03b1 and \u03b2* holoenzymes that exhibits detectable phosphorylation at the inhibitory site (Thr 305/306) upon treatment with \u03bb-phosphatase for defined time-points. The fractions at 3, 15, or 30 min for \u03b1 and \u03b2* are normalized by the corresponding activated version that has not been exposed to any \u03bb-phosphatase (0 min time-point, whose value is set to 1.0). (c) Same as (b) but for the activating site (Thr 286). (d) Intensity distribution for pThr 286 (561 nm) for CaMKII-\u03b1 (left panel) and CaMKII-\u03b2* (right panel) holoenzymes with detectable phosphorylation after 0, 3, 15, or 30 min of \u03bb-phosphatase treatment (see Materials\u00a0and\u00a0methods for details of normalization).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a) Fraction of CaMKII-\u03b1/\u03b2* holoenzymes with detectable phosphorylation at Thr 305/306 (left) and Thr 286 (right) after 0, 3, 15, or 30 min of treatment with \u03bb-phosphatase, when the kinase activity is switched off. (b) Same as (a), but PP1\u03b1 phosphatase was used. (c) Intensity distribution for pThr 286 (561 nm) for CaMKII-\u03b1 (left panel) and CaMKII-\u03b2* (right panel) holoenzymes with detectable phosphorylation at Thr 286 after 0, 3, 15, or 30 min of PP1\u03b1 treatment (see Materials\u00a0and\u00a0methods for details of normalization).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (a) Schematic diagram depicting the experimental design to measure dephosphorylation kinetics in-solution using \u03bb-phosphatase. (b) Fraction of CaMKII-\u03b1/\u03b2* holoenzymes with detectable phosphorylation at Thr 305/306 (left) and Thr 286 (right) after 0, 3, 15, or 30 min of treatment with \u03bb-phosphatase in-solution, when the kinase activity is switched off by staurosporine. (c) Intensity distribution for pThr 286 (561 nm) for CaMKII-\u03b1 (left panel) and CaMKII-\u03b2* (right panel) holoenzymes with detectable phosphorylation at Thr 286 after 0, 3, 15, or 30 min of \u03bb-phosphatase treatment (see Materials\u00a0and\u00a0methods for details of normalization).\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** Fraction of CaMKII-\u03b1/\u03b2* holoenzymes with detectable phosphorylation at Thr 286 (left) and Thr 305/306 (right) after 60 min of treatment with the activation buffer (see Materials\u00a0and\u00a0methods) in the absence and presence of 100 \u03bcM staurosporine.\n\nIn the absence of competing kinase activity, pThr 305/306 is rapidly dephosphorylated for both CaMKII-\u03b1 and CaMKII-\u03b2* (Figure 7b, Figure 7\u2014figure supplement 1a). In contrast, the rate of dephosphorylation of pThr 286 is slow, with complete dephosphorylation taking more than 30 min for both isoforms (Figure 7c\u2013d, Figure 7\u2014figure supplement 1a). We also measured the dephosphorylation kinetics of CaMKII-\u03b1 and CaMKII-\u03b2* using the catalytic subunit of protein phosphatase 1\u03b1 (PP1\u03b1), an endogenous phosphatase for CaMKII. Slower rates of dephosphorylation at pThr 286 and rapid dephosphorylation at pThr 305/306 are observed for CaMKII-\u03b1 and CaMKII-\u03b2* using PP1\u03b1, as for \u03bb-phosphatase (Figure 7\u2014figure supplement 1b\u2013c).\n\nTo rule out that the resistance of pThr 286 towards rapid dephosphorylation is a consequence of on-glass treatments, we performed experiments in solution using diluted HEK 293T cell lysate (see Materials\u00a0and\u00a0methods) (Figure 7\u2014figure supplement 2a). CaMKII-\u03b1 and CaMKII-\u03b2* were first activated in the diluted cell lysate and then treated with a high concentration of staurosporine (100 \u03bcM), which inhibits kinase activity (Figure 7\u2014figure supplement 3). We then inactivated calmodulin by chelating Ca2+ by EGTA (1 mM), followed by the addition of saturating amounts of \u03bb-phosphatase. Samples were pulled down from this reaction mixture at defined time points, and the phosphorylation at Thr 286 and Thr 305/306 was measured using the single-molecule assay. These experiments also showed slower rates of dephosphorylation at Thr 286 when compared to Thr 305/306 (Figure 7\u2014figure supplement 2b\u2013c).\n\nThe observed resistance of pThr 286 towards rapid dephosphorylation suggests that this site may be less accessible to phosphatases compared to pThr 305/306. Unexpectedly, we found that the addition of Ca2+/CaM to phosphorylated CaMKII enhances the rate of dephosphorylation at Thr 286 by about 4-fold for both CaMKII-\u03b1 and CaMKII-\u03b2* (Figure 8a\u2013c, Figure 8\u2014figure supplement 1). When Ca2+/CaM is present, the pThr 286 signal is reduced at a rate that is comparable to the dephosphorylation rate of pThr 305/306. This effect does not require the addition of ATP, that\u00a0is it is independent of kinase activity. The slower rates of dephosphorylation at Thr 286 is also noted for CaMKII-\u03b2, with the addition of Ca2+/CaM reversing the protection (data not shown).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig8-v2.jpg)\n\n**Figure 8.:** (a) Schematic diagram showing the experimental set up. CaMKII was activated, followed by wash to remove the components of the activation buffer and then saturating amounts of \u03bb-phosphatase were added for 3, 15, or 30 min, in the presence and absence of Ca2+/CaM. (b) Plot showing the fraction of CaMKII-\u03b1 holoenzymes with detectable phosphorylation at the activating site (Thr 286, right panel) after 0 min (activated control) and 3, 15, or 30 min of treatment with saturating amounts of \u03bb-phosphatase in the absence (green trace) and presence (pink trace) of Ca2+/CaM. The fractions at 3, 15, or 30 min are normalized with respect to activated CaMKII that has not been exposed to any \u03bb-phosphatase (0 min, whose value is set to 1.0). (c) Intensity distribution for pThr 286 (561 nm) for CaMKII-\u03b1 holoenzymes with detectable phosphorylation, upon 0, 3, 15, or 30 min of \u03bb-phosphatase treatment in the presence of 5 \u03bcM Ca2+/CaM (see Materials\u00a0and\u00a0methods for details of normalization).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (a) Fraction of CaMKII-\u03b2* holoenzymes with detectable phosphorylation at Thr 286, upon 3 min of \u03bb-phosphatase treatment in the absence and presence of 5 \u03bcM Ca2+/CaM. (b) Intensity distribution of pThr 286 (561 nm) for CaMKII-\u03b2* holoenzymes with detectable phosphorylation, under the same conditions as in (a) (see Materials\u00a0and\u00a0methods for details of normalization).\n\nThe addition of Ca2+/CaM has no effect on the rate of dephosphorylation of pThr 305/306, indicating that Ca2+/CaM does not increase the activity of the phosphatase. These data suggest that, in the absence of Ca2+/CaM, the calmodulin-binding element of CaMKII plays a role in sequestering pThr 286 from phosphatases. The mechanism underlying this protection remains to be understood.\n\n### Slower dephosphorylation at the activating site primes CaMKII for activation by subthreshold concentrations of Ca2+/CaM\n\nThe slower rates of dephosphorylation at Thr 286 might ensure that at least some subunits in a CaMKII holoenzyme retain Ca2+/CaM-independent activity after a calcium pulse has subsided. CaMKII subunits that are phosphorylated on Thr 286 have increased affinity for Ca2+/CaM, which can allow a subthreshold Ca2+-pulse to cooperatively spread Thr 286 phosphorylation within the primed holoenzyme (De Koninck and Schulman, 1998; Meyer et al., 1992; Tse et al., 2007). We tested this by generating a population of CaMKII holoenzymes in which only a small number of subunits are phosphorylated at Thr 286, to determine if they are primed for a response to Ca2+/CaM.\n\nTreatment of activated CaMKII-\u03b1 with \u03bb-phosphatase for 3\u20135 min generated a population in which about 50% of the holoenzymes retained some phosphorylation at Thr 286, while the rest of the holoenzymes had no detectable phosphorylation remaining (Figure 9a\u2013c). The holoenzymes that do retain Thr 286 phosphorylation have reduced levels of phosphorylation per holoenzyme (Figure 9d). When such a sample is incubated with ATP and a sub-saturating level of Ca2+/CaM (25 nM), the extent of phosphorylation for holoenzymes that show detectable pThr 286 is restored to the levels seen for fully activated CaMKII-\u03b1 (Figure 9a\u2013b,d). Treatment with ATP and sub-saturating Ca2+/CaM does not increase the fraction of CaMKII-\u03b1 holoenzymes with detectable phosphorylation at Thr 286 very much, suggesting that some extent of pre-existing phosphorylation on Thr 286 is important for gaining additional phosphorylation with sub-saturating levels of Ca2+/CaM (Figure 9c).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig9-v2.jpg)\n\n**Figure 9.:** (a) Schematic diagram showing the experimental set up. CaMKII was activated, followed by a wash to remove the components of the activation buffer and then saturating amounts of \u03bb-phosphatase were added for 3\u20135 min. The sample was then washed to remove the \u03bb-phosphatase, followed by further treatment with subthreshold concentrations of Ca2+/CaM (25 nM) for 30 min and the autophosphorylation status was measured. (b) Cartoon representation of the different species generated after each treatment. Each species is color-coded and the color schemes are maintained throughout the plots. (c) Fraction of CaMKII-\u03b1 holoenzymes with detectable phosphorylation at Thr 286 is plotted for each species. (d) Intensity distribution of pThr 286 (561 nm) for only those CaMKII-\u03b1 holoenzymes that show any detectable Thr 286 phosphorylation, for the different species of interest as described in (b).\n\nA similar experiment using CaMKII-\u03b2* yields very different results. Here, phosphatase treatment results in substantial reduction in pThr 286 levels. Subsequent treatment with 25 nM Ca2+/CaM and ATP does not result in a marked increase in the extent of Thr 286 phosphorylation per holoenzyme. In contrast,\u00a0~40% of CaMKII-\u03b2* holoenzymes show detectable phosphorylation at Thr 305/306 after treatment with sub-saturating Ca2+/CaM, compared to\u00a0~2% before (data not shown). Thus, in contrast to CaMKII-\u03b1 holoenzymes, CaMKII-\u03b2 holoenzymes tend to become inactivated when subjected to subthreshold levels of Ca2+/CaM, rather than undergoing priming for further activation.\n\n### Concluding remarks\n\nCaMKII is unusual among protein kinases because it is assembled into a large holoenzyme with twelve to fourteen subunits. Analysis of the phosphorylation status of the enzyme using bulk assays, such as Western blots, has been challenging due to difficulties in purifying the holoenzymes, particularly for isoforms with longer kinase-hub linkers. In addition, bulk measurements do not provide a window into the extent of phosphorylation per holoenzyme. To overcome these limitations, we designed a single-molecule TIRF microscopy assay that relies on the capture from mammalian cell lysates of CaMKII holoenzymes tagged with fluorescent proteins. Immobilization of the captured holoenzymes in a flow-cell apparatus allows activation and dephosphorylation of CaMKII to be carried out readily, followed by measurement of the phosphorylation status using fluorescently labeled site-specific antibodies. Using this assay, we discovered that CaMKII-\u03b1 and CaMKII-\u03b2, the two major isoforms in the brain, differ in the balance of activating and inhibitory phosphorylation. CaMKII-\u03b1, with a shorter linker, readily acquires activating phosphorylation, while CaMKII-\u03b2, with a longer linker, is biased towards inhibitory phosphorylation. We also tested the effects on autophosphorylation of the kinase-hub linkers from CaMKII-\u03b3 (110 residues) and CaMKII-\u03b4 (31 residues). The shorter CaMKII-\u03b4 linker behaves like that of CaMKII-\u03b1 in terms of autophosphorylation outcome. The outcome for the longer CaMKII-\u03b3 linker is closer to that seen with the CaMKII-\u03b2 linker.\n\nThe difference in autophosphorylation balance between CaMKII-\u03b1 and CaMKII-\u03b2 can be explained by the fact that Thr 286 can only be autophosphorylated in trans, between two kinase domains, since this residue is located too far from the active site of the subunit of which it is a part. Phosphorylation of Thr 286 is known to occur predominantly through trans-autophosphorylation within a holoenzyme, rather than phosphorylation between different holoenzymes (Rich and Schulman, 1998). In contrast, inhibitory phosphorylation on Thr 305/306 can occur either in cis or in trans. We expect that the longer linker length in CaMKII-\u03b2 results in a reduction in the rate of trans-autophosphorylation of Thr 286, while the rate of cis-autophosphorylation of Thr 305/306 is the same for CaMKII-\u03b1 and CaMKII-\u03b2. As the kinase-hub linker length increases, the rate of activating trans-phosphorylation decreases, which switches the balance towards inhibitory phosphorylation in CaMKII-\u03b2. The switch is expected to be sharpened by the fact that inhibitory autophosphorylation blocks Ca2+/CaM binding, thereby preventing activating phosphorylation.\n\nThere is a parallel between the architecture of CaMKII and A-kinase anchoring proteins (AKAPs), which are connected to cAMP-dependent protein kinase (PKA) by long flexible linkers. It has been suggested that the length and flexibility of the AKAP linker determines the spatial range over which PKA can phosphorylate its substrates (Smith et al., 2013). Since CaMKII holoenzymes are anchored within the post-synaptic density, the differences in the lengths of the kinase-hub linkers in different isoforms may likewise control the spatial extent of substrate phosphorylation enabled by the activation of a particular CaMKII holoenzyme. Our work has now revealed a key difference between CaMKII and AKAP:PKA complexes, which is that the kinase-hub linker length in CaMKII can control the activation status of the holoenzyme, not just the spatial range of the kinase.\n\nOur experiments show that activating phosphorylation on Thr 286 is resistant to dephosphorylation, whereas inhibitory phosphorylation on Thr 305/306 is reversed rapidly. This suggests that the phosphate group on Thr 286 is somehow protected from phosphatases. The protection afforded to pThr 286 is released by the addition of Ca2+/CaM, suggesting that the calmodulin-binding element of CaMKII adopts a conformation that protects pThr 286 in the absence of Ca2+/CaM. The presence of such a conformational change may explain the apparent discrepancy between our results and studies reporting that pThr 286 undergoes very rapid dephosphorylation in neurons (Lee et al., 2009). The conclusion that pThr 286 is rapidly dephosphorylated relied on the utilization of a FRET-based sensor, Camui (Takao et al., 2005), which reports on conformational changes undergone by CaMKII, and does not report on phosphorylation directly. It will be interesting to see whether the release of Ca2+/CaM from CaMKII after activation results in a compaction of CaMKII that might explain both the protection of pThr 286 that we observe and the rapid relaxation back to a compact state that is reported by the Camui sensor.\n\nThe observed resistance of pThr 286 to rapid dephosphorylation by phosphatases can enable CaMKII activity to persist for some time after the decay of Ca2+ pulses. In addition, CaMKII subunits that are phosphorylated on Thr 286 have higher affinity for Ca2+/CaM, which can facilitate the rebinding of Ca2+/CaM during subsequent pulses of calcium. Due to the cooperativity of Ca2+/CaM binding to CaMKII, such a priming mechanism enables CaMKII holoenzymes that have retained some activating phosphorylation to rapidly reacquire higher levels of phosphorylation, even in the presence of subthreshold concentrations of Ca2+/CaM. This may enable the history of synaptic activity, including the frequency and the gaps between periods of activity, to be encoded in CaMKII.\n\nThere are differences in the expression levels of CaMKII-\u03b1 and CaMKII-\u03b2 in neurons and these levels can be regulated by synaptic activity (Thiagarajan et al., 2002). Differences in these levels can result in differences in cellular targeting and stimulus frequency responses (De Koninck and Schulman, 1998; Shen et al., 1998). We now show that expression level differences between isoforms can also result in changing the balance of activating and inhibitory autophosphorylation. The lower inhibitory autophosphorylation of CaMKII-\u03b1 relative to that in CaMKII-\u03b2 can have a number of consequences. Autophosphorylation of the inhibitory site reduces binding of CaMKII-\u03b1 to the postsynaptic density (PSD) in vitro (Strack et al., 1997). By contrast, abrogation of such autophosphorylation greatly reduces dissociation of the kinase from PSD in neurons (Shen and Meyer, 1999) and increases PSD binding in transgenic animals, thereby altering synaptic plasticity and long-term potentiation (Elgersma et al., 2002). The rapid inhibitory phosphorylation of CaMKII-\u03b2, on the other hand, limits binding of Ca2+/CaM, which is required for dissociation of the kinase from F-actin (Shen and Meyer, 1999; Wang et al., 2019), an important step in structural remodeling of the synapse (Kim et al., 2015). Our results show that by varying the relative expression levels of \u03b1 and \u03b2-isoforms, the cell can generate CaMKII heterooligomers with variable response to activating signals, thereby fine-tuning the response of CaMKII to Ca2+ spike trains in the brain.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (human)</td>\n      <td>CaMKII-\u03b1</td>\n      <td></td>\n      <td>Uniprot_ID: Q9UQM7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>CaMKII-\u03b2</td>\n      <td></td>\n      <td>Uniprot_ID: Q13554</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>CaMKII-\u03b2\u2019E</td>\n      <td></td>\n      <td>Uniprot_ID: Q13554-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>CaMKII-\u03b3</td>\n      <td></td>\n      <td>Uniprot_ID: Q13555</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>CaMKII-\u03b4</td>\n      <td></td>\n      <td>Uniprot_ID: Q13557</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET21a-BirA</td>\n      <td>Addgene</td>\n      <td>plasmid # 20857</td>\n      <td>for biotinylation of the AVI tag in HEK 293T cells</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>EYFP-CaM</td>\n      <td>Addgene</td>\n      <td>plasmid # 47603</td>\n      <td>coexpressed for in cell activation of CaMKII</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pEGFP-C1 (plasmid)</td>\n      <td>Clontech, Mountain View, CA</td>\n      <td></td>\n      <td>vector backbone for inserting the CaMKII genes</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pSNAPf (plasmid)</td>\n      <td>New England Biolabs, MA</td>\n      <td>N9183S</td>\n      <td>vector backbone</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HEK 293T</td>\n      <td>UC Berkeley cell culture facility</td>\n      <td></td>\n      <td>authenticated using STR profiling and tested negative for mycoplasma</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-CaMKII (phospho T286); mouse monoclonal</td>\n      <td>Abcam</td>\n      <td>ab171095</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-CaMKII (phospho T306); rabbit polyclonal</td>\n      <td>PhosphoSolutions</td>\n      <td>p1005-306</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Poly-L-lysine PEG (PLL:PEG)</td>\n      <td>SuSoS, D\u00fcbendorf, Switzerland</td>\n      <td>PLL(20)-g[3.5]- PEG(2)</td>\n      <td>preparation of flow chambers</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>streptavidin</td>\n      <td>Sigma-Aldrich</td>\n      <td>S0677</td>\n      <td>functionalize the glass substrates for capturing biotinylated CaMKII</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>calmodulin</td>\n      <td>Sigma-Aldrich</td>\n      <td>C4874</td>\n      <td>activation of CaMKII</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>\u03bb-phosphatase</td>\n      <td>New England Biolabs, MA</td>\n      <td>P0753L</td>\n      <td>phosphatase</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>PP1\u03b1</td>\n      <td>EMD Millipore, Burlington, MA</td>\n      <td>14\u2013595</td>\n      <td>phosphatase</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PEG-Biotin</td>\n      <td>SuSoS, D\u00fcbendorf, Switzerland</td>\n      <td>PLL(20)-g[3.5]- PEG(2)/PEG(3.4)- biotin(50%)</td>\n      <td>preparation of flow chambers</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>1% protease inhibitor cocktail</td>\n      <td>Sigma</td>\n      <td>P8340</td>\n      <td>protease inhibitor cocktail for lysis buffer</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>0.5% phosphatase inhibitor cocktail 2 and 3</td>\n      <td>Sigma</td>\n      <td>P0044 and P5726</td>\n      <td>phosphatase inhibitor cocktails for lysis buffer</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>staurosporine</td>\n      <td>Abcam</td>\n      <td>ab120056</td>\n      <td>kinase inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>cyclosporin A</td>\n      <td>Sigma-Aldrich</td>\n      <td>30024</td>\n      <td>phosphatase inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>okadaic acid</td>\n      <td>Abcam</td>\n      <td>ab141831</td>\n      <td>phosphatase inhibitor</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FIJI (ImageJ)</td>\n      <td>open access software, see https://imagej.net/Fiji/Downloads</td>\n      <td></td>\n      <td>image processing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>in-house Matlab codes</td>\n      <td>open access, see Source code 1</td>\n      <td></td>\n      <td>image processing</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>sticky-Slide VI 0.4</td>\n      <td>Ibidi</td>\n      <td>80608</td>\n      <td>flow chambers</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>glass coverslips</td>\n      <td>Ibidi</td>\n      <td>10812</td>\n      <td>functionalized substrates</td>\n    </tr>\n  </tbody>\n</table>\n\n### Preparation of plasmids\n\nHuman CaMKII-\u03b1 (Uniprot_ID: Q9UQM7) and human CaMKII-\u03b2 (Uniprot_ID: Q13554) were cloned into the pEGFP-C1 vector backbone (Clontech, Mountain View, CA), after modifying the vector to contain a biotinylation sequence (Avitag, GLNDIFEAQKIEWHE) followed by a linker (GASGASGASGAS) at the N-terminus of mEGFP. CaMKII-\u03b1 or CaMKII-\u03b2 was cloned at the C-terminus of mEGFP, with a linker sequence (PreScission protease site: LEVLFQGP) separating the mEGFP tag from the coding sequence of CaMKII-\u03b1/CaMKII-\u03b2 (i.e., the final construct is organized as Avitag-linker-mEGFP-linker-CaMKII-\u03b1/CaMKII-\u03b2). These constructs were then used as a template to produce the other CaMKII-variants. The splice-variant of CaMKII-\u03b2 (CaMKII-\u03b2\u2019E) was produced by deleting 155 residues the \u03b2-isoform (Uniprot_ID: Q13554-3). CaMKII-\u03b2*, CaMKII-\u03b3*, CaMKII-\u03b4*, and CaMKII-\u03b2\u2019E* were produced by replacing the linker in CaMKII-\u03b1 with that from CaMKII-\u03b2 (Uniprot_ID: Q13554), CaMKII-\u03b3 (Uniprot_ID: Q13555), CaMKII-\u03b4 (Uniprot_ID: Q13557), and CaMKII-\u03b2\u2019E, respectively (Figure 1\u2014figure supplement 1). mCherry-tagged variants were generated by replacing the mEGFP tag with mCherry in these constructs. pET21a-BirA was a gift from Alice Ting (Addgene plasmid # 20857). BirA was cloned into the pSNAPf vector (New England Biolabs, MA) after modifying the vector backbone to remove the SNAP-tag. EYFP-CaM was a gift from Emanuel Strehler (Addgene plasmid # 47603). The EYFP tag was removed from this vector to generate the mammalian expression construct for calmodulin. All constructs with large domain insertions and deletions were made using standard protocols for Gibson assembly (New England Biolabs, MA). All point mutants used were generated using the standard Quikchange protocols (Agilent Technologies, Santa Clara, CA).\n\n### Tissue culture and DNA transfection\n\nHEK 293T cells were obtained from the UC Berkeley cell culture facility (authenticated using STR profiling and tested negative for mycoplasma). These cells were grown in Dulbecco's Modified Eagle Medium + GlutaMaX (DMEM, Gibco, Thermo Fisher) that is supplemented with 10% FBS (Avantor Seradigm, VWR, Radnor, Pennsylvania), Antibiotic-Antimycotic (AA, Thermo Fisher) at 100X dilution and 20 mM HEPES buffer and maintained at 37\u00b0C under 5% CO2. Transient transfection of CaMKII variants were done using the standard calcium phosphate protocol (Wigler et al., 1977). Briefly, CaMKII plasmids (200 ng/400 ng/800 ng depending on the construct) were mixed with 6 \u03bcg of empty pcDNA3.1 vector and 1 \u03bcg of BirA. This DNA mix was then diluted with ddH2O (10X), 250 mM CaCl2 was added and the mixture was allowed to sit for 15 min at room temperature. Following this incubation, 2X HBS buffer (50 mM HEPES, 280 mM NaCl, 1.5 mM Na2HPO4, pH 7.1) was added to it dropwise and mixed thoroughly by reverse pipetting. This mixture was then added to the HEK 293T cells and the\u00a0cells were allowed to express the protein for 18\u201320 hours before harvesting.\n\n### Preparation of flow cells for single-molecule microscopy\n\nAll single-molecule experiments were performed in flow chambers (sticky-Slide VI 0.4, Ibidi, Planegg, Germany) that were assembled with functionalized glass substrates (Ibidi glass coverslips, bottom thickness 170 \u00b5m+/\u20135 \u00b5m). The glass substrates were first cleaned using 2% Hellmanex III solution (Hellma Analytics) for 30 min, followed by a 30 min sonication in 1:1 mixture (vol/vol) of isopropanol:water. The glass substrates were then dried with nitrogen and cleaned for another 5 min in a plasma cleaner (Harrick Plasma PDC-32 G, Ithaca, NY). These cleaned glass substrates were used to assemble the flow chambers immediately after plasma cleaning. After assembly, the glass substrates were treated with a mixture of Poly-L-lysine PEG and PEG-Biotin (1000:1, both at 1 mg/mL) for 30 min (SuSoS, D\u00fcbendorf, Switzerland). The glass substrates were then washed with 2 mL of Dulbecco\u2019s phosphate-buffered saline (DPBS, Gibco, Thermo Fisher). Streptavidin (Sigma-Aldrich, S0677) was added to these glass substrates at a final concentration of 0.1 mg/mL and incubated for 30 min. Following incubation, excess streptavidin was washed away using 2 mL of DPBS and these assembled flow chambers with streptavidin-coated glass substrates were used for all our single-molecule experiments.\n\n### Cell lysis and pulldown of biotinylated CaMKII in flow chambers\n\nCaMKII variants were allowed to express for 18\u201320 hours before they were harvested. The co-expression of the E. coli biotin ligase, BirA, with the CaMKII variants bearing an Avitag, results in the biotinylation of CaMKII in HEK 293T cells. After harvesting, the cells were lysed in a lysis buffer containing 25 mM Tris at pH 8, 150 mM KCl, 1.5 mM TCEP-HCl, 1% protease inhibitor cocktail (P8340, Sigma), 0.5% phosphatase inhibitor cocktail 2 (P0044, Sigma) and 3 (P5726, Sigma), 50 mM NaF, 15 \u03bcg/ml benzamidine, 0.1 mM phenylmethanesulfonyl fluoride and 1% NP-40 (Thermo Fisher). The cell lysate was then diluted 100\u2013200 times in DPBS and 100 \u03bcL of this diluted cell lysate was added to a well in the flow chamber for 1 min, before washing it out with 1 mL of DPBS. During this incubation, the biotinylated mEGFP-CaMKII variants were immobilized on the surface of the functionalized glass substrates, owing to the streptavidin-biotin interaction. A buffer exchange was then done in the flow chamber to replace the DPBS with the gel filtration buffer (25 mM Tris, 150 mM KCl, 1.5 mM TCEP, pH 8).\n\n### Activation of CaMKII on glass substrates\n\nThe glass-immobilized CaMKII holoenzymes were activated by flowing in an activation buffer (with a final concentration of 100 \u03bcM CaCl2, 10 mM MgCl2, 500 \u03bcM ATP in the gel filtration buffer and the CaM concentration varies between 0.02\u20135 \u03bcM CaM (Sigma-Aldrich, C4874) depending on the experiment) into the flow chambers for 60 min. Following this incubation, the activation buffer was washed out using 2 mL of the gel filtration buffer. All experiments have been replicated at least 3\u20135 times using samples prepared over different days.\n\n### Activation of CaMKII in HEK 293T cells\n\nHEK 293T cells overexpressing CaMKII and CaM were washed with HBSS buffer (Gibco, Thermo Fisher, 14170112) plus 25 mM HEPES and incubated at room temperature for 5\u201310 min. The cells were then treated with 10 \u03bcM ionomycin (Sigma-Aldrich, 407953) and 3 mM CaCl2 (final concentration) for 10\u201315 min, activating CaMKII within the cell. Unactivated samples were obtained from cells treated with HBSS buffer alone for the same amount of time. The cells were then lysed, and activated or unactivated CaMKII was pulled down on functionalized glass substrates without further treatment. For experiments that involved incubation with phosphatase inhibitors, 250 nM cyclosporin A (Sigma-Aldrich, 30024) and 250 nM okadaic acid (Abcam, ab141831) were added to the cells for 60 min prior to the activation of CaMKII. The same procedure as above was then followed to activate CaMKII in cells and pull down activated or unactivated CaMKII directly from the cell lysates.\n\n### Immunofluorescence assay with phosphospecific antibodies\n\nThe autophosphorylation status of the CaMKII holoenzyme at the activating (Thr 286) and the inhibitory (Thr 305/306) sites was estimated using phosphospecific antibodies for pThr 286 (Abcam: ab171095) and pThr 305/306 (PhosphoSolutions: p1005-306). The immobilized, activated and unactivated CaMKII holoenzyme was incubated with a mixture of these two phosphospecific primary antibodies (in a 1:1 ratio using a 1:500 dilution in 5% (w/v) BSA) for 45 min. Subsequently, excess primary antibodies were washed out with 3 mL DPBS. This was followed by a 30 min incubation with a 1:1 mix of Alexa-labeled secondary antibodies (1:1000 dilution in 5% BSA), that are complementary to the primary antibodies used. Anti-mouse secondary antibody labeled with Alexa-594 (Cell Signaling Technology) was used for pThr 286-specific primary antibody; anti-rabbit secondary antibody labeled with Alexa-647 (Cell Signaling Technology, Danvers, MA) was used for the pThr 305/306-specific primary antibody. After incubation with the secondary antibody, the flow chambers were washed again using 3 mL of DPBS and the samples were imaged using Total Internal Reflection Fluorescence (TIRF) microscopy.\n\n### Validation of the primary antibodies\n\nThe two primary antibodies for pThr 286 and pThr 305/306 do not cross-react with each other\u2019s target sites, as shown by mutations in their respective epitopes (T286 is mutated to A286 and the epitope for the Thr 305/306 primary antibody is changed from T305T306MLATRNFS to A305V306I) in CaMKII-\u03b1 (Figure 2\u2014figure supplement 1). These primary antibodies also do not show any reactivity with the unactivated forms of CaMKII-\u03b1 or CaMKII-\u03b2, as pulled down from the cell lysate and before any treatment with activation buffer (data not shown). Additionally, the primary antibody incubation time was optimized so that the phosphosites were nearly saturated by their respective antibodies and we chose the incubation time to be 45 min in all our assays (data not shown).\n\n### Phosphatase assay when the kinase is active\n\nTo test how the presence of phosphatase affects the phosphorylation status of CaMKII when the kinase is active, increasing amounts of \u03bb-phosphatase (200\u2013800 units, New England Biolabs) and 1 mM MnCl2 was added to samples of glass-immobilized CaMKII, in the presence of activation buffer containing 5 \u03bcM Ca2+/CaM. 1 unit of \u03bb-phosphatase is defined as the amount of enzyme that hydrolyzes 1 nmol of p-nitrophenyl phosphate in 1 min at 30\u00b0C (New England Biolabs). After 45 min of incubation, the flow chambers were washed with 2 mL DPBS to remove the \u03bb-phosphatase and the activation buffer. The phosphorylation of Thr 286 and Thr 305/306 was then examined using the immunofluorescence assay described above. No further reduction in phosphorylation was observed upon adding more than 400 units of \u03bb-phosphatase and this is considered as a saturating amount of phosphatase.\n\n### Phosphatase assay when the kinase activity is switched off\n\nTo test the sensitivity of the two autophosphorylation sites to phosphatases in the absence of kinase activity, activated CaMKII was treated with two different phosphatases, \u03bb-phosphatase (New England Biolabs) and PP1\u03b1 (EMD Millipore, Burlington, MA). A phosphatase buffer that contains 1 mM MnCl2 and 400\u2013800 units of \u03bb-phosphatase or 800 units of PP1\u03b1 was added to the flow chambers displaying activated CaMKII, after the activation buffer had been washed out. 1 unit of PP1\u03b1 is defined as the amount of enzyme that releases 1 nmol phosphate per minute from the phosphorylated substrate DiFMUP (6,8-difluoro-4-methylumbelliferyl phosphate) (EMD Millipore). The dephosphorylation reactions were carried out for defined periods of time (3, 15, or 30 min), following which the phosphatase buffer was washed away with 2 mL DPBS and the autophosphorylation states were examined using the immunofluorescence assay described above.\n\n### Phosphatase assay in solution\n\nThe HEK 293T cell lysate was diluted by 1:100\u2013200. CaMKII was activated in this diluted lysate (in solution) by adding an activation buffer containing 5 \u03bcM Ca2+/CaM and 5 mM Tris-buffered TCEP (Sigma-Aldrich). After activation for 45 min, 100 \u03bcM staurosporine (Abcam, ab120056) was added to this reaction mix to inhibit the kinase activity. After inhibiting CaMKII for 10 min, saturating amounts of \u03bb-phosphatase (400 units) was added to the solution. Samples were pulled down after 3 or 15 min of incubation and the phosphorylation status on Thr 286 and Thr 305/306 was measured. We verified that 100 \u03bcM staurosporine was efficient in switching off kinase activity by activating CaMKII-\u03b1/\u03b2* in the presence of the inhibitor. This treatment completely abolished any autophosphorylation of Thr 286 or Thr 305/306 (Figure 7\u2014figure supplement 3).\n\n### Thr 286-phosphorylation recovery assay for CaMKII priming\n\nActivated samples of glass-immobilized CaMKII were treated with saturating amounts of \u03bb-phosphatase and 1 mM MnCl2 for 3\u20135 min, followed by washing away of the phosphatase buffer with 2 mL of DPBS. This sample was then incubated with an activation buffer (see details above) containing subthreshold concentrations of 25 nM Ca2+/CaM for 30 min. The activation buffer was aspirated out with 2 mL DPBS and the phosphorylation status at the activating and inhibitory sites were measured.\n\n### Single-molecule total internal reflection fluorescence (TIRF) microscopy\n\nSingle-particle total internal reflection fluorescence images were acquired on a Nikon Eclipse Ti-inverted microscope equipped with a Nikon 100 \u00d7 1.49 numerical aperture oil-immersion TIRF objective, a TIRF illuminator, a Perfect Focus system, and a motorized stage. Images were recorded using an Andor iXon electron-multiplying charge-coupled device camera. The sample was illuminated using the LU-N4 laser unit (Nikon, Tokyo, Japan) with solid state lasers for the 488 nm, 561 nm and 640 nm channels. Lasers were controlled using a built-in acousto-optic tunable filter (AOTF). The 405/488/561/638 nm Quad TIRF filter set (Chroma Technology Corp., Rockingham, Vermont) was used along with supplementary emission filters of 525/50 m, 600/50 m, 700/75 m for 488 nm, 561 nm, 640 nm channel, respectively. 3-color image acquisition was performed by computer-controlled change of illumination and filter sets at 42 different positions from an initial reference frame, so as to capture multiple non-overlapping images. Image acquisition was done using the Nikon NIS-Elements software. mEGFP-CaMKII, Alexa-594-labeled anti-Thr 286 antibody, and Alexa-647-labeled anti-Thr 305/306 antibody were imaged by illuminating 488 nm laser set to 5.2 mW, 561 nm laser set to 6.9 mW, and 640 nm laser set to 7.8 mW, respectively. The laser power was measured with the field aperture fully opened. Images were acquired using an exposure time of 80 milliseconds for 488 nm and 561 nm, and an exposure time of 100 milliseconds for 640 nm. The only exception was for acquiring mCherry single-molecule images, where an exposure of 200 milliseconds was used. Epifluorescence images were also acquired using a Nikon Eclipse Ti-inverted microscope with a Nikon 20x objective and an Andor iXon electron-multiplying charge-coupled device camera. A mercury arc lamp (Lumencor Tech., Beaverton, OR) was used for epifluorescence illumination at 488 and 561 nm.\n\n### Analyses of single-molecule TIRF data\n\nIndividual single particles in all three channels were detected and localized using the single particle tracking plugin TrackMate in ImageJ (Jaqaman et al., 2008; Schindelin et al., 2012). The particles were localized with the Difference of Gaussian (DoG) detector with an initial diameter set to six pixels, typically leading to the detection of 25000\u201350000 particles per sample. The detection threshold value in TrackMate is set to 12 or 15 depending on the wavelength at which the image is acquired. The particles outside the center area of 350 \u00d7 350 pixel2 were excluded due to heterogeneous TIRF illumination. No further filtering processes was applied in TrackMate.\n\nIntensity distribution and fraction of holoenzymes showing any detectable phosphorylation were analyzed using custom in-house software written in MATLAB (these programs are provided as a source code file). For analyzing the fraction of holoenzymes that show any detectable phosphorylation at a given phosphosite, the XY-coordinates for each particle were extracted from the TrackMate data. For each mEGFP-CaMKII, distances to all the antibody particles were computed, and colocalization was identified if the inter-particle distance was below two pixels. The fraction of CaMKII holoenzymes (i.e., mEGFP-CaMKII with 488-channel intensity greater than 2500 arbitrary units) with detectable phosphorylation was computed as a ratio of the number of CaMKII colocalized with antibody to the total number of CaMKII holoenzymes. In a typical case, false-positive colocalization due to coincidentally neighbored particles was less than 0.5%, as determined from analyzing multiple, unrelated sets of images with comparable particle density. The intensity values acquired from TrackMate statistics data for the pThr 286 and pThr 305/306 antibody-channels were used to calculate an intensity histogram, for the colocalized (i.e., corresponding to holoenzymes that show detectable phosphorylation) and the non-colocalized spots (i.e., corresponding to holoenzymes that do not show any detectable phosphorylation with intensity values in the phosphospecific antibody channel being zero). This results in scaling of the area under the histogram for the antibody intensity by a factor that takes into account the fraction of holoenzymes that show no detectable phosphorylation. A bin width of 500 was used for computing the histogram. After calculating the distribution, we plotted the intensity histogram for only the colocalized spots and an intensity cutoff of about 15000 arbitrary units.\n\nFor analysis of samples where mEGFP-CaMKII-\u03b1 and mCherry-CaMKII-\u03b2* were co-transfected (i.e., \u03b1:\u03b2* ratio equals 3:1 and 1:1), we first identified the heterooligomeric holoenzyme population (~80% of the total holoenzymes, data not shown) and then calculated what fraction of these heterooligomers showed detectable inhibitory phosphorylation. An intensity histogram was also plotted for the pThr 305/306 signal for these holoenzymes, as described above.\n",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "438826fb-8ac0-4cd8-ad2b-450b4fb645e1",
+      "submission_id": "f41808e8-c501-4247-8548-20a185add488",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tony Hunter, Salk Institute for Biological Studies United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53670.sa1](https://doi.org/10.7554/eLife.53670.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe studies provide new insights into the mechanisms of activation and inactivation of CaMKII in response to elevated calcium. They highlight a role for the length of the linker between the catalytic domain and the hub of CaMKII in determining the extent to which an activating versus an inhibitory autophosphorylation occurs in response to calcium, and explains why the kinetics of activation and inactivation of the CaMKII-\u03b1 and CaMKII-\u03b2 isoforms are different. Overall, this paper provides a significant advance in our understanding of the regulation of this key protein kinase.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Flexible linkers in CaMKII control the balance between activating and inhibitory autophosphorylation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Tony Hunter as the Reviewing Editor and Jonathan Cooper as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: John D Scott (Reviewer #1); Stefan Knapp (Reviewer #2).\n\nOur decision has been reached after consultation between the three reviewers. Based on these discussions, we are pleased to inform you that we will offer you the opportunity of submitting a revised version of your paper to eLife.\n\nThe new insights you have obtained through your biochemical, single molecule studies of the mechanisms of activation and inactivation of CaMKII in response to elevated calcium, in which the length of the linker between the central hub and the catalytic domain dictates whether autophosphorylation is primarily at the T286 activating site or at the T305/306 inhibitory sites, provide a significant advance in our understanding of the regulation of this key enzyme. Your studies have led to the formulation of an intricate model for the activation and inactivation of CaMKII's that may prove challenging for some readers to fully appreciate, but the in vitro data are of sufficient interesting for publication in eLife, and they may stimulate more research focusing on the role of the CaMKII-\u03b2 isoform in more relevant cell types.\n\nThe main experimental issue to be addressed is as follows. While the reviewers agree that the most interesting outcome of your analysis is the influence of the length of the catalytic domain-hub linker on the nature of the Ca2+/CaM-activated autophosphorylation events, they indicate that some further experiments with additional linker lengths would strengthen your conclusions. Currently, you only tested the natural ~30 and ~200 residues. However, it would be of mechanistic interest to know whether the 30 residue linker (in CaMKII-\u03b1) is the optimal length for Thr286 trans-autophosphorylation, or whether the optimal length is significantly shorter or longer than this. Likewise, what is the minimal linker length for inhibitory autophosphorylation? Testing additional, intermediate linker lengths would enable you to address this \u2013 perhaps natural CaMKII isoform linkers of different lengths exist that could be tested. Also, for completeness sake, it would be ideal if you tested the reciprocal CaMKII-\u03b1/\u03b2 chimera, i.e., CaMKII-\u03b1*, in which the CaMKII-\u03b1 linker is swapped into CaMKII-\u03b2.\n\nAnother concern is that the model still represents a rather artificial system of ectopically expressed fusion proteins. In particular, the \u03bb phosphatase used here is known to have very broad specificity, suggesting that more relevant and selective Ser/Thr phosphatases that are known to interact and regulate CaMKII, such as PP1 and PP2A, may produce different dephosphorylation kinetics. \u03bb phosphatase is a rather small, highly active protein of ~24 kDa, whereas the eukaryotic cell PPI and PP2A phosphatase holoenzyme complexes are significantly larger, and it is certainly possible that the kinetics of CaMKII dephosphorylation by these enzymes might be significantly slower, perhaps because of steric access issues.\n\nReviewer #1:\n\nAs stated by Bhattancharyya et al. CaMKII is unusual among protein kinases because it is assembled into a large holoenzyme with twelve to fourteen subunits. Analysis of the phosphorylation status of the enzyme using bulk assays, such as Western blots, has been challenging due to difficulties in purifying the holoenzymes, particularly for isoforms with longer kinase-hub linkers. To circumvent this problem the authors designed an elegant designed a single-molecule TIRF microscopy assay that relies on the capture from mammalian cell lysates of CaMKII holoenzymes tagged with fluorescent proteins. Using this approach they conclude that CaMKII-a and CaMKII-b, the two major isoforms in the brain, differ in the balance of activating and inhibitory phosphorylation. This can be explained in part by the differences in the length of a flexible linker that differs between the CaMKII-a and CaMKII-b isoforms.\n\nOverall, this is a well written and detailed study. The rigorous biochemical approach of the Kuriyan lab is balanced with the power of single molecule fluorescence approaches that have been pioneered by the Grove lab. This has led to the formulation of an intricate model for the activation and inactivation of CaMKII's that may prove challenging for some readers to fully appreciate. I only have a few minor comments.\n\n1) I wonder if there is merit in incorporating Figure S3 into the body of the text. I recognize that this is already a vast study of nine full figures, but the data on dephosphorylation in a cellular context is a nice addition to the study.\n\n2) Figure 5 is necessary but quite complicated. I wonder if there is any way to simplify this section.\n\n3) Experiments with small molecule inhibitors such as staurosporine are appropriate, but I wonder if there would be benefit from including work with more established CaMKII antagonists such as KN62.\n\nReviewer #2:\n\nBhattacharyya et al. studied the autophosphorylation kinetics of the two main Ca/calmodulin-dependent protein kinase II (CaMKII) isozymes expressed in brain: CaMKII-\u03b1 and CaMKII-\u03b2. To do this, the authors developed a single-molecule assay to measure the phosphorylation status of CaMKII using expression constructs of CaMKII isoforms expressed with a N-terminal fluorescent proteins (mEGFP) fused to a biotin tag for easy capturer on coated glass plates and subsequent visualization, by total internal reflection fluorescence (TIRF) microscopy. Phosphorylation states were detected by phosphorylation site specific antibodies recognizing the activating phosphorylation site Thr286 as well as the two inhibitory sites Thr305/306.\n\nCaMKII constitute a family of enzymes that play a key role in learning and memory by mediating signalling after Ca2+ influx. Kinases of this family form dodecameric or tetradecameric holoenzymes that may contain also contain heteroligomeric assemblies of different isoforms that share high sequence homology. The oligomeric state facilitates auto-phosphorylation within the same oligomer allowing for rapid amplification of transient Ca signals. The authors make the intriguing discovery that the linker region between the oligomerization domain and the kinase domain which is much longer in the \u03b2 isoform modulates autophosphorylation behaviour: CaMKII-\u03b1 which has a 31-residue linker quickly autophosphorylated on the activating site (Thr286) with relatively little inhibitory phosphorylation on Thr305/306. In contrast, CaMKII-\u03b2, which has a longer ~200-residue linker preferentially autophosphorylated at the inhibitory sites Thr305/306 with less activating phosphorylation on the activating site Thr286. A mutant of CaMKII-\u03b1 that contains the \u03b2 linker confirmed that the difference in autophosphorylation is indeed a result of the linker region and not due to differences in the catalytic or oligomerization domains. Thus, CaMKII activity in cell can potentially regulated by different ration of \u03b1 and \u03b2 isoforms, generating heterooligomers with variable response to activating Ca/calmodulin signals. In addition, de-phosphorylation was studied using non-specific l-phosphatase showing again linker dependent differences.\n\nThe reported activation and inactivation data of this key enzyme system are certainly interesting. Experimental data are sound and have been interpreted with care. My only concern is, that the model still represents a very artificial system of ectopically expressed fusion proteins. In particular, the phosphatase used is known to have very broad specificity suggesting that more relevant and selective Ser/Thr phosphatases that are known to interact and regulate CaMKII such as PP1 and PP2a, may produce different dephosphorylation kinetics. However, I think that the in vitro data are however sufficiently interesting for publication in eLife when limitations are more clearly highlighted and they may stimulate more research focussing on the role of the \u03b2 isoform in more relevant cell types.\n\nSpecifically:\n\na) The notion that \u03b1 and \u03b2 ratios regulate activity could be supported by (available) expression data in different cell types. Such data would at least demonstrate that the proposed regulatory mechanism is indeed observed.\n\nb) The heading \"The balance between inhibitory and activating autophosphorylation is maintained upon activation of CaMKII in cells\" is misleading. The experiments are carried out in lysates using ectopically expressed protein in HEK293T cells. Similarly, the heading \"Slower dephosphorylation at the activating site primes CaMKII for activation by incoming Ca2+ pulses\" suggests that signalling events have been studied downstream of Ca2+ pulses \u2013 this is not the case as only dephosphorylation kinetics by l-phosphatase has been experimentally assessed. The authors should also discuss that CaMKII activation in neurons is extremely transient (approximately 1 min duration). This is probably not within the time resolution of the current experimental setup.\n\nReviewer #3:\n\nThis biophysical study explores the differences in the autophosphorylation behavior of CaMKII-\u03b1 and CaMKII-\u03b2. These two isoforms differ mainly in the length of the flexible linker between the N-terminal kinase domain and the C-terminal hub domain: ~30 residues for CaMKII-\u03b1 and ~200 residues for -\u03b2. The three autophosphorylation sites examined were Thr286 and Thr305/306, just C-terminal to the kinase domain. It had been shown previously that Thr286 is autophosphorylated in trans (but within the oligomeric CaMKII structure) and activates CaMKII kinase activity, and that Thr305/306 can be autophosphorylated in cis or in trans and is inhibitory. Using single-molecule TIRF microscopy, the authors' main finding is that autophosphorylation of Thr286 is dependent on the length of the kinase-hub linker, with a shorter linker (as in CaMKII-\u03b1) facilitating Thr286 autophosphorylation (in trans). They also explored the susceptibility of these phosphorylation sites to phosphatase activity.\n\nAlthough these results will be of interest to those in the CaMKII field, it is debatable whether the study, in its current form, is of high enough significance to merit publication in eLife. Given the authors' main finding that the kinase-hub linker length plays a crucial role in the activating/inhibitory phosphorylation ratio, one would think that they would have explored this feature more exhaustively, for example, by testing intermediate linker lengths (only two tested \u2013 the natural ~30 and ~200 residues). Is 30 residues (in CaMKII-\u03b1) the optimal length for Thr286 trans-autophosphorylation, or is the optimal length shorter or longer? Also, for completeness sake, the authors should test the reciprocal CaMKII-\u03b1/\u03b2 chimera, i.e., CaMKII-\u03b1*, in which the CaMKII-\u03b1 linker is swapped into CaMKII-\u03b2.\n",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "14a63bc1-98f2-4bad-acb9-95d7a6ce0f09",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C1",
+      "claim": "CaMKII activity depends on the balance between activating and inhibitory autophosphorylation on Thr 286 and Thr 305/306, respectively, in the human \u03b1 isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII activity depends on the balance between activating and inhibitory autophosphorylation (on Thr 286 and Thr 305/306, respectively, in the human \u03b1 isoform).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a fundamental property of CaMKII regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "2478e0fe-67da-477d-80f3-c41e2b851171",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C2",
+      "claim": "The many variants of human CaMKII differ in the lengths and sequences of disordered linkers connecting the kinase domains to the oligomeric hubs of the holoenzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The many variants of human Ca2+/calmodulin-dependent protein kinase II (CaMKII) differ in the lengths and sequences of disordered linkers connecting the kinase domains to the oligomeric hubs of the holoenzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a structural characteristic of CaMKII variants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "20a196be-6d96-44fe-88d0-2b8bb7379adc",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C3",
+      "claim": "CaMKII-\u03b1, with a ~30 residue linker, readily acquires activating autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "For the principal isoforms in the brain, CaMKII-\u03b1, with a ~30 residue linker, readily acquires activating autophosphorylation, while CaMKII-\u03b2, with a ~200 residue linker, is biased towards inhibitory autophosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "8323c0b5-c9e7-4bab-b5cb-c3491af606ff",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C4",
+      "claim": "CaMKII-\u03b2, with a ~200 residue linker, is biased towards inhibitory autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "For the principal isoforms in the brain, CaMKII-\u03b1, with a ~30 residue linker, readily acquires activating autophosphorylation, while CaMKII-\u03b2, with a ~200 residue linker, is biased towards inhibitory autophosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "9c5ec6b1-561a-45a5-bd0d-c58b23223ced",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C5",
+      "claim": "The responsiveness of CaMKII holoenzymes to calcium signals can be tuned by varying the relative levels of isoforms with long and short linkers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show how the responsiveness of CaMKII holoenzymes to calcium signals can be tuned by varying the relative levels of isoforms with long and short linkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the abstract and supported by data on mixed holoenzymes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "7447fdbf-3419-4e8a-8028-9f4195445948",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C6",
+      "claim": "CaMKII has no phosphorylation sites within its activation loop.",
+      "claim_type": "EXPLICIT",
+      "source": "An exception is provided by Ca2+/calmodulin-dependent protein kinase II (CaMKII), an enzyme that has crucial roles in animal-cell signaling, particularly in the brain and in cardiac tissue (Bayer and Schulman, 2019; Bhattacharyya et al., 2019; Griffith, 2004; Hudmon and Schulman, 2002; Kennedy, 2013; Lisman et al., 2012; Stratton et al., 2013). CaMKII has no phosphorylation sites within its activation loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a distinguishing feature of CaMKII compared to other kinases.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "823291a3-08be-44f7-b77c-6fd1a05b9fd8",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C7",
+      "claim": "Phosphorylation of Thr 286 confers Ca2+/calmodulin-independent activity, referred to as autonomy.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of Thr 286 confers Ca2+/calmodulin-independent activity, referred to as autonomy (Lai et al., 1986; Lou et al., 1986; Miller et al., 1988; Miller and Kennedy, 1986; Saitoh and Schwartz, 1985; Schworer et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established property of CaMKII supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "6b6d355d-7044-422b-a1f1-63fa3e943deb",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C8",
+      "claim": "Phosphorylation on Thr 305/306 is inhibitory because it blocks the binding of Ca2+/CaM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, phosphorylation on Thr 305/306 is inhibitory, because it blocks the binding of Ca2+/CaM (Colbran, 1993; Hanson and Schulman, 1992; Hashimoto et al., 1987; Lou and Schulman, 1989; Patton et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established property of CaMKII supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "0e5bd459-0e62-402c-aa28-a03c7cfbe937",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C9",
+      "claim": "Mutation of autophosphorylation sites results in profound alterations in learning and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of these autophosphorylation sites results in profound alterations in learning and memory (Elgersma et al., 2002; Giese et al., 1998; Giese and Mizuno, 2013; K\u00fcry et al., 2017; Silva et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on CaMKII mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "2dc2aea5-2bd0-4308-811e-3bbbb3bac20c",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C10",
+      "claim": "CaMKII is organized into a dodecameric or tetradecameric holoenzyme consisting of a central ring-shaped hub assembly, to which the kinase domains are connected by flexible linkers.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII is organized into a dodecameric or tetradecameric holoenzyme consisting of a central ring-shaped hub assembly, to which the kinase domains are connected by flexible linkers (the kinase-hub linkers) (Figure 1a; Chao et al., 2011; Myers et al., 2017; Rosenberg et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural description supported by citations and Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "888e9b1e-62c3-4644-a6eb-84f10072fc5d",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C11",
+      "claim": "The four isoforms of human CaMKII differ principally in the lengths and sequences of the kinase-hub linkers.",
+      "claim_type": "EXPLICIT",
+      "source": "The four isoforms of human CaMKII, denoted \u03b1, \u03b2, \u03b3, and \u03b4, and their ~ 40 splice variants, differ principally in the lengths and sequences of the kinase-hub linkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key structural difference between isoforms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "803ad893-3cba-4d73-b636-cf057de1822a",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C12",
+      "claim": "The kinase and the hub domains of CaMKII isoforms share about 90% and 80% sequence identity, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinase and the hub domains of these isoforms share about 90% and 80% sequence identity, respectively (Tombes et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about sequence conservation supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "679b5796-0e14-47d6-9b54-0495b0807cdd",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C13",
+      "claim": "CaMKII-\u03b1 and CaMKII-\u03b4 have linkers spanning 31 residues each.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII-\u03b1 and CaMKII-\u03b4 have linkers spanning 31 residues each, while CaMKII-\u03b2 and CaMKII-\u03b3 have longer linkers (218 and 110 residues, respectively, in their principal variants).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific structural measurement of linker lengths.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "592b4632-41a9-40f8-830a-d4c10a35d05d",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C14",
+      "claim": "CaMKII-\u03b2 and CaMKII-\u03b3 have longer linkers (218 and 110 residues, respectively, in their principal variants).",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII-\u03b1 and CaMKII-\u03b4 have linkers spanning 31 residues each, while CaMKII-\u03b2 and CaMKII-\u03b3 have longer linkers (218 and 110 residues, respectively, in their principal variants).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific structural measurement of linker lengths.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "aacccd1e-8b86-48d8-9e68-0e9d00d2897a",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C15",
+      "claim": "The sequences of the CaMKII kinase-hub linkers are consistent with their being intrinsically disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequences of the CaMKII kinase-hub linkers are consistent with their being intrinsically disordered, leading to dynamic variability in the disposition of the kinase domains with respect to the central hub (Myers et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural inference supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "3517f3fe-2b1c-427e-bb74-a4a6728b68d5",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C16",
+      "claim": "The binding of Ca2+/CaM facilitates the trans-autophosphorylation of Thr 286 within the regulatory segment of one CaMKII subunit by the activated kinase domain of another subunit in the same holoenzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of Ca2+/CaM facilitates the trans-autophosphorylation of Thr 286 within the regulatory segment of one CaMKII subunit by the activated kinase domain of another subunit in the same holoenzyme (Hanson et al., 1994; Rich and Schulman, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic description supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "3283fb2e-ae21-441b-9d27-7af539824e9d",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C17",
+      "claim": "The EC50 value for CaMKII-\u03b1 activation by Ca2+/CaM is in the range of 50\u2013100 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The EC50 value for CaMKII-\u03b1 activation by Ca2+/CaM derived from these measurements is in the range of 50\u2013100 nM. This is consistent with previously reported values for the EC50 of CaMKII-\u03b1 activation by Ca2+/CaM (Chao et al., 2011; Schulman, 1984; Sloutsky et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the single-molecule assay, consistent with literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "027b2ede-6473-441e-93fb-aa3cee3af2f9",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C18",
+      "claim": "95% of the CaMKII-\u03b2 holoenzymes show detectable phosphorylation at Thr 305/306, while only 30% of the CaMKII-\u03b1 holoenzymes do so.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas 95% of the CaMKII-\u03b2 holoenzymes show detectable phosphorylation at Thr 305/306, only 30% of the CaMKII-\u03b1 holoenzymes do so (Figure 3a-right, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the single-molecule assay shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "541ca3bd-ec47-4947-871e-57e64366f178",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C19",
+      "claim": "The mean value of the integrated intensity for Thr 305/306 phosphorylation per holoenzyme is 5-fold higher for CaMKII-\u03b2 than for CaMKII-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean value of the integrated intensity for Thr 305/306 phosphorylation per holoenzyme is 5-fold higher for CaMKII-\u03b2 than for CaMKII-\u03b1 (Figure 3a-right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the single-molecule assay shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "92bb9456-5956-490a-8d6c-fb3fc29c90da",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C20",
+      "claim": "CaMKII-\u03b1 shows more Thr 286 phosphorylation than CaMKII-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1 and \u03b2 isoforms also differ in the extent of activating phosphorylation on Thr 286, with CaMKII-\u03b1 showing more Thr 286 phosphorylation than CaMKII-\u03b2 (Figure 3a-left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative result from the single-molecule assay shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "35da72aa-53fb-4f8a-a35b-a161d69468cd",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C21",
+      "claim": "The difference in activating and inhibitory autophosphorylation between CaMKII-\u03b1 and CaMKII-\u03b2 is due entirely to differences in the kinase-hub linkers.",
+      "claim_type": "EXPLICIT",
+      "source": "The autophosphorylation pattern for this construct resembles that of CaMKII-\u03b2, showing that the difference in activating and inhibitory autophosphorylation between the two isoforms is due entirely to differences in the kinase-hub linkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experiments with CaMKII-\u03b2*, where the linker from \u03b2 was swapped into \u03b1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "a4de088e-e73f-4c6e-982b-0c03e2421043",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C22",
+      "claim": "The dephosphorylation by phosphatases of activating phosphorylation at Thr 286 is much slower than dephosphorylation of inhibitory phosphorylation at Thr 305/306.",
+      "claim_type": "EXPLICIT",
+      "source": "When CaMKII is inactivated after activation, by removing Ca2+/CaM and ATP, we found that the dephosphorylation by phosphatases of activating phosphorylation at Thr 286 is much slower than dephosphorylation of inhibitory phosphorylation at Thr 305/306, which is fast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from dephosphorylation experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "48e11edc-6b3e-469c-8978-02a76e6bf233",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C23",
+      "claim": "CaMKII-\u03b1 and CaMKII-\u03b2 can assemble to form mixed holoenzymes, with the balance between activating and inhibitory autophosphorylation determined by the ratio of the two isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII-\u03b1 and CaMKII-\u03b2 can assemble to form mixed holoenzymes, with the balance between activating and inhibitory autophosphorylation determined by the ratio of the two isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from co-transfection experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "d3620bd9-427f-402d-b468-9bac032eee44",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C24",
+      "claim": "Thr 286 can only be phosphorylated in trans because it is located too far from the active site of the kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simple kinetic model, we assume that Thr 286 can only be phosphorylated in trans, because it is located too far from the active site of the kinase (Figure 1b, and see Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural constraint based on crystal structures and incorporated into the kinetic model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "840f14f4-21b6-4fa9-bf97-2e9636b01ce5",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C25",
+      "claim": "Thr 305/306 can either be phosphorylated in cis or in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that Thr 305/306 can either be phosphorylated in cis, as suggested by crystal structures (Rellos et al., 2010), or in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural data from crystal structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "32c6f5c2-8a9e-4ba9-8d65-528c6131306f",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C26",
+      "claim": "When Thr 286 is phosphorylated, the affinity for Ca2+/CaM increases ~1000 fold, a phenomenon referred to as calmodulin-trapping.",
+      "claim_type": "EXPLICIT",
+      "source": "If Thr 286 is phosphorylated, the affinity for Ca2+/CaM increases ~1000 fold, a phenomenon referred to as the calmodulin-trapping (Meyer et al., 1992; Tse et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established property of CaMKII supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "40e93b16-0fae-4814-a6fe-b18ae227c177",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C27",
+      "claim": "The longer linker in CaMKII-\u03b2 slows down the rates of trans-phosphorylation reactions within a holoenzyme when compared to CaMKII-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "A key idea behind this model is that we assume that the longer linker in CaMKII-\u03b2 slows down the rates of trans-phosphorylation reactions within a holoenzyme when compared to CaMKII-\u03b1, but that the rates of cis-phosphorylation are the same in the two isoforms (S\u00f8rensen and Kjaergaard, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key assumption in the kinetic model supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "e31715cc-3911-4af7-82ef-2409d3fa7242",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C28",
+      "claim": "The rates of cis-phosphorylation are the same in CaMKII-\u03b1 and CaMKII-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "A key idea behind this model is that we assume that the longer linker in CaMKII-\u03b2 slows down the rates of trans-phosphorylation reactions within a holoenzyme when compared to CaMKII-\u03b1, but that the rates of cis-phosphorylation are the same in the two isoforms (S\u00f8rensen and Kjaergaard, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key assumption in the kinetic model supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "66956a40-ad29-48ed-9ff4-d2abeae9dbd2",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C29",
+      "claim": "When the rate of trans-phosphorylation decreases relative to the rate of cis-phosphorylation, there is a switch from Thr 286 phosphorylation dominating to Thr 305/306 phosphorylation dominating.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that when the rate of trans-phosphorylation decreases relative to the rate of cis-phosphorylation, as is expected to occur with longer kinase-hub linkers, then there is a switch from Thr 286 phosphorylation dominating to Thr 305/306 phosphorylation dominating (Figure 5\u2014figure supplement 1a\u2013b, see Appendix).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the kinetic modeling shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "d7b45d43-e7a3-4800-882b-9edcef0e063d",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C30",
+      "claim": "Phosphorylation at Thr 286 increases upon treatment with 10 \u03bcM ionomycin for both CaMKII-\u03b1 and CaMKII-\u03b2*.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation at Thr 286 increases upon treatment with 10 \u03bcM ionomycin for both CaMKII-\u03b1 and CaMKII-\u03b2*, as expected (Baucum et al., 2015; Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from in-cell activation experiments shown in Figure 3c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "a8bf8c38-8c1c-4f80-9780-3f340deb898e",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C31",
+      "claim": "CaMKII-\u03b1 shows higher phosphorylation at Thr 286 compared to CaMKII-\u03b2* upon ionomycin treatment in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII-\u03b1 shows higher phosphorylation at Thr 286 as compared to CaMKII-\u03b2*, in agreement with our in vitro results (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from in-cell activation experiments shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "c01b581e-a09b-414f-87e3-1432c8d175fa",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C32",
+      "claim": "No phosphorylation at Thr 305/306 is detected for either CaMKII-\u03b1 or CaMKII-\u03b2* upon ionomycin treatment in cells without phosphatase inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no phosphorylation at Thr 305/306 is detected for either CaMKII-\u03b1 or CaMKII-\u03b2* in this experiment (Figure 3d), which is consistent with previous reports (Baucum et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from in-cell activation experiments shown in Figure 3d.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "dfb913c5-fda1-436b-9829-f7e640505819",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C33",
+      "claim": "Treatment with okadaic acid and cyclosporin A led to detectable levels of phosphorylation at Thr 305/306 for ~30% of the CaMKII-\u03b2* holoenzymes, but not for CaMKII-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "This treatment led to detectable levels of phosphorylation at Thr 305/306 for ~30% of the CaMKII-\u03b2* holoenzymes, but not for CaMKII-\u03b1 (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from in-cell activation experiments with phosphatase inhibitors shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "17c5701f-139d-451c-86de-0e71c325555a",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C34",
+      "claim": "Active CaMKII-\u03b1 is efficient at maintaining phosphorylation on Thr 286 in the face of competing phosphatase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Active CaMKII-\u03b1 is efficient at maintaining phosphorylation on Thr 286 in the face of competing phosphatase activity, while CaMKII-\u03b2* is less so (Figure 6b,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from experiments with phosphatase during activation shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "4ee55b31-26f9-4f92-a734-0095646beee2",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C35",
+      "claim": "For CaMKII-\u03b2*, high levels of inhibitory phosphorylation at Thr 305/306 are maintained in the presence of phosphatase.",
+      "claim_type": "EXPLICIT",
+      "source": "For CaMKII-\u03b2*, high levels of inhibitory phosphorylation at Thr 305/306 are maintained in the presence of phosphatase (Figure 6c,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from experiments with phosphatase during activation shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "efa01e30-2632-47de-b708-68b9dad798ff",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C36",
+      "claim": "Phosphorylation at Thr 305/306 is completely removed by the phosphatase for CaMKII-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, phosphorylation at Thr 305/306 is completely removed by the phosphatase for CaMKII-\u03b1 (Figure 6c,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from experiments with phosphatase during activation shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "9143aa63-49ad-4673-86fc-941dd3e7cc1b",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C37",
+      "claim": "pThr 305/306 is rapidly dephosphorylated for both CaMKII-\u03b1 and CaMKII-\u03b2* in the absence of competing kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of competing kinase activity, pThr 305/306 is rapidly dephosphorylated for both CaMKII-\u03b1 and CaMKII-\u03b2* (Figure 7b, Figure 7\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from dephosphorylation experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "591a00a8-6988-4880-8286-c451d4e41f6c",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C38",
+      "claim": "The rate of dephosphorylation of pThr 286 is slow, with complete dephosphorylation taking more than 30 min for both CaMKII-\u03b1 and CaMKII-\u03b2*.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the rate of dephosphorylation of pThr 286 is slow, with complete dephosphorylation taking more than 30 min for both isoforms (Figure 7c\u2013d, Figure 7\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from dephosphorylation experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "f411b4db-82da-4cd7-8b30-01c5ea869fd0",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C39",
+      "claim": "Slower rates of dephosphorylation at pThr 286 and rapid dephosphorylation at pThr 305/306 are observed for CaMKII-\u03b1 and CaMKII-\u03b2* using PP1\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Slower rates of dephosphorylation at pThr 286 and rapid dephosphorylation at pThr 305/306 are observed for CaMKII-\u03b1 and CaMKII-\u03b2* using PP1\u03b1, as for \u03bb-phosphatase (Figure 7\u2014figure supplement 1b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from dephosphorylation experiments with PP1\u03b1 shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "f692000c-5473-42eb-87c4-571c26cbfdcf",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C40",
+      "claim": "The addition of Ca2+/CaM to phosphorylated CaMKII enhances the rate of dephosphorylation at Thr 286 by about 4-fold for both CaMKII-\u03b1 and CaMKII-\u03b2*.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we found that the addition of Ca2+/CaM to phosphorylated CaMKII enhances the rate of dephosphorylation at Thr 286 by about 4-fold for both CaMKII-\u03b1 and CaMKII-\u03b2* (Figure 8a\u2013c, Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an unexpected result from dephosphorylation experiments shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "fb88f414-a756-4e2b-8ede-bf192f919e93",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C41",
+      "claim": "The addition of Ca2+/CaM has no effect on the rate of dephosphorylation of pThr 305/306.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of Ca2+/CaM has no effect on the rate of dephosphorylation of pThr 305/306, indicating that Ca2+/CaM does not increase the activity of the phosphatase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a control result from dephosphorylation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "4fc54168-9874-4590-ae0f-f8200864dde9",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C42",
+      "claim": "In the absence of Ca2+/CaM, the calmodulin-binding element of CaMKII plays a role in sequestering pThr 286 from phosphatases.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that, in the absence of Ca2+/CaM, the calmodulin-binding element of CaMKII plays a role in sequestering pThr 286 from phosphatases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data on Ca2+/CaM-dependent dephosphorylation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "20c0f296-16a2-4386-a539-9ce5a3d5807c",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C43",
+      "claim": "Treatment of activated CaMKII-\u03b1 with \u03bb-phosphatase for 3\u20135 min generated a population in which about 50% of the holoenzymes retained some phosphorylation at Thr 286.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of activated CaMKII-\u03b1 with \u03bb-phosphatase for 3\u20135 min generated a population in which about 50% of the holoenzymes retained some phosphorylation at Thr 286, while the rest of the holoenzymes had no detectable phosphorylation remaining (Figure 9a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from priming experiments shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "d83e4ac2-f5c1-4667-8339-baca0afaec73",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C44",
+      "claim": "When CaMKII-\u03b1 holoenzymes with reduced Thr 286 phosphorylation are incubated with ATP and 25 nM Ca2+/CaM, the extent of phosphorylation for holoenzymes that show detectable pThr 286 is restored to the levels seen for fully activated CaMKII-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "When such a sample is incubated with ATP and a sub-saturating level of Ca2+/CaM (25 nM), the extent of phosphorylation for holoenzymes that show detectable pThr 286 is restored to the levels seen for fully activated CaMKII-\u03b1 (Figure 9a\u2013b,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from priming experiments shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "e6bb5708-e34a-4edd-be70-ab1d2e6d43fe",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C45",
+      "claim": "Some extent of pre-existing phosphorylation on Thr 286 is important for gaining additional phosphorylation with sub-saturating levels of Ca2+/CaM.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with ATP and sub-saturating Ca2+/CaM does not increase the fraction of CaMKII-\u03b1 holoenzymes with detectable phosphorylation at Thr 286 very much, suggesting that some extent of pre-existing phosphorylation on Thr 286 is important for gaining additional phosphorylation with sub-saturating levels of Ca2+/CaM (Figure 9c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of priming experiments shown in Figure 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "2842abb9-4d97-41d6-a71b-dab68cdf5f52",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C46",
+      "claim": "For CaMKII-\u03b2*, phosphatase treatment results in substantial reduction in pThr 286 levels, and subsequent treatment with 25 nM Ca2+/CaM and ATP does not result in a marked increase in the extent of Thr 286 phosphorylation per holoenzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar experiment using CaMKII-\u03b2* yields very different results. Here, phosphatase treatment results in substantial reduction in pThr 286 levels. Subsequent treatment with 25 nM Ca2+/CaM and ATP does not result in a marked increase in the extent of Thr 286 phosphorylation per holoenzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from priming experiments with CaMKII-\u03b2*.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "3612d457-bab9-46a7-9ea2-57889d7204bf",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C47",
+      "claim": "~40% of CaMKII-\u03b2* holoenzymes show detectable phosphorylation at Thr 305/306 after treatment with sub-saturating Ca2+/CaM, compared to ~2% before.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ~40% of CaMKII-\u03b2* holoenzymes show detectable phosphorylation at Thr 305/306 after treatment with sub-saturating Ca2+/CaM, compared to ~2% before (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from priming experiments with CaMKII-\u03b2*.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "303dd9c9-72dc-4e0d-b1ff-2aadf81f79d6",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C48",
+      "claim": "CaMKII-\u03b2 holoenzymes tend to become inactivated when subjected to subthreshold levels of Ca2+/CaM, rather than undergoing priming for further activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in contrast to CaMKII-\u03b1 holoenzymes, CaMKII-\u03b2 holoenzymes tend to become inactivated when subjected to subthreshold levels of Ca2+/CaM, rather than undergoing priming for further activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from priming experiments comparing CaMKII-\u03b1 and CaMKII-\u03b2*.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "19b019a3-a4d2-4756-a994-ac44146bc3fe",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C49",
+      "claim": "The co-transfection of mEGFP-CaMKII-\u03b1 and mCherry-CaMKII-\u03b2* resulted in predominantly heterooligomeric holoenzymes, with ~80% colocalization of red and green spots.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-transfection of mEGFP-CaMKII-\u03b1 and mCherry-CaMKII-\u03b2* resulted in predominantly heterooligomeric holoenzymes, with ~80% colocalization of red and green spots (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from co-transfection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "c03e0e7a-0c92-4f0e-bfa5-9401047a1d04",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C50",
+      "claim": "As the proportion of CaMKII-\u03b2* increases in mixed holoenzymes, there is an increase in the extent of Thr 305/306 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "As the proportion of CaMKII-\u03b2* increases, there is an increase in the extent of Thr 305/306 phosphorylation (Figure 4b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from co-transfection experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "f712c634-71a2-41dd-b590-a0da4951d954",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C51",
+      "claim": "Alterations in the relative levels of CaMKII-\u03b1 and CaMKII-\u03b2 can result in the generation of mixed CaMKII holoenzymes with different responsiveness to Ca2+/calmodulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, alterations in the relative levels of CaMKII-\u03b1 and CaMKII-\u03b2 can result in the generation of mixed CaMKII holoenzymes with different responsiveness to Ca2+/calmodulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from co-transfection experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "38c2b2e5-e3b8-44de-941f-42e544a571b3",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C52",
+      "claim": "The difference in autophosphorylation balance between CaMKII-\u03b1 and CaMKII-\u03b2 can be explained by the fact that Thr 286 can only be autophosphorylated in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in autophosphorylation balance between CaMKII-\u03b1 and CaMKII-\u03b2 can be explained by the fact that Thr 286 can only be autophosphorylated in trans, between two kinase domains, since this residue is located too far from the active site of the subunit of which it is a part.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation based on structural constraints.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "1bdaadca-99b8-4d48-ad99-bec0f6040c05",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C53",
+      "claim": "Phosphorylation of Thr 286 is known to occur predominantly through trans-autophosphorylation within a holoenzyme, rather than phosphorylation between different holoenzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of Thr 286 is known to occur predominantly through trans-autophosphorylation within a holoenzyme, rather than phosphorylation between different holoenzymes (Rich and Schulman, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established property of CaMKII supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "933d1a31-c419-4155-adeb-aa591b95768d",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C54",
+      "claim": "The longer linker length in CaMKII-\u03b2 results in a reduction in the rate of trans-autophosphorylation of Thr 286.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that the longer linker length in CaMKII-\u03b2 results in a reduction in the rate of trans-autophosphorylation of Thr 286, while the rate of cis-autophosphorylation of Thr 305/306 is the same for CaMKII-\u03b1 and CaMKII-\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis to explain the observed differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "b0c56ed5-d1bb-45e8-8b6c-3e785f28629c",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C55",
+      "claim": "As the kinase-hub linker length increases, the rate of activating trans-phosphorylation decreases, which switches the balance towards inhibitory phosphorylation in CaMKII-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "As the kinase-hub linker length increases, the rate of activating trans-phosphorylation decreases, which switches the balance towards inhibitory phosphorylation in CaMKII-\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation for the observed differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "a1a030b5-afc2-4230-aa60-e8a4d3bedb1b",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C56",
+      "claim": "The switch in phosphorylation balance is expected to be sharpened by the fact that inhibitory autophosphorylation blocks Ca2+/CaM binding, thereby preventing activating phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The switch is expected to be sharpened by the fact that inhibitory autophosphorylation blocks Ca2+/CaM binding, thereby preventing activating phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation for the observed differences.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "7e8ef174-ed2a-4286-b986-1b6a55a6adae",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C57",
+      "claim": "The differences in the lengths of the kinase-hub linkers in different isoforms may control the spatial extent of substrate phosphorylation enabled by the activation of a particular CaMKII holoenzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Since CaMKII holoenzymes are anchored within the post-synaptic density, the differences in the lengths of the kinase-hub linkers in different isoforms may likewise control the spatial extent of substrate phosphorylation enabled by the activation of a particular CaMKII holoenzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the functional significance of linker length differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "dcaddbe3-30a1-49ba-b10f-3fc0cf1d8bcb",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C58",
+      "claim": "The kinase-hub linker length in CaMKII can control the activation status of the holoenzyme, not just the spatial range of the kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work has now revealed a key difference between CaMKII and AKAP:PKA complexes, which is that the kinase-hub linker length in CaMKII can control the activation status of the holoenzyme, not just the spatial range of the kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion from the work comparing CaMKII to AKAP:PKA complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "62b0963f-675b-451f-a5f8-df44aa74708b",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C59",
+      "claim": "The protection afforded to pThr 286 is released by the addition of Ca2+/CaM.",
+      "claim_type": "EXPLICIT",
+      "source": "The protection afforded to pThr 286 is released by the addition of Ca2+/CaM, suggesting that the calmodulin-binding element of CaMKII adopts a conformation that protects pThr 286 in the absence of Ca2+/CaM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from dephosphorylation experiments with Ca2+/CaM.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "3da7d099-8cdd-489a-ba77-9f8a34344e47",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C60",
+      "claim": "The observed resistance of pThr 286 to rapid dephosphorylation by phosphatases can enable CaMKII activity to persist for some time after the decay of Ca2+ pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed resistance of pThr 286 to rapid dephosphorylation by phosphatases can enable CaMKII activity to persist for some time after the decay of Ca2+ pulses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional interpretation of the dephosphorylation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "d5d5e14f-9450-4d0b-b0bf-7cdff6d08c13",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C61",
+      "claim": "CaMKII subunits that are phosphorylated on Thr 286 have higher affinity for Ca2+/CaM, which can facilitate the rebinding of Ca2+/CaM during subsequent pulses of calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CaMKII subunits that are phosphorylated on Thr 286 have higher affinity for Ca2+/CaM, which can facilitate the rebinding of Ca2+/CaM during subsequent pulses of calcium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional interpretation based on known properties of CaMKII.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "231b4d5e-eb2f-475b-9075-035b78951b20",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C62",
+      "claim": "Due to the cooperativity of Ca2+/CaM binding to CaMKII, a priming mechanism enables CaMKII holoenzymes that have retained some activating phosphorylation to rapidly reacquire higher levels of phosphorylation, even in the presence of subthreshold concentrations of Ca2+/CaM.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the cooperativity of Ca2+/CaM binding to CaMKII, such a priming mechanism enables CaMKII holoenzymes that have retained some activating phosphorylation to rapidly reacquire higher levels of phosphorylation, even in the presence of subthreshold concentrations of Ca2+/CaM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional interpretation of the priming experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "96f6cfa5-b153-4198-a5f4-e50eb7dfe128",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C63",
+      "claim": "The history of synaptic activity, including the frequency and the gaps between periods of activity, may be encoded in CaMKII.",
+      "claim_type": "EXPLICIT",
+      "source": "This may enable the history of synaptic activity, including the frequency and the gaps between periods of activity, to be encoded in CaMKII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative functional interpretation of the results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "65dee2be-acf3-49f4-b4cb-3ab99aa43ee0",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C64",
+      "claim": "There are differences in the expression levels of CaMKII-\u03b1 and CaMKII-\u03b2 in neurons and these levels can be regulated by synaptic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "There are differences in the expression levels of CaMKII-\u03b1 and CaMKII-\u03b2 in neurons and these levels can be regulated by synaptic activity (Thiagarajan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of CaMKII expression supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "152bfcd2-424d-4c98-b1ba-c5774f39b232",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C65",
+      "claim": "Differences in expression levels of CaMKII isoforms can result in differences in cellular targeting and stimulus frequency responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in these levels can result in differences in cellular targeting and stimulus frequency responses (De Koninck and Schulman, 1998; Shen et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of CaMKII supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "a14b4d41-5349-4989-8512-404c022ef02c",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C66",
+      "claim": "Expression level differences between isoforms can result in changing the balance of activating and inhibitory autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "We now show that expression level differences between isoforms can also result in changing the balance of activating and inhibitory autophosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion from the work on mixed holoenzymes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "b0c698d4-c852-4c63-823a-f72fe079d15d",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C67",
+      "claim": "Autophosphorylation of the inhibitory site reduces binding of CaMKII-\u03b1 to the postsynaptic density (PSD) in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophosphorylation of the inhibitory site reduces binding of CaMKII-\u03b1 to the postsynaptic density (PSD) in vitro (Strack et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of CaMKII supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "f135320e-ea5f-4c0c-ab50-578871c47baf",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C68",
+      "claim": "Abrogation of inhibitory autophosphorylation greatly reduces dissociation of the kinase from PSD in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, abrogation of such autophosphorylation greatly reduces dissociation of the kinase from PSD in neurons (Shen and Meyer, 1999) and increases PSD binding in transgenic animals, thereby altering synaptic plasticity and long-term potentiation (Elgersma et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of CaMKII supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "092d1d71-3fc7-431d-ba57-a46414bf01ec",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C69",
+      "claim": "The rapid inhibitory phosphorylation of CaMKII-\u03b2 limits binding of Ca2+/CaM, which is required for dissociation of the kinase from F-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid inhibitory phosphorylation of CaMKII-\u03b2, on the other hand, limits binding of Ca2+/CaM, which is required for dissociation of the kinase from F-actin (Shen and Meyer, 1999; Wang et al., 2019), an important step in structural remodeling of the synapse (Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional interpretation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "09b64127-1bf2-4d55-aec2-3a3a5453b8ce",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C70",
+      "claim": "By varying the relative expression levels of \u03b1 and \u03b2-isoforms, the cell can generate CaMKII heterooligomers with variable response to activating signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that by varying the relative expression levels of \u03b1 and \u03b2-isoforms, the cell can generate CaMKII heterooligomers with variable response to activating signals, thereby fine-tuning the response of CaMKII to Ca2+ spike trains in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion from the work on mixed holoenzymes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "e01dda42-b488-471a-8826-5c3b40d1193b",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C71",
+      "claim": "The autophosphorylation pattern for CaMKII-\u03b2* is essentially the same as for CaMKII-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The autophosphorylation pattern for CaMKII-\u03b2* is essentially the same as for CaMKII-\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from comparing CaMKII-\u03b2 and CaMKII-\u03b2*.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "b1e0d843-fa6c-4071-b041-53e4cf9b2638",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C72",
+      "claim": "Each CaMKII-\u03b2* holoenzyme exhibits about 5-fold greater phosphorylation of Thr 305/306 than is the case for CaMKII-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Each CaMKII-\u03b2* holoenzyme exhibits about 5-fold greater phosphorylation of Thr 305/306 than is the case for CaMKII-\u03b1 (Figure 3b-right), with about 95% of the CaMKII-\u03b2* holoenzymes showing detectable phosphorylation at pThr 305/306.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the single-molecule assay shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "c31a8fb9-ba7b-472a-a735-663c6013e3e2",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C73",
+      "claim": "About 95% of the CaMKII-\u03b2* holoenzymes show detectable phosphorylation at pThr 305/306.",
+      "claim_type": "EXPLICIT",
+      "source": "Each CaMKII-\u03b2* holoenzyme exhibits about 5-fold greater phosphorylation of Thr 305/306 than is the case for CaMKII-\u03b1 (Figure 3b-right), with about 95% of the CaMKII-\u03b2* holoenzymes showing detectable phosphorylation at pThr 305/306.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the single-molecule assay shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "e6223b5a-b628-4643-8726-c87282c32c7e",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C74",
+      "claim": "CaMKII-\u03b2* shows a lower degree of activating phosphorylation on Thr 286 when compared to CaMKII-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII-\u03b2* also shows a lower degree of activating phosphorylation on Thr 286 when compared to CaMKII-\u03b1 (Figure 3b-left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative result from the single-molecule assay shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "ba541c39-56fb-4ae6-b53a-c0c68553cdc6",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C75",
+      "claim": "The results for CaMKII-\u03b3*, with the long linker, resemble those for CaMKII-\u03b2/CaMKII-\u03b2*.",
+      "claim_type": "EXPLICIT",
+      "source": "The results for CaMKII-\u03b3*, with the long linker, resemble those for CaMKII-\u03b2/CaMKII-\u03b2* (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from testing CaMKII-\u03b3* shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "657d8468-a6fc-4c4e-91da-c2563f38fdd7",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C76",
+      "claim": "The results for CaMKII-\u03b4*, with the short linker, resemble those for CaMKII-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the results for CaMKII-\u03b4*, with the short linker, resemble those for CaMKII-\u03b1 (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from testing CaMKII-\u03b4* shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "cd82b7fc-eb7e-497a-8fbd-94168b30e7c3",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C77",
+      "claim": "Linker length alone is an important determinant of phosphorylation outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequences of the linkers in the four CaMKII isoforms are very different, and so these results suggest that linker length alone is an important determinant of phosphorylation outcome (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from testing multiple isoforms with different linker lengths.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "8ea8ee23-5704-4841-8913-9ebd20d22723",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C78",
+      "claim": "For CaMKII-\u03b2'E and CaMKII-\u03b2'E*, there is a decrease in inhibitory phosphorylation and a small increase in activating phosphorylation when compared to CaMKII-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "For both these constructs, we see a decrease in inhibitory phosphorylation and a small increase in activating phosphorylation when compared to CaMKII-\u03b2 (Figure 3\u2014figure supplement 3a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from testing the splice variant CaMKII-\u03b2'E shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "ec189550-d40a-4ae3-b3b3-9619ba155269",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C79",
+      "claim": "The autophosphorylation outcome for CaMKII-\u03b1* is similar to that for CaMKII-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The autophosphorylation outcome for CaMKII-\u03b1* is similar to that for CaMKII-\u03b1 (Figure 3\u2014figure supplement 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from testing CaMKII-\u03b1* shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "07c295c4-fd7a-4fea-b3a6-7f1434d358d0",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C80",
+      "claim": "CaMKII-\u03b1 and CaMKII-\u03b2 can assemble into mixed holoenzymes containing both isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII-\u03b1 and CaMKII-\u03b2 can assemble into mixed holoenzymes containing both isoforms (Bennett et al., 1983; Brocke et al., 1999; Thiagarajan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of CaMKII supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "266ff2ff-bc9c-4514-8c71-55151079ece3",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "claim_id": "C81",
+      "claim": "Treatment of pre-activated CaMKII-\u03b1 with ATP led to robust phosphorylation of CaMKII-\u03b1 on Thr 305/306, at levels comparable to that for CaMKII-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP treatment of pre-activated CaMKII led to robust phosphorylation of CaMKII-\u03b1 on Thr 305/306, at levels comparable to that for CaMKII-\u03b2 (Figure 3\u2014figure supplement 1 (a-c)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from experiments testing the ability of CaMKII-\u03b1 to be phosphorylated at Thr 305/306 shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "68a3af24-d2fb-434b-b93e-676c4c8646b2",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CaMKII-\u03b1 with a short (~30 residue) kinase-hub linker readily acquires activating autophosphorylation at Thr 286, while CaMKII-\u03b2 with a long (~200 residue) linker is biased towards inhibitory autophosphorylation at Thr 305/306. This difference is entirely due to linker length, as demonstrated by the CaMKII-\u03b2* construct where the \u03b2 linker was swapped into the \u03b1 isoform.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C18-C21, and C71-C74 provide converging evidence from single-molecule assays showing quantitative differences in phosphorylation patterns between isoforms. The linker-swap experiment (C21, C71-C74) provides strong causal evidence that linker length alone determines the phosphorylation outcome. The data are internally consistent and supported by multiple figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "e44fdef6-c129-4917-a493-08a8841275de",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Linker length alone is the primary determinant of autophosphorylation outcome across all CaMKII isoforms. Testing of CaMKII-\u03b3* (110 residues), CaMKII-\u03b4* (31 residues), and splice variants confirms that longer linkers favor inhibitory phosphorylation while shorter linkers favor activating phosphorylation, independent of linker sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C79 extend the main finding to additional isoforms and splice variants, demonstrating that the linker length effect is generalizable. The data from multiple constructs with different linker sequences but similar lengths showing similar outcomes (C77) strongly supports the conclusion that length, not sequence, is the key determinant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "cbbdeba2-a19b-4496-95c8-599ae605f3c5",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Dephosphorylation of activating phosphorylation at Thr 286 by phosphatases is much slower than dephosphorylation of inhibitory phosphorylation at Thr 305/306. This differential dephosphorylation rate is observed with both \u03bb-phosphatase and PP1\u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C37-C39 present consistent time-course data showing rapid dephosphorylation of pThr 305/306 and slow dephosphorylation of pThr 286. The finding is replicated with two different phosphatases (\u03bb-phosphatase and PP1\u03b1) and in both on-glass and in-solution experiments, providing robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "1b7d0457-e399-4805-a7f9-c46275e0d66f",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Addition of Ca2+/CaM to phosphorylated CaMKII enhances the rate of dephosphorylation at Thr 286 by approximately 4-fold, but has no effect on dephosphorylation of Thr 305/306. This suggests that the calmodulin-binding element protects pThr 286 from phosphatases in the absence of Ca2+/CaM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 and C59 describe an unexpected finding with clear experimental support. The specificity of the effect (only pThr 286, not pThr 305/306) and the control showing no effect on phosphatase activity (C41) support the interpretation that Ca2+/CaM releases a protective conformation. The data are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "838d7eff-8226-4458-bb27-bbfbcb7cd851",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CaMKII-\u03b1 holoenzymes that retain partial Thr 286 phosphorylation after phosphatase treatment can be 'primed' to rapidly reacquire full phosphorylation levels with subthreshold Ca2+/CaM concentrations. In contrast, CaMKII-\u03b2* holoenzymes become inactivated under the same conditions, gaining inhibitory phosphorylation instead.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 and C62 describe a priming mechanism supported by sequential treatment experiments. The differential behavior between \u03b1 and \u03b2* isoforms is clearly demonstrated. The interpretation that pre-existing pThr 286 is important for priming (C45) is supported by the observation that the fraction of phosphorylated holoenzymes doesn't increase much with subthreshold Ca2+/CaM.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "19044f90-74a6-4bb6-b25e-317ad2c23e1f",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CaMKII-\u03b1 and CaMKII-\u03b2 can assemble into mixed heterooligomeric holoenzymes, with the balance of activating and inhibitory autophosphorylation determined by the ratio of the two isoforms. This allows cells to tune CaMKII responsiveness by varying relative isoform expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C49-C51, C66, and C70 demonstrate that mixed holoenzymes form (~80% colocalization, C49) and show intermediate phosphorylation patterns that depend on the \u03b1:\u03b2* ratio (C50). This provides a mechanism for tuning CaMKII responsiveness. The data are consistent and support the functional interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "44e4afc2-7a8a-40f0-88db-2171a314d9fe",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The differential autophosphorylation patterns between CaMKII-\u03b1 and CaMKII-\u03b2 can be explained by a kinetic model where Thr 286 can only be phosphorylated in trans while Thr 305/306 can be phosphorylated in cis or trans. Longer linkers slow trans-phosphorylation rates relative to cis-phosphorylation rates, switching the balance toward inhibitory phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 and C52-C56 present a mechanistic model based on structural constraints and kinetic simulations. The model assumptions (trans-only for Thr 286, cis or trans for Thr 305/306) are supported by structural data (C24, C25). The kinetic modeling (C29) shows that the proposed mechanism can explain the observed switch in phosphorylation balance. The model is consistent with all experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "1e2607b0-e544-44a7-85da-4ba028c2cdb4",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In HEK 293T cells, ionomycin treatment increases Thr 286 phosphorylation for both CaMKII-\u03b1 and CaMKII-\u03b2*, with CaMKII-\u03b1 showing higher levels. Thr 305/306 phosphorylation is only detected when phosphatase inhibitors are present, and only for CaMKII-\u03b2*.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 demonstrate that the in vitro findings translate to cellular contexts. The requirement for phosphatase inhibitors to detect pThr 305/306 (C32-C33) is consistent with the rapid dephosphorylation of this site observed in vitro. The isoform-specific differences match the in vitro results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "b03c2b6d-1954-4f5e-a541-bcc6b93eb47c",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "When CaMKII is activated in the presence of phosphatase, CaMKII-\u03b1 efficiently maintains Thr 286 phosphorylation while CaMKII-\u03b2* maintains high levels of Thr 305/306 phosphorylation. For CaMKII-\u03b1, Thr 305/306 phosphorylation is completely removed by phosphatase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 show that the differential phosphorylation patterns persist even when phosphatase is present during activation. This demonstrates that the kinetic differences between isoforms are robust enough to overcome competing phosphatase activity, strengthening the mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "09773be5-3c7f-40ff-9102-cd8301bf2990",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The EC50 for CaMKII-\u03b1 activation by Ca2+/CaM measured by the single-molecule assay is 50-100 nM, consistent with previously reported values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 provides validation of the single-molecule assay by showing agreement with literature values. This supports the reliability of the assay for measuring CaMKII phosphorylation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "e7a26c73-ec34-4605-919d-1001099bc832",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Pre-activated CaMKII-\u03b1 can be robustly phosphorylated at Thr 305/306 when treated with ATP alone, reaching levels comparable to CaMKII-\u03b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 demonstrates that CaMKII-\u03b1 is capable of being phosphorylated at Thr 305/306, ruling out an intrinsic inability to phosphorylate this site. This control experiment supports the interpretation that the low pThr 305/306 levels in CaMKII-\u03b1 result from kinetic competition, not inability to phosphorylate the site.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information on CaMKII structure, regulation, and known properties including the dodecameric/tetradecameric holoenzyme organization, the roles of Thr 286 and Thr 305/306 phosphorylation, isoform differences in linker lengths, and functional consequences of autophosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C16, C26, C53, C64-C65, C67-C68, and C80 present established knowledge about CaMKII supported by appropriate citations. These provide necessary context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    },
+    {
+      "id": "c40d0685-0735-4dce-8790-9102a6997597",
+      "content_id": "dd3ff09b-b9ff-4fd3-82ce-2c6582270c36",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Functional interpretations and speculations about the biological significance of the findings, including potential roles in spatial control of phosphorylation, integration of calcium pulses, encoding synaptic activity history, and regulation of F-actin binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C58, C60-C61, C63, and C69 present functional interpretations and speculations that extend beyond the direct experimental evidence. While these are reasonable hypotheses based on the data, they require additional experimental validation. C57 and C63 are explicitly speculative (SPECULATION evidence type).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:01.488148Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "20a196be-6d96-44fe-88d0-2b8bb7379adc",
+      "result_id": "68a3af24-d2fb-434b-b93e-676c4c8646b2"
+    },
+    {
+      "claim_id": "8323c0b5-c9e7-4bab-b5cb-c3491af606ff",
+      "result_id": "68a3af24-d2fb-434b-b93e-676c4c8646b2"
+    },
+    {
+      "claim_id": "027b2ede-6473-441e-93fb-aa3cee3af2f9",
+      "result_id": "68a3af24-d2fb-434b-b93e-676c4c8646b2"
+    },
+    {
+      "claim_id": "541ca3bd-ec47-4947-871e-57e64366f178",
+      "result_id": "68a3af24-d2fb-434b-b93e-676c4c8646b2"
+    },
+    {
+      "claim_id": "92bb9456-5956-490a-8d6c-fb3fc29c90da",
+      "result_id": "68a3af24-d2fb-434b-b93e-676c4c8646b2"
+    },
+    {
+      "claim_id": "35da72aa-53fb-4f8a-a35b-a161d69468cd",
+      "result_id": "68a3af24-d2fb-434b-b93e-676c4c8646b2"
+    },
+    {
+      "claim_id": "e01dda42-b488-471a-8826-5c3b40d1193b",
+      "result_id": "68a3af24-d2fb-434b-b93e-676c4c8646b2"
+    },
+    {
+      "claim_id": "b1e0d843-fa6c-4071-b041-53e4cf9b2638",
+      "result_id": "68a3af24-d2fb-434b-b93e-676c4c8646b2"
+    },
+    {
+      "claim_id": "c31a8fb9-ba7b-472a-a735-663c6013e3e2",
+      "result_id": "68a3af24-d2fb-434b-b93e-676c4c8646b2"
+    },
+    {
+      "claim_id": "e6223b5a-b628-4643-8726-c87282c32c7e",
+      "result_id": "68a3af24-d2fb-434b-b93e-676c4c8646b2"
+    },
+    {
+      "claim_id": "ba541c39-56fb-4ae6-b53a-c0c68553cdc6",
+      "result_id": "e44fdef6-c129-4917-a493-08a8841275de"
+    },
+    {
+      "claim_id": "657d8468-a6fc-4c4e-91da-c2563f38fdd7",
+      "result_id": "e44fdef6-c129-4917-a493-08a8841275de"
+    },
+    {
+      "claim_id": "cd82b7fc-eb7e-497a-8fbd-94168b30e7c3",
+      "result_id": "e44fdef6-c129-4917-a493-08a8841275de"
+    },
+    {
+      "claim_id": "8ea8ee23-5704-4841-8913-9ebd20d22723",
+      "result_id": "e44fdef6-c129-4917-a493-08a8841275de"
+    },
+    {
+      "claim_id": "ec189550-d40a-4ae3-b3b3-9619ba155269",
+      "result_id": "e44fdef6-c129-4917-a493-08a8841275de"
+    },
+    {
+      "claim_id": "a4de088e-e73f-4c6e-982b-0c03e2421043",
+      "result_id": "cbbdeba2-a19b-4496-95c8-599ae605f3c5"
+    },
+    {
+      "claim_id": "9143aa63-49ad-4673-86fc-941dd3e7cc1b",
+      "result_id": "cbbdeba2-a19b-4496-95c8-599ae605f3c5"
+    },
+    {
+      "claim_id": "591a00a8-6988-4880-8286-c451d4e41f6c",
+      "result_id": "cbbdeba2-a19b-4496-95c8-599ae605f3c5"
+    },
+    {
+      "claim_id": "f411b4db-82da-4cd7-8b30-01c5ea869fd0",
+      "result_id": "cbbdeba2-a19b-4496-95c8-599ae605f3c5"
+    },
+    {
+      "claim_id": "f692000c-5473-42eb-87c4-571c26cbfdcf",
+      "result_id": "1b7d0457-e399-4805-a7f9-c46275e0d66f"
+    },
+    {
+      "claim_id": "fb88f414-a756-4e2b-8ede-bf192f919e93",
+      "result_id": "1b7d0457-e399-4805-a7f9-c46275e0d66f"
+    },
+    {
+      "claim_id": "4fc54168-9874-4590-ae0f-f8200864dde9",
+      "result_id": "1b7d0457-e399-4805-a7f9-c46275e0d66f"
+    },
+    {
+      "claim_id": "62b0963f-675b-451f-a5f8-df44aa74708b",
+      "result_id": "1b7d0457-e399-4805-a7f9-c46275e0d66f"
+    },
+    {
+      "claim_id": "20c0f296-16a2-4386-a539-9ce5a3d5807c",
+      "result_id": "838d7eff-8226-4458-bb27-bbfbcb7cd851"
+    },
+    {
+      "claim_id": "d83e4ac2-f5c1-4667-8339-baca0afaec73",
+      "result_id": "838d7eff-8226-4458-bb27-bbfbcb7cd851"
+    },
+    {
+      "claim_id": "e6bb5708-e34a-4edd-be70-ab1d2e6d43fe",
+      "result_id": "838d7eff-8226-4458-bb27-bbfbcb7cd851"
+    },
+    {
+      "claim_id": "2842abb9-4d97-41d6-a71b-dab68cdf5f52",
+      "result_id": "838d7eff-8226-4458-bb27-bbfbcb7cd851"
+    },
+    {
+      "claim_id": "3612d457-bab9-46a7-9ea2-57889d7204bf",
+      "result_id": "838d7eff-8226-4458-bb27-bbfbcb7cd851"
+    },
+    {
+      "claim_id": "303dd9c9-72dc-4e0d-b1ff-2aadf81f79d6",
+      "result_id": "838d7eff-8226-4458-bb27-bbfbcb7cd851"
+    },
+    {
+      "claim_id": "231b4d5e-eb2f-475b-9075-035b78951b20",
+      "result_id": "838d7eff-8226-4458-bb27-bbfbcb7cd851"
+    },
+    {
+      "claim_id": "48e11edc-6b3e-469c-8978-02a76e6bf233",
+      "result_id": "19044f90-74a6-4bb6-b25e-317ad2c23e1f"
+    },
+    {
+      "claim_id": "19b019a3-a4d2-4756-a994-ac44146bc3fe",
+      "result_id": "19044f90-74a6-4bb6-b25e-317ad2c23e1f"
+    },
+    {
+      "claim_id": "c03e0e7a-0c92-4f0e-bfa5-9401047a1d04",
+      "result_id": "19044f90-74a6-4bb6-b25e-317ad2c23e1f"
+    },
+    {
+      "claim_id": "f712c634-71a2-41dd-b590-a0da4951d954",
+      "result_id": "19044f90-74a6-4bb6-b25e-317ad2c23e1f"
+    },
+    {
+      "claim_id": "a14b4d41-5349-4989-8512-404c022ef02c",
+      "result_id": "19044f90-74a6-4bb6-b25e-317ad2c23e1f"
+    },
+    {
+      "claim_id": "09b64127-1bf2-4d55-aec2-3a3a5453b8ce",
+      "result_id": "19044f90-74a6-4bb6-b25e-317ad2c23e1f"
+    },
+    {
+      "claim_id": "d3620bd9-427f-402d-b468-9bac032eee44",
+      "result_id": "44e4afc2-7a8a-40f0-88db-2171a314d9fe"
+    },
+    {
+      "claim_id": "840f14f4-21b6-4fa9-bf97-2e9636b01ce5",
+      "result_id": "44e4afc2-7a8a-40f0-88db-2171a314d9fe"
+    },
+    {
+      "claim_id": "40e93b16-0fae-4814-a6fe-b18ae227c177",
+      "result_id": "44e4afc2-7a8a-40f0-88db-2171a314d9fe"
+    },
+    {
+      "claim_id": "e31715cc-3911-4af7-82ef-2409d3fa7242",
+      "result_id": "44e4afc2-7a8a-40f0-88db-2171a314d9fe"
+    },
+    {
+      "claim_id": "66956a40-ad29-48ed-9ff4-d2abeae9dbd2",
+      "result_id": "44e4afc2-7a8a-40f0-88db-2171a314d9fe"
+    },
+    {
+      "claim_id": "38c2b2e5-e3b8-44de-941f-42e544a571b3",
+      "result_id": "44e4afc2-7a8a-40f0-88db-2171a314d9fe"
+    },
+    {
+      "claim_id": "1bdaadca-99b8-4d48-ad99-bec0f6040c05",
+      "result_id": "44e4afc2-7a8a-40f0-88db-2171a314d9fe"
+    },
+    {
+      "claim_id": "933d1a31-c419-4155-adeb-aa591b95768d",
+      "result_id": "44e4afc2-7a8a-40f0-88db-2171a314d9fe"
+    },
+    {
+      "claim_id": "b0c56ed5-d1bb-45e8-8b6c-3e785f28629c",
+      "result_id": "44e4afc2-7a8a-40f0-88db-2171a314d9fe"
+    },
+    {
+      "claim_id": "a1a030b5-afc2-4230-aa60-e8a4d3bedb1b",
+      "result_id": "44e4afc2-7a8a-40f0-88db-2171a314d9fe"
+    },
+    {
+      "claim_id": "d7b45d43-e7a3-4800-882b-9edcef0e063d",
+      "result_id": "1e2607b0-e544-44a7-85da-4ba028c2cdb4"
+    },
+    {
+      "claim_id": "a8bf8c38-8c1c-4f80-9780-3f340deb898e",
+      "result_id": "1e2607b0-e544-44a7-85da-4ba028c2cdb4"
+    },
+    {
+      "claim_id": "c01b581e-a09b-414f-87e3-1432c8d175fa",
+      "result_id": "1e2607b0-e544-44a7-85da-4ba028c2cdb4"
+    },
+    {
+      "claim_id": "dfb913c5-fda1-436b-9829-f7e640505819",
+      "result_id": "1e2607b0-e544-44a7-85da-4ba028c2cdb4"
+    },
+    {
+      "claim_id": "17c5701f-139d-451c-86de-0e71c325555a",
+      "result_id": "b03c2b6d-1954-4f5e-a541-bcc6b93eb47c"
+    },
+    {
+      "claim_id": "4ee55b31-26f9-4f92-a734-0095646beee2",
+      "result_id": "b03c2b6d-1954-4f5e-a541-bcc6b93eb47c"
+    },
+    {
+      "claim_id": "efa01e30-2632-47de-b708-68b9dad798ff",
+      "result_id": "b03c2b6d-1954-4f5e-a541-bcc6b93eb47c"
+    },
+    {
+      "claim_id": "3283fb2e-ae21-441b-9d27-7af539824e9d",
+      "result_id": "09773be5-3c7f-40ff-9102-cd8301bf2990"
+    },
+    {
+      "claim_id": "266ff2ff-bc9c-4514-8c71-55151079ece3",
+      "result_id": "e7a26c73-ec34-4605-919d-1001099bc832"
+    },
+    {
+      "claim_id": "14a63bc1-98f2-4bad-acb9-95d7a6ce0f09",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "7447fdbf-3419-4e8a-8028-9f4195445948",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "823291a3-08be-44f7-b77c-6fd1a05b9fd8",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "6b6d355d-7044-422b-a1f1-63fa3e943deb",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "0e5bd459-0e62-402c-aa28-a03c7cfbe937",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "2dc2aea5-2bd0-4308-811e-3bbbb3bac20c",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "888e9b1e-62c3-4644-a6eb-84f10072fc5d",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "803ad893-3cba-4d73-b636-cf057de1822a",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "679b5796-0e14-47d6-9b54-0495b0807cdd",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "592b4632-41a9-40f8-830a-d4c10a35d05d",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "aacccd1e-8b86-48d8-9e68-0e9d00d2897a",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "3517f3fe-2b1c-427e-bb74-a4a6728b68d5",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "32c6f5c2-8a9e-4ba9-8d65-528c6131306f",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "1bdaadca-99b8-4d48-ad99-bec0f6040c05",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "65dee2be-acf3-49f4-b4cb-3ab99aa43ee0",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "152bfcd2-424d-4c98-b1ba-c5774f39b232",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "b0c698d4-c852-4c63-823a-f72fe079d15d",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "f135320e-ea5f-4c0c-ab50-578871c47baf",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "07c295c4-fd7a-4fea-b3a6-7f1434d358d0",
+      "result_id": "56fa4e6a-8ac3-4c29-af51-43ebc0324872"
+    },
+    {
+      "claim_id": "7e8ef174-ed2a-4286-b986-1b6a55a6adae",
+      "result_id": "c40d0685-0735-4dce-8790-9102a6997597"
+    },
+    {
+      "claim_id": "dcaddbe3-30a1-49ba-b10f-3fc0cf1d8bcb",
+      "result_id": "c40d0685-0735-4dce-8790-9102a6997597"
+    },
+    {
+      "claim_id": "3da7d099-8cdd-489a-ba77-9f8a34344e47",
+      "result_id": "c40d0685-0735-4dce-8790-9102a6997597"
+    },
+    {
+      "claim_id": "d5d5e14f-9450-4d0b-b0bf-7cdff6d08c13",
+      "result_id": "c40d0685-0735-4dce-8790-9102a6997597"
+    },
+    {
+      "claim_id": "96f6cfa5-b153-4198-a5f4-e50eb7dfe128",
+      "result_id": "c40d0685-0735-4dce-8790-9102a6997597"
+    },
+    {
+      "claim_id": "092d1d71-3fc7-431d-ba57-a46414bf01ec",
+      "result_id": "c40d0685-0735-4dce-8790-9102a6997597"
+    }
+  ],
+  "comparisons": []
+}

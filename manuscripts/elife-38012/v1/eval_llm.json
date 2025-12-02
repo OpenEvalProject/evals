@@ -1,0 +1,202 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The study surveyed mammals using 1427 camera traps deployed by 557 volunteers across urban-wild gradients in Washington DC and Raleigh, NC from 2012-2016. The methodology included stratification by five development levels (urban to wild) and four plot types, with cameras spaced \u2265200m apart and deployed for three weeks each.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C25 provide comprehensive methodological details including study area characteristics, sample sizes, stratification approach, camera spacing, deployment duration, and data processing protocols. The methodology is well-documented with appropriate citations and appears internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The study obtained 53,273 detections of 19 mammal species across 1427 sites. In DC, 17 species were detected with mean na\u00efve occupancy of 0.19 and mean detection rate of 0.09 detections/day. In Raleigh, 17 species were detected with mean na\u00efve occupancy of 0.14 and mean detection rate of 0.08 detections/day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 present basic descriptive statistics from the camera trap survey. The data are clearly stated with specific numerical values and appear consistent across the two cities, providing a solid foundation for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C41",
+      "C42"
+    ],
+    "result": "Species diversity and richness showed no significant decline from suburban to wild gradient levels, though Shannon diversity was significantly lower at the urban level in DC. Diversity peaked at intermediate urbanization levels (exurban in DC, suburban in Raleigh), and diversity in yards was significantly higher or not different from forest fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C41-C42 are supported by data presented in Figures 1-2 and supplements. The finding of peak diversity at intermediate development levels is consistent with the figures shown. However, C30's attribution of lower urban diversity to low sampling is speculative and not statistically tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Most mammal species (92.3% of those detected >20 times) occupied all development levels below urban. Coyotes and bobcats were absent from urban areas but present at all other levels. The extant mammal guild exploits all gradient levels, though some species (bobcat, bear) appear less adapted to human-dominated areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by the detection data presented in Figure 1 and the text. The gradient of species responses to urbanization is clearly demonstrated, with specific examples provided for different carnivore species showing varying degrees of urban adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Occupancy and detection rate models fit well (Bayesian p-values 0.1-0.9). Suburban and urban occupancy probabilities were not statistically different from wild for any carnivore species, with a decreasing trend from urban to wild. Carnivore occupancy in the study areas was not significantly different from global wildland protected areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by model diagnostics and data presented in Figure 3 and supplements. The comparison with global wildland data (Rich et al., 2017) provides important context. However, C48's inference about ecological function is a strong conclusion based primarily on occupancy similarity, which may not fully capture functional differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Green space is important to less-adapted carnivore species, with greater association when housing density is high. Red foxes are the most urban-adapted carnivore (positively associated with yards), while bobcats are the most human-averse. Shyer species likely require forest patches to navigate residential areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by model results in supplementary files and Figure 1. The gradient of carnivore responses from red fox (urban-adapted) to bobcat (human-averse) is well-documented. However, C52 is speculative reasoning about behavioral mechanisms that, while plausible, lacks direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C68"
+    ],
+    "result": "Contrary to expectations, suburban and exurban development showed no negative impact on mammal diversity, richness, occupancy, and detection rate. All metrics were significantly greater than or equal to wild areas, with developed areas having significantly higher or statistically similar values compared to wild areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C68 represent the study's main finding and are supported by the diversity, occupancy, and detection rate analyses presented in Figures 2-3. However, this conclusion applies only to extant species that survived initial urbanization, as acknowledged by the authors (C37-C38), representing a significant survivorship bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The current mammal community represents species that survived initial high-density human settlement. Two large predators (wolves and cougars) were extirpated a century ago, though these species have shown adaptability to development at other sites, suggesting wild species may adapt to human development given time and protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 acknowledge important historical context and survivorship bias. C39 is supported by citations, but C40 is speculative extrapolation. This caveat is critical for interpreting the main results, as the study only examines species that already survived urbanization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Developed areas may offer good food resources through feeding and plantings, and mature suburbia's varied landscape structure may benefit generalist species. Developed areas with limited hunting may provide safe havens for game species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C59 are entirely speculative explanations for the observed patterns, explicitly acknowledged as hypotheses requiring further testing (C57 cites need for diet studies). While plausible mechanisms, these lack direct empirical support from the current study and should not be treated as established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The findings suggest high mammal adaptation to developed landscapes and give hope for wildlife in the Anthropocene, but generality needs testing in other cities. Contrasting patterns in Tokyo, Quebec, and Rennes suggest city structure and density may influence mammalian distribution, with New World cities potentially differing from Old World cities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 appropriately contextualize the findings with important caveats about generalizability. C63-C64 cite contrasting results from other studies. C65 is speculative but reasonable inference. The authors appropriately acknowledge limitations and the need for broader geographic testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C69"
+    ],
+    "result": "Urban green space, connectivity, and wild areas give species time and space to adapt. Further understanding of urban wildlife navigation and adaptation factors is critical for maintaining diversity. Conservation of wild areas and green space preservation are needed to protect sensitive species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C69 represent reasonable conservation implications drawn from the study findings. These are supported by the demonstrated importance of green space in the models (C49-C50) and the gradient of species responses (C53-C54). The recommendations appropriately balance the positive findings with conservation needs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C43"
+    ],
+    "result": "The introduction establishes that biodiversity loss threatens ecosystem services, urbanization typically reduces vertebrate diversity, but some species may benefit from urban food resources. Previous single-city studies yielded conflicting results, and large-scale studies are needed. Predators are thought most at risk from urbanization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13, C43 provide literature-based context supported by appropriate citations. These establish the study rationale and prior knowledge. The claims accurately represent the state of knowledge and identify the research gap (need for large-scale studies) that this work addresses.",
+    "result_type": "MINOR"
+  }
+]

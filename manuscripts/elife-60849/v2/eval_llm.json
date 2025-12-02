@@ -1,0 +1,361 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49"
+    ],
+    "result": "P2X7 receptor activation induces the release of CD14 in extracellular vesicles. CD14 appears in the 100K pellet fraction together with the extracellular vesicle marker CD9 after ATP stimulation of LPS-primed macrophages. The vesicles have an average size of 167.4 nm, and Triton X100 treatment releases CD14 from the pellet, confirming CD14 is a cargo of the vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C44-C46, C48-C49 are well-supported by immunoblot data (Figure 1a,c), nanoparticle tracking analysis (Figure 1\u2014figure supplement 1a), and detergent treatment experiments. The convergence of multiple experimental approaches (ultracentrifugation, polymer precipitation, detergent solubilization) provides strong evidence that CD14 is released in extracellular vesicles upon P2X7 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CD14 release in extracellular vesicles occurs rapidly (within 5 minutes of ATP stimulation) and is independent of macrophage polarization state (M1 vs M2). However, LPS-primed (M1) macrophages release significantly more extracellular vesicles than IL-4-treated (M2) or resting macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by time-course immunoblots (Figure 1\u2014figure supplement 1c), immunoblots comparing M1/M2 conditions (Figure 1d), and quantification with TEM (Figure 1e, Figure 1\u2014figure supplement 2a). The data clearly demonstrate both the kinetics and polarization-dependent differences in vesicle release.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "CD14 release in extracellular vesicles is highly dependent on NLRP3 inflammasome but not on caspase-1. The amount of extracellular vesicles released is reduced in both Nlrp3\u2212/\u2212 and Casp1/11\u2212/\u2212 macrophages, but the morphology differs: Nlrp3\u2212/\u2212 vesicles resemble those from resting cells while Casp1/11\u2212/\u2212 vesicles resemble LPS-primed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are well-supported by immunoblots from knockout macrophages (Figure 1f), vesicle quantification (Figure 1g), and TEM morphology analysis (Figure 1\u2014figure supplement 2b). However, claim C58 is speculative\u2014while the authors propose a specific NLRP3-dependent vesicle pool enriched in CD14, this interpretation lacks direct biochemical evidence and remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C7"
+    ],
+    "result": "P2X7 receptor activation causes a significant decrease in cell surface CD14 on macrophages, suggesting reduced CD14-dependent signaling capacity and establishing P2X7 as a source of extracellular CD14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, and C7 are supported by flow cytometry data (Figure 1h) showing reduced CD14 mean fluorescence intensity after ATP treatment. The inference that this reduction affects signaling (C60) is reasonable given the established role of membrane CD14 in LPS signaling, though the functional consequences are tested separately in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C8"
+    ],
+    "result": "P2X7 receptor activation prior to LPS stimulation reduces LPS-induced pro-inflammatory cytokine production (IL-6 and TNF-\u03b1). This effect is P2X7-dependent, as it is abrogated by the P2X7 antagonist A438079 or in P2rx7\u2212/\u2212 macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 and C8 are well-supported by qPCR and ELISA data (Figure 2a,b) with appropriate controls including pharmacological inhibition and genetic knockout. The rescue experiments provide strong evidence for P2X7-specific effects on LPS signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C9"
+    ],
+    "result": "The P2X7-mediated reduction in cytokine production is specific to CD14-dependent LPS signaling. MPLA, which signals independently of CD14, is not affected by P2X7 activation. Similarly, blocking CD14 with antibodies reduces LPS but not MPLA responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 and C9 are supported by comparative experiments with LPS vs MPLA (Figure 2c,d) and CD14 blocking antibody experiments (Figure 2\u2014figure supplement 1a,b). The differential effects on LPS vs MPLA provide strong mechanistic evidence that the P2X7 effect is mediated through CD14 depletion. The citations to prior work (C65, C66) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "P2X7 activation reduces Il1b gene expression when cells are primed with LPS but not MPLA, suggesting CD14 depletion affects LPS priming. However, IL-1\u03b2 release induced by nigericin is reduced with both LPS and MPLA priming, indicating that Il1b production, but not NLRP3 activation itself, is affected by CD14 release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by qPCR data (Figure 2e) and ELISA for IL-1\u03b2 release (Figure 2f). The differential effects on gene expression (LPS-specific) vs. inflammasome activation (both LPS and MPLA) provide evidence that CD14 release affects the priming step but not NLRP3 activation. However, the interpretation in C74 requires careful consideration\u2014the reduction in IL-1\u03b2 with both LPS and MPLA priming could also reflect reduced substrate availability rather than unaffected NLRP3 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C4"
+    ],
+    "result": "Septic patients have elevated plasma CD14 levels and increased P2X7 receptor expression on monocytes compared to non-septic volunteers, confirming prior observations about CD14 elevation in sepsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C76, and C4 are supported by ELISA and flow cytometry data from human samples (Figure 3a, Supplementary file 1-Table 1) and appropriate citations. The human data establish clinical relevance, though sample sizes are modest (n=9-10). Statistical significance is shown for both measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C10",
+      "C40"
+    ],
+    "result": "P2X7 receptor is important for maintaining elevated CD14 levels during sepsis. P2rx7\u2212/\u2212 mice and wild-type mice treated with P2X7 antagonist A438079 show reduced CD14 in serum and/or peritoneal lavage after CLP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C78, C10, and C40 are supported by ELISA data from CLP experiments (Figure 3b,c). Both genetic (knockout) and pharmacological (antagonist) approaches show consistent results. The mild serum reduction with A438079 (C78) is acknowledged and explained by pharmacokinetic limitations (C79), which is reasonable though speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "During sepsis, the increase in CD14 in peritoneal lavage is mainly associated with extracellular vesicles, and this vesicular CD14 is reduced in P2X7-deficient mice, indicating P2X7 contributes to extracellular vesicle-associated CD14 during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by ELISA measurements of CD14 in isolated extracellular vesicles from peritoneal lavage (Figure 3d). The data directly demonstrate that the in vitro findings translate to the in vivo sepsis model, strengthening the mechanistic link between P2X7 and CD14 release during infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "P2X7 deficiency or inhibition results in elevated cytokines, chemokines, and acute phase proteins in serum during sepsis, suggesting P2X7 is important for downregulating inflammatory mediators during sepsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by ELISA (Figure 4a) and multiplex analysis (Figure 4b,c) of serum from CLP mice. The data are consistent with the in vitro findings that P2X7-mediated CD14 release dampens LPS signaling. However, the interpretation that P2X7 is 'important for downregulation' (C85) is somewhat indirect\u2014the elevated cytokines could also reflect increased bacterial load or other factors beyond direct signaling effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C11"
+    ],
+    "result": "P2X7 deficiency or inhibition increases bacterial burden in serum, peritoneal cavity, and liver during sepsis, demonstrating P2X7 is important for bacterial clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C89, and C11 are well-supported by CFU quantification (Figure 5a,b) using both genetic knockout and pharmacological inhibition. The increased bacterial load is consistent across multiple compartments and approaches, providing strong evidence for P2X7's role in bacterial control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Administration of recombinant CD14 to P2rx7\u2212/\u2212 mice rescues bacterial clearance and reduces cytokine/chemokine levels during sepsis, demonstrating that extracellular CD14 is an important element of the P2X7 secretome for controlling bacterial dissemination and inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are strongly supported by rescue experiments showing reduced bacterial load (Figure 5c) and cytokine levels (Figure 5d,e) after recombinant CD14 treatment. This is a critical experiment that establishes causality\u2014the phenotype of P2X7 deficiency can be rescued by CD14 supplementation, directly linking P2X7 function to CD14-mediated bacterial clearance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C13"
+    ],
+    "result": "P2X7 deficiency or inhibition increases mortality, body weight loss, and poor well-being scores during sepsis, confirming P2X7's protective role in sepsis survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 and C13 are supported by survival curves (Figure 6a), body weight measurements, and monitoring scores (Figure 6\u2014figure supplement 1a,b). The data are consistent with prior studies (cited appropriately) and demonstrate clear survival disadvantage with P2X7 loss or inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Recombinant CD14 treatment significantly increases survival and preserves body weight in P2rx7\u2212/\u2212 mice during sepsis, demonstrating that CD14 deficiency contributes to mortality in P2X7-deficient animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by survival analysis (Figure 6b) and body weight data (Figure 6\u2014figure supplement 1a). The rescue of survival by CD14 supplementation is a key finding that establishes CD14 as a critical mediator of P2X7's protective effects in sepsis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C12"
+    ],
+    "result": "Sepsis-induced organ damage (liver, spleen, lung) is exacerbated in P2X7-deficient or inhibited mice, showing unstructured parenchyma, steatosis, dying hepatocytes, white pulp depletion, and pulmonary hemorrhage/infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 and C12 are supported by histopathology with H&E staining (Figure 6c, Figure 6\u2014figure supplements 1c and 2, Supplementary file 1-Table 2). The pathological changes are well-documented across multiple organs and are consistent with increased bacterial burden and inflammation. The scoring system (Supplementary file 1-Table 2) provides semi-quantitative assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "Recombinant CD14 treatment reduces organ damage in liver, spleen, and lung of P2rx7\u2212/\u2212 mice during sepsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by histopathology showing reduced damage after CD14 treatment (Figure 6d, Figure 6\u2014figure supplement 3, Supplementary file 1-Table 2). This completes the rescue experiment series, demonstrating that CD14 supplementation not only improves bacterial clearance and survival but also reduces tissue damage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C43",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study's main conclusion is that P2X7 receptor controls CD14 release in extracellular vesicles, which impairs LPS signaling in macrophages and controls bacterial dissemination and cytokine production during sepsis, thereby reducing tissue damage and improving survival. Circulating CD14 is not only a sepsis marker but an important functional component of innate immunity that P2X7 releases in a regulated manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C43, C104-C110 represent the study's integrated conclusions. These are well-supported by the convergence of in vitro mechanistic studies (CD14 release, reduced LPS signaling), in vivo sepsis models (reduced CD14, increased bacteria, worse outcomes in P2X7-deficient mice), and rescue experiments (CD14 supplementation improves outcomes). The logical chain from mechanism to phenotype to rescue provides strong support for the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Most P2X7 receptor secretome proteins (except IL-1\u03b2) are in the soluble fraction rather than the 100K pellet containing extracellular vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by immunoblots and ELISA (Figure 1\u2014figure supplement 1b) showing differential distribution of secretome components. This establishes that CD14 is unusual among P2X7 secretome proteins in being vesicle-associated, which is important for understanding the specificity of the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C69",
+      "C70",
+      "C86",
+      "C87"
+    ],
+    "result": "Background claims about purinergic signaling, P2X7 receptor functions, NLRP3 inflammasome, pyroptosis, CD14 structure and function, sepsis, and knowledge gaps addressed by the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C38, C69-C70, and C86-C87 are background/context claims supported by appropriate citations to prior literature. These establish the scientific context and knowledge gaps that motivate the study. The citations appear accurate and relevant based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C45"
+    ],
+    "result": "Established knowledge about CD14 and CD9 structure and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C45 represent well-established knowledge about CD14 (GPI-anchored, important for LPS/TLR4 signaling) and CD9 (extracellular vesicle marker). These are appropriately cited and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The mild reduction in serum CD14 after A438079 treatment is attributed to the intraperitoneal injection route and short half-life of the antagonist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is speculative and supported only by a citation about A438079 pharmacokinetics (McGaraughty et al., 2007). While the explanation is plausible, it is not directly tested. The authors could have used different dosing regimens or routes to test this hypothesis. This represents a limitation in the pharmacological validation of the in vivo findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "A specific pool of extracellular vesicles dependent on LPS-priming and NLRP3 could be enriched in CD14 and explain differences between Nlrp3\u2212/\u2212 and Casp1/11\u2212/\u2212 macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is speculative interpretation based on morphological differences in TEM images. While the hypothesis is reasonable, it lacks direct biochemical evidence such as vesicle subpopulation isolation and CD14 quantification in different vesicle types. The claim represents an interesting hypothesis that requires additional experimental validation.",
+    "result_type": "MINOR"
+  }
+]

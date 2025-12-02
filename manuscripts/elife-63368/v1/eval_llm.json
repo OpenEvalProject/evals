@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The D. melanogaster genome contains 91 ZAD-ZNF genes distributed across chromosomes 2, 3, and X, with variable domain architecture (0-23 C2H2 domains). Phylogenomic analysis across 12 Drosophila species reveals that 74 genes arose \u226540 million years ago, with 61 retained and 13 lost in at least one lineage, while 17 arose more recently via gene duplication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide consistent genomic and phylogenomic characterization using established databases (FlyBase, OrthoDB) and standard comparative methods. The data on gene numbers, chromosomal distribution, domain architecture, and evolutionary age are internally consistent and appropriately referenced to Figure 1 and Supplementary file 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Among 85 D. melanogaster ZAD-ZNF genes with phenotypic data, 22 are essential for viability or fertility. Surprisingly, evolutionary conservation does not predict essentiality: genes not universally conserved across Drosophila are just as likely to be essential as strictly conserved genes (8:21 vs 14:42, p=0.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 present a well-supported statistical analysis using Fisher's exact test with appropriate sample sizes. The counterintuitive finding that non-conserved genes are equally likely to be essential is clearly stated with proper statistical support (p=0.8), challenging conventional assumptions about the relationship between conservation and essentiality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "McDonald-Kreitman tests identified 12 of 90 ZAD-ZNF genes under recent positive selection between D. melanogaster and D. simulans, with adaptive evolution occurring predominantly in linker domains (6 genes) rather than DNA-binding domains. Critically, positively selected ZAD-ZNF genes are significantly more likely to be essential (8:4 vs 14:59, p=0.0016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 present rigorous population genetic analyses using established methods (McDonald-Kreitman test with polarization using D. yakuba outgroup). The statistical finding (p=0.0016) of correlation between positive selection and essentiality is well-supported and represents a major discovery. Domain-specific analyses (Table 2) provide additional mechanistic insight, though the unexpected focus on linker domains warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The Oddjob-Nicknack cluster on chromosome 3 contains five ZAD-ZNF genes with highly dynamic evolutionary histories. While Oddjob is universally conserved across 40 million years of Drosophila evolution, Nicknack arose ~30 mya and has experienced multiple independent duplications and losses. Despite this evolutionary instability, both Odj and Nnk are essential in D. melanogaster, while the other three cluster members (CG17801, CG17803, CG17806) are not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C50 combine phylogenomic analysis (Figure 2C, Figure 2\u2014figure supplement 1) with functional knockdown experiments (Figure 2B). The phylogenetic analyses use appropriate methods (reciprocal BLAST, maximum likelihood trees with bootstrap support) and the essentiality data are experimentally validated. The conclusion that Nnk is essential despite not being universally conserved is well-supported and exemplifies the broader pattern identified in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Multiple independent lines of evidence unambiguously establish Nnk as essential in D. melanogaster: (1) RNAi knockdown causes lethality that is rescued by a recoded Nnk transgene, (2) a piggyBac insertion in the 5' UTR is homozygous lethal but rescued by transgene or scarless excision, and (3) a CRISPR-null allele is lethal when paired with a deficiency and fails to complement the piggyBac-null, but is rescued by transgene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 provide exceptionally rigorous validation using three independent null alleles (RNAi, piggyBac insertion, CRISPR deletion) with multiple complementation tests and transgenic rescues (Figure 3). This addresses previous ambiguities in the literature and establishes Nnk essentiality beyond reasonable doubt. The experimental design includes appropriate controls and the results are internally consistent across all approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Nnk-null larvae develop normally through embryogenesis and early L1 stage but fail to molt to L2 at 48 hr AEL, becoming progressively immobile and dying by 60 hr AEL. Unlike other larval-lethal ZAD-ZNF genes, dietary supplementation with ecdysone precursors (cholesterol, 7DH) or ecdysone (20E) cannot rescue Nnk-null lethality, indicating Nnk functions in a pathway distinct from ecdysone biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 present clear developmental phenotyping with appropriate controls. The ecdysone supplementation experiments (Figure 4C) include a positive control (Npc1a mutants that are rescued) demonstrating the approach works, making the negative result with Nnk-null larvae interpretable. This effectively rules out a simple ecdysone biosynthesis defect and suggests a distinct mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "RNA-seq analysis reveals progressive transcriptional dysregulation in Nnk-null larvae: 249 genes (2.4%) are differentially expressed at 24 hr AEL, increasing to 3027 genes (28.1%) at 48 hr AEL. Hierarchical clustering shows that 48 hr Nnk-null larvae are transcriptionally more similar to 24 hr larvae than to age-matched controls, consistent with developmental arrest. GO enrichment identifies misregulation of proteolysis, sterol transport, and cytochrome P450 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 present standard RNA-seq analysis with appropriate statistical methods (DESeq2, adjusted p-value \u22640.05, |log2FC| \u22651) and biological replicates (n=3). The clustering analysis (Figure 4F) provides strong support for developmental arrest. However, the large number of differentially expressed genes at 48 hr (28.1%) may reflect secondary consequences of developmental arrest rather than direct Nnk targets, which the authors appropriately acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Nnk and Odj both localize to heterochromatin in D. melanogaster S2 cells, but with distinct patterns: Odj shows broad heterochromatic localization while Nnk localizes to discrete foci that do not overlap with centromeres or piRNA clusters. ChIP-seq confirms Odj is enriched throughout pericentric heterochromatin while Nnk binding is more narrowly distributed. Mutational analysis reveals that a conserved PxVxL motif in Odj's linker domain mediates its broad localization, likely through HP1a interaction, while Nnk lacks this motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C91 combine cytological localization (Figures 5A-B, Figure 5\u2014figure supplement 1-2) with ChIP-seq (Figure 5C) and mutational analysis. The localization patterns are clearly documented with appropriate markers (H3K9me3, Cid, Rhino). The V164A mutation experiment (Figure 5\u2014figure supplement 2B) provides functional evidence for the PxVxL motif's role. However, ChIP-seq interpretation is complicated by potential 'phantom peaks' (Figure 5\u2014figure supplement 3), which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Some heterochromatin-embedded repetitive elements are derepressed upon Nnk loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by RNA-seq analysis of repeat elements (Figure 5\u2014figure supplement 4) showing specific repeats are upregulated in Nnk-null larvae. The analysis uses appropriate methods for quantifying repeat expression. However, the biological significance and specificity of these changes require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C121"
+    ],
+    "result": "Despite 52 fixed non-synonymous substitutions between D. melanogaster and D. simulans Nnk (in 439 aa), both proteins localize to heterochromatic foci in D. melanogaster S2 cells. However, functional divergence is revealed by transgenic rescue: D. simulans Nnk rescues female viability comparably to D. melanogaster Nnk, but shows dramatically reduced male rescue (2:33 vs 67:101, p<0.0001), suggesting positive selection has been required for optimal function specifically in the context of the heterochromatin-rich Y chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C101 and C121 present a sophisticated cross-species functional test using isogenic transgene insertions (attP site) to control for position effects. The sex-biased rescue phenotype is statistically robust (p<0.0001) and provides compelling evidence that positive selection has functional consequences. The interpretation linking this to Y chromosome heterochromatin is reasonable but remains inferential. The inability to measure transgene expression levels is a limitation but does not undermine the core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "Altered protein-protein interactions or DNA-binding specificity via the linker domain may provide a means for functional diversification between closely-related ZAD-ZNF paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is a reasonable inference based on the Odj mutational analysis (C87-C89) showing that linker domain mutations alter localization patterns. However, this remains a hypothesis requiring direct testing of DNA-binding specificity and protein-protein interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "Nnk may repress expression from heterochromatic repeats rather than acting as a transcription regulator for specific heterochromatin-embedded genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C123 is explicitly presented as a hypothesis. While supported by the observation that some repeats are derepressed (C92) and that heterochromatin-embedded genes show minimal expression changes at 24 hr AEL, the evidence is indirect. ChIP-seq data interpretation is complicated by potential artifacts (Figure 5\u2014figure supplement 3), and the lack of effect on heterochromatin-embedded genes could reflect timing or indirect effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Literature review establishes that ZAD-ZNF genes are the most abundant transcription factor class in insects, arising in the vertebrate-arthropod ancestor and expanding in insect lineages with extensive gene turnover. Previous studies have characterized diverse ZAD-ZNF functions including transcriptional regulation, chromatin organization, and developmental patterning. The analogous KZNF gene family in mammals shows similar expansion and positive selection driven by transposable element defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C120 accurately summarize published literature with appropriate citations. These provide essential context for interpreting the current study's findings. The citations appear accurate and the characterizations of prior work are consistent with the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors propose that constant adaptation in ZAD-ZNF genes is driven by rapid alterations in heterochromatin sequences (TEs and satellite DNAs), requiring ongoing adaptation of transcription factors for proper expression of heterochromatin-embedded genes. This could explain why essential ZAD-ZNF genes can be lost in some species (if targets are lost or paralogs compensate) and why positive selection is required for optimal function (as demonstrated for Nnk). The sex-biased rescue failure of D. simulans Nnk in D. melanogaster males may reflect species-specific Y chromosome heterochromatin differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C131 present a coherent mechanistic hypothesis that integrates the study's findings, but remain speculative. The model is consistent with the data (correlation between positive selection and essentiality, Nnk's heterochromatin localization, sex-biased rescue failure) and is supported by citations to relevant literature on heterochromatin evolution. However, direct evidence for co-evolution with specific heterochromatic sequences is lacking. Alternative explanations (e.g., sex-specific functions unrelated to Y chromosome, dosage compensation effects) are mentioned but not rigorously tested.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,397 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C160"
+    ],
+    "result": "The authors developed and validated the H4-tfLC3B cell line expressing endogenously-tagged GFP-mCherry-LC3B for monitoring autophagy flux. The cell line responds appropriately to autophagy inhibition (bafilomycin A1, ATG7 knockdown) and stimulation (nutrient deprivation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 provide comprehensive validation of the H4-tfLC3B cell line through multiple experimental approaches including live-cell imaging, FACS analysis, and genetic/pharmacological manipulations. The cell line exhibits expected responses to autophagy modulators, demonstrating its reliability as a screening tool (C160).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C161"
+    ],
+    "result": "A genome-wide CRISPR/Cas9 screen in H4-tfLC3B cells identified UBA6 and BIRC6 as novel autophagy regulators. The screen successfully identified virtually all known core autophagy machinery components, validating its reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 demonstrate that the screen identified known autophagy genes as top hits (ATG7, ATG12, ATG13, etc.) and previously reported regulators (BORC subunits, BECN1, RAB1A), confirming screen validity. UBA6 scored highly in both primary and secondary screens despite not being previously implicated in autophagy (C52, C161).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C162"
+    ],
+    "result": "UBA6 depletion specifically increases LC3B-I levels without affecting LC3B-II levels, autophagosome-lysosome fusion, or other autophagy machinery components. This phenotype differs from ATG7 depletion and is rescued by UBA6 re-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C64 provide extensive characterization showing UBA6 depletion increases LC3B-I (and LC3A-I) but not LC3B-II, with no effects on other Atg8 family members (GABARAP, GABARAPL1), autophagy machinery components, organelle markers, cell proliferation, or mRNA levels. The phenotype is rescued by UBA6 re-expression (C56) and differs from ATG7 KD (C54), supporting a specific role for UBA6 in LC3B-I regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "UBA6 promotes monoubiquitination of cytosolic LC3B-I, targeting it for proteasomal degradation. LC3B can be ubiquitinated in the cytosol independently of autophagosome association, and this modification is specific to LC3 family members (LC3A, LC3B, LC3C) but not GABARAP family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C76 demonstrate through multiple lines of evidence that: (1) proteasome inhibition increases LC3B-I in WT but not UBA6-KO cells (C65-C66); (2) LC3B is monoubiquitinated in vivo (C67-C69, C75); (3) the G120A mutant that cannot associate with autophagosomes is still ubiquitinated (C70-C72); (4) ubiquitination is specific to LC3 family members (C73-C74). These data converge to support the conclusion in C76.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Lysine-51 is the main ubiquitination site on LC3B. This residue is part of the hydrophobic pocket that recognizes LIR motifs, and its mutation abolishes interactions with autophagy receptors SQSTM1 and NBR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide direct experimental evidence that K51R mutation abolishes ubiquitination (C77) and receptor binding (C80), while structural analysis confirms K51 is in the LIR-binding pocket (C79). However, C81 is speculative about an additional inhibitory function of ubiquitination on receptor recognition, which is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "BIRC6 functions as an E2/E3 enzyme that cooperates with UBA6 (E1) to monoubiquitinate LC3B. BIRC6 interacts with UBA6 and LC3 family members (LC3A, LC3B, LC3C) but not GABARAP family members. The UBC domain of BIRC6 is essential for LC3B ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 provide comprehensive evidence through: (1) in vivo ubiquitination assays showing BIRC6 KO reduces LC3B ubiquitination more than UBA6 KO (C82); (2) co-immunoprecipitation demonstrating BIRC6 interacts with UBA6 and LC3B (C83); (3) mapping of LC3B-binding regions (C84); (4) specificity for LC3 vs GABARAP family (C85); (5) in vitro reconstitution requiring all components (C87-C88); (6) requirement for the UBC domain active site (C89). These data strongly support the E2/E3 function of BIRC6 (C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "BIRC6 depletion increases LC3B-I levels more dramatically than UBA6 depletion, without affecting LC3B-II conversion or degradation. During starvation, BIRC6-KO and UBA6-KO cells maintain high LC3B-II levels due to continued replenishment from the larger LC3B-I pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C100 demonstrate that BIRC6 depletion phenocopies UBA6 depletion but with greater magnitude (C91), with similar effects on cell growth, mRNA levels, bafilomycin A1 response, and autophagosome/autolysosome ratios (C92-C95). The starvation experiments (C97-C98) show sustained LC3B-II levels in KO cells, which is reasonably interpreted as replenishment from the larger LC3B-I pool (C99-C100).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The larger pool of LC3B-I in BIRC6-KO cells promotes faster degradation of autophagy receptors SQSTM1 and NBR1 under conditions of protein synthesis inhibition (cycloheximide chase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 show through cycloheximide chase experiments that while LC3B-I degrades in both WT and BIRC6-KO cells, SQSTM1 and NBR1 degrade faster in BIRC6-KO cells (C102). The interpretation that this is due to the larger LC3B-I pool (C103) is reasonable given the established role of LC3 in autophagy receptor degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "UBA6 or BIRC6 depletion decreases the formation of puromycin-induced aggresome-like structures (ALIS) in H4 cells. This effect is due to elevated LC3B levels and is mediated by autophagy, as demonstrated by rescue experiments with BIRC6 re-expression, LC3B knockdown, and autophagy inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 provide multiple lines of evidence: (1) delayed ALIS formation in BIRC6-KO and UBA6-KO cells (C104, C106); (2) rescue by BIRC6 re-expression (C105); (3) rescue by LC3B depletion (C107-C108); (4) increased ALIS when autophagy is inhibited with bafilomycin A1 or ATG7 KD (C109-C111). These converging results strongly support the conclusion that enhanced autophagy due to elevated LC3B clears ALIS more efficiently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "BIRC6 depletion in rat hippocampal neurons significantly reduces \u03b1-synuclein aggregates. This effect is reversed by re-expression of shRNA-resistant human BIRC6 or by autophagy inhibition with bafilomycin A1, demonstrating that the clearance is autophagy-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 demonstrate through imaging (C113-C117) and biochemical fractionation (C118) that Birc6 knockdown reduces \u03b1-synuclein aggregates in neurons. The rescue experiments with BIRC6 re-expression (C116) and bafilomycin A1 treatment (C117) provide strong evidence that the effect is specific to BIRC6 and mediated by autophagy. This extends the findings from H4 cells to a disease-relevant neuronal model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Knockout of UBA6 or BIRC6 increased autophagic flux under conditions of nutrient deprivation or protein synthesis inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by the starvation experiments (C97-C100) showing sustained LC3B-II levels in KO cells, and the cycloheximide chase experiments (C101-C103) showing faster degradation of autophagy receptors. The ALIS clearance experiments (C104-C111) also support increased autophagic flux under protein synthesis inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C9"
+    ],
+    "result": "UBA6 and BIRC6 cooperate to monoubiquitinate LC3B, targeting it for proteasomal degradation, thereby negatively regulating autophagy by limiting LC3B availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is supported by the combined evidence from multiple result groups: (1) UBA6 and BIRC6 function as E1 and E2/E3 enzymes for LC3B monoubiquitination (C76, C90); (2) monoubiquitinated LC3B is degraded by the proteasome (C65-C66); (3) depletion of either enzyme increases LC3B-I levels and enhances autophagy (C53-C64, C91-C100); (4) functional consequences include enhanced clearance of protein aggregates (C104-C119).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "UBA6 or BIRC6 depletion decreased the formation of aggresome-like induced structures in H4 cells and \u03b1-synuclein aggregates in rat hippocampal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims are directly supported by the detailed experimental results in claims C104-C111 (ALIS in H4 cells) and C113-C119 (\u03b1-synuclein aggregates in neurons). The evidence includes imaging, quantification, and rescue experiments demonstrating specificity and autophagy-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C133",
+      "C142"
+    ],
+    "result": "Inhibition of UBA6/BIRC6 could be used to enhance autophagic clearance of protein aggregates in neurodegenerative disorders, representing a potential therapeutic strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the experimental data (C7-C8, C104-C119) demonstrate that UBA6/BIRC6 depletion enhances clearance of protein aggregates in cell culture and primary neurons, these claims (C10, C133, C142) are speculative regarding therapeutic applications. No in vivo disease models, pharmacological inhibitors, or toxicity studies are presented. The therapeutic potential requires substantial additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C163"
+    ],
+    "result": "The current study's findings on BIRC6 differ from a previous report (Ebner et al., 2018) that described BIRC6 as promoting autophagosome-lysosome fusion through interactions with GABARAP/GABARAPL1 and syntaxin 17. The authors find no defects in autophagosome-lysosome fusion in BIRC6-KO cells, observe cytosolic rather than lysosomal localization of BIRC6, and demonstrate that the C-terminal UBC domain is essential for LC3B ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 provide experimental evidence contradicting the previous study: no fusion defects (C149), cytosolic localization (C150), and requirement for the UBC domain (C151). The authors acknowledge the discrepancy (C147-C148) and offer a reasonable speculation about different cell types and conditions (C152). The current findings are internally consistent with BIRC6's E2/E3 activity (C163).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "A concurrent study (Jiang et al., 2019) reported that BIRC6 targets LC3B-I for proteasomal degradation and that BIRC6 itself is regulated by RNF41/NRDP1 and CACYBP/SIP, revealing a complex regulatory network for LC3B levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe findings from another study that appeared during manuscript preparation. The convergence of independent studies on BIRC6's role in LC3B degradation strengthens confidence in the current findings. The additional regulatory mechanisms described in the other study (C154) complement the current work and support the existence of a complex regulatory network (C155).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C112",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C127",
+      "C128",
+      "C130",
+      "C131",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The introduction and discussion provide established background knowledge on autophagy mechanisms, regulation, and therapeutic implications, as well as context for UBA6, BIRC6, and monoubiquitination in protein degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited throughout. They provide necessary context for interpreting the novel findings but do not constitute new results from this study. The claims accurately represent current understanding of autophagy biology, ubiquitination mechanisms, and neurodegenerative disease pathology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Small amounts of monoubiquitinated LC3B remain in UBA6-KO and BIRC6-KO cells, suggesting that other ubiquitinating enzymes could partially compensate, though these likely play minor roles since they were not identified in the screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 presents experimental data showing residual ubiquitination in KO cells. The interpretation that other enzymes compensate (C125) is reasonable, and the inference that these play minor roles based on their absence from the screen (C126) is logical. However, the identity and relative contributions of these alternative enzymes remain unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129",
+      "C132"
+    ],
+    "result": "Increasing LC3B levels by BIRC6-KO reduces the half-life of autophagy receptors SQSTM1 and NBR1, supporting the notion that elevated LC3 levels promote autophagy flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 is directly supported by the cycloheximide chase data (C101-C103). The broader conclusion about elevated LC3 promoting autophagy flux (C132) is supported by this study's findings and is consistent with previous reports (C130-C131). This represents a mechanistic insight into how LC3 levels regulate autophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C159"
+    ],
+    "result": "Monoubiquitination of the 125-amino-acid LC3B is the signal that targets it for degradation, consistent with recent evidence that monoubiquitination can target small proteins for proteasomal degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C159) integrates the experimental findings on LC3B monoubiquitination and proteasomal degradation (C65-C76) with established knowledge about monoubiquitination-mediated degradation of small proteins (C156-C158). The size of LC3B (125 amino acids) falls within the range where monoubiquitination is effective (20-150 residues, C157), supporting this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "An additional function of LC3B ubiquitination by UBA6 may be to inhibit the recognition of autophagy receptors, since K51 ubiquitination occurs at the LIR-binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C79-C80 demonstrate that K51 is in the LIR-binding pocket and that K51R mutation abolishes receptor binding, C81 is speculative about ubiquitination inhibiting receptor recognition. The K51R mutant cannot be ubiquitinated (C77) and cannot bind receptors (C80), but these experiments do not distinguish whether the loss of receptor binding is due to the charge change from the mutation itself or would occur with ubiquitination of the wild-type residue. Direct testing of receptor binding to ubiquitinated vs. non-ubiquitinated LC3B would be needed.",
+    "result_type": "MINOR"
+  }
+]

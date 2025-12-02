@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C22"
+    ],
+    "result": "The authors successfully produced functional PhyB protein that binds to PIF variants. After illumination with 660 nm light, 70% of PhyB molecules complexed with MBP-PIF(wt), and all tested PIF mutants formed similar complexes with PhyB(660). Given that only 80% of PhyB molecules are in the ON state at photoequilibrium, the authors conclude that the majority of PhyB molecules were functionally active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 and C22 provide converging biochemical evidence from size-exclusion chromatography demonstrating functional PhyB-PIF interaction. The 70% complexation compared to the 80% theoretical maximum supports the conclusion that most PhyB molecules are active. The data are internally consistent and appropriately controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors found that PIF(SSA)-TCR (termed PIFS-TCR) showed the highest surface expression among PIF-TCR constructs, but surprisingly, no PhyBt binding to PIFS-TCR on Jurkat cells could be detected despite functional TCR expression (demonstrated by antibody-mediated calcium flux). The authors conclude that PIFS loses its PhyB-binding capacity when fused to TCR and exposed on the T cell surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 describe a well-controlled negative result. The PIFS-TCR is expressed on the surface (C23), functional when cross-linked with antibody (C25), and PIFS binds PhyB in solution (from earlier claims), yet PhyBt(660) does not bind to cells (C24, C26). This supports the conclusion that surface presentation disrupts binding (C27). Appropriate controls are included.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors engineered GFP-PIFS-TCR constructs with different furin cleavage sites to test whether GFP presence is required for PhyB binding. Constructs with efficient GFP cleavage (F1, F2) showed minimal PhyBt(660) binding, while permanent GFP fusion (noF) resulted in strong light-dependent PhyBt binding. The authors conclude that moxGFP must be present at the cell surface for PIFS to bind PhyBt(660).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 describe a systematic structure-function analysis with appropriate controls. The correlation between GFP retention and PhyBt binding is clear from the data in Figures 4E,F. The intermediate binding with partial cleavage (F3) strengthens the conclusion. The inference that GFP is required for binding is well-supported by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors demonstrate that the GFP-PIFS-TCR system induces TCR signaling and T cell activation in a light-dependent manner. PhyBt(660), but not PhyBt(740), induced strong calcium influx similar to anti-TCR antibody stimulation. Multiple controls confirmed specificity: light alone, cells without GFP-PIFS-TCR, and PhyB monomers did not induce signaling. Bead-coupled PhyBt(660) upregulated the activation marker CD69.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 provide comprehensive evidence for functional TCR signaling through the opto-ligand system. The data include appropriate negative controls (C33-C35), multiple readouts (calcium flux and CD69 upregulation), and demonstrate light-dependent specificity. The requirement for tetrameric PhyB (C35) is consistent with prior literature on soluble TCR ligands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The authors demonstrate that the opto-ligand-TCR system is reversible: a 1 s pulse of 740 nm light stopped the ongoing calcium response initially evoked by PhyBt(660).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 demonstrate reversibility with clear experimental data (Figure 5D). The ability to terminate an ongoing response with 740 nm light is a key feature of the system and is well-documented. This is an important control demonstrating that the system can be actively switched OFF.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors show that continuous high intensity (100%) 660 nm light prevented calcium influx when PhyBt(660) was added, but stopping the illumination after 390 s allowed PhyB molecules in the ON state to bind long enough to induce a strong calcium response. This demonstrates that constant high intensity illumination does not harm cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 describe a clever experiment demonstrating that high intensity 660 nm light prevents signaling by rapid cycling, but cells remain viable and responsive. The recovery of calcium response after stopping illumination (C41) provides strong evidence that cells are not damaged (C42). The experimental design is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors demonstrate that lowering 660 nm light intensity to 4% and 2% evoked calcium influx, and there is a threshold half-life at 3% intensity that is largely independent of PhyBt concentration. This suggests that the duration of ligand-TCR interaction controls calcium signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe the key experimental observation supporting KPR. The threshold behavior (C44) that is concentration-independent is a hallmark prediction of KPR models. The data in Figure 6C,D support these claims. The inference that binding duration controls signaling (C46) is reasonable given the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors show that high intensity continuous 660 nm light (32% and 16%) stopped an ongoing calcium signal, while low intensity light (2% and 4%) did not. The threshold to maintain calcium response was again at 3% 660 nm intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 demonstrate that the system can terminate ongoing signaling by shortening binding half-life, complementing the initiation experiments. The consistency of the 3% threshold (C49) with earlier findings (C45) strengthens the overall conclusion. The data are well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors fitted mathematical models with and without KPR to the experimental data. Only the KPR model yielded a satisfactory fit, and a likelihood ratio test showed highly significant support for the KPR model (p<10\u207b\u2076). The authors conclude that these findings strongly support the existence of KPR at the TCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 describe rigorous statistical model comparison. The likelihood ratio test with p<10\u207b\u2076 (C51) provides strong quantitative support for KPR over the occupancy model. The conclusion (C52) is appropriately stated given the statistical evidence. However, the model assumptions and parameter identifiability should be carefully considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors determined that the half-life of the PhyB ON-TCR complex varied from 40 s to 2 s over the range of light intensities used. The threshold half-life (KPR duration \u03c4KPR) was determined to be 8 s (95% CI: 3 s, 19 s), at which signaling from the active TCR is half-maximal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 provide quantitative estimates from the mathematical model fitted to kinetic data. The 8 s KPR time with confidence interval (C54) is a key finding. The wide confidence interval (3-19 s) indicates some uncertainty, but the estimate is reasonable. The interpretation that this represents half-maximal signaling (C55) is consistent with the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The authors conclude that their results largely exclude the possibility of fast rebinding events that would effectively prolong the half-life sensed by KPR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by analysis in Appendix 2 (referenced in the text). This addresses an important alternative explanation for apparent KPR. However, the claim is stated as 'largely exclude' rather than definitively, which is appropriately cautious. The supporting analysis should be carefully reviewed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors conclude that they engineered an opto-ligand-TCR system where one ligand-TCR pair explores different binding half-lives by changing light intensity while keeping other interaction parameters constant (because the binding interface is not mutated). Combined with mathematical modeling, this demonstrates that KPR can explain ligand discrimination by T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 summarize the main achievement and conclusion of the study. The key advantage of the system\u2014varying half-life without changing the binding interface (C58)\u2014is a major strength. The conclusion that KPR explains ligand discrimination (C59) is supported by the combined experimental and modeling evidence, though alternative mechanisms cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The authors demonstrate that the PhyB-PIF pair enables switching ligand binding ON and OFF in less than a second, and that 740 nm light actively disrupts existing PhyB-PIF interactions rather than just preventing rebinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 describe important properties of the optogenetic system. The sub-second switching (C60) is supported by Figure 8B. The active disruption by 740 nm light (C61) is an important mechanistic insight supported by the experimental observations, particularly the ability to stop ongoing calcium responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors experimentally demonstrated that the rate of converting PhyB from ON to OFF is the same for free PhyB and PIF-bound PhyB, implying that PhyB converts to OFF while bound to PIF, thereby losing the interaction. This makes the effective off-rate and binding affinity light-dependent, and the model prediction that TCR-bound PhyB decreases with increasing light intensity was confirmed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 describe key mechanistic insights supporting the mathematical model. The experimental demonstration that photoconversion rates are independent of PIF binding (C85, Figure 7\u2014figure supplement 3) is crucial for the model. The confirmation of the predicted decrease in bound PhyB with light intensity (C88, Figure 7\u2014figure supplement 4) validates the model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors conclude that their opto-ligand-TCR system demonstrates that T cells discriminate between ligands due to differences in ligand-TCR half-lives, consistent with KPR models. Using identical ligand-TCR pairs for different half-lives excludes differences in binding geometry, forces, or conformational changes as discriminatory parameters. All model parameters were derived using identical experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 articulate the key advantages of the experimental approach. The ability to vary half-life without changing the binding interface (C67) is a major strength that addresses limitations of previous studies. The unified experimental system (C68) is also an important advantage. The conclusion about half-life discrimination (C66) is well-supported by the data and modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The authors found that changing the half-life of PhyB ON altered the amount of bound receptors, but mathematical modeling showed that the half-life was the decisive parameter for the magnitude of T cell stimulation as measured by calcium influx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 address an important potential confound: changing half-life also changes receptor occupancy. The mathematical modeling was essential to disentangle these effects and demonstrate that half-life is the decisive parameter (C72). This is a key result supporting KPR over simple occupancy models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors conclude that bivalent binding is required to activate the TCR with soluble ligands (as PhyB monomers did not activate while tetramers did), and that the KPR duration in their system is the time from bivalent binding to completion of biochemical signaling steps. PhyBt ligands needed to bind for at least 8 s bivalently to stimulate calcium influx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75, C90-C91 establish the requirement for bivalent binding, which is well-supported by prior literature (C73, C90) and the current data showing monomers are inactive (C74). The interpretation that KPR time represents bivalent binding duration (C91) is reasonable. The 8 s requirement (C75) follows from the modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The authors clarify that the KPR duration is not identical to the time delay between ligand binding and calcium influx or other downstream events. A time delay is a prerequisite for KPR but does not necessarily indicate that KPR takes place.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 provide important conceptual clarification distinguishing KPR duration from total signaling time. This is illustrated in Figure 9 and is an important point for interpreting the results. The distinction is conceptually sound and helps avoid confusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The authors note that an accompanying paper by Tischer and Weiner found a KPR time of approximately 7 s, and conclude that independent of the readout and exact optogenetic system design, Jurkat cells have a TCR/chimeric antigen receptor-based KPR time of 7-8 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 compare results with a companion study using a different optogenetic system. The convergence on 7-8 s KPR time (C79) across different systems strengthens confidence in the findings. However, this is based on citation to another paper, and the generalization should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors describe the kinetic proofreading (KPR) model, which proposes that T cells discriminate self from foreign ligands by different ligand binding half-lives to the TCR. In KPR, long half-life interactions allow completion of biochemical reactions triggering signaling, while short half-life interactions result in TCR reversion to the inactive state. The authors' mathematical modeling of experimental data showed that ligand-TCR interaction half-life is the decisive factor for activating downstream TCR signaling, substantiating KPR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C5-C6 describe the KPR model (established theory) and the main conclusion of the study. The description of KPR (C1, C5, C6) is accurate based on the literature. The main conclusion (C3) is supported by the extensive experimental and modeling evidence presented throughout the manuscript. This represents the central finding of the paper.",
+    "result_type": "MAJOR"
+  }
+]

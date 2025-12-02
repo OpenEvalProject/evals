@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C100"
+    ],
+    "result": "SNACS is a genetically encoded FRET-based biosensor that reports SnRK2 kinase activity through phosphorylation-dependent conformational changes. In vitro assays demonstrate that OST1/SnRK2.6 and SnRK2.3 phosphorylate SNACS at the AKS1 Ser-30 residue (corresponding to Ser-785 in SNACS), resulting in increased FRET ratios, while the S785A mutant and unrelated kinase CPK6 do not produce this response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 and C100 provide converging in vitro evidence from phosphorylation assays (Figure 1C) and FRET spectroscopy (Figures 1D-F) demonstrating specific SnRK2-dependent phosphorylation and FRET changes. The mutant controls (inactive OST1D140A, SNACSS785A, and CPK6) appropriately show no response, supporting specificity. The design rationale (C1) is validated by experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C49",
+      "C50"
+    ],
+    "result": "ABA rapidly increases SNACS FRET ratios in N. benthamiana leaf epidermal cells in a time-resolved manner, while ethanol vehicle control does not induce measurable changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by time-resolved FRET imaging data in Figure 2 showing ABA-induced ratio increases in 11-13 cells across 3 experiments, with appropriate ethanol controls (4-7 cells, 3 experiments) showing no response. The data demonstrate sensor functionality in plant cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "ABA rapidly increases SNACS FRET ratios in Arabidopsis guard cells in multiple genetic backgrounds, and this response requires the Ser-785 phosphorylation site. The sensor appears to localize primarily to the cytoplasm rather than the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by FRET imaging in guard cells (Figures 3-4) showing ABA-induced increases in pUBQ10:OST1-HF/ost1-3 (p=0.015) and Col-0 backgrounds (p=2\u00d710\u207b\u00b9\u00b2), with appropriate ethanol controls and SNACSS785A mutant showing no response. Statistical tests are appropriate (paired t-tests). Claim C53 about localization is supported by imaging data but acknowledged as uncertain (possible bleed-through).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "ABA-induced SNACS FRET ratio increases require SnRK2 activity in planta, as demonstrated by responses in single and double SnRK2 mutants but complete loss of response in the snrk2.2/2.3/2.6 triple mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by genetic evidence in Figure 5 showing ABA responses in ost1 (p=3.2\u00d710\u207b\u2077) and snrk2.2/2.3 (p=5.7\u00d710\u207b\u2079) mutants but not in the triple mutant (p=0.122). The genetic dissection appropriately demonstrates SnRK2 requirement, though the slower response in ost1 (C58) suggests functional redundancy among SnRK2 family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Protein kinase inhibitor K252a decreases SNACS FRET ratios in guard cells and blocks ABA-induced increases, providing evidence for basal SnRK2 activity in guard cells. The sensor is reversible, as K252a can reduce FRET ratios after ABA-induced increases. The calmodulin inhibitor W7 does not affect SNACS ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 and C66-C70 are supported by pharmacological experiments in Figure 6 showing K252a-induced FRET ratio decreases (p=4.9\u00d710\u207b\u2076) and reversibility (p=0.0001 for decrease after ABA). The W7 control (C67-C68) appropriately shows no effect on basal FRET but permits ABA response. The inference of basal SnRK2 activity (C70) is reasonable given K252a reduces ratios below baseline, though alternative explanations (off-target effects) are acknowledged in C114.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C74",
+      "C124"
+    ],
+    "result": "Methyl jasmonate (MeJA) does not induce SNACS FRET ratio increases in Arabidopsis guard cells, though subsequent ABA application causes ratio increases, indicating that MeJA does not rapidly activate SnRK2 kinases despite genetic requirements for OST1 in MeJA responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 and C124 are supported by FRET imaging data in Figure 7 showing no MeJA-induced changes (p=0.981 at 15 min, p=0.896 at 25 min) but subsequent ABA responses. This is consistent with prior in-gel kinase assay data (C123, C28) and suggests MeJA requires basal SnRK2 activity without activating it, though the mechanistic interpretation (C125) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C84",
+      "C129",
+      "C130"
+    ],
+    "result": "Elevated CO2 does not increase SNACS FRET ratios in guard cells, indicating that high CO2 does not activate SnRK2 kinases, though subsequent ABA application causes rapid FRET increases. ABAleon2.15 measurements show no rapid CO2-induced increases in cellular ABA concentration within the timeframe of CO2-induced stomatal closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 and C82-C84 are supported by FRET imaging with SNACS (Figure 8A-B, p=0.184 for high CO2) and ABAleon2.15 (Figure 8C, p=0.502) showing no CO2-induced changes but clear ABA responses. The data provide direct in vivo evidence that CO2 does not activate SnRK2 kinases (C129-C130), consistent with prior in-gel kinase assays (C76, C128). The timeframe analysis (C80) appropriately contextualizes the negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C135",
+      "C136",
+      "C139",
+      "C164"
+    ],
+    "result": "The findings support a model where stomatal CO2 signaling requires basal ABA and SnRK2 signaling but not SnRK2 activation, with basal SnRK2 activity functioning parallel to the CO2 signal transduction branch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 and C139 present a mechanistic model inferred from multiple lines of evidence: (1) K252a reduces basal FRET ratios (C62-C64), (2) CO2 does not activate SnRK2s (C77-C79, C129-C130), (3) ost1 mutants show impaired but not abolished CO2 responses (C31, C137-C138), and (4) ABA receptors are required for normal CO2 responses (C131). The model is logically consistent with all presented data, though it remains a hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C144",
+      "C150"
+    ],
+    "result": "Gas exchange experiments in two independent laboratories show that quintuple and sextuple ABA receptor mutants lacking PYL4 and PYL5 retain robust CO2-induced stomatal closure, contradicting a recent model that PYL4/PYL5 mediate the stomatal CO2 response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C95 are supported by comprehensive gas exchange data in Figure 9 from two independent labs showing CO2 responses in pyl-11458, pyl-12458, and pyl-112458 mutants. The mutants show delayed responses (C90, roughly 2\u00d7 longer half-time) but similar or greater absolute conductance reductions (C89, C91). The use of gene disruption lines rather than complementation lines (C143) strengthens conclusions. The data directly contradict Dittrich et al. 2019 (C85, C140-C141), though methodological differences and growth conditions (C145, C149) may explain discrepancies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Normalization of stomatal conductance data can lead to opposite conclusions compared to non-normalized analyses when comparing mutants with different baseline conductances, highlighting the importance of analyzing absolute values and kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C156 demonstrate with the same dataset (Figure 9) that normalized data suggest reduced CO2 responses in sextuple and pyl-11458 mutants, while absolute values show the strongest responses in pyl-12458 and pyl-112458 mutants. This methodological insight (C157-C158) is well-supported and important for interpreting stomatal physiology data, though it is a secondary analytical point rather than a primary biological finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C110",
+      "C160"
+    ],
+    "result": "The SNACS reporter provides a new approach for real-time investigation of SnRK2 kinase activity in living plant cells and tissues, overcoming limitations of in-gel kinase assays that require large numbers of cells and cannot provide temporal or spatial resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 and C96-C99 establish the context and need for the sensor based on established knowledge and prior work. Claims C110 and C160 summarize the contribution, which is validated by the experimental demonstrations throughout the manuscript. The sensor enables single-cell, real-time measurements (C99, C110) that were not previously possible (C98, C134), representing a significant methodological advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "SNACS shows relatively small FRET ratio shifts (average 3.7 \u00b1 0.2%) in response to ABA in guard cells, similar to other protein kinase sensors, requiring continuous recordings in individual cells rather than single time-point comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 accurately characterize the sensor response magnitude based on experimental data (n=46 stomata). Claims C108-C109 appropriately contextualize this with prior work showing similar small ratio shifts (1-4%) in other kinase sensors. The methodological requirement for continuous recordings (C109) is well-justified and demonstrated throughout the imaging experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The reversibility of SNACS and the identity of phosphatases that dephosphorylate the sensor remain partially characterized, with evidence suggesting protein phosphatase involvement but uncertainty about specific phosphatases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113 and C117 infer reversibility from K252a experiments (Figure 6C), which is reasonable but indirect. Claims C114-C116 acknowledge uncertainty about phosphatase identity and K252a specificity. While C65-C66 show W7 does not affect SnRK2 activation (appropriate control), the mechanistic basis for reversibility (C118) requires further investigation. The data support reversibility but not the specific molecular mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C80",
+      "C81",
+      "C85",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C126",
+      "C127",
+      "C128",
+      "C131",
+      "C132",
+      "C133",
+      "C137",
+      "C138",
+      "C148"
+    ],
+    "result": "Background information about ABA, SnRK2 kinases, AKS1, 14-3-3 proteins, MeJA, and CO2 signaling establishes the biological context and prior knowledge for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C41 and C71-C85, C119-C123, C126-C128, C131-C133, C137-C138, and C148 provide established facts and prior findings from the literature, appropriately cited. These claims establish the scientific context and rationale for developing SNACS and investigating CO2/MeJA signaling. They are background knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The mechanistic basis for SNACS function involves 14-3-3 protein binding to phosphorylated AKS1 Ser-30, causing conformational changes that increase FRET efficiency. The sensor localizes primarily to the cytoplasm, lacking the nuclear localization of full-length AKS1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 present a mechanistic model consistent with prior work (C38, C40-C41) and the in vitro data (C42-C48). Claims C103-C105 explain the design rationale for excluding the bHLH domain and the resulting cytoplasmic localization (Figure 3\u2014figure supplement 1). The model is well-supported though the conformational change is inferred rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125",
+      "C161",
+      "C162"
+    ],
+    "result": "The findings may support a calcium-dependent parallel MeJA response pathway, and SNACS could be used for future investigations of stress signaling and subcellular SnRK2 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125, C161-C162 are speculative statements about potential interpretations and future applications. While C125 cites supporting work (F\u00f6rster et al., 2019), it remains a hypothesis. Claims C161-C162 describe potential future uses but are not tested in the present study. These are reasonable suggestions but not supported by data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C145",
+      "C146",
+      "C147",
+      "C149"
+    ],
+    "result": "Methodological differences between the present study and Dittrich et al. 2019, including use of different quintuple mutant backgrounds for complementation and potential variation in transgene expression levels, may explain discrepant conclusions about PYL4/PYL5 roles in CO2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 and C145-C147 identify specific methodological differences between studies and their potential impact on conclusions. The preference for gene disruption lines over complementation lines (C143) is well-justified. Claims C145-C147 provide data-supported explanations for discrepancies (e.g., slowed opening in pyl-11458/PYL5, Figure 9\u2014figure supplement 2D). This careful analysis strengthens the critique of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C134",
+      "C159"
+    ],
+    "result": "Prior to this study, direct measurements of basal SnRK2 activity in guard cells were not possible, and SnRK2s are key kinases mediating abiotic stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134 and C159 are factual statements about the state of the field. C134 is supported by the lack of prior methods for real-time measurements in intact cells (C10-C12, C98). C159 is established knowledge (C96-C97). These provide context for the study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C163"
+    ],
+    "result": "Both elevated CO2 and MeJA do not cause SNACS fluorescence emission ratio increases, providing experimental evidence that these stimuli do not rapidly enhance SnRK2.6/OST1 activity in guard cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C163 summarizes the key negative findings from Figures 7 and 8, which are well-supported by the data discussed in earlier results. This is a summary statement of major findings already evaluated.",
+    "result_type": "MAJOR"
+  }
+]

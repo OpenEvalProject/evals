@@ -1,0 +1,1841 @@
+{
+  "submission": {
+    "id": "7763b532-5a67-42e1-8ae9-fe006c39c211",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:24:55.101674Z",
+    "updated_at": "2025-12-02T21:24:55.101674Z"
+  },
+  "content": [
+    {
+      "id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "submission_id": "7763b532-5a67-42e1-8ae9-fe006c39c211",
+      "content_type": "manuscript",
+      "content_text": "# Efficient chromatin accessibility mapping in situ by nucleosome-tethered tagmentation\n\n## Authors\n\n- Steven Henikoff<sup>1</sup> ([ORCID: 0000-0002-7621-8685](https://orcid.org/0000-0002-7621-8685)) \u2020\n- Jorja G Henikoff<sup>1</sup>\n- Hatice S Kaya-Okur<sup>1</sup>\n- Kami Ahmad<sup>1</sup>\n\n### Affiliations\n\n1. Basic Sciences Division Fred Hutchinson Cancer Research Center Seattle United States\n2. Howard Hughes Medical Institute Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nChromatin accessibility mapping is a powerful approach to identify potential regulatory elements. A popular example is ATAC-seq, whereby Tn5 transposase inserts sequencing adapters into accessible DNA (\u2018tagmentation\u2019). CUT&Tag is a tagmentation-based epigenomic profiling method in which antibody tethering of Tn5 to a chromatin epitope of interest profiles specific chromatin features in small samples and single cells. Here, we show that by simply modifying the tagmentation conditions for histone H3K4me2 or H3K4me3 CUT&Tag, antibody-tethered tagmentation of accessible DNA sites is redirected to produce chromatin accessibility maps that are indistinguishable from the best ATAC-seq maps. Thus, chromatin accessibility maps can be produced in parallel with CUT&Tag maps of other epitopes with all steps from nuclei to amplified sequencing-ready libraries performed in single PCR tubes in the laboratory or on a home workbench. As H3K4 methylation is produced by transcription at promoters and enhancers, our method identifies transcription-coupled accessible regulatory sites.\n\n## Introduction\n\nIdentification of DNA accessibility in the chromatin landscape has been used to infer active transcription ever since the seminal description of DNaseI hypersensitivity by Weintraub and Groudine more than 40 years ago (Weintraub and Groudine, 1976). Because nucleosomes occupy most of the eukaryotic chromatin landscape and regulatory elements are mostly free of nucleosomes when they are active, DNA accessibility mapping can potentially identify active regulatory elements genome-wide. Several additional strategies have been introduced to identify regulatory elements by DNA accessibility mapping, including digestion with Micrococcal Nuclease (MNase) (Reeves, 1978) or restriction enzymes (Jack and Eggert, 1990), DNA methylation (Gottschling, 1992), physical fragmentation (Schwartz et al., 2005) and transposon insertion (Bownes, 1990). With the advent of genome-scale mapping platforms, beginning with microarrays and later short-read DNA sequencing, mapping regulatory elements based on DNaseI hypersensitivity became routine (Crawford et al., 2004; Dorschner et al., 2004). Later innovations included FAIRE (Giresi et al., 2007) and Sono-Seq (Auerbach et al., 2009), based on physical fragmentation and differential recovery of cross-linked chromatin, and ATAC-seq (Buenrostro et al., 2013), based on preferential insertion of the Tn5 transposase. The speed and simplicity of ATAC-seq, in which the cut-and-paste transposition reaction inserts sequencing adapters in the most accessible genomic regions (tagmentation), has led to its widespread adoption in many laboratories for mapping presumed regulatory elements.\n\nFor all of these DNA accessibility mapping strategies, it is generally unknown what process is responsible for creating any particular accessible sites within the chromatin landscape. Furthermore accessibility is not all-or-none, with the median difference between an accessible and a non-accessible site in DNA estimated to be only\u00a0~20%, with no sites completely accessible or inaccessible in a population of cells (Chereji et al., 2019; Oberbeckmann et al., 2019). Despite these uncertainties, DNA accessibility mapping has successfully predicted the locations of active gene enhancers and promoters genome-wide, with excellent correspondence between methods based on very different strategies (Karabacak Calviello et al., 2019). This is likely because DNA accessibility mapping strategies rely on the fact that nucleosomes have evolved to repress transcription by blocking sites of pre-initiation complex formation and transcription factor binding (Kornberg and Lorch, 2020), and so creating and maintaining a nucleosome-depleted region (NDR) is a pre-requisite for promoter and enhancer function.\n\nA popular alternative to DNA accessibility mapping for regulatory element identification is to map nucleosomes that border NDRs, typically by histone marks, including \u2018active\u2019 histone modifications, such as H3K4 methylation and H3K27 acetylation, or histone variants incorporated during transcription, such as H2A.Z and H3.3. The rationale for this mapping strategy is that the enzymes that modify histone tails and the chaperones that deposit nucleosome subunits are most active close to the sites of initiation of transcription, which typically occurs bidirectionally at both gene promoters and enhancers to produce stable mRNAs and unstable enhancer RNAs. Although the marks left behind by active transcriptional initiation \u2018point back\u2019 to the NDR, this cause-effect connection between the NDR and the histone marks is only by inference (Wang et al., 2020), and direct evidence is lacking that a histone mark is associated with an NDR.\n\nHere, we show that a simple modification of our Cleavage Under Targets and Tagmentation (CUT&Tag) method for antibody-tethered in situ tagmentation can identify NDRs genome-wide at regulatory elements adjacent to transcription-associated histone marks in human cells. We provide evidence that reducing the ionic concentration during tagmentation preferentially attracts Tn5 tethered to the H3K4me2 histone modification via a Protein A/G fusion to the nearby NDR, shifting the site of tagmentation from nucleosomes bordering the NDR to the NDR itself. Almost all transcription-coupled accessible sites correspond to ATAC-seq sites and vice-versa, and lie upstream of paused RNA Polymerase II (RNAPII). \u2018CUTAC\u2019 (Cleavage Under Targeted Accessible Chromatin) is conveniently performed in parallel with ordinary CUT&Tag, producing accessible site maps from low cell numbers with signal-to-noise as good as or better than the best ATAC-seq datasets.\n\n## Results\n\n### Streamlined CUT&Tag produces high-quality datasets with low cell numbers\n\nWe previously introduced CUT&RUN, a modification of Laemmli\u2019s Chromatin Immunocleavage (ChIC) method (Schmid et al., 2004), in which a fusion protein between Micrococcal Nuclease (MNase) and Protein A (pA-MNase) binds sites of antibodies bound to chromatin fragments in nuclei or permeabilized cells immobilized on magnetic beads. Activation of MNase with Ca++ results in targeted cleavage, releasing the antibody-bound fragment into the supernatant for paired-end DNA sequencing. More recently, we substituted the Tn5 transposase for MNase in a modified CUT&RUN protocol, such that addition of Mg++ results in a cut-and-paste \u2018tagmentation\u2019 reaction, in which sequencing adapters are integrated around sites of antibody binding (Kaya-Okur et al., 2019). In CUT&Tag, DNA purification is followed by PCR amplification, eliminating the end-polishing and ligation steps required for sequencing library preparation in CUT&RUN. Like CUT&RUN, CUT&Tag requires relatively little input material, and the low backgrounds permit low sequencing depths to sensitively map chromatin features.\n\nWe have developed a streamlined version of CUT&Tag that eliminates tube transfers, so that all steps can be efficiently performed in a single PCR tube (Kaya-Okur et al., 2020). However, we had not determined the suitability of the single-tube protocol for profiling low cell number samples. During the COVID-19 pandemic, we adapted this CUT&Tag-direct protocol for implementation with minimal equipment and space requirements that uses no toxic reagents, so that it can be performed conveniently and safely on a home workbench (Figure 1\u2014figure supplement 1). To ascertain the ability of our CUT&Tag-direct protocol to produce DNA sequencing libraries at home with data quality comparable to those produced in the laboratory, we used frozen aliquots of native human K562 cell nuclei prepared in the laboratory and profiled there using the streamlined single-tube protocol. Aliquots of nuclei were thawed and serially diluted in Wash buffer from\u00a0~60,000 down to\u00a0~60 starting cells, where the average yield of nuclei was\u00a0~50%. We used antibodies to H3K4me3, which preferentially marks nucleosomes immediately downstream of active promoters, and H3K27me3, which marks nucleosomes within broad domains of polycomb-dependent silencing. Aliquots of nuclei were taken home and stored in a kitchen freezer, then thawed and diluted at home and profiled for H3K4me3 and H3K27me3. In both the laboratory and at home, we performed all steps in groups of 16 or 32 samples over the course of a single day through the post-PCR clean-up step, treating all samples the same regardless of cell numbers. Whether produced at home or in the lab, all final barcoded sample libraries underwent the same quality control, equimolar pooling, and final SPRI bead clean-up steps in the laboratory prior to DNA sequencing.\n\nTapestation profiles of libraries produced at home detected nucleosomal ladders down to 200 cells for H3K27me3 and nucleosomal and subnucleosomal fragments down to 2000 cells for H3K4me3 (Figure 1A\u2013B). Sequenced fragments were aligned to the human genome using Bowtie2 and tracks were displayed using IGV. Similar results were obtained for both at-home and in-lab profiles for both histone modifications (Figure 1C\u2013D) using pA-Tn5 produced in the laboratory, and results using commercial Protein A/Protein G-Tn5 (pAG-Tn5) were at least as good. All subsequent experiments reported here were performed at home using commercial pAG-Tn5, which provided results similar to those obtained using batches of lab-produced pA-Tn5 run in parallel.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig1-v2.jpg)\n\n**Figure 1.:** Starting with a frozen human K562 cell aliquot, CUT&Tag-direct with amplification for 12 cycles yields detectable nucleosomal ladders for intermediate and low numbers of cells for both (A) H3K4me3 and (B) H3K27me3. The higher yield of smaller fragments with decreasing cell number suggests that reducing the total available binding sites increases the binding of antibody and/or pAG-Tn5 in limiting amounts. (C) Comparison of H3K4me3 CUT&Tag-direct results produced in the laboratory to those produced at home and to an ENCODE dataset (GSM733680). (D) Same as (C) for H3K27me3 comparing CUT&Tag-direct results to CUT&Tag datasets using the standard protocol (Kaya-Okur et al., 2019), and to an ENCODE dataset (GSM788088). pA-Tn5 was used except as indicated by asterisks for datasets produced at home using commercial pAG-Tn5 (Epicypher cat. no. 15\u20131017).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** All experiments starting with nuclei frozen in 10% DMSO in Mr. Frosty containers down to \u201380\u00b0C and held at \u201320\u00b0C were performed on a counter in a home laundry/utility room using stock solutions previously prepared in the lab. Following SPRI bead clean-up and liquid removal from the starting PCR tubes to fresh tubes, samples were brought into the lab for TapeStation analysis and equimolar mixing of barcoded samples followed by an SPRI clean-up of the pool and dilution for submission to the Fred Hutch Genomics Shared Resource for Illumina PE25 DNA sequencing. There are no hazardous materials or dangerous equipment used in the at-home protocol, however appropriate lab safety training is recommended.\n\n### NDRs attract Tn5 tethered to nearby nucleosomes during low-salt tagmentation\n\nBecause the Tn5 domain of pA-Tn5 binds avidly to DNA, it is necessary to use elevated salt conditions to avoid tagmenting accessible DNA during CUT&Tag. High-salt buffers included 300 mM NaCl for pA-Tn5 binding, washing to remove excess protein, and tagmentation at 37\u00b0C. We have found that other protocols based on the same principle but that do not include a high-salt wash step result in chromatin profiles that are dominated by accessible site tagmentation (Kaya-Okur et al., 2020).\n\nTo better understand the mechanistic basis for the salt-suppression effect, we bound pAG-Tn5 under normal high-salt CUT&Tag incubation conditions, then tagmented in low salt. We used either rapid 20-fold dilution with a prewarmed solution of 2 mM or 5 mM MgCl2 or removal of the pAG-Tn5 incubation solution and addition of 50 \u00b5L 10 mM TAPS pH8.5, 5 mM MgCl2. All other steps in the protocol followed our CUT&Tag-direct protocol (Kaya-Okur et al., 2020; Figure 2). Tapestation capillary gel electrophoresis of the final libraries revealed that after a 20 min incubation the effect of low-salt tagmentation on H3K4me2 CUT&Tag samples was a marked reduction in the oligo-nucleosome ladder with an increase in faster migrating fragments (Figure 3A and Figure 3\u2014figure supplement 1A\u2013B). CUT&Tag profiles using antibodies to most chromatin epitopes in the dilution protocol showed either little change or elevated levels of non-specific background tagmentation that obscured the targeted signal (Figure 3\u2014figure supplement 2), as expected considering that we had omitted the high-salt wash step needed to remove unbound pAG-Tn5. Strikingly, under low-salt conditions, high-resolution profiles of H3K4me3 and H3K4me2 showed that the broad nucleosomal distribution of CUT&Tag around promoters for these two modifications was mostly replaced by single narrow peaks (Figure 3B and Figure 3\u2014figure supplement 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig2-v2.jpg)\n\n**Figure 2.:** Steps in gray are lab-based and other steps were performed at home. Tagmentation can be performed by dilution, removal or post-wash. MEDS (mosaic end double-stranded annealed oligonucleotides).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig3-v2.jpg)\n\n**Figure 3.:** (A) Tapestation gel image showing the change in size distribution from standard CUT&Tag (CnT), tagmented in the presence of 300 mM NaCl with low-salt tagmentation using the dilution protocol. (B) Representative tracks showing the shift observed with low-salt dilution tagmentation. (C) Average plots showing the narrowing of peak distributions upon low-salt tagmentation using the dilution protocol. (D) Heatmaps showing narrowing of H3K4me2 peaks after removing pAG-Tn5 (removal), after a stringent wash (post-wash), and after a stringent wash with low-salt tagmentation including a 1% pAG-Tn5 spike-in (Add-back). MACS2 was used to call peaks and heatmaps were ordered by density over the peak summits (sites). (E) Heatmaps showing dilution tagmentation and further narrowing of H3K4me2 peak distributions upon low-salt tagmentation (after removal) for 20 min at 37\u00b0C in the presence of 10% 1,6-hexanediol (hex) and 10% dimethylformamide (DMF) or both for 1 hr at 55\u00b0C. (F) Average plots showing effects of tagmentation with hex and/or DMF over time of low-salt tagmentation (after removal). (G) Smaller fragments (\u2264120 bp) dominate NDRs. Comparisons of small (\u2264120 bp) and large (>120\u00a0bp) fragments from CUTAC hex and DMF datasets show narrowing for small fragments around their summits. For each dataset a 3.2 million fragment random sample was split into small and large fragment groups.Removal of large fragments increases the\u00a0number of peaks called (sites).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A-B) H3K4me2 CUT&Tag (CnT) and low-salt tagmentations using the Dilution protocol were performed at 37\u00b0C using Epicypher 13\u20130027 antibody and Epicypher 15\u20131117 pAG-Tn5 for the times indicated using pAG-Tn5 at either 1:20 (Manufacturer\u2019s recommendation) or 1:60 showing a bigger effect of tagmentation time than amount of pAG-Tn5, and improvement in yield but reduction in signal-to-noise with longer tagmentations.\u00a0(A) Tapestation gel images showing time of tagmentation and yields based on loading 2 \u00b5L of each 20 \u00b5L sample and integrating over the 175\u20131000 bp range. M\u00a0=\u00a0markers, C&T\u00a0=\u00a0CUT&Tag; (B) Group-autoscaled tracks showing fragment normalized count densities for sequenced libraries using 30,000 cells resolved in (A) and for published ATAC-seq data using 50,000 cells. All datasets were mapped to hg19 and 3.2 million mapped fragments were sampled. A representative 100-kb region was group-autoscaled using IGV. (C\u2013D) Same as A-B using the Removal protocol with no additive (CUTAC), 10% 1,6-hexanediol (hex), 10% N,N-dimethylformamide (DMF) or 10% of both at 55\u00b0C (hd55) for the times indicated. (E\u2013F) Same as A-B using the Post-wash protocol with no additive, hex and DMF at 37\u00b0C or room temperature (21\u201322\u00b0C) as indicated. Ab1 is Epicypher 13\u20130027 and Ab2 is Millipore 07\u2013030. Post-wash gel image was adjusted to visualize faint bands, and the lower yields are reflected in reduced estimated library size (Lib size, millions of fragments), calculated by the Mark Duplicates program in Picard tools.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Two H3K4me2 antibodies were used: Millipore 07\u2013030 (Mi) and Epicypher 13\u20130027 (Ep) and provided similar results. CUTAC was done using the Removal protocol and incubated 10 min 37\u00b0C.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** H3K4me2 CUT&Tag and low-salt tagmentation were performed using either a rabbit monoclonal [Epicypher 13\u20130027 (Ep)] or a rabbit polyclonal [Millipore 07\u2013030 (Mi)] antibody with pAG-Tn5 (Epicypher 15\u20131117) at the indicated dilutions.\u00a0Dilution tagmentation in 2 mM MgCl2 was used at either 22\u00b0C or 37\u00b0C. Raw paired-end reads were mapped to hg19. A representative 100-kb region is shown (left) and expanded (right) around active promoters and group-autoscaled using IGV. Estimated library size (Lib size) was calculated by the Mark Duplicates program in Picard tools.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Peak narrowing is observed with addition of 10% 1,6-hexanediol although not with N,N-dimethylformamide. (B) Addition of 10% 1,6-hexanediol increases the number of peaks called and improves FRiP, with possible slight improvements seen with addition of N,N-dimethylformamide.\n\nTo evaluate the generality of peak shifts we used MACS2 to call peaks, and plotted the occupancy over aligned peak summits. For all three H3K4 methylation marks using normal CUT&Tag high-salt tagmentation conditions we observed a bulge around the summit representing the contribution from adjacent nucleosomes on one side or the other of the peak summit (Figure 3C). In contrast, tagmentation under low-salt conditions revealed much narrower profiles for H3K4me3 and H3K4me2 (~40% peak width at half-height), less so for H3K4me1 (~60%), which suggests that the shift is from H3K4me-marked nucleosomes to an adjacent NDR.\n\nTo determine whether free pAG-Tn5 present during tagmentation contributes, we removed the pAG-Tn5 then added 5 mM MgCl2 to tagment, and again observed narrowing of the H3K4me2 peak (Figure 3D \u2018Removal\u2019 and Figure 3\u2014figure supplement 1C-D). We also observed a narrowing if we included a stringent 300 mM washing step before low-salt tagmentation (Figure 3D, \u2018Post-wash\u2019), which indicates that peak narrowing does not require free pAG-Tn5. Inclusion of a stringent post-wash step improves consistency relative to the Dilution or Removal protocols, although it resulted in lower yields and reduced library complexity (Figure 3\u2014figure supplement 1E-F). However, if a small amount of pAG-Tn5 was included during tagmentation we obtained higher yields with increased peak narrowing (Figure 3D \u2018Add-back\u2019). Because Tn5 is inactive once it integrates its payload of adapters, and each fragment is generated by tagmentation at both ends, it is likely that a small amount of free pA(G)-Tn5 is sufficient to generate the additional small fragments where tethered pA(G)-Tn5 is limiting, albeit with higher background.\n\nSalt ions compete with protein-DNA binding and so we suppose that tagmentation in low salt resulted in increased binding of epitope-tethered Tn5 to a nearby NDR prior to tagmentation. As H3K4 methylation is deposited in a gradient of tri- to di- to mono-methylation downstream of the +1 nucleosome from the transcriptional start site (TSS) (Henikoff and Shilatifard, 2011; Soares et al., 2017), we reasoned that the closer proximity of di- and tri-methylated nucleosomes to the NDR than mono-methylated nucleosomes resulted in preferential proximity-dependent \u2018capture\u2019 of Tn5. Consistent with this interpretation, we observed that the shift from broad to more peaky NDR profiles and heatmaps by H3K4me2 low-salt tagmentation was enhanced by addition of 1,6-hexanediol, a strongly polar aliphatic alcohol, and by 10% dimethylformamide, a strongly polar amide, both of which enhance chromatin accessibility (Figure 3E\u2013F). NDR-focused tagmentation persisted even in the presence of both strongly polar compounds at 55\u00b0C. Enhanced localization by chromatin-disrupting conditions suggests improved access of H3K4me2-tethered Tn5 to nearby holes in the chromatin landscape during low-salt tagmentation. Localization to NDRs is more precise for small (\u2264120 bp) than large (>120\u00a0bp) tagmented fragments, and by resolving more closely spaced peaks inclusion of these compounds increased the number of peaks called (Figure 3G), also for H3K4me3-tethered Tn5 (Figure 3\u2014figure supplement 4).\n\n### CUT&Tag low-salt tagmentation fragments coincide with ATAC-seq and DNaseI hypersensitive sites\n\nUsing CUT&Tag, we previously showed that most ATAC-seq sites are flanked by H3K4me2-marked nucleosomes in K562 cells (Kaya-Okur et al., 2019). However, lining up ATAC-seq datasets over peaks called using H3K4me2 CUT&Tag data resulted in smeary heatmaps, reflecting the broad distribution of peak calls over nucleosome positions flanking NDRs (Figure 4A). In contrast, alignment of ATAC-seq datasets over peaks called using low-salt tagmented CUT&Tag data produced narrow heatmap patterns for the vast majority of peaks (Figure 4B). To reflect the close similarities between fragments released by H3K4me2-tethered low-salt tagmentation as by ATAC-seq using untethered Tn5, we will refer to low-salt H3K4me2 and H3K4me3 CUT&Tag tagmentation as Cleavage Under Targeted Accessible Chromatin (CUTAC).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013D) Heatmaps showing the correspondence between H3K4me2 CUTAC and ATAC-seq sites. Headings over each heatmap denote the source of fragments mapping to the indicated set of MACS2 peak summits, ordered by occupancy over the 5-kb interval centered over each site. CUT&Tag and CUTAC sites are from samples processed in parallel, where CUTAC tagmentation was performed by 20-fold dilution and 20 min 37\u00b0C incubation following pAG-Tn5 binding. (E) Correlation matrix of H3K4me2 and H3K4me3 CUTAC and ATAC-seq data for K562 cells. (F) Heatmaps showing\u00a0\u2264120 bp signals for H3K4me2 CUT&Tag, CUTAC and ATAC-seq at CTCF DNaseI hypersensitive sites. Arrowheads on left indicate CTCF site cutoffs.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Samples of 3.2 million fragments were pooled as for Figure 4E and MACS2 was used to call peaks. The sums of normalized counts spanning each peak for the two datasets were plotted.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Heatmaps showing the correspondences between H3K4me2 CUT&Tag, CUTAC and ATAC-seq using ATACENCODE sites. See legend to Figure 4 for details. (A) There is\u00a0~50% overlap for MACS2 peaks called from either Omni-ATAC (50.0%) or CUTAC (51.3%) data. (B) Same as (A) for\u00a0\u2264120 bp fragments.\n\nWe confirmed the similarity between CUTAC and ATAC-seq by aligning H3K4me2 CUT&Tag and CUTAC datasets over peaks called from Omni-ATAC data (Figure 4C). In a scatterplot comparison between CUTAC and Omni-ATAC we did not detect off-diagonal clusters that would indicate a subset of peaks found by one but not the other dataset (Figure 4\u2014figure supplement 1).\n\nTo further evaluate the degree of similarity between CUTAC and ATAC-seq, we aligned the ENCODE ATAC-seq dataset over peaks called using Omni-ATAC and CUTAC, where all datasets were sampled down to 3.2 million mapped fragments with mitochondrial fragments removed. Remarkably, heatmaps produced using either Omni-ATAC or CUTAC peak calls for the same ENCODE ATAC-seq data showed occupancy of\u00a0~95% for both sets of peaks (compare right panels of Figure 4B\u2013C). We found\u00a0~50% overlap between ENCODE ATAC-seq peaks and peaks called from either Omni-ATAC (50.0%) or CUTAC (51.3%) data (Figure 4\u2014figure supplement 2). This equivalence between H3K4me2 CUTAC and Omni-ATAC when compared to ENCODE ATAC-seq implies that CUTAC and Omni-ATAC detect the same chromatin features. This conclusion does not hold for H3K4me3 CUTAC, because similar alignment of ENCODE ATAC-seq data resulted in only\u00a0~75% peak occupancy (Figure 4D) and lower correlations (Figure 4E), which we attribute to the greater enrichment of H3K4me3 around promoters than enhancers relative to H3K4me2.\n\nTo evaluate whether CUTAC peaks also correspond to sites of DNaseI hypersensitivity, we aligned H3K4me2 CUT&Tag and CUTAC signals over 9403 CCCTC-binding factor (CTCF) motifs scored as peaks of DNaseI sensitivity in K562 and HeLa cells. We excluded nucleosomal fragments by using only\u00a0\u2264120 bp fragments. We observed that 86% of the DNaseI hypersensitive CTCF sites are occupied by CUTAC signal relative to flanking regions (Figure 4F), which suggests equivalence of CUTAC and DNaseI hypersensitive CTCF sites. We also found that the H3K4me2 CUT&Tag sample showed detectable signal at only 53% of the CTCF sites. This improvement in detection of CTCF sites by H3K4me2 CUTAC over H3K4me2 CUT&Tag illustrates the potential of using\u00a0\u2264120 bp CUTAC fragment data to improve the resolution and sensitivity of transcription factor binding site motif detection.\n\nTo evaluate signal-to-noise genome-wide, we called peaks using MACS2 and calculated the Fraction of Reads in Peaks (FRiP), a data quality metric introduced by the ENCODE project (Landt et al., 2012). For both ENCODE ChIP-seq and our published CUT&RUN data we measured FRiP\u00a0=\u00a0~0.2 for 3.2 million fragments, whereas for CUT&Tag, FRiP\u00a0=\u00a0~0.4, reflecting improved signal-to-noise relative to previous chromatin profiling methods (Kaya-Okur et al., 2019). Using CUT&Tag-direct, H3K4me2 CUT&Tag FRiP\u00a0=\u00a00.41 for 3.2 million fragments and\u00a0~16,000 peaks (n\u00a0=\u00a04\u00a0replicates), whereas tagmentation by dilution in 2 mM MgCl2 resulted in FRiP\u00a0=\u00a00.18 for 3.2 million fragments and\u00a0~15,000 peaks (n\u00a0=\u00a04) with similar values for tagmentation by removal [FRiP\u00a0=\u00a00.21,~15,000 peaks (n\u00a0=\u00a04)]. In add-back experiments, we measured lower FRiP values after stringent washing conditions, suggesting increased background.\n\nWe also compared the number of peaks and FRiP values for CUTAC to those for ATAC-seq for K562 cells and observed that CUTAC data quality was similar to that for the Omni-ATAC method (Corces et al., 2017), better than ENCODE ATAC-seq (Zhang et al., 2020), and much better than Fast-ATAC (Corces et al., 2016), a previous improvement over Standard ATAC-seq (Buenrostro et al., 2013; Figure 5A). CUTAC is relatively insensitive to tagmentation times, with similar numbers of peaks and similar FRiP values for samples tagmented for 5, 20 and 60 min (Figure 5A). We attribute the robustness of CUT&Tag and CUTAC to the tethering of Tn5 to specific chromatin epitopes, so that when tagmentation goes to completion there is little untethered Tn5 that would increase background levels. When we measured peak numbers and FRiP values for ATAC-seq for K562 data deposited in the Gene Expression Omnibus (GEO) from multiple laboratories, we observed a wide range of data quality (Figure 5B, even from very recent submissions from expert groups: Table 1 and Figure 5\u2014figure supplement 1). We attribute this variability to the difficulty of avoiding background tagmention by excess free Tn5 in ATAC-seq protocols and subsequent release of non-specific nucleosomal fragments (Swanson et al., 2020).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig5-v2.jpg)\n\n**Figure 5.:** Mapped fragments from the indicated datasets were sampled and peaks were called using MACS2. (A) Number of peaks (left) and fraction of reads in peaks for CUT&Tag (blue), H3K4me2 CUTAC (red) and ATAC-seq (green). Fast-ATAC is an improved version of ATAC-seq that reduces mitochondrial reads (Corces et al., 2016), and Omni-ATAC is an improved version that additionally improves signal-to-noise (Corces et al., 2017). ATAC_ENCODE is the current ENCODE standard (Moore et al., 2020). (B) Five other K562 ATAC-seq datasets from different laboratories were identified in GEO and mapped to hg19. MACS2 was used to call peaks. Peak numbers and FRiP values indicate a wide range of data quality found in recent ATAC-seq datasets. (C) Small H3K4me2 CUTAC fragments improve peak-calling. Hex\u00a0=\u00a01,6 hexanediol, DMF\u00a0=\u00a0N,N-dimethylformamide.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Tracks over a representative region for K562 datasets listed in Supplementary file 1. Samples are ordered by decreasing FRiP. (A) K562 cells (B) H1 ES cells (Post-wash protocol).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** See Figure 2E. Additional comparisons of small (\u2264120 bp) and large (>120\u00a0bp) fragments from diverse H3K4me2 CUTAC datasets used in this study show consistent narrowing for small fragments around their summits. For each dataset a 3.2 million fragment random sample was split into small and large fragment groups, MAC2 was used to call peaks and heatmaps were ordered by density over the peak summits (sites).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The representative region shown in Figure 3\u2014figure supplements 3\u20134 is shown for all 3.2 million fragments and for\u00a0\u2264120 bp and\u00a0>120 bp groups.\n\n**Table 1.**\n CUTAC data quality is similar to that of the best ATAC-seq datasets.Human K562 and H1 ES cell ATAC-seq datasets were downloaded from GEO, and Bowtie2 was used to map fragments to hg19. A sample of 3.2 million mapped fragments without Chr M was used for peak-calling by MACS2 to calculate FRiP values. Year of submission to GEO or SRA databanks is shown. % Chr M is percent of\u00a0hg19-mapped fragments mapped to mitochondrial DNA.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>Source</th>\n      <th>Year</th>\n      <th>Read_type</th>\n      <th>Raw_reads</th>\n      <th>hg19-mapped</th>\n      <th>% Chr M</th>\n      <th># Peaks</th>\n      <th>FRiP %</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CUT&amp;Tag-direct H1</td>\n      <td>This study</td>\n      <td>2020</td>\n      <td>PE25</td>\n      <td>4,832,184</td>\n      <td>4,525,525</td>\n      <td>0.2</td>\n      <td>23,051</td>\n      <td>53</td>\n    </tr>\n    <tr>\n      <td>CUT&amp;Tag-direct K562</td>\n      <td>This study</td>\n      <td>2020</td>\n      <td>PE25</td>\n      <td>3,252,490</td>\n      <td>3,144,253</td>\n      <td>2</td>\n      <td>20,555</td>\n      <td>41</td>\n    </tr>\n    <tr>\n      <td>CUTAC H1</td>\n      <td>This study</td>\n      <td>2020</td>\n      <td>PE25</td>\n      <td>2,770,901</td>\n      <td>2,734,092</td>\n      <td>1</td>\n      <td>16,848</td>\n      <td>25</td>\n    </tr>\n    <tr>\n      <td>CUTAC K562</td>\n      <td>This study</td>\n      <td>2020</td>\n      <td>PE25</td>\n      <td>5,973,063</td>\n      <td>4,785,931</td>\n      <td>3</td>\n      <td>14,381</td>\n      <td>22</td>\n    </tr>\n    <tr>\n      <td>Omni-ATAC K562 SRR5657531-2</td>\n      <td>Stanford</td>\n      <td>2017</td>\n      <td>PE75</td>\n      <td>4,407,706</td>\n      <td>3,181,110</td>\n      <td>13</td>\n      <td>16,737</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>ATAC H1 GSM3677783</td>\n      <td>Fred Hutch</td>\n      <td>2019</td>\n      <td>PE25</td>\n      <td>4,504,812</td>\n      <td>4,157,800</td>\n      <td>13</td>\n      <td>19,517</td>\n      <td>16</td>\n    </tr>\n    <tr>\n      <td>ATAC K562 ENCFF123TMX</td>\n      <td>Stanford (ENCODE)</td>\n      <td>2020</td>\n      <td>PE100</td>\n      <td>43,473,266</td>\n      <td>23,942,024</td>\n      <td>9</td>\n      <td>14,369</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>ATAC K562 GSM4083680</td>\n      <td>U. Texas-Southwestern</td>\n      <td>2019</td>\n      <td>SE74</td>\n      <td>29,193,873</td>\n      <td>17,612,609</td>\n      <td>43</td>\n      <td>5894</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>ATAC K562 GSM3452726</td>\n      <td>Cornell U.</td>\n      <td>2018</td>\n      <td>PE36</td>\n      <td>86,907,625</td>\n      <td>83,038,866</td>\n      <td>24</td>\n      <td>1555</td>\n      <td>6.2</td>\n    </tr>\n    <tr>\n      <td>ATAC K562 GSM4190694</td>\n      <td>Keio U.</td>\n      <td>2020</td>\n      <td>PE60</td>\n      <td>15,363,855</td>\n      <td>14,067,803</td>\n      <td>79</td>\n      <td>1837</td>\n      <td>4.8</td>\n    </tr>\n    <tr>\n      <td>ATAC H1 GSM4130883</td>\n      <td>Stanford</td>\n      <td>2020</td>\n      <td>PE100</td>\n      <td>43,784,188</td>\n      <td>19,562,219</td>\n      <td>60</td>\n      <td>4289</td>\n      <td>3.2</td>\n    </tr>\n    <tr>\n      <td>Fast-ATAC K562 SRR5657533-4</td>\n      <td>Stanford</td>\n      <td>2017</td>\n      <td>PE75</td>\n      <td>6,702,558</td>\n      <td>4,677,843</td>\n      <td>8</td>\n      <td>2780</td>\n      <td>2.4</td>\n    </tr>\n    <tr>\n      <td>ATAC K562 GSM4005278</td>\n      <td>Penn State Hershey</td>\n      <td>2020</td>\n      <td>PE100</td>\n      <td>12,772,997</td>\n      <td>8,541,005</td>\n      <td>25</td>\n      <td>1691</td>\n      <td>2.1</td>\n    </tr>\n    <tr>\n      <td>ATAC K562 GSM4130894</td>\n      <td>Stanford</td>\n      <td>2020</td>\n      <td>PE100</td>\n      <td>45,122,834</td>\n      <td>19,021,462</td>\n      <td>86</td>\n      <td>449</td>\n      <td>1.4</td>\n    </tr>\n  </tbody>\n</table>\n\nIf low-salt tagmentation sharpens peaks of DNA accessibility because tethering to neighboring nucleosomes increases the probability of tagmentation in small holes in the chromatin landscape, then we would expect smaller fragments to dominate CUTAC peaks. Indeed this is exactly what we observe for heatmaps (Figure 5\u2014figure supplement 2), tracks (Figure 5\u2014figure supplement 3), peak calls and FRiP values (Figure 5C). Excluding larger fragments results in better resolution yielding more peaks and higher FRIP values, both of which approach a maximum with fewer fragments. Moreover, the addition of strongly polar compounds during tagmentation provides a substantial improvement in peak calling and FRiPs (Figure 5C, turquoise and orange curves). Excluding large fragments did not improve ATAC-seq peak calls and FRiP values, which indicates that tethering to H3K4me2 is critical for maximum sensitivity and resolution of DNA accessibility maps.\n\n### CUTAC maps transcription-coupled regulatory elements\n\nH3K4me2/3 methylation marks active transcription at promoters (Gilchrist et al., 2012), which raises the question as to whether sites identified by CUTAC are also sites of RNAPII enrichment genome-wide. To test this possibility, we first aligned CUT&Tag and CUTAC data at annotated promoters displayed as heatmaps or average plots. CUT&Tag H3K4me2 peaks flank NDRs more downstream on either side than H3K4me3, confirmed by ENCODE ChIP-seq data to be the actual location of these marks (Figure 6\u2014figure supplement 1). In contrast, CUTAC peaks are located in the NDR between flanking H3K4me2-marked chromatin (Figure 6A). CUTAC sites at promoter NDRs corresponded closely to promoter ATAC-seq sites, consistent with expectation for promoter NDRs. Thus, paired CUT&Tag and CUTAC samples can replace both ChIP-seq for an active promoter mark and ATAC-seq in a single experiment with identical processing, analysis and display.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig6-v2.jpg)\n\n**Figure 6.:** (A) H3K4me2 fragments shift from flanking nucleosomes to the NDR upon low-salt tagmentation, corresponding closely to ATAC-seq sites. (B) The Serine-5 phosphate-marked initiation form of RNAPII is highly abundant over most H3K4me2 CUT&Tag, CUTAC and ATAC-seq peaks. (C) Run-on transcription initiates from most sites corresponding to CUTAC and ATAC-seq peaks. Both plus and minus strand PRO-seq datasets downloaded from GEO (GSM3452725) were pooled and aligned over peaks called using 3.2 million fragments sampled from H3K4me2 CUT&Tag, CUTAC and Omni-ATAC datasets, and also from pooled CUT&Tag replicate datasets for K562 RNA Polymerase II Serine-5 phosphate.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63274/elife-63274-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Comparison of H3K4me3 CUT&Tag to ENCODE ChIP-seq. (B) Same as (A) for H3K4me2. (C) CUT&Tag shows that H3K4me2 is centered farther from the NDR than is H3K4me3.\n\nTo determine whether CUTAC sites are also sites of transcription initiation in general, we aligned CUT&Tag RNA Polymerase II (RNAPII) Serine-5 phosphate (RNAPIIS5P) CUT&Tag data over H3K4me2 CUT&Tag and CUTAC and Omni-ATAC peaks ordered by RNAPIIS5P peak intensity. When displayed as heatmaps or average plots, CUTAC datasets show a conspicuous shift into the NDR from flanking nucleosomes (Figure 6B).\n\nMammalian transcription also initiates at many enhancers, as shown by transcriptional run-on sequencing, which identifies sites of RNAPII pausing whether or not a stable RNA product is normally produced (Kaikkonen et al., 2013). Accordingly, we aligned RNAPII-profiling PRO-seq data for K562 cells over H3K4me2 CUT&Tag and CUTAC and Omni-ATAC sites, displayed as heatmaps and ordered by PRO-Seq signal intensity. The CUT&Tag sites showed broad enrichment of PRO-seq signals offset\u00a0~1 kb on either side, whereas PRO-seq signals were tightly centered around CUTAC sites, with similar results for Omni-ATAC sites (Figure 6C). Interestingly, alignment around TSSs, RNAPIIS5P or PRO-seq data resolved immediately flanking H3K4me2-marked nucleosomes in CUT&Tag data, which is not seen for the same data aligned on signal midpoints (Figures 3 and 5). Such alignment of +1 and \u22121 nucleosomes next to fixed NDR boundaries is consistent with nucleosome positioning based on steric exclusion (Chereji et al., 2018). Furthermore, the split in PRO-seq occupancies around NDRs defined by CUTAC and Omni-ATAC implies that the steady-state location of most engaged RNAPII is immediately downstream of the NDR from which it initiated. About 80% of the CUTAC sites showed enrichment of PRO-Seq signal downstream, confirming that the large majority of CUTAC sites correspond to NDRs representing transcription-coupled regulatory elements.\n\n## Discussion\n\nThe correlation between sites of high chromatin accessibility and transcriptional regulatory elements, including enhancers and promoters, has driven the development of several distinct methods for genome-wide mapping of DNA accessibility for nearly two decades (Klein and Hainer, 2020). However, the processes that are responsible for creating gaps in the nucleosome landscape are not completely understood. In part this uncertainty is attributable to variations in nucleosome positioning within a population of mammalian cells such that there is only a\u00a0~20% median difference in absolute DNA accessibility between DNaseI hypersensitive sites and non-hypersensitive sites genome-wide (Chereji et al., 2019). This suggests that DNA accessibility is not the primary determinant of gene regulation, and contradicts the popular characterization of accessible DNA sites as \u2018open\u2019 and the lack of accessibility as \u2018closed\u2019. Moreover, there are multiple dynamic processes that can result in nucleosome depletion, including transcription, nucleosome remodeling, transcription factor binding, and replication, so that the identification of a presumed regulatory element by chromatin accessibility mapping leaves open the question as to how accessibility is established and maintained. Our CUTAC mapping method now provides a physical link between a transcription-coupled process and DNA hyperaccessibility by showing that anchoring of Tn5 to a nucleosome mark laid down by transcriptional events immediately downstream identifies presumed gene regulatory elements that are indistinguishable from those identified by ATAC-seq. The equivalence of CUTAC and ATAC at both enhancers and promoters provides support for the hypothesis that these regulatory elements are characterized by the same regulatory architecture (Andersson et al., 2015; Arnold et al., 2019).\n\nThe mechanistic basis for asserting that H3K4 methylation is a transcription-coupled event is well-established (Henikoff and Shilatifard, 2011; Soares et al., 2017). In all eukaryotes, H3K4 methylation is catalyzed by COMPASS/SET1 and related enzyme complexes, which associate with the C-terminal domain (CTD) of the large subunit of RNAPII when Serine-5 of the tandemly repetitive heptad repeat of the CTD is phosphorylated following transcription initiation. The enrichment of dimethylated and trimethylated forms of H3K4 is thought to be the result of exposure of the H3 tail to COMPASS/SET1 during RNAPII stalling just downstream of the TSS, so that these modifications are coupled to the onset of transcription (Soares et al., 2017). Therefore, our demonstration that Tn5 tethered to H3K4me2 or H3K4me3 histone tail residues efficiently tagments accessible sites, implies that accessibility at regulatory elements is created by events immediately following transcription initiation. This mechanistic interpretation is supported by the mapping of CUTAC sites just upstream of RNAPII, and is consistent with the recent demonstration that PRO-seq data can be used to accurately impute \u2018active\u2019 histone modifications (Wang et al., 2020). Thus CUTAC identifies active promoters and enhancers that produce enhancer RNAs, which might help explain why\u00a0~95% of ATAC-seq peaks are detected by CUTAC and vice-versa (Figure 4B\u2013C).\n\nCUTAC also provides practical advantages over other chromatin accessibility mapping methods. Like CUT&Tag-direct, all steps from frozen nuclei to purified sequencing-ready libraries for the data presented here were performed in a day in single PCR tubes on a home workbench. As it requires only a simple modification of one step in the CUT&Tag protocol, CUTAC can be performed in parallel with an H3K4me2 CUT&Tag positive control and other antibodies using multiple aliquots from each population of cells to be profiled. We have shown that three distinct protocol modifications, dilution, removal and post-wash tagmentation yield high-quality results, providing flexibility that might be important for adapting CUTAC to nuclei from diverse cell types and tissues.\n\nAlthough a CUT&Tag-direct experiment requires a day to perform, and ATAC-seq can be performed in a few hours, this disadvantage of CUTAC is offset by the better control of data quality with CUTAC as is evident from the large variation in ATAC-seq data quality between laboratories (Table 1). In contrast, CUT&Tag is highly reproducible using native or lightly cross-linked cells or nuclei (Kaya-Okur et al., 2020), and as shown here H3K4me2 CUTAC maps regulatory elements with sensitivity and signal-to-noise comparable to the best ATAC-seq datasets, even better when larger fragments are computationally excluded. Although datasets from H3K4me2 CUT&Tag have lower background than datasets from CUTAC run in parallel, the combination of the two provides both highest data quality (CUT&Tag) and precise mapping (CUTAC) using the same H3K4me2 antibody. Therefore, we anticipate that current CUT&Tag users and others will find the CUTAC option to be an attractive alternative to other DNA accessibility mapping methods for identifying transcription-coupled regulatory elements.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>K562</td>\n      <td>ATCC</td>\n      <td>Cat#CCL-243; RRID:CVCL_0004</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>H1 embryonic stem cells</td>\n      <td>WiCell</td>\n      <td>Cat#WA01-lot#WB35186; RRID:CVCL_9771</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-NPAT</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>PA5-66839; RRID:AB_2663287</td>\n      <td>Concentration: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>guinea pig polyclonal anti-rabbit IgG</td>\n      <td>Antibodies Online</td>\n      <td>Cat#ABIN101961; RRID:AB_10775589</td>\n      <td>Concentration: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-mouse IgG</td>\n      <td>Abcam</td>\n      <td>Cat#46540; RRID:AB_2614925</td>\n      <td>Concentration: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit monoclonal anti-H3K27me3</td>\n      <td>Cell Signaling</td>\n      <td>Cat#9733; RRID:AB_2616029</td>\n      <td>Concentration: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-H3K4me2</td>\n      <td>Upstate</td>\n      <td>Cat#07\u2013730- lot#3229364; RRID:AB_11213050</td>\n      <td>Concentration: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit monoclonal anti-H3K27ac</td>\n      <td>Millipore</td>\n      <td>Cat#MABE647</td>\n      <td>Concentration: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-H3K4me3</td>\n      <td>Active Motif</td>\n      <td>Cat#39159; RRID:AB_2561020</td>\n      <td>Concentration: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit monoclonal anti-H3K4me2</td>\n      <td>Epicypher</td>\n      <td>Cat#13\u20130027</td>\n      <td>Concentration: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit monoclonal anti-H3K4me1</td>\n      <td>Epicypher</td>\n      <td>Cat#13\u20130026</td>\n      <td>Concentration: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-H3K9me3</td>\n      <td>Abcam</td>\n      <td>Cat#ab8898; RRID:AB_306848</td>\n      <td>Concentration: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit monoclonal anti-H3K36me3</td>\n      <td>Epicypher</td>\n      <td>Cat#13\u20130031</td>\n      <td>Concentration: 1:100</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Protein A-Tn5</td>\n      <td>Henikoff lab</td>\n      <td>doi:10.17504/protocols.io.8yrhxv6</td>\n      <td>Concentration: 1:200</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Protein AG-Tn5</td>\n      <td>Epicypher</td>\n      <td>1 Cat#5\u20131117</td>\n      <td>Concentration: 1:20-1:60</td>\n    </tr>\n  </tbody>\n</table>\n\n### Biological materials\n\nHuman K562 cells were purchased from ATCC (CCL-243) and cultured following the supplier\u2019s protocol. H1 ES cells were obtained from WiCell (WA01-lot#WB35186) and cultured following NIH 4D Nucleome guidelines. All tested negative for mycoplasma contamination using\u00a0a MycoProbe kit.\n\n### CUT&Tag-direct and CUTAC\n\nLog-phase human K562 or H1 embryonic stem cells were harvested and prepared for nuclei in a hypotonic buffer with 0.1% Triton-X100 essentially as described (Skene and Henikoff, 2017). A detailed, step-by-step nuclei preparation protocol can be found\u00a0at\u00a0protocols.io.\n\nCUT&Tag-direct was performed as described (Kaya-Okur et al., 2020), except that all CUTAC experiments were done on a home laundry room counter (Figure 1\u2014figure supplement 1) with 32 samples run in parallel mostly over the course of a single\u00a0~8 hour day. A detailed step-by-step protocol including the three CUTAC options used in this study can be found\u00a0at\u00a0protocols.io. Briefly, nuclei were thawed, mixed with activated Concanavalin A beads and magnetized to remove the liquid with a pipettor and resuspended in Wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.5 mM spermidine and Roche EDTA-free protease inhibitor). After successive incubations with primary antibody (1\u20132 hr) and secondary antibody (0.5\u20131 hr) in Wash buffer, the beads were washed and resuspended in pA(G)-Tn5 at 12.5 nM in 300-Wash buffer (Wash buffer containing 300 mM NaCl) for 1 hr. Incubations were performed at room temperature either in bulk or in volumes of 25\u201350 \u00b5L in low-retention PCR tubes. For CUT&Tag, tagmentation was performed for 1 hr in 300-Wash buffer supplemented with 10 mM MgCl2 in a 50 \u00b5L volume. For CUTAC, tagmentation was performed in low-salt buffer with varying components, volumes and temperatures as described for each experiment in the figure legends. In \u2018dilution\u2019 tagmentation, tubes containing 25 \u00b5L of pA(G)-Tn5 incubation solution and 2 mM or 5 mM MgCl2 solutions were preheated to 37\u00b0C. Tagmentation solution (475 \u00b5L) was rapidly added to the tubes and incubated for times and temperatures as indicated. In \u2018removal\u2019 tagmentation, tubes were magnetized, liquid was removed, and 50 \u00b5L of ice-cold 10 mM TAPS\u00a0pH\u00a08.5, 5 mM MgCl2 was added, followed by incubation for times and temperatures as indicated. The \u2018post-wash\u2019 protocol is identical to the CUT&Tag-direct protocol except that tagmentation was performed in 10 mM TAPS\u00a0pH\u00a08.5, 5 mM MgCl2 at 37\u00b0C as indicated. In \u2018add-back\u2019 tagmentation, the post-wash protocol was used with 10 mM TAPS\u00a0pH\u00a08.5, 5 mM MgCl2 supplemented with pA(G)-Tn5 and incubated at 37\u00b0C as indicated.\n\nFollowing tagmentation, CUT&Tag and CUTAC samples were chilled and magnetized, liquid was removed, and beads were washed in 50 \u00b5L 10 mM TAPS pH\u00a08.5, 0.2 mM EDTA then resuspended in 5 \u00b5L 0.1% SDS, 10 \u00b5L TAPS pH\u00a08.5. Following incubation at 58\u00b0C, SDS was neutralized with 15 \u00b5L of 0.67% Triton-X100, and 2 \u00b5L of 10 mM indexed P5 and P7 primer solutions were added. Tubes were chilled and 25 \u00b5L of NEBNext 2x Master mix was added and vortexed. Gap-filling and 12 cycles of PCR were performed using an MJ PTC-200 Thermocycler. Clean-up was performed by addition of 65 \u00b5L SPRI bead slurry following the\u00a0manufacturer\u2019s instructions, eluted with 20 \u00b5L 1 mM Tris-HCl pH 8, 0.1 mM EDTA and 2 \u00b5L was used for Agilent 4200 Tapestation analysis. The barcoded libraries were mixed to achieve equimolar representation as desired aiming for a final concentration as recommended by the manufacturer for sequencing on an Illumina HiSeq 2500 2-lane Turbo flow cell.\n\n### Data processing and analysis\n\nFor datasets from GEO with fragment read lengths \u226560 bp we ran cutadapt 2.9 with parameters -q 20 -a AGATCGGAAGAGC -A AGATCGGAAGAGC.\u00a0Paired-end reads were aligned to hg19 using Bowtie2 version 2.3.4.3 with options: --end-to-end --very-sensitive --no-unal --no-mixed --no-discordant --phred33 -I 10 - X 700. Tracks were made as bedgraph files of normalized counts, which are the fraction of total counts at each basepair scaled by the size of the hg19 genome. Peaks were called using MACS2 version 2.2.6 callpeak -f BEDPE -g hs -p le-5 \u2013keep-dup all \u2013SPMR. Heatmaps were produced using deepTools 3.3.1.\n\nTo produce the scatterplot (Figure 4\u2014figure supplement 1) and correlation matrix (Figure 4E), we first removed fragments overlapping any repeat-masked region in hg19, then sampled 3.2 million fragments from each of the 11 datasets and called peaks on the merged data using MACS2. As previously described (Meers et al., 2019), we used a CUTAC IgG negative control, summing normalized counts within peaks and removing peaks above a threshold of the 99th percentile of normalized count sums (46,561 final peaks).\n\nA detailed step-by-step Data Processing and Analysis Tutorial can be found at\u00a0protocols.io.\n",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "8987c957-ec84-4dc1-a8fc-8129f92c3ad2",
+      "submission_id": "7763b532-5a67-42e1-8ae9-fe006c39c211",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Roberto Bonasio, University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63274.sa1](https://doi.org/10.7554/eLife.63274.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Efficient transcription-coupled chromatin accessibility mapping in situ\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jessica Tyler as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Charles G Danko (Reviewer #1); Junyue Cao (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nEssential revisions\n\n1) Reviewers #1 and #3 raise questions regarding the possibility of some accessible regions not being profiled by CUTAC and reviewer #1 suggests to analyze regions bound by CTCF to explore this possibility. Please include these or other analyses to address this point.\n\n2) Reviewers #1 and #3 wonder about the quantitative correlation in addition to the spatial overlap shown. Please include these analyses.\n\n3) While the experiments presented indicate a correlation between transcription and chromatin accessibility, the term \"transcription-coupled\" in the title implies that a causal link has been demonstrated, but this would require manipulations. We advise you to change the title to better reflect the content of the manuscript.\n\nAdditional points\n\nWe also think that several of the other points made by the reviewers might help you strengthen this manuscript and encourage you to consider addressing them if possible. The full reviews are included below.\n\nReviewer #1:\n\nThis paper by the Henikoff lab introduces CUTAC, a molecular tool that allows users to sequence DNA inside nucleosome depleted regions accessible to transposition by a protein A (pA)-Tn5 fusion protein. CUTAC builds on the Henikoff lab's exciting new CUT&TAG method. Unlike the CUT&TAG protocol published recently, however, this new work uses low-salt conditions during tagmentation, which appears to promote Tn5 transposition in nucleosome depleted regions adjacent to the primary antibody. The data demonstrating that CUTAC favors transposition inside of nucleosome depleted regions is compelling and clearly shown. Moreover, the new method affords a substantial improvement in the resolution for active regulatory regions compared with CUT&TAG for histone modifications, comparable to that of high-quality ATAC-seq data. Compared with ATAC-seq, there are potentially several compelling advantages of CUTAC, including reproducibility, side-by-side library prep with CUT&TAG, and the possibility of being selective about which open chromatin regions are sequenced (see below). Between these advantages and the authors' past success and broad community interest in the CUT&RUN and CUT&TAG family of methods, I am in favor of publication. I have several comments for the authors:\n\n1) The authors' model is that the primary antibody recruits pA-Tn5 fusion, which then transposes DNA in adjacent accessible regions. However, not all nuclease accessible chromatin is marked by H3K4me2/3. Several lines of evidence suggest that, at least CTCF binding sites have a high level of DNase-I accessibility, but many lack histone modifications indicative of active enhancers/ promoters. Most of the previous work on this subject was done using DNase-I-seq, however presumably the same signal is true for ATAC-seq?! Assuming ATAC-seq shows the same signal, I am curious to know whether CUTAC data collected using K4me2/3 antibodies shows accessibility near CTCF binding sites. An easy way to get at this would be to center on CTCF sites, and break them into classes which do/ do not contain evidence of either K4me2/3 or transcription using ENCODE data. If a heatmap shows similar signal between ATAC and CUTAC at CTCF sites associated with K3me2/3, but only ATAC shows signal at CTCF sites not associated with these marks, then it implies a degree of specificity for open chromatin near the primary antibody as would be expected from the author's model.\n\n2) Selecting which open chromatin regions to measure could be an additional, compelling advantage of CUTAC over ATAC-seq. One could imagine, for instance, using CUTAC to find open chromatin near specific kinds of transcriptional co-activators or co-repressors, Pol II, or (possibly) transcription factors. I would imagine there are a range of applications that would benefit from something like this. Is it worth saying more about this? Or do the authors think that more exploration would be required before this could be stated with any certainty (perhaps the analysis suggested in point #1, above, will help)?\n\n3) To what extent does CUTAC recover the quantitative amount of chromatin accessibility measured by ATAC-seq? Heatmaps suggest the two are highly correlated, as would be expected. It might be useful for readers to see scatterplots that show the correlation in integrated signal near peaks. Note that I would not necessarily expect the correlation to be perfect if there is some specificity for accessible chromatin near H3K4me2/3.\n\n4) In some parts of the text and Abstract, I came away with the impression that CUTAC involves both H3K4me2 and H3K4me3 primary antibodies in the same sample. Based on the main text, however, I think the authors are only using one of these two marks at a time. Please clarify.\n\n5) In Figure 5, please clarify aspects of the CUTAC experiment that were explored in earlier figures were used. Was it me2 or me3? With or without hexanediol or dimethylformamide?\n\nReviewer #2:\n\nIn this manuscript Henikoff et al. present a modification of CUT&Tag, a method that they developed previously to profile chromatin epitopes genome-wide. Here, they show that CUT&Tag can be applied to profile transcription-couple chromatin accessibility sites by simply altering the salt concentration during tagmentation that changes the biochemical binding preferences of the pA-Tn5 transposase. The authors have creatively shown that this method can be performed at home to yield the same results as when performed in the lab, an interesting feature given the current restrictions on laboratory occupancy. The authors claim that while CUTAC takes longer to perform that ATAC-Seq, it gives better quality data than ATAC-seq based on the variation of ATAC-seq data quality between laboratories. The authors assume that all laboratories that perform ATAC-Seq are equally proficient in the technique and that variation is simply due to the technique itself and not the experimentalist. Therefore, it is unclear if CUTAC is indeed superior to ATAC-Seq. Together with the fact that CUTAC is a very minor modification of CUT&Tag, I am not convinced that it is a sufficient advance to warrant publication as a research tool in eLife.\n\nReviewer #3:\n\nIn this manuscript, Henikoff et al. developed a novel approach for in-situ mapping of transcription-coupled chromatin accessibility. Compared with conventional ATAC-seq, this method displays several unique advantages, including high sensitivity and compatibility with parallel Cut&tag profiling. I am rather enthusiastic about the release of this work. Also it is highly appreciated that the authors already uploaded the detailed protocol to protocol.io. For publication in eLife, this work only has several points to be clarified as shown below:\n\n1) In Figure 1AB, CUT&Tag-direct with different starting nuclei numbers gave very different fragment size distributions. Is there a specific reason for this? How does the input nuclei/cell number affect the genome-wide signals?\n\n2) For the divergent outputs from CUT&Tag and CUTAC, the manuscript implies that this is due to different Tn5-DNA binding affinities between low and high salt conditions. Is it also possibly due to that the high salt simply broad the space between nearby nucleosomes for more efficient tagmentation?\n\n3) My major concern for using this approach as a substitution of ATAC-seq is that this method may introduce bias with the use of antibody linked Tn5. Are there enriched H3K4me2 signals in the peaks detected only by H3K4me2 CUTAC compared with peaks detected only by Omni-ATACseq?\n\n4) Figure 5 is helpful for evaluating technique efficiency and qualities. However, the number of peaks per mapped fragments is affected by the input cell/nuclei number and the library's complexity. It would be great if these comparisons are made based on the same number of input nuclei. This is also helpful for comparing the efficiencies of different approaches. Also, how similar is the CUTAC dataset compared with all other ATAC-seq datasets by correlation analysis?\n\n5) For the broad application of the technique, it would be great if the authors can compare the library preparation cost per sample between this technique and conventional ATAC-seq.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Efficient chromatin accessibility mapping in situ by nucleosome-tethered tagmentation \" for further consideration by eLife. Your revised article has been evaluated by Jessica Tyler (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) Regarding H3K4me2 and ATAC-seq, your response and the revised text state \"Using an interval equal to average peak width at half-height, 51.3% of CUTAC and 50.0% of Omni-ATAC sites overlap ATAC_ENCODE peaks.\" As this was one of the three key requests of the reviewers, the analysis supporting these numbers should be shown, perhaps as additional panel to Figure 4 (ATAC encode peaks) or as a supplementary figure.\n\n2) In Figure 4F, the estimate of 90% coverage of these sites with CUTAC seems generous based on the heatmap. Could you add a horizontal line to clearly indicate where you believe the cutoff is? Also your response mention that you aligned Omni-seq to these sites but it's not shown in the new figure. The reviewer had specifically asked to compare H3K4me2 positive and negative in Omni-seq and CUT&tag.\n\n3) Did you submit Table 1? I could not find it.\n",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "11336e0b-b09c-4827-9915-b9a0ac9e94c7",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C1",
+      "claim": "ATAC-seq is a tagmentation-based method whereby Tn5 transposase inserts sequencing adapters into accessible DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A popular example is ATAC-seq, whereby Tn5 transposase inserts sequencing adapters into accessible DNA ('tagmentation').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the ATAC-seq method described in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "8b9bd43a-5d66-46b3-a7c0-3806325ad182",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C2",
+      "claim": "CUT&Tag is a tagmentation-based epigenomic profiling method in which antibody tethering of Tn5 to a chromatin epitope profiles specific chromatin features in small samples and single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CUT&Tag is a tagmentation-based epigenomic profiling method in which antibody tethering of Tn5 to a chromatin epitope of interest profiles specific chromatin features in small samples and single cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the CUT&Tag method from the abstract, supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "6bd1cba9-cceb-4661-a589-6c5b89fe003c",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C3",
+      "claim": "Modifying tagmentation conditions for histone H3K4me2 or H3K4me3 CUT&Tag redirects antibody-tethered tagmentation to accessible DNA sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that by simply modifying the tagmentation conditions for histone H3K4me2 or H3K4me3 CUT&Tag, antibody-tethered tagmentation of accessible DNA sites is redirected to produce chromatin accessibility maps that are indistinguishable from the best ATAC-seq maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "bc385216-fff7-4323-ab00-818fad9ad59c",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C4",
+      "claim": "Modified H3K4me2/H3K4me3 CUT&Tag produces chromatin accessibility maps indistinguishable from the best ATAC-seq maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that by simply modifying the tagmentation conditions for histone H3K4me2 or H3K4me3 CUT&Tag, antibody-tethered tagmentation of accessible DNA sites is redirected to produce chromatin accessibility maps that are indistinguishable from the best ATAC-seq maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparative data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "5a853097-3c41-4b0e-bb4c-fd32f8375539",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C5",
+      "claim": "All steps from nuclei to amplified sequencing-ready libraries can be performed in single PCR tubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, chromatin accessibility maps can be produced in parallel with CUT&Tag maps of other epitopes with all steps from nuclei to amplified sequencing-ready libraries performed in single PCR tubes in the laboratory or on a home workbench.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental protocol described in the methods and demonstrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "7dc7dc59-6372-44b9-9d23-db1b2b62d3bb",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C6",
+      "claim": "H3K4 methylation is produced by transcription at promoters and enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "As H3K4 methylation is produced by transcription at promoters and enhancers, our method identifies transcription-coupled accessible regulatory sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about H3K4 methylation cited in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "f35badd6-bcaa-4c81-803f-507c930bc1cd",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C7",
+      "claim": "The CUTAC method identifies transcription-coupled accessible regulatory sites.",
+      "claim_type": "EXPLICIT",
+      "source": "As H3K4 methylation is produced by transcription at promoters and enhancers, our method identifies transcription-coupled accessible regulatory sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing correspondence with PRO-seq and RNAPII signals in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "939cf0a0-36c7-4fcb-87c7-0751689fbe57",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C8",
+      "claim": "DNaseI hypersensitivity was first described by Weintraub and Groudine more than 40 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of DNA accessibility in the chromatin landscape has been used to infer active transcription ever since the seminal description of DNaseI hypersensitivity by Weintraub and Groudine more than 40 years ago (Weintraub and Groudine, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "8472dab3-b1c0-4887-8024-b09260dd39fb",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C9",
+      "claim": "Nucleosomes occupy most of the eukaryotic chromatin landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Because nucleosomes occupy most of the eukaryotic chromatin landscape and regulatory elements are mostly free of nucleosomes when they are active, DNA accessibility mapping can potentially identify active regulatory elements genome-wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about chromatin structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "46b7a996-a8fb-4810-8404-0ec29a1952e4",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C10",
+      "claim": "Regulatory elements are mostly free of nucleosomes when they are active.",
+      "claim_type": "EXPLICIT",
+      "source": "Because nucleosomes occupy most of the eukaryotic chromatin landscape and regulatory elements are mostly free of nucleosomes when they are active, DNA accessibility mapping can potentially identify active regulatory elements genome-wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about regulatory element structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "8284105e-0e6c-434d-a11e-3316bb6cd2d8",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C11",
+      "claim": "DNA accessibility mapping can potentially identify active regulatory elements genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Because nucleosomes occupy most of the eukaryotic chromatin landscape and regulatory elements are mostly free of nucleosomes when they are active, DNA accessibility mapping can potentially identify active regulatory elements genome-wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between nucleosome depletion and regulatory element activity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "cbe26a8d-298b-4d88-bb44-74117e861654",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C12",
+      "claim": "The speed and simplicity of ATAC-seq has led to its widespread adoption.",
+      "claim_type": "EXPLICIT",
+      "source": "The speed and simplicity of ATAC-seq, in which the cut-and-paste transposition reaction inserts sequencing adapters in the most accessible genomic regions (tagmentation), has led to its widespread adoption in many laboratories for mapping presumed regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about the field supported by the prevalence of ATAC-seq in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "936dd607-e877-4b8c-a2a1-1753a893a321",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C13",
+      "claim": "The median difference between an accessible and a non-accessible site in DNA is only approximately 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore accessibility is not all-or-none, with the median difference between an accessible and a non-accessible site in DNA estimated to be only ~20%, with no sites completely accessible or inaccessible in a population of cells (Chereji et al., 2019; Oberbeckmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "bc205cad-5f4e-4498-bc5c-bd04b8ebe9fa",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C14",
+      "claim": "No sites are completely accessible or inaccessible in a population of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore accessibility is not all-or-none, with the median difference between an accessible and a non-accessible site in DNA estimated to be only ~20%, with no sites completely accessible or inaccessible in a population of cells (Chereji et al., 2019; Oberbeckmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "1f83b2c3-81bb-400e-b36e-b5fcf5b98ebf",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C15",
+      "claim": "DNA accessibility mapping strategies show excellent correspondence between methods based on very different strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these uncertainties, DNA accessibility mapping has successfully predicted the locations of active gene enhancers and promoters genome-wide, with excellent correspondence between methods based on very different strategies (Karabacak Calviello et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a comparative study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "b98e77d4-aca1-4785-939a-cf9180b67535",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C16",
+      "claim": "Nucleosomes have evolved to repress transcription by blocking sites of pre-initiation complex formation and transcription factor binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely because DNA accessibility mapping strategies rely on the fact that nucleosomes have evolved to repress transcription by blocking sites of pre-initiation complex formation and transcription factor binding (Kornberg and Lorch, 2020), and so creating and maintaining a nucleosome-depleted region (NDR) is a pre-requisite for promoter and enhancer function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established work on nucleosome function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "187aa4a8-48b0-4dbc-a5b6-a2f031f8afbf",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C17",
+      "claim": "Creating and maintaining a nucleosome-depleted region is a pre-requisite for promoter and enhancer function.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely because DNA accessibility mapping strategies rely on the fact that nucleosomes have evolved to repress transcription by blocking sites of pre-initiation complex formation and transcription factor binding (Kornberg and Lorch, 2020), and so creating and maintaining a nucleosome-depleted region (NDR) is a pre-requisite for promoter and enhancer function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the repressive function of nucleosomes.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "cfb4c73e-31bc-4a8b-b768-67b84403d911",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C18",
+      "claim": "Enzymes that modify histone tails and chaperones that deposit nucleosome subunits are most active close to sites of transcription initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The rationale for this mapping strategy is that the enzymes that modify histone tails and the chaperones that deposit nucleosome subunits are most active close to the sites of initiation of transcription, which typically occurs bidirectionally at both gene promoters and enhancers to produce stable mRNAs and unstable enhancer RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about histone modification and variant deposition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "a95de004-57be-4154-8a8b-f2c8d73ac806",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C19",
+      "claim": "Transcription initiation typically occurs bidirectionally at both gene promoters and enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The rationale for this mapping strategy is that the enzymes that modify histone tails and the chaperones that deposit nucleosome subunits are most active close to the sites of initiation of transcription, which typically occurs bidirectionally at both gene promoters and enhancers to produce stable mRNAs and unstable enhancer RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about transcription at regulatory elements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "0ba10d7e-a6fc-46c5-909d-bbbf89feea39",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C20",
+      "claim": "Direct evidence is lacking that a histone mark is associated with an NDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the marks left behind by active transcriptional initiation 'point back' to the NDR, this cause-effect connection between the NDR and the histone marks is only by inference (Wang et al., 2020), and direct evidence is lacking that a histone mark is associated with an NDR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "8a820551-3fdb-4e7a-97d8-635eb4411eae",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C21",
+      "claim": "Reducing ionic concentration during tagmentation preferentially attracts Tn5 tethered to H3K4me2 to the nearby NDR.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence that reducing the ionic concentration during tagmentation preferentially attracts Tn5 tethered to the H3K4me2 histone modification via a Protein A/G fusion to the nearby NDR, shifting the site of tagmentation from nucleosomes bordering the NDR to the NDR itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "898161e8-68c5-4aa3-9e99-9d187c9c1b87",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C22",
+      "claim": "Low-salt tagmentation shifts the site of tagmentation from nucleosomes bordering the NDR to the NDR itself.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence that reducing the ionic concentration during tagmentation preferentially attracts Tn5 tethered to the H3K4me2 histone modification via a Protein A/G fusion to the nearby NDR, shifting the site of tagmentation from nucleosomes bordering the NDR to the NDR itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "3c4582cd-5505-4156-a561-83da1dd9f501",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C23",
+      "claim": "Almost all transcription-coupled accessible sites correspond to ATAC-seq sites and vice-versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost all transcription-coupled accessible sites correspond to ATAC-seq sites and vice-versa, and lie upstream of paused RNA Polymerase II (RNAPII).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative data in Figures 4 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "c7d302f9-278e-4992-a228-287f588db344",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C24",
+      "claim": "CUTAC sites lie upstream of paused RNA Polymerase II.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost all transcription-coupled accessible sites correspond to ATAC-seq sites and vice-versa, and lie upstream of paused RNA Polymerase II (RNAPII).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 6 showing alignment with RNAPII signals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "e43726e2-32a5-4b38-a5e7-d607b10f3777",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C25",
+      "claim": "CUTAC data quality is similar to or better than the best ATAC-seq datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "'CUTAC' (Cleavage Under Targeted Accessible Chromatin) is conveniently performed in parallel with ordinary CUT&Tag, producing accessible site maps from low cell numbers with signal-to-noise as good as or better than the best ATAC-seq datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative data quality metrics in Figure 5 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "73eec817-fe39-428b-9b73-0395503253c7",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C26",
+      "claim": "CUT&Tag-direct eliminates tube transfers so all steps can be performed in a single PCR tube.",
+      "claim_type": "EXPLICIT",
+      "source": "We have developed a streamlined version of CUT&Tag that eliminates tube transfers, so that all steps can be efficiently performed in a single PCR tube (Kaya-Okur et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the protocol and demonstrated in the methods.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "8105f2e4-cb10-473f-b1da-ad315d342452",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C27",
+      "claim": "CUT&Tag-direct protocol can be performed on a home workbench with minimal equipment.",
+      "claim_type": "EXPLICIT",
+      "source": "During the COVID-19 pandemic, we adapted this CUT&Tag-direct protocol for implementation with minimal equipment and space requirements that uses no toxic reagents, so that it can be performed conveniently and safely on a home workbench (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental setup shown in Figure 1\u2014figure supplement 1 and data generated at home.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "838e30af-62e3-4706-b53b-3269f907bc0b",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C28",
+      "claim": "Tapestation profiles of libraries produced at home detected nucleosomal ladders down to 200 cells for H3K27me3.",
+      "claim_type": "EXPLICIT",
+      "source": "Tapestation profiles of libraries produced at home detected nucleosomal ladders down to 200 cells for H3K27me3 and nucleosomal and subnucleosomal fragments down to 2000 cells for H3K4me3 (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in the Tapestation gel images in Figure 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "84d0c13d-b445-46b2-9e42-46ea68840e28",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C29",
+      "claim": "Tapestation profiles of libraries produced at home detected nucleosomal and subnucleosomal fragments down to 2000 cells for H3K4me3.",
+      "claim_type": "EXPLICIT",
+      "source": "Tapestation profiles of libraries produced at home detected nucleosomal ladders down to 200 cells for H3K27me3 and nucleosomal and subnucleosomal fragments down to 2000 cells for H3K4me3 (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in the Tapestation gel images in Figure 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "e73502b7-95fe-443b-a3a3-71181c92f0c6",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C30",
+      "claim": "Similar results were obtained for both at-home and in-lab profiles for H3K4me3 and H3K27me3.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained for both at-home and in-lab profiles for both histone modifications (Figure 1C\u2013D) using pA-Tn5 produced in the laboratory, and results using commercial Protein A/Protein G-Tn5 (pAG-Tn5) were at least as good.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparison of tracks in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "850a80db-7572-4f0f-88ad-1ddda59fcab3",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C31",
+      "claim": "Commercial pAG-Tn5 provided results at least as good as lab-produced pA-Tn5.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained for both at-home and in-lab profiles for both histone modifications (Figure 1C\u2013D) using pA-Tn5 produced in the laboratory, and results using commercial Protein A/Protein G-Tn5 (pAG-Tn5) were at least as good.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of results using different Tn5 preparations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "ac6a2a78-8d26-4c3d-9ece-deabee43bf84",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C32",
+      "claim": "Elevated salt conditions are necessary to avoid tagmenting accessible DNA during CUT&Tag.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the Tn5 domain of pA-Tn5 binds avidly to DNA, it is necessary to use elevated salt conditions to avoid tagmenting accessible DNA during CUT&Tag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on understanding of Tn5 DNA-binding properties and experimental observations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "e1263ec1-4634-4bba-9849-3f590cc9d8cd",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C33",
+      "claim": "High-salt buffers included 300 mM NaCl for pA-Tn5 binding, washing, and tagmentation at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "High-salt buffers included 300 mM NaCl for pA-Tn5 binding, washing to remove excess protein, and tagmentation at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the standard CUT&Tag protocol conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "9a697466-b1b9-4f5d-9e53-2732cb61dec7",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C34",
+      "claim": "Protocols without a high-salt wash step result in chromatin profiles dominated by accessible site tagmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that other protocols based on the same principle but that do not include a high-salt wash step result in chromatin profiles that are dominated by accessible site tagmentation (Kaya-Okur et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work and experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "9a1972ab-4d0a-4107-a916-15b21c199548",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C35",
+      "claim": "Low-salt tagmentation resulted in a marked reduction in the oligo-nucleosome ladder with an increase in faster migrating fragments for H3K4me2.",
+      "claim_type": "EXPLICIT",
+      "source": "Tapestation capillary gel electrophoresis of the final libraries revealed that after a 20 min incubation the effect of low-salt tagmentation on H3K4me2 CUT&Tag samples was a marked reduction in the oligo-nucleosome ladder with an increase in faster migrating fragments (Figure 3A and Figure 3\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in the Tapestation gel images in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "a38b7132-e93f-43ad-83b3-3ff2f39d5acd",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C36",
+      "claim": "Under low-salt conditions, the broad nucleosomal distribution of H3K4me3 and H3K4me2 CUT&Tag around promoters was mostly replaced by single narrow peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, under low-salt conditions, high-resolution profiles of H3K4me3 and H3K4me2 showed that the broad nucleosomal distribution of CUT&Tag around promoters for these two modifications was mostly replaced by single narrow peaks (Figure 3B and Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the tracks in Figure 3B and Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "77277384-5b08-44ab-bf51-ccde35dd3ead",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C37",
+      "claim": "Low-salt tagmentation revealed much narrower profiles for H3K4me3 and H3K4me2 (approximately 40% peak width at half-height).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, tagmentation under low-salt conditions revealed much narrower profiles for H3K4me3 and H3K4me2 (~40% peak width at half-height), less so for H3K4me1 (~60%), which suggests that the shift is from H3K4me-marked nucleosomes to an adjacent NDR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the average plots in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "ace6fb7b-ba73-41ed-aae3-3ac41a39ad9e",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C38",
+      "claim": "Low-salt tagmentation revealed less narrowing for H3K4me1 (approximately 60% peak width at half-height).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, tagmentation under low-salt conditions revealed much narrower profiles for H3K4me3 and H3K4me2 (~40% peak width at half-height), less so for H3K4me1 (~60%), which suggests that the shift is from H3K4me-marked nucleosomes to an adjacent NDR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the average plots in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "10b7177f-3ded-4113-90db-83e4b25eeab1",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C39",
+      "claim": "Peak narrowing does not require free pAG-Tn5.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a narrowing if we included a stringent 300 mM washing step before low-salt tagmentation (Figure 3D, 'Post-wash'), which indicates that peak narrowing does not require free pAG-Tn5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the post-wash experiment shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "472feae8-4924-4134-919f-9e305374e128",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C40",
+      "claim": "A small amount of free pAG-Tn5 during tagmentation results in higher yields with increased peak narrowing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if a small amount of pAG-Tn5 was included during tagmentation we obtained higher yields with increased peak narrowing (Figure 3D 'Add-back').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the add-back experiment in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "f77b6eb6-1984-4f13-9a26-efff824868a2",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C41",
+      "claim": "H3K4 methylation is deposited in a gradient of tri- to di- to mono-methylation downstream of the +1 nucleosome from the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "As H3K4 methylation is deposited in a gradient of tri- to di- to mono-methylation downstream of the +1 nucleosome from the transcriptional start site (TSS) (Henikoff and Shilatifard, 2011; Soares et al., 2017), we reasoned that the closer proximity of di- and tri-methylated nucleosomes to the NDR than mono-methylated nucleosomes resulted in preferential proximity-dependent 'capture' of Tn5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on H3K4 methylation patterns.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "70aa56b0-f572-4caa-bc57-50bc92f3bdb2",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C42",
+      "claim": "The shift from broad to more peaky NDR profiles by H3K4me2 low-salt tagmentation was enhanced by addition of 1,6-hexanediol.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this interpretation, we observed that the shift from broad to more peaky NDR profiles and heatmaps by H3K4me2 low-salt tagmentation was enhanced by addition of 1,6-hexanediol, a strongly polar aliphatic alcohol, and by 10% dimethylformamide, a strongly polar amide, both of which enhance chromatin accessibility (Figure 3E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the heatmaps and average plots in Figure 3E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "d7302b39-0e41-4f4b-b440-68ef4adbe5cb",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C43",
+      "claim": "The shift from broad to more peaky NDR profiles by H3K4me2 low-salt tagmentation was enhanced by addition of dimethylformamide.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this interpretation, we observed that the shift from broad to more peaky NDR profiles and heatmaps by H3K4me2 low-salt tagmentation was enhanced by addition of 1,6-hexanediol, a strongly polar aliphatic alcohol, and by 10% dimethylformamide, a strongly polar amide, both of which enhance chromatin accessibility (Figure 3E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the heatmaps and average plots in Figure 3E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "5ff35300-f9b8-491a-bb69-9e7a907b450b",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C44",
+      "claim": "1,6-hexanediol and dimethylformamide enhance chromatin accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this interpretation, we observed that the shift from broad to more peaky NDR profiles and heatmaps by H3K4me2 low-salt tagmentation was enhanced by addition of 1,6-hexanediol, a strongly polar aliphatic alcohol, and by 10% dimethylformamide, a strongly polar amide, both of which enhance chromatin accessibility (Figure 3E\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of these compounds.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "297f3cb5-0907-4ade-bb7d-727930631331",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C45",
+      "claim": "NDR-focused tagmentation persisted even in the presence of both strongly polar compounds at 55\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "NDR-focused tagmentation persisted even in the presence of both strongly polar compounds at 55\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the experimental data in Figure 3E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "610dcd0a-b231-419f-af4e-f1ec3f5db7af",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C46",
+      "claim": "Localization to NDRs is more precise for small (\u2264120 bp) than large (>120 bp) tagmented fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Localization to NDRs is more precise for small (\u2264120 bp) than large (>120 bp) tagmented fragments, and by resolving more closely spaced peaks inclusion of these compounds increased the number of peaks called (Figure 3G), also for H3K4me3-tethered Tn5 (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the fragment size analysis in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "42a1faf0-9545-4670-b79c-2d68dfb836e2",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C47",
+      "claim": "Inclusion of chromatin-disrupting compounds increased the number of peaks called.",
+      "claim_type": "EXPLICIT",
+      "source": "Localization to NDRs is more precise for small (\u2264120 bp) than large (>120 bp) tagmented fragments, and by resolving more closely spaced peaks inclusion of these compounds increased the number of peaks called (Figure 3G), also for H3K4me3-tethered Tn5 (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3G and Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "e42e4beb-24c7-4611-a0a4-b54622118a4e",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C48",
+      "claim": "Most ATAC-seq sites are flanked by H3K4me2-marked nucleosomes in K562 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CUT&Tag, we previously showed that most ATAC-seq sites are flanked by H3K4me2-marked nucleosomes in K562 cells (Kaya-Okur et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "e026cb4d-ae46-48c6-9434-dece4ac67b7a",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C49",
+      "claim": "Alignment of ATAC-seq datasets over peaks called using low-salt tagmented CUT&Tag data produced narrow heatmap patterns for the vast majority of peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, alignment of ATAC-seq datasets over peaks called using low-salt tagmented CUT&Tag data produced narrow heatmap patterns for the vast majority of peaks (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the heatmaps in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "6faf5025-26a7-478c-bffc-3be6154cfa3e",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C50",
+      "claim": "Heatmaps produced using either Omni-ATAC or CUTAC peak calls showed occupancy of approximately 95% for ENCODE ATAC-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, heatmaps produced using either Omni-ATAC or CUTAC peak calls for the same ENCODE ATAC-seq data showed occupancy of ~95% for both sets of peaks (compare right panels of Figure 4B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the heatmaps in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "4d173575-b44a-4408-833a-95bb9487b7e8",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C51",
+      "claim": "There is approximately 50% overlap between ENCODE ATAC-seq peaks and peaks called from either Omni-ATAC or CUTAC data.",
+      "claim_type": "EXPLICIT",
+      "source": "We found ~50% overlap between ENCODE ATAC-seq peaks and peaks called from either Omni-ATAC (50.0%) or CUTAC (51.3%) data (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "a79a0776-366b-4cef-884b-258a2ce2887d",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C52",
+      "claim": "CUTAC and Omni-ATAC detect the same chromatin features.",
+      "claim_type": "EXPLICIT",
+      "source": "This equivalence between H3K4me2 CUTAC and Omni-ATAC when compared to ENCODE ATAC-seq implies that CUTAC and Omni-ATAC detect the same chromatin features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparative data in Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "c5fb5d9f-cd05-48a1-b125-ac94fa65fdfa",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C53",
+      "claim": "H3K4me3 CUTAC shows only approximately 75% peak occupancy with ENCODE ATAC-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion does not hold for H3K4me3 CUTAC, because similar alignment of ENCODE ATAC-seq data resulted in only ~75% peak occupancy (Figure 4D) and lower correlations (Figure 4E), which we attribute to the greater enrichment of H3K4me3 around promoters than enhancers relative to H3K4me2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "17022bc2-f1bb-40f1-9d6f-33a4afc4c283",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C54",
+      "claim": "86% of DNaseI hypersensitive CTCF sites are occupied by CUTAC signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 86% of the DNaseI hypersensitive CTCF sites are occupied by CUTAC signal relative to flanking regions (Figure 4F), which suggests equivalence of CUTAC and DNaseI hypersensitive CTCF sites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the heatmap in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "b2e8b214-ef6c-4a4a-b587-0107bf1dc94f",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C55",
+      "claim": "H3K4me2 CUT&Tag showed detectable signal at only 53% of DNaseI hypersensitive CTCF sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the H3K4me2 CUT&Tag sample showed detectable signal at only 53% of the CTCF sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of CTCF sites shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "e2cc5519-5716-496d-9f4b-58363bd01efb",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C56",
+      "claim": "For CUT&Tag, FRiP equals approximately 0.4 for 3.2 million fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "For both ENCODE ChIP-seq and our published CUT&RUN data we measured FRiP = ~0.2 for 3.2 million fragments, whereas for CUT&Tag, FRiP = ~0.4, reflecting improved signal-to-noise relative to previous chromatin profiling methods (Kaya-Okur et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data quality analysis of CUT&Tag data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "433ca134-ed60-463e-b177-e1bf04011255",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C57",
+      "claim": "H3K4me2 CUT&Tag FRiP equals 0.41 for 3.2 million fragments and approximately 16,000 peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CUT&Tag-direct, H3K4me2 CUT&Tag FRiP = 0.41 for 3.2 million fragments and ~16,000 peaks (n = 4 replicates), whereas tagmentation by dilution in 2 mM MgCl2 resulted in FRiP = 0.18 for 3.2 million fragments and ~15,000 peaks (n = 4) with similar values for tagmentation by removal [FRiP = 0.21,~15,000 peaks (n = 4)].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data quality analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "6a29c142-c4b3-4999-9e9a-b75ce044d375",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C58",
+      "claim": "Tagmentation by dilution in 2 mM MgCl2 resulted in FRiP equals 0.18 for 3.2 million fragments and approximately 15,000 peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CUT&Tag-direct, H3K4me2 CUT&Tag FRiP = 0.41 for 3.2 million fragments and ~16,000 peaks (n = 4 replicates), whereas tagmentation by dilution in 2 mM MgCl2 resulted in FRiP = 0.18 for 3.2 million fragments and ~15,000 peaks (n = 4) with similar values for tagmentation by removal [FRiP = 0.21,~15,000 peaks (n = 4)].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data quality analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "69756d0e-d177-4451-9752-ad5aa63f69bd",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C59",
+      "claim": "CUTAC data quality was similar to that for the Omni-ATAC method.",
+      "claim_type": "EXPLICIT",
+      "source": "We also compared the number of peaks and FRiP values for CUTAC to those for ATAC-seq for K562 cells and observed that CUTAC data quality was similar to that for the Omni-ATAC method (Corces et al., 2017), better than ENCODE ATAC-seq (Zhang et al., 2020), and much better than Fast-ATAC (Corces et al., 2016), a previous improvement over Standard ATAC-seq (Buenrostro et al., 2013; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the comparative analysis in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "f474f19f-34ce-472a-9494-6ed9bc6e02c6",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C60",
+      "claim": "CUTAC is relatively insensitive to tagmentation times.",
+      "claim_type": "EXPLICIT",
+      "source": "CUTAC is relatively insensitive to tagmentation times, with similar numbers of peaks and similar FRiP values for samples tagmented for 5, 20 and 60 min (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A comparing different tagmentation times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "a7f387c3-6157-499b-8c86-9a63084415ae",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C61",
+      "claim": "The robustness of CUT&Tag and CUTAC is attributed to the tethering of Tn5 to specific chromatin epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute the robustness of CUT&Tag and CUTAC to the tethering of Tn5 to specific chromatin epitopes, so that when tagmentation goes to completion there is little untethered Tn5 that would increase background levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mechanism of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "4ac39abc-efad-48ce-ad4c-bcdfa30ba25e",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C62",
+      "claim": "ATAC-seq data from multiple laboratories shows a wide range of data quality.",
+      "claim_type": "EXPLICIT",
+      "source": "When we measured peak numbers and FRiP values for ATAC-seq for K562 data deposited in the Gene Expression Omnibus (GEO) from multiple laboratories, we observed a wide range of data quality (Figure 5B, even from very recent submissions from expert groups: Table 1 and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "272cb679-402d-42d9-8d4f-0dcaf5c1b428",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C63",
+      "claim": "Variability in ATAC-seq data quality is attributed to difficulty avoiding background tagmentation by excess free Tn5.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute this variability to the difficulty of avoiding background tagmention by excess free Tn5 in ATAC-seq protocols and subsequent release of non-specific nucleosomal fragments (Swanson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on understanding of the ATAC-seq method, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "5204f4c1-4417-44e0-87e3-482045d0c620",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C64",
+      "claim": "Excluding larger fragments results in better resolution yielding more peaks and higher FRiP values.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed this is exactly what we observe for heatmaps (Figure 5\u2014figure supplement 2), tracks (Figure 5\u2014figure supplement 3), peak calls and FRiP values (Figure 5C). Excluding larger fragments results in better resolution yielding more peaks and higher FRIP values, both of which approach a maximum with fewer fragments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "18d91c0f-f6ed-4345-aa00-11e7ee40c309",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C65",
+      "claim": "Addition of strongly polar compounds during tagmentation provides substantial improvement in peak calling and FRiPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the addition of strongly polar compounds during tagmentation provides a substantial improvement in peak calling and FRiPs (Figure 5C, turquoise and orange curves).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "e924226a-9b1a-4084-bc74-ab703411b46a",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C66",
+      "claim": "Excluding large fragments did not improve ATAC-seq peak calls and FRiP values.",
+      "claim_type": "EXPLICIT",
+      "source": "Excluding large fragments did not improve ATAC-seq peak calls and FRiP values, which indicates that tethering to H3K4me2 is critical for maximum sensitivity and resolution of DNA accessibility maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative analysis in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "07ce3f75-a0e6-4aaf-a387-bba29871c65d",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C67",
+      "claim": "Tethering to H3K4me2 is critical for maximum sensitivity and resolution of DNA accessibility maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Excluding large fragments did not improve ATAC-seq peak calls and FRiP values, which indicates that tethering to H3K4me2 is critical for maximum sensitivity and resolution of DNA accessibility maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparative data in Figure 5C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "2fa98edb-0ff3-456b-a279-fb4c3f3bb9b5",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C68",
+      "claim": "H3K4me2/3 methylation marks active transcription at promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K4me2/3 methylation marks active transcription at promoters (Gilchrist et al., 2012), which raises the question as to whether sites identified by CUTAC are also sites of RNAPII enrichment genome-wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "94ce6947-665e-4b6e-9e3b-c07cff71691b",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C69",
+      "claim": "CUTAC peaks are located in the NDR between flanking H3K4me2-marked chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "CUT&Tag H3K4me2 peaks flank NDRs more downstream on either side than H3K4me3, confirmed by ENCODE ChIP-seq data to be the actual location of these marks (Figure 6\u2014figure supplement 1). In contrast, CUTAC peaks are located in the NDR between flanking H3K4me2-marked chromatin (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "3c6cef3a-a5d9-4981-8974-4d5d02681b2c",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C70",
+      "claim": "CUTAC sites at promoter NDRs correspond closely to promoter ATAC-seq sites.",
+      "claim_type": "EXPLICIT",
+      "source": "CUTAC sites at promoter NDRs corresponded closely to promoter ATAC-seq sites, consistent with expectation for promoter NDRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "f0156b54-489c-401d-bec2-5950ab0cac22",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C71",
+      "claim": "Paired CUT&Tag and CUTAC samples can replace both ChIP-seq for an active promoter mark and ATAC-seq in a single experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, paired CUT&Tag and CUTAC samples can replace both ChIP-seq for an active promoter mark and ATAC-seq in a single experiment with identical processing, analysis and display.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the equivalence of CUTAC to ATAC-seq and CUT&Tag to ChIP-seq.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "529c3506-ff5d-4cdd-86c4-ecbca42b1275",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C72",
+      "claim": "About 80% of CUTAC sites showed enrichment of PRO-Seq signal downstream.",
+      "claim_type": "EXPLICIT",
+      "source": "About 80% of the CUTAC sites showed enrichment of PRO-Seq signal downstream, confirming that the large majority of CUTAC sites correspond to NDRs representing transcription-coupled regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of PRO-seq data aligned to CUTAC peaks in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "c6767c57-643c-4353-bbaa-ca29d014f04b",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C73",
+      "claim": "The large majority of CUTAC sites correspond to NDRs representing transcription-coupled regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "About 80% of the CUTAC sites showed enrichment of PRO-Seq signal downstream, confirming that the large majority of CUTAC sites correspond to NDRs representing transcription-coupled regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the PRO-seq enrichment data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "24fb4bab-a2d7-4113-9902-7373917997c8",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C74",
+      "claim": "There is only a approximately 20% median difference in absolute DNA accessibility between DNaseI hypersensitive sites and non-hypersensitive sites genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "In part this uncertainty is attributable to variations in nucleosome positioning within a population of mammalian cells such that there is only a ~20% median difference in absolute DNA accessibility between DNaseI hypersensitive sites and non-hypersensitive sites genome-wide (Chereji et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "07ca5b16-153d-4978-a016-f462a1e64e70",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C75",
+      "claim": "DNA accessibility is not the primary determinant of gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that DNA accessibility is not the primary determinant of gene regulation, and contradicts the popular characterization of accessible DNA sites as 'open' and the lack of accessibility as 'closed'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the small difference in accessibility between sites.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "5d62655e-e7e2-4b64-a754-089643c579de",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C76",
+      "claim": "There are multiple dynamic processes that can result in nucleosome depletion, including transcription, nucleosome remodeling, transcription factor binding, and replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there are multiple dynamic processes that can result in nucleosome depletion, including transcription, nucleosome remodeling, transcription factor binding, and replication, so that the identification of a presumed regulatory element by chromatin accessibility mapping leaves open the question as to how accessibility is established and maintained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about chromatin dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "5a5c74f8-d32d-4bc8-8b74-226dbc898c01",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C77",
+      "claim": "CUTAC provides a physical link between a transcription-coupled process and DNA hyperaccessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Our CUTAC mapping method now provides a physical link between a transcription-coupled process and DNA hyperaccessibility by showing that anchoring of Tn5 to a nucleosome mark laid down by transcriptional events immediately downstream identifies presumed gene regulatory elements that are indistinguishable from those identified by ATAC-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "764d8621-1b03-4125-8006-3017a1ff9e32",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C78",
+      "claim": "The equivalence of CUTAC and ATAC at both enhancers and promoters provides support for the hypothesis that these regulatory elements are characterized by the same regulatory architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "The equivalence of CUTAC and ATAC at both enhancers and promoters provides support for the hypothesis that these regulatory elements are characterized by the same regulatory architecture (Andersson et al., 2015; Arnold et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data, supported by citations to prior hypotheses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "ab2af984-591f-4af4-8424-c6ec13e277ba",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C79",
+      "claim": "H3K4 methylation is catalyzed by COMPASS/SET1 and related enzyme complexes in all eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "In all eukaryotes, H3K4 methylation is catalyzed by COMPASS/SET1 and related enzyme complexes, which associate with the C-terminal domain (CTD) of the large subunit of RNAPII when Serine-5 of the tandemly repetitive heptad repeat of the CTD is phosphorylated following transcription initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about H3K4 methylation, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "0114753c-8c93-4002-8936-0f9e1e775c9e",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C80",
+      "claim": "COMPASS/SET1 complexes associate with the CTD of RNAPII when Serine-5 is phosphorylated following transcription initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In all eukaryotes, H3K4 methylation is catalyzed by COMPASS/SET1 and related enzyme complexes, which associate with the C-terminal domain (CTD) of the large subunit of RNAPII when Serine-5 of the tandemly repetitive heptad repeat of the CTD is phosphorylated following transcription initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of H3K4 methylation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "8d8c1fc1-4c50-4401-8939-09494b229e67",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C81",
+      "claim": "The enrichment of dimethylated and trimethylated forms of H3K4 is thought to be the result of exposure of the H3 tail to COMPASS/SET1 during RNAPII stalling just downstream of the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment of dimethylated and trimethylated forms of H3K4 is thought to be the result of exposure of the H3 tail to COMPASS/SET1 during RNAPII stalling just downstream of the TSS, so that these modifications are coupled to the onset of transcription (Soares et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "5363a24a-75f2-4188-8fcb-0a9d69f7b07c",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C82",
+      "claim": "Tn5 tethered to H3K4me2 or H3K4me3 efficiently tagments accessible sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our demonstration that Tn5 tethered to H3K4me2 or H3K4me3 histone tail residues efficiently tagments accessible sites, implies that accessibility at regulatory elements is created by events immediately following transcription initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental data showing CUTAC detects accessible sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "c7ab6dd4-1732-492d-9cd2-9845e4c6dc7c",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C83",
+      "claim": "Accessibility at regulatory elements is created by events immediately following transcription initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our demonstration that Tn5 tethered to H3K4me2 or H3K4me3 histone tail residues efficiently tagments accessible sites, implies that accessibility at regulatory elements is created by events immediately following transcription initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the coupling of H3K4 methylation to transcription initiation and the CUTAC results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "56077ff2-0a63-4fda-b2ef-722b60adccb5",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C84",
+      "claim": "This mechanistic interpretation is supported by the mapping of CUTAC sites just upstream of RNAPII.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanistic interpretation is supported by the mapping of CUTAC sites just upstream of RNAPII, and is consistent with the recent demonstration that PRO-seq data can be used to accurately impute 'active' histone modifications (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the alignment data in Figure 6 showing CUTAC sites upstream of RNAPII.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "7b440222-f1d8-4a78-a363-f78764ae4bef",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C85",
+      "claim": "Approximately 95% of ATAC-seq peaks are detected by CUTAC and vice-versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus CUTAC identifies active promoters and enhancers that produce enhancer RNAs, which might help explain why ~95% of ATAC-seq peaks are detected by CUTAC and vice-versa (Figure 4B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the overlap analysis shown in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "d7396f13-85a6-4bdb-9df4-f58588894248",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C86",
+      "claim": "All steps from frozen nuclei to purified sequencing-ready libraries can be performed in a day in single PCR tubes on a home workbench.",
+      "claim_type": "EXPLICIT",
+      "source": "Like CUT&Tag-direct, all steps from frozen nuclei to purified sequencing-ready libraries for the data presented here were performed in a day in single PCR tubes on a home workbench.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experimental setup and results presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "8f29f6b3-dacf-44c8-a4ff-8af6c824b054",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C87",
+      "claim": "CUTAC can be performed in parallel with an H3K4me2 CUT&Tag positive control and other antibodies using multiple aliquots from each population of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As it requires only a simple modification of one step in the CUT&Tag protocol, CUTAC can be performed in parallel with an H3K4me2 CUT&Tag positive control and other antibodies using multiple aliquots from each population of cells to be profiled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the protocol design and demonstrated in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "10b8a0b3-8969-4d12-92bc-d928c6d41780",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C88",
+      "claim": "Three distinct protocol modifications (dilution, removal and post-wash tagmentation) yield high-quality results.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that three distinct protocol modifications, dilution, removal and post-wash tagmentation yield high-quality results, providing flexibility that might be important for adapting CUTAC to nuclei from diverse cell types and tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the comparative data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "e6cdcb8f-83b8-4bb9-a9b5-e86553932203",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C89",
+      "claim": "CUT&Tag is highly reproducible using native or lightly cross-linked cells or nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CUT&Tag is highly reproducible using native or lightly cross-linked cells or nuclei (Kaya-Okur et al., 2020), and as shown here H3K4me2 CUTAC maps regulatory elements with sensitivity and signal-to-noise comparable to the best ATAC-seq datasets, even better when larger fragments are computationally excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work and data in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "7df57e93-2e2f-48a1-a525-db788ac6f7c4",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C90",
+      "claim": "H3K4me2 CUTAC maps regulatory elements with sensitivity and signal-to-noise comparable to the best ATAC-seq datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CUT&Tag is highly reproducible using native or lightly cross-linked cells or nuclei (Kaya-Okur et al., 2020), and as shown here H3K4me2 CUTAC maps regulatory elements with sensitivity and signal-to-noise comparable to the best ATAC-seq datasets, even better when larger fragments are computationally excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the comparative data quality analysis in Figure 5 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "3571861a-2ea9-47bf-832c-01baa03d7841",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "claim_id": "C91",
+      "claim": "The combination of H3K4me2 CUT&Tag and CUTAC provides both highest data quality and precise mapping using the same H3K4me2 antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "Although datasets from H3K4me2 CUT&Tag have lower background than datasets from CUTAC run in parallel, the combination of the two provides both highest data quality (CUT&Tag) and precise mapping (CUTAC) using the same H3K4me2 antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the comparative analysis of CUT&Tag and CUTAC data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "349ff797-7644-40c1-b190-5775cbe22a32",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CUT&Tag-direct protocol can be performed at home with minimal equipment, producing high-quality libraries from low cell numbers. The protocol was successfully adapted for home use during COVID-19, with Tapestation profiles detecting nucleosomal ladders down to 200 cells for H3K27me3 and 2000 cells for H3K4me3, with comparable results between home and lab settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 and C86 are well-supported by experimental data in Figure 1 and Figure 1\u2014figure supplement 1, demonstrating successful implementation of the protocol at home with comparable data quality to lab-produced results. The Tapestation gel images directly show the claimed detection limits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "4877938c-4e54-4aca-8e63-c0b1238a4b39",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Modifying tagmentation conditions to low-salt redirects H3K4me2/H3K4me3 CUT&Tag from nucleosomes to adjacent NDRs, producing narrow peaks (~40% width for H3K4me2/me3, ~60% for H3K4me1) that are indistinguishable from ATAC-seq maps. Low-salt tagmentation reduces the oligo-nucleosome ladder and increases faster-migrating fragments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C21, C22, C35-C38 are strongly supported by experimental data in Figures 3A-C showing the shift from broad nucleosomal distributions to narrow peaks under low-salt conditions. The quantitative measurements of peak width and the Tapestation gel images provide direct evidence for the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "eb6e0743-a73f-4a1b-bf34-4dbc8285ca5e",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Elevated salt conditions (300 mM NaCl) are necessary during standard CUT&Tag to prevent Tn5 from tagmenting accessible DNA. Protocols without high-salt wash steps result in chromatin profiles dominated by accessible site tagmentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by the experimental design and citation to prior work (C34). The rationale is based on understanding of Tn5 DNA-binding properties and is consistent with the observed shift to accessible site tagmentation under low-salt conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "a0587fad-6aac-424e-90b9-e49dbbe0db20",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Peak narrowing in CUTAC does not require free pAG-Tn5, as demonstrated by post-wash experiments, but addition of a small amount of free pAG-Tn5 during tagmentation results in higher yields with increased peak narrowing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 are supported by experimental data in Figure 3D showing that post-wash tagmentation produces narrowing, while add-back experiments show improved yields and narrowing. This addresses the mechanistic question of whether free Tn5 is required.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "10ae24b2-8c64-419f-82df-544d3423d1e4",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The shift to NDR-focused tagmentation is enhanced by chromatin-disrupting compounds (1,6-hexanediol and dimethylformamide), persists at elevated temperatures (55\u00b0C), and is more precise for small fragments (\u2264120 bp). These compounds increase the number of peaks called by resolving more closely spaced peaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 are well-supported by data in Figures 3E-G showing enhanced peak narrowing with polar compounds, persistence at high temperature, and improved resolution with small fragments. The mechanistic interpretation based on H3K4 methylation gradients (C41) is supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "919b6bcc-d7e2-4bea-a750-644d32f18c4f",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CUTAC produces chromatin accessibility maps that closely correspond to ATAC-seq, with ~95% occupancy between CUTAC and Omni-ATAC peak calls on ENCODE ATAC-seq data, and ~50% overlap in peak calls between methods. Almost all transcription-coupled accessible sites correspond to ATAC-seq sites and vice-versa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 and C85 are strongly supported by comparative data in Figure 4A-C showing narrow heatmap patterns and high correspondence between methods. The quantitative overlap analysis (C51) and occupancy measurements (C50) provide robust evidence for equivalence between CUTAC and ATAC-seq.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "36593050-7da0-4edd-b575-6f602db5b29e",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "H3K4me3 CUTAC shows only ~75% peak occupancy with ENCODE ATAC-seq data and lower correlations compared to H3K4me2 CUTAC, attributed to greater enrichment of H3K4me3 around promoters than enhancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by data in Figures 4D-E showing reduced occupancy and correlations for H3K4me3 CUTAC. The interpretation regarding differential enrichment at promoters vs enhancers is reasonable given the known biology of H3K4 methylation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "8dd29b80-10a9-4d2b-9414-25ffe46f418b",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "86% of DNaseI hypersensitive CTCF sites are occupied by CUTAC signal, compared to only 53% for H3K4me2 CUT&Tag, demonstrating improved detection of CTCF sites by CUTAC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 are supported by data in Figure 4F showing differential occupancy at CTCF sites. This demonstrates the practical advantage of CUTAC over standard CUT&Tag for detecting transcription factor binding sites.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "44805d63-2607-419b-ae68-5940bb8a9d5d",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CUTAC data quality (FRiP ~0.18-0.21 for 3.2M fragments) is similar to Omni-ATAC and better than other ATAC-seq methods, with relative insensitivity to tagmentation times (5-60 min). CUT&Tag shows higher FRiP (~0.4) than CUTAC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 and C25 are well-supported by comparative data quality analysis in Figure 5A and Table 1. The FRiP measurements provide quantitative evidence for data quality, and the comparison across multiple ATAC-seq methods is comprehensive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "ba73aca9-9e60-4075-bb97-74028b9efc69",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The robustness of CUT&Tag and CUTAC is attributed to tethering of Tn5 to specific chromatin epitopes, limiting background from untethered Tn5. In contrast, ATAC-seq data from multiple laboratories shows wide variability in quality, attributed to difficulty avoiding background tagmentation by excess free Tn5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are supported by the mechanistic rationale (C61) and data in Figure 5B and Table 1 showing variable ATAC-seq quality (C62). The interpretation regarding excess free Tn5 (C63) is reasonable and supported by citation, though it remains an inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "81e48427-96f0-4e14-9905-0c52e3e5bb53",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Excluding larger fragments (>120 bp) from CUTAC data results in better resolution, more peaks, and higher FRiP values, with substantial improvement from polar compounds. This effect is not seen for ATAC-seq, indicating that tethering to H3K4me2 is critical for maximum sensitivity and resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 are supported by data in Figure 5C and supplementary figures showing improved metrics with fragment size filtering for CUTAC but not ATAC-seq. The conclusion about the importance of tethering (C67) is a reasonable inference from the comparative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "3e53971c-99c9-42bf-b636-ff842846ce0c",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CUTAC peaks are located in the NDR between flanking H3K4me2-marked chromatin and correspond closely to promoter ATAC-seq sites. Paired CUT&Tag and CUTAC samples can replace both ChIP-seq for an active promoter mark and ATAC-seq in a single experiment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 are supported by data in Figure 6A showing the spatial relationship between CUT&Tag, CUTAC, and ATAC-seq signals. The conclusion about replacing both ChIP-seq and ATAC-seq (C71) is a reasonable inference based on the demonstrated equivalence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "16a8f655-7d33-4790-8e59-e4ab4464c65c",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "About 80% of CUTAC sites show enrichment of PRO-seq signal downstream and lie upstream of paused RNAPII, confirming that the majority of CUTAC sites correspond to NDRs representing transcription-coupled regulatory elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73, C24, and C84 are supported by data in Figure 6B-C showing alignment of CUTAC sites with RNAPII and PRO-seq signals. The quantitative measurement of 80% correspondence provides strong evidence for the transcription-coupled nature of CUTAC sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "d9a8c3fa-1547-4204-a110-feba4ee40681",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CUTAC identifies transcription-coupled accessible regulatory sites and provides a physical link between transcription-coupled processes and DNA hyperaccessibility. Tn5 tethered to H3K4me2/me3 efficiently tagments accessible sites, implying that accessibility at regulatory elements is created by events immediately following transcription initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C77, C82-C83 represent the main mechanistic conclusion of the study. They are supported by the combined evidence from correspondence with PRO-seq/RNAPII data (Figure 6), equivalence with ATAC-seq (Figure 4), and the known coupling of H3K4 methylation to transcription initiation (citations). The inference about accessibility creation (C83) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "aa579c0e-3d07-49c7-8691-c8edcd27df14",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The equivalence of CUTAC and ATAC at both enhancers and promoters provides support for the hypothesis that these regulatory elements are characterized by the same regulatory architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is supported by the data showing equivalence at both element types and is consistent with cited prior hypotheses. This is a reasonable inference from the experimental results, though it remains a hypothesis requiring further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "61446eca-ddb0-4094-8a5b-248be9f9c9e9",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CUTAC can be performed in parallel with CUT&Tag using multiple aliquots from each cell population. Three protocol modifications (dilution, removal, post-wash) yield high-quality results. H3K4me2 CUTAC maps regulatory elements with sensitivity and signal-to-noise comparable to the best ATAC-seq datasets, and the combination of CUT&Tag and CUTAC provides both high data quality and precise mapping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C91 are supported by the experimental design and comparative data throughout the manuscript, particularly Figures 3-5 and Table 1. The flexibility of protocol options (C88) and the complementary nature of CUT&Tag and CUTAC (C91) are demonstrated by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "49787a57-4d03-432f-af04-d13d0a931f64",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "H3K4 methylation is produced by transcription at promoters and enhancers through COMPASS/SET1 complexes that associate with RNAPII CTD when Serine-5 is phosphorylated following transcription initiation. The enrichment of H3K4me2/me3 results from RNAPII stalling downstream of the TSS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C68, C79-C81 represent established knowledge about H3K4 methylation supported by citations to prior work. These claims provide the biological context and mechanistic rationale for the CUTAC method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    },
+    {
+      "id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4",
+      "content_id": "a2ed44a7-1fb0-42c0-b758-9342ba5d2e72",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background knowledge about chromatin accessibility mapping methods, nucleosome biology, and the relationship between DNA accessibility and gene regulation. DNA accessibility is not all-or-none (~20% median difference between accessible and non-accessible sites), and multiple dynamic processes can result in nucleosome depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C20, C74-C76 represent established knowledge and context from the literature, supported by appropriate citations. These claims provide the scientific background for understanding the significance of the CUTAC method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:55.101674Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "73eec817-fe39-428b-9b73-0395503253c7",
+      "result_id": "349ff797-7644-40c1-b190-5775cbe22a32"
+    },
+    {
+      "claim_id": "8105f2e4-cb10-473f-b1da-ad315d342452",
+      "result_id": "349ff797-7644-40c1-b190-5775cbe22a32"
+    },
+    {
+      "claim_id": "838e30af-62e3-4706-b53b-3269f907bc0b",
+      "result_id": "349ff797-7644-40c1-b190-5775cbe22a32"
+    },
+    {
+      "claim_id": "84d0c13d-b445-46b2-9e42-46ea68840e28",
+      "result_id": "349ff797-7644-40c1-b190-5775cbe22a32"
+    },
+    {
+      "claim_id": "e73502b7-95fe-443b-a3a3-71181c92f0c6",
+      "result_id": "349ff797-7644-40c1-b190-5775cbe22a32"
+    },
+    {
+      "claim_id": "850a80db-7572-4f0f-88ad-1ddda59fcab3",
+      "result_id": "349ff797-7644-40c1-b190-5775cbe22a32"
+    },
+    {
+      "claim_id": "d7396f13-85a6-4bdb-9df4-f58588894248",
+      "result_id": "349ff797-7644-40c1-b190-5775cbe22a32"
+    },
+    {
+      "claim_id": "6bd1cba9-cceb-4661-a589-6c5b89fe003c",
+      "result_id": "4877938c-4e54-4aca-8e63-c0b1238a4b39"
+    },
+    {
+      "claim_id": "bc385216-fff7-4323-ab00-818fad9ad59c",
+      "result_id": "4877938c-4e54-4aca-8e63-c0b1238a4b39"
+    },
+    {
+      "claim_id": "8a820551-3fdb-4e7a-97d8-635eb4411eae",
+      "result_id": "4877938c-4e54-4aca-8e63-c0b1238a4b39"
+    },
+    {
+      "claim_id": "898161e8-68c5-4aa3-9e99-9d187c9c1b87",
+      "result_id": "4877938c-4e54-4aca-8e63-c0b1238a4b39"
+    },
+    {
+      "claim_id": "9a1972ab-4d0a-4107-a916-15b21c199548",
+      "result_id": "4877938c-4e54-4aca-8e63-c0b1238a4b39"
+    },
+    {
+      "claim_id": "a38b7132-e93f-43ad-83b3-3ff2f39d5acd",
+      "result_id": "4877938c-4e54-4aca-8e63-c0b1238a4b39"
+    },
+    {
+      "claim_id": "77277384-5b08-44ab-bf51-ccde35dd3ead",
+      "result_id": "4877938c-4e54-4aca-8e63-c0b1238a4b39"
+    },
+    {
+      "claim_id": "ace6fb7b-ba73-41ed-aae3-3ac41a39ad9e",
+      "result_id": "4877938c-4e54-4aca-8e63-c0b1238a4b39"
+    },
+    {
+      "claim_id": "ac6a2a78-8d26-4c3d-9ece-deabee43bf84",
+      "result_id": "eb6e0743-a73f-4a1b-bf34-4dbc8285ca5e"
+    },
+    {
+      "claim_id": "e1263ec1-4634-4bba-9849-3f590cc9d8cd",
+      "result_id": "eb6e0743-a73f-4a1b-bf34-4dbc8285ca5e"
+    },
+    {
+      "claim_id": "9a697466-b1b9-4f5d-9e53-2732cb61dec7",
+      "result_id": "eb6e0743-a73f-4a1b-bf34-4dbc8285ca5e"
+    },
+    {
+      "claim_id": "10b7177f-3ded-4113-90db-83e4b25eeab1",
+      "result_id": "a0587fad-6aac-424e-90b9-e49dbbe0db20"
+    },
+    {
+      "claim_id": "472feae8-4924-4134-919f-9e305374e128",
+      "result_id": "a0587fad-6aac-424e-90b9-e49dbbe0db20"
+    },
+    {
+      "claim_id": "f77b6eb6-1984-4f13-9a26-efff824868a2",
+      "result_id": "10ae24b2-8c64-419f-82df-544d3423d1e4"
+    },
+    {
+      "claim_id": "70aa56b0-f572-4caa-bc57-50bc92f3bdb2",
+      "result_id": "10ae24b2-8c64-419f-82df-544d3423d1e4"
+    },
+    {
+      "claim_id": "d7302b39-0e41-4f4b-b440-68ef4adbe5cb",
+      "result_id": "10ae24b2-8c64-419f-82df-544d3423d1e4"
+    },
+    {
+      "claim_id": "5ff35300-f9b8-491a-bb69-9e7a907b450b",
+      "result_id": "10ae24b2-8c64-419f-82df-544d3423d1e4"
+    },
+    {
+      "claim_id": "297f3cb5-0907-4ade-bb7d-727930631331",
+      "result_id": "10ae24b2-8c64-419f-82df-544d3423d1e4"
+    },
+    {
+      "claim_id": "610dcd0a-b231-419f-af4e-f1ec3f5db7af",
+      "result_id": "10ae24b2-8c64-419f-82df-544d3423d1e4"
+    },
+    {
+      "claim_id": "42a1faf0-9545-4670-b79c-2d68dfb836e2",
+      "result_id": "10ae24b2-8c64-419f-82df-544d3423d1e4"
+    },
+    {
+      "claim_id": "e42e4beb-24c7-4611-a0a4-b54622118a4e",
+      "result_id": "919b6bcc-d7e2-4bea-a750-644d32f18c4f"
+    },
+    {
+      "claim_id": "e026cb4d-ae46-48c6-9434-dece4ac67b7a",
+      "result_id": "919b6bcc-d7e2-4bea-a750-644d32f18c4f"
+    },
+    {
+      "claim_id": "6faf5025-26a7-478c-bffc-3be6154cfa3e",
+      "result_id": "919b6bcc-d7e2-4bea-a750-644d32f18c4f"
+    },
+    {
+      "claim_id": "4d173575-b44a-4408-833a-95bb9487b7e8",
+      "result_id": "919b6bcc-d7e2-4bea-a750-644d32f18c4f"
+    },
+    {
+      "claim_id": "a79a0776-366b-4cef-884b-258a2ce2887d",
+      "result_id": "919b6bcc-d7e2-4bea-a750-644d32f18c4f"
+    },
+    {
+      "claim_id": "7b440222-f1d8-4a78-a363-f78764ae4bef",
+      "result_id": "919b6bcc-d7e2-4bea-a750-644d32f18c4f"
+    },
+    {
+      "claim_id": "c5fb5d9f-cd05-48a1-b125-ac94fa65fdfa",
+      "result_id": "36593050-7da0-4edd-b575-6f602db5b29e"
+    },
+    {
+      "claim_id": "17022bc2-f1bb-40f1-9d6f-33a4afc4c283",
+      "result_id": "8dd29b80-10a9-4d2b-9414-25ffe46f418b"
+    },
+    {
+      "claim_id": "b2e8b214-ef6c-4a4a-b587-0107bf1dc94f",
+      "result_id": "8dd29b80-10a9-4d2b-9414-25ffe46f418b"
+    },
+    {
+      "claim_id": "e2cc5519-5716-496d-9f4b-58363bd01efb",
+      "result_id": "44805d63-2607-419b-ae68-5940bb8a9d5d"
+    },
+    {
+      "claim_id": "433ca134-ed60-463e-b177-e1bf04011255",
+      "result_id": "44805d63-2607-419b-ae68-5940bb8a9d5d"
+    },
+    {
+      "claim_id": "6a29c142-c4b3-4999-9e9a-b75ce044d375",
+      "result_id": "44805d63-2607-419b-ae68-5940bb8a9d5d"
+    },
+    {
+      "claim_id": "69756d0e-d177-4451-9752-ad5aa63f69bd",
+      "result_id": "44805d63-2607-419b-ae68-5940bb8a9d5d"
+    },
+    {
+      "claim_id": "f474f19f-34ce-472a-9494-6ed9bc6e02c6",
+      "result_id": "44805d63-2607-419b-ae68-5940bb8a9d5d"
+    },
+    {
+      "claim_id": "e43726e2-32a5-4b38-a5e7-d607b10f3777",
+      "result_id": "44805d63-2607-419b-ae68-5940bb8a9d5d"
+    },
+    {
+      "claim_id": "a7f387c3-6157-499b-8c86-9a63084415ae",
+      "result_id": "ba73aca9-9e60-4075-bb97-74028b9efc69"
+    },
+    {
+      "claim_id": "4ac39abc-efad-48ce-ad4c-bcdfa30ba25e",
+      "result_id": "ba73aca9-9e60-4075-bb97-74028b9efc69"
+    },
+    {
+      "claim_id": "272cb679-402d-42d9-8d4f-0dcaf5c1b428",
+      "result_id": "ba73aca9-9e60-4075-bb97-74028b9efc69"
+    },
+    {
+      "claim_id": "5204f4c1-4417-44e0-87e3-482045d0c620",
+      "result_id": "81e48427-96f0-4e14-9905-0c52e3e5bb53"
+    },
+    {
+      "claim_id": "18d91c0f-f6ed-4345-aa00-11e7ee40c309",
+      "result_id": "81e48427-96f0-4e14-9905-0c52e3e5bb53"
+    },
+    {
+      "claim_id": "e924226a-9b1a-4084-bc74-ab703411b46a",
+      "result_id": "81e48427-96f0-4e14-9905-0c52e3e5bb53"
+    },
+    {
+      "claim_id": "07ce3f75-a0e6-4aaf-a387-bba29871c65d",
+      "result_id": "81e48427-96f0-4e14-9905-0c52e3e5bb53"
+    },
+    {
+      "claim_id": "94ce6947-665e-4b6e-9e3b-c07cff71691b",
+      "result_id": "3e53971c-99c9-42bf-b636-ff842846ce0c"
+    },
+    {
+      "claim_id": "3c6cef3a-a5d9-4981-8974-4d5d02681b2c",
+      "result_id": "3e53971c-99c9-42bf-b636-ff842846ce0c"
+    },
+    {
+      "claim_id": "f0156b54-489c-401d-bec2-5950ab0cac22",
+      "result_id": "3e53971c-99c9-42bf-b636-ff842846ce0c"
+    },
+    {
+      "claim_id": "529c3506-ff5d-4cdd-86c4-ecbca42b1275",
+      "result_id": "16a8f655-7d33-4790-8e59-e4ab4464c65c"
+    },
+    {
+      "claim_id": "c6767c57-643c-4353-bbaa-ca29d014f04b",
+      "result_id": "16a8f655-7d33-4790-8e59-e4ab4464c65c"
+    },
+    {
+      "claim_id": "c7d302f9-278e-4992-a228-287f588db344",
+      "result_id": "16a8f655-7d33-4790-8e59-e4ab4464c65c"
+    },
+    {
+      "claim_id": "56077ff2-0a63-4fda-b2ef-722b60adccb5",
+      "result_id": "16a8f655-7d33-4790-8e59-e4ab4464c65c"
+    },
+    {
+      "claim_id": "f35badd6-bcaa-4c81-803f-507c930bc1cd",
+      "result_id": "d9a8c3fa-1547-4204-a110-feba4ee40681"
+    },
+    {
+      "claim_id": "5a5c74f8-d32d-4bc8-8b74-226dbc898c01",
+      "result_id": "d9a8c3fa-1547-4204-a110-feba4ee40681"
+    },
+    {
+      "claim_id": "5363a24a-75f2-4188-8fcb-0a9d69f7b07c",
+      "result_id": "d9a8c3fa-1547-4204-a110-feba4ee40681"
+    },
+    {
+      "claim_id": "c7ab6dd4-1732-492d-9cd2-9845e4c6dc7c",
+      "result_id": "d9a8c3fa-1547-4204-a110-feba4ee40681"
+    },
+    {
+      "claim_id": "764d8621-1b03-4125-8006-3017a1ff9e32",
+      "result_id": "aa579c0e-3d07-49c7-8691-c8edcd27df14"
+    },
+    {
+      "claim_id": "8f29f6b3-dacf-44c8-a4ff-8af6c824b054",
+      "result_id": "61446eca-ddb0-4094-8a5b-248be9f9c9e9"
+    },
+    {
+      "claim_id": "10b8a0b3-8969-4d12-92bc-d928c6d41780",
+      "result_id": "61446eca-ddb0-4094-8a5b-248be9f9c9e9"
+    },
+    {
+      "claim_id": "e6cdcb8f-83b8-4bb9-a9b5-e86553932203",
+      "result_id": "61446eca-ddb0-4094-8a5b-248be9f9c9e9"
+    },
+    {
+      "claim_id": "7df57e93-2e2f-48a1-a525-db788ac6f7c4",
+      "result_id": "61446eca-ddb0-4094-8a5b-248be9f9c9e9"
+    },
+    {
+      "claim_id": "3571861a-2ea9-47bf-832c-01baa03d7841",
+      "result_id": "61446eca-ddb0-4094-8a5b-248be9f9c9e9"
+    },
+    {
+      "claim_id": "7dc7dc59-6372-44b9-9d23-db1b2b62d3bb",
+      "result_id": "49787a57-4d03-432f-af04-d13d0a931f64"
+    },
+    {
+      "claim_id": "2fa98edb-0ff3-456b-a279-fb4c3f3bb9b5",
+      "result_id": "49787a57-4d03-432f-af04-d13d0a931f64"
+    },
+    {
+      "claim_id": "ab2af984-591f-4af4-8424-c6ec13e277ba",
+      "result_id": "49787a57-4d03-432f-af04-d13d0a931f64"
+    },
+    {
+      "claim_id": "0114753c-8c93-4002-8936-0f9e1e775c9e",
+      "result_id": "49787a57-4d03-432f-af04-d13d0a931f64"
+    },
+    {
+      "claim_id": "8d8c1fc1-4c50-4401-8939-09494b229e67",
+      "result_id": "49787a57-4d03-432f-af04-d13d0a931f64"
+    },
+    {
+      "claim_id": "11336e0b-b09c-4827-9915-b9a0ac9e94c7",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "8b9bd43a-5d66-46b3-a7c0-3806325ad182",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "939cf0a0-36c7-4fcb-87c7-0751689fbe57",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "8472dab3-b1c0-4887-8024-b09260dd39fb",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "46b7a996-a8fb-4810-8404-0ec29a1952e4",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "8284105e-0e6c-434d-a11e-3316bb6cd2d8",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "cbe26a8d-298b-4d88-bb44-74117e861654",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "936dd607-e877-4b8c-a2a1-1753a893a321",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "bc205cad-5f4e-4498-bc5c-bd04b8ebe9fa",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "1f83b2c3-81bb-400e-b36e-b5fcf5b98ebf",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "b98e77d4-aca1-4785-939a-cf9180b67535",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "187aa4a8-48b0-4dbc-a5b6-a2f031f8afbf",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "cfb4c73e-31bc-4a8b-b768-67b84403d911",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "a95de004-57be-4154-8a8b-f2c8d73ac806",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "0ba10d7e-a6fc-46c5-909d-bbbf89feea39",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "24fb4bab-a2d7-4113-9902-7373917997c8",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "07ca5b16-153d-4978-a016-f462a1e64e70",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    },
+    {
+      "claim_id": "5d62655e-e7e2-4b64-a754-089643c579de",
+      "result_id": "807d1006-3900-4fc3-b7a2-c30ee675b6c4"
+    }
+  ],
+  "comparisons": []
+}

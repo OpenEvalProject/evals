@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C48",
+      "C58",
+      "C59",
+      "C64"
+    ],
+    "result": "All three modulations (A577I mutation, Aha1 cochaperone, and macromolecular crowding) shift Hsp90 toward closed conformations with similar magnitudes. The A577I mutation increased closed population from 13\u00b13.5% to 51\u00b15.5%, Aha1 shifted it from 24\u00b14.0% to 48\u00b15.0%, and crowding increased it from 11\u00b14.5% to 50\u00b110.5%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C58, C59, and C64 provide quantitative smFRET data showing similar steady-state shifts toward closed conformations across all three modulation types. The measurements include error estimates and are supported by Figure 2c, providing convergent evidence for this thermodynamic similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C72",
+      "C73",
+      "C77",
+      "C79",
+      "C108",
+      "C123",
+      "C132"
+    ],
+    "result": "Despite similar thermodynamic steady states, the three modulations produce completely different underlying kinetics. Aha1 causes opposing changes in fast rates between states 1 and 2, A577I collectively accelerates the pathway from state 0 to state 3, and crowding primarily affects rates between closed states 2 and 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C72, C73, C77, C79, C108, C123, and C132 are supported by kinetic analysis using SMACKS methodology (C66-C71) and presented in Figure 3. The distinct kinetic mechanisms underlying similar thermodynamic outcomes represent a key finding demonstrating the importance of kinetic measurements beyond equilibrium populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Free energy analysis reveals distinct mechanisms: A577I causes asymmetric destabilization of open conformations, Aha1 simultaneously destabilizes open and stabilizes closed conformations, while crowding only stabilizes closed conformations. This mechanistic information is not accessible from steady-state distributions alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by kinetic rate models converted to free energy landscapes (Figure 4). The analysis correctly notes that steady-state distributions (C65) cannot distinguish between these mechanisms, requiring full kinetic characterization. The conclusions follow logically from the rate constant measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "All three modulations increase ATPase activity but not proportionally to closed population increases. A577I causes 7-fold, Aha1 17-fold, and crowding 4-fold increases in ATPase activity, demonstrating that functional changes do not simply reflect conformational population shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by ATPase activity assays (Figure 5) showing quantitative functional measurements. The disproportionate relationship between closed population and ATPase stimulation (C88) is well-documented through comparison with conformational data (C93-C94), providing strong evidence that additional factors beyond equilibrium populations affect function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Conformational confinement accounts for 100% of ATPase stimulation by crowding, 60% by A577I mutation, and only 10% by Aha1, with the contribution largest for non-specific interactions and smallest for specific protein-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C103 present quantitative estimates of conformational confinement contributions, but the calculation methodology is not fully detailed in the provided text. While the qualitative trend (crowding > mutation > Aha1) is consistent with the data, the precise percentages require assumptions about how to partition conformational versus other effects that are not explicitly validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C112",
+      "C115",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The study introduces 'conformational confinement' as a mechanistic concept where reducing non-productive structural flexibility stimulates ATPase function even by non-specific means. This occurs because constraining degrees of freedom increases the probability of catalytically competent conformations through combinatorial effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C112, C115, C134-C136 present the conformational confinement concept supported by the crowding experiments (C87, C90, C100) showing purely non-specific effects can stimulate function. The mechanistic model (Figure 6, C113-C115) provides a logical framework. However, C136's speculation about 'wide-spread implications' extends beyond the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The A577I mutation shows additive effects in heterodimers and homodimers, with progressive shifts toward closed conformations. The mutation also causes faster transitions at the resolution limit and slight shifts in the low-FRET peak, interpreted as global stiffening of Hsp90's structural core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by smFRET data in Figure 2\u2014figure supplement 3 showing dose-dependent effects of the mutation. The interpretation of stiffening (C56) is reasonable given the observed kinetic changes (C55) and peak shifts (C54), though C54 acknowledges this is speculative ('could be explained').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Crowding effects are concentration-dependent and specific to macromolecular crowding agents. Polymeric Ficoll400 slows fast fluctuations and creates well-separated populations, while monomeric sucrose has negligible effects, proving macromolecular crowding rather than biochemical glucose effects cause the population shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by concentration-dependent data (Figure 2\u2014figure supplement 4) and the critical control comparing Ficoll400 to monomeric sucrose (C62). This control experiment effectively rules out biochemical explanations (C63), strengthening the conclusion that physical crowding is responsible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Hsp90's conformational dynamics are best described by four-state kinetic models with two open and two closed states. These states represent conformational ensembles defined by FRET efficiency and kinetics rather than discrete conformations, with the closed states likely differing in local conformational elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 describe the kinetic modeling approach supported by previous work (C66) and statistical testing. The four-state requirement (C67) is justified by kinetic heterogeneity. The interpretation of states as ensembles (C71) is appropriate for dynamic systems. Claims C68-C70 appropriately cite supporting literature while acknowledging speculative elements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C105"
+    ],
+    "result": "Aha1 induces the smallest increase in closed population but the largest ATPase stimulation, with specific contacts between Aha1 and Hsp90 responsible for 88% of the ATPase stimulation, highlighting that specific rearrangements of the active site dominate Aha1's stimulating action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 and C105 are supported by comparing Aha1's effects (C86, C94) with crowding (C87, C93). The 88% calculation (C96) follows from the disproportionate functional effect relative to conformational change. This demonstrates the importance of specific interactions beyond conformational confinement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C116",
+      "C117"
+    ],
+    "result": "Yeast Hsp90 is characterized as a very flexible dimer requiring external assistance to control non-productive flexibility. While flexibility facilitates diverse interactions, it has substantial off-state character for ATPase function, which requires concerted action of multiple distant structural elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 and C116-C117 synthesize the study's findings into a coherent model of Hsp90 function. The characterization is supported by the demonstrated effects of confinement on activity (C84-C87, C134) and is consistent with structural knowledge (C110). The interpretation logically connects structure, dynamics, and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Non-specific macromolecular crowding has strong effects on thermodynamics, kinetics, and function, suggesting caution when relating in vitro findings to in vivo function. Certain mutations showing little ATPase activity in vitro may be rescued by conformational confinement in crowded cellular environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 are well-supported by the crowding data (C59, C87, C90). The recommendation for caution (C128) is justified. Claim C129 is appropriately labeled as speculation but is a reasonable extrapolation. Claim C130's suggestion to include crowding in vitro is a practical recommendation supported by the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Protein function is regulated through multiple mechanisms including PTMs, protein-protein interactions, and global environmental factors (crowding, phase separation, temperature, redox conditions, osmolarity), which act at different levels of localization and all influence 3D conformation, conformational dynamics, and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C12-C20 establish background knowledge supported by appropriate citations. These claims provide context for the study but represent established knowledge rather than new findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Hsp90 is an important metabolic hub involved in maturation of 20% of the yeast proteome, is a drug target in cancer research, exists as a homodimer with three domains per monomer, and alternates between open and closed conformations even without ATP, with conformational changes little affected by drugs or nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C35 provide background on Hsp90 supported by appropriate citations to established literature. These claims establish the biological importance and structural/dynamic properties of the system under study. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The A577I mutation is located in the C-terminal hinge region, equivalent to the S-nitrosylation site C598 in human Hsp90. While nitrosylation has inhibitory effects, the A577I mutation causes nearly 4-fold ATPase amplification, indicating long-range communication between C-terminal and N-terminal domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 describe the mutation studied, supported by citations (C37, C39). The inference of long-range communication (C40) is reasonable given the spatial separation of mutation site and ATP binding site. This establishes the rationale for studying this particular mutation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Aha1 is a well-known stimulator of Hsp90's ATPase activity that makes contacts to the middle and N-terminal domains, rearranging the ATP lid and catalytic loop favorably for ATP hydrolysis, with its affinity for Hsp90 enhanced by PTMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 provide background on Aha1 supported by appropriate citations (C42, C43). This establishes the known mechanism of Aha1 action and provides context for the experimental results comparing Aha1 with other modulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The experimental system uses yeast Hsp90 dimers with a C-terminal coiled-coil motif to prevent dissociation, with specific cysteine positions for fluorophore labeling. Under the experimental conditions used, Hsp90 exists predominantly in complex with Aha1 based on binding affinity data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 describe methodological details supported by citations (C137, C138, C139). The inference that Hsp90 exists predominantly in complex with Aha1 (C140) is reasonable given the reported dissociation constant and experimental concentration, though this is an inference rather than direct measurement.",
+    "result_type": "MINOR"
+  }
+]

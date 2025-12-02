@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C49",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "A CRISPR-based dual reporter system was developed for simultaneous quantification of mRNA and protein in single, live yeast cells. The system uses a GFP tag for protein quantification and a gRNA-driven CRISPR activation system for mRNA quantification, with both reporters validated through multiple experimental approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C49, C55-C67 collectively describe the development and validation of the dual reporter system. The system design is clearly documented (C57-C62), and multiple lines of experimental validation are provided including plate reader measurements (C64), control experiments (C65), and qPCR confirmation (C66-C67). The evidence demonstrates successful implementation of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The mCherry reporter provides quantitative readout of mRNA production across a range of expression levels, with linearity up to approximately half the abundance of ACT1 mRNA, covering 95% of S. cerevisiae genes. The system can simultaneously measure mRNA and protein for more than half of yeast genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C81 demonstrate the quantitative properties of the system through systematic testing with the Z3EV estradiol-inducible system. The data show monotonic increase in fluorescence (C69), validation by qPCR (C73), and characterization of the linear range (C72, C74, C77). The comparison to prior RNA-seq data (C78) provides context for applicability, though the authors acknowledge limitations in the comparison (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C53",
+      "C54",
+      "C108",
+      "C129",
+      "C130",
+      "C132",
+      "C134",
+      "C135",
+      "C190"
+    ],
+    "result": "86 trans-acting loci were mapped affecting ten genes, with less than 20% showing concordant effects on mRNA and protein. The majority (52 of 86) were protein-specific QTLs, demonstrating considerable differences in the genetic basis of mRNA versus protein abundance variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C53-C54, C108, C129-C135, and C190 present the core finding of the study. The QTL mapping is well-powered with 2-6 biological replicates per gene (C104), uses appropriate statistical thresholds (C106), and shows good reproducibility (C107). The classification of QTLs into concordant, protein-specific, mRNA-specific, and discordant categories is clearly documented (C129-C135), with the main finding that 84% of loci did not have concordant effects (C190).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Effect size analysis revealed that concordant QTL pairs showed strong correlation (r=0.88) between mRNA and protein effects, while protein-specific and mRNA-specific QTLs showed no correlation. Only 64% of QTLs affected mRNA and protein in the same direction, significantly more than chance but leaving 36% with discordant effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C153 provide quantitative analysis of effect sizes and directions that bypasses significance threshold issues. The statistical tests are appropriate (Pearson correlations with p-values, binomial tests), and the results consistently support the existence of QTLs with specific effects on either mRNA or protein. The analysis addresses potential limitations of the significance-based classification (C142-C143).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C169",
+      "C170",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "A premature stop variant (Q578*) in the YAK1 kinase gene was identified through systematic fine-mapping as a causal variant affecting protein abundance of multiple genes, particularly GPD1, without affecting mRNA levels. The variant arose recently in the BY4741 strain used to construct the GFP and TAP-tagged collections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C160-C167, C169-C170, C172-C174 describe the identification and validation of the YAK1 variant. The fine-mapping strategy using CRISPR-swap is systematic (C162), the causal variant is precisely identified (C163), and multiple lines of validation are provided including allele swap experiments (C170), deletion experiments (C173), and qPCR (C174). The distribution of the variant across strain collections is well-documented (C164-C167).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C209",
+      "C210"
+    ],
+    "result": "Genome-wide analysis of the YAK1Q578* variant revealed complex effects spanning both mRNA and protein-specific processes. Among 5755 mRNA transcripts, 572 were differentially expressed, and among 2590 proteins, 164 were differentially abundant, with many genes affected only at the mRNA or only at the protein level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C182, C209-C210 present genome-wide characterization using RNA-seq and mass spectrometry. The experimental design compares isogenic strains differing only at YAK1 (C175), appropriate statistical corrections are applied (Benjamini-Hochberg, C176-C177), and the classification into mRNA-only, protein-only, and both categories is clearly documented (C178). Gene ontology enrichment (C179-C180) provides biological validation consistent with known YAK1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "A high-powered QTL mapping strategy was implemented using bulk segregant analysis with FACS sorting of millions of cells from crosses between BY4741 and RM11-1a strains. Ten genes were selected based on prior QTL discrepancies, and 2-6 biological replicates were performed with appropriate statistical thresholds (LOD=4.5, FDR=7%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C107 describe the experimental design and QTL mapping methodology. The gene selection criteria are clearly stated (C84-C87), the genetic cross is well-characterized (C88-C92), the FACS sorting strategy is appropriate (C99), and the statistical framework is rigorous with replicate-based FDR estimation (C105-C106). The reproducibility between replicates is good (76-78%, C107).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Comparison with prior studies showed good agreement for protein-QTLs (median 7 vs 8 per gene, r=0.73) but fewer mRNA-QTLs were detected (median 3 vs 8 per gene), though effect sizes were significantly correlated (r=0.44). Known loci such as HAP1 were successfully detected, validating the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C128 provide validation through comparison with prior work. The agreement for protein-QTLs is strong (C114-C115), and the authors appropriately discuss potential reasons for differences in mRNA-QTL detection (C117-C118). The detection of known variants like HAP1 (C121-C122) provides positive controls. The authors acknowledge that some differences may reflect incomplete power or experimental conditions (C125-C126).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Single-cell analysis revealed positive correlations between mCherry and GFP fluorescence for all tested genes after cell size correction, with correlation strength varying by gene. Genes with many prior QTL discrepancies showed lower mRNA-protein correlations than genes with concordant prior QTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 describe single-cell correlation analysis. The analysis appropriately corrects for cell size (C94), and the observation that correlation strength varies by gene and relates to prior QTL discrepancies (C96) provides internal validation of the approach. However, the correlations are modest even after size correction, suggesting substantial biological or technical variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "Genes selected for high prior QTL discrepancy showed 89% non-shared QTLs between mRNA and protein, while genes selected for high agreement showed 58% non-shared QTLs. Half of mRNA-QTLs had concordant protein effects, but most protein-QTLs (70%) had no mRNA effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C197 provide gene-by-gene analysis showing that the degree of mRNA-protein QTL concordance varies by gene and relates to prior observations. The finding that 70% of protein-QTLs are protein-specific (C198) is a key result. The observation that genes with strong-effect loci show more concordance (C194-C195) is interesting but presented as speculation rather than tested hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Genes differed widely in the complexity and specificity of trans-acting influences. Some genes (BMH2, GPD1, UGP1, CTS1) showed no concordant QTLs, while CYC1 showed mostly concordant effects. Even shared loci like HAP1 showed variable specificity across different genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141, C154-C157 describe gene-specific patterns in QTL architecture. The examples are well-documented (C140-C141, C156), and the observation that even shared loci show variable effects across genes (C155-C156) demonstrates the complexity of trans-regulation. This supports the overall conclusion of complex, gene-specific regulatory architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C184",
+      "C185"
+    ],
+    "result": "The YAK1Q578* mutation and YAK1 deletion conferred higher growth rates under osmotic stress, consistent with Yak1's role in stress-induced cell cycle arrest. Gpd1-GFP abundance increased with osmotic stress but remained consistently lower in yak1\u0394 strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C185 provide phenotypic validation of the YAK1 variant effects. The growth advantage under stress (C184) is consistent with known YAK1 function, and the consistent reduction in Gpd1-GFP across stress conditions (C185) demonstrates robustness of the protein-specific effect. This provides biological context for the variant's potential adaptive significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Prior work comparing eQTLs and pQTLs had limitations including small sample sizes (dozens to few hundred individuals), comparison across different studies and laboratories, and potential environmental confounding. No prior study measured mRNA and protein with high statistical power in the same samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C34-C48 provide critical assessment of prior work that motivates the current study. The limitations are well-documented through citations (C34-C35, C39, C41-C44, C47), and the identification of the gap in the literature (C45) is accurate. This establishes the rationale for developing the new approach, though the characterization of prior work relies on the authors' interpretation of the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C82",
+      "C83",
+      "C188",
+      "C189",
+      "C235"
+    ],
+    "result": "The dual reporter approach was explicitly designed to equalize environmental confounders and technical biases by measuring mRNA and protein in the same live cells under identical conditions. The FACS-compatible assay enables high-powered bulk segregant analysis with millions of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C82-C83, C188-C189, C235 describe the design rationale and advantages of the system. The reasoning is sound that measuring both outputs in the same cells eliminates environmental confounding (C50, C188), and the compatibility with FACS-based bulk segregant analysis (C51-C52) provides the statistical power lacking in prior work. The design is well-suited to address the identified limitations of prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C133",
+      "C136",
+      "C137",
+      "C138",
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "Potential mechanisms for QTL specificity include: concordant QTLs affecting mRNA production that propagates to protein; protein-specific QTLs affecting translation or degradation; mRNA-specific or discordant QTLs arising from separate regulatory pathways or buffering mechanisms. RPS10A, encoding a ribosomal protein, showed the most mRNA-specific QTLs, possibly due to protein complex buffering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131, C133, C136-C138, C204-C207 propose mechanistic explanations for the observed QTL patterns. While the proposed mechanisms are biologically plausible and supported by citations to prior work on buffering (C138, C205), these remain speculative interpretations (evidence_type includes SPECULATION for most claims). The RPS10A example (C206-C207) is suggestive but not definitively tested. Additional experiments would be needed to validate these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C117",
+      "C118"
+    ],
+    "result": "Potential limitations of the system include lower signal intensity and indirect nature of the mCherry reporter compared to GFP, which could reduce detection power for mRNA-QTLs. However, analyses of effect magnitudes and directions that don't require significance thresholds also support protein-specific QTLs. The system measures mRNA production rather than steady-state mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C200, C117-C118 provide honest assessment of potential limitations. The authors acknowledge that technical differences between the reporters could affect detection power (C199) but show that alternative analyses support the main conclusions (C200). The distinction between measuring mRNA production versus steady-state levels (C118) is important for interpretation and may explain some differences with prior RNA-seq studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "Seven loci showed discordant effects on mRNA and protein. At the HAP1 locus, the BY allele increased Gpd1 protein but decreased GPD1 mRNA, consistent with prior cross-study comparisons. The pleiotropic effects of HAP1 support the hypothesis of two separate trans-acting mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C201-C203 describe discordant QTLs with the HAP1 locus as a specific example. The observation is well-documented (C201-C202) and consistent with prior work (C202). The interpretation that HAP1 affects Gpd1 through two separate mechanisms (C203) is reasonable given the pleiotropic effects, though the specific mechanisms are not identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C208",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215"
+    ],
+    "result": "The YAK1Q578* variant provides an example of complex trans-acting effects spanning mRNA and protein-specific processes. The variant likely arose recently and may have drifted to fixation as a deleterious variant, though faster growth under osmotic stress could suggest adaptive fixation. The diverse mechanistic consequences may be representative of common trans-acting variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C208, C211-C215 provide interpretation and speculation about the YAK1 variant. While the complex effects are well-documented (C208-C210), the evolutionary interpretation (C212-C214) and generalizability to other variants (C215) are speculative. The population genetic reasoning is sound (C213), but distinguishing between drift and selection (C214) would require additional data. The suggestion that this large-effect variant is representative of smaller-effect variants (C215) is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225"
+    ],
+    "result": "The CRISPR-based reporter offers advantages over standard methods and emerging single-cell approaches. It enables quantification of mRNA production in millions of live cells by flow cytometry, with throughput orders of magnitude higher than single-cell RNA-seq or in situ hybridization. The system measures mRNA production rather than steady-state levels due to rapid gRNA release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C217-C225 compare the new system to alternative approaches. The throughput advantage over single-cell methods is clear (C219-C221), and the ability to work with live cells enables bulk segregant approaches (C220). The characterization of what the system measures (mRNA production vs. steady-state, C223-C224) is supported by kinetic considerations and citations. The comparison is fair and acknowledges both advantages and differences from other methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234"
+    ],
+    "result": "Future improvements could include faster-maturing fluorescent proteins for better temporal resolution, brighter proteins or multiple reporter copies for increased sensitivity, and addressing the saturation at high expression levels. The system's removal of native 3' UTRs is a limitation but may actually reduce rather than inflate mRNA-protein differences. CRISPR activation in other organisms suggests the approach could be adapted to other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C226-C234 discuss potential improvements and limitations. The suggested improvements (C226-C227) are reasonable but speculative. The characterization of the saturation limitation (C228) is based on data (C72, C74), and the estimate that most genes can still be quantified (C229) is supported. The discussion of 3' UTR effects (C230-C233) involves inference about what effects might be missed versus inflated. The potential for adaptation to other species (C234) is speculative but supported by citations showing CRISPR activation works in multiple organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C236",
+      "C237",
+      "C238"
+    ],
+    "result": "The main conclusion is that fewer than 20% of detected trans-acting loci had concordant effects on mRNA and protein, providing strong support for discordant trans effects. This suggests protein abundance is under more complex genetic control than mRNA abundance. Whether cis effects show similar specificity remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C236-C238 present the main conclusions. The finding of <20% concordant trans-QTLs (C236) is well-supported by the data presented throughout the paper. The interpretation that protein abundance is under more complex genetic control (C238) follows logically from the predominance of protein-specific QTLs. The acknowledgment that cis effects remain to be studied (C237) appropriately identifies the scope of the current work.",
+    "result_type": "MAJOR"
+  }
+]

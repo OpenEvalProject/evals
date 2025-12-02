@@ -1,0 +1,1469 @@
+{
+  "submission": {
+    "id": "f31f4014-501c-4724-b2f8-b73006f54fcb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:38:25.426953Z",
+    "updated_at": "2025-12-02T12:38:25.426953Z"
+  },
+  "content": [
+    {
+      "id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "submission_id": "f31f4014-501c-4724-b2f8-b73006f54fcb",
+      "content_type": "manuscript",
+      "content_text": "# Ten common statistical mistakes to watch out for when writing or reviewing a manuscript\n\n## Authors\n\n- Tamar R Makin<sup>1</sup> ([ORCID: 0000-0002-5816-8979](https://orcid.org/0000-0002-5816-8979)) \u2020\n- Jean-Jacques Orban de Xivry<sup>2</sup> ([ORCID: 0000-0002-4603-7939](https://orcid.org/0000-0002-4603-7939))\n\n### Affiliations\n\n1. Institute of Cognitive Neuroscience University College London London United Kingdom\n2. Movement Control and Neuroplasticity Research Group, Department of Movement Sciences KU Leuven Leuven Belgium\n3. Leuven Brain Institute KU Leuven Leuven Belgium\n\n\u2020 Corresponding author\n\n## Abstract\n\nInspired by broader efforts to make the conclusions of scientific research more robust, we have compiled a list of some of the most common statistical mistakes that appear in the scientific literature. The mistakes have their origins in ineffective experimental designs, inappropriate analyses and/or flawed reasoning. We provide advice on how authors, reviewers and readers can identify and resolve these mistakes and, we hope, avoid them in the future.\n\n## Absence of an adequate control condition/group\n\n### The problem\n\nMeasuring an outcome at multiple time points is a pervasive method in science in order to assess the effect of an intervention. For instance, when examining the effect of training, it is common to probe changes in behaviour or a physiological measure. Yet, changes in outcome measures can arise due to other elements of the study that do not directly relate to the manipulation (e.g. training) per se. Repeating the same task in the absence of an intervention might induce a change in the outcomes between pre- and post-intervention measurements, e.g. due to the participant or the experimenter merely becoming accustomed to the experimental setting, or due to other changes relating to the passage of time. Therefore, for any studies looking at the effect of an experimental manipulation on a variable over time, it is crucial to compare the effect of this experimental manipulation with the effect of a control manipulation.\n\nSometimes a control group or condition is included, but is designed or implemented inadequately, by not including key factors that could impact the tracked variable. For example, the control group often does not receive a 'sham' intervention, or the experimenters are not blinded to the expected outcome of the intervention, contributing to inflated effect sizes (Holman et al., 2015). Other common biases result from running a small control group that is insufficiently powered to detect the tracked change (see below), or a control group with a different baseline measure, potentially driving spurious interactions (Van Breukelen, 2006). It is also important that the control and experimental groups are sampled at the same time and with randomised allocation, to minimise any biases. Ideally, the controlled manipulation should be otherwise identical to the experimental manipulation in terms of design and statistical power and only differ in the specific stimulus dimension or variable under manipulation. In doing so, researchers will ensure that the effect of the manipulation on the tracked variable is larger than variability over time that is not directly driven by the desired manipulation. Therefore, reviewers should always request for controls in situations where a variable is compared over time.\n\n### How to detect it\n\nConclusions are drawn on the basis of data of a single group, with no adequate control conditions. The control condition/group does not account for key features of the task that are inherent to the manipulation.\n\n### Solutions for researchers\n\nIf the experimental design does not allow for separating the effect of time from the effect of the intervention, then conclusions regarding the impact of the intervention should be presented as tentative.\n\n#### Further reading\n\n(Knapp, 2016).\n\n## Interpreting comparisons between two effects without directly comparing them\n\n### The problem\n\nResearchers often base their conclusions regarding the impact of an intervention (such as a pre- vs. post-intervention difference or a correlation between two variables) by noting that the intervention yields a significant effect in the experimental condition or group, whereas the corresponding effect in the control condition or group is not significant. Based on these two separate test outcomes, researchers will sometimes suggest that the effect in the experimental condition or group is larger than the effect in the control condition. This type of erroneous inference is very common but incorrect. For instance, as illustrated in Figure 1A, two variables X and Y, each measured in two different groups of 20 participants, could have different outcomes in terms of statistical significance: a correlation co-efficient for the correlation between the two variables in group A might be statistically significant (ie, have p\u22640.05), whereas a similar correlation co-efficient might not be statistically significant for group B. This could happen even if the relationship between the two variables is virtually identical for the two groups (Figure 1A), so one should not infer that one correlation is greater than the other.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48175/elife-48175-fig1-v1.jpg)\n\n**Figure 1.:** (A) Two variables, X and Y, were measured for two groups A and B. It looks clear that the correlation between these two variables does not differ across these two groups. However, if one compares both correlation coefficients to zero by calculating the significance of the Pearson's correlation coefficient r, it is possible to find that one group (group A; black circles; n\u00a0=\u00a020) has a statistically significant correlation (based on a threshold of p\u22640.05), whereas the other group (group B, red circles; n\u00a0=\u00a020) does not. However, this does not indicate that the correlation between the variables X and Y differs between these groups. Monte Carlo simulations can be used to compare the correlations in the two groups (Wilcox and Tian, 2008). (B) In another experimental context, one can look at how a specific outcome measure (e.g. the difference pre- and post-training) differs between two groups. The means for groups C and D are the same, but the variance for group D is higher.\u00a0If one uses a one-sample t-test to compare this outcome measure to zero for each group separately, it is possible to find that, this variable is significantly different from zero for one group (group C; left; n\u00a0=\u00a020), but not for the other group (group D, right; n\u00a0=\u00a020). However, this does not inform us whether this outcome measure is different between the two groups. Instead, one should directly compare the two groups by using an unpaired t-test (top): this shows that this outcome measure is not different for the two groups. Code (including the simulated data) available at github.com/jjodx/InferentialMistakes\u00a0(Makin and Orban de Xivry, 2019;\u00a0https://github.com/elifesciences-publications/InferentialMistakes).\n\nA similar issue occurs when estimating the effect of an intervention measured in two different groups: the intervention could yield a significant effect in one group but not in the other (Figure 1B). Again, however, this does not mean that the effect of the intervention is different between the two groups; indeed in this case, the two groups do not significantly differ. One can only conclude that the effect of an intervention is different from the effect of a control intervention through a direct statistical comparison between the two effects. Therefore, rather than running two separate tests, it is essential to use one statistical test to compare the two effects.\n\n### How to detect it\n\nThis problem arises when a conclusion is drawn regarding a difference between two effects without statistically comparing them. This problem can occur in any situation where researchers make an inference without performing the necessary statistical analysis.\n\n### Solutions for researchers\n\nResearchers should compare groups directly when they want to contrast them (and reviewers should point authors to Nieuwenhuis et al., 2011 for a clear explanation of the problem and its impact). The correlations in the two groups can be compared with Monte Carlo simulations (Wilcox and Tian, 2008). For group comparisons, ANOVA might be suitable. Although non-parametric statistics offers some tools (e.g., Leys and Schumann, 2010), these require more thought and customisation.\n\n#### Further reading\n\n(Nieuwenhuis et al., 2011).\n\n## Inflating the units of analysis\n\n### The problem\n\nThe experimental unit is the smallest observation that can be randomly and independently assigned, i.e. the number of independent values that are free to vary (Parsons et al., 2018). In classical statistics, this unit will reflect the degrees of freedom (df): For example, when inferring group results, the experimental unit is the number of subjects tested, rather than the number of observations made within each subject. But unfortunately, researchers tend to mix up these measures, resulting in both conceptual and practical issues. Conceptually, without clear identification of the appropriate unit to assess variation that sub-serves the phenomenon, the statistical inference is flawed. Practically, this results in a spuriously higher number of experimental units (e.g., the number of observations across all subjects is usually greater than the number of subjects). When df increases, the critical statistical threshold against which statistical significance is judged decreases, making it easier to observe a significant result if there is a genuine effect (increase of statistical power). This is because there is greater confidence in the outcome of the test.\n\nTo illustrate this issue, let us consider a simple pre-post longitudinal design for an intervention study in 10 participants where the researchers are interested in evaluating whether there is a correlation between their main measure and a clinical condition using a simple regression analysis. Their unit of analysis should be the number of data points (1 per participant, 10 in total), resulting in 8 df. For df\u00a0=\u00a08, the critical R value (with an alpha level of. 05) for achieving significance is 0.63. That is, any correlation above the critical value will be significant (p\u22640.05). If the researchers combine the pre and post measures across participants, they will end up with df\u00a0=\u00a018, the critical R value is now 0.44, rendering it easier to observe a statistically significant effect. This is inappropriate because they are mixing within- and between- analysis units, resulting in dependencies between their measures \u2013 the pre-score of a given subject cannot be varied without impacting their post-score, meaning they only truly have 8 independent df. This often results in interpretation of the results as significant when in fact the evidence is insufficient to reject the possibility that there is no effect.\n\n### How detect it\n\nThe reviewer should consider the appropriate unit of analysis. If a study aims to understand group effects, then the unit of analysis should reflect the variance across subjects, not within subjects.\n\n### Solutions for researchers\n\nPerhaps the best available solution to this issue is using a mixed-effects linear model, where researchers can define the variability within subjects as a fixed effect, and the between-subject variability as a random effect. This increasingly popular approach (Boisgontier and Cheval, 2016) allows one to put all the data in the model without violating the assumption of independence. However, it can be easily misused (Matuschek et al., 2017) and requires advanced statistical understanding, and as such should be applied and interpreted with some caution. For a simple regression analysis, the researchers have several available solutions to this issue, the easiest of which is to calculate the correlation for each observation separately (e.g. pre, post) and interpret the R values based on the existing df. The researchers can also average the values across observations, or calculate the correlation for pre/post separately and then average the resulting R values (after applying normalisation of the R distribution, e.g. r-to-Z transformation), and interpret them accordingly.\n\n#### Further reading\n\n(Pandey and Bright, 2008; Parsons et al., 2018).\n\n## Spurious correlations\n\n### The problem\n\nCorrelations are an important tool in science in order to assess the magnitude of an association between two variables. Yet, the use of parametric correlations, such as Pearson\u2019s R relies on a set of assumptions, which are important to consider as violation of these assumptions may give rise to spurious correlations. Spurious correlations most commonly arise if one or several outliers are present for one of the two variables. As illustrated in the top row of Figure 2, a single value away from the rest of the distribution can inflate the correlation coefficient. Spurious correlations can also arise from clusters, e.g. if the data from two groups are pooled together when the two groups differ in those two variables (as illustrated in the bottom row of Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48175/elife-48175-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013C) We simulated two different uncorrelated variables with 19 samples (black circles) and added an additional data point (solid red circle) whose distance from the main population was systematically varied until it became a formal outlier (panel C). Note that the value of Pearson\u2019s correlation coefficient R artificially increases as the distance between the main population and the red data point is increased, demonstrating that a single data point can lead to spurious Pearson\u2019s correlations. (D\u2013F) We simulated two different uncorrelated variables with 20 sample that were arbitrarily divided into two subgroups (red vs. black, N = 10 each). We systematically varied the distance between the two subgroups from panel D to panel F. Again, the value of R artificially increases as the distance between the subgroups is increased. This shows that correlating variables without taking the existence of subgroups into account can yield spurious correlations. Confidence intervals (CI) are shown in grey, and were obtained via a bootstrap procedure (with the grey region representing the region between the 2.5 and 97.5 percentiles of the obtained distribution of correlation values). Code (including the simulated data) available at github.com/jjodx/InferentialMistakes.\n\nIt is important to note that an outlier might very well provide a genuine observation which obeys the law of the phenomenon that you are trying to discover, in other words \u2013 the observation in itself is not necessarily spurious. Therefore, removal of \u2018extreme\u2019 data points should also be considered with great caution. But if this true observation is at risk of violating the assumptions of your statistical test, it becomes spurious de facto, and will therefore require a different statistical tool.\n\n### How to detect it\n\nReviewers should pay particular attention to reported correlations that are not accompanied by a scatterplot and consider if sufficient justification has been provided when data points have been discarded. In addition, reviewers need to make sure that between-group or between-condition differences are taken into account if data are pooled together (see 'Inflating the units of analysis' above).\n\n### Solutions for researchers\n\nRobust correlation methods (e.g. bootstrapping, data winsorizing, skipped correlations) should be preferred in most circumstances because they are less sensitive to outliers (Salibian-Barrera and Zamar, 2002). This is because these tests take into consideration the structure of the data (Wilcox, 2016). When using parametric statistics, data should be screened for violation of the key assumptions, such as independence of data points, as well as the presence of outliers.\n\n#### Further reading\n\n(Rousselet and Pernet, 2012).\n\n## Use of small samples\n\n### The problem\n\nWhen a sample size is small, one can only detect large effects, thereby leaving high uncertainty around the estimate of the true effect size and leading to an overestimation of the actual effect size (Button et al., 2013). In frequentist statistics in which a significance threshold of alpha=0.05 is used, 5% of all statistical tests will yield a significant result in the absence of an actual effect (false positives; Type I error). Yet, researchers are more likely to consider a correlation with a high coefficient (e.g. R>0.5) as robust than a modest correlation (e.g. R=0.2). With small sample sizes, the effect size of these false positives is large, giving rise to the significance fallacy: \u201cIf the effect size is that big with a small sample, it can only be true.\u201d (This incorrect inference is noted in Button et al., 2013). Critically, the larger correlation is not a result of there being a stronger relationship between the two variables, it is simply because the overestimation of the actual correlation coefficient (here, R\u00a0=\u00a00) will always be larger with a small sample size. For instance, when sampling two uncorrelated variables with N\u00a0=\u00a015, simulated false-positive correlations roughly range between |0.5-0.75| whereas when sampling the same uncorrelated variables with N\u00a0=\u00a0100 yields false-positive correlations in the range |0.2-0.25| (Code available at github.com/jjodx/InferentialMistakes).\n\nDesigns with a small sample size are also more susceptible to missing an effect that exists in the data (Type II error). For a given effect size (e.g., the difference between two groups), the chances are greater for detecting the effect with a larger sample size (this likelihood is referred to as statistical power). Hence, with large samples, you reduced the likelihood of not detecting an effect when one is actually present.\n\nAnother problem related to small sample size is that the distribution of the sample is more likely to deviate from normality, and the limited sample size makes it often impossible to rigorously test the assumption of normality (Ghasemi and Zahediasl, 2012). In regression analysis, deviations from the distribution might produce extreme outliers, resulting in spurious significant correlations (see 'Spurious\u00a0correlations' above).\n\n### How to detect it\n\nReviewers should critically examine the sample size used in a paper and, judge whether the sample size is sufficient. Extraordinary claims based on a limited number of participants should be flagged in particular.\n\n### Solutions for researchers\n\nA single effect size or a single p-value from a small sample is of limited value and reviewers can refer the researchers to Button et al. (2013) to make this point. The researchers should either present evidence that they have been sufficiently powered to detect the effect to begin with, such as through the presentation of an a priori statistical power analysis, or perform a replication of their study. The challenge with power calculations is that these should be based on an a priori calculation of effect size from an independent dataset, and these are difficult to assess in a review. Bayesian statistics offer opportunities to determine the power for identifying an effect post hoc (Kruschke, 2011). In situations where sample size may be inherently limited (e.g. research with rare clinical populations or non-human primates), efforts should be made to provide replications (both within and between cases) and to include sufficient controls (e.g. to establish confidence intervals). Some statistical solutions are offered for assessing case studies (e.g., the Crawford t-test; Corballis, 2009).\n\n#### Further reading\n\n(Button et al., 2013).\n\n## Circular analysis\n\n### The problem\n\nCircular analysis is any form of analysis that retrospectively selects features of the data to characterise the dependent variables, resulting in a distortion of the resulting statistical test (Kriegeskorte et al., 2010). Circular analysis can take many shapes and forms, but it inherently relates to recycling the same data to first characterise the test variables and then to make statistical inferences from them, and is thus often referred to as \u2018double dipping\u2019 (Kriegeskorte et al., 2009). Most commonly, circular analysis is used to divide (e.g. sub-grouping, binning) or reduce (e.g. defining a region of interest, removing \u2018outliers\u2019) the complete dataset using a selection criterion that is retrospective and inherently relevant to the statistical outcome.\n\nFor example, let\u2019s consider a study of a neuronal population firing rate in response to a given manipulation. When comparing the population as a whole, no significant differences are found between pre and post manipulation. However, the researchers observe that some of the neurons respond to the manipulation by increasing their firing rate, whereas others decrease in response to the manipulation. They therefore split the population to sub-groups, by binning the data based on the activity levels observed at baseline. This leads to a significant interaction effect \u2013 those neurons that initially produced low responses show response increases, whereas the neurons that initially showed relatively increased activity exhibit reduced activity following the manipulation. However, this significant interaction is a result of the distorting selection criterion and a combination of statistical artefacts (regression to the mean, floor/ceiling effects), and could therefore be observed in pure noise (Holmes, 2009).\n\nAnother common form of circular analysis is when dependencies are created between the dependent and independent variables. Continuing with the example from above, researchers might report a correlation between the cell response post-manipulation and between the difference in cell response across the pre- and post-manipulation. But both variables are highly dependent on the post-manipulation measure. Therefore, neurons that by chance fire more strongly in the post manipulation measure are likely to show greater changes relative to the independent pre-manipulation measure, thus inflating the correlation (Holmes, 2009).\n\nSelective analysis is perfectly justifiable when the results are statistically independent of the selection criterion under the null hypothesis. However, circular analysis recruits the noise (inherent to any empirical data) to inflate the statistical outcome, resulting in distorted and hence invalid statistical inference.\n\n### How to detect it\n\nCircular analysis manifests in many different forms, but in principle occurs whenever the statistical test measures are biased by the selection criteria in favour of the hypothesis being tested. In some circumstances this is very clear, e.g. if the analysis is based on data that were selected for showing the effect of interest, or an inherently related effect. In other circumstances the analysis could be convoluted and require more nuanced understanding of co-dependencies across selection and analysis steps (see, for example, Figure\u00a01\u00a0in\u00a0Kilner, 2013 and the\u00a0supplementary materials in Kriegeskorte et al., 2009). Reviewers should be alerted by impossibly high effect sizes which might not be theoretically plausible, and/or are based on relatively unreliable measures (if two measures have poor internal consistency this limits the potential to identify a meaningful correlation; Vul et al., 2009). In that case, the reviewers should ask the authors for a justification for the independence between the selection criteria and the effect of interest.\n\n### Solutions for researchers\n\nDefining the analysis criteria in advance and independently of the data will protect researchers from circular analysis. Alternatively, since circular analysis works by \u2018recruiting\u2019 noise to inflate the desired effect, the most straightforward solution is to use a different dataset (or different part of your dataset) for specifying the parameters for the analysis (e.g. selecting your sub-groups) and for testing your predictions (e.g. examining differences across the sub-groups). This division can be done at the participant level (using a different group to identify the criteria for reducing the data) or at the trial level (using different trials but from all participants). This can be achieved without losing statistical power using bootstrapping approaches (Curran-Everett, 2009). If suitable, the reviewer could ask the authors to run a simulation to demonstrate that the result of interest is not tied to the noise distribution and the selection criteria.\n\n#### Further reading\n\n(Kriegeskorte et al., 2009).\n\n## Flexibility of analysis: p-hacking\n\n### The problem\n\nUsing flexibility in data analysis (such as switched outcome parameters, adding covariates, undetermined or erratic pre-processing pipeline, post hoc outlier or subject exclusion; Wicherts et al., 2016) increases the probability of obtaining significant p-values (Simmons et al., 2011). This is because normative statistics rely on probabilities and therefore the more tests you run the more likely you are to encounter a false positive result. Therefore, observing a significant p-value in a given dataset is not necessarily complicated and one can always come up with a plausible explanation for any significant effect particularly in the absence of specific predictions. Yet, the more variation in one\u2019s analysis pipeline, the greater the likelihood that observed effects are not genuine. Flexibility in data analysis is especially visible when the same community reports the same outcome variable but computes the value of this variable in different ways across the paper (e.g. www.flexiblemeasures.com; Carp, 2012; Francis, 2013) or when clinical trials switch their outcomes (Altman et al., 2017; Goldacre et al., 2019).\n\nThis problem can be pre-empted by using standardised analytic approaches, pre-registration of the design and analysis (Nosek and Lakens, 2014), or undertaking a replication study (Button et al., 2013). Note that pre-registration of experiments can be performed after the results of a first experiment are known and before an internal replication of that effect is sought. But perhaps the best way to prevent p-hacking is to show some tolerance to borderline or non-significant results. In other words, if the experiment is well designed, executed, and analysed, reviewers\u00a0should\u00a0not 'punish' the researchers for their data.\n\n### How to detect it\n\nFlexibility of analysis is difficult to detect because researchers rarely disclose all the necessary information. In the case of pre-registration or clinical trial registration, the reviewer should compare the analyses performed with the planned analyses. In the absence of pre-registration, it is almost impossible to detect some forms of p-hacking. Yet, reviewers can estimate whether all the analysis choices are well justified, whether the same analysis plan was used in previous publications, whether the researchers came up with a questionable new variable, or whether they collected a large battery of measures and only reported a few significant ones. Practical tips for detecting likely positive findings are summarized in Forstmeier et al. (2017).\n\n### Solutions for researchers\n\nResearchers should be transparent in the reporting of the results, e.g. distinguishing pre-planned versus exploratory analyses and predicted versus unexpected results. As we discuss below, exploratory analyses using flexible data analysis are fine if they are reported and interpreted as such in a transparent manner and especially so if they serve as the basis for a replication with pre-specified analyses (Curran-Everett and Milgrom, 2013). Such analyses can be a valuable justification for additional research but cannot be the foundation for strong conclusions.\n\n#### Further reading\n\n(Kerr, 1998; Simmons et al., 2011).\n\n## Failing to correct for multiple comparisons\n\n### The problem\n\nWhen researchers explore task effects, they often explore the effect of multiple task conditions on multiple variables (behavioural outcomes, questionnaire items, etc.), sometimes with an underdetermined a priori hypothesis. This practice is termed exploratory analysis, as opposed to confirmatory analysis, which by definition is more restrictive. When performed with frequentist statistics, conducting multiple comparisons during exploratory analysis can have profound consequences for the interpretation of significant findings. In any experimental design involving more than two conditions (or a comparison of two groups), exploratory analysis will involve multiple comparisons and will increase the probability of detecting an effect even if no such effect exists (false positive, type I error). In this case, the larger the number of factors, the greater the number of tests that can be performed. As a result, the probability of observing a false-positive increases (family-wise error rate). For example, in a 2 \u00d7 3\u00a0\u00d7\u00a03 experimental design the probability of finding at least one significant main or interaction effect is 30%, even when there is no effect (Cramer et al., 2016).\n\nThis problem is particularly salient when conducting multiple independent comparisons (e.g. neuroimaging analysis, multiple recorded cells or EEG). In such cases, researchers are technically deploying statistical tests within every voxel/cell/timepoint, thereby increasing the likelihood of detecting a false positive result, due to the large number of measures included in the design. For example, Bennett and colleagues (Bennett et al., 2009) identified a significant number of active\u00a0voxels in a dead Atlantic Salmon (activated during a 'mentalising' task) when not correcting for multiple comparisons. This example demonstrates how easy it can be to identify a spurious significant result. Although it is more problematic when the analyses are exploratory, it can still be a concern when a large set of analyses are specified a priori for confirmatory analysis.\n\n### How to detect it\n\nFailing to correct for multiple comparisons can be detected by addressing the number of independent variables measured and the number of analyses performed. If only one of these variables correlated with the dependent variable, then the rest is likely to have been included to increase the chance of obtaining a significant result. Therefore, when conducting exploratory analyses with a large set of variables (such as genes or MRI voxels), it is simply unacceptable for the researchers to interpret results that have not survived correction for multiple comparisons, without clear justification. Even if the researchers offer a rough prediction (e.g. that the effect should be observed in a specific brain area or at an approximate latency), if this prediction could be tested over multiple independent comparisons, it requires correction for multiple comparisons.\n\n### Solutions for researchers\n\nExploratory testing can\u00a0be absolutely appropriate, but should be acknowledged. Researchers should disclose all measured variables and properly implement the use of multiple comparison procedures. For example, applying standard corrections for multiple comparisons unsurprisingly resulted in no active voxels in the dead fish example (Bennett et al., 2009). Bear in mind that there are many ways to correct for multiple comparisons, some more well accepted than others (Eklund et al., 2016), and therefore the mere presence of some form of correction may not be sufficient.\n\n#### Further reading\n\n(Han and Glenn, 2018; Noble, 2009).\n\n## Over-interpreting non-significant results\n\n### The problem\n\nWhen using frequentist statistics, scientists apply a statistical threshold (normally alpha=.05) for adjudicating statistical significance. Much has been written about the arbitrariness of this threshold (Wasserstein et al., 2019) and alternatives have been proposed (e.g., Colquhoun, 2014; Lakens et al., 2018; Benjamin et al., 2018). Aside from these issues, which we elaborate on in our final remarks, misinterpreting the results of a statistical test when the outcome is not significant is also highly problematic but extremely common. This is because a non-significant p-value does not distinguish between the lack of an effect due to the effect being objectively absent (contradictory evidence to the hypothesis) or due to the insensitivity of the data to enable to the researchers to rigorously evaluate the prediction (e.g. due to lack of statistical power, inappropriate experimental design, etc.). In simple words - non-significant effects could literally mean very different things - a true null result, an underpowered genuine effect, or an ambiguous effect (see Altman and Bland, 1995 for an example). Therefore, if the researchers wish to interpret a non-significant result as supporting evidence against the hypothesis, they need to demonstrate that this evidence is meaningful. The p-value in itself is insufficient for this purpose. This confound also means that sometimes researchers might ignore a result that did not meet the p\u22640.05 threshold, assuming it is meaningless when in fact it provides sufficient evidence against the hypothesis or at least preliminary evidence that requires further attention.\n\n### How to detect it\n\nResearchers might interpret or describe a non-significant p-value as indicating that an effect was not present. This error is very common and should be highlighted as problematic.\n\n### Solutions for researchers\n\nAn important first step is to report effect sizes together with p-values in order to provide information about the magnitude of the effect (Sullivan and Feinn, 2012), which is also important for any future meta-analyses (Lakens, 2013; Weissgerber et al., 2018). For example, if a non-significant effect in a study with a large sample size is also very small in magnitude, it is unlikely to be theoretically meaningful whereas one with a moderate effect size could potentially warrant further research (Fethney, 2010). When possible, researchers should consider using statistical approaches that are capable of distinguishing between insufficient (or ambiguous) evidence and evidence that supports the null hypothesis (e.g., Bayesian statistics; [Dienes, 2014], or equivalence tests [Lakens, 2017]). Alternatively, researchers might have already determined a priori whether they have sufficient statistical power to identify the desired effect, or to determine whether the confidence intervals of this prior effect contain the null (Dienes, 2014). Otherwise, researchers should not over-interpret non-significant results and only describe them as non-significant.\n\n#### Further reading\n\n(Dienes, 2014).\n\n## Correlation and causation\n\n### The problem\n\nThis is perhaps the oldest and most common error made when interpreting statistical results (see, for example, Schellenberg, 2019). In science, correlations are often used to explore the relationship between two variables. When two variables are found to be significantly correlated, it is often tempting to assume that one causes the other. This is, however, incorrect. Just because variability of two variables seems to linearly co-occur does not necessarily mean that there is a causal relationship between them, even if such an association is plausible. For example, a significant correlation observed between annual chocolate consumption and number of Nobel laureates for different countries (r(20)=.79; p<0.001) has led to the (incorrect) suggestion that chocolate intake provides nutritional ground for sprouting Nobel laureates (Maurage et al., 2013). Correlation alone cannot be used as an evidence for a cause-effect relationship. Correlated occurrences may reflect direct or reverse causation, but can also be due to an (unknown) common cause, or they may be a result of a simple coincidence.\n\n### How to detect it\n\nWhenever the researcher reports an association between two or more variables that is not due to a manipulation and uses causal language, they are most likely confusing correlation and causation. Researchers should only use causal language when a variable is precisely manipulated and even then, they should be cautious about the role of third variables or confounding factors.\n\n### Solutions for researchers\n\nIf possible, the researchers should try to explore the relationship with a third variable to provide further support for their interpretation, e.g. using hierarchical modelling or mediation analysis (but only if they have sufficient power), by testing competing models or by directly manipulating the variable of interest in a randomised controlled trial (Pearl, 2009). Otherwise, causal language should be avoided when the evidence is correlational.\n\n#### Further reading\n\n(Pearl, 2009).\n\n## Final remarks\n\nAvoiding these ten inference errors is an important first step in ensuring that results are not grossly misinterpreted. However, a key assumption that underlies this list is that significance testing (as indicated by the p-value) is meaningful for scientific inferences. In particular, with the exception of a\u00a0few\u00a0items (see 'Absence of an adequate control condition/group' and 'Correlation and causation'), most of the issues we raised, and the solution we offered, are inherently linked to the p-value, and the notion that the p-value associated with a given statistical test represents its actual error rate. There is currently an ongoing debate about the validity of null-hypothesis significance testing and the use of significance thresholds (Wasserstein et al., 2019). We agree that no single p-value can reveal the plausibility, presence, truth, or importance of an association or effect. However, banning p-values does not necessarily protect researchers from making incorrect inferences about their findings (Fricker et al., 2019). When applied responsibly (Kmetz, 2019; Krueger and Heck, 2019; Lakens, 2019), p-values can provide a valuable description of the results, which at present can aid scientific communication (Calin-Jageman and Cumming, 2019), at least until a new consensus for interpreting statistical effects is established. We hope that this paper will help authors and reviewers with some of these mainstream issues.\n\n### Further reading\n\n(Introduction to the new statistics, 2019).\n",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "4efb5284-f758-4250-90f4-7875c9c095e1",
+      "submission_id": "f31f4014-501c-4724-b2f8-b73006f54fcb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, eLife United Kingdom\n\nReviewers:\n- Nick Parsons, University of Warwick Coventry United Kingdom\n- Nick Holmes, University of Nottingham Nottingham United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.48175.004](https://doi.org/10.7554/eLife.48175.004)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Ten common inferential mistakes to watch out for when writing or reviewing a manuscript\" to eLife for consideration as a Features Article. Your article has been reviewed by two peer reviewers, who have both agreed to reveal their identity: Nick Parsons; Nick Holmes.\n\nBoth reviewers produced very substantial reports, and rather than consolidate them as normally happens at eLife, I have combined them so that all the comments on each section of your article are together. This means that the decision letter is very long \u2013 and also somewhat critical in a few places \u2013 but both referees really engaged with the manuscript\n\nI would like to invite you to submit a revised version of your article that addresses these comments. While the list of comments below is rather long, the reviewers and myself feel that it should be possible to address them within a reasonable time frame.\n\nAlso, please note the following:\n\n1) Please remove section 6 (and consider replacing it with a section on 'circular analyses' \u2013 as suggested by the referees).\n\n2) Please revise Figure 1 (see comments below).\n\n3) Please remove Figure 3 and Figure 4.\n\nSummary:\n\nReviewer #1:\n\nOverall, I enjoyed reading this manuscript. It certainly has some merit.\n\nHowever, at times I found myself profoundly disagreeing with some of the recommendations. I give a list of some of my more significant gripes below. I think this manuscript could be suitable for publication, but there needs to be a substantial amount of additional work to make it make it so.\n\nFirst, I do not know the background of the authors (so apologies if I offend), but some of the wording and examples and description suggests that they are not themselves experienced applied statisticians. This manuscript would benefit enormously from the input of such a person, simply to reformulate some of the common mistakes and link in with well-known issues that statisticians typically observe when teaching statisticians, advising colleagues and reviewing manuscripts. I accept that it is important to have the tone and voice of the scientist (and not the statistician) in this manuscript, but it is important that the manuscript is such that it is has a much stronger statistical basis, to give it more weight.\n\nMuch of the text here is quite wordy and the explanations of the issues often confusing (e.g. issues 3 and 4). I am sure the authors could make these much simpler and easier to understand. The background of the authors is clearly in the neurosciences. This shows with their choice of examples at times (e.g. issue 1). This manuscript would work just as well with more neutral examples that would be understandable to anyone across the range of scientific disciplines. So, I suggest the authors re-write in such a way.\n\nManuscripts such as this are important and can have significant impact on not just the reporting of science, but also how it is done. So, I hope the authors decide to make appropriate changes to the manuscript in order to make it more acceptable for publication.\n\nEssential revisions:\n\n0) Introduction\n\nReviewer #1:\n\n\u2013 It is worth making the point in the Introduction that many journals undertake in-house statistical reviews and/or send manuscripts out for more detailed statistical review if reviewers of the substantive content have concerns.\n\n1) Absence of a control condition/group\n\nReviewer #1:\n\n\u2013 This manuscript is at times very neuroscience focused. I understand that is the primary interest of the authors, but at times I think it simply distracts from the message and much simpler examples (that would be universal to all scientists) would have worked much better. That is particularly the case with this first common 'mistake'.\n\nReviewer #2:\n\n\u2013 'inflating the likelihood of observing spurious changes' \u2013 But all statistical tests are done using probabilities of false positives, which depend on the variability in the data. What is the evidence that low test-retest reliability leads to increased false-positive outcomes? As this section notes, it is only the absolute size of the difference that will be 'observed' \u2013 statistics will tell us if this difference is reliable or not, and that is where the (fixed) false-positive rate applies.\n\n\u2013 I often come across control groups that are sampled after the results of the experimental group are known (e.g., lots of TMS studies). I would add here that control and experimental groups need to be sampled at the same time and with randomised allocation.\n\n\u2013 This is not only 'longitudinal', this applies to cross-sectional data too.\n\n2) Interpreting comparisons between two effects without directly comparing them\n\nReviewer #1:\n\n\u2013 Figure 1 \u2013 This is an oddly chosen example. Clearly the variance in group B is much greater than the variance in group A. This explains (in part at least) why the test of the group differences is not significant. But, surely pooling here is problematic: we are assuming, for the methods suggested, that the variance is the same in each group whereas, to most, it looks like it is very different. The authors need to choose a better example to illustrate common mistake 2, and modify Figure 1 appropriately.\n\nReviewer #2:\n\n\u2013 This problem applies also not just to 'difference scores' but any effect (e.g., a slope, curve-fit etc., not just 'differences'). I suggest the authors make it more general here (as they do in 'how to detect'), then give the specific and useful example of the simple difference of two differences. It may also be worth noting here that this is often the 'interaction' term in the analysis.\n\n\u2013 'differential statistical significance' \u2013 I would say something like 'different binary outcomes when applying a statistical threshold'.\n\n3) Inflating degrees of freedom by violating independence of measures\n\nReviewer #1:\n\n\u2013 This is a very complicated explanation for what most statisticians would describe in a very different way. It is needlessly complicated. This is what most statisticians would describe as the 'unit of analysis' issue \u2013 much described in the literature previously see e.g. Parsons, Teare and Sitch (2018, eLife).\n\nSome poor practice is described here, where for example multiple measurements on the same subject are made as a means of ultimately comparing subjects. If a study aims to understand the effect of an intervention on subjects, then that is the 'unit of the analysis' and in order to draw inferences the replication must be at the level of the subject (the unit of analysis), not within subject (within unit). Multiple measurements on subjects improve the precision of estimation of the subject mean (for instance) but tell us nothing about the variability between subjects.\n\nThis is often observed as an artificial inflation of the degrees of freedom, pooling between strata in the analysis, but ultimately the problem is the lack of clear identification of the purpose of the analysis and the appropriate unit to use to assess variation that is used to quantify intervention effects. Personally, I don't think bringing correlation into the discussion helps a great deal. All we really need to be aware of is that measurements within (for instance) a subject are likely to be correlated, whereas by definition data from subjects are uncorrelated.\n\n\u2013 Mixed-effects analysis \u2013 This is the canonical analysis that most statisticians would recommend. When we do this, we naturally estimate the appropriate within subject (cluster) correlations. This methodology should be much more widely used in many areas of science; only in medicine, where studies report patient data, and psychology is it generally recognised as being important. Although its roots go back to the genesis of statistics in agricultural science, where fields were divided into blocks, plots and nested sub-plots and plants etc.\n\n\u2013 A priori statistical power analyses are always a good idea, but I really don't think it adds much to the discussion here.\n\nReviewer #2:\n\n\u2013 This is true in some statistical procedures (e.g., where you model a single parameter at a single level for each participant), but not all. For example, I believe linear mixed models (e.g., in R), will have many dfs larger than N-x, yet these remain valid. I remember seeing large dfs in (e.g.) Brain Voyager FMRI outputs. I do not understand these multi-level linear mixed models, but I have questioned and been corrected on this df point by statisticians using R (e.g., see the df in Meteyard and Holmes, 2018; I didn't do the analysis). The recommendation in 'how to detect' should be clarified and/or corrected as necessary.\n\n\u2013 'average the resulting r values (don't forget to normalise the distribution first!)' \u2013 Perhaps give specific advice here: e.g., use Fisher's r-to-Z transformation, Z=0.5log[(1+r)/(1-r)]\n\n\u2013 'random factor' \u2013 'random 'effect' would be better\n\n4) Spurious correlations\n\nReviewer #1:\n\n\u2013 Figure 2A, B, C \u2013 Surely the issue here is that 'outliers' have a big impact (leverage) on many statistics; means, variances, covariances, regression analyses, ANOVA and yes, correlations. But this is not an issue only of concern when estimating correlations. Surely the issue here is to present data visually and consider the meaning (validity) of any data points that are a long way from the rest of the distribution. I don't like the (implicit) argument here that the Pearson correlations are in some sense 'wrong'. It depends on whether the model is correct (straight line) and whether the assumptions of approximately normality are correct. It is perfectly plausible to believe Figure 2C is correct, and that only one data point was available at X=5, but there is good reason to believe that data are normally distributed. The point I would make here is the importance of error measurements when reporting. The confidence intervals of the Pearson correlation would help us enormously here. Point estimates of correlations alone are not that useful, unless the data are shown visually.\n\n\u2013 The other thing I would take issue with here is the implication that Spearman's rank correlation makes more sense in settings Figure 2B and Figure 2C. In general, decisions about whether to assume normality are better made for principled reasons rather than for empirical reasons. Using a non-parametric correlation coefficient would make little sense to me here \u2013 they are generally very inefficient, as we convert to ranks first, which is the reason the value does not change from Figure 2B to Figure 2C. If data were reasonably tightly distributed symmetrically about the mean, other than one value which was a big distance away, my first recommendation would be to examine the credence of the extreme data point, not proceed to a non-parametric correlation.\n\nReviewer #2:\n\n\u2013 'Yet, the use of parametric correlations, such as Pearson's r, requires that both variables are normally distributed.'\n\nNo, it doesn't! All parametric linear models (as far as I understand) require that the error is normally distributed. In the case of a single-sample t-test against a single mean, this is identical to the requirement that the variables themselves are normally distributed. But, for everything else, it is the differences or error or residuals after the model is fit which must be normally distributed, not the raw data. The authors repeat in their tutorial what I understand to be a very common mis-interpretation, and it would be good for them to make absolutely certain that what they say here is correct, to avoid perpetuating these errors.\n\nHere is a tutorial from the R team: https://rcompanion.org/handbook/I_01.html, specifically: \"In particular, the tests discussed in this section assume that the distribution of the data are conditionally normal in distribution. That is, the data are normally distributed once the effects of the variables in the model are taken into account. Practically speaking, this means that the residuals from the analysis should be normally distributed. This will usually be assessed with a histogram of residuals, a density plot as shown below, or with a quantile-quantile plot\u2026 Be careful not to get confused about this assumption. You may see discussion about how \"data\" should be normally distributed for parametric tests. This is usually wrong-headed.\"\n\nThe authors are correct here that (genuine) outliers can lead to spurious correlations, but the remedy for this is, as they state: (a) plot the data, (b) run some robustness-checks, and to report all the results with their standard errors and with due caution.\n\nOne real problem is how do we identify 'genuine' outliers? Perhaps a large sample size is one remedy, so that we have a better coverage of the population? Yet, there will still be cases when clear 'outliers' are genuine observations which obey the law that you are trying to discover. For example, measuring mass vs. body length across the animal kingdom: there will be an awful lot of small animals down the bottom of the scale (e.g., insects), some in the middle (e.g., birds and most mammals), and fewer still at the extremes (e.g., whales or elephants). I would bet that the blue whale follows the same statistical law of mass vs. length as the gnat (with variance away from this model due to shape). A 'spurious' correlation might arise from incomplete sampling of the problem space \u2013 if we only sampled insects and whales, we might draw the wrong conclusion and call the correlation between mass and length 'spurious'. Or perhaps the data need log-transforming first?\n\nMy laboured point here is: if you don't have any independent reason to exclude a particular datapoint (e.g., the participant didn't do the task properly, wasn't wearing their glasses, is not healthy, is not typical; the elephant was stretching its legs), then I think it is dangerous to conclude that the correlation is spurious just because of one 'outlier'. Rather, authors need to present the data, check their assumptions, and speculate that sampling bias or experimenter error has led to this 'outlier'. In general, the authors are correct here: limited sampling of the intended population may make such outliers more likely, and correlations may then be more problematic. But this is all relative, and error can occur in both directions (Type I, Type II). The only solution is to be very careful, both in including and excluding data.\n\n\u2013 'when the two variables are not independent' \u2013 Repeated measures designs will often have highly-correlated scores between different conditions or time-points in the same participants. Again, is the real issue here 'independent error' (residuals) not 'independent data'?\n\n\u2013 This is the 'regression towards the mean' error that I discussed in Holmes, (2007, 2009), yet this topic is only an \"Honorable mention\" here! I would suggest all these 'circular analyses' and 'double-dips' (i.e., both are experimenter-created dependencies in the data) could be in their own section (after dealing with the below comments, in which I suggest removing point 6 entirely).\n\n\u2013 Figure 2A \u2013 I would bet that the red point is not an outlier here, as claimed in the legend.\n\n\u2013 'they can run some basic simulations' \u2013 I agree 100% (Holmes 2007, 2009), but this sentence will have, in my view, about 95% of your target audience hiding under the bedcovers in fear of programming. How does someone who is not sufficiently well-trained to spot these problems in the first place go about 'running some simulations'? Can the authors point to an online tool or tutorial that helps?\n\n5) Use of underpowered groups\n\nReviewer #1:\n\n\u2013 Experiments with small samples sizes are quite often small for very good reasons, not always but often. We should not recommend that scientists don't do small experiments \u2013 sometimes there is no option \u2013 but we should tell them not to report inferential statistics. Particularly if the study does not have an a priori power calculation. Not sure that Figure 3 adds much here.\n\nReviewer #2:\n\n\u2013 'In frequentist statistics in which a significance threshold of \u03b1=.05 is used, 5% of all statistical tests will yield a significant result even in the absence of an actual effect (false positives; Type I error)' \u2013 I think the authors need to clarify this a bit more, to, e.g.: \"Assuming that the null is true, then randomly- and independently-sampled data from a normal distribution with a mean of zero will yield a sample that, when tested against a mean of zero, has a p-value below or equal to. 05 approximately 5% of the time.\" The word 'even' in their claim here is unhelpful \u2013 the stats explicitly assume that the null is true (it is never actually true!)\n\n\u2013 'Given that these two variables are random, there should be no significant correlations' \u2013 See previous point. There will be 5% 'significant' correlations.\n\n\u2013 'falsely significant' \u2013 I don't like this phrase. It seems contradictory. I know what they mean (something like: 'using the standard \u03b1 criterion, most researchers would conclude that there is a positive correlation in the population when in fact there isn't').\n\n\u2013 'the experiment is underpowered' \u2013 But there is no effect in the simulated population. There can therefore be no sample size sufficient to find this effect. This cannot, therefore, be 'underpowered'. Revise.\n\n\u2013 '<' should this, in fact, be '\u2264'? Same throughout the manuscript.\n\n\u2013 'Designs with a small sample size are also more susceptible to Type II errors' \u2013 Why? Type II error is a non-linear function of the sample size and the real effect size. Knowing the Type II error requires that you know the population distribution, which is almost never the case (and not required) in the kinds of parametric null-hypothesis tests that the authors are discussing here.\n\n\u2013 'based on a limited number of participants' \u2013 I would remove this as I don't think this it is justifiable. I think all effects (especially surprising ones) from a single experiment should be taken with the same degree of caution, regardless of their sample size (who sets the criterion in any case?). The statistics deal with the problem of sample size. Statistics can be biased as a function of sample size, of course, and some come with corrections (e.g., Hedges G instead of Cohen's d) but if you expect a large effect (e.g., removing striate cortex will impair vision), then I see nothing wrong with doing the absolute minimum of testing on your subjects to establish that effect. It would be unethical to remove 30 monkeys' visual cortices when 2 are sufficient to test the hypothesis.\n\n\u2013 'that were not replicated' \u2013 Yes, we should be especially skeptical if a second well-powered experiment failed to replicate the first, but I would only be normally skeptical of a single-experiment finding, regardless of its sample size. I think the authors' main point is that small studies will achieve significance only with large effects. True. But some large effects are real, so given a single particular result, how do you know? We must be allowed to search for large statistical effects. Collecting converging and independent evidences should be sought in all investigations, not just in those researchers looking for large effects: Smith and Little (2018).\n\n6) Using parametric statistics with small sample sizes\n\nReviewer #1:\n\n\u2013 Sorry but I cannot agree with much of this section. See my previous comments about normality assumptions. Tests of normality are really not very useful in most circumstances. In small samples, I agree with authors, they are useless. However, in large samples they will always reject with probability of very near one.\n\n\u2013 In general, decisions about normality and whether to use parametric or non-parametric methods should be based mainly on scientific principle. For instance, if I collect data on the heights of 10 people, I report a median and IQR, but if I collect data on 50 people a mean and SD? No, that is clearly wrong. I believe that heights are approximately distributed, based on the way it is measured, my own experience and the experience of others (irrespective of what a test of normality tells me!), so I should summarise data on that basis in the appropriate way by a mean and SD.\n\n\u2013 This sort of mechanical/automated approach to the implementation of statistical methods is strongly discouraged by the majority of statisticians. This is analogous to the widespread adherence to the (mis-) interpretation of p-values that has been so widely criticized by among others the American Statistical Association. In its guidance for the use of statistical tests for such decisions and the role of p-values it makes clear that \"Scientific conclusions and business or policy decisions should not be based only on whether a p-value passes a specific threshold\" and \"No single index [the p-value] should substitute for scientific reasoning\".\n\n\u2013 Scientific reasoning and precedent should be used to make decisions about how to appropriately analyse data, not arbitrary ad hoc (data dependent) statistical tests.\n\nReviewer #2:\n\n\u2013 Section 6 is incorrect and should be removed. In part, due to the same problem as point #4 (normal distribution of error), but, what the authors seem to be arguing for (unwittingly) is an abandonment of parametric tests, not for their use only with 'large' samples, as explained below:\n\nParametric statistics were designed for small samples. If in any doubt about this, please check out Fisher (1925), available in full here: https://psychclassics.yorku.ca/Fisher/Methods/index.htm\n\nIn parametric statistics, from a sample of data we extract parameters, for example the mean and the SD (e.g., of the difference between means of two conditions). In our statistical model we compare those parameters to a normal distribution in order to make probabilistic inferences using the theoretical distribution.\n\nWhen sample size is small (say <30), we do not refer our parameters directly to the normal distribution. Rather, we refer them to the t, F, Chi-Square, Poisson, Binomial, or any other appropriate statistical distribution. These distributions were originally created by sampling small numbers of datapoints, and seeing how they behaved. These distributions are all skewed in interesting ways, but as N increases, they tend to approximate the normal distribution.\n\nThe (in my view) often-mistaken 'rule of thumb' that you need at least 30 participants to do parametric statistics is wrong. It is in my understanding, opposite this. As N increases, the t-, F, Binomial, Chi-square, and Poisson distributions converge closer and closer to the normal distribution. So, when N=30, rather than using the t-test, you can just use the Z-test (i.e., essentially ignoring sample size). The critical t-value for 1 degree of freedom (N=2) at \u03b1=.05 is 6.31 (i.e., 6.31 standard errors of your sample mean difference away from zero). As N increases to infinity, the critical value converges to 1.645. At N=30, the critical t-value is 1.7, which is arguably close-enough to the population Z-score (1.645) that the t-distribution can be abandoned (i.e., only sample size is relevant for calculating the SE, df is not needed) and that the Z-distribution can be used instead. Small samples are already 'punished' via the df, by requiring much larger effect sizes to pass arbitrary statistical thresholds.\n\nMy understanding is that most statistical tests are designed for small samples. Non-parametric tests are for non-interval and non-ratio data (categorical, ordinal), or for interval/ratio data with populations for which no reasonable assumptions can be made (e.g., with large inexplicable outliers). Bootstrapping or other non-parametric statistical methods can be useful to check whether small samples are indeed sufficiently normal to use parametric tests (e.g., from Makin et al., 2009, where Ns=6-11: \"In every case, this bootstrapping procedure supported the inferences derived from the t tests, so we report only the standard parametric tests in this manuscript.\").\n\nAs the authors correctly note, small samples come with biases (e.g., effect sizes are larger for significant effects), but this does not invalidate the use of parametric tests. The authors cite Kar and Ramalingam (2013) in support of their claim, yet from that paper's conclusion: \"Hence, there is no such thing as a magic number when it comes to sample size calculations and arbitrary numbers such as 30 must not be considered as adequate.\"\n\n\u2013 'though it is well agreed that you shouldn't use a parametric test with N<10 (Fagerland, 2012)' \u2013 The authors present no evidence for this 'well agreed' rule. I disagree with it, for example, as I believe would the statisticians who invented parametric tests. The article cited by Fagerlund, (2012) was specifically looking at skewed distributions (gamma and log-normal) of the underlying population parameters, and made the same common mistake about normal distribution of the data (should be: error/residuals). Yes, with data producing skewed error distributions, transformation or non-parametric tests are required, or a larger sample, and the central limit theorem can be relied upon. It is absolutely fine to use parametric tests under reasonable assumptions and with reasonable caution with N as low as 2 (Fisher, 1925).\n\n\u2013 'Nonparametric tests\u2026 are less sensitive to outliers' \u2013 Bootstrapping is a kind of non-parametric test. Such tests may highlight outliers by revealing a multi-modal distribution of summary statistics, but they are just as 'sensitive' to outliers. Inspecting the distributions and checking assumptions is the correct approach.\n\n7) Flexibility of analysis: p-hacking\n\nReviewer #1:\n\n\u2013 The authors advice on how to detect p-hacking is well-meaning but na\u00efve.\n\nIn truth, only by pre-registering and providing detailed analysis plans, such as we do in clinical trials, can we ever hope to stop p-hacking. Almost impossible for a reviewer to make much assessment of this, unless they have a study protocol available against which to assess the reporting adherence.\n\n8) Failing to correct for multiple comparisons\n\nReviewer #1:\n\n\u2013 This is a tricky one. The truth is that there is no great consensus amongst statisticians as to the best correction method to use. It is very application area dependent and there are many who would simply disagree on principle that correcting for multiple testing makes any sense (e.g. Rothman, 1990, Epidemiology).\n\nI would draw a distinction between exploratory and confirmatory analyses, and make differing recommendations dependent on the aims of the study. We may be more or less worried about false negatives and false positives in these settings.\n\nThis topic is complex and probably beyond the knowledge of most (non-expert) reviewers and beyond the scope of this article.\n\nReviewer #2:\n\n\u2013 'it is simply unacceptable for the researchers to interpret results that have not survived correction for multiple comparisons' \u2013 Even if hypothesised? Perhaps 'exploratory' needs to be added here. I disagree that if an effect 'could' be tested using different comparisons, then corrections for multiple comparisons are required. A reviewer could just say: \u201cwell, you could have done this on all the individual blocks of data rather than the subject averages, so you need to correct\u2026\u201d This would be r-hacking (reviewer hacking), and needs to be discouraged. Explicit, limited, pre-registered hypothesis-testing should be encouraged. Exploratory testing is fine, but should be acknowledged and \u03b1 corrected.\n\n9) Over-interpreting non-significant results\n\nReviewer #1:\n\n\u2013 This is a common error \u2013 so common in fact that it is hard to believe anything we suggest will make much difference! The suggestions of the authors are reasonable, but a bit wishy-washy.\n\nReviewer #2:\n\n\u2013 'non-significant effects could literally mean anything' \u2013 So could significant effects. All the problems listed apply equally to significant effects: true positives, over-powered small effects (e.g., much smaller than the meaningful effect that a theory predicts), or ambiguous effects. There is nothing special about the \u03b1 value, as the authors note.\n\n\u2013 'Otherwise, researchers should not over-interpret non-significant results and only describe them as non-significant.' \u2013 So, p=.049 is \"significant\" and can be interpreted, and p=.051 is \"non-significant\" and should 'not be over-interpreted'. I think we can do better than this. What rules of thumb do the authors offer to get around this linguistic threshold? My view would be that if there is any doubt in a particular result, then plot the data, check assumptions, run simulations, replicate the experiment with increased power, seek converging evidence, do a systematic review and meta-analysis, present the work at conferences, ask reviewers\u2026 Being told to stick rigorously to the 'significant/non-significant' dichotomy is not going to improve the readers' statistical inferences.\n\n\u2013 Figure 4 does not show a 'correlation' but two time series data; the right y-axis looks like negative numbers because of the axis ticks; the blue dataset has auto-correlation (mostly the same people eating margarine across different years) but the red does not (mostly different people getting divorced). Since the authors did not create this figure, I suggest removing it from their tutorial. I also suggest they cite primary research data, rather than secondary websites (particularly when that website labels a correlation of r[without degrees of freedom]=.9926 as a '99.26%' correlation. It's not).\n\n10) Correlation and causation\n\nReviewer #1:\n\n\u2013 My sense is that scientists generally have a good understanding of this issue. Not really a statistical issue per se, more about using cautious language when reporting.\n\nReviewer #2:\n\n\u2013 'Impossibly high correlations' \u2013 Replace with 'effect sizes'?\n\nHonourable mentions\n\nReviewer #1:\n\n\u2013 I really don't think section adds much, just a list of terms with little or no more explanation. I would advise deleting.\n\nConclusions\n\nReviewer #1:\n\n\u2013 Interesting as it is, I don't see why we need a discussion of NHST and p-values as the conclusion. Seems a bit off-topic. A summary of main issues and overlap of the common mistakes and importance would be much more useful. And some recognition of the importance of talking to your statistical colleagues. Most of the issues discussed here are very common issues that all (any) statisticians will be well placed to help with. Whether at study development, writing or reviewing stages of research.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting the revised version of \"Ten common inferential mistakes to watch out for when writing or reviewing a manuscript\" for consideration by eLife. This version has been seen by the two reviewers who reviewed the original version (Nick Parsons and Nick Holmes), and their comments are below. It should be straightforward to address these comments, so I would like to invite you to submit a second revised version that addresses these comments.\n\nReviewer #1:\n\nThe authors have clearly worked tremendously hard to make changes to the manuscript. It is now quite difficult to read, given all the additions and deletions, so will need a good proof-read to make sure it still makes good sense and scans properly. I make a number of responses to these changes:\n\nSummary:\n\nI still think it is a strange argument to state initially that this paper is motivated by \"\u2026ineffective experimental design, inappropriate statistical analysis, and/or flawed reasoning, appearing in published neuroscience papers\u2026\", and then to say a little later that all the issues highlighted are \"\u2026applicable across a range of scientific disciplines that use statistics to assess findings\u2026\". The latter is true \u2013 the issues highlighted are very familiar to most applied statisticians who work in science. If there are particular issues that relate to neuroscience \u2013 which I imagine there may well be \u2013 then that does not come across at all in this manuscript. For me, I think this manuscript would have worked much better if 'neuroscience' had been added to the title and examples and issues specific to neuroscience had been used throughout. Overall, I do not think that this manuscript really delivers on its aim of responding to and talking directly to neuroscience readers. The issues picked-up are the usual suspects; the kind of issues that statistical reviewers and applied statisticians are very familiar with. Nothing wrong with that, per se, but maybe a missed opportunity to do something more impactful. For instance, a survey of the published literature, and description of common reporting and analysis errors would have been an excellent way of motivating this manuscript. Not seriously suggesting that this be done now. But this has proved to be a highly effective way of making real changes to the research culture and the way research is done and reported in other disciplines.\n\n0) Introduction\n\nOK. This is clearly a matter of perspective. I get asked to review papers, with a specific request asking me to look at statistical issues, quite frequently. These often come after requests from non-statistical reviewers who suggest the editor gets a statistician to look at the manuscript.\n\n2) Interpreting comparisons between two effects without directly comparing them\n\nNot really convinced that this is type of \"\u2026erroneous inference.\u2026\" is \"\u2026very common\u2026\" in published papers. Almost the first thing we teach in statistics is how to compare group A to group B, using an appropriate statistical test. The error that the authors highlight here feels much more complicated than this; to compare the mean response in two groups, would I really test each against the null hypothesis that the mean is 0, and then conclude if I reject for one group, then I can infer that this group is 'statistically significantly' different to the other group? If this is done, then it is done to deliberately (maliciously) mislead the reader.\n\n4) Spurious correlations\n\nThe point I was trying to make about adding confidence intervals seems to have been misunderstood. I would make the general point that, if possible (which it generally is), all point estimates of quantities should be presented with errors; e.g. CIs, range, standard error, bootstrapped intervals etc. The point being that if this had been done for the correlations, then the effect of the outlier on inferences would be much more obvious than it is in a plot that simply presents a point estimate of a correlation as a straight line. The statement that the points in red are clear 'outliers' \u2013 presumably because they are a long way from the fitted line \u2013 would be much less sustainable as an argument if the line were actually a region of plausible values, given the observed data.\n\nI am absolutely not suggesting that data points should be discarded based simply on post-hoc visualisation of the data. The critical point is that scientists need to always question their own data \u2013 and not just at the end of a study when all the data have been collected and they no longer remember why one value is far away from all the others. It is perfectly acceptable to discard values, if there is good reason to believe that something has gone wrong or been recorded incorrectly. This happens all the time \u2013 e.g. numbers accidently recorded in the wrong units, calibration not done, days and months confused in dates \u2013 there is an almost infinite number of ways that data can be 'wrong'. It is perfectly acceptable to change values such as this \u2013 I would advise that the raw data remain unchanged and edits are made in a revised dataset, with changes documented and agreed by all in the study, and made available for others to inspect. If we do this, then what do we make of the data-points the authors highlight as 'outliers'? They are either true errors (things went wrong, but we can't find a reason) or then true data-points. In my view, neither case is a good reason to suggest using robust-correlations, if the rest of the data look reasonably normally distributed. Necessary if you believe the latter is true to modify the model being used, or in the former maybe restrict inferences (model fitting) to the region where you have good data, and not include the extreme value(s).\n\nIt is not correct to believe that for instance using a non-parametric method is a solution (good alternative) to a parametric method, in the setting described here. As I stated in my original comment, because values are converted to ranks you simply move the extreme value in Figure 2C closer to the other values. So really what you are doing is saying that you do not believe the data as recorded are correct in the sense that they can be treated in the way that is implied by the plots; i.e. that they are continuous measures, where the distance between them has some sense of measuring the 'closeness' (e.g. Euclidean distance). So if you use a non-parametric correlation you are really saying that you do not believe the value is 'correct'. Ultimately this goes right back to the basics of designing an experiment and writing a statistical analysis plan (SAP) at the start of a study before data collection begins. In that case you need to make clear what your beliefs are about the metric properties of each study outcome \u2013 you cannot simply choose to use a non-parametric analysis after the data are collected because that makes life easier. Sorry to labour the point, but this is important, as it goes to the heart of many of the statistical problems in reporting of science.\n\nReviewer #2:\n\nThe commentary/tutorial is more nuanced, fairer, more correct, and thus more publishable. I think it will make a nice addition to a large and very long history of statistical advice to researchers.\n",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a92ef036-c5f3-455a-819a-a3b9bf553b2a",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C1",
+      "claim": "Changes in outcome measures can arise due to elements of the study that do not directly relate to the manipulation per se, such as participants or experimenters becoming accustomed to the experimental setting or due to changes relating to the passage of time.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeating the same task in the absence of an intervention might induce a change in the outcomes between pre- and post-intervention measurements, e.g. due to the participant or the experimenter merely becoming accustomed to the experimental setting, or due to other changes relating to the passage of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge about confounding factors in experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "eb19856a-af72-4865-8a81-a406846c023b",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C2",
+      "claim": "Control groups that do not receive a 'sham' intervention or where experimenters are not blinded to the expected outcome contribute to inflated effect sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the control group often does not receive a 'sham' intervention, or the experimenters are not blinded to the expected outcome of the intervention, contributing to inflated effect sizes (Holman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Holman et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "887ea478-d404-4b65-a873-03046d455185",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C3",
+      "claim": "Two variables X and Y measured in two different groups can have different statistical significance outcomes even when the relationship between the variables is virtually identical for the two groups.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, as illustrated in Figure 1A, two variables X and Y, each measured in two different groups of 20 participants, could have different outcomes in terms of statistical significance: a correlation co-efficient for the correlation between the two variables in group A might be statistically significant (ie, have p\u22640.05), whereas a similar correlation co-efficient might not be statistically significant for group B. This could happen even if the relationship between the two variables is virtually identical for the two groups (Figure 1A), so one should not infer that one correlation is greater than the other.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1A showing simulated examples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "77fc148b-ca1a-483e-b272-adee295dcb59",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C4",
+      "claim": "Monte Carlo simulations can be used to compare correlations in two groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Monte Carlo simulations can be used to compare the correlations in the two groups (Wilcox and Tian, 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to Wilcox and Tian, 2008 and referenced in the context of Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "0e518eb7-34c4-40ff-8d64-a752b8d05cee",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C5",
+      "claim": "When degrees of freedom increases, the critical statistical threshold against which statistical significance is judged decreases, making it easier to observe a significant result if there is a genuine effect.",
+      "claim_type": "EXPLICIT",
+      "source": "When df increases, the critical statistical threshold against which statistical significance is judged decreases, making it easier to observe a significant result if there is a genuine effect (increase of statistical power). This is because there is greater confidence in the outcome of the test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established statistical knowledge about the relationship between degrees of freedom and statistical power.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "1c280942-a096-48f2-90df-3ae669ca6c08",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C6",
+      "claim": "For a regression analysis with 10 participants (df = 8) and alpha level of 0.05, the critical R value for achieving significance is 0.63.",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate this issue, let us consider a simple pre-post longitudinal design for an intervention study in 10 participants where the researchers are interested in evaluating whether there is a correlation between their main measure and a clinical condition using a simple regression analysis. Their unit of analysis should be the number of data points (1 per participant, 10 in total), resulting in 8 df. For df = 8, the critical R value (with an alpha level of. 05) for achieving significance is 0.63.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established statistical knowledge about critical values for correlation coefficients.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "48c764e4-bf9c-4b24-b3cf-e4a8570430b8",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C7",
+      "claim": "If pre and post measures are combined across 10 participants, the degrees of freedom becomes 18 and the critical R value becomes 0.44.",
+      "claim_type": "EXPLICIT",
+      "source": "If the researchers combine the pre and post measures across participants, they will end up with df = 18, the critical R value is now 0.44, rendering it easier to observe a statistically significant effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established statistical knowledge about critical values for correlation coefficients with different degrees of freedom.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "b715c683-c573-4337-a23e-5a6da670a59f",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C8",
+      "claim": "Mixed-effects linear models allow researchers to define variability within subjects as a fixed effect and between-subject variability as a random effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps the best available solution to this issue is using a mixed-effects linear model, where researchers can define the variability within subjects as a fixed effect, and the between-subject variability as a random effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established statistical knowledge about mixed-effects models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "ff0b963a-8d40-4530-83c2-5f375456a529",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C9",
+      "claim": "Mixed-effects linear models are an increasingly popular approach.",
+      "claim_type": "EXPLICIT",
+      "source": "This increasingly popular approach (Boisgontier and Cheval, 2016) allows one to put all the data in the model without violating the assumption of independence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Boisgontier and Cheval, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "8f0fbe0b-a9a2-4121-8d3c-6931622c8d3f",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C10",
+      "claim": "Mixed-effects linear models can be easily misused and require advanced statistical understanding.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it can be easily misused (Matuschek et al., 2017) and requires advanced statistical understanding, and as such should be applied and interpreted with some caution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Matuschek et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "1b750a11-41c1-494f-85a2-c82eee64e34c",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C11",
+      "claim": "A single data point away from the rest of the distribution can inflate the correlation coefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in the top row of Figure 2, a single value away from the rest of the distribution can inflate the correlation coefficient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2 showing simulated examples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "a470ee90-ac40-4db8-b6f0-b44213baafdb",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C12",
+      "claim": "Spurious correlations can arise from clusters if data from two groups are pooled together when the two groups differ in those two variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Spurious correlations can also arise from clusters, e.g. if the data from two groups are pooled together when the two groups differ in those two variables (as illustrated in the bottom row of Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2 showing simulated examples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "47dece3a-e3f0-458d-acb6-2557e5f8210a",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C13",
+      "claim": "The value of Pearson's correlation coefficient R artificially increases as the distance between the main population and an outlier data point is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the value of Pearson's correlation coefficient R artificially increases as the distance between the main population and the red data point is increased, demonstrating that a single data point can lead to spurious Pearson's correlations.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2 panels A-C showing simulated examples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "03e8a97b-24aa-4e61-86e0-9ee2cf543111",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C14",
+      "claim": "The value of Pearson's correlation coefficient R artificially increases as the distance between two subgroups is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, the value of R artificially increases as the distance between the subgroups is increased. This shows that correlating variables without taking the existence of subgroups into account can yield spurious correlations.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2 panels D-F showing simulated examples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "52fa05d0-da96-49e9-8b1f-27c6870b9c1f",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C15",
+      "claim": "Robust correlation methods are less sensitive to outliers than parametric methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Robust correlation methods (e.g. bootstrapping, data winsorizing, skipped correlations) should be preferred in most circumstances because they are less sensitive to outliers (Salibian-Barrera and Zamar, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Salibian-Barrera and Zamar, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "20daea0d-3bf0-4e9c-b073-15585cdbf1d9",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C16",
+      "claim": "Robust correlation methods take into consideration the structure of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because these tests take into consideration the structure of the data (Wilcox, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wilcox, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "7a4a5ac0-d0a3-45c1-be2e-5d1f01a91597",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C17",
+      "claim": "When a sample size is small, one can only detect large effects, leading to high uncertainty around the estimate of the true effect size and overestimation of the actual effect size.",
+      "claim_type": "EXPLICIT",
+      "source": "When a sample size is small, one can only detect large effects, thereby leaving high uncertainty around the estimate of the true effect size and leading to an overestimation of the actual effect size (Button et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Button et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "faef6920-3930-4603-b0fa-695e0d7f9e4e",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C19",
+      "claim": "When sampling two uncorrelated variables with N = 15, simulated false-positive correlations roughly range between |0.5-0.75|.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, when sampling two uncorrelated variables with N = 15, simulated false-positive correlations roughly range between |0.5-0.75| whereas when sampling the same uncorrelated variables with N = 100 yields false-positive correlations in the range |0.2-0.25| (Code available at github.com/jjodx/InferentialMistakes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data available in the referenced code repository.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "e9e2a60f-0fce-4ca4-ad9b-6222ba123746",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C20",
+      "claim": "When sampling two uncorrelated variables with N = 100, simulated false-positive correlations range between |0.2-0.25|.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, when sampling two uncorrelated variables with N = 15, simulated false-positive correlations roughly range between |0.5-0.75| whereas when sampling the same uncorrelated variables with N = 100 yields false-positive correlations in the range |0.2-0.25| (Code available at github.com/jjodx/InferentialMistakes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data available in the referenced code repository.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "f2d8d803-0b1a-430a-9dd3-6c5a2245c6cc",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C21",
+      "claim": "With large samples, the likelihood of not detecting an effect when one is actually present is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, with large samples, you reduced the likelihood of not detecting an effect when one is actually present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established statistical knowledge about statistical power.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "7c961ca6-ac3e-4eb2-af26-e608fa7400b0",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C22",
+      "claim": "With small sample sizes, the distribution of the sample is more likely to deviate from normality.",
+      "claim_type": "EXPLICIT",
+      "source": "Another problem related to small sample size is that the distribution of the sample is more likely to deviate from normality, and the limited sample size makes it often impossible to rigorously test the assumption of normality (Ghasemi and Zahediasl, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ghasemi and Zahediasl, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "d6d1d1bc-a897-4c2b-ba6d-993bee058b75",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C23",
+      "claim": "Limited sample size makes it often impossible to rigorously test the assumption of normality.",
+      "claim_type": "EXPLICIT",
+      "source": "Another problem related to small sample size is that the distribution of the sample is more likely to deviate from normality, and the limited sample size makes it often impossible to rigorously test the assumption of normality (Ghasemi and Zahediasl, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ghasemi and Zahediasl, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "5d644f63-b948-484c-81bf-ecee098ac042",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C24",
+      "claim": "In regression analysis, deviations from the distribution might produce extreme outliers, resulting in spurious significant correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "In regression analysis, deviations from the distribution might produce extreme outliers, resulting in spurious significant correlations (see 'Spurious correlations' above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the discussion of spurious correlations earlier in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "e72317e0-1d5d-4412-a26a-cc673903a09d",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C25",
+      "claim": "Circular analysis is any form of analysis that retrospectively selects features of the data to characterise the dependent variables, resulting in a distortion of the resulting statistical test.",
+      "claim_type": "EXPLICIT",
+      "source": "Circular analysis is any form of analysis that retrospectively selects features of the data to characterise the dependent variables, resulting in a distortion of the resulting statistical test (Kriegeskorte et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kriegeskorte et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "67f18ac1-1ea1-4d16-a8df-600a016906e8",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C26",
+      "claim": "Circular analysis inherently relates to recycling the same data to first characterise the test variables and then to make statistical inferences from them.",
+      "claim_type": "EXPLICIT",
+      "source": "Circular analysis can take many shapes and forms, but it inherently relates to recycling the same data to first characterise the test variables and then to make statistical inferences from them, and is thus often referred to as 'double dipping' (Kriegeskorte et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kriegeskorte et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "e23db96e-68ec-4f79-9ede-78726d85c1b8",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C27",
+      "claim": "Circular analysis can result in significant interaction effects that could be observed in pure noise.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this significant interaction is a result of the distorting selection criterion and a combination of statistical artefacts (regression to the mean, floor/ceiling effects), and could therefore be observed in pure noise (Holmes, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Holmes, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "0006172c-ac50-4aa4-96e0-c0abf2f6d8e3",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C28",
+      "claim": "Neurons that by chance fire more strongly in the post manipulation measure are likely to show greater changes relative to the independent pre-manipulation measure, thus inflating the correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, neurons that by chance fire more strongly in the post manipulation measure are likely to show greater changes relative to the independent pre-manipulation measure, thus inflating the correlation (Holmes, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Holmes, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "93385b06-42ff-45fb-aed4-194447e534b5",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C29",
+      "claim": "Circular analysis recruits the noise inherent to any empirical data to inflate the statistical outcome, resulting in distorted and invalid statistical inference.",
+      "claim_type": "EXPLICIT",
+      "source": "However, circular analysis recruits the noise (inherent to any empirical data) to inflate the statistical outcome, resulting in distorted and hence invalid statistical inference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the discussion of circular analysis mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "635c878c-5a14-44b0-85ea-1b6c82e28aaf",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C30",
+      "claim": "Using flexibility in data analysis increases the probability of obtaining significant p-values.",
+      "claim_type": "EXPLICIT",
+      "source": "Using flexibility in data analysis (such as switched outcome parameters, adding covariates, undetermined or erratic pre-processing pipeline, post hoc outlier or subject exclusion; Wicherts et al., 2016) increases the probability of obtaining significant p-values (Simmons et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wicherts et al., 2016 and Simmons et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "18b99c06-409a-4fe6-8618-ad3b4fd2a11c",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C31",
+      "claim": "The more tests you run, the more likely you are to encounter a false positive result.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because normative statistics rely on probabilities and therefore the more tests you run the more likely you are to encounter a false positive result.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established statistical knowledge about multiple testing and Type I error rates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "5b44129b-903f-408f-8e77-6b9679674d03",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C33",
+      "claim": "Flexibility in data analysis is especially visible when the same community reports the same outcome variable but computes the value of this variable in different ways across papers.",
+      "claim_type": "EXPLICIT",
+      "source": "Flexibility in data analysis is especially visible when the same community reports the same outcome variable but computes the value of this variable in different ways across the paper (e.g. www.flexiblemeasures.com; Carp, 2012; Francis, 2013) or when clinical trials switch their outcomes (Altman et al., 2017; Goldacre et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Carp, 2012; Francis, 2013; Altman et al., 2017; and Goldacre et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "10a4cf06-2147-431b-8020-f937bd7ec1fd",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C34",
+      "claim": "Clinical trials sometimes switch their outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Flexibility in data analysis is especially visible when the same community reports the same outcome variable but computes the value of this variable in different ways across the paper (e.g. www.flexiblemeasures.com; Carp, 2012; Francis, 2013) or when clinical trials switch their outcomes (Altman et al., 2017; Goldacre et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Altman et al., 2017 and Goldacre et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "d510f1d8-0f6f-4f09-b7fe-08921166a16a",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C35",
+      "claim": "Conducting multiple comparisons during exploratory analysis can increase the probability of detecting an effect even if no such effect exists.",
+      "claim_type": "EXPLICIT",
+      "source": "When performed with frequentist statistics, conducting multiple comparisons during exploratory analysis can have profound consequences for the interpretation of significant findings. In any experimental design involving more than two conditions (or a comparison of two groups), exploratory analysis will involve multiple comparisons and will increase the probability of detecting an effect even if no such effect exists (false positive, type I error).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established statistical knowledge about multiple comparisons and Type I error rates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "29983c12-699d-491e-bac5-a498397997ed",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C36",
+      "claim": "In a 2 \u00d7 3 \u00d7 3 experimental design, the probability of finding at least one significant main or interaction effect is 30%, even when there is no effect.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in a 2 \u00d7 3 \u00d7 3 experimental design the probability of finding at least one significant main or interaction effect is 30%, even when there is no effect (Cramer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cramer et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "ef3da77f-ed94-49fa-8000-c8aedd7fede2",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C37",
+      "claim": "Bennett and colleagues identified a significant number of active voxels in a dead Atlantic Salmon during a 'mentalising' task when not correcting for multiple comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Bennett and colleagues (Bennett et al., 2009) identified a significant number of active voxels in a dead Atlantic Salmon (activated during a 'mentalising' task) when not correcting for multiple comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bennett et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "d6aec769-dd98-4186-a2f8-775e3f94e10d",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C38",
+      "claim": "Applying standard corrections for multiple comparisons resulted in no active voxels in the dead fish example.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, applying standard corrections for multiple comparisons unsurprisingly resulted in no active voxels in the dead fish example (Bennett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bennett et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "c56c7499-faec-494f-97b9-f172dac9e8d9",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C39",
+      "claim": "A non-significant p-value does not distinguish between the lack of an effect due to the effect being objectively absent or due to the insensitivity of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because a non-significant p-value does not distinguish between the lack of an effect due to the effect being objectively absent (contradictory evidence to the hypothesis) or due to the insensitivity of the data to enable to the researchers to rigorously evaluate the prediction (e.g. due to lack of statistical power, inappropriate experimental design, etc.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established statistical knowledge about the interpretation of non-significant results.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "6228c85f-0c81-448d-9637-f9b6fe77763e",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C40",
+      "claim": "Non-significant effects could mean a true null result, an underpowered genuine effect, or an ambiguous effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In simple words - non-significant effects could literally mean very different things - a true null result, an underpowered genuine effect, or an ambiguous effect (see Altman and Bland, 1995 for an example).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Altman and Bland, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "7b36baed-ba32-4992-9930-7d2393754e5e",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C41",
+      "claim": "A significant correlation between annual chocolate consumption and number of Nobel laureates for different countries (r(20)=.79; p<0.001) has led to the incorrect suggestion that chocolate intake provides nutritional ground for sprouting Nobel laureates.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a significant correlation observed between annual chocolate consumption and number of Nobel laureates for different countries (r(20)=.79; p<0.001) has led to the (incorrect) suggestion that chocolate intake provides nutritional ground for sprouting Nobel laureates (Maurage et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Maurage et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "a66e1a69-14ec-4e38-bd51-ec924c142470",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C42",
+      "claim": "Correlation alone cannot be used as evidence for a cause-effect relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation alone cannot be used as an evidence for a cause-effect relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge about the distinction between correlation and causation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "14eee59a-40b4-47ac-8ae7-d479e3381b17",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C43",
+      "claim": "Correlated occurrences may reflect direct or reverse causation, an unknown common cause, or a simple coincidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlated occurrences may reflect direct or reverse causation, but can also be due to an (unknown) common cause, or they may be a result of a simple coincidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge about the interpretation of correlations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "4a8d660f-c469-4e76-89f1-27528491d6df",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C44",
+      "claim": "No single p-value can reveal the plausibility, presence, truth, or importance of an association or effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We agree that no single p-value can reveal the plausibility, presence, truth, or importance of an association or effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' interpretation of current debates in statistics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "91f57dcc-9544-4f72-be2b-155196c68592",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C45",
+      "claim": "Banning p-values does not necessarily protect researchers from making incorrect inferences about their findings.",
+      "claim_type": "EXPLICIT",
+      "source": "However, banning p-values does not necessarily protect researchers from making incorrect inferences about their findings (Fricker et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Fricker et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "997632c6-e19e-4974-9432-1b26c7b09723",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C46",
+      "claim": "When applied responsibly, p-values can provide a valuable description of the results which can aid scientific communication.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied responsibly (Kmetz, 2019; Krueger and Heck, 2019; Lakens, 2019), p-values can provide a valuable description of the results, which at present can aid scientific communication (Calin-Jageman and Cumming, 2019), at least until a new consensus for interpreting statistical effects is established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kmetz, 2019; Krueger and Heck, 2019; Lakens, 2019; and Calin-Jageman and Cumming, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "8669c668-eb7a-4dd3-ab27-6e60751950fc",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C47",
+      "claim": "For any studies looking at the effect of an experimental manipulation on a variable over time, it is crucial to compare the effect of this experimental manipulation with the effect of a control manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, for any studies looking at the effect of an experimental manipulation on a variable over time, it is crucial to compare the effect of this experimental manipulation with the effect of a control manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge about experimental design principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "857e16fe-a480-4a4f-bf4d-a6cca174e04e",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C48",
+      "claim": "The control and experimental groups should be sampled at the same time and with randomised allocation to minimise any biases.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important that the control and experimental groups are sampled at the same time and with randomised allocation, to minimise any biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge about experimental design principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "bfba6aab-fff9-4188-8db3-1cc1aa669bea",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C49",
+      "claim": "The controlled manipulation should be otherwise identical to the experimental manipulation in terms of design and statistical power and only differ in the specific stimulus dimension or variable under manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideally, the controlled manipulation should be otherwise identical to the experimental manipulation in terms of design and statistical power and only differ in the specific stimulus dimension or variable under manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge about experimental design principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "db858c13-3ab7-4514-b6c8-607c4f2536e0",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C50",
+      "claim": "One can only conclude that the effect of an intervention is different from the effect of a control intervention through a direct statistical comparison between the two effects.",
+      "claim_type": "EXPLICIT",
+      "source": "One can only conclude that the effect of an intervention is different from the effect of a control intervention through a direct statistical comparison between the two effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established statistical knowledge about proper inference procedures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "dbb09226-0b50-455c-912c-c715b82f2db9",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C51",
+      "claim": "The experimental unit is the smallest observation that can be randomly and independently assigned, i.e. the number of independent values that are free to vary.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimental unit is the smallest observation that can be randomly and independently assigned, i.e. the number of independent values that are free to vary (Parsons et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Parsons et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "aadac361-5fc7-4453-b4d8-2ea3ac3a2d3c",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C52",
+      "claim": "In classical statistics, the experimental unit will reflect the degrees of freedom.",
+      "claim_type": "EXPLICIT",
+      "source": "In classical statistics, this unit will reflect the degrees of freedom (df): For example, when inferring group results, the experimental unit is the number of subjects tested, rather than the number of observations made within each subject.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established statistical knowledge about degrees of freedom.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "46b126dd-929f-4d27-9524-1a1c8a5dbb83",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C53",
+      "claim": "Selective analysis is perfectly justifiable when the results are statistically independent of the selection criterion under the null hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective analysis is perfectly justifiable when the results are statistically independent of the selection criterion under the null hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established statistical knowledge about valid selective analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "34950105-c40a-4d79-9921-35514fd0a96e",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C54",
+      "claim": "Defining the analysis criteria in advance and independently of the data will protect researchers from circular analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Defining the analysis criteria in advance and independently of the data will protect researchers from circular analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about how to avoid circular analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "dbc60d6c-bbde-41ca-a0c7-1ed2915a4b0d",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C55",
+      "claim": "The most straightforward solution to circular analysis is to use a different dataset or different part of your dataset for specifying the parameters for the analysis and for testing your predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, since circular analysis works by 'recruiting' noise to inflate the desired effect, the most straightforward solution is to use a different dataset (or different part of your dataset) for specifying the parameters for the analysis (e.g. selecting your sub-groups) and for testing your predictions (e.g. examining differences across the sub-groups).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about how to avoid circular analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "4f9dd164-763c-4220-95e9-7bde43deed85",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C56",
+      "claim": "Pre-registration of experiments can be performed after the results of a first experiment are known and before an internal replication of that effect is sought.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that pre-registration of experiments can be performed after the results of a first experiment are known and before an internal replication of that effect is sought.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge about pre-registration practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "9c052b29-83dc-4efd-a713-db3df65a73ba",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C57",
+      "claim": "Researchers should be transparent in the reporting of the results, e.g. distinguishing pre-planned versus exploratory analyses and predicted versus unexpected results.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers should be transparent in the reporting of the results, e.g. distinguishing pre-planned versus exploratory analyses and predicted versus unexpected results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents a recommendation based on inference about best practices.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "515f4e25-4312-4244-ad27-e2debee50808",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C58",
+      "claim": "Exploratory analyses using flexible data analysis are fine if they are reported and interpreted as such in a transparent manner and especially so if they serve as the basis for a replication with pre-specified analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "As we discuss below, exploratory analyses using flexible data analysis are fine if they are reported and interpreted as such in a transparent manner and especially so if they serve as the basis for a replication with pre-specified analyses (Curran-Everett and Milgrom, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Curran-Everett and Milgrom, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "38494c37-e547-44ff-9743-ecac61a58155",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C59",
+      "claim": "In a 2 \u00d7 3 \u00d7 3 experimental design, the larger the number of factors, the greater the number of tests that can be performed.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the larger the number of factors, the greater the number of tests that can be performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established statistical knowledge about factorial designs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "6ec3c324-9c65-4ff9-93d4-620eba473e65",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C60",
+      "claim": "When conducting exploratory analyses with a large set of variables, it is unacceptable for researchers to interpret results that have not survived correction for multiple comparisons without clear justification.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, when conducting exploratory analyses with a large set of variables (such as genes or MRI voxels), it is simply unacceptable for the researchers to interpret results that have not survived correction for multiple comparisons, without clear justification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents a recommendation based on inference about best practices.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "c0e4e0ca-4bfb-4b20-937f-0c55038bacad",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C61",
+      "claim": "There are many ways to correct for multiple comparisons, some more well accepted than others.",
+      "claim_type": "EXPLICIT",
+      "source": "Bear in mind that there are many ways to correct for multiple comparisons, some more well accepted than others (Eklund et al., 2016), and therefore the mere presence of some form of correction may not be sufficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Eklund et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "a75ba41a-c844-4fc8-970a-e7a5ab39b4d0",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C62",
+      "claim": "A non-significant p-value does not distinguish between the lack of an effect due to the effect being objectively absent or due to the insensitivity of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because a non-significant p-value does not distinguish between the lack of an effect due to the effect being objectively absent (contradictory evidence to the hypothesis) or due to the insensitivity of the data to enable to the researchers to rigorously evaluate the prediction (e.g. due to lack of statistical power, inappropriate experimental design, etc.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established statistical knowledge about the interpretation of non-significant results.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "29503d0b-d50b-4014-97dd-f0ed9c659e22",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C63",
+      "claim": "If a non-significant effect in a study with a large sample size is also very small in magnitude, it is unlikely to be theoretically meaningful.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, if a non-significant effect in a study with a large sample size is also very small in magnitude, it is unlikely to be theoretically meaningful whereas one with a moderate effect size could potentially warrant further research (Fethney, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Fethney, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "bd1ebf58-4e7a-47ed-9d9e-dd534450133e",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C64",
+      "claim": "A non-significant effect with a moderate effect size could potentially warrant further research.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, if a non-significant effect in a study with a large sample size is also very small in magnitude, it is unlikely to be theoretically meaningful whereas one with a moderate effect size could potentially warrant further research (Fethney, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Fethney, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "a90c443e-69b0-479d-b6c2-d093ce37abc1",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C65",
+      "claim": "Researchers should consider using statistical approaches that are capable of distinguishing between insufficient evidence and evidence that supports the null hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "When possible, researchers should consider using statistical approaches that are capable of distinguishing between insufficient (or ambiguous) evidence and evidence that supports the null hypothesis (e.g., Bayesian statistics; [Dienes, 2014], or equivalence tests [Lakens, 2017]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Dienes, 2014 and Lakens, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "098ef70b-0c1e-4eae-a4b8-f3c1416ff623",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C66",
+      "claim": "Researchers might have already determined a priori whether they have sufficient statistical power to identify the desired effect, or to determine whether the confidence intervals of this prior effect contain the null.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, researchers might have already determined a priori whether they have sufficient statistical power to identify the desired effect, or to determine whether the confidence intervals of this prior effect contain the null (Dienes, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dienes, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "f562be32-64de-4109-b95a-05ca85744c6a",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C67",
+      "claim": "Just because variability of two variables seems to linearly co-occur does not necessarily mean that there is a causal relationship between them.",
+      "claim_type": "EXPLICIT",
+      "source": "Just because variability of two variables seems to linearly co-occur does not necessarily mean that there is a causal relationship between them, even if such an association is plausible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge about the distinction between correlation and causation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "a3cb99d9-6b40-41ed-a238-e77f37ab4857",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C68",
+      "claim": "Researchers should only use causal language when a variable is precisely manipulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers should only use causal language when a variable is precisely manipulated and even then, they should be cautious about the role of third variables or confounding factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents a recommendation based on inference about best practices.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "b1baf47e-e48a-4f14-97f5-b1f09e2b146d",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "claim_id": "C69",
+      "claim": "Causal language should be avoided when the evidence is correlational.",
+      "claim_type": "EXPLICIT",
+      "source": "Otherwise, causal language should be avoided when the evidence is correlational.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents a recommendation based on inference about best practices.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d159d330-d8fd-4c24-8e09-0e5447f41723",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Adequate control conditions are essential in experimental designs measuring outcomes over time. Control groups must account for confounding factors like habituation, time passage, blinding, and sham interventions, and should be matched to experimental groups in design and statistical power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C47-C49 collectively establish well-accepted principles of experimental design. These are supported by established scientific knowledge (C1, C47-C49) and empirical evidence from cited literature (C2). The recommendations are standard practice in rigorous experimental research.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "74c27401-7260-4ceb-a4de-cadef730d3f5",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Statistical significance of correlations in separate groups does not indicate that the correlations differ between groups. Direct statistical comparison between groups is required to make such inferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C50 are well-supported by simulated data in Figure 1A demonstrating the problem, citation to appropriate statistical methods (Monte Carlo simulations), and established statistical principles. This addresses a common inferential error in comparative studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "a50c5926-06eb-4c36-8052-8934b1feea52",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Inflating the units of analysis by combining within-subject and between-subject measurements artificially increases degrees of freedom, lowering critical thresholds for significance and violating independence assumptions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 and C51-C52 provide a concrete numerical example demonstrating how combining pre/post measures across subjects inflates df from 8 to 18 and reduces critical R from 0.63 to 0.44. The claims are grounded in established statistical knowledge about degrees of freedom and independence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "476ab7f5-59ac-487f-84aa-5834616f6d8d",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mixed-effects linear models can address the issue of inflated units of analysis by properly modeling within-subject and between-subject variability, though they require advanced statistical understanding and can be easily misused.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 are supported by citations to relevant literature (Boisgontier and Cheval, 2016; Matuschek et al., 2017) and established statistical knowledge. The claims appropriately balance the benefits and limitations of this approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "b32a70f2-0b01-463d-8cc7-200e0ab5510a",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Spurious correlations can arise from outliers or from pooling data from distinct subgroups. The Pearson correlation coefficient artificially increases as outliers or subgroups become more distant from the main population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 are directly supported by simulated data presented in Figure 2, which systematically demonstrates how single outliers (panels A-C) and subgroup clustering (panels D-F) inflate correlation coefficients. The visual evidence clearly illustrates the phenomenon.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "8120e879-3cff-439b-95a6-9d180a1ee61b",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Robust correlation methods (bootstrapping, winsorizing, skipped correlations) are less sensitive to outliers than parametric methods because they account for data structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 are supported by citations to appropriate statistical literature (Salibian-Barrera and Zamar, 2002; Wilcox, 2016). These represent established statistical methods for addressing violations of parametric assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "3c0322dc-f3a0-45b4-a4f8-c79d6156ef6a",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Small sample sizes lead to detection of only large effects, overestimation of effect sizes, and high uncertainty. Simulations show false-positive correlations range from |0.5-0.75| with N=15 versus |0.2-0.25| with N=100.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C19-C21 are supported by citation to Button et al. (2013), simulation data from the authors' code repository, and established statistical principles about power. The specific numerical ranges from simulations provide concrete evidence of the magnitude of overestimation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "93ae913b-6021-494a-985b-18e9e144e971",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Small sample sizes increase likelihood of deviations from normality, make it difficult to test normality assumptions, and can produce extreme outliers leading to spurious correlations in regression analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by citation to Ghasemi and Zahediasl (2012) and logical inference connecting small samples to distributional problems and outliers. The connection to spurious correlations (C24) appropriately references earlier discussion in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "1270b8f9-5fb5-4584-b319-842aecbbdfe8",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Circular analysis (double-dipping) retrospectively selects data features to characterize dependent variables, recruiting noise to inflate statistical outcomes. This can produce significant effects observable in pure noise through regression to the mean and other artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 are well-supported by multiple citations to foundational literature on circular analysis (Kriegeskorte et al., 2009, 2010; Holmes, 2009). The neuronal firing example (C28) provides a concrete illustration of the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "f377dbeb-d0d1-470d-9013-5110ec0820ff",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Circular analysis can be avoided by defining analysis criteria in advance independently of the data, or by using separate datasets/data partitions for parameter specification versus hypothesis testing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 provide methodologically sound solutions to circular analysis based on established statistical principles. The recommendations follow logically from the definition of the problem and represent standard practices for avoiding bias.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "de1ed675-c7e8-4592-9df1-c3381f9d20ba",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Flexibility in data analysis (switched outcomes, added covariates, post-hoc exclusions) increases the probability of obtaining significant p-values. This is evident when communities compute the same variable differently across papers or when clinical trials switch outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31, C33-C34 are supported by multiple citations (Wicherts et al., 2016; Simmons et al., 2011; Carp, 2012; Francis, 2013; Altman et al., 2017; Goldacre et al., 2019) and established statistical knowledge about multiple testing. The examples provide concrete evidence of the problem.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "ae12b0fa-f628-4441-b62c-514791d5de62",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Pre-registration can occur after initial results are known but before replication. Researchers should transparently distinguish pre-planned versus exploratory analyses, and exploratory analyses are acceptable if reported transparently and used as basis for pre-specified replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 represent reasonable recommendations for research practice supported by citation to Curran-Everett and Milgrom (2013) and established knowledge about pre-registration. The nuanced position on exploratory analysis is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "85771f75-99f8-4e9d-8c82-0e5d2fe0053b",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Multiple comparisons in exploratory analysis increase the probability of false positives. In a 2\u00d73\u00d73 design, the probability of finding at least one significant effect is 30% even when no effect exists, and larger numbers of factors enable more tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36, C59 are supported by citation to Cramer et al. (2016) providing the specific 30% false positive rate, and established statistical knowledge about family-wise error rates. The numerical example provides concrete evidence of the magnitude of the problem.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "2da768fa-193d-4e09-ba4d-97ef75c80aad",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Bennett et al. identified significant active voxels in a dead Atlantic Salmon during a mentalizing task without multiple comparison correction, but applying standard corrections eliminated all active voxels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by citation to Bennett et al. (2009). This famous example effectively demonstrates the consequences of failing to correct for multiple comparisons in neuroimaging data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "5bfea20a-3d1b-4c82-85e7-03117eb90d35",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "When conducting exploratory analyses with large variable sets, interpreting results without multiple comparison correction is unacceptable without justification. However, not all correction methods are equally well-accepted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 represent reasonable recommendations supported by citation to Eklund et al. (2016) regarding variability in correction methods. The position appropriately balances the need for correction with recognition that methodology matters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "92ca2761-647d-4350-9861-1b880674e250",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Non-significant p-values do not distinguish between true absence of effect versus insensitivity of data. Non-significant effects could represent true null results, underpowered genuine effects, or ambiguous effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40, C62 are supported by citation to Altman and Bland (1995) and established statistical knowledge about interpretation of non-significant results. This addresses a fundamental and common misinterpretation in frequentist statistics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "cd754754-4f7e-4830-9f5d-3881c5ea3f63",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Non-significant effects with small magnitude in large samples are unlikely to be meaningful, while those with moderate effect sizes may warrant further research. Alternative statistical approaches (Bayesian statistics, equivalence tests) or a priori power analyses can better distinguish insufficient evidence from evidence supporting the null.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 are supported by citations to Fethney (2010), Dienes (2014), and Lakens (2017). The recommendations provide practical guidance for interpreting non-significant results and represent established alternative approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "979a9e2e-cb24-4dfa-a2ae-a1b2abd2b973",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Correlation does not imply causation. The significant correlation (r=0.79, p<0.001) between chocolate consumption and Nobel laureates incorrectly suggested causation. Correlated occurrences may reflect direct/reverse causation, common causes, or coincidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43, C67 are supported by citation to Maurage et al. (2013) providing a memorable example, and established scientific knowledge about correlation versus causation. This addresses perhaps the most fundamental inferential error in statistics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "451491b4-780d-4015-8a93-de0cc6e8aa08",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Causal language should only be used when variables are precisely manipulated, with caution about confounders. Causal language should be avoided when evidence is correlational.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 represent appropriate recommendations based on inference about best practices for scientific communication. These follow logically from the distinction between correlation and causation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    },
+    {
+      "id": "a103e6e9-c4d4-44e9-b429-a3db797ef292",
+      "content_id": "22a2fb56-30cc-49f1-9e04-d3e8d0eaaab4",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "No single p-value reveals the plausibility, presence, truth, or importance of an effect. Banning p-values does not necessarily prevent incorrect inferences, and when applied responsibly, p-values can aid scientific communication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by citations to recent literature on the p-value debate (Fricker et al., 2019; Kmetz, 2019; Krueger and Heck, 2019; Lakens, 2019; Calin-Jageman and Cumming, 2019). The position represents a balanced perspective on current statistical controversies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:38:25.426953Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a92ef036-c5f3-455a-819a-a3b9bf553b2a",
+      "result_id": "d159d330-d8fd-4c24-8e09-0e5447f41723"
+    },
+    {
+      "claim_id": "eb19856a-af72-4865-8a81-a406846c023b",
+      "result_id": "d159d330-d8fd-4c24-8e09-0e5447f41723"
+    },
+    {
+      "claim_id": "8669c668-eb7a-4dd3-ab27-6e60751950fc",
+      "result_id": "d159d330-d8fd-4c24-8e09-0e5447f41723"
+    },
+    {
+      "claim_id": "857e16fe-a480-4a4f-bf4d-a6cca174e04e",
+      "result_id": "d159d330-d8fd-4c24-8e09-0e5447f41723"
+    },
+    {
+      "claim_id": "bfba6aab-fff9-4188-8db3-1cc1aa669bea",
+      "result_id": "d159d330-d8fd-4c24-8e09-0e5447f41723"
+    },
+    {
+      "claim_id": "887ea478-d404-4b65-a873-03046d455185",
+      "result_id": "74c27401-7260-4ceb-a4de-cadef730d3f5"
+    },
+    {
+      "claim_id": "77fc148b-ca1a-483e-b272-adee295dcb59",
+      "result_id": "74c27401-7260-4ceb-a4de-cadef730d3f5"
+    },
+    {
+      "claim_id": "db858c13-3ab7-4514-b6c8-607c4f2536e0",
+      "result_id": "74c27401-7260-4ceb-a4de-cadef730d3f5"
+    },
+    {
+      "claim_id": "0e518eb7-34c4-40ff-8d64-a752b8d05cee",
+      "result_id": "a50c5926-06eb-4c36-8052-8934b1feea52"
+    },
+    {
+      "claim_id": "1c280942-a096-48f2-90df-3ae669ca6c08",
+      "result_id": "a50c5926-06eb-4c36-8052-8934b1feea52"
+    },
+    {
+      "claim_id": "48c764e4-bf9c-4b24-b3cf-e4a8570430b8",
+      "result_id": "a50c5926-06eb-4c36-8052-8934b1feea52"
+    },
+    {
+      "claim_id": "dbb09226-0b50-455c-912c-c715b82f2db9",
+      "result_id": "a50c5926-06eb-4c36-8052-8934b1feea52"
+    },
+    {
+      "claim_id": "aadac361-5fc7-4453-b4d8-2ea3ac3a2d3c",
+      "result_id": "a50c5926-06eb-4c36-8052-8934b1feea52"
+    },
+    {
+      "claim_id": "b715c683-c573-4337-a23e-5a6da670a59f",
+      "result_id": "476ab7f5-59ac-487f-84aa-5834616f6d8d"
+    },
+    {
+      "claim_id": "ff0b963a-8d40-4530-83c2-5f375456a529",
+      "result_id": "476ab7f5-59ac-487f-84aa-5834616f6d8d"
+    },
+    {
+      "claim_id": "8f0fbe0b-a9a2-4121-8d3c-6931622c8d3f",
+      "result_id": "476ab7f5-59ac-487f-84aa-5834616f6d8d"
+    },
+    {
+      "claim_id": "1b750a11-41c1-494f-85a2-c82eee64e34c",
+      "result_id": "b32a70f2-0b01-463d-8cc7-200e0ab5510a"
+    },
+    {
+      "claim_id": "a470ee90-ac40-4db8-b6f0-b44213baafdb",
+      "result_id": "b32a70f2-0b01-463d-8cc7-200e0ab5510a"
+    },
+    {
+      "claim_id": "47dece3a-e3f0-458d-acb6-2557e5f8210a",
+      "result_id": "b32a70f2-0b01-463d-8cc7-200e0ab5510a"
+    },
+    {
+      "claim_id": "03e8a97b-24aa-4e61-86e0-9ee2cf543111",
+      "result_id": "b32a70f2-0b01-463d-8cc7-200e0ab5510a"
+    },
+    {
+      "claim_id": "52fa05d0-da96-49e9-8b1f-27c6870b9c1f",
+      "result_id": "8120e879-3cff-439b-95a6-9d180a1ee61b"
+    },
+    {
+      "claim_id": "20daea0d-3bf0-4e9c-b073-15585cdbf1d9",
+      "result_id": "8120e879-3cff-439b-95a6-9d180a1ee61b"
+    },
+    {
+      "claim_id": "7a4a5ac0-d0a3-45c1-be2e-5d1f01a91597",
+      "result_id": "3c0322dc-f3a0-45b4-a4f8-c79d6156ef6a"
+    },
+    {
+      "claim_id": "faef6920-3930-4603-b0fa-695e0d7f9e4e",
+      "result_id": "3c0322dc-f3a0-45b4-a4f8-c79d6156ef6a"
+    },
+    {
+      "claim_id": "e9e2a60f-0fce-4ca4-ad9b-6222ba123746",
+      "result_id": "3c0322dc-f3a0-45b4-a4f8-c79d6156ef6a"
+    },
+    {
+      "claim_id": "f2d8d803-0b1a-430a-9dd3-6c5a2245c6cc",
+      "result_id": "3c0322dc-f3a0-45b4-a4f8-c79d6156ef6a"
+    },
+    {
+      "claim_id": "7c961ca6-ac3e-4eb2-af26-e608fa7400b0",
+      "result_id": "93ae913b-6021-494a-985b-18e9e144e971"
+    },
+    {
+      "claim_id": "d6d1d1bc-a897-4c2b-ba6d-993bee058b75",
+      "result_id": "93ae913b-6021-494a-985b-18e9e144e971"
+    },
+    {
+      "claim_id": "5d644f63-b948-484c-81bf-ecee098ac042",
+      "result_id": "93ae913b-6021-494a-985b-18e9e144e971"
+    },
+    {
+      "claim_id": "e72317e0-1d5d-4412-a26a-cc673903a09d",
+      "result_id": "1270b8f9-5fb5-4584-b319-842aecbbdfe8"
+    },
+    {
+      "claim_id": "67f18ac1-1ea1-4d16-a8df-600a016906e8",
+      "result_id": "1270b8f9-5fb5-4584-b319-842aecbbdfe8"
+    },
+    {
+      "claim_id": "e23db96e-68ec-4f79-9ede-78726d85c1b8",
+      "result_id": "1270b8f9-5fb5-4584-b319-842aecbbdfe8"
+    },
+    {
+      "claim_id": "0006172c-ac50-4aa4-96e0-c0abf2f6d8e3",
+      "result_id": "1270b8f9-5fb5-4584-b319-842aecbbdfe8"
+    },
+    {
+      "claim_id": "93385b06-42ff-45fb-aed4-194447e534b5",
+      "result_id": "1270b8f9-5fb5-4584-b319-842aecbbdfe8"
+    },
+    {
+      "claim_id": "46b126dd-929f-4d27-9524-1a1c8a5dbb83",
+      "result_id": "f377dbeb-d0d1-470d-9013-5110ec0820ff"
+    },
+    {
+      "claim_id": "34950105-c40a-4d79-9921-35514fd0a96e",
+      "result_id": "f377dbeb-d0d1-470d-9013-5110ec0820ff"
+    },
+    {
+      "claim_id": "dbc60d6c-bbde-41ca-a0c7-1ed2915a4b0d",
+      "result_id": "f377dbeb-d0d1-470d-9013-5110ec0820ff"
+    },
+    {
+      "claim_id": "635c878c-5a14-44b0-85ea-1b6c82e28aaf",
+      "result_id": "de1ed675-c7e8-4592-9df1-c3381f9d20ba"
+    },
+    {
+      "claim_id": "18b99c06-409a-4fe6-8618-ad3b4fd2a11c",
+      "result_id": "de1ed675-c7e8-4592-9df1-c3381f9d20ba"
+    },
+    {
+      "claim_id": "5b44129b-903f-408f-8e77-6b9679674d03",
+      "result_id": "de1ed675-c7e8-4592-9df1-c3381f9d20ba"
+    },
+    {
+      "claim_id": "10a4cf06-2147-431b-8020-f937bd7ec1fd",
+      "result_id": "de1ed675-c7e8-4592-9df1-c3381f9d20ba"
+    },
+    {
+      "claim_id": "4f9dd164-763c-4220-95e9-7bde43deed85",
+      "result_id": "ae12b0fa-f628-4441-b62c-514791d5de62"
+    },
+    {
+      "claim_id": "9c052b29-83dc-4efd-a713-db3df65a73ba",
+      "result_id": "ae12b0fa-f628-4441-b62c-514791d5de62"
+    },
+    {
+      "claim_id": "515f4e25-4312-4244-ad27-e2debee50808",
+      "result_id": "ae12b0fa-f628-4441-b62c-514791d5de62"
+    },
+    {
+      "claim_id": "d510f1d8-0f6f-4f09-b7fe-08921166a16a",
+      "result_id": "85771f75-99f8-4e9d-8c82-0e5d2fe0053b"
+    },
+    {
+      "claim_id": "29983c12-699d-491e-bac5-a498397997ed",
+      "result_id": "85771f75-99f8-4e9d-8c82-0e5d2fe0053b"
+    },
+    {
+      "claim_id": "38494c37-e547-44ff-9743-ecac61a58155",
+      "result_id": "85771f75-99f8-4e9d-8c82-0e5d2fe0053b"
+    },
+    {
+      "claim_id": "ef3da77f-ed94-49fa-8000-c8aedd7fede2",
+      "result_id": "2da768fa-193d-4e09-ba4d-97ef75c80aad"
+    },
+    {
+      "claim_id": "d6aec769-dd98-4186-a2f8-775e3f94e10d",
+      "result_id": "2da768fa-193d-4e09-ba4d-97ef75c80aad"
+    },
+    {
+      "claim_id": "6ec3c324-9c65-4ff9-93d4-620eba473e65",
+      "result_id": "5bfea20a-3d1b-4c82-85e7-03117eb90d35"
+    },
+    {
+      "claim_id": "c0e4e0ca-4bfb-4b20-937f-0c55038bacad",
+      "result_id": "5bfea20a-3d1b-4c82-85e7-03117eb90d35"
+    },
+    {
+      "claim_id": "c56c7499-faec-494f-97b9-f172dac9e8d9",
+      "result_id": "92ca2761-647d-4350-9861-1b880674e250"
+    },
+    {
+      "claim_id": "6228c85f-0c81-448d-9637-f9b6fe77763e",
+      "result_id": "92ca2761-647d-4350-9861-1b880674e250"
+    },
+    {
+      "claim_id": "a75ba41a-c844-4fc8-970a-e7a5ab39b4d0",
+      "result_id": "92ca2761-647d-4350-9861-1b880674e250"
+    },
+    {
+      "claim_id": "29503d0b-d50b-4014-97dd-f0ed9c659e22",
+      "result_id": "cd754754-4f7e-4830-9f5d-3881c5ea3f63"
+    },
+    {
+      "claim_id": "bd1ebf58-4e7a-47ed-9d9e-dd534450133e",
+      "result_id": "cd754754-4f7e-4830-9f5d-3881c5ea3f63"
+    },
+    {
+      "claim_id": "a90c443e-69b0-479d-b6c2-d093ce37abc1",
+      "result_id": "cd754754-4f7e-4830-9f5d-3881c5ea3f63"
+    },
+    {
+      "claim_id": "098ef70b-0c1e-4eae-a4b8-f3c1416ff623",
+      "result_id": "cd754754-4f7e-4830-9f5d-3881c5ea3f63"
+    },
+    {
+      "claim_id": "7b36baed-ba32-4992-9930-7d2393754e5e",
+      "result_id": "979a9e2e-cb24-4dfa-a2ae-a1b2abd2b973"
+    },
+    {
+      "claim_id": "a66e1a69-14ec-4e38-bd51-ec924c142470",
+      "result_id": "979a9e2e-cb24-4dfa-a2ae-a1b2abd2b973"
+    },
+    {
+      "claim_id": "14eee59a-40b4-47ac-8ae7-d479e3381b17",
+      "result_id": "979a9e2e-cb24-4dfa-a2ae-a1b2abd2b973"
+    },
+    {
+      "claim_id": "f562be32-64de-4109-b95a-05ca85744c6a",
+      "result_id": "979a9e2e-cb24-4dfa-a2ae-a1b2abd2b973"
+    },
+    {
+      "claim_id": "a3cb99d9-6b40-41ed-a238-e77f37ab4857",
+      "result_id": "451491b4-780d-4015-8a93-de0cc6e8aa08"
+    },
+    {
+      "claim_id": "b1baf47e-e48a-4f14-97f5-b1f09e2b146d",
+      "result_id": "451491b4-780d-4015-8a93-de0cc6e8aa08"
+    },
+    {
+      "claim_id": "4a8d660f-c469-4e76-89f1-27528491d6df",
+      "result_id": "a103e6e9-c4d4-44e9-b429-a3db797ef292"
+    },
+    {
+      "claim_id": "91f57dcc-9544-4f72-be2b-155196c68592",
+      "result_id": "a103e6e9-c4d4-44e9-b429-a3db797ef292"
+    },
+    {
+      "claim_id": "997632c6-e19e-4974-9432-1b26c7b09723",
+      "result_id": "a103e6e9-c4d4-44e9-b429-a3db797ef292"
+    }
+  ],
+  "comparisons": []
+}

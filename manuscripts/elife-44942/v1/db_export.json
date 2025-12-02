@@ -1,0 +1,1826 @@
+{
+  "submission": {
+    "id": "ac28570f-1799-4632-9a74-24effa3c21d5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:58:42.806107Z",
+    "updated_at": "2025-12-02T11:58:42.806107Z"
+  },
+  "content": [
+    {
+      "id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "submission_id": "ac28570f-1799-4632-9a74-24effa3c21d5",
+      "content_type": "manuscript",
+      "content_text": "# Parental vaccination to reduce measles immunity gaps in Italy\n\n## Authors\n\n- Valentina Marziano<sup>1</sup> ([ORCID: 0000-0003-2842-7906](https://orcid.org/0000-0003-2842-7906)) \u2020\n- Piero Poletti<sup>1</sup>\n- Filippo Trentini<sup>1</sup>\n- Alessia Melegaro<sup>2</sup> ([ORCID: 0000-0003-2221-8898](https://orcid.org/0000-0003-2221-8898))\n- Marco Ajelli<sup>1</sup>\n- Stefano Merler<sup>1</sup>\n\n### Affiliations\n\n1. Center for Information Technology Fondazione Bruno Kessler Trento Italy\n2. Department of Social and Political Sciences Bocconi University Milano Italy\n3. Carlo F Dondena Centre for Research on Social Dynamics and Public Policy Bocconi University Milano Italy\n4. Laboratory for the Modeling of Biological and Socio-Technical Systems Northeastern University Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHigh-income countries are experiencing measles reemergence as the result of suboptimal vaccine uptake and marked immunity gaps among adults. In 2017, the Italian Government introduced mandatory vaccination at school entry for ten infectious diseases, including measles. However, sustainable and effective vaccination strategies targeting adults are still lacking. We use a data-driven model of household demography to estimate the potential impact on future measles epidemiology of a novel immunization strategy, to be implemented on top of the 2017 regulation, which consists of offering measles vaccine to the parents of children who get vaccinated. Model simulations suggest that the current vaccination efforts in Italy would not be sufficient to interrupt measles transmission before 2045 because of the frequency of susceptible individuals between 17 and 44 years of age. The integration of the current policy with parental vaccination has the potential to reduce susceptible adults by 17\u201335%, increasing the chance of measles elimination before 2045 up to 78.9\u201396.5%.\n\n## Introduction\n\nThe Global Measles and Rubella Strategic Plan 2012\u20132020 set the ambitious goal of eliminating measles in at least five World Health Organization (WHO) regions by 2020. Two years before the deadline, only the Americas have achieved measles elimination. Measles is endemic in 14 countries of the WHO European Region, including high-income countries such as Germany, Belgium, France, and Italy (World Health Organization Regional Office for Europe, 2016), and it still represents a major concern for public health.\n\nIn 2017, Italy experienced one of the largest measles outbreaks of the past decade in the European Region with four deaths and 5098 cases, 4042 of which were confirmed by positive laboratory results (Italian National Institute of Health, 2017; European Centre for Disease Prevention and Control, 2018). The highest incidence was observed in infants under one year of age. About 70% of the reported cases were older than 20 years, with a median age of 27\u00a0years (Italian National Institute of Health, 2017; Filia et al., 2017), suggesting that measles circulation in Italy is at least partially supported by transmission between adults. Significant immunity gaps in these age segments of the population have been highlighted by a serological screening of the population (Rota et al., 2008) and by\u00a0recent modeling studies analyzing long-term processes that\u00a0affect measles transmission dynamics in the Italian population (Merler and Ajelli, 2014; Trentini et al., 2017). The high fraction of measles-susceptible individuals\u00a0of between 15 and 45 years of age is the result of past suboptimal routine vaccination coverage and the absence of major nationwide epidemics in recent decades, which allowed adolescents to escape both vaccination and natural infection (Filia et al., 2017; Trentini et al., 2017). In Italy, the first measles national immunization program was setup in 1983 with a\u00a0single dose of measles vaccine being\u00a0administered at 9 months of age. A second dose program was introduced in 1999. However, routine vaccination coverage remained below 80% until 2003, the year of approval of the Italian National Plan for the elimination of Measles and Congenital Rubella. Thereafter, vaccine uptake levels have progressively increased, even though a decrease in coverage has been detected\u00a0in most recent years, possibly associated with vaccine hesitancy (Filia et al., 2017; Merler and Ajelli, 2014; Giambi et al., 2018). As a matter of fact, the national coverage reached a peak of 91% in 2010, which is well below the 95% threshold generally considered to\u00a0be\u00a0necessary for measles elimination (Anderson and May, 1991).\n\nIn July 2017, the Italian Government approved a regulation (119/2017) requiring parents to vaccinate their children before school entry against ten infectious diseases,\u00a0including measles (Signorelli et al., 2018; D\u2019Ancona et al., 2018; Italian Ministry of Health, 2017). Vaccination against measles is now free of charge and mandatory for all children under 16 years. Unvaccinated children are not allowed to attend kindergartens, and financial penalties are imposed on\u00a0the parents of unvaccinated students attending higher school levels. This regulation has the potential to increase vaccine uptake in new birth cohorts and to immunize school-age children who have escaped routine vaccination (Trentini et al., 2019). However, the new policy will not impact the existing immunity gaps in older age groups. In particular, the achievement and maintenance of high vaccination coverage among children may not be enough to avoid the reemergence of measles in the future (Trentini et al., 2017; Trentini et al., 2019; Durrheim, 2017). In order to progress towards measles elimination, it is thus crucial for Italy to identify feasible, sustainable, and effective strategies to reduce the number of susceptible individuals among those who have already left the school system (Filia et al., 2017; Trentini et al., 2017; Durrheim, 2017; Thompson, 2017).\n\nThe aim of this work is to propose and investigate the effectiveness of a vaccination strategy to be introduced on top of the current policy. The proposed strategy consists of offering vaccination to the\u00a0parents of all of\u00a0the\u00a0children who receive any measles vaccine dose.\n\n## Materials and methods\n\nWe simulated the socio-demographic structure of the Italian population over the 2017\u20132045\u00a0period, using an individual-based model of household generation and taking advantage of projections on the future evolution of the age distribution of the Italian population, as provided by the Italian National\u00a0Institute of Statistics (ISTAT) (see Supplementary file 1) (Italian National Institute of Statistics, 2018; Billari et al., 2012). In the model, individuals are grouped into households following a heuristic approach similar to those previously introduced in the literature (see Appendix\u00a01) (Fumanelli et al., 2012; Marziano et al., 2017).\n\nThe epidemiological status of the population is initialized at the beginning of 2017 using 100 stochastic realizations of the age-specific measles immunity profile estimated for Italy (Figure 1A) (Trentini et al., 2017). Measles vaccination between 2017 and 2045 is simulated by mimicking vaccination activities carried out during each year, taking into account the age and immunological status of each individual and keeping track of the vaccination history of the individual themselves\u00a0and of her/his household members.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44942/elife-44942-fig1-v1.jpg)\n\n**Figure 1.:** (A) Mean measles age-specific epidemiological status as estimated by Trentini et al. (2017)\u00a0at the beginning of the year 2017. Shown for each age is the percentage of individuals who\u00a0are\u00a0susceptible to infection or protected against infection by immunity provided by maternal antibodies and by immunity acquired through natural infection or routine (first or second dose) vaccination. (B) The\u00a0age distribution of susceptible individuals at the beginning of 2017, as simulated in our model (orange), and the\u00a0age distribution of suspected measles cases reported during 2017 to the National Measles and Rubella Integrated Surveillance System (green) (Italian National Institute of Health, 2017). (C) Mean yearly fraction of susceptible individuals in Italy as estimated by the model for the period 2017\u20132045 under the \u2018current\u2019 vaccination program. Different colors correspond to different age groups; vertical bars represent 95% confidence\u00a0intervals\u00a0(CI) of model simulations. (D) Mean measles age-specific epidemiological status as obtained by the model for 2045 under the \u2018current\u2019 vaccination program. Shown for each age is the percentage of individuals who\u00a0are\u00a0susceptible to infection or protected against infection by maternal antibodies and by immunity acquired through natural infection, routine (first or second dose) vaccination or vaccination at school entry.\n\nTwo vaccination programs are simulated. The first vaccination program, referred to as the\u00a0\u2018current\u2019\u00a0program, corresponds to the vaccination policy currently in place in Italy, which consists of the routine vaccination of children at 15 months of age, the administration of a second booster dose at 5 years of age, and the check for compliance with this two-dose schedule at both pre-primary and primary school entry. Specifically, as a consequence of the 2017 regulation, children must have received one dose when entering pre-primary schools (at about 3 years of age) and two doses when entering primary schools (at about 6 years of age). The operating guidelines provided by the Ministry of Health also indicate the implementation during the transitional year 2017 of a catch-up campaign targeting all individuals below the age of 16 years who were not compliant with the two-dose schedule (D\u2019Ancona et al., 2018;\u00a0Italian Ministry of Health, 2018).\u00a0Accordingly, in the model, routine vaccination with two-doses is performed every year while a catch-up campaign is simulated in 2017. In\u00a0addition, from 2018 onwards, measles vaccine is annually offered at pre-primary and primary school entry (i.e., at 3 and 6 years of age) to all children who are not compliant with the routine schedule. Coverage levels for the first and second doses of routine vaccination are assumed to be constant over time and set equal to the most recent estimates of measles vaccination coverage at the national level:\u00a085% and 83%, respectively (World Health Organization, 2016). In our simulation, the first dose is administered to children who have never been vaccinated and the second dose is administered to those who have only received one dose. We assume the same vaccination coverage for the 2017 catch-up campaign and for vaccination at school entry. In particular, for these vaccination activities, we assume a baseline coverage level of 50%, which corresponds to current estimates of the impact of the new regulation on measles vaccine uptake in the country (Italian Ministry of Health, 2019). Specifically, the coverage level at pre-primary school entry represents the percentage of vaccine uptake among 3-year-old children who have never been vaccinated, whereas the coverage at primary school entry represents the percentage of vaccine uptake among children who have received fewer than two doses.\n\nA second vaccination program, referred to as \u2018parental vaccination\u2019, consists of the implementation from 2018 onwards of a novel strategy targeting the\u00a0parents of vaccinated children on top of the current program. This supplementary immunization consists of offering measles vaccination to the\u00a0parents of children who are receiving any dose of measles vaccine. In our simulation, parental vaccination is offered only once to each household, the first time the\u00a0parents bring one of their children to be vaccinated under the current policy. In particular, we evaluate the impact of parental vaccination under three different coverage scenarios: 50%, 75% and 99%. These percentages represent the proportion of parents who are vaccinated as\u00a0part\u00a0of this strategy among all eligible parents, whose exact number\u00a0depends on the coverage achieved\u00a0in childhood vaccination programs. We assume that a single vaccine dose is offered to each parent during parental vaccination. In all the considered scenarios, measles vaccine efficacy is set at 95% (De Serres et al., 1995).\n\nThe effectiveness of each vaccination program is evaluated in terms of its impact on the overall and age-specific susceptibility to\u00a0infection\u00a0of the Italian population, on the effective reproduction number Re\u00a0over the period 2017\u20132045, and on the amount of time required to achieve measles elimination. The effective reproductive number Re represents the expected number of secondary cases generated by one typical infected individual in a partially immune population, where the immunity within the population may be due to either vaccination or natural infection. Re provides important indications of the transmission potential of the virus in the population. If Re\u00a0>\u00a01 the infection may spread in the population; otherwise, the infection will die out. The year of measles elimination is here defined as the first year between 2017 and 2045, in which Re falls below 1.\n\nEstimates of Re between 2017 and 2045 are obtained as follows:\n\nThe\u00a0results presented in this paper are based on 1000 different model realizations for each vaccination scenario and include uncertainty regarding: the demographic projections of the age structure of the Italian population over the\u00a02018\u20132045 period\u00a0(Italian National Institute of Statistics, 2018); the\u00a0age-specific measles immunity profiles estimated for Italy for 2017 (Trentini et al., 2017); the\u00a0estimated growth rate r of the 2017 measles epidemic; and the\u00a0age-specific mixing patterns of the Italian population (Mossong et al., 2008). Details are reported in Appendix\u00a01 and all data required by our simulations are provided as Supplementary Files.\n\n### Sensitivity analysis\n\nWe perform different sensitivity analyses to assess the robustness of the obtained estimates when considering:\n\nIn Appendix\u00a01, we also report the results obtained when measles epidemiology is simulated by considering the vaccination strategy adopted in Italy before the introduction of mandatory vaccination at school entry in July 2017, and present a sensitivity analysis to assess the robustness of the estimates of the exponential growth rate r associated with the 2017 epidemic when including possible underreporting of cases (Ciofi Degli Atti et al., 2002).\n\n## Results\n\nFrom the analysis of measles cases reported during the 2017 outbreak, we estimated an effective reproduction number of 1.66 (95% CI 1.55\u20131.76). According to our simulations based on the estimates provided by Trentini et al. (2017) at the beginning of 2017, 8.1% (95% CI 7.3\u20138.9) of the Italian population was susceptible to measles. About one third of the\u00a0susceptible\u00a0individuals were younger than 16 years, whereas 60% of them were aged between 18 and 45 years (Figure 1A). We estimate that the number of measles cases reported during the 2017 Italian outbreak represented only 0.1% (95% CI 0.09\u20130.12) of the susceptible population in Italy. This implies that, in Italy, about 4.9 million (95% CI 4.4\u20135.4) people may still be susceptible to measles infection. The age distribution of measles susceptible individuals matches the fraction of cases by age group reported during the 2017 outbreak (Figure 1B), thereby confirming the reliability of simulated immunity gaps in the population (Durrheim, 2016). According to our results, the catch-up campaign implemented in 2017 under the current program has contributed the\u00a0immunization\u00a0of 445189 (95% CI: 394797\u2013487621) susceptible children under 16 years of age, producing a 9% reduction in the overall number of susceptible individuals in 2018 (Figure 1C). However, the obtained results show that after this initial drop, the overall fraction of susceptibles would progressively increase in the next decades, reaching 8.8% (95% CI 8.1\u20139.5) in 2045 (Figure 1C). This increase is ascribable to the replacement of elderly individuals, who are predominantly immune because of natural infection, with new birth cohorts that have been only partially immunized as a consequence of suboptimal coverage (Figure 1A and D). In particular, we estimate that in 2045 only 14.3% (95% CI: 12.5\u201315.9) of the susceptible population would be younger than 17 years, while individuals aged more than 45 years, who currently contribute only marginally to the residual measles susceptibility, would represent 69.6% (95% CI: 67.8\u201371.6) of the total number of susceptibles. As expected, the estimated percentage of susceptibles among individuals currently aged between 17 and 44 years would not be affected by this policy, remaining 16.2% (95% CI 14.5\u201317.7) in 2045 (Figure 1D).\n\nThe introduction of parental vaccination on top of the current program has the potential to progressively reduce the immunity gaps in adults as well as the overall susceptibility of the Italian population (Figures 2 and 3). Remarkably, the estimated total fraction of susceptible individuals in 2045 under the parental vaccination program ranges between 6.3% (95% CI: 5.8\u20136.9) for 99% vaccination coverage of parents and 7.6% (95% CI: 6.9\u20138.2) for 50% vaccination coverage, instead\u00a0of 8.8% expected under the current program (Figure 3). This strategy targets age groups that would otherwise never be reached by the current immunization program, that\u00a0is cohorts of individuals older than 16\u00a0years in the year 2017. In particular, by 2045, parental vaccination at 50% of coverage would result in a 17.1% (95% CI: 16.8\u201317.5%) reduction in the number of susceptible individuals aged between 17 and 44 years in 2017, while a 35% (95% CI: 34.1\u201335.9%) reduction in this age group is expected if 99% coverage is assumed.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44942/elife-44942-fig2-v1.jpg)\n\n**Figure 2.:** Mean measles age-specific epidemiological status as estimated by the model for the year 2045 under different scenarios for the \u2018parental vaccination\u2019 program. Shown for each age is the percentage of individuals who\u00a0are\u00a0susceptible to infection or protected against infection by maternal antibodies and by immunity acquired through natural infection, routine (first or second dose) vaccination, vaccination at school entry or parental vaccination.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44942/elife-44942-fig3-v1.jpg)\n\n**Figure 3.:** Mean yearly fraction of susceptible individuals in the Italian population as estimated by the model for the period 2017\u20132045 under different scenarios for the \u2018parental vaccination\u2019 program. Different colors correspond to different age groups; vertical bars represent\u00a0the 95% CI of the\u00a0model simulations.\n\nAccording to our analysis, the current program would decrease the\u00a0measles effective reproduction number to 1.08 (95% CI 0.95\u20131.23) in 2045 (Figure 4). In our simulations, measles elimination is achieved before 2045 only in 12.0% of model realizations.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44942/elife-44942-fig4-v1.jpg)\n\n**Figure 4.:** (A) Mean effective reproduction number over time, as estimated by the model under the \u2018current\u2019 vaccination program and under different coverage scenarios for the \u2018parental vaccination\u2019 program. Shaded areas represent the\u00a095% CI associated with model estimates. The red line represents the measles elimination threshold; elimination is achieved when the effective reproductive number is smaller than 1. (B) Probability associated with different time at measles elimination, as obtained by 1000 model realizations under the \u2018current\u2019 vaccination program and under different coverage scenarios for the \u2018parental vaccination\u2019 program.\n\nThe introduction of parental vaccination could accelerate the progress towards measles elimination, although the effectiveness of this strategy would depend on parents\u2019 response to the new policy. Our simulations show that the effective reproduction number in 2045 would be 0.95 (95% CI 0.82\u20131.11), 0.89 (95% CI 0.77\u20131.07), 0.84 (95% CI 0.71\u20131.04) when 50%, 75% and 99% of eligible families accept parental vaccination, and that with these levels of vaccination acceptance measles elimination would be achieved on average in 2042, 2037 and 2031, respectively. Our results clearly show that parental vaccination has the potential to\u00a0reduce the risk of major measles epidemics\u00a0dramatically in the coming decades, although it is difficult to forecast the probability that\u00a0measles outbreaks will be experienced in the future (details can be found in Appendix\u00a01).\n\n### Sensitivity analysis\n\nThe performed analysis shows that an improvement of vaccine uptake at school entry to achieve\u00a099% coverage in the current program may anticipate the timing of measles elimination to 2039. If vaccine uptake at school entry were\u00a0to\u00a0be 75%, measles elimination could be achieved in 2042, which is comparable to what might\u00a0be\u00a0obtained by reaching 50% of eligible families with parental vaccination in the baseline analysis. By\u00a0contrast, our simulations show that, under the most optimistic scenario of 99% of coverage both for parental vaccination and vaccination at school entry measles elimination could be achieved, on average,\u00a0as early as 2023.\n\nThe assumption of a shorter or longer generation time would affect model estimates of the effective reproduction number over time. In particular, under parental vaccination at 50% of coverage, a shorter (longer) generation time would result in an anticipation (delay) of the timing of measles elimination, which is estimated to occur before 2045 in 99.2% (16.8%) of model realizations. When a generation time lasting 18 days is considered, the current policy at current coverage levels was insufficient to achieve measles elimination by 2045 in 99.9% of model realizations.\n\nThe obtained estimates are qualitatively robust when considering alternative age-specific mixing patterns for the Italian population, although the inclusion of contact matrices estimated through the modeling approach (Fumanelli et al., 2012) results in\u00a0delayed\u00a0measles elimination under all considered vaccination scenarios. On the other hand, under the (hardly realistic) scenario of a population that mixes fully at random (i.e., by assuming homogeneous mixing), neither the current policy nor its combination with parental vaccination would be sufficient to achieve measles elimination by 2045.\n\nQualitative temporal patterns in the evolution of the effective reproduction number estimated by exploring different levels of measles transmissibility during the prodromal and exanthema phase are generally robust. The largest quantitative difference can be detected when most secondary cases are generated in the prodromal phase. In this case, under the current policy, measles elimination is predicted to occur before 2045 in 73.9% of model realizations instead of the 12.0% of model realizations\u00a0seen for the baseline analysis. Similarly, under parental vaccination at 50% of coverage, when most of secondary cases are generated in the prodromal phase, measles elimination is predicted to occur before 2045 in 98.7% of model realizations compared to the 78.9% of model realizations\u00a0seen in the baseline analysis.\n\nFinally, when considering an extreme scenario in\u00a0which only 25% of measles cases were reported during the 2017 outbreak, we estimate the exponential growth rate to be 0.29 (95% CI: 0.21\u20130.37), similar to that obtained when only reported cases are used: 0.29 (95% CI: 0.25\u20130.33). As estimates of the effective reproduction number depend only on the growth rate and on measles natural history, these\u00a0results suggest that our findings are robust with respect to the\u00a0reporting rate (and size) of the 2017 measles outbreak.\n\nDetails on the performed sensitivity analyses are reported and discussed in Appendix\u00a01.\n\n## Discussion\n\nIn July 2017, the Italian Government approved a regulation requiring parents to vaccinate their children before school entry against ten infections, including measles. Recent estimates suggest that the new regulation allowed the vaccination of 50% of\u00a0individuals who escaped routine vaccination (Italian Ministry of Health, 2019; Italian National Institute of Health, 2019). Our modeling study shows that the current policy would reduce measles susceptibility in the age segments of the population characterized by higher contact rates, resulting in a remarkable decrease in the infection transmission potential and making measles elimination a realistic target. However, if only 50% of unvaccinated children are vaccinated at school entry, disease elimination would probably be achieved only after 2045.\n\nOffering vaccination to the\u00a0parents of children who receive a measles vaccine dose could progressively reduce by 17\u201335% the immunity gaps among individuals who are between 18 and 45 years of age\u00a0in\u00a02018. The implementation of this program would decrease the overall susceptibility of the population by 6.2\u201322.0%, and would\u00a0increase the probability of measles elimination before 2045 from 12.0% (estimated in the absence of this additional policy) to 78.9\u201396.5%. The effectiveness of this strategy clearly depends on both the coverage achieved through childhood immunization (routine programs and vaccination at school entry) and on the willingness of parents to be vaccinated themselves. The obtained estimates are generally robust with respect to different assumptions on the duration of measles generation time and on the relative transmissibility of measles during the prodromal and exanthema phases. On the other hand, under the assumption of homogeneous mixing in the population, neither the current immunization program nor parental vaccination appear to\u00a0be\u00a0sufficient to eliminate measles before 2045.\n\nThe study presents a few limitations that should be carefully considered in\u00a0order\u00a0to achieve\u00a0a\u00a0better interpretation\u00a0of the obtained results. In particular, our estimates of the effective reproduction number were obtained using measles cases reported during the 2017 outbreak. The current degree of measles underreporting in statutory notifications is unknown. However, our estimates of the effective reproduction number are stable with respect to the\u00a0possible underreporting of cases during the outbreak (Ciofi Degli Atti et al., 2002). The proposed analysis did not take into account potential geographical heterogeneities in measles immunity levels at\u00a0the sub-national scale. Although the new regulation is expected to harmonize the\u00a0vaccine offer and its\u00a0uptake in Italy, significant regional differences in both immunization schedule and coverage have\u00a0been reported in the past (Bonanni et al., 2015). Regions characterized by a lower than national average vaccine uptake in the past may therefore experience a delay in measles elimination with respect to the\u00a0results presented in this work. In our work, future measles susceptibility might have been overestimated, as we did not explicitly model measles transmission, thus disregarding the impact of future measles spread on the immunity profile of the Italian population. Although both the occurrence and magnitude of future measles epidemics are largely uncertain and difficult to predict (Earn et al., 2000), changing patterns of measles transmission may affect both the number of susceptible adults and the incidence of severe disease in the coming years. However, the population infected during the 2017 Italian outbreak\u2014one of the largest occurred in Europe in the last years\u2014represented only 0.1% of the estimated susceptible population in the country (Italian National Institute of Health, 2017; Trentini et al., 2017). This suggests that the explicit inclusion of measles transmission may have a limited impact on short-\u00a0or\u00a0medium-term estimates of the immunity profile and measles transmission potential. The proposed analysis relies on the simplifying assumption that parents decide whether to vaccinate their children regardless of past vaccination behavior, although it is likely that parents vaccinate either all or none of their children. All children receiving vaccination indirectly present their parents with\u00a0the\u00a0opportunity to vaccinate themselves. As the\u00a0children receiving vaccination may be clustered in a smaller number of households than is the case in our model, we are probably overestimating the potential number of parents who are eligible for measles vaccination. In particular, in our simulations, 98.7% of families with children between 1 and 15 years of age are considered as eligible for parental vaccination, whereas in a perfectly clustered model, this percentage would be 88.1%. On the other hand, clustering of unvaccinated children may have a larger effect on measles transmission dynamics than on the number\u00a0of parents eligible for vaccination. Finally, we assumed that routine vaccination coverage would not be affected by the implementation of the new national policy, and that the coverage of the catch-up campaign conducted in 2017\u20132018 was the same as\u00a0that\u00a0of vaccination at school entry (both for pre-primary and for primary schools). However, data released in December 2018 by the Italian Ministry of Health suggest that the new regulation on mandatory vaccination at school entry may have indirectly affected the first-dose vaccine uptake for\u00a0children\u00a0under 3 years of age. In particular, the available records show that the first-dose vaccination coverage in the 2015 age cohort has increased from 91.4% in 2017 to 94.2% in 2018, (Italian Ministry of Health, 2019) although the fraction of unvaccinated children who were vaccinated thanks to the new regulation may vary depending on the age cohort considered (D\u2019Ancona et al., 2018; Italian Ministry of Health, 2019). According to the\u00a0most recent estimates, measles vaccination coverage in the 2014 age cohort has increased from 87.3% in 2016 to 94.4% in 2018, suggesting that the new regulation resulted in the vaccination of about 56% of unvaccinated children in this cohort (Italian National Institute of Health, 2019).\n\nIn conclusion, our analysis shows that a marked increase in childhood immunization rates would not be sufficient to achieve measles elimination in the short-\u00a0or\u00a0medium-term in Italy. These results confirm the need for appropriate strategies to vaccinate individuals who have already left the school system\u00a0in\u00a0order to reduce critical immunity gaps in young adults (Trentini et al., 2019;\u00a0Filia et al., 2017; Trentini et al., 2017; Durrheim, 2017; Thompson, 2017; Wise, 2018; Gidding et al., 2007). Attempts made to\u00a0date\u00a0in this direction either have\u00a0only been\u00a0partially effective or have required remarkable efforts in terms of the\u00a0costs to\u00a0and commitment of the public health authorities (Gidding et al., 2007; Morice et al., 2003; Kelly et al., 2007). In Costa Rica, a measles-rubella vaccination campaign targeting adults aged 15\u201339 years was successfully conducted in 2000, but it required huge efforts of communication, social mobilization, and the use of house-to-house vaccination teams (Morice et al., 2003). In 2001\u20132002, a vaccination campaign in Australia targeting young adults aged\u00a0between 18 and 30 years who visited their general practitioner (GP) had little effect on the immunity gaps, probably because of\u00a0a lack of promotion and central coordination (Gidding et al., 2007; Kelly et al., 2007). In Europe, beyond some local attempts to immunize adolescents and individuals before school leaving, which have only marginally affected the vaccine uptake (Lashkari and El Bashir, 2010; Vazzoler et al., 2014), little has been done to reduce residual susceptibility in adults. Interventions recently set up include attempts to raise awareness in people attending social events that may represent potential hotspots for measles transmission (Public Health England, 2018). In this work, a new strategy is proposed, consisting of offering vaccination to parents of children who are being vaccinated against measles. Although the proposed policy can reach only a fraction of susceptible adults, that\u00a0is those with children in the measles-vaccination\u00a0age\u00a0group, the obtained results suggest that this strategy may be both feasible and effective. In particular, our results suggest that vaccinating 50% of parents who agreed to vaccinate their children, and may therefore be\u00a0inclined towards accepting vaccination, would promote measles elimination as well as reaching 50% of children who still escape measles vaccination despite the fact that vaccination is now mandatory in Italy (i.e., increasing vaccination coverage at school entry from 50% to 75%). The sustainability of the proposed strategy should be carefully evaluated by public health decision makers. However, a key advantage of this policy is that it does not require targeted activities to recruit parents, thus resulting in a\u00a0relatively simple implementation\u00a0protocol.\n\nBeyond parental vaccination, alternative immunization strategies aimed at reducing residual susceptibility in adults may also\u00a0be considered. These may include the extension of mandatory vaccination at university entry\u00a0\u2013\u00a0an intervention already implemented in different US states. Other immunization efforts may include the introduction of proof of immunity as a condition for the\u00a0enrolment of health care workers (HCWs), for\u00a0whom measles vaccination is only recommended in most European countries (Galanakis et al., 2014; Maltezou et al., 2019). The need\u00a0to improve vaccination coverage among HCWs is due to their potential to amplify measles outbreaks and their higher risk of exposure to the virus, as observed in the 2017 Italian outbreak in\u00a0which 7% of cases were HCWs (Maltezou et al., 2019).\n\nThe achievement of measles elimination remains a global health priority. Actions may be also required to raise awareness and consensus about the\u00a0benefits coming from vaccination and\u00a0to increase the overall vaccine uptake. Country-specific policies should be identified and carefully evaluated by decision makers in order to anticipate the time of measles elimination\u00a0as much as possible.\n",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "d94dc0e5-06ba-483e-9f87-91118b8685c2",
+      "submission_id": "ac28570f-1799-4632-9a74-24effa3c21d5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marc Baguelin, Imperial College London United Kingdom\n\nReviewers:\n- Felicity Cutts, London School of Hygiene and Tropical Medicine United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.44942.038](https://doi.org/10.7554/eLife.44942.038)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Parental and mandatory school entry vaccination to reduce measles immunity gaps in Italy\" for consideration by eLife. Your article has been reviewed by Neil Ferguson as the Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Felicity Cutts (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper presents a modelling study of the impact of the new mandatory vaccination policy implemented in Italy since 2017 at school entry. The authors also explore the potential supplementation of the program with a campaign targeting parents. The impact is assessed using an individual-level model of household composition and simulating different vaccination policies up to 2045. The age specific susceptibility levels over the years are used to derived associated effective reproduction numbers and probabilities of outbreak.\n\nEssential revisions:\n\nThe reviewers raise a number of concerns that must be adequately addressed before the paper can be accepted. Some of the required revisions will likely require further simulations and restructuring manuscript.\n\n1) Restructure the manuscript in order to focus more on the third strategy (R+S+P).\n\n2) Discuss what could be different strategies to reach older age groups (i.e. cohort with low level of immunity due to natural infection or vaccination) and their likely impact.\n\n3) Ensure that the coverages described in the methods and used for the simulations are clearly defined in particular specify the denominators.\n\n4) Do a sensitivity analysis regarding under reporting and size of 2017 outbreak; discuss plausibility of estimate in the Discussion section.\n\n5) Specify if the age profile of observed cases used for validation of the model is based on laboratory cases.\n\n6) Provide the ISTAT data as supplementary material to ensure permanency and provide a description of the assumptions of the model used for forecasting the demographic profile until 2045, this could be added to the Appendix.\n\n7) Please incorporate uncertainty regarding demographic projections, estimation of r, contact matrices and initial susceptibility.\n\n8) Include in the results a section on the sensitivity analysis based on results presented in the Appendix.\n\n9) Carry additional sensitivity analysis with regards to estimation of R0.\n\n10) Discuss the impact spatial heterogeneity in term of the predictions.\n\n11) Please discuss the assumption behind the equation of the probability of an outbreak as a function of Re. A description in the Appendix of how the result is derived would be good. Is it the probability for a single introduction? How does it translate in terms of probability of a outbreak over a season? What is the impact of multiple reintroduction of measles?\n",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fc1274aa-4f00-4f80-9ae8-be47aee50cb7",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C1",
+      "claim": "High-income countries are experiencing measles reemergence as the result of suboptimal vaccine uptake and marked immunity gaps among adults.",
+      "claim_type": "EXPLICIT",
+      "source": "High-income countries are experiencing measles reemergence as the result of suboptimal vaccine uptake and marked immunity gaps among adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that draws from established understanding of measles epidemiology in high-income countries.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "6ebec3de-718e-4cd9-921f-a18a8314654c",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C2",
+      "claim": "In 2017, the Italian Government introduced mandatory vaccination at school entry for ten infectious diseases, including measles.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2017, the Italian Government introduced mandatory vaccination at school entry for ten infectious diseases, including measles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Italian policy that is referenced throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "669eb2d8-e6a8-4ca9-835b-15c2f45cb665",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C3",
+      "claim": "Current vaccination efforts in Italy would not be sufficient to interrupt measles transmission before 2045 because of the frequency of susceptible individuals between 17 and 44 years of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Model simulations suggest that the current vaccination efforts in Italy would not be sufficient to interrupt measles transmission before 2045 because of the frequency of susceptible individuals between 17 and 44 years of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by model simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "4c583f58-f55b-4c82-81ca-dbcd2e2186c8",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C4",
+      "claim": "The integration of the current policy with parental vaccination has the potential to reduce susceptible adults by 17\u201335%.",
+      "claim_type": "EXPLICIT",
+      "source": "The integration of the current policy with parental vaccination has the potential to reduce susceptible adults by 17\u201335%, increasing the chance of measles elimination before 2045 up to 78.9\u201396.5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by model simulations with specific quantitative results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "aa6efc1d-68fa-4f76-a49d-a5b739ccc639",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C5",
+      "claim": "The integration of the current policy with parental vaccination increases the chance of measles elimination before 2045 up to 78.9\u201396.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "The integration of the current policy with parental vaccination has the potential to reduce susceptible adults by 17\u201335%, increasing the chance of measles elimination before 2045 up to 78.9\u201396.5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by model simulations with specific quantitative results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "72353cde-faea-44a9-89b8-74c0592948fc",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C6",
+      "claim": "The Global Measles and Rubella Strategic Plan 2012\u20132020 set the goal of eliminating measles in at least five WHO regions by 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The Global Measles and Rubella Strategic Plan 2012\u20132020 set the ambitious goal of eliminating measles in at least five World Health Organization (WHO) regions by 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about a WHO strategic plan.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "bd073ad8-3821-4968-8510-c599b3113e21",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C7",
+      "claim": "Only the Americas have achieved measles elimination by 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "Two years before the deadline, only the Americas have achieved measles elimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about measles elimination status.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "396fbccf-047a-440b-ae8e-521f58e802a8",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C8",
+      "claim": "Measles is endemic in 14 countries of the WHO European Region, including Germany, Belgium, France, and Italy.",
+      "claim_type": "EXPLICIT",
+      "source": "Measles is endemic in 14 countries of the WHO European Region, including high-income countries such as Germany, Belgium, France, and Italy (World Health Organization Regional Office for Europe, 2016), and it still represents a major concern for public health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a WHO report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "7f732924-8871-4e5e-9cd9-e956bcdc0988",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C9",
+      "claim": "In 2017, Italy experienced one of the largest measles outbreaks of the past decade in the European Region with four deaths and 5098 cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2017, Italy experienced one of the largest measles outbreaks of the past decade in the European Region with four deaths and 5098 cases, 4042 of which were confirmed by positive laboratory results (Italian National Institute of Health, 2017; European Centre for Disease Prevention and Control, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Italian National Institute of Health and ECDC reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "397b4afd-19a6-49cb-8269-3684fc61878e",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C10",
+      "claim": "4042 of the 5098 measles cases in Italy in 2017 were confirmed by positive laboratory results.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2017, Italy experienced one of the largest measles outbreaks of the past decade in the European Region with four deaths and 5098 cases, 4042 of which were confirmed by positive laboratory results (Italian National Institute of Health, 2017; European Centre for Disease Prevention and Control, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Italian National Institute of Health and ECDC reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "5888fa46-6346-4ea7-90fd-aa606ff85f8c",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C11",
+      "claim": "The highest measles incidence in Italy in 2017 was observed in infants under one year of age.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest incidence was observed in infants under one year of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the 2017 outbreak that is referenced with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "e8825eaf-1359-4eea-ba1b-4b553af51f6e",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C12",
+      "claim": "About 70% of the reported measles cases in Italy in 2017 were older than 20 years, with a median age of 27 years.",
+      "claim_type": "EXPLICIT",
+      "source": "About 70% of the reported cases were older than 20 years, with a median age of 27 years (Italian National Institute of Health, 2017; Filia et al., 2017), suggesting that measles circulation in Italy is at least partially supported by transmission between adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Italian National Institute of Health and Filia et al. 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "4610282e-c59f-4d7b-85e6-b1900ad3f41a",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C13",
+      "claim": "Measles circulation in Italy is at least partially supported by transmission between adults.",
+      "claim_type": "EXPLICIT",
+      "source": "About 70% of the reported cases were older than 20 years, with a median age of 27 years (Italian National Institute of Health, 2017; Filia et al., 2017), suggesting that measles circulation in Italy is at least partially supported by transmission between adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the age distribution of cases reported in cited sources.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "787b0dad-1411-49ca-a0f0-56e00145ccfa",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C14",
+      "claim": "Significant immunity gaps in adults have been highlighted by a serological screening of the Italian population.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant immunity gaps in these age segments of the population have been highlighted by a serological screening of the population (Rota et al., 2008) and by recent modeling studies analyzing long-term processes that affect measles transmission dynamics in the Italian population (Merler and Ajelli, 2014; Trentini et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rota et al. 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "31010e0b-a11a-4b4d-a7e9-2abfa08a5267",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C15",
+      "claim": "Recent modeling studies have highlighted significant immunity gaps in adult age segments of the Italian population.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant immunity gaps in these age segments of the population have been highlighted by a serological screening of the population (Rota et al., 2008) and by recent modeling studies analyzing long-term processes that affect measles transmission dynamics in the Italian population (Merler and Ajelli, 2014; Trentini et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "cf8c0384-2b63-4596-907d-a00f4516afb2",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C16",
+      "claim": "The high fraction of measles-susceptible individuals between 15 and 45 years of age is the result of past suboptimal routine vaccination coverage and the absence of major nationwide epidemics in recent decades.",
+      "claim_type": "EXPLICIT",
+      "source": "The high fraction of measles-susceptible individuals of between 15 and 45 years of age is the result of past suboptimal routine vaccination coverage and the absence of major nationwide epidemics in recent decades, which allowed adolescents to escape both vaccination and natural infection (Filia et al., 2017; Trentini et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Filia et al. 2017 and Trentini et al. 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "47c8e822-7756-4f64-84e4-b49cc5868b47",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C17",
+      "claim": "The absence of major nationwide measles epidemics in recent decades allowed adolescents to escape both vaccination and natural infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The high fraction of measles-susceptible individuals of between 15 and 45 years of age is the result of past suboptimal routine vaccination coverage and the absence of major nationwide epidemics in recent decades, which allowed adolescents to escape both vaccination and natural infection (Filia et al., 2017; Trentini et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Filia et al. 2017 and Trentini et al. 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "f31e0d4a-0a9b-4ee5-967e-dec96ca72654",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C18",
+      "claim": "In Italy, the first measles national immunization program was setup in 1983 with a single dose of measles vaccine being administered at 9 months of age.",
+      "claim_type": "EXPLICIT",
+      "source": "In Italy, the first measles national immunization program was setup in 1983 with a single dose of measles vaccine being administered at 9 months of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Italian vaccination history.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "938bd518-aa0e-4661-adbd-fd1694b98253",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C19",
+      "claim": "A second dose measles vaccination program was introduced in Italy in 1999.",
+      "claim_type": "EXPLICIT",
+      "source": "A second dose program was introduced in 1999.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Italian vaccination history.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "0d7a522d-3ba7-4653-a30f-1e32f2e0a609",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C20",
+      "claim": "Routine measles vaccination coverage in Italy remained below 80% until 2003.",
+      "claim_type": "EXPLICIT",
+      "source": "However, routine vaccination coverage remained below 80% until 2003, the year of approval of the Italian National Plan for the elimination of Measles and Congenital Rubella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about historical vaccination coverage in Italy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "e869abc0-6994-401c-b7f7-7d98a4517aa5",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C21",
+      "claim": "The Italian National Plan for the elimination of Measles and Congenital Rubella was approved in 2003.",
+      "claim_type": "EXPLICIT",
+      "source": "However, routine vaccination coverage remained below 80% until 2003, the year of approval of the Italian National Plan for the elimination of Measles and Congenital Rubella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Italian vaccination policy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "c856641b-c5e7-4019-9cb9-28de4e1d37e4",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C22",
+      "claim": "After 2003, measles vaccine uptake levels in Italy have progressively increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereafter, vaccine uptake levels have progressively increased, even though a decrease in coverage has been detected in most recent years, possibly associated with vaccine hesitancy (Filia et al., 2017; Merler and Ajelli, 2014; Giambi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about vaccination trends supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "f6b451be-6d03-4bf6-8ce5-a80b38f7b679",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C23",
+      "claim": "A decrease in measles vaccination coverage has been detected in Italy in most recent years, possibly associated with vaccine hesitancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereafter, vaccine uptake levels have progressively increased, even though a decrease in coverage has been detected in most recent years, possibly associated with vaccine hesitancy (Filia et al., 2017; Merler and Ajelli, 2014; Giambi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and includes speculation about the cause.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "dc1df52d-dfc0-4a59-97b7-7fd0625bc750",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C24",
+      "claim": "The national measles vaccination coverage in Italy reached a peak of 91% in 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "As a matter of fact, the national coverage reached a peak of 91% in 2010, which is well below the 95% threshold generally considered to be necessary for measles elimination (Anderson and May, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about vaccination coverage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "8debf299-4371-4918-9c24-b7e475eb6ff5",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C25",
+      "claim": "A 95% vaccination coverage threshold is generally considered to be necessary for measles elimination.",
+      "claim_type": "EXPLICIT",
+      "source": "As a matter of fact, the national coverage reached a peak of 91% in 2010, which is well below the 95% threshold generally considered to be necessary for measles elimination (Anderson and May, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Anderson and May 1991.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "1a7a1d43-28a6-4560-a4f3-40d72e1d5a90",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C26",
+      "claim": "In July 2017, the Italian Government approved regulation 119/2017 requiring parents to vaccinate their children before school entry against ten infectious diseases, including measles.",
+      "claim_type": "EXPLICIT",
+      "source": "In July 2017, the Italian Government approved a regulation (119/2017) requiring parents to vaccinate their children before school entry against ten infectious diseases, including measles (Signorelli et al., 2018; D'Ancona et al., 2018; Italian Ministry of Health, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Italian policy supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "c1091998-22b3-4dbe-ac4c-a08e85e966cb",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C27",
+      "claim": "Vaccination against measles is now free of charge and mandatory for all children under 16 years in Italy.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination against measles is now free of charge and mandatory for all children under 16 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Italian vaccination policy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "19443ab0-0445-4448-b4f5-675608ba1b5e",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C28",
+      "claim": "Unvaccinated children are not allowed to attend kindergartens in Italy.",
+      "claim_type": "EXPLICIT",
+      "source": "Unvaccinated children are not allowed to attend kindergartens, and financial penalties are imposed on the parents of unvaccinated students attending higher school levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Italian vaccination policy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "5c4c7411-34a3-4803-8cb2-fdc3cafce85e",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C29",
+      "claim": "Financial penalties are imposed on the parents of unvaccinated students attending higher school levels in Italy.",
+      "claim_type": "EXPLICIT",
+      "source": "Unvaccinated children are not allowed to attend kindergartens, and financial penalties are imposed on the parents of unvaccinated students attending higher school levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Italian vaccination policy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "3f2dd0dc-131e-471b-99b2-5476d7fd1539",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C30",
+      "claim": "The 2017 Italian regulation has the potential to increase vaccine uptake in new birth cohorts and to immunize school-age children who have escaped routine vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "This regulation has the potential to increase vaccine uptake in new birth cohorts and to immunize school-age children who have escaped routine vaccination (Trentini et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Trentini et al. 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "526bbd57-e911-4c33-9c16-63b241b1c997",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C31",
+      "claim": "The new Italian vaccination policy will not impact the existing immunity gaps in older age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the new policy will not impact the existing immunity gaps in older age groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of the policy targeting children.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "4d558806-6c4c-40f5-814d-02cd0ad3bf0a",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C32",
+      "claim": "The achievement and maintenance of high vaccination coverage among children may not be enough to avoid the reemergence of measles in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the achievement and maintenance of high vaccination coverage among children may not be enough to avoid the reemergence of measles in the future (Trentini et al., 2017; Trentini et al., 2019; Durrheim, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "41433d31-817a-4aa8-b1ed-b8e8ffcc249b",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C33",
+      "claim": "It is crucial for Italy to identify feasible, sustainable, and effective strategies to reduce the number of susceptible individuals among those who have already left the school system.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to progress towards measles elimination, it is thus crucial for Italy to identify feasible, sustainable, and effective strategies to reduce the number of susceptible individuals among those who have already left the school system (Filia et al., 2017; Trentini et al., 2017; Durrheim, 2017; Thompson, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "d6a3a6a1-466c-4921-aec0-55fc6a5e4106",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C34",
+      "claim": "The proposed vaccination strategy consists of offering vaccination to the parents of all of the children who receive any measles vaccine dose.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed strategy consists of offering vaccination to the parents of all of the children who receive any measles vaccine dose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the intervention being studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "0d27dd03-3018-4cd9-a163-ce5a2ad78495",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C35",
+      "claim": "At the beginning of 2017, 8.1% (95% CI 7.3\u20138.9) of the Italian population was susceptible to measles.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our simulations based on the estimates provided by Trentini et al. (2017) at the beginning of 2017, 8.1% (95% CI 7.3\u20138.9) of the Italian population was susceptible to measles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model simulations using data from Trentini et al. 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "664b7ec7-d2ae-4964-af66-2dfd1be5af2b",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C36",
+      "claim": "About one third of the susceptible individuals in Italy at the beginning of 2017 were younger than 16 years.",
+      "claim_type": "EXPLICIT",
+      "source": "About one third of the susceptible individuals were younger than 16 years, whereas 60% of them were aged between 18 and 45 years (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model simulations and is shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "b2ba983e-6f12-40bb-b1d2-53eaed6bf23c",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C37",
+      "claim": "60% of susceptible individuals in Italy at the beginning of 2017 were aged between 18 and 45 years.",
+      "claim_type": "EXPLICIT",
+      "source": "About one third of the susceptible individuals were younger than 16 years, whereas 60% of them were aged between 18 and 45 years (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model simulations and is shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "6fad0f67-9c8e-4091-8714-b417838c439f",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C38",
+      "claim": "The number of measles cases reported during the 2017 Italian outbreak represented only 0.1% (95% CI 0.09\u20130.12) of the susceptible population in Italy.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that the number of measles cases reported during the 2017 Italian outbreak represented only 0.1% (95% CI 0.09\u20130.12) of the susceptible population in Italy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate from the model based on reported cases and estimated susceptible population.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "373e6496-4236-43fa-ad07-36e49cad9e93",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C39",
+      "claim": "About 4.9 million (95% CI 4.4\u20135.4) people in Italy may still be susceptible to measles infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that, in Italy, about 4.9 million (95% CI 4.4\u20135.4) people may still be susceptible to measles infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate from the model based on the susceptibility percentage and population size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "56d77c6b-ee3f-4d9b-9192-fa6c5431d23a",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C40",
+      "claim": "The age distribution of measles susceptible individuals matches the fraction of cases by age group reported during the 2017 outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "The age distribution of measles susceptible individuals matches the fraction of cases by age group reported during the 2017 outbreak (Figure 1B), thereby confirming the reliability of simulated immunity gaps in the population (Durrheim, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of model results with reported data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "4e51d8b9-be66-4d3c-bb83-c0f723f89005",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C41",
+      "claim": "The catch-up campaign implemented in 2017 under the current program has contributed to the immunization of 445189 (95% CI: 394797\u2013487621) susceptible children under 16 years of age.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our results, the catch-up campaign implemented in 2017 under the current program has contributed the immunization of 445189 (95% CI: 394797\u2013487621) susceptible children under 16 years of age, producing a 9% reduction in the overall number of susceptible individuals in 2018 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate from the model simulations shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "048f9538-14e2-4588-b52e-ddb67ebff6b0",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C42",
+      "claim": "The 2017 catch-up campaign produced a 9% reduction in the overall number of susceptible individuals in 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our results, the catch-up campaign implemented in 2017 under the current program has contributed the immunization of 445189 (95% CI: 394797\u2013487621) susceptible children under 16 years of age, producing a 9% reduction in the overall number of susceptible individuals in 2018 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate from the model simulations shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "db80efb6-4bdd-48c4-89d7-8813a6c746fb",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C43",
+      "claim": "After the initial drop from the 2017 catch-up campaign, the overall fraction of susceptibles would progressively increase in the next decades, reaching 8.8% (95% CI 8.1\u20139.5) in 2045.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the obtained results show that after this initial drop, the overall fraction of susceptibles would progressively increase in the next decades, reaching 8.8% (95% CI 8.1\u20139.5) in 2045 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a projection from the model simulations shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "11427db4-c67c-4dde-9ff8-5d76741928af",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C44",
+      "claim": "The increase in susceptibles is ascribable to the replacement of elderly individuals, who are predominantly immune because of natural infection, with new birth cohorts that have been only partially immunized as a consequence of suboptimal coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase is ascribable to the replacement of elderly individuals, who are predominantly immune because of natural infection, with new birth cohorts that have been only partially immunized as a consequence of suboptimal coverage (Figure 1A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the model results shown in Figures 1A and 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "7e8798c7-f043-45e8-86a1-32e6954dae2b",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C45",
+      "claim": "In 2045, only 14.3% (95% CI: 12.5\u201315.9) of the susceptible population would be younger than 17 years under the current vaccination program.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we estimate that in 2045 only 14.3% (95% CI: 12.5\u201315.9) of the susceptible population would be younger than 17 years, while individuals aged more than 45 years, who currently contribute only marginally to the residual measles susceptibility, would represent 69.6% (95% CI: 67.8\u201371.6) of the total number of susceptibles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a projection from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "59c41c96-014c-405b-8884-47646267a530",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C46",
+      "claim": "In 2045, individuals aged more than 45 years would represent 69.6% (95% CI: 67.8\u201371.6) of the total number of susceptibles under the current vaccination program.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we estimate that in 2045 only 14.3% (95% CI: 12.5\u201315.9) of the susceptible population would be younger than 17 years, while individuals aged more than 45 years, who currently contribute only marginally to the residual measles susceptibility, would represent 69.6% (95% CI: 67.8\u201371.6) of the total number of susceptibles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a projection from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "b0adcb97-2944-4ef1-b934-43a4ee742e49",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C47",
+      "claim": "The estimated percentage of susceptibles among individuals currently aged between 17 and 44 years would not be affected by the current policy, remaining 16.2% (95% CI 14.5\u201317.7) in 2045.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the estimated percentage of susceptibles among individuals currently aged between 17 and 44 years would not be affected by this policy, remaining 16.2% (95% CI 14.5\u201317.7) in 2045 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a projection from the model simulations shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "a512a7dd-d8b1-47c6-8970-9b498e57ff20",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C48",
+      "claim": "The introduction of parental vaccination on top of the current program has the potential to progressively reduce the immunity gaps in adults as well as the overall susceptibility of the Italian population.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of parental vaccination on top of the current program has the potential to progressively reduce the immunity gaps in adults as well as the overall susceptibility of the Italian population (Figures 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model results shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "d212bbdb-18cf-44d3-bd28-22e7ce5eb6cd",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C49",
+      "claim": "The estimated total fraction of susceptible individuals in 2045 under the parental vaccination program ranges between 6.3% (95% CI: 5.8\u20136.9) for 99% vaccination coverage of parents and 7.6% (95% CI: 6.9\u20138.2) for 50% vaccination coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the estimated total fraction of susceptible individuals in 2045 under the parental vaccination program ranges between 6.3% (95% CI: 5.8\u20136.9) for 99% vaccination coverage of parents and 7.6% (95% CI: 6.9\u20138.2) for 50% vaccination coverage, instead of 8.8% expected under the current program (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a projection from the model simulations shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "c7526d76-e09d-420a-acad-b889d2d59684",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C50",
+      "claim": "By 2045, parental vaccination at 50% of coverage would result in a 17.1% (95% CI: 16.8\u201317.5%) reduction in the number of susceptible individuals aged between 17 and 44 years in 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, by 2045, parental vaccination at 50% of coverage would result in a 17.1% (95% CI: 16.8\u201317.5%) reduction in the number of susceptible individuals aged between 17 and 44 years in 2017, while a 35% (95% CI: 34.1\u201335.9%) reduction in this age group is expected if 99% coverage is assumed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a projection from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "ed73f4ad-ea57-4c5e-8aa9-e5aebb83e516",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C51",
+      "claim": "A 35% (95% CI: 34.1\u201335.9%) reduction in susceptible individuals aged between 17 and 44 years in 2017 is expected if 99% parental vaccination coverage is assumed.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, by 2045, parental vaccination at 50% of coverage would result in a 17.1% (95% CI: 16.8\u201317.5%) reduction in the number of susceptible individuals aged between 17 and 44 years in 2017, while a 35% (95% CI: 34.1\u201335.9%) reduction in this age group is expected if 99% coverage is assumed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a projection from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "df0d163f-6909-4811-80a9-6450b5d04b4e",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C52",
+      "claim": "The current program would decrease the measles effective reproduction number to 1.08 (95% CI 0.95\u20131.23) in 2045.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our analysis, the current program would decrease the measles effective reproduction number to 1.08 (95% CI 0.95\u20131.23) in 2045 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a projection from the model simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "9b6dd08f-ca6e-4c55-a7ff-60ca28985c0b",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C53",
+      "claim": "In model simulations, measles elimination is achieved before 2045 only in 12.0% of model realizations under the current program.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, measles elimination is achieved before 2045 only in 12.0% of model realizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "edf7e89e-867f-480f-9098-199aedef9634",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C54",
+      "claim": "The effective reproduction number in 2045 would be 0.95 (95% CI 0.82\u20131.11) when 50% of eligible families accept parental vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations show that the effective reproduction number in 2045 would be 0.95 (95% CI 0.82\u20131.11), 0.89 (95% CI 0.77\u20131.07), 0.84 (95% CI 0.71\u20131.04) when 50%, 75% and 99% of eligible families accept parental vaccination, and that with these levels of vaccination acceptance measles elimination would be achieved on average in 2042, 2037 and 2031, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a projection from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "7a38faf7-5595-4bdf-9289-41891b0f5be3",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C55",
+      "claim": "The effective reproduction number in 2045 would be 0.89 (95% CI 0.77\u20131.07) when 75% of eligible families accept parental vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations show that the effective reproduction number in 2045 would be 0.95 (95% CI 0.82\u20131.11), 0.89 (95% CI 0.77\u20131.07), 0.84 (95% CI 0.71\u20131.04) when 50%, 75% and 99% of eligible families accept parental vaccination, and that with these levels of vaccination acceptance measles elimination would be achieved on average in 2042, 2037 and 2031, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a projection from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "5cdd3a01-d25e-4c91-aa5c-7b3eab6d3149",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C56",
+      "claim": "The effective reproduction number in 2045 would be 0.84 (95% CI 0.71\u20131.04) when 99% of eligible families accept parental vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations show that the effective reproduction number in 2045 would be 0.95 (95% CI 0.82\u20131.11), 0.89 (95% CI 0.77\u20131.07), 0.84 (95% CI 0.71\u20131.04) when 50%, 75% and 99% of eligible families accept parental vaccination, and that with these levels of vaccination acceptance measles elimination would be achieved on average in 2042, 2037 and 2031, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a projection from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "9f3276ee-3ec4-46bf-bdb8-a130738fe62f",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C57",
+      "claim": "With 50% parental vaccination acceptance, measles elimination would be achieved on average in 2042.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations show that the effective reproduction number in 2045 would be 0.95 (95% CI 0.82\u20131.11), 0.89 (95% CI 0.77\u20131.07), 0.84 (95% CI 0.71\u20131.04) when 50%, 75% and 99% of eligible families accept parental vaccination, and that with these levels of vaccination acceptance measles elimination would be achieved on average in 2042, 2037 and 2031, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a projection from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "2cbd0d84-525e-4427-89e1-0f80ecd0a85b",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C58",
+      "claim": "With 75% parental vaccination acceptance, measles elimination would be achieved on average in 2037.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations show that the effective reproduction number in 2045 would be 0.95 (95% CI 0.82\u20131.11), 0.89 (95% CI 0.77\u20131.07), 0.84 (95% CI 0.71\u20131.04) when 50%, 75% and 99% of eligible families accept parental vaccination, and that with these levels of vaccination acceptance measles elimination would be achieved on average in 2042, 2037 and 2031, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a projection from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "da3ece5f-b31f-47eb-8da4-b59cb19b7b51",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C59",
+      "claim": "With 99% parental vaccination acceptance, measles elimination would be achieved on average in 2031.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations show that the effective reproduction number in 2045 would be 0.95 (95% CI 0.82\u20131.11), 0.89 (95% CI 0.77\u20131.07), 0.84 (95% CI 0.71\u20131.04) when 50%, 75% and 99% of eligible families accept parental vaccination, and that with these levels of vaccination acceptance measles elimination would be achieved on average in 2042, 2037 and 2031, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a projection from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "12064714-9e1c-49e3-b9e1-28fa380007ca",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C60",
+      "claim": "An improvement of vaccine uptake at school entry to achieve 99% coverage in the current program may anticipate the timing of measles elimination to 2039.",
+      "claim_type": "EXPLICIT",
+      "source": "The performed analysis shows that an improvement of vaccine uptake at school entry to achieve 99% coverage in the current program may anticipate the timing of measles elimination to 2039.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from sensitivity analysis of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "91627d29-e2c4-4c74-9bd6-5e8e553eae53",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C61",
+      "claim": "If vaccine uptake at school entry were to be 75%, measles elimination could be achieved in 2042.",
+      "claim_type": "EXPLICIT",
+      "source": "If vaccine uptake at school entry were to be 75%, measles elimination could be achieved in 2042, which is comparable to what might be obtained by reaching 50% of eligible families with parental vaccination in the baseline analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from sensitivity analysis of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "a44a696d-d7fd-4589-9776-f0006df95cb7",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C62",
+      "claim": "Under the most optimistic scenario of 99% of coverage both for parental vaccination and vaccination at school entry measles elimination could be achieved, on average, as early as 2023.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, our simulations show that, under the most optimistic scenario of 99% of coverage both for parental vaccination and vaccination at school entry measles elimination could be achieved, on average, as early as 2023.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from sensitivity analysis of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "00680ba4-cfbb-42e1-a662-41fa1282b6d2",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C63",
+      "claim": "From the analysis of measles cases reported during the 2017 outbreak, an effective reproduction number of 1.66 (95% CI 1.55\u20131.76) was estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "From the analysis of measles cases reported during the 2017 outbreak, we estimated an effective reproduction number of 1.66 (95% CI 1.55\u20131.76).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate from analysis of outbreak data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "9801c12a-492a-4024-963f-7a8ba64a2b6f",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C64",
+      "claim": "Coverage levels for the first and second doses of routine measles vaccination are assumed to be constant over time and set equal to 85% and 83%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Coverage levels for the first and second doses of routine vaccination are assumed to be constant over time and set equal to the most recent estimates of measles vaccination coverage at the national level: 85% and 83%, respectively (World Health Organization, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption based on WHO data.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "c6eadc30-275f-408c-a834-9676d7ecf2e6",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C65",
+      "claim": "A baseline coverage level of 50% is assumed for the 2017 catch-up campaign and for vaccination at school entry.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume the same vaccination coverage for the 2017 catch-up campaign and for vaccination at school entry. In particular, for these vaccination activities, we assume a baseline coverage level of 50%, which corresponds to current estimates of the impact of the new regulation on measles vaccine uptake in the country (Italian Ministry of Health, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption based on current estimates from the Italian Ministry of Health.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "85574029-bc04-431e-9e28-5b12cd601261",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C66",
+      "claim": "Measles vaccine efficacy is set at 95%.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that a single vaccine dose is offered to each parent during parental vaccination. In all the considered scenarios, measles vaccine efficacy is set at 95% (De Serres et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption based on a citation to De Serres et al. 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "33921151-8aff-43f3-aa61-fe5cc6f8d8d4",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C67",
+      "claim": "The effective reproductive number Re represents the expected number of secondary cases generated by one typical infected individual in a partially immune population.",
+      "claim_type": "EXPLICIT",
+      "source": "The effective reproductive number Re represents the expected number of secondary cases generated by one typical infected individual in a partially immune population, where the immunity within the population may be due to either vaccination or natural infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of a standard epidemiological concept.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "d7f3670d-eacf-488e-87b2-310a10f09017",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C68",
+      "claim": "If Re > 1 the infection may spread in the population; otherwise, the infection will die out.",
+      "claim_type": "EXPLICIT",
+      "source": "If Re > 1 the infection may spread in the population; otherwise, the infection will die out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard epidemiological principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "7672f58b-fc6b-4bd7-9aff-c6142921b48d",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C69",
+      "claim": "The year of measles elimination is defined as the first year between 2017 and 2045, in which Re falls below 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The year of measles elimination is here defined as the first year between 2017 and 2045, in which Re falls below 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition used in the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "7d8f2490-4b45-4356-af76-773c47ec7d64",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C70",
+      "claim": "In model simulations, 98.7% of families with children between 1 and 15 years of age are considered as eligible for parental vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, in our simulations, 98.7% of families with children between 1 and 15 years of age are considered as eligible for parental vaccination, whereas in a perfectly clustered model, this percentage would be 88.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "a1199122-e802-4497-846d-5a0771e348f1",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C71",
+      "claim": "In a perfectly clustered model, 88.1% of families with children between 1 and 15 years of age would be eligible for parental vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, in our simulations, 98.7% of families with children between 1 and 15 years of age are considered as eligible for parental vaccination, whereas in a perfectly clustered model, this percentage would be 88.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison result from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "ef526b98-6cb3-4c14-a8b0-fffec37422d6",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C72",
+      "claim": "The first-dose vaccination coverage in the 2015 age cohort has increased from 91.4% in 2017 to 94.2% in 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the available records show that the first-dose vaccination coverage in the 2015 age cohort has increased from 91.4% in 2017 to 94.2% in 2018, (Italian Ministry of Health, 2019) although the fraction of unvaccinated children who were vaccinated thanks to the new regulation may vary depending on the age cohort considered (D'Ancona et al., 2018; Italian Ministry of Health, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement based on data from the Italian Ministry of Health.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "e51df661-a33f-48ca-8e90-08629a1aed27",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C73",
+      "claim": "Measles vaccination coverage in the 2014 age cohort has increased from 87.3% in 2016 to 94.4% in 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the most recent estimates, measles vaccination coverage in the 2014 age cohort has increased from 87.3% in 2016 to 94.4% in 2018, suggesting that the new regulation resulted in the vaccination of about 56% of unvaccinated children in this cohort (Italian National Institute of Health, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement based on data from the Italian National Institute of Health.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "bea741f4-0bae-438c-8e6e-b64973a566d2",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C74",
+      "claim": "The new regulation resulted in the vaccination of about 56% of unvaccinated children in the 2014 age cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the most recent estimates, measles vaccination coverage in the 2014 age cohort has increased from 87.3% in 2016 to 94.4% in 2018, suggesting that the new regulation resulted in the vaccination of about 56% of unvaccinated children in this cohort (Italian National Institute of Health, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the change in vaccination coverage.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "5af39d12-8e48-48d0-a7a1-41f1b757d639",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C75",
+      "claim": "A marked increase in childhood immunization rates would not be sufficient to achieve measles elimination in the short- or medium-term in Italy.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our analysis shows that a marked increase in childhood immunization rates would not be sufficient to achieve measles elimination in the short- or medium-term in Italy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "42d1cf97-4222-4099-b68b-5fe11c6d3cd4",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C76",
+      "claim": "There is a need for appropriate strategies to vaccinate individuals who have already left the school system in order to reduce critical immunity gaps in young adults.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm the need for appropriate strategies to vaccinate individuals who have already left the school system in order to reduce critical immunity gaps in young adults (Trentini et al., 2019; Filia et al., 2017; Trentini et al., 2017; Durrheim, 2017; Thompson, 2017; Wise, 2018; Gidding et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "54f1f5dc-2461-44b3-88b6-c4894fd8fc7f",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C77",
+      "claim": "In Costa Rica, a measles-rubella vaccination campaign targeting adults aged 15\u201339 years was successfully conducted in 2000.",
+      "claim_type": "EXPLICIT",
+      "source": "In Costa Rica, a measles-rubella vaccination campaign targeting adults aged 15\u201339 years was successfully conducted in 2000, but it required huge efforts of communication, social mobilization, and the use of house-to-house vaccination teams (Morice et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by a citation to Morice et al. 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "96fcea78-fc2b-418a-b4c6-a5753b849722",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C78",
+      "claim": "The Costa Rica measles-rubella vaccination campaign required huge efforts of communication, social mobilization, and the use of house-to-house vaccination teams.",
+      "claim_type": "EXPLICIT",
+      "source": "In Costa Rica, a measles-rubella vaccination campaign targeting adults aged 15\u201339 years was successfully conducted in 2000, but it required huge efforts of communication, social mobilization, and the use of house-to-house vaccination teams (Morice et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by a citation to Morice et al. 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "7490b3cf-940a-4274-8360-026ea21de28e",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C79",
+      "claim": "In 2001\u20132002, a vaccination campaign in Australia targeting young adults aged between 18 and 30 years who visited their general practitioner had little effect on the immunity gaps.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2001\u20132002, a vaccination campaign in Australia targeting young adults aged between 18 and 30 years who visited their general practitioner (GP) had little effect on the immunity gaps, probably because of a lack of promotion and central coordination (Gidding et al., 2007; Kelly et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by citations to Gidding et al. 2007 and Kelly et al. 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "7da3c154-4d47-4f6c-a4a7-ef9371006990",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C80",
+      "claim": "The Australian vaccination campaign had little effect probably because of a lack of promotion and central coordination.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2001\u20132002, a vaccination campaign in Australia targeting young adults aged between 18 and 30 years who visited their general practitioner (GP) had little effect on the immunity gaps, probably because of a lack of promotion and central coordination (Gidding et al., 2007; Kelly et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "5a9b6a59-8a7f-48d5-bb13-38c2c638270a",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C81",
+      "claim": "Vaccinating 50% of parents who agreed to vaccinate their children would promote measles elimination as well as reaching 50% of children who still escape measles vaccination despite mandatory vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, our results suggest that vaccinating 50% of parents who agreed to vaccinate their children, and may therefore be inclined towards accepting vaccination, would promote measles elimination as well as reaching 50% of children who still escape measles vaccination despite the fact that vaccination is now mandatory in Italy (i.e., increasing vaccination coverage at school entry from 50% to 75%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "add85b01-bf86-4d26-84d3-70a57d12b323",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C82",
+      "claim": "A key advantage of parental vaccination is that it does not require targeted activities to recruit parents, thus resulting in a relatively simple implementation protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a key advantage of this policy is that it does not require targeted activities to recruit parents, thus resulting in a relatively simple implementation protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the practical advantages of the proposed strategy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "b8a1f764-4b61-44f2-9eef-20fd7739b399",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C83",
+      "claim": "Alternative immunization strategies may include the extension of mandatory vaccination at university entry.",
+      "claim_type": "EXPLICIT",
+      "source": "These may include the extension of mandatory vaccination at university entry \u2013 an intervention already implemented in different US states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for alternative strategies with reference to US implementation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "f75b0472-c995-4839-9763-f90ed2c23fef",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C84",
+      "claim": "Mandatory vaccination at university entry is already implemented in different US states.",
+      "claim_type": "EXPLICIT",
+      "source": "These may include the extension of mandatory vaccination at university entry \u2013 an intervention already implemented in different US states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about US vaccination policy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "d4617882-507c-42e0-af87-48fcb69c0728",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C85",
+      "claim": "Other immunization efforts may include the introduction of proof of immunity as a condition for the enrolment of health care workers.",
+      "claim_type": "EXPLICIT",
+      "source": "Other immunization efforts may include the introduction of proof of immunity as a condition for the enrolment of health care workers (HCWs), for whom measles vaccination is only recommended in most European countries (Galanakis et al., 2014; Maltezou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for alternative strategies supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "34f77c9d-8856-4585-a90d-6abde1f2cf76",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C86",
+      "claim": "Measles vaccination is only recommended for health care workers in most European countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Other immunization efforts may include the introduction of proof of immunity as a condition for the enrolment of health care workers (HCWs), for whom measles vaccination is only recommended in most European countries (Galanakis et al., 2014; Maltezou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "926f1800-4419-40dd-91ef-04aaea942818",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C87",
+      "claim": "Health care workers have potential to amplify measles outbreaks and have higher risk of exposure to the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "The need to improve vaccination coverage among HCWs is due to their potential to amplify measles outbreaks and their higher risk of exposure to the virus, as observed in the 2017 Italian outbreak in which 7% of cases were HCWs (Maltezou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation and observation from the 2017 outbreak.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "b0965611-b8b3-4354-8b73-d691b05d3b68",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "claim_id": "C88",
+      "claim": "In the 2017 Italian outbreak, 7% of cases were health care workers.",
+      "claim_type": "EXPLICIT",
+      "source": "The need to improve vaccination coverage among HCWs is due to their potential to amplify measles outbreaks and their higher risk of exposure to the virus, as observed in the 2017 Italian outbreak in which 7% of cases were HCWs (Maltezou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the 2017 outbreak supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cfea4d87-2b74-4b57-b7ab-fc7d85d979cd",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "High-income countries, including Italy, are experiencing measles reemergence. Italy experienced a major outbreak in 2017 with 5098 cases (4042 laboratory-confirmed), four deaths, with 70% of cases in adults over 20 years (median age 27), suggesting adult transmission plays a significant role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C13 are well-supported by citations to official health reports (Italian National Institute of Health, ECDC, WHO). The age distribution data and outbreak statistics are documented in authoritative sources, providing strong evidence for measles reemergence driven by adult susceptibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "b9e25ab0-2811-4755-990c-5ffcb8ef8e10",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Significant immunity gaps exist in Italian adults aged 15-45 years, resulting from historical suboptimal vaccination coverage (below 80% until 2003, peaking at 91% in 2010\u2014below the 95% elimination threshold) and absence of major epidemics allowing individuals to escape both vaccination and natural infection. Recent years show declining coverage possibly due to vaccine hesitancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C25 are supported by multiple citations to serological studies (Rota et al. 2008), modeling studies (Merler and Ajelli 2014, Trentini et al. 2017), and historical vaccination data. The 95% threshold claim is appropriately cited to Anderson and May 1991, a foundational reference in infectious disease epidemiology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "1ca27381-e2dc-4a81-a6d8-9106ef16b076",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In July 2017, Italy introduced mandatory vaccination at school entry (regulation 119/2017) for children under 16 years, with enforcement mechanisms including kindergarten exclusion and financial penalties. While this policy can increase childhood vaccination and catch up school-age children, it will not address existing immunity gaps in adults, and high childhood coverage alone may be insufficient for measles elimination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C26-C33 accurately describe Italian policy and are supported by appropriate citations (Signorelli et al. 2018, D'Ancona et al. 2018, Trentini et al. 2019). The inference that the policy won't affect older age groups (C31) is logically sound given the policy targets children. The need for adult strategies (C33) is well-supported by multiple citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "626e82ac-bc74-43e5-b333-3f034e3b8835",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study proposes a novel vaccination strategy consisting of offering measles vaccination to parents of all children who receive any measles vaccine dose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 clearly describes the intervention being studied. This is a straightforward methodological description that is consistently applied throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "87f34834-81a3-467a-8920-7f0c9b0c21b1",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Model simulations estimate that at the beginning of 2017, 8.1% (95% CI 7.3-8.9%) of the Italian population (~4.9 million people) was susceptible to measles, with about one-third under 16 years and 60% aged 18-45 years. The 2017 outbreak affected only 0.1% of susceptibles. The model's age distribution of susceptibles matches the reported age distribution of 2017 outbreak cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 are supported by model simulations based on Trentini et al. 2017 estimates and validated against 2017 outbreak data (Figure 1B). The match between modeled susceptibility and observed case age distribution (C40) provides important validation of the model's reliability, strengthening confidence in the baseline estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "a3b74287-f289-4e72-98b1-191fe4e98aaa",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Under the current vaccination program, the 2017 catch-up campaign immunized 445,189 susceptible children under 16, producing a 9% reduction in overall susceptibles in 2018. However, susceptibility would progressively increase to 8.8% by 2045 due to replacement of naturally immune elderly with partially immunized cohorts. By 2045, only 14.3% of susceptibles would be under 17 years, while 69.6% would be over 45 years, and the 17-44 age group would maintain 16.2% susceptibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 present model projections with appropriate confidence intervals shown in Figures 1C-D. The demographic mechanism explaining the increase (C44)\u2014replacement of naturally immune elderly with incompletely vaccinated cohorts\u2014is epidemiologically sound and well-explained. The age-specific projections logically follow from the model structure and assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "231449d1-2701-4bf4-be27-ae6b5847f3d7",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Parental vaccination added to the current program would progressively reduce adult immunity gaps and overall population susceptibility. By 2045, total susceptibility would range from 6.3% (99% parental coverage) to 7.6% (50% coverage) versus 8.8% under current policy alone. This would reduce susceptibles aged 17-44 years in 2017 by 17.1% (50% coverage) to 35% (99% coverage).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 present model results with confidence intervals shown in Figures 2-3. The dose-response relationship between parental vaccination coverage and susceptibility reduction is logical and well-quantified. The specific age group targeted (17-44 in 2017) is appropriate given these individuals would not benefit from school-entry policies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "56ca9531-d9e8-4557-a762-feb466ee75db",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The current program would decrease the effective reproduction number (Re) to 1.08 (95% CI 0.95-1.23) by 2045, achieving elimination before 2045 in only 12.0% of simulations. Parental vaccination would reduce Re to 0.95 (50% coverage), 0.89 (75% coverage), or 0.84 (99% coverage) by 2045, achieving elimination on average in 2042, 2037, and 2031, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C59 present model projections of Re over time shown in Figure 4. The Re estimates are derived from the susceptibility profiles using standard epidemiological methods. The dose-response relationship between parental vaccination coverage and elimination timing is consistent and includes appropriate uncertainty quantification. The baseline finding that current policy achieves elimination in only 12% of realizations highlights the problem's severity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "66652fd4-615e-4a3c-9bc3-c2d93feebead",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sensitivity analyses show that improving school-entry vaccination to 99% coverage could achieve elimination by 2039, while 75% coverage would achieve elimination by 2042 (comparable to 50% parental vaccination). The most optimistic scenario (99% coverage for both parental vaccination and school entry) could achieve elimination as early as 2023.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 present sensitivity analysis results that appropriately explore alternative scenarios. The comparison between school-entry improvements and parental vaccination (C61) provides useful context for policy decisions. The 2023 elimination estimate under optimal conditions (C62) represents an upper bound that helps bracket the range of possible outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "6ae97a68-19a1-4f7f-a524-d20e5487c9a9",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Analysis of the 2017 outbreak yielded an estimated effective reproduction number of 1.66 (95% CI 1.55-1.76).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 presents an Re estimate derived from outbreak data analysis. The estimate is within the expected range for measles in partially immune populations and includes appropriate confidence intervals. This baseline Re is crucial for projecting future transmission dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "680d6733-d0c0-42ff-99ed-e69548ad1925",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Model assumptions include constant routine vaccination coverage at 85% (first dose) and 83% (second dose) based on WHO 2016 data, 50% coverage for the 2017 catch-up campaign and school-entry vaccination based on Italian Ministry of Health 2019 estimates, and 95% vaccine efficacy based on De Serres et al. 1995.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 describe key model parameters with appropriate citations. The 50% school-entry coverage assumption (C65) is explicitly stated to correspond to current impact estimates, though this is a critical assumption that affects all projections. The 95% vaccine efficacy (C66) is a standard value well-supported in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "6410bfb2-67ab-4fc8-a252-05d9859d6def",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The effective reproductive number (Re) represents expected secondary cases from one infected individual in a partially immune population. Re > 1 indicates potential spread; Re < 1 indicates die-out. Elimination is defined as the first year between 2017-2045 when Re falls below 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 provide standard epidemiological definitions that are correctly stated. The operational definition of elimination (C69) as Re < 1 is appropriate for this modeling study, though it differs from WHO's definition of elimination (interruption of endemic transmission for \u226512 months), which the authors acknowledge implicitly by discussing elimination timing rather than claiming elimination has been achieved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "95298351-779d-4679-a841-10de1f2552a5",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In the model simulations, 98.7% of families with children aged 1-15 years are eligible for parental vaccination, compared to 88.1% in a perfectly clustered model where vaccination decisions are identical for all children in a family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 acknowledge an important model limitation regarding clustering of vaccination behavior within families. The authors appropriately note this may overestimate eligible parents. However, they don't fully quantify how this affects the main results, which is a limitation of the analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "e4287900-e3cf-4483-9f4a-e0ce32ea7eac",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Recent data show first-dose coverage in the 2015 cohort increased from 91.4% (2017) to 94.2% (2018), and coverage in the 2014 cohort increased from 87.3% (2016) to 94.4% (2018), suggesting the new regulation vaccinated about 56% of previously unvaccinated children in the 2014 cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 present empirical data from Italian health authorities supporting the 50% baseline assumption used in the model. The calculation in C74 (56% of unvaccinated children) is mathematically correct: (94.4-87.3)/(100-87.3) \u2248 0.56. This provides post-hoc validation of the model's coverage assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "92d6c48b-6871-4fe6-a78e-18ed499a482f",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Current vaccination efforts would not be sufficient to interrupt measles transmission before 2045 due to susceptibility in the 17-44 age group. A marked increase in childhood immunization rates alone would be insufficient for short- or medium-term elimination, confirming the need for strategies targeting adults who have left the school system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C75-C76 present the study's main conclusion, supported by model simulations showing Re remaining above 1 in 88% of realizations under current policy (C53). The conclusion is well-supported by the modeling results and appropriately cites multiple prior studies (C76) identifying this gap. This represents the key policy-relevant finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "3b6ec15b-7145-4344-975f-6f64b3b49ee5",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Integrating parental vaccination with current policy would reduce susceptible adults by 17-35% and increase the chance of elimination before 2045 to 78.9-96.5%. Vaccinating 50% of parents who vaccinate their children would promote elimination as effectively as reaching 50% of children who escape mandatory vaccination (i.e., increasing school-entry coverage from 50% to 75%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C81 present the study's primary findings on parental vaccination effectiveness. These are well-supported by model results (C50-C51, C54-C59) with appropriate confidence intervals. The comparison in C81 provides useful context for policy decisions, showing parental vaccination could be as effective as improving school-entry compliance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "661e93c5-867b-43af-b14b-497628e2ad37",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "A key advantage of parental vaccination is that it does not require targeted recruitment activities, resulting in a relatively simple implementation protocol.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 makes a reasonable inference about implementation advantages. Parents bringing children for vaccination are already engaged with the healthcare system, reducing recruitment barriers. However, the claim doesn't address other implementation challenges (e.g., vaccine supply, provider time, parental acceptance) that could affect feasibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "94316a26-3d3d-45a2-88a2-81bc67ccd31e",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Historical adult vaccination campaigns show mixed results: Costa Rica successfully vaccinated adults aged 15-39 in 2000 but required intensive efforts including house-to-house teams, while Australia's 2001-2002 campaign targeting adults aged 18-30 at GP visits had little effect, possibly due to lack of promotion and coordination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 provide important context from prior adult vaccination efforts, appropriately cited to Morice et al. 2003, Gidding et al. 2007, and Kelly et al. 2007. The speculation about causes of the Australian campaign's failure (C80) is appropriately hedged with 'probably' and supported by the cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "d27fb4a8-96b5-4cde-b628-ecb872669d07",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Alternative strategies for reducing adult susceptibility include mandatory vaccination at university entry (already implemented in some US states) and proof of immunity for healthcare worker enrollment. Healthcare workers have higher exposure risk and outbreak amplification potential; 7% of 2017 Italian outbreak cases were healthcare workers despite measles vaccination being only recommended (not mandatory) for this group in most European countries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C88 discuss alternative strategies with appropriate citations. The 7% healthcare worker case proportion (C88) is documented by Maltezou et al. 2019. These alternatives provide useful policy context, though the manuscript doesn't model their potential impact quantitatively.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    },
+    {
+      "id": "a9f3d3a2-b07a-416d-ab7e-8827faf95da7",
+      "content_id": "64feb51b-2431-45c2-8d97-d672971dadec",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The WHO Global Measles and Rubella Strategic Plan 2012-2020 aimed to eliminate measles in at least five WHO regions by 2020, but by 2018 only the Americas had achieved elimination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 provide accurate background on global measles elimination goals. These are factual statements about WHO policy and elimination status that provide important context for the study's focus on Italy's elimination challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:58:42.806107Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fc1274aa-4f00-4f80-9ae8-be47aee50cb7",
+      "result_id": "cfea4d87-2b74-4b57-b7ab-fc7d85d979cd"
+    },
+    {
+      "claim_id": "396fbccf-047a-440b-ae8e-521f58e802a8",
+      "result_id": "cfea4d87-2b74-4b57-b7ab-fc7d85d979cd"
+    },
+    {
+      "claim_id": "7f732924-8871-4e5e-9cd9-e956bcdc0988",
+      "result_id": "cfea4d87-2b74-4b57-b7ab-fc7d85d979cd"
+    },
+    {
+      "claim_id": "397b4afd-19a6-49cb-8269-3684fc61878e",
+      "result_id": "cfea4d87-2b74-4b57-b7ab-fc7d85d979cd"
+    },
+    {
+      "claim_id": "5888fa46-6346-4ea7-90fd-aa606ff85f8c",
+      "result_id": "cfea4d87-2b74-4b57-b7ab-fc7d85d979cd"
+    },
+    {
+      "claim_id": "e8825eaf-1359-4eea-ba1b-4b553af51f6e",
+      "result_id": "cfea4d87-2b74-4b57-b7ab-fc7d85d979cd"
+    },
+    {
+      "claim_id": "4610282e-c59f-4d7b-85e6-b1900ad3f41a",
+      "result_id": "cfea4d87-2b74-4b57-b7ab-fc7d85d979cd"
+    },
+    {
+      "claim_id": "787b0dad-1411-49ca-a0f0-56e00145ccfa",
+      "result_id": "b9e25ab0-2811-4755-990c-5ffcb8ef8e10"
+    },
+    {
+      "claim_id": "31010e0b-a11a-4b4d-a7e9-2abfa08a5267",
+      "result_id": "b9e25ab0-2811-4755-990c-5ffcb8ef8e10"
+    },
+    {
+      "claim_id": "cf8c0384-2b63-4596-907d-a00f4516afb2",
+      "result_id": "b9e25ab0-2811-4755-990c-5ffcb8ef8e10"
+    },
+    {
+      "claim_id": "47c8e822-7756-4f64-84e4-b49cc5868b47",
+      "result_id": "b9e25ab0-2811-4755-990c-5ffcb8ef8e10"
+    },
+    {
+      "claim_id": "f31e0d4a-0a9b-4ee5-967e-dec96ca72654",
+      "result_id": "b9e25ab0-2811-4755-990c-5ffcb8ef8e10"
+    },
+    {
+      "claim_id": "938bd518-aa0e-4661-adbd-fd1694b98253",
+      "result_id": "b9e25ab0-2811-4755-990c-5ffcb8ef8e10"
+    },
+    {
+      "claim_id": "0d7a522d-3ba7-4653-a30f-1e32f2e0a609",
+      "result_id": "b9e25ab0-2811-4755-990c-5ffcb8ef8e10"
+    },
+    {
+      "claim_id": "e869abc0-6994-401c-b7f7-7d98a4517aa5",
+      "result_id": "b9e25ab0-2811-4755-990c-5ffcb8ef8e10"
+    },
+    {
+      "claim_id": "c856641b-c5e7-4019-9cb9-28de4e1d37e4",
+      "result_id": "b9e25ab0-2811-4755-990c-5ffcb8ef8e10"
+    },
+    {
+      "claim_id": "f6b451be-6d03-4bf6-8ce5-a80b38f7b679",
+      "result_id": "b9e25ab0-2811-4755-990c-5ffcb8ef8e10"
+    },
+    {
+      "claim_id": "dc1df52d-dfc0-4a59-97b7-7fd0625bc750",
+      "result_id": "b9e25ab0-2811-4755-990c-5ffcb8ef8e10"
+    },
+    {
+      "claim_id": "8debf299-4371-4918-9c24-b7e475eb6ff5",
+      "result_id": "b9e25ab0-2811-4755-990c-5ffcb8ef8e10"
+    },
+    {
+      "claim_id": "6ebec3de-718e-4cd9-921f-a18a8314654c",
+      "result_id": "1ca27381-e2dc-4a81-a6d8-9106ef16b076"
+    },
+    {
+      "claim_id": "1a7a1d43-28a6-4560-a4f3-40d72e1d5a90",
+      "result_id": "1ca27381-e2dc-4a81-a6d8-9106ef16b076"
+    },
+    {
+      "claim_id": "c1091998-22b3-4dbe-ac4c-a08e85e966cb",
+      "result_id": "1ca27381-e2dc-4a81-a6d8-9106ef16b076"
+    },
+    {
+      "claim_id": "19443ab0-0445-4448-b4f5-675608ba1b5e",
+      "result_id": "1ca27381-e2dc-4a81-a6d8-9106ef16b076"
+    },
+    {
+      "claim_id": "5c4c7411-34a3-4803-8cb2-fdc3cafce85e",
+      "result_id": "1ca27381-e2dc-4a81-a6d8-9106ef16b076"
+    },
+    {
+      "claim_id": "3f2dd0dc-131e-471b-99b2-5476d7fd1539",
+      "result_id": "1ca27381-e2dc-4a81-a6d8-9106ef16b076"
+    },
+    {
+      "claim_id": "526bbd57-e911-4c33-9c16-63b241b1c997",
+      "result_id": "1ca27381-e2dc-4a81-a6d8-9106ef16b076"
+    },
+    {
+      "claim_id": "4d558806-6c4c-40f5-814d-02cd0ad3bf0a",
+      "result_id": "1ca27381-e2dc-4a81-a6d8-9106ef16b076"
+    },
+    {
+      "claim_id": "41433d31-817a-4aa8-b1ed-b8e8ffcc249b",
+      "result_id": "1ca27381-e2dc-4a81-a6d8-9106ef16b076"
+    },
+    {
+      "claim_id": "d6a3a6a1-466c-4921-aec0-55fc6a5e4106",
+      "result_id": "626e82ac-bc74-43e5-b333-3f034e3b8835"
+    },
+    {
+      "claim_id": "0d27dd03-3018-4cd9-a163-ce5a2ad78495",
+      "result_id": "87f34834-81a3-467a-8920-7f0c9b0c21b1"
+    },
+    {
+      "claim_id": "664b7ec7-d2ae-4964-af66-2dfd1be5af2b",
+      "result_id": "87f34834-81a3-467a-8920-7f0c9b0c21b1"
+    },
+    {
+      "claim_id": "b2ba983e-6f12-40bb-b1d2-53eaed6bf23c",
+      "result_id": "87f34834-81a3-467a-8920-7f0c9b0c21b1"
+    },
+    {
+      "claim_id": "6fad0f67-9c8e-4091-8714-b417838c439f",
+      "result_id": "87f34834-81a3-467a-8920-7f0c9b0c21b1"
+    },
+    {
+      "claim_id": "373e6496-4236-43fa-ad07-36e49cad9e93",
+      "result_id": "87f34834-81a3-467a-8920-7f0c9b0c21b1"
+    },
+    {
+      "claim_id": "56d77c6b-ee3f-4d9b-9192-fa6c5431d23a",
+      "result_id": "87f34834-81a3-467a-8920-7f0c9b0c21b1"
+    },
+    {
+      "claim_id": "4e51d8b9-be66-4d3c-bb83-c0f723f89005",
+      "result_id": "a3b74287-f289-4e72-98b1-191fe4e98aaa"
+    },
+    {
+      "claim_id": "048f9538-14e2-4588-b52e-ddb67ebff6b0",
+      "result_id": "a3b74287-f289-4e72-98b1-191fe4e98aaa"
+    },
+    {
+      "claim_id": "db80efb6-4bdd-48c4-89d7-8813a6c746fb",
+      "result_id": "a3b74287-f289-4e72-98b1-191fe4e98aaa"
+    },
+    {
+      "claim_id": "11427db4-c67c-4dde-9ff8-5d76741928af",
+      "result_id": "a3b74287-f289-4e72-98b1-191fe4e98aaa"
+    },
+    {
+      "claim_id": "7e8798c7-f043-45e8-86a1-32e6954dae2b",
+      "result_id": "a3b74287-f289-4e72-98b1-191fe4e98aaa"
+    },
+    {
+      "claim_id": "59c41c96-014c-405b-8884-47646267a530",
+      "result_id": "a3b74287-f289-4e72-98b1-191fe4e98aaa"
+    },
+    {
+      "claim_id": "b0adcb97-2944-4ef1-b934-43a4ee742e49",
+      "result_id": "a3b74287-f289-4e72-98b1-191fe4e98aaa"
+    },
+    {
+      "claim_id": "a512a7dd-d8b1-47c6-8970-9b498e57ff20",
+      "result_id": "231449d1-2701-4bf4-be27-ae6b5847f3d7"
+    },
+    {
+      "claim_id": "d212bbdb-18cf-44d3-bd28-22e7ce5eb6cd",
+      "result_id": "231449d1-2701-4bf4-be27-ae6b5847f3d7"
+    },
+    {
+      "claim_id": "c7526d76-e09d-420a-acad-b889d2d59684",
+      "result_id": "231449d1-2701-4bf4-be27-ae6b5847f3d7"
+    },
+    {
+      "claim_id": "ed73f4ad-ea57-4c5e-8aa9-e5aebb83e516",
+      "result_id": "231449d1-2701-4bf4-be27-ae6b5847f3d7"
+    },
+    {
+      "claim_id": "df0d163f-6909-4811-80a9-6450b5d04b4e",
+      "result_id": "56ca9531-d9e8-4557-a762-feb466ee75db"
+    },
+    {
+      "claim_id": "9b6dd08f-ca6e-4c55-a7ff-60ca28985c0b",
+      "result_id": "56ca9531-d9e8-4557-a762-feb466ee75db"
+    },
+    {
+      "claim_id": "edf7e89e-867f-480f-9098-199aedef9634",
+      "result_id": "56ca9531-d9e8-4557-a762-feb466ee75db"
+    },
+    {
+      "claim_id": "7a38faf7-5595-4bdf-9289-41891b0f5be3",
+      "result_id": "56ca9531-d9e8-4557-a762-feb466ee75db"
+    },
+    {
+      "claim_id": "5cdd3a01-d25e-4c91-aa5c-7b3eab6d3149",
+      "result_id": "56ca9531-d9e8-4557-a762-feb466ee75db"
+    },
+    {
+      "claim_id": "9f3276ee-3ec4-46bf-bdb8-a130738fe62f",
+      "result_id": "56ca9531-d9e8-4557-a762-feb466ee75db"
+    },
+    {
+      "claim_id": "2cbd0d84-525e-4427-89e1-0f80ecd0a85b",
+      "result_id": "56ca9531-d9e8-4557-a762-feb466ee75db"
+    },
+    {
+      "claim_id": "da3ece5f-b31f-47eb-8da4-b59cb19b7b51",
+      "result_id": "56ca9531-d9e8-4557-a762-feb466ee75db"
+    },
+    {
+      "claim_id": "12064714-9e1c-49e3-b9e1-28fa380007ca",
+      "result_id": "66652fd4-615e-4a3c-9bc3-c2d93feebead"
+    },
+    {
+      "claim_id": "91627d29-e2c4-4c74-9bd6-5e8e553eae53",
+      "result_id": "66652fd4-615e-4a3c-9bc3-c2d93feebead"
+    },
+    {
+      "claim_id": "a44a696d-d7fd-4589-9776-f0006df95cb7",
+      "result_id": "66652fd4-615e-4a3c-9bc3-c2d93feebead"
+    },
+    {
+      "claim_id": "00680ba4-cfbb-42e1-a662-41fa1282b6d2",
+      "result_id": "6ae97a68-19a1-4f7f-a524-d20e5487c9a9"
+    },
+    {
+      "claim_id": "9801c12a-492a-4024-963f-7a8ba64a2b6f",
+      "result_id": "680d6733-d0c0-42ff-99ed-e69548ad1925"
+    },
+    {
+      "claim_id": "c6eadc30-275f-408c-a834-9676d7ecf2e6",
+      "result_id": "680d6733-d0c0-42ff-99ed-e69548ad1925"
+    },
+    {
+      "claim_id": "85574029-bc04-431e-9e28-5b12cd601261",
+      "result_id": "680d6733-d0c0-42ff-99ed-e69548ad1925"
+    },
+    {
+      "claim_id": "33921151-8aff-43f3-aa61-fe5cc6f8d8d4",
+      "result_id": "6410bfb2-67ab-4fc8-a252-05d9859d6def"
+    },
+    {
+      "claim_id": "d7f3670d-eacf-488e-87b2-310a10f09017",
+      "result_id": "6410bfb2-67ab-4fc8-a252-05d9859d6def"
+    },
+    {
+      "claim_id": "7672f58b-fc6b-4bd7-9aff-c6142921b48d",
+      "result_id": "6410bfb2-67ab-4fc8-a252-05d9859d6def"
+    },
+    {
+      "claim_id": "7d8f2490-4b45-4356-af76-773c47ec7d64",
+      "result_id": "95298351-779d-4679-a841-10de1f2552a5"
+    },
+    {
+      "claim_id": "a1199122-e802-4497-846d-5a0771e348f1",
+      "result_id": "95298351-779d-4679-a841-10de1f2552a5"
+    },
+    {
+      "claim_id": "ef526b98-6cb3-4c14-a8b0-fffec37422d6",
+      "result_id": "e4287900-e3cf-4483-9f4a-e0ce32ea7eac"
+    },
+    {
+      "claim_id": "e51df661-a33f-48ca-8e90-08629a1aed27",
+      "result_id": "e4287900-e3cf-4483-9f4a-e0ce32ea7eac"
+    },
+    {
+      "claim_id": "bea741f4-0bae-438c-8e6e-b64973a566d2",
+      "result_id": "e4287900-e3cf-4483-9f4a-e0ce32ea7eac"
+    },
+    {
+      "claim_id": "669eb2d8-e6a8-4ca9-835b-15c2f45cb665",
+      "result_id": "92d6c48b-6871-4fe6-a78e-18ed499a482f"
+    },
+    {
+      "claim_id": "5af39d12-8e48-48d0-a7a1-41f1b757d639",
+      "result_id": "92d6c48b-6871-4fe6-a78e-18ed499a482f"
+    },
+    {
+      "claim_id": "42d1cf97-4222-4099-b68b-5fe11c6d3cd4",
+      "result_id": "92d6c48b-6871-4fe6-a78e-18ed499a482f"
+    },
+    {
+      "claim_id": "4c583f58-f55b-4c82-81ca-dbcd2e2186c8",
+      "result_id": "3b6ec15b-7145-4344-975f-6f64b3b49ee5"
+    },
+    {
+      "claim_id": "aa6efc1d-68fa-4f76-a49d-a5b739ccc639",
+      "result_id": "3b6ec15b-7145-4344-975f-6f64b3b49ee5"
+    },
+    {
+      "claim_id": "5a9b6a59-8a7f-48d5-bb13-38c2c638270a",
+      "result_id": "3b6ec15b-7145-4344-975f-6f64b3b49ee5"
+    },
+    {
+      "claim_id": "add85b01-bf86-4d26-84d3-70a57d12b323",
+      "result_id": "661e93c5-867b-43af-b14b-497628e2ad37"
+    },
+    {
+      "claim_id": "54f1f5dc-2461-44b3-88b6-c4894fd8fc7f",
+      "result_id": "94316a26-3d3d-45a2-88a2-81bc67ccd31e"
+    },
+    {
+      "claim_id": "96fcea78-fc2b-418a-b4c6-a5753b849722",
+      "result_id": "94316a26-3d3d-45a2-88a2-81bc67ccd31e"
+    },
+    {
+      "claim_id": "7490b3cf-940a-4274-8360-026ea21de28e",
+      "result_id": "94316a26-3d3d-45a2-88a2-81bc67ccd31e"
+    },
+    {
+      "claim_id": "7da3c154-4d47-4f6c-a4a7-ef9371006990",
+      "result_id": "94316a26-3d3d-45a2-88a2-81bc67ccd31e"
+    },
+    {
+      "claim_id": "b8a1f764-4b61-44f2-9eef-20fd7739b399",
+      "result_id": "d27fb4a8-96b5-4cde-b628-ecb872669d07"
+    },
+    {
+      "claim_id": "f75b0472-c995-4839-9763-f90ed2c23fef",
+      "result_id": "d27fb4a8-96b5-4cde-b628-ecb872669d07"
+    },
+    {
+      "claim_id": "d4617882-507c-42e0-af87-48fcb69c0728",
+      "result_id": "d27fb4a8-96b5-4cde-b628-ecb872669d07"
+    },
+    {
+      "claim_id": "34f77c9d-8856-4585-a90d-6abde1f2cf76",
+      "result_id": "d27fb4a8-96b5-4cde-b628-ecb872669d07"
+    },
+    {
+      "claim_id": "926f1800-4419-40dd-91ef-04aaea942818",
+      "result_id": "d27fb4a8-96b5-4cde-b628-ecb872669d07"
+    },
+    {
+      "claim_id": "b0965611-b8b3-4354-8b73-d691b05d3b68",
+      "result_id": "d27fb4a8-96b5-4cde-b628-ecb872669d07"
+    },
+    {
+      "claim_id": "72353cde-faea-44a9-89b8-74c0592948fc",
+      "result_id": "a9f3d3a2-b07a-416d-ab7e-8827faf95da7"
+    },
+    {
+      "claim_id": "bd073ad8-3821-4968-8510-c599b3113e21",
+      "result_id": "a9f3d3a2-b07a-416d-ab7e-8827faf95da7"
+    }
+  ],
+  "comparisons": []
+}

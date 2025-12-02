@@ -1,0 +1,1991 @@
+{
+  "submission": {
+    "id": "89aeae35-f7be-47eb-a18d-50bd74f05073",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:51:31.808537Z",
+    "updated_at": "2025-12-02T09:51:31.808537Z"
+  },
+  "content": [
+    {
+      "id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "submission_id": "89aeae35-f7be-47eb-a18d-50bd74f05073",
+      "content_type": "manuscript",
+      "content_text": "# Host-pathogen coevolution increases genetic variation in susceptibility to infection\n\n## Authors\n\n- Elizabeth ML Duxbury<sup>1</sup> ([ORCID: 0000-0002-5733-3645](https://orcid.org/0000-0002-5733-3645))\n- Jonathan P Day<sup>1</sup>\n- Davide Maria Vespasiani<sup>1</sup>\n- Yannik Th\u00fcringer<sup>1</sup>\n- Ignacio Tolosana<sup>1</sup> ([ORCID: 0000-0002-3766-8296](https://orcid.org/0000-0002-3766-8296))\n- Sophia CL Smith<sup>1</sup>\n- Lucia Tagliaferri<sup>1</sup>\n- Altug Kamacioglu<sup>1</sup>\n- Imogen Lindsley<sup>1</sup>\n- Luca Love<sup>1</sup>\n- Robert L Unckless<sup>3</sup> ([ORCID: 0000-0001-8586-7137](https://orcid.org/0000-0001-8586-7137))\n- Francis M Jiggins<sup>1</sup> ([ORCID: 0000-0001-7470-8157](https://orcid.org/0000-0001-7470-8157)) \u2020\n- Ben Longdon<sup>1</sup> ([ORCID: 0000-0001-6936-1697](https://orcid.org/0000-0001-6936-1697)) \u2020\n\n### Affiliations\n\n1. Department of Genetics University of Cambridge Cambridge United Kingdom\n2. School of Biological Sciences University of East Anglia Norwich United Kingdom\n3. Department of Molecular Biosciences University of Kansas Lawrence United States\n4. Centre for Ecology and Conservation, Biosciences University of Exeter (Penryn Campus) Cornwall United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt is common to find considerable genetic variation in susceptibility to infection in natural populations. We have investigated whether natural selection increases this variation by testing whether host populations show more genetic variation in susceptibility to pathogens that they naturally encounter than novel pathogens. In a large cross-infection experiment involving four species of Drosophila and four host-specific viruses, we always found greater genetic variation in susceptibility to viruses that had coevolved with their host. We went on to examine the genetic architecture of resistance in one host species, finding that there are more major-effect genetic variants in coevolved host-pathogen interactions. We conclude that selection by pathogens has increased genetic variation in host susceptibility, and much of this effect is caused by the occurrence of major-effect resistance polymorphisms within populations.\n\n## Introduction\n\nFrom bacteria to plants and insects to humans, it is common to find considerable genetic variation in susceptibility to infection in natural populations (Chapman and Hill, 2012; Bangham et al., 2008a; Hammond-Kosack and Jones, 1997; Lazzaro et al., 2004). This variation in susceptibility can determine the impact of disease on health and economic output (Cooke and Hill, 2001; King and Lively, 2012; Alonso-Blanco and M\u00e9ndez-Vigo, 2014; Burgner et al., 2006). In nature and breeding programs, it determines the ability of populations to evolve resistance to infection. Insect populations, like those of other organisms, typically contain considerable genetic variation in susceptibility to infection (Bangham et al., 2008a; Lazzaro et al., 2004; Tinsley et al., 2006; Obbard and Dudas, 2014), and provide a convenient laboratory model in which to investigate basic questions about how this variation is maintained (Magwire et al., 2012). Within vector species like mosquitoes, resistant genotypes are less likely to transmit pathogens, and this has the potential to reduce disease in vertebrate populations (Beerntsen et al., 2000). Where pathogens are contributing the decline of beneficial species like pollinators, high levels of genetic variation may allow populations to recover (Maori et al., 2007). Understanding the origins of genetic variation in susceptibility is therefore a fundamental question in infectious disease biology.\n\nAs pathogens are harmful, natural selection is expected to favour resistant host genotypes. Directional selection on standing genetic variation will drive alleles to fixation, removing variants from the population (Falconer, 1960; Falconer and Mackay, 1996; Blows and Hoffmann, 2005). However, as directional selection also increases the frequency of new mutations that change the trait in the direction of selection, at equilibrium it is expected to have no effect on levels of standing genetic variation (relative to mutation-drift balance; Hill, 1982). However, selection mediated by pathogens may be different. Coevolution with pathogens can result in the maintenance of both resistant and susceptible alleles by negative frequency dependent selection (Woolhouse et al., 2002; Haldane, 1949). Similarly, when infection prevalence exhibits geographical or temporal variation, selection can maintain genetic variation, especially if pleiotropic costs to resistance provide an advantage to susceptible individuals when infection is rare (Nuismer et al., 2003; Thompson, 1999; Koskella, 2018). Even when there is simple directional selection on alleles that increase resistance, the direction of selection by pathogens may frequently change so populations may not be at equilibrium. If selection favours rare alleles \u2013 such as new mutations \u2013 directional selection can transiently increase genetic variation during their spread through the population (Barton and Turelli, 1987; Bangham et al., 2007; Magwire et al., 2011).\n\nAs part of a whole genome association study, we have previously estimated levels of genetic variation in the susceptibility of D. melanogaster to four different viruses (Magwire et al., 2012). We found that there was more genetic variation in susceptibility to the two viruses that were isolated from D. melanogaster than the two viruses from other insect species. Furthermore, in each of these naturally coevolved host-pathogen associations we detected a single major-effect polymorphism affecting resistance. This led us to propose that coevolution had increased genetic variation in susceptibility due to the presence of major-effect resistance polymorphisms. However, this conclusion remains anecdotal. First, aside from two sigma viruses, the viruses we used were mostly very distantly related, so their biology may differ for many reasons. Second, our association study had low statistical power, so conclusions about the genetics were based on just two genes. Finally, and most importantly, the link between coevolutionary history and genetic variation is based on a single host and four viruses, and so could arise by chance. For this reason, here we return to this question and formally test whether a history of coevolution alters the amount and nature of genetic variation.\n\nTo examine how selection by a pathogen affects levels of genetic variation we used a natural host-virus system; Drosophila and sigma viruses (Longdon and Jiggins, 2012; Longdon et al., 2012). Sigma viruses are a clade of insect RNA viruses with negative-sense genomes in the family Rhabdoviridae (Longdon et al., 2017; Longdon et al., 2015a; Longdon et al., 2010; Longdon et al., 2011a). They are vertically transmitted through eggs and sperm, and each sigma virus infects a single host species, simplifying studies of coevolution (Longdon et al., 2017; Longdon et al., 2011a). In Drosophila melanogaster, despite the virus causing little adult mortality, infection reduces host fitness by approximately 25% (Wilfert and Jiggins, 2013; Yampolsky et al., 1999). As prevalence in wild populations is typically around 10% (Wilfert and Jiggins, 2013), there is the necessary selective pressure for resistance to evolve (Magwire et al., 2011; Cao et al., 2016). In D. melanogaster, three major-effect resistance alleles have been identified (Bangham et al., 2008a; Magwire et al., 2012; Bangham et al., 2007; Magwire et al., 2011; Cao et al., 2016; Bangham et al., 2008b; Wayne et al., 1996). There has been a recent sweep of D. melanogaster sigma virus (DMelSV) genotypes that are able to overcome one of these host resistance genes (Fleuriet, 1988; Wilfert and Jiggins, 2010a; Wilfert and Jiggins, 2014). Given the power of Drosophila genetics, this system is an excellent model of a coevolutionary arms race between hosts and pathogens.\n\nSigma viruses offer a novel way to test how coevolution with a pathogen alters the amount of genetic variation in host susceptibility. As sigma viruses are vertically transmitted, we can be certain of which hosts and viruses are naturally coevolving and which are not. In this study we have used four species of Drosophila (D. affinis, D. immigrans, D. melanogaster and D. obscura) that shared a common ancestor approximately 40 million years ago (Obbard et al., 2012; Tamura et al., 2004), and their natural sigma viruses (DAffSV, DImmSV, DMelSV and DObsSV, which have amino acid identities of\u00a0<55% in the most conserved gene) (Longdon et al., 2015a; Longdon et al., 2010; Longdon et al., 2011b). Despite their vertical mode of transmission, the phylogenies of the viruses and their hosts are incongruent, suggesting they have jumped between host species during their evolution (Longdon et al., 2011b). To test whether selection by viruses increases the amount of genetic variation in host susceptibility we have compared the viral load of endemic viruses that naturally infect each of the four host species to non-endemic viruses. We then examined how selection by these viruses has altered the genetic architecture of resistance by mapping loci that confer resistance to endemic and non-endemic viruses in D. melanogaster.\n\n## Results\n\n### Genetic variation in susceptibility to infection is greatest in coevolved host-virus associations\n\nTo test whether selection by viruses has increased genetic variation in susceptibility to infection, we compared endemic host-virus associations with novel associations that have no history of coevolution. We used four different species of Drosophila, each of which is naturally host to a different sigma virus (Longdon and Jiggins, 2012; Longdon et al., 2012; Longdon et al., 2017; Longdon et al., 2010; Longdon et al., 2011a). We collected four species from the wild and created genetically diverse populations in the laboratory. Using flies from these populations we crossed single males to single females to create full-sib families. The progeny of these crosses were then injected with either the virus isolated from that species, or a virus isolated from one of the other species (Figure 1). Studies on DMelSV have shown that loci that reduce loads when the virus is injected also reduce infection rates in both the lab and field (Bangham et al., 2008a; Longdon et al., 2012; Bregliano, 1970; Brun and Plus, 1980; Ohanessian-Guillemain, 1963; Wilfert and Jiggins, 2010b). As infection is costly, this is expected to increase host fitness. Fifteen days post infection we extracted RNA from the flies and measured viral load by quantitative RT-PCR. The differences between the viral load of different families allowed us to estimate the genetic variance (VG) in viral load \u2013 a measure of how much viral resistance varies in the population due to genetic as opposed to environmental causes. In total we infected 52,592 flies and measured the viral load in 4295 biological replicates (a vial containing a mean of 12 flies) across 1436 full-sib families (details of sample sizes in Additional Methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46440/elife-46440-fig1-v1.jpg)\n\n**Figure 1.:** (A) Four species of Drosophila were independently infected both with a sigma virus with which they are naturally infected with in nature (red) and two viruses that naturally infect another species (black). (B) Phylogenies of the sigma viruses (inferred using the L gene) and their Drosophila hosts (inferred using COI, COII, 28S rDNA, Adh, SOD, Amyrel and RpL32 genes), redrawn from Longdon et al. (2015a)\u00a0and Longdon et al. (2015b). Scale bars represent substitutions per site under a relaxed clock model. Posterior supports for nodes are all\u00a0>0.99.\n\nWithin populations of all four species, we found significantly greater genetic variance in susceptibility to the sigma virus that naturally infects that species compared to viruses from other species (Figure 2; Figure 2\u2014figure supplement 1;\u00a0Supplementary file 1 and 2). These different variances reflect considerable differences in the mean viral load between families (Figure 2A). For example, when families of D. obscura in the 2nd and 98th percentile were compared, there was a 1294 fold difference between the viral loads of the coevolved virus in the families (Figure 2A). In contrast, for the non-coevolved viruses there was a 27 fold difference in DMelSV loads and a 19 fold difference in DAffSV loads (see Figure 2A for statistics). The data in Figure 2 is zero-centred to allow comparison of the variances, but across the four species, there was no consistent difference between the mean viral load in coevolved versus non-coevolved associations (i.e. the coevolved virus does not always replicate to higher levels suggesting this is not an artefact of simply replicating poorly in a host \u2013 see Figure 2\u2014figure supplement 1). Additionally, there was no correlation between the genetic variance in viral load and the mean viral load (Figure 2\u2014figure supplement 1, Spearman\u2019s correlation: $\u03c1$= -0.38, S=296, P=0.22).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46440/elife-46440-fig2-v1.jpg)\n\n**Figure 2.:** The viral load was measured 15 days post infection by quantitative RT-PCR relative to a Drosophila reference gene (RpL32). (A) The points show model prediction family means from our GLM and are centred on zero. The number of families in each panel was down-sampled so the same number of families is shown for each virus. Coevolved host-virus associations are in red. (B) The genetic variance in log2\u00a0viral load was estimated from the between family variance assuming that all genetic variance is additive. The bars are 95% credible intervals. Posterior probabilities for significantly different genetic variances are shown in grey (see Supplementary file 1 and 2).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46440/elife-46440-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Viral load is measured by qRT-PCR relative to a housekeeping gene (RpL32). All viral loads were significantly different from one another (P<0.001 in all cases).\n\n### Major-effect genetic variants that are known to provide resistance to DMelSV do not protect against other viruses\n\nTo examine whether the genetic basis of resistance to coevolved and non-coevolved viruses was different we estimated the genetic correlations (rg) in their viral loads. These represent the proportion of genetic variance in viral load between pairs of viruses that shares the same genetic causes. In D. melanogaster these were 0.40 for DMelSV-DAffSV, (95% CIs: 0.20, 0.61) and 0.25 for DMelSV-DObsSV (95% CIs: \u22120.01,0.47). Similar results were obtained using the D. melanogaster mapping population described below (Supplementary file 3). In the other species our estimates sometimes had wide credible intervals, but the genetic correlations between coevolved and non-coevolved viruses were mostly below 0.5 (Supplementary file 3; note correlations are frequently low between pairs of non-endemic viruses too). Therefore if natural selection increases genetic variation in susceptibility to a natural pathogen, there is expected to be a smaller effect on non-coevolved viruses.\n\nIn D. melanogaster a substantial proportion of the genetic variance in susceptibility to DMelSV is explained by major-effect variants in the genes CHKov1 and p62 (also known as Ref(2)P) (Magwire et al., 2012; Bangham et al., 2007; Magwire et al., 2011; Wayne et al., 1996; Contamine et al., 1989). The resistant allele in each of these genes has arisen recently by mutation and been driven up in frequency by natural selection, presumably due to the presence of DMelSV in natural populations (Bangham et al., 2007; Magwire et al., 2011). Therefore, if these genetic variants confer resistance to DMelSV but not the other sigma viruses, then this may explain the differences in genetic variance that we observed.\n\nTo examine whether CHKov1 or p62 contributed to the differences in genetic variance we observed in D. melanogaster, we genotyped the parents of the full sib families for variants that confer resistance (Supplementary file 4). Assuming the effects of the resistant alleles are additive, we estimated that the load of the coevolved virus DMelSV was more than halved in homozygous CHKov1 resistant flies compared to susceptible flies (reduction in log2\u00a0viral load\u00a0=\u00a01.2, 95% CI\u00a0=\u00a00.6, 1.8). In contrast we found no significant effect of this gene on loads of the non-coevolved viruses (DAffSV\u00a0=\u00a0\u22120.2, 95% CI\u00a0=\u00a00.2,\u20130.8; DObsSV\u00a0=\u00a0\u22120.4, 95% CI\u00a0=\u00a0\u22120.04, 1.0). The resistant allele of p62 was present at such a low frequency (1.5%) in the population that we lacked statistical power to investigate its effects.\n\nTo confirm these results we infected 1869 flies from 32 inbred D. melanogaster lines (Mackay et al., 2012) that had known CHKov1 or p62 genotypes. The effect of these genes was greater on the naturally occurring virus than the viruses from other species (Figure 3; effect of\u00a0genotype on DMelSV load: F2,28\u00a0=\u00a013.2, p=0.00001; DAffSV: F2,29\u00a0=\u00a04.9, p=0.01; DObsSV: F2,29\u00a0=\u00a05.7, p=0.01).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46440/elife-46440-fig3-v1.jpg)\n\n**Figure 3.:** Each point is the viral load of a separate inbred fly line carrying the resistant (Res) or susceptible (Sus) allele of P62 or CHKov1. Horizontal bars are medians. Viral load was measured 15 days post infection by quantitative RT-PCR relative to a Drosophila reference gene (RpL32).\n\n### There are a greater number of major-effect variants in coevolved host-virus associations\n\nTo investigate how coevolution shapes the genetics of resistance, we mapped loci controlling resistance using a D. melanogaster advanced intercross population (the DSPR panel [King et al., 2012]). This population samples genetic variation in a small number of genotypes from around the world (the experiments above sampled many genotypes from a single location). It was founded by allowing two sets of 8 inbred founder lines to interbreed for 50 generations, then creating recombinant inbred lines (RILs) whose genomes are a fine-scale mosaic of the original founder genomes. We used 377 RILs from these populations, which have up to 15 alleles of each gene (one founder line is shared between the two populations). We infected 15,916 flies across 1362 biological replicates (a vial containing a mean of 12 flies) with DMelSV, DAffSV or DObsSV and measured viral load as above (see Materials\u00a0and\u00a0methods).\n\nWe first estimated the genetic variance in viral load within our mapping population. The results recapitulated what we had found above in a natural population of flies \u2014 there was considerably more genetic variation in susceptibility to the coevolved virus than the non-coevolved viruses (Figure 4A, filled circles). Therefore, our earlier result from a single population holds when sampling flies from across six continents, although the magnitude of the effect is considerably greater in this mapping population.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46440/elife-46440-fig4-v1.jpg)\n\n**Figure 4.:** (A) The genetic variance in viral load within the mapping population (filled circles). The open circles are estimates of the genetic variance after accounting for the effects of the QTL in panel C. Error bars are 95% credible intervals. (B) QTL affecting viral load. The horizontal line shows a genome-wide significance threshold of p<0.05 that was obtained by permutation of Logarithm of odds (LOD) scores. (C) The effect of the seven QTL detected on the load of the three viruses. Only QTL that remained were significant following multiple regression with all the loci are shown. The coevolved virus is shown in red.\n\nTo examine the genetic basis of virus resistance, we looked for associations between genotype and viral load across the genome (Figure 4B). In the coevolved association (DMelSV) we identified seven QTL associated with resistance, compared to one that affects DObsSV and none affecting DAffSV (Supplementary file 5; this excludes one DMelSV QTL on the X chromosome that did not remain significant after accounting for the other QTL). The QTL affecting DObsSV also has a significant effect on DMelSV. One of the QTL corresponded to p62 (2L 53 cM). The susceptible allele of CHKov1 was not present in the fly lines assayed.\n\nTo examine the effect that the QTL have on viral load, we first split the founder alleles into a resistant class and a susceptible class (see Materials\u00a0and\u00a0methods) and then estimated the difference in viral load between the functionally distinct alleles. Six of the seven QTL resulted in greater reductions in the load of the coevolved virus (DMelSV) than the viruses isolated from other species (Figure 4C). There were only two cases where there was substantial cross-resistance to multiple viruses\u20143R 49 cM confers strong resistance to DMelSV and weak resistance to DObsSV, while 3L 46 cM confers weak resistance to DMelSV and strong resistance to DObsSV.\n\nTogether, this modest number of loci with substantial effects on resistance explains most of the high genetic variance in resistance to the coevolved virus (Figure 4A, filled versus open circles). Individually, resistant alleles cause an approximate 3\u20137 fold reduction in viral load (Figure 4C), and together they explain 59% of the genetic variance in susceptibility to DMelSV, 77% for DObsSV and 3% for DAffSV (Figure 4A, filled versus open circles). However, even after accounting for these genes there remains a significantly higher genetic variance in the viral load of the coevolved virus (Figure 4A, open circles, non-overlapping 95% CI).\n\n## Discussion\n\nWe have found greater genetic variation in susceptibility to viruses that naturally infect Drosophila compared to viruses that do not, suggesting that selection by these pathogens has acted to increase the amount of genetic variation in susceptibility. This effect was largely caused by a modest number of major-effect genes that explain over half of the genetic variance in resistance.\n\nAs the genetic variants in the genes p62 (ref(2)P) and CHKov1 that confer resistance to DMelSV have been identified, this has previously allowed us to use patterns of DNA sequence variation to infer how selection has acted on resistance in D. melanogaster. In both these genes the resistant alleles have arisen relatively recently by mutation and natural selection has pushed them rapidly up in frequency, leaving a characteristic signature of elevated linkage disequilibrium and low genetic diversity around the variant causing resistance (Bangham et al., 2007; Magwire et al., 2011; Wayne et al., 1996). There is no indication of negative frequency dependent selection, and these polymorphisms appear to have arisen from partial selective sweeps (Bangham et al., 2007; Magwire et al., 2011).\n\nThe most parsimonious explanation of these observations is that there has been directional selection favouring resistance alleles (although this type of data cannot rule out negative frequency dependent selection as is predicted by models of coevolution). At equilibrium, directional selection on a trait is not expected to affect its genetic variance (relative to a population under mutation-drift balance; Hill, 1982). However, the genetic variance will transiently increase if the variants under selection are initially at low frequency (Barton and Turelli, 1987), as was the case for both p62 and CHKov1 (Bangham et al., 2007; Magwire et al., 2011). A particular feature of pathogens is that the direction of selection is likely to continually change as new pathogens appear in populations or existing pathogens evolve to overcome host defences. For example, in France and Germany in the 1980s, DMelSV evolved to largely overcome the effects of the resistant allele of p62 (Fleuriet and Periquet, 1993; Fleuriet and Sperlich, 1992). Similarly, DImmSV has swept through European populations of D. immigrans in the last\u00a0~16 years and DObsSV through UK populations of D. obscura in the last\u00a0~11 years (Longdon et al., 2017; Longdon et al., 2011a). If selection by pathogens continually changes and resistance evolves from new mutations, then this may cause a sustained increase in genetic variance in susceptibility to infection.\n\nA key question is whether the increased genetic variation that we see in coevolved Drosophila\u2013sigma virus interactions will hold for coevolved pathogens more generally. Theory suggests that a critical factor determining levels of genetic variation is whether resistance is costly to evolve, as this can result in the maintenance of variation by negative frequency dependent selection (Antonovics and Thrall, 1994; Boots et al., 2014). In humans this has been proposed as an explanation of why there is less genetic variation in susceptibility to pathogens that are effectively controlled by the adaptive immune response, as these resistance mechanisms may be less costly (Baker and Antonovics, 2012). However, it seems unlikely that virus resistance in Drosophila is costly, as experiments have failed to detect costs of DCV resistance (Faria et al., 2015) despite costs of parasitoid and bacterial resistance being repeatedly detected (McGonigle et al., 2017; McKean et al., 2008; Ye et al., 2009). Sigma viruses are also extreme host specialists, so evolutionary changes in resistance will tend to alter pathogen prevalence and so the strength of selection. These epidemiological feedbacks are predicted to frequently increase genetic diversity (Boots et al., 2014; Best et al., 2009; Boots and Haraguchi, 1999). However, in D. melanogaster we see large amounts of genetic variation in susceptibility to viruses that have a broader host range than sigma viruses (DCV and Kallithea virus that infect D. melanogaster and D. simulans in the wild) (Magwire et al., 2012; Palmer et al., 2018; Christian, 1987; Webster et al., 2015). Therefore, it seems unlikely that our conclusions will be a quirk of the sigma virus system. In an analogous study of rust resistance in wild flax plants, sympatric (putatively coevolved) populations had fewer partial resistances than allopatric populations, suggesting more major gene effects, even though overall there was somewhat less genetic variation in susceptibility to sympatric fungal pathogens (Antonovics et al., 2011).\n\nQuantitative traits are typically controlled by a very large number of genetic variants, each of which tends to have a very small effect (Shi et al., 2016; Yang et al., 2010). However, susceptibility to sigma viruses has a simpler genetic basis, with seven polymorphisms explaining over half the genetic variance. This confirms our previous work in D. melanogaster showing a simple genetic basis of virus resistance (Magwire et al., 2012; Cogni et al., 2016). As these genetic variants mostly only affect the naturally occurring pathogen of D. melanogaster, our results suggest that not only is selection by pathogens increasing the genetic variance but it is also altering the genetic architecture of resistance by introducing major-effect variants into the population. One explanation for this observation is that most quantitative traits are under stabilising selection, so major effect variants will tend to be deleterious and removed by selection (Gibson, 2018). In contrast, selection by pathogens likely changes through time and populations may be far from their optimal level of resistance. If this is the case, Fisher\u2019s geometric model predicts that major effect variants will be favoured by directional selection (Fisher, 1930). Alternatively, the coevolution of hosts and parasites can favour discrete susceptible and resistant hosts (Boots et al., 2014), and at the genetic level this may result in major-effect variants (although this theory does not explicitly address the underlying genetics). The simple genetics may also be driven by mutation\u2014for many traits major-effect mutations that increase fitness may be extremely rare, but this may not be the case for virus resistance. For example a single (loss of function) mutation may prevent a virus binding to a host receptor or utilising other parts of the host cellular machinery, and so confer strong resistance.\n\nRegardless of its causes, it may be common that susceptibility to infectious disease has a simple genetic basis. In humans, Hill (2012) advocated the view that susceptibility to infectious disease is qualitatively different from other traits and has a much simpler genetic basis (Hill, 2012). In Drosophila, resistance to DCV and parasitoid wasps both have a simple genetic basis (Magwire et al., 2012; Cao et al., 2017; Orr and Irving, 1997). In plants, major-effect polymorphisms in R genes are commonplace (Hammond-Kosack and Jones, 1997) and in a plant-fungi system genotype-by-genotype interactions explain a larger proportion of the total variance in sympatric (more coevolved) associations (Antonovics et al., 2011). In contrast, studies of bacterial resistance in Drosophila have typically used pathogens that are unlikely to have any history of coevolution, and have found a polygenic basis to resistance (Bou Sleiman et al., 2015; Hotson and Schneider, 2015; Howick and Lazzaro, 2017; Wang et al., 2017). In these studies the polymorphism with the largest effect was found against the only natural D. melanogaster pathogen tested (a polymorphism in Diptericin detected using Providencia rettgeri infection), anecdotally supporting the patterns seen here (Howick and Lazzaro, 2017; Unckless et al., 2015).\n\nA major source of emerging infectious disease is pathogens jumping into novel hosts where they have no co-evolutionary history (Longdon et al., 2014; Parrish et al., 2008). Our results suggest that when a pathogen infects a novel host species, there may be far less genetic variation in susceptibility among individuals than is normally the case. This may create a \u2018monoculture effect\u2019 (King and Lively, 2012; Lively, 2010; Ostfeld and Keesing, 2012), which could leave populations vulnerable to epidemics of pathogens that have previously circulated in other host species. Longer term, low levels of pre-standing genetic variation may slow down the rate at which the new host can evolve resistance to a new pathogen.\n\nIn conclusion, we have demonstrated that selection by pathogens has increased the amount of genetic variation in host susceptibility. We find resistance has a simple underlying genetic architecture and is largely controlled by major effect resistance loci.\n\n## Materials and methods\n\n### Virus extraction and infection\n\nWe extracted the sigma viruses DAffSV, DImmSV, DMelSV and DObsSV from infected stocks of D. affinis (line: NC10), D. immigrans (line: DA2), D. melanogaster (line: E320 Ex) and D. obscura (line: 10A) respectively (Longdon et al., 2017; Longdon et al., 2015a; Longdon et al., 2010; Longdon et al., 2011a; Brun and Plus, 1980). These infected lines were collected from the wild between 2007\u20132012 (all from the UK, bar D.affinis which was collected in the USA). Infected fly stocks were checked for infection by exposing the flies to 100% CO2 at 12\u00b0C for 15mins then paralysed flies were collected 30mins later. The DImmSV infected line does not show CO2 sensitivity and so was confirmed to have a high level of infection using RT-PCR. Infected flies were frozen at \u221280\u00b0C and later homogenised in ringers solution (2.5 \u03bcl per fly) and centrifuged at 13,000 g for 10 min at 4\u00b0C. The supernatant was collected, 2% v/v FBS was added then virus solutions were aliquoted and stored at \u221280\u00b0C.\n\n### Experimental design\n\nWe set up a common garden experiment to measure genetic variation in susceptibility to natural and non-natural viruses across four host species. In a fractional factorial experiment each species was infected it with its own virus, as well as two viruses that do not infect that host species (see Figure 1). All of the viruses replicate in all hosts (with the exception of DImmSV in D. melanogaster that showed limited evidence of replication \u2013 this combination was not used in the experiment). All fly stocks used (see additional methods for stock details) were tested for existing sigma virus infection using RT-PCR over two generations. For all species we collected flies from the wild and we used a full-sib mating design. The progeny of these crosses were infected by injecting them with 69 nl of the viruses intrathoracically and measuring viral RNA loads 15 days post infection, as in Longdon et al. (2011c). This time point was selected as RNA viral load tends to plateau from around day 15 post infection and there is no mortality from infection in this period. The specifics for each host species, including sample sizes, are detailed in the additional methods.\n\n### Known resistance genes in D. melanogaster\n\nWe genotyped parents of each D. melanogaster full sib family from the experiment above for two resistance alleles that are known to confer protection against DMelSV; p62 (Ref(2)P) and CHKov1. We genotyped parental flies using PCR assays that produce different sized products depending on whether flies carry resistant or susceptible alleles. Information on these PCRs and primer sequences can be found in Supplementary file 4. We then calculated the number of resistance alleles in each family by summing the number of alleles from both mothers and fathers. We produced genotype information for 230 of the 255 families.\n\nAnother resistance allele has been identified in the gene Ge-1 (Cao et al., 2016). However, this allele has been found to occur at a low frequency in wild populations. We genotyped 184 parental flies from our experiment (parental flies for some families could not be collected) and found the resistant allele was not present, suggesting it is rare or absent.\n\nWe further examined the effect of alleles known to affect susceptibility to DMelSV on all three viruses. Firstly, we infected 32 lines from the Drosophila Genetic Reference Panel (DGRP) (Mackay et al., 2012) that were susceptible for both p62 and CHKov1 (n\u00a0=\u00a011 lines), were resistant for CHKov1 only (n\u00a0=\u00a013 lines), or were resistant for both genes (n\u00a0=\u00a08 lines) with DMelSV, DAffSV and DObsSV. No lines in the panel were resistant for p62 and susceptible for CHKov1. We infected a mean of 18 flies per line (range\u00a0=\u00a03\u201322).\n\n### Mapping resistance genes in D. melanogaster\n\nWe used 377 DSPR lines (154 from panel A and 223 from panel B, http://FlyRILs.org [King et al., 2012; Long et al., 2014]), kindly provided by S.J. Macdonald, University of Kansas) to carry out a Quantitative Trait Locus (QTL) study to examine the genetic basis of resistance to DAffSV, DMelSV and DObsSV in D. melanogaster.\n\nThree females and three males from each DSPR line were placed into yeasted cornmeal vials and allowed to lay for 3\u20134 days, at 25\u00b0C. Male offspring were collected at 0\u20134 days post-eclosion, and placed at 18\u00b0C for 4\u20136 days. Flies were then injected with DMelSV, DAffSV or DObsSV as described above. Injected males were maintained on unyeasted cornmeal at 18\u00b0C, and frozen on day 15 post-infection as above.\n\nInjections were carried out over 13 weeks. Each day of injection a mean of 47 unique lines (range 20\u201360) and 51 replicate vials were injected with 1\u20133 different viruses. In total we assayed 377 DSPR lines (108 lines had two biological replicates). Each replicate vial contained a mean of 12 flies (range 1\u201322). In total, 15,916 flies were injected across both panels of DSPR lines. We injected 319 lines with all three viruses, 38 with 2 viruses and 20 with one virus. The order of injection of lines and of viruses, was randomised across injection days. Independent biological replicates were injected on different days. Panel A and Panel B lines were assayed in two overlapping blocks.\n\n### Measuring viral load\n\nWe measured the change in RNA viral load using qRT-PCR. The viral RNA load was expressed relative to the endogenous control housekeeping gene RpL32 (Rp49). RNA was extracted from flies homogenised in Trizol and reverse transcribed with GoScript reverse transcriptase (Promega) and random hexamer primers, and then diluted 1:10 with nuclease free water. The qRT-PCR was performed on an Applied Biosystems StepOnePlus system using Sensifast Hi-Rox Sybr kit (Bioline) with the following PCR cycle: 95\u00b0C for 2 min followed by 40 cycles of: 95\u00b0C for 5 s followed by 60\u00b0C for 30 s. Two qRT-PCR reactions (technical replicates) were carried out per sample with both the viral and endogenous control primers. Each qRT-PCR plate contained three standard samples, and all experimental samples were split across plates in a blocked design. A linear model was used to correct the cycle threshold (Ct) values for differences between qRT-PCR plates. Primer sequences are in Supplementary file 6.\n\nTo estimate viral load, we calculated \u0394Ct as the difference between the qRT-PCR cycle thresholds of the virus and the endogenous control. Viral load calculated without using the endogenous control is strongly correlated to \u0394Ct for all species.\n\n### Statistical analysis full-sib experiments\n\nWe used a linear mixed model to examine the amount of genetic variation in susceptibility to the different viruses. We used a trivariate model with the load of the three viruses as the response variable. For each species the model was structured as:\n\n$$\ny_{vfi}=\\beta_{1:v}+u_{v:f}+u_{v:d}+e_{vfi}\n$$\n\nWhere $y_{vfi}$ is the log2\u00a0viral load of the ith biological replicate of full-sib family f infected with virus v. $\\beta$ are the fixed effects, with $\\beta_{1}$ being the mean viral load of each virus. u are the random effects for full-sib families (f) and for the day of injection (d), e are the residuals. By assuming that all the genetic variation in the population is additive (Hill et al., 2008), we estimated the genetic variance (VG) of the viral load as twice the between-family variance (Falconer, 1960; Falconer and Mackay, 1996). Both empirical data and theory suggest additive genetic variation makes up large proportion of the total genetic variance (Hill et al., 2008).\n\nIn addition, for D. melanogaster we ran a further model that included the additional fixed effects $\\beta_{2:v}$\u00a0and $\\beta_{3:v}$ that are the linear effects of the CHKov1 and p62 (Ref(2)P) resistance alleles. We assumed these genes had additive effects, and modelled their effects simply as the proportion of resistant alleles in a family (if one parent was heterozygous and the other homozygous susceptible, the value is 0.25).\n\nThe model was fitted using the MCMCglmm package in R (Hadfield, 2010). The random effects (and residuals) are assumed to be multivariate normal with zero mean and covariance structure V \u2297 I. I is an identity matrix, and V a matrix of estimated variances and covariances. For the random effects V is a 3 \u00d7 3 covariance matrix describing the variances for each virus and the covariances between them. The off-diagonal elements of V for the residual were set to zero because the covariances between traits at these levels are not estimable by design.\n\nDiffuse independent normal priors were placed on the fixed effects (means of zero and variances of 108). Parameter expanded priors were placed on the covariance matrices resulting in scaled multivariate F distributions which have the property that the marginal distributions for the variances are scaled (by 1000) F1, 1. The exceptions were the residual variances for which an inverse-gamma prior was used with shape and scale equal to 0.001. The MCMC chain was ran for 130 million iterations with a burn-in of 30 million iterations and a thinning interval of 100,000.\n\nWe confirmed the results were not sensitive to the choice of prior by also fitting models with inverse-Wishart and flat priors for the variance covariance matrices (described in Longdon et al., 2011c), as well as fitting the models by REML in ASReml R (Gilmour et al., 2002). These analyses all gave qualitatively similar results (data not shown).\n\n### Statistical analysis of QTL experiment\n\nBased on genotyping data, the probability that each Recombinant Inbred Line (RIL) in the DSPR panel was derived from each of the eight founder lines has been estimated at 10 kB intervals across the genome (King et al., 2012). To identify QTL affecting viral load we first calculated the mean viral load (\u0394Ct) across the biological replicates of each RIL. We then regressed the mean viral load against the eight genotype probabilities and calculated logarithm of odds (LOD) scores using the DSPRqtl package in R (King et al., 2012). These LOD scores were calculated separately for DSPR Panel A and Panel B, and then summed at each genomic location. To obtain a significance threshold, we permuted our mean viral load estimates across the RILs within each panel, repeated the analysis above and recorded the highest LOD score across the entire genome. This process was repeated 1000 times to obtain a null distribution of the maximum LOD score.\n\nTo estimate the effect of each QTL we assumed that there was a single genetic variant affecting viral load, so the founder alleles could be assigned to two functionally distinct allelic classes. First, we regressed the mean viral load against the genotype probabilities (as described above), resulting in estimates of the mean viral load of each founder allele in the dataset. The two DSPR panels had one founder line (line 8) in common. For QTL where the line eight allele was present in both panels, this analysis included data from both panels, and \u2018panel\u2019 was included as a fixed effect in the analysis. When this was not the case, we analysed only data from the panel where the QTL was most significant. We then ranked the founder alleles by viral load estimate, and split this ranked list into all possible groups of two alleles. For each split, the genotype probabilities in the first group of founder alleles were summed. We then regressed mean viral load against each of these combined genotype probabilities. The regression model with the highest likelihood was taken as the most likely classification into allelic classes. The effect size of the QTL was then estimated from this model.\n\nTo estimate the genetic variance in viral load within the DSPR panels we modified the model described in Equation 1 as follows. $y_{vfi}$ is the log2\u00a0viral load of the ith biological replicate of each RIL f infected with virus v. There was a single fixed effect, $\\beta$, of the panel the line is from. u is\u00a0the random effect for each RIL (f). The day of injection (d) was omitted. As all the RILs are homozygous, we estimated the genetic variance in viral load (VG) as half the between-RIL variance. This assumes all the genetic variation is additive.\n\nTo estimate the proportion of the genetic variance that is explained by the QTL we identified, we repeated this analysis but included the 7 QTL we identified as fixed effects in the model. Each QTL was included by estimating the probability that each line carried the resistant allele of the QTL and adding this as a fixed effect to the model. The between-RIL variance then allowed us to estimate the genetic variance in viral load after removing the effects of the QTL.\n\n### Additional methods\n\nAll lines were screened for their retrospective sigma virus over two generations by RT-PCR, and infected isofemale lines discarded prior to the experiment.\n\n### Drosophila melanogaster\n\nWe created an outcrossed population by combining 150 isofemale lines of D. melanogaster (collected in Accra, Ghana (5.593,\u20130.188) in 2014) in a population cage. The population was maintained throughout the experiment with a large population size (~1500\u20132000 flies), with eggs collected from the population cage used to set up each subsequent generation. All rearing was carried out on cornmeal medium (recipe below) sprinkled with live yeast (\u2018yeasted\u2019) at 25\u00b0C.\n\nVirgin flies were collected daily from bottles set up at a controlled egg density. Full-sib families were set up using crosses of single male and female virgins placed in the same vial and aged for 3 days. Each of these families was tipped onto fresh food daily for 5 days to create replicate vials. After 5 days the adult flies were frozen for later genotyping. 12 days after laying, male offspring were collected from each replicate vial and split into two vials of cornmeal medium without any yeast on the surface (\u2018unyeasted\u2019) and placed at 18\u00b0C.\n\nAfter 5 days these flies were injected with 69 nl of virus extract intra-abdominally using a Nanoject II micro-injector (Drummond scientific). Injected flies were kept at 18\u00b0C and tipped onto fresh unyeasted cornmeal every 5 days, before being homogenised in Trizol (Invitrogen) and frozen at \u221280\u00b0C on day 15 post injection for later RNA extraction and qRT-PCR.\n\nInjections were carried out over 25 overlapping blocks. Each block consisted of 10 families, and each day, two vials per family were injected with two different viruses. Each replicate vial contained a mean of 14 flies (range 3\u201328 flies). In total we measured 255 families over 1567 biological replicates. We aimed to carry out a minimum of 2 replicates of each virus per family, but where possible we carried out 3 or four replicates (92 virus-family combinations had one replicate, 555 had two replicates, 82 had 3 replicates and 25 had four replicates.). 248 families had replicates for all three viruses. Blocks were staggered to overlap with at least 20 families being infected on any one day. The order families were injected in was randomised, and the order the different viruses were injected was blocked across days.\n\n### D.\u00a0immigrans\n\n92 D. immigrans lines were collected from Madingley, Cambridge, UK (52.225, 0.043) in 2012 and 2015. Full-sib families were set up using crosses between the 92 isofemale lines of Drosophila immigrans. Flies were reared on malt food (recipe below) at 18\u00b0C. Crosses were between different isofemale lines (i.e. excluding reciprocal crosses) and maximising the number of lines used. Families were established from 2 to 4 day old single female and male virgin flies placed in the same vial for 7 days. These crosses were tipped onto fresh food every 7 days to generate replicate vials of each family. Eclosed males were collected 27\u201334 days after initial egg laying and injected with DImmSV, DMelSV or DObsSV 1\u20133 days post-collection, then maintained and frozen on day 15 post-infection as above.\n\nInjections were carried out over 18 overlapping blocks. Each block consisted of an average of 19 families and 46 replicate vials. Each replicate vial contained a mean of 14 flies (range: 4\u201326). In total we assayed 341 families over 812 biological replicates. We aimed to have a minimum of 2 replicates per virus per family (235 virus-family combinations had one replicate, 270 had two replicates, 11 had 3 replicates and 1 had four replicates). 140 families had replicates across two different viruses and 18 families had replicates for all three viruses. Blocks were staggered to overlap with a mean of 39 families being infected on any one day. The order families were injected in was randomised, and the order the different viruses were injected was blocked across days.\n\n### D.\u00a0affinis\n\n<table>\n  <thead>\n    <tr>\n      <th>Site</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Athens, Georgia, USA, (33.946,\u201383.384) in 2012</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>Great Smokey Mountain National Park, Gatlinburg, USA (35.698,\u201383.613) in 2015</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>Rochester, New York, USA (43.135,\u201377.599) in 2012</td>\n      <td>4</td>\n    </tr>\n  </tbody>\n</table>\n\nFull-sib families were set up using crosses between 40 isofemale lines of Drosophila affinis (see above for collection details) collected in the U.S. Flies were reared on malt food (recipe below) at 18\u00b0C. Crosses were between different isofemale lines (i.e. excluding reciprocal crosses) and maximising the number of lines used. Families were established from 6 day old single female and male virgin flies placed in the same vial for 7 days. These crosses were tipped onto fresh food every 7 days to generate replicate vials of each family. Eclosed males were collected 35\u201342 days after initial egg laying and then injected with DAffSV, DImmSV or DMelSV 1\u20133 days post-collection, then maintained and frozen on day 15 post-infection as above.\n\nInjections were carried out over 27 overlapping blocks. Each block consisted of an average of 19 families and 28 replicate vials. Each replicate vial contained a mean of 11 flies (range: 3\u201323). In total we assayed 520 families over 1003 biological replicates. We aimed to have a minimum of 2 replicates per virus per family (336 virus-family combinations had one replicate, 286 had 2 replicates and 30 had three replicates). 109 families had replicates across two different viruses and 12 families had replicates for all three viruses. Blocks were staggered to overlap with a mean of 23 families being infected on any one day. The order families were injected in was randomised, and the order the different viruses were injected was blocked across days.\n\n### D.\u00a0obscura\n\n<table>\n  <thead>\n    <tr>\n      <th>Site</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Derbyshire Site A, UK (52.978,\u20131.440) in 2012</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Derbyshire Site C, UK (52.903,\u20131.374), in 2012</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Les Gorges du Chambon, France (45.622, 0.555) in 2012</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Madingley, Cambridge, UK (52.226, 0.046) in 2014</td>\n      <td>15</td>\n    </tr>\n  </tbody>\n</table>\n\nD. obscura were collected in the United Kingdom and France (see above). Males and females were separated, and females were placed in vials to establish isofemale lines. Full-sib families were set up using crosses between 21 isofemale lines of Drosophila obscura collected in the UK. Flies were reared on banana food (recipe below) at 18\u00b0C. Crosses were between different isofemale lines (i.e. excluding reciprocal crosses) and maximising the number of lines used. Families were established from 6 day old single female and male virgin flies placed in the same vial for 7 days. These crosses were tipped onto fresh food every 7 days to generate replicate vials of each family. Eclosed males were collected 35\u201342 days after initial egg laying and then injected with DAffSV, DMelSV, or DObsSV 1\u20133 days post-collection, then maintained and frozen on day 15 post-infection as above.\n\nInjections were carried out over 25 overlapping blocks. Each block consisted of a mean of 16 families with a mean of 76 vials being injected each day for 12 days. Each replicate vial contained a mean of 8 flies (range: 1\u201315). In total we assayed 320 families over 913 biological replicates. We aimed to have a minimum of 2 replicates per virus per family (126 virus-family combinations had one replicate, 314 had 2 replicates and 49 had 3 replicates and 3 had four replicates). 94 families had replicates across two different viruses and 39 families had replicates for all three viruses. Blocks were staggered to overlap with at least 10 families being infected on any one day. The order families were injected in was randomised, and the order the different viruses were injected was blocked across days.\n\n### Sample size estimation\n\nThe number of full-sib families required for estimating genetic variance in susceptibility was determined by simulation using previous estimates of genetic variation to DMelSV in D. melanogaster (Magwire et al., 2012). After carrying out the full-sib experiment in D. melanogaster, we then down-sampled this data to calculate the minimum number of families required to provide accurate estimates for the other species. Sample sizes for the DSPR experiment were based on previous data (Faria et al., 2015).\n\n### Food recipes\n\nBanana:\n\nBring mixture one to the boil for 3\u20134 min, whisk constantly. Add to Mixture two to Mixture 1. Whisk constantly and simmer for 5 min.\n\nCornmeal:\n\nCombine and bring to a boil for 5mins, cool to 70\u00b0C before adding 35 ml Nipagin (10%)\n\nMalt:\n\nCombine and bring to a boil for 5mins, cool to 70\u00b0C and then add 14 ml Nipagin (10%) and 5 ml propionic acid.\n\n### Data availability\n\nDatasets and R code for estimating the amount of genetic variation in susceptibility https://doi.org/10.6084/m9.figshare.6743339\n\nDGRP dataset https://doi.org/10.6084/m9.figshare.6743354\n\nDSPR dataset and R code https://doi.org/10.6084/m9.figshare.7195751\n",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "313f252c-2463-4817-8fcf-dc4f5e605f2a",
+      "submission_id": "89aeae35-f7be-47eb-a18d-50bd74f05073",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bruno Lema\u00eetre, \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Switzerland\n\nReviewers:\n- Bruno Lema\u00eetre, \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Switzerland\n\n## Review text\n\nDOI: [10.7554/eLife.46440.021](https://doi.org/10.7554/eLife.46440.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Host-pathogen coevolution increases genetic variation in susceptibility to infection\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Brian P Lazzaro (Reviewer #1); Janis Antonovics (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nAs you will note, reviewer's comments were generally positive about your manuscript. Nevertheless, in the course of the discussion between reviewers, two issues arise that justify the decision:\n\n1) The present paper was judged too similar to a previous study of the authors (see reviewer 2). It was felt that the authors have already shown this result with melanogaster and that the present study is expanding on that previous observation using more host species. Thus the novelty was questioned.\n\n2) The generality of the result might be overstated. Reviewers felt that the authors over-claim the implication for general host-parasite evolution, and that the pattern they described might only apply to infections for which resistance has a simple genetic architecture and the pathogen is rapidly evolving, although that may capture most specialist viruses.\n\nBased on these concerns, it was decided to reject the manuscript but allow re-submission. At this stage, you are allowed to re-submit a revised manuscript that will be treated as a new submission and try to convince the reviewers of the importance of your manuscript.\n\nReviewer #1:\n\nDuxbury, Day and colleagues present a clever test of whether specialist coevolution between a virus and its host increases the genetic variance for resistance in the host population. The paper is conceptually and methodologically sound. It is interesting and well written and could be published without modification. I offer only a few suggestions for improvement, and these are largely discretionary.\n\nI have one major point of interpretation that may be worth adding to the paper. The authors imply that the results from this study will be generally applicable (e.g., last paragraph of the Introduction), but I suspect they will be most applicable to systems where genetic architecture of resistance is similar to what is seen in this system: variation in resistance explained by few genes of large effect. I am less confident that systems where variation in resistance is determined by a large set of genes with individually small effects will fit the evolutionary model presented here. The authors interchangeably using the words pathogen and parasite to describe the infection, but viruses are a specialized class. This may collapse to being a model for rapidly evolving specialists with less application to generalists or more slowly evolving pathogens and parasites. The authors themselves emphasize the nearly Mendelian architecture of resistance (paragraph one) and the specialist nature of the coevolutionary interaction (paragraph four) in Discussion and at multiple places in Results. In the final paragraph of the Discussion, they conclude that selection by viruses increases genetic diversity and causes a simple genetic architecture of resistance, but I suspect the causality is the other way around: a simple architecture of resistance and rapid evolution of the pathogen facilitates the evolved increase in diversity.\n\nUpon reading Figure 2, I wondered if there are some host families that are universally susceptible and others that are universally resistant to the non-coevolved viruses. This would be evident in the correlation among families in viral load of the two non-coevolved viruses for each species. Those correlations are given in Supplementary file 3 but they are never discussed in the main text. I would add a few sentences describing these correlations and their implication, perhaps in subsection \u201cMajor-effect genetic variants that are known to provide resistance to DMelSV do not protect against other viruses\u201d where the correlation in resistance between coevolved and non-coevolved viruses is presented. This could also be evaluated by looking at the correlation in resistance to DAffSV and DObsSV across the DSPR, which is not presented. In Supplementary file 3, the correlation in resistance to non-coevolved viruses is stronger in D. immigrans and D. subobscura and is also fairly strong in D. melanogaster. This would appear to support variation for generalized resistance in the absence of specific coevolution.\n\nReviewer #2:\n\nThe major result of this study is that organisms harbor more genetic variation to deal with their native pathogens than with foreign ones. This is interesting and important because it tells us about the nature of genetic variation for pathogen resistance. It is also informative with respect to predicting how hosts might respond when infected with novel pathogens. The paper is very nicely written, interesting and easy to follow, and the authors have done a very thorough job and used a number of interesting approaches. They start by infecting four species of Drosophila with native and foreign Sigma viruses. All four show the same pattern \u2013 significantly more genetic variation in the titer of native virus. The rest of the paper focuses on D. melanogaster. The authors show that variation in two genes previously shown to confer resistance to native Sigma virus don't have a major effect on foreign Sigma viruses. They also perform an additional QTL analysis of resistance, identifying 7 QTL (only one of these had been previously shown to be imprortant in virus resistance, so these new QTLs will be interesting to follow up on). Most of the QTLs did not affect titers of the foreign viruses.\n\nMy main concern is that I am not sure that this study is so different from previous work. The authors performed a similar study, with a similar conclusion, published in PLoS Genetics (Magwire et al., 2012). In that study they assessed genetic variation in D. melanogaster resistance to 2 native and 2 foreign viruses (including two viruses used here \u2013 DMelSV and DAffSV). It would be useful for the authors to discuss this paper and how it compares with the present one more explicitly. The authors have also done extensive work identifying genetic variants that contribute to resistance to Sigma virus (and other viruses) in D. melanogaster.\n\nIt would also be useful for the authors to include some more information and details about Sigma virus. How does Sigma virus affect host fitness (the authors don't say much about this except that there was no mortality after 15 days)? It is also a bit hard to tell how successful novel infections are. What percent of individuals/families are not infected at all? (It looks like the infection rate of DAffSV in D. melanogaster is quite low in the Magwire et al. paper.) What is known about genetic variation in tolerance to Sigma viruses?\n\nReviewer #3:\n\nThis is a very nice paper showing that pathogens select for not just resistance per se but specifically that they can select for increased genetic variation in resistance in host populations. Moreover, they can select for genes/gene-action of major effect. The analysis is carried out using large cross inoculations studies, inoculations on lineages with known resistance genes in D. melanogaster, and by a QTL study of a composite inbred population\u2026and the results are congruent among all approaches.\n\nMy only (somewhat apologetic) gripe is that one of our papers which showed essentially the same results (selection for genes of large effect, increased variance, and increased pathogen infectivity) based on a reanalysis of a large cross-inoculation experiment in the Linum-Melampsora system, is not cited (Antonovics et al., 2011). However, what we bemoaned in that paper (lack of knowledge of the genes involved) is very much made up for in this paper.\n\nI also think it would be useful to have clear discussion of the previous theoretical work by the Boots group showing that there are conditions under which co-evolution would indeed result in increased variance in resistance, yet that there are equally other conditions under which the opposite result of reduced variance is expected. An application of this theory to levels of genetic variation in susceptibility to different human diseases is in Baker and Antonovics, 2012. Basically, it would be nice to strengthen the Discussion, paragraph two, and get a better sense of whether the authors think that the inference that changing selection pressures, paragraph four, result in increased variance is sound and parsimonious \u2013 or if it is just guessing.\n\nThe paper is focused on viral loads, but what the effect is of these loads on fitness is never clear, and some mention of this should be included in the discussion if not before.\n",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "588d74b6-8728-4de6-a354-aa3728281f93",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C1",
+      "claim": "It is common to find considerable genetic variation in susceptibility to infection in natural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is common to find considerable genetic variation in susceptibility to infection in natural populations (Chapman and Hill, 2012; Bangham et al., 2008a; Hammond-Kosack and Jones, 1997; Lazzaro et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "b0b97e63-6bfa-4777-b072-ee7a2b7d7e20",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C2",
+      "claim": "Genetic variation in susceptibility can determine the impact of disease on health and economic output.",
+      "claim_type": "EXPLICIT",
+      "source": "This variation in susceptibility can determine the impact of disease on health and economic output (Cooke and Hill, 2001; King and Lively, 2012; Alonso-Blanco and M\u00e9ndez-Vigo, 2014; Burgner et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "eb83bf0f-9ec6-4843-88c4-f4050ebe27d9",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C3",
+      "claim": "Genetic variation in susceptibility determines the ability of populations to evolve resistance to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In nature and breeding programs, it determines the ability of populations to evolve resistance to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established understanding of evolutionary biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "f988426a-967a-402b-96bc-c87e2c78b874",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C4",
+      "claim": "Insect populations typically contain considerable genetic variation in susceptibility to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Insect populations, like those of other organisms, typically contain considerable genetic variation in susceptibility to infection (Bangham et al., 2008a; Lazzaro et al., 2004; Tinsley et al., 2006; Obbard and Dudas, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "1d8237ab-fe60-42a0-828f-f52c886d0777",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C5",
+      "claim": "Insect populations provide a convenient laboratory model to investigate questions about how genetic variation is maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "Insect populations, like those of other organisms, typically contain considerable genetic variation in susceptibility to infection (Bangham et al., 2008a; Lazzaro et al., 2004; Tinsley et al., 2006; Obbard and Dudas, 2014), and provide a convenient laboratory model in which to investigate basic questions about how this variation is maintained (Magwire et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "31f8cee5-e18c-44f8-a57e-9e7e99e86245",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C6",
+      "claim": "Resistant mosquito genotypes are less likely to transmit pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Within vector species like mosquitoes, resistant genotypes are less likely to transmit pathogens, and this has the potential to reduce disease in vertebrate populations (Beerntsen et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "fa4059dd-5134-4a24-8cc9-cd7e874bba37",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C7",
+      "claim": "High levels of genetic variation may allow pollinator populations to recover when pathogens contribute to their decline.",
+      "claim_type": "EXPLICIT",
+      "source": "Where pathogens are contributing the decline of beneficial species like pollinators, high levels of genetic variation may allow populations to recover (Maori et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research and logical inference",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "b0c84350-e2a1-4e26-9c78-98bd5eec3ff4",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C8",
+      "claim": "Natural selection is expected to favour resistant host genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "As pathogens are harmful, natural selection is expected to favour resistant host genotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established evolutionary theory",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "20c10f5d-655f-425f-b679-2ad44f3e1fdd",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C9",
+      "claim": "Directional selection on standing genetic variation will drive alleles to fixation, removing variants from the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Directional selection on standing genetic variation will drive alleles to fixation, removing variants from the population (Falconer, 1960; Falconer and Mackay, 1996; Blows and Hoffmann, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "1e47acb0-51c9-4634-a94d-a11a2a35f87d",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C10",
+      "claim": "At equilibrium, directional selection is expected to have no effect on levels of standing genetic variation relative to mutation-drift balance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as directional selection also increases the frequency of new mutations that change the trait in the direction of selection, at equilibrium it is expected to have no effect on levels of standing genetic variation (relative to mutation-drift balance; Hill, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "b2e3224e-88e5-42bc-8942-1f3de4fb94af",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C11",
+      "claim": "Coevolution with pathogens can result in the maintenance of both resistant and susceptible alleles by negative frequency dependent selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Coevolution with pathogens can result in the maintenance of both resistant and susceptible alleles by negative frequency dependent selection (Woolhouse et al., 2002; Haldane, 1949).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "9a85ea20-48a9-470f-8c63-1614f1f95842",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C12",
+      "claim": "When infection prevalence exhibits geographical or temporal variation, selection can maintain genetic variation, especially if pleiotropic costs to resistance provide an advantage to susceptible individuals when infection is rare.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, when infection prevalence exhibits geographical or temporal variation, selection can maintain genetic variation, especially if pleiotropic costs to resistance provide an advantage to susceptible individuals when infection is rare (Nuismer et al., 2003; Thompson, 1999; Koskella, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "759e052a-6a1b-450b-892f-8f386c4109d2",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C13",
+      "claim": "Directional selection can transiently increase genetic variation during the spread of rare alleles through the population.",
+      "claim_type": "EXPLICIT",
+      "source": "If selection favours rare alleles \u2013 such as new mutations \u2013 directional selection can transiently increase genetic variation during their spread through the population (Barton and Turelli, 1987; Bangham et al., 2007; Magwire et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "2a54c9ea-476a-4790-8fa2-94a06f6b57be",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C14",
+      "claim": "There was more genetic variation in D. melanogaster susceptibility to two viruses isolated from D. melanogaster than to two viruses from other insect species.",
+      "claim_type": "EXPLICIT",
+      "source": "As part of a whole genome association study, we have previously estimated levels of genetic variation in the susceptibility of D. melanogaster to four different viruses (Magwire et al., 2012). We found that there was more genetic variation in susceptibility to the two viruses that were isolated from D. melanogaster than the two viruses from other insect species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "f3828a1d-0479-40e0-84bb-93ec5247c5db",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C15",
+      "claim": "In each naturally coevolved D. melanogaster-virus association, a single major-effect polymorphism affecting resistance was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in each of these naturally coevolved host-pathogen associations we detected a single major-effect polymorphism affecting resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "353df6aa-4c21-42f5-b767-8a19ded79af1",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C16",
+      "claim": "Sigma viruses are a clade of insect RNA viruses with negative-sense genomes in the family Rhabdoviridae.",
+      "claim_type": "EXPLICIT",
+      "source": "Sigma viruses are a clade of insect RNA viruses with negative-sense genomes in the family Rhabdoviridae (Longdon et al., 2017; Longdon et al., 2015a; Longdon et al., 2010; Longdon et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "00caebb3-07ed-4cf3-877b-4fa4e72d8990",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C17",
+      "claim": "Sigma viruses are vertically transmitted through eggs and sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "They are vertically transmitted through eggs and sperm, and each sigma virus infects a single host species, simplifying studies of coevolution (Longdon et al., 2017; Longdon et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "5ac4e190-d3ae-462f-9538-c540055b7ccc",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C18",
+      "claim": "Each sigma virus infects a single host species.",
+      "claim_type": "EXPLICIT",
+      "source": "They are vertically transmitted through eggs and sperm, and each sigma virus infects a single host species, simplifying studies of coevolution (Longdon et al., 2017; Longdon et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "ff22c097-4cc8-4819-ad7b-9997afdfd505",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C19",
+      "claim": "In D. melanogaster, sigma virus infection reduces host fitness by approximately 25%.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila melanogaster, despite the virus causing little adult mortality, infection reduces host fitness by approximately 25% (Wilfert and Jiggins, 2013; Yampolsky et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "b1e1e750-a946-492d-97d5-3ae1f697eebb",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C20",
+      "claim": "Sigma virus prevalence in wild D. melanogaster populations is typically around 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "As prevalence in wild populations is typically around 10% (Wilfert and Jiggins, 2013), there is the necessary selective pressure for resistance to evolve (Magwire et al., 2011; Cao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "094a2bbe-0cf8-4ff3-816f-b44122a3ba10",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C21",
+      "claim": "Three major-effect resistance alleles have been identified in D. melanogaster against sigma virus.",
+      "claim_type": "EXPLICIT",
+      "source": "In D. melanogaster, three major-effect resistance alleles have been identified (Bangham et al., 2008a; Magwire et al., 2012; Bangham et al., 2007; Magwire et al., 2011; Cao et al., 2016; Bangham et al., 2008b; Wayne et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "bb742ed4-8288-401f-8b21-d1c9e9b836b7",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C22",
+      "claim": "There has been a recent sweep of D. melanogaster sigma virus genotypes that are able to overcome one of the host resistance genes.",
+      "claim_type": "EXPLICIT",
+      "source": "There has been a recent sweep of D. melanogaster sigma virus (DMelSV) genotypes that are able to overcome one of these host resistance genes (Fleuriet, 1988; Wilfert and Jiggins, 2010a; Wilfert and Jiggins, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "978fe3f2-bb50-4093-9aad-c184487db00b",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C23",
+      "claim": "The four Drosophila species used in the study shared a common ancestor approximately 40 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study we have used four species of Drosophila (D. affinis, D. immigrans, D. melanogaster and D. obscura) that shared a common ancestor approximately 40 million years ago (Obbard et al., 2012; Tamura et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "0b4670d3-84eb-4a80-8d31-eeed576da672",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C24",
+      "claim": "The four sigma viruses have amino acid identities of <55% in the most conserved gene.",
+      "claim_type": "EXPLICIT",
+      "source": "and their natural sigma viruses (DAffSV, DImmSV, DMelSV and DObsSV, which have amino acid identities of <55% in the most conserved gene) (Longdon et al., 2015a; Longdon et al., 2010; Longdon et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "7f694c57-250a-4ba3-a2ff-41a992047cfe",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C25",
+      "claim": "The phylogenies of sigma viruses and their hosts are incongruent, suggesting host jumps during evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their vertical mode of transmission, the phylogenies of the viruses and their hosts are incongruent, suggesting they have jumped between host species during their evolution (Longdon et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "8cd28b23-3236-4fa7-af26-4efdd5bd4833",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C26",
+      "claim": "In total, 52,592 flies were infected and viral load was measured in 4295 biological replicates across 1436 full-sib families.",
+      "claim_type": "EXPLICIT",
+      "source": "In total we infected 52,592 flies and measured the viral load in 4295 biological replicates (a vial containing a mean of 12 flies) across 1436 full-sib families (details of sample sizes in Additional Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "96474043-d2be-4786-87f3-fbb1b8e5586d",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C27",
+      "claim": "Within populations of all four species, there was significantly greater genetic variance in susceptibility to the sigma virus that naturally infects that species compared to viruses from other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Within populations of all four species, we found significantly greater genetic variance in susceptibility to the sigma virus that naturally infects that species compared to viruses from other species (Figure 2; Figure 2\u2014figure supplement 1; Supplementary file 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data presented in figures and supplementary files",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "28a7930b-569f-4fa3-a654-317ed24b6b00",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C28",
+      "claim": "When families of D. obscura in the 2nd and 98th percentile were compared, there was a 1294 fold difference between the viral loads of the coevolved virus.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when families of D. obscura in the 2nd and 98th percentile were compared, there was a 1294 fold difference between the viral loads of the coevolved virus in the families (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data presented in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "690a43b5-c452-4d4f-8525-e786ae2b4ab8",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C29",
+      "claim": "For non-coevolved viruses in D. obscura, there was a 27 fold difference in DMelSV loads and a 19 fold difference in DAffSV loads between families in the 2nd and 98th percentile.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for the non-coevolved viruses there was a 27 fold difference in DMelSV loads and a 19 fold difference in DAffSV loads (see Figure 2A for statistics).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data presented in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "ea9531d1-b178-4f08-bc67-06d7244d4f68",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C30",
+      "claim": "Across the four species, there was no consistent difference between the mean viral load in coevolved versus non-coevolved associations.",
+      "claim_type": "EXPLICIT",
+      "source": "The data in Figure 2 is zero-centred to allow comparison of the variances, but across the four species, there was no consistent difference between the mean viral load in coevolved versus non-coevolved associations (i.e. the coevolved virus does not always replicate to higher levels suggesting this is not an artefact of simply replicating poorly in a host \u2013 see Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data presented in Figure 2 and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "cd3e44fc-f987-4a88-a29b-9222e4d9d33e",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C32",
+      "claim": "In D. melanogaster, the genetic correlation in viral loads between DMelSV and DAffSV was 0.40 (95% CIs: 0.20, 0.61).",
+      "claim_type": "EXPLICIT",
+      "source": "In D. melanogaster these were 0.40 for DMelSV-DAffSV, (95% CIs: 0.20, 0.61) and 0.25 for DMelSV-DObsSV (95% CIs: \u22120.01,0.47).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "7b436aed-2abb-46ac-8b2d-2838d0cf472a",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C33",
+      "claim": "In D. melanogaster, the genetic correlation in viral loads between DMelSV and DObsSV was 0.25 (95% CIs: \u22120.01,0.47).",
+      "claim_type": "EXPLICIT",
+      "source": "In D. melanogaster these were 0.40 for DMelSV-DAffSV, (95% CIs: 0.20, 0.61) and 0.25 for DMelSV-DObsSV (95% CIs: \u22120.01,0.47).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "1da96d55-755d-4e49-9660-be81c660f25c",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C34",
+      "claim": "In D. melanogaster, a substantial proportion of the genetic variance in susceptibility to DMelSV is explained by major-effect variants in the genes CHKov1 and p62.",
+      "claim_type": "EXPLICIT",
+      "source": "In D. melanogaster a substantial proportion of the genetic variance in susceptibility to DMelSV is explained by major-effect variants in the genes CHKov1 and p62 (also known as Ref(2)P) (Magwire et al., 2012; Bangham et al., 2007; Magwire et al., 2011; Wayne et al., 1996; Contamine et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "08ae758b-8c8b-4dc2-a823-c250a795a12f",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C35",
+      "claim": "The resistant allele in CHKov1 and p62 has arisen recently by mutation and been driven up in frequency by natural selection, presumably due to the presence of DMelSV in natural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The resistant allele in each of these genes has arisen recently by mutation and been driven up in frequency by natural selection, presumably due to the presence of DMelSV in natural populations (Bangham et al., 2007; Magwire et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "acde3823-426a-4c0b-9060-783a072720db",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C36",
+      "claim": "The load of DMelSV was more than halved in homozygous CHKov1 resistant flies compared to susceptible flies (reduction in log2 viral load = 1.2, 95% CI = 0.6, 1.8).",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming the effects of the resistant alleles are additive, we estimated that the load of the coevolved virus DMelSV was more than halved in homozygous CHKov1 resistant flies compared to susceptible flies (reduction in log2 viral load = 1.2, 95% CI = 0.6, 1.8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "1fc72f3e-d3e6-4344-bbe2-0052a136d9f0",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C37",
+      "claim": "CHKov1 had no significant effect on loads of the non-coevolved viruses DAffSV and DObsSV.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast we found no significant effect of this gene on loads of the non-coevolved viruses (DAffSV = \u22120.2, 95% CI = 0.2,\u20130.8; DObsSV = \u22120.4, 95% CI = \u22120.04, 1.0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "715187b1-7206-4f3f-85dc-c0e428b6d71b",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C38",
+      "claim": "The resistant allele of p62 was present at a low frequency (1.5%) in the D. melanogaster population.",
+      "claim_type": "EXPLICIT",
+      "source": "The resistant allele of p62 was present at such a low frequency (1.5%) in the population that we lacked statistical power to investigate its effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from genotyping",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "571a9e69-ca07-4dca-8214-53c262f0565f",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C39",
+      "claim": "The effect of CHKov1 and p62 genotypes was greater on DMelSV load than on DAffSV or DObsSV loads in 32 inbred D. melanogaster lines.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm these results we infected 1869 flies from 32 inbred D. melanogaster lines (Mackay et al., 2012) that had known CHKov1 or p62 genotypes. The effect of these genes was greater on the naturally occurring virus than the viruses from other species (Figure 3; effect of genotype on DMelSV load: F2,28 = 13.2, p=0.00001; DAffSV: F2,29 = 4.9, p=0.01; DObsSV: F2,29 = 5.7, p=0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of experimental data presented in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "647bea6f-0f3a-4b8d-ae80-77bc1da52c58",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C40",
+      "claim": "The DSPR mapping population samples genetic variation in a small number of genotypes from around the world.",
+      "claim_type": "EXPLICIT",
+      "source": "This population samples genetic variation in a small number of genotypes from around the world (the experiments above sampled many genotypes from a single location).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "515086d6-81d7-4613-b292-9b904ee1caeb",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C41",
+      "claim": "377 recombinant inbred lines from the DSPR populations were used, which have up to 15 alleles of each gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 377 RILs from these populations, which have up to 15 alleles of each gene (one founder line is shared between the two populations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "8c6620d8-9c10-4775-8494-bd1f69dc7284",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C42",
+      "claim": "15,916 flies across 1362 biological replicates were infected with DMelSV, DAffSV or DObsSV in the DSPR mapping experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "We infected 15,916 flies across 1362 biological replicates (a vial containing a mean of 12 flies) with DMelSV, DAffSV or DObsSV and measured viral load as above (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "ced44dbd-0bd7-41a4-ae62-0baa2876ef50",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C43",
+      "claim": "In the DSPR mapping population, there was considerably more genetic variation in susceptibility to the coevolved virus DMelSV than the non-coevolved viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "We first estimated the genetic variance in viral load within our mapping population. The results recapitulated what we had found above in a natural population of flies \u2014 there was considerably more genetic variation in susceptibility to the coevolved virus than the non-coevolved viruses (Figure 4A, filled circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data presented in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "5199275e-1b75-4bb0-a4be-287e3e5d39f5",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C44",
+      "claim": "Seven QTL affecting DMelSV load were identified in the DSPR mapping population.",
+      "claim_type": "EXPLICIT",
+      "source": "In the coevolved association (DMelSV) we identified seven QTL associated with resistance, compared to one that affects DObsSV and none affecting DAffSV (Supplementary file 5; this excludes one DMelSV QTL on the X chromosome that did not remain significant after accounting for the other QTL).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "QTL mapping analysis presented in Figure 4B and Supplementary file 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "d0966f0c-f981-42fc-9a88-46d7bfe269dd",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C45",
+      "claim": "One QTL affecting DObsSV load was identified in the DSPR mapping population.",
+      "claim_type": "EXPLICIT",
+      "source": "In the coevolved association (DMelSV) we identified seven QTL associated with resistance, compared to one that affects DObsSV and none affecting DAffSV (Supplementary file 5; this excludes one DMelSV QTL on the X chromosome that did not remain significant after accounting for the other QTL).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "QTL mapping analysis presented in Figure 4B and Supplementary file 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "24e118f1-8770-4bbd-bc51-af994961b63b",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C46",
+      "claim": "No QTL affecting DAffSV load were identified in the DSPR mapping population.",
+      "claim_type": "EXPLICIT",
+      "source": "In the coevolved association (DMelSV) we identified seven QTL associated with resistance, compared to one that affects DObsSV and none affecting DAffSV (Supplementary file 5; this excludes one DMelSV QTL on the X chromosome that did not remain significant after accounting for the other QTL).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "QTL mapping analysis presented in Figure 4B and Supplementary file 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "77a96504-e8a7-4cd1-ac03-c403c8099c84",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C47",
+      "claim": "The QTL affecting DObsSV also has a significant effect on DMelSV.",
+      "claim_type": "EXPLICIT",
+      "source": "The QTL affecting DObsSV also has a significant effect on DMelSV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "QTL mapping analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "1afbaef5-5b65-46de-82f8-a9ed1ff0cd6f",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C48",
+      "claim": "One of the QTL identified in the DSPR mapping corresponds to p62 (2L 53 cM).",
+      "claim_type": "EXPLICIT",
+      "source": "One of the QTL corresponded to p62 (2L 53 cM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "QTL mapping analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "ebb54c19-499c-40a3-940e-bc52acaa0339",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C49",
+      "claim": "The susceptible allele of CHKov1 was not present in the DSPR fly lines assayed.",
+      "claim_type": "EXPLICIT",
+      "source": "The susceptible allele of CHKov1 was not present in the fly lines assayed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Genotyping data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "997e2fb8-26ef-4083-9fc6-48411d3fd7ff",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C50",
+      "claim": "Six of the seven QTL resulted in greater reductions in the load of the coevolved virus DMelSV than the viruses isolated from other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Six of the seven QTL resulted in greater reductions in the load of the coevolved virus (DMelSV) than the viruses isolated from other species (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "QTL effect analysis presented in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "b9871224-ff00-4d72-aa21-54adc6c7c2d6",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C51",
+      "claim": "Resistant alleles at the identified QTL cause an approximate 3\u20137 fold reduction in viral load.",
+      "claim_type": "EXPLICIT",
+      "source": "Individually, resistant alleles cause an approximate 3\u20137 fold reduction in viral load (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "QTL effect analysis presented in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "d1350c43-d2f9-4585-9ef2-35eb7e1fb2ee",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C52",
+      "claim": "The identified QTL together explain 59% of the genetic variance in susceptibility to DMelSV.",
+      "claim_type": "EXPLICIT",
+      "source": "and together they explain 59% of the genetic variance in susceptibility to DMelSV, 77% for DObsSV and 3% for DAffSV (Figure 4A, filled versus open circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of QTL effects presented in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "acd19fa1-8654-4132-997b-a87af6faa847",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C53",
+      "claim": "The identified QTL together explain 77% of the genetic variance in susceptibility to DObsSV.",
+      "claim_type": "EXPLICIT",
+      "source": "and together they explain 59% of the genetic variance in susceptibility to DMelSV, 77% for DObsSV and 3% for DAffSV (Figure 4A, filled versus open circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of QTL effects presented in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "3ab9eb02-9b44-41eb-b7c0-be3d4e5cf318",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C54",
+      "claim": "The identified QTL together explain 3% of the genetic variance in susceptibility to DAffSV.",
+      "claim_type": "EXPLICIT",
+      "source": "and together they explain 59% of the genetic variance in susceptibility to DMelSV, 77% for DObsSV and 3% for DAffSV (Figure 4A, filled versus open circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of QTL effects presented in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "fe389b87-36d4-4a32-9110-908e741096fc",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C55",
+      "claim": "Even after accounting for the identified QTL, there remains a significantly higher genetic variance in the viral load of the coevolved virus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even after accounting for these genes there remains a significantly higher genetic variance in the viral load of the coevolved virus (Figure 4A, open circles, non-overlapping 95% CI).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis presented in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "4385ca20-1cdb-4d8b-8ff4-d5a5591e0280",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C56",
+      "claim": "Selection by pathogens has acted to increase the amount of genetic variation in susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found greater genetic variation in susceptibility to viruses that naturally infect Drosophila compared to viruses that do not, suggesting that selection by these pathogens has acted to increase the amount of genetic variation in susceptibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results showing greater genetic variation in coevolved associations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "28da7ac2-b0d6-40f5-be90-db53a50787df",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C57",
+      "claim": "The increased genetic variation in coevolved associations was largely caused by a modest number of major-effect genes that explain over half of the genetic variance in resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was largely caused by a modest number of major-effect genes that explain over half of the genetic variance in resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from QTL mapping results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "ddad0e05-53a6-447b-83af-49ed63fc3641",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C58",
+      "claim": "In both p62 and CHKov1, the resistant alleles have arisen relatively recently by mutation and natural selection has pushed them rapidly up in frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "In both these genes the resistant alleles have arisen relatively recently by mutation and natural selection has pushed them rapidly up in frequency, leaving a characteristic signature of elevated linkage disequilibrium and low genetic diversity around the variant causing resistance (Bangham et al., 2007; Magwire et al., 2011; Wayne et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "21e553fa-54a2-4511-a547-d730aa590fe0",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C59",
+      "claim": "There is no indication of negative frequency dependent selection on p62 and CHKov1, and these polymorphisms appear to have arisen from partial selective sweeps.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no indication of negative frequency dependent selection, and these polymorphisms appear to have arisen from partial selective sweeps (Bangham et al., 2007; Magwire et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "6a4b2b50-284d-464c-bde4-bdac4a7beefd",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C60",
+      "claim": "The most parsimonious explanation of the observations is that there has been directional selection favouring resistance alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "The most parsimonious explanation of these observations is that there has been directional selection favouring resistance alleles (although this type of data cannot rule out negative frequency dependent selection as is predicted by models of coevolution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from patterns of DNA sequence variation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "25c2391f-c297-4c6c-b096-5c7db562ae50",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C61",
+      "claim": "The genetic variance will transiently increase if the variants under selection are initially at low frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the genetic variance will transiently increase if the variants under selection are initially at low frequency (Barton and Turelli, 1987), as was the case for both p62 and CHKov1 (Bangham et al., 2007; Magwire et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to theory and empirical data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "c397f33d-0e52-4f3d-a13e-d92cb2a05254",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C62",
+      "claim": "In France and Germany in the 1980s, DMelSV evolved to largely overcome the effects of the resistant allele of p62.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in France and Germany in the 1980s, DMelSV evolved to largely overcome the effects of the resistant allele of p62 (Fleuriet and Periquet, 1993; Fleuriet and Sperlich, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "639b3c8f-7406-4310-9526-c051bd0da848",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C63",
+      "claim": "DImmSV has swept through European populations of D. immigrans in the last ~16 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, DImmSV has swept through European populations of D. immigrans in the last ~16 years and DObsSV through UK populations of D. obscura in the last ~11 years (Longdon et al., 2017; Longdon et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "f5c4e42a-6eee-48b2-8e26-480f41ae51d0",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C64",
+      "claim": "DObsSV has swept through UK populations of D. obscura in the last ~11 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, DImmSV has swept through European populations of D. immigrans in the last ~16 years and DObsSV through UK populations of D. obscura in the last ~11 years (Longdon et al., 2017; Longdon et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "1740eeb8-6f72-49ed-9217-d054517d22c2",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C65",
+      "claim": "If selection by pathogens continually changes and resistance evolves from new mutations, this may cause a sustained increase in genetic variance in susceptibility to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "If selection by pathogens continually changes and resistance evolves from new mutations, then this may cause a sustained increase in genetic variance in susceptibility to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning based on evolutionary theory",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "0d13383f-7380-4a8b-8a25-e0c906348b8d",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C66",
+      "claim": "Theory suggests that a critical factor determining levels of genetic variation is whether resistance is costly to evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "Theory suggests that a critical factor determining levels of genetic variation is whether resistance is costly to evolve, as this can result in the maintenance of variation by negative frequency dependent selection (Antonovics and Thrall, 1994; Boots et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "13c0bae0-1881-4b02-ac6a-c29d678db4fa",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C67",
+      "claim": "In humans, there is less genetic variation in susceptibility to pathogens that are effectively controlled by the adaptive immune response, possibly because these resistance mechanisms may be less costly.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans this has been proposed as an explanation of why there is less genetic variation in susceptibility to pathogens that are effectively controlled by the adaptive immune response, as these resistance mechanisms may be less costly (Baker and Antonovics, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "8af0cfd5-fff1-4474-9312-bd57a5b4d529",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C68",
+      "claim": "It seems unlikely that virus resistance in Drosophila is costly, as experiments have failed to detect costs of DCV resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it seems unlikely that virus resistance in Drosophila is costly, as experiments have failed to detect costs of DCV resistance (Faria et al., 2015) despite costs of parasitoid and bacterial resistance being repeatedly detected (McGonigle et al., 2017; McKean et al., 2008; Ye et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "bf4df5a5-860d-4512-a66c-b18f00584036",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C69",
+      "claim": "Sigma viruses are extreme host specialists.",
+      "claim_type": "EXPLICIT",
+      "source": "Sigma viruses are also extreme host specialists, so evolutionary changes in resistance will tend to alter pathogen prevalence and so the strength of selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about sigma viruses",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "eaf8c913-de47-4b4c-8dda-92491fbb84ae",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C70",
+      "claim": "Epidemiological feedbacks are predicted to frequently increase genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "These epidemiological feedbacks are predicted to frequently increase genetic diversity (Boots et al., 2014; Best et al., 2009; Boots and Haraguchi, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "fb728eae-39b0-4cc6-a058-3ff371fe9181",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C71",
+      "claim": "In D. melanogaster, there are large amounts of genetic variation in susceptibility to viruses that have a broader host range than sigma viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in D. melanogaster we see large amounts of genetic variation in susceptibility to viruses that have a broader host range than sigma viruses (DCV and Kallithea virus that infect D. melanogaster and D. simulans in the wild) (Magwire et al., 2012; Palmer et al., 2018; Christian, 1987; Webster et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "4941caf5-9663-4ec9-8ca8-c7b4a0f4ada6",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C72",
+      "claim": "In wild flax plants, sympatric (putatively coevolved) populations had fewer partial resistances than allopatric populations, suggesting more major gene effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In an analogous study of rust resistance in wild flax plants, sympatric (putatively coevolved) populations had fewer partial resistances than allopatric populations, suggesting more major gene effects, even though overall there was somewhat less genetic variation in susceptibility to sympatric fungal pathogens (Antonovics et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "534a897a-c6c0-4af9-85e8-38b53e92ced0",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C73",
+      "claim": "Quantitative traits are typically controlled by a very large number of genetic variants, each of which tends to have a very small effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative traits are typically controlled by a very large number of genetic variants, each of which tends to have a very small effect (Shi et al., 2016; Yang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "8b21c762-2092-41fb-95b9-d8a30db4b8ab",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C74",
+      "claim": "Susceptibility to sigma viruses has a simpler genetic basis, with seven polymorphisms explaining over half the genetic variance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, susceptibility to sigma viruses has a simpler genetic basis, with seven polymorphisms explaining over half the genetic variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental results from QTL mapping",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "116d2b72-6d80-4f62-8fa4-0e62b894432a",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C75",
+      "claim": "Most quantitative traits are under stabilising selection, so major effect variants will tend to be deleterious and removed by selection.",
+      "claim_type": "EXPLICIT",
+      "source": "One explanation for this observation is that most quantitative traits are under stabilising selection, so major effect variants will tend to be deleterious and removed by selection (Gibson, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "b5b68737-5313-4ab4-9e2a-827f5f849df6",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C76",
+      "claim": "Fisher's geometric model predicts that major effect variants will be favoured by directional selection when populations are far from their optimal level of resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, selection by pathogens likely changes through time and populations may be far from their optimal level of resistance. If this is the case, Fisher's geometric model predicts that major effect variants will be favoured by directional selection (Fisher, 1930).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to theoretical model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "bf752d17-c1c9-4393-8a28-095e61a89c08",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C77",
+      "claim": "The coevolution of hosts and parasites can favour discrete susceptible and resistant hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the coevolution of hosts and parasites can favour discrete susceptible and resistant hosts (Boots et al., 2014), and at the genetic level this may result in major-effect variants (although this theory does not explicitly address the underlying genetics).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to theoretical research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "18bffd4d-1d89-429a-bfaf-dc46415bb951",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C78",
+      "claim": "For virus resistance, a single loss of function mutation may prevent a virus binding to a host receptor or utilising other parts of the host cellular machinery, and so confer strong resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "For example a single (loss of function) mutation may prevent a virus binding to a host receptor or utilising other parts of the host cellular machinery, and so confer strong resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning based on biological knowledge",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "04ae2218-8384-4e98-ba44-677c36c52c59",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C79",
+      "claim": "Hill (2012) advocated the view that susceptibility to infectious disease is qualitatively different from other traits and has a much simpler genetic basis.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, Hill (2012) advocated the view that susceptibility to infectious disease is qualitatively different from other traits and has a much simpler genetic basis (Hill, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "18998466-152f-49c7-8c0d-c58ce21a158d",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C80",
+      "claim": "In Drosophila, resistance to DCV and parasitoid wasps both have a simple genetic basis.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, resistance to DCV and parasitoid wasps both have a simple genetic basis (Magwire et al., 2012; Cao et al., 2017; Orr and Irving, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "e89b502d-4f92-4fdc-896a-fe0900995332",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C81",
+      "claim": "In plants, major-effect polymorphisms in R genes are commonplace.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, major-effect polymorphisms in R genes are commonplace (Hammond-Kosack and Jones, 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "cc2cee23-d6de-4601-af52-e921d1ec8b11",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C82",
+      "claim": "In a plant-fungi system, genotype-by-genotype interactions explain a larger proportion of the total variance in sympatric (more coevolved) associations.",
+      "claim_type": "EXPLICIT",
+      "source": "and in a plant-fungi system genotype-by-genotype interactions explain a larger proportion of the total variance in sympatric (more coevolved) associations (Antonovics et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "6641a15e-cf6b-460e-95d8-2bd45237e0f0",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C83",
+      "claim": "Studies of bacterial resistance in Drosophila have typically used pathogens that are unlikely to have any history of coevolution, and have found a polygenic basis to resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, studies of bacterial resistance in Drosophila have typically used pathogens that are unlikely to have any history of coevolution, and have found a polygenic basis to resistance (Bou Sleiman et al., 2015; Hotson and Schneider, 2015; Howick and Lazzaro, 2017; Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "f7333dda-25e3-4f91-bff8-db5a0a5dd21e",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C84",
+      "claim": "The polymorphism with the largest effect in bacterial resistance studies was found against the only natural D. melanogaster pathogen tested (a polymorphism in Diptericin detected using Providencia rettgeri infection).",
+      "claim_type": "EXPLICIT",
+      "source": "In these studies the polymorphism with the largest effect was found against the only natural D. melanogaster pathogen tested (a polymorphism in Diptericin detected using Providencia rettgeri infection), anecdotally supporting the patterns seen here (Howick and Lazzaro, 2017; Unckless et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "adbbe259-4992-41a4-8114-0fb0704d926e",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C85",
+      "claim": "A major source of emerging infectious disease is pathogens jumping into novel hosts where they have no co-evolutionary history.",
+      "claim_type": "EXPLICIT",
+      "source": "A major source of emerging infectious disease is pathogens jumping into novel hosts where they have no co-evolutionary history (Longdon et al., 2014; Parrish et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "f6bde03e-370b-45f7-8685-714ce4a1d1cb",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C86",
+      "claim": "When a pathogen infects a novel host species, there may be far less genetic variation in susceptibility among individuals than is normally the case.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that when a pathogen infects a novel host species, there may be far less genetic variation in susceptibility among individuals than is normally the case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "aa0f1f57-603d-4c8b-b45b-ec3c5324d98e",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C87",
+      "claim": "Low genetic variation in novel host-pathogen associations may create a 'monoculture effect', which could leave populations vulnerable to epidemics.",
+      "claim_type": "EXPLICIT",
+      "source": "This may create a 'monoculture effect' (King and Lively, 2012; Lively, 2010; Ostfeld and Keesing, 2012), which could leave populations vulnerable to epidemics of pathogens that have previously circulated in other host species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results combined with cited theory",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "89d4b50b-4dbf-43f3-9e93-8f706c91ff72",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C88",
+      "claim": "Low levels of pre-standing genetic variation may slow down the rate at which a new host can evolve resistance to a new pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Longer term, low levels of pre-standing genetic variation may slow down the rate at which the new host can evolve resistance to a new pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results and evolutionary theory",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "5518d03f-32da-4486-813e-ac40cf8fcc57",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C89",
+      "claim": "Selection by pathogens has increased the amount of genetic variation in host susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we have demonstrated that selection by pathogens has increased the amount of genetic variation in host susceptibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "520440d5-873d-4376-9642-fab066a19b43",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C90",
+      "claim": "Resistance to sigma viruses is largely controlled by major effect resistance loci.",
+      "claim_type": "EXPLICIT",
+      "source": "We find resistance has a simple underlying genetic architecture and is largely controlled by major effect resistance loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on QTL mapping results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "3ee50ef5-f720-4eb7-83ad-f3fcf3adf114",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C91",
+      "claim": "Studies on DMelSV have shown that loci that reduce loads when the virus is injected also reduce infection rates in both the lab and field.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies on DMelSV have shown that loci that reduce loads when the virus is injected also reduce infection rates in both the lab and field (Bangham et al., 2008a; Longdon et al., 2012; Bregliano, 1970; Brun and Plus, 1980; Ohanessian-Guillemain, 1963; Wilfert and Jiggins, 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "20dcb747-680a-4c04-afbb-4074c2d781fd",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C92",
+      "claim": "Loci that reduce viral loads when the virus is injected are expected to increase host fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "As infection is costly, this is expected to increase host fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the cost of infection",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "46941855-5fde-4c93-b45c-92608cbf3bd5",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C94",
+      "claim": "The phylogenies of the sigma viruses were inferred using the L gene.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Phylogenies of the sigma viruses (inferred using the L gene) and their Drosophila hosts (inferred using COI, COII, 28S rDNA, Adh, SOD, Amyrel and RpL32 genes), redrawn from Longdon et al. (2015a) and Longdon et al. (2015b).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Description of phylogenetic analysis shown in Figure 1B",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "bdd9571a-4144-4874-8707-146879a2a26b",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C95",
+      "claim": "The phylogenies of the Drosophila hosts were inferred using COI, COII, 28S rDNA, Adh, SOD, Amyrel and RpL32 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Phylogenies of the sigma viruses (inferred using the L gene) and their Drosophila hosts (inferred using COI, COII, 28S rDNA, Adh, SOD, Amyrel and RpL32 genes), redrawn from Longdon et al. (2015a) and Longdon et al. (2015b).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Description of phylogenetic analysis shown in Figure 1B",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "c73e816c-1a89-42cc-9fd0-528879b65c06",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C96",
+      "claim": "Posterior supports for all nodes in the phylogenies are >0.99.",
+      "claim_type": "EXPLICIT",
+      "source": "Posterior supports for nodes are all >0.99.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Statistical support for phylogenetic analysis shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "91652f0e-e5e5-4863-8e0a-34e61e39f57e",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C97",
+      "claim": "The genetic correlations between coevolved and non-coevolved viruses were mostly below 0.5 in species other than D. melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "In the other species our estimates sometimes had wide credible intervals, but the genetic correlations between coevolved and non-coevolved viruses were mostly below 0.5 (Supplementary file 3; note correlations are frequently low between pairs of non-endemic viruses too).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "67732657-edef-4bc5-b846-99bdd766a241",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C98",
+      "claim": "If natural selection increases genetic variation in susceptibility to a natural pathogen, there is expected to be a smaller effect on non-coevolved viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore if natural selection increases genetic variation in susceptibility to a natural pathogen, there is expected to be a smaller effect on non-coevolved viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from genetic correlation results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "ef9107a0-26e8-4c2c-9311-5d77f3afa56d",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C99",
+      "claim": "The QTL at 3R 49 cM confers strong resistance to DMelSV and weak resistance to DObsSV.",
+      "claim_type": "EXPLICIT",
+      "source": "There were only two cases where there was substantial cross-resistance to multiple viruses\u20143R 49 cM confers strong resistance to DMelSV and weak resistance to DObsSV, while 3L 46 cM confers weak resistance to DMelSV and strong resistance to DObsSV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "QTL effect analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "ef719aa0-60bb-4d4a-9058-319638513de7",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C100",
+      "claim": "The QTL at 3L 46 cM confers weak resistance to DMelSV and strong resistance to DObsSV.",
+      "claim_type": "EXPLICIT",
+      "source": "There were only two cases where there was substantial cross-resistance to multiple viruses\u20143R 49 cM confers strong resistance to DMelSV and weak resistance to DObsSV, while 3L 46 cM confers weak resistance to DMelSV and strong resistance to DObsSV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "QTL effect analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "6a3ad4cf-8ad2-46f6-83e4-547db9bea201",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C101",
+      "claim": "The resistant allele of p62 and CHKov1 have left a characteristic signature of elevated linkage disequilibrium and low genetic diversity around the variant causing resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In both these genes the resistant alleles have arisen relatively recently by mutation and natural selection has pushed them rapidly up in frequency, leaving a characteristic signature of elevated linkage disequilibrium and low genetic diversity around the variant causing resistance (Bangham et al., 2007; Magwire et al., 2011; Wayne et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "5757acf3-1937-4556-8a51-a5b41622a59e",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C102",
+      "claim": "The result from a single population of D. melanogaster holds when sampling flies from across six continents.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our earlier result from a single population holds when sampling flies from across six continents, although the magnitude of the effect is considerably greater in this mapping population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of results from natural population and DSPR mapping population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "e759e879-5efc-4b12-b269-f8bec40d43b0",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "claim_id": "C103",
+      "claim": "The magnitude of the effect of coevolution on genetic variance is considerably greater in the DSPR mapping population than in the natural population.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our earlier result from a single population holds when sampling flies from across six continents, although the magnitude of the effect is considerably greater in this mapping population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of results from natural population and DSPR mapping population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3d8cc3d5-7760-416c-a70d-98b1f726848a",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Across four Drosophila species, there was significantly greater genetic variance in susceptibility to coevolved sigma viruses compared to non-coevolved viruses. This pattern was consistent across all four species tested (D. affinis, D. immigrans, D. melanogaster, and D. obscura), with coevolved associations showing fold-differences in viral loads between families that were substantially larger than non-coevolved associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 provide strong experimental evidence from a large-scale study (52,592 flies, 4295 biological replicates, 1436 families) showing consistently higher genetic variance in coevolved associations across all four species. The statistical analyses presented in Figure 2 and supplementary files demonstrate significant differences with appropriate controls for mean viral load effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "592ad09b-6548-419e-bdbf-fb7699392754",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Genetic correlations in viral loads between coevolved and non-coevolved viruses were moderate to low (mostly below 0.5), indicating that resistance mechanisms are largely virus-specific. In D. melanogaster, correlations between DMelSV and non-coevolved viruses were 0.40 (DAffSV) and 0.25 (DObsSV).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 and C97-C98 present genetic correlation estimates with confidence intervals, showing that resistance to coevolved viruses is largely independent of resistance to non-coevolved viruses. The moderate correlations suggest some shared genetic architecture but predominantly virus-specific mechanisms, supporting the interpretation that selection increases variation specifically for coevolved pathogens.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "124168e6-64af-4f35-a420-91afc68a9f3f",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Known major-effect resistance genes (CHKov1 and p62) in D. melanogaster confer strong resistance to the coevolved virus DMelSV but have little to no effect on non-coevolved viruses. CHKov1 reduced DMelSV load by more than half (log2 reduction = 1.2) but had no significant effect on DAffSV or DObsSV loads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 demonstrate virus-specific effects of known resistance genes through both genotyping of natural populations and validation in 32 inbred lines. The statistical analyses show significant effects on DMelSV (p<0.00001) with much weaker or non-significant effects on non-coevolved viruses, providing mechanistic support for the increased genetic variance in coevolved associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "76ecd3a3-5e02-4e99-b8ff-ed8279286766",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using a globally diverse D. melanogaster mapping population (DSPR), the pattern of greater genetic variance in coevolved associations was replicated and found to be even more pronounced than in a single natural population. The DSPR experiment involved 377 recombinant inbred lines from six continents and 15,916 flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 and C102-C103 demonstrate reproducibility of the main finding across different genetic backgrounds and geographic origins. The replication in an independent population with different sampling strategy strengthens the generalizability of the results, though the larger magnitude of effect in DSPR suggests population-specific factors may modulate the pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "ef77a858-eb54-4dc2-b44f-f38bef972007",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "QTL mapping in D. melanogaster identified seven loci affecting resistance to the coevolved virus DMelSV, compared to one for DObsSV and none for DAffSV. Six of seven QTL showed virus-specific effects, with resistant alleles causing 3-7 fold reductions in viral load. Together, these QTL explained 59% of genetic variance for DMelSV, 77% for DObsSV, and only 3% for DAffSV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C55 present comprehensive QTL mapping results with appropriate statistical thresholds (genome-wide p<0.05 by permutation). The identification of multiple major-effect loci specific to the coevolved virus, explaining substantial proportions of genetic variance, provides strong mechanistic evidence for how coevolution shapes genetic architecture. The residual variance after accounting for QTL (C55) suggests additional loci remain to be discovered.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "76329dce-3687-4f91-bd84-5cd6ae66b776",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors conclude that selection by pathogens has increased genetic variation in host susceptibility, and this effect is largely caused by a modest number of major-effect genes. Resistance to sigma viruses has a simpler genetic architecture than typical quantitative traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 and C89-C90 represent the main conclusions, which are well-supported by the experimental evidence showing consistently higher genetic variance in coevolved associations (C27), identification of major-effect QTL explaining >50% of variance (C52), and virus-specific effects of resistance loci (C50). The integration of full-sib family experiments and QTL mapping provides converging evidence for these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "ddbcda6b-307f-4e48-8be3-ae3a7d31311a",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The resistant alleles of p62 and CHKov1 arose recently by mutation and were driven to high frequency by directional selection, leaving signatures of elevated linkage disequilibrium and low genetic diversity. The most parsimonious explanation is directional selection favoring resistance, with transient increases in genetic variance as rare alleles spread.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 and C101 are supported by citations to prior population genetic studies that documented selective sweeps at these loci. The interpretation of directional selection is consistent with the molecular signatures, though the authors appropriately note (C60) that the data cannot definitively rule out frequency-dependent selection. The evolutionary mechanism proposed is well-grounded in theory (C61).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "9c08c42a-bdf6-4178-9cbc-ba78a7603870",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sigma viruses have evolved to overcome host resistance (DMelSV overcame p62 resistance in the 1980s), and recent sweeps of DImmSV and DObsSV through host populations suggest ongoing coevolutionary dynamics. Continually changing selection may cause sustained increases in genetic variance if resistance evolves from new mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are supported by citations to prior research documenting viral evolution and population sweeps. Claim C65 is appropriately presented as speculative (\"may cause\"), representing a hypothesis about how the observed patterns could be maintained over evolutionary time. The speculation is reasonable given the documented dynamics of host-pathogen coevolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "207317af-79f0-489a-a833-e195900286f2",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Susceptibility to sigma viruses has a simpler genetic basis than typical quantitative traits, with seven polymorphisms explaining over half the genetic variance. The authors propose this may result from directional selection when populations are far from optimal resistance (Fisher's geometric model), coevolutionary dynamics favoring discrete resistance phenotypes, or the ease of evolving major-effect resistance mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 contrast the observed genetic architecture with typical quantitative traits, supported by citations and the QTL mapping results. Claims C75-C78 present multiple theoretical explanations for the simple architecture, appropriately citing relevant theory. Claim C78 is speculative but biologically plausible. The discussion acknowledges multiple potential mechanisms without claiming definitive evidence for any single explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "1183018e-e3e2-4ef8-9d73-bbe0de079497",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors discuss whether their findings generalize beyond sigma viruses, considering factors like costs of resistance, host specialization, and epidemiological feedbacks. They argue their conclusions likely extend to other systems, citing evidence from other Drosophila viruses and analogous patterns in plant-pathogen systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C72 present a balanced discussion of generalizability, appropriately citing theoretical predictions and empirical studies from other systems. The authors acknowledge sigma viruses are extreme specialists (C69) but provide evidence that similar patterns occur with broader host-range viruses (C71) and in plant systems (C72). The discussion appropriately weighs evidence for and against generalization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "99b0ebb1-860f-4e69-afee-936757aa1056",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors argue that susceptibility to infectious disease may generally have a simpler genetic basis than other traits, citing evidence from humans, Drosophila resistance to other pathogens, and plant R genes. Studies using non-coevolved bacterial pathogens in Drosophila found more polygenic resistance, with the largest-effect polymorphism found against the only natural pathogen tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C84 synthesize evidence from multiple systems to support the hypothesis that coevolution shapes genetic architecture. The citations to human genetics (C79), Drosophila-DCV/parasitoid systems (C80), plant R genes (C81-C82), and bacterial resistance studies (C83-C84) provide comparative context. The anecdotal support from bacterial studies (C84) is appropriately qualified as such.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "ec237ae9-b1ee-4013-8620-2cd486539c88",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose that when pathogens jump to novel hosts, there may be less genetic variation in susceptibility, potentially creating a 'monoculture effect' that increases epidemic vulnerability in the short term and slows evolution of resistance in the long term.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C88 extend the findings to predict consequences for emerging infectious diseases. The inference (C86) follows logically from the experimental results showing lower variance in non-coevolved associations. Claims C87-C88 are appropriately presented as possibilities (\"may\") and cite relevant theory about monoculture effects. These represent reasonable extrapolations from the data, though direct experimental evidence for these predictions is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "96376b3b-dd8b-457b-9cf7-cc6a51726d78",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Sigma viruses are vertically transmitted, host-specific RNA rhabdoviruses that reduce D. melanogaster fitness by ~25% and occur at ~10% prevalence in wild populations. The four Drosophila species studied diverged ~40 million years ago, and their sigma viruses show <55% amino acid identity and incongruent phylogenies suggesting host jumps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C25 provide essential background on the study system, all supported by appropriate citations to prior research. These establish the natural history and evolutionary context necessary to interpret the experimental results. The characterization of the system as suitable for studying coevolution is well-justified by the vertical transmission, host specificity, and documented fitness costs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "3bd57925-ac84-4dc6-ad12-a5ab8b3e0975",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The experimental approach of measuring viral load after injection is validated by prior studies showing that loci reducing viral loads also reduce natural infection rates and increase fitness. Phylogenetic analyses used appropriate genes and showed strong statistical support (posterior probabilities >0.99).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 justify the experimental approach with citations to prior validation studies. Claims C94-C96 describe the phylogenetic methods with appropriate detail and statistical support. These methodological claims are well-supported and establish the validity of the experimental design and evolutionary framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "a3481c0d-094d-4a29-8a54-8cea78ce94aa",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Two QTL showed substantial cross-resistance to multiple viruses: 3R 49 cM confers strong resistance to DMelSV and weak resistance to DObsSV, while 3L 46 cM confers weak resistance to DMelSV and strong resistance to DObsSV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C100 identify the limited cases of cross-resistance among the QTL, based on the effect size analyses shown in Figure 4C. These exceptions to the general pattern of virus-specificity are important for understanding the genetic architecture and are appropriately documented. The asymmetric cross-resistance patterns suggest complex genetic interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    },
+    {
+      "id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750",
+      "content_id": "0a85006a-9640-47fb-bbea-5962232a77f1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The introduction establishes that genetic variation in disease susceptibility is common and important, reviews theoretical mechanisms for maintaining variation (directional selection, frequency-dependent selection, spatial/temporal variation), and cites prior work showing greater variation in D. melanogaster for coevolved viruses with major-effect resistance polymorphisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 provide the conceptual framework and motivation for the study, all supported by appropriate citations to prior research and established theory. The review of mechanisms maintaining genetic variation (C9-C13) is accurate and relevant. The citation of prior work (C14-C15) appropriately acknowledges that the current study builds on preliminary observations that required formal testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:51:31.808537Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8cd28b23-3236-4fa7-af26-4efdd5bd4833",
+      "result_id": "3d8cc3d5-7760-416c-a70d-98b1f726848a"
+    },
+    {
+      "claim_id": "96474043-d2be-4786-87f3-fbb1b8e5586d",
+      "result_id": "3d8cc3d5-7760-416c-a70d-98b1f726848a"
+    },
+    {
+      "claim_id": "28a7930b-569f-4fa3-a654-317ed24b6b00",
+      "result_id": "3d8cc3d5-7760-416c-a70d-98b1f726848a"
+    },
+    {
+      "claim_id": "690a43b5-c452-4d4f-8525-e786ae2b4ab8",
+      "result_id": "3d8cc3d5-7760-416c-a70d-98b1f726848a"
+    },
+    {
+      "claim_id": "ea9531d1-b178-4f08-bc67-06d7244d4f68",
+      "result_id": "3d8cc3d5-7760-416c-a70d-98b1f726848a"
+    },
+    {
+      "claim_id": "cd3e44fc-f987-4a88-a29b-9222e4d9d33e",
+      "result_id": "592ad09b-6548-419e-bdbf-fb7699392754"
+    },
+    {
+      "claim_id": "7b436aed-2abb-46ac-8b2d-2838d0cf472a",
+      "result_id": "592ad09b-6548-419e-bdbf-fb7699392754"
+    },
+    {
+      "claim_id": "91652f0e-e5e5-4863-8e0a-34e61e39f57e",
+      "result_id": "592ad09b-6548-419e-bdbf-fb7699392754"
+    },
+    {
+      "claim_id": "67732657-edef-4bc5-b846-99bdd766a241",
+      "result_id": "592ad09b-6548-419e-bdbf-fb7699392754"
+    },
+    {
+      "claim_id": "1da96d55-755d-4e49-9660-be81c660f25c",
+      "result_id": "124168e6-64af-4f35-a420-91afc68a9f3f"
+    },
+    {
+      "claim_id": "08ae758b-8c8b-4dc2-a823-c250a795a12f",
+      "result_id": "124168e6-64af-4f35-a420-91afc68a9f3f"
+    },
+    {
+      "claim_id": "acde3823-426a-4c0b-9060-783a072720db",
+      "result_id": "124168e6-64af-4f35-a420-91afc68a9f3f"
+    },
+    {
+      "claim_id": "1fc72f3e-d3e6-4344-bbe2-0052a136d9f0",
+      "result_id": "124168e6-64af-4f35-a420-91afc68a9f3f"
+    },
+    {
+      "claim_id": "715187b1-7206-4f3f-85dc-c0e428b6d71b",
+      "result_id": "124168e6-64af-4f35-a420-91afc68a9f3f"
+    },
+    {
+      "claim_id": "571a9e69-ca07-4dca-8214-53c262f0565f",
+      "result_id": "124168e6-64af-4f35-a420-91afc68a9f3f"
+    },
+    {
+      "claim_id": "647bea6f-0f3a-4b8d-ae80-77bc1da52c58",
+      "result_id": "76ecd3a3-5e02-4e99-b8ff-ed8279286766"
+    },
+    {
+      "claim_id": "515086d6-81d7-4613-b292-9b904ee1caeb",
+      "result_id": "76ecd3a3-5e02-4e99-b8ff-ed8279286766"
+    },
+    {
+      "claim_id": "8c6620d8-9c10-4775-8494-bd1f69dc7284",
+      "result_id": "76ecd3a3-5e02-4e99-b8ff-ed8279286766"
+    },
+    {
+      "claim_id": "ced44dbd-0bd7-41a4-ae62-0baa2876ef50",
+      "result_id": "76ecd3a3-5e02-4e99-b8ff-ed8279286766"
+    },
+    {
+      "claim_id": "5757acf3-1937-4556-8a51-a5b41622a59e",
+      "result_id": "76ecd3a3-5e02-4e99-b8ff-ed8279286766"
+    },
+    {
+      "claim_id": "e759e879-5efc-4b12-b269-f8bec40d43b0",
+      "result_id": "76ecd3a3-5e02-4e99-b8ff-ed8279286766"
+    },
+    {
+      "claim_id": "5199275e-1b75-4bb0-a4be-287e3e5d39f5",
+      "result_id": "ef77a858-eb54-4dc2-b44f-f38bef972007"
+    },
+    {
+      "claim_id": "d0966f0c-f981-42fc-9a88-46d7bfe269dd",
+      "result_id": "ef77a858-eb54-4dc2-b44f-f38bef972007"
+    },
+    {
+      "claim_id": "24e118f1-8770-4bbd-bc51-af994961b63b",
+      "result_id": "ef77a858-eb54-4dc2-b44f-f38bef972007"
+    },
+    {
+      "claim_id": "77a96504-e8a7-4cd1-ac03-c403c8099c84",
+      "result_id": "ef77a858-eb54-4dc2-b44f-f38bef972007"
+    },
+    {
+      "claim_id": "1afbaef5-5b65-46de-82f8-a9ed1ff0cd6f",
+      "result_id": "ef77a858-eb54-4dc2-b44f-f38bef972007"
+    },
+    {
+      "claim_id": "ebb54c19-499c-40a3-940e-bc52acaa0339",
+      "result_id": "ef77a858-eb54-4dc2-b44f-f38bef972007"
+    },
+    {
+      "claim_id": "997e2fb8-26ef-4083-9fc6-48411d3fd7ff",
+      "result_id": "ef77a858-eb54-4dc2-b44f-f38bef972007"
+    },
+    {
+      "claim_id": "b9871224-ff00-4d72-aa21-54adc6c7c2d6",
+      "result_id": "ef77a858-eb54-4dc2-b44f-f38bef972007"
+    },
+    {
+      "claim_id": "d1350c43-d2f9-4585-9ef2-35eb7e1fb2ee",
+      "result_id": "ef77a858-eb54-4dc2-b44f-f38bef972007"
+    },
+    {
+      "claim_id": "acd19fa1-8654-4132-997b-a87af6faa847",
+      "result_id": "ef77a858-eb54-4dc2-b44f-f38bef972007"
+    },
+    {
+      "claim_id": "3ab9eb02-9b44-41eb-b7c0-be3d4e5cf318",
+      "result_id": "ef77a858-eb54-4dc2-b44f-f38bef972007"
+    },
+    {
+      "claim_id": "fe389b87-36d4-4a32-9110-908e741096fc",
+      "result_id": "ef77a858-eb54-4dc2-b44f-f38bef972007"
+    },
+    {
+      "claim_id": "4385ca20-1cdb-4d8b-8ff4-d5a5591e0280",
+      "result_id": "76329dce-3687-4f91-bd84-5cd6ae66b776"
+    },
+    {
+      "claim_id": "28da7ac2-b0d6-40f5-be90-db53a50787df",
+      "result_id": "76329dce-3687-4f91-bd84-5cd6ae66b776"
+    },
+    {
+      "claim_id": "5518d03f-32da-4486-813e-ac40cf8fcc57",
+      "result_id": "76329dce-3687-4f91-bd84-5cd6ae66b776"
+    },
+    {
+      "claim_id": "520440d5-873d-4376-9642-fab066a19b43",
+      "result_id": "76329dce-3687-4f91-bd84-5cd6ae66b776"
+    },
+    {
+      "claim_id": "ddad0e05-53a6-447b-83af-49ed63fc3641",
+      "result_id": "ddbcda6b-307f-4e48-8be3-ae3a7d31311a"
+    },
+    {
+      "claim_id": "21e553fa-54a2-4511-a547-d730aa590fe0",
+      "result_id": "ddbcda6b-307f-4e48-8be3-ae3a7d31311a"
+    },
+    {
+      "claim_id": "6a4b2b50-284d-464c-bde4-bdac4a7beefd",
+      "result_id": "ddbcda6b-307f-4e48-8be3-ae3a7d31311a"
+    },
+    {
+      "claim_id": "25c2391f-c297-4c6c-b096-5c7db562ae50",
+      "result_id": "ddbcda6b-307f-4e48-8be3-ae3a7d31311a"
+    },
+    {
+      "claim_id": "6a3ad4cf-8ad2-46f6-83e4-547db9bea201",
+      "result_id": "ddbcda6b-307f-4e48-8be3-ae3a7d31311a"
+    },
+    {
+      "claim_id": "c397f33d-0e52-4f3d-a13e-d92cb2a05254",
+      "result_id": "9c08c42a-bdf6-4178-9cbc-ba78a7603870"
+    },
+    {
+      "claim_id": "639b3c8f-7406-4310-9526-c051bd0da848",
+      "result_id": "9c08c42a-bdf6-4178-9cbc-ba78a7603870"
+    },
+    {
+      "claim_id": "f5c4e42a-6eee-48b2-8e26-480f41ae51d0",
+      "result_id": "9c08c42a-bdf6-4178-9cbc-ba78a7603870"
+    },
+    {
+      "claim_id": "1740eeb8-6f72-49ed-9217-d054517d22c2",
+      "result_id": "9c08c42a-bdf6-4178-9cbc-ba78a7603870"
+    },
+    {
+      "claim_id": "534a897a-c6c0-4af9-85e8-38b53e92ced0",
+      "result_id": "207317af-79f0-489a-a833-e195900286f2"
+    },
+    {
+      "claim_id": "8b21c762-2092-41fb-95b9-d8a30db4b8ab",
+      "result_id": "207317af-79f0-489a-a833-e195900286f2"
+    },
+    {
+      "claim_id": "116d2b72-6d80-4f62-8fa4-0e62b894432a",
+      "result_id": "207317af-79f0-489a-a833-e195900286f2"
+    },
+    {
+      "claim_id": "b5b68737-5313-4ab4-9e2a-827f5f849df6",
+      "result_id": "207317af-79f0-489a-a833-e195900286f2"
+    },
+    {
+      "claim_id": "bf752d17-c1c9-4393-8a28-095e61a89c08",
+      "result_id": "207317af-79f0-489a-a833-e195900286f2"
+    },
+    {
+      "claim_id": "18bffd4d-1d89-429a-bfaf-dc46415bb951",
+      "result_id": "207317af-79f0-489a-a833-e195900286f2"
+    },
+    {
+      "claim_id": "0d13383f-7380-4a8b-8a25-e0c906348b8d",
+      "result_id": "1183018e-e3e2-4ef8-9d73-bbe0de079497"
+    },
+    {
+      "claim_id": "13c0bae0-1881-4b02-ac6a-c29d678db4fa",
+      "result_id": "1183018e-e3e2-4ef8-9d73-bbe0de079497"
+    },
+    {
+      "claim_id": "8af0cfd5-fff1-4474-9312-bd57a5b4d529",
+      "result_id": "1183018e-e3e2-4ef8-9d73-bbe0de079497"
+    },
+    {
+      "claim_id": "bf4df5a5-860d-4512-a66c-b18f00584036",
+      "result_id": "1183018e-e3e2-4ef8-9d73-bbe0de079497"
+    },
+    {
+      "claim_id": "eaf8c913-de47-4b4c-8dda-92491fbb84ae",
+      "result_id": "1183018e-e3e2-4ef8-9d73-bbe0de079497"
+    },
+    {
+      "claim_id": "fb728eae-39b0-4cc6-a058-3ff371fe9181",
+      "result_id": "1183018e-e3e2-4ef8-9d73-bbe0de079497"
+    },
+    {
+      "claim_id": "4941caf5-9663-4ec9-8ca8-c7b4a0f4ada6",
+      "result_id": "1183018e-e3e2-4ef8-9d73-bbe0de079497"
+    },
+    {
+      "claim_id": "04ae2218-8384-4e98-ba44-677c36c52c59",
+      "result_id": "99b0ebb1-860f-4e69-afee-936757aa1056"
+    },
+    {
+      "claim_id": "18998466-152f-49c7-8c0d-c58ce21a158d",
+      "result_id": "99b0ebb1-860f-4e69-afee-936757aa1056"
+    },
+    {
+      "claim_id": "e89b502d-4f92-4fdc-896a-fe0900995332",
+      "result_id": "99b0ebb1-860f-4e69-afee-936757aa1056"
+    },
+    {
+      "claim_id": "cc2cee23-d6de-4601-af52-e921d1ec8b11",
+      "result_id": "99b0ebb1-860f-4e69-afee-936757aa1056"
+    },
+    {
+      "claim_id": "6641a15e-cf6b-460e-95d8-2bd45237e0f0",
+      "result_id": "99b0ebb1-860f-4e69-afee-936757aa1056"
+    },
+    {
+      "claim_id": "f7333dda-25e3-4f91-bff8-db5a0a5dd21e",
+      "result_id": "99b0ebb1-860f-4e69-afee-936757aa1056"
+    },
+    {
+      "claim_id": "adbbe259-4992-41a4-8114-0fb0704d926e",
+      "result_id": "ec237ae9-b1ee-4013-8620-2cd486539c88"
+    },
+    {
+      "claim_id": "f6bde03e-370b-45f7-8685-714ce4a1d1cb",
+      "result_id": "ec237ae9-b1ee-4013-8620-2cd486539c88"
+    },
+    {
+      "claim_id": "aa0f1f57-603d-4c8b-b45b-ec3c5324d98e",
+      "result_id": "ec237ae9-b1ee-4013-8620-2cd486539c88"
+    },
+    {
+      "claim_id": "89d4b50b-4dbf-43f3-9e93-8f706c91ff72",
+      "result_id": "ec237ae9-b1ee-4013-8620-2cd486539c88"
+    },
+    {
+      "claim_id": "353df6aa-4c21-42f5-b767-8a19ded79af1",
+      "result_id": "96376b3b-dd8b-457b-9cf7-cc6a51726d78"
+    },
+    {
+      "claim_id": "00caebb3-07ed-4cf3-877b-4fa4e72d8990",
+      "result_id": "96376b3b-dd8b-457b-9cf7-cc6a51726d78"
+    },
+    {
+      "claim_id": "5ac4e190-d3ae-462f-9538-c540055b7ccc",
+      "result_id": "96376b3b-dd8b-457b-9cf7-cc6a51726d78"
+    },
+    {
+      "claim_id": "ff22c097-4cc8-4819-ad7b-9997afdfd505",
+      "result_id": "96376b3b-dd8b-457b-9cf7-cc6a51726d78"
+    },
+    {
+      "claim_id": "b1e1e750-a946-492d-97d5-3ae1f697eebb",
+      "result_id": "96376b3b-dd8b-457b-9cf7-cc6a51726d78"
+    },
+    {
+      "claim_id": "094a2bbe-0cf8-4ff3-816f-b44122a3ba10",
+      "result_id": "96376b3b-dd8b-457b-9cf7-cc6a51726d78"
+    },
+    {
+      "claim_id": "bb742ed4-8288-401f-8b21-d1c9e9b836b7",
+      "result_id": "96376b3b-dd8b-457b-9cf7-cc6a51726d78"
+    },
+    {
+      "claim_id": "978fe3f2-bb50-4093-9aad-c184487db00b",
+      "result_id": "96376b3b-dd8b-457b-9cf7-cc6a51726d78"
+    },
+    {
+      "claim_id": "0b4670d3-84eb-4a80-8d31-eeed576da672",
+      "result_id": "96376b3b-dd8b-457b-9cf7-cc6a51726d78"
+    },
+    {
+      "claim_id": "7f694c57-250a-4ba3-a2ff-41a992047cfe",
+      "result_id": "96376b3b-dd8b-457b-9cf7-cc6a51726d78"
+    },
+    {
+      "claim_id": "3ee50ef5-f720-4eb7-83ad-f3fcf3adf114",
+      "result_id": "3bd57925-ac84-4dc6-ad12-a5ab8b3e0975"
+    },
+    {
+      "claim_id": "20dcb747-680a-4c04-afbb-4074c2d781fd",
+      "result_id": "3bd57925-ac84-4dc6-ad12-a5ab8b3e0975"
+    },
+    {
+      "claim_id": "46941855-5fde-4c93-b45c-92608cbf3bd5",
+      "result_id": "3bd57925-ac84-4dc6-ad12-a5ab8b3e0975"
+    },
+    {
+      "claim_id": "bdd9571a-4144-4874-8707-146879a2a26b",
+      "result_id": "3bd57925-ac84-4dc6-ad12-a5ab8b3e0975"
+    },
+    {
+      "claim_id": "c73e816c-1a89-42cc-9fd0-528879b65c06",
+      "result_id": "3bd57925-ac84-4dc6-ad12-a5ab8b3e0975"
+    },
+    {
+      "claim_id": "ef9107a0-26e8-4c2c-9311-5d77f3afa56d",
+      "result_id": "a3481c0d-094d-4a29-8a54-8cea78ce94aa"
+    },
+    {
+      "claim_id": "ef719aa0-60bb-4d4a-9058-319638513de7",
+      "result_id": "a3481c0d-094d-4a29-8a54-8cea78ce94aa"
+    },
+    {
+      "claim_id": "588d74b6-8728-4de6-a354-aa3728281f93",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "b0b97e63-6bfa-4777-b072-ee7a2b7d7e20",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "eb83bf0f-9ec6-4843-88c4-f4050ebe27d9",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "f988426a-967a-402b-96bc-c87e2c78b874",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "1d8237ab-fe60-42a0-828f-f52c886d0777",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "31f8cee5-e18c-44f8-a57e-9e7e99e86245",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "fa4059dd-5134-4a24-8cc9-cd7e874bba37",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "b0c84350-e2a1-4e26-9c78-98bd5eec3ff4",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "20c10f5d-655f-425f-b679-2ad44f3e1fdd",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "1e47acb0-51c9-4634-a94d-a11a2a35f87d",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "b2e3224e-88e5-42bc-8942-1f3de4fb94af",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "9a85ea20-48a9-470f-8c63-1614f1f95842",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "759e052a-6a1b-450b-892f-8f386c4109d2",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "2a54c9ea-476a-4790-8fa2-94a06f6b57be",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    },
+    {
+      "claim_id": "f3828a1d-0479-40e0-84bb-93ec5247c5db",
+      "result_id": "c69fe4a0-b63b-4c1e-a867-fd932e4e3750"
+    }
+  ],
+  "comparisons": []
+}

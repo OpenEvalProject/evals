@@ -1,0 +1,2294 @@
+{
+  "submission": {
+    "id": "dbaeddf3-76da-4685-a5b2-d130b9505dca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:27:49.803749Z",
+    "updated_at": "2025-12-02T19:27:49.803749Z"
+  },
+  "content": [
+    {
+      "id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "submission_id": "dbaeddf3-76da-4685-a5b2-d130b9505dca",
+      "content_type": "manuscript",
+      "content_text": "# Investigating pleiotropic effects of statins on ischemic heart disease in the UK Biobank using Mendelian randomisation\n\n## Authors\n\n- CM Schooling<sup>1</sup> ([ORCID: 0000-0001-9933-5887](https://orcid.org/0000-0001-9933-5887)) \u2020\n- JV Zhao<sup>1</sup>\n- SL Au Yeung<sup>1</sup>\n- GM Leung<sup>1</sup>\n\n### Affiliations\n\n1. School of Public Health, Li Ka Shing Faculty of Medicine, The University of Hong Kong Hong Kong China\n2. City University of New York, Graduate School of Public Health and Health Policy New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe examined whether specifically statins, of the major lipid modifiers (statins, proprotein convertase subtilisin/kexin type 9 (PCSK9) inhibitors and ezetimibe) have pleiotropic effects on ischemic heart disease (IHD) via testosterone in men or women. As a validation, we similarly assessed whether a drug that unexpectedly likely increases IHD also operates via testosterone. Using previously published genetic instruments we conducted a sex-specific univariable and multivariable Mendelian randomization study in the UK Biobank, including 179918 men with 25410 IHD cases and 212080 women with 12511 IHD cases. Of these three lipid modifiers, only genetically mimicking the effects of statins in men affected testosterone, which partly mediated effects on IHD. Correspondingly, genetically mimicking effects of anakinra on testosterone and IHD presented a reverse pattern to that for statins. These insights may facilitate the development of new interventions for cardiovascular diseases as well as highlighting the importance of sex-specific explanations, investigations, prevention and treatment.\n\n## Introduction\n\nStatins are the first-line lipid modifier for reducing cardiovascular morbidity and mortality (Ray et al., 2019; Michos et al., 2019). Statins have revolutionized the prevention and treatment of cardiovascular disease, and inspired the development of a range of effective interventions targeting the reduction of low-density lipoprotein (LDL)-cholesterol. Statins have long been suspected of having additional beneficial effects beyond lipid modulation (Schonbeck and Libby, 2004), such as on inflammation (Schonbeck and Libby, 2004), another potential target for reducing cardiovascular disease (Aday and Ridker, 2018). Meta-analysis of randomized controlled trials (RCTs) suggests statins are more effective at reducing mortality than proprotein convertase subtilisin/kexin type 9 (PCSK9) inhibitors or ezetimibe (Schmidt et al., 2017; Khan et al., 2018). However, these findings may be more apparent than real, stemming from differences in trial design, such as shorter duration of the PCSK9 inhibitor trials (Khan et al., 2018), the predominance of industry funded statin trials (Hobbs et al., 2016) or the difficulty of interpreting trials of \u2018soft\u2019 events when the treatment affects diagnostically relevant criteria, that\u00a0is lipid levels (Schooling and Zhao, 2019). To investigate this anomaly, a previous study conducted a systematic agnostic scan of metabolic profile in a trial of statins compared to a PCSK9 inhibitor, which found few differences (Sliz et al., 2018). While characterization of the metabolic effects of statins suggested extensive effects on lipids and fatty acids (W\u00fcrtz et al., 2016); these investigations were not able to include a factor which has previously been proposed as contributing to statin\u2019s effectiveness, that\u00a0is effects on male hormones (Schooling et al., 2013), although questions have been raised as to whether statins are as effective in women as men (Plakogiannis and Arif, 2016). However, meta-analysis of the available trial evidence suggests similar relative benefits of LDL-cholesterol reduction by statins for men and women (Fulcher et al., 2015), although the trials mainly concern men (73.2%) which may preclude detection of important sex differences. Men are also at substantially higher risk than women (Ezzati et al., 2015) giving larger absolute benefits in men than women at the same reduction in relative risk.\n\nRCTs are not usually designed or powered to test mediating mechanisms. In addition, trials of statins on cardiovascular disease outcomes designed to be sex-specific are lacking. To assess a potential pathway by which statins might additionally operate, we used Mendelian randomization (MR), an observational study design that avoids confounding by taking advantage of the random allocation of genetic material at conception (Smith and Ebrahim, 2003), here specifically genetic variants mimicking effects of lipid modifiers. This random allocation at conception also avoids selection bias as long as few deaths have occurred between randomization and recruitment due to exposure, outcome, or other causes, that\u00a0is competing risk, of the outcome (Schooling et al., 2020). So, here we focused on ischemic heart disease (IHD) (Kesteloot and Decramer, 2008), using the UK Biobank (Collins, 2012) to investigate whether testosterone mediated any of the effects of statins, PCSK9 inhibitors or ezetimibe on IHD in men or women using univariable and multivariable MR. As a further test, given some anti-inflammatories have also been shown to have opposite effects on male hormones compared to statins, specifically the interleukin one receptor antagonist (IL-1Ra), anakinra (Ebrahimi et al., 2018), we assessed whether the genetic variants mimicking effects of anakinra or tocilizumab targeting the\u00a0interleukin six receptor (IL-6r) had opposite patterns of effects on testosterone and IHD (Aday and Ridker, 2018; Swerdlow et al., 2012; Interleukin 1 Genetics Consortium, 2015) to statins. Figure 1 illustrates the possible additional effects of statins, anakinra or tocilizumab on IHD via male hormones in the context of the well-established benefits of statins, PCSK9 inhibitors and ezetimibe acting via LDL-cholesterol and of anti-inflammatories in IHD.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58567/elife-58567-fig1-v2.jpg)\n\n**Figure 1.:** Green indicates a lowering effect, red indicates an increasing effect.\n\n## Results\n\nThe six single neucleotide polymorphisms (SNPs) mimicking effects of statin (rs12916, rs5909, rs10066707, rs17238484, rs2006760 and rs2303152 from HMGCR) (Ference et al., 2019) were all correlated (r2\u00a0>0.13). In the main analysis we used only the lead SNP, rs12916. Of the 7 SNPs mimicking effects of PCSK9 inhibitors (rs11206510, rs2149041, rs7552841, rs10888897, rs2479394, rs2479409 and rs562556 from PCSK9) (Ference et al., 2019), the three independently (r2\u00a0<0.05) and most strongly associated with LDL-cholesterol (rs11206510, rs2149041 and rs7552841) were used in the main analysis. Of the 5 SNPs mimicking effects of ezetimibe (rs10260606 (proxy of rs2073547, r2\u00a0=\u00a00.99), rs2300414, rs10234070, rs7791240, rs217386 from NCP1L1) (Ference et al., 2019), two SNPs (rs2300414 and rs10234070) were discarded because their F-statistic for LDL-cholesterol was\u00a0<10. The remaining three SNPs were all correlated at r2\u00a0>0.05. rs2073547 was used in the main analysis because it had the strongest association with LDL-cholesterol. Supplementary file 1a shows the associations with LDL-cholesterol by sex for the independent SNPs used to mimic effects of statins, PCSK9 inhibitors and ezetimibe. Supplementary file 1b shows the associations of the two SNPs mimicking effects of the anti-inflammatory, anakinra, (rs6743376 and rs1542176 (r2\u00a0<0.001)) with IL-1Ra and the associations of the SNP (rs7529229), mimicking effects of tocilizumab use, with IL-6r.\n\nThere were 179,918 men with 25,410 cases of IHD and 212,080 women with 12,511 cases of IHD in the UK Biobank.\n\n### Instrument strength\n\nThe F-statistics for SNPs used to genetically mimic the effects of statins, PCSK9 inhibitors and ezetimibe were all\u00a0>10 in men and women (Supplementary file 1a), as were the F-statistics for the SNPs used to mimic the effects of anakinra and tocilizumab (Supplementary file 1b). The F-statistics for the 125 and 254 SNPs predicting testosterone in men and women were all greater than 10, with mean 128.6 and 83.3, respectively.\n\n### Sex-specific associations of genetically mimicked lipid modifiers with testosterone\n\nGenetically mimicked effects of statins reduced testosterone in men but not women (Table 1). Genetically mimicked effects of PCSK9 inhibitors and of ezetimibe did not affect testosterone in men or women (Table 1). Findings were similar in sensitivity analysis including correlated SNPs, where available (Table 1). PCSK9 inhibitors and ezetimibe were not investigated further, given the lack of association with testosterone in men and women.\n\n**Table 1.**\n Sex-specific Mendelian randomization estimates (where possible) for effects of genetically mimicked statins, PCSK9 inhibitor and ezetimibe (in effect sizes of LDL-cholesterol) on testosterone (effect size) in men and women using the UK Biobank .\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th colspan=\"4\">Mendelian Randomization estimates</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Therapy</th>\n      <th># SNPs</th>\n      <th>Method</th>\n      <th>Beta</th>\n      <th>95% CI</th>\n      <th>P value</th>\n      <th>MR-Egger intercept p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Men</td>\n      <td>Statin</td>\n      <td>1</td>\n      <td>Inverse variance weighted</td>\n      <td>\u22120.15</td>\n      <td>\u22120.23 to \u22120.06</td>\n      <td>0.001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Statin</td>\n      <td>6</td>\n      <td>Inverse variance weighted</td>\n      <td>\u22120.15</td>\n      <td>\u22120.23 to \u22120.07</td>\n      <td>0.0005</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PCSK9 inhibitor</td>\n      <td>3</td>\n      <td>Inverse variance weighted</td>\n      <td>0.04</td>\n      <td>\u22120.11 to 0.18</td>\n      <td>0.63</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PCSK9 inhibitor</td>\n      <td>3</td>\n      <td>Weighted median</td>\n      <td>0.07</td>\n      <td>\u22120.13 to 0.27</td>\n      <td>0.29</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PCSK9 inhibitor</td>\n      <td>3</td>\n      <td>MR-Egger</td>\n      <td>0.34</td>\n      <td>0.09 to 0.60</td>\n      <td>0.01</td>\n      <td>\u22120.01 (0.01)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PCSK9 inhibitor</td>\n      <td>7</td>\n      <td>Inverse variance weighted</td>\n      <td>0.05</td>\n      <td>\u22120.05 to 0.15</td>\n      <td>0.29</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ezetimibe</td>\n      <td>1</td>\n      <td>Inverse variance weighted</td>\n      <td>0.04</td>\n      <td>\u22120.15 to 0.23</td>\n      <td>0.68</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ezetimibe</td>\n      <td>3</td>\n      <td>Inverse variance weighted</td>\n      <td>0.05</td>\n      <td>\u22120.12 to 0.22</td>\n      <td>0.55</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ezetimibe</td>\n      <td>3</td>\n      <td>Weighted median</td>\n      <td>0.03</td>\n      <td>\u22120.13 to 0.18</td>\n      <td>0.72</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ezetimibe</td>\n      <td>3</td>\n      <td>MR-Egger</td>\n      <td>0.24</td>\n      <td>\u22120.52 to 1.0</td>\n      <td>0.54</td>\n      <td>\u22120.01 (0.52)</td>\n    </tr>\n    <tr>\n      <td>Women</td>\n      <td>Statin</td>\n      <td>1</td>\n      <td>Inverse variance weighted</td>\n      <td>0.04</td>\n      <td>\u22120.06 to 0.14</td>\n      <td>0.45</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Statin</td>\n      <td>6</td>\n      <td>Inverse variance weighted</td>\n      <td>0.03</td>\n      <td>\u22120.07 to 0.13</td>\n      <td>0.52</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PCSK9 inhibitor</td>\n      <td>3</td>\n      <td>Inverse variance weighted</td>\n      <td>0.01</td>\n      <td>\u22120.11 to 0.14</td>\n      <td>0.85</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PCSK9 inhibitor</td>\n      <td>3</td>\n      <td>Weighted median</td>\n      <td>0.01</td>\n      <td>\u22120.13 to 0.15</td>\n      <td>0.91</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PCSK9 inhibitor</td>\n      <td>3</td>\n      <td>MR-Egger</td>\n      <td>0.09</td>\n      <td>\u22120.38 to 0.56</td>\n      <td>0.71</td>\n      <td>\u22120.003 (0.74)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PCSK9 inhibitor</td>\n      <td>7</td>\n      <td>Inverse variance weighted</td>\n      <td>\u22120.004</td>\n      <td>\u22120.14 to 0.13</td>\n      <td>0.95</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ezetimibe</td>\n      <td>1</td>\n      <td>Inverse variance weighted</td>\n      <td>0.18</td>\n      <td>\u22120.05 to 0.40</td>\n      <td>0.12</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ezetimibe</td>\n      <td>3</td>\n      <td>Inverse variance weighted</td>\n      <td>0.12</td>\n      <td>\u22120.08 to 0.31</td>\n      <td>0.24</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_One statin SNP is rs12916, and six statin SNPs additionally included rs5909, rs10066707, rs17238484, rs2006760 and rs2303152 taking into account their correlations.Three PCSK9 inhibitor SNPs are rs11206510, rs2149041 and rs7552841, and 7 PCSK9 inhibitor SNPs additionally included rs10888897, rs2479394, rs2479409 and, rs562556 taking into account all their correlations.One ezetimibe SNP is rs2073547 (proxied by rs10260606), and three ezetimibe SNPs additionally included rs7791240 and rs217386 taking into account all their correlations.The unit of LDL-cholesterol is approximately 0.83 mm/L. An effect size of testosterone is approximately, 0.23 nmol/L in women (Haring et al., 2012) and 3.1 nmol/L in men (Mohr et al., 2005)._\n\n### Sex-specific associations of genetically mimicked statin use and testosterone with IHD\n\nGenetically mimicked effects of statins reduced the risk of IHD in men and possibly women (Table 2) using IVW. Steiger filtering indicated directionality from testosterone to IHD in men and women. Genetically predicted testosterone was positively associated with IHD in men, but was not significantly associated with IHD in women, with similar estimates using IVW, the weighted median and MR-Egger. MR-Egger intercepts did not suggest the IVW estimates were invalid, but had wider confidence intervals (Table 2).\n\n**Table 2.**\n Mendelian randomization estimates for effects of genetically mimicked statins (effect sizes of LDL-cholesterol) and of genetically predicted testosterone (effect size) on IHD in men and women using the UK Biobank. Table 2\u2014source data 1.Genetic associations for men.  Table 2\u2014source data 2.genetic associations for women.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th colspan=\"4\">Mendelian randomization estimates</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Exposure</th>\n      <th># SNPs</th>\n      <th>Method</th>\n      <th>OR</th>\n      <th>95% CI</th>\n      <th>P value</th>\n      <th>MR-Egger intercept p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Men</td>\n      <td>Statin mimic</td>\n      <td>1</td>\n      <td>Inverse variance weighted</td>\n      <td>0.55</td>\n      <td>0.38 to 0.79</td>\n      <td>0.001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Statin mimic</td>\n      <td>6</td>\n      <td>Inverse variance weighted</td>\n      <td>0.54</td>\n      <td>0.33 to 0.89</td>\n      <td>0.02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Testosterone</td>\n      <td>125</td>\n      <td>Inverse variance weighted</td>\n      <td>1.11</td>\n      <td>1.04 to 1.19</td>\n      <td>0.003</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Testosterone</td>\n      <td>125</td>\n      <td>Weighted median</td>\n      <td>1.18</td>\n      <td>1.06 to 1.31</td>\n      <td>0.002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Testosterone</td>\n      <td>125</td>\n      <td>MR-Egger</td>\n      <td>1.10</td>\n      <td>0.98 to 1.23</td>\n      <td>0.09</td>\n      <td>0.01 (0.84)</td>\n    </tr>\n    <tr>\n      <td>Women</td>\n      <td>Statin mimic</td>\n      <td>1</td>\n      <td>Inverse variance weighted</td>\n      <td>0.87</td>\n      <td>0.59 to 1.27</td>\n      <td>0.46</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Statin mimic</td>\n      <td>6</td>\n      <td>Inverse variance weighted</td>\n      <td>0.79</td>\n      <td>0.54 to 1.13</td>\n      <td>0.20</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Testosterone</td>\n      <td>254</td>\n      <td>Inverse variance weighted</td>\n      <td>0.96</td>\n      <td>0.89 to 1.03</td>\n      <td>0.29</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Testosterone</td>\n      <td>254</td>\n      <td>Weighted median</td>\n      <td>1.03</td>\n      <td>0.92 to 1.14</td>\n      <td>0.63</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Testosterone</td>\n      <td>254</td>\n      <td>MR-Egger</td>\n      <td>1.08</td>\n      <td>0.94 to 1.23</td>\n      <td>0.27</td>\n      <td>\u22120.004 (0.05)</td>\n    </tr>\n  </tbody>\n</table>\n\n_One statin SNP is rs12916, and six statin SNPs additionally included rs5909, rs10066707, rs17238484, rs2006760 and rs2303152 taking into account all their correlations. The unit of LDL-cholesterol is approximately 0.83 mm/L. An effect size of testosterone is approximately, 0.23 nmol/L in women (Haring et al., 2012) and 3.1 nmol/L in men (Mohr et al., 2005)._\n\nConsidering genetically mimicked effects of statin together with genetically predicted testosterone, in men the multivariable estimates for genetically mimicked effects of statins on IHD allowing for testosterone we attenuated (Table 3) compared to the univariable estimates for effects of statins on IHD (Table 2). As a result, the multivariable MR-Egger estimates for genetically mimicked effects of statins on IHD, allowing for testosterone, were very similar for men and women (odds ratio 0.72, 95% confidence interval 0.57 to 0.90 for men and women meta-analyzed together). The multivariable associations of genetically predicted testosterone with IHD in men and women, allowing for genetically mimicked statins, (Table 3) were very similar to the respective univariable estimates for men and women (Table 2), but differed by sex (z-test p-value 0.01). The conditional F-statistics were 58.2 (men) and 68.5 (women) for testosterone and 3.5 (men) and 6.8 (women) for effects of genetically mimicked statins. The Q statistics for instrument validity were significant (212.5 in men and 323.1 in women), and the multivariable MR-Egger intercepts were significant in men and women, substantiating the use of the MR-Egger estimates.\n\n**Table 3.**\n Multivariable Mendelian randomization estimates for effects of genetically mimicked statins (effect sizes of LDL-cholesterol) and of testosterone (effect size) together on IHD in men and women using the UK Biobank.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th colspan=\"3\">Mendelian randomization estimates</th>\n      <th></th>\n    </tr>\n    <tr>\n      <th>Sex</th>\n      <th>Exposures</th>\n      <th>Instrumented by</th>\n      <th>Adjusted for</th>\n      <th>Method</th>\n      <th>OR</th>\n      <th>95% CI</th>\n      <th>P value</th>\n      <th>MR-Egger intercept p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Men</td>\n      <td>Statin mimic</td>\n      <td>1 Statin SNP on LDL-cholesterol</td>\n      <td>Testosterone</td>\n      <td>Inverse variance weighted</td>\n      <td>1.05</td>\n      <td>0.74 to 1.47</td>\n      <td>0.79</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Testosterone</td>\n      <td>125 SNPs on testosterone</td>\n      <td>statin</td>\n      <td>Inverse variance weighted</td>\n      <td>1.11</td>\n      <td>1.04 to 1.20</td>\n      <td>0.003</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Statin mimic</td>\n      <td>1 Statin SNP on LDL-cholesterol</td>\n      <td>Testosterone</td>\n      <td>MR-Egger</td>\n      <td>0.73</td>\n      <td>0.48 to 1.11</td>\n      <td>0.14</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Testosterone</td>\n      <td>125 SNPs on testosterone</td>\n      <td>statin</td>\n      <td>MR-Egger</td>\n      <td>1.09</td>\n      <td>1.02 to 1.17</td>\n      <td>0.02</td>\n      <td>0.005</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Statin mimic</td>\n      <td>6 Statin SNPs on LDL-cholesterol</td>\n      <td>Testosterone</td>\n      <td>Inverse variance weighted</td>\n      <td>1.02</td>\n      <td>0.72 to 1.43</td>\n      <td>0.91</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Testosterone</td>\n      <td>125 SNPs on testosterone</td>\n      <td>statin</td>\n      <td>Inverse variance weighted</td>\n      <td>1.11</td>\n      <td>1.04 to 1.20</td>\n      <td>0.003</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Women</td>\n      <td>Statin mimic</td>\n      <td>1 Statin SNP on LDL-cholesterol</td>\n      <td>Testosterone</td>\n      <td>Inverse variance weighted</td>\n      <td>0.98</td>\n      <td>0.75 to 1.16</td>\n      <td>0.53</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Testosterone</td>\n      <td>254 SNPs on testosterone</td>\n      <td>statin</td>\n      <td>Inverse variance weighted</td>\n      <td>0.96</td>\n      <td>0.90 to 1.04</td>\n      <td>0.33</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Statin mimic</td>\n      <td>1 Statin SNP on LDL-cholesterol</td>\n      <td>Testosterone</td>\n      <td>MR-Egger</td>\n      <td>0.72</td>\n      <td>0.55 to 0.94</td>\n      <td>0.02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Testosterone</td>\n      <td>254 SNPs on testosterone</td>\n      <td>statin</td>\n      <td>MR-Egger</td>\n      <td>0.96</td>\n      <td>0.89 to 1.03</td>\n      <td>0.27</td>\n      <td>0.001</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Statin mimic</td>\n      <td>6 Statin SNPs on LDL-cholesterol</td>\n      <td>Testosterone</td>\n      <td>Inverse variance weighted</td>\n      <td>0.92</td>\n      <td>0.74 to 1.16</td>\n      <td>0.49</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Testosterone</td>\n      <td>254 SNPs on testosterone</td>\n      <td>statin</td>\n      <td>Inverse variance weighted</td>\n      <td>0.97</td>\n      <td>0.90 to 1.04</td>\n      <td>0.36</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_One statin SNP is rs12916, and six statin SNPs additionally included rs5909, rs10066707, rs17238484, rs2006760 and rs2303152 taking into account all their correlations. The unit of LDL-cholesterol is approximately 0.83 mm/L. An effect size of testosterone is approximately, 0.23 nmol/L in women (Haring et al., 2012) and 3.1 nmol/L in men (Mohr et al., 2005)._\n\n### Sex-specific associations of genetically mimicked Anakinra and tocilizumab with testosterone and IHD\n\nGenetically mimicked effects of anakinra increased both the risk of IHD and testosterone in men but not women (Table 4). Genetically mimicked effects of tocilizumab were not clearly associated with testosterone in men or women (Table 4), so were not investigated further. Investigation of whether testosterone mediates the genetically mimicked effect of anakinra on IHD was not possible because sex-specific genetic associations of testosterone SNPs with IL-1Ra from suitably large GWAS are not available.\n\n**Table 4.**\n Mendelian randomization inverse variance weighted estimates for genetically mimicked effects of the anti-inflammatory anakinra raising IL-1Ra (effect size) (Swerdlow et al., 2012) on testosterone (effect size) and ischemic heart disease and for genetically mimicked effects of tocilizumab raising serum IL-6r (ng/ml) (Rafiq et al., 2007) on testosterone in men and women using the UK Biobank .\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Therapy</th>\n      <th>Target</th>\n      <th>Outcome</th>\n      <th># SNPs</th>\n      <th>Measure</th>\n      <th>Estimate</th>\n      <th>95% CI</th>\n      <th>p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Men</td>\n      <td>Anakinra</td>\n      <td>IL-1Ra</td>\n      <td>testosterone</td>\n      <td>2</td>\n      <td>beta</td>\n      <td>0.022</td>\n      <td>0.01 to 0.04</td>\n      <td>0.002</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>IHD</td>\n      <td>2</td>\n      <td>OR</td>\n      <td>1.08</td>\n      <td>1.01 to 1.15</td>\n      <td>0.017</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Tocilizumab</td>\n      <td>IL-6r</td>\n      <td>testosterone</td>\n      <td>1</td>\n      <td>beta</td>\n      <td>0.003</td>\n      <td>\u22120.06 to 0.13</td>\n      <td>0.96</td>\n    </tr>\n    <tr>\n      <td>Women</td>\n      <td>Anakinra</td>\n      <td>IL-1Ra</td>\n      <td>testosterone</td>\n      <td>2</td>\n      <td>beta</td>\n      <td>\u22120.01</td>\n      <td>\u22120.04 to 0.01</td>\n      <td>0.24</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>IHD</td>\n      <td>2</td>\n      <td>OR</td>\n      <td>0.99</td>\n      <td>0.91 to 1.08</td>\n      <td>0.86</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Tocilizumab</td>\n      <td>IL-6r</td>\n      <td>testosterone</td>\n      <td>1</td>\n      <td>beta</td>\n      <td>0.002</td>\n      <td>\u22120.02 to 0.02</td>\n      <td>0.84</td>\n    </tr>\n  </tbody>\n</table>\n\n_SNPs mimicking anakinra are rs6743376 and rs1542176.The SNP mimicking tocilizumab is rs7529229.An effect size of testosterone is approximately, 0.23 nmol/L in women (Haring et al., 2012) and 3.1 nmol/L in men (Mohr et al., 2005)._\n\n## Discussion\n\nConsistent with meta-analysis of RCTs this study provides genetic evidence that statins reduce testosterone in men (Schooling et al., 2013), and adds by showing that statins could partially operate on IHD, in men only, by reducing testosterone, as previously hypothesized (Schooling et al., 2013; Schooling et al., 2014) while having similar protective effects in men and women independent of testosterone. Previous Mendelian randomization studies have shown lower testosterone associated with lower risk of IHD, particularly in men (Schooling et al., 2018a; Luo et al., 2019; Mohammadi-Shemirani et al., 2019). Conversely, consistent with an RCT (Ebrahimi et al., 2018), this study also provides genetic validation that the anti-inflammatory anakinra, targeting IL-1Ra, increases testosterone in men, and is consistent with a previous Mendelian randomization study showing anakinra increases IHD (Interleukin 1 Genetics Consortium, 2015), but adds by showing why these associations might occur and that they may be specific to men.\n\nA more marked association of testosterone with IHD in men than women (Table 2) is consistent with sex differences in biology, where testosterone is the main sex hormone in men and is much higher in men than in women. The associations of genetically mimicked effects of statins, PCSK9 inhibitors or ezetimibe on testosterone is consistent with the evidence available (Schooling et al., 2013; Ooi et al., 2015; Krysiak et al., 2015) and their mechanisms of action. Specifically, statins inhibit cholesterol synthesis, while PCSK9 inhibitors enable greater clearance of cholesterol, through increasing LDL-receptors, while ezetimibe reduces uptake of dietary cholesterol (Ray et al., 2019; Michos et al., 2019). However, some cells, such as Leydig cells, use de novo cholesterol synthesis to generate steroids, which can be reduced by statins (Shimizu-Albergine et al., 2016). Concerns about statins compromising androgen production pre-date the marketing of statins (Farnsworth et al., 1987; MacDonald et al., 1988). Beneficial immunosuppressive effects of androgens in rheumatoid arthritis have long been known (Cutolo et al., 1991), making androgen reduction a plausible mode of action for therapies, such as anakinra, whose primary indication is rheumatoid arthritis.\n\nThese findings may seem counter-intuitive given the essential role of testosterone in masculinity and reproduction. However, in 2015 the Food and Drug Administration in the United States required labelling changes for all testosterone prescriptions to warn of the risk of heart attacks and stroke on testosterone, although no sufficiently large RCT of testosterone administration has been conducted to confirm these effects (Onasanya et al., 2016). The Endocrine Society has also recommended caution in the use of testosterone (Bhasin et al., 2018). Meta-analysis of RCTs suggests androgen deprivation therapy reduces all-cause mortality, but is too small to quantify effects on specific diseases beyond prostate cancer (Nguyen et al., 2011). As such, our Mendelian randomization findings of the effects of testosterone have some consistency with the limited experimental evidence. In addition, our findings are consistent with well-established evolutionary biology theory, that\u00a0is reproductive success may be at the expense of longevity, possibly in a sex-specific manner, impling that central drivers of the reproductive axis, as well as androgen production and catabolism, and their environmental cues may be relevant to IHD (Schooling, 2016; Schooling and Ng, 2019; Figure 2) encompassing the relations tested here (Figure 1). Notably, upregulation of indicators of plentiful living conditions, such as insulin, appear to cause IHD, particularly in men (Zhao et al., 2019), likely via gonadotropin releasing hormone (GnRH) (Schooling and Ng, 2019). Similarly, fatty acids may affect GnRH (Tran et al., 2016; Matsuyama and Kimura, 2015). In contrast, indicators of adversity, such as endotoxins promote an inflammatory response, involving interleukins, which suppresses the reproductive axis (Kalra et al., 1998) and thereby testosterone (Tremellen et al., 2018), which may be reversed by anakinra possibly outweighing the benefits for IHD of suppressing inflammation (Tardif et al., 2019). Statins, in contrast reduce androgen production, while agents that suppress androgen catabolism, such as rofecoxib, have also had unexpectedly adverse effects on IHD (Schooling, 2016). Mechanisms by which androgens might cause IHD have not been extensively investigated, but likely involve coagulation and red blood cell attributes. Several haemostatic and thrombotic factors, such as thromboxane A2 (Pignatelli et al., 2012; Ajayi and Halushka, 2005), endothelin-1 (Polderman et al., 1993; van Kesteren et al., 1998; Sahebkar et al., 2015), nitric oxide (Pignatelli et al., 2012; Rosselli et al., 1998) and possibly thrombin (Orsi et al., 2019; Ferenchick et al., 1995), may be driven by androgens and likely play a role in IHD (Schooling et al., 2018b; Zhao, 2018; Nikpay et al., 2015). Von Willebrand factor (Sahebkar et al., 2016) and asymmetric dimethylarginine (Serban et al., 2015) are also modulated by statins and may cause IHD (Aday and Ridker, 2018; Au Yeung et al., 2016), whether they are driven by testosterone is unknown. Several red blood cell attributes are affected by androgens, from reticulocytes to hematocrit (Fern\u00e1ndez-Balsells et al., 2010; Kanias et al., 2016), but exactly which causes IHD is unclear, although reticulocytes are a possibility (Astle et al., 2016). Currently, comprehensive genetic validation of these pathways is hampered by the lack of availability of large sex-specific genome wide association studies (GWAS) of cytokines and coagulation factors.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58567/elife-58567-fig2-v2.jpg)\n\n**Figure 2.:** (Key: GnRH: gonadotropin releasing hormone, RBC: red blood cell, LDL: low density lipoprotein).\n\nDespite providing information that may be relevant to the performance of statins, and to the development of other therapies to protect against cardiovascular disease (Schooling, 2017), some limitations of this study exist. First, valid instruments should fulfill three assumptions, that\u00a0is relate strongly to the exposure, not be associated with potential confounders and satisfy the exclusion restriction assumption. The F-statistics were\u00a0>10. Despite high conditional F-statistics for testosterone the conditional F-statistics for the genetic mimics of statins were quite low and the Q-statistics for instrument validity were high suggesting pleiotropy, which we addressed by using multivariable MR-Egger. The associations with testosterone in women were not adjusted for factors, such as menopausal status, hormone use and history of oophorectomy, which could result in imprecision and weaker instruments. The SNPs used to mimic effects of statins, PCSK9 inhibitors and ezetimibe are well established (Ference et al., 2019), and in genes that harbor the target of each lipid modifier (HMGCR, PCSK9 and NCP1L1 respectively). We did not include body mass index (BMI) as a risk factor explaining the effect of statins on IHD, because statins increase BMI (Swerdlow et al., 2015) and decrease the risk of IHD, so including them in the multivariable analysis may inflate the effect of mimicking statins on IHD, rather than explaining part of their effect on IHD. The SNPs mimicking effects of the anti-inflammatory anakinra have been validated as increasing IL-1Ra (Interleukin 1 Genetics Consortium, 2015), and the SNP used to mimic effects of tocilizumab is well-established as affecting IL-6r (Swerdlow et al., 2012). Testosterone\u2019s effects on IHD in men could be via adiposity, insulin or LDL-cholesterol rather than via testosterone. However, consistent with a previous MR study, we found testosterone did not affect BMI in men (Eriksson et al., 2017), we also found little evidence that testosterone in men affected LDL-cholesterol (data not shown). We could not test whether testosterone in men affects insulin because of the lack of an insulin GWAS including the X chromosome. Sex-specific genetic associations were used throughout with exception of the genetic mimics of effects of anakinra and tocilizumab on IL1Ra and IL-6r respectively. However, inflammation operating on the reproductive axis would be expected to have sex-specific effects not sex-specific drivers. We selected between correlated SNPs based on p-values which is relatively arbitrary, and the estimates could be sensitive to the choice of SNPs. Repeating the analysis using a larger number of correlated SNPs, where possible, taking into account their correlation, gave a similar interpretation. MR studies can be confounded by population stratification. However, we used genetic associations from GWAS mainly comprising people of white British ancestry with genomic control. Functions of each SNP predicting the exposures are not all fully understood, so we cannot rule out the possibility that the SNPs are linked with IHD through other pathways although we used sensitivity analysis.\n\nWe used SNPs predicting testosterone, but not other exposures, obtained from the same study as the genetic effects on IHD. However given the estimates for testosterone were largely obtained from non-cases, the overlap unlikely introduced substantial bias (Burgess et al., 2016). Canalization, that\u00a0is buffering of genetic factors during development, may occur however; whether it does so is unknown. Our findings, largely in Europeans, may not be applicable to other populations. However, causes are unlikely to act differently in different populations, although the causal mechanisms may not be as relevant in all settings (Lopez et al., 2019). The SNPs mimicking effects of statins, PCSK9 inhibitors and ezetimibe were previously selected for their relations with LDL-cholesterol and on functional grounds (Ference et al., 2019), assuming the lipid modifiers act by action on lipids (Ference et al., 2019), so it is possible that relevant SNPs might have been discarded if they work through other mechanisms independent of lipids. It is also possible that the SNPs mimicking lipid modifiers might act via a different lipid trait, such as apoB (Richardson et al., 2020). The SNPs mimicking effects of anakinra and tocilizumab were similarly selected. Replication based on genetic instruments functionally relevant to all the exposures would be ideal. However, we used the most recent, published genetic instruments for testosterone (Ruth et al., 2020). Replication based on another large sex-specific IHD GWAS where the IHD cases are not from the same study as the testosterone instruments, would be ideal. However, sex-specific summary statistics are not available for large existing IHD GWAS, such as CARDIoGRAM (Nikpay et al., 2015). Moreover, the UK Biobank has the advantage of being very intensively genotyped and including the X chromosome, which is important for testosterone, but is not usually included in publicly available summary statistics. Lack of replication is a limitation of this study. Lastly, Mendelian randomization assesses the lifelong effects of an endogenous exposure rather than short-term effects of an interventions assessed in an RCT. Our estimates give an indication of the role of the exposures rather than the exact effects of the corresponding interventions. Nevertheless our estimates for statins on IHD are comparable with meta-analyses of statin trials considering similar outcomes (Fulcher et al., 2015).\n\nHere, we present a hypothesis driven study examining the role of testosterone in mediating the effect of specifically statins in IHD, particularly in men. Future work could encompass a comprehensive sex-specific multivariable MR to confirm the role of sex hormones and sex hormone binding globulin in IHD as well as any mediation of their effects by key lipids, such as LDL-cholesterol or apoB. This work would be facilitated by the development of published genetic instruments for estrogen in women. Future work could also encompass assessing whether any other drugs that reduce cardiovascular disease, such as canakinumab (Ridker et al., 2017), also impact testosterone.\n\nTaken together these complimentary findings for statins and anakinra raise the possibility that modulating testosterone, by whatever means, is a relevant feature for modulating IHD in men, with potential relevance to the development of new interventions, side-effects of existing interventions, re-purposing and appropriate use. Statins lowering testosterone could also be relevant to the muscle weakness or pain experienced on statins (Collins et al., 2016). Recognition that statins lower testosterone might also provide greater impetus for investigation of their role in other relevant conditions, such as prostate cancer (Alfaqih et al., 2017). Conversely, statins and anakinra did not clearly affect testosterone in women (Table 1) nor did testosterone mediate the effect of statins on IHD in women (Table 3). These differences by sex highlight the need for sex-specific approaches to IHD prevention and management, specifically in terms of the use of statins and investigation more broadly of causes of IHD.\n\n### Conclusion\n\nGenetic variants mimicking effects of statins and anakinra had opposite effects on testosterone and IHD in men, consistent with the effects of statins on IHD in men being partially mediated by testosterone. This insight that the pleiotropic effects of statins could be mediated by testosterone in men has implications for the use of existing interventions to prevent and treat IHD, the development of new interventions for IHD and the re-use of statins for other androgen related conditions. Genetic confirmation that anakinra raises testosterone suggests its use in rheumatoid arthritis might have cardiovascular side-effects, particularly in men. It also highlights the importance of considering whether vulnerability to major diseases and interventions to promote lifespan need to be sex-specific.\n\n## Materials and methods\n\n### Genetic predictors mimicking effects of lipid and interleukin modifiers\n\nEstablished genetic variants mimicking effects of statins, PCSK9 inhibitors and ezetimibe were taken from published sources (Ference et al., 2019) which selected SNPs from genes encoding proteins of the targets of each lipid modifier (HMGCR for statins, PCSK9 for PCSK9 inhibitors and NCP1L1 for ezetimibe) that lowered LDL-cholesterol. Genetic effects mimicking statins, PCSK9 inhibitors and ezetimibe were expressed in sex-specific effect sizes of LDL-cholesterol reduction taken from the largest available sex-specific GWAS summary statistics, that\u00a0is the UK Biobank (http://www.nealelab.is/uk-biobank). The study was restricted to people of white British ancestry adjusted for the first 20 principal components, age, and age2. In the main analysis for each lipid modifier, we only used independent (r2\u00a0<0.05) SNPs most strongly associated with LDL-cholesterol. We obtained correlations between SNPs for each lipid modifier based on the 1000 Genomes catalog from LDlink (https://ldlink.nci.nih.gov). In sensitivity analysis, we used all the relevant SNPs for each lipid modifier, along with a matrix of their correlations. Established genetic variants mimicking effects of anakinra and tocilizumab and their effects on IL-1Ra and IL-6r respectively were also taken from published sources (Swerdlow et al., 2012; Rafiq et al., 2007).\n\n### Sex-specific genetic predictors of testosterone\n\nStrong (p-value<5\u00a0\u00d7\u00a010\u22128), independent (r2\u00a0<0.05), sex-specific genetic predictors of testosterone were extracted from a published genome wide association study (GWAS) based on the UK Biobank and replicated in three independent studies (CHARGE Consortium, Twins UK and EPIC-Norfolk) (Ruth et al., 2020; Sinnott-Armstrong et al., 2019). Genetic associations with testosterone in this study were adjusted for genotyping chip/release of genetic data, age at baseline, fasting time and ten genetically derived principal components (Ruth et al., 2020). We used all 125 genetic variants given for bioavailable testosterone, hereafter testosterone, in men and all 254 genetic variants given for testosterone in women, as previously (Zhao and Schooling, 2020), because these had little correlation with sex hormone binding globulin (0.05 in men and 0.06 in women) (Ruth et al., 2020).\n\n### Sex-specific genetic associations with IHD\n\nSex-specific genetic associations with IHD were taken from the UK Biobank individual data after excluding those with inconsistent self-reported and genotyped sex, excess relatedness (more than 10 putative third-degree relatives), abnormal sex chromosomes (such as XXY), or poor-quality genotyping (heterozygosity or missing rate\u00a0>1.5%). The sex-specific associations with IHD obtained using logistic regression were adjusted for the first 20 principal components, age, and assay array. IHD was based on self-report at baseline, subsequent hospitalization diagnoses (primary or secondary) of International Classification of Diseases (ICD) 9 410\u20134 or ICD10 I20-5 and death registration causes (primary or secondary) of ICD10 I20-5 up until December 2019.\n\n### Statistical analysis\n\nThe F-statistic was used to assess instrument strength, obtained using an approximation (mean of square of SNP-exposure association divided by square of its standard error) (Bowden et al., 2016a). A conventional threshold for the F-statistic is 10. SNPs with an F-statistic\u00a0<10 were dropped.\n\nSteiger filtering was used to check the directionality between testosterone and IHD. (Hemani et al., 2017) Sex-specific estimates of the associations of genetically predicted exposures (i.e., genetically mimicked effects of statins, PCSK9 inhibitors, ezetimibe, anakinra and tocilizumab) with testosterone and IHD, as well as estimates of the associations of genetically predicted testosterone with IHD were obtained by combining SNP-specific Wald estimates (SNP on outcome divided by SNP on exposure) using inverse variance weighting (IVW) with multiplicative random effects (Burgess et al., 2013). Multivariable MR was used to assess sex-specific associations of genetically predicted exposures with IHD allowing for testosterone, accounting for correlations between SNPs on the same chromosome obtained from LDlink. In the multivariable MR, we pooled the genetic instruments mimicking statins and the genetic instruments for testosterone together, extracted their associations with LDL-cholesterol and testosterone and fitted one multivariable model. We estimated the Sanderson-Windmejier multivariable conditional F-statistic (Sanderson and Windmeijer, 2016) to obtain a lower bound of the strength for each instrument conditional on the other exposure, and the Q statistics to asses pleiotropy, using the WSpiller/MVMR package (Sanderson et al., 2019). Given this analysis is multivariable by design with few genetic variants available to mimic the effects of statins, we used the multivariable MR-Egger estimates (Rees et al., 2017).\n\n### Sensitivity analysis\n\nWhere possible we used methods with different assumptions to assess the validity of the univariable MR estimates from IVW, which assumes balanced pleiotropy. MR-Egger is valid as long as the instrument strength independent of direct effect assumption holds (Bowden et al., 2015). We also used a weighted median which gives valid estimates when more than 50% of information comes from valid SNPs (Bowden et al., 2016b). However, for exposures instrumented by correlated SNPs we did not give the weighted median or MR-Egger estimates because of concerns about their interpretability (Burgess and Thompson, 2017).\n\nGiven this is a hypothesis driven study, with a positive control, we used a statistical significance level of 0.05. All statistical analysis was conducted using R version 3.6.1 (The R Foundation for Statistical Computing, Vienna, Austria). The MendelianRandomization R package was used for the MR estimates. Estimates of genetic associations were taken from publicly available UK Biobank summary statistics, except the associations with IHD which were based on individual level genetic associations from the UK Biobank obtained under application #42468. All UK Biobank data were collected with fully informed consent.\n",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "d8e7fef3-6d9d-4d44-a408-07b05ad42f69",
+      "submission_id": "dbaeddf3-76da-4685-a5b2-d130b9505dca",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward D Janus, University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58567.sa1](https://doi.org/10.7554/eLife.58567.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors performed a Mendelian randomization analysis of statin, PCSK9 inhibitor and ezetimibe use on ischemic heart disease to address a clinically relevant question \u2013 could the apparent additional benefits of statins and other similar treatments, over and above lowering lipids, be mediated by favourable effects on testosterone levels? They found a potentially interesting link between statins and testosterone \u2013 genetic variants in the gene encoding the HMGcoR receptor that are known to alter LDL-cholesterol levels.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Pleiotropic effects of statins on ischemic heart disease: a Mendelian Randomization study in the UK Biobank\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Matthias Barton as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Timothy Frayling (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nTitle: Please modify the title to comply with eLife requirements. The title should not exceed 120 characters. Two part titles containing a colon punctuation mark (\":\") are not allowed.\n\nSummary:\n\nThis is a neat study using genetics to ask a clinically relevant question \u2013 could the apparent additional benefits of statins and other similar treatments, over and above lowering lipids, be mediated by favourable effects on testosterone levels? The question becomes a little more complicated in that higher levels of testosterone tend to be beneficial for men's metabolic health but adverse for women and so the authors have used UK Biobank data, where it is easy to stratify analyses by sex.\n\nThe authors performed a Mendelian randomization (MR) analysis of statin, PCSK9 inhibitor and ezetimibe use on ischemic heart disease (IHD), and if these effects were mediated by testosterone in men or women using univariable and multivariable MR.\n\nThey have found a potentially interesting link between statins and testosterone \u2013 genetic variants in the gene encoding the HMGcoR receptor that are known to alter LDL-cholesterol levels (And so we know they are very good mimics for the on target effects of statins) and testosterone levels in men. The direction is that the alleles associated with lower LDL-cholesterol and therefore mimic statins also lower testosterone. There were no links for the other genes encoding the other targets of lipid lowering therapy. In addition, they assessed whether the genetic variants corresponding to anti-inflammatory effects of anakinra or tocilizumab use had effects on testosterone and IHD. The topic is very interesting.\n\nRevisions for this paper:\n\n1) The main finding is that, when adjusting for testosterone levels, the protective benefit of statins via the HMGcoR on heart disease attenuates from 0.54 odds ratio to 0.73 in men (when using the MR egger approach. There are wide 95% CIs around these estimates but the results imply that the testosterone effect is similar to the lowering LDL-cholesterol effect, which is extremely counter intuitive given that we know about LDL-cholesterol and heart disease. The reliance on a sensitivity analysis \u2013 MR egger \u2013 when the main analysis showed evidence of pleiotropy means the results could be very sensitive to slight differences in the parameters used. (SNPs and models).\n\n2) A second concern is that the genetic variants in HMGCoR are associated with BMI and adiposity (see Swerdlow et al. Lancet publication using the HMGcoR SNPs to show an association with diabetes) whereas the others are less so. The authors need to assess the potential for the effect being mediated via BMI/adiposity rather than testosterone. Such a mechanism would be consistent with sex differences because women are at lower risk of heart disease than men for a given BMI. Likewise, many of the testosterone SNPs are highly pleiotropic, with many primarily associated with adiposity and insulin resistance and lipid levels. My concern is that the pleiotropy will lead to false inferences. The authors have partially addressed this with some approaches such as MR-Egger, but these are not infallible. The multivariable MR needs to include the adiposity measures. multivariable MR with adiposity measures, steiger filtering of SNPs that have larger effects on metabolic potentially mediating traits than they do on lipids or testosterone could be alternative approaches to try.\n\n3) It would be relevant to see the results replicated in a two sample MR setting where the IHD cases are not from the same dataset as the testosterone and LDL SNPs. The heart disease GWAS consortia have not analysed separately by sex, which makes this very difficult, but there may be other large studies where this is possible ? If this cannot be done readily it should be discussed and noted as a limitation.\n\n4) All of this means that the conclusion that \"statins partially operate on IHD by reducing testosterone in men\" is likely overstated.\n\n5) A further major concern is the selection of SNPs in vicinity of the HMGCR, NCP1L1 and PCSK9 genes as instruments for the statin, PCSK9 and ezetimibe use, respectively. For example, a lookup of the instrument included for ezetimibe use (rs10260606) in the publicly available sex-combined GWAS on ezetimibe treatment (http://www.nealelab.is/uk-biobank) resulted in an association p-value of 0.02 being a rather weak instrument. Also in the referenced publication of Ference et al., 2019, that was used as basis for the instrument selection, these SNPs were (to my understanding) selected to assess potential drug targets, and not to reflect medication use.\n\n6) Which statistical model was used to calculate the sex-specific genetic associations with IHD (I assume logistic regression)? Please provide the number of cases and controls per sex-stratum that were finally included in this association analysis also in the main text (not only in the Abstract).\n\nPlease provide the p-value level that was applied to declare significance of the results.\n\n7) By conducting a sex-stratified analyses, have the authors considered the impact of collider bias. As if the genetic instruments are associated with sex and the outcome measures are also associated with sex, by stratifying based on a common cause of the exposure and outcome, a distorted/erroneous association may occur.\n\n8) Please give more details about multivariate MR analysis. E.g. did you pool the genetic proxies for statin and testosterone all together and then extracted the associations of all these SNPs with LDL-cholesterol and testosterone and fitted it in one model?\n\nRevisions expected in follow-up work:\n\n1) As the authors aim to investigate sex-specific benefits of statin therapies, why only focus on testosterone. I think you should also look at 17\u03b2-oestradiol and SHBG (both available in UKBB), and conduct a multivariate MR to determine which would be the independent causal factor for IHD among the three (e.g. PMID: 32203549) and then forward the independent hormones/proteins in a multivariate model with LDL-cholesterol or apoB (drug targets of lipid lowering drugs) to determine whether these hormones would exert independent roles in contributing to IHD beyond the lipids. If this is the case, then it makes sense to further determine whether the genetic instruments of the drug targets show a sex-specific association with the sex hormones. This issue could be addressed in the Discussion.\n",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "36ceb5ab-4941-4f67-9d30-cc1aad21b8ad",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C1",
+      "claim": "Statins are the first-line lipid modifier for reducing cardiovascular morbidity and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Statins are the first-line lipid modifier for reducing cardiovascular morbidity and mortality (Ray et al., 2019; Michos et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ray et al., 2019 and Michos et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "e8357a25-8356-49ed-bdd1-576c1ef12ff5",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C2",
+      "claim": "Statins have long been suspected of having additional beneficial effects beyond lipid modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Statins have long been suspected of having additional beneficial effects beyond lipid modulation (Schonbeck and Libby, 2004), such as on inflammation (Schonbeck and Libby, 2004), another potential target for reducing cardiovascular disease (Aday and Ridker, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schonbeck and Libby, 2004 and Aday and Ridker, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "e7ffa174-6445-4b50-a9f2-e6967c3c5d68",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C3",
+      "claim": "Meta-analysis of randomized controlled trials suggests statins are more effective at reducing mortality than PCSK9 inhibitors or ezetimibe.",
+      "claim_type": "EXPLICIT",
+      "source": "Meta-analysis of randomized controlled trials (RCTs) suggests statins are more effective at reducing mortality than proprotein convertase subtilisin/kexin type 9 (PCSK9) inhibitors or ezetimibe (Schmidt et al., 2017; Khan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schmidt et al., 2017 and Khan et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "6f6c8ef5-f4cd-488d-a1a5-add55e4582dd",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C4",
+      "claim": "The apparent greater effectiveness of statins compared to PCSK9 inhibitors may stem from differences in trial design, such as shorter duration of PCSK9 inhibitor trials.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these findings may be more apparent than real, stemming from differences in trial design, such as shorter duration of the PCSK9 inhibitor trials (Khan et al., 2018), the predominance of industry funded statin trials (Hobbs et al., 2016) or the difficulty of interpreting trials of 'soft' events when the treatment affects diagnostically relevant criteria, that is lipid levels (Schooling and Zhao, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Khan et al., 2018, Hobbs et al., 2016, and Schooling and Zhao, 2019",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "12fce912-36f1-4fcf-8645-b0da7e967555",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C5",
+      "claim": "A systematic agnostic scan of metabolic profile in a trial of statins compared to a PCSK9 inhibitor found few differences.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate this anomaly, a previous study conducted a systematic agnostic scan of metabolic profile in a trial of statins compared to a PCSK9 inhibitor, which found few differences (Sliz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sliz et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "ca32cc48-fe19-4dda-af3b-5a352fcd48bc",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C6",
+      "claim": "Characterization of the metabolic effects of statins suggested extensive effects on lipids and fatty acids.",
+      "claim_type": "EXPLICIT",
+      "source": "While characterization of the metabolic effects of statins suggested extensive effects on lipids and fatty acids (W\u00fcrtz et al., 2016);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to W\u00fcrtz et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "9c05c825-ecd8-4d20-a7b1-4f4cf4896524",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C7",
+      "claim": "Male hormones have previously been proposed as contributing to statin's effectiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "these investigations were not able to include a factor which has previously been proposed as contributing to statin's effectiveness, that is effects on male hormones (Schooling et al., 2013),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schooling et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "e7dc2db0-b086-4e4e-b38a-e14ddaa0f892",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C8",
+      "claim": "Questions have been raised as to whether statins are as effective in women as men.",
+      "claim_type": "EXPLICIT",
+      "source": "although questions have been raised as to whether statins are as effective in women as men (Plakogiannis and Arif, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Plakogiannis and Arif, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "97d809cf-f34e-4e23-8931-36b075215e4b",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C9",
+      "claim": "Meta-analysis of available trial evidence suggests similar relative benefits of LDL-cholesterol reduction by statins for men and women.",
+      "claim_type": "EXPLICIT",
+      "source": "However, meta-analysis of the available trial evidence suggests similar relative benefits of LDL-cholesterol reduction by statins for men and women (Fulcher et al., 2015),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fulcher et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "bf0a21cd-d534-4002-bb6c-8c0d1b265170",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C10",
+      "claim": "Statin trials mainly concern men (73.2%), which may preclude detection of important sex differences.",
+      "claim_type": "EXPLICIT",
+      "source": "although the trials mainly concern men (73.2%) which may preclude detection of important sex differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the composition of trial populations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "994e9773-4a4b-4bd8-88b2-06fce60fc4eb",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C11",
+      "claim": "Men are at substantially higher risk of cardiovascular disease than women, giving larger absolute benefits in men than women at the same reduction in relative risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Men are also at substantially higher risk than women (Ezzati et al., 2015) giving larger absolute benefits in men than women at the same reduction in relative risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ezzati et al., 2015 and inference about absolute vs relative risk",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "45cfa485-037f-48bb-8e4f-a64d13efbfb7",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C12",
+      "claim": "RCTs are not usually designed or powered to test mediating mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "RCTs are not usually designed or powered to test mediating mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about RCT design",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "6511920c-e992-47a0-ad9b-7586b088c658",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C13",
+      "claim": "Trials of statins on cardiovascular disease outcomes designed to be sex-specific are lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, trials of statins on cardiovascular disease outcomes designed to be sex-specific are lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of existing trial literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "bf3a9b78-8c64-4030-b0de-daf101e1cd05",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C14",
+      "claim": "Mendelian randomization is an observational study design that avoids confounding by taking advantage of the random allocation of genetic material at conception.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess a potential pathway by which statins might additionally operate, we used Mendelian randomization (MR), an observational study design that avoids confounding by taking advantage of the random allocation of genetic material at conception (Smith and Ebrahim, 2003),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith and Ebrahim, 2003",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "abfcfd96-d453-400f-8ebb-e95556fa44c6",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C15",
+      "claim": "Random allocation at conception avoids selection bias as long as few deaths have occurred between randomization and recruitment due to exposure, outcome, or competing risk of the outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "This random allocation at conception also avoids selection bias as long as few deaths have occurred between randomization and recruitment due to exposure, outcome, or other causes, that is competing risk, of the outcome (Schooling et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schooling et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "94c87989-1328-4e8a-991b-10a5d28ae2fc",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C16",
+      "claim": "The study included 179,918 men with 25,410 IHD cases and 212,080 women with 12,511 IHD cases from the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "using the UK Biobank (Collins, 2012) to investigate whether testosterone mediated any of the effects of statins, PCSK9 inhibitors or ezetimibe on IHD in men or women using univariable and multivariable MR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the UK Biobank study population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "d51095bc-eae3-4fe6-87a1-219c28c2f871",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C17",
+      "claim": "Some anti-inflammatories have opposite effects on male hormones compared to statins, specifically the interleukin one receptor antagonist (IL-1Ra), anakinra.",
+      "claim_type": "EXPLICIT",
+      "source": "As a further test, given some anti-inflammatories have also been shown to have opposite effects on male hormones compared to statins, specifically the interleukin one receptor antagonist (IL-1Ra), anakinra (Ebrahimi et al., 2018),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ebrahimi et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "5a4e8e6d-8471-4889-9273-bde637490926",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C18",
+      "claim": "The six SNPs mimicking effects of statin from HMGCR were all correlated (r2 >0.13).",
+      "claim_type": "EXPLICIT",
+      "source": "The six single neucleotide polymorphisms (SNPs) mimicking effects of statin (rs12916, rs5909, rs10066707, rs17238484, rs2006760 and rs2303152 from HMGCR) (Ference et al., 2019) were all correlated (r2 >0.13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data analysis showing correlation between SNPs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "57e5fe94-42c6-4bd1-bda4-955562a55310",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C19",
+      "claim": "In the main analysis, only the lead SNP rs12916 was used to mimic statin effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In the main analysis we used only the lead SNP, rs12916.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological choice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "efeb6dd4-a6d8-4036-95e6-083f153065e1",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C20",
+      "claim": "Three SNPs (rs11206510, rs2149041 and rs7552841) independently and most strongly associated with LDL-cholesterol were used to mimic PCSK9 inhibitor effects in the main analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 7 SNPs mimicking effects of PCSK9 inhibitors (rs11206510, rs2149041, rs7552841, rs10888897, rs2479394, rs2479409 and rs562556 from PCSK9) (Ference et al., 2019), the three independently (r2 <0.05) and most strongly associated with LDL-cholesterol (rs11206510, rs2149041 and rs7552841) were used in the main analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of SNP selection methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "6e0f613c-c954-4dd3-867f-225f385dc1d1",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C21",
+      "claim": "Two SNPs for ezetimibe (rs2300414 and rs10234070) were discarded because their F-statistic for LDL-cholesterol was <10.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 5 SNPs mimicking effects of ezetimibe (rs10260606 (proxy of rs2073547, r2 = 0.99), rs2300414, rs10234070, rs7791240, rs217386 from NCP1L1) (Ference et al., 2019), two SNPs (rs2300414 and rs10234070) were discarded because their F-statistic for LDL-cholesterol was <10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of SNP filtering based on F-statistic threshold",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "19fd6047-2477-4e01-82f6-866742bdbf92",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C22",
+      "claim": "rs2073547 was used in the main analysis for ezetimibe because it had the strongest association with LDL-cholesterol.",
+      "claim_type": "EXPLICIT",
+      "source": "rs2073547 was used in the main analysis because it had the strongest association with LDL-cholesterol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of SNP selection based on association strength",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "88c5a477-9dfa-4691-a910-e5fc3dc14b30",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C23",
+      "claim": "The F-statistics for SNPs used to genetically mimic the effects of statins, PCSK9 inhibitors and ezetimibe were all >10 in men and women.",
+      "claim_type": "EXPLICIT",
+      "source": "The F-statistics for SNPs used to genetically mimic the effects of statins, PCSK9 inhibitors and ezetimibe were all >10 in men and women (Supplementary file 1a),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis showing instrument strength",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "a8a30edc-0bd1-43c9-9826-ff6360b1f172",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C24",
+      "claim": "The F-statistics for the SNPs used to mimic the effects of anakinra and tocilizumab were greater than 10.",
+      "claim_type": "EXPLICIT",
+      "source": "as were the F-statistics for the SNPs used to mimic the effects of anakinra and tocilizumab (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis showing instrument strength",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "03e954d4-7f03-416e-9183-69d4cc457f60",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C25",
+      "claim": "The F-statistics for the 125 and 254 SNPs predicting testosterone in men and women were all greater than 10, with mean 128.6 and 83.3, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The F-statistics for the 125 and 254 SNPs predicting testosterone in men and women were all greater than 10, with mean 128.6 and 83.3, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis showing instrument strength",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "03f745c8-3c84-4c7d-806b-32457831bf9d",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C26",
+      "claim": "Genetically mimicked effects of statins reduced testosterone in men but not women.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically mimicked effects of statins reduced testosterone in men but not women (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mendelian randomization analysis results shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "7a00d282-8c9e-4929-9d4a-eb8cb8f89b7e",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C27",
+      "claim": "Genetically mimicked effects of PCSK9 inhibitors did not affect testosterone in men or women.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically mimicked effects of PCSK9 inhibitors and of ezetimibe did not affect testosterone in men or women (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mendelian randomization analysis results shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "977b7711-2243-4ecd-be38-467fb24ee1d7",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C28",
+      "claim": "Genetically mimicked effects of ezetimibe did not affect testosterone in men or women.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically mimicked effects of PCSK9 inhibitors and of ezetimibe did not affect testosterone in men or women (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mendelian randomization analysis results shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "efd9f9d7-8592-4374-a691-083e0e3b0472",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C29",
+      "claim": "Genetically mimicked effects of statins reduced the risk of IHD in men and possibly women using IVW.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically mimicked effects of statins reduced the risk of IHD in men and possibly women (Table 2) using IVW.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mendelian randomization analysis results shown in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "c2f6e68a-7451-428f-b760-7878b9e8f379",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C30",
+      "claim": "Steiger filtering indicated directionality from testosterone to IHD in men and women.",
+      "claim_type": "EXPLICIT",
+      "source": "Steiger filtering indicated directionality from testosterone to IHD in men and women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis using Steiger filtering method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "a8184da7-c98e-4a78-80d4-1cfdcb473e0f",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C31",
+      "claim": "Genetically predicted testosterone was positively associated with IHD in men.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically predicted testosterone was positively associated with IHD in men, but was not significantly associated with IHD in women, with similar estimates using IVW, the weighted median and MR-Egger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mendelian randomization analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "a8916568-e2e7-431f-b1cb-b4fbe2e59e85",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C32",
+      "claim": "Genetically predicted testosterone was not significantly associated with IHD in women.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically predicted testosterone was positively associated with IHD in men, but was not significantly associated with IHD in women, with similar estimates using IVW, the weighted median and MR-Egger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mendelian randomization analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "34d55f39-4b3d-4b19-98e9-4584d26d62f9",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C33",
+      "claim": "In men, the multivariable estimates for genetically mimicked effects of statins on IHD allowing for testosterone were attenuated compared to the univariable estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering genetically mimicked effects of statin together with genetically predicted testosterone, in men the multivariable estimates for genetically mimicked effects of statins on IHD allowing for testosterone we attenuated (Table 3) compared to the univariable estimates for effects of statins on IHD (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of multivariable and univariable MR results shown in Tables 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "2370c6f1-c073-4493-9b6a-cb313633716a",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C34",
+      "claim": "The multivariable MR-Egger estimates for genetically mimicked effects of statins on IHD, allowing for testosterone, were very similar for men and women (odds ratio 0.72, 95% confidence interval 0.57 to 0.90 for men and women meta-analyzed together).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the multivariable MR-Egger estimates for genetically mimicked effects of statins on IHD, allowing for testosterone, were very similar for men and women (odds ratio 0.72, 95% confidence interval 0.57 to 0.90 for men and women meta-analyzed together).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Meta-analysis of multivariable MR-Egger estimates",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "08d526ad-6f5d-4966-b62a-a037b2f9ee5c",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C35",
+      "claim": "The multivariable associations of genetically predicted testosterone with IHD in men and women, allowing for genetically mimicked statins, were very similar to the respective univariable estimates for men and women.",
+      "claim_type": "EXPLICIT",
+      "source": "The multivariable associations of genetically predicted testosterone with IHD in men and women, allowing for genetically mimicked statins, (Table 3) were very similar to the respective univariable estimates for men and women (Table 2),",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of multivariable and univariable MR results shown in Tables 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "4b42036c-4fc3-434d-97df-35da3c4af7ed",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C36",
+      "claim": "The multivariable associations of genetically predicted testosterone with IHD differed by sex (z-test p-value 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "but differed by sex (z-test p-value 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test comparing associations between sexes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "a513432f-2e90-425b-b517-27fd2b0a665b",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C37",
+      "claim": "The conditional F-statistics were 58.2 (men) and 68.5 (women) for testosterone and 3.5 (men) and 6.8 (women) for effects of genetically mimicked statins.",
+      "claim_type": "EXPLICIT",
+      "source": "The conditional F-statistics were 58.2 (men) and 68.5 (women) for testosterone and 3.5 (men) and 6.8 (women) for effects of genetically mimicked statins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of instrument strength in multivariable setting",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "b668a08c-cd23-4dee-9760-82d46abdcab0",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C38",
+      "claim": "The Q statistics for instrument validity were significant (212.5 in men and 323.1 in women).",
+      "claim_type": "EXPLICIT",
+      "source": "The Q statistics for instrument validity were significant (212.5 in men and 323.1 in women),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test for pleiotropy",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "adce9a76-eb35-494e-9b0e-b0db0af6193a",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C39",
+      "claim": "The multivariable MR-Egger intercepts were significant in men and women, substantiating the use of the MR-Egger estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "and the multivariable MR-Egger intercepts were significant in men and women, substantiating the use of the MR-Egger estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test for directional pleiotropy",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "7113d02d-3071-4d32-8b34-51ce9ecd14a6",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C40",
+      "claim": "Genetically mimicked effects of anakinra increased both the risk of IHD and testosterone in men but not women.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically mimicked effects of anakinra increased both the risk of IHD and testosterone in men but not women (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mendelian randomization analysis results shown in Table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "d771e717-5992-480c-b011-676003357536",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C41",
+      "claim": "Genetically mimicked effects of tocilizumab were not clearly associated with testosterone in men or women.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically mimicked effects of tocilizumab were not clearly associated with testosterone in men or women (Table 4), so were not investigated further.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mendelian randomization analysis results shown in Table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "e542f55e-7c09-44cf-9b32-89493a506a28",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C42",
+      "claim": "This study provides genetic evidence that statins reduce testosterone in men, consistent with meta-analysis of RCTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with meta-analysis of RCTs this study provides genetic evidence that statins reduce testosterone in men (Schooling et al., 2013),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mendelian randomization results consistent with cited meta-analysis",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "96a1a044-2d0c-42e2-9706-3d84d119ff15",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C43",
+      "claim": "Statins could partially operate on IHD in men by reducing testosterone.",
+      "claim_type": "EXPLICIT",
+      "source": "and adds by showing that statins could partially operate on IHD, in men only, by reducing testosterone, as previously hypothesized (Schooling et al., 2013; Schooling et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from multivariable MR analysis showing mediation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "456e8f7d-6047-4750-a800-9d4f0afed8ec",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C44",
+      "claim": "Statins have similar protective effects on IHD in men and women independent of testosterone.",
+      "claim_type": "EXPLICIT",
+      "source": "while having similar protective effects in men and women independent of testosterone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from multivariable MR analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "7dbad750-f35d-4a91-b9af-99f236441597",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C45",
+      "claim": "Previous Mendelian randomization studies have shown lower testosterone associated with lower risk of IHD, particularly in men.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous Mendelian randomization studies have shown lower testosterone associated with lower risk of IHD, particularly in men (Schooling et al., 2018a; Luo et al., 2019; Mohammadi-Shemirani et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous MR studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "c40d78d5-f13f-463a-8e46-fcda667d529a",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C46",
+      "claim": "This study provides genetic validation that the anti-inflammatory anakinra increases testosterone in men, consistent with an RCT.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, consistent with an RCT (Ebrahimi et al., 2018), this study also provides genetic validation that the anti-inflammatory anakinra, targeting IL-1Ra, increases testosterone in men,",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mendelian randomization results consistent with cited RCT",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "4af11367-4267-495f-81eb-b4e2f4c1d500",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C47",
+      "claim": "A previous Mendelian randomization study showed anakinra increases IHD.",
+      "claim_type": "EXPLICIT",
+      "source": "and is consistent with a previous Mendelian randomization study showing anakinra increases IHD (Interleukin 1 Genetics Consortium, 2015),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous MR study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "aa4363af-337f-4387-94b9-fecee1f50581",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C48",
+      "claim": "A more marked association of testosterone with IHD in men than women is consistent with sex differences in biology, where testosterone is the main sex hormone in men and is much higher in men than in women.",
+      "claim_type": "EXPLICIT",
+      "source": "A more marked association of testosterone with IHD in men than women (Table 2) is consistent with sex differences in biology, where testosterone is the main sex hormone in men and is much higher in men than in women.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on biological knowledge and data from Table 2",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "a9cc04ba-0318-416a-8026-0e9f11d31f3f",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C49",
+      "claim": "The associations of genetically mimicked effects of statins, PCSK9 inhibitors or ezetimibe on testosterone is consistent with the evidence available and their mechanisms of action.",
+      "claim_type": "EXPLICIT",
+      "source": "The associations of genetically mimicked effects of statins, PCSK9 inhibitors or ezetimibe on testosterone is consistent with the evidence available (Schooling et al., 2013; Ooi et al., 2015; Krysiak et al., 2015) and their mechanisms of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and knowledge of drug mechanisms",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "f9e9e27f-96b4-4006-8968-cc9b73a12070",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C50",
+      "claim": "Statins inhibit cholesterol synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, statins inhibit cholesterol synthesis, while PCSK9 inhibitors enable greater clearance of cholesterol, through increasing LDL-receptors, while ezetimibe reduces uptake of dietary cholesterol (Ray et al., 2019; Michos et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations describing drug mechanisms",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "8fc5f7c5-6dbb-4125-b845-aec99cd72ba6",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C51",
+      "claim": "PCSK9 inhibitors enable greater clearance of cholesterol through increasing LDL-receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, statins inhibit cholesterol synthesis, while PCSK9 inhibitors enable greater clearance of cholesterol, through increasing LDL-receptors, while ezetimibe reduces uptake of dietary cholesterol (Ray et al., 2019; Michos et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations describing drug mechanisms",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "06fd0840-712c-4e7b-b699-795d634fd9ff",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C52",
+      "claim": "Ezetimibe reduces uptake of dietary cholesterol.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, statins inhibit cholesterol synthesis, while PCSK9 inhibitors enable greater clearance of cholesterol, through increasing LDL-receptors, while ezetimibe reduces uptake of dietary cholesterol (Ray et al., 2019; Michos et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations describing drug mechanisms",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "2f10ffff-8fe4-4e53-88b1-f39152d24bf4",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C53",
+      "claim": "Some cells, such as Leydig cells, use de novo cholesterol synthesis to generate steroids, which can be reduced by statins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some cells, such as Leydig cells, use de novo cholesterol synthesis to generate steroids, which can be reduced by statins (Shimizu-Albergine et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shimizu-Albergine et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "a4e8c3ec-6c0c-43a3-a975-1c9ed13752ee",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C54",
+      "claim": "Concerns about statins compromising androgen production pre-date the marketing of statins.",
+      "claim_type": "EXPLICIT",
+      "source": "Concerns about statins compromising androgen production pre-date the marketing of statins (Farnsworth et al., 1987; MacDonald et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Farnsworth et al., 1987 and MacDonald et al., 1988",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "dbeb5d0c-7e08-477f-8d6b-d5d6553b0598",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C55",
+      "claim": "Beneficial immunosuppressive effects of androgens in rheumatoid arthritis have long been known.",
+      "claim_type": "EXPLICIT",
+      "source": "Beneficial immunosuppressive effects of androgens in rheumatoid arthritis have long been known (Cutolo et al., 1991),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cutolo et al., 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "155781d3-278a-45a7-aa90-726a5a78f131",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C56",
+      "claim": "Androgen reduction is a plausible mode of action for therapies, such as anakinra, whose primary indication is rheumatoid arthritis.",
+      "claim_type": "EXPLICIT",
+      "source": "making androgen reduction a plausible mode of action for therapies, such as anakinra, whose primary indication is rheumatoid arthritis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on known effects of androgens and drug indication",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "cfee8a60-6179-4680-97c1-5da4297dab25",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C57",
+      "claim": "In 2015 the Food and Drug Administration in the United States required labelling changes for all testosterone prescriptions to warn of the risk of heart attacks and stroke on testosterone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in 2015 the Food and Drug Administration in the United States required labelling changes for all testosterone prescriptions to warn of the risk of heart attacks and stroke on testosterone, although no sufficiently large RCT of testosterone administration has been conducted to confirm these effects (Onasanya et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Onasanya et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "108204bd-6a8a-44d7-a246-eed1b7e43a2e",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C58",
+      "claim": "No sufficiently large RCT of testosterone administration has been conducted to confirm cardiovascular effects.",
+      "claim_type": "EXPLICIT",
+      "source": "although no sufficiently large RCT of testosterone administration has been conducted to confirm these effects (Onasanya et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Onasanya et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "33f1c20f-b33c-472c-be28-99a3a502f8e0",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C59",
+      "claim": "The Endocrine Society has recommended caution in the use of testosterone.",
+      "claim_type": "EXPLICIT",
+      "source": "The Endocrine Society has also recommended caution in the use of testosterone (Bhasin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bhasin et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "2b381c7e-1059-493d-8099-836e05e7531a",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C60",
+      "claim": "Meta-analysis of RCTs suggests androgen deprivation therapy reduces all-cause mortality, but is too small to quantify effects on specific diseases beyond prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Meta-analysis of RCTs suggests androgen deprivation therapy reduces all-cause mortality, but is too small to quantify effects on specific diseases beyond prostate cancer (Nguyen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nguyen et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "38c001b1-0eb9-4dea-b100-fb2b4ee7d9f4",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C61",
+      "claim": "The Mendelian randomization findings of the effects of testosterone have some consistency with the limited experimental evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, our Mendelian randomization findings of the effects of testosterone have some consistency with the limited experimental evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference comparing MR results with experimental evidence",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "3fe0d78b-7b91-4021-96eb-ff4ed96b623a",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C62",
+      "claim": "The findings are consistent with evolutionary biology theory that reproductive success may be at the expense of longevity, possibly in a sex-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our findings are consistent with well-established evolutionary biology theory, that is reproductive success may be at the expense of longevity, possibly in a sex-specific manner,",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on evolutionary biology theory",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "cf21300f-ddea-426b-927d-308c41d00e0e",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C63",
+      "claim": "Central drivers of the reproductive axis, as well as androgen production and catabolism, and their environmental cues may be relevant to IHD.",
+      "claim_type": "EXPLICIT",
+      "source": "impling that central drivers of the reproductive axis, as well as androgen production and catabolism, and their environmental cues may be relevant to IHD (Schooling, 2016; Schooling and Ng, 2019; Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and illustrated in Figure 2",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "6780499a-5812-4f88-be65-d0359830638f",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C64",
+      "claim": "Upregulation of indicators of plentiful living conditions, such as insulin, appear to cause IHD, particularly in men.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, upregulation of indicators of plentiful living conditions, such as insulin, appear to cause IHD, particularly in men (Zhao et al., 2019), likely via gonadotropin releasing hormone (GnRH) (Schooling and Ng, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zhao et al., 2019 and Schooling and Ng, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "56623326-b2ad-40af-81da-78ca7c6a730b",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C65",
+      "claim": "Insulin likely causes IHD via gonadotropin releasing hormone (GnRH).",
+      "claim_type": "EXPLICIT",
+      "source": "likely via gonadotropin releasing hormone (GnRH) (Schooling and Ng, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schooling and Ng, 2019",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "7cb8b807-1d38-453a-bdd7-1f08d2b72bd4",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C66",
+      "claim": "Fatty acids may affect GnRH.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, fatty acids may affect GnRH (Tran et al., 2016; Matsuyama and Kimura, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tran et al., 2016 and Matsuyama and Kimura, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "984775c0-b34b-444c-af4d-258abca6ae69",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C67",
+      "claim": "Indicators of adversity, such as endotoxins promote an inflammatory response, involving interleukins, which suppresses the reproductive axis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, indicators of adversity, such as endotoxins promote an inflammatory response, involving interleukins, which suppresses the reproductive axis (Kalra et al., 1998) and thereby testosterone (Tremellen et al., 2018),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kalra et al., 1998 and Tremellen et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "8b9bafa0-aa01-4eca-8b6d-8c76d1481a6c",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C68",
+      "claim": "Endotoxins suppress testosterone via inflammatory response.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, indicators of adversity, such as endotoxins promote an inflammatory response, involving interleukins, which suppresses the reproductive axis (Kalra et al., 1998) and thereby testosterone (Tremellen et al., 2018),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kalra et al., 1998 and Tremellen et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "18ef5620-7dda-42ee-bbe6-a8c603b56945",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C69",
+      "claim": "The suppression of testosterone by inflammation may be reversed by anakinra possibly outweighing the benefits for IHD of suppressing inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "which may be reversed by anakinra possibly outweighing the benefits for IHD of suppressing inflammation (Tardif et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tardif et al., 2019 and speculation about net effects",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "b78ff164-1d70-4618-8030-6f3717cc00be",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C70",
+      "claim": "Statins reduce androgen production.",
+      "claim_type": "EXPLICIT",
+      "source": "Statins, in contrast reduce androgen production,",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on study findings and cited evidence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "33f39f3a-0d64-41c9-b795-12877a3f84e6",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C71",
+      "claim": "Agents that suppress androgen catabolism, such as rofecoxib, have had unexpectedly adverse effects on IHD.",
+      "claim_type": "EXPLICIT",
+      "source": "while agents that suppress androgen catabolism, such as rofecoxib, have also had unexpectedly adverse effects on IHD (Schooling, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schooling, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "6af61b18-3893-4beb-8367-b22eb3059739",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C72",
+      "claim": "Mechanisms by which androgens might cause IHD have not been extensively investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanisms by which androgens might cause IHD have not been extensively investigated,",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of existing literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "208a4138-7955-487c-8848-23eab2620d69",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C73",
+      "claim": "Androgens likely cause IHD via coagulation and red blood cell attributes.",
+      "claim_type": "EXPLICIT",
+      "source": "but likely involve coagulation and red blood cell attributes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on available evidence",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "9034eff4-d1fb-49b4-8c71-267f29b81ec9",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C74",
+      "claim": "Several haemostatic and thrombotic factors, such as thromboxane A2, may be driven by androgens and likely play a role in IHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Several haemostatic and thrombotic factors, such as thromboxane A2 (Pignatelli et al., 2012; Ajayi and Halushka, 2005), endothelin-1 (Polderman et al., 1993; van Kesteren et al., 1998; Sahebkar et al., 2015), nitric oxide (Pignatelli et al., 2012; Rosselli et al., 1998) and possibly thrombin (Orsi et al., 2019; Ferenchick et al., 1995), may be driven by androgens and likely play a role in IHD (Schooling et al., 2018b; Zhao, 2018; Nikpay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "7850ab21-190c-4315-af41-fbe41c5bcc30",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C75",
+      "claim": "Von Willebrand factor is modulated by statins and may cause IHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Von Willebrand factor (Sahebkar et al., 2016) and asymmetric dimethylarginine (Serban et al., 2015) are also modulated by statins and may cause IHD (Aday and Ridker, 2018; Au Yeung et al., 2016),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sahebkar et al., 2016, Serban et al., 2015, Aday and Ridker, 2018, and Au Yeung et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "19d4cb14-1532-4f64-9e3a-cba1c2c36857",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C76",
+      "claim": "Asymmetric dimethylarginine is modulated by statins and may cause IHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Von Willebrand factor (Sahebkar et al., 2016) and asymmetric dimethylarginine (Serban et al., 2015) are also modulated by statins and may cause IHD (Aday and Ridker, 2018; Au Yeung et al., 2016),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sahebkar et al., 2016, Serban et al., 2015, Aday and Ridker, 2018, and Au Yeung et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "77388024-dad8-4615-b128-8adbd3a3b798",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C77",
+      "claim": "Whether von Willebrand factor and asymmetric dimethylarginine are driven by testosterone is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "whether they are driven by testosterone is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of knowledge gap",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "b331cc4d-88ad-437c-82a9-13503b017c2a",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C78",
+      "claim": "Several red blood cell attributes are affected by androgens, from reticulocytes to hematocrit.",
+      "claim_type": "EXPLICIT",
+      "source": "Several red blood cell attributes are affected by androgens, from reticulocytes to hematocrit (Fern\u00e1ndez-Balsells et al., 2010; Kanias et al., 2016),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fern\u00e1ndez-Balsells et al., 2010 and Kanias et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "5730fac5-ffdb-49b5-9d5d-926b8e03cae8",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C79",
+      "claim": "Exactly which red blood cell attributes cause IHD is unclear, although reticulocytes are a possibility.",
+      "claim_type": "EXPLICIT",
+      "source": "but exactly which causes IHD is unclear, although reticulocytes are a possibility (Astle et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Astle et al., 2016 and speculation",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "64f7b167-9156-4c0a-8e92-da38992a9bf0",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C80",
+      "claim": "Comprehensive genetic validation of pathways linking testosterone to IHD is hampered by the lack of availability of large sex-specific genome wide association studies of cytokines and coagulation factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, comprehensive genetic validation of these pathways is hampered by the lack of availability of large sex-specific genome wide association studies (GWAS) of cytokines and coagulation factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of methodological limitation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "165a85c9-d1fc-4065-993e-4c017f9e02b9",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C81",
+      "claim": "Statins lowering testosterone could be relevant to the muscle weakness or pain experienced on statins.",
+      "claim_type": "EXPLICIT",
+      "source": "Statins lowering testosterone could also be relevant to the muscle weakness or pain experienced on statins (Collins et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Collins et al., 2016 and speculation",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "87770582-4317-4e0e-88b5-1bca2331cc90",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C82",
+      "claim": "Recognition that statins lower testosterone might provide greater impetus for investigation of their role in other relevant conditions, such as prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Recognition that statins lower testosterone might also provide greater impetus for investigation of their role in other relevant conditions, such as prostate cancer (Alfaqih et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alfaqih et al., 2017 and speculation",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "0b082944-6a85-49f2-b667-dac1b645155e",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C83",
+      "claim": "Statins and anakinra did not clearly affect testosterone in women.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, statins and anakinra did not clearly affect testosterone in women (Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on results shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "8492c0e9-3953-4156-9cc8-0f3221e43633",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C84",
+      "claim": "Testosterone did not mediate the effect of statins on IHD in women.",
+      "claim_type": "EXPLICIT",
+      "source": "nor did testosterone mediate the effect of statins on IHD in women (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on multivariable MR results shown in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "d971cd58-abf8-421a-ba38-8cd0d775b209",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C85",
+      "claim": "Sex differences in statin and anakinra effects highlight the need for sex-specific approaches to IHD prevention and management.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences by sex highlight the need for sex-specific approaches to IHD prevention and management, specifically in terms of the use of statins and investigation more broadly of causes of IHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from observed sex differences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "91e3d932-451b-4f65-83a9-feb51ecb372f",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C86",
+      "claim": "Genetic variants mimicking effects of statins and anakinra had opposite effects on testosterone and IHD in men.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic variants mimicking effects of statins and anakinra had opposite effects on testosterone and IHD in men, consistent with the effects of statins on IHD in men being partially mediated by testosterone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of study findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "309ddd4e-d00b-4009-aa2a-4fdc84f77802",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C87",
+      "claim": "The effects of statins on IHD in men are partially mediated by testosterone.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with the effects of statins on IHD in men being partially mediated by testosterone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from multivariable MR analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "db33dedf-fd67-40a6-8697-366ca983fccb",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C88",
+      "claim": "The pleiotropic effects of statins could be mediated by testosterone in men.",
+      "claim_type": "EXPLICIT",
+      "source": "This insight that the pleiotropic effects of statins could be mediated by testosterone in men has implications for the use of existing interventions to prevent and treat IHD, the development of new interventions for IHD and the re-use of statins for other androgen related conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from study findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "b3d517a8-33f9-4443-8caf-7b61496e8a88",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C89",
+      "claim": "Genetic confirmation that anakinra raises testosterone suggests its use in rheumatoid arthritis might have cardiovascular side-effects, particularly in men.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic confirmation that anakinra raises testosterone suggests its use in rheumatoid arthritis might have cardiovascular side-effects, particularly in men.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from study findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "b0960f34-03ff-4a22-96c9-58e509fad319",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C90",
+      "claim": "Vulnerability to major diseases and interventions to promote lifespan may need to be sex-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "It also highlights the importance of considering whether vulnerability to major diseases and interventions to promote lifespan need to be sex-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from observed sex differences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "f5a0781b-1a6a-4211-847e-aac051ebeead",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C91",
+      "claim": "Established genetic variants mimicking effects of statins, PCSK9 inhibitors and ezetimibe were taken from published sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Established genetic variants mimicking effects of statins, PCSK9 inhibitors and ezetimibe were taken from published sources (Ference et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodology with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "324c6ffa-cd05-4518-82e3-0df839832804",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C92",
+      "claim": "SNPs were selected from genes encoding proteins of the targets of each lipid modifier (HMGCR for statins, PCSK9 for PCSK9 inhibitors and NCP1L1 for ezetimibe) that lowered LDL-cholesterol.",
+      "claim_type": "EXPLICIT",
+      "source": "which selected SNPs from genes encoding proteins of the targets of each lipid modifier (HMGCR for statins, PCSK9 for PCSK9 inhibitors and NCP1L1 for ezetimibe) that lowered LDL-cholesterol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of SNP selection methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "4315cd0c-11e6-44f7-97bb-9793ccfe0ddc",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C93",
+      "claim": "Genetic effects mimicking statins, PCSK9 inhibitors and ezetimibe were expressed in sex-specific effect sizes of LDL-cholesterol reduction taken from the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic effects mimicking statins, PCSK9 inhibitors and ezetimibe were expressed in sex-specific effect sizes of LDL-cholesterol reduction taken from the largest available sex-specific GWAS summary statistics, that is the UK Biobank (http://www.nealelab.is/uk-biobank).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data source",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "0c421dcb-df57-4554-8005-6352c9194bb1",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C94",
+      "claim": "The UK Biobank study was restricted to people of white British ancestry adjusted for the first 20 principal components, age, and age2.",
+      "claim_type": "EXPLICIT",
+      "source": "The study was restricted to people of white British ancestry adjusted for the first 20 principal components, age, and age2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study population and adjustments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "85fc121d-94ab-403a-a9d7-06e16bc8ab52",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C95",
+      "claim": "Strong (p-value<5 \u00d7 10\u22128), independent (r2 <0.05), sex-specific genetic predictors of testosterone were extracted from a published GWAS based on the UK Biobank and replicated in three independent studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong (p-value<5 \u00d7 10\u22128), independent (r2 <0.05), sex-specific genetic predictors of testosterone were extracted from a published genome wide association study (GWAS) based on the UK Biobank and replicated in three independent studies (CHARGE Consortium, Twins UK and EPIC-Norfolk) (Ruth et al., 2020; Sinnott-Armstrong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of genetic instrument selection with citations",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "76ac52f8-4e24-46b0-8b3a-3c0eab5587c6",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C96",
+      "claim": "Genetic associations with testosterone were adjusted for genotyping chip/release of genetic data, age at baseline, fasting time and ten genetically derived principal components.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic associations with testosterone in this study were adjusted for genotyping chip/release of genetic data, age at baseline, fasting time and ten genetically derived principal components (Ruth et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of adjustments in source GWAS with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "727ad0e7-fa71-4b3c-b254-7393c859c38f",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C97",
+      "claim": "125 genetic variants were used for bioavailable testosterone in men and 254 genetic variants were used for testosterone in women.",
+      "claim_type": "EXPLICIT",
+      "source": "We used all 125 genetic variants given for bioavailable testosterone, hereafter testosterone, in men and all 254 genetic variants given for testosterone in women, as previously (Zhao and Schooling, 2020),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of genetic instruments used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "0be77076-98b8-49c4-9369-b237ba0ab190",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C98",
+      "claim": "The testosterone genetic variants had little correlation with sex hormone binding globulin (0.05 in men and 0.06 in women).",
+      "claim_type": "EXPLICIT",
+      "source": "because these had little correlation with sex hormone binding globulin (0.05 in men and 0.06 in women) (Ruth et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ruth et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "88bec4c5-60fb-49db-ba8b-ce88aa89129d",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C99",
+      "claim": "Sex-specific genetic associations with IHD were taken from the UK Biobank individual data after excluding those with inconsistent self-reported and genotyped sex, excess relatedness, abnormal sex chromosomes, or poor-quality genotyping.",
+      "claim_type": "EXPLICIT",
+      "source": "Sex-specific genetic associations with IHD were taken from the UK Biobank individual data after excluding those with inconsistent self-reported and genotyped sex, excess relatedness (more than 10 putative third-degree relatives), abnormal sex chromosomes (such as XXY), or poor-quality genotyping (heterozygosity or missing rate >1.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data source and quality control",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "daf155db-fc85-4ec3-b63c-6e8558857b35",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C100",
+      "claim": "Sex-specific associations with IHD were obtained using logistic regression adjusted for the first 20 principal components, age, and assay array.",
+      "claim_type": "EXPLICIT",
+      "source": "The sex-specific associations with IHD obtained using logistic regression were adjusted for the first 20 principal components, age, and assay array.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "744fbbb6-0273-4f02-807d-056eafb39057",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C101",
+      "claim": "IHD was based on self-report at baseline, subsequent hospitalization diagnoses of ICD 9 410\u20134 or ICD10 I20-5 and death registration causes of ICD10 I20-5 up until December 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "IHD was based on self-report at baseline, subsequent hospitalization diagnoses (primary or secondary) of International Classification of Diseases (ICD) 9 410\u20134 or ICD10 I20-5 and death registration causes (primary or secondary) of ICD10 I20-5 up until December 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of outcome definition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "e2a8023a-ec40-44d1-90da-09348bf107ae",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C102",
+      "claim": "The F-statistic was used to assess instrument strength, obtained using an approximation (mean of square of SNP-exposure association divided by square of its standard error).",
+      "claim_type": "EXPLICIT",
+      "source": "The F-statistic was used to assess instrument strength, obtained using an approximation (mean of square of SNP-exposure association divided by square of its standard error) (Bowden et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical method with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "441f6c38-76f3-41e5-b10e-d5ca812c512e",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C103",
+      "claim": "A conventional threshold for the F-statistic is 10.",
+      "claim_type": "EXPLICIT",
+      "source": "A conventional threshold for the F-statistic is 10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of conventional statistical threshold",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "1874223d-b849-4a01-b50b-5c50d05e8164",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C104",
+      "claim": "SNPs with an F-statistic <10 were dropped.",
+      "claim_type": "EXPLICIT",
+      "source": "SNPs with an F-statistic <10 were dropped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of quality control procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "0f554ae7-b105-4346-bdf3-3a068cdc010b",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C105",
+      "claim": "Steiger filtering was used to check the directionality between testosterone and IHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Steiger filtering was used to check the directionality between testosterone and IHD. (Hemani et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical method with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "a41fdcf0-511a-4bc7-809c-0ef367a48663",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C106",
+      "claim": "Sex-specific estimates of associations were obtained by combining SNP-specific Wald estimates using inverse variance weighting with multiplicative random effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Sex-specific estimates of the associations of genetically predicted exposures (i.e., genetically mimicked effects of statins, PCSK9 inhibitors, ezetimibe, anakinra and tocilizumab) with testosterone and IHD, as well as estimates of the associations of genetically predicted testosterone with IHD were obtained by combining SNP-specific Wald estimates (SNP on outcome divided by SNP on exposure) using inverse variance weighting (IVW) with multiplicative random effects (Burgess et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical method with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "5ffb95bf-eb52-41a9-a6ca-4e9b2051ab98",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C107",
+      "claim": "Multivariable MR was used to assess sex-specific associations of genetically predicted exposures with IHD allowing for testosterone, accounting for correlations between SNPs on the same chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariable MR was used to assess sex-specific associations of genetically predicted exposures with IHD allowing for testosterone, accounting for correlations between SNPs on the same chromosome obtained from LDlink.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "df9d6166-7476-4ba2-95bb-408b4f151fe7",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C108",
+      "claim": "The Sanderson-Windmejier multivariable conditional F-statistic was estimated to obtain a lower bound of the strength for each instrument conditional on the other exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated the Sanderson-Windmejier multivariable conditional F-statistic (Sanderson and Windmeijer, 2016) to obtain a lower bound of the strength for each instrument conditional on the other exposure,",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical method with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "bdd3995b-327c-4934-aed3-2582135a5512",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C109",
+      "claim": "The Q statistics were used to assess pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "and the Q statistics to asses pleiotropy, using the WSpiller/MVMR package (Sanderson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical method with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "36e06e27-cbfc-4981-9b5a-2644ac4aad94",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C110",
+      "claim": "Multivariable MR-Egger estimates were used given the analysis is multivariable by design with few genetic variants available to mimic the effects of statins.",
+      "claim_type": "EXPLICIT",
+      "source": "Given this analysis is multivariable by design with few genetic variants available to mimic the effects of statins, we used the multivariable MR-Egger estimates (Rees et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological choice with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "c8723abd-72c8-4925-b5d6-681fb030eae3",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C111",
+      "claim": "MR-Egger is valid as long as the instrument strength independent of direct effect assumption holds.",
+      "claim_type": "EXPLICIT",
+      "source": "MR-Egger is valid as long as the instrument strength independent of direct effect assumption holds (Bowden et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of method assumptions with citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "279f3a13-8ddc-43ef-a427-cb5e04242ea6",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C112",
+      "claim": "Weighted median gives valid estimates when more than 50% of information comes from valid SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also used a weighted median which gives valid estimates when more than 50% of information comes from valid SNPs (Bowden et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of method assumptions with citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "5689f353-8e19-41d5-b60f-e2407c96caa1",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C113",
+      "claim": "For exposures instrumented by correlated SNPs, weighted median or MR-Egger estimates were not given because of concerns about their interpretability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for exposures instrumented by correlated SNPs we did not give the weighted median or MR-Egger estimates because of concerns about their interpretability (Burgess and Thompson, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological limitation with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "6c23f08e-3951-4a8c-9df0-18443c6aad71",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C114",
+      "claim": "A statistical significance level of 0.05 was used given this is a hypothesis driven study with a positive control.",
+      "claim_type": "EXPLICIT",
+      "source": "Given this is a hypothesis driven study, with a positive control, we used a statistical significance level of 0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical threshold choice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "6140be8f-6bb6-44c3-8bba-9522302407a2",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C115",
+      "claim": "All statistical analysis was conducted using R version 3.6.1.",
+      "claim_type": "EXPLICIT",
+      "source": "All statistical analysis was conducted using R version 3.6.1 (The R Foundation for Statistical Computing, Vienna, Austria).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of software used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "8b0d6bc9-be99-4e2b-9f45-8702d327b2b3",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C116",
+      "claim": "The MendelianRandomization R package was used for the MR estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "The MendelianRandomization R package was used for the MR estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of software package used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "78a1d461-5138-48f0-b162-d6ed54e144b0",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C117",
+      "claim": "Estimates of genetic associations were taken from publicly available UK Biobank summary statistics, except the associations with IHD which were based on individual level genetic associations from the UK Biobank obtained under application #42468.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates of genetic associations were taken from publicly available UK Biobank summary statistics, except the associations with IHD which were based on individual level genetic associations from the UK Biobank obtained under application #42468.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data sources",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "27dca6ae-f6e5-48fe-b618-b80726891f00",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "claim_id": "C118",
+      "claim": "All UK Biobank data were collected with fully informed consent.",
+      "claim_type": "EXPLICIT",
+      "source": "All UK Biobank data were collected with fully informed consent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ethical data collection",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "98722cf3-1f49-44c0-86f5-5090a426ec67",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study selected genetic instruments to mimic the effects of statins, PCSK9 inhibitors, ezetimibe, and testosterone based on established criteria including independence (r\u00b2 thresholds), association strength with target exposures, and F-statistics >10.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C25 describe appropriate instrument selection procedures for Mendelian randomization, including handling of correlated SNPs, F-statistic thresholds for instrument strength, and selection based on association strength with exposures. The methods are standard for MR studies and adequately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "ce865369-ffe9-4978-8c3a-2629c92604fc",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Genetically mimicked effects of statins reduced testosterone in men but not women, while PCSK9 inhibitors and ezetimibe did not affect testosterone in either sex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by the Mendelian randomization analysis results presented in Table 1, showing statistically significant effects of statin-mimicking SNPs on testosterone in men (\u03b2=-0.15, p=0.001) but not women, and no significant effects for PCSK9 inhibitors or ezetimibe in either sex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "c04cb76c-95c2-498c-9d99-04011535bf37",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Genetically mimicked statins reduced IHD risk in men and possibly women, while genetically predicted testosterone was positively associated with IHD in men but not significantly in women, with directionality confirmed by Steiger filtering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are supported by univariable MR results in Table 2, showing protective effects of statin mimics on IHD in men (OR=0.55, p=0.001) and positive associations of testosterone with IHD in men (OR=1.11, p=0.003) but not women. Steiger filtering confirmed appropriate directionality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "97401d64-a115-49a4-8c4e-ea7ab71f349a",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multivariable MR analysis showed that the protective effect of statins on IHD in men was attenuated when accounting for testosterone, with similar testosterone-independent effects in men and women (OR=0.72 combined), while testosterone's association with IHD remained significant in men and differed by sex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C33-C39 describe multivariable MR results suggesting partial mediation by testosterone. However, the conditional F-statistics for statin mimics were low (3.5 in men, 6.8 in women), below the conventional threshold of 10, indicating weak instruments in the multivariable setting. The significant Q statistics (C38) and reliance on MR-Egger (C39) due to pleiotropy concerns further complicate interpretation. While the pattern is consistent with mediation, the weak instrument problem undermines confidence in the multivariable estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "93309e2f-9350-49db-9ef2-7c20dea1167c",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genetically mimicked effects of anakinra increased both testosterone and IHD risk in men but not women, while tocilizumab showed no clear associations with testosterone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by the MR results in Table 4, showing that anakinra-mimicking SNPs increased both testosterone (\u03b2=0.022, p=0.002) and IHD (OR=1.08, p=0.017) in men but not women, providing a validation control with opposite effects to statins. Tocilizumab showed no significant associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "2c4c9dd7-412c-4321-b411-17f3ca8c9402",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study concludes that statins reduce testosterone in men and partially operate on IHD through this mechanism, while also having testosterone-independent protective effects in both sexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C44 and C87 represent the main conclusions about mediation. While C42 (statins reduce testosterone in men) is well-supported by univariable MR, the mediation claim (C43, C87) relies on multivariable MR with weak instruments (conditional F-statistics 3.5-6.8). The attenuation pattern is consistent with partial mediation, but weak instrument bias could produce similar patterns. The claim of testosterone-independent effects (C44) is more robust, supported by the multivariable MR-Egger estimates showing similar effects in men and women.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "612c3fba-3b18-4b49-9391-1a6db5997f9d",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The findings are consistent with previous Mendelian randomization studies showing testosterone increases IHD risk in men and with RCT evidence that anakinra increases testosterone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 appropriately contextualize the current findings within prior literature. The consistency with previous MR studies (C45) and RCT evidence for anakinra (C46) strengthens confidence in the results, while the citation to prior MR showing anakinra increases IHD (C47) provides additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "1ae084e0-828b-4420-bd8a-2ebecca10f0a",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The sex-specific effects are biologically plausible given testosterone's role as the main sex hormone in men, and the differential effects of lipid modifiers are consistent with their mechanisms of action, particularly statins' inhibition of cholesterol synthesis in steroidogenic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 provide mechanistic interpretation supported by biological knowledge and cited literature. The explanation for sex differences (C48) is well-grounded in endocrinology, and the mechanistic distinctions between lipid modifiers (C49-C52) are accurately described and supported by citations. The specific mechanism for statins affecting Leydig cells (C53) is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "ef76ef7d-3e85-4075-96af-bc2389c97439",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The findings are interpreted within an evolutionary biology framework where reproductive success trades off with longevity, with environmental cues (insulin, fatty acids, inflammation) affecting the reproductive axis and thereby IHD risk through testosterone and related pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C71 present a broad theoretical framework linking the findings to evolutionary biology and environmental signals. While the evolutionary theory is well-established (C62) and some specific links are supported by citations (C64, C66-C68), several connections involve speculation (C65, C69, C73) or are presented as possibilities without direct evidence (C66, C69). The framework is plausible but extends beyond what the current data directly demonstrate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "84409c18-d6e5-4e36-9238-e1a8a0ed0cb7",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Potential mechanisms linking testosterone to IHD include effects on coagulation factors (thromboxane A2, endothelin-1, nitric oxide, thrombin, von Willebrand factor) and red blood cell attributes (reticulocytes, hematocrit), though comprehensive validation is limited by lack of large sex-specific GWAS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C80 discuss potential mechanistic pathways with varying levels of support. While several coagulation factors are cited as being affected by androgens and relevant to IHD (C74-C76, C78), the authors acknowledge these mechanisms are not extensively investigated (C72), some links are speculative (C73, C79), and key knowledge gaps exist (C77, C80). The mechanistic discussion is appropriately tentative but lacks direct validation in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "26f6e9b1-6415-456f-a98d-4aeae692138d",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings have potential clinical implications including explaining statin-associated muscle symptoms, suggesting investigation of statins for prostate cancer, and raising concerns about cardiovascular side-effects of anakinra in men.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81, C82, and C89 propose clinical implications that are speculative extensions of the findings. While the connections are plausible (testosterone affects muscle and prostate, anakinra raises testosterone which may increase IHD), these are hypotheses requiring further investigation rather than demonstrated results. The speculative nature is appropriately indicated by conditional language ('could be relevant', 'might provide impetus', 'suggests... might have').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "cd066777-40c5-49bd-9ddf-81bae852f55f",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study found no clear effects of statins or anakinra on testosterone in women, no mediation of statin effects by testosterone in women, highlighting the need for sex-specific approaches to IHD prevention and treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 and C90 accurately summarize the sex-specific findings and their implications. The lack of effects in women (C83-C84) is supported by Tables 1 and 3, and the inference about need for sex-specific approaches (C85, C90) is a reasonable conclusion from the observed sex differences in mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study employed standard Mendelian randomization methods including appropriate instrument selection, quality control, statistical approaches (IVW, weighted median, MR-Egger, multivariable MR), and sensitivity analyses, using UK Biobank data with appropriate adjustments and ethical approval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C118 describe the methodological approach comprehensively. The methods are generally appropriate for MR studies, including proper instrument selection criteria, quality control procedures, multiple analytical approaches with different assumptions, and appropriate statistical software. The main methodological concern (weak instruments in multivariable analysis) is acknowledged through reporting of conditional F-statistics (C37, C108) and use of MR-Egger (C110).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "ded55563-b45c-4691-8526-af9c706b0b48",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction establishes that statins are first-line therapy for cardiovascular disease with suspected pleiotropic effects beyond lipid lowering, that they may be more effective than other lipid modifiers, that sex-specific effects are uncertain due to male-predominant trials, and that RCTs are not designed to test mediating mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 provide appropriate background context supported by citations to relevant literature. The claims accurately represent the state of knowledge regarding statin efficacy (C1-C3), uncertainties about their superiority (C4-C5), potential pleiotropic effects (C2, C6-C7), sex differences (C8-C11), and limitations of RCT designs (C12-C13).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "dbf61d16-49be-4fe6-bee4-75f970e18658",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study used Mendelian randomization to investigate testosterone as a mediator of statin effects on IHD in 179,918 men and 212,080 women from UK Biobank, with anakinra as a validation control showing opposite effects on testosterone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 accurately describe the study design and rationale. The description of MR methodology (C14-C15) is appropriate and cited, the sample sizes (C16) match the reported data, and the use of anakinra as a control with opposite effects (C17) is a strength of the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "7e1f603a-a307-4a25-aeb6-ffd4a6f00177",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Historical and regulatory context shows long-standing concerns about statins affecting androgen production, FDA warnings about testosterone and cardiovascular risk, and limited but suggestive RCT evidence that androgen deprivation may reduce mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C61 provide appropriate historical and regulatory context supported by citations. The claims about early concerns regarding statins (C54), androgens in rheumatoid arthritis (C55), FDA warnings (C57), and limited RCT evidence (C58, C60) are accurately represented and appropriately cited, supporting the biological plausibility of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    },
+    {
+      "id": "91351ef8-9353-448d-9739-89d77a190909",
+      "content_id": "e1f02052-6ef8-435e-9283-9c75bdd7d670",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study concludes that genetic variants mimicking statins and anakinra had opposite effects on testosterone and IHD in men, suggesting pleiotropic effects of statins mediated by testosterone with implications for intervention development and drug repurposing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86 and C88 represent high-level conclusions about the study's implications. While the opposite effects pattern (C86) is well-supported by the data, the broader implications for pleiotropic effects (C88) rest on the mediation analysis which has methodological limitations (weak instruments in multivariable MR). The conclusions are reasonable interpretations but should be considered hypothesis-generating given the analytical limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:27:49.803749Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5a4e8e6d-8471-4889-9273-bde637490926",
+      "result_id": "98722cf3-1f49-44c0-86f5-5090a426ec67"
+    },
+    {
+      "claim_id": "57e5fe94-42c6-4bd1-bda4-955562a55310",
+      "result_id": "98722cf3-1f49-44c0-86f5-5090a426ec67"
+    },
+    {
+      "claim_id": "efeb6dd4-a6d8-4036-95e6-083f153065e1",
+      "result_id": "98722cf3-1f49-44c0-86f5-5090a426ec67"
+    },
+    {
+      "claim_id": "6e0f613c-c954-4dd3-867f-225f385dc1d1",
+      "result_id": "98722cf3-1f49-44c0-86f5-5090a426ec67"
+    },
+    {
+      "claim_id": "19fd6047-2477-4e01-82f6-866742bdbf92",
+      "result_id": "98722cf3-1f49-44c0-86f5-5090a426ec67"
+    },
+    {
+      "claim_id": "88c5a477-9dfa-4691-a910-e5fc3dc14b30",
+      "result_id": "98722cf3-1f49-44c0-86f5-5090a426ec67"
+    },
+    {
+      "claim_id": "a8a30edc-0bd1-43c9-9826-ff6360b1f172",
+      "result_id": "98722cf3-1f49-44c0-86f5-5090a426ec67"
+    },
+    {
+      "claim_id": "03e954d4-7f03-416e-9183-69d4cc457f60",
+      "result_id": "98722cf3-1f49-44c0-86f5-5090a426ec67"
+    },
+    {
+      "claim_id": "03f745c8-3c84-4c7d-806b-32457831bf9d",
+      "result_id": "ce865369-ffe9-4978-8c3a-2629c92604fc"
+    },
+    {
+      "claim_id": "7a00d282-8c9e-4929-9d4a-eb8cb8f89b7e",
+      "result_id": "ce865369-ffe9-4978-8c3a-2629c92604fc"
+    },
+    {
+      "claim_id": "977b7711-2243-4ecd-be38-467fb24ee1d7",
+      "result_id": "ce865369-ffe9-4978-8c3a-2629c92604fc"
+    },
+    {
+      "claim_id": "efd9f9d7-8592-4374-a691-083e0e3b0472",
+      "result_id": "c04cb76c-95c2-498c-9d99-04011535bf37"
+    },
+    {
+      "claim_id": "c2f6e68a-7451-428f-b760-7878b9e8f379",
+      "result_id": "c04cb76c-95c2-498c-9d99-04011535bf37"
+    },
+    {
+      "claim_id": "a8184da7-c98e-4a78-80d4-1cfdcb473e0f",
+      "result_id": "c04cb76c-95c2-498c-9d99-04011535bf37"
+    },
+    {
+      "claim_id": "a8916568-e2e7-431f-b1cb-b4fbe2e59e85",
+      "result_id": "c04cb76c-95c2-498c-9d99-04011535bf37"
+    },
+    {
+      "claim_id": "34d55f39-4b3d-4b19-98e9-4584d26d62f9",
+      "result_id": "97401d64-a115-49a4-8c4e-ea7ab71f349a"
+    },
+    {
+      "claim_id": "2370c6f1-c073-4493-9b6a-cb313633716a",
+      "result_id": "97401d64-a115-49a4-8c4e-ea7ab71f349a"
+    },
+    {
+      "claim_id": "08d526ad-6f5d-4966-b62a-a037b2f9ee5c",
+      "result_id": "97401d64-a115-49a4-8c4e-ea7ab71f349a"
+    },
+    {
+      "claim_id": "4b42036c-4fc3-434d-97df-35da3c4af7ed",
+      "result_id": "97401d64-a115-49a4-8c4e-ea7ab71f349a"
+    },
+    {
+      "claim_id": "a513432f-2e90-425b-b517-27fd2b0a665b",
+      "result_id": "97401d64-a115-49a4-8c4e-ea7ab71f349a"
+    },
+    {
+      "claim_id": "b668a08c-cd23-4dee-9760-82d46abdcab0",
+      "result_id": "97401d64-a115-49a4-8c4e-ea7ab71f349a"
+    },
+    {
+      "claim_id": "adce9a76-eb35-494e-9b0e-b0db0af6193a",
+      "result_id": "97401d64-a115-49a4-8c4e-ea7ab71f349a"
+    },
+    {
+      "claim_id": "7113d02d-3071-4d32-8b34-51ce9ecd14a6",
+      "result_id": "93309e2f-9350-49db-9ef2-7c20dea1167c"
+    },
+    {
+      "claim_id": "d771e717-5992-480c-b011-676003357536",
+      "result_id": "93309e2f-9350-49db-9ef2-7c20dea1167c"
+    },
+    {
+      "claim_id": "e542f55e-7c09-44cf-9b32-89493a506a28",
+      "result_id": "2c4c9dd7-412c-4321-b411-17f3ca8c9402"
+    },
+    {
+      "claim_id": "96a1a044-2d0c-42e2-9706-3d84d119ff15",
+      "result_id": "2c4c9dd7-412c-4321-b411-17f3ca8c9402"
+    },
+    {
+      "claim_id": "456e8f7d-6047-4750-a800-9d4f0afed8ec",
+      "result_id": "2c4c9dd7-412c-4321-b411-17f3ca8c9402"
+    },
+    {
+      "claim_id": "309ddd4e-d00b-4009-aa2a-4fdc84f77802",
+      "result_id": "2c4c9dd7-412c-4321-b411-17f3ca8c9402"
+    },
+    {
+      "claim_id": "7dbad750-f35d-4a91-b9af-99f236441597",
+      "result_id": "612c3fba-3b18-4b49-9391-1a6db5997f9d"
+    },
+    {
+      "claim_id": "c40d78d5-f13f-463a-8e46-fcda667d529a",
+      "result_id": "612c3fba-3b18-4b49-9391-1a6db5997f9d"
+    },
+    {
+      "claim_id": "4af11367-4267-495f-81eb-b4e2f4c1d500",
+      "result_id": "612c3fba-3b18-4b49-9391-1a6db5997f9d"
+    },
+    {
+      "claim_id": "aa4363af-337f-4387-94b9-fecee1f50581",
+      "result_id": "1ae084e0-828b-4420-bd8a-2ebecca10f0a"
+    },
+    {
+      "claim_id": "a9cc04ba-0318-416a-8026-0e9f11d31f3f",
+      "result_id": "1ae084e0-828b-4420-bd8a-2ebecca10f0a"
+    },
+    {
+      "claim_id": "f9e9e27f-96b4-4006-8968-cc9b73a12070",
+      "result_id": "1ae084e0-828b-4420-bd8a-2ebecca10f0a"
+    },
+    {
+      "claim_id": "8fc5f7c5-6dbb-4125-b845-aec99cd72ba6",
+      "result_id": "1ae084e0-828b-4420-bd8a-2ebecca10f0a"
+    },
+    {
+      "claim_id": "06fd0840-712c-4e7b-b699-795d634fd9ff",
+      "result_id": "1ae084e0-828b-4420-bd8a-2ebecca10f0a"
+    },
+    {
+      "claim_id": "2f10ffff-8fe4-4e53-88b1-f39152d24bf4",
+      "result_id": "1ae084e0-828b-4420-bd8a-2ebecca10f0a"
+    },
+    {
+      "claim_id": "3fe0d78b-7b91-4021-96eb-ff4ed96b623a",
+      "result_id": "ef76ef7d-3e85-4075-96af-bc2389c97439"
+    },
+    {
+      "claim_id": "cf21300f-ddea-426b-927d-308c41d00e0e",
+      "result_id": "ef76ef7d-3e85-4075-96af-bc2389c97439"
+    },
+    {
+      "claim_id": "6780499a-5812-4f88-be65-d0359830638f",
+      "result_id": "ef76ef7d-3e85-4075-96af-bc2389c97439"
+    },
+    {
+      "claim_id": "56623326-b2ad-40af-81da-78ca7c6a730b",
+      "result_id": "ef76ef7d-3e85-4075-96af-bc2389c97439"
+    },
+    {
+      "claim_id": "7cb8b807-1d38-453a-bdd7-1f08d2b72bd4",
+      "result_id": "ef76ef7d-3e85-4075-96af-bc2389c97439"
+    },
+    {
+      "claim_id": "984775c0-b34b-444c-af4d-258abca6ae69",
+      "result_id": "ef76ef7d-3e85-4075-96af-bc2389c97439"
+    },
+    {
+      "claim_id": "8b9bafa0-aa01-4eca-8b6d-8c76d1481a6c",
+      "result_id": "ef76ef7d-3e85-4075-96af-bc2389c97439"
+    },
+    {
+      "claim_id": "18ef5620-7dda-42ee-bbe6-a8c603b56945",
+      "result_id": "ef76ef7d-3e85-4075-96af-bc2389c97439"
+    },
+    {
+      "claim_id": "b78ff164-1d70-4618-8030-6f3717cc00be",
+      "result_id": "ef76ef7d-3e85-4075-96af-bc2389c97439"
+    },
+    {
+      "claim_id": "33f39f3a-0d64-41c9-b795-12877a3f84e6",
+      "result_id": "ef76ef7d-3e85-4075-96af-bc2389c97439"
+    },
+    {
+      "claim_id": "6af61b18-3893-4beb-8367-b22eb3059739",
+      "result_id": "84409c18-d6e5-4e36-9238-e1a8a0ed0cb7"
+    },
+    {
+      "claim_id": "208a4138-7955-487c-8848-23eab2620d69",
+      "result_id": "84409c18-d6e5-4e36-9238-e1a8a0ed0cb7"
+    },
+    {
+      "claim_id": "9034eff4-d1fb-49b4-8c71-267f29b81ec9",
+      "result_id": "84409c18-d6e5-4e36-9238-e1a8a0ed0cb7"
+    },
+    {
+      "claim_id": "7850ab21-190c-4315-af41-fbe41c5bcc30",
+      "result_id": "84409c18-d6e5-4e36-9238-e1a8a0ed0cb7"
+    },
+    {
+      "claim_id": "19d4cb14-1532-4f64-9e3a-cba1c2c36857",
+      "result_id": "84409c18-d6e5-4e36-9238-e1a8a0ed0cb7"
+    },
+    {
+      "claim_id": "77388024-dad8-4615-b128-8adbd3a3b798",
+      "result_id": "84409c18-d6e5-4e36-9238-e1a8a0ed0cb7"
+    },
+    {
+      "claim_id": "b331cc4d-88ad-437c-82a9-13503b017c2a",
+      "result_id": "84409c18-d6e5-4e36-9238-e1a8a0ed0cb7"
+    },
+    {
+      "claim_id": "5730fac5-ffdb-49b5-9d5d-926b8e03cae8",
+      "result_id": "84409c18-d6e5-4e36-9238-e1a8a0ed0cb7"
+    },
+    {
+      "claim_id": "64f7b167-9156-4c0a-8e92-da38992a9bf0",
+      "result_id": "84409c18-d6e5-4e36-9238-e1a8a0ed0cb7"
+    },
+    {
+      "claim_id": "165a85c9-d1fc-4065-993e-4c017f9e02b9",
+      "result_id": "26f6e9b1-6415-456f-a98d-4aeae692138d"
+    },
+    {
+      "claim_id": "87770582-4317-4e0e-88b5-1bca2331cc90",
+      "result_id": "26f6e9b1-6415-456f-a98d-4aeae692138d"
+    },
+    {
+      "claim_id": "b3d517a8-33f9-4443-8caf-7b61496e8a88",
+      "result_id": "26f6e9b1-6415-456f-a98d-4aeae692138d"
+    },
+    {
+      "claim_id": "0b082944-6a85-49f2-b667-dac1b645155e",
+      "result_id": "cd066777-40c5-49bd-9ddf-81bae852f55f"
+    },
+    {
+      "claim_id": "8492c0e9-3953-4156-9cc8-0f3221e43633",
+      "result_id": "cd066777-40c5-49bd-9ddf-81bae852f55f"
+    },
+    {
+      "claim_id": "d971cd58-abf8-421a-ba38-8cd0d775b209",
+      "result_id": "cd066777-40c5-49bd-9ddf-81bae852f55f"
+    },
+    {
+      "claim_id": "b0960f34-03ff-4a22-96c9-58e509fad319",
+      "result_id": "cd066777-40c5-49bd-9ddf-81bae852f55f"
+    },
+    {
+      "claim_id": "f5a0781b-1a6a-4211-847e-aac051ebeead",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "324c6ffa-cd05-4518-82e3-0df839832804",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "4315cd0c-11e6-44f7-97bb-9793ccfe0ddc",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "0c421dcb-df57-4554-8005-6352c9194bb1",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "85fc121d-94ab-403a-a9d7-06e16bc8ab52",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "76ac52f8-4e24-46b0-8b3a-3c0eab5587c6",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "727ad0e7-fa71-4b3c-b254-7393c859c38f",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "0be77076-98b8-49c4-9369-b237ba0ab190",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "88bec4c5-60fb-49db-ba8b-ce88aa89129d",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "daf155db-fc85-4ec3-b63c-6e8558857b35",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "744fbbb6-0273-4f02-807d-056eafb39057",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "e2a8023a-ec40-44d1-90da-09348bf107ae",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "441f6c38-76f3-41e5-b10e-d5ca812c512e",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "1874223d-b849-4a01-b50b-5c50d05e8164",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "0f554ae7-b105-4346-bdf3-3a068cdc010b",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "a41fdcf0-511a-4bc7-809c-0ef367a48663",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "5ffb95bf-eb52-41a9-a6ca-4e9b2051ab98",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "df9d6166-7476-4ba2-95bb-408b4f151fe7",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "bdd3995b-327c-4934-aed3-2582135a5512",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "36e06e27-cbfc-4981-9b5a-2644ac4aad94",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "c8723abd-72c8-4925-b5d6-681fb030eae3",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "279f3a13-8ddc-43ef-a427-cb5e04242ea6",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "5689f353-8e19-41d5-b60f-e2407c96caa1",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "6c23f08e-3951-4a8c-9df0-18443c6aad71",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "6140be8f-6bb6-44c3-8bba-9522302407a2",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "8b0d6bc9-be99-4e2b-9f45-8702d327b2b3",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "78a1d461-5138-48f0-b162-d6ed54e144b0",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "27dca6ae-f6e5-48fe-b618-b80726891f00",
+      "result_id": "d3f25957-45a8-4b71-9bca-be546a0b6e8f"
+    },
+    {
+      "claim_id": "36ceb5ab-4941-4f67-9d30-cc1aad21b8ad",
+      "result_id": "ded55563-b45c-4691-8526-af9c706b0b48"
+    },
+    {
+      "claim_id": "e8357a25-8356-49ed-bdd1-576c1ef12ff5",
+      "result_id": "ded55563-b45c-4691-8526-af9c706b0b48"
+    },
+    {
+      "claim_id": "e7ffa174-6445-4b50-a9f2-e6967c3c5d68",
+      "result_id": "ded55563-b45c-4691-8526-af9c706b0b48"
+    },
+    {
+      "claim_id": "6f6c8ef5-f4cd-488d-a1a5-add55e4582dd",
+      "result_id": "ded55563-b45c-4691-8526-af9c706b0b48"
+    },
+    {
+      "claim_id": "12fce912-36f1-4fcf-8645-b0da7e967555",
+      "result_id": "ded55563-b45c-4691-8526-af9c706b0b48"
+    },
+    {
+      "claim_id": "ca32cc48-fe19-4dda-af3b-5a352fcd48bc",
+      "result_id": "ded55563-b45c-4691-8526-af9c706b0b48"
+    },
+    {
+      "claim_id": "9c05c825-ecd8-4d20-a7b1-4f4cf4896524",
+      "result_id": "ded55563-b45c-4691-8526-af9c706b0b48"
+    },
+    {
+      "claim_id": "e7dc2db0-b086-4e4e-b38a-e14ddaa0f892",
+      "result_id": "ded55563-b45c-4691-8526-af9c706b0b48"
+    },
+    {
+      "claim_id": "97d809cf-f34e-4e23-8931-36b075215e4b",
+      "result_id": "ded55563-b45c-4691-8526-af9c706b0b48"
+    },
+    {
+      "claim_id": "bf0a21cd-d534-4002-bb6c-8c0d1b265170",
+      "result_id": "ded55563-b45c-4691-8526-af9c706b0b48"
+    },
+    {
+      "claim_id": "994e9773-4a4b-4bd8-88b2-06fce60fc4eb",
+      "result_id": "ded55563-b45c-4691-8526-af9c706b0b48"
+    },
+    {
+      "claim_id": "45cfa485-037f-48bb-8e4f-a64d13efbfb7",
+      "result_id": "ded55563-b45c-4691-8526-af9c706b0b48"
+    },
+    {
+      "claim_id": "6511920c-e992-47a0-ad9b-7586b088c658",
+      "result_id": "ded55563-b45c-4691-8526-af9c706b0b48"
+    },
+    {
+      "claim_id": "bf3a9b78-8c64-4030-b0de-daf101e1cd05",
+      "result_id": "dbf61d16-49be-4fe6-bee4-75f970e18658"
+    },
+    {
+      "claim_id": "abfcfd96-d453-400f-8ebb-e95556fa44c6",
+      "result_id": "dbf61d16-49be-4fe6-bee4-75f970e18658"
+    },
+    {
+      "claim_id": "94c87989-1328-4e8a-991b-10a5d28ae2fc",
+      "result_id": "dbf61d16-49be-4fe6-bee4-75f970e18658"
+    },
+    {
+      "claim_id": "d51095bc-eae3-4fe6-87a1-219c28c2f871",
+      "result_id": "dbf61d16-49be-4fe6-bee4-75f970e18658"
+    },
+    {
+      "claim_id": "a4e8c3ec-6c0c-43a3-a975-1c9ed13752ee",
+      "result_id": "7e1f603a-a307-4a25-aeb6-ffd4a6f00177"
+    },
+    {
+      "claim_id": "dbeb5d0c-7e08-477f-8d6b-d5d6553b0598",
+      "result_id": "7e1f603a-a307-4a25-aeb6-ffd4a6f00177"
+    },
+    {
+      "claim_id": "155781d3-278a-45a7-aa90-726a5a78f131",
+      "result_id": "7e1f603a-a307-4a25-aeb6-ffd4a6f00177"
+    },
+    {
+      "claim_id": "cfee8a60-6179-4680-97c1-5da4297dab25",
+      "result_id": "7e1f603a-a307-4a25-aeb6-ffd4a6f00177"
+    },
+    {
+      "claim_id": "108204bd-6a8a-44d7-a246-eed1b7e43a2e",
+      "result_id": "7e1f603a-a307-4a25-aeb6-ffd4a6f00177"
+    },
+    {
+      "claim_id": "33f1c20f-b33c-472c-be28-99a3a502f8e0",
+      "result_id": "7e1f603a-a307-4a25-aeb6-ffd4a6f00177"
+    },
+    {
+      "claim_id": "2b381c7e-1059-493d-8099-836e05e7531a",
+      "result_id": "7e1f603a-a307-4a25-aeb6-ffd4a6f00177"
+    },
+    {
+      "claim_id": "38c001b1-0eb9-4dea-b100-fb2b4ee7d9f4",
+      "result_id": "7e1f603a-a307-4a25-aeb6-ffd4a6f00177"
+    },
+    {
+      "claim_id": "91e3d932-451b-4f65-83a9-feb51ecb372f",
+      "result_id": "91351ef8-9353-448d-9739-89d77a190909"
+    },
+    {
+      "claim_id": "db33dedf-fd67-40a6-8697-366ca983fccb",
+      "result_id": "91351ef8-9353-448d-9739-89d77a190909"
+    }
+  ],
+  "comparisons": []
+}

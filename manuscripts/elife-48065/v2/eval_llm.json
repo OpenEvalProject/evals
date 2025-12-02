@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The study enrolled 11 epilepsy patients with subdural electrode arrays, with 2 excluded for task adherence issues, leaving 9 for behavioral analysis and 7 for neural analysis due to lack of sensorimotor coverage in 2 additional participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide clear documentation of participant enrollment, exclusion criteria, and final sample sizes. The methodological transparency regarding participant selection and data quality control is appropriate for this clinical population study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C18",
+      "C19"
+    ],
+    "result": "Participants performed a motor imagery task involving imagined grasping of a cylinder presented at 15 orientations, with individualized timing (2-5s), alternating hands every 10 trials across up to 3 sessions. A control task was completed by 8/9 participants with 99.4\u00b10.3% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15, C18-C19 comprehensively describe the experimental paradigm with appropriate detail. The high accuracy on the control task (C19) validates that participants could perform the visual discrimination aspects independent of motor imagery, strengthening the interpretation of imagery-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C78"
+    ],
+    "result": "Participants' imagined grasping behavior followed biomechanical constraints, with sine-wave fits explaining 81\u00b14% (left hand) and 76\u00b14% (right hand) of variance in over/underhand grip selection as a function of cylinder orientation (both p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C78 demonstrate that motor imagery adhered to realistic biomechanical constraints. The high variance explained by sine-wave fits and significant statistics provide strong evidence that participants performed genuine motor simulation rather than arbitrary responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Alpha-band local maxima (n=20 electrodes) were exclusively postcentral (\u03c7\u00b2(19)=40, p<0.001), while beta-band maxima (n=17) were distributed across the central sulcus (7 precentral, 10 postcentral, \u03c7\u00b2(16)=1.1, p=0.3). Only 7/30 electrodes showed maxima for both rhythms (\u03c7\u00b2(29)=17, p<0.001), with average spatial separation of 11.8\u00b12.2mm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 provide robust statistical evidence for anatomical dissociation of alpha and beta rhythms. The chi-squared tests appropriately assess spatial distributions, and the minimal overlap (7/30 electrodes) strongly supports distinct neuronal generators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C79"
+    ],
+    "result": "Electrical stimulation of alpha electrodes predominantly evoked somatosensory sensations (14/20, 70%, \u03c7\u00b2(19)=12.4, p<0.001), while beta electrodes were marginally more likely to evoke somatomotor responses (11/17, 65%, \u03c7\u00b2(16)=2.9, p=0.086), suggesting alpha predominantly supports somatosensory components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C79 provide functional validation of the anatomical dissociation through electrical stimulation mapping. The significant chi-squared test for alpha (C25) is convincing, though the marginal result for beta (C27, p=0.086) is weaker. The inference in C79 is reasonable given the postcentral location and stimulation responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Alpha and beta temporal dynamics were correlated (r=0.7\u00b10.1, p<0.002), but showed distinct lateralization patterns: alpha power increased ipsilaterally (+34%, 910-1220ms, p<0.05) while decreasing contralaterally (-26% and -32% in two intervals), whereas beta power decreased more strongly contralaterally (-21% in two intervals) than ipsilaterally (-13%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 document differential temporal dynamics despite overall correlation. The specific time windows and percentage changes are precisely reported. However, C29 is the only change with a reported p-value (<0.05), raising questions about statistical significance of other reported changes. The pattern is consistent with prior MEG work (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C82"
+    ],
+    "result": "When rhythmic activity was separated from arrhythmic 1/f components, alpha and beta rhythms showed no temporal or spatial correlation (BF01>1.56) and weak representational similarity in trial-by-trial demands (BF01s: 1.06, 1.01, 0.73), indicating no substantial spatiotemporal correspondence within or across trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C82 demonstrate that proper spectral decomposition reveals independence of alpha and beta rhythms. The Bayesian analysis appropriately quantifies evidence for the null hypothesis. This contrasts with spurious correlations when 1/f components are not separated (C102), highlighting methodological importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Using individual spectral decomposition, alpha and beta rhythms were centered at 7.4\u00b10.7 Hz and 16.9\u00b11.1 Hz respectively. Five participants had alpha components overlapping 8-12 Hz, one below this range, and all seven had beta components overlapping 15-25 Hz. One participant (S7) lacked alpha rhythm and was excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 document the individualized spectral approach and resulting frequency distributions. The exclusion of S7 for lacking alpha rhythm is methodologically sound. This approach addresses known inter-individual variability in peak frequencies, strengthening the physiological interpretability of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "High-frequency activity (60-120 Hz) showed spatial and temporal correspondence with both alpha and beta rhythms, with local maxima involving 14/22 electrodes overlapping with alpha/beta generators. However, only 3/47 electrodes were maxima for both high-frequency activity and 1/f slope inhibition index.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 characterize high-frequency activity relationships. The overlap patterns are clearly quantified. However, the lack of clear effector-specificity mentioned in the text limits functional interpretation, appropriately acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C83",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Beta-band activity showed 59% spatial correspondence with 1/f slope inhibition index (10/17 electrodes) and strong spatiotemporal correlation, indicating that beta power reduction in contralateral somatomotor cortex is associated with relative disinhibition. The 1/f slope was functionally specific to effector laterality (\u03c7\u00b2(27)=10.3, p<0.002) and localized to somatomotor sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C83, C91-C93 establish a clear relationship between beta power and excitation/inhibition balance indexed by 1/f slope. The spatial correspondence (59%), statistical validation, and functional specificity provide converging evidence. The interpretation of disinhibition is well-supported by the inverse relationship between beta power and 1/f slope.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C84",
+      "C85"
+    ],
+    "result": "Alpha-band activity showed only 25% spatial correspondence with 1/f slope (5/20 electrodes) but significant temporal anti-correlation, suggesting that increased ipsilateral alpha power is associated with spatially unspecific inhibition. This effect was unlikely driven by attention, as no lateralized baseline changes occurred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C84-C85 document a different relationship between alpha and inhibition compared to beta. The temporal anti-correlation without spatial correspondence suggests a different mechanism. The control for attentional effects (C85) strengthens the motor-specific interpretation, though this inference relies on absence of an effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Both alpha and beta rhythms organized as traveling waves with significant phase gradient alignment (PGD: alpha=0.37, beta=0.35, p<0.001) and consistent directionality (Rayleigh test: p<10\u207b\u00b9\u2078 for alpha in 5/6 patients, p<10\u207b\u2079\u00b9 for beta in all). Alpha waves propagated caudo-rostrally (5-9 cm/s) while beta waves moved rostro-caudally (11-21 cm/s), with independent propagation directions (KL divergence=0.10, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 provide comprehensive characterization of traveling waves with appropriate statistical tests. The opposite propagation directions and independent distributions (KL divergence) are novel findings. The propagation speeds are consistent with prior literature (C45). The extremely small p-values for directional consistency are compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Alpha traveling waves showed increased directional consistency during ipsilateral arm imagery, while beta waves became more consistent during contralateral arm imagery, compared to baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 demonstrate task-related modulation of traveling wave properties, linking the spatiotemporal organization to motor function. This provides functional validation that the traveling waves are not merely epiphenomenal but relate to movement-specific processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "ECoG data were acquired at 512 Hz with analog filtering (0.15-134.4 Hz). Trials with overt movements/distractions (6\u00b12%) and epileptic activity/artifacts (2\u00b12%) were excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 document data acquisition parameters and quality control procedures. The exclusion rates are reasonable and transparently reported. These are standard methodological details appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Linear fits for 1/f slope estimation (30-50 Hz range) achieved mean R\u00b2=0.95\u00b10.00 across all fits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 documents excellent model fit quality for the 1/f slope estimation, validating this analytical approach. The high R\u00b2 supports the reliability of this measure as an index of excitation/inhibition balance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study's main findings are that alpha and beta rhythms both show effector-specific modulations, track action potential markers, and organize as traveling waves, but differ in anatomical/functional properties, are weakly correlated, travel in opposite directions, and have distinct effects on cortical excitability (alpha: ipsilateral spatially-unspecific inhibition; beta: contralateral focal disinhibition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 summarize the major findings from the Abstract. These summary claims are well-supported by the detailed results documented in other claim groups. The integration of multiple lines of evidence (anatomy, stimulation, temporal dynamics, traveling waves, excitability indices) provides strong convergent support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study concludes that both disinhibition and inhibition mechanisms are relevant for spatiotemporal coordination of movement-related neuronal populations, and that alpha and beta rhythms have dramatically different neurophysiological properties, questioning the practice of aggregating them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 present the main conclusions. These are well-supported by the convergent evidence from multiple analyses. The recommendation against aggregating alpha and beta rhythms (C98) is justified by the demonstrated differences in anatomy, function, temporal dynamics, and effects on excitability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C80",
+      "C86",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "The study's theoretical framework and analytical approaches are grounded in prior literature establishing: shared processes between movement selection and motor imagery (C67-C68), high-frequency activity as a marker of neural firing (C69), 1/f slope as an E/I balance index (C70, C89-C90), differences in alpha/beta cortico-subcortical loops (C71-C72), historical aggregation of alpha/beta rhythms (C73-C77), and traveling wave phenomena (C76-C77, C86-C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C77, C80, C86-C87, C89-C90 appropriately cite prior work to establish theoretical context and validate analytical approaches. The citations appear appropriate and support the study's rationale. However, these are literature-based claims rather than new empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors speculate that spatially unspecific ipsilateral inhibition may suppress task-irrelevant movements (C99), that contralateral excitability profiles may coordinate cortical ensembles toward movement-effective neural subspaces (C100), and that different cortico-thalamo-cortical circuits might generate different traveling waves (C101).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C101 are explicitly speculative interpretations. While plausible and grounded in the data, they extend beyond what is directly demonstrated. C99 lacks direct evidence for suppression of irrelevant movements. C100 and C101 propose mechanisms that would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors acknowledge that standard analytical pipelines ignoring spectral decomposition produce spurious alpha-beta correlations (C102), that spatial separation may be too subtle for non-invasive recordings (C103), and that statistical power may have been insufficient for task demand effects (C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 appropriately acknowledge methodological considerations and limitations. C102 is supported by supplementary analyses. C103 and C104 are reasonable caveats about generalizability and statistical power in this clinical sample.",
+    "result_type": "MINOR"
+  }
+]

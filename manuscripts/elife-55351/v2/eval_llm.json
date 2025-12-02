@@ -1,0 +1,199 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Ena/VASP proteins positively regulate 2D cell migration in B16-F1 melanoma cells. Consecutive knockout of Evl, VASP, and Mena resulted in progressively reduced migration rates (from 1.44 \u00b5m/min in wild-type to 0.43 \u00b5m/min in triple-KO), increased directionality (46% higher in triple-KO), and reduced mean square displacement. These phenotypes were rescued by re-expression of VASP, Evl, or Mena, with VASP being most effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C59 provide comprehensive quantitative data showing dose-dependent effects of Ena/VASP removal on migration parameters, with appropriate statistical analysis and rescue experiments (C56-C57). The findings are consistent across multiple independent clones and cell types (C110, C112), with mechanistic explanation linking reduced migration to decreased lamellipodial actin assembly (C111). The data directly contradict prior literature (C1, C41-C43) but are well-supported by the experimental evidence presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Loss of Ena/VASP proteins reduces lamellipodial actin assembly and protrusion. EVM-KO cells showed 45% reduction in F-actin content, 65% reduction in lamellipodium width (from 2.3 \u00b5m to 0.8 \u00b5m), 35% reduction in protrusion rate, and 22% reduction in actin network translocation. VASP re-expression rescued these defects and even increased F-actin intensity 40% above wild-type levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary measurements (phalloidin staining C62-C63, kymograph analysis C79, FRAP C81) consistently demonstrate reduced lamellipodial actin assembly. The rescue experiments (C64-C65) confirm specificity. Notably, lamellipodial persistence was not significantly affected (C80), demonstrating that protrusion rate and persistence can be uncoupled, which strengthens the interpretation that the primary defect is in actin assembly rather than lamellipodial stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Electron tomography reveals that EVM-KO lamellipodia have severely disrupted architecture with sparser, shorter filaments and altered network geometry. Filaments in the front region were considerably shorter, filament density decreased faster toward the interior, barbed ends and pointed ends occurred in excess at the edge, and the distribution of filament angles was altered with 17% lower peak at 90\u00b0 and doubled diagonal angles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electron tomography data (C82-C88) provides direct, high-resolution structural evidence for the lamellipodial defects. The quantitative measurements of filament length (C83), density gradients (C84), barbed/pointed end distributions (C85-C86), and angular distributions (C87-C88) are internally consistent and support the interpretation (C89) that reduced filament mass and disordered geometry cause the functional defects. This represents the most detailed structural characterization of the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Loss of Ena/VASP causes abnormal accumulation of Arp2/3 complex and capping protein at lamellipodial tips. In EVM-KO cells, Arp2/3 complex and CP distributions were 64% and 60% narrower respectively, but with 75% higher intensities at the tips. Cortactin showed similar changes, while WAVE2 distribution was unchanged. The authors propose two possible mechanisms: increased CP at barbed ends enhancing Arp2/3 activity, or increased Arp2/3 branching activity leading to CP recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The immunofluorescence data (C74-C78) clearly demonstrate altered distributions of Arp2/3 complex, CP, and cortactin, with appropriate rescue controls. However, the mechanistic interpretations (C113-C119) are speculative and based primarily on prior literature rather than direct experimental evidence in this study. The authors present two alternative hypotheses but do not distinguish between them experimentally. The unchanged WAVE2 distribution (C78) is informative but does not definitively resolve the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Ena/VASP proteins are absolutely required for microspike formation but not for all filopodia. EVM-KO cells completely lacked microspikes and fascin-containing bundles despite unchanged fascin expression. Strikingly, established filopodia inducers (mDia2, FMNL2, FMNL3, myosin X, Rif) could not rescue microspikes in EVM-KO cells. However, filopodia could still form in EVM-KO cells after Arp2/3 inhibition or mDia2 expression, suggesting microspikes form exclusively by convergent elongation while filopodia can arise by multiple mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The complete absence of microspikes in triple-KO cells (C8, C66, C68) combined with the inability of multiple filopodia inducers to rescue them (C69) provides strong evidence for the specific requirement of Ena/VASP. The demonstration that filopodia can still form under certain conditions (C71-C73) establishes a clear functional distinction. This represents a novel finding that resolves a long-standing controversy in the field (C121-C123). The experimental design with multiple rescue attempts strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C128",
+      "C129"
+    ],
+    "result": "Ena/VASP deficiency impairs integrin-mediated adhesion and focal adhesion formation, with Evl being most effective for rescue. MVE-KO cells showed substantial spreading defects, 30% reduced vinculin intensity, and 18% reduced FA size. Among the three family members, Evl rescue was most effective for adhesion parameters, increasing FA size by 24% compared to 11% for VASP and 16% for Mena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple adhesion parameters (spreading C90, C100-C101; FA size C91-C92, C96-C98; vinculin intensity C93-C95, C102) consistently demonstrate adhesion defects in Ena/VASP-deficient cells. The systematic comparison of rescue efficiency across all three family members (C92, C95, C97-C99) provides strong evidence for Evl's specialized role. The use of automated FA analysis tools (mentioned in methods) reduces bias. The findings are consistent across two cell types (MVD7 and B16-F1), strengthening the conclusion (C128-C129).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C130",
+      "C131"
+    ],
+    "result": "Loss of Evl reduces traction forces exerted by cells. MVE-KO cells showed significantly reduced contractile energy compared to MVD7 cells, which was rescued by Evl re-expression to levels similar to parental cells. FRAP data suggest Evl is more stably associated with focal adhesion components than VASP, with a moderate but significant increase in immobile fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The traction force microscopy data (C106-C109) using both patterned and unpatterned substrates provides direct functional evidence for the role of Evl in force generation. The rescue experiments (C107-C108) confirm specificity. The FRAP data (C103, C131) provides a mechanistic explanation for Evl's specialized role, though the difference in immobile fraction is modest. The combination of functional (traction forces) and mechanistic (FRAP) data strengthens the conclusion (C130).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "No significant differences in 3D Matrigel invasion rates were found between EVM-KO and B16-F1 control cells, suggesting that Ena/VASP-driven promotion of actin-based protrusion is less important for migration in confinement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 3D invasion data (C60) clearly shows no significant difference between wild-type and EVM-KO cells, which is surprising given the dramatic 2D migration defects. The interpretation (C61) that Ena/VASP function is less important in confined migration is reasonable and supported by citations to prior work showing that confined migration relies more on actomyosin contractility. However, the authors acknowledge that mechanistic details remain to be established and that additional 3D settings should be tested, which is appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Evl shows increased stability in focal adhesions compared to VASP. FRAP experiments revealed that Evl had a statistically significant increase in immobile fraction in focal adhesions compared to VASP, but no differences in turnover rates in either focal adhesions or lamellipodia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FRAP data (C103-C104) provides direct measurements of protein dynamics. The finding of increased immobile fraction for Evl without changes in turnover rates is internally consistent and provides a mechanistic explanation for Evl's specialized role in adhesion (C105). However, the difference in immobile fraction is described as \"moderate,\" and the functional significance of this difference could be more directly tested. The conclusion that this explains Evl's role in adhesion (C105) is reasonable but somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C137"
+    ],
+    "result": "Despite being the most abundant Ena/VASP protein in both melanoma and fibroblast cell lines, Mena produces comparably modest phenotypes upon elimination. The authors speculate that Mena may not find its relevant interactors in these cell types and may be more important in other contexts like cell-cell contacts or the nervous system. VASP's higher expression compared to Evl may explain its more prominent role in cell migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantification of cellular protein concentrations (C133) provides direct evidence for Mena's high abundance. The observation of modest phenotypes (C134) is supported by the migration data throughout the manuscript. However, the explanations offered (C135, C137) are speculative and based on inference rather than direct experimental evidence. The speculation is reasonable and appropriately presented as such, supported by citations to contexts where Mena is known to be important. This represents an important observation about protein abundance not correlating with phenotypic severity.",
+    "result_type": "MINOR"
+  }
+]

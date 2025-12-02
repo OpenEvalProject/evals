@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C66"
+    ],
+    "result": "wdr-5 mutant longevity is a transgenerational trait that develops gradually over at least 20 generations, with P0 mutants showing no lifespan extension, mid-generation mutants showing modest increases, and late-generation mutants (F20+) consistently exhibiting significant lifespan extension averaging 17%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 and C66 provide comprehensive lifespan data across multiple generations and replicates showing the gradual acquisition of longevity in wdr-5 mutants. The data include appropriate statistical tests, multiple biological replicates (8 for P0), and consistent patterns across independent experiments. The phenotype is reproducible and reversible upon environmental perturbation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C67",
+      "C68"
+    ],
+    "result": "Wild-type lifespan decreases by 12% over generational time following recovery from freezing or starvation, with the decrease occurring primarily between early- and mid-generation populations before reaching steady state around generation 12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 and C67-C68 demonstrate a reproducible transgenerational decrease in wild-type lifespan with appropriate controls (outcross vs. thaw comparisons) and statistical support. The starvation experiment (C35) provides mechanistic insight into the cause of this phenomenon. This finding is important for interpreting the relative lifespan changes in mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C70",
+      "C71"
+    ],
+    "result": "wdr-5 mutant lifespan increases by 20% over generational time, primarily between mid- and late-generation populations, with late-generation mutants living longer than any generation of wild type and showing an average 22% increase compared to late-generation wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C70, and C71 are well-supported by direct lifespan comparisons across generations with appropriate statistical tests. The data demonstrate that the longevity phenotype is genuine and not solely due to wild-type lifespan changes, as late-gen mutants outlive even early-gen wild type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The transgenerational acquisition of longevity in wdr-5 mutants is not directly caused by reduced fecundity, as late-generation long-lived mutants do not have significantly fewer progeny than earlier generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 provide progeny count data with appropriate statistical analysis (unpaired t-test, p=0.11 and p=0.13) showing no correlation between progeny number and longevity onset. This addresses an important alternative explanation for the lifespan phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C73"
+    ],
+    "result": "The longevity phenotype in wdr-5 mutants can be reset by environmental perturbations (starvation or freezing) or genetic outcrossing, and subsequently reproduced, indicating the phenotype is epigenetic rather than due to genetic background effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C73 provide experimental evidence that the longevity phenotype is reversible and reproducible. The outcross experiment is particularly important for ruling out background mutations. Multiple independent resets were performed with consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "H3K9me2 enrichment correlates with lifespan changes across generations in both wild-type and wdr-5 mutant populations, with H3K9me2 decreasing as wild-type lifespan decreases and increasing as wdr-5 mutant lifespan increases, particularly at germline genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 and C75-C77 are supported by multiple lines of evidence including immunoblot, ChIP-seq across three biological replicates, and statistical analysis (paired t-test, p<0.0001). The correlation between H3K9me2 and lifespan is consistent across multiple comparisons, though the authors appropriately note the correlation is not absolute at all time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C3"
+    ],
+    "result": "The H3K9me2 methyltransferase MET-2 is required for the transgenerational acquisition of longevity in wdr-5 mutants, as wdr-5 met-2 double mutants remain short-lived across more than 20 generations and resemble met-2 single mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C45-C47 provide strong genetic evidence for MET-2 requirement through double mutant analysis across many generations. The data include appropriate controls (met-2 single mutants) and multiple replicates. The epistasis experiment is well-designed and executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C4"
+    ],
+    "result": "Loss of the putative H3K9me2 demethylase JHDM-1 recapitulates the transgenerational acquisition of longevity seen in wdr-5 mutants, with jhdm-1 mutants showing a more rapid and robust longevity effect (30% increase) that corresponds with genome-wide increases in H3K9me2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48-C53 provide comprehensive evidence that increased H3K9me2 is sufficient to extend lifespan. The jhdm-1 data include lifespan assays, immunoblot, ChIP-seq, and progeny counts across generations. The more rapid onset in jhdm-1 mutants compared to wdr-5 mutants supports a direct role for H3K9me2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C79"
+    ],
+    "result": "75% of H3K9me2 peaks in long-lived jhdm-1 mutants are shared with those in long-lived wdr-5 mutants, suggesting lifespan extension occurs through similar mechanisms in both mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C79 are supported by ChIP-seq peak overlap analysis. This finding strengthens the argument that H3K9me2 accumulation is the common mechanism underlying longevity in both mutant backgrounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C14"
+    ],
+    "result": "F3 genetically wild-type descendants of long-lived wdr-5 mutants inherit the longevity phenotype, living as long as their wdr-5 mutant cousins, with the phenotype reverting to normal by generation F5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C55, and C56 recapitulate prior published findings (Greer et al., 2011) with appropriate statistical tests and controls. The inheritance pattern is consistent across replicates and provides key evidence for transgenerational epigenetic inheritance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "MET-2 is required for the inheritance of longevity by wild-type descendants of wdr-5 mutants, as F3 met-2 mutant descendants are short-lived while their wild-type cousins from the same population remain long-lived.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 provide strong genetic evidence that MET-2 (and by inference H3K9me2) is required for transgenerational inheritance of longevity. The experimental design appropriately controls for genetic background by comparing cousins from the same ancestral population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C88"
+    ],
+    "result": "F3 and F5 genetically wild-type descendants of short-lived met-2 mutants have normal lifespan, suggesting H3K9me2 is directly involved in mediating longevity rather than acting through another factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C88 provide important evidence that the short lifespan of met-2 mutants is not inherited when H3K9me2 is restored, supporting a direct role for H3K9me2 in longevity. However, this experiment cannot definitively distinguish between direct and indirect effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C5"
+    ],
+    "result": "F4 wild-type descendants of long-lived jhdm-1 mutants inherit the longevity phenotype (17% increase), with the phenotype reverting to normal by generation F7, mirroring the inheritance pattern observed in wdr-5 mutant descendants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61, and C62 demonstrate that longevity inheritance is not specific to wdr-5 mutants but occurs in any context with elevated H3K9me2. The parallel inheritance patterns in jhdm-1 and wdr-5 descendants strengthen the argument for H3K9me2 as the heritable factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C90"
+    ],
+    "result": "Elevated H3K9me2 levels are inherited at a subset of loci in long-lived F4 wild-type descendants of jhdm-1 mutants (4 of 6 loci examined) and decrease back to wild-type levels by F7 when longevity reverts, providing molecular evidence for H3K9me2 inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 and C90 provide direct molecular evidence for H3K9me2 inheritance using ChIP-qPCR. The correlation between H3K9me2 levels and lifespan across generations at specific loci is compelling. However, the inheritance is locus-specific (4/6 loci) and variable between replicates, suggesting complexity in the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C85",
+      "C91",
+      "C100"
+    ],
+    "result": "Heterochromatin (H3K9me2) facilitates the transgenerational establishment and inheritance of longevity as a complex trait, with H3K9me2 serving as both the factor that extends lifespan and the heritable mark that transmits longevity to descendants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C6, C85, C91, and C100 represent the major conclusions of the paper, synthesizing evidence from lifespan assays, ChIP-seq, genetic epistasis, and inheritance experiments. The conclusion is well-supported by the collective data, though some mechanistic details remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C101"
+    ],
+    "result": "The authors propose a model in which transcription-coupled H3K4me deposition by COMPASS limits lifespan by encroaching upon H3K9me2 heterochromatin domains, with loss of COMPASS allowing H3K9me2 to accumulate and extend lifespan transgenerationally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C82-C84, C86-C87, and C101 represent a speculative model based on the experimental findings. While the model is consistent with the data and provides a mechanistic framework, it lacks direct experimental validation of the proposed antagonism between H3K4me and H3K9me2, the specific role of transcription, or the mechanism of H3K9me2 protection in wdr-5 mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The transgenerational acquisition of longevity in spr-5 mutants (which accumulate H3K4me2) likely occurs through a different mechanism than in wdr-5 mutants, as spr-5 longevity is mediated by the DAF-36/DAF-12 pathway while COMPASS mutant longevity is not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 appropriately distinguish the current findings from prior work on spr-5 mutants based on differences in histone modifications accumulated and genetic pathways involved. This comparison is important for defining the specificity of the H3K9me2-mediated mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The accumulation of mono-unsaturated fatty acids previously linked to COMPASS mutant longevity may be caused by higher H3K9me2 levels at the rsks-1 locus in long-lived populations, though this connection remains speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C99 attempt to connect the current findings with prior mechanistic work on fatty acid metabolism. While C98 provides ChIP-seq evidence for increased H3K9me2 at rsks-1, the causal connection to fatty acid accumulation (C99) is speculative and requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Starvation increases lifespan by altering the epigenetic landscape, based on the observation that wild-type descendants of starved animals live longer and prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is based on inference from the starvation experiment (C35) and citations to prior work. While the data show that starvation affects transgenerational lifespan, the specific claim that this occurs through epigenetic landscape alterations is not directly demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C80"
+    ],
+    "result": "Longevity appears more rapidly in jhdm-1 mutants than wdr-5 mutants, possibly because JHDM-1 has a more direct effect on H3K9me2, and jhdm-1 mutants appear healthier than wdr-5 mutants, suggesting H3K9me2 affects healthspan in addition to lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78 and C80 are based on observations and speculation. While the more rapid onset of longevity in jhdm-1 mutants is documented, the mechanistic explanation (C78) is speculative. The healthspan observation (C80) is mentioned but not quantified or rigorously assessed.",
+    "result_type": "MINOR"
+  }
+]

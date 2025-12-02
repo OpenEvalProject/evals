@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Phase amplitude coupling (PAC) changes during olfactory learning, with peak angle variance increasing for unrewarded odorants (S-) and modulation index showing small but significant changes between na\u00efve and proficient states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37, C42-C45 provide converging evidence from statistical analyses (GLM p<0.001) across multiple electrodes and mice showing PAC changes with learning. The data in Figure 2 demonstrates significant differences in MI and peak angle variance between S+ and S- trials, with appropriate statistical controls and multiple comparisons corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C54"
+    ],
+    "result": "Phase-referenced power (PRP) increases for rewarded odorants (S+) and decreases for unrewarded odorants (S-) as animals learn to discriminate, with peak PRP showing larger changes than trough PRP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C51, C54 are supported by extensive data across multiple odorant pairs (Figure 3) with GLM analyses showing p<0.001 for differences between S+/S-, peak/trough, and na\u00efve/proficient conditions. The consistency across experiments (Exp1 and Exp2) strengthens the finding, though Exp2 shows larger effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C63"
+    ],
+    "result": "PRP encodes contextual (reward-related) rather than chemical identity of odorants, as demonstrated by reversal experiments where PRP patterns switch with odorant valence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53, C63 are supported by reversal experiments (Figure 4) showing that peak PRP follows reward contingency regardless of chemical identity (GLM p<0.001). The analysis of behavioral outcomes (Figure 5E) further supports contextual encoding, with decoding performance diverging between correct and incorrect trials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Linear discriminant analysis can decode odorant identity from peak PRP in proficient but not na\u00efve animals, with theta/high gamma peak PRP providing superior decoding compared to trough PRP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38, C55-C59 are supported by systematic LDA analyses (Figure 5) showing decoding performance increases from chance (~50%) to >70% with learning (GLM p<0.001). The AUC analysis demonstrates peak PRP superiority for high gamma (p<0.001) but not beta. The use of shuffled controls and cross-validation strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "Decoding performance differs between correct behavioral responses (Hit, CR) and errors (Miss, FA), with false alarms showing below-chance decoding shortly after odorant onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C64 are supported by trial-by-trial LDA analysis (Figure 5E) showing divergence between correct and incorrect trials (GLM p<0.001 for most comparisons). The below-50% decoding for FA trials suggests encoding of the opposite odor, consistent with contextual identity encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C105"
+    ],
+    "result": "Decision-making times estimated from peak PRP LDA match behavioral lick-based decision times (~0.5s after odorant onset) and decrease with learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C105 are supported by decision time analysis (Figure 6) showing no significant difference between lick and peak PRP LDA decision times (GLM p>0.05), with both decreasing significantly with learning (p<0.001). However, the pooled vs. per-animal analysis shows methodological dependencies that warrant caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The dimensionality of PRP decreases as animals learn to discriminate odorants, suggesting emergence of a stable, unambiguous odor representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C39, C68-C73 are supported by dimensionality analyses (Figure 7) showing significant decreases with learning (GLM p<0.001). The effect is more pronounced for pooled animal data and for theta/high gamma peak PRP. The interpretation as 'tightening' of the representation manifold is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Despite close electrode spacing (100-200 \u03bcm), dimensionality varies between 1-6, indicating detection of multiple independent signals that decrease with learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by per-mouse dimensionality analysis (Figure 7\u2014supplement 1A) showing variability across electrodes. The finding that closely-spaced electrodes detect independent signals is interesting but raises questions about the spatial scale of LFP signals and potential volume conduction effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C40"
+    ],
+    "result": "The study comprises 119 recording sessions in 30 mice across two experiments (Exp1 and Exp2) that differ in electrode location, genotype, device type, and odorant pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C40 accurately describe the experimental dataset. The replication across two different experimental conditions strengthens the generalizability of findings, though differences between experiments (e.g., larger effects in Exp2) suggest methodological factors influence results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C75",
+      "C123"
+    ],
+    "result": "This is the first demonstration of learning-dependent changes in phase-referenced high-frequency oscillations and cross-frequency coupling in early sensory processing areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65, C75, C123 assert novelty based on the authors' knowledge of the field. While the specific combination of PAC, PRP, and learning in the olfactory bulb may be novel, the claim of 'first demonstration' in any early sensory area is difficult to verify without comprehensive literature review. The novelty claim is plausible but not definitively supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C98",
+      "C100"
+    ],
+    "result": "Learning-related PRP changes may reflect contrast enhancement mechanisms that facilitate discrimination between similar stimuli through interactions with sniffing and licking behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94, C98, C100 are speculative interpretations not directly tested. While contrast enhancement is cited in related systems (C95), the manuscript does not measure sniffing or provide direct evidence for this mechanism. The interpretation is plausible but requires additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C121",
+      "C122"
+    ],
+    "result": "Peak theta-referenced high gamma power encoding of reward information may reflect prioritization of sensory information transfer for rewarded odorants in the OB circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C109, C121-C122 present speculative mechanistic interpretations. While the data show differential encoding (supported), the proposed mechanism of 'prioritization' is not directly tested. The interpretation is reasonable but remains a hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C120"
+    ],
+    "result": "Dimensionality reduction with learning reflects attention-guided supervised learning through centrifugal feedback that enhances behaviorally relevant signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C116, C120 propose an attention-based mechanism for dimensionality reduction. While dimensionality changes are demonstrated, the roles of attention, reward prediction error, and centrifugal feedback are speculative. The manuscript does not manipulate or measure these factors directly, making this interpretation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Previous reversal experiments have established that OB LFP power and mitral/tufted cell spiking encode contextual (reward-related) rather than chemical odorant identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 accurately cites prior work from the same laboratory establishing contextual encoding in the OB. This provides important context for interpreting the current PRP findings and justifies the focus on contextual rather than chemical identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background claims establish that LFP oscillations organize neural activity, PAC occurs across brain regions, and the olfactory bulb is an ideal system to study PAC in early sensory processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C14, C19-C33 provide background context supported by appropriate citations. These establish the theoretical framework and justify the experimental approach. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C99",
+      "C101",
+      "C104",
+      "C106",
+      "C107",
+      "C118",
+      "C119",
+      "C124",
+      "C125"
+    ],
+    "result": "Discussion claims contextualize findings within broader literature on theta oscillations, PAC, olfactory processing, and learning-related plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C93, C95, C99, C101, C104, C106-C107, C118-C119, C124-C125 provide appropriate context through citations to relevant literature. These claims accurately represent prior work and situate the current findings within established frameworks of oscillatory coding and olfactory processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C74"
+    ],
+    "result": "Modulation of phase-referenced information chunking during learning plays a role in early sensory processing in olfaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C74 represent the main conclusion synthesizing the experimental findings. This conclusion is supported by the convergent evidence from PAC changes, PRP encoding, LDA decoding, and dimensionality reduction. However, the causal role of these changes in behavior is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C117"
+    ],
+    "result": "The experimental design is inherently low-dimensional due to binary odor discrimination in the go-no-go task, yet the OB shows remarkable learning-related plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110, C117 acknowledge limitations of the experimental design while highlighting the significance of OB plasticity. This is an appropriate caveat that contextualizes the dimensionality findings and acknowledges constraints on generalizability.",
+    "result_type": "MINOR"
+  }
+]

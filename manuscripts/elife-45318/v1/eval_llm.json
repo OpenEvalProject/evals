@@ -1,0 +1,219 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C54"
+    ],
+    "result": "A 150 \u00c5 simulation box is required to stabilize the hemoglobin T(0) state for at least 1.3 microseconds, resolving the discrepancy between experimental observations showing T(0) stability and previous simulations showing rapid T(0) to R-like transitions within hundreds of nanoseconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C54 establish the core finding with appropriate citations to prior work (C2, C3) and simulation data (C4, C54, Figure 1). The 150 \u00c5 box stabilizes T(0) over 1.3 \u03bcs, consistent with experimental expectations, while smaller boxes show rapid decay. This represents a reproducible observation from the authors' previous work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C24",
+      "C44",
+      "C55"
+    ],
+    "result": "Converged reaction time distributions require hundreds to thousands of independent trajectories; with only 20-100 trajectories, distributions are far from converged and cannot reliably characterize kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 and C24 are directly supported by Figure 2 showing convergence behavior with increasing trajectory numbers. Claims C44 and C55 provide appropriate citations establishing this as a general principle in simulation kinetics. The visual evidence clearly demonstrates inadequate convergence with small sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C56"
+    ],
+    "result": "The comment by Gapsys and de Groot used insufficient simulations (10-20) to assess box size dependence, and their results showing shorter transitions in larger boxes contradict expectations and may reflect poor statistics or methodological inconsistencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 and C56 provide a coherent critique of the comment's statistical power, referencing the convergence requirements established in Figure 2 (C24, C44, C55). The observation that only the 90 \u00c5 results (where input files were shared) match the authors' findings (C30-C31) raises legitimate concerns about simulation setup consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C41"
+    ],
+    "result": "Histidine protonation states differ substantially between the authors' simulations and those used by the comment authors, with specific differences in \u03b4 vs. \u03b5 protonation that are functionally important (e.g., His143 anchoring the water network stabilizing His146).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by Table 1 showing systematic differences in protonation states. Claim C34 correctly notes the importance of distinguishing \u03b4 vs. \u03b5 protonation based on established histidine chemistry. Claim C35 is supported by citation to Figure 6 in El Hage et al., 2018. However, C41 is speculative about the relative importance of this factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Transition times in 75 \u00c5, 90 \u00c5, and 120 \u00c5 boxes all occur under one microsecond and increase with box size; the presence/absence of Fe-His bonds does not substantially affect these transitions, but using Kovalevsky protonation states leads to rapid T(0) decay (~60 ns) consistent with earlier findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are directly supported by Figure 4 showing time series data. The Fe-His bond comparison (C47) is demonstrated across multiple panels. The Kovalevsky protonation result (C49) reproduces Hub et al., 2010 findings, providing internal validation. The data clearly show box size dependence on transition times.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "With Kovalevsky protonation states, His146 is overhydrated compared to the stable 150 \u00c5 simulation, with radial distribution function peaks comparable to those observed after T(0) decay in the 90 \u00c5 box.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by Figure 5 showing radial distribution functions and comparison with Figure 4B time series data. The comparison between different protonation states and their hydration patterns is appropriately documented with visual evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Fe-His bond lengths are comparable across all four subunits regardless of bonding treatment, but only 120 \u00c5 and 150 \u00c5 boxes reproduce experimental Fe-Fe distances between heme groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by Figure 6 showing Fe-His bond length comparisons. Claim C53 references experimental agreement but lacks explicit presentation of the experimental values or statistical comparison. The result is supported but would benefit from more detailed experimental comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Water-water hydrogen bond networks reconfigure in response to protein structural changes (T vs. R) and box size changes on nanosecond timescales, indicating coupled protein-water dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by citation to Figure 3 in El Hage et al., 2018. The inference of coupling (C13) follows logically from the observed rapid water network response (C12) to protein structural changes. This represents a reasonable interpretation of the cited data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Resolvating a decayed R-state structure from a 120 \u00c5 box into a 150 \u00c5 box results in partial recovery of the T-state, suggesting thermodynamic preference for T(0) in the larger box, though full recovery would require longer simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is directly supported by Figure 3 showing the resolvation experiment. Claims C15-C16 represent reasonable inferences from this observation. Claim C17 appropriately acknowledges the limitation that only partial recovery was observed. This is a well-designed control experiment supporting the box size effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Water behaves as a pure liquid (based on g(r) and H-bond properties) in 150 \u00c5 boxes with hemoglobin, following expectations for spherical cavities, while smaller boxes show water that barely reaches bulk properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by citations to El Hage et al., 2018 Figure 5 and Chandler, 2005 for theoretical expectations. Claim C18 represents established simulation best practices. The radial distribution function analysis provides appropriate evidence for bulk water behavior assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C57"
+    ],
+    "result": "Multiple simulation setup differences exist between studies including box shape (cubic vs. dodecahedral), center-of-mass constraints, and Fe-His dihedral parameters; box shape can have statistically significant effects on simulation outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 document specific methodological differences. Claims C40 and C57 are supported by citation to Wassenaar and Mark, 2006 establishing that box shape effects are known in the literature. These represent legitimate concerns about comparing results across different simulation protocols.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C45"
+    ],
+    "result": "Observing that T(0) does not decay on simulation timescales is necessary but not sufficient for thermodynamic stability; transition times cannot be determined from such observations, and experimental T(0) to R(0) transition times should be on the order of seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 represent established principles about distinguishing thermodynamic stability from kinetic measurements. Claim C45 is supported by citation to El Hage et al., 2018 and experimental literature. These claims correctly frame the interpretation of simulation stability observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C23",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The hydrophobic effect may be responsible for T(0) stabilization in large boxes, but this remains speculative; other systems (ubiquitin) show no box size dependence as expected since they lack significant hydrophobic effects or surface area changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C9 is explicitly labeled as speculative in the original work. Claims C58-C60 argue that other systems are not relevant comparisons, which is reasonable given different physical properties. However, the hydrophobic effect mechanism (C9) lacks direct experimental validation and the authors acknowledge ongoing work with collaborators to investigate this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors' simulations provide evidence for box size dependence in hemoglobin, with likely (though not proven) T-state stability in 150 \u00c5 boxes; since experimental T-state stability is established, failure to reproduce this would indicate unknown simulation problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 appropriately acknowledge the evidence while noting limitations (\"likely, though not proved\"). Claim C63 correctly cites experimental knowledge. Claim C64 provides sound logical reasoning: if simulations cannot reproduce known experimental stability, there must be methodological issues. This represents a fair summary of the evidence and its implications.",
+    "result_type": "MAJOR"
+  }
+]

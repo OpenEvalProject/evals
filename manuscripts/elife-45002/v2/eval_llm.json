@@ -1,0 +1,463 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Top1 depletion triggers a rapid, transient, and highly specific transcriptional response characterized by upregulation of Hsf1 target genes and downregulation of RP genes. This response is dependent on Hsf1 for stress gene activation but independent of Hsf1 for RP gene repression, and involves rapid release of Ifh1 from RP gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 are well-supported by ChIP-seq data (Figure 1A-G) showing specific transcriptional changes, transient kinetics, Top2-dependent re-equilibration, Ifh1 release from RP promoters, and Hsf1-dependent stress gene activation. The experimental design includes appropriate controls and the conclusions are directly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39"
+    ],
+    "result": "Top1 depletion causes proteotoxic stress in the nucleus by disrupting rRNA synthesis and ribosome assembly, leading to accumulation of unassembled ribosomal proteins in insoluble fractions and trailing polysome gradient fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C39 are supported by multiple lines of evidence including microscopy showing Btn2 foci and Pre6 accumulation (Figure 2\u2014supplement 1A,B), pulse-labeling showing reduced pre-rRNA synthesis (Figure 2\u2014supplement 1C), Northern blots showing truncated pre-rRNAs (Figure 2A), polysome profiles showing 60S/40S imbalance (Figure 2B-C), and biochemical fractionation showing RP accumulation in insoluble fractions (Figure 2D). The convergent evidence strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Multiple perturbations to ribosome biogenesis (depletion of Utp8, Utp13, or treatment with diazaborine) trigger the same transcriptional response as Top1 depletion, termed RASTR (Ribosome Assembly Stress Response).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 are supported by ChIP-seq data (Figure 2E-G) showing that different perturbations at various steps of ribosome biogenesis (rRNA transcription, 40S processing, 60S maturation) all produce similar transcriptional responses. The consistency across different perturbations strongly supports the existence of a unified RASTR pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "RASTR is independent of the Ribosome Quality Control (RQC) pathway, as deletion of TAE2 does not affect RASTR activation, indicating distinct mechanisms for responding to ribosome assembly versus ribosome activity defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by experimental data (Figure 2\u2014supplement 1D) showing that tae2\u0394 cells retain normal RASTR responses. This is a critical control experiment that distinguishes RASTR from the previously described RQC pathway and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Ifh1 regulation during RASTR differs from TORC1 inhibition: ifh1-\u0394C shows stable promoter release during Top1 depletion, RP gene repression and Hsf1 activation occur with identical kinetics, and Ifh1 concentrates in nuclear foci after topoisomerase depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by ChIP data (Figure 3A), kinetic analysis (Figure 3B), and microscopy (Figure 3C). The data demonstrate distinct temporal mechanisms of Ifh1 regulation and suggest sensitivity to unassembled RPs. The experimental evidence is clear and the conclusions are well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In cells lacking the E3 ligase Tom1, Ifh1 accumulates in nuclear foci even without stress, and tom1\u0394 is synthetically lethal with ifh1-AA but not ifh1-6, suggesting that RP aggregation directly impacts Ifh1 promoter binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by microscopy data (Figure 3D) and genetic interaction data (Figure 3E). The synthetic lethality pattern specifically links Tom1 function to Ifh1 promoter binding ability, providing strong genetic evidence for the proposed mechanism. The control with ifh1-6 strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Mass spectrometry analysis of insoluble fractions following topoisomerase depletion reveals enrichment of chaperones, RPs, and RiBi factors (especially those for 60S biogenesis), with Ifh1 detected only after stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by mass spectrometry data (Figure 3F-G, Supplementary file 3). The proteomic analysis provides comprehensive evidence for protein accumulation in insoluble fractions during RASTR. The detection of Ifh1 only after stress is a key finding that supports the sequestration model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Ifh1 depletion by anchor-away leads to specific downregulation of RP genes and aberrant rRNA processing, and abolishes or strongly reduces Hsf1 target gene activation during topoisomerase depletion, demonstrating that RP production is required for Hsf1 activation during RASTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by ChIP-seq data (Figure 4B, 4E-G), Northern blots (Figure 4C), and the observation that Ifh1 depletion alone downregulates Hsf1 targets (Figure 4D). The convergent evidence from multiple experiments strongly supports the conclusion that RP production is required for RASTR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Cycloheximide treatment, which blocks translation and depletes nuclear RP pools, triggers a transcriptional response opposite to RASTR (Hsf1 target gene downregulation, RP gene upregulation) and completely abolishes RASTR when combined with topoisomerase depletion, demonstrating that RASTR depends on de novo protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are supported by Northern blots (Figure 5B), ChIP-seq data (Figure 5C-E), and the striking observation of opposite transcriptional responses. The cycloheximide experiments provide critical evidence that de novo RP synthesis is required for RASTR and suggest that even unstressed cells balance RP production with Hsf1 activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Cycloheximide prevents RP aggregation, reduces Ifh1 nuclear foci in tom1\u0394 cells, increases Ifh1 promoter binding, prevents Ifh1 release during RASTR, and abolishes accumulation of RP and Ifh1 nuclear aggregates during RASTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by microscopy data (Figure 5F-G, Figure 5\u2014supplement 1B, E-F) and ChIP data (Figure 5\u2014supplement 1C-D). These experiments demonstrate the dynamic nature of RP and Ifh1 aggregates and their dependence on ongoing protein synthesis, providing strong mechanistic insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Newly synthesized RPs operate as a central hub coordinating RP gene expression with Hsf1-dependent activation of chaperone and proteasome genes in both stressed and unstressed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a synthesis of multiple experimental results (Ifh1 depletion and cycloheximide experiments) and represents a well-supported integrative conclusion. The data from Figures 4 and 5 collectively support this model of RP-mediated coordination of transcriptional programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "RASTR is the initial transcriptional response to TORC1 inhibition by rapamycin: Hsf1 targets are transiently upregulated at 5 min then downregulated at 20 min, and cycloheximide pre-treatment prevents the early (5 min) but not late (20 min) response, consistent with a two-step mechanism of RP gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are supported by Northern blots (Figure 6A), ChIP-seq data (Figure 6B-E), and ChIP data (Figure 6F). The temporal analysis and cycloheximide experiments clearly demonstrate biphasic regulation and link the early phase to RASTR. This integrates RASTR into the broader stress response framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Heat shock triggers rapid RP gene downregulation that is prevented by cycloheximide pre-treatment, while Hsf1 target genes remain activated even with cycloheximide, suggesting RASTR plays an integral role in the heat-shock response and may constitute the earliest RNAPII transcriptional response to various stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by ChIP-seq data (Figure 7A-C) showing differential effects of cycloheximide on RP versus Hsf1 target genes during heat shock. The data demonstrate that RASTR contributes to heat shock response, though C95's speculation about generality to other stresses is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "RASTR is a novel regulatory pathway providing rapid, specific coordination of protein homeostasis and RP gene expression during ribosome assembly disruption, requiring neo-synthesis of RPs and involving RP aggregates that activate Hsf1 (proposed via chaperone competition) and sequester Ifh1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 represent the core conclusions of the study. C96-C99 are well-supported by the comprehensive experimental data. C100 (chaperone competition mechanism) is appropriately presented as a proposal based on inference, though direct evidence for this specific mechanism is limited. C101 (Ifh1 sequestration) is well-supported by the mass spectrometry and microscopy data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Cycloheximide treatment produces opposite transcriptional effects to RASTR, supporting a model where unstressed cells constantly monitor nuclear unassembled RP levels to balance Hsf1 and RP gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by the cycloheximide experiments (Figure 5C). C102 is directly demonstrated by data, while C103 represents a well-reasoned model based on the experimental observations. The model is appropriately presented as a proposal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "RASTR is the initial transcriptional response to TORC1 inactivation, and disequilibrium at any step in ribosome biogenesis leads to RASTR activation until unassembled RP pools decrease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by the rapamycin experiments (Figure 6) and the multiple perturbation experiments (Figure 2E-G). The data demonstrate that RASTR responds to various ribosome biogenesis defects and represents an early response to TORC1 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "RPs are abundant ubiquitinated proteins in proteasome-deficient cells, accumulate rapidly in insoluble fractions during ribosome assembly stress, and blocking RP production diminishes Hsf1 activation, suggesting RP aggregates are important RASTR signals. Additional proteins including RiBi factors, Ifh1, and chaperones also accumulate, and these aggregates are highly dynamic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 integrate data from mass spectrometry (Figure 3F-G), biochemical fractionation (Figure 2D), Ifh1/cycloheximide experiments (Figures 4-5), and kinetic analyses (Figure 1). The evidence strongly supports the role of RP aggregates in RASTR signaling and demonstrates the dynamic nature of these structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "S. cerevisiae has developed temporally distinct mechanisms to regulate RP gene expression: a short timescale mechanism (RASTR) resulting from rapid accumulation of unassembled RPs, and a long timescale mechanism. The rapid RASTR response helps clear proteotoxic unassembled RPs by inducing Hsf1 targets and arresting RP transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 synthesize findings from this study with prior work (Albert et al., 2016). C115 is supported by citations and current data. C116 is a well-reasoned mechanistic proposal based on the experimental evidence. C117 is appropriately presented as a proposed mechanism for how RASTR resolves the stress condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C125",
+      "C129"
+    ],
+    "result": "Hsf1 activity is tightly linked to ribosome biogenesis in yeast independent of RQC, and a dynamic balance between unassembled and assembled RPs could be sensed by Hsf1 to adjust protein homeostasis programs with translational flux, proteolysis, and ribosome assembly rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 is supported by the current experimental data and comparison with Tye et al. (2018). Claim C129 represents a well-reasoned model based on the comprehensive experimental evidence, appropriately presented as a proposal. The model integrates multiple observations into a coherent framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Ribosome biogenesis is a complex, energy-demanding process requiring coordination of rRNA and RP production. Rapidly growing yeast produce ~2000 ribosomes/minute, requiring assembly of 4 rRNAs with 79 RPs that are highly prone to aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 represent established background knowledge supported by appropriate citations (Warner, 1999; David et al., 2010; Pillet et al., 2017; Rand and Grant, 2006; Weids et al., 2016). These provide essential context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Unassembled RPs activate p53 in metazoans through MDM2 titration, but yeast lack p53. Hsf1 is a central regulator of proteostasis in eukaryotes, is essential in yeast and malignant cells, and drives expression of chaperones, aggregases, and proteasome components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 represent established background knowledge supported by appropriate citations. These claims provide important context about p53-independent pathways and Hsf1 function that motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The RQC complex (conserved from yeast to human) increases Hsf1 activity under translation stress. ERISQ specifically recognizes unassembled RPs in the nucleus for proteasome degradation, with Tom1 ubiquitin ligase preventing accumulation of insoluble RPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 represent established background knowledge supported by appropriate citations (Brandman et al., 2012; Sung et al., 2016a,b; Gorenstein and Warner, 1977; Warner, 1977). These provide important context about existing quality control mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Decreased ribosome abundance protects against proteotoxic stress. RP gene transcription is regulated by Ifh1, which is rapidly released from promoters upon TORC1 inhibition and coordinated with RNAPI activity during prolonged inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 represent established background knowledge supported by appropriate citations. These provide essential context about RP gene regulation and motivate the investigation of rapid Ifh1 release mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C38",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Newly synthesized unassembled RPs accumulate in aggregates during ribosome assembly stress. The RQC binds 60S subunits with stalled polypeptides, triggers their degradation, and activates Hsf1 targets; cells lacking Tae2 fail to activate Hsf1 after translational stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C48-C50 represent established background knowledge supported by appropriate citations. These provide important context about RP aggregation and the RQC pathway that is distinguished from RASTR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Top1 was identified through a mak1 mutation defective in 60S production and is required for rRNA synthesis. Utp8 (t-UTP subcomplex) depletion inhibits rDNA transcription; Utp13 (UTP-B) depletion affects 40S synthesis; diazaborine inhibits Drg1 and blocks 60S maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C43-C47 represent established background knowledge supported by appropriate citations. These provide important context about the tools used to perturb ribosome biogenesis at different steps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C91",
+      "C113",
+      "C114"
+    ],
+    "result": "Previous work established that Ifh1 is rapidly released from RP promoters upon TORC1 inhibition, with stable release requiring the C-terminal domain and CURI complex. In constitutively active RNAPI strains, Ifh1 returns to promoters unless sequestered by Utp22/Rrp7 in the CURI complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C91, C113-C114 represent prior work from the authors' laboratory (Albert et al., 2016; Schawalder et al., 2004; Rudra et al., 2007) that provides essential context for understanding the current findings about RASTR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C73",
+      "C79",
+      "C88"
+    ],
+    "result": "Cycloheximide blocks translation and depletes nuclear RP pools, prevents RP aggregation after proteasome inhibition, and RP production ceases ~15 min after rapamycin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C79, C88 represent established knowledge supported by appropriate citations. These provide important context for interpreting the cycloheximide experiments in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C112",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Nucleolar proteins can form liquid-liquid phase separated structures. In higher eukaryotes, ribosome assembly stress in ribosomopathies may involve unassembled RPs triggering feedback to decrease ribosome biogenesis gene transcription via c-Myc inhibition and p53 activation. DDX21 helicase activates RP promoters in a manner sensitive to ribosome biogenesis status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112, C118-C121 represent established knowledge and hypotheses from the literature supported by appropriate citations. These provide important context for discussing potential conservation and mechanisms in higher eukaryotes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Hsf1 is a conserved sensor of proteotoxic stress controlling chaperones, reduces protein aggregates in neurodegenerative diseases, and promotes proteostasis in tumor cells. In mammalian cells, RPs have high turnover, accumulate in the nucleus upon proteasome/ribosome assembly inhibition, and cycloheximide abolishes Hsf1 activity by unknown mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124, C126-C128 represent established knowledge supported by appropriate citations. These provide important context for discussing potential conservation of RASTR mechanisms in mammals.",
+    "result_type": "MINOR"
+  }
+]

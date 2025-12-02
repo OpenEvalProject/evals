@@ -1,0 +1,148 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C5",
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "RcsF interacts with the C-terminal periplasmic domain of OmpA, not the N-terminal \u03b2-barrel. OmpA adopts its two-domain structure when in complex with RcsF. The C-terminal region of OmpA is necessary and sufficient for RcsF binding, while the N-terminal region is dispensable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary experimental approaches (photo-crosslinking with DiZPK at multiple positions, targeted proteolysis with thrombin cleavage sites, chemical crosslinking with truncated and chimeric OmpA variants, and NMR titration) converge on the same conclusion. The data from OmpA1-170 (no binding), OmpAX (binding retained), and OmpAPal (binding retained) definitively demonstrate that the C-terminal domain is necessary and sufficient. NMR chemical shift perturbations identify specific residues in the binding interface, validated by photo-crosslinking at D246.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "RcsF does not reach the bacterial surface via OmpA. The topology of OmpA-RcsF differs from OmpC/F-RcsF, and only OmpC and OmpF serve as vehicles for RcsF surface exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding that RcsF binds the periplasmic domain of OmpA in its two-domain conformation logically implies that RcsF cannot reach the surface through OmpA, since the eight-stranded \u03b2-barrel lacks an open channel to accommodate the RcsF linker (C89). This is supported by structural analysis and the observation that only a subset of DiZPK variants that crosslink to OmpA also crosslink to OmpC/F (C91), indicating different binding topologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C77",
+      "C78",
+      "C79",
+      "C51",
+      "C95",
+      "C96"
+    ],
+    "result": "OmpA competes with IgaA for RcsF binding across the periplasm, thereby regulating Rcs activity. OmpA functions as a buffer for RcsF, titrating it from IgaA and fine-tuning Rcs response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Chemical crosslinking experiments show that overexpressing IgaA increases IgaA-RcsF complex formation while decreasing OmpA-RcsF complex formation (C77, C78), demonstrating competition. The buffering function is supported by polymyxin B experiments showing higher Rcs induction in \u0394ompA cells (C96). Mathematical modeling based on measured KD values provides theoretical support for the buffering mechanism (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C81"
+    ],
+    "result": "IgaA has substantially higher affinity for RcsF (KD = 1.6 \u00b1 0.3 nM) than OmpA (KD = 125 \u00b1 85 \u00b5M), representing an ~80,000-fold difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The KD values were measured using appropriate biophysical techniques: NMR titration for OmpA-RcsF (C48) and biolayer interferometry for IgaA-RcsF (C49). The measurements are technically sound and the large difference in affinity is consistent with the competition experiments where low-abundance IgaA can still compete with high-abundance OmpA for RcsF binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C52",
+      "C54",
+      "C72",
+      "C73",
+      "C74",
+      "C87"
+    ],
+    "result": "Specific residues involved in the OmpA-RcsF interaction were identified, including R45, Q79, R89, K98, E110, P116, Q121 in RcsF and R242, D246, Y248 in OmpA, with a flexible loop between \u03b2-strand 2 and \u03b1-helix 3 of OmpA being critical for binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Photo-crosslinking with DiZPK at multiple positions in both RcsF and OmpA identified residues at the binding interface (C52, C74). NMR chemical shift perturbations independently identified the same region in OmpA (C72, C73). The computational model shows all six mutated residues in close proximity to their binding partners (C87), validating the experimental data. Multiple orthogonal approaches converge on the same binding interface.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C94"
+    ],
+    "result": "Polymyxin B-induced lipopolysaccharide alterations activate Rcs in MG1655 \u0394ompA cells, contradicting prior reports in MC4100 strain and questioning the role of OmpA-RcsF in sensing lipopolysaccharide defects. The finding that RcsF binds the periplasmic domain of OmpA questions whether BAM mediates OmpA-RcsF complex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The polymyxin B experiment (C92) provides direct experimental evidence contradicting prior work, though strain-specific differences complicate interpretation. The questioning of BAM's role (C94) is a logical inference from the finding that RcsF binds the periplasmic domain, whose folding is unlikely to depend on BAM. However, these are primarily negative results that challenge prior models rather than establishing new mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Intracellular factors such as membrane anchoring and peptidoglycan binding may modulate the affinity of OmpA and IgaA for RcsF in vivo, reconciling the large in vitro affinity difference with observed in vivo competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative proposal (C97) to explain the apparent discrepancy between the ~80,000-fold difference in KD values measured in vitro and the observation that OmpA and IgaA compete for RcsF in vivo. While the proposal is reasonable, no direct experimental evidence is provided to test whether membrane anchoring or peptidoglycan binding actually modulate binding affinities. This remains a hypothesis requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The estimated periplasmic concentrations are ~1 mM for OmpA, ~15 \u00b5M for RcsF, and ~1 \u00b5M for IgaA, based on published copy numbers and cell volume calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The concentration estimates are based on published copy numbers (C110, C111, C112) and established cell volume measurements (C109). The calculations are straightforward and the methodology is clearly described. These estimates are reasonable approximations, though they assume uniform distribution in the periplasm and do not account for potential local concentration effects or protein localization.",
+    "result_type": "MINOR"
+  }
+]

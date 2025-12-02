@@ -1,0 +1,422 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The pre-B\u00f6tzinger complex (pre-B\u00f6tC) is located in the ventrolateral medulla oblongata and contains circuits essential for respiratory rhythm generation. Pre-B\u00f6tC excitatory neurons and circuits have autorhythmic properties and can remain rhythmically active when isolated in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 describe established anatomical and functional properties of the pre-B\u00f6tC, supported by multiple citations to prior work (Smith et al., 1991, 2013; Del Negro et al., 2018). These are well-established background claims that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Pharmacological inhibition of INaP abolishes intrinsic neuronal rhythmic bursting, pre-B\u00f6tC circuit inspiratory activity, and rhythmic inspiratory motor output in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 describe experimental findings from prior work (Koizumi et al., 2008; Toporikova et al., 2015) establishing the role of INaP in respiratory rhythm generation. These are well-documented prior findings that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C15"
+    ],
+    "result": "ICAN inhibition in the pre-B\u00f6tC reduces the amplitude of the inspiratory drive potential and can eliminate inspiratory motor activity in vitro, while producing large reductions in population activity amplitude with minimal perturbations of inspiratory rhythm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C15 describe prior experimental findings (Pe\u00f1a et al., 2004; Pace et al., 2007) that are central to motivating this computational study. These observations are well-documented and form the key experimental constraint that the model must explain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The molecular correlate of ICAN was postulated to be TRPM4, and both TRPM4 and TRPC3 have been identified in pre-B\u00f6tC inspiratory neurons in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 describe prior work identifying the molecular basis of ICAN (Mironov, 2008; Pace et al., 2007; Koizumi et al., 2018). These are well-supported prior findings that provide molecular context for the computational model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Investigations into calcium sources activating ICAN/TRPM4 suggest that somatic voltage-gated calcium transients and IP3/ER-mediated calcium release do not contribute significantly, while dendritic calcium transients may be triggered by excitatory synaptic inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 summarize prior experimental work (Morgado-Valle et al., 2008; Mironov, 2008) on calcium sources. These findings are directly stated with appropriate citations and provide important constraints for the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C22",
+      "C24"
+    ],
+    "result": "In the CaV network model, increasing g-CAN increases frequency but has no effect on amplitude, while in the CaSyn network, increasing g-CAN strongly increases amplitude and slightly decreases frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C22, and C24 describe the core computational findings shown in Figures 1-2. The model predictions are clearly stated and supported by simulation data showing opposite effects of g-CAN manipulation depending on calcium source.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "In INaP-dependent bursting neurons, frequency depends on excitability. During bursts, INaP slowly inactivates causing burst termination. In the CaV network, residual ICa activation between bursts creates background calcium that partially activates ICAN, which functions as a depolarizing leak current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe the mechanistic basis for frequency modulation in the model, supported by prior work (Butera et al., 1999a; Smith et al., 1991) and model simulations. The logic is clearly explained and consistent with established biophysical principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "In the CaSyn model, intracellular calcium depletes entirely during the interburst interval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 describes a key feature of the CaSyn model that explains why g-CAN manipulation has no effect on frequency in this configuration. This is a direct statement about model behavior that is logically consistent with the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "In the CaV network, increasing g-CAN increases neuron recruitment but decreases average spiking frequency, resulting in no net change in amplitude. In the CaSyn network, increasing g-CAN increases both recruitment and spike frequency, resulting in large amplitude increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are directly stated and supported by data in Figure 3. The analysis decomposes amplitude changes into recruitment and firing rate components, providing mechanistic insight into the different effects in CaV vs CaSyn networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In the CaSyn network, varying g-CAN or synaptic strength have qualitatively equivalent effects on amplitude and frequency because effective synaptic strength is proportional to their product. In contrast, g-CAN manipulations in the CaV network only slightly affect the inspiratory drive potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 describe the equivalence between g-CAN and synaptic strength manipulations in the CaSyn model, supported by Figure 4. The symmetry in heat plots and similar de-recruitment patterns provide strong evidence for this equivalence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C39"
+    ],
+    "result": "The effects of g-CAN on amplitude and frequency are robust and conserved across a wide range of network parameters including synaptic connection probability and calcium source strength, though calcium source strength affects the range of g-CAN values producing rhythmic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C39 describe robustness analysis shown in Figures 5-6. The systematic parameter exploration demonstrates that the core findings hold across different network configurations, strengthening confidence in the model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In the CaV model, increasing g-CAN increases frequency through increased excitability but has no effect on amplitude. In the CaSyn model, increasing g-CAN slightly decreases frequency and increases amplitude by recruiting previously silent neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide summary statements of the main model findings. These are well-supported by the simulation data presented in Figures 1-6 and represent the core mechanistic insights from the computational analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Experimental ICAN/TRPM4 blockade strongly reduces amplitude with minimal frequency changes. The model predicts this pattern when synaptically-mediated and voltage-gated calcium influxes comprise approximately 95% and 5% of total calcium influx, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 describe the key model-experiment comparison shown in Figure 7. The model successfully reproduces experimental observations (Koizumi et al., 2018) and provides a quantitative prediction about the relative contributions of calcium sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "After network decoupling, a subset of neurons with high INaP conductance remain rhythmically active. All intrinsic bursters are INaP-dependent, but a subset are also calcium-sensitive. In calcium-sensitive bursters, calcium blockade abolishes bursting by reducing ICAN activation and excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 describe simulations shown in Figure 8 that characterize intrinsic bursting properties. The model reproduces experimental observations of both INaP-dependent and calcium-sensitive bursters (Thoby-Brisson and Ramirez, 2001; Del Negro et al., 2005; Pe\u00f1a et al., 2004).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C105"
+    ],
+    "result": "Neurons that remain active after ICAN blockade are primarily those with the highest g-NaP, and bursting in these neurons is INaP-dependent. These neurons form an INaP-dependent rhythmogenic kernel that underlies rhythm generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 and C105 describe the identification of the rhythmogenic kernel shown in Figure 9. This is a key conceptual result that explains how rhythm generation can be independent of ICAN while amplitude generation depends on it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Dynamic calcium imaging experiments show that network activity amplitude and population-level calcium transients are highly correlated during ICAN/TRPM4 inhibition, while frequency is not significantly perturbed. Individual neuron calcium transients can differ significantly from population averages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 describe prior experimental observations (Koizumi et al., 2018) that the model aims to explain. These are well-documented findings that provide important constraints for the model, particularly regarding heterogeneity at the single-cell level.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Network activity amplitude and average intracellular calcium concentration are highly correlated regardless of connection probability. In sparsely connected networks, the peak calcium transient in some neurons increases when ICAN is blocked, consistent with experimental results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 describe simulations shown in Figure 10 that explain heterogeneous calcium responses during ICAN blockade. The model successfully reproduces the surprising experimental observation that some neurons show increased calcium transients during ICAN block.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The model shows that intracellular calcium transients are highly correlated with network activity during ICAN blockade. In sparse networks, ICAN blockade produces diverse cellular responses: increased calcium in neurons receiving input from pacemakers, but decreased calcium in most neurons due to de-recruitment of non-pacemaker neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 provide mechanistic explanation for the heterogeneous calcium responses during ICAN blockade. The model explains how pacemaker neurons increase firing frequency during ICAN block, leading to increased calcium in their postsynaptic targets, while most neurons show decreased calcium due to de-recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Distinct biophysical mechanisms generate rhythm and amplitude of inspiratory oscillations. Rhythm arises from an INaP-dependent rhythmogenic kernel, while ICAN activation by synaptically-driven calcium influx amplifies synaptic input to generate amplitude in non-rhythmogenic neurons. ICAN reduction decreases amplitude via de-recruitment without substantially perturbing rhythm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 present the main conclusions of the study. These are well-supported by the comprehensive computational analysis and successfully explain the key experimental observations (Pe\u00f1a et al., 2004; Koizumi et al., 2018) that motivated the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The model describes a network of 100 synaptically coupled excitatory neurons, each comprised of a single compartment using Hodgkin-Huxley formalism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 describe the basic model structure. These are straightforward methodological statements that are clearly documented in the Materials and Methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Gradual blockade of synaptic interactions decreases amplitude with little effect on frequency, similar to ICAN blockade. Complete ICAN blockade can abolish synchronized oscillations due to weakened synaptic transmission, particularly when synaptic strength is low. ICAN plays a critical role in network synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 describe the relationship between ICAN, synaptic strength, and network synchronization, supported by Figure 4 and citations to Johnson et al. (1994) and Koizumi et al. (2018). The model provides mechanistic insight into how ICAN contributes to network synchronization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "ICAN/TRPM4 activation amplifies excitatory synaptic drive to generate amplitude of inspiratory population activity, independent of the rhythm-generating mechanism. In more intact networks, ICAN/TRPM4 augments amplitude of both inspiratory and expiratory activity and is involved in inspiratory-expiratory pattern formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 summarize the main conclusions and extend them to more intact networks based on recent experiments (Koizumi et al., 2018). The extension to inspiratory-expiratory pattern formation is appropriately attributed to prior experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Three subtypes of ionotropic glutamate receptors (NMDA, KAR, AMPA) are expressed in the pre-B\u00f6tC. NMDA blockade does not consistently affect amplitude or frequency. AMPA receptors are calcium-impermeable due to GluR2 expression. P/Q-type calcium channel blockade reduces motor output. The calcium-permeable KAR subunit GluK3 is highly expressed and may mediate synaptically-triggered calcium entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 review prior work on glutamate receptors and calcium channels in the pre-B\u00f6tC (Paarmann et al., 2000; Lieske and Ramirez, 2006a; Perrais et al., 2009). These are well-documented findings that provide context for possible synaptic calcium sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Group 1 mGluRs (mGluR1/5) are located on postsynaptic terminals and are associated with calcium influx through calcium-permeable channels and calcium release from intracellular stores. In the pre-B\u00f6tC, mGluR1/5 may contribute to calcium influx via intracellular stores and/or TRPC3 activation. mGluR1/5 blockade reduces the inspiratory drive potential without significantly affecting frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 review prior work on metabotropic glutamate receptors (Shigemoto et al., 1997; Pace et al., 2007; Ben-Mabrouk and Tryba, 2010). These findings are well-documented and provide mechanistic context for synaptic calcium sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "TRPC3 is a calcium-permeable channel associated with calcium signaling, store-operated calcium entry, and synaptic transmission. TRPC3 is activated by DAG, is highly expressed in pre-B\u00f6tC neurons, often co-expressed with TRPM4, and was hypothesized to underlie ICAN activation. TRPC3 and ICAN underlie slow EPSCs. TRPC3 blockade produces effects similar to TRPM4 blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 review prior work on TRPC3 (Thebault et al., 2005; Hartmann et al., 2011; Koizumi et al., 2018). These findings are well-documented and provide molecular context for synaptic calcium sources and ICAN activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C106",
+      "C107"
+    ],
+    "result": "INaP is ubiquitously present in pre-B\u00f6tC inspiratory neurons and underlies intrinsic oscillatory bursting in neurons with sufficiently high INaP conductance. The number of intrinsic bursters depends on the INaP conductance distribution width. Critical INaP conductance for bursting depends on other ionic conductances and extracellular ion concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104, C106-C107 describe the role of INaP in intrinsic bursting, supported by extensive prior work (Del Negro et al., 2002; Koizumi and Smith, 2008; Bacak et al., 2016b). These are well-established findings that form the basis for the rhythmogenic kernel concept.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "There is functional heterogeneity within pre-B\u00f6tC circuits, including subpopulations for sighs, arousal, and regular inspiratory activity. Within the normal inspiratory population, there are subpopulations distinguished by their role in rhythm versus amplitude generation: an ICAN/TRPM4-dependent recruitable population for amplitude and an INaP-dependent rhythmogenic kernel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 place the current findings in the context of pre-B\u00f6tC heterogeneity (Toporikova et al., 2015; Li et al., 2016; Yackle et al., 2017). The identification of rhythm vs. amplitude subpopulations is a key conceptual contribution of this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The 'burstlet theory' proposes that a subpopulation generating small oscillations drives larger synchronized bursts. INaP can generate subthreshold oscillations and promote synchronization. In isolated pre-B\u00f6tC preparations in situ, inspiratory rhythm generation is INaP-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 discuss the relationship between the current model and the burstlet theory (Kam et al., 2013; Del Negro et al., 2018). The authors appropriately note similarities and differences, particularly regarding the role of INaP in rhythm generation.",
+    "result_type": "MINOR"
+  }
+]

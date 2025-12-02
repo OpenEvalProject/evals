@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C18",
+      "C19"
+    ],
+    "result": "The retinotectal system is organized to process prey objects as they move from peripheral to central visual fields during hunting. The high-acuity retinal region holds prey images in the final hunting phase and occupies a disproportionately large tectal area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 describe the basic retinotopic organization and behavioral context, which are well-established and supported by the experimental design. Claims C18-C19 about the high-acuity region are supported by cited anatomical studies and behavioral observations, though C19 involves some inference about tectal magnification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C64",
+      "C65",
+      "C66",
+      "C109",
+      "C110"
+    ],
+    "result": "Posterior tectal neurons respond to small objects and compute direction selectivity de novo through intratectal mechanisms. These cells show spatial bias toward posterior tectum, adapted for detecting distant prey in peripheral visual fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C64-C66 are directly supported by calcium imaging showing spatial distribution of small-dot responsive cells. Claims C5, C110 regarding de novo computation are supported by modeling results (C47-C52) showing poor prediction of direction selectivity from RGC inputs. The adaptive interpretation (C109) is well-reasoned from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C63",
+      "C115",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Anterior tectal neurons are tuned to larger objects, frequently lack direction selectivity, and are essential for prey capture behavior. Ablation of these cells reduces hunting engagement and biases turning behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C63 are directly demonstrated by functional imaging showing spatial distribution. Claim C8 about interocular comparisons is inferred but supported by the lack of direction selectivity and bilateral ablation results. Claims C75-C77 provide strong behavioral validation through controlled ablation experiments with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C93",
+      "C94"
+    ],
+    "result": "Tectal responses originate largely from linear combinations of RGC inputs, with most cells explained by an average of two RGC clusters and ~36% by a single cluster. The modeling achieved high prediction quality (median R\u00b2=0.68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50, C93-C94 are directly supported by the linear modeling analysis with quantitative metrics. The high correlation values and cross-validation (C49) demonstrate robust predictions. However, the model's limitations for certain features (direction selectivity, size selectivity) are acknowledged in claims C51-C52.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100"
+    ],
+    "result": "Intratectal computations add direction selectivity for small objects, sharpen size and luminance selectivities, and generate novel response types not present in RGC inputs. The tectum is not merely a passive relay station.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C96-C97, C99-C100 are supported by discrepancies between model predictions and measured responses, particularly for direction selectivity (poor modeling of DS responses) and the presence of dark-ramp selective cells not observed in RGCs. Claim C95 is a well-supported conclusion from these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C53",
+      "C54",
+      "C55",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The tectal neuropil is organized into layers receiving functionally specialized RGC inputs. Prey-selective RGCs project to superficial layers (SO-SFGS4), looming-sensitive RGCs to deeper layers (SFGS5/6, SGC), with each layer containing a complete feature-selective visual map.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 establish the laminar framework based on cited prior work. Claims C15-C16, C53-C55, C88-C90 are directly demonstrated by the current RGC imaging and layer quantification experiments, consistent with and extending previous studies. The spatial distribution data in Figure 3 provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C91",
+      "C92"
+    ],
+    "result": "Tectal cell morphologies match their functional properties and RGC input layers. Object-motion responsive cells arborize in superficial layers with columnar shapes, while OFF/looming cells target deeper layers with cone-shaped arbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C91-C92 are directly supported by FuGIMA morphological analysis showing layer-specific arborization patterns. Claims C59-C61 provide additional morphological details about arbor sizes and shapes. Claim C62 is a well-supported synthesis showing structure-function correspondence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "RGC projections to the SO layer are essential for tectal small-object tuning. Selective ablation of these inputs eliminated small-dot responses while looming responses increased, possibly due to loss of inhibition from the small-object circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are directly demonstrated by the ablation experiment with before/after functional imaging. Claim C69 shows an unexpected but reproducible result. Claims C70-C71 provide mechanistic interpretations supported by cited prior work on circuit interactions (Barker and Baier, 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Intertectal connections mediate bilateral coordination during prey capture. Large-dot cells communicate across tecta via commissural connections, with activation suppressing contralateral responses to sharpen prey localization near the midline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is directly observed in imaging. Claims C81, C117-C119 involve substantial inference about circuit mechanisms. Claims C82-C84 from bilateral ablation and enucleation experiments provide supporting evidence, but the experiments are preliminary ('initial imaging and behavioral experiments') and the proposed inhibitory mechanism requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Functional imaging of 5-7 dpf larvae labeled ~5793 cells per tectum, with visual stimuli eliciting reproducible responses in up to 30% of cells. Hierarchical clustering identified 14 optimal functional clusters from 1759 cells, with three principal components explaining 74.9% of variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are directly supported by quantitative measurements from the imaging and clustering analyses. The silhouette analysis (C25) validates the cluster number choice, and the PCA analysis (C26) is shown in supplementary figures with appropriate validation against shuffled data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Tectal cells show diverse functional responses: 43.6% respond to looming, 41.1% to small dots, 33.1% to large dots, with minimal responses to bright stimuli (2.2-2.7%). The majority respond to object motion, with OFF and ON cells largely non-overlapping with object-detecting cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32, C38-C41 are direct quantitative results from functional imaging analysis shown in Figure 2. The percentages and response distributions are clearly documented. Claim C33 about object selectivity is a reasonable interpretation of the grating control result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Superficial interneurons (SINs) are predominantly large-dot responsive (~45%), with few small-dot responses (~6%). Neuropil interneurons (NINs) are mainly looming/dark-ramp responsive (~30%), with ~20% responding to large dots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by functional classification using k-nearest neighbor mapping of SINs and NINs onto the established cluster dataset, with appropriate cross-validation (92% accuracy reported in methods).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "RGC functional clustering identified 10 clusters from 1157 exemplars. 67.2% of RGC pixels responded to large dots, with forward-moving stimuli eliciting more direction-selective responses. Size-selective RGC terminals show spatial separation along the anterior-posterior axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are directly supported by RGC imaging and clustering analysis. The choice of 10 clusters over 4 (despite lower silhouette coefficient) is justified by improved modeling performance. Spatial distribution is clearly shown in Figure 3C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Stimulus sizes were chosen based on prey geometry during hunting: 5\u00b0 approximates distant prey (250 \u00b5m at 3 mm), while 30\u00b0 approximates prey before capture strike (at 0.3-0.7 mm distance, corresponding to 20-40\u00b0 visual angle).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by cited behavioral studies. Claims C72-C74 involve geometric calculations that are straightforward and consistent with cited behavioral work (Mearns et al., 2020). The rationale for stimulus choice is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Ablation of small-dot responsive cells did not produce significant behavioral changes, likely because the ablated cell numbers were insufficient given that these cells tile the visual field by only 5\u00b0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is a direct experimental result. Claim C79 provides a reasonable interpretation for the negative result based on the spatial resolution and coverage of small-dot cells. The interpretation is logical given the technical limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Moving dots of 1\u00b0 rarely elicited responses, representing the resolution limit of the larval visual system, consistent with photoreceptor spacing constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is a direct observation from imaging. Claim C106 is a reasonable inference supported by cited anatomical data (Haug et al., 2010) on photoreceptor spacing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "More than half of large-dot responsive cells also respond to slow looming, but overlap with fast looming is negligible, suggesting separation of approach and avoidance circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is observed in the clustering data. Claim C108 provides a mechanistic interpretation that is consistent with prior work on approach/avoidance circuit segregation (Barker and Baier, 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C85",
+      "C86",
+      "C87",
+      "C102",
+      "C103",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116"
+    ],
+    "result": "Background knowledge and prior work establish the tectal role in prey capture, behavioral responses to different stimuli, circuit motifs for approach/avoidance, and hunting strategies including sit-and-wait behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent cited prior work (C58, C85-C87, C102, C114) or general behavioral knowledge (C111, C113, C116). Claim C103 is speculation about wiring optimization. Claim C112 is behavioral speculation that is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C17",
+      "C104"
+    ],
+    "result": "Zebrafish larvae have a high-acuity retinal region with densely packed RGCs in the temporal-ventral quadrant and can detect prey at distances of several millimeters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by cited anatomical studies. Claim C104 is based on behavioral observations and is consistent with the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C120"
+    ],
+    "result": "The tectal visual map is not veridical but warped by location-dependent feature statistics, with anatomical separation of processing streams reflecting functional segregation adapted to behavioral demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are the main conceptual conclusions of the study. Claim C101 is well-supported by the laminar organization data. Claim C120 synthesizes all findings and is strongly supported by the spatial distribution of functionally distinct cell types and their behavioral relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Feed-forward inhibition by SINs could account for de novo computation of direction selectivity by suppressing non-preferred directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a proposed mechanism (C98) based on cited prior work (Abbas et al., 2017) but not directly tested in this study. While plausible and consistent with the data, it remains speculative without direct experimental validation of the circuit mechanism.",
+    "result_type": "MINOR"
+  }
+]

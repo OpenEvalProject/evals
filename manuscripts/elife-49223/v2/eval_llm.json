@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C70",
+      "C76"
+    ],
+    "result": "Prior work established that the bacterial effector OspI from Shigella flexneri deamidates UBC13 at Q100 to E100, which inhibits polyubiquitination activity in complex with TRAF6 and suppresses NF-\u03baB inflammatory signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C70, and C76 are all supported by citations to prior work (Sanada et al., 2012). These claims accurately represent established knowledge from the literature and provide the biological context for the current study. The authors correctly attribute these findings to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Deamidation reduces polyubiquitination activity of UBC13 with both TRAF6RZ3 and TRAF6RING constructs, but does not alter the intrinsic E2 activity of UBC13 in the absence of E3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C8 are directly supported by experimental data in Figure 1A-B showing reduced polyubiquitination with both TRAF6 constructs. Claim C9 is supported by Figure 1C showing similar activity for UBC13 and dUBC13 with MMS2 in the absence of E3. The controls are appropriate and the conclusion that deamidation does not affect intrinsic E2 activity is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "NMR titration experiments demonstrate that deamidation dramatically reduces binding affinity between UBC13 and TRAF6RING (Kd increases from 0.39 mM to ~6.34 mM), and this effect is specifically due to the negative charge at position 100.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C13, and C14 are supported by NMR titration data in Figure 1I and supplements. The charge-specificity is confirmed by C15 (Q100A shows similar Kd to WT) and C16 (Q100D shows reduced affinity similar to deamidation). However, the Kd estimate for dUBC13 (C14) is described as 'rough' and has large error (\u00b12.6 mM), indicating uncertainty in the precise value. The overall conclusion about reduced binding is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Deamidation does not alter the overall fold or secondary structure of UBC13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C12 are supported by chemical shift perturbation analysis (Figure 1\u2014figure supplement 2A) showing limited CSPs outside the Q100 region, and secondary structure prediction from backbone/C\u03b2 chemical shifts (Figure 1\u2014figure supplement 2B). The NMR data provide strong evidence that the protein fold is preserved upon deamidation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C22"
+    ],
+    "result": "Structural analysis reveals that Q100 does not directly contact TRAF6RING in the native complex, but lies near a network of electrostatic interactions including the critical R14-E69 intermolecular salt-bridge at the charge-complementary interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C22 are based on analysis of the crystal structure (PDB 3HCU) shown in Figure 2A. Claim C18 is supported by electrostatic surface potential calculations in Figure 3A. The structural analysis is appropriate and the observations are clearly documented in the figures. This establishes the structural context for understanding the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Deamidation induces formation of a new intramolecular R14/E100 salt-bridge in UBC13 with 48% occupancy, as demonstrated by both MD simulations and NMR spectroscopy showing perturbed R14 sidechain conformation and split R14 N\u03b7 resonances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by MD simulation data (Figure 2B). Claims C20 and C21 are supported by complementary NMR data showing shifted arginine sidechain resonances (Figure 2C) and split R14 N\u03b7 resonances in 15N\u03b5/\u03b7-13C\u03b6 correlation spectra (Figure 2F-G). The convergence of computational and experimental evidence strongly supports the formation of this new salt-bridge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Conventional MD simulations show that the wild-type UBC13/TRAF6RING complex is stable over 200 ns, while the deamidated complex is unstable with concurrent disruption of the R14/E69 intermolecular salt-bridge and formation of the R14/E100 intramolecular salt-bridge, reducing R14/E69 occupancy from 99% to 40%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by MD simulation data in Figure 2\u2014figure supplement 2 and Video 1. The RMSD analysis, salt-bridge distance measurements, and occupancy calculations provide quantitative evidence for the salt-bridge competition mechanism. However, only single 200 ns trajectories are shown for each system, which limits statistical confidence. Multiple independent replicates would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Umbrella sampling MD simulations quantify the reduction in binding free energy upon deamidation (\u0394\u0394GPMF = 1.37 kcal/mol), which agrees well with experimental NMR measurements (\u0394\u0394G = 1.69 kcal/mol). Q100A mutation shows similar stability to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by US simulation data in Table 1 and Figure 3B. The agreement between computational (1.37 kcal/mol) and experimental (1.69 kcal/mol) binding energy differences is reasonable given the approximations in both methods. The Q100A control (C30) appropriately confirms that the neutral substitution does not affect binding. Standard errors are provided for the PMF calculations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Analysis of US simulations reveals that deamidation significantly increases Coulombic interaction energy (indicating weakened electrostatic interactions), and that R14-mediated interactions are essential for binding as R14A substitution eliminates favorable binding free energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by CIE analysis in Figure 3F showing higher (less favorable) CIE for dUBC13 complex. Claim C32 is supported by US simulations of R14A-UBC13 showing insignificant \u0394GPMF (Figure 3B, Table 1). The data clearly demonstrate the importance of R14 and electrostatic interactions. The conclusion is well-supported by the computational analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Steered MD simulations demonstrate that less force and work are required to dissociate the dUBC13 complex compared to wild-type. During dissociation, the R14/E69 salt-bridge persists until complete separation in wild-type but disrupts prematurely in dUBC13 due to competition with the R14/E100 intramolecular salt-bridge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by SMD data in Figures 4-5, Table 2, and Videos 2-3. The force-extension profiles, work calculations, and salt-bridge occupancy analysis provide quantitative evidence. Ten independent SMD trajectories were performed for each system (Table 2), providing reasonable statistics. The temporal analysis of contact disruption order (Figure 5) clearly shows the salt-bridge competition mechanism during dissociation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Transient complex theory calculations predict that the association rate constant of wild-type UBC13/TRAF6RING is salt-dependent (confirming importance of electrostatics) and that deamidation reduces the association rate constant by three-fold at low salt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C38 are supported by TransComp calculations in Table 3. The salt-dependence of wild-type association (C37) and the three-fold reduction for dUBC13 at low salt (C38) are clearly documented. However, TransComp uses rigid-body approximations and does not account for salt-bridge competition dynamics, which limits the accuracy of these predictions. The qualitative trends are likely reliable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "US simulations at multiple windows reveal electrostatic repulsion between E100 and the negatively charged TRAF6RING interface that destabilizes transient complexes during association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by US simulation data in Figure 6 and Figure 6\u2014figure supplement 1 showing repulsive interactions (positive CIE) between E100 and TRAF6RING at multiple COM separations. The molecular details of transient R14/D57 interactions being disrupted by E100/D57 repulsion (Figure 6C-F) provide mechanistic insight. The analysis across multiple US windows strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Unbiased association MD simulations show that native-like association of wild-type complex is 3-fold higher at low salt than high salt, and that deamidation reduces native-like association and stability by 2.3-fold at low salt. Spatial analysis reveals that TRAF6RING positions are tightly clustered around the UBC13 interface for wild-type but dispersed for dUBC13, with several R14-proximal clusters absent in the deamidated complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by unbiased association simulation data in Table 4 and Figure 7. Fifteen independent 100 ns trajectories were performed for each condition, providing good statistics. The spatial distribution analysis (Figure 7A-D) and clustering analysis clearly show the differences in transient complex ensembles. The 2D free energy landscapes (Figure 7\u2014figure supplement 1) provide additional support. However, only one trajectory showed true native complex formation for wild-type (Figure 7\u2014figure supplement 2A), indicating that native complex formation is rare even in these simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "NMR titrations with UBC13/TRAF6RING variants quantitatively dissect the contributions of different mechanisms to the binding energy loss upon deamidation: salt-bridge competition in the native complex (\u0394\u0394GNSB = 0.82 kcal/mol), salt-bridge competition in the transient complex (\u0394\u0394GTSB = 0.63 kcal/mol), and E100 repulsion in the transient complex (\u0394\u0394GTrep = 0.24 kcal/mol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by NMR titration data in Figure 9A. The experimental design using E69A-TRAF6RING and R14A-UBC13 variants to isolate different contributions is clever and appropriate. The mathematical decomposition (Equation 1) is valid under the assumption that the three mechanisms are mutually exclusive and additive, which is a reasonable approximation. The \u0394\u0394GTrep value (0.24 kcal/mol) agrees well with TransComp predictions (0.34 kcal/mol from Table 3), providing cross-validation. The error bars on Kd measurements are substantial but the overall trends are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The deamidation mechanism generalizes to another RING domain (RNF38): RNF38RING activates UBC13 but fails to activate dUBC13, with a 6-fold drop in affinity (Kd increases from 0.04 to 0.24 mM). Quantitative analysis shows salt-bridge competition contributes 0.6 kcal/mol and E100 repulsion contributes 0.5 kcal/mol to the binding energy loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by ubiquitination assays (Figure 9B) and NMR titrations (Figure 9I). The generalization to RNF38RING, which lacks an R14 salt-bridge partner at the position equivalent to E69 in TRAF6, demonstrates that the mechanism is not specific to TRAF6. The quantitative decomposition of binding energy contributions is consistent with the approach used for TRAF6. The structural model (Figure 9\u2014figure supplement 2E-F) shows R14 makes van der Waals contacts with M417 in RNF38, explaining why the native complex contribution is smaller than for TRAF6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Deamidation does not affect E2~Ub conjugation efficiency, but dUBC13~Ub conjugates fail to bind to either TRAF6RZ3 or RNF38RING in pull-down assays, while UBC13~Ub conjugates bind both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by conjugation assays (Figure 10A) and pull-down assays (Figure 10B-C). The data clearly show that deamidation does not affect the conjugation step but prevents binding of the conjugate to RING domains. This demonstrates that secondary interactions between Ub and RING/ZF domains cannot compensate for the loss of primary E2/RING interaction, which is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Kinetic analysis of Ub discharge and Ub2 synthesis shows that RING domains fail to activate dUBC13~Ub conjugates. Increasing RNF38RING concentration 5-fold rescues discharge rate, confirming reduced affinity as the cause. Deamidation drastically reduces Kcat but not Km, and Kcat of dUBC13 does not increase in the presence of RING, while Kcat of UBC13 and dUBC13 are similar in the absence of RING.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by discharge assays (Figure 10D-K) and Ub2 synthesis kinetics (Figure 10L-N). The kinetic analysis is thorough and the controls are appropriate. The observation that 5-fold excess RING rescues activity (C61) provides strong evidence that reduced affinity is the primary defect. The kinetic parameters (Figure 10N) clearly show that deamidation affects Kcat but not Km, consistent with a defect in RING-mediated activation rather than substrate binding. The conclusion that the catalytic effect of RING is absent in dUBC13 complexes is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Structural analysis of multiple UBC13/RING complexes and prior ITC data indicate that R14-mediated intermolecular salt-bridges are common in UBC13/RING complexes and that R14 is a hotspot at the UBC13/TRAF6RING interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by structural analysis in Figure 9\u2014figure supplement 1. Claim C68 is supported by citation to prior ITC work (Behera et al., 2018). Claim C69 integrates multiple lines of evidence including hotspot prediction algorithms, the current binding studies, and structural analysis. The conclusion that R14 is a hotspot is well-supported by converging evidence from multiple sources and methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78"
+    ],
+    "result": "Background claims about the ubiquitination pathway, UBC13 function, RING domain mechanism, and NF-\u03baB signaling are accurately represented from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75, C77-C78 are all supported by appropriate citations to prior work and represent established knowledge in the field. The authors accurately describe the biological context and prior mechanistic understanding. These claims provide necessary background but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors speculate that deamidation-induced modulation of transient protein-protein association may explain aggregation of age-related proteins like amylin and crystallins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79 and C80 accurately cite prior work on deamidation-induced aggregation. However, claim C81 is explicitly speculative and not supported by data in this manuscript. While the speculation is reasonable given the findings, it remains a hypothesis that would require experimental validation. The authors appropriately present this as a possibility rather than a conclusion.",
+    "result_type": "MINOR"
+  }
+]

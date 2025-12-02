@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C9",
+      "C10",
+      "C16",
+      "C20",
+      "C78",
+      "C79"
+    ],
+    "result": "Brian 2 is a neural simulator that uses runtime code generation to achieve both flexibility and performance. Users write high-level mathematical descriptions of models in Python, which Brian transforms into efficient low-level code. This approach allows Brian 2 to improve on Brian 1 in both flexibility and performance, performing similarly to simulators written in low-level languages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C6, C9, C10, C16, C20 establish Brian 2's core design approach of using code generation to transform high-level Python descriptions into efficient code. Claims C78-C79 provide evidence that this approach successfully achieves both flexibility and performance improvements over Brian 1 and comparable performance to low-level simulators, supported by citations and benchmark data (Figure 8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Brian 2 can simulate a pyloric network model with activity-dependent conductance regulation and graded synapses. The model uses a Hindmarsh-Rose variant for neurons with calcium-dependent conductance adaptation, and implements unconventional graded synapses where synaptic currents depend continuously on presynaptic membrane potential rather than discrete spike events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C38 describe the pyloric network model implementation in detail, with references to Figure 1 showing the network activity and Figure 2 providing the complete simulation code. The model successfully demonstrates Brian's ability to implement non-standard neural mechanisms through explicit mathematical descriptions, as evidenced by the activity patterns shown in Figure 1b-c.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Brian 2 can simulate a closed-loop sensorimotor model where an eye tracks a moving object through feedback from retinal neurons to motor neurons controlling ocular muscles. The model includes non-neuronal elements (muscles, stimulus) defined using the same equation-based framework as neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 describe the ocular tracking model with references to Figure 3 showing both the model schematic (3a) and successful tracking behavior (3b). The simulation code in Figure 3c demonstrates Brian's ability to integrate neuronal and non-neuronal components in a single framework. The claim that the eye successfully follows the object is directly supported by Figure 3b.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Brian 2 can implement complex computational experimental protocols such as bisection algorithms for threshold finding. The store/restore mechanism allows iterative refinement of parameters based on simulation outcomes, enabling parallel exploration of parameter dependencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 describe the threshold finding algorithm with references to Figures 4 and 5. Figure 4a shows the bisection algorithm schematic, Figure 4b shows convergence of threshold estimates and the relationship between threshold and sodium conductance. Figure 5 provides the complete implementation code. The results demonstrate successful threshold estimation across multiple neurons with different parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C76",
+      "C77"
+    ],
+    "result": "Brian 2 can interface with external hardware and libraries through user-defined functions in the target language. This is demonstrated by a real-time audio pitch detection model that receives microphone input through C code and processes it using a neural network with coincidence detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 describe the pitch detection model with references to Figures 6 and 7. Figure 6a shows the model architecture, Figure 6b demonstrates successful pitch-dependent neural responses. Claims C76-C77 describe the extension mechanism, with Figure 7 showing the C code integration (lines 9-34) for audio input. The results show different neural populations responding to different pitches, validating the model's functionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Brian 2 implements code generation by creating independent code blocks for different simulation operations and offers two execution modes: runtime mode (default, more flexible) and standalone mode (faster but less flexible). The performance advantage of standalone mode depends on model details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 describe Brian's code generation architecture and execution modes. The claims are internally consistent and supported by citations (C65: Stimberg et al., 2014; Blundell et al., 2018; C71: Stimberg et al., 2018). The trade-offs between modes are clearly articulated, though C72 notes that performance benefits are model-dependent, which is later demonstrated in the benchmark results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Brian 2's performance on the CUBA benchmark varies with model homogeneity. For homogeneous populations, Brian 2 is dramatically faster than Brian 1, NEURON, and NEST due to specialized optimizations. For heterogeneous populations, this advantage is reduced. Multi-threading benefits depend on model characteristics, and standalone mode advantages are most significant for smaller networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C130 describe benchmark results with direct reference to Figure 8 showing execution times. C124 is supported by citations (Vogels and Abbott, 2005; Brette et al., 2007) and Figure 8 data. C125 provides a mechanistic explanation for the performance difference. C126-C130 describe additional observations from the benchmark data, all directly supported by Figure 8 showing different performance patterns for homogeneous vs. heterogeneous populations and single vs. multi-threaded execution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C8",
+      "C13",
+      "C14",
+      "C15",
+      "C18",
+      "C19",
+      "C22",
+      "C23"
+    ],
+    "result": "Neural simulators face a fundamental trade-off between performance and flexibility. Low-level programming offers performance but requires expertise and is error-prone. Description languages cannot capture all aspects of computational experiments. The procedural, equation-oriented approach addresses flexibility but traditionally comes at a performance cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C8, C13-C15, C18-C19, C22-C23 establish the motivation for Brian 2's design by describing limitations of existing approaches. These claims are based on general knowledge of the field and supported by citations (C22: Brette and Goodman, 2011). The claims are logically consistent and provide context for why Brian 2's code generation approach is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Flexibility is essential for fundamental neuroscience research, and performance is increasingly important for large-scale data and parameter sweeps. Brian 2's modular code generation framework supports plugins for other platforms (e.g., Brian2GeNN for GPU acceleration) and is designed to accommodate future computing architectures and applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 discuss the importance of flexibility and performance and Brian's extensibility. C81 is supported by citations (Jun et al., 2017; O'Leary et al., 2015). C83 is supported by citations (Stimberg et al., 2018; Yavuz et al., 2016) and provides specific performance improvements (tens to hundreds of times faster). C85-C86 are supported by multiple citations. The claims are consistent with the design goals and demonstrate forward-looking architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Brian 2 emphasizes the complete computational experiment, not just neural components. Features are designed to be general and flexible, with users defining experiments in Python. The approach leads to concise, readable code that closely matches mathematical descriptions in papers, which is important for verification and reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 describe Brian's design philosophy regarding readability and completeness. C93 is supported by citation (Tikidji-Hamburyan et al., 2017). The claims are internally consistent and supported by the case studies presented earlier (Figures 2, 3c, 5, 7) which demonstrate concise code that closely matches mathematical descriptions. The arguments about verification and reproducibility (C95-C96) are logical inferences from code conciseness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Reproducibility is a major issue in computational neuroscience. Brian 2 addresses this through dimensional consistency checking, explicit equation specification (avoiding ambiguity from predefined models), and code simplicity/readability that increases the chance of faithful implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 discuss reproducibility issues and Brian's solutions. C98 is supported by multiple citations (LeVeque et al., 2012; Eglen et al., 2017; Podlaski et al., 2017; Manninen et al., 2018). C100-C101 are supported by citations (Pauli et al., 2018; Rougier et al., 2017). The claims about Brian's design features (C103-C106) are logical inferences about how the design choices reduce errors, though direct evidence of improved reproducibility is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Brian differs from other simulators by requiring explicit model definitions and treating the complete computational experiment as fundamental. Brian was the first simulator to make arbitrary model equations a core concept applied universally. Brian uniquely allows equation-based specification of connectivity patterns, which other simulators do not support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C121 compare Brian to other simulators. C107 is supported by citation (Brette, 2012). C110 presents a counter-argument supported by citation (Podlaski et al., 2017). C112 is supported by citations (Hines and Carnevale, 2000; Plotnikov et al., 2016). C115-C116 are supported by citations (Sherfey et al., 2018; Vitay et al., 2015; Gorur-Shandilya et al., 2018). C119-C120 are supported by citations (Davison et al., 2008; Djurfeldt, 2012). The claims are based on knowledge of other simulators and supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Brian 2's performance advantage on the CUBA benchmark does not generalize to all scenarios. NEURON is optimized for multi-compartment models, NEST for very large networks across machines. Brian's performance benefits from single-machine, shared-memory architecture. Brian's main limitation is lack of multi-machine support, but most neuroscientists don't need this scale and can use Brian for embarrassingly parallel parameter explorations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C141 provide important caveats about Brian's performance and limitations. C136 is supported by citation (Tikidji-Hamburyan et al., 2017). The claims about NEURON and NEST optimizations (C132-C133) are based on knowledge of these simulators. C134-C135 provide logical explanations for performance differences. C137-C141 acknowledge Brian's limitations while arguing they don't affect most users, though C138-C140 make assertions about typical neuroscience practice without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Code generation for arbitrary equations presents a trade-off: fixed model sets allow hand-optimized implementations, while flexible simulators must use automated techniques. However, automated techniques can generate optimizations for model specializations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 present a logical argument about optimization trade-offs in code generation. The claims are internally consistent and supported by the benchmark results (C124-C126) which demonstrate that Brian 2 can indeed generate specialized optimizations for homogeneous models. This is a theoretical framework that explains the observed performance patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "This manuscript focuses on single-compartment point neuron models. While Brian supports multi-compartmental models using the same equation-based approach, this feature is not as mature as specialized simulators like NEURON and GENESIS and is an area for future development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 acknowledge the scope and limitations of the manuscript and Brian's multi-compartment support. C145 references Appendix 4\u2014figure 1 for evidence of multi-compartment support. The claims are straightforward acknowledgments of scope and limitations, with C146 honestly stating that this feature is less mature than in specialized simulators.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C11",
+      "C12",
+      "C17",
+      "C60",
+      "C61",
+      "C62",
+      "C97",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Brian 2 is released as open source software with extensive documentation, continuous testing, and active development. It is available for multiple Python versions and operating systems. The software has been used in teaching and is increasingly adopted in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C11, C12, C17, C60-C62, C97, C147-C153 provide factual information about Brian's development, availability, and adoption. These claims are supported by appropriate citations (C7: Brette et al., 2007; C11: multiple citations; C17: Gleeson et al., 2010; Cannon et al., 2014; Raikov et al., 2011; C60: De Schutter, 1992; C61: Goodman, 2010; C62: Blundell et al., 2018; C97: Gerstner et al., 2013; C148-C149: Brian contributors, 2019; Stimberg et al., 2019b). These are primarily factual statements about the software.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Brian has been built with extensibility in mind, allowing users to extend functionality while keeping the full model description in the main Python script without editing simulator source code or compiling separate modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 describe Brian's extensibility design goals. These claims are supported by the real-time audio case study (C76-C77, Figures 6-7) which demonstrates the extension mechanism in practice. The claims describe design principles that are validated by the working implementation shown in the case study.",
+    "result_type": "MINOR"
+  }
+]

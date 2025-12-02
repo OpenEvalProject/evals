@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C47",
+      "C48",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C112",
+      "C113"
+    ],
+    "result": "MD activation produces inhibition-dominated cortical responses in PL, while MGB activation robustly drives excitation in A1. Using SSFO to uniformly enhance thalamic excitability, MD activation suppressed RS neurons and enhanced FS neurons in PL, whereas MGB activation robustly drove A1 RS neurons with variable effects on FS neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7, C47-48, C58-66 provide converging evidence from optogenetic manipulation (SSFO) and electrophysiological recordings showing distinct functional impacts of MD\u2192PL vs MGB\u2192A1 activation. The experimental design ensures comparable thalamic activation (C61), allowing valid comparison of cortical responses. Statistical significance is reported (Figure 1D-H), sample sizes are adequate (n=298-724 neurons), and results are consistent across individual animals (Figure 1\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C51",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "MGB\u2192A1 axons form larger synaptic boutons than MD\u2192PL axons, particularly in layer 4 of A1. BDA labeling revealed that MGB boutons in A1 layer 4 (1.28 \u00b1 0.54 \u00b5m\u00b2) are significantly larger than MD boutons in PL layer 3 (0.77 \u00b1 0.42 \u00b5m\u00b2), consistent with MGB\u2192A1 being a driver pathway and MD\u2192PL being modulatory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-9, C51, C67-73 are supported by quantitative BDA labeling data (Figure 2) showing significant differences in bouton sizes (p<0.001, Kruskal-Wallis test with Dunn's post hoc; Kolmogorov-Smirnov test). The methodology is appropriate (350 varicosities per layer, N=3 mice per condition), and findings are consistent with prior literature (C73). The interpretation as driver vs. modulatory pathways (C71-72) is reasonable given the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "MD\u2192PL targets approximately twice as many PV+ interneurons as MGB\u2192A1, despite comparable total postsynaptic neuron labeling. Trans-synaptic anterograde AAV labeling showed MD\u2192PL targets ~2x more PV+ interneurons than MGB\u2192A1, while MGB-targeted A1 neurons localize densely to layer 4 and MD-targeted PL neurons are more spatially diffuse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C74-84 are supported by trans-synaptic anterograde tracing data (Figure 3) with appropriate controls (N=4 mice per condition, 2-3 sections per animal). The finding that PV+ density is comparable between PL and A1 (C82) strengthens the conclusion about differential targeting. Statistical significance is reported (p=0.0004, Mann-Whitney U test, Figure 3G), and results are consistent with prior literature (C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C86",
+      "C87",
+      "C88",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "MGB neurons innervate excitatory A1 neurons with significantly larger synaptic terminals than MD\u2192PL, while terminal sizes onto PV+ neurons are comparable. Using mGRASP to label thalamocortical synapses, MGB\u2192A1 synapses onto CamKII+ neurons were significantly larger than MD\u2192PL synapses, with no difference in synapses onto PV+ neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-96 are supported by mGRASP data (Figure 4) with appropriate methodology (n=40 neurons per condition, N=4 mice). The technique is validated by VGluT2/VGluT1 colocalization (C93-95, Figure 4\u2014figure supplement 1) and correlation with synaptic strength (C87). Statistical significance is reported (p<0.0001 for frequency, p=0.0007 for volume distribution). The interpretation as driver pathway (C96) is consistent with structural findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C53",
+      "C54",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "MD\u2192PL neurons receive substantially more cortical inputs than MGB\u2192A1 neurons, while MGB\u2192A1 receives predominantly midbrain inputs. Monosynaptic rabies tracing showed MD\u2192PL receives 5x more cortical inputs per neuron than MGB\u2192A1 (normalized to starter cells), with MD receiving major inputs from frontal cortical areas and MGB from inferior colliculus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-12, C53-54, C97-105 are supported by monosynaptic rabies tracing data (Figures 5-7) with adequate sample size (N=5 mice per condition). The normalization to starter cells (C104) allows valid single-cell comparisons. Quantitative analysis confirms cortical inputs are the largest source for MD\u2192PL and midbrain for MGB\u2192A1 (Figure 5\u2014figure supplement 3). The methodology is appropriate with proper controls (distinct TRN inputs, C110-111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C123",
+      "C124",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Cortical inputs to MD\u2192PL show unique layer-wise distributions from diverse frontal areas, while MGB\u2192A1 inputs are restricted to layer 6. MD\u2192PL receives inputs from both layers 5 and 6 of multiple frontal cortical areas (M2, Cg, OC, PL), with 3-5x more cortical inputs per neuron than MGB\u2192A1, whose cortical inputs are restricted to layer 6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-108, C123-124, C127-130 are supported by detailed laminar analysis of rabies tracing data (Figure 7). Statistical significance is reported (p<0.0001 for layer 5 differences, p=0.0004 for layer 6 differences, Mann-Whitney U test). The diversity of cortical inputs to MD (C130) is well-documented across multiple frontal areas. Sample size is adequate (N=5 mice per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C49",
+      "C55",
+      "C56",
+      "C57",
+      "C117",
+      "C121",
+      "C122",
+      "C125",
+      "C148",
+      "C149",
+      "C151"
+    ],
+    "result": "Structural differences provide a putative explanation for functional divergence, with data consistent with MD as a higher-order nucleus and MGB as a first-order nucleus. The study integrates structural findings (bouton size, E/I targeting, input patterns) to explain functional differences, supporting MD as higher-order/modulatory and MGB as first-order/driver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C49, C55-57, C117, C121-122, C125, C148-149, C151 represent integrative interpretations linking structural and functional data. The interpretation is well-supported by converging evidence from multiple experimental approaches (SSFO, BDA, mGRASP, rabies tracing). The classification as higher-order vs. first-order (C55, C149) is consistent with input patterns (cortical vs. subcortical). However, these are interpretations rather than direct demonstrations of causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "TRN projections to MD\u2192PL and MGB\u2192A1 are from distinct TRN subnetworks, confirming tracing specificity. Rabies tracing showed both pathways receive inputs from TRN, but from distinct subnetworks, serving as validation of the monosynaptic tracing strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-111 are supported by rabies tracing data (Figure 7\u2014figure supplement 1) and consistent with prior literature on TRN organization (citations provided). The observation of distinct TRN inputs (C110) validates the specificity of the tracing approach (C111), as expected from known anatomy. This serves as an important internal control for the methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The study acknowledges methodological limitations including mGRASP primarily labeling somatic rather than dendritic synapses, potential false positives/negatives in rabies tracing, and potential AAV1 retrograde confounds. Authors appropriately discuss limitations of mGRASP (somatic vs. dendritic labeling), rabies tracing (false positives/negatives, cell death), and AAV1 (potential retrograde properties), though note these have limited impact on interpretations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-145 represent appropriate acknowledgment of methodological limitations with supporting citations (C142, C144). The authors provide reasonable justifications for why these limitations have limited impact (C141, C145). This transparent discussion of limitations strengthens rather than weakens the overall conclusions, as it demonstrates critical evaluation of the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C150",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The diversity of cortical inputs suggests MD neurons perform integrative computations rather than relay functions, with implications for future research and therapeutic targets. The authors propose MD neurons integrate diverse cortical signals carrying different cognitive control information, supported by prior functional studies, and suggest future directions for mapping microcircuit diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-138, C150, C152-154 represent speculative interpretations and future directions. While the interpretation about integrative computation (C136) is reasonable given the anatomical data and supported by prior functional studies (C137), it remains a hypothesis requiring direct functional testing. The suggestions for future work (C138, C152) and therapeutic implications (C154) are appropriately speculative but not directly tested in this study.",
+    "result_type": "MINOR"
+  }
+]

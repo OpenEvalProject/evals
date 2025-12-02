@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "PP1 and PP2A phosphatases do not regulate dephosphorylation of LRRK2-phosphorylated Rab proteins, but PP1 does regulate LRRK2 Ser935 dephosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 demonstrate through pharmacological inhibition (calyculin-A and okadaic acid) that PP1/PP2A do not affect Rab10/Rab12 dephosphorylation (C29-C30), while confirming PP1's role in LRRK2 Ser935 regulation (C31-C33, C35). The data in Figure 1 provide clear experimental support with appropriate controls (MYPT1, S6K1 phosphorylation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "An siRNA screen of 322 phosphatases identified PPM1H as the top serine/threonine phosphatase hit that regulates Rab10 phosphorylation across three independent screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C38-C45 describe a comprehensive phosphatase screen with appropriate replication (three screens) and controls. PPM1H emerged as the top hit in all screens (C44-C45), with data presented in Figure 2. The screen design included both basal and MLi-2-treated conditions, strengthening the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Validation experiments confirmed that siRNA-mediated depletion of PPM1H and several other phosphatases (NT5DC2, DUSP3, DUSP18, PLPP6) increased Rab10 phosphorylation, while some hits showed confounding effects on Rab10 or LRRK2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 provide validation of screen hits with appropriate controls for total protein levels. The data distinguish between genuine phosphatase effects (PPM1H, NT5DC2, DUSP3, DUSP18, PLPP6) and artifacts from altered protein expression (PTPN6, PTPN22, PTPN23, MTMR9, GAK, ALPI, PPEF2, MDP1, PUDP), demonstrating rigorous follow-up analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "Overexpression of wild-type PPM1H, but not catalytically inactive PPM1H[H153D], suppresses LRRK2-mediated phosphorylation of multiple Rab proteins (Rab8A, Rab8B, Rab10, Rab12, Rab35, Rab43, Rab3A/B/C/D) with specificity for LRRK2 substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C57-C66 demonstrate that PPM1H overexpression specifically blocks LRRK2-mediated Rab phosphorylation in a catalytic activity-dependent manner (Figures 3B-C, 4, Figure 3\u2014figure supplements 1-2). The specificity is confirmed by lack of effect on PINK1-phosphorylated Rab8A (C63) and other signaling pathways (C64), providing strong evidence for substrate selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "Among PPM family phosphatases, PPM1M shows modest activity toward Rab10 and Rab8A, while PPM1J and most other PPM family members show little to no activity, with only PHLPP1 showing moderate effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 and C70 systematically test PPM family members, showing PPM1M has weaker activity than PPM1H while PPM1J is inactive (Figure 5A). Testing of 10 additional PPM members identified only PHLPP1 with moderate activity (C70, Figure 5C), establishing PPM1H as the most potent family member for this substrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "CRISPR-Cas9 knockout of PPM1H in A549 cells increased basal Rab10 phosphorylation 2-5-fold, with stoichiometry increasing from ~0.8% in wild-type to ~2.6% in knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C71-C77 demonstrate PPM1H knockout effects using multiple independent clones (10 knockout vs 4 wild-type) with quantitative mass spectrometry to measure phosphorylation stoichiometry (Figure 6A-B). The stoichiometry measurements align with prior literature values (C76), providing validation. The approach addresses potential splice variants (C71-C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "PPM1H knockout increases phosphorylation of Rab8A and Rab35 in addition to Rab10, but not Rab12, as demonstrated by immunoprecipitation and mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 use orthogonal methods (immunoblotting and mass spectrometry) to identify PPM1H substrates beyond Rab10 (Figure 6C-D). The finding that Rab12 is unaffected (C79) provides important specificity information, though the mechanism for this selectivity is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "PPM1H knockout delays Rab10 dephosphorylation following LRRK2 inhibition by approximately 2-fold in both time-course and dose-response experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C81-C84 demonstrate delayed dephosphorylation kinetics in PPM1H knockout cells using both time-course (C81-C82) and dose-response (C83-C84) approaches (Figure 7). The ~2-fold delay and ~3-fold increase in IC50 provide quantitative evidence that PPM1H contributes substantially, but not exclusively, to Rab10 dephosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Purified PPM1H directly and efficiently dephosphorylates phosphorylated Rab8A and Rab10 in vitro, with activity toward both GDP- and GTP-bound forms, while PPM1J and PPM1M show minimal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C85-C92 provide biochemical evidence for direct dephosphorylation using purified recombinant proteins (Figure 8, Figure 8\u2014figure supplements 5). The dose-response (C85, C90) and time-course (C87, C91) data are quantitative, and comparison with PPM1J/PPM1M (C89, C92) establishes specificity. Testing both GDP- and GTP-bound forms (C88) is thorough.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "A substrate-trapping PPM1H[D288A] mutant binds specifically to LRRK2-phosphorylated Rab8A, Rab8B, and Rab10, and blocks their dephosphorylation following LRRK2 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C93-C102 describe a substrate-trapping approach based on prior structural work (C93-C94). The mutant specifically binds phosphorylated Rabs (C95-C99, Figure 9A-B) and blocks dephosphorylation for >320 min (C102, Figure 9\u2014figure supplement 2C), providing strong evidence for direct substrate interaction. The LRRK2-dependence of binding (C99) confirms specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "PPM1H localizes to the cytosol and the cis/medial Golgi, where it co-localizes with Rab10, as demonstrated by immunofluorescence microscopy with and without nocodazole treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C103-C105 establish PPM1H localization using multiple Golgi markers and the gold-standard nocodazole fragmentation assay (Figure 10). Co-localization with Rab10 (C104) is shown in multiple cell types. The data support the conclusion (C105) that PPM1H can access its substrates at the Golgi.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "PPM1H knockdown suppresses primary cilia formation in a LRRK2-dependent manner, similar to pathogenic LRRK2 mutations, confirming a functional role for wild-type LRRK2 in cilia regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C107-C109 demonstrate that PPM1H depletion phenocopies pathogenic LRRK2 in suppressing ciliation, with rescue by LRRK2 inhibitor (Figure 11A). This functional validation connects PPM1H to a known LRRK2-regulated process. The use of three independent shRNAs with qPCR validation (Figure 11B) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C130",
+      "C132",
+      "C144"
+    ],
+    "result": "PPM1H acts as a key modulator of LRRK2 signaling by specifically dephosphorylating a subset of LRRK2-phosphorylated Rab proteins (Rab8A, Rab8B, Rab10, Rab35) in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C130, C132, and C144 represent the main conclusion, supported by convergent evidence from siRNA screen (C3), knockout studies (C4-C5), overexpression (C6), biochemical assays (C7), substrate trapping (C8), and functional validation (C11). The collective data from multiple orthogonal approaches strongly support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C140"
+    ],
+    "result": "Other phosphatases besides PPM1H must contribute to Rab10 dephosphorylation in vivo, as LRRK2 inhibitors still induce dephosphorylation in PPM1H knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C140 is a logical inference from the observation that dephosphorylation still occurs in PPM1H knockout cells, albeit more slowly (C82, Figure 7). This conclusion is appropriately cautious and acknowledges the limitations of the knockout data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "PPM1H activity enhancers could offer a therapeutic approach for Parkinson's disease, and PPM1H expression/activity may modulate disease risk in LRRK2 mutation carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13 and C148-C150 are speculative therapeutic proposals based on the mechanistic findings. While the logic is sound given that PPM1H counteracts pathogenic LRRK2 activity, no data on PPM1H modulation in disease models, patient genetics, or therapeutic proof-of-concept are provided. These remain hypotheses requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "PPM1H is most highly expressed in brain and basophils, while PPM1M shows low tissue expression despite similar mRNA levels, with highest expression in neutrophils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 describe expression patterns using proteomics data (Figure 12\u2014figure supplements 1-2). The discordance between PPM1M mRNA and protein levels (C121) is an interesting observation, though the mechanism is not explored. These data provide context for understanding physiological roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on LRRK2 in Parkinson's disease: pathogenic mutations activate LRRK2 kinase, which phosphorylates Rab GTPases at their Switch-II motif, affecting effector interactions and cellular functions including cilia formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C14-C28 provide established background knowledge supported by appropriate citations. These claims set the context for the study but do not represent new findings. The information is accurately presented and well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C46",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Background on PPM phosphatases: PPM1H belongs to an ancient, evolutionarily conserved phosphatase family with 20 human members, characterized by metal dependence and insensitivity to okadaic acid/calyculin-A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C110-C129 provide background on PPM phosphatases with appropriate citations. This contextualizes PPM1H within its protein family and summarizes prior work on PPM1H in cancer. The information is accurately presented but represents established knowledge rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "A forward genetic screen in C. elegans identified eight loss-of-function alleles of the novel gene fld-1, which encodes a homolog of human TLCD1/2 proteins. These mutations suppress saturated fatty acid toxicity in sensitized genetic backgrounds (paqr-2, iglr-2 mutants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic screen methodology is clearly described (C13), with eight fld-1 alleles isolated from 15 suppressors (C2, C14). Loss-of-function nature is confirmed by rescue experiments (C16, C17) and Western blot showing protein absence (C18). The homology to TLCD1/2 is supported by sequence analysis (C3). The high recovery rate of fld-1 alleles provides strong evidence for its role in SFA tolerance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "FLD-1 is localized to the plasma membrane and is ubiquitously expressed throughout C. elegans development. The protein can function in multiple tissues including hypodermis and intestine to suppress paqr-2 mutant phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Plasma membrane localization is demonstrated by confocal imaging of functional GFP-tagged FLD-1 (C4, C23, C24). Tissue-specific rescue experiments show function in hypodermis and intestine (C25), supporting multi-tissue activity (C26). The functional reporter provides strong evidence for both localization and expression pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Single fld-1 mutants show no obvious phenotypes under normal conditions but exhibit increased oxidative stress response when challenged with linoleic acid. All five tested alleles show similar suppression effects, indicating they are likely null alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Comprehensive phenotypic characterization shows no defects in multiple traits under normal conditions (C28). The specific oxidative stress phenotype with LA treatment (C29) is well-documented with imaging. The similar suppression by all five alleles (C31, C32) provides strong evidence for null status, though this is an inference rather than direct molecular proof.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "fld-1 mutations suppress phenotypes of both paqr-2 and iglr-2 single and double mutants. Related genes Y48G8AL.13 and F41H10.5 show partial functional redundancy with fld-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Genetic interaction data clearly show fld-1 suppression of iglr-2 phenotypes (C33), consistent with the known mutual dependence of paqr-2 and iglr-2 (C34). The partial suppression by related genes (C36) supports limited redundancy (C37), though the lack of glucose intolerance suppression (C35) suggests functional divergence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "fld-1 acts in a pathway separate from desaturase-activating mutations (mdt-15, cept-1, hacd-1) but requires desaturase activity for its suppression effects. fld-1 mutations restore membrane fluidity without upregulating desaturase expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The additive genetic interactions (C38) and lack of fat-7::GFP upregulation (C42) strongly support a separate pathway (C39). FRAP measurements confirm fluidity restoration (C41). The requirement for desaturase activity shown by RNAi experiments (C43, C44) is compelling. However, the mechanism by which fld-1 depends on desaturases without regulating their expression remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "Lipidomic analysis shows that fld-1 and mdt-15 mutations correct the excess SFAs and reduced LCPUFAs in paqr-2 mutant phosphatidylethanolamines, with full correction when combined. These mutations do not cause excess membrane fluidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lipidomic data clearly demonstrate the lipid composition defects in paqr-2 mutants and their correction by fld-1 and mdt-15 mutations (C47, C48). The specificity for LCPUFAs over MUFAs (C49) is well-documented. FRAP data showing no excess fluidity (C51) support a regulatory mechanism preventing over-fluidization (C52), though this mechanism is not identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "fld-1 mutations suppress the growth defect of fat-2 mutants and enable accumulation of exogenously provided EPA in paqr-2 mutants, demonstrating that LCPUFA synthesis is not required for fld-1's effects on LCPUFA-containing phospholipid levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic suppression of fat-2 by fld-1 (C53) and EPA accumulation experiments (C55) provide strong evidence that fld-1 affects LCPUFA incorporation rather than synthesis (C56). The interpretation that fld-1 increases production or decreases turnover of LCPUFA-phospholipids (C54) is reasonable but remains mechanistically unresolved at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Human TLCD1 and TLCD2 are expressed in multiple tissues and their knockdown in HEK293 cells has minimal effects under normal conditions but protects against palmitic acid-induced membrane rigidification and apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Expression data from mouse tissues (C57, C58) establish tissue distribution. FRAP measurements clearly demonstrate protection against PA-induced rigidification (C60), and apoptosis assays confirm cytoprotection (C61). The minimal effects under normal conditions (C59) parallel the C. elegans findings, supporting functional conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "TLCD1/2 knockdown does not affect fatty acid uptake, TAG storage, lipid sequestration, or desaturase expression. SCD expression is actually downregulated in knockdown cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays rule out various mechanisms: PA uptake (C62), TAG content (C63, C64), Nile red staining (C65), and qPCR for desaturases (C67). The downregulation of SCD (C68) is interesting and well-documented. These negative results effectively narrow the possible mechanisms of TLCD1/2 action.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "TLCD1/2 knockdown causes marked increases in specific LCPUFAs (18:2, 20:5, 22:6) in phospholipids. Exogenous EPA accumulates in knockdown cells without affecting TAG storage. Very low concentrations of LCPUFAs (1 \u03bcM EPA/DHA) prevent PA-induced membrane rigidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Lipidomic data clearly show increased LCPUFAs in specific phospholipid classes (C69, C70). EPA supplementation experiments demonstrate independence from de novo synthesis (C71, C72) and lack of effect on TAG storage (C73). The potency of LCPUFAs in preventing rigidification (C74, C75) is well-demonstrated by FRAP and supported by literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Pulse-chase experiments with 13C-labeled linoleic acid show that TLCD1/2 knockdown increases LA incorporation into phospholipids within 6-24 hours but does not affect turnover during the chase period, indicating that TLCD1/2 limit LCPUFA incorporation rather than promote turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The isotope labeling experiments provide direct mechanistic evidence. Increased incorporation during the pulse (C76, C77) combined with no change during chase (C78) strongly support the conclusion that TLCD1/2 limit formation rather than promote turnover (C79). This is a key mechanistic finding, though only one isotope labeling experiment was performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "TLCD2 knockdown suppresses membrane rigidification in cells with FADS2 or AdipoR2 knockdown, demonstrating independence from desaturases and functional conservation with C. elegans. TLCD knockdown improves lipid composition and normalizes ceramide levels in AdipoR2 knockdown cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic interactions with FADS2 (C80) and AdipoR2 (C82) parallel the C. elegans findings and support pathway independence (C81). The potency of EPA in protecting AdipoR2 knockdown cells (C84, C85) is well-demonstrated. Lipidomic improvements in double knockdowns (C86, C87) provide strong evidence for functional conservation across species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "FLD-1 and TLCD1/2 belong to the TLC domain protein family but are localized to plasma membranes rather than ER, distinguishing them from ceramide synthases and TRAM proteins. They likely act at the plasma membrane to limit LCPUFA-containing phospholipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Sequence analysis establishes TLC domain family membership (C88). Plasma membrane localization is clearly demonstrated by imaging (C89), distinguishing these proteins from ER-localized family members. The inference that they are not ceramide synthases or TRAMs (C90) is well-supported by localization and lack of critical motifs. The proposed mechanism (C91) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "FLD-1 and TLCD1/2 may regulate the Lands cycle by influencing substrate selection of phospholipases or lysophospholipid acyltransferases, though direct control of ER-localized acyltransferases is unlikely given plasma membrane localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as speculation (C92) with appropriate caveats about the localization mismatch (C93). While the Lands cycle hypothesis is reasonable given the data, no direct evidence for interaction with specific enzymes is provided. This represents a plausible model requiring further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Multiple lines of evidence support that fld-1's primary effects are on membrane fluidity rather than LCPUFA signaling functions. The effects on membrane composition can explain TLCD1's previously reported role in calcium channel activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The argument for membrane fluidity as the primary mechanism (C95) is well-supported by the comprehensive characterization of paqr-2/iglr-2 mutants (C96) and genetic interactions. The connection to calcium channel regulation (C97) provides a plausible explanation for prior observations. The broader implications for cellular processes (C98) are well-supported by literature citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "PUFAs are chemically unstable and readily peroxidized, suggesting cells need mechanisms to limit their levels. fld-1 mutants show enhanced oxidative stress response to LA challenge, indicating a role in preventing PUFA-derived oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chemical instability of PUFAs is well-established by citations (C99). The inference that cells need limiting mechanisms (C100) is reasonable. The oxidative stress phenotype in fld-1 mutants (C101) is clearly demonstrated and supports a protective function (C102). This provides a rationale for why cells would limit LCPUFA levels despite their beneficial effects on fluidity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "paqr-2 and iglr-2 prevent SFA lipotoxicity through two pathways: upregulation of desaturases and inhibition of fld-1 or a fld-1-regulated pathway. The possibility of direct paqr-2 regulation of fld-1 is raised but lacks biochemical evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-pathway model (C106) is well-supported by the existence of two suppressor classes (C107) and the genetic interaction data. The function in preventing SFA lipotoxicity (C105) is clearly established. The speculation about direct paqr-2/fld-1 interaction (C108) is appropriately presented with explicit acknowledgment of the lack of biochemical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "TLCD1/2 inhibitors may have therapeutic potential for lipotoxicity, diabetes-associated membrane rigidity, and AdipoR1-related retinal defects. The lack of obvious phenotypes in fld-1 mutants suggests inhibition may be well-tolerated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as a proposal for future therapeutic applications (C109). While the associations with diabetes (C110) and retinal defects (C111) are supported by citations, no actual therapeutic studies are presented. The inference about tolerability (C112) is reasonable but extrapolating from C. elegans to mammals is speculative. This represents a reasonable hypothesis requiring validation.",
+    "result_type": "MINOR"
+  }
+]

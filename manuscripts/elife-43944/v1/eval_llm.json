@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "ANAC044 and ANAC085 are NAC transcription factors closely related to SOG1 that are induced by DNA damage in a SOG1-dependent manner. These transcription factors share high similarity in their NAC domains with SOG1 (72.0% and 72.6% respectively) but lack the C-terminal SQ motifs present in SOG1. Their expression is rapidly induced by various DNA-damaging agents (bleomycin, HU, MMC, MMS) in root tips and young leaves, and SOG1 directly binds to their promoters under DNA damage conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C51 provide converging evidence from phylogenetic analysis (C39-C43), transcriptional response data (C44-C47), genetic analysis in sog1 mutants (C48-C49), and ChIP-qPCR experiments (C50-C51) that collectively demonstrate ANAC044 and ANAC085 are SOG1-regulated NAC transcription factors induced by DNA damage. The structural differences from SOG1 (lack of SQ motifs) suggest distinct regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Loss-of-function mutants of ANAC044 and ANAC085 exhibit tolerance to multiple DNA-damaging agents. The anac044 and anac085 single and double mutants show increased tolerance to bleomycin, HU, MMC, and MMS compared to wild-type. Genetic epistasis analysis reveals that sog1-101 is epistatic to anac044-1 anac085-1, indicating that ANAC044 and ANAC085 function downstream of SOG1 in DNA damage-induced root growth retardation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 provide molecular characterization of null alleles (C52-C54), phenotypic analysis showing DNA damage tolerance (C55-C56), and epistasis analysis (C57-C60) that collectively demonstrate ANAC044 and ANAC085 function downstream of SOG1. The epistasis data (comparable tolerance between sog1, double mutant, and triple mutant for some agents; hypersensitivity of triple mutant similar to sog1 for others) supports the hierarchical relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "ANAC044 and ANAC085 participate in SOG1-mediated stem cell death in response to DNA damage, but stem cells in anac044 anac085 mutants retain functionality unlike those in sog1 mutants. While both mutants suppress stem cell death after bleomycin treatment, anac044 anac085 maintains proper root organization during recovery, whereas sog1-101 shows disorganized tissues. This suggests DNA-damaged stem cells in anac044 anac085 can still produce transit-amplifying cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C73 provide evidence from cell death assays (C63-C64), recovery experiments (C68-C71), and phenotypic comparisons (C69-C70, C72) showing distinct outcomes between anac044 anac085 and sog1 mutants. The proper tissue organization in anac044 anac085 versus disorganization in sog1 after recovery supports functional differences in stem cell preservation, though the mechanistic basis (C73) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C152",
+      "C153"
+    ],
+    "result": "ANAC044 and ANAC085 are not required for DNA repair gene induction or homologous recombination. Microarray analysis shows that DNA repair-related genes (BRCA1, RAD51A, RAD51B, RAD54L, MND1, RPA1E) are normally induced in anac044 anac085 mutants. Homologous recombination assays demonstrate that while sog1-101 shows reduced HR frequency, anac044-1 anac085-1 exhibits normal HR levels comparable to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 and C152-C153 provide microarray data (C76-C77) and functional HR assays (C79-C82) demonstrating that ANAC044/085 are dispensable for DNA repair responses. The contrast with sog1-101 (reduced HR) versus anac044 anac085 (normal HR) clearly delineates functional specialization, with ANAC044/085 dedicated to cell cycle control rather than DNA repair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "ANAC044 and ANAC085 are essential for DNA damage-induced G2 arrest. Bleomycin treatment causes a 38% reduction in meristem cell number in wild-type but not in anac044 anac085 or sog1 mutants. EdU pulse-labeling experiments show that bleomycin suppresses G2-to-M progression in wild-type but not in anac044 anac085 or sog1-101 mutants, indicating these transcription factors are required for inhibiting G2/M transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 provide complementary evidence from meristem cell counting (C84-C85) and EdU pulse-chase experiments (C87-C88) that converge on the conclusion that ANAC044/085 are essential for G2 arrest. The similar phenotypes of anac044 anac085 and sog1 mutants in these assays support their function in the same pathway controlling G2/M progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "ANAC044 and ANAC085 control G2/M-specific gene repression and Rep-MYB protein accumulation during DNA damage response. In anac044 anac085 mutants, G2/M-specific genes (KNOLLE, CYCB1;2, EHD2, PLEIADE) show initial suppression but fail to maintain repression after 12 hours, similar to myb3r3/5 mutants. MYB3R3-GFP protein accumulation is abolished in anac044 anac085 mutants despite normal transcript levels. Genetic analysis shows anac044 anac085 and myb3r3-1 function in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C108 provide time-course gene expression data (C91-C94), protein accumulation assays (C97-C99), and genetic epistasis analysis (C105-C107) that collectively demonstrate ANAC044/085 control Rep-MYB protein levels post-transcriptionally. The similar kinetics of gene repression defects in anac044 anac085 and myb3r3 mutants (C94), combined with epistasis data (C106-C107), strongly support their function in the same pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C164"
+    ],
+    "result": "ANAC044 overexpression enhances G2 arrest only under DNA damage conditions. Dex-inducible ANAC044-GR overexpression lines show normal root growth without bleomycin but enhanced growth inhibition, stronger suppression of EdU-positive mitotic cells, and greater repression of G2/M-specific genes when treated with bleomycin. This indicates ANAC044 requires DNA damage signals for its function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 and C164 provide gain-of-function evidence from root growth assays (C109-C112), EdU labeling (C113), and gene expression analysis (C114) showing that ANAC044 overexpression alone is insufficient for cell cycle arrest. The requirement for bleomycin treatment to observe enhanced phenotypes (C111-C114) demonstrates that ANAC044 function depends on DNA damage signals, supporting a model where additional stress-responsive modifications are necessary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "ANAC044 and ANAC085 mediate heat stress-induced G2 arrest independently of SOG1. Heat stress (37\u00b0C) causes G2 arrest as shown by increased CYCB1;1-expressing cells and decreased CDT1a-expressing cells. The anac044 anac085 mutant shows tolerance to heat stress with reduced root growth inhibition and meristem cell number reduction, while sog1-101 exhibits wild-type sensitivity. ANAC044 and ANAC085 are induced by heat stress equally in wild-type and sog1-101.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C126 provide cell cycle marker analysis (C116), phenotypic characterization (C121-C122), genetic comparison with sog1 (C123-C124), and transcriptional analysis (C125) that collectively demonstrate ANAC044/085 function in heat stress response independently of SOG1. The SOG1-independent induction (C125) and the differential sensitivity of anac044 anac085 versus sog1-101 to heat (C121-C124) provide strong evidence for a parallel pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "ANAC044 and ANAC085 are required for MYB3R3 accumulation in response to heat stress, establishing the ANAC044/085-MYB3R3/5 pathway as a central module for G2 arrest. Heat treatment increases MYB3R3-GFP fluorescence and protein levels in wild-type but not in anac044 anac085, despite elevated MYB3R3 transcripts in both genotypes. The myb3r3-1 and anac044 anac085 myb3r3-1 triple mutant show similar heat tolerance as anac044 anac085.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C133 provide protein accumulation data (C127-C128), transcript analysis (C129), and genetic epistasis (C131) that demonstrate ANAC044/085 control MYB3R3 at the protein level during heat stress. The dissociation between transcript induction and protein accumulation (C129-C130) and the epistasis of myb3r3 with anac044 anac085 (C131) support post-transcriptional regulation and pathway hierarchy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C138",
+      "C139",
+      "C175"
+    ],
+    "result": "ANAC044 and ANAC085 function as a signaling hub that integrates distinct stress signals (DNA damage, heat) to induce G2 arrest. The authors propose that plants deploy this module as an additional critical checkpoint at G2 phase, which may be plant-specific and related to the strategy of inducing endoreplication under stress to avoid cell death while maintaining growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136, C138-C139, and C175 synthesize the experimental findings into a coherent model. The demonstration that ANAC044/085 respond to both DNA damage (SOG1-dependent) and heat stress (SOG1-independent) while converging on the same downstream target (Rep-MYB) supports the hub model. The plant-specific nature is supported by the unique endoreplication strategy (C138), though this remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "ANAC044 and ANAC085 stabilize Rep-MYBs at a later stage of DNA damage response through mechanisms independent of initial CDK activity reduction. In anac044 anac085 mutants, CDK inhibitors (SMR5/SMR7) and MYB3R4 are regulated normally, and G2/M genes show initial suppression, but sustained repression after 12 hours is impaired. The authors propose ANAC044/085 may control degradation machinery for Rep-MYBs, potentially through F-box proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C146 provide evidence that initial CDK-dependent responses occur normally in anac044 anac085, but the mechanistic basis for Rep-MYB stabilization (C147, C151) remains speculative. While the temporal pattern of gene repression defects (C146) supports a late-stage function, the proposed mechanism involving F-box proteins (C150-C151) is based on correlative evidence from other studies rather than direct experimental demonstration in this work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "ANAC044 and ANAC085 lack SQ motifs and likely do not require ATM/ATR-mediated phosphorylation for activation, but may require other stress-responsive modifications. The similar DNA damage sensitivity of single and double mutants suggests they work together, possibly as homo- or heterodimers. ANAC044 overexpression enhances G2 arrest only when ANAC085 is induced by bleomycin, supporting a cooperative mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C161-C163 provide structural evidence (lack of SQ motifs) and functional evidence (heat stress response without ATM/ATR activation) that ANAC044/085 activation differs from SOG1. However, the proposed mechanisms for activation (C165) and dimerization (C169-C170) remain speculative. While the genetic data (C166-C167) and overexpression results (C170) are consistent with cooperative function, direct biochemical evidence for dimerization or alternative modifications is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C173",
+      "C174"
+    ],
+    "result": "ANAC044 and ANAC085 are induced by distinct stress factors: ANAC085 promoter contains heat shock elements, while ANAC044 is also up-regulated by cold and salt stresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C174 provide promoter analysis (C173) and preliminary expression data (C174) showing differential regulation of ANAC044 and ANAC085 by various stresses. The presence of heat shock elements in ANAC085 but not ANAC044 promoter (C173) provides mechanistic insight into differential stress responsiveness, though the cold and salt stress data for ANAC044 (C174) are described as preliminary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background knowledge establishing the context for plant DNA damage responses and cell cycle control. Plants lack animal checkpoint proteins (p53, p21, CDC25, CHK1/2) but use SOG1 as a master regulator of DNA damage responses. Rep-MYBs (MYB3R3/5) are degraded via ubiquitin-proteasome pathway in a CDK-dependent manner and stabilize under DNA damage to repress G2/M genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C38 represent established knowledge from prior studies, appropriately cited throughout. These claims provide essential context for understanding the novelty of the current work. The citations appear accurate and the knowledge claims are well-established in the field based on the referenced literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C176",
+      "C177"
+    ],
+    "result": "Rep-MYBs are major repressors of cell cycle genes and exist as components of a DREAM-like complex with retinoblastoma-related protein and E2FC. The ANAC044/085 pathway may control other DREAM complex subunits to differentially regulate downstream genes in response to various stresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C143 and C176 represent established knowledge from prior studies (Bourbousse et al. 2018, Chen et al. 2017, Kobayashi et al. 2015) that provide context for the current findings. However, the speculation that ANAC044/085 may control other DREAM complex subunits (C177) is not supported by experimental evidence in this manuscript and represents a hypothesis for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Stem cells in sog1 mutants suffer more severe DNA damage consequences than those in anac044 anac085 mutants. While both suppress stem cell death, sog1 shows disorganized root tissues after ionizing radiation whereas anac044 anac085 maintains proper organization. This difference is attributed to defects in DNA repair activation in sog1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C158 integrate findings from Johnson et al. 2018 (C154) with the current study's observations (C155) to propose a mechanistic explanation (C156-C158). The proper tissue organization in anac044 anac085 versus disorganization in sog1 (C155) supports the interpretation that SOG1-mediated DNA repair is sufficient for stem cell preservation when cell cycle arrest is bypassed, though the mechanistic details (C157) remain somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C159",
+      "C160"
+    ],
+    "result": "SOG1 is phosphorylated by ATM/ATR on five SQ motifs in its C-terminal region, and this phosphorylation is essential for SOG1's DNA-binding ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C160 represent established knowledge from prior studies (Yoshiyama et al. 2013, 2017; Sjogren et al. 2015; Ogita et al. 2018) that provide important context for understanding the structural and functional differences between SOG1 and ANAC044/085. The citations are appropriate and the knowledge claims are well-supported by the referenced literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C137"
+    ],
+    "result": "SOG1-dependent programmed cell death triggers stem cell niche regeneration and is essential for root growth recovery after DNA damage. DNA damage enhances endoreplication onset by inhibiting G2/M progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 and C137 represent established findings from Johnson et al. 2018 and Adachi et al. 2011 that provide context for interpreting the current study's findings on stem cell death and recovery. These are appropriately cited and provide important background for understanding the biological significance of the ANAC044/085 pathway.",
+    "result_type": "MINOR"
+  }
+]

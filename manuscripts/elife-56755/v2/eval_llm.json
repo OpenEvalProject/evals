@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "AMPH produced dose-dependent behavioral effects consistent with prior literature: increased running speed peaking at 1.0 mg/kg, increased off-task behavior at higher doses, decreased feeder occupancy time, and increased path variability. Moderate doses maintained task engagement despite reduced reward consumption, while performance deteriorated at 1.5 mg/kg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C41 collectively demonstrate typical AMPH behavioral effects with appropriate statistical support (Figures 2A-F). The dose-response patterns are internally consistent and align with cited literature (C37). The within-session design with saline controls strengthens the findings, though statistical power is modest for some measures (C32: power=0.76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "ACC neurons encoded effort (ramping from ~20% to ~35% during barrier approach) and reward (~10-15% throughout task). Saline injection did not affect these proportions, but AMPH dose-dependently attenuated the typical within-session decrease in firing rate, with the highest dose increasing firing rate relative to baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 describe baseline ACC encoding properties and AMPH effects on firing rates with statistical support (Figure 3). The saline control (C45) validates the within-session design. The interpretation that firing rate changes reflect session progression (C47) is reasonable but somewhat speculative. Results align with prior work (C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Individual ACC neurons jointly encoded effort and reward in an anti-correlated manner consistent with utility signaling, with the population distribution oriented along the diagonal axis bisecting quadrants QII and QIV. AMPH rotated this distribution toward the effort axis, indicating selective suppression of reward encoding while maintaining effort encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60 and C89-C92 demonstrate utility encoding using PCA with appropriate statistical tests (Kuiper test, Figure 4A-C). The bootstrapping procedure (100 repetitions) addresses sample size differences. The interpretation that rotation reflects preferential reward suppression (C56, C92) is well-supported by the geometric analysis and explained variance data (C59-C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C93",
+      "C152"
+    ],
+    "result": "AMPH dose-dependently reduced the proportion of reward-encoding neurons (ANOVA F3,60=46.04, p=14\u00d710\u207b\u00b9\u2076) while having minimal effect on effort-encoding neurons (weak inverted-U, no dose significantly different from vehicle). This suggests AMPH devalues reward to a greater extent than effort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65, C93, and C152 provide converging evidence for selective reward suppression using single-unit classification (p<0.05, effect size \u03b7\u00b2>0.138). The statistical evidence is strong for reward effects (C63) but weaker for effort (C61-C62). The inference about differential devaluation (C65) is reasonable but extends beyond direct neural evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The loss of reward signaling at intermediate AMPH doses (0.5-1.0 mg/kg) was primarily due to reduced signal amplitude (decreased firing rate differences between large/small rewards) rather than increased noise (trial-to-trial variance), though both factors may contribute at higher doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 decompose the mechanism of reward signal loss using signal-to-noise analysis (Figure 4F-G). The statistical support is strong for signal reduction (C66: F3,1935=4.1, p=0.006) but weaker for variance (C67: p=0.104). The interpretation distinguishes dose-dependent mechanisms appropriately, though the high-dose conclusion (C70) is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C98",
+      "C113",
+      "C114"
+    ],
+    "result": "GPFA-derived neural trajectories in 3D state space formed smooth, task-specific patterns that discriminated task epochs and were highly consistent across trials of the same type. Trajectories diverged for different effort/reward conditions and were sensitive to future events (diverging before the barrier climb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76, C98, C113-C114 describe trajectory properties with visual support (Figure 5). The GPFA methodology is appropriate for extracting smooth trajectories from spike data. The consistency across trials and sensitivity to task conditions are well-demonstrated. The inference about future event encoding (C76) is supported by the spatial analysis showing early divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C99",
+      "C100",
+      "C101",
+      "C115"
+    ],
+    "result": "ACC trajectories were sensitive to past events and behavioral context. Following off-task behavior (backtracking), trajectories deviated substantially during task re-engagement even when the animal's path and velocity were similar to normal trials, indicating sensitivity to recent behavioral history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80, C99-C101, and C115 demonstrate context-sensitivity using trajectory analysis of backtracking trials (Figure 6). The comparison of similar paths with different histories is compelling. However, the analysis is based on limited examples, and the generalizability is uncertain. The conclusion about history-dependence (C78, C101) is well-supported by the data shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Low-dose AMPH (0.5-1.0 mg/kg) contracted neural trajectories in state space for both large and small reward trials (ANOVA p<10\u207b\u00b9\u00b2), without reducing explained variance by the first three GPFA factors, indicating a genuine neural phenomenon rather than methodological artifact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C81-C83 demonstrate trajectory contraction with strong statistical support (Figure 7B-C). The control analysis of explained variance (C82, Figure 7D) effectively rules out methodological confounds. The inference that contraction is a neural phenomenon (C83) is well-justified. The exclusion of off-task trials strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C84"
+    ],
+    "result": "High-dose AMPH (1.5 mg/kg) expanded neural trajectories in state space, contrasting with the contraction observed at lower doses. This expansion occurred for both large and small reward trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C84 demonstrate trajectory expansion at high doses with statistical support (Figure 7B-C). The dose-dependent reversal from contraction to expansion is a key finding. The effect is consistent across reward conditions, strengthening the conclusion. However, the mechanism underlying this reversal is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C102"
+    ],
+    "result": "Trial-to-trial trajectory variance showed a dose-dependent pattern: trending toward reduction at 0.5-1.0 mg/kg and increase at 1.5 mg/kg, with statistical significance at the target feeder (ANOVA F3,62=3.93, p=0.012). This supports the hypothesis that neural dynamics are stabilized by low-moderate AMPH but destabilized at high doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C88 and C102 describe variance patterns with mixed statistical support. The overall effect was not significant (C85: p>0.1), though the target feeder analysis reached significance (C87). The dose-dependent trend is consistent with the volume data, but the evidence is weaker. The interpretation about stability (C88) is reasonable but extends beyond the statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C103",
+      "C104"
+    ],
+    "result": "Decreased reward signaling in ACC coincided with reduced feeder occupancy time. The neural changes emerged before rats reached the target feeder, indicating altered reward anticipation rather than sensory/consummatory changes. Trajectory contraction under low-dose AMPH coincided with increased task engagement, while expansion at high doses coincided with frequent disengagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 and C103-C104 link neural and behavioral findings. The spatial analysis showing early reward signal changes (C95) supports the anticipation interpretation (C96). The correlation between trajectory dynamics and engagement (C103-C104) is compelling but correlational. The exclusion of off-task trials from neural analysis (noted in C105) strengthens the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C97",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors propose a mechanistic model: low-dose AMPH increases network stability that balances moderately increased excitability, promoting accelerated task execution despite reduced reward valuation. At high doses, excessive excitability overcomes stability enhancement, causing frequent deviations from the neural 'script' and impairing task execution. Reduced reward motivation may follow from reduced reward encoding, but task engagement continues due to increased trajectory stability that 'captures' neural dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C13, C97, and C121-C130 present an integrative theoretical model. While the model is consistent with the observed data patterns (trajectory contraction/expansion, firing rate changes, behavioral effects), it is largely speculative (evidence_type: SPECULATION, INFERENCE). The attractor dynamics framework is borrowed from computational literature (C107) but not directly tested. The model provides a coherent explanation but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors propose that ACC executes a continuous mental 'script' for task events that encodes not only present state but also upcoming events and their temporal/spatial proximity. This interpretation is supported by the smooth ramping of effort-related cells and consistency with primate ACC studies showing anticipatory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105 and C116-C120 propose the 'script' hypothesis based on trajectory properties. The supporting evidence includes spatial ramping (C119, Figure 3A) and comparison with primate data (C120). However, this is primarily an interpretive framework rather than a directly tested hypothesis. The concept is plausible and consistent with the data but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The dose-dependent effects on state-space variation are consistent with Lapish et al. (2015), who found 1.0 mg/kg AMPH reduced variation while 3.3 mg/kg expanded it. However, the present study found smooth trajectories rather than discrete clusters, possibly due to methodological differences (dimensionality reduction method, task demands, or number of recorded units).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 appropriately compare findings with prior work. The consistency in dose-dependent effects (C109) strengthens the present results. The acknowledgment of differences in trajectory patterns (C111) and speculation about causes (C112) is appropriate. The comparison demonstrates awareness of the literature and methodological considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C153"
+    ],
+    "result": "ACC neurons primarily encoded utility from the starting feeder to target feeders, with animals likely anticipating effort and reward based on task design (forced alternation, blocked conditions). The data reveal mechanisms of task engagement rather than choice, and do not conclusively explain why animals shift preference to high-effort options under low-dose AMPH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C151 and C153 appropriately contextualize the findings within the task design. The inference about anticipation (C145) is reasonable given the blocked design. The acknowledgment that the study addresses engagement rather than choice (C150) and cannot explain preference shifts (C151) demonstrates appropriate limitation recognition. The conclusion about maintained effort encoding (C153) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29",
+      "C156",
+      "C157"
+    ],
+    "result": "The study recorded 1209 putative pyramidal neurons from 22 sessions (55\u00b16.7 cells/session) in four adult male Fischer Brown Norway rats using hyperdrives with 12 independently-movable tetrodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C156-C157 provide methodological details that are clearly stated and internally consistent. The sample size (4 rats, 22 sessions, 1209 neurons) is substantial for this type of study. However, the small number of animals (n=4) limits generalizability and statistical power for between-subject comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C106",
+      "C107",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C154",
+      "C155"
+    ],
+    "result": "The introduction and discussion appropriately cite prior literature establishing that AMPH increases task engagement and effort while decreasing reward valuation, that ACC is important for effort-based decisions and encodes task-relevant variables, and that neuromodulators can affect cortical dynamics through attractor stability mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C14-C28, C106-C107, C131-C142, and C154-C155 summarize prior literature with appropriate citations. These provide necessary context for the study. The citations appear accurate based on the descriptions, though the actual cited papers were not reviewed. The literature review appropriately motivates the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C143"
+    ],
+    "result": "The authors propose that increased motoric activity from AMPH results from increased neural excitability constrained by attractor stability, likely mediated by brain regions other than ACC (based on lesion studies), and that ACC activity can serve as a window into broader network processing given anatomical connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C138 and C143 make inferences about mechanisms and brain regions beyond the direct data. The reasoning is logical (C137 cites lesion studies), but these are speculative extensions. The claim about ACC as a network window (C143) is reasonable given known connectivity but is not directly tested in this study.",
+    "result_type": "MINOR"
+  }
+]

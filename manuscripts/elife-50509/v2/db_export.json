@@ -1,0 +1,1716 @@
+{
+  "submission": {
+    "id": "b352591d-c672-42b3-86a3-a83060e82d6f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:29:30.952230Z",
+    "updated_at": "2025-12-02T12:29:30.952230Z"
+  },
+  "content": [
+    {
+      "id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "submission_id": "b352591d-c672-42b3-86a3-a83060e82d6f",
+      "content_type": "manuscript",
+      "content_text": "# Adaptation to mutational inactivation of an essential gene converges to an accessible suboptimal fitness peak\n\n## Authors\n\n- Jo\u00e3o V Rodrigues<sup>1</sup> ([ORCID: 0000-0002-5605-656X](https://orcid.org/0000-0002-5605-656X))\n- Eugene I Shakhnovich<sup>1</sup> ([ORCID: 0000-0002-4769-2265](https://orcid.org/0000-0002-4769-2265)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry and Chemical Biology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mechanisms of adaptation to inactivation of essential genes remain unknown. Here we inactivate E. coli dihydrofolate reductase (DHFR) by introducing D27G,N,F chromosomal mutations in a key catalytic residue with subsequent adaptation by an automated serial transfer protocol. The partial reversal G27- > C occurred in three evolutionary trajectories. Conversely, in one trajectory for D27G and in all trajectories for D27F,N strains adapted to grow at very low metabolic supplement (folAmix) concentrations but did not escape entirely from supplement auxotrophy. Major global shifts in metabolome and proteome occurred upon DHFR inactivation, which were partially reversed in adapted strains. Loss-of-function mutations in two genes, thyA and deoB, ensured adaptation to low folAmix by rerouting the 2-Deoxy-D-ribose-phosphate metabolism from glycolysis towards synthesis of dTMP. Multiple evolutionary pathways of adaptation converged to a suboptimal solution due to the high accessibility to loss-of-function mutations that block the path to the highest, yet least accessible, fitness peak.\n\n## Introduction\n\nWhen important cellular functions are inactivated, for\u00a0example by genetic mutations, long ranging disruptions of cellular networks can occur, which poses a major adaptive challenge to cells. Recent studies investigated evolution of E. coli upon inactivation of non-essential enzymes of carbon metabolism that lead to re-wiring through less efficient pathways (Kr\u00fcsemann et al., 2018; Long et al., 2018; McCloskey et al., 2018a; McCloskey et al., 2018b; McCloskey et al., 2018c; McCloskey et al., 2018). These studies highlight a crucial interplay between regulatory responses and imbalances in metabolite concentrations resulting from gene knockouts, which can be subsequently corrected by mutations elsewhere. Importantly all these studies involved gene-knockout so that adaptation by reversal to wild type genotype was not possible.\n\nLess is known about the adaptation mechanisms that follow inactivation of unique cellular processes that are deemed indispensable in microbes. The genes that perform such functions, often classified as essential, are believed to face higher selective pressure and thus evolve slower (Luo et al., 2015). It is thus expected that functional\u00a0disruption of essential genes either by mutation or by antibiotic stress can create a major barrier to the adaptability of bacteria. Nevertheless, a comprehensive study involving knock outs of\u00a0>1000 genes classified as essential in yeast has shown that a small percentage of mutants could recover viability after laboratory evolution (Liu et al., 2015), revealing that essentiality can, in some cases, be overcome through adaptation. Loss of essential biosynthetic genes have also been observed to occur naturally, under evolutionary conditions where pathway products are provided externally (D'Souza and Kost, 2016), highlighting a context-dependent nature of essentiality. Nevertheless, while adaptation upon inactivation of essential genes in microbes has been demonstrated, its mechanisms remain unknown.\n\nHere we study evolutionary adaptation upon functional inactivation of dihydrofolate reductase (DHFR), an essential E. coli enzyme. As the cellular target of the antibiotic trimethoprim, DHFR has been repeatedly observed to accumulate mutations leading to extremely high drug resistance levels in various experimental evolution studies (Rodrigues et al., 2016; Tamer et al., 2019; Toprak et al., 2012). Past efforts to link fitness effects of chromosomal variation in the folA locus encoding DHFR and their biophysical effects on DHFR protein allowed us to develop an accurate quantitative biophysical model of DHFR fitness landscape (Bershtein et al., 2015a; Bershtein et al., 2013; Bershtein et al., 2012; Bershtein et al., 2015b; Rodrigues et al., 2016). The availability of a clear genotype-phenotype relationship makes DHFR an excellent model to study the dynamics and outcomes of evolution to recover from its inactivation by point mutations. In contrast to previous studies that used gene knockouts, here we inactivate the chromosomal E. coli DHFR by introducing mutations in the folA locus at a key catalytic residue in position 27, generating strains that express inactive DHFR (with at least 4 orders of magnitude lower catalytic efficiency than the wild type). These strains are viable only with external metabolic compensation, allowing the mutants to adapt to lack of DHFR function by decreasing supplement concentration. The advantage of this approach is that it presents cells with an obvious evolutionary \u2018solution\u2019 of reverting the mutant back to wild type variant without massive rewiring that could lead to potentially lesser fit variants. However, an actual outcome may depend on evolutionary dynamics which could revert to wild type or other form of active DHFR (higher fitness peak) or converge to a potentially more accessible solution of rewiring to a less efficient metabolic pathways that do not require DHFR function. Therefore, this setup allows us to assess relative roles of height and accessibility of fitness peaks in determining the outcome of evolutionary dynamics.\n\nWe show that, depending on starting DHFR variant, partial reversion of DHFR phenotype may indeed occur. However, adaptation to low concentration of external metabolites through metabolic rewiring is the prevalent evolutionary solution due to the availability of a greater number of trajectories leading to consecutive gene inactivation events in two key loci, thyA and deoB. Using omics analysis, we observe global perturbations in metabolites and proteins levels in both na\u00efve D27 mutant strains and in evolved strains. Finally, we show how adaptation to loss-of-function mutations in DHFR, the cellular target of the antibiotic trimethoprim, can lead to high levels of drug resistance.\n\n## Results\n\nDHFR is encoded by the folA gene and is essential for the biosynthesis of purines, dTTP, glycine and methionine. We sought to inactivate the folA gene product in Escherichia coli by introducing mutations in the key catalytic residue D27 (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig1-v2.jpg)\n\n**Figure 1.:** (A) Mutations in key D27 catalytic residue of DHFR were introduced in E. coli chromosome, together with flanking antibiotic resistant markers, by lambda red recombination and strains devoid of DHFR function were selected with antibiotics in folAmix-containing agar plates. (B) D27 mutants are lethal but fitness can be partially rescued by metabolic compensation with folAmix. Adaptative changes that increase fitness can be counterbalanced by decreasing the concentration of folAmix in the growth medium, forcing the cells to evolve without DHFR function. (C) Experimental evolution using automated liquid handling. Six replicates of cell cultures are placed in the first column of a 96-well plate and incubated at 30 \u00b0C with shaking and the optical density is measured every 30 min. The cultures are\u00a0grown until the average OD reaches a threshold (0.3), that was defined to avoid nutrient limitation and consequent shift into the stationary phase. At this point cultures are diluted simultaneously into the wells of the adjacent column, to a common starting OD (0.01), and the cycle is repeated. The growth rate is calculated for every culture and, whenever it exceeds a defined threshold, the amount of folAmix is independently decreased for each culture in the subsequent dilution.\n\nTo construct these strains we supplemented the growth medium with a mixture (folAmix) of adenine, inosine, thymine (precursor of dTTP), methionine and glycine which allows cells to overcome DHFR deficiency (Howell et al., 1988; Kwon et al., 2010). We envisaged that inactivated DHFR mutants growing in the presence of supplement folAmix could be progressively challenged to adapt to ever decreasing concentrations of this supplement in the growth medium (Figure 1B). Next, we implemented a fully automated serial passaging scheme as depicted in Figure 1C\u2013D using a Tecan liquid handling robot. In this setup, the growth rate of replicate cultures is monitored by periodic OD readings, and the concentration of folAmix is adjusted downward in each serial passage when cultures exceed a defined growth rate threshold. This feedback control loop ensures mutant strains are continuously challenged to grow at sub-optimal conditions, sustaining a strong selective pressure on the loss of DHFR function. This approach combines the medium-throughput capabilities of plate-based serial dilution methods (currently, up to 48 independent replicate trajectories can be evolved in parallel), and both real-time monitoring of fitness status and control of growth conditions featured in\u00a0a morbidostat setup (Toprak et al., 2012; Toprak et al., 2013), which allows cells to continuously experience exponential growth and sustained selection pressure.\n\n### D27 mutations confer growth defects\n\nWe selected single or double nucleotide base mutations to replace a key catalytic residue Asp 27 either for Asn, Gly or Phe. The presence of a carboxylate side chain in position 27 is strictly conserved among 290 bacterial DHFR orthologues, where Asp and Glu are present at a frequency of 82% and 18%, respectively (Figure 2\u2014figure supplement 1A). These replacements were chosen to explore how different degrees of structural perturbations could potentially lead to alternative mutational pathways; while asparagine is structurally similar to aspartate, the introduction of residues with side chains that are either bulky and hydrophobic (phenylalanine) or absent (glycine) is expected to create significantly more structural perturbations, at least locally at the active site.\n\nPurified D27 mutant proteins were characterized (Table 1). The catalytic activity measurements confirm the lack of significant DHFR function in these variants; catalytic efficiencies (kcat/KM) are several orders of magnitude lower than wild type. However, thermal denaturation data obtained for the D27 mutant proteins indicates that their stability is mostly unaffected (or even significantly increased in the case of D27F mutant; Tian et al., 2015) showing that, despite the lack of catalytic activity, these proteins retain the ability to fully fold. Importantly, this provides a pathway for restoration of DHFR function over the course of evolution, either by revertant mutations at the D27 locus or, potentially, compensatory mutations elsewhere in the protein. D27 mutant strains were generated by lambda red recombination (Bershtein et al., 2012) and plated in folAmix-containing agar media, however, growth was only visible after 48 hr and the colonies formed were miniscule. When DHFR function was assayed in cell lysates of D27 mutant strains, no DHFR activity could be detected (Figure 2\u2014figure supplement 1B\u2013C), confirming that these mutations inactivate DHFR function in the cell. As expected, growth experiments showed that D27 mutants grow only at high concentrations of folAmix (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig2-v2.jpg)\n\n**Figure 2.:** (A) The growth rates of each D27 mutant and wild type were measured at various dilutions of folAmix, with respect to initial composition (adenine 20 \u00b5g/mL, inosine 80 \u00b5g/mL, thymine 200 \u00b5g/mL, methionine 20 \u00b5g/mL and glycine 20 \u00b5g/mL), (see also Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 2). Cultures were grown in M9-minimal medium at 30 \u00b0C, and absorbance was monitored at 600 nm. Data are represented as mean\u00a0\u00b1\u00a0SD (N\u00a0=\u00a04) (B) Comparison of representative growth curves of wild type and D27F mutant obtained in the presence of 1x folAmix. (C) Schematic representation of purine and pyrimidine biosynthetic pathways depicting changes in the levels of metabolites and proteins for the D27F mutant (Z-scores, relative to wild type). Metabolites are represented by circles and arrows represent enzymatic reactions color-coded by the levels of associated proteins (see also Figure 2\u2014figure supplement 3 and Figure 2\u2014figure supplement 4). Light gray shading indicates that no data is available. Metabolites that are downstream of the enzymatic reactions requiring reduced folates (ThyA, PurH and PurT) are strongly depleted in D27F mutant, whereas those metabolites immediately upstream to those reactions are increased in respect to wild type.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Partial sequence alignment and sequence entropy for 290 bacterial DHFRs at the D27 locus showing strict conservation of carboxylate side chain residue. Sequence Logo for the alignment, generated using the MATLAB Bioinformatics Toolbox. (B) D27 mutant strains lack measurable DHFR catalytic activity. Raw kinetic traces for the determination of DHFR catalytic activity in cell lysates from wild type and different D27 mutant strains and C) raw of NADPH oxidation rates measured from cell lysates from each strain. Cleared cell lysates were incubated with 100 \u00b5M NADPH in 100 mM MES (2-(N-morpholino)ethanesulfonic acid) pH 7.0 in the presence of 1 mM DTT at 25 \u00b0C and the reaction was initiated by the addition of 100 \u00b5M dihydrofolate. The decay in fluorescence intensity at 440 nm (excitation 300 nm) was measured over 1 hr, and the initial slopes were determined. Controls from non-DHFR-specific reaction were measured by the addition of trimethoprim (1 mM) to cell lysates.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Growth rate of na\u00efve D27F in the presence of various concentrations of thymine, represented as fold dilutions with respect to initial concentration (200 \u00b5g/mL). For comparison, the growth profile in the presence of folAmix (at equivalent thymine concentrations) is represented for wild type and D27F mutant strains. Cultures were grown in M9-minimal medium at 30 \u00b0C, and absorbance was monitored at 600 nm. (B) Evolved D27F strain (trajectory 1, cloneF51T1#1) was grown at different concentrations of either thymine or folAmix. (C) Individual clones from the same evolutionary trajectory show similar fitness profile. Three randomly picked colonies from evolved strain D27F, trajectory 2, were grown at various concentrations of folAmix. (D). Individual clones randomly picked form evolved cultures of different trajectories in D27F evolution show similar folAmix-dependent growth profile. (E) Individual clones of evolved cultures from different trajectories in D27N and trajectory four in D27G evolution show similar folAmix-dependent growth profile as evolved D27F strains (panel D).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Variation in the abundance of proteins in na\u00efve D27F strain, with respect to wild type, classified by functional and regulatory groups. For every group class (Sangurdekar et al., 2011), p-values of one-sample t-test were computed from the Z-scores of genes belonging to that category. A given group of proteins is considered to be upregulated if the average of the Z-scores is positive or downregulated otherwise. Only groups with significant changes (p<0.05) are represented.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) List of metabolites with highest absolute Z-scores in na\u00efve and evolved D27F with respect to wild type and na\u00efve D27F, respectively. (B) Metabolic pathways associated with the most significant changes in na\u00efve and evolved D27F, with respect to na\u00efve D27F and wild type, respectively. P-values associated with each metabolic pathway were determined using a functional enrichment analysis (MBrole 2.0 online tool; L\u00f3pez-Ib\u00e1\u00f1ez et al., 2016) which compares, for every given class, the number of experimental hits and total background metabolites in that set. The metabolites with the highest absolute Z-scores (>1.96) were selected for the analysis.\n\n**Table 1.**\n In vitro properties of DHFR mutant proteins a\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Wild type</th>\n      <th>D27F</th>\n      <th>D27N</th>\n      <th>D27G</th>\n      <th>D27C</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>kcat (s\u22121)</td>\n      <td>13\u00a0\u00b1\u00a02</td>\n      <td>(5\u00a0\u00b1\u00a01)\u00d710\u22124</td>\n      <td>(2.6\u00a0\u00b1 0.9) \u00d7 10\u22122</td>\n      <td>(1.8\u00a0\u00b1\u00a00.4)\u00d710\u22122</td>\n      <td>3\u00a0\u00b1\u00a00.8</td>\n    </tr>\n    <tr>\n      <td>KM (\u03bcM)</td>\n      <td>0.8\u00a0\u00b1\u00a00.2</td>\n      <td>(1.2\u00a0\u00b1\u00a00.6)\u00d7102</td>\n      <td>(4\u00a0\u00b1\u00a01)\u00d7101</td>\n      <td>23\u00a0\u00b1\u00a07</td>\n      <td>(7\u00a0\u00b1\u00a02)\u00d7101</td>\n    </tr>\n    <tr>\n      <td>kcat/KM (s\u22121 \u03bcM\u22121)</td>\n      <td>16\u00a0\u00b1\u00a01</td>\n      <td>(4\u00a0\u00b1\u00a01)\u00d710\u22126</td>\n      <td>(7\u00a0\u00b1\u00a00.8)\u00d710\u22124</td>\n      <td>(8\u00a0\u00b1\u00a02)\u00d710\u22124</td>\n      <td>(4.2\u00a0\u00b1\u00a00.8)\u00d710\u22122</td>\n    </tr>\n    <tr>\n      <td>kcat/KM relative to wild type</td>\n      <td>-</td>\n      <td>2\u00a0\u00d7\u00a010\u22127</td>\n      <td>4\u00a0\u00d7\u00a010\u22125</td>\n      <td>3\u00a0\u00d7\u00a010\u22125</td>\n      <td>2\u00a0\u00d7\u00a010\u22123</td>\n    </tr>\n    <tr>\n      <td>Ki (nM)</td>\n      <td>1.0\u00a0\u00b1\u00a00.3</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>(1.7\u00a0\u00b1\u00a00.7)\u00d7104</td>\n    </tr>\n    <tr>\n      <td>\u0394Tm (0C)</td>\n      <td>-</td>\n      <td>+7.6\u00a0\u00b1\u00a00.1 b</td>\n      <td>+1.1\u00a0\u00b1\u00a00.3</td>\n      <td>+1.2\u00a0\u00b1\u00a00.2</td>\n      <td>+0.6\u00a0\u00b1\u00a00.6</td>\n    </tr>\n    <tr>\n      <td>bis-ANS</td>\n      <td>1</td>\n      <td>1.1\u00a0\u00b1\u00a00.1</td>\n      <td>2.9\u00a0\u00b1\u00a00.3</td>\n      <td>1.7\u00a0\u00b1\u00a00.3</td>\n      <td>2.2\u00a0\u00b1\u00a00.5</td>\n    </tr>\n  </tbody>\n</table>\n\n_a Kinetic properties for dihydrofolate reductase catalytic activity (kcat\u00a0=\u00a0enzymatic turnover number, KM\u00a0=\u00a0Michaelis Menten constant, kcat/KM\u00a0=\u00a0catalytic efficiency, Ki\u00a0=\u00a0inhibition constant for trimethoprim) and protein stability properties (\u0394Tm\u00a0=\u00a0difference in melting temperature of folding with respect to wild type, bis-ANS\u00a0=\u00a0relative fluorescence from binding of bis-ANS to molten-globule intermediates with respect to wild type protein)._\n\nInterestingly, D27N and D27G mutants show slightly better growth at lower concentrations of folAmix than D27F. Given that the catalytic efficiencies of D27G and N, albeit extremely low, are 2 orders of magnitude higher than that of D27F, it is possible that such difference could have a beneficial impact at low folAmix concentrations. In addition, potential acquisition of a slightly advantageous mutation elsewhere upon genetic manipulation to introduce D27G/N mutation in the folA locus can also lead to growth differences (see Discussion). We tested D27 mutants for growth in the presence of individual components of folAmix and their different combinations and found that only thymine was essential, although growth with thymine alone is slower compared to growth with all folAmix components (Figure 2\u2014figure supplement 2). The growth rates measured for all D27 mutants at high folAmix fall in the range 70\u201380% of wild type and lag times were typically 1.5\u20132 fold longer (Figure 2B).\n\n### D27 mutations cause major metabolic and proteomic changes\n\nThe previous observation that D27 mutant strains show severe growth defects suggests that DHFR inactivation imposes considerable homeostatic imbalance. We focused on the strain D27F to carry out a detailed characterization of the systems-level effects of DHFR inactivation. To that end we carried out high throughput proteomics analysis of D27F mutant strains using LC/MS TMT approach as described earlier (Bershtein et al., 2015a). The method based on differential labeling provides abundances of proteins in the proteome relative to a reference strain which in our case was wild type (Bershtein et al., 2015a). We computed Z-scores of the log of relative (to wild type as reference) abundance according to the following equation:\n\n$$\nz_{i}^{strain/ref}=\\frac{Y_{i}^{strain/ref}\u2212\u27e8Y_{}^{strain/ref}\u27e9}{\\sigma_{Y}^{strain/ref}},\n$$\n\nwhere index i refers to protein, $Y_{i}^{strain/ref}=Log_{10}(\\frac{A_{i}^{strain}}{A_{i}^{ref}})$ where $A_{i}^{strain}$\u00a0and $A_{i}^{ref}$\u00a0are the protein i abundances obtained for the mutant and reference (wild type) strains, respectively, $\u27e8Y_{}^{strain/ref}\u27e9$ denotes a quantity $Y_{i}^{strain/ref}$ averaged over all proteins for a given strain, and $\\sigma_{Y}^{strain/ref}$\u00a0is the standard deviation of $Y_{}^{strain/ref}$\u00a0(see Supplementary file 1). Then, we classified the proteins by their cellular function according to\u00a0Sangurdekar et al. (2011) and performed a Student t-test to determine which groups of proteins had statistically significant variation of protein levels in D27F strain, with respect to wild type (see Supplementary file 2). Numerous cellular processes were significantly altered, reflecting broad genome-wide effects of DHFR inactivation (Figure 2\u2014figure supplement 3). Proteins involved in central processes were significantly downregulated in D27F strain, including energy metabolism (aerobic respiration, TCA cycle), metabolism of nitrogen, several amino acids, pyrimidines and lipopolysaccharides. On the other end, we found significant increase in the expression of proteins involved in stress responses, peptidoglycan recycling and salvage of guanine and xanthine. We then performed both targeted and untargeted metabolomic analysis of D27F mutant strain and wild type (see experimental details) to characterize significant changes at the level of metabolites. Likewise, Z-scores for metabolite levels were computed for D27F mutant, with respect to wild type (see Supplementary file 3). The metabolites with the highest absolute Z-scores (>1.96) were selected for an enrichment test using MBRole online software (L\u00f3pez-Ib\u00e1\u00f1ez et al., 2016) to identify pathways in which altered metabolites are overrepresented. The analysis revealed that the metabolism of purines, pyrimidines, beta-alanine, histidine and sulfur were the most significantly changed in D27F mutant comparatively to wild type (Figure 2\u2014figure supplement 4A\u2013B). A detailed scheme representing the changes in metabolites and proteins levels of nucleotide synthesis pathways is shown in Figure 2C. Not surprisingly, we observe build-up of metabolites upstream the reactions that require reduced folate cofactors (PurT, PurH, and ThyA), whereas metabolites downstream of those reactions are found to be strongly depleted.\n\nOverall, weaker growth and small colony phenotype show that D27 mutants are severely compromised even in presence of folAmix. Using the evolutionary scheme described previously (Figure 1C), we allowed six replicates derived from the same colony of each mutant strain D27F/N/G to evolve in parallel for about 50 days.\n\n### Evolution of D27G mutant\n\nCultures of D27G mutant strains were first grown in the presence of folAmix diluted to 0.1 fold with respect to the initially defined folAmix composition.\n\nThroughout the course of the experiment the concentration of supplement mixture further decreased (Figure 3A) in response to increasing fitness of the mutant strains, as imposed by the feed-back control loop discussed previously. Thus, the change in folAmix concentration over time reflects the effect of adaptation. Three trajectories (1,3 and 6) stand out by reaching the ability to grow in the complete absence of folAmix. Trajectories 2 and 5 reached a point where growth dropped below detection limit, and ultimately could not be recovered, whereas trajectory four had adapted to grow at low concentrations of folAmix. We hypothesized that mutations in folA locus could have restored DHFR catalytic activity in the cultures where reversion of phenotype was observed. Accordingly, Sanger sequencing analysis of this region revealed that in all these three trajectories (1,3 and 6), but not trajectory 4, residue Gly27 had mutated to cysteine. This finding was surprising because alignment of multiple known DHFR sequences shows that cysteine does not occur naturally in position 27; only aspartate or glutamate are observed in this locus (Figure 2\u2014figure supplement 1A). To assess whether Cys27 mutant is functional, this variant was purified and characterized in vitro, and its catalytic properties are compared with wild type and other mutants in Table 1. Although stability-wise D27C mutant is similar to wild type protein, it shows much weaker catalytic efficiency, mostly in terms of high\u00a0$K_{M}$, retaining only about 0.1% kcat/KM of wild type. To assess if this residual catalytic function is sufficient to explain the reversion of phenotype in the evolved strain we first predicted fitness based on a previously established model (Rodrigues et al., 2016). Taking as input the in vitro biophysical properties of purified D27C mutant, namely kcat/KM and bis-ANS fluorescence values, the model predicts a growth rate of about 30% of the wild type strain. To check the validity of this prediction, the mutation D27C was reconstituted in the wild type background by lambda red recombination and cells were plated in folAmix-containing agar plates to lift any selective pressure for DHFR activity. This strain was able to grow in the absence of folAmix supplementation, and the measured growth rate was 92% of the wild type, which is in fair agreement with the in vitro-based prediction which does not take into account a possibility of upregulation in response to DHFR deficiency (Bershtein et al., 2015a) (see Material and methods section Predicting fitness of D27 mutants for discussion) (Figure 3B\u2013D). This analysis shows that D27C mutation alone explains\u00a0a significant fraction of fitness recovery of the evolved strains. Of note is also the fact that the significant loss in catalytic efficiency in D27C mutant is associated with a dramatic 4 orders of magnitude increase in the inhibition constant for trimethoprim, and consequent nearly 100-fold increased resistance of the D27C strain to trimethoprim inhibition in comparison with the wild type (Figure 3E). This is in line with previous observations that active site mutations compromise catalytic function but also disrupt pocket interactions with the drug, resulting in high levels of resistance (Bader et al., 2006; Rodrigues et al., 2016).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig3-v2.jpg)\n\n**Figure 3.:** (A) Evolutionary profiles of the six trajectories in D27G adaptation showing the time dependent changes in folAmix concentration necessary to sustain growth. Each trajectory is colored according to its position in the column of the 96-well plate, as represented in the scheme (C\u00a0=\u00a0wells with growth medium only). (B) Evolved D27G strain does not require folAmix to grow. The growth rates determined at different concentrations of folAmix are compared for wild type, na\u00efve and evolved D27G strain from trajectory 6 (clone G33T6#1). Data are represented as mean\u00a0\u00b1\u00a0SD (N\u00a0=\u00a04). (C) Fitness model (Rodrigues et al., 2016) based on the biophysical properties of DHFR mutants (represented by the black line) allows to predict the growth rate of mutant strains from in vitro properties of the purified D27G and D27C DHFR mutant proteins. The dots represent the growth rate determined experimentally for each mutant strain at the flux value predicted from the biophysical properties. The model predicts a growth rate for D27C that is approximately 30% of the wild type value. This is in fair agreement with the experimental value measured for a BW25113 strain in which D27C mutation was introduced in the wild type folA gene (D27C reconstituted) which was 92% of the wild type. (D) Comparison of growth rates of wild type, evolved D27G and reconstituted D27C strain (mean\u00a0\u00b1\u00a0SD, N\u00a0=\u00a04). (E) Dose-dependent growth inhibition by trimethoprim determined for wild type and reconstituted D27C mutant (mean\u00a0\u00b1\u00a0SD, N\u00a0=\u00a03). The data was fitted with a\u00a0logistic equation\u00a0(solid\u00a0lines) from which IC50 was determined to be 0.8\u00a0\u00b1\u00a00.1 \u00b5g/mL for wild type and 79\u00a0\u00b1\u00a017 \u00b5g/mL for D27C mutant.\n\n### Evolution of D27F and D27N mutants\n\nEvolutionary trajectories of D27F and D27N mutants represented in Figure 4A and B, respectively, show a marked decrease in folAmix necessary to sustain growth, in most cases reaching concentrations nearly three orders of magnitude lower than initially required for na\u00efve strains.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig4-v2.jpg)\n\n**Figure 4.:** Evolutionary profiles of each trajectory in (A) D27F and (B) D27N adaptation to loss of DHFR function. (C) Comparison of growth dependence on folAmix concentration determined for wild type, both na\u00efve and evolved D27F (trajectory 1, clone F51T1#1) strains and na\u00efve and evolved D27N (trajectory 6, cloneN51T6#1), see also Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2. Data are represented as mean\u00a0\u00b1\u00a0SD (N\u00a0=\u00a04).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Individual clones from the same evolutionary trajectory show similar growth profile at different concentrations of folAmix. Three randomly picked colonies from evolved strain D27F, trajectory 2, were grown at various concentrations of folAmix. (B) Individual clones randomly picked form evolved cultures of different trajectories in D27F evolution show similar folAmix-dependent growth profile. (C) Individual clones of evolved cultures from different trajectories in D27N and trajectory four in D27G evolution show similar folAmix-dependent growth profile as evolved D27F strains (panel B). (D) Growth rate of evolved D27F strain (trajectory 1, cloneF51T1#1) in the presence of various concentrations of thymine, represented as fold dilutions with respect to initial concentration (200 \u00b5g/mL). For comparison, the growth profile in the presence of folAmix (at equivalent thymine concentrations) is represented. Cultures were grown in M9-minimal medium at 30 \u00b0C, and absorbance was monitored at 600 nm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Comparison of trimethoprim inhibition profiles of pre-evolved and evolved D27F in the presence of 1x folAmix. (B) Comparison of trimethoprim inhibition profiles of wild type and evolved D27F strain at low concentrations of folAmix (5\u00a0\u00d7\u00a010\u22124 fold). Solid lines represent the best fits of the data using logistic equations from which an IC50 of 0.8\u00a0\u00b1\u00a00.2 \u00b5g/mL was obtained for wild type and 675\u00a0\u00b1\u00a077 \u00b5g/mL was obtained for evolved D27F.\n\nTo verify that these strains adapted to grow at low folAmix concentrations we first plated evolved cultures (from \u221280 \u00b0C glycerol stocks) in agar medium supplemented with 1x concentration of folAmix and then randomly selected individual colonies from different trajectories to measure growth at various concentrations of folAmix. Plating the cultures at a high folAmix concentration ensures that there is no biased selection for high-fitness phenotypes when colonies are randomly picked from agar media. We found that individual colonies taken among all trajectories that adapted to low folAmix concentrations all showed a strikingly similar phenotype - folAmix-dependent growth profile, irrespective of the initial variant at D27 locus (F/N and also trajectory four in D27G) (Figure 4\u2014figure supplement 1A\u2013C). Figure 4C shows representative growth profiles obtained with colonies taken from trajectories 1 and 6 of D27F and D27N, respectively, showing a marked decrease in growth rate at concentrations of folAmix comparable to the lowest concentrations achieved during the evolution experiment. However, these strains cannot grow in the complete absence of folAmix. This result indicates that, unlike some trajectories in D27G evolution, adaptation of D27N and D27F strains did not involve reversion of the folA- phenotype. Accordingly, no mutations were found in folA locus in evolved D27N and D27F strains (see Supplementary file 4). Other mechanisms must therefore be responsible for the ability to grow at low folAmix concentrations. The growth rate of the evolved strains measured at high concentrations of folAmix reached values comparable to wild type, showing a clear fitness increase with respect to na\u00efve strain. However, at lower concentrations of folAmix the growth rate of evolved strain becomes markedly reduced to nearly half of the wild type value and appears to plateau in an intermediate range of folAmix concentrations. The growth rate value at this plateau coincides with that measured for cells grown in thymine alone (Figure 4\u2014figure supplement 1D), which is indicative that thymine is the growth-limiting component at these concentrations of folAmix and that cells utilize thymine less efficiently in the absence of the other folAmix components. We also evaluated sensitivity to trimethoprim for both na\u00efve and evolved D27F strains. Not surprisingly, in the absence of a functional DHFR and in the presence of folAmix D27F mutant strains are extremely resistant to trimethoprim (Figure 4\u2014figure supplement 2A). We noted, however, that while no decrease in growth was evident in na\u00efve D27F strain up to 1000 \u00b5g/mL, the growth rate of the evolved strain dropped abruptly above 500 \u00b5g/mL trimethoprim, suggesting that the drug is acting on an unknown target in the cell which is essential in the evolved but not the na\u00efve strain. We then tested how the resistance of evolved D27F strain would compare with wild type at very low concentrations folAmix (Figure 4\u2014figure supplement 2B). We found that in those conditions IC50 for the wild type is similar to that measured in the absence of supplement, yet the evolved D27F strain still shows an extremely high resistance to trimethoprim (IC50\u00a0=\u00a0656\u00a0\u00b1\u00a078 \u00b5g/mL).\n\n### Loss of function mutations in thyA and deoB lead to adaptation to low folAmix concentrations\n\nWhole genome sequence (WGS) analysis was performed to identify the genetic basis for the adaptation mechanisms of the evolved strains. We analyzed na\u00efve D27F/N/G strains and individual clones representative of adaptation to low folAmix (evolved D27F - trajectories 1 and 2 and evolved D27N - trajectory 6), and one clone representative of adaptation through DHFR reversion (D27G- trajectory 6). In addition, to characterize the dynamics of mutation fixation, individual colonies from intermediate evolutionary time points of D27F trajectory two were also sequenced. Figure 5A\u2013B summarizes the WGS results obtained for each clone of evolved D27 and na\u00efve strains.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig5-v2.jpg)\n\n**Figure 5.:** (A) Mutations identified in na\u00efve and evolved D27 mutant strains. Vertical lines identified with NGS represent mutations identified by whole genome sequencing whereas the remaining cases were identified by Sanger sequencing. Details are presented for trajectory 2 of D27F evolution and include the mutations identified at various passages and the folAmix profile obtained for that trajectory. Points denoted P0 correspond to na\u00efve strains. Mutations between brackets represent polymorphisms with estimated frequencies of 0.5. See also Figure 5\u2014figure supplement 1 for the effect of upp and ymfD mutation in na\u00efve D27G strain. Figure (B) Mutations identified in the most relevant genes. C) Mapping thyA, deoB and folA mutations found among evolved strains from all trajectories of each D27 mutant. Colored dots represent the presence of mutations, whereas gray dots represent genes that were not mutated in evolved strains. Trajectories that ceased growth prior to the end of the experiment were not sequenced (gray squares). D\u2013E) Expression of wild type DeoB and ThyA in evolved D27F strain reverts phenotype to high folAmix requirement. Evolved D27F strain (trajectory 1, clone F51T1#1), with background mutations deoB p.D10G and thyA 403-410del, was transformed with pTRC-tetR plasmid coding (D) wild type or mutant deoB and (E) wild type or mutant thyA, under the control of tetR repressor. Evolved D27F strain without plasmid is also represented as control. Cells were grown in M9 minimal medium and growth rates were measured from periodic OD measurements.. *p<0.01, **p<0.001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Strains where mutation D27G was introduced in folA gene were constructed and colonies were screened to select clones with intact upp, ymfD and thyA genes. The growth rates were measured for four of theses strains at different concentrations of folAmix in M9-minimal medium at 30 \u00b0C and compared with na\u00efve D27G strain (upp p.17*STOP and ymfD p.A101V) used in the evolution study.\n\nWe found that D27N and D27G strains, but not D27F, had additional background mutations that must have been acquired prior to starting the evolution experiments; although all D27 strains were constructed from the same wild type E. coli parent strain, we could not prevent the appearance of mutations at any given stage of genetic manipulation prior to the evolution experiments. Strain D27N had a point mutation (P74S) in the gene nanM that encodes N-acetylneuraminate mutarotase, which supports efficient growth form sialic acid as carbon source (Severi et al., 2008), and a point mutation (L44Q) in the gene thyA (discussed below). Strain D27G had a point mutation (A101V) in the gene ymfD that encodes a putative SAM-dependent methyltransferase and an early stop codon in the gene upp, that encodes the enzyme uracil phosphoribosyltransferase that participates in pyrimidine salvage pathway. It is possible that these mutations may provide some fitness advantage with respect to \u2018pure\u2019 D27F strain (see below and discussion). Comparison between evolved and na\u00efve D27G strains reveals that no other mutation was fixed upon evolution besides the one nucleotide change at the D27 locus of the folA gene, corresponding to the Gly->Cys substitution described earlier. This is fully consistent with the earlier conclusion that D27C mutation alone explains the fitness recovery observed in D27G evolution. We asked if the presence of mutations in upp and ymfD genes originally found in D27G strain could have an impact on fitness of the cells, and thus could have conditioned the evolutionary fate of this strain. We note the potential role of the mutation in upp gene which protein product levels appeared depleted in proteomics analysis of na\u00efve D27F strain. To address this, we engineered additional D27G strains and, after confirming the absence of mutations in thyA, upp and ymfD, compared their growth properties at various folAmix concentrations with D27G upp/ymfD strain that was used in the evolution experiments. No difference was found in the growth rate profiles of these strains (Figure 5\u2014figure supplement 1), indicating no obvious impact of mutations in upp and ymfD in favoring the reversion of DHFR function over thyA inactivation.\n\nFrom the analysis of evolved D27F and D27N we can identify two common hotspots for mutations, the genes thyA and deoB, encoding thymidylate synthase and phosphopentomutase, which are involved in the synthesis of dTMP via de novo and salvage pathways, respectively. For that reason, the sequence of these two loci were determined by Sanger analysis for all other trajectories that evolved to grow at low folAmix concentrations, including trajectory four in D27G evolution. Strikingly, in a total of 12 trajectories all were found to have mutations in thyA and 11 had deoB mutated (Figure 5C). We noted as well that evolved D27F strains also carried mutations in other genes, crr (7 bp deletion), rpe and yhdH (4 bp deletion), however, these were not observed among other trajectories indicating that these are most likely either random passenger mutations or provide only marginal advantage on a specific genetic background. On the other hand, the occurrence of deletions and deleterious point mutations (see Supplementary file 5) in both thyA and deoB strongly implies that functional inactivation of these gene products arises as a main mechanism of adaptation to the lack of DHFR function. We reasoned that complementation with either thymidylate synthase or phosphopentomutase should create a significant fitness disadvantage to the evolved cells, which can be reverted if these enzymes become inactivated. To verify this prediction, we transformed evolved D27F strains with plasmids expressing either wild type ThyA or DeoB proteins and compared the ensuing growth rates of these strains with transformants carrying the same plasmids expressing functionally inactive ThyA and DeoB, respectively. Expression of functional ThyA and especially DeoB were found to be highly deleterious in evolved D27F strains at low folAmix concentrations, as shown Figure 5 D-E, whereas no significant change in growth was observed upon expressing inactive mutants.\n\nOverall, these results show two competing adaptation mechanisms to the loss of DHFR activity, either involving a reverting mutation at the D27 locus or, more prevalently, consecutive inactivation of two genes.\n\n### Loss-of-function mutations in deoB prevent draining of deoxyribose pools into energy production\n\nThe gene deoB is part of an operon responsible for deoxyribose degradation, that includes deoA, deoC, and deoD, which is under the control of 2-deoxyribose-5-phosphate-inducible deoR repressor (Hammer-Jespersen and Munch-Ptersen, 1975). DeoB catalyzes the interconversion of 2-Deoxy-D-ribose-1-phosphate and 2-Deoxy-D-ribose-5-phosphate, and, while the former is necessary for synthesis of dTMP from thymine by DeoA, the latter can be further degraded in glycolysis, through conversion into acetaldehyde and D-glyceraldehyde 3-phosphate by DeoC (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig6-v2.jpg)\n\n**Figure 6.:** A) Changes in the levels of metabolites (depicted as circles) and proteins (depicted as arrows) in the evolved D27F strain (Z-scores, relative to na\u00efve D27F mutant) are represented. The proteins involved in 2-deoxy-D-ribose-1-phosphate degradation are marginally increased in evolved D27F, with respect to na\u00efve strain (average Z-score\u00a0=\u00a00.445, p=0.0817, see Figure 7\u2014figure supplement 1). However, deoB inactivation saves 2-deoxy-D-ribose-1-phospahte that is required in dTMP production, instead of being utilized for energy production in glycolysis, which is significantly upregulated in evolved D27F, with respect to na\u00efve D27F (average Z-score\u00a0=\u00a00.593, p=0.015). B) Evolved D27F transformed with a plasmid expressing wild type DeoB are able to growth at low external concentrations of thymidine and dTMP, but not at low concentrations of thymine. C) Evolved D27F strains transformed a plasmid expressing inactive DeoB mutant grow at the same extent with either thymine, thymidine or dTMP. At the lowest concentration of dTMP, however, these cells are not able to grow, likely because of inefficient transport of this metabolite into the cell. D) DeoB- strains cannot grow on thymidine as the sole carbon source unless complemented with a plasmid expressing wild type DeoB. Data are represented as mean\u00a0\u00b1\u00a0SD (N\u00a0=\u00a03).\n\nTherefore, inactivating deoB or deoC is an \u2018economy\u2019 solution preventing key metabolite in thymine uptake to be wasted in energy production, allowing cells to efficiently use small amounts of thymine available from media supplement for nucleotide synthesis (Dale and Greenberg, 1972). In agreement with the key role of deoxyribose in limiting thymine uptake, while deoB+ cells cannot grow at low concentrations of thymine in the media, replacing this precursor by thymidine or dTMP, which provide a deoxyribose moiety, improves the growth of evolved D27F strains transformed with plasmid expressing active DeoB (Figures 6B-C). Moreover, to confirm that the route for deoxyribose degradation into energy production is blocked in evolved mutants, we measured the growth of na\u00efve and evolved cells in the presence of thymidine as the sole carbon source and verified that deoB- cells cannot grow unless complemented with a plasmid expressing wild type DeoB (Figure 6D).\n\n### Evolved D27 strains partially revert the omics effects of DHFR inactivation\n\nNext, we carried out LC/MS TMT proteomics analysis of evolved strains (D27F, D27N and D27G) to help identify systems-level changes emerging from adaptation to lack of DHFR function. Since we observed that all clones randomly selected from trajectories that adapted to low folAmix concentrations showed very similar fitness profiles, we focused on individual clones arbitrarily chosen among D27F and D27N trajectories as representatives of adaptation to low folAmix. Specifically, clone F51T1#1 from D27F trajectory one and clone N51T6#1 from D27N trajectory six were selected. Likewise, clone G33T6#1 from D27G trajectory six was chosen as representative of adaptation through reversion of DHFR function. To get a glimpse of global proteomics changes we applied PCA analysis which revealed that both wild type and evolved D27G occupy the same quadrant in the space of two principal components, whereas D27 mutants that are folAmix dependent cluster more closely in another quadrant (Figure 7\u2014figure supplement 1A). We then computed the Z-scores for the proteomic changes in evolved strains with respect to na\u00efve D27F (ZD27_evo/D27F_na\u00efve), to assess the effect of evolution on the proteomic levels and plotted these values against ZD27F_na\u00efve/WT to compare with the initial changes caused by D27F mutation (see also Supplementary file 1 and Supplementary file 2). A clear anticorrelation was observed for all mutants (Figure 7A), being the strongest for evolved D27G strain.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig7-v2.jpg)\n\n**Figure 7.:** A) Proteomics changes upon evolution partially revert the effect of DHFR inactivation (see also\u00a0Figure 2\u2014figure supplement 4). Comparison of the changes in protein levels obtained for evolved D27F (trajectory 1, cloneF51T1#1), D27N (trajectory 6, clone N51T6#1) and D27G (trajectory 6, clone G33T6#1) (Z-scores, relative to na\u00efve D27F) with those measured for na\u00efve D27F (Z-scores, relative to wild type). See also Figure 7\u2014figure supplement 1. B) Comparison of the changes in metabolite levels measured for evolved D27F (trajectory 1, cloneF51T1#1) (Z-scores, relative to na\u00efve D27F) with those measured for na\u00efve D27F (Z-scores, relative with wild type). C\u2013E) Inhibitory effect of purine metabolites supplementation on the growth of the na\u00efve D27F strain is attenuated in the evolved D27F strain. C) Changes in intracellular levels of various purine and pyrimidine species determined by targeted metabolomics for na\u00efve D27F strain, represented as Z-scores relative to wild type. D) Metabolite levels changes obtained for evolved D27F strain, represented as Z-scores relative to na\u00efve D27F strain. E) Effect of individual metabolites on growth of na\u00efve and evolved D27F mutant strains. The effect of supplementation with individual metabolites on growth was determined by growth measurements of na\u00efve and evolved D27F mutant strains in M9 minimal medium supplemented by 1.6 mM thymine in combination with one of each tested metabolites (1 mM final concentration). Relative growth represents the maximum OD obtained for each metabolite normalized to the value measured in the presence of thymine alone. Although most purine metabolites are strongly depleted in na\u00efve D27F mutant, supplementation of the culture medium with these compounds has a strong inhibitory effect on growth. Contrastingly, pyrimidines do not affect growth. In evolved D27F strain, the supplementation with purines has only a marginal effect on growth. Data are represented as mean\u00a0\u00b1\u00a0SD (N\u00a0=\u00a03).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50509/elife-50509-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** A) PCA analysis of proteomics data shows that evolved D27G clusters close to wild type, in the space of two principal components, whereas folAmix-dependent strains D27 strain are found in a different quadrant. B) Variation in the abundance of proteins in evolved D27 strains, with respect to na\u00efve D27F strain, grouped by protein functional and regulatory classification.\n\nThese results indicate that adaptation leads to proteomic changes that generally oppose the immediate effects caused by DHFR inactivation. In the case of D27G, the strong global proteomic shift towards wild type levels is somewhat expected since in the evolved strain, the DHFR catalytic activity is partly restored by G27-\u00a0>\u00a0C mutation. To better characterize the proteomic changes that were specific to evolution of folAmix dependence we searched for classes of proteins grouped by function with significantly altered protein abundance levels in both evolved D27F and D27N with respect to na\u00efve D27F strains (Figure 7\u2014figure supplement 1B), as described previously. We found a significant increase in the expression levels of proteins involved in glycolysis, fermentation, sugar alcohol degradation and response to low pH, suggesting a metabolic shift towards mixed acid fermentation as a result of adaptation that blocked using derivative of thymidine for glycolysis to save them for DNA synthesis. On the other hand, the levels of proteins involved in DNA restriction/methylation and D-ribose uptake were significantly decreased with respect to na\u00efve D27F in both evolved D27F and D27N strains. Next, we focused on evolved D27F strain to perform a detailed metabolomic analysis and characterize the changes occurring at the level of metabolites (see also Supplementary file 3). We computed Z-scores for metabolite changes with respect to na\u00efve D27F (ZD27_evo/D27F_na\u00efve) and we found significant anticorrelation with Z-scores obtained for na\u00efve D27F (ZD27F_na\u00efve/WT) (Figure 7B), indicating that metabolite concentrations in evolved strain generally change to partially recover wild type levels, as observed with proteomics. We found that the pathways significantly enriched in metabolites with the highest ZD27_evo/D27F_na\u00efve scores (>1.96) in evolved D27F were the same as those that had the most significant changes in na\u00efve D27F, with respect to wild type (Figure 2\u2014figure supplement 4A\u2013B). Overall these results show that adaptation to low folAmix concentrations is accompanied by an overall shift in the abundance of metabolites and proteins to partially revert the system-level changes that are caused by DHFR inactivation.\n\n### Growth inhibition by purine supplementation is suppressed in evolved D27F strain\n\nMetabolites of purine and pyrimidine biosynthetic pathways were among the most strongly depleted in na\u00efve D27F strain and showed highest increase upon evolution (Figure 7C,D and Figure 2\u2014figure supplement 4A\u2013B). We reasoned that these depleted metabolites could be limiting growth of the D27 mutants, and that supplementing the culture medium with these metabolites would improve growth. Surprisingly, supplementation with purines strongly inhibited growth of the na\u00efve D27F strain, whereas pyrimidines addition had, at most, a slight stimulatory effect (Figure 7E). The detrimental effect of individual purine supplementation appears to be associated with regulatory responses and/or with toxic effects caused by metabolite imbalance (e.g. purines vs pyrimidines) upon supplementation. In the case of evolved D27F strain, the effect of supplementation of individual nucleotides on growth was comparably weaker or non-existent, indicating that the inhibitory effects were relaxed upon adaptation. Since we found no mutations directly associated with regulatory genes, it seems that the observed changes result solely from the re-wiring of metabolic pathways. In this regard our examples are particularly noteworthy. Evolution of D27F and D27N strains blocked supplementary glycolysis pathway by rerouting Deoxyribose towards DNA synthesis while the ensuing metabolic changes lead to significant increase in abundance of glycolysis proteins, presumably to compensate for diminished flux of sugar metabolites along the glycolysis pathway (see Supplementary file 2). Another example of metabolite-induced rewiring is purR operon whereby purR is inhibited by purine hypoxanthine. Evolved strains show significant increase in abundance of hypoxanthine giving rise to significant drop in abundance of proteins controlled by purR (see Supplementary file 2).\n\nOverall, these results show that two key loss of function mutations that are responsible for the partial adaptation of D27F to loss of DHFR activity result in significant metabolic, proteomic and regulatory shifts observed in the evolved strains.\n\n## Discussion\n\nIn this study we set to explore the evolutionary mechanisms that follow inactivation of the essential gene that encodes DHFR. Such scenario is akin to antibiotic-mediated target inhibition, but distinct in that there is no selection for mutations that affect interactions with the drug, such as target modification and drug efflux mechanisms. For example, when treated with DHFR inhibitor trimethoprim, bacterial cells recurrently acquire resistance by high-fitness mutations near the active site of the target protein that decrease drug binding affinity, even at the expense of catalytic efficiency (Rodrigues et al., 2016; Tamer et al., 2019; Toprak et al., 2012). In contrast, a genetic perturbation in the same target gene provides the opportunity to study other potential unexplored mechanisms of adaptation in the absence of drug and evaluate their impact in the context of antibiotic resistance.\n\nWe found that, in the conditions studied here, evolution is constrained towards two solutions that appear to be mutually exclusive, either (partial) restoration of DHFR catalytic activity or adaptation to lack of DHFR function. While D27F, D27N and one trajectory in D27G convergently adapted to lack of DHFR function, other trajectories in D27G mutant reached reversion from thymine auxothroph phenotype. It is important to address the possible reasons for the observed outcome. A potentially influential factor could be the presence of background mutations observed in both D27N and D27G. The point mutation L44Q in thyA, reported to affect the activity of a nearly identical orthologue enzyme (Nur-E-Kamal et al., 1994), could have skewed the solution towards further inactivation of thyA by subsequent point mutations in other loci of that gene that were later observed in different trajectories. On the other hand, mutations in the genes upp and ymfD found in D27G strains did not impact the growth rate, thus the role of these mutations in altering the accessibility of the DHFR functional reversion G27-\u00a0>\u00a0C seems to be neutral.\n\nThe codon structure of each mutant studied here and bias in the frequency of each mutation type can also affect the likelihood that phenotype-reverting mutations may arise. We note that the nearest accessible high-fitness Asp/Glu codon for D27F mutant is two nucleotide substitutions away (although one nucleotide away from one D27C codon), whereas both D27G and D27N could be rescued by a single G->A or A->G transition, respectively. Only D27G was found to revert, however, not to wild type codon, but to a less catalytically efficient cysteine residue caused by a G->T transversion. In this respect, it is rather surprising that D27C mutation was fixed in three trajectories when transversions are generally regarded to be less likely than transitions. That this mutant was able to fix, despite its poor enzymatic activity, brings important insights on how deleterious mutations can be maintained when the selection pressure on protein function is alleviated by particular environmental conditions, in this case the presence of folAmix, and may provide a rapid route to the development of resistance. In addition, these results may hint at a possible mechanism for the divergence of the key residues in the active sites of enzymes across long evolutionary timescales, where fixation of non-consensus mutations, such as D27C, may be allowed by transient adaptation to permissive environments, and subsequent compensatory mutations that restore protein function at later stages. While the selection pressure regime used in our study was solely based on the feedback loop strategy to control the concentration of folAmix, it remains to be explored how the implementation of alternative selection protocols could influence the course of evolution. Nonetheless, it appears that the system studied in this work provides an excellent framework for future theoretical and experimental studies to evaluate the role of environmental pressure dynamics in shaping evolution.\n\nThe most crucial factor in determining the fate of D27 mutant evolution appears to be the higher accessibility of mutational routes for inactivating thyA that lead to their fixation very early in the evolution experiment. Thymidylate synthase is the only known enzyme in E. coli able to synthetize dTMP de novo from dUMP, and inactivation of thyA inevitably commits the cell to thymine auxothrophy; reversion of DHFR function on the thyA- background is not expected to change this phenotype, as it is known that folA+ thyA- strains are thymine-dependent (Bertino and Stacey, 1966; Schober et al., 2019). Competition between DHFR reversion and thyA inactivation thus appears to be decisive in determining the evolutionary solution. However, since inactivation of a gene can be achieved by multiple ways, there is greater number of accessible evolutionary trajectories leading to thyA knockout than to reversion of DHFR function. This view has major implications for our understanding of how the relative impact of height and accessibility of fitness peaks shapes the evolutionary dynamics short-term adaptation.\n\nUpon thyA inactivation, the only available route for dTMP synthesis involves DeoA-catalyzed formation of thymidine from thymine and 2-deoxy-D-ribose-1-phosphate (Figure 6F). However, DeoA is part of the deo operon that is induced by high levels of 2-deoxy-D-ribose-5-phosphate. This regulatory scheme allows cells to recycle excess metabolites into energy production. However, on the background of thyA inactivation, the co-expression of deo operon proteins creates simultaneously a solution and a problem for the uptake of thymine. Now DeoA becomes an essential protein, but its function is opposed by the roles of DeoC and DeoB which divert 2-Deoxy-D-ribose-1-phosphate into degradation via the glycolysis pathway. The evolutionary solution found in D27 strains converged to the inactivation of a single gene of the operon, deoB, an event that is sufficient to block the degradation pathway without disrupting the regulatory structure. This critical example illustrates how evolution can be constrained by regulatory circuits that provide conflicting responses when the optimal directionality of metabolic routes is switched due to genetic perturbations. Understanding these processes is critical for guidance towards new strategies for antibiotic resistance prevention. Perhaps not surprisingly, we found that pathways of adaptation to genetic inactivation of an antibiotic target provide a route to high levels of resistance. Likewise, a recent study also reported that E. coli cells challenged with increasing concentrations of trimethoprim in the presence of thymidine repeatedly evolved high levels of resistance by thyA loss-of-function mutations besides acquisition of commonly observed resistant mutations in DHFR (Schober et al., 2019). Strikingly, mutations in thyA are also known to confer trimethoprim resistance in bacterial clinical isolates of S. aureus (Chatterjee et al., 2008; Kriegeskorte et al., 2014), and H. influenza (Rodr\u00edguez-Arce et al., 2017), which emphasizes the need of laboratory studies of microbial adaptation as useful models to tackle serious global threat.\n\nMore generally this study highlights the evolutionary conundrum between \u2018survival of the fittest\u2019 and \u2018survival of the fastest\u2019. Unlike previous studies that followed evolution of adaptation to gene knockouts, the current setup provides an \u2018easy\u2019 highest fitness solution by genetic reversion of single amino acid substitution. However, for most evolutionary trajectories the dynamics quickly converged to a \u2018quick and dirty\u2019 solution \u2013 a dead-end local fitness peak which provided an immediate relief from stress but blocked the path to highest fitness peak. Future studies will reveal how general this scenario is for evolutionary dynamics of adaptation to mutational inactivation and/or antibiotic induced inhibition of essential bacterial enzymes and beyond.\n\n## Materials and methods\n\n### Construction of plasmid pKD13-kefC(897\u20131863)-cmR-folA(wt)-kanR-apaH-apaG\n\nA portion of chromosomal apaH:apaG genes was amplified by PCR using primers P4_chrom_flanking_for and PCRseq_apaH_rev. Then the pKD13 plasmid was linearized by PCR using the primers P4_chrom_flanking_for and PCRseq_apaH_rev. Both PCR products were purified and combined in a new PCR reaction using phosphorylated primers pKD13_post_downstream_for and PCRseq_apaH_rev. The linear product was ligated using T4 ligase to make plasmid Plasmid pKD13-cmR-folA(wt)-kanR-apaH-apaG. Then a portion of kefC gene was amplified by PCR using primers PCRseq_KefC_for2 and CapR-Chrom-Flanking rev. Then the plasmid pKD13-cmR-folA(wt)-kanR-apaH-apaG was linearized by PCR using primers Upstream_capR_for and pKD13_post_upstream_rev. Both products were combined in a new PCR reaction using phosphorylated primers PCRseq_KefC_for2 and pKD13_post_upstream_rev. Finally, the linear product was ligated using T4 ligase to make pKD13-kefC(897\u20131863)-cmR-folA(wt)-kanR-apaH-apaG.\n\n### Mutations in D27 folA locus\n\nPlasmid pKD13-kefC(897\u20131863)-cmR-folA(wt)-kanR-apaH-apaG was linearized using phosphorylated mutation primers D27Xmut_For and primer D27_rev, and ligated using T4 Ligase.\n\n### Construction of D27 mutant strains\n\nInactive D27 mutants were created by lambda-red recombination (Datsenko and Wanner, 2000) according to a previously described procedure (Bershtein et al., 2012) with some modifications. Briefly, a pKD13 plasmid was modified to contain the entire regulatory and coding sequence of folA gene, flanked by two different antibiotic markers (genes encoding kanamycin (kanR) and chloramphenicol (cmR) resistances) and approximately 1 kb homologous region of both upstream and downstream chromosomal genes flanking folA gene (kefC and apaH, respectively). A list of relevant primers ais shown in\u00a0Supplementary file 6 . The entire cassette was amplified using primers PCRseq_KefC_for2 and PCRseq_apaH_rev and transformed into BW25113 cells with induced Red helper plasmid pKD46, and cells were recovered in SOC medium containing 1x folAmix (adenine 20 ug/mL, inosine 80 ug/mL, thymine 200 ug/mL, methionine 20 ug/mL and glycine 20 ug/mL). Transformants were plated in agar media containing both antibiotics and folAmix. To confirm correct integration of the desired mutations, folA locus was amplified by PCR (primers Ampl_RRfolA_for, Ampl_RRfolA_rev) and Sanger-sequenced using primer PCRseq_RRfolA_rev. Plasmid pKD46 was removed by plating cells at 37\u00b0C twice in the absence of antibiotic selection. Prior to starting the evolution experiments, the cultures had gone through three bottlenecks that involved randomly picking single colonies from agar plates for the subsequent step required for genetic manipulation.\n\n### Automated experimental evolution\n\nA liquid handling instrument Tecan Freedom Evo 150 equipped with Tecan Infinite M200 Pro plate reader and Liconic shaker was used in this work. The experiments were done at 30 \u00b0C and using M9 minimal media supplemented with 2 g/L glucose, 34 \u00b5g/mL chloramphenicol and 50 \u00b5g/mL kanamycin. The liquid handling worktable has two 100 mL troughs (Tecan) with either fresh M9 medium + antibiotics or 40% glycerol. In addition, solutions of folAmix at various concentrations (prepared in M9 + antibiotics) are provided in 50 mL falcon tubes. The general procedure involves up to four 96-well plates that are used for serial dilutions of bacterial cultures. Each working plate can carry eight trajectories that are positioned in a single column. In this work we used the first and eight wells in the column with media alone to control for contamination. The experiment starts by placing the 200 \u00b5L cultures/control in the first column of the 96-well plate. All the four plates are incubated in a shaker at 30 \u00b0C and at every 30 min the OD of each plate is determined alternately. The growth rate of each culture is calculated from OD measurements over time. To ensure proper comparison, the growth rate was computed only from OD values within a specified range (0.1\u20130.25). When the average OD of the six experimental replicates in a plate exceeds a threshold of 0.30 each culture is diluted into the next adjacent column by mixing a calculated volume of both culture and fresh medium and folAmix so that the initial OD is 0.01 in a total of 200 \u00b5L. At this point, the remaining portion of the previous culture is mixed with glycerol in an auxiliary plate and subsequently frozen at \u221280 \u00b0C. The very first cultures to be frozen at \u221280 \u00b0C (at passage zero), are considered to be the na\u00efve strains, and referred as such in the text to contrast with evolved strains which are picked at later passages. The cycle is repeated throughout the entire experiment. At every passage, the growth rate is compared with a threshold value (0.16 h\u22121) and whenever a culture exceeds this value the concentration of folAmix is halved. The volume of folAmix added in each passage is 10, 5 or 2.5 \u00b5L.\n\n### Media and growth conditions\n\nCell cultures were recovered by inoculating fresh M9 media medium supplemented with 0.2% glucose and 1x folAmix with a portion of \u221280 \u00b0C glycerol stocks taken at different passages. After recovery for several hours, the cultures were plated in agar media containing 1x folAmix, 34 \u00b5g/mL chloramphenicol and 50 \u00b5g/mL kanamycin and incubated at 30 \u00b0C. Plating evolved cultures at high folAmix concentrations ensures that the clones growing in agar media are not biased towards high fitness phenotypes. Individual colonies were randomly picked, grown in M9-media+folA mix and stored in glycerol at \u221280 \u00b0C for later analysis. Clones selected in this manner were labeled using the following mask: XdTt#i, where X refers to the amino acid letter in D27 locus (F/N/G), d is day at which the culture was passaged in the evolution experiment, t is the trajectory number (1-6) and i is the unique number of different colonies taken from the same culture. Cell cultures grown overnight were diluted in fresh M9 minimal media containing 1x folAmix and antibiotics and were grown for additional 4\u20136 hr. Cultures were then pelleted by centrifugation and washed three times in fresh M9 without folAmix. Microplates containing 150 \u00b5L of M9 minimal with 0.8 g/L glucose, antibiotics, and varying concentrations of folAmix were then inoculated with each culture at a starting OD of 0.0005. Growth measurements were performed in a Infinite 200 PRO plate reader for 48 hr at 30 \u00b0C with constant shaking. Growth rate values are represented as mean\u00a0\u00b1\u00a0SD from at least three biological replicates.\n\n### Protein purification and characterization\n\nD27 mutant fused to C-terminal (6x) His-tag were overexpressed using pFLAG expression vector under isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) inducible T7 promoter. The recombinant proteins were purified from lysates on Ni-NTA columns (Qiagen) as described previously (Rodrigues et al., 2016).\n\n### Determination of kinetic parameters\n\nDHFR kinetic parameters were derived from the analysis of progress-curve kinetics of NADPH oxidation in the presence of different concentrations dihydrofolate using the software Kintek Explorer (Johnson, 2009) as described before (Rodrigues et al., 2016). The data correspond to the mean\u00a0\u00b1\u00a0S.E. of at least three measurements.\n\n### bis-ANS fluorescence measurements\n\nDHFR protein solutions (2 \u03bcM) in the presence of 12 \u03bcM of bis-ANS were prepared in 50 mM phosphate and 1 mM DTT at pH 7.0 and placed in a 1 cm path-length quartz cuvette. The samples were equilibrated for 5 min at 37\u00b0C and the fluorescence emission spectra between 460 and 600 nm were recorded upon excitation at 395 nm. The emission band was integrated and the background of bis-ANS fluorescence in the absence of protein was subtracted. The area of the band was normalized to wild type E. coli. DHFR. The data corresponds to the mean\u00a0\u00b1\u00a0S.E. of three measurements.\n\n### Determination of the melting temperature\n\nDHFR solutions (5 \u03bcM) were prepared in 50 mM phosphate buffer and 1 mM DTT at pH 7.0 in the presence of 100 \u03bcM NADPH. A temperature ramp of 1 \u00b0C/min was set between 25\u00b0C and 90\u00b0C, and the tryptophan fluorescence was recorded by measuring the intensity at 370 and 320 nm upon excitation at 280 nm. Thermal denaturation curves were also performed in the presence of 5x concentration of Sypro Orange and 20 \u03bcM. Melting temperature and confidence intervals at 95% were determined from the simultaneous analysis of the thermal denaturation curves obtained with both tryptophan and Sypro Orange fluorescence using the online software Calfitter (Mazurenko et al., 2018).\n\n### Measurements of total enzymatic activity in cell lysates\n\nCells from 14 mL cultures grown at 30\u00b0C at an OD of 0.5 were pelleted by centrifugation and lysed with 200 \u00b5L of lysis buffer containing 1\u00a0\u00d7\u00a0Pop Culture reagent (Merck Millipore), 100 mM MES (2-(N-morpholino)ethanesulfonic acid) at pH 7.0 in the presence of 1 mM DTT in the presence of 1\u00a0\u00d7\u00a0complete protease inhibitor mixture (Roche) and 1 mg/mL lysozyme and incubated for 20 min at room temperature. The lysate was sonicated with 10 pulses of 1 s,cleared by centrifugation and then 85 \u00b5L of the soluble fraction was transferred to 96-well white plates for total activity measurements using a total assay volume of 100 \u03bcL. The lysate was preincubated with 100 \u03bcM NADPH and the reaction was started with the addition of 100 \u03bcM dihydrofolate and mixing. The decrease in fluorescence (excitation at 300 nm and emission at 440 nm) was measured over 60 min at 25\u00b0C, and the initial velocities were computed. Measurements were also done in the presence of 1 mM TMP to control for the non-DHFR-specific reaction. Data corresponds to the mean\u00a0\u00b1\u00a0S.E. of three measurements.\n\n### Predicting fitness of D27 mutants\n\nThe fitness of E. coli DHFR mutants can be predicted from in vitro biophysical parameters using a simple metabolic model described in an earlier work (Rodrigues et al., 2016). The metabolic flux through DHFR reaction in DHFR mutant strains, normalized to wild type, can be approximated to:\n\n$$\nV_{dhfr}^{norm}=\\frac{\\frac{k_{cat}^{mut}}{K_{M}^{mut}}\u22c5[DHFR]^{mut}}{\\frac{k_{cat}^{EcoliWT}}{K_{M}^{EcoliWT}}\u22c5[DHFR]^{WT}}\u22c5\\frac{1}{(1+\u2009\\frac{\\alpha\u22c5[TMP]_{medium}}{K_{i}^{mut}})}\n$$\n\nWhere, $\\frac{k_{cat}^{}}{K_{M}^{}}$, $K_{i}^{}$ and\u00a0$[DHFR]^{}$\u00a0are, respectively, the catalytic efficiency, trimethoprim inhibition constant and intracellular protein abundance of the mutant or of the wild type, and $[TMP]_{medium}$\u00a0and $\\alpha$ are, respectively, the concentration of trimethoprim in the culture medium and the ratio of intracellular vs extracellular concentrations of trimethoprim, defined previously to be 0.1 (Rodrigues et al., 2016). To connect flux to fitness, we first measure the growth rate of wild type E. coli cells at various concentrations of DHFR inhibitor trimethoprim.\n\nThen fitness is plotted against the flux through DHFR reaction calculated at each concentration of inhibitor using Equation 2, and catalytic parameters determined in vitro (Table 1). Protein abundance is determined by measuring the total catalytic activity in cell lysates, as described earlier (Rodrigues et al., 2016). Finally, we use Equation 3:\n\n$$\nGr^{norm}~\\frac{V_{_{dhfr}}^{norm}}{(B+V_{dhfr}^{norm}_{})}\u00a0\n$$\n\nto fit the fitness vs Vnorm data points to determine the parameter B, which represents the normalized flux at which growth rate is reduced by half. From this equation, the in vitro parameters determined for D27 mutants are used in Equation 2 and 3 to predict fitness. The protein abundance of D27 mutants, however, cannot be determined from enzymatic assays in cell lysates, as these are inactive variants. Instead, protein abundance was predicted using an inverse relationship with relative bis-ANS fluorescence of those variants (Bershtein et al., 2013; Rodrigues et al., 2016). In qualitative terms, our model accurately predicted that the D27C variant is able to grow in the absence of folAmix supplement. However, the measured fitness was somewhat higher than the value predicted by the calculations. It is possible that some assumptions are not entirely met. One important assumption is that the concentration of DHFR and substrate dihydrofolate are either always constant or change only as a function of the flux calculated by Equation 2. The latter implies that, for every given value of flux, the changes in DHFR and dihydrofolate concentration will always be the same, and thus always comparable regardless of what parameters are used as input in Equation 2. However, this might not be always true. For example, a tight feedback control regulates the DHFR promoter activity, in response to the metabolic needs of the cell (Bershtein et al., 2015a; Bershtein et al., 2015b). Likewise, a decrease in DHFR catalytic function is also expected to result in a considerable level of substrate build up. In these conditions, the magnitude of substrate KM for each variant might become more relevant. In our calculations, however, substrate saturation is not considered. This may lead to deviations, especially when KM values differ significantly, as we find in this work. How much these dynamic processes may differently affect the flux through DHFR reaction in each mutant is still to be determined.\n\n### Effect of DeoB and ThyA expression\n\nThe genes deoB and thyA and corresponding mutants deoB p.309Stop and thyA 755-762del were cloned into a modified pTRC plasmid in which the laqI and promoter region were replaced by the tetR repressor gene and promotor region derived from plasmid Plasmid pEM-Cas9HF1-recA56 (addgene Addgene plasmid # 89962; Moreb et al., 2017). Transformed strain cells were grown in M9 minimal media + folAmix, then washed with fresh M9 media without folAmix and plated at different concentration of folAmix. Growth rate values are the mean\u00a0\u00b1\u00a0SD of at least three biological replicates.\n\n### Metabolite extraction and LC-MS analysis\n\nCultures of mutant strains (na\u00efve and evolved D27F) and wild type (30 mL) were grown in parallel in M9 minimal media supplemented with 2 g/L glucose in a 250 mL flask at 30C. At an OD of 0.2\u20130.25 the cultures were centrifuged. The volume of culture to be pelleted was calculated so that the product OD\u00a0\u00d7volume of cell culture (mL)\u00a0=\u00a05. The pellet was mixed with 300 \u00b5l of 80:20 ratio of methanol:water that had been pre-chilled on dry ice. Samples were vortexed and incubated in dry ice for 10 min followed by centrifugation at 4 \u00b0C for 10 min at maximum speed. The supernatant was collected, and the pellet was processed by repeating the procedure. Samples were stored at \u221280 \u00b0C until analyzed by mass spectrometry. At least three independent biological replicates were analyzed for each strain. LC-MS analysis in the positive and negative mode was performed as previously described (Bhattacharyya et al., 2016). Retention times of several metabolites of the nucleotide biosynthesis pathway were determined from the analysis of pure compounds.\n\n### LC/MS TMT Proteomics\n\nCell cultures from isolated colonies were grown at 30 \u00b0C in M9 minimal media supplemented with 0.2% glucose and were collected by centrifugation during mid-exponential phase (OD\u00a0~0.2\u20130.25), well below saturation due to oxygen limitation (typically at OD\u00a0>0.8\u20130.9). Global proteomic analysis was performed as described previously (Bershtein et al., 2015a).\n\n### Whole-genome sequencing\n\nSequencing was performed on isolated colonies on Illumina MiSeq in 2 \u00d7 150 bp paired-end configuration (Genewiz, Inc, South Plainfield, NJ). The raw data were processed with the with the breseq pipeline (Deatherage et al., 2014) on default settings, using the E. coli K-12 substr. BW25113 reference genome (GenBank accession no. CP009273.1). The experiment accession numbers for the raw reads deposit are as follows: Na\u00efve D27F: SRX6873308, evolved F15T2#1: SRX6873309, evolved F22T2#1: SRX6873310, evolved F27T2#1: SRX6873311, evolved F32T2#1: SRX6873312, evolved F51T1#1: SRX6873313, na\u00efve D27N: SRX6873314, evolved N51T6#1: SRX6873315, na\u00efve D27G: SRX6873316, Evolved G33T6#1: SRX6873317. The BioProject accession number for the whole project is PRJNA566398.\n\n### Metabolomics data analysis\n\nData analysis was performed using the software packages MzMatch (Scheltema et al., 2011) and IDEOM (Creek et al., 2012) for untargeted analysis. For peak assignment in untargeted analysis, IDEOM includes both peak m/z values and predicted retention times calculated based on chemical descriptors (Creek et al., 2011). A list of 32 experimentally measured retention times was initially used to calibrate retention time predictions. The retention time of putatively identified metabolites were found to correlate fairly well with the values included in IDEOM (R2\u00a0=\u00a00.73) and published in other studies (Pluskal et al., 2010) (R2\u00a0=\u00a00.88 and R2\u00a0=\u00a00.61, respectively)ee. For this reason, additional metabolites from those sources that closely matched IDEOM assignments were treated as standards in the identification routine. Following identification, Z-scores with respect to wild type (ZD27F_na\u00efve/WT) or to na\u00efve D27F strain (ZD27F_evo/D27F_ na\u00efve) were calculated using Equation 1. Z-scores determined for each set i of n biological replicates were combined for each metabolite met using the expression\u00a0$z_{combined}^{met}=\\frac{\\suminz_{i}^{met}}{\\sqrt{n}}$.\u00a0The set of metabolites with highest absolute combined Z-scores (>1.96) was selected to perform an overrepresentation (enrichment) analysis of categorical annotations using MBrole2.0 (L\u00f3pez-Ib\u00e1\u00f1ez et al., 2016), using as reference the metabolic pathways of E. coli from KEGG database.\n\n### Proteomics data analysis\n\nZ-scores were computed using Equation 1. For grouping analysis, we used the functional and regulatory classification group sets as (Sangurdekar et al., 2011). For each set of genes belonging to a group we employed a one-sample t-test which provides the p-value against the null hypothesis that the group of genes was drawn from a normal distribution and considered that a given group of genes is upregulated or downregulated with respect to a reference if the average of Z-scores of that group is positive or negative, respectively.\n",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "76cba98f-dccf-4b3b-8e8a-e583005fae9a",
+      "submission_id": "b352591d-c672-42b3-86a3-a83060e82d6f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antonis Rokas, Vanderbilt University United States\n\nReviewers:\n- Erdal Toprak, UT Southwestern United States\n\n## Review text\n\nDOI: [10.7554/eLife.50509.036](https://doi.org/10.7554/eLife.50509.036)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Adaptation to mutational inactivation of an essential E. coli gene converges to an accessible suboptimal fitness peak\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Michael Eisen as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Erdal Toprak (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this study, the authors investigate the evolutionary pathways and phenotypes derived from inactivation of an essential enzyme (DHFR) in the E. coli bacterium with the objective of determining how adaptation occurs in bacterial systems and its mechanisms. Since the authors' approach does not involve antibiotic resistance or gene knockouts but compensation for loss of function mutations of an essential gene, the results provide a unique view into less explored mechanisms of adaptation. The authors discovered that there are two dominant pathways for adaptation, one that restores (albeit partially and through a different route) original functionality and a second that compensates the metabolic effects of the loss of function via the deactivation of other genes involved in metabolism. The authors conclude that given that there are many more pathways to disrupt other functions that will compensate the effects versus the unique pathway to completely revert the mutations in D27 of DHFR, the cell effectively converges to a local fitness peak as opposed to the global one. Thus, the key finding of the study is that the evolutionary pathways to adaptation were suboptimal (i.e., the organisms did not escape from supplement auxotrophy), largely because the adaptive mutations that were easiest to acquire were also the ones that blocked the path to the highest fitness peak.\n\nThis work is extensive both in depth and breadth. The authors utilize a large set of experimental tools ranging from biophysical measurements, whole genome sequencing, NGS, metabolomics and automated plating to not only support their message but to disentangle a series of mechanistic questions. All key questions are answered with solid and convincing experiments and this study constitutes a valuable example of how we can study evolutionary landscapes in a comprehensive way.\n\nEssential revisions:\n\n1) The manuscript was overall relatively easy to follow and the experiments well described and performed. We had trouble following the authors in some places, and arguably the reviewers' biggest concern is that the manuscript isn't as accessible to the general reader of eLife as it should be.\n\n2) Along these lines, the beginning of the Discussion section explains very nicely the difference between the authors' study of adaptation that starts from a non-functional essential gene and classical studies that use drugs to generate essentiality. Given that this is a theme that the authors have done experiments on (with the use of the DHFR inhibitor trimethoprim), it would be good if the authors introduced the topic in the Introduction so that it's easier for readers to follow.\n\n3) It was not clear to the reviewers how the authors selected mutations ad D27. The rationale is that mutations G,N and F would disrupt function without disrupting folding, but how did the authors narrow the possibilities to 3 amino acids?\n\n4) The authors propose a model to predict the effects of the D27C mutation on catalytic activity as a way to support the notion that such mutant might be partially functional. Then they purified the mutant and assayed the DHFR activity. Although it seems nice that the model agrees with the experiment, it seems to the reviewers that the model is not needed any more and its relevance is diminished after the experimental confirmation.\n\n5) It was not clear why if the D27C mutation yields low levels of activity the mutant restored its function without any other change. Is this low activity above the survival limit?\n\n6) The authors note that the D27N and D27G strains had additional background mutations that are probably acquired prior to the evolution experiments. Could the authors clarify how do they know these mutations appeared before? Did they perform sequencing experiments prior to the evolution experiments? If so, they should mention it; if not, then an argument of why these mutations were acquired previously must be presented.\n\n7) The section \"Regulatory responses are altered in evolved D27F strain\" seems more speculative and in our opinion is not as solid as the previous sections. Our suggestion is to move that section to the supplementary information. This would help streamline the article, which is already extensive, and will not change the main message and results of the article but could help improve the flow.\n\n8) The feedback loop strategy seems really interesting and allows for the interesting observations in this work. Can the authors speculate (or comment, if they have done it) on what would happen if they try to evolve the strains without the feedback loop?\n",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fc3b4d3a-bd26-4fd2-84cc-da1e617c9310",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C1",
+      "claim": "DHFR is encoded by the folA gene and is essential for the biosynthesis of purines, dTTP, glycine and methionine.",
+      "claim_type": "EXPLICIT",
+      "source": "DHFR is encoded by the folA gene and is essential for the biosynthesis of purines, dTTP, glycine and methionine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about DHFR function in E. coli.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "67b44b23-f73a-4905-b580-c842d60c58a1",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C2",
+      "claim": "D27 mutations in DHFR were introduced in E. coli chromosome by lambda red recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in key D27 catalytic residue of DHFR were introduced in E. coli chromosome, together with flanking antibiotic resistant markers, by lambda red recombination and strains devoid of DHFR function were selected with antibiotics in folAmix-containing agar plates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The figure caption describes the experimental procedure used to create the mutant strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "3ca8c774-eaa4-4b5c-b921-3c4ac2a14035",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C3",
+      "claim": "D27 mutants are lethal but fitness can be partially rescued by metabolic compensation with folAmix.",
+      "claim_type": "EXPLICIT",
+      "source": "D27 mutants are lethal but fitness can be partially rescued by metabolic compensation with folAmix.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1B shows this relationship and the text describes the experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "6af9fb8d-9067-4d67-a700-0491db9b3dfb",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C4",
+      "claim": "The carboxylate side chain in position 27 is strictly conserved among 290 bacterial DHFR orthologues, where Asp and Glu are present at a frequency of 82% and 18%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of a carboxylate side chain in position 27 is strictly conserved among 290 bacterial DHFR orthologues, where Asp and Glu are present at a frequency of 82% and 18%, respectively (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "ed0823cb-487d-4fea-865f-7d407f29de5c",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C5",
+      "claim": "D27 mutant proteins have catalytic efficiencies (kcat/KM) several orders of magnitude lower than wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic activity measurements confirm the lack of significant DHFR function in these variants; catalytic efficiencies (kcat/KM) are several orders of magnitude lower than wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the kinetic measurements presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "275318fe-ec08-496b-879b-006305622291",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C6",
+      "claim": "D27F mutant has a catalytic efficiency that is 2 \u00d7 10^-7 relative to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The table shows measured kcat/KM values for D27F mutant relative to wild type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "111f38a2-c08a-4360-af0d-e25d9a3f4fb2",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C7",
+      "claim": "D27N mutant has a catalytic efficiency that is 4 \u00d7 10^-5 relative to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The table shows measured kcat/KM values for D27N mutant relative to wild type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "b8ed3cac-e58a-4150-8f9d-9307aeae1a83",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C8",
+      "claim": "D27G mutant has a catalytic efficiency that is 3 \u00d7 10^-5 relative to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The table shows measured kcat/KM values for D27G mutant relative to wild type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "3c050fb4-4601-406d-873d-f79509bc92c8",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C9",
+      "claim": "The thermal stability of D27 mutant proteins is mostly unaffected or even significantly increased in the case of D27F mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "However, thermal denaturation data obtained for the D27 mutant proteins indicates that their stability is mostly unaffected (or even significantly increased in the case of D27F mutant; Tian et al., 2015) showing that, despite the lack of catalytic activity, these proteins retain the ability to fully fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on thermal denaturation measurements and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "d9f708c9-52de-4ca0-802e-77ea3b165353",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C10",
+      "claim": "D27F mutant has a \u0394Tm of +7.6 \u00b1 0.1 \u00b0C compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The table shows measured thermal stability data for D27F mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "8a125cc2-0b0d-43a7-b0be-a684688e0b6b",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C11",
+      "claim": "No DHFR activity could be detected in cell lysates of D27 mutant strains.",
+      "claim_type": "EXPLICIT",
+      "source": "When DHFR function was assayed in cell lysates of D27 mutant strains, no DHFR activity could be detected (Figure 2\u2014figure supplement 1B\u2013C), confirming that these mutations inactivate DHFR function in the cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on enzymatic activity measurements in cell lysates shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "a9753a51-2d17-4730-a1e0-f38c734c3c13",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C12",
+      "claim": "D27 mutants grow only at high concentrations of folAmix.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, growth experiments showed that D27 mutants grow only at high concentrations of folAmix (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by growth rate measurements at various folAmix concentrations shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "75f08dd5-6ed9-4206-b88e-aa2e6c9c572e",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C13",
+      "claim": "The growth rates measured for all D27 mutants at high folAmix fall in the range 70\u201380% of wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth rates measured for all D27 mutants at high folAmix fall in the range 70\u201380% of wild type and lag times were typically 1.5\u20132 fold longer (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth rate measurements shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "56caa14f-4727-449a-beab-fcbe049a96c6",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C14",
+      "claim": "Lag times for D27 mutants were typically 1.5\u20132 fold longer than wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth rates measured for all D27 mutants at high folAmix fall in the range 70\u201380% of wild type and lag times were typically 1.5\u20132 fold longer (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth measurements shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "33fe60ba-8fb6-4565-a555-a7f96ba9f69f",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C15",
+      "claim": "Proteins involved in central processes were significantly downregulated in D27F strain, including energy metabolism (aerobic respiration, TCA cycle), metabolism of nitrogen, several amino acids, pyrimidines and lipopolysaccharides.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins involved in central processes were significantly downregulated in D27F strain, including energy metabolism (aerobic respiration, TCA cycle), metabolism of nitrogen, several amino acids, pyrimidines and lipopolysaccharides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on proteomics analysis comparing D27F mutant to wild type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "d8e3fb8d-7d43-4d25-af80-d538063b10bd",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C16",
+      "claim": "There was significant increase in the expression of proteins involved in stress responses, peptidoglycan recycling and salvage of guanine and xanthine in D27F strain.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other end, we found significant increase in the expression of proteins involved in stress responses, peptidoglycan recycling and salvage of guanine and xanthine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on proteomics analysis comparing D27F mutant to wild type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "da1d241d-d822-4094-818e-48ce092bebaa",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C17",
+      "claim": "The metabolism of purines, pyrimidines, beta-alanine, histidine and sulfur were the most significantly changed in D27F mutant comparatively to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis revealed that the metabolism of purines, pyrimidines, beta-alanine, histidine and sulfur were the most significantly changed in D27F mutant comparatively to wild type (Figure 2\u2014figure supplement 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on metabolomics enrichment analysis shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "60adc4ef-0cfa-4cd0-a643-d37f66c3fcbb",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C18",
+      "claim": "Metabolites upstream the reactions that require reduced folate cofactors (PurT, PurH, and ThyA) build up in D27F mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, we observe build-up of metabolites upstream the reactions that require reduced folate cofactors (PurT, PurH, and ThyA), whereas metabolites downstream of those reactions are found to be strongly depleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on metabolomics analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "9ad6342c-6c85-4203-a8a2-101e7f0de66c",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C19",
+      "claim": "Metabolites downstream of reactions requiring reduced folate cofactors are strongly depleted in D27F mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, we observe build-up of metabolites upstream the reactions that require reduced folate cofactors (PurT, PurH, and ThyA), whereas metabolites downstream of those reactions are found to be strongly depleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on metabolomics analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "0a66ab4a-9f9c-4458-88e8-10454aa4e1a9",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C20",
+      "claim": "Three trajectories (1,3 and 6) of D27G evolution reached the ability to grow in the complete absence of folAmix.",
+      "claim_type": "EXPLICIT",
+      "source": "Three trajectories (1,3 and 6) stand out by reaching the ability to grow in the complete absence of folAmix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the evolutionary experiment data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "3693316b-97ef-4192-9013-bb5f9bc012ef",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C21",
+      "claim": "In all three trajectories (1,3 and 6) of D27G evolution that reverted phenotype, residue Gly27 had mutated to cysteine.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, Sanger sequencing analysis of this region revealed that in all these three trajectories (1,3 and 6), but not trajectory 4, residue Gly27 had mutated to cysteine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Sanger sequencing data of evolved strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "80122b85-c314-4f78-8f85-c8df64bfae05",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C22",
+      "claim": "Cysteine does not occur naturally in position 27 among known DHFR sequences; only aspartate or glutamate are observed in this locus.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding was surprising because alignment of multiple known DHFR sequences shows that cysteine does not occur naturally in position 27; only aspartate or glutamate are observed in this locus (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment analysis shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "7ee6ab33-4760-4792-882b-e5a4b1d5241d",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C24",
+      "claim": "D27C mutant has a catalytic efficiency that is 2 \u00d7 10^-3 relative to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The table shows measured kcat/KM values for D27C mutant relative to wild type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "d576d021-0702-49df-a8d5-e0d8578588c7",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C25",
+      "claim": "A biophysical model predicts a growth rate of about 30% of the wild type strain for D27C mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking as input the in vitro biophysical properties of purified D27C mutant, namely kcat/KM and bis-ANS fluorescence values, the model predicts a growth rate of about 30% of the wild type strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a previously established fitness prediction model (Rodrigues et al., 2016) applied to D27C mutant data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "d41b98b4-b3ed-4edd-8e0d-0bc7161df30c",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C26",
+      "claim": "The measured growth rate of reconstituted D27C strain was 92% of the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "This strain was able to grow in the absence of folAmix supplementation, and the measured growth rate was 92% of the wild type, which is in fair agreement with the in vitro-based prediction which does not take into account a possibility of upregulation in response to DHFR deficiency (Bershtein et al., 2015a) (see Material and methods section Predicting fitness of D27 mutants for discussion) (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth rate measurements of the reconstituted D27C strain shown in Figure 3B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "70816c20-2090-42b7-959d-2eb0d5a9244d",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C27",
+      "claim": "D27C mutation is associated with a dramatic 4 orders of magnitude increase in the inhibition constant for trimethoprim.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note is also the fact that the significant loss in catalytic efficiency in D27C mutant is associated with a dramatic 4 orders of magnitude increase in the inhibition constant for trimethoprim, and consequent nearly 100-fold increased resistance of the D27C strain to trimethoprim inhibition in comparison with the wild type (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on inhibition constant measurements shown in Table 1 and resistance measurements shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "8a7ba8dc-78f7-4cbe-92ae-4fccac39785c",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C28",
+      "claim": "D27C strain shows nearly 100-fold increased resistance to trimethoprim inhibition compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note is also the fact that the significant loss in catalytic efficiency in D27C mutant is associated with a dramatic 4 orders of magnitude increase in the inhibition constant for trimethoprim, and consequent nearly 100-fold increased resistance of the D27C strain to trimethoprim inhibition in comparison with the wild type (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on dose-response measurements shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "1bb212cb-70aa-4b23-b96a-93ee366bf5ca",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C29",
+      "claim": "IC50 for trimethoprim was determined to be 0.8 \u00b1 0.1 \u00b5g/mL for wild type and 79 \u00b1 17 \u00b5g/mL for D27C mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The data was fitted with a logistic equation (solid lines) from which IC50 was determined to be 0.8 \u00b1 0.1 \u00b5g/mL for wild type and 79 \u00b1 17 \u00b5g/mL for D27C mutant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on dose-response curve fitting shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "99392603-b6eb-4644-a3db-70530c5383dd",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C30",
+      "claim": "Active site mutations compromise catalytic function but also disrupt pocket interactions with the drug, resulting in high levels of resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with previous observations that active site mutations compromise catalytic function but also disrupt pocket interactions with the drug, resulting in high levels of resistance (Bader et al., 2006; Rodrigues et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "e8c89f1f-aa10-4778-8840-63744bfccf9b",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C31",
+      "claim": "Evolutionary trajectories of D27F and D27N mutants show a marked decrease in folAmix necessary to sustain growth, in most cases reaching concentrations nearly three orders of magnitude lower than initially required for na\u00efve strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionary trajectories of D27F and D27N mutants represented in Figure 4A and B, respectively, show a marked decrease in folAmix necessary to sustain growth, in most cases reaching concentrations nearly three orders of magnitude lower than initially required for na\u00efve strains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the evolutionary experiment data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "a9dad7ca-b657-442f-b827-3858c64eb870",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C32",
+      "claim": "Individual colonies taken among all trajectories that adapted to low folAmix concentrations all showed a strikingly similar phenotype - folAmix-dependent growth profile, irrespective of the initial variant at D27 locus (F/N and also trajectory four in D27G).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that individual colonies taken among all trajectories that adapted to low folAmix concentrations all showed a strikingly similar phenotype - folAmix-dependent growth profile, irrespective of the initial variant at D27 locus (F/N and also trajectory four in D27G) (Figure 4\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth measurements of individual clones shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "5332c3a0-9ac8-4c73-9f0a-95226e4656f1",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C33",
+      "claim": "Evolved D27N and D27F strains cannot grow in the complete absence of folAmix.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these strains cannot grow in the complete absence of folAmix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on growth measurements shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "b7da025f-1223-45a4-8b7a-5d87118644ea",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C34",
+      "claim": "No mutations were found in folA locus in evolved D27N and D27F strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, no mutations were found in folA locus in evolved D27N and D27F strains (see Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole genome sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "07957a1a-42cb-4a33-ac30-62ed1fdfe8fc",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C35",
+      "claim": "The growth rate of the evolved strains measured at high concentrations of folAmix reached values comparable to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth rate of the evolved strains measured at high concentrations of folAmix reached values comparable to wild type, showing a clear fitness increase with respect to na\u00efve strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on growth rate measurements shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "4a937091-803e-44d7-ad59-16331707959f",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C36",
+      "claim": "At lower concentrations of folAmix the growth rate of evolved strain becomes markedly reduced to nearly half of the wild type value.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at lower concentrations of folAmix the growth rate of evolved strain becomes markedly reduced to nearly half of the wild type value and appears to plateau in an intermediate range of folAmix concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on growth rate measurements shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "5d5d73da-ed84-426b-b208-34443f2283a4",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C37",
+      "claim": "The growth rate value at the plateau coincides with that measured for cells grown in thymine alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth rate value at this plateau coincides with that measured for cells grown in thymine alone (Figure 4\u2014figure supplement 1D), which is indicative that thymine is the growth-limiting component at these concentrations of folAmix and that cells utilize thymine less efficiently in the absence of the other folAmix components.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth measurements comparing folAmix and thymine alone shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "7cddc7ab-04b4-4310-ad95-c4d5372d0374",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C38",
+      "claim": "In the absence of a functional DHFR and in the presence of folAmix D27F mutant strains are extremely resistant to trimethoprim.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, in the absence of a functional DHFR and in the presence of folAmix D27F mutant strains are extremely resistant to trimethoprim (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on trimethoprim inhibition measurements shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "d9d24b2f-e7c5-44b2-bb1c-9905c8d369ca",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C39",
+      "claim": "The evolved D27F strain shows an extremely high resistance to trimethoprim (IC50 = 656 \u00b1 78 \u00b5g/mL) at very low concentrations of folAmix.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in those conditions IC50 for the wild type is similar to that measured in the absence of supplement, yet the evolved D27F strain still shows an extremely high resistance to trimethoprim (IC50 = 656 \u00b1 78 \u00b5g/mL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on dose-response measurements shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "16bfc19a-598d-4f16-9804-edc1cef22c3f",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C40",
+      "claim": "In a total of 12 trajectories all were found to have mutations in thyA and 11 had deoB mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in a total of 12 trajectories all were found to have mutations in thyA and 11 had deoB mutated (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on whole genome sequencing and Sanger sequencing data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "9ee48b93-776a-4ea2-b862-4cf9ae2dd6d1",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C41",
+      "claim": "Expression of functional ThyA and especially DeoB were found to be highly deleterious in evolved D27F strains at low folAmix concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of functional ThyA and especially DeoB were found to be highly deleterious in evolved D27F strains at low folAmix concentrations, as shown Figure 5 D-E, whereas no significant change in growth was observed upon expressing inactive mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on complementation experiments shown in Figure 5D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "77ea4b63-e667-4fe0-8d19-465109405a9a",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C42",
+      "claim": "D27N strain had a point mutation (P74S) in the gene nanM that encodes N-acetylneuraminate mutarotase.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain D27N had a point mutation (P74S) in the gene nanM that encodes N-acetylneuraminate mutarotase, which supports efficient growth form sialic acid as carbon source (Severi et al., 2008), and a point mutation (L44Q) in the gene thyA (discussed below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole genome sequencing data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "075764f9-0293-4a4f-a61c-ce7a75eb34ac",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C43",
+      "claim": "D27N strain had a point mutation (L44Q) in the gene thyA.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain D27N had a point mutation (P74S) in the gene nanM that encodes N-acetylneuraminate mutarotase, which supports efficient growth form sialic acid as carbon source (Severi et al., 2008), and a point mutation (L44Q) in the gene thyA (discussed below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole genome sequencing data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "8cabc7b2-89b7-4222-9ace-9325a2163dd4",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C44",
+      "claim": "D27G strain had a point mutation (A101V) in the gene ymfD that encodes a putative SAM-dependent methyltransferase.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain D27G had a point mutation (A101V) in the gene ymfD that encodes a putative SAM-dependent methyltransferase and an early stop codon in the gene upp, that encodes the enzyme uracil phosphoribosyltransferase that participates in pyrimidine salvage pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole genome sequencing data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "4946ede1-c0ae-4dd8-8a7c-6ebf81341d9c",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C45",
+      "claim": "D27G strain had an early stop codon in the gene upp, that encodes the enzyme uracil phosphoribosyltransferase that participates in pyrimidine salvage pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain D27G had a point mutation (A101V) in the gene ymfD that encodes a putative SAM-dependent methyltransferase and an early stop codon in the gene upp, that encodes the enzyme uracil phosphoribosyltransferase that participates in pyrimidine salvage pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole genome sequencing data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "3635aae6-e05a-4094-a890-b5ada001b0ac",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C46",
+      "claim": "No other mutation was fixed upon evolution of D27G besides the one nucleotide change at the D27 locus of the folA gene, corresponding to the Gly->Cys substitution.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison between evolved and na\u00efve D27G strains reveals that no other mutation was fixed upon evolution besides the one nucleotide change at the D27 locus of the folA gene, corresponding to the Gly->Cys substitution described earlier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole genome sequencing data comparing na\u00efve and evolved D27G strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "4afc84ee-cd6f-4195-a3b3-6a8a6672953b",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C47",
+      "claim": "No difference was found in the growth rate profiles of D27G strains with and without mutations in upp and ymfD.",
+      "claim_type": "EXPLICIT",
+      "source": "No difference was found in the growth rate profiles of these strains (Figure 5\u2014figure supplement 1), indicating no obvious impact of mutations in upp and ymfD in favoring the reversion of DHFR function over thyA inactivation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth rate measurements shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "ef1fa6b3-408a-4e1e-ba8c-6ec843dbe5da",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C48",
+      "claim": "DeoB catalyzes the interconversion of 2-Deoxy-D-ribose-1-phosphate and 2-Deoxy-D-ribose-5-phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "DeoB catalyzes the interconversion of 2-Deoxy-D-ribose-1-phosphate and 2-Deoxy-D-ribose-5-phosphate, and, while the former is necessary for synthesis of dTMP from thymine by DeoA, the latter can be further degraded in glycolysis, through conversion into acetaldehyde and D-glyceraldehyde 3-phosphate by DeoC (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established biochemical knowledge about DeoB function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "e4e31522-5bbc-42f7-a764-b265647888c9",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C49",
+      "claim": "Inactivating deoB or deoC is an 'economy' solution preventing key metabolite in thymine uptake to be wasted in energy production.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, inactivating deoB or deoC is an 'economy' solution preventing key metabolite in thymine uptake to be wasted in energy production, allowing cells to efficiently use small amounts of thymine available from media supplement for nucleotide synthesis (Dale and Greenberg, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the metabolic pathway analysis and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "87942a24-6a73-4f03-9c57-ad6e5570de86",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C50",
+      "claim": "While deoB+ cells cannot grow at low concentrations of thymine in the media, replacing this precursor by thymidine or dTMP, which provide a deoxyribose moiety, improves the growth of evolved D27F strains transformed with plasmid expressing active DeoB.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the key role of deoxyribose in limiting thymine uptake, while deoB+ cells cannot grow at low concentrations of thymine in the media, replacing this precursor by thymidine or dTMP, which provide a deoxyribose moiety, improves the growth of evolved D27F strains transformed with plasmid expressing active DeoB (Figures 6B-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth measurements shown in Figures 6B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "3c4beb0b-21c8-4ba9-b59f-b4b1b426d2c9",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C51",
+      "claim": "deoB- cells cannot grow on thymidine as the sole carbon source unless complemented with a plasmid expressing wild type DeoB.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, to confirm that the route for deoxyribose degradation into energy production is blocked in evolved mutants, we measured the growth of na\u00efve and evolved cells in the presence of thymidine as the sole carbon source and verified that deoB- cells cannot grow unless complemented with a plasmid expressing wild type DeoB (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth measurements shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "f3b2e641-80d8-43cb-9cc8-49bc74eb2b4c",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C52",
+      "claim": "PCA analysis revealed that both wild type and evolved D27G occupy the same quadrant in the space of two principal components, whereas D27 mutants that are folAmix dependent cluster more closely in another quadrant.",
+      "claim_type": "EXPLICIT",
+      "source": "To get a glimpse of global proteomics changes we applied PCA analysis which revealed that both wild type and evolved D27G occupy the same quadrant in the space of two principal components, whereas D27 mutants that are folAmix dependent cluster more closely in another quadrant (Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on PCA analysis of proteomics data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "0fe3294e-a423-42ae-a0a8-7447b8945a96",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C53",
+      "claim": "A clear anticorrelation was observed between proteomic changes upon evolution and initial changes caused by D27F mutation for all mutants, being the strongest for evolved D27G strain.",
+      "claim_type": "EXPLICIT",
+      "source": "A clear anticorrelation was observed for all mutants (Figure 7A), being the strongest for evolved D27G strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of Z-scores shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "75fa4952-39f9-448e-9806-c739d5d53a4f",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C54",
+      "claim": "There was a significant increase in the expression levels of proteins involved in glycolysis, fermentation, sugar alcohol degradation and response to low pH in both evolved D27F and D27N with respect to na\u00efve D27F strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant increase in the expression levels of proteins involved in glycolysis, fermentation, sugar alcohol degradation and response to low pH, suggesting a metabolic shift towards mixed acid fermentation as a result of adaptation that blocked using derivative of thymidine for glycolysis to save them for DNA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on proteomics analysis shown in Figure 7\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "c98252c2-fdee-4f24-ae04-ea89bd43db78",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C55",
+      "claim": "The levels of proteins involved in DNA restriction/methylation and D-ribose uptake were significantly decreased with respect to na\u00efve D27F in both evolved D27F and D27N strains.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the levels of proteins involved in DNA restriction/methylation and D-ribose uptake were significantly decreased with respect to na\u00efve D27F in both evolved D27F and D27N strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on proteomics analysis shown in Figure 7\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "2a366786-c726-48b0-84f0-0d5a3f69a4bb",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C56",
+      "claim": "Significant anticorrelation was found between metabolite changes in evolved D27F with respect to na\u00efve D27F and metabolite changes in na\u00efve D27F with respect to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed Z-scores for metabolite changes with respect to na\u00efve D27F (ZD27_evo/D27F_na\u00efve) and we found significant anticorrelation with Z-scores obtained for na\u00efve D27F (ZD27F_na\u00efve/WT) (Figure 7B), indicating that metabolite concentrations in evolved strain generally change to partially recover wild type levels, as observed with proteomics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on metabolomics analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "bd44efef-363a-4467-b688-1eba77e9c906",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C57",
+      "claim": "The pathways significantly enriched in metabolites with the highest Z-scores in evolved D27F were the same as those that had the most significant changes in na\u00efve D27F, with respect to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the pathways significantly enriched in metabolites with the highest ZD27_evo/D27F_na\u00efve scores (>1.96) in evolved D27F were the same as those that had the most significant changes in na\u00efve D27F, with respect to wild type (Figure 2\u2014figure supplement 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on metabolomics enrichment analysis comparing na\u00efve and evolved strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "2479d162-0b9c-4157-a2fa-b2fcba8aada6",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C58",
+      "claim": "Supplementation with purines strongly inhibited growth of the na\u00efve D27F strain, whereas pyrimidines addition had, at most, a slight stimulatory effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, supplementation with purines strongly inhibited growth of the na\u00efve D27F strain, whereas pyrimidines addition had, at most, a slight stimulatory effect (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth measurements with metabolite supplementation shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "9d7a57b8-e0d9-4e82-852b-7de89f7b06f3",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C59",
+      "claim": "In the case of evolved D27F strain, the effect of supplementation of individual nucleotides on growth was comparably weaker or non-existent.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of evolved D27F strain, the effect of supplementation of individual nucleotides on growth was comparably weaker or non-existent, indicating that the inhibitory effects were relaxed upon adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on growth measurements with metabolite supplementation shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "bae5a33f-48a4-43bd-b242-e413d837fee2",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C60",
+      "claim": "Evolution of D27F and D27N strains blocked supplementary glycolysis pathway by rerouting Deoxyribose towards DNA synthesis while the ensuing metabolic changes lead to significant increase in abundance of glycolysis proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolution of D27F and D27N strains blocked supplementary glycolysis pathway by rerouting Deoxyribose towards DNA synthesis while the ensuing metabolic changes lead to significant increase in abundance of glycolysis proteins, presumably to compensate for diminished flux of sugar metabolites along the glycolysis pathway (see Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on proteomics and metabolomics analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "03aab192-1b86-44e9-a78d-c43d6428894a",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C61",
+      "claim": "Evolved strains show significant increase in abundance of hypoxanthine giving rise to significant drop in abundance of proteins controlled by purR.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example of metabolite-induced rewiring is purR operon whereby purR is inhibited by purine hypoxanthine. Evolved strains show significant increase in abundance of hypoxanthine giving rise to significant drop in abundance of proteins controlled by purR (see Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on metabolomics and proteomics analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "29fe9be9-e308-4402-a59d-bd567acf2d56",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C62",
+      "claim": "Mutations in thyA are known to confer trimethoprim resistance in bacterial clinical isolates of S. aureus and H. influenza.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, mutations in thyA are also known to confer trimethoprim resistance in bacterial clinical isolates of S. aureus (Chatterjee et al., 2008; Kriegeskorte et al., 2014), and H. influenza (Rodr\u00edguez-Arce et al., 2017), which emphasizes the need of laboratory studies of microbial adaptation as useful models to tackle serious global threat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "be566d31-6836-4ea6-b5ee-bd06368471ac",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C63",
+      "claim": "E. coli cells challenged with increasing concentrations of trimethoprim in the presence of thymidine repeatedly evolved high levels of resistance by thyA loss-of-function mutations besides acquisition of commonly observed resistant mutations in DHFR.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, a recent study also reported that E. coli cells challenged with increasing concentrations of trimethoprim in the presence of thymidine repeatedly evolved high levels of resistance by thyA loss-of-function mutations besides acquisition of commonly observed resistant mutations in DHFR (Schober et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "3bad148b-8a1a-4b11-bcda-4fcd9ee171dc",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C64",
+      "claim": "The point mutation L44Q in thyA is reported to affect the activity of a nearly identical orthologue enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The point mutation L44Q in thyA, reported to affect the activity of a nearly identical orthologue enzyme (Nur-E-Kamal et al., 1994), could have skewed the solution towards further inactivation of thyA by subsequent point mutations in other loci of that gene that were later observed in different trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "8fc5b9d5-504a-4239-a2a6-a5c218f06918",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C65",
+      "claim": "Transversions are generally regarded to be less likely than transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, it is rather surprising that D27C mutation was fixed in three trajectories when transversions are generally regarded to be less likely than transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mutation frequencies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "cb7e791a-e6c4-4073-b238-343dba44311c",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C66",
+      "claim": "folA+ thyA- strains are thymine-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Thymidylate synthase is the only known enzyme in E. coli able to synthetize dTMP de novo from dUMP, and inactivation of thyA inevitably commits the cell to thymine auxothrophy; reversion of DHFR function on the thyA- background is not expected to change this phenotype, as it is known that folA+ thyA- strains are thymine-dependent (Bertino and Stacey, 1966; Schober et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "69891d44-0a69-4ef3-90ca-a4b41f7449bb",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C67",
+      "claim": "DeoA is part of the deo operon that is induced by high levels of 2-deoxy-D-ribose-5-phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DeoA is part of the deo operon that is induced by high levels of 2-deoxy-D-ribose-5-phosphate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the deo operon regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "08ed991a-95c5-453c-934b-a37e5af83dd9",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C68",
+      "claim": "The gene deoB is part of an operon responsible for deoxyribose degradation, that includes deoA, deoC, and deoD, which is under the control of 2-deoxyribose-5-phosphate-inducible deoR repressor.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene deoB is part of an operon responsible for deoxyribose degradation, that includes deoA, deoC, and deoD, which is under the control of 2-deoxyribose-5-phosphate-inducible deoR repressor (Hammer-Jespersen and Munch-Ptersen, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the deo operon supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "99b3c62a-78bf-4d48-be76-48249798bd82",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C69",
+      "claim": "Recent studies investigated evolution of E. coli upon inactivation of non-essential enzymes of carbon metabolism that lead to re-wiring through less efficient pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies investigated evolution of E. coli upon inactivation of non-essential enzymes of carbon metabolism that lead to re-wiring through less efficient pathways (Kr\u00fcsemann et al., 2018; Long et al., 2018; McCloskey et al., 2018a; McCloskey et al., 2018b; McCloskey et al., 2018c; McCloskey et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "82faaaa2-a5a3-46ed-ace7-459a8f772580",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C70",
+      "claim": "A comprehensive study involving knock outs of >1000 genes classified as essential in yeast has shown that a small percentage of mutants could recover viability after laboratory evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, a comprehensive study involving knock outs of >1000 genes classified as essential in yeast has shown that a small percentage of mutants could recover viability after laboratory evolution (Liu et al., 2015), revealing that essentiality can, in some cases, be overcome through adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "7af133f3-1ef3-48d7-8825-0bde80d61c81",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C71",
+      "claim": "Loss of essential biosynthetic genes have been observed to occur naturally, under evolutionary conditions where pathway products are provided externally.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of essential biosynthetic genes have also been observed to occur naturally, under evolutionary conditions where pathway products are provided externally (D'Souza and Kost, 2016), highlighting a context-dependent nature of essentiality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "c3fa8078-f6e7-403a-ba94-8ace920c336b",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C72",
+      "claim": "Genes that perform essential functions are believed to face higher selective pressure and thus evolve slower.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes that perform such functions, often classified as essential, are believed to face higher selective pressure and thus evolve slower (Luo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "737611e5-6af8-4987-9296-4c59be9e8084",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C73",
+      "claim": "DHFR has been repeatedly observed to accumulate mutations leading to extremely high drug resistance levels in various experimental evolution studies.",
+      "claim_type": "EXPLICIT",
+      "source": "As the cellular target of the antibiotic trimethoprim, DHFR has been repeatedly observed to accumulate mutations leading to extremely high drug resistance levels in various experimental evolution studies (Rodrigues et al., 2016; Tamer et al., 2019; Toprak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous experimental evolution studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "7a80f6ab-8a34-443e-a1df-3c4c0f098209",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C74",
+      "claim": "Past efforts to link fitness effects of chromosomal variation in the folA locus encoding DHFR and their biophysical effects on DHFR protein allowed development of an accurate quantitative biophysical model of DHFR fitness landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Past efforts to link fitness effects of chromosomal variation in the folA locus encoding DHFR and their biophysical effects on DHFR protein allowed us to develop an accurate quantitative biophysical model of DHFR fitness landscape (Bershtein et al., 2015a; Bershtein et al., 2013; Bershtein et al., 2012; Bershtein et al., 2015b; Rodrigues et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "e01bd69b-8b36-4c53-871d-0ed3a7511351",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C75",
+      "claim": "When treated with DHFR inhibitor trimethoprim, bacterial cells recurrently acquire resistance by high-fitness mutations near the active site of the target protein that decrease drug binding affinity, even at the expense of catalytic efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when treated with DHFR inhibitor trimethoprim, bacterial cells recurrently acquire resistance by high-fitness mutations near the active site of the target protein that decrease drug binding affinity, even at the expense of catalytic efficiency (Rodrigues et al., 2016; Tamer et al., 2019; Toprak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "2e8696bd-b1d1-44a8-a48d-af3603feecef",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C76",
+      "claim": "A mixture (folAmix) of adenine, inosine, thymine, methionine and glycine allows cells to overcome DHFR deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "To construct these strains we supplemented the growth medium with a mixture (folAmix) of adenine, inosine, thymine (precursor of dTTP), methionine and glycine which allows cells to overcome DHFR deficiency (Howell et al., 1988; Kwon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "fe027ded-1bb3-497b-b030-110b4c419f11",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C77",
+      "claim": "Only thymine was essential among individual components of folAmix, although growth with thymine alone is slower compared to growth with all folAmix components.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested D27 mutants for growth in the presence of individual components of folAmix and their different combinations and found that only thymine was essential, although growth with thymine alone is slower compared to growth with all folAmix components (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth measurements with different supplement combinations shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "b0e5ff5d-94ab-4460-a004-74a9907f6ba2",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C78",
+      "claim": "D27N and D27G mutants show slightly better growth at lower concentrations of folAmix than D27F.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, D27N and D27G mutants show slightly better growth at lower concentrations of folAmix than D27F.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on growth measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "23961d33-68d1-416f-b858-392aaf4b2f69",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C79",
+      "claim": "The catalytic efficiencies of D27G and N, albeit extremely low, are 2 orders of magnitude higher than that of D27F.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the catalytic efficiencies of D27G and N, albeit extremely low, are 2 orders of magnitude higher than that of D27F, it is possible that such difference could have a beneficial impact at low folAmix concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of kinetic parameters shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "0db0504a-57b5-49ab-864e-89b61b16274d",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C80",
+      "claim": "Adaptation to loss-of-function mutations in DHFR, the cellular target of the antibiotic trimethoprim, can lead to high levels of drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show how adaptation to loss-of-function mutations in DHFR, the cellular target of the antibiotic trimethoprim, can lead to high levels of drug resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the trimethoprim resistance measurements shown in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "5051bee1-f3c7-4ae7-8d32-983eba172c3f",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C81",
+      "claim": "The partial reversal G27->C occurred in three evolutionary trajectories of D27G evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The partial reversal G27- > C occurred in three evolutionary trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequencing data from the evolution experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "1d05086e-a6c3-4ac8-ba17-a6353c1c5184",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C82",
+      "claim": "In one trajectory for D27G and in all trajectories for D27F,N strains adapted to grow at very low metabolic supplement (folAmix) concentrations but did not escape entirely from supplement auxotrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in one trajectory for D27G and in all trajectories for D27F,N strains adapted to grow at very low metabolic supplement (folAmix) concentrations but did not escape entirely from supplement auxotrophy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the evolutionary experiment results shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "1a36100d-51eb-4edc-9eca-6416382cc66b",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C83",
+      "claim": "Major global shifts in metabolome and proteome occurred upon DHFR inactivation, which were partially reversed in adapted strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Major global shifts in metabolome and proteome occurred upon DHFR inactivation, which were partially reversed in adapted strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the omics analysis shown in Figures 2 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "2e33dbcb-f163-4292-8133-9928771a81e9",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C84",
+      "claim": "Loss-of-function mutations in two genes, thyA and deoB, ensured adaptation to low folAmix by rerouting the 2-Deoxy-D-ribose-phosphate metabolism from glycolysis towards synthesis of dTMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations in two genes, thyA and deoB, ensured adaptation to low folAmix by rerouting the 2-Deoxy-D-ribose-phosphate metabolism from glycolysis towards synthesis of dTMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole genome sequencing and complementation experiments shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "bd18dd47-3d72-4df3-adef-6520fc8af8d4",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "claim_id": "C85",
+      "claim": "Multiple evolutionary pathways of adaptation converged to a suboptimal solution due to the high accessibility to loss-of-function mutations that block the path to the highest, yet least accessible, fitness peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple evolutionary pathways of adaptation converged to a suboptimal solution due to the high accessibility to loss-of-function mutations that block the path to the highest, yet least accessible, fitness peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the evolutionary experiments and genetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a7bebbac-c228-43dd-a588-67e9b0e02532",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "D27 mutations in the essential DHFR enzyme were introduced into E. coli chromosome by lambda red recombination. These mutations render the enzyme catalytically inactive but cells remain viable when supplemented with folAmix (adenine, inosine, thymine, methionine, and glycine), which provides metabolic compensation for the loss of DHFR function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C76 establish the experimental system. The methodology for introducing mutations is clearly described (C2), the essential nature of DHFR is established knowledge (C1), the rescue by folAmix is demonstrated experimentally (C3) and supported by prior literature (C76). The experimental design is sound and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "3deb158e-e8ef-4b7d-b595-7d97df1c9743",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "D27 mutations (D27F, D27N, D27G) severely compromise DHFR catalytic activity (4-7 orders of magnitude reduction in kcat/KM) while maintaining protein stability. Position 27 is strictly conserved as Asp or Glu in bacterial DHFR orthologues, and no DHFR activity could be detected in cell lysates of D27 mutant strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C11 provide comprehensive biochemical characterization. The conservation analysis (C4) is based on sequence alignment data. In vitro kinetic measurements (C5-C8) show dramatic loss of catalytic efficiency. Thermal stability data (C9-C10) demonstrate proteins remain folded. Cell lysate assays (C11) confirm loss of function in vivo. The data are internally consistent and well-replicated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "7758beee-d0b3-433c-ad92-e23f7c0caaaf",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "D27 mutants exhibit severe growth defects, growing only at high folAmix concentrations with growth rates 70-80% of wild type and 1.5-2 fold longer lag times. Thymine is the essential component of folAmix. D27N and D27G show slightly better growth at low folAmix than D27F, correlating with their 2 orders of magnitude higher catalytic efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 and C77-C79 characterize the growth phenotypes with multiple replicates (N=4). The correlation between residual catalytic activity and growth at low folAmix (C78-C79) is logical and supported by kinetic data. The identification of thymine as the essential component (C77) is experimentally validated. Growth measurements appear robust with error bars reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "b9b97a62-dacc-40d3-8ec3-91209d390e5b",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DHFR inactivation causes major metabolic and proteomic perturbations in D27F mutant. Proteins involved in central metabolism are downregulated while stress response proteins are upregulated. Metabolites upstream of folate-dependent reactions accumulate while downstream metabolites are depleted, particularly affecting purine, pyrimidine, and amino acid metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 describe comprehensive omics analysis. The proteomics (C15-C16) and metabolomics (C17-C19) data are internally consistent and mechanistically logical - loss of DHFR function should cause accumulation of substrates and depletion of products. The enrichment analysis and statistical testing appear appropriate. The metabolic perturbations align with known DHFR function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "b14bcef0-4349-46a2-b1b2-b7c6f1b46ec4",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Three evolutionary trajectories of D27G mutant (1, 3, and 6) achieved growth without folAmix supplementation through a G27C reversion mutation. This cysteine substitution is not naturally observed at position 27 but restores partial DHFR activity (0.2% of wild type catalytic efficiency). The reconstituted D27C strain grows at 92% of wild type rate, consistent with biophysical model predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22, C24-C26, and C81 describe one evolutionary outcome. The sequencing data (C21) clearly identifies the mutation. The novelty of cysteine at this position (C22) is supported by sequence alignment. The biochemical characterization (C24) and fitness measurements (C26) are consistent. The biophysical model prediction (C25) reasonably matches experimental observation, though the model appears to underestimate fitness, which the authors acknowledge and discuss.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "bfd37673-3d7c-4c8d-9530-2769aa71629e",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The D27C mutation confers dramatic trimethoprim resistance with a 4 orders of magnitude increase in inhibition constant (Ki) and nearly 100-fold increase in IC50 (from 0.8 to 79 \u00b5g/mL) compared to wild type. This is consistent with active site mutations disrupting drug binding while compromising catalytic function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 characterize antibiotic resistance. The inhibition constant measurements (C27) and dose-response data (C28-C29) are well-replicated with error bars. The IC50 determination uses appropriate curve fitting. The interpretation (C30) is supported by prior literature citations and is mechanistically sound - active site mutations that reduce catalysis also reduce drug binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "d68ca03b-735e-4001-adc5-b3a878ab53e0",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "D27F and D27N mutants (and one D27G trajectory) adapted to grow at very low folAmix concentrations (3 orders of magnitude reduction) but remained auxotrophic. All evolved strains showed similar folAmix-dependent growth profiles regardless of starting mutation. Growth rates at high folAmix reached wild type levels, but at low folAmix plateaued at ~50% of wild type, limited by thymine availability. No mutations in folA were found.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C37 and C82 describe the alternative evolutionary outcome. The evolutionary trajectories are well-documented (C31). The phenotypic convergence across multiple independent trajectories (C32) is strong evidence. The auxotrophy (C33) and absence of folA mutations (C34) rule out DHFR reversion. The growth characterization (C35-C37) is detailed and mechanistically interpreted. The consistency across trajectories strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "92eba4c8-7718-4aa6-9c97-519839f9b7ef",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Evolved D27F strains exhibit extremely high trimethoprim resistance even at very low folAmix concentrations (IC50 = 656 \u00b5g/mL for evolved D27F vs 0.8 \u00b5g/mL for wild type). Adaptation to loss-of-function mutations in DHFR can lead to high levels of drug resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 and C80 demonstrate antibiotic resistance in evolved strains. The dose-response measurements are replicated with error bars. The resistance levels are dramatic and well-documented. This represents an important finding linking evolutionary adaptation to antibiotic resistance, though the mechanism differs from the D27C case (metabolic bypass vs. altered target).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "baebbabc-f460-4fbb-ae70-1fbdf46772a8",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Loss-of-function mutations in thyA (12/12 trajectories) and deoB (11/12 trajectories) are the genetic basis for adaptation to low folAmix. Complementation experiments show that expression of functional ThyA and especially DeoB is highly deleterious in evolved strains at low folAmix, confirming these mutations are adaptive by rerouting deoxyribose metabolism from glycolysis toward dTMP synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 and C84 identify the key adaptive mutations. The convergence across 12 independent trajectories (C40) is extremely strong evidence. The complementation experiments (C41) provide functional validation - restoring wild type genes reduces fitness, confirming the mutations are adaptive rather than neutral. The mechanistic interpretation (C84) is supported by the metabolic pathway analysis. This is a major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "4a98e20d-ad76-459a-b88d-be02d982a6d3",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Whole genome sequencing revealed background mutations in na\u00efve strains: D27N had mutations in nanM (P74S) and thyA (L44Q); D27G had mutations in ymfD (A101V) and upp (early stop). The evolved D27G strain that reverted to D27C had no other fixed mutations. The upp and ymfD mutations in D27G did not affect growth rates or evolutionary outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 document background mutations. The sequencing data (C42-C45) identifies these mutations. The control experiment (C47) shows upp/ymfD mutations don't affect fitness. The lack of additional mutations in evolved D27G (C46) is consistent with D27C alone explaining fitness recovery. However, the L44Q thyA mutation in D27N (C43) may have biased evolution toward thyA inactivation, which the authors acknowledge in Discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "dc65145e-7304-4c56-b009-eb7abecefb09",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "DeoB catalyzes interconversion of deoxyribose phosphates, with one form required for dTMP synthesis and the other degraded via glycolysis. Inactivating deoB prevents waste of deoxyribose in energy production, allowing efficient use of limited thymine for nucleotide synthesis. This is confirmed by growth experiments showing deoB+ cells cannot grow at low thymine unless provided thymidine/dTMP, and deoB- cells cannot use thymidine as carbon source.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51, C67-C68 explain the metabolic logic of deoB inactivation. The biochemical function (C48, C68) is established knowledge. The interpretation (C49) is logical and supported by citation. The experimental validation (C50-C51) with different substrates provides strong mechanistic support. The regulatory context (C67) explains why this creates a conflict. This is well-reasoned and experimentally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "7eeb8859-b5b3-48bf-a72b-a1ab42971b95",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Proteomics and metabolomics analysis reveals that evolution partially reverses the global perturbations caused by DHFR inactivation. PCA shows evolved D27G clusters with wild type while folAmix-dependent strains cluster separately. Significant anticorrelation exists between changes upon evolution and initial changes from mutation, strongest for evolved D27G. The same metabolic pathways are enriched in both na\u00efve and evolved strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53, C56-C57, and C83 describe systems-level changes. The PCA analysis (C52) provides global perspective. The anticorrelation analysis (C53, C56) is quantitative and statistically significant. The pathway enrichment (C57) shows consistency. The interpretation that evolution partially reverses mutation effects (C83) is well-supported. The strongest reversal in D27G (which restored DHFR function) validates the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "f047ada8-3229-44a4-8fce-da6f2ed915b5",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Evolved D27F and D27N strains show increased expression of glycolysis and fermentation proteins, suggesting metabolic shift to compensate for blocked deoxyribose degradation. Decreased expression of DNA restriction/methylation and ribose uptake proteins is observed. Metabolite-induced rewiring includes upregulation of glycolysis proteins and changes in purR operon regulation via hypoxanthine accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55, C60-C61 describe specific proteomic changes in evolved strains. The functional enrichment analysis (C54-C55) is statistically validated. The mechanistic interpretations (C60-C61) are logical - blocking one glycolytic pathway leads to compensation in the main pathway, and metabolite changes drive regulatory responses. However, these are somewhat inferential (C60-C61 include INFERENCE in evidence_type), and direct validation of the proposed mechanisms is limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "7e999d11-f4a5-4fef-b2fb-df5a48cdde2d",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Purine supplementation strongly inhibits growth of na\u00efve D27F strain while pyrimidines have minimal effect. In evolved D27F strain, the inhibitory effects of purine supplementation are relaxed or absent, indicating adaptation has relieved metabolite imbalance toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 describe unexpected metabolite supplementation effects. The experiments (N=3) show clear differential effects of purines vs pyrimidines and na\u00efve vs evolved strains. The interpretation that this reflects metabolite imbalance and regulatory responses is reasonable. However, the mechanism is not fully elucidated - the authors suggest regulatory responses and toxic effects but don't definitively identify the cause.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "03b0efe3-f1df-4c8a-972c-d1e17b8f7e98",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study is contextualized within prior work on evolution of essential genes, DHFR evolution, antibiotic resistance, and metabolic rewiring. Citations establish that: thyA mutations confer trimethoprim resistance in clinical isolates; essential genes evolve slower; some essential gene knockouts can recover viability; DHFR accumulates resistance mutations; and the authors previously developed a biophysical fitness model for DHFR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64, C66, C69-C75 provide literature context. These are citation-based claims establishing prior knowledge. The citations appear appropriate and accurately represented. Claim C64 about L44Q affecting activity is relevant to interpreting the D27N background mutation. The prior work on DHFR fitness models (C74) is important for the prediction in C25. These contextual claims are well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "e1c18378-4b03-4568-ae7d-ff70ed66fe09",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Transversions are generally regarded to be less likely than transitions, making the fixation of the G27C mutation (a transversion) in three trajectories surprising.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 states general knowledge about mutation frequencies. This is established in molecular biology - transversions are typically less frequent than transitions. The authors use this to highlight the surprising nature of the G27C fixation. This is accurate background knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    },
+    {
+      "id": "c5d35782-0d0f-4e12-a418-8408c5ab20e6",
+      "content_id": "ce0105a8-b955-45f5-be22-f252a8806a0f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The main conclusion is that multiple evolutionary pathways converged to a suboptimal solution (thyA/deoB inactivation leading to folAmix dependence) rather than the optimal solution (DHFR reversion to full independence) due to the high accessibility of loss-of-function mutations that block the path to the highest fitness peak.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is the central conclusion. It is well-supported by the data: 12/13 trajectories that didn't die converged to thyA/deoB inactivation (suboptimal, folAmix-dependent) while only 3/13 achieved DHFR reversion (optimal, fully independent). The interpretation about accessibility vs. height of fitness peaks is logical - there are many ways to inactivate a gene but few ways to restore function. This represents a significant conceptual contribution about evolutionary dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:29:30.952230Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fc3b4d3a-bd26-4fd2-84cc-da1e617c9310",
+      "result_id": "a7bebbac-c228-43dd-a588-67e9b0e02532"
+    },
+    {
+      "claim_id": "67b44b23-f73a-4905-b580-c842d60c58a1",
+      "result_id": "a7bebbac-c228-43dd-a588-67e9b0e02532"
+    },
+    {
+      "claim_id": "3ca8c774-eaa4-4b5c-b921-3c4ac2a14035",
+      "result_id": "a7bebbac-c228-43dd-a588-67e9b0e02532"
+    },
+    {
+      "claim_id": "2e8696bd-b1d1-44a8-a48d-af3603feecef",
+      "result_id": "a7bebbac-c228-43dd-a588-67e9b0e02532"
+    },
+    {
+      "claim_id": "6af9fb8d-9067-4d67-a700-0491db9b3dfb",
+      "result_id": "3deb158e-e8ef-4b7d-b595-7d97df1c9743"
+    },
+    {
+      "claim_id": "ed0823cb-487d-4fea-865f-7d407f29de5c",
+      "result_id": "3deb158e-e8ef-4b7d-b595-7d97df1c9743"
+    },
+    {
+      "claim_id": "275318fe-ec08-496b-879b-006305622291",
+      "result_id": "3deb158e-e8ef-4b7d-b595-7d97df1c9743"
+    },
+    {
+      "claim_id": "111f38a2-c08a-4360-af0d-e25d9a3f4fb2",
+      "result_id": "3deb158e-e8ef-4b7d-b595-7d97df1c9743"
+    },
+    {
+      "claim_id": "b8ed3cac-e58a-4150-8f9d-9307aeae1a83",
+      "result_id": "3deb158e-e8ef-4b7d-b595-7d97df1c9743"
+    },
+    {
+      "claim_id": "3c050fb4-4601-406d-873d-f79509bc92c8",
+      "result_id": "3deb158e-e8ef-4b7d-b595-7d97df1c9743"
+    },
+    {
+      "claim_id": "d9f708c9-52de-4ca0-802e-77ea3b165353",
+      "result_id": "3deb158e-e8ef-4b7d-b595-7d97df1c9743"
+    },
+    {
+      "claim_id": "8a125cc2-0b0d-43a7-b0be-a684688e0b6b",
+      "result_id": "3deb158e-e8ef-4b7d-b595-7d97df1c9743"
+    },
+    {
+      "claim_id": "a9753a51-2d17-4730-a1e0-f38c734c3c13",
+      "result_id": "7758beee-d0b3-433c-ad92-e23f7c0caaaf"
+    },
+    {
+      "claim_id": "75f08dd5-6ed9-4206-b88e-aa2e6c9c572e",
+      "result_id": "7758beee-d0b3-433c-ad92-e23f7c0caaaf"
+    },
+    {
+      "claim_id": "56caa14f-4727-449a-beab-fcbe049a96c6",
+      "result_id": "7758beee-d0b3-433c-ad92-e23f7c0caaaf"
+    },
+    {
+      "claim_id": "fe027ded-1bb3-497b-b030-110b4c419f11",
+      "result_id": "7758beee-d0b3-433c-ad92-e23f7c0caaaf"
+    },
+    {
+      "claim_id": "b0e5ff5d-94ab-4460-a004-74a9907f6ba2",
+      "result_id": "7758beee-d0b3-433c-ad92-e23f7c0caaaf"
+    },
+    {
+      "claim_id": "23961d33-68d1-416f-b858-392aaf4b2f69",
+      "result_id": "7758beee-d0b3-433c-ad92-e23f7c0caaaf"
+    },
+    {
+      "claim_id": "33fe60ba-8fb6-4565-a555-a7f96ba9f69f",
+      "result_id": "b9b97a62-dacc-40d3-8ec3-91209d390e5b"
+    },
+    {
+      "claim_id": "d8e3fb8d-7d43-4d25-af80-d538063b10bd",
+      "result_id": "b9b97a62-dacc-40d3-8ec3-91209d390e5b"
+    },
+    {
+      "claim_id": "da1d241d-d822-4094-818e-48ce092bebaa",
+      "result_id": "b9b97a62-dacc-40d3-8ec3-91209d390e5b"
+    },
+    {
+      "claim_id": "60adc4ef-0cfa-4cd0-a643-d37f66c3fcbb",
+      "result_id": "b9b97a62-dacc-40d3-8ec3-91209d390e5b"
+    },
+    {
+      "claim_id": "9ad6342c-6c85-4203-a8a2-101e7f0de66c",
+      "result_id": "b9b97a62-dacc-40d3-8ec3-91209d390e5b"
+    },
+    {
+      "claim_id": "0a66ab4a-9f9c-4458-88e8-10454aa4e1a9",
+      "result_id": "b14bcef0-4349-46a2-b1b2-b7c6f1b46ec4"
+    },
+    {
+      "claim_id": "3693316b-97ef-4192-9013-bb5f9bc012ef",
+      "result_id": "b14bcef0-4349-46a2-b1b2-b7c6f1b46ec4"
+    },
+    {
+      "claim_id": "80122b85-c314-4f78-8f85-c8df64bfae05",
+      "result_id": "b14bcef0-4349-46a2-b1b2-b7c6f1b46ec4"
+    },
+    {
+      "claim_id": "7ee6ab33-4760-4792-882b-e5a4b1d5241d",
+      "result_id": "b14bcef0-4349-46a2-b1b2-b7c6f1b46ec4"
+    },
+    {
+      "claim_id": "d576d021-0702-49df-a8d5-e0d8578588c7",
+      "result_id": "b14bcef0-4349-46a2-b1b2-b7c6f1b46ec4"
+    },
+    {
+      "claim_id": "d41b98b4-b3ed-4edd-8e0d-0bc7161df30c",
+      "result_id": "b14bcef0-4349-46a2-b1b2-b7c6f1b46ec4"
+    },
+    {
+      "claim_id": "5051bee1-f3c7-4ae7-8d32-983eba172c3f",
+      "result_id": "b14bcef0-4349-46a2-b1b2-b7c6f1b46ec4"
+    },
+    {
+      "claim_id": "70816c20-2090-42b7-959d-2eb0d5a9244d",
+      "result_id": "bfd37673-3d7c-4c8d-9530-2769aa71629e"
+    },
+    {
+      "claim_id": "8a7ba8dc-78f7-4cbe-92ae-4fccac39785c",
+      "result_id": "bfd37673-3d7c-4c8d-9530-2769aa71629e"
+    },
+    {
+      "claim_id": "1bb212cb-70aa-4b23-b96a-93ee366bf5ca",
+      "result_id": "bfd37673-3d7c-4c8d-9530-2769aa71629e"
+    },
+    {
+      "claim_id": "99392603-b6eb-4644-a3db-70530c5383dd",
+      "result_id": "bfd37673-3d7c-4c8d-9530-2769aa71629e"
+    },
+    {
+      "claim_id": "e8c89f1f-aa10-4778-8840-63744bfccf9b",
+      "result_id": "d68ca03b-735e-4001-adc5-b3a878ab53e0"
+    },
+    {
+      "claim_id": "a9dad7ca-b657-442f-b827-3858c64eb870",
+      "result_id": "d68ca03b-735e-4001-adc5-b3a878ab53e0"
+    },
+    {
+      "claim_id": "5332c3a0-9ac8-4c73-9f0a-95226e4656f1",
+      "result_id": "d68ca03b-735e-4001-adc5-b3a878ab53e0"
+    },
+    {
+      "claim_id": "b7da025f-1223-45a4-8b7a-5d87118644ea",
+      "result_id": "d68ca03b-735e-4001-adc5-b3a878ab53e0"
+    },
+    {
+      "claim_id": "07957a1a-42cb-4a33-ac30-62ed1fdfe8fc",
+      "result_id": "d68ca03b-735e-4001-adc5-b3a878ab53e0"
+    },
+    {
+      "claim_id": "4a937091-803e-44d7-ad59-16331707959f",
+      "result_id": "d68ca03b-735e-4001-adc5-b3a878ab53e0"
+    },
+    {
+      "claim_id": "5d5d73da-ed84-426b-b208-34443f2283a4",
+      "result_id": "d68ca03b-735e-4001-adc5-b3a878ab53e0"
+    },
+    {
+      "claim_id": "1d05086e-a6c3-4ac8-ba17-a6353c1c5184",
+      "result_id": "d68ca03b-735e-4001-adc5-b3a878ab53e0"
+    },
+    {
+      "claim_id": "7cddc7ab-04b4-4310-ad95-c4d5372d0374",
+      "result_id": "92eba4c8-7718-4aa6-9c97-519839f9b7ef"
+    },
+    {
+      "claim_id": "d9d24b2f-e7c5-44b2-bb1c-9905c8d369ca",
+      "result_id": "92eba4c8-7718-4aa6-9c97-519839f9b7ef"
+    },
+    {
+      "claim_id": "0db0504a-57b5-49ab-864e-89b61b16274d",
+      "result_id": "92eba4c8-7718-4aa6-9c97-519839f9b7ef"
+    },
+    {
+      "claim_id": "16bfc19a-598d-4f16-9804-edc1cef22c3f",
+      "result_id": "baebbabc-f460-4fbb-ae70-1fbdf46772a8"
+    },
+    {
+      "claim_id": "9ee48b93-776a-4ea2-b862-4cf9ae2dd6d1",
+      "result_id": "baebbabc-f460-4fbb-ae70-1fbdf46772a8"
+    },
+    {
+      "claim_id": "2e33dbcb-f163-4292-8133-9928771a81e9",
+      "result_id": "baebbabc-f460-4fbb-ae70-1fbdf46772a8"
+    },
+    {
+      "claim_id": "77ea4b63-e667-4fe0-8d19-465109405a9a",
+      "result_id": "4a98e20d-ad76-459a-b88d-be02d982a6d3"
+    },
+    {
+      "claim_id": "075764f9-0293-4a4f-a61c-ce7a75eb34ac",
+      "result_id": "4a98e20d-ad76-459a-b88d-be02d982a6d3"
+    },
+    {
+      "claim_id": "8cabc7b2-89b7-4222-9ace-9325a2163dd4",
+      "result_id": "4a98e20d-ad76-459a-b88d-be02d982a6d3"
+    },
+    {
+      "claim_id": "4946ede1-c0ae-4dd8-8a7c-6ebf81341d9c",
+      "result_id": "4a98e20d-ad76-459a-b88d-be02d982a6d3"
+    },
+    {
+      "claim_id": "3635aae6-e05a-4094-a890-b5ada001b0ac",
+      "result_id": "4a98e20d-ad76-459a-b88d-be02d982a6d3"
+    },
+    {
+      "claim_id": "4afc84ee-cd6f-4195-a3b3-6a8a6672953b",
+      "result_id": "4a98e20d-ad76-459a-b88d-be02d982a6d3"
+    },
+    {
+      "claim_id": "ef1fa6b3-408a-4e1e-ba8c-6ec843dbe5da",
+      "result_id": "dc65145e-7304-4c56-b009-eb7abecefb09"
+    },
+    {
+      "claim_id": "e4e31522-5bbc-42f7-a764-b265647888c9",
+      "result_id": "dc65145e-7304-4c56-b009-eb7abecefb09"
+    },
+    {
+      "claim_id": "87942a24-6a73-4f03-9c57-ad6e5570de86",
+      "result_id": "dc65145e-7304-4c56-b009-eb7abecefb09"
+    },
+    {
+      "claim_id": "3c4beb0b-21c8-4ba9-b59f-b4b1b426d2c9",
+      "result_id": "dc65145e-7304-4c56-b009-eb7abecefb09"
+    },
+    {
+      "claim_id": "69891d44-0a69-4ef3-90ca-a4b41f7449bb",
+      "result_id": "dc65145e-7304-4c56-b009-eb7abecefb09"
+    },
+    {
+      "claim_id": "08ed991a-95c5-453c-934b-a37e5af83dd9",
+      "result_id": "dc65145e-7304-4c56-b009-eb7abecefb09"
+    },
+    {
+      "claim_id": "f3b2e641-80d8-43cb-9cc8-49bc74eb2b4c",
+      "result_id": "7eeb8859-b5b3-48bf-a72b-a1ab42971b95"
+    },
+    {
+      "claim_id": "0fe3294e-a423-42ae-a0a8-7447b8945a96",
+      "result_id": "7eeb8859-b5b3-48bf-a72b-a1ab42971b95"
+    },
+    {
+      "claim_id": "2a366786-c726-48b0-84f0-0d5a3f69a4bb",
+      "result_id": "7eeb8859-b5b3-48bf-a72b-a1ab42971b95"
+    },
+    {
+      "claim_id": "bd44efef-363a-4467-b688-1eba77e9c906",
+      "result_id": "7eeb8859-b5b3-48bf-a72b-a1ab42971b95"
+    },
+    {
+      "claim_id": "1a36100d-51eb-4edc-9eca-6416382cc66b",
+      "result_id": "7eeb8859-b5b3-48bf-a72b-a1ab42971b95"
+    },
+    {
+      "claim_id": "75fa4952-39f9-448e-9806-c739d5d53a4f",
+      "result_id": "f047ada8-3229-44a4-8fce-da6f2ed915b5"
+    },
+    {
+      "claim_id": "c98252c2-fdee-4f24-ae04-ea89bd43db78",
+      "result_id": "f047ada8-3229-44a4-8fce-da6f2ed915b5"
+    },
+    {
+      "claim_id": "bae5a33f-48a4-43bd-b242-e413d837fee2",
+      "result_id": "f047ada8-3229-44a4-8fce-da6f2ed915b5"
+    },
+    {
+      "claim_id": "03aab192-1b86-44e9-a78d-c43d6428894a",
+      "result_id": "f047ada8-3229-44a4-8fce-da6f2ed915b5"
+    },
+    {
+      "claim_id": "2479d162-0b9c-4157-a2fa-b2fcba8aada6",
+      "result_id": "7e999d11-f4a5-4fef-b2fb-df5a48cdde2d"
+    },
+    {
+      "claim_id": "9d7a57b8-e0d9-4e82-852b-7de89f7b06f3",
+      "result_id": "7e999d11-f4a5-4fef-b2fb-df5a48cdde2d"
+    },
+    {
+      "claim_id": "29fe9be9-e308-4402-a59d-bd567acf2d56",
+      "result_id": "03b0efe3-f1df-4c8a-972c-d1e17b8f7e98"
+    },
+    {
+      "claim_id": "be566d31-6836-4ea6-b5ee-bd06368471ac",
+      "result_id": "03b0efe3-f1df-4c8a-972c-d1e17b8f7e98"
+    },
+    {
+      "claim_id": "3bad148b-8a1a-4b11-bcda-4fcd9ee171dc",
+      "result_id": "03b0efe3-f1df-4c8a-972c-d1e17b8f7e98"
+    },
+    {
+      "claim_id": "cb7e791a-e6c4-4073-b238-343dba44311c",
+      "result_id": "03b0efe3-f1df-4c8a-972c-d1e17b8f7e98"
+    },
+    {
+      "claim_id": "99b3c62a-78bf-4d48-be76-48249798bd82",
+      "result_id": "03b0efe3-f1df-4c8a-972c-d1e17b8f7e98"
+    },
+    {
+      "claim_id": "82faaaa2-a5a3-46ed-ace7-459a8f772580",
+      "result_id": "03b0efe3-f1df-4c8a-972c-d1e17b8f7e98"
+    },
+    {
+      "claim_id": "7af133f3-1ef3-48d7-8825-0bde80d61c81",
+      "result_id": "03b0efe3-f1df-4c8a-972c-d1e17b8f7e98"
+    },
+    {
+      "claim_id": "c3fa8078-f6e7-403a-ba94-8ace920c336b",
+      "result_id": "03b0efe3-f1df-4c8a-972c-d1e17b8f7e98"
+    },
+    {
+      "claim_id": "737611e5-6af8-4987-9296-4c59be9e8084",
+      "result_id": "03b0efe3-f1df-4c8a-972c-d1e17b8f7e98"
+    },
+    {
+      "claim_id": "7a80f6ab-8a34-443e-a1df-3c4c0f098209",
+      "result_id": "03b0efe3-f1df-4c8a-972c-d1e17b8f7e98"
+    },
+    {
+      "claim_id": "e01bd69b-8b36-4c53-871d-0ed3a7511351",
+      "result_id": "03b0efe3-f1df-4c8a-972c-d1e17b8f7e98"
+    },
+    {
+      "claim_id": "8fc5b9d5-504a-4239-a2a6-a5c218f06918",
+      "result_id": "e1c18378-4b03-4568-ae7d-ff70ed66fe09"
+    },
+    {
+      "claim_id": "bd18dd47-3d72-4df3-adef-6520fc8af8d4",
+      "result_id": "c5d35782-0d0f-4e12-a418-8408c5ab20e6"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C33",
+      "C40",
+      "C74"
+    ],
+    "result": "In overloaded muscle induced by tenotomy, approximately 70% of proliferating MuSCs (Ki67+) are MyoD-negative, indicating that most MuSCs proliferate without MyoD expression, which differs from the pattern observed in regenerating muscle where MuSCs immediately express MyoD upon activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30, C31, C33 provide converging quantitative evidence from both tissue sections and isolated myofibers showing ~70% of Ki67+ MuSCs are MyoD-negative in overloaded muscle. This is contrasted with cultured myofibers (C32) where almost all Pax7+ cells express both MyoD and Ki67, supporting the conclusion (C40, C74) that proliferation mechanisms differ between overload and injury contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43",
+      "C44",
+      "C48",
+      "C56"
+    ],
+    "result": "MuSCs in overloaded muscle sustain HeyL expression (but not Hey1) to suppress MyoD expression, which is critical for effective MuSC proliferation. RNA-seq and qRT-PCR data show sustained HeyL expression in overloaded MuSCs at 4 days after tenotomy, contrasting with drastically decreased expression in regenerating muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 provide direct molecular evidence from RNA-seq and qRT-PCR showing sustained HeyL (but not Hey1) expression in overloaded MuSCs. Claims C3, C48, C56 connect this sustained expression to MyoD suppression, supported by increased MyoD in HeyL-KO mice (C49-C51). The mechanistic link is well-supported by converging genetic and expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C85",
+      "C86"
+    ],
+    "result": "HeyL-knockout mice show context-dependent phenotypes: normal regeneration after injury but impaired MuSC proliferation in overloaded muscle. In the tenotomy model, HeyL-KO mice exhibit increased MyoD+Ki67+ cells, decreased MyoD-Ki67+ cells, and reduced total Pax7+ cell numbers, while maintaining similar Ki67+ frequency, indicating that HeyL loss biases MuSCs toward differentiation rather than affecting activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C55 establish no defect in injury models (supported by Figure 4\u2014supplement 2). Claims C49-C54 provide detailed quantitative evidence of altered MuSC populations in HeyL-KO mice after tenotomy, with increased MyoD expression and decreased proliferation. The interpretation that HeyL affects proliferation but not activation (C54) is logically supported by similar Ki67+ frequencies but lower total cell numbers. Claims C85-C86 synthesize these findings into the context-dependent conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C65"
+    ],
+    "result": "HeyL-knockout mice harbor fewer new MuSC-derived myonuclei in overloaded muscle. EdU labeling experiments show that HeyL-KO mice have <50% as many new EdU+ myonuclei at 7 days after tenotomy compared to controls, resulting from impaired MuSC expansion due to increased MyoD expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 provide quantitative EdU labeling data showing reduced incorporation of new myonuclei in HeyL-KO mice. The increase from ~20 to ~60 EdU+ myonuclei between 4 and 7 days in controls (C58, C59) demonstrates active fusion, while HeyL-KO mice show <50% of this incorporation (C60). Claim C65 appropriately links this to the impaired MuSC expansion documented in earlier claims. The experimental design with EdU labeling is appropriate for tracking new myonuclei.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C119"
+    ],
+    "result": "Loss of HeyL causes blunted muscle hypertrophy at late stages (9 weeks) after synergist ablation. HeyL-KO mice show reduced muscle weight (1.07 vs 1.26 mg/g BW in controls) and smaller myofiber cross-sectional area (1443 vs 1794 \u03bcm\u00b2 in controls) after SA, with a trend toward fewer myonuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 provide quantitative measurements of muscle weight and myofiber size showing significant reductions in HeyL-KO mice at 9 weeks after SA. Claim C72 notes a trend toward fewer myonuclei (though not reaching statistical significance based on the figure). Claims C6, C73, C119 appropriately conclude blunted hypertrophy. The long-term timepoint (9 weeks) is appropriate for assessing cumulative effects of reduced myonuclear accretion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C117",
+      "C121"
+    ],
+    "result": "The decrease in new myonuclei in HeyL-KO mice does not correlate with muscle weight at early timepoints (1 week after tenotomy), indicating that early-stage muscle hypertrophy does not require MuSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C117 show no difference in muscle weight at 1 week despite reduced myonuclear incorporation, supported by data in Figure 5D. Claim C121 appropriately infers that early hypertrophy is MuSC-independent. This is consistent with cited work (McCarthy et al., 2011) and the later emergence of phenotypes at 9 weeks (C119-C120). The temporal dissociation between myonuclear incorporation and muscle weight changes is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C75",
+      "C87"
+    ],
+    "result": "The MuSC-proliferation mechanism differs between overloaded and regenerating muscle, with sustained HeyL expression being critical specifically for overload-induced proliferation but not for injury-induced regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is supported by the differential requirements for HeyL (normal regeneration in C4, C55 vs. impaired overload response in C5, C49-C54), different MyoD expression patterns (C2, C33 vs. C32), and different HeyL expression patterns (C43-C44 vs. C24). Claims C7, C8, C75, C87 appropriately synthesize these observations into the central thesis. The evidence converges from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The tenotomy model induces significant muscle hypertrophy with minimal muscle damage. Muscle weight increases significantly, but areas of muscle damage are rarely detected, and increased Pax7+ cell numbers are observed even under these conditions of diminished damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 establish the tenotomy model characteristics with data from Figure 1A-C showing muscle weight increase and minimal damage. Claim C29 documents increased Pax7+ cells despite minimal damage. This establishes the experimental context for distinguishing overload-induced from damage-induced MuSC responses. The H&E staining across multiple sections (Figure 1\u2014supplement 1) supports the minimal damage claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C94",
+      "C95"
+    ],
+    "result": "MuSC activation in overloaded muscle occurs broadly across myofibers rather than in restricted areas. Analysis of isolated myofibers shows that >80% of overloaded myofibers harbor <40% quiescent MuSCs, and ~60% harbor >40% MyoD-Ki67+ cells, indicating that almost all myofibers respond to overload rather than just locally damaged areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 provide quantitative distribution data from isolated myofibers (Figure 2D-F) showing widespread MuSC activation. Claims C39, C94, C95 appropriately infer that activation is not restricted to damaged areas. The use of isolated myofibers is methodologically sound for excluding damaged fibers that would be lost during preparation, strengthening the conclusion that damage is not required for activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "MuSCs proliferate in different spatial contexts in overloaded versus regenerating muscle. In overloaded muscle, MuSCs proliferate between myofibers and the basal lamina, whereas in regenerating muscle they proliferate beneath retained basal lamina ('ghost fibers') where damaged myofibers have been removed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 and C76 document MuSCs between basal lamina and myofibers in overload (supported by images in Figure 3A-B). Claims C77-C78 cite established literature for the different contexts in regeneration and culture. Claim C79 speculates that environmental differences may explain gene expression differences, which is reasonable but not directly tested. The spatial observation is well-documented, though the mechanistic connection to gene expression remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Expression of canonical Notch target genes (Col5a1, Col5a3, Col6a1) in overloaded MuSCs is reduced at 2 days but returns to quiescent levels at 4 days after tenotomy, when MuSCs are actively proliferating. MuSCs also express other Notch-related genes and proliferate on myofibers presumed to express Notch ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 provides qRT-PCR data (Figure 3E) showing temporal expression patterns of Notch target genes. Claims C88-C90 document expression of Notch-related genes and collagen genes (citing Baghdadi et al., 2018 for their identification as Notch targets) and note MuSC location on myofibers. The data support active Notch signaling at 4 days, though direct measurement of Notch activity (e.g., NICD levels) is not provided. The inference is reasonable but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In overloaded muscle, MuSC activation (Ki67 expression) is initiated at 2 days after tenotomy, and proliferating and differentiating MuSCs co-exist for extended periods, with gradually increasing numbers of MuSC-derived myonuclei until 14 days. RNA-seq data showing elevated expression of both cell cycle genes and myogenin support this model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 describe temporal kinetics supported by data in Figure 7\u2014supplement 1. Claim C84 cites RNA-seq data (Figure 3C) showing concurrent expression of proliferation and differentiation markers. This establishes a prolonged, overlapping process distinct from the more synchronized waves in regeneration. The molecular and temporal data converge to support the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "RNA-seq data indicate increased expression of cell cycle-related genes and sustained expression of Myf5 in overloaded MuSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is directly supported by RNA-seq data shown in Figure 3C (though the text references Figure 3B, likely a typo). The heatmap clearly shows elevated expression of cell cycle genes and sustained Myf5 expression in overloaded MuSCs compared to sham controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "EdU+ myonuclei are rarely detected in sham-operated muscle, indicating that changes in EdU+ myonuclei numbers are due to MuSC fusion with myofibers in response to overload rather than baseline turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 establish the specificity of the EdU labeling to overload-induced fusion, supported by data in Figure 5C showing minimal EdU+ myonuclei in sham controls. This is an important control demonstrating that the observed myonuclear incorporation is overload-specific rather than reflecting normal turnover.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Expression of Notch effector genes (Hey1 vs. HeyL) is differentially regulated in MuSCs, with HeyL sustained and Hey1 decreased in overloaded MuSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by the differential expression patterns documented in C43-C44 (RNA-seq and qRT-PCR data in Figures 3C-D). The authors appropriately note this as novel, though the claim of being 'first evidence' is difficult to verify without comprehensive literature review. The observation itself is well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "MuSC activation is unaffected by HeyL loss, as the percentage of Ki67+ cells among MuSCs in HeyL-KO mice is similar to controls, suggesting that HeyL specifically affects proliferation/differentiation balance rather than the initial activation from quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by data in Figure 4E showing similar Ki67+ frequencies in HeyL-KO and control mice. Combined with the reduced total Pax7+ numbers (C53), this supports the interpretation that activation is normal but subsequent proliferation is impaired. The logic is sound, though the distinction between activation and early proliferation may be somewhat artificial given the overlapping nature of these processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "The addition of new MuSC-derived myonuclei is responsible for long-term increases in myofiber mass during hypertrophy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is inferred from the temporal dissociation between myonuclear incorporation and muscle weight changes: no effect at 1 week (C117) but significant effects at 9 weeks (C119). This supports the myonuclear domain theory (C111) and is consistent with cited literature (C120). The inference is logical, though the manuscript does not directly measure myonuclear domain size or protein synthesis rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims establishing the roles of MuSCs in muscle regeneration and hypertrophy, the function of myogenic regulatory factors, Notch signaling components, and previous findings on Hey1/HeyL knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C9-C25) represent established knowledge from the literature, supported by appropriate citations. They provide necessary context for the current work. The citations appear accurate based on the references provided, though detailed verification of each cited claim is beyond the scope of this review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C32",
+      "C34"
+    ],
+    "result": "Control experiments establish expected MuSC behavior: on 3-day cultured myofibers, MyoD and Ki67 are expressed by almost all Pax7+ cells, while 93% of Pax7+ cells on sham-operated myofibers are quiescent (MyoD-Ki67-).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C34 provide important positive and negative controls, respectively, supported by data in Figure 2B-C. These establish the expected patterns in culture and quiescent conditions, providing context for interpreting the overload results. The data are consistent with cited literature (C32 cites Ogawa et al., 2015; Zammit et al., 2004).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "MuSCs proliferate under activation of canonical Notch signaling in the overload mouse model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 infers active Notch signaling from sustained expression of Notch target genes (C42-C45). While the gene expression data support this inference, direct evidence of Notch pathway activation (e.g., NICD levels, Rbp-J binding, or reporter assays) is not provided. The authors acknowledge this limitation in the Discussion, noting that 'real-time imaging of Notch signaling is challenging.' The inference is reasonable but remains indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C80",
+      "C81",
+      "C92",
+      "C93",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C120"
+    ],
+    "result": "Discussion claims citing literature on muscle hypertrophy mechanisms, MuSC requirements, inflammatory responses, mechanical signaling, and myonuclear domain theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C66-C67, C80-C81, C92-C93, C103, C105-C120) represent literature citations used in the Discussion to contextualize the findings. They appear to accurately represent the cited work, though detailed verification of each citation is beyond the scope of this review. These provide important context for interpreting the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "MuSCs can become activated, proliferate, and supply new nuclei even in environments with minimal myofiber damage, indicating that substantial damage is unnecessary for MuSC activation/proliferation in hypertrophic muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 synthesize observations from the tenotomy model showing MuSC activation with minimal damage (C28-C29) and widespread activation across myofibers (C35-C39, C94-C95). The conclusion is well-supported by the data, though it should be noted that 'minimal' damage does not mean 'no' damage, and the sensitivity of damage detection methods (H&E staining) has limitations. The use of isolated myofibers strengthens the argument by excluding overtly damaged fibers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C104"
+    ],
+    "result": "Discussion of potential mechanisms for MuSC activation in overloaded muscle, including the possibility that HGF/c-Met signaling may be involved, though the specific mechanisms remain unclear and require further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 acknowledge that activation mechanisms remain unclear. Claims C102 and C104 speculate about potential roles for HGF/c-Met signaling based on literature (C102-C103). Claim C104 proposes a testable hypothesis. These are appropriate speculations for the Discussion, but they represent future work rather than supported conclusions from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "Speculation that identifying factors and mechanisms inducing MuSC activation/proliferation under HeyL expression could lead to therapeutic strategies for muscle-wasting diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C123 is forward-looking speculation about potential therapeutic applications. While the findings do suggest HeyL as a potential target, the path from this basic science observation to therapeutic application is long and uncertain. This is appropriate speculation for a Discussion but does not represent a supported conclusion from the current work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Spen is absolutely required for X chromosome inactivation (XCI) at the level of chromatin accessibility. Following 48 hr of Xist induction, WT cells showed loss of chromatin accessibility across the X chromosome, while two independent Spen KO clones showed no reproducible silencing at any X chromosome site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are well-supported by ATAC-seq data from two independent Spen KO clones showing complete failure of XCI. The data demonstrate reproducibility across clones and are consistent with prior knowledge about Spen's essential role in XCI (C1, C36-C38, C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Spen loss leads to chromatin de-repression at 288 autosomal sites that are enriched for ERVK transposable elements, specifically RLTR13, RLTR9, and ETn families. These sites are predominantly distal to transcriptional start sites in heterochromatic, gene-poor regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 are supported by ATAC-seq data showing differential accessibility in two independent Spen KO clones and genome ontology enrichment analysis (HOMER). The enrichment for specific ERVK families is reproducible and statistically significant, though the absolute number of sites (288) is relatively small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "ERVK elements de-repressed in Spen KO show dramatic loss of repressive H3K9me3 marks, gain of active histone modifications (H3K27Ac and H3K4me3), and increased RNA transcription. ChIP-seq peaks losing H3K9me3 or gaining H3K27Ac are enriched for ERVKs including ETn elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are well-supported by ChIP-seq and RNA-seq data showing coordinated changes in chromatin state and transcription at ERVK loci. The data demonstrate that Spen loss leads to chromatin de-repression at the level of histone modifications and RNA expression, consistent with Spen's known role as a co-repressor (C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "Only a subset of ERVK families are affected by Spen loss, with genome-wide expression showing modest increases particularly in ETnERV2s. ERVKs upregulated in Spen KO have diverged less from the ancestral sequence than those not upregulated, indicating that Spen targets more recent ERVK insertions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C75-C76 are supported by RNA-seq data and RepeatMasker divergence analysis. The finding that Spen targets younger, less diverged ERVKs is consistent with a surveillance mechanism targeting more intact, potentially mobile elements (C74, C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Spen KO mESCs show increased Oct4 occupancy at de-repressed ERVK elements, downregulation of early differentiation genes, and failure to differentiate. Spen KO cells maintain Oct4 expression and mESC morphology despite LIF removal and show massive cell death during directed differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 are supported by ChIP-seq, RNA-seq, GO term analysis, qRT-PCR, immunofluorescence, and cell viability data. The data demonstrate that Spen loss disrupts the pluripotency network and blocks differentiation, though the mechanistic link between ERVK de-repression and differentiation failure requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Spen RRM2-4 binds to 29,625 sites on mRNAs/lncRNAs (4,732 transcripts) and 7,812 sites on TE RNAs (2,267 TEs), with Xist being the top bound gene. Among TEs, MMETn-int, RLTR13G, and ETnERV-int families show the highest binding, and RRM-bound ERVKs show modestly increased expression in Spen KO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C92 are supported by irCLIP-seq data from multiple experiments (RRM2-4, full-length Spen, different cell lines). The data demonstrate direct RNA binding by Spen to both Xist and ERVK RNAs, though the modest expression changes (C92) suggest additional regulatory mechanisms may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Spen RRMs bind to ERV RNAs and Xist A-repeat through recognition of RNA secondary structure rather than sequence. Both bind to single-stranded regions adjacent to double-stranded regions, specifically single-stranded bulges within larger duplexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C101 are supported by motif analysis showing AU enrichment but no sequence homology to A-repeat (C93-C94), icSHAPE structural data (C97-C99), and prior structural studies (C95-C96). The structural similarity between Xist A-repeat and ERVK binding sites provides a mechanistic basis for Spen's dual function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Spen RRM2-4 binds ERV transcripts and Xist A-repeat with similar affinity (KD = 53-140 nM), higher than SRA (KD = 450 nM). ERV RNA competes with Xist A-repeat for binding, and the same RRM3 residues are critical for binding both RNAs, demonstrating that Spen recognizes these RNAs through the same binding mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C110 are supported by fluorescence anisotropy binding assays, RRM3 mutant analysis, and competition assays. The data provide strong biochemical evidence that Spen binds ERV RNAs and Xist A-repeat through the same structural recognition mechanism with similar affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Spen's RNA binding domains show no evidence of branch-specific evolution in the eutherian clade, suggesting that Xist RNA evolved toward Spen's pre-existing functionality rather than Spen evolving to bind Xist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by evolutionary analysis using PAML showing no accelerated evolution of Spen RRM domains in eutherians. This supports the hypothesis that Xist co-opted pre-existing Spen function, though C112 is somewhat speculative in its interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Insertion of a 9x ERV array into A-repeat-deficient Xist (Xist-ERV) rescues Spen binding but causes cis-restricted silencing of the Xist transgene itself. Xist-ERV expression is silenced in a Spen-dependent manner and can be de-repressed by HDAC inhibitors or Spen knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 are supported by RIP-qPCR showing Spen binding (C113), qPCR showing lack of induction (C114), genetic analysis ruling out promoter defects (C115), and rescue experiments with HDAC inhibitors (C116, C118) and Spen knockdown (C117). The data demonstrate that ERV insertion confers Spen-dependent silencing in cis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "While Xist-ERV recruits Spen and silences its own locus in cis, it fails to silence X-linked genes in trans. This suggests that ERV insertion into proto-Xist was an early evolutionary step in A-repeat functionalization, but additional evolution was required for chromosome-wide silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 are supported by qRT-PCR data showing no silencing of X-linked genes by Xist-ERV. However, the experiments were conducted in the presence of HDAC1/2i which may affect trans-silencing, and Xist-ERV expression levels are lower than Xist-WT. Claims C125-C126 are reasonable evolutionary hypotheses but remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C127",
+      "C128"
+    ],
+    "result": "Spen binds to ancient retroviral RNA and performs a surveillance role by directly binding ERVK transcripts and recruiting chromatin silencing machinery. In Spen's absence, ERVK elements become de-repressed with loss of H3K9me3 and gain of active chromatin modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result synthesizes the major findings (C2-C8, C127-C128) and is well-supported by the combined evidence from ATAC-seq, ChIP-seq, RNA-seq, and irCLIP-seq experiments. The surveillance role interpretation (C3) is supported by the data showing direct RNA binding and chromatin changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C130",
+      "C131",
+      "C132",
+      "C135",
+      "C136"
+    ],
+    "result": "Xist may have co-opted transposable element RNA-protein interactions to repurpose antiviral chromatin silencing machinery for sex chromosome dosage compensation. The invasion of an ERV-like sequence into proto-Xist may have led first to RNA-based silencing in cis, with subsequent mutations allowing silencing at a distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13, C130-C132, C135-C136 are speculative evolutionary hypotheses that are consistent with the data but not directly tested. While the Xist-ERV experiments (C113-C124) provide some support for the evolutionary model, the claims about Xist 'tricking' the cell (C131) and the specific evolutionary trajectory (C135-C136) remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Genes involved in the innate cellular immunity pathway are modestly upregulated in Spen KO mESCs, suggesting that when Spen is inactivated, the cell responds to the presence of ERV RNA transcripts. Spen represses young, more intact ERVKs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by RNA-seq data showing modest upregulation of innate immunity genes. Claims C78-C79 are inferences based on the divergence analysis (C75-C76) and innate immunity response (C77), providing a coherent model for Spen's role in transposon surveillance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Spen sensing of ERV RNA and Spen-mediated silencing are cis-restricted, as demonstrated by grafting ERV into the Xist locus causing cis silencing of Xist RNA expression itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by the Xist-ERV experiments (C113-C120) showing that ERV insertion causes local silencing of the Xist transgene. This demonstrates the cis-restricted nature of Spen-mediated silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "This is the first demonstration of how a TE insertion during evolution could confer new functionality on a noncoding RNA by introducing a new protein recruitment domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 is supported by the Xist-ERV experiments showing that ERV insertion can functionally substitute for the A-repeat in recruiting Spen. The novelty claim is reasonable given the direct experimental demonstration of TE-mediated protein recruitment domain acquisition.",
+    "result_type": "MAJOR"
+  }
+]

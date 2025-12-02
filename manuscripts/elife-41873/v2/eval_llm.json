@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C85",
+      "C86"
+    ],
+    "result": "CRISPR/Cas12a can efficiently delete the Y chromosome in mouse embryonic stem cells. The gRNA Centro 37X-A achieved ~90% Y-chromosome elimination efficiency, which was slightly higher than previously achieved with CRISPR/Cas9 (~80%). This represents the first demonstration of Cas12a-mediated Y chromosome deletion in murine ES cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C47, C48, C49, C50, C85, and C86 are well-supported by experimental qPCR data shown in Figure 2. The efficiency measurements are clearly presented with appropriate controls (empty vector) and multiple biological replicates (n\u22653). The comparison to prior Cas9 work is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C91"
+    ],
+    "result": "Individual-based simulations demonstrate that a Y-CHOPE gene drive can eradicate a pest mouse population under ideal conditions. With perfect Y-shredding efficiency (PY=1.0) and 100% homologous recombination (no resistant alleles), eradication of 10,000 mice was guaranteed, with the drive spreading rapidly and converting XY males to XO females until male limitation caused population decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C51, C52, C53, and C91 are supported by modeling results in Figure 3. The simulations used appropriate stochastic individual-based models with 1000 replicates per scenario. However, these results represent idealized conditions that may not reflect real-world performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C70",
+      "C71",
+      "C72",
+      "C92"
+    ],
+    "result": "The efficacy of the Y-CHOPE drive is highly sensitive to both Y-shredding efficiency and the mating system of the target species. Under monogamy (Fmax=1), Y-shredding efficiencies >0.67 guarantee extinction, but under polygyny (Fmax=3 or 5), much higher efficiencies (0.87-0.92) are required. Lower efficiencies can result in population suppression rather than eradication, or even population growth under high polygyny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 and C70-C72 are well-supported by systematic modeling results shown in Figures 3 and 6. The interaction between mating system and Y-shredding efficiency is clearly demonstrated across multiple parameter combinations with appropriate replication (1000 simulations per scenario).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C110"
+    ],
+    "result": "Placement of the Y-CHOPE drive in a non-coding genomic region is vulnerable to resistance evolution through NHEJ-mediated mutations. Even with perfect Y-shredding efficiency (PY=1.0), simulations showed that resistant alleles evolved and spread, causing the population to rebound to carrying capacity after initial suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C66, C67, and C110 are supported by modeling results in Figure 5a,b. The simulations appropriately modeled NHEJ (PN=0.1) and showed clear population rebound dynamics. The mechanism (selection against sub-fertile XO females favoring resistant alleles) is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C111",
+      "C145"
+    ],
+    "result": "Positioning the Y-CHOPE drive within a haploinsufficient gene can overcome resistance evolution. When mutations from NHEJ cause embryonic lethality (Pnf=1), population eradication can be achieved even with substantial NHEJ rates (PN=0.1), as resistant alleles are eliminated through selection rather than spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C111, and C145 are supported by modeling results in Figure 5c,d showing successful eradication when the drive is placed in a haploinsufficient gene. The strategy is theoretically sound and supported by citation to mosquito data (C112), though empirical validation in rodents is acknowledged as needed (C113).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Global sensitivity analysis identified mating system (Fmax, 29% relative influence) and Y-shredding efficiency (PY, 28% relative influence) as the primary determinants of eradication success. The number of homing gRNAs was also influential, while XO female sub-fertility had less impact. The haploinsufficient gene placement strategy is robust to NHEJ rates up to PN=0.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by comprehensive sensitivity analysis using Latin hypercube sampling (100,000 parameter combinations) and boosted regression tree emulation (Figure 7). The convergence analysis (Figure 7\u2014figure supplement 1, C158) confirms adequate sampling. The methodology is appropriate and well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C118"
+    ],
+    "result": "Comparative modeling shows that under certain conditions, the Y-CHOPE drive can achieve superior population suppression compared to Y-linked X-shredding drives, particularly when the target species exhibits short-term monogamy or when Y-chromosome inheritance from YO males approaches Mendelian rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C118 are supported by comparative modeling results in Figure 6b. The comparison appropriately considers the different mechanisms and constraints of each strategy. However, the comparison is limited to specific parameter ranges and assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C100",
+      "C101"
+    ],
+    "result": "When Y-shredding efficiency is insufficient for eradication, the failure is not due to lack of gene drive spread. The drive can spread to fixation (when NHEJ is precluded), but the resulting sex-ratio distortion is insufficient to cause male limitation because improved survival at low population densities compensates for the demographic impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, C100, and C101 are supported by modeling results in Figure 4 showing drive fixation without eradication. The mechanistic explanation about density-dependent survival is logical given the model structure (C149, C150), though this represents a specific modeling assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "When single-site NHEJ mutations don't guarantee loss-of-function (Pnf<1), eradication probability can peak at Y-shredding efficiencies less than 1.0. This counterintuitive result occurs because near-perfect Y-shredding (PY\u21921) produces few gene-drive-positive XY males, slowing drive spread and allowing more time for resistance evolution. However, given the empirical PY\u22480.9, this phenomenon poses no practical barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C128, C129, and C130 are supported by sensitivity analysis results in Figure 7b(i). The mechanistic explanation is logical and the conclusion that this doesn't affect practical implementation (given empirical PY=0.9) is reasonable. This represents an interesting but minor finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C2",
+      "C5",
+      "C142"
+    ],
+    "result": "The combined experimental and modeling data suggest that a Y-CHOPE gene drive using Cas9 for homing and Cas12a for Y-shredding could be a viable tool for vertebrate pest control, specifically for eradicating invasive rodents on islands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88, C2, C5, and C142 represent the main conclusion but remain uncertain because: (1) the Cas12a Y-shredding was only demonstrated in ES cells, not in vivo; (2) efficient homing in rodents remains undemonstrated and may require significant optimization (C90); (3) the large cassette size required for dual endonuclease systems is untested in mammals; and (4) modeling assumes idealized conditions not validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C144"
+    ],
+    "result": "For polygynous species like mice, Y-shredding efficiencies must exceed ~90% to guarantee eradication rather than mere suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C144 are directly supported by modeling results in Figure 6 showing the relationship between Y-shredding efficiency, polygyny level, and eradication probability. This is a clear, quantitative prediction from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "The ~90% Y-shredding efficiency achieved with Cas12a in ES cells suggests that >90% efficiency may be achievable in vivo in the germline, particularly with constitutive expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is speculative extrapolation from in vitro ES cell data to in vivo germline performance. While the ES cell efficiency is promising, germline expression faces additional challenges (chromatin state, timing, cell-type specificity) not addressed by the ES cell experiments. No in vivo validation is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C119"
+    ],
+    "result": "An autosomally integrated Y-shredder has the advantage that it can be spread by both sexes (unlike Y-linked X-shredders spread only by males), and is robust to XO female sub-fertility because both heterozygous XX females and XY males contribute to drive spread through the dual-germline homing mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117 and C119 are supported by the model structure and sensitivity analysis (Figure 7a showing low influence of XO fertility). The genetic logic is sound: autosomal placement allows transmission through both sexes, and the homing mechanism in both male and female germlines compensates for XO sub-fertility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C135"
+    ],
+    "result": "The modeling approach has important limitations: it assumes a panmictic population and ignores spatial dynamics, uses a simplified mating function without spatial structure or multiple paternity, and does not account for sperm competition. These simplifications may affect predictions for real populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 and C135 accurately describe model limitations that are clearly stated by the authors. These are appropriate caveats that acknowledge the gap between model assumptions and biological reality. The assessment that multiple paternity is unlikely to matter without sperm competition (C135) is reasonable but not empirically validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "NHEJ-mediated repair during homing can create resistance alleles that threaten gene drive viability. While some studies suggest NHEJ is rare, recent work indicates rates may reach 40% in Drosophila, and modeling suggests this threatens pest control applications if resistant alleles have little fitness cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are well-supported by citations to prior work. The authors appropriately present the range of empirical findings on NHEJ rates and cite relevant modeling studies. This provides important context for their own resistance modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C125"
+    ],
+    "result": "When Y-shredding efficiency is too low for eradication, the drive can alter population carrying capacity in different ways depending on mating system: under low polygyny, carrying capacity is reduced (suppression); under high polygyny, carrying capacity can increase because female bias increases reproductive potential without causing male limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 and C125 are supported by modeling results in Figure 3 showing different equilibrium outcomes. The mechanistic explanations (changes in proportion of females breeding, reproductive potential) are consistent with the model structure. This represents an important consideration for risk assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The individual-based model used appropriate demographic parameters for mice including equal survival/fertility across age classes, equal sex ratio at birth, 10 breeding cycles per year, litter size of 6, density-dependent survival calibrated to achieve rmax=7.76 at low density and r=0 at carrying capacity (K=10,000), with 100 gene-drive carrier females introduced and 1000 replicate simulations per scenario.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C153 describe the model parameterization with appropriate citations (C148, C150). The demographic parameters are reasonable for mice, density dependence is appropriately modeled, and the number of replicates (1000) is adequate for stochastic simulations. The model structure is clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The sensitivity analysis used Latin hypercube sampling to generate 100,000 parameter combinations with uniform distributions, ran single simulations per combination, and emulated results using boosted regression trees (BRT). Convergence analysis confirmed this sample size was sufficient for robust sensitivity metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C158 describe appropriate methodology for global sensitivity analysis. Latin hypercube sampling ensures good parameter space coverage (C155), BRT is suitable for complex non-linear relationships (C157), and convergence was properly verified (C158, Figure 7\u2014figure supplement 1). The approach follows best practices cited in the literature.",
+    "result_type": "MINOR"
+  }
+]

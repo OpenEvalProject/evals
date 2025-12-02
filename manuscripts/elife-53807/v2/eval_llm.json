@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Microneedle manipulation can exert local forces on mammalian spindles with spatiotemporal control. The technique causes local membrane deformation without changing overall cell height, maintains membrane integrity, and allows spindles to recover and enter anaphase normally after manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C26 collectively demonstrate successful adaptation of microneedle manipulation to mammalian cells. The data show local deformation (C21-C22), membrane integrity via propidium iodide exclusion and contouring (C23-C24), structural recovery (C25), and cell viability via anaphase entry (C26). These converging lines of evidence strongly support the technical validity of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Deformations propagate only ~5 \u03bcm from the microneedle with weak mechanical coupling between neighboring k-fibers. FCPT treatment increases crosslinking and extends deformation propagation, demonstrating that crosslinking strength modulates spindle material properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are supported by strain map analysis showing exponential decay (0.44 \u03bcm\u207b\u00b9) of deformation in WT and slower decay (0.25 \u03bcm\u207b\u00b9) with FCPT treatment (C27, C29). The inference of weak coupling (C28, C31) and the role of crosslinking (C30) are well-supported by the data and consistent with cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "During 12 s manipulations, inter-kinetochore distance does not increase despite pulling, while the spindle shortens by 0.5 \u03bcm and the sister k-fiber moves inward by 5.8\u00b0. This reveals that sister k-fibers are tightly coupled and the spindle maintains local architecture near chromosomes by adjusting global architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 are well-supported by quantitative measurements in Figure 2. The lack of inter-kinetochore distance change (C32) despite chromosome elasticity on this timescale (C33), combined with spindle shortening (C34) and coordinated sister k-fiber movement (C36), strongly support the conclusions about tight sister k-fiber coupling (C38) and preservation of local architecture (C37). The inference that a non-chromosomal structure couples sister k-fibers (C35) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "K-fibers exhibit negative curvature near chromosomes (74% of 60 s manipulations) but rarely near poles (17%), indicating they can pivot around poles but not chromosomes. This energetically costly configuration reveals restricted pivoting near plus-ends, and manipulation often exposes non-kMT contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are supported by curvature analysis in Figures 3 and Figure 3\u2014figure supplement 1. The frequency data (C42-C43) clearly show differential curvature patterns. The inference that negative curvature indicates restricted pivoting (C41, C45) is reasonable based on beam mechanics (C40), though the energetic argument could be more rigorously quantified. The observation of non-kMT contacts (C46) provides structural context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Negative curvature consistently appears 1-3 \u03bcm from chromosomes regardless of pull location, supporting a specialized reinforcement structure in the spindle center. This reinforcement has a lifetime of 18.8 \u00b1 2.6 s, indicating short-lived, non-uniform k-fiber reinforcement near chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are well-supported by systematic variation of pull location (C48, Figure 3G) and manipulate-and-hold experiments (C50, Figure 3H-I). The consistent 1-3 \u03bcm localization strongly supports specialized reinforcement (C49) over uniform anchorage. The 20 s lifetime measurement (C50) is direct. The speculation about non-kMT contribution (C47) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "PRC1 localizes to a 6.9 \u03bcm region in the spindle center, mapping to the reinforcement zone. PRC1 RNAi eliminates negative curvature near chromosomes (91% of spindles lack it vs 24% in WT), demonstrating that PRC1 laterally reinforces k-fibers and enables resistance to pivoting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are strongly supported by combining PRC1 localization (C52, Figure 4B), effective RNAi knockdown (C54, C86-C88), and loss of negative curvature phenotype (C55-C56, Figure 4D-F). The spatial correlation (C53) and functional conclusion (C57) are well-justified. The comparison controls for microneedle position (C56), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In PRC1 RNAi spindles, inter-kinetochore distance increases by 0.7 \u03bcm upon manipulation (vs 0.1 \u03bcm in WT), sister k-fiber movement is reduced, and the angle between sister k-fibers is less preserved. This demonstrates PRC1 promotes tight coupling between sister k-fibers, resisting both compressive and extensile forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by quantitative measurements in Figure 4H-J comparing WT and PRC1 RNAi. The increased inter-kinetochore distance (C58), reduced sister k-fiber movement (C60), and altered angle preservation (C61) provide converging evidence for PRC1's role in sister k-fiber coupling (C62). The inference about resisting extensile forces (C59) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Microtubule intensity remains similar upon PRC1 depletion, suggesting PRC1 does not act simply by changing microtubule density. Together, findings indicate PRC1 provides specialized, short-lived structural reinforcement in the spindle center near chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by the data. Microtubule intensity measurements (C63, Figure 4\u2014figure supplement 2B) rule out a simple density mechanism. The overall conclusion (C64) is well-justified by the combined localization, RNAi, and mechanical phenotype data, though whether PRC1 acts directly or indirectly remains unresolved as acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C80",
+      "C81"
+    ],
+    "result": "Anchorage along k-fibers is non-uniform and locally reinforced near chromosomes in both longitudinal and lateral axes. Local anchorage resists forces over seconds but remodels over minutes. Mechanical heterogeneity in space and time allows the spindle to be both dynamic and mechanically robust.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76, C80-C81 represent the major conceptual conclusions of the work. They are well-supported by the combined experimental evidence: spatial reinforcement patterns (C73, Figures 2-3), 20 s lifetime (C75, Figure 3H-I), and timescale-dependent responses (C76). The principle of mechanical heterogeneity (C80-C81) is a reasonable synthesis of the findings, though C74 is speculative about functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "PRC1 is a passive molecular force generator that binds antiparallel microtubules and can maintain microtubule overlaps in vitro. In the longitudinal axis, PRC1 can both promote and limit chromosome stretch. In the lateral axis, PRC1 restricts k-fiber pivoting around chromosomes. PRC1's activity is phosphoregulated during mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 integrate current findings with prior knowledge. PRC1's properties (C67-C68) and phosphoregulation (C71) are well-established by citations. The dual role in chromosome stretch (C69-C70) is supported by comparing current data (C70, Figure 4H) with prior work (C69). The lateral reinforcement role (C72) is directly demonstrated. These claims appropriately contextualize the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The spindle center's remodeling timescale likely reflects turnover of underlying connections such as non-kMTs or PRC1. Tuning connection lifetime could regulate remodeling to allow kinetochores to sense only forces of specific timescales, enabling morphology changes only when needed (e.g., at metaphase-to-anaphase transition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C79 are speculative about mechanisms and functional implications. While the speculation is reasonable and supported by citations to turnover rates (C77), these claims go beyond what the data directly demonstrate. The 20 s lifetime is measured, but the molecular basis and regulatory implications (C78-C79) remain hypothetical. These are appropriate discussion points but not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims about spindle function, structure, and dynamics based on established knowledge and prior literature. These include the spindle's role in chromosome segregation, k-fiber composition and function, microtubule turnover rates, and the role of the non-kMT network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C20 represent established background knowledge supported by appropriate citations to prior work. These provide necessary context for the study but are not novel findings. They are accurately stated and properly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Summary of main findings stated in the abstract: preservation of local architecture over seconds, tight sister k-fiber coupling, k-fiber pivoting around poles but not chromosomes, 20 s lifetime of reinforcement, and requirement for PRC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 are abstract-level summaries of the main results, which are supported by the detailed experimental evidence discussed in other result groups. These accurately summarize the key findings of the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Methodological details including cell culture conditions, RNAi protocol, imaging timing, and validation of PRC1 knockdown by western blot (88% decrease), immunofluorescence (76% decrease), and binucleated cell enrichment (4% to 35%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 describe methods and validation experiments. The PRC1 knockdown is well-validated by multiple independent measures (C86-C88) showing substantial depletion. These methodological claims are appropriately documented and support the interpretability of the RNAi experiments.",
+    "result_type": "MINOR"
+  }
+]

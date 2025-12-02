@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Endogenous cGAS is predominantly localized to the nucleus in both human and mouse cells. This was demonstrated using immunofluorescence microscopy in HeLa cells and primary mouse bone marrow-derived macrophages, with multiple fixation methods (methanol and PFA/Triton X-100), and confirmed by Amnis imaging flow cytometry of live cells expressing GFP-cGAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C7, C8, C9, and C10 collectively demonstrate nuclear localization of cGAS using multiple orthogonal approaches (microscopy with different fixation methods, flow cytometry of live cells) in multiple cell types (human and mouse, immortalized and primary). The use of cGAS knockout controls (C2, C7) validates antibody specificity. The convergence of evidence from different technical approaches strongly supports this unexpected finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "cGAS is tightly tethered in the nucleus, requiring 0.75 M NaCl or higher for solubilization, similar to histones. This tight tethering was observed across multiple human and mouse cell lines, and the great majority of endogenous cGAS is in the nucleus rather than the cytosol. This tight tethering cannot be explained by cGAS's low intrinsic affinity for DNA (Kd ~1-2 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are supported by sequential salt elution experiments across six different cell lines (Figure 2A) with densitometry quantification (Figure 2B). The comparison to histone elution profiles provides an appropriate internal control. The inference that tight tethering cannot be explained by DNA binding affinity alone (C14) is reasonable given the known Kd values from prior structural studies, though the identity of the tether remains unknown at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "cGAS remains tightly tethered in the nuclear pellet throughout the cell cycle. Using double-thymidine block to synchronize HeLa cells, the localization of cGAS to the nuclear pellet did not change at different cell cycle phases (G1/S, S, G2/M, or asynchronous).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C16 are supported by cell cycle synchronization experiments with flow cytometry validation of cell cycle phase (Figure 3A) and western blot analysis of cGAS distribution (Figure 3B). The experimental design appropriately controls for cell cycle effects. However, the temporal resolution is limited to four time points, which may miss transient redistributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Activation of cGAS by foreign DNA does not result in dramatic redistribution to the cytosol. Despite robust cGAS activation and cGAMP production after DNA transfection, sequential salt elution showed no concerted relocalization of cGAS into the cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by salt elution experiments comparing control and DNA-transfected cells at a time point when cGAMP production is maximal (Figure 3C). The functional validation of cGAS activation (cGAMP production) strengthens the interpretation. However, the analysis is limited to a single 4-hour time point, which may not capture all dynamic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The intact core of cGAS (comprising the alpha-helical spine and C-terminal lobe) is required for nuclear tethering, while the N-terminus (1-161) is dispensable. Truncation mutants lacking the N-terminus (161-522) remained tethered in the nuclear pellet, while the isolated N-terminus localized to cytosol and nuclear supernatant. Removal of either the alpha-helical spine or C-terminal lobe resulted in mislocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by systematic domain mapping using GFP-cGAS truncation mutants with western blot analysis (Figure 4B). The experimental design appropriately tests individual domains. However, the 213-522 mutant was noted to be unstable (C22), which complicates interpretation of its mislocalization\u2014it's unclear whether mislocalization is due to loss of tethering or protein instability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C28"
+    ],
+    "result": "Nuclear tethering of cGAS can be uncoupled from DNA-activated cGAMP production, DNA binding, DNA-activated dimerization, DNA-activated condensation, and catalytic activity. The N-terminus deletion mutant (161-522) is severely compromised for DNA-activated cGAMP production but shows identical nuclear tethering to full-length cGAS. Six additional point mutants defective in various aspects of cGAS activation all remained predominantly nuclear and tethered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, and C28 are supported by comprehensive mutational analysis (Figures 4D-G) testing separation-of-function mutants. The N-terminus deletion experiment (C24-C25) directly demonstrates uncoupling of tethering from activation. The six point mutants (C26-C27) affecting different functional aspects (DNA binding, dimerization, catalysis) all retain nuclear tethering, providing strong evidence for mechanistic separation. The experimental design is rigorous with appropriate dose-response controls (Figure 4C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "NONO is not the primary tether of cGAS. NONO-deficient HeLa cells produced normal amounts of cGAMP after DNA transfection and showed unaffected tight nuclear tethering of cGAS, though NONO may act as a bridge for cGAS detection of virus-encapsidated DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by analysis of four independent NONO knockout clones (Figure 4\u2014figure supplement 1A-B). The functional validation (cGAMP production) and biochemical analysis (salt elution) both support the conclusion. The interpretation reconciles the current findings with prior literature (Lahaye et al., 2018) by proposing NONO acts as a bridge rather than primary tether.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "IFI16 disruption results in no change in cGAS protein levels or tight tethering in the nuclear pellet. IFI16 was extracted by ~420 mM salt into the nuclear supernatant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by western blot analysis of IFI16 knockout cells (Figure 4\u2014figure supplement 1C). The differential salt extraction of IFI16 versus cGAS provides additional evidence they are not directly associated. However, only one knockout line is shown, and validation of IFI16 disruption efficiency is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Intact chromatin is required for the organization of cGAS nuclear tethering. Treatment of nuclear extracts with micrococcal nuclease or salt-active nuclease resulted in a collapsed salt elution profile for both histones and cGAS, with the majority of cGAS released at 250-500 mM salt rather than the 750+ mM required for untreated nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C34 are supported by nuclease digestion experiments in two cell lines (THP1 and HeLa) using two different nucleases (Figure 5). The parallel changes in histone and cGAS elution profiles after nuclease treatment provide strong evidence for chromatin-dependent tethering. DNA analysis confirms effective nuclease digestion (Figure 5A). The experimental design appropriately controls for nuclease specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The cGAS R222E mutant is untethered and constitutively active against self-DNA without exogenous DNA stimulation. Doxycycline-induced expression of R222E alone produced massive cGAMP (similar to WT cGAS with DNA transfection) and was not further activated by DNA transfection. Compound mutants combining R222E with DNA-binding or dimerization mutations (R222E/K335E, R222E/K395M/K399M, R222E/K382A) were completely defective for cGAMP production, demonstrating DNA-dependence. The R222E mutant remained predominantly nuclear but eluted at significantly lower salt concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are strongly supported by cGAMP measurements (Figure 6A) and salt elution profiles (Figure 6B) in multiple cell types. The compound mutant analysis (C38) provides critical evidence that constitutive activation is DNA-dependent rather than due to conformational activation. The quantitative cGAMP measurements show R222E produces similar amounts to DNA-activated WT cGAS. The salt elution data directly demonstrate loss of tight tethering. This is a key result linking tethering to prevention of autoreactivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "R222 is located within the core NTase domain of cGAS, proximal to DNA in the structure but distant from the active site. R222 and its surrounding surface define a module unique to cGAS (not conserved in OAS proteins) that includes a poorly resolved, flexible loop. R222 and the adjacent R241 are completely conserved across ~360 million years of vertebrate evolution. R241 projects away from DNA and does not participate in DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by structural analysis (Figure 6C-F) and phylogenetic alignment (Figure 6E). The structural mapping appropriately uses published crystal structures. The phylogenetic analysis across vertebrates provides strong evidence for functional importance of R222 and R241. The distinction between R222 (DNA-proximal) and R241 (DNA-distal) is important for interpreting their different roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Specific amino acids in the tethering surface are essential for both tight nuclear tethering and prevention of cGAS activation by self-DNA. K240E is untethered and constitutively active but also impaired for DNA-activated cGAMP production (suggesting dual roles). R241E is untethered, even more constitutively active than R222E (producing 300\u00d7 more cGAMP than resting WT and nearly 3\u00d7 more than DNA-activated WT), and not further activated by DNA. R244E and \u0394-Loop mutants are mildly less tethered and mildly constitutively active but remain strongly inducible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by systematic mutational analysis with both salt elution (Figure 6G) and cGAMP measurements (Figure 6H). The graded phenotypes (R241E > R222E > K240E > R244E/\u0394-Loop) provide strong structure-function relationships. The quantitative cGAMP measurements are particularly striking for R241E. Statistical analysis is provided (p-values in Figure 6H). The dual role of K240 (C47) is appropriately noted as inference based on its phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Tight nuclear tethering is evolutionarily conserved between mouse and human cGAS. Human cGAS mutants corresponding to mouse R222 (hR236E) and R241 (hR255E) are both untethered and constitutively active, with R255E producing over 100\u00d7 more cGAMP than WT human cGAS. This demonstrates that tight nuclear tethering is a fundamental and evolutionarily conserved mechanism preventing cGAS activation by self-DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by analysis of human cGAS mutants (Figure 6I-J) showing parallel phenotypes to mouse mutants. The quantitative difference (100\u00d7 for human R255E vs 300\u00d7 for mouse R241E) is noted and attributed to intrinsic species differences in cGAS activity (appropriately cited). The conservation across species strengthens the biological significance of the tethering mechanism. Statistical analysis is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "In addition to uniform nuclear staining, endogenous cGAS shows three additional localization patterns: association with condensed mitotic chromatin, localization to rare spontaneous micronucleus-like structures (with all such cells also showing extensive nuclear cGAS staining), and localization to chromatin bridges between adjacent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 are supported by microscopy data (Figure 1B). The mitotic chromatin association (C3) is consistent with prior literature (Yang et al., 2017). The observation that cells with micronuclei also have extensive nuclear cGAS (C5) is important for reconciling with prior studies focused on micronuclei. However, these are descriptive observations of rare events without quantification of frequency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Tight nuclear tethering maintains the resting state of cGAS and prevents autoreactivity. This is the main conclusion integrating all experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is the central conclusion supported by the convergence of multiple lines of evidence: nuclear localization (C2-C10), tight tethering (C11-C14), persistence through cell cycle and activation (C15-C17), chromatin requirement (C33-C34), and most critically, the demonstration that untethering mutations cause constitutive activation by self-DNA (C35-C53). The logic is sound and the evidence is comprehensive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors propose several speculative models: tethered nuclear cGAS does not directly interact with genomic DNA; there must be a regulated 'desequestration' step prior to cGAS assembly on DNA; the diffusible second messenger cGAMP explains how nuclear cGAS activates cytosolic STING; and self-DNA may contribute to cGAS activation during viral infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C73 are explicitly stated as speculation or proposed models by the authors. While these are reasonable inferences from the data (particularly C70 and C72), they lack direct experimental support in this manuscript. C71 proposes a 'regulated desequestration' model that would require future work to validate. C73 suggests self-DNA may activate cGAS during infection, which is an interesting hypothesis but remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Background and established knowledge about cGAS-STING pathway, including its roles in antiviral immunity, autoimmune diseases, and antitumor immunity; the biochemical mechanism of cGAS activation and signaling; viral replication sites; cell cycle effects on nuclear envelope; and technical observations about antibody epitopes and HeLa cell properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C55-C67 represent established knowledge appropriately cited from prior literature or general biological knowledge. C68 is a technical observation about antibody performance. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

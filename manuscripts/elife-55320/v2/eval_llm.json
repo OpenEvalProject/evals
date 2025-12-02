@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The adapted 10x Genomics protocol successfully enables in-droplet lysis of yeast cells through zymolyase treatment at 53\u00b0C, with minimal premature lysis during ice and room temperature incubation steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C87, C88, and C89 collectively demonstrate that zymolyase is both necessary and effective for yeast cell lysis at 53\u00b0C, with cell counts dropping 200-fold after 20 minutes and below detection after 40 minutes. The control experiment (C18) confirms heat alone is insufficient. The timing of lysis aligns with the 10x Genomics protocol requirements, supporting the feasibility of the adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C86"
+    ],
+    "result": "The adapted protocol achieves order-of-magnitude higher throughput (686-1695 cells per sample) compared to existing yeast scRNA-seq methods, though with lower mRNA capture efficiency (35-50% of previous methods) but at significantly reduced cost ($0.3/cell vs $4.15/cell).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19, C20, C73, C74, C75, and C76 provide converging evidence that the method achieves higher throughput with trade-offs in capture efficiency and sequencing saturation (70-80% vs 90%). The cost reduction (C75) and throughput increase are well-documented, though the comparison to 'existing methods' in C2 could be more specific about which methods are being compared.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C99",
+      "C100"
+    ],
+    "result": "The scRNA-seq data correlates well with bulk RNA-seq (R\u00b2=0.7 after excluding 280 genes), with 42 genes detected only in scRNA-seq and 280 genes detected only in bulk RNA-seq for unclear reasons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C21 shows reasonable correlation (R\u00b2=0.7), the failure to detect 280 genes that show intermediate to high expression in bulk RNA-seq (C23) is concerning and unexplained. Claims C99 and C100 rule out GC content bias and GO term enrichment, but the underlying cause remains unclear. This represents a significant limitation that could affect interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The control experiment mixing glucose- and maltose-grown cells demonstrates the method can distinguish physiologically distinct cell populations with limited batch effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C25 show that the mixed sample separates into two distinct groups in UMAP space based on maltose-specific gene expression, and that batch effects are smaller than physiological effects. This validation is important for establishing the method's ability to detect biological heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C42"
+    ],
+    "result": "At 3 hours post-shift to maltose, cells segregate into two transcriptionally distinct subpopulations before resuming growth, with one cluster (cluster 3) enriched for ribosomal genes and HXT3, and another (cluster 4) enriched for respiratory and stress response genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C36 and C42 provide strong evidence for two distinct subpopulations at lag-3h, supported by differential expression analysis (628 and 374 genes, respectively) and GO enrichment. The hypothesis that these correspond to cells that will/won't resume growth (C28, C42) is supported by subsequent validation experiments (C44), though it remains somewhat speculative at this stage of the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C44",
+      "C45",
+      "C37"
+    ],
+    "result": "Cells that eventually escape lag phase show early differential expression of respiratory genes (QCR7), stress response genes (SSA1, HSP12), and high-affinity hexose transporters (HXT2, HXT7), with higher expression correlating with growth resumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide statistically significant differential expression data (p-values <10\u207b\u2075\u2070 to 10\u207b\u00b2\u2074\u2070), and C44 validates these findings using time-lapse microscopy of fluorescent protein fusions. The connection to respiration (C37, C45) is supported by both current data and previous studies. This represents strong converging evidence from multiple approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Cells that escape lag phase show relief from glucose repression within 3 hours, inducing genes for stress response, respiration, and high-affinity glucose transport, while non-escaping cells maintain glucose repression despite maltose availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 provide a coherent mechanistic interpretation of the differential expression patterns, linking them to glucose repression relief. The interpretation is based on established knowledge of glucose regulation (C46) and the observed expression patterns. However, the causal relationship between repression relief and growth resumption is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "During glucose growth, genes cluster into distinct co-expression groups including ribosomal proteins (cluster 6, 87/94 genes), cell cycle genes (cluster 2, including histones), and stochastically expressed stress/respiration genes (cluster 1, 151 genes, 91 regulated by Msn2/4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 describe co-expression patterns during glucose growth, with cluster assignments supported by correlation analysis and GO enrichment (C53). The connection to Msn2/4 regulation (C56, C57) is supported by database analysis and literature citations. The inference of stochastic expression (C58) is reasonable given the low basal expression and Msn2/4 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "A substantial fraction (63/151) of genes showing stochastic expression during glucose growth are among those rapidly induced in cells that resume growth after the shift to maltose, suggesting these stochastically expressed genes play an important role in lag phase escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, C61, C79, and C80 demonstrate significant overlap between stochastically expressed genes in glucose and genes induced in growth-resuming cells. The overlap is quantified (63/151 genes) and the connection to Msn2/4 regulation is established (C78). The conclusion that these genes play an important role (C80) is a reasonable inference, though direct functional validation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Genealogically related cells show significantly more similar lag times than unrelated cells (Wilcoxon p<8.68\u00d710\u207b\u00b9\u00b3), indicating that heritable factors stable for several hours influence the cellular response to carbon source shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C63 provide statistical evidence (Wilcoxon test) that genealogically related cells have more similar lag times. The inference that this reflects shared stable factors (C63) is reasonable, though the specific nature of these factors is not identified. The control experiment with JC10 dye rules out microfluidic flow artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "ATP levels drop sharply upon shift to maltose and only cells that sustainably restore ATP levels resume growth, but ATP levels before the shift are similar across cells, suggesting stochastic gene expression differences rather than initial ATP content drive heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 provide a comprehensive picture of ATP dynamics during lag phase using FRET-based measurements. The key observations\u2014sharp ATP drop (C64), restoration in growth-resuming cells (C66), and similar pre-shift levels (C69)\u2014are well-documented. The conclusion that stochastic gene expression is the primary driver (C71) is a reasonable inference integrating ATP and transcriptional data, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Stochastic variation in glucose repression, particularly of stress and respiration genes, may represent a bet-hedging strategy that provides phenotypic consequences during environmental shifts, with broader implications for understanding how gene expression noise affects cellular adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 synthesize the findings into a broader biological interpretation. The observation of stochastic variation (C81) is supported by the data, and the bet-hedging interpretation (C82, C84) is supported by citations to relevant literature. The broader significance (C85) is appropriately contextualized. However, the bet-hedging hypothesis remains somewhat speculative without direct fitness measurements in fluctuating environments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The elevated expression of ribosomal genes in cluster 3 (non-growing cells) may reflect inability to properly shut down protein synthesis in response to glucose limitation rather than active translation, as total UMI counts of ribosomal genes decrease during lag phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C34, C96, C97, and C98 provide an interpretation of the counterintuitive ribosomal gene expression pattern. The interpretation is supported by knowledge of glucose starvation effects (C33, C34) and UMI count data (C98) showing actual decreases. However, this remains somewhat speculative (C97) as direct measurements of translation rates are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "UMAP projections show that transcriptomes during lag phase are distinctly different from continuous growth on either glucose or maltose, with some overlap between glucose-6h and glucose-12h samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C94, and C95 describe the overall transcriptional landscape across conditions as visualized by UMAP. These observations are directly supported by the UMAP projections shown in the figures and represent straightforward descriptive results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Empty droplets contain ambient mRNA (up to 100 UMIs) likely due to premature cell lysis during room temperature incubation, while filled droplets contain 1000-10,000 UMIs, with sequencing saturations ranging from 71-89% across samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C102, and C103 describe technical aspects of the sequencing data quality. The observations are supported by barcode/UMI plots (C101) and the inference about premature lysis (C102) is consistent with the cell count data. Sequencing saturation values (C103) are directly reported metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C14"
+    ],
+    "result": "Current yeast scRNA-seq methods do not match mammalian cell methods in throughput and simplicity, primarily because the yeast cell wall prevents in-droplet lysis in standard 10x Genomics protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C14 establish the motivation for the study. These are supported by general knowledge of the field and the technical requirements of the 10x Genomics platform. The comparison is reasonable though somewhat general.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Previous studies have established that microbial cells show heterogeneous behaviors and that existing scRNA-seq methods for yeast have analyzed 163-2000 cells with varying detection rates (4-50% of genes), with yeast containing 20,000-60,000 mRNA molecules compared to 50,000-300,000 in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 provide background context from the literature, all supported by appropriate citations. These establish the state of the field and justify the need for improved methods. The claims are primarily descriptive of prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C91"
+    ],
+    "result": "Previous work by the authors established that glucose-to-maltose shifts produce heterogeneous lag times (5-20+ hours) with some cells never resuming growth, and that respiratory and maltose-catabolic proteins are induced in cells that resume growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, and C91 describe the authors' previous findings that motivate the current study. These are supported by citations to their prior work and establish the biological context for the scRNA-seq experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C77"
+    ],
+    "result": "The adapted protocol is similar to another recently published method (Jackson et al. 2020) but with in-droplet rather than pre-droplet zymolyase treatment, and the newer v3 chemistry could potentially double UMI yields compared to the v2 chemistry used here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C77 provide context about related methods and potential improvements. C72 appropriately acknowledges similar concurrent work, and C77 notes a technical limitation that could be addressed in future studies. These are reasonable assessments based on available information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C90"
+    ],
+    "result": "The method reveals heterogeneity during carbon source shifts and may be applicable to other organisms with degradable cell walls, opening new research avenues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C90 describe the demonstrated applications and potential extensions of the method. C3 is supported by the experimental results presented, while C4 and C90 are reasonable speculations about broader applicability, appropriately framed as potential rather than demonstrated applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Only cells able to generate ATP can eventually escape lag phase, as inferred from transcriptional responses showing induction of ATP production genes in cluster 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 represents an inference from the gene expression patterns that is subsequently validated by direct ATP measurements (C64-C68). While initially speculative, this hypothesis is well-supported by the combined transcriptional and ATP data.",
+    "result_type": "MAJOR"
+  }
+]

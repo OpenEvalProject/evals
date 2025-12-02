@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A loss-of-function screen using ~300 Split-Gal4 driver lines with tetanus toxin light chain silencing identified 18 lines with significant chemotaxis defects, including a line specifically labeling the olfactory descending neuron PDM-DN that connects the lateral horn to the ventral nerve cord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen methodology is well-described (C31-C39), with appropriate controls and quantification. The identification of PDM-DN (C41) is supported by anatomical data in Figures 1C and 2A. The screen design using multiple odor sources to minimize larval interactions (C38) and the use of high-throughput tracking (C33) are methodologically sound. Sample size of ~300 lines (C39) is adequate for discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Silencing PDM-DN reduced chemotaxis accuracy, with larvae remaining ~19 mm from odor sources (vs. ~13 mm for controls) during 120-240s, due to decreased turn rate rather than reduced locomotor speed, though residual chemotaxis ability remained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral phenotype is quantitatively characterized with appropriate controls (C42-C44, Figure 1D-F). The dissociation between turn rate defect (C46) and normal locomotor speed (C45) is demonstrated with proper statistical analysis. The incomplete phenotype (C47) is consistent with redundant pathways. However, genetic background effects between parental controls (C64) introduce some uncertainty about the magnitude of effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "PDM-DN consists of bilaterally symmetrical neurons with somas in the posterior-dorsal-medial brain region, dendrites around the mushroom body peduncle and lateral horn, and axons projecting contralaterally to the SEZ, thoracic neuromeres, and first four abdominal segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anatomical characterization is thorough, using both light microscopy (C48-C52, Figure 2A) and MCFO technique (C49, Figure 2Aiv). The identification in EM based on morphological matching (C53, Figure 2B) is well-justified. The dendritic localization near olfactory processing centers (C51) provides anatomical support for functional role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "EM reconstruction revealed that PDM-DN receives olfactory input from Or42a and Or42b OSNs via a feedforward circuit motif involving lateral horn interneurons LH-LN1 and LH-LN2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The circuit reconstruction is supported by EM data (C55-C58, Figure 2C and supplements). The connection to Or42a/Or42b is consistent with the behavioral screen using ethyl butyrate (C54). The feedforward motif identification (C59) is appropriately referenced to circuit theory. However, the signs of interactions remain unknown, limiting mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In single-larva tracking assays, PDM-DN silencing specifically impaired turn initiation during down-gradient runs (not up-gradient runs), without affecting locomotor speed or turn accuracy, and had no effect in the absence of odor gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-larva tracking provides higher resolution than group assays (C60-C62, Figure 3A-C). The dissociation between down-gradient and up-gradient effects (C66-C68) is a key finding supported by appropriate conditioning of the analysis. Controls without odor (C69) rule out general motor defects. However, genetic background differences between controls (C64) remain a concern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "PDM-DN silencing did not affect turn orientation accuracy, though one parental control showed reduced turning performance possibly due to speed-accuracy tradeoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dissociation between turn timing and turn direction (C70) is an important finding suggesting separate pathways. The observation about one parental control (C71-C72) is appropriately interpreted as a potential speed-accuracy tradeoff, though this remains speculative. This result supports the specificity of PDM-DN function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Optogenetic activation of PDM-DN produced highly reproducible, deterministic stops (probability near 1.0 vs. near 0 for controls) independent of tail speed, with stereotyped decreases in tail speed averaging over 280 trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The optogenetic experiments demonstrate robust, reproducible effects (C73-C76, Figure 3E-F, Video 1). The deterministic nature is well-characterized through probability analysis (C79, C81) and independence from tail speed (C81). Controls show only modest startle responses (C78, C80). The large sample size (280 flashes, C76) provides strong statistical power. Inter-trial variability is appropriately acknowledged (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "During prolonged 20-s optogenetic activation, PDM-DN-induced stopping behavior was sustained for only ~3s before tail speed gradually increased, suggesting neuronal adaptation or circuit-level bypass mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal dynamics of prolonged activation are clearly documented (C82, Figure 3\u2014figure supplement 3A). The interpretation of adaptation or bypass mechanisms (C83) is reasonable given the data, though the specific mechanism cannot be determined from these experiments. This result provides important constraints on PDM-DN function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PDM-DN activation induced delayed head-casting behavior (peaking at ~3s) that varied strongly across trials and showed sensitivity to sensory experience, suggesting less direct control than stopping behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The head-casting phenotype is well-characterized (C84-C85, Figure 3H-I) with appropriate comparison to controls. The high inter-trial variability (C86) and sensory dependence (C87, Figure 3\u2014figure supplement 5) support the interpretation of indirect control. This contrasts appropriately with the stereotyped stopping behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Unilateral PDM-DN activation was sufficient to induce stopping and head-casting, and PDM-DN activation prolonged ongoing stops (4.66\u00b10.35s vs. 2.81\u00b10.11s for controls), indicating state-independent function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The unilateral activation experiment (C88) demonstrates that bilateral activation is not required. The state-independence is supported by experiments during head-casting (C89-C90, Figure 3\u2014figure supplement 3C-D). The quantitative comparison of stop durations provides clear evidence. The conclusion about state-independence (C91) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In odor gradients, PDM-DN activation induced stopping independent of gradient direction, but head-casting showed remarkable sensitivity to sensory experience, being more vigorous during down-gradient runs than up-gradient runs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experiments in odor gradients (C92-C95, Figure 3J-M) demonstrate differential effects on stopping vs. head-casting. The sensory-dependent modulation of head-casting (C93-C95) is well-documented. Controls show startle responses override olfactory information (C96). The summary conclusion (C97) appropriately integrates these findings. This supports a hierarchical organization of motor outputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Forward locomotion consists of wave-like peristaltic contractions from posterior to anterior segments, with the wave cycle defined as the period between peak tail speed and subsequent peak body length, described as phases from 0-360 degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the framework for analyzing peristalsis (C98-C102, Figure 4A). The definitions are based on well-established principles (C98-C99 cite Heckscher et al., 2012) and are clearly operationalized for the current study (C100-C102). This provides necessary context for subsequent mechanistic analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "PDM-DN activation caused steep decreases in tail speed (~1s after flash onset) regardless of wave phase, while body length continued increasing to maximum, with larvae remaining fully extended before relaxing, indicating that PDM-DN allows ongoing wave completion but suppresses subsequent wave initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phase-independent effects on tail speed (C103-C104, Figure 4B) and body length (C105-C106, Figure 4C) are well-documented across different phases. The interpretation that PDM-DN allows wave completion but blocks initiation (C107) is a logical inference from the kinematic data. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Tracking segmental contractions revealed that PDM-DN activation during late wave phases (A1-A3) allowed wave completion, but activation during early phases (A7) or at the hinge point (A4) could terminate waves prematurely, with segment A4 representing a critical hinge point beyond which waves cannot be terminated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The segmental analysis (C108-C111, Figure 4E) provides detailed spatial resolution of PDM-DN effects. The identification of A4 as a hinge point (C112) is supported by multiple observations. However, some variability is noted (Figure 4\u2014figure supplement 1B), suggesting the effect is not absolute. The conclusion is well-supported but acknowledges complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "In isolated CNS preparations showing fictive locomotion, PDM-DN activation terminated waves at the hinge point (A4) and severely suppressed subsequent wave initiation, with wave frequency ~5-10x slower than intact larvae, demonstrating that PDM-DN inhibits wave initiation in posterior segments independent of sensory feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fictive locomotion experiments (C113-C119, Figure 4G-H) provide strong evidence that PDM-DN effects are intrinsic to the CNS. The wave termination at A4 (C117) is consistent with intact larva experiments. The reduced wave frequency (C116) is appropriately noted and consistent with prior work. The conclusion about posterior segment inhibition (C120) integrates multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The A27h network of segmentally repeated excitatory premotor neurons, which excites motor neurons and inhibitory GDL neurons to propagate forward waves, is hypothesized to be the target of PDM-DN action based on the deterministic stopping phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The description of the A27h network (C121-C125) is well-supported by citations to prior work. The hypothesis that PDM-DN acts on A27h (C126) is a reasonable inference from the behavioral phenotype and known circuit organization. This sets up the subsequent EM reconstruction experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "EM reconstruction revealed that PDM-DN connects to the A27h premotor network through the descending neuron SEZ-DN1, which has dendritic arbors in the SEZ and exclusively targets A27h neurons in posterior segments (A5-A7), with no connections anterior to the hinge point A4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EM reconstruction (C127-C131, Figure 5 and supplements) provides detailed anatomical evidence for the PDM-DN to A27h pathway via SEZ-DN1. The restriction of SEZ-DN1 connections to posterior segments (C130-C131) is consistent with the functional data showing A4 as a hinge point. The identification of a specific driver line (C132) enables functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Immunostaining showed PDM-DN co-localizes with choline acetyltransferase but not GABA or glutamate, and RNAi knockdown of ChAT abolished the PDM-DN gain-of-function phenotype, demonstrating that PDM-DN is cholinergic and acetylcholine release is necessary for PDM-DN-evoked pauses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The neurotransmitter profiling (C133-C134, Figure 5B and supplement) uses appropriate immunostaining methods. The RNAi experiment (C135-C136, Figure 5\u2014figure supplement 1B) provides functional validation that acetylcholine is necessary. This is strong evidence for the cholinergic identity of PDM-DN.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "SEZ-DN1 co-localizes with GABA immunostaining and optogenetic activation produces stop/cast transitions similar to PDM-DN, demonstrating that SEZ-DN1 is a GABAergic inhibitory neuron that acts on the A27h network in posterior segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GABA immunostaining (C138, Figure 5C) and optogenetic validation (C139, Figure 5D-E, Video 3) provide converging evidence for SEZ-DN1 function. The logical inference that SEZ-DN1 must be inhibitory (C137) is supported by the circuit logic. The conclusion (C140) appropriately integrates anatomical and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "PDM-DN employs distinct SEZ and abdominal interneurons to differentially regulate stopping and head-casting behaviors, with bilateral PDM-DN input to SEZ-DN1 in segments A6-A7, and absence of connectivity anterior to A4 corroborated by functional data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The summary conclusion (C141) is supported by the detailed anatomical (C142) and functional (C143) data. The integration of EM connectivity with functional observations provides strong support for differential regulation of behavioral modules. This is a key organizational principle of the circuit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "PDM-DN has two additional SEZ partners: SEZ-LN1, which connects asymmetrically to RP motor neurons controlling dorsal/ventral muscles (potentially contributing to head sweeps), and SEZ-DN2, which innervates premotor neurons upstream of PaN motor neurons (possibly contributing to head-scanning behavior).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anatomical connections are documented by EM (C144-C146, C148-C149, Figure 5\u2014figure supplement 2), but functional validation is lacking due to absence of specific driver lines. The proposed roles in head-casting (C147, C150) are speculative. While the anatomy is solid, the functional significance remains uncertain without experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Optogenetic activation of SEZ-DN1 blocked forward wave propagation when waves were posterior to the hinge point (A4) and suppressed fictive locomotion waves in isolated CNS, with drastically reduced wave numbers during light flashes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SEZ-DN1 optogenetic experiments (C151-C154, Figure 6A-D) parallel the PDM-DN experiments and provide strong functional validation of the pathway. The effects on both intact larvae (C151-C152) and fictive locomotion (C153-C154) demonstrate that SEZ-DN1 is sufficient to block wave initiation. This validates the proposed circuit mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Calcium imaging demonstrated that PDM-DN activation excited neural activity in SEZ-DN1 axons, validating a model where PDM-DN activates SEZ-DN1, which in turn inhibits the A27h premotor system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium imaging experiments (C155-C156, Figure 6E-F) provide direct functional evidence for excitatory transmission from PDM-DN to SEZ-DN1. The validation of the circuit model (C157) integrates multiple lines of evidence (EM, neurotransmitter profiling, optogenetics, calcium imaging). This is strong support for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Larval chemotaxis, like bacterial and C. elegans chemotaxis, uses a conserved algorithm where positive gradients extend runs and negative gradients promote stops and turns, implemented through four behavioral primitives: runs, stops, head casts, and turns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the behavioral and evolutionary context (C1, C5-C12). They are well-supported by citations to prior work and represent established knowledge in the field. This provides the necessary background for understanding the significance of the circuit mechanisms identified in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior optogenetic studies established quantitative relationships between OSN activity and motor programs, and the larval olfactory system anatomy (21 OSNs projecting to PNs in the antennal lobe, then to lateral horn and mushroom body) has been characterized by light and electron microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize prior work on the larval olfactory system (C13-C21) and are appropriately supported by citations. They establish the state of knowledge before the current study and justify the focus on descending pathways as the missing link between sensory processing and motor control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Premotor circuits in the VNC generate peristaltic motion through CPG networks, and descending neurons create a bottleneck in sensorimotor transformations, with examples from leech and adult Drosophila showing that most descending neurons produce single behavioral outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the conceptual framework for understanding descending neuron function (C22-C30) and are well-supported by citations to prior work. They provide important context for interpreting the PDM-DN results in the broader context of command-like neurons across species.",
+    "result_type": "MINOR"
+  }
+]

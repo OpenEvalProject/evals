@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors developed an experimental system to physically separate neuronal projections from cell bodies using semipermeable membranes with 1 \u03bcm pores, and generated comprehensive RNA sequencing datasets including rRNA-depleted total RNAseq, PASseq, ribosome profiling, and polyA+ RNAseq from five biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 describe the experimental design and methodology. The physical separation method is validated by immunofluorescence (C23-C24), and the sequencing approaches are well-documented with appropriate replication (C25-C28). The methodology is sound and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "Quality control analyses demonstrate effective depletion of ribosomal and small RNAs, expected enrichment of mitochondrial RNAs and nonpolyadenylated noncoding RNAs in projections, and high correlation between biological replicates (Spearman's \u03c1 \u2265 0.83 in projections, \u2265 0.88 in whole cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 provide quality control metrics for the sequencing data. The high correlation coefficients between replicates (C36), expected depletion of nuclear RNAs (C33), and enrichment of projection-localized RNAs (C34) validate the experimental approach. The observations are consistent with known biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Differential expression analysis identified 1,486 genes significantly depleted and 1,440 genes significantly enriched in projections, with projection-enriched genes showing significant enrichment for mitochondrial functions and ribosomal protein mRNAs, including 70 RP mRNA isoforms enriched more than two-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 describe differential expression results using appropriate statistical methods (Kallisto/Sleuth). The findings are quantitatively reported with clear thresholds (>1.5 fold, q-value <0.01) and are consistent with known projection-localized transcripts. Gene ontology analysis appropriately supports the functional enrichment claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Single-molecule FISH validation of six mRNAs spanning different abundance levels and projection:whole cell ratios confirmed the accuracy of RNAseq measurements, showing expected localization patterns including projection enrichment of Pabpc1 and Rpl4, nuclear retention of Srsf5, and gradients for Polr2a, Ppib, and Ubc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe orthogonal validation using smFISH. The validation spans a range of expression levels and localization patterns, and the results are consistent with RNAseq data and known biology (e.g., Srsf5 nuclear retention due to detained intron). This provides strong support for the RNAseq quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C91",
+      "C92"
+    ],
+    "result": "Of 190,180 defined intron regions, 57,432 showed reliable coverage in whole cells and only 1,632 in projections. As expected, 97% of detectable intron regions were found only in whole cells, while the 3% detectable in projections were predominantly attributable to incomplete annotation of alternative mRNA isoforms or intron-encoded snoRNAs/scaRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C91-C92 describe the intron region analysis with clear detection criteria. The bimodal distribution observed (C49) and the finding that most projection-detectable introns represent annotation gaps (C92) are well-supported by the data and consistent with expectations that most introns are nuclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Classification of the 1,632 projection-detectable intron regions based on exon-intron (EI) and intron-exon (IE) boundary reads identified 385 regions corresponding to unannotated alternative 5' splice sites or polyadenylation sites, 320 to alternative 3' splice sites or transcription start sites, 428 to retained introns, and 499 with low EI/IE reads corresponding to various annotation gaps including 221 unannotated cassette exons identified by ribosome occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C60-C63 describe a systematic classification approach using EI/IE read patterns and integration with ribosome profiling and PASseq data. The classification scheme is logical and the integration of multiple data types strengthens the conclusions. Examples are provided for each category.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C93",
+      "C94"
+    ],
+    "result": "Analysis of retained introns revealed that as a class they show no strong tendency toward preferential projection localization, though specific examples like Sept3 intron 10 (which encodes an alternative protein isoform) and Calm2 were identified. This suggests intron retention is not a general mechanism for projection localization in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57, C93-C94 describe the analysis of retained introns. The finding that retained introns as a class lack projection enrichment (C93) is supported by data shown in Figure 4\u2014figure supplement 2. The identification of specific functional examples (C57) and the inference about general mechanisms (C94) are appropriately cautious and data-driven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study failed to detect retention or projection localization of Kcnma1 intron 23, which was previously reported to undergo dendritic splicing, and found minimal overlap with previously reported CIRTs. The authors attribute these discrepancies to methodological differences, noting that previous studies used low RNA input requiring extensive amplification while the current study used high input with minimal amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C95-C99 address discrepancies with prior work. The negative findings for Kcnma1 (C58-C59, C95) and CIRTs (C96) are clearly documented. The methodological explanation (C97-C99) is reasonable\u2014extensive amplification in prior studies could introduce artifacts. However, the discrepancy remains unresolved and alternative explanations are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Of 278 intron regions showing no ribosome occupancy or polyadenylation sites, most were depleted in projections and corresponded to known snoRNAs, scaRNAs, or detained introns, but many others were both abundant and enriched in projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C71-C74 describe the identification of a subset of intron regions that are nonpolyadenylated, non-coding, and projection-enriched. The classification is based on integration of multiple data types (RNAseq, ribosome profiling, PASseq) and the bimodal distribution is clearly shown in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C105"
+    ],
+    "result": "The study identified projection-enriched free circular introns with features of stable intronic sequence RNAs (sisRNAs), which are devoid of exon-intron junction reads, have higher read density on introns than flanking exons, lack polyadenylation and ribosome occupancy, and show a 20-30 nt gap in coverage at the 3' end. For 14 introns, circularly permuted reads revealed non-canonical branchpoints\u2014cytosine (n=12) or guanine (n=2) instead of the canonical adenosine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C75-C82, C105 describe the main discovery of the paper. The identification of free circular introns is supported by multiple lines of evidence: absence of EI/IE reads (C77), circularly permuted reads (C81), non-canonical branchpoints (C82), and lack of polyadenylation/ribosome occupancy (C79). The finding extends prior work on sisRNAs (C75-C76) by showing projection enrichment (C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The free circular introns appear to be lariats that escape debranching because the spliceosome can use C or G as branchpoint nucleotides but the debranching enzyme is inefficient at hydrolyzing 2'-5' linkages at these residues, making such lariats more stable. However, whether they exist as lariats (with 3' tail) or 2'-5' circles (without tail) is uncertain due to potential cloning failure of short tails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C83-C85 provide a mechanistic explanation for the stability of these introns. The inefficiency of debranching enzyme at C/G branchpoints (C83) is supported by citation to prior biochemical work. The inference that this explains stability (C84) is logical. The uncertainty about lariat vs. circle structure (C85) is appropriately acknowledged as a technical limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Sequence analysis of the 14 free introns revealed that their 5' and 3' splice sites conform to standard consensus sequences, but their branchpoint follows a CC consensus 17-49 nucleotides upstream of the 3' splice site. Despite the apparent importance of the C branchpoint for stability, neither the branchpoint nor the intron sequences show notable phylogenetic conservation beyond splice sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 describe sequence features of the free introns. The sequence logo analysis (C86-C87) is appropriate and the CC consensus at the branchpoint is clearly shown. The lack of conservation (C89-C90) is important for interpreting function and is well-documented. The apparent paradox (C branchpoint seems important but isn't conserved) is noted but not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "smFISH validation confirmed the localization patterns of detained (Srsf5-intron5), retained (Sept3-intron10), and free (Creld1-intron4) introns. Constitutively spliced introns were nuclear-only, the detained intron was nuclear at higher copy number, the retained intron was detectable in projections with exon-intron colocalization, and the free intron was detectable in both nuclei and distal projections without exon colocalization outside the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 provide critical orthogonal validation of the three intron classes using smFISH. The distinct localization patterns (nuclear for constitutive/detained, projection-present for retained/free) and the lack of exon-intron colocalization for free introns (C70) strongly support the interpretation that these are indeed free introns rather than unspliced transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors note that cytoplasmic accumulation of stable circular introns (sisRNAs) was previously reported across diverse cell types and species, but these introns generally lack sequence conservation and interspecies overlap, strongly disfavoring evolutionarily conserved function. The authors propose sisRNAs are likely gene expression byproducts with little functional consequence, and that C/G branchpoint substitutions are tolerated at low frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 place the findings in context of prior work and propose an interpretation. The citation to Talhouarne and Gall (C100-C101) is appropriate. The inference that lack of conservation disfavors function (C102) is reasonable but not definitive\u2014some functional RNAs lack sequence conservation. The hypothesis that these are byproducts (C103-C104) is plausible but remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors propose that the apparent enrichment of free circular introns in projections may not reflect active localization but rather passive diffusion, because RNAseq measures relative abundance and these introns lack ribosome occupancy. They hypothesize that mRNAs are tethered by polyribosomes in cell bodies while untethered stable noncoding RNAs diffuse freely throughout the cell, aided by cytoplasmic mixing from active transport of organelles in narrow projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C112 present a hypothesis to explain projection enrichment. The distinction between relative and absolute abundance (C106) is valid. The hypothesis about differential diffusion based on ribosome engagement (C107-C108) is supported by citation to prior work on Actb (C109). However, this remains speculative\u2014no direct measurements of diffusion, absolute abundance, or ribosome tethering are provided. Alternative mechanisms (e.g., differential stability, nuclear export) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors address the long-standing puzzle of ribosomal protein (RP) mRNA enrichment in neuronal projections, which has been consistently observed across studies. They propose that this enrichment may be explained by low ribosome engagement of RP mRNAs in neurons (30-40% as free mRNPs vs. ~10% for other mRNAs), allowing them to diffuse more freely like the free circular introns, rather than by active transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C42, C113-C118 address RP mRNA enrichment. The observation of RP mRNA enrichment is well-documented (C40-C42, C113) and the puzzle is real (C114). The hypothesis that low ribosome engagement explains enrichment (C116-C118) is creative and supported by prior data on polysome association (C116). However, this remains speculative\u2014no direct evidence is provided that RP mRNAs in projections are indeed ribosome-free, or that this explains their distribution. The recent finding that some RP mRNAs are translated in axons (C115) complicates this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The free circular introns lack ribosome occupancy, sequence conservation, and known localization signals, and their function, if any, is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 summarize key negative findings about the free introns. Lack of ribosome occupancy (C4) is supported by ribosome profiling data. Lack of conservation (C5) is shown by phyloP analysis. Lack of known localization signals (C6) is based on sequence analysis. The statement that function is unknown (C7) is appropriately cautious. These negative findings are important for interpreting the biological significance.",
+    "result_type": "MAJOR"
+  }
+]

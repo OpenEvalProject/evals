@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C44",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Polyploid cells accumulate in the adult Drosophila brain with age. Flow cytometry analysis shows that newly eclosed adult flies are 98-99% diploid, but polyploid cells (4C to >16C DNA content) appear as early as 7 days post-eclosion and continue to accumulate until 21 days, after which levels plateau. This pattern is observed in both males and females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36, C44, C47-C51 are well-supported by flow cytometry data presented in Figure 1A,B and supplementary figures. The temporal progression of polyploidy accumulation is documented with appropriate sample sizes (n=10) and statistical analysis. The plateau after 3 weeks is consistently observed across multiple measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Different genetic backgrounds and Drosophila species show variation in polyploidy levels. Oregon-R flies exhibit lower polyploidy levels in the first two weeks compared to w1118 and Canton-S strains. D. americana and D. mauritiana also show polyploidy accumulation but with different levels between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by flow cytometry data in Figure 1C comparing different strains and species. However, the sample sizes for non-melanogaster species appear limited (n=2 per timepoint with 3 brains pooled), which reduces confidence in the magnitude of differences observed. The conclusion about genetic background influence is reasonable but would benefit from larger sample sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The majority of polyploid cells in the adult brain are tetraploid (4C), with a smaller fraction showing >4C DNA content. The proportion of >4C cells increases during the first week of adulthood but remains relatively stable thereafter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by flow cytometry data in Figure 1D showing the distribution of ploidy levels over time. The stacked bar plot clearly demonstrates that 4C cells predominate among polyploid populations, with consistent methodology for distinguishing ploidy levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The optic lobes exhibit the highest levels of polyploidy in the adult brain. Regional dissection and flow cytometry analysis reveals that while the central brain and VNC show low levels of polyploidy that increase with age, most polyploidy originates from the optic lobes, where over 20% of cells can be polyploid by 3 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C58-C60 are well-supported by flow cytometry data in Figure 1E comparing dissected brain regions. The regional specificity is clearly demonstrated with appropriate controls and replication (n=3). This is a key finding that focuses subsequent mechanistic investigations on the optic lobes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Polyploidy in the optic lobes is independent of light exposure and photoreceptor function. Canton-S flies reared in complete darkness show similar polyploidy levels to controls, and glass60j mutants lacking photoreceptors still exhibit polyploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by flow cytometry data in Figure 1\u2014figure supplement 2A,B. These control experiments appropriately test whether the high polyploidy in optic lobes is simply due to light-induced damage or photoreceptor activity. The negative results strengthen the conclusion that polyploidy is an intrinsic aging phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Multiple types of neurons and glia become polyploid in the adult brain after terminal differentiation. Using cell-type-specific GAL4 drivers, approximately 5-7% of neurons (nSyb-GAL4) and glia (Repo-GAL4) show polyploidy by 2 weeks. SPGs and tracheal cells contribute less than 8% of total polyploid cells, indicating that 90% of polyploid cells arise from previously diploid neurons and glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C63-C73 are well-supported by flow cytometry data using cell-type-specific drivers in Figure 2. The quantification of different cell type contributions is methodologically sound, using GFP/RFP labeling combined with DNA content analysis. The conclusion that most polyploidy arises from neurons and glia (not SPGs or trachea) is mathematically justified based on the proportions measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Cell fusion does not significantly contribute to polyploidy in the adult optic lobes. CoinFLP labeling experiments show very few double-labeled cells when labeling is induced early in development, indicating minimal cell fusion even with aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by CoinFLP experiments in Figure 3. The experimental design appropriately tests for cell fusion by labeling cells early and looking for double-labeled cells in aged brains. The low frequency of double-labeled cells (<12 per optic lobe) effectively rules out cell fusion as a major mechanism. However, the authors acknowledge that some double-labeled cells likely represent polyploid SPGs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Polyploid cells arise through cell cycle re-entry and genome endoreduplication. Late-FLP CoinFLP experiments show approximately 300 double-labeled cells per optic lobe in 14-day-old brains when labeling is induced in adults, indicating genome replication in heterozygous cells. 97% of double-labeled cells show >2C DNA content by FACS, confirming they are polyploid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 are well-supported by CoinFLP experiments in Figure 4. The logic is sound: if cells become polyploid by genome replication after labeling, heterozygous cells will contain multiple copies of the transgene and can be double-labeled. The contrast between early-FLP (no double-labeled cells) and late-FLP (many double-labeled cells) strongly supports endoreduplication. DAPI quantification and FACS validation (Figure 4\u2014figure supplement 2) confirm that double-labeled cells are indeed polyploid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Knockdown of DNA replication licensing factors modulates polyploidy levels in neurons. RNAi-mediated knockdown of cdc6 significantly reduces polyploidy from ~25% to ~14% in optic lobes, while geminin knockdown increases polyploidy, suggesting that postmitotic neurons reactivate DNA replication machinery to become polyploid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by flow cytometry data in Figure 4G showing effects of cdc6 and geminin manipulation. The use of replication licensing factors is mechanistically appropriate for testing whether polyploidy involves cell cycle re-entry. However, the manuscript lacks details on RNAi efficiency/validation and whether the manipulations affect cell viability or other cellular processes. Statistical significance is shown but sample size (n=3) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C38",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "DNA damage accumulates with age specifically in the optic lobes, correlating with elevated polyploidy. RNA-seq analysis shows upregulation of DNA damage response and repair genes in 21-day optic lobes compared to 2-day, with stronger enrichment than at 7 days. pH2AV immunostaining confirms higher DNA damage levels in aged optic lobes versus central brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C38, C89-C95 are supported by RNA-seq data (Figure 5A,B) and pH2AV immunostaining (Figure 5C-E). The GO term analysis appropriately identifies DNA damage response pathways, and the regional specificity to optic lobes is consistent with polyploidy patterns. However, the RNA-seq has limited replication (n=3 biological replicates) and the pH2AV quantification method (5 ROIs per brain, n=5 brains) could be more robust. The correlation between DNA damage and polyploidy is suggestive but not definitively causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The optic lobes show upregulation of both canonical DNA damage response genes and head radiation-induced p53-dependent (hRIPD) genes with age. Genes including FANCI, loki, rad50, xrp1, Ku80, Irbp, and others are robustly upregulated at 7 and 21 days in optic lobes but not in central brain or VNC. Cell cycle genes (myc, cyclin D, orc1) are also specifically upregulated in optic lobes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 are supported by RNA-seq data in Figure 5F. The identification of both canonical and hRIPD gene signatures is interesting and appropriately referenced to prior work (Kurtz et al., 2019). However, the modest upregulation of p53 itself (C99) raises questions about the mechanistic role of p53 in this context, which the authors address in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Polyploidy accumulation in neurons is p53-independent. Overexpression of wildtype or dominant-negative p53 in neurons does not significantly alter polyploidy levels at 7 days, and does not affect cell death rates, suggesting a non-canonical role for p53 in the aging brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by flow cytometry data in Figure 6A and cell death measurements in Figure 6\u2014figure supplement 1B. The use of both wildtype and dominant-negative p53 is appropriate for testing p53 dependence. Sample size is adequate (n=5). The conclusion is consistent with recent literature suggesting non-canonical p53 functions. However, the lack of effect could also reflect insufficient p53 overexpression or compensatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C37",
+      "C107",
+      "C108",
+      "C109",
+      "C162",
+      "C163"
+    ],
+    "result": "Oxidative stress induces earlier onset of polyploidy without increasing cell death. Treatment with 2 mM paraquat from eclosion leads to increased DNA damage and significantly elevated polyploidy at 7-14 days compared to controls, but does not increase cell death, suggesting polyploidy is an adaptive response to oxidative damage in young animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C37, C107-C109, C162-C163 are supported by flow cytometry and pH2AV staining data in Figure 6B,D and Figure 6\u2014figure supplement 1D,E. The paraquat dose (2 mM) is appropriately low to induce oxidative stress without acute toxicity. The temporal analysis showing earlier polyploidy without increased cell death supports an adaptive interpretation. Statistical analysis is appropriate with adequate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Exogenous DNA damage from UV radiation induces polyploidy in young flies. Treatment with 900 mJ UV at 2 days post-eclosion significantly increases polyploidy by day 7. An acute increase in cell death is observed 16 hours post-UV exposure, but cell death returns to normal by 5 days, suggesting that cell death precedes polyploidy accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C110-C113 are supported by flow cytometry and PI incorporation data in Figure 6C,E. The temporal relationship between cell death (acute at 16h) and polyploidy (increased at 5-7 days) is well-documented. However, the inference that cell death \"precedes\" polyploidy (C113) is somewhat ambiguous\u2014it could mean that surviving cells become polyploid, or that cell death triggers compensatory polyploidy in neighboring cells. The data support the temporal sequence but don't definitively establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C10",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Polyploid cells are more resistant to cell death than diploid cells. PI incorporation assays show that the adult brain maintains a steady ~5% level of dead/dying cells from day 7 to 56, with variability between animals. When comparing diploid versus polyploid populations, ~7% of diploid cells incorporate PI while only ~2.5% of polyploid cells do, indicating enhanced survival of polyploid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C10, C114-C120 are supported by PI incorporation data in Figure 6F,G. The methodology of pooling brains to obtain sufficient polyploid cells for ploidy-specific cell death analysis is reasonable given the low frequency of dead cells. The differential PI incorporation between diploid and polyploid populations is statistically significant and biologically meaningful. However, the pooling approach prevents assessment of animal-to-animal variation in this specific measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Polyploid cells in aged brains are resistant to DNA damage-induced cell death. When 21-day-old flies are exposed to 480 mJ UV, high levels of PI incorporation (~24.5% of diploid cells) are observed at 24 hours, but polyploid cells show very low PI incorporation (~3.1%), indicating that polyploid cells are protected from UV-induced cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 are supported by flow cytometry data in Figure 6H,I. The experimental design appropriately tests whether polyploidy confers protection by examining aged brains with established polyploidy. The dramatic difference in cell death rates between diploid and polyploid cells (24.5% vs 3.1%) is striking and statistically robust. This is a key finding supporting the protective role of polyploidy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Aged animals lose the ability to increase polyploidy in response to damage. UV exposure of 21-day-old flies causes an initial 4% increase in polyploidy at 48 hours, which can be attributed to selective loss of diploid cells. No further increase in polyploidy is observed between 48 hours and 5 days post-exposure, suggesting a permissive window for damage-induced polyploidy that closes after 3 weeks of age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129, C165-C167 are supported by flow cytometry data in Figure 6J. The calculation showing that the 48h increase in polyploidy proportion matches the expected effect of diploid cell loss (C127) is mathematically sound and demonstrates careful analysis. The contrast with younger animals (who can increase polyploidy in response to damage) supports the concept of an age-dependent permissive window. However, the mechanism underlying this age-dependent loss of plasticity is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C130",
+      "C131",
+      "C173",
+      "C174"
+    ],
+    "result": "The authors propose that polyploidy serves a protective role in the aging brain. Based on the collective data, they suggest that cells in the early adult brain undergo endoreplication in response to DNA damage and oxidative stress, and that polyploid cells are more resistant to cell death, potentially serving a beneficial or neuroprotective function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C130-C131, C173-C174 represent the authors' overall model and interpretation. While these are speculative conclusions, they are well-supported by the convergent evidence from multiple experiments: (1) polyploidy accumulates with age and DNA damage, (2) damage induces earlier polyploidy, (3) polyploid cells are more resistant to cell death, and (4) polyploidy arises through endoreduplication not fusion. The model is reasonable and testable, though direct functional evidence (e.g., preventing polyploidy and showing increased cell death or neurodegeneration) would strengthen the protective role claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Cell proliferation and DNA replication cease in the pupal brain after 24 hours APF under normal conditions, with only mushroom body neuroblasts continuing to divide in late pupa. This confirms the postmitotic state of the adult brain and validates the flow cytometry assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by flow cytometry data in Figure 1\u2014figure supplement 1E and citations to previous literature. This is an important validation showing that the flow cytometry method can detect the known cessation of cell cycling during pupal development and the exception of mushroom body neuroblasts. This establishes baseline expectations for the adult brain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C159"
+    ],
+    "result": "A steady decline in total cell number occurs in the adult Drosophila brain with age. Flow cytometry-based cell counts show progressive cell loss that matches the predicted rate based on the observed ~5% steady-state cell death level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C159 is supported by cell count data in Figure 6\u2014figure supplement 1C and citations to previous literature. The agreement between observed cell counts and predicted cell loss based on death rates provides internal consistency. However, the manuscript provides limited methodological detail on how total cell counts were determined by flow cytometry, and whether this accounts for potential changes in cell dissociation efficiency with age.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "RNA-seq data suggest compromised metabolism with age across all brain regions, with downregulation of metabolism, transmembrane transport, and cellular respiration genes. The authors speculate that polyploidization in astrocyte and cortex glial cells might increase metabolic output to compensate for reduced metabolic function in the aging brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C153 are supported by RNA-seq data in Figure 5\u2014figure supplement 1 showing downregulated GO terms. However, claim C154 is highly speculative with no direct evidence that polyploid glia have increased metabolic output or that this compensates for metabolic decline. This hypothesis is reasonable but would require functional metabolic measurements in polyploid versus diploid glia to be supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C142",
+      "C146",
+      "C147",
+      "C160",
+      "C161"
+    ],
+    "result": "The authors propose several speculative functions for polyploidy in the brain: maintaining cell-cell contacts during cell loss, forming additional synaptic connections to compensate for lost cells, increasing soma size and dendritic arbors, and responding to continual cell loss analogous to wound-induced polyploidy in other tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142, C146-C147, C160-C161 are speculative hypotheses about polyploidy function that are not directly tested in this study. While these are reasonable possibilities based on polyploidy functions in other tissues and the organized structure of the optic lobes, they remain conjectures. The authors appropriately present these as possibilities rather than conclusions, but no experimental evidence is provided to distinguish between these potential functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C158"
+    ],
+    "result": "The authors speculate that re-entering the cell cycle may allow postmitotic cells to repair DNA damage better through homology-directed repair mechanisms available in S/G2 phases, rather than relying on error-prone non-homologous end joining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C158 is a speculative hypothesis about the mechanism by which polyploidy might be protective. While the logic is sound (homology-directed repair requires S/G2 phase), there is no direct evidence in this study that polyploid cells actually use homology-directed repair more effectively, or that this is the mechanism of protection. This would require measuring DNA repair pathway usage in diploid versus polyploid cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C164"
+    ],
+    "result": "The authors infer that in older animals, polyploidy can protect from acute cell loss based on the observation that polyploid cells are more resistant to UV-induced death in 21-day-old flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C164 is supported by the UV treatment experiments in aged flies (Figure 6H-J) showing that polyploid cells have much lower death rates than diploid cells. However, the claim that this \"protects from acute cell loss\" at the tissue level is an inference\u2014the data show cellular resistance but don't directly demonstrate tissue-level protection or functional preservation. The inference is reasonable but goes slightly beyond what is directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "In geriatric animals (beyond 4 weeks), increased variation in polyploidy levels and extreme cell death in a subset of animals is observed, which the authors speculate may represent a fraction of the aged population exhibiting neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C176-C177 are supported by observations in the data (Figure 6), but claim C178 is highly speculative. While the observation of outlier animals with extreme cell death is interesting, there is no characterization of whether these animals show other signs of neurodegeneration (behavioral deficits, protein aggregation, etc.). The speculation is reasonable but unsupported by additional evidence.",
+    "result_type": "MINOR"
+  }
+]

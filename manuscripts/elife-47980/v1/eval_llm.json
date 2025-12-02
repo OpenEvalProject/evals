@@ -1,0 +1,621 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "STITCH is a synthetic DNA cassette composed of seven CTCF-binding sites (L1-L4 oriented towards Tfap2c, R1-R3 towards Bmp7) derived from the mouse TZ region, with embedded tetO sequences and a puromycin resistance gene for selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 describe the design and composition of STITCH. The claims are explicitly stated in the text and supported by Figure 1A and Supplementary file 1B. The design is based on prior work (C1, C3) and includes functional elements (tetO, loxP sites) that are well-characterized in the literature (C6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "MYC is highly expressed in human pluripotent stem cells and is regulated by long-range enhancers, with a super-enhancer region annotated within the PVT1 gene based on H3K27ac ChIP-seq and ChIP-STARR-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 establish the biological context for studying MYC regulation. These claims are supported by multiple citations to prior work (C8, C9, C11, C12) and experimental data from the current study (C13, Figure 1B). The characterization of the MYC locus is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "STITCH inserted at +30kb between MYC and the PVT1 enhancer blocks chromatin contacts and strongly down-regulates MYC expression, while insertions at other positions do not, demonstrating that STITCH functions as an insulator when placed between a gene and its enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C22 describe the core functional demonstration of STITCH. The claims are supported by 4C-seq data (C16, C17, Figure 1C), gene expression data (C18, Figure 1D), nChIP-seq data (C21, Figure 1\u2014figure supplement 1C), and deletion experiments (C20). The convergence of multiple experimental approaches strongly supports the insulator function of STITCH.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "MYC carries two CTCF-binding sites directed to the right side near the promoter, which may account for the directional bias of MYC contact towards the right side, and a CTCF-binding site at the left boundary of the large contact domain defines the extent of MYC contacts in STITCH+30kb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 describe endogenous CTCF-binding sites identified in the study. The claims are supported by nChIP-seq data and 4C-seq data (Figure 1C). The inference about directional bias (C24) is reasonable given the orientation of CTCF sites and the observed contact patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "STITCH+30kb and del(30-440) produce similar transcriptomic changes, with down-regulated genes enriched for MYC targets, but STITCH+30kb shows a stronger effect than del(30-440), suggesting PVT1 has little impact as a trans-acting lncRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C37 describe RNA-seq results comparing STITCH+30kb and del(30-440). The claims are supported by RNA-seq data (Figure 2A-E, Figure 2\u2014figure supplement 1), GSEA analysis (C29, C30), and differential expression analysis (C31-C34). The inference about PVT1 (C36) is reasonable given the similarity in transcriptomic changes despite PVT1 remaining intact in STITCH+30kb.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "STITCH+440kb does not affect MYC expression when the locus is intact, but upon deletion of the +(30-440)kb enhancer, MYC contacts extend beyond +440kb, suggesting MYC might be slightly activated by regions beyond +440kb in del(30-440), accounting for its milder phenotype compared to STITCH+30kb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 explain the difference in phenotypic severity between STITCH+30kb and del(30-440). The claims are supported by 4C-seq data (Figure 1C, E) and gene expression data (Figure 1D). The speculation in C40 is reasonable given the observed extension of contacts in del(30-440).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Down-regulated genes in STITCH+30kb and del(30-440) are enriched for known MYC target pathways including cell cycle progression, unfolded protein response, TCA cycle, mTORC1 signaling, cholesterol synthesis, and ribosome assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 describe functional enrichment analysis of down-regulated genes. The claims are supported by GSEA (Figure 2E) and GO enrichment analysis (Figure 2\u2014figure supplement 1B), with multiple citations to prior work linking MYC to these pathways. The analysis is appropriate and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Serial deletion and inversion mutations of CTCF-binding sites within STITCH progressively restore MYC expression, with the divergent configuration (intact STITCH and inv(L1-R3)) showing the strongest repression, while complete removal of CTCF sites (del(L1-R3)) fully restores MYC expression to wild-type levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 describe systematic mutagenesis of STITCH. The claims are supported by gene expression data (Figure 3A) and are consistent with prior work on the endogenous TZ (C43). The progressive restoration of MYC expression with stepwise removal of CTCF sites provides strong evidence for the role of CTCF in insulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The contact frequency between MYC and the +(30-440)kb enhancer region correlates with MYC expression levels across STITCH mutants, with the divergent CTCF configuration blocking contacts most strongly, and the more CTCF binding sites present, the stronger the blocking effect. The expression level fits a power-law model with contact frequency (scaling exponent 4.1-4.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C59 describe 4C-seq analysis of STITCH mutants. The claims are supported by 4C-seq data (Figure 3B, Figure 3\u2014figure supplement 2A), correlation analysis (C57), and power-law modeling (C58). The high Spearman correlation coefficients (0.90-0.92) and consistency with prior work (C54) strongly support these claims. The power-law relationship is an interesting quantitative finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "STITCH insertion introduces a skewed change in chromatin folding directionality across the insertion site, with array L orienting directionality towards the left and array R enhancing rightward directionality. However, the delL allele maintains overall rightward directionality, suggesting that neither diverging CTCF configuration nor diverging folding directionality is a prerequisite for enhancer blocking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C70 describe directionality analysis of chromatin folding. The claims are supported by 4C-seq data from multiple viewpoints (Figure 3\u2014figure supplement 3). The key inference (C70) that diverging directionality is not required for enhancer blocking is well-supported by the delL data (C69), which shows blocking despite maintaining rightward directionality. This is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "VP-STITCH-left and VP-STITCH-right show enhanced contacts with the borders of large contact domains, possibly representing loop formation by STITCH, but these contacts are not very striking, and more comprehensive methods like 5C or Hi-C are needed to fully describe the conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C74 acknowledge limitations in the current analysis. The speculation about loop formation (C71) is tentative, and the authors appropriately note that the contacts are not striking (C72) and that better methods are needed (C74). This is an honest assessment of the data's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "PCA of 4C-seq contact frequencies segregates blocking and non-blocking STITCH alleles, with segregation explained by differential contact frequencies in the left and right regions. The right 600kb region contains bins that characteristically alter contact tendency with MYC depending on STITCH presence, while the left 900kb region does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C85 describe PCA analysis of 4C-seq data. The claims are supported by PCA plots and component loading plots (Figure 3C-H). The analysis appropriately separates effects of CTCF presence from directionality bias (C77-C79) and identifies specific regions that respond to STITCH insertion (C84-C85). The PCA approach is well-executed and provides unbiased quantitative support for the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "MYC has preferential contacts with the super-enhancer/PVT1 region compared to other non-active regions in the absence of CTCF insulation. The power-law scaling of MYC expression with PVT1 contact frequency has a slightly lower exponent (3.6-3.7) than with the +(30-440)kb region (4.1-4.3), and CTCF insulation selectively disrupts gene-enhancer contacts more than contacts with neutral regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 describe preferential gene-enhancer interactions. The claims are supported by PCA analysis (Figure 3H), power-law modeling (C88, C89, Figure 3I, J), and are consistent with prior work (C92). The finding that CTCF selectively disrupts gene-enhancer contacts (C91, C93) is an important mechanistic insight that helps explain the large effect on gene expression despite modest changes in overall contact frequency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "STITCH insulation causes MYC to transition from an exclusively H3K4me3-marked active state to an intermediate state with both decreased H3K4me3 and increased H3K27me3, while PVT1 and control genes maintain their histone marks. The epigenetic changes are specific to MYC and correlate with gene expression levels across STITCH mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C104 describe histone modification changes upon STITCH insulation. The claims are supported by nChIP-seq data (Figure 4A-E, Figure 4\u2014figure supplement 1) and nChIP-qPCR data (Figure 4F, G). The specificity of changes to MYC (C102) and the correlation with expression levels (C104) are well-demonstrated. The finding that MYC adopts an intermediate epigenetic state (C103) is interesting and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The KRAB domain linked to tetR induces heterochromatin formation at tetO sites and can impair CTCF binding. In STITCH/KRAB cell lines, MYC expression is repressed in the presence of DOX but activated after DOX removal, with 1 ng/ml DOX sufficient to achieve STITCH insulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 describe the development of the inducible STITCH/KRAB system. C105 is supported by citations to prior work. C107 and C108 are supported by gene expression data (Figure 5C, D). The hypothesis in C106 is reasonable given prior work (Jiang et al., 2017) and is validated by the subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "In the presence of DOX, STITCH shows no H3K9me3 enrichment, strong CTCF binding, and blocks MYC-PVT1 contacts. In the absence of DOX, H3K9me3 becomes highly enriched at STITCH, CTCF binding is strongly reduced, and MYC contacts extend to the enhancer region. The CTCF-binding sites at STITCH are the most significantly altered peaks genome-wide upon DOX removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 describe the functional characterization of the STITCH/KRAB system. The claims are supported by nChIP-seq data for H3K9me3 and CTCF (Figure 5E, F, Figure 5\u2014figure supplement 1E-I), 4C-seq data (Figure 5G, Figure 5\u2014figure supplement 1M), and genome-wide analysis (C115, Figure 5\u2014figure supplement 1F). The convergence of multiple lines of evidence strongly supports the drug-inducible control of STITCH insulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The KRAB domain is required to expel CTCF binding, as tetR-3xFLAG-HA does not affect CTCF binding or MYC expression. Binding of transcription factors does not impair CTCF binding. The re-association with the enhancer upon KRAB-dependent displacement of CTCF leads to MYC activation, demonstrating that the STITCH/KRAB system functions as a drug-inducible topological insulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 provide critical controls and mechanistic insights. The claims are supported by nChIP-qPCR and gene expression data (Figure 5\u2014figure supplement 1B, J, K, L, C). The control experiments (C116, C118, C120) rule out alternative explanations and demonstrate the specificity of the KRAB effect. The conclusion (C122) is well-supported by the totality of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "16-24 hours, but not 8 hours, are sufficient to almost completely switch STITCH insulation and MYC expression upon both removal and addition of DOX. Addition of DOX for five days results in about 40% reduction in cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 describe the kinetics and functional consequences of STITCH/KRAB switching. The claims are supported by time-course data from nChIP-qPCR, 4C-seq, and gene expression assays (Figure 6A-E) and cell proliferation assays (Figure 5\u2014figure supplement 1N). The time-course data are important for understanding the dynamics of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The H3K4me3 mark returns to expected levels within 24 hours after DOX removal/addition, while H3K27me3 does not. MYC expression changes within one day, but H3K27me3 deposition is significantly different at 24 hours compared to 72 hours and controls, suggesting that the repressive histone mark follows, but does not precede, gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 describe the temporal relationship between histone modifications and gene expression. The claims are supported by time-course nChIP-qPCR data (Figure 6F, G, Figure 7A-F). The inference that H3K27me3 follows rather than precedes expression changes (C127, C131) is well-supported by the temporal data and is an important mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Treatment with the EZH2 inhibitor EPZ-6438 at 200 nM for two days diminishes the H3K27me3 mark at MYC without significantly increasing H3K4me3 or affecting MYC expression in any allele. MYC expression profiles show no significant difference between EPZ and DMSO treatments after DOX removal, suggesting that the H3K27me3 mark does not affect gene activation by the enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 describe EPZ-6438 inhibitor experiments testing the functional role of H3K27me3. The claims are supported by nChIP-qPCR data (Figure 7G, H) and gene expression data (Figure 7I, J). The finding that H3K27me3 removal does not affect MYC activation (C135) is a strong test of the hypothesis that H3K27me3 is a consequence rather than a cause of repression. The experimental design is appropriate and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "NEUROG2 is a proneural gene expressed in neural progenitor cells. In the mouse embryonic brain, tissue-specific H3K27ac peaks are present over the neighboring gene Alpk1, suggesting these are neural enhancers for Neurog2. NPCs can be efficiently derived from human pluripotent stem cells by dual SMAD inhibition, and these NPCs exhibit prominent H3K27ac marks over ALPK1, suggesting these enhancers activate NEUROG2 in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C140 establish the biological context for testing STITCH at the NEUROG2 locus. The claims are supported by citations to prior work (C136, C138) and published data (C137, C139, Figure 8A, Figure 8\u2014figure supplement 1). The inference that ALPK1 enhancers activate NEUROG2 (C140) is reasonable given the H3K27ac data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "STITCH was inserted 65 kb downstream of NEUROG2 near ALPK1 in iPSCs, with insertion into only one allele. After piggyBac transposition of tetR-KRAB, cells were expanded as a bulk population. MYC expression levels in NEUROG2/KRAB cells did not change with DOX, confirming that tetR-KRAB controls MYC expression only through the STITCH+30kb insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C144 describe the experimental setup for testing STITCH at the NEUROG2 locus. The claims are explicitly stated in the text. The control experiment (C144, Figure 8\u2014figure supplement 2A) is important for demonstrating the specificity of the STITCH/KRAB system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Neural differentiation by dual SMAD inhibition efficiently induces NPCs, as shown by NANOG downregulation and PAX6 upregulation. NEUROG2 is activated from day 4 and is significantly less expressed in DOX-treated cells on day 4, though the difference is milder and not significant on day 6. The tetR-KRAB expression level progressively decreases during differentiation, possibly due to transgene silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C152 describe the neural differentiation experiments. The claims are supported by gene expression data (Figure 8C, Figure 8\u2014figure supplement 2B). The finding that NEUROG2 is significantly reduced on day 4 (C149) demonstrates that STITCH/KRAB can function in a different locus and cell type. The speculation about transgene silencing (C152) is reasonable given the observed decrease in tetR-KRAB expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "In both iPSCs and NPCs, tetR-KRAB induces H3K9me3 and expels CTCF binding in the absence of DOX. Contacts of NEUROG2 with the ALPK1 region beyond STITCH are reduced by DOX addition in both cell types. PCA of 4C-seq data segregates NPCs/iPSCs along PC1 and DOX+/- along PC2, with the PC2 component loading plot showing a changing point exactly at the STITCH insertion site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C157 demonstrate that STITCH/KRAB functions at the NEUROG2 locus in both iPSCs and NPCs. The claims are supported by nChIP-qPCR data (Figure 8D, E), 4C-seq data (Figure 8F), and PCA analysis (Figure 8\u2014figure supplement 2C). The unbiased identification of the STITCH insertion site by PCA (C157) is particularly compelling evidence for the system's functionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "4C-seq from VP-R3 shows that DOX addition strongly extends contacts to further distances, reflecting extrusion-mediated contacts of CTCF-binding sites at STITCH. The leftward extension of contacts indicates that 4C-seq captures the effect of the leftward CTCF array L1-L4. These results are consistent with STITCH blocking chromatin contacts of NEUROG2, demonstrating that the STITCH/KRAB system can be used in different loci and cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C163 provide additional characterization of STITCH function at the NEUROG2 locus. The claims are supported by 4C-seq data from VP-R3 (Figure 8\u2014figure supplement 2D-G). The conclusion that STITCH/KRAB is generalizable (C163) is well-supported by the successful application to a different locus and cell type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "STITCH blocks gene-enhancer interactions when inserted between them as an insulator element. Combining STITCH with DOX control of tetR-KRAB achieves drug-inducible switching of insulation, adding a new layer to toolkits for manipulating gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C166 summarize the main findings of the study. The claims are supported by the totality of the experimental evidence presented in the manuscript. The conclusion that STITCH/KRAB adds a new tool for manipulating gene expression (C166) is justified given the demonstrated functionality at two different loci in different cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The insulation activity and folding property of STITCH depend on the orientation of CTCF-binding motifs, consistent with the endogenous TZ region. It is safe to attribute STITCH insulation primarily to CTCF binding, which is consistent with previous studies showing that heterologously inserted CTCF-binding sites block enhancer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C169 provide mechanistic interpretation of the results. The claims are supported by the mutagenesis data (Figure 3), consistency with prior work on the TZ (C167), and citations to previous studies (C169). The conclusion that STITCH insulation is primarily due to CTCF binding (C168) is well-supported by the experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "CTCF establishes contact domain boundaries through blocking cohesin extrusion, and numerous studies show that CTCF-binding sites insulate enhancer activation. However, whether contact domains are the entity that regulates gene-enhancer interaction is elusive. Recent imaging studies suggest contact domains might be averaged projections of variable chromatin structures. The analysis of the delL allele may indicate that CTCF can prevent gene-enhancer interaction without demarcating contact domains, but the study cannot conclude about the causality of contact domains for STITCH's enhancer blocking activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C170-C178 discuss the relationship between CTCF, contact domains, and enhancer blocking. The claims appropriately cite prior work (C170, C171, C173) and acknowledge limitations of the current study (C176-C178). The speculation about CTCF functioning without demarcating contact domains (C175) is interesting but acknowledged as uncertain. This is an honest assessment of what can and cannot be concluded from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "Small changes (at most by half) in contact frequency with the enhancer region lead to drastic reduction (up to 20-fold) in MYC expression. The contact of MYC with the super-enhancer/PVT1 region is enhanced more than with other non-active regions upon stepwise loss of CTCF-binding sites, which explains how gradual changes in contact frequency are translated into skewed expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C182 provide a key mechanistic insight into how CTCF insulation affects gene expression. The claims are supported by 4C-seq data (Figures 1, 3) and PCA analysis (Figure 3H-J). The finding that CTCF selectively disrupts gene-enhancer contacts more than contacts with neutral regions (C181, C182) is an important contribution that helps explain the large effect on gene expression despite modest changes in overall contact frequency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The genome is compartmentalized into active and repressive domains, and CTCF/cohesin depletion enhances compartmentalization. The preferential association of MYC with the super-enhancer may obey compartmentalization principles, with CTCF binding interrupting this process. The phase separation model may explain this, with increased contact frequency boosting compartmentalization in the absence of CTCF. Whether loop extrusion helps gene-enhancer association is unclear, though compartmentalization can occur without cohesin. CTCF might actively disrupt compartmentalized gene-enhancer association through anchoring cohesin loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C183-C191 propose mechanistic models for how CTCF affects gene-enhancer interactions. The claims cite relevant prior work (C183, C184, C189) and propose reasonable hypotheses (C185, C186, C190), but acknowledge uncertainty (C188, C191). These are speculative models that go beyond what the data directly demonstrate, though they are reasonable interpretations. The authors appropriately acknowledge the challenge of distinguishing between different mechanisms (C191).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "tetR-KRAB induction impairs CTCF binding at STITCH and restores MYC-enhancer contacts, likely due to heterochromatin formation (H3K9me3 deposition). The study shows that heterochromatin formation does not prevent gene-enhancer association. In certain contexts, KRAB might activate gene expression, contrary to its general role as a repressor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C199 provide mechanistic interpretation of the STITCH/KRAB system. The claims are supported by the experimental data (C192, C196) and citations to prior work (C194, C195, C197). The finding that KRAB can activate gene expression in certain contexts (C198) is an important and somewhat counterintuitive result that is well-supported by the data. The suggestion for future work (C199) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "The STITCH/KRAB system has the unique advantage of targeting only one locus without affecting cellular and epigenetic states around the enhancer region, in contrast to other approaches. The system could be useful for tissue-specific gene disruption, as it requires only one insertion between a gene and enhancer, and can repeatedly switch gene expression on and off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C200-C207 discuss the advantages and potential applications of the STITCH/KRAB system. The claims are supported by the experimental data showing specificity (C200, Figure 4) and functionality (C206, C207). The comparisons to other methods (C201, C204) are reasonable. Some claims are speculative about future applications (C202, C203), but are reasonable given the demonstrated functionality of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217"
+    ],
+    "result": "STITCH functionality primarily relies on CTCF binding, and its generality depends on how robustly CTCF binds and blocks gene-enhancer interaction, and how robustly KRAB controls CTCF binding. The motif sequences robustly recruit CTCF in human iPSCs and NPCs, tetR-KRAB expels CTCF binding regardless of insertion site or cell type, and STITCH blocks chromatin contacts and enhancer activities in different contexts. These facts argue that STITCH should be applicable to various genomic and cellular contexts, though uncertainty remains about how CTCF interrupts gene-enhancer interaction, and STITCH might encounter cases where it does not work as expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C208-C217 discuss the generality and limitations of the STITCH system. The claims are supported by the experimental data from two different loci in different cell types (C212-C214). The conclusion about generality (C215) is well-supported, while the acknowledgment of uncertainty and potential limitations (C216, C217) is appropriate and honest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223"
+    ],
+    "result": "MYC is one of the four factors in the original pluripotency induction cocktail. In STITCH/KRAB cells, decreased MYC expression leads to decreased proliferation. Transcriptome analysis shows that MYC down-regulation decreases genes involved in cellular and metabolic processes that are known MYC targets in various cell types, suggesting that in iPSCs, MYC regulates cellular metabolism and proliferation through a specific set of target genes shared with other cell types including cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C218-C223 discuss the functional role of MYC in iPSCs. The claims are supported by citations to prior work (C218, C220), cell proliferation data (C219, Figure 5\u2014figure supplement 1N), and transcriptome analysis (C221, Figure 2). The inference about MYC function in iPSCs (C222) is well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235"
+    ],
+    "result": "STITCH insulation affects the epigenetic states of MYC, with H3K27me3 deposition following and reflecting, but not preceding or affecting, gene expression changes. This might seem contradictory to the prevailing notion of H3K27me3 as a repressor, but is consistent with previous reports and the mechanical property of repressive states as epigenetic memory. The experiment showed that H3K27me3 presence makes no significant difference in MYC activation upon local induction by the enhancer, challenging the hypothesis that H3K27me3 raises the threshold for gene activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C224-C235 describe the temporal relationship between H3K27me3 and gene expression and test the functional role of H3K27me3. The claims are supported by time-course data (C225, Figure 6, 7A-F) and EPZ-6438 inhibitor experiments (C234, Figure 7J). The finding that H3K27me3 does not affect gene activation (C234) is a strong test of the hypothesis and is well-supported. The discussion of prior work (C227-C233) appropriately contextualizes the findings. This is an important mechanistic contribution.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,2144 @@
+{
+  "submission": {
+    "id": "ed8d33cd-c5d4-4cf6-a42a-58e56a30ab94",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:42:36.202015Z",
+    "updated_at": "2025-12-02T15:42:36.202015Z"
+  },
+  "content": [
+    {
+      "id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "submission_id": "ed8d33cd-c5d4-4cf6-a42a-58e56a30ab94",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis for pharmacological modulation of the TRPC6 channel\n\n## Authors\n\n- Yonghong Bai<sup>1</sup> ([ORCID: 0000-0002-4334-0916](https://orcid.org/0000-0002-4334-0916)) \u2020\n- Xinchao Yu<sup>2</sup> \u2020\n- Hao Chen<sup>3</sup>\n- Daniel Horne<sup>4</sup>\n- Ryan White<sup>4</sup>\n- Xiaosu Wu<sup>5</sup>\n- Paul Lee<sup>6</sup>\n- Yan Gu<sup>3</sup>\n- Sudipa Ghimire-Rijal<sup>1</sup>\n- Daniel C-H Lin<sup>5</sup> \u2020\n- Xin Huang<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular Engineering, Amgen Research, Amgen Inc Cambridge United States\n2. Department of Molecular Engineering, Amgen Research, Amgen Inc South San Francisco United States\n3. Department of Protein Technologies, Amgen Research, Amgen Inc Cambridge United States\n4. Department of Medicinal Chemistry, Amgen Research, Amgen Inc Cambridge United States\n5. Department of Cardiometabolic Disorders, Amgen Research, Amgen Inc South San Francisco United States\n6. Department of Discovery Technologies, Amgen Research, Amgen Inc South San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTransient receptor potential canonical (TRPC) proteins form nonselective cation channels that play physiological roles in a wide variety of cells. Despite growing evidence supporting the therapeutic potential of TRPC6 inhibition in treating pathological cardiac and renal conditions, mechanistic understanding of TRPC6 function and modulation remains obscure. Here we report cryo-EM structures of TRPC6 in both antagonist-bound and agonist-bound states. The structures reveal two novel recognition sites for the small-molecule modulators corroborated by mutagenesis data. The antagonist binds to a cytoplasm-facing pocket formed by S1-S4 and the TRP helix, whereas the agonist wedges at the subunit interface between S6 and the pore helix. Conformational changes upon ligand binding illuminate a mechanistic rationale for understanding TRPC6 modulation. Furthermore, structural and mutagenesis analyses suggest several disease-related mutations enhance channel activity by disrupting interfacial interactions. Our results provide principles of drug action that may facilitate future design of small molecules to ameliorate TRPC6-mediated diseases.\n\n## Introduction\n\nThe mammalian TRPC subfamily consists of seven transmembrane proteins (TRPC1-7) that have been proposed to form non-selective cation channels in various cell types (Clapham et al., 2001; Venkatachalam and Montell, 2007). TRPC6 and its most close homologs TRPC3 and TRPC7 are unique among the TRPCs in that they can be directly activated by second messenger diacylglycerol (DAG) (Hofmann et al., 1999), a product of phospholipase C action. TRPC6-mediated cation influx regulates physiological function of pulmonary endothelial cells (Singh et al., 2007), smooth muscle cells (Dietrich et al., 2005) and glomerular podocytes (Reiser et al., 2005), whereas TRPC6 hyperactivity has been implicated in maladaptive tissue and organ remodeling (Reiser et al., 2005; Kuwahara et al., 2006; Onohara et al., 2006; Tian et al., 2010; Xie et al., 2012; Davis et al., 2012). Notably, upregulation of TRPC6 in myocytes plays a role in cardiac hypertrophy (Kuwahara et al., 2006; Onohara et al., 2006; Xie et al., 2012; Wu et al., 2010), and gain-of-function mutations of TRPC6 contribute to hereditary focal segmental glomerulosclerosis (FSGS), a renal disorder characterized by podocyte injury and a potential cause of end stage renal disease (Reiser et al., 2005; Heeringa et al., 2009; Ilatovskaya and Staruschenko, 2015; Mottl et al., 2013; Winn et al., 2005).\n\nDue to pathological roles of excessive TRPC6 activity, TRPC6 emerges as an important therapeutic target for pharmacological inhibition (Bon and Beech, 2013; Lin et al., 2019; Seo et al., 2014). However, development of potent and selective small-molecule antagonists of TRPC6 is hampered by limited understanding of the molecular mechanism of TRPC6 modulation. Recent cryo-electron microscopy (cryo-EM) structures of several TRPC channels elucidate their tetrameric assembly comprising a transmembrane domain and a cytoplasmic domain (Azumaya et al., 2018; Duan et al., 2019; Duan et al., 2018; Fan et al., 2018; Sierra-Valdez et al., 2018; Tang et al., 2018; Vinayagam et al., 2018). Despite identification of one antagonist-binding site in human TRPC6 (Tang et al., 2018) and multiple lipid-binding sites in human TRPC3 and mouse TRPC5\u00a0(Duan et al., 2019;\u00a0Fan et al., 2018) molecular contacts with the antagonist are not well defined because of limited resolution, and the function of observed lipids remains to be determined (Duan et al., 2019; Fan et al., 2018; Tang et al., 2018). Furthermore, since there is no TRPC structure with a known agonist, it is still elusive how TRPC channels are activated by DAG or other agonists.\n\nIn this study, we present two high-resolution cryo-EM structures of antagonist- and agonist-bound human TRPC6 in lipidic nanodiscs. Our structures identify two novel modulation sites in the transmembrane domain and reveal the binding modes of the small molecule antagonist and agonist, which were corroborated by functional data. Conformational changes between these two structures allow us to gain further insights into the mechanism of TRPC6 function and modulation. Overall, these findings provide a rational basis for small molecule drug design for the treatment of TRPC6-mediated diseases.\n\n## Results and discussion\n\n### Characterization of N-terminally truncated TRPC6\n\nAn N-terminally truncated (\u03942\u201372) human TRPC6 was engineered because residues corresponding to 2\u201372 of TRPC6 are missing in TRPC3 despite high overall sequence similarity between TRPC3 and TRPC6. TRPC6 (\u03942\u201372) showed enhanced biochemical stability and could be activated by oleoyl-2-acetyl-sn-glycerol (OAG), a soluble analog of the native lipid agonist DAG (Figure 1\u2014figure supplement 1a). We also evaluated the activity of TRPC6 (\u03942\u201372) in the presence of the antagonist AM-1473 and the agonist AM-0883 (Figure 1\u2014figure supplement 1b\u2013d). AM-1473, a small molecule antagonist with an IC50 of 0.22\u00a0\u00b1\u00a00.05 nM (n\u00a0=\u00a014) in our TRPC6 bioassay, is a structural analog of previously disclosed small molecule antagonist SAR-7334 (Maier et al., 2015). AM-0883, a novel TRPC6 agonist with an EC50 of 45.5\u00a0\u00b1\u00a010 nM (n\u00a0=\u00a019) was identified from a small molecule in vitro high throughput screening campaign at Amgen. Similar to the WT protein, TRPC6 (\u03942\u201372) could be inhibited by AM-1473 (IC50\u00a0=\u00a00.13\u00a0\u00b1\u00a00.03 nM, n\u00a0=\u00a05, Figure 1\u2014figure supplement 1c) and activated by AM-0883 (EC50\u00a0=\u00a090.2\u00a0\u00b1\u00a013 nM, n\u00a0=\u00a04, Figure 1\u2014figure supplement 1a\u2013b). These properties make TRPC6 (\u03942\u201372) suitable for further structural determination.\n\n### Antagonist-bound structure of TRPC6\n\nDetergent-solubilized TRPC6 (\u03942\u201372) was first purified to homogeneity in the presence of the antagonist AM-1473 (Maier et al., 2015), and then exchanged into lipidic nanodiscs composed of the membrane scaffold protein, MSP2N2, and soybean lipids. The structure of the antagonist-bound TRPC6 in nanodiscs was determined at a resolution of 3.1 \u00c5 using single-particle cryo-EM (Figure 1, Table 1 and Figure 1\u2014figure supplements 2\u20133). The overall architecture of the antagonist-bound TRPC6 is similar to previous cryo-EM structures of TRPC3 and TRPC6\u00a0(Fan et al., 2018;\u00a0Tang et al., 2018). The voltage-sensor-like domain (S1-S4) and the pore domain (S5-S6) are arranged in a domain-swapped manner (Figure 1). S3 extends substantially into the extracellular space (Figure 1a,c). An elbow-like structural component is embedded in the lipid bilayer and makes hydrophobic contacts with the intracellular half of S1 (Figure 1a,c). The intracellular domain is assembled through interactions between the ankyrin repeat domain (ARD) at the N-terminus and the rib helix and coiled-coil at the C-terminus (Figure 1a,c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig1-v2.jpg)\n\n**Figure 1.:** (a, b) Cryo-EM map of the antagonist-bound TRPC6 viewed from parallel of the membrane (a) and the extracellular surface (b). The unsharpened reconstruction was shown in transparent gray. Lipids are colored in orange, and antagonists in red. (c, d) Structure model shown in corresponding orientations as in (a) and (b).\u00a0Cryo-EM densities for lipids and antagonists are superimposed over the model and colored as in a and b.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a, b) Dose-response curves for TRPC6 activation by OAG (a) and agonist AM-0883 (b). (c, d) Dose-response curves for TRPC6 inhibition by antagonist AM-1473 in the presence of OAG (c) and agonist AM-0883 (d). (e) Dose-response curves for activation of WT and mutant TRPC6 channels by agonist AM-0883. (f) Dose-response curves for TRPC3 and TRPC6 inhibition by antagonist AM-1473.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Representative micrograph for TRPC6 in complex with antagonist reconstituted in nanodiscs. (b) Selected 2D class averages showing well-defined secondary-structural features and different orientations. (c) Workflow of cryo-EM data processing of antagonist-bound TRPC6 and local resolution mapped on final unsharpened map calculated using ResMap. (d) Fourier shell correlation curve for masked half-maps. (e) Fourier shell correlation curve for model versus map. (f-h) Density for the antagonist from final sharpened map (f) and two corresponding half maps (g, h).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig1-figsupp3-v2.jpg)\n\n**Table 1.**\n Cryo-EM data collection, refinement and validation statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>TRPC6-AM-1473 EMD-20954 PDB 6UZA</th>\n      <th>TRPC6-AM-0883 EMD-20953 PDB\u00a06UZ8</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data Collection/processing Microscope Voltage (kV) Defocus range (mM) Exposure length (s) Electron exposure (e-/\u00c5) Number of frames Pixel size (\u00c5) Initial particles images (no.) Final particles images (no.) Resolution (\u00c5) FSC threshold Symmetry imposed</td>\n      <td>Titan Krios (FEI) 300 \u22122.3 to \u22120.8 6 50 30 0.832 1,590,640 90,014 3.08 0.143 C4</td>\n      <td>Titan Krios (FEI) 300 \u22122.3 to \u22120.8 6.2 50 31 1.248 1,209,330 68,553 2.84 0.143 C4</td>\n    </tr>\n    <tr>\n      <td>Refinement Model composition \u00a0Protein residues \u00a0Ligands R.m.s. deviations \u00a0Bond length (\u00c5) \u00a0Bond angle (\u00b0) Ramachandran plot \u00a0Favored (%) \u00a0Allowed (%) \u00a0Disallowed (%) Validation \u00a0MolProbity score \u00a0Clashscore \u00a0Poor rotamers (%) \u00a0CaBLAM outliers (%) \u00a0EMRinger score</td>\n      <td>2936 20 0.005 0.813 95.97 4.03 0 1.29 2.30 0 3.48 3.55</td>\n      <td>2936 16 0.005 0.823 95.56 4.44 0 1.28 1.99 0 2.51 3.29</td>\n    </tr>\n  </tbody>\n</table>\n\n### Antagonist-binding site\n\nThere are several non-protein densities in our cryo-EM map (Figure 1). Based on the shape and chemical environment, it is very likely that the density within the pocket of S1-S4 observed in the final postprocessed map and two corresponding half-maps belongs to the antagonist AM-1473 (Figure 1c\u2013d, Figure 2a\u2013b, and Figure 1\u2014figure supplement 2f\u2013h), which consists of an aminopiperidine, a benzonitrile, and an indane (Figure 2a). Furthermore, this pocket was empty in the structure of TRPC6 bound to another small molecule antagonist BTDM (Tang et al., 2018) or the TRPC3 structure (Tang et al., 2018; Figure 2\u2014figure supplement 1), further supporting our assignment of the density to the antagonist. The antagonist engages in both hydrophilic and hydrophobic interactions with residues from S1-S4, the TRP helix and the membrane-reentrant loop following the TRP helix (Figure 2c). The primary amine moiety off the piperidine ring forms hydrogen-bond interactions with Glu509 on S2, and Asp530 on S3. The benzonitrile group is involved in a cation-\u03c0 interaction with Arg758 on the reentrant loop as well as aromatic-stacking interactions with His446 on S1 and Tyr753 on the TRP helix. The indene double ring makes van der Waal contacts with Tyr612 on S4. Overall, the three ring groups in the antagonist knit the intracellular ends of S1-S4, the TRP helix and the reentrant loop together. Interestingly, the antagonist is 36-fold selective for TRPC6 over its closely-related homolog TRPC3 (IC50 of 8.0\u00a0\u00b1\u00a02.2 nM, n\u00a0=\u00a03, Figure 1\u2014figure supplement 1e). Among the residues that interact with the antagonist, most are identical between TRPC3 and TRPC6, but Arg758 on TRPC6 is replaced by a lysine on TRPC3. We tested whether exchange this residue between TRPC6 and TRPC3 would have any effect on the antagonist potency and found that the antagonist is 5-fold less potent in TRPC6 R758K and 3.5-fold more potent in TRPC3 K689R (Figure 2\u2014figure supplement 2). Therefore, we propose that the lower antagonist potency in TRPC3 could be partly due to the less optimal position for the lysine to form the cation-\u03c0 interaction with the benzonitrile group.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig2-v2.jpg)\n\n**Figure 2.:** (a) Chemical structure of the antagonist AM-1473. (b) Stick model of the antagonist model together with EM density depicted in blue mesh. (c) Close-up view of the antagonist-binding site. Residues within van der Waals distances are shown in light blue sticks. Hydrogen bonds are shown in black dashed lines. (d) Dose-response curves for TRPC6 inhibition of wild-type and mutant TRPC6 channels replacing residues that interact with the antagonist.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a, b) Binding site of the antagonist AM-1473 in TRPC6 viewed parallel to the membrane (a) and from the intracellular side (b). (c, d) Binding site of the antagonist 2-aminoethoxydiphenyl borate (2-APB) in TRPV6 shown in the same orientation as a and b. (e, f) Binding site of the agonist icilin in TRPM8 shown in the same orientation as a and b.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) Side view of TMD of one subunit and S5-S6 of the adjacent subunit in the antagonist-bound state of TRPC6. Density for two lipid molecules is shown in green meshes. Models for the lipids are shown in orange sticks. (b) Binding site of BTDM in TRPC6 shown in the same orientation as a. Putative density for BTDM is shown in green meshes. Due to limited resolution of the density, the model for BTDM was not built. Inlet shows chemical structure of BTDM. (c) Binding site of the inner leaf lipid and the agonist in the agonist-bound state of TRPC6. Density for the lipid and the agonist is shown in green meshes. Models for the lipid and the agonist are shown in orange and yellow sticks, respectively. (d) Binding site of the phosphatidylinositol lipid in the apo-TRPV1 structure shown in the same orientation as a. Lipid density is shown in green meshes. Lipid model is shown in orange sticks. (e) Binding site of the vanilloid agonist resiniferatoxin (RTX) in the structure of TRPV1 bound to double-knot toxin (DxTX) and RTX shown in the same orientation as a. RTX density is shown in green meshes. RTX model is shown in yellow sticks. (f) Binding site of econazole (ECN) in the TRPV6 structure shown in the same orientation as a. Density for ECN is shown in green meshes. Model for ECN is shown in yellow sticks.\n\nTo validate the antagonist-protein interactions observed in the structure, we carried out mutagenesis studies. Mutations that removed the negatively charged residues that interact with the primary amine, E509A and D530A, almost completely abolished the response of TRPC6 to the antagonist, consistent with the critical roles of the negatively charged side chains in ligand recognition and the positively charged primary amine in maintaining antagonist potency (Figure 2d). Interestingly, mutation R609A, which disrupts the salt-bridge interaction between Arg609 and Asp530, also lowered the binding affinity of compound by\u00a0~10 fold (Figure 2d). Mutation R758A, which disrupts the cation-\u03c0 interaction, lowered the binding affinity by\u00a0~300 fold (Figure 2d). Mutations K442A and N527A lowered the binding-affinity by\u00a0~15 fold, suggesting that Lys442 and Gln527 might be involved in hydrophilic interactions with the nitrile and the primary amine, respectively (Figure 2d). Overall, these mutagenesis data are consistent with the atomic interactions visualized in the structure.\n\nInterestingly, the S1-S4 pocket has been shown to play important roles in modulation of other TRP channels (Figure 2\u2014figure supplement 3). In TRPV6, 2-aminoethoxydiphenyl borate was found to occupy this site and inhibit the channel activity (Singh et al., 2018; Figure 2\u2014figure supplement 3c\u2013d). On the other hand, in TRPM8, icilin, a synthetic cooling agonist, could bind to this site and increase the channel activity (Yin et al., 2019; Figure 2\u2014figure supplement 3e\u2013f). Since this pocket was empty in all other TRPC structures determined so far (Duan et al., 2019; Duan et al., 2018; Fan et al., 2018; Tang et al., 2018; Vinayagam et al., 2018), our structure of the antagonist-bound TRPC6 provides the first evidence that the S1-S4 pocket in TRPC channels could be a site for channel modulation. Notably, the crevice between the S2-S3 linker and the TRP helix connects the pocket to the cytoplasm and provides a possible access route for the antagonist.\n\n### Lipid-binding sites\n\nBesides the density for the antagonist, there are also several non-protein densities that most likely represent lipids copurified with TRPC6 or supplemented during purification. Similar to other TRP channels and voltage-gated ion channels, multiple outer leaflet lipids line the membrane-facing crevices between adjacent subunits, making contacts with helices S3-S6 as well as the pore helix (Figure 1a,c). In the inner leaflet, one lipid is buried in a pocket formed by S1, S4 and the pre-S1 elbow, and its size and shape fit well with that of a cholesterol hemisuccinate (CHS) molecule (Hughes et al., 2018). Another inner leaflet lipid is wedged between S4 and the S4-S5 linker and can be interpreted as a phosphatidylcholine lipid (Figure 2\u2014figure supplement 3a). While one acyl chain of the phospholipid is unresolved due to the interference of an outer leaflet lipid, the other acyl chain occupies the cleft formed by S4 and S5 from adjacent subunits (Figure 2\u2014figure supplement 3a). Intriguingly, this cleft also contributes to the putative binding site of another small-molecule antagonist of TRPC6 (Tang et al., 2018; Figure 2\u2014figure supplement 3b). Therefore, the intracellular cleft between S4 and S5 could be a site for channel modulation in TRPC6. Although it is not clear whether the inner leaflet phospholipid observed in our structure has an effect on channel activity, homologous lipid-binding sites in TRPV channels are critical for channel modulation. For example, the vanilloid-binding site located near S4 and S5 in TRPV1 accommodates a phosphatidylinositol lipid that could be displaced by vanilloid agonists or antagonists (Gao et al., 2016; Figure 2\u2014figure supplement 3d\u2013e). In TRPV5, econazole, a small molecule antagonist and antifungal, was found to occupy a similar site (Hughes et al., 2018; Figure 2\u2014figure supplement 3f), whereas in TRPV6, native lipids that might be involved in channel activation were identified in this pocket (McGoldrick et al., 2018).\n\n### Mapping of disease-related mutations\n\nWith the structure, we studied the location of disease-related mutations found in FSGS patients (Mottl et al., 2013). Intriguingly, many of these mutation sites are clustered at the region where the N-terminal ARD and the C-terminal rib helix and coiled-coil interact with each other (Figure 3a\u2013b). Six mutations, including G109S, P112Q, N143S, Q889K, R895C, and E897K, are located at the interface between the ARD and the pole helix of the same subunit (Figure 3b, interface 1). Another mutation, M132T, is located at the interface between the ARD of one subunit and the rib helix of the adjacent subunit (Figure 3b, interface 2). Consistent with previous reports (Heeringa et al., 2009; Mottl et al., 2013; Winn et al., 2005), we found several mutations at interface 1, including those at positions 109, 112, 889, and 895, led to enhanced channel activity without affecting the expression level on the membrane (Figure 3c, Figure 3\u2014figure supplement 1a). Since mutations at these positions destabilize the interactions at interface 1, the increased activity in mutant channels suggests that these interactions are important for the stability of the closed state of the channel.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig3-v2.jpg)\n\n**Figure 3.:** (a) Overall structure with one subunit shown in blue and other three subunits in light blue. Residues whose mutations cause FSGS are shown as spheres on one subunit. (b) Close-up view of disease-related residues around the first two ankyrin repeats and C-terminal helices as boxed in (a). Side chains of V867 and L868, which form hydrophobic interactions with M132 in the adjacent subunit, are shown as sticks. (c, d) Dose-response curves for OAG activation of wild-type and mutant TRPC6 channels. Mutations located at interface 1 are shown in c, and mutations located at interface 2 are shown in d.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Surface expression level of TRPC6 wild type and disease-related mutants. (b) Surface expression level of TRPC6 wild type and TRPC6 with single or double mutations at positions 867 and 868. (c) Surface expression level of TRPC6 wild type and TRPC6 with mutations around the agonist-binding site. Top panel, cell surface TRPC6 (MW:\u00a0106\u00a0kDa) or mutant protein levels from HEK293T cells transiently transfected with various TRPC6 expression plasmids, as indicated. Bottom panel: cell surface Cadherin levels\u00a0(125\u2013135\u00a0kDa) detected using a anti pan-Cadherin antibody. Cell surface proteins were isolated from HEK293T cells\u00a024\u00a0hr\u00a0post-transfection of vector or TRPC6 expression plasmids. Purification of cell surface proteins was accomplished utilizing the Pierce Cell Surface Protein Isolation Kit (Thermo Scientific Catalog #89881) following the manufacturer\u2019s protocol. Briefly, cell surface proteins were biotinylated and subsequently the reaction was quenched. Equal amounts (\u03bcg protein) of cell lysates were purified over avidin columns and eluted using SDS sample buffer containing\u00a050\u00a0mM\u00a0DTT. Cell surface protein eluates were separated on an 4\u201312% gradient SDS-PAGE gel and TRPC6 protein was detected following Western blot with anti-TRPC6 antibodies (Sigma #T6442). As an internal control, cell surface cadherin levels were also determined in a separate Western blot utilizing anti pan-Cadherin antibodies (Abcam #ab6529).\n\nTo further explore this idea, we tested whether disrupting the interfacial interactions at interface 2 would have an effect on channel activity. M132T is a disease-causing mutation that also increases channel activity (Figure 3d). In our structure, Met132 forms hydrophobic interactions with Val867 and Leu868 on the rib helix. Substitution of either Val867 or Leu868 with a threonine increased maximum channel activity by\u00a0~50%, whereas mutating both residues simultaneously more than doubled maximum channel activity (Figure 3d). Since none of these mutations have any significant effect on the expression level on the membrane (Figure 3\u2014figure supplement 1b), the increased channel activity of these mutant channels suggests that the interactions at interface 2 are also involved in stabilizing the closed state of TRPC6.\n\n### Agonist-bound structure of TRPC6\n\nTo understand agonist binding and channel activation, we purified the double mutant TRPC6 (\u03942\u201372) V867T/L868T channel in complex with the small molecule agonist AM-0883, reconstituted it into nanodiscs and determined the cryo-EM structure at 3.1 \u00c5 (Figure 4, Table 1 and Figure 4\u2014figure supplements 1\u20132). AM-0883 induced about the same level of maximum activity as OAG, but was\u00a0~70 fold more potent than OAG (Figure 4\u2014figure supplement 1a\u2013b). We reasoned that the low potency of OAG might explain the lack of OAG density in the previous structure of TRPC3 copurified with OAG (Tang et al., 2018), and the higher potency of AM-0883 would allow us to obtain the agonist-bound structure of TRPC6. Furthermore, because TRPC6 V867T/L868T, like WT, responded to both AM-0883 and OAG but exhibited much higher channel activity than WT (Figure 3d and Figure 1\u2014figure supplement 1f), the double mutant appeared to be an ideal variant for us to investigate the more activated state of TRPC6.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig4-v2.jpg)\n\n**Figure 4.:** (a) Cryo-EM map of the agonist-bound TRPC6 viewed from parallel of the membrane. The unsharpened reconstruction was shown in transparent gray. Lipids are colored in orange, and agonists in magenta. (b, c) Structure model viewed from parallel of the membrane (b) and the extracellular domain (c). Cryo-EM densities for lipids and antagonists are superimposed over the model and colored as in a.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a)\u00a0Representative micrograph for TRPC6 in complex with agonist reconstituted in nanodiscs.\u00a0(b)\u00a0Selected 2D class averages showing well-defined secondary-structural features and different orientations.\u00a0(c)\u00a0Workflow of cryo-EM data processing of antagonist-bound TRPC6 and local resolution mapped on final unsharpened map calculated using ResMap.\u00a0(d)\u00a0Fourier shell correlation curve for masked half-maps.\u00a0(e)\u00a0Fourier shell correlation curve for model versus map.f-h. Density for the agonist from final sharpened map (f) and two corresponding half maps (g,h).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig4-figsupp2-v2.jpg)\n\n### Agonist-binding site\n\nWe found a clear non-protein density at each subunit interface that represents the agonist AM-0883, which consists of a chloro-indole, a piperidine and a benzodioxin, and occupies a groove between S6 of one subunit and the pore helix of the adjacent subunit (Figure 4b\u2013c and Figure 5a\u2013b). Similar densities also exist in the two half-maps generated during the final step of refinement but not in the BTDM-bound TRPC6 or the TRPC3 reconstructions (Tang et al., 2018), and the unique shape and size of these densities is distinct from what was observed near the same region in the maps of TRPC6-AM-1473 (Figure 5\u2014figure supplement 1), indicating that this non-protein density belongs to the agonist. The agonist forms hydrophobic interactions with Phe675 and TRP680 on the pore helix and Tyr705, Val706 and Val710 on S6 (Figure 5c). There are also possible hydrophilic interactions between the indole ring and Glu672 and Asn702 (Figure 5c). We tested whether mutations around this region would affect the potency of the agonist and found that mutations F675A, W680A, N702A, Y705A and V710A almost completely abolished the channel activity in the presence of the agonist AM-0883, whereas mutations E672A and V706A showed a 35-fold and 20-fold increase in agonist EC50, respectively (Figure 5d). However, the expression level on the cell membrane of these mutants were similar to WT (Figure 3\u2014figure supplement 1c), suggesting that the altered responses of the mutant channels to the agonist were most likely due to the disruption of the agonist-binding site.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig5-v2.jpg)\n\n**Figure 5.:** (a) Chemical structure of the agonist AM-0883. AM-0883 was synthesized as a racemate and then separated into enantiomers with arbitrarily assigned stereochemistry.\u00a0The two enantiomers showed a 50-fold difference in potency in our bioassay. Since both enantiomers could be fit into the cryo-EM density, furthur work is needed to differentiate them. Here only the R-configuration is described. (b) Stick model of the agonist together with EM density depicted in blue mesh. (c) Close-up view of the agonist-binding site. Residues within van der Waals distances are shown in light blue sticks for one subunit and green sticks for another subunit. Hydrogen bonds are shown in black dashed lines. (d, e) Dose-response curves for TRPC6 activation by agonists AM-0883 (d) and OAG (e) of wild-type and mutant TRPC6 channels replacing residues that interact with the agonist.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig5-figsupp1-v2.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Residues that appear to interact with the agonist in TRPC6 and conserved in other TRPC variants are highlighted in yellow. Residue numbers for TRPC6 are marked.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (a) Binding site of the agonist AM-0883 in TRPC6 viewed parallel to the membrane. (b) Binding site of the antagonist in CavAb shown in the same orientation as a. (c) Binding site of the agonist in TRML1 shown in the same orientation as a. Only S5-S6 are shown. Two subunits are colored in light blue and light cyan, and the other two subunits are colored in gray.\n\nSeveral residues around the agonist-binding site have been shown to affect channel activation by the native lipid agonist DAG. Gly640 on S6 of TRPC3, conserved among TRPCs and corresponding to Gly709 of TRPC6, has been proposed as a critical structural component for DAG recognition (Lichtenegger et al., 2018). Mutations of this glycine in TRPC3 and TRPC6 dramatically reduced DAG sensitivity (Hofmann et al., 2002; Str\u00fcbing et al., 2003). On the pore helix, the conserved LFW motif (residues 678\u2013680 in TRPC6) has been identified to be essential for channel activation (Hofmann et al., 2002; Str\u00fcbing et al., 2003). Substitution of all three residues with alanine in TRPC5 and TRPC6 resulted in nonfunctional channels without altering plasma membrane expression (Str\u00fcbing et al., 2003). Consistent with the idea that the agonist-binding site is also important for DAG recognition, mutations around the site, including E672A, F675A, W680A, N702A, Y705A and V706A, maintained normal membrane surface expression (Figure 3\u2014figure supplement 1c) but completely eliminated the response to OAG even at a 100 \u03bcM concentration (Figure 5e). Furthermore, Glu672 and Val706 appeared to be more critical for the binding of DAG than AM-0883, because channels with mutation E672A or V706A could still be activated by the agonist AM-0883 at reduced potency but not by DAG (Figure 5d). The V710A mutation also reduced the maximal activation by OAG by\u00a0>80% (Figure 5e). Importantly, among six TRPC proteins found in human, only the closely-related subgroup of TRPC3, TRPC6 and TRPC7 are directly activated by DAG (Hofmann et al., 1999). Indeed, whereas several residues around the putative DAG-recognition site are conserved across TRPCs, Glu672, Asn702 and Tyr705 are only conserved among TRPC3, TRPC6 and TRPC7 (Figure 5\u2014figure supplement 2). Notably, the AM-0883-binding site faces membrane lipids and is occupied by one of the outer leaflet lipids in the antagonist-bound structure (Figure 4\u2014figure supplement 1a,c), and therefore constitutes a likely location for DAG-binding at the outer leaflet. The overall findings strongly suggest that the agonist-binding site identified here may overlap with the DAG-recognition site.\n\nAnalogous sites near the subunit interface between S6 and the pore helix have been previously identified to accommodate a small molecule agonist in TRPML1 (Schmiege et al., 2017), and a small molecule antagonist in CavAb (Tang et al., 2016; Figure 5\u2014figure supplement 3), corroborating the important role of this site in channel modulation. In addition, ligand binding at this site may also have an impact on lipid binding at the other side of the membrane, because in our agonist-bound structure, displacement of the outer leaflet lipid by the agonist appears to eliminate the steric hindrance against one of the acyl chains in the inner leaflet lipid, thereby allowing both acyl chains to be visualized (Figure 2\u2014figure supplement 4a,c).\n\n### Ion permeation pathway\n\nCompared to the WT protein, the double mutant V867T/L868T exhibited a 2-fold increase in maximum activity in the presence of the agonist AM-0883 (Figure 1\u2014figure supplement 1f). However, similar to the antagonist-bound structure of TRPC6 (\u03942\u201372), the agonist-bound structure of TRPC6 (\u03942\u201372) V867T/L868T also possesses a closed ion channel pore (Figure 6). Therefore, the mutations and the agonist were not sufficient to shift the gating equilibrium towards a stable open state. This is not surprising because the low open probability and the short open time (<1 ms) of TRPC6 (Hofmann et al., 1999) suggest that the closed state is much more energetically stable compared to the open state. The ion permeation pathway in our structures is sealed off by hydrophobic side chains of Leu723, Ile727 and Phe731 near the intracellular end of S6 (Figure 6a\u2013b), which are at equivalent positions in TRPC3 as shown in the human TRPC3 structure (Fan et al., 2018), but shifted by one amino acid in the previous human TRPC6 structure (Tang et al., 2018). On the other hand, the location of the selectivity filter in our structures is the same as or equivalent to what was observed before (Fan et al., 2018; Tang et al., 2018). In both our structures, main chain carbonyls of Phe683 and Gly684 located after the pore helix define the selectivity filter and coordinate a putative cation bound to the selectivity filter (Figure 6a\u2013b).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig6-v2.jpg)\n\n**Figure 6.:** (a, b) Pore domain (S5-S6) of antagonist-bound (a) and agonist-bound (b) TRPC6 with front and rear subunits removed for clarity. Residues that form the selectivity filter and the intracellular gate are shown as sticks. Cryo-EM densities for these residues are shown as orange mesh. (c) Calculated pore radius along the central axis corresponding to a and b.\n\n### Ligand-induced structural changes\n\nAlthough the ion channel pore is closed and the intracellular domain is nearly identical in both our structures (Figure 7\u2014figure supplement 1), there are significant conformational changes in the transmembrane domain associated with ligand binding. In the ligand-free S1-S4 pocket of the agonist-bound state, the side chain of H446 adopts two alternative rotameric conformations, one of which occupies the position where the indene double ring of the antagonist would bind, and the side chain of R758 occupies the position where the benzonitrile group of the antagonist would bind (Figure 7\u2014figure supplement 2a). Therefore, side chain movements of H446 and R758 are necessary to accommodate the antagonist. On the other hand, agonist-binding occurs without major structural changes in the side chains of the agonist-binding pocket (Figure 7\u2014figure supplement 2b). Instead, the presence of the agonist seems to tilt the extracellular half of S6 away from the pore and pushes S6 toward the intracellular side (Figure 7a). Because S6 is tightly packed against S1-S4 of the adjacent subunit, the movement of S6 is accompanied by a concurrent tilting and downward movement of S1-S4 as well as the S4-S5 linker (Figure 7a,c). Among the transmembrane helices, S3 has the largest movement, with its extracellular end moving 4.4 \u00c5, partly due to the remarkably long extension of S3 into the extracellular side. Viewing from the cytoplasmic side, agonist binding is accompanied by a counterclockwise rotation around the central ion pathway (Figure 7b), resulting in a movement of 2.4\u20133.3 \u00c5 at the intracellular end of S1-S4. While the structural changes from the antagonist-bound state to the agonist-bound state were not sufficient to stabilize an open channel pore, it is possible that agonist-bound channels may transition to the open conformation when further counterclockwise rotation of the S6 helical bundle fully unwinds the hydrophobic seal at the intracellular gate (Video 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig7-v2.jpg)\n\n**Figure 7.:** (a, b) Structural superposition of the transmembrane domain of antagonist-bound and agonist-bound TRPC6 viewed from parallel of the membrane (a) and intracellular side (b). (c-e) Structure of one subunit of the transmembrane domain in AM-1473-bound TRPC6 superposed with that of AM-0883-bound TRPC6 (c), BTDM-bound TRPC6 (d, PDB 5YX9), and TRPC3 (e, PDB 5ZBG). The structures are aligned with the pore helices. Black arrows indicate conformational changes from antagonist-bound state to agonist-bound state. Antagonists and agonists are shown as spheres.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig7-figsupp1-v2.jpg)\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53311/elife-53311-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (a, b) Close-up views of the antagonist-binding site (a) and the agonist-binding site (b). Structures in (a) are aligned with S1-S4, whereas structures in (b) are aligned with the pore helix (PH). Antagonists and agonists are shown as sticks.\n\n![Video 1.](https://cdn.elifesciences.org/articles/53311/elife-53311-video1.mp4.jpg)\n\n**Video 1.:** The video shows a morph of the TMD of TRPC6 from the antagonist-bound state to the agonist-bound state. S1-S4 and the TRP helix are colored in light blue, whereas S5-S6 are colored in light cyan. The video starts with the side view of the antagonist-bound TRPC6. The morph viewed at this orientation highlights the slight outward and downward movement of S1-S4. Next, the camera rotates to the intracellular view. The morph viewed at this orientation highlights the counterclockwise rotation of the S6 helices.\n\nTo further understand how the antagonist inhibits TRPC6 activity, we also compared our structures with two previous TRPC structures prepared in a similar nanodisc environment (Tang et al., 2018). One of them is the structure of TRPC6 bound to another small molecule antagonist BTDM, and the other is the structure of TRPC3, which was prepared with OAG but no density of OAG was detected and the channel pore was closed. We found that the AM-1473-bound TRPC6 and the BTDM-bound TRPC6 assume a nearly identical conformation (Figure 7d, Figure 7\u2014figure supplement 1b, C\u03b1-RMSD 0.588), with S1-S4 and the S4-S5 linker in the slightly up conformation, distinct from the slightly down conformation in agonist-bound structure. The structure of TRPC3, which shares\u00a0~75% sequence identity with TRPC6, is also very similar to the AM-1473-bound and BTDM-bound TRPC6 structures (Figure 7e and Figure 7\u2014figure supplement 1c, C\u03b1-RMSD 0.710), suggesting that both antagonists may allosterically inhibit the opening of the channel pore by stabilizing the apo or resting state, as observed in the action of antagonists on P2X3 receptor channels and TRPM4 channels (Huang et al., 2020; Mansoor et al., 2016). It would be interesting to test whether AM-1473 inhibits the channel by stabilizing the binding of the lipid near the S4-S5 linker, as this lipid and BTDM share part of their binding pockets and both seem to hinder the movement of the S4-S5 linker (Figure 2\u2014figure supplement 4a\u2013b). Future studies on a fully open TRPC6 channel would help test this idea.\n\n### Conclusions\n\nOur structures reveal novel binding modes of small molecule modulators of TRPC6 that allow us to delineate intriguing similarities and differences between the ligand-binding pockets in TRPC6 and those found in TRPV and TRPM channels. First, the antagonist-binding site at the cytoplasm-facing pocket in the S1-S4 domain has been found to recognize natural cooling agonists and various synthetic compounds in TRPM8\u00a0(Yin et al., 2019;\u00a0Diver et al., 2019) as well as a synthetic antagonist in TRPV6 (Singh et al., 2018). Therefore, activity at the pore domain (S5-S6) of these channels could be allosterically modulated at the S1-S4 domain, most likely through the S4-S5 linker and the TRP helix. Second, the antagonist-binding site described here is distinct from the previously identified antagonist-binding site of TRPC6 (Tang et al., 2018), which is located at the intracellular membrane-facing cavity between S3-S4 and S5-S6 from adjacent subunits. Instead, this cavity is occupied by a phospholipid in both our structures and has been found to accommodate natural vanilloid agonists as well as competitive lipid or synthetic antagonists in TRPV1 (Gao et al., 2016), suggesting that occupancy by lipids or ligands at this site could also modulate channel activity. Finally, the agonist-binding site in TRPC6 is located at the extracellular membrane-facing cavity formed by S6 and the pore helix from adjacent subunits. We propose that this location is also where the native lipid agonist, DAG, acts on TRPC6. Therefore, TRPC6 is activated through a unique mechanism compared to TRPV and TRPM channels. Overall, our structures of TRPC6 bound to two different classes of modulators reveal hot spots in TRPC6 that future drugs could target and underline the emerging potential of cryo-EM in structural pharmacology.\n\n## Materials and methods\n\n### TRPC6 cloning and expression\n\nAn N-terminally truncated human TRPC6 (residue 73\u2013931) and its variant V867T/L868T were each cloned into a pORBMam vector with an N-terminal Strep tag. The recombinant baculoviruses were generated in Sf9 cells following a conventional protocol. P2 virus was used to infect HEK293 cells lacking N-acetylglucosaminyltransferase I (GnTI\u2212) at 3.5\u00a0\u00d7\u00a0106 cells/ml. After 12 hr of culture at 37\u00b0C, 10 mM Sodium butyrate was added to the suspension and the temperature was lowered to 30\u00b0C. Cells were harvested 48 hr post infection.\n\n### TRPC6 purification and nanodisc reconstitution\n\nAll purification steps were done at 4\u00b0C and in the presence of 1 \u03bcM antagonist or agonist. The cell pellet was resuspended in buffer A (150 mM NaCl, 20 mM Tris pH 8.0) supplemented with 0.5% (v/v) protease inhibitor cocktail. Cells were disrupted in an Microfluidizer and membrane fractions were isolated with two-step centrifugations. Membranes were first homogenized in buffer A and then solubilized with 1% (w/v) lauryl maltose neopentyl glycol (LMNG) and 0.1% (w/v) cholesteryl hemisuccinate (CHS) at 4\u00b0C for 2 hr. Insoluble material was removed by centrifugation at 40,000 g for 1 hr and the supernatant was mixed with Strep Tactin resin at 4\u00b0C for overnight. The resin was collected on a gravity column, washed with buffer A plus 0.06% (w/v) digitonin. The bound protein was eluted with 5 mM Desthiobiotin, concentrated and further purified by size exclusion chromatography using a Superose 6 Increase column equilibrated in buffer A plus 0.06% digitonin and 2 mM Tris(2-carboxyethyl)phosphine (TCEP). For nanodisc reconstitution, peak fractions were collected, concentrated to 1 mg/ml, and mixed with MSP2N2 and soybean lipid extract at a molar ratio of 1:3:225 for 1 hr. To remove detergents, two batches of fresh Bio-Beads SM2 were added at a concentration of 20 mg/ml with 4 hr in between. After overnight incubation, the sample was filtered and loaded onto a Superose 6 Increase column equilibrated in buffer A plus 2 mM TCEP. Peak fractions were pooled and concentrated to 1.5 mg/ml in the presence of 30 \u03bcM antagonist or agonist.\n\n### Cryo-EM sample preparation and data collection\n\nGrid preparation was performed at 100% humidity and 10\u00b0C using a Mark IV Vitrobot (FEI). 3.5 \u03bcl of TRPC6 in nanodiscs was applied onto a glow-discharged Quantifoil R1.2/1.3 300-mesh copper holey carbon grid. Grids were blotted for 6 s at a force setting of 1 before being plunged into liquid ethane. Images were recorded on a 300 kV Titan Krios (FEI) microscope with a K2 summit detector (Gatan). Serial EM (Mastronarde and Held, 2017) was used for automated image acquisition with a binned pixel size of 0.832 \u00c5. For the antagonist-bound TRPC6 dataset, 10,009 movies were collected, and each movie was dose-fractionated to 30 frames with a total exposure time of 6 s and a total dose of\u00a0~50 electrons/\u00c5 (Venkatachalam and Montell, 2007). For the agonist-bound TRPC6 dataset, 9517 movies were collected, and each movie was dose-fractionated to 31 frames with a total exposure time of 6.2 s and a total dose of\u00a0~50 electrons/\u00c5 (Venkatachalam and Montell, 2007).\n\n### Cryo-EM data processing\n\nBeam-induced motion was corrected in MotionCor2 (Zheng et al., 2017). Contrast transfer function (CTF) parameters were estimated non-doseweighted micrographs on using CTFFIND4 (Rohou and Grigorieff, 2015). All other data processing steps were performed using Relion-3 (Zivanov et al., 2018). Initially, 20,000 particles were autopicked using Laplacian-of-Gaussian method. After 2D classification, 8 class averages were selected for reference-based autopicking on the full dataset. The extracted particles were binned to a pixel size of 4.16 \u00c5 and subjected to two rounds of 2D classification. For the antagonist-bound TRPC6 dataset, 547,081 good particles were sorted out and used for subsequent 3D classification and refinement. The initial reference map was generated ab initio and lowpass filtered to 40 \u00c5. One good 3D class out of three, containing 90,014 particles, were re-extracted to a pixel size of 1.248 \u00c5. 3D refinement with C4 symmetry yielded a 3.26 \u00c5 map. After CTF-refinement and Bayesian-polishing, the final resolution was improved to 3.08 \u00c5. For the agonist-bound TRPC6 dataset, 341,431 particles belonging to good 2D class averages were selected. 3D classification further sorted out 68,553 particles. After CTF-refinement and Bayesian-polishing, the final 3D refinement yielded a 2.84 \u00c5 map.\n\n### Model building\n\nThe antagonist-bound TRPC6 model was built in Coot (Emsley et al., 2010) using the TRPC6 cryo-EM structure (Tang et al., 2018) (PDB 5Y \u00d7 9) as a guide. The model was subjected to real space refinement against sharpened map in Phenix (Afonine et al., 2012) with secondary structure restraints. The refined model of antagonist-bound TRPC6 was used as a reference to build the agonist-bound TRPC6 model. Local resolution was estimated using ResMap (Kucukelbir et al., 2014). Validation of geometries was performed in MolProbity (Chen et al., 2010). All the structure figures were generated in Chimera (Pettersen et al., 2004), Pymol (The PyMOL Molecular Graphics System) and HOLE (Smart et al., 1996).\n\n### FLIPR assay\n\nTRPC6 Ca2+ channel activity was measured using a FLIPR (fluorescence imaging plate reader) Tetra system from Molecular Devices and the BD PBX Calcium Assay Kit (Becton Dickinson #640177). HEK293T cells were maintained in DMEM high glucose +10% FBS + 1X NEAA (Invitrogen #11965) and were transiently transfected with TPRC6 WT or variant expression plasmids. Site directed mutagenesis to create TRPC6 variants was carried out by Genewiz (South Plainfield, NJ) and variants were verified by DNA sequencing. Expression plasmids were prepared for transfection using Lipofectamine 3000 (Invitrogen) and added to cells. 15,000 cells/well were plated in a 384-well black poly-D-lysine coated plate (Corning #356663). 24 hr post transfection, cells were loaded with calcium sensitive fluorescent dye utilizing the BD PBX Calcium Assay kit following the manufacturer\u2019s protocol and incubated for 2 hr in the dark at room temperature. Compound plates were prepared in assay buffer containing 10 mM HEPES pH\u00a0=\u00a07.2 @25\u00b0C, 4 mM MgCl2, 120 mM NaCl, 5 mM KCl, 0.1% BSA, 2 mM CaCl2. Compound addition to cells was automated on the FLIPR Tetra and fluorescent imaging was captured following the manufacturer\u2019s protocol (Molecular Devices). Data were analyzed using GraphPad Prism 7 software.\n",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "420952d3-4341-4891-b609-f2789f746ec4",
+      "submission_id": "ed8d33cd-c5d4-4cf6-a42a-58e56a30ab94",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- L\u00e1szl\u00f3 Csan\u00e1dy, Semmelweis University Hungary\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53311.sa1](https://doi.org/10.7554/eLife.53311.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study presents structures of TRPC6 channels in complex with an agonist and an antagonist developed by Amgen, solved by single-particle cryo-EM. The structures reveal two novel binding sites \u2013 one for the antagonist and the other for the agonist in the transmembrane domain. The authors also propose that the agonist binding site may overlap with the OAG binding site, the location of which has been a mystery for lipid-sensitive TRPC3/6/7 channels. This report is an important advance, because TRPC6-specific antagonists or agonist have been lacking, and knowledge of the binding sites could be further exploited for structure-based drug design.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural basis for pharmacological modulation of the TRPC6 channel\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including L\u00e1szl\u00f3 Csan\u00e1dy as the Reviewing Editor and Reviewer #3, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Vera Y Moiseenkova-Bell (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSeveral concerns were raised by the reviewers which will need to be addressed to solidify the conclusions.\n\nEssential revisions:\n\n1) It would be important to solve the structure of the TRPC6 channel in the apo state to allow the authors to confidently assign ligand densities to the synthetic compounds used in this study, and to propose mechanisms of actions by comparing the apo structure to the ligand-bound structures. The apo structure should be obtained in the nanodiscs under the same experimental conditions as they did for ligand-bound structures. The same lipids and nanodiscs should be used for the preparation of this channel.\n\n2) Interpreting changes in maximal whole-cell fluorescence level as changes in maximal channel activity is not justified as long as changes in channel surface expression are not determined. Along those lines, increased fluorescence in certain mutants, as well as reduced efficacies of the synthetic agonist and OAG to stimulate channels mutated at/around the agonist binding site, could as well be explained by increased and reduced surface expression, respectively, of the mutant channels. Specifically:\n\n2.1) Subsection \u201cMapping of disease-related mutations\u201d: The authors claim that mutations at the interface between the N-terminal ARD and the C-terminal rib helix and coiled-coil result in \"increased channel activity\". However, \"maximal activity\" is defined here based on fluorescence imaging on whole cells. Such an approach cannot discern effects on channel expression levels from effects on channel activity (open probability). At the minimum, the authors should show that the WT and the mutant channels were expressed at comparable levels at the cell surface, to support their claim.\n\n2.2) Subsection \u201cAgonist-binding site\u201d: Mutations F675A, W680A, N702A, and Y705A eliminate channel activation by both OAG and the synthetic agonist. The authors interpret these data to suggest that this region is important for agonist binding. Again, surface expression levels of these mutants should be shown to remain comparable to WT in order to support this claim.\n\n3) The authors should clearly explain the rational for determining the structure of the TRPC6(2-72)T867T/L868T mutant and not of TRPC6(2-72) in the presence of the agonist. Did they try and did not see the ligand in the TRPC6(2-72) structure?\n\n4) Figure 7 is confusing. The authors used two similar colors for the antagonist-bound and agonist-bound structures to compare the conformational changes induced by agonist and antagonist. The authors should revise the figure. With reference to comment 1), they should also provide the structural comparison with the apo structure. Also, are there any conformational changes in the intracellular domain?\n",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aaf40da9-e56d-4fd4-982d-369c95fec106",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C1",
+      "claim": "Transient receptor potential canonical (TRPC) proteins form nonselective cation channels that play physiological roles in a wide variety of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient receptor potential canonical (TRPC) proteins form nonselective cation channels that play physiological roles in a wide variety of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about TRPC proteins supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "261ec92f-17be-4978-b40b-53d7d268fe73",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C2",
+      "claim": "TRPC6 inhibition has therapeutic potential in treating pathological cardiac and renal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite growing evidence supporting the therapeutic potential of TRPC6 inhibition in treating pathological cardiac and renal conditions, mechanistic understanding of TRPC6 function and modulation remains obscure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references 'growing evidence' which implies citation of prior work, though specific citations are not provided in this sentence.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "bae34106-e391-49f3-a31c-c8dd443a7add",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C3",
+      "claim": "The antagonist AM-1473 binds to a cytoplasm-facing pocket formed by S1-S4 and the TRP helix in TRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "The antagonist binds to a cytoplasm-facing pocket formed by S1-S4 and the TRP helix, whereas the agonist wedges at the subunit interface between S6 and the pore helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cryo-EM structure determination and structural analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "39d7e453-21c0-4b75-8e54-f727f987a094",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C4",
+      "claim": "The agonist AM-0883 wedges at the subunit interface between S6 and the pore helix in TRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "The antagonist binds to a cytoplasm-facing pocket formed by S1-S4 and the TRP helix, whereas the agonist wedges at the subunit interface between S6 and the pore helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cryo-EM structure determination and structural analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "69643208-f9f2-49d5-9262-674d5355d044",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C5",
+      "claim": "Several disease-related mutations enhance TRPC6 channel activity by disrupting interfacial interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, structural and mutagenesis analyses suggest several disease-related mutations enhance channel activity by disrupting interfacial interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by both structural analysis and mutagenesis experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "2577f0a0-4dca-4613-b538-0d55b16682a7",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C6",
+      "claim": "The mammalian TRPC subfamily consists of seven transmembrane proteins (TRPC1-7).",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian TRPC subfamily consists of seven transmembrane proteins (TRPC1-7) that have been proposed to form non-selective cation channels in various cell types (Clapham et al., 2001; Venkatachalam and Montell, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "02f9e161-8db2-4234-89bd-ad718560d964",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C7",
+      "claim": "TRPC6, TRPC3, and TRPC7 can be directly activated by diacylglycerol (DAG).",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC6 and its most close homologs TRPC3 and TRPC7 are unique among the TRPCs in that they can be directly activated by second messenger diacylglycerol (DAG) (Hofmann et al., 1999), a product of phospholipase C action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hofmann et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "34a3e054-9402-4484-b078-97a51f1bf1cd",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C8",
+      "claim": "DAG is a product of phospholipase C action.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC6 and its most close homologs TRPC3 and TRPC7 are unique among the TRPCs in that they can be directly activated by second messenger diacylglycerol (DAG) (Hofmann et al., 1999), a product of phospholipase C action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "b7ff996d-3f40-4be6-9f2b-fef40c35e245",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C9",
+      "claim": "TRPC6-mediated cation influx regulates physiological function of pulmonary endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC6-mediated cation influx regulates physiological function of pulmonary endothelial cells (Singh et al., 2007), smooth muscle cells (Dietrich et al., 2005) and glomerular podocytes (Reiser et al., 2005), whereas TRPC6 hyperactivity has been implicated in maladaptive tissue and organ remodeling (Reiser et al., 2005; Kuwahara et al., 2006; Onohara et al., 2006; Tian et al., 2010; Xie et al., 2012; Davis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Singh et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "e622994c-b040-42e3-bbc1-a0aaae862202",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C10",
+      "claim": "TRPC6-mediated cation influx regulates physiological function of smooth muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC6-mediated cation influx regulates physiological function of pulmonary endothelial cells (Singh et al., 2007), smooth muscle cells (Dietrich et al., 2005) and glomerular podocytes (Reiser et al., 2005), whereas TRPC6 hyperactivity has been implicated in maladaptive tissue and organ remodeling (Reiser et al., 2005; Kuwahara et al., 2006; Onohara et al., 2006; Tian et al., 2010; Xie et al., 2012; Davis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dietrich et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "67a5b39c-7bce-4758-8efe-ae47d2a08f90",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C11",
+      "claim": "TRPC6-mediated cation influx regulates physiological function of glomerular podocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC6-mediated cation influx regulates physiological function of pulmonary endothelial cells (Singh et al., 2007), smooth muscle cells (Dietrich et al., 2005) and glomerular podocytes (Reiser et al., 2005), whereas TRPC6 hyperactivity has been implicated in maladaptive tissue and organ remodeling (Reiser et al., 2005; Kuwahara et al., 2006; Onohara et al., 2006; Tian et al., 2010; Xie et al., 2012; Davis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Reiser et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "7d714d57-afa2-485a-998a-0e2d59e16984",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C12",
+      "claim": "TRPC6 hyperactivity has been implicated in maladaptive tissue and organ remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC6-mediated cation influx regulates physiological function of pulmonary endothelial cells (Singh et al., 2007), smooth muscle cells (Dietrich et al., 2005) and glomerular podocytes (Reiser et al., 2005), whereas TRPC6 hyperactivity has been implicated in maladaptive tissue and organ remodeling (Reiser et al., 2005; Kuwahara et al., 2006; Onohara et al., 2006; Tian et al., 2010; Xie et al., 2012; Davis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "a6c1e70c-86e6-4220-8333-25a4ce7dcb9a",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C13",
+      "claim": "Upregulation of TRPC6 in myocytes plays a role in cardiac hypertrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, upregulation of TRPC6 in myocytes plays a role in cardiac hypertrophy (Kuwahara et al., 2006; Onohara et al., 2006; Xie et al., 2012; Wu et al., 2010), and gain-of-function mutations of TRPC6 contribute to hereditary focal segmental glomerulosclerosis (FSGS), a renal disorder characterized by podocyte injury and a potential cause of end stage renal disease (Reiser et al., 2005; Heeringa et al., 2009; Ilatovskaya and Staruschenko, 2015; Mottl et al., 2013; Winn et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "146ea1e3-86c5-48a7-8d25-6357a60620ad",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C14",
+      "claim": "Gain-of-function mutations of TRPC6 contribute to hereditary focal segmental glomerulosclerosis (FSGS).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, upregulation of TRPC6 in myocytes plays a role in cardiac hypertrophy (Kuwahara et al., 2006; Onohara et al., 2006; Xie et al., 2012; Wu et al., 2010), and gain-of-function mutations of TRPC6 contribute to hereditary focal segmental glomerulosclerosis (FSGS), a renal disorder characterized by podocyte injury and a potential cause of end stage renal disease (Reiser et al., 2005; Heeringa et al., 2009; Ilatovskaya and Staruschenko, 2015; Mottl et al., 2013; Winn et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "50488801-9409-4e57-bf7a-90a87d36f6d1",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C15",
+      "claim": "FSGS is a renal disorder characterized by podocyte injury and a potential cause of end stage renal disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, upregulation of TRPC6 in myocytes plays a role in cardiac hypertrophy (Kuwahara et al., 2006; Onohara et al., 2006; Xie et al., 2012; Wu et al., 2010), and gain-of-function mutations of TRPC6 contribute to hereditary focal segmental glomerulosclerosis (FSGS), a renal disorder characterized by podocyte injury and a potential cause of end stage renal disease (Reiser et al., 2005; Heeringa et al., 2009; Ilatovskaya and Staruschenko, 2015; Mottl et al., 2013; Winn et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "cc8a7c8a-9ad8-4631-a7a4-b7f6cd3366c2",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C16",
+      "claim": "TRPC6 emerges as an important therapeutic target for pharmacological inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to pathological roles of excessive TRPC6 activity, TRPC6 emerges as an important therapeutic target for pharmacological inhibition (Bon and Beech, 2013; Lin et al., 2019; Seo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "7cb6b9cb-5d88-4522-a6eb-861d066f71d4",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C17",
+      "claim": "Development of potent and selective small-molecule antagonists of TRPC6 is hampered by limited understanding of the molecular mechanism of TRPC6 modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, development of potent and selective small-molecule antagonists of TRPC6 is hampered by limited understanding of the molecular mechanism of TRPC6 modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the state of the field at the time of writing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "93ac3eb3-08e3-4592-9ddf-882c445c6458",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C18",
+      "claim": "Recent cryo-EM structures of several TRPC channels elucidate their tetrameric assembly comprising a transmembrane domain and a cytoplasmic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent cryo-electron microscopy (cryo-EM) structures of several TRPC channels elucidate their tetrameric assembly comprising a transmembrane domain and a cytoplasmic domain (Azumaya et al., 2018; Duan et al., 2019; Duan et al., 2018; Fan et al., 2018; Sierra-Valdez et al., 2018; Tang et al., 2018; Vinayagam et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "de0faac6-1bed-40d7-92ac-2abd4730016e",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C19",
+      "claim": "One antagonist-binding site has been identified in human TRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite identification of one antagonist-binding site in human TRPC6 (Tang et al., 2018) and multiple lipid-binding sites in human TRPC3 and mouse TRPC5 (Duan et al., 2019; Fan et al., 2018) molecular contacts with the antagonist are not well defined because of limited resolution, and the function of observed lipids remains to be determined (Duan et al., 2019; Fan et al., 2018; Tang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Tang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "7a0e9d7a-89b0-4c3b-949d-378d049470cc",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C20",
+      "claim": "Multiple lipid-binding sites have been identified in human TRPC3 and mouse TRPC5.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite identification of one antagonist-binding site in human TRPC6 (Tang et al., 2018) and multiple lipid-binding sites in human TRPC3 and mouse TRPC5 (Duan et al., 2019; Fan et al., 2018) molecular contacts with the antagonist are not well defined because of limited resolution, and the function of observed lipids remains to be determined (Duan et al., 2019; Fan et al., 2018; Tang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Duan et al., 2019 and Fan et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "9618cf34-ada8-498a-867d-5f8fdd2f2db1",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C21",
+      "claim": "Molecular contacts with the antagonist in TRPC6 are not well defined because of limited resolution in previous structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite identification of one antagonist-binding site in human TRPC6 (Tang et al., 2018) and multiple lipid-binding sites in human TRPC3 and mouse TRPC5 (Duan et al., 2019; Fan et al., 2018) molecular contacts with the antagonist are not well defined because of limited resolution, and the function of observed lipids remains to be determined (Duan et al., 2019; Fan et al., 2018; Tang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on evaluation of prior structural studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "6f46591d-d53b-4bce-a696-62ef9a8123d1",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C22",
+      "claim": "There is no TRPC structure with a known agonist prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, since there is no TRPC structure with a known agonist, it is still elusive how TRPC channels are activated by DAG or other agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field based on knowledge of prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "2ae6989f-5dbc-4e91-adb0-ed6983177004",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C23",
+      "claim": "The mechanism of TRPC channel activation by DAG or other agonists is elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, since there is no TRPC structure with a known agonist, it is still elusive how TRPC channels are activated by DAG or other agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "1ff6c0dd-5d5f-43bb-b3ec-e63f06ec3e3d",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C24",
+      "claim": "Two high-resolution cryo-EM structures of antagonist- and agonist-bound human TRPC6 in lipidic nanodiscs were determined.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we present two high-resolution cryo-EM structures of antagonist- and agonist-bound human TRPC6 in lipidic nanodiscs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary experimental result of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "141d385e-6296-477f-ba85-7b4a5a4d8069",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C25",
+      "claim": "The structures identify two novel modulation sites in the transmembrane domain of TRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structures identify two novel modulation sites in the transmembrane domain and reveal the binding modes of the small molecule antagonist and agonist, which were corroborated by functional data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural data and functional validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "a7ed7d67-801e-4fab-84bc-0dd8907569df",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C26",
+      "claim": "The binding modes of the small molecule antagonist and agonist were corroborated by functional data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structures identify two novel modulation sites in the transmembrane domain and reveal the binding modes of the small molecule antagonist and agonist, which were corroborated by functional data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mutagenesis and functional assays presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "30068c60-9045-4f3c-8c51-6af03605b28a",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C27",
+      "claim": "Residues 2-72 of TRPC6 are missing in TRPC3.",
+      "claim_type": "EXPLICIT",
+      "source": "An N-terminally truncated (\u03942\u201372) human TRPC6 was engineered because residues corresponding to 2\u201372 of TRPC6 are missing in TRPC3 despite high overall sequence similarity between TRPC3 and TRPC6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison between TRPC3 and TRPC6.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "4d2acc8b-d0c3-46bf-ab76-fd2cf764f119",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C28",
+      "claim": "TRPC6 (\u03942\u201372) showed enhanced biochemical stability.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC6 (\u03942\u201372) showed enhanced biochemical stability and could be activated by oleoyl-2-acetyl-sn-glycerol (OAG), a soluble analog of the native lipid agonist DAG (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "7ebd80d9-911e-4661-878c-60a94b450c30",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C29",
+      "claim": "TRPC6 (\u03942\u201372) could be activated by oleoyl-2-acetyl-sn-glycerol (OAG).",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC6 (\u03942\u201372) showed enhanced biochemical stability and could be activated by oleoyl-2-acetyl-sn-glycerol (OAG), a soluble analog of the native lipid agonist DAG (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "d3bbb583-3c08-4434-ad56-43f747aa3573",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C30",
+      "claim": "OAG is a soluble analog of the native lipid agonist DAG.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC6 (\u03942\u201372) showed enhanced biochemical stability and could be activated by oleoyl-2-acetyl-sn-glycerol (OAG), a soluble analog of the native lipid agonist DAG (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about OAG.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "151ab079-7525-4e71-a11f-920140e7ef06",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C31",
+      "claim": "AM-1473 is a small molecule antagonist with an IC50 of 0.22 \u00b1 0.05 nM (n = 14) in the TRPC6 bioassay.",
+      "claim_type": "EXPLICIT",
+      "source": "AM-1473, a small molecule antagonist with an IC50 of 0.22 \u00b1 0.05 nM (n = 14) in our TRPC6 bioassay, is a structural analog of previously disclosed small molecule antagonist SAR-7334 (Maier et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the bioassay performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "cdb2948b-26f3-48eb-b5ed-64bffca468c8",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C32",
+      "claim": "AM-1473 is a structural analog of SAR-7334.",
+      "claim_type": "EXPLICIT",
+      "source": "AM-1473, a small molecule antagonist with an IC50 of 0.22 \u00b1 0.05 nM (n = 14) in our TRPC6 bioassay, is a structural analog of previously disclosed small molecule antagonist SAR-7334 (Maier et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chemical structure comparison and citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "7e3c1873-1cc8-4a3e-922b-b9c0cd481874",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C33",
+      "claim": "AM-0883 is a novel TRPC6 agonist with an EC50 of 45.5 \u00b1 10 nM (n = 19).",
+      "claim_type": "EXPLICIT",
+      "source": "AM-0883, a novel TRPC6 agonist with an EC50 of 45.5 \u00b1 10 nM (n = 19) was identified from a small molecule in vitro high throughput screening campaign at Amgen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the bioassay performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "12b4ae04-6d53-4c04-be6c-2186d46bda35",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C34",
+      "claim": "AM-0883 was identified from a small molecule in vitro high throughput screening campaign at Amgen.",
+      "claim_type": "EXPLICIT",
+      "source": "AM-0883, a novel TRPC6 agonist with an EC50 of 45.5 \u00b1 10 nM (n = 19) was identified from a small molecule in vitro high throughput screening campaign at Amgen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method of discovery of the compound.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "83f97f5a-4799-4e29-adda-8dc391ea3f75",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C35",
+      "claim": "TRPC6 (\u03942\u201372) could be inhibited by AM-1473 with an IC50 of 0.13 \u00b1 0.03 nM (n = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the WT protein, TRPC6 (\u03942\u201372) could be inhibited by AM-1473 (IC50 = 0.13 \u00b1 0.03 nM, n = 5, Figure 1\u2014figure supplement 1c) and activated by AM-0883 (EC50 = 90.2 \u00b1 13 nM, n = 4, Figure 1\u2014figure supplement 1a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "bd8f282f-9a13-47d3-81da-05194106b250",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C36",
+      "claim": "TRPC6 (\u03942\u201372) could be activated by AM-0883 with an EC50 of 90.2 \u00b1 13 nM (n = 4).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the WT protein, TRPC6 (\u03942\u201372) could be inhibited by AM-1473 (IC50 = 0.13 \u00b1 0.03 nM, n = 5, Figure 1\u2014figure supplement 1c) and activated by AM-0883 (EC50 = 90.2 \u00b1 13 nM, n = 4, Figure 1\u2014figure supplement 1a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 1\u2014figure supplement 1a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "8f325f86-6730-4211-860f-24ccf2e364d8",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C37",
+      "claim": "The structure of the antagonist-bound TRPC6 in nanodiscs was determined at a resolution of 3.1 \u00c5 using single-particle cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the antagonist-bound TRPC6 in nanodiscs was determined at a resolution of 3.1 \u00c5 using single-particle cryo-EM (Figure 1, Table 1 and Figure 1\u2014figure supplements 2\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the primary structural result supported by cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "c3485450-fbca-41d4-bfce-78988a7a5022",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C38",
+      "claim": "The overall architecture of the antagonist-bound TRPC6 is similar to previous cryo-EM structures of TRPC3 and TRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall architecture of the antagonist-bound TRPC6 is similar to previous cryo-EM structures of TRPC3 and TRPC6 (Fan et al., 2018; Tang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison with prior structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "af654cc1-8a7d-4045-831b-4474902924e2",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C39",
+      "claim": "The voltage-sensor-like domain (S1-S4) and the pore domain (S5-S6) are arranged in a domain-swapped manner in TRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "The voltage-sensor-like domain (S1-S4) and the pore domain (S5-S6) are arranged in a domain-swapped manner (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "8505e68c-52ad-458a-8e9e-c3a5be9e352b",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C40",
+      "claim": "S3 extends substantially into the extracellular space in TRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "S3 extends substantially into the extracellular space (Figure 1a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure shown in Figure 1a,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "175e8fda-f92c-41fc-b127-b19119788d88",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C41",
+      "claim": "An elbow-like structural component is embedded in the lipid bilayer and makes hydrophobic contacts with the intracellular half of S1 in TRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "An elbow-like structural component is embedded in the lipid bilayer and makes hydrophobic contacts with the intracellular half of S1 (Figure 1a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure shown in Figure 1a,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "3868e0c9-48e0-4401-9cbc-711fdbbfe1bb",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C42",
+      "claim": "The intracellular domain is assembled through interactions between the ankyrin repeat domain (ARD) at the N-terminus and the rib helix and coiled-coil at the C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular domain is assembled through interactions between the ankyrin repeat domain (ARD) at the N-terminus and the rib helix and coiled-coil at the C-terminus (Figure 1a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure shown in Figure 1a,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "77f70751-8a09-430b-9829-ecdd50ad5779",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C43",
+      "claim": "The antagonist AM-1473 consists of an aminopiperidine, a benzonitrile, and an indane.",
+      "claim_type": "EXPLICIT",
+      "source": "There are several non-protein densities in our cryo-EM map (Figure 1). Based on the shape and chemical environment, it is very likely that the density within the pocket of S1-S4 observed in the final postprocessed map and two corresponding half-maps belongs to the antagonist AM-1473 (Figure 1c\u2013d, Figure 2a\u2013b, and Figure 1\u2014figure supplement 2f\u2013h), which consists of an aminopiperidine, a benzonitrile, and an indane (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the chemical structure of AM-1473 shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "d9f89daf-0dc6-4a6b-b052-aefe4acb5fff",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C44",
+      "claim": "The S1-S4 pocket was empty in the structure of TRPC6 bound to BTDM.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this pocket was empty in the structure of TRPC6 bound to another small molecule antagonist BTDM (Tang et al., 2018) or the TRPC3 structure (Tang et al., 2018; Figure 2\u2014figure supplement 1), further supporting our assignment of the density to the antagonist.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison with a prior structure from Tang et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "066faace-658c-4750-9b9e-a0087bb47251",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C45",
+      "claim": "The primary amine moiety off the piperidine ring of AM-1473 forms hydrogen-bond interactions with Glu509 on S2 and Asp530 on S3.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary amine moiety off the piperidine ring forms hydrogen-bond interactions with Glu509 on S2, and Asp530 on S3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structure showing specific molecular interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "c66ca079-1e9f-4008-9427-aff3d1857094",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C46",
+      "claim": "The benzonitrile group of AM-1473 is involved in a cation-\u03c0 interaction with Arg758 on the reentrant loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The benzonitrile group is involved in a cation-\u03c0 interaction with Arg758 on the reentrant loop as well as aromatic-stacking interactions with His446 on S1 and Tyr753 on the TRP helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structure showing specific molecular interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "c4901aea-2c19-4ebd-95c2-ceec4194f47d",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C47",
+      "claim": "The benzonitrile group of AM-1473 has aromatic-stacking interactions with His446 on S1 and Tyr753 on the TRP helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The benzonitrile group is involved in a cation-\u03c0 interaction with Arg758 on the reentrant loop as well as aromatic-stacking interactions with His446 on S1 and Tyr753 on the TRP helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structure showing specific molecular interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "e1f7b524-45e4-48d6-b8c9-e31e65d48bcb",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C48",
+      "claim": "The indene double ring of AM-1473 makes van der Waal contacts with Tyr612 on S4.",
+      "claim_type": "EXPLICIT",
+      "source": "The indene double ring makes van der Waal contacts with Tyr612 on S4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structure showing specific molecular interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "46d6196c-da8c-4572-af59-17c03b084b94",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C49",
+      "claim": "The antagonist AM-1473 is 36-fold selective for TRPC6 over TRPC3.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the antagonist is 36-fold selective for TRPC6 over its closely-related homolog TRPC3 (IC50 of 8.0 \u00b1 2.2 nM, n = 3, Figure 1\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from bioassays shown in Figure 1\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "96d0e9bc-2d0b-4e13-b2a2-624134847819",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C50",
+      "claim": "Arg758 on TRPC6 is replaced by a lysine on TRPC3.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the residues that interact with the antagonist, most are identical between TRPC3 and TRPC6, but Arg758 on TRPC6 is replaced by a lysine on TRPC3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison between TRPC3 and TRPC6.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "6557f352-baf5-488a-8681-3de6bdfdc9b7",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C51",
+      "claim": "The antagonist AM-1473 is 5-fold less potent in TRPC6 R758K mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested whether exchange this residue between TRPC6 and TRPC3 would have any effect on the antagonist potency and found that the antagonist is 5-fold less potent in TRPC6 R758K and 3.5-fold more potent in TRPC3 K689R (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from mutagenesis studies shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "41b5ff9d-b940-4b56-8a64-8b3c2ac12c88",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C52",
+      "claim": "The antagonist AM-1473 is 3.5-fold more potent in TRPC3 K689R mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested whether exchange this residue between TRPC6 and TRPC3 would have any effect on the antagonist potency and found that the antagonist is 5-fold less potent in TRPC6 R758K and 3.5-fold more potent in TRPC3 K689R (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from mutagenesis studies shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "514cf66b-2c8a-46b8-9583-9735059877e0",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C53",
+      "claim": "The lower antagonist potency in TRPC3 could be partly due to the less optimal position for the lysine to form the cation-\u03c0 interaction with the benzonitrile group.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that the lower antagonist potency in TRPC3 could be partly due to the less optimal position for the lysine to form the cation-\u03c0 interaction with the benzonitrile group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural analysis and mutagenesis data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "59483fa7-51b8-4a38-a02b-be2b2940c46b",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C54",
+      "claim": "Mutations E509A and D530A almost completely abolished the response of TRPC6 to the antagonist AM-1473.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that removed the negatively charged residues that interact with the primary amine, E509A and D530A, almost completely abolished the response of TRPC6 to the antagonist, consistent with the critical roles of the negatively charged side chains in ligand recognition and the positively charged primary amine in maintaining antagonist potency (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from mutagenesis studies shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "81dd9ef1-be99-46c4-94bc-8c58abee3a17",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C55",
+      "claim": "Mutation R609A lowered the binding affinity of AM-1473 by ~10 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mutation R609A, which disrupts the salt-bridge interaction between Arg609 and Asp530, also lowered the binding affinity of compound by ~10 fold (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from mutagenesis studies shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "d1464d77-80d0-4641-ac6a-caaab21adf49",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C56",
+      "claim": "Mutation R758A lowered the binding affinity of AM-1473 by ~300 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation R758A, which disrupts the cation-\u03c0 interaction, lowered the binding affinity by ~300 fold (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from mutagenesis studies shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "518cbaf9-e2e6-49ae-96a9-db58e306297d",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C57",
+      "claim": "Mutations K442A and N527A lowered the binding-affinity of AM-1473 by ~15 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations K442A and N527A lowered the binding-affinity by ~15 fold, suggesting that Lys442 and Gln527 might be involved in hydrophilic interactions with the nitrile and the primary amine, respectively (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from mutagenesis studies shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "0ba6b906-deb2-4f1e-a8a1-79080ecb33a4",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C58",
+      "claim": "Multiple outer leaflet lipids line the membrane-facing crevices between adjacent subunits in TRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other TRP channels and voltage-gated ion channels, multiple outer leaflet lipids line the membrane-facing crevices between adjacent subunits, making contacts with helices S3-S6 as well as the pore helix (Figure 1a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure shown in Figure 1a,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "7f6e3443-d51d-42ab-bc4b-5bac9bfac623",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C59",
+      "claim": "One inner leaflet lipid in TRPC6 is buried in a pocket formed by S1, S4 and the pre-S1 elbow, and its size and shape fit well with that of a cholesterol hemisuccinate (CHS) molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "In the inner leaflet, one lipid is buried in a pocket formed by S1, S4 and the pre-S1 elbow, and its size and shape fit well with that of a cholesterol hemisuccinate (CHS) molecule (Hughes et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structure with inference about lipid identity based on shape and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "9fe91f8d-b86c-431f-bb7f-bf23f036bb36",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C60",
+      "claim": "Another inner leaflet lipid in TRPC6 is wedged between S4 and the S4-S5 linker and can be interpreted as a phosphatidylcholine lipid.",
+      "claim_type": "EXPLICIT",
+      "source": "Another inner leaflet lipid is wedged between S4 and the S4-S5 linker and can be interpreted as a phosphatidylcholine lipid (Figure 2\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure with inference about lipid identity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "14e47418-b18a-4bbe-8361-d96bd2e49d55",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C61",
+      "claim": "The intracellular cleft between S4 and S5 could be a site for channel modulation in TRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, this cleft also contributes to the putative binding site of another small-molecule antagonist of TRPC6 (Tang et al., 2018; Figure 2\u2014figure supplement 3b). Therefore, the intracellular cleft between S4 and S5 could be a site for channel modulation in TRPC6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural comparison with prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "e687a30d-9965-4ba0-9f34-5521c4192835",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C62",
+      "claim": "The vanilloid-binding site located near S4 and S5 in TRPV1 accommodates a phosphatidylinositol lipid that could be displaced by vanilloid agonists or antagonists.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the vanilloid-binding site located near S4 and S5 in TRPV1 accommodates a phosphatidylinositol lipid that could be displaced by vanilloid agonists or antagonists (Gao et al., 2016; Figure 2\u2014figure supplement 3d\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on citation to prior structural work on TRPV1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "d8853c1f-d75a-4145-87d1-cd80d7ae9bd3",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C63",
+      "claim": "In TRPV5, econazole occupies a site similar to the vanilloid-binding site in TRPV1.",
+      "claim_type": "EXPLICIT",
+      "source": "In TRPV5, econazole, a small molecule antagonist and antifungal, was found to occupy a similar site (Hughes et al., 2018; Figure 2\u2014figure supplement 3f), whereas in TRPV6, native lipids that might be involved in channel activation were identified in this pocket (McGoldrick et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on citation to prior structural work on TRPV5.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "02f26179-8ab5-48fe-8a1e-47c6f7124c79",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C64",
+      "claim": "Many disease-related mutations found in FSGS patients are clustered at the region where the N-terminal ARD and the C-terminal rib helix and coiled-coil interact with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "With the structure, we studied the location of disease-related mutations found in FSGS patients (Mottl et al., 2013). Intriguingly, many of these mutation sites are clustered at the region where the N-terminal ARD and the C-terminal rib helix and coiled-coil interact with each other (Figure 3a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from structural analysis of disease mutations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "e7e06442-acba-4e39-9b7c-f73d9b820cfe",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C65",
+      "claim": "Six mutations (G109S, P112Q, N143S, Q889K, R895C, and E897K) are located at the interface between the ARD and the pole helix of the same subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Six mutations, including G109S, P112Q, N143S, Q889K, R895C, and E897K, are located at the interface between the ARD and the pole helix of the same subunit (Figure 3b, interface 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from structural analysis shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "dc160ce7-6f47-4eb5-acb9-6f2e235bb7d7",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C66",
+      "claim": "Mutation M132T is located at the interface between the ARD of one subunit and the rib helix of the adjacent subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Another mutation, M132T, is located at the interface between the ARD of one subunit and the rib helix of the adjacent subunit (Figure 3b, interface 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from structural analysis shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "d89c99c4-06fb-447d-a5b7-a2637f5d1454",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C67",
+      "claim": "Several mutations at interface 1 (positions 109, 112, 889, and 895) led to enhanced channel activity without affecting the expression level on the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Heeringa et al., 2009; Mottl et al., 2013; Winn et al., 2005), we found several mutations at interface 1, including those at positions 109, 112, 889, and 895, led to enhanced channel activity without affecting the expression level on the membrane (Figure 3c, Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from mutagenesis and expression studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "78667e3e-6c05-439c-a778-fd10ff92ba6a",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C68",
+      "claim": "The interactions at interface 1 are important for the stability of the closed state of TRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Since mutations at these positions destabilize the interactions at interface 1, the increased activity in mutant channels suggests that these interactions are important for the stability of the closed state of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mutagenesis data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "be001b0f-e437-46a8-bb30-bf24da4def4f",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C69",
+      "claim": "M132T is a disease-causing mutation that increases TRPC6 channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "To further explore this idea, we tested whether disrupting the interfacial interactions at interface 2 would have an effect on channel activity. M132T is a disease-causing mutation that also increases channel activity (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "8c1ce44e-8231-4d32-bd2a-d5770deb4ea6",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C70",
+      "claim": "Met132 forms hydrophobic interactions with Val867 and Leu868 on the rib helix.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structure, Met132 forms hydrophobic interactions with Val867 and Leu868 on the rib helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "7d59d14e-b4e4-485e-8ff8-e236d6510a96",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C71",
+      "claim": "Substitution of either Val867 or Leu868 with a threonine increased maximum channel activity by ~50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of either Val867 or Leu868 with a threonine increased maximum channel activity by ~50%, whereas mutating both residues simultaneously more than doubled maximum channel activity (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from mutagenesis studies shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "366074f4-04d5-4d64-bfbd-de434b888eac",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C72",
+      "claim": "Mutating both Val867 and Leu868 simultaneously more than doubled maximum channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of either Val867 or Leu868 with a threonine increased maximum channel activity by ~50%, whereas mutating both residues simultaneously more than doubled maximum channel activity (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from mutagenesis studies shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "8a62c201-a8b1-4d04-b75b-1041993c96fd",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C73",
+      "claim": "The interactions at interface 2 are involved in stabilizing the closed state of TRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Since none of these mutations have any significant effect on the expression level on the membrane (Figure 3\u2014figure supplement 1b), the increased channel activity of these mutant channels suggests that the interactions at interface 2 are also involved in stabilizing the closed state of TRPC6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on mutagenesis and expression data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "bfd3eefc-220d-45d1-b2dc-3ad39990fc45",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C74",
+      "claim": "The structure of agonist-bound TRPC6 (\u03942\u201372) V867T/L868T was determined at 3.1 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand agonist binding and channel activation, we purified the double mutant TRPC6 (\u03942\u201372) V867T/L868T channel in complex with the small molecule agonist AM-0883, reconstituted it into nanodiscs and determined the cryo-EM structure at 3.1 \u00c5 (Figure 4, Table 1 and Figure 4\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the primary structural result for the agonist-bound state.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "0cdd66ee-8994-4b6a-97d9-c053f4571e20",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C75",
+      "claim": "AM-0883 induced about the same level of maximum activity as OAG.",
+      "claim_type": "EXPLICIT",
+      "source": "AM-0883 induced about the same level of maximum activity as OAG, but was ~70 fold more potent than OAG (Figure 4\u2014figure supplement 1a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from bioassays shown in Figure 4\u2014figure supplement 1a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "fc786a06-4d58-4901-822e-f99621ec6348",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C76",
+      "claim": "AM-0883 was ~70 fold more potent than OAG.",
+      "claim_type": "EXPLICIT",
+      "source": "AM-0883 induced about the same level of maximum activity as OAG, but was ~70 fold more potent than OAG (Figure 4\u2014figure supplement 1a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from bioassays shown in Figure 4\u2014figure supplement 1a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "5d8b6fed-e106-41f6-af0d-0116b34b63ba",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C77",
+      "claim": "The low potency of OAG might explain the lack of OAG density in the previous structure of TRPC3 copurified with OAG.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that the low potency of OAG might explain the lack of OAG density in the previous structure of TRPC3 copurified with OAG (Tang et al., 2018), and the higher potency of AM-0883 would allow us to obtain the agonist-bound structure of TRPC6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of potencies and prior structural work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "48db8629-c6b8-49d9-bdf4-bf827d6e7940",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C78",
+      "claim": "TRPC6 V867T/L868T exhibited much higher channel activity than WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, because TRPC6 V867T/L868T, like WT, responded to both AM-0883 and OAG but exhibited much higher channel activity than WT (Figure 3d and Figure 1\u2014figure supplement 1f), the double mutant appeared to be an ideal variant for us to investigate the more activated state of TRPC6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from bioassays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "1a4cf825-8075-4f5a-a0e4-01af5da50d40",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C79",
+      "claim": "The agonist AM-0883 consists of a chloro-indole, a piperidine and a benzodioxin.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a clear non-protein density at each subunit interface that represents the agonist AM-0883, which consists of a chloro-indole, a piperidine and a benzodioxin, and occupies a groove between S6 of one subunit and the pore helix of the adjacent subunit (Figure 4b\u2013c and Figure 5a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the chemical structure of AM-0883 and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "3bbbb8b6-d20d-47e9-972e-e9d54c9bf2c8",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C80",
+      "claim": "The agonist AM-0883 occupies a groove between S6 of one subunit and the pore helix of the adjacent subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a clear non-protein density at each subunit interface that represents the agonist AM-0883, which consists of a chloro-indole, a piperidine and a benzodioxin, and occupies a groove between S6 of one subunit and the pore helix of the adjacent subunit (Figure 4b\u2013c and Figure 5a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "a9465240-cd12-45a9-9b57-090486223e70",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C81",
+      "claim": "The agonist AM-0883 forms hydrophobic interactions with Phe675 and TRP680 on the pore helix and Tyr705, Val706 and Val710 on S6.",
+      "claim_type": "EXPLICIT",
+      "source": "The agonist forms hydrophobic interactions with Phe675 and TRP680 on the pore helix and Tyr705, Val706 and Val710 on S6 (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "655a4ec4-f3fb-45cd-a96c-0939d1d70069",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C82",
+      "claim": "There are possible hydrophilic interactions between the indole ring of AM-0883 and Glu672 and Asn702.",
+      "claim_type": "EXPLICIT",
+      "source": "There are also possible hydrophilic interactions between the indole ring and Glu672 and Asn702 (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "3e1e27d5-0190-4e7e-8222-cb9c5f000ab0",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C83",
+      "claim": "Mutations F675A, W680A, N702A, Y705A and V710A almost completely abolished the channel activity in the presence of the agonist AM-0883.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested whether mutations around this region would affect the potency of the agonist and found that mutations F675A, W680A, N702A, Y705A and V710A almost completely abolished the channel activity in the presence of the agonist AM-0883, whereas mutations E672A and V706A showed a 35-fold and 20-fold increase in agonist EC50, respectively (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from mutagenesis studies shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "da01aecf-989c-4034-932f-3df4987ec17e",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C84",
+      "claim": "Mutations E672A and V706A showed a 35-fold and 20-fold increase in agonist EC50, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested whether mutations around this region would affect the potency of the agonist and found that mutations F675A, W680A, N702A, Y705A and V710A almost completely abolished the channel activity in the presence of the agonist AM-0883, whereas mutations E672A and V706A showed a 35-fold and 20-fold increase in agonist EC50, respectively (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from mutagenesis studies shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "c1ddb63b-5a37-4ee4-b51e-aad7bddfbf86",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C85",
+      "claim": "Gly640 on S6 of TRPC3, corresponding to Gly709 of TRPC6, has been proposed as a critical structural component for DAG recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Several residues around the agonist-binding site have been shown to affect channel activation by the native lipid agonist DAG. Gly640 on S6 of TRPC3, conserved among TRPCs and corresponding to Gly709 of TRPC6, has been proposed as a critical structural component for DAG recognition (Lichtenegger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to prior work by Lichtenegger et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "c2aafa59-4cd3-40cc-8b28-ab4293aa84f3",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C86",
+      "claim": "Mutations of Gly640 in TRPC3 and TRPC6 dramatically reduced DAG sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations of this glycine in TRPC3 and TRPC6 dramatically reduced DAG sensitivity (Hofmann et al., 2002; Str\u00fcbing et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "3dee52b6-488d-4ed4-9a3f-f4d0e5689cb4",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C87",
+      "claim": "The conserved LFW motif (residues 678\u2013680 in TRPC6) on the pore helix has been identified to be essential for channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the pore helix, the conserved LFW motif (residues 678\u2013680 in TRPC6) has been identified to be essential for channel activation (Hofmann et al., 2002; Str\u00fcbing et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "4983a130-3989-44b6-8289-496aeb85beb2",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C88",
+      "claim": "Substitution of all three residues of the LFW motif with alanine in TRPC5 and TRPC6 resulted in nonfunctional channels without altering plasma membrane expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of all three residues with alanine in TRPC5 and TRPC6 resulted in nonfunctional channels without altering plasma membrane expression (Str\u00fcbing et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to prior work by Str\u00fcbing et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "c35339a3-fa5b-470f-8c16-7bafbf7e7e95",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C89",
+      "claim": "Mutations E672A, F675A, W680A, N702A, Y705A and V706A completely eliminated the response to OAG even at a 100 \u03bcM concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the idea that the agonist-binding site is also important for DAG recognition, mutations around the site, including E672A, F675A, W680A, N702A, Y705A and V706A, maintained normal membrane surface expression (Figure 3\u2014figure supplement 1c) but completely eliminated the response to OAG even at a 100 \u03bcM concentration (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from mutagenesis studies shown in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "c80c9986-0c14-4d31-a9cf-30f49c2db7a2",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C90",
+      "claim": "Glu672 and Val706 appeared to be more critical for the binding of DAG than AM-0883.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Glu672 and Val706 appeared to be more critical for the binding of DAG than AM-0883, because channels with mutation E672A or V706A could still be activated by the agonist AM-0883 at reduced potency but not by DAG (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on differential effects of mutations on AM-0883 vs DAG activation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "53dbfe2f-1136-4f13-8ada-9b6af0869888",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C91",
+      "claim": "The V710A mutation reduced the maximal activation by OAG by >80%.",
+      "claim_type": "EXPLICIT",
+      "source": "The V710A mutation also reduced the maximal activation by OAG by >80% (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from mutagenesis studies shown in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "008e7797-3c37-4c4b-9cbd-914588afdb2d",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C92",
+      "claim": "Among six TRPC proteins found in human, only TRPC3, TRPC6 and TRPC7 are directly activated by DAG.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, among six TRPC proteins found in human, only the closely-related subgroup of TRPC3, TRPC6 and TRPC7 are directly activated by DAG (Hofmann et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to prior work and established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "80a8e73e-6402-4add-9446-54e9e7c8c00e",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C93",
+      "claim": "Glu672, Asn702 and Tyr705 are only conserved among TRPC3, TRPC6 and TRPC7.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, whereas several residues around the putative DAG-recognition site are conserved across TRPCs, Glu672, Asn702 and Tyr705 are only conserved among TRPC3, TRPC6 and TRPC7 (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "04251f0f-8959-46b2-9a41-f528adf3ec98",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C94",
+      "claim": "The AM-0883-binding site faces membrane lipids and is occupied by one of the outer leaflet lipids in the antagonist-bound structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the AM-0883-binding site faces membrane lipids and is occupied by one of the outer leaflet lipids in the antagonist-bound structure (Figure 4\u2014figure supplement 1a,c), and therefore constitutes a likely location for DAG-binding at the outer leaflet.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "19909de7-57d9-4752-a941-11a6442f085e",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C95",
+      "claim": "The agonist-binding site identified in this study may overlap with the DAG-recognition site.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall findings strongly suggest that the agonist-binding site identified here may overlap with the DAG-recognition site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on mutagenesis data and structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "8b8e9ad1-d441-488f-a1d3-e13afa037b7e",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C96",
+      "claim": "Analogous sites near the subunit interface between S6 and the pore helix have been previously identified to accommodate a small molecule agonist in TRPML1.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous sites near the subunit interface between S6 and the pore helix have been previously identified to accommodate a small molecule agonist in TRPML1 (Schmiege et al., 2017), and a small molecule antagonist in CavAb (Tang et al., 2016; Figure 5\u2014figure supplement 3), corroborating the important role of this site in channel modulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on citations to prior structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "5521f70b-e104-400b-ace8-00df09be83c9",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C97",
+      "claim": "Analogous sites near the subunit interface between S6 and the pore helix have been previously identified to accommodate a small molecule antagonist in CavAb.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous sites near the subunit interface between S6 and the pore helix have been previously identified to accommodate a small molecule agonist in TRPML1 (Schmiege et al., 2017), and a small molecule antagonist in CavAb (Tang et al., 2016; Figure 5\u2014figure supplement 3), corroborating the important role of this site in channel modulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on citations to prior structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "4bdc9854-1f63-429e-8532-49664270a1b3",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C98",
+      "claim": "The double mutant V867T/L868T exhibited a 2-fold increase in maximum activity in the presence of the agonist AM-0883 compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the WT protein, the double mutant V867T/L868T exhibited a 2-fold increase in maximum activity in the presence of the agonist AM-0883 (Figure 1\u2014figure supplement 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from bioassays shown in Figure 1\u2014figure supplement 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "d059ef6f-4bab-482d-b64e-8259c9d954bd",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C99",
+      "claim": "The agonist-bound structure of TRPC6 (\u03942\u201372) V867T/L868T possesses a closed ion channel pore.",
+      "claim_type": "EXPLICIT",
+      "source": "However, similar to the antagonist-bound structure of TRPC6 (\u03942\u201372), the agonist-bound structure of TRPC6 (\u03942\u201372) V867T/L868T also possesses a closed ion channel pore (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "4557097d-99da-4e84-928b-3dc921bd55ab",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C100",
+      "claim": "The mutations and the agonist were not sufficient to shift the gating equilibrium towards a stable open state.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the mutations and the agonist were not sufficient to shift the gating equilibrium towards a stable open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that the pore is closed in the agonist-bound structure.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "d309cd71-2fcd-4c52-9bc3-b18e0e72aae3",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C101",
+      "claim": "The low open probability and the short open time (<1 ms) of TRPC6 suggest that the closed state is much more energetically stable compared to the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not surprising because the low open probability and the short open time (<1 ms) of TRPC6 (Hofmann et al., 1999) suggest that the closed state is much more energetically stable compared to the open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on biophysical properties cited from prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "1fe9754c-710a-460c-9bba-e3fd4a263b6e",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C102",
+      "claim": "The ion permeation pathway in the structures is sealed off by hydrophobic side chains of Leu723, Ile727 and Phe731 near the intracellular end of S6.",
+      "claim_type": "EXPLICIT",
+      "source": "The ion permeation pathway in our structures is sealed off by hydrophobic side chains of Leu723, Ile727 and Phe731 near the intracellular end of S6 (Figure 6a\u2013b), which are at equivalent positions in TRPC3 as shown in the human TRPC3 structure (Fan et al., 2018), but shifted by one amino acid in the previous human TRPC6 structure (Tang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure shown in Figure 6a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "e4827ca7-cb29-424f-87c5-5674d2320a7c",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C103",
+      "claim": "Main chain carbonyls of Phe683 and Gly684 located after the pore helix define the selectivity filter in TRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "In both our structures, main chain carbonyls of Phe683 and Gly684 located after the pore helix define the selectivity filter and coordinate a putative cation bound to the selectivity filter (Figure 6a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure shown in Figure 6a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "a581651d-e378-4788-85d6-89bb5ac794c1",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C104",
+      "claim": "The intracellular domain is nearly identical in both antagonist-bound and agonist-bound structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the ion channel pore is closed and the intracellular domain is nearly identical in both our structures (Figure 7\u2014figure supplement 1), there are significant conformational changes in the transmembrane domain associated with ligand binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from structural comparison shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "b5d04100-99d2-4c9d-8be4-556b160f5818",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C105",
+      "claim": "There are significant conformational changes in the transmembrane domain associated with ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the ion channel pore is closed and the intracellular domain is nearly identical in both our structures (Figure 7\u2014figure supplement 1), there are significant conformational changes in the transmembrane domain associated with ligand binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "ba994e80-a6af-4655-9b01-0ef46fc045a3",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C106",
+      "claim": "In the ligand-free S1-S4 pocket of the agonist-bound state, the side chain of H446 adopts two alternative rotameric conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ligand-free S1-S4 pocket of the agonist-bound state, the side chain of H446 adopts two alternative rotameric conformations, one of which occupies the position where the indene double ring of the antagonist would bind, and the side chain of R758 occupies the position where the benzonitrile group of the antagonist would bind (Figure 7\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure shown in Figure 7\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "b3ebcd39-c868-479e-921c-b2a95c72afa5",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C107",
+      "claim": "Side chain movements of H446 and R758 are necessary to accommodate the antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, side chain movements of H446 and R758 are necessary to accommodate the antagonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural comparison.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "c3bbd8cc-ec80-437c-88f1-214569f589f8",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C108",
+      "claim": "Agonist-binding occurs without major structural changes in the side chains of the agonist-binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, agonist-binding occurs without major structural changes in the side chains of the agonist-binding pocket (Figure 7\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from structural comparison shown in Figure 7\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "b47fe004-d57e-4cdf-a2d7-feb3ee0d7180",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C109",
+      "claim": "The presence of the agonist tilts the extracellular half of S6 away from the pore and pushes S6 toward the intracellular side.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the presence of the agonist seems to tilt the extracellular half of S6 away from the pore and pushes S6 toward the intracellular side (Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from structural comparison shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "964b65a8-407a-43e7-b3e4-70acb6770ad8",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C110",
+      "claim": "The movement of S6 is accompanied by a concurrent tilting and downward movement of S1-S4 as well as the S4-S5 linker.",
+      "claim_type": "EXPLICIT",
+      "source": "Because S6 is tightly packed against S1-S4 of the adjacent subunit, the movement of S6 is accompanied by a concurrent tilting and downward movement of S1-S4 as well as the S4-S5 linker (Figure 7a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from structural comparison shown in Figure 7a,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "7d86cb8d-9fe9-472d-9920-ba38d2a222e4",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C111",
+      "claim": "S3 has the largest movement among the transmembrane helices, with its extracellular end moving 4.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the transmembrane helices, S3 has the largest movement, with its extracellular end moving 4.4 \u00c5, partly due to the remarkably long extension of S3 into the extracellular side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "e6894efa-dc77-4091-b558-a8d410076b9e",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C112",
+      "claim": "Agonist binding is accompanied by a counterclockwise rotation around the central ion pathway when viewed from the cytoplasmic side.",
+      "claim_type": "EXPLICIT",
+      "source": "Viewing from the cytoplasmic side, agonist binding is accompanied by a counterclockwise rotation around the central ion pathway (Figure 7b), resulting in a movement of 2.4\u20133.3 \u00c5 at the intracellular end of S1-S4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from structural comparison shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "9901109e-f2a5-4e4a-aebe-838140bb3562",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C113",
+      "claim": "Agonist binding results in a movement of 2.4\u20133.3 \u00c5 at the intracellular end of S1-S4.",
+      "claim_type": "EXPLICIT",
+      "source": "Viewing from the cytoplasmic side, agonist binding is accompanied by a counterclockwise rotation around the central ion pathway (Figure 7b), resulting in a movement of 2.4\u20133.3 \u00c5 at the intracellular end of S1-S4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from structural comparison shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "27e6c721-c686-4973-b80d-32c2b587fe8e",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C114",
+      "claim": "Agonist-bound channels may transition to the open conformation when further counterclockwise rotation of the S6 helical bundle fully unwinds the hydrophobic seal at the intracellular gate.",
+      "claim_type": "EXPLICIT",
+      "source": "While the structural changes from the antagonist-bound state to the agonist-bound state were not sufficient to stabilize an open channel pore, it is possible that agonist-bound channels may transition to the open conformation when further counterclockwise rotation of the S6 helical bundle fully unwinds the hydrophobic seal at the intracellular gate (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative inference based on the observed conformational changes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "4174ca87-fe01-4917-93bd-e5c9c4aba73c",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C115",
+      "claim": "The AM-1473-bound TRPC6 and the BTDM-bound TRPC6 assume a nearly identical conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the AM-1473-bound TRPC6 and the BTDM-bound TRPC6 assume a nearly identical conformation (Figure 7d, Figure 7\u2014figure supplement 1b, C\u03b1-RMSD 0.588), with S1-S4 and the S4-S5 linker in the slightly up conformation, distinct from the slightly down conformation in agonist-bound structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison with prior structure from Tang et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "b9d14bbf-4708-4fce-92f7-06543db1520f",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C116",
+      "claim": "The structure of TRPC3 is very similar to the AM-1473-bound and BTDM-bound TRPC6 structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of TRPC3, which shares ~75% sequence identity with TRPC6, is also very similar to the AM-1473-bound and BTDM-bound TRPC6 structures (Figure 7e and Figure 7\u2014figure supplement 1c, C\u03b1-RMSD 0.710), suggesting that both antagonists may allosterically inhibit the opening of the channel pore by stabilizing the apo or resting state, as observed in the action of antagonists on P2X3 receptor channels and TRPM4 channels (Huang et al., 2020; Mansoor et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison with prior TRPC3 structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "e6e2ea69-2a83-4b34-be69-d3171ff5529f",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C117",
+      "claim": "Both antagonists may allosterically inhibit the opening of the channel pore by stabilizing the apo or resting state.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of TRPC3, which shares ~75% sequence identity with TRPC6, is also very similar to the AM-1473-bound and BTDM-bound TRPC6 structures (Figure 7e and Figure 7\u2014figure supplement 1c, C\u03b1-RMSD 0.710), suggesting that both antagonists may allosterically inhibit the opening of the channel pore by stabilizing the apo or resting state, as observed in the action of antagonists on P2X3 receptor channels and TRPM4 channels (Huang et al., 2020; Mansoor et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural comparison and analogy to other channels.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "930bd068-bdee-4a1c-bfc4-11affcac704d",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C118",
+      "claim": "The S1-S4 pocket in TRPC channels could be a site for channel modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since this pocket was empty in all other TRPC structures determined so far (Duan et al., 2019; Duan et al., 2018; Fan et al., 2018; Tang et al., 2018; Vinayagam et al., 2018), our structure of the antagonist-bound TRPC6 provides the first evidence that the S1-S4 pocket in TRPC channels could be a site for channel modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current structure and comparison with prior structures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "93de5746-7300-424a-a17e-76435623a878",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C119",
+      "claim": "The crevice between the S2-S3 linker and the TRP helix connects the S1-S4 pocket to the cytoplasm and provides a possible access route for the antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the crevice between the S2-S3 linker and the TRP helix connects the pocket to the cytoplasm and provides a possible access route for the antagonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "5b94bebd-d326-4350-a47c-1848fd349441",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "claim_id": "C120",
+      "claim": "TRPC6 is activated through a unique mechanism compared to TRPV and TRPM channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, TRPC6 is activated through a unique mechanism compared to TRPV and TRPM channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of agonist-binding sites across different TRP channel families.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3fa97955-2c4f-4378-b01a-f34c116112ed",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined two high-resolution cryo-EM structures of human TRPC6: antagonist-bound at 3.1 \u00c5 resolution and agonist-bound (V867T/L868T mutant) at 3.1 \u00c5 resolution, both reconstituted in lipidic nanodiscs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C37, and C74 collectively establish the primary structural results. The cryo-EM data processing workflows, resolution metrics (FSC curves), and structural validation statistics in Table 1 provide strong evidence for these high-resolution structures. The use of nanodiscs and appropriate sample preparation is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "9732165d-005e-4dba-bad2-d5b6c0f2cd1d",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The antagonist AM-1473 binds to a cytoplasm-facing pocket formed by S1-S4 and the TRP helix, with specific molecular interactions including hydrogen bonds with Glu509 and Asp530, cation-\u03c0 interaction with Arg758, and aromatic stacking with His446 and Tyr753, validated by mutagenesis showing that E509A and D530A abolish antagonist response while R758A reduces binding affinity ~300-fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural data (C3, C43, C45-C48) combined with comprehensive mutagenesis validation (C54-C57) provide strong convergent evidence for the antagonist binding mode. The cryo-EM density is clearly visible in both the final map and half-maps, and the functional effects of mutations are consistent with the proposed interactions. The ~300-fold reduction for R758A strongly supports the importance of the cation-\u03c0 interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "824acf7e-1559-4808-ae5e-4d6139fd72c0",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The agonist AM-0883 binds at the subunit interface between S6 and the pore helix, forming hydrophobic interactions with Phe675, Trp680, Tyr705, Val706, and Val710, with mutagenesis showing that F675A, W680A, N702A, Y705A, and V710A abolish channel activity while E672A and V706A reduce potency 35-fold and 20-fold respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural identification of the agonist binding site (C4, C79-C82) is well-supported by cryo-EM density visible in the final map and half-maps. The mutagenesis data (C83-C84) provide strong functional validation, with multiple mutations showing complete loss of function and others showing quantified reductions in potency. The convergence of structural and functional data strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "ca96def5-7846-418d-b4f3-df511b5c60dc",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The agonist-binding site identified in TRPC6 overlaps with the DAG-recognition site, as evidenced by conservation of key residues (Glu672, Asn702, Tyr705) only among DAG-activated TRPCs (TRPC3/6/7), prior literature showing these residues are critical for DAG activation, and mutagenesis demonstrating that mutations around this site eliminate OAG response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The convergence of multiple lines of evidence strongly supports this conclusion: sequence conservation analysis (C92-C93), prior functional studies (C85-C88), new mutagenesis data showing loss of OAG response (C89, C91), and structural observations that the site faces membrane lipids and is occupied by lipid in the antagonist-bound structure (C94). The differential effects of E672A and V706A on AM-0883 vs DAG (C90) further support overlapping but not identical binding modes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "0c80bdb1-e53b-4d4d-820c-2989ad005767",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Disease-related FSGS mutations cluster at two interfaces in the intracellular domain and enhance channel activity by disrupting stabilizing interactions: interface 1 (ARD-pole helix) mutations at positions 109, 112, 889, and 895 increase activity, and interface 2 (ARD-rib helix) mutations including M132T and engineered V867T/L868T increase activity up to 2-fold, without affecting membrane expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural mapping of disease mutations (C64-C66, C70) combined with functional validation (C67, C69, C71-C72) and expression controls (C67, C73) provide strong evidence. The consistency with prior reports (C67 cites previous studies) and the rational design of V867T/L868T mutations that recapitulate disease phenotypes strengthen the conclusion. The inference that these interactions stabilize the closed state (C68, C73) is reasonable given the gain-of-function phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "ee4a9caa-7c99-4157-811c-047edafd3ba6",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Agonist binding induces significant conformational changes in the transmembrane domain including tilting and downward movement of S6, concurrent movement of S1-S4 and the S4-S5 linker (with S3 moving 4.4 \u00c5 at its extracellular end), and counterclockwise rotation around the central ion pathway (2.4-3.3 \u00c5 movement at the intracellular end of S1-S4), while the intracellular domain remains nearly identical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural comparisons between antagonist-bound and agonist-bound states provide clear quantitative measurements of conformational changes (C111, C113). The observations are internally consistent and supported by structural superpositions shown in Figure 7. However, the functional significance is limited by the fact that both structures show closed pores (C99), suggesting these represent intermediate rather than fully open states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "cdcf34b2-8555-4723-9fd1-1b507aef599b",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Both antagonist-bound and agonist-bound TRPC6 structures possess closed ion channel pores, with the permeation pathway sealed by hydrophobic residues (Leu723, Ile727, Phe731) at the intracellular gate and the selectivity filter defined by main chain carbonyls of Phe683 and Gly684.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural observations of the closed pore (C99, C102-C103) are well-supported by the cryo-EM density and pore radius calculations shown in Figure 6. The inference that the mutations and agonist were insufficient to stabilize an open state (C100) is reasonable, and the explanation based on low open probability and short open time (C101, citing prior work) provides appropriate context. This is a clear structural observation even though it represents a limitation of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "76906a1f-0b41-497d-93f4-bbb47b4509fa",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The AM-1473-bound TRPC6 structure is nearly identical to BTDM-bound TRPC6 (C\u03b1-RMSD 0.588) and TRPC3 (C\u03b1-RMSD 0.710), suggesting both antagonists allosterically inhibit channel opening by stabilizing the apo or resting state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural comparisons with prior structures (C115-C116) are quantitatively supported by RMSD values and visual inspection in Figure 7. The mechanistic inference about allosteric inhibition (C117) is reasonable and supported by analogy to other channels (citing P2X3 and TRPM4), though it remains somewhat speculative without direct evidence of the open state. The convergence of three independent structures in similar conformations strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "a7324218-3e92-4380-9d1a-7387712d0972",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The N-terminally truncated TRPC6 (\u03942-72) construct shows enhanced biochemical stability and retains functional responses to agonists and antagonists with IC50 of 0.13 \u00b1 0.03 nM for AM-1473 and EC50 of 90.2 \u00b1 13 nM for AM-0883, similar to wild-type protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional characterization of the truncated construct (C28-C29, C35-C36) is well-supported by dose-response curves in Figure 1\u2014figure supplement 1. The rationale for the truncation based on sequence comparison with TRPC3 (C27) is reasonable. This validates that the construct used for structural studies retains native-like pharmacological properties, which is essential for interpreting the structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "6788d48c-180c-4d81-a5e9-05f68569b45a",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "AM-1473 shows high potency (IC50 = 0.22 \u00b1 0.05 nM) and 36-fold selectivity for TRPC6 over TRPC3, with the selectivity partly explained by the Arg758/Lys689 difference, as shown by reciprocal mutations that shift potency 5-fold (TRPC6 R758K) and 3.5-fold (TRPC3 K689R).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The pharmacological characterization (C31, C33, C49) is supported by dose-response data with appropriate replicates. The selectivity analysis and reciprocal mutagenesis (C51-C52) provide mechanistic insight, though the effects are modest (3.5-5 fold) compared to the overall 36-fold selectivity, suggesting additional factors contribute. The structural rationalization (C53) is reasonable but remains somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "d0f82500-6696-4b58-a2b8-f531bce9c6cc",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Multiple lipids are observed in the TRPC6 structure, including outer leaflet lipids lining membrane-facing crevices, an inner leaflet lipid fitting CHS in a pocket formed by S1/S4/pre-S1 elbow, and a phosphatidylcholine lipid between S4 and S4-S5 linker, with the S4-S5 cleft potentially serving as a modulation site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The structural observations of lipid densities (C58) are supported by the cryo-EM maps. However, the specific lipid assignments (C59-C60) are based on shape fitting and inference rather than definitive identification, which is acknowledged by the cautious language ('can be interpreted as'). The proposal that the S4-S5 cleft is a modulation site (C61) is speculative, based on comparison with a prior antagonist-binding site, but lacks direct functional validation in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "8caf9090-3304-4f4f-8e98-45ca5d5f592a",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "AM-0883 is ~70-fold more potent than OAG while inducing similar maximum activity, and the V867T/L868T double mutant exhibits 2-fold higher maximum activity than wild-type, making it suitable for capturing a more activated state despite the higher potency of AM-0883 being necessary to obtain agonist-bound density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparative pharmacology (C75-C76) is well-supported by dose-response data. The rationale for using AM-0883 over OAG (C77) and the V867T/L868T mutant (C78) is logical and supported by experimental data (C98). However, the fact that even this 'more activated' state shows a closed pore limits the conclusions about the fully open state. The experimental design is sound even if the outcome is incomplete.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "3d14c662-f931-4f93-afe8-b851f5c1582e",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The S1-S4 pocket in TRPC channels represents a novel modulation site, as it was empty in all prior TRPC structures, with the crevice between S2-S3 linker and TRP helix providing a possible cytoplasmic access route for the antagonist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The novelty claim (C118) is well-supported by comparison with prior TRPC structures showing this pocket was empty. The structural observation provides the first evidence for this modulation site in TRPCs. The proposed access route (C119) is a reasonable inference based on structural analysis, though it remains speculative without direct evidence of antagonist entry pathway. This represents an important structural discovery even if mechanistic details remain to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "9d56b69c-183a-47a9-8d6e-746e5f492731",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Agonist-bound channels may transition to an open conformation through further counterclockwise rotation of the S6 helical bundle that fully unwinds the hydrophobic seal at the intracellular gate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This claim (C114) is explicitly speculative ('it is possible that') and represents a hypothesis about the gating mechanism based on the observed conformational changes. While the hypothesis is reasonable and supported by the direction of conformational changes observed, it lacks direct experimental validation. The speculation is appropriately qualified in the text and supported by Video 1 showing the proposed transition, but remains unproven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    },
+    {
+      "id": "4c261430-8622-41c1-bd5f-b4ef4634f27d",
+      "content_id": "3abbe12a-7032-4f0e-91b4-f6e3008a1983",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TRPC6 is activated through a unique mechanism compared to TRPV and TRPM channels, based on the distinct location of the agonist-binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conclusion (C120) is supported by the structural comparisons showing that the TRPC6 agonist site (between S6 and pore helix at the extracellular membrane-facing cavity) differs from agonist sites in TRPV and TRPM channels. The comparison with TRPML1 and CavAb (C96-C97) shows analogous sites exist in other channels, but the specific location and mechanism in TRPC6 for DAG activation appears distinct. This represents a valid comparative conclusion based on the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:36.202015Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1ff6c0dd-5d5f-43bb-b3ec-e63f06ec3e3d",
+      "result_id": "3fa97955-2c4f-4378-b01a-f34c116112ed"
+    },
+    {
+      "claim_id": "8f325f86-6730-4211-860f-24ccf2e364d8",
+      "result_id": "3fa97955-2c4f-4378-b01a-f34c116112ed"
+    },
+    {
+      "claim_id": "bfd3eefc-220d-45d1-b2dc-3ad39990fc45",
+      "result_id": "3fa97955-2c4f-4378-b01a-f34c116112ed"
+    },
+    {
+      "claim_id": "bae34106-e391-49f3-a31c-c8dd443a7add",
+      "result_id": "9732165d-005e-4dba-bad2-d5b6c0f2cd1d"
+    },
+    {
+      "claim_id": "77f70751-8a09-430b-9829-ecdd50ad5779",
+      "result_id": "9732165d-005e-4dba-bad2-d5b6c0f2cd1d"
+    },
+    {
+      "claim_id": "066faace-658c-4750-9b9e-a0087bb47251",
+      "result_id": "9732165d-005e-4dba-bad2-d5b6c0f2cd1d"
+    },
+    {
+      "claim_id": "c66ca079-1e9f-4008-9427-aff3d1857094",
+      "result_id": "9732165d-005e-4dba-bad2-d5b6c0f2cd1d"
+    },
+    {
+      "claim_id": "c4901aea-2c19-4ebd-95c2-ceec4194f47d",
+      "result_id": "9732165d-005e-4dba-bad2-d5b6c0f2cd1d"
+    },
+    {
+      "claim_id": "e1f7b524-45e4-48d6-b8c9-e31e65d48bcb",
+      "result_id": "9732165d-005e-4dba-bad2-d5b6c0f2cd1d"
+    },
+    {
+      "claim_id": "59483fa7-51b8-4a38-a02b-be2b2940c46b",
+      "result_id": "9732165d-005e-4dba-bad2-d5b6c0f2cd1d"
+    },
+    {
+      "claim_id": "81dd9ef1-be99-46c4-94bc-8c58abee3a17",
+      "result_id": "9732165d-005e-4dba-bad2-d5b6c0f2cd1d"
+    },
+    {
+      "claim_id": "d1464d77-80d0-4641-ac6a-caaab21adf49",
+      "result_id": "9732165d-005e-4dba-bad2-d5b6c0f2cd1d"
+    },
+    {
+      "claim_id": "518cbaf9-e2e6-49ae-96a9-db58e306297d",
+      "result_id": "9732165d-005e-4dba-bad2-d5b6c0f2cd1d"
+    },
+    {
+      "claim_id": "39d7e453-21c0-4b75-8e54-f727f987a094",
+      "result_id": "824acf7e-1559-4808-ae5e-4d6139fd72c0"
+    },
+    {
+      "claim_id": "1a4cf825-8075-4f5a-a0e4-01af5da50d40",
+      "result_id": "824acf7e-1559-4808-ae5e-4d6139fd72c0"
+    },
+    {
+      "claim_id": "3bbbb8b6-d20d-47e9-972e-e9d54c9bf2c8",
+      "result_id": "824acf7e-1559-4808-ae5e-4d6139fd72c0"
+    },
+    {
+      "claim_id": "a9465240-cd12-45a9-9b57-090486223e70",
+      "result_id": "824acf7e-1559-4808-ae5e-4d6139fd72c0"
+    },
+    {
+      "claim_id": "655a4ec4-f3fb-45cd-a96c-0939d1d70069",
+      "result_id": "824acf7e-1559-4808-ae5e-4d6139fd72c0"
+    },
+    {
+      "claim_id": "3e1e27d5-0190-4e7e-8222-cb9c5f000ab0",
+      "result_id": "824acf7e-1559-4808-ae5e-4d6139fd72c0"
+    },
+    {
+      "claim_id": "da01aecf-989c-4034-932f-3df4987ec17e",
+      "result_id": "824acf7e-1559-4808-ae5e-4d6139fd72c0"
+    },
+    {
+      "claim_id": "c1ddb63b-5a37-4ee4-b51e-aad7bddfbf86",
+      "result_id": "ca96def5-7846-418d-b4f3-df511b5c60dc"
+    },
+    {
+      "claim_id": "c2aafa59-4cd3-40cc-8b28-ab4293aa84f3",
+      "result_id": "ca96def5-7846-418d-b4f3-df511b5c60dc"
+    },
+    {
+      "claim_id": "3dee52b6-488d-4ed4-9a3f-f4d0e5689cb4",
+      "result_id": "ca96def5-7846-418d-b4f3-df511b5c60dc"
+    },
+    {
+      "claim_id": "4983a130-3989-44b6-8289-496aeb85beb2",
+      "result_id": "ca96def5-7846-418d-b4f3-df511b5c60dc"
+    },
+    {
+      "claim_id": "c35339a3-fa5b-470f-8c16-7bafbf7e7e95",
+      "result_id": "ca96def5-7846-418d-b4f3-df511b5c60dc"
+    },
+    {
+      "claim_id": "c80c9986-0c14-4d31-a9cf-30f49c2db7a2",
+      "result_id": "ca96def5-7846-418d-b4f3-df511b5c60dc"
+    },
+    {
+      "claim_id": "53dbfe2f-1136-4f13-8ada-9b6af0869888",
+      "result_id": "ca96def5-7846-418d-b4f3-df511b5c60dc"
+    },
+    {
+      "claim_id": "008e7797-3c37-4c4b-9cbd-914588afdb2d",
+      "result_id": "ca96def5-7846-418d-b4f3-df511b5c60dc"
+    },
+    {
+      "claim_id": "80a8e73e-6402-4add-9446-54e9e7c8c00e",
+      "result_id": "ca96def5-7846-418d-b4f3-df511b5c60dc"
+    },
+    {
+      "claim_id": "04251f0f-8959-46b2-9a41-f528adf3ec98",
+      "result_id": "ca96def5-7846-418d-b4f3-df511b5c60dc"
+    },
+    {
+      "claim_id": "19909de7-57d9-4752-a941-11a6442f085e",
+      "result_id": "ca96def5-7846-418d-b4f3-df511b5c60dc"
+    },
+    {
+      "claim_id": "02f26179-8ab5-48fe-8a1e-47c6f7124c79",
+      "result_id": "0c80bdb1-e53b-4d4d-820c-2989ad005767"
+    },
+    {
+      "claim_id": "e7e06442-acba-4e39-9b7c-f73d9b820cfe",
+      "result_id": "0c80bdb1-e53b-4d4d-820c-2989ad005767"
+    },
+    {
+      "claim_id": "dc160ce7-6f47-4eb5-acb9-6f2e235bb7d7",
+      "result_id": "0c80bdb1-e53b-4d4d-820c-2989ad005767"
+    },
+    {
+      "claim_id": "d89c99c4-06fb-447d-a5b7-a2637f5d1454",
+      "result_id": "0c80bdb1-e53b-4d4d-820c-2989ad005767"
+    },
+    {
+      "claim_id": "78667e3e-6c05-439c-a778-fd10ff92ba6a",
+      "result_id": "0c80bdb1-e53b-4d4d-820c-2989ad005767"
+    },
+    {
+      "claim_id": "be001b0f-e437-46a8-bb30-bf24da4def4f",
+      "result_id": "0c80bdb1-e53b-4d4d-820c-2989ad005767"
+    },
+    {
+      "claim_id": "8c1ce44e-8231-4d32-bd2a-d5770deb4ea6",
+      "result_id": "0c80bdb1-e53b-4d4d-820c-2989ad005767"
+    },
+    {
+      "claim_id": "7d59d14e-b4e4-485e-8ff8-e236d6510a96",
+      "result_id": "0c80bdb1-e53b-4d4d-820c-2989ad005767"
+    },
+    {
+      "claim_id": "366074f4-04d5-4d64-bfbd-de434b888eac",
+      "result_id": "0c80bdb1-e53b-4d4d-820c-2989ad005767"
+    },
+    {
+      "claim_id": "8a62c201-a8b1-4d04-b75b-1041993c96fd",
+      "result_id": "0c80bdb1-e53b-4d4d-820c-2989ad005767"
+    },
+    {
+      "claim_id": "b5d04100-99d2-4c9d-8be4-556b160f5818",
+      "result_id": "ee4a9caa-7c99-4157-811c-047edafd3ba6"
+    },
+    {
+      "claim_id": "ba994e80-a6af-4655-9b01-0ef46fc045a3",
+      "result_id": "ee4a9caa-7c99-4157-811c-047edafd3ba6"
+    },
+    {
+      "claim_id": "b3ebcd39-c868-479e-921c-b2a95c72afa5",
+      "result_id": "ee4a9caa-7c99-4157-811c-047edafd3ba6"
+    },
+    {
+      "claim_id": "c3bbd8cc-ec80-437c-88f1-214569f589f8",
+      "result_id": "ee4a9caa-7c99-4157-811c-047edafd3ba6"
+    },
+    {
+      "claim_id": "b47fe004-d57e-4cdf-a2d7-feb3ee0d7180",
+      "result_id": "ee4a9caa-7c99-4157-811c-047edafd3ba6"
+    },
+    {
+      "claim_id": "964b65a8-407a-43e7-b3e4-70acb6770ad8",
+      "result_id": "ee4a9caa-7c99-4157-811c-047edafd3ba6"
+    },
+    {
+      "claim_id": "7d86cb8d-9fe9-472d-9920-ba38d2a222e4",
+      "result_id": "ee4a9caa-7c99-4157-811c-047edafd3ba6"
+    },
+    {
+      "claim_id": "e6894efa-dc77-4091-b558-a8d410076b9e",
+      "result_id": "ee4a9caa-7c99-4157-811c-047edafd3ba6"
+    },
+    {
+      "claim_id": "9901109e-f2a5-4e4a-aebe-838140bb3562",
+      "result_id": "ee4a9caa-7c99-4157-811c-047edafd3ba6"
+    },
+    {
+      "claim_id": "d059ef6f-4bab-482d-b64e-8259c9d954bd",
+      "result_id": "cdcf34b2-8555-4723-9fd1-1b507aef599b"
+    },
+    {
+      "claim_id": "4557097d-99da-4e84-928b-3dc921bd55ab",
+      "result_id": "cdcf34b2-8555-4723-9fd1-1b507aef599b"
+    },
+    {
+      "claim_id": "d309cd71-2fcd-4c52-9bc3-b18e0e72aae3",
+      "result_id": "cdcf34b2-8555-4723-9fd1-1b507aef599b"
+    },
+    {
+      "claim_id": "1fe9754c-710a-460c-9bba-e3fd4a263b6e",
+      "result_id": "cdcf34b2-8555-4723-9fd1-1b507aef599b"
+    },
+    {
+      "claim_id": "e4827ca7-cb29-424f-87c5-5674d2320a7c",
+      "result_id": "cdcf34b2-8555-4723-9fd1-1b507aef599b"
+    },
+    {
+      "claim_id": "4174ca87-fe01-4917-93bd-e5c9c4aba73c",
+      "result_id": "76906a1f-0b41-497d-93f4-bbb47b4509fa"
+    },
+    {
+      "claim_id": "b9d14bbf-4708-4fce-92f7-06543db1520f",
+      "result_id": "76906a1f-0b41-497d-93f4-bbb47b4509fa"
+    },
+    {
+      "claim_id": "e6e2ea69-2a83-4b34-be69-d3171ff5529f",
+      "result_id": "76906a1f-0b41-497d-93f4-bbb47b4509fa"
+    },
+    {
+      "claim_id": "4d2acc8b-d0c3-46bf-ab76-fd2cf764f119",
+      "result_id": "a7324218-3e92-4380-9d1a-7387712d0972"
+    },
+    {
+      "claim_id": "7ebd80d9-911e-4661-878c-60a94b450c30",
+      "result_id": "a7324218-3e92-4380-9d1a-7387712d0972"
+    },
+    {
+      "claim_id": "83f97f5a-4799-4e29-adda-8dc391ea3f75",
+      "result_id": "a7324218-3e92-4380-9d1a-7387712d0972"
+    },
+    {
+      "claim_id": "bd8f282f-9a13-47d3-81da-05194106b250",
+      "result_id": "a7324218-3e92-4380-9d1a-7387712d0972"
+    },
+    {
+      "claim_id": "151ab079-7525-4e71-a11f-920140e7ef06",
+      "result_id": "6788d48c-180c-4d81-a5e9-05f68569b45a"
+    },
+    {
+      "claim_id": "7e3c1873-1cc8-4a3e-922b-b9c0cd481874",
+      "result_id": "6788d48c-180c-4d81-a5e9-05f68569b45a"
+    },
+    {
+      "claim_id": "46d6196c-da8c-4572-af59-17c03b084b94",
+      "result_id": "6788d48c-180c-4d81-a5e9-05f68569b45a"
+    },
+    {
+      "claim_id": "6557f352-baf5-488a-8681-3de6bdfdc9b7",
+      "result_id": "6788d48c-180c-4d81-a5e9-05f68569b45a"
+    },
+    {
+      "claim_id": "41b5ff9d-b940-4b56-8a64-8b3c2ac12c88",
+      "result_id": "6788d48c-180c-4d81-a5e9-05f68569b45a"
+    },
+    {
+      "claim_id": "514cf66b-2c8a-46b8-9583-9735059877e0",
+      "result_id": "6788d48c-180c-4d81-a5e9-05f68569b45a"
+    },
+    {
+      "claim_id": "0ba6b906-deb2-4f1e-a8a1-79080ecb33a4",
+      "result_id": "d0f82500-6696-4b58-a2b8-f531bce9c6cc"
+    },
+    {
+      "claim_id": "7f6e3443-d51d-42ab-bc4b-5bac9bfac623",
+      "result_id": "d0f82500-6696-4b58-a2b8-f531bce9c6cc"
+    },
+    {
+      "claim_id": "9fe91f8d-b86c-431f-bb7f-bf23f036bb36",
+      "result_id": "d0f82500-6696-4b58-a2b8-f531bce9c6cc"
+    },
+    {
+      "claim_id": "14e47418-b18a-4bbe-8361-d96bd2e49d55",
+      "result_id": "d0f82500-6696-4b58-a2b8-f531bce9c6cc"
+    },
+    {
+      "claim_id": "0cdd66ee-8994-4b6a-97d9-c053f4571e20",
+      "result_id": "8caf9090-3304-4f4f-8e98-45ca5d5f592a"
+    },
+    {
+      "claim_id": "fc786a06-4d58-4901-822e-f99621ec6348",
+      "result_id": "8caf9090-3304-4f4f-8e98-45ca5d5f592a"
+    },
+    {
+      "claim_id": "5d8b6fed-e106-41f6-af0d-0116b34b63ba",
+      "result_id": "8caf9090-3304-4f4f-8e98-45ca5d5f592a"
+    },
+    {
+      "claim_id": "48db8629-c6b8-49d9-bdf4-bf827d6e7940",
+      "result_id": "8caf9090-3304-4f4f-8e98-45ca5d5f592a"
+    },
+    {
+      "claim_id": "4bdc9854-1f63-429e-8532-49664270a1b3",
+      "result_id": "8caf9090-3304-4f4f-8e98-45ca5d5f592a"
+    },
+    {
+      "claim_id": "930bd068-bdee-4a1c-bfc4-11affcac704d",
+      "result_id": "3d14c662-f931-4f93-afe8-b851f5c1582e"
+    },
+    {
+      "claim_id": "93de5746-7300-424a-a17e-76435623a878",
+      "result_id": "3d14c662-f931-4f93-afe8-b851f5c1582e"
+    },
+    {
+      "claim_id": "27e6c721-c686-4973-b80d-32c2b587fe8e",
+      "result_id": "9d56b69c-183a-47a9-8d6e-746e5f492731"
+    },
+    {
+      "claim_id": "5b94bebd-d326-4350-a47c-1848fd349441",
+      "result_id": "4c261430-8622-41c1-bd5f-b4ef4634f27d"
+    }
+  ],
+  "comparisons": []
+}

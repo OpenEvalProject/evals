@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The MTL is implicated in diverse cognitive processes including memory, navigation, socio-affective processing, and higher-order perception. Its broad role in cognition emerges through interactions between neural codes within the MTL and the rest of the brain, supported by its intrinsic circuitry and position at the apex of multiple conceptual hierarchies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by extensive citations to prior research establishing the MTL's role in multiple cognitive domains and its position within cortical architecture. These are established facts from the literature rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The MTL exhibits a unique anatomical transition from six-layered isocortex to three-layered allocortex, with phylogenetically conserved laminar differentiation patterns. The human MTL shows exaggerated folding, more extensive entorhinal lamination, and a more prominent CA2 subfield compared to other mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 are well-supported by citations to established anatomical and developmental neuroscience research. These represent prior knowledge about MTL anatomy rather than novel findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Laminar differentiation in the MTL reflects axonal projection patterns, with feedforward projections flowing from iso-to-allocortex and feedback projections flowing from allo-to-isocortex. Cytoarchitectural similarity is coupled with interareal connectivity likelihood (the 'structural model'), and key MTL fiber pathways are organized along the iso-to-allocortical axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are supported by citations to established research on cortical connectivity principles and MTL anatomy. These represent prior theoretical frameworks rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The MTL exhibits organization along an anterior-posterior axis in addition to the iso-to-allocortical axis. Tract-tracing studies in rodents and functional neuroimaging studies in humans have demonstrated anterior-posterior gradients in connectivity and functional properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by citations to prior research on MTL organization. These establish the known dual-axis organization of the MTL rather than presenting novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Using BigBrain histology, the study found that the principle gradient of cytoarchitectural differentiation (15.6% variance) closely approximates the geometric iso-to-allocortical axis (r=0.76, p<0.001) with a nonlinear relationship. CA2 showed deviation from expected cytoarchitecture, and lower eigenvectors were not correlated with the axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by statistical analysis of histological data with appropriate methods (manifold learning, correlation analysis). The findings are clearly presented with quantitative metrics and visual evidence in Figure 1D and supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Random forest regression achieved highly accurate mapping of the iso-to-allocortical axis (R\u00b2=0.91\u00b10.005) using microstructure profile features. Profile skewness, intensity at ~13% depth, and intensity at ~53% depth were the most important features, with skewness alone accounting for most variance (R\u00b2=0.86\u00b10.006).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by rigorous machine learning analysis with cross-validation. The feature importance analysis is quantitative and the biological interpretation of depth-specific intensities is reasonable. Results are well-documented in Figures 1E-H.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Microstructure profile skewness consistently increased along the iso-to-allocortical axis regardless of anterior-posterior position (adjusted R\u00b2=0.64\u00b10.17), while depth-dependent intensities were more variable along the anterior-posterior axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by systematic analysis across coronal slices shown in Figure 1I. The differential consistency of features along the two axes is quantitatively demonstrated and provides important insight into axis interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Dynamic causal modeling revealed dense bidirectional effective connectivity across the MTL, with connectivity strength inversely related to deviation from the iso-to-allocortical axis (riso=-0.43, p=0.02; rallo=-0.44, p=0.02). CA4 showed inhibitory effects while the subiculum was the strongest driver of excitatory connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by spectral dynamic causal modeling analysis shown in Figure 2B. The statistical relationships are significant and the findings align with known MTL circuitry. However, the p-values are marginal and the model assumptions should be carefully considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Effective connectivity patterns within anterior-posterior thirds were moderately correlated with the full model (r=0.60/0.38/0.45), but the inverse correlation between axis deviation and connectivity was not consistently observed in spatially restricted models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by systematic comparison of models shown in Figure 2C. The findings demonstrate important interactions between the two axes, though the moderate correlations and non-significant differences suggest the relationship is complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The iso-to-allocortical axis showed parametric relation with the third functional gradient (r=-0.74, pspin<0.001), which represents the multiple-demand system. Lateral attention and fronto-parietal networks connected more strongly to isocortex, while default-mode and visual networks connected more strongly to allocortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by rs-fMRI connectivity analysis with appropriate statistical testing including spin permutation tests. The specificity to the third gradient is demonstrated by statistical comparison. Results are clearly shown in Figure 3D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The anterior-posterior axis reflected connectivity transitions along the sensory-transmodal functional gradient (r=-0.84, pspin<0.001), with anterior MTL connecting more strongly to transmodal cortex and posterior MTL to sensory regions. This pattern was preserved but modulated within iso-to-allocortical segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by comprehensive rs-fMRI connectivity analysis shown in Figure 3E. The strong correlation with the first gradient and specificity demonstrated by statistical comparison provide robust evidence for this axis-gradient relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Functional findings were robust to potential confounds, remaining virtually consistent when controlling for spatial SNR (rspatial=0.92-0.99) and temporal SNR (rtemporal=0.99), and when excluding temporal lobe targets (r=0.85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 demonstrate appropriate control analyses addressing potential signal quality confounds. The high correlations indicate findings are not driven by SNR variations or local temporal lobe connectivity, strengthening the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In an independent HCP dataset (n=40), the study replicated key findings: decreasing effective connectivity with axis deviation (riso=-0.24; rallo=-0.47), iso-to-allocortical axis correspondence with multiple-demand gradient (r=-0.52, pspin<0.001), and anterior-posterior axis correspondence with sensory-transmodal gradient (r=0.33, pspin<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 demonstrate successful replication in an independent dataset shown in Figure 4. While effect sizes are somewhat smaller than the original analysis, the patterns are consistent and statistically significant, providing strong validation of the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The iso-to-allocortical axis relates to decreasing connectivity with multiple-demand systems while the anterior-posterior axis reflects transmodal-to-sensory transitions. The authors interpret this as successive integration of processing streams along the iso-to-allocortical axis with dampening of external attention, followed by feedback flow from allo-to-isocortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 integrate the functional connectivity findings into a coherent interpretation. While C66-C67 involve inference beyond the direct data, they are reasonable interpretations supported by the empirical findings (C64-C65) and consistent with prior literature on MTL circuitry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The MTL serves as a hub of multiple large-scale networks and implements operations like pattern separation and completion. Whole-brain functional organization can be understood through discrete networks and connectivity gradients, with anterior hippocampus preferentially connecting to transmodal cortex and posterior hippocampus to sensory cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 are well-supported by extensive citations to prior research. These establish the theoretical framework and prior knowledge that motivates the current study rather than presenting novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors discuss how their findings relate to prior work on MTL connectivity, cognitive maps, projection diversity, task activation patterns, and functional gradients in other brain structures. They suggest the MTL architecture provides a neural workspace for representing both abstract task structure and sensory features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 represent discussion and interpretation of findings in the context of prior literature. The interpretations are reasonable and well-supported by citations, though C69 and C77 involve speculation about functional implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors note that the left MTL exhibits cytoarchitectural differences and task activation asymmetries compared to the right, and that MTL perturbations are central to Alzheimer's disease, schizophrenia, and temporal lobe epilepsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by citations to prior research. These represent limitations of the current study (right hemisphere only) and potential clinical applications rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The study concludes that cytoarchitectural differentiation relates to intrinsic signal flow within the MTL microcircuit, while the long-axis enables distribution of neural codes across the cortical hierarchy. The combination of micro- and macrostructural features allows the MTL to represent dominant motifs of whole-brain functional organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 and C102-C106 represent the main conclusions synthesizing the study's findings. These are well-supported by the empirical results from histological analysis (C30-C41), effective connectivity modeling (C42-C47), and functional connectivity analysis (C48-C63), including successful replication (C61-C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study used BigBrain histology with 16 equivolumetric surfaces sampling 9432 vertices, Merker staining digitized at 20\u03bcm, and in-vivo fMRI data from 40 healthy adults (MICs cohort) acquired on 3T Siemens scanner. Replication used 40 HCP subjects. Methods included spectral dynamic causal modeling and diffusion map embedding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C101 describe the methodological details of the study. These are clearly documented and appropriate for the research questions. The methods are state-of-the-art and well-justified with citations to prior methodological work.",
+    "result_type": "MINOR"
+  }
+]

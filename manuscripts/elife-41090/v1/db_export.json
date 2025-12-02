@@ -1,0 +1,1501 @@
+{
+  "submission": {
+    "id": "65bb14d9-c301-4e97-ac9d-6e1c2726a14d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:22:28.121246Z",
+    "updated_at": "2025-12-02T07:22:28.121246Z"
+  },
+  "content": [
+    {
+      "id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "submission_id": "65bb14d9-c301-4e97-ac9d-6e1c2726a14d",
+      "content_type": "manuscript",
+      "content_text": "# Rejection of immunogenic tumor clones is limited by clonal fraction\n\n## Authors\n\n- Ron S Gejman<sup>1</sup> ([ORCID: 0000-0001-5138-2772](https://orcid.org/0000-0001-5138-2772))\n- Aaron Y Chang<sup>2</sup> ([ORCID: 0000-0002-7770-7405](https://orcid.org/0000-0002-7770-7405))\n- Heather F Jones<sup>2</sup> ([ORCID: 0000-0002-9459-377X](https://orcid.org/0000-0002-9459-377X))\n- Krysta DiKun<sup>2</sup>\n- Abraham Ari Hakimi<sup>4</sup> ([ORCID: 0000-0002-0930-8824](https://orcid.org/0000-0002-0930-8824))\n- Andrea Schietinger<sup>2</sup>\n- David A Scheinberg<sup>2</sup> ([ORCID: 0000-0002-4160-923X](https://orcid.org/0000-0002-4160-923X)) \u2020\n\n### Affiliations\n\n1. Tri-Institutional MD-PhD Program, Memorial Sloan-Kettering Cancer Center Rockefeller University, Weill Cornell Medical College New York United States\n2. Weill Cornell Medicine New York United States\n3. Molecular Pharmacology Program Memorial Sloan Kettering Cancer Center New York United States\n4. Department of Surgery Memorial Sloan Kettering Cancer Center New York United States\n5. Immunogenomics and Precision Oncology Platform Memorial Sloan Kettering Cancer Center New York United States\n6. Immunology Program Memorial Sloan Kettering Cancer Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTumors often co-exist with T cells that recognize somatically mutated peptides presented by cancer cells on major histocompatibility complex I (MHC-I). However, it is unknown why the immune system fails to eliminate immune-recognizable neoplasms before they manifest as frank disease. To understand the determinants of MHC-I peptide immunogenicity in nascent tumors, we tested the ability of thousands of MHC-I ligands to cause tumor subclone rejection in immunocompetent mice by use of a new \u2018PresentER\u2019 antigen presentation platform. Surprisingly, we show that immunogenic tumor antigens do not lead to immune-mediated cell rejection when the fraction of cells bearing each antigen (\u2018clonal fraction\u2019) is low. Moreover, the clonal fraction necessary to lead to rejection of immunogenic tumor subclones depends on the antigen. These data indicate that tumor neoantigen heterogeneity has an underappreciated impact on immune elimination of cancer cells and has implications for the design of immunotherapeutics such as cancer vaccines.\n\n## Introduction\n\nHuman cancers bear uniquely distinguishable features on the surface of their cells in the form of neoantigens, which\u00a0are\u00a0peptides derived from mutated, foreign or oncofetal proteins that are presented in complex with major histocompatibility complex I (MHC-I) molecules. These short, 8\u201311 amino acid fragments specifically mark cancer cells and activate potent immune responses that can lead to effective anti-cancer therapy (Tran et al., 2014; Rosenberg and Restifo, 2015; Zacharakis et al., 2018). Yet, the existence of T cells that recognize neoantigens is often not sufficient to eliminate tumors. Karl Hellstr\u00f6m first described the coexistence of tumor-specific lymphocytes together with cancer cells in human solid tumors as a paradox 50 years ago (Hellstr\u00f6m et al., 1968). In mice, an analogously enigmatic observation has been made that sporadic tumors occurring in aged or carcinogen-treated mice induce strong T cell responses only\u00a0when transferred into new hosts, thereby\u00a0preventing engraftment (Heike et al., 1994; Dubey et al., 1997; Shankaran et al., 2001). Thus,\u00a0tumor-specific T cells can lead to tumor rejection in a new host or when used as a cancer therapy, but\u00a0somehow immune surveillance is evaded during early tumorigenesis in the host that originally\u00a0developed an immunogenic tumor. The increased rate of tumor formation in immunocompromised individuals has led to the hypothesis that the immune system can and does eliminate some tumors, particularly virally induced tumors, before they become clinically apparent (Schulz, 2009). We hypothesized that if the immune system can eliminate some early tumors, but not others, perhaps it is because some antigens are more potent at inducing effective T cell responses during early tumorigenesis. Identification and characterization of neoantigens that can induce an effective immune response and clear cancer cells is critical to understanding why and how immunogenic tumors develop in immunocompetent hosts.\n\nImmunogenic peptides have been discovered in animal studies by injection of thousands or millions of tumor cells bearing neoantigens into animals and observing tumor rejection. However, the robust immune activation and tumor rejection in these cases is not analogous to the events of early tumorigenesis in humans, when the number of transformed cells is miniscule. Thus, even though some tumors are immunogenic, it is not clear why the host cannot eliminate them when the tumors first arise. If the biochemical features of neoantigens that lead to effective T cell responses were known, it might be possible to identify which tumors bear immunogenic antigens. Some reports have linked peptide immunogenicity to the\u00a0biochemical characteristics of amino\u00a0acid residues at certain positions along the MHC-I ligand (Calis et al., 2013), while others have focused on the difference between the affinity of a wild-type ligand and a mutated ligand (Duan et al., 2014). However, the absence of a large, unbiased data set of known immunogenic and non-immunogenic peptides has stymied the validation of these approaches. Indeed, most known immunogenic antigens are derived from viral proteins; few mutationally-derived neoantigens are confirmed as bonafide immunogenic peptides in mice or humans. Here, we have developed a novel genetic method to express libraries of precisely defined MHC-I ligands in mammalian tumor cells and have used this method to ask questions about MHC peptide immunogenicity in immunocompetent animals during early tumorigenesis.\n\nUsing libraries of genetically encoded MHC-I ligands, we tracked the dynamic growth and depletion of thousands of tumor subclones in vivo and noted a striking failure of cancer immunosurveillance that is potentially analogous to the failure of immune surveillance in humans during early tumorigenesis. We demonstrate for the first time that the ability of the naive immune system to surveille a nascent tumor and reject immunogenic subclones is limited by the fraction of cells expressing each unique antigen. Furthermore, we show that these rejection thresholds vary among antigens. Our data are consistent with the observation in humans that patients whose tumors have high numbers of subclones\u2014and thus more subclonal neoantigens\u2014have increased levels of relapse and worse survival than patients with more homogenous tumors (McGranahan et al., 2016; Reuben et al., 2017; Turajlic et al., 2018a). Thus, our data provide an antigen-specific rationale for the impact that tumor heterogeneity has on survival of human patients. According to our findings, antigen-specific immune effects are limited during early tumorigenesis, which has implications for the emergence and outgrowth of immunogenic tumors.\n\n## Results\n\n### PresentER expressing cells recapitulate known T cell immunogenicity\n\nWe have developed a reductionist method for encoding diverse peptide/MHC (pMHC) ligands in mammalian cells (termed \u2018PresentER\u2019), which was purposefully designed to enable us to ask questions about the immunogenicity of individual peptide epitopes presented by cancer cells at relatively physiologic levels. We used this method to perform high-throughput, pooled screening of MHC-I ligand immunogenicity in wild-type mice (Figure 1A). The PresentER antigen minigene is comprised of an endoplasmic reticulum (ER) signal sequence followed by a short peptide/epitope. Expression of the peptide and its display on MHC-I does not require proteasomal degradation or peptide processing, thus enabling precise definition of the exact epitope displayed to the immune system. As previously described (Gejman, 2018a), Transporter associated with antigen presentation (Tap) deficient cell lines expressing PresentER antigen minigenes lead to surface presentation of the encoded MHC-I peptide, detectable by multiple modalities, including fluorescently labeled antibodies directed to specific MHC-I ligands, mass spectrometry based immunopeptidomics and antigen-specific T cell reactivity. To demonstrate the applicability of PresentER antigen minigenes to study MHC-I ligand immunogenicity, we first asked if cancer cells encoding known immunogenic (mouse Tyrp1/gp75 TAYRYHLL W223A,H224Y (Dyall et al., 1998); mouse Ddx5/p68 SNFVFAGI S551F (Dubey et al., 1997); synthetic SIYRYYGL (Udaka et al., 1996); synthetic VTFVFAGL (Dubey et al., 1997); chicken ovalbumin SIINFEKL) or non-immunogenic (mouse Serpinf1/Pedf MSIIFFLPL (Wang et al., 2006); scrambled chicken ovalbumin FEKIILSN; mouse Ndufa4/dEV8 EQYKFYSV (Holler et al., 2003); mouse Ddx5/p68 SNFVSAGI (Dubey et al., 1997); mouse Tyrp1/gp75 TWHRYHLL (Dyall et al., 1998); Mouse Trp2 SVYDFFVWL) MHC-I ligands would be rejected by wild-type (WT) animals. The C57BL/6 syngeneic, Tap deficient mouse cell line RMA/S was transduced with these antigen minigenes and we first checked that the antigens were expressed at physiologically normal levels on the cell surface. Previously we, and others, had shown that endogenously expressed MHC-I tumor antigens are presented on the cell surface at several hundred to several thousand sites per cell (Dao et al., 2013; Sergeeva et al., 2011; Mathias et al., 2017). Using a radiolabeled TCR mimic antibody (25-D1.16) reactive with SIINFEKL/H-2Kb, we demonstrated that there were on average 3500 binding\u00a0sites per RMA/S cell expressing PresentER-SIINFEKL, compared with\u00a0~90 sites on cells expressing PresentER-MSIIFFLPL, suggesting that the PresentER system allows display of the epitopes in a relatively physiologic range. We injected 5 \u00d7 106 cells subcutaneously into WT C57BL6/N mice. Tumors expressing known non-immunogenic peptides grew, while tumors expressing known immunogenic peptides were rejected in some or most animals (Figure 1B). Tap deficient cells were used because peptides derived from proteins that are not directed to the ER (e.g. eGFP) are not presented on MHC as these cells lack the ability to transport peptide from the cytoplasm into the endoplasmic reticulum.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41090/elife-41090-fig1-v1.jpg)\n\n**Figure 1.:** (A) A schematic of the cloning strategy of PresentER antigen minigenes along with the experiments performed in vivo in this manuscript. (B) 5 \u00d7 106 RMA/S cells expressing a PresentER minigene were injected subcutaneously into C57BL6/N mice and tumor size was monitored by caliper measurements. Top row: WT\u00a0or\u00a0non-binding peptide minigenes. Bottom row: mutated\u00a0foreign peptide minigenes. All plots are compilations of several experiments. (C) Mice were injected with 5 \u00d7 106 RMA/S cells expressing PresentER-SIINFEKL or PresentER-FEKIILSN. Tumor draining lymph nodes were harvested 7 days later and stained with a SIINFEKL/H-2Kb tetramer and anti-CD44. (D) H and E staining of tumors expressing PresentER-SIINFEKL or PresentER-FEKIILSN. (E) RMA/S PresentER-SIINFEKL and PresentER-FEKIILSN cells were injected into Rag-/- mice and tumor growth was monitored.\n\nAt 7 days after tumor injection, T cells specific for the chicken ovalbumin peptide SIINFEKL could be detected in tumor draining lymph nodes of animals injected with PresentER-SIINFEKL expressing cells (Figure 1C). Haemotoxylin and Eosin (H and E) staining of regressing PresentER-SIINFEKL tumors showed lymphocytic infiltration with hyalin rich fibrin deposits, indicating cell death. By contrast, tumors with PresentER-FEKIILSN (a non-MHC-I binding peptide) were well-vascularized, highly cellular and with trace lymphocytic infiltration (Figure 1D). In order to verify that the mechanism of tumor rejection was indeed T cell dependent, we injected Rag-/- animals with SIINFEKL or FEKIILSN positive tumors and confirmed that SIINFEKL tumors were not rejected (Figure 1E). Taken together, these results indicate that RMA/S tumors expressing PresentER antigen minigenes can recapitulate the known immunogenicity of individual mouse MHC-I ligands in a T cell dependent manner.\n\n### Tumors expressing PresentER antigens do not cause abscopal rejection, but do cause subclone fraction-dependent bystander killing\n\nTo study immunogenicity in vivo at high throughput and complexity in this model, we first wanted to understand if immune responses directed at immunogenic antigens lead to rejection of cells presenting non-immunogenic antigens. If so, the ability to study immunogenicity in a pooled in vivo setting might be compromised. Mice were injected with pairs of tumors expressing an immunogenic and a non-immunogenic antigen minigenes (one minigene-expressing tumor on each flank): SIINFEKL/FEKIILSN, SIYRYYGL/EQYKFYSV and TAYRYHLL/TWHRYHLL. The immunogenic SIINFEKL, SIYRYYGL and TAYRYHLL expressing tumors were rejected, but the non-immunogenic FEKIILSN, EQYKFYSV and TWHRYHLL tumors found on the contralateral flank were not (Figure 2A). This suggests that tumor rejection is local and that an effective immune response to an immunogenic tumor does not affect the growth of a non-immunogenic tumor.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41090/elife-41090-fig2-v1.jpg)\n\n**Figure 2.:** (A) Mice were injected simultaneously with 5 \u00d7 106 RMA/S cells expressing an immunogenic PresentER minigene on one flank and a non-immunogenic minigene on the contralateral flank: SIINFEKL/FEKIILSN (left; n\u00a0=\u00a03), SIYRYYGL/EQYKFYSV (middle; n\u00a0=\u00a05) and TAYRYHLL/TWHRYHLL (right; n\u00a0=\u00a05). Tumor growth curves are shown. (B) Mixtures of 5 \u00d7 106 RMA/S PresentER-SIINFEKL and PresentER-FEKIILSN injected into wild type mice (n\u00a0=\u00a04 per condition). Tumor sizes at day 15 are presented because some animals had to be sacrificed on day 17. (C) CD45.1+ mice were injected with 5 mixtures of PresentER-SIINFEKL (mCherry) and PresentER-MSIIFFLPL (eGFP) cells at several ratios. The top row shows the percentage of SIINFEKL and MSIIFFLPL cells at time 0. Tumors were harvested at day 17, enzymatically disaggregated and the percentage of CD45.2+ eGFP+ and CD45.2 mCherry+ cells were quantified (bottom row). The percentage of PresentER-SIINFEKL cells in each pretumor and tumor sample is highlighted in yellow. The two tumors with the highest percentage of PresentER-SIINFEKL cells were complete rejected and no tumor cells could be recovered.\n\nNext, to test if the immune system could identify and kill immunogenic subclones within a largely non-immunogenic tumor, we cultured\u00a0cells\u00a0with varying ratios of immunogenic (SIINFEKL) and non-immunogenic (FEKIILSN) cells. These cells were injected subcutaneously into mice and tumor size was monitored. In tumors where PresentER-SIINFEKL cells were greater than 25% of a tumor, tumors were smaller and tumor rejection occurred more frequently, especially when tumors were comprised of\u00a0\u226550% immunogenic cells (Figure 2B). Next, we wanted to test if immunogenic subclones within a largely non-immunogenic tumor could be eliminated. We cloned mCherry into the PresentER vector and mixed PresentER-SIINFEKL (mCherry) with non-immunogenic PresentER-MSIIFFLPL (eGFP) cells at varying ratios and injected them into congenically marked CD45.1 mice. On day 16, the tumors were harvested and flow cytometry was performed to identify which (CD45.2 positive) tumor cells remained. Remarkably, within a non-immunogenic (eGFP labeled) tumor, immunogenic (mCherry labeled) sub-populations were eliminated (Figure 2C). Thus, in this model, the immune system is capable of recognizing and selectively depleting immunogenic tumor subclones within the context of a largely non-immunogenic tumor.\n\n### Library screen in vivo reveals the limitations of the immune system in eliminating immunogenic tumor subclones\n\nWe hypothesized that a pooled screen in vivo might reveal the determinants of immunogenic MHC-I ligands if a tumor bearing a library of MHC-I antigen were depleted of cells bearing immunogenic peptide-MHC while tumor cells bearing non-immunogenic pMHC were spared (Figure 3A). Using the PresentER system, such a screen could be done on large scale and identify hundreds or thousands of immunogenic antigens at once, in contrast to identifying immunogenic antigens one-by-one. Immunoediting in vivo leading to loss of tumor clones with immunogenic neoantigen-encoding mutations has previously been observed in syngeneic mouse tumor models (Matsushita et al., 2012; DuPage et al., 2012; DuPage et al., 2011), suggesting that this approach might be viable.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41090/elife-41090-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of the drop-out screen for MHC-I immunogenicity. Mice were injected with mixtures of RMA/S cells, each of which expresses a different peptide that also served as a genetic barcode for later deconvolution. (B) Two libraries of mouse MHC-I peptides were constructed. Left: Wild type peptides identified by searching the mouse proteome for peptides predicted to bind to MHC-I (NetMHCpan H-2Kb ic50\u00a0<500 nM). Right: single amino acid mutants of each of the wild type peptides. (C) C57BL6/N mice (n\u00a0=\u00a05 per group) were injected with 5 \u00d7 106 cells bearing libraries of wild type or mutant\u00a0peptides and tumor growth monitored. (D) A scatter plot showing the average frequency of each minigene in the library before injection of the cells (x-axis) and after growth of the tumor in wild type mice (y-axis). The abundance of each minigene before injection (n\u00a0=\u00a03) is plotted on the x-axis while the abundance of each minigene after 17 days of growth in a wild type mouse is plotted on the y-axis (n\u00a0=\u00a05). Orange circles indicate positive control (immunogenic) minigenes; blue circles indicate negative control (non-immunogenic) minigenes. The straight black lines indicate x\u00a0=\u00a0y. LOESS (local best fit) lines are plotted in blue. The abundance of each minigene plotted is an average of all biological replicates.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41090/elife-41090-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Distribution of MHC-I affinities in the wild-type and mutated library. (B) Difference in NetMHCPan predicted H2-Kb affinity (ic50) between wild-type and mutant peptides (C) The type of amino acid changes in the mutant library (Polar: Q,N,H,S,T,Y,C,M,W; Charged: R,K,D,E; Hydrophobic: A,I,L,F,V,P,G). (D) The positions of the mutations in the mutant library with respect to the wild-type 8-mer.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41090/elife-41090-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** An additional five C57BL6/N mice were injected with a mixture of 107 wild type library and mutated library cells. (A) Growth curves for tumors bearing the \u2018padded\u2019 mutated peptide library and mutated peptide library cells. A scatter plot showing the average frequency of each minigene in the (B) \u2018padded\u2019 mutated peptide library or (C) mixed wild type and mutated peptide library before and after growth in wild type mice. The abundance of each minigene in culture (x-axis; n\u00a0=\u00a03) versus the abundance of each minigene after 17 days of growth in a wild type mouse (y-axis; n\u00a0=\u00a05). Orange circles indicate positive control (immunogenic) minigenes; blue circles indicate negative control (non-immunogenic) minigenes. The straight black lines indicate x\u00a0=\u00a0y. LOESS (local best fit) lines are plotted in blue.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41090/elife-41090-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The straight black lines indicate x\u00a0=\u00a0y. LOESS (local best fit) lines are plotted in blue.\n\nWe searched the mouse proteome in silico and randomly selected 5,000 8-mer peptides that were predicted by NetMHCPan to bind to the B6 mouse MHC-I allele H-2Kb. We also designed a library of mutated peptides by selecting single amino acid substituents of each peptide in the wild-type peptide library that did not eliminate MHC-I binding (Figure 3B). The MHC-I affinities and properties of the mutated peptides are further described in Figure 3\u2014figure supplement 1 and Supplementary file 2. On average, the peptides in the mutated library have slightly higher affinity for MHC-I than the peptides in the wild type library, but the plurality of mutated peptides are within 100 nM of their non-mutated counterparts (Figure 3\u2014figure supplement 1A\u2013B). The residues that are changed from the wild-type to the mutant library tend to be at positions 4, 6 and 7 (Figure 3\u2014figure supplement 1C). The majority of mutations are isomorphic (polar\u00a0>polar, hydrophobic\u00a0>hydrophobic and charged\u00a0>charged), but ~\u2153 of peptides feature a hydrophobic\u00a0>other substitution (Figure 3\u2014figure supplement 1D). Several known immunogenic and known non-immunogenic control antigen minigenes were included in each library, including some that were described in Figure 1. The libraries of wild type and mutant libraries were separately cloned and introduced into RMA/S cells by transduction at multiplicity of infection\u00a0<0.3, thereby ensuring that few cells received more than one minigene. Naive C57BL6/N mice were injected with either (a) 5 \u00d7 106 cells expressing the wild type library, (b) 5 \u00d7 106 cells expressing the mutant library, (c) 5 \u00d7 106 mutant library cells plus 1 \u00d7 106 wild type RMA/S (\u2018padded\u2019) or (d) 5 \u00d7 106 wild type library cells mixed with 5 \u00d7 106 mutant library cells (n\u00a0=\u00a05 per group). The tumors were allowed to grow for 17 days and then harvested (Figure 3C and Figure 3\u2014figure supplement 2A). Genomic DNA was extracted from all of the tumors, as well as RMA/S library cells frozen on the day of injection (\u2018pretumor\u2019 samples) and the minigenes encoded by each cell were amplified by PCR and sequenced by Illumina next generation sequencing.\n\nComparison of minigene abundance in the tumor outgrowth with minigene abundance in the pre-tumor samples led to the surprising finding that no minigenes were robustly depleted during growth in vivo (Figure 3D and Figure 3\u2014figure supplement 2 and Figure 3\u2014source data 1). This result stood in stark contrast to the experiments described above, in which mutant peptide expressing clones were efficiently depleted in immunocompetent mice. Some minigenes that were not abundant in the library (<1/10,000) at the time of injection were depleted or dropped out entirely in the tumor due simply to stochastic drop-out; however, minigenes that were abundant in the library at time of injection maintained their abundance despite in vivo growth of the tumor. Surprisingly, even positive control minigenes encoding strongly immunogenic peptides (orange points) were not depleted in this context. Analysis of minigene abundance in individual animal tumors (as opposed to the average of several tumors) yielded the same conclusion that few, if any, minigenes were reliably depleted (Figure 3\u2014figure supplement 3).\n\nThe absolute number of cells at time of injection can be estimated from the relative abundance of each minigene in the pre-tumor samples. The least abundant minigenes were found at 1 per 5 \u00d7 106 cells (0.00002%) and the most abundant at\u00a0~23\u00d7103 per 5 \u00d7 106 (~0.5%). The immunogenic controls SIINFEKL, VTFVFAGL and SNFVFAGI were found at 0.005\u20130.013% of cells before injection into mice, which correspond to between 250 and 650 cells injected out of 5 \u00d7 106. The number of cells expressing the immunogenic antigens upon injection is very low and thus analogous to the number of cells that are present during early tumor development, when immunogenic transformed cells first arise. The surprising inability of the immune system to eliminate these demonstrably immunogenic cells may shed light on the limits of immune cell activation and killing during the early stages of tumorigenesis that enable outgrowth and escape of immunogenic cancers.\n\n### Vaccination with minigene library does not result in immunosurveillance\n\nA possible explanation for failure of immune surveillance in our RMA/S MHC-I minigene library model might be insufficient antigen available in the growing tumor to activate an initially productive anti-tumor immune response in naive mice. If this were true, we hypothesized that T cells from antigen experienced mice might be able to detect and kill immunogenic cells in a highly heterogeneous tumor. Although vaccination with soluble peptides has been shown to generate robust T cell immunity (Ott et al., 2017; Sahin et al., 2017), this is not cost effective at scale. Alternatively, there is precedent for the idea that vaccination with a library of mutated antigens can lead to immunogenic T cell responses that lead to slower tumor growth or clearance (Engelhorn et al., 2006). We decided to vaccinate mice with irradiated tumor cells bearing the library of MHC-I peptides. In order to avoid confounding immunity to the RMA/S cells themselves (Van Hall et al., 2006), we used CRISPR/Cas9 to generate a B6-syngeic Tap2-/- MCA205 fibrosarcoma cell line. A single cell clone of Tap2 knockout MCA205 was selected and Tap2 knockout was validated by RT-PCR and next generation sequencing. Decreased surface MHC-I staining was expected and observed, because the Tap complex is a key chaperone of peptide/MHC-I formation (Figure 4\u2014figure supplement 1).\n\nWT B6 mice were vaccinated three times, once every 6 days, with 1 \u00d7 107 irradiated MCA205\u2206Tap2 cells bearing the wild-type library minigenes (Figure 4A). Splenocytes and draining lymph nodes from three vaccinated and three non-vaccinated mice were harvested at day 18 after the final vaccination and analyzed for the presence of antigen experienced T cells. Five control peptide tetramers were used, three of which are immunogenic and were present in the library (SIINFEKL, SNFVFAGI, VTFVFAGL), one which is not immunogenic but was present in the library (MSIIFFLPL) and one which is immunogenic but not found in the library (SIYRYYGL). Only the immunogenic peptides found in the library showed an increased number of CD44+/tetramer+ CD8 T cells, while the other two peptides did not show significant changes (Figure 4B). Therefore, vaccination with the library yielded detectable T cell populations specific\u00a0to the immunogenic peptides.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41090/elife-41090-fig4-v1.jpg)\n\n**Figure 4.:** (A) A schematic of the vaccinations performed on C57BL/6N mice.\u00a0107 irradiated MCA205\u0394Tap2 cells expressing wild type library peptides were injected subcutaneously every six days (for a total of three vaccinations) into eight animals. On day 18, three mice from each group were sacrificed for tetramer analysis. Draining lymph nodes and splenocytes were stained with H-2Kb peptide tetramers. At day 18, the remaining five mice were challenged with 5 \u00d7 106 RMA-S cells expressing the library. (B) Splenocytes and draining lymph node cells from vaccinated animals were stained for CD8, CD44, and H-2Kb/peptide tetramers. Five control peptides were evaluated: four found in the library and one peptide not found in the library. The frequency of CD44/tetramer positive CD8 cells is reported. (C) Growth curves of RMA/S library tumors in in vaccinated or unvaccinated mice. (D-F) Average abundance of each minigene in cultured cells before injection into mice (x-axis) compared to minigene abundance in tumors harvested from vaccinated (n\u00a0=\u00a04; y-axis) (D) or non-vaccinated (n\u00a0=\u00a05; y-axis) (E) mice. Each circle is a minigene. Orange circles indicate positive control (immunogenic) minigenes; blue circles indicate negative control (non-immunogenic) minigenes. (F) Direct comparison of minigene abundance in tumors grown in vaccinated and non-vaccinated animals. The straight black lines indicate x\u00a0=\u00a0y. LOESS (local best fit) lines are plotted in blue.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41090/elife-41090-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** A single cell clone with an INDEL in both alleles of Tap2 was selected and expanded. (A) RT-PCR of genomic DNA shows a smaller band than wild-type cells. (B) Left: Loss of surface H2-Kb in the \u0394Tap2 line. Right: transduction of MCA205\u0394Tap2 with PresentER-SIINFEKL or PresentER-MSIIFFLPL and staining with SIINFEKL/H2-Kb TCR mimic antibody shows Tap independent presentation of the SIINFEKL antigen. (C) Next generation sequence of the MCA205\u0394Tap2 single cell clone shows two different 28 bp deletions in both Tap2 loci.\n\nVaccinated and non-vaccinated mice were then challenged with 5 \u00d7 106 RMA/S cells bearing the wild type peptide library. Slower tumor growth was noted in the vaccinated as compared to the non-vaccinated mice, suggesting that a vaccine-related anti-tumor effect may have occurred (Figure 4C). However, neither vaccinated nor unvaccinated animals showed depletion of immunogenic control minigenes in relation to the non-immunogenic control minigenes (Figure 4D\u2013F and Figure 4\u2014source data 1). Thus, although slower tumor growth was noted, antigen-specific immunity was not observed in response to prophylactic vaccination in the library setting, suggesting a possible response to some other, broadly expressed, cellular antigens not represented in the peptide library.\n\n### Rejection of immunogenic subclones depends on subclone fraction in tumor\n\nWhile we have demonstrated that PresentER minigenes peptides can generate effective antigen-specific immunity in bulk RMA/S tumor assays, the same response does not occur in tumors bearing libraries of MHC-I ligands. In order to test if there is a threshold level of tumor cell clonality necessary to effectively activate the immune system, CD45.1 mice were injected with mixtures of immunogenic (labeled with eGFP) and non-immunogenic (labeled with mCherry) RMA/S cells and flow cytometry was performed on reisolated tumors 17 days later (Figure 5A). Relative to their proportion upon engraftment, tumor cells bearing the immunogenic peptides SIINFEKL and TAYRYHLL were depleted when they comprised as little as 1% of the tumor. Below 1%, depletion of cells bearing these two minigenes could not be detected. Depletion of cells bearing the SNFVSAGI peptide could be reliably detected at 50% and in some tumors at 10%, however depletion could not be detected when the SNFVSAGI cells were found at less than 10% of the tumor (Figure 5B). These findings are surprising, as they indicate that immunogenic tumor subclones can persist within a tumor and that rejection or persistence is dependent on tumor cell percentage of the total tumor mass during tumorigenesis, and not immunogenicity of the cell alone.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41090/elife-41090-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic and (B) results of experiments to detect antigen-specific immune surveillance thresholds. CD45.1+ C57BL/6N mice were injected with mixtures of immunogenic and non-immunogenic RMA/S cells. Mixtures were 50%, 90%, 99% or 99.9% non-immunogenic PresentER-MSIIFFLPL (mCherry) mixed with 50%, 10%, 1% or 0.1% cells expressing one of three different immunogenic minigenes (eGFP) noted in the inset. After 17 days in the mouse, tumors were enzymatically disaggregated, stained with CD45.2 and analyzed by flow cytometry. t-tests with the alternative hypothesis that log10 fold change is 0 were performed for each group. Some tumors were rejected entirely, and these were excluded from the presented depletion analysis. At least three tumors per group yielded sufficient numbers of cells to be confident that depletion had occurred. All groups marked with four stars reached a p-value of\u00a0<0.001. (C) In order to overcome the hypothesized lack of immune surveillance at low minigene abundance, 2 Rag-/- mice were injected at 4 sites with 5 \u00d7 106 RMA/S library cells per site. Tumors were harvested after 20 days, minced and pooled. Approximately 1 mm3 of tumor fragments were implanted subcutaneously into the flank of either wild-type or Rag-/- mice and allowed to grow for 17 days. (D) The abundance of each minigene (average of 3 mice) in tumors transferred to WT mice (y-axis) compared to tumors transferred to Rag-/- mice (x-axis) is plotted. Each circle is a minigene. Orange circles indicate positive control (immunogenic) minigenes; blue circles indicate negative control (non-immunogenic) minigenes. The straight black lines indicate x\u00a0=\u00a0y. LOESS (local best fit) lines are plotted in blue.\n\nFailure of the immune system to eliminate immunogenic subclones present at low fractional abundance could either be due to the low quantity of total antigen present in the tumor or to the low percentage of cells bearing each antigen. In order to discriminate between these two possibilities, we increased the amount of tumor injected, thus increasing the total amount of antigen the immune system sees while keeping the percentage of each antigen within the tumor the same. We grew RMA/S library tumors in Rag-/- mice, harvested the tumors at 20 days and retained a portion of the material for sequencing. The rest of the tumor material was transferred into the flank of WT B6 or Rag-/- mice. Each animal received approximately 1 milliliter of tumor fragments (~2.5\u00d7108 cells), which represents a 40\u2013100 fold increase in cells expressing each antigen (Figure 5C). After 17 days, the transferred tumors were harvested and sequenced. Once again, as we observed in both naive and vaccinated mice, robust depletion of cells bearing immunogenic peptide minigenes did not occur. Overall minigene abundance was highly correlated between the tumor material transferred and the tumors harvested 17 days later in both WT and Rag-/- mice and in both the wild type and mutant libraries (Figure 5D and Figure 5\u2014source data 1). These results reveal that it is the percentage of tumor cells bearing each antigen within a tumor and not the total quantity of antigen that determines if an effective immune response occurs.\n\n## Discussion\n\nThe immune system is capable of recognizing cancer cells as foreign based on the presentation of altered or unusual MHC-I ligands on the surface of tumor cells\u2014a phenomenon that has been leveraged for cancer therapies such as immune checkpoint blockade and adoptive cell transfer (Tran et al., 2014; Rosenberg and Restifo, 2015; Zacharakis et al., 2018). Despite this, the immune system fails to clear immunogenic, clinically detected tumors on its own, as has been paradoxically noted for decades (Hellstr\u00f6m et al., 1968). It is not clear at what point in tumorigenesis the immune system begins to initiate (ineffectively) a response to immunogenic MHC-I ligands presented on cancer cells. There is epidemiologic evidence that immunocompromised patients develop more tumors, suggesting that the immune system may prevent some tumors from ever manifesting clinically. However, recent data also suggests that mutations accumulate at high rates in sun-damaged, but otherwise normal, tissue at levels comparable to cancer cells (Martincorena et al., 2015) and that tumors face overall little negative selective pressure (Martincorena et al., 2017). Indeed, immune escape by loss of MHC (Masuda et al., 2007; Cabrera et al., 2000; Gudmundsd\u00f3ttir et al., 2000; So et al., 2005; Shukla et al., 2015), when it occurs, is a late and subclonal event (McGranahan et al., 2017; Turajlic et al., 2018b). If T cell surveillance were highly effective during early tumor development, negative selective pressure would be notable in the evolutionary trajectories of tumors and HLA loss would be expected to occur early, frequently and in a clonal manner. We interpret the data from human and animal experiments to suggest that routine T cell immunosurveillance of nascent cancer cells does occur, but is limited by unknown factors, and that recognition of tumors as foreign occurs mostly later in tumor development.\n\nIf tumor immunosurveillance is sometimes effective in the early growth of a tumor, we hypothesized that it might be due to potent neoantigens expressed by cancer cells. Discovery of the biochemical characteristics of mutationally-derived neoantigens that are immunogenic would be important to clarify why some neoantigens are tolerated by the immune system and others are not. The significance of this question is underscored by the major challenge currently facing cancer immunotherapy: the identification of patients whose tumors bear immunogenic neoantigens\u2014and are thus likely to respond well to immune checkpoint blockade or other immunotherapies\u2014vs those patients who will be unnecessarily exposed to potentially toxic therapies without a chance for efficacy.\n\nHere, we have developed a reductionist approach to determine which MHC-I ligands are immunogenic in immunocompetent mice. We demonstrate that tumors are rejected when an immunogenic pMHC is expressed on all or most injected cancer cells. To our surprise, we have discovered that effective T cell responses are not mounted against highly immunogenic peptides when cells expressing these peptides are a minor fraction of the tumor, which is the case in early developing tumors in humans. Furthermore, the threshold percentage of tumor cells necessary to yield an antigen-specific immunogenic T cell response varies with the antigen. We propose that ineffective T cell responses may be a consequence of intratumoral (or intra-tissue) heterogeneity and that neoantigen clonal fraction is an important, overlooked aspect of MHC-I antigen immunogenicity.\n\nThere are many mechanisms by which immune mediated killing of immunogenic cancer cells can fail. Here we report the first evidence that tumor heterogeneity is an explicit factor leading to failure of effective immunity in a tumor and that the maximum level of heterogeneity tolerable before immune escape occurs is dependent on the antigen. Immune checkpoints or active tumor suppression do not explain the observed immune evasion because such mechanisms would be expected to suppress T cell killing irrespective of the fraction of tumor cells that expresses an immunogenic epitope. This is evidenced by robust depletion of the highly immunogenic peptides SIINFEKL and TAYRYHLL when present at\u00a0\u22651% of the tumor. The mechanism by which T cell responses are restrained when immunogenic MHC-I antigens are present at low frequency is not yet clear. Low levels of antigen presentation may lead to ineffective cross-presentation of antigen in the tumor draining lymph node, thus limiting T cell activation (Spiotto et al., 2002). In animal models, low levels of immunogenic epitopes of oncogenic drivers presented on transformed cells early during tumorigenesis (at the premalignant stage) were shown to induce a program of cellular hypo-responsiveness in tumor-specific (oncogene-specific) CD8 T cells (Willimsky and Blankenstein, 2005; Schietinger et al., 2016). After prophylactic vaccination with irradiated library cells we observed smaller tumors and increased numbers of antigen-specific T cells in splenocytes and draining lymph nodes, suggesting that some antigen-specific T cell proliferation does occur. While we demonstrated sufficient levels of the high affinity, highly immunogenic antigens on the cell surface, tumor associated epitopes of lower affinity, immunogenicity and expression levels should produce an even more pronounced deficit in T\u00a0cell\u00a0recognition. We speculate that the mechanism of immune escape in this model is either ineffective T cell activation or failure of activated T cells to identify and kill antigen-positive cells present at low abundance within a sea of cells displaying irrelevant antigens.\n\nThe observation that animals prophylactically vaccinated with MCA205\u2206Tap2 cells are partially protected from outgrowth of RMA/S tumors may be due to several possibilities. For instance, the vaccinations may have activated T cells that recognize some immunogenic peptides in the library, or T cells that recognize mutated peptides expressed by both cell types, or, most intriguingly, T cells specific to T cell epitopes associated with impaired peptide processing (TEIPPs). TEIPPs are T cell epitopes derived from wild type proteins that are not normally presented, unless antigen presentation is altered by loss of Tap, which yields a relative deficit of peptides translocated into the ER. TEIPPs in RMA/S\u00a0cells can\u00a0be immunogenic (Van Hall et al., 2006; Doorduijn et al., 2016). Although RMA/S and MCA205\u2206Tap2 are unlikely to share neoantigens derived from somatic mutations, they may share TEIPPs that contribute to protection against RMA/S tumor growth. A caveat to the vaccination experiments is that differences in the antigen presentation machinery of MCA205\u2206Tap2 and RMA/S cells may lead to incomplete congruence in the MHC-I peptidome of these two cell lines. These differences may lead to some peptides encoded by the PresentER library (or by the endogenous genome of the cell) to be poorly presented in one cell line but well presented in another cell line.\n\nAlthough we have focused our efforts on understanding the role of CD8 T cells, other infiltrating cell types are also important for anti-tumor effects. In particular, CD4 T cells have been shown to play important roles in the CD8 T cell responses to tumors (Borst et al., 2018) and to target neoantigens (Ott et al., 2017; Sahin et al., 2017). However, our experimental design does not allow us to assess the role of CD4 T cells in CD8 T cell mediated anti-tumor responses. Thus, while it may be the case that the magnitude or quality of the immune response may differ when both CD8 and CD4 cells recognize a related immunogenic antigen, we are unable to study this with the tools we have developed to perform pooled library experiments because we cannot encode both a specific MHC II and MHC I ligand in a single minigene. Moreover, there is the confounding possibility that some CD4 help is coming from unrelated antigens, such as mutated proteins found in RMA/S or the exogenous proteins introduced into the cells by the PresentER vector. More broadly, the heterogeneity in actual human tumors is characterized by differential infiltration with antigen presenting cells, which can change the sensitivity of the immune system to detect immunogenic antigens present at low clonal fractions, and thus could impact our findings. Although we could not modulate the infiltrating immune cells in our experimental tumor models, we appreciate that this may influence the potency of a subpopulation of immunogenic cells. It would be interesting to understand how various levels of antigen presenting cells contribute to dynamic thresholds of T cell immunogenicity.\n\nThe PresentER system we have employed does have some potential biochemical caveats that may impact the interpretation of the data. While we have not observed alternative cleavage patterns in individual peptides we have studied (Gejman, 2018b), in a library setting we cannot test if every minigene is properly yielding its encoded MHC-I ligand. For instance, some encoded peptides may not bind well to MHC-I or may only bind in the presence of an MHC loading chaperone. Some peptides may lead to improper or no cleavage of the signal peptide whereas other peptides may be shortened (e.g. by ERAP1, an ER associated endopeptidase), altered or destroyed in the endoplasmic reticulum.\n\nNew therapeutic modalities such as immune checkpoint blockade have shown clinical efficacy in the treatment of human tumors, but the toxicity of the drug regimens has led to many efforts to find biomarkers that predict patient response.\u00a0Tumors with high mutation burdens\u2014which are more likely to have immunogenic neoantigens (Van Allen et al., 2015; Yarchoan et al., 2017; Snyder et al., 2014)\u2014and tumors that have mismatch repair (MMR) deficiency or microsatellite instability (MSI-H) respond well to checkpoint blockade (Le et al., 2015; Le et al., 2017). In mouse models, syngeneic tumors with MMR gene knock outs accumulate mutations over time and grow more slowly in wild type mice than do tumors without MMR deficiency. Cell lines derived by sub-cloning of MMR deficient lines\u2014thus increasing the clonal fractions of each neoantigen\u2014grow more slowly or are rejected entirely. In all cases, MMR inactivation in tumors leads to better responses to checkpoint blockade than the parental tumors (Germano et al., 2017). Moreover, survival is inversely related to tumor neoantigen clonality in human patients with lung adenocarcinoma (McGranahan et al., 2016; Reuben et al., 2017). Patients whose tumors bear high numbers of subclonal (or branched) neoantigens have increased levels of relapse and worse survival than those patients with more homogenous tumors (McGranahan et al., 2016; Reuben et al., 2017). Response to checkpoint blockade in lung and skin tumors is also associated with lower levels of intratumoral heterogeneity (McGranahan et al., 2016). The combination of these data are highly suggestive that while total neoantigen burden is important for long term survival and response to checkpoint blockade, neoantigen clonality is an additional important factor in mediating tumor regression.\n\nThe discovery that intratumoral heterogeneity prevents effective T cell responses has implications for the development of therapeutic cancer vaccines, checkpoint blockade, adoptive T cell therapies, and studies of tumor immunogenicity. In addition, our data may provide a new understanding of mechanisms of immune surveillance and its failure that allows growth and evolution of tumors and subclones. For instance, recent data shows that subclones with very low clonal fraction yet distinct intratumoral functions may be important to tumor survival and growth (Vinci et al., 2018)\u2014suggesting that even low abundance tumor subclones may be important targets for immunotherapy. In general, we may speculate on one mechanism for cancer escape and progression, in which small early cancers generally do not bear immunogenic epitopes derived from their limited number of driver oncogenic proteins and few passenger mutations. Then as the tumors evolve, the neoantigens appearing in subclones do not reach a clonal fraction high enough to breach their antigen-specific immunogenicity thresholds, thereby allowing escape of these otherwise immunogenic clones. This model may help to explain why sun-damaged and aged healthy tissue is replete with mutations, sometimes reaching frequencies seen in human cancers (Martincorena et al., 2015; Risques and Kennedy, 2018). Cumulatively, these findings suggest that effective T cell immunity is restrained in the context of healthy tissue and growing tumors and paint a picture of T cell immunogenicity that is poorly captured by existing models of tissue immunosurveillance.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (M musculus)</td>\n      <td>RMA/S</td>\n      <td>10.1002/ijc. 2910470711</td>\n      <td>RRID:CVCL_2180</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (M musculus)</td>\n      <td>MCA-205</td>\n      <td>PMID: 2303716</td>\n      <td>MCA-205</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (M musculus)</td>\n      <td>MCA205\u2206Tap2</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Generated using CRISPR/Cas9 described in materials/methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PresentER- SIINFEKL</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Generated using procedure described in materials/methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PresentER- FEKIILSN</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Generated using procedure described in materials/methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PresentER- MSIIFFLPL</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Generated using procedure described in materials/methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PresentER- SNFVSAGI</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Generated using procedure described in materials/methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PresentER- SNFVFAGI</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Generated using procedure described in materials/methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PresentER- SIYRYYGL</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Generated using procedure described in materials/methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PresentER- EQYKFYSV</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Generated using procedure described in materials/methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PresentER- TWHRYHLL</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Generated using procedure described in materials/methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PresentER- TAYRYHLL</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Generated using procedure described in materials/methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>LentiCRISPRv2</td>\n      <td>Addgene</td>\n      <td>Addgene:52961</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (m musculus)</td>\n      <td>C57BL6/N</td>\n      <td>Envigo</td>\n      <td>Envigo:44</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (m musculus)</td>\n      <td>B6.SJL- Ptprca/BoyAiTac</td>\n      <td>Taconic Biosciences</td>\n      <td>Taconic:4007 F</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (m musculus)</td>\n      <td>B6.129S6- Rag2tm1Fwa N12</td>\n      <td>Taconic Biosciences</td>\n      <td>Taconic:RAGN12-F</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-H-2Kb</td>\n      <td>Biolegend</td>\n      <td>Biolegend:116517</td>\n      <td>used at 1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-SIINFEKL /H2kb</td>\n      <td>Biolegend</td>\n      <td>Biolegend:141605</td>\n      <td>used at 1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-CD45.2</td>\n      <td>eBioscience</td>\n      <td>eBioscience:17-0454-81</td>\n      <td>used at 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-CD8a</td>\n      <td>BD Pharmingen</td>\n      <td>BD Pharmingen:553030</td>\n      <td>used at 1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-CD3</td>\n      <td>BD Pharmingen</td>\n      <td>BD Pharmingen:553067</td>\n      <td>used at 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-CD44</td>\n      <td>Biolegend</td>\n      <td>Biolegend:103012</td>\n      <td>used at 1:400</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>H-2Kb SIINFEKL tetramer</td>\n      <td>NIH Tetramer Core</td>\n      <td>NIH Tetramer Core:K(b)/Ova.SIINFEKL</td>\n      <td>used at 10 nM</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>H-2Kb SIYRYYGL tetramer</td>\n      <td>NIH Tetramer Core</td>\n      <td>NIH Tetramer Core:K(b)/SIYRYYGL</td>\n      <td>used at 10 nM</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>H-2Kb MSIIFFLPL tetramer</td>\n      <td>NIH Tetramer Core</td>\n      <td>NIH Tetramer Core:custom</td>\n      <td>used at 10 nM</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>H-2Kb SNFVFAGI tetramer</td>\n      <td>NIH Tetramer Core</td>\n      <td>NIH Tetramer Core:K(b)/mp68.SNFVFAGI</td>\n      <td>used at 10 nM</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>H-2Kb VTFVFAGL tetramer</td>\n      <td>NIH Tetramer Core</td>\n      <td>NIH Tetramer Core:custom</td>\n      <td>used at 10 nM</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animal studies\n\n6-8\u00a0week old C57BL6/N mice were purchased from Envigo or Taconic Biosciences. 6\u20138 week old B6.SJL-Ptprca/BoyAiTac (known as CD45.1 mice) and B6.129S6-Rag2tm1Fwa N12 Mice (known as Rag2 KO) were purchased from Taconic Biosciences. Mice were shaved before subcutaneous engraftment of the\u00a0indicated number of RMA/S cells in 100 uL PBS. Tumor volumes were calculated using caliper measurements and the standard modified ellipsoid formula: tumor volume = (LxW2\u00a0x\u00a00.52 every 2\u20133 days. Animals were euthanized when tumor volume exceeded 2000 mm3 or if ulceration was noted. Vaccination of animals was performed by subcutaneous injection of 10 \u00d7 106 irradiated (20 Gy) MCA205-\u0394Tap2 cells expressing libraries of minigenes.\n\n### Flow cytometry and radioimmunoassay\n\nFor cell surface staining, cells were incubated with appropriate fluorophore-conjugated mAbs for 30 min on ice and washed twice before resuspension in the viability dye DAPI at 1 \u03bcg/mL. Flow cytometry data were collected on a LSRfortessa (BD) or an Accuri C6 (BD) and analyzed with FlowJo V10 software. The antibodies used in this study were anti-H-2Kb-APC clone AF6-88.5 (Biolegend 116517), anti-SIINFEKL/H2kb-APC clone 25-D1.16 (Biolegend 141605), anti-CD45.2-APC clone 104 (eBioscience 17-0454-81), anti-CD8a-FITC clone Ly-2 (BD Pharmingen 553030), anti-CD3-PerCP clone 145\u20132 C11 (BD Pharmingen 553067). The following fluorescently labeled H-2Kb tetramers were obtained through the NIH Tetramer Core Facility: SIINFEKL, SIYRYYGL, MSIIFFLPL, SNFVFAGI and VTFVFAGL. Radioimmuneassay to determine the number of SIINFEKL/H-2Kb molecules on the surface of RMA/S PresentER-SIINFEKL cells was performed as previously described (Dao et al., 2013; Chang et al., 2017).\n\n### Generation of MCA205-\u0394Tap2\n\nA guide RNA sequence targeting murine Tap2 (ATGGGGCTGTTGCGCTGAGC) was cloned into the LentiCRISPRv2 (Sanjana et al., 2014) plasmid (Addgene plasmid 52961), a gift from Feng Zhang (Broad Institute, Cambridge, Massachusetts, USA). MCA205 fibrosarcoma cells were transiently transfected using Lipofectamine 2000 (Thermo Fisher Scientific 11668027) following standard manufacturer\u2019s protocols. 24 hr later, successful transfectants were selected using 5 ug/mL Puromycin for 3 days before expansion and single-cell subculture. Genetic ablation of Tap2 was verified by next generation sequencing of the Tap2 loci confirming a frameshift deletion in both alleles, and RT-PCR analysis. Primers for RT-PCR analysis are listed in Supplementary file 1. Reduced cell-surface H-2Kb expression was also verified by flow cytometry.\n\n### Determination of antigen-specific immunogenicity thresholds\n\nRMA/S cells expressing PresentER antigen #1 (eGFP) were mixed with RMA/S cells expressing PresentER antigen #2 (mCherry) at defined ratios (e.g. 1:10, 1:100, 1:1000, etc) and validated by flow cytometry immediately before injection into CD45.1 mice. After 17 days, tumors were harvested, cut into small pieces and disaggregated by incubation at 37\u00b0C with Liberase TL (Sigma-Aldrich 5401020001), DNAse I (Worthington Biochemical LS002139) and ACK lysis buffer (Thermo Fisher Scientific A1049201). Single cell suspensions of tumor cells were stained with CD45.2 and DAPI and collected on the same flow cytometer, using the same settings and gates as on day 0. The number of eGFP and mCherry cells was calculated based on the same gates used on the day of injection. Non-fluorescent cells were ignored for the purposes of analysis and the percentage of eGFP and mCherry cells in the tumor were normalized to sum to 100%. The fold change in cells expressing each antigen was calculated as: (percentage of normalized eGFP cells in tumor) / (percentage of eGFP cells at D0).\n\n### PresentER minigene cloning and transduction of RMA/S\n\nThe individual PresentER minigenes specified above were cloned into the PresentER backbone as previously described (Tran et al., 2014). Oligonucleotides were amplified using T3_SfiI and T7_SfiI primers (Supplementary file 1). HEK293T Phoenix-Ampho cells were transfected with each plasmid and, after 24 hr, viral supernatant was harvested every 12 hr. RMA/S were transduced with limiting amounts of viral supernatant at 1000xg for 2 hr at 37\u00b0C in six well non-tissue culture treated plates. PresentER minigenes vectors are available on Addgene (102942, 102943, 102944, 102945, 102946).\n\n### Library construction in silico\n\nThe peptides included in the libraries were found in Uniprot database of canonical mouse protein sequences (UP000000589). Substrings of unique eight amino acid sequences were collected and affinity to H-2Kb was calculated using NetMHCPan v4.0. 5000 randomly selected peptides with predicted ic50\u00a0<500 nM were selected and constitute the \u2018wild type peptide library.\u2019 A single random amino acid substitution was made to each member of the wild type library to generate the \u2018mutant peptide library.\u2019 Substitutions which generated another wild type peptide were excluded.\n\n### Library generation in vitro\n\nLibraries of PresentER minigenes were cloned as previously described (Tran et al., 2014). Library metadata is provided in Supplementary file 2. Oligonucleotide libraries were ordered from CustomArray and amplified with Phusion polymerase using WT and Mutant minigene library-specific primers (Supplementary file 1). Amplicons were digested with SfiI and passed through a MinElute column. The PresentER cassette vector was also digested with SfiI, treated with calf intestinal phosphatase and ligated to the oligonucleotides with T4 ligase. Ligation products were phenol extracted and electroporated into DH5 electrocompetent cells. Electroporated cells were plated and counted. At least 1000x fold more transformants than minigene library members were required to proceed to plasmid DNA extraction (>5\u00d7106 colonies). The colonies were scraped off the plate and grown for 3.5 hr in TB\u00a0+ampicillin at 37\u00b0C at 225 rpm. The bacteria were maxiprepped using the Qiagen maxiprep kit and library representation was checked by Illumina sequencing. Library containing retrovirus was produced by transfection of 15 cm plates of HEK293T Phoenix-AMPHO cells with library plasmid DNA. Viral supernatant\u00a0fluid was collected beginning at 24 hr after transfection and continuing every 12 hr until 72 hr post transfection. Viral supernatant\u00a0fluid was pooled, concentrated with Clontech Retro-X concentrator and frozen. Concentrated viral supernatant\u00a0fluid titers were determined by transduction of RMA/S cells. Libraries of minigene expressing RMA/S cells were generated by transduction at an MOI\u00a0<0.3 (1,000xg for 2 hr at 37\u00b0C in six well non-tissue culture treated plates) and selection with puromycin. Library expressing cells were maintained in cultures of\u00a0>1000 x cells per number of minigenes in the library (i.e. at least 5 \u00d7 106).\n\n### Genomic DNA extraction and minigene sequencing\n\nTo verify that minigene representation was not compromised during cloning, all libraries were sequenced from plasmid prior to transduction into mammalian cells. Minigenes were either directly amplified with P5 and barcoded P7 primers and sequenced using a custom, or they were amplified with a nested PCR protocol followed by Illumina library preparation and sequencing at the Integrated Genomics Operation at MSKCC (Supplementary file 1). Genomic DNA was extracted from cultured cells or mechanically disaggregated tumors with the Gentra Puregene kit and minigenes were amplified from genomic DNA. In order to avoid amplification bias due to high PCR cycle numbers or multiple integration events, PCR was performed with the minimum number of cycles possible. The minimum number of PCR cycles was empirically-determined for each batch of samples, but was typically 18\u201322 cycles when the template was genomic DNA. All steps were performed in PCR hoods or other clean environments with precautions to avoid cross contamination between samples. In order to avoid under-sampling low abundance minigenes, each sample of genomic DNA was amplified using DNA equivalent to\u00a0>1,000 fold the number of minigenes in the library. Reads were mapped to the PresentER minigene libraries with Bowtie2 using default settings. Reads that did not map to the minigenes in the library were discarded. The number of reads aligning to each minigene was divided by the total number of reads aligning to the library to obtain the relative abundance of each minigene. Quality control to ensure library representation and absence of contamination were performed on every sample. All data analysis was performed in R.\n\n### Data and materials availability\n\nSome PresentER minigenes are available from Addgene (e.g., #102942, #102943, #102945, #102946, #102944) and others are available by request directly from the investigators. Data are available in the following repositories: DOI:10.5281/zenodo.1310902, DOI:10.5281/zenodo.1309836 and DOI:10.5281/zenodo.1308909.\n",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "96685d3a-a4fa-4a63-addb-e98d108ca087",
+      "submission_id": "65bb14d9-c301-4e97-ac9d-6e1c2726a14d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald N Germain, National Institute of Allergy and Infectious Diseases United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41090.025](https://doi.org/10.7554/eLife.41090.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Rejection of immunogenic tumor clones is limited by clonal fraction\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tadatsugu Taniguchi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: K Melief (Reviewer #1).\n\nYour careful quantitative analysis of the role of tumor heterogeneity (clonal fraction) in effective T cell elimination of cancer adds an important new level of insight into the reasons for failure of immunotherapy even when a tumor possesses adequate neoantigens for immune recognition and effector T cells specific for that antigen exist.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper in an ingenious fashion approaches experimentally the important issue of tumor heterogeneity and immunogenicity. To that purpose the authors have used the antigen processing defective (TAP defective) RMA-S cell-line and supplied it with minigene constructs that allow the MHC class I epitope direct access to the ER for MHC class I loading, circumventing the TAP defect in RMA-S. The startling finding is then made through a number of well-designed experiments that small numbers of tumor cells, presenting a given model neo-epitope in a sea of other neo-epitopes escape being noted by the immune system, leading to tumor outgrowth. Not entirely surprisingly, for some epitopes larger fractions of tumor cells go unnoticed than for others, probably reflecting the \" quality\" of each epitope. While the interpretation offered by the authors in general may be appropriate, additional consideration apply, which they should discuss, because this adds to the relevance of their paper. If true, the conclusions imply a novel parameter strongly influences immunogenicity/targeting of tumor cells and could explain empirical observations on frequent development of heterogenous human tumors.\n\nEssential revisions:\n\n1) The authors have not reckoned with a potential presentation of epitopes by MHC class II and possible effects of CD4 help. It is well known that optimal CD8+ T cell immunity depends bot for effector cell induction and memory on specific CD4+ T cell immunity. Specific help is better than non-specific help, because the CD4+ T cells not only assist in the induction and programming of optimally activated CD8+ T cells, but also improve the intra-tumoral conditions for activity of CD8+ T cells. In the average neo-antigen carrying human tumors both CD4 and CD8 neo-epitopes exist (see Ott et al., 2017 and Sahin et al., 2017 papers quoted in the manuscript). It would be great to probe the rules for immunogenicity ageing in the presence or absence of specific helper epitopes being expressed and presented from the same RMA-S tumor, but I appreciate the fact that this is asking too much at the present time. Nevertheless it is quite possible that smaller fractions of tumor cells would become eliminated in the presence of robust and tumor-specific CD4+ help. The importance of CD4+ help has been discussed recently in Nature Reviews Cancer by Jannie Borst et al., 2018.\n\n2) Tumor heterogeneity may also involve the fact that some tumors are very rich in APC, while others are not, lacking the appropriate chemokine (receptor) expression. This type of heterogeneity might heavily influence the results one might obtain with the system used by the authors. Moreover most tumors lack intrinsic danger signals to activate these DC. Again this is likely to substantially influence the outcome. It will enrich the paper if these aspects are discussed.\n\n3) The observation that vaccination with the MCA 205 TAP-deficient tumor protects non-specifically against RMA-S is not unexpected, because of the existence in RMAS and likely MCA 205 TAP deficient of so-called TEIPP antigens (T cell epitopes associated with impaired peptide processing), first described by Thorbald van Hall et al. in 2006 and lately last revisited in J. Exp. Med. 2018. These epitopes are generated from normal non-mutated household epitopes in a TAP-independent fashion, but being at low numbers, never make it to the cell surface in TAP-competent cells. However, in TAP-deficient cells they see their chance to load MHC class I in the absence of this competition.\n\n4) The authors assume that the antigenic peptide is cleanly produced in the cells by cleavage of the ER translocation signal. Such cleavages are often influenced by surrounding sequences which in this case include the antigenic peptide. So it is possible that what are thought of as perfect antigenic peptides may not always be so. This should at least be discussed.\n\n5) No thought seems to have been given to other ER trimming events such as those caused by the ERAP1, the ER aminopeptidase that is well known to trim antigenic peptides and influence presentation. Selective effects of ERAP1 trimming could change the outcome of actual peptides presented on the cell surface. Because the analysis carried out is of DNA sequences, rather than of the presented peptides discrepancies might be explained by differential processing of antigenic precursors. Again, this needs to be discussed.\n\n6) The original model system was developed in RMA/S cells, but in later experiments included MCA cells that were rendered TAP2-deficient by targeted mutation. Is peptide presentation in two cell types comparable? Especially if there are differences in ERAP1 expression among the two cell types.\n\n7) How the authors compute the relative frequency of minigenes in the library is key to the analysis but it is unclear how this was done. Is it possible that results could be skewed by the number of viral integration events or amplification errors?\n",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bb35e0a2-4a7b-4f4d-8a21-eb626995b3ba",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C1",
+      "claim": "Tumors often co-exist with T cells that recognize somatically mutated peptides presented by cancer cells on major histocompatibility complex I (MHC-I).",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors often co-exist with T cells that recognize somatically mutated peptides presented by cancer cells on major histocompatibility complex I (MHC-I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about tumor immunology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "7d7cfe3e-d395-40ed-b412-936eabb075fe",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C2",
+      "claim": "Immunogenic tumor antigens do not lead to immune-mediated cell rejection when the fraction of cells bearing each antigen ('clonal fraction') is low.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we show that immunogenic tumor antigens do not lead to immune-mediated cell rejection when the fraction of cells bearing each antigen ('clonal fraction') is low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experiments described in the manuscript, supported by data from library screens and flow cytometry experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "002c9a62-fcbe-4ede-ac4d-2047a49141cd",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C3",
+      "claim": "The clonal fraction necessary to lead to rejection of immunogenic tumor subclones depends on the antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the clonal fraction necessary to lead to rejection of immunogenic tumor subclones depends on the antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from experiments showing different rejection thresholds for different antigens (SIINFEKL, TAYRYHLL, SNFVSAGI).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "ea4c0d2d-3948-4157-bdf8-ddae2d5c4976",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C4",
+      "claim": "Tumor neoantigen heterogeneity has an underappreciated impact on immune elimination of cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that tumor neoantigen heterogeneity has an underappreciated impact on immune elimination of cancer cells and has implications for the design of immunotherapeutics such as cancer vaccines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings combined with inference about the broader implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "641ad90e-6dd6-4b8a-8f1f-d1f73868bcc0",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C5",
+      "claim": "Human cancers bear uniquely distinguishable features on the surface of their cells in the form of neoantigens, which are peptides derived from mutated, foreign or oncofetal proteins that are presented in complex with major histocompatibility complex I (MHC-I) molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Human cancers bear uniquely distinguishable features on the surface of their cells in the form of neoantigens, which are peptides derived from mutated, foreign or oncofetal proteins that are presented in complex with major histocompatibility complex I (MHC-I) molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about cancer neoantigens.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "0927f1f9-a56e-4c9e-b863-18e86f33996d",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C6",
+      "claim": "Neoantigens are short, 8\u201311 amino acid fragments that specifically mark cancer cells and activate potent immune responses that can lead to effective anti-cancer therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "These short, 8\u201311 amino acid fragments specifically mark cancer cells and activate potent immune responses that can lead to effective anti-cancer therapy (Tran et al., 2014; Rosenberg and Restifo, 2015; Zacharakis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "145bb312-e0cd-4b6c-a41e-4238624ac819",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C7",
+      "claim": "The existence of T cells that recognize neoantigens is often not sufficient to eliminate tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the existence of T cells that recognize neoantigens is often not sufficient to eliminate tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the paradox of tumor immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "34d4d2f7-7901-47b0-93c0-c5e0bf93c77b",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C8",
+      "claim": "Karl Hellstr\u00f6m first described the coexistence of tumor-specific lymphocytes together with cancer cells in human solid tumors as a paradox 50 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Karl Hellstr\u00f6m first described the coexistence of tumor-specific lymphocytes together with cancer cells in human solid tumors as a paradox 50 years ago (Hellstr\u00f6m et al., 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "65b1af3b-24e9-4923-891f-edee76150613",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C9",
+      "claim": "Sporadic tumors occurring in aged or carcinogen-treated mice induce strong T cell responses only when transferred into new hosts, thereby preventing engraftment.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, an analogously enigmatic observation has been made that sporadic tumors occurring in aged or carcinogen-treated mice induce strong T cell responses only when transferred into new hosts, thereby preventing engraftment (Heike et al., 1994; Dubey et al., 1997; Shankaran et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "e3ce65cc-951c-4c88-9fa3-cae58159baf5",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C10",
+      "claim": "The increased rate of tumor formation in immunocompromised individuals has led to the hypothesis that the immune system can and does eliminate some tumors, particularly virally induced tumors, before they become clinically apparent.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased rate of tumor formation in immunocompromised individuals has led to the hypothesis that the immune system can and does eliminate some tumors, particularly virally induced tumors, before they become clinically apparent (Schulz, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "c1a83f8d-150c-4d7d-b7b6-cd4b01e5b087",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C11",
+      "claim": "The PresentER antigen minigene is comprised of an endoplasmic reticulum (ER) signal sequence followed by a short peptide/epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "The PresentER antigen minigene is comprised of an endoplasmic reticulum (ER) signal sequence followed by a short peptide/epitope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental system developed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "8f31aead-ffd8-43fb-9050-6c7d4a7cf332",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C12",
+      "claim": "Expression of the peptide and its display on MHC-I does not require proteasomal degradation or peptide processing, thus enabling precise definition of the exact epitope displayed to the immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the peptide and its display on MHC-I does not require proteasomal degradation or peptide processing, thus enabling precise definition of the exact epitope displayed to the immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the PresentER system's mechanism and advantage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "1a4965c8-496b-44b0-8b1d-c8271ab18a61",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C13",
+      "claim": "Transporter associated with antigen presentation (Tap) deficient cell lines expressing PresentER antigen minigenes lead to surface presentation of the encoded MHC-I peptide, detectable by multiple modalities, including fluorescently labeled antibodies directed to specific MHC-I ligands, mass spectrometry based immunopeptidomics and antigen-specific T cell reactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously described (Gejman, 2018a), Transporter associated with antigen presentation (Tap) deficient cell lines expressing PresentER antigen minigenes lead to surface presentation of the encoded MHC-I peptide, detectable by multiple modalities, including fluorescently labeled antibodies directed to specific MHC-I ligands, mass spectrometry based immunopeptidomics and antigen-specific T cell reactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work and describes experimental validation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "95b99d7b-7d85-423d-97ce-d3fad561c7d4",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C14",
+      "claim": "Endogenously expressed MHC-I tumor antigens are presented on the cell surface at several hundred to several thousand sites per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously we, and others, had shown that endogenously expressed MHC-I tumor antigens are presented on the cell surface at several hundred to several thousand sites per cell (Dao et al., 2013; Sergeeva et al., 2011; Mathias et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "89e54777-ad42-407b-86dc-f3f4ceeae033",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C15",
+      "claim": "There were on average 3500 binding sites per RMA/S cell expressing PresentER-SIINFEKL.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a radiolabeled TCR mimic antibody (25-D1.16) reactive with SIINFEKL/H-2Kb, we demonstrated that there were on average 3500 binding sites per RMA/S cell expressing PresentER-SIINFEKL, compared with ~90 sites on cells expressing PresentER-MSIIFFLPL, suggesting that the PresentER system allows display of the epitopes in a relatively physiologic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from radioimmunoassay experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "aee58d88-8992-4848-a2b6-08ce3fe607e0",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C16",
+      "claim": "Tumors expressing known non-immunogenic peptides grew, while tumors expressing known immunogenic peptides were rejected in some or most animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors expressing known non-immunogenic peptides grew, while tumors expressing known immunogenic peptides were rejected in some or most animals (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from in vivo tumor experiments shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "88992fe1-cc6b-400e-86e2-ed27010a061d",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C17",
+      "claim": "At 7 days after tumor injection, T cells specific for the chicken ovalbumin peptide SIINFEKL could be detected in tumor draining lymph nodes of animals injected with PresentER-SIINFEKL expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At 7 days after tumor injection, T cells specific for the chicken ovalbumin peptide SIINFEKL could be detected in tumor draining lymph nodes of animals injected with PresentER-SIINFEKL expressing cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from flow cytometry analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "a51ad3cb-4f33-4490-aed7-22536864f6aa",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C18",
+      "claim": "Haemotoxylin and Eosin (H and E) staining of regressing PresentER-SIINFEKL tumors showed lymphocytic infiltration with hyalin rich fibrin deposits, indicating cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Haemotoxylin and Eosin (H and E) staining of regressing PresentER-SIINFEKL tumors showed lymphocytic infiltration with hyalin rich fibrin deposits, indicating cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a histological observation from H&E staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "479b296a-7500-487e-9d85-6aef6ade4a89",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C19",
+      "claim": "Tumors with PresentER-FEKIILSN (a non-MHC-I binding peptide) were well-vascularized, highly cellular and with trace lymphocytic infiltration.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, tumors with PresentER-FEKIILSN (a non-MHC-I binding peptide) were well-vascularized, highly cellular and with trace lymphocytic infiltration (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a histological observation from H&E staining shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "ba74164a-75f5-4bf9-a9ea-22823dfbe994",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C20",
+      "claim": "SIINFEKL tumors were not rejected in Rag-/- animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to verify that the mechanism of tumor rejection was indeed T cell dependent, we injected Rag-/- animals with SIINFEKL or FEKIILSN positive tumors and confirmed that SIINFEKL tumors were not rejected (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from tumor growth experiments in Rag-/- mice shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "40a5b086-4fa3-4974-990a-b1cca6343308",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C21",
+      "claim": "RMA/S tumors expressing PresentER antigen minigenes can recapitulate the known immunogenicity of individual mouse MHC-I ligands in a T cell dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that RMA/S tumors expressing PresentER antigen minigenes can recapitulate the known immunogenicity of individual mouse MHC-I ligands in a T cell dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "aa348654-832e-4b89-aa4e-54b3bf7d8483",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C22",
+      "claim": "The immunogenic SIINFEKL, SIYRYYGL and TAYRYHLL expressing tumors were rejected, but the non-immunogenic FEKIILSN, EQYKFYSV and TWHRYHLL tumors found on the contralateral flank were not.",
+      "claim_type": "EXPLICIT",
+      "source": "The immunogenic SIINFEKL, SIYRYYGL and TAYRYHLL expressing tumors were rejected, but the non-immunogenic FEKIILSN, EQYKFYSV and TWHRYHLL tumors found on the contralateral flank were not (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from dual-flank tumor experiments shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "23fcb937-96fa-4ded-a438-c7409aa5012f",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C23",
+      "claim": "Tumor rejection is local and an effective immune response to an immunogenic tumor does not affect the growth of a non-immunogenic tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that tumor rejection is local and that an effective immune response to an immunogenic tumor does not affect the growth of a non-immunogenic tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the dual-flank tumor experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "18a29760-88d2-4f6a-914d-1ed553e3033e",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C24",
+      "claim": "In tumors where PresentER-SIINFEKL cells were greater than 25% of a tumor, tumors were smaller and tumor rejection occurred more frequently, especially when tumors were comprised of \u226550% immunogenic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In tumors where PresentER-SIINFEKL cells were greater than 25% of a tumor, tumors were smaller and tumor rejection occurred more frequently, especially when tumors were comprised of \u226550% immunogenic cells (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from mixed tumor experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "8f67248b-923a-4bc6-97e2-60d434c23e81",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C25",
+      "claim": "Within a non-immunogenic (eGFP labeled) tumor, immunogenic (mCherry labeled) sub-populations were eliminated.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, within a non-immunogenic (eGFP labeled) tumor, immunogenic (mCherry labeled) sub-populations were eliminated (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from flow cytometry analysis of mixed tumors shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "7bc5e041-879b-43dc-8a33-8ab994ef9025",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C26",
+      "claim": "The immune system is capable of recognizing and selectively depleting immunogenic tumor subclones within the context of a largely non-immunogenic tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in this model, the immune system is capable of recognizing and selectively depleting immunogenic tumor subclones within the context of a largely non-immunogenic tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mixed tumor experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "9553172c-db02-4f99-9129-1be95dad9052",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C27",
+      "claim": "Immunoediting in vivo leading to loss of tumor clones with immunogenic neoantigen-encoding mutations has previously been observed in syngeneic mouse tumor models.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoediting in vivo leading to loss of tumor clones with immunogenic neoantigen-encoding mutations has previously been observed in syngeneic mouse tumor models (Matsushita et al., 2012; DuPage et al., 2012; DuPage et al., 2011), suggesting that this approach might be viable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "e28075ab-1706-4cf4-b233-47ddc79ac7ed",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C28",
+      "claim": "No minigenes were robustly depleted during growth in vivo in the library screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of minigene abundance in the tumor outgrowth with minigene abundance in the pre-tumor samples led to the surprising finding that no minigenes were robustly depleted during growth in vivo (Figure 3D and Figure 3\u2014figure supplement 2 and Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the library screen experiments shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "182260ce-e168-4dbb-9420-7552cb37c2f1",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C29",
+      "claim": "Minigenes that were abundant in the library at time of injection maintained their abundance despite in vivo growth of the tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "Some minigenes that were not abundant in the library (<1/10,000) at the time of injection were depleted or dropped out entirely in the tumor due simply to stochastic drop-out; however, minigenes that were abundant in the library at time of injection maintained their abundance despite in vivo growth of the tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the library screen data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "f987043c-8435-49a8-805a-554f4f085d9c",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C30",
+      "claim": "Even positive control minigenes encoding strongly immunogenic peptides were not depleted in the library context.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, even positive control minigenes encoding strongly immunogenic peptides (orange points) were not depleted in this context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key observation from the library screen experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "a54d32ad-e223-4186-b859-3edf42b84594",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C31",
+      "claim": "The immunogenic controls SIINFEKL, VTFVFAGL and SNFVFAGI were found at 0.005\u20130.013% of cells before injection into mice, which correspond to between 250 and 650 cells injected out of 5 \u00d7 10^6.",
+      "claim_type": "EXPLICIT",
+      "source": "The immunogenic controls SIINFEKL, VTFVFAGL and SNFVFAGI were found at 0.005\u20130.013% of cells before injection into mice, which correspond to between 250 and 650 cells injected out of 5 \u00d7 106.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative analysis of the library composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "7e08e4ef-8c9c-4f14-af91-7a512d7cf94f",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C32",
+      "claim": "The number of cells expressing the immunogenic antigens upon injection is very low and thus analogous to the number of cells that are present during early tumor development, when immunogenic transformed cells first arise.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of cells expressing the immunogenic antigens upon injection is very low and thus analogous to the number of cells that are present during early tumor development, when immunogenic transformed cells first arise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the experimental conditions to early tumorigenesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "dc2fb852-fcca-4776-a531-7c4b0d290602",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C33",
+      "claim": "Vaccination with the library yielded detectable T cell populations specific to the immunogenic peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the immunogenic peptides found in the library showed an increased number of CD44+/tetramer+ CD8 T cells, while the other two peptides did not show significant changes (Figure 4B). Therefore, vaccination with the library yielded detectable T cell populations specific to the immunogenic peptides.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from tetramer staining experiments shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "63875984-7a1f-4d04-90ea-097bb4706252",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C34",
+      "claim": "Slower tumor growth was noted in the vaccinated as compared to the non-vaccinated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccinated and non-vaccinated mice were then challenged with 5 \u00d7 106 RMA/S cells bearing the wild type peptide library. Slower tumor growth was noted in the vaccinated as compared to the non-vaccinated mice, suggesting that a vaccine-related anti-tumor effect may have occurred (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from tumor growth experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "ae39664f-3f86-4c76-b116-35ec17a3b2e6",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C35",
+      "claim": "Neither vaccinated nor unvaccinated animals showed depletion of immunogenic control minigenes in relation to the non-immunogenic control minigenes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither vaccinated nor unvaccinated animals showed depletion of immunogenic control minigenes in relation to the non-immunogenic control minigenes (Figure 4D\u2013F and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the vaccination and challenge experiments shown in Figure 4D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "c6049446-2e19-4225-b11d-757d73d47999",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C36",
+      "claim": "Antigen-specific immunity was not observed in response to prophylactic vaccination in the library setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although slower tumor growth was noted, antigen-specific immunity was not observed in response to prophylactic vaccination in the library setting, suggesting a possible response to some other, broadly expressed, cellular antigens not represented in the peptide library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the vaccination experiments with speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "b0e650db-1217-40b3-8b09-f8512555db91",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C37",
+      "claim": "Tumor cells bearing the immunogenic peptides SIINFEKL and TAYRYHLL were depleted when they comprised as little as 1% of the tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to their proportion upon engraftment, tumor cells bearing the immunogenic peptides SIINFEKL and TAYRYHLL were depleted when they comprised as little as 1% of the tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the clonal fraction threshold experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "bb198273-688d-4cea-803b-8e8d2142eaf0",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C38",
+      "claim": "Below 1%, depletion of cells bearing SIINFEKL and TAYRYHLL could not be detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Below 1%, depletion of cells bearing these two minigenes could not be detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the clonal fraction threshold experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "9c762873-886c-4d3f-9898-6bf2960a8ad7",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C39",
+      "claim": "Depletion of cells bearing the SNFVSAGI peptide could be reliably detected at 50% and in some tumors at 10%, however depletion could not be detected when the SNFVSAGI cells were found at less than 10% of the tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of cells bearing the SNFVSAGI peptide could be reliably detected at 50% and in some tumors at 10%, however depletion could not be detected when the SNFVSAGI cells were found at less than 10% of the tumor (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the clonal fraction threshold experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "fae11ded-9d0a-43d7-8ce1-3f718ac03440",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C40",
+      "claim": "Immunogenic tumor subclones can persist within a tumor and rejection or persistence is dependent on tumor cell percentage of the total tumor mass during tumorigenesis, and not immunogenicity of the cell alone.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are surprising, as they indicate that immunogenic tumor subclones can persist within a tumor and that rejection or persistence is dependent on tumor cell percentage of the total tumor mass during tumorigenesis, and not immunogenicity of the cell alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the clonal fraction threshold experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "bb566c52-3d96-4058-a5ff-83a81f06369c",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C41",
+      "claim": "Robust depletion of cells bearing immunogenic peptide minigenes did not occur when tumor material was transferred from Rag-/- mice to WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "After 17 days, the transferred tumors were harvested and sequenced. Once again, as we observed in both naive and vaccinated mice, robust depletion of cells bearing immunogenic peptide minigenes did not occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the tumor transfer experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "af959b4a-316b-410a-acd7-d7ccf165813e",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C42",
+      "claim": "Overall minigene abundance was highly correlated between the tumor material transferred and the tumors harvested 17 days later in both WT and Rag-/- mice and in both the wild type and mutant libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall minigene abundance was highly correlated between the tumor material transferred and the tumors harvested 17 days later in both WT and Rag-/- mice and in both the wild type and mutant libraries (Figure 5D and Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the tumor transfer experiments shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "354b9545-77dc-49a8-94ef-0114c7ed834a",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C43",
+      "claim": "It is the percentage of tumor cells bearing each antigen within a tumor and not the total quantity of antigen that determines if an effective immune response occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal that it is the percentage of tumor cells bearing each antigen within a tumor and not the total quantity of antigen that determines if an effective immune response occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the tumor transfer experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "03ce29d7-bb6d-4239-a12e-aa740fd75ae6",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C44",
+      "claim": "The immune system is capable of recognizing cancer cells as foreign based on the presentation of altered or unusual MHC-I ligands on the surface of tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The immune system is capable of recognizing cancer cells as foreign based on the presentation of altered or unusual MHC-I ligands on the surface of tumor cells\u2014a phenomenon that has been leveraged for cancer therapies such as immune checkpoint blockade and adoptive cell transfer (Tran et al., 2014; Rosenberg and Restifo, 2015; Zacharakis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "48ba3ea8-4c9b-45f8-a98d-e10616a5e472",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C45",
+      "claim": "The immune system fails to clear immunogenic, clinically detected tumors on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, the immune system fails to clear immunogenic, clinically detected tumors on its own, as has been paradoxically noted for decades (Hellstr\u00f6m et al., 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "e1abdf04-7d70-480d-8599-02b7216bc9a8",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C46",
+      "claim": "There is epidemiologic evidence that immunocompromised patients develop more tumors, suggesting that the immune system may prevent some tumors from ever manifesting clinically.",
+      "claim_type": "EXPLICIT",
+      "source": "There is epidemiologic evidence that immunocompromised patients develop more tumors, suggesting that the immune system may prevent some tumors from ever manifesting clinically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge with inference about immune surveillance.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "e8142a47-cec6-422d-836d-e2b3229e2699",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C47",
+      "claim": "Mutations accumulate at high rates in sun-damaged, but otherwise normal, tissue at levels comparable to cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent data also suggests that mutations accumulate at high rates in sun-damaged, but otherwise normal, tissue at levels comparable to cancer cells (Martincorena et al., 2015) and that tumors face overall little negative selective pressure (Martincorena et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "039b61d2-6164-42a4-8bcf-3c7bc7b62b5a",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C48",
+      "claim": "Tumors face overall little negative selective pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent data also suggests that mutations accumulate at high rates in sun-damaged, but otherwise normal, tissue at levels comparable to cancer cells (Martincorena et al., 2015) and that tumors face overall little negative selective pressure (Martincorena et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "d9489e3f-9645-427a-94ab-73739b0b2dee",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C49",
+      "claim": "Immune escape by loss of MHC, when it occurs, is a late and subclonal event.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, immune escape by loss of MHC (Masuda et al., 2007; Cabrera et al., 2000; Gudmundsd\u00f3ttir et al., 2000; So et al., 2005; Shukla et al., 2015), when it occurs, is a late and subclonal event (McGranahan et al., 2017; Turajlic et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "08add595-451d-464a-9eb6-990b2851e5dc",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C50",
+      "claim": "If T cell surveillance were highly effective during early tumor development, negative selective pressure would be notable in the evolutionary trajectories of tumors and HLA loss would be expected to occur early, frequently and in a clonal manner.",
+      "claim_type": "EXPLICIT",
+      "source": "If T cell surveillance were highly effective during early tumor development, negative selective pressure would be notable in the evolutionary trajectories of tumors and HLA loss would be expected to occur early, frequently and in a clonal manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about what would be expected if immune surveillance were highly effective.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "d5eacd29-db77-490a-8833-d5be0957046c",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C51",
+      "claim": "Routine T cell immunosurveillance of nascent cancer cells does occur, but is limited by unknown factors, and recognition of tumors as foreign occurs mostly later in tumor development.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret the data from human and animal experiments to suggest that routine T cell immunosurveillance of nascent cancer cells does occur, but is limited by unknown factors, and that recognition of tumors as foreign occurs mostly later in tumor development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data with speculation about the timing of immune recognition.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "f418d5a0-ce3c-44e2-8edc-0285faa5ae0b",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C52",
+      "claim": "Tumor heterogeneity is an explicit factor leading to failure of effective immunity in a tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report the first evidence that tumor heterogeneity is an explicit factor leading to failure of effective immunity in a tumor and that the maximum level of heterogeneity tolerable before immune escape occurs is dependent on the antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "d86a45a7-bf8b-439b-bd43-6e9bd6991442",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C53",
+      "claim": "The maximum level of heterogeneity tolerable before immune escape occurs is dependent on the antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report the first evidence that tumor heterogeneity is an explicit factor leading to failure of effective immunity in a tumor and that the maximum level of heterogeneity tolerable before immune escape occurs is dependent on the antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "d6259a46-3a06-4a30-b3dc-de20c39acd17",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C54",
+      "claim": "Immune checkpoints or active tumor suppression do not explain the observed immune evasion because such mechanisms would be expected to suppress T cell killing irrespective of the fraction of tumor cells that expresses an immunogenic epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "Immune checkpoints or active tumor suppression do not explain the observed immune evasion because such mechanisms would be expected to suppress T cell killing irrespective of the fraction of tumor cells that expresses an immunogenic epitope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference ruling out alternative explanations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "ed0a124b-d0f4-4493-bbc8-153da950e2ce",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C55",
+      "claim": "Low levels of antigen presentation may lead to ineffective cross-presentation of antigen in the tumor draining lymph node, thus limiting T cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Low levels of antigen presentation may lead to ineffective cross-presentation of antigen in the tumor draining lymph node, thus limiting T cell activation (Spiotto et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "caf66f11-8b23-4b15-a1a4-73da3a491e51",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C56",
+      "claim": "Low levels of immunogenic epitopes of oncogenic drivers presented on transformed cells early during tumorigenesis (at the premalignant stage) were shown to induce a program of cellular hypo-responsiveness in tumor-specific (oncogene-specific) CD8 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In animal models, low levels of immunogenic epitopes of oncogenic drivers presented on transformed cells early during tumorigenesis (at the premalignant stage) were shown to induce a program of cellular hypo-responsiveness in tumor-specific (oncogene-specific) CD8 T cells (Willimsky and Blankenstein, 2005; Schietinger et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "bf0b5d6b-04a8-4d06-a180-ecde23b31c4d",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C57",
+      "claim": "The mechanism of immune escape in this model is either ineffective T cell activation or failure of activated T cells to identify and kill antigen-positive cells present at low abundance within a sea of cells displaying irrelevant antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the mechanism of immune escape in this model is either ineffective T cell activation or failure of activated T cells to identify and kill antigen-positive cells present at low abundance within a sea of cells displaying irrelevant antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "bde5fd27-84ff-48ce-b8c6-e28163226f7b",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C58",
+      "claim": "Tumors with high mutation burdens respond well to checkpoint blockade.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors with high mutation burdens\u2014which are more likely to have immunogenic neoantigens (Van Allen et al., 2015; Yarchoan et al., 2017; Snyder et al., 2014)\u2014and tumors that have mismatch repair (MMR) deficiency or microsatellite instability (MSI-H) respond well to checkpoint blockade (Le et al., 2015; Le et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "d5aedbd0-5b12-452a-809c-e7bf9bb8a62f",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C59",
+      "claim": "Tumors that have mismatch repair (MMR) deficiency or microsatellite instability (MSI-H) respond well to checkpoint blockade.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors with high mutation burdens\u2014which are more likely to have immunogenic neoantigens (Van Allen et al., 2015; Yarchoan et al., 2017; Snyder et al., 2014)\u2014and tumors that have mismatch repair (MMR) deficiency or microsatellite instability (MSI-H) respond well to checkpoint blockade (Le et al., 2015; Le et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "ba902af3-454e-467d-a55a-1a6931b9f544",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C60",
+      "claim": "Syngeneic tumors with MMR gene knock outs accumulate mutations over time and grow more slowly in wild type mice than do tumors without MMR deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse models, syngeneic tumors with MMR gene knock outs accumulate mutations over time and grow more slowly in wild type mice than do tumors without MMR deficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from mouse models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "0e34d6ce-153e-40ee-ad8d-7b26a39879af",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C61",
+      "claim": "Cell lines derived by sub-cloning of MMR deficient lines grow more slowly or are rejected entirely.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell lines derived by sub-cloning of MMR deficient lines\u2014thus increasing the clonal fractions of each neoantigen\u2014grow more slowly or are rejected entirely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from mouse models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "b58b07ad-3a9a-4550-bfae-0b135bcaf05c",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C62",
+      "claim": "MMR inactivation in tumors leads to better responses to checkpoint blockade than the parental tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, MMR inactivation in tumors leads to better responses to checkpoint blockade than the parental tumors (Germano et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "4317c3a9-207f-437f-bc2a-9f89545215e5",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C63",
+      "claim": "Survival is inversely related to tumor neoantigen clonality in human patients with lung adenocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, survival is inversely related to tumor neoantigen clonality in human patients with lung adenocarcinoma (McGranahan et al., 2016; Reuben et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "da62ed7e-8db4-41e6-b98c-3f6f471cc1da",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C64",
+      "claim": "Patients whose tumors bear high numbers of subclonal (or branched) neoantigens have increased levels of relapse and worse survival than those patients with more homogenous tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients whose tumors bear high numbers of subclonal (or branched) neoantigens have increased levels of relapse and worse survival than those patients with more homogenous tumors (McGranahan et al., 2016; Reuben et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "e4b3b401-70ae-4baa-8b00-d1c2881b856d",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C65",
+      "claim": "Response to checkpoint blockade in lung and skin tumors is associated with lower levels of intratumoral heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Response to checkpoint blockade in lung and skin tumors is also associated with lower levels of intratumoral heterogeneity (McGranahan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "a8f3956b-384a-4f87-a03a-9b79e450b51d",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C66",
+      "claim": "While total neoantigen burden is important for long term survival and response to checkpoint blockade, neoantigen clonality is an additional important factor in mediating tumor regression.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of these data are highly suggestive that while total neoantigen burden is important for long term survival and response to checkpoint blockade, neoantigen clonality is an additional important factor in mediating tumor regression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from multiple cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "85014349-9316-42db-b5ee-80b8278f838a",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C67",
+      "claim": "The discovery that intratumoral heterogeneity prevents effective T cell responses has implications for the development of therapeutic cancer vaccines, checkpoint blockade, adoptive T cell therapies, and studies of tumor immunogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery that intratumoral heterogeneity prevents effective T cell responses has implications for the development of therapeutic cancer vaccines, checkpoint blockade, adoptive T cell therapies, and studies of tumor immunogenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the broader implications of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "cca91a27-ef51-4c16-bf0d-726952fb263f",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C68",
+      "claim": "Subclones with very low clonal fraction yet distinct intratumoral functions may be important to tumor survival and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, recent data shows that subclones with very low clonal fraction yet distinct intratumoral functions may be important to tumor survival and growth (Vinci et al., 2018)\u2014suggesting that even low abundance tumor subclones may be important targets for immunotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "896da4f0-c6ae-463d-a6d6-a4dca93cd791",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C69",
+      "claim": "Even low abundance tumor subclones may be important targets for immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, recent data shows that subclones with very low clonal fraction yet distinct intratumoral functions may be important to tumor survival and growth (Vinci et al., 2018)\u2014suggesting that even low abundance tumor subclones may be important targets for immunotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from cited research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "130f8c7d-57fc-45ca-a667-84ad1c67269b",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C70",
+      "claim": "Small early cancers generally do not bear immunogenic epitopes derived from their limited number of driver oncogenic proteins and few passenger mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, we may speculate on one mechanism for cancer escape and progression, in which small early cancers generally do not bear immunogenic epitopes derived from their limited number of driver oncogenic proteins and few passenger mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a mechanism of cancer escape.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "82329f2d-13b9-4037-ab86-2d331808ae41",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C71",
+      "claim": "As tumors evolve, the neoantigens appearing in subclones do not reach a clonal fraction high enough to breach their antigen-specific immunogenicity thresholds, thereby allowing escape of these otherwise immunogenic clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Then as the tumors evolve, the neoantigens appearing in subclones do not reach a clonal fraction high enough to breach their antigen-specific immunogenicity thresholds, thereby allowing escape of these otherwise immunogenic clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a mechanism of cancer escape based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "064f9e1d-4845-49f8-9aa0-f0bbad8eef98",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C72",
+      "claim": "Sun-damaged and aged healthy tissue is replete with mutations, sometimes reaching frequencies seen in human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "This model may help to explain why sun-damaged and aged healthy tissue is replete with mutations, sometimes reaching frequencies seen in human cancers (Martincorena et al., 2015; Risques and Kennedy, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "8c8c17b6-475a-4568-a5b3-5bb3695f0081",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "claim_id": "C73",
+      "claim": "Effective T cell immunity is restrained in the context of healthy tissue and growing tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Cumulatively, these findings suggest that effective T cell immunity is restrained in the context of healthy tissue and growing tumors and paint a picture of T cell immunogenicity that is poorly captured by existing models of tissue immunosurveillance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings and cited research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d5c38a36-058f-413a-840d-72ec6eb4991d",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The PresentER system enables physiologic presentation of defined MHC-I peptides on tumor cells and recapitulates known immunogenicity patterns. RMA/S cells expressing PresentER minigenes display peptides at physiologic levels (3500 sites/cell for SIINFEKL), and tumors expressing known immunogenic peptides are rejected in a T cell-dependent manner while non-immunogenic peptides allow tumor growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C21 collectively demonstrate that the PresentER system is validated through multiple modalities (radioimmunoassay, flow cytometry, histology, Rag-/- controls). The system displays peptides at physiologically relevant levels and accurately distinguishes immunogenic from non-immunogenic peptides in vivo, providing strong experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "09476357-35c2-40e8-9aa7-af9a708c9538",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Immune responses to immunogenic tumor antigens are local and can selectively eliminate immunogenic subclones within heterogeneous tumors when the immunogenic fraction exceeds ~25-50%. Dual-flank experiments show no abscopal effect, and mixed tumor experiments demonstrate selective depletion of immunogenic (mCherry+) cells within predominantly non-immunogenic (eGFP+) tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 provide converging evidence from dual-flank and mixed tumor experiments with flow cytometric validation. The data clearly show fraction-dependent rejection and selective subclone elimination, though the exact threshold varies by experimental design. The conclusions are well-supported by the experimental data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "7a4c80f1-e3e7-4826-93dc-3f412c0a16f9",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In pooled library screens with 5,000 MHC-I peptides, no minigenes were robustly depleted during tumor growth in vivo, including strongly immunogenic positive controls (SIINFEKL, VTFVFAGL, SNFVFAGI) present at 0.005-0.013% (250-650 cells out of 5\u00d710^6). This low clonal fraction is analogous to early tumor development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 describe the central surprising finding from the library screen experiments. The data in Figure 3D clearly show maintenance of minigene abundance including positive controls. The quantification of cell numbers and analogy to early tumorigenesis is well-reasoned, though C32 involves some inference about biological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "1dfdad42-36ed-428d-86b6-6f75bd846992",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prophylactic vaccination with irradiated library-expressing cells generated detectable antigen-specific T cells and slowed tumor growth, but did not result in antigen-specific depletion of immunogenic minigenes from tumors. The slower growth may reflect responses to non-library antigens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 describe vaccination experiments with mixed outcomes. While T cell responses were detected (C33) and tumor growth slowed (C34), the lack of specific minigene depletion (C35) is clearly shown in Figure 4D-F. The speculation about non-library antigens (C36) is reasonable given the data, though the mechanism remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "08ac29d9-965e-48b6-999f-1ac0df02c051",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Immunogenic tumor subclones are depleted only above antigen-specific clonal fraction thresholds: SIINFEKL and TAYRYHLL at \u22651%, while SNFVSAGI requires \u226510-50%. Below these thresholds, immunogenic subclones persist despite their inherent immunogenicity, demonstrating that rejection depends on clonal fraction, not immunogenicity alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 present the key mechanistic finding with clear experimental support from Figure 5B. The antigen-specific thresholds are demonstrated through systematic dilution experiments with flow cytometric quantification. Statistical analysis (t-tests, p<0.001) supports the threshold determinations, making this a well-supported result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "0f52582e-9f81-46bb-9f96-9f180aed8da9",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Tumor transfer experiments from Rag-/- to WT mice with 40-100 fold more cells per antigen showed no robust depletion of immunogenic minigenes. Minigene abundance remained highly correlated between transferred and harvested tumors, demonstrating that clonal fraction percentage, not total antigen quantity, determines immune response effectiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 describe experiments that distinguish between total antigen amount and clonal fraction. Figure 5D shows high correlation in both WT and Rag-/- recipients. This clever experimental design directly tests the hypothesis and the data clearly support the conclusion that percentage, not absolute quantity, matters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "d6b22b39-b257-4f44-bf8c-39f104e03151",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Tumor neoantigen heterogeneity prevents effective immune elimination when immunogenic antigens are present at low clonal fractions, and the threshold for immune escape is antigen-dependent. This represents the first evidence that intratumoral heterogeneity is an explicit factor in immune evasion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C52-C53 represent the primary conclusions synthesized from all experimental results. The data from library screens, mixed tumor experiments, and threshold determinations collectively support these claims. While the claim of being 'first evidence' (C52) is strong, the experimental support is robust across multiple experimental systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "cda7fc18-938a-4dcc-a85a-156b9122e52c",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The mechanism of immune escape at low clonal fractions does not involve immune checkpoints or active suppression (which would act regardless of clonal fraction). Possible mechanisms include ineffective cross-presentation in lymph nodes, T cell hypo-responsiveness from low antigen levels, or failure of activated T cells to find rare antigen-positive cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C57 present mechanistic speculation. While C54 provides logical reasoning to exclude checkpoint mechanisms, C55-C57 are explicitly speculative and cite prior work rather than testing mechanisms directly. The proposed mechanisms are plausible but lack direct experimental validation in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "5facd8a6-60cb-4352-8637-d5c76aa98f62",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Clinical and preclinical data from prior studies show that tumor mutation burden, MMR deficiency, and neoantigen clonality correlate with checkpoint blockade response and patient survival. Tumors with high subclonal neoantigen burden have worse outcomes, while lower intratumoral heterogeneity associates with better checkpoint blockade responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C66 summarize established findings from cited literature. These are not new results from this study but rather contextualize the current findings within existing knowledge. The citations appear appropriate and the synthesis is reasonable, though the authors do not independently validate these prior findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "eeb672f2-8bd5-4672-b249-d432b9a99f5e",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The discovery that intratumoral heterogeneity prevents effective T cell responses has implications for cancer vaccine design, checkpoint blockade, adoptive T cell therapy, and suggests that even low-abundance tumor subclones may be important immunotherapy targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C69 draw reasonable inferences about therapeutic implications from the experimental findings. While these are forward-looking statements rather than tested hypotheses, they logically follow from the demonstrated relationship between clonal fraction and immune rejection. The connection to low-abundance functionally important subclones (C69) is supported by citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "b40d5df8-682e-455f-b307-155b2abead8d",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A proposed model suggests that small early cancers lack immunogenic epitopes, and as tumors evolve, subclonal neoantigens remain below antigen-specific immunogenicity thresholds, allowing immune escape. This may explain why mutated cells accumulate in sun-damaged and aged tissue, and suggests T cell immunity is restrained in both healthy tissue and growing tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 present a speculative model integrating the experimental findings with cited observations about mutation accumulation in normal tissue. While C70-C71 are explicitly speculative, they represent reasonable extrapolation from the data. C72-C73 connect to prior literature and synthesize a broader picture of immune surveillance limitations that is consistent with the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "95c73119-e856-4073-9685-48a7b6deeafd",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Established background knowledge: Tumors co-exist with neoantigen-specific T cells, yet these T cells often fail to eliminate tumors\u2014a paradox described 50 years ago. Neoantigens can activate potent immune responses in therapy, and immunocompromised individuals develop more tumors, suggesting some immune surveillance occurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C10 present well-established background knowledge supported by appropriate citations. These contextual claims accurately represent the field's understanding of tumor immunology and the central paradox motivating this study. No new experimental validation is needed as these are accepted facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "0ad2807f-4338-49d8-b384-2dac9dae5258",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Discussion of immune surveillance paradox: While the immune system can recognize cancer cells via MHC-I ligands, it fails to clear immunogenic tumors. Evidence suggests limited immune surveillance during early tumorigenesis, with MHC loss occurring late and subclonally. The authors interpret this to mean T cell surveillance occurs but is limited by unknown factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C51 synthesize prior knowledge (C44-C49) with logical inference (C50) and interpretation (C51). The citations support the factual claims about MHC loss timing and mutation accumulation. The interpretation in C51 is reasonable given the cited evidence, though it involves some speculation about the timing and effectiveness of immune surveillance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "d28d332b-54ed-4250-8696-6368132b8b80",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior studies have observed immunoediting in vivo leading to loss of tumor clones with immunogenic neoantigen-encoding mutations in syngeneic mouse models, suggesting that pooled screening approaches might be viable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 accurately cites prior work demonstrating immunoediting in mouse models. This provides precedent for the experimental approach used in this study. The citations appear appropriate and the inference about approach viability is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    },
+    {
+      "id": "fa1cedfc-df64-4241-8b40-d1066930de84",
+      "content_id": "fdcad7b3-95f2-4b7e-9033-504add61f661",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Recent data shows that subclones with very low clonal fraction yet distinct intratumoral functions may be important to tumor survival and growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 cites recent work about functionally important low-abundance subclones. This contextualizes why targeting low-abundance immunogenic subclones might be therapeutically relevant. The citation appears appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:28.121246Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c1a83f8d-150c-4d7d-b7b6-cd4b01e5b087",
+      "result_id": "d5c38a36-058f-413a-840d-72ec6eb4991d"
+    },
+    {
+      "claim_id": "8f31aead-ffd8-43fb-9050-6c7d4a7cf332",
+      "result_id": "d5c38a36-058f-413a-840d-72ec6eb4991d"
+    },
+    {
+      "claim_id": "1a4965c8-496b-44b0-8b1d-c8271ab18a61",
+      "result_id": "d5c38a36-058f-413a-840d-72ec6eb4991d"
+    },
+    {
+      "claim_id": "95b99d7b-7d85-423d-97ce-d3fad561c7d4",
+      "result_id": "d5c38a36-058f-413a-840d-72ec6eb4991d"
+    },
+    {
+      "claim_id": "89e54777-ad42-407b-86dc-f3f4ceeae033",
+      "result_id": "d5c38a36-058f-413a-840d-72ec6eb4991d"
+    },
+    {
+      "claim_id": "aee58d88-8992-4848-a2b6-08ce3fe607e0",
+      "result_id": "d5c38a36-058f-413a-840d-72ec6eb4991d"
+    },
+    {
+      "claim_id": "88992fe1-cc6b-400e-86e2-ed27010a061d",
+      "result_id": "d5c38a36-058f-413a-840d-72ec6eb4991d"
+    },
+    {
+      "claim_id": "a51ad3cb-4f33-4490-aed7-22536864f6aa",
+      "result_id": "d5c38a36-058f-413a-840d-72ec6eb4991d"
+    },
+    {
+      "claim_id": "479b296a-7500-487e-9d85-6aef6ade4a89",
+      "result_id": "d5c38a36-058f-413a-840d-72ec6eb4991d"
+    },
+    {
+      "claim_id": "ba74164a-75f5-4bf9-a9ea-22823dfbe994",
+      "result_id": "d5c38a36-058f-413a-840d-72ec6eb4991d"
+    },
+    {
+      "claim_id": "40a5b086-4fa3-4974-990a-b1cca6343308",
+      "result_id": "d5c38a36-058f-413a-840d-72ec6eb4991d"
+    },
+    {
+      "claim_id": "aa348654-832e-4b89-aa4e-54b3bf7d8483",
+      "result_id": "09476357-35c2-40e8-9aa7-af9a708c9538"
+    },
+    {
+      "claim_id": "23fcb937-96fa-4ded-a438-c7409aa5012f",
+      "result_id": "09476357-35c2-40e8-9aa7-af9a708c9538"
+    },
+    {
+      "claim_id": "18a29760-88d2-4f6a-914d-1ed553e3033e",
+      "result_id": "09476357-35c2-40e8-9aa7-af9a708c9538"
+    },
+    {
+      "claim_id": "8f67248b-923a-4bc6-97e2-60d434c23e81",
+      "result_id": "09476357-35c2-40e8-9aa7-af9a708c9538"
+    },
+    {
+      "claim_id": "7bc5e041-879b-43dc-8a33-8ab994ef9025",
+      "result_id": "09476357-35c2-40e8-9aa7-af9a708c9538"
+    },
+    {
+      "claim_id": "e28075ab-1706-4cf4-b233-47ddc79ac7ed",
+      "result_id": "7a4c80f1-e3e7-4826-93dc-3f412c0a16f9"
+    },
+    {
+      "claim_id": "182260ce-e168-4dbb-9420-7552cb37c2f1",
+      "result_id": "7a4c80f1-e3e7-4826-93dc-3f412c0a16f9"
+    },
+    {
+      "claim_id": "f987043c-8435-49a8-805a-554f4f085d9c",
+      "result_id": "7a4c80f1-e3e7-4826-93dc-3f412c0a16f9"
+    },
+    {
+      "claim_id": "a54d32ad-e223-4186-b859-3edf42b84594",
+      "result_id": "7a4c80f1-e3e7-4826-93dc-3f412c0a16f9"
+    },
+    {
+      "claim_id": "7e08e4ef-8c9c-4f14-af91-7a512d7cf94f",
+      "result_id": "7a4c80f1-e3e7-4826-93dc-3f412c0a16f9"
+    },
+    {
+      "claim_id": "dc2fb852-fcca-4776-a531-7c4b0d290602",
+      "result_id": "1dfdad42-36ed-428d-86b6-6f75bd846992"
+    },
+    {
+      "claim_id": "63875984-7a1f-4d04-90ea-097bb4706252",
+      "result_id": "1dfdad42-36ed-428d-86b6-6f75bd846992"
+    },
+    {
+      "claim_id": "ae39664f-3f86-4c76-b116-35ec17a3b2e6",
+      "result_id": "1dfdad42-36ed-428d-86b6-6f75bd846992"
+    },
+    {
+      "claim_id": "c6049446-2e19-4225-b11d-757d73d47999",
+      "result_id": "1dfdad42-36ed-428d-86b6-6f75bd846992"
+    },
+    {
+      "claim_id": "b0e650db-1217-40b3-8b09-f8512555db91",
+      "result_id": "08ac29d9-965e-48b6-999f-1ac0df02c051"
+    },
+    {
+      "claim_id": "bb198273-688d-4cea-803b-8e8d2142eaf0",
+      "result_id": "08ac29d9-965e-48b6-999f-1ac0df02c051"
+    },
+    {
+      "claim_id": "9c762873-886c-4d3f-9898-6bf2960a8ad7",
+      "result_id": "08ac29d9-965e-48b6-999f-1ac0df02c051"
+    },
+    {
+      "claim_id": "fae11ded-9d0a-43d7-8ce1-3f718ac03440",
+      "result_id": "08ac29d9-965e-48b6-999f-1ac0df02c051"
+    },
+    {
+      "claim_id": "bb566c52-3d96-4058-a5ff-83a81f06369c",
+      "result_id": "0f52582e-9f81-46bb-9f96-9f180aed8da9"
+    },
+    {
+      "claim_id": "af959b4a-316b-410a-acd7-d7ccf165813e",
+      "result_id": "0f52582e-9f81-46bb-9f96-9f180aed8da9"
+    },
+    {
+      "claim_id": "354b9545-77dc-49a8-94ef-0114c7ed834a",
+      "result_id": "0f52582e-9f81-46bb-9f96-9f180aed8da9"
+    },
+    {
+      "claim_id": "7d7cfe3e-d395-40ed-b412-936eabb075fe",
+      "result_id": "d6b22b39-b257-4f44-bf8c-39f104e03151"
+    },
+    {
+      "claim_id": "002c9a62-fcbe-4ede-ac4d-2047a49141cd",
+      "result_id": "d6b22b39-b257-4f44-bf8c-39f104e03151"
+    },
+    {
+      "claim_id": "ea4c0d2d-3948-4157-bdf8-ddae2d5c4976",
+      "result_id": "d6b22b39-b257-4f44-bf8c-39f104e03151"
+    },
+    {
+      "claim_id": "f418d5a0-ce3c-44e2-8edc-0285faa5ae0b",
+      "result_id": "d6b22b39-b257-4f44-bf8c-39f104e03151"
+    },
+    {
+      "claim_id": "d86a45a7-bf8b-439b-bd43-6e9bd6991442",
+      "result_id": "d6b22b39-b257-4f44-bf8c-39f104e03151"
+    },
+    {
+      "claim_id": "d6259a46-3a06-4a30-b3dc-de20c39acd17",
+      "result_id": "cda7fc18-938a-4dcc-a85a-156b9122e52c"
+    },
+    {
+      "claim_id": "ed0a124b-d0f4-4493-bbc8-153da950e2ce",
+      "result_id": "cda7fc18-938a-4dcc-a85a-156b9122e52c"
+    },
+    {
+      "claim_id": "caf66f11-8b23-4b15-a1a4-73da3a491e51",
+      "result_id": "cda7fc18-938a-4dcc-a85a-156b9122e52c"
+    },
+    {
+      "claim_id": "bf0b5d6b-04a8-4d06-a180-ecde23b31c4d",
+      "result_id": "cda7fc18-938a-4dcc-a85a-156b9122e52c"
+    },
+    {
+      "claim_id": "bde5fd27-84ff-48ce-b8c6-e28163226f7b",
+      "result_id": "5facd8a6-60cb-4352-8637-d5c76aa98f62"
+    },
+    {
+      "claim_id": "d5aedbd0-5b12-452a-809c-e7bf9bb8a62f",
+      "result_id": "5facd8a6-60cb-4352-8637-d5c76aa98f62"
+    },
+    {
+      "claim_id": "ba902af3-454e-467d-a55a-1a6931b9f544",
+      "result_id": "5facd8a6-60cb-4352-8637-d5c76aa98f62"
+    },
+    {
+      "claim_id": "0e34d6ce-153e-40ee-ad8d-7b26a39879af",
+      "result_id": "5facd8a6-60cb-4352-8637-d5c76aa98f62"
+    },
+    {
+      "claim_id": "b58b07ad-3a9a-4550-bfae-0b135bcaf05c",
+      "result_id": "5facd8a6-60cb-4352-8637-d5c76aa98f62"
+    },
+    {
+      "claim_id": "4317c3a9-207f-437f-bc2a-9f89545215e5",
+      "result_id": "5facd8a6-60cb-4352-8637-d5c76aa98f62"
+    },
+    {
+      "claim_id": "da62ed7e-8db4-41e6-b98c-3f6f471cc1da",
+      "result_id": "5facd8a6-60cb-4352-8637-d5c76aa98f62"
+    },
+    {
+      "claim_id": "e4b3b401-70ae-4baa-8b00-d1c2881b856d",
+      "result_id": "5facd8a6-60cb-4352-8637-d5c76aa98f62"
+    },
+    {
+      "claim_id": "a8f3956b-384a-4f87-a03a-9b79e450b51d",
+      "result_id": "5facd8a6-60cb-4352-8637-d5c76aa98f62"
+    },
+    {
+      "claim_id": "85014349-9316-42db-b5ee-80b8278f838a",
+      "result_id": "eeb672f2-8bd5-4672-b249-d432b9a99f5e"
+    },
+    {
+      "claim_id": "896da4f0-c6ae-463d-a6d6-a4dca93cd791",
+      "result_id": "eeb672f2-8bd5-4672-b249-d432b9a99f5e"
+    },
+    {
+      "claim_id": "130f8c7d-57fc-45ca-a667-84ad1c67269b",
+      "result_id": "b40d5df8-682e-455f-b307-155b2abead8d"
+    },
+    {
+      "claim_id": "82329f2d-13b9-4037-ab86-2d331808ae41",
+      "result_id": "b40d5df8-682e-455f-b307-155b2abead8d"
+    },
+    {
+      "claim_id": "064f9e1d-4845-49f8-9aa0-f0bbad8eef98",
+      "result_id": "b40d5df8-682e-455f-b307-155b2abead8d"
+    },
+    {
+      "claim_id": "8c8c17b6-475a-4568-a5b3-5bb3695f0081",
+      "result_id": "b40d5df8-682e-455f-b307-155b2abead8d"
+    },
+    {
+      "claim_id": "bb35e0a2-4a7b-4f4d-8a21-eb626995b3ba",
+      "result_id": "95c73119-e856-4073-9685-48a7b6deeafd"
+    },
+    {
+      "claim_id": "641ad90e-6dd6-4b8a-8f1f-d1f73868bcc0",
+      "result_id": "95c73119-e856-4073-9685-48a7b6deeafd"
+    },
+    {
+      "claim_id": "0927f1f9-a56e-4c9e-b863-18e86f33996d",
+      "result_id": "95c73119-e856-4073-9685-48a7b6deeafd"
+    },
+    {
+      "claim_id": "145bb312-e0cd-4b6c-a41e-4238624ac819",
+      "result_id": "95c73119-e856-4073-9685-48a7b6deeafd"
+    },
+    {
+      "claim_id": "34d4d2f7-7901-47b0-93c0-c5e0bf93c77b",
+      "result_id": "95c73119-e856-4073-9685-48a7b6deeafd"
+    },
+    {
+      "claim_id": "65b1af3b-24e9-4923-891f-edee76150613",
+      "result_id": "95c73119-e856-4073-9685-48a7b6deeafd"
+    },
+    {
+      "claim_id": "e3ce65cc-951c-4c88-9fa3-cae58159baf5",
+      "result_id": "95c73119-e856-4073-9685-48a7b6deeafd"
+    },
+    {
+      "claim_id": "03ce29d7-bb6d-4239-a12e-aa740fd75ae6",
+      "result_id": "0ad2807f-4338-49d8-b384-2dac9dae5258"
+    },
+    {
+      "claim_id": "48ba3ea8-4c9b-45f8-a98d-e10616a5e472",
+      "result_id": "0ad2807f-4338-49d8-b384-2dac9dae5258"
+    },
+    {
+      "claim_id": "e1abdf04-7d70-480d-8599-02b7216bc9a8",
+      "result_id": "0ad2807f-4338-49d8-b384-2dac9dae5258"
+    },
+    {
+      "claim_id": "e8142a47-cec6-422d-836d-e2b3229e2699",
+      "result_id": "0ad2807f-4338-49d8-b384-2dac9dae5258"
+    },
+    {
+      "claim_id": "039b61d2-6164-42a4-8bcf-3c7bc7b62b5a",
+      "result_id": "0ad2807f-4338-49d8-b384-2dac9dae5258"
+    },
+    {
+      "claim_id": "d9489e3f-9645-427a-94ab-73739b0b2dee",
+      "result_id": "0ad2807f-4338-49d8-b384-2dac9dae5258"
+    },
+    {
+      "claim_id": "08add595-451d-464a-9eb6-990b2851e5dc",
+      "result_id": "0ad2807f-4338-49d8-b384-2dac9dae5258"
+    },
+    {
+      "claim_id": "d5eacd29-db77-490a-8833-d5be0957046c",
+      "result_id": "0ad2807f-4338-49d8-b384-2dac9dae5258"
+    },
+    {
+      "claim_id": "9553172c-db02-4f99-9129-1be95dad9052",
+      "result_id": "d28d332b-54ed-4250-8696-6368132b8b80"
+    },
+    {
+      "claim_id": "cca91a27-ef51-4c16-bf0d-726952fb263f",
+      "result_id": "fa1cedfc-df64-4241-8b40-d1066930de84"
+    }
+  ],
+  "comparisons": []
+}

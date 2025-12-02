@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C128"
+    ],
+    "result": "All simian primate genomes contain A3I, an ancient A3 retrocopy derived from A3G approximately 43 million years ago. A3I is located at a conserved syntenic position distinct from the A3 locus, lacks introns, spans ~1,100 bp, and shares a nonsense mutation at codon 261 resulting in a truncated 153-codon ORF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of genomic evidence (C36-C39) establish A3I presence across simian primates but absence in prosimians. Phylogenetic analysis (C41-C42) with high bootstrap support places A3I as sister to A3G genes. The shared nonsense mutation (C45) and synteny (C36) strongly support common ancestry. Age estimate (C44) relies on cited divergence times and phylogenetic position, which is reasonable though dependent on molecular clock assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C31",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "New World monkey genomes contain numerous A3G retrocopies (7-10 per species), characterized by lack of introns, variable lengths (260-1,155 bp), and 3' bias consistent with LINE-1-mediated retrocopying. Most contain inactivating mutations, but some retain intact or near-intact ORFs encoding putative functional proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Genomic searches across four NWM species (C67-C69) consistently identify multiple retrocopies. Structural features (C58-C62) match expected characteristics of retrotransposition. The 3' bias observation (C62) is appropriately linked to LINE-1 mechanism via citation. Sequence analysis identifying ORFs and mutations (C63-C65) appears thorough, though the manuscript would benefit from explicit criteria for 'intact' ORFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Phylogenetic and synteny analyses reveal that NWM A3G retrocopies include both ancient orthologs (C1-C5) shared across species and born ~25 MYA, and species-specific copies representing recent retrocopying events, indicating continual retrocopy generation throughout NWM evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination of phylogenetic clustering (C73) with bootstrap support and synteny evidence (C75) provides strong support for orthology of five retrocopy clusters. PCR validation in additional species (C77, C81) extends beyond genome assemblies. The inference of continual retrocopying (C83) is well-supported by the range of retrocopy ages. However, incomplete genome assemblies and potential PCR artifacts could affect some species-specific assignments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "RNA-seq analysis demonstrates that multiple A3G retrocopies are transcribed in vivo across NWM species, including expression in germline tissues (ovaries, testes) and stem cells, with both ancient shared retrocopies and recent species-specific retrocopies showing detectable expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data from public datasets (C88-C93) provide direct evidence of transcription. The use of perfect-match, uniquely-mapping reads is appropriate for distinguishing highly similar sequences. Expression in germline tissues (C93) is particularly relevant for potential function. However, the analysis would be strengthened by quantitative thresholds for 'detectable' expression and validation by independent methods (RT-PCR, Northern blot). Low expression levels could represent transcriptional noise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "A subset of NWM A3G retrocopies have retained intact ORFs (\u2265250 codons) with conserved deaminase motifs for >20 million years, significantly exceeding neutral expectations (<5% survival). RELAX and PAML analyses indicate these retrocopies evolved under intensified selection, with capuchin-C1 and marmoset-SS1 showing elevated dN/dS ratios (2.6 and 2.9) consistent with positive selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation approach (C99-C100) provides a quantitative null expectation for ORF decay, and observed retention (C101-C103) significantly exceeds this. RELAX analysis (C105-C106) appropriately tests for relaxed selection, finding instead intensified selection. PAML branch model results (C107-C108) with dN/dS > 1 suggest adaptive evolution. However, the simulation assumes neutral evolution and may not account for structural constraints on ORF disruption. Small sample sizes limit statistical power for selection tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C142"
+    ],
+    "result": "Functional assays demonstrate that intron-containing NWM A3Gs restrict LINE-1 retrotransposition >10-fold (comparable to human A3A), contrasting with human A3G which shows no LINE-1 restriction. However, none of the tested A3G retrocopies show appreciable LINE-1 restriction activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "LINE-1 retrotransposition assays (C111-C114) using established methods show clear functional differences between NWM and human A3Gs, and between A3Gs and retrocopies. Controls (human A3A, human A3G) behave as expected from literature (C111-C112). The negative results for retrocopies (C114) are consistent across all tested sequences. However, only one LINE-1 element was tested; NWM-specific LINE-1 variants might show different restriction patterns (acknowledged in C146).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Two A3G retrocopies (marmoset-SS1 and capuchin-C1) restrict HIV-1\u0394Vif infectivity \u226510-fold, demonstrating bona fide antiviral activity. This contrasts with human A3A (poor HIV-1 restrictor) and parallels NWM A3Gs which restrict HIV-1 \u2265100-fold, indicating that retrocopying has expanded the functional antiviral repertoire in NWMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Single-cycle infectivity assays (C116-C120) provide direct functional evidence using established methods. The 10-fold restriction by two retrocopies (C119-C120) is modest but reproducible and biologically meaningful. Controls show expected patterns (C116-C117). The correlation between elevated dN/dS and antiviral function (C119-C120 vs C107-C108) strengthens the interpretation. However, HIV-1 is not a natural NWM pathogen (C149), limiting ecological relevance. The assays measure restriction but not mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "All HIV-1-restricting retrocopies have lost LINE-1 restriction activity despite likely retaining both functions at birth. This represents a natural 'separation of function' that may result from differential mutational sensitivity, relaxed selection on LINE-1 restriction, or untested activity against NWM-specific LINE-1 lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of differential function loss (C144) is well-documented experimentally. However, the mechanistic explanations (C145-C147) are speculative without supporting data. The inference that retrocopies initially had both functions (C143) is reasonable but untested. Alternative explanations (e.g., gain of HIV-1 restriction through neofunctionalization rather than retention) are not excluded. The 'separation of function' interpretation (C148) is valid but the underlying mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C34",
+      "C127",
+      "C154",
+      "C156"
+    ],
+    "result": "Host genomes co-opt retroelement activity in the germline to create new restriction factors, representing a prevalent, recurrent, and rapid mechanism for evolving genome defense functions. Retrocopied A3s have continually expanded host defense repertoires in primate genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data collectively support that retrocopying has generated functional A3 variants (C7, C121-C123). The mechanism involves LINE-1 activity (C17, C62) in germline (C86, C93), consistent with the co-option model (C8). Evidence spans ancient (A3I, ~43 MYA) to recent (species-specific) events (C82-C83), supporting 'continual' expansion (C34). However, 'co-opt' implies adaptive recruitment, which is difficult to prove. The broader claim about prevalence across organisms (C154) extends beyond the primate data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Additional A3 retrocopies exist in other primate lineages: A3F retrocopies in three Colobinae Old World monkeys, A3H retrocopies in two New World monkeys, and one unassigned A3 retrocopy in the greater galago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings are reported as primary observations from genomic searches (C51-C53) and shown in Figure 1D. The evidence appears solid for their existence, though less detailed characterization is provided compared to A3I and NWM A3G retrocopies. These represent minor findings that support the broader pattern of A3 retrocopying across primates but are not central to the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "A3I serves as a molecular fossil providing a record of an A3G-like gene from 40 MYA. The parent gene may no longer exist in modern primates, making A3I potentially the only remaining evidence of this ancient A3 gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The concept of retrocopies as molecular fossils (C131) is well-established and appropriately applied. A3I's age (~40 MYA, C132) is supported by phylogenetic evidence (C40-C44). The speculation about parent gene loss (C133-C134) is reasonable given A3 locus dynamics (C26) but remains speculative. This interpretation adds evolutionary context but doesn't change the primary finding of A3I's existence and age. The value as an ancestral sequence record is valid regardless of parent gene fate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "A3 retrocopying is more prevalent in NWM genomes compared to other simian primates, potentially due to increased LINE-1 activity (L1PA7 and L1PA3 subfamilies) or unusually high A3G expression in NWM germline/early embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of higher retrocopy prevalence in NWMs (C135) is supported by the genomic data. The correlation with LINE-1 activity (C136) is cited from previous work but the causal relationship is unclear, especially given variable LINE-1 activity across NWM lineages (C137). The alternative hypothesis of high germline A3G expression (C138) is plausible but lacks direct supporting data. Both explanations remain speculative without measurements of LINE-1 activity or germline expression levels across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Retrocopies can gain expression through exaptation of neighboring transposable elements, promoter piggybacking, or novel promoter recruitment. Genome-wide transcription over short evolutionary timescales may expose advantageous retrogene functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C139-C141) are appropriately cited to previous work and provide mechanistic context for how retrocopies lacking promoters can become expressed. The concepts are well-established in the retrogene literature. However, the specific mechanisms operating for the A3 retrocopies studied here are not experimentally determined. These represent background knowledge supporting the plausibility of retrocopy expression rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "HIV-1\u0394Vif serves as a proxy for A3G retrocopy activity against relevant viral pathogens in NWMs, though lentiviruses and active retroviruses in general have not been found in NWMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This appropriately acknowledges a significant limitation (C149-C150) of the functional assays. The interpretation that HIV-1 serves as a proxy (C151) is reasonable given the broad substrate specificity of A3 proteins, but the ecological relevance remains uncertain. This limitation doesn't invalidate the demonstration of antiviral activity but does temper conclusions about adaptive significance. The authors are appropriately transparent about this caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C152",
+      "C153"
+    ],
+    "result": "Retrocopying of germline-expressed restriction factors could theoretically function as a feedback mechanism on excess retroelement activity, with retrocopies representing a 'revolving door' of substrates for neo- or sub-functionalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative hypotheses (C152-C153) about potential evolutionary mechanisms. While conceptually interesting and supported by citation to dosage/diversity models (C152), there is no direct evidence that this feedback mechanism operates. The 'revolving door' metaphor (C153) is evocative but untested. The failure of tested retrocopies to restrict LINE-1 (C114-C115) actually argues against the feedback model, though the authors acknowledge this. These represent interesting ideas for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

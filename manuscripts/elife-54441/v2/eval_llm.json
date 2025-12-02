@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Monte Carlo simulations of glutamate diffusion, uptake, and iGluSnFR activation were developed using experimentally derived kinetic models for EAAT2 and iGluSnFR variants. The simulations incorporated a synaptic structure with pre- and postsynaptic compartments separated by a 20 nm cleft, with EAAT concentration set at 100 \u03bcM based on prior modeling work, while iGluSnFR concentrations were varied from 1-3000 \u03bcM as these have not been measured experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C40 describe the simulation methodology and parameters. The approach is well-documented with appropriate citations for structural parameters (C34), EAAT concentrations (C35-C36), and kinetic models (C32). The acknowledgment that iGluSnFR concentrations are unknown (C37) and the decision to test a wide range is reasonable. The simulation validation showing agreement with published kinetics (C32) supports the model's credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Simulations demonstrated that iGluSnFR competes with EAATs for glutamate binding, causing concentration-dependent slowing of both iGluSnFR signal decay and glutamate uptake. At 300 \u03bcM iGluSnFR, the decay time constant (\u03c4 = 27 ms) was significantly slower than the indicator's intrinsic deactivation kinetics (\u03c4 = 10 ms), and higher iGluSnFR concentrations produced time constants exceeding 100 ms, matching slower published signals. iGluSnFR acted as a stationary buffer, extending glutamate's extracellular lifetime without affecting diffusion distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C56 present core simulation results showing iGluSnFR buffering effects. The data are internally consistent and show clear concentration-dependent relationships (C46, C50-C51). The comparison between simulated decay kinetics and intrinsic indicator properties (C42) provides strong evidence for buffering rather than simple kinetic limitations. The observation that diffusion distance is unaffected (C52-C53) is consistent with stationary buffering. These simulation results directly address the manuscript's central hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Experimental validation in mouse cortical slices confirmed that STCs recorded from iGluSnFR-expressing astrocytes were significantly slower than controls (rise time: 6.6\u00b11.8 ms vs 5.0\u00b12.1 ms, p=0.023; decay \u03c4: 19.2\u00b15.6 ms vs 16.0\u00b13.6 ms, p=0.04). This slowing was not due to changes in astrocyte electrical properties, and was more pronounced in doubly-infected mice expressing iGluSnFR in both neurons and glia, consistent with higher total expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C85 provide experimental validation of the simulation predictions. The statistical analyses are appropriate with adequate sample sizes (n=15-23), and the control experiments ruling out electrical property changes (C77-C80) strengthen the interpretation. The dose-dependent effect in doubly-infected mice (C83-C84) provides additional support. The experimental iGluSnFR decay times (C81) correspond well to simulated responses at 300 \u03bcM (C82), linking simulation and experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Simulations predicted that iGluSnFR buffering reduces free glutamate concentration in extrasynaptic regions, thereby decreasing perisynaptic receptor activation. Glutamate concentration in the synaptic cleft declined rapidly (\u03c4 ~33 \u03bcs) and was largely unaffected by extrasynaptic iGluSnFR, but perisynaptic glutamate concentrations were reduced in amplitude and duration by iGluSnFR, particularly affecting low-probability perisynaptic receptor activation including mGluRs. These effects were similar across different diffusion coefficients tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C74 describe simulation results on receptor activation in different spatial domains. The spatial analysis is logical, examining cleft, perisynaptic, and distant regions separately (C59-C65). The finding that synaptic cleft concentrations are unaffected (C61) while perisynaptic regions show reduced activation (C64) is mechanistically consistent with rapid diffusion from the cleft. The robustness across different diffusion coefficients (C72-C74) strengthens confidence in the results. However, these are simulation predictions without direct experimental validation of receptor activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The STC waveform reflects glutamate uptake time course filtered by astrocyte electrotonic properties, which slows both rise and decay and obscures actual clearance kinetics. Therefore, even small changes in STC waveform indicate significant changes in glutamate clearance, though simulated STCs do not include electrotonic distortion or release asynchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 discuss the interpretation of STC measurements. The filtering effect of astrocyte membranes (C86-C87) is well-established by the cited prior work (Diamond, 2005). The inference that small STC changes reflect larger clearance changes (C88) is logical given the filtering. The acknowledgment of simulation limitations (C89) is appropriate. This provides important context for interpreting both experimental and simulated STCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Simulations showed that iGluSnFR signal time course and \u0394F/F0 depend strongly on imaging volume (ROI size). Smaller ROIs yielded faster signals due to steeper local concentration gradients, with this effect amplified at higher iGluSnFR concentrations. At high expression levels, iGluSnFR bound a significant fraction of released glutamate, approaching maximal fluorescence probability (Pmax), reducing signal variability. Counterintuitively, increasing iGluSnFR expression decreased \u0394F/F0 for single synapses due to increased background fluorescence (F0), though compound multi-synapse responses showed less ROI dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C101 describe how imaging parameters affect measured signals. The spatial dependence (C92-C93) is mechanistically sound given diffusion dynamics. The saturation effects at high expression (C94-C95) and the counterintuitive decrease in \u0394F/F0 with increased expression (C99-C101) are well-explained by the underlying mechanisms. The distinction between single-synapse and multi-synapse imaging (C96-C98) is important for experimental design. These are simulation results that could be tested experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Simulations examining EAAT blockade effects revealed strong dependence on imaging volume. Over small ROIs (1 \u03bcm radius), removing 80-100% of transporters had minimal effects because diffusion dominates at small spatial scales. Over larger ROIs (5 \u03bcm radius), EAAT reduction dramatically slowed iGluSnFR signals, with particularly large differences between 80% and 100% blockade. This suggests that even small fractions of EAATs clear glutamate relatively quickly, and that careful consideration of imaging parameters is required when using iGluSnFR to evaluate uptake manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C113 address an important discrepancy in the literature regarding EAAT subtype contributions (C104-C106). The simulation results showing ROI-dependent effects (C107-C111) provide a mechanistic explanation for apparently conflicting experimental findings. The conclusion about nonlinear effects of EAAT reduction (C113) is well-supported by the data. This reconciles prior literature and provides practical guidance for experimental design (C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Simulations of lower-affinity iGluSnFR variants (iGluu and iGluf) showed that while these indicators produced faster responses than iGluSnFR, they still exhibited signal time courses that varied with indicator concentration and imaging volume, indicating that buffering artifacts persist even with faster variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 extend the analysis to newer indicator variants. The finding that lower-affinity variants still show concentration and volume dependence (C117) is important for the field, as these variants were developed to address temporal resolution issues. The simulations appropriately use published kinetic parameters (C114). However, experimental validation of these predictions for the variants is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Multi-synapse simulations demonstrated that iGluSnFR and its variants provide linear readouts of the number of activated synapses. When 15 synapses were activated at physiological density (465 nm nearest-neighbor distance), the compound response was 15.6\u00d7 the single-synapse response. Response variability (CV) followed the expected inverse square-root relationship with synapse number. Linearity was near-perfect when synapses were spaced at 1 \u03bcm, consistent with EAATs not being saturated due to their high expression density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C130 address the important question of whether iGluSnFR can quantitatively report release. The linearity results (C120-C121, C127) are well-demonstrated, and the slight supralinearity at high density (C122) is mechanistically explained. The CV analysis (C128-C130) provides additional validation using established statistical principles. The comparison to STCs (C118, C123-C124) provides context. These simulation results support the use of iGluSnFR for optical quantal analysis despite the buffering artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Simulations tested whether segregating EAATs and iGluSnFR into separate compartments could reduce buffering effects. Excluding iGluSnFR from regions near the release site reduced signal amplitude and sped uptake but did not speed the iGluSnFR signal itself, as glutamate became 'trapped' in iGluSnFR-only regions. However, when EAATs were distributed evenly and iGluSnFR only in alternating compartments (mimicking expression in a subset of neurons), signals were larger and faster with minimal impact on uptake, suggesting this arrangement may be optimal for some experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C142 explore potential solutions to the buffering problem through compartmentalization. The simulation results are internally consistent and mechanistically explained (C134, C138-C139). The finding that simple segregation doesn't solve the problem (C133-C135) but that even EAAT distribution with partial iGluSnFR expression does (C137-C142) provides practical guidance. However, these are simulation predictions without experimental validation, and achieving such precise spatial expression patterns experimentally may be challenging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The study concludes that iGluSnFR buffers glutamate diffusion and prolongs its extracellular lifetime, with these effects evident even for lower-affinity variants. Compartmentalized expression might reduce buffering but would not produce faster signals approximating native clearance. Despite these caveats, multi-synapse simulations indicate that glutamate indicators provide linear readouts of activated synapse numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C146 summarize the main conclusions. These are well-supported by the combined simulation and experimental results presented throughout the manuscript. The acknowledgment of limitations (C145) and the positive conclusion about linearity (C146) provide balanced interpretation. The conclusions appropriately distinguish between time course artifacts and quantitative reporting of release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The buffering effects depend strongly on iGluSnFR expression levels, potentially complicating cross-region comparisons. Differences in iGluSnFR signal time courses between brain regions could reflect expression differences rather than uptake capacity differences. STCs recorded in iGluSnFR-expressing tissue are also slowed relative to controls, potentially creating misleading agreement between STCs and iGluSnFR signals. Variants optimized for increased expression may disrupt signaling even more.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C153 discuss important implications for interpreting published studies. The expression-dependence (C147) is well-established by the results. The alternative interpretation of regional differences (C149-C150) is reasonable speculation, though the authors note that STC data support genuine regional differences in this case (C151). The warning about misleading agreement (C152) and increased expression variants (C153) are logical inferences from the results that provide important guidance for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The study acknowledges that iGluSnFR concentration is the most critical unconstrained parameter in the simulations, likely varying widely across experimental conditions. While biochemical and immunohistochemical approaches have limitations for measuring active surface expression, EAAT expression has been well-characterized through quantitative immunoblotting and electron microscopy. Whether iGluSnFR expression affects EAAT surface expression remains unknown, though cortical astrocyte STCs from neuronally-expressed iGluSnFR are similar to those from astrocyte-expressed iGluSnFR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C162 provide important discussion of parameter uncertainty. The acknowledgment that iGluSnFR concentration is unknown (C154, C155) is critical for interpreting the simulations. The discussion of measurement challenges (C156-C157) is realistic. The contrast with well-characterized EAAT expression (C158-C160) provides context. The unpublished observation about neuronal vs. astrocytic expression (C162) provides some reassurance but is not peer-reviewed data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C163",
+      "C164"
+    ],
+    "result": "The study speculates that dense expression of indicators for other neuromodulators (dopamine, norepinephrine, serotonin) might substantially influence their modulatory effects, though dopamine has been shown to act more locally than previously expected in some cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C164 extend the implications to other neurotransmitter indicators. This is reasonable speculation (C163) given the results for glutamate, but remains untested. The caveat about dopamine's local action (C164) appropriately notes that the relevance may vary by transmitter system. These are speculative extensions without supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The Monte Carlo model includes significant simplifications to reduce computational requirements, including modeling extrasynaptic space as isotropic rather than with explicit structure, which likely underestimates interactions between synapses with less tortuous diffusion routes. EAATs and iGluSnFRs were evenly distributed within partitions, and only molecules binding glutamate were explicitly modeled. The spherical ROIs likely overestimate background fluorescence compared to line scans, and the simplified binding approach would be insufficient for simulating steric interactions between adjacent receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C175 provide thorough discussion of model limitations. The acknowledgment of simplifications (C165, C169, C173-C175) is appropriate and honest. The testing of partition thickness effects (C170) provides some validation that simplifications don't critically affect results. The discussion of ROI geometry effects (C171-C172) is important for comparing to experiments. This transparent discussion of limitations strengthens rather than weakens confidence in the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "The study proposes design principles for an ideal glutamate indicator ('FrankenSnFR') combining optimal kinetic features: fast binding and unbinding rates to maintain high affinity with rapid deactivation, fast entry/exit from the activated state with high Pmax, and large dynamic range. Simulations showed FrankenSnFR could provide reasonable single-synapse activation at low expression (3 \u03bcM) without disrupting clearance, though at higher levels it still caused buffering artifacts. The greatest improvements come from increasing Pmax and dynamic range to achieve sufficient signal-to-noise at low expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C185 present a constructive analysis of indicator design. The kinetic requirements (C179-C181) are logically derived from the simulation results. The FrankenSnFR simulations (C182-C184) demonstrate the principles, showing improved but not perfect performance. The conclusion about Pmax and dynamic range (C185) provides clear guidance for indicator development. This represents a valuable contribution translating the findings into design principles, though FrankenSnFR is hypothetical and would require experimental validation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1776 @@
+{
+  "submission": {
+    "id": "71d60db0-aab1-40d0-98ed-6f637d5e6d0c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:24:15.787241Z",
+    "updated_at": "2025-12-02T14:24:15.787241Z"
+  },
+  "content": [
+    {
+      "id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "submission_id": "71d60db0-aab1-40d0-98ed-6f637d5e6d0c",
+      "content_type": "manuscript",
+      "content_text": "# Open exploration\n\n## Authors\n\n- William Hedley Thompson<sup>1</sup> ([ORCID: 0000-0002-0533-6035](https://orcid.org/0000-0002-0533-6035)) \u2020\n- Jessey Wright<sup>1</sup> \u2020\n- Patrick G Bissett<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Psychology Stanford University Stanford United States\n2. Department of Clinical Neuroscience Karolinska Institute Stockholm Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nArguments in support of open science tend to focus on confirmatory research practices. Here we argue that exploratory research should also be encouraged within the framework of open science. We lay out the benefits of 'open exploration' and propose two complementary ways to implement this with little infrastructural change.\n\n## Introduction\n\nThe aim of open science is to increase the accessibility and transparency of scientific research by making changes to the way research is conducted (Watson, 2015; Nosek et al., 2015; Levin and Leonelli, 2017). To date many of the changes proposed and introduced to make research more open have been concerned with confirmatory research: examples include pre-registering studies (Wagenmakers et al., 2012), redefining statistical thresholds (Benjamin et al., 2018), increasing precision by focusing on statistical power (Button et al., 2013), and conducting replications (Open Science Collaboration, 2015).\n\nThese changes are all welcome, but we fear that this focus on confirmation gives the impression that confirmatory research is the sole part of the empirical process worth conducting openly, and that other parts \u2013 notably exploratory research \u2013 do not belong within the open-science movement. In this article we argue that that exploratory research does have a place in open science, but we do not believe open exploration will automatically follow from current initiatives that advocate open confirmatory practices (Munaf\u00f2 et al., 2017). Instead, exploratory research requires its own protocols and practices to bring it into the open. We start by outlining the problems that arise when exploration is closed and demonstrate that exploration is compatible with the ideals of open science. Thereafter, we outline concrete suggestions to integrate it into empirical practice.\n\n## Moving from closed to open exploration\n\nData exploration can serve a variety of purposes, including: i) getting a holistic overview and understanding of the data; ii) generating a theory or hypothesis; iii) exploring degrees of freedom within the data. Sociological research detailing emotional labor (Hochschild, 2012), the discovery of penicillin (Ligon, 2004) and the training of AlphaGo (Chen et al., 2018) are a few examples of how exploratory research practices have been critical catalysts for discoveries throughout history. Routinely, advocates of exploratory research champion its value for science (Behrens, 1997; Franklin, 2005; Hollenbeck and Wright, 2017; Jebb et al., 2017; Tukey, 1980) and argue that it is insufficiently funded (Aragon, 2011; Haufe, 2013; Rozin, 2009; Wagner and Alexander, 2013). With the rise of \u2018data science\u2019, there has been an increased focus on data mining and extracting exploratory information and patterns (Donoho, 2017). In summary, while the exploration of data is necessary for scientific progress, it is not generally incentivized.\n\nExploration can be understood through degrees of freedom: the more degrees of freedom a researcher leverages, the more exploratory their work is. The leveraging of degrees of freedom can occur in study design (e.g., piloting experiments), during post-hoc analyses, and as an analysis strategy itself. Moreover, exploratory data analysis has been recognized as a practice distinct from confirmatory analyses since at least 1980 (Tukey, 1980). Following Tukey, we conceive of exploratory research as an interactive process in which a researcher adopts an attitude of flexibility. This stands in a clear contrast with the characteristics of good confirmatory research. To put the contrast succinctly: productive exploratory research involves taking advantage of degrees of freedom, while good confirmatory practices involve limiting and reducing degrees of freedom.\n\nWhile exploration is central to progress in many domains of science, it is rarely made public. The current blueprint for a scientific paper encourages the author to feign omniscience: the exact correct hypothesis was known a priori, only a small number of confirmatory statistical tests were run to address that hypothesis, and the tests came out exactly as predicted (Grinnell, 2013). This blueprint is further perpetuated by funding agencies and journals that reward these practices. In reality, before any confirmatory tests are run, there is often significant exploratory science. Therefore, perhaps in service of this omniscience myth, exploration is generally closed.\n\nThis poses several problems. First, by keeping exploration closed, there is little opportunity to improve one\u2019s own exploratory practice by studying the methods and strategies used by peers. This is a missed pedagogical opportunity because a big challenge for many young scientists is moving a research program from a blooming, buzzing confusion of infinite scientific possibilities to a specific question worth attempting to confirm. Second, because the standard for current papers is a tight, clean, linear, novel, and confirmatory narrative, researchers are encouraged to mischaracterize their exploratory science as confirmatory science (Wagenmakers et al., 2012). Third, many exploratory studies go unreported, contributing to the 'file drawer problem' (Rosenthal, 1979). Fourth, a further consequence of 'closed exploration' is that a research group can waste time and resources on studies that others know will not work. Fifth, while closed exploration remains the norm, confirmation will be perceived as the only scientific process worth doing, thus discouraging researchers from doing good or thorough exploration. For these reasons, we advocate for open exploration.\n\nIn broad terms open exploration involves making all aspects of the exploratory research pipeline available for others to see what has been done, with what, and how. Such practices are compatible with current guidelines and initiatives that promote open research. Specifically, the transparency and openness promotion (TOP) guidelines were created to outline how research practices, broadly speaking, can be conducted openly (Nosek et al., 2015; https://cos.io/top/). Exploratory research can adhere to the sections of these guidelines that concern transparency of the data, code, research methods, design and analysis. The sections in the TOP guidelines that are not relevant for open exploration are pre-registration (as this demarcates confirmatory from exploratory research) and replication (as this is a type of confirmatory research). Finally, in advocating for and thinking about open exploration, it is critical to recognize that open exploration complements confirmatory research, rather than somehow being in opposition to it.\n\n## Proposed implementations of open exploration\n\nWe propose two concrete ways to instantiate open exploration: i) include the exploratory science as a distinct section in published papers; ii) place exploratory analyses (regardless of the outcome) on citable public repositories. Before elaborating on these proposals, we present four important additional details. First, we recognize that these solutions will not rectify the entire problem. We offer them as concrete steps forward that are low cost. Second, our proposals aim to promote exploration that does not currently see the light of day. Notably, there is some exploratory research that is already in the open, such as post hoc analyses and fully exploratory studies \u2013 see, for example, the 'exploratory reports' format adopted by the journal Cortex. Third, we admit that these proposals are not necessarily novel but they are stated here to encourage their adoption. Fourth, our experience is primarily in psychology and neuroscience, so our proposals may be best suited to these and related fields. However, we hope that they may be of value to other disciplines that are facing similar challenges as there is nothing discipline-specific about them.\n\nOne way to implement the first suggestion would be to include separate sections in scientific papers for exploration. To fit this neatly into current structures, this may involve an exploratory methods section and an exploratory results section. Regardless of the specific implementation, such section(s) would give researchers an opportunity to provide details about pilot studies, initial but incorrect hypotheses, and descriptive and exploratory data analyses that were conducted prior to the confirmatory part of the study. Such section(s) do not need to focus on, if at all, inferential statistical results or power: instead, they should describe the exploratory work that was done and how it led to the hypothesis generation, methods refinement, or any additional insight for the confirmatory research. The subsequent (confirmatory) methods and results sections will then be informed by the exploratory results reported in the paper and would be held to the strict standards of confirmatory science. This re-imagining of the scientific paper will demonstrate that exploratory research is as an important part of the scientific process, instead of discouraging it or pretending it does not occur.\n\nAdopting the first proposal will only make the tip of the exploratory iceberg open. To address the file drawer problem and avoid redundant work by researchers, other exploratory work that is currently considered to be 'non-publishable' must also be placed in the open. However, we do not want to flood the scientific literature with exploratory work that does not necessarily warrant a publication, so we propose that researchers place their exploratory analysis \u2013 ideally including the code, data (if it is shareable), and descriptions of the study \u2013 on a repository with a citable DOI. (Suitable repositories include figshare, Github and osf.io, and these can be integrated with DOIs generated from Zenodo or protocols.io). There are already some instances where exploratory analyses are shared in this way (see, for example, Konkiel, 2016). For wider adoption of this suggestion, and to ease readability of exploratory analyses in repositories, developing a standardized template to describe the exploratory repository could be beneficial.\n\n## Challenges and conclusions\n\nWe have outlined two proposals that implement open exploration with little infrastructural change. Together they would help to curtail the problems of closed exploration outlined previously: for example, by giving a place to exploration in journal articles, more parts of the scientific process will be conducted in the open, which would help to dispel the omniscience myth, and would also generate material that can be used for future investigations into good exploratory practices. Moreover, open exploration may make it possible to conduct meta-exploratory analyses that identifies both successful and under-exploited places in the parameter space to guide future work. This could be done by, for example, reviewing exploratory analysis repositories and presenting a summary of the parameter configurations that have been explored (noting where researcher degrees of freedom appear to make a difference) and the null and positive findings contained in the analyses.\n\nWe would also like to address some concerns that researchers might have about our proposals. First, some researchers may be hesitant to publicly display exploratory work that is incomplete, such as rough or messy code. However, sharing any code, even messy or rough code, is better than having no code accompanying an article: indeed, it has been shown that sharing any code at all increases scientific engagement with articles, as measured by citations, in image processing research (Vandewalle, 2012). See Gorgolewski and Poldrack (2016) for more advice on sharing code (and data). Second, it is important that people do not overlook that null exploratory findings could be type-II errors (that is, false negatives). Third, there is also a possibility of more type-I errors (that is, false positives) in open exploration. However, as more exploratory analyses are shared, it may become possible to discriminate between findings worth confirming (be they negative or positive) and type-I or type-II errors due to factors such as a poor experimental design. At present, news of negative results encountered in unpublished work due to poor experimental design can only be spread through word-of-mouth, dissuading others from pursuing this line of research. Open exploration offers the possibility for these results to be evaluated. In sum, it is crucial that exploratory work should be seen as a guide for future work, not as definitively confirmed hypothesis.\n\nFinally, there is the concern that positive or negative exploratory results that have not been confirmed may be adopted as facts or falsehoods by the public. However, misleading information already exists and gets proliferated as facts (see, for example, Nordenstedt and Rosling, 2016). With greater appreciation of exploration, the distinction between researchers producing tentative exploratory results and hypothesis-driven research will become more apparent to both scientists and a wider audience.\n\nTo conclude, open science has focused on confirmatory science and neglected exploratory science. Exploration exists, has scientific value, and is mostly closed. We propose open exploration, which involves bringing exploratory science out of the shadows into scientific papers and public repositories, and in doing so unlocks the potential of this essential part of the scientific process.\n",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "c6a15bb6-26b9-4531-b0cb-64f1d678a287",
+      "submission_id": "71d60db0-aab1-40d0-98ed-6f637d5e6d0c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, eLife United Kingdom\n\nReviewers:\n- Micheal de Barra, Brunel University United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.52157.sa1](https://doi.org/10.7554/eLife.52157.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Open Exploration\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by myself (Peter Rodgers) as the eLife Features Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Micheal de Barra (Reviewer #2).\n\nAs you will see, the reviewers #1 and #3 were somewhat negative about the manuscript, whereas reviewer #2 was more positive (though he also had concerns). I would be willing to consider a revised version of the manuscript, but it would require major revisions, and you may prefer to seek publication elsewhere.\n\nReviewer #1:\n\nThe thesis of this article is stately concisely in the abstract and conclusion. Abstract: \"Science is in the midst of an open science revolution that focuses on con\ufb01rmatory research practices. This has the unfortunate byproduct of neglecting or even dissuaded [sic] good exploratory research.\" Conclusion: \"...open science has focused on con\ufb01rmatory science and neglected exploratory science.\"\n\nI don't agree. Of course this is an opinion piece, so I don't have to agree, but I think the authors fail to provide evidence that a problem exists - or put better, that the problem is as they state it to be. I summarize my main disagreements with reference to statements in the text.\n\n1) \"Science is in the midst of an open science revolution that emphasizes reproducible research, data sharing, standardization, and open access to scienti\ufb01c articles.\" To me this is a misstatement of what open science if about. Open science in my view emphasizes data sharing and open access. Reproducibility and standardization are extremely important but I wouldn't put them under the same heading. I never thought I'd find myself quoting Wikipedia in a scholarly context, but here's how they define it: \"Open science is the movement to make scientific research (including publications, data, physical samples, and software) and its dissemination accessible to all levels of an inquiring society, amateur or professional.... It encompasses practices such as publishing open research, campaigning for open access, encouraging scientists to practice open notebook science, and generally making it easier to publish and communicate scientific knowledge.\"\n\n2) \"Current prescriptions on how to integrate openness into empirical scienti\ufb01c practice have focussed on the con\ufb01rmatory stages.... This focus gives the impression that con\ufb01rmatory research is the sole part of the empirical process worth pursuing and disseminating.\" Not in my world, which is biology, including some experience in cell biology, molecular biology, biochemistry, anatomy, physiology, developmental biology and neurobiology. I see that the authors are all from a psychology department so their world is surely different from mine. If the statement is true in their world, they need to (a) make that clear and (b) provide more evidence for this rather irresponsibly broad accusation.\n\n3) \"...because the standard for current papers is a tight, clean, linear, and con\ufb01rmatory narrative, this encourages researchers to mischaracterize their exploratory science as con\ufb01rmatory science.\" Publication pressures are real and pernicious, especially in the for-profit top-tier journals. In my world, though, I don't see the pressures as regularly emphasizing confirmation. If anything, the pressure is for novelty, even when the foundation may be a bit shaky. So again, if psychology plays by a different set of rules, the authors need to specify who they are addressing and accusing.\n\n4) \"...include the exploratory science as a distinct section in published papers...\" I think this is a poor idea and would actually stigmatize the exploratory aspect. However, I don't dispute the authors' right to make the suggestion.\n\n5) \"To move towards fully solving problems regarding the \ufb01le drawer and avoiding redundant work by researchers, the non-publishable exploration has to be placed in the open too.\" There is a lot of merit to this idea, but it has some drawbacks that need to be described. One is that if \"exploratory\" research comes to be seen as \"whatever is stuck in your file drawer\" it becomes difficult for readers to know whether the negative result is real (in which case they can avoid redundancy) or whether it reflects poor experimental design and execution (in which case they might be dissuaded from a productive line of research).\n\nReviewer #2:\n\nI enjoyed reading this manuscript and am in agreement with many of the points raised about the importance of exploratory and descriptive research in contemporary psychology. In particular the paragraph on the motivation for making exploratory research open is excellent.\n\nA few points to consider:\n\nThe authors write \"[Open science] has the unfortunate byproduct of neglecting or even dissuaded good exploratory research.\" Whatever the truth of this empirical claim, open science and exploratory research need not and ought not be seen in such a zero-sum light. The open science movement have made the distinction between exploratory and confirmatory research much clearer to researchers - our statistical tests only make sense in conditions where there are few degrees of freedom. But our new-found clarity about requirements of confirmatory research should liberate and legitimise exploratory and descriptive research since it no longer needs to \"pretend\" to be confirmatory (p-values, consistent results etc). This point is well made by Frankenhuis and Nettle 2018 (http://doi.org/10.1177/1745691618767878, see also other articles in this special edition). Useful to stress the compatibility of open science and exploratory research up-front rather than on page 3?\n\nI am a little concerned that the authors 'proposals' are either a bit arbitrary or already reasonably common. What\u2019s the difference between a separate \"exploratory\" methods / results and a pilot study? Many articles already clearly label confirmatory results (which where preregistered) and exploratory results (which were not preregistered). Figshare and OSF are already used to share datasets that may not warrant a publication.\n\nWhile the authors mention that inferential statistics will play a reduced role in exploratory work, the language seems to assume null hypothesis significance testing: see, e.g., references to \"null finding\", \"failed hypothesis\" or \"success\" in exploratory research). While I don't think this is the intention of the authors, such language gives the impression that exploratory research is just 'failed' confirmatory research. Moreover, it's likely that statisticians have written about good statistical approaches and NHST in exploratory work: is there anything useful they cite or describe here? (splitting datasets for explore and confirm, e.g.)\n\nRelatedly, it would be useful to have more discussion of the kinds of exploratory research that the authors wish to create more space and prestige for. Paul Rozin's 2009 paper \"What Kind of Empirical Research Should We Publish, Fund, and Reward?: A Different Perspective\" provides some interesting examples of valuable non-confirmatory research. Tinbergen's 1963 comment that \"on its haste to step into the twentieth century and to become a respectable science, Psychology skipped through the preliminary descriptive stage that other natural sciences had gone through\" also springs to mind. Have the authors any thoughts on this?\n\nReviewer #3:\n\nThe premise of this provocative article is mistaken: the open science \"revolution\" does not imply an increased bias towards confirmatory science.\n\nAs Wikipedia says, \"Open science is the movement to make scientific research (including publications, data, physical samples, and software) and its dissemination accessible to all levels of an inquiring society, amateur or professional.\" There is nothing in that statement that implies a bias against publishing exploratory work.\n\nOpen science practices already enable what the authors describe as \"exploratory data analysis\", by encouraging (or insisting) that scientists make data available when they publish results based on it. This is the proper time to release data, as uncurated data is worse than none at all, and the publication process is the best tool we have for judging whether data is meaningful.\n\nThe trend toward confirmatory science versus more exploratory work originates primarily in the practices of funding agencies and journals, and especially their reviewer communities. These communities are unduly influenced by the simplistic example of hypothesis testing commonly practiced in the biological and pharmaceutical sciences.\n\nThe authors introduce the term \"closed exploration\" to mean hiding the thought process that led to the hypothesis being tested. They describe well the disadvantages of hiding this thought process, and focusing only on hypothesis testing (called by others \"hypothesis-driven\" research).\n\nHowever, this is not a new insight; for earlier discussions see Aragon \"Thinking Outside The Box: Fostering Innovation and Non-Hypothesis Driven Research at NIH\" (2011), Haufe \"Why do funding agencies favor hypothesis testing?\" (2013), O'Malley et al \"Philosophies of Funding\" (2009), and McKnight \"The straight-jacket of hypothesis driven research\" (2015).\n\nThe proper remedy for this tendency to \"feign omniscience\" is for funding agencies and journals to recognize that the story science should tell is as much how we arrive at a good hypothesis, as how we test it. If that were more widely appreciated, material made public through open science channels would reflect that improved understanding of what science is.\n\nPart of the authors' prescription for addressing the tendency to feigned omniscience, is that journals should add \"exploratory\" methods and \"exploratory\" results sections to the conventional Methods and Results. This is fine as far as it goes; the structure of Methods and Results is ill adapted to telling a story of discovery, and there are many ways of improving upon it. Relaxing this rigid structure would improve journals that insist upon it.\n\nThe authors place considerable importance on what they call the \"file drawer problem\", which they describe as the accumulation of \"unreported exploration\". The novel aspect of their remedy for the present bias towards confirmatory science is to publish in online repositories incomplete stories - what they call \"exploratory analyses (regardless of success)\".\n\nThat prescription strikes me as naive, with regard to the social practice of science. Exploratory work is hard labor not valuable on its own - rather like preparing the soil for a garden. No one will be motivated to share that. Furthermore, exploratory work that has not yet led to a clear result is not really a tellable story. If the story is ready to tell, scientists are strongly motivated to tell it. There would be little value in fishing through accounts of other people's explorations, except to know what they have been trying to do - which no one would willingly submit to.\n\nIn summary, the authors need to think harder about the underlying causes of bias towards confirmatory research. The open science movement is not to blame, nor is it clear that it affords a remedy.\n",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e3bcb98e-e51c-4971-b32c-2bb486362115",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C1",
+      "claim": "Arguments in support of open science tend to focus on confirmatory research practices.",
+      "claim_type": "EXPLICIT",
+      "source": "Arguments in support of open science tend to focus on confirmatory research practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about the state of open science discourse presented in the abstract without specific supporting data or citations in this sentence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "52b8a785-c070-4efc-b7fe-8519f79c9616",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C2",
+      "claim": "The aim of open science is to increase the accessibility and transparency of scientific research by making changes to the way research is conducted.",
+      "claim_type": "EXPLICIT",
+      "source": "The aim of open science is to increase the accessibility and transparency of scientific research by making changes to the way research is conducted (Watson, 2015; Nosek et al., 2015; Levin and Leonelli, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by three citations to scholarly work on open science.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "87e2bc96-409b-4a0b-b79e-30eca771faba",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C3",
+      "claim": "Many of the changes proposed and introduced to make research more open have been concerned with confirmatory research.",
+      "claim_type": "EXPLICIT",
+      "source": "To date many of the changes proposed and introduced to make research more open have been concerned with confirmatory research: examples include pre-registering studies (Wagenmakers et al., 2012), redefining statistical thresholds (Benjamin et al., 2018), increasing precision by focusing on statistical power (Button et al., 2013), and conducting replications (Open Science Collaboration, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by four citations to scholarly work describing various open science practices focused on confirmatory research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "798eb66b-31aa-465f-a106-88a5ea244ad5",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C4",
+      "claim": "Pre-registering studies is an example of a change to make research more open that is concerned with confirmatory research.",
+      "claim_type": "EXPLICIT",
+      "source": "To date many of the changes proposed and introduced to make research more open have been concerned with confirmatory research: examples include pre-registering studies (Wagenmakers et al., 2012), redefining statistical thresholds (Benjamin et al., 2018), increasing precision by focusing on statistical power (Button et al., 2013), and conducting replications (Open Science Collaboration, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wagenmakers et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "7ecc51d6-bd02-4214-81a6-5a7350ff269c",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C5",
+      "claim": "Redefining statistical thresholds is an example of a change to make research more open that is concerned with confirmatory research.",
+      "claim_type": "EXPLICIT",
+      "source": "To date many of the changes proposed and introduced to make research more open have been concerned with confirmatory research: examples include pre-registering studies (Wagenmakers et al., 2012), redefining statistical thresholds (Benjamin et al., 2018), increasing precision by focusing on statistical power (Button et al., 2013), and conducting replications (Open Science Collaboration, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Benjamin et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "f5657284-e0fa-4601-9a2a-20e6a4eecc0e",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C6",
+      "claim": "Increasing precision by focusing on statistical power is an example of a change to make research more open that is concerned with confirmatory research.",
+      "claim_type": "EXPLICIT",
+      "source": "To date many of the changes proposed and introduced to make research more open have been concerned with confirmatory research: examples include pre-registering studies (Wagenmakers et al., 2012), redefining statistical thresholds (Benjamin et al., 2018), increasing precision by focusing on statistical power (Button et al., 2013), and conducting replications (Open Science Collaboration, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Button et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "2b6092e4-92b2-4f81-8170-b10134d76d05",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C7",
+      "claim": "Conducting replications is an example of a change to make research more open that is concerned with confirmatory research.",
+      "claim_type": "EXPLICIT",
+      "source": "To date many of the changes proposed and introduced to make research more open have been concerned with confirmatory research: examples include pre-registering studies (Wagenmakers et al., 2012), redefining statistical thresholds (Benjamin et al., 2018), increasing precision by focusing on statistical power (Button et al., 2013), and conducting replications (Open Science Collaboration, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Open Science Collaboration, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "be4a536c-dc73-4afd-99d7-fcc69cd8288e",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C8",
+      "claim": "The focus on confirmation in open science gives the impression that confirmatory research is the sole part of the empirical process worth conducting openly.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes are all welcome, but we fear that this focus on confirmation gives the impression that confirmatory research is the sole part of the empirical process worth conducting openly, and that other parts \u2013 notably exploratory research \u2013 do not belong within the open-science movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors about the implications of current open science practices.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "01959b07-5d61-4e8d-9b5e-b0f7978c5d36",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C9",
+      "claim": "Open exploration will not automatically follow from current initiatives that advocate open confirmatory practices.",
+      "claim_type": "EXPLICIT",
+      "source": "In this article we argue that that exploratory research does have a place in open science, but we do not believe open exploration will automatically follow from current initiatives that advocate open confirmatory practices (Munaf\u00f2 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference by the authors supported by a citation to Munaf\u00f2 et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "178aad71-3cba-4a8f-bda4-6ee445f241d3",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C10",
+      "claim": "Exploratory research requires its own protocols and practices to bring it into the open.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, exploratory research requires its own protocols and practices to bring it into the open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on their analysis of current open science practices.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "80b8e475-bb7e-46c9-b7d3-059067e8c495",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C11",
+      "claim": "Data exploration can serve the purpose of getting a holistic overview and understanding of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Data exploration can serve a variety of purposes, including: i) getting a holistic overview and understanding of the data; ii) generating a theory or hypothesis; iii) exploring degrees of freedom within the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the purposes of data exploration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "b9e62bc2-1dd6-48d1-bc1f-3e54c0f8996a",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C12",
+      "claim": "Data exploration can serve the purpose of generating a theory or hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Data exploration can serve a variety of purposes, including: i) getting a holistic overview and understanding of the data; ii) generating a theory or hypothesis; iii) exploring degrees of freedom within the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the purposes of data exploration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "44a227a1-af56-4c44-bd46-047c8ea7f153",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C13",
+      "claim": "Data exploration can serve the purpose of exploring degrees of freedom within the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Data exploration can serve a variety of purposes, including: i) getting a holistic overview and understanding of the data; ii) generating a theory or hypothesis; iii) exploring degrees of freedom within the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the purposes of data exploration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "b2ebe576-e478-48fe-9cad-44cbbdf8f137",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C14",
+      "claim": "Sociological research detailing emotional labor is an example of how exploratory research practices have been critical catalysts for discoveries throughout history.",
+      "claim_type": "EXPLICIT",
+      "source": "Sociological research detailing emotional labor (Hochschild, 2012), the discovery of penicillin (Ligon, 2004) and the training of AlphaGo (Chen et al., 2018) are a few examples of how exploratory research practices have been critical catalysts for discoveries throughout history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hochschild, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "3872e9ef-71c4-453b-84d4-98377eaa2d4f",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C15",
+      "claim": "The discovery of penicillin is an example of how exploratory research practices have been critical catalysts for discoveries throughout history.",
+      "claim_type": "EXPLICIT",
+      "source": "Sociological research detailing emotional labor (Hochschild, 2012), the discovery of penicillin (Ligon, 2004) and the training of AlphaGo (Chen et al., 2018) are a few examples of how exploratory research practices have been critical catalysts for discoveries throughout history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ligon, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "2c472701-3476-474f-a5ab-069484b39f65",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C16",
+      "claim": "The training of AlphaGo is an example of how exploratory research practices have been critical catalysts for discoveries throughout history.",
+      "claim_type": "EXPLICIT",
+      "source": "Sociological research detailing emotional labor (Hochschild, 2012), the discovery of penicillin (Ligon, 2004) and the training of AlphaGo (Chen et al., 2018) are a few examples of how exploratory research practices have been critical catalysts for discoveries throughout history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chen et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "4b25c4e8-9c3d-47b6-9f18-d4633d21d863",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C17",
+      "claim": "Advocates of exploratory research champion its value for science.",
+      "claim_type": "EXPLICIT",
+      "source": "Routinely, advocates of exploratory research champion its value for science (Behrens, 1997; Franklin, 2005; Hollenbeck and Wright, 2017; Jebb et al., 2017; Tukey, 1980) and argue that it is insufficiently funded (Aragon, 2011; Haufe, 2013; Rozin, 2009; Wagner and Alexander, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by five citations to scholarly work advocating for exploratory research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "04ed8d28-d254-458d-b795-7fed7be94d9b",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C18",
+      "claim": "Advocates of exploratory research argue that it is insufficiently funded.",
+      "claim_type": "EXPLICIT",
+      "source": "Routinely, advocates of exploratory research champion its value for science (Behrens, 1997; Franklin, 2005; Hollenbeck and Wright, 2017; Jebb et al., 2017; Tukey, 1980) and argue that it is insufficiently funded (Aragon, 2011; Haufe, 2013; Rozin, 2009; Wagner and Alexander, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by four citations to scholarly work arguing about insufficient funding for exploratory research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "e8b5374b-0653-4781-b80c-5ccacd138058",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C19",
+      "claim": "With the rise of 'data science', there has been an increased focus on data mining and extracting exploratory information and patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "With the rise of 'data science', there has been an increased focus on data mining and extracting exploratory information and patterns (Donoho, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Donoho, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "a6276cf4-76f7-4c8b-a04f-f9871096e97b",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C20",
+      "claim": "The exploration of data is necessary for scientific progress.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, while the exploration of data is necessary for scientific progress, it is not generally incentivized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the preceding discussion and citations about the value of exploratory research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "c5275342-6414-4390-92fa-b2e4d51fdc43",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C21",
+      "claim": "The exploration of data is not generally incentivized.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, while the exploration of data is necessary for scientific progress, it is not generally incentivized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the preceding discussion and citations about insufficient funding for exploratory research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "4f8511c1-261f-4227-af44-c6c7c6fbfc71",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C22",
+      "claim": "Exploration can be understood through degrees of freedom: the more degrees of freedom a researcher leverages, the more exploratory their work is.",
+      "claim_type": "EXPLICIT",
+      "source": "Exploration can be understood through degrees of freedom: the more degrees of freedom a researcher leverages, the more exploratory their work is.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual framework proposed by the authors to understand exploratory research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "4a7498d4-b89d-4a8c-a49a-e710a1c36895",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C23",
+      "claim": "The leveraging of degrees of freedom can occur in study design (e.g., piloting experiments).",
+      "claim_type": "EXPLICIT",
+      "source": "The leveraging of degrees of freedom can occur in study design (e.g., piloting experiments), during post-hoc analyses, and as an analysis strategy itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about where degrees of freedom can be leveraged in research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "7153ffb3-c631-46c0-91e9-194b31f45df0",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C24",
+      "claim": "The leveraging of degrees of freedom can occur during post-hoc analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "The leveraging of degrees of freedom can occur in study design (e.g., piloting experiments), during post-hoc analyses, and as an analysis strategy itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about where degrees of freedom can be leveraged in research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "9c52674b-464b-4902-866a-267842cc0e7e",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C25",
+      "claim": "The leveraging of degrees of freedom can occur as an analysis strategy itself.",
+      "claim_type": "EXPLICIT",
+      "source": "The leveraging of degrees of freedom can occur in study design (e.g., piloting experiments), during post-hoc analyses, and as an analysis strategy itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about where degrees of freedom can be leveraged in research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "40b27d4f-d495-47fd-a7c9-451170de1de4",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C26",
+      "claim": "Exploratory data analysis has been recognized as a practice distinct from confirmatory analyses since at least 1980.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, exploratory data analysis has been recognized as a practice distinct from confirmatory analyses since at least 1980 (Tukey, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tukey, 1980.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "0b4a0e55-223f-4998-9029-5a4a0bb4cffb",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C27",
+      "claim": "Exploratory research is an interactive process in which a researcher adopts an attitude of flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Following Tukey, we conceive of exploratory research as an interactive process in which a researcher adopts an attitude of flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual definition based on Tukey's work, as indicated by 'Following Tukey'.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "d06c1cc4-e3e0-4872-8d05-2b0dc742b22a",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C28",
+      "claim": "Productive exploratory research involves taking advantage of degrees of freedom.",
+      "claim_type": "EXPLICIT",
+      "source": "To put the contrast succinctly: productive exploratory research involves taking advantage of degrees of freedom, while good confirmatory practices involve limiting and reducing degrees of freedom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual framework proposed by the authors to distinguish exploratory from confirmatory research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "a1bd7fb4-c35b-4259-8741-6457453ad2e2",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C29",
+      "claim": "Good confirmatory practices involve limiting and reducing degrees of freedom.",
+      "claim_type": "EXPLICIT",
+      "source": "To put the contrast succinctly: productive exploratory research involves taking advantage of degrees of freedom, while good confirmatory practices involve limiting and reducing degrees of freedom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about confirmatory research practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "8920b6bb-6f46-480b-8b62-6d6acaf98a81",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C30",
+      "claim": "Exploration is central to progress in many domains of science.",
+      "claim_type": "EXPLICIT",
+      "source": "While exploration is central to progress in many domains of science, it is rarely made public.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the preceding discussion about the value of exploratory research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "35aa50ff-453f-4b35-a008-b2b659cf246e",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C31",
+      "claim": "Exploration is rarely made public.",
+      "claim_type": "EXPLICIT",
+      "source": "While exploration is central to progress in many domains of science, it is rarely made public.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about current scientific practice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "69f78dd0-4ca1-4c72-8132-59335527f134",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C32",
+      "claim": "The current blueprint for a scientific paper encourages the author to feign omniscience.",
+      "claim_type": "EXPLICIT",
+      "source": "The current blueprint for a scientific paper encourages the author to feign omniscience: the exact correct hypothesis was known a priori, only a small number of confirmatory statistical tests were run to address that hypothesis, and the tests came out exactly as predicted (Grinnell, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Grinnell, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "5a14d202-b8f2-43b5-9e17-b3332ef25871",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C33",
+      "claim": "The omniscience myth in scientific papers involves presenting that the exact correct hypothesis was known a priori, only a small number of confirmatory statistical tests were run to address that hypothesis, and the tests came out exactly as predicted.",
+      "claim_type": "EXPLICIT",
+      "source": "The current blueprint for a scientific paper encourages the author to feign omniscience: the exact correct hypothesis was known a priori, only a small number of confirmatory statistical tests were run to address that hypothesis, and the tests came out exactly as predicted (Grinnell, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Grinnell, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "08b0a62e-b626-4f9a-86a7-d81466bf693b",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C34",
+      "claim": "The omniscience myth is perpetuated by funding agencies and journals that reward these practices.",
+      "claim_type": "EXPLICIT",
+      "source": "This blueprint is further perpetuated by funding agencies and journals that reward these practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the incentive structures in science.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "2b5a1d15-31d6-4fef-8bae-27233eb81cae",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C35",
+      "claim": "Before any confirmatory tests are run, there is often significant exploratory science.",
+      "claim_type": "EXPLICIT",
+      "source": "In reality, before any confirmatory tests are run, there is often significant exploratory science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the scientific process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "91892ee6-737e-4f57-b360-007ac286c74f",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C36",
+      "claim": "Exploration is generally closed.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, perhaps in service of this omniscience myth, exploration is generally closed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about current scientific practice based on the discussion of the omniscience myth.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "4572b4d1-8747-47b1-85fa-b4f614fa159b",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C37",
+      "claim": "By keeping exploration closed, there is little opportunity to improve one's own exploratory practice by studying the methods and strategies used by peers.",
+      "claim_type": "EXPLICIT",
+      "source": "First, by keeping exploration closed, there is little opportunity to improve one's own exploratory practice by studying the methods and strategies used by peers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of closed exploration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "d503105b-5e79-44eb-b395-2d59077f85f2",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C38",
+      "claim": "Closed exploration represents a missed pedagogical opportunity because a big challenge for many young scientists is moving a research program from a blooming, buzzing confusion of infinite scientific possibilities to a specific question worth attempting to confirm.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a missed pedagogical opportunity because a big challenge for many young scientists is moving a research program from a blooming, buzzing confusion of infinite scientific possibilities to a specific question worth attempting to confirm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the pedagogical implications of closed exploration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "eafb65db-bb39-440a-8c73-9ea05e8c4322",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C39",
+      "claim": "Because the standard for current papers is a tight, clean, linear, novel, and confirmatory narrative, researchers are encouraged to mischaracterize their exploratory science as confirmatory science.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, because the standard for current papers is a tight, clean, linear, novel, and confirmatory narrative, researchers are encouraged to mischaracterize their exploratory science as confirmatory science (Wagenmakers et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wagenmakers et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "b4371c9b-96ec-4862-acc8-0f3a746cd737",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C40",
+      "claim": "Many exploratory studies go unreported, contributing to the 'file drawer problem'.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, many exploratory studies go unreported, contributing to the 'file drawer problem' (Rosenthal, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rosenthal, 1979.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "61757da7-79e3-4eb2-b535-328e65a5c465",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C41",
+      "claim": "A consequence of 'closed exploration' is that a research group can waste time and resources on studies that others know will not work.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, a further consequence of 'closed exploration' is that a research group can waste time and resources on studies that others know will not work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of closed exploration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "2930a168-30ec-401e-b009-323426a833df",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C42",
+      "claim": "While closed exploration remains the norm, confirmation will be perceived as the only scientific process worth doing, thus discouraging researchers from doing good or thorough exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifth, while closed exploration remains the norm, confirmation will be perceived as the only scientific process worth doing, thus discouraging researchers from doing good or thorough exploration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of closed exploration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "7f3e6a9d-fbb2-454b-842d-735eef49c027",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C43",
+      "claim": "Open exploration involves making all aspects of the exploratory research pipeline available for others to see what has been done, with what, and how.",
+      "claim_type": "EXPLICIT",
+      "source": "In broad terms open exploration involves making all aspects of the exploratory research pipeline available for others to see what has been done, with what, and how.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition proposed by the authors for open exploration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "01d27d15-9b14-4305-baa0-2362f3e60b6c",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C44",
+      "claim": "Open exploration practices are compatible with current guidelines and initiatives that promote open research.",
+      "claim_type": "EXPLICIT",
+      "source": "Such practices are compatible with current guidelines and initiatives that promote open research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors about the compatibility of open exploration with existing open science frameworks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "8c9a0cb0-6cdb-46e7-a36b-352df244aa37",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C45",
+      "claim": "The transparency and openness promotion (TOP) guidelines were created to outline how research practices, broadly speaking, can be conducted openly.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the transparency and openness promotion (TOP) guidelines were created to outline how research practices, broadly speaking, can be conducted openly (Nosek et al., 2015; https://cos.io/top/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Nosek et al., 2015 and a URL reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "c940c735-3329-4f25-90af-22e0cb7f7599",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C46",
+      "claim": "Exploratory research can adhere to the sections of the TOP guidelines that concern transparency of the data, code, research methods, design and analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Exploratory research can adhere to the sections of these guidelines that concern transparency of the data, code, research methods, design and analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors about how exploratory research fits within the TOP guidelines.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "6c15c4aa-ea40-45e6-9c7f-70acb522fefb",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C47",
+      "claim": "The sections in the TOP guidelines that are not relevant for open exploration are pre-registration (as this demarcates confirmatory from exploratory research) and replication (as this is a type of confirmatory research).",
+      "claim_type": "EXPLICIT",
+      "source": "The sections in the TOP guidelines that are not relevant for open exploration are pre-registration (as this demarcates confirmatory from exploratory research) and replication (as this is a type of confirmatory research).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors about which parts of the TOP guidelines apply to exploratory research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "80aea527-ebd1-4a96-8bc1-608e640181a6",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C48",
+      "claim": "Open exploration complements confirmatory research, rather than being in opposition to it.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in advocating for and thinking about open exploration, it is critical to recognize that open exploration complements confirmatory research, rather than somehow being in opposition to it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual claim made by the authors about the relationship between open exploration and confirmatory research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "199990d9-91d5-4c4f-9f02-47da16cad372",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C49",
+      "claim": "One way to implement open exploration is to include the exploratory science as a distinct section in published papers.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose two concrete ways to instantiate open exploration: i) include the exploratory science as a distinct section in published papers; ii) place exploratory analyses (regardless of the outcome) on citable public repositories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal made by the authors for implementing open exploration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "0c227137-7ecd-4c3e-ae92-055067234799",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C50",
+      "claim": "One way to implement open exploration is to place exploratory analyses (regardless of the outcome) on citable public repositories.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose two concrete ways to instantiate open exploration: i) include the exploratory science as a distinct section in published papers; ii) place exploratory analyses (regardless of the outcome) on citable public repositories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal made by the authors for implementing open exploration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "0fe26e74-2c94-4b2e-a735-e980ee008ad2",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C51",
+      "claim": "The proposed solutions for open exploration will not rectify the entire problem.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we recognize that these solutions will not rectify the entire problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment by the authors about the limitations of their proposals.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "b915674b-e0ba-4e76-afd8-647fda6d4102",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C52",
+      "claim": "The proposed solutions for open exploration are offered as concrete steps forward that are low cost.",
+      "claim_type": "EXPLICIT",
+      "source": "We offer them as concrete steps forward that are low cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization by the authors of their proposals.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "c7a6efe2-c74b-453b-a69d-e77b580e7a16",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C53",
+      "claim": "There is some exploratory research that is already in the open, such as post hoc analyses and fully exploratory studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our proposals aim to promote exploration that does not currently see the light of day. Notably, there is some exploratory research that is already in the open, such as post hoc analyses and fully exploratory studies \u2013 see, for example, the 'exploratory reports' format adopted by the journal Cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about current practices with an example from the journal Cortex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "e737905b-d77b-44e8-8970-e75635c8ea06",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C54",
+      "claim": "The journal Cortex has adopted an 'exploratory reports' format.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there is some exploratory research that is already in the open, such as post hoc analyses and fully exploratory studies \u2013 see, for example, the 'exploratory reports' format adopted by the journal Cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about a specific journal's practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "25558c72-855f-4bdb-967b-e37017528881",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C55",
+      "claim": "The proposals for open exploration are not necessarily novel but are stated to encourage their adoption.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we admit that these proposals are not necessarily novel but they are stated here to encourage their adoption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment by the authors about the novelty of their proposals.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "13c47614-f075-4ea8-b337-e0fa05ab1bae",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C56",
+      "claim": "The authors' experience is primarily in psychology and neuroscience, so their proposals may be best suited to these and related fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, our experience is primarily in psychology and neuroscience, so our proposals may be best suited to these and related fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement by the authors about their own background and the scope of their proposals.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "34344b66-a4ce-4e8f-b807-d6edb9396a40",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C57",
+      "claim": "The authors hope their proposals may be of value to other disciplines that are facing similar challenges as there is nothing discipline-specific about them.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we hope that they may be of value to other disciplines that are facing similar challenges as there is nothing discipline-specific about them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors about the broader applicability of their proposals.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "13702c78-b08c-448b-9a77-b777aa5da211",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C58",
+      "claim": "One way to implement the first suggestion would be to include separate sections in scientific papers for exploration, which may involve an exploratory methods section and an exploratory results section.",
+      "claim_type": "EXPLICIT",
+      "source": "One way to implement the first suggestion would be to include separate sections in scientific papers for exploration. To fit this neatly into current structures, this may involve an exploratory methods section and an exploratory results section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific proposal by the authors for implementing open exploration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "d6be8bea-c047-4703-89fd-9ea3ce5ab557",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C59",
+      "claim": "Exploratory sections in papers would give researchers an opportunity to provide details about pilot studies, initial but incorrect hypotheses, and descriptive and exploratory data analyses that were conducted prior to the confirmatory part of the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the specific implementation, such section(s) would give researchers an opportunity to provide details about pilot studies, initial but incorrect hypotheses, and descriptive and exploratory data analyses that were conducted prior to the confirmatory part of the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors about the benefits of their proposed exploratory sections.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "0db99080-a5ea-44c5-88e6-67754c91b222",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C60",
+      "claim": "Exploratory sections in papers do not need to focus on, if at all, inferential statistical results or power.",
+      "claim_type": "EXPLICIT",
+      "source": "Such section(s) do not need to focus on, if at all, inferential statistical results or power: instead, they should describe the exploratory work that was done and how it led to the hypothesis generation, methods refinement, or any additional insight for the confirmatory research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification by the authors about what should be included in exploratory sections.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "1f1d6f9c-484e-4782-81cb-8c504bbe4633",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C61",
+      "claim": "Exploratory sections should describe the exploratory work that was done and how it led to the hypothesis generation, methods refinement, or any additional insight for the confirmatory research.",
+      "claim_type": "EXPLICIT",
+      "source": "Such section(s) do not need to focus on, if at all, inferential statistical results or power: instead, they should describe the exploratory work that was done and how it led to the hypothesis generation, methods refinement, or any additional insight for the confirmatory research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification by the authors about what should be included in exploratory sections.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "900bbebb-80f2-4a8c-b8c8-4e4b5aadc6f8",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C62",
+      "claim": "Re-imagining the scientific paper with exploratory sections will demonstrate that exploratory research is an important part of the scientific process, instead of discouraging it or pretending it does not occur.",
+      "claim_type": "EXPLICIT",
+      "source": "This re-imagining of the scientific paper will demonstrate that exploratory research is as an important part of the scientific process, instead of discouraging it or pretending it does not occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors about the impact of their proposed changes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "83b875ba-1d0a-40d4-8608-8dcfee4cd3fc",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C63",
+      "claim": "Adopting the first proposal will only make the tip of the exploratory iceberg open.",
+      "claim_type": "EXPLICIT",
+      "source": "Adopting the first proposal will only make the tip of the exploratory iceberg open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference by the authors about the limitations of their first proposal.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "6e449de0-16de-4f56-bd59-05a8bdf0caac",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C64",
+      "claim": "To address the file drawer problem and avoid redundant work by researchers, other exploratory work that is currently considered to be 'non-publishable' must also be placed in the open.",
+      "claim_type": "EXPLICIT",
+      "source": "To address the file drawer problem and avoid redundant work by researchers, other exploratory work that is currently considered to be 'non-publishable' must also be placed in the open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference by the authors about what is needed to address problems with closed exploration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "514aee55-8d26-4b81-9d8c-be5c251ab9bc",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C65",
+      "claim": "The authors do not want to flood the scientific literature with exploratory work that does not necessarily warrant a publication.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we do not want to flood the scientific literature with exploratory work that does not necessarily warrant a publication, so we propose that researchers place their exploratory analysis \u2013 ideally including the code, data (if it is shareable), and descriptions of the study \u2013 on a repository with a citable DOI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consideration by the authors in formulating their second proposal.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "54e955c6-d348-47f5-9b51-b99ea2119458",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C66",
+      "claim": "The authors propose that researchers place their exploratory analysis \u2013 ideally including the code, data (if it is shareable), and descriptions of the study \u2013 on a repository with a citable DOI.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we do not want to flood the scientific literature with exploratory work that does not necessarily warrant a publication, so we propose that researchers place their exploratory analysis \u2013 ideally including the code, data (if it is shareable), and descriptions of the study \u2013 on a repository with a citable DOI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific proposal by the authors for implementing open exploration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "b692f324-be96-4e29-9324-cf15332f17d7",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C67",
+      "claim": "Suitable repositories for exploratory analyses include figshare, Github and osf.io, and these can be integrated with DOIs generated from Zenodo or protocols.io.",
+      "claim_type": "EXPLICIT",
+      "source": "(Suitable repositories include figshare, Github and osf.io, and these can be integrated with DOIs generated from Zenodo or protocols.io).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information about available repositories and DOI services.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "5da0adc0-4481-4be9-8624-a14ab512f559",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C68",
+      "claim": "There are already some instances where exploratory analyses are shared on repositories.",
+      "claim_type": "EXPLICIT",
+      "source": "There are already some instances where exploratory analyses are shared in this way (see, for example, Konkiel, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Konkiel, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "e04ff60a-d5ca-4584-8d65-4ec7d171e594",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C69",
+      "claim": "For wider adoption of sharing exploratory analyses on repositories, developing a standardized template to describe the exploratory repository could be beneficial.",
+      "claim_type": "EXPLICIT",
+      "source": "For wider adoption of this suggestion, and to ease readability of exploratory analyses in repositories, developing a standardized template to describe the exploratory repository could be beneficial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors about what could facilitate adoption of their proposal.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "9c9f4dd0-402f-4abf-93db-15dfb2f8d74e",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C70",
+      "claim": "By giving a place to exploration in journal articles, more parts of the scientific process will be conducted in the open, which would help to dispel the omniscience myth.",
+      "claim_type": "EXPLICIT",
+      "source": "Together they would help to curtail the problems of closed exploration outlined previously: for example, by giving a place to exploration in journal articles, more parts of the scientific process will be conducted in the open, which would help to dispel the omniscience myth, and would also generate material that can be used for future investigations into good exploratory practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors about the benefits of their proposals.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "b13cf19b-a095-48ad-9205-d40c270f53f8",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C71",
+      "claim": "Giving a place to exploration in journal articles would generate material that can be used for future investigations into good exploratory practices.",
+      "claim_type": "EXPLICIT",
+      "source": "Together they would help to curtail the problems of closed exploration outlined previously: for example, by giving a place to exploration in journal articles, more parts of the scientific process will be conducted in the open, which would help to dispel the omniscience myth, and would also generate material that can be used for future investigations into good exploratory practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors about the benefits of their proposals.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "8cb9c591-770d-4a71-b2d3-b0941946ee45",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C72",
+      "claim": "Open exploration may make it possible to conduct meta-exploratory analyses that identifies both successful and under-exploited places in the parameter space to guide future work.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, open exploration may make it possible to conduct meta-exploratory analyses that identifies both successful and under-exploited places in the parameter space to guide future work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors about potential future applications of open exploration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "9adfec4a-5f3d-4f89-bc26-339dfbc89120",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C73",
+      "claim": "Meta-exploratory analyses could be done by reviewing exploratory analysis repositories and presenting a summary of the parameter configurations that have been explored (noting where researcher degrees of freedom appear to make a difference) and the null and positive findings contained in the analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be done by, for example, reviewing exploratory analysis repositories and presenting a summary of the parameter configurations that have been explored (noting where researcher degrees of freedom appear to make a difference) and the null and positive findings contained in the analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors about how meta-exploratory analyses could be conducted.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "a8fe8160-9c09-4b6a-a8b2-9d6edc673814",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C74",
+      "claim": "Some researchers may be hesitant to publicly display exploratory work that is incomplete, such as rough or messy code.",
+      "claim_type": "EXPLICIT",
+      "source": "First, some researchers may be hesitant to publicly display exploratory work that is incomplete, such as rough or messy code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference by the authors about potential concerns researchers might have.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "571886d8-901b-43d8-a9c9-cbf6d7bfc5a7",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C75",
+      "claim": "Sharing any code, even messy or rough code, is better than having no code accompanying an article.",
+      "claim_type": "EXPLICIT",
+      "source": "However, sharing any code, even messy or rough code, is better than having no code accompanying an article: indeed, it has been shown that sharing any code at all increases scientific engagement with articles, as measured by citations, in image processing research (Vandewalle, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Vandewalle, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "479f7757-aebf-4382-91a0-d446f2907c90",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C76",
+      "claim": "It has been shown that sharing any code at all increases scientific engagement with articles, as measured by citations, in image processing research.",
+      "claim_type": "EXPLICIT",
+      "source": "However, sharing any code, even messy or rough code, is better than having no code accompanying an article: indeed, it has been shown that sharing any code at all increases scientific engagement with articles, as measured by citations, in image processing research (Vandewalle, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Vandewalle, 2012 and refers to data about citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "a9ecff1c-52c6-4bbf-b3c5-3b66fe420b02",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C77",
+      "claim": "Gorgolewski and Poldrack (2016) provide advice on sharing code and data.",
+      "claim_type": "EXPLICIT",
+      "source": "See Gorgolewski and Poldrack (2016) for more advice on sharing code (and data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to a source that provides advice on sharing code and data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "d9bfba5a-d7f0-4009-b7c9-3e404f3c143a",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C78",
+      "claim": "It is important that people do not overlook that null exploratory findings could be type-II errors (that is, false negatives).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, it is important that people do not overlook that null exploratory findings could be type-II errors (that is, false negatives).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caution by the authors about interpreting null exploratory findings, based on established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "7be8fc81-d163-4ee3-b4b9-2545271106a4",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C79",
+      "claim": "There is a possibility of more type-I errors (that is, false positives) in open exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, there is also a possibility of more type-I errors (that is, false positives) in open exploration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference by the authors about a potential risk of open exploration, based on statistical knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "ec87d130-ba7e-454c-9fed-800dde589b28",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C80",
+      "claim": "As more exploratory analyses are shared, it may become possible to discriminate between findings worth confirming (be they negative or positive) and type-I or type-II errors due to factors such as a poor experimental design.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as more exploratory analyses are shared, it may become possible to discriminate between findings worth confirming (be they negative or positive) and type-I or type-II errors due to factors such as a poor experimental design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors about potential benefits of open exploration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "250dfff0-7d28-42aa-8f9e-e23e1fefaa61",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C81",
+      "claim": "At present, news of negative results encountered in unpublished work due to poor experimental design can only be spread through word-of-mouth, dissuading others from pursuing this line of research.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, news of negative results encountered in unpublished work due to poor experimental design can only be spread through word-of-mouth, dissuading others from pursuing this line of research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation by the authors about current practices in science.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "d0774dd7-0eba-4e88-adf5-4fc6da3964bb",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C82",
+      "claim": "Open exploration offers the possibility for negative results encountered due to poor experimental design to be evaluated.",
+      "claim_type": "EXPLICIT",
+      "source": "Open exploration offers the possibility for these results to be evaluated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors about a benefit of open exploration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "557d363b-6a03-4577-8d27-a7b672503acb",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C83",
+      "claim": "It is crucial that exploratory work should be seen as a guide for future work, not as definitively confirmed hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, it is crucial that exploratory work should be seen as a guide for future work, not as definitively confirmed hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative statement by the authors about how exploratory work should be interpreted.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "8943d19b-cb00-4b0a-af5f-8e2ce23b123c",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C84",
+      "claim": "There is a concern that positive or negative exploratory results that have not been confirmed may be adopted as facts or falsehoods by the public.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, there is the concern that positive or negative exploratory results that have not been confirmed may be adopted as facts or falsehoods by the public.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference by the authors about a potential concern with open exploration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "cdfbf4af-0e9b-4ac2-8a0a-e66a37d9f8e0",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C85",
+      "claim": "Misleading information already exists and gets proliferated as facts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, misleading information already exists and gets proliferated as facts (see, for example, Nordenstedt and Rosling, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Nordenstedt and Rosling, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "c48fbb0d-fa58-4fee-9fb2-2c60c7f9baee",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C86",
+      "claim": "With greater appreciation of exploration, the distinction between researchers producing tentative exploratory results and hypothesis-driven research will become more apparent to both scientists and a wider audience.",
+      "claim_type": "EXPLICIT",
+      "source": "With greater appreciation of exploration, the distinction between researchers producing tentative exploratory results and hypothesis-driven research will become more apparent to both scientists and a wider audience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors about a potential benefit of open exploration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "82f0f9a5-cf79-4aa3-8be8-4f18e4b96e95",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C87",
+      "claim": "Open science has focused on confirmatory science and neglected exploratory science.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, open science has focused on confirmatory science and neglected exploratory science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference by the authors based on their analysis throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "3f34b3a7-b17e-4b6a-a291-845564ca9b16",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C88",
+      "claim": "Exploration exists, has scientific value, and is mostly closed.",
+      "claim_type": "EXPLICIT",
+      "source": "Exploration exists, has scientific value, and is mostly closed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference by the authors based on their analysis throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "4e8fa49a-97ab-44b8-a065-db6d45e5fb3a",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C89",
+      "claim": "Open exploration involves bringing exploratory science out of the shadows into scientific papers and public repositories.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose open exploration, which involves bringing exploratory science out of the shadows into scientific papers and public repositories, and in doing so unlocks the potential of this essential part of the scientific process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the authors' proposal for open exploration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "c9d23f31-3025-4736-9ceb-e73468413237",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "claim_id": "C90",
+      "claim": "Open exploration unlocks the potential of exploratory science as an essential part of the scientific process.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose open exploration, which involves bringing exploratory science out of the shadows into scientific papers and public repositories, and in doing so unlocks the potential of this essential part of the scientific process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors about the benefits of their proposal.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "577d9eea-77f9-424d-bf88-5fb58438123e",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Open science initiatives have predominantly focused on confirmatory research practices (pre-registration, statistical thresholds, power analysis, replications) while neglecting exploratory research, creating the impression that only confirmatory research belongs in the open science movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide well-cited examples of confirmatory-focused open science practices. C8 and C87 represent reasonable inferences from this pattern. The characterization is supported by multiple citations to established open science literature and represents a fair assessment of the current state of the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "291bd08c-64fc-49c6-a80b-6531d4d9a12b",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Exploratory research serves multiple critical purposes (overview, hypothesis generation, exploring degrees of freedom), has been essential for major scientific discoveries, is valued by advocates, yet remains insufficiently incentivized despite its necessity for scientific progress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 establish the purposes of exploration as general knowledge. C14-C16 provide cited historical examples. C17-C19 cite multiple sources documenting advocacy and increased focus in data science. C20-C21 represent reasonable inferences from the cited literature about the value-incentive mismatch.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "6ec79efe-25e2-42f3-91c9-172e675a253c",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Exploratory research can be conceptualized through degrees of freedom: productive exploration involves leveraging degrees of freedom (in study design, post-hoc analyses, and analysis strategies), while confirmatory research involves limiting them. This distinction has been recognized since at least 1980.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C29 present a coherent conceptual framework. C26 provides historical grounding via Tukey (1980). C27 builds on this foundation. The distinction between exploratory and confirmatory approaches (C28-C29) is logically consistent and well-established in the literature. The framework is internally coherent and appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "50e6a377-a50f-4650-aca3-aece3022fb8c",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Despite being central to scientific progress, exploration is rarely made public due to the 'omniscience myth' in scientific publishing, where papers present a false narrative of predetermined hypotheses and predicted outcomes. This myth is perpetuated by funding agencies and journals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 establish the problem. C32-C33 are supported by citation to Grinnell (2013). C34-C36 represent reasonable inferences about incentive structures and current practices. The characterization of publication norms is consistent with widely recognized issues in scientific publishing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "e273c69a-6d47-4dd3-b15b-f77449c0ce10",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Closed exploration creates five major problems: limited opportunities to learn exploratory methods from peers, mischaracterization of exploratory work as confirmatory, contribution to the file drawer problem, wasted resources on studies others know won't work, and discouragement of thorough exploration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 present logical consequences of closed exploration. C39 and C40 are supported by citations (Wagenmakers et al., 2012; Rosenthal, 1979). The other claims represent reasonable inferences about the pedagogical, scientific, and resource implications of current practices. The problems identified follow logically from the established pattern of closed exploration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "cd112285-fb0f-4e4b-9b4a-7879f225bb0e",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Open exploration involves making all aspects of the exploratory research pipeline transparent and is compatible with existing open science frameworks like the TOP guidelines (excluding pre-registration and replication sections). Open exploration complements rather than opposes confirmatory research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 define open exploration and establish its compatibility with existing frameworks. C45 is well-cited (Nosek et al., 2015). C46-C47 represent reasonable interpretations of how TOP guidelines apply to exploratory work. C48 provides important conceptual clarification. The framework is logically coherent and appropriately grounded in existing open science infrastructure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "7782c96a-ec6c-412b-a654-79e58b6b8499",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose two implementations of open exploration: (1) including exploratory sections in published papers, and (2) placing exploratory analyses on citable public repositories. These are acknowledged as partial solutions that are low-cost, not entirely novel, and primarily suited to psychology/neuroscience but potentially applicable to other fields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C57 present proposals and caveats. While the proposals are clearly articulated and acknowledge limitations (C51, C55), they remain untested recommendations rather than demonstrated results. C53-C54 note existing examples, but the effectiveness and feasibility of widespread adoption remain speculative. The proposals are reasonable but lack empirical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "afd53249-dc5b-4b07-a1fa-d0e26d064b96",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Implementation details for the two proposals include: adding exploratory methods/results sections to papers (focusing on process rather than inferential statistics), and depositing exploratory analyses with code and data on repositories (figshare, Github, osf.io) with DOIs. A standardized template could facilitate adoption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C69 provide specific implementation details. C67 accurately describes available repositories. C68 cites an existing example (Konkiel, 2016). However, these remain proposals without demonstrated effectiveness. The practical challenges of implementation, adoption barriers, and actual impact on scientific practice are not empirically evaluated. The suggestions are reasonable but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "07a93b8c-9890-4fe5-b61c-15924a1e870e",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Open exploration would help dispel the omniscience myth, generate material for investigating good exploratory practices, and enable meta-exploratory analyses to identify successful and under-exploited parameter spaces to guide future research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C73 describe anticipated benefits of open exploration. These are logical predictions based on the proposed framework, but they remain speculative without empirical demonstration. The potential for meta-exploratory analyses (C72-C73) is conceptually interesting but untested. These represent hoped-for outcomes rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "32b7c3c2-4f9a-47e6-9951-b50800fa7f9c",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Concerns about sharing incomplete or messy code are addressed by evidence that sharing any code increases scientific engagement (measured by citations in image processing research), and existing guidance on code/data sharing is available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is supported by citation to Vandewalle (2012) with specific evidence about citations in image processing. C77 provides additional resource citation. However, the generalizability from image processing to other fields is uncertain, and the citation metric may not fully capture scientific value. The core claim about benefits of code sharing has empirical support but limited scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "e97095dc-e12f-4535-b351-557868518345",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Open exploration raises concerns about type-I and type-II errors, but increased sharing may enable discrimination between findings worth confirming and errors due to poor design. Currently, negative results from poor designs spread only by word-of-mouth; open exploration would allow evaluation. Exploratory work should be viewed as guidance, not confirmed hypotheses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C79 correctly identify statistical concerns based on established knowledge. C80-C82 speculate about potential benefits without empirical support. The mechanism by which open exploration would enable discrimination between true findings and errors (C80) is not specified or validated. C83 provides important normative guidance but the practical implementation remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "10e3ee5d-0d23-441f-a30d-b9a3f97f418f",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Concerns that unconfirmed exploratory results may be adopted as facts by the public are mitigated by the observation that misleading information already proliferates, and greater appreciation of exploration will make the distinction between exploratory and confirmatory research more apparent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 is supported by citation (Nordenstedt and Rosling, 2016). However, C86's prediction that greater appreciation will improve public understanding is speculative and potentially optimistic. The argument that existing misinformation justifies potential new sources of confusion (C84-C85) is logically weak. The public communication challenges of open exploration are not adequately addressed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "1746110e-6cb2-4017-a385-b88613298c03",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors conclude that exploration exists, has scientific value, is mostly closed, and that open exploration\u2014bringing exploratory science into papers and repositories\u2014will unlock the potential of this essential part of the scientific process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C90 summarize the manuscript's argument. While C88 is supported by the evidence presented throughout, C90's claim that open exploration will 'unlock the potential' remains speculative without empirical demonstration. The conclusion appropriately synthesizes the argument but overstates the certainty of anticipated benefits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    },
+    {
+      "id": "43115662-279f-4de5-ab06-9fe10b849d8b",
+      "content_id": "40a6d0bb-dd48-45e3-92da-1574dc252e94",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Open exploration will not automatically follow from current open confirmatory practices and requires its own specific protocols and practices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 represent reasonable inferences supported by citation to Munaf\u00f2 et al. (2017). The argument that exploratory research has distinct needs from confirmatory research is consistent with the conceptual framework established throughout the manuscript (particularly C22-C29). This conclusion follows logically from the demonstrated differences between exploratory and confirmatory approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:24:15.787241Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e3bcb98e-e51c-4971-b32c-2bb486362115",
+      "result_id": "577d9eea-77f9-424d-bf88-5fb58438123e"
+    },
+    {
+      "claim_id": "52b8a785-c070-4efc-b7fe-8519f79c9616",
+      "result_id": "577d9eea-77f9-424d-bf88-5fb58438123e"
+    },
+    {
+      "claim_id": "87e2bc96-409b-4a0b-b79e-30eca771faba",
+      "result_id": "577d9eea-77f9-424d-bf88-5fb58438123e"
+    },
+    {
+      "claim_id": "798eb66b-31aa-465f-a106-88a5ea244ad5",
+      "result_id": "577d9eea-77f9-424d-bf88-5fb58438123e"
+    },
+    {
+      "claim_id": "7ecc51d6-bd02-4214-81a6-5a7350ff269c",
+      "result_id": "577d9eea-77f9-424d-bf88-5fb58438123e"
+    },
+    {
+      "claim_id": "f5657284-e0fa-4601-9a2a-20e6a4eecc0e",
+      "result_id": "577d9eea-77f9-424d-bf88-5fb58438123e"
+    },
+    {
+      "claim_id": "2b6092e4-92b2-4f81-8170-b10134d76d05",
+      "result_id": "577d9eea-77f9-424d-bf88-5fb58438123e"
+    },
+    {
+      "claim_id": "be4a536c-dc73-4afd-99d7-fcc69cd8288e",
+      "result_id": "577d9eea-77f9-424d-bf88-5fb58438123e"
+    },
+    {
+      "claim_id": "82f0f9a5-cf79-4aa3-8be8-4f18e4b96e95",
+      "result_id": "577d9eea-77f9-424d-bf88-5fb58438123e"
+    },
+    {
+      "claim_id": "80b8e475-bb7e-46c9-b7d3-059067e8c495",
+      "result_id": "291bd08c-64fc-49c6-a80b-6531d4d9a12b"
+    },
+    {
+      "claim_id": "b9e62bc2-1dd6-48d1-bc1f-3e54c0f8996a",
+      "result_id": "291bd08c-64fc-49c6-a80b-6531d4d9a12b"
+    },
+    {
+      "claim_id": "44a227a1-af56-4c44-bd46-047c8ea7f153",
+      "result_id": "291bd08c-64fc-49c6-a80b-6531d4d9a12b"
+    },
+    {
+      "claim_id": "b2ebe576-e478-48fe-9cad-44cbbdf8f137",
+      "result_id": "291bd08c-64fc-49c6-a80b-6531d4d9a12b"
+    },
+    {
+      "claim_id": "3872e9ef-71c4-453b-84d4-98377eaa2d4f",
+      "result_id": "291bd08c-64fc-49c6-a80b-6531d4d9a12b"
+    },
+    {
+      "claim_id": "2c472701-3476-474f-a5ab-069484b39f65",
+      "result_id": "291bd08c-64fc-49c6-a80b-6531d4d9a12b"
+    },
+    {
+      "claim_id": "4b25c4e8-9c3d-47b6-9f18-d4633d21d863",
+      "result_id": "291bd08c-64fc-49c6-a80b-6531d4d9a12b"
+    },
+    {
+      "claim_id": "04ed8d28-d254-458d-b795-7fed7be94d9b",
+      "result_id": "291bd08c-64fc-49c6-a80b-6531d4d9a12b"
+    },
+    {
+      "claim_id": "e8b5374b-0653-4781-b80c-5ccacd138058",
+      "result_id": "291bd08c-64fc-49c6-a80b-6531d4d9a12b"
+    },
+    {
+      "claim_id": "a6276cf4-76f7-4c8b-a04f-f9871096e97b",
+      "result_id": "291bd08c-64fc-49c6-a80b-6531d4d9a12b"
+    },
+    {
+      "claim_id": "c5275342-6414-4390-92fa-b2e4d51fdc43",
+      "result_id": "291bd08c-64fc-49c6-a80b-6531d4d9a12b"
+    },
+    {
+      "claim_id": "4f8511c1-261f-4227-af44-c6c7c6fbfc71",
+      "result_id": "6ec79efe-25e2-42f3-91c9-172e675a253c"
+    },
+    {
+      "claim_id": "4a7498d4-b89d-4a8c-a49a-e710a1c36895",
+      "result_id": "6ec79efe-25e2-42f3-91c9-172e675a253c"
+    },
+    {
+      "claim_id": "7153ffb3-c631-46c0-91e9-194b31f45df0",
+      "result_id": "6ec79efe-25e2-42f3-91c9-172e675a253c"
+    },
+    {
+      "claim_id": "9c52674b-464b-4902-866a-267842cc0e7e",
+      "result_id": "6ec79efe-25e2-42f3-91c9-172e675a253c"
+    },
+    {
+      "claim_id": "40b27d4f-d495-47fd-a7c9-451170de1de4",
+      "result_id": "6ec79efe-25e2-42f3-91c9-172e675a253c"
+    },
+    {
+      "claim_id": "0b4a0e55-223f-4998-9029-5a4a0bb4cffb",
+      "result_id": "6ec79efe-25e2-42f3-91c9-172e675a253c"
+    },
+    {
+      "claim_id": "d06c1cc4-e3e0-4872-8d05-2b0dc742b22a",
+      "result_id": "6ec79efe-25e2-42f3-91c9-172e675a253c"
+    },
+    {
+      "claim_id": "a1bd7fb4-c35b-4259-8741-6457453ad2e2",
+      "result_id": "6ec79efe-25e2-42f3-91c9-172e675a253c"
+    },
+    {
+      "claim_id": "8920b6bb-6f46-480b-8b62-6d6acaf98a81",
+      "result_id": "50e6a377-a50f-4650-aca3-aece3022fb8c"
+    },
+    {
+      "claim_id": "35aa50ff-453f-4b35-a008-b2b659cf246e",
+      "result_id": "50e6a377-a50f-4650-aca3-aece3022fb8c"
+    },
+    {
+      "claim_id": "69f78dd0-4ca1-4c72-8132-59335527f134",
+      "result_id": "50e6a377-a50f-4650-aca3-aece3022fb8c"
+    },
+    {
+      "claim_id": "5a14d202-b8f2-43b5-9e17-b3332ef25871",
+      "result_id": "50e6a377-a50f-4650-aca3-aece3022fb8c"
+    },
+    {
+      "claim_id": "08b0a62e-b626-4f9a-86a7-d81466bf693b",
+      "result_id": "50e6a377-a50f-4650-aca3-aece3022fb8c"
+    },
+    {
+      "claim_id": "2b5a1d15-31d6-4fef-8bae-27233eb81cae",
+      "result_id": "50e6a377-a50f-4650-aca3-aece3022fb8c"
+    },
+    {
+      "claim_id": "91892ee6-737e-4f57-b360-007ac286c74f",
+      "result_id": "50e6a377-a50f-4650-aca3-aece3022fb8c"
+    },
+    {
+      "claim_id": "4572b4d1-8747-47b1-85fa-b4f614fa159b",
+      "result_id": "e273c69a-6d47-4dd3-b15b-f77449c0ce10"
+    },
+    {
+      "claim_id": "d503105b-5e79-44eb-b395-2d59077f85f2",
+      "result_id": "e273c69a-6d47-4dd3-b15b-f77449c0ce10"
+    },
+    {
+      "claim_id": "eafb65db-bb39-440a-8c73-9ea05e8c4322",
+      "result_id": "e273c69a-6d47-4dd3-b15b-f77449c0ce10"
+    },
+    {
+      "claim_id": "b4371c9b-96ec-4862-acc8-0f3a746cd737",
+      "result_id": "e273c69a-6d47-4dd3-b15b-f77449c0ce10"
+    },
+    {
+      "claim_id": "61757da7-79e3-4eb2-b535-328e65a5c465",
+      "result_id": "e273c69a-6d47-4dd3-b15b-f77449c0ce10"
+    },
+    {
+      "claim_id": "2930a168-30ec-401e-b009-323426a833df",
+      "result_id": "e273c69a-6d47-4dd3-b15b-f77449c0ce10"
+    },
+    {
+      "claim_id": "7f3e6a9d-fbb2-454b-842d-735eef49c027",
+      "result_id": "cd112285-fb0f-4e4b-9b4a-7879f225bb0e"
+    },
+    {
+      "claim_id": "01d27d15-9b14-4305-baa0-2362f3e60b6c",
+      "result_id": "cd112285-fb0f-4e4b-9b4a-7879f225bb0e"
+    },
+    {
+      "claim_id": "8c9a0cb0-6cdb-46e7-a36b-352df244aa37",
+      "result_id": "cd112285-fb0f-4e4b-9b4a-7879f225bb0e"
+    },
+    {
+      "claim_id": "c940c735-3329-4f25-90af-22e0cb7f7599",
+      "result_id": "cd112285-fb0f-4e4b-9b4a-7879f225bb0e"
+    },
+    {
+      "claim_id": "6c15c4aa-ea40-45e6-9c7f-70acb522fefb",
+      "result_id": "cd112285-fb0f-4e4b-9b4a-7879f225bb0e"
+    },
+    {
+      "claim_id": "80aea527-ebd1-4a96-8bc1-608e640181a6",
+      "result_id": "cd112285-fb0f-4e4b-9b4a-7879f225bb0e"
+    },
+    {
+      "claim_id": "199990d9-91d5-4c4f-9f02-47da16cad372",
+      "result_id": "7782c96a-ec6c-412b-a654-79e58b6b8499"
+    },
+    {
+      "claim_id": "0c227137-7ecd-4c3e-ae92-055067234799",
+      "result_id": "7782c96a-ec6c-412b-a654-79e58b6b8499"
+    },
+    {
+      "claim_id": "0fe26e74-2c94-4b2e-a735-e980ee008ad2",
+      "result_id": "7782c96a-ec6c-412b-a654-79e58b6b8499"
+    },
+    {
+      "claim_id": "b915674b-e0ba-4e76-afd8-647fda6d4102",
+      "result_id": "7782c96a-ec6c-412b-a654-79e58b6b8499"
+    },
+    {
+      "claim_id": "c7a6efe2-c74b-453b-a69d-e77b580e7a16",
+      "result_id": "7782c96a-ec6c-412b-a654-79e58b6b8499"
+    },
+    {
+      "claim_id": "e737905b-d77b-44e8-8970-e75635c8ea06",
+      "result_id": "7782c96a-ec6c-412b-a654-79e58b6b8499"
+    },
+    {
+      "claim_id": "25558c72-855f-4bdb-967b-e37017528881",
+      "result_id": "7782c96a-ec6c-412b-a654-79e58b6b8499"
+    },
+    {
+      "claim_id": "13c47614-f075-4ea8-b337-e0fa05ab1bae",
+      "result_id": "7782c96a-ec6c-412b-a654-79e58b6b8499"
+    },
+    {
+      "claim_id": "34344b66-a4ce-4e8f-b807-d6edb9396a40",
+      "result_id": "7782c96a-ec6c-412b-a654-79e58b6b8499"
+    },
+    {
+      "claim_id": "13702c78-b08c-448b-9a77-b777aa5da211",
+      "result_id": "afd53249-dc5b-4b07-a1fa-d0e26d064b96"
+    },
+    {
+      "claim_id": "d6be8bea-c047-4703-89fd-9ea3ce5ab557",
+      "result_id": "afd53249-dc5b-4b07-a1fa-d0e26d064b96"
+    },
+    {
+      "claim_id": "0db99080-a5ea-44c5-88e6-67754c91b222",
+      "result_id": "afd53249-dc5b-4b07-a1fa-d0e26d064b96"
+    },
+    {
+      "claim_id": "1f1d6f9c-484e-4782-81cb-8c504bbe4633",
+      "result_id": "afd53249-dc5b-4b07-a1fa-d0e26d064b96"
+    },
+    {
+      "claim_id": "900bbebb-80f2-4a8c-b8c8-4e4b5aadc6f8",
+      "result_id": "afd53249-dc5b-4b07-a1fa-d0e26d064b96"
+    },
+    {
+      "claim_id": "83b875ba-1d0a-40d4-8608-8dcfee4cd3fc",
+      "result_id": "afd53249-dc5b-4b07-a1fa-d0e26d064b96"
+    },
+    {
+      "claim_id": "6e449de0-16de-4f56-bd59-05a8bdf0caac",
+      "result_id": "afd53249-dc5b-4b07-a1fa-d0e26d064b96"
+    },
+    {
+      "claim_id": "514aee55-8d26-4b81-9d8c-be5c251ab9bc",
+      "result_id": "afd53249-dc5b-4b07-a1fa-d0e26d064b96"
+    },
+    {
+      "claim_id": "54e955c6-d348-47f5-9b51-b99ea2119458",
+      "result_id": "afd53249-dc5b-4b07-a1fa-d0e26d064b96"
+    },
+    {
+      "claim_id": "b692f324-be96-4e29-9324-cf15332f17d7",
+      "result_id": "afd53249-dc5b-4b07-a1fa-d0e26d064b96"
+    },
+    {
+      "claim_id": "5da0adc0-4481-4be9-8624-a14ab512f559",
+      "result_id": "afd53249-dc5b-4b07-a1fa-d0e26d064b96"
+    },
+    {
+      "claim_id": "e04ff60a-d5ca-4584-8d65-4ec7d171e594",
+      "result_id": "afd53249-dc5b-4b07-a1fa-d0e26d064b96"
+    },
+    {
+      "claim_id": "9c9f4dd0-402f-4abf-93db-15dfb2f8d74e",
+      "result_id": "07a93b8c-9890-4fe5-b61c-15924a1e870e"
+    },
+    {
+      "claim_id": "b13cf19b-a095-48ad-9205-d40c270f53f8",
+      "result_id": "07a93b8c-9890-4fe5-b61c-15924a1e870e"
+    },
+    {
+      "claim_id": "8cb9c591-770d-4a71-b2d3-b0941946ee45",
+      "result_id": "07a93b8c-9890-4fe5-b61c-15924a1e870e"
+    },
+    {
+      "claim_id": "9adfec4a-5f3d-4f89-bc26-339dfbc89120",
+      "result_id": "07a93b8c-9890-4fe5-b61c-15924a1e870e"
+    },
+    {
+      "claim_id": "a8fe8160-9c09-4b6a-a8b2-9d6edc673814",
+      "result_id": "32b7c3c2-4f9a-47e6-9951-b50800fa7f9c"
+    },
+    {
+      "claim_id": "571886d8-901b-43d8-a9c9-cbf6d7bfc5a7",
+      "result_id": "32b7c3c2-4f9a-47e6-9951-b50800fa7f9c"
+    },
+    {
+      "claim_id": "479f7757-aebf-4382-91a0-d446f2907c90",
+      "result_id": "32b7c3c2-4f9a-47e6-9951-b50800fa7f9c"
+    },
+    {
+      "claim_id": "a9ecff1c-52c6-4bbf-b3c5-3b66fe420b02",
+      "result_id": "32b7c3c2-4f9a-47e6-9951-b50800fa7f9c"
+    },
+    {
+      "claim_id": "d9bfba5a-d7f0-4009-b7c9-3e404f3c143a",
+      "result_id": "e97095dc-e12f-4535-b351-557868518345"
+    },
+    {
+      "claim_id": "7be8fc81-d163-4ee3-b4b9-2545271106a4",
+      "result_id": "e97095dc-e12f-4535-b351-557868518345"
+    },
+    {
+      "claim_id": "ec87d130-ba7e-454c-9fed-800dde589b28",
+      "result_id": "e97095dc-e12f-4535-b351-557868518345"
+    },
+    {
+      "claim_id": "250dfff0-7d28-42aa-8f9e-e23e1fefaa61",
+      "result_id": "e97095dc-e12f-4535-b351-557868518345"
+    },
+    {
+      "claim_id": "d0774dd7-0eba-4e88-adf5-4fc6da3964bb",
+      "result_id": "e97095dc-e12f-4535-b351-557868518345"
+    },
+    {
+      "claim_id": "557d363b-6a03-4577-8d27-a7b672503acb",
+      "result_id": "e97095dc-e12f-4535-b351-557868518345"
+    },
+    {
+      "claim_id": "8943d19b-cb00-4b0a-af5f-8e2ce23b123c",
+      "result_id": "10e3ee5d-0d23-441f-a30d-b9a3f97f418f"
+    },
+    {
+      "claim_id": "cdfbf4af-0e9b-4ac2-8a0a-e66a37d9f8e0",
+      "result_id": "10e3ee5d-0d23-441f-a30d-b9a3f97f418f"
+    },
+    {
+      "claim_id": "c48fbb0d-fa58-4fee-9fb2-2c60c7f9baee",
+      "result_id": "10e3ee5d-0d23-441f-a30d-b9a3f97f418f"
+    },
+    {
+      "claim_id": "3f34b3a7-b17e-4b6a-a291-845564ca9b16",
+      "result_id": "1746110e-6cb2-4017-a385-b88613298c03"
+    },
+    {
+      "claim_id": "4e8fa49a-97ab-44b8-a065-db6d45e5fb3a",
+      "result_id": "1746110e-6cb2-4017-a385-b88613298c03"
+    },
+    {
+      "claim_id": "c9d23f31-3025-4736-9ceb-e73468413237",
+      "result_id": "1746110e-6cb2-4017-a385-b88613298c03"
+    },
+    {
+      "claim_id": "01959b07-5d61-4e8d-9b5e-b0f7978c5d36",
+      "result_id": "43115662-279f-4de5-ab06-9fe10b849d8b"
+    },
+    {
+      "claim_id": "178aad71-3cba-4a8f-bda4-6ee445f241d3",
+      "result_id": "43115662-279f-4de5-ab06-9fe10b849d8b"
+    }
+  ],
+  "comparisons": []
+}

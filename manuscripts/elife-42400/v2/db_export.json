@@ -1,0 +1,2261 @@
+{
+  "submission": {
+    "id": "865b7e6f-919b-4ab4-aff7-c8e67fad67b2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:27:53.561467Z",
+    "updated_at": "2025-12-02T07:27:53.561467Z"
+  },
+  "content": [
+    {
+      "id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "submission_id": "865b7e6f-919b-4ab4-aff7-c8e67fad67b2",
+      "content_type": "manuscript",
+      "content_text": "# DNA translocation mechanism of an XPD family helicase\n\n## Authors\n\n- Kaiying Cheng<sup>1</sup>\n- Dale B Wigley<sup>1</sup> ([ORCID: 0000-0002-0786-6726](https://orcid.org/0000-0002-0786-6726)) \u2020\n\n### Affiliations\n\n1. Section of Structural Biology, Department of Medicine Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe XPD family of helicases, that includes human disease-related FANCJ, DDX11 and RTEL1, are Superfamily two helicases that contain an iron-sulphur cluster domain, translocate on ssDNA in a 5\u2019\u22123\u2019 direction and play important roles in genome stability. Consequently, mutations in several of these family members in eukaryotes cause human diseases. Family members in bacteria, such as the DinG helicase from Escherichia coli, are also involved in DNA repair. Here we present crystal structures of complexes of DinG bound to single-stranded DNA (ssDNA) in the presence and absence of an ATP analogue (ADP\u2022BeF3), that suggest a mechanism for 5\u2019\u22123\u2019 translocation along the ssDNA substrate. This proposed mechanism has implications for how those enzymes of the XPD family that recognise bulky DNA lesions might stall at these as the first step in initiating DNA repair. Biochemical data reveal roles for conserved residues that are mutated in human diseases.\n\n## Introduction\n\nDNA helicases are enzymes that separate nucleic acid duplexes into their component strands (Singleton et al., 2007). They have been divided into a number of superfamilies on the basis of sequence similarities (Gorbalenya and Koonin, 1993) that have also proved to reveal similarities in mechanism. Although most family members unwind nucleic acid duplexes some, such as chromatin remodellers (Clapier et al., 2017), instead translocate along nucleic acid duplexes without unwinding them and others translocate along single-stranded substrates to displace bound proteins (Jankowsky et al., 2001). The two largest helicase/translocase families are Superfamily 1 (SF1) and Superfamily 2 (SF2). The latter superfamily contains the canonical \u2018DEAD\u2019 box RNA helicases \u2013 a large group of proteins with roles in unwinding RNA substrates in processes such as transcription, splicing and ribosome assembly (Bourgeois et al., 2016). However, this family also contains DNA helicases with roles in a variety of different biological processes.\n\nSF1 and SF2 members are generally monomeric enzymes with ATP-dependent translocation on single-stranded DNA (ssDNA) templates that has a characteristic polarity of either 5\u2019\u22123\u2019 or 3\u2019\u22125\u2019 (Singleton et al., 2007). However, many of these enzymes interact with other proteins in larger, multi subunit complexes (such as RecBCD that contains two SF1 helicases with opposite polarities (Wigley, 2013). Others clearly act cooperatively (Eoff and Raney, 2010). The crystal structures of several proteins have revealed how these enzymes interact with ssDNA and some studies have obtained multiple catalytic states of the proteins that have allowed deduction of their translocation mechanisms. The first enzyme for which this was achieved was the SF1 3\u2019\u22125\u2019 helicase PcrA (Subramanya et al., 1996; Velankar et al., 1999). Similar nucleotide-bound states of the SF2 3\u2019\u22125\u2019 helicase NS3 also revealed how this enzyme couples ATP hydrolysis to ssDNA (or ssRNA) translocation (Gu and Rice, 2010) by a mechanism that is distinct from SF1 enzymes like PcrA. For 5\u2019\u22123\u2019 translocation, structures of the SF1 enzyme RecD2 were also determined to provide yet another translocation mechanism (Saikrishnan et al., 2009). In all three of these example enzymes, although the mechanisms are distinct, the translocation step size that is deduced is one ATP per base. However, an obvious gap in our mechanistic understanding of SF1 and SF2 enzymes is that of a SF2 enzyme capable of 5\u2019\u22123\u2019 translocation.\n\nXPD family enzymes are SF2 helicases with 5\u2019\u22123\u2019 directionality and some, such as XPD itself, recognise bulky DNA lesions (Voloshin et al., 2003; Wirth et al., 2016). XPD itself has a role in DNA repair in archaea and eukaryotes (Houten et al., 2016), although it is not clear that the functions are equivalent in these different kingdoms of life. XPD is a part of the TFIIH complex that does not have a direct equivalent in eubacteria although Escherichia coli contains homologues of XPD (DinG) and XPB (RadD), both of which are subunits of TFIIH in eukaryotes. DinG and RadD are implicated in DNA repair (Voloshin et al., 2003; Thakur et al., 2014; Chen et al., 2015) although their precise functions are poorly defined. Other eukaryotic XPD family members (e.g. RTEL1, FANCJ, DDX11) also have roles in DNA repair as well as other cellular processes including recovery of stalled replication forks and bypassing DNA lesions (Vannier et al., 2014; Bharti et al., 2016; Abe et al., 2018). Consequently, mutations in these genes are linked to cancer and other human diseases (Cerami et al., 2012; Suhasini and Brosh, 2013; Guo et al., 2016; Krassowski et al., 2018). XPD is the only family member for which there is any structural information and this has been limited to crystal structures (Liu et al., 2008; Fan et al., 2008; Wolski et al., 2008; Kuper et al., 2012; Constantinescu-Aruxandei et al., 2016) or cryoEM at medium resolution of the protein in the context of TFIIH (Greber et al., 2017; Schilbach et al., 2017). None is visualised with a ssDNA substrate contacting the entire ssDNA-binding site, or with any ATP analogue. Consequently, a molecular understanding of the mechanism of XPD family enzymes is currently lacking.\n\nDinG is another member of the XPD family, that appears to have a poorly defined role in DNA repair (Voloshin et al., 2003). Additionally, it appears to have a role, by cooperation with UvrD and Rep helicases, both in removing R-loops and removing with RNA polymerase at blocked replication forks (Boubakri et al., 2010). DinG shows specificity for a number of unusual DNA structures such as G-quadruplexes as well as D-loops (Voloshin et al., 2003; Thakur et al., 2014; Voloshin and Camerini-Otero, 2007), a property that is also shared by some other XPD family members like FANCJ (Bharti et al., 2016). DinG has also been reported to have a role in a type I CRISPR system in Acidithiobacillus ferrooxidans (Makarova et al., 2011). These CRISPR-associated DinG proteins are unusual because they lack FeS clusters and contain an N-terminal extension that may be a nuclease domain (McRobbie et al., 2012). The nuclease activity is likely to play an important role in spacer acquisition since these CRISPR systems appear to lack Cas1 and Cas2 proteins.\n\nDespite intensive effort, high resolution structural information about the molecular mechanism of XPD family enzymes has remained elusive. Here, we present the crystal structures of two complexes of E. coli DinG; a binary complex bound to a ssDNA substrate, and a ternary complex with ssDNA and an ATP analogue (ADP\u2022BeF3), that provide information about how these enzymes translocate on DNA. As observed in crystal structures of other SF1 and SF2 helicases (Velankar et al., 1999; Gu and Rice, 2010; Saikrishnan et al., 2009; Sengoku et al., 2006), binding of nucleotide induces a conformational change that involves closure of a cleft between the two canonical helicase domains (Singleton et al., 2007). However, additional changes occur in the detailed interactions between the protein and the bound ssDNA that result in unidirectional translocation in a 5\u2019\u22123\u2019 direction by a mechanism that is supported by biochemical data. The structures also suggest a potential mechanism for how some members of the XPD family of enzymes might recognise and stall at bulky lesions. The structures represent an important advance in our understanding of the mechanism of XPD family enzymes as well as explaining how some of the mutations in these proteins cause deficiencies in their activities.\n\n## Results and discussion\n\n### Overall structure of DinG and comparison with XPD\n\nDinG shares significant similarity to XPD at both the structural and sequence level (Liu et al., 2008; Fan et al., 2008; Wolski et al., 2008; Kuper et al., 2012; Constantinescu-Aruxandei et al., 2016) (Figure 1, Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2). The proteins comprise four domains; the helicase (HD1 and HD2), arch and FeS cluster domains (Figure 1, Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2). The mean r.m.s. deviation of C\u03b1 positions for each of the helicase and arch domains of DinG, superimposed individually on equivalent domains from XPD structures, ranges from 1.8 to 3.3 \u00c5, comparable to the same comparisons between different XPD crystal structures. The canonical SF2 helicase domains (HD1 and HD2) have the expected fold seen in other structures (Singleton et al., 2007), with an ATP-binding site located between them. The FeS domain, that is inserted within the HD1 sequence, contains an iron-sulphur (FeS) cluster at its centre (Figure 1 and Figure 1\u2014figure supplement 3). Although the FeS domains in XPD and DinG are both all \u03b1-helical, are topologically related with respect to coordination of the FeS cluster and occupy very similar positions in the structure, they differ somewhat in fold and sequence (Figure 1\u2014figure supplement 3). The arch domain sits above the other domains and contacts the FeS domain above the ssDNA binding surface. However, the similarity of the helicase and arch domains (that together comprise\u00a0>85% of the protein), to those in XPD, suggest that DinG is a good structural model for other XPD family enzymes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig1-v2.jpg)\n\n**Figure 1.:** (A) The domain arrangement of DinG. The HD1, HD2, 4FeS and Arch domains are coloured in pink, lilac, wheat and green, respectively. Conserved motifs are labelled and listed. Residues labelled in blue participate in ATP hydrolysis, and those in green participate in DNA binding. (B) Cartoon view of the DinG binary complex with ssDNA coloured as in (A). (C) Cartoon view of the DinG ternary complex with ssDNA and ADP\u2022BeF3, coloured as in (A). (D) Superposition of the two structures based on the HD1 domain to illustrate the conformational changes between the structures. The binary complex is in grey and the ternary complex is coloured by domains as in (A).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Sequence alignment was conducted with the Cluster Omega program (https://www.ebi.ac.uk/Tools/msa/clustalo) with manual adjustments to keep the integrity of the secondary structural elements observed from ecDinG and taXPD. 2D structural elements of ecDinG and taXPD are shown by rods for \u03b1-helices and arrows for \u03b2-strands. These elements are coloured according to domains (HD1 in light pink, HD2 in light blue, 4FeS domain in wheat and arch domain in pale green). Amino acid sequences for conserved helicase motifs Q, I, Ia, II-VI are labelled. Residues identified for 4FeS cluster formation (in this study or reported previously) are highlighted in orange. Residues identified for ecDinG and taXPD ATP binding/hydrolysis (in this study or reported previously) are highlighted in blue. Residues identified for ecDinG and taXPD DNA binding/translocation (in this study or reported previously) are highlighted in green. Disease-causing mutations of human DDX11, FANCJ, RTEL1 and XPD are highlighted in purple. Regions that are not conserved across sequences are omitted and shown by numbers in square brackets instead.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Comparison of DinG and hsXPD (taken from PDB 5OF4) structures is shown on the right. ssDNA in the DinG complex is coloured in red.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Fo-Fc electron density maps for the FeS cluster. The map was calculated before inclusion of the cluster in the model, and contoured at 3\u03c3 in green mesh. (B) Simulated annealing omit density (2Fo\u2212Fc) contoured at 1.0\u03c3 in blue mesh around the FeS cluster and the related residues. (C) Sequence alignment of the FeS cluster domain of XPD family members. (D) Superposition of FeS cluster domains of XPD enzymes. (E) Superposition of DinG and hsXPD FeS cluster domains showing the location of two arginine residues (R117 and R211) that interact with the bound ssDNA in DinG which have equivalent residues in hsXPD.\n\n### Structure of the DinG binary complex with ssDNA\n\nThe DinG binary complex structure was solved at 2.5 \u00c5 resolution by two wavelength anomalous diffraction data based on selenomethionine-substituted protein but the final model was built and refined using data from a crystal of native protein. Crystallographic statistics are given in Table 1. Although a twelve base oligo-dT substrate was used in the crystallisation, only eleven bases are evident in the structure suggesting these likely comprise the entire ssDNA-binding site (Figure 2 and Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig2-v2.jpg)\n\n**Figure 2.:** (A) The DNA-binding site for the binary (above) and ternary (below) complexes. The side chains of residues participating in DNA binding are shown as sticks, coloured according to the domains from which they originate (HD1 in pink, HD2 in pale blue). The nucleotides of the bound ssDNA are rainbow coloured in the 5\u2019 (red) to 3\u2019 (blue) direction. The colour scheme for the bases is the same in all figures. (B) Cartoon representation of the same views detailing the contacts between the protein and DNA in each complex.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Electron density corresponding to bound ssDNA in binary (A) and ternary (B) complex structures. Fo-Fc electron density maps were calculated before inclusion of the ssDNA strand in the complex, contoured at 2\u03c3 and shown in green mesh. 2Fo-Fc simulated annealing composite omit electron density was calculated in Phenix, contoured at 1.0 \u03c3 and shown in blue mesh.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) A Fo-Fc electron density map calculated before adding ligand from the refined DinG-DNA-ADP\u2022BeF3 structure, and is contoured at 2\u03c3 in green mesh. (B) A 2Fo-Fc simulated annealing composite omit electron density calculated in Phenix is contoured at 1.0\u03c3 around the ADP\u2022BeF3 with water molecules in blue mesh.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The 5\u2019 end of the ssDNA-binding sites are compared between (A) DinG, (B) XPD (PDB code: 5H8W) and (C) XPD (PDB code: 4AL5). Left, views of electrostatic potential of the ssDNA-binding surface. The potential was determined using the Adaptive Poisson-Boltzmann Solver (APBS) and shown as solvent excluded surface (range=\u00b15) by PyMOL. The ssDNA strand was omitted from the calculations but is overlaid as sticks. Right, cartoon views of the binding sites. The side chains of residues involved in DNA binding and translocation are represented by sticks, and labelled with single-letter codes. Residues are coloured according to their domains (HD1: light pink, HD2: light blue) and elements. P motifs are labelled with a star.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Comparison of (A) DinG and (B) taXPD (PDB code: 4A15) (potential) ssDNA-binding residues in FeS domain. The FeS clusters, DNA strand (in DinG), and a bound sulphate molecule (in taXPD) are shown in sticks. Key residues are labelled and interaction distances are shown.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** The ssDNA bound to exemplar SF1 and SF2 helicases. Structures were initially superimposed based on the ATP (or analogue) bound states of the proteins. Then small manual adjustments were made to best fit the phosphodiester backbones of the ssDNA across equivalent residues. The ssDNA from the DinG ternary complex is shown in red in all panels. (A) Comparison with SF2 3\u2019\u22125\u2019 helicase NS3. The backbone is less curved and several bases are displaced compared to DinG. (B) SF1 5\u2019\u22123\u2019 helicase, RecD2. The backbone is kinked and several bases are displaced compared to DinG. (C) SF1 3\u2019\u22125\u2019 helicase PcrA. The backbone is also kinked (but differently) and several bases are displaced compared to DinG.\n\n**Table 1.**\n Statistics from crystallographic analysis.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Complex</th>\n      <th colspan=\"2\">Se-DinG-DNA</th>\n      <th>DinG-DNA</th>\n      <th>DinG-DNA-ADPBeF3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PDB ID</td>\n      <td>-</td>\n      <td>-</td>\n      <td>6FWR</td>\n      <td>6FWS</td>\n    </tr>\n    <tr>\n      <td>Data collection</td>\n      <td colspan=\"4\"></td>\n    </tr>\n    <tr>\n      <td>Source</td>\n      <td colspan=\"2\">I04</td>\n      <td>I04</td>\n      <td>I04-1</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.9795 (peak)</td>\n      <td>0.9860 (remote)</td>\n      <td>0.9795</td>\n      <td>0.9159</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>59\u20132.6 (2.64\u20132.6)</td>\n      <td>56.2\u20133.4 (3.46\u20133.4)</td>\n      <td>79.59\u20132.5 (2.54\u20132.5)</td>\n      <td>63.37\u20132.5 (2.54\u20132.5)</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P21212</td>\n      <td>P21212</td>\n      <td>P21212</td>\n      <td>P212121</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions: a, b, c</td>\n      <td>99.11, 134.47, 59</td>\n      <td>99.11, 134.47, 59</td>\n      <td>98.97, 133.87, 58.86</td>\n      <td>109.77, 119.75, 126.74</td>\n    </tr>\n    <tr>\n      <td>Obeservation</td>\n      <td>274170 (12271)</td>\n      <td>124833 (6193)</td>\n      <td>166828 (8129)</td>\n      <td>266197 (13044)</td>\n    </tr>\n    <tr>\n      <td>Unique reflections</td>\n      <td>24842 (1169)</td>\n      <td>11591 (559)</td>\n      <td>27857 (1351)</td>\n      <td>58152 (2827)</td>\n    </tr>\n    <tr>\n      <td>Rmerge (%)</td>\n      <td>12.3 (51.7)</td>\n      <td>15.5 (43.7)</td>\n      <td>10.9 (50.3)</td>\n      <td>11.9 (54.1)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3I</td>\n      <td>25.8 (4.7)</td>\n      <td>13.7 (4.9)</td>\n      <td>12.3 (3.3)</td>\n      <td>9.6 (2.6)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.2 (95.3)</td>\n      <td>99.5 (96.7)</td>\n      <td>100 (98)</td>\n      <td>99.5 (98)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>11</td>\n      <td>10.8</td>\n      <td>6.0</td>\n      <td>4.6</td>\n    </tr>\n    <tr>\n      <td>Refinement statistics</td>\n      <td colspan=\"4\"></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>79.95\u20132.5 (2.54\u20132.5)</td>\n      <td>63.37\u20132.5 (2.54\u20132.5)</td>\n    </tr>\n    <tr>\n      <td>Rfactor (%)/Rfree (%)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>21.08/24.57</td>\n      <td>21.91/25.57</td>\n    </tr>\n    <tr>\n      <td>rmsd bonds (\u00c5)/angles (\u00b0)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.008/1.134</td>\n      <td>0.008/1.080</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot: Favored (%)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>97.4</td>\n      <td>96.2</td>\n    </tr>\n  </tbody>\n</table>\n\n_The numbers in parentheses refer to the last shell.Rfactor = \u03a3||F(obs)- F(calc)||/\u03a3|F(obs)|.Rfree\u00a0=\u00a0R factor calculated using 5.0% of the reflection data randomly chosen and omitted from the start of refinement._\n\nOverall, the DNA is kinked but with many bases stacked upon one another along the strand in a conformation that is quite different to that observed previously in any other SF1 or SF2 protein (Figure 2\u2014figure supplement 5). However, the bases contacting HD1 are similar to those in an equivalent position in NS3 except that in NS3 there is a tryptophan residue intercalated between the bases (Gu and Rice, 2010; Kim et al., 1998) that is not conserved in DinG. The bases spanning the HD1 domain, and crossing over to the HD2 domain, are stacked on one another until they encounter a proline-rich strand (P motif) on the HD2 domain, at which point the next base would clash with this strand if stacked on the preceding one so it is flipped up and over this strand. In all, three bases are contacted by the HD1 domain and seven bases contact the HD2 domain, with an additional base spanning the gap between the domains. Two structures of XPD proteins also have bound ssDNA (Kuper et al., 2012; Constantinescu-Aruxandei et al., 2016). However, despite being longer oligonucleotides, only four or five bases are ordered in these structures and they only make contacts with the HD2 domain. Furthermore, the details of the interactions in each structure are inconsistent and both structures differ from those we observe in DinG (Figure 2\u2014figure supplement 3). The reasons for this are unclear although in one case the DNA was chemically crosslinked to the protein, which may have induced some distortions.\n\nThe bound ssDNA sits in a positively-charged groove across the ATPase domains in a similar location, and with the same directional polarity, seen in other SF1 and SF2 helicases (Singleton et al., 2007), and the contacts are mainly with the phosphodiester backbone (Figure 2). Although largely polar hydrogen bonding interactions, some exceptions include two hydrophobic stacking interactions (F615 and F638) with deoxyribose moieties that help to discriminate between DNA and RNA substrates (Figures 2 and 4), as observed previously in other helicases (Saikrishnan et al., 2009).\n\nIn addition to the DNA backbone contacts there are a few contacts with the DNA bases (Figure 2). Notably, there is an aromatic stacking interaction with Tyr636 intercalated between the first and second bases at the 5\u2019 end of the ssDNA on the HD2 domain. Although a similar base intercalation interaction is seen in NS3 (Kim et al., 1998; Gu and Rice, 2010), this is at the opposite end of the bound DNA at the 3\u2019 end and involves a tryptophan residue from the HD1 domain. The bases spanning the HD1 domain, and crossing over to the HD2 domain, are stacked on one another until they encounter the P motif (residues 614-AFPPID-619). The P motif is located in front of the spring-helix and contains several hydrophobic residues, often prolines, that would rigidify this region of the structure. The P motif in the taXPD structure (Kuper et al., 2012; Constantinescu-Aruxandei et al., 2016), also forms a narrow channel (Figure 2\u2014figure supplement 3). The major protein-DNA interactions at the HD1/FeS domain interface are mediated by two arginine residues, R117 and R211 (Figure 1\u2014figure supplement 3). Although the structures of the FeS domain differs between XPD and DinG, there are two basic residues (R88 and K170 in taXPD) that are conserved and interact with a sulphate ion that mimics the DNA phosphodiester backbone (Figure 1\u2014figure supplement 3 and Figure 2\u2014figure supplement 4).\n\n### Structure of DinG ternary complex with ssDNA and ADP\u2022BeF3\n\nThe DinG ternary complex structure was solved at 2.5 \u00c5 resolution by molecular replacement using individual domains of the binary structure, and crystallographic statistics are given in Table 1. The domain architecture of the ternary complex is similar to the binary complex, although there are changes in the relative orientations of the domains (Figure 1). Due to these changes, the protein now interacts with only ten bases of ssDNA (Figure 2). Although there are still three bases contacting HD1 and seven contacting HD2, there is no longer a base spanning the gap between the domains indicating that one of the domains must have slid along the ssDNA onto this base. Since the enzyme has 5\u2019\u22123\u2019 directionality (Voloshin et al., 2003), this would suggest it is the HD2 domain that has done the sliding. Consistent with this notion, the base at position\u00a0+5 (Figure 2) no longer stacks on base\u00a0+6 (as seen in the binary complex) but instead would now clash with the P motif so becomes flipped up and over the strand to occupy the position taken by the\u00a0+4 base in the binary complex. Similarly, the contacts with other bases spanning the HD2 domain are displaced by one base compared to the binary complex. Although many of the ssDNA contacts are similar in both complexes, there are additional contacts between the HD1/FeS domains and the ssDNA in the binary complex than in the ternary complex (Figure 2). By contrast, the number of contacts between ssDNA and the HD2 domain is greater in the ternary complex. The implications of these differences between the structures are discussed below in regard to the translocation mechanism. The principal difference between the structures of DinG in the presence and absence of ADP\u2022BeF3 is a conformational change (Figure 1) similar to that observed for other SF1 and SF2 helicase family members (Singleton et al., 2007). As expected, there is an ADP\u2022BeF3 moiety bound at the interface between the HD1 and HD2 domains (Figure 2\u2014figure supplement 2 and the nucleotide is contacted by several residues in a manner seen previously in other helicases (Singleton et al., 2007). This conformational change results when the cleft between the two canonical helicase/translocase domains closes around the bound nucleotide. The consequences of this conformational change are discussed below.\n\n### A mechanism for translocation of ssDNA in a 5\u2019\u22123\u2019 direction\n\nTranslocation on ssDNA can be in either a 3\u2019\u22125\u2019 or 5\u2019\u22123\u2019 direction (Singleton et al., 2007). Mechanisms for 3\u2019\u22125\u2019 translocation have been described in structural detail for both SF1 (PcrA, (Velankar et al., 1999)) and SF2 (NS3, (Gu and Rice, 2010)) helicases. A mechanism for 5\u2019\u22123\u2019 translocation for a SF1 helicase has also been reported (RecD2, (Saikrishnan et al., 2009)). The mechanisms all suggest a step size of one base per ATP hydrolysed, which is consistent with biochemical measurements (Dillingham et al., 2000).\n\nThe principal differences between the structures we present here are changes in the interactions of the HD1 and HD2 domains that result in sliding of the HD2 domain along the bound ssDNA when ATP binding induces a conformational change (Figure 1 and 2). These changes allow us to propose a mechanism for ssDNA translocation by SF2 5\u2019\u22123\u2019 enzymes such as the XPD family enzymes (Figure 3 and Video 1). Upon initial binding to ssDNA, the protein makes interactions via a groove running across the surface of the ATPase (motor) domains. Upon ATP binding, a conformational change causes the HD2 motor domain to slide along ssDNA, while the HD1 domain retains a tight grip. When ATP is hydrolysed, the enzyme relaxes to the apo state allowing the HD1 domain to slide along ssDNA while the HD2 domain now grips tightly. As with translocation mechanisms for other SF1 and SF2 enzymes (Velankar et al., 1999; Gu and Rice, 2010; Saikrishnan et al., 2009), the key to the mechanism is the regulation of grip for each of the motor domains and how that changes in response to the different nucleotide-bound states of the enzyme. For DinG, in the binary complex, the HD1 domain has a tighter grip than in the ATP-bound (ternary) state. This is achieved by increasing the number of contacts with the residues towards the 3\u2019-end of the ssDNA binding site (Figure 2). By gripping the ssDNA more tightly than the HD2 motor domain, as the conformational change induced by ATP binding closes the cleft between the motor domains, this causes the ssDNA to slide across the surface of the HD2 domain. In doing so, there is a steric clash between the base at position\u00a0+5 and the rigid P motif that forces the base out of a stacked conformation with the adjacent base. After ATP hydrolysis, changes occur that cause HD2 to now have a tighter grip on the 5\u2019 bases (again due to an increased number of interactions) and thus, as the conformational changes open the cleft between the motor domains, the ssDNA slides across the HD1 domain. The consequence of these two steps is translocation along the bound ssDNA in a 5\u2019\u22123\u2019 direction, first across the HD2 domain as ATP binds and then across the HD1 domain after ATP hydrolysis. We note, however, that this is a simple two-step model and we cannot preclude additional steps in the overall reaction cycle but this (likely over simplified) model allows a framework to explain directional translocation by these enzymes in the same way that similar structures have provided a framework to explain translocation by other SF1 and SF2 enzymes (Velankar et al., 1999; Gu and Rice, 2010; Saikrishnan et al., 2009).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig3-v2.jpg)\n\n**Figure 3.:** Cartoons depicting the conformational changes and events during DNA translocation at (A) the domain level, (B) detailed interactions between the bases of the bound ssDNA with the HD1\u00a0+FeS and HD2 domains during a translocation cycle. Dotted lines shown contacts between the protein and DNA. (C) cartoon showing how the HD1 and HD2 domains alter grip on the bound ssDNA at different steps in the translocation. Further details are provided in the text.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The panels highlight the features of helicase translocation for the (A) PcrA SF1 3\u2032\u22125\u2032 DNA helicase, (B) RecD2 SF1 5\u2032\u22123\u2032 DNA helicase, (C) NS3 SF2 3\u2032\u22125\u2032 DNA/RNA helicase and (D) DinG 5\u2032\u22123\u2032 SF2 DNA helicase. The red, blue, or yellow dots represent the HD1, HD2, or FeS domain interactions with the DNA backbone, respectively. The purple dots represent interactions with both the HD1 and HD2 domains. The major aromatic residues involved in stacking interactions are labelled and coloured according to domains (HD1 in red and HD2 in blue). (A) PcrA interacts mainly with DNA bases that stack in hydrophobic pockets on the enzyme surface. Prior to ATP-binding, HD2 has a tighter grip on the ssDNA than does HD1. ATP binding induces a series of conformational changes that force ssDNA to slide by one base across the surface of HD1 and involves bases flipping in and out of pockets across the surface. In the ATP-bound state, HD1 has a tighter grip than HD2 so when ATP hydrolyses and the protein relaxes, the ssDNA now slides across the surface of the HD2 domain, again involving bases flipping in and out of pockets. Details are provided in Velankar et al. (1999). (B) RecD2 interact mainly with the ssDNA backbone with the exception of a base that flips in and out of an open pocket in response to ATP binding and hydrolysis. Initially, ssDNA is bound more tightly by HD1 than HD2 so that when ATP drives domain closure, the ssDNA slides across HD2 - the reverse of PcrA so translocation is in the opposite direction. ATP hydrolysis allows domain opening and the ssDNA slides across the HD1 domain. Details are provided in Saikrishnan et al. (2009). (C) Most interactions are with the DNA backbone but two residues (W501, V432) intercalate between the bases to act as \u2018bookends\u2019 that enclose 5 bases of DNA. The ssDNA is bound more tightly by HD2 than HD1. Upon ATP binding, the HD1 and HD2 domains undergo the canonical domain closure seen in all SF1 and SF2 enzymes reducing the distance between V432 and W501, causing to a base to flip across the W501 side chain so that now just four bases are capped by these residues and the ssDNA has slid across the surface of HD1. ATP hydrolysis allows relaxation of the HD1 and HD2 domains and a base flips over V432 as the protein opens and ssDNA slides across HD2. Details are provided in Gu and Rice (2010). (D) Details are provided in this work.\n\n![Video 1.](https://cdn.elifesciences.org/articles/42400/elife-42400-video1.mp4.jpg)\n\n**Video 1.:** A morph between the two structures showing how ssDNA is translocated across the surface of the protein in response to ATP binding.\n\nAlthough this translocation mechanism is different to that proposed for other helicases, it retains a step size of one ATP per base translocated as deduced for other SF1 and SF2 family enzymes (Velankar et al., 1999; Gu and Rice, 2010; Saikrishnan et al., 2009; Qi et al., 2013). Previous studies have revealed mechanisms for both 3\u2019\u22125\u2019 and 5\u2019\u22123\u2019 translocation in SF1 helicases but just 3\u2019\u22125\u2019 translocation by SF2 enzymes. The work we present here now completes our picture for the mechanisms of translocation in each of the two polarities by the two main families of monomeric, single-strand translocases (Figure 3\u2014figure supplement 1).\n\n### Biochemical data in support of the model\n\nIn order to test the validity of our model, we created a number of site-directed mutant proteins and assessed their biochemical activities (Figure 4 and Figure 4\u2014figure supplement 1). The residues selected all play important roles in the interaction with nucleic acid and the translocation mechanism we propose. The mutant proteins all show defects in various aspects of their biochemical activities to differing degrees. All of the mutants showed defects in ssDNA binding although these were minor for the R117A and R211A mutations in the FeS domain (Figure 4). As a consequence, although we tried to compare ATPase rates, these are very low in the absence of ssDNA (Voloshin et al., 2003) and we were unable to saturate most of the mutants with ssDNA for the assays. As expected, the defects in interaction with ssDNA also resulted in at least 100-fold reduction in helicase activity (Figure 4). Helicase activity was severely impaired even for the R117A and R211A mutations that have lesser effects on ssDNA binding than the other mutations. These data confirm the importance of the residues we have highlighted in the interaction with the DNA substrate and consequently for the translocation mechanism. Consistent with the essential roles we propose, several of the corresponding residues in XPD, FANCJ, DDX11 or RTEL1 are reported to be disease-related (Figure 4). Indeed, mutations in these residues across the ssDNA-binding site in all three proteins are linked to human diseases (Suhasini and Brosh, 2013; Guo et al., 2016; Krassowski et al., 2018) and explain the molecular basis for the deficiencies in activity of these mutant proteins.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig4-v2.jpg)\n\n**Figure 4.:** Residues contacting the 3\u2019-end (A) or the 5\u2019-end (B) of the bound ssDNA that were mutated. (C) Table showing ssDNA binding constants and ssDNA-dependent ATPase activity for wildtype DinG and mutants. The equivalent residues in T. acidophilus XPD (taXPD), human XPD (hsXPD), human DDX11 (hsDDX11), human FANCJ (hsFANCJ) and human RTEL1 (hsRTEL1) are listed and those highlighted in bold are directly linked to human disease. Residues in bold have been found to be mutated and confirmed important for protein function or diseased related (for human XPD, DDX11, FANCJ and RTEL1, the related disease is shown in brackets, \u2018TTD\u2019, Trichothiodystrophy, \u2018XP\u2019, Xeroderma Pigmentosum, \u2018WBS\u2019, Warsaw Breakage Syndrome, \u2018UCEC\u2019, Uterine Corpus Endometrial Carcinoma, \u2018M\u2019, Mixed cancer types, \u2018BC\u2019, Breast cancer, \u2018BLCA\u2019, Bladder Urothelial Carcinoma). This information was obtained from Krassowski et al. (2018) and Cerami et al. (2012). (D) Comparison of helicase activities of wildtype and mutant DinG proteins. Forked DNA substrate (50 nM) was incubated at various concentrations (0.1, 1 and 10 \u03bcM) of enzyme and the products were analysed on 12% native-PAGE. Heat-denatured substrate was run as a positive control.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The raw data curve from MST assays used for Kd determinations. 10 nM ssDNA was incubated with various concentrations (0\u00a0~\u00a040000 nM) of wild type or mutant DinG.\n\n### Implications for DNA damage recognition by XPD family helicases\n\nThe similarity of DinG to other XPD family members provides broader insight into the mechanism of this important class of proteins. Structural studies of XPD (Liu et al., 2008; Fan et al., 2008; Wolski et al., 2008; Kuper et al., 2012; Constantinescu-Aruxandei et al., 2016) have revealed detail about the overall structure of the protein and its interaction with ssDNA. However, only nucleotide-free states have been crystallised and also the observed interactions with bound ssDNA do not span the entire binding site and are not consistent between structures. Consequently, there is a limited understanding of how XPD interacts with DNA, the mechanism of translocation, how it unwinds DNA substrates or how it recognises DNA lesions.\n\nThe step size of one base also raises an intriguing possibility with regard to recognition of bulky DNA lesions by those members of the XPD family that recognise such lesions. A central component of the translocation is the requirement for single bases to flip out of a stacked arrangement as they collide with the rigid and hydrophobic P motif. One of the major lesions recognised by XPD is a thymidine dimer in which adjacent thymidine bases in one strand become crosslinked to one another. Such an arrangement now has consecutive bases locked together so would require them both to flip together with a step of two bases. Consequently, this would be blocked from flipping during translocation and this may constitute one aspect of the damage recognition process, causing the enzyme to stall at these lesions as a signal for repair to initiate. Indeed, consistent with this hypothesis, there is a large hydrophobic pocket on the protein surface in this location, particularly in the binary complex, that could accommodate a variety of bulky lesions such as thymidine dimers (Figures 2 and 5). Our structures show that the pocket dimensions alter during ATP binding and hydrolysis (Figure 5). If the pocket were occupied with a bulky lesion then domain closure would be prevented and hence ATPase would be blocked and translocation would stall (Figure 5\u2014figure supplement 1). Although further work is required to confirm the effects of these changes on enzyme stalling, it has been shown that XPD stalls at bulky lesions on the translocating strand (Wirth et al., 2016).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig5-v2.jpg)\n\n**Figure 5.:** The molecular surface of (A) the binary complex and (B) the ternary complex, coloured by electrostatic charge (negative in red, positive in blue). In the binary complex, a large hydrophobic pocket is present between the ATPase domains, beneath the ssDNA binding site that becomes restricted when ATP binds to the enzyme. The open pocket in the binary complex could accommodate much larger DNA lesions (e.g. cyclopyrimidine dimers) that could not be accommodated in the ternary complex, suggesting that binding of large lesions in this pocket would prevent ATP-induced conformational changes and thereby block translocation. Protein contact potential was calculated in PyMOL and shown as a surface with negative potential coloured in red and positive in blue. The ssDNA strand was omitted from the calculations but is overlaid as sticks.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42400/elife-42400-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) 5\u2019\u22123\u2019 translocation mechanism. Cartoons depict the detailed interactions between the bases of the bound ssDNA with the HD1\u00a0+FeS and HD2 domains during a translocation cycle. (B) Three possible DNA lesion checkpoints. a, cross-linked bases such as CPD can be blocked by P motif and hence stop the translocation. b, Some damaged DNA bases can be recognized and bound by a hydrophobic pocket, and block the protein translocation. c, FeS cluster join in DNA bulky recognition and large DNA bulky can be directly blocked outside of the DNA entrance. Further details are provided in the text.\n\nOur data here expand upon our knowledge of the ssDNA binding site and a mechanism for translocation by these enzymes, as well as supporting a potential mechanism for recognition of base lesions. The roles of different residues in the ssDNA binding site have additional implications for known disease-causing mutations in XPD and other family members. Furthermore, we have mutated several residues in the ssDNA-binding site and several of these have equivalents in XPD, FANCJ, DDX11 or RTEL1 that are associated with human diseases. We can now ascribe a function to these residues to explain the basis of the malfunction of these proteins and expand our understanding of diseases related to mutations in these XPD family members.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (E. Coli, strain K12)</td>\n      <td>DinG</td>\n      <td>NA</td>\n      <td>NCBI-GeneID: 945431</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli BL21 (DE3))</td>\n      <td>E. coli BL21 (DE3)</td>\n      <td>NEB</td>\n      <td>C2527H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid pET28-HMT -DinG (encoding full length E.coli DinG, fused with N-terminal 6\u00a0\u00d7\u00a0His tag, MBP-tag and a TEV protease recognition site)</td>\n      <td>This study</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QuikChangeTM Site-Directed Mutagenesis Kit</td>\n      <td>Stratagene, La Jolla, CA</td>\n      <td>La Jolla, CA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PEG4000</td>\n      <td>sigma</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PEG3350</td>\n      <td>sigma</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BeCl3</td>\n      <td>sigma</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>phosphoenolpyruvate</td>\n      <td>sigma</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>pyruvate kinase</td>\n      <td>sigma</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>lactate dehydrogenase</td>\n      <td>sigma</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ATP</td>\n      <td>sigma</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ADP</td>\n      <td>sigma</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>COOT</td>\n      <td>(Emsley et al., 2010)</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phenix</td>\n      <td>(Adams et al., 2010)</td>\n      <td>https://www.phenix-online.org/documentation/reference/real_space_refine.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Refmac</td>\n      <td>(Murshudov et al., 1997)</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Xia2</td>\n      <td>(Winter et al., 2013)</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL</td>\n      <td>Schrodinger, LLC</td>\n      <td>https://pymol.org/2/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NT Analysis software (NanoTemper)</td>\n      <td>NA</td>\n      <td>https://nanotempertech.com/monolith/</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cloning and site-directed mutagenesis\n\nA list of primers used for cloning and mutagenesis is provided in Supplementary file 1. The full-length gene encoding E. coli DinG (residues 1-716aa) was amplified from E. coli genomic DNA by PCR and cloned into a modified pET28a expression vector, pET28-HMT, which contains a fused N-terminal 6\u00a0\u00d7\u00a0His tag, a MBP-tag and a TEV protease recognition site (His-MBP-TEV). Site directed mutagenesis was performed with a QuikChangeTM Site-Directed Mutagenesis Kit from Stratagene (La Jolla, CA) as described previously (Cheng et al., 2016). The fidelity of the mutants was confirmed by sequencing. Primers used for cloning and mutageneses are listed in Supplementary file 1.\n\n### Protein preparation\n\nIn brief, transformed E. coli BL21 (DE3) clones were grown at 37\u00b0C in LB medium containing 50 \u03bcg/ml Kanamycin to an optical density at 600 nm of 0.6\u20130.8. Protein expression was induced at 30\u00b0C for 5 hr by adding isopropyl-\u03b2-D- thiogalactopyranoside (IPTG) to a final concentration of 0.8 mM. After harvesting, cells were re-suspended in lysis buffer (20 mM Tris (pH 8.0), 1 M NaCl, 0.5 mM TCEP and 5 mM imidazole), lysed by sonication and centrifuged at 18,000\u00a0\u00d7\u00a0g for 60 min at 4\u00b0C. The supernatant was purified on a HisTrap HP column (GE Healthcare, Fairfield, CT), equilibrated with buffer A (20 mM Tris (pH 8.0), 1 M NaCl, 0.5 mM TCEP and 5 mM imidazole), washed with 30 mM imidazole and finally eluted with 300 mM imidazole. After TEV-tag-removal using TEV protease, the protein was dialysed into buffer B (20 mM Tris (pH 8.0), 250 mM NaCl and 0.5 mM TCEP) and re-loaded onto the HisTrap HP column (GE Healthcare) to remove the uncleaved protein. The flow-through fractions were collected and loaded onto a Heparin HP column (GE Healthcare) pre-equilibrated with buffer B. Fractions containing DinG protein was eluted with a linear gradient from 250 mM to 600 mM NaCl. The protein was finally purified by Superdex 200 10/300 GL column (GE Healthcare) with buffer C (20 mM Tris (pH 8.0), 300 mM NaCl and 0.5 mM TCEP). The mutant variants were expressed and purified in the same way. The concentration of proteins was estimated using the extinction coefficient of 78858 M\u20131 cm\u20131 at 278 nm, calculated from the amino acid sequence with the ProtParam tool (www.expasy.ch/tools/protparam.html).\n\n### Crystallization and structure determination\n\nCrystallization trials were carried out by the sitting drop vapour diffusion method at 293 K. Freshly purified DinG was concentrated to\u00a0~4 mg/ml and centrifuged to remove insoluble material before crystallization. To make the DinG-ssDNA complex, protein was mixed with 12 base oligo-dT in a 1:1.2 molar ratio. To prepare the ternary DinG-DNA- ADP\u2022BeF3 complex, 10 mM MgAc, 2 mM ADP, 5 mM NaF and 2 mM BeCl3 were added sequentially and the mixture was incubated on ice for 10 min before setting up the crystallization. Crystals of DinG-ssDNA (binary complex) were obtained in 0.25 M KCl, 0.1M HEPES (pH 7.8) and 22% PEG 3350. Crystals of DinG-DNA-ADP\u2022BeF3 (ternary complex) were obtained in 0.1M MgCl2, 0.1M HEPES (pH 7.0), and 15% PEG4000. Cryo-freezing was achieved as described previously (Cheng et al., 2016) before flash freezing in liquid nitrogen. X-ray diffraction data were collected on beamlines I04 and I04-1 at the Diamond synchrotron X-ray source, and were integrated and scaled with the Xia2 system (Winter et al., 2013). For selenium-labeled crystals, data were collected at two wavelengths, 0.9795 (peak) and 0.9860 (low remote).\n\nInitial phases for the binary complex structure were calculated from the MAD data using PHENIX (Adams et al., 2010), and the MAD data analysis is shown in Table S2. The phases were applied to native data (Table 1) and this map was used for model building and refinement. The ternary complex structure was determined by molecular replacement using separated DinG domains from the binary model as search models in CCP4, followed by rigid-body refinement by Refmac5 (Murshudov et al., 1997). Structures were refined using PHENIX (Adams et al., 2010) and interspersed with manual model building using COOT (Emsley et al., 2010). Later stages of refinement utilized TLS group anisotropic B-factor refinement. The refined binary complex model contained one DinG molecule and one ssDNA molecule in the asymmetric unit, while the ternary complex model contained two DinG complexes in the asymmetric unit. All residues are in the most favourable and allowed regions of the Ramachandran plot. Structure figures were rendered in PyMOL. The statistics for data collection and model refinement are listed in Table 1.\n\n### DNA binding assays\n\nMicroscale thermophoresis (MST) was used to determine ssDNA-binding constants for DinG or mutant variants (Willhoft et al., 2016). Interactions were measured on a temperature equilibrated Monolith NT.115 (NanoTemper), using a 5\u2019FAM fluorescent labelled 14 base oligo-dT. For each set of measurements, a two fold serial-dilution of wild-type DinG or mutant variants concentration (starting at 80 \u03bcM) was prepared at 2x final in MST-Buffer (25 mM Tris (pH 8.0), 200 mM NaCl, 1 mM DTT, 5% Glycerol), before mixing with an equal volume of DNA substrate (also in MST-Buffer), to yield a final substrate concentration of 10 nM. Samples were equilibrated for 15 min before being loaded into Monolith NT.115 MST Premium Coated capillaries (NanoTemper). The system was given a further 15 min to re-equilibrate at 25\u00b0C before beginning each scan. The LED power was set at 20% and the MST power was set to 80% for all experiments. All other settings were left at the default values. Measurements were carried out in triplicates and with different protein batches. Kd fitting was performed on the NT Analysis software (NanoTemper).\n\n### Helicase assays\n\nSubstrate for helicase assays was created by annealing equal amounts of ssDNA 5\u2019- TTTTTTTTTTTTTTAATGTATAATGCGAGCACTGCTACAGCACGG-3\u2019 and 5\u2019- FAM-CCGTGCTGTAGCAGTGCTCGCATTATACATTTTTTTTTTTTTTTT-3\u2019. This forked DNA substrate contains 14 free bases on each tail, and 31 base pairs of duplex. Typically, 50 nM substrate was incubated with various concentrations (0.1, 1 and 10 \u03bcM) of DinG in a 10 \u03bcl reaction mixture containing 50 mM Tris (pH 8.0), 200 mM NaCl, 10 mM MgCl2, 10 \u03bcg/ml bovine serum albumin, 1 mM DDT and 5% glycerol. Unwinding reactions were initiated by adding 2.5 mM ATP, followed by incubation at 37\u00b0C for 20 min and finally stopped by the addition of protease K, SDS and EDTA to 0.1 mg/ml, 1% and 10 mM, respectively. Each set of experiments contained a \u2018positive control\u2019 in which the helicase substrate was heat-denatured by incubation at 95\u00b0C for 5 min followed by quick chilling on ice. Products were separated in 12% TBE-native polyacrylamide gels. The gels were scanned and quantified in fluorescence mode (FAM) on a BIO-RAD ChemiDocTM MP imaging system.\n\n### ATPase assays\n\nATPase activity of DinG was measured using a coupled assay that monitors ADP release as described previously (Willhoft et al., 2016). A final concentration of 100 \u03bcM NADH, 0.5 mM phosphoenolpyruvate, 100 U/ml pyruvate kinase (Sigma), 20 U/ml lactate dehydrogenase (Sigma) were used in all reactions in a final volume of 50 \u03bcl. Typical reactions were conducted using 20 nM purified DinG with or without 200 nM 14 base oligo-dT and 1 mM ATP in reaction buffer (50 mM Tris (pH 8.0), 100 mM NaCl, 10 mM MgCl2, 10 \u03bcg/ml bovine serum albumin, 1 mM DDT). ATP solutions were made with a ratio of 1:1:2 ATP:MgCl2:Tris base. Reactions were conducted by mixing all components immediately prior to transferring to an Optiplate-384 Black Opaque 384-well microplate (Perkin Elmer) that had been pre-incubated at 37\u00b0C. Reactions were initiated with the injection of ATP using the built-in reagent injectors, which were pre-filled with 10\u00a0\u00d7\u00a0ATP solution. Reactions were monitored fluorescently using an excitation of 335 nm and an emission of 469 nm at 37\u00b0C with a CLARIOstar microplate reader (BMG Labtech). The measurements were carried out in triplicate and with different protein batches. All reaction rates were determined from the initial linear rate and reaction kinetics were analysed assuming a Michaelis\u2013Menten model.\n",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "464e7198-5485-402d-8a5e-e3b0b532c2d7",
+      "submission_id": "865b7e6f-919b-4ab4-aff7-c8e67fad67b2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- James M Berger, Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.42400.027](https://doi.org/10.7554/eLife.42400.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"DNA translocation mechanism of an XPD family helicase\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and John Kuriyan as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Kevin Raney (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe present work describes the structure of the DinG helicase, a member of the XPD family of helicases, bound to a ssDNA dT fragment (12 bases) in the absence and presence of ADP\u00b7BeF3. The structure provides important insights on how DinG and other members of the XPD family helicases translocate on ssDNA. Although the observations are similar overall to previous studies made by Wigley et al. suggesting a 1 base pair step size, the molecular details for movement of the ssDNA through the active site differs for DinG compared to other SF1 and 3'-to-5' SF2 helicases. The authors also present a model for how XPD family helicases may recognize bulky lesions based on their structure. The mechanistical impact of the data is significant for the field, as it represents a sub-family that has thus far eluded description in terms of translocation mechanism.\n\nEssential revisions:\n\nThe reviewers have raised several questions that must be addressed in a revised manuscript. Only the first point, below, requires new experimental work.\n\n1) The biochemical section should be completed with ATPase studies for the different variants. It is acknowledged that DNA binding defects can interfere with such an analysis; however, the Arg117 and Arg211 variants should be analyzed in particular, since there are also comparative data available for XPD. DDX11 is not discussed here despite its presence in the analysis.\n\n2) The manuscript needs a more in-depth analysis of the data in the context of the current literature on iron sulfur cluster-containing helicases of the XPD family. In the Abstract two other family members, RTEL1 and FANCJ, are described as other prominent members of this family. However, DDX11 is not mentioned, yet is added in a table where DinG variants were analyzed.\n\nThe work points out that DinG is also involved in DNA repair in E. coli; however, the role of DinG in repair is not explained. Several works (e.g., Boubakri et al., 2012; Hwang et al., 2012; Grodick et al., 2014) should be considered as input for DinG function in DNA repair. It could then also be appreciated that DinG function in repair is not at all comparable to XPD or FANCJ. In addition, helicases like DDX11 or RTEL1 are not repair helicases per se that have a special function in a repair pathway as compared to XPD or FANCJ. It is important that a differentiated Introduction be provided that describes the major players concisely but sufficiently to appreciate the roles they assume in genome maintenance.\n\nSome specific points along this theme include:\n\na) In the subsection \u201cOverall structure of DinG and comparison with XPD\u201d, the differences in the FeS domains of XPD and DinG should be described rather than just mentioning that they are different; a possible influence on DNA binding should also be at least considered. The two arginines in DinG could be more similar to the situation in MutY rather than XPD. Is there anything useful to be gained from considering MutY?\n\nb) In the second paragraph of the subsection \u201cStructure of the DinG binary complex with ssDNA\u201d, it is mentioned that are differences between the structures of XPD and DinG, but these are not described nor are superpositions shown. The corresponding figure in the supplement in which XPD within TFIIH is superimposed with DinG is not very instructive, since it is not mentioned in the text at this position (Figure 1\u2014figure supplement 2) and it does not explain what the significance of the differences is.\n\nc) In the last paragraph of the subsection \u201cStructure of the DinG binary complex with ssDNA\u201d, differences between the FeS domains of XPD and DinG are again mentioned; however, it is difficult to discern in the sequence alignment where the residues are and how the differences manifest on a structural level. A detailed figure illustrating the comparative analysis, perhaps showing a superposition, should be implemented. The figure in the supplement is not very descriptive and the different perspective suggests that there is no significant homology between the FeS domains. Is this the case? If so, it raises questions about the relevance of the findings here for XPD and possibly for other family members as well. Similarly, in XPD, R88 also directly interacts with the FeS cluster, which does not seem to be the case for DinG. Can this be attributed to DNA binding or is this is a real structural difference? The answer may have implications for the generality of some of the findings presented here.\n\n3) A more detailed comparative analysis of the current work with previous translocation mechanisms for other SF1 and SF2 helicases is needed. For example, in the last paragraph of the subsection \u201cA mechanism for translocation of ssDNA in a 5\u2019-3\u2019 direction\u201d, it is proposed that the DinG translocation mechanism is different to other mechanisms, these differences are not elaborated. Similarly, it is stated that the work here completes the mechanisms of translocation for SF1 and SF2 helicases in all directionalities; however, a detailed comparison of the data to previous data is lacking. As a consequence, a general reader cannot appreciate these differences nor the uniqueness of the findings.\n\n4) Many of the mutants discussed in Figure 4 are disease related and should be more thoroughly explained. It should be delineated in which disease specific mutations are implicated and the disease should be explained briefly but correctly. Not all of the mutations mentioned are implicated in cancer as stated in the subsection \u201cBiochemical data in support of the model\u201d, (R112 for instance causes TTD). Warsaw breakage syndrome (DDX11) is not associated with cancerous malignancies. It is important that the basis and possible outcome of every variant analyzed for the respective protein be discussed and explained in the correct context.\n\n5) Regarding damage recognition, has it been shown that all family members of the XPD family come across bulky lesions in their respective pathways? For example, the thymidine dimer mentioned is a very specific nucleotide excision repair (NER) substrate. Since there is no mention of NER in the manuscript, what are the implications here? DDX11, FANCJ and RTEL1 likely do not come across such a lesion in vivo. In prokaryotes, the UvrABC system takes care of NER, so the likelihood that DinG might verify such a lesion is questionable. There are no biochemical data testing a role for the pocket in damage sensing; if there likewise is no sequence or structural conservation of pocket residues within XPD, then this speculation should probably be omitted.\n\nReferences:\n\nGrodick MA, Segal HM, Zwang TJ, Barton JK. DNA-Mediated Signaling by Proteins with 4Fe\u20134S Clusters Is Necessary for Genomic Integrity. J. Am. Chem. Soc., 2014, 136 (17), pp 6470\u20136478. DOI: 10.1021/ja501973c\n\nHwang J, Lee K, Phadtare S, Inouye M. Identification of Two DNA Helicases UvrD and DinG as Suppressors for Lethality Caused by Mutant cspA mRNAs. J Mol Microbiol Biotechnol, 2012, 22:135\u2013146. DOI: 10.1159/000339832\n",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "544a8066-fdf3-4eb6-ae55-03b5e40ea59c",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C1",
+      "claim": "XPD family helicases include human disease-related FANCJ, DDX11 and RTEL1.",
+      "claim_type": "EXPLICIT",
+      "source": "The XPD family of helicases, that includes human disease-related FANCJ, DDX11 and RTEL1, are Superfamily two helicases that contain an iron-sulphur cluster domain, translocate on ssDNA in a 5'\u22123' direction and play important roles in genome stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "e6e7bcfa-78bb-4043-93f9-54601cd44d0f",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C2",
+      "claim": "XPD family helicases are Superfamily two helicases.",
+      "claim_type": "EXPLICIT",
+      "source": "The XPD family of helicases, that includes human disease-related FANCJ, DDX11 and RTEL1, are Superfamily two helicases that contain an iron-sulphur cluster domain, translocate on ssDNA in a 5'\u22123' direction and play important roles in genome stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the classification of XPD family helicases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "5ed2441d-9722-4021-999d-f8ed98707c39",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C3",
+      "claim": "XPD family helicases contain an iron-sulphur cluster domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The XPD family of helicases, that includes human disease-related FANCJ, DDX11 and RTEL1, are Superfamily two helicases that contain an iron-sulphur cluster domain, translocate on ssDNA in a 5'\u22123' direction and play important roles in genome stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and confirmed by structural data in the manuscript.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "4fa26d3c-7e79-48d8-922c-699cf2fc33d7",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C4",
+      "claim": "XPD family helicases translocate on ssDNA in a 5'\u22123' direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The XPD family of helicases, that includes human disease-related FANCJ, DDX11 and RTEL1, are Superfamily two helicases that contain an iron-sulphur cluster domain, translocate on ssDNA in a 5'\u22123' direction and play important roles in genome stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations and data in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "062ec236-12c7-47ba-816f-9bfba3b2d3ba",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C5",
+      "claim": "XPD family helicases play important roles in genome stability.",
+      "claim_type": "EXPLICIT",
+      "source": "The XPD family of helicases, that includes human disease-related FANCJ, DDX11 and RTEL1, are Superfamily two helicases that contain an iron-sulphur cluster domain, translocate on ssDNA in a 5'\u22123' direction and play important roles in genome stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "3fd29d6a-5ed7-419b-b327-651b5efd592a",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C6",
+      "claim": "Mutations in several XPD family members in eukaryotes cause human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, mutations in several of these family members in eukaryotes cause human diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "bc838c4f-25a5-4738-b8b1-e826d1ae7c9c",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C7",
+      "claim": "DinG helicase from Escherichia coli is a family member involved in DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Family members in bacteria, such as the DinG helicase from Escherichia coli, are also involved in DNA repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "e893f34c-e09a-4d0c-aa21-6209f355c67a",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C8",
+      "claim": "Crystal structures of DinG bound to ssDNA in the presence and absence of an ATP analogue (ADP\u2022BeF3) were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present crystal structures of complexes of DinG bound to single-stranded DNA (ssDNA) in the presence and absence of an ATP analogue (ADP\u2022BeF3), that suggest a mechanism for 5'\u22123' translocation along the ssDNA substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main experimental result of the study, supported by crystallographic data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "cbe74412-760e-46a4-b45d-7837e675df2a",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C9",
+      "claim": "The DinG structures suggest a mechanism for 5'\u22123' translocation along the ssDNA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present crystal structures of complexes of DinG bound to single-stranded DNA (ssDNA) in the presence and absence of an ATP analogue (ADP\u2022BeF3), that suggest a mechanism for 5'\u22123' translocation along the ssDNA substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "567e4b37-3ebc-4806-9c18-d7b367d99e5c",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C10",
+      "claim": "The proposed mechanism has implications for how XPD family enzymes that recognise bulky DNA lesions might stall at these lesions as the first step in initiating DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "This proposed mechanism has implications for how those enzymes of the XPD family that recognise bulky DNA lesions might stall at these as the first step in initiating DNA repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the structural mechanism proposed.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "8ee247d3-1d47-423f-b0fd-07c2ba4bc0ac",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C11",
+      "claim": "Biochemical data reveal roles for conserved residues that are mutated in human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical data reveal roles for conserved residues that are mutated in human diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by mutagenesis data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "d98204d7-fe94-49f5-875d-8c0d56fea722",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C12",
+      "claim": "DNA helicases separate nucleic acid duplexes into their component strands.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA helicases are enzymes that separate nucleic acid duplexes into their component strands (Singleton et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about helicase function supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "4bc4bd6a-9c59-4421-83b6-9ac297e6b1ed",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C13",
+      "claim": "Helicases have been divided into a number of superfamilies on the basis of sequence similarities.",
+      "claim_type": "EXPLICIT",
+      "source": "They have been divided into a number of superfamilies on the basis of sequence similarities (Gorbalenya and Koonin, 1993) that have also proved to reveal similarities in mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about helicase classification supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "4298c170-8629-44a3-9834-2517f8465745",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C14",
+      "claim": "Sequence similarities in helicase superfamilies have proved to reveal similarities in mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "They have been divided into a number of superfamilies on the basis of sequence similarities (Gorbalenya and Koonin, 1993) that have also proved to reveal similarities in mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the relationship between sequence and mechanism supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "1adab112-fb80-43bb-9064-ce3698432df7",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C15",
+      "claim": "Some helicase family members, such as chromatin remodellers, translocate along nucleic acid duplexes without unwinding them.",
+      "claim_type": "EXPLICIT",
+      "source": "Although most family members unwind nucleic acid duplexes some, such as chromatin remodellers (Clapier et al., 2017), instead translocate along nucleic acid duplexes without unwinding them and others translocate along single-stranded substrates to displace bound proteins (Jankowsky et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about chromatin remodellers supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "e11b09c7-f16e-4474-b79a-4acc46070dec",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C16",
+      "claim": "Some helicases translocate along single-stranded substrates to displace bound proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Although most family members unwind nucleic acid duplexes some, such as chromatin remodellers (Clapier et al., 2017), instead translocate along nucleic acid duplexes without unwinding them and others translocate along single-stranded substrates to displace bound proteins (Jankowsky et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about helicase function supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "5e6c102c-4da6-4b8b-91b7-8f3129a8f122",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C17",
+      "claim": "Superfamily 2 contains the canonical 'DEAD' box RNA helicases.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter superfamily contains the canonical 'DEAD' box RNA helicases \u2013 a large group of proteins with roles in unwinding RNA substrates in processes such as transcription, splicing and ribosome assembly (Bourgeois et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about SF2 helicase classification supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "ab41a3ce-a8ea-4c2d-b911-ee4fccefc344",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C18",
+      "claim": "DEAD box RNA helicases have roles in unwinding RNA substrates in processes such as transcription, splicing and ribosome assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter superfamily contains the canonical 'DEAD' box RNA helicases \u2013 a large group of proteins with roles in unwinding RNA substrates in processes such as transcription, splicing and ribosome assembly (Bourgeois et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about DEAD box helicase function supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "aa1ff072-7e80-4137-94fc-5a5c2c822109",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C19",
+      "claim": "SF1 and SF2 members are generally monomeric enzymes with ATP-dependent translocation on single-stranded DNA templates.",
+      "claim_type": "EXPLICIT",
+      "source": "SF1 and SF2 members are generally monomeric enzymes with ATP-dependent translocation on single-stranded DNA (ssDNA) templates that has a characteristic polarity of either 5'\u22123' or 3'\u22125' (Singleton et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about SF1 and SF2 helicases supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "c0f3fc07-4cb4-406f-a9ab-ceb59077eba5",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C20",
+      "claim": "SF1 and SF2 helicase translocation has a characteristic polarity of either 5'\u22123' or 3'\u22125'.",
+      "claim_type": "EXPLICIT",
+      "source": "SF1 and SF2 members are generally monomeric enzymes with ATP-dependent translocation on single-stranded DNA (ssDNA) templates that has a characteristic polarity of either 5'\u22123' or 3'\u22125' (Singleton et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about helicase directionality supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "8c99b021-e31b-45af-8e04-e49184f36cb0",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C21",
+      "claim": "RecBCD contains two SF1 helicases with opposite polarities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many of these enzymes interact with other proteins in larger, multi subunit complexes (such as RecBCD that contains two SF1 helicases with opposite polarities (Wigley, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about RecBCD composition supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "88895b45-7561-4439-9a8d-92dd75dacaaa",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C22",
+      "claim": "PcrA is a SF1 3'\u22125' helicase.",
+      "claim_type": "EXPLICIT",
+      "source": "The first enzyme for which this was achieved was the SF1 3'\u22125' helicase PcrA (Subramanya et al., 1996; Velankar et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about PcrA classification supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "0f700b4b-a89a-4053-bee3-4807bb5ffb2c",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C23",
+      "claim": "NS3 is a SF2 3'\u22125' helicase.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar nucleotide-bound states of the SF2 3'\u22125' helicase NS3 also revealed how this enzyme couples ATP hydrolysis to ssDNA (or ssRNA) translocation (Gu and Rice, 2010) by a mechanism that is distinct from SF1 enzymes like PcrA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about NS3 classification supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "702a71fe-e6c0-48e0-b5e9-991b3d1960d0",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C24",
+      "claim": "NS3 couples ATP hydrolysis to ssDNA (or ssRNA) translocation by a mechanism that is distinct from SF1 enzymes like PcrA.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar nucleotide-bound states of the SF2 3'\u22125' helicase NS3 also revealed how this enzyme couples ATP hydrolysis to ssDNA (or ssRNA) translocation (Gu and Rice, 2010) by a mechanism that is distinct from SF1 enzymes like PcrA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about NS3 mechanism supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "e13df805-ec70-4fa9-9d63-fb22949c25aa",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C25",
+      "claim": "RecD2 is a SF1 enzyme with 5'\u22123' translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "For 5'\u22123' translocation, structures of the SF1 enzyme RecD2 were also determined to provide yet another translocation mechanism (Saikrishnan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about RecD2 classification and directionality supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "0133e257-b794-4138-a311-295485a04021",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C26",
+      "claim": "In PcrA, NS3, and RecD2, the translocation step size that is deduced is one ATP per base.",
+      "claim_type": "EXPLICIT",
+      "source": "In all three of these example enzymes, although the mechanisms are distinct, the translocation step size that is deduced is one ATP per base.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about translocation step size supported by inference from cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "21fa066a-8003-4782-8dd2-bc4124f3df1e",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C27",
+      "claim": "There is a gap in mechanistic understanding of SF2 enzymes capable of 5'\u22123' translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, an obvious gap in our mechanistic understanding of SF1 and SF2 enzymes is that of a SF2 enzyme capable of 5'\u22123' translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "594f8e16-4b0f-490b-9a13-4c7478fbcc24",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C28",
+      "claim": "XPD family enzymes are SF2 helicases with 5'\u22123' directionality.",
+      "claim_type": "EXPLICIT",
+      "source": "XPD family enzymes are SF2 helicases with 5'\u22123' directionality and some, such as XPD itself, recognise bulky DNA lesions (Voloshin et al., 2003; Wirth et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about XPD family classification supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "66c18092-8211-471a-afd5-afa6ca61aeb9",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C29",
+      "claim": "Some XPD family enzymes, such as XPD itself, recognise bulky DNA lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "XPD family enzymes are SF2 helicases with 5'\u22123' directionality and some, such as XPD itself, recognise bulky DNA lesions (Voloshin et al., 2003; Wirth et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about XPD function supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "60d400df-bb9a-4ed0-bf85-6cbb6f4dfac2",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C30",
+      "claim": "XPD has a role in DNA repair in archaea and eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "XPD itself has a role in DNA repair in archaea and eukaryotes (Houten et al., 2016), although it is not clear that the functions are equivalent in these different kingdoms of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about XPD function supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "52988e02-d2a8-4b33-aab8-71ab988c5c5f",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C31",
+      "claim": "It is not clear that XPD functions are equivalent in archaea and eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "XPD itself has a role in DNA repair in archaea and eukaryotes (Houten et al., 2016), although it is not clear that the functions are equivalent in these different kingdoms of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about uncertainty in XPD function across kingdoms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "77d5696a-d423-4c8c-a20b-7aeca071445b",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C32",
+      "claim": "Escherichia coli contains homologues of XPD (DinG) and XPB (RadD).",
+      "claim_type": "EXPLICIT",
+      "source": "XPD is a part of the TFIIH complex that does not have a direct equivalent in eubacteria although Escherichia coli contains homologues of XPD (DinG) and XPB (RadD), both of which are subunits of TFIIH in eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about E. coli proteins and their relationship to eukaryotic proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "098b103b-1e2b-427a-bf59-dd0d2b558597",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C33",
+      "claim": "DinG and RadD are implicated in DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "DinG and RadD are implicated in DNA repair (Voloshin et al., 2003; Thakur et al., 2014; Chen et al., 2015) although their precise functions are poorly defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about DinG and RadD function supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "643011b0-3781-483a-8324-0661664d07ec",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C34",
+      "claim": "The precise functions of DinG and RadD are poorly defined.",
+      "claim_type": "EXPLICIT",
+      "source": "DinG and RadD are implicated in DNA repair (Voloshin et al., 2003; Thakur et al., 2014; Chen et al., 2015) although their precise functions are poorly defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge regarding DinG and RadD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "fc983beb-b837-485c-b903-a267f438b896",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C35",
+      "claim": "Eukaryotic XPD family members (e.g. RTEL1, FANCJ, DDX11) have roles in DNA repair as well as other cellular processes including recovery of stalled replication forks and bypassing DNA lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Other eukaryotic XPD family members (e.g. RTEL1, FANCJ, DDX11) also have roles in DNA repair as well as other cellular processes including recovery of stalled replication forks and bypassing DNA lesions (Vannier et al., 2014; Bharti et al., 2016; Abe et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about XPD family member functions supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "9f3b1422-0c9b-41b9-8086-8569a24cd4c6",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C36",
+      "claim": "Mutations in RTEL1, FANCJ, and DDX11 genes are linked to cancer and other human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, mutations in these genes are linked to cancer and other human diseases (Cerami et al., 2012; Suhasini and Brosh, 2013; Guo et al., 2016; Krassowski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about disease associations supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "0fdb4880-4b10-4093-a4b5-d6fc52a80eff",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C37",
+      "claim": "XPD is the only XPD family member for which there is any structural information.",
+      "claim_type": "EXPLICIT",
+      "source": "XPD is the only family member for which there is any structural information and this has been limited to crystal structures (Liu et al., 2008; Fan et al., 2008; Wolski et al., 2008; Kuper et al., 2012; Constantinescu-Aruxandei et al., 2016) or cryoEM at medium resolution of the protein in the context of TFIIH (Greber et al., 2017; Schilbach et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of structural knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "dd7039d0-ccf0-41c5-adee-2dcec40a694f",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C38",
+      "claim": "No XPD structure is visualised with a ssDNA substrate contacting the entire ssDNA-binding site, or with any ATP analogue.",
+      "claim_type": "EXPLICIT",
+      "source": "None is visualised with a ssDNA substrate contacting the entire ssDNA-binding site, or with any ATP analogue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of existing XPD structures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "62135e31-c909-4879-8513-8e6ea3f554ee",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C39",
+      "claim": "A molecular understanding of the mechanism of XPD family enzymes is currently lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, a molecular understanding of the mechanism of XPD family enzymes is currently lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "edcc378b-44f6-449a-b67c-6a838acad1e9",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C40",
+      "claim": "DinG appears to have a poorly defined role in DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "DinG is another member of the XPD family, that appears to have a poorly defined role in DNA repair (Voloshin et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about DinG function supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "759d7f7b-9d5a-459f-97db-13ec62cca62c",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C41",
+      "claim": "DinG has a role, by cooperation with UvrD and Rep helicases, both in removing R-loops and removing with RNA polymerase at blocked replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, it appears to have a role, by cooperation with UvrD and Rep helicases, both in removing R-loops and removing with RNA polymerase at blocked replication forks (Boubakri et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about DinG function supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "164144bf-17ec-48b1-a0ba-e9cfe5a8af29",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C42",
+      "claim": "DinG shows specificity for a number of unusual DNA structures such as G-quadruplexes as well as D-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "DinG shows specificity for a number of unusual DNA structures such as G-quadruplexes as well as D-loops (Voloshin et al., 2003; Thakur et al., 2014; Voloshin and Camerini-Otero, 2007), a property that is also shared by some other XPD family members like FANCJ (Bharti et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about DinG substrate specificity supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "6c81c4b5-5fa8-4458-b4b9-4800271be24d",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C43",
+      "claim": "FANCJ shares the property of specificity for unusual DNA structures with DinG.",
+      "claim_type": "EXPLICIT",
+      "source": "DinG shows specificity for a number of unusual DNA structures such as G-quadruplexes as well as D-loops (Voloshin et al., 2003; Thakur et al., 2014; Voloshin and Camerini-Otero, 2007), a property that is also shared by some other XPD family members like FANCJ (Bharti et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about FANCJ substrate specificity supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "0f810320-0339-4479-933c-99073fbb056d",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C44",
+      "claim": "DinG has been reported to have a role in a type I CRISPR system in Acidithiobacillus ferrooxidans.",
+      "claim_type": "EXPLICIT",
+      "source": "DinG has also been reported to have a role in a type I CRISPR system in Acidithiobacillus ferrooxidans (Makarova et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about DinG function in CRISPR systems supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "779152db-e980-452d-bd29-03eac71011fd",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C45",
+      "claim": "CRISPR-associated DinG proteins are unusual because they lack FeS clusters and contain an N-terminal extension that may be a nuclease domain.",
+      "claim_type": "EXPLICIT",
+      "source": "These CRISPR-associated DinG proteins are unusual because they lack FeS clusters and contain an N-terminal extension that may be a nuclease domain (McRobbie et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about CRISPR-associated DinG proteins supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "a0ba6856-7411-497b-ac2a-954c1c08699c",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C46",
+      "claim": "The nuclease activity of CRISPR-associated DinG is likely to play an important role in spacer acquisition since these CRISPR systems appear to lack Cas1 and Cas2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclease activity is likely to play an important role in spacer acquisition since these CRISPR systems appear to lack Cas1 and Cas2 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the role of nuclease activity based on the absence of Cas1 and Cas2.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "2f5ee3f0-1181-4f5a-b457-861268d53508",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C47",
+      "claim": "High resolution structural information about the molecular mechanism of XPD family enzymes has remained elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite intensive effort, high resolution structural information about the molecular mechanism of XPD family enzymes has remained elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of structural knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "0800ff5a-d825-4be2-b312-e6ab3d29f6d0",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C48",
+      "claim": "The crystal structures of two complexes of E. coli DinG provide information about how these enzymes translocate on DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the crystal structures of two complexes of E. coli DinG; a binary complex bound to a ssDNA substrate, and a ternary complex with ssDNA and an ATP analogue (ADP\u2022BeF3), that provide information about how these enzymes translocate on DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the main findings of the study supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "bd6b3eb9-9874-4ee0-8ec3-933a4d999def",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C49",
+      "claim": "Binding of nucleotide induces a conformational change that involves closure of a cleft between the two canonical helicase domains.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in crystal structures of other SF1 and SF2 helicases (Velankar et al., 1999; Gu and Rice, 2010; Saikrishnan et al., 2009; Sengoku et al., 2006), binding of nucleotide induces a conformational change that involves closure of a cleft between the two canonical helicase domains (Singleton et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about conformational changes observed in the structures, supported by comparison to other helicases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "8813070e-d9fb-493f-811e-8f372f2da8fc",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C50",
+      "claim": "Additional changes occur in the detailed interactions between the protein and the bound ssDNA that result in unidirectional translocation in a 5'\u22123' direction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, additional changes occur in the detailed interactions between the protein and the bound ssDNA that result in unidirectional translocation in a 5'\u22123' direction by a mechanism that is supported by biochemical data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and biochemical data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "8a150bc7-80a0-498f-8bfa-adcfd397e188",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C51",
+      "claim": "The structures suggest a potential mechanism for how some members of the XPD family of enzymes might recognise and stall at bulky lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures also suggest a potential mechanism for how some members of the XPD family of enzymes might recognise and stall at bulky lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "b4a938ba-3388-4ec9-a422-cd6146dcfad0",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C52",
+      "claim": "The structures represent an important advance in understanding the mechanism of XPD family enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures represent an important advance in our understanding of the mechanism of XPD family enzymes as well as explaining how some of the mutations in these proteins cause deficiencies in their activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "68434014-b71e-4a1a-a47d-1d3bf7a55720",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C53",
+      "claim": "The structures explain how some mutations in XPD family proteins cause deficiencies in their activities.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures represent an important advance in our understanding of the mechanism of XPD family enzymes as well as explaining how some of the mutations in these proteins cause deficiencies in their activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "f5ca182d-bb19-4ed1-aeb4-2dbf5381e73d",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C54",
+      "claim": "DinG shares significant similarity to XPD at both the structural and sequence level.",
+      "claim_type": "EXPLICIT",
+      "source": "DinG shares significant similarity to XPD at both the structural and sequence level (Liu et al., 2008; Fan et al., 2008; Wolski et al., 2008; Kuper et al., 2012; Constantinescu-Aruxandei et al., 2016) (Figure 1, Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about structural and sequence similarity supported by citations and figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "6cb118b2-2931-42aa-9ff2-dd7bdf015ffe",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C55",
+      "claim": "DinG and XPD comprise four domains: helicase (HD1 and HD2), arch and FeS cluster domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The proteins comprise four domains; the helicase (HD1 and HD2), arch and FeS cluster domains (Figure 1, Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about protein domain architecture supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "6fa62d4c-9081-4e35-8270-676d4ab25d8c",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C56",
+      "claim": "The mean r.m.s. deviation of C\u03b1 positions for each of the helicase and arch domains of DinG, superimposed individually on equivalent domains from XPD structures, ranges from 1.8 to 3.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean r.m.s. deviation of C\u03b1 positions for each of the helicase and arch domains of DinG, superimposed individually on equivalent domains from XPD structures, ranges from 1.8 to 3.3 \u00c5, comparable to the same comparisons between different XPD crystal structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about structural similarity based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "d29951c2-9526-46ae-a6b6-f88dd352826a",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C57",
+      "claim": "The canonical SF2 helicase domains (HD1 and HD2) have the expected fold seen in other structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The canonical SF2 helicase domains (HD1 and HD2) have the expected fold seen in other structures (Singleton et al., 2007), with an ATP-binding site located between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about domain structure supported by comparison to other helicases.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "ebe939f9-0fcc-4a94-a366-7912743650ed",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C58",
+      "claim": "The FeS domain contains an iron-sulphur (FeS) cluster at its centre.",
+      "claim_type": "EXPLICIT",
+      "source": "The FeS domain, that is inserted within the HD1 sequence, contains an iron-sulphur (FeS) cluster at its centre (Figure 1 and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the FeS domain structure supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "386cdcd1-42cd-4956-a876-f58db69a4945",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C59",
+      "claim": "The FeS domains in XPD and DinG are both all \u03b1-helical, are topologically related with respect to coordination of the FeS cluster and occupy very similar positions in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the FeS domains in XPD and DinG are both all \u03b1-helical, are topologically related with respect to coordination of the FeS cluster and occupy very similar positions in the structure, they differ somewhat in fold and sequence (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about FeS domain similarity and differences supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "93d893ca-d2ef-4c80-aebb-d9d6ba59e5ed",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C60",
+      "claim": "The FeS domains in XPD and DinG differ somewhat in fold and sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the FeS domains in XPD and DinG are both all \u03b1-helical, are topologically related with respect to coordination of the FeS cluster and occupy very similar positions in the structure, they differ somewhat in fold and sequence (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about FeS domain differences supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "cd0ef2c9-ef94-41ae-b679-e8ab743d37c0",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C61",
+      "claim": "The arch domain sits above the other domains and contacts the FeS domain above the ssDNA binding surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The arch domain sits above the other domains and contacts the FeS domain above the ssDNA binding surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about domain arrangement supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "cc38e3bc-5feb-411d-a78e-f04aa1fb9982",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C62",
+      "claim": "The similarity of the helicase and arch domains to those in XPD suggest that DinG is a good structural model for other XPD family enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the similarity of the helicase and arch domains (that together comprise >85% of the protein), to those in XPD, suggest that DinG is a good structural model for other XPD family enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural similarity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "b8b38a78-3eb6-4439-aab5-42c7919e310f",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C63",
+      "claim": "The DinG binary complex structure was solved at 2.5 \u00c5 resolution by two wavelength anomalous diffraction data based on selenomethionine-substituted protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The DinG binary complex structure was solved at 2.5 \u00c5 resolution by two wavelength anomalous diffraction data based on selenomethionine-substituted protein but the final model was built and refined using data from a crystal of native protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the crystallographic methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "602ad481-2ae4-40f3-8855-afe70e424287",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C64",
+      "claim": "Although a twelve base oligo-dT substrate was used in the crystallisation, only eleven bases are evident in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a twelve base oligo-dT substrate was used in the crystallisation, only eleven bases are evident in the structure suggesting these likely comprise the entire ssDNA-binding site (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the observed ssDNA in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "ee2ae228-6ee8-49ae-a98b-06d8352e9b02",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C65",
+      "claim": "Eleven bases likely comprise the entire ssDNA-binding site of DinG.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a twelve base oligo-dT substrate was used in the crystallisation, only eleven bases are evident in the structure suggesting these likely comprise the entire ssDNA-binding site (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "d1254238-aadc-4088-83db-46e6e6c98101",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C66",
+      "claim": "The DNA is kinked but with many bases stacked upon one another along the strand in a conformation that is quite different to that observed previously in any other SF1 or SF2 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the DNA is kinked but with many bases stacked upon one another along the strand in a conformation that is quite different to that observed previously in any other SF1 or SF2 protein (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about DNA conformation supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "eec79aa0-ea68-44d8-9592-5dfaf4702180",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C67",
+      "claim": "The bases contacting HD1 are similar to those in an equivalent position in NS3 except that in NS3 there is a tryptophan residue intercalated between the bases that is not conserved in DinG.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the bases contacting HD1 are similar to those in an equivalent position in NS3 except that in NS3 there is a tryptophan residue intercalated between the bases (Gu and Rice, 2010; Kim et al., 1998) that is not conserved in DinG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about structural similarity and differences supported by comparison to NS3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "d7c75b90-21b6-40b2-bfe1-55d0b1ec3ff5",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C68",
+      "claim": "Three bases contact the HD1 domain and seven bases contact the HD2 domain, with an additional base spanning the gap between the domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In all, three bases are contacted by the HD1 domain and seven bases contact the HD2 domain, with an additional base spanning the gap between the domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about protein-DNA contacts supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "9f87cf8c-2c96-4f86-896c-71072ad310c5",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C69",
+      "claim": "Two structures of XPD proteins have bound ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Two structures of XPD proteins also have bound ssDNA (Kuper et al., 2012; Constantinescu-Aruxandei et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about existing XPD structures supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "c78a3678-35bd-4830-8317-984fece80c23",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C70",
+      "claim": "In XPD structures with bound ssDNA, only four or five bases are ordered and they only make contacts with the HD2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite being longer oligonucleotides, only four or five bases are ordered in these structures and they only make contacts with the HD2 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about XPD structures supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "3d629196-0bc6-4d96-9cf3-f4b593d96e6a",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C71",
+      "claim": "The details of the interactions in each XPD structure are inconsistent and both structures differ from those observed in DinG.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the details of the interactions in each structure are inconsistent and both structures differ from those we observe in DinG (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about differences between structures supported by comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "e707d0a1-0bcc-4172-ac74-28859594a8c3",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C72",
+      "claim": "The bound ssDNA sits in a positively-charged groove across the ATPase domains in a similar location, and with the same directional polarity, seen in other SF1 and SF2 helicases.",
+      "claim_type": "EXPLICIT",
+      "source": "The bound ssDNA sits in a positively-charged groove across the ATPase domains in a similar location, and with the same directional polarity, seen in other SF1 and SF2 helicases (Singleton et al., 2007), and the contacts are mainly with the phosphodiester backbone (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about ssDNA binding supported by structural data and comparison to other helicases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "87d294f3-5d77-4a58-9108-77776e78350f",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C73",
+      "claim": "The contacts between DinG and ssDNA are mainly with the phosphodiester backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "The bound ssDNA sits in a positively-charged groove across the ATPase domains in a similar location, and with the same directional polarity, seen in other SF1 and SF2 helicases (Singleton et al., 2007), and the contacts are mainly with the phosphodiester backbone (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about protein-DNA contacts supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "65410bf3-1a0b-4a74-9304-46b5efaf49fc",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C74",
+      "claim": "Two hydrophobic stacking interactions (F615 and F638) with deoxyribose moieties help to discriminate between DNA and RNA substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Although largely polar hydrogen bonding interactions, some exceptions include two hydrophobic stacking interactions (F615 and F638) with deoxyribose moieties that help to discriminate between DNA and RNA substrates (Figures 2 and 4), as observed previously in other helicases (Saikrishnan et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about substrate discrimination supported by structural data and comparison to other helicases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "82f77fd5-6ef5-4217-8e41-7de0b9a299dd",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C75",
+      "claim": "There is an aromatic stacking interaction with Tyr636 intercalated between the first and second bases at the 5' end of the ssDNA on the HD2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there is an aromatic stacking interaction with Tyr636 intercalated between the first and second bases at the 5' end of the ssDNA on the HD2 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a specific protein-DNA interaction supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "be9b4285-f96d-4f93-a52b-1d345945b76e",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C76",
+      "claim": "A similar base intercalation interaction is seen in NS3 at the 3' end involving a tryptophan residue from the HD1 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a similar base intercalation interaction is seen in NS3 (Kim et al., 1998; Gu and Rice, 2010), this is at the opposite end of the bound DNA at the 3' end and involves a tryptophan residue from the HD1 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about structural similarity to NS3 supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "1fb234cc-b94e-410a-bb6c-12229d132770",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C77",
+      "claim": "The P motif (residues 614-AFPPID-619) is located in front of the spring-helix and contains several hydrophobic residues, often prolines, that would rigidify this region of the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The P motif (residues 614-AFPPID-619). The P motif is located in front of the spring-helix and contains several hydrophobic residues, often prolines, that would rigidify this region of the structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the P motif structure and function supported by structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "a440de77-3556-476c-b65e-3013f03dadde",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C78",
+      "claim": "The P motif in the taXPD structure also forms a narrow channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The P motif in the taXPD structure (Kuper et al., 2012; Constantinescu-Aruxandei et al., 2016), also forms a narrow channel (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the P motif in XPD supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "c633868d-5bb3-4606-b7ef-e4edcb6324d3",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C79",
+      "claim": "The major protein-DNA interactions at the HD1/FeS domain interface are mediated by two arginine residues, R117 and R211.",
+      "claim_type": "EXPLICIT",
+      "source": "The major protein-DNA interactions at the HD1/FeS domain interface are mediated by two arginine residues, R117 and R211 (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about protein-DNA interactions supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "40c84cf5-d283-472f-ba94-28ddea745418",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C80",
+      "claim": "There are two basic residues (R88 and K170 in taXPD) that are conserved and interact with a sulphate ion that mimics the DNA phosphodiester backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the structures of the FeS domain differs between XPD and DinG, there are two basic residues (R88 and K170 in taXPD) that are conserved and interact with a sulphate ion that mimics the DNA phosphodiester backbone (Figure 1\u2014figure supplement 3 and Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about conserved residues in XPD supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "e69326a1-73d3-4905-a275-6b7a81f256ff",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C81",
+      "claim": "The DinG ternary complex structure was solved at 2.5 \u00c5 resolution by molecular replacement using individual domains of the binary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The DinG ternary complex structure was solved at 2.5 \u00c5 resolution by molecular replacement using individual domains of the binary structure, and crystallographic statistics are given in Table 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the crystallographic methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "cfb2e675-d5d4-4e95-ba9b-704e9175526f",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C82",
+      "claim": "The domain architecture of the ternary complex is similar to the binary complex, although there are changes in the relative orientations of the domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The domain architecture of the ternary complex is similar to the binary complex, although there are changes in the relative orientations of the domains (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about structural similarity and differences supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "b0bcacd0-2ace-467f-8369-f5862f902a45",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C83",
+      "claim": "The protein in the ternary complex interacts with only ten bases of ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to these changes, the protein now interacts with only ten bases of ssDNA (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about protein-DNA contacts in the ternary complex supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "e272380c-a514-41f1-bb49-651038a7c78c",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C84",
+      "claim": "In the ternary complex, there are still three bases contacting HD1 and seven contacting HD2, but there is no longer a base spanning the gap between the domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are still three bases contacting HD1 and seven contacting HD2, there is no longer a base spanning the gap between the domains indicating that one of the domains must have slid along the ssDNA onto this base.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about protein-DNA contacts in the ternary complex supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "383454bd-e5a5-4475-8a0e-0bb1b10483fe",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C85",
+      "claim": "It is the HD2 domain that has slid along the ssDNA in the ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the enzyme has 5'\u22123' directionality (Voloshin et al., 2003), this would suggest it is the HD2 domain that has done the sliding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural data and known directionality.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "fc083363-9e66-45d8-9862-1debd2d5d0b3",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C86",
+      "claim": "The base at position +5 no longer stacks on base +6 in the ternary complex but instead would clash with the P motif so becomes flipped up and over the strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, the base at position +5 (Figure 2) no longer stacks on base +6 (as seen in the binary complex) but instead would now clash with the P motif so becomes flipped up and over the strand to occupy the position taken by the +4 base in the binary complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about base conformation changes supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "80d5ec77-bf6e-4859-8299-0d0ad003d6f3",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C87",
+      "claim": "There are additional contacts between the HD1/FeS domains and the ssDNA in the binary complex than in the ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Although many of the ssDNA contacts are similar in both complexes, there are additional contacts between the HD1/FeS domains and the ssDNA in the binary complex than in the ternary complex (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about differences in protein-DNA contacts supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "d220b02a-a749-4046-83ad-2b2cfe92314b",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C88",
+      "claim": "The number of contacts between ssDNA and the HD2 domain is greater in the ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the number of contacts between ssDNA and the HD2 domain is greater in the ternary complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about differences in protein-DNA contacts supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "cfc21399-601c-4558-a7b6-e2a172319976",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C89",
+      "claim": "The principal difference between the structures of DinG in the presence and absence of ADP\u2022BeF3 is a conformational change similar to that observed for other SF1 and SF2 helicase family members.",
+      "claim_type": "EXPLICIT",
+      "source": "The principal difference between the structures of DinG in the presence and absence of ADP\u2022BeF3 is a conformational change (Figure 1) similar to that observed for other SF1 and SF2 helicase family members (Singleton et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about conformational changes supported by structural data and comparison to other helicases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "67735c21-5b31-47de-932f-0f414aebe171",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C90",
+      "claim": "There is an ADP\u2022BeF3 moiety bound at the interface between the HD1 and HD2 domains in the ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, there is an ADP\u2022BeF3 moiety bound at the interface between the HD1 and HD2 domains (Figure 2\u2014figure supplement 2 and the nucleotide is contacted by several residues in a manner seen previously in other helicases (Singleton et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about nucleotide binding supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "4f6e6b54-f2d9-4455-810d-7d2c012a3f0e",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C91",
+      "claim": "The conformational change results when the cleft between the two canonical helicase/translocase domains closes around the bound nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "This conformational change results when the cleft between the two canonical helicase/translocase domains closes around the bound nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the mechanism of conformational change supported by structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "70fa5a4e-178d-43b7-aac2-c2059b9d7b2b",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C92",
+      "claim": "Mechanisms for 3'\u22125' translocation have been described in structural detail for both SF1 (PcrA) and SF2 (NS3) helicases.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanisms for 3'\u22125' translocation have been described in structural detail for both SF1 (PcrA, (Velankar et al., 1999)) and SF2 (NS3, (Gu and Rice, 2010)) helicases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about existing knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "dbaff95b-72eb-4ec3-b920-07c8cc0aea8f",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C93",
+      "claim": "A mechanism for 5'\u22123' translocation for a SF1 helicase has been reported for RecD2.",
+      "claim_type": "EXPLICIT",
+      "source": "A mechanism for 5'\u22123' translocation for a SF1 helicase has also been reported (RecD2, (Saikrishnan et al., 2009)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about existing knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "f71e4cf3-2b3c-4a39-b6f7-f03b5ab21082",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C94",
+      "claim": "The mechanisms for helicase translocation all suggest a step size of one base per ATP hydrolysed, which is consistent with biochemical measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanisms all suggest a step size of one base per ATP hydrolysed, which is consistent with biochemical measurements (Dillingham et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about translocation step size supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "4c27e3f4-83d3-4afe-9712-024b508436fb",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C95",
+      "claim": "Upon ATP binding, a conformational change causes the HD2 motor domain to slide along ssDNA, while the HD1 domain retains a tight grip.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon ATP binding, a conformational change causes the HD2 motor domain to slide along ssDNA, while the HD1 domain retains a tight grip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the proposed mechanism supported by structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "5cc2debf-0b33-4e1a-9f5a-c50d98bc2f0f",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C96",
+      "claim": "When ATP is hydrolysed, the enzyme relaxes to the apo state allowing the HD1 domain to slide along ssDNA while the HD2 domain now grips tightly.",
+      "claim_type": "EXPLICIT",
+      "source": "When ATP is hydrolysed, the enzyme relaxes to the apo state allowing the HD1 domain to slide along ssDNA while the HD2 domain now grips tightly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the proposed mechanism supported by structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "e642353f-87f0-475b-8ddb-3f8395817496",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C97",
+      "claim": "The key to the translocation mechanism is the regulation of grip for each of the motor domains and how that changes in response to the different nucleotide-bound states of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "As with translocation mechanisms for other SF1 and SF2 enzymes (Velankar et al., 1999; Gu and Rice, 2010; Saikrishnan et al., 2009), the key to the mechanism is the regulation of grip for each of the motor domains and how that changes in response to the different nucleotide-bound states of the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the proposed mechanism supported by comparison to other helicases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "de663c39-7802-4def-b696-67bd34bfa7e8",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C98",
+      "claim": "In the binary complex, the HD1 domain has a tighter grip than in the ATP-bound (ternary) state.",
+      "claim_type": "EXPLICIT",
+      "source": "For DinG, in the binary complex, the HD1 domain has a tighter grip than in the ATP-bound (ternary) state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the proposed mechanism supported by structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "45588a88-259b-4b6e-9ad2-34e1c92bfb61",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C99",
+      "claim": "The tighter grip of HD1 in the binary complex is achieved by increasing the number of contacts with the residues towards the 3'-end of the ssDNA binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "This is achieved by increasing the number of contacts with the residues towards the 3'-end of the ssDNA binding site (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the mechanism of grip regulation supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "859e8567-640d-446f-b4ee-c4c5303969f2",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C100",
+      "claim": "After ATP hydrolysis, changes occur that cause HD2 to have a tighter grip on the 5' bases due to an increased number of interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "After ATP hydrolysis, changes occur that cause HD2 to now have a tighter grip on the 5' bases (again due to an increased number of interactions) and thus, as the conformational changes open the cleft between the motor domains, the ssDNA slides across the HD1 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the proposed mechanism supported by structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "3a5a3f00-7014-4932-9859-c2f5d05c2fe4",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C101",
+      "claim": "The consequence of the two steps in the mechanism is translocation along the bound ssDNA in a 5'\u22123' direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The consequence of these two steps is translocation along the bound ssDNA in a 5'\u22123' direction, first across the HD2 domain as ATP binds and then across the HD1 domain after ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the proposed mechanism supported by structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "7ee9126c-9e28-47ce-878d-75302680e8a5",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C102",
+      "claim": "The proposed two-step model is likely over simplified and additional steps in the overall reaction cycle cannot be precluded.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that this is a simple two-step model and we cannot preclude additional steps in the overall reaction cycle but this (likely over simplified) model allows a framework to explain directional translocation by these enzymes in the same way that similar structures have provided a framework to explain translocation by other SF1 and SF2 enzymes (Velankar et al., 1999; Gu and Rice, 2010; Saikrishnan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat about the proposed mechanism acknowledging its limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "9b712f36-73b9-4d16-80e2-090afb234c3a",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C103",
+      "claim": "All of the mutant proteins showed defects in ssDNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the mutants showed defects in ssDNA binding although these were minor for the R117A and R211A mutations in the FeS domain (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about biochemical data supported by experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "fbf1b379-adcf-406d-a6df-7efed199e1c3",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C104",
+      "claim": "The R117A and R211A mutations showed minor defects in ssDNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the mutants showed defects in ssDNA binding although these were minor for the R117A and R211A mutations in the FeS domain (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about biochemical data supported by experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "2ec3e1f1-472b-49db-8334-e22e176aa438",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C105",
+      "claim": "Helicase activity was severely impaired even for the R117A and R211A mutations that have lesser effects on ssDNA binding than the other mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Helicase activity was severely impaired even for the R117A and R211A mutations that have lesser effects on ssDNA binding than the other mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about biochemical data supported by experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "efe19645-f59f-43bb-bdd2-f3c81efb5a98",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C106",
+      "claim": "The biochemical data confirm the importance of the residues highlighted in the interaction with the DNA substrate and consequently for the translocation mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirm the importance of the residues we have highlighted in the interaction with the DNA substrate and consequently for the translocation mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "e1a028d7-b657-4bc1-8510-aef937a84070",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C107",
+      "claim": "Several of the corresponding residues in XPD, FANCJ, DDX11 or RTEL1 are reported to be disease-related.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the essential roles we propose, several of the corresponding residues in XPD, FANCJ, DDX11 or RTEL1 are reported to be disease-related (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about disease-related mutations supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "9e08fcf5-a7c8-4c3e-a50c-bd8d105ebf42",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C108",
+      "claim": "Mutations in residues across the ssDNA-binding site in XPD, FANCJ, DDX11 and RTEL1 are linked to human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mutations in these residues across the ssDNA-binding site in all three proteins are linked to human diseases (Suhasini and Brosh, 2013; Guo et al., 2016; Krassowski et al., 2018) and explain the molecular basis for the deficiencies in activity of these mutant proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about disease-related mutations supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "c7470904-325e-4811-91e5-9eb21a8910a1",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C109",
+      "claim": "The structures explain the molecular basis for the deficiencies in activity of disease-related mutant proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mutations in these residues across the ssDNA-binding site in all three proteins are linked to human diseases (Suhasini and Brosh, 2013; Guo et al., 2016; Krassowski et al., 2018) and explain the molecular basis for the deficiencies in activity of these mutant proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "b75325a5-75f4-4dbe-ae0b-d45c1fc9bc2b",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C110",
+      "claim": "The step size of one base raises an intriguing possibility with regard to recognition of bulky DNA lesions by those members of the XPD family that recognise such lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "The step size of one base also raises an intriguing possibility with regard to recognition of bulky DNA lesions by those members of the XPD family that recognise such lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "4cdc1f78-36aa-4409-acfb-a8890f272ec3",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C111",
+      "claim": "A central component of the translocation is the requirement for single bases to flip out of a stacked arrangement as they collide with the rigid and hydrophobic P motif.",
+      "claim_type": "EXPLICIT",
+      "source": "A central component of the translocation is the requirement for single bases to flip out of a stacked arrangement as they collide with the rigid and hydrophobic P motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the proposed mechanism supported by structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "1c64a45b-8669-4d7c-a0e6-82376bc0b5d1",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C112",
+      "claim": "A thymidine dimer is one of the major lesions recognised by XPD.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the major lesions recognised by XPD is a thymidine dimer in which adjacent thymidine bases in one strand become crosslinked to one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about XPD substrate specificity based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "4841c8a6-053a-4615-9e2e-fa8dc6f12d3d",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C113",
+      "claim": "A thymidine dimer has consecutive bases locked together that would require them both to flip together with a step of two bases.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an arrangement now has consecutive bases locked together so would require them both to flip together with a step of two bases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the properties of thymidine dimers.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "96ee1f18-dc7e-41bc-93fc-cafd74d81eaa",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C114",
+      "claim": "A thymidine dimer would be blocked from flipping during translocation and this may constitute one aspect of the damage recognition process, causing the enzyme to stall at these lesions as a signal for repair to initiate.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, this would be blocked from flipping during translocation and this may constitute one aspect of the damage recognition process, causing the enzyme to stall at these lesions as a signal for repair to initiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion about lesion recognition based on the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "ed406091-60fa-460f-b9b4-2106da4202e9",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C115",
+      "claim": "There is a large hydrophobic pocket on the protein surface that could accommodate a variety of bulky lesions such as thymidine dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, consistent with this hypothesis, there is a large hydrophobic pocket on the protein surface in this location, particularly in the binary complex, that could accommodate a variety of bulky lesions such as thymidine dimers (Figures 2 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about structural features supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "40f65d69-d0ce-4d93-ac11-a1bf67b40901",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C116",
+      "claim": "The pocket dimensions alter during ATP binding and hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structures show that the pocket dimensions alter during ATP binding and hydrolysis (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about structural changes supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "85c6e255-e775-4037-8801-7d346c37a690",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C117",
+      "claim": "If the pocket were occupied with a bulky lesion then domain closure would be prevented and hence ATPase would be blocked and translocation would stall.",
+      "claim_type": "EXPLICIT",
+      "source": "If the pocket were occupied with a bulky lesion then domain closure would be prevented and hence ATPase would be blocked and translocation would stall (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative conclusion about lesion recognition based on the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "de505aae-b481-4d97-84b7-d2bb139c1232",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C118",
+      "claim": "XPD stalls at bulky lesions on the translocating strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Although further work is required to confirm the effects of these changes on enzyme stalling, it has been shown that XPD stalls at bulky lesions on the translocating strand (Wirth et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about XPD behavior supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "fdd29db2-c3d6-4fd1-b069-43596cdac93d",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "claim_id": "C119",
+      "claim": "The work completes the picture for the mechanisms of translocation in each of the two polarities by the two main families of monomeric, single-strand translocases.",
+      "claim_type": "EXPLICIT",
+      "source": "The work we present here now completes our picture for the mechanisms of translocation in each of the two polarities by the two main families of monomeric, single-strand translocases (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b8e0d4f0-1d7a-436a-a170-626d2c4bba16",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "XPD family helicases are SF2 helicases containing an iron-sulfur cluster domain that translocate 5'\u21923' on ssDNA and play important roles in genome stability. Mutations in family members cause human diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 establish the background knowledge about XPD family helicases. These are well-established facts in the field supported by citations and represent accurate characterization of prior work on this protein family.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "90d9ab31-590c-4d13-b4e7-10a32b06632d",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Crystal structures of DinG in binary (ssDNA-bound) and ternary (ssDNA + ADP\u2022BeF3) complexes were solved at 2.5 \u00c5 resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C48, C63, and C81 describe the main structural results. The crystallographic data in Table 1 provides resolution, R-factors, and completeness statistics that support successful structure determination. The methods section details the crystallographic approach used.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "13b31101-64b7-4853-8029-97c923caa403",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DinG shares significant structural similarity with XPD, comprising four domains (HD1, HD2, arch, and FeS cluster), with RMSD values of 1.8-3.3 \u00c5 for helicase and arch domains, making DinG a good structural model for XPD family enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C62 describe the overall structural architecture and comparison to XPD. The quantitative RMSD values (C56) and domain descriptions are supported by structural data in Figures 1 and supplementary figures. The conclusion that DinG is a good model (C62) is reasonably supported by the high structural similarity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "6f1d65b9-5213-49ad-8906-8a54ef395c87",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the binary complex, eleven bases of ssDNA are bound in a kinked conformation with bases stacked along the strand. Three bases contact HD1 and seven contact HD2, with contacts mainly to the phosphodiester backbone and specific interactions including aromatic stacking and base intercalation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C79 describe the ssDNA binding mode in the binary complex. The electron density maps (Figure 2\u2014figure supplement 1) support the presence of eleven bases. The detailed protein-DNA contacts are visualized in Figure 2 and are consistent with the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "5d4e393f-a26b-446a-adb0-ba745171375b",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the ternary complex with ADP\u2022BeF3, the protein interacts with ten bases of ssDNA (three on HD1, seven on HD2), with the HD2 domain having slid along the DNA by one base. ATP binding induces conformational changes involving domain closure around the nucleotide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C91 describe the ternary complex structure and conformational changes. The structural data in Figures 1 and 2 show the domain movements and altered DNA contacts. The electron density for ADP\u2022BeF3 (Figure 2\u2014figure supplement 2) confirms nucleotide binding. The inference about HD2 sliding (C85) is logically supported by the directionality and structural changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "0886ea1a-4acb-4b24-836f-44656b162efa",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The structures suggest a 5'\u21923' translocation mechanism where ATP binding causes HD2 to slide along ssDNA while HD1 grips tightly, then after ATP hydrolysis HD1 slides while HD2 grips tightly. The mechanism involves differential grip regulation between motor domains in response to nucleotide state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C50, C95-C102 propose the translocation mechanism. The mechanism is supported by the structural differences between binary and ternary complexes (Figures 1-3), showing differential DNA contacts in each state. The authors appropriately acknowledge this is a simplified model (C102). The biochemical data (C103-C106) provide additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "f9df411e-8b8f-4873-8db7-387d4487f54f",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mutagenesis of key DNA-binding residues shows all mutants have defects in ssDNA binding and severely impaired helicase activity, confirming the importance of these residues for the translocation mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C106 describe biochemical validation. Figure 4 shows quantitative binding data (Kd values) and helicase assays for multiple mutants. The data consistently show functional defects, supporting the structural model. The experiments appropriately test residues identified as important in the structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "075b4e22-ef89-422e-ac04-c7bf91ad746b",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Residues corresponding to those tested in DinG are mutated in human XPD family members (XPD, FANCJ, DDX11, RTEL1) and linked to human diseases. The structures explain the molecular basis for deficiencies in these disease-related mutant proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C109 connect the structural findings to human disease. Figure 4 shows a comprehensive table mapping DinG residues to disease-associated mutations in human homologs, with citations to disease databases. The structural context provides a reasonable molecular explanation for why these mutations cause defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "c078918d-ebfd-4582-abad-dcc07117e762",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The mechanism suggests how XPD family enzymes might recognize bulky DNA lesions: bases must flip past the rigid P motif during translocation, but crosslinked bases (like thymidine dimers) cannot flip, causing the enzyme to stall. A hydrophobic pocket could accommodate bulky lesions and prevent domain closure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C10, C51, C110-C118 propose a lesion recognition mechanism. While the structural features (P motif, hydrophobic pocket in Figure 5) are real, the proposed mechanism for lesion recognition is speculative (C114, C117). The authors appropriately note that 'further work is required to confirm' (C118). The hypothesis is plausible but lacks direct experimental validation with lesion-containing DNA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "10f9420c-d121-4dc9-ba5a-3ee92d449925",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The work completes the mechanistic picture for SF1 and SF2 helicases, providing the first SF2 5'\u21923' translocation mechanism with a step size of one ATP per base, consistent with other characterized helicases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C94, and C119 place the work in context of helicase mechanisms. The comparison to other helicases (PcrA, NS3, RecD2) in Figure 3\u2014figure supplement 1 supports this conclusion. The step size inference is consistent with the structural data showing one-base movement between states and is analogous to other characterized helicases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on helicase classification, mechanisms, and the gap in knowledge regarding SF2 5'\u21923' helicases. XPD family members have roles in DNA repair and disease, but structural information has been limited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C47 and C92-C93 provide background context from the introduction. These are well-established facts supported by appropriate citations and accurately represent the state of knowledge in the field prior to this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "a84a86ed-7c66-404d-9823-90c5a0581604",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Previous XPD structures with bound ssDNA showed only 4-5 ordered bases contacting HD2 domain, with inconsistent interaction details that differ from DinG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 describe limitations of prior XPD structures. The comparison in Figure 2\u2014figure supplement 3 visually demonstrates these differences. The citations support the existence of these prior structures, and the authors' assessment of their limitations is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "cfb73efa-47be-430c-a112-495e6c9eb112",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Specific structural features are conserved or similar between DinG and XPD, including base intercalation interactions, the P motif structure, and conserved basic residues in the FeS domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C80 describe conserved structural features. These comparisons are supported by structural data and sequence alignments (Figure 1\u2014figure supplement 1-3). The observations about conservation strengthen the argument that DinG is a good model for the XPD family.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    },
+    {
+      "id": "84f7e9e0-ae44-45a9-9751-488cbae1c332",
+      "content_id": "657989b1-c446-4dfd-9170-8e706e2d3a03",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The structures represent an important advance in understanding XPD family enzyme mechanisms and explain how mutations cause activity deficiencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are summary statements about the significance of the work. These are supported by the totality of the structural, mechanistic, and mutagenesis data presented. The work does provide the first complete ssDNA-binding site structure and ATP-bound state for this family.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:27:53.561467Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "544a8066-fdf3-4eb6-ae55-03b5e40ea59c",
+      "result_id": "b8e0d4f0-1d7a-436a-a170-626d2c4bba16"
+    },
+    {
+      "claim_id": "e6e7bcfa-78bb-4043-93f9-54601cd44d0f",
+      "result_id": "b8e0d4f0-1d7a-436a-a170-626d2c4bba16"
+    },
+    {
+      "claim_id": "5ed2441d-9722-4021-999d-f8ed98707c39",
+      "result_id": "b8e0d4f0-1d7a-436a-a170-626d2c4bba16"
+    },
+    {
+      "claim_id": "4fa26d3c-7e79-48d8-922c-699cf2fc33d7",
+      "result_id": "b8e0d4f0-1d7a-436a-a170-626d2c4bba16"
+    },
+    {
+      "claim_id": "062ec236-12c7-47ba-816f-9bfba3b2d3ba",
+      "result_id": "b8e0d4f0-1d7a-436a-a170-626d2c4bba16"
+    },
+    {
+      "claim_id": "3fd29d6a-5ed7-419b-b327-651b5efd592a",
+      "result_id": "b8e0d4f0-1d7a-436a-a170-626d2c4bba16"
+    },
+    {
+      "claim_id": "bc838c4f-25a5-4738-b8b1-e826d1ae7c9c",
+      "result_id": "b8e0d4f0-1d7a-436a-a170-626d2c4bba16"
+    },
+    {
+      "claim_id": "e893f34c-e09a-4d0c-aa21-6209f355c67a",
+      "result_id": "90d9ab31-590c-4d13-b4e7-10a32b06632d"
+    },
+    {
+      "claim_id": "0800ff5a-d825-4be2-b312-e6ab3d29f6d0",
+      "result_id": "90d9ab31-590c-4d13-b4e7-10a32b06632d"
+    },
+    {
+      "claim_id": "b8b38a78-3eb6-4439-aab5-42c7919e310f",
+      "result_id": "90d9ab31-590c-4d13-b4e7-10a32b06632d"
+    },
+    {
+      "claim_id": "e69326a1-73d3-4905-a275-6b7a81f256ff",
+      "result_id": "90d9ab31-590c-4d13-b4e7-10a32b06632d"
+    },
+    {
+      "claim_id": "f5ca182d-bb19-4ed1-aeb4-2dbf5381e73d",
+      "result_id": "13b31101-64b7-4853-8029-97c923caa403"
+    },
+    {
+      "claim_id": "6cb118b2-2931-42aa-9ff2-dd7bdf015ffe",
+      "result_id": "13b31101-64b7-4853-8029-97c923caa403"
+    },
+    {
+      "claim_id": "6fa62d4c-9081-4e35-8270-676d4ab25d8c",
+      "result_id": "13b31101-64b7-4853-8029-97c923caa403"
+    },
+    {
+      "claim_id": "d29951c2-9526-46ae-a6b6-f88dd352826a",
+      "result_id": "13b31101-64b7-4853-8029-97c923caa403"
+    },
+    {
+      "claim_id": "ebe939f9-0fcc-4a94-a366-7912743650ed",
+      "result_id": "13b31101-64b7-4853-8029-97c923caa403"
+    },
+    {
+      "claim_id": "386cdcd1-42cd-4956-a876-f58db69a4945",
+      "result_id": "13b31101-64b7-4853-8029-97c923caa403"
+    },
+    {
+      "claim_id": "93d893ca-d2ef-4c80-aebb-d9d6ba59e5ed",
+      "result_id": "13b31101-64b7-4853-8029-97c923caa403"
+    },
+    {
+      "claim_id": "cd0ef2c9-ef94-41ae-b679-e8ab743d37c0",
+      "result_id": "13b31101-64b7-4853-8029-97c923caa403"
+    },
+    {
+      "claim_id": "cc38e3bc-5feb-411d-a78e-f04aa1fb9982",
+      "result_id": "13b31101-64b7-4853-8029-97c923caa403"
+    },
+    {
+      "claim_id": "602ad481-2ae4-40f3-8855-afe70e424287",
+      "result_id": "6f1d65b9-5213-49ad-8906-8a54ef395c87"
+    },
+    {
+      "claim_id": "ee2ae228-6ee8-49ae-a98b-06d8352e9b02",
+      "result_id": "6f1d65b9-5213-49ad-8906-8a54ef395c87"
+    },
+    {
+      "claim_id": "d1254238-aadc-4088-83db-46e6e6c98101",
+      "result_id": "6f1d65b9-5213-49ad-8906-8a54ef395c87"
+    },
+    {
+      "claim_id": "eec79aa0-ea68-44d8-9592-5dfaf4702180",
+      "result_id": "6f1d65b9-5213-49ad-8906-8a54ef395c87"
+    },
+    {
+      "claim_id": "d7c75b90-21b6-40b2-bfe1-55d0b1ec3ff5",
+      "result_id": "6f1d65b9-5213-49ad-8906-8a54ef395c87"
+    },
+    {
+      "claim_id": "e707d0a1-0bcc-4172-ac74-28859594a8c3",
+      "result_id": "6f1d65b9-5213-49ad-8906-8a54ef395c87"
+    },
+    {
+      "claim_id": "87d294f3-5d77-4a58-9108-77776e78350f",
+      "result_id": "6f1d65b9-5213-49ad-8906-8a54ef395c87"
+    },
+    {
+      "claim_id": "65410bf3-1a0b-4a74-9304-46b5efaf49fc",
+      "result_id": "6f1d65b9-5213-49ad-8906-8a54ef395c87"
+    },
+    {
+      "claim_id": "82f77fd5-6ef5-4217-8e41-7de0b9a299dd",
+      "result_id": "6f1d65b9-5213-49ad-8906-8a54ef395c87"
+    },
+    {
+      "claim_id": "c633868d-5bb3-4606-b7ef-e4edcb6324d3",
+      "result_id": "6f1d65b9-5213-49ad-8906-8a54ef395c87"
+    },
+    {
+      "claim_id": "cfb2e675-d5d4-4e95-ba9b-704e9175526f",
+      "result_id": "5d4e393f-a26b-446a-adb0-ba745171375b"
+    },
+    {
+      "claim_id": "b0bcacd0-2ace-467f-8369-f5862f902a45",
+      "result_id": "5d4e393f-a26b-446a-adb0-ba745171375b"
+    },
+    {
+      "claim_id": "e272380c-a514-41f1-bb49-651038a7c78c",
+      "result_id": "5d4e393f-a26b-446a-adb0-ba745171375b"
+    },
+    {
+      "claim_id": "383454bd-e5a5-4475-8a0e-0bb1b10483fe",
+      "result_id": "5d4e393f-a26b-446a-adb0-ba745171375b"
+    },
+    {
+      "claim_id": "fc083363-9e66-45d8-9862-1debd2d5d0b3",
+      "result_id": "5d4e393f-a26b-446a-adb0-ba745171375b"
+    },
+    {
+      "claim_id": "80d5ec77-bf6e-4859-8299-0d0ad003d6f3",
+      "result_id": "5d4e393f-a26b-446a-adb0-ba745171375b"
+    },
+    {
+      "claim_id": "d220b02a-a749-4046-83ad-2b2cfe92314b",
+      "result_id": "5d4e393f-a26b-446a-adb0-ba745171375b"
+    },
+    {
+      "claim_id": "cfc21399-601c-4558-a7b6-e2a172319976",
+      "result_id": "5d4e393f-a26b-446a-adb0-ba745171375b"
+    },
+    {
+      "claim_id": "67735c21-5b31-47de-932f-0f414aebe171",
+      "result_id": "5d4e393f-a26b-446a-adb0-ba745171375b"
+    },
+    {
+      "claim_id": "4f6e6b54-f2d9-4455-810d-7d2c012a3f0e",
+      "result_id": "5d4e393f-a26b-446a-adb0-ba745171375b"
+    },
+    {
+      "claim_id": "cbe74412-760e-46a4-b45d-7837e675df2a",
+      "result_id": "0886ea1a-4acb-4b24-836f-44656b162efa"
+    },
+    {
+      "claim_id": "8813070e-d9fb-493f-811e-8f372f2da8fc",
+      "result_id": "0886ea1a-4acb-4b24-836f-44656b162efa"
+    },
+    {
+      "claim_id": "4c27e3f4-83d3-4afe-9712-024b508436fb",
+      "result_id": "0886ea1a-4acb-4b24-836f-44656b162efa"
+    },
+    {
+      "claim_id": "5cc2debf-0b33-4e1a-9f5a-c50d98bc2f0f",
+      "result_id": "0886ea1a-4acb-4b24-836f-44656b162efa"
+    },
+    {
+      "claim_id": "e642353f-87f0-475b-8ddb-3f8395817496",
+      "result_id": "0886ea1a-4acb-4b24-836f-44656b162efa"
+    },
+    {
+      "claim_id": "de663c39-7802-4def-b696-67bd34bfa7e8",
+      "result_id": "0886ea1a-4acb-4b24-836f-44656b162efa"
+    },
+    {
+      "claim_id": "45588a88-259b-4b6e-9ad2-34e1c92bfb61",
+      "result_id": "0886ea1a-4acb-4b24-836f-44656b162efa"
+    },
+    {
+      "claim_id": "859e8567-640d-446f-b4ee-c4c5303969f2",
+      "result_id": "0886ea1a-4acb-4b24-836f-44656b162efa"
+    },
+    {
+      "claim_id": "3a5a3f00-7014-4932-9859-c2f5d05c2fe4",
+      "result_id": "0886ea1a-4acb-4b24-836f-44656b162efa"
+    },
+    {
+      "claim_id": "7ee9126c-9e28-47ce-878d-75302680e8a5",
+      "result_id": "0886ea1a-4acb-4b24-836f-44656b162efa"
+    },
+    {
+      "claim_id": "9b712f36-73b9-4d16-80e2-090afb234c3a",
+      "result_id": "f9df411e-8b8f-4873-8db7-387d4487f54f"
+    },
+    {
+      "claim_id": "fbf1b379-adcf-406d-a6df-7efed199e1c3",
+      "result_id": "f9df411e-8b8f-4873-8db7-387d4487f54f"
+    },
+    {
+      "claim_id": "2ec3e1f1-472b-49db-8334-e22e176aa438",
+      "result_id": "f9df411e-8b8f-4873-8db7-387d4487f54f"
+    },
+    {
+      "claim_id": "efe19645-f59f-43bb-bdd2-f3c81efb5a98",
+      "result_id": "f9df411e-8b8f-4873-8db7-387d4487f54f"
+    },
+    {
+      "claim_id": "e1a028d7-b657-4bc1-8510-aef937a84070",
+      "result_id": "075b4e22-ef89-422e-ac04-c7bf91ad746b"
+    },
+    {
+      "claim_id": "9e08fcf5-a7c8-4c3e-a50c-bd8d105ebf42",
+      "result_id": "075b4e22-ef89-422e-ac04-c7bf91ad746b"
+    },
+    {
+      "claim_id": "c7470904-325e-4811-91e5-9eb21a8910a1",
+      "result_id": "075b4e22-ef89-422e-ac04-c7bf91ad746b"
+    },
+    {
+      "claim_id": "567e4b37-3ebc-4806-9c18-d7b367d99e5c",
+      "result_id": "c078918d-ebfd-4582-abad-dcc07117e762"
+    },
+    {
+      "claim_id": "8a150bc7-80a0-498f-8bfa-adcfd397e188",
+      "result_id": "c078918d-ebfd-4582-abad-dcc07117e762"
+    },
+    {
+      "claim_id": "b75325a5-75f4-4dbe-ae0b-d45c1fc9bc2b",
+      "result_id": "c078918d-ebfd-4582-abad-dcc07117e762"
+    },
+    {
+      "claim_id": "4cdc1f78-36aa-4409-acfb-a8890f272ec3",
+      "result_id": "c078918d-ebfd-4582-abad-dcc07117e762"
+    },
+    {
+      "claim_id": "1c64a45b-8669-4d7c-a0e6-82376bc0b5d1",
+      "result_id": "c078918d-ebfd-4582-abad-dcc07117e762"
+    },
+    {
+      "claim_id": "4841c8a6-053a-4615-9e2e-fa8dc6f12d3d",
+      "result_id": "c078918d-ebfd-4582-abad-dcc07117e762"
+    },
+    {
+      "claim_id": "96ee1f18-dc7e-41bc-93fc-cafd74d81eaa",
+      "result_id": "c078918d-ebfd-4582-abad-dcc07117e762"
+    },
+    {
+      "claim_id": "ed406091-60fa-460f-b9b4-2106da4202e9",
+      "result_id": "c078918d-ebfd-4582-abad-dcc07117e762"
+    },
+    {
+      "claim_id": "40f65d69-d0ce-4d93-ac11-a1bf67b40901",
+      "result_id": "c078918d-ebfd-4582-abad-dcc07117e762"
+    },
+    {
+      "claim_id": "85c6e255-e775-4037-8801-7d346c37a690",
+      "result_id": "c078918d-ebfd-4582-abad-dcc07117e762"
+    },
+    {
+      "claim_id": "de505aae-b481-4d97-84b7-d2bb139c1232",
+      "result_id": "c078918d-ebfd-4582-abad-dcc07117e762"
+    },
+    {
+      "claim_id": "0133e257-b794-4138-a311-295485a04021",
+      "result_id": "10f9420c-d121-4dc9-ba5a-3ee92d449925"
+    },
+    {
+      "claim_id": "f71e4cf3-2b3c-4a39-b6f7-f03b5ab21082",
+      "result_id": "10f9420c-d121-4dc9-ba5a-3ee92d449925"
+    },
+    {
+      "claim_id": "fdd29db2-c3d6-4fd1-b069-43596cdac93d",
+      "result_id": "10f9420c-d121-4dc9-ba5a-3ee92d449925"
+    },
+    {
+      "claim_id": "d98204d7-fe94-49f5-875d-8c0d56fea722",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "4bc4bd6a-9c59-4421-83b6-9ac297e6b1ed",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "4298c170-8629-44a3-9834-2517f8465745",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "1adab112-fb80-43bb-9064-ce3698432df7",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "e11b09c7-f16e-4474-b79a-4acc46070dec",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "5e6c102c-4da6-4b8b-91b7-8f3129a8f122",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "ab41a3ce-a8ea-4c2d-b911-ee4fccefc344",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "aa1ff072-7e80-4137-94fc-5a5c2c822109",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "c0f3fc07-4cb4-406f-a9ab-ceb59077eba5",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "8c99b021-e31b-45af-8e04-e49184f36cb0",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "88895b45-7561-4439-9a8d-92dd75dacaaa",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "0f700b4b-a89a-4053-bee3-4807bb5ffb2c",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "702a71fe-e6c0-48e0-b5e9-991b3d1960d0",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "e13df805-ec70-4fa9-9d63-fb22949c25aa",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "21fa066a-8003-4782-8dd2-bc4124f3df1e",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "594f8e16-4b0f-490b-9a13-4c7478fbcc24",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "66c18092-8211-471a-afd5-afa6ca61aeb9",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "60d400df-bb9a-4ed0-bf85-6cbb6f4dfac2",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "52988e02-d2a8-4b33-aab8-71ab988c5c5f",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "77d5696a-d423-4c8c-a20b-7aeca071445b",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "098b103b-1e2b-427a-bf59-dd0d2b558597",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "643011b0-3781-483a-8324-0661664d07ec",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "fc983beb-b837-485c-b903-a267f438b896",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "9f3b1422-0c9b-41b9-8086-8569a24cd4c6",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "0fdb4880-4b10-4093-a4b5-d6fc52a80eff",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "dd7039d0-ccf0-41c5-adee-2dcec40a694f",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "62135e31-c909-4879-8513-8e6ea3f554ee",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "edcc378b-44f6-449a-b67c-6a838acad1e9",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "759d7f7b-9d5a-459f-97db-13ec62cca62c",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "164144bf-17ec-48b1-a0ba-e9cfe5a8af29",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "6c81c4b5-5fa8-4458-b4b9-4800271be24d",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "0f810320-0339-4479-933c-99073fbb056d",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "779152db-e980-452d-bd29-03eac71011fd",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "a0ba6856-7411-497b-ac2a-954c1c08699c",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "2f5ee3f0-1181-4f5a-b457-861268d53508",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "70fa5a4e-178d-43b7-aac2-c2059b9d7b2b",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "dbaff95b-72eb-4ec3-b920-07c8cc0aea8f",
+      "result_id": "0caafbaf-e4ce-4e02-b7e9-1f2a04655b95"
+    },
+    {
+      "claim_id": "9f87cf8c-2c96-4f86-896c-71072ad310c5",
+      "result_id": "a84a86ed-7c66-404d-9823-90c5a0581604"
+    },
+    {
+      "claim_id": "c78a3678-35bd-4830-8317-984fece80c23",
+      "result_id": "a84a86ed-7c66-404d-9823-90c5a0581604"
+    },
+    {
+      "claim_id": "3d629196-0bc6-4d96-9cf3-f4b593d96e6a",
+      "result_id": "a84a86ed-7c66-404d-9823-90c5a0581604"
+    },
+    {
+      "claim_id": "be9b4285-f96d-4f93-a52b-1d345945b76e",
+      "result_id": "cfb73efa-47be-430c-a112-495e6c9eb112"
+    },
+    {
+      "claim_id": "1fb234cc-b94e-410a-bb6c-12229d132770",
+      "result_id": "cfb73efa-47be-430c-a112-495e6c9eb112"
+    },
+    {
+      "claim_id": "a440de77-3556-476c-b65e-3013f03dadde",
+      "result_id": "cfb73efa-47be-430c-a112-495e6c9eb112"
+    },
+    {
+      "claim_id": "40c84cf5-d283-472f-ba94-28ddea745418",
+      "result_id": "cfb73efa-47be-430c-a112-495e6c9eb112"
+    },
+    {
+      "claim_id": "b4a938ba-3388-4ec9-a422-cd6146dcfad0",
+      "result_id": "84f7e9e0-ae44-45a9-9751-488cbae1c332"
+    },
+    {
+      "claim_id": "68434014-b71e-4a1a-a47d-1d3bf7a55720",
+      "result_id": "84f7e9e0-ae44-45a9-9751-488cbae1c332"
+    }
+  ],
+  "comparisons": []
+}

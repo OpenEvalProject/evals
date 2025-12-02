@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C53",
+      "C55"
+    ],
+    "result": "Standard ExCel achieves ~3.3-3.8x linear expansion with ~65-75 nm resolution and enables simultaneous imaging of fluorescent proteins, RNA, DNA, and anatomical structures with low distortion (~1-6% over 0-100 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, C14, C15, C16, C53, and C55 collectively describe the standard ExCel protocol's expansion factors, resolution, multiplexing capabilities, and distortion levels. These are supported by experimental data shown in Figures 1-5 and quantitative measurements in Figure 3B. The resolution calculations are based on the Abbe diffraction limit divided by the expansion factor, which is a standard approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C12",
+      "C13"
+    ],
+    "result": "The C. elegans cuticle is stiff, impermeable to antibodies and many small molecules, presenting a major barrier to immunostaining and expansion microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9, C12, and C13 describe known properties of the C. elegans cuticle supported by citations to prior work (Duerr, 2006; Page and Johnstone, 2007; Chisholm and Xu, 2012). These claims establish the biological challenge that ExCel addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C47",
+      "C48"
+    ],
+    "result": "The ExCel protocol includes specific design choices: fixation with 4% paraformaldehyde, \u03b2-mercaptoethanol treatment to reduce cuticle disulfide bonds, low-pH AcX treatment, overnight monomer incubation, extended Proteinase K digestion (2 days at 37\u00b0C), calcium-containing digestion buffer, and gradual expansion through 6 serial washes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C40, C41, C42, C44, C45, C47, and C48 describe methodological steps in the ExCel protocol with reasoning for design choices. These are supported by citations to prior work and experimental data. The protocol modifications are justified based on the unique properties of C. elegans cuticle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "ExCel enables good antibody access to C. elegans interior, with GFP epitopes surviving Proteinase K digestion sufficiently for antibody labeling. Signal-to-background ratios are several-fold higher than prior immunohistochemistry protocols, and the method works for multiple fluorescent proteins (GFP, mCherry, TagRFP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by data in Figure 2A-F showing bright, uniform antibody staining after ExCel processing and quantitative signal-to-background measurements. The comparison to prior protocols (Figure 2C-D) demonstrates significant improvement. The method's generalizability to multiple fluorescent proteins is demonstrated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "NHS esters of fluorescent dyes can be applied to ExCel-processed animals to identify anatomical features, and simultaneous readout of GFP, GFP mRNA, DNA, and anatomical features can be achieved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 are supported by data in Figures 4 and 5 showing clear visualization of anatomical structures with NHS ester staining and multiplexed imaging of proteins, RNA, DNA, and anatomy. Video 3 provides additional evidence of the multiplexing capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "ExCel resolves nearby synaptic puncta that were blurred pre-expansion, with 2.1-fold more puncta detected post-ExCel than pre-ExCel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C68 are supported by data in Figure 6A-C showing improved resolution of synaptic puncta and quantitative analysis of puncta counts. The 2.1-fold increase is based on line profile analysis of RAB-3::GFP in ventral nerve cord and SAB axonal processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "ExCel has sufficient sensitivity to detect fluorescent-reporter-tagged proteins expressed at endogenous levels, as demonstrated with CHE-7::TagRFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C70 are supported by data in Figure 7B showing clear visualization of CHE-7::TagRFP, which is expressed at endogenous levels via CRISPR/Cas9-mediated knock-in. The appearance corresponds nearly identically between pre- and post-ExCel states, demonstrating preservation of spatial information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "ExCel-based ExFISH-HCR enables detection of mRNA transcripts with single-cell and sub-cellular resolution. Positive control (egfp) and negative control (mouse parvalbumin) validate specificity. The vast majority (~80-100%) of signal is detected inside neurons, with ~80-90% of transcripts in peri-nuclear space and ~5-20% in nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by data in Figures 8 and 9 showing specific detection of various mRNA targets with appropriate controls. The sub-cellular localization patterns are consistent with prior observations in mammalian cells (cited: Ji and van Oudenaarden, 2012). The quantitative measurements of transcript distribution are based on image analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Single-neuron RNA quantification reveals up to 3.9-fold differences in expression of the same transcript between different neurons. No significant difference was observed between bilaterally symmetric L/R neurons of the same class, but a significant difference (p<0.01) was found between radially symmetric RMEV/D and RMEL/R neurons for unc-25.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by quantitative data in Figure 10 with appropriate statistical testing (two-sided Wilcoxon rank sum test). The finding of differential expression within the same neuronal class (RME neurons) is novel and statistically significant. Sample sizes (n=3-7 animals) are adequate for the statistical tests performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C80",
+      "C82"
+    ],
+    "result": "Epitope-preserving ExCel replaces Proteinase K with collagenase VII and MAP5 heat denaturation treatment, enabling detection of untagged endogenous proteins with antibodies. This achieves ~2.8x expansion with ~8-25% distortion over 0-100 \u03bcm, and enables strong signal-to-noise ratios for many epitope targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C80, and C82 describe the epitope-preserving ExCel protocol and its performance. These are supported by the systematic screen in Figure 11 and validation in Figure 12. The tradeoff between epitope preservation and expansion isotropy is clearly documented. The protocol enables detection of ~70% of tested non-IgM antibodies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C87"
+    ],
+    "result": "Epitope-preserving ExCel identified a previously unreported co-localization of DYN-1 with DLG-1 at cell-cell contact sites between vulval precursor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C87 are supported by data in Figure 15F showing co-localization of DYN-1 and DLG-1 at vulval precursor cell junctions. While DLG-1 localization at these sites was previously known (cited: Shin and Reiner, 2018), the DYN-1 co-localization is reported as novel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Epitope-preserving ExCel resolves peri-active and active zones of chemical pre-synapses, showing that DYN-1 (peri-active zone marker) has more diffuse localization than UNC-10 (active zone marker), with UNC-10 puncta spatially embedded within DYN-1 densities. At dorsal nerve cord synapses, UNC-10 exclusively localizes to the ventral side of DYN-1 by <0.5 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C88-C91 are supported by high-resolution imaging data in Figure 16 showing spatial organization of synaptic proteins. The observations are consistent with prior work in other organisms (cited: Marie et al., 2004; Brodin and Shupliakov, 2006; Wahl et al., 2013). The directional relationship at dorsal cord synapses is a novel observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C86"
+    ],
+    "result": "Iterative ExCel (iExCel) enables two successive rounds of expansion, achieving ~20x linear expansion factor and ~25 nm theoretical resolution with low distortion (~1.5-4.5% over 0-100 \u03bcm). This resolves fluorescent puncta that likely represent individual GFP molecules in neuronal cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 and C86 describe the iExCel protocol and its performance. These are supported by data in Figures 17-18 showing the protocol workflow, isotropy measurements (Figure 18\u2014figure supplement 1), and resolution of individual fluorescent puncta. The ~20x expansion factor is achieved through two rounds of ~4x expansion each. The isotropy is comparable to standard ExCel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Remaining challenges in ExCel include distortion in gonad and mouth regions, reduced isotropy with epitope-preserving ExCel, and limitation of current iExCel to detecting only fluorescent proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C31 identify limitations of the current protocols. These are supported by data in Figure 3\u2014figure supplements 1-2 (gonad and mouth distortions), Figure 14 (reduced isotropy of epitope-preserving ExCel), and the protocol description indicating iExCel currently only detects fluorescent proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Standard ExCel-based ExFISH-HCR can detect at least 300 individually resolvable transcripts at ~3.3x expansion, compared to smFISH which can practically detect only ~10-20 transcripts in C. elegans neuronal soma before losing single-transcript resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 compare ExCel-based RNA detection to smFISH. The smFISH limitations are based on cited work (Ji and van Oudenaarden, 2012) and geometric calculations. The ExCel capability is demonstrated in Figures 8-10 showing detection of hundreds of transcripts in single neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Standard ExCel is currently the only ExCel variant supporting RNA readout, as epitope-preserving ExCel uses heat-mediated denaturation at pH 9.0 which could induce alkaline hydrolysis of RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C97 identify a limitation of epitope-preserving ExCel. The incompatibility with RNA detection is explained by the chemical properties of the denaturation treatment. This is a logical inference based on known chemistry of RNA hydrolysis under alkaline conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Eggshells and pharyngeal lumen walls both contain chitin, and future ExCel versions incorporating chitin disruption may alleviate distortions in gonad and mouth areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is supported by citations (Heustis et al., 2012; Stein and Golden, 2018; Zhang et al., 2005). However, claim C99 is speculative about future improvements. While the hypothesis is reasonable, it has not been tested experimentally in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Epitope-preserving ExCel has lower isotropy than standard ExCel because its epitope-friendly treatment is less effective at mechanically homogenizing tissue. Iterative ExCel maintains high isotropy because it inherits the Proteinase K treatment from standard ExCel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100 and C101 provide mechanistic explanations for observed isotropy differences. These are supported by the experimental data showing different distortion levels (Figures 3B, 14B, 18\u2014figure supplement 1) and are logical inferences based on the different treatments used in each protocol.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Future improvements could include three or more rounds of expansion, greater multiplexing capability, and potential reconstruction of molecularly annotated connectomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C105 are speculative about future applications and improvements. While these are reasonable extensions based on prior work (cited: Chang et al., 2017; Chen et al., 2016; Wang et al., 2018; Ku et al., 2016), they have not been demonstrated in this study.",
+    "result_type": "MINOR"
+  }
+]

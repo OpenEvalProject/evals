@@ -1,0 +1,1288 @@
+{
+  "submission": {
+    "id": "d257a2a9-bf01-49f3-ab14-25a6fd0685a4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:57:44.714182Z",
+    "updated_at": "2025-12-02T16:57:44.714182Z"
+  },
+  "content": [
+    {
+      "id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "submission_id": "d257a2a9-bf01-49f3-ab14-25a6fd0685a4",
+      "content_type": "manuscript",
+      "content_text": "# Temporal integration of auxin information for the regulation of patterning\n\n## Authors\n\n- Carlos S Galvan-Ampudia<sup>1</sup> ([ORCID: 0000-0002-4779-3568](https://orcid.org/0000-0002-4779-3568))\n- Guillaume Cerutti<sup>1</sup> ([ORCID: 0000-0003-2003-9335](https://orcid.org/0000-0003-2003-9335))\n- Jonathan Legrand<sup>1</sup>\n- G\u00e9raldine Brunoud<sup>1</sup>\n- Raquel Martin-Arevalillo<sup>1</sup>\n- Romain Azais<sup>1</sup>\n- Vincent Bayle<sup>1</sup>\n- Steven Moussu<sup>1</sup>\n- Christian Wenzl<sup>2</sup>\n- Yvon Jaillais<sup>1</sup> ([ORCID: 0000-0003-4923-883X](https://orcid.org/0000-0003-4923-883X))\n- Jan U Lohmann<sup>2</sup> ([ORCID: 0000-0003-3667-187X](https://orcid.org/0000-0003-3667-187X))\n- Christophe Godin<sup>1</sup> ([ORCID: 0000-0002-1202-8460](https://orcid.org/0000-0002-1202-8460)) \u2020\n- Teva Vernoux<sup>1</sup> ([ORCID: 0000-0002-8257-4088](https://orcid.org/0000-0002-8257-4088)) \u2020\n\n### Affiliations\n\n1. Laboratoire Reproduction et D\u00e9veloppement des Plantes, Univ Lyon, ENS de Lyon, UCB Lyon 1, CNRS, INRAE, Inria Lyon France\n2. Department of Stem Cell Biology, Centre for Organismal Studies, Heidelberg University Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nPositional information is essential for coordinating the development of multicellular organisms. In plants, positional information provided by the hormone auxin regulates rhythmic organ production at the shoot apex, but the spatio-temporal dynamics of auxin gradients is unknown. We used quantitative imaging to demonstrate that auxin carries high-definition graded information not only in space but also in time. We show that, during organogenesis, temporal patterns of auxin arise from rhythmic centrifugal waves of high auxin travelling through the tissue faster than growth. We further demonstrate that temporal integration of auxin concentration is required to trigger the auxin-dependent transcription associated with organogenesis. This provides a mechanism to temporally differentiate sites of organ initiation and exemplifies how spatio-temporal positional information can be used to create rhythmicity.\n\n## Introduction\n\nSpecification of differentiation patterns in multicellular organisms is regulated by gradients of biochemical signals providing positional information to cells (Rogers and Schier, 2011; Wolpert, 1969). In plants, graded distribution of the hormone auxin is not only essential for embryogenesis, but also for post-embryonic development, where it regulates the reiterative organogenesis characteristic of plants (Dubrovsky et al., 2008; Vanneste and Friml, 2009; Benkov\u00e1 et al., 2003). Plant shoots develop post-embryonically through rhythmic organ generation in the shoot apical meristem (SAM), a specialized tissue with a stem cell niche in its central zone (CZ; Figure 1A). In Arabidopsis thaliana, as in a majority of plants, organs are initiated sequentially in the SAM peripheral zone (PZ surrounding the CZ) at consecutive relative angles of close to 137\u00b0, either in a clockwise or anti-clockwise spiral (Figure 1A;\u00a0Galvan-Ampudia et al., 2016). SAM organ patterning or phyllotaxis has been extensively analyzed using mathematical models (Douady and Couder, 1996; Mitchison, 1977; Veen and Lindenmayer, 1977). A widely accepted model proposes that the time interval between organ initiations (the plastochron) and the spatial position of organ initiation emerge from the combined action of inhibitory fields emitted by pre-existing organs and the SAM center (Douady and Couder, 1996). Tissue growth then self-organizes organ patterning by moving organs away from the stem cells and leaving space for new ones.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig1-v1.jpg)\n\n**Figure 1.:** (A) SAM radial organization. The CZ (magenta) is surrounded by the PZ (cyan). Emerging flower primordia and flowers are colored in yellow. (B). Representative expression patterns of DII-VENUS-N7 (yellow) and pCLV3:mCherry transcriptional reporter line (magenta). Primordia are indicated by color and rank. (C). Auxin map (1-qDII, yellow to black) of (B). CLV3 expression (magenta) and radial extension (circle) are shown. Black arrows depict radial distance from the center and aligned angle. (D\u2013F). Superposition of 21 aligned SAM images at time 0 hr (D), and 10 hr (E). (F) 137.5\u00b0 clockwise rotation of (D) results in a quasi-identical image of (E). See Figure 1\u2014figure supplement 2A for non-aligned image superposition. Scale bars\u00a0=\u00a020 \u00b5m. (G). Precision in auxin maxima positioning measured using angular position deviation (azimuthal deviation, left panel) and radial direction (right panel). Red lines indicate the average cellular distance. N\u00a0=\u00a021 meristems. Colors indicate primordium ranks (P-1 blue, P0 cyan, P1 green, P2 yellow, P3 orange) (H). Space can be used as a proxy for time, as a rotation of 1 divergence angle is equivalent to a translation of 1 plastochron in time.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013C). Time-course images of TagBFP (gray) driven by the RPS5a promoter in the qDII line. (D). Quantification of TagBFP nuclei intensity in the L1 cell layer of the meristem (N\u00a0=\u00a042991 nuclei). (E\u2013G). Time-course images of DII-VENUS (yellow) in the qDII line. (H). Quantification of DII-VENUS nuclei intensity in the L1 cell layer. (I\u2013K). Time-course images of pCLV3:mCherry. (I). Quantification of CLV3 nuclei intensity in the L1 cell layer (N\u00a0=\u00a06003 nuclei). Scale bars\u00a0=\u00a020 \u00b5M. (M). CLV3 quantified signal as a function of radial distance from the center at time 0, 5 and 10 hr. Each point represents a nucleus and regression curves for each time point distribution are shown.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A). Superposition of non-registered SAM images. DII-VENUS-N7 (yellow) and TagBFP (gray) driven by the RPS5a promoter (qDII) and pCLV3:mCherry (Magenta). N\u00a0=\u00a069 meristem images. (B). Superposition of the same images as in (A) after rigid registration and rotation. Scale bars\u00a0=\u00a020 \u00b5M. (C). Distributions of relative map errors comparing an individual qDII (DII-VENUS/TagBFP) map to the average of the rest of the population. From left to right, the boxplots represent the errors obtained using the aligned image positions as in (B); the aligned image positions but only in the P0 domain; the aligned image positions compared with 90\u00b0-rotated individual maps; the raw image positions centered on the CLV3 domain; and the raw image positions as in (A). The alignment significantly reduces the error, not only in the P0 domain that is used for alignment but all over the SAM, making around three times fewer errors that the worst possible alignment. Statistically significant differences are indicated by asterisks (one-way ANOVA, p-value<0.001. (D) The positions of primordia from 21 SAMs allowed measuring the precision in angular and radial positioning. Note the perfect separability of clusters of primordia of the same rank (indicated by color). (E). A geometrical model of primordia distribution allows generating primordia positions for different values of divergence angle and plastochron variability and computing their separability. Simulations with no variability (circle) or with high variability either in divergence angle (triangle) or plastochron (square) are shown, illustrating the effect of the variability on separability of primordia. The perfect separability observed in SAM suggests that the system is restricted to a domain of low divergence angle and plastochron variability. This domain is bound by the upper values indicated by the red line. (F). Model parameters estimated from the observed angular and radial deviations of primordia (D) allow to postulate an angular variability of 3.6\u00b0 and a plastochron variability of 2.5 hr for the SAM (star in (E). (G) The radial distance of an auxin maximum Pn at T\u00a0=\u00a00 hr lies between the previous maximum Pn-1 at T\u00a0=\u00a010 hr and T\u00a0=\u00a014 hr with limited variability (boxplots). 12 hr is consequently a good estimate of the plastochron, which allows positioning primordia on a developmental time axis (H). Each blue curve represents the error computed between a qDII map at T\u00a0=\u00a010 hr and the rotated map of the same SAM at T\u00a0=\u00a00 hr, applying a variable rotation angle ranging from \u2212180\u00b0 to 180\u00b0. The position on each curve corresponding to a minimal error is indicated by a blue dot. Note that all dots are robustly positioned close to 137.5\u00b0 (N\u00a0=\u00a021). This evidences that performing a rotation of 137.5\u00b0 (one divergence angle) is a suitable way of approximating the temporal evolution of the system after one plastochron. (I\u2013L). Sequential auxin (1-qDII) maps showing the formation of a finger-like auxin maximum protrusion generated from the center. The red square indicates the region at the SAM at P-2 (I), P-1 (J), P0 (K) and P1 (L). See Video 1 for full sequence.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A). Schematic representation of auxin minimum dynamics. Auxin minima are represented as colored shapes. Minima appear from stage P1 as a crescent area (green) radially isolating the auxin maximum from the central zone, and progressively building up until its reduction to a single cell file in the organ boundary at stage P5 (dark red ellipse). Double boxplots are positioned at auxin minimum (empty) or maximum (filled) positions and show the radial and angular variability of the values. (B). Auxin values for auxin maxima (filled boxes) and minima (outline boxes) over time for each primordium. (C). Radial movement of auxin minima (outline boxes) first closely follows the one of their associated maxima (filled boxes) before stopping at a fixed distance from the center after stage P3. (D). Auxin depletion extends radially from the maxima to the center of the SAM. The depletion zone progressively widens during stages P1 to P3 before splitting in two at stage P4. (E). Auxin depletion angular extent from the auxin maximum follows a similar dynamics as in (D). (F\u2013L). Auxin maps in longitudinal sections at the position of the primordium from P-1 (F) to P5 (L). Auxin maxima start to be formed in the L1 layer and expand towards the inner layer before moving radially. The circle shades are nuclei detected positions from which the map was generated.\n\nAuxin is the main signal for positional information in phyllotactic patterning (Reinhardt et al., 2003a; Reinhardt et al., 2000). Auxin, has been proposed to be transported directionally toward incipient primordia where it activates a transcriptional response leading to organ specification (Benkov\u00e1 et al., 2003; Reinhardt et al., 2003a; Heisler et al., 2005; Vernoux et al., 2000). PIN-FORMED1 (PIN1) belongs to a family of auxin efflux carriers whose polarity determines the direction of auxin fluxes (Benkov\u00e1 et al., 2003; G\u00e4lweiler et al., 1998). PIN1 proteins are present throughout the SAM and regulate the spatio-temporal distribution of auxin cooperatively with other carriers (Reinhardt et al., 2003a; Bainbridge et al., 2008). Convergence of PIN1 carriers toward sites of organ initiation was proposed to control an accumulation of auxin that triggers organ initiation. This spatial organization of PIN1 polarities was also proposed to deplete auxin around organs, locally blocking initiation and thus establishing auxin-based inhibitory fields (Reinhardt et al., 2003a; Heisler et al., 2005; Vernoux et al., 2011; de Reuille et al., 2006; Stoma et al., 2008; Jonsson et al., 2006; Smith et al., 2006a). In addition, a reduced responsivity of the CZ to auxin has been demonstrated, providing an auxin-dependent mechanism for the inhibition of organogenesis in the CZ (Vernoux et al., 2011; de Reuille et al., 2006). Several models converge to suggest that together, these auxin-dependent regional cues determine new organ locations in the growing SAM.\n\nThe genetically-encoded biosensor DII-VENUS, a synthetic protein degraded directly upon sensing of auxin, recently allowed an unprecedented qualitative visualization of spatial auxin gradients in the SAM (Vernoux et al., 2011; Brunoud et al., 2012). However, quantification of the spatio-temporal dynamics of auxin is required to fully evaluate both experimental and theoretical understanding of the action of auxin in SAM patterning. This is all the more important given that the continuous helicoidal reorganization of auxin distribution in the growing SAM, suggests that auxin might convey complex positional information. Here, we used a quantitative imaging approach to question the nature of the auxin-dependent positional information. We further investigate how efflux and biosynthesis regulate the 4D dynamics of auxin, and explore how this information is processed in the SAM to generate rhythmic patterning.\n\n## Results\n\n### Spatio-temporal auxin distribution\n\nIn the SAM, DII-VENUS fluorescence reports auxin concentration with cellular resolution (Vernoux et al., 2011; Brunoud et al., 2012). To extract quantitative information about auxin distribution, we generated a DII-VENUS ratiometric variant, hereafter named qDII (quantitative DII-VENUS). qDII differs from previously used tools (Liao et al., 2015) in producing DII-VENUS and a non-degradable TagBFP reference stoichiometrically from a single RPS5A promoter (Wend et al., 2013; Goedhart et al., 2011;\u00a0Figure 1\u2014figure supplement 1A\u2013H). By introducing a stem cell-specific pCLV3:mCherry nuclear transcriptional reporter into plants expressing qDII (Pfeiffer et al., 2016) we generated a functional and robust geometrical reference for the SAM center (Figure 1B,C and Figure 1\u2014figure supplement 1I\u2013M).\n\nAll analyzed meristems (21 individual SAM) showed qDII patterns similar to those obtained with DII-VENUS, with locations of auxin maxima following the phyllotactic pattern (Vernoux et al., 2011; Figure 1B\u2013E). Despite the fact that SAMs were imaged independently and not synchronized, qDII patterns appeared highly stereotypical with easily identifiable fluorescence maxima and minima. This was confirmed by image alignment using SAM rotations (applying prior mirror symmetry if necessary; Figure 1D and Figure 1\u2014figure supplement 2A\u2013C). All images could be superimposed preserving the spatial distribution of auxin maxima and minima (Figure 1\u2014figure supplement 2B). Our analysis shows that auxin distribution follows the same synchronous pattern across a population of SAMs, with low angular and rhythmic variability (Figure 1\u2014figure supplement 2D\u2013E, Appendix 2), with apparent stationarity up to a 137\u00b0 rotation (Figure 1H).\n\nTo further quantify auxin distribution, we developed a mostly automated computational pipeline to measure SAM fluorescence (Appendix 3)\u00a0(Cerutti et al., 2020). We used the spatial distribution of 1-DII-VENUS/TagBFP as a proxy for auxin distribution, hereafter named \u2018auxin\u2019 (Figure 1C) and focused on the epidermal cell layer (L1) where organ initiation takes place (Jonsson et al., 2006; Kierzkowski et al., 2013; Smith et al., 2006b; Reinhardt et al., 2003b). The location of the absolute auxin maximum value was defined as Primordium 0 (P0). Other local maxima with lower auxin values were called Pn (Appendix 1), with n corresponding to their rank in the phyllotactic spiral (Figure 1C and Figure 1\u2014figure supplement 2B). Note that the dynamic range of qDII allows measuring an auxin value for the vast majority of cells in the PZ and only a few cells at P0 had undetectable values of DII-VENUS, leading to an auxin value of 1. The pipeline then permits the quantification of nuclear signals and aligns all the SAMs onto a common clockwise reference frame with standardized x,y,z-orientation and with the P0 maximum to the right. This automatic registration confirmed that auxin maxima follow a phyllotactic pattern with a divergence angle close to 137.5\u00b0 (Figure 1\u2014figure supplement 2F). It also demonstrated that maxima are positioned with a precision close to the size of a cell both in distance from the SAM center and in azimuth (angular distance) with a maximal standard deviation of 8.4 \u00b5m or 1.5 cell diameters (Figure 1G).\n\nWe then considered the temporal changes in auxin distribution by using time-lapse images over one plastochron, which corresponds to the period of this rhythmic system. P0 and successive auxin maxima moved radially (Figure 1\u2014figure supplement 2D). Remarkably, while the average radial distance from each local maximum Pn to the SAM center progresses (Figure 1\u2014figure supplement 2G), the spatial deviation of this distance does not change significantly over time, reflecting the synchronized movement of local maxima, with limited meristem to meristem variation. After 10 hr, every Pn local maximum has almost reached the starting position of the next local maximum, Pn+1, but after 14 hr they have passed this position (Figure 1\u2014figure supplement 2G). This suggests that a rotation of 137.5\u00b0, which replaces Pn by Pn+1, corresponds to a temporal progression of 10 to 14 hr (Figure 1H). This was supported by dissimilarity measurements obtained using different rotation angles between maps (Figure 1\u2014figure supplement 2H), allowing us to confirm that plastochron last 12h\u00a0\u00b1\u00a02h. We could thus derive a continuum of primordium development by placing Pn+1 time series one plastochron (12 hr) after Pn time series on a common developmental time axis (Figure 1H). Together with the observed developmental stationarity, this permitted the reconstruction of auxin dynamics over several plastochrons from observations spanning only one. The resulting quantitative temporal map of auxin distribution in the SAM reveals the dynamic genesis of auxin maxima in the PZ first as finger-like protrusions (visible at P-2, P-1 and P0) from a permanent high auxin zone at the center of the SAM (Figure 1\u2014figure supplement 2I\u2013L and Video 1), as previously predicted (de Reuille et al., 2006). At later stages, auxin maxima become confined to fewer cells while auxin minima are progressively established precisely in between auxin maxima and the CZ (Figure 1\u2014figure supplement 3).\n\n![Video 1.](https://cdn.elifesciences.org/articles/55832/elife-55832-video1.mp4.jpg)\n\n**Video 1.:** Auxin distribution dynamics in the SAM obtained from population averaging and temporal extrapolation. The developmental stage indicated at the top p=n corresponds to the area located on the right. Color code: yellow\u00a0=\u00a0low auxin, to black\u00a0=\u00a0high auxin.\n\nWe next wondered whether the motion of auxin maxima and minima could result purely from cellular growth, an hypothesis used in several theoretical models (Douady and Couder, 1996; Jonsson et al., 2006; Smith et al., 2006b; Heisler and J\u00f6nsson, 2006). By following a P1 maximum, we observed that cells within the auxin maximum zone closest to the CZ at time 0 hr gradually transfer to the depletion zone at time 10 hr (Figure 2A\u2013C; nuclei circled in white). At the same time, cells on the distal edge of the maximum zone show a progressive increase in their auxin level (Figure 2A\u2013C; nuclei circled in red), suggesting a spatial shift of the auxin maximum relatively to the cellular canvas. To explore further this phenomenon, we used nuclear motion to estimate cell motion vectors and compare them with the motion of the center of auxin maximum zones, we further found that the average radial speed of auxin maxima between stages P1 and P4 can surpass the average displacement of individual nuclei, with a peak velocity of more than 1 \u00b5m/h at the P2 stage (Figure 2D\u2013E). These results show that auxin maxima are not attached to specific cells; instead they travel through the tissue, resulting in an apparent centrifugal wave of auxin accumulation. Consequently, the SAM cellular network provides a dynamic medium in which auxin maximum zones can move radially with their own apparent velocity relative to the growing tissue (Figure 2D\u2013E). Analysis on time-courses of up to 14 hr revealed significant auxin variations in certain cells over one plastochron while auxin levels remained unchanged in others (Figure 2F\u2013G). However, neighboring cells always showed limited differences in their temporal auxin profiles (Figure 2F\u2013G). We concluded from these observations that there is a high definition spatio-temporal distribution of auxin, with auxin apparent movement occurring faster than growth within the tissue and providing cells with graded positional information in space and time (Figure 2H).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013C) Representative projection of P1 nuclei showing DII-VENUS-N7 (yellow) and TagBFP nuclei (grey) intensity changes in time. Time tracked nuclei are marked by white and red circles showing rapid decrease or increase of auxin over 10 hr, respectively. The green circle is centered on the position of the auxin maxima at each time point. The magenta line indicates the limit of the CLV3 domain. Scale bars\u00a0=\u00a020 \u00b5m. (D) Average motion of maxima (colored lines) is faster than average cell motion (grey lines). The magenta line indicates the CLV3 domain border. N\u00a0=\u00a021 meristems. (E) Compared distributions of radial motion speeds of auxin maxima (color boxplots) estimated as the slope of a linear regression per individual. Individual nucleus radial speed (gray boxplots) at the location of the maxima. N\u00a0=\u00a021 meristems. (F\u2013G) Individual cells experience different auxin histories. Tracked cells at different locations (F; colored circles) and corresponding auxin levels (ordinate) over time (0, 5, 10, 14 hr). Scale bar\u00a0=\u00a020 \u00b5m. (H) Cellular mean auxin trajectories as a function of radial distance. Each line represents an extrapolated cell-size sector moving accordingly to cellular radial motion by its Gaussian average trajectory in radial distance (abscissa) and auxin value (ordinate). The color indicates the developmental stages at a given radial distance (P-1\u00a0=\u00a0blue, P0\u00a0=\u00a0cyan, P1\u00a0=\u00a0green, P2\u00a0=\u00a0yellow).\n\n### Spatio-temporal control of auxin efflux and biosynthesis\n\nThe creation of auxin maxima first as protrusions of a high auxin zone in the CZ contrasts with the current vision of organogenesis being triggered by local auxin accumulation at the periphery of the CZ with concomitant auxin depletion around auxin maxima (Reinhardt et al., 2003a; de Reuille et al., 2006; Stoma et al., 2008; Jonsson et al., 2006; Smith et al., 2006b). This, in addition to the partial uncoupling of auxin distribution dynamics and growth, led us to reevaluate the spatio-temporal patterns of PIN1 localization, given their central role in controlling auxin distribution (Reinhardt et al., 2003a; de Reuille et al., 2006; Jonsson et al., 2006; Smith et al., 2006b). Co-visualization of a functional PIN1-GFP (Benkov\u00e1 et al., 2003) and qDII/CLV3 fluorescence over time showed that PIN1 concentration increases from P0 and reaches a maximum at P2 before decreasing (Figure 3A,H and Figure 3\u2014figure supplement 2), consistent with previous observations (Heisler et al., 2005; Bhatia et al., 2016; Caggiano et al., 2017). To quantify PIN1 cell polarities, we used confocal images after cell wall staining with the fluorescent dye propidium iodide (PI) as a reference to position the PIN1-GFP signal relative to the L1 anticlinal cell walls at each cell-cell interface (Shi et al., 2017; Figure 3B and Appendix 4). This allowed us to compute PIN1-GFP polarity for each cell-cell interface of the SAM by extracting the 3D distribution of fluorescence for PI and GFP and quantifying the difference of intensity on membranes on both sides of the cell wall (Figure 1C and Appendix 4). These cell interface polarities measure in which direction each cell interface locally contributes to orient the flow of auxin transport. Using super-resolution radial fluctuation (SRRF) microscopy (Gustafsson et al., 2016) on the same samples, we could show that this method recovers cell interface PIN1 polarities with an error below 10% (8 out of 94 interfaces analyzed). When calculating cellular PIN1 polarity vectors by integrating the cell interface polarity information for each cell, we could further show that more than 80% of the cellular polarities deviate by less than 30\u00b0 between the two approaches. This quantitative evaluation (Figure 3D\u2013G, Figure 3\u2014figure supplement 1 and Appendix 4) validates the robustness of our method, showing that, in spite of a coarse image resolution, a vast majority of cellular polarity directions are consistent with super resolution imaging techniques. Our approach is therefore particularly suitable for monitoring global trends at the scale of a tissue. Local averaging of the cellular vectors obtained from confocal images was then used to calculate continuous PIN1 polarity vector maps in order to identify the dominant trends in auxin flux directions in the SAM (Figure 3I, and Appendix 4). At the tissue scale, the vector maps demonstrate a strong convergence of PIN1 toward the center of the SAM (Figure 3I\u2013J and Figure 3\u2014figure supplement 2). In addition, PIN1 polarities deviate locally toward the radial axes followed by auxin maxima when they protrude from the CZ. We detected the previously observed inversion of PIN1 polarities at organ boundaries (Heisler et al., 2005) and our quantifications show that this occurs only from P7 (Figure 3\u2014figure supplement 2C), thus isolating the flower from the rest of the SAM from this late stage. P3 to P5 show a general flux toward the SAM that is locally deflected around the zones of auxin minima before converging back toward the SAM center (Figure 3I and Figure 3\u2014figure supplement 2). Over the course of one plastochron, only limited changes in the PIN1 polarities are observed (Figure 3\u2014figure supplement 2), suggesting that changes in auxin distribution at this time resolution do not require major adjustments in the direction of auxin efflux at the tissue scale.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig3-v1.jpg)\n\n**Figure 3.:** (A) Co-visualization of PIN1-GFP (green), DII-VENUS-N7 (yellow) and pCLV3:mCherry (magenta). Scale bar\u00a0=\u00a020 \u00b5m. Square shows P-1 sector. (B) Magnified P-1 region of (A) PIN1-GFP (green) and PI (magenta). (C) Computed PIN1 cell interface polarities of (B). Green arrows indicate polarities with a p-value<0.1, small arrows\u00a0<\u00a00.25 and dots\u00a0>\u00a00.25. (D\u2013G). Image of PIN1-GFP (green) and cell wall (magenta) obtained using confocal (D) or super resolution (SRRF) microscopy (F) and respective PIN1 cell interface polarities (E,G). (H) Quantification of PIN1-GFP expression.\u00a0N\u00a0=\u00a04\u00a0meristems. (I) PIN1 vector map (green arrows) organization correlated with auxin distribution (yellow to black).\u00a0N\u00a0=\u00a04\u00a0meristems. (J) PIN1 polarity divergence index at auxin maxima (color filled boxplots) or auxin minima (white filled boxplots) positions during organ initiation.\u00a0N\u00a0=\u00a04\u00a0meristems. (K) The YUC4 auxin biosynthesis limiting enzyme is specifically expressed in developing flowers. YUC4:GFP transcriptional reporter in yellow, cell wall (PI) staining in grey. Scale bars\u00a0=\u00a020 \u00b5m. (L) yuc1yuc4 mutant inflorescence and meristem morphological defects (inset). Scale bars are 10 mm and 20 \u00b5m (inset). (M)\u00a0Schematic representation of the tissue-scale organization of auxin transport and biosynthesis in relation to auxin distribution.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Confocal projection of PIN1-GFP (green) and cell wall (magenta) signals. (B) SRRF (Super Resolution Radial Fluctuation) image of the cells shown in (A). PIN1-GFP (green) and cell wall (magenta). (C) PIN1 cell interface polarity orientations of (A). Green arrows indicate polarities with a p-value<0.1, small arrows\u00a0<\u00a00.25 and dots\u00a0>\u00a00.25. (D) Extracted PIN1 interface polarities from SRRF image. (See Supplementary Methods three for details). Resulting cell polarities from confocal (E) and SRRF (F) images. (G) Quantification of PIN1 cell interface polarity orientation differences between confocal automated detection and manually extracted SRRF. The donut plot shows that the majority of PIN1 interface polarities (N\u00a0=\u00a094 interfaces) are correct. Uncertain polarities due to lack of consensus between expertized and automatic detection or opposite polarity are shown. (H) Comparison of extracted PIN1 cell polarities between SRRF and confocal images. The percentage of cells with a deviation angle from 0\u00b0 to 180\u00b0 is indicated. 80.7% of cell polarities have a deviation below 30\u00b0. See Supplementary Methods three for detailed description of the quantification.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013D) From left to right, first column: Representative confocal projection of the L1 cell layer of DII-VENUS (yellow), PIN1-GFP (green) and CLV3 (magenta) during a 14 hr time-course: T\u00a0=\u00a00 (A), T\u00a0=\u00a05 (B), T\u00a0=\u00a010 (C) and T\u00a0=\u00a014 (D). Second column: Average PIN1 vector maps (green arrows; N\u00a0=\u00a04 SAMs) and auxin maps (yellow to black). Third column: local PIN1 convergence map. Blue represents convergence while brown represents divergent vectors. Forth column: map of PIN1 expression levels (green to yellow). Fifth column: circumferential distribution of auxin values (yellow to dark line) at a 35 \u00b5M radial distance and the corresponding PIN1 vector fields (green arrows). Vectors perpendicular to the axis are pointing towards the center of the SAM.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A\u2013N) Expression patterns of YUC genes in the SAM. Expression was analyzed using transcriptional GFP reporter lines for the 11 YUC genes (GFP: Blue to green) in SAM stained with propidium iodide (PI; gray). (A\u2013C) show the expression of GFP alone for the three YUC with expression in the SAM. All images were acquired with identical settings but in (C) the GFP signal was enhanced to ease visualization. (O\u2013Q) Representative images of adult Col-0, yuc1, yuc4, and yuc1yuc4 mutant plants. (P\u2013Q) Inflorescences of yuc1yuc4 mutant showing defects in flower positioning and development. (R\u2013U) Meristem enlargement and altered auxin transcriptional responses (visualized using pDR5:GFP) in yuc1, yuc4 and yuc1yuc4 mutants. DR5 expression (Blue to green); cell wall staining with PI (gray).\n\nWe next asked where auxin could be produced in the SAM. YUCCAs (YUCs) have been shown to be limiting enzymes for auxin biosynthesis (Cheng et al., 2006; Liu et al., 2016). We thus mapped expression of the eleven YUC encoding genes in the SAM, using GFP reporter lines with a promoter fragment size shown to be functional for YUC1,2 and 6 (Figure 3\u2014figure supplement 3A\u2013N;\u00a0Liu et al., 2016; Robert et al., 2013). Only YUC1,4,6 were expressed (Figure 3K, Figure 3\u2014figure supplement 3A\u2013F). While YUC6 showed a very weak expression in the CZ, both YUC1 and YUC4 are expressed in the L1 layer on the lateral sides of the SAM/flower boundary from P3 for YUC4 (Figure 3K) and P4 for YUC1 (Figure 3\u2014figure supplement 3A and D;\u00a0Cheng et al., 2006). From P4, YUC4 expression extends over the entire epidermis of flower primordia. This is coherent with genetic and other expression data (Supplementary file 1;\u00a0Cheng et al., 2006; Armezzani et al., 2018). In addition, yuc1yuc4 loss-of-function mutants show severe defects in SAM organ positioning and size (Shi et al., 2018; Pinon et al., 2013; Figure 3L and Figure 3\u2014figure supplement 3O\u2013U). Taken with the organization of PIN1 polarities, these results suggest that P3-P5 are auxin production centers for the SAM that regulate phyllotaxis and that PIN1 polarity organization allows for pumping auxin away from these production centers and towards the meristem.\n\nIn conclusion, our results suggest a scenario in which auxin distribution depends on high concentrations of auxin at the center of the SAM, and also at P-1 and P0, acting as flux attractors and on auxin production primarily in P3-P5 (Figure 3M).\n\n### The role of time in transcriptional responses to auxin\n\nTo assess quantitatively whether and how the spatio-temporal distribution of auxin is interpreted in the SAM, we next introduced the synthetic auxin-induced transcriptional reporter DR5\u00a0(Friml et al., 2003; Sabatini et al., 1999; Ulmasov, 1997) driving mTurquoise2 into the qDII/CLV3 reporter line (Figure 4A\u2013D). Cells expressing DR5 closest to the CZ were robustly positioned at an average distance of 32 \u00b5M\u00a0\u00b1\u00a07 (SD) from the center. This corresponds to a distance at which the intensity of CLV3 reporter expression is less than 5% of its maximal value (Figure 4\u2014figure supplement 1A). The distance from the center at which transcription can be activated by auxin is thus defined with a near-cellular precision.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013C). Time-lapse images of representative projections of DII-VENUS-N7 (yellow), TagBFP nuclei (grey) and pDR5:mTurquoise2 (cyan). Scale bars\u00a0=\u00a020 \u00b5m. (D). Quantified DR5 expression map (black to cyan). Colored sectors show the tissue areas where primordia are located (P-3 to P1).\u00a0N\u00a0=\u00a021\u00a0meristems. (E). Principal Component Analysis (PCA) showing absence of correlation (orthogonality) between auxin and DR5 at the tissue scale. Colored ellipses show the consistent pattern associated with each primordium stage (from P-2 to P1 using the same colors as in (D)). (F). Auxin and DR5 non-linear relationship in primordia. Cells from P-3 to P1 are indicated with the color code used in (D). Lines represent the regression of auxin and DR5 medians in time. (G\u2013H). Auxin (G) and DR5 (H) expression in primordia. Boxplots use the same color code for primordia as in (D).\u00a0N\u00a0=\u00a021\u00a0meristems.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A). Radial distribution of pCLV3:mCherry (magenta circles) and pDR5:mTurquoise2 expression (black circles) at different locations of the SAM (P-1 to P1). N\u00a0=\u00a021 SAM. Each point represents a nucleus. The vertical line indicates the mean for DR5 radial distribution. (B). Pearson correlation coefficients computed on tracked cellular values of auxin levels (1-qDII) and of transcriptional output (DR5) in the entire PZ. The considered variables are the levels at time T\u00a0=\u00a00 hr, T\u00a0=\u00a05 hr and T\u00a0=\u00a010 hr, the sum of auxin input from T\u00a0=\u00a00 hr to T\u00a0=\u00a05 hr and from T\u00a0=\u00a00 hr to T\u00a0=\u00a010 hr, and the variations in DR5 levels from T\u00a0=\u00a00 hr to T\u00a0=\u00a05 hr and from T\u00a0=\u00a00 hr to T\u00a0=\u00a010 hr. No significant positive correlations are found between input and output variables.\n\nTo obtain a global vision of how auxin-controlled transcription is related to auxin concentration, we performed a Principal Component Analysis (PCA) using quantified levels of DR5, auxin and CLV3 in each nucleus of the PZ during a 10 hr time series, together with their distance from the center (Figure 4E). With the first two axes accounting for around 75% of the observed variability, we unexpectedly observed orthogonality between auxin input and DR5 output, clearly marking the absence of a general correlation in the SAM (Figure 4E, inset). This unexpected finding was confirmed by the low Pearson correlation coefficients between DR5 and auxin values at the cell-level (Figure 4\u2014figure supplement 1B). We refined our analysis by focusing on the different primordia regions. We assembled all the observed couples of values (auxin, DR5), averaged over each primordium region, on a single graph (Figure 4F). This demonstrated that, spatially, a given auxin value does not in general determine a specific DR5 value. However, values corresponding to primordia at consecutive stages follow loop-like counter-clockwise trajectories in the auxin x DR5 space (indicated by the arrow in Figure 4F). Such trajectories are symptomatic of hysteresis reflecting the dependence of a system on its history. In other words, it appears that the relationship between auxin level and DR5 expression is not direct, but is affected by another factor depending on the previous developmental trajectory of each cell (determined by parameters such as genetic activity, protein content, signal exposure, chromatin state).\n\nWe then tried to identify what in this developmental history can explain the observed differences in DR5 response to auxin. We first used our reconstructed continuum of primordium development to study the joint temporal variations of DR5 and auxin within a group of cells during primordium initiation (Appendix 5). This showed that the start of auxin-induced transcription follows the build-up of auxin concentration with a delay of nearly one plastochron (Figure 4G\u2013H). The duration of the observed phenomenon suggests the existence of an additional process, over and above fluorescent protein maturation (Vernoux et al., 2011; Balleza et al., 2018), that creates a significant auxin response delay in primordium cells during development. Due to this delay, DR5 is not a direct readout of auxin concentration, explaining the absence of correlation between DR5 expression and auxin levels in these cells.\n\nWe next wondered what could explain a time-dependent acquisition of cell competence to respond to auxin. A first possible scenario is that cells exiting the CZ proceed through different stages of activation of an auxin-independent developmental program enabling them to sense auxin only after a temporal delay. A second possibility is that auxin controls this developmental program through a time integration process. In this scenario, cells exiting the CZ would need to be exposed to high auxin concentrations for a given time to build up an auxin transcriptional response. To test these scenarios, we treated SAMs with auxin for different periods using physiologically relevant concentrations (Reinhardt et al., 2000; Figure 5A\u2013I). All treatments, even the shorter ones, equally degraded DII-VENUS throughout the PZ (Figure 5\u2014figure supplement 1A\u2013I). This suggests that auxin uptake was similar throughout the PZ, although we cannot totally discard that some differences exist. In the shorter auxin treatments (30\u2019 and 120\u2019), the auxin transcriptional response was mainly enhanced at P-1 and P-2 and to a lesser extent at the position of the predicted P-3that\u00a0is where cells are already being exposed to auxin (Figure 5I). The longer auxin treatments (300') lead to an activation of signaling in most cells in the PZ and organs, with the strongest activation being observed again at P-1 and P-2 but also at the predicted azimuth for P-3, P-4 and P-5 (Figure 5H\u2013I). We could further show that a 300\u2019 treatment with a lower auxin concentration (200 nM) activated signaling similarly (at P-1) or more strongly (at P-2, P-3, P-4 and P-5) than a 120\u2019 1 mM auxin treatment. Conversely, a 120\u2019 treatment with higher auxin concentration (5 mM) lead to an activation of signaling almost as strongly as a 300\u2019 1 mM treatment at P-1, although the activation was lower at P-2 (Figure 5I). In all treatments, no significant effect was detected at P0, consistent with the fact that DR5 activation is already maximal at this stage of development (Figure 4). We next treated pinoid (pid) mutant SAMs with exogenous auxin. pid mutants are strongly affected in polar auxin transport and in aerial organ production (Reinhardt et al., 2003a; Friml et al., 2004; Christensen et al., 2000). DR5 expression was low and radially uniform in pid SAMs, suggesting a uniform auxin distribution (Figure 5J;\u00a0Friml et al., 2004). When treated with 1 mM auxin, DR5 could be activated in all cells of the periphery of the SAM (suggesting an uptake throughout the PZ as in the wild-type) only with a 300\u2019 treatment, while a 120\u2019 treatment had only a weak effect (Figure 5J\u2013M and Figure 5\u2014figure supplement 2A\u2013C). This indicates that, even with the reduced complexity in PZ patterning of the pid mutant (Friml et al., 2004), activation of auxin signaling is still dependent on the time of exposure to auxin in all cells surrounding the CZ. Taken together, our observations support the second scenario, with the activation of signaling being a function of both time of exposure to auxin and auxin concentration. Conversely, our results are incompatible with the first scenario, where the capacity of the cells to respond to auxin is intrinsic and is not dependent upon auxin exposure time. Notably, the results with pid SAMs suggest that all cells at the SAM periphery show no intrinsic differences in their capacity to respond to auxin, in agreement with published data (Reinhardt et al., 2003a; Heisler et al., 2005; Smith et al., 2006a). Our results thus support the hypothesis that temporal integration of auxin concentration is required for downstream transcriptional activation in the SAM.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013I) Activation of the DR5 reporter with different concentrations of auxin and durations of treatments. pDR5:mTurquoise2 expression before auxin treatment (A\u2013D) and 5 hr after the end of the auxin treatment: mock (E) or 1 mM IAA treatment for 30\u2019 (F), 120\u2019 (G) or 300\u2019 (H). pDR5:mTurquoise (cyan), TagBFP driven by pRPS5a (gray) and pCLV3:mCherry (magenta) labelled nuclei are shown. Inset: DII-VENUS-N7 (yellow) from the same meristem. Quantification of DR5 expression in the PZ after auxin treatments. (I). Average DR5 response in the PZ with different auxin concentrations and treatment durations. Confidence intervals (shade) and regression (line) shows log(DR5) expression along the circumference of the PZ (aligned angle) of control (gray) or IAA (color) treated meristems. For simplicity only the angular position of primordia are indicated (in grey, presumptive positions). (J\u2013M). Transcriptional response to auxin treatment of different durations in pid-14. pid-14 pDR5:3xVENUS SAM treated with IAA for 120\u2019 (J,K) or 300\u2019 (L,M) are shown. (N\u2013Q). Transcriptional response to a 300\u2019 auxin treatment in ett mutants. Control Col-0 pDR5:3xVENUS-N7 (N,O) and ett-22/arf3 pDR5:3xVENUS-N7 (P,Q) meristems treated with auxin for 300\u2019.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013H) Degradation of DII-VENUS-N7 after different periods of 1 mM auxin treatment. DII-VENUS-N7 distribution before auxin treatment (A\u2013D) and right after the end of the auxin treatment: mock (E) or 30\u2019 (F), 120\u2019 (G) or 300\u2019 (H) DII-VENUS-N7 (yellow) and pCLV3:mCherry (magenta) labelled nuclei are shown. (I)\u00a0Quantification of auxin (1-qDII) in the PZ after the treatments shown in Figure 5H\u2013I. Each profile shows auxin levels right after the end of each treatment. Each dot represents a nucleus (Mock N\u00a0=\u00a01638, 30\u2019 1 mM auxin N\u00a0=\u00a02026, 120\u2019 1 mM auxin N\u00a0=\u00a0875, 300\u2019 1 mM auxin N\u00a0=\u00a02375, 120\u2019 0.2 mM auxin N\u00a0=\u00a01536, 300\u2019 0.2 mM auxin N\u00a0=\u00a01981 and 120\u2019 5 mM auxin N\u00a0=\u00a02302). The angular locations of primordia are indicated. (J\u2013L). The effect of in planta auxin treatment of different durations (one treatment a day for five consecutive days) on organ positioning in Col-0. Flowers positioned at 90\u00b0 (J) or co-inserted on a node (K) can be observed (here after a 120\u2019 1 mM auxin treatment). (L) Percentage of plants with phyllotaxis defects in the different treatments (0, 0.2, 1 and 5 mM auxin for 30\u2019, 120\u2019 or 300\u2019 once a day during five consecutive days. (M\u2013P) Representative images of inflorescences and meristems of Col-0 (M and O) and ett-22/arf3 mutant (N and P) showing phyllotactic defects such as co-initiations (N) and opposite organ positioning (P). (Q\u2013S) Representative image of a pDR5:mTurquoise2 (Cyan) pCLV3:mCherry (pink) meristem treated with mock or the histone deacetylase inhibitor TSA. Red arrow in (R) indicates P-1 where activation of DR5 can be observed. (S). Quantification of DR5 expression in the PZ epidermal cell layer of (Q) and (R). Confidence intervals (shade) and regression (line) shows circumferential DR5 expression pattern in the PZ (the position of primordia from P-2 are indicated) of control (magenta) or TSA (green) treated meristems. The red arrow points to the significant activation of DR5 at P-1. DMSO N\u00a0=\u00a020 SAMs, TSA N\u00a0=\u00a020 SAMs.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A\u2013C) 4 examples of pid-14 pDR5:3xVENUS-N7 meristems before and 5 hr after the end of auxin treatment. Mock treated (A), 120\u20191 mM (B) or 300\u2019 1 mM auxin treatment (C). (D\u2013E) 4 examples of meristems of Col-0 pDR5: 3xVENUS-N7 (D) or ett-22 DR5: 3xVENUS-N7 (E) treated with 1 mM IAA for 300\u2019.\n\nThe Auxin Response Factor (ARF) ETTIN (ETT/ARF3) plays an important role in promoting organogenesis in the SAM (Wu et al., 2015; Chung et al., 2019). Despite the fact that ETT is a non-canonical ARF, genetic data indicate that it acts together with ARF4 and MONOPTEROS/ARF5 to promote organogenesis at the SAM. We found that in a loss-of function ett3 mutant the expression of DR5 was restricted to only 2\u20133 cells at sites of organogenesis, an observation consistent with a role for ETT in promoting organogenesis. In addition, a 300\u2019 1 mM auxin treatment did not induce DR5 in the SAM (Figure 5N\u2013Q and Figure 5\u2014figure supplement 2D\u2013E). Auxin signaling and ARF3 in particular have been shown to act by modifying acetylation of histones (Wu et al., 2015; Chung et al., 2019; Long et al., 2006). Pharmacological inhibition of histone deacetylases (HDACs) alone was able to trigger concomitant activation of DR5 at P0 and P-1 sites in the SAM (Figure 5\u2014figure supplement 1Q\u2013S). Taken together, these results suggest that auxin signal integration likely depends on a functional ARF-dependent auxin nuclear pathway.\n\nPhyllotaxis is perturbed in ett mutant SAMs (Figure 5\u2014figure supplement 1M\u2013P;\u00a0Simonini et al., 2017). Our results thus suggest that a perturbation of the temporal reading of auxin information can result in phyllotaxis defects. Supporting this idea, we also found that daily exogenous auxin treatments at the SAM affected phyllotaxis and that the efficiency of the treatment increased with both auxin concentration and treatment length. This was particularly evident for 30\u2019 and 120\u2019 treatments (Figure 5\u2014figure supplement 1J\u2013L). 300\u2019 treatments were less efficient at higher auxin concentrations, possibly due to compensation mechanisms. These results suggest that temporal integration of auxin information at the SAM is essential for phyllotaxis.\n\n## Discussion\n\nIn a recent modeling study, a stochastic induction of organ initiation based on temporal integration of morphogenetic information was proposed (Refahi et al., 2016). Here we provide evidence that organ initiation in the SAM is indeed dependent on temporal integration of the auxin signal. Our quantitative analysis of the dynamics of auxin distribution and response supports a scenario in which rhythmic organ initiation at the SAM is driven by the combination of high-precision spatio-temporal graded distributions of auxin with the use of the duration of cell exposure to auxin, to temporally differentiate sites of organ initiation (Figure 6). Importantly our results suggest that a time integration mechanism is essential for rhythmic organ patterning in the SAM since auxin-based spatial information pre-specifies several sites of organ initiation and is thus unlikely to provide sufficient information (Video 1). Whether temporal integration of auxin information exists in other tissues remains to be established.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55832/elife-55832-fig6-v1.jpg)\n\n**Figure 6.:** A maximum of auxin protrudes from a high auxin concentration zone at the CZ faster than the cell radial movement. Cells exiting the CZ that are exposed to high auxin levels progressively acquire competence for transcriptional response. This leads to activation of transcriptional responses with a delay close to the system period, the plastochron.\n\nWe provide evidence that temporal integration of the auxin signal likely requires the effectors of the auxin signaling pathway. Activation of transcription downstream of auxin by ARFs relies on chromatin remodeling, increasing the accessibility of ARF targets and possibly allowing for the recruitment of histone acetyltransferases (Wu et al., 2015), together with the release of histone deacetylases (HDACs) from target loci through degradation of Aux/IAA repressors (Long et al., 2006). Chromatin state change is one mechanism that allows the temporal integration of signals in eukaryotes, including plants (Angel et al., 2011; Coda et al., 2017; Nahmad and Lander, 2011; Sun et al., 2009). It is thus plausible that time integration of the auxin signal in cells leaving the CZ is set by progressive acetylation of histones triggered by ARFs at their target loci. As chromatin deacetylation also represses auxin signaling in the CZ (Ma et al., 2019), balancing the acetylation status of ARF target loci could provide a mechanism to tightly link stem cell maintenance to differentiation by precisely positioning organ initiation at the boundary of the stem cell niche, while at the same time allowing sequential organ initiation. Temporal integration might as well rely on mechanisms that fine-tune the intracellular distribution of auxin, such as auxin metabolism but also intracellular transport (Sauer and Kleine-Vehn, 2019). Determining how different mechanisms might act in parallel to provide a capacity to activate target genes as a function of auxin concentrations over time will require further analyses. It will notably be important to determine whether other ARF than ARF3 act in the temporal integration of auxin.\n\nThe existence of high definition spatio-temporal auxin gradients suggests that as for several morphogens in animals (Nahmad and Lander, 2011; Dessaud et al., 2007; Scherz et al., 2007; Maden, 2002) the robustness of SAM patterning results from highly reproducible spatio-temporal positional information. Our results indicate that auxin maxima could first emerge from the CZ at the confluence of centripetal auxin fluxes. Confluences creating auxin maxima would at the same time divert fluxes away from areas where auxin minima appear (Figure 3M). Our analysis raises the question of how auxin transport could generate this high definition signal distribution and whether the different models that have been proposed can explain this distribution (Bainbridge et al., 2008; Stoma et al., 2008; Jonsson et al., 2006; Smith et al., 2006a; van Berkel et al., 2013). Further analysis of the spatio-temporal control of auxin distribution needs also to consider that early developing flowers act as auxin production centers. These flowers could not only provide a memory of the developmental pattern through lateral inhibition but also contribute positively to a self-sustained auxin distribution pattern by providing auxin to the system (Figure 3M). Finally, our work indicates that the stem cell niche could act as a system-wide organizer of auxin transport, consistent with previous work (de Reuille et al., 2006). This could provide another layer of regulation tightly coordinating differentiation with the presence of a largely auxin-insensitive stem cell niche (Vernoux et al., 2011; Ma et al., 2019).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td>pPIN1:PIN1-GFP (Col-0)</td>\n      <td>Benkov\u00e1 et al., 2003</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td>pCLV3:mCherry-NLS (Col-0)</td>\n      <td>Pfeiffer et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td>pYUC1-11:GFP (Col-0)</td>\n      <td>Liu et al., 2016; Robert et al., 2013</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Arabidopsis thaliana)</td>\n      <td>yuc1 yuc4/+ pDR5rev::GFP (Col-0)</td>\n      <td>Robert et al., 2013</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Arabidopsis thaliana)</td>\n      <td>ett-22 (Col-0)</td>\n      <td>Pekker et al., 2005</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Arabidopsis thaliana)</td>\n      <td>pid-14 (Col-0)</td>\n      <td>Huang et al., 2010</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td>pRPS5a:DII-VENUS-N7-p2A-TagBFP-SV40 (Col-0)</td>\n      <td>This study</td>\n      <td>qDII</td>\n      <td>Request to teva.vernoux@ens-lyon.fr</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td>pDR5rev:2x-mTurquoise2-SV40 (Col-0)</td>\n      <td>This study</td>\n      <td></td>\n      <td>Request to teva.vernoux@ens-lyon.fr</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trichostatin A</td>\n      <td>Invivogen</td>\n      <td>met-tsa-1</td>\n      <td>0.005 mM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Indole-3-acetic acid sodium salt</td>\n      <td>Sigma-Aldrich</td>\n      <td>I5148</td>\n      <td>0.2, 1.0, 5.0 mM</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RStudio</td>\n      <td>RStudio Team, 2015</td>\n      <td>RRID:SCR_000432</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image J</td>\n      <td></td>\n      <td>RRID:SCR_003070</td>\n      <td>https://imagej.net</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NumPy</td>\n      <td></td>\n      <td>RRID:SCR_008633</td>\n      <td>http://www.numpy.org</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SciPy</td>\n      <td>Virtanen et al., 2020</td>\n      <td>RRID:SCR_008058</td>\n      <td>http://www.scipy.org</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>VTK</td>\n      <td>Schroeder et al., 2006</td>\n      <td>RRID:SCR_015013</td>\n      <td>http://www.vtk.org</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>scikit-image</td>\n      <td>van der Walt et al., 2014</td>\n      <td></td>\n      <td>http://scikit-image.org</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>sam_spaghetti</td>\n      <td>This study Cerutti et al., 2020</td>\n      <td></td>\n      <td>https://gitlab.inria.fr/mosaic/publications/sam_spaghetti/</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Propidium iodide solution</td>\n      <td>Sigma-Aldrich</td>\n      <td>P4864</td>\n      <td>0.1 mM</td>\n    </tr>\n  </tbody>\n</table>\n\n### Plant material and growth conditions\n\nSeeds were directly sown in soil, vernalized at 4 \u00b0C, and grown for 24 days at 21 \u00b0C under long day condition (16 hrs light, LED 150\u00b5mol/m\u00b2/s). Shoot apical meristems from inflorescence stems with a length between 0.5 and 1.5 cm were dissected and cultured in vitro as described in Prunet et al. (2016) for 16 hrs. When required, meristems were stained with 100 \u00b5M propidium iodide (PI; Merck) for 5 min. Auxin treatments were performed by immersing meristems in solutions containing indicated concentrations of indole-acetic acid (IAA) and 10 mM MES-hydrate (buffer) for indicated periods of time. Trichostatin A (TSA \u2013 Invivogen) was added to the culture medium to a final concentration of 5 \u00b5M. Meristems were cultured in TSA for 16 hrs prior to auxin treatment. For time lapses, the first image acquisition (T=0) corresponds to 2 hrs after the end of the dark period. In planta treatments were carried out on 24 day-old Col-0 plants by dropping 10 \u00b5L of IAA solution (IAA at different concentrations, 10 mM MES-hydrate and 0.01% v/v Tween-20) onto the SAM, followed by incubation for indicated lengths of time. Meristems were then washed with 100 \u00b5L of 10 mM MES buffer with 0.01% v/v Tween-20. Treatments were carried out on 5 consecutive days and perturbations in organ positioning were recorded 7 days after the end of the treatments.\n\nPreviously published transgenic lines used in this study are PIN1-GFP (Benkov\u00e1 et al., 2003), pCLV3:mCherry-NLS (Pfeiffer et al., 2016), pYUC1-11:GFP and yuc1 yuc4/+ pDR5rev::GFP (Liu et al., 2016; Robert et al., 2013), ett-22 (Pekker et al., 2005), pid-14 (Huang et al., 2010). pRPS5a:DII-VENUS-N7-p2A-TagBFP-SV40 (qDII) and pDR5rev:2x-mTurquoise2-SV40 constructs were cloned cloned using Gateway technology (Life Sciences), and transformed in Arabidopsis thaliana (Col-0). Stable qDII homozygous lines were then crossed with pCLV3:mCherry-NLS, pDR5rev:2x-mTurquoise2-SV40 and PIN1-GFP reporter lines.\n\n### Microscopy\n\nAll confocal laser scanning microscopy was carried out with a Zeiss LSM 710 spectral microscope or a Zeiss LSM700 microscope. Multitrack sequential acquisitions were always performed using the same settings (PMT voltage, laser power and detection wavelengths) as follows: VENUS, excitation wavelength (ex): 514 nm, emission wavelength (em): 520\u2013558 nm; mTurquoise2, ex: 458 nm, em: 470\u2013510 nm; EGFP, ex: 488 nm, em: 510\u2013558 nm; TagBFP, ex:405 nm, em: 430\u2013460 nm; mCherry, ex: 561 nm, em: 580\u2013640 nm; propidium iodide, ex: 488, em: 605\u2013650 nm.\n\nScanning electron microscopy of meristems were carried out using a HIROX SH-3000\u00a0microscope.\n\nTime lapses for Super Resolution Radial Fluctuation (SRRF) imaging were performed on an inverted Zeiss microscope (AxioObserver Z1, Carl Zeiss Group, http://www.zeiss.com/) equipped with a spinning disk module (CSU-W1-T3, Yokogawa, www.yokogawa.com) and a Prime95B SCMOS camera (https://www.photometrics.com) using a 63x Plan-Apochromat objective (numerical aperture 1.4, oil immersion), pixel size 175 nm or a 100x Plan-Apochromat objective (numerical aperture 1.46, oil immersion), pixel size 110 nm. GFP was excited with a 488 nm laser (150 mW) and fluorescence emission was filtered using a 525/50 nm BrightLine single-band bandpass filter (Semrock, http://www.semrock.com/). PI was excited with a 561 nm laser (80 mW) and fluorescence emission was filtered using a 609/54 nm BrightLine single-band bandpass filter (Semrock, http://www.semrock.com/). To obtain high resolution images, 200 frames were acquired with 50% laser power and 70 ms exposure time using Stream Acquisition mode. The green and red channels were acquired sequentially. For drift correction, 200 nm TetraSpeck beads (Life Technologies) were added to samples. Images were processed using the NanoJ-SRRF plugin (Gustafsson et al., 2016) with the following parameters: Ring Radius 0.5, Radiality Magnification 5, Axes in ring 6, Temporal Analysis TRPPM. SRRF time-lapses were produced by running SRRF analysis on groups of 50 frames. If aberrant PSF of Tetraspeck beads were observed, datasets were discarded.\n\n### Quantification and statistical analysis\n\nAll confocal images were pre-processed using the ImageJ software (http://rsbweb.nih.gov/ij/) for the delimitation of the region of interest. Then the CZI image files were processed using a computational pipeline relying on the numpy, scipy, pandas, czi_file Python libraries, as well as other custom libraries. Extensive details about the computational methods and algorithms are given in Appendix 3, 4 and 5.\n\nGiven the non- linear positive DR5 response, the raw values were logarithmically transformed in order to obtain a symmetric distribution of the noise. Nadaraya-Watson estimates and confidence intervals were then calculated with a confidence level of 95% in the R environment (RStudio Team, 2015). The boxplots displayed in the article were obtained by computing the median (central line), first and third quartiles (lower and upper bound of the box) and first and ninth deciles (lower and upper whiskers) using the R environment or numpy percentile function and rendered using the matplotlib Python library. Linear regressions were performed using the polyfit and polyval numpy functions. P-values were obtained using the scipy anova implementation in the f_oneway function. Principal component analysis was performed using the PCA implementation from the scikit-learn Python library. All data were generated with at least three independent sets of plants.\n\n### Data and software availability\n\nAll experimental data and quantified data that support the findings of this study are available from the corresponding authors upon request.\n\nGeneric quantitative image and geometry analysis algorithms are provided in Python libraries timagetk, cellcomplex, tissue_nukem_3d and tissue_paredes (https://gitlab.inria.fr/mosaic/) made publicly available under the CECILL-C license. Specific SAM sequence alignment and visualization algorithms are provided in a separate project providing Python scripts to perform the complete analysis pipelines (Cerutti, 2020; copy archived at https://github.com/elifesciences-publications/sam_spaghetti).\n",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "d473b388-0238-4342-b8e2-efb95c3fe468",
+      "submission_id": "d257a2a9-bf01-49f3-ab14-25a6fd0685a4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- J\u00fcrgen Kleine-Vehn, University of Natural Resources and Life Sciences Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55832.sa1](https://doi.org/10.7554/eLife.55832.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour impressive quantitative time lapse approach provides novel insight into the dynamics of auxin distribution in shoot apical meristems. This is an important study for the field of auxin biology and certainly defines a new standard.\n\nDecision letter after peer review:\n\nThank you for submitting your work entitled \"Temporal integration of auxin information for the regulation of patterning\" for further consideration by eLife. Your article has been evaluated by Christian Hardtke (Senior Editor) and Reviewing Editor J\u00fcrgen Kleine-Vehn.\n\nThe reviewers were highly positive about your work. The reviewers do not request additional experiments, but ask you to revise your manuscript for style and clarity. eLife is certainly a forum that allows you to highlight the novelty of your findings, but at the same time also to critically discuss your data and experimental shortcomings. We are very much looking forward to receiving a revised version of your manuscript, which integrates the constructive comments of the reviewers (see below).\n\nReviewer #1:\n\nAuxin is a central determinant of pattern formation in plants. Here Galvan-Ampudia et al. use a ratiometric DII/mDII reporter to address how spatio-temporal pattern of auxin emerges. It is not very surprising that spatial auxin distribution (as visualized by DII) in the shoot apical meristem follows a precise reiterative pattern, since this correlates with (precise) organ formation. However, the authors here visualize the emergence of this pattern with a high temporal and cellular resolution. However, the manuscript is at places hard to follow and could benefit from better explanations of the methodology and thorough discussion of the related findings. A central claim of this study is that auxin maxima travel through the meristem, which cannot be explained by growth, but depends on intercellular transport. This again confirms previous assumptions, but it would be nice to better describe the underlying data. I am for example wondering how the confinement or enlargement of an auxin maxima would affect the calculations/predicted speed of auxin waves. In the given example (Figure 2A-C), the auxin maxima/DII minima seems to be in time confined to less cells. Do the authors define such a confinement as traveling?\n\nEspecially in the central zone, DII dynamics do not correlate with DR5 dynamics confirming the anticipated auxin signaling repression in this zone. The authors experimentally address its nature by exogenous application of auxin. I am a bit worried about the very strong conclusions related to these experiments. Considering that the tissue layout and cell identities differ substantially, the uptake of IAA can be highly diverse in the different regions of the SAM. Hence, I doubt that these results are easy to interpret. It is probably also challenging to obtain uptake information. Moreover, additional components (e.g. metabolism/intracellular transport) may additionally cloud the conclusions on auxin signaling mechanisms. All these aspects also affect the interpretation of the pid mutant, because it has a more regular tissue layout and unified tissue identity. The data on ETTIN is poorly discussed and I feel even misplaced. ETTIN is a non-canonical component of auxin signaling and hence may not be the best choice to discuss general aspects of auxin signaling.\n\nReviewer #2:\n\nManuscript by Galvan-Ampudia is an interesting story that demonstrates how auxin concentration is integrated with time and space to deliver new organs in the aerial section of the plant. I was particularly impressed with the combination of imaging techniques and time lapses that were used to gather quantitative data on auxin dynamics. In short, I believe it is an important study that will receive further attention. However, I would like to raise some questions that authors should address before the publication:\n\n1) Results paragraph two:\n\nIt is not clear to me what authors mean by minimal information loss when they align SAM images (percentage of error?). This should be clarified and explained better for a general reader.\n\n2) A dynamic range of DII-VENUS is not ideal. In fact, this reporter can only discern between relatively low auxin concentrations \u2013 we can actually see some signal. Therefore, it is difficult to distinguish between intermediate or high auxin concentration. Traveling auxin waves would be expected to carry rather medium or high auxin concentrations. Could the authors elaborate more on this matter?\n\n3) Results paragraph four: Has to be clarified \u2013 this sentence is difficult to understand\n\n4) I do not understand this sentence \"reconstruction of several initiation events from only one?\u201d\n\n5) Auxin is known to travel with the speed of ~10mm/h (Kramer et al., 2011), whereas authors observe waves moving with speeds <1\u00b5M/h. Would authors come up with a plausible explanation for this severely reduced auxin waves velocities (~ 4 orders of magnitude difference).\n\n6) Another interesting aspect is that transcriptional responses to auxin are delayed by roughly 12h. Now, is there anything known about the mechanism that could cause such an extensive delay?\n\n7) Auxin treatments presented in the manuscript seem to involve unusually high if not extreme auxin concentration (mM range). Are those concentrations physiologically relevant? Could those effects observed be merely an artifact that is caused by overdosing of auxin?\n\n8) Subsection \u201cSpatio-temporal control of auxin efflux and biosynthesis\u201d paragraph two: Interesting concept presented there. Would then PINs align towards or alternatively from an auxin source (production sites) based on new data presented in the manuscript.\n\n9) Subsection \u201cThe role of time in transcriptional responses to auxin\u201d, final sentence in first paragraph: very unclear sentence that needs revising.\n\nReviewer #3:\n\nThis manuscript by Galvan-Ampudia et al. reports an intensive study that investigated spatio-temporal patterning of auxin activity in the shoot meristem. The data reveal an intriguing dynamic over space and time that, to my knowledge, is captured here for the first time. There are various interesting observations here, for instance the observed partial temporal uncoupling between auxin levels and auxin response, which provides important information for judging auxin response in different contexts. Overall, the effort the authors made to monitor auxin dynamics quantitatively in a growing meristem are impressive. There are some limits one could discuss, for example the methodological approach to determine PIN polarity, but in any case, in my opinion the methods are state-of-the-art and thus as good as it gets for now. The manuscript is well written and documented, although I must add that I cannot judge the modeling part competently. It also shows that this paper has already undergone two rounds of revision elsewhere, it is very much honed and as far as I am concerned ready to publish.\n",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9d6088b8-05c8-4be9-8f28-b4b14692b042",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C1",
+      "claim": "Auxin carries high-definition graded information not only in space but also in time during organogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We used quantitative imaging to demonstrate that auxin carries high-definition graded information not only in space but also in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative imaging data presented throughout the manuscript showing spatio-temporal auxin distribution patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "889ac36d-9a4e-400d-9761-16b3d10ff1f0",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C2",
+      "claim": "During organogenesis, temporal patterns of auxin arise from rhythmic centrifugal waves of high auxin travelling through the tissue faster than growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that, during organogenesis, temporal patterns of auxin arise from rhythmic centrifugal waves of high auxin travelling through the tissue faster than growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by time-lapse imaging data and quantitative analysis of auxin maximum movement relative to cell growth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "e419994a-ca44-4b1b-ae70-e1a7c8a67149",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C3",
+      "claim": "Temporal integration of auxin concentration is required to trigger the auxin-dependent transcription associated with organogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that temporal integration of auxin concentration is required to trigger the auxin-dependent transcription associated with organogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by auxin treatment experiments showing time-dependent activation of DR5 reporter and genetic analysis of ett mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "786f41bc-1342-499d-a2f5-cb2e4ca34d09",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C4",
+      "claim": "Temporal integration of auxin information provides a mechanism to temporally differentiate sites of organ initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides a mechanism to temporally differentiate sites of organ initiation and exemplifies how spatio-temporal positional information can be used to create rhythmicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference from the experimental data showing delayed transcriptional response and time-dependent auxin signal integration.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "931e9629-2444-495e-aa4f-09a4008d1e1e",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C5",
+      "claim": "Graded distribution of auxin is essential for embryogenesis and post-embryonic development in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, graded distribution of the hormone auxin is not only essential for embryogenesis, but also for post-embryonic development, where it regulates the reiterative organogenesis characteristic of plants (Dubrovsky et al., 2008; Vanneste and Friml, 2009; Benkov\u00e1 et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "64f5b871-074b-4a4e-851f-6c77f4afa93b",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C6",
+      "claim": "Plant shoots develop post-embryonically through rhythmic organ generation in the shoot apical meristem (SAM).",
+      "claim_type": "EXPLICIT",
+      "source": "Plant shoots develop post-embryonically through rhythmic organ generation in the shoot apical meristem (SAM), a specialized tissue with a stem cell niche in its central zone (CZ; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about plant development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "0f2aa9ca-89b6-4bad-880e-363b10c636f3",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C7",
+      "claim": "In Arabidopsis thaliana, organs are initiated sequentially in the SAM peripheral zone at consecutive relative angles of close to 137\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis thaliana, as in a majority of plants, organs are initiated sequentially in the SAM peripheral zone (PZ surrounding the CZ) at consecutive relative angles of close to 137\u00b0, either in a clockwise or anti-clockwise spiral (Figure 1A; Galvan-Ampudia et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "9b1f6578-7eec-4b98-b7a8-708d6b78bd48",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C8",
+      "claim": "DII-VENUS fluorescence reports auxin concentration with cellular resolution in the SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SAM, DII-VENUS fluorescence reports auxin concentration with cellular resolution (Vernoux et al., 2011; Brunoud et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research establishing DII-VENUS as an auxin biosensor.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "becb0a32-cd11-4d18-bf7c-ac4e33e0828b",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C9",
+      "claim": "qDII produces DII-VENUS and a non-degradable TagBFP reference stoichiometrically from a single RPS5A promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "qDII differs from previously used tools (Liao et al., 2015) in producing DII-VENUS and a non-degradable TagBFP reference stoichiometrically from a single RPS5A promoter (Wend et al., 2013; Goedhart et al., 2011; Figure 1\u2014figure supplement 1A\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and reference to supplementary figure showing the construct design and expression.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "dcaa961b-1912-42b7-bb76-d849e7bd8a9d",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C10",
+      "claim": "All analyzed meristems showed qDII patterns similar to those obtained with DII-VENUS, with locations of auxin maxima following the phyllotactic pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "All analyzed meristems (21 individual SAM) showed qDII patterns similar to those obtained with DII-VENUS, with locations of auxin maxima following the phyllotactic pattern (Vernoux et al., 2011; Figure 1B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data from 21 individual SAMs and reference to figures showing the patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "134393df-1117-40af-9565-65da1e56d0c4",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C11",
+      "claim": "Auxin distribution follows the same synchronous pattern across a population of SAMs, with low angular and rhythmic variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis shows that auxin distribution follows the same synchronous pattern across a population of SAMs, with low angular and rhythmic variability (Figure 1\u2014figure supplement 2D\u2013E, Appendix 2), with apparent stationarity up to a 137\u00b0 rotation (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of multiple SAMs shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "dedb558c-3d52-4d13-8243-b26eace93fe0",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C13",
+      "claim": "The plastochron lasts 12h \u00b1 2h.",
+      "claim_type": "EXPLICIT",
+      "source": "This was supported by dissimilarity measurements obtained using different rotation angles between maps (Figure 1\u2014figure supplement 2H), allowing us to confirm that plastochron last 12h \u00b1 2h.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of time-lapse data and rotation angle measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "afe1040e-2e2b-4598-9337-25b989c720a2",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C14",
+      "claim": "Auxin maxima first appear as finger-like protrusions from a permanent high auxin zone at the center of the SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting quantitative temporal map of auxin distribution in the SAM reveals the dynamic genesis of auxin maxima in the PZ first as finger-like protrusions (visible at P-2, P-1 and P0) from a permanent high auxin zone at the center of the SAM (Figure 1\u2014figure supplement 2I\u2013L and Video 1), as previously predicted (de Reuille et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by temporal mapping data shown in supplementary figures and video, and is consistent with previous predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "d4fe8afc-5f22-4e94-9b7a-a6c78f099d03",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C15",
+      "claim": "Cells within the auxin maximum zone closest to the CZ at time 0 hr gradually transfer to the depletion zone at time 10 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "By following a P1 maximum, we observed that cells within the auxin maximum zone closest to the CZ at time 0 hr gradually transfer to the depletion zone at time 10 hr (Figure 2A\u2013C; nuclei circled in white).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse imaging data showing tracked nuclei in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "fdc29596-390a-4931-8420-ddb4ccd48f25",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C16",
+      "claim": "Cells on the distal edge of the maximum zone show a progressive increase in their auxin level over time.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, cells on the distal edge of the maximum zone show a progressive increase in their auxin level (Figure 2A\u2013C; nuclei circled in red), suggesting a spatial shift of the auxin maximum relatively to the cellular canvas.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse imaging data showing tracked nuclei in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "2dc13c3a-2f09-4c50-9411-234a68efa539",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C17",
+      "claim": "The average radial speed of auxin maxima between stages P1 and P4 can surpass the average displacement of individual nuclei, with a peak velocity of more than 1 \u00b5m/h at the P2 stage.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore further this phenomenon, we used nuclear motion to estimate cell motion vectors and compare them with the motion of the center of auxin maximum zones, we further found that the average radial speed of auxin maxima between stages P1 and P4 can surpass the average displacement of individual nuclei, with a peak velocity of more than 1 \u00b5m/h at the P2 stage (Figure 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of nuclear and auxin maximum motion shown in Figure 2D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "78ae03ed-9f2d-4ffe-8925-169a277a6806",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C18",
+      "claim": "Auxin maxima are not attached to specific cells; instead they travel through the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that auxin maxima are not attached to specific cells; instead they travel through the tissue, resulting in an apparent centrifugal wave of auxin accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that auxin maxima move faster than cells.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "c8a1964e-9fab-45bf-a476-4c3b1990311a",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C19",
+      "claim": "PIN1 concentration increases from P0 and reaches a maximum at P2 before decreasing.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-visualization of a functional PIN1-GFP (Benkov\u00e1 et al., 2003) and qDII/CLV3 fluorescence over time showed that PIN1 concentration increases from P0 and reaches a maximum at P2 before decreasing (Figure 3A,H and Figure 3\u2014figure supplement 2), consistent with previous observations (Heisler et al., 2005; Bhatia et al., 2016; Caggiano et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative imaging data shown in Figure 3A,H and supplementary figures, and is consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "7a877813-4df9-4343-9d5c-d24003057adb",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C20",
+      "claim": "At the tissue scale, PIN1 polarity vector maps demonstrate a strong convergence of PIN1 toward the center of the SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "At the tissue scale, the vector maps demonstrate a strong convergence of PIN1 toward the center of the SAM (Figure 3I\u2013J and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PIN1 polarity vector maps shown in Figure 3I-J and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "bf988f98-75b1-41f1-bd44-1017c869ad38",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C21",
+      "claim": "PIN1 polarities deviate locally toward the radial axes followed by auxin maxima when they protrude from the CZ.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, PIN1 polarities deviate locally toward the radial axes followed by auxin maxima when they protrude from the CZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of PIN1 polarity vector maps in relation to auxin distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "115dd85f-cffc-451e-bbf1-95a1dcac4b1d",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C22",
+      "claim": "Inversion of PIN1 polarities at organ boundaries occurs only from P7, thus isolating the flower from the rest of the SAM from this late stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected the previously observed inversion of PIN1 polarities at organ boundaries (Heisler et al., 2005) and our quantifications show that this occurs only from P7 (Figure 3\u2014figure supplement 2C), thus isolating the flower from the rest of the SAM from this late stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in supplementary figures and is consistent with previous observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "b294ad92-1154-4ba0-8940-d391c2429d91",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C23",
+      "claim": "Over the course of one plastochron, only limited changes in the PIN1 polarities are observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of one plastochron, only limited changes in the PIN1 polarities are observed (Figure 3\u2014figure supplement 2), suggesting that changes in auxin distribution at this time resolution do not require major adjustments in the direction of auxin efflux at the tissue scale.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse analysis of PIN1 polarities shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "486d0926-9bb0-4d1c-9717-2975dd49a536",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C24",
+      "claim": "Only YUC1, YUC4, and YUC6 are expressed in the SAM among the eleven YUC encoding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus mapped expression of the eleven YUC encoding genes in the SAM, using GFP reporter lines with a promoter fragment size shown to be functional for YUC1,2 and 6 (Figure 3\u2014figure supplement 3A\u2013N; Liu et al., 2016; Robert et al., 2013). Only YUC1,4,6 were expressed (Figure 3K, Figure 3\u2014figure supplement 3A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by expression analysis using GFP reporter lines shown in Figure 3K and supplementary figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "20bac875-f233-49dd-b1ab-3d8dcdf0d05b",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C25",
+      "claim": "YUC4 is expressed in the L1 layer on the lateral sides of the SAM/flower boundary from P3.",
+      "claim_type": "EXPLICIT",
+      "source": "While YUC6 showed a very weak expression in the CZ, both YUC1 and YUC4 are expressed in the L1 layer on the lateral sides of the SAM/flower boundary from P3 for YUC4 (Figure 3K) and P4 for YUC1 (Figure 3\u2014figure supplement 3A and D; Cheng et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by expression analysis shown in Figure 3K and supplementary figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "9d91717d-ccad-486d-8181-6cdaf9d9b5da",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C26",
+      "claim": "YUC1 is expressed in the L1 layer on the lateral sides of the SAM/flower boundary from P4.",
+      "claim_type": "EXPLICIT",
+      "source": "While YUC6 showed a very weak expression in the CZ, both YUC1 and YUC4 are expressed in the L1 layer on the lateral sides of the SAM/flower boundary from P3 for YUC4 (Figure 3K) and P4 for YUC1 (Figure 3\u2014figure supplement 3A and D; Cheng et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by expression analysis shown in supplementary figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "24161c95-2752-4d4d-b6dc-a5ae83f93133",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C27",
+      "claim": "From P4, YUC4 expression extends over the entire epidermis of flower primordia.",
+      "claim_type": "EXPLICIT",
+      "source": "From P4, YUC4 expression extends over the entire epidermis of flower primordia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by expression analysis of YUC4 reporter lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "8b7313e5-3925-43e1-8dc8-9953b86a3467",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C28",
+      "claim": "yuc1yuc4 loss-of-function mutants show severe defects in SAM organ positioning and size.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, yuc1yuc4 loss-of-function mutants show severe defects in SAM organ positioning and size (Shi et al., 2018; Pinon et al., 2013; Figure 3L and Figure 3\u2014figure supplement 3O\u2013U).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by genetic analysis shown in Figure 3L and supplementary figures, and is consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "62ebd582-aedc-456f-8418-f29782e1cb9b",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C29",
+      "claim": "P3-P5 are auxin production centers for the SAM that regulate phyllotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken with the organization of PIN1 polarities, these results suggest that P3-P5 are auxin production centers for the SAM that regulate phyllotaxis and that PIN1 polarity organization allows for pumping auxin away from these production centers and towards the meristem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combination of YUC expression patterns and PIN1 polarity organization.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "ec3eb3ce-0931-4dba-9136-f9194b151db2",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C30",
+      "claim": "Cells expressing DR5 closest to the CZ were robustly positioned at an average distance of 32 \u00b5M \u00b1 7 (SD) from the center.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing DR5 closest to the CZ were robustly positioned at an average distance of 32 \u00b5M \u00b1 7 (SD) from the center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative measurements of DR5 expression position.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "89369177-7cbe-4828-82b1-d20748338304",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C31",
+      "claim": "The distance from the center at which transcription can be activated by auxin is defined with a near-cellular precision.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance from the center at which transcription can be activated by auxin is thus defined with a near-cellular precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the low standard deviation in DR5 expression position.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "40b34206-68f6-4681-acc6-644006c617fe",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C32",
+      "claim": "Principal Component Analysis shows orthogonality between auxin and DR5 at the tissue scale, indicating absence of a general correlation in the SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "With the first two axes accounting for around 75% of the observed variability, we unexpectedly observed orthogonality between auxin input and DR5 output, clearly marking the absence of a general correlation in the SAM (Figure 4E, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Principal Component Analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "9f4d3dec-7743-42d1-a2b6-e45c3c219796",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C33",
+      "claim": "Spatially, a given auxin value does not in general determine a specific DR5 value.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrated that, spatially, a given auxin value does not in general determine a specific DR5 value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of auxin-DR5 relationships shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "c99823dc-c7b1-4608-91f0-acb2702d29a7",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C34",
+      "claim": "Values corresponding to primordia at consecutive stages follow loop-like counter-clockwise trajectories in the auxin x DR5 space, symptomatic of hysteresis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, values corresponding to primordia at consecutive stages follow loop-like counter-clockwise trajectories in the auxin x DR5 space (indicated by the arrow in Figure 4F). Such trajectories are symptomatic of hysteresis reflecting the dependence of a system on its history.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 4F demonstrating hysteresis-like behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "9e5c35a9-9f08-4283-8739-52f2306264f9",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C35",
+      "claim": "The start of auxin-induced transcription follows the build-up of auxin concentration with a delay of nearly one plastochron.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that the start of auxin-induced transcription follows the build-up of auxin concentration with a delay of nearly one plastochron (Figure 4G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by temporal analysis of auxin and DR5 dynamics shown in Figure 4G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "73fb890d-3e20-4957-b99f-dac6caeabb7d",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C36",
+      "claim": "All auxin treatments, even the shorter ones, equally degraded DII-VENUS throughout the PZ.",
+      "claim_type": "EXPLICIT",
+      "source": "All treatments, even the shorter ones, equally degraded DII-VENUS throughout the PZ (Figure 5\u2014figure supplement 1A\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "a81fdfeb-8a20-47e7-bcb3-853a266381c4",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C37",
+      "claim": "In shorter auxin treatments (30' and 120'), the auxin transcriptional response was mainly enhanced at P-1 and P-2 and to a lesser extent at the position of the predicted P-3.",
+      "claim_type": "EXPLICIT",
+      "source": "In the shorter auxin treatments (30' and 120'), the auxin transcriptional response was mainly enhanced at P-1 and P-2 and to a lesser extent at the position of the predicted P-3that is where cells are already being exposed to auxin (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of DR5 expression after auxin treatments shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "dec355ee-6380-41b7-ac8c-bbdb135b858d",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C38",
+      "claim": "Longer auxin treatments (300') lead to an activation of signaling in most cells in the PZ and organs.",
+      "claim_type": "EXPLICIT",
+      "source": "The longer auxin treatments (300') lead to an activation of signaling in most cells in the PZ and organs, with the strongest activation being observed again at P-1 and P-2 but also at the predicted azimuth for P-3, P-4 and P-5 (Figure 5H\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of DR5 expression after auxin treatments shown in Figure 5H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "12953865-1167-4e90-87b5-5fa013130afb",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C39",
+      "claim": "A 300' treatment with 200 nM auxin activated signaling similarly (at P-1) or more strongly (at P-2, P-3, P-4 and P-5) than a 120' 1 mM auxin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We could further show that a 300' treatment with a lower auxin concentration (200 nM) activated signaling similarly (at P-1) or more strongly (at P-2, P-3, P-4 and P-5) than a 120' 1 mM auxin treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of DR5 activation under different auxin treatment conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "b327ffde-0d02-4ae4-a0e7-013a8de3b209",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C40",
+      "claim": "A 120' treatment with 5 mM auxin lead to an activation of signaling almost as strongly as a 300' 1 mM treatment at P-1, although the activation was lower at P-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, a 120' treatment with higher auxin concentration (5 mM) lead to an activation of signaling almost as strongly as a 300' 1 mM treatment at P-1, although the activation was lower at P-2 (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of DR5 activation under different auxin treatment conditions shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "9bcdd735-6da7-4aa8-bdac-96e7c894851a",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C41",
+      "claim": "DR5 expression was low and radially uniform in pid mutant SAMs, suggesting a uniform auxin distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "DR5 expression was low and radially uniform in pid SAMs, suggesting a uniform auxin distribution (Figure 5J; Friml et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging of DR5 expression in pid mutants shown in Figure 5J.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "a40ee075-14a2-44bc-8cba-5508f1d0ee46",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C42",
+      "claim": "In pid mutants treated with 1 mM auxin, DR5 could be activated in all cells of the periphery of the SAM only with a 300' treatment, while a 120' treatment had only a weak effect.",
+      "claim_type": "EXPLICIT",
+      "source": "When treated with 1 mM auxin, DR5 could be activated in all cells of the periphery of the SAM (suggesting an uptake throughout the PZ as in the wild-type) only with a 300' treatment, while a 120' treatment had only a weak effect (Figure 5J\u2013M and Figure 5\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by auxin treatment experiments on pid mutants shown in Figure 5J-M and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "3c26e10b-679f-438e-aa58-ef8604abe9ec",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C43",
+      "claim": "Even with the reduced complexity in PZ patterning of the pid mutant, activation of auxin signaling is still dependent on the time of exposure to auxin in all cells surrounding the CZ.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that, even with the reduced complexity in PZ patterning of the pid mutant (Friml et al., 2004), activation of auxin signaling is still dependent on the time of exposure to auxin in all cells surrounding the CZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that longer auxin treatments are required for DR5 activation in pid mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "97d1ae4c-24da-4b72-9159-31ee87426a6b",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C44",
+      "claim": "All cells at the SAM periphery show no intrinsic differences in their capacity to respond to auxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the results with pid SAMs suggest that all cells at the SAM periphery show no intrinsic differences in their capacity to respond to auxin, in agreement with published data (Reinhardt et al., 2003a; Heisler et al., 2005; Smith et al., 2006a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the pid mutant experiments and is consistent with previous research.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "57f60ba6-df6b-4a49-98a9-c5ba47e9c809",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C45",
+      "claim": "In ett-22/arf3 mutants, the expression of DR5 was restricted to only 2\u20133 cells at sites of organogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in a loss-of function ett3 mutant the expression of DR5 was restricted to only 2\u20133 cells at sites of organogenesis, an observation consistent with a role for ETT in promoting organogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by imaging of DR5 expression in ett mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "c030405f-a6b6-4271-9365-fc0fce03eafe",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C46",
+      "claim": "In ett mutants, a 300' 1 mM auxin treatment did not induce DR5 in the SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a 300' 1 mM auxin treatment did not induce DR5 in the SAM (Figure 5N\u2013Q and Figure 5\u2014figure supplement 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by auxin treatment experiments on ett mutants shown in Figure 5N-Q and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "4288196f-c7c9-42fc-bd8a-1d533658099e",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C47",
+      "claim": "Pharmacological inhibition of histone deacetylases (HDACs) alone was able to trigger concomitant activation of DR5 at P0 and P-1 sites in the SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of histone deacetylases (HDACs) alone was able to trigger concomitant activation of DR5 at P0 and P-1 sites in the SAM (Figure 5\u2014figure supplement 1Q\u2013S).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TSA treatment experiments shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "51ae1197-876a-48f9-999c-2916befeb1f2",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C48",
+      "claim": "Auxin signal integration likely depends on a functional ARF-dependent auxin nuclear pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that auxin signal integration likely depends on a functional ARF-dependent auxin nuclear pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the ett mutant and HDAC inhibition experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "6d20ca29-905e-4ea4-b2cb-37791e8ca1ea",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C49",
+      "claim": "Phyllotaxis is perturbed in ett mutant SAMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Phyllotaxis is perturbed in ett mutant SAMs (Figure 5\u2014figure supplement 1M\u2013P; Simonini et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging of ett mutant phenotypes shown in supplementary figures and is consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "f7da59d6-c384-4ab7-bb6a-7ae77d7bc118",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C50",
+      "claim": "Daily exogenous auxin treatments at the SAM affected phyllotaxis and the efficiency of the treatment increased with both auxin concentration and treatment length.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this idea, we also found that daily exogenous auxin treatments at the SAM affected phyllotaxis and that the efficiency of the treatment increased with both auxin concentration and treatment length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in planta auxin treatment experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "ddc53041-674a-4957-8275-5dbf6bef083f",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C51",
+      "claim": "Temporal integration of auxin information at the SAM is essential for phyllotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that temporal integration of auxin information at the SAM is essential for phyllotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined results of auxin treatments and genetic analyses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "d322934e-9860-431c-92cd-45e1bdb142b2",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C52",
+      "claim": "Rhythmic organ initiation at the SAM is driven by the combination of high-precision spatio-temporal graded distributions of auxin with the use of the duration of cell exposure to auxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our quantitative analysis of the dynamics of auxin distribution and response supports a scenario in which rhythmic organ initiation at the SAM is driven by the combination of high-precision spatio-temporal graded distributions of auxin with the use of the duration of cell exposure to auxin, to temporally differentiate sites of organ initiation (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a synthesis of the experimental findings presented throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "5ffdda6d-b3cb-41c5-9352-400cc574809d",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C53",
+      "claim": "A time integration mechanism is essential for rhythmic organ patterning in the SAM since auxin-based spatial information pre-specifies several sites of organ initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly our results suggest that a time integration mechanism is essential for rhythmic organ patterning in the SAM since auxin-based spatial information pre-specifies several sites of organ initiation and is thus unlikely to provide sufficient information (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that multiple auxin maxima exist simultaneously but organs initiate sequentially.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "1bdd8006-bdab-4c95-8e1e-d00530b21fa2",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C54",
+      "claim": "Temporal integration of the auxin signal likely requires the effectors of the auxin signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence that temporal integration of the auxin signal likely requires the effectors of the auxin signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experiments with ett mutants and HDAC inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "00bb86f3-4d20-4ccf-8ee1-8011ed743978",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C55",
+      "claim": "Activation of transcription downstream of auxin by ARFs relies on chromatin remodeling, increasing the accessibility of ARF targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of transcription downstream of auxin by ARFs relies on chromatin remodeling, increasing the accessibility of ARF targets and possibly allowing for the recruitment of histone acetyltransferases (Wu et al., 2015), together with the release of histone deacetylases (HDACs) from target loci through degradation of Aux/IAA repressors (Long et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research on auxin signaling mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "b4e1f253-eaa2-4bd4-8fe7-3b8384244b2f",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C56",
+      "claim": "Chromatin state change is one mechanism that allows the temporal integration of signals in eukaryotes, including plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin state change is one mechanism that allows the temporal integration of signals in eukaryotes, including plants (Angel et al., 2011; Coda et al., 2017; Nahmad and Lander, 2011; Sun et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research on chromatin-based signal integration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "fbe7f596-eb96-4620-ae46-c4ed000d10b1",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C57",
+      "claim": "Time integration of the auxin signal in cells leaving the CZ is plausibly set by progressive acetylation of histones triggered by ARFs at their target loci.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus plausible that time integration of the auxin signal in cells leaving the CZ is set by progressive acetylation of histones triggered by ARFs at their target loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on known mechanisms of chromatin regulation and the experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "6772c410-658a-4176-9ba8-9a662302aff6",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C58",
+      "claim": "Chromatin deacetylation represses auxin signaling in the CZ.",
+      "claim_type": "EXPLICIT",
+      "source": "As chromatin deacetylation also represses auxin signaling in the CZ (Ma et al., 2019), balancing the acetylation status of ARF target loci could provide a mechanism to tightly link stem cell maintenance to differentiation by precisely positioning organ initiation at the boundary of the stem cell niche, while at the same time allowing sequential organ initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "e644a1b2-a6f5-4977-b811-50c7ca08eed3",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C59",
+      "claim": "The existence of high definition spatio-temporal auxin gradients suggests that the robustness of SAM patterning results from highly reproducible spatio-temporal positional information.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of high definition spatio-temporal auxin gradients suggests that as for several morphogens in animals (Nahmad and Lander, 2011; Dessaud et al., 2007; Scherz et al., 2007; Maden, 2002) the robustness of SAM patterning results from highly reproducible spatio-temporal positional information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observed precision of auxin distribution and is compared to animal morphogen systems.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "505aedce-bd1a-46de-9fe7-0f2e9dc60a04",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C60",
+      "claim": "Auxin maxima could first emerge from the CZ at the confluence of centripetal auxin fluxes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that auxin maxima could first emerge from the CZ at the confluence of centripetal auxin fluxes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the PIN1 polarity patterns and auxin distribution dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "af4f67b8-7ebf-433e-9be5-0c129d744fc3",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C61",
+      "claim": "Confluences creating auxin maxima would at the same time divert fluxes away from areas where auxin minima appear.",
+      "claim_type": "EXPLICIT",
+      "source": "Confluences creating auxin maxima would at the same time divert fluxes away from areas where auxin minima appear (Figure 3M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the analysis of PIN1 polarity organization and auxin distribution.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "1546a23b-62c7-47fd-b1f7-c718515d148c",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C62",
+      "claim": "Early developing flowers act as auxin production centers.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of the spatio-temporal control of auxin distribution needs also to consider that early developing flowers act as auxin production centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by YUC expression patterns in developing flowers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "f576662b-550c-498c-8892-05c9fac8e36a",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C63",
+      "claim": "Early developing flowers could provide a memory of the developmental pattern through lateral inhibition and contribute positively to a self-sustained auxin distribution pattern by providing auxin to the system.",
+      "claim_type": "EXPLICIT",
+      "source": "These flowers could not only provide a memory of the developmental pattern through lateral inhibition but also contribute positively to a self-sustained auxin distribution pattern by providing auxin to the system (Figure 3M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is speculative, based on the observed YUC expression and PIN1 polarity patterns.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "7eb5c185-35a4-4e09-992d-65e154777bbd",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C64",
+      "claim": "The stem cell niche could act as a system-wide organizer of auxin transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our work indicates that the stem cell niche could act as a system-wide organizer of auxin transport, consistent with previous work (de Reuille et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the PIN1 polarity patterns showing convergence toward the center and is consistent with previous modeling work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "242a63f3-cfad-4003-84f2-a81f397e032b",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "claim_id": "C65",
+      "claim": "The stem cell niche acting as an organizer of auxin transport could provide another layer of regulation tightly coordinating differentiation with the presence of a largely auxin-insensitive stem cell niche.",
+      "claim_type": "EXPLICIT",
+      "source": "This could provide another layer of regulation tightly coordinating differentiation with the presence of a largely auxin-insensitive stem cell niche (Vernoux et al., 2011; Ma et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the inferred role of the stem cell niche and previous research on auxin insensitivity in the CZ.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a0bb0c0f-872a-49cf-b046-77be65257c2f",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a quantitative auxin biosensor (qDII) that produces DII-VENUS and TagBFP stoichiometrically from a single promoter. Using this tool across 21 individual SAMs, they demonstrated highly stereotypical auxin distribution patterns with low angular and rhythmic variability, and determined the plastochron duration to be 12h \u00b1 2h.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 and C13 are well-supported by quantitative imaging data from 21 SAMs showing reproducible auxin patterns and temporal measurements. The qDII construct design is validated through supplementary figures, and the plastochron measurement is supported by dissimilarity analysis across rotation angles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "8e7bd542-653a-4f7c-92bc-13f35b3ed4ed",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Auxin carries high-definition spatio-temporal graded information during organogenesis. Auxin maxima emerge as finger-like protrusions from the central zone and travel through tissue as centrifugal waves faster than cellular growth, with peak velocities exceeding 1 \u00b5m/h at P2 stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C14-C18 are strongly supported by time-lapse imaging showing auxin maxima movement relative to tracked nuclei (Figure 2). The quantitative analysis demonstrates that auxin maxima move faster than individual cells, with cells transitioning from high to low auxin zones over time, establishing the wave-like nature of auxin distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "0c492dcd-38c2-4f03-9630-b28c4e2aeb3c",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PIN1 concentration peaks at P2 and shows strong convergence toward the SAM center at the tissue scale, with local deviations toward radial axes followed by auxin maxima. PIN1 polarity inversion at organ boundaries occurs only from P7, and limited changes in PIN1 polarities are observed over one plastochron.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 are supported by quantitative imaging and novel computational analysis of PIN1 polarity at cellular interfaces validated against super-resolution microscopy (Figure 3 and supplements). The tissue-scale vector maps and temporal analysis provide robust evidence for the described PIN1 dynamics, though the validation shows ~20% of cellular polarities deviate by more than 30\u00b0 from super-resolution data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "651e94aa-f0ce-4a27-bfc2-c4b564172b25",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Among eleven YUC genes, only YUC1, YUC4, and YUC6 are expressed in the SAM, with YUC4 and YUC1 expressed in the L1 layer at SAM/flower boundaries from P3 and P4 respectively. The yuc1yuc4 double mutant shows severe SAM defects, suggesting P3-P5 act as auxin production centers regulating phyllotaxis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 and C62 are supported by systematic expression analysis using GFP reporter lines for all 11 YUC genes and genetic analysis of yuc1yuc4 mutants. The spatial and temporal expression patterns combined with mutant phenotypes provide converging evidence for the role of these genes in auxin biosynthesis at specific developmental stages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "ed86946f-a8f1-481d-bb10-454a5dc33c7b",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DR5 expression is robustly positioned at 32 \u00b5M \u00b1 7 SD from the center with near-cellular precision. Principal Component Analysis reveals orthogonality between auxin and DR5 at the tissue scale, with no general spatial correlation. However, primordia show hysteresis-like loop trajectories in auxin-DR5 space, and auxin-induced transcription follows auxin build-up with a delay of nearly one plastochron.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 are strongly supported by quantitative analysis of co-localized auxin and DR5 reporters (Figure 4). The PCA analysis demonstrating orthogonality is rigorous, and the hysteresis observation is clearly shown in Figure 4F. The temporal delay is well-documented through time-series analysis, providing robust evidence for temporal integration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "ef2922a1-6d3c-4b19-a623-1bb5c0a9d4e1",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Temporal integration of auxin concentration is required to trigger auxin-dependent transcription. Auxin treatments of varying durations and concentrations show that DR5 activation depends on both auxin concentration and exposure time. Even in pid mutants with uniform auxin distribution, DR5 activation requires prolonged auxin exposure, suggesting all SAM peripheral cells have equivalent auxin response capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C36-C44 are well-supported by systematic auxin treatment experiments varying both concentration (200 nM to 5 mM) and duration (30' to 300'). The pid mutant experiments provide critical evidence that temporal integration is cell-intrinsic rather than pattern-dependent. However, the authors acknowledge they cannot completely rule out differential auxin uptake across the PZ.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "7336a821-2af8-4dee-aa22-8c9a21d5a7e9",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Temporal integration of auxin signal requires the ARF-dependent auxin nuclear pathway. In ett/arf3 mutants, DR5 expression is restricted to 2-3 cells and cannot be induced by prolonged auxin treatment. Pharmacological inhibition of histone deacetylases alone can trigger DR5 activation at P0 and P-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 and C54 are supported by genetic analysis of ett mutants and pharmacological experiments with HDAC inhibitors (Figure 5). The inability to induce DR5 in ett mutants despite auxin treatment provides strong evidence for ARF-dependent temporal integration. The TSA experiments support a chromatin-based mechanism, though the authors appropriately note ETT is a non-canonical ARF.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "07a05fd7-bcbf-496f-af1d-a76954798411",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Temporal integration of auxin information provides a mechanism to temporally differentiate sites of organ initiation and is essential for phyllotaxis. Phyllotaxis is perturbed in ett mutants and by daily exogenous auxin treatments, with treatment efficiency increasing with both concentration and duration. This mechanism is necessary because auxin-based spatial information pre-specifies multiple organ initiation sites simultaneously.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C49-C53 synthesize the experimental findings into a coherent model. The evidence from ett mutant phyllotaxis defects and dose/duration-dependent effects of auxin treatments on phyllotaxis provides strong support. The logical argument that spatial information alone is insufficient (Video 1 shows multiple auxin maxima) is compelling and well-reasoned.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "90f604c0-ddd8-46b3-af82-a958cc2447b0",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that temporal integration may occur through chromatin remodeling, specifically progressive histone acetylation at ARF target loci. This mechanism could link stem cell maintenance to differentiation by positioning organ initiation at the boundary of the auxin-insensitive central zone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C58 are largely speculative mechanistic proposals based on prior literature (C55, C56, C58 are citation-based) and inference from the TSA experiments. While C57 is explicitly stated as 'plausible,' no direct evidence for progressive histone acetylation is provided. The model is reasonable given the HDAC inhibitor results, but requires validation through chromatin state analysis or other direct measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "d830e1c4-ba03-48e7-97ab-3d8397864142",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that high-definition spatio-temporal auxin gradients provide robust positional information, with auxin maxima emerging from confluences of centripetal fluxes at the central zone. Early developing flowers may act as auxin production centers contributing to pattern memory and self-sustained auxin distribution, while the stem cell niche may act as a system-wide organizer of auxin transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C61 and C63-C65 are largely inferential and speculative interpretations of the data. While C59 draws reasonable parallels to animal morphogen systems and C60-C61 are inferred from PIN1 patterns, C63 and C65 are explicitly speculative ('could provide'). The proposals are logical extensions of the findings but lack direct experimental validation and represent hypotheses for future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    },
+    {
+      "id": "1a076305-b2ba-4e7c-8822-bdc525cf6aa7",
+      "content_id": "f9299713-f9da-4112-a8fd-1ae6eab83a78",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological context: auxin is essential for plant embryogenesis and post-embryonic development; plant shoots develop through rhythmic organ generation in the SAM; organs initiate at ~137\u00b0 angles in Arabidopsis; and DII-VENUS reports auxin concentration with cellular resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 are well-established background knowledge supported by appropriate citations to prior literature. These provide necessary context for the study but are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:57:44.714182Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "becb0a32-cd11-4d18-bf7c-ac4e33e0828b",
+      "result_id": "a0bb0c0f-872a-49cf-b046-77be65257c2f"
+    },
+    {
+      "claim_id": "dcaa961b-1912-42b7-bb76-d849e7bd8a9d",
+      "result_id": "a0bb0c0f-872a-49cf-b046-77be65257c2f"
+    },
+    {
+      "claim_id": "134393df-1117-40af-9565-65da1e56d0c4",
+      "result_id": "a0bb0c0f-872a-49cf-b046-77be65257c2f"
+    },
+    {
+      "claim_id": "dedb558c-3d52-4d13-8243-b26eace93fe0",
+      "result_id": "a0bb0c0f-872a-49cf-b046-77be65257c2f"
+    },
+    {
+      "claim_id": "9d6088b8-05c8-4be9-8f28-b4b14692b042",
+      "result_id": "8e7bd542-653a-4f7c-92bc-13f35b3ed4ed"
+    },
+    {
+      "claim_id": "889ac36d-9a4e-400d-9761-16b3d10ff1f0",
+      "result_id": "8e7bd542-653a-4f7c-92bc-13f35b3ed4ed"
+    },
+    {
+      "claim_id": "afe1040e-2e2b-4598-9337-25b989c720a2",
+      "result_id": "8e7bd542-653a-4f7c-92bc-13f35b3ed4ed"
+    },
+    {
+      "claim_id": "d4fe8afc-5f22-4e94-9b7a-a6c78f099d03",
+      "result_id": "8e7bd542-653a-4f7c-92bc-13f35b3ed4ed"
+    },
+    {
+      "claim_id": "fdc29596-390a-4931-8420-ddb4ccd48f25",
+      "result_id": "8e7bd542-653a-4f7c-92bc-13f35b3ed4ed"
+    },
+    {
+      "claim_id": "2dc13c3a-2f09-4c50-9411-234a68efa539",
+      "result_id": "8e7bd542-653a-4f7c-92bc-13f35b3ed4ed"
+    },
+    {
+      "claim_id": "78ae03ed-9f2d-4ffe-8925-169a277a6806",
+      "result_id": "8e7bd542-653a-4f7c-92bc-13f35b3ed4ed"
+    },
+    {
+      "claim_id": "c8a1964e-9fab-45bf-a476-4c3b1990311a",
+      "result_id": "0c492dcd-38c2-4f03-9630-b28c4e2aeb3c"
+    },
+    {
+      "claim_id": "7a877813-4df9-4343-9d5c-d24003057adb",
+      "result_id": "0c492dcd-38c2-4f03-9630-b28c4e2aeb3c"
+    },
+    {
+      "claim_id": "bf988f98-75b1-41f1-bd44-1017c869ad38",
+      "result_id": "0c492dcd-38c2-4f03-9630-b28c4e2aeb3c"
+    },
+    {
+      "claim_id": "115dd85f-cffc-451e-bbf1-95a1dcac4b1d",
+      "result_id": "0c492dcd-38c2-4f03-9630-b28c4e2aeb3c"
+    },
+    {
+      "claim_id": "b294ad92-1154-4ba0-8940-d391c2429d91",
+      "result_id": "0c492dcd-38c2-4f03-9630-b28c4e2aeb3c"
+    },
+    {
+      "claim_id": "486d0926-9bb0-4d1c-9717-2975dd49a536",
+      "result_id": "651e94aa-f0ce-4a27-bfc2-c4b564172b25"
+    },
+    {
+      "claim_id": "20bac875-f233-49dd-b1ab-3d8dcdf0d05b",
+      "result_id": "651e94aa-f0ce-4a27-bfc2-c4b564172b25"
+    },
+    {
+      "claim_id": "9d91717d-ccad-486d-8181-6cdaf9d9b5da",
+      "result_id": "651e94aa-f0ce-4a27-bfc2-c4b564172b25"
+    },
+    {
+      "claim_id": "24161c95-2752-4d4d-b6dc-a5ae83f93133",
+      "result_id": "651e94aa-f0ce-4a27-bfc2-c4b564172b25"
+    },
+    {
+      "claim_id": "8b7313e5-3925-43e1-8dc8-9953b86a3467",
+      "result_id": "651e94aa-f0ce-4a27-bfc2-c4b564172b25"
+    },
+    {
+      "claim_id": "62ebd582-aedc-456f-8418-f29782e1cb9b",
+      "result_id": "651e94aa-f0ce-4a27-bfc2-c4b564172b25"
+    },
+    {
+      "claim_id": "1546a23b-62c7-47fd-b1f7-c718515d148c",
+      "result_id": "651e94aa-f0ce-4a27-bfc2-c4b564172b25"
+    },
+    {
+      "claim_id": "ec3eb3ce-0931-4dba-9136-f9194b151db2",
+      "result_id": "ed86946f-a8f1-481d-bb10-454a5dc33c7b"
+    },
+    {
+      "claim_id": "89369177-7cbe-4828-82b1-d20748338304",
+      "result_id": "ed86946f-a8f1-481d-bb10-454a5dc33c7b"
+    },
+    {
+      "claim_id": "40b34206-68f6-4681-acc6-644006c617fe",
+      "result_id": "ed86946f-a8f1-481d-bb10-454a5dc33c7b"
+    },
+    {
+      "claim_id": "9f4d3dec-7743-42d1-a2b6-e45c3c219796",
+      "result_id": "ed86946f-a8f1-481d-bb10-454a5dc33c7b"
+    },
+    {
+      "claim_id": "c99823dc-c7b1-4608-91f0-acb2702d29a7",
+      "result_id": "ed86946f-a8f1-481d-bb10-454a5dc33c7b"
+    },
+    {
+      "claim_id": "9e5c35a9-9f08-4283-8739-52f2306264f9",
+      "result_id": "ed86946f-a8f1-481d-bb10-454a5dc33c7b"
+    },
+    {
+      "claim_id": "e419994a-ca44-4b1b-ae70-e1a7c8a67149",
+      "result_id": "ef2922a1-6d3c-4b19-a623-1bb5c0a9d4e1"
+    },
+    {
+      "claim_id": "73fb890d-3e20-4957-b99f-dac6caeabb7d",
+      "result_id": "ef2922a1-6d3c-4b19-a623-1bb5c0a9d4e1"
+    },
+    {
+      "claim_id": "a81fdfeb-8a20-47e7-bcb3-853a266381c4",
+      "result_id": "ef2922a1-6d3c-4b19-a623-1bb5c0a9d4e1"
+    },
+    {
+      "claim_id": "dec355ee-6380-41b7-ac8c-bbdb135b858d",
+      "result_id": "ef2922a1-6d3c-4b19-a623-1bb5c0a9d4e1"
+    },
+    {
+      "claim_id": "12953865-1167-4e90-87b5-5fa013130afb",
+      "result_id": "ef2922a1-6d3c-4b19-a623-1bb5c0a9d4e1"
+    },
+    {
+      "claim_id": "b327ffde-0d02-4ae4-a0e7-013a8de3b209",
+      "result_id": "ef2922a1-6d3c-4b19-a623-1bb5c0a9d4e1"
+    },
+    {
+      "claim_id": "a40ee075-14a2-44bc-8cba-5508f1d0ee46",
+      "result_id": "ef2922a1-6d3c-4b19-a623-1bb5c0a9d4e1"
+    },
+    {
+      "claim_id": "3c26e10b-679f-438e-aa58-ef8604abe9ec",
+      "result_id": "ef2922a1-6d3c-4b19-a623-1bb5c0a9d4e1"
+    },
+    {
+      "claim_id": "97d1ae4c-24da-4b72-9159-31ee87426a6b",
+      "result_id": "ef2922a1-6d3c-4b19-a623-1bb5c0a9d4e1"
+    },
+    {
+      "claim_id": "57f60ba6-df6b-4a49-98a9-c5ba47e9c809",
+      "result_id": "7336a821-2af8-4dee-aa22-8c9a21d5a7e9"
+    },
+    {
+      "claim_id": "c030405f-a6b6-4271-9365-fc0fce03eafe",
+      "result_id": "7336a821-2af8-4dee-aa22-8c9a21d5a7e9"
+    },
+    {
+      "claim_id": "4288196f-c7c9-42fc-bd8a-1d533658099e",
+      "result_id": "7336a821-2af8-4dee-aa22-8c9a21d5a7e9"
+    },
+    {
+      "claim_id": "51ae1197-876a-48f9-999c-2916befeb1f2",
+      "result_id": "7336a821-2af8-4dee-aa22-8c9a21d5a7e9"
+    },
+    {
+      "claim_id": "1bdd8006-bdab-4c95-8e1e-d00530b21fa2",
+      "result_id": "7336a821-2af8-4dee-aa22-8c9a21d5a7e9"
+    },
+    {
+      "claim_id": "786f41bc-1342-499d-a2f5-cb2e4ca34d09",
+      "result_id": "07a05fd7-bcbf-496f-af1d-a76954798411"
+    },
+    {
+      "claim_id": "6d20ca29-905e-4ea4-b2cb-37791e8ca1ea",
+      "result_id": "07a05fd7-bcbf-496f-af1d-a76954798411"
+    },
+    {
+      "claim_id": "f7da59d6-c384-4ab7-bb6a-7ae77d7bc118",
+      "result_id": "07a05fd7-bcbf-496f-af1d-a76954798411"
+    },
+    {
+      "claim_id": "ddc53041-674a-4957-8275-5dbf6bef083f",
+      "result_id": "07a05fd7-bcbf-496f-af1d-a76954798411"
+    },
+    {
+      "claim_id": "d322934e-9860-431c-92cd-45e1bdb142b2",
+      "result_id": "07a05fd7-bcbf-496f-af1d-a76954798411"
+    },
+    {
+      "claim_id": "5ffdda6d-b3cb-41c5-9352-400cc574809d",
+      "result_id": "07a05fd7-bcbf-496f-af1d-a76954798411"
+    },
+    {
+      "claim_id": "00bb86f3-4d20-4ccf-8ee1-8011ed743978",
+      "result_id": "90f604c0-ddd8-46b3-af82-a958cc2447b0"
+    },
+    {
+      "claim_id": "b4e1f253-eaa2-4bd4-8fe7-3b8384244b2f",
+      "result_id": "90f604c0-ddd8-46b3-af82-a958cc2447b0"
+    },
+    {
+      "claim_id": "fbe7f596-eb96-4620-ae46-c4ed000d10b1",
+      "result_id": "90f604c0-ddd8-46b3-af82-a958cc2447b0"
+    },
+    {
+      "claim_id": "6772c410-658a-4176-9ba8-9a662302aff6",
+      "result_id": "90f604c0-ddd8-46b3-af82-a958cc2447b0"
+    },
+    {
+      "claim_id": "e644a1b2-a6f5-4977-b811-50c7ca08eed3",
+      "result_id": "d830e1c4-ba03-48e7-97ab-3d8397864142"
+    },
+    {
+      "claim_id": "505aedce-bd1a-46de-9fe7-0f2e9dc60a04",
+      "result_id": "d830e1c4-ba03-48e7-97ab-3d8397864142"
+    },
+    {
+      "claim_id": "af4f67b8-7ebf-433e-9be5-0c129d744fc3",
+      "result_id": "d830e1c4-ba03-48e7-97ab-3d8397864142"
+    },
+    {
+      "claim_id": "f576662b-550c-498c-8892-05c9fac8e36a",
+      "result_id": "d830e1c4-ba03-48e7-97ab-3d8397864142"
+    },
+    {
+      "claim_id": "7eb5c185-35a4-4e09-992d-65e154777bbd",
+      "result_id": "d830e1c4-ba03-48e7-97ab-3d8397864142"
+    },
+    {
+      "claim_id": "242a63f3-cfad-4003-84f2-a81f397e032b",
+      "result_id": "d830e1c4-ba03-48e7-97ab-3d8397864142"
+    },
+    {
+      "claim_id": "931e9629-2444-495e-aa4f-09a4008d1e1e",
+      "result_id": "1a076305-b2ba-4e7c-8822-bdc525cf6aa7"
+    },
+    {
+      "claim_id": "64f5b871-074b-4a4e-851f-6c77f4afa93b",
+      "result_id": "1a076305-b2ba-4e7c-8822-bdc525cf6aa7"
+    },
+    {
+      "claim_id": "0f2aa9ca-89b6-4bad-880e-363b10c636f3",
+      "result_id": "1a076305-b2ba-4e7c-8822-bdc525cf6aa7"
+    },
+    {
+      "claim_id": "9b1f6578-7eec-4b98-b7a8-708d6b78bd48",
+      "result_id": "1a076305-b2ba-4e7c-8822-bdc525cf6aa7"
+    }
+  ],
+  "comparisons": []
+}

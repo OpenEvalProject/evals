@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors demonstrate through model mapping that persistence of a rapidly evolving Red-Queen-like state (RQS) requires long-ranged cross-immunity and large population sizes. However, this RQS state is unstable and eventually leads to either extinction or speciation into diverging lineages. In certain parameter ranges, a single cross-inhibiting population can persist for times long compared to TMRCA and produce phylogenetic patterns typical of influenza virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 and C38-C39 collectively establish the core theoretical findings from the model. The mapping between multi-strain SIR and traveling wave models is described with mathematical detail (Equations 1-13), simulation results are presented (Figures 3-7), and the phase diagram systematically characterizes different regimes. The claims are internally consistent and supported by both analytical approximations and computational validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "The phase diagram identifies three distinct outcomes as a function of key parameters: (1) extinction, (2) an evolving but low diversity pathogen population (RQS), and (3) a deeply branching and continuously diversifying pathogen population (speciation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C146 summarizes the phase diagram presented in Figures 3B-C and discussed throughout the Results section. The three regimes are clearly delineated based on combinations of log(N_h*s^2), log(s/m), and cross-immunity range d. Simulation data in Figures 3, 5, and 7 support the existence and boundaries of these regimes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C114",
+      "C117",
+      "C138"
+    ],
+    "result": "Both the traveling wave and oscillatory RQS regimes are transient states subject to eventual extinction due to stochastic fluctuations. The mechanism of extinction in the oscillatory state is related to deterministic dynamics where large amplitude excursions in infection prevalence can lead to extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114, C117, and C138 describe the transient nature of the RQS and extinction mechanisms. Figure 5 provides quantitative data on extinction times as a function of parameters, and Figure 4A shows example trajectories demonstrating extinction events. The differential-delay equations (11-13) provide theoretical support for the coupling between stochastic fluctuations and extinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C126",
+      "C128",
+      "C133",
+      "C134"
+    ],
+    "result": "When the cross-immunity range d is much larger than genetic diversity q, all strains compete for the same hosts. Speciation occurs when lineages diverge beyond the range of cross-inhibition, doubling the combined carrying capacity. However, deep splits are unstable and speciation is rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C128, C133, and C134 describe the speciation mechanism. Figure 6 provides direct evidence: panel A shows TMRCA dynamics during speciation, panel B demonstrates the doubling of carrying capacity, and panel C shows the exponential dependence of speciation time on d/q. The influenza B split example (C128, Figure 1) provides empirical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C111",
+      "C179"
+    ],
+    "result": "The coupling of ecological (prevalence-susceptibility) and evolutionary (antigenic advance) effects results in rich dynamics including oscillations. The ecological effect causes pathogen blooms to deplete susceptible hosts leading to population crashes. The distinction between TW and oscillatory RQS regimes is characterized by whether oscillations occur about a fixed point or a limit cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91, C111, and C179 describe the oscillatory dynamics. Figure 4 provides comprehensive support: panel A shows example trajectories with oscillations, panel B illustrates limit cycles, and panel C distinguishes the two regimes. The differential-delay system (Equations 11-13) provides theoretical foundation, and Figure 4\u2014figure supplement 1 quantifies oscillation amplitude and period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C164",
+      "C165"
+    ],
+    "result": "Persistence and transition from pandemic to endemic state requires the pathogen to evade rapid immunity buildup via large-effect antigenic mutations. The 2009 H1N1 pandemic underwent such a transition, while the Zika virus outbreak represents a boom-bust epidemic that did not evolve antigenically and is not expected to persist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 and C164-C165 provide examples of different epidemic outcomes. The theoretical framework (Figure 3D) illustrates the transition mechanism. The H1N1 and Zika examples are cited appropriately (C62, C165) and fit the model predictions. However, these are illustrative examples rather than quantitative validations of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The simplified model is analogous to traveling wave models of rapidly adapting populations. The growth rate increment s acts as a selection coefficient, and the 'nose' of the fitness distribution contains pioneer strains that dominate in the future. The rate of antigenic mutation establishment is controlled by the rate at which mutations arise in the nose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C78 establish the connection to traveling wave theory. The mathematical derivation (Equations 7-10) shows how the SIR model reduces to TW dynamics. Citations to prior TW work (C73, C78) are appropriate. Figure 4\u2014figure supplement 2 validates TW predictions for the model. The comparison to Rouzine and Rozhnova (C69-C72) appropriately distinguishes the current work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C128",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Influenza B viruses split into two lineages (Victoria and Yamagata) in the 1970s and maintain higher genetic diversity (TMRCA ~6 years) compared to influenza A lineages (TMRCA ~3 years). This difference is consistent with influenza B being more prone to speciation, though the ratio of immunity decay time to TMRCA is similar across lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C171-C175 describe empirical observations about influenza phylogenies. Figure 1 provides direct phylogenetic evidence showing the split and diversity differences. The TMRCA measurements and antigenic evolution rates (C175) are cited appropriately. The interpretation regarding speciation propensity (C174) is reasonable but somewhat speculative given the single observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C152",
+      "C155"
+    ],
+    "result": "The model predicts average annual incidence of 3-10%, consistent with previous estimates of influenza attack rates. The results are consistent with earlier studies showing that long-range cross-immunity mediated competition can prevent diversification and canalize the population into a single lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152 and C155 connect model predictions to empirical observations and prior work. The incidence calculation is derived from model parameters (discussed in Appendix 2) and cited as consistent with Yang et al. 2015 (C152). The agreement with prior computational studies (C155, citing Tria et al. 2005 and Ferguson et al. 2003) strengthens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "The model uses a product form for individual susceptibility history, employs a mean-field approximation that ignores correlations between infections, assumes single-mutation steps, exponential decay of cross-immunity with mutational distance, and high-dimensional antigenic space where antigenic distance is proportional to genetic distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 describe key model assumptions. These are standard modeling choices appropriately cited (C47: Wikramaratna et al. 2015; C53: Luksza and L\u00e4ssig 2014; C55: Neher et al. 2016). The mean-field approximation (C49) is justified by low prevalence (C50). Appendix 1 provides detailed derivation. These assumptions are reasonable for the modeling goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims about pathogen persistence mechanisms, influenza characteristics, and immune dynamics establish the biological context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C25 provide background knowledge about influenza and pathogen evolution. These are appropriately cited throughout (e.g., C15: Petrova and Russell 2018; C17: Rambaut et al. 2008; C21: Fonville et al. 2014; C25: Smith et al. 2004, Bedford et al. 2014). These establish the biological motivation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Prior modeling approaches using multi-strain SIR models with one-dimensional strain space naturally produce traveling waves but result in spindly phylogenies. Influenza's high-dimensional antigenic space allows multiple escape paths, potentially leading to diversification. Previous computational studies identified cross-immunity and deleterious mutations as critical parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C37 review prior modeling work. Citations are appropriate throughout (e.g., C26: Kermack and McKendrick 1927, Gog and Grenfell 2002; C31: Rouzine and Rozhnova 2018; C36-C37: multiple computational studies). This establishes the gap that the current work addresses: understanding how high-dimensional antigenic space can produce spindly phylogenies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "In circulating influenza viruses, typically 3-10 adaptive mutations separate pioneer strains from the most common variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 provides an empirical observation about influenza diversity, appropriately cited (Strelkowa and L\u00e4ssig 2012; Neher and Bedford 2015). This establishes the relevant parameter range (q ~ 3-10) for model validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Different RNA viruses show distinct evolutionary patterns: childhood diseases show little antigenic evolution, dengue/norovirus exist as distinct serotypes, and seasonal influenza undergoes continuous antigenic evolution. Different influenza A subtypes have circulated for varying durations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 and C167-C170 provide background on viral diversity patterns. These are general knowledge claims that appropriately contextualize the study. The historical information about influenza subtypes (C167-C170) is accurate and relevant for understanding the model's applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C160",
+      "C161"
+    ],
+    "result": "Other factors like population turnover and geographic heterogeneity can delay extinction. Previous studies showed branching rate increases with population size and mutation rate. Deleterious mutations increase fitness variation, leading to more rapid coalescence and reduced speciation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C161 discuss model limitations and connections to prior work. C157 acknowledges factors not included in the model. C158 cites consistent findings (Sasaki and Haraguchi 2000; Koelle et al. 2011). C160-C161 discuss Koelle and Rasmussen 2015's work on deleterious mutations, which is addressed in the model (Figure 6C, Appendix 6).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C166",
+      "C177",
+      "C178",
+      "C180"
+    ],
+    "result": "Different influenza lineages likely correspond to parameters in the RQS region of the phase diagram. Currently circulating A/H3N2 viruses are exceptionally diverse and might undergo speciation. Seasonal oscillation in transmissivity is believed to cause observed flu seasonality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C166, C177-C178, and C180 make interpretive connections between model and observations. C166 is a reasonable inference but lacks quantitative validation. C177-C178 are speculative about potential future A/H3N2 speciation. C180 acknowledges a confounding factor (seasonality) not included in the model, limiting quantitative comparison to real flu dynamics.",
+    "result_type": "MINOR"
+  }
+]

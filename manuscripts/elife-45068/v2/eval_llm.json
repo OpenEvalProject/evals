@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "PKM2 is highly expressed in tumors and proliferative tissues, has critical roles in cancer metabolism and systemic metabolic homeostasis, and its activity in cancer cells is maintained at low levels by allosteric ligands and post-translational modifications. Low PKM2 activity promotes pro-tumorigenic functions, and small-molecule activators that render PKM2 constitutively active attenuate tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are all supported by citations to published literature and represent well-established prior knowledge about PKM2's expression, function, and regulation in cancer. These claims provide appropriate background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "FBP binds to the C-domain of PKM2 and increases enzymatic activity by decreasing KM for PEP while promoting tetramerization. Several amino acids regulate PKM2 activity by binding to the A domain, with L-serine and L-histidine increasing activity and L-phenylalanine, L-alanine, L-tryptophan, L-valine, and L-proline decreasing activity. T3 prevents PKM2 tetramerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 are all supported by citations to published research and represent established prior knowledge about PKM2 allosteric regulation. These claims provide essential background for understanding the experimental work presented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Amino acids and FBP can regulate PKM2 independently, as mutants that cannot bind one ligand can still be activated by the other. However, FBP shows dominant influence, as inhibitory amino acids fail to inhibit PKM2 in the presence of FBP, FBP can overcome T3 inhibition, and FBP attenuates but does not completely prevent inhibition by alanine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are supported by citations to published research and establish the complex interplay between different allosteric regulators of PKM2. This prior work motivates the current study's investigation of how multiple allosteric inputs are integrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The intracellular concentration of FBP in three cancer cell lines (HCT116, LN229, SN12C) cultured in RPMI media containing 11 mM glucose ranges from 238.4 \u00b1 67.4 \u00b5M to 355.1 \u00b1 66.2 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by LC-MS measurements described in the methods and shown in Figure 2A and Table 2. The measurements appear technically sound with appropriate replication across three cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The dissociation constant (KD) of FBP for PKM2 was measured as (25.5 \u00b1 148.1) nM, with an upper-limit estimate of 174 nM from ten replicate binding experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23-C24 report FBP binding affinity measurements, but the extremely large error (\u00b1148.1 nM for a mean of 25.5 nM) raises concerns about the reliability of the measurement. The authors acknowledge this limitation is due to using high PKM2 concentrations (5 \u00b5M) relative to the KD, which creates numerical instability in the fitting. While the upper-limit estimate of 174 nM may be more reliable, the uncertainty in this key parameter affects downstream calculations of fractional saturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The dissociation constants for phenylalanine and serine binding to PKM2 were measured as (191.0 \u00b1 86.3) \u00b5M and (507.5 \u00b1 218.2) \u00b5M, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by microscale thermophoresis measurements described in methods and shown in Figure 2\u2014figure supplement 3. The measurements have reasonable error ranges and are consistent with the amino acids being lower-affinity ligands compared to FBP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The calculated fractional saturation of PKM2 with FBP in cells was 0.99 and remained unchanged even when intracellular FBP concentration decreased to as low as 20 \u00b5M in glucose-depleted conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C27 depends critically on the accuracy of the KD measurement in C23-C24, which has substantial uncertainty. While the calculation methodology appears sound, the large error in the KD measurement propagates to uncertainty in the fractional saturation estimate. The conclusion that PKM2 is nearly saturated with FBP in cells is likely correct given the >1000-fold excess of FBP over the upper-limit KD estimate, but the precise value of 0.99 should be interpreted with caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Addition of exogenous FBP to lysates of HCT116 cells caused little increase in PKM2 activity, consistent with near-saturating FBP occupancy, while addition of exogenous phenylalanine resulted in dose-dependent inhibition of PKM2 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by experimental measurements shown in Figure 2F-H and Figure 2\u2014figure supplement 5. These results provide functional validation that PKM2 is indeed saturated with FBP in cell lysates and that phenylalanine can inhibit PKM2 activity at physiological concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "FBP activates PKM2 in a dose-dependent manner (AC50 = 118.1 \u00b1 19.0 nM) by decreasing KM for PEP from 1.22 \u00b1 0.02 mM to 0.23 \u00b1 0.04 mM without changing kcat. Similarly, serine decreases KM to 0.22 \u00b1 0.04 mM while phenylalanine increases KM to 7.08 \u00b1 1.58 mM, indicating that FBP, Phe, and Ser act as K-type modulators of PKM2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by steady-state kinetic measurements shown in Figure 3A-B and Table 3. The characterization of these ligands as K-type modulators is consistent with prior literature and the experimental data showing changes in KM but not kcat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In the presence of FBP, addition of phenylalanine decreased kcat from 349.3 s\u207b\u00b9 to 222.3 s\u207b\u00b9 (p=0.0075) and increased KM to 0.65 \u00b1 0.03 mM. The mechanism of Phe inhibition changes from hyperbolic-specific in the absence of FBP to hyperbolic-mixed in the presence of FBP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by kinetic measurements shown in Figure 3B and Figure 3\u2014figure supplement 1-2. The finding that Phe affects both kcat and KM in the presence of FBP, but only KM in its absence, demonstrates a functional interaction between the two allosteric sites and represents a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Saturating amounts of FBP did not change the measured dissociation constant for phenylalanine, and phenylalanine caused only a small, non-significant increase in FBP binding affinity (p=0.150).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by binding measurements shown in Figure 3C-D. This result indicates that the functional interaction between FBP and Phe is not due to reciprocal effects on binding affinity, pointing to allosteric communication as the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Native mass spectrometry reveals that PKM2 without added ligands exists as a mixture of monomers, dimers, and tetramers (ratio ~1:7:10), with dimers exclusively forming the A-A' assembly. Addition of FBP decreases monomer and dimer peaks and increases tetramer signal in a dose-dependent manner, with FBP-bound tetramers being more stable than apo tetramers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by nESI and IM mass spectrometry data shown in Figure 4A-B and supplementary figures. The characterization of oligomeric states and the effect of FBP on tetramerization is well-documented with appropriate controls and complementary techniques.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Addition of phenylalanine to apo PKM2 decreases tetramer abundance and increases dimer abundance, but Phe does not perturb the tetrameric state of FBP-bound PKM2. FBP binding to Phe-bound PKM2 results in tetramerization, and PKM2 tetramers can bind FBP and Phe simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by mass spectrometry data shown in Figure 4A-B and Figure 4\u2014figure supplement 4. These results demonstrate that FBP has a dominant effect on tetramerization that overrides the effect of Phe, and that both ligands can bind simultaneously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "FBP causes subtle conformational changes in PKM2 tetramers, evidenced by a modest decrease in collision cross section (DTCCSHe) between 9500-9650 \u0172. Addition of Phe partially reverses this change. In the presence of Phe, half-stoichiometric amounts of FBP induce tetramerization with slow kinetics (ktet = 812.5 \u00b1 284.6 s\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by IM-MS measurements shown in Figure 4D-E. The subtle conformational changes detected by collision cross section measurements are consistent with the lack of large-scale structural changes observed in MD simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The inhibitory effect of phenylalanine on FBP-induced activation of PKM2 is not due to Phe preventing FBP-induced tetramerization, but rather due to interference with allosteric communication between the FBP binding site and the active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is a key conclusion supported by the combined evidence from claims C44-C50 showing that Phe does not prevent FBP-induced tetramerization but still inhibits activity. This inference is logical and well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Molecular dynamics simulations analyzed with AlloHubMat reveal that FBP does not induce large global conformational changes in PKM2, but rather causes changes in backbone correlations that separate into distinct clusters. The strength of coupling between allosteric hub fragments correlates with positional entropy, and most predicted hub fragments coincide with minimal distance pathways between the FBP binding pocket and active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by MD simulation analyses shown in Figure 5 and supplementary figures. The computational approach is well-described and the results are internally consistent, showing that FBP-induced allostery involves dynamic coupling rather than large conformational changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Seven allosteric hub mutants were characterized, with five (I124G, F244V, K305Q, F307P, R489L) showing attenuated activation by FBP. K305Q and F307P were allosterically inert with no response to FBP or Phe, with F307P displaying constitutively high substrate affinity. Phe addition significantly hindered FBP-induced activation in I124G, F244V, and R489L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by experimental measurements shown in Figure 6 and supplementary figures. The mutational analysis validates the computational predictions and demonstrates that AlloHubMat successfully identified residues involved in FBP-induced allostery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Two allosteric hub mutants, A327S and C358A, retained intact activation by FBP but addition of phenylalanine failed to attenuate FBP-induced activation in these mutants, indicating that residues A327 and C358 have a role in coupling the allosteric effect of Phe with that of FBP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by experimental measurements shown in Figure 6B-C. This is a key finding demonstrating that specific residues mediate the functional cross-talk between the FBP and Phe allosteric pathways, representing a major discovery of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "FBP-induced dynamic coupling between distal residues functions to enable phenylalanine to interfere with FBP-induced allostery, and AlloHubMat successfully identified residues involved in FBP-induced allosteric activation of PKM2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 represent the main conclusions of the study, supported by the combined experimental and computational evidence from claims C52-C63. The integration of MD simulations, computational prediction, and experimental validation provides strong support for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Enzymatic activation of PKM2 can be uncoupled from tetramerization, as demonstrated by mutants that tetramerize but are not activated and vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by the observation that some mutants (e.g., F307P, K305Q) show altered tetramerization behavior that does not correlate with their activation state, and that Phe can inhibit FBP-bound tetramers without causing dissociation. This represents an important conceptual advance in understanding PKM2 regulation.",
+    "result_type": "MAJOR"
+  }
+]

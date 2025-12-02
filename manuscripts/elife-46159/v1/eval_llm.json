@@ -1,0 +1,446 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Two monkeys were trained on a cycling task where one arm performed the task while the other remained still. Monkeys cycled quickly (median 2.2 and 1.8 cycles/s) while the non-performing arm moved minimally (mean 0.0016 and 0.024 cycles/s). Neural recordings captured 1150 units from both hemispheres, primarily from M1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 provide clear behavioral and recording parameters with quantitative measurements shown in Figures 1 and 2. The task design is well-documented, behavioral performance is quantified, and the recording locations are anatomically verified with ICMS thresholds reported in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Neural responses were typically rhythmic and could vary in structure, with most neurons active regardless of which arm performed the task. In contrast, muscles exhibited robust activity only when their driven arm performed the task, with occasional weak activity at movement end for the non-driven arm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 are well-supported by example traces in Figure 3 showing clear differences between muscle and neural response patterns. The qualitative descriptions match the visual data, and the distinction between muscle lateralization and neural bilateral activity is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Muscles showed strong arm preference (median indices 0.86 and 0.98) while neurons showed weak arm preference (median 0.07 and 0.31), with many neurons (201/533 and 107/617) showing stronger modulation for the non-driven arm. Results were consistent when restricting analysis to posterior M1 recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by quantitative arm preference index distributions in Figure 4A-B. The statistical measures are clearly stated, the control analysis excluding PMd is reported, and the contrast between muscle and neural lateralization is robustly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Neural responses in the non-driving cortex were not related to small movements of the non-performing arm. Only 5% of timepoints showed significant firing rate differences between trials with higher versus lower non-performing arm movement, matching chance levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by the control analysis in Figure 5 using trial-splitting based on non-performing arm movement. The statistical approach (randomization test with 1000 resamples) is appropriate, and the 5% significance rate matching chance expectation provides strong evidence against movement-related confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Individual neurons showed limb-dependent responses: correlations between driven and non-driven arm responses were near zero (median 0.16 and 0.08), only slightly above correlations between random neuron pairs. In contrast, correlations for top-start versus bottom-start conditions were high (0.72 and 0.77), confirming that low correlations were not due to sampling error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are supported by correlation analyses in Figure 4C with appropriate controls. The shuffle control establishes baseline expectations, and the top-start versus bottom-start comparison demonstrates that high correlations can be measured when responses are similar, validating the low correlations observed for different arms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The correlation structure between neurons changed dramatically depending on which arm performed the task. The meta-correlation between neuron-neuron correlations for driven versus non-driven arm conditions was only 0.1 and 0.05, indicating that neurons that responded similarly for one arm did not necessarily respond similarly for the other arm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by correlation matrix analyses in Figure 6E-F and scatter plots in Figure 6G-H. The visual reorganization of correlation structure and the quantitative meta-correlation values provide converging evidence for limb-dependent population-level organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C52"
+    ],
+    "result": "Muscle activity was accurately predicted by neural activity from both the driving cortex and non-driving cortex, with no evidence that muscle-related signals were absent in the non-driving cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C52 are supported by PLS regression results in Figure 7A,C,D showing comparable prediction performance from both hemispheres. While performance was slightly lower for the non-driving cortex in one monkey (p=0.016), the effect was small and the overall conclusion of shared muscle-related signals is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The dominant signals captured by the top principal components were nearly identical between driving and non-driving cortices. Activity spanned a modest number of dimensions with five principal components accounting for approximately 80% of variance during steady-state cycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by principal component regression analysis in Figure 7F-G and control analyses in Figure 7 Supplement 1. The controls demonstrate that the analysis can detect missing or mismatched signals, validating the conclusion that major signals are shared. The dimensionality estimate is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Both driving and non-driving cortices displayed low trajectory tangling (420\u00b1153 and 468\u00b1201 for monkey E; 430\u00b1146 and 374\u00b1105 for monkey F), much lower than muscle trajectory tangling (2296\u00b11766 and 4392\u00b12950). Differences between cortices were small and inconsistent across monkeys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by trajectory tangling analysis in Figure 8 with clear quantitative comparisons. The cumulative distributions show consistent patterns, the statistical measures are reported with standard deviations, and the contrast with muscle tangling is substantial and consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Neural responses for the two arms occupied nearly orthogonal subspaces. The top five principal components of the left-arm subspace explained only 7\u00b11% (monkey E) and 2\u00b10.5% (monkey F) of variance when the right arm performed the task, versus 65\u00b13% and 69\u00b12% for same-arm held-out conditions. Both subspaces involved contributions from neurons in both hemispheres, with modestly larger contributions from the driving cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are supported by PCA-based subspace analysis in Figure 9 with clear cross-validation. The quantitative variance explained measures demonstrate orthogonality, and the weight distributions (Figure 9C,I,F,L) confirm bilateral contributions. The analysis appropriately uses held-out conditions to avoid overfitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Subspace separation was present at the single-trial level. The Fano factor during cycling was \u22641 (0.99 and 0.69), arguing against substantial network-level variability. LFADS analysis of single-trial firing rates confirmed separation of left-arm and right-arm signals, though separation was slightly weaker than for trial-averaged data, as expected with fewer neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by Fano factor analysis and LFADS results in Figure 10. The Fano factor values indicate trial-to-trial variability is not excessive. Figure 10 Supplement 1 demonstrates that subspace orthogonality increases with neuron count, explaining the slightly weaker single-trial separation. The LFADS approach is appropriate for inferring single-trial dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Linear decoders trained to predict muscle activity for one arm performed well (91-93% variance explained) and naturally ignored activity related to the other arm. This ability is inherited from the orthogonality of arm-specific subspaces: decoders employ dimensions within the relevant arm's subspace, which are largely unoccupied when the other arm performs the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 are supported by decoding analyses in Figure 11. The train-performing-only decoders successfully generalized to non-performing conditions (Figure 11A,G), and the arm preference indices of decoded muscle activity (Figure 11D,J) were appropriately shifted toward muscle-like values. The mechanistic explanation linking decoder performance to subspace orthogonality is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Even simple linear decoders largely ignored wrong-arm activity, though some residual modulation remained, likely reflecting linear approximation limitations or incomplete neural sampling. Training decoders on both performing and non-performing conditions improved this ability. There is no paradox in robust bilateral neural activity despite unilateral muscle activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by comparing train-performing-only versus train-both decoders in Figure 11. The improvement with train-both decoders (green traces) demonstrates that explicit training helps, while the success of train-performing-only decoders (orange traces) shows that subspace structure alone provides substantial separation. The interpretation of residual modulation (C86) is reasonable speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study found that neural signals for the two arms were mixed across hemispheres and neurons, with individual neurons responding very differently depending on which arm moved. However, at the population level, both hemispheres contained similar information including muscle-like signals. Activity for each arm occupied distinct, nearly orthogonal subspaces, allowing linear decoders to naturally separate arm-specific commands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 provide an accurate summary of the major findings, all of which are supported by the preceding analyses. These summary claims in the Discussion correctly synthesize the results from individual-neuron analyses (C32-C45), population-level analyses (C49-C62), subspace analyses (C63-C70), and decoding analyses (C74-C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The findings contribute to evidence that neural activity related to different computations is often separated across neural dimensions rather than brain areas or individual neurons. Prior work showed that preparatory and movement-related dimensions are orthogonal, with preparatory dimensions being 'muscle null.' Muscle-null dimensions are essential in network models and for avoiding trajectory tangling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 accurately cite and interpret prior literature (Druckmann & Chklovskii 2012, Machens et al. 2010, Mante et al. 2013, Elsayed et al. 2016, Kaufman et al. 2014, Churchland et al. 2012, Sussillo et al. 2015, Russo et al. 2018). The citations are appropriate and the conceptual framework is correctly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The results are consistent with the hypothesis that right-arm-related activity falls in dimensions that are muscle-null with respect to the left arm and vice versa. This hypothesis predicts that small contractions in the non-performing arm should correlate with small excursions into the corresponding subspace.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 present a reasonable interpretation and testable prediction. The hypothesis is consistent with the observed subspace orthogonality and the muscle-null framework from prior work. The prediction (C105) is appropriately framed as future work rather than a tested claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Two randomly oriented dimensions are essentially guaranteed to be nearly orthogonal in high-dimensional space. Thus, if a learning mechanism ensures neurons have random preferences for the two arms (mixed selectivity), orthogonality could be achieved without explicit enforcement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 correctly state a mathematical principle about high-dimensional spaces and propose a plausible mechanism. The mathematical claim (C106) is accurate, and the mechanistic speculation (C107) is reasonable though untested. This is appropriately framed as a possibility rather than a demonstrated mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Subspace weights should not be thought of as mapping directly onto anatomy\u2014neurons can contribute to muscle-potent subspaces without being output neurons, and output neurons may contain contributions from both muscle-potent and muscle-null dimensions. Orthogonality of subspaces does not imply signals don't interact; preparatory activity seeds movement dynamics, and mixing within neurons allows interactions relevant to bimanual coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C116 provide important interpretive caveats supported by prior literature (Kraskov et al. 2014, Afshar et al. 2011, Churchland et al. 2006, 2010a, 2012, Churchland & Shenoy 2007). The distinctions between subspace structure and anatomical/functional organization are conceptually sound and appropriately nuanced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The finding of bilateral neural responses agrees with most prior primate studies of arm movements, though studies of finger movements report more lateralization, possibly reflecting greater lateralization for hand versus arm computations. This interpretation is supported by anatomical differences but is tentative given conflicting fMRI evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 accurately cite and interpret prior literature (Cisek et al. 2003, Donchin et al. 1998, 2002, Kermadi et al. 1998, Steinberg et al. 2002, Aizawa et al. 1990, Tanji et al. 1988, Jenny 1979, Jones & Wise 1977, Rouiller et al. 1994, Berlot et al. 2019, Diedrichsen et al. 2013, Verstynen et al. 2005). The synthesis is balanced and acknowledges conflicting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The present findings of strongly limb-dependent neural responses are consistent with Cisek et al. (2003) and Heming et al. (2019) who found limb-dependent preferred directions, and with inspection of example units from Donchin et al. (1998, 2002). M1 responses appear strongly limb-dependent across various contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 appropriately compare the current findings with prior literature. The comparison with Cisek et al. (2003) and Heming et al. (2019) is valid, and the reinterpretation of Donchin et al. data is reasonable. The conclusion of consistent limb-dependence across contexts is justified by the cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "fMRI studies show preserved finger preference across limbs at the voxel level. A likely resolution with single-neuron limb-dependence is that nearby neurons respond to similar joints for both arms but without preserved tuning for movement features (e.g., a neuron might respond to right pinky flexion and left pinky extension).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 correctly cites Diedrichsen et al. (2013). However, claim C128 is speculative reconciliation without direct evidence. While the proposed resolution is plausible and could explain the apparent discrepancy between fMRI and single-neuron findings, it remains untested. The speculation is reasonable but should not be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "The hypothesis that motor cortex employs limb-independent movement representations is unlikely given strongly limb-dependent responses. The hypothesis that the two cortices process different complementary information is also unlikely because no large signals were found in the driving cortex that were absent in the non-driving cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 present reasonable rejections of alternative hypotheses based on the data. The limb-independent hypothesis is inconsistent with the low correlations (C39-C45), and the complementary-information hypothesis is inconsistent with the principal component regression results (C55). The logic is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Activity ipsilateral to the moving arm might relate to uncrossed descending connections, but prior studies found little evidence for robust M1-ipsilateral muscle relationships. Intracortical microstimulation rarely generates ipsilateral responses, and motoneuron recordings show no ipsilateral monosynaptic potentials. Uncrossed projections are thus unlikely to be the primary reason for non-driving cortex activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 appropriately cite prior literature (Kuypers 1981, Rosenzweig et al. 2009, Kwan et al. 1978, Sessle & Wiesendanger 1982, Aizawa et al. 1990, Soteropoulos et al. 2011) and draw a reasonable conclusion. The cited evidence consistently argues against substantial ipsilateral motor output, making the conclusion (C135) well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Activity in the non-driving cortex may result from an efference copy of signals from the driving cortex, which could aid limb coordination or inter-manual skill transfer. The results are consistent with this hypothesis and suggest the efference copy would need to be quite complete, conveying most signals rather than just output signals. Such responses might be analogous to mirror responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C142 present a plausible hypothesis with appropriate caveats. The efference copy hypothesis is consistent with the data (C139) and the inference about completeness (C140) follows logically. However, this remains speculation without direct evidence. The connection to mirror neurons (C141-C142) is reasonable but also speculative. The hypothesis is well-reasoned but unsupported by direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Mirror neurons have been observed in multiple motor areas including primary motor cortex, and even pyramidal tract neurons can exhibit mirror properties. This suggests a common property of motor area neurons is responding during movements in which they don't directly participate, possibly for learning purposes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 appropriately cite prior literature on mirror neurons (Fogassi et al. 2005, Rizzolatti et al. 1996, Dushanova & Donoghue 2010, Vigneswaran et al. 2013, Kraskov et al. 2014). The synthesis and interpretation (C145) is reasonable though the learning purpose remains speculative. The citations support the existence of mirror properties in motor areas.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Motor cortical computations may be distributed across both hemispheres, with non-driving cortex neurons contributing to computations even though they are synapses away from output neurons. This hypothesis could explain why all large signals are shared between hemispheres and is appealing if randomly chosen neurons from the two cortices are nearly indistinguishable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C149 present a plausible hypothesis with citation to Li et al. (2016). The hypothesis is consistent with the finding of shared signals (C148-C149) and provides a potential explanation. However, this remains speculation without direct evidence for distributed computation. The reasoning is sound but the hypothesis is untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "It remains unclear if the distributed computation hypothesis can be reconciled with findings that motor cortex inactivation principally affects contralateral limbs. If both hemispheres control both arms, bilateral deficits would be expected. A possible resolution is that the network is sufficiently robust to function when many neurons are inactivated, provided output neurons can convey commands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C152 appropriately cite inactivation studies (Glees & Cole 1950, Liu & Rouiller 1999, Passingham et al. 1983) and identify a genuine tension with the distributed computation hypothesis. The proposed resolution (C152) is speculative but plausible. This represents an important unresolved question rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Multiple cortical, subcortical, and spinal regions contribute to movement control, with many areas showing ipsilateral arm responses. The relationship to ipsilateral movements may vary by computational role. The study focused on M1 as the region most likely to show lateralization based on anatomy and microstimulation, yet even M1 failed to show strongly lateralized activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C160 appropriately cite extensive prior literature on multiple motor areas and provide context for the study's focus on M1. The rationale for studying M1 (C159) is sound, and the conclusion (C160) accurately summarizes the main finding. The citations support the breadth of ipsilateral responses across motor areas.",
+    "result_type": "MINOR"
+  }
+]

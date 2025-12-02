@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors establish the scientific context and rationale for studying spatial learning in electric fish, noting that while spatial learning requires egocentric-to-allocentric transformation, the neural mechanisms are mostly unknown, and electric fish offer a tractable model system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish well-supported background context. The general importance of spatial learning (C1), the computational requirements (C2), and gaps in knowledge (C3) are standard neuroscience concepts. The navigation abilities of electric fish (C4) and relative simplicity of their circuitry (C5) are supported by citations and provide clear justification for the model system choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C43",
+      "C44",
+      "C49"
+    ],
+    "result": "The preglomerular complex (PG) serves as an exclusive feed-forward bottleneck between the optic tectum and dorsolateral pallium, and this study presents the first neural recordings from PG, revealing that PG cells exhibit characteristic thalamic-like bursting mediated by T-type Ca2+ channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anatomical claims about PG connectivity (C6, C32-C35) are well-supported by multiple anatomical citations. The novelty claim (C7) is supported by the experimental data (C48-C49). The bursting properties (C43-C44) are demonstrated in Figure 1B-C and supported by molecular data (Figure 1\u2014figure supplement 1), with appropriate comparisons to other vertebrate thalamic regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Topographic spatial information present in the optic tectum is mostly eliminated in PG neurons, with 89% of PG cells having whole-body receptive fields and lacking the labeled-line code for object position characteristic of earlier sensory processing stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-supported by systematic receptive field mapping (n=27 cells, Figure 2). The quantitative analysis shows only 11% of cells were topographic (C50), with statistical tests demonstrating lack of rate coding (C53-C54) and information theoretic analysis (C54). The contrast with OT topography (C56-C57) is supported by appropriate citations. Sample size is adequate for the claims made.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C73"
+    ],
+    "result": "PG cells predominantly respond to novelty events (object encounters) rather than continuous motion, with the majority (78%) exhibiting brief burst responses at motion onset/offset, and three distinct response types identified for transverse motion: proximity detection (75%), encounter detection (32%), and motion-change detection (57.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The motion response characterization is supported by systematic testing with multiple protocols (longitudinal and transverse motion, n=27 and n=40 cells respectively). The percentages are clearly reported with sample sizes. The distance-invariance of motion-change detectors (C69) is demonstrated with appropriate controls. The conclusion about novelty detection (C73) is a reasonable inference from the data, though the overlapping response categories (C65) suggest some complexity in classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Most PG cells respond to both conductive and non-conductive objects, suggesting they do not discriminate between object types and report encounters with any environmental feature during active exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The brass/plastic comparison (n=42 cells, Figure 4) provides clear evidence that 57% respond to both object types (C162), with smaller percentages showing selectivity (C163-C164). The inference about lack of discrimination (C75) and functional role during exploration (C76) are reasonable conclusions from the data, though the functional interpretation is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "45% of PG cells exhibit history-independent adaptation where response intensity is strongly correlated with only the immediately preceding time interval, not earlier intervals, and this adaptation is spatially non-specific across the body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The random interval protocol (n=33 cells tested, 15 adapting) provides strong evidence for history-independent adaptation. Statistical analysis shows significant correlation with the last interval (C78) but not prior intervals (C79), demonstrated in Figure 5B-C. The spatial oddball experiment (n=14 cells, 6 adapting) supports spatial non-specificity (C84, Figure 5D-F). The contrast with mammalian cortical adaptation (C83) is appropriately cited. Sample sizes are adequate though relatively small for the oddball experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "A computational model demonstrates that the response of adapting PG cells can be used to estimate time intervals using a simple maximum likelihood decoder, with the estimation saturating the Cram\u00e9r-Rao lower bound and showing expected dependencies on population size and model parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modeling work (Figure 6) provides a rigorous computational framework. The model fitting shows most cells have low \u03b2 values indicating history-independence (C91), with recovery time constants of 2.6-25.3s (C92). The MLE analysis demonstrates the information is decodable (C93) and achieves optimal performance (C95). The parameter sensitivity analysis (C96-C97) is systematic. However, the model makes simplifying assumptions (e.g., Poisson statistics, independence) that may not fully capture biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C118"
+    ],
+    "result": "Comparison of model predictions to behavioral data from spatial learning experiments shows that temporal encoding in PG can account for observed behavioral precision, with simulations using ~500 adapting cells yielding errors comparable to fish performance both with and without landmarks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral analysis (Figure 7) provides appropriate ground truth data showing longer intervals (C100) and larger errors (C101) without landmarks. The model-behavior comparison (Figure 8, C104) shows good agreement. The population size estimate (C105: 60,000 cells in PGl) is cited, and the calculation that ~500 cells suffice (C104) is demonstrated. However, the claim that this number is \"sufficient\" (C107) involves extrapolation and assumptions about additional encoding errors that are not fully tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C45",
+      "C46",
+      "C47",
+      "C109",
+      "C110",
+      "C112",
+      "C113"
+    ],
+    "result": "PG implements a space-to-time transformation that converts topographic spatial information from OT into a reliable temporal representation of encounter sequences, which combined with velocity information can enable accurate distance estimation for path integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizes the major findings: loss of topography (C45, supported by Figure 2), temporal encoding (C46-C47, supported by Figures 5-8), and the proposed computational scheme (C109-C110, C113). The claims about combining temporal and velocity information (C10) are supported by modeling (Figures 6-8) and the connection to path integration (C11) is well-grounded in cited theory. The functional interpretation (C112-C113) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C119",
+      "C120",
+      "C121",
+      "C123",
+      "C134"
+    ],
+    "result": "The authors propose that similar thalamic space-to-time mechanisms may underlie sequential spatial learning in all vertebrates, representing a primitive computational strategy that evolved for short-range sensing in low-visibility environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are broad evolutionary and comparative claims (C12, C119-C121, C123, C134) that extend well beyond the fish data. While the authors provide some comparative evidence (homology claims C124-C133), the direct evidence for these mechanisms in other vertebrates is limited. The evolutionary speculation (C119-C120) is interesting but not directly tested. These represent hypotheses for future work rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "PG shows homology to mammalian posterior thalamic nuclei (particularly pulvinar) based on anatomical, developmental, physiological, and molecular evidence, and similar spatially non-specific adaptation has been reported in rodent VPM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The homology argument is supported by multiple lines of evidence: anatomical/developmental citations (C124), physiological bursting data (C125, Figure 1B-C), and molecular expression patterns (C125, Figure 1\u2014figure supplement 1). The functional parallels to pulvinar (C126-C129) are appropriately cited. The connection to interval timing (C130) and VPM adaptation (C133) are supported by citations. However, the mechanistic basis remains unclear (C131-C132), appropriately acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The authors propose that the PG mechanism may contribute to temporal coding in the mammalian hippocampus, though they acknowledge that the mammalian circuitry is more complex with multiple pathways, making it challenging to pinpoint where egocentric-to-allocentric transformations occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The comparison to hippocampus (C135-C137) is supported by appropriate citations. The discussion of hippocampal time cells (C138-C141) provides relevant context. However, the proposal that PG-like mechanisms contribute to hippocampal function (C142, C146-C147) is speculative. The authors appropriately acknowledge the anatomical differences (C143-C145) that complicate direct comparisons. This represents an interesting hypothesis but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C102",
+      "C103",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors propose a circuit model where PG provides temporal information to the dorsolateral pallium (DL), which integrates this with velocity (potentially from lateral-line) and heading direction (vestibular) to compute allocentric spatial position through path integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anatomical connectivity claims (C29-C40) are well-supported by citations to lesion and tracing studies. The hypothesis about circuit function (C41-C42, C103, C116) is a reasonable inference from anatomy and the PG data, but lacks direct experimental validation. The proposed sources of velocity (C114-C115) and heading information (C116) are speculative, though some lateral-line responsive cells were recorded (C115, n=7). The citation to zebrafish DL temporal processing (C117) provides some support but is limited. This represents a plausible model requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C148"
+    ],
+    "result": "The model predicts that the fish's sense of position is critically dependent on its last encounter with an object.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This prediction (C148) follows logically from the history-independent adaptation mechanism demonstrated in the data. It represents a testable hypothesis for future behavioral experiments, appropriately identified by the authors as a direction for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The experimental methods included appropriate animal care procedures, surgical preparation with paralysis that preserves the electric organ discharge, and extracellular recordings using custom electrodes with differential recording to cancel EOD interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methods are clearly described with appropriate detail. Ethical approval is documented (C149). The fish source and housing (C150-C151) are specified. The paralytic agent properties (C152) are correctly stated. The electrode fabrication and preparation (C153-C154) are standard. The recording locations (C155) and identification criteria (C156) are clearly defined. The differential recording technique (C157) is appropriate for this preparation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Molecular analysis shows that only the \u03b11G T-type Ca2+ channel transcript is expressed in both PG and mammalian thalamus, while all three transcripts are expressed in DL and hippocampus, suggesting this is a conserved thalamic feature that generates the observed bursting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The molecular data (Figure 1\u2014figure supplement 1) clearly shows differential expression patterns (C158-C159). The proposal that \u03b11G generates bursting (C160) is reasonable given the physiological data and prior knowledge of T-type channels, though it remains a hypothesis. The conservation claim (C161) is supported by the comparative expression data. This provides additional evidence for the thalamic homology argument.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C111"
+    ],
+    "result": "Lateral-line responsive PG units showed persistent responses throughout motion, and visually-responsive PG cells displayed similar history-independent adaptation to electrosensory cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The lateral-line observations (C61, n=7 cells) are interesting but the sample size is too small for systematic characterization, as the authors acknowledge. The visual cell adaptation (C82, C111, n=3 adapting cells shown in Figure 5\u2014figure supplement 2) suggests generality across modalities but again the sample is very limited. These observations are suggestive but require more extensive characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C99"
+    ],
+    "result": "The variety of PG response types may constitute a distributed representation of object proximity providing coarse-grained egocentric information, and non-adapting cells may enable correction of temporal estimates for global modulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative interpretations (C71, C72, C99) about the functional roles of response diversity and non-adapting cells. While plausible, they lack direct experimental support. The proximity information claim (C71-C72) is a reasonable inference from the response types, but the specific computational role is not demonstrated. The proposal about non-adapting cells (C99) is an interesting hypothesis but purely speculative.",
+    "result_type": "MINOR"
+  }
+]

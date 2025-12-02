@@ -1,0 +1,1518 @@
+{
+  "submission": {
+    "id": "113aad26-8f3d-44ee-9051-66d21c3b85c4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:29:17.134886Z",
+    "updated_at": "2025-12-02T07:29:17.134886Z"
+  },
+  "content": [
+    {
+      "id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "submission_id": "113aad26-8f3d-44ee-9051-66d21c3b85c4",
+      "content_type": "manuscript",
+      "content_text": "# DNA sequence encodes the position of DNA supercoils\n\n## Authors\n\n- Sung Hyun Kim<sup>1</sup> ([ORCID: 0000-0001-9272-7036](https://orcid.org/0000-0001-9272-7036))\n- Mahipal Ganji<sup>1</sup> ([ORCID: 0000-0001-8176-3322](https://orcid.org/0000-0001-8176-3322))\n- Eugene Kim<sup>1</sup>\n- Jaco van der Torre<sup>1</sup>\n- Elio Abbondanzieri<sup>1</sup> \u2020\n- Cees Dekker<sup>1</sup> ([ORCID: 0000-0001-6273-071X](https://orcid.org/0000-0001-6273-071X)) \u2020\n\n### Affiliations\n\n1. Department of Bionanoscience Kavli Institute of Nanoscience, Delft University of Technology Delft The Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe three-dimensional organization of DNA is increasingly understood to play a decisive role in vital cellular processes. Many studies focus on the role of DNA-packaging proteins, crowding, and confinement in arranging chromatin, but structural information might also be directly encoded in bare DNA itself. Here, we visualize plectonemes (extended intertwined DNA structures formed upon supercoiling) on individual DNA molecules. Remarkably, our experiments show that the DNA sequence directly encodes the structure of supercoiled DNA by pinning plectonemes at specific sequences. We develop a physical model that predicts that sequence-dependent intrinsic curvature is the key determinant of pinning strength and demonstrate this simple model provides very good agreement with the data. Analysis of several prokaryotic genomes indicates that plectonemes localize directly upstream of promoters, which we experimentally confirm for selected promotor sequences. Our findings reveal a hidden code in the genome that helps to spatially organize the chromosomal DNA.\n\n## Introduction\n\nControl of DNA supercoiling is of vital importance to cells. Torsional strain imposed by DNA-processing enzymes induces supercoiling of DNA, which triggers large structural rearrangements through the formation of plectonemes (Vinograd et al., 1965). Recent biochemical studies suggest that supercoiling plays an important role in the regulation of gene expression in both prokaryotes (Le et al., 2013) and eukaryotes (Naughton et al., 2013; Pasi and Lavery, 2016). In order to tailor the degree of supercoiling around specific genes, chromatin is organized into independent topological domains with varying degrees of torsional strain (Naughton et al., 2013; Sinden and Pettijohn, 1981). Domains that contain highly transcribed genes are generally underwound whereas inactive genes are overwound (Kouzine et al., 2013). Furthermore, transcription of a gene transiently alters the local supercoiling (Kouzine et al., 2013; Naughton et al., 2013; Peter et al., 2004), while, in turn, torsional strain influences the rate of transcription (Chong et al., 2014; Liu and Wang, 1987; Ma et al., 2013).\n\nFor many years, the effect of DNA supercoiling on various cellular processes has mainly been understood as a torsional stress that enzymes should overcome or exploit for their function. More recently, supercoiling has been acknowledged as a key component of the spatial architecture of the genome (de Wit and de Laat, 2012; Dekker et al., 2013; Ding et al., 2014; Neuman, 2010). Here, bound proteins are typically viewed as the primary determinant of sequence-specific tertiary structures while intrinsic mechanical features of the DNA are often ignored. However, the DNA sequence influences its local mechanical properties such as bending stiffness, curvature, and duplex stability, which in turn alter the energetics of plectoneme formation at specific sequences (Dittmore et al., 2017; Irobalieva et al., 2015; Matek et al., 2015). Unfortunately, the relative importance of these factors that influence the precise tertiary structure of supercoiled DNA have remained unclear (Dekker and Heard, 2015). Various indications that the plectonemic structure of DNA can be influenced by the sequence were obtained from biochemical and structural studies (Kremer et al., 1993; Laundon and Griffith, 1988; Pfannschmidt and Langowski, 1998; Tsen and Levene, 1997) as well as from work performed in silico (Eslami-Mossallam et al., 2016; Pasi and Lavery, 2016; Wang et al., 2017). These studies suggested that plectonemes may get localized to highly curved or flexible segments of DNA. However, this examined only a handful of specific sequences such as phased poly(A)-tracts and a particular high\u2013curvature sequence rich in poly(A)-tracts, making it difficult to determine if curvature, long poly(A)-tracts, or some other DNA feature drives the sequence\u2013structure relationship.\n\nHere, we study how DNA sequence governs the structure of supercoiled DNA by use of a recently developed single-molecule technique termed ISD (intercalation-induced supercoiling of DNA) (Ganji et al., 2016b), which uses intercalating dyes to induce supercoiling as well as to observe the resultant tertiary structures in many DNA molecules in parallel. Plectonemes are directly observable as intensity maxima along the DNA, from which their position along DNA can be extracted (see Figure 1a and Figure 1\u2014figure supplement 1). We find a strong relationship between sequence and plectoneme localization. By examining many different sequences, we systematically rule out several possible mechanisms of the observed sequence dependence. Using a model built on basic physics, we show that the local intrinsic curvature determines the relative plectoneme stability at different sequences. Application of this model to sequenced genomes reveals a clear biological relevance, as we identify a class of plectonemic hot spots that localize upstream of prokaryotic promoters. Subsequently, we confirm that these sequences pin plectonemes in our single-molecule assay, testifying to the predictive power of our model. We also discuss several eukaryotic genomes where plectonemes are localized near promoters with a spacing consistent with nucleosome positioning. Taken together, our experimental results and our physical model show a clear sequence-supercoiling relationship and indicate that genomic DNA encodes information for positioning of plectonemes, likely to regulate gene expression and contribute to the three-dimensional spatial ordering of the genome.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36557/elife-36557-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic of the ISD assay. (top) A flow-stretched DNA is doubly-tethered on a PEG-coated surface via streptavidin-biotin linkage. One-end of the DNA is labeled with Cy5-fluorophores (red stars) for identifying the direction of each DNA molecule. (bottom) Binding of SxO fluorophores induces supercoiling to the torsionally constrained DNA molecule. (b) Representative fluorescence images of a supercoiled DNA molecule. Left: Snap-shot image of a supercoiled DNA with 100 ms exposure. Yellow arrows highlight higher DNA density, that\u00a0is individual plectonemes. Right: Time-averaged DNA image by stacking 1000 images (of 100 ms exposure each). Arrows indicate peaks in the inhomogeneous average density of plectonemes. (c) AT-contents of two DNA samples: template1 and template2 binned to 300 bp. (d) Plectoneme densities obtained from individual DNA molecules. (top) Plectoneme density on template1 (grey thin lines, n\u00a0=\u00a070) and their ensemble average (red line). Arrow indicates a strong plectoneme pinning site. (bottom) Plectoneme densities obtained from individual DNA molecules of template2 (grey thin lines, n\u00a0=\u00a0120) and their ensemble average (black line).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36557/elife-36557-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Intercalation induced Supercoiling of DNA- Schematics for the preparation of the intercalation-induced supercoiled DNA.\u00a0A doubly biotinylated DNA at the ends is flowed along a streptavidin-coated surface at a constant flow velocity. One end of the DNA first binds to the surface via biotin-streptavidin interaction, which is followed by stretching of the molecule along the flow. The other end of the DNA then binds to surface resulting in a torsionally constrained DNA. Upon addition of an intercalating dye (Sytox Orange), DNA becomes supercoiled due to local unwinding induced by intercalation. Inset at the bottom panel, Schematics showing local unwinding of stacked base pairs due to intercalation of a dye molecule. In the B-form DNA structure, a pair (orange) of stacked bases make an angle of 34\u00b0 with the next pair (green) and is separated by 0.34 nm. Intercalation of a dye molecule between the stacked bases increases the separation and decreases the angle, resulting in local unwinding of the DNA, which adds positive supercoiling to the rotationally constrained DNA molecule. (b) Schematics for DNA template preparation. Two plasmids (pCR-XL 12.5 kb and 14.7 kb) were expressed in methylation-free E. coli cells using a midiprep kit. Each plasmid contains two BsaI sites. The plasmids were first PCR-amplified and then digested with BsaI endonuclease to obtain the required sticky ends. An 8.4 kb DNA fragment was obtained from the 12.5 kb plasmid and a 11.2 kb DNA fragment from the 14.7 kb plasmid. The 8.4 kb fragment, a sequence of interest, and biotin-Cy5-DNA handle were ligated together. At the same time, the 11.2 kb fragment is ligated with biotin-DNA handle. The ligated fragments were then agarose gel-purified and ligated together. The final ligation product is purified by agarose gel electrophoresis. In the case of template 1, we skipped the sequence of interest and the 8.4 kb and 11.2 kb fragments were directly ligated together. Template two was obtained by digesting the single 21 kb plasmid and ligating with biotin handle at one end and biotin/Cy5 handle at the other end. (c) Fluorescence snap-shot showing several supercoiled DNA molecules. Yellow arrows point to the plectonemes on supercoiled DNA.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36557/elife-36557-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Intensity profiles of a torsionally relaxed DNA molecules.\u00a0Intensity profiles of individual DNA molecules (thin lines) from template 1 (left) and template 2 (right) after nicking. Thick red lines are the ensemble average of the intensity profiles. Insets show the distribution of the end-to-end lengths of the surface immobilized DNA molecules. (b) Total number of observed plectoneme nucleation and termination events for template 1 (left) and template 2 (right). The near-equal number of nucleation and termination events at every position on both templates implies that DNA- SxO complexes are in equilibrium.\n\n## Results\n\n### Single-molecule visualization of individual plectonemes along supercoiled DNA\n\nTo study the behavior of individual plectonemes on various DNA sequences, we prepared 20 kb-long DNA molecules of which the end regions (~500 bp) were labelled with multiple biotins for surface immobilization (Figure 1\u2014figure supplement 1a\u2013b). The DNA molecule were flowed into streptavidin-coated sample chamber at a constant flow rate to obtain stretched double-tethered DNA molecules (Figure 1a and Figure 1\u2014figure supplement 1a). We then induced supercoiling by adding an intercalating dye, Sytox Orange (SxO), into the chamber and imaged individual plectonemes formed on the supercoiled DNA molecules. Notably, SxO does not have any considerable effect on the mechanical properties of DNA under our experimental conditions (Ganji et al., 2016b).\n\nConsistent with previous studies (Ganji et al., 2016b; van Loenhout et al., 2012), we observed dynamic spots along the supercoiled DNA molecule (highlighted with arrows in Figure 1b-top left and Video 1). These spots disappeared when DNA torsionally relaxed upon photo-induced nicking (Figure 1b-bottom left) (Ganji et al., 2016b), confirming that the spots were plectonemes induced by the supercoiling. Interestingly, the time-averaged fluorescence intensities of the supercoiled DNA were not homogeneously distributed along the molecule (Figure 1b-top right), establishing that plectoneme occurrence is position dependent. In contrast, torsionally relaxed (nicked) DNA displayed a featureless homogenous time-averaged fluorescence intensity (Figure 1b-bottom right).\n\n![Video 1.](https://cdn.elifesciences.org/articles/36557/elife-36557-video1.mp4.jpg)\n\n**Video 1.:** At 20 s after acquisition, the DNA was torsionally relaxed due to photo-induced nicking.\n\n### DNA sequence favors plectoneme localization at certain spots along supercoiled DNA\n\nUpon observing the inhomogeneous fluorescence distribution along the supercoiled DNA, we sought to understand if the average plectoneme position is dependent on the underlying DNA sequence. We prepared two DNA samples; the first contained a uniform distribution of AT-bases while the second contained a strongly heterogeneous distribution of AT-bases (Figure 1c, template1 and template2, respectively). In order to quantitatively analyze the plectoneme distribution, we counted the average number of plectonemes over time at each position on the DNA molecules and built a position-dependent probability density function of the plectoneme occurrence (from now onwards called plectoneme density; see Materials\u00a0and\u00a0methods for details). The plectoneme density is normalized to its average value across the DNA such that a density value above one indicates that the region is a favorable position for plectonemes relative to other regions within the DNA molecule. For both DNA samples, we observed a strongly position-dependent plectoneme density (Figure 1d). Strikingly, the plectoneme densities (Figure 1d) were very different for the two DNA samples. This difference demonstrates that plectoneme positioning is directed by the underlying DNA sequence. Note that we did not observe any position dependence in the intensity profiles when the DNA was torsionally relaxed, indicating that the interaction of dye is not responsible for the dependence (Figure 1\u2014figure supplement 2a).\n\nThe plectoneme kinetics showed a similar sequence dependence, as the number of events for nucleation and termination of plectonemes was also found to be position dependent with very different profiles for each DNA samples (Figure 1\u2014figure supplement 2b). Importantly, at each position of the DNA, the number of nucleation and termination events were the same, showing that the system was at equilibrium. Because the aim of our study is to examine the sequence\u2013structure relationship in supercoiled DNA, which is an equilibrium property, we focus on analyzing the plectoneme density profiles for a variety of sequences.\n\n### Systematic examination of plectoneme pinning at various putative DNA sequences\n\nWe first considered a number of potential links between DNA sequence and plectoneme density. Note that in particular the sharply bent apical tips of plectonemes (Figure 1A) create an energy barrier to plectoneme formation. This barrier could be reduced if the DNA was able to locally melt or kink, if a specific region of DNA was more flexible than others, or if the DNA sequence was intrinsically curved already before the plectoneme formed. Because all of these properties (duplex stability, flexibility, and curvature) are influenced by the AT-content, we first examined the relationship between AT-content and the measured plectoneme densities in Figure 1c\u2013d. Indeed, the plectoneme density showed a weak correlation with the local AT-percentage (R\u00a0=\u00a00.33, Figure 2\u2014figure supplement 1a).\n\nIn order to unambiguously link changes in plectoneme density to specific sequences of arbitrary size, we developed an assay where we inserted various short DNA segments carrying particular sequences of interest in the middle of the homogeneous template1 (Figure 2a and Figure 2\u2014figure supplement 1b). This allowed us to easily determine the influence of the inserted sequence on plectoneme formation by measuring changes in the plectoneme density at the insert relative to the rest of the DNA strand. We examined three different AT-rich inserts: seqA, seqB, and seqC with\u00a0~60%,~65%, and\u00a0~60% AT, respectively (Figure 2a). Interestingly, all three samples showed a peak in the plectoneme density at the position of insertion, further supporting the idea that AT-rich sequences are preferred positions for plectonemes (Figure 2b). Furthermore, when we shortened or lengthened one AT-rich sequence (seqA), we found that the probability of plectoneme pinning (i.e. the area under the peak) scaled with the length of the AT-rich fragment (Figure 2\u2014figure supplement 1b\u2013e). Overall, these results suggest that plectoneme preferentially form at AT-rich regions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36557/elife-36557-fig2-v2.jpg)\n\n**Figure 2.:** (a) Top: Schematics showing DNA constructs with AT-rich fragments inserted in template1. Three different AT-rich segments, SeqA (400 bp), SeqB (500 bp), and SeqC (1 kb), are inserted at 8.8 kb from Cy5-end in template1. Bottom: AT-contents of these DNA constructs zoomed in at the position of insertion. (b) Averaged plectoneme densities measured for the AT-rich fragments denoted in (A). The insertion region is highlighted with a gray box. (n\u00a0=\u00a043, 31, and 42 for SeqA, SeqB, and SeqC, respectively) (c) Schematics of DNA constructs with a copy of the 1 kb region near the right end of template1 where strong plectoneme pinning is observed (seqCopy). Poly(A)-tracts within the copied region are then mutated either by replacing A bases with G or C (A-G mutation), or with T (A-T mutation). (d) Plectoneme densities measured for the sequences denoted in (c). Plectoneme density of template1 is shown in black, seqCopy in green, A-G mutation in blue, and A-T mutation in red. (n\u00a0=\u00a045, 34, and 42 for seqCopy, A-G mutation, and A-T mutation, respectively) (e) Schematics of DNA constructs with mixed A/T stretches modified from seqB. The insert is modified either by shuffling nucleotides within the insert to destroy all the poly(A) and poly(A/T)-tracts (Base shuffle), or by re-positioning the poly(A) or poly(A/T)-tracts (AT-tracts shuffle) \u2013 both while maintaining the exact same AT content across the insert. (f) Plectoneme densities measured for the sequences denoted in (e). seqB from panel (b) is plotted in green; base shuffle data are denoted in purple; AT-tracts shuffle in orange. (n\u00a0=\u00a024, and 26 for Base shuffle, and AT-tracts shuffle, respectively).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36557/elife-36557-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Correlation between plectoneme density and AT-content.\u00a0Plectoneme densities at each position in Figure 1d were plotted against local AT-contents for template 1 (red dots) and template 2 (black dots). Pearson correlation coefficient calculated for template 2 is 0.33. (b\u2013e) Plectoneme pinning at AT-rich regions with different lengths. Schematics of DNA constructs carrying an AT-rich fragment (B) and their AT contents (C). The AT-rich fragments with different length are indicated by different colors both in the schematics and the plots. The AT percentage were calculated with 300 bp windows. (d) Plectoneme densities measured with the AT-rich fragments denoted in (b). Position 0 kb indicates the center location of the inserted AT-rich sequences. (n\u00a0=\u00a015, 21, 43, 21, and 22 for 0.25, 0.5, 1, 3, 3.9 kb, respectively). (e) Increase in the probability of plectoneme pinning plotted against the length of the AT region. The probability is calculated from the area below the center peak (with respect to the base line) in the plectoneme density curves in (d). (f) Effect of ionic strength on the plectoneme pinning. Plectoneme density measured for seqB at 150 mM NaCl (blue), as compared to the data at 20 mM NaCl (green). (n\u00a0=\u00a018 for 150 mM NaCl).\n\nHowever, it is clear that AT-content alone cannot be the only factor that sets the plectoneme pinning. For example, the right-end of template1 exhibits a region that pins plectonemes strongly (Figure 1d-top, arrow), even though this region is not particularly AT-rich (Figure 1c). When we inserted a 1 kb copy of this pinning region into the middle of template1 (Figure 2c, \u2018seqCopy\u2019), we observed an additional peak in plectoneme density (Figure 2d, green). Given that this region had the same total AT-content as the surrounding DNA, we hypothesized that the particular distribution of A and T bases may be more important than the total AT-content alone. In particular, poly(A)-tracts influence the local mechanical properties of DNA and might be responsible for the plectoneme pinning, as suggested by early studies (Kremer et al., 1993; Pfannschmidt and Langowski, 1998; Tsen and Levene, 1997). To test this, we removed all poly(A) tracts of length four or higher by replacing alternative A-bases with G or C-bases in seqCopy (Figure 2c, \u2018A-G mutation\u2019). Upon this change, the peak in the plectoneme density indeed disappeared (Figure 2d, blue). However, when we instead disrupted the poly(A)\u22654 tracts by replacing them with alternating AT-stretches (Figure 2c, \u2018A-T mutation\u2019), we, surprisingly, did observe strong pinning (Figure 2d, red), establishing that plectoneme pinning does not strictly require poly(A)-tracts either. Hence, instead of poly(A)-tracts, it could be possible that stretches consisting of either A and T (\u2018poly(A/T)-tracts\u2019) induce the plectoneme pinning. To test this hypothesis, we re-examined the seqB construct to test if long stretches of \u2018weak\u2019 bases (i.e. A or T) were the source of pinning. Here, we broke up all poly(A/T)\u22654 tracts (i.e. all linear stretches with a random mixture of A or T bases but no G or C bases) by shuffling bases within the seqB insert while keeping the overall AT-content the same. This eliminated plectoneme-pinning, consistent with the idea that poly(A/T) tracts were the cause (Figure 2e\u2013f, purple). However, if we instead kept all poly(A/T)\u22654 tracts intact, but merely rearranged their positions within the seqB insert (again keeping AT-content the same), this rearrangement abolished the pinning pattern (Figure 2f, orange), indicating that plectoneme pinning is not solely dependent on the presence of poly(A/T) stretches, but instead is dependent on the relative positions of these stretches.\n\nTaken together, this systematic exploration of various sequences showed that although pinning correlates with AT-content, we cannot attribute this correlation to AT-content alone, to poly(A)-tracts, or to poly(A/T)-tracts. Our data instead suggest that plectoneme pinning depends on a local mechanical property arising from the combined effect of the entire base sequences in a local region, and our shuffled poly(A/T) constructs suggest this property must be measured over distances greater than tens of nucleotides. Among the three mechanical properties we first considered, duplex stability, flexibility, and curvature, the duplex stability is unlikely to be a determinant factor for the plectoneme pinning because duplex stability is mostly determined by the overall AT/GC percentage rather than the specific distribution of bases in the local region.\n\n### Intrinsic local DNA curvature determines the pinning of supercoiled plectonemes\n\nTo obtain a more fundamental understanding of the sequence specificity underlying the plectoneme pinning, we developed a novel physical model based on intrinsic curvature and flexibility for estimating the plectoneme energetics (see Materials\u00a0and\u00a0methods for details). Notably, the major energy cost for making a plectoneme is spent in inducing a strong bend within the DNA in the plectoneme tip region. Our model estimates the energy cost associated with bending the DNA into the highly curved (~240\u00b0 arc) plectoneme tip (Marko and Neukirch, 2012). For example, at 3pN of tension (characteristic for our stretched DNA molecules), the estimated size of the bent tip is 73 bp, and the energy required to bend it by 240\u00b0 is very sizeable,~18 kBT (Figure 3a\u2013b). However, if a sequence has a high local intrinsic curvature or flexibility, this energy cost decreases significantly. For example, an intrinsic curvature of 60\u02da between the two ends of a 73 bp segment would lower the bending energy by a sizable amount,~8 kBT. Hence, we expect that this energy difference drives plectoneme tips to pin at specific sequences. We calculated local intrinsic curvatures at each segment along a relaxed DNA molecule using published dinucleotide parameters for tilt/roll/twist (Figure 3a and supplementary file 1) (Balasubramanian et al., 2009). The local flexibility of the DNA was estimated by summing the dinucleotide covariance matrices for tilt and roll (Lankas et al., 2003) over the length of the loop. Using this approach, we estimate the bending energy of a plectoneme tip centered at each nucleotide along a given sequence (Figure 3b). The predicted energy landscape is found to be rough with a standard deviation of about\u00a0~1 kBT, in agreement with a previous experimental estimate based on plectoneme diffusion rates (van Loenhout et al., 2012). We then used these bending energies to assign Boltzmann-weighted probabilities, $P_{B}=exp(\u2212\\frac{E_{loop}}{k_{B}T})$, for plectoneme tips centered at each base on a DNA sequence. This provided theoretically estimated plectoneme densities as a function of DNA sequence. Note that we obtained these profiles without any adjustable fitting parameters as the tilt/roll/twist and flexibility values were determined by dinucleotide parameters adopted from published literature. Although both intrinsic curvature and flexibility were included, the model predicts that the flexibility is unimportant and that intrinsic curvature clearly is the dominant factor in positioning plectonemes (Figure 3c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36557/elife-36557-fig3-v2.jpg)\n\n**Figure 3.:** (a) Ingredients for an intrinsic-curvature model that is strictly based on dinucleotide stacking. (Left) Cartoons showing the relative alignment between the stacked bases which are characterized by three modes: roll, tilt, and twist. (Middle) In the absence of variations in the roll, tilt, and twist, a DNA molecule adopts a strictly linear conformation in 3D space. (Right) Example of a curved free path of DNA that is determined by the slightly different values for intrinsic roll, tilt, and twist angles for every dinucleotide. (b) Schematics showing the energy required to bend a rigid elastic rod as a simple model for the tip of a DNA plectoneme. (c) Plectoneme density prediction based on intrinsic curvature and/or flexibility for seqCopy. Predicted plectoneme densities calculated based on either DNA flexibility (blue), only curvature (red), or both (black). Combining flexibility and curvature did not significantly improve the prediction comparing to that solely based on DNA curvature. (d) Predicted plectoneme densities for the DNA constructs carrying a copy of the end peak and its mutations, as in Figure 2b. Note the excellent correspondence to the experimental data in Figure 2b. (e\u2013f) Predicted (e) and measured (f) plectoneme density of a synthetic sequence (250 bp) that is designed to strongly pin a plectoneme. Raw data from the model are shown in black and its Gaussian-smoothed (FWHM\u00a0=\u00a01600 bp) is shown in blue in the left panel. Plectoneme densities measured from individual DNA molecules carrying the synthetic sequence (thin grey lines) and their averages (thick blue line) are shown in the right panel. (n\u00a0=\u00a037, and 21 for curved250, and flat500, respectively) (g\u2013h) Model-predicted (upper panels) and experimentally measured (bottom panels) plectoneme densities of 75 bp-long highly curved (g) and flat (h) inserts. (i) Model-predicted (upper panels) and experimentally measured (bottom panels) plectoneme densities of curved GC-rich sequences. (n\u00a0=\u00a036, 26, 21, 20, 52, and 29 for curve75-1, curve75-2, flat75-1, flat75-2, GCcurve1, and GCcurve2, respectively).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36557/elife-36557-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Raw data from the model are shown in orange, and their Gaussian-smoothed profiles (FWHM\u00a0=\u00a01600 bp) are shown in blue.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36557/elife-36557-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The dinucleotide parameters are taken from four different sources (Balasubramanian et al., 2009; Bolshoy et al., 1991; Morozov et al., 2009; Olson et al., 1998).\n\nThe predicted plectoneme densities (Figure 3d and Figure 3\u2014figure supplement 1) are generally found to be in very good agreement with the measured plectoneme densities. For example, the non-intuitive mutant sequences tested above (A-G and A-T mutations) are faithfully predicted by the model (Figure 2d and Figure 3d). More generally, we find that the model qualitatively represented the experimental data for the large majority of the sequences that were tested (Figure 3\u2014figure supplement 1). The simplicity of the model and the lack of fitting parameters make this agreement all the more striking. Only occasionally, we find that the model is too conservative, that\u00a0is while it performs well in avoiding false positives, it suffers from some false negatives (Figure 3\u2014figure supplement 1, SeqA, SeqB, and SeqC), possibly because of an insufficient accuracy in the dinucleotide parameters that we adopted from the literature. For example, different dinucleotide parameter sets from the currently available literature produce variations in the model predictions (Figure 3\u2014figure supplement 2). Alternative explanations for the false negatives are also possible, for\u00a0example that the local curvature is influenced by interactions spanning beyond nearest-neighbor nucleotides, or some unknown DNA sequences that stabilize twist rather than strand writhing or that are prone to base-flipping even in the positive supercoiling regime.\n\nAs a test of the predictive power of our model, we designed a 250 bp-long sequence (\u2018curved250\u2019) for which our model a priori predicted a high local curvature and strong plectoneme pinning (Figure 3e). When we subsequently synthesized and measured this construct, we indeed observed a pronounced peak in the plectoneme density (Figure 3f, blue). By contrast, when we constructed a 500 bp-long flat sequence without strongly curved regions (\u2018flat500\u2019), the model predicted no such peak, which again was verified experimentally (Figure 3f, black). These data demonstrate that the model can be used to identify potential plectoneme pinning sites in silico. Perhaps most strikingly, we found that a single highly curved DNA sequence of only 75 bp length was able to pin plectonemes (Figure 3g), consistent with the approximated tip loop size in our physical model (~73 bp). As a negative control, we did not observe any such pinning when we inserted a 75 bp-long flat DNA sequence (Figure 3h).\n\nFinally, we wanted to verify that the intrinsic curvature, and not the GC/AT content, is the major determinant for plectoneme formation. Given that the earlier examples in Figure 2f clearly showed that some but not all AT-rich sequences can pin plectonemes, we designed some specifically GC-rich (i.e., AT-poor) sequences that should pin plectonemes. Because of the distribution of wedge angles available, GC-rich sequences tend to produce less intrinsic curvature over\u00a0>10 bp sequences. To generate plectoneme pinning at a GC-rich sequence, we therefore inserted 8 repeats of a 75 bp-long GC-rich (~60%) insert in the middle of the flat500 sequence. As predicted by the model, the experimental data for this GC-rich curved sequence showed plectoneme pinning (Figure 3i), once more confirming that intrinsic curvature and not AT/GC content is the major determinant for plectoneme pinning.\n\n### Transcription start sites localize plectonemes in prokaryotic genomes\n\nGiven the success of our physical model for predicting plectoneme localization, it is of interest to examine if the model identifies areas of high plectoneme density in genomic DNA that might directly relate to biological functions. Given that our model associates plectoneme pinning with high curvature, we were particularly interested to see what patterns might associate with specific genomic regions. For example, in prokaryotes, curved DNA has been observed to localize upstream of transcription start sites (TSS) (Kanhere and Bansal, 2005; Olivares-Zavaleta et al., 2006; P\u00e9rez-Mart\u00edn et al., 1994). In eukaryotes, curvature is associated with the nucleosome positioning sequences found near promoters (Tompitak et al., 2017). However, given that our model requires highly curved DNA over long lengths of\u00a0~73 bp to induce plectoneme pinning, it was a priori unclear if the local curvature identified at promoter sites is sufficient to strongly influence the plectoneme density.\n\nWe first used the model to calculate the plectoneme density profile for the entire E. coli genome, revealing plectonemic hot spots spread throughout the genomic DNA (Figure 4a). Interestingly, we find that a substantial fraction of these hot spots are localized\u00a0~100 nucleotides upstream of all the transcription start sites (TSS) associated with confirmed genes in the RegulonDB database (Figure 4b, red) (Gama-Castro et al., 2016). We then performed a similar analysis of several other prokaryotic genomes (Figure 4b) (Cortes et al., 2013; Irla et al., 2015; Papenfort et al., 2015; Zhou et al., 2015). We consistently observe a peak upstream of the TSS, but the size of the peak varied substantially between species, indicating that different organisms rely on sequence-dependent plectoneme positioning to different extents. In one organism (C. crescentus), the signal was too weak to detect at all. To experimentally confirm that these sequences represent plectonemic hot spots, we inserted two of these putative plectoneme-pinning sites from E. coli into template1. Gratifyingly, we indeed observed a strong pinning effect for these sequences in our single-molecule assay (Figure 4c\u2013d).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36557/elife-36557-fig4-v2.jpg)\n\n**Figure 4.:** (a) The strength of plectoneme pinning calculated for the entire E. coli genome (4,639,221 bp; NC_000913). (b) Mean predicted plectoneme densities around transcription start sites (TSS) in prokaryotic genomes. The density profiles were smoothed over a 51 bp window. (c) Model-predicted and (d) experimentally measured plectoneme densities obtained for two selected TSS sites, TSS-rrsB and TSS-polA, which are E. coli transcription start sites encoding for 16S ribosomal RNA and DNA polymerase I, respectively. For comparison to experimental data, we smoothed the predicted plectoneme densities using a Gaussian filter (FWHM\u00a0=\u00a01600 bp) that approximates our spatial resolution. (n\u00a0=\u00a026, and 17 for TSS-rrsB, and TSS-polA, respectively) (e) Strength of plectoneme pinning calculated for the entire 12.1 Mb genome (i.e. all 16 chromosomes placed in sequential order) of S. cerevisiae (NC_001134). For quantitative comparison, we kept the radius of the outer circle the same as in (a). (f) Mean predicted plectoneme densities around the most representative TSS for each gene in several eukaryotic genomes. The density profiles are smoothed over a 51 bp window.\n\nFinally, we extended our analysis to eukaryotic organisms. Again we found plectonemic hotspots that were spread throughout the genome (Figure 4e). When averaging near the TSS (Dreos et al., 2017), we found a diverse range of plectoneme positioning signals (Figure 4f). While one organism (S. cervisiae) showed no detectable plectoneme positioning, most organisms showed both peaks and valleys indicating plectonemes were enriched but also depleted at different regions around the promoter. The features showed a weak periodicity consistent with the reported nucleosome repeat lengths (~150\u2013260 bp) (Jiang and Pugh, 2009).\n\n## Discussion\n\nIn this study, we reported direct experimental observations as well as a novel basic physical model for the sequence-structure relationship of supercoiled DNA. Our single-molecule ISD technique allowed a systematic analysis of sequences that strongly affect plectoneme formation. To explain the underlying mechanism, we developed a physical model that predicts the probability of plectoneme pinning, based solely on the intrinsic curvature and the flexibility of a local region of the DNA. In the positive supercoiling regime (where no partial duplex melting is expected for the physiological range of tensions and torques), we identified the intrinsic curvature over a\u00a0~\u00a070 bp range as the primary factor that determines plectoneme pinning, while the flexibility alters the mechanics only minimally. Examining full genomes, we found that plectonemes are enriched at promoter sequences in E. coli and other prokaryotes, which suggests a role of genetically encoded supercoils in cellular function. Our findings reveal how a previously unrecognized \u2018hidden code\u2019 of intrinsic curvature governs the localization of local DNA supercoils, and hence the organization of the three-dimensional structure of the genome.\n\nFor a long time, researchers wondered whether DNA sequence may influence the plectonemic structure of supercoiled DNA. Structural and biochemical approaches identified special sequence patterns such as poly(A)-tracts that indicated plectoneme pinning (Kremer et al., 1993; Laundon and Griffith, 1988; Pfannschmidt and Langowski, 1998; Tsen and Levene, 1997). These early studies suggested that highly curved DNA can pin plectonemes, but the evidence was anecdotal and restricted to a handful of example sequences and it was not possible to establish a general rule for sequence-dependent plectoneme formation. Our high-throughput ISD assay, however, generated ample experimental data that enabled a comprehensive understanding of the underlying mechanism of the sequence-dependent plectoneme pinning.\n\nOur physical modeling reveals that intrinsic curvature is the key structuring factor for determining the three-dimensional structure of supercoiled DNA. In contrast, although perhaps counter-intuitive, we found that the local flexibility is hardly relevant for plectoneme localization. Although highly flexible mismatched single-stranded regions have been shown to be able to act as a preferential position for plectoneme formation (Dittmore et al., 2017; Ganji et al., 2016b), the variations in the flexibility of duplex DNA due to sequence differences seem to produce very minor changes in the pinning probability.\n\nRemarkably, although only the energy required to form the limited tip-loop region of\u00a0~73 bp is considered in our modeling, the model is capable of strikingly good qualitative predictions. In occasional cases, the model failed to reproduce the experimental results, giving some false negative predictions. A full statistical mechanical modeling of the plectonemic structures distributed across the DNA molecule should further improve the predictive power and accuracy, but will require significant computational resources and time.\n\nSignificant intrinsic curvatures are encoded in genomic DNA, as evident in our scans of both prokaryotic and eukaryotic genomes, which indicates its biological relevance. In support of this idea, an in silico study indeed suggested that curved prokaryotic promoters may control gene expression (Gabrielian et al., 1999). Moreover, early in vivo studies showed that curved DNA upstream to the promoter site affects gene expression levels (Collis et al., 1989; McAllister and Achberger, 1989). These in vivo studies suggested that curved DNA facilitates binding of RNA polymerase, an idea that is further supported by sharply bent DNA structures found around bound RNAP (Rees et al., 1993; Tahirov et al., 2002; ten Heggeler and Wahli, 1985; Yin and Steitz, 2002). In addition to this direct interaction of RNA polymerase and curved DNA, our results suggest an indirect effect, as the same curved DNA can easily pin a plectoneme that can further regulate the transcription initiation and elongation by structural re-arrangement of the promotor and coding regions.\n\nOur analysis of prokaryotic genomes indicates that promoter sequences have evolved local regions with highly curved DNA that promote the localization of DNA plectonemes at these sites. There may be multiple reasons for this. For one, it may help to expose these DNA regions to the outer edge of the dense nucleoid, making them accessible to RNAP, transcription factors, and topoisomerases. Plectonemes may also play a role in the bursting dynamics of gene expression, since each RNAP alters the supercoiling density within a topological domain as it transcribes (Chong et al., 2014; Kouzine et al., 2013), adding or removing nearby plectonemes (Liu and Wang, 1987). In addition, by bringing distant regions of DNA close together, plectonemes may influence specific promoter-enhancer interactions to regulate gene expression (Benedetti et al., 2014). Finally, plectoneme tips may help RNA polymerase to initiate transcription, since the formation of an open complex also requires bending of the DNA (ten Heggeler-Bordier et al., 1992), a mechanism that was proposed as a universal method of regulating gene expression across all organisms (Travers and Muskhelishvili, 2007). The ability of our model to predict how mutations in the promoter sequence alter the plectoneme density opens up a new way to test these hypotheses.\n\nOur analysis of eukaryotic genomes showed a greater diversity of behavior. The spacing of the peaks suggests that plectonemes may play a role in positioning nucleosomes, consistent with proposals that nucleosome positioning may rely on sequence-dependent signals near promoters (Travers et al., 2010). It is also broadly consistent with the universal topological model of plectoneme-RNAP interaction at promoters (Travers and Muskhelishvili, 2007), which proposes that the plectoneme tip forming upstream of the TSS in eukaryotes is positioned by nearby nucleosomes. The plectoneme signal encoded by intrinsic curvature could therefore indirectly position the promoter plectoneme tip by helping to organize these nearby nucleosomes.\n\nIn our study, we investigated the sequence-dependent behavior of plectonemes in a positively supercoiled state, although the technique can be extended to study negative supercoiling as well. For negative supercoils, plectoneme pinning can be influenced by both sequence-induced local curvature and local melting, which are hard to disentangle. Furthermore, although theoretical methods have been developed for the sequence dependence of the duplex stability of negatively supercoiled DNA (Benham, 1990; Benham, 1992), torsion-induced melting has been shown to exhibit complicated properties (Vlijm et al., 2015). The model that we have developed for positive supercoils should not be very sensitive to the handedness of supercoiling, since the dinucleotide curvature parameters are not strongly perturbed at these torques. We therefore expect the model to also capture curvature-dependent effects on pinning of negative plectonemes too.\n\nThe above findings demonstrate that DNA contains a previously hidden \u2018code\u2019 that determines the local intrinsic curvature and consequently governs the locations of plectonemes. These plectonemes can organize DNA within topological domains, providing fine-scale control of the three-dimensional structure of the genome (Le et al., 2013). The model and assay described here make it possible both to predict how changes to the DNA sequence will alter the distribution of plectonemes and to investigate the DNA supercoiling behavior at specific sequences empirically. Using these tools, it will be interesting to explore how changes in this plectoneme code affect levels of gene expression and other vital cellular processes.\n\n## Materials and methods\n\n### Preparation of DNA molecules of different sequences\n\nFull sequences of all DNA molecules are given in Supplementary file 2. All DNA molecules except \u2018template 2\u2019 in Figure 1 were prepared by ligating four or five DNA fragments, respectively: 1) \u2018Cy5-biotin handle\u2019, 2) \u20188.4 kb fragment\u2019, [3) \u2018Sequence of Interest\u2019,] 4) \u201811.2 kb fragment\u2019, and 5) \u2018biotin handle\u2019 (Figure 1\u2014figure supplement 1b). The \u2018Cy5-biotin handle\u2019 and \u2018biotin handle\u2019 were prepared by PCR methods in the presence of Cy5-modified and/or biotinylated dUTP (aminoallyl-dUTP-Cy5 and biotin-16-dUTP, Jena Bioscience). The \u20188kb-fragment\u2019 and \u201811 kb fragment\u2019 were prepared by PCR on Unmethylated Lambda DNA (Promega). These fragments were cloned into pCR-XL using the TOPO XL PCR cloning kit (Invitrogen) generating pCR-XL-11.2 and pCR-XL-8.4 (Ganji et al., 2016b). The fragments were PCR amplified and then digested with BsaI restriction enzyme, respectively (Supplementary file 3). The \u2018Sequence of Interest\u2019 was made by PCR on different templates. Template two in Figure 1C-black and 1e was made from a digested fragment of an engineered plasmid pSuperCos-\u03bb1,2 with XhoI and NotI-HF (van Loenhout et al., 2012). The digested fragment was further ligated with biotinylated PCR fragments on XhoI side and a biotinylated-Cy5 PCR fragment on the NotI-HF (Supplementary file 4). All the DNA samples were gel-purified before use.\n\n### Dual-color epifluorescence microscopy\n\nDetails of our experimental setup are described previously (Ganji et al., 2016a; Ganji et al., 2016b). Briefly, a custom-made epifluorescence microscopy equipped with two lasers (532 nm, Samba, Cobolt and 640 nm, MLD, Cobolt) and an EMCCD camera (Ixon 897, Andor) is used to image fluorescently labeled DNA molecules. For the wide-field, epifluorescence-mode illumination on the sample surface, the two laser beams were collimated and focused at the back-focal plane of an objective lens (60x UPLSAPO, NA 1.2, water immersion, Olympus). Back scattered laser light was filtered by using a dichroic mirror (Di01-R405/488/543/635, Semrock) and the fluorescence signal was spectrally separated by a dichroic mirror (FF635-Di02, Semrock) for the SxO channel and Cy5 channel. Two band-pass filters (FF01-731/137, Semrock, for SxO) and FF01-571/72, Semrock, for Cy5) were employed at each fluorescence channel for further spectral filtering. Finally, the fluorescence was imaged on the CCD camera by using a tube lens (f\u00a0=\u00a0200 mm). All the measurements were performed at room temperature.\n\n### Intercalation-induced supercoiling of DNA (ISD)\n\nA quartz slide and a coverslip were coated with polyethlyleneglycol (PEG) to suppress nonspecific binding of DNA and SxO. 2% of the PEG molecules were biotinylated for the DNA immobilization. The quartz slide and coverslip were sandwiched with a double-sided tape such that a 100 \u00b5m gap between the slide and coverslip forms a shallow sample chamber with flow control. Two holes serving as the inlet and outlet of the flow were placed on the slide glass. Typically, a sample chamber holds 10 \u00b5l of solution.\n\nBefore DNA immobilization, we incubated the biotinylated PEG surface with 0.1 mg/ml streptavidin for 1 min. After washing unbound streptavidin by flowing 100 \u00b5l of buffer A (40 mM TrisHCl pH 8.0, 20 mM NaCl, and 0.2 mM EDTA), we flowed the end-biotinylated DNA diluted in buffer A into the sample chamber at a flow rate of 50 \u00b5l/min. The concentration of the DNA (typically\u00a0~10 pM) was empirically chosen to have an optimal surface density for single DNA observation. Immediately after the flow, we further flowed 200 \u00b5l of buffer A at the same flow rate, resulting in stretched, doubly tethered DNA molecules (Figure 1a and Figure 1\u2014figure supplement 1a) of which end-to-end extension can be adjusted by the flow rate. We obtained the DNA lengths of around 60\u201370% of its contour length (Figure 1\u2014figure supplement 2a), which corresponds to a force range of 2\u20134 pN (Ganji et al., 2016b). We noted that SxO does not exhibit any sequence preference when binding to relaxed DNA, allowing us to back out the amount of DNA localized within a diffraction-limited spot from the total fluorescence intensity.\n\nAfter immobilization of DNA, we flowed in 30 nM SxO (S11368, Thermo Fisher) in an imaging buffer consisting of 40 mM Tris-HCl, pH 8.0, 20 mM NaCl, 0.4 mM EDTA, 2 mM trolox, 40 \u00b5g/ml glucose oxidase, 17 \u00b5g/ml catalase, and 5% (w/v) D-dextrose. Fluorescence images were taken at 100 ms exposure time for each frame. The 640 nm laser was used for illuminated for the first 10 frames (for Cy5 localization), followed by continuous 532 nm laser illumination afterwards. From our previous study, we noted that SxO locally unwinds DNA and extends the contour length (Figure 1\u2014figure supplement 1a), but does not otherwise affect the mechanical properties of the DNA (Ganji et al., 2016b). Based on the same previous work and assuming that each intercalating dye reduces the twist at the local dinucleotide to zero, we estimate that roughly 1 SxO is bound on every 26 base-pairs of DNA. We note that the numbers of plectoneme nucleation and termination events along supercoiled DNA were equal (Figure 1\u2014figure supplement 2b), which is characteristic of a system at equilibrium. Furthermore, we verified that increasing the NaCl concentration from 20 mM to 150 mM NaCl did not result in any significant difference in the observed plectoneme density results, indicating that the plectoneme density is not dependent on the ionic strength (Figure 2\u2014figure supplement 1f).\n\n### Data analysis\n\nAnalysis of the data was carried out using custom-written Matlab routines, as explained in our previous report (Ganji et al., 2016b). Briefly, we averaged the first ten fluorescence images to determine the end positions of individual DNA molecules. We identify the direction of the DNA molecules by 640 nm illumination at the same field of view, which identifies the Cy5-labelled DNA end. Then, the fluorescence intensity of the DNA at each position along the length was determined by summing up 11 neighboring pixels perpendicular to the DNA at that position. The median value of the pixels surrounding the molecule was used to correct the background of the image. The resultant DNA intensity was normalized to the total intensity sum of the DNA for each frame to compensate for photo-bleaching of SxO. We recorded more than 300 frames, each taken with a 100 msec exposure time, and built an intensity kymograph by aligning the normalized intensity profiles in time. Supercoiled DNA intensity profiles, that\u00a0is\u00a0single lines in the intensity kymograph, were converted to DNA-density profiles by comparing the intensity profile of supercoiled DNA to that of the corresponding relaxed DNA. Specifically, the ratio between the cumulative intensities of all the pixels in the right and the left-hand sides of each position of the DNA was first determined. To find the genomic position (i.e. base pair position) of the peak, we compared this ratio with that obtained after torsional relaxation of the molecule of which the pixel position is the same with the genomic position under the given constant tension (Ganji et al., 2016b). The torsionally relaxed intensity profile was obtained after the plectoneme measurements by increasing the excitation laser power that yielded a photo-induced nick of the DNA.\n\nThe position of a plectoneme is identified by applying a threshold algorithm to the DNA density profile. A median of the entire DNA density kymograph was used as the background DNA density. The threshold for plectoneme detection was set at 25% above the background DNA density. Peaks that sustain at least three consecutive time frames (i.e.,\u2265300 ms) were selected as plectonemes. After identifying all the plectonemes, the probability of finding a plectoneme at each position (250 bp-long segment) along the DNA in base-pair space was calculated by counting the total number of plectonemes at each position (segment) divided by the total observation time. The probability density is then further normalized to its mean value across the DNA molecule to build a plectoneme density. Note that the plectoneme density represents the relative propensity of plectoneme formation at different regions within a DNA molecule, which is insensitive to the length of the DNA as well as the linking number. Typically, more than 20 DNA molecules were measured for each DNA sample and the averaged plectoneme densities were calculated with a weight given by the observation time of each molecule. The analysis code written in Matlab (The MathWorks, Inc.) is freely available from GitHub (Kim, 2018; copy archived at https://github.com/elifesciences-publications/Plectoneme_analysis).\n\n### Plectoneme tip-loop size estimation and bending energetics\n\nAn important component of our model is to determine the energy involved in bending the DNA at the plectoneme tip. We first estimate the mean size of a plectoneme tip-loop from the energy stored in an elastic polymer with the same bulk features of DNA. For the simplest case, we first consider a circular loop (360\u02da) formed in DNA under tension. The work associated with shortening the end-to-end length of DNA to accommodate the loop is\n\n$$\nW=rFN\n$$\n\nwhere F is the tension across the polymer, r is the base pair rise (0.334 nm for dsDNA), and N is the number of base pairs. The bending energy is\n\n$$\nE_{bend}=\\frac{2\\pi^{2}k_{B}TA}{rN}\n$$\n\nwhere kB is the Boltzmann constant, A is the bulk persistence length (50 nm for dsDNA). Hence, we obtain an expression for the total energy:\n\n$$\nE_{total}=rFN+\\frac{2\\pi^{2}k_{B}TA}{rN}=k_{B}T(CN+B_{360}/N)\n$$\n\nTaking the derivative of Etotal with respect to N and setting it to zero gives the formula:\n\n$$\nN=\\sqrt{\\frac{B_{360}}{C}}\n$$\n\nHere, the values of the constants are:\n\n$$\nC=\\frac{F}{12.16pN}\n$$\n\n\n\n$$\nB_{360}=2955\n$$\n\nSo, at 3 pN we get:\n\n$$\nN=\\sqrt{\\frac{B_{360}}{C}}=109\n$$\n\nIf the loop at the end of the plectoneme is held at the same length but only bent to form a partial circle, the work needed to accommodate the loop will remain the same but the bending energy will be lower, scaling quadratically with the overall bend angle. For a plectoneme tip, a 240\u02da loop is sufficient to match the angle of the DNA in the stem of the plectoneme. The preferred length of a 240\u02da loop is therefore:\n\n$$\nN=\\sqrt{\\frac{B_{240}}{C}}=73\n$$\n\nwhere:\n\n$$\nB_{240}=B_{360}(\\frac{240\u00b0}{360\u00b0})^{2}\n$$\n\n### Physical model predicting the plectoneme density\n\nA full model must explicitly account for the fact that DNA is not a homogeneous polymer. Instead, each DNA sequence has (1) intrinsic curvature and (2) a variable flexibility. Both 1 and 2 depend on the dinucleotide sequences at each location. Note also that we can bend the DNA along any vector normal to the path of the DNA, which describes a circle spanning the full 360\u02da surrounding the DNA strand. We must therefore specify the direction of bending \u03d5 when calculating the bend energy, and we define \u03d5 = \u03d5B to be the bend direction that aligns with the intrinsic curvature.\n\nThe intrinsic curvature can be estimated from the dinucleotide content of the DNA (Figure 3a). Several studies have attempted to measure the optimal set of dinucleotide parameters (i.e. tilt, roll, and twist) that most closely predict actual DNA conformations (Balasubramanian et al., 2009; Bolshoy et al., 1991; Morozov et al., 2009; Olson et al., 1998). We find that the parameter set by Balasubramanian et al., produces the closest match to our experimental data when plugged into our model (Balasubramanian et al., 2009). Using these parameters (see Supplementary file 1), we first calculate the winding ground state path traced out by the entire DNA strand. We then determine the intrinsic curvature, \u03b8(N,i), across a given stretch of N nucleotides centered at position i on the DNA by comparing tangent vectors at the start and end of that stretch. Tangent vectors are calculated over an 11 bp window (one helical turn,~3.7 nm). Note that the intrinsic curvature, defined by \u03b8(N,i), also determines the preferred bend direction \u03d5B.\n\nThe flexibility of the DNA also varies with position. The flexibility of the tilt and roll angles between neighboring dinucleotide has been estimated by MD simulations (Lankas et al., 2003). Using these numbers, we can add the roll-tilt covariance matrices for a series of nucleotides (each rotated by the twist angle) to calculate the local flexibility of a given stretch of DNA. The flexibility also depends on the direction of bending. The summed covariance matrix allows us to estimate a local persistence length A(N,I,\u03d5).\n\nBy combining the local bend angle \u03b8(N,i) and the local persistence length A(N,I,\u03d5), we are now able to calculate the energy needed to bend a given stretch of DNA to 240\u02da. When the DNA is bent in the preferred curvature direction, this bending energy becomes:\n\n$$\n\\frac{E_{bend}(N,i,\u03d5_{B})}{K_{B}T}=\u27ee\\frac{2}{3}\u27ef^{2}\\frac{2\\pi^{2}A(N,i,\u03d5_{B})}{0.334nm\u22c5N}\u27ee1\u2212\\frac{\\theta(N,i)}{240^{\u2218}}\u27ef^{2}\n$$\n\nMore generally, we can bend the DNA in any direction, in which case the bending energy can be calculated using the law of cosines:\n\n$$\n\\frac{E_{bend}(N,i,\u03d5)}{K_{B}T}=\u27ee\\frac{2}{3}\u27ef^{2}\\frac{2\\pi^{2}A(N,i,\u03d5)}{0.334nm\u22c5N}\u27ee1+\u27ee\\frac{\\theta(N,i)}{240^{\u2218}}\u27ef^{2}\u22122\u27ee\\frac{\\theta(N,i)}{240^{\u2218}}\u27efcos(\u03d5\u2212\u03d5_{B})\u27ef\n$$\n\nThe first formula is the special case when \u03d5 = \u03d5B.\n\nBecause both A(N,i, \u03d5) and \u03b8(N,i) are sequence dependent, the loop size and bend direction that minimizes the free energy will also be sequence dependent. Rather than trying to find the parameters that give a maximum likelihood at each position along the template, we find that it is more efficient to calculate the relative probabilities of loops spanning a range of sizes and bend directions. We first calculate the energy associated with each loop using:\n\n$$\n\\frac{E_{total}(N,i,\u03d5)}{k_{B}T}=\\frac{rF}{k_{B}T}N+\\frac{E_{bend}(N,i,\u03d5)}{k_{B}T}\n$$\n\nWe then assign each of these bending conformations a Boltzmann weight:\n\n$$\nW(N,i,\u03d5)=exp\u27ee\u2212\\frac{E_{total}(N,i,\u03d5)}{k_{B}T}\u27ef\n$$\n\nFinally, we sum over all the different bending conformations to get the total weight assigned to the formation of a plectoneme at a specific location i on the template:\n\n$$\nW_{tot}(i)=\\sum_{N,\u03d5}W(N,i,\u03d5)\n$$\n\nBecause the direction \u03d5 is a continuous variable and the length of the loop can range strongly, there are a very large number of bending conformations to sum over. However, because of the exponential dependence on energy, only conformations near the maximum likelihood value in phase space will contribute significantly to the sum. For an isotropic DNA molecule, the maximum likelihood should occur at N\u00a0=\u00a073 and \u03d5 = \u03d5B. We therefore sum over parameter values that span this point in phase space. Our final model sums over eight bending directions (i.e. at every 45\u00b0, starting from \u03d5 = \u03d5B) and calculates loop sizes over a range from 40 bp to 120 bp at 8 bp increments. We verified that the predictions of the model were stable if we increased the range of the loop sizes considered or increased the density of points sampled in phase space, implying that the range of values used was sufficient.\n\nFor a fair comparison to experimental data, all predicted plectoneme densities that are presented were smoothened using a Gaussian filter (FWHM\u00a0=\u00a01600 bp) that approximates our spatial resolution. The code for the model prediction is freely available from GitHub (Abbondanzieri, 2018; copy archived at https://github.com/elifesciences-publications/Plectoneme_prediction).\n",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "44f4699c-e3e5-4d1f-8904-f6fff40711bc",
+      "submission_id": "113aad26-8f3d-44ee-9051-66d21c3b85c4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael T Laub, Massachusetts Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36557.054](https://doi.org/10.7554/eLife.36557.054)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"DNA sequence encodes the position of DNA supercoils\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Naama Barkai as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe work here by Kim et al. describes a technically impressive approach to identify the relationship between DNA sequence and the positioning of DNA supercoils. In agreement with many earlier studies, the authors suggest that plectonemes are positioned by and formed at intrinsically curved DNA sequences. The authors additionally suggest that AT content and sequence flexibility contribute minimally, if at all, to supercoil positioning. Lastly, the authors develop a model and calculate plectoneme density across several genomes. Using this approach, they identify a correlation between curved sequences and transcriptional start site (TSS) location in several organisms and show that two of these sequences can indeed position supercoils in vitro. The assay and many of the underlying concepts have been previously reported, but the systematic study of diverse sequences and direct comparisons to a detailed model based on intrinsic curvature are, to our knowledge, novel. The work complements other recent studies that have explored pinning due to mismatches, general theory, and measurements based on overall DNA extension rather than direct imaging of plectonemes.\n\nAlthough the reviewers were generally enthusiastic, there were some issues that arose during review and discussion that should be addressed in a revision. The first of these will require additional experiments. The others could, but in some cases may also be dealt with through changes in the text and presentation of the data:\n\n1) While this work shows that AT content is not required for plectoneme formation, the authors' conclusion that the curvature is the predominant driver of supercoil formation is based on a limited number of sequence manipulations, with all insertions tested in a single longer context (template 1) and only one synthetic designed sequence tested after developing the model. A deeper analysis (changing the AT content, length, amount of curvature or eliminating curvature entirely) of their template is important to understand the sequence properties that are necessary for plectoneme formation. Since short 60-90 bp segments are sufficient for supercoil pinning (Kremer et al., 1993) and the authors' predict that a 73 bp region should be sufficient to induce pinning, shorter segments than the ones presented (250-450 bp Figure 3E, 4C) should be directly tested. Working with a GC-rich template, in particular, would improve the generality of the results.\n\n2) Related to the point above, the authors state that \"the model qualitatively represented the experimental data for all sequences that were tested\", but it appears this comparison is only shown for a limited subset of the sequences. Given that the paper is centrally focused on proposing a general model, it would be appropriate to show comparisons with all sequences, to facilitate evaluation of the model's successes and limitations. In particular, it does not seem that model predictions are shown for about a dozen of the sequence variants for which experiments are reported:\n\n\u2013 template 2\n\n\u2013 template 1 + seqA, seqB, seqC;\n\n\u2013 seqB with base shuffling and with AT-tract shuffling (the latter in particular is a central experiment for the paper)\n\n\u2013 template 1 + variable length insertions (.25, 1, 2, 3, 3.9 kb)\n\n3) The Introduction of the manuscript is somewhat misleading. An existing model in the field is that curved sequences induce supercoil formation (many of these papers are cited in the manuscript, see Kremer et al., 1993, Laundon and Griffith, 1988, Pfannschmidt and Langowski, 1998, Tsen and Levene, 1997, and Pavlicek et al., 2004, among others), however the authors do not acknowledge this. The authors are correct that a major shortcoming of these earlier works is their use of phased AT-tracts in generating a curved sequence, however, the introduction should be written to clarify this for the reader. Some of the references are also misattributed. In the second paragraph of the Introduction, Eslami-Mossallam et al., 2016, Pasi and Lavery, 2016, and Wang et al., 2017, are computational studies not biochemical and structural studies, while Kremer et al., 1993, Laundon and Griffith, 1988, Pfannschmidt and Langowski, 1998, and Tsen and Levene, 1997, used biochemical and structural approaches in addition to in silico modeling.\n\n4) How the plectoneme density (e.g., Figure 1D) is calculated was buried in the Materials and methods and the prior paper from this group, making it a little difficult to understand what was done. Given the centrality of plectoneme density plots, it would be useful for the definition, calculation procedure, and motivation for choosing this metric to be explained clearly up front. The Materials and methods mention the calculation of the size of each plectoneme (how much writhe is constrained in the molecule at each position) but it is unclear whether the plectoneme size is ever used in any of the reported analysis. Relatedly, how do AT-content, curvature, and other sequence features affect plectoneme formation/termination kinetics and the amount of writhe per plectoneme? Finally, can the authors quantify sequence effects on plectoneme \"slithering\" (diffusion)? They mention that the model predicts the expected degree of roughness to explain plectoneme diffusion rates, but do not comment on whether sequence differences cause predictable changes to these rates.\n\n5) The experiments here are performed in the presence of positive supercoiling. There could be important differences under negative supercoiling, relevant to biological contexts. For example, the authors present evidence for intrinsic curvature as a dominant contributor to sequence-dependent plectonemic pinning. An alternative proposal (Matek et al.) is that duplex stability plays an important role, via the formation of plectoneme tip bubbles. If these occur, they are expected to occur more readily in negatively supercoiled DNA, which favors strand separation. Ideally, the authors would provide any evidence addressing whether plectoneme pinning occurs at the same locations/with the same sequence determinants for positively and negatively supercoiled DNA. Clearly the high-throughput assay used here can only interrogate positively supercoiled DNA, so this would require a lower-throughput assay such as side-stretching magnetic tweezers + fluorescence. More generally, it would be interesting to see the predictions of a fully developed local denaturation model compared with experiments \u2013 for the conditions reported here, the authors dismiss this kind of model on the basis of the AT-tract shuffling experiment, and do not consider it further. Although additional data would be ideal, and perhaps the authors already have such data. At a minimum, the authors should revise the text to be more cautious about generalizing to negative supercoils, and they should discuss possible differences between negative and positive supercoiling.\n\n6) Can the DNA structures that form plectonemes transition to a change in twist? This question arises in part from a related point or question, which is what the authors envision in terms of plectoneme formation in the context of eukaryotic chromatin? It is difficult to imagine there generally being sufficient \"free\" DNA to form plectonemes on a chromatinised template in eukaryotic cells. It would be interesting to consider and discuss how much space a plectoneme needs to form.\n\n7) The authors suggest that plectonemes are enriched at TSS. This seems overly speculative unless the authors can include additional information/experiments. For example, the correlation between curved sequences and TSS could be due to promoters evolving curved sequences to increase RNA polymerase binding or activity, rather than plectoneme formation per se. Insertion of a curved sequence upstream of the -35 element has been shown to increase affinity for RNA polymerase in vitro on a linear template in the absence of supercoiling (Nickerson et al., 1995). The authors' argument would be strengthened if they could show plectoneme formation on these sequences in vivo or a relationship between plectoneme formation and RNA polymerase binding/activity in vitro. Unless such data are included (and we recognize it may be beyond the scope of this paper), the authors should at least tone down some statements in this vein, e.g. in the Abstract where it says \"\u2026and experimentally verify that plectonemes localize directly upstream\u2026\".\n\n8) The experiments here are necessarily performed on DNA with intercalated dye. While the authors argue on the basis of prior work that overall mechanical properties of DNA are minimally affected by the intercalator, can they rule out that sequence-specific observations are affected by the dye? MT tweezers assays in the absence of dye cannot directly report on plectoneme locations, but can detect signatures of strong pinning sequences \u2013 could targeted key predictions be tested in this kind of assay? On this point the authors are encouraged to provide new data, if easily obtained, or at least discuss the caveats in a revised manuscript.\n\n9) The authors should discuss the assumptions and approximations involved in predicting plectoneme probabilities solely on the basis of tip-loop energetics. Their model falls short of a complete statistical mechanical treatment that would model partitioning of linking number among plectonemes under imposed constraints across the full molecule, and will for example fail to capture position-dependent effects in which the growth of a plectoneme pinned near the end of the molecule is limited by the available DNA, which can favor the formation of a plectoneme elsewhere in the DNA to absorb more linking number (see Bramarchi, Dittmore, et al., 2018).\n\n10) The authors see no effect of changing the ionic strength on the plectonemic density profile. Can they comment on whether this was expected? Have they analyzed whether ionic strength affects the frequency of observing one vs. multiple plectonemes?\n\n11) In the Abstract, the statement \"We\u2026 verify that plectonemes localize directly upstream of transcriptional start sites\" may easily be misread to imply that this measurement has been made in the context of the chromosome. It would of course increase the impact of the paper if plectonemic pinning and/or functional effects of changing the identified sequences could be detected in cells, but that reasonably lies outside the scope of this paper.\n\n12) For a title, is \"DNA sequence encodes the position of plectonemes\" more accurate as this is what the authors are measuring?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"DNA sequence encodes the position of DNA supercoils\" for further consideration at eLife. Your revised article has been favorably evaluated by Naama Barkai as the Senior Editor, and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below in the individual reviews. As you'll see, two of the reviewers both emphasize the need for greater attention to detail in discussing some of the results and providing appropriate qualifications and relevant caveats. Please carefully and fully address all of the issues raised by the reviewers in a revised manuscript.\n\nReviewer #1:\n\nThe authors have addressed my earlier comments and have significantly improved the manuscript with the addition of new experimental data and further discussion of their results. As noted below, I feel that there are several points in the manuscript that could potentially lead to misunderstandings for the reader and should be clarified.\n\n1) The authors suggest that intrinsic curvature is the major determinant of plectoneme pinning. However, since formation of negative plectonemes is also dependent on the duplex stability, intrinsic curvature may not be the primary mechanism that determines where negative plectonemes are localized. Unless the authors provide experimental data on negatively supercoiled plectonemes, the authors should be careful with their statements such as \"intrinsic curvature over a ~70bp range as the primary factor that determines plectoneme pinning\u2026\"\n\n2) The authors suggest that their model fails to predict pinning in SeqA, SeqB, and SeqC because of \"an insufficient accuracy in the dinucleotide parameters that we adopted from the literature or because the curvature is influenced by interactions spanning beyond nearest-neighbor nucleotides.\" It is not clear to me that there are not alternative explanations, such as these pinnings being influenced by sequences that are prone to base-flipping or that are able to stabilize twist, or potentially a combination of all the above effects. I think the authors should be more agnostic about the possible mechanisms and acknowledge in the discussion that there are likely other sequence determinants that regulate plectoneme pinning.\n\n3) Given that the authors' model identifies many false-negative pinning sequences, it seems a bit premature to suggest that organisms where their model does not detect strong pinning sequences in the TSS \"rely on sequence-dependent plectoneme positioning to different extents\". It seems just as likely that these organisms utilize the same as SeqA, SeqB, and SeqC, which is not captured in the authors' model. The authors' argument would be strengthened if they showed in their ISD experiments that C. crescentus or S. cerevisiae promoters indeed do not contain pinning sequences. Additionally, are SeqA, SeqB, and SeqC sequences derived from genomic DNA? If so, this would further support the idea that there are additional mechanisms that regulate pinning in vivo.\n\n4) The sentence \"Our data instead suggests that plectoneme pinning depends on the specific distribution of bases, and our shuffled poly(A/T) constructs suggest this distribution must be measured over distances greater than tens of nucleotides\" should be modified to reflect the authors' subsequent results. As shown later in this manuscript, plectoneme pinning (1) does not depend on a \"specific\" distribution of bases, instead being dependent on the curvature of DNA, and (2) occurs on a ~70 bp length scale.\n\n5) Subsection \u201cSystematic examination of plectoneme pinning at various putative DNA sequences\u201d, last two paragraphs. In this section, several hypotheses are presented and discarded and it is not clear to the reader what is the \"correct\" model (not solely dependent on AT-character, poly(A/T), etc.). It would be easier for the reader if the statements such as \"seemingly confirming our hypothesis\" are eliminated since these statements are immediately contradicted in the text.\n\nReviewer #2:\n\nI am satisfied with the revisions.\n\nReviewer #3:\n\nAbbondanzieri and Dekker and coworkers have improved their manuscript and made their claims easier to evaluate by including experiments on new sequences, presenting additional calculation results, and providing additional context in the text. I favor publication, but I think the authors could do even more to qualify their claims and point out the limitations of the current model \u2013 this is an important advance but not a definitive determination of a \"plectoneme code\".\n\nI appreciate the inclusion of additional model predictions in Figure 3\u2014figure supplement 1. As far as I can tell they still haven't included the complete list we asked for \u2013 the variable length AT-rich insertions (series of constructs from Figure 2\u2014figure supplement 1) don't seem to be there, and would be a valuable addition to gauge (albeit anecdotally) the extent of the \"false negative\" effect seen in SeqA/SeqB/SeqC. The latter false negatives could be emphasized more as a caveat in the text, noting that SeqB was used as the basis of shuffling experiments that the authors relied on to motivate the construction of the model, but in fact the difference between SeqB and its shuffled variants is not captured by the model since the SeqB peak is not predicted.\n\nClearly, both experimental and theoretical investigation of the negative supercoiling regime is an important future direction for this work. When discussing the limitations of the current model as applied to negative supercoiling, it is important to remind the reader of the biological importance of negative supercoiling, e.g. mesophilic bacterial genomes have strongly net negative superhelical density. When arguing that additional theory is needed to describe sequence-dependent strand separation under tension, it would be appropriate to mention existing theoretical work e.g. from Benham on predicting sites of supercoiling-induced denaturation.\n\nIn the text, \"a full statistical mechanical modeling of the entire plectonemic structure\" should probably be something like \"\u2026of the entire DNA molecule\" or \"\u2026of plectonemic structures distributed across the DNA molecule\".\n\nI am surprised that the authors did not expect ionic strength effects \u2013 e.g. as noted in other studies low ionic strength can change the distribution of plectonemes, favoring multiple plectonemic domains \u2013 but I don't think it is critical to include additional experiments to explore that regime.\n",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b967ba1b-0725-46c9-bed0-6aaa73789bf1",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C1",
+      "claim": "Torsional strain imposed by DNA-processing enzymes induces supercoiling of DNA, which triggers large structural rearrangements through the formation of plectonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "Torsional strain imposed by DNA-processing enzymes induces supercoiling of DNA, which triggers large structural rearrangements through the formation of plectonemes (Vinograd et al., 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vinograd et al., 1965",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "970fafa0-765f-4286-83a1-81f30cffe42b",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C2",
+      "claim": "Supercoiling plays an important role in the regulation of gene expression in both prokaryotes and eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent biochemical studies suggest that supercoiling plays an important role in the regulation of gene expression in both prokaryotes (Le et al., 2013) and eukaryotes (Naughton et al., 2013; Pasi and Lavery, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Le et al., 2013; Naughton et al., 2013; Pasi and Lavery, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "373f4319-2a67-4bf5-bbef-7f83f632b3c5",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C3",
+      "claim": "Chromatin is organized into independent topological domains with varying degrees of torsional strain.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to tailor the degree of supercoiling around specific genes, chromatin is organized into independent topological domains with varying degrees of torsional strain (Naughton et al., 2013; Sinden and Pettijohn, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Naughton et al., 2013; Sinden and Pettijohn, 1981",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "31737e18-1472-4334-9ac0-5d7b172cecf9",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C4",
+      "claim": "Domains that contain highly transcribed genes are generally underwound whereas inactive genes are overwound.",
+      "claim_type": "EXPLICIT",
+      "source": "Domains that contain highly transcribed genes are generally underwound whereas inactive genes are overwound (Kouzine et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kouzine et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "70919e2d-0042-41ed-9a4f-725d76cba8ed",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C5",
+      "claim": "Transcription of a gene transiently alters the local supercoiling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, transcription of a gene transiently alters the local supercoiling (Kouzine et al., 2013; Naughton et al., 2013; Peter et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kouzine et al., 2013; Naughton et al., 2013; Peter et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "3e415746-20d0-48f7-ba1a-1f087bb7fad3",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C6",
+      "claim": "Torsional strain influences the rate of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "while, in turn, torsional strain influences the rate of transcription (Chong et al., 2014; Liu and Wang, 1987; Ma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chong et al., 2014; Liu and Wang, 1987; Ma et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "aea28877-6f63-418e-a87b-8bd140b46f81",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C7",
+      "claim": "Supercoiling has been acknowledged as a key component of the spatial architecture of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, supercoiling has been acknowledged as a key component of the spatial architecture of the genome (de Wit and de Laat, 2012; Dekker et al., 2013; Ding et al., 2014; Neuman, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to de Wit and de Laat, 2012; Dekker et al., 2013; Ding et al., 2014; Neuman, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "d7c73f4e-6b84-429c-bdbf-72ad337c0560",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C8",
+      "claim": "The DNA sequence influences its local mechanical properties such as bending stiffness, curvature, and duplex stability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the DNA sequence influences its local mechanical properties such as bending stiffness, curvature, and duplex stability, which in turn alter the energetics of plectoneme formation at specific sequences (Dittmore et al., 2017; Irobalieva et al., 2015; Matek et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dittmore et al., 2017; Irobalieva et al., 2015; Matek et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "98c3c60d-1ab1-43fe-8421-6ef393b3a8aa",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C9",
+      "claim": "The plectonemic structure of DNA can be influenced by the sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Various indications that the plectonemic structure of DNA can be influenced by the sequence were obtained from biochemical and structural studies (Kremer et al., 1993; Laundon and Griffith, 1988; Pfannschmidt and Langowski, 1998; Tsen and Levene, 1997) as well as from work performed in silico (Eslami-Mossallam et al., 2016; Pasi and Lavery, 2016; Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kremer et al., 1993; Laundon and Griffith, 1988; Pfannschmidt and Langowski, 1998; Tsen and Levene, 1997; Eslami-Mossallam et al., 2016; Pasi and Lavery, 2016; Wang et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "a6b516cd-f053-4882-832f-eae645dc71cd",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C10",
+      "claim": "Plectonemes may get localized to highly curved or flexible segments of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies suggested that plectonemes may get localized to highly curved or flexible segments of DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from previous studies mentioned in the text",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "605ab339-d600-475d-96ca-3e5cef28f1fa",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C11",
+      "claim": "Plectonemes are directly observable as intensity maxima along the DNA in the ISD assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Plectonemes are directly observable as intensity maxima along the DNA, from which their position along DNA can be extracted (see Figure 1a and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1a and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "4d00eb9b-8eb1-4219-955d-bcee8b1b4a86",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C12",
+      "claim": "There is a strong relationship between sequence and plectoneme localization.",
+      "claim_type": "EXPLICIT",
+      "source": "We find a strong relationship between sequence and plectoneme localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations described in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "b0e5e4fb-138d-49d0-9789-dbd20647b352",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C13",
+      "claim": "The local intrinsic curvature determines the relative plectoneme stability at different sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a model built on basic physics, we show that the local intrinsic curvature determines the relative plectoneme stability at different sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the physical model developed in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "22f525a7-4090-45ab-9c8a-4e7b401323c6",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C14",
+      "claim": "Plectonemes localize directly upstream of promoters in prokaryotic genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of several prokaryotic genomes indicates that plectonemes localize directly upstream of promoters, which we experimentally confirm for selected promotor sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on genome analysis and experimental confirmation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "faa84f6f-041c-42a9-9a94-540f3cb7d987",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C15",
+      "claim": "Dynamic spots observed along supercoiled DNA molecules are plectonemes induced by supercoiling.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies (Ganji et al., 2016b; van Loenhout et al., 2012), we observed dynamic spots along the supercoiled DNA molecule (highlighted with arrows in Figure 1b-top left and Video 1). These spots disappeared when DNA torsionally relaxed upon photo-induced nicking (Figure 1b-bottom left) (Ganji et al., 2016b), confirming that the spots were plectonemes induced by the supercoiling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observation and citations to Ganji et al., 2016b; van Loenhout et al., 2012",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "b9f0ff3c-8d6c-49fd-9c87-33c298e376f9",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C16",
+      "claim": "The time-averaged fluorescence intensities of supercoiled DNA are not homogeneously distributed along the molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the time-averaged fluorescence intensities of the supercoiled DNA were not homogeneously distributed along the molecule (Figure 1b-top right), establishing that plectoneme occurrence is position dependent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observation shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "5371a7e0-dc80-4b70-8e2b-08f749324cb2",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C17",
+      "claim": "Torsionally relaxed (nicked) DNA displays a featureless homogenous time-averaged fluorescence intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, torsionally relaxed (nicked) DNA displayed a featureless homogenous time-averaged fluorescence intensity (Figure 1b-bottom right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observation shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "017a86ad-8a2b-4df2-9919-500c39449e71",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C18",
+      "claim": "Plectoneme positioning is directed by the underlying DNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the plectoneme densities (Figure 1d) were very different for the two DNA samples. This difference demonstrates that plectoneme positioning is directed by the underlying DNA sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1d comparing two different DNA templates",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "ac2225bd-bafb-4d82-8286-576c1cc2cd5d",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C19",
+      "claim": "The interaction of dye is not responsible for the position-dependent plectoneme density.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that we did not observe any position dependence in the intensity profiles when the DNA was torsionally relaxed, indicating that the interaction of dye is not responsible for the dependence (Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observation shown in Figure 1\u2014figure supplement 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "ea3a01ab-69c0-4dda-b532-2194964e2326",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C20",
+      "claim": "The number of nucleation and termination events for plectonemes is position dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The plectoneme kinetics showed a similar sequence dependence, as the number of events for nucleation and termination of plectonemes was also found to be position dependent with very different profiles for each DNA samples (Figure 1\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "f9bac3d4-bf27-4e4b-87f9-3509b3e38b40",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C21",
+      "claim": "At each position of the DNA, the number of nucleation and termination events are the same, showing that the system is at equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, at each position of the DNA, the number of nucleation and termination events were the same, showing that the system was at equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of nucleation and termination events",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "e1edf165-875a-45fb-acdf-797935e08db8",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C22",
+      "claim": "The plectoneme density shows a weak correlation with the local AT-percentage (R = 0.33).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the plectoneme density showed a weak correlation with the local AT-percentage (R = 0.33, Figure 2\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 2\u2014figure supplement 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "c1a6ca2b-6ec3-49ed-a72e-c96109acf9dc",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C23",
+      "claim": "All three AT-rich inserts (seqA, seqB, and seqC) showed a peak in the plectoneme density at the position of insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all three samples showed a peak in the plectoneme density at the position of insertion, further supporting the idea that AT-rich sequences are preferred positions for plectonemes (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "d3e57b08-eb3b-43da-93dc-7334646c46bf",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C24",
+      "claim": "The probability of plectoneme pinning scales with the length of the AT-rich fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when we shortened or lengthened one AT-rich sequence (seqA), we found that the probability of plectoneme pinning (i.e. the area under the peak) scaled with the length of the AT-rich fragment (Figure 2\u2014figure supplement 1b\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1b\u2013e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "cf965381-6621-4c24-bd74-b2206bba2c7f",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C25",
+      "claim": "Plectoneme preferentially form at AT-rich regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results suggest that plectoneme preferentially form at AT-rich regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental results on AT-rich sequences",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "c622f034-a8bc-40e6-9da0-fcb9e52224b7",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C26",
+      "claim": "Removing all poly(A) tracts of length four or higher by replacing alternative A-bases with G or C-bases eliminates the peak in plectoneme density.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we removed all poly(A) tracts of length four or higher by replacing alternative A-bases with G or C-bases in seqCopy (Figure 2c, 'A-G mutation'). Upon this change, the peak in the plectoneme density indeed disappeared (Figure 2d, blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2c-d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "4a8ca109-0c01-4366-a065-1dd0660b649e",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C27",
+      "claim": "Disrupting poly(A)\u22654 tracts by replacing them with alternating AT-stretches still results in strong plectoneme pinning.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we instead disrupted the poly(A)\u22654 tracts by replacing them with alternating AT-stretches (Figure 2c, 'A-T mutation'), we, surprisingly, did observe strong pinning (Figure 2d, red), establishing that plectoneme pinning does not strictly require poly(A)-tracts either.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2c-d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "c72c070f-a3ed-4495-bfa9-a8973218fc9b",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C28",
+      "claim": "Breaking up all poly(A/T)\u22654 tracts by shuffling bases within the seqB insert while keeping the overall AT-content the same eliminates plectoneme-pinning.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we broke up all poly(A/T)\u22654 tracts (i.e. all linear stretches with a random mixture of A or T bases but no G or C bases) by shuffling bases within the seqB insert while keeping the overall AT-content the same. This eliminated plectoneme-pinning, consistent with the idea that poly(A/T) tracts were the cause (Figure 2e\u2013f, purple).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2e-f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "e5546f72-a2a9-42e7-81d8-70c9da687134",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C29",
+      "claim": "Keeping all poly(A/T)\u22654 tracts intact but rearranging their positions within the seqB insert abolishes the pinning pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if we instead kept all poly(A/T)\u22654 tracts intact, but merely rearranged their positions within the seqB insert (again keeping AT-content the same), this rearrangement abolished the pinning pattern (Figure 2f, orange), indicating that plectoneme pinning is not solely dependent on the presence of poly(A/T) stretches, but instead is dependent on the relative positions of these stretches.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "c3bc4d11-0a1e-49bb-b941-54f1fdd1bc88",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C30",
+      "claim": "Plectoneme pinning depends on a local mechanical property arising from the combined effect of the entire base sequences in a local region.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data instead suggest that plectoneme pinning depends on a local mechanical property arising from the combined effect of the entire base sequences in a local region, and our shuffled poly(A/T) constructs suggest this property must be measured over distances greater than tens of nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from systematic experimental exploration of various sequences",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "c496ce93-bbe4-47f1-b6cd-e41531c412f5",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C31",
+      "claim": "Duplex stability is unlikely to be a determinant factor for plectoneme pinning because it is mostly determined by the overall AT/GC percentage rather than the specific distribution of bases in the local region.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the three mechanical properties we first considered, duplex stability, flexibility, and curvature, the duplex stability is unlikely to be a determinant factor for the plectoneme pinning because duplex stability is mostly determined by the overall AT/GC percentage rather than the specific distribution of bases in the local region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on reasoning about DNA mechanical properties",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "cd40bc5c-9c59-4b91-87c5-1f5e65afc9fb",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C32",
+      "claim": "The major energy cost for making a plectoneme is spent in inducing a strong bend within the DNA in the plectoneme tip region.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the major energy cost for making a plectoneme is spent in inducing a strong bend within the DNA in the plectoneme tip region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on physical modeling of plectoneme formation",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "2ecceca2-2450-4091-a207-103c08dbb7db",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C33",
+      "claim": "At 3pN of tension, the estimated size of the bent tip is 73 bp, and the energy required to bend it by 240\u00b0 is approximately 18 kBT.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at 3pN of tension (characteristic for our stretched DNA molecules), the estimated size of the bent tip is 73 bp, and the energy required to bend it by 240\u00b0 is very sizeable,~18 kBT (Figure 3a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on physical model calculations shown in Figure 3a-b",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "130caad0-3430-46da-a43d-8ab4a1710607",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C34",
+      "claim": "An intrinsic curvature of 60\u02da between the two ends of a 73 bp segment would lower the bending energy by approximately 8 kBT.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an intrinsic curvature of 60\u02da between the two ends of a 73 bp segment would lower the bending energy by a sizable amount,~8 kBT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on physical model calculations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "d26bdf90-1486-4b5b-8149-7bb2849fca2e",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C35",
+      "claim": "The predicted energy landscape for plectoneme formation is rough with a standard deviation of about ~1 kBT.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted energy landscape is found to be rough with a standard deviation of about ~1 kBT, in agreement with a previous experimental estimate based on plectoneme diffusion rates (van Loenhout et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model predictions and citation to van Loenhout et al., 2012",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "06b22061-1fc8-4ae9-8877-064f66e7e155",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C36",
+      "claim": "The model predicts that flexibility is unimportant and that intrinsic curvature is the dominant factor in positioning plectonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both intrinsic curvature and flexibility were included, the model predicts that the flexibility is unimportant and that intrinsic curvature clearly is the dominant factor in positioning plectonemes (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model predictions shown in Figure 3c",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "e897b98c-2e24-4157-b068-515d7f2c02fc",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C37",
+      "claim": "The predicted plectoneme densities are generally in very good agreement with the measured plectoneme densities.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted plectoneme densities (Figure 3d and Figure 3\u2014figure supplement 1) are generally found to be in very good agreement with the measured plectoneme densities.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison of model predictions with experimental data shown in Figure 3d and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "c9d0b866-70b1-43f7-b18d-16319edb1c61",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C38",
+      "claim": "The model qualitatively represents the experimental data for the large majority of the sequences that were tested.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, we find that the model qualitatively represented the experimental data for the large majority of the sequences that were tested (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison of model predictions with experimental data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "1ce9ac82-b57d-423d-bdb9-a34bde84ee51",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C39",
+      "claim": "The model is too conservative, performing well in avoiding false positives but suffering from some false negatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Only occasionally, we find that the model is too conservative, that is while it performs well in avoiding false positives, it suffers from some false negatives (Figure 3\u2014figure supplement 1, SeqA, SeqB, and SeqC), possibly because of an insufficient accuracy in the dinucleotide parameters that we adopted from the literature.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison of model predictions with experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "87ff5a92-d0af-44ef-bf26-d0df0ba64482",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C40",
+      "claim": "Different dinucleotide parameter sets from the currently available literature produce variations in the model predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, different dinucleotide parameter sets from the currently available literature produce variations in the model predictions (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model predictions using different parameter sets shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "f353219f-e793-47e9-b64a-08d67c72a9cc",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C41",
+      "claim": "A 250 bp-long sequence designed to have high local curvature shows strong plectoneme pinning.",
+      "claim_type": "EXPLICIT",
+      "source": "As a test of the predictive power of our model, we designed a 250 bp-long sequence ('curved250') for which our model a priori predicted a high local curvature and strong plectoneme pinning (Figure 3e). When we subsequently synthesized and measured this construct, we indeed observed a pronounced peak in the plectoneme density (Figure 3f, blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model prediction and experimental validation shown in Figure 3e-f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "536699c5-3c38-4aeb-841f-446ebfea0bab",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C42",
+      "claim": "A 500 bp-long flat sequence without strongly curved regions shows no plectoneme pinning peak.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, when we constructed a 500 bp-long flat sequence without strongly curved regions ('flat500'), the model predicted no such peak, which again was verified experimentally (Figure 3f, black).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model prediction and experimental validation shown in Figure 3f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "e754a0e5-d813-4360-a7e1-bef0a3374550",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C43",
+      "claim": "A single highly curved DNA sequence of only 75 bp length is able to pin plectonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps most strikingly, we found that a single highly curved DNA sequence of only 75 bp length was able to pin plectonemes (Figure 3g), consistent with the approximated tip loop size in our physical model (~73 bp).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 3g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "c6be4c17-bedd-42ed-a389-5a5c68a9b2c2",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C44",
+      "claim": "A 75 bp-long flat DNA sequence does not show plectoneme pinning.",
+      "claim_type": "EXPLICIT",
+      "source": "As a negative control, we did not observe any such pinning when we inserted a 75 bp-long flat DNA sequence (Figure 3h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 3h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "6194258a-e955-4217-9449-6dd49a91a501",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C45",
+      "claim": "GC-rich curved sequences can pin plectonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the model, the experimental data for this GC-rich curved sequence showed plectoneme pinning (Figure 3i), once more confirming that intrinsic curvature and not AT/GC content is the major determinant for plectoneme pinning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model prediction and experimental validation shown in Figure 3i",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "2f8680af-ef20-4d20-beba-0f9b1d297c7b",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C46",
+      "claim": "Intrinsic curvature and not AT/GC content is the major determinant for plectoneme pinning.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the model, the experimental data for this GC-rich curved sequence showed plectoneme pinning (Figure 3i), once more confirming that intrinsic curvature and not AT/GC content is the major determinant for plectoneme pinning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental validation of GC-rich curved sequences",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "51bcc1fc-f552-470b-944e-30f8aa22e1b0",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C47",
+      "claim": "In prokaryotes, curved DNA has been observed to localize upstream of transcription start sites (TSS).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in prokaryotes, curved DNA has been observed to localize upstream of transcription start sites (TSS) (Kanhere and Bansal, 2005; Olivares-Zavaleta et al., 2006; P\u00e9rez-Mart\u00edn et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kanhere and Bansal, 2005; Olivares-Zavaleta et al., 2006; P\u00e9rez-Mart\u00edn et al., 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "aca66395-ea59-4964-b4e4-854e2c830141",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C48",
+      "claim": "In eukaryotes, curvature is associated with the nucleosome positioning sequences found near promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, curvature is associated with the nucleosome positioning sequences found near promoters (Tompitak et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tompitak et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "0acf1e2e-a69f-4109-9569-bba617ab8a30",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C49",
+      "claim": "A substantial fraction of plectonemic hot spots in the E. coli genome are localized ~100 nucleotides upstream of all the transcription start sites (TSS).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that a substantial fraction of these hot spots are localized ~100 nucleotides upstream of all the transcription start sites (TSS) associated with confirmed genes in the RegulonDB database (Figure 4b, red) (Gama-Castro et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on genome analysis shown in Figure 4b and citation to Gama-Castro et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "a3272e15-998f-4fd8-af53-b684a007b992",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C50",
+      "claim": "A peak upstream of the TSS is consistently observed in several prokaryotic genomes, but the size of the peak varies substantially between species.",
+      "claim_type": "EXPLICIT",
+      "source": "We consistently observe a peak upstream of the TSS, but the size of the peak varied substantially between species, indicating that different organisms rely on sequence-dependent plectoneme positioning to different extents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of several prokaryotic genomes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "8802fb79-de2a-46ef-8fd1-d4595eef1a2b",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C51",
+      "claim": "In C. crescentus, the plectoneme positioning signal upstream of TSS was too weak to detect.",
+      "claim_type": "EXPLICIT",
+      "source": "In one organism (C. crescentus), the signal was too weak to detect at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on genome analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "5dca9270-9c3a-476f-a0d1-ed8bb18422e3",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C52",
+      "claim": "Two putative plectoneme-pinning sites from E. coli (TSS-rrsB and TSS-polA) show strong pinning effect in the single-molecule assay.",
+      "claim_type": "EXPLICIT",
+      "source": "To experimentally confirm that these sequences represent plectonemic hot spots, we inserted two of these putative plectoneme-pinning sites from E. coli into template1. Gratifyingly, we indeed observed a strong pinning effect for these sequences in our single-molecule assay (Figure 4c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental validation shown in Figure 4c-d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "2fa8b551-68e2-4ece-bfa8-03d2845e0f92",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C53",
+      "claim": "Most eukaryotic organisms show both peaks and valleys in plectoneme density around the promoter, indicating plectonemes are enriched but also depleted at different regions.",
+      "claim_type": "EXPLICIT",
+      "source": "While one organism (S. cervisiae) showed no detectable plectoneme positioning, most organisms showed both peaks and valleys indicating plectonemes were enriched but also depleted at different regions around the promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on genome analysis shown in Figure 4f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "f3bd472d-8a87-4be3-b8b0-c4ec2dbbf36d",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C54",
+      "claim": "The features of plectoneme density around eukaryotic promoters show a weak periodicity consistent with the reported nucleosome repeat lengths (~150\u2013260 bp).",
+      "claim_type": "EXPLICIT",
+      "source": "The features showed a weak periodicity consistent with the reported nucleosome repeat lengths (~150\u2013260 bp) (Jiang and Pugh, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on genome analysis and citation to Jiang and Pugh, 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "9a0d9ab4-c817-4ee5-97af-ced1e89c268c",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C55",
+      "claim": "Intrinsic curvature over a ~ 70 bp range is the primary factor that determines plectoneme pinning in the positive supercoiling regime.",
+      "claim_type": "EXPLICIT",
+      "source": "In the positive supercoiling regime (where no partial duplex melting is expected for the physiological range of tensions and torques), we identified the intrinsic curvature over a ~ 70 bp range as the primary factor that determines plectoneme pinning, while the flexibility alters the mechanics only minimally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on physical modeling and experimental validation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "3e43bfbf-c843-4534-9dc8-0349f49d79d7",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C56",
+      "claim": "Plectonemes are enriched at promoter sequences in E. coli and other prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining full genomes, we found that plectonemes are enriched at promoter sequences in E. coli and other prokaryotes, which suggests a role of genetically encoded supercoils in cellular function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on genome analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "0681fcd4-4a47-41e3-9df2-9ee8fdf5be90",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C57",
+      "claim": "A 'hidden code' of intrinsic curvature governs the localization of local DNA supercoils and the organization of the three-dimensional structure of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings reveal how a previously unrecognized 'hidden code' of intrinsic curvature governs the localization of local DNA supercoils, and hence the organization of the three-dimensional structure of the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the overall findings of the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "b165a552-82fe-4c43-b89a-248fe265b115",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C58",
+      "claim": "Highly flexible mismatched single-stranded regions can act as a preferential position for plectoneme formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although highly flexible mismatched single-stranded regions have been shown to be able to act as a preferential position for plectoneme formation (Dittmore et al., 2017; Ganji et al., 2016b), the variations in the flexibility of duplex DNA due to sequence differences seem to produce very minor changes in the pinning probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dittmore et al., 2017; Ganji et al., 2016b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "58257374-f045-4933-894f-4219e090755a",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C59",
+      "claim": "Variations in the flexibility of duplex DNA due to sequence differences produce very minor changes in the pinning probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Although highly flexible mismatched single-stranded regions have been shown to be able to act as a preferential position for plectoneme formation (Dittmore et al., 2017; Ganji et al., 2016b), the variations in the flexibility of duplex DNA due to sequence differences seem to produce very minor changes in the pinning probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the findings of the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "c8c55140-ad16-4f46-9d0d-c2c0af6b382b",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C60",
+      "claim": "Curved DNA upstream to the promoter site affects gene expression levels in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, early in vivo studies showed that curved DNA upstream to the promoter site affects gene expression levels (Collis et al., 1989; McAllister and Achberger, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Collis et al., 1989; McAllister and Achberger, 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "adcfdd8a-3aa0-4d88-97c9-b71c0e0d950d",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C61",
+      "claim": "Curved DNA facilitates binding of RNA polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "These in vivo studies suggested that curved DNA facilitates binding of RNA polymerase, an idea that is further supported by sharply bent DNA structures found around bound RNAP (Rees et al., 1993; Tahirov et al., 2002; ten Heggeler and Wahli, 1985; Yin and Steitz, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rees et al., 1993; Tahirov et al., 2002; ten Heggeler and Wahli, 1985; Yin and Steitz, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "d0526703-362d-484d-b5fd-ce85f9276459",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C62",
+      "claim": "Curved DNA can pin a plectoneme that can regulate transcription initiation and elongation by structural re-arrangement of the promotor and coding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this direct interaction of RNA polymerase and curved DNA, our results suggest an indirect effect, as the same curved DNA can easily pin a plectoneme that can further regulate the transcription initiation and elongation by structural re-arrangement of the promotor and coding regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the findings of the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "b6bda224-c8b9-4146-a050-159d32621c82",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C63",
+      "claim": "Promoter sequences have evolved local regions with highly curved DNA that promote the localization of DNA plectonemes at these sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of prokaryotic genomes indicates that promoter sequences have evolved local regions with highly curved DNA that promote the localization of DNA plectonemes at these sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on genome analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "acf90922-fcec-40ab-9a60-71b34b5ff337",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C64",
+      "claim": "Plectonemes may help to expose DNA regions to the outer edge of the dense nucleoid, making them accessible to RNAP, transcription factors, and topoisomerases.",
+      "claim_type": "EXPLICIT",
+      "source": "For one, it may help to expose these DNA regions to the outer edge of the dense nucleoid, making them accessible to RNAP, transcription factors, and topoisomerases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about the biological role of plectonemes",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "358fff97-f2d6-4f80-9df2-7e8b9c30bae0",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C65",
+      "claim": "Plectonemes may play a role in the bursting dynamics of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Plectonemes may also play a role in the bursting dynamics of gene expression, since each RNAP alters the supercoiling density within a topological domain as it transcribes (Chong et al., 2014; Kouzine et al., 2013), adding or removing nearby plectonemes (Liu and Wang, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning supported by citations to Chong et al., 2014; Kouzine et al., 2013; Liu and Wang, 1987",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "cd26dd14-a033-4948-bc4b-5ed913adb692",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C66",
+      "claim": "By bringing distant regions of DNA close together, plectonemes may influence specific promoter-enhancer interactions to regulate gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, by bringing distant regions of DNA close together, plectonemes may influence specific promoter-enhancer interactions to regulate gene expression (Benedetti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning supported by citation to Benedetti et al., 2014",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "0b9c1f6d-37ba-4477-90ac-6bac01984f5e",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C67",
+      "claim": "Plectoneme tips may help RNA polymerase to initiate transcription, since the formation of an open complex also requires bending of the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, plectoneme tips may help RNA polymerase to initiate transcription, since the formation of an open complex also requires bending of the DNA (ten Heggeler-Bordier et al., 1992), a mechanism that was proposed as a universal method of regulating gene expression across all organisms (Travers and Muskhelishvili, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning supported by citations to ten Heggeler-Bordier et al., 1992; Travers and Muskhelishvili, 2007",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "a5e2f539-282a-408b-836f-7237a2262d66",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C68",
+      "claim": "Plectonemes may play a role in positioning nucleosomes in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The spacing of the peaks suggests that plectonemes may play a role in positioning nucleosomes, consistent with proposals that nucleosome positioning may rely on sequence-dependent signals near promoters (Travers et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning supported by citation to Travers et al., 2010",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "c13aef24-037a-4d13-a52b-3043253c0f8a",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C69",
+      "claim": "The plectoneme signal encoded by intrinsic curvature could indirectly position the promoter plectoneme tip by helping to organize nearby nucleosomes in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The plectoneme signal encoded by intrinsic curvature could therefore indirectly position the promoter plectoneme tip by helping to organize these nearby nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning based on genome analysis",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "becb46e0-2750-4d60-836a-af50321a3e2f",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C70",
+      "claim": "For negative supercoils, plectoneme pinning can be influenced by both sequence-induced local curvature and local melting.",
+      "claim_type": "EXPLICIT",
+      "source": "For negative supercoils, plectoneme pinning can be influenced by both sequence-induced local curvature and local melting, which are hard to disentangle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on reasoning about negative supercoiling",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "bc20a608-a708-4999-88b9-dd048a755193",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C71",
+      "claim": "The model developed for positive supercoils should not be very sensitive to the handedness of supercoiling and is expected to capture curvature-dependent effects on pinning of negative plectonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "The model that we have developed for positive supercoils should not be very sensitive to the handedness of supercoiling, since the dinucleotide curvature parameters are not strongly perturbed at these torques. We therefore expect the model to also capture curvature-dependent effects on pinning of negative plectonemes too.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on reasoning about the model's applicability",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "8a6f335e-8726-41e9-9a1f-abc77ca30420",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C72",
+      "claim": "DNA contains a previously hidden 'code' that determines the local intrinsic curvature and consequently governs the locations of plectonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "The above findings demonstrate that DNA contains a previously hidden 'code' that determines the local intrinsic curvature and consequently governs the locations of plectonemes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the overall findings of the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "3535117a-90d9-4130-aebe-6571dda3edca",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C73",
+      "claim": "Plectonemes can organize DNA within topological domains, providing fine-scale control of the three-dimensional structure of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "These plectonemes can organize DNA within topological domains, providing fine-scale control of the three-dimensional structure of the genome (Le et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the findings of the study and citation to Le et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "470f4441-2653-4fca-ace5-75182532e0ff",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C74",
+      "claim": "SxO does not have any considerable effect on the mechanical properties of DNA under the experimental conditions used.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, SxO does not have any considerable effect on the mechanical properties of DNA under our experimental conditions (Ganji et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ganji et al., 2016b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "ff0b2e95-339c-460f-911b-902bbbfd3f24",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C75",
+      "claim": "Each intercalating dye (SxO) is bound on approximately every 26 base-pairs of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the same previous work and assuming that each intercalating dye reduces the twist at the local dinucleotide to zero, we estimate that roughly 1 SxO is bound on every 26 base-pairs of DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on estimation from previous work",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "294d8e3a-5d9b-4918-82b1-28834b108961",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C76",
+      "claim": "Increasing the NaCl concentration from 20 mM to 150 mM NaCl does not result in any significant difference in the observed plectoneme density results.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we verified that increasing the NaCl concentration from 20 mM to 150 mM NaCl did not result in any significant difference in the observed plectoneme density results, indicating that the plectoneme density is not dependent on the ionic strength (Figure 2\u2014figure supplement 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "6fcaab5d-a9bd-4399-98a2-df63ba8dc056",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C77",
+      "claim": "The plectoneme density is not dependent on the ionic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we verified that increasing the NaCl concentration from 20 mM to 150 mM NaCl did not result in any significant difference in the observed plectoneme density results, indicating that the plectoneme density is not dependent on the ionic strength (Figure 2\u2014figure supplement 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "e2a4057b-ac86-4ca8-bc98-24de5b1a0297",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "claim_id": "C79",
+      "claim": "The parameter set by Balasubramanian et al. produces the closest match to experimental data when plugged into the model.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the parameter set by Balasubramanian et al., produces the closest match to our experimental data when plugged into our model (Balasubramanian et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of model predictions using different parameter sets with experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "76b82949-248e-4600-8a23-4bcffac41a2d",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Using the ISD (intercalation-induced supercoiling of DNA) assay, the authors demonstrate that plectonemes form at specific positions along DNA molecules and that this positioning is sequence-dependent. Plectonemes appear as dynamic fluorescent spots that disappear upon torsional relaxation, and time-averaged fluorescence shows inhomogeneous distribution along supercoiled DNA but not relaxed DNA. The system is at equilibrium as nucleation and termination events are balanced at each position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C21 collectively establish the experimental foundation showing sequence-dependent plectoneme positioning. The ISD assay provides direct visualization (C11, C15), appropriate controls distinguish supercoiled from relaxed DNA (C16-C17, C19), comparison of two different templates demonstrates sequence dependence (C18), and equilibrium is confirmed by balanced kinetics (C20-C21). The experimental design is sound with proper controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "8696353b-e935-48ed-bc68-5b40458a9f9d",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Through systematic mutagenesis experiments, the authors demonstrate that plectoneme pinning correlates weakly with AT-content (R=0.33) but cannot be attributed solely to AT-content, poly(A)-tracts, or poly(A/T)-tracts. Instead, plectoneme pinning depends on a local mechanical property arising from the combined effect of base sequences over distances greater than tens of nucleotides, with the specific spatial arrangement of sequences being critical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C31 present a comprehensive systematic exploration ruling out simple sequence features. The experiments are well-designed with appropriate sequence manipulations (insertions, deletions, shuffling, mutations) that test specific hypotheses. The logic is sound: showing that AT-content correlates but is insufficient (C22-C25), that poly(A)-tracts are not required (C26-C27), and that spatial arrangement matters (C28-C29) collectively supports the conclusion about local mechanical properties (C30-C31).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "9dc77724-1b96-4c42-9cef-33127c705dfd",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors develop a physical model based on intrinsic DNA curvature and flexibility to predict plectoneme positioning. The model estimates that bending a 73 bp tip region by 240\u00b0 requires ~18 kBT, which can be reduced by ~8 kBT with 60\u00b0 intrinsic curvature. The model predicts that intrinsic curvature (not flexibility) is the dominant factor and shows generally very good qualitative agreement with experimental data, though it occasionally produces false negatives, possibly due to limitations in dinucleotide parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C40, C79 describe a physically motivated model with no free parameters that achieves good qualitative agreement with experiments. The model's predictions match most experimental data (C37-C38), and the authors appropriately acknowledge limitations (C39-C40). The physical reasoning about bending energetics is sound (C32-C34), and the model's prediction that curvature dominates over flexibility (C36) is testable and supported by data. The lack of fitting parameters strengthens confidence in the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "57ed3e1a-a69e-4b64-afee-508b780449e6",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors validate their model's predictive power by designing and testing synthetic sequences. A 250 bp curved sequence shows strong plectoneme pinning while a 500 bp flat sequence does not. Remarkably, even a 75 bp highly curved sequence pins plectonemes (consistent with the ~73 bp tip size), while a 75 bp flat sequence does not. GC-rich curved sequences also pin plectonemes, confirming that intrinsic curvature, not AT/GC content, is the major determinant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 provide strong prospective validation of the model through designed sequences. The experiments test specific predictions a priori (C41-C42), demonstrate the minimal length scale (C43-C44), and definitively separate curvature from AT-content effects using GC-rich sequences (C45-C46). This prospective validation is particularly compelling evidence for the model's validity and represents rigorous hypothesis testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "8dbe3bd0-450f-4da8-8f73-057fec2aced3",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genome-wide analysis reveals that plectonemic hot spots in E. coli and other prokaryotes localize ~100 nucleotides upstream of transcription start sites (TSS). This pattern varies in strength across species and is absent in C. crescentus. Two predicted E. coli promoter sequences (TSS-rrsB and TSS-polA) show strong experimental pinning, confirming that promoter sequences have evolved to position plectonemes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52, C56, C63 demonstrate biological relevance through genome analysis and experimental validation. The computational predictions are tested experimentally (C52), showing the model has predictive power for genomic sequences. The variation across species (C50-C51) suggests functional significance. However, the evolutionary claim (C63) is somewhat speculative as it infers selection without direct evidence, though the pattern is consistent with this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "cc8be0bb-a8ef-41af-b564-c265ff774126",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Analysis of eukaryotic genomes shows diverse plectoneme positioning patterns around promoters, with most organisms showing both enrichment and depletion at different regions. The features show weak periodicity consistent with nucleosome repeat lengths (~150-260 bp), suggesting plectonemes may play a role in nucleosome positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C54, C68-C69 present intriguing patterns in eukaryotic genomes, but the evidence is weaker than for prokaryotes. The periodicity is described as 'weak' (C54), one organism shows no signal, and the connection to nucleosomes is speculative (C68-C69). No experimental validation of eukaryotic sequences is provided, unlike the prokaryotic analysis. The claims are plausible but require additional experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "7eb99698-903a-4318-bf41-e0d093f60045",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors conclude that intrinsic curvature over ~70 bp is the primary determinant of plectoneme pinning in positive supercoiling, revealing a 'hidden code' that governs plectoneme localization and three-dimensional genome organization. Flexibility variations in duplex DNA produce only minor changes in pinning probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C57, C59, C72-C73 synthesize the major findings into overarching conclusions. These are well-supported by the experimental data (sequence manipulations), physical modeling (showing curvature dominates), and prospective validation (designed sequences). The claim about flexibility being unimportant (C59) is directly tested in the model (C36). The 'hidden code' language is somewhat promotional but accurately reflects that this sequence-structure relationship was not previously well-characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "a552436e-f062-4df3-8967-ff75565efd71",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose multiple mechanisms by which plectonemes at promoters could regulate gene expression: facilitating RNA polymerase binding, exposing DNA to the nucleoid edge, contributing to transcriptional bursting dynamics, mediating promoter-enhancer interactions, and assisting open complex formation. These proposals are supported by prior literature showing curved DNA affects gene expression and RNAP binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C67 are largely speculative about biological mechanisms, as indicated by the 'may' language and speculation evidence type. While C60-C61 cite prior work showing curved DNA affects expression and RNAP binding, the specific mechanisms proposed (C62, C64-C67) are hypotheses that require experimental testing. These are reasonable interpretations but represent future work rather than demonstrated results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "5aeeac62-5ec1-48ab-b02a-2f0b25dfe433",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors discuss that for negative supercoils, plectoneme pinning can be influenced by both curvature and local melting, which are difficult to disentangle. They expect their model to capture curvature-dependent effects on negative plectonemes as well, since dinucleotide curvature parameters are not strongly perturbed at these torques.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C71 discuss applicability to negative supercoiling but provide no experimental data for this regime. The reasoning is plausible (C71) but remains untested. This represents a limitation of the current work and a direction for future investigation rather than a supported result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "2df2784e-3104-4af3-9f9a-dee07aab868c",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Control experiments establish that the intercalating dye SxO does not affect DNA mechanical properties under experimental conditions, binds approximately every 26 bp, and that plectoneme density is independent of ionic strength (20 mM vs 150 mM NaCl).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 describe important methodological controls. C74 is supported by prior work, C75 is a reasonable estimate based on prior work and assumptions, and C76-C77 are directly tested experimentally. These controls are essential for validating that the observed sequence dependence is not an artifact of dye binding or ionic conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    },
+    {
+      "id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1",
+      "content_id": "6f609988-3eb8-4aef-a781-29ad727b54af",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes prior knowledge about DNA supercoiling: that it plays important roles in gene regulation in prokaryotes and eukaryotes, that chromatin is organized into topological domains with varying torsional strain, that DNA sequence influences mechanical properties affecting plectoneme formation, and that curved DNA localizes near transcription start sites in prokaryotes and nucleosome positioning sequences in eukaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10, C47-C48, C58 summarize established prior work, all supported by appropriate citations. These provide context for the current study and are not results of this work. The authors accurately represent prior knowledge, though the accuracy of these citations would need to be verified against the original sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:29:17.134886Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "605ab339-d600-475d-96ca-3e5cef28f1fa",
+      "result_id": "76b82949-248e-4600-8a23-4bcffac41a2d"
+    },
+    {
+      "claim_id": "faa84f6f-041c-42a9-9a94-540f3cb7d987",
+      "result_id": "76b82949-248e-4600-8a23-4bcffac41a2d"
+    },
+    {
+      "claim_id": "b9f0ff3c-8d6c-49fd-9c87-33c298e376f9",
+      "result_id": "76b82949-248e-4600-8a23-4bcffac41a2d"
+    },
+    {
+      "claim_id": "5371a7e0-dc80-4b70-8e2b-08f749324cb2",
+      "result_id": "76b82949-248e-4600-8a23-4bcffac41a2d"
+    },
+    {
+      "claim_id": "017a86ad-8a2b-4df2-9919-500c39449e71",
+      "result_id": "76b82949-248e-4600-8a23-4bcffac41a2d"
+    },
+    {
+      "claim_id": "ac2225bd-bafb-4d82-8286-576c1cc2cd5d",
+      "result_id": "76b82949-248e-4600-8a23-4bcffac41a2d"
+    },
+    {
+      "claim_id": "ea3a01ab-69c0-4dda-b532-2194964e2326",
+      "result_id": "76b82949-248e-4600-8a23-4bcffac41a2d"
+    },
+    {
+      "claim_id": "f9bac3d4-bf27-4e4b-87f9-3509b3e38b40",
+      "result_id": "76b82949-248e-4600-8a23-4bcffac41a2d"
+    },
+    {
+      "claim_id": "e1edf165-875a-45fb-acdf-797935e08db8",
+      "result_id": "8696353b-e935-48ed-bc68-5b40458a9f9d"
+    },
+    {
+      "claim_id": "c1a6ca2b-6ec3-49ed-a72e-c96109acf9dc",
+      "result_id": "8696353b-e935-48ed-bc68-5b40458a9f9d"
+    },
+    {
+      "claim_id": "d3e57b08-eb3b-43da-93dc-7334646c46bf",
+      "result_id": "8696353b-e935-48ed-bc68-5b40458a9f9d"
+    },
+    {
+      "claim_id": "cf965381-6621-4c24-bd74-b2206bba2c7f",
+      "result_id": "8696353b-e935-48ed-bc68-5b40458a9f9d"
+    },
+    {
+      "claim_id": "c622f034-a8bc-40e6-9da0-fcb9e52224b7",
+      "result_id": "8696353b-e935-48ed-bc68-5b40458a9f9d"
+    },
+    {
+      "claim_id": "4a8ca109-0c01-4366-a065-1dd0660b649e",
+      "result_id": "8696353b-e935-48ed-bc68-5b40458a9f9d"
+    },
+    {
+      "claim_id": "c72c070f-a3ed-4495-bfa9-a8973218fc9b",
+      "result_id": "8696353b-e935-48ed-bc68-5b40458a9f9d"
+    },
+    {
+      "claim_id": "e5546f72-a2a9-42e7-81d8-70c9da687134",
+      "result_id": "8696353b-e935-48ed-bc68-5b40458a9f9d"
+    },
+    {
+      "claim_id": "c3bc4d11-0a1e-49bb-b941-54f1fdd1bc88",
+      "result_id": "8696353b-e935-48ed-bc68-5b40458a9f9d"
+    },
+    {
+      "claim_id": "c496ce93-bbe4-47f1-b6cd-e41531c412f5",
+      "result_id": "8696353b-e935-48ed-bc68-5b40458a9f9d"
+    },
+    {
+      "claim_id": "cd40bc5c-9c59-4b91-87c5-1f5e65afc9fb",
+      "result_id": "9dc77724-1b96-4c42-9cef-33127c705dfd"
+    },
+    {
+      "claim_id": "2ecceca2-2450-4091-a207-103c08dbb7db",
+      "result_id": "9dc77724-1b96-4c42-9cef-33127c705dfd"
+    },
+    {
+      "claim_id": "130caad0-3430-46da-a43d-8ab4a1710607",
+      "result_id": "9dc77724-1b96-4c42-9cef-33127c705dfd"
+    },
+    {
+      "claim_id": "d26bdf90-1486-4b5b-8149-7bb2849fca2e",
+      "result_id": "9dc77724-1b96-4c42-9cef-33127c705dfd"
+    },
+    {
+      "claim_id": "06b22061-1fc8-4ae9-8877-064f66e7e155",
+      "result_id": "9dc77724-1b96-4c42-9cef-33127c705dfd"
+    },
+    {
+      "claim_id": "e897b98c-2e24-4157-b068-515d7f2c02fc",
+      "result_id": "9dc77724-1b96-4c42-9cef-33127c705dfd"
+    },
+    {
+      "claim_id": "c9d0b866-70b1-43f7-b18d-16319edb1c61",
+      "result_id": "9dc77724-1b96-4c42-9cef-33127c705dfd"
+    },
+    {
+      "claim_id": "1ce9ac82-b57d-423d-bdb9-a34bde84ee51",
+      "result_id": "9dc77724-1b96-4c42-9cef-33127c705dfd"
+    },
+    {
+      "claim_id": "87ff5a92-d0af-44ef-bf26-d0df0ba64482",
+      "result_id": "9dc77724-1b96-4c42-9cef-33127c705dfd"
+    },
+    {
+      "claim_id": "e2a4057b-ac86-4ca8-bc98-24de5b1a0297",
+      "result_id": "9dc77724-1b96-4c42-9cef-33127c705dfd"
+    },
+    {
+      "claim_id": "f353219f-e793-47e9-b64a-08d67c72a9cc",
+      "result_id": "57ed3e1a-a69e-4b64-afee-508b780449e6"
+    },
+    {
+      "claim_id": "536699c5-3c38-4aeb-841f-446ebfea0bab",
+      "result_id": "57ed3e1a-a69e-4b64-afee-508b780449e6"
+    },
+    {
+      "claim_id": "e754a0e5-d813-4360-a7e1-bef0a3374550",
+      "result_id": "57ed3e1a-a69e-4b64-afee-508b780449e6"
+    },
+    {
+      "claim_id": "c6be4c17-bedd-42ed-a389-5a5c68a9b2c2",
+      "result_id": "57ed3e1a-a69e-4b64-afee-508b780449e6"
+    },
+    {
+      "claim_id": "6194258a-e955-4217-9449-6dd49a91a501",
+      "result_id": "57ed3e1a-a69e-4b64-afee-508b780449e6"
+    },
+    {
+      "claim_id": "2f8680af-ef20-4d20-beba-0f9b1d297c7b",
+      "result_id": "57ed3e1a-a69e-4b64-afee-508b780449e6"
+    },
+    {
+      "claim_id": "0acf1e2e-a69f-4109-9569-bba617ab8a30",
+      "result_id": "8dbe3bd0-450f-4da8-8f73-057fec2aced3"
+    },
+    {
+      "claim_id": "a3272e15-998f-4fd8-af53-b684a007b992",
+      "result_id": "8dbe3bd0-450f-4da8-8f73-057fec2aced3"
+    },
+    {
+      "claim_id": "8802fb79-de2a-46ef-8fd1-d4595eef1a2b",
+      "result_id": "8dbe3bd0-450f-4da8-8f73-057fec2aced3"
+    },
+    {
+      "claim_id": "5dca9270-9c3a-476f-a0d1-ed8bb18422e3",
+      "result_id": "8dbe3bd0-450f-4da8-8f73-057fec2aced3"
+    },
+    {
+      "claim_id": "3e43bfbf-c843-4534-9dc8-0349f49d79d7",
+      "result_id": "8dbe3bd0-450f-4da8-8f73-057fec2aced3"
+    },
+    {
+      "claim_id": "b6bda224-c8b9-4146-a050-159d32621c82",
+      "result_id": "8dbe3bd0-450f-4da8-8f73-057fec2aced3"
+    },
+    {
+      "claim_id": "2fa8b551-68e2-4ece-bfa8-03d2845e0f92",
+      "result_id": "cc8be0bb-a8ef-41af-b564-c265ff774126"
+    },
+    {
+      "claim_id": "f3bd472d-8a87-4be3-b8b0-c4ec2dbbf36d",
+      "result_id": "cc8be0bb-a8ef-41af-b564-c265ff774126"
+    },
+    {
+      "claim_id": "a5e2f539-282a-408b-836f-7237a2262d66",
+      "result_id": "cc8be0bb-a8ef-41af-b564-c265ff774126"
+    },
+    {
+      "claim_id": "c13aef24-037a-4d13-a52b-3043253c0f8a",
+      "result_id": "cc8be0bb-a8ef-41af-b564-c265ff774126"
+    },
+    {
+      "claim_id": "9a0d9ab4-c817-4ee5-97af-ced1e89c268c",
+      "result_id": "7eb99698-903a-4318-bf41-e0d093f60045"
+    },
+    {
+      "claim_id": "0681fcd4-4a47-41e3-9df2-9ee8fdf5be90",
+      "result_id": "7eb99698-903a-4318-bf41-e0d093f60045"
+    },
+    {
+      "claim_id": "58257374-f045-4933-894f-4219e090755a",
+      "result_id": "7eb99698-903a-4318-bf41-e0d093f60045"
+    },
+    {
+      "claim_id": "8a6f335e-8726-41e9-9a1f-abc77ca30420",
+      "result_id": "7eb99698-903a-4318-bf41-e0d093f60045"
+    },
+    {
+      "claim_id": "3535117a-90d9-4130-aebe-6571dda3edca",
+      "result_id": "7eb99698-903a-4318-bf41-e0d093f60045"
+    },
+    {
+      "claim_id": "c8c55140-ad16-4f46-9d0d-c2c0af6b382b",
+      "result_id": "a552436e-f062-4df3-8967-ff75565efd71"
+    },
+    {
+      "claim_id": "adcfdd8a-3aa0-4d88-97c9-b71c0e0d950d",
+      "result_id": "a552436e-f062-4df3-8967-ff75565efd71"
+    },
+    {
+      "claim_id": "d0526703-362d-484d-b5fd-ce85f9276459",
+      "result_id": "a552436e-f062-4df3-8967-ff75565efd71"
+    },
+    {
+      "claim_id": "acf90922-fcec-40ab-9a60-71b34b5ff337",
+      "result_id": "a552436e-f062-4df3-8967-ff75565efd71"
+    },
+    {
+      "claim_id": "358fff97-f2d6-4f80-9df2-7e8b9c30bae0",
+      "result_id": "a552436e-f062-4df3-8967-ff75565efd71"
+    },
+    {
+      "claim_id": "cd26dd14-a033-4948-bc4b-5ed913adb692",
+      "result_id": "a552436e-f062-4df3-8967-ff75565efd71"
+    },
+    {
+      "claim_id": "0b9c1f6d-37ba-4477-90ac-6bac01984f5e",
+      "result_id": "a552436e-f062-4df3-8967-ff75565efd71"
+    },
+    {
+      "claim_id": "becb46e0-2750-4d60-836a-af50321a3e2f",
+      "result_id": "5aeeac62-5ec1-48ab-b02a-2f0b25dfe433"
+    },
+    {
+      "claim_id": "bc20a608-a708-4999-88b9-dd048a755193",
+      "result_id": "5aeeac62-5ec1-48ab-b02a-2f0b25dfe433"
+    },
+    {
+      "claim_id": "470f4441-2653-4fca-ace5-75182532e0ff",
+      "result_id": "2df2784e-3104-4af3-9f9a-dee07aab868c"
+    },
+    {
+      "claim_id": "ff0b2e95-339c-460f-911b-902bbbfd3f24",
+      "result_id": "2df2784e-3104-4af3-9f9a-dee07aab868c"
+    },
+    {
+      "claim_id": "294d8e3a-5d9b-4918-82b1-28834b108961",
+      "result_id": "2df2784e-3104-4af3-9f9a-dee07aab868c"
+    },
+    {
+      "claim_id": "6fcaab5d-a9bd-4399-98a2-df63ba8dc056",
+      "result_id": "2df2784e-3104-4af3-9f9a-dee07aab868c"
+    },
+    {
+      "claim_id": "b967ba1b-0725-46c9-bed0-6aaa73789bf1",
+      "result_id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1"
+    },
+    {
+      "claim_id": "970fafa0-765f-4286-83a1-81f30cffe42b",
+      "result_id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1"
+    },
+    {
+      "claim_id": "373f4319-2a67-4bf5-bbef-7f83f632b3c5",
+      "result_id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1"
+    },
+    {
+      "claim_id": "31737e18-1472-4334-9ac0-5d7b172cecf9",
+      "result_id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1"
+    },
+    {
+      "claim_id": "70919e2d-0042-41ed-9a4f-725d76cba8ed",
+      "result_id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1"
+    },
+    {
+      "claim_id": "3e415746-20d0-48f7-ba1a-1f087bb7fad3",
+      "result_id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1"
+    },
+    {
+      "claim_id": "aea28877-6f63-418e-a87b-8bd140b46f81",
+      "result_id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1"
+    },
+    {
+      "claim_id": "d7c73f4e-6b84-429c-bdbf-72ad337c0560",
+      "result_id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1"
+    },
+    {
+      "claim_id": "98c3c60d-1ab1-43fe-8421-6ef393b3a8aa",
+      "result_id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1"
+    },
+    {
+      "claim_id": "a6b516cd-f053-4882-832f-eae645dc71cd",
+      "result_id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1"
+    },
+    {
+      "claim_id": "51bcc1fc-f552-470b-944e-30f8aa22e1b0",
+      "result_id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1"
+    },
+    {
+      "claim_id": "aca66395-ea59-4964-b4e4-854e2c830141",
+      "result_id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1"
+    },
+    {
+      "claim_id": "b165a552-82fe-4c43-b89a-248fe265b115",
+      "result_id": "968121a6-8ca8-4eac-83e9-82d94ca10cf1"
+    }
+  ],
+  "comparisons": []
+}

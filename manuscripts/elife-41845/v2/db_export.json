@@ -1,0 +1,1680 @@
+{
+  "submission": {
+    "id": "0ebf1151-294e-4ffa-9b09-c764a8904150",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:58:42.829365Z",
+    "updated_at": "2025-12-02T06:58:42.829365Z"
+  },
+  "content": [
+    {
+      "id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "submission_id": "0ebf1151-294e-4ffa-9b09-c764a8904150",
+      "content_type": "manuscript",
+      "content_text": "# Cryo-EM structure of the mechanically activated ion channel OSCA1.2\n\n## Authors\n\n- Sebastian Jojoa-Cruz<sup>1</sup> ([ORCID: 0000-0002-4392-3898](https://orcid.org/0000-0002-4392-3898))\n- Kei Saotome<sup>1</sup> ([ORCID: 0000-0002-4135-5356](https://orcid.org/0000-0002-4135-5356))\n- Swetha E Murthy<sup>2</sup> ([ORCID: 0000-0001-9580-3380](https://orcid.org/0000-0001-9580-3380))\n- Che Chun Alex Tsui<sup>1</sup> ([ORCID: 0000-0003-4886-9824](https://orcid.org/0000-0003-4886-9824))\n- Mark SP Sansom<sup>3</sup> ([ORCID: 0000-0001-6360-7959](https://orcid.org/0000-0001-6360-7959))\n- Ardem Patapoutian<sup>2</sup> ([ORCID: 0000-0003-0726-7034](https://orcid.org/0000-0003-0726-7034)) \u2020\n- Andrew B Ward<sup>1</sup> ([ORCID: 0000-0001-7153-3769](https://orcid.org/0000-0001-7153-3769)) \u2020\n\n### Affiliations\n\n1. Department of Integrative Structural and Computational Biology The Scripps Research Institute California United States\n2. Department of Neuroscience, Dorris Neuroscience Center Howard Hughes Medical Institute, The Scripps Research Institute California United States\n3. Department of Biochemistry University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nMechanically activated ion channels underlie touch, hearing, shear-stress sensing, and response to turgor pressure. OSCA/TMEM63s are a newly-identified family of eukaryotic mechanically activated ion channels opened by membrane tension. The structural underpinnings of OSCA/TMEM63 function are not explored. Here, we elucidate high resolution cryo-electron microscopy structures of OSCA1.2, revealing a dimeric architecture containing eleven transmembrane helices per subunit and surprising topological similarities to TMEM16 proteins. We locate the ion permeation pathway within each subunit by demonstrating that a conserved acidic residue is a determinant of channel conductance. Molecular dynamics simulations reveal membrane interactions, suggesting the role of lipids in OSCA1.2 gating. These results lay a foundation to decipher how the structural organization of OSCA/TMEM63 is suited for their roles as MA ion channels.\n\n## Introduction\n\nMechanosensation allows organisms to detect and respond to external and internal mechanical forces (Haswell et al., 2011). Mechanical stimuli such as touch, gravity, and osmotic pressure are sensed by mechanically activated (MA) ion channels (Haswell et al., 2011; Ranade et al., 2015). Previously reported as putative ion channels sensitive to osmolality (Hou et al., 2014; Yuan et al., 2014; Zhao et al., 2016), a companion paper characterizes OSCA/TMEM63 family members as a novel family of MA ion channels conserved across eukaryotes (Murthy et al., 2018). Plants with mutant OSCA1 have impaired osmotic stress signaling (Yuan et al., 2014), implying that OSCAs function as sensors of osmotic-stress induced mechanical force in vivo. TMEM63 proteins are animal orthologues of OSCA that produce MA currents when expressed in na\u00efve cells (Murthy et al., 2018), but their physiological roles remain undetermined. OSCA/TMEM63 are not homologous to other known MA ion channels, and no previous study has addressed their molecular structure. To facilitate a mechanistic understanding of how OSCAs sense force in plants, and to shed light on a newly identified family of eukaryotic MA ion channels, we conducted cryo-EM studies of OSCA1.2.\n\n## Results\n\nWe purified Arabidopsis thaliana OSCA1.2 expressed in HEK293F cells and determined cryo-EM reconstructions in lipidic nanodiscs and Lauryl Maltose Neopentyl Glycol\u00a0(LMNG)\u00a0detergent micelle with cholesteryl hemisuccinate (CHS) at 3.1 and 3.5 \u00c5 resolution, respectively (Figure 1A\u2013D, Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2). The resulting density maps allowed building of 82% of the full-length OSCA1.2 sequence (Figure 1\u2014figure supplement 3, Figure 1\u2014source data 1). Structures of OSCA1.2 in nanodisc and LMNG were nearly identical (RMSD\u00a0=\u00a00.81 \u00c5, Figure 1\u2014figure supplement 4A\u2013C). We refer to the nanodisc structure throughout unless otherwise noted because of superior resolution and map quality. Importantly, the purified channel reconstituted in liposomes retains MA ion channel activity (Murthy et al., 2018). Thus, our structures and interpretations correspond to that of a functional OSCA1.2 protein. Additionally, we performed MD simulations at both coarse-grained (CG) and atomistic (AT) levels to model the local membrane interactions of OSCA1.2 (Figure 1\u2014figure supplements 5\u20136, Video 1).\n\n![Video 1.](https://cdn.elifesciences.org/articles/41845/elife-41845-video1.mp4.jpg)\n\n**Video 1.:** The system was first equilibrated for 1 \u00b5s in CG simulations before converting to atomistic detail. The entire AT simulation is 250 ns, with position restraints applied in the first 50 ns (see Materials\u00a0and\u00a0methods). This allows the lipid bilayer interactions with the protein to equilibrate. Phosphorus atoms of POPC lipids within 20 \u00c5 of the protein are shown as transparent tan spheres. The hook and IL1H1 regions remain inserted in the membrane. Lipid flip-flop (i.e. scramblase activity) was not observed over the course of the simulation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig1-v2.jpg)\n\n**Figure 1.:** Side (A, B), bottom (C), and top (D) views of EM density map of nanodisc-embedded OSCA1.2 dimer (sharpened map, blue and red). Nanodisc density is apparent at lower thresholds (unsharpened map, light grey). The intracellular domain (ICD) of each monomer is colored lighter than the transmembrane domain (TMD). Side (E, F), bottom (G), and top (H) views of OSCA1.2 dimer model. Coloring follows the same scheme used in density map. (I) Molecular dynamics (MD) simulations revealed the inter-subunit cleft to be occupied by phosphatidyl choline (PC) molecules arranged as a bilayer, shown in side (left) and top (right) views (also see Figure 1\u2014figure supplement 5A) Lipid molecules shown are within 6 \u00c5 of residues 367\u2013389 of TM3 (partial), 455\u2013490 of TM5 and 616\u2013685 of TM9\u201310 (also see Video 2).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013G) Correspond to nanodisc-embedded OSCA1.2, and (H\u2013N) correspond to LMNG solubilized OSCA1.2. (A, H) Representative SEC trace with SDS-PAGE as inset. (B, I) Representative cryo-EM micrograph. (C, J) 2D-class averages. (D, K) Local resolution maps calculated by RELION. Both maps use the same color key, in \u00c5. (E, L) Angular distribution of reconstructed particles in the refined maps. (F, M) FSC plots of unmasked and masked maps. (G, N) FSC of map and model, calculated by phenix.mtriage.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Data processing flowchart for LMNG-solubilized OSCA1.2 map (top) and nanodisc-embedded OSCA1.2 map (bottom).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Selected regions of cryo-EM map of OSCA1.2 in nanodiscs sharpened with a b factor of \u221281 \u00c52 superimposed onto the atomic model.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Cryo-EM map of OSCA1.2 in LMNG sharpened to a b-factor of \u2212170 \u00c52 superimposed into the atomic model. Two side views of the OSCA1.2 monomer are shown. (B) Ribbon models of OSCA1.2 in LMNG (purple) and nanodiscs (green) aligned and superimposed. (C) Bottom (left) and side (top) views of the OSCA1.2 model colored by backbone RMSD. Blue color represents RMSD values as low as 0.09 \u00c5, while red values represent values as high as 2.9 \u00c5. White values have intermediate RMSD. Note that RMSD values are lowest at and near the intracellular dimeric interface. (D) Expanded bottom (left) and side (right) views of the intracellular dimeric interface. Residues at the interface are shown as sticks and colored by subunit. Dashed lines show apparent salt bridges or hydrogen bonds.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Side view of the PC molecules in contact with both subunits at the dimer interface cleft, revealing an asymmetric bilayer between subunits. The outer leaflet of the bilayer in this region contains 18 PC molecules whilst the inner leaflet contains 14 molecules. (B) Snapshot of an AT-MD simulation at 250 ns illustrating the water molecules (red/white) within the two mouths of the pore which are separated by the hydrophobic constriction (compare with Figure 3C, also see Video 4 and Video 5). The AT-MD simulation has position restraints applied in the first 50 ns only. (C) Left, a snapshot (also see Figure 4C) highlighting five lipids residing at the cytoplasmic side of the pore taken at 250 ns of the AT-MD simulation. Right, the same snapshot with the lipid phosphates highlighted and the lysine amine nitrogen to phosphate oxygen distance measured in \u00c5, suggesting phosphate head groups are within hydrogen-bonding distance of the lysine residues. Also see Video 6 and Video 7. (D) Protein-lipid head group contact analysis showing the number of phosphate head groups within 6 \u00c5 plotted against protein residue number. Transmembrane helices are indicated as rectangles at the bottom and dashed lines represent residues not resolved in our structure. The four lysine residues in (C) are highlighted. This analysis is based on 5 repeats of 1-\u00b5s CG simulation.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig1-figsupp6-v2.jpg)\n\nThe structure of OSCA1.2 reveals a trapezoid-shaped homodimer with a two-fold symmetry axis perpendicular to the membrane (Figure 1A\u2013H). The dimer is 139 \u00c5 across at its widest dimension. The bulk of the protein lies within the membrane; the transmembrane (TM) domain (TMD) of each monomer contains eleven TM helices. Linkers between TM helices and a C-terminal region come together to form an intracellular domain (ICD) that extends\u00a0~31 \u00c5 below the membrane (Figure 1A\u2013H). The\u00a0ICD contributes the sole dimeric interface in OSCA1.2, with a buried surface area of 1,331 \u00c52 (Figure 1\u2014figure supplement 4D) (Krissinel and Henrick, 2007), only 4% of the total surface area of the dimer. Within the membrane, inter-subunit contacts are nonexistent. Instead, a cleft with minimum width of approximately 8 \u00c5 separates one subunit\u2019s TMD from the other (Figure 1I). Interestingly, AT-MD simulations of OSCA1.2 in a phospholipid (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine, POPC) bilayer, consistently place lipid molecules inside the cleft (Figure 1I, Figure 1\u2014figure supplement 5A, Video 2), indicating a role for lipids in stabilizing the dimeric assembly.\n\n![Video 2.](https://cdn.elifesciences.org/articles/41845/elife-41845-video2.mp4.jpg)\n\n**Video 2.:** OSCA1.2 and POPC lipids in the atomistic simulation same as\u00a0Video 1,\u00a0showing the top view.\u00a0Lipids found in the inter-subunit cleft are defined as within 20 \u00c5 of residue 655\u2013683 (TM10) of both subunits, at the start of the AT simulation. Here the upper and lower leaflets contain 13 and 9 POPC molecules respectively. The networks of lipids in both leaflets are stable. No lipids either entered or left the cleft.\n\nFigure 2A,B show the topology and domain arrangement of an OSCA1.2 subunit. The N-terminus of OSCA1.2 faces the extracellular environment while the C-terminus is intracellular. The majority of the ICD is comprised of the second intracellular linker (IL2), which is over 150 residues and contains a 4-stranded antiparallel \u00df-sheet (IL2\u00df1-IL2\u00df4) with well-conserved sequences across the OSCA family (Figure 2\u2014figure supplements 1, 2 and 3), and four helices (IL2H1-IL2H4). Three additional helices, contributed by intracellular linkers 1 (IL1H2) and 4 (IL4H) and the C-terminus (CTH), constitute the rest of the intracellular domain. Other than short linkers, we did not observe structured extracellular domains, presumably due to flexibility.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig2-v2.jpg)\n\n**Figure 2.:** (A) Structure of OSCA1.2 viewed from the membrane plane. One monomer is colored grey. The other monomer shows intracellular domain in yellow, TM0 in orange, pore lining TM helices in green (TM3\u2013TM7) and TM helices not directly involved in the pore in blue. Phosphorus atoms of POPC molecules within 25 \u00c5 of the protein are shown as brown spheres (also see Video 1). (B) Topology diagram illustrating the secondary structure elements of OSCA1.2. Dashed lines represent missing residues in the model. A short coil divides TM6 into TM6a and TM6b. (C, D) Structures of mTMEM16A and nhTMEM16 (PDB: 6BGI and 4WIS, respectively) in the same view as (A). Extracellular domain of mTMEM16A is colored red. (E) Bottom view of the transmembrane domains of OSCA1.2 (red) and mTMEM16A (grey) aligned on one subunit (shown as ribbons). The extracellular and intracellular domains have been removed for clarity. The blue circle marks the symmetry axis of OSCA1.2. The green arrow marks the difference in position of TM6 in the non-aligned subunits (cylinders) between the two structures.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Sequence alignment of Arabidopsis thaliana OSCA1.1 (UniProt ID: Q9XEA1), OSCA1.2 (A0A097NUP4), OSCA1.3 (A0A097NUP7), OSCA1.4 (A0A097NUQ0), OSCA1.5 (A0A097NUS0), OSCA1.6 (A0A097NUP1), OSCA1.7 (A0A097NUP8), OSCA1.8 (A0A097NUQ2), OSCA2.1 (A0A097NUQ5), OSCA2.2 (A0A097NUS5), OSCA2.3 (A0A097NUP6), OSCA2.4 (A0A097NUQ3), OSCA2.5 (A0A097NUQ7), OSCA3.1 (A0A097NUQ9), OSCA4.1 (A0A097NUT0), Drosophila melanogaster dTMEM63a (Q6NP91), Mus musculus mTMEM63a (Q91YT8) and Homo sapiens hTMEM63a (O94886). Secondary structure of OSCA1.2 represented on top of the alignment: \u03b1 helices as rectangles, \u03b2 strands as arrows. Residues not included in OSCA1.2 model are represented as a dashed line. Features are colored and labeled as in Figure 2. \u03c0-helices labeled as a pink block on top of the extra residue in the turn. * and red block denote location of residue E531. EXT: Extracellular environment. IN: Intracellular environment.\n\n![Figure 2\u2014figure\u00a0supplement 2.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure\u00a0supplement 3.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig2-figsupp3-v2.jpg)\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Side views of OSCA1.2 (left, red), mTMEM16A (PDB 5OYB, middle, yellow), and nhTMEM16 (PDB 4WIS, right, cyan). Calcium ions are shown as green spheres in mTMEM16A and nhTMEM16. (B) Superposition of TM4 and TM6 of the structures shown in (A). The space between TM4 and TM6 in nhTMEM16 is wider than in OSCA1.2 and mTMEM16A, consistent with the lipid scramblase function of nhTMEM16 and the ion channel functions of TMEM16A and OSCA1.2 (Schroeder et al., 2008). (C) The Ca2+ binding site of TMEM16 proteins formed by residues in the cytoplasmic half of TM6, TM7 and TM8 is not conducive for Ca2+ binding in OSCA1.2 (left, red). Note, E531 in OSCA1.2 is the sole acidic residue in this region. The Ca2+ binding sites of mTMEM16A (middle) and nhTMEM16 (right) are also shown. (D) TM6 in OSCA1.2 (left), Ca2+-bound mTMEM16A (middle, yellow) and Ca2+-bound nhTMEM16 (right) have \u03c0-helical turns (pink). In the Ca2+-free structure of mTMEM16A (middle, gray, PDB 5OYG), the \u03c0-helix collapses and the helix hinges at a glycine residue of TM6. In OSCA1.2, there is also a glycine at the \u03c0-turn in TM6a, raising the possibility of structural similarities in gating transition. The helix break in TM6 of OSCA1.2 could also impart flexibility during mechanical gating.\n\nAs noted previously (Hou et al., 2014), a C-terminal region of OSCA1.2 (corresponding to TM4-TM9 in our structure) has loose homology to TMEM16 proteins, which are a family of Ca2+-activated ion channels (Caputo et al., 2008; Chen et al., 2010; Schroeder et al., 2008; Yang et al., 2008) and lipid scramblases (Malvezzi et al., 2013; Suzuki et al., 2013; Suzuki et al., 2010) which, to our knowledge, have no mechanically gated activity describe so far. Strikingly, our structure reveals that the structural homology extends beyond the C-terminal region; ten of the eleven TM helices of OSCA1.2 closely follow the topology and organization of mouse TMEM16A (mTMEM16A) Ca2+-activated chloride channel (Dang et al., 2017; Paulino et al., 2017a; Paulino et al., 2017b) and Nectria haematococca TMEM16 (nhTMEM16), which is a Ca2+-dependent lipid scramblase (Brunner et al., 2014) and nonselective ion channel (Lee et al., 2016) (Figure 2C; Figure 2D, Figure 2\u2014figure supplement 4A; Figure 2\u2014figure supplement 4B). Relative to these TMEM16 structures, OSCA1.2 has an additional N-terminal TM helix positioned at the periphery of the TMD (Figure 2A). To facilitate structural comparison between OSCA and TMEM16 proteins, we refer to this N-terminal TM helix as \u2018TM0\u2019, and the remaining TM helices \u2018TM1-TM10\u2019. Though TM1-TM10 of OSCA1.2 and TMEM16A align well at the level of a single subunit, the relative orientation of one subunit to the other is different (Figure 2E). As a result of this distinct dimeric packing, the TMD of the OSCA1.2 dimer is more than 20 \u00c5 wider than mTMEM16A or nhTMEM16. Additional features distinguish the overall structure of OSCA1.2 from TMEM16 proteins. First, the intracellular domain of OSCA1.2 is mostly comprised of IL2, which connects TM2 and TM3, while the intracellular domains of mTMEM16a and nhTMEM16 are formed primarily by the N- and C- termini. Second, the regulatory Ca2+ binding site composed of acidic and polar residues conserved across the TMEM16 family (Brunner et al., 2014) does not have a chemical environment conducive for Ca2+ binding in OSCA1.2 (Figure 2\u2014figure supplement 4C), consistent with distinct modes of regulation (mechanical activation vs. Ca2+ dependence).\n\nIn the mTMEM16A dimer, there are two pores; one within each subunit (Dang et al., 2017; Paulino et al., 2017a). Topological similarities with mTMEM16A (Figure 2) suggest that OSCA1.2 also has two pores and could conduct ions through a structurally analogous pathway lined by TM3-TM7. The existence of two pores per OSCA1.2 dimer is consistent with the presence of a single subconductance state in stretch-activated single-channel currents (Murthy et al., 2018). To visualize the dimensions of the putative ion permeation pathway, we used the HOLE program (Smart et al., 1996) (Figure 3A\u2013C, Figure 3\u2014figure supplement 1, Video 3). Towards the extracellular side, this putative pore has an opening greater than 12 \u00c5 wide, which narrows into a \u2018neck\u2019 approximately 15 \u00c5 down the conduction pathway (Figure 3A\u2013C). The neck extends for over 10 \u00c5 and reaches a minimum van der Waals radius of 0.5 \u00c5, closing the channel. Mostly hydrophobic residues (I393, V396, A400, L434, L438, F471, V476, and F515) line the pore\u2019s constriction, as well as several charged and polar residues (Q397, S480, Y468, K512, and D523). Interestingly, a pair of \u03c0-helical turns (in TM5 and TM6a) are nearby the pore\u2019s neck region (Figure 3C). Because \u03c0-helices are energetically unstable, we speculate that \u03c0-to-\u03b1 transitions at these positions could be associated with gating and, potentially, channel opening. In support of this idea, there are \u03c0-helical turns at highly similar locations of TM6 in mTMEM16A (Paulino et al., 2017a) and nhTMEM16 (Brunner et al., 2014), and a \u03b1-to-\u03c0 transition in TM6 underlies Ca2+-dependent activation in mTMEM16A (Paulino et al., 2017a) (Figure 2\u2014figure supplement 4D). Similarly, the pore-lining helices of the epithelial calcium channel TRPV6 (McGoldrick et al., 2018) undergo \u03c0-to-\u03b1 helix transitions during gating. Directly below the neck, the pore widens, and the side chains of E531, R572, and T568 create a hydrophilic environment that could stabilize hydrated ions (Figure 3C). Further below, the pore widens into membrane-exposed vestibule and is surrounded by IL2 and IL4 before exiting into the cytosol.\n\n![Video 3.](https://cdn.elifesciences.org/articles/41845/elife-41845-video3.mp4.jpg)\n\n**Video 3.:** Pore and pore lining residues. Side chains are shown as blue sticks, backbone of OSCA1.2 is shown in ribbon representation and colored green for the TM helices and yellow for the intracellular domain.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig3-v2.jpg)\n\n**Figure 3.:** (A) Van der Waals radii of the pore plotted against axial distance. (B) Location of the pore in the context of the OSCA1.2 subunit. Pore-lining TMs are colored green, and pore pathway is depicted as wheat mesh. (C) Expanded view of the neck, and pore-lining residues. \u03c0-helical turns close to the neck are highlighted pink (also see Video 4 and Video 5). (D) Representative traces of stretch-activated currents recorded from OSCA1.2- or OSCA1.2 (E531A)- expressing HEK-P1KO cells. In the cell-attached patch clamp mode, currents were elicited by applying negative pipette pressure in steps of \u0394\u221210 mmHg. The corresponding stimulus trace is illustrated above the current trace. (E) Left, maximal current response from individual cells expressing OSCA1.2 (Imax: 487\u00a0\u00b1\u00a055 pA, N\u00a0=\u00a09) or OSCA1.2 (E531A) (Imax: 681\u00a0\u00b1\u00a0161 pA, N\u00a0=\u00a09). Right, Inactivation time constant (ms) for individual cells across the two conditions. Bars represent population mean (OSCA1.2: 25.6\u00a0\u00b1\u00a02 ms (N\u00a0=\u00a06); OSCA1.2 (E531A): 17.4\u00a0\u00b1\u00a02 ms (N\u00a0=\u00a09). *p=0.01, Mann Whitney test). (F) Representative traces of stretch-activated single-channel currents (\u221280 mV) from wildtype or mutant channels. Channel openings are upward deflections. The negative pressure stimulus is illustrated below the current trace. Amplitude histogram for the representative current trace is represented below the stimulus trace. Single-channel amplitude was determined as the amplitude difference in Gaussian fits of the histogram. (G) Left, average I-V response curve for stretch-activated single-channel currents from wildtype or mutant channels. Right, channel conductance from individual cells across the two conditions. Bars represent population mean (OSCA1.2: 132\u00a0\u00b1\u00a05 ms (N\u00a0=\u00a06); OSCA1.2 (E531A): 82\u00a0\u00b1\u00a01 ms (N\u00a0=\u00a08). ***p=0.0007, Mann Whitney test).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Pore and pore lining residues. Side chains are shown as blue sticks, backbone of OSCA1.2 is shown in ribbon representation and colored green for the TM helices and yellow for the intracellular domain. (B) Expanded top-down view of E531 and residues that sit in close proximity. (C) OSCA1.2 dimer showing pore representation obtained using HOLE (Smart et al., 1996)\u00a0in orange mesh (left subunit) and the placement of water molecules (represented as red spheres) around the pore at the end of AT-MD simulation. The similarity between the two supports placement of the pore.\n\nIf TM3-TM7 indeed form the permeation pathway of OSCA1.2, mutation of residues that line the pathway should alter the channel\u2019s permeation or conductance properties. We chose to examine E531, which is the only pore-facing acidic residue conserved in this region across the OSCA/TMEM63 families and thus could contribute to conductance (Figure 3C, Figure 2\u2014figure supplements 1, 2 and 3, Figure 2\u2014figure supplement 4C). We recorded and characterized stretch-activated currents in the cell-attached patch clamp mode from cells expressing wildtype or mutant (E531A) channels (Figure 3D). E531A had maximal current responses comparable to wildtype channels (Figure 3D,E), and modestly faster inactivation kinetics (Figure 3E). Strikingly, the mutation decreased the stretch-activated single-channel conductance by 1.6-fold, demonstrating that E531 contributes to the channel\u2019s ion permeation pathway (Figure 3F,G), and could play a role in binding or sequestering cations. Alternatively, the mutation could alter pore structure and dynamics owing to the interactions of the E531 side chain with R572 and Y605 (Figure 3\u2014figure supplement 1B). Nonetheless, combining these mutagenesis data with structural homology to mTMEM16A (Paulino et al., 2017a; Paulino et al., 2017b), we conclude that TM3-TM7 most likely form the pore. This conclusion is further supported by MD simulations showing hydration of the pore pathway being consistent with the pore radius profile from HOLE (Figure 1\u2014figure supplement 5B, Figure 3\u2014figure supplement 1C, Video 4, Video 5).\n\n![Video 4.](https://cdn.elifesciences.org/articles/41845/elife-41845-video4.mp4.jpg)\n\n**Video 4.:** Water distribution around the neck region of the pore\u00a0(subunit\u00a01).\u00a0Water molecules around the highlighted residues on TM4\u20136\u00a0are shown; residue labels are colored by residue types (green: polar; white: non-polar).\u00a0In subunit 1,\u00a0intermittent permeation of water between L434 (TM4) and\u00a0Y519 (TM6) were observed when position restraints were removed after 50 ns. This water permeation pathway presented a possible alternative to that suggested by the HOLE program.\u00a0See also Video 5.\n\n![Video 5.](https://cdn.elifesciences.org/articles/41845/elife-41845-video5.mp4.jpg)\n\n**Video 5.:** Water distribution around the neck region of the pore\u00a0(subunit\u00a02).\u00a0Water molecules around the highlighted residues on TM4\u20136 are shown; residue labels are colored by residue types (green: polar; white: non-polar). Subunit 2 remains impermeable to water during the entire simulation, in contrast to that in subunit 1\u00a0(Video 4).\n\n## Discussion\n\nOur structural study of OSCA1.2 elucidates a novel architecture for MA ion channel and reveals unanticipated similarities between OSCA1.2 and TMEM16 proteins, including pore structure. Which structural elements in OSCA1.2 could be involved in membrane tension-sensing and gating? Two notable features present in OSCA1.2, but not TMEM16s, are a hook-shaped loop that enters the membrane that intervenes IL2H2 and IL2H3 (Figure 2A, Figure 4A), and a horizontal amphipathic helix in IL1 (IL1H1) that slightly deforms the membrane lower leaflet in MD simulations (Figure 4B, Video 1). Their association with the cytoplasmic bilayer leaflet suggests these two features could be sensitive to membrane tension, akin to the N-terminal amphipathic helix in MscL (Bavi et al., 2016), and their movement could be coupled to channel conformation through their interactions with the TMD (Figure 4A,B). Another notable aspect of the OSCA1.2 structure, similar to TMEM16s, is that the lower region of the pore is exposed to the membrane and thus could permit lipid entry (Figure 3B, Figure 3\u2014figure supplement 1A,C). Indeed, in MD simulations, lipids occupy and occlude the cytoplasmic half of the pore, with their phosphate head groups interacting with four lysine residues on TM4 and TM6b (Figure 4C, Figure 1\u2014figure supplement 5C, Video 6, Video 7). It is possible that membrane tension promotes gating by affecting the lipid occupancy in this region, analogous to proposed mechanistic models for TRAAK (Brohawn et al., 2014) and MscS (Pliotas et al., 2015). Finally, a general principle of MA ion channels is that their cross-sectional area should increase in response to membrane tension (Guo and MacKinnon, 2017; Haswell et al., 2011; Phillips et al., 2009). Qualitatively, the absence of a dimeric protein-protein interface between membrane domains (Figure 1I) could allow OSCA1.2 to expand its cross-sectional area significantly in response to physiological lateral tension without the energetic penalty of breaking inter-subunit interactions within the membrane. A comparison of nanodisc-embedded and LMNG-solubilized structures hints at the positional flexibility of the subunits relative to each other while in the closed state (Figure 1\u2014figure supplement 4B,C, Video 8). Larger movements will be expected under membrane tension and channel opening. The features of OSCA1.2 outlined above might act in concert to modulate channel gating in response to mechanical stimuli (Figure 4D).\n\n![Video 6.](https://cdn.elifesciences.org/articles/41845/elife-41845-video6.mp4.jpg)\n\n**Video 6.:** Lipid distribution around the cytoplasmic side of the pore (subunit 1).Interactions of lipid phosphate groups with lysine residues on TM4 and TM6b are shown (see also Figure 1\u2014figure supplement 5C and Figure 1\u2014figure supplement 5D). For both of the subunits, the orientation of K435 rearranges to face the constricted region of the pore after the position restraints are removed after 50 ns. The network of lipids of the lower leaflet shows how the bilayer is deformed around this region, with the lipid closest to K435 arranged almost perpendicular to the membrane (Video 7). As noted above (Video 1), lipid flip-flop is not observed.\n\n![Video 7.](https://cdn.elifesciences.org/articles/41845/elife-41845-video7.mp4.jpg)\n\n**Video 7.:** Lipid distribution around the cytoplasmic side of the pore (subunit 2). See Video 6\u00a0for\u00a0caption.\n\n![Video 8.](https://cdn.elifesciences.org/articles/41845/elife-41845-video8.mp4.jpg)\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41845/elife-41845-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cartoon representation of the membrane embedded hook, which intervenes IL2H2 and IL2H3. IL2H2 interacts with pore-lining TM6b. (B) Cartoon and stick representation of the amphipathic membrane-embedded IL1H1, which contacts pore-lining TM6a and TM8. In (A) and (B), MD snapshots of lipids proximal to the hook and IL1H1 are shown, demonstrating that both domains are membrane-embedded. (C) A snapshot (at\u00a0~50 ns) of the MD simulation showing four phospholipids occupying a cytoplasmic cavity of the pore, which is formed by TM4 and TM6b. Interactions of three lipids with the sidechains of K435, K536, and K544 were sustained throughout the 1 \u00b5s of CG simulation and also throughout the entire 250 ns of AT simulation (also see Figure 1\u2014figure supplement 5B, Video 6 and Video 7). (D) Schematic showing various features of OSCA1.2 proposed to be involved in MA ion channel function. Red arrows depict direction of membrane tension when applied, though the current structure is not under tension. Green sphere represents ion entering the pore and purple arrow shows pore pathway that transits between \u03c0 helices. The right panel highlights the amphipathic and membrane embedded regions of one monomer of OSCA1.2 and the local perturbation of the inner leaflet, including entry of lipids into the cytoplasmic side of the pore.\n\nIntriguingly, transmembrane-channel-like (TMC) proteins, which are pore-forming subunits of the hair cell mechanoelectrical transduction (MET) apparatus (Fettiplace, 2016; Kawashima et al., 2011; Pan et al., 2013), are distantly related to the TMEM16 family and proposed to have the same topology (Ballesteros et al., 2018; Hahn et al., 2009; Medrano-Soto et al., 2018; Pan et al., 2018). Although the molecular identity of the MET ion channel remains incompletely understood (Fettiplace, 2016), the shared TM topology between more distantly related TMEM16s and OSCA1.2 suggests a similar fold for TMCs. It is therefore likely that OSCA/TMEM63, TMEM16, and TMC all utilize a similar architectural scaffold to carry out various functions at the membrane. While the details underlying such functional diversity await discovery, our study establishes a framework to understand how OSCAs exploited this common fold, and evolved specific features, to serve the role of MA ion channels.\n\nWe note that cryo-EM structures of two other members of the OSCA/TMEM63 family, OSCA1.1 and OSCA3.1 (Zhang et al., 2018), were recently published after our initial BioRxiv deposition (Jojoa-Cruz et al., 2018).\n\n## Materials and methods\n\n### Expression constructs\n\nFor structural studies, codon optimized OSCA1.2 gene (UniProt ID: Q5XEZ5) for expression in human cell lines was cloned into vector pcDNA3.1. An EGFP tag was placed at the C terminus and connected to the gene via a PreScission Protease cleavable linker (LEVLFQGP). A FLAG tag (DYKDDDDK) was added to the C terminus of EGFP with two intervening alanines as a linker. We refer to this construct as OSCA1.2-PP-EGFP.\n\n### Protein expression and purification\n\nTo obtain samples of OSCA1.2 solubilized in LMNG, four liters of HEK293F cells (ThermoFisher Freestyle 293 F, RRID: CVCL_D603) were grown in Freestyle 293 expression media to a density of 1.2\u20131.7 \u00d7 106 cells/mL. All cell lines tested negative for mycoplasma contamination. Each liter was transfected by combining 1 mg/L of the construct with 3 mg/L of PEI MAX 40K in 30 mL of Opti-MEM and then adding the mix to the culture of cells. Transfected cells were grown for 48 hr and then pelleted, washed with ice cold PBS, flash frozen and stored at \u221280\u00b0C for future use. From this point forward, every step of the purification was carried out at 4\u00b0C unless otherwise stated. Pellets were thawed on ice, resuspended in 200 mL of solubilization buffer (25 mM tris pH 8.0, 150 mM NaCl, 1% LMNG, 0.1% CHS, 2 \u03bcg/mL leupeptin, 2 \u03bcg/mL aprotinin, 1 mM phenylmethylsulfonyl fluoride (PMSF), 2 \u03bcM pepstatin, 2 mM DTT) and stirred vigorously for 2\u20133 hr. Subsequently, insoluble material was pelleted via ultracentrifugation for 45 min at 92,387 g in a Type 70 Ti rotor. Batch binding of the supernatant was performed for 1 hr with 2 mL of GFP nanobody (Kirchhofer et al., 2010)-coupled CNBr-Activated Sepharose 4B resin that had been previously equilibrated with wash buffer (25 mM tris pH 8.0, 150 mM NaCl, 0.01% LMNG, 0.001% CHS, 2 mM DTT). Protein bound to resin was spun down for 2 min at low speed and washed with wash buffer twice and transferred to a gravity flow column. Resin was wash with 10 CV of wash buffer and transferred to a conical tube using 5 to 8 mL of wash buffer, followed by addition of\u00a0~15 \u00b5g of PreScission Protease and rotated overnight. Both resin and supernatant were transferred into a gravity flow column and the flow through was collected and concentrated using a 100 kDa MWCO Amicon Ultra centrifugal filter. Concentrated protein was injected onto Shimadzu HPLC and SEC was performed using a Superose 6 Increase column equilibrated to wash buffer. Fractions corresponding to OSCA1.2 were concentrated to 4.4 mg/mL. Typical yields of OSCA1.2 using this procedure were\u00a0~60 \u00b5g purified product per liter of HEK293F cells.\n\nTo obtain samples of nanodisc-embedded OSCA1.2, the same purification procedures were used with minor changes. Instead of LMNG, solubilization buffer and wash buffer had 1%/0.1% and 0.01%/0.001% n-dodecyl beta-D-maltopyranoside (DDM)/CHS, respectively. After SEC, protein was concentrated down to approximately 200 \u03bcL and mixed with MSP2N2 and soybean polar lipid extract (Avanti #541602) at a molar ratio of 1:3:166 (protein monomer:MSP2N2:lipid). Mixture was rocked at 4\u00b0C for one hour. 10 mg of Bio-beads SM2 (Bio-rad) prewashed with SEC2 buffer (20 mM Tris pH 8.0, 150 mM NaCl, 1 mM DTT) were added to the mixture and rotated at 4\u00b0C. After one hour, another 10 mg of prewashed biobeads were added and rotated overnight at 4\u00b0C. Biobeads were removed and protein concentrated and injected onto Shimadzu HPLC for a second SEC using SEC2 buffer and Superose 6 Increase column. Fractions corresponding to OSCA1.2 peak were concentrated to 2.1 mg/mL.\u00a0Typical yields of OSCA1.2 in nanodiscs\u00a0using this procedure were\u00a0~30 \u00b5g purified product per liter of HEK293F cells.\n\n### Cryo-EM sample preparation and data collection\n\n3.5 \u03bcL of purified protein (at 4.4 mg/mL for LMNG-solubilized OSCA1.2 and 2.1 mg/mL for nanodisc-embedded OSCA1.2) was applied to previously plasma-cleaned UltrAuFoil 1.2/1.3 300 mesh grids and blotted once for 3.5 s with blot force 0 after a wait time of 12 s. Blotted grids were plunge frozen into nitrogen-cooled liquid ethane using a Vitrobot Mark IV (ThermoFisher). Images for LMNG-solubilized OSCA1.2 were collected at 300 kV using a Titan Krios (ThermoFisher) coupled with a K2 Summit direct electron detector (Gatan) at a nominal magnification of 29,000x with a pixel size of 1.03 \u00c5. 51 frames were collected per movie for a total accumulated dose of\u00a0~60 electrons per \u00c52 using a defocus range of \u22121.0 to \u22122.6 \u00b5m. For nanodisc-embedded OSCA1.2, a Talos Arctica at 200 kV was used with a K2 Summit direct electron detector at a nominal magnification of 36000x with 1.15 \u00c5 pixel size. 54 frames were collected per movie for a total accumulated dose of\u00a0~60 electrons per \u00c52 using a defocus range of \u22120.4 to \u22122.2 \u00b5m. Automated micrograph collection was performed using Leginon software (Suloway et al., 2005), collecting 2536 and 1740 total movies for LMNG-solubilized and nanodisc-embedded OSCA1.2, respectively. Movies were aligned and dose-weighted using MotionCor2 (Zheng et al., 2017).\n\n### Cryo-EM image processing\n\nImage assessment and masking of dose-weighted micrographs was performed using EMHP (Berndsen et al., 2017) and CTF values were obtained with Gctf on non-dose-weighted micrographs (Zhang, 2016). A small subset of micrographs at a range of defocus values were used for manual picking and 2D classification in RELION-2.1 (Kimanius et al., 2016) to generate templates for the dataset. For LMNG-solubilized OSCA1.2, template picking on 1357 assessed micrographs was done in RELION-2.1 and followed by particle extraction. Particles were imported into cryoSPARC v0.6.5 (Punjani et al., 2017). For downstream image processing, all parameters in cryoSPARC were kept as default unless otherwise stated. 326,398 particles were subjected to ab-initio reconstruction requesting three classes. Homogeneous refinement with C2 symmetry imposed was performed using the particles and output structure of the best class (low pass filtered to 30 \u00c5) as reference. Particles from the best two classes from the initial ab-initio reconstruction run were then subjected to a second round of ab-initio reconstruction, this time requesting four classes. The best two classes (134,337 particles) were refined with C2 symmetry using the initial model obtained from the previous refinement, resulting in the final 3.5 \u00c5 resolution map. For nanodisc-embedded OSCA1.2, templates were generated as previously described, and particles were picked and extracted in RELION-2.1 on 1211 micrographs. 788,948 template-picked particles were imported into cryoSPARC. One round of 2D classification was performed and best 2D classes were selected (675,536 particles). Two consecutive rounds of ab-initio reconstruction requesting three classes were performed, and particles belonging to the best class were taken for further processing. 92,280 particles from the best class from the last round ab-initio reconstruction were subjected to homogeneous refinement with C2 symmetry imposed using the final LMNG solubilized map low pass filtered 30 \u00c5 as an initial model, resulting in a 3.2 \u00c5 resolution\u00a0map. To improve quality of the map, particles from micrographs with an estimated resolution (calculated by Gctf) worse than 5 \u00c5 were excluded from the dataset. The remaining 91,729 particles were re-extracted and imported into cryoSPARC, followed by 2D classification. To obtain an initial model based on this dataset, C2 symmetry imposed homogeneous refinement was performed on particles from the best 2D classes (91,729 particles) using the LMNG-solubilized OSCA1.2 structure low pass filtered to 30 \u00c5 as the reference model. Subsequently, this model and its particles were used for heterogeneous refinement (three classes). Best 3D classes were pooled together and refined, resulting in a 3.2 \u00c5 map (76,797 particles). Particles for this map were exported from cryoSPARC and per particle CTF was estimated (Zhang, 2016). A first round of masked refinement was performed in RELION-2.1 using the map generated in cryoSPARC (low-pass filtered to 40 \u00c5) as a reference. The output map from this refinement was then used to create a new mask, which was used for a second round of 3D refinement in RELION-2.1, resulting in a 3.1 \u00c5 resolution map. Using the parameter --solvent_correct_fsc was useful for obtaining a higher resolution structure.\n\n### Model building and refinement\n\nManual model building of OSCA1.2 was carried out in coot (Emsley and Cowtan, 2004), iterated with real space refinement using phenix (Adams et al., 2010) and Rosetta (Wang et al., 2016). The atomic model was first built and refined against the 3.1 \u00c5 resolution map of nanodisc-embedded OSCA1.2 sharpened to a b-factor of \u221281 \u00c52 automatically determined by RELION-2.1 postprocessing (Kimanius et al., 2016). Registry was initially aided by loose homology of TM4, TM5 and TM6 to mouse TMEM16A (Paulino et al., 2017a) (PDB ID: 5OYB). The refined structure of nanodisc-embedded OSCA1.2 was then docked into the 3.5 \u00c5 resolution map of LMNG-solubilized OSCA1.2, sharpened to a b-factor of \u2212170 \u00c52 in cryoSPARC, then manually adjusted and re-refined. For real space refinement using Rosetta (Wang et al., 2016), the Relax protocol was used, requesting an output of 157 refined structural models. The top scoring structure was chosen after evaluation with MolProbity (Chen et al., 2010), EMRinger (Barad et al., 2015), and manual inspection. In each structure, the model includes residues 3\u201350, 71\u2013122, 156\u2013401, 420\u2013490, 502\u2013717, totaling 634 of 771 residues in the full-length sequence of OSCA1.2. Structures were validated by MolProbity (Chen et al., 2010), EMRinger (Barad et al., 2015), and by computing map-to-model FSC plots using phenix.mtriage (Afonine et al., 2018). Validations were completed with all side chains in the model. However, side chains of residues 268\u2013287 in the membrane hook were truncated to \u00df-carbon in the deposited models because of relatively poor density in this region. Structural figures were made in PyMOL (Schrodinger, 2015) or UCSF Chimera (Pettersen et al., 2004). Pore dimensions were calculated using HOLE (Smart et al., 1996). Alignment of the amino acid sequences was done using Clustal Omega (Sievers et al., 2011) and represented using ESPript 3.0 (Robert and Gouet, 2014).\n\n### Molecular dynamics simulations\n\nMolecular dynamics simulations were performed using GROMACS 5.0.2 (Abraham et al., 2015) (www.gromacs.org) based on the nanodisc-embedded structure. MemProtMD (Stansfeld et al., 2015) was used to convert the structure into a coarse-grained (CG) representation using the MARTINI 2.2 (de Jong et al., 2013) force field, which was then embedded in a band of randomly oriented POPC molecules. Water and 0.15 M NaCl were then added to the periodic simulation box. Initial 100 ns simulation with protein backbone beads position restrained permitted lipid self-assembly (force constant 1000 kJ mol\u20131 nm\u20132). The position restraints were then removed for five runs of a 1-\u00b5s equilibrium simulation, during which a simple elastic network based on the standard Martini topology (Periole et al., 2009) with a force constant 1000 kJ mol\u20131 nm\u20132 was applied to the protein (lower and upper cut-off were 5 and 9 \u00c5). Protein-lipid contact analysis was performed with a locally written script that employed a 6 \u00c5 cut-off, based on the last 800 ns of the simulation. Final contact values were reported as an average of the two subunits in the five runs. We then converted the final frame of one 1 \u00b5s CG simulation to atomistic (AT) detail using a fragment-based protocol CG2AT-Align (Stansfeld and Sansom, 2011) (force field: OPLS united atom (Robertson et al., 2015)), solvated again in TIP4P water (Neumann, 1986) with 150 mM NaCl. We then performed a 250 ns equilibrium simulation with protein non-hydrogen atoms position restrained (force constant as above) in the initial 50 ns only. All CG and AT were performed as NPT ensembles held at 310 K (except CG lipid assembly at 323 K) and 1 bar. The time-step for CG and AT simulations were 20 and 2 fs respectively. For the AT simulation, a velocity-rescaling thermostat (Bussi et al., 2007) with a coupling constant of 0.1 ps, and a semi-isotropic Parrinello-Rahman barostatR with a coupling constant of 1 ps and a compressibility of 4.5\u00a0\u00d7\u00a010\u20135 bar\u20131 were used. The LINCS algorithm (Hess, 2008) was used to constrain all covalent bonds. Electrostatics were modelled using a Particle Mesh Ewald (PME) model (Essmann et al., 1995) whereas van der Waals\u2019 interactions were modelled using a cut-off scheme, both with cut-off at 1 nm. Simulations figures were created with VMD (Humphrey et al., 1996) and PyMOL (Schrodinger, 2015). All figures of simulations represent the final snapshot of the AT simulation unless otherwise stated.\n\n### Generation of mutant, cell culture and transfections\n\nThe E531A substitution in OSCA1.2 was generated using Q5 Site-Directed Mutagenesis Kit (New England BioLabs) according to the manufacturer\u2019s instruction and confirmed by full-length DNA sequencing. OSCA1.2-PP-EGFP and OSCA1.2(E531A)-PP-EGFP were transfected and tested in Piezo1-knockout (P1KO) HEK293T cells. HEK293T-P1KO cells were generated in house using CRISPR\u2013Cas9 nuclease genome editing technique as described previously (Dubin et al., 2017; Lukacs et al., 2015), and were negative for mycoplasma contamination. Cells were grown in DMEM containing 4.5 mg mL\u22121 glucose, 10% fetal bovine serum, 50 U mL\u22121 penicillin and 50 \u03bcg mL\u22121 streptomycin. Cells were plated onto 12 mm round glass poly-D-lysine coated coverslips placed in 24-well plates and transfected using Lipofectamine 2000 (Invitrogen) according to the manufacturer's instruction. All plasmids were transfected at a concentration of 600 ng mL\u22121. Cells were recorded from 24 to 48 hr after transfection. The PP-EGFP fusion at the C-terminus of the protein did not affect channel expression or MA current properties.\n\n### Electrophysiology\n\nStretch-activated currents were recorded in the cell-attached patch-clamp configuration using an\u00a0Axopatch 200B amplifier (Axon Instruments). Currents were filtered at 2 kHz and sampled at 20 kHz. Leak currents before mechanical stimulations were subtracted off-line from the current traces. Membrane patches were stimulated with a 500 ms negative pressure pulse through the recording pipette using Clampex-controlled pressure clamp HSPC-1 device (ALA scientific). Since the single-channel amplitude is independent of the pressure intensity, the most optimal pressure stimulation was used to elicit responses that allowed single-channel amplitude measurements. These stimulation values were largely dependent on the number of channels in a given patch of the recording cell. Single-channel amplitude at a given potential was measured from trace histograms of 5\u201310 repeated recordings. Histograms were fitted with Gaussian equations using Clampfit 10.6 software. Single-channel slope conductance for each individual cell was calculated from linear regression curve fit to single-channel I\u2013V plots.\n\nFor cell-attached patch-clamp recordings, external solution used to zero the membrane potential consisted of (in mM) 140 KCl, 1 MgCl2, 10 glucose and 10 HEPES (pH 7.3 with KOH). Recording pipettes were of 1\u20133 M\u03a9 resistance when filled with standard solution composed of (in mM) 130 mM NaCl, 5 KCl, 1 CaCl2, 1 MgCl2, 10 TEA-Cl and 10 HEPES (pH 7.3 with NaOH).\n\n### Data and materials availability\n\nCryo-EM maps of OSCA1.2 in nanodiscs and LMNG have been deposited to the Electron Microscopy Data Bank under accession codes 9112 and 9113. Atomic coordinates of OSCA1.2 in nanodiscs and LMNG have been deposited to the PDB under IDs 6MGV and 6MGW. All other data are available upon request to the corresponding author(s).\n",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "3e88b9d9-b8d0-4ebc-8828-393d5c73d8e9",
+      "submission_id": "0ebf1151-294e-4ffa-9b09-c764a8904150",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Baron Chanda, University of Wisconsin-Madison United States\n\nReviewers:\n- Ryan Hibbs, UT Southwestern Medical Center United States\n- Raimund Dutzler, University of Z\u00fcrich Switzerland\n\n## Review text\n\nDOI: [10.7554/eLife.41845.036](https://doi.org/10.7554/eLife.41845.036)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nCongratulations, we are pleased to inform you that your article, \"Cryo-EM structure of the mechanically activated ion channel OSCA1.2\", has been accepted for publication in eLife.\n\nIn their manuscript, the authors describe the structure of the mechanically activated channel OSCA1.2 determined by cryo-EM in detergent and lipid nanodiscs. The data is of very high quality and both structures appear to be well refined. Whereas the bulk of the functional data supporting the conclusions are presented in an accompanying manuscript, the work also includes the functional characterization of a putative pore-lining mutant and data from molecular dynamics simulations that both support the putative location of the pore. Although this pore is discontinuous, as expected for a stable closed conformation in the absence of force, the proposal is credible. In summary, I think that this is a very exciting study, which describes a novel architecture of a mechanically activated membrane protein. The recently published structure of a homolog does in no way compromise the general interest of this work.\n\nMinor comments are listed below:\n\n1) Please specify which PEI was used in large-scale transfections, in Materials and methods.\n\n2) There are a couple of Ramachandran outliers that should be fixed (one lysine per chain in the membrane hook).\n\n3) Please provide a bit more detail (in the Materials and methods) on how Rosetta was used in model refinement.\n\n4) Figure 1\u2014figure supplement 1A, H: is the y-axis trp fluorescence or A280?\n\n5) Figure 1\u2014figure supplement 1C, J: were the apparently junk classes included in refinement? For example, panel J, row 3, column 1?\n\n6) Figure 1\u2014figure supplement 2: at the final step, can you please elaborate a bit more on what is meant by Relion 3D autorefine x2? Detail added in the legend or in the Materials and methods would be fine.\n\n7) I am generally curious about confidence in positioning of anionic side chains proposed to be important in conformational transitions or permeation. Specifically, please provide a figure panel or supplement panel that shows EM density quality for side chains: Figure 2\u2014figure supplement 2C, in particular the E531 and its electrostatic interactions; D523 vicinity in Figure 3C. If density for these residues is clearly displayed already in Figure 1\u2014figure supplement 3, please just indicate them with an arrow or asterisk. The equivalent residue to E531 appears to have been modeled quite differently in the recent NSMB paper (Zhang et al., 2018) on OSCA channels \u2013 it may be that the density is simply not clear in one or both cases.\n\n8) It should be mentioned whether the data shows bound lipids in the vicinity of the protein, particularly at the region between the two subunits. It would also be interesting to learn more about features of the lipid environment surrounding the dimeric protein from a low-pass filtered map of the protein in nanodiscs. Is there any evidence that protein induces distortions of the membrane environment as observed in MD simulations?\n\n9) Since the MD simulations are an important part of the work, they might deserve better coverage in the Results. It can be expected that the gap between subunits would be filled with lipids and the wide entrances to the pore region would be occupied by water. Is this not already the case in the initial setups used for simulation? Was the equilibration of the system the only purpose of the atomistic simulations? In Figure 1\u2014figure supplement 6, the authors show snapshot after 50 ns of simulations. It would be interesting to know what has changed in the solvent, protein and membrane region compared to the starting structure.\n\n10) The authors speculate that gap between two helices at the intracellular part of the pore leading to its exposure to the membrane might play a role during channel activation. It could be mentioned that a similar opening is found in TMEM16A, which has so far not been described to be mechanically gated.\n\n11) The authors emphasize the similarity between detergent and nanodisc structures in the Results but propose that differences between both structures might indicate their movements during activation in the Discussion. This is confusing. I suggest that the small differences between both structures could already be better described in the Results.\n\n12) Results, fifth paragraph: Ca2+-activation in TMEM16A involves an \u03b1-to-\u03c0 transition.\n\n13) It would be helpful to show Figure 3\u2014figure supplement 1A as stereo figure.\n",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "93afff75-98b0-4892-82cf-07fdcbc331ad",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C1",
+      "claim": "OSCA/TMEM63s are a newly-identified family of eukaryotic mechanically activated ion channels opened by membrane tension.",
+      "claim_type": "EXPLICIT",
+      "source": "OSCA/TMEM63s are a newly-identified family of eukaryotic mechanically activated ion channels opened by membrane tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a companion paper (Murthy et al., 2018) that characterizes these proteins as mechanically activated ion channels.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "e1d29e35-fc25-4ac3-9d2d-c535b9ad950a",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C2",
+      "claim": "OSCA1.2 has a dimeric architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of OSCA1.2 reveals a trapezoid-shaped homodimer with a two-fold symmetry axis perpendicular to the membrane (Figure 1A\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly supported by cryo-EM structural data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "e7a40b06-1575-4243-9fee-22abd439f83f",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C3",
+      "claim": "OSCA1.2 contains eleven transmembrane helices per subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we elucidate high resolution cryo-electron microscopy structures of OSCA1.2, revealing a dimeric architecture containing eleven transmembrane helices per subunit and surprising topological similarities to TMEM16 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cryo-EM structure determination and model building described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "dba17980-8011-4604-b4eb-84129dae7c18",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C4",
+      "claim": "OSCA1.2 has topological similarities to TMEM16 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we elucidate high resolution cryo-electron microscopy structures of OSCA1.2, revealing a dimeric architecture containing eleven transmembrane helices per subunit and surprising topological similarities to TMEM16 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The structural comparison between OSCA1.2 and TMEM16 proteins is demonstrated through cryo-EM data and structural alignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "e4a73974-be88-4eea-a579-99e3aeaf0bfe",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C5",
+      "claim": "A conserved acidic residue (E531) is a determinant of OSCA1.2 channel conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "We locate the ion permeation pathway within each subunit by demonstrating that a conserved acidic residue is a determinant of channel conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mutagenesis experiments showing that E531A mutation decreases single-channel conductance by 1.6-fold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "1c44250c-0e92-42e9-8219-57986f86dc08",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C6",
+      "claim": "Molecular dynamics simulations reveal membrane interactions suggesting the role of lipids in OSCA1.2 gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamics simulations reveal membrane interactions, suggesting the role of lipids in OSCA1.2 gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MD simulation data showing lipid molecules occupying specific regions of the protein structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "0d4cfdf1-36ab-4b71-99a0-3bb424951524",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C7",
+      "claim": "Plants with mutant OSCA1 have impaired osmotic stress signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants with mutant OSCA1 have impaired osmotic stress signaling (Yuan et al., 2014), implying that OSCAs function as sensors of osmotic-stress induced mechanical force in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yuan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "13a356d9-fcad-46df-9924-2d44db83fd6a",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C8",
+      "claim": "TMEM63 proteins are animal orthologues of OSCA that produce MA currents when expressed in na\u00efve cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM63 proteins are animal orthologues of OSCA that produce MA currents when expressed in na\u00efve cells (Murthy et al., 2018), but their physiological roles remain undetermined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the companion paper Murthy et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "c9ef47ae-b47b-4297-b932-84336b87e2dc",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C9",
+      "claim": "Cryo-EM reconstructions of OSCA1.2 in lipidic nanodiscs were determined at 3.1 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We purified Arabidopsis thaliana OSCA1.2 expressed in HEK293F cells and determined cryo-EM reconstructions in lipidic nanodiscs and Lauryl Maltose Neopentyl Glycol (LMNG) detergent micelle with cholesteryl hemisuccinate (CHS) at 3.1 and 3.5 \u00c5 resolution, respectively (Figure 1A\u2013D, Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the cryo-EM data collection and processing described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "079c3bc0-b1d9-4778-9c85-6a7c19fb7781",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C10",
+      "claim": "Cryo-EM reconstructions of OSCA1.2 in LMNG detergent micelle with CHS were determined at 3.5 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We purified Arabidopsis thaliana OSCA1.2 expressed in HEK293F cells and determined cryo-EM reconstructions in lipidic nanodiscs and Lauryl Maltose Neopentyl Glycol (LMNG) detergent micelle with cholesteryl hemisuccinate (CHS) at 3.1 and 3.5 \u00c5 resolution, respectively (Figure 1A\u2013D, Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the cryo-EM data collection and processing described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "1f5e102d-2450-47fa-ac7d-61255ca88cb4",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C11",
+      "claim": "The resulting density maps allowed building of 82% of the full-length OSCA1.2 sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting density maps allowed building of 82% of the full-length OSCA1.2 sequence (Figure 1\u2014figure supplement 3, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the model building process and the quality of the cryo-EM maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "cc7c42dc-26cf-4365-8179-6c5345428113",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C12",
+      "claim": "Structures of OSCA1.2 in nanodisc and LMNG were nearly identical (RMSD = 0.81 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "Structures of OSCA1.2 in nanodisc and LMNG were nearly identical (RMSD = 0.81 \u00c5, Figure 1\u2014figure supplement 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison data shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "26a20421-9007-4a8c-bae0-8ba16d70dc4f",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C13",
+      "claim": "The purified OSCA1.2 channel reconstituted in liposomes retains MA ion channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the purified channel reconstituted in liposomes retains MA ion channel activity (Murthy et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by functional assays described in the companion paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "36db0fc5-2648-4133-ad1c-8ca12d22d2dc",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C14",
+      "claim": "The OSCA1.2 dimer is 139 \u00c5 across at its widest dimension.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimer is 139 \u00c5 across at its widest dimension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This measurement is derived from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "ba33927f-c69e-463c-aa80-effef0dbf14c",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C15",
+      "claim": "The transmembrane domain of each OSCA1.2 monomer contains eleven TM helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The bulk of the protein lies within the membrane; the transmembrane (TM) domain (TMD) of each monomer contains eleven TM helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from the cryo-EM structure and model building.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "b322bfe1-d158-46ab-8b24-c8fede359402",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C16",
+      "claim": "The intracellular domain of OSCA1.2 extends ~31 \u00c5 below the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Linkers between TM helices and a C-terminal region come together to form an intracellular domain (ICD) that extends ~31 \u00c5 below the membrane (Figure 1A\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This measurement is derived from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "79de5e9e-d8a7-4b30-8a79-795eac0502aa",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C17",
+      "claim": "The ICD contributes the sole dimeric interface in OSCA1.2, with a buried surface area of 1,331 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The ICD contributes the sole dimeric interface in OSCA1.2, with a buried surface area of 1,331 \u00c52 (Figure 1\u2014figure supplement 4D) (Krissinel and Henrick, 2007), only 4% of the total surface area of the dimer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the structure using established methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "c0c2df21-319d-4aa7-8d76-babc118a2c3d",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C18",
+      "claim": "Within the membrane, inter-subunit contacts in OSCA1.2 are nonexistent.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the membrane, inter-subunit contacts are nonexistent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the cryo-EM structure showing a cleft between subunits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "51a329d9-0b9c-4106-a768-bb0b4118ecc1",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C19",
+      "claim": "A cleft with minimum width of approximately 8 \u00c5 separates one OSCA1.2 subunit's TMD from the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, a cleft with minimum width of approximately 8 \u00c5 separates one subunit's TMD from the other (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This measurement is derived from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "85353bab-11e4-4776-8451-0361f6dcb3f7",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C20",
+      "claim": "AT-MD simulations of OSCA1.2 in a POPC bilayer consistently place lipid molecules inside the inter-subunit cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, AT-MD simulations of OSCA1.2 in a phospholipid (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine, POPC) bilayer, consistently place lipid molecules inside the cleft (Figure 1I, Figure 1\u2014figure supplement 5A, Video 2), indicating a role for lipids in stabilizing the dimeric assembly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "8cc4832f-9c0a-4820-8781-1d0a9f80ce80",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C21",
+      "claim": "Lipids play a role in stabilizing the dimeric assembly of OSCA1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, AT-MD simulations of OSCA1.2 in a phospholipid (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine, POPC) bilayer, consistently place lipid molecules inside the cleft (Figure 1I, Figure 1\u2014figure supplement 5A, Video 2), indicating a role for lipids in stabilizing the dimeric assembly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from MD simulation results showing lipids occupying the inter-subunit cleft.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "a87ed8a9-307e-4046-a1db-28aa7deea4a9",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C22",
+      "claim": "The N-terminus of OSCA1.2 faces the extracellular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminus of OSCA1.2 faces the extracellular environment while the C-terminus is intracellular.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This topology is determined from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "20454a0e-1e04-4164-86a1-5304945d91de",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C23",
+      "claim": "The C-terminus of OSCA1.2 is intracellular.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminus of OSCA1.2 faces the extracellular environment while the C-terminus is intracellular.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This topology is determined from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "83969af7-d923-4604-852b-46b06efd62b6",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C24",
+      "claim": "The majority of the ICD is comprised of the second intracellular linker (IL2), which is over 150 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the ICD is comprised of the second intracellular linker (IL2), which is over 150 residues and contains a 4-stranded antiparallel \u00df-sheet (IL2\u00df1-IL2\u00df4) with well-conserved sequences across the OSCA family (Figure 2\u2014figure supplements 1, 2 and 3), and four helices (IL2H1-IL2H4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from the cryo-EM structure and sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "19fad2cc-d101-4a46-9c78-269254fbc1d5",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C25",
+      "claim": "IL2 contains a 4-stranded antiparallel \u00df-sheet (IL2\u00df1-IL2\u00df4) with well-conserved sequences across the OSCA family.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the ICD is comprised of the second intracellular linker (IL2), which is over 150 residues and contains a 4-stranded antiparallel \u00df-sheet (IL2\u00df1-IL2\u00df4) with well-conserved sequences across the OSCA family (Figure 2\u2014figure supplements 1, 2 and 3), and four helices (IL2H1-IL2H4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data and sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "d368ea6d-1e04-43bb-be4e-ab3ed9fed386",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C26",
+      "claim": "Ten of the eleven TM helices of OSCA1.2 closely follow the topology and organization of mouse TMEM16A Ca2+-activated chloride channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, our structure reveals that the structural homology extends beyond the C-terminal region; ten of the eleven TM helices of OSCA1.2 closely follow the topology and organization of mouse TMEM16A (mTMEM16A) Ca2+-activated chloride channel (Dang et al., 2017; Paulino et al., 2017a; Paulino et al., 2017b) and Nectria haematococca TMEM16 (nhTMEM16), which is a Ca2+-dependent lipid scramblase (Brunner et al., 2014) and nonselective ion channel (Lee et al., 2016) (Figure 2C; Figure 2D, Figure 2\u2014figure supplement 4A; Figure 2\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison with published TMEM16 structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "fd4bb60e-9b42-434e-9fa5-740d14de7519",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C27",
+      "claim": "OSCA1.2 has an additional N-terminal TM helix (TM0) positioned at the periphery of the TMD relative to TMEM16 structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to these TMEM16 structures, OSCA1.2 has an additional N-terminal TM helix positioned at the periphery of the TMD (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from structural comparison between OSCA1.2 and TMEM16 proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "30b9305c-9883-4c33-90cb-e86c196f939c",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C28",
+      "claim": "The relative orientation of one OSCA1.2 subunit to the other is different from TMEM16A.",
+      "claim_type": "EXPLICIT",
+      "source": "Though TM1-TM10 of OSCA1.2 and TMEM16A align well at the level of a single subunit, the relative orientation of one subunit to the other is different (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by structural alignment and comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "383d7b2d-7228-4f4c-ba13-0272c665b4f7",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C29",
+      "claim": "The TMD of the OSCA1.2 dimer is more than 20 \u00c5 wider than mTMEM16A or nhTMEM16.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of this distinct dimeric packing, the TMD of the OSCA1.2 dimer is more than 20 \u00c5 wider than mTMEM16A or nhTMEM16.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This measurement is derived from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "86181a15-3277-487c-9d51-6e36265d6c5d",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C30",
+      "claim": "The intracellular domain of OSCA1.2 is mostly comprised of IL2, which connects TM2 and TM3.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the intracellular domain of OSCA1.2 is mostly comprised of IL2, which connects TM2 and TM3, while the intracellular domains of mTMEM16a and nhTMEM16 are formed primarily by the N- and C- termini.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "a57a05c2-5d0b-4add-b830-05105a26617d",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C31",
+      "claim": "The regulatory Ca2+ binding site conserved across the TMEM16 family does not have a chemical environment conducive for Ca2+ binding in OSCA1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the regulatory Ca2+ binding site composed of acidic and polar residues conserved across the TMEM16 family (Brunner et al., 2014) does not have a chemical environment conducive for Ca2+ binding in OSCA1.2 (Figure 2\u2014figure supplement 4C), consistent with distinct modes of regulation (mechanical activation vs. Ca2+ dependence).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis and comparison with TMEM16 Ca2+ binding sites.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "89766837-9060-4877-acdc-28dc118b7639",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C32",
+      "claim": "OSCA1.2 has two pores, one within each subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Topological similarities with mTMEM16A (Figure 2) suggest that OSCA1.2 also has two pores and could conduct ions through a structurally analogous pathway lined by TM3-TM7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural similarity to TMEM16A and supported by mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "3b284c88-2aa5-4162-8a50-360a1673e0fc",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C33",
+      "claim": "The existence of two pores per OSCA1.2 dimer is consistent with the presence of a single subconductance state in stretch-activated single-channel currents.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of two pores per OSCA1.2 dimer is consistent with the presence of a single subconductance state in stretch-activated single-channel currents (Murthy et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data from the companion paper.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "bc4cf729-4af4-497e-bd64-1d0e867b3df6",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C34",
+      "claim": "The putative pore of OSCA1.2 has an opening greater than 12 \u00c5 wide towards the extracellular side.",
+      "claim_type": "EXPLICIT",
+      "source": "Towards the extracellular side, this putative pore has an opening greater than 12 \u00c5 wide, which narrows into a 'neck' approximately 15 \u00c5 down the conduction pathway (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated using the HOLE program on the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "1d80c451-71f2-4813-baf8-c37b533def4c",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C35",
+      "claim": "The neck of the OSCA1.2 pore extends for over 10 \u00c5 and reaches a minimum van der Waals radius of 0.5 \u00c5, closing the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The neck extends for over 10 \u00c5 and reaches a minimum van der Waals radius of 0.5 \u00c5, closing the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated using the HOLE program on the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "9b4da6cc-3274-4a85-a744-df7861bccce6",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C36",
+      "claim": "Mostly hydrophobic residues (I393, V396, A400, L434, L438, F471, V476, and F515) line the pore's constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Mostly hydrophobic residues (I393, V396, A400, L434, L438, F471, V476, and F515) line the pore's constriction, as well as several charged and polar residues (Q397, S480, Y468, K512, and D523).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "ba8cb17f-5b15-4822-971d-b54c7942e11e",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C37",
+      "claim": "A pair of \u03c0-helical turns (in TM5 and TM6a) are nearby the pore's neck region.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a pair of \u03c0-helical turns (in TM5 and TM6a) are nearby the pore's neck region (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "a65fe58a-1966-4d0e-8bba-9f0503e0b517",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C38",
+      "claim": "\u03c0-to-\u03b1 transitions at the \u03c0-helical turn positions could be associated with gating and, potentially, channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Because \u03c0-helices are energetically unstable, we speculate that \u03c0-to-\u03b1 transitions at these positions could be associated with gating and, potentially, channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the known instability of \u03c0-helices and structural observations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "bb59c0e2-44d6-4bfd-81e6-86f56fe0c11a",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C39",
+      "claim": "There are \u03c0-helical turns at highly similar locations of TM6 in mTMEM16A and nhTMEM16.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this idea, there are \u03c0-helical turns at highly similar locations of TM6 in mTMEM16A (Paulino et al., 2017a) and nhTMEM16 (Brunner et al., 2014), and a \u03b1-to-\u03c0 transition in TM6 underlies Ca2+-dependent activation in mTMEM16A (Paulino et al., 2017a) (Figure 2\u2014figure supplement 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by published structures of TMEM16 proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "73fc8687-90ca-4c9c-ba65-5cf56e122fce",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C40",
+      "claim": "A \u03b1-to-\u03c0 transition in TM6 underlies Ca2+-dependent activation in mTMEM16A.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this idea, there are \u03c0-helical turns at highly similar locations of TM6 in mTMEM16A (Paulino et al., 2017a) and nhTMEM16 (Brunner et al., 2014), and a \u03b1-to-\u03c0 transition in TM6 underlies Ca2+-dependent activation in mTMEM16A (Paulino et al., 2017a) (Figure 2\u2014figure supplement 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by published structural studies of TMEM16A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "e618794c-fb94-4476-aa29-f7c78084f40a",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C41",
+      "claim": "The pore-lining helices of the epithelial calcium channel TRPV6 undergo \u03c0-to-\u03b1 helix transitions during gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the pore-lining helices of the epithelial calcium channel TRPV6 (McGoldrick et al., 2018) undergo \u03c0-to-\u03b1 helix transitions during gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to McGoldrick et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "a6f7daff-d8e0-4bd5-9f12-66d18adefcea",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C42",
+      "claim": "Below the neck, the OSCA1.2 pore widens, and the side chains of E531, R572, and T568 create a hydrophilic environment that could stabilize hydrated ions.",
+      "claim_type": "EXPLICIT",
+      "source": "Directly below the neck, the pore widens, and the side chains of E531, R572, and T568 create a hydrophilic environment that could stabilize hydrated ions (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the cryo-EM structure and represents a hypothesis about ion stabilization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "b9489431-5488-485c-8812-d102410fd07a",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C43",
+      "claim": "E531A mutation decreased the stretch-activated single-channel conductance by 1.6-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the mutation decreased the stretch-activated single-channel conductance by 1.6-fold, demonstrating that E531 contributes to the channel's ion permeation pathway (Figure 3F,G), and could play a role in binding or sequestering cations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological measurements comparing wildtype and mutant channels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "b6e7ba19-7cce-4dda-b86d-e97bc9f35a38",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C44",
+      "claim": "E531 contributes to the channel's ion permeation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the mutation decreased the stretch-activated single-channel conductance by 1.6-fold, demonstrating that E531 contributes to the channel's ion permeation pathway (Figure 3F,G), and could play a role in binding or sequestering cations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the functional effect of the E531A mutation on conductance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "085f2af5-dd1e-4c42-99af-474994f224a6",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C45",
+      "claim": "E531 could play a role in binding or sequestering cations.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the mutation decreased the stretch-activated single-channel conductance by 1.6-fold, demonstrating that E531 contributes to the channel's ion permeation pathway (Figure 3F,G), and could play a role in binding or sequestering cations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the acidic nature of E531 and its effect on conductance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "9e9b58c4-596c-44e6-abf5-701b54580786",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C46",
+      "claim": "TM3-TM7 most likely form the pore of OSCA1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, combining these mutagenesis data with structural homology to mTMEM16A (Paulino et al., 2017a; Paulino et al., 2017b), we conclude that TM3-TM7 most likely form the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on mutagenesis data, structural homology to TMEM16A, and MD simulations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "ab6a0d9a-63bf-4b95-a688-13ab95a4a052",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C47",
+      "claim": "MD simulations show hydration of the pore pathway being consistent with the pore radius profile from HOLE.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion is further supported by MD simulations showing hydration of the pore pathway being consistent with the pore radius profile from HOLE (Figure 1\u2014figure supplement 5B, Figure 3\u2014figure supplement 1C, Video 4, Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "c487c62e-3f83-434c-ae71-549e2c837f0d",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C48",
+      "claim": "OSCA1.2 has a hook-shaped loop that enters the membrane that intervenes IL2H2 and IL2H3.",
+      "claim_type": "EXPLICIT",
+      "source": "Two notable features present in OSCA1.2, but not TMEM16s, are a hook-shaped loop that enters the membrane that intervenes IL2H2 and IL2H3 (Figure 2A, Figure 4A), and a horizontal amphipathic helix in IL1 (IL1H1) that slightly deforms the membrane lower leaflet in MD simulations (Figure 4B, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "337d214b-845d-4d7d-8288-6c42549a1d01",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C49",
+      "claim": "OSCA1.2 has a horizontal amphipathic helix in IL1 (IL1H1) that slightly deforms the membrane lower leaflet in MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Two notable features present in OSCA1.2, but not TMEM16s, are a hook-shaped loop that enters the membrane that intervenes IL2H2 and IL2H3 (Figure 2A, Figure 4A), and a horizontal amphipathic helix in IL1 (IL1H1) that slightly deforms the membrane lower leaflet in MD simulations (Figure 4B, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from MD simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "4208cde1-23d1-482d-b18b-8d89b3f006a5",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C50",
+      "claim": "The hook and IL1H1 could be sensitive to membrane tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Their association with the cytoplasmic bilayer leaflet suggests these two features could be sensitive to membrane tension, akin to the N-terminal amphipathic helix in MscL (Bavi et al., 2016), and their movement could be coupled to channel conformation through their interactions with the TMD (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from their structural features and comparison to MscL.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "65cf1b12-5308-4d14-93d4-9e781ead1ee3",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C51",
+      "claim": "The lower region of the OSCA1.2 pore is exposed to the membrane and could permit lipid entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Another notable aspect of the OSCA1.2 structure, similar to TMEM16s, is that the lower region of the pore is exposed to the membrane and thus could permit lipid entry (Figure 3B, Figure 3\u2014figure supplement 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "41419f0b-82cf-4282-b20e-003f4562a977",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C52",
+      "claim": "In MD simulations, lipids occupy and occlude the cytoplasmic half of the OSCA1.2 pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in MD simulations, lipids occupy and occlude the cytoplasmic half of the pore, with their phosphate head groups interacting with four lysine residues on TM4 and TM6b (Figure 4C, Figure 1\u2014figure supplement 5C, Video 6, Video 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "771d2dbe-0c2f-416e-8b48-96c258cba0ab",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C53",
+      "claim": "Membrane tension might promote gating by affecting the lipid occupancy in the cytoplasmic pore region.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that membrane tension promotes gating by affecting the lipid occupancy in this region, analogous to proposed mechanistic models for TRAAK (Brohawn et al., 2014) and MscS (Pliotas et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on observations from MD simulations and comparison to other mechanosensitive channels.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "598a90ae-14dc-4589-9ee1-8283ae36bc61",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C54",
+      "claim": "A general principle of MA ion channels is that their cross-sectional area should increase in response to membrane tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a general principle of MA ion channels is that their cross-sectional area should increase in response to membrane tension (Guo and MacKinnon, 2017; Haswell et al., 2011; Phillips et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the field of mechanosensitive channels.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "0c736e61-5bb7-4198-9f19-60965f341c18",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C55",
+      "claim": "The absence of a dimeric protein-protein interface between membrane domains could allow OSCA1.2 to expand its cross-sectional area significantly in response to physiological lateral tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Qualitatively, the absence of a dimeric protein-protein interface between membrane domains (Figure 1I) could allow OSCA1.2 to expand its cross-sectional area significantly in response to physiological lateral tension without the energetic penalty of breaking inter-subunit interactions within the membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural observation of the inter-subunit cleft.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "cba79589-3f31-4012-8e35-b3e114541a08",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C56",
+      "claim": "Transmembrane-channel-like (TMC) proteins are pore-forming subunits of the hair cell mechanoelectrical transduction (MET) apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, transmembrane-channel-like (TMC) proteins, which are pore-forming subunits of the hair cell mechanoelectrical transduction (MET) apparatus (Fettiplace, 2016; Kawashima et al., 2011; Pan et al., 2013), are distantly related to the TMEM16 family and proposed to have the same topology (Ballesteros et al., 2018; Hahn et al., 2009; Medrano-Soto et al., 2018; Pan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "5a06aefa-1632-4f41-80da-42a30578dbff",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C57",
+      "claim": "TMC proteins are distantly related to the TMEM16 family and proposed to have the same topology.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, transmembrane-channel-like (TMC) proteins, which are pore-forming subunits of the hair cell mechanoelectrical transduction (MET) apparatus (Fettiplace, 2016; Kawashima et al., 2011; Pan et al., 2013), are distantly related to the TMEM16 family and proposed to have the same topology (Ballesteros et al., 2018; Hahn et al., 2009; Medrano-Soto et al., 2018; Pan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "4e424cfe-d5b2-4f3f-8b10-7fa60230cb28",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C58",
+      "claim": "The shared TM topology between TMEM16s and OSCA1.2 suggests a similar fold for TMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the molecular identity of the MET ion channel remains incompletely understood (Fettiplace, 2016), the shared TM topology between more distantly related TMEM16s and OSCA1.2 suggests a similar fold for TMCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural similarities observed between OSCA1.2 and TMEM16 proteins.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "f17bf537-0239-4001-b5b0-59a42d366beb",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C59",
+      "claim": "OSCA/TMEM63, TMEM16, and TMC all likely utilize a similar architectural scaffold to carry out various functions at the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore likely that OSCA/TMEM63, TMEM16, and TMC all utilize a similar architectural scaffold to carry out various functions at the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural similarities and evolutionary relationships.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "61c14716-f238-4698-8130-1f112cf2cfe1",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C60",
+      "claim": "E531A had maximal current responses comparable to wildtype OSCA1.2 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "E531A had maximal current responses comparable to wildtype channels (Figure 3D,E), and modestly faster inactivation kinetics (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "9b6867f4-65c8-4488-92f1-a627f644aacf",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C61",
+      "claim": "E531A had modestly faster inactivation kinetics compared to wildtype OSCA1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "E531A had maximal current responses comparable to wildtype channels (Figure 3D,E), and modestly faster inactivation kinetics (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological measurements showing inactivation time constants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "beda0043-4a1f-4cee-b250-7a858590e937",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C62",
+      "claim": "E531 is the only pore-facing acidic residue conserved in the pore region across the OSCA/TMEM63 families.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to examine E531, which is the only pore-facing acidic residue conserved in this region across the OSCA/TMEM63 families and thus could contribute to conductance (Figure 3C, Figure 2\u2014figure supplements 1, 2 and 3, Figure 2\u2014figure supplement 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment analysis across the OSCA/TMEM63 family.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "05d25047-d617-46a6-b785-00eda633515f",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C63",
+      "claim": "Cryo-EM structures of two other members of the OSCA/TMEM63 family, OSCA1.1 and OSCA3.1, were recently published after the initial BioRxiv deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that cryo-EM structures of two other members of the OSCA/TMEM63 family, OSCA1.1 and OSCA3.1 (Zhang et al., 2018), were recently published after our initial BioRxiv deposition (Jojoa-Cruz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the publication timeline and is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "6631874e-33b2-40a2-8c0c-462840c5194d",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C64",
+      "claim": "The model includes residues 3\u201350, 71\u2013122, 156\u2013401, 420\u2013490, 502\u2013717, totaling 634 of 771 residues in the full-length sequence of OSCA1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "In each structure, the model includes residues 3\u201350, 71\u2013122, 156\u2013401, 420\u2013490, 502\u2013717, totaling 634 of 771 residues in the full-length sequence of OSCA1.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the model building section of the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "22591e48-a714-49d6-9cff-feac065db15c",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C65",
+      "claim": "Codon optimized OSCA1.2 gene for expression in human cell lines was cloned into vector pcDNA3.1.",
+      "claim_type": "EXPLICIT",
+      "source": "For structural studies, codon optimized OSCA1.2 gene (UniProt ID: Q5XEZ5) for expression in human cell lines was cloned into vector pcDNA3.1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "4a98090b-2b6c-497c-b788-41414add5b3d",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C66",
+      "claim": "An EGFP tag was placed at the C terminus of OSCA1.2 and connected via a PreScission Protease cleavable linker.",
+      "claim_type": "EXPLICIT",
+      "source": "An EGFP tag was placed at the C terminus and connected to the gene via a PreScission Protease cleavable linker (LEVLFQGP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "79bd3469-6a84-41a8-a689-e2ce400ff82c",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C67",
+      "claim": "Typical yields of OSCA1.2 using the LMNG purification procedure were ~60 \u00b5g purified product per liter of HEK293F cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Typical yields of OSCA1.2 using this procedure were ~60 \u00b5g purified product per liter of HEK293F cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the protein purification methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "4dcf1aec-b9c3-4697-a8d3-5d50f8fa6ef4",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C68",
+      "claim": "Typical yields of OSCA1.2 in nanodiscs using the nanodisc purification procedure were ~30 \u00b5g purified product per liter of HEK293F cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Typical yields of OSCA1.2 in nanodiscs using this procedure were ~30 \u00b5g purified product per liter of HEK293F cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the protein purification methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "b82628b7-a7d8-4aa9-8721-8131eb9dd65e",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C69",
+      "claim": "The E531 mutation could alter pore structure and dynamics owing to the interactions of the E531 side chain with R572 and Y605.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the mutation could alter pore structure and dynamics owing to the interactions of the E531 side chain with R572 and Y605 (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural observations of E531 interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "c96d770a-7260-4633-844c-2c301e3ae27a",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C70",
+      "claim": "The PP-EGFP fusion at the C-terminus of OSCA1.2 did not affect channel expression or MA current properties.",
+      "claim_type": "EXPLICIT",
+      "source": "The PP-EGFP fusion at the C-terminus of the protein did not affect channel expression or MA current properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the construct used for electrophysiology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "b2db1754-3926-4b6b-a734-c99a0e54e369",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C71",
+      "claim": "Cryo-EM maps of OSCA1.2 in nanodiscs have been deposited to the Electron Microscopy Data Bank under accession code 9112.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM maps of OSCA1.2 in nanodiscs and LMNG have been deposited to the Electron Microscopy Data Bank under accession codes 9112 and 9113.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the data availability section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "4ba3c2d0-f458-43b3-96c2-b7fc066c9ab3",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C72",
+      "claim": "Cryo-EM maps of OSCA1.2 in LMNG have been deposited to the Electron Microscopy Data Bank under accession code 9113.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM maps of OSCA1.2 in nanodiscs and LMNG have been deposited to the Electron Microscopy Data Bank under accession codes 9112 and 9113.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the data availability section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "9dc39938-79c0-45c4-b5b3-be130778ee9e",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C73",
+      "claim": "Atomic coordinates of OSCA1.2 in nanodiscs have been deposited to the PDB under ID 6MGV.",
+      "claim_type": "EXPLICIT",
+      "source": "Atomic coordinates of OSCA1.2 in nanodiscs and LMNG have been deposited to the PDB under IDs 6MGV and 6MGW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the data availability section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "4b34e8f3-8086-4cbb-8989-cb4e9b68ed9b",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C74",
+      "claim": "Atomic coordinates of OSCA1.2 in LMNG have been deposited to the PDB under ID 6MGW.",
+      "claim_type": "EXPLICIT",
+      "source": "Atomic coordinates of OSCA1.2 in nanodiscs and LMNG have been deposited to the PDB under IDs 6MGV and 6MGW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the data availability section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "01603706-380e-4361-9636-b47ff1ebdc83",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C75",
+      "claim": "Mechanically activated ion channels underlie touch, hearing, shear-stress sensing, and response to turgor pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanically activated ion channels underlie touch, hearing, shear-stress sensing, and response to turgor pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of mechanosensation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "ab170c9a-9b0a-4190-80fc-35935654fee9",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C76",
+      "claim": "Mechanical stimuli such as touch, gravity, and osmotic pressure are sensed by mechanically activated (MA) ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanical stimuli such as touch, gravity, and osmotic pressure are sensed by mechanically activated (MA) ion channels (Haswell et al., 2011; Ranade et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "23a45737-4f83-4278-8253-c0402916a01d",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C77",
+      "claim": "OSCA/TMEM63 are not homologous to other known MA ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "OSCA/TMEM63 are not homologous to other known MA ion channels, and no previous study has addressed their molecular structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents the novelty of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "d4f0aa17-826a-4e59-86a1-831225b55f72",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C78",
+      "claim": "No previous study has addressed the molecular structure of OSCA/TMEM63 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "OSCA/TMEM63 are not homologous to other known MA ion channels, and no previous study has addressed their molecular structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents the novelty of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "feb1ea16-d5e2-40e3-9474-2351e56dbfc8",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C79",
+      "claim": "In MD simulations, intermittent permeation of water between L434 (TM4) and Y519 (TM6) was observed in subunit 1 when position restraints were removed after 50 ns.",
+      "claim_type": "EXPLICIT",
+      "source": "In subunit 1, intermittent permeation of water between L434 (TM4) and Y519 (TM6) were observed when position restraints were removed after 50 ns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from molecular dynamics simulation data described in Video 4 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "22988a45-eaf2-439b-8081-eaba2d3c463e",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C80",
+      "claim": "Subunit 2 of OSCA1.2 remains impermeable to water during the entire MD simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Subunit 2 remains impermeable to water during the entire simulation, in contrast to that in subunit 1 (Video 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from molecular dynamics simulation data described in Video 5 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "fc9a4170-b6ed-4cc6-ac53-e7e68f0590fc",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C81",
+      "claim": "The orientation of K435 rearranges to face the constricted region of the pore after the position restraints are removed after 50 ns in both subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "For both of the subunits, the orientation of K435 rearranges to face the constricted region of the pore after the position restraints are removed after 50 ns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from molecular dynamics simulation data described in Video 6 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "16285c9c-5a49-45cf-8b0e-d7d98e76cb40",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C82",
+      "claim": "Lipid flip-flop (scramblase activity) was not observed over the course of the MD simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid flip-flop (i.e. scramblase activity) was not observed over the course of the simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from molecular dynamics simulation data described in Video 1 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "cdc32202-b862-4a24-81ee-90d3ad2ac90d",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C83",
+      "claim": "The outer leaflet of the bilayer in the inter-subunit cleft region contains 18 PC molecules whilst the inner leaflet contains 14 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) Side view of the PC molecules in contact with both subunits at the dimer interface cleft, revealing an asymmetric bilayer between subunits. The outer leaflet of the bilayer in this region contains 18 PC molecules whilst the inner leaflet contains 14 molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from molecular dynamics simulation data shown in Figure 1\u2014figure supplement 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "ff326b7e-2a47-4d7c-adc2-c5758e9c4cee",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C84",
+      "claim": "The upper and lower leaflets in the inter-subunit cleft contain 13 and 9 POPC molecules respectively at the start of the AT simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here the upper and lower leaflets contain 13 and 9 POPC molecules respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from molecular dynamics simulation data described in Video 2 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "12f87dd6-90a9-48bc-9754-8ab75c80f718",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C85",
+      "claim": "The networks of lipids in both leaflets of the inter-subunit cleft are stable during the simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The networks of lipids in both leaflets are stable. No lipids either entered or left the cleft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from molecular dynamics simulation data described in Video 2 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "38480fab-1c19-4d68-99e3-a258cf83e39c",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "claim_id": "C86",
+      "claim": "Phosphate head groups of lipids are within hydrogen-bonding distance of lysine residues K435, K450, K536, and K544.",
+      "claim_type": "EXPLICIT",
+      "source": "(C) Left, a snapshot (also see Figure 4C) highlighting five lipids residing at the cytoplasmic side of the pore taken at 250 ns of the AT-MD simulation. Right, the same snapshot with the lipid phosphates highlighted and the lysine amine nitrogen to phosphate oxygen distance measured in \u00c5, suggesting phosphate head groups are within hydrogen-bonding distance of the lysine residues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from molecular dynamics simulation data shown in Figure 1\u2014figure supplement 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c654daaa-440e-4b98-aa8f-543877370eaa",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The cryo-EM structure of OSCA1.2 reveals a dimeric architecture with eleven transmembrane helices per subunit. Structures were determined at 3.1 \u00c5 (nanodiscs) and 3.5 \u00c5 (LMNG) resolution, allowing modeling of 82% of the full-length sequence. The dimer is 139 \u00c5 wide with an intracellular domain extending ~31 \u00c5 below the membrane, and the two subunits are separated by an ~8 \u00c5 cleft within the membrane with no inter-subunit contacts in the transmembrane region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C23 and C64 collectively provide strong structural evidence from high-resolution cryo-EM data. The resolution values, structural dimensions, and architectural features are directly supported by the experimental data and processing workflows described. The structures in two different environments (nanodiscs and LMNG) are nearly identical (RMSD = 0.81 \u00c5), providing additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "4c2a4e44-217a-444d-aaa1-3117284a456e",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "OSCA1.2 shares surprising topological similarities with TMEM16 proteins, with ten of eleven transmembrane helices following the topology of TMEM16A. However, OSCA1.2 has an additional N-terminal helix (TM0), a different dimeric packing arrangement resulting in a >20 \u00c5 wider transmembrane domain, a distinct intracellular domain architecture, and lacks the Ca2+ binding site conserved in TMEM16 proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C26-C31 are well-supported by structural comparisons with published TMEM16 structures. The structural alignments, measurements, and identification of key differences (additional TM0, wider dimer, different ICD composition, absence of Ca2+ binding site) are directly demonstrated through cryo-EM data and comparative analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "dded2664-bc76-4fc8-bc4c-ccfe4e66d7f3",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "OSCA1.2 contains two ion permeation pores, one within each subunit, formed by transmembrane helices TM3-TM7. The pore has a wide extracellular opening (>12 \u00c5) that narrows to a constricted neck region (minimum radius 0.5 \u00c5) lined by hydrophobic residues and featuring \u03c0-helical turns in TM5 and TM6a. Below the neck, the pore widens and contains hydrophilic residues including E531, R572, and T568.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37, C42, C46-C47 are supported by multiple lines of evidence: structural similarity to TMEM16A (which has two pores per dimer), HOLE program analysis of pore dimensions, identification of pore-lining residues from the structure, consistency with single subconductance states in electrophysiology, and validation through MD simulations showing water distribution consistent with the proposed pore pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "ea72e31a-58c0-4535-a91b-3759bad817d9",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The conserved acidic residue E531 is a determinant of OSCA1.2 channel conductance. The E531A mutation decreased single-channel conductance by 1.6-fold while maintaining comparable maximal current responses and modestly faster inactivation kinetics, demonstrating that E531 contributes to the ion permeation pathway and may play a role in cation binding or sequestration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C43-C45, C60-C62, and C69 are well-supported by functional electrophysiology data comparing wildtype and E531A mutant channels. The mutation specifically affects conductance without abolishing channel function, and E531 is the only conserved pore-facing acidic residue in this region across OSCA/TMEM63 families. The alternative explanation (C69) regarding structural effects is appropriately presented as a possibility based on observed interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "5e105254-830e-4c3b-b265-31210f064380",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations reveal extensive membrane-protein interactions suggesting roles for lipids in OSCA1.2 structure and gating. Lipids occupy the inter-subunit cleft and the cytoplasmic half of the pore, with phosphate head groups interacting with lysine residues. The hook-shaped loop and amphipathic helix IL1H1 are membrane-embedded features that could sense membrane tension. The absence of inter-subunit contacts in the membrane may allow area expansion in response to tension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C20-C21, C48-C53, C55, and C79-C86 are supported by extensive MD simulation data (both coarse-grained and atomistic) showing lipid positioning, protein-lipid interactions, and membrane deformations. However, the mechanistic interpretations regarding gating (C50, C53) are appropriately presented as hypotheses based on structural features and comparisons to other mechanosensitive channels. The simulations provide strong evidence for lipid-protein interactions but cannot directly demonstrate gating mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "a0d9d9b9-0ad7-4d0f-acff-c3641a3a443e",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "\u03c0-helical turns in TM5 and TM6a near the pore neck region could be associated with gating and channel opening through \u03c0-to-\u03b1 transitions. Similar \u03c0-helical turns exist in TMEM16A and nhTMEM16 at analogous positions, and \u03b1-to-\u03c0 transitions in TM6 underlie Ca2+-dependent activation in TMEM16A. The pore-lining helices of TRPV6 also undergo \u03c0-to-\u03b1 transitions during gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C41 present a reasonable hypothesis based on structural observations and comparisons to other channels. The presence of \u03c0-helical turns is directly observed (C37, C39), and the precedent from TMEM16A and TRPV6 is well-cited (C40-C41). However, C38 is explicitly speculative, and no direct experimental evidence is provided that these transitions occur during OSCA1.2 gating. This remains an untested mechanistic hypothesis requiring future validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "4c6d7860-e03e-44b8-8701-11a0db2da392",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The intracellular domain of OSCA1.2 is primarily composed of the second intracellular linker (IL2), which spans over 150 residues and contains a 4-stranded antiparallel \u03b2-sheet (IL2\u03b21-IL2\u03b24) with well-conserved sequences across the OSCA family, along with four helices (IL2H1-IL2H4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are directly supported by the cryo-EM structure and sequence alignment analysis across the OSCA family. The structural features of IL2 are clearly resolved in the density maps and the conservation is demonstrated through sequence alignments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "bfc95a8d-e63c-460a-a1d0-fa1bb3fc060b",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TMC proteins, which are pore-forming subunits of the hair cell mechanotransduction apparatus, are distantly related to TMEM16 proteins and proposed to share similar topology. The structural similarities between TMEM16 and OSCA1.2 suggest that OSCA/TMEM63, TMEM16, and TMC proteins likely utilize a similar architectural scaffold for diverse membrane functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C57 are well-supported by citations to published literature. However, C58-C59 are inferences based on the observed structural similarities between OSCA1.2 and TMEM16. While the logic is reasonable, no direct structural data for TMC proteins is presented, and the molecular identity of the MET channel remains incompletely understood (as acknowledged in the text). This represents an interesting hypothesis requiring validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "49f06b88-423c-4fd0-b945-6c3bc276c952",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "OSCA/TMEM63 proteins constitute a newly-identified family of eukaryotic mechanically activated ion channels. Plants with mutant OSCA1 show impaired osmotic stress signaling, and TMEM63 proteins are animal orthologues that produce mechanically activated currents. These proteins are not homologous to other known MA ion channels and their molecular structure had not been previously addressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C8, and C75-C78 establish the biological context and novelty of the study. These claims are supported by citations to prior work (companion paper Murthy et al., 2018 for C1, C8; Yuan et al., 2014 for C7) and represent established knowledge in the field (C75-C76). The novelty claims (C77-C78) are appropriate given the lack of prior structural studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "d6421dc6-135d-41a8-85a3-102c85865129",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A general principle of mechanically activated ion channels is that their cross-sectional area should increase in response to membrane tension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 represents established knowledge in the mechanosensitive channel field, supported by multiple citations (Guo and MacKinnon, 2017; Haswell et al., 2011; Phillips et al., 2009). This is a well-accepted principle used to interpret the structural features of OSCA1.2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "f60d2030-f85d-48a3-888d-c276325842fa",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cryo-EM structures of OSCA1.1 and OSCA3.1 were published by Zhang et al., 2018 after the initial BioRxiv deposition of this work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is a factual statement about publication timeline supported by appropriate citations. This provides important context regarding the priority and independence of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    },
+    {
+      "id": "3a0bc926-0914-465a-b981-1df5614a0280",
+      "content_id": "7b90f27d-c38c-406b-bb41-2830f2b92ac2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Methodological details including construct design (codon-optimized OSCA1.2 in pcDNA3.1 with C-terminal EGFP tag via PreScission Protease cleavable linker), protein yields (~60 \u00b5g/L for LMNG, ~30 \u00b5g/L for nanodiscs), validation that the PP-EGFP fusion does not affect function, and data deposition (EMDB codes 9112, 9113; PDB IDs 6MGV, 6MGW).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 and C70-C74 provide essential methodological information directly stated in the Materials and Methods and Data Availability sections. These are straightforward factual claims about experimental procedures and data sharing that are appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:58:42.829365Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e1d29e35-fc25-4ac3-9d2d-c535b9ad950a",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "e7a40b06-1575-4243-9fee-22abd439f83f",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "c9ef47ae-b47b-4297-b932-84336b87e2dc",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "079c3bc0-b1d9-4778-9c85-6a7c19fb7781",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "1f5e102d-2450-47fa-ac7d-61255ca88cb4",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "cc7c42dc-26cf-4365-8179-6c5345428113",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "26a20421-9007-4a8c-bae0-8ba16d70dc4f",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "36db0fc5-2648-4133-ad1c-8ca12d22d2dc",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "ba33927f-c69e-463c-aa80-effef0dbf14c",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "b322bfe1-d158-46ab-8b24-c8fede359402",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "79de5e9e-d8a7-4b30-8a79-795eac0502aa",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "c0c2df21-319d-4aa7-8d76-babc118a2c3d",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "51a329d9-0b9c-4106-a768-bb0b4118ecc1",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "a87ed8a9-307e-4046-a1db-28aa7deea4a9",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "20454a0e-1e04-4164-86a1-5304945d91de",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "6631874e-33b2-40a2-8c0c-462840c5194d",
+      "result_id": "c654daaa-440e-4b98-aa8f-543877370eaa"
+    },
+    {
+      "claim_id": "dba17980-8011-4604-b4eb-84129dae7c18",
+      "result_id": "4c2a4e44-217a-444d-aaa1-3117284a456e"
+    },
+    {
+      "claim_id": "d368ea6d-1e04-43bb-be4e-ab3ed9fed386",
+      "result_id": "4c2a4e44-217a-444d-aaa1-3117284a456e"
+    },
+    {
+      "claim_id": "fd4bb60e-9b42-434e-9fa5-740d14de7519",
+      "result_id": "4c2a4e44-217a-444d-aaa1-3117284a456e"
+    },
+    {
+      "claim_id": "30b9305c-9883-4c33-90cb-e86c196f939c",
+      "result_id": "4c2a4e44-217a-444d-aaa1-3117284a456e"
+    },
+    {
+      "claim_id": "383d7b2d-7228-4f4c-ba13-0272c665b4f7",
+      "result_id": "4c2a4e44-217a-444d-aaa1-3117284a456e"
+    },
+    {
+      "claim_id": "86181a15-3277-487c-9d51-6e36265d6c5d",
+      "result_id": "4c2a4e44-217a-444d-aaa1-3117284a456e"
+    },
+    {
+      "claim_id": "a57a05c2-5d0b-4add-b830-05105a26617d",
+      "result_id": "4c2a4e44-217a-444d-aaa1-3117284a456e"
+    },
+    {
+      "claim_id": "89766837-9060-4877-acdc-28dc118b7639",
+      "result_id": "dded2664-bc76-4fc8-bc4c-ccfe4e66d7f3"
+    },
+    {
+      "claim_id": "3b284c88-2aa5-4162-8a50-360a1673e0fc",
+      "result_id": "dded2664-bc76-4fc8-bc4c-ccfe4e66d7f3"
+    },
+    {
+      "claim_id": "bc4cf729-4af4-497e-bd64-1d0e867b3df6",
+      "result_id": "dded2664-bc76-4fc8-bc4c-ccfe4e66d7f3"
+    },
+    {
+      "claim_id": "1d80c451-71f2-4813-baf8-c37b533def4c",
+      "result_id": "dded2664-bc76-4fc8-bc4c-ccfe4e66d7f3"
+    },
+    {
+      "claim_id": "9b4da6cc-3274-4a85-a744-df7861bccce6",
+      "result_id": "dded2664-bc76-4fc8-bc4c-ccfe4e66d7f3"
+    },
+    {
+      "claim_id": "ba8cb17f-5b15-4822-971d-b54c7942e11e",
+      "result_id": "dded2664-bc76-4fc8-bc4c-ccfe4e66d7f3"
+    },
+    {
+      "claim_id": "a6f7daff-d8e0-4bd5-9f12-66d18adefcea",
+      "result_id": "dded2664-bc76-4fc8-bc4c-ccfe4e66d7f3"
+    },
+    {
+      "claim_id": "9e9b58c4-596c-44e6-abf5-701b54580786",
+      "result_id": "dded2664-bc76-4fc8-bc4c-ccfe4e66d7f3"
+    },
+    {
+      "claim_id": "ab6a0d9a-63bf-4b95-a688-13ab95a4a052",
+      "result_id": "dded2664-bc76-4fc8-bc4c-ccfe4e66d7f3"
+    },
+    {
+      "claim_id": "e4a73974-be88-4eea-a579-99e3aeaf0bfe",
+      "result_id": "ea72e31a-58c0-4535-a91b-3759bad817d9"
+    },
+    {
+      "claim_id": "b9489431-5488-485c-8812-d102410fd07a",
+      "result_id": "ea72e31a-58c0-4535-a91b-3759bad817d9"
+    },
+    {
+      "claim_id": "b6e7ba19-7cce-4dda-b86d-e97bc9f35a38",
+      "result_id": "ea72e31a-58c0-4535-a91b-3759bad817d9"
+    },
+    {
+      "claim_id": "085f2af5-dd1e-4c42-99af-474994f224a6",
+      "result_id": "ea72e31a-58c0-4535-a91b-3759bad817d9"
+    },
+    {
+      "claim_id": "61c14716-f238-4698-8130-1f112cf2cfe1",
+      "result_id": "ea72e31a-58c0-4535-a91b-3759bad817d9"
+    },
+    {
+      "claim_id": "9b6867f4-65c8-4488-92f1-a627f644aacf",
+      "result_id": "ea72e31a-58c0-4535-a91b-3759bad817d9"
+    },
+    {
+      "claim_id": "beda0043-4a1f-4cee-b250-7a858590e937",
+      "result_id": "ea72e31a-58c0-4535-a91b-3759bad817d9"
+    },
+    {
+      "claim_id": "b82628b7-a7d8-4aa9-8721-8131eb9dd65e",
+      "result_id": "ea72e31a-58c0-4535-a91b-3759bad817d9"
+    },
+    {
+      "claim_id": "1c44250c-0e92-42e9-8219-57986f86dc08",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "85353bab-11e4-4776-8451-0361f6dcb3f7",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "8cc4832f-9c0a-4820-8781-1d0a9f80ce80",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "c487c62e-3f83-434c-ae71-549e2c837f0d",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "337d214b-845d-4d7d-8288-6c42549a1d01",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "4208cde1-23d1-482d-b18b-8d89b3f006a5",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "65cf1b12-5308-4d14-93d4-9e781ead1ee3",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "41419f0b-82cf-4282-b20e-003f4562a977",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "771d2dbe-0c2f-416e-8b48-96c258cba0ab",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "0c736e61-5bb7-4198-9f19-60965f341c18",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "feb1ea16-d5e2-40e3-9474-2351e56dbfc8",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "22988a45-eaf2-439b-8081-eaba2d3c463e",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "fc9a4170-b6ed-4cc6-ac53-e7e68f0590fc",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "16285c9c-5a49-45cf-8b0e-d7d98e76cb40",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "cdc32202-b862-4a24-81ee-90d3ad2ac90d",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "ff326b7e-2a47-4d7c-adc2-c5758e9c4cee",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "12f87dd6-90a9-48bc-9754-8ab75c80f718",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "38480fab-1c19-4d68-99e3-a258cf83e39c",
+      "result_id": "5e105254-830e-4c3b-b265-31210f064380"
+    },
+    {
+      "claim_id": "a65fe58a-1966-4d0e-8bba-9f0503e0b517",
+      "result_id": "a0d9d9b9-0ad7-4d0f-acff-c3641a3a443e"
+    },
+    {
+      "claim_id": "bb59c0e2-44d6-4bfd-81e6-86f56fe0c11a",
+      "result_id": "a0d9d9b9-0ad7-4d0f-acff-c3641a3a443e"
+    },
+    {
+      "claim_id": "73fc8687-90ca-4c9c-ba65-5cf56e122fce",
+      "result_id": "a0d9d9b9-0ad7-4d0f-acff-c3641a3a443e"
+    },
+    {
+      "claim_id": "e618794c-fb94-4476-aa29-f7c78084f40a",
+      "result_id": "a0d9d9b9-0ad7-4d0f-acff-c3641a3a443e"
+    },
+    {
+      "claim_id": "83969af7-d923-4604-852b-46b06efd62b6",
+      "result_id": "4c6d7860-e03e-44b8-8701-11a0db2da392"
+    },
+    {
+      "claim_id": "19fad2cc-d101-4a46-9c78-269254fbc1d5",
+      "result_id": "4c6d7860-e03e-44b8-8701-11a0db2da392"
+    },
+    {
+      "claim_id": "cba79589-3f31-4012-8e35-b3e114541a08",
+      "result_id": "bfc95a8d-e63c-460a-a1d0-fa1bb3fc060b"
+    },
+    {
+      "claim_id": "5a06aefa-1632-4f41-80da-42a30578dbff",
+      "result_id": "bfc95a8d-e63c-460a-a1d0-fa1bb3fc060b"
+    },
+    {
+      "claim_id": "4e424cfe-d5b2-4f3f-8b10-7fa60230cb28",
+      "result_id": "bfc95a8d-e63c-460a-a1d0-fa1bb3fc060b"
+    },
+    {
+      "claim_id": "f17bf537-0239-4001-b5b0-59a42d366beb",
+      "result_id": "bfc95a8d-e63c-460a-a1d0-fa1bb3fc060b"
+    },
+    {
+      "claim_id": "93afff75-98b0-4892-82cf-07fdcbc331ad",
+      "result_id": "49f06b88-423c-4fd0-b945-6c3bc276c952"
+    },
+    {
+      "claim_id": "0d4cfdf1-36ab-4b71-99a0-3bb424951524",
+      "result_id": "49f06b88-423c-4fd0-b945-6c3bc276c952"
+    },
+    {
+      "claim_id": "13a356d9-fcad-46df-9924-2d44db83fd6a",
+      "result_id": "49f06b88-423c-4fd0-b945-6c3bc276c952"
+    },
+    {
+      "claim_id": "01603706-380e-4361-9636-b47ff1ebdc83",
+      "result_id": "49f06b88-423c-4fd0-b945-6c3bc276c952"
+    },
+    {
+      "claim_id": "ab170c9a-9b0a-4190-80fc-35935654fee9",
+      "result_id": "49f06b88-423c-4fd0-b945-6c3bc276c952"
+    },
+    {
+      "claim_id": "23a45737-4f83-4278-8253-c0402916a01d",
+      "result_id": "49f06b88-423c-4fd0-b945-6c3bc276c952"
+    },
+    {
+      "claim_id": "d4f0aa17-826a-4e59-86a1-831225b55f72",
+      "result_id": "49f06b88-423c-4fd0-b945-6c3bc276c952"
+    },
+    {
+      "claim_id": "598a90ae-14dc-4589-9ee1-8283ae36bc61",
+      "result_id": "d6421dc6-135d-41a8-85a3-102c85865129"
+    },
+    {
+      "claim_id": "05d25047-d617-46a6-b785-00eda633515f",
+      "result_id": "f60d2030-f85d-48a3-888d-c276325842fa"
+    },
+    {
+      "claim_id": "22591e48-a714-49d6-9cff-feac065db15c",
+      "result_id": "3a0bc926-0914-465a-b981-1df5614a0280"
+    },
+    {
+      "claim_id": "4a98090b-2b6c-497c-b788-41414add5b3d",
+      "result_id": "3a0bc926-0914-465a-b981-1df5614a0280"
+    },
+    {
+      "claim_id": "79bd3469-6a84-41a8-a689-e2ce400ff82c",
+      "result_id": "3a0bc926-0914-465a-b981-1df5614a0280"
+    },
+    {
+      "claim_id": "4dcf1aec-b9c3-4697-a8d3-5d50f8fa6ef4",
+      "result_id": "3a0bc926-0914-465a-b981-1df5614a0280"
+    },
+    {
+      "claim_id": "c96d770a-7260-4633-844c-2c301e3ae27a",
+      "result_id": "3a0bc926-0914-465a-b981-1df5614a0280"
+    },
+    {
+      "claim_id": "b2db1754-3926-4b6b-a734-c99a0e54e369",
+      "result_id": "3a0bc926-0914-465a-b981-1df5614a0280"
+    },
+    {
+      "claim_id": "4ba3c2d0-f458-43b3-96c2-b7fc066c9ab3",
+      "result_id": "3a0bc926-0914-465a-b981-1df5614a0280"
+    },
+    {
+      "claim_id": "9dc39938-79c0-45c4-b5b3-be130778ee9e",
+      "result_id": "3a0bc926-0914-465a-b981-1df5614a0280"
+    },
+    {
+      "claim_id": "4b34e8f3-8086-4cbb-8989-cb4e9b68ed9b",
+      "result_id": "3a0bc926-0914-465a-b981-1df5614a0280"
+    }
+  ],
+  "comparisons": []
+}

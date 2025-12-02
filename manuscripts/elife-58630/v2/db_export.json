@@ -1,0 +1,1609 @@
+{
+  "submission": {
+    "id": "584f42e9-3cdb-4051-981d-61ddef844994",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:16:17.859167Z",
+    "updated_at": "2025-12-02T21:16:17.859167Z"
+  },
+  "content": [
+    {
+      "id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "submission_id": "584f42e9-3cdb-4051-981d-61ddef844994",
+      "content_type": "manuscript",
+      "content_text": "# The Drosophila Individual Activity Monitoring and Detection System (DIAMonDS)\n\n## Authors\n\n- Ki-Hyeon Seong<sup>1</sup> ([ORCID: 0000-0002-0606-8896](https://orcid.org/0000-0002-0606-8896)) \u2020\n- Taishi Matsumura<sup>3</sup>\n- Yuko Shimada-Niwa<sup>2</sup> ([ORCID: 0000-0001-5757-4329](https://orcid.org/0000-0001-5757-4329))\n- Ryusuke Niwa<sup>2</sup> ([ORCID: 0000-0002-1716-455X](https://orcid.org/0000-0002-1716-455X))\n- Siu Kang<sup>2</sup> \u2020\n\n### Affiliations\n\n1. RIKEN Cluster for Pioneering Research, RIKEN Tsukuba Institute Tsukuba Japan\n2. AMED-CREST, AMED Tokyo Japan\n3. Graduate School of Science and Engineering, Yamagata University, Jonan Yonezawa Japan\n4. Life Science Center for Survival Dynamics, University of Tsukuba Tsukuba Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nHere, we have developed DIAMonDS (Drosophila Individual Activity Monitoring and Detection System) comprising time-lapse imaging by a charge-coupled device (CCD) flatbed scanner and Sapphire, a novel algorithm and web application. DIAMonDS automatically and sequentially identified the transition time points of multiple life cycle events such as pupariation, eclosion, and death in individual flies at high temporal resolution and on a large scale. DIAMonDS performed simultaneous multiple scans to measure individual deaths (\u22641152 flies per scanner) and pupariation and eclosion timings (\u2264288 flies per scanner) under various chemical exposures, environmental conditions, and genetic backgrounds. DIAMonDS correctly identified 74\u201385% of the pupariation and eclosion events and ~ 92% of the death events within \u00b1 10 scanning frames. This system is a powerful tool for studying the influences of genetic and environmental factors on fruit flies and efficient, high-throughput genetic and chemical screening in drug discovery.\n\n## Introduction\n\nAnimal life develops through a sequence of characteristic events and stages. Embryogenesis starts with the fertilization of an egg. Thence, the embryo transitions to the juvenile stage at a certain time point. This stage persists for a certain period, during which the animal grows and develops into the adult stage in which it reproduces, senesces, and dies. The length of each stage and the timing of each developmental transition are determined by complex interactions between genetic and environmental factors. Thus, developmental timing may be defined as a phenotype. Accurate determination of developmental timing helps elucidate the molecular and physiological bases of biological events and may uncover new factors regulating development and lifespan.\n\nNevertheless, it is difficult to establish the precise time points of the developmental transitions in many animals including humans. One reason is that there may be no clear boundaries between stages throughout the entire lifetime of the organism. Consequently, it has been impractical to use developmental timing as a phenotype for investigations in developmental biology. However, holometabolous insects such as the fruit fly Drosophila melanogaster are important exceptions to this rule. These animals pass through four life stages, namely embryo, larva, pupa, and adult. Transitions between these stages are accompanied by drastic morphological events and behavioral changes including hatching, pupariation, eclosion, and death. Therefore, the time point of each developmental transition can be precisely determined. Drosophila has been extensively studied in the fields of genetics and developmental biology. Accurate tracking and recording of its life cycle could significantly promote the understanding of various aspects of biology, agriculture, and medicine.\n\nNoteworthy, no recent improvements have been made in measuring the timing of the developmental transitions in Drosophila. Until now, the timing of each developmental stage was manually determined by counting the number of flies at each stage in each vial over 2, 6, 12, or 24 hr\u00a0(Buhler et al., 2018; Demay et al., 2014; K\u00fclshammer et al., 2015; Nikhil et al., 2016; Yun et al., 2017); however, this technique has certain limitations. Increasing the temporal resolution is difficult as it would require intensive labor, preventing the detection of subtle changes in transition timing for each event. Moreover, manual counting is neither practicable for large-scale/high-throughput screening nor feasible for identifying multiple phenotypes in individual flies in transition events. In contrast, it does help elucidate the associations between developmental stages and the genetic and environmental factors affecting them. Recent studies reported the use of video cameras to measure developmental timing\u00a0(Hironaka et al., 2019). However, this method is labor-intensive, requires long analytical periods, and is unsuitable for high-throughput analysis.\n\nHere, we present a new scalable method that automatically determines multiple transition time points, such as pupariation, eclosion, and death, of individual fruit flies implementing a basic flatbed CCD scanner. We placed a single fly in each well of a 96- or 384-well microplate, acquired time-lapse images, and analyzed the output with our novel algorithm Sapphire. This system performs automatic developmental analyses at high temporal resolution and could be used in high-throughput gene and chemical screening and analyses of the effects of genetic and environmental factors on development.\n\n## Results\n\n### Design of the Drosophila Individual Activity Monitoring and Detection System (DIAMonDS)\n\nDrosophila develops through four developmental stages (embryo, larva, pupa, and adult), subsequently finishing its own life. The static phases (embryo, pupa, and death) alternate with the dynamic phases (larva and adult; Figure 1A). Single-image processing between continuous images distinguishes both phases: dynamic phases are detected as positive signals while static phases simultaneously present no signal (Figure 1B). Therefore, we can precisely identify the transition points between phases by monitoring the static and dynamic status and separately detecting fly phases on all plates captured simultaneously in the same image.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig1-v2.jpg)\n\n**Figure 1.:** (A) Diagram of developmental stages and activity states in Drosophila melanogaster. (B) Schematic representation of the DIAMonDS procedure. DIAMonDS consists of: (i) microplate preparation; (ii) time-lapse imaging with CCD scanner; and (iii) data analysis by Sapphire. In step (iii), Sapphire calculates activity signal (green line) intensity via animal body detection from FCN images and subtraction processing of every two consecutive images and then determines the CF signal (purple line) from the activity signal. (C) Flowchart of Sapphire. Algorithm includes extraction of individual animals from population images (Step 1), training data preparation and augmentation (Step 2), training through data and animal body segmentation (Step 3), segmentation data signaling by subtracting labeled data and transition point detection algorithm (Step 4), event detection, signal processing, and visualization (Step 5).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Temperature measurement points on scan surface. Temperature measured by temperature data logger (Thermochron SL type, NK Labs, Cambridge, MA, USA) in high-resolution mode. (B) Daily temperature time course under 12:12 light-dark cycle. (C,D) Temperature at each time point under light (C) and dark (D) conditions. Dark and light green bands represent mean and maximum/minimum temperature ranges, respectively.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Automatic life event detection algorithm. Detailed procedure described in Figure 1C. (B) Schematic architecture of fully convolutional network (FCN) designed for animal body segmentation.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Under the tab 'Main', appropriate datasets, detection methods, and inference data may be selected. We can also confirm and select well images and segmented areas of two consecutive images. We may confirm the result of Sapphire analysis on the selected well (upper left graph) and change \u2018signal type,\u2019 \u2018smoothing,\u2019 and \u2018weight.\u2019 We can compare data analyzed by Sapphire with those detected manually (lower panels). (B) In tab 'Data\u00a0Table', we can download the timestamp and analyzed data.\n\nDIAMonDS consists of an automated time-lapse imaging system and our novel image analysis software named \u2018Sapphire\u2019 (Figure 1B). We used a combination of a flatbed CCD scanner and VueScan software (https://www.hamrick.com), which enables multiple scanner units to capture images continuously at certain intervals\u00a0(Smith et al., 2014). To identify the phase change time points for each fly event, single flies are inserted into each well of a 96- or 384-well microplate containing suitable fly media. Up to three microplates are then set on the scanner surface, and time-lapse images are acquired at appropriate intervals until the fly event is completed. A single scanner can monitor 288 or 1152 individuals in three 96-well or 384-well microplates, respectively for DIAMonDS. Because the well-size of 384-well microplate is too small to succeed in normal development and lifespan, we only use the 384-well microplate for measuring adult survivorships in the short term (within about 2 weeks) such as stress or drug resistance assays. Sapphire then automatically analyzes and detects the transition points of pupariation, eclosion, and death in the newly acquired time-lapse images (Figure 1B,C). Our system can simultaneously monitor multiple scanners with a single personal computer.\n\nAs positional bias and fluctuations in environmental factors such as ambient temperature and relative humidity (RH) might markedly reduce the reliability of our system, all experiments were conducted in a plant growth chamber (LPH-410NS) with automatic temperature and humidity regulation and additional USB fans (Appendix 6). The scan surface temperature was continuously recorded with button-sized temperature data loggers (NK Labs LLC, Cambridge, MA, USA). Temperatures widely varied among locations under external illumination on/off conditions possibly because of irregular and uneven irradiation. Thus, we acquired time-lapse images without external illumination to maintain a steady temperature (Figure 1\u2014figure supplement 1).\n\n### DIAMonDS software: Sapphire\n\nSapphire automatically determines the static-to-dynamic and dynamic-to-static phase changes for all flies according to the time-lapse images acquired by the aforementioned scanner system. The following four processes were implemented in Sapphire to enable automatic life event detection based on individual Drosophila images (Figure 1C):\n\nThe annotation data were manually created for larval and adult Drosophila and increased by general data augmentation techniques such as vertical and horizontal flips, rotation, and luminance modulation (Materials and methods).\n\nAfter training with augmented data, the segmentation inference was calculated as a probability. If it was\u00a0>\u00a00.5, the system regarded it as the target region (animal body). If it was\u00a0<\u00a00.5, the system treated it as background. Consequently, the system obtained binary images wherein the animal body corresponded to one and the background was described as 0. Semantic segmentation was applied to all individuals and every sequential population image.\n\nAll trainings and inferences were performed on a Linux PC (Ubuntu) with four GPUs (GTX 1080Ti). All scripts were written in Python using the deep learning libraries keras (v. 2.0.9) and tensorflow-gpu (v. 1.4.0).\n\n![Video 1.](https://cdn.elifesciences.org/articles/58630/elife-58630-video1.mp4.jpg)\n\n### Pupariation and eclosion timing detection by DIAMonDS\n\nApparent dynamic-to-static and vice-versa phase changes occur at pupariation and eclosion (Figure 2A). We attempted to detect individual fly pupariation and eclosion with DIAMonDS to validate it. Newly hatched first-instar (L1) larvae were placed into 96-well microplates containing 100 \u00b5L well\u22121 standard fly media (Figure 2\u2014figure supplement 1). Three microplates were fixed to the scanner surface, and the scanner was placed inverted in the incubator to prevent fly media leakage. The scanner was powered on, and time-lapse scanning was performed with VueScan (Materials and methods) until all flies eclosed. Thence, time-lapse images were analyzed with Sapphire (Figure 2A,B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic representation of pupariation and eclosion. Drastic changes in dynamic-to-static and static-to-dynamic states occur at pupariation and eclosion, respectively. At late L3, larval activity increases and transitions from feeding to wandering behavior. Dotted circles indicate animal bodies. (B) Time-lapse imaging was conducted until all flies eclosed into adults. Individual pupariation and eclosion transition points were separately analyzed in Sapphire. Wandering L3 larva showing high activity immediately before pupariation. (C,D) Scatterplot analyses comparing data for pupariation (C) and eclosion (D) obtained by Sapphire and visual handling to validate accuracy. (E\u2013G) Scatterplot between pupariation and eclosion timing of individual flies (E) and box plots of pupariation (F) and eclosion (G) timing in males (n\u00a0=\u00a0122; green dots) and females (n\u00a0=\u00a0118; magenta dots). Whiskers indicate minima and maxima (***p<0.001; n.s., no significant difference; unpaired t-test).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Percent survival at each developmental stage (1 st instar (L1) larva, pupa, and adult stages) when a single embryo or L1 larva is installed in each well of a 96-well microplate. Averages with s.d. are shown (n\u00a0=\u00a06 each; ***p<0.001; **p<0.01; n.s., no significant difference; Student\u2019s unpaired t-test). (B) Percent survival at each developmental stage (3rd instar (L3) larva, pupa, and adult stages) in 100 or 150 \u03bcL medium/well. Averages with s.d. are shown (n\u00a0=\u00a06 each;; ***p<0.001; n.s., no significant difference; Student\u2019s unpaired t-test).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Residual plots of pupariation corresponding to Figure 2C. (B) Residual plots of eclosion corresponding to Figure 2D.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A\u2013D) Scatterplot and residual plot of eclosion timing between Sapphire (CF method: A and B; TH method: C and D) and visual handling of the same image data. Here, we transferred P14 stage pupae to new microplates once during time-lapse image acquisition.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Image of plates used for pupariation and eclosion time-lapse acquisition in DIAMonDS. (B\u2013D) Box plots of pupariation (B), eclosion (C), and pupal duration (D) in male (green dots) and female (magenta dots) flies. Number of flies analyzed is indicated in parentheses on each graph. Whiskers indicate minima and maxima (***p<0.001; **p<0.01; n.s., no significant difference; Student\u2019s unpaired t-test).\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A\u2013C) Box plots of pupariation (A), eclosion (B), and pupal duration (C) in male flies. Number of flies analyzed is indicated in parentheses on each graph. Whiskers indicate minima and maxima (***p<0.001; **p<0.01; n.s., no significant difference; one-way ANOVA followed by Dunnett\u2019s multiple comparison test).\n\nThe L1 larvae dove into the media until mid-L3 (~2 d). As time-lapse scanning could not detect larval movements here, this so-called feeding stage was designated as static. In contrast, the larvae typically left the media and moved around the well surface during late L3 (Figure 2A). This so-called wandering stage was designated as dynamic, as there were consecutive high-activity wandering larval signals (Figure 2B), and its duration was 12\u201324 hr. Thereafter, L3 larval activity gradually decreased, and pupariation followed. During the pupal stage (~100 hr), the activity was not detected in a static phase. The second signal wave activity was detected just after dynamic eclosion.\n\nSapphire independently and automatically detects maximum peaks at the pupariation and eclosion transition points using machine learning based on an FCN to detect larval and adult animals separately (Figures 1C and 2B). To verify Sapphire's accuracy, we compared pupariation and eclosion timings analyzed by Sapphire and those manually detected (visual handling) from the same images. The Sapphire and visual handling values were nearly identical (Figure 2C,D), 73.8% on pupariation and 84.2% on eclosion were only a slight difference within\u00a0\u00b1\u00a010 frames between them (Figure 2\u2014figure supplement 2). Film surface contamination after long-term rearing in small wells might have accounted for the observed decrease in Sapphire detection accuracy. Therefore, to investigate whether Sapphire's detection accuracy improves in a more transparent state of the lid, flies were transferred to the new microplate just after the time that all flies pupated (P14 stage) and scanned time-lapse scanning of the plates. The experiment resulted in 94.7% of values from Sapphire showed nearly identical (within\u00a0\u00b1\u00a010 frames) to visual handling values, indicating that Sapphire's accuracy was greatly improved relative to the experimental setup in which the same microplate was used both for pupariation and eclosion detections (Figure 2\u2014figure supplement 3A,B).\n\nArbitral image sequences such as raw images and the segmentation images could be analyzed in Sapphire (see Appendix 8). Sapphire calculates the CF signal obtained from the subtraction of consecutive segmentation images as fully automated method (CF method). Sapphire determined the timing of life-event by applying just thresholding on the arbitral time series data specified by user (TH method). At first, threshold is automatically calculated as an average of maximum and minimum value of the signal (auto-TH) and the threshold is modifiable by hands depending on user\u2019s demand (manual-TH). Accuracy of CF method and auto- and manual- TH method on raw image subtraction was quantified in (Appendix 8). We compared CF and TH using the same time-lapse image set (Figure 2\u2014figure supplement 3). The output of CF was superior to that of TH, as the former is relatively more sensitive to phase shifts. Thus, Sapphire is functional and highly invaluable in automatic analyses.\n\nThe relationship between pupariation and eclosion determined by DIAMonDS clearly revealed sexual dimorphism during development (Figure 2E). On average, females eclosed 4 hr earlier than males. A previous study corroborated this observation\u00a0(Bainbridge and Bownes, 1981). The pupariation transition time points did not differ between sexes. Therefore, sexual dimorphism in the eclosion time points reflects the difference in pupal duration between sexes (Figure 2E\u2013G). No significant differences were found between plates 1\u00a0and\u00a03 used here, indicating a minimal scan surface positional effect in DIAMonDS during the detection of the pupariation and eclosion time points (Figure 2\u2014figure supplement 4). Altogether, these results indicate that DIAMonDS is suitable for automatic measurement of both the pupariation and eclosion time points at high temporal resolution.\n\nTo understand the effect of chamber size on fly development, we used three different sizes of microplates (96-well, 48-well, and 24-well) contained normal fly media for measuring pupariation and eclosion. We observed that timings of pupariation and eclosion were slightly but significantly shorten both in the 48-well and 24-well conditions and the pupal duration might have the fewer effects of well-size, suggesting that the chamber size might affect fly\u2019s development (Figure 2\u2014figure supplement 5).\n\n### DIAMonDS enables autonomic measurement of pupariation and eclosion timing at high temporal resolution for each individual\n\nDIAMonDS showed excellent performance in large-scale pupariation timing analyses (Figure 3\u2014figure supplement 1). To evaluate its performance, we explored whether two distinct genetic and environmental conditions affect larval development. First, we used larvae with delayed pupariation at 29\u00b0C (genotype: R29H01-GAL4\u00a0>\u00a0UAS TeTxLC), in which tetanus toxin light chain (TeTxLC) impaired serotonergic SE0PG neuron activity\u00a0(Shimada-Niwa and Niwa, 2014). To evaluate the influences of initial larval age on DIAMonDS measurement accuracy, we used L2, early L3, and late L3 larvae in the microplate assays. DIAMonDS successfully detected pupariation delays in larvae of all ages (Figure 3A). Thus, DIAMonDS performance remains highly stable over a wide range of conditions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig3-v2.jpg)\n\n**Figure 3.:** (A) Box plot analysis of pupariation timing in flies with impaired ecdysteroid biosynthesis at 29\u00b0C (genotype: R29H01\u00a0>\u00a0TeTxLC; R29H01>+ as a control). Larval age (L2, early L3, and late L3) at start of measurement had negligible impact on DIAMonDS analysis accuracy. Y-axis indicates pupariation timing from start of experiment. Number of flies analyzed indicated in parentheses on the graph. Whiskers indicate minima and maxima (*p<0.05; **p<0.01; ***p<0.001; n.s., no significant difference; multiple t-test). (B) Three 96-well microplates were subdivided into nine regions according to sucrose concentration (0.15\u20131 M) in media used for DIAMonDS. (C) Scatterplot between pupariation and eclosion timing in males and females. (D\u2013F) Box plots of pupariation timing (D), eclosion timing (E), and pupal duration (F). Whiskers indicate minima and maxima (*p<0.05; **p<0.01; ***p<0.001; n.s., no significant difference vs. standard diet group; one-way ANOVA followed by Dunnett\u2019s multiple comparison test). Number of flies analyzed indicated in parentheses on the graph.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A,B) Scatterplot (A) and residual plot (B) between Sapphire (CF method) and manual analysis (n\u00a0=\u00a0850).\n\nWe also used DIAMonDS to clarify the relationship between sugar concentration and development in the w1118 fruit fly strain (Figure 3B\u2013F). A previous report stated that Drosophila larvae that were administered a high-sugar diet presented a type 2 diabetes-like phenotype and developmental delay\u00a0(Musselman et al., 2011). L1 larvae were placed in wells containing normal to high-sugar concentrations, scanned by time-lapse imaging, and the pupariation and eclosion time points were detected by Sapphire. Both pupariation and eclosion were gradually delayed in a sugar concentration-dependent manner. Therefore, excess sugar adversely affects larval growth (Figure 3B\u2013E). When we compared the pupariation and eclosion time points among individual larvae, the pupal durations were nearly constant regardless of sugar concentration. Thus, the sugar concentration determines the time spent as a larva until pupariation, but it does not influence the time spent as a pupa (Figure 3F). Interestingly, Northrop reported that prolongation of the pre-imago stage of D. melanogaster by yeast supplementation had no impact on pupal stage duration\u00a0(Northrop, 1917a; Northrop, 1917b). The process by which pupal duration is determined may be independent of larval dietary intake. Overall, DIAMonDS is a powerful toolkit for detecting the pupariation and eclosion time points and discloses the effects of several endogenous and exogenous factors on individual fly development.\n\n### Detection of individual adult death events by DIAMonDS\n\nAdult death time points can be measured at high temporal resolution with DIAMonDS. This tool efficiently detects sudden shifts from a dynamic to a static phase. Depending on the objective, experiments are performed over a broad range of time scales extending to nearly 3 months. Small- and large-scale impact assessment targets may include mutant phenotype, environmental stress, and chemicals and drugs\u00a0(Afschar et al., 2016; Harshman et al., 1999; Lin et al., 1998; Parkes et al., 1998; Piper and Partridge, 2016; Tsuda et al., 2010; Ziehm et al., 2015). DIAMonDS may be implemented using 96- and 384-well microplates to accommodate various parameters in death timing detection. The 96-well type is used in long-term detection, whereas the 384-well plate is better suited for short-term (\u226410 d) detection and high-throughput assays.\n\nWe collected time-lapse scanning images at 1 min intervals for adult flies (4 day post-eclosion) maintained under starvation conditions (70 \u00b5L 1% agar/water (w/v)/well) in order to optimize DIAMonDS for 384-well microplates (Figure 4A). After the image data series consisted of dying individual flies, death time points were determined manually (visual manipulation) and by Sapphire. Both procedures generated nearly identical survival curves and were highly correlated (R\u00a0=\u00a00.9913), indicating the reliability of Sapphire (Figure 4A\u2013D and Figure 4\u2014figure supplement 1). Next, we examined whether the well positions within a microplate influence the death time points. No significant differences were found between each plate or among the sub-areas within each plate (Figure 4E and Figure 4\u2014figure supplement 2). We also evaluated adult w1118 fly starvation tolerance in 96-well microplates and obtained results similar to those acquired from 384-well microplates (Figure 4F). Next, we tried to test whether the DIAMonDS can effectively detect the death time points even in flies showed a very reduced amount of activity. As a hypoactive fly model, we used decapitated females who keep motor skills but hardly moved until their death (Ejima and Griffith, 2008). DIAMonDS showed relatively good results that were comparable to the visual results although there was a tendency for the accuracy to reduce slightly in comparison with the case of wild-type flies (Figure 4\u2014figure supplement 3). Altogether, these results indicate that DIAMonDS is highly effective at detecting fruit fly death events.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig4-v2.jpg)\n\n**Figure 4.:** (A) A 384-well microplate with flies prepared for DIAMonDS. (B) Survivorship curves in starvation condition plotted by Sapphire (red line) or visual handling (blue line) using the same data. (C,D) Scatterplot and residual plot analysis comparing Sapphire (CF method) and visual handling to validate accuracy (n\u00a0=\u00a0382). (E,F) Survivorship curves for starvation resistance tests on adult male w1118 flies using three 384- (E) and three 96-well (F) microplates. Number of flies analyzed indicated in parentheses in each plate.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A,B) Scatterplot (A) and residual plot (B) between Sapphire (TH method) and manual analysis (visual handling) to validate accuracy (n\u00a0=\u00a0382). Results corresponding to Figure 4C,D.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013C) Box plots subdivided in the same dataset are shown as images on the left side of graphs. (n.s., no significant difference; Student\u2019s unpaired t-test). Image of plates used to detect death timing in DIAMonDS. Number of flies analyzed indicated in parentheses on the graph.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A,B) Scatterplot (A) and residual plot (B) between Sapphire (CF method) and manual analysis (n\u00a0=\u00a045). (C) Survivorship curves. Red and blue lines indicate results determined by Sapphire (CF method) and visual handling, respectively (n\u00a0=\u00a045).\n\n### DIAMonDS performs stress resistance assays with high temporal resolution\n\nTo assess the efficacy of DIAMonDS at evaluating fly survival under various stress conditions, we performed a starvation assay on male and female w1118 flies (Figure 5A). They presented sexual dimorphism in terms of starvation resistance. Moreover, the temporal resolution used here (15 min intervals) was higher than those reported in previous studies (Figure 5B and Figure 5\u2014figure supplement 1A,B;\u00a0Gr\u00f6nke et al., 2010; Li et al., 2018).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig5-v2.jpg)\n\n**Figure 5.:** (A,B) Starvation tolerance test using male and female w1118 flies (n\u00a0=\u00a0192 each). Rows of males and females were alternately arranged in 384-well microplate (A). Representative male and female survivorship curves (B). (C,D) DDT resistance test on male w1118 flies (n\u00a0=\u00a048 each). A 384-well microplate with YS media containing DDT concentration series (0\u20130.1%). Forty-eight male flies were exposed to each concentration and subjected to DIAMonDS (C). Survivorship curves show concentration-dependent toxic effects of DDT (D). (E,F) Paraquat resistance test on male mth1 and w1118 flies (n\u00a0=\u00a032 each). A 384-well microplate containing media with paraquat (0, 5, 10, and 20 mM). Rows of mth1 and w1118 flies were alternately arranged in wells (E). Survivorship curves for mth1 mutants (solid lines) and w1118 flies (dotted lines) substantially differed at all paraquat concentrations (F).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A,B) Results corresponding to Figure 5A,B. (C,D) Results corresponding to Figure 5C,D. (A,C) Survivorship curves. Solid and dotted lines indicate results determined by CF and TH methods, respectively. (B,D) Example of analysis by Sapphire using TH and CF methods.\n\nWe then subjected the flies to various concentrations of dichlorodiphenyltrichloroethane (DDT) to identify possible resistance (Figure 5C,D;\u00a0Afschar et al., 2016). To a 384-well microplate, we added media consisting of 5% (w/v) sucrose and 0.5% (w/v) yeast as described in Appendix 1. The 48 w1118 males in each well were exposed to 0, 0.005, 0.01, 0.05, or 0.1% DDT (Figure 5C). DIAMonDS showed distinct variance in DDT resistance even between only slightly differing DDT concentrations (Figure 5D and Figure 5\u2014figure supplement 1C,D).\n\nWe also investigated whether DIAMonDS can detect mutant fly phenotypes in stress resistance assays. Flies with the loss-of-function mutation methuselah (mth) present extended lifespan and resistance to several stressors including paraquat\u00a0(Lin et al., 1998). To test whether DIAMonDS can discriminate mth1 mutant stress tolerance phenotypes, we backcrossed the mth1 mutant five times with w1118 and compared the responses of both types of males to different paraquat concentrations (Figure 5E,F). The mth1 mutant presented significantly greater resistance to several paraquat concentrations than w1118. The results of this assay demonstrated that paraquat resistance could be detected in the mth1 mutant using lower paraquat concentrations than those tested in an earlier study (20 mM)(Lin et al., 1998). Thus, DIAMonDS can readily identify optimal concentrations at high temporal resolution in drug resistance assays.\n\n### Sequential detection of multiple life events (pupariation, eclosion, and lifespan) using DIAMonDS\n\nDIAMonDS successfully measured lifespans for individual w1118 flies. For long-term analysis, flies must be transferred to new microplates. We performed sequential pupariation, eclosion, and lifespan measurements for individual w1118 as shown in Figure 6A\u2013C. The mean lifespans calculated and survival curves plotted for individual males and females were consistent with those of previous reports (Figure 6C;\u00a0Liu et al., 2009; Schriner et al., 2014; Suh et al., 2008; Trostnikov et al., 2019).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic diagram showing detection of pupariation, eclosion, and death transition points for each individual in DIAMonDS. (B) Scatterplot between pupariation and eclosion timing for individual female (n\u00a0=\u00a059) and male (n\u00a0=\u00a075) flies. (C) Survivorship curves for adult female (n\u00a0=\u00a059) and male (n\u00a0=\u00a075) flies. (D\u2013I) Pearson\u2019s correlation scatter plots indicate relationships between larval and pupal duration (D,G), between larval duration and adult lifespan (E,H), and between pupal duration and adult lifespan (F,I). Data are separately presented for female (D\u2013F, n\u00a0=\u00a059 each) and male (G\u2013I, n\u00a0=\u00a075 each) flies.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58630/elife-58630-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A\u2013C) Box plots of adult percent survival at 1 st, 2nd, 3rd, and 4th weeks in w1118 (A), Oregon-R (B), and Canton-S (C) male flies. Flies were reared in several plate well sizes (96-well, 48-well, and 24-well) and transferred to appropriate new plates every week or 2\u20133 days cycles. Twenty-four flies were selected randomly from each well of microplate and calculated percent survival at each time point. Whiskers indicate minima and maxima (***p<0.001; **p<0.01; *p<0.05; n.s., no significant difference; one-way ANOVA followed by Dunnett\u2019s multiple comparison test, n\u00a0=\u00a06 each).\n\nSeveral studies described the relationships between developmental time and adult lifespan among various species\u00a0(Marchionni et al., 2020). Certain reports showed that prolonging developmental duration by yeast supplementation did not affect lifespan\u00a0(Hunter, 1959; Northrop, 1917b). However, few studies focused on the associations between developmental timing and adult lifespan in Drosophila. To establish whether developmental stages and adult lifespans are interdependent in individual flies, we analyzed the following relationships: larval and pupal duration (Figure 6D,G), larval duration and adult lifespan (Figure 6E,H), and pupal duration and adult lifespan (Figure 6F,I). No significant correlations between the data for these pairs of parameters in either sex (Figure 6D\u2013I) and those reported in previous studies were found. As the flies had the same genetic background and were exposed to the same diet and environmental conditions throughout all their life stages, it was unlikely that their genotypes influenced the relationship between development time and lifespan, demonstrating that DIAMonDS can detect unique relationships between developmental time and lifespan under different intrinsic and extrinsic conditions.\n\nIn this study, we were unsuccessful at using DIAMonDS to run long-term lifespan assays on other wild type fruit fly strains such as Oregon-R and Canton-S. Lethality accidentally escalated because the rearing conditions deteriorated. For instance, water droplets condensed and coalesced on the plate surfaces. However, these errors might have reflected relative metabolic and/or genetic differences among fly strains. To find common optimum conditions for measuring the lifespan of other laboratory strains, we have tried to observe the viability of three strains (w1118, Oregon-R, and Canton-S) in condition with several microplate well-size (96-well, 48-well, and 24-well) (Figure 6\u2014figure supplement 1). The viabilities were measured at the time point at 1, 2, 3, and 4 weeks with once plate replacement a week. We observed that the reduced viability was not rescued by changing to bigger microplate-well size, and somewhat, increasing well-size might have harmful effects on the survival of aged flies (Figure 6\u2014figure supplement 1A\u2013C). We next tested the two different plate replacement cycles (once a week, or once 2\u20133 days) using Oregon-R and Canton-S in 96-well microplate. We observed a shorter plate replacement cycle could effectively improve the viability (Figure 6\u2014figure supplement 1B,C). However, because plate replacement is required a lot of work time, it seems to be not suitable for the high-throughput experiments. Further optimization of the experimental conditions will be necessary to effectively use DIAMonDS to conduct lifespan tests on a wide range of fly strains.\n\n## Discussion\n\nIn this study, we attempted to develop DIAMonDS as a new tool to analyze automatically and sequentially the transition time point in the growth and developmental multi-stage of individual flies and use the transition time points as a phenotype. We demonstrated that DIAMonDS determines Drosophila pupariation, eclosion, and death at high temporal resolution. Further, it can analyze the relationships among stages by sequentially detecting multiple life events in many individuals. Thus, DIAMonDS can help clarify the complex interactions among genetic and environmental factors throughout the Drosophila life cycle. DIAMonDS can also eliminate the constraint of long data acquisition and analysis time intervals, operate multiple scanners simultaneously, and facilitate high-throughput analysis. Overall, DIAMonDS substantially ameliorates Drosophila research endeavors compared to conventional manual counting methods.\n\nDIAMonDS automatically detects time points from time-lapse images via the novel algorithm Sapphire. Our results indicated that relative to manual detection, DIAMonDS correctly detected 74\u201385% of the pupariation and eclosion and\u00a0~\u00a092% of the death events within\u00a0\u00b1\u00a010 frames. Thus, DIAMonDS is fully functional both for preliminary experiments and large-scale screening. The output of Sapphire can guide the manual determination of exact values. Therefore, DIAMonDS can generate publishable high-quality data. Detection accuracy could be greatly improved by reducing noise in time-lapse image acquisition. Data quality can also be enhanced via the machine learning training step in Sapphire. Optimization of experimental conditions is an important initial prerequisite step for stable, highly reliable data acquisition.\n\nNevertheless, DIAMonDS has certain limitations. First, it is unsuitable for the analysis of insects with normal circadian rhythms as the flatbed scanners repeatedly emit light for imaging. Second, the confined well space used for insect rearing might adversely affect individual fly health and behavior. Third, this approach might be inappropriate for establishing the effects of volatile or unstable substances on flies. Fourth, the reliability of this system may be reduced as the surfaces of the microplate lids become dirty over time. Fifth, occasionally, an animal cannot be detected in the image by the existence of a blind area of scanning. The system is not greatly affected even if \u2018off-camera\u2019 occurs during an active state of an animal. But the accuracy of event detection might be slightly affected when \u2018off-camera\u2019 occurs just at the timing of the event shift. It could be reduced by increasing the spatial- or temporal-resolution to eliminate the blind-area of each well. These problems could be solved by further improvement in the system. For example, detection of the circadian rhythm might be achieved by image acquisition using infrared rays, and It seems that the use of large-wells might expect to reduce the adverse effects of rearing on small-wells.\n\nTo date, we successfully used DIAMonDS to analyze the normal lifespan of the w1118 fruit fly strain but not those of the wild-type Oregon-R and Canton-S. One reason for this constraint is the frequent occurrence of accidental death caused mainly by water droplet coalescence on the microplate wall surfaces. Differences between strains may be due to differences in genetic background or intestinal environment. The experimental setup will require further optimization to overcome these limitations in lifespan analysis by DIAMonDS.\n\nHere, we reported a novel technique for measuring multiple life events and their transition time points in Drosophila. In principle, DIAMonDS can also determine life cycle phase shifts in other small animals, and we intend to expand its applicability in medical, agricultural, and ongoing biological research.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (D. melanogaster )</td>\n      <td>mth1</td>\n      <td>Flybase</td>\n      <td>FBti0012557</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster )</td>\n      <td>w1118</td>\n      <td>Kept in lab stock</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster )</td>\n      <td>Oregon-R</td>\n      <td>Kept in lab stock</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster )</td>\n      <td>Canton-S</td>\n      <td>Gift from Dr. Uemura</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster )</td>\n      <td>R29H01-GAL4</td>\n      <td>Flybase</td>\n      <td>FBti0191124</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster )</td>\n      <td>UAS-TeTxLC</td>\n      <td>Flybase</td>\n      <td>FBtp0001264</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Sapphire</td>\n      <td></td>\n      <td></td>\n      <td>https://github.com/kanglab/Sapphire/tree/master</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>VueScan</td>\n      <td></td>\n      <td></td>\n      <td>https://www.hamrick.com</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism 8</td>\n      <td></td>\n      <td></td>\n      <td>https://www.graphpad.com/scientific-software/prism/</td>\n    </tr>\n  </tbody>\n</table>\n\n### D. melanogaster stocks and rearing conditions\n\nThe wild-type strain used here was mainly w1118, Oregon-R, and Canton-S. The mth1 (BDSC #27896) mutant males were used in the paraquat resistance test after backcrossing six-fold with w1118. R29H01-GAL4 (BDSC #47343) and UAS-TeTxLC (BDSC #28838) were obtained from the Bloomington Drosophila Stock Center, Bloomington, IN, USA. All fly strains were maintained on standard medium at 25\u00b0C (Appendix 1).\n\nMost experiments were conducted in a plant growth chamber (LPH-410NS; NK System Co. Ltd., Nagoya, Japan) maintained at 25\u00b0C and 60% RH. For the experiment using R29H01-GAL4\u00a0>\u00a0UAS TeTxLC, the larvae were reared at 29\u00b0C to increase GAL4 activity.\n\n### DIAMonDS hardware and layout\n\nDetailed DIAMonDS hardware and layout are described in Appendix 6.\n\n### Microplate preparation for DIAMonDS\n\nMicroplates with 96 or 384 wells were filled with standard fruit fly culture media (Appendix 1). A handmade acrylic lid was used for the 384-well microplate (Appendix 2). Titer stick film (Watson, Tokyo, Japan) was used for the 96-well microplate (Appendix 3). To determine the pupariation and eclosion timings, the film seal on the 96-well microplate was perforated with air holes (0.35 mm diameter; eight holes/well) over each well. For the stress resistance and lifespan tests, the 96-well microplate was sealed with film, which was then cut to form a cross shape over each well. Individual adult flies were transferred to each well without anesthesia. For the 384-well microplate, the flies were anesthetized with triethylamine and placed individually into each well (Appendix 4). The acrylic lid was then securely affixed to the microplate with screws and masking tape (Appendix 2).\n\n### Time-lapse image acquisition\n\nThree microplates were secured with glass slides to the flatbed scanner surface as described in Appendix 5. The scanner was then connected to a personal computer. \u2018VueScan\u2019 scanner software in the PC was launched, and time-lapse images were acquired at 1\u201315 min intervals (Appendix 6).\n\n### Starvation and drug resistance test\n\nFor the drug resistance assay, the wells of a microplate were filled with yeast-sucrose medium containing the appropriate chemicals as shown in Appendix 1. For the starvation test, the wells of a microplate were filled with 1% (w/v) agar (Appendix 1). Virgin adult flies were collected under CO2 anesthesia, stored in a vial with normal food for 3\u20135 days, placed individually into each microplate well, and subjected to time-lapse image acquisition.\n\n### Pupariation and eclosion time point detection for the same individuals\n\nTo measure pupariation and eclosion timing, newly hatched L1 larvae (24\u201325 hr AEL) were used as the lethality was too high when embryos were used (Figure 2\u2014figure supplement 1A). The large media volume in each well (150 \u00b5L) also increased lethality because the embryos suffocated when the media became very viscous. Therefore, we used 100 \u00b5L media for this approach (Figure 2\u2014figure supplement 1B). L2 or L3 larvae were also used in the DIAMonDS experiments. After the larvae were loaded into the microplate wells, the microplate was covered with Titer stick film (Watson, Tokyo, Japan), inverted on a predetermined area of the flatbed scanner surface, and fastened with tape. The scanner was then inverted in the incubator to prevent liquefied culture medium from falling onto the film surface. Time-lapse scanning was then run in VueScan in the PC. Scanning was terminated when all individuals eclosed to adults. The time-lapse images were analyzed in Sapphire (Figure 1B,C).\n\n### Pupariation, eclosion, and lifespan detection in identical individuals in DIAMonDS\n\nMicroplates were prepared with synchronized L1 larva (one/well), and images were acquired as previously described. Developmental stages for individuals were analyzed according to the images saved to the PC. After all individuals reached the P14 stage pupa, the pupae were transferred to the same well positions in a new microplate. The wells were sealed with new film, and scanning was resumed. After all flies completely eclosed, the individual adults were transferred to the same well positions in a new microplate, and scanning was restarted to measure individual lifespans. Adult flies were transferred weekly to new microplates until all flies died. The acquired images were then analyzed in Sapphire. Finally, we introduced the data obtained by Sapphire into the DIAMonDS analysis templates (Supplementary file 1) and calculated the time of each life-event (Appendix 7).\n\n### Life event detection algorithm and software: Sapphire\n\nThe present system included an automated, high-accuracy life event detection algorithm and image and signal processing (Figure 1C). The software could be obtained from (https://github.com/kanglab/Sapphire/tree/master;\u00a0Seong et al., 2020; copy archived at https://github.com/elifesciences-publications/Sapphire). The contents in the address also describe the installation, license, and system requirements such as directory tree and external dependencies. Quantitative algorithm summary and robustness in various parameter spaces are described in Appendix 8.\n\n### Image processing\n\nThe present system performed semantic segmentation via a deep neural network whose architecture is described in Figure 1\u2014figure supplement 2. Sufficient annotation data increases inference accuracy in deep learning. For network training, handmade supervised data were prepared and applied to image data augmentation. For adult body segmentation in death detection, the annotation data for 178 adults were introduced and magnified up to 71,200 by general image data augmentation (vertical and horizontal flips, rotation, and luminance modulation). For adult body segmentation in pupariation and eclosion detection, annotation data for 300 adults and 5760 larvae (as distractors) were prepared and magnified by\u00a0\u2264\u00a060,000 and\u226457,600, respectively. For larval body segmentation in pupariation and eclosion detection, annotation data for 1839 larvae and 183,900 augmented data were introduced to train the network. The present system detected rough outlines of the animal bodies (Appendix 8).\n\n### Signal processing\n\nIn the present system, subtractions between consecutive segmentation images were converted to signals in CF, which is a change point detection algorithm\u00a0(Takeuchi and Yamanishi, 2006).\n\nThe CF signal was obtained as follows:\n\n1.\u00a0Considering the following AR model for time series data $x_{t}$:\n\n$$\nx_{t}=A_{t-1}x_{t-1}+A_{t-2}x_{t-2}+\u22ef\n$$\n\n2.\u00a0Inference of parameters $\\theta=(A_{1},\u22ef,A_{k},\\mu,\\sigma)$ by maximizing I:\n\n$$\nI=\\sum_{i=1}^{t}1-r^{t-1}log\u2061Px_{i}|x_{i-1},\\theta\n$$\n\n3.\u00a0Calculation of scores:\n\n$$\nScorex_{t}=-log\u2061P_{t-1}x_{i}|x_{i-1}\n$$\n\n4.\u00a0Time averaging of scores:\n\n$$\ny_{t}=\\frac{1}{T}\\sumi=t-T+1tScore(x_{i})\n$$\n\n5.\u00a0Recalculating scores for $y_{t}$:\n\nFor death detection, the CF signal was calculated from the adult body segmentation and the death timing and determined as a maximum CF signal point capturing dynamic-to-static changes (Appendix 8). On the other hand, two CF signals were obtained from the adult and larval body segmentations in pupariation and eclosion detection. Pupariation is defined as the maximum dynamic-to-static transition point for larvae. Eclosion is defined as the maximum static-to-dynamic transition point for adults (Appendix 8). After time-lapse scanning, we can easily discriminate \u2018out-of-event\u2019, such as larval, and, pupal dead individuals. Sapphire can exclude \u2018out-of-event\u2019 wells by making the \u2018black lists\u2019 file (Appendix 7).\n\n### Statistics\n\nData were analyzed, and graphs were plotted in GraphPad Prism v. 8 (GraphPad Software, San Diego, CA, USA). A student\u2019s unpaired, two-tailed t-test was performed to compare differences between groups in each experiment and Dunnett's method of one-way ANOVA was used for multiple comparison test (***p<0.001; **p<0.01; *p<0.05; n.s., no significant).\n",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "1cc7895d-5908-4999-a097-450b07922e02",
+      "submission_id": "584f42e9-3cdb-4051-981d-61ddef844994",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hugo J Bellen, Baylor College of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58630.sa1](https://doi.org/10.7554/eLife.58630.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWe believe that the monitoring assay that the authors here developed will be useful in many fly labs and anticipate that this work will impact the research of very different types of fly research.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The Drosophila Individual Activity Monitoring and Detection System (DIAMonDS)\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jonathan Andrews (Reviewer #1); Michael B O'Connor (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nWe encourage you to carefully read the critiques and address all the issues that are listed below.\n\nReviewer #1:\n\nThe paper entitled \u2018The Drosophila Individual Activity Monitoring and Detection System (DIAMonDS)\u2019 highlights a new detection/tracking system which utilizes a flatbed CCD scanner to track and identify multiple life cycle events (pupariation, eclosion, and death) using a newly developed algorithm. In support of this novel monitoring system, the authors provide multiple examples of the tracking system in action, including analysis of larval and adult movement and the detection of pupariation and eclosion at a high temporal resolution. The authors also provide several examples of more complex experiments which can be accomplished in a high-throughput manner using DIAMonDS, including lifespan and stress resistance assays. As described, this system would provide a researcher with an automated tool for measuring the timing of multiple major developmental milestones in Drosophila development \u2013 essentially allowing for more accurate and less labor intensive observation.\n\nWhile DIAMonDS is certainly valuable in its current incarnation, the authors do note a number of worrying limitations which I believe should be resolved prior to publication, and there are several areas of the manuscript where I believe more detail is warranted.\n\n1) As DIAMonDS detects changes between the static and active phases in the Drosophila lifecycle through changes in motion, it is essential that the authors demonstrate (or provide an explanation of) how they discriminate between less motile stages of development (or death) and normal cessation of motion while alive, such as in grooming or sleep behavior in the adult.\n\n2) Similar to critique #1, this type of motion detection may not be as effective in animals with some form of locomotor defect. An additional experiment demonstrating that DIAMonDS can reliably detect and classify larvae or adults with reduced locomotion is prudent to demonstrate that it can work, even if the flies are impaired in some way.\n\n3) It is currently unclear how the DIAMonDS system handles events that occur \"off-camera\", as can be observed in frame 77-79 of Video 1. This may be a potential sources of error during tracking \u2013 for example, if a larvae crawls into an area where it is not observed and pupates, or if an animal dies out of view.\n\n4) It is unclear how (or if) the system would discriminate between pupation and a dead larvae. A failure to account for this could easily result in a false-positive for pupation.\n\n5) Paragraph four subsection \u201cPupariation and eclosion timing detection by DIAMonDS\u201d: I was unable to locate a description of the semi-automatic (TH) methods presented here in the Materials and methods section.\n\n6) The inability of the methods described in the manuscript to handle Oregon-R or Canton-S strains significantly limits the usefulness of the system. A set of optimal conditions for common laboratory strains should be included with the manuscript.\n\n7) As admitted by the authors, the size of the wells may adversely affect fly health. It would be worthwhile to see a comparison between the smaller chambers and a larger chamber, so as to allow for future users of the system to make more informed decisions about how to implement it.\n\nReviewer #2:\n\nThe manuscript by Seong et al. describes the development of a sophisticated activity monitoring system that is able to determine with, great accuracy, the timing of major life stage transitions during Drosophila development. Specifically, the system relies on time lapse imaging and A.I. based learning to pinpoint three transitions: (1) larval to pupal, (2) pupal to adult, (3) adult to death. The basic principle is to establish the location of a larva, pupa or adult at each time point within either a 96 or 384 well plate and then determine if it has changed at the next time point. Since larva and adults are motile and pupa and dead flies are not then it is conceptually easy to distinguish the stage transition through location changes by monitoring location changes. The authors demonstrate that the system works, at least for the W1118 genetic background, and is able to replicate known developmental characteristics such as the fact the females typically eclose a few hours before males and that the timing of the larval to pupal transition is diet (sugar) sensitive. They also demonstrate that it can be used to establish Kaplan-Meier lifespan curves which are capable of distinguishing environmental effects on adult lifespan such as the presence of DDT or paraquat in the food. Overall this system appears to have great potential for quantitatively measuring a number of developmental parameters that are presently very tedious to determine manually and are therefore not amenable to high throughput procedures that are needed for genetic and drug screening.\n\nI do not feel competent to comment on the software development and AI procedures used to train the system other than to say that they appear to work quite reliably as long as the optics are not disturbed. Herein lies the biggest disappointment.\n\n1) The authors conclude their Results section by saying that they cannot reliably measure lifespan in common strains such as Oregon-R and Canton-S because of accidental death effects due to such issues as water condensation in the wells and also due to blockage of the optical light path by the spread of food particles and feces on the well lid that obscures detection of the fly's position during imaging. The authors say that additional refinements of the system will be needed to overcome these challenges for adult lifespan analysis. I wonder, however, if the authors have tried something as simple as replacing the lid of the microtiter dish at some frequency during the lifespan measurements. I recognize that the entire chamber will need to be immersed in a CO2 chamber or cooled to knock the flies out and that this may influence the lifespan kinetics, but have the authors attempted anything like this as a work around to the degenerating light path and water accumulation issues during aging studies?\n\nDespite this drawback, I think the system still has significant utility for assaying environmental and genetic effects on larval to pupa and pupal to adult transitions and this makes it is worth communicating to the Drosophila research community.\n",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d4479fb6-8fa7-4a1f-ad46-e3ab0256d02c",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C1",
+      "claim": "DIAMonDS comprises time-lapse imaging by a charge-coupled device (CCD) flatbed scanner and Sapphire, a novel algorithm and web application.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have developed DIAMonDS (Drosophila Individual Activity Monitoring and Detection System) comprising time-lapse imaging by a charge-coupled device (CCD) flatbed scanner and Sapphire, a novel algorithm and web application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the components of DIAMonDS as developed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "cf4dda28-c39b-4085-959c-7f434c6ae62b",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C2",
+      "claim": "DIAMonDS automatically and sequentially identified the transition time points of multiple life cycle events such as pupariation, eclosion, and death in individual flies at high temporal resolution and on a large scale.",
+      "claim_type": "EXPLICIT",
+      "source": "DIAMonDS automatically and sequentially identified the transition time points of multiple life cycle events such as pupariation, eclosion, and death in individual flies at high temporal resolution and on a large scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the capabilities of DIAMonDS in detecting life cycle events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "9895844d-404f-4c8b-8bb5-7c4e895adaea",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C3",
+      "claim": "DIAMonDS performed simultaneous multiple scans to measure individual deaths (\u22641152 flies per scanner) and pupariation and eclosion timings (\u2264288 flies per scanner).",
+      "claim_type": "EXPLICIT",
+      "source": "DIAMonDS performed simultaneous multiple scans to measure individual deaths (\u22641152 flies per scanner) and pupariation and eclosion timings (\u2264288 flies per scanner) under various chemical exposures, environmental conditions, and genetic backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract provides specific numbers for the throughput capacity of DIAMonDS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "643ceb72-661e-44d3-b731-a96c7972c43b",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C4",
+      "claim": "DIAMonDS correctly identified 74\u201385% of the pupariation and eclosion events within \u00b1 10 scanning frames.",
+      "claim_type": "EXPLICIT",
+      "source": "DIAMonDS correctly identified 74\u201385% of the pupariation and eclosion events and ~ 92% of the death events within \u00b1 10 scanning frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract provides quantitative accuracy data for pupariation and eclosion detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "32c9081a-6aee-47ee-967d-e799d9cb65dc",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C5",
+      "claim": "DIAMonDS correctly identified approximately 92% of the death events within \u00b1 10 scanning frames.",
+      "claim_type": "EXPLICIT",
+      "source": "DIAMonDS correctly identified 74\u201385% of the pupariation and eclosion events and ~ 92% of the death events within \u00b1 10 scanning frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract provides quantitative accuracy data for death event detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "a870a2b2-ea1e-452c-a786-cb2a144f5e6c",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C6",
+      "claim": "Holometabolous insects such as Drosophila melanogaster pass through four life stages: embryo, larva, pupa, and adult.",
+      "claim_type": "EXPLICIT",
+      "source": "However, holometabolous insects such as the fruit fly Drosophila melanogaster are important exceptions to this rule. These animals pass through four life stages, namely embryo, larva, pupa, and adult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila development stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "17d72056-f521-4c4f-ad5d-3f51b629ec35",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C7",
+      "claim": "Transitions between Drosophila life stages are accompanied by drastic morphological events and behavioral changes including hatching, pupariation, eclosion, and death.",
+      "claim_type": "EXPLICIT",
+      "source": "Transitions between these stages are accompanied by drastic morphological events and behavioral changes including hatching, pupariation, eclosion, and death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes known characteristics of Drosophila developmental transitions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "b4479d60-9098-46c2-8375-86b518ee9349",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C8",
+      "claim": "Until now, the timing of each developmental stage in Drosophila was manually determined by counting the number of flies at each stage in each vial over 2, 6, 12, or 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Until now, the timing of each developmental stage was manually determined by counting the number of flies at each stage in each vial over 2, 6, 12, or 24 hr (Buhler et al., 2018; Demay et al., 2014; K\u00fclshammer et al., 2015; Nikhil et al., 2016; Yun et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies using manual counting methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "0f35f240-2633-4cdd-807c-96520b679fcd",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C9",
+      "claim": "Manual counting of developmental stages is neither practicable for large-scale/high-throughput screening nor feasible for identifying multiple phenotypes in individual flies in transition events.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, manual counting is neither practicable for large-scale/high-throughput screening nor feasible for identifying multiple phenotypes in individual flies in transition events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of manual counting methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "339ab474-1ba8-41bd-9fa7-291d9653e875",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C10",
+      "claim": "Recent studies reported the use of video cameras to measure developmental timing in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies reported the use of video cameras to measure developmental timing (Hironaka et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "bca9291e-d88d-43e6-b50c-840a638cb772",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C11",
+      "claim": "Video camera methods for measuring developmental timing are labor-intensive, require long analytical periods, and are unsuitable for high-throughput analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this method is labor-intensive, requires long analytical periods, and is unsuitable for high-throughput analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of video camera methods based on the cited study (Hironaka et al., 2019).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "f3c7b862-fcb2-4515-91e8-515d842b3329",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C12",
+      "claim": "Drosophila static phases (embryo, pupa, and death) alternate with dynamic phases (larva and adult).",
+      "claim_type": "EXPLICIT",
+      "source": "The static phases (embryo, pupa, and death) alternate with the dynamic phases (larva and adult; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "0706e446-4c80-4e53-b39c-949a4e4e1296",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C13",
+      "claim": "Dynamic phases in Drosophila are detected as positive signals while static phases present no signal in single-image processing between continuous images.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-image processing between continuous images distinguishes both phases: dynamic phases are detected as positive signals while static phases simultaneously present no signal (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the image processing principle used in DIAMonDS, illustrated in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "944e25cf-35c8-4ffe-8f0e-92c9fa2bec29",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C14",
+      "claim": "A single scanner can monitor 288 or 1152 individuals in three 96-well or 384-well microplates, respectively, for DIAMonDS.",
+      "claim_type": "EXPLICIT",
+      "source": "A single scanner can monitor 288 or 1152 individuals in three 96-well or 384-well microplates, respectively for DIAMonDS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific capacity information about the DIAMonDS system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "c1ef3eb3-75b2-4c56-882d-814c48aee414",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C15",
+      "claim": "The 384-well microplate is only used for measuring adult survivorships in the short term (within about 2 weeks) such as stress or drug resistance assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the well-size of 384-well microplate is too small to succeed in normal development and lifespan, we only use the 384-well microplate for measuring adult survivorships in the short term (within about 2 weeks) such as stress or drug resistance assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation and specific use case for the 384-well microplate format.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "085a7560-a58d-4e85-af29-459333a23baf",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C16",
+      "claim": "All DIAMonDS experiments were conducted in a plant growth chamber (LPH-410NS) with automatic temperature and humidity regulation and additional USB fans.",
+      "claim_type": "EXPLICIT",
+      "source": "As positional bias and fluctuations in environmental factors such as ambient temperature and relative humidity (RH) might markedly reduce the reliability of our system, all experiments were conducted in a plant growth chamber (LPH-410NS) with automatic temperature and humidity regulation and additional USB fans (Appendix 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup used to control environmental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "97793adf-2386-46f7-b543-e57c7c823f60",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C17",
+      "claim": "Time-lapse images were acquired without external illumination to maintain a steady temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperatures widely varied among locations under external illumination on/off conditions possibly because of irregular and uneven irradiation. Thus, we acquired time-lapse images without external illumination to maintain a steady temperature (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a methodological decision based on temperature measurements shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "73d555fc-de57-42eb-bf43-5c9b6a0cd6a1",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C18",
+      "claim": "Sapphire automatically determines the static-to-dynamic and dynamic-to-static phase changes for all flies according to time-lapse images.",
+      "claim_type": "EXPLICIT",
+      "source": "Sapphire automatically determines the static-to-dynamic and dynamic-to-static phase changes for all flies according to the time-lapse images acquired by the aforementioned scanner system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the core functionality of the Sapphire software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "e820e446-fe77-44ea-a6e5-6b54fc40eeb2",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C19",
+      "claim": "Annotation data for adult body segmentation in death detection included 178 adults and were magnified up to 71,200 by general image data augmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "For adult body segmentation in death detection, the annotation data for 178 adults were introduced and magnified up to 71,200 by general image data augmentation (vertical and horizontal flips, rotation, and luminance modulation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific details about the training data used for the machine learning model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "157beb96-c992-4d25-a9d6-3cb51da2fec2",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C20",
+      "claim": "Annotation data for larval body segmentation included 1839 larvae and 183,900 augmented data were introduced to train the network.",
+      "claim_type": "EXPLICIT",
+      "source": "For larval body segmentation in pupariation and eclosion detection, annotation data for 1839 larvae and 183,900 augmented data were introduced to train the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific details about the training data used for larval segmentation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "3074f583-55c0-40b4-8e06-06863ca12451",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C21",
+      "claim": "The Sapphire and visual handling values for pupariation and eclosion timings were nearly identical.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify Sapphire's accuracy, we compared pupariation and eclosion timings analyzed by Sapphire and those manually detected (visual handling) from the same images. The Sapphire and visual handling values were nearly identical (Figure 2C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result comparing automated and manual detection, shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "5d0b82a5-ba8b-48d9-8ca7-ee664253314b",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C22",
+      "claim": "73.8% of pupariation detections and 84.2% of eclosion detections showed only a slight difference within \u00b1 10 frames between Sapphire and visual handling.",
+      "claim_type": "EXPLICIT",
+      "source": "73.8% on pupariation and 84.2% on eclosion were only a slight difference within \u00b1 10 frames between them (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This provides quantitative accuracy data for Sapphire's detection performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "2e8d5fde-6849-4462-88dd-b80ee0e579db",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C23",
+      "claim": "When flies were transferred to a new microplate after pupariation, 94.7% of values from Sapphire showed nearly identical results (within \u00b1 10 frames) to visual handling values.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiment resulted in 94.7% of values from Sapphire showed nearly identical (within \u00b1 10 frames) to visual handling values, indicating that Sapphire's accuracy was greatly improved relative to the experimental setup in which the same microplate was used both for pupariation and eclosion detections (Figure 2\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates improved accuracy when using cleaner microplates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "b775ee71-5237-4da8-8565-9d3d13e25fe2",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C24",
+      "claim": "On average, female Drosophila eclosed 4 hours earlier than males.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, females eclosed 4 hr earlier than males. A previous study corroborated this observation (Bainbridge and Bownes, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from DIAMonDS data that is supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "86af11ea-c7df-41a7-8c0b-47ca143155f3",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C25",
+      "claim": "The pupariation transition time points did not differ between sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The pupariation transition time points did not differ between sexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from DIAMonDS data analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "6b621fd9-e51d-4c61-95b0-0bde70c962c1",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C26",
+      "claim": "Sexual dimorphism in eclosion time points reflects the difference in pupal duration between sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, sexual dimorphism in the eclosion time points reflects the difference in pupal duration between sexes (Figure 2E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the data shown in Figure 2E-G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "ab20ea44-2a0a-4601-84e1-e1172453a951",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C27",
+      "claim": "No significant differences were found between plates 1 and 3 used in DIAMonDS, indicating a minimal scan surface positional effect during detection of pupariation and eclosion time points.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant differences were found between plates 1 and 3 used here, indicating a minimal scan surface positional effect in DIAMonDS during the detection of the pupariation and eclosion time points (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates the reliability of the system across different plate positions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "a37eeb01-ab53-4ef0-bce1-f088976e7235",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C28",
+      "claim": "Timings of pupariation and eclosion were slightly but significantly shortened in both 48-well and 24-well conditions compared to 96-well conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that timings of pupariation and eclosion were slightly but significantly shorten both in the 48-well and 24-well conditions and the pupal duration might have the fewer effects of well-size, suggesting that the chamber size might affect fly's development (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experiments testing different well sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "776809a1-e1d9-401c-83d4-6edc92739247",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C29",
+      "claim": "DIAMonDS successfully detected pupariation delays in larvae with impaired serotonergic SE0PG neuron activity at all tested larval ages (L2, early L3, and late L3).",
+      "claim_type": "EXPLICIT",
+      "source": "First, we used larvae with delayed pupariation at 29\u00b0C (genotype: R29H01-GAL4 > UAS TeTxLC), in which tetanus toxin light chain (TeTxLC) impaired serotonergic SE0PG neuron activity (Shimada-Niwa and Niwa, 2014). To evaluate the influences of initial larval age on DIAMonDS measurement accuracy, we used L2, early L3, and late L3 larvae in the microplate assays. DIAMonDS successfully detected pupariation delays in larvae of all ages (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates DIAMonDS can detect genetic effects on development across different starting ages.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "b9ef864f-787c-4cc8-9bd0-e3967f6c9d43",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C30",
+      "claim": "Both pupariation and eclosion were gradually delayed in a sugar concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "L1 larvae were placed in wells containing normal to high-sugar concentrations, scanned by time-lapse imaging, and the pupariation and eclosion time points were detected by Sapphire. Both pupariation and eclosion were gradually delayed in a sugar concentration-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from experiments testing different sugar concentrations, shown in Figure 3B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "ce12ee3b-4648-4dac-b1c4-a969b2324d3a",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C31",
+      "claim": "Excess sugar adversely affects larval growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, excess sugar adversely affects larval growth (Figure 3B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the sugar concentration experiment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "0fad0812-138d-4150-bb3d-94742d1e32d1",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C32",
+      "claim": "The pupal durations were nearly constant regardless of sugar concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the pupariation and eclosion time points among individual larvae, the pupal durations were nearly constant regardless of sugar concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the sugar concentration experiment shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "0efdc517-36f7-4e5f-b21d-705212a1abe1",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C33",
+      "claim": "Northrop reported that prolongation of the pre-imago stage of D. melanogaster by yeast supplementation had no impact on pupal stage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Northrop reported that prolongation of the pre-imago stage of D. melanogaster by yeast supplementation had no impact on pupal stage duration (Northrop, 1917a; Northrop, 1917b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to historical work that supports the current findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "362bf939-5320-4f5e-bff1-ff818fdda77f",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C34",
+      "claim": "The process by which pupal duration is determined may be independent of larval dietary intake.",
+      "claim_type": "EXPLICIT",
+      "source": "The process by which pupal duration is determined may be independent of larval dietary intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the sugar concentration experiment results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "5e8338aa-8106-4760-996f-e79dc90623b1",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C35",
+      "claim": "DIAMonDS generated survival curves for adult flies under starvation that were highly correlated (R = 0.9913) with manual visual manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "After the image data series consisted of dying individual flies, death time points were determined manually (visual manipulation) and by Sapphire. Both procedures generated nearly identical survival curves and were highly correlated (R = 0.9913), indicating the reliability of Sapphire (Figure 4A\u2013D and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This provides quantitative validation of Sapphire's accuracy for death detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "51753b89-b8d4-4518-9c42-a9b587a105a3",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C36",
+      "claim": "No significant differences in death time points were found between each plate or among sub-areas within each plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we examined whether the well positions within a microplate influence the death time points. No significant differences were found between each plate or among the sub-areas within each plate (Figure 4E and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates spatial uniformity in the DIAMonDS system for death detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "593b3b72-1f66-4ff4-9da3-d01c51dc8afb",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C37",
+      "claim": "DIAMonDS showed relatively good results for detecting death time points in decapitated females, although accuracy was slightly reduced compared to wild-type flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we tried to test whether the DIAMonDS can effectively detect the death time points even in flies showed a very reduced amount of activity. As a hypoactive fly model, we used decapitated females who keep motor skills but hardly moved until their death (Ejima and Griffith, 2008). DIAMonDS showed relatively good results that were comparable to the visual results although there was a tendency for the accuracy to reduce slightly in comparison with the case of wild-type flies (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This tests the limits of DIAMonDS with hypoactive flies, citing previous work on decapitated flies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "e71de525-0aa9-4699-ba70-481ea127e2cf",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C38",
+      "claim": "Male and female w1118 flies presented sexual dimorphism in terms of starvation resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the efficacy of DIAMonDS at evaluating fly survival under various stress conditions, we performed a starvation assay on male and female w1118 flies (Figure 5A). They presented sexual dimorphism in terms of starvation resistance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from starvation experiments shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "6869b6f0-82fc-4267-a657-e472e95f0f7c",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C39",
+      "claim": "DIAMonDS showed distinct variance in DDT resistance even between only slightly differing DDT concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "DIAMonDS showed distinct variance in DDT resistance even between only slightly differing DDT concentrations (Figure 5D and Figure 5\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates the sensitivity of DIAMonDS for detecting dose-dependent effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "80fc5f08-9476-4fd0-abaf-3b8682478852",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C40",
+      "claim": "The mth1 mutant presented significantly greater resistance to several paraquat concentrations than w1118.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether DIAMonDS can discriminate mth1 mutant stress tolerance phenotypes, we backcrossed the mth1 mutant five times with w1118 and compared the responses of both types of males to different paraquat concentrations (Figure 5E,F). The mth1 mutant presented significantly greater resistance to several paraquat concentrations than w1118.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from paraquat resistance experiments shown in Figure 5E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "9e56fdd6-d7b3-4ecb-a9bf-e952cb1d1395",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C41",
+      "claim": "Paraquat resistance could be detected in the mth1 mutant using lower paraquat concentrations than those tested in an earlier study (20 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "The results of this assay demonstrated that paraquat resistance could be detected in the mth1 mutant using lower paraquat concentrations than those tested in an earlier study (20 mM)(Lin et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the current findings to previous work, demonstrating improved sensitivity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "94900be7-86a3-4af1-a651-49f20c514586",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C42",
+      "claim": "The mean lifespans calculated and survival curves plotted for individual male and female w1118 flies were consistent with those of previous reports.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean lifespans calculated and survival curves plotted for individual males and females were consistent with those of previous reports (Figure 6C; Liu et al., 2009; Schriner et al., 2014; Suh et al., 2008; Trostnikov et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This validates DIAMonDS lifespan measurements against published data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "9e65d3ed-91d2-4999-9122-17ccb28f083f",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C43",
+      "claim": "No significant correlations were found between larval and pupal duration, larval duration and adult lifespan, or pupal duration and adult lifespan in either sex.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish whether developmental stages and adult lifespans are interdependent in individual flies, we analyzed the following relationships: larval and pupal duration (Figure 6D,G), larval duration and adult lifespan (Figure 6E,H), and pupal duration and adult lifespan (Figure 6F,I). No significant correlations between the data for these pairs of parameters in either sex (Figure 6D\u2013I) and those reported in previous studies were found.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from correlation analysis shown in Figure 6D-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "6a7022ae-d405-456b-a254-d04b4f13598d",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C44",
+      "claim": "A shorter plate replacement cycle (once every 2-3 days) could effectively improve the viability of Oregon-R and Canton-S flies compared to weekly replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested the two different plate replacement cycles (once a week, or once 2\u20133 days) using Oregon-R and Canton-S in 96-well microplate. We observed a shorter plate replacement cycle could effectively improve the viability (Figure 6\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experiments testing different maintenance protocols.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "f4568ce7-4680-4190-af11-bc579ab15e35",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C45",
+      "claim": "DIAMonDS automatically detects time points from time-lapse images and correctly detected 74\u201385% of pupariation and eclosion events and approximately 92% of death events within \u00b1 10 frames relative to manual detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that relative to manual detection, DIAMonDS correctly detected 74\u201385% of the pupariation and eclosion and ~ 92% of the death events within \u00b1 10 frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the overall accuracy of DIAMonDS across different life events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "3df19b01-5d64-406b-b47d-d3786ca539f4",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C46",
+      "claim": "DIAMonDS is unsuitable for the analysis of insects with normal circadian rhythms as the flatbed scanners repeatedly emit light for imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it is unsuitable for the analysis of insects with normal circadian rhythms as the flatbed scanners repeatedly emit light for imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the DIAMonDS system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "eba8a2e4-97ce-4bd6-96c7-4698225ae0ec",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C47",
+      "claim": "The confined well space used for insect rearing might adversely affect individual fly health and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the confined well space used for insect rearing might adversely affect individual fly health and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the DIAMonDS system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "21d6be39-621d-4ff6-8940-edfcdabb9f46",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C48",
+      "claim": "DIAMonDS might be inappropriate for establishing the effects of volatile or unstable substances on flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, this approach might be inappropriate for establishing the effects of volatile or unstable substances on flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the DIAMonDS system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "0b8742e3-774b-467a-92d1-44fe73b001f8",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C49",
+      "claim": "The reliability of DIAMonDS may be reduced as the surfaces of the microplate lids become dirty over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, the reliability of this system may be reduced as the surfaces of the microplate lids become dirty over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation based on observations during experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "aaa242c4-832c-4747-a67c-f64fd0b1052b",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C50",
+      "claim": "Differences in lifespan measurement success between w1118 and wild-type strains (Oregon-R and Canton-S) may be due to differences in genetic background or intestinal environment.",
+      "claim_type": "EXPLICIT",
+      "source": "One reason for this constraint is the frequent occurrence of accidental death caused mainly by water droplet coalescence on the microplate wall surfaces. Differences between strains may be due to differences in genetic background or intestinal environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the causes of strain-specific differences in system performance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "85fba999-5de7-4541-be20-1b2bb061b462",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C51",
+      "claim": "In principle, DIAMonDS can also determine life cycle phase shifts in other small animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, DIAMonDS can also determine life cycle phase shifts in other small animals, and we intend to expand its applicability in medical, agricultural, and ongoing biological research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "28dd39a4-e990-4221-a940-e339c004f76c",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C52",
+      "claim": "Newly hatched first-instar (L1) larvae were used for measuring pupariation and eclosion timing because lethality was too high when embryos were used.",
+      "claim_type": "EXPLICIT",
+      "source": "To measure pupariation and eclosion timing, newly hatched L1 larvae (24\u201325 hr AEL) were used as the lethality was too high when embryos were used (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological decision based on experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "a8700abb-e0a3-454c-a4a6-2eb6f034e867",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C53",
+      "claim": "100 \u00b5L media per well was used instead of 150 \u00b5L because the large media volume increased lethality due to embryos suffocating when the media became very viscous.",
+      "claim_type": "EXPLICIT",
+      "source": "The large media volume in each well (150 \u00b5L) also increased lethality because the embryos suffocated when the media became very viscous. Therefore, we used 100 \u00b5L media for this approach (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological decision based on experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "c50d53f3-8ac8-4e8b-a3a8-a8e07eb1e01c",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C54",
+      "claim": "Drosophila larvae dove into the media until mid-L3 (~2 days) in a feeding stage designated as static.",
+      "claim_type": "EXPLICIT",
+      "source": "The L1 larvae dove into the media until mid-L3 (~2 d). As time-lapse scanning could not detect larval movements here, this so-called feeding stage was designated as static.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes observed larval behavior during DIAMonDS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "a87cf70a-3a01-4066-9e7a-83c7e8629cac",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C55",
+      "claim": "Larvae typically left the media and moved around the well surface during late L3 in a wandering stage designated as dynamic, with a duration of 12\u201324 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the larvae typically left the media and moved around the well surface during late L3 (Figure 2A). This so-called wandering stage was designated as dynamic, as there were consecutive high-activity wandering larval signals (Figure 2B), and its duration was 12\u201324 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes observed larval behavior during DIAMonDS experiments, shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "5e5fde92-58cd-49f7-ab26-2342a6af695d",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C56",
+      "claim": "During the pupal stage (~100 hours), activity was not detected in a static phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereafter, L3 larval activity gradually decreased, and pupariation followed. During the pupal stage (~100 hr), the activity was not detected in a static phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes observed behavior during the pupal stage in DIAMonDS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "9c451e3a-57b5-4318-9cc4-619b54a3283f",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C57",
+      "claim": "The second signal wave activity was detected just after dynamic eclosion.",
+      "claim_type": "EXPLICIT",
+      "source": "The second signal wave activity was detected just after dynamic eclosion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the activity pattern detected after eclosion, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "906a877f-3504-45c4-ac77-552b113b3bbd",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C58",
+      "claim": "Film surface contamination after long-term rearing in small wells might have accounted for the observed decrease in Sapphire detection accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Film surface contamination after long-term rearing in small wells might have accounted for the observed decrease in Sapphire detection accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the cause of reduced accuracy over time.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "b7068302-90ce-401f-8425-42924161d2f9",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C59",
+      "claim": "The output of the CF method was superior to that of the TH method, as the former is relatively more sensitive to phase shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared CF and TH using the same time-lapse image set (Figure 2\u2014figure supplement 3). The output of CF was superior to that of TH, as the former is relatively more sensitive to phase shifts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of two methods within Sapphire based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "efabc511-98d8-495b-9057-f0c0d6c8e85e",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C60",
+      "claim": "A previous study reported that Drosophila larvae administered a high-sugar diet presented a type 2 diabetes-like phenotype and developmental delay.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous report stated that Drosophila larvae that were administered a high-sugar diet presented a type 2 diabetes-like phenotype and developmental delay (Musselman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous work that provides context for the sugar experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "e759d36e-28eb-464a-ab13-f733edd55c14",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C61",
+      "claim": "The sugar concentration determines the time spent as a larva until pupariation, but it does not influence the time spent as a pupa.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the sugar concentration determines the time spent as a larva until pupariation, but it does not influence the time spent as a pupa (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the sugar concentration experiment data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "b393b11b-63c3-4fb2-b186-be6d805fef77",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C62",
+      "claim": "The 96-well type microplate is used in long-term detection, whereas the 384-well plate is better suited for short-term (\u226410 d) detection and high-throughput assays.",
+      "claim_type": "EXPLICIT",
+      "source": "DIAMonDS may be implemented using 96- and 384-well microplates to accommodate various parameters in death timing detection. The 96-well type is used in long-term detection, whereas the 384-well plate is better suited for short-term (\u226410 d) detection and high-throughput assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recommended use cases for different microplate formats.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "0341fd76-4ee5-41b6-8cfe-97aec7ba89c0",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C63",
+      "claim": "Flies with the loss-of-function mutation methuselah (mth) present extended lifespan and resistance to several stressors including paraquat.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies with the loss-of-function mutation methuselah (mth) present extended lifespan and resistance to several stressors including paraquat (Lin et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous work describing the mth mutant phenotype.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "fe579a72-86af-42f8-843c-a54d8d5174c4",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C64",
+      "claim": "Increasing well-size might have harmful effects on the survival of aged flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the reduced viability was not rescued by changing to bigger microplate-well size, and somewhat, increasing well-size might have harmful effects on the survival of aged flies (Figure 6\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experiments testing different well sizes, shown in Figure 6\u2014figure supplement 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "8b7b95ef-7af9-4917-9eb4-22d6080d5041",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C65",
+      "claim": "Plate replacement requires a lot of work time and seems to be not suitable for high-throughput experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because plate replacement is required a lot of work time, it seems to be not suitable for the high-throughput experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the practical limitations of frequent plate replacement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "b2f5fc88-3611-4c02-872b-46c469fbf5aa",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C66",
+      "claim": "Further optimization of experimental conditions will be necessary to effectively use DIAMonDS to conduct lifespan tests on a wide range of fly strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Further optimization of the experimental conditions will be necessary to effectively use DIAMonDS to conduct lifespan tests on a wide range of fly strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future work needed to expand DIAMonDS applicability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "ca9e2ffe-3163-41a1-9ba2-a08cc6f8fbc2",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C67",
+      "claim": "DIAMonDS substantially ameliorates Drosophila research endeavors compared to conventional manual counting methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, DIAMonDS substantially ameliorates Drosophila research endeavors compared to conventional manual counting methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion about the advantages of DIAMonDS.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "99e6d649-cbfc-4fd4-86bd-dcf7b0ad18c1",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C68",
+      "claim": "DIAMonDS can eliminate the constraint of long data acquisition and analysis time intervals, operate multiple scanners simultaneously, and facilitate high-throughput analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, DIAMonDS can help clarify the complex interactions among genetic and environmental factors throughout the Drosophila life cycle. DIAMonDS can also eliminate the constraint of long data acquisition and analysis time intervals, operate multiple scanners simultaneously, and facilitate high-throughput analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the advantages of DIAMonDS over conventional methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "8789e500-3aa3-4ad1-90ad-bf22ee0e4915",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C69",
+      "claim": "DIAMonDS is fully functional both for preliminary experiments and large-scale screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, DIAMonDS is fully functional both for preliminary experiments and large-scale screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the applicability of DIAMonDS based on its accuracy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "2bf48816-442c-4bf8-a580-9cb82c903441",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C70",
+      "claim": "The output of Sapphire can guide the manual determination of exact values.",
+      "claim_type": "EXPLICIT",
+      "source": "The output of Sapphire can guide the manual determination of exact values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a practical use of Sapphire's output.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "33028ec1-25b2-4e13-828b-1c97b366e2cb",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C71",
+      "claim": "Detection accuracy could be greatly improved by reducing noise in time-lapse image acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Detection accuracy could be greatly improved by reducing noise in time-lapse image acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for improving DIAMonDS performance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "47526884-35af-42b9-b142-93de67b57bfb",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C72",
+      "claim": "Data quality can be enhanced via the machine learning training step in Sapphire.",
+      "claim_type": "EXPLICIT",
+      "source": "Data quality can also be enhanced via the machine learning training step in Sapphire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for improving DIAMonDS performance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "5ab2d4b9-ad0b-4378-9c26-416feac2eda9",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C73",
+      "claim": "Optimization of experimental conditions is an important initial prerequisite step for stable, highly reliable data acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimization of experimental conditions is an important initial prerequisite step for stable, highly reliable data acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for using DIAMonDS effectively.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "0e0f8243-b565-435f-b67f-6c58aa04e1af",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C74",
+      "claim": "Detection of circadian rhythm might be achieved by image acquisition using infrared rays.",
+      "claim_type": "EXPLICIT",
+      "source": "These problems could be solved by further improvement in the system. For example, detection of the circadian rhythm might be achieved by image acquisition using infrared rays",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for overcoming a limitation of DIAMonDS.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "a07bd713-1d23-462a-9282-09ad31c71488",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "claim_id": "C75",
+      "claim": "The use of large-wells might reduce the adverse effects of rearing on small-wells.",
+      "claim_type": "EXPLICIT",
+      "source": "and It seems that the use of large-wells might expect to reduce the adverse effects of rearing on small-wells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for overcoming a limitation of DIAMonDS.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6731bdb8-87fa-4109-b55c-8e33afca9384",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DIAMonDS is a novel system comprising time-lapse imaging by CCD flatbed scanner and Sapphire software that automatically detects developmental transitions (pupariation, eclosion, death) in individual Drosophila by distinguishing static and dynamic phases, with capacity for 288-1152 flies per scanner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C12-C14, and C18 collectively describe the core design and functionality of DIAMonDS. The system's principle of detecting phase transitions through image subtraction (C13) is well-demonstrated in Figure 1, and the throughput capacity (C14) is explicitly stated and validated through multiple experiments. The automated detection capability (C2, C18) is supported by extensive validation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "65cdc2cf-8318-4c4b-8062-5dd54ebf6d7e",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DIAMonDS achieved 74-85% accuracy for pupariation/eclosion detection and ~92% accuracy for death detection within \u00b110 frames compared to manual visual handling, with accuracy improving to 94.7% for eclosion when using clean microplates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C21-C23, and C45 provide quantitative validation of DIAMonDS accuracy. The validation is rigorous, comparing automated detection to manual scoring on identical images (Figure 2C-D, Figure 2\u2014figure supplement 2-3). The improvement with cleaner plates (C23) demonstrates understanding of system limitations. Statistical correlations (R=0.86-0.99) support the accuracy claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "0f587c98-b118-4c9e-974c-317ef22e88ab",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sapphire uses fully convolutional networks trained on augmented datasets (71,200 adult images from 178 annotations; 183,900 larval images from 1,839 annotations) with a CF method superior to threshold-based detection for identifying phase transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 provide specific details about training data that are verifiable from the methods section. C59 demonstrates empirical comparison of CF vs TH methods (Figure 2\u2014figure supplement 3), showing CF's superiority. The data augmentation approach is standard practice and the sample sizes appear adequate for the segmentation task.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "e237b79d-4354-4aa8-bbad-fe4e2ccae8a9",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DIAMonDS revealed sexual dimorphism in Drosophila development: females eclosed 4 hours earlier than males on average, with no sex difference in pupariation timing, indicating the dimorphism reflects differential pupal duration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 present a coherent biological finding supported by data in Figure 2E-G. The 4-hour difference (C24) is corroborated by prior literature (Bainbridge and Bownes, 1981). The lack of difference in pupariation timing (C25) combined with earlier eclosion (C24) logically supports the conclusion about pupal duration (C26). Statistical significance is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "1af6f3bc-73b9-4703-b239-10814761cd33",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DIAMonDS successfully detected pupariation delays in larvae with impaired serotonergic neuron activity (R29H01-GAL4>UAS-TeTxLC) across different starting larval ages (L2, early L3, late L3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 demonstrates DIAMonDS can detect genetic perturbations affecting development. Figure 3A shows clear, statistically significant delays across all tested ages. The genetic manipulation is well-established (cited to Shimada-Niwa and Niwa, 2014), and the robustness across different starting ages validates the system's reliability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "b2118af7-f1d9-42a2-b322-99f00ccd494d",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sugar concentration dose-dependently delayed pupariation and eclosion but pupal duration remained constant, suggesting larval dietary intake does not influence pupal stage duration, consistent with historical observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 and C61 present a clear dose-response relationship shown in Figure 3B-F with appropriate statistical testing. The constant pupal duration (C32) despite variable larval duration is a novel observation at this resolution. The consistency with Northrop's 1917 findings (C33) strengthens the conclusion, though C34 appropriately frames this as speculative regarding mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "94c5cba0-e2b0-459f-a89a-aabcfb435a37",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DIAMonDS death detection showed high correlation (R=0.9913) with manual scoring, no positional bias across microplate locations, and maintained reasonable accuracy even for hypoactive decapitated flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 validate DIAMonDS for death detection. The high correlation (C35, Figure 4A-D) and lack of positional effects (C36, Figure 4E) demonstrate technical robustness. Testing with decapitated flies (C37) appropriately probes system limits, showing slightly reduced but still acceptable performance. The validation approach is rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "ad44c1a5-4c08-4664-8584-98c09590a352",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DIAMonDS detected sexual dimorphism in starvation resistance, dose-dependent DDT toxicity with high sensitivity, and paraquat resistance in mth1 mutants at lower concentrations than previously reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 demonstrate DIAMonDS utility for stress/drug resistance assays. Sexual dimorphism in starvation (C38, Figure 5A-B) and dose-response to DDT (C39, Figure 5C-D) show appropriate sensitivity. Detection of mth1 resistance at lower paraquat concentrations than Lin et al. 1998 (C41) demonstrates improved sensitivity over traditional methods. All findings have appropriate statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "ed0b247c-6481-4232-a7d5-f47b724b2dd0",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "DIAMonDS-measured lifespans for w1118 flies were consistent with published reports, and no significant correlations were found between developmental stage durations and adult lifespan in individual flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 validates DIAMonDS lifespan measurements against literature (Figure 6C, multiple citations). C43 presents correlation analyses (Figure 6D-I) showing independence of developmental stages and lifespan. The lack of correlation is appropriately tested statistically and represents a novel finding enabled by individual tracking. Sample sizes (59 females, 75 males) are adequate for correlation analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "89a59488-3486-4da1-9e52-667b3c06411b",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DIAMonDS showed minimal positional effects across different plate positions, though well size affected developmental timing with 48-well and 24-well formats showing slightly accelerated development compared to 96-well.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 (Figure 2\u2014figure supplement 4) demonstrates spatial uniformity, important for high-throughput applications. C28 (Figure 2\u2014figure supplement 5) reveals a well-size effect on development timing, appropriately characterized as statistically significant but biologically modest. This represents an important technical consideration for experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "dec9c38d-d87b-49de-b977-7e3a4ec81821",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Frequent plate replacement (every 2-3 days) improved viability for Oregon-R and Canton-S strains, though larger well sizes did not rescue viability and may harm aged flies; further optimization is needed for broad strain applicability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C64-C66 honestly address system limitations. Figure 6\u2014figure supplement 1 shows strain-specific challenges with Oregon-R and Canton-S. The finding that larger wells don't help (C64) and may harm survival is counterintuitive but data-supported. The acknowledgment that frequent replacement is labor-intensive (C65) and that optimization is needed (C66) demonstrates appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "9f40d697-5299-45e5-8d60-66218e2885d7",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "All DIAMonDS experiments were conducted in controlled environmental chambers without external illumination to maintain stable temperature, as illumination caused temperature variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 describe critical methodological controls. Figure 1\u2014figure supplement 1 demonstrates temperature instability with external illumination and stability without it. This is essential for reliable developmental timing measurements and shows appropriate attention to environmental confounders. The decision is data-driven and well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "a124e0b3-4f05-41cc-8e95-5a470d5e3978",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological optimization determined that L1 larvae (not embryos) in 100 \u00b5L media (not 150 \u00b5L) provided optimal survival, and DIAMonDS successfully tracked larval feeding (static), wandering (dynamic, 12-24h), pupal (static, ~100h), and adult (dynamic) phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 describe data-driven optimization (Figure 2\u2014figure supplement 1) showing embryos and 150 \u00b5L media increased lethality. Claims C54-C57 characterize observed behavioral phases with specific durations. These represent important methodological details that enable reproducibility and demonstrate the system captures expected Drosophila biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "278e7c0a-d1d7-4083-af52-493d5e03f625",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "DIAMonDS has limitations including unsuitability for circadian rhythm studies due to repeated light exposure, potential adverse effects of confined well space, inappropriateness for volatile substances, reduced reliability with dirty lids, and strain-specific challenges possibly due to genetic or metabolic differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 honestly acknowledge system limitations. These are logical inferences (C46-C48) or observation-based (C49, C58). The speculation about strain differences (C50) is appropriately tentative. This transparent discussion of limitations is scientifically appropriate and helps users understand when DIAMonDS is and isn't suitable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "9a08900f-dc62-4ba2-b4e9-e54d396880cc",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "DIAMonDS substantially improves upon manual counting methods by eliminating long acquisition/analysis times, enabling simultaneous multi-scanner operation, facilitating high-throughput analysis, and being functional for both preliminary and large-scale screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 summarize DIAMonDS advantages over traditional methods. These conclusions are supported by the demonstrated throughput (C3, C14), accuracy (C4-C5, C45), and successful application across multiple experimental paradigms. The 74-92% accuracy (C69) is sufficient for screening while Sapphire output can guide manual refinement (C70) for publication-quality data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "cf0fd5d9-3983-4939-9626-5e4ed87a62d7",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Traditional methods for measuring Drosophila developmental timing relied on manual counting at 2-24 hour intervals or labor-intensive video analysis, which are impractical for high-throughput screening and cannot track multiple phenotypes in individual flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11 establish the scientific context and motivation for DIAMonDS. C6-C7 state established Drosophila biology. C8 accurately describes prior methods with appropriate citations. C9 and C11 are reasonable inferences about limitations of manual and video methods. This context appropriately justifies the need for the developed system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "1087efa7-57d0-403b-95df-aef5f9949fc0",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The 384-well format is limited to short-term adult survival assays (\u22642 weeks) due to small well size preventing normal development, while 96-well plates are suitable for long-term measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15 and C62 describe appropriate use cases for different microplate formats based on biological constraints. This is a logical inference from well dimensions and Drosophila biology, validated through the successful application of each format in appropriate contexts (384-well for stress assays in Figures 4-5, 96-well for development in Figures 2-3).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "1d39cfa6-f81c-4357-981a-0924ed270a0d",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Film contamination may reduce accuracy over time, but detection could be improved by reducing image acquisition noise, enhancing machine learning training, and optimizing experimental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is a reasonable inference supported by the improved accuracy with clean plates (C23). Claims C71-C73 are appropriate suggestions for future improvement. C23's data showing 94.7% vs 84.2% accuracy with clean plates directly supports C58. The suggestions (C71-C73) are logical extensions though speculative about magnitude of improvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "e002eaa1-8b4f-41df-9f6e-62f3986db279",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "DIAMonDS could potentially be extended to other small animals, circadian rhythm studies using infrared imaging, and larger wells to reduce confinement effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51, C74-C75 are speculative about future applications and improvements. While the underlying principles (detecting static/dynamic transitions) could apply to other organisms (C51), no data support this. Infrared imaging (C74) and larger wells (C75) are reasonable suggestions but untested. These represent future directions rather than demonstrated capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    },
+    {
+      "id": "a57ffdac-4e07-4722-8307-0b4e83ef3fb4",
+      "content_id": "8b2978bf-28ba-4548-8f1c-2a1425e8d358",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior studies reported that dietary supplementation affects pre-adult development without changing pupal duration (Northrop 1917), high-sugar diets cause diabetes-like phenotypes in Drosophila larvae (Musselman 2011), and mth mutants show extended lifespan and stress resistance (Lin 1998).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C60, C63 accurately cite prior literature to provide context for current findings. C33 supports the sugar experiment interpretation, C60 provides rationale for the sugar experiments, and C63 justifies the mth mutant experiments. These citations appear accurate based on the references provided and appropriately contextualize the DIAMonDS results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:16:17.859167Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d4479fb6-8fa7-4a1f-ad46-e3ab0256d02c",
+      "result_id": "6731bdb8-87fa-4109-b55c-8e33afca9384"
+    },
+    {
+      "claim_id": "cf4dda28-c39b-4085-959c-7f434c6ae62b",
+      "result_id": "6731bdb8-87fa-4109-b55c-8e33afca9384"
+    },
+    {
+      "claim_id": "9895844d-404f-4c8b-8bb5-7c4e895adaea",
+      "result_id": "6731bdb8-87fa-4109-b55c-8e33afca9384"
+    },
+    {
+      "claim_id": "f3c7b862-fcb2-4515-91e8-515d842b3329",
+      "result_id": "6731bdb8-87fa-4109-b55c-8e33afca9384"
+    },
+    {
+      "claim_id": "0706e446-4c80-4e53-b39c-949a4e4e1296",
+      "result_id": "6731bdb8-87fa-4109-b55c-8e33afca9384"
+    },
+    {
+      "claim_id": "944e25cf-35c8-4ffe-8f0e-92c9fa2bec29",
+      "result_id": "6731bdb8-87fa-4109-b55c-8e33afca9384"
+    },
+    {
+      "claim_id": "73d555fc-de57-42eb-bf43-5c9b6a0cd6a1",
+      "result_id": "6731bdb8-87fa-4109-b55c-8e33afca9384"
+    },
+    {
+      "claim_id": "643ceb72-661e-44d3-b731-a96c7972c43b",
+      "result_id": "65cdc2cf-8318-4c4b-8062-5dd54ebf6d7e"
+    },
+    {
+      "claim_id": "32c9081a-6aee-47ee-967d-e799d9cb65dc",
+      "result_id": "65cdc2cf-8318-4c4b-8062-5dd54ebf6d7e"
+    },
+    {
+      "claim_id": "3074f583-55c0-40b4-8e06-06863ca12451",
+      "result_id": "65cdc2cf-8318-4c4b-8062-5dd54ebf6d7e"
+    },
+    {
+      "claim_id": "5d0b82a5-ba8b-48d9-8ca7-ee664253314b",
+      "result_id": "65cdc2cf-8318-4c4b-8062-5dd54ebf6d7e"
+    },
+    {
+      "claim_id": "2e8d5fde-6849-4462-88dd-b80ee0e579db",
+      "result_id": "65cdc2cf-8318-4c4b-8062-5dd54ebf6d7e"
+    },
+    {
+      "claim_id": "f4568ce7-4680-4190-af11-bc579ab15e35",
+      "result_id": "65cdc2cf-8318-4c4b-8062-5dd54ebf6d7e"
+    },
+    {
+      "claim_id": "e820e446-fe77-44ea-a6e5-6b54fc40eeb2",
+      "result_id": "0f587c98-b118-4c9e-974c-317ef22e88ab"
+    },
+    {
+      "claim_id": "157beb96-c992-4d25-a9d6-3cb51da2fec2",
+      "result_id": "0f587c98-b118-4c9e-974c-317ef22e88ab"
+    },
+    {
+      "claim_id": "b7068302-90ce-401f-8425-42924161d2f9",
+      "result_id": "0f587c98-b118-4c9e-974c-317ef22e88ab"
+    },
+    {
+      "claim_id": "b775ee71-5237-4da8-8565-9d3d13e25fe2",
+      "result_id": "e237b79d-4354-4aa8-bbad-fe4e2ccae8a9"
+    },
+    {
+      "claim_id": "86af11ea-c7df-41a7-8c0b-47ca143155f3",
+      "result_id": "e237b79d-4354-4aa8-bbad-fe4e2ccae8a9"
+    },
+    {
+      "claim_id": "6b621fd9-e51d-4c61-95b0-0bde70c962c1",
+      "result_id": "e237b79d-4354-4aa8-bbad-fe4e2ccae8a9"
+    },
+    {
+      "claim_id": "776809a1-e1d9-401c-83d4-6edc92739247",
+      "result_id": "1af6f3bc-73b9-4703-b239-10814761cd33"
+    },
+    {
+      "claim_id": "b9ef864f-787c-4cc8-9bd0-e3967f6c9d43",
+      "result_id": "b2118af7-f1d9-42a2-b322-99f00ccd494d"
+    },
+    {
+      "claim_id": "ce12ee3b-4648-4dac-b1c4-a969b2324d3a",
+      "result_id": "b2118af7-f1d9-42a2-b322-99f00ccd494d"
+    },
+    {
+      "claim_id": "0fad0812-138d-4150-bb3d-94742d1e32d1",
+      "result_id": "b2118af7-f1d9-42a2-b322-99f00ccd494d"
+    },
+    {
+      "claim_id": "0efdc517-36f7-4e5f-b21d-705212a1abe1",
+      "result_id": "b2118af7-f1d9-42a2-b322-99f00ccd494d"
+    },
+    {
+      "claim_id": "362bf939-5320-4f5e-bff1-ff818fdda77f",
+      "result_id": "b2118af7-f1d9-42a2-b322-99f00ccd494d"
+    },
+    {
+      "claim_id": "e759d36e-28eb-464a-ab13-f733edd55c14",
+      "result_id": "b2118af7-f1d9-42a2-b322-99f00ccd494d"
+    },
+    {
+      "claim_id": "5e8338aa-8106-4760-996f-e79dc90623b1",
+      "result_id": "94c5cba0-e2b0-459f-a89a-aabcfb435a37"
+    },
+    {
+      "claim_id": "51753b89-b8d4-4518-9c42-a9b587a105a3",
+      "result_id": "94c5cba0-e2b0-459f-a89a-aabcfb435a37"
+    },
+    {
+      "claim_id": "593b3b72-1f66-4ff4-9da3-d01c51dc8afb",
+      "result_id": "94c5cba0-e2b0-459f-a89a-aabcfb435a37"
+    },
+    {
+      "claim_id": "e71de525-0aa9-4699-ba70-481ea127e2cf",
+      "result_id": "ad44c1a5-4c08-4664-8584-98c09590a352"
+    },
+    {
+      "claim_id": "6869b6f0-82fc-4267-a657-e472e95f0f7c",
+      "result_id": "ad44c1a5-4c08-4664-8584-98c09590a352"
+    },
+    {
+      "claim_id": "80fc5f08-9476-4fd0-abaf-3b8682478852",
+      "result_id": "ad44c1a5-4c08-4664-8584-98c09590a352"
+    },
+    {
+      "claim_id": "9e56fdd6-d7b3-4ecb-a9bf-e952cb1d1395",
+      "result_id": "ad44c1a5-4c08-4664-8584-98c09590a352"
+    },
+    {
+      "claim_id": "94900be7-86a3-4af1-a651-49f20c514586",
+      "result_id": "ed0b247c-6481-4232-a7d5-f47b724b2dd0"
+    },
+    {
+      "claim_id": "9e65d3ed-91d2-4999-9122-17ccb28f083f",
+      "result_id": "ed0b247c-6481-4232-a7d5-f47b724b2dd0"
+    },
+    {
+      "claim_id": "ab20ea44-2a0a-4601-84e1-e1172453a951",
+      "result_id": "89a59488-3486-4da1-9e52-667b3c06411b"
+    },
+    {
+      "claim_id": "a37eeb01-ab53-4ef0-bce1-f088976e7235",
+      "result_id": "89a59488-3486-4da1-9e52-667b3c06411b"
+    },
+    {
+      "claim_id": "6a7022ae-d405-456b-a254-d04b4f13598d",
+      "result_id": "dec9c38d-d87b-49de-b977-7e3a4ec81821"
+    },
+    {
+      "claim_id": "fe579a72-86af-42f8-843c-a54d8d5174c4",
+      "result_id": "dec9c38d-d87b-49de-b977-7e3a4ec81821"
+    },
+    {
+      "claim_id": "8b7b95ef-7af9-4917-9eb4-22d6080d5041",
+      "result_id": "dec9c38d-d87b-49de-b977-7e3a4ec81821"
+    },
+    {
+      "claim_id": "b2f5fc88-3611-4c02-872b-46c469fbf5aa",
+      "result_id": "dec9c38d-d87b-49de-b977-7e3a4ec81821"
+    },
+    {
+      "claim_id": "085a7560-a58d-4e85-af29-459333a23baf",
+      "result_id": "9f40d697-5299-45e5-8d60-66218e2885d7"
+    },
+    {
+      "claim_id": "97793adf-2386-46f7-b543-e57c7c823f60",
+      "result_id": "9f40d697-5299-45e5-8d60-66218e2885d7"
+    },
+    {
+      "claim_id": "28dd39a4-e990-4221-a940-e339c004f76c",
+      "result_id": "a124e0b3-4f05-41cc-8e95-5a470d5e3978"
+    },
+    {
+      "claim_id": "a8700abb-e0a3-454c-a4a6-2eb6f034e867",
+      "result_id": "a124e0b3-4f05-41cc-8e95-5a470d5e3978"
+    },
+    {
+      "claim_id": "c50d53f3-8ac8-4e8b-a3a8-a8e07eb1e01c",
+      "result_id": "a124e0b3-4f05-41cc-8e95-5a470d5e3978"
+    },
+    {
+      "claim_id": "a87cf70a-3a01-4066-9e7a-83c7e8629cac",
+      "result_id": "a124e0b3-4f05-41cc-8e95-5a470d5e3978"
+    },
+    {
+      "claim_id": "5e5fde92-58cd-49f7-ab26-2342a6af695d",
+      "result_id": "a124e0b3-4f05-41cc-8e95-5a470d5e3978"
+    },
+    {
+      "claim_id": "9c451e3a-57b5-4318-9cc4-619b54a3283f",
+      "result_id": "a124e0b3-4f05-41cc-8e95-5a470d5e3978"
+    },
+    {
+      "claim_id": "3df19b01-5d64-406b-b47d-d3786ca539f4",
+      "result_id": "278e7c0a-d1d7-4083-af52-493d5e03f625"
+    },
+    {
+      "claim_id": "eba8a2e4-97ce-4bd6-96c7-4698225ae0ec",
+      "result_id": "278e7c0a-d1d7-4083-af52-493d5e03f625"
+    },
+    {
+      "claim_id": "21d6be39-621d-4ff6-8940-edfcdabb9f46",
+      "result_id": "278e7c0a-d1d7-4083-af52-493d5e03f625"
+    },
+    {
+      "claim_id": "0b8742e3-774b-467a-92d1-44fe73b001f8",
+      "result_id": "278e7c0a-d1d7-4083-af52-493d5e03f625"
+    },
+    {
+      "claim_id": "aaa242c4-832c-4747-a67c-f64fd0b1052b",
+      "result_id": "278e7c0a-d1d7-4083-af52-493d5e03f625"
+    },
+    {
+      "claim_id": "ca9e2ffe-3163-41a1-9ba2-a08cc6f8fbc2",
+      "result_id": "9a08900f-dc62-4ba2-b4e9-e54d396880cc"
+    },
+    {
+      "claim_id": "99e6d649-cbfc-4fd4-86bd-dcf7b0ad18c1",
+      "result_id": "9a08900f-dc62-4ba2-b4e9-e54d396880cc"
+    },
+    {
+      "claim_id": "8789e500-3aa3-4ad1-90ad-bf22ee0e4915",
+      "result_id": "9a08900f-dc62-4ba2-b4e9-e54d396880cc"
+    },
+    {
+      "claim_id": "2bf48816-442c-4bf8-a580-9cb82c903441",
+      "result_id": "9a08900f-dc62-4ba2-b4e9-e54d396880cc"
+    },
+    {
+      "claim_id": "a870a2b2-ea1e-452c-a786-cb2a144f5e6c",
+      "result_id": "cf0fd5d9-3983-4939-9626-5e4ed87a62d7"
+    },
+    {
+      "claim_id": "17d72056-f521-4c4f-ad5d-3f51b629ec35",
+      "result_id": "cf0fd5d9-3983-4939-9626-5e4ed87a62d7"
+    },
+    {
+      "claim_id": "b4479d60-9098-46c2-8375-86b518ee9349",
+      "result_id": "cf0fd5d9-3983-4939-9626-5e4ed87a62d7"
+    },
+    {
+      "claim_id": "0f35f240-2633-4cdd-807c-96520b679fcd",
+      "result_id": "cf0fd5d9-3983-4939-9626-5e4ed87a62d7"
+    },
+    {
+      "claim_id": "339ab474-1ba8-41bd-9fa7-291d9653e875",
+      "result_id": "cf0fd5d9-3983-4939-9626-5e4ed87a62d7"
+    },
+    {
+      "claim_id": "bca9291e-d88d-43e6-b50c-840a638cb772",
+      "result_id": "cf0fd5d9-3983-4939-9626-5e4ed87a62d7"
+    },
+    {
+      "claim_id": "c1ef3eb3-75b2-4c56-882d-814c48aee414",
+      "result_id": "1087efa7-57d0-403b-95df-aef5f9949fc0"
+    },
+    {
+      "claim_id": "b393b11b-63c3-4fb2-b186-be6d805fef77",
+      "result_id": "1087efa7-57d0-403b-95df-aef5f9949fc0"
+    },
+    {
+      "claim_id": "906a877f-3504-45c4-ac77-552b113b3bbd",
+      "result_id": "1d39cfa6-f81c-4357-981a-0924ed270a0d"
+    },
+    {
+      "claim_id": "33028ec1-25b2-4e13-828b-1c97b366e2cb",
+      "result_id": "1d39cfa6-f81c-4357-981a-0924ed270a0d"
+    },
+    {
+      "claim_id": "47526884-35af-42b9-b142-93de67b57bfb",
+      "result_id": "1d39cfa6-f81c-4357-981a-0924ed270a0d"
+    },
+    {
+      "claim_id": "5ab2d4b9-ad0b-4378-9c26-416feac2eda9",
+      "result_id": "1d39cfa6-f81c-4357-981a-0924ed270a0d"
+    },
+    {
+      "claim_id": "85fba999-5de7-4541-be20-1b2bb061b462",
+      "result_id": "e002eaa1-8b4f-41df-9f6e-62f3986db279"
+    },
+    {
+      "claim_id": "0e0f8243-b565-435f-b67f-6c58aa04e1af",
+      "result_id": "e002eaa1-8b4f-41df-9f6e-62f3986db279"
+    },
+    {
+      "claim_id": "a07bd713-1d23-462a-9282-09ad31c71488",
+      "result_id": "e002eaa1-8b4f-41df-9f6e-62f3986db279"
+    },
+    {
+      "claim_id": "0efdc517-36f7-4e5f-b21d-705212a1abe1",
+      "result_id": "a57ffdac-4e07-4722-8307-0b4e83ef3fb4"
+    },
+    {
+      "claim_id": "efabc511-98d8-495b-9057-f0c0d6c8e85e",
+      "result_id": "a57ffdac-4e07-4722-8307-0b4e83ef3fb4"
+    },
+    {
+      "claim_id": "0341fd76-4ee5-41b6-8cfe-97aec7ba89c0",
+      "result_id": "a57ffdac-4e07-4722-8307-0b4e83ef3fb4"
+    }
+  ],
+  "comparisons": []
+}

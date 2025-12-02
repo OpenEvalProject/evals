@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The study analyzed genomic profiles from 9,442 TCGA patients across 16 cancer types using Cox proportional hazards modeling. The TCGA cohort survival patterns closely matched national NCI-SEER data (R=0.83, p<0.0001), and patient sex inference showed >99% concordance with self-reported data, validating the dataset quality and analytical pipeline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 provide strong validation of the dataset and methodology. The correlation with NCI-SEER data (C40) and sex inference concordance (C42) demonstrate data quality. The Cox modeling approach (C34-C36) is appropriate for survival analysis. Sample sizes are substantial (C1, C33), providing adequate statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C57",
+      "C58",
+      "C59",
+      "C68"
+    ],
+    "result": "Among the 30 most frequently mutated cancer driver genes, only TP53 and EGFR showed prognostic associations in more than two tumor types. TP53 mutations were linked to outcome in 5 of 16 cancer types with generally small survival differences. Mutations in KRAS, PIK3CA, CDKN2A, BRAF, and other common drivers showed no significant prognostic associations. Analysis of hotspot mutations and recurrent codons (except IDH1c132 in glioma) similarly failed to reveal robust survival associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C59 collectively demonstrate limited prognostic value of driver gene mutations. The analysis is comprehensive, examining both pan-cancer patterns and specific hotspot mutations. The 2% mutation frequency threshold (C167) is justified to balance statistical power and biological relevance. Multiple testing correction with 5% FDR (C171) is appropriate. The negative findings are strengthened by adequate sample sizes and validation in independent cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Several sensitivity analyses confirmed the robustness of mutation findings: excluding patients treated with BRAF/EGFR inhibitors did not affect Z-scores, excluding hypermutated tumors had minimal impact, double mutations in non-prognostic genes remained non-prognostic, and restricting analysis to high-VAF (clonal) mutations did not identify additional prognostic genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 demonstrate appropriate sensitivity analyses addressing potential confounders. The exclusion of targeted therapy patients (C51-C52) addresses treatment effects, hypermutation analysis (C53) addresses mutational noise, and VAF analysis (C55-C56) addresses clonality. These analyses strengthen the conclusion that mutations generally lack prognostic power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Gliomas represent an exception to the general pattern, with mutations in five genes (PTEN, EGFR, IDH1, TP53, ATRX) showing strong survival associations. These mutations showed both subtype-dependent and subtype-independent prognostic information: IDH1 mutations were associated with prolonged survival in both low-grade and high-grade gliomas, while EGFR mutations were prognostic only in low-grade gliomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 identify glioma as a unique case where mutations retain prognostic value. The subtype analysis (C63-C66) appropriately addresses tumor heterogeneity. The findings align with established glioma biology and are supported by citations (C63-C64). The subtype-specific analysis (C65-C66) demonstrates careful consideration of confounding by tumor grade.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Copy number alterations in cancer driver genes showed significantly greater prognostic power than mutations. Among 30 frequently mutated driver genes, 108 significant CNA-outcome associations were detected versus 23 mutation-outcome associations. For 28 of 30 genes, CNAs were prognostic in more cancer types than mutations. Notably, PIK3CA copy number was prognostic in six cancer types despite mutations never being informative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 establish CNAs as superior prognostic markers compared to mutations. The head-to-head comparison (C72-C73) is compelling with a ~5-fold difference in significant associations. The PIK3CA example (C71) illustrates the disconnect between mutation and CNA prognostic value. The continuous nature of CNA data is addressed by trichotomization analysis (C75-C76), confirming the finding is not merely a statistical artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Trichotomizing CNA values into deletions, amplifications, and copy-neutral categories yielded 94 significant survival associations, comparable to continuous CNA analysis and far exceeding mutation analysis. Genome-wide CNA analysis revealed Z-score peaks precisely overlapping known oncogenes (PIK3CA, EGFR, MYC, CCNE1) and valleys at tumor suppressors (CDKN2A), suggesting direct influence on patient mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 address whether the prognostic superiority of CNAs is due to continuous versus binary data. The trichotomization analysis (C75) demonstrates that discretized CNAs remain highly prognostic, supporting biological rather than statistical explanations. The overlap of Z-score peaks with known drivers (C77-C78) provides biological plausibility, though causality cannot be definitively established from observational data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Sample purity showed inconsistent associations with outcome, with higher purity associated with worse outcome in only 1 of 16 cohorts by either pathological or ABSOLUTE assessment. Driver gene CNAs remained broadly prognostic in multivariate models including three purity measurements. CCNE1 amplification remained prognostic in ovarian cancer even when restricted to high-purity, low-leukocyte samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 address the critical confounder of tumor purity and immune infiltration. The multivariate analysis (C83) appropriately controls for purity using three independent measures. The CCNE1 example (C84) provides specific evidence that CNAs remain prognostic in pure samples. However, the conclusion that immune infiltration is not the \"primary driver\" (C85) may be overstated\u2014it could still be an important contributor even if not the sole explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "CNAs remained prognostic when controlling for clinical parameters: Z-scores from univariate and stage/grade-adjusted models were highly correlated (R=0.91-0.96), with 71% of prognostic CNAs remaining significant in multivariate models. CNAs also remained prognostic within cancer subtypes, though some biomarkers (e.g., CDKN2A in kidney chromophobe) lost significance in small subgroups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 demonstrate that CNA prognostic value is independent of standard clinical parameters. The high correlation (C86) and retention of significance (C87) in multivariate models is compelling. The subtype analysis (C89-C93) appropriately addresses tumor heterogeneity. The acknowledgment that some biomarkers lose significance in small subgroups (C93-C94) shows appropriate caution about statistical power limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Gene-level CNAs provided prognostic information beyond TP53 status and total aneuploidy. TP53-mutant tumors showed higher aneuploidy, and total aneuploidy was prognostic in several cancer types. However, 83% of gene-level CNAs remained prognostic when controlling for TP53 status, 80% when controlling for total aneuploidy, and 75% when controlling for structural alteration burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 address whether gene-level CNAs simply reflect global genomic instability. The multivariate analyses (C97, C99, C101) demonstrate that specific CNAs provide information beyond bulk measures. The high retention rates (75-83%) support gene-specific effects. However, the 17-25% of CNAs that lose significance suggest some associations may indeed reflect global instability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Focal CNAs (\u22643 Mb) were associated with worse outcomes than broad CNAs (>3 Mb). At loci with both alteration types, focal CNAs showed sharp survival declines while broad CNAs showed moderate effects or were indistinguishable from copy-neutral tumors. This pattern is consistent with aneuploidy-induced fitness penalties, where large alterations impair tumor growth while targeted alterations maximize malignant potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 reveal an important biological pattern. The focal versus broad comparison (C103-C105) is well-supported by data. The interpretation invoking aneuploidy-induced fitness penalties (C106) is plausible and supported by citations, though alternative explanations (e.g., passenger gene effects in broad CNAs) are not fully excluded. The 3 Mb threshold is based on prior literature (C169) but remains somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Prognostic CNAs correlated with gene expression changes at 98% of analyzed loci. Importantly, 95% of CNAs remained prognostic in multivariate models including mutation status. For example, EGFR amplification was associated with death in colorectal cancer even in tumors lacking EGFR mutations, indicating that wild-type gene dosage changes can profoundly affect cancer behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 establish that CNAs affect outcome through expression changes rather than merely marking mutated genes. The high correlation with expression (C107) confirms functional impact. The independence from mutation status (C108) is particularly important, demonstrated by the EGFR example (C109). This supports the \"cancer gene island\" model where gene dosage matters independently of mutation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Independent validation in ICGC (3,054 patients) and cBioPortal (2,431 patients) cohorts confirmed TCGA findings. Mutation frequencies and Z-scores were highly correlated between TCGA and ICGC (R=0.67 and R=0.56). TP53 remained the most frequently prognostic mutated gene, while other driver mutations rarely associated with outcome. CNA meta-Z scores showed significant correlation between TCGA and cBioPortal (R=0.42), and CNAs consistently showed greater prognostic significance than mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C121 provide crucial external validation. The correlations between independent cohorts (C111, C117) support reproducibility despite different collection methods and technologies. The consistent pattern of CNAs outperforming mutations (C118-C119) across datasets strengthens the main conclusion. The breast cancer example (C119) is particularly compelling: 2 prognostic mutations versus 12 prognostic CNAs among the same 25 genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Cross-cohort meta-analysis of 16,580 patients from 13 cancer types identified high-confidence biomarkers consistent across independent cohorts with different collection methods and technologies. Novel prognostic biomarkers included MDM4 amplifications in prostate cancer, NOTCH2 amplifications in melanoma, and 2q32 deletions in ovarian cancer. These remained prognostic in multivariate models including disease-specific clinical criteria. CNAs were significantly more common than prognostic mutations, with TP53 being the only gene whose mutation status was associated with outcome in multiple cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 identify the most robust biomarkers through stringent cross-cohort validation. The requirement for significance in \u22652 independent cohorts and high meta-Z scores (|Z|>3.3) is appropriately conservative. The identification of novel biomarkers (C124) represents a concrete contribution. The multivariate analysis including disease-specific criteria (C125) demonstrates clinical utility beyond standard parameters. However, the novelty claim should be interpreted cautiously without comprehensive literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C130",
+      "C131",
+      "C153",
+      "C154"
+    ],
+    "result": "Therapeutic vulnerabilities were identified for 49% of prognostic biomarkers by analyzing patient-derived xenografts and cancer cell line pharmacogenomic data. Examples include STAG2-mutant gliomas showing sensitivity to PARP inhibitor olaparib, CDKN2A-deleted tumors sensitive to CDK4/6 inhibitors, and RB1-mutant tumors sensitive to SYK inhibitors. Several predicted sensitivities have clinical or mechanistic support from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C131, C153-C154 identify potential therapeutic strategies, but the evidence is preliminary. The 49% rate (C131) seems high and may reflect multiple testing without adequate correction. The PDX and cell line data are in vitro/ex vivo, not clinical validation. The STAG2-olaparib association (C130) is interesting but requires clinical validation. The claim that \"several\" sensitivities have prior support (C154) is vague. This represents hypothesis generation rather than established therapeutic recommendations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The study's unbiased genome-wide analysis of pre-established public datasets may bypass problems including post-hoc hypothesis testing, patient-selection bias, and publication bias that confound targeted biomarker studies. In head-to-head comparisons within the same cohorts analyzed on multiple platforms, CNAs were commonly prognostic where mutations were not, suggesting CNAs provide more useful prognostic information than single-gene mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 articulate the study's methodological strengths. The use of pre-established cohorts (C137) does reduce certain biases, though it introduces others (e.g., retrospective design, treatment heterogeneity). The head-to-head comparison (C140-C141) is a key strength, demonstrating the CNA advantage is not due to cohort differences. However, the claim to \"bypass\" publication bias may be overstated\u2014the TCGA itself represents a selected set of samples and analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The study identified tissue-specific prognostic mutations (TP53 in breast cancer, RB1 in bladder cancer, FBXW7 in colorectal cancer). Most TCGA patients received standard cytotoxic drugs; oncogenic mutations non-prognostic in this context may predict sensitivity to targeted/immunotherapies. Tumor heterogeneity may obscure prognostic mutations in bulk analyses, suggesting sub-clonal interrogation could identify additional biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 appropriately acknowledge study limitations and future directions. The tissue-specific mutations (C142) represent genuine findings. The treatment context caveat (C143-C144) is important\u2014prognostic value may differ with targeted therapies. The heterogeneity consideration (C145-C146) is valid, though speculative. These claims demonstrate appropriate scientific caution about the scope and generalizability of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Despite limited mutation stratification value, CNAs in the same driver genes are broadly prognostic. Focal CNAs confer worse prognosis than broad CNAs, consistent with aneuploidy-induced fitness penalties. Most CNAs remained prognostic regardless of mutation status. These results support a \"cancer gene island\" or \"cumulative aneuploidy\" model where cancers accumulate limited copy number changes affecting haplo-sensitive and triplo-sensitive regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 synthesize the main findings into a coherent biological model. The \"cancer gene island\" interpretation (C151) is supported by the data and prior literature (citations provided). However, this remains one possible model\u2014alternative explanations (e.g., CNAs as markers of genomic instability, effects on non-coding regulatory elements) are not fully excluded. The model is plausible but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The study used HG19 segmented CNAs corrected for germline alterations, overall survival as the primary endpoint (except PRAD using biochemical recurrence and EOPC-DE using recurrence-free survival), primary tumors (except SKCM including metastases when primary unavailable), Cox proportional hazards modeling via R survival package, 2% mutation frequency threshold, threshold-independent CNA analysis, focal CNA definition (\u22643 Mb), Stouffer's method for meta-analysis, and 5% FDR correction. Code is publicly available on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C172 document the methodological details. The approaches are generally appropriate: Cox modeling is standard for survival analysis (C166, C168), the 2% threshold balances power and relevance (C167, C180), FDR correction addresses multiple testing (C171), and code availability supports reproducibility (C172). The use of different endpoints for PRAD and EOPC-DE (C161, C165) is justified by low death rates. The inclusion of metastatic SKCM samples (C163) is a limitation but transparently reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Cox proportional hazards modeling was chosen because it: (1) does not require threshold selection for continuous data, (2) accepts both continuous and discrete inputs, (3) enables univariate and multivariate analyses, (4) provides Z-scores and p-values, (5) encodes directionality of associations, (6) facilitates meta-analysis via Stouffer's method, and (7) is commonly used in genome-wide survival analyses, facilitating comparison with other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C179 justify the statistical approach. The rationale is sound\u2014Cox modeling is indeed appropriate for these reasons. The threshold-independence (C173) is particularly important for CNA analysis. The ability to combine Z-scores (C178) enables the powerful meta-analyses. The widespread use (C179) does facilitate comparison, though it also means the approach is not novel. The justification is thorough and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "The TCGA survival analysis is appropriate because: (1) survival times match NCI data, (2) established biomarkers show expected significance, (3) findings validate in independent cohorts, (4) no cohort/endpoint combinations were classified as \"not recommended\" by independent quality assessment, (5) builds on prior TCGA survival studies, (6) unbiased sample collection precludes publication bias, (7) extensive molecular data enables multivariate analyses, and (8) all data and code are publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C188 defend the use of TCGA for survival analysis. The arguments are reasonable: NCI concordance (C181), validation of known biomarkers (C182), independent replication (C183), and quality assessment (C184) support validity. The unbiased collection claim (C186) is somewhat overstated\u2014TCGA has selection criteria and may not fully represent all patient populations. The data availability (C188) is a genuine strength for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

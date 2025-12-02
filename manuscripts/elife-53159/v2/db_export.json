@@ -1,0 +1,2209 @@
+{
+  "submission": {
+    "id": "67f583c9-0ca3-4e53-a324-f798ed22f23c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:50:55.536765Z",
+    "updated_at": "2025-12-02T17:50:55.536765Z"
+  },
+  "content": [
+    {
+      "id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "submission_id": "67f583c9-0ca3-4e53-a324-f798ed22f23c",
+      "content_type": "manuscript",
+      "content_text": "# FoxO suppresses endoplasmic reticulum stress to inhibit growth of Tsc1-deficient tissues under nutrient restriction\n\n## Authors\n\n- Avantika Gupta<sup>1</sup> ([ORCID: 0000-0002-8170-6720](https://orcid.org/0000-0002-8170-6720))\n- Hugo Stocker<sup>1</sup> ([ORCID: 0000-0002-4142-1464](https://orcid.org/0000-0002-4142-1464)) \u2020\n\n### Affiliations\n\n1. Institute of Molecular Systems Biology, ETH Z\u00fcrich Z\u00fcrich Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe transcription factor FoxO has been shown to block proliferation and progression in mTORC1-driven tumorigenesis but the picture of the relevant FoxO target genes remains incomplete. Here, we employed RNA-seq profiling on single clones isolated using laser capture microdissection from Drosophila larval eye imaginal discs to identify FoxO targets that restrict the proliferation of Tsc1-deficient cells under nutrient restriction (NR). Transcriptomics analysis revealed downregulation of endoplasmic reticulum-associated protein degradation pathway components upon foxo knockdown. Induction of ER stress pharmacologically or by suppression of other ER stress response pathway components led to an enhanced overgrowth of Tsc1 knockdown tissue. Increase of ER stress in Tsc1 loss-of-function cells upon foxo knockdown was also confirmed by elevated expression levels of known ER stress markers. These results highlight the role of FoxO in limiting ER stress to regulate Tsc1 mutant overgrowth.\n\n## Introduction\n\nThe phosphatidylinositol 3-kinase (PI3K)/Akt/mechanistic target of rapamycin complex 1 (mTORC1) network is the central regulator of cell growth, survival, and metabolism (Manning and Toker, 2017; Saxton and Sabatini, 2017). mTORC1 integrates growth factor signaling via Akt with the intracellular nutrient and energy status to promote anabolism and suppress catabolic processes (Ben-Sahra and Manning, 2017). The key regulatory function of the network is highlighted by its deregulation leading to human cancers (Zhang et al., 2017), and the evolutionary conservation across organisms including Drosophila melanogaster (Engelman et al., 2006; Katewa and Kapahi, 2011). In Drosophila, the major tumor suppressors of this network are phosphatase and tensin homolog (Pten) and the tuberous sclerosis complex (TSC) proteins Tsc1 and Tsc2. Pten counteracts the function of PI3K by dephosphorylating the second messenger phosphatidylinositol-3,4,5-triphosphate (PIP3) to phosphatidylinositol-4,5-biphosphate (PIP2) (Klippel et al., 1997), thereby inhibiting Akt activity (Goberdhan et al., 1999). The TSC complex inactivates mTORC1 downstream of Akt (Potter et al., 2002) via its GTPase activating protein (GAP) activity towards Rheb (Saucedo et al., 2003; Stocker et al., 2003; Zhang et al., 2003). Another major downstream target of Akt is the transcription factor Forkhead box O (FoxO) (J\u00fcnger et al., 2003). However, the role of FoxO as a bona fide tumor suppressor is not established since it can also function as tumor-promoting depending on the biological context (van Doeselaar and Burgering, 2018). This underscores the importance of understanding the regulation of FoxO and the downstream signaling in a particular context of interest (Brown and Webb, 2018).\n\nUsing an early tumorigenesis model in Drosophila, we have shown that the loss of Tsc1 leads to an enhanced overgrowth of eye imaginal discs in larvae raised under nutrient restriction (NR) (Nowak et al., 2018). This overgrowth is primarily hypertrophic in nature. Loss of Tsc1 induces hyperactivation of mTORC1 and an S6K-dependent negative feedback to insulin signaling. This causes downregulation of Akt and an increased nuclear localization of FoxO, resulting in growth inhibition. Suppression of FoxO function in Tsc1 mutant cells results in massively overgrown tissues that show ectopic differentiation, demonstrating a role of FoxO in regulating proliferation and differentiation of these hyperactive mTORC1 cells. However, the specific FoxO targets crucial for growth regulation remained elusive.\n\nThe Drosophila eye imaginal disc is composed of different populations of mitotically active and differentiating cells. Given the context and cell-type specificity of FoxO (Webb et al., 2016), investigation for its targets is required to be performed in specific cells under conditions being studied. The laser capture microdissection (LCM) technique has emerged as a useful tool for isolation of distinct cells of interest (Iyer and Cox, 2010; Vicidomini et al., 2010) but a comprehensive analytical study has not been described previously in Drosophila. Here, we use transcriptome profiling of single mutant clones isolated using LCM from larval eye imaginal discs. Our results identify downregulation of ER stress as a key mechanism downstream of FoxO to inhibit Tsc1 mutant overgrowth under NR.\n\n## Results\n\n### Transcriptomics analysis to identify FoxO targets in Tsc1 mutant cells under NR\n\nFoxO restricts the growth of tissues with high mTORC1 activity under NR (Nowak et al., 2018). To identify FoxO targets essential for this growth regulation, we performed RNA-seq transcriptome profiling of Tsc1 mutant cells, with or without foxo knockdown, using our previously described model of early tumorigenesis in Drosophila larval eye imaginal discs. The mutant cells were isolated in a spatially and temporally controlled manner to address the context specificity and high number of FoxO targets (Webb et al., 2016). To profile strictly the mitotically active cells and to avoid false-positive FoxO targets from different cell types, the LCM technique was used to isolate single clones from the mitotically active part anterior to the morphogenetic furrow in the eye disc (spatial control) of wandering third instar larvae (temporal control). The MARCM (Lee and Luo, 2001) and Gal80ts systems were combined to gain a temporal control on the expression of foxo-RNAi specifically in mutant clones (Figure 1A). Evaluating the nuclear FoxO antibody staining in Tsc1 mutant cells (Manning et al., 2005) in time-course experiments revealed that a 12 hr shift was sufficient to achieve an adequate foxo knockdown (Figure 1B and B\u2019). The knockdown of foxo for a short duration limited the detection of secondary transcriptional targets, as illustrated earlier (Gan et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53159/elife-53159-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the experimental setup to generate temporal knockdown of foxo in wild-type or Tsc1 mutant clones, and isolation of single clones using LCM at 108 hr after egg laying (AEL) from normal food and 156 hr AEL from NR.\u00a0Solid or dashed lines represent clones isolated from larvae shifted to 30\u00b0C for 12 hr or maintained at 25\u00b0C, respectively. (B) FoxO staining of eye imaginal discs with Tsc1 mutant clones dissected from larvae raised on normal food at 25\u00b0C, 30\u00b0C or shifted from 25\u00b0C to 30\u00b0C for 12 hr. Clones are negatively marked by GFP, and DAPI stains nuclei. Scale bar\u00a0=\u00a050 \u00b5m. (B\u2019) Quantification of ratio of nuclear FoxO intensity in Tsc1 mutant clone over wild-type from larvae raised on normal food or NR at temperatures described in B. n\u00a0>\u00a09. Data are represented as mean\u00a0\u00b1\u00a0SD. **p<0.01, ***p<0.001 and ns\u00a0=\u00a0not significant. (C) Venn diagram depicting number of genes, upregulated and downregulated, between all conditions tested. p<0.0025 and FDR\u00a0<\u00a00.2. (C\u2019) Gene ontology analysis of the downregulated genes in Tsc1 mutant cells upon foxo knockdown as compared to Tsc1 mutant cells under NR.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53159/elife-53159-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Multidimensional scaling plot of log counts per million (CPM) of ctrl and Tsc1 mutant cells, with or without foxo knockdown, from different food conditions. (B) foxo expression levels in indicated conditions. Data are represented as mean\u00a0\u00b1\u00a0SD. (C) Immunoblot and RT-qPCR analysis of Kc167 cells transfected with dsRNA against ctrl or foxo. n\u00a0=\u00a03. Data are represented as mean\u00a0\u00b1\u00a0SD. **p<0.01.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53159/elife-53159-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative images of isolated Tsc1Q87X and Tsc1Q87X foxoRi clones. Blue dashed lines mark the GFP-negative clones from which the selected clones (outlined in yellow) were isolated. Scale bar\u00a0=\u00a0150 \u00b5m. (B) Mapping of sequences from Tsc1Q87X foxoRi cells isolated from a larva raised under NR to the Tsc1 locus at the position of Q87X point mutation using Integrative Genomics Viewer (Robinson et al., 2011). (C) GSEA plots depicting correlation between differentially expressed genes in Tsc1 mutant cells as compared to wild-type on normal food and genes upregulated in Tsc1 mutant eye discs (Harvey et al., 2008), and differentially expressed genes in wild-type versus foxo knockdown cells on normal food and FoxO targets (Teleman et al., 2008).\n\nUsing the above-mentioned techniques, four single clones each were captured for isogenic control and Tsc1 mutant cells, with or without foxo knockdown, from larvae raised on normal food and NR. foxo knockdown was achieved by shifting larvae to the restrictive temperature (30\u00b0C) 12 hr before dissection, and complementary control clones were isolated from siblings raised at 25\u00b0C. Analysis was done on 29 samples that passed quality control. Clustering on normalized gene counts showed high variability among the biological replicates (Figure 1\u2014figure supplement 1). This can be explained by the small starting material for library preparation (Bhargava et al., 2015) and an absence of pooling of multiple samples to average the individual organismal differences. Interestingly, a reduction in foxo transcripts was not observed in the knockdown samples (Figure 1\u2014figure supplement 1). A similar partial loss of transcripts accompanied by a significant loss of protein (Figure 1\u2014figure supplement 1) was observed in Kc167 cells, suggesting the presence of a transcriptionally-activating feedback upon foxo knockdown or a direct effect on the translational capacity (Doench et al., 2003). Representative images of isolated Tsc1 mutant clones with and without foxo knockdown are presented to support that the processed cell populations were not contaminated with GFP-positive non-clonal tissue (Figure 1\u2014figure supplement 2). This is further substantiated by the presence of 100% mutant transcripts (Tsc1Q87X where codon CAG at position 3R:24,130,984 is substituted by TAG) in the Tsc1 mutant clones (example in Figure 1\u2014figure supplement 2). Finally, gene set enrichment analysis (GSEA) (Subramanian et al., 2005) showed enrichment of genes upregulated in Tsc1 mutant discs (Harvey et al., 2008) as well as FoxO targets from adipose tissue and muscle (Teleman et al., 2008) in corresponding lists of differentially expressed genes (Figure 1\u2014figure supplement 2).\n\nDifferential gene expression analysis of Tsc1 mutant cells, with or without foxo knockdown, under NR revealed 24 downregulated and 128 upregulated genes (ANOVA, logFC\u00a0>\u00a00.8 and FDR\u00a0<\u00a00.2, Figure 1C) in the absence of foxo. Gene Ontology analysis of the downregulated genes showed enrichment in various biological processes such as protein deglycosylation, protein refolding, and protein localization to ER (Figure 1C\u2019), and these genes have been further validated (see below). From the 128 upregulated genes, more than half code for small nucleolar RNAs (snoRNAs), and associated small nuclear RNAs (snRNAs).\n\n### In vivo validation of downregulated genes in Tsc1 mutant cells upon foxo knockdown identifies endoplasmic reticulum-associated protein degradation (ERAD) pathway components as top hits\n\nThe downregulated genes in Tsc1 mutant cells upon foxo knockdown were validated functionally for their regulation of Tsc1 mutant overgrowth, similar to FoxO, in an in vivo RNAi assay. Different RNAi lines for 24 candidates (Figure 2A) were crossed to a tester line utilizing the eye-specific FLP-out system (Struhl and Basler, 1993) with Tsc1-RNAi. foxo knockdown led to a significant size increase of Tsc1 knockdown eyes as compared to the control (Figure 2B). Co-knockdown of eight candidate genes using different RNAi lines consistently enhanced the overgrowth of Tsc1 knockdown eyes. Candidates that scored positive were also assessed in a wild-type background to eliminate additive growth effects with loss of Tsc1 (Figure 2C). Knockdown of four candidate genes did not affect eye size (statistically not significant data highlighted in red) in the wild-type background, indicating that the growth effect was specific to the loss of Tsc1. A weak knockdown transgene of Tsc1 was used in the above assays because a combined knockdown of Tsc1 and foxo is larval lethal (Nowak et al., 2018). The effect on eclosion upon knockdown of the candidates with Tsc1 using the strong knockdown allele was also quantified (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53159/elife-53159-fig2-v2.jpg)\n\n**Figure 2.:** (A) log fold change (FC) of downregulated genes in Tsc1 mutant cells with foxo knockdown versus Tsc1 mutant cells under NR.\u00a0(B) Percentage change in adult eye size upon knockdown of candidate genes in Tsc1 knockdown background under NR. n\u00a0>\u00a03. Blue or red points represent a significant (p<0.05) change as compared to ctrl or foxo knockdown, respectively. The RNAi lines are ordered as in the Materials and methods. (C) Percentage change in adult eye size upon knockdown of candidate genes in wild-type background on normal food. n\u00a0>\u00a09. Red points represent a non-significant (p>0.05) change as compared to ctrl. Data are represented as mean\u00a0\u00b1\u00a0SD.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53159/elife-53159-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Percentage eclosion of flies with co-knockdown of candidate with Tsc1 under NR. Numbers above bars indicate the number of eclosed flies for each cross. (B) Representative images of eyes from control and candidate crosses from screens in Figure 2B and C. Scale bar\u00a0=\u00a0100 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53159/elife-53159-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Calnexin 99A staining of eye imaginal discs with control (iso) or CG6766 mutant clones dissected from larvae raised under normal feeding conditions. Clones are marked by the absence of GFP, and DAPI stains nuclei. Scale bar\u00a0=\u00a050 \u00b5m. (B\u2013B\u2019) RT-qPCR analysis of (B) spliced-Xbp1 and (B\u2019) Hsc-70\u20133 on eye imaginal discs with knockdown of CG6766 in wild-type, weak knockdown of Tsc1 and strong knockdown of Tsc1 background, respectively, dissected from larvae raised under normal feeding conditions. Dashed line represents normalized value of corresponding controls. Data are represented as mean\u00a0\u00b1\u00a0SD. *p<0.05.\n\nThe top candidate from all genetic tests was the uncharacterized gene CG6766, encoding an ortholog of the mammalian endoplasmic reticulum lectin 1 (ERLEC1). It is predicted to localize to ER/Golgi and is considered to be a component of the ubiquitin-dependent ERAD pathway (Huang et al., 2018). Another candidate that is involved in protein processing in the ER, CG8860, also scored positively in the in vivo assays, suggesting a role for ER homeostasis in determining Tsc1 mutant overgrowth. CG8860 is orthologous to the mammalian SEC61 translocon gamma subunit (SEC61G). The knockdown phenotypes of the candidates from the in vivo assays are shown in Figure 2\u2014figure supplement 1.\n\nSince the function of the top candidate in ER homeostasis is not characterized in Drosophila, the induction of ER stress response in cells mutant for CG6766 was investigated. A mutant allele carrying a piggyBac insertion with a splice-acceptor site and stop codons in all frames in the first intron of the gene (Schuldiner et al., 2008) was used. Calnexin is an ER molecular chaperone and a Ca2+ homeostasis regulator (Arruda and Hotamisligil, 2015) that is localized to the ER membrane (Xiao et al., 2017). Eye imaginal discs with control or mutant clones dissected from larvae raised under normal feeding conditions were immunostained using an antibody against the Drosophila calnexin homolog, Cnx99A. Homozygous mutant clones showed similar staining patterns compared to the surrounding wild-type tissue and the isogenic control clones (Figure 2\u2014figure supplement 2). To examine the effect on ER stress response in Tsc1-deficient cells, the transcript levels of known ER stress reporters, spliced-Xbp1 and Hsc-70\u20133 (see below), were examined. Control or CG6766 knockdowns were generated in wild-type, weak Tsc1 knockdown, and strong Tsc1 knockdown backgrounds. Quantitative reverse-transcription PCR (RT-qPCR) analysis on eye imaginal discs revealed no change in the expression levels of spliced-Xbp1 or Hsc-70\u20133 in the wild-type background upon knockdown of CG6766. By contrast, the expression levels of both ER stress reporters were elevated in Tsc1 knockdown backgrounds (Figure 2\u2014figure supplement 2), indicating that CG6766 is limiting to maintain ER homeostasis in Tsc1 mutant cells. The lack of ER stress response in cells mutant for CG6766 suggests a (partially) redundant function, and may also explain why CG6766 (as well as CG8860) has not been characterized so far.\n\n### Induction of ER stress enhances the growth of Tsc1 mutant eyes\n\nTo confirm the role of ERAD in the regulation of growth of Tsc1 mutant tissues, ERAD components other than the genes identified by the transcriptomics analysis were knocked down using the same genetic assay (Figure 2B). The genes were functionally classified according to the KEGG database (dme04141, Figure 3A). Knockdown of several ERAD pathway components led to an increase in Tsc1 knockdown eye size (Figure 3B). Particularly, inhibition of the core components of the ubiquitin ligase complex and those involved in the retrotranslocation of terminally misfolded proteins from ER to cytosol resulted in an enlargement of eye size. Of note, CG13426, which encodes an ortholog of SEC61G similar to the candidate from the transcriptomics analysis, CG8860, also led to an enhancement of the Tsc1 knockdown overgrowth.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53159/elife-53159-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic depicting involvement of genes tested in (B), (C) and (D) in different ER stress regulation mechanisms according to the KEGG database.\u00a0Blue, green and orange denote components of ERAD, UPR and proteasomal degradation pathways, respectively. Percentage change in adult eye size upon knockdown of (B) ERAD, (C) UPR and (D) proteasomal degradation pathway components in Tsc1 knockdown background under NR. Note that experiments in (C) and (D) were performed together and therefore have the same control. (E) Percentage change in Tsc1 knockdown adult eye size upon addition of the indicated small molecule inhibitors to the fly food under NR. n\u00a0>\u00a03. Data are represented as mean\u00a0\u00b1\u00a0SD. Red points represent a significant (p<0.05) change as compared to ctrl.\n\nA reduced efficiency of ERAD lowers the capacity of the ER to remove misfolded proteins. In mammals, accumulation of misfolded proteins in the ER causes activation of the three signal transduction pathways: PERK, IRE1\u03b1 and ATF6, together referred to as the unfolded protein response (UPR) (Wang and Kaufman, 2014). These signal to induce apoptosis in case of chronic ER stress, or maintain ER homeostasis by upregulating expression of several ERAD pathway genes. The ERAD pathway also links the ubiquitin-proteasome system to ER protein quality control as its substrates are transported into the cytosol for degradation by the proteasome (Ruggiano et al., 2014). To analyze if downregulation of UPR or proteasomal degradation pathway components would affect Tsc1 knockdown overgrowth similar to the suppression of ERAD pathway genes, the major components of these pathways were also assessed. Knockdown of UPR or proteasomal degradation pathway genes did not display a consistent effect on Tsc1 knockdown overgrowth (Figure 3C and D), indicating that the effects might be specific to ERAD or that the manipulations are detrimental (proteasomal degradation pathway components).\n\nFurthermore, the consequence of the induction of ER stress on Tsc1 knockdown overgrowth by using non-genetic means was tested. The inhibition of N-linked glycosylation by Tunicamycin (Kuo and Lampen, 1974), Ca2+ ATPase by Thapsigargin (Lytton et al., 1991), proteasome by MG132 (Lee and Goldberg, 1998), and ERAD by Eeyarestain I (Fiebiger et al., 2004) cause ER stress. Addition of these small molecule inhibitors to the fly food, except Thapsigargin, resulted in an enhancement of Tsc1 knockdown eye size (Figure 3E), consistent with a regulation of Tsc1-deficient growth by the ER stress response status.\n\n### Loss of FoxO function upregulates ER stress in Tsc1 mutant cells under NR\n\nSince both FoxO suppression and ER stress induction caused an escalation in Tsc1 mutant overgrowth, the ER stress status upon foxo loss in Tsc1 mutant cells was examined. Eye imaginal discs with ctrl, foxo, Tsc1 or Tsc1 foxo mutant clones dissected from larvae raised under NR were immunostained with calnexin (Figure 4A). The staining was stronger in Tsc1 and Tsc1 foxo mutant clones as compared to the surrounding wild-type tissue, suggesting an upregulation of Cnx99A levels or a change in ER morphology in these cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53159/elife-53159-fig4-v2.jpg)\n\n**Figure 4.:** (A) Calnexin 99A staining of eye imaginal discs with ctrl, foxo, Tsc1 or Tsc1 foxo mutant clones dissected from larvae raised under NR.\u00a0Clones are marked by the absence of GFP; DAPI stains nuclei. Scale bar\u00a0=\u00a050 \u00b5m. (B\u2013B\u2019\u2019) RT-qPCR analysis of (B) Hsc-70\u20133, (B\u2019) PEK and (B\u2019\u2019) spliced-Xbp1 on Tsc1 or Tsc1 foxo mutant eye imaginal discs dissected from larvae raised under normal food or NR. n\u00a0=\u00a02 with triplicates. Data are represented as mean\u00a0\u00b1\u00a0SD. *p<0.05, **p<0.01 and ns\u00a0=\u00a0not significant.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53159/elife-53159-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013B) GFP staining to detect Xbp1-EGFP of eye imaginal discs with ctrl, foxo, Tsc1 or Tsc1 foxo knockdown clones dissected from larvae raised under (A) normal food or (B) NR. Clones are marked by RFP and DAPI stains nuclei. Scale bar\u00a0=\u00a050 \u00b5m.\n\nIncreased ER stress in Tsc1 loss-of-function cells has been established (Ozcan et al., 2008). Therefore, to compare the status upon loss of foxo, the cells were probed for transcript levels of a known ER stress reporter, the resident ER chaperone Hsc-70\u20133 or Grp78 (Elefant and Palter, 1999). RT-qPCR analysis of Tsc1 or Tsc1 foxo mutant eye imaginal discs dissected from larvae raised under normal food or NR showed elevated Hsc-70\u20133 transcript levels upon foxo loss (Figure 4B), indicating an enhancement of ER stress. Induction of UPR was also checked by analyzing the two conserved branches in Drosophila: PEK (PERK) and Ire1 (Mori, 2009). PEK transcript levels were not changed upon foxo loss in Tsc1 mutant eye discs (Figure 4B\u2019). Ire1 signals via splicing of the transcription factor X-box binding protein 1 (Xbp1) (Yoshida et al., 2001). The expression levels of spliced-Xbp1 were significantly increased in Tsc1 foxo mutant eye discs, specifically under conditions of NR (Figure 4B\u2019\u2019). The enrichment of spliced-Xbp1 was further confirmed in Tsc1 foxo knockdown clones under NR using an in vivo reporter (Sone et al., 2013;\u00a0Figure 4\u2014figure supplement 1). This illustrates the capacity of FoxO to regulate the ER stress status in Tsc1 mutant cells.\n\n## Discussion\n\nThe transcription factor FoxO has a distinct activity in different biological contexts. In cells with loss of Tsc1 function, it suppresses cellular growth and proliferation. In this study, we performed RNA-seq transcriptomics analysis on single mutant clones isolated by LCM to identify critical regulators of Tsc1 mutant tissue growth upon loss of FoxO. Earlier studies (Mauthner et al., 2014; Spletter et al., 2007)\u00a0have described the use of LCM for RNA isolation from optimal cutting temperature compound-embedded tissues, but this is the first report, to our knowledge, illustrating the use of this technique with living imaginal disc cells in Drosophila that was not based on pooling of multiple biological samples.\n\nThe majority of the genes differentially upregulated in Tsc1 mutant cells upon foxo knockdown consisted of snoRNAs and snRNAs. snoRNAs are single-stranded non-coding RNAs that function primarily in the posttranscriptional modification of ribosomal RNAs and snRNAs to regulate ribosome biogenesis and function, RNA editing, gene silencing, and alternative splicing (Bratkovi\u010d and Rogelj, 2011). snoRNA genes were shown to be directly bound and activated by Myc in Drosophila S2 cells (Herter et al., 2015). On the other hand, the expression of myc is suppressed by FoxO, at least in Drosophila muscles (Teleman et al., 2008). The same study reported that mTORC1 regulates Myc activity by controlling the amount of protein bound to promoters of target genes. A similar mechanism might be at play in the Tsc1 mutant cells of the eye imaginal discs. Upon knockdown of foxo, the inhibition of myc expression by FoxO is alleviated under NR, and Myc gets activated downstream of hyperactive mTORC1. This can lead to a subsequent upregulation of snoRNAs, which helps in biomass production in these rapidly growing cells. Indeed, emerging evidence suggests a correlation between snoRNAs and sustained proliferation, invasion, metastasis, and angiogenesis in different cancers (Liang et al., 2019).\n\nFrom among the downregulated genes, ER stress response pathway components were validated as essential regulators of Tsc1 mutant overgrowth. There is a significant interplay between the PI3K/Akt/mTORC1 signaling network and ER stress pathways (Appenzeller-Herzog and Hall, 2012). Induction of ER stress results in the suppression of insulin receptor signaling linking ER stress to insulin resistance (Ozcan et al., 2004). Similarly, PEK-driven regulation of FoxO contributes to this resistance in Drosophila (Zhang et al., 2013). In a study on cardiac dysfunction, uncontrolled activation of Akt repressed ER stress (Dong et al., 2013). Hyperactivation of mTORC1 activity, particularly via loss of the TSC complex function, leads to increased ER stress and UPR pathway upregulation (Ozcan et al., 2008). In turn, ER stress inhibits Akt and mTORC1 activity to induce autophagy (Qin et al., 2010). Our identification of putative ERAD components governing Tsc1 mutant tissue growth adds another interaction node to this pathway crosstalk. The absence of canonical ERAD components in the transcriptomics data prompted us to consider the possibility of an independent mechanism for the degradation of misfolded proteins, as shown previously in C. elegans (Safra et al., 2014). However, enhancement of the Tsc1 loss-of-function overgrowth upon downregulation of the core ERAD components implies an important role of the Hrd3-E3 ubiquitin ligase complex in this growth process.\n\nThe results presented here demonstrate a critical function of FoxO in limiting ER stress to restrain Tsc1 mutant overgrowth under NR. Given that FoxO restricts Tsc1 mutant tissue growth at the level of proliferation, a lack of known proliferation-affecting genes among the differentially regulated genes is intriguing. This suggests that the inhibitory effect on proliferation by FoxO might be indirect, possibly via ER stress response pathways (Vandewynckel et al., 2013). PERK reduces oxidative DNA damage and checkpoint activation to increase proliferation of cancer cells (Bobrovnikova-Marjon et al., 2010). A role for the ER chaperone GRP78 in regulating tumor cell proliferation by various means has also been described (Lee, 2014). IRE1\u03b1 has been shown to promote cell proliferation by regulating expression of cyclin A1 through XBP-1 splicing (Thorpe and Schwarze, 2010). Our results indeed demonstrate a heightened expression of Hsc-70\u20133 and spliced-Xbp1 in Tsc1 mutant cells upon foxo loss under NR, hinting at a possible approach to reinforce proliferation in these cells. PEK might also be regulated at a level other than transcription. The exact molecular mechanisms of this regulation remain to be elucidated.\n\nAberrant ER stress activation has also been recorded during various aspects of cancer development (Avril et al., 2017; Wang and Kaufman, 2014). Considerable efforts have been made to develop therapeutic strategies to target the dependency of tumor cells on ER stress response pathways, or to substantially upregulate stress to cause cell death (Hetz et al., 2013). Specifically, in the case of loss of Tsc1/2 function, use of ER stress-inducing agents has displayed sensitization of mutant cells to individual treatments in vitro (Kang et al., 2011), or combination treatments in a mouse xenograft tumor model (Li et al., 2015). Since the ER stress response can have both pro-survival and pro-apoptotic effects (Ma and Hendershot, 2004), it is crucial to characterize the signaling landscape of individual tumors before therapeutic intervention. For instance, our results demonstrate that increasing ER stress led to an enhancement of Tsc1 mutant overgrowth. A similar overgrowth mechanism can be proposed for Tsc1 foxo mutant cells. Suppression of foxo represses the ERAD pathway activation, which combined with the augmented protein synthesis in Tsc1 mutant cells results in a state of high ER stress. This new adaptive state is beneficial for proliferation and confers a growth advantage to Tsc1 foxo mutant cells. The exploitation of this process in tumors with escalated mTORC1 activity that exhibit loss of FoxOs can extend the repertoire of available treatment options and needs further exploration.\n\n## Materials and methods\n\n### Fly food and fly lines\n\nAll crosses were maintained at 25\u00b0C on normal fly food unless otherwise stated. Normal fly food is composed of 100 g fresh yeast, 55 g cornmeal, 10 g wheat flour, 75 g sugar, 8 g bacto agar, and 1.5% antimicrobial agents (33 g/L nipagin and 66 g/L nipasol in ethanol) in 1 L water. NR food was prepared by reducing the amount of yeast to 10% with 1.5% nipagin (100 g/L in ethanol). The following small molecule inhibitors were added to the NR food before pouring into vials for the drug assay: DMSO (control, 0.1%, Carl Roth Cat#A994.1), Tunicamycin (12 \u00b5M, Sigma-Aldrich Cat#T7765), Thapsigargin (2 \u00b5M, Sigma-Aldrich Cat#T9033), MG132 (50 \u00b5M, Sigma-Aldrich Cat#C2211) and Eeyarestatin I (1 mM, Sigma-Aldrich Cat#E1286).\n\nAnalysis on adult flies was done on females in all experiments. Larvae were not selected for sex. The age of adults and larvae are mentioned in the corresponding Figure legends and Materials\u00a0and\u00a0methods.\n\nThe following fly lines were used: hsFLP (FBtp0001101\u00a0Struhl and Basler, 1993), eyFLP Act>CD2>Gal4 (Baumgartner et al., 2013), eyFlp gl-LacZ (Newsome et al., 2000), Act>CD2>Gal4 UAS-RFP (BDSC Cat# 30558), FRT82 iso (Xu and Rubin, 1993), FRT82 foxo\u220694 (FBal0269838 Slack et al., 2011), FRT82 Tsc1Q87X\u00a0(FBal0123965 Tapon et al., 2001), FRT82 Tsc1Q87X foxo\u220694 (Nowak et al., 2018), FRT82 cl w+(Newsome et al., 2000), tub-Gal4 FRT82 tub-Gal80 ubi-GFP (this paper), tub-Gal80ts (BDCS Cat #7108), RNAi of CG1315 (VDRC ID# 47097), RNAi of foxo (VDRC ID# 1077896), RNAi of Tsc1 (BDSC Cat# 35144), RNAi of Tsc1 (strong, BDSC Cat# 31039), RNAi of Obp56e (VDRC ID# 3355), RNAi of Mco3 (VDRC ID# 43288), RNAi of mah (VDRC ID# 1571, BDSC Cat# 53701), RNAi of CG9896 (VDRC ID# 107926, BDSC Cat# 42587), RNAi of CG15282 (VDRC ID# 7712), RNAi of CG42749 (VDRC ID# 28574, VDRC ID# 51132, VDRC ID# 51133), RNAi of Hsp22/CG4456 (VDRC ID# 43632, BDSC Cat# 41709, BDSC Cat# 51397, VDRC ID# 49795, VDRC ID# 49796), RNAi of clos (VDRC ID# 104142, VDRC ID# 108711, BDSC Cat# 52966), RNAi of CG40472 (VDRC ID# 109239), RNAi of CG10424 (VDRC ID# 39667), RNAi of Fili (VDRC ID# 106055, BDSC Cat# 28568), RNAi of CG43313 (VDRC ID# 106610, BDSC Cat# 53990), RNAi of CG6766 (VDRC ID# 38035, BDSC Cat# 42924, BDSC Cat# 55745), RNAi of CG2865 (BDSC Cat# 43165), RNAi of Ant2 (VDRC ID# 102533), RNAi of Ptp4E (VDRC ID# 1012, VDRC ID# 1013, VDRC ID# 4297, VDRC ID# 27232, BDSC Cat# 38369, BDSC Cat# 60008), RNAi of Hexo1 (VDRC ID# 102247, BDSC Cat# 67312), RNAi of grnd (VDRC ID# 43454, VDRC ID# 104538), RNAi of Rpt5 (VDRC ID# 105133, BDSC Cat# 32422, BDSC Cat# 53886), RNAi of CG8860 (VDRC ID# 102745, BDSC Cat# 60127), RNAi of Edem1 (VDRC ID# 6923), RNAi of \u03b1-Man-Ia (VDRC ID# 100654), RNAi of \u03b1-Man-Ib (VDRC ID# 4419), RNAi of Pdi (VDRC ID# 23359), RNAi of prtp (VDRC ID# 106924), RNAi of Ssr\u03b2 (VDRC ID# 12101), RNAi of Sec61\u03b1 (VDRC ID# 109660), RNAi of Sec61\u03b2 (VDRC ID# 107784), RNAi of Sec61\u03b3 (VDRC ID# 100603), RNAi of CG13426 (VDRC ID# 107528), RNAi of TRAM (VDRC ID# 39187), RNAi of Der-1 (VDRC ID# 44210, VDRC ID# 44211), RNAi of Der-2 (VDRC ID# 108440), RNAi of sip3 (BDSC Cat# 50609, BDSC Cat# 61344), RNAi of Hrd3 (BDSC Cat# 62368), RNAi of CG40045 (VDRC ID# 109167), RNAi of PEK (BDSC Cat# 35162, BDSC Cat# 42499), RNAi of Gcn2 (VDRC ID# 32664), RNAi of eIF2\u03b1 (VDRC ID# 104562), RNAi of Atf6 (VDRC ID# 36504), RNAi of wfs1 (VDRC ID# 108932), RNAi of Ire1 (BDSC Cat# 36743, BDSC Cat# 62156, BDSC Cat# 35253), RNAi of Cul1 (VDRC ID# 108558), RNAi of SkpA (VDRC ID# 107815), RNAi of STUB1 (VDRC ID# 107447), RNAi of p47 (VDRC ID# 107148), RNAi of Csp (VDRC ID# 34168), RNAi of TER94 (VDRC ID# 24354), RNAi of Ufd1-like (VDRC ID# 24700), RNAi of CG4603 (VDRC ID# 21894), RNAi of Plap (VDRC ID# 110732), RNAi of Ubqn (VDRC ID# 106050, VDRC ID# 47447, VDRC ID# 47448), RNAi of CG10694 (VDRC ID# 100212), RNAi of Rad23 (VDRC ID# 104354), CG6766140290 (Kyoto\u00a0DrosophilaGenetic Resource Center ID# 140290), UAS-Xbp1-EGFP (BDSC Cat# 60730).\n\n### Cell lines\n\nKc167 (female) cells were obtained from Drosophila Genomics Resource Center (Cat#1). Cells were cultured in Schneider\u2019s medium (Gibco) with 10% Fetal Bovine Serum and 500 U/mL Penicillin-Streptomycin at 24\u00b0C.\n\n### Laser capture microdissection\n\nEye imaginal discs were dissected in HBSS and mounted in a 0.5 \u00b5L drop of HBSS on FrameSlide PET (Carl Zeiss AS). Single clones of approximately 50 cells were microdissected using a Zeiss PALM-Microdissection system and captured into the caps of AdhesiveCap (Carl Zeiss AS) microcentrifuge tubes. The samples were frozen in liquid nitrogen and stored at \u221280\u00b0C until RNA isolation.\n\n### RNA-seq: library preparation and analysis\n\nRNA isolation and cDNA library preparation from the LCM samples were done according to the Ovation SoLo RNA-seq Systems kit (NuGEN Cat#0502\u201332). The sequencing was performed at the Functional Genomics Center Zurich on a HiSeq 2500 System (Illumina). Reads were mapped to the Drosophila genome (BDGP6) using STAR (Dobin et al., 2013), counted with featureCounts (Liao et al., 2014), and differentially expressed genes were analyzed using edgeR (Robinson et al., 2010). Gene Ontology analysis was performed using DAVID Bioinformatics Resources website (Huang et al., 2009), and GSEA (Subramanian et al., 2005) was run with default parameters to calculate enrichment with genes upregulated in Tsc1 mutant discs (Harvey et al., 2008) as well as FoxO targets from adipose tissue and muscle (Teleman et al., 2008) in corresponding lists of differentially expressed genes. The RNA-seq transcriptomics data have been deposited to NCBI\u2019s Gene Expression Omnibus.\n\n### Cross setup and clone induction\n\nFlies were crossed for two days on normal food. For assays using imaginal discs, the flies were transferred to egg laying chambers and allowed to lay eggs on agar plates containing yeast overnight. For clone induction, a 11 min (for LCM) or 15 min heat shock at 37\u00b0C was applied 36 hr AEL, after which the L1 larvae were transferred to normal food or NR. For adult fly eye measurement and eclosion assays, crosses were set up on normal food for 3 days followed by transfer of flies to NR for 3 days. Adult flies were analyzed 3 days after eclosion. CG1315 was used as control for RNAi experiments and FRT82 iso was the control for clones generated using mitotic recombination.\n\n### Microscopy and immunofluorescence\n\nAdult females were frozen at \u221220\u00b0C 3 days after eclosion. The flies were mounted on agar plates containing charcoal. The right-side eyes were imaged on a KEYENCE VHX1000 digital microscope.\n\nEye imaginal discs were dissected 108 hr AEL from normal food and 156 hr AEL from NR. The discs were fixed in 4% paraformaldehyde (PFA, 30 min, room temperature (RT)), washed thrice in 0.3% Triton-X in PBS (PBT, 15 min, RT), blocked in 2% Normal Donkey Serum in 0.3% PBT (2 hr, 4\u00b0C), incubated with primary antibodies (overnight, 4\u00b0C), washed thrice in 0.3% PBT (15 min each, RT), incubated with secondary antibodies (2 hr, RT), washed thrice in 0.3% PBT (15 min each, RT), stained with DAPI in 0.3% PBT (1:2000, 10 min, RT), and washed once with PBS (10 min, RT). The samples were mounted on glass slides in VECTASHIELD (Vector Laboratories H-1000). Confocal images were obtained on a Leica SPE TCS confocal laser-scanning microscope.\n\nThe following antibody dilutions were used: rabbit anti-FoxO (1:500 for immunostaining and 1:9000 for immunoblotting, gift from Mark Tatar\u00a0[Bai et al., 2012]), mouse anti-Cnx99A (1:25, DSHB Cat#Cnx99A 6-2-1), mouse anti-\u03b1-tubulin (1:20000, Sigma-Aldrich Cat#T9026) and mouse anti-GFP (1:200, Thermo Fisher Scientific Cat#A-11120). DAPI (1:2000) was used to stain nuclei. Secondary antibodies used were: goat anti-rabbit Alexa Fluor 633 (1:500, Thermo Fisher Scientific), goat anti-mouse Alexa Fluor 568 (1:500, Thermo Fisher Scientific) and goat anti-mouse Alexa Fluor 647 (1:500, Thermo Fisher Scientific).\n\n### Cell culture RNAi and western blot\n\ndsRNA against EGFP (control) or foxo was prepared as described earlier (Okada et al., 2015) using primers in Supplementary file 2. 15 \u00b5g dsRNA in 500 \u00b5L water was added to each well of a 6-well plate. 3 \u00d7 106 cells in 1 mL serum-free media were added to each well and the plate was incubated at RT for 30 min. 3 mL complete media was added after 30 min. The cells were harvested after 96 hr. 1.5 mL was used for RNA isolation, and proteins were extracted from 3 mL cell suspension. The cells were centrifuged and supernatant was removed. The cells were washed with ice-cold PBS, resuspended in protein extraction buffer (50 mM Tris-HCl (pH 8.0), 120 mM NaCl, 20 mM NaF, 1 mM benzamidine, 1 mM EDTA, 6 mM EGTA, 15 mM Na4P2O7, 1% Nonidet P-40, and protease inhibitor cocktail (Roche, 1 tablet in 14 mL buffer)) and incubated on ice for 30 min. Thereafter, the lysates were cleared by centrifugation at 14000 g at 4\u00b0C for 15 min.\n\nProtein concentrations were measured by BCA Protein Assay (Thermo Fischer Scientific). Proteins were denatured by boiling for 7 min in sample loading buffer and 40 \u00b5g of proteins were analyzed by immunoblotting. Briefly, proteins were resolved by 4\u20138% SDS-PAGE followed by transfer onto 0.45 \u00b5m nitrocellulose membrane. After blocking, primary antibodies were incubated overnight at 4\u00b0C and immunoblot signals were detected after secondary antibody incubation using enhanced chemiluminescence (ECL).\n\n### Gene expression analysis\n\nCell pellets were processed as described in Materials\u00a0and\u00a0methods. For eye discs, larvae were dissected in HBSS. 30 discs were collected and frozen in liquid nitrogen. RNA was isolated using RNeasy Plus Micro kit (QIAGEN). After reverse-transcription with SuperScript III First-Strand Synthesis System (Thermo Fisher Scientific), qPCR was performed using LightCycler 480 SYBR Green I Master (Roche) on a Rotor-Gene 6000 (Corbett). Gene expression levels were normalized to the expression level of RpS23. Primer sequences are described in Supplementary file 2.\n\n### Quantification and statistical analysis\n\nAdult eye area was measured using ImageJ (Schindelin et al., 2012). Ratio of nuclear FoxO intensity was also calculated using ImageJ. The mean gray values were measured for five nuclei in the clone and surrounding wild-type tissue from the same disc using the Multi-point tool. The intensity of the clone was divided by the intensity of the wild-type area to get the ratio. Statistical analyses were performed using unpaired two-tailed Student\u2019s t-test. p values are described in the Figure legends. All plots were generated in R Studio, and Figures were assembled using Adobe Illustrator.\n",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "412568ad-d276-4bed-a1fe-40fb6c84f72a",
+      "submission_id": "67f583c9-0ca3-4e53-a324-f798ed22f23c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matthew G Vander Heiden, Massachusetts Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53159.sa1](https://doi.org/10.7554/eLife.53159.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study examines the genetic interaction between Tsc1 and FoxO in a Drosophila tumor model. This builds on previous work showing that when Drosophila larvae are raised under nutrient restrictive conditions, simultaneous loss of both Tsc1 and FoxO results in an overgrowth phenotype. Data are provided here that in a Tsc1 mutant background, FoxO limits cell proliferation to restrict mutant overgrowth. The study also finds down-regulation of genes associated with the ER stress response pathway in FoxO deficient cells and knockdown of putative FoxO target genes in Tsc1-deficient cells also induces ectopic growth. This leads to the conclusion that the ER stress response pathway is a key FoxO-regulated pathway that impacts growth control downstream of Tsc1.\n\nDecision letter after peer review:\n\nThank you for submitting your work entitled \"FoxO suppresses endoplasmic reticulum stress to inhibit growth of Tsc1-deficient tissues under nutrient restriction\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Utpal Banerjee as Senior Editor. The reviewers have opted to remain anonymous.\n\nThe manuscript has some issues that need to be addressed before acceptance. As you will see from the reviewer comments, all found the work to be interesting, but also raised some points that we felt would be straight forward to address in a revised manuscript.\n\nReviewer #1:\n\nThis study by Gupta and Stocker uses a transcriptomics approach to examine the genetic interaction between Tsc1 and FoxO in a Drosophila tumor model. Previous studies in the fly demonstrated that when Drosophila larvae are raised under nutrient restrictive conditions, simultaneous loss of both Tsc1 and FoxO in the eye imaginal disc results in an overgrowth phenotype. In an effort to identify the FoxO target genes that contribute to this phenotype, they use laser capture microdissection combined with RNAseq to identify those genes that are differentially regulated in cells lacking FoxO. The resulting analysis reveals a significant down-regulation of genes associated with the ER stress response pathway in FoxO deficient cells. Moreover, these genes appear to be important for the FoxO/Tsc1 phenotype because RNAi of these putative FoxO target genes in Tsc1-deficient cells also induced ectopic growth. Similarly, the use of small molecules to induce ER stress enhanced the size of eyes lacking Tsc1.\n\nOverall, I found this to be a short, but potentially interesting manuscript. The use of mosaic analysis combined with laser capture microdissection for conducting RNA-seq is a powerful approach. In addition, I was impressed by the fact that down-regulation of the ER stress response enhance the Tsc1 overgrowth phenotype, suggesting that this is a key FoxO-regulated pathway in the context of growth control. However, I have a few criticisms that should be addressed:\n\n1) The text repeatedly refers genes mis-regulated in the RNAseq analysis as FoxO targets. However, there is no FoxO binding analysis to prove such an assertion and the text should be modified accordingly.\n\n2) Several of the genes that are classified as being part of the ER stress response have not been characterized in flies (e.g., CG6766). The authors should verify that RNAi-depletion of these candidate genes induce ER stress using either the Cnx99a antibody or by examining expression of spliced Xbp1 transcripts.\n\n3) In paragraph two of the Results you speculate about the reason why snoRNAs are up-regulated in the RNAseq data. Since there are no experiments examining why snoRNAs are mis-regulated in the dataset, most of this text should be moved to the Discussion.\n\nReviewer #2:\n\nThis paper follows on from a previous report from the Stocker lab showing that foxo normally functions to limit tsc1 mutant epithelial cell clone growth and when foxo is removed, these clones show massive overgrowth. The interpretation from this work was that, in a tsc1 mutant background, foxo may be functioning to limit cell proliferation to restrict tsc1 mutant overgrowth. In this paper, Gupta and Stocker now use transcriptomics to identify FoxO regulated genes that may explain this function of FoxO.\n\nThey use a very nice LCM technique to isolate cell clones, which presumably removes potential caveats and confounds in expression data associated with tissue disruption/FACS sorting, which is often used as a way to isolate pure populations of cell clones from imaginal discs. In addition, the finding that alteration in ERAD genes may explain the effects of FoxO on growth and proliferation of tsc1 mutant cells is a novel finding that will be of broad interest to researchers in the field of cell growth and proliferation (not just in flies).\n\n1) Results, paragraph one: It's strange that the RNA-seq showed no FoxO knockdown. The conclusion is that the lack of detection of FoxO knockdown is due to biological variability. And the authors show an example of partial mRNA knockdown achieving strong protein knockdown in Kc167 cells. However, the eye disc data show no knockdown at all. Is it possible that the LCM technique may not be accurately just isolating the knockdown clones? Based on the schematic in Figure 1, can the authors use presence/absence of GFP transcripts to clearly delineate that have isolated purely the clonal cells?\n\n2) The discovery that regulation of ER stress and ERAD genes may explain the effects of FoxO is interesting. These finding would certainly be in line with the known links between Tsc1, FoxO and the control of ER stress. One thing I thought was missing was a little more investigation and explanation of how the ER stress genes are interacting with Tsc1 to control cell proliferation \u2013 the data in Figures 2, 3 do show changes in eye size, but is it clear that these effects are on cell proliferation (vs. growth, death)? And if they are, what might be the mechanism? As it stands the paper reads as an initial (but still very nice) functional validation of RNA-seq data rather than an in-depth mechanistic investigation into how FoxO and Tsc1 function to control tissue growth.\n\nReviewer #3:\n\nThis manuscript is a huge technical achievement, applying cutting edge clonal techniques to identify FoxO target genes in Drosophila. The results reveal regulation of the ER stress response by FoxO along with other targets. The model system used is excellent, because it enables full FoxO activation in growing clones of cells in the eye, which is achieved by mutating TSC to activate a TOR negative feedback loop to suppress Akt, thereby activating FoxO. This roundabout method is essential because simply blocking Akt or over activating FoxO normally kills cells. Overall, I found the results robust, important and of interest to the field.\n\n1) Title could be shorter. No need to mention TSC.\n\n2) Introduction ought to more carefully and fully explain the TOR negative feedback loop on Akt that means full FoxO activation upon loss of TSC.\n",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "959d77b4-0135-4c55-8649-ce50edf6b0eb",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C1",
+      "claim": "FoxO blocks proliferation and progression in mTORC1-driven tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factor FoxO has been shown to block proliferation and progression in mTORC1-driven tumorigenesis but the picture of the relevant FoxO target genes remains incomplete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work establishing this relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "3e3b91ed-4b9e-48d8-b6b7-39f171a747fb",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C2",
+      "claim": "Endoplasmic reticulum-associated protein degradation pathway components are downregulated upon foxo knockdown in Tsc1-deficient cells under nutrient restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptomics analysis revealed downregulation of endoplasmic reticulum-associated protein degradation pathway components upon foxo knockdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq transcriptomics data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "1d8e853f-3a48-4963-80a1-06374d0ca2bf",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C3",
+      "claim": "Pharmacological induction of ER stress enhances overgrowth of Tsc1 knockdown tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of ER stress pharmacologically or by suppression of other ER stress response pathway components led to an enhanced overgrowth of Tsc1 knockdown tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data using small molecule inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "675d6f47-e8f9-499b-82b4-df0b41c45a61",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C4",
+      "claim": "Suppression of ER stress response pathway components enhances overgrowth of Tsc1 knockdown tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of ER stress pharmacologically or by suppression of other ER stress response pathway components led to an enhanced overgrowth of Tsc1 knockdown tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genetic manipulation experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "823d1e5f-4b4c-45d6-a453-32c00f6bea9c",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C5",
+      "claim": "ER stress is increased in Tsc1 loss-of-function cells upon foxo knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Increase of ER stress in Tsc1 loss-of-function cells upon foxo knockdown was also confirmed by elevated expression levels of known ER stress markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by expression data of ER stress markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "992c71a6-2144-44c2-a69d-a8f794382eff",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C6",
+      "claim": "FoxO limits ER stress to regulate Tsc1 mutant overgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "These results highlight the role of FoxO in limiting ER stress to regulate Tsc1 mutant overgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined experimental results showing FoxO's effect on ER stress and growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "2d3ddc7c-5c40-42f4-93f3-0753338c835f",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C7",
+      "claim": "The PI3K/Akt/mTORC1 network is the central regulator of cell growth, survival, and metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphatidylinositol 3-kinase (PI3K)/Akt/mechanistic target of rapamycin complex 1 (mTORC1) network is the central regulator of cell growth, survival, and metabolism (Manning and Toker, 2017; Saxton and Sabatini, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "89ca5c33-a46b-4efa-8092-09f34b6b163f",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C8",
+      "claim": "mTORC1 integrates growth factor signaling via Akt with intracellular nutrient and energy status to promote anabolism and suppress catabolic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "mTORC1 integrates growth factor signaling via Akt with the intracellular nutrient and energy status to promote anabolism and suppress catabolic processes (Ben-Sahra and Manning, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "3d7b3b6c-7f65-4c61-a432-91607966880a",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C9",
+      "claim": "Deregulation of the PI3K/Akt/mTORC1 network leads to human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The key regulatory function of the network is highlighted by its deregulation leading to human cancers (Zhang et al., 2017), and the evolutionary conservation across organisms including Drosophila melanogaster (Engelman et al., 2006; Katewa and Kapahi, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature on cancer biology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "965a44ec-36e3-46a1-898d-524c543fb211",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C10",
+      "claim": "The PI3K/Akt/mTORC1 network is evolutionarily conserved across organisms including Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "The key regulatory function of the network is highlighted by its deregulation leading to human cancers (Zhang et al., 2017), and the evolutionary conservation across organisms including Drosophila melanogaster (Engelman et al., 2006; Katewa and Kapahi, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to comparative biology literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "fda1f1d8-7ce2-4888-9c5f-03c663af3a4d",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C11",
+      "claim": "Pten and the tuberous sclerosis complex proteins Tsc1 and Tsc2 are major tumor suppressors in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, the major tumor suppressors of this network are phosphatase and tensin homolog (Pten) and the tuberous sclerosis complex (TSC) proteins Tsc1 and Tsc2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge in Drosophila genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "816d3e5f-ca55-4ffd-a1ee-e72586067997",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C12",
+      "claim": "Pten counteracts PI3K function by dephosphorylating PIP3 to PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Pten counteracts the function of PI3K by dephosphorylating the second messenger phosphatidylinositol-3,4,5-triphosphate (PIP3) to phosphatidylinositol-4,5-biphosphate (PIP2) (Klippel et al., 1997), thereby inhibiting Akt activity (Goberdhan et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to biochemical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "036f0c52-7cbc-4016-9196-ae336cd7e360",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C13",
+      "claim": "Pten inhibits Akt activity by dephosphorylating PIP3 to PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Pten counteracts the function of PI3K by dephosphorylating the second messenger phosphatidylinositol-3,4,5-triphosphate (PIP3) to phosphatidylinositol-4,5-biphosphate (PIP2) (Klippel et al., 1997), thereby inhibiting Akt activity (Goberdhan et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to signaling pathway studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "e7e3c7ea-c05f-4497-8d14-7d7b683a0297",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C14",
+      "claim": "The TSC complex inactivates mTORC1 downstream of Akt via its GTPase activating protein activity towards Rheb.",
+      "claim_type": "EXPLICIT",
+      "source": "The TSC complex inactivates mTORC1 downstream of Akt (Potter et al., 2002) via its GTPase activating protein (GAP) activity towards Rheb (Saucedo et al., 2003; Stocker et al., 2003; Zhang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to mechanistic studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "f1b90d53-2a51-43ac-a11e-32b4970374a3",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C15",
+      "claim": "FoxO is a major downstream target of Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "Another major downstream target of Akt is the transcription factor Forkhead box O (FoxO) (J\u00fcnger et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to signaling pathway literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "ac99eccb-fcb9-494a-b2a2-b8042afd351a",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C16",
+      "claim": "The role of FoxO as a bona fide tumor suppressor is not established since it can function as tumor-promoting depending on biological context.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the role of FoxO as a bona fide tumor suppressor is not established since it can also function as tumor-promoting depending on the biological context (van Doeselaar and Burgering, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review literature on FoxO function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "5a0e904c-56da-46b6-9433-d98e88fe62d0",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C17",
+      "claim": "Loss of Tsc1 leads to enhanced overgrowth of eye imaginal discs in larvae raised under nutrient restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an early tumorigenesis model in Drosophila, we have shown that the loss of Tsc1 leads to an enhanced overgrowth of eye imaginal discs in larvae raised under nutrient restriction (NR) (Nowak et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "6bb95d77-c659-45bf-a0f7-fcb12779fbbb",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C18",
+      "claim": "Tsc1 loss-induced overgrowth is primarily hypertrophic in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "This overgrowth is primarily hypertrophic in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by prior characterization cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "3a1a61dd-09bb-4e1c-beea-1dd3bc7add21",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C19",
+      "claim": "Loss of Tsc1 induces hyperactivation of mTORC1 and an S6K-dependent negative feedback to insulin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Tsc1 induces hyperactivation of mTORC1 and an S6K-dependent negative feedback to insulin signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established signaling pathway knowledge and prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "4edb6edd-5fd7-46d0-8f38-8c796cd381c8",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C20",
+      "claim": "Loss of Tsc1 causes downregulation of Akt and increased nuclear localization of FoxO, resulting in growth inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This causes downregulation of Akt and an increased nuclear localization of FoxO, resulting in growth inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the signaling pathway relationships described.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "6e05ed97-4803-4380-a3f8-3b8060aa3eb9",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C21",
+      "claim": "Suppression of FoxO function in Tsc1 mutant cells results in massively overgrown tissues that show ectopic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppression of FoxO function in Tsc1 mutant cells results in massively overgrown tissues that show ectopic differentiation, demonstrating a role of FoxO in regulating proliferation and differentiation of these hyperactive mTORC1 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by prior experimental work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "5577e023-690f-4de3-8b97-932ba40d5340",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C22",
+      "claim": "FoxO regulates proliferation and differentiation of hyperactive mTORC1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppression of FoxO function in Tsc1 mutant cells results in massively overgrown tissues that show ectopic differentiation, demonstrating a role of FoxO in regulating proliferation and differentiation of these hyperactive mTORC1 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental phenotypes described.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "48e7f394-9ae4-4d50-ab2f-c1aa498ca31e",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C23",
+      "claim": "The Drosophila eye imaginal disc is composed of different populations of mitotically active and differentiating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila eye imaginal disc is composed of different populations of mitotically active and differentiating cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of Drosophila developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "96ca76c5-3b67-4c3a-9fdb-aecfd240af03",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C24",
+      "claim": "Investigation for FoxO targets is required to be performed in specific cells under conditions being studied due to context and cell-type specificity of FoxO.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the context and cell-type specificity of FoxO (Webb et al., 2016), investigation for its targets is required to be performed in specific cells under conditions being studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature on FoxO specificity and logical inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "89f44f96-d3b6-4c1e-a192-bc10de0b8f1d",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C25",
+      "claim": "Laser capture microdissection has emerged as a useful tool for isolation of distinct cells of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "The laser capture microdissection (LCM) technique has emerged as a useful tool for isolation of distinct cells of interest (Iyer and Cox, 2010; Vicidomini et al., 2010) but a comprehensive analytical study has not been described previously in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to technical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "42012fa9-4487-4192-a450-c23601ff6800",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C26",
+      "claim": "A comprehensive analytical study using laser capture microdissection has not been described previously in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "The laser capture microdissection (LCM) technique has emerged as a useful tool for isolation of distinct cells of interest (Iyer and Cox, 2010; Vicidomini et al., 2010) but a comprehensive analytical study has not been described previously in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' assessment of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "380ace21-1b4a-49f6-a0bf-67fecfe2f7d2",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C27",
+      "claim": "Downregulation of ER stress is a key mechanism downstream of FoxO to inhibit Tsc1 mutant overgrowth under nutrient restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results identify downregulation of ER stress as a key mechanism downstream of FoxO to inhibit Tsc1 mutant overgrowth under NR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "c8db000b-160c-40a6-b6ca-578079b68254",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C28",
+      "claim": "A 12 hr shift to restrictive temperature is sufficient to achieve adequate foxo knockdown in Tsc1 mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Evaluating the nuclear FoxO antibody staining in Tsc1 mutant cells (Manning et al., 2005) in time-course experiments revealed that a 12 hr shift was sufficient to achieve an adequate foxo knockdown (Figure 1B and B').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 1B and B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "2168a9fc-c0df-4cb5-bb88-195187c7978a",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C29",
+      "claim": "Knockdown of foxo for a short duration limits the detection of secondary transcriptional targets.",
+      "claim_type": "EXPLICIT",
+      "source": "The knockdown of foxo for a short duration limited the detection of secondary transcriptional targets, as illustrated earlier (Gan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work and logical inference about experimental design.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "a4f058dc-cf1a-4147-8c48-3875fd28ca63",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C30",
+      "claim": "24 genes are downregulated in Tsc1 mutant cells upon foxo knockdown under nutrient restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential gene expression analysis of Tsc1 mutant cells, with or without foxo knockdown, under NR revealed 24 downregulated and 128 upregulated genes (ANOVA, logFC > 0.8 and FDR < 0.2, Figure 1C) in the absence of foxo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "f8410fd6-f87e-433f-b0d7-d5cc3cb41c78",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C31",
+      "claim": "128 genes are upregulated in Tsc1 mutant cells upon foxo knockdown under nutrient restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential gene expression analysis of Tsc1 mutant cells, with or without foxo knockdown, under NR revealed 24 downregulated and 128 upregulated genes (ANOVA, logFC > 0.8 and FDR < 0.2, Figure 1C) in the absence of foxo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "26aa6239-f96e-4351-8a18-1c09108739f0",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C32",
+      "claim": "Downregulated genes in Tsc1 mutant cells upon foxo knockdown are enriched in biological processes such as protein deglycosylation, protein refolding, and protein localization to ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology analysis of the downregulated genes showed enrichment in various biological processes such as protein deglycosylation, protein refolding, and protein localization to ER (Figure 1C'), and these genes have been further validated (see below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Gene Ontology analysis shown in Figure 1C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "9fcf62e6-de3e-480a-ad07-8107cbefcad8",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C33",
+      "claim": "More than half of the 128 upregulated genes code for small nucleolar RNAs and associated small nuclear RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "From the 128 upregulated genes, more than half code for small nucleolar RNAs (snoRNAs), and associated small nuclear RNAs (snRNAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of the RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "0cb205d5-4cb7-440f-8eeb-eed29b1e9a8e",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C34",
+      "claim": "CG6766 is the top candidate gene that enhances Tsc1 mutant overgrowth when knocked down.",
+      "claim_type": "EXPLICIT",
+      "source": "The top candidate from all genetic tests was the uncharacterized gene CG6766, encoding an ortholog of the mammalian endoplasmic reticulum lectin 1 (ERLEC1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo RNAi screening data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "5b001360-be97-4a64-bae9-54ed343e7cc8",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C35",
+      "claim": "CG6766 encodes an ortholog of mammalian endoplasmic reticulum lectin 1 (ERLEC1).",
+      "claim_type": "EXPLICIT",
+      "source": "The top candidate from all genetic tests was the uncharacterized gene CG6766, encoding an ortholog of the mammalian endoplasmic reticulum lectin 1 (ERLEC1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence homology and established orthology relationships.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "ef502b15-23be-4f54-822b-435d4c5669e3",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C36",
+      "claim": "CG6766 is predicted to localize to ER/Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "It is predicted to localize to ER/Golgi and is considered to be a component of the ubiquitin-dependent ERAD pathway (Huang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to computational prediction study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "34530fe6-4e2c-4a27-bfc6-76ac6146589a",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C37",
+      "claim": "CG6766 is considered to be a component of the ubiquitin-dependent ERAD pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "It is predicted to localize to ER/Golgi and is considered to be a component of the ubiquitin-dependent ERAD pathway (Huang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to pathway analysis study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "7fc96dee-b072-49da-b2ee-1c46cc206a50",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C38",
+      "claim": "CG8860 is involved in protein processing in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Another candidate that is involved in protein processing in the ER, CG8860, also scored positively in the in vivo assays, suggesting a role for ER homeostasis in determining Tsc1 mutant overgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on known function and in vivo assay results.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "1f3ba07b-efb9-4fc1-8a3b-780a1ec1a45f",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C39",
+      "claim": "CG8860 is orthologous to mammalian SEC61 translocon gamma subunit (SEC61G).",
+      "claim_type": "EXPLICIT",
+      "source": "CG8860 is orthologous to the mammalian SEC61 translocon gamma subunit (SEC61G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence homology and established orthology relationships.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "b98410e2-f81c-4e31-a2d8-c4ed0a7ff987",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C40",
+      "claim": "ER homeostasis plays a role in determining Tsc1 mutant overgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Another candidate that is involved in protein processing in the ER, CG8860, also scored positively in the in vivo assays, suggesting a role for ER homeostasis in determining Tsc1 mutant overgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the positive results of multiple ER-related genes in the assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "6d654b29-2559-4788-89bb-c89a26ba68bf",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C41",
+      "claim": "Homozygous CG6766 mutant clones show similar calnexin staining patterns compared to surrounding wild-type tissue and isogenic control clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous mutant clones showed similar staining patterns compared to the surrounding wild-type tissue and the isogenic control clones (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "0765b6a1-13ca-4181-b211-e059c49d3615",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C42",
+      "claim": "Expression levels of spliced-Xbp1 are elevated in Tsc1 knockdown backgrounds upon knockdown of CG6766.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative reverse-transcription PCR (RT-qPCR) analysis on eye imaginal discs revealed no change in the expression levels of spliced-Xbp1 or Hsc-70\u20133 in the wild-type background upon knockdown of CG6766. By contrast, the expression levels of both ER stress reporters were elevated in Tsc1 knockdown backgrounds (Figure 2\u2014figure supplement 2), indicating that CG6766 is limiting to maintain ER homeostasis in Tsc1 mutant cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "0f91a9b0-d0bd-408b-9d8f-78521aec6ffb",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C43",
+      "claim": "Expression levels of Hsc-70\u20133 are elevated in Tsc1 knockdown backgrounds upon knockdown of CG6766.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative reverse-transcription PCR (RT-qPCR) analysis on eye imaginal discs revealed no change in the expression levels of spliced-Xbp1 or Hsc-70\u20133 in the wild-type background upon knockdown of CG6766. By contrast, the expression levels of both ER stress reporters were elevated in Tsc1 knockdown backgrounds (Figure 2\u2014figure supplement 2), indicating that CG6766 is limiting to maintain ER homeostasis in Tsc1 mutant cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "2a82e652-21a3-44e6-8071-57572fefcfb0",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C44",
+      "claim": "CG6766 is limiting to maintain ER homeostasis in Tsc1 mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative reverse-transcription PCR (RT-qPCR) analysis on eye imaginal discs revealed no change in the expression levels of spliced-Xbp1 or Hsc-70\u20133 in the wild-type background upon knockdown of CG6766. By contrast, the expression levels of both ER stress reporters were elevated in Tsc1 knockdown backgrounds (Figure 2\u2014figure supplement 2), indicating that CG6766 is limiting to maintain ER homeostasis in Tsc1 mutant cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the differential effects in wild-type versus Tsc1 mutant backgrounds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "3c10042c-31e0-47a0-9ad9-95e8c8f4db4b",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C45",
+      "claim": "The lack of ER stress response in cells mutant for CG6766 suggests a redundant function.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of ER stress response in cells mutant for CG6766 suggests a (partially) redundant function, and may also explain why CG6766 (as well as CG8860) has not been characterized so far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the experimental observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "ae37a4e6-419a-4114-a68a-1ee4b5c879b5",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C46",
+      "claim": "Knockdown of several ERAD pathway components leads to an increase in Tsc1 knockdown eye size.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of several ERAD pathway components led to an increase in Tsc1 knockdown eye size (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vivo RNAi screening data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "141004ac-2cb2-458f-a596-1fddaab24e18",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C47",
+      "claim": "Inhibition of core components of the ubiquitin ligase complex results in enlargement of Tsc1 knockdown eye size.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, inhibition of the core components of the ubiquitin ligase complex and those involved in the retrotranslocation of terminally misfolded proteins from ER to cytosol resulted in an enlargement of eye size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo RNAi screening data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "6221a934-cea2-4313-99df-360f987ec4f7",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C48",
+      "claim": "Inhibition of components involved in retrotranslocation of terminally misfolded proteins from ER to cytosol results in enlargement of Tsc1 knockdown eye size.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, inhibition of the core components of the ubiquitin ligase complex and those involved in the retrotranslocation of terminally misfolded proteins from ER to cytosol resulted in an enlargement of eye size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo RNAi screening data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "3dd665b1-ca8b-4ccd-989d-1a1ad6cb2e2a",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C49",
+      "claim": "CG13426 encodes an ortholog of SEC61G similar to CG8860.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, CG13426, which encodes an ortholog of SEC61G similar to the candidate from the transcriptomics analysis, CG8860, also led to an enhancement of the Tsc1 knockdown overgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence homology and established orthology relationships.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "0ad3f2d1-6268-4e5c-a98d-02af285bb090",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C50",
+      "claim": "CG13426 knockdown leads to enhancement of Tsc1 knockdown overgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, CG13426, which encodes an ortholog of SEC61G similar to the candidate from the transcriptomics analysis, CG8860, also led to an enhancement of the Tsc1 knockdown overgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo RNAi screening data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "4fe5373d-7933-414b-975b-aff4e822e128",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C51",
+      "claim": "A reduced efficiency of ERAD lowers the capacity of the ER to remove misfolded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "A reduced efficiency of ERAD lowers the capacity of the ER to remove misfolded proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of ERAD function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "adbd2502-874d-4b5c-bee5-d8e956df9b1c",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C52",
+      "claim": "In mammals, accumulation of misfolded proteins in the ER causes activation of three signal transduction pathways: PERK, IRE1\u03b1 and ATF6, together referred to as the unfolded protein response (UPR).",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, accumulation of misfolded proteins in the ER causes activation of the three signal transduction pathways: PERK, IRE1\u03b1 and ATF6, together referred to as the unfolded protein response (UPR) (Wang and Kaufman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review literature on UPR.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "16602a0d-d1c3-4f21-bc16-c775bf72baf4",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C53",
+      "claim": "UPR pathways signal to induce apoptosis in case of chronic ER stress or maintain ER homeostasis by upregulating expression of several ERAD pathway genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These signal to induce apoptosis in case of chronic ER stress, or maintain ER homeostasis by upregulating expression of several ERAD pathway genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of UPR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "3510fec5-9f12-437a-893c-866b7988f0f2",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C54",
+      "claim": "The ERAD pathway links the ubiquitin-proteasome system to ER protein quality control as its substrates are transported into the cytosol for degradation by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "The ERAD pathway also links the ubiquitin-proteasome system to ER protein quality control as its substrates are transported into the cytosol for degradation by the proteasome (Ruggiano et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review literature on ERAD.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "9564f68f-8cb9-4c28-92d7-3da3184a84d1",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C55",
+      "claim": "Knockdown of UPR pathway genes does not display a consistent effect on Tsc1 knockdown overgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of UPR or proteasomal degradation pathway genes did not display a consistent effect on Tsc1 knockdown overgrowth (Figure 3C and D), indicating that the effects might be specific to ERAD or that the manipulations are detrimental (proteasomal degradation pathway components).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vivo RNAi screening data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "a18d0af0-b4d7-4aaa-8e30-2bf5654d5298",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C56",
+      "claim": "Knockdown of proteasomal degradation pathway genes does not display a consistent effect on Tsc1 knockdown overgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of UPR or proteasomal degradation pathway genes did not display a consistent effect on Tsc1 knockdown overgrowth (Figure 3C and D), indicating that the effects might be specific to ERAD or that the manipulations are detrimental (proteasomal degradation pathway components).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vivo RNAi screening data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "46e09e9b-5422-4efa-9c0a-6567e1fed36a",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C57",
+      "claim": "The effects of ERAD component knockdown on Tsc1 mutant overgrowth might be specific to ERAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of UPR or proteasomal degradation pathway genes did not display a consistent effect on Tsc1 knockdown overgrowth (Figure 3C and D), indicating that the effects might be specific to ERAD or that the manipulations are detrimental (proteasomal degradation pathway components).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculative interpretation based on comparison of different pathway manipulations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "a45d6214-b96c-4f2f-8c23-d9817836189e",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C58",
+      "claim": "Tunicamycin inhibits N-linked glycosylation and causes ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibition of N-linked glycosylation by Tunicamycin (Kuo and Lampen, 1974), Ca2+ ATPase by Thapsigargin (Lytton et al., 1991), proteasome by MG132 (Lee and Goldberg, 1998), and ERAD by Eeyarestain I (Fiebiger et al., 2004) cause ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to pharmacological literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "75b15796-3e53-4101-b64c-ab59669f11a8",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C59",
+      "claim": "Thapsigargin inhibits Ca2+ ATPase and causes ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibition of N-linked glycosylation by Tunicamycin (Kuo and Lampen, 1974), Ca2+ ATPase by Thapsigargin (Lytton et al., 1991), proteasome by MG132 (Lee and Goldberg, 1998), and ERAD by Eeyarestain I (Fiebiger et al., 2004) cause ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to pharmacological literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "b3f6c19f-1596-4e42-88f1-8140b9520c24",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C60",
+      "claim": "MG132 inhibits the proteasome and causes ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibition of N-linked glycosylation by Tunicamycin (Kuo and Lampen, 1974), Ca2+ ATPase by Thapsigargin (Lytton et al., 1991), proteasome by MG132 (Lee and Goldberg, 1998), and ERAD by Eeyarestain I (Fiebiger et al., 2004) cause ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to pharmacological literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "d013a644-1ae5-4812-954f-90238d923b18",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C61",
+      "claim": "Eeyarestatin I inhibits ERAD and causes ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibition of N-linked glycosylation by Tunicamycin (Kuo and Lampen, 1974), Ca2+ ATPase by Thapsigargin (Lytton et al., 1991), proteasome by MG132 (Lee and Goldberg, 1998), and ERAD by Eeyarestain I (Fiebiger et al., 2004) cause ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to pharmacological literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "7b498b53-e822-4b8c-b6b7-c60c00d04636",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C62",
+      "claim": "Addition of Tunicamycin, MG132, or Eeyarestatin I to fly food results in enhancement of Tsc1 knockdown eye size.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of these small molecule inhibitors to the fly food, except Thapsigargin, resulted in an enhancement of Tsc1 knockdown eye size (Figure 3E), consistent with a regulation of Tsc1-deficient growth by the ER stress response status.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pharmacological treatment data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "d822c806-3d83-4044-bcf9-82857c6d12ab",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C63",
+      "claim": "Tsc1-deficient growth is regulated by ER stress response status.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of these small molecule inhibitors to the fly food, except Thapsigargin, resulted in an enhancement of Tsc1 knockdown eye size (Figure 3E), consistent with a regulation of Tsc1-deficient growth by the ER stress response status.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the consistent effects of ER stress induction on Tsc1 mutant growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "afbde64b-6c06-473d-8f37-070f99866995",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C64",
+      "claim": "Calnexin staining is stronger in Tsc1 and Tsc1 foxo mutant clones compared to surrounding wild-type tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The staining was stronger in Tsc1 and Tsc1 foxo mutant clones as compared to the surrounding wild-type tissue, suggesting an upregulation of Cnx99A levels or a change in ER morphology in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "97f29286-e4e0-4247-b32d-e712bfb29dec",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C65",
+      "claim": "Stronger calnexin staining in Tsc1 mutant clones suggests an upregulation of Cnx99A levels or a change in ER morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "The staining was stronger in Tsc1 and Tsc1 foxo mutant clones as compared to the surrounding wild-type tissue, suggesting an upregulation of Cnx99A levels or a change in ER morphology in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the immunofluorescence data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "d99c02a7-09ba-44e2-8987-b4159de44ce0",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C66",
+      "claim": "Increased ER stress in Tsc1 loss-of-function cells has been established.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased ER stress in Tsc1 loss-of-function cells has been established (Ozcan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "c06c7809-d737-4091-aa81-fa923b7972a1",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C67",
+      "claim": "Hsc-70\u20133 transcript levels are elevated in Tsc1 foxo mutant eye imaginal discs compared to Tsc1 mutant discs.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR analysis of Tsc1 or Tsc1 foxo mutant eye imaginal discs dissected from larvae raised under normal food or NR showed elevated Hsc-70\u20133 transcript levels upon foxo loss (Figure 4B), indicating an enhancement of ER stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "f03add39-68e7-4b81-9a71-2f985f69e03f",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C68",
+      "claim": "Elevated Hsc-70\u20133 transcript levels upon foxo loss indicate an enhancement of ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR analysis of Tsc1 or Tsc1 foxo mutant eye imaginal discs dissected from larvae raised under normal food or NR showed elevated Hsc-70\u20133 transcript levels upon foxo loss (Figure 4B), indicating an enhancement of ER stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the known role of Hsc-70\u20133 as an ER stress reporter.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "665e8fa9-db21-42dc-875d-86f448f8fc6b",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C69",
+      "claim": "PEK transcript levels are not changed upon foxo loss in Tsc1 mutant eye discs.",
+      "claim_type": "EXPLICIT",
+      "source": "PEK transcript levels were not changed upon foxo loss in Tsc1 mutant eye discs (Figure 4B').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 4B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "57d1dcbe-2d53-44d5-aac4-c73fa17acf2c",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C70",
+      "claim": "PEK and Ire1 are the two conserved UPR branches in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of UPR was also checked by analyzing the two conserved branches in Drosophila: PEK (PERK) and Ire1 (Mori, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature on Drosophila UPR.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "01fd13fd-d927-4e85-857b-e1f188e90898",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C71",
+      "claim": "Ire1 signals via splicing of the transcription factor X-box binding protein 1 (Xbp1).",
+      "claim_type": "EXPLICIT",
+      "source": "Ire1 signals via splicing of the transcription factor X-box binding protein 1 (Xbp1) (Yoshida et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature on Ire1 signaling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "ccfb1f41-bd98-47e8-9fbb-c205582e3d9e",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C72",
+      "claim": "Expression levels of spliced-Xbp1 are significantly increased in Tsc1 foxo mutant eye discs, specifically under conditions of nutrient restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression levels of spliced-Xbp1 were significantly increased in Tsc1 foxo mutant eye discs, specifically under conditions of NR (Figure 4B'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 4B''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "7d70e180-dcae-42fc-8687-201652a0b9d7",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C73",
+      "claim": "Enrichment of spliced-Xbp1 in Tsc1 foxo knockdown clones under nutrient restriction is confirmed using an in vivo reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment of spliced-Xbp1 was further confirmed in Tsc1 foxo knockdown clones under NR using an in vivo reporter (Sone et al., 2013; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reporter expression data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "cb29d06c-ec65-44cc-8465-b73aab1de2ca",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C74",
+      "claim": "FoxO has the capacity to regulate ER stress status in Tsc1 mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This illustrates the capacity of FoxO to regulate the ER stress status in Tsc1 mutant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined experimental results showing FoxO's effect on ER stress markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "386ef54c-9b50-4417-bbad-e7e9a9aaf17d",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C75",
+      "claim": "The majority of genes differentially upregulated in Tsc1 mutant cells upon foxo knockdown consist of snoRNAs and snRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the genes differentially upregulated in Tsc1 mutant cells upon foxo knockdown consisted of snoRNAs and snRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of the RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "53e01c02-561c-4900-be90-c6b99c9d76ad",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C76",
+      "claim": "snoRNAs function primarily in posttranscriptional modification of ribosomal RNAs and snRNAs to regulate ribosome biogenesis and function, RNA editing, gene silencing, and alternative splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "snoRNAs are single-stranded non-coding RNAs that function primarily in the posttranscriptional modification of ribosomal RNAs and snRNAs to regulate ribosome biogenesis and function, RNA editing, gene silencing, and alternative splicing (Bratkovi\u010d and Rogelj, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review literature on snoRNA function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "6e98dbf2-8c36-452c-8618-ef2aff299a2a",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C77",
+      "claim": "snoRNA genes are directly bound and activated by Myc in Drosophila S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "snoRNA genes were shown to be directly bound and activated by Myc in Drosophila S2 cells (Herter et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "de1716ea-a05a-4d6d-8942-7d6a768e8e62",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C78",
+      "claim": "The expression of myc is suppressed by FoxO in Drosophila muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the expression of myc is suppressed by FoxO, at least in Drosophila muscles (Teleman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "285b47d1-8108-4dfa-befd-3aa3a8ba898e",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C79",
+      "claim": "mTORC1 regulates Myc activity by controlling the amount of protein bound to promoters of target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The same study reported that mTORC1 regulates Myc activity by controlling the amount of protein bound to promoters of target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to the same study mentioned previously.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "6ba6bf04-0a75-4098-bcd8-9a265a0158ac",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C80",
+      "claim": "Upon knockdown of foxo, the inhibition of myc expression by FoxO is alleviated under nutrient restriction, and Myc gets activated downstream of hyperactive mTORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar mechanism might be at play in the Tsc1 mutant cells of the eye imaginal discs. Upon knockdown of foxo, the inhibition of myc expression by FoxO is alleviated under NR, and Myc gets activated downstream of hyperactive mTORC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanistic interpretation based on prior literature and current findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "9ff442ca-3777-4001-b48f-af0466a8c37c",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C81",
+      "claim": "Myc activation can lead to upregulation of snoRNAs, which helps in biomass production in rapidly growing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This can lead to a subsequent upregulation of snoRNAs, which helps in biomass production in these rapidly growing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanistic interpretation based on known Myc function.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "075cc3a6-a43f-46ef-9d05-a20567b3850c",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C82",
+      "claim": "Emerging evidence suggests a correlation between snoRNAs and sustained proliferation, invasion, metastasis, and angiogenesis in different cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, emerging evidence suggests a correlation between snoRNAs and sustained proliferation, invasion, metastasis, and angiogenesis in different cancers (Liang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review literature on snoRNAs in cancer.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "aa43921b-cf0f-4ead-849f-4d589ddda3c1",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C83",
+      "claim": "There is significant interplay between the PI3K/Akt/mTORC1 signaling network and ER stress pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a significant interplay between the PI3K/Akt/mTORC1 signaling network and ER stress pathways (Appenzeller-Herzog and Hall, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "76ec0f25-4144-4d65-ac97-d2a4dc07cb0d",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C84",
+      "claim": "Induction of ER stress results in suppression of insulin receptor signaling linking ER stress to insulin resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of ER stress results in the suppression of insulin receptor signaling linking ER stress to insulin resistance (Ozcan et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "b5b6c807-25c1-4fb4-a052-f0cc2f0fcf34",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C85",
+      "claim": "PEK-driven regulation of FoxO contributes to insulin resistance in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, PEK-driven regulation of FoxO contributes to this resistance in Drosophila (Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to experimental study in Drosophila.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "2c7a7d6e-2ad7-4f91-8db5-2acdae57fa4b",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C86",
+      "claim": "Uncontrolled activation of Akt represses ER stress in cardiac dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "In a study on cardiac dysfunction, uncontrolled activation of Akt repressed ER stress (Dong et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "518b19fb-f9df-4294-aa1b-64acc6c06988",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C87",
+      "claim": "Hyperactivation of mTORC1 activity via loss of TSC complex function leads to increased ER stress and UPR pathway upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyperactivation of mTORC1 activity, particularly via loss of the TSC complex function, leads to increased ER stress and UPR pathway upregulation (Ozcan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "9154a77d-5ba0-4e89-99c3-690db15bfbe6",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C88",
+      "claim": "ER stress inhibits Akt and mTORC1 activity to induce autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, ER stress inhibits Akt and mTORC1 activity to induce autophagy (Qin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "e5a22d2b-96e4-4653-9120-e97eb4c0e4ef",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C89",
+      "claim": "The identification of putative ERAD components governing Tsc1 mutant tissue growth adds another interaction node to the PI3K/Akt/mTORC1 and ER stress pathway crosstalk.",
+      "claim_type": "EXPLICIT",
+      "source": "Our identification of putative ERAD components governing Tsc1 mutant tissue growth adds another interaction node to this pathway crosstalk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the novel findings in the context of existing pathway knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "02ac4740-796c-4bb5-b533-198caf44a11e",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C90",
+      "claim": "The absence of canonical ERAD components in the transcriptomics data prompted consideration of an independent mechanism for degradation of misfolded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of canonical ERAD components in the transcriptomics data prompted us to consider the possibility of an independent mechanism for the degradation of misfolded proteins, as shown previously in C. elegans (Safra et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on the data and prior literature in C. elegans.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "984ee39e-2de9-4336-9619-0434db36688e",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C91",
+      "claim": "Enhancement of Tsc1 loss-of-function overgrowth upon downregulation of core ERAD components implies an important role of the Hrd3-E3 ubiquitin ligase complex in this growth process.",
+      "claim_type": "EXPLICIT",
+      "source": "However, enhancement of the Tsc1 loss-of-function overgrowth upon downregulation of the core ERAD components implies an important role of the Hrd3-E3 ubiquitin ligase complex in this growth process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the genetic screening results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "8f01be33-1a26-45e3-b1ac-351481cf1145",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C92",
+      "claim": "FoxO restricts Tsc1 mutant tissue growth at the level of proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that FoxO restricts Tsc1 mutant tissue growth at the level of proliferation, a lack of known proliferation-affecting genes among the differentially regulated genes is intriguing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on prior characterization of FoxO function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "77baaeb6-6342-4082-8ccd-601a579af989",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C93",
+      "claim": "The inhibitory effect on proliferation by FoxO might be indirect, possibly via ER stress response pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the inhibitory effect on proliferation by FoxO might be indirect, possibly via ER stress response pathways (Vandewynckel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on the data and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "68442346-94e2-4dc2-97e4-6c57e6cda600",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C94",
+      "claim": "PERK reduces oxidative DNA damage and checkpoint activation to increase proliferation of cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "PERK reduces oxidative DNA damage and checkpoint activation to increase proliferation of cancer cells (Bobrovnikova-Marjon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "6b942d24-a5d9-447e-841f-ab522f8d0858",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C95",
+      "claim": "GRP78 plays a role in regulating tumor cell proliferation by various means.",
+      "claim_type": "EXPLICIT",
+      "source": "A role for the ER chaperone GRP78 in regulating tumor cell proliferation by various means has also been described (Lee, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "0b783b92-6b5b-4cbc-834d-02b0289e2067",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C96",
+      "claim": "IRE1\u03b1 promotes cell proliferation by regulating expression of cyclin A1 through XBP-1 splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "IRE1\u03b1 has been shown to promote cell proliferation by regulating expression of cyclin A1 through XBP-1 splicing (Thorpe and Schwarze, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "70bb5d66-498c-4d39-9c1d-5efa051064df",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C97",
+      "claim": "Heightened expression of Hsc-70\u20133 and spliced-Xbp1 in Tsc1 mutant cells upon foxo loss under nutrient restriction hints at a possible approach to reinforce proliferation in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indeed demonstrate a heightened expression of Hsc-70\u20133 and spliced-Xbp1 in Tsc1 mutant cells upon foxo loss under NR, hinting at a possible approach to reinforce proliferation in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on the experimental data and cited literature.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "b5a27551-7d24-472c-bf6b-f0182b58354c",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C98",
+      "claim": "PEK might be regulated at a level other than transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "PEK might also be regulated at a level other than transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on the lack of transcriptional changes observed.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "2970d6ca-a78a-49cd-8d5f-9023e4285734",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C99",
+      "claim": "Aberrant ER stress activation has been recorded during various aspects of cancer development.",
+      "claim_type": "EXPLICIT",
+      "source": "Aberrant ER stress activation has also been recorded during various aspects of cancer development (Avril et al., 2017; Wang and Kaufman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to review literature on ER stress in cancer.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "e5dc5496-6f27-41c8-b233-5154e9078c97",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C100",
+      "claim": "Considerable efforts have been made to develop therapeutic strategies to target tumor cell dependency on ER stress response pathways or to substantially upregulate stress to cause cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Considerable efforts have been made to develop therapeutic strategies to target the dependency of tumor cells on ER stress response pathways, or to substantially upregulate stress to cause cell death (Hetz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review literature on therapeutic strategies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "df0e5c45-1d68-465c-b2ca-2e104c3318e6",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C101",
+      "claim": "Use of ER stress-inducing agents has displayed sensitization of Tsc1/2 mutant cells to individual treatments in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in the case of loss of Tsc1/2 function, use of ER stress-inducing agents has displayed sensitization of mutant cells to individual treatments in vitro (Kang et al., 2011), or combination treatments in a mouse xenograft tumor model (Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "9d511bc7-1a08-457b-8830-a5094a0945cd",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C102",
+      "claim": "Use of ER stress-inducing agents has displayed sensitization of Tsc1/2 mutant cells to combination treatments in a mouse xenograft tumor model.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in the case of loss of Tsc1/2 function, use of ER stress-inducing agents has displayed sensitization of mutant cells to individual treatments in vitro (Kang et al., 2011), or combination treatments in a mouse xenograft tumor model (Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "6f478759-c09a-40ac-82c0-29dfe1c049b9",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C103",
+      "claim": "The ER stress response can have both pro-survival and pro-apoptotic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the ER stress response can have both pro-survival and pro-apoptotic effects (Ma and Hendershot, 2004), it is crucial to characterize the signaling landscape of individual tumors before therapeutic intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review literature on ER stress responses.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "47c7c105-ab13-4466-bb5e-aeb89290ea8e",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C104",
+      "claim": "It is crucial to characterize the signaling landscape of individual tumors before therapeutic intervention targeting ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the ER stress response can have both pro-survival and pro-apoptotic effects (Ma and Hendershot, 2004), it is crucial to characterize the signaling landscape of individual tumors before therapeutic intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the dual nature of ER stress responses and clinical implications.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "8d3ec005-3f91-4c9e-bbcd-0f164d2a8e5c",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C105",
+      "claim": "Increasing ER stress leads to enhancement of Tsc1 mutant overgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, our results demonstrate that increasing ER stress led to an enhancement of Tsc1 mutant overgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "77fe244e-da09-4d19-b155-bb79a1e14df1",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C106",
+      "claim": "Suppression of foxo represses ERAD pathway activation in Tsc1 mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppression of foxo represses the ERAD pathway activation, which combined with the augmented protein synthesis in Tsc1 mutant cells results in a state of high ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the transcriptomics and functional data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "43bce497-c0bf-4599-9292-8b0f3aadd9d1",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C107",
+      "claim": "Suppression of foxo combined with augmented protein synthesis in Tsc1 mutant cells results in a state of high ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppression of foxo represses the ERAD pathway activation, which combined with the augmented protein synthesis in Tsc1 mutant cells results in a state of high ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined effects of foxo loss and Tsc1 mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "edd4158e-a586-430e-8492-ff730efbc0e7",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C108",
+      "claim": "High ER stress state is beneficial for proliferation and confers a growth advantage to Tsc1 foxo mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This new adaptive state is beneficial for proliferation and confers a growth advantage to Tsc1 foxo mutant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on the observed overgrowth phenotype.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "a168d1cd-7d81-4409-b9ef-6f49c3be9445",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C109",
+      "claim": "Exploitation of ER stress processes in tumors with escalated mTORC1 activity that exhibit loss of FoxOs can extend the repertoire of available treatment options.",
+      "claim_type": "EXPLICIT",
+      "source": "The exploitation of this process in tumors with escalated mTORC1 activity that exhibit loss of FoxOs can extend the repertoire of available treatment options and needs further exploration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative proposal for therapeutic application based on the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "4e8d8113-4068-4388-8bc4-a82c7b7624e2",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C110",
+      "claim": "High variability among biological replicates in the RNA-seq data can be explained by small starting material for library preparation and absence of pooling of multiple samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering on normalized gene counts showed high variability among the biological replicates (Figure 1\u2014figure supplement 1). This can be explained by the small starting material for library preparation (Bhargava et al., 2015) and an absence of pooling of multiple samples to average the individual organismal differences.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from technical considerations and cited literature on LCM-based RNA-seq.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "1bc28984-fcae-4ec0-ac3a-2f9f84420e09",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C111",
+      "claim": "A reduction in foxo transcripts was not observed in the knockdown samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a reduction in foxo transcripts was not observed in the knockdown samples (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "e99210c4-c4f8-4804-a418-b8759535906a",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C112",
+      "claim": "Partial loss of foxo transcripts accompanied by significant loss of protein suggests the presence of a transcriptionally-activating feedback upon foxo knockdown or a direct effect on translational capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar partial loss of transcripts accompanied by a significant loss of protein (Figure 1\u2014figure supplement 1) was observed in Kc167 cells, suggesting the presence of a transcriptionally-activating feedback upon foxo knockdown or a direct effect on the translational capacity (Doench et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculative interpretation based on the discrepancy between transcript and protein levels, with citation to relevant literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "7bb267f8-1ac5-408f-9ec1-838296f605f9",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C113",
+      "claim": "Processed cell populations were not contaminated with GFP-positive non-clonal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Representative images of isolated Tsc1 mutant clones with and without foxo knockdown are presented to support that the processed cell populations were not contaminated with GFP-positive non-clonal tissue (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy images shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "c40d6b21-58c4-4503-aced-ad69b7e34c0a",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C114",
+      "claim": "100% mutant transcripts (Tsc1Q87X) are present in the Tsc1 mutant clones.",
+      "claim_type": "EXPLICIT",
+      "source": "This is further substantiated by the presence of 100% mutant transcripts (Tsc1Q87X where codon CAG at position 3R:24,130,984 is substituted by TAG) in the Tsc1 mutant clones (example in Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequencing data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "d03ea3d2-73bb-4a5f-9b7e-30183b319480",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C115",
+      "claim": "GSEA showed enrichment of genes upregulated in Tsc1 mutant discs in corresponding lists of differentially expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, gene set enrichment analysis (GSEA) (Subramanian et al., 2005) showed enrichment of genes upregulated in Tsc1 mutant discs (Harvey et al., 2008) as well as FoxO targets from adipose tissue and muscle (Teleman et al., 2008) in corresponding lists of differentially expressed genes (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA results shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "4617b131-c1ad-4738-bb4a-036828afff53",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C116",
+      "claim": "GSEA showed enrichment of FoxO targets from adipose tissue and muscle in corresponding lists of differentially expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, gene set enrichment analysis (GSEA) (Subramanian et al., 2005) showed enrichment of genes upregulated in Tsc1 mutant discs (Harvey et al., 2008) as well as FoxO targets from adipose tissue and muscle (Teleman et al., 2008) in corresponding lists of differentially expressed genes (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA results shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "5350b480-7010-4602-875d-5d2b79609aa2",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C117",
+      "claim": "Calnexin is an ER molecular chaperone and a Ca2+ homeostasis regulator.",
+      "claim_type": "EXPLICIT",
+      "source": "Calnexin is an ER molecular chaperone and a Ca2+ homeostasis regulator (Arruda and Hotamisligil, 2015) that is localized to the ER membrane (Xiao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature on calnexin function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "d78befa0-7b92-4434-a862-913349ac7fc2",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C118",
+      "claim": "Calnexin is localized to the ER membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Calnexin is an ER molecular chaperone and a Ca2+ homeostasis regulator (Arruda and Hotamisligil, 2015) that is localized to the ER membrane (Xiao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature on calnexin localization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "ee5182b6-b4e4-4aef-aee4-1ff7e0d4d833",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "claim_id": "C119",
+      "claim": "This is the first report illustrating the use of laser capture microdissection with living imaginal disc cells in Drosophila that was not based on pooling of multiple biological samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies (Mauthner et al., 2014; Spletter et al., 2007) have described the use of LCM for RNA isolation from optimal cutting temperature compound-embedded tissues, but this is the first report, to our knowledge, illustrating the use of this technique with living imaginal disc cells in Drosophila that was not based on pooling of multiple biological samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' assessment of the literature and their methodological innovation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "720f8873-c925-4d8e-8d4d-1aba82c2df97",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed and validated a laser capture microdissection (LCM) approach combined with RNA-seq to profile gene expression in single Tsc1 mutant clones from Drosophila eye imaginal discs. A 12-hour foxo knockdown was sufficient to achieve adequate protein reduction while limiting secondary transcriptional targets. RNA-seq analysis revealed 24 downregulated and 128 upregulated genes upon foxo knockdown in Tsc1 mutant cells under nutrient restriction, with downregulated genes enriched in ER-related processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological approach is well-documented with multiple quality control measures (C28, C113, C114). The RNA-seq data show appropriate validation through GSEA enrichment (C115, C116) and the technical challenges are acknowledged and explained (C110, C111, C112). The differential expression results (C30, C31, C32) are supported by statistical analysis with appropriate thresholds (logFC > 0.8, FDR < 0.2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In vivo RNAi screening identified CG6766 (ERLEC1 ortholog) and CG8860 (SEC61G ortholog) as top candidates from the downregulated ERAD pathway genes that enhance Tsc1 mutant overgrowth when knocked down. CG6766 knockdown elevated ER stress markers (spliced-Xbp1 and Hsc-70-3) specifically in Tsc1 mutant backgrounds but not in wild-type, indicating CG6766 is limiting for ER homeostasis in Tsc1 mutant cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional validation through in vivo RNAi screening (C34, C38) is supported by quantitative data (C42, C43). The context-dependent effect (C41, C44) strengthens the specificity of the findings. However, the interpretation of redundant function (C45) is speculative but reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "3f643153-4cae-4c7b-b904-1fc3b96a5507",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Systematic knockdown of ERAD pathway components, particularly core ubiquitin ligase complex members and retrotranslocation factors, enhanced Tsc1 knockdown eye overgrowth. In contrast, knockdown of UPR or proteasomal degradation pathway genes did not show consistent effects, suggesting specificity to ERAD. These results implicate the Hrd3-E3 ubiquitin ligase complex as important for regulating Tsc1 mutant growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic screening data (C46, C47, C48, C50) provide strong support for ERAD involvement. The negative results with UPR and proteasomal components (C55, C56) strengthen the specificity argument, though the interpretation (C57, C91) involves some inference. The consistency across multiple ERAD components supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "5032d84d-b145-4f79-8d54-a5f4f8bde8ae",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pharmacological induction of ER stress using Tunicamycin, MG132, or Eeyarestatin I enhanced Tsc1 knockdown eye overgrowth, while Thapsigargin did not. These results demonstrate that Tsc1-deficient growth is regulated by ER stress response status and that increasing ER stress promotes Tsc1 mutant overgrowth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The pharmacological experiments (C62) provide independent validation of the genetic findings. The use of multiple ER stress inducers with different mechanisms (C58, C60, C61) strengthens the conclusion. The exception with Thapsigargin is noted but not explained, which is a minor limitation. The overall conclusion (C63, C105) is well-supported by converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "07aacaf3-dad6-4edb-ac29-903307bd332c",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Loss of FoxO function in Tsc1 mutant cells increases ER stress markers. Calnexin staining was stronger in Tsc1 and Tsc1 foxo mutant clones. RT-qPCR showed elevated Hsc-70-3 and spliced-Xbp1 (but not PEK) transcript levels upon foxo loss in Tsc1 mutant discs, specifically under nutrient restriction. These results demonstrate that FoxO limits ER stress to regulate Tsc1 mutant overgrowth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent ER stress markers (C64, C67, C72) consistently show increased ER stress upon foxo loss. The use of both immunofluorescence (C64) and RT-qPCR (C67, C72) provides orthogonal validation. The in vivo reporter confirmation (C73) further strengthens the findings. The nutrient restriction specificity (C72) is important for the biological context. The overall conclusion (C6, C27, C74) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "870e620c-1bb0-4d7e-a5e7-170551de6b3b",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The majority of upregulated genes upon foxo knockdown in Tsc1 mutant cells were snoRNAs and snRNAs. The authors propose a mechanism where foxo loss alleviates suppression of myc, leading to Myc activation downstream of hyperactive mTORC1, which then upregulates snoRNAs to support biomass production in rapidly growing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the observation of snoRNA upregulation is data-supported (C33, C75), the proposed mechanism (C80, C81) is largely speculative and based on indirect evidence from other systems (C77, C78, C79). No direct measurements of Myc activity or binding to snoRNA promoters are provided in this study. The connection to cancer (C82) is correlative. This represents an interesting hypothesis requiring further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "0f5917c2-154c-462d-a63e-8bfda53dce96",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that FoxO's inhibitory effect on proliferation in Tsc1 mutant cells might be indirect, mediated through ER stress response pathways rather than direct regulation of proliferation genes. They suggest that heightened Hsc-70-3 and spliced-Xbp1 expression may reinforce proliferation through mechanisms involving PERK, GRP78, or IRE1\u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is primarily a speculative mechanistic interpretation (C93, C97, C98) based on the absence of known proliferation genes in the differential expression data and literature from other systems (C94, C95, C96). While the elevated ER stress markers are well-documented, the direct link to proliferation enhancement is not experimentally demonstrated in this study. This represents a hypothesis requiring further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "94de2f1d-8278-401e-86e8-163e7fafb613",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose a model where foxo suppression represses ERAD pathway activation, which combined with augmented protein synthesis in Tsc1 mutant cells creates a high ER stress state that is beneficial for proliferation and confers growth advantage. They suggest this could be exploited therapeutically in tumors with high mTORC1 activity and FoxO loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This model (C106, C107, C108) integrates the experimental findings but involves significant speculation about the adaptive benefit of high ER stress (C108). The therapeutic proposal (C109) is highly speculative. The consideration of alternative ERAD mechanisms (C90) shows appropriate scientific caution but remains unresolved. While the model is consistent with the data, key aspects require further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "c049c966-a795-4da4-bf0d-a27581954f74",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors provide background on the PI3K/Akt/mTORC1 signaling network, its role in cancer, and the context-dependent function of FoxO. They establish that Tsc1 loss leads to enhanced overgrowth under nutrient restriction, which is suppressed by FoxO, and justify the need for cell-type-specific analysis using laser capture microdissection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are well-supported by appropriate citations to established literature (C7-C16) and the authors' prior work (C17-C22). The rationale for the methodological approach (C23-C26) is sound and properly justified. This provides appropriate context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    },
+    {
+      "id": "e02e376d-21f6-4e1a-84d6-77da1f91e011",
+      "content_id": "4a36f059-4541-402a-9b65-b6dd337cbad0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors provide comprehensive background on ER stress response pathways (ERAD, UPR), their interplay with PI3K/Akt/mTORC1 signaling, and their relevance to cancer biology and therapeutic strategies. They position their findings within this broader context of pathway crosstalk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These contextual claims are appropriately supported by citations to established literature. The discussion of pathway interactions (C83-C88) and therapeutic implications (C99-C104) provides important context for interpreting the findings. The identification of a new interaction node (C89) is a reasonable inference from the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:50:55.536765Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c8db000b-160c-40a6-b6ca-578079b68254",
+      "result_id": "720f8873-c925-4d8e-8d4d-1aba82c2df97"
+    },
+    {
+      "claim_id": "2168a9fc-c0df-4cb5-bb88-195187c7978a",
+      "result_id": "720f8873-c925-4d8e-8d4d-1aba82c2df97"
+    },
+    {
+      "claim_id": "a4f058dc-cf1a-4147-8c48-3875fd28ca63",
+      "result_id": "720f8873-c925-4d8e-8d4d-1aba82c2df97"
+    },
+    {
+      "claim_id": "f8410fd6-f87e-433f-b0d7-d5cc3cb41c78",
+      "result_id": "720f8873-c925-4d8e-8d4d-1aba82c2df97"
+    },
+    {
+      "claim_id": "26aa6239-f96e-4351-8a18-1c09108739f0",
+      "result_id": "720f8873-c925-4d8e-8d4d-1aba82c2df97"
+    },
+    {
+      "claim_id": "4e8d8113-4068-4388-8bc4-a82c7b7624e2",
+      "result_id": "720f8873-c925-4d8e-8d4d-1aba82c2df97"
+    },
+    {
+      "claim_id": "1bc28984-fcae-4ec0-ac3a-2f9f84420e09",
+      "result_id": "720f8873-c925-4d8e-8d4d-1aba82c2df97"
+    },
+    {
+      "claim_id": "e99210c4-c4f8-4804-a418-b8759535906a",
+      "result_id": "720f8873-c925-4d8e-8d4d-1aba82c2df97"
+    },
+    {
+      "claim_id": "7bb267f8-1ac5-408f-9ec1-838296f605f9",
+      "result_id": "720f8873-c925-4d8e-8d4d-1aba82c2df97"
+    },
+    {
+      "claim_id": "c40d6b21-58c4-4503-aced-ad69b7e34c0a",
+      "result_id": "720f8873-c925-4d8e-8d4d-1aba82c2df97"
+    },
+    {
+      "claim_id": "d03ea3d2-73bb-4a5f-9b7e-30183b319480",
+      "result_id": "720f8873-c925-4d8e-8d4d-1aba82c2df97"
+    },
+    {
+      "claim_id": "4617b131-c1ad-4738-bb4a-036828afff53",
+      "result_id": "720f8873-c925-4d8e-8d4d-1aba82c2df97"
+    },
+    {
+      "claim_id": "ee5182b6-b4e4-4aef-aee4-1ff7e0d4d833",
+      "result_id": "720f8873-c925-4d8e-8d4d-1aba82c2df97"
+    },
+    {
+      "claim_id": "3e3b91ed-4b9e-48d8-b6b7-39f171a747fb",
+      "result_id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0"
+    },
+    {
+      "claim_id": "0cb205d5-4cb7-440f-8eeb-eed29b1e9a8e",
+      "result_id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0"
+    },
+    {
+      "claim_id": "5b001360-be97-4a64-bae9-54ed343e7cc8",
+      "result_id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0"
+    },
+    {
+      "claim_id": "ef502b15-23be-4f54-822b-435d4c5669e3",
+      "result_id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0"
+    },
+    {
+      "claim_id": "34530fe6-4e2c-4a27-bfc6-76ac6146589a",
+      "result_id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0"
+    },
+    {
+      "claim_id": "7fc96dee-b072-49da-b2ee-1c46cc206a50",
+      "result_id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0"
+    },
+    {
+      "claim_id": "1f3ba07b-efb9-4fc1-8a3b-780a1ec1a45f",
+      "result_id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0"
+    },
+    {
+      "claim_id": "b98410e2-f81c-4e31-a2d8-c4ed0a7ff987",
+      "result_id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0"
+    },
+    {
+      "claim_id": "6d654b29-2559-4788-89bb-c89a26ba68bf",
+      "result_id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0"
+    },
+    {
+      "claim_id": "0765b6a1-13ca-4181-b211-e059c49d3615",
+      "result_id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0"
+    },
+    {
+      "claim_id": "0f91a9b0-d0bd-408b-9d8f-78521aec6ffb",
+      "result_id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0"
+    },
+    {
+      "claim_id": "2a82e652-21a3-44e6-8071-57572fefcfb0",
+      "result_id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0"
+    },
+    {
+      "claim_id": "3c10042c-31e0-47a0-9ad9-95e8c8f4db4b",
+      "result_id": "10d0fa5a-bba5-4a8c-b920-e986cc74e4e0"
+    },
+    {
+      "claim_id": "ae37a4e6-419a-4114-a68a-1ee4b5c879b5",
+      "result_id": "3f643153-4cae-4c7b-b904-1fc3b96a5507"
+    },
+    {
+      "claim_id": "141004ac-2cb2-458f-a596-1fddaab24e18",
+      "result_id": "3f643153-4cae-4c7b-b904-1fc3b96a5507"
+    },
+    {
+      "claim_id": "6221a934-cea2-4313-99df-360f987ec4f7",
+      "result_id": "3f643153-4cae-4c7b-b904-1fc3b96a5507"
+    },
+    {
+      "claim_id": "3dd665b1-ca8b-4ccd-989d-1a1ad6cb2e2a",
+      "result_id": "3f643153-4cae-4c7b-b904-1fc3b96a5507"
+    },
+    {
+      "claim_id": "0ad3f2d1-6268-4e5c-a98d-02af285bb090",
+      "result_id": "3f643153-4cae-4c7b-b904-1fc3b96a5507"
+    },
+    {
+      "claim_id": "9564f68f-8cb9-4c28-92d7-3da3184a84d1",
+      "result_id": "3f643153-4cae-4c7b-b904-1fc3b96a5507"
+    },
+    {
+      "claim_id": "a18d0af0-b4d7-4aaa-8e30-2bf5654d5298",
+      "result_id": "3f643153-4cae-4c7b-b904-1fc3b96a5507"
+    },
+    {
+      "claim_id": "46e09e9b-5422-4efa-9c0a-6567e1fed36a",
+      "result_id": "3f643153-4cae-4c7b-b904-1fc3b96a5507"
+    },
+    {
+      "claim_id": "984ee39e-2de9-4336-9619-0434db36688e",
+      "result_id": "3f643153-4cae-4c7b-b904-1fc3b96a5507"
+    },
+    {
+      "claim_id": "1d8e853f-3a48-4963-80a1-06374d0ca2bf",
+      "result_id": "5032d84d-b145-4f79-8d54-a5f4f8bde8ae"
+    },
+    {
+      "claim_id": "a45d6214-b96c-4f2f-8c23-d9817836189e",
+      "result_id": "5032d84d-b145-4f79-8d54-a5f4f8bde8ae"
+    },
+    {
+      "claim_id": "75b15796-3e53-4101-b64c-ab59669f11a8",
+      "result_id": "5032d84d-b145-4f79-8d54-a5f4f8bde8ae"
+    },
+    {
+      "claim_id": "b3f6c19f-1596-4e42-88f1-8140b9520c24",
+      "result_id": "5032d84d-b145-4f79-8d54-a5f4f8bde8ae"
+    },
+    {
+      "claim_id": "d013a644-1ae5-4812-954f-90238d923b18",
+      "result_id": "5032d84d-b145-4f79-8d54-a5f4f8bde8ae"
+    },
+    {
+      "claim_id": "7b498b53-e822-4b8c-b6b7-c60c00d04636",
+      "result_id": "5032d84d-b145-4f79-8d54-a5f4f8bde8ae"
+    },
+    {
+      "claim_id": "d822c806-3d83-4044-bcf9-82857c6d12ab",
+      "result_id": "5032d84d-b145-4f79-8d54-a5f4f8bde8ae"
+    },
+    {
+      "claim_id": "8d3ec005-3f91-4c9e-bbcd-0f164d2a8e5c",
+      "result_id": "5032d84d-b145-4f79-8d54-a5f4f8bde8ae"
+    },
+    {
+      "claim_id": "823d1e5f-4b4c-45d6-a453-32c00f6bea9c",
+      "result_id": "07aacaf3-dad6-4edb-ac29-903307bd332c"
+    },
+    {
+      "claim_id": "afbde64b-6c06-473d-8f37-070f99866995",
+      "result_id": "07aacaf3-dad6-4edb-ac29-903307bd332c"
+    },
+    {
+      "claim_id": "97f29286-e4e0-4247-b32d-e712bfb29dec",
+      "result_id": "07aacaf3-dad6-4edb-ac29-903307bd332c"
+    },
+    {
+      "claim_id": "d99c02a7-09ba-44e2-8987-b4159de44ce0",
+      "result_id": "07aacaf3-dad6-4edb-ac29-903307bd332c"
+    },
+    {
+      "claim_id": "c06c7809-d737-4091-aa81-fa923b7972a1",
+      "result_id": "07aacaf3-dad6-4edb-ac29-903307bd332c"
+    },
+    {
+      "claim_id": "f03add39-68e7-4b81-9a71-2f985f69e03f",
+      "result_id": "07aacaf3-dad6-4edb-ac29-903307bd332c"
+    },
+    {
+      "claim_id": "665e8fa9-db21-42dc-875d-86f448f8fc6b",
+      "result_id": "07aacaf3-dad6-4edb-ac29-903307bd332c"
+    },
+    {
+      "claim_id": "ccfb1f41-bd98-47e8-9fbb-c205582e3d9e",
+      "result_id": "07aacaf3-dad6-4edb-ac29-903307bd332c"
+    },
+    {
+      "claim_id": "7d70e180-dcae-42fc-8687-201652a0b9d7",
+      "result_id": "07aacaf3-dad6-4edb-ac29-903307bd332c"
+    },
+    {
+      "claim_id": "cb29d06c-ec65-44cc-8465-b73aab1de2ca",
+      "result_id": "07aacaf3-dad6-4edb-ac29-903307bd332c"
+    },
+    {
+      "claim_id": "380ace21-1b4a-49f6-a0bf-67fecfe2f7d2",
+      "result_id": "07aacaf3-dad6-4edb-ac29-903307bd332c"
+    },
+    {
+      "claim_id": "992c71a6-2144-44c2-a69d-a8f794382eff",
+      "result_id": "07aacaf3-dad6-4edb-ac29-903307bd332c"
+    },
+    {
+      "claim_id": "386ef54c-9b50-4417-bbad-e7e9a9aaf17d",
+      "result_id": "870e620c-1bb0-4d7e-a5e7-170551de6b3b"
+    },
+    {
+      "claim_id": "53e01c02-561c-4900-be90-c6b99c9d76ad",
+      "result_id": "870e620c-1bb0-4d7e-a5e7-170551de6b3b"
+    },
+    {
+      "claim_id": "6e98dbf2-8c36-452c-8618-ef2aff299a2a",
+      "result_id": "870e620c-1bb0-4d7e-a5e7-170551de6b3b"
+    },
+    {
+      "claim_id": "de1716ea-a05a-4d6d-8942-7d6a768e8e62",
+      "result_id": "870e620c-1bb0-4d7e-a5e7-170551de6b3b"
+    },
+    {
+      "claim_id": "285b47d1-8108-4dfa-befd-3aa3a8ba898e",
+      "result_id": "870e620c-1bb0-4d7e-a5e7-170551de6b3b"
+    },
+    {
+      "claim_id": "6ba6bf04-0a75-4098-bcd8-9a265a0158ac",
+      "result_id": "870e620c-1bb0-4d7e-a5e7-170551de6b3b"
+    },
+    {
+      "claim_id": "9ff442ca-3777-4001-b48f-af0466a8c37c",
+      "result_id": "870e620c-1bb0-4d7e-a5e7-170551de6b3b"
+    },
+    {
+      "claim_id": "075cc3a6-a43f-46ef-9d05-a20567b3850c",
+      "result_id": "870e620c-1bb0-4d7e-a5e7-170551de6b3b"
+    },
+    {
+      "claim_id": "9fcf62e6-de3e-480a-ad07-8107cbefcad8",
+      "result_id": "870e620c-1bb0-4d7e-a5e7-170551de6b3b"
+    },
+    {
+      "claim_id": "8f01be33-1a26-45e3-b1ac-351481cf1145",
+      "result_id": "0f5917c2-154c-462d-a63e-8bfda53dce96"
+    },
+    {
+      "claim_id": "77baaeb6-6342-4082-8ccd-601a579af989",
+      "result_id": "0f5917c2-154c-462d-a63e-8bfda53dce96"
+    },
+    {
+      "claim_id": "68442346-94e2-4dc2-97e4-6c57e6cda600",
+      "result_id": "0f5917c2-154c-462d-a63e-8bfda53dce96"
+    },
+    {
+      "claim_id": "6b942d24-a5d9-447e-841f-ab522f8d0858",
+      "result_id": "0f5917c2-154c-462d-a63e-8bfda53dce96"
+    },
+    {
+      "claim_id": "0b783b92-6b5b-4cbc-834d-02b0289e2067",
+      "result_id": "0f5917c2-154c-462d-a63e-8bfda53dce96"
+    },
+    {
+      "claim_id": "70bb5d66-498c-4d39-9c1d-5efa051064df",
+      "result_id": "0f5917c2-154c-462d-a63e-8bfda53dce96"
+    },
+    {
+      "claim_id": "b5a27551-7d24-472c-bf6b-f0182b58354c",
+      "result_id": "0f5917c2-154c-462d-a63e-8bfda53dce96"
+    },
+    {
+      "claim_id": "77fe244e-da09-4d19-b155-bb79a1e14df1",
+      "result_id": "94de2f1d-8278-401e-86e8-163e7fafb613"
+    },
+    {
+      "claim_id": "43bce497-c0bf-4599-9292-8b0f3aadd9d1",
+      "result_id": "94de2f1d-8278-401e-86e8-163e7fafb613"
+    },
+    {
+      "claim_id": "edd4158e-a586-430e-8492-ff730efbc0e7",
+      "result_id": "94de2f1d-8278-401e-86e8-163e7fafb613"
+    },
+    {
+      "claim_id": "a168d1cd-7d81-4409-b9ef-6f49c3be9445",
+      "result_id": "94de2f1d-8278-401e-86e8-163e7fafb613"
+    },
+    {
+      "claim_id": "02ac4740-796c-4bb5-b533-198caf44a11e",
+      "result_id": "94de2f1d-8278-401e-86e8-163e7fafb613"
+    },
+    {
+      "claim_id": "959d77b4-0135-4c55-8649-ce50edf6b0eb",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "2d3ddc7c-5c40-42f4-93f3-0753338c835f",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "89ca5c33-a46b-4efa-8092-09f34b6b163f",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "3d7b3b6c-7f65-4c61-a432-91607966880a",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "965a44ec-36e3-46a1-898d-524c543fb211",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "fda1f1d8-7ce2-4888-9c5f-03c663af3a4d",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "816d3e5f-ca55-4ffd-a1ee-e72586067997",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "036f0c52-7cbc-4016-9196-ae336cd7e360",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "e7e3c7ea-c05f-4497-8d14-7d7b683a0297",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "f1b90d53-2a51-43ac-a11e-32b4970374a3",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "ac99eccb-fcb9-494a-b2a2-b8042afd351a",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "5a0e904c-56da-46b6-9433-d98e88fe62d0",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "6bb95d77-c659-45bf-a0f7-fcb12779fbbb",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "3a1a61dd-09bb-4e1c-beea-1dd3bc7add21",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "4edb6edd-5fd7-46d0-8f38-8c796cd381c8",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "6e05ed97-4803-4380-a3f8-3b8060aa3eb9",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "5577e023-690f-4de3-8b97-932ba40d5340",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "48e7f394-9ae4-4d50-ab2f-c1aa498ca31e",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "96ca76c5-3b67-4c3a-9fdb-aecfd240af03",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "89f44f96-d3b6-4c1e-a192-bc10de0b8f1d",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "42012fa9-4487-4192-a450-c23601ff6800",
+      "result_id": "c049c966-a795-4da4-bf0d-a27581954f74"
+    },
+    {
+      "claim_id": "4fe5373d-7933-414b-975b-aff4e822e128",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "adbd2502-874d-4b5c-bee5-d8e956df9b1c",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "16602a0d-d1c3-4f21-bc16-c775bf72baf4",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "3510fec5-9f12-437a-893c-866b7988f0f2",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "57d1dcbe-2d53-44d5-aac4-c73fa17acf2c",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "01fd13fd-d927-4e85-857b-e1f188e90898",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "aa43921b-cf0f-4ead-849f-4d589ddda3c1",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "76ec0f25-4144-4d65-ac97-d2a4dc07cb0d",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "b5b6c807-25c1-4fb4-a052-f0cc2f0fcf34",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "2c7a7d6e-2ad7-4f91-8db5-2acdae57fa4b",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "518b19fb-f9df-4294-aa1b-64acc6c06988",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "9154a77d-5ba0-4e89-99c3-690db15bfbe6",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "e5a22d2b-96e4-4653-9120-e97eb4c0e4ef",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "2970d6ca-a78a-49cd-8d5f-9023e4285734",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "e5dc5496-6f27-41c8-b233-5154e9078c97",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "df0e5c45-1d68-465c-b2ca-2e104c3318e6",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "9d511bc7-1a08-457b-8830-a5094a0945cd",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "6f478759-c09a-40ac-82c0-29dfe1c049b9",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "47c7c105-ab13-4466-bb5e-aeb89290ea8e",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "5350b480-7010-4602-875d-5d2b79609aa2",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    },
+    {
+      "claim_id": "d78befa0-7b92-4434-a862-913349ac7fc2",
+      "result_id": "e02e376d-21f6-4e1a-84d6-77da1f91e011"
+    }
+  ],
+  "comparisons": []
+}

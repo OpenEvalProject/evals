@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors determined the cryo-EM structure of KBP at 4.6 \u00c5 resolution using a Volta phase plate, revealing that KBP is a right-handed \u03b1-solenoid protein containing nine pairs of anti-parallel \u03b1-helices separated by a linker region into N-terminal and C-terminal subdomains, with four TPR motifs exclusively in the N-terminal subdomain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 are well-supported by cryo-EM data shown in Figure 1 and supplementary figures, with appropriate FSC validation at 0.143 cutoff. The structural features (\u03b1-solenoid architecture, TPR motifs, subdomain organization) are clearly demonstrated in the density maps and models. This represents a significant technical achievement for a ~72 kDa protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors determined the structure of the KBP-KIF15_MD6S complex at 6.9 \u00c5 resolution, showing that KIF15_MD6S sits in the concave face of KBP and that KBP undergoes conformational changes upon binding, particularly an unfurling motion of its N-terminal subdomain that relieves steric clashes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 are supported by cryo-EM data (Figure 2 and supplements) and structural comparisons. The use of KIF15_MD6S with cysteine substitutions is validated by comparable ATPase activity (C24). The conformational changes are demonstrated through superposition analysis and Video 1. The resolution is appropriate for the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "The authors provide evidence that KIF1A_MD also interacts with KBP on its concave face in the same way as KIF15_MD6S, suggesting a common mechanism of kinesin inhibition by KBP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C31 are based on 2D classification data that showed limited views and flexibility in the KIF1A_MD-KBP complex, preventing 3D reconstruction. While the 2D classes suggest similar binding mode, the evidence is weaker than for KIF15. The claim of a 'common mechanism' is reasonable but would benefit from higher resolution data or additional kinesin family members.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors show that KBP binds the kinesin motor domain via the tubulin-binding subdomain, inducing a radical conformational change where helix \u03b14 is displaced by ~15 \u00c5 into the KBP concave face, accompanied by rearrangements of flanking loops. This binding mode sterically blocks microtubule attachment due to extensive overlap between KBP and MT-binding surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C42 are well-supported by structural data from both the KBP-KIF15_MD6S complex and the KIF15_MD6S-MT structure (Figure 3 and supplements). The displacement of helix \u03b14 is clearly visible in the density, and the steric clash with MTs is demonstrated through structural superposition. The comparison to other TPR-containing \u03b1-solenoids (C38) provides appropriate context. This is the key mechanistic insight of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors identify the KBP-kinesin interface through structural analysis, showing contacts via \u03b1-solenoid edge loops (L12, L14) and TPR-containing \u03b1-helices (\u03b1HP4a, \u03b1HP4b, \u03b1HP5a) at the concave face. Pull-down assays with KBP mutants validate that mutations in TPR helices and specific loops (L12, L14) reduce binding to both KIF15_MDC and KIF1A_MDC, while mutations in other loops (L1, L3, L5, L10, L16) have no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are supported by pull-down assay data (Figure 5\u2014figure supplement 2). The mutagenesis strategy is structure-guided and tests specific predictions. The results largely validate the structural interface, though the resolution (6.9 \u00c5) limits precise identification of all contacts. The L18 mutant showing enhanced binding (C53) is an interesting outlier that the authors acknowledge requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors use a peroxisome translocation assay to show that mutations in TPR helices (\u03b1HP4a, \u03b1HP4b, \u03b1HP5a) and edge loops (L12, L14, L10, L16) disrupt KBP inhibition of kinesin-mediated transport in cells. The translocation assay is more sensitive to perturbation than pull-down assays, and the results support that KBP interacts with different kinesin family members via an extended interface at the concave face.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 are supported by cellular translocation assay data (Figure 5d-g). The assay provides functional validation of the structural interface in a cellular context. The observation that translocation is more readily disrupted than binding (C60) is interesting and appropriately discussed. Some mutations (L10, L16) affect translocation but not pull-down (C57), suggesting additional complexity in the functional interaction. The overall conclusion (C61) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors identify sequence conservation patterns in the tubulin-binding subdomain (K\u03b25-KL8 and KL11-K\u03b14-KL12-K\u03b15-KL13 regions) that distinguish KBP-binding from non-binding kinesins, including a conserved five-residue length for KL8. They propose a model where KBP selects and inhibits target kinesins through binding and remodeling a compatible tubulin-binding subdomain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are supported by sequence analysis (Figure 6a) and structural data. The identification of consensus motifs in KBP-binding kinesins is convincing, and the structural rationale for KL8 length sensitivity (C65) is well-explained. The proposed model (C67) is a reasonable synthesis of the structural and sequence data, though it remains somewhat speculative as it hasn't been tested with additional kinesin family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors discuss that KBP undergoes subtle N-terminal domain remodeling to accommodate kinesin binding, while the kinesin motor domain undergoes radical conformational change with helix \u03b14 displacement. This expands the interaction surface and likely defines KBP's selectivity for specific kinesin motors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 synthesize the structural findings and place them in context of TPR-containing protein flexibility (C70, citing Pernigo et al., 2018) and kinesin motor domain malleability (C72, citing prior work). The interpretation that the expanded surface area contributes to selectivity (C73-C74) is reasonable but somewhat speculative. These are appropriate discussion points that integrate the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors propose that KBP binding not only sterically blocks MT attachment but also distorts the kinesin catalytic site by displacing helix \u03b14 and preventing MT-mediated ordering of KL9 and KL11, which could be important for cellular energy economy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by structural data showing the displacement of helix \u03b14 and its relationship to the nucleotide-binding site. The inference about catalytic site distortion (C77) is reasonable based on the structure. The speculation about energy economy (C78) is appropriately presented as a possibility rather than a demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors discuss that KBP's specificity is defined by interactions with the kinesin L11-K\u03b14-KL12-K\u03b15-KL13 and K\u03b25-KL8 regions, drawing parallels to how kinesin light chains use TPR-containing \u03b1-solenoids for cargo selection. They suggest this work provides avenues to disrupt KBP-kinesin interactions for future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 summarizes the structural basis for specificity, which is supported by the data. The comparison to kinesin light chains (C83-C84) is appropriate and well-cited. The suggestions about future disruption strategies (C85-C86) are reasonable speculation based on the structural insights, appropriately presented as future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors discuss future directions including understanding how KBP interacts with kinesins in different conformational states (autoinhibited vs. active dimers), elucidating regulatory mechanisms (phosphorylation, acetylation, degradation), and expanding understanding of KBP's biological roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 appropriately cite prior work and acknowledge gaps in knowledge (C91). These are reasonable future directions based on the current findings. Claim C94 appropriately positions the work as a mechanistic platform for future studies. These discussion points are well-supported by citations and logical extensions of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors provide background on kinesins as MT-based molecular motors categorized into 14 sub-classes with 45 genes in humans/mice, whose dysfunction is implicated in pathological conditions, and whose motor domains convert ATP energy into mechanical force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are standard background information well-supported by appropriate citations to established literature. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors provide background on KBP, including that it sequesters and inhibits a subset of kinesins (kinesin-2s, -3s, -8s, -12s), is expressed in multiple tissues, is mutated in Goldberg-Shprintzen syndrome, has been implicated in neuroblastoma prognosis, and regulates diverse cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 are background information well-supported by appropriate citations to prior work. These establish the biological importance of KBP and motivate the structural study, but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors note that KBP is a 72 kDa protein predicted to contain TPR repeats and be mainly \u03b1-helical, but that its structure and mechanism were previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 cite prior predictions about KBP structure (Wozniak et al., 2005; Kevenaar et al., 2016) and set up the knowledge gap that this study addresses. These are appropriate background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The authors note that at the time of writing, only a few macromolecular complexes <80 kDa had been determined using cryo-EM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by appropriate citations and contextualizes the technical achievement of determining the KBP structure. This is a minor contextual point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors provide background on TPR-containing \u03b1-solenoids, noting that their concave faces serve as recognition platforms for peptide motifs, with specificity determined by the concave face shape and amino acid arrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are well-supported by appropriate citations and provide necessary background for interpreting the KBP structure. These are standard background claims that contextualize the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The authors speculate that KBP's selective inhibitory mechanism may fulfill specific roles in the kinesin regulatory toolbox employed by cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is appropriate speculation based on the findings, presented as a possibility rather than a demonstrated fact. This is a reasonable concluding statement about the potential biological significance.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,506 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C31",
+      "C35",
+      "C38",
+      "C121",
+      "C122"
+    ],
+    "result": "NetPyNE is a comprehensive tool that provides both programmatic and graphical interfaces for developing data-driven multiscale network models in NEURON, with features including high-level standardized specifications, parallel simulation, automated analysis, parameter optimization, and standardized format support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C18-C27, C29, C31, C35, C38, C121-C122 collectively describe NetPyNE's core architecture and capabilities. These are consistently stated throughout the manuscript with supporting figures (Figures 1-2) showing the workflow and specification format. The claims are mutually reinforcing and represent the fundamental design of the tool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C70",
+      "C71",
+      "C73",
+      "C75",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "NetPyNE's workflow consists of four main stages (high-level specification, network instantiation, simulation, and analysis/saving), implemented as a Python package with standardized data structures that provide consistent access to all network components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45, C70-C71, C73, C75, C161-C163 describe the workflow and implementation architecture. These are directly supported by Figure 1 (workflow diagram) and Figure 4 (data structure diagram), with consistent descriptions in both the Results and Methods sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "NetPyNE provides flexible, rule-based connectivity specifications that allow users to define complex connectivity patterns including cell selection criteria, synaptic mechanisms, connectivity functions, and parameter dependencies on pre- and post-synaptic properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C55-C63 describe connectivity features that are demonstrated in Figure 2A (code examples) and Figure 5 (connectivity visualizations). The flexibility and rule-based nature are consistently described and illustrated throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C128"
+    ],
+    "result": "NetPyNE supports NEURON's reaction-diffusion (RxD) module, enabling coupling of molecular-level chemophysiology to electrophysiology at subcellular, cellular, and network scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54, C128 describe RxD support with citations to relevant literature (McDougal et al., 2013; Newton et al., 2018). Figure 2A-v shows example RxD specifications. The manuscript describes a demonstration model linking IP3 to network activity, though detailed validation data for this specific example are not provided in the main figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C129",
+      "C130",
+      "C34"
+    ],
+    "result": "NetPyNE uniquely facilitates specification of subcellular synaptic distribution patterns along dendrites via high-level declarations, allowing direct incorporation of experimentally-derived synaptic density maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66, C129-C130, C34 describe subcellular connectivity features. Figure 3 provides strong visual evidence showing experimental data (A), automatic calculation for different morphologies (B), and resulting density plots (C). Citations support the experimental basis (Petreanu et al., 2009; Suter and Shepherd, 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "NetPyNE automates parallel simulation in NEURON, handling cell distribution, random number generation for reproducibility, and data gathering, with demonstrated scaling performance up to 100,000 cells and 512 compute nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C89, C164-C166 describe parallelization features and performance. C87 cites previous performance analyses (Lytton et al., 2016). C88-C89 provide specific performance metrics for large-scale models. The technical implementation details (Random123 RNG, ParallelContext) are clearly described with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "NetPyNE includes built-in visualization and analysis functions, including the ability to record and analyze local field potentials (LFPs) at arbitrary 3D locations using the line source approximation method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 describe analysis features. Figure 5 shows multiple visualization types. Figure 6 specifically demonstrates LFP recording capabilities with both single-cell and network examples. The LFP calculation method is described with appropriate citations (Parasuram et al., 2016; Buzs\u00e1ki et al., 2012).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "NetPyNE supports multiple standard file formats (pickle, JSON, MAT, HDF5) and enables import/export of models in standardized formats (NeuroML, SONATA), facilitating interoperability with other simulation tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100, C167-C170 describe data exchange capabilities. C170 states validation was performed by comparing simulation outputs, though specific validation results are not shown. The interoperability claims are supported by citations to other tools and mention of validation tests on GitHub.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C171"
+    ],
+    "result": "NetPyNE provides an integrated parameter optimization framework covering molecular to network scales, supporting grid search and evolutionary algorithms, with automated batch simulation capabilities across multiple computing environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C111, C143-C149, C171 describe optimization features. The framework is described as 'specifically tailored to multiscale biophysically-detailed models' (C109, C147) and integrating with the simulator (C148). Implementation details (inspyred package, C171) and execution environments (C111) are specified. However, no performance benchmarks or validation examples for the optimization framework are provided in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "NetPyNE provides a graphical user interface (GUI) built on Geppetto that enables intuitive access to all functionality with bidirectional synchronization between GUI and Python code, making the tool accessible to users with varying programming expertise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116, C172-C174 describe the GUI. Figure 2B shows the GUI interface. Figures 7-8 show the GUI in use with complex models. Technical implementation details are provided (Geppetto platform, JavaScript/React/HTML5, Jupyter Notebook extension) with citation (Cantarelli et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "A primary motor cortex (M1) model with over 10,000 biophysically detailed neurons and 30 million synapses, derived from published experimental data, yielded insights into circuit information pathways, oscillatory coding mechanisms, and HCN channel modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 describe the M1 model application. Multiple citations support the experimental data sources (C118) and results (C119: Dura-Bernal et al., 2018). Figure 8 shows the model visualization and analysis outputs. This represents a concrete demonstration of NetPyNE's capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "Several models published in other languages have been converted to NetPyNE, with the NetPyNE implementations requiring substantially fewer lines of code than the original implementations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 is supported by Table 1, which shows quantitative comparisons of code length for six different models. Figure 9 shows outputs from four converted models. The code reduction ranges from approximately 2-4 fold across different models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C40",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "NetPyNE has been adopted by over 50 researchers in 24 labs for education and research across multiple brain regions and applications, with comprehensive documentation, open-source code, and ongoing community support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39-C40, C150-C157 describe adoption and usage. Specific numbers are provided (50 researchers, 24 labs, 50 mailing list subscribers, 150 forum posts, 5000+ views). Multiple brain regions (C156) and applications (C157) are listed with citations. The claims are consistent across abstract and discussion sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Biophysically detailed multiscale modeling provides a promising approach for integrating experimental data across scales, which is essential for understanding how neural system components interact to yield function and behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 establish the scientific rationale for multiscale modeling. These are supported by citations to the BRAIN Initiative report (C6: Bargmann et al., 2014) and relevant literature (C11: Markram et al., 2015; Skinner, 2012; MindScope et al., 2016). These represent established knowledge in the field rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "NEURON is the leading simulator for multiscale neuronal modeling with extensive model availability, but building large-scale networks and running parallel simulations is technically challenging, and lack of standardization hinders reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 describe the state of NEURON and motivation for NetPyNE. C12-C14 are supported by citations (Tikidji-Hamburyan et al., 2017; McDougal et al., 2017). C15-C16 cite relevant literature (Lytton et al., 2016; Mulugeta et al., 2018; McDougal et al., 2016). These establish context rather than present novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "NetPyNE is unique among NEURON network modeling tools in supporting the Reaction-Diffusion (RxD) module and providing an easy declarative format for complex synaptic distribution rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 compare NetPyNE to other tools (neuroConstruct, PyNN, Topographica, ARACHNE, BioNet) with appropriate citations. The uniqueness claims regarding RxD support (C33) and synaptic distribution (C34, grouped elsewhere) are stated explicitly. However, no systematic feature comparison table is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "NetPyNE streamlines the modeling workflow, accelerating iteration between modeling and experiment, and makes multiscale modeling accessible to a wide range of users by reducing programming challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 describe benefits of NetPyNE. These are logical inferences from the tool's features (automation, GUI, standardization) rather than empirically measured outcomes. No quantitative metrics of workflow acceleration or accessibility improvements are provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "NetPyNE supports various artificial stimulation sources to reproduce afferent inputs, including current clamps, random generators, and experimentally recorded patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 describe stimulation features. C67 establishes the rationale (common practice in modeling). C68-C69 list supported stimulation types. These are straightforward feature descriptions without requiring extensive validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Inspecting traditional NEURON models requires calling multiple NEURON functions, making model inspection cumbersome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 describes a limitation of traditional NEURON modeling, providing context for NetPyNE's standardized data structure (C73). This is stated as general knowledge about NEURON rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "NetPyNE includes the option to recreate single-cell activity using spike inputs previously recorded from a network run.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 describes a specific feature for post-hoc single-cell analysis. The rationale is provided (memory/disk constraints in large simulations). This is a straightforward feature description without requiring extensive validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "NetPyNE's multiscale approach enables evaluation of neural dynamics from multiple scale perspectives, allowing understanding of scale integration in ways not possible experimentally, and can exceed physical experiments in building comprehension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 describe conceptual benefits of multiscale modeling. C125 and C127 include citations supporting these general principles. These are philosophical/conceptual claims about the value of modeling rather than empirical findings about NetPyNE specifically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "NetPyNE's declarative language provides advantages over procedural descriptions including human-readability, order-free organization, and reduced coding errors, though with some trade-offs in initial flexibility that can be addressed by adding custom code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C137 discuss advantages and trade-offs of the declarative approach. These are logical arguments about language design rather than empirically validated claims. C137 notes that users can add procedural code when needed, addressing the flexibility limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Developers of multiple tools are working together on interoperability, including collaboration on high-level specifications, formation of an INCF Special Interest Group, and ongoing work to support additional standardized formats (NSDF, SBML).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 describe ongoing collaborative efforts and future work. C141-C142 explicitly state work is 'in progress' or 'currently adding support.' These describe intentions and ongoing efforts rather than completed achievements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Tools like NetPyNE are particularly important for understanding brain disorders, and may benefit development of biomarkers, treatments, and personalized medicine by linking scales from molecular to behavioral.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C160 discuss potential applications to brain disorders. C158 includes citations (Lytton, 2008; Lytton et al., 2017). C159 uses 'may benefit,' indicating speculation about future applications. These are aspirational claims about potential impact rather than demonstrated outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "NetPyNE's standardized language features promise to increase reproducibility of simulation results and reuse of models across research groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C28 uses 'promise to increase,' indicating an expected future benefit rather than a demonstrated outcome. While the features that could support reproducibility are described (standardization, declarative format), no empirical evidence of improved reproducibility or increased model reuse is provided. This is a reasonable expectation but remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "NetPyNE users avoid complex low-level coding, preventing implementation errors, inefficiencies and flawed results that are common during development of complex multiscale models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C30 asserts that NetPyNE prevents errors and flawed results. While the tool does abstract away low-level coding (supported by other claims), no empirical evidence is provided comparing error rates or result quality between NetPyNE and traditional approaches. This is a logical inference but lacks validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "The flexibility of NetPyNE's declarative rule-based method allows the heterogeneity of cell populations observed experimentally to be captured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C48 states that the method 'allows' capturing heterogeneity. While the flexibility is demonstrated through various features, no specific examples are provided showing how experimental heterogeneity is captured and validated against experimental data. This is a capability claim without demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "NetPyNE permits instantiation of biological correlations such as dependence of connection delay on distance or fall-off in connection probability with distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 describes capabilities for implementing biological correlations. While the underlying features (parameter functions, C61) are described, no specific examples or validation of these biological correlations are provided in the figures or text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The ability to record and analyze LFPs facilitates reproducing experimental datasets that include this commonly used measure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 states that LFP recording 'facilitates reproducing experimental datasets.' While the LFP recording capability is demonstrated (Figure 6), no specific examples of reproducing experimental LFP datasets are provided. This is a logical benefit but lacks empirical demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The use of common file formats allows network structure and simulation results to be easily analyzed using other tools such as MATLAB or Python Pandas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 states that common formats 'allow' analysis in other tools. While the supported formats (C95) are listed, no examples of actual analysis workflows using MATLAB or Pandas are provided. This is a reasonable capability claim but lacks demonstration.",
+    "result_type": "MINOR"
+  }
+]

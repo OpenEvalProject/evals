@@ -1,0 +1,1677 @@
+{
+  "submission": {
+    "id": "83b371c8-37b3-43df-a1eb-7b6800d15e1a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:53:49.564604Z",
+    "updated_at": "2025-12-02T16:53:49.564604Z"
+  },
+  "content": [
+    {
+      "id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "submission_id": "83b371c8-37b3-43df-a1eb-7b6800d15e1a",
+      "content_type": "manuscript",
+      "content_text": "# Quantification of the pace of biological aging in humans through a blood test, the DunedinPoAm DNA methylation algorithm\n\n## Authors\n\n- Daniel W Belsky<sup>1</sup> ([ORCID: 0000-0001-5463-2212](https://orcid.org/0000-0001-5463-2212)) \u2020\n- Avshalom Caspi<sup>3</sup>\n- Louise Arseneault<sup>3</sup>\n- Andrea Baccarelli<sup>7</sup>\n- David L Corcoran<sup>6</sup>\n- Xu Gao<sup>7</sup>\n- Eiliss Hannon<sup>8</sup>\n- Hona Lee Harrington<sup>4</sup>\n- Line JH Rasmussen<sup>4</sup> ([ORCID: 0000-0001-6613-2469](https://orcid.org/0000-0001-6613-2469))\n- Renate Houts<sup>4</sup>\n- Kim Huffman<sup>10</sup>\n- William E Kraus<sup>10</sup>\n- Dayoon Kwon<sup>2</sup>\n- Jonathan Mill<sup>8</sup>\n- Carl F Pieper<sup>11</sup>\n- Joseph A Prinz<sup>6</sup>\n- Richie Poulton<sup>13</sup>\n- Joel Schwartz<sup>14</sup>\n- Karen Sugden<sup>4</sup>\n- Pantel Vokonas<sup>15</sup>\n- Benjamin S Williams<sup>4</sup>\n- Terrie E Moffitt<sup>3</sup>\n\n### Affiliations\n\n1. Department of Epidemiology, Columbia University Mailman School of Public Health New York United States\n2. Butler Columbia Aging Center, Columbia University Mailman School of Public Health New York United States\n3. Social, Genetic, and Developmental Psychiatry Centre, Institute of Psychiatry, King\u2019s College London London United Kingdom\n4. Department of Psychology and Neuroscience, Duke University Durham United States\n5. Department of Psychiatry and Behavioral Sciences, Duke University School of Medicine Durham United States\n6. Center for Genomic and Computational Biology, Duke University Durham United States\n7. Laboratory of Precision Environmental Health, Mailman School of Public Health, Columbia University New York United States\n8. University of Exeter Medical School, College of Medicine and Health Exeter United Kingdom\n9. Clinical Research Centre, Copenhagen University Hospital Amager and Hvidovre Hvidovre Denmark\n10. Duke Molecular Physiology Institute, Duke University Durham United States\n11. Duke University Center for the Study of Aging, Duke University Durham United States\n12. Department of Biostatistics, Duke University School of Medicine Durham United States\n13. Department of Psychology and Dunedin Multidisciplinary Health and Development Research Unit, University of Otago Otago New Zealand\n14. Department of Environmental Health Sciences, Harvard TH Chan School of Public Health Boston United States\n15. Veterans Affairs Normative Aging Study, Veterans Affairs Boston Healthcare System, Department of Medicine, Boston University School of Medicine Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBiological aging is the gradual, progressive decline in system integrity that occurs with advancing chronological age, causing morbidity and disability. Measurements of the pace of aging are needed as surrogate endpoints in trials of therapies designed to prevent disease by slowing biological aging. We report a blood-DNA-methylation measure that is sensitive to variation in pace of biological aging among individuals born the same year. We first modeled change-over-time in 18 biomarkers tracking organ-system integrity across 12 years of follow-up in n = 954 members of the Dunedin Study born in 1972\u20131973. Rates of change in each biomarker over ages 26\u201338 years were composited to form a measure of aging-related decline, termed Pace-of-Aging. Elastic-net regression was used to develop a DNA-methylation predictor of Pace-of-Aging, called DunedinPoAm for Dunedin(P)ace(o)f(A)ging(m)ethylation. Validation analysis in cohort studies and the CALERIE trial provide proof-of-principle for DunedinPoAm as a single-time-point measure of a person\u2019s pace of biological aging.\n\n## Introduction\n\nAging of the global population is producing forecasts of rising burden of disease and disability (Harper, 2014). Because this burden arises from multiple age-related diseases, treatments for single diseases will not address the burden challenge (Goldman et al., 2013). Geroscience research suggests an appealing alternative: treatments to slow aging itself could prevent or delay the multiple diseases that increase with advancing age, perhaps with a single therapeutic approach (Gladyshev, 2016; Kaeberlein, 2013). Aging can be understood as a gradual and progressive deterioration in biological system integrity (Kirkwood, 2005). This deterioration is thought to arise from an accumulation of cellular-level changes. These changes, in turn, increase vulnerability to diseases affecting many different organ systems (Kennedy et al., 2014; L\u00f3pez-Ot\u00edn et al., 2013). Animal studies suggest treatments that slow the accumulation of cellular-level changes can extend healthy lifespan (Campisi et al., 2019; Kaeberlein et al., 2015). However, human trials of these treatments are challenging because humans live much longer than model animals, making it time-consuming and costly to follow up human trial participants to test treatment effects on healthy lifespan. This challenge will be exacerbated in trials that will give treatments to young or middle-aged adults, with the aim to prevent the decline in system integrity that antedates disease onset by years. Involving young and midlife adults in healthspan-extension trials has been approved for development by the National Advisory Council on Aging (2019 CTAP report to NACA). In midlife trials of treatments to slow aging, called geroprotectors (Moskalev et al., 2016), traditional endpoints such as disease diagnosis or death are too far in the future to serve as outcomes. Translation of geroprotector treatments to humans could be aided by measures that quantify the pace of deterioration in biological system integrity in human aging. Such measures could be used as surrogate endpoints for healthy lifespan extension (Justice et al., 2016; Justice et al., 2018; Moskalev et al., 2016), even with young-to-midlife adult trial participants. A useful measure should be non-invasive, inexpensive, reliable, and highly sensitive to biological change.\n\nRecent efforts to develop such measures have focused on blood DNA methylation as a biological substrate highly sensitive to changes in chronological age (Fahy et al., 2019; Horvath and Raj, 2018). Methylation-clock algorithms have been developed to identify methylation patterns that characterize individuals of different chronological ages. However, a limitation is that individuals born in different years have grown up under different historical conditions (Schaie, 1967). For example, people born 70 years ago experienced more exposure to childhood diseases, tobacco smoke, airborne lead, and less exposure to antibiotics and other medications, and lower quality nutrition, all of which leave signatures on DNA methylation (Bell et al., 2019). As a result, the clocks confound methylation patterns arising from early-life exposures to methylation-altering factors with methylation patterns related to biological aging during adulthood. An alternative approach is to study individuals who were all born the same year, and find methylation patterns that differentiate those who have been aging biologically faster or slower than their same-age peers. The current article reports four steps in our work toward developing a blood DNA methylation measure to represent individual variation in the pace of biological aging.\n\nIn Step 1, which we previously reported (Belsky et al., 2015), we collected a panel of 18 blood-chemistry and organ-system-function biomarkers at three successive waves of the Dunedin Study,\u00a0which\u00a0follows a 1972\u201373 population-representative one-year birth cohort (N\u00a0=\u00a01037). We used repeated-measures data collected when Study members were aged 26, 32, and 38 years old to quantify rates of biological change. We modelled the rate of change in each biomarker and calculated how each Study member\u2019s personal rate-of-change on that biomarker differed from the cohort norm. We then combined the 18 personal rates of change across the panel of biomarkers to compute a composite for each Study member that we called the Pace of Aging. Pace of Aging represents a personal rate of multi-organ-system decline over a dozen years. Pace of Aging was normally distributed, and showed marked variation among Study members who were all the same chronological age, confirming that individual differences in biological aging do emerge already by age 38, years before chronic disease onset.\n\nIn Step 2, which we previously reported, we validated the Pace of Aging against known criteria. As compared to other Study members who were the same chronological age but had slower Pace of Aging, Study members with faster Pace of Aging performed more poorly on tests of physical function; showed signs of cognitive decline on a panel of dementia-relevant neuropsychological tests from an early-life baseline; were rated as looking older based on facial photographs; and reported themselves to be in worse health (Belsky et al., 2015). Subsequently, we reported that faster Pace of Aging is associated with early-life factors important for aging: familial longevity, low childhood social class, and adverse childhood experiences (Belsky et al., 2017), and that faster Pace of Aging is associated with older scores on Brain Age, a machine-learning-derived measure of structural MRI differences characteristic of different age groups (Elliott et al., 2019). Notably, Pace of Aging was not well-correlated with published epigenetic age clocks, which were designed to measure how old a person is rather than how fast they are aging biologically (Belsky et al., 2018b).\n\nIn Step 3, which we report here, we distill the Pace of Aging into a measurement that can be obtained from a single blood sample. Here we focused on blood DNA methylation as an accessible molecular measurement that is sensitive to changes in physiology occurring in multiple organ systems (Birney et al., 2016; Bolund et al., 2017; Chambers et al., 2015; Chu et al., 2017; Hedman et al., 2017; Ma et al., 2019; Mill and Heijmans, 2013; Morris et al., 2017; Wahl et al., 2017). We used data about the Pace of Aging from age 26 to 38 years in the Dunedin Study along with whole-genome methylation data at age 38 years. Elastic-net regression was applied to derive an algorithm that captured DNA methylation patterns linked with variation among individuals in their Pace of Aging. The algorithm is hereafter termed \u2018DunedinPoAm\u2019.\n\nDunedinPoAm is qualitatively different from previously published DNA methylation measures of aging that were developed by comparing older individuals to younger ones. Those measures, often referred to as \u2018clocks,\u2019 are state measures. They estimate how much aging has occurred in an individual up to the point of measurement. DunedinPoAm is a rate measure. It is based on comparison of longitudinal change over time in 18 biomarkers of organ-system integrity among individuals who are all the same chronological age. DunedinPoAm estimates how fast aging is occurring during the years leading up to the time of measurement. Rather than a clock that records how much time has passed, DunedinPoAm is designed to function as a speedometer, recording how fast the subject is aging.\n\nIn Step 4, which we report here, we validated the DunedinPoAm in five ways. First, using the Dunedin Study, we tested if Study member\u2019s DunedinPoAm measured when they were aged 38 years could predict deficits in physical and cognitive functioning seven years later, when the cohort was aged 45 years. Second, we applied the DunedinPoAm algorithm to DNA methylation data from a second, cross-sectional, study of adults to evaluate patterning of DunedinPoAm by chronological age and sex and to test correlations of DunedinPoAm with self-reported health and proposed measures of biological age, including three epigenetic clocks. Third, we applied the DunedinPoAm algorithm to DNA methylation data from a third, longitudinal study of older men to test associations with chronic-disease morbidity and mortality. Fourth, we applied the DunedinPoAm algorithm to DNA methylation data from a fourth, longitudinal, study of young people to test if DunedinPoAm was accelerated by exposure to poverty and victimization, factors which are known to shorten healthy lifespan. Finally, to ascertain the potential usefulness of DunedinPoAm as a measure for trials of geroprotector treatments, we applied the algorithm to DNA methylation data from a randomized trial of caloric restriction, CALERIE (Ravussin et al., 2015). Earlier we reported from this trial that the intervention (two years of prescribed 25% caloric restriction) slowed the rate of biological aging as measured by a blood-chemistry biological-age composite measure (Belsky et al., 2018a). Here, using newly generated methylation data from blood drawn at the CALERIE baseline assessment, we tested if (a) DunedinPoAm from blood drawn before caloric restriction could predict the future rate of biological aging of participants during the two-year trial, and (b) if this prediction was disrupted in participants who underwent caloric restriction, but not among control participants.\n\nWe report promising results from this four-step research program, while appreciating that additional measurement development will be needed to support applied use of DunedinPoAm. A graphical illustration of our study design is presented in Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig1-v3.jpg)\n\n**Figure 1.:** DunedinPoAm is designed to quantify the rate of decline in system integrity experienced by an individual over the recent past; it functions like speedometer for the rate of aging. We developed DunedinPoAm from analysis of longitudinal change in 18 biomarkers of organ system integrity in the Dunedin Longitudinal Study birth cohort. Biomarkers were measured in 1998, 2004, and 2010, when all cohort members were aged 26, 32, and 38 years. We composited rates of change across the 18 biomarkers to produce a single measure of aging-related decline in system integrity, termed Pace of Aging. We then used elastic-net regression to develop a DNA-methylation predictor of Pace of Aging, called DunedinPoAm for Dunedin (P)ace (o)f (A)ging (m)ethylation. DNA methylation data for this analysis came from the age-38 assessment in 2010. We further evaluated the performance of DunedinPoAm using data from (a) the age-45 assessments of Dunedin Study members in 2018, (b) the Understanding Society Study, (c) the Normative Aging Study, (d) the E-risk Study, and (e) the CALERIE trial.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The figure shows a scatterplot and fitted regression slope for the association between DunedinPoAm trained in the full Dunedin sample and the Pace of Aging measure that was used as the criterion in the training analysis. The correlation of r\u00a0=\u00a00.56 is a within-training-sample estimate of association and therefore reflects the upper-bound of possible true association between DunedinPoAm and Pace of Aging. The figure shows data for the N\u00a0=\u00a0810 Dunedin Study members included in the training analysis.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The figure shows results from our Bootstrap crossfold validation analysis to evaluate mPoA within the Dunedin Study. Panel A (top left) shows the distribution of elastic-net regression Lambda values estimated across the 100 bootstrap training samples. Panel B (top right) shows the distribution of the number of probes selected by the elastic net regression to compose mPoA across the 100 bootstrap training samples. Panel C (bottom left) graphs two densities illustrating analysis of intercorrelations among the different mPoA algorithms estimated across the bootstrap repetitions. The first density (thin gray line, left side Y axis) shows the distribution of sample sizes for calculation of correlations between pairs of mPoA algorithms. There were 34 pairs of mPoA algorithms for which there were no overlapping samples (i.e. sample size\u00a0=\u00a00). The second density (thick blue line, right side Y axis) shows the distribution of pairwise correlations. Nearly all of the correlations were r\u00a0>\u00a00.95. Panel D (bottom right) shows the distribution of correlations between the mPoA values and Pace of Aging in 100 bootstrap test samples.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The figure shows a scatter plot of correlations of biomarker slopes with the original Pace of Aging measure (x-axis) and DunedinPoAm (y-axis). Plotted points are biomarker slopes. The table at left shows a key linking the numbers in the center of the points with biomarker names. The table also reports correlations with DunedinPoAm and Pace of Aging. Pace of Aging is calculated as the sum of slopes across the 18 biomarkers. Thus, the correlations plotted on the X-axis of the figure represent \u2018item-total\u2019 correlations, that\u00a0is the correlations of individual components of the Pace of Aging measure with the summary measure itself.\n\n## Results\n\n### Capturing Pace of Aging\u00a0in a single blood test\n\nWe derived the DunedinPoAm algorithm using data from Dunedin Study members for whom age-38 DNA methylation data were available (N\u00a0=\u00a0810). We applied elastic-net regression (Zou and Hastie, 2005) using Pace of Aging between ages 26 to 38 years as the criterion. We included all methylation probes that appear on both the Illumina 450 k and EPIC arrays as potential predictor variables. We selected this overlapping set of probes for our analysis to facilitate application of the derived algorithm by other research teams using either array. We fixed the alpha parameter to 0.5, following the approach reported by Horvath (2013). This analysis selected a set of 46 CpG sites (Supplementary file 1A). The 46-CpG elastic-net-derived DunedinPoAm algorithm, applied in the age-38 Dunedin DNA methylation data, was associated with the longitudinal 26\u201338 Pace of Aging measure (Pearson r\u00a0=\u00a00.56, Figure 1\u2014figure supplement 1). This is likely an overestimate of the true out-of-sample correlation because the analysis is based on the same data used to develop the DunedinPoAm algorithm; bootstrap-cross-validation analysis estimated the out-of-sample correlation to be r\u00a0=\u00a00.33 (Figure 1\u2014figure supplement 2).\n\n### DunedinPoAm in midlife predicted future functional limitations\n\n#### Physical functioning\n\nAs a primary criterion validity analysis of DunedinPoAm, we tested prospective associations of Dunedin Study members\u2019 age-38 DunedinPoAm values with their performance seven years later, when they were aged 45 years, on tests of balance, walking speed, chair stands, grip strength, motor coordination, and Study-member reports about physical limitations. Performance scores were reversed so that positive correlations indicated an association between faster DunedinPoAm (i.e. higher values) and worse physical performance. Study members with faster DunedinPoAm at age 38 performed more poorly at age 45 on all physical performance tests, with the exception of grip strength, and reported more functional limitations (standardized effect-sizes for tests of balance, walking speed, chair stands, and physical limitations r\u00a0=\u00a00.15\u20130.29, p<0.001 for all; grip strength r\u00a0=\u00a00.05, 95% CI [\u22120.02\u20130.12], p=0.162). Effect-sizes are graphed in the dark blue bars in Figure 2, Panel A.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig2-v3.jpg)\n\n**Figure 2.:** Panel A graphs effect-sizes for age-38 DunedinPoAm associations with age-45 measures of physical and cognitive functioning and subjective signs of aging in the Dunedin Study. Effect-sizes are standardized regression coefficients interpretable as Pearson r. Models included covariate adjustment for sex. Panel B graphs associations between DunedinPoAm and change in physical functioning between age 38 and age 45 (top\u00a0two rows), change in cognitive functioning between age 13 and age 45 (third\u00a0row), and incident fair/poor health and accelerated facial aging between ages 38 and 45 (bottom row). Graphs for changes in balance, grip-strength, physical limitations, cognition, and facial aging are binned scatterplots. Plotted points reflect average x- and y-coordinates for \u2018bins\u2019 of approximately ten Study members. Fitted slopes show the association estimated from the raw, un-binned data. The y-axis scale on graphs of balance, grip-strength, and physical limitations shows change scores (age 45 \u2013 age 38) scaled in terms of age-38 standard deviation units. The y-axis scale on the graph of cognitive change shows the difference in IQ score (age 45 \u2013 baseline). The graph of change in facial aging shows the change in z-score between measurement intervals (age 45 \u2013 age 38). Models included covariate adjustment for sex. The graph for self-rated health plots the predicted probability (fitted slope) and 95% confidence interval (shaded area) of incident fair/poor health at age 45. The effect-size reported on the graph is the incidence-rate ratio (IRR) associated with a 1-SD increase in DunedinPoAm estimated from Poisson regression. The model included covariate adjustment for sex.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Figure graphs effect-sizes for associations of age-38 DunedinPoAm and 12 year longitudinal Pace of Aging with measures of physical and cognitive functioning and subjective signs of aging measured at the Dunedin Study age-45 assessment.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The figure plots effect-sizes for DunedinPoAm and the epigenetic clocks proposed by Horvath, Hannum, and Levine for analysis of age-45 outcomes. Effect-sizes are standardized regression coefficients (interpretable as Pearson r). Effect-sizes are computed for \u2018epigenetic-age acceleration\u2019 values of the clocks (i.e. epigenetic ages residualized for chronological age). Error bars show 95% CIs. For all outcomes, effect-sizes are largest for DunedinPoAm.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The figure plots effect-sizes for DunedinPoAm and the epigenetic clocks proposed by Horvath, Hannum, and Levine for analysis of change scores computed for healthspan characteristics measured in parallel at the age-38 and \u221245 assessments and for change in cognitive functioning from adolescent baseline to age 45. Change scores were computed by differencing the values at the two time points (i.e. age-45 value \u2013 age-38 value). Effect-sizes are standardized regression coefficients (interpretable as Pearson r). Effect-sizes are computed for \u2018epigenetic-age acceleration\u2019 values of the clocks (i.e. epigenetic ages residualized for chronological age). Error bars show 95% CIs. For all outcomes except grip strength, effect-sizes are largest for DunedinPoAm.\n\n#### Physical decline\n\nFor balance, grip strength, motor coordination, and functional limitations, the Dunedin study administered the same assessments at the age-38 and age-45 assessments. We used these data to measure change in physical function across the 7 year interval. We computed change scores by subtracting the age-45 score from the age-38 score. Change scores for balance and physical limitations indicated worsening of physical functioning across the 7 year interval (in terms of age-38 standard-deviation units (SDs): balance declined by 0.26 SDs 95% CI [0.19\u20130.33], motor coordination declined by 0.16 [0.10\u20130.22] SDs, and physical limitations increased by 0.26 [0.18\u20130.33] SDs). In contrast, grip strength increased slightly (0.05 [0.00\u20130.11] SDs). Study members with faster age-38 DunedinPoAm experienced greater decline in balance at age 45 (r\u00a0=\u00a00.11 [0.04\u20130.19], p=0.008) and a greater increase in physical limitations (r\u00a0=\u00a00.10 [0.02\u20130.18], p=0.012). The association with change in motor coordination was consistent in direction, but was not statistically different from zero at the alpha\u00a0=\u00a00.05 threshold (r\u00a0=\u00a00.06 [\u22120.14\u20130.01], p=0.109). There was no association between DunedinPoAm and change in grip strength (r\u00a0=\u00a00.00 [\u22120.07\u20130.08], p=0.897). Effect-sizes are graphed in the top two\u00a0rows of Figure 2, Panel B.\n\n#### Cognitive functioning\n\nWe evaluated cognitive functioning from tests of perceptual reasoning, working memory, and processing speed, which are known to show aging related declines already by the fifth decade of life (Hartshorne and Germine, 2015; Park et al., 2002). Study members with faster age-38 DunedinPoAm performed more poorly on all age-45 cognitive tests (r\u00a0=\u00a00.14\u20130.28, p<0.001 for all). Effect-sizes are graphed in the light-blue bars of Figure 2, Panel A.\n\n#### Cognitive decline\n\nCognitive functioning in early life is a potent risk factor for chronic disease and dementia in later life and for accelerated aging in midlife (Belsky et al., 2017; Deary and Batty, 2006). Therefore, to evaluate whether associations between DunedinPoAm and cognitive test performance at age 45 might reflect reverse causation instead of early cognitive decline, we next conducted analysis of cognitive decline between adolescence and midlife. We evaluated cognitive decline by comparing Study-members\u2019 cognitive-test performance at age 45 to their cognitive-test performance three decades earlier when they were ages 7\u201313 years. Cognitive performance was measured from composite scores on the Wechsler Intelligence Scales (the Wechsler Adult Intelligence Scales Version IV at the age-45 assessment and the Wechsler Intelligence Scales for Children Version R at the earlier timepoints). On average, Study members showed a decline of 2.00 IQ points (95% CI [1.31\u20132.70]) across the follow-up interval. We conducted two analyses to test if participants with faster DunedinPoAm experienced more cognitive decline. First, we computed difference scores (age-45 IQ \u2013 childhood baseline IQ) and regressed these difference scores on DunedinPoAm. Second, we conducted analysis of residualized change by regressing age-45 IQ on DunedinPoAm and childhood IQ. Both analyses found that Study members with faster DunedinPoAm experienced more decline (difference-score r\u00a0=\u00a00.12, [0.05\u20130.19], p=0.001; residualized change r\u00a0=\u00a00.20 [0.13\u20130.27]). The DunedinPoAm association with cognitive decline is graphed in the third\u00a0row of Figure 2, Panel B.\n\n#### Subjective signs of aging\n\nWe evaluated subjective signs of aging from Study members\u2019 ratings of their current health status (excellent, very-good, good, fair, poor) and from ratings of perceived age made by undergraduate raters based on facial photographs. Study members with faster age-38 DunedinPoAm rated themselves to be in worse health at age 45 (r\u00a0=\u00a00.27, 95% CI [0.20\u20130.34]). These Study members were also rated as looking older (r\u00a0=\u00a00.35 [0.28\u20130.43]). Effect-sizes are graphed in the orange bars in Figure 2, Panel A.\n\n#### Subjective signs of decline with aging\n\nWe next analyzed change in subjective signs of aging. Across the 7 year follow-up interval, an increasing number of Study members rated themselves as being in fair or poor health (6% rated their health as fair or poor at age 38, as compared to 8% 7 years later at age 45). Those with faster age-38 DunedinPoAm were more likely to transition to the fair/poor categories (Incidence Rate Ratio (IRR)\u00a0=\u00a01.79 95% CI [1.48\u20132.18]). We tested if Study members with faster DunedinPoAm experienced more rapid facial aging by subtracting the age-45 score from the age-38\u00a0score and regressing this difference on DunedinPoAm. This analysis tested if Study members with faster DunedinPoAm experienced upward rank mobility within the cohort in terms of how old they looked. Study members with faster age-38 DunedinPoAm were rated as looking older relative to peers at age 45 than they had been at age 38 (r\u00a0=\u00a00.10 [0.03\u20130.18]). Effect-sizes are graphed in the bottom\u00a0row of Figure 2, Panel B.\n\n#### Comparing DunedinPoAm versus Pace of Aging\n\nWe compared DunedinPoAm effect-sizes to effect-sizes for the original, 18-biomarker 3-time-point Pace of Aging. Across the domains of physical function, cognitive function, and subjective signs of aging, DunedinPoAm effect-sizes were similar to and sometimes larger than effect-sizes for the original Pace of Aging measure (Supplementary file 1B, Figure 2\u2014figure supplement 1).\n\nCovariate adjustment to models for estimated cell counts (Houseman et al., 2012) did not change results. Covariate adjustment for smoking history at age 38 years modestly attenuated some effect-sizes and attenuated DunedinPoAm associations with cognitive decline to near zero. Results for all models are reported in Supplementary file 1C.\n\nIn comparison to DunedinPoAm, effect-sizes for associations with functional limitations were smaller for the Horvath, Hannum, and Levine epigenetic clocks and, in the cases of the Horvath and Hannum clocks, were not statistically different from zero at the alpha\u00a0=\u00a00.05 threshold for most outcomes. Effect-sizes are reported in Supplementary file 1C and plotted in Figure 2\u2014figure supplements 2 and 3.\n\n### Evaluating DunedinPoAm and other methylation clocks in the Understanding Society Study\n\nTo test variation in DunedinPoAm and to compare it with published methylation measures of biological aging, we conducted analysis using data on N\u00a0=\u00a01175 participants aged 28\u201395 years (M\u00a0=\u00a058, SD\u00a0=\u00a015; 42% male) in the UK Understanding Society Study. In this mixed-age sample, the mean DunedinPoAm was 1.03 years of biological aging per each calendar year (SD\u00a0=\u00a00.07).\n\nWe first tested if higher DunedinPoAm levels, which indicate faster aging, were correlated with older chronological age. Mortality rates increase with advancing chronological age, although there may be some slowing at the oldest ages (Barbi et al., 2018). This suggests the hypothesis that the rate of aging increases across much of the adult lifespan. Consistent with this hypothesis, Understanding Society participants who were of older chronological age tended to have faster DunedinPoAm (r\u00a0=\u00a00.11, [0.06\u20130.17], p<0.001; Figure 3 Panel A). We also compared DunedinPoAm with three methylation measures of biological age: the epigenetic clocks proposed by Horvath, Hannum, and Levine (Hannum et al., 2013; Horvath, 2013; Levine et al., 2018). These epigenetic clocks were highly correlated with chronological age in the Understanding Society sample (Horvath Clock r\u00a0=\u00a00.91, Hannum Clock r\u00a0=\u00a00.92, Levine Clock r\u00a0=\u00a00.88).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig3-v3.jpg)\n\n**Figure 3.:** Panel A shows a scatterplot and fitted slopes illustrating the association between chronological age (x-axis) and DunedinPoAm (y-axis) in women and men in the Understanding Society sample. Data for women are plotted with yellow dots (orange slope) and for men with blue crosses (navy slope). The figure illustrates a positive association between chronological age and DunedinPoAm (Pearson r\u00a0=\u00a00.11 95% CI [0.06\u20130.17]). Panel B shows a matrix of correlations\u00a0and\u00a0association plots among DunedinPoAm and age-acceleration residuals of the Horvath, Hannum, and Levine epigenetic clocks. The diagonal cells of the matrix list the DNA methylation measures. The half of the matrix below the diagonal shows scatter plots of associations. For each scatter-plot cell, the y-axis corresponds to the variable named along the matrix diagonal to the right of the plot and the x-axis corresponds to the variable named along the matrix diagonal above the plot. The half of the matrix above the diagonal lists Pearson correlations between the DNA methylation measures. For each correlation cell, the value reflects the correlation of the variables named along the matrix diagonal to the left of the cell and below the cell. Panel C graphs binned scatterplots of associations of DunedinPoAm and epigenetic clocks with KDM Biological Age advancement (the difference between KDM Biological Age and chronological age). Each plotted point shows average x- and y- coordinates for \u2018bins\u2019 of approximately 50 participants. Regression slopes are graphed from the raw, un-binned data. Panel D plots average values of the DNA methylation variables by Understanding Society participants\u2019 self-rated health status. Error bars show 95% confidence intervals.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Effect-sizes are standardized regression coefficients (interpretable as Pearson r). Effect-sizes are computed for \u2018epigenetic-age acceleration\u2019 values of the clocks (i.e. epigenetic ages residualized for chronological age). The dependent variable in analysis of KDM Biological Age was the difference between KDM Biological Age and chronological age. Self-rated health scores were reversed for analysis so that higher values correspond to ratings of poorer health. All models were adjusted for chronological age and sex.\n\nNext, to test if DunedinPoAm captured similar information about aging to published epigenetic clocks, we regressed each of the published clocks on chronological age and predicted residual values, following the procedure used by the developers of the clocks. These residuals are referred to in the literature as measures of \u2018epigenetic age acceleration.\u2019 None of the 46 CpGs included in the DunedinPoAm algorithm overlapped with CpGs in these epigenetic clocks. Nevertheless, DunedinPoAm was moderately correlated with epigenetic age acceleration measured from the clocks proposed by Hannum (r\u00a0=\u00a00.24) and Levine (r\u00a0=\u00a00.30). DunedinPoAm was less-well correlated with acceleration measured from the Horvath clock (r\u00a0=\u00a00.06). Associations among DunedinPoAm and the epigenetic clocks in the Understanding Society sample are shown in Figure 3 Panel B.\n\nFinally, we tested correlations of DunedinPoAm with (a) a measure of biological age derived from blood chemistry and blood pressure data, and (b) a measure of self-rated health. We computed biological age from Understanding Society blood chemistry and blood pressure data following the Klemera and Doubal method (KDM) (Klemera and Doubal, 2006) and the procedure described by Levine (2013). KDM Biological Age details are reported in the Materials\u00a0and\u00a0Methods. Participants with faster DunedinPoAm had more advanced KDM Biological Age (r\u00a0=\u00a00.20 95% CI [0.15\u20130.26], p<0.001;) and worse self-rated health (r\u00a0=\u00a0\u22120.22 [-0.28,\u20130.16], p<0.001;). Covariate adjustment to models for estimated cell counts (Houseman et al., 2012) and smoking status did not change results. Results for all models are reported in Supplementary file 1D.\n\nIn comparison to DunedinPoAm, effect-sizes for associations with self-rated health and KDM Biological Age were smaller for the epigenetic clocks and, in the cases of the Horvath and Hannum clocks, were not statistically different from zero at the alpha\u00a0=\u00a00.05 threshold (Figure 3 Panels C and D). Effect-sizes are reported in Supplementary file 1D and plotted in Figure 3\u2014figure supplement 1.\n\n### DunedinPoAm was associated with chronic disease morbidity and increased risk of mortality among older men in the Normative Aging Study (NAS)\n\nTo test if faster DunedinPoAm was associated with morbidity and mortality, we analyzed data from N\u00a0=\u00a0771 older men in the Veterans Health Administration Normative Aging Study (NAS; at baseline, mean chronological age\u00a0=\u00a077, SD\u00a0=\u00a07).\n\nWe first tested if higher DunedinPoAm levels, which indicate faster aging, were associated with increased risk of mortality. During follow-up from 1999 to 2013, 46% of NAS participants died over a mean follow-up of 7 years (SD\u00a0=\u00a07). Those with faster DunedinPoAm at baseline were at increased risk of death (Hazard Ratio (HR)\u00a0=\u00a01.29 [1.16\u20131.45], p<0.001; Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig4-v3.jpg)\n\n**Figure 4.:** The figure plots Kaplan-Meier curves for three groups of NAS participants: those with DunedinPoAm 1 SD or more below the mean (\u2018slow\u2019 DunedinPoAm, blue line); those with DunedinPoAm within 1 SD of the mean (\u2018average\u2019 DunedinPoAm, gray line); and those with DunedinPoAm 1 SD or more above the mean (\u2018fast\u2019 DunedinPoAm, red line). Censoring of participants prior to death is indicated with a vertical gray hash mark. The table below the figure details the number of participants at risk per 3 year interval and, in parentheses, the number who died during the interval. The number censored can be calculated by subtracting the number of deaths in an interval from the difference between the number at risk in that interval and the number at risk in the following interval.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Time-to-event analysis of mortality and chronic disease incidence was conducted using Cox proportional hazard models to estimate hazard ratios (HRs) in N\u00a0=\u00a0771 participants. Repeated-measures analysis of chronic disease prevalence was conducted using Poisson regression to estimate incidence rate ratios (IRRs) within a generalized estimating equations framework to account for the nonindependence of repeated observations of individuals (N\u00a0=\u00a01488 observations of 771 individuals). All models included covariate adjustment for chronological age. Age acceleration residuals for epigenetic clocks were calculated by regressing epigenetic age on chronological age and predicting residual values. All methylation measures were standardized to M\u00a0=\u00a00 SD\u00a0=\u00a01 for analysis. Effect-sizes thus reflect risk associated with a 1-SD increase in the methylation measure.\n\nWe next tested if NAS participants with faster DunedinPoAm experienced higher levels of chronic disease morbidity, measured as the count of diagnosed diseases (hypertension, type-2 diabetes, cardiovascular disease, chronic obstructive pulmonary disease, chronic kidney disease, and cancer). During follow-up across 4 assessments during 1999\u20132013 (n\u00a0=\u00a01448 observations of the N\u00a0=\u00a0771 participants), n\u00a0=\u00a0175 NAS participants were diagnosed with a new chronic disease. Those with faster baseline DunedinPoAm were at increased risk of new diagnosis (HR\u00a0=\u00a01.19 [1.03\u20131.38], p<0.019). In repeated-measures analysis of prevalent chronic disease, faster DunedinPoAm was associated with having a higher level of chronic disease morbidity (IRR\u00a0=\u00a01.15 [1.11\u20131.20], p<0.001).\n\nFinally, we utilized the repeated-measures data to test if NAS participants\u2019 DunedinPoAms increased as they aged. We tested within-person change in DunedinPoAm over time (n\u00a0=\u00a01253 observations of N\u00a0=\u00a0536 participants with 2\u20134 timepoints of DNA methylation data). Consistent with Understanding Society analysis showing faster DunedinPoAm in older as compared to younger adults, NAS participants\u2019 DunedinPoAm\u00a0values increased across repeated assessments. For every five years of follow-up, participants\u2019 DunedinPoAms increased by 0.012 (SE\u00a0=\u00a00.002, p<0.001) units, or about 0.2 standard deviations.\n\nCovariate adjustment to models for estimated cell counts (Houseman et al., 2012) and smoking status did not change results, with the exception that the effect-size for DunedinPoAm was attenuated below the alpha\u00a0=\u00a00.05 threshold of statistical significance in smoking-adjusted analysis of chronic disease incidence. Results for all models are reported in Supplementary file 1E.\n\nIn comparison to DunedinPoAm, effect-sizes for associations with mortality and chronic disease were smaller for the epigenetic clocks and were not statistically different from zero in many of the models (Supplementary file 1E and Figure 4\u2014figure supplement 1).\n\n### Childhood exposure to poverty and victimization were associated with faster DunedinPoAm in young adults in the E-Risk Study\n\nTo test if DunedinPoAm indicated faster aging in young people with histories of exposure thought to shorten healthy lifespan, we analyzed data from N\u00a0=\u00a01658 members of the E-Risk Longitudinal Study. The E-Risk Study follows a 1994\u201395 birth cohort of same-sex twins. Blood DNA methylation data were collected when participants were aged 18 years. We analyzed two exposures associated with shorter healthy lifespan, childhood low socioeconomic status and childhood victimization. Socioeconomic status was measured from data on parents\u2019 education, occupation, and income (Trzesniewski et al., 2006). Victimization was measured from exposure dossiers compiled from interviews with the children\u2019s mothers and home-visit assessments conducted when the children were aged 5, 7, 10, and 12 (Fisher et al., 2015). The dossiers recorded children\u2019s exposure to domestic violence, peer bullying, physical and sexual harm by an adult, and neglect. 72% of the analysis sample had no victimization exposure, 21% had one type of victimization exposure, 4% had two types of exposure, and 2% had three or more types of exposure.\n\nE-Risk adolescents who grew up in lower socioeconomic-status families exhibited faster DunedinPoAm (Cohen\u2019s d for comparison of low to moderate SES\u00a0=\u00a00.21 [0.06\u20130.35]; Cohen\u2019s d for comparison of low to high SES\u00a0=\u00a00.44 [0.31\u20130.56]; Pearson r\u00a0=\u00a00.19 [0.13\u20130.24]). In parallel, E-Risk adolescents with exposure to more types of victimization exhibited faster DunedinPoAm (Cohen\u2019s d for comparison of never victimized to one type of victimization\u00a0=\u00a00.28 [0.15\u20130.41]; Cohen\u2019s d for comparison of never victimized to two types of victimization\u00a0=\u00a00.48 [0.23\u20130.72]; Cohen\u2019s d for comparison of never victimized to three or more types of victimization\u00a0=\u00a00.53 [0.25\u20130.81]; Pearson r\u00a0=\u00a00.15 [0.10\u20130.20]). Covariate adjustment to models for estimated cell counts (Houseman et al., 2012) did not change results. Adjustment for smoking status attenuated effect-sizes by about half, but most associations remained statistically different from zero at the alpha\u00a0=\u00a00.05 level. Results for all models are reported in Supplementary file 1F. Differences in DunedinPoAm across strata of childhood socioeconomic status and victimization are graphed in Figure 5.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig5-v3.jpg)\n\n**Figure 5.:** Panel A (left side) plots means and 95% CIs for DunedinPoAm measured at age 18 among E-Risk participants who grew up low, middle, and high socioeconomic status households. Panel B (right side) plots means and 95% CIs for DunedinPoAm measured at age 18 among E-Risk participants who experienced 0, 1, 2, or three or more types of victimization through age 12 years.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Effect-sizes are standardized regression coefficients and 95% confidence intervals from models in which childhood family socioeconomic status (SES) and victimization were predictor variables and the dependent variables were the methylation measures. All E-Risk participants were the same chronological age (18 years) at the time of blood collection. Epigenetic clock measures were differenced from this chronological age prior to analysis. Effect-sizes are reported in terms of standard deviation differences in the methylation measures associated with a one standard deviation increase in the predictor measure. All models were adjusted for sex. Standard errors were clustered at the family level to account for non-independence of twin data.\n\nIn comparison to DunedinPoAm, effect-sizes for associations with childhood socioeconomic circumstances and victimization were smaller for the epigenetic clocks and, in the cases of the Horvath and Hannum clocks, were not statistically different from zero at the alpha\u00a0=\u00a00.05 threshold. Effect-sizes are reported in Supplementary file 1F and plotted in Figure 5\u2014figure supplement 1.\n\n### DunedinPoAm measured at baseline in the CALERIE randomized trial predicted future rate of aging measured from clinical-biomarker data\n\nThe CALERIE Trial is the first randomized trial of long-term caloric restriction in non-obese adult humans. CALERIE randomized N\u00a0=\u00a0220 adults on a 2:1 ratio to treatment of 25% caloric restriction (CR-treatment) or control ad-libitum (AL-control, as usual) diet for two years (Ravussin et al., 2015). We previously reported that CALERIE participants who were randomized to CR-treatment experienced a slower rate of biological aging as compared to participants in the AL-control arm based on longitudinal change analysis of clinical-biomarker data from the baseline, 12 month, and 24 month follow-up assessments (Belsky et al., 2018a). Among control participants, the rate of increase in biological age measured using the Klemera-Doubal method (KDM) Biological Age algorithm was 0.71 years of biological age per 12 month follow-up interval. (This slower-than-expected rate of aging could reflect differences between CALERIE Trial participants, who were selected for being in good health, and the nationally representative NHANES sample in which the KDM algorithm was developed [Belsky et al., 2018a].) In contrast, among treatment participants, the rate of increase was only 0.11 years of biological age per 12 month follow-up interval (difference b\u00a0=\u00a0\u22120.60 [-0.99,\u20130.21]). We subsequently generated DNA methylation data from blood DNA that was collected at the baseline assessment of the CALERIE trial for a sub-sample (N\u00a0=\u00a068 AL-control participants and 118 CR-treatment participants). We used these methylation data to calculate participants\u2019 DunedinPoAm values at study baseline. We then tested if baseline DunedinPoAm could predict participants\u2019 future rate of biological aging as they progressed through the trial.\n\nWe first replicated our original analysis within the methylation sub-sample. Results were the same as in the full sample (Supplementary file 1G). Next, we compared DunedinPoAm between CR-treatment and AL-control participants. As expected, there was no group difference at baseline (AL M\u00a0=\u00a01.00, SD\u00a0=\u00a00.05; CR M\u00a0=\u00a01.01, SD\u00a0=\u00a00.06, p-value for difference\u00a0=\u00a00.440). Finally, we tested if participants\u2019 baseline DunedinPoAm was associated with their rate of biological aging over the 24 months of follow-up, and if this association was modified by randomization to caloric restriction as compared to ad libitum diet. For AL-control participants, faster baseline DunedinPoAm predicted faster biological aging over the 24 month follow-up, although in this small group this association was not statistically significant at the alpha\u00a0=\u00a00.05 level (b\u00a0=\u00a00.22 [-0.05, 0.49], p=0.104). For CR-treatment participants, the association of baseline DunedinPoAm with future rate of aging was sharply reduced, (b\u00a0=\u00a0\u22120.08 [-0.24, 0.09], p=0.351), although the difference between the rate of aging in the AL-control and CR-treatment groups did not reach the alpha\u00a0=\u00a00.05 threshold for statistical significance (interaction-term testing difference in slopes b\u00a0=\u00a0\u22120.30 [-0.61, 0.01], p-value=0.060). Slopes of change in KDM Biological Age for participants in the AL-control and CR-treatment groups are plotted for fast baseline DunedinPoAm (1 SD above the mean) and slow baseline DunedinPoAm (1 SD below the mean) in Figure 6. CALERIE DNA methylation data are not yet available to test if the intervention altered post-treatment DunedinPoAm.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig6-v3.jpg)\n\n**Figure 6.:** Fast DunedinPoAm is defined as 1 SD above the sample mean. Slow DunedinPoAm is defined as 1 SD below the sample mean. Slopes are predicted values from mixed effects regression including a 3-way interaction between trial condition, time, and continuous DunedinPoAm at baseline. The figure shows that in the Ad Libitum (AL) arm of the trial, participants with fast DunedinPoAm at baseline experience substantially more change in KDM Biological Age from baseline to follow-up as compared to AL participants with slow DunedinPoAm. In contrast, there was little difference between participants with fast as compared to slow DunedinPoAm in the Caloric Restriction (CR) arm of the trial.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54870/elife-54870-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Effect-sizes are stratified marginal effects computed from regressions of predicted slopes of change in KDM Biological Age on treatment condition, baseline values of the methylation measures, and the interaction of treatment condition and the methylation measures. Effect-sizes for association of baseline DunedinPoAm with rate of change in KDM Biological Age over follow-up are plotted separately by treatment condition (AL for Ad Libitum control, plotted as solid-colored circles, CR for caloric restriction, plotted as hollow circles). Effect-sizes reflect the predicted increase in the rate of annual change in KDM Biological Age over the 2 years of follow-up associated with a 1 SD increase in the methylation measure. For example, for DunedinPoaM, a value of 0.2 for participants in the AL control condition indicates that having DunedinPoAm 1 SD higher at baseline is associated with an increase in the aging rate of 0.2 years of physiological change per 12 months of follow-up. Models included covariate adjustment for sex and chronological age at baseline.\n\n## Discussion\n\nBreakthrough discoveries in the new field of geroscience suggest opportunities to extend healthy lifespan through interventions that slow biological processes of aging (Campisi et al., 2019). To advance translation of these interventions, measures are needed that can detect changes in a person\u2019s rate of biological aging (Moffitt et al., 2017). We previously showed that the rate of biological aging can be measured by tracking change over time in multiple indicators of organ-system integrity (Belsky et al., 2015). Here, we report data illustrating the potential to streamline measurement of Pace of Aging to an exportable, inexpensive and non-invasive blood test, and thereby ease implementation of Pace of Aging measurement in studies of interventions to slow processes of biological aging.\n\nWe conducted machine-learning analysis of the original Pace of Aging measure using elastic-net regression and whole-genome blood DNA methylation data. We trained the algorithm to predict how fast a person was aging. We called the resulting algorithm \u2018DunedinPoAm\u2019 for \u2018 (P)ace (o)f (A)ging\u00a0(m)ethylation\u2019. There were four overall findings:\n\nFirst, while DunedinPoAm was not a perfect proxy of Pace of Aging, it nevertheless captured critical information about Dunedin Study members\u2019 healthspan-related characteristics. Across the domains of physical function, cognitive function, and subjective signs of aging, Study members with faster DunedinPoAm at age 38 were worse off seven years later at age 45 and, in repeated-measures analysis of change, they showed signs of more rapid decline. Effect-sizes were equal to or greater than those for the 18-biomarker 3-time point measure of Pace of Aging. This result suggests that the DNA-methylation elastic-net regression used to develop DunedinPoAm may have distilled the aging signal from the original Pace of Aging measure and excluded some noise. In sum, DunedinPoAm showed promise as an easy-to-implement alternative to Pace of Aging. Emerging technologies for deep-learning analysis (Zhavoronkov et al., 2019) may improve methylation measurement of Pace of Aging. Alternatively, integration of methylation data with additional molecular datasets (Hasin et al., 2017; Zierer et al., 2015) may be needed to achieve precise measurement of Pace of Aging from a single time-point blood sample.\n\nSecond, DunedinPoAm analysis of the Understanding Society and NAS samples provided proof-of-concept for using DunedinPoAm to quantify biological aging. Age differences in DunedinPoAm parallel population demographic patterns of mortality risk. In the Understanding Society sample, older adults had faster DunedinPoAm as compared to younger ones. In the NAS sample, participants\u2019 DunedinPoAm values increased as they aged. These observations are consistent with the well-documented acceleration of mortality risk with advancing chronological age (Robine, 2011). However, it sets DunedinPoAm apart from other indices of biological aging, which are not known to register this acceleration (Finch and Crimmins, 2016; Li et al., 2020). DunedinPoAm may therefore provide a novel tool for testing how the rate of aging changes across the life course and whether, as demographic data documenting so-called \u2018mortality plateaus\u2019 suggest, processes of aging slow down at the oldest chronological ages (Barbi et al., 2018).\n\nDunedinPoAm is related to but distinct from alternative approaches to quantification of biological aging. DunedinPoAm was moderately correlated with aging rates measured by the epigenetic clocks proposed by Hannum et al.\u00a0(2013); Levine et al. (2018) as well as KDM Biological Age derived from clinical biomarker data (Klemera and Doubal, 2006; Levine, 2013), and with self-rated health. Consistent with findings for the measured Pace of Aging (Belsky et al., 2018b), DunedinPoAm was only weakly correlated with the multi-tissue clock proposed by Horvath. DunedinPoAm\u00a0was more strongly correlated with a clinical-biomarker measure of biological age, with self-rated health, with functional test-performance and decline, and with morbidity and mortality as compared to the epigenetic clocks.\n\nThird, DunedinPoAm is already variable by young adulthood and is accelerated in young people at risk for eventual shortened healthspan. E-Risk young adults who grew up in socioeconomically disadvantaged families or who were exposed to victimization early in life already showed accelerated DunedinPoAm by age 18, consistent with epidemiological observations of shorter healthy lifespan for individuals with these exposures (Adler and Rehkopf, 2008; Danese and McEwen, 2012). We previously found that Dunedin Study members with histories of early-life adversity showed accelerated Pace of Aging in their 30 s (Belsky et al., 2017). DunedinPoAm analysis of the E-Risk cohort suggests effects may be already manifest at least a decade earlier. DunedinPoAm may therefore provide a useful index that can be applied to evaluate prevention programs to buffer at-risk youth against health damaging effects of challenging circumstances.\n\nFourth, DunedinPoAm analysis of the CALERIE trial provided proof-of-concept for using DunedinPoAm to quantify biological aging in geroprotector intervention studies. DunedinPoAm measures the rate of aging over the recent past. Control-arm participants\u2019 baseline DunedinPoAm correlated positively with their clinical-biomarker pace of aging over the two years of the trial, consistent with the hypothesis that their rate of aging was not altered. In contrast, there was no relationship between DunedinPoAm and clinical-biomarker pace of aging for caloric-restriction-arm participants, consistent with the hypothesis that caloric restriction altered participants\u2019 rate of aging. Ultimately, data on DunedinPoAm for all CALERIE participants (and participants in other geroprotector trails) at trial baseline and follow-up will be needed to establish utility of DunedinPoAm as a surrogate endpoint. In the mean-time, these data establish potential to use DunedinPoAm as a pre-treatment covariate in geroprotector trials to boost statistical power (Kahan et al., 2014) or to screen participants for enrollment, for\u00a0example to identify those who are aging more rapidly and may therefore show larger effects of treatment.\n\nWe acknowledge limitations. Foremost, DunedinPoAm is a first step toward a single-assay cross-sectional measurement of Pace of Aging. The relatively modest size of the Dunedin cohort and the lack of other cohorts that have the requisite three or more waves of repeated biomarkers to measure the Pace of Aging limited sample size for our machine-learning analysis to develop methylation algorithms. As Pace of Aging is measured in additional cohorts, more refined analysis to develop DunedinPoAm-type algorithms will become possible. A related issue is scaling of DunedinPoAm. The original Pace of Aging measure from which DunedinPoAm was developed is denominated in \u2018years\u2019 of physiological decline occurring per 12 months of calendar time. Units of DunedinPoAm can, in principle, be interpreted in the same way. But replication in additional cohorts is needed. In addition, our work thus far has not addressed population diversity in biological aging. The Dunedin cohort in which DunedinPoAm was developed and the Understanding Society,\u00a0NAS, and E-Risk cohorts and CALERIE trial sample in which it was tested were mostly of white European\u00a0descent. Follow-up of DunedinPoAm in more diverse samples is needed to establish cross-population validity. Finally, because methylation data are not yet available from CALERIE follow-up assessments, we could not test if intervention modified DunedinPoAm at outcome. Ultimately, to establish DunedinPoAm as a surrogate endpoint for healthspan, it will be necessary to establish not only robust association with healthy lifespan phenotypes and modifiability by intervention, but also the extent to which changes in DunedinPoAm induced by intervention correspond to changes in healthy-lifespan phenotypes (Prentice, 1989).\n\nWithin the bounds of these limitations, our analysis establishes proof-of-concept for DunedinPoAm as a single-time-point measure that quantifies Pace of Aging from a blood test. It can be implemented in Illumina 450 k and EPIC array data, making it immediately available for testing in a wide range of existing datasets as a complement to existing methylation measures of aging. Critically, DunedinPoAm offers a unique measurement for intervention trials and natural experiment studies investigating how the rate of aging may be changed by behavioral or drug therapy, or by environmental modification. DunedinPoAm may be especially valuable to studies that collect data outside of clinical settings and lack blood chemistry, hematology, and other data needed to measure aging-related changes to physiology.\n\n## Materials and methods\n\n### Data sources\n\nData were used from five studies: the Dunedin Study, the Understanding Society Study, the Normative Aging Study (NAS), the Environmental Risk (E-Risk) Longitudinal Twin Study, and the CALERIE Trial. The five datasets and measures analyzed within each of them are described below.\n\nThe Dunedin Study is a longitudinal investigation of health and behavior in a complete birth cohort. Study members (N\u00a0=\u00a01,037; 91% of eligible births; 52% male) were all individuals born between April 1972 and March 1973 in Dunedin, New Zealand (NZ), who were eligible based on residence in the province and who participated in the first assessment at age 3. The cohort represents the full range of socioeconomic status on NZ\u2019s South Island and matches the NZ National Health and Nutrition Survey on key health indicators (e.g., BMI, smoking, GP visits) (Poulton et al., 2015). The cohort is primarily white (93%) (Poulton et al., 2015). Assessments were carried out at birth and ages 3, 5, 7, 9, 11, 13, 15, 18, 21, 26, 32, 38 and, most recently, 45 years, when 94% of the 997 study members still alive took part. At each assessment, each study member is brought to the research unit for a full day of interviews and examinations. Study data may be accessed through agreement with the Study investigators (https://moffittcaspi.trinity.duke.edu/research-topics/dunedin). Dunedin Study measures of physical and cognitive functioning and subjective signs of aging are described in detail in Supplementary file 1H.\n\nUnderstanding Society is an ongoing panel study of the United Kingdom population (https://www.understandingsociety.ac.uk/). During 2010\u201312, participants were invited to take part in a nurse\u2019s exam involving a blood draw. Of the roughly 20,000 participants who provided clinical data in this exam, methylation data have been generated for just under 1200. We analyzed data from 1175 participants with available methylation and blood chemistry data. Documentation of the methylation (University of Essex, 2012) and blood chemistry (University of Essex, 2017) data resource is available online (https://www.understandingsociety.ac.uk/sites/default/files/downloads/documentation/health/user-guides/7251-UnderstandingSociety-Biomarker-UserGuide-2014.pdf).\n\nKlemera-Doubal method (KDM) Biological Age. We measured KDM Biological age from blood chemistry, systolic blood pressure, and lung-function data using the algorithm proposed by Klemera and Doubal (2006) trained in data from the NHANES following the method originally described by Levine (2013) and using the dataset compiled by Hastings (Hastings et al., 2019). We included 8 of Levine\u2019s original 10 biomarkers in the algorithm: albumin, alkaline phosphatase (log), blood urea nitrogen, creatinine (log), C-reactive protein (log), HbA1C, systolic blood pressure, and forced expiratory volume in 1 s (FEV1). We omitted total cholesterol because of evidence this biomarker shows different directions of association with aging in younger and older adults (Arbeev et al., 2016). Cytomegalovirus optical density was not available in the Understanding Society database.\n\nSelf\u00a0Rated\u00a0Health.\u00a0Understanding Society participants rated their health as excellent, very-good, good, fair, or poor. We standardized this measure to have Mean\u00a0=\u00a00, Standard Deviation\u00a0=\u00a01 for analysis.\n\nThe Normative Aging Study (NAS) is an ongoing longitudinal study on aging established by the US Department of Veterans Affairs in 1963. Details of the study have been published previously (Bell et al., 1972). Briefly, the NAS is a closed cohort of 2280 male veterans from the Greater Boston area enrolled after an initial health screening to determine that they were free of known chronic medical conditions. Participants have been re-evaluated every 3\u20135 years on a continuous rolling basis using detailed on-site physical examinations and questionnaires. DNA from blood samples was collected from 771 participants beginning in 1999. We analyzed blood DNA methylation data from up to four repeated assessments conducted through 2013 (Gao et al., 2019b; Panni et al., 2016). Of the 771 participants with DNA methylation data, n\u00a0=\u00a0536 (46%) had data from two repeated assessments and n\u00a0=\u00a0178 (23%) had data from three or four repeated assessments. We restricted the current analysis to participants with at least one DNA methylation data point. The NAS was approved by the Department of Veterans Affairs Boston Healthcare System and written informed consent was obtained from each subject before participation.\n\nMortality.\u00a0Regular mailings to study participants have been used to acquire vital-status information and official death certificates were obtained from the appropriate state health department to be reviewed by a physician. Participant deaths are routinely updated by the research team and the last available update was on 31 December 2013. During follow-up, n\u00a0=\u00a0355 (46%) of the 771 NAS participants died.\n\nChronic\u00a0Disease\u00a0Morbidity.\u00a0We measured chronic disease morbidity from participants medical histories and prior diagnoses (Gao et al., 2019a; Gao et al., 2019c; Lepeule et al., 2018; Nyhan et al., 2018). We counted the number of chronic diseases to compose an ordinal index with categories of 0, 1, 2, 3, or 4+ of the following comorbidities: hypertension, type-2 diabetes, cardiovascular disease, chronic obstructive pulmonary disease, chronic kidney disease, and cancer.\n\nThe Environmental Risk (E-Risk)\u00a0Longitudinal Twin Study tracks the development of a birth cohort of 2,232 British participants. The sample was drawn from a larger birth register of twins born in England and Wales in 1994\u20131995. Full details about the sample are reported elsewhere (Moffitt and E-Risk Study Team, 2002). Briefly, the E-Risk sample was constructed in 1999\u20132000, when 1116 families (93% of those eligible) with same-sex 5-year-old twins participated in home-visit assessments. This sample comprised 56% monozygotic (MZ) and 44% dizygotic (DZ) twin pairs; sex was evenly distributed within zygosity (49% male). Families were recruited to represent the UK population of families with newborns in the 1990 s, on the basis of residential location throughout England and Wales and mother\u2019s age. Teenaged mothers with twins were over-selected to replace high-risk families who were selectively lost to the register through non-response. Older mothers having twins via assisted reproduction were under-selected to avoid an excess of well-educated older mothers. The study sample represents the full range of socioeconomic conditions in the UK, as reflected in the families\u2019 distribution on a neighborhood-level socioeconomic index (ACORN [A Classification of Residential Neighborhoods], developed by CACI Inc for commercial use): 25.6% of E-Risk families lived in \u2018wealthy achiever\u2019 neighborhoods compared to 25.3% nationwide; 5.3% vs. 11.6% lived in \u2018urban prosperity\u2019 neighborhoods; 29.6% vs. 26.9% lived in \u2018comfortably off\u2019 neighborhoods; 13.4% vs. 13.9% lived in \u2018moderate means\u2019 neighborhoods, and 26.1% vs. 20.7% lived in \u2018hard-pressed\u2019 neighborhoods. E-Risk underrepresents \u2018urban prosperity\u2019 neighborhoods because such households are likely to be childless.\n\nHome-visits assessments took place when participants were aged 5, 7, 10, 12 and, most recently, 18 years, when 93% of the participants took part. At ages 5, 7, 10, and 12 years, assessments were carried out with participants as well as their mothers (or primary caretakers); the home visit at age 18 included interviews only with participants. Each twin was assessed by a different interviewer. These data are supplemented by searches of official records and by questionnaires that are mailed, as developmentally appropriate, to teachers, and co-informants nominated by participants themselves. The Joint South London and Maudsley and the Institute of Psychiatry Research Ethics Committee approved each phase of the study. Parents gave informed consent and twins gave assent between 5\u201312 years and then informed consent at age 18. Study data may be accessed through agreement with the Study investigators (https://moffittcaspi.trinity.duke.edu/research-topics/erisk).\n\nChildhood Socioeconomic Status (SES).\u00a0Childhood\u00a0SES was defined through a standardized composite of parental income, education, and occupation (Trzesniewski et al., 2006). The three SES indicators were highly correlated (r\u00a0=\u00a00.57\u20130.67) and loaded significantly onto one factor. The population-wide distribution of the resulting factor was divided in tertiles for analyses.\n\nChildhood\u00a0Victimization.\u00a0As previously described (Danese et al., 2017), we assessed exposure to six types of childhood victimization between birth to age 12: exposure to domestic violence between the mother and her partner, frequent bullying by peers, physical and sexual harm by an adult, and neglect.\n\nThe CALERIE Trial is described in detail elsewhere (Ravussin et al., 2015). Briefly, N\u00a0=\u00a0220 normal-weight (22.0\u00a0\u2264 BMI < 28 kg/m2) participants (70% female, 77% white) aged 21\u201350 years at baseline were randomized to caloric restriction or ad libitum conditions with a 2:1 ratio (n\u00a0=\u00a0145 to caloric restriction, n\u00a0=\u00a075 to ad libitum). \u2018Ad libitum\u2019 (normal) caloric intake was determined from two consecutive 14 day assessments of total daily energy expenditure using doubly labeled water (Redman et al., 2014). Average percent caloric restriction over six-month intervals was retrospectively calculated by the intake-balance method with simultaneous measurements of total daily energy expenditure using doubly labeled water and changes in body composition (Racette et al., 2012; Wong et al., 2014). Over the course of the trial, participants in the caloric-restriction arm averaged 12% reduction in caloric intake (about half the prescribed reduction). Participants in the ad libitum condition reduced caloric intake by\u00a0<2% (Ravussin et al., 2015). CALERIE data are available at https://calerie.duke.edu/samples-data-access-and-analysis.\n\nKlemera-Doubal method (KDM) Biological Age. KDM Biological age was measured according to the procedure described in our previous article (Belsky et al., 2018a). Briefly, we computed KDM Biological Age from CALERIE blood chemistry and blood pressure data using the algorithm proposed by Klemera and Doubal (2006) trained in data from the NHANES following the method originally described by Levine (2013) and NHANES data from years matched to the timing of the CALERIE Trial. We included 8 of Levine\u2019s original 10 biomarkers in the algorithm: albumin, alkaline phosphatase (log), blood urea nitrogen, creatinine (log), C-reactive protein (log), HbA1C, systolic blood pressure, and total cholesterol. Cytomegalovirus optical density and lung function were not measured in CALERIE. We supplemented the algorithm with data on uric acid and white blood cell count.\n\n### DNA methylation data\n\nDNA methylation was measured from Illumina 450 k Arrays in the Dunedin Study, NAS, and E-Risk Study and from Illumina EPIC 850 k Arrays in the Understanding Society study and the CALERIE Trial. DNA was derived from whole blood samples in all studies. Dunedin Study blood draws were conducted at the cohort\u2019s age-38 assessment during 2010\u201312. Understanding Society blood draws were conducted in 2012. NAS blood draws were conducted during 1999\u20132013. E-Risk blood draws were conducted at the cohort\u2019s age-18 assessment during 2012\u201313. CALERIE blood draws were conducted at the trial baseline assessment in 2007. Dunedin and CALERIE methylation assays were run by the Molecular Genomics Shared Resource at Duke Molecular Physiology Institute, Duke University (USA). Understanding Society and E-Risk assays were run by the Complex Disease Epigenetics Group at the University of Exeter Medical School (UK) (www.epigenomicslab.com). NAS methylation assays were run by the Genome Research Core of the University of Illinois at Chicago. Processing protocols for the methylation data from all studies have been described previously (Dai et al., 2017; Hannon et al., 2018; Marzi et al., 2018; Panni et al., 2016). (CALERIE data were processed according to the same protocols used for the Dunedin Study.)\n\n#### Methylation clocks\n\nWe computed the methylation clocks proposed by Horvath, Hannum, and Levine using the methylation data provided by the individual studies and published algorithms (Hannum et al., 2013; Horvath, 2013; Levine et al., 2018).\n\n#### DunedinPoAm\n\nThe Dunedin Pace of Aging methylation\u00a0algorithm (DunedinPoAm) was developed using elastic-net regression analysis carried out in the Dunedin Study, as described in detail in the Results. The criterion variable was Pace of Aging. Development of the Pace of Aging is described in detail elsewhere (Belsky et al., 2015). Briefly, we conducted mixed-effects growth modeling of longitudinal change in 18 biomarkers measuring integrity of the cardiovascular, metabolic, renal, hepatic, pulmonary, periodontal, and immune systems. Biomarkers were measured at the age 26, 32, and 38 assessments: in order of listing in Figure 3 of Belsky et al. (2015) glycated hemoglobin, cardiorespiratory fitness, waist-hip ratio, FEV1/FVC ratio, FEV1, mean arterial pressure, body mass index, leukocyte telomere length, creatinine clearance, blood urea nitrogen, lipoprotein (a), triglycerides, gum health, total cholesterol, white blood cell count, high-sensitivity C-reactive protein, HDL cholesterol, ApoB100/ApoA1 ratio. For each biomarker, we estimated random slopes quantifying each participant\u2019s own rate of change in that biomarker. We then composited slopes across the 18 biomarkers to calculate a participant\u2019s Pace of Aging. Pace of Aging was scaled in units representing the mean trend in the cohort, that\u00a0is the average physiological change occurring during one calendar year (N\u00a0=\u00a0954, M\u00a0=\u00a01, SD\u00a0=\u00a00.38). Of the N\u00a0=\u00a0819 Dunedin Study members with methylation data at age 38, N\u00a0=\u00a0810 had measured Pace of Aging (M\u00a0=\u00a00.98, SD\u00a0=\u00a00.09). This group formed the analysis sample to develop DunedinPoAm.\n\nTo compute DunedinPoAm in the Understanding Society, NAS, E-Risk, and CALERIE Trial datasets, we applied the scoring algorithm estimated from elastic net regression in the Dunedin Study. CpG weights for the scoring algorithm are provided in Supplementary file 1A. R code to implement the scoring algorithm in data from Illumina 450 k and EPIC arrays is provided\u00a0at\u00a0https://github.com/danbelsky/DunedinPoAm38 .\n\n##### Bootstrap repetition analysis to estimate out-of-sample correlation between methylation Pace of Aging (mPoA) measures and longitudinal Pace of Aging\n\nThe Dunedin Study is the only dataset to include measured 12 year longitudinal Pace of Aging. To estimate the out-of-sample correlation between mPoA and the original Pace of Aging measure, we conducted 90/10 crossfold validation analysis. We randomly selected 90% of the cohort to serve as the \u2018training\u2019 sample in which the mPoA algorithm was developed. We used the remaining 10% to form a \u2018test\u2019 sample to estimate the correlation between mPoA and Pace of Aging. We repeated this analysis across 100 bootstrap repetitions. In each repetition, we randomly sampled 90% of the cohort to use in the training analysis and reserved the remaining 10% for testing.\n\nThe mPoA algorithms developed across the 100 bootstrap repetitions included different sets of CpGs (range of 21\u2013209 CpGs selected, M\u00a0=\u00a054, SD\u00a0=\u00a027 CpGs). However, the resulting algorithms were highly correlated (mean pairwise r\u00a0=\u00a00.90, SD\u00a0=\u00a00.14). The average correlation between the 90%-trained mPoA and longitudinal Pace of Aging in the 10% test samples was (r\u00a0=\u00a00.33, SD\u00a0=\u00a00.10). Details are reported in Figure 1\u2014figure supplement 2.\n\n### Statistical analysis\n\nWe conducted analysis of Dunedin, Understanding Society, NAS, E-Risk, and CALERIE data using regression models. We analyzed continuous outcome data using linear regression. We analyzed count outcome data using Poisson regression. We analyzed time-to-event outcome data using Cox proportional hazard regression. For analysis of repeated-measures longitudinal DNA methylation data in the NAS, we used generalized estimating equations to account for non-independence of repeated observations of individuals (Ballinger, 2004), following the method in previous analysis of those data (Gao et al., 2018), and econometric fixed-effects regression (Wooldridge, 2012) to test within-person change over time. For analysis in E-Risk, which include data on twin siblings, we clustered standard errors at the family level to account for non-independence of data. For analysis of longitudinal change in clinical-biomarker biological age in CALERIE, we used mixed-effects growth models (Singer and Willett, 2003) following the method in our original analysis of those data (Belsky et al., 2018a). For regression analysis, methylation measures were adjusted for batch effects by regressing the measure on batch controls and predicting residual values. Dunedin Study, Understanding Society, E-Risk, and CALERIE analyses included covariate adjustment for sex (the NAS included only men). Understanding Society, NAS, and CALERIE analyses included covariate adjustment for chronological age. (Dunedin and E-Risk are birth-cohort studies and participants are all the same chronological age.) Sensitivity analyses testing covariate adjustment for estimated leukocyte distributions and smoking are reported in Supplementary file 1C-G.\n\n#### Sensitivity analyses\n\nWe tested sensitivity of methylation Pace of Aging (mPoA) measures to alternative methods of normalizing DNA methylation data. We normalized data using the \u2018methylumi\u2019 and \u2018minfi\u2019 packages and computed correlations between mPoA measures derived from these two datasets. The correlation was r\u00a0=\u00a00.94.\n\nThe elastic net model selected 46 CpGs to compose the mPoA. One of these CpGs, cg11897887, has been identified as an mQTL (Volkov et al., 2016). To evaluate sensitivity of results to the exclusion of this CpGs, we computed a version of the mPoA excluding this CpG and repeated analysis. This version of the score was correlated with the full mPoA at r\u00a0=\u00a01. Results were the same in analyses with both versions (available from the authors upon request).\n\nAnother CpG selected in the elastic net, cg05575921, is located within the gene AHRR, previously identified as a methylation site modified by tobacco exposure and associated with lung cancer and other chronic disease, for\u00a0example (Fasanelli et al., 2015; Reynolds et al., 2015). We tested sensitivity of results to the exclusion of this probe using the method described above. This version of the score was correlated with the full mPoA at r\u00a0=\u00a00.94. Again, results were the same in analyses with both versions (available from the authors upon request).\n\n#### Code for analysis\n\nCode used for analysis and to prepare figures is accessible via https://github.com/danbelsky/DunedinPoAm_eLife2020.git\u00a0(Belsky, 2020; copy archived at https://github.com/elifesciences-publications/DunedinPoAm_eLife2020).\n\nCode to calculate DunedinPoAm from Illumina 450 k or Epic Array Data.\u00a0R code is available\u00a0at\u00a0https://github.com/danbelsky/DunedinPoAm38.git.\n",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "e3657fd5-5d55-4453-846f-b85c0bcd4a20",
+      "submission_id": "83b371c8-37b3-43df-a1eb-7b6800d15e1a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sara Hagg, Karolinska Institutet Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54870.sa1](https://doi.org/10.7554/eLife.54870.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe paper is a nice contribution to the research field of epigenetics and aging with thorough epidemiological analyses and cohort data included. We are delighted to include it in the special issue on Aging, Geroscience and Longevity in eLife.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Quantification of the pace of biological aging in humans through a blood test: a DNA methylation algorithm\" for consideration by eLife. Your article has been reviewed by four peer reviewers, including Sara H\u00e4gg as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jamie Justice (Reviewer #3); Matthew Suderman (Reviewer #4).\n\nOur decision has been reached after consultation between the reviewers. We regret to inform you that your work will not be considered for publication in eLife in its current form. However, there is an opportunity for resubmission of a revised paper as a new submission, which will go to the same reviewers and the same editors.\n\nReviewer #1:I think this is a nice manuscript and I only have one major comment, and that is that the mPoA should be validated in longitudinal methylation data in an aging cohort. I think this is critical.\n\nReviewer #2:\n\nThis is an interesting study that aims to develop a new \"biological age\" marker, termed mPoA, following a similar methodology to Horvath's famous epigenetic clock. However, it is conceptually more similar to Levine's methylation phenotypic age, being based on a two-step process involving clinical markers. The epigenetic measure presented here is novel since it attempts to quantify in a single measurement and single assay \"Pace of aging\", which was originally developed in a New Zealand cohort of young adults, using standard clinical markers. An impressive range of studies are then used for partial validation of the measure. However, I would not say it a scientific breakthrough of the highest significance since it provides yet another epigenetic age marker, or which its meaning is not totally clear, without providing evidence of improved performance in predicting health/mortality than currently available measures.\n\n1) While the associations shown in a range of contexts is impressive, it is a shame that a collaboration was not sought with an older cohort to demonstrate performance in predicting mortality/age-related morbidity. Since it is not conceptually clear what an epigenetic predictor of rate of change of clinical parameters between 26 and 38 years means in other age groups and contexts, I think a pre-requisite of a new biological ageing marker is demonstration of utility in predicting health/lifespan.\n\n2) The authors should discuss why an epigenetic marker with a fairly moderate correlation with original PoA performs in many cases better than the original PoA in predicting subsequent functional ability. A current concern with epigenetic age predictors (e.g. https://www.biorxiv.org/content/10.1101/327890v2.full) is confounding by cell composition. This may provide an explanation. The authors should attempt to address this in sensitivity analyses (one possible approach could be including cell composition as a fixed variable in the elastic net model, and then regressing this out for the final measure)\n\n3) The authors should be commended for publishing the models predictors in full (they could also provide a code for other researcher to easily compute the measure in full) however some discussion on the model predictors is needed to understand what epigenetic changes are driving the model and if any biological pathways are over-represented.\n\n4) It would be useful to provide comparisons with the other biological age measures in each of the analyses \u2013 i.e. is mPoA more sensitive to adversity in eRisk than hovarth, levine etc. or does it predict difference in subsequent aging in the RCT better than KDM BA or Levine etc or even original PoA\n\n5) The Abstract is a bit light on numbers \u2013 please add the important details such a number of participants, effects sizes, statistical significance estimates for the main results.Reviewer #3:Study synopsis. The authors train the methylation Pace of Aging (mPoA) predictor in adults aged 38 enrolled in the Dunedin study, and use it to predict subsequent change in the physiologic parameters used to calculate PoA in the same cohort (age 38-45). They next perform analyses of mPoA (measured at one timepoint) in other cohorts and clinical study types to validate mPoA and explore associations with existing methylation and composite biomarkers. Validation studies include Understanding Society Study (cross-sectional, mixed age sample with existing methylation data), E-risk Study (cross-sectional; adolescent / young adults with distinct socio-environmental risk factors), and CALERIE (clinical trial, age-similar to Dunedin training cohort). Authors are commended on an excellent contribution; concerns and comments are relatively minor and should not pose a barrier to publication.\n\nIn general, this is a meritorious and well written addition to a progression of work on biomarkers of biological age in (early) middle-aged adults. The authors have previously evaluated multivariable composite biomarkers in the Dunedin longitudinal cohort and calculated the Pace of Aging (PoA). In the present study the investigators use this composite measure of change as the foundation to train a DNA-wide methylation clock tuned to PoA. In doing so, the investigators have created a first-of-its kind methylation biomarker (mPoA) to designed specifically to predict change over time rather than a static, single-timepoint measure (e.g. clocks tuned to chronologic age or phenotype). A methylation biomarker tuned to detect change is a significant contribution that could have utility as a biomarker in clinical trials designed to prevent or delay declines in health and physiologic function with age.\n\n1) The findings in CALERIE trial are perhaps the most exciting results: mPoA measured at baseline discriminated change in the multivariable composite KDM Biological Age. It is also suggestive of potential to discriminate between treatment arms of a robust intervention on the biology of aging (caloric restriction), though this needs to be followed up with longitudinal assessment. These noteworthy findings should be emphasized. Authors suggested to restructure presentation of results. In the Abstract authors state that mPoA \"was disrupted by caloric restriction in the CALERIE trial.\" mPoA was only measured at baseline not tracked longitudinally for between group effects on change in mPoA as implied by statement. Please revise.\n\n2) mPoA measured at single timepoint.\n\n\u2022 That mPoA is only measured at baseline in CALERIE and at only one timepoint in the validation studies dampens enthusiasm. While the findings in the CALERIE study (Figure 4) are a substantial advancement, biomarkers with repeat measurement are critically needed. Biomarkers with test-retest reliability, sensitivity to change, and predict clinical trial endpoints (e.g. disability onset or incident disease vs. KDM change) are essential to progress. This is noted in limitations. Given iterative nature of research the reviewer trusts that this will be addressed in a future study \u2013 hopefully a study repeating mPoA at age 45 in the Dunedin cohort, or at Year 1 in the CALERIE trial when/if additional methylation data become available.\n\n\u2022 While longitudinal change in mPoA cannot be included in this manuscript, two minor suggestions for context:\n\n2A) The TRIIM clinical study should be referenced (a single arm clinical study in 9 men; Fahy et al., 2019). It is currently the only published report of methylation biomarker performance over time in an intervention study.\n\n2B) The authors correctly state that \"measurements of the rate of biological aging are needed to serve as surrogate endpoints in trials\u2026\" This is important, and additional context is needed. For example, criteria to validate surrogate endpoints would be pertinent- e.g. Prentice criteria: biomarker to be considered as a surrogate, it should a) be correlated with clinical endpoint; b) capture net effect of intervention on clinical endpoint. This will provide context and forecast next steps in logical progression of biomarker development (e.g. longitudinal assessment and prediction of clinical trial outcome).\n\n3) Dunedin study.\n\n\u2022 Many of the physical performance tests in Dunedin Study are likely to have ceiling effects and limited change over time would be expected given the ages and health status of the study population. That the investigators find anything useful in change over time to train the methylation clock is a wonder (reviewer anticipated \"flat\" findings like those for grip strength). Given the history of work with this cohort revision is not requested. In future it would be interesting to see how mPoA would perform if the algorithm were trained in a more diverse population with greater observable deficits in physiologic function over time.\n\n3A) The comparison of adult (age 45) to juvenile (age 7-13) Wechsler Intelligence Scales as an index of 'cognitive decline' is puzzling. Please provide validation and justification.\n\n3B) Please provide references on validation work for the facial aging in the text or supplement.\n\nReviewer #4:This very well-written manuscript presents a new method for estimating the rate of biological aging from blood DNA methylation (mPOA), a linear model based on blood DNA methylation of an published model that was derived from 18 biomarkers called Pace of Aging (POA). mPOA differs from other DNA methylation models of biological aging (Horvath, Hannum, Levine) by ignoring chronological age. mPOA appears to be a truly novel and valuable model of aging:\n\n- mPOA predicted functional decline and subjective age-related changes in mid-life, 7 years in advance \u2013 apparently better than the original POA model on which it is defined\n\n- mPOA appears to have a stronger association with Klemera and Doubal Biological Age (similar to POA) and likely to POA (although this is never tested) than other DNA methylation-based models\n\n- mPOA is associated with childhood socioeconomic status and victimization at age 18\n\n- mPOA may show a protective effect after only two years of calorie restriction\n\nThis manuscript would be a valuable addition to the aging literature.\n\nA major limitation of previous DNA-methylation based models of aging is the difficulty of arriving at some kind of biological interpretation of their behavior because they are derived from chronological age. mPOA is, by contrast, derived directly from \"blood- and organ-system-functional biomarkers\". As a result, it should be possible to investigate the relative importance of each of these biomarkers. It could help to explain how and why mPOA differs from POA and where and when it might be more or less informative. At the very least the manuscript could include a table and/or figure comparing the associations of mPOA and POA with the 18 biomarkers.\n\nThere is a distinct lack of negative/null findings in the paper suggesting that such findings may have been omitted. For example, mPOA appears to be associated with all measures of aging (except for grip strength, the only measure that apparently increases with age), and Figure 2\u2014figure supplement 1 suggests that mPOA performs better than POA for all (except grip strength). Some functioning and aging measures used to investigate POA are not included in the present study (see e.g. Belsky et al., 2015). Why are they omitted? If mPOA really is better than POA, this should at least draw some discussion if not some follow-up analysis. It suggests that DNA methylation captures some informative biological variation lacking in the 18 underlying biomarkers, perhaps cell count variation, smoking behavior, or age?\n\nGiven the significant amount of published work related to the 'epigenetic clocks', it is critical to show that any new DNA methylation-based model of aging is not only different from previous models but superior in important ways. The manuscript only compares mPOA to other models in terms of associations with KDM Biological Age. In this comparison, mPOA is clearly superior to Horvath and Hannum, but for Levine the comparison is not so clear. It should be easy to derive Levine in the Dunedin data and test associations with functional decline and subjective aging (in fact, haven't Horvath and Hannum have already been derived in Dunedin? \u2013 see Belsky et al., 2018).\n\nSmoking status appears central to mPOA \u2013 of the 46 CpG sites on which mPOA is based, at least 12 have been previously linked with smoking. This is explored only for the comparison with the 'epigenetic clocks' in Understanding Society and for assessing associations with SES and victimization in E-Risk. To what extent does smoking status influence the association between mPOA and POA? To what extent does smoking status influence associations/predictions of functional decline and subjective aging in Dunedin?\n",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "59ab4763-4a6c-4c76-9def-a784c15a7082",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C1",
+      "claim": "Biological aging is the gradual, progressive decline in system integrity that occurs with advancing chronological age, causing morbidity and disability.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological aging is the gradual, progressive decline in system integrity that occurs with advancing chronological age, causing morbidity and disability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement presented in the abstract that draws on established scientific understanding of aging processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "27e4ec02-46fe-42f8-80c9-486a4eeeb8e0",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C2",
+      "claim": "Aging of the global population is producing forecasts of rising burden of disease and disability.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging of the global population is producing forecasts of rising burden of disease and disability (Harper, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Harper, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "d42b138a-7a5f-4ab1-8ecd-9b766fce2a96",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C3",
+      "claim": "Treatments for single diseases will not address the burden challenge arising from multiple age-related diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Because this burden arises from multiple age-related diseases, treatments for single diseases will not address the burden challenge (Goldman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goldman et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "047802bc-0883-4bde-921b-b2a6e0f6e637",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C4",
+      "claim": "Treatments to slow aging itself could prevent or delay multiple diseases that increase with advancing age.",
+      "claim_type": "EXPLICIT",
+      "source": "Geroscience research suggests an appealing alternative: treatments to slow aging itself could prevent or delay the multiple diseases that increase with advancing age, perhaps with a single therapeutic approach (Gladyshev, 2016; Kaeberlein, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gladyshev, 2016 and Kaeberlein, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "b1421f73-b3f6-41a5-8d3b-d9f36d0ae531",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C5",
+      "claim": "Aging arises from an accumulation of cellular-level changes that increase vulnerability to diseases affecting many different organ systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This deterioration is thought to arise from an accumulation of cellular-level changes. These changes, in turn, increase vulnerability to diseases affecting many different organ systems (Kennedy et al., 2014; L\u00f3pez-Ot\u00edn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kennedy et al., 2014 and L\u00f3pez-Ot\u00edn et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "3ad12d1d-55e1-4be3-be7e-409ab5ae015e",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C6",
+      "claim": "Animal studies suggest treatments that slow the accumulation of cellular-level changes can extend healthy lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal studies suggest treatments that slow the accumulation of cellular-level changes can extend healthy lifespan (Campisi et al., 2019; Kaeberlein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Campisi et al., 2019 and Kaeberlein et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "acad5fbb-9764-42ee-9079-09d22e981f34",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C7",
+      "claim": "Human trials of aging treatments are challenging because humans live much longer than model animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, human trials of these treatments are challenging because humans live much longer than model animals, making it time-consuming and costly to follow up human trial participants to test treatment effects on healthy lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the difference in lifespan between humans and model organisms.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "fba436d5-c76f-4730-9eee-dd33d26baa8d",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C8",
+      "claim": "The National Advisory Council on Aging approved development of healthspan-extension trials involving young and midlife adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Involving young and midlife adults in healthspan-extension trials has been approved for development by the National Advisory Council on Aging (2019 CTAP report to NACA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to 2019 CTAP report to NACA.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "308fc7fd-137e-4dc9-b8c6-70485353141f",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C9",
+      "claim": "Traditional endpoints such as disease diagnosis or death are too far in the future to serve as outcomes in midlife trials of treatments to slow aging.",
+      "claim_type": "EXPLICIT",
+      "source": "In midlife trials of treatments to slow aging, called geroprotectors (Moskalev et al., 2016), traditional endpoints such as disease diagnosis or death are too far in the future to serve as outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the long time horizon for disease development in midlife adults.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "937356b3-d114-4294-85a1-29ec4e1c4448",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C10",
+      "claim": "Measures that quantify the pace of deterioration in biological system integrity could be used as surrogate endpoints for healthy lifespan extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Translation of geroprotector treatments to humans could be aided by measures that quantify the pace of deterioration in biological system integrity in human aging. Such measures could be used as surrogate endpoints for healthy lifespan extension (Justice et al., 2016; Justice et al., 2018; Moskalev et al., 2016), even with young-to-midlife adult trial participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Justice et al., 2016; Justice et al., 2018; Moskalev et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "b2bafb7f-a71b-4129-a01e-016db263e627",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C11",
+      "claim": "Blood DNA methylation is a biological substrate highly sensitive to changes in chronological age.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent efforts to develop such measures have focused on blood DNA methylation as a biological substrate highly sensitive to changes in chronological age (Fahy et al., 2019; Horvath and Raj, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fahy et al., 2019 and Horvath and Raj, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "b1148492-b273-43fe-921e-67624dc348f2",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C12",
+      "claim": "Methylation-clock algorithms confound methylation patterns arising from early-life exposures with methylation patterns related to biological aging during adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a limitation is that individuals born in different years have grown up under different historical conditions (Schaie, 1967). For example, people born 70 years ago experienced more exposure to childhood diseases, tobacco smoke, airborne lead, and less exposure to antibiotics and other medications, and lower quality nutrition, all of which leave signatures on DNA methylation (Bell et al., 2019). As a result, the clocks confound methylation patterns arising from early-life exposures to methylation-altering factors with methylation patterns related to biological aging during adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schaie, 1967 and Bell et al., 2019, and logical inference about cohort effects.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "92c42afc-f987-466e-bcdd-aa9739cbe959",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C13",
+      "claim": "The Dunedin Study collected a panel of 18 blood-chemistry and organ-system-function biomarkers at three successive waves when Study members were aged 26, 32, and 38 years.",
+      "claim_type": "EXPLICIT",
+      "source": "In Step 1, which we previously reported (Belsky et al., 2015), we collected a panel of 18 blood-chemistry and organ-system-function biomarkers at three successive waves of the Dunedin Study, which follows a 1972\u201373 population-representative one-year birth cohort (N = 1037). We used repeated-measures data collected when Study members were aged 26, 32, and 38 years old to quantify rates of biological change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection procedure in the Dunedin Study, supported by citation to Belsky et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "56e2ddab-b554-48e1-b219-4b99e8285999",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C14",
+      "claim": "Pace of Aging was normally distributed and showed marked variation among Study members who were all the same chronological age.",
+      "claim_type": "EXPLICIT",
+      "source": "Pace of Aging was normally distributed, and showed marked variation among Study members who were all the same chronological age, confirming that individual differences in biological aging do emerge already by age 38, years before chronic disease onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Dunedin Study data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "3ab9c337-0ecd-4196-98bd-57542bcee3c1",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C15",
+      "claim": "Study members with faster Pace of Aging performed more poorly on tests of physical function, showed signs of cognitive decline, were rated as looking older, and reported themselves to be in worse health.",
+      "claim_type": "EXPLICIT",
+      "source": "As compared to other Study members who were the same chronological age but had slower Pace of Aging, Study members with faster Pace of Aging performed more poorly on tests of physical function; showed signs of cognitive decline on a panel of dementia-relevant neuropsychological tests from an early-life baseline; were rated as looking older based on facial photographs; and reported themselves to be in worse health (Belsky et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Belsky et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "efe6f860-9a6b-4fce-870b-9dfe81500cca",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C16",
+      "claim": "Faster Pace of Aging is associated with early-life factors important for aging: familial longevity, low childhood social class, and adverse childhood experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we reported that faster Pace of Aging is associated with early-life factors important for aging: familial longevity, low childhood social class, and adverse childhood experiences (Belsky et al., 2017), and that faster Pace of Aging is associated with older scores on Brain Age, a machine-learning-derived measure of structural MRI differences characteristic of different age groups (Elliott et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Belsky et al., 2017 and Elliott et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "167998b3-1255-48b6-b250-c5d8de330303",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C17",
+      "claim": "Pace of Aging was not well-correlated with published epigenetic age clocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Pace of Aging was not well-correlated with published epigenetic age clocks, which were designed to measure how old a person is rather than how fast they are aging biologically (Belsky et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Belsky et al., 2018b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "1242571a-8d5b-41d9-8955-29465a34ef12",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C18",
+      "claim": "Elastic-net regression was applied to derive a DNA-methylation predictor of Pace-of-Aging called DunedinPoAm.",
+      "claim_type": "EXPLICIT",
+      "source": "Elastic-net regression was used to develop a DNA-methylation predictor of Pace-of-Aging, called DunedinPoAm for Dunedin(P)ace(o)f(A)ging(m)ethylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach used to develop DunedinPoAm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "389072b7-7b2a-4160-b838-1d175914262a",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C19",
+      "claim": "DunedinPoAm is qualitatively different from previously published DNA methylation measures of aging that were developed by comparing older individuals to younger ones.",
+      "claim_type": "EXPLICIT",
+      "source": "DunedinPoAm is qualitatively different from previously published DNA methylation measures of aging that were developed by comparing older individuals to younger ones. Those measures, often referred to as 'clocks,' are state measures. They estimate how much aging has occurred in an individual up to the point of measurement. DunedinPoAm is a rate measure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual distinction made by the authors based on the different methodological approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "bd2f1e88-ffbb-4282-b779-fd50eb512c25",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C20",
+      "claim": "DunedinPoAm is designed to function as a speedometer, recording how fast the subject is aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than a clock that records how much time has passed, DunedinPoAm is designed to function as a speedometer, recording how fast the subject is aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual description of what DunedinPoAm is intended to measure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "6bcdd9ad-3c9b-4b73-8160-33ac5580d94d",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C21",
+      "claim": "The elastic-net-derived DunedinPoAm algorithm selected a set of 46 CpG sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis selected a set of 46 CpG sites (Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the elastic-net regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "b1d2f532-ad19-4796-abc7-f69d88726abf",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C22",
+      "claim": "The 46-CpG DunedinPoAm algorithm was associated with the longitudinal 26\u201338 Pace of Aging measure with a Pearson r = 0.56.",
+      "claim_type": "EXPLICIT",
+      "source": "The 46-CpG elastic-net-derived DunedinPoAm algorithm, applied in the age-38 Dunedin DNA methylation data, was associated with the longitudinal 26\u201338 Pace of Aging measure (Pearson r = 0.56, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the Dunedin Study analysis, shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "cd436b01-908b-46f0-aff6-af378cd790d9",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C23",
+      "claim": "Bootstrap-cross-validation analysis estimated the out-of-sample correlation between DunedinPoAm and Pace of Aging to be r = 0.33.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely an overestimate of the true out-of-sample correlation because the analysis is based on the same data used to develop the DunedinPoAm algorithm; bootstrap-cross-validation analysis estimated the out-of-sample correlation to be r = 0.33 (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from bootstrap cross-validation analysis, shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "7d8e13d3-0d63-4834-ac1b-19d9ac8d6783",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C24",
+      "claim": "Study members with faster DunedinPoAm at age 38 performed more poorly at age 45 on tests of balance, walking speed, chair stands, and motor coordination, and reported more functional limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "Study members with faster DunedinPoAm at age 38 performed more poorly at age 45 on all physical performance tests, with the exception of grip strength, and reported more functional limitations (standardized effect-sizes for tests of balance, walking speed, chair stands, and physical limitations r = 0.15\u20130.29, p<0.001 for all; grip strength r = 0.05, 95% CI [\u22120.02\u20130.12], p=0.162).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prospective association finding from the Dunedin Study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "c3c32112-e700-45af-96b7-fd068919b914",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C25",
+      "claim": "Study members with faster age-38 DunedinPoAm experienced greater decline in balance at age 45.",
+      "claim_type": "EXPLICIT",
+      "source": "Study members with faster age-38 DunedinPoAm experienced greater decline in balance at age 45 (r = 0.11 [0.04\u20130.19], p=0.008) and a greater increase in physical limitations (r = 0.10 [0.02\u20130.18], p=0.012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of change scores in the Dunedin Study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "7b75c386-efaa-4614-980b-1193157ea417",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C26",
+      "claim": "Study members with faster DunedinPoAm at age 38 performed more poorly on all age-45 cognitive tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Study members with faster age-38 DunedinPoAm performed more poorly on all age-45 cognitive tests (r = 0.14\u20130.28, p<0.001 for all).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Dunedin Study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "608fb48d-05bb-4633-9d97-06f2c020c4d0",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C27",
+      "claim": "On average, Study members showed a decline of 2.00 IQ points across the follow-up interval from childhood to age 45.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, Study members showed a decline of 2.00 IQ points (95% CI [1.31\u20132.70]) across the follow-up interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive finding from the Dunedin Study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "ca8f265e-17d4-4535-8a0b-8c7e37ea5323",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C28",
+      "claim": "Study members with faster DunedinPoAm experienced more cognitive decline from childhood to age 45.",
+      "claim_type": "EXPLICIT",
+      "source": "Both analyses found that Study members with faster DunedinPoAm experienced more decline (difference-score r = 0.12, [0.05\u20130.19], p=0.001; residualized change r = 0.20 [0.13\u20130.27]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of cognitive decline in the Dunedin Study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "695942c6-6e33-4308-8cd0-38f27e5691e1",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C29",
+      "claim": "Study members with faster age-38 DunedinPoAm rated themselves to be in worse health at age 45.",
+      "claim_type": "EXPLICIT",
+      "source": "Study members with faster age-38 DunedinPoAm rated themselves to be in worse health at age 45 (r = 0.27, 95% CI [0.20\u20130.34]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Dunedin Study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "cf34e50a-07ec-4383-92f7-79e04ed7a974",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C30",
+      "claim": "Study members with faster age-38 DunedinPoAm were rated as looking older at age 45.",
+      "claim_type": "EXPLICIT",
+      "source": "These Study members were also rated as looking older (r = 0.35 [0.28\u20130.43]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Dunedin Study analysis of facial aging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "cd293c42-532e-448a-9585-0a0ea1e1e916",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C31",
+      "claim": "Those with faster age-38 DunedinPoAm were more likely to transition to fair/poor health categories by age 45.",
+      "claim_type": "EXPLICIT",
+      "source": "Those with faster age-38 DunedinPoAm were more likely to transition to the fair/poor categories (Incidence Rate Ratio (IRR) = 1.79 95% CI [1.48\u20132.18]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Dunedin Study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "01b53ca8-53a6-4aff-bcd1-4474be3b1cf2",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C32",
+      "claim": "Study members with faster age-38 DunedinPoAm were rated as looking older relative to peers at age 45 than they had been at age 38.",
+      "claim_type": "EXPLICIT",
+      "source": "Study members with faster age-38 DunedinPoAm were rated as looking older relative to peers at age 45 than they had been at age 38 (r = 0.10 [0.03\u20130.18]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of change in facial aging in the Dunedin Study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "6c530d60-106b-4f3e-9847-233eea8e1956",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C33",
+      "claim": "DunedinPoAm effect-sizes were similar to and sometimes larger than effect-sizes for the original Pace of Aging measure across domains of physical function, cognitive function, and subjective signs of aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the domains of physical function, cognitive function, and subjective signs of aging, DunedinPoAm effect-sizes were similar to and sometimes larger than effect-sizes for the original Pace of Aging measure (Supplementary file 1B, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative finding from the Dunedin Study analysis, shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "5f7f2605-1d18-4830-91fc-cf39dee23483",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C34",
+      "claim": "In the Understanding Society sample, the mean DunedinPoAm was 1.03 years of biological aging per each calendar year.",
+      "claim_type": "EXPLICIT",
+      "source": "In this mixed-age sample, the mean DunedinPoAm was 1.03 years of biological aging per each calendar year (SD = 0.07).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive finding from the Understanding Society Study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "78d0d006-ce13-4d72-9a48-04bec2a85bdb",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C35",
+      "claim": "Understanding Society participants who were of older chronological age tended to have faster DunedinPoAm.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, Understanding Society participants who were of older chronological age tended to have faster DunedinPoAm (r = 0.11, [0.06\u20130.17], p<0.001; Figure 3 Panel A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the Understanding Society Study analysis, shown in Figure 3 Panel A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "dc8a229d-9596-479a-ad57-244c43105ad3",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C36",
+      "claim": "The Horvath, Hannum, and Levine epigenetic clocks were highly correlated with chronological age in the Understanding Society sample.",
+      "claim_type": "EXPLICIT",
+      "source": "These epigenetic clocks were highly correlated with chronological age in the Understanding Society sample (Horvath Clock r = 0.91, Hannum Clock r = 0.92, Levine Clock r = 0.88).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Understanding Society Study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "b3266ba2-d5ff-4af3-9b00-41caef1f2947",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C37",
+      "claim": "DunedinPoAm was moderately correlated with epigenetic age acceleration measured from the clocks proposed by Hannum (r = 0.24) and Levine (r = 0.30).",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, DunedinPoAm was moderately correlated with epigenetic age acceleration measured from the clocks proposed by Hannum (r = 0.24) and Levine (r = 0.30).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Understanding Society Study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "6a2774ec-b121-434a-ab93-0baf7d3e547c",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C38",
+      "claim": "DunedinPoAm was less-well correlated with acceleration measured from the Horvath clock (r = 0.06).",
+      "claim_type": "EXPLICIT",
+      "source": "DunedinPoAm was less-well correlated with acceleration measured from the Horvath clock (r = 0.06).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Understanding Society Study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "cdd32c89-31e5-4ba4-b564-f0285c932474",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C39",
+      "claim": "Understanding Society participants with faster DunedinPoAm had more advanced KDM Biological Age.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants with faster DunedinPoAm had more advanced KDM Biological Age (r = 0.20 95% CI [0.15\u20130.26], p<0.001;) and worse self-rated health (r = \u22120.22 [-0.28,\u20130.16], p<0.001;).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Understanding Society Study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "7e9a5855-5de7-4276-ae51-918fe984d38a",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C40",
+      "claim": "During follow-up from 1999 to 2013, 46% of NAS participants died over a mean follow-up of 7 years.",
+      "claim_type": "EXPLICIT",
+      "source": "During follow-up from 1999 to 2013, 46% of NAS participants died over a mean follow-up of 7 years (SD = 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive finding from the NAS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "488c8169-6553-42ad-bbd7-a42d78b6548a",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C41",
+      "claim": "NAS participants with faster DunedinPoAm at baseline were at increased risk of death.",
+      "claim_type": "EXPLICIT",
+      "source": "Those with faster DunedinPoAm at baseline were at increased risk of death (Hazard Ratio (HR) = 1.29 [1.16\u20131.45], p<0.001; Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the NAS analysis, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "9da898e5-9e9d-4add-8ddf-a29a065cf6bc",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C42",
+      "claim": "During NAS follow-up, n = 175 participants were diagnosed with a new chronic disease.",
+      "claim_type": "EXPLICIT",
+      "source": "During follow-up across 4 assessments during 1999\u20132013 (n = 1448 observations of the N = 771 participants), n = 175 NAS participants were diagnosed with a new chronic disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive finding from the NAS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "c58a9cd1-77b9-485c-b7a5-f8c71c80252d",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C43",
+      "claim": "NAS participants with faster baseline DunedinPoAm were at increased risk of new chronic disease diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Those with faster baseline DunedinPoAm were at increased risk of new diagnosis (HR = 1.19 [1.03\u20131.38], p<0.019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the NAS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "4408e712-0e45-4c50-950f-b3d01bdc60d2",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C44",
+      "claim": "In repeated-measures analysis of prevalent chronic disease, faster DunedinPoAm was associated with having a higher level of chronic disease morbidity in NAS.",
+      "claim_type": "EXPLICIT",
+      "source": "In repeated-measures analysis of prevalent chronic disease, faster DunedinPoAm was associated with having a higher level of chronic disease morbidity (IRR = 1.15 [1.11\u20131.20], p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the NAS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "2ce89fac-0858-465a-8056-22a7c9b3e816",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C45",
+      "claim": "NAS participants' DunedinPoAm values increased across repeated assessments.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with Understanding Society analysis showing faster DunedinPoAm in older as compared to younger adults, NAS participants' DunedinPoAm values increased across repeated assessments. For every five years of follow-up, participants' DunedinPoAms increased by 0.012 (SE = 0.002, p<0.001) units, or about 0.2 standard deviations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from longitudinal analysis in the NAS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "3d263ebe-9ff3-4ead-b901-a7432f39ad9f",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C46",
+      "claim": "E-Risk adolescents who grew up in lower socioeconomic-status families exhibited faster DunedinPoAm.",
+      "claim_type": "EXPLICIT",
+      "source": "E-Risk adolescents who grew up in lower socioeconomic-status families exhibited faster DunedinPoAm (Cohen's d for comparison of low to moderate SES = 0.21 [0.06\u20130.35]; Cohen's d for comparison of low to high SES = 0.44 [0.31\u20130.56]; Pearson r = 0.19 [0.13\u20130.24]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the E-Risk Study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "cb7d91ee-339a-48f0-87f3-098a7b458d67",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C47",
+      "claim": "E-Risk adolescents with exposure to more types of victimization exhibited faster DunedinPoAm.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, E-Risk adolescents with exposure to more types of victimization exhibited faster DunedinPoAm (Cohen's d for comparison of never victimized to one type of victimization = 0.28 [0.15\u20130.41]; Cohen's d for comparison of never victimized to two types of victimization = 0.48 [0.23\u20130.72]; Cohen's d for comparison of never victimized to three or more types of victimization = 0.53 [0.25\u20130.81]; Pearson r = 0.15 [0.10\u20130.20]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the E-Risk Study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "5967c7a9-85d3-40b0-8800-b8cff689da59",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C48",
+      "claim": "CALERIE randomized N = 220 adults on a 2:1 ratio to treatment of 25% caloric restriction or control ad-libitum diet for two years.",
+      "claim_type": "EXPLICIT",
+      "source": "CALERIE randomized N = 220 adults on a 2:1 ratio to treatment of 25% caloric restriction (CR-treatment) or control ad-libitum (AL-control, as usual) diet for two years (Ravussin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the CALERIE trial design, supported by citation to Ravussin et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "c241b25c-c2c0-4229-acce-3c1c36a6fe98",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C49",
+      "claim": "CALERIE participants who were randomized to CR-treatment experienced a slower rate of biological aging as compared to participants in the AL-control arm based on longitudinal change analysis of clinical-biomarker data.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that CALERIE participants who were randomized to CR-treatment experienced a slower rate of biological aging as compared to participants in the AL-control arm based on longitudinal change analysis of clinical-biomarker data from the baseline, 12 month, and 24 month follow-up assessments (Belsky et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Belsky et al., 2018a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "84d915ae-0de9-4712-9bdc-b9520bd5bf7b",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C50",
+      "claim": "Among CALERIE control participants, the rate of increase in KDM Biological Age was 0.71 years of biological age per 12 month follow-up interval.",
+      "claim_type": "EXPLICIT",
+      "source": "Among control participants, the rate of increase in biological age measured using the Klemera-Doubal method (KDM) Biological Age algorithm was 0.71 years of biological age per 12 month follow-up interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the CALERIE trial analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "cac7c68e-8eba-4112-829e-8e85c96df244",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C51",
+      "claim": "Among CALERIE treatment participants, the rate of increase in KDM Biological Age was only 0.11 years of biological age per 12 month follow-up interval.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, among treatment participants, the rate of increase was only 0.11 years of biological age per 12 month follow-up interval (difference b = \u22120.60 [-0.99,\u20130.21]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the CALERIE trial analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "c090ea1b-c253-47aa-8ed7-13cb0f89040f",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C52",
+      "claim": "There was no group difference in DunedinPoAm between CR-treatment and AL-control participants at CALERIE baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, there was no group difference at baseline (AL M = 1.00, SD = 0.05; CR M = 1.01, SD = 0.06, p-value for difference = 0.440).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the CALERIE trial analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "ee6cac3b-9bcc-4f39-b3de-6843186dcb28",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C53",
+      "claim": "For CALERIE AL-control participants, faster baseline DunedinPoAm predicted faster biological aging over the 24 month follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "For AL-control participants, faster baseline DunedinPoAm predicted faster biological aging over the 24 month follow-up, although in this small group this association was not statistically significant at the alpha = 0.05 level (b = 0.22 [-0.05, 0.49], p=0.104).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the CALERIE trial analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "17e993f7-5485-4b7f-b343-282c5e84fa21",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C54",
+      "claim": "For CALERIE CR-treatment participants, the association of baseline DunedinPoAm with future rate of aging was sharply reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "For CR-treatment participants, the association of baseline DunedinPoAm with future rate of aging was sharply reduced, (b = \u22120.08 [-0.24, 0.09], p=0.351), although the difference between the rate of aging in the AL-control and CR-treatment groups did not reach the alpha = 0.05 threshold for statistical significance (interaction-term testing difference in slopes b = \u22120.30 [-0.61, 0.01], p-value=0.060).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the CALERIE trial analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "a4bca978-229c-47fe-ad95-d509c0a11f69",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C55",
+      "claim": "DunedinPoAm captured critical information about Dunedin Study members' healthspan-related characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "First, while DunedinPoAm was not a perfect proxy of Pace of Aging, it nevertheless captured critical information about Dunedin Study members' healthspan-related characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the findings from the Dunedin Study analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "d5e0d106-c7a3-4417-a8fe-1da214459b7e",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C56",
+      "claim": "DunedinPoAm showed promise as an easy-to-implement alternative to Pace of Aging.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, DunedinPoAm showed promise as an easy-to-implement alternative to Pace of Aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "436ebd10-d999-4f78-afb9-6f4191752bfe",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C57",
+      "claim": "Age differences in DunedinPoAm parallel population demographic patterns of mortality risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Age differences in DunedinPoAm parallel population demographic patterns of mortality risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the Understanding Society and NAS findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "cc3af5a1-ada2-488a-9b88-01f53305b5fe",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C58",
+      "claim": "DunedinPoAm is related to but distinct from alternative approaches to quantification of biological aging.",
+      "claim_type": "EXPLICIT",
+      "source": "DunedinPoAm is related to but distinct from alternative approaches to quantification of biological aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the correlation analyses with other measures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "1179f1d7-059f-4d31-a969-670b9bc33524",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C59",
+      "claim": "DunedinPoAm is already variable by young adulthood and is accelerated in young people at risk for eventual shortened healthspan.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, DunedinPoAm is already variable by young adulthood and is accelerated in young people at risk for eventual shortened healthspan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the E-Risk Study analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "dead3005-0b88-4cd6-98bc-3b81b1818095",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C60",
+      "claim": "DunedinPoAm analysis of the CALERIE trial provided proof-of-concept for using DunedinPoAm to quantify biological aging in geroprotector intervention studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, DunedinPoAm analysis of the CALERIE trial provided proof-of-concept for using DunedinPoAm to quantify biological aging in geroprotector intervention studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the CALERIE trial findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "5dda6044-8e8f-4a4b-814a-5606d5b05828",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C61",
+      "claim": "DunedinPoAm measures the rate of aging over the recent past.",
+      "claim_type": "EXPLICIT",
+      "source": "DunedinPoAm measures the rate of aging over the recent past.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual description of what DunedinPoAm is designed to measure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "8247f0bc-7463-455b-8edf-bb30d08e4df3",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C62",
+      "claim": "The relatively modest size of the Dunedin cohort and the lack of other cohorts with requisite repeated biomarkers limited sample size for machine-learning analysis to develop methylation algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively modest size of the Dunedin cohort and the lack of other cohorts that have the requisite three or more waves of repeated biomarkers to measure the Pace of Aging limited sample size for our machine-learning analysis to develop methylation algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "67292f6a-61c6-4212-9d27-15b9576c91ec",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C63",
+      "claim": "The Dunedin cohort, Understanding Society, NAS, E-Risk cohorts and CALERIE trial sample were mostly of white European descent.",
+      "claim_type": "EXPLICIT",
+      "source": "The Dunedin cohort in which DunedinPoAm was developed and the Understanding Society, NAS, and E-Risk cohorts and CALERIE trial sample in which it was tested were mostly of white European descent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "eb645f83-b0e4-4438-ade6-d1dfc3b0ac9d",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C64",
+      "claim": "Follow-up of DunedinPoAm in more diverse samples is needed to establish cross-population validity.",
+      "claim_type": "EXPLICIT",
+      "source": "Follow-up of DunedinPoAm in more diverse samples is needed to establish cross-population validity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation and recommendation acknowledged by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "761b6939-6419-43f0-8de3-9d844c970e27",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C65",
+      "claim": "DunedinPoAm can be implemented in Illumina 450k and EPIC array data.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be implemented in Illumina 450 k and EPIC array data, making it immediately available for testing in a wide range of existing datasets as a complement to existing methylation measures of aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the technical applicability of DunedinPoAm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "a05cf171-9c02-4722-a92b-101b0ae8ace6",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C66",
+      "claim": "DunedinPoAm offers a unique measurement for intervention trials and natural experiment studies investigating how the rate of aging may be changed.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, DunedinPoAm offers a unique measurement for intervention trials and natural experiment studies investigating how the rate of aging may be changed by behavioral or drug therapy, or by environmental modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential utility of DunedinPoAm based on the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "d8306840-6ee6-4ea5-b4d2-d8b8796b4c1c",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C67",
+      "claim": "The Dunedin Study is a longitudinal investigation of health and behavior in a complete birth cohort of N = 1,037 individuals born between April 1972 and March 1973 in Dunedin, New Zealand.",
+      "claim_type": "EXPLICIT",
+      "source": "The Dunedin Study is a longitudinal investigation of health and behavior in a complete birth cohort. Study members (N = 1,037; 91% of eligible births; 52% male) were all individuals born between April 1972 and March 1973 in Dunedin, New Zealand (NZ), who were eligible based on residence in the province and who participated in the first assessment at age 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Dunedin Study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "e91e30e3-0588-428a-93dc-171345a7677c",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C68",
+      "claim": "The Dunedin cohort represents the full range of socioeconomic status on NZ's South Island and matches the NZ National Health and Nutrition Survey on key health indicators.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohort represents the full range of socioeconomic status on NZ's South Island and matches the NZ National Health and Nutrition Survey on key health indicators (e.g., BMI, smoking, GP visits) (Poulton et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Poulton et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "e7f1199c-838e-4924-885d-10667ad1220c",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C69",
+      "claim": "The Dunedin cohort is primarily white (93%).",
+      "claim_type": "EXPLICIT",
+      "source": "The cohort is primarily white (93%) (Poulton et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Poulton et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "ea6fddec-6d9a-470c-bc81-98ccfa76661b",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C70",
+      "claim": "At the Dunedin Study age 45 assessment, 94% of the 997 study members still alive took part.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessments were carried out at birth and ages 3, 5, 7, 9, 11, 13, 15, 18, 21, 26, 32, 38 and, most recently, 45 years, when 94% of the 997 study members still alive took part.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Dunedin Study retention rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "ac2d1b71-729e-48b6-930a-7c6049274236",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C71",
+      "claim": "Understanding Society is an ongoing panel study of the United Kingdom population.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding Society is an ongoing panel study of the United Kingdom population (https://www.understandingsociety.ac.uk/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Understanding Society Study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "b8e42a36-798a-48cd-aa01-f89495b57503",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C72",
+      "claim": "The Normative Aging Study (NAS) is an ongoing longitudinal study on aging established by the US Department of Veterans Affairs in 1963.",
+      "claim_type": "EXPLICIT",
+      "source": "The Normative Aging Study (NAS) is an ongoing longitudinal study on aging established by the US Department of Veterans Affairs in 1963. Details of the study have been published previously (Bell et al., 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bell et al., 1972.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "dab2f0d7-57fb-4f60-aabc-bc400e37c5bc",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C73",
+      "claim": "The NAS is a closed cohort of 2280 male veterans from the Greater Boston area enrolled after an initial health screening to determine that they were free of known chronic medical conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the NAS is a closed cohort of 2280 male veterans from the Greater Boston area enrolled after an initial health screening to determine that they were free of known chronic medical conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the NAS cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "3d006227-e1d3-48b4-aebe-c63058e18a73",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C74",
+      "claim": "The Environmental Risk (E-Risk) Longitudinal Twin Study tracks the development of a birth cohort of 2,232 British participants.",
+      "claim_type": "EXPLICIT",
+      "source": "The Environmental Risk (E-Risk) Longitudinal Twin Study tracks the development of a birth cohort of 2,232 British participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the E-Risk Study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "567a03d7-e7fb-45cc-8d64-abcf3a83f913",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C75",
+      "claim": "The E-Risk sample was drawn from a larger birth register of twins born in England and Wales in 1994\u20131995.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample was drawn from a larger birth register of twins born in England and Wales in 1994\u20131995.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the E-Risk Study sampling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "3a6828dc-aaa6-455f-a132-1c8c0ac72d40",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C76",
+      "claim": "The E-Risk sample comprised 56% monozygotic (MZ) and 44% dizygotic (DZ) twin pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "This sample comprised 56% monozygotic (MZ) and 44% dizygotic (DZ) twin pairs; sex was evenly distributed within zygosity (49% male).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the E-Risk Study sample composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "fa45e28f-9c7b-4bd6-8983-357e0d299430",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C77",
+      "claim": "At the E-Risk age 18 assessment, 93% of the participants took part.",
+      "claim_type": "EXPLICIT",
+      "source": "Home-visits assessments took place when participants were aged 5, 7, 10, 12 and, most recently, 18 years, when 93% of the participants took part.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the E-Risk Study retention rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "8c7e72ab-e756-45de-880a-35a18a8e7946",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C78",
+      "claim": "In the CALERIE trial, participants in the caloric-restriction arm averaged 12% reduction in caloric intake over the course of the trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of the trial, participants in the caloric-restriction arm averaged 12% reduction in caloric intake (about half the prescribed reduction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the CALERIE trial.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "3a0d37a6-c26d-4a44-9b1e-3f88b9761af4",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C79",
+      "claim": "In the CALERIE trial, participants in the ad libitum condition reduced caloric intake by <2%.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants in the ad libitum condition reduced caloric intake by <2% (Ravussin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ravussin et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "f39e47f6-541b-4d6a-ad66-e4dcdbb54ab2",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C80",
+      "claim": "DNA methylation was measured from Illumina 450k Arrays in the Dunedin Study, NAS, and E-Risk Study.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation was measured from Illumina 450 k Arrays in the Dunedin Study, NAS, and E-Risk Study and from Illumina EPIC 850 k Arrays in the Understanding Society study and the CALERIE Trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the DNA methylation measurement methods used in the studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "d0810e91-dbd1-4b41-9881-40e5630f7c17",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C81",
+      "claim": "DNA was derived from whole blood samples in all studies.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA was derived from whole blood samples in all studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the biological sample type used for DNA methylation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "906c2bb5-a9d6-4018-9417-1f9869b69562",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C82",
+      "claim": "None of the 46 CpGs included in the DunedinPoAm algorithm overlapped with CpGs in the Horvath, Hannum, and Levine epigenetic clocks.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the 46 CpGs included in the DunedinPoAm algorithm overlapped with CpGs in these epigenetic clocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparison of the DunedinPoAm algorithm with other epigenetic clocks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "4b53cc29-ab76-4a66-be6e-09bb74e21d12",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C83",
+      "claim": "Pace of Aging was scaled in units representing the mean trend in the cohort, that is the average physiological change occurring during one calendar year.",
+      "claim_type": "EXPLICIT",
+      "source": "Pace of Aging was scaled in units representing the mean trend in the cohort, that is the average physiological change occurring during one calendar year (N = 954, M = 1, SD = 0.38).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scaling of the Pace of Aging measure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "5b5e66a1-ad07-42ef-a823-6d6dadfa061b",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C84",
+      "claim": "The mPoA algorithms developed across the 100 bootstrap repetitions included different sets of CpGs (range of 21\u2013209 CpGs selected, M = 54, SD = 27 CpGs).",
+      "claim_type": "EXPLICIT",
+      "source": "The mPoA algorithms developed across the 100 bootstrap repetitions included different sets of CpGs (range of 21\u2013209 CpGs selected, M = 54, SD = 27 CpGs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the bootstrap cross-validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "12c6c7b9-bf83-4a28-b1ce-4f8bc9957ed7",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "claim_id": "C85",
+      "claim": "The mPoA algorithms developed across bootstrap repetitions were highly correlated (mean pairwise r = 0.90, SD = 0.14).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the resulting algorithms were highly correlated (mean pairwise r = 0.90, SD = 0.14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the bootstrap cross-validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "588330c8-ca98-400f-bcaf-63d3950842ac",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the scientific rationale and need for developing measures of biological aging pace. Aging populations face rising disease burden from multiple age-related diseases, and treatments targeting aging itself could address this challenge more effectively than single-disease treatments. However, human trials are challenging due to long lifespans, necessitating surrogate endpoints that can quantify the pace of biological aging in young-to-midlife adults.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 collectively establish a well-supported rationale based on cited literature and logical reasoning. The claims about population aging (C2), limitations of single-disease treatments (C3), potential of aging interventions (C4-C6), and need for surrogate endpoints (C7-C10) are all supported by appropriate citations and form a coherent argument for the study's purpose.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "be599697-53c2-46d8-83d7-61dcae4ea386",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Existing DNA methylation clocks have limitations because they confound methylation patterns from early-life exposures with patterns related to biological aging during adulthood. This occurs because individuals born in different years experienced different historical conditions (diseases, environmental exposures, nutrition) that leave signatures on DNA methylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 are supported by citations and logical reasoning about cohort effects. The limitation is well-articulated: existing clocks compare people of different ages who grew up under different conditions, making it difficult to isolate aging-related methylation changes from cohort-specific exposures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "a9148f8f-680f-4809-bd06-25365f48024e",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Dunedin Study previously developed a 'Pace of Aging' measure from longitudinal tracking of 18 biomarkers across ages 26-38 in a birth cohort. This measure showed normal distribution with marked individual variation despite same chronological age, and was validated against physical function, cognitive decline, facial aging, self-rated health, early-life risk factors, and Brain Age. Notably, Pace of Aging was not well-correlated with existing epigenetic clocks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 describe previously published work (Belsky et al., 2015, 2017, 2018b; Elliott et al., 2019) that established the foundation for the current study. The claims are appropriately cited and provide essential context for understanding the development of DunedinPoAm. The validation evidence and distinction from epigenetic clocks are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "925a56e2-9b31-4d90-91b0-3b60cf6f5115",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DunedinPoAm was developed using elastic-net regression to predict Pace of Aging from age-38 DNA methylation data in the Dunedin Study. The algorithm selected 46 CpG sites and showed an in-sample correlation of r=0.56 with Pace of Aging, with bootstrap cross-validation estimating an out-of-sample correlation of r=0.33. DunedinPoAm is conceptually distinct from existing epigenetic clocks: it measures the rate of aging (like a speedometer) rather than the state of aging (like a clock).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 describe the core methodological development of DunedinPoAm. The elastic-net approach is appropriate, the algorithm details are provided (46 CpGs), and the authors appropriately acknowledge that the in-sample correlation (r=0.56) is likely an overestimate, providing a more realistic out-of-sample estimate (r=0.33) from cross-validation. The conceptual distinction between rate and state measures is clearly articulated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "88b03db0-dac4-4bb2-939b-818e39393d4a",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the Dunedin Study, age-38 DunedinPoAm prospectively predicted age-45 outcomes across multiple domains. Individuals with faster DunedinPoAm showed worse physical function (balance, walking speed, chair stands, motor coordination, physical limitations; r=0.15-0.29), greater physical decline over 7 years, worse cognitive performance (r=0.14-0.28), cognitive decline from childhood baseline (r=0.12-0.20), worse self-rated health (r=0.27), older facial appearance (r=0.35), and accelerated facial aging. Effect sizes were similar to or larger than those for the original 18-biomarker Pace of Aging measure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C33 present comprehensive prospective validation of DunedinPoAm in the Dunedin Study. The associations span multiple relevant domains (physical, cognitive, subjective aging), include both cross-sectional and longitudinal change analyses, and show consistent effect sizes with appropriate statistical significance. The comparison to the original Pace of Aging measure (C33) provides important validation that the methylation-based measure captures similar information. Sample sizes are adequate (N~900) and the 7-year follow-up is substantial.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "230f2512-b843-4cc4-a3d9-fa01d1f3d0b2",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In the Understanding Society Study (N=1,175, ages 28-95), DunedinPoAm showed a positive correlation with chronological age (r=0.11), consistent with demographic patterns of increasing mortality risk with age. DunedinPoAm was moderately correlated with Hannum (r=0.24) and Levine (r=0.30) epigenetic clock acceleration, but weakly correlated with Horvath clock acceleration (r=0.06). DunedinPoAm was associated with KDM Biological Age (r=0.20) and self-rated health (r=-0.22).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 demonstrate that DunedinPoAm shows expected patterns in a cross-sectional, mixed-age sample. The positive correlation with chronological age (C35) is theoretically consistent with accelerating mortality risk. The moderate correlations with other aging measures (C37-C39) suggest DunedinPoAm captures related but distinct information. The weak correlation with Horvath clock (C38) is consistent with prior findings for Pace of Aging (C17). Sample size is adequate and analyses are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "ba239016-76b6-4039-849b-e9bb66e4fea7",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In the Normative Aging Study (N=771 older men, mean age 77), faster baseline DunedinPoAm was associated with increased mortality risk (HR=1.29), increased risk of new chronic disease diagnosis (HR=1.19), and higher prevalent chronic disease burden (IRR=1.15) over follow-up from 1999-2013. Additionally, DunedinPoAm values increased over time within individuals, with an increase of 0.012 units (0.2 SD) per 5 years of follow-up.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 provide strong validation of DunedinPoAm for predicting hard clinical outcomes (mortality and morbidity) in older adults. The hazard ratios are clinically meaningful and statistically significant. The longitudinal increase in DunedinPoAm within individuals (C45) provides important evidence that the measure tracks aging over time, not just cross-sectional differences. The sample size is adequate, follow-up is substantial (mean 7 years), and the repeated-measures design for C44-C45 is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "2082d0ca-86ce-4bcb-a021-c8cfb511b3a5",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In the E-Risk Study (N=1,658 18-year-olds), adolescents from lower socioeconomic status families showed faster DunedinPoAm (Cohen's d=0.21-0.44, r=0.19), and those exposed to more types of victimization showed faster DunedinPoAm (Cohen's d=0.28-0.53, r=0.15). These associations demonstrate that DunedinPoAm is already variable in young adulthood and is accelerated by early-life adversity known to shorten healthspan.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 demonstrate that DunedinPoAm detects aging acceleration in young adults exposed to known risk factors for shortened healthspan. The effect sizes are modest but consistent with epidemiological expectations for early-life adversity effects. The sample size is large (N=1,658) and the exposures (SES, victimization) are well-established risk factors. This provides important evidence that biological aging differences emerge early in life.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "b062ea1f-8b34-4eea-bb10-bd7f1d52c472",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In the CALERIE trial (N=220 adults randomized 2:1 to caloric restriction vs. control), baseline DunedinPoAm predicted future rate of biological aging in control participants (b=0.22, p=0.104), but this association was eliminated in caloric restriction participants (b=-0.08, p=0.351). The difference between groups approached but did not reach statistical significance (interaction p=0.060). This provides proof-of-concept that DunedinPoAm can detect intervention effects on aging rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C54 present suggestive but not definitive evidence for DunedinPoAm's utility in intervention trials. The key limitation is that neither the main effect in controls (C53, p=0.104) nor the interaction term (C54, p=0.060) reached conventional statistical significance (\u03b1=0.05). The sample size is modest (N=68 controls, N=118 treatment), which limits power. The pattern of results is consistent with the hypothesis that caloric restriction disrupts the relationship between baseline DunedinPoAm and future aging rate, but stronger evidence would require: (1) larger sample size, (2) post-intervention DunedinPoAm measurements, and (3) statistically significant effects. The authors appropriately acknowledge these limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "f93d8352-15bf-4257-bf22-caa9362f2f23",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors conclude that DunedinPoAm shows promise as a single-time-point measure of aging pace. It captures critical healthspan-related information, shows age patterns consistent with mortality risk, is related to but distinct from other aging measures, is variable by young adulthood and accelerated by early-life adversity, and shows potential utility in intervention studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 are summary conclusions that are well-supported by the collective evidence from claims C24-C54. The prospective associations with functional decline (C24-C33), cross-sectional patterns (C34-C39), associations with mortality and morbidity (C40-C45), early-life adversity effects (C46-C47), and suggestive intervention trial results (C48-C54) together support these conclusions. The authors appropriately characterize DunedinPoAm as 'showing promise' rather than making definitive claims about clinical utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "3f0bbceb-21a1-4b66-aaa2-cfe18f310a11",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors acknowledge key limitations: DunedinPoAm measures recent aging rate (not lifetime accumulation), the Dunedin cohort size limited machine-learning sample size, all study samples were predominantly white European descent, and validation in more diverse populations is needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 appropriately acknowledge important limitations. The conceptual distinction between rate and state (C61) is important for interpretation. The sample size limitation (C62) is real\u2014N=810 is modest for developing a genomic predictor, though the bootstrap validation partially addresses this. The lack of population diversity (C63-C64) is a critical limitation that could affect generalizability, and the authors appropriately call for follow-up studies in diverse samples.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "af8feb3c-bf38-4a2a-8103-1e22a7ca9a3a",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "DunedinPoAm can be implemented in both Illumina 450k and EPIC array data, making it immediately available for testing in existing datasets. It offers unique utility for intervention trials and natural experiments investigating how aging rate may be modified by behavioral, pharmacological, or environmental interventions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 describe the practical utility and potential applications of DunedinPoAm. The technical compatibility with both array platforms (C65) is a strength that facilitates widespread adoption. The proposed utility for intervention studies (C66) is supported by the CALERIE analysis (C48-C54), though as noted, stronger evidence is needed. The claims are appropriately framed as potential applications rather than established utility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    },
+    {
+      "id": "cecd798a-5367-46f5-a173-2a1ddaa863c1",
+      "content_id": "c6895ced-7c68-4ac1-ade2-ebe9694efdc6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript provides detailed descriptions of the five study cohorts (Dunedin, Understanding Society, NAS, E-Risk, CALERIE), DNA methylation measurement methods, and technical details of the DunedinPoAm algorithm development including bootstrap validation results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C85 provide methodological details and cohort descriptions that are essential for reproducibility and interpretation. The cohort descriptions are well-documented with appropriate citations. The DNA methylation methods are standard and appropriately described. The bootstrap validation results (C84-C85) showing variable CpG selection but high algorithm correlation (mean r=0.90) provide important information about algorithm stability. The lack of CpG overlap with existing clocks (C82) confirms that DunedinPoAm captures distinct information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:53:49.564604Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "59ab4763-4a6c-4c76-9def-a784c15a7082",
+      "result_id": "588330c8-ca98-400f-bcaf-63d3950842ac"
+    },
+    {
+      "claim_id": "27e4ec02-46fe-42f8-80c9-486a4eeeb8e0",
+      "result_id": "588330c8-ca98-400f-bcaf-63d3950842ac"
+    },
+    {
+      "claim_id": "d42b138a-7a5f-4ab1-8ecd-9b766fce2a96",
+      "result_id": "588330c8-ca98-400f-bcaf-63d3950842ac"
+    },
+    {
+      "claim_id": "047802bc-0883-4bde-921b-b2a6e0f6e637",
+      "result_id": "588330c8-ca98-400f-bcaf-63d3950842ac"
+    },
+    {
+      "claim_id": "b1421f73-b3f6-41a5-8d3b-d9f36d0ae531",
+      "result_id": "588330c8-ca98-400f-bcaf-63d3950842ac"
+    },
+    {
+      "claim_id": "3ad12d1d-55e1-4be3-be7e-409ab5ae015e",
+      "result_id": "588330c8-ca98-400f-bcaf-63d3950842ac"
+    },
+    {
+      "claim_id": "acad5fbb-9764-42ee-9079-09d22e981f34",
+      "result_id": "588330c8-ca98-400f-bcaf-63d3950842ac"
+    },
+    {
+      "claim_id": "fba436d5-c76f-4730-9eee-dd33d26baa8d",
+      "result_id": "588330c8-ca98-400f-bcaf-63d3950842ac"
+    },
+    {
+      "claim_id": "308fc7fd-137e-4dc9-b8c6-70485353141f",
+      "result_id": "588330c8-ca98-400f-bcaf-63d3950842ac"
+    },
+    {
+      "claim_id": "937356b3-d114-4294-85a1-29ec4e1c4448",
+      "result_id": "588330c8-ca98-400f-bcaf-63d3950842ac"
+    },
+    {
+      "claim_id": "b2bafb7f-a71b-4129-a01e-016db263e627",
+      "result_id": "be599697-53c2-46d8-83d7-61dcae4ea386"
+    },
+    {
+      "claim_id": "b1148492-b273-43fe-921e-67624dc348f2",
+      "result_id": "be599697-53c2-46d8-83d7-61dcae4ea386"
+    },
+    {
+      "claim_id": "92c42afc-f987-466e-bcdd-aa9739cbe959",
+      "result_id": "a9148f8f-680f-4809-bd06-25365f48024e"
+    },
+    {
+      "claim_id": "56e2ddab-b554-48e1-b219-4b99e8285999",
+      "result_id": "a9148f8f-680f-4809-bd06-25365f48024e"
+    },
+    {
+      "claim_id": "3ab9c337-0ecd-4196-98bd-57542bcee3c1",
+      "result_id": "a9148f8f-680f-4809-bd06-25365f48024e"
+    },
+    {
+      "claim_id": "efe6f860-9a6b-4fce-870b-9dfe81500cca",
+      "result_id": "a9148f8f-680f-4809-bd06-25365f48024e"
+    },
+    {
+      "claim_id": "167998b3-1255-48b6-b250-c5d8de330303",
+      "result_id": "a9148f8f-680f-4809-bd06-25365f48024e"
+    },
+    {
+      "claim_id": "1242571a-8d5b-41d9-8955-29465a34ef12",
+      "result_id": "925a56e2-9b31-4d90-91b0-3b60cf6f5115"
+    },
+    {
+      "claim_id": "389072b7-7b2a-4160-b838-1d175914262a",
+      "result_id": "925a56e2-9b31-4d90-91b0-3b60cf6f5115"
+    },
+    {
+      "claim_id": "bd2f1e88-ffbb-4282-b779-fd50eb512c25",
+      "result_id": "925a56e2-9b31-4d90-91b0-3b60cf6f5115"
+    },
+    {
+      "claim_id": "6bcdd9ad-3c9b-4b73-8160-33ac5580d94d",
+      "result_id": "925a56e2-9b31-4d90-91b0-3b60cf6f5115"
+    },
+    {
+      "claim_id": "b1d2f532-ad19-4796-abc7-f69d88726abf",
+      "result_id": "925a56e2-9b31-4d90-91b0-3b60cf6f5115"
+    },
+    {
+      "claim_id": "cd436b01-908b-46f0-aff6-af378cd790d9",
+      "result_id": "925a56e2-9b31-4d90-91b0-3b60cf6f5115"
+    },
+    {
+      "claim_id": "7d8e13d3-0d63-4834-ac1b-19d9ac8d6783",
+      "result_id": "88b03db0-dac4-4bb2-939b-818e39393d4a"
+    },
+    {
+      "claim_id": "c3c32112-e700-45af-96b7-fd068919b914",
+      "result_id": "88b03db0-dac4-4bb2-939b-818e39393d4a"
+    },
+    {
+      "claim_id": "7b75c386-efaa-4614-980b-1193157ea417",
+      "result_id": "88b03db0-dac4-4bb2-939b-818e39393d4a"
+    },
+    {
+      "claim_id": "608fb48d-05bb-4633-9d97-06f2c020c4d0",
+      "result_id": "88b03db0-dac4-4bb2-939b-818e39393d4a"
+    },
+    {
+      "claim_id": "ca8f265e-17d4-4535-8a0b-8c7e37ea5323",
+      "result_id": "88b03db0-dac4-4bb2-939b-818e39393d4a"
+    },
+    {
+      "claim_id": "695942c6-6e33-4308-8cd0-38f27e5691e1",
+      "result_id": "88b03db0-dac4-4bb2-939b-818e39393d4a"
+    },
+    {
+      "claim_id": "cf34e50a-07ec-4383-92f7-79e04ed7a974",
+      "result_id": "88b03db0-dac4-4bb2-939b-818e39393d4a"
+    },
+    {
+      "claim_id": "cd293c42-532e-448a-9585-0a0ea1e1e916",
+      "result_id": "88b03db0-dac4-4bb2-939b-818e39393d4a"
+    },
+    {
+      "claim_id": "01b53ca8-53a6-4aff-bcd1-4474be3b1cf2",
+      "result_id": "88b03db0-dac4-4bb2-939b-818e39393d4a"
+    },
+    {
+      "claim_id": "6c530d60-106b-4f3e-9847-233eea8e1956",
+      "result_id": "88b03db0-dac4-4bb2-939b-818e39393d4a"
+    },
+    {
+      "claim_id": "5f7f2605-1d18-4830-91fc-cf39dee23483",
+      "result_id": "230f2512-b843-4cc4-a3d9-fa01d1f3d0b2"
+    },
+    {
+      "claim_id": "78d0d006-ce13-4d72-9a48-04bec2a85bdb",
+      "result_id": "230f2512-b843-4cc4-a3d9-fa01d1f3d0b2"
+    },
+    {
+      "claim_id": "dc8a229d-9596-479a-ad57-244c43105ad3",
+      "result_id": "230f2512-b843-4cc4-a3d9-fa01d1f3d0b2"
+    },
+    {
+      "claim_id": "b3266ba2-d5ff-4af3-9b00-41caef1f2947",
+      "result_id": "230f2512-b843-4cc4-a3d9-fa01d1f3d0b2"
+    },
+    {
+      "claim_id": "6a2774ec-b121-434a-ab93-0baf7d3e547c",
+      "result_id": "230f2512-b843-4cc4-a3d9-fa01d1f3d0b2"
+    },
+    {
+      "claim_id": "cdd32c89-31e5-4ba4-b564-f0285c932474",
+      "result_id": "230f2512-b843-4cc4-a3d9-fa01d1f3d0b2"
+    },
+    {
+      "claim_id": "7e9a5855-5de7-4276-ae51-918fe984d38a",
+      "result_id": "ba239016-76b6-4039-849b-e9bb66e4fea7"
+    },
+    {
+      "claim_id": "488c8169-6553-42ad-bbd7-a42d78b6548a",
+      "result_id": "ba239016-76b6-4039-849b-e9bb66e4fea7"
+    },
+    {
+      "claim_id": "9da898e5-9e9d-4add-8ddf-a29a065cf6bc",
+      "result_id": "ba239016-76b6-4039-849b-e9bb66e4fea7"
+    },
+    {
+      "claim_id": "c58a9cd1-77b9-485c-b7a5-f8c71c80252d",
+      "result_id": "ba239016-76b6-4039-849b-e9bb66e4fea7"
+    },
+    {
+      "claim_id": "4408e712-0e45-4c50-950f-b3d01bdc60d2",
+      "result_id": "ba239016-76b6-4039-849b-e9bb66e4fea7"
+    },
+    {
+      "claim_id": "2ce89fac-0858-465a-8056-22a7c9b3e816",
+      "result_id": "ba239016-76b6-4039-849b-e9bb66e4fea7"
+    },
+    {
+      "claim_id": "3d263ebe-9ff3-4ead-b901-a7432f39ad9f",
+      "result_id": "2082d0ca-86ce-4bcb-a021-c8cfb511b3a5"
+    },
+    {
+      "claim_id": "cb7d91ee-339a-48f0-87f3-098a7b458d67",
+      "result_id": "2082d0ca-86ce-4bcb-a021-c8cfb511b3a5"
+    },
+    {
+      "claim_id": "5967c7a9-85d3-40b0-8800-b8cff689da59",
+      "result_id": "b062ea1f-8b34-4eea-bb10-bd7f1d52c472"
+    },
+    {
+      "claim_id": "c241b25c-c2c0-4229-acce-3c1c36a6fe98",
+      "result_id": "b062ea1f-8b34-4eea-bb10-bd7f1d52c472"
+    },
+    {
+      "claim_id": "84d915ae-0de9-4712-9bdc-b9520bd5bf7b",
+      "result_id": "b062ea1f-8b34-4eea-bb10-bd7f1d52c472"
+    },
+    {
+      "claim_id": "cac7c68e-8eba-4112-829e-8e85c96df244",
+      "result_id": "b062ea1f-8b34-4eea-bb10-bd7f1d52c472"
+    },
+    {
+      "claim_id": "c090ea1b-c253-47aa-8ed7-13cb0f89040f",
+      "result_id": "b062ea1f-8b34-4eea-bb10-bd7f1d52c472"
+    },
+    {
+      "claim_id": "ee6cac3b-9bcc-4f39-b3de-6843186dcb28",
+      "result_id": "b062ea1f-8b34-4eea-bb10-bd7f1d52c472"
+    },
+    {
+      "claim_id": "17e993f7-5485-4b7f-b343-282c5e84fa21",
+      "result_id": "b062ea1f-8b34-4eea-bb10-bd7f1d52c472"
+    },
+    {
+      "claim_id": "a4bca978-229c-47fe-ad95-d509c0a11f69",
+      "result_id": "f93d8352-15bf-4257-bf22-caa9362f2f23"
+    },
+    {
+      "claim_id": "d5e0d106-c7a3-4417-a8fe-1da214459b7e",
+      "result_id": "f93d8352-15bf-4257-bf22-caa9362f2f23"
+    },
+    {
+      "claim_id": "436ebd10-d999-4f78-afb9-6f4191752bfe",
+      "result_id": "f93d8352-15bf-4257-bf22-caa9362f2f23"
+    },
+    {
+      "claim_id": "cc3af5a1-ada2-488a-9b88-01f53305b5fe",
+      "result_id": "f93d8352-15bf-4257-bf22-caa9362f2f23"
+    },
+    {
+      "claim_id": "1179f1d7-059f-4d31-a969-670b9bc33524",
+      "result_id": "f93d8352-15bf-4257-bf22-caa9362f2f23"
+    },
+    {
+      "claim_id": "dead3005-0b88-4cd6-98bc-3b81b1818095",
+      "result_id": "f93d8352-15bf-4257-bf22-caa9362f2f23"
+    },
+    {
+      "claim_id": "5dda6044-8e8f-4a4b-814a-5606d5b05828",
+      "result_id": "3f0bbceb-21a1-4b66-aaa2-cfe18f310a11"
+    },
+    {
+      "claim_id": "8247f0bc-7463-455b-8edf-bb30d08e4df3",
+      "result_id": "3f0bbceb-21a1-4b66-aaa2-cfe18f310a11"
+    },
+    {
+      "claim_id": "67292f6a-61c6-4212-9d27-15b9576c91ec",
+      "result_id": "3f0bbceb-21a1-4b66-aaa2-cfe18f310a11"
+    },
+    {
+      "claim_id": "eb645f83-b0e4-4438-ade6-d1dfc3b0ac9d",
+      "result_id": "3f0bbceb-21a1-4b66-aaa2-cfe18f310a11"
+    },
+    {
+      "claim_id": "761b6939-6419-43f0-8de3-9d844c970e27",
+      "result_id": "af8feb3c-bf38-4a2a-8103-1e22a7ca9a3a"
+    },
+    {
+      "claim_id": "a05cf171-9c02-4722-a92b-101b0ae8ace6",
+      "result_id": "af8feb3c-bf38-4a2a-8103-1e22a7ca9a3a"
+    },
+    {
+      "claim_id": "d8306840-6ee6-4ea5-b4d2-d8b8796b4c1c",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "e91e30e3-0588-428a-93dc-171345a7677c",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "e7f1199c-838e-4924-885d-10667ad1220c",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "ea6fddec-6d9a-470c-bc81-98ccfa76661b",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "ac2d1b71-729e-48b6-930a-7c6049274236",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "b8e42a36-798a-48cd-aa01-f89495b57503",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "dab2f0d7-57fb-4f60-aabc-bc400e37c5bc",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "3d006227-e1d3-48b4-aebe-c63058e18a73",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "567a03d7-e7fb-45cc-8d64-abcf3a83f913",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "3a6828dc-aaa6-455f-a132-1c8c0ac72d40",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "fa45e28f-9c7b-4bd6-8983-357e0d299430",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "8c7e72ab-e756-45de-880a-35a18a8e7946",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "3a0d37a6-c26d-4a44-9b1e-3f88b9761af4",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "f39e47f6-541b-4d6a-ad66-e4dcdbb54ab2",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "d0810e91-dbd1-4b41-9881-40e5630f7c17",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "906c2bb5-a9d6-4018-9417-1f9869b69562",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "4b53cc29-ab76-4a66-be6e-09bb74e21d12",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "5b5e66a1-ad07-42ef-a823-6d6dadfa061b",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    },
+    {
+      "claim_id": "12c6c7b9-bf83-4a28-b1ce-4f8bc9957ed7",
+      "result_id": "cecd798a-5367-46f5-a173-2a1ddaa863c1"
+    }
+  ],
+  "comparisons": []
+}

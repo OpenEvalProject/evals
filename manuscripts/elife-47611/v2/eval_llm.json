@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Mice were trained to perform a goal-directed spatial navigation task in virtual reality (VR) where they ran to alternating ends of a track for water rewards. Upon exposure to a novel VR environment (New), behavioral performance was significantly impaired on Days 1, 2, and 4 compared to the familiar environment (FamAve), with the largest impairment on Day 1 that gradually decreased over 5 days. Multiple behavioral metrics confirmed this impairment and recovery, including licking patterns, deceleration before rewards, and the time course of recovery being similar across two distinct new environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 provide converging evidence from multiple behavioral metrics (rewards/min, licking patterns, deceleration) with statistical support (p-values and t-statistics reported in C27, C31). The experimental design includes appropriate controls (Fam and Fam' epochs) to rule out confounds like satiation or fatigue (C33), and the consistency across two new environments (C32) supports context-dependent learning rather than general strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "SOM-expressing interneuron (SOM-int) calcium activity was strongly suppressed upon transition to the New environment, with individual neurons showing differential suppression. Activity rapidly recovered when mice returned to the familiar environment (Fam'), and the suppression gradually decreased over 5 days of exposure to New (Day 1: p<0.001, t=-8.70; Day 2: p<0.05, t=-4.06). This recovery paralleled the improvement in behavioral performance. Both somatic and neurite activity showed similar suppression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are well-supported by calcium imaging data with statistical tests (C37), figures showing individual cell traces and population data (C34, C36), and analysis of both soma and neurites (C39). The parallel between neural activity recovery and behavioral improvement (C38) is demonstrated with statistical support. The use of two-photon imaging allows stable tracking of the same cells across days.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "General linear models (GLMs) trained on behavioral variables (locomotion, rewards, position) in the familiar environment poorly predicted SOM-int activity in the New environment across all 5 days, as measured by both RMS error and R\u00b2. Importantly, GLMs trained on behavioral data from the New environment itself also poorly predicted activity in New, suggesting that the suppression of SOM-int activity is not simply explained by changes in behavior but is likely triggered by contextual novelty itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 provide strong computational evidence through GLM analysis. The key finding that models trained in New also fail to predict activity in New (C43) is critical for ruling out behavioral explanations. The use of multiple model performance metrics (RMS error, R\u00b2) and training/testing in different epochs strengthens the conclusion. Statistical significance is reported for model comparisons (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Parvalbumin-expressing interneurons (PV-ints) showed similar activity dynamics to SOM-ints, with strong suppression in New that recovered with repeated exposure. Suppression appeared even stronger in PV-ints, possibly reflecting their higher baseline firing rates. Individual PV-ints showed a spectrum of suppression ranging from strong suppression to moderate activation, and both somatic and neurite activity were suppressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by calcium imaging data from PV-ints (N=6 mice, n=172 cells) with similar experimental design as SOM-ints. The observation of stronger suppression in PV-ints (C46) is appropriately qualified as qualitative and explained by citation to baseline firing rate differences. The heterogeneity across individual cells (C47) and consistency between soma and neurites (C48) are documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In a 'No Task' condition (static black screen, no rewards), SOM-int activity was initially suppressed similar to the New environment, but unlike New, activity remained strongly suppressed over all 5 days of exposure. In contrast, the same cells from the same mice showed strong recovery over 5 days in the New environment. This suggests that recovery of SOM-int activity depends on recovery of task performance rather than habituation to surprise or novelty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide a critical control experiment using the same cells tracked across both New and No Task conditions (N=6 mice subset). The contrasting dynamics between New (recovery) and No Task (persistent suppression) strongly support the interpretation that task performance recovery is necessary for neural activity recovery (C52). This within-subject design eliminates many confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Population-level analysis of short-time correlation (5s bins) showed that SOM-ints had stable correlation in Fam that dropped significantly on Day 1 of New, but recovered to similar levels across Fam, New, and Fam' by Day 2. In contrast, SOM-ints in 'No Task' showed persistently low correlation throughout 5 days. PV-ints showed decreased correlation in New relative to Fam that remained significant for all 5 days, unlike SOM-ints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by population correlation analysis with statistical tests. The different temporal dynamics between SOM-ints (recovery by Day 2) and PV-ints (persistent decrease) reveal cell-type-specific differences. The persistent low correlation in No Task (C55) is consistent with the persistent activity suppression in that condition. The analysis method (pairwise correlations in 5s bins) is clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Individual SOM-ints showed consistent, cell-specific levels of activity suppression across multiple distinct new environments (New 1 vs New 2), with significant correlation on all days (Day 1-5: all p<0.001). Even when comparing New 1 to the drastically different 'No Task' epoch, there was significant correlation on Day 1 (p<0.001), though not on Days 2-5 as activity recovered in New 1 but remained suppressed in No Task. This demonstrates that each SOM-int exhibits a characteristic, consistent degree of activity suppression across different novel contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 provide strong evidence for stable, cell-specific functional properties using within-cell comparisons across conditions. The correlation analysis is statistically robust (all p<0.001 for New 1 vs New 2 across all days). The loss of correlation between New 1 and No Task on Days 2-5 (C59) is appropriately explained by differential recovery dynamics and actually strengthens the interpretation. This is a key novel finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Analysis of factors that might predict individual SOM-int suppression levels found that cells stratified by initial suppression magnitude remained stratified across 5 days. However, suppression magnitude was not associated with soma location (SO vs SP, p=0.38), baseline fluorescence, soma area (p>0.99), locomotion correlation type (p>0.99), or cell-cell distance (p>0.99). Closer cells showed slightly more similar activity, though the relationship was weak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 systematically test multiple hypotheses about what determines suppression magnitude, with appropriate statistical tests and clear negative results. The stability of suppression stratification over days (C61) supports the consistency finding. The negative results for anatomical and functional features (C62-C66) are important for ruling out simple explanations. Statistical tests are reported for key comparisons. The weak spatial relationship (C67) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Cell-cell activity correlation structure was preserved across different environments (Fam vs New, New 1 vs New 2, Fam vs No Task, New vs No Task). Cell pairs with dissimilar activity suppression in New had lower activity correlations in Fam, and cell pairs with more similar activity had significantly less activity suppression (though this relationship was weak). This activity structure remained stable across 5 days of exposure in all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 demonstrate preserved network structure using pairwise correlation analysis across multiple condition comparisons. The correlation matrices and scatter plots provide visual and quantitative support. The relationship between activity similarity and suppression magnitude (C70-C71) is appropriately qualified as weak but significant. The stability over 5 days (C72) reinforces the consistency of network structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study found that SOM-int and PV-int activity was initially strongly suppressed upon exposure to novel virtual environments and recovered as animals learned to adapt the task to the new context. For SOM-ints, there was a persistent functional network structure across familiar and novel environments, with each SOM-int exhibiting characteristic activity suppression in multiple new environments and in the 'No Task' condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 accurately summarize the main findings of the study, which are supported by the detailed experimental results in earlier claim groups. These summary claims integrate findings about both cell types (C73-C74) and the novel discovery of stable functional structure in SOM-ints (C75-C76). All component findings have been individually validated in previous result groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The findings are interpreted as consistent with a model where entering new environments triggers decreased network inhibition that gradually recovers during learning. Suppression of both dendrite-targeting (SOM-ints) and soma-targeting (PV-ints) interneurons suggests general disinhibition of pyramidal neurons, which may act as a permissive gate for learning by enhancing synaptic plasticity. However, the authors acknowledge that actual inhibitory drive onto pyramidal neurons remains unknown as only calcium activity in interneuron somata and neurites was measured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C79 are interpretations and speculations based on the data, appropriately supported by citations to prior work. However, C80 correctly identifies a critical limitation: calcium activity in interneurons does not directly measure inhibitory drive onto pyramidal neurons. The relationship between interneuron calcium signals and actual synaptic inhibition is complex and could be affected by multiple factors. The interpretation is plausible but requires additional experiments (e.g., voltage clamp recordings of IPSCs in pyramidal neurons) for validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "In the 'No Task' epoch, the normal positive correlation between locomotion and interneuronal activity was greatly weakened\u2014mice ran at high speed but SOM-int and PV-int activity remained low. This suggests the low interneuron activity state may signify a network primed for learning rather than simply indicating novelty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is an observation supported by the data showing dissociation between locomotion and interneuron activity in No Task. Claim C82 is a reasonable speculation based on the differential recovery in New (with task) vs No Task (without task). However, C82 remains speculative as the authors acknowledge multiple variables change in No Task (loss of VR world, rewards, task rules), making it difficult to isolate the specific factor responsible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study reveals two key aspects of inhibitory network structure: (1) network activity structure measured as pairwise cell-cell activity is stable across contexts including No Task, and (2) individual interneurons show stable, cell-specific activity suppression levels across multiple environments. This stable inhibitory infrastructure may shape information encoding in pyramidal networks by creating plastic and stable pyramidal ensembles, potentially balancing stability with plasticity in network function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 accurately summarize well-supported findings from earlier result groups. Claims C87-C89 are interpretations and speculations about functional implications. While these interpretations are reasonable and supported by citations to relevant theoretical frameworks (C89), they remain speculative. The proposed mechanism (C88) that pyramidal neurons downstream of suppressed interneurons are more likely to show plasticity is plausible but not directly tested. Additional experiments manipulating specific interneurons and measuring pyramidal neuron plasticity would be needed to validate this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims establish that excitation is balanced by inhibition in neural networks, with feedforward and feedback inhibition mechanisms. Inhibition strongly controls synaptic plasticity, with intact inhibition limiting potentiation while blocking inhibition facilitates it. This suggests inhibition suppression could enhance learning by favoring synaptic plasticity in excitatory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-established findings from prior literature, appropriately cited. Claim C7 is a reasonable inference from the prior work, though it is speculative. These background claims provide appropriate context for the current study but are not novel findings. All claims are properly attributed to prior work with multiple supporting citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior work has shown that fast-spiking interneurons are suppressed in novel environments in freely moving rodents, and that interneuron activity and connectivity are dynamically modulated during learning. Suppression of SOM-ints and PV-ints is necessary for certain types of learning, often triggered by disinhibitory inputs. However, VR studies have found conflicting results regarding PV-int activity in new environments compared to freely moving animal studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 accurately summarize prior literature with appropriate citations. The identification of conflicting results between freely moving and VR studies (C16) is important context for the current work. These are background claims that establish the state of the field and motivate the current study. All claims are properly attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "SOM-ints selectively innervate pyramidal neuron dendrites and control dendritic excitability. Dendritic spikes can mediate plasticity, place field formation, and learning. Place field formation is associated with dendritic spikes during transient SOM-int suppression in novel environments, but SOM-int activation (not suppression) is required for fear learning in CA1 and dentate gyrus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 provide important background on SOM-int function with appropriate citations. The contrast between SOM-int suppression for spatial learning (C19) and activation for fear learning (C20) highlights context-dependent roles. These background claims are well-supported by prior literature and motivate investigation of SOM-int dynamics in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Technical limitations of extracellular recordings (limited stability, difficulty identifying interneurons) make longitudinal single interneuron recording difficult. Many interneurons are driven by pyramidal neurons in feedforward/feedback manner. Prior work has found functional diversity within interneuron cell types, with individual neurons consistently activated or inhibited by locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 provide methodological context and motivation for using two-photon calcium imaging. C21 accurately describes limitations of electrophysiology. C22 is established knowledge about circuit connectivity. C23 cites prior work including the authors' own previous study, establishing precedent for functional diversity within cell types. These claims appropriately motivate the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Prior work has demonstrated preferential connectivity patterns in hippocampal and cortical circuits. In hippocampus, PV-expressing basket cells preferentially inhibit specific pyramidal neuron populations based on projection targets. Interneurons participate in cell assemblies with pyramidal neurons and can share coding properties like place fields. Functional subnetworks of interneurons and pyramidal neurons have been identified in cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 cite prior literature demonstrating non-random connectivity patterns that support the authors' interpretation of functional specialization. These are appropriately cited background claims that provide context for interpreting the stable functional structure observed in the current study. The citations are relevant and support the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Novelty and arousal produce strong changes in neuromodulation (acetylcholine, norepinephrine, dopamine). Interneurons show divergent responses to acetylcholine depending on receptor expression. Hippocampal SOM-ints are activated by air puffs via muscarinic signaling, and synapse gain on SOM-ints after fear conditioning depends on cholinergic input. Recent work identified norepinephrine and acetylcholine as critical for locomotion activation and PV-int suppression in visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 provide important mechanistic context from prior literature about neuromodulatory control of interneurons. All claims are appropriately cited. These background claims support the discussion of potential mechanisms underlying the observed interneuron suppression, though the current study does not directly test neuromodulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Disinhibitory mechanisms could contribute to interneuron suppression. In hippocampus, disinhibitory input can come from local VIP, PV, and SOM interneurons. VIP interneurons are necessary for hippocampal-dependent learning. However, during learning/novelty, CA3 and EC pyramidal neurons don't change firing rates while CA1 pyramidal neurons increase activity, making it unlikely that suppression is purely due to reduced excitatory drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 discuss potential mechanisms with appropriate citations. C101 makes an important point that upstream excitatory input changes are unlikely to fully explain interneuron suppression, as CA1 pyramidal neurons actually increase activity. This is a reasonable inference from cited prior work, though the current study does not directly measure pyramidal neuron activity or test these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Prior work shows that switching animals to new environments triggers minutes of activity suppression and place cell remapping on similar timescales in both real world and VR. In contrast, in a learning task without global remapping where rats learned new goal locations in a familiar environment, fast-spiking interneurons both increased and decreased activity as performance increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 provide important context from prior literature distinguishing rapid remapping-associated suppression from longer-term learning-associated changes. These appropriately cited background claims help interpret the timescales of suppression and recovery observed in the current study. The distinction between global remapping and within-environment learning is relevant for understanding the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The work identifies inhibitory activity dynamics and reveals that individual interneurons have consistent functional roles across multiple new environments. This functional specialization within defined neuron sets may allow efficient incorporation of new information while maintaining network stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are appropriate summary statements of the main findings and their implications. C102 accurately summarizes the key result about consistent functional roles. C103 is a reasonable speculation about functional significance, appropriately qualified with 'may serve to allow.' These concluding claims are supported by the experimental results, though the functional implications remain to be directly tested.",
+    "result_type": "MAJOR"
+  }
+]

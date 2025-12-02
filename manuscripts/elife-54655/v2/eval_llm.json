@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C27",
+      "C28",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Hfq CLASH robustly captures bona fide RNA-RNA interactions with low background. Control samples contained ~10 times fewer reads and only 297 unique chimeric reads compared to over 50,000 in tagged Hfq data. 87% of chimeric reads had adjusted p-values \u22640.05, and 92% of sRNAs with experimentally verified interactions were fused to cognate mRNA fragments. Less than 4% of chimeras contained rRNA sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C21, C27-C28, C39-C44 collectively demonstrate that Hfq CLASH produces high-quality data with low background. The control experiments (C20-C21), statistical validation (C27-C28), recovery of known interactions (C39-C42), and low rRNA contamination (C43-C44) provide converging evidence that the method robustly captures genuine RNA-RNA interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C48",
+      "C66",
+      "C67",
+      "C133",
+      "C134"
+    ],
+    "result": "Hfq CLASH identified hundreds of novel sRNA base-pairing interactions. Over 2000 unique sRNA-mRNA interactions (18,783 chimeras) were identified, with ~1700 unique to CLASH. Additionally, 200 novel sRNA-sRNA interactions were discovered, many growth-stage specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29-C30, C48, C66-C67, C133-C134 are well-supported by the experimental data showing specific numbers of interactions identified. The quantification is consistent across claims and represents a major expansion of known sRNA interaction networks compared to prior work (C133-C134).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C49",
+      "C50"
+    ],
+    "result": "sRNA-mRNA interactions identified by CLASH have strong base-pairing potential. All sRNA-mRNA chimeras, even those supported by few reads, had significantly higher propensity to form stable duplexes compared to shuffled controls (p<6\u00d710\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C49-C50 are supported by RNAduplex analysis showing statistically significant base-pairing potential across all interaction categories. The analysis includes appropriate controls (shuffled sequences) and demonstrates that even low-abundance interactions have genuine base-pairing capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Known and novel sRNA seed sequences were identified through motif analysis. Previously identified mRNA sequence motifs were recovered for most sRNAs, and novel motifs were identified for RyjB, GadY, ArcZ, CyaR, and GcvB. The GcvB R3 seed motif was highly enriched in CLASH-unique interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C51-C59 are supported by systematic motif analysis using MEME/MAST with appropriate statistical thresholds. The recovery of known motifs validates the method (C52), while novel motifs (C53) are supported by complementarity analysis and enrichment statistics. The identification of the GcvB R3 seed (C56-C57) is particularly well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Most mRNA targets showed no significant changes in steady-state levels upon sRNA over-expression. Only GcvB and MicA targets showed enrichment for differentially expressed genes, and reproducible interactions had higher likelihood of impacting mRNA levels for some but not all sRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C60-C65 are supported by systematic comparison of CLASH predictions with over-expression RNA-seq data. The results show sRNA-specific differences (C61-C63) and demonstrate that reproducibility is a better predictor than base-pairing potential for some sRNAs (C64), though not universally. This represents a negative result that is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C174",
+      "C175"
+    ],
+    "result": "Reproducibility of interactions, not base-pairing potential, is a stronger predictor for regulatory outcome. Low-abundance interactions have strong complementarity and base-pairing potential but are less likely to affect mRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C174-C175 represent a key conclusion supported by the integration of base-pairing analysis (showing strong potential even for low-abundance interactions) and over-expression data (showing that reproducible interactions are more likely to have regulatory effects). This conclusion is consistent with prior work (C165-C166) and represents an important insight about sRNA regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "ArcZ and CyaR base-pair in vivo with unidirectional regulation. ArcZ over-expression decreased CyaR levels by >50% and increased CyaR targets (nadE, yqaE), while CyaR over-expression did not affect ArcZ. Seed mutations disrupted regulation, and complementary mutations restored it, demonstrating direct base-pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C91 provide comprehensive experimental validation of the ArcZ-CyaR interaction through over-expression (C76-C82), Northern blots (C83-C84), and mutagenesis (C86-C88). The unidirectional regulation (C85, C90-C91) is supported by multiple lines of evidence including controls for Hfq redistribution (C89). This represents a well-validated sRNA-sRNA interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Hfq CLASH identified novel 3'UTR-derived sRNAs. 116 3'UTR-containing mRNA fragments were involved in 507 interactions. Six 3'UTRs were found in all three datasets (CLASH, RIL-seq, TIER-seq), and Northern blots confirmed sRNAs in malG, ygaM, and gadE 3'UTRs. The ygaM 3'UTR harbors a ~100 nt sRNA (YgaN) with robust Hfq cross-linking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C108 are well-supported by multiple lines of evidence: computational prediction from CLASH data (C92-C94), cross-validation with independent datasets (C95-C96, C104), motif analysis (C97, C103), and experimental validation by Northern blot (C106) and Hfq cross-linking (C107-C108). The convergence of evidence from multiple methods strongly supports the identification of novel 3'UTR-derived sRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "CLASH recovered and expanded known 3'UTR-derived sRNA interactions. GadF (gadE 3'UTR) showed two complementary motifs including one not previously detected. MicL-lpp interaction (15 chimeras) matched previous predictions. SdhX interactions with ackA (exponential phase) and katG (stationary phase) were growth-stage specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C122 demonstrate that CLASH recovers known 3'UTR-derived sRNAs (C109, C114) and expands their interaction networks. The identification of novel motifs (C110-C111), recovery of known interactions with structural validation (C115-C116), and growth-stage specificity (C120-C121) are all well-supported by the data. The consistency with prior work (C122) validates the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Hfq levels and binding patterns were consistent across growth stages. Hfq levels increased modestly during growth, recovery was comparable at each OD, and Hfq binding distribution across mRNAs was similar at each stage with enrichment at 5'UTRs and 3'UTRs containing poly-U motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by Western blot (C22), autoradiography (C23), and meta-analysis of sequencing data (C24-C26). These results establish that the CLASH method captures Hfq-RNA interactions consistently across growth stages and that the observed differences in interaction networks are not due to technical artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "mRNA fragments in chimeric reads were enriched in 5'UTRs near the start codon and in 3'UTRs. The 5'UTR motifs correspond to Shine-Dalgarno-like sequences and U-tracts, while 3'UTR motifs correspond to poly-U termination sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by distribution analysis (C35-C36) and motif analysis (C37-C38) of chimeric reads. The enrichment patterns are consistent with known mechanisms of sRNA-mediated translational inhibition (C35) and Hfq binding preferences, providing validation of the biological relevance of the interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "CLASH recovered ~20% of RIL-seq sRNA-mRNA networks and 37 experimentally verified interactions, indicating the analyses were not exhaustive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 acknowledge limitations of the CLASH approach. The incomplete overlap with RIL-seq (C45-C46) is quantified and the conclusion that analyses were not exhaustive (C47) is appropriately stated. This represents an honest assessment of method limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "TEX RNA-seq analysis provided evidence for 47 of 126 predicted 3'UTR-derived sRNAs. YgaM has two promoters with one near the 3' end for YgaN, which is likely processed by RNases. Most sRNAs are more abundant at higher cell densities, but MalH is transiently expressed peaking at OD 1.8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 are supported by analysis of independent TEX RNA-seq data and Northern blots. The identification of promoters (C124), evidence for processing (C125), and expression patterns (C126-C127) provide additional validation for predicted 3'UTR-derived sRNAs. The speculation about MalH function (C128) is appropriately labeled as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Methodological improvements to CLASH led to substantial increase in chimeric read recovery (8.6% vs 0.001%). CLASH has complementary advantages to RIL-seq including stringent denaturing purification that reduces noise, elimination of need for rRNA depletion, and use of random barcodes to remove PCR duplicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C147 describe methodological improvements and advantages of CLASH. The quantified improvement in chimeric read recovery (C140) and demonstration of low background (C144, C146) support the technical advances. The comparison with RIL-seq (C141) appropriately acknowledges complementary strengths of both methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Technical and experimental differences explain unique interactions in CLASH vs RIL-seq. CLASH disrupts the Hfq hexamer making RNA ends more accessible for ligation, resulting in more equal distribution of sRNA fragments. CLASH uses rapid UV cross-linking and filtration to minimize cold-shock effects and capture short-lived interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C161 provide a detailed explanation for differences between CLASH and RIL-seq datasets. The mechanistic explanations (C151-C155) are supported by data showing fragment distribution patterns. The procedural differences (C156-C160) are well-documented and the speculation about capturing short-lived interactions (C161) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Limited changes in mRNA steady-state levels upon sRNA over-expression may reflect regulation at the translational level, Hfq competition effects, or fine-tuning. The Margalit group showed that Hfq binding efficiency primarily determines regulatory outcome, and reproducible interactions are more likely to affect expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C168 provide context and interpretation for the limited overlap between CLASH predictions and over-expression effects. The discussion appropriately cites relevant work (C165-C166), considers alternative explanations (C163, C167), and suggests appropriate follow-up approaches (C164). This represents a balanced interpretation of negative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Weak or stochastic interactions are unlikely to be recovered by CLASH. The stringent denaturing purification disrupts the Hfq hexamer, so transient interactions without base-pairing would require simultaneous UV cross-linking to both RNAs with ends in close proximity, which is very unlikely given poor UV cross-linking efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C173 address a potential concern about false positives through logical reasoning about the method's constraints. The argument is well-constructed: the denaturing conditions (C171), poor UV cross-linking efficiency (C172), and supporting data on base-pairing potential (referenced) collectively support the conclusion that stochastic interactions are not easily recovered (C173).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "10.5% of intermolecular chimeras contained two different mRNAs, potentially representing 3'UTR-derived sRNA-mRNA interactions. ~1% represented sRNA-tRNA interactions, which may include biologically relevant interactions as tRNA spacers can base-pair with sRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C34 describe observations but the interpretation is speculative (C32 explicitly states speculation). While the mRNA-mRNA chimeras are quantified (C31) and tRNA interactions are documented (C33-C34), the biological significance remains unclear. Further validation would be needed to confirm these represent genuine regulatory interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The sRNA-sRNA network is dominated by hub sRNAs (ChiX, Spot42, ArcZ, GcvB) with many partners. Known seed sequences were frequently recovered in chimeras. CyaR chimeras contained both the known seed (30%) and a novel ~25 nt 5' region also found in RNase E CLASH. ArcZ-CyaR chimeras contained both seed sequences and were transition-phase specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 describe the sRNA-sRNA interaction network with specific examples. The identification of hub sRNAs (C68), recovery of known seeds (C69-C70), and characterization of CyaR interactions (C71-C73) are data-driven. The ArcZ-CyaR interaction (C74-C75) is particularly well-supported and subsequently validated experimentally in other claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Low-frequency interactions may confer robustness to regulation of principal targets, which are speculated to be condition-specific. For ArcZ and CyaR, even high-abundance targets were not differentially expressed, possibly due to regulation at the protein synthesis level or fine-tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C176-C179 are largely speculative (C176-C177 explicitly labeled as speculation, C179 offers possible explanations). While the observation about ArcZ and CyaR targets (C178) is data-supported, the biological interpretation requires additional experimental validation. The speculation is reasonable but not yet supported by direct evidence.",
+    "result_type": "MINOR"
+  }
+]

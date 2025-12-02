@@ -1,0 +1,1775 @@
+{
+  "submission": {
+    "id": "d117f8bd-5eb1-4c03-9183-e30ce08afcaf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:10:32.291802Z",
+    "updated_at": "2025-12-02T15:10:32.291802Z"
+  },
+  "content": [
+    {
+      "id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "submission_id": "d117f8bd-5eb1-4c03-9183-e30ce08afcaf",
+      "content_type": "manuscript",
+      "content_text": "# A large-scale resource for tissue-specific CRISPR mutagenesis in Drosophila\n\n## Authors\n\n- Fillip Port<sup>1</sup> ([ORCID: 0000-0002-5157-4835](https://orcid.org/0000-0002-5157-4835)) \u2020\n- Claudia Strein<sup>1</sup>\n- Mona Stricker<sup>1</sup>\n- Benedikt Rauscher<sup>1</sup>\n- Florian Heigwer<sup>1</sup> ([ORCID: 0000-0002-8230-1485](https://orcid.org/0000-0002-8230-1485))\n- Jun Zhou<sup>1</sup> ([ORCID: 0000-0002-2101-9304](https://orcid.org/0000-0002-2101-9304))\n- Celine Beyersd\u00f6rffer<sup>1</sup>\n- Jana Frei<sup>1</sup>\n- Amy Hess<sup>1</sup>\n- Katharina Kern<sup>1</sup>\n- Laura Lange<sup>1</sup>\n- Nora Langner<sup>1</sup>\n- Roberta Malamud<sup>1</sup>\n- Bojana Pavlovi\u0107<sup>1</sup>\n- Kristin R\u00e4decke<sup>1</sup>\n- Lukas Schmitt<sup>1</sup>\n- Lukas Voos<sup>1</sup>\n- Erica Valentini<sup>1</sup>\n- Michael Boutros<sup>1</sup> ([ORCID: 0000-0002-9458-817X](https://orcid.org/0000-0002-9458-817X)) \u2020\n\n### Affiliations\n\n1. German Cancer Research Center (DKFZ), Division Signaling and Functional Genomics and Heidelberg University Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenetic screens are powerful tools for the functional annotation of genomes. In the context of multicellular organisms, interrogation of gene function is greatly facilitated by methods that allow spatial and temporal control of gene abrogation. Here, we describe a large-scale transgenic short guide (sg) RNA library for efficient CRISPR-based disruption of specific target genes in a constitutive or conditional manner. The library consists currently of more than 2600 plasmids and 1700 fly lines with a focus on targeting kinases, phosphatases and transcription factors, each expressing two sgRNAs under control of the Gal4/UAS system. We show that conditional CRISPR mutagenesis is robust across many target genes and can be efficiently employed in various somatic tissues, as well as the germline. In order to prevent artefacts commonly associated with excessive amounts of Cas9 protein, we have developed a series of novel UAS-Cas9 transgenes, which allow fine tuning of Cas9 expression to achieve high gene editing activity without detectable toxicity. Functional assays, as well as direct sequencing of genomic sgRNA target sites, indicates that the vast majority of transgenic sgRNA lines mediate efficient gene disruption. Furthermore, we conducted the so far largest fully transgenic CRISPR screen in any metazoan organism, which further supported the high efficiency and accuracy of our library and revealed many so far uncharacterized genes essential for development.\n\n## Introduction\n\nThe functional annotation of the genome is a prerequisite to gain a deeper understanding of the molecular and cellular mechanisms that underpin development, homeostasis and disease of multicellular organisms. Drosophila melanogaster has provided many fundamental insights into metazoan biology, in particular in the form of systematic gene discovery through genetic screens. Forward genetic screens utilize random mutagenesis to introduce novel genetic variants, but are limited by the large number of individuals required to probe many or all genetic loci and difficulties in identifying causal variants. In contrast, reverse genetic approaches, such as RNA interference (RNAi), are gene-centric designed and allow to probe the function of a large number of genes (Boutros and Ahringer, 2008; Heigwer et al., 2018; Horn et al., 2011; Mohr et al., 2014). In addition, RNAi reagents can be genetically encoded and used to screen for gene function with spatial and temporal precision (Dietzl et al., 2007; Kaya-\u00c7opur and Schnorrer, 2016; Ni et al., 2009). However, RNAi is often limited by incomplete penetrance due to residual gene expression and can suffer from off-target effects (Echeverri et al., 2006; Ma et al., 2006; Perkins et al., 2015).\n\nWhile genetic screens have contributed enormously to our understanding of gene function, large parts of eukaryotic genomes remain not or only poorly characterized (Brown et al., 2009; Dickinson et al., 2016; White et al., 2013). For example, in Drosophila only 20% of genes have associated mutant alleles (Kaufman, 2017). Therefore, there exists an urgent need to develop innovative approaches to gain a more complete understanding of the functions encoded by the various elements of the genome.\n\nClustered Regularly Interspersed Short Palindromic Repeats (CRISPR) - CRISPR-associated (Cas) systems are adaptive prokaryotic immune systems that have been adopted for genome engineering applications (Doudna and Charpentier, 2014; Wang et al., 2016). Cas9 complexed with a single chimeric guide RNA (sgRNA) mediates site-specific DNA double strand breaks and subsequent DNA repair can result in small insertions and deletions (indels) at the break point. However, not all Cas9-mediated indel mutations abrogate gene function. To compensate for that, strategies have been developed to introduce simultaneously\u00a0several mutations in the same gene. The efficiency of such multiplexing strategies has been demonstrated in flies, mice, fish and plants, and several sgRNAs are often required to generate bi-allelic loss-of function mutations in all cells (Port and Bullock, 2016; Xie et al., 2015; Yin et al., 2015). Furthermore, to gain a comprehensive understanding of the often multifaceted functions genetic elements have in multicellular organisms requires methods that enable spatial or temporal control of gene disruption. To restrict CRISPR mutagenesis to defined cells, tissues or developmental stages, specific regulatory regions are commonly employed to drive Cas9 expression. However, Cas9 expression vectors with tissue-specific enhancers often display \u2018leaky\u2019 Cas9 expression in other tissues and poor control of CRISPR mutagenesis has been observed in multiple systems, including flies, mice and patient derived xenografts (Chen et al., 2017; Dow et al., 2015; Hulton et al., 2019; Port and Bullock, 2016). It has recently been demonstrated that expressing both Cas9 and sgRNA from conditional regulatory elements can result in tightly controlled genome editing (Port and Bullock, 2016), but the robustness of such a strategy across many genomic target sites has so far not been explored.\n\nHere, we describe a large-scale resource for spatially restricted mutagenesis in Drosophila. The system mediates robust mutagenesis across target genes, giving rise to a large fraction of cells containing gene knock-outs and displays tight spatial and temporal control. We developed a series of tunable Cas9 lines that allow gene editing with high efficiency and low toxicity independent of enhancer strength. These can be used with a growing library of sgRNA transgenes, which currently comprise over 1700 Drosophila strains, for systematic mutagenesis in any somatic tissue or the germline. Furthermore, we present the first large-scale transgenic CRISPR screen using this resource, which confirms its high efficiency and specificity and reveals multiple uncharacterized genes with essential, but unknown function.\n\n## Results\n\n### Robust tissue-specific CRISPR mutagenesis\n\nWe set out to develop a large-scale resource that would allow systematic CRISPR-mediated gene disruption with tight spatial and temporal control (Figure 1A). In Drosophila, tissue-specific expression of transgenes is most commonly performed via the binary Gal4/UAS system (Brand and Perrimon, 1993) and thousands of Gal4 lines with specific temporal and spatial expression patterns are publicly available. To harness this resource for tissue-specific CRISPR mutagenesis we aimed to utilize UAS-Cas9 transgenes and combine them with the sgRNA expression vector pCFD6, which enables Gal4-dependent expression of sgRNA arrays. We have previously shown that conditional expression of both Cas9 and sgRNAs is necessary to achieve tight control of mutagenesis (Figure 1B;\u00a0Port and Bullock, 2016). Since this previous proof-of principle study was restricted to testing pCFD6 with two sgRNAs targeting the Wnt secretion factor Evenness interrupted (Evi, also known as Wntless or Sprinter; B\u00e4nziger et al., 2006; Bartscherer et al., 2006; Port and Bullock, 2016), we first tested whether this system is robust across target genes and tissues, a prerequisite to generate large-scale libraries of sgRNA strains targeting many or all Drosophila genes. To this end, we created various transgenic fly lines harbouring a pCFD6 transgene encoding two sgRNAs targeting a single gene at two independent positions. These were crossed to flies containing a UAS-cas9.P2 transgene and a tissue-specific Gal4 driver. We then analysed if mutations were efficiently induced, restricted to the appropriate cells and caused the expected phenotypes. We observed efficient and specific gene disruption in wing imaginal discs with pCFD6 sgRNA transgenes targeting the Drosophila beta-Catenin homolog armadillo (arm, Figure 1C), as well as the transcription factor senseless (sens) or the transmembrane protein smoothened (smo) (Figure 1\u2014figure supplement 1A,B). To test tissue-specific CRISPR mutagenesis in a different tissue context, we targeted Notch (N) in the Drosophila midgut, which is derived from the endoderm. We observed a strong increase in stem cell proliferation and an accumulation of cells with small nuclei, which matches the described phenotype of N mutant clones in the midgut (Ohlstein and Spradling, 2006;\u00a0Figure 1D and Figure 1\u2014figure supplement 2). Interestingly, we observed a qualitative difference between perturbation of N expression by RNAi, which only induces hyperplasia in female flies (Figure 1\u2014figure supplement 2; Hudry et al., 2016; Siudeja et al., 2015), and N mutagenesis by CRISPR, which induces strong overgrowth in both male and female midguts (Figure 1\u2014figure supplement 2). We also tested conditional mutagenesis of neuralized (neur) and yellow (y) along the dorsal midline and of sepia (se) in the developing eye and observed in each case the described null mutant phenotype in the expected domain (Figure 1E,F, Figure 1\u2014figure supplement 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53865/elife-53865-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic overview of the workflow. To perform tissue-specific targeted mutagenesis flies transgenic for a specific Gal4 driver (X-Gal4) and UAS-Cas9 are crossed to flies with a UAS-sgRNA transgene. Offspring from this cross express Cas9 and sgRNAs in Gal4 expressing cells, leading to mutagenesis of the target gene. (B) Schematic of gene editing outcomes typically observed with a single, ubiquitous sgRNA (lower left) or a conditional array of several sgRNAs (lower right). Leaky expression, that\u00a0is expression in the absence of Gal4, from conditional Cas9 transgenes gives rise to ectopic mutagenesis in combination with ubiquitous, but not conditional, sgRNAs. Gene editing in tissues typically results in genetic mosaics, which can be enriched for bi-allelic knock-out cells through sgRNA multiplexing. (C) Conditional CRISPR mutagenesis in wing imaginal discs with nub-Gal4 in the wing pouch. Gene editing with pCFD6-arm2x results in loss of Arm protein exclusively in the Gal4 expression domain in nearly all cells. Control animals express the nub-Gal4 driver and UAS-cas9.P2. Scale bar\u00a0=\u00a050 \u00b5m. (D) Conditional CRISPR mutagenesis of Notch in intestinal stem cells drives tumor formation in the midgut. esgts (esg-Gal4 tub-Gal80ts) was used to repress expression of UAS-cas9.P2 and pCFD6-N2x until adult stages. Mutagenesis was induced for 5 days at 29\u00b0C and flies were returned to 18\u00b0C to avoid Cas9.P2 mediated toxicity. Posterior midguts 15 days after induction of mutagenesis are shown. esgts UAS-cas9.P2 pCFD6-N2x tissue shows an accumulation of stem cells (DNA marked in cyan) and an increase in mitotic cells (pHistone3 in magenta). Quantification of phenotypes are shown in Figure 1\u2014figure supplement 2. Control genotype is esgts UAS-cas9.P2 pCFD6-se2x. Scale bar\u00a0=\u00a050 \u00b5m. (E) Mutagenesis of neur in pnr-Gal4 UAS-cas9.P2 pCFD6-neur2x animals results in loss of thoracic bristles along the dorsal midline, where pnr-Gal4 is expressed. Note the tissue patch that retains bristles, reflecting mosaic mutagenesis. (F) Mutagenesis of the pigmentation gene se in the eye. GMR-Gal4 UAS-casp.P2 pCFD6-se2x animals develop a uniform dark eye coloration. Control animals in (E) and (F) express the respective Gal4 driver and UAS-cas9.P2 pCFD6-Sfp24C12x. (G) pCFD6 mediated mutagenesis in the germline. Shown is a summary of the mutational status at each sgRNA target site in individual F1 flies. nos-Gal4VP16 UAS-cas9.P1 pCFD6 flies expressing sgRNAs targeting the indicated essential genes are viable, demonstrating germline restricted mutagenesis, and transmit mutant alleles to their offspring. Shown is a summary of the mutational status at each sgRNA target site in individual flies. All lines, except the one targeting Dpp (asterisk), transmit mutant alleles to the majority of offspring. Flies expressing sgRNAs targeting Dpp in the germline produce few viable offspring and transmitted only a single, in-frame, mutation out of 11 analysed offspring. The same sgRNA construct results in highly efficient mutagenesis in somatic tissues (see Figure 4), consistent with haploinsufficiency of Dpp in the Drosophila embryo.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53865/elife-53865-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) CRISPR mutagenesis of smo in the posterior compartment of the wing imaginal disc. Smo protein was detected by immunohistochemistry. Smo is normally expressed in all wing disc cells, but protein levels are higher in the posterior compartment (see Control (hh-Gal4 UAS-cas9.P2)). In hh-Gal4 UAS-cas9.P2 pCFD6-smo2x wing disc cells in the posterior compartment express no or reduced levels of Smo, presumably reflecting cells containing only one or no functional smo alleles. (B) CRISPR mutagenesis of sens in the dorsal compartment of wing imaginal discs with ap-Gal4 leads to a loss of Sens expression in most, but not all cells. (C) Mutagenesis of y in the dorsal abdomen. In pnr-Gal4 UAS-cas9.P2 pCFD6-y2x animals, cuticle coloration is uniformly changed in a broad stripe centred around the dorsal midline, compared to control animals (pnr-Gal4 UAS-cas9.P2 pCFD6-Sfp24C12x). Note that the strong phenotype mediated by pCFD6-y2x is in line with the high levels of mutagenesis with this construct reported in Figure 3\u2014figure supplement 1B.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53865/elife-53865-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013H) Representative images of the posterior midgut of male or female esgts\u00a0>\u00a0w1118 (A, E), esgts\u00a0>\u00a0N RNAiKK (B, F), esgts\u00a0>\u00a0N RNAiTrip (C, G) and esgts\u00a0>\u00a0UAS NDN animals, stained with pH3 antibody in red to mark mitotic cells. esg-GFP is shown in green, nuclei are stained with DAPI (blue). Animals were raised at 18\u00b0C to adulthood and then incubated at 29\u00b0C for 15 days. (I) Quantification of pH3-positive cells per adult midgut of the indicated genotypes after 15 days at 29\u00b0C. (J\u2013O) Representative images of the posterior midgut of male or female esgts UAS-Cas9.P2 pCFD6-se2x (J, M), esgts UAS-Cas9.P2 pCFD3-N (K, N) and esgts UAS-Cas9.P2 pCFD6-N2x (L, O) flies stained with pH3 antibody in red and nuclei are stained with DAPI (blue). Animals were raised at 18\u00b0C, after eclosion mutagenesis was induced for 5 days at 29\u00b0C, followed by 18\u00b0C for 15 days. Unlike in the RNAi condition, no GFP is visible due to repression by Gal80 at 18\u00b0C. (P) Quantification of pH3-positive cells per adult midgut of the indicated genotypes at 18\u00b0C for 30 days after inducing CRISPR/Cas9 mediated mutagenesis. Significant differences in the number of pH3-positive cells between Notch RNAi or knock-out group (esgts\u00a0>\u00a0N RNAiKK, esgts\u00a0>\u00a0N RNAitrip, esgts;UAS-Cas9\u00a0>N gRNA PCFD3 or esgts;UAS-Cas9\u00a0>N-gRNA1184) and the control groups. (esgts\u00a0>\u00a0w1118 or esgts;UAS-Cas9\u00a0>sepia gRNA) are indicated with asterisks (*p<0.05; **p<0.01; ***p<0.001; two-tailed T-test) Scale bars: 30 \u00b5m (A\u2013H, J\u2013O). Note that the total number of mitotic cells in the RNAi and CRISPR conditions cannot be directly compared, as animals were raised at different temperatures.\n\nNext, we tested whether pCFD6-sgRNA2x also mediates efficient mutagenesis in the germline, where some UAS vectors are silenced (DeLuca and Spradling, 2018; Huang et al., 2018). This is a particularly important application, as it allows to create stable and sequence-verified mutant fly lines, which can be backcrossed to remove potential off-target mutations. We crossed previously described nos-Gal4VP16 UAS-Cas9.P1 flies (Port et al., 2014) to sgRNA strains targeting either neur, N, cut (ct), decapentaplegic (dpp) or Ras85D. Despite the fact that all five genes are essential for Drosophila development and act in multiple tissues, nos-Gal4VP16 UAS-Cas9.P1 pCFD6-sgRNA2x flies were viable and morphologically normal, demonstrating tightly restricted mutagenesis. We then tested their offspring for CRISPR induced mutations at the sgRNA target sites. Crosses with pCFD6-sgRNA2x targeting neur, N, ct and Ras85D passed on mutations to most or all analysed offspring (Figure 1G). Mutations were often found on both target sites, were frequently out-of-frame and included large deletions of 8 and 14 kb between the sgRNA target sites (Figure 1G). In contrast, nos-Gal4VP16 UAS-Cas9.P1 pCFD6-dpp2x flies produced only few viable offspring of which only 1/11 carried a mutation, which was in-frame. Since dpp is known to be haploinsufficient (St Johnston et al., 1990), this is consistent with a high number of dpp loss-of function alleles being transmitted to the next generation.\n\nTogether, these experiments demonstrate that sgRNA expression from pCFD6 mediates efficient and tightly restricted mutagenesis in various somatic cell types as well as the germline and establishes that tissue-specific CRISPR mutagenesis in Drosophila is robust across genes and tissues.\n\n### Tunable Cas9 expression to balance activity and toxicity\n\nWe and others have shown that expression of high amounts of Cas9 protein is toxic in various organisms (Jiang et al., 2014; Poe et al., 2019; Port et al., 2014; Yang et al., 2018). For example, overexpression of Cas9 in the wing imaginal disc of nub-Gal4 UAS-cas9.P2 animals results in a strong induction of apoptosis (Figure 2\u2014figure supplement 1A). Since only relatively low levels of Cas9 are sufficient for efficient gene editing (Figure 2\u2014figure supplement 1B), we sought to engineer a system that would allow to tune Cas9 expression to optimally balance activity and toxicity. Such a system would ideally allow to modulate Cas9 levels independent of enhancer strength, in order to be compatible with the wide range of available Gal4 lines. We employed a method that uses upstream open reading frames (uORF) of different length to predictably reduce translation of the main, downstream ORF (Ferreira et al., 2013; Kozak, 2001; Southall et al., 2013). We created a series of six UAS-cas9 plasmids containing uORFs of different length, ranging from 33 bp (referred to as UAS-uXSCas9) to 714 bp (UAS-uXXLCas9, Figure 2A). When combined with nos-cas9 these plasmids resulted in Cas9 protein levels inversely correlated with the length of the uORF (Figure 2B, Figure 2\u2014figure supplement 1C). Reducing the amount of Cas9 protein resulted in a strong decrease in the number of apoptotic cells (Figure 2C). Importantly, three UAS-uCas9 transgenes with moderate levels of Cas9 expression and apoptosis levels similar to controls did mediate full on-target gene editing activity at the evi locus in wing imaginal discs (Figure 2D, Figure 2\u2014figure supplement 1C). Together, these experiments demonstrate that the UAS-uCas9 vector series enables titration of Cas9 expression to avoid toxicity without sacrificing gene editing activity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53865/elife-53865-fig2-v2.jpg)\n\n**Figure 2.:** (A) Principle of the UAS-uCas9 series. Translation of the downstream ORF is inversely correlated with length of the upstream ORF in bicistronic mRNAs. The UAS-uCas9 series consists of transgenes that harbor uORFs of different length to modulate expression of Cas9. (B - D) Systematic characterization of Cas9 expression, toxicity and mutagenesis efficiency of the UAS-uCas9 series. Transgenes of the UAS-uCas9 series were recombined with nub-Gal4 and crossed to the apoptosis sensor UAS-GC3Ai (B, C) or pCFD6-evi2x (D). Graphs show data as individual dots, and boxplots as a data summary, with the line representing the median and the box the interquartile range. (B) Quantification of anti-Cas9 staining intensity in wing discs of the indicated genotype. Cas9 levels gradually reduce as the size of the uORF increases. N\u00a0\u2265\u00a06 wing discs. (C) Elevated levels of apoptosis were only observed with UAS-uXSCas9. The longest uORF (uXXL) encodes EGFP, preventing visualization of dying cells with GC3Ai. Quantification of fluorescent intensity of the GC3Ai reporter in the wing pouch. N\u00a0\u2265\u00a014 wing discs. (D) All transgenes of the UAS-uCas9 series mediate evi mutagenesis, with transgenes containing the four shortest uORFs (XS-L) leading to comparable gene editing that removes Evi from nearly all cells in the Gal4 expression domain. Quantification of staining intensity for Evi protein in the wing pouch (Gal4 on), relative to Evi staining in the hinge region (Gal4 off). N\u00a0\u2265\u00a06 wing discs. (E, E\u2019) CRISPR mutagenesis patterns reflect Gal4 expression history. (E) Fluorescence of GFP, which turns over, reflects most recent Gal4 expression pattern. (E\u2019) CRISPR mutagenesis, visualized by activation of the CIGAR reporter, is permanent and reveals the Gal4 expression history. Images of a representative wing disc are shown to the left of each panel and average intensity projection of several discs registered to a common template are shown on the right (see Materials\u00a0and\u00a0methods). Areas that are CIGAR positive in many discs appear bright, while areas devoid of signal in most discs appear dark. (F, F\u2019) Incomplete repression of CRISPR mutagenesis by temperature-sensitive Gal80. (F) Principle of the Gal80ts system. At 18\u00b0C Gal80 binds and inhibits Gal4. (F\u2019) Mutagenesis is still observed at 18\u00b0C in 11/24 discs and observed preferentially in the Gal4 expression domain, indicating incomplete Gal4 suppression by Gal80ts. (G - G\u2019\u2019) Control of CRISPR mutagenesis by a flip-out cassette. (G) In the absence of FLP recombinase a FRT-flanked GFP flip-out cassette (FRT sites represented by triangles) separates Cas9 from the promoter, resulting in cells that express GFP, but no Cas9. In the presence of FLP, the GFP cassette is excised and Cas9 is expressed. (G\u2019) Staining for the transcription factor Cut reveals a continuous stripe of cells expressing ct along the dorsal-ventral boundary in wildtype tissue. (G\u2019\u2019) A pulse of FLP expression was used to excise the GFP flip-out cassette in a subset of cells (marked by the absence of GFP). Cut expression (magenta) is exclusively lost in GFP negative cells. Scale bar\u00a0=\u00a050 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53865/elife-53865-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** P2 are cytotoxic. (A) Expression of Cas9 in nub-Gal4 UAS-Cas9.P2 causes excessive cell death. Apoptotic cells were visualized by co-expression of GC3Ai, which is fluorescent in cells with activated caspase 3. Expression of GC3Ai in the wing pouch highlights a few cells undergoing apoptosis. Additional expression of UAS-cas9.P2 causes a dramatic increase in the cells undergoing programmed cell death, highlighting cytotoxicity caused by high levels of Cas9. (B) Comparison of Cas9 expression levels between act-cas9 and hh-Gal4 UAS-cas9.P2 wing discs. Cas9 was detected by antibody staining and imaged in the same session with identical setting at either low (top panel) or high (bottom panel) detector gain. The difference in Cas9 levels is such, that Cas9 expressed from act-cas9 is undetectable with low detector gain and Cas9 staining in hh-Gal4 UAS-cas9.P2 wing discs is oversaturated with high detector gain, where Cas9 from act-cas9 is visible. The act-cas9 transgene is known to mediate highly efficient mutagenesis in Drosophila (Port et al., 2014; Port et al., 2015 ). (C) Systematic characterization of Cas9 expression, toxicity and mutagenesis of the UAS-uCas9 series. Transgenes of the UAS-uCas9 series were recombined with nub-Gal4 and wing imaginal discs were stained for Cas9 protein. Cas9 levels gradually reduce as the size of the uORF increases (left panel). nub-Gal4 UAS-uCas9 flies were crossed to UAS-GC3Ai to visualize cells undergoing apoptosis. Elevated levels of apoptosis were only observed with UAS-uXSCas9. The longest uORF (uXXL) encodes EGFP, preventing visualization of dying cells with GC3Ai (middle panel). nub-Gal4 UAS-uCas9 flies were crossed to pCFD6-evi2x and mutagenesis of evi was indirectly observed by loss of Evi staining. All transgenes of the UAS-uCas9 series mediate evi mutagenesis, with transgenes containing the four shortest uORFs (XS-L) leading to comparable gene editing that removes Evi from nearly all cells in the Gal4 expression domain (right panel).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53865/elife-53865-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Chromosomal locations of UAS-uMCas9 transgenes currently available. (B) A growing collection of Gal4 UAS-uCas9 stocks will allow tissue-specific mutagenesis in Drosophila. (C) Evi is expressed in all cells of wildtype third-instar wing imaginal discs and accumulates in cells at the dorsal-ventral boundary. (D) Mutagenesis of evi in ap-Gal4 UAS-uMCas9 pCFD6-evi2x wing discs results in loss of Evi protein exclusively in the dorsal compartment, which expresses Cas9 protein. (E) CRISPR mutagenesis of Evi with ct-Gal4 results in loss of Evi staining only in cells along the dorsal-ventral boundary, where also Cas9 protein is expressed. (F) CRISPR mutagenesis with ser-Gal4 results in loss of Evi staining in the pouch, hinge and notum region of the wing disc and includes large areas where no Cas9 protein is detectable in third instar wing discs. (G) Mutagenesis of evi with dpp-Gal4. Dpp is known to be expressed in a stripe along the anterior-posterior boundary in third instar wing imaginal discs. In addition to this domain, mutagenesis is consistently found in the anterior-dorsal region of the pouch. Six representative discs for the same genotype are shown.\n\nNext, we generated a toolbox of various fly strains harbouring a UAS-uMCas9 transgene and a Gal4 driver on the same chromosome (Figure 2\u2014figure supplement 2A,B). Such stocks can be crossed to transgenic sgRNA lines to induce conditional CRISPR mutagenesis in Gal4-expressing cells. We tested the spatial mutagenesis pattern for a number of novel Gal4 UAS-uMCas9 lines in the wing imaginal disc of third instar larva by either visualizing the loss of protein encoded by the target gene with a specific antibody, or by using the transgenic CIGAR reporter (Brunner et al., 2019). CIGAR encodes an ubiquitously expressed fluorescent protein that is only efficiently translated once an upstream sequence has been mutated by CRISPR gene editing (Brunner et al., 2019). While not all CRISPR-mediated mutations lead to induction of the fluorophore encoded by CIGAR, this strategy has the advantage that it readily reveals CRISPR activity throughout the entire organism.\n\nWe found that while some Gal4 UAS-uMCas9 lines resulted in mutagenesis exclusively in cells positive for Cas9 at that stage (Figure 2\u2014figure supplement 2D,E), others had much broader mutagenesis patterns (Figure 2E, Figure 2\u2014figure supplement 2F,G). For example, in third instar wing discs ptc-Gal4 is expressed in a narrow band of cells along the anterior-posterior boundary (Figure 2E). However, CRISPR mutagenesis with ptc-Gal4 frequently leads to mutations throughout the entire anterior compartment (Figure 2E\u2019), likely reflecting broader expression of ptc-Gal4 in early development or expression at low level in this domain. Similar effects were observed with dpp-Gal4 (Figure 2\u2014figure supplement 2G). Therefore, additional regulatory mechanisms to temporally control Cas9 expression are highly desirable when using Gal4 lines with dynamic expression patterns during development. We first employed the temperature-sensitive Gal80 repressor to suppress Gal4 activity. While Gal80ts mediated strong inhibition of mutagenesis in ptc-Gal4 UAS-uMCas9 tub-Gal80ts flies at the restrictive temperature of 18\u00b0C, we still observed mutagenesis in Gal4-expressing cells in 11/24 wing discs, indicating residual Gal4 activity (Figure 2F). We therefore tested an alternative strategy to induce CRISPR mutagenesis at a given time point. We created a transgene that harbors a FRT-flanked GFP Stop-cassette between the UAS promoter and the uMCas9 expression cassette (UAS-FRT-GFP-FRT-uMCas9, Figure 2G). A brief pulse of Flp recombinase (from a hs-Flp transgene) can be used to excise the GFP cassette at the desired time and induce Cas9 expression. We validated this approach by mutagenizing ct in a negatively marked subset of cells in the wing disc and observed loss of Ct protein exclusively in cells that had lost GFP expression (Figure 2G).\n\nThese experiments highlight the need to critically evaluate spatial mutagenesis patterns in conditional CRISPR experiments and suggest strategies for additional control of gene editing in cases where the Gal4 expression pattern alone does not suffice. We envision that in the future other systems for conditional transgene expression, such as the chemical-dependent GeneSwitch system (Osterwalder et al., 2001; Roman et al., 2001), split-Gal4 (Luan et al., 2006) or conditional transgene degradation (Sethi and Wang, 2017) will also be combined with CRISPR to further refine mutagenesis patterns.\n\n### A large-scale transgenic sgRNA library\n\nHaving established the robustness of our method and developed an optimised Cas9 toolkit, we next focused our efforts on the generation of a large-scale sgRNA resource. First, we generated and validated three sgRNA lines targeting genes with highly restricted expression patterns, which can be used as controls for effects of Cas9/sgRNA expression and induction of DNA damage in the majority of tissues where their target gene is not expressed (Figure 3\u2014figure supplement 1; Graveley et al., 2011). To allow systematic screening of functional gene groups we then designed sgRNAs against all Drosophila genes encoding transcription factors, kinases and phosphatases, as well as a large number of other genes encoding fly orthologs of genes implicated in human pathologies (Figure 3A, see Materials\u00a0and\u00a0methods). We used CRISPR library designer (Heigwer et al., 2016) to compile a list of all sgRNAs that do not have predicted off-target sites elsewhere in the genome. We then selected sgRNAs depending on the position of their target site within the target gene. We chose sgRNAs targeting coding exons shared by all mRNA isoforms and target sites that were located in the 5\u2019 half of the open reading frame, where indel mutations often have the largest functional impact. We then grouped sgRNAs in pairs, with each pair targeting sites typically separated by approximately 500 bp of protein coding DNA (see Materials\u00a0and\u00a0methods). Next, we devised an efficient cloning protocol to insert defined sgRNA pairs into pCFD6. This utilized synthesized oligonucleotide pools, which allow cloning of hundreds to thousands of sgRNA plasmids in parallel in a single tube, followed by clonal selection of individual pCFD6-sgRNA2x plasmids and sequence validation (Figure 3B, see Materials\u00a0and\u00a0methods). We also generated a derivative of pCFD6, pCFD6.FRT, which harbors incompatible FRT2 and FRT5 sites before and after the sgRNA cassette, respectively. These recombination sites can be used to exchange sequences either side of the sgRNA cassette, for example the promoter, or to add additional sgRNAs to the array (Figure 3C). We validated that both FRT sites mediate highly efficient chromosome exchange in vivo (Figure 3D). We then generated a large-scale transgenic sgRNA library, which we collectively refer to as the \u2018Heidelberg CRISPR Fly Design Library\u2019 (short HD_CFD library). This growing resource currently contains 2622 plasmids and 1739 fly stocks targeting 1513 unique genes (Supplementary file 1). Fly lines are so far available for 545/754 (72%) transcription factors, 199/230 (87%) protein kinases and 141/207 (68%) phosphatases (Figure 2D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53865/elife-53865-fig3-v2.jpg)\n\n**Figure 3.:** (A) Design of the sgRNA pairs used for the HD_CFD library. sgRNAs were designed through CLD and filtered to target common exons in the 5\u2019ORF and not overlap the start codon. sgRNAs were then paired to target two independent positions in the same gene. As an example the locations of the two target sites in ovo targeted by the two sgRNAs encoded in line HD_CFD000172 is shown. Exons are represented as boxes and regions in blue are protein coding. (B) Experimental strategy for the generation of the transgenic sgRNA library. sgRNA target sequences are encoded on oligonucleotides synthesized and cloned in pool. Individual plasmids are sequence verified and transformed into Drosophila at attP40 on the second chromosome following a pooled injection protocol followed by genotyping of individual transformants. (C) Applications of the pCFD6::FRT vector. pCFD6::FRT contains two non-compatible FRT sites either side of the sgRNA cassette. Using compatible FRT sides in trans allows to exchange sequences upstream or downstream of the sgRNAs in vivo. (D) Efficient promoter or sgRNA exchange in vivo. Summary of FLP/FRT mediated exchange of the sgRNA promoter (left) or sgRNAs (right). Each line represents a single sequenced animal. Red and blue boxes either side of the triangle (representing FRT) indicate successful recombination. (E) Summary statistics of the different functional groups present in the sgRNA library. Given is the number of genes from each category that are covered by fly lines, plasmids or against which currently no tools are available. Note that for some genes two fly lines or plasmids exist. Status in September 2019 is shown. Group \u2018Others\u2019 contains mainly genes with human orthologs associated with cancer development in humans.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53865/elife-53865-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Sfp24C1, se and y are not expressed in most tissues (upper panel, data from modENCODE), making them suitable as negative controls in most circumstances. (B) sgRNA lines mediate efficient mutagenesis at both (pCFD6-Sfp24C12x, pCFD6-y2x) or one (pCFD6-se2x) target sites.\n\n### HD_CFD sgRNA lines mediate efficient mutagenesis and allow robust CRISPR screening\n\nTo test on-target activity of HD_CFD sgRNA strains, we crossed a random selection of 28 HD_CFD lines to an act-cas9;;tub-Gal4/TM3 strain, which is expected to mediate ubiquitous mutagenesis in combination with active sgRNAs. We then sequenced PCR amplicons encompassing the sgRNA target sites (see Materials\u00a0and\u00a0methods) and analysed editing efficiency by ICE analysis (Hsiau et al., 2019). We found that the vast majority (26/28) of HD_CFD sgRNA lines resulted in gene editing on both target sites (Figure 4A). For 12/28 of lines editing on both sites was inferred to be at least 50% and 23/28 reached this threshold on at least one target site. In contrast, only a single line (HD_CFD00032) resulted in no detectable gene editing at either sgRNA target site. This suggests that HD_CFD sgRNA lines mediate robust and efficient mutagenesis of target genes across the genome.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53865/elife-53865-fig4-v2.jpg)\n\n**Figure 4.:** (A) The majority of sgRNA lines mediates efficient mutagenesis on both sgRNA target sites. sgRNA transgenes were combined with act-cas9 and tub-Gal4 to induce ubiquitous mutagenesis. Mutagenesis was measured by sequencing PCR amplicons spanning the target sites followed by Inference of CRISPR Edits (ICE) analysis. Shown are mean values of 2\u20134 independent experiments and the standard error of the mean. (B) CRISPR screening for essential genes in Drosophila. Ubiquitous mutagenesis was induced in offspring of HD_CFD sgRNA lines crossed with act-cas9;;tub-Gal4/TM6B partners. Vials were analysed after 15\u201317 days (~5\u20137 days after eclosion) for viable act-cas9;pCFD6-sgRNA2x; tub-Gal4 offspring. Summary statistics are shown on the right. Crosses were scored as semi-lethal when flies of the correct genotype were present, but\u00a0<50% of the number of TM6B flies, and dead larva, pupae or adults were evident in the vail. (C) False-negative results are rare and often occur for genes controlling early development. Summary statistics for 208 HD_CFD sgRNA lines targeting known essential genes are shown. 23 (11%) lines give rise to the incorrect (viable) phenotype. mRNA expression data for these target genes is shown below (data from modENCODE). Most genes have maternally contributed mRNA, are highly expressed in early embryonic stage or play known roles in embryonic development. (D) Low number of false-positive results caused by HD_CFD sgRNA lines. 54 HD_CFD lines in the screen target genes known to be dispensable for fly development. five lines result in lethality when crossed to act-cas9;;tub-Gal4/TM6B flies. Note that lines HD_CFD795 and HD_CFD1058 target the same gene with independent sgRNAs. (E) Tissue-specific CRISPR mutagenesis in the developing wing. Representative images of adult wing phenotypes caused by CRISPR mutagenesis of Dpp signalling components are shown. All lines give rise to the expected alterations in wing size and vein patterning with varying strength.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53865/elife-53865-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Lines HD_CFD347 (Target: hbn), HD_CFD356 (Target: Ets97D) and HD_CFD505 (Target: gcm) give rise to viable offspring when crossed to act-cas9;;tub-Gal4/TM6B. Failure to result in lethality does not reflect inactive sgRNAs. Target locus was amplified by PCR and editing efficiency was measured by Sanger sequencing followed by ICE analysis. Bars represent mean and error bars show standard deviation.\n\nNext, we performed a large-scale transgenic CRISPR screen. We crossed HD_CFD animals to act-cas9;;tub-Gal4/TM3 to induce mutations ubiquitously in the offspring and determined viability at five to seven days after eclosion. 290/639 (45%) of all crosses did not yield any viable offspring, while 269 (42%) lines produced viable adults and 53 (8%) of the lines resulted in lethality with incomplete penetrance (Figure 4B and Supplementary file 2). In order to benchmark the performance of the screen, we manually curated viability information based on genetic alleles stored in the Flybase database to determine which HD_CFD lines target genes known to be essential or non-essential during Drosophila development. This resulted in a list of 210 lines that target known essential genes. Of those, 167 (79%) resulted in lethality, 20 (10%) were scored as semi-lethal, and 23 (11%) gave rise to viable adult offspring. Interestingly, among the targets of sgRNA lines that produced false-negative results there was a strong enrichment of genes known to play important roles, and to be highly expressed, during early embryonic development. Furthermore, sequencing the sgRNA target sites in randomly selected false-negative lines revealed efficient gene editing on one or both sites in 3/3 lines (Figure 4\u2014figure supplement 1), suggesting that false-negative results often arise due to mRNA perdurance, not inactive sgRNAs. Next, we analysed our data set for the occurrence of false-positives, that\u00a0is lines that target non-essential genes, but result in lethality. Among the 639 lines present in our screen, 54 target genes are currently annotated as viable. Of those, 48 (89%) gave rise to viable adult offspring, one resulted in semi-lethal offspring and 5 (9%) produced no viable offspring. False-positive results might arise due to off-target mutagenesis, mutations that affect neighbouring genes or cis-elements located at the target-locus, or reflect incorrect annotations in the database. Of the five lines giving rise to false-positive results in our screen two target the same gene (Blos1), arguing against sgRNA-mediated off-target mutagenesis in this case.\n\nScreening for lethality not only allowed us to benchmark our sgRNA library, but also revealed multiple lines targeting uncharacterized genes with putative essential functions (Supplementary file 3). For example, sgRNA line HD_CFD558 targets CG9890, an evolutionary conserved (55% amino acid similarity to the human ortholog) zinc finger protein of unknown function. Another interesting example is CG6470, which is targeted by HD_CFD557 and HD_CFD599 with independent sgRNAs. CG6470 encodes an uncharacterized zinc finger protein that despite its essential role during development is evolutionary restricted to the genus Drosophila. These examples highlight the value of our lethality screen beyond benchmarking our technology. To further characterize genes of interest sgRNA lines can then be used for tissue-specific mutagenesis, where genes performing similar cellular functions often give rise to phenotypes with high similarity. To demonstrate this application, we crossed several lines targeting genes associated with dpp/TGFb signalling with nub-Gal4 UAS-uMCas9 flies, which drive CRISPR mutagenesis in selected tissues, including cells giving rise to the adult wing. All these lines result in lethality in combination with a ubiquitous CRISPR system (Supplementary file 2), but gave rise to viable adults in combination with nub-Gal4 UAS-uMCas9, highlighting again the tight control of mutagenesis. Moreover, all lines resulted in offspring that had wings of abnormal size and morphology and faithfully recapitulated the known phenotypes of loss-of function mutations of their target genes (Figure 4E). Together these results show that lines of the HD_CFD library can be used for systematic CRISPR screens in vivo and mediate relevant phenotypes with very high penetrance and specificity.\n\n## Discussion\n\nHere, we present a large-scale collection of transgenic sgRNA strains for conditional CRISPR mutagenesis in Drosophila. In combination with the associated toolbox of novel Cas9 constructs, the sgRNA lines mediate efficient mutagenesis with precise temporal and spatial control. This allows the rapid targeted disruption of genes in various contexts in the intact organism. The high performance of this resource relies on a) use of conditional sgRNA constructs to achieve strong dependency of CRISPR mutagenesis on Gal4, b) tunable Cas9 expression to achieve high on-target activity with low toxicity, c) the use of two sgRNAs targeting independent positions in the same gene to increase the fraction of cells that harbor non-functional mutations in both alleles. We validate our library by conducting a fully transgenic CRISPR mutagenesis screen, to our knowledge the\u00a0so\u00a0far largest in any multicellular animal, which revealed 259 putative essential genes, of which 56 are poorly characterized.\n\nTo date RNAi is the most commonly used method to disrupt gene expression in defined cell types or developmental stages in vivo. In Drosophila, transgenic RNAi libraries that cover most protein coding genes have been described (Dietzl et al., 2007; Heigwer et al., 2018; Perkins et al., 2015). However, a significant number of these lines do not mediate efficient gene knock-down and the majority reduces mRNA levels by less than 75% (Perkins et al., 2015). Residual gene expression can therefore mask phenotypes in RNAi experiments, which loss-of function alleles induced by CRISPR mutagenesis might reveal. In support of this notion three recent studies demonstrate that CRISPR mutagenesis in vivo can cause phenotypes that are significantly more penetrant than RNAi (Meltzer et al., 2019) or are missed altogether in RNAi experiments (Delventhal et al., 2019; Schlichting et al., 2019). Furthermore, our molecular analysis of mutations induced by the CRISPR library described here, as well as the phenotypes arising from them, suggest that the fraction of lines that produce no or only insufficient on-target mutations is less than 10%, which compares favorably to current Drosophila RNAi libraries. Together these observations strongly suggest that screening biological processes of interest by conditional CRISPR mutagenesis can reveal novel gene functions that have so far been missed in RNAi based experiments.\n\nFor conditional CRISPR mutagenesis to be broadly applicable, it needs to be effective in a wide range of tissues and cell types. We show here that our system works effectively in a number of important tissues in the fly, such as imaginal discs, the adult midgut and the germline. Furthermore, others have shown that CRISPR with transgenic components is also effective in postmitotic neurons (Delventhal et al., 2019) or in cells of the prothoracic gland, which are endoreplicating and contain multiple copies of the genome (Huynh et al., 2018). In addition, our finding that sequencing of PCR amplicons generated from genomic DNA of entire flies frequently indicates mutations in over 90% of the amplicons suggests that CRISPR is effective in most cells of the animal.\n\nIn parallel to the CRISPR library described here, the National Institute of Genetics (NIG) in Japan, the Transgenic RNAi Project (TRIP) at Harvard University and the Schuldiner group at the Weizmann Institute are generating collections of transgenic sgRNA lines\u00a0(Meltzer et al., 2019; Zirin et al., 2020;\u00a0https://shigen.nig.ac.jp/fly/nigfly/). These projects follow different strategies to prioritise target genes and hence the overlap between different collections is currently limited. Furthermore, there exist significant differences in design between these resources and the library described here. First, the NIG and the majority of TRIP and Weizmann libraries encode a single sgRNAs per transgene, while all HD_CFD lines encode two sgRNAs. Co-expression of more than one sgRNA against the same target leads to more penetrant phenotypes and reduces the number of inactive lines (Port and Bullock, 2016; Xie et al., 2015; Yin et al., 2015). Second, the HD_CFD sgRNAs are encoded in pCFD6 or pCFD6.FRT, which are conditional UAS vectors, while all other libraries so far used plasmids expressing sgRNAs from ubiquitous U6 promoters. We have previously shown that expression of U6-sgRNA in combination with UAS-Cas9 alone is not sufficient to efficiently restrict mutagenesis to Gal4 expressing cells and that expression of sgRNAs from a UAS vector, such as pCFD6, results in a significant improvement in spatial and temporal control (Port and Bullock, 2016). The use of transgenes of the UAS-uCas9 series can reduce, but not prevent, unwanted mutagenesis in combination with U6-sgRNAs, as leaky (i.e. Gal4 independent) Cas9 expression is reduced in the presence of a uORF. An advantage of U6-sgRNA vectors is the consistent high sgRNA expression, whereas the level of sgRNAs expressed from UAS promoters depends on the strength of the Gal4 line and can become limiting with weak Gal4 drivers (Meltzer et al., 2019). Of note, pCFD6.FRT can alleviate this problem, as users can easily swap the UAS promoter for a U6:3 promoter in cases where high sgRNA expression is a higher priority than tight conditional mutagenesis. The different sgRNA libraries that are currently being developed are therefore complementary resources for CRISPR mutagenesis. Large-scale screens in different contexts using lines from different libraries will be informative about the optimal use of each resource.\n\nTwo decades after the publication of the genome sequence of humans, mice, flies, worms and many other organisms, the functional annotation of these genomes are still far from complete. CRISPR-Cas genome editing is accelerating the rate at which new gene functions are described. The resources described here will facilitate context-dependent functional genomics in Drosophila. New insights into the function of the fly genome will inform the functional annotation of the human genome, reveal conserved principles of metazoan biology and suggest control strategies for insect disease vectors.\n\n## Materials and methods\n\n### Plasmid construction\n\nPCRs were performed with the Q5 Hot-start 2x master mix (New England Biolabs (NEB)) and cloning was performed using the In-Fusion HD cloning kit (Takara Bio) or restriction/ligation dependent cloning. Newly introduced sequences were verified by Sanger sequencing. Oligonucleotide sequences are listed in Supplementary file 4.\n\n### UAS-uCas9 plasmids\n\nThe UAS-uCas9 series of plasmids was generated using the pUASg.attB plasmid backbone (Bischof et al., 2013). The plasmid was linearized with EcoRI and XhoI and sequences coding for mEGFP(A206K) and hCas9-SV403\u2019UTR were introduced by In-Fusion cloning using standard procedures. Coding sequences for mEGFP(A206K) were ordered as a gBlock from Integrated DNA Technologies (IDT) and amplified with primers mEGFPfwd and mEGFPrev (Supplementary file 4). The sequence coding for SpCas9 and an SV40 3\u2019UTR were PCR amplified from plasmid pAct-Cas9 (Port et al., 2014) with primers Cas9SV40fwd and Cas9SV40rev. Both PCR amplicons and the linearized plasmid backbone were assembled in a single reaction to generate plasmid UAS-uXXLCas9. UAS-uCas9 plasmids with shorter uORFs were generated by PCR amplification using UAS-uXXLCas9 as template and the common fwd primer uCas9fwd in combination with rev primers binding at various positions in the mEGFP ORF (uXSCas9rev for UAS-uXSCas9; uSCas9rev for UAS-uSCas9; uMCas9rev for UAS-uMCas9; uLCas9rev for UAS-uLCas9; uXLCas9rev for UAS-uXLCas9). PCR products were cirularized by In-Fusion cloning and the sequence between the hsp70 promoter and the attP site was verified by Sanger sequencing. The UAS-uCas9 plasmid series and the full sequence of each plasmid will become available from Addgene (Addgene plasmids 127382\u2013127387).\n\n### UAS-FRT-GFP-FRT-uMCas9\n\nTo generate UAS-FRT-GFP-FRT-uMCas9 plasmid UAS-Cas9.P2 (Port and Bullock, 2016) was digested with EcoRI and the plasmid backbone was gel purified. The FRT-GFP-FRT cassette was ordered as two separate gBlocks from IDT (GFPflipout5 and GFPflipout3) and individually PCR amplified with primers GFPflipout5fwd and GFPflipout5rev or GFPflipout3fwd and GFPflipout3rev and gel purified. The two amplicons were mixed at equalmolar ratios and fused by extension PCR, adding primers GFPflipout5fwd and GFPflipout3rev after 8 PCR cycles for an additional 25 cycles. The final FRT-GFP-FRT cassette was gel purified. The uMCas9EcoRI fragment was PCR amplified from plasmid UAS-uMCas9 with primers uMCas9EcoRIfwd and uMCas9EcoRIrev and gel purified. The plasmid backbone, FRT-GFP-FRT cassette and uMCas9EcoRI fragment were assembled by In-Fusion cloning and sequence from the first FRT site to the end of Cas9 was verified by Sanger sequencing. The UAS-FRT-GFP-FRT-uMCas9 plasmid and the full sequence will become available from Addgene (Addgene plasmid 127388).\n\n### pCFD6.FRT\n\npCFD6.FRT was generated as a derivative of pCFD6. pCFD6 was linearized by restriction digestion with EcoRI-HF and XbaI. The sgRNA cassette was exchanged with a new cassette encoding (from 5\u2019 to 3\u2019): 5\u2019UTR spacer, FRT2 site, D. mel. tRNA Gly, BbsI site, sgRNA core, D. mel. tRNA Glu, BbsI site, sgRNA core, Os. sat. tRNA, FRT5 site. The new sgRNA cassette was ordered as a gBlock from IDT and cloned into the linearized pCFD6 plasmid and newly introduced sequences were verified by Sanger sequencing. pCFD6.FRT will become available from Addgene.\n\n### sgRNA design\n\nAll possible sgRNA sequences targeting all transcription factors, kinases, phosphatases and a number of other - mostly disease relevant - genes in the D. melanogaster genome version BDGP6 were identified using the CRISPR library designer (CLD) software version 1.1.2 (Heigwer et al., 2016). CLD excludes sgRNA sequences that have predicted off-target sites elsewhere in the genome. The resulting pool of sequences was further filtered according to additional criteria. Specifically, sequences with BbsI and BsaI restriction sites were excluded. In addition, sequences containing stretches of 4 or more identical nucleotides were removed from the pool. Two pairs of sgRNAs targeting each gene were then selected using a random sampling approach. For each gene, up to 10,000 pairs of sgRNA sequences were selected at random from the pool of available sequences. Each sequence pair was then evaluated according to a custom scoring function. In order to preferentially select sgRNA pairs that target constitutive exons, the scoring function awarded bonus points for each transcript targeted by either of the sgRNAs. Bonus points were further given to sgRNAs targeting the first half of the gene and small distances to the gene\u2019s transcription start site were awarded additionally. To avoid selecting pairs of overlapping sgRNAs that could potentially interfere with each other\u2019s activity, sgRNA pairs that were less than 75 bp apart from each other were strongly penalized. Further, sgRNAs targeting the gene within 500 bp of each other were penalized. This was done to avoid functional protein products in cases where the second sgRNA might correct an out-of-frame mutation introduced by the first sgRNA. Finally, we penalized sgRNA with predicted off-target effects according to CLD. The two top-scoring pairs for each gene were selected for the HD_CFD library.\n\n### sgRNA library cloning\n\nsgRNA pairs were cloned into BbsI digested pCFD6 (Port and Bullock, 2016) following a two-step pooled cloning protocol. Oligonucleotide pools were ordered from Twist Biosciences and Agilent Technologies. Each oligonucleotide contained two sgRNA protospacer sequences targeting the same gene separated by a BsaI restriction cassette. Furthermore, oligos contained sequences at either end for PCR amplification and BbsI sites at the 5\u2019 end of the first and 3\u2019 end of the second protospacer. An annotated example oligo is shown in Supplementary file 4. Oligo pools were resuspended in sterile dH2O and amplified by PCR with primers Libampfwd and Libamprev, followed by BbsI digestion and gel purification. Digested oligo pools were then ligated into BbsI digested pCFD6 plasmid backbone, transformed into chemically competent bacteria and plated on agarose plates containing Carbenicillin. After incubation overnight at 37\u00b0C transformed bacteria were resuspended and plasmid DNA was extracted and digested with BsaI. Next, the sgRNA core sequence and tRNA required between the two protospacers, but not encoded on the oligos, were introduced. These were PCR amplified from pCFD6 using primers Core_tRNAfwd and Core_tRNArev. PCR amplicons were digested with BsaI and ligated into the BsaI digested pCFD6 plasmid pool containing the library oligos, transformed into chemically competent bacteria and plated on agarose plates containing Carbenicillin. The next day single colonies were picked and used to inoculate liquid cultures. The following day plasmid DNA was extracted and the sgRNA cassette was sequenced with primer pCFD6seqfwd2 to determine which oligo was inserted and to verify the sequence. Individual sequence verified pCFD6-sgRNA2x plasmids were stored at \u221220\u00b0C and make up the HD_CFD plasmid library.\n\n### Drosophila strains and culture\n\nTransgenic Drosophila strains used or generated in this study are listed in Supplementary file 5. Unless specified otherwise flies were kept at 25\u00b0C with 50 \u00b1 10% humidity with a 12 hr light/12 hr dark cycle.\n\n### Transgenesis\n\nTransgenesis was performed with the PhiC31/attP/attB system and plasmids were inserted at landing site (P{y[+t7.7]CaryP}attP40) on the second chromosome. Additional insertions of UAS-uMCas9 were generated at (M{3xP3-RFP.attP}ZH-51D) on the second chromosome and (M{3xP3-RFP.attP}ZH-86Fb) and (PBac{y+-attP-3B}VK00033) on the third chromosome. Microinjection of plasmids into Drosophila embryos was carried out using standard procedures either in house, or by the Drosophila Facility, Centre for Cellular and Molecular Platforms, Bangalore, India (http://www.ccamp.res.in/drosophila) or by the Fly Facility, Department of Genetics, University of Cambridge, UK (www.flyfacility.gen.cam.ac.uk/). Transgenesis of sgRNA plasmids was typically performed by a pooled injection protocol, as previously described (Bischof et al., 2013). Briefly, individual plasmids were pooled at equimolar ratio and DNA concentration was adjusted to 250 ng/\u03bcl in dH2O. Plasmid pools were microinjected into y[1] M{vas-int.Dm}ZH-2A w[*]; (P{y[+t7.7]CaryP}attP40) embryos, raised to adulthood and individual flies crossed to P{ry[+t7.2]=hsFLP}1, y[1] w[1118]; Sp/CyO-GFP. Transgenic offspring was identified by orange eye color and individual flies crossed to P{ry[+t7.2]=hsFLP}1, y[1] w[1118]; Sp/CyO-GFP balancer flies. In the very rare case that a plasmid stably inserted at a genomic locus different than the intended attP40 landing site, this typically resulted in a noticeably different eye colouration and such flies were discarded.\n\n### Genotyping of sgRNA flies\n\nTransgenic flies from pooled plasmid injections were genotyped to determine which plasmid was stably integrated into their genome. If transgenic flies were male or virgin female, animals were removed from the vials once offspring was apparent and prepared for genotyping. In the case of mated transgenic females, genotyping was performed in the next generation after selecting and crossing a single male offspring, to prevent genotyping females fertilised by a male transgenic for a different construct. Single flies were collected in PCR tubes containing 50 \u00b5l squishing buffer (10 mM Tris-HCL pH8, 1 mM EDTA, 25 mM NaCl, 200 \u00b5g/ml Proteinase K). Flies were disrupted in a Bead Ruptor (Biovendis) for 20 s at 30 Hz. Samples were then incubated for 30 min at 37\u00b0C, followed by heat inactivation for 3 min at 95\u00b0C. 3 \u00b5l of supernatant were used in 30 \u00b5l PCR reactions with primers pCFD6seqfwd2 and pCFD6seqrev2. PCR amplicons were analysed by Sanger sequencing with primer pCFD6seqrev2.\n\n### Selection of lethal and viable target genes\n\nGenes considered \u2018known lethal\u2019 or \u2018known viable\u2019 were chosen based on information available in FlyBase (release FB2018_1). For each gene report we manually reviewed the lethality information available in the phenotype category. We did not consider information based on RNAi experiments, as these typically were performed with tissue-restricted Gal4 drivers and residual expression might mask gene essentiality. Annotations of viability in FlyBase are heavily skewed towards lethal genes, likely reflecting the uncertainty in many cases whether a viable phenotype reflects residual gene activity of a particular allele.\n\n### Immunohistochemistry\n\nImmunohistochemistry of wing imaginal discs was performed using standard procedures. Briefly, larva were dissected in ice cold PBS and fixed in 4% Paraformaldehyde in phosphate buffered saline (PBS) containing 0.05% Triton-X100 for 25 min at room temperature. Larva were washed three times in PBS containing 0.3% Triton-X100 (PBT) and then blocked for 1 hr at room temperature in PBT containing 1% heat-inactivated normal goat serum. Subsequently, larva were incubated with first antibody (mouse anti-Cas9 (Cell Signaling) 1:800; mouse anti-Cut (DSHB, Gary Rubin) 1:30; guinea pig anti-Sens (Boutros lab, unpublished) 1:300; rabbit anti-Evi [Port et al., 2008] 1:800) in PBT overnight at 4\u00b0C. The next day, samples were washed three times in PBT for 15 min and incubated for 2 hr at room temperature with secondary antibody (antibodies coupled to Alexa fluorophores, Invitrogen) diluted 1:600 in PBT containing Hoechst dye. Samples were washed three times 15 min in PBT and mounted in Vectashield (Vectorlabs). To visualize apoptotic cells wing discs expressing the apoptosis sensor GC3Ai (Schott et al., 2017) was fixed in 4% PFA, washed in PBT containing Hoechst and mounted in Vectashield.\n\n### Image acquisition, processing and analysis\n\nImages were acquired with a Zeiss LSM800, Leica SP5 or SP8 or a Nikon A1R confocal microscope in the sequential scanning mode. Samples that were used for comparison of antibody staining intensity were recorded in a single imaging session. Image processing and analysis was performed with FIJI (Schindelin et al., 2012). For the comparative analysis of anti-Cas9, GC3Ai and anti-Evi fluorescent intensities presented in Figure 2 raw image files were used to select the wing pouch area and measure the average fluorescence intensity. Experiments were performed at least twice and more than three samples were analyzed for each experiment.\n\nTo produce the overlay of several wing imaginal discs shown in Figure 1 the Fiji plug-in bUnwarpJ\u00a0(Sorzano et al., 2005) was used. Images were rotated and cropped such that wing discs were oriented dorsal up and anterior left and positioned in the center of the image. A representative image was selected as \u2018target\u2019 and all other images registered to this target using bUnwarpJ, selecting \u2018mono\u2019 as registration mode and setting landmark weight to 1. Landmarks were manually selected around the outline of the target wing disc, as well as along the folds in the hinge region of the disc. Registered images were then transformed to a binary image using the Fiji threshold function and assembled to an image stack. Shown are average intensity projections of the indicated number of images using the Fire lookup table. In the resulting image bright areas are CIGAR positive in many discs, while dark areas are devoid of CIGAR signal in most discs.\n\n### Sequence analysis of CRISPR-Cas9 induced mutations\n\nTo determine the mutational status at each sgRNA target site the locus was PCR amplified and PCR amplicons were subjected to sequencing. To extract genomic DNA, flies were treated as described above under \u2018Genotyping of sgRNA flies\u2019. Primers to amplify the target locus were designed to hybridize 250\u2013300 bp 5\u2019 or 3\u2019 to the sgRNA target site and are listed in Supplementary file 4. PCR products were purified using the PCR purification Kit (Qiagen) according to the instructions by the manufacturer and sent for Sanger sequencing. While Sanger sequencing is less accurate and quantitative than deep sequencing of amplicons on, for example, the Illumina platform, it typically allows to cover both sgRNA targets on a single amplicon, which is necessary to account for mutations that result in deletions of the intervening sequence. In cases where this was not possible, for example due to the presence of a large intron between the target sites, each site was analysed on a separate PCR amplicon. To account for deletions in these cases additional PCR reactions containing the distal fwd and rev primers were included. Sequencing chromatograms were visually inspected for sequencing quality and presence of the sgRNA target site and analysed by Inference of CRISPR Edits (ICE) analysis (Hsiau et al., 2019).\n",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "376e7b29-38c9-49d8-9f25-330a8f726b03",
+      "submission_id": "d117f8bd-5eb1-4c03-9183-e30ce08afcaf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael B Eisen, HHMI, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53865.sa1](https://doi.org/10.7554/eLife.53865.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nA persistent challenge in unraveling endogenous gene function is having the tools to determine when and where genes, particularly essential genes, are functioning in vivo. In this manuscript, the authors leverage CRISPR-Cas9 gene editing reagents to create an impressive toolbox to interrogate gene function with tissue specificity in Drosophila. The authors' results are presented in an easy-to-read, straightforward manner, and the figures are visually appealing. Their use of uORFs of different lengths to regulation Cas9 expression is a nice application. While other similar tissue-specific CRISPR resources for flies have been recently reported (e.g. Meltzer et al., 2019 and Poe et al., 2019), the large size of the authors' transgenic gRNA library and its focus on targeting members of specific protein classes (kinases, phosphatases, transcription factors) will likely make the manuscript of interest to a broad audience.\n\nDecision letter after peer review:\n\nCongratulations, we are pleased to inform you that your article, \"A large-scale resource for tissue-specific CRISPR mutagenesis in Drosophila\", has been accepted for publication in eLife. The reviewers have some suggestions to improve the manuscript, but you can consider them at your discretion.\n\nA persistent challenge in unraveling endogenous gene function is having the tools to determine when and where genes, particularly essential genes, are functioning in vivo. In this manuscript, the authors leverage CRISPR-Cas9 gene editing reagents to create an impressive toolbox to interrogate gene function with tissue specificity in Drosophila. The authors' results are presented in an easy-to-read, straightforward manner, and the figures are visually appealing. Their use of uORFs of different lengths to regulation Cas9 expression is a nice application. While other similar tissue-specific CRISPR resources for flies have been recently reported (e.g. Meltzer et al., 2019 and Poe et al., 2019), the large size of the authors' transgenic gRNA library and its focus on targeting members of specific protein classes (kinases, phosphatases, transcription factors) will likely make the manuscript of interest to a broad audience.\n\nReviewer #1:\n\nThe manuscript presented by Port et al. makes important contributions to the rapidly evolving CRISPR/Cas9 field and is in its current form \u2013 barring some minor issues \u2013 suitable for publication in eLife. In particular, the development of a \"tunable\" Cas9 gene variant is a welcome addition that elegantly solves the issue of Cas9 toxicity. I have no major issues that need to be addressed. All remaining issues relate to clarity and typos.\n\nReviewer #2:\n\nGeneral assessment: A persistent challenge in unraveling endogenous gene function is having the tools to determine when and where genes, particularly essential genes, are functioning in vivo. In this manuscript, the authors leverage CRISPR-Cas9 gene editing reagents to create an impressive toolbox to interrogate gene function with tissue specificity in Drosophila. The authors' results are presented in an easy-to-read, straightforward manner, and the figures are visually appealing. Their use of uORFs of different lengths to regulation Cas9 expression is a nice application. While other similar tissue-specific CRISPR resources for flies have been recently reported (e.g. Meltzer et al., 2019 and Poe et al., 2019), the large size of the authors' transgenic gRNA library and its focus on targeting members of specific protein classes (kinases, phosphatases, transcription factors) will likely make the manuscript of interest to a broad audience.\n\nMajor comments:\n\nThe utility of a gRNA library for tissue-specific knock-out ultimately relies on the efficiency and predictability of the gRNA strains to disrupt the expression of the target gene(s). The authors report that ~10% of the gRNA strains give rise to false-negative or false-positive results in a viability test. The authors do not go into too much depth to determine the reason for the unexpected effect on viability for each gRNA strain (which is fine for the scope of this study). However, given the likely application of the transgenic gRNAs for tissue-specific knock-out, it would be helpful to know whether such gRNAs would still be effective in eliminating gene function in a subset of tissues and/or later in development or adulthood. Could the authors test for a developmental or morphological phenotype with a \"false-negative\" gRNA strain(s)? For example, gcm (glia cells missing): is the gcm gRNA strain able to induce a loss of glial cells (or other phenotype) that is characteristic of gcm loss-of-function alleles? Also, given that the gcm gRNAs are scored as only moderately effective (Figure 4\u2014figure supplement 1), have the authors determined whether there is any correlation between the ICE score and severity or frequency of a phenotypic effect? On a related note, have the authors determined whether a gRNA strain will produce equally robust phenotypes in different somatic tissues, such as the wing versus eye or nervous system or intestine (apologies if I missed this)? These questions are aimed at understanding how this collection of gRNA strains could be effectively used to systematically elucidate gene function in individual tissues.\n",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9760317a-4c5b-4ebd-bc63-c389854907ea",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C1",
+      "claim": "The HD_CFD library consists of more than 2600 plasmids and 1700 fly lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The library consists currently of more than 2600 plasmids and 1700 fly lines with a focus on targeting kinases, phosphatases and transcription factors, each expressing two sgRNAs under control of the Gal4/UAS system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the abstract with specific numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "4d9d4c95-b0d2-4058-9e6a-bc3a538a6dfb",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C2",
+      "claim": "The HD_CFD library focuses on targeting kinases, phosphatases and transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The library consists currently of more than 2600 plasmids and 1700 fly lines with a focus on targeting kinases, phosphatases and transcription factors, each expressing two sgRNAs under control of the Gal4/UAS system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "79c3277b-9186-40a3-aca1-273259bf5a4e",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C3",
+      "claim": "Each HD_CFD line expresses two sgRNAs under control of the Gal4/UAS system.",
+      "claim_type": "EXPLICIT",
+      "source": "The library consists currently of more than 2600 plasmids and 1700 fly lines with a focus on targeting kinases, phosphatases and transcription factors, each expressing two sgRNAs under control of the Gal4/UAS system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "a9841185-0184-4864-b5c4-1fd54471533c",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C4",
+      "claim": "Conditional CRISPR mutagenesis is robust across many target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that conditional CRISPR mutagenesis is robust across many target genes and can be efficiently employed in various somatic tissues, as well as the germline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through multiple experimental validations across different genes and tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "5593d3e3-c84b-4e18-a168-464e895ecebf",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C5",
+      "claim": "Conditional CRISPR mutagenesis can be efficiently employed in various somatic tissues and the germline.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that conditional CRISPR mutagenesis is robust across many target genes and can be efficiently employed in various somatic tissues, as well as the germline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through experiments in wing discs, midgut, and germline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "40b15d16-3e1e-4741-955c-defef7c1f17b",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C6",
+      "claim": "Excessive amounts of Cas9 protein cause artefacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to prevent artefacts commonly associated with excessive amounts of Cas9 protein, we have developed a series of novel UAS-Cas9 transgenes, which allow fine tuning of Cas9 expression to achieve high gene editing activity without detectable toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known problem that motivated the development of tunable Cas9 transgenes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "48513eb0-01f7-40c6-a897-6f89ccd89f50",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C7",
+      "claim": "The UAS-uCas9 series allows fine tuning of Cas9 expression to achieve high gene editing activity without detectable toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to prevent artefacts commonly associated with excessive amounts of Cas9 protein, we have developed a series of novel UAS-Cas9 transgenes, which allow fine tuning of Cas9 expression to achieve high gene editing activity without detectable toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through systematic characterization of the UAS-uCas9 series.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "61904be5-7528-4323-a050-02a1ad764a2c",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C8",
+      "claim": "The vast majority of transgenic sgRNA lines mediate efficient gene disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional assays, as well as direct sequencing of genomic sgRNA target sites, indicates that the vast majority of transgenic sgRNA lines mediate efficient gene disruption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequencing data and functional assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "f715caab-352b-4d4b-8f83-be7cb02b86e5",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C9",
+      "claim": "The study conducted the largest fully transgenic CRISPR screen in any metazoan organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we conducted the so far largest fully transgenic CRISPR screen in any metazoan organism, which further supported the high efficiency and accuracy of our library and revealed many so far uncharacterized genes essential for development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "b93d1959-3987-4a5d-bd5a-627ca2492d29",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C10",
+      "claim": "The CRISPR screen revealed many uncharacterized genes essential for development.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we conducted the so far largest fully transgenic CRISPR screen in any metazoan organism, which further supported the high efficiency and accuracy of our library and revealed many so far uncharacterized genes essential for development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the lethality screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "774ae063-6e41-4594-b2e7-fec03ae109ad",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C11",
+      "claim": "RNAi is often limited by incomplete penetrance due to residual gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, RNAi is often limited by incomplete penetrance due to residual gene expression and can suffer from off-target effects (Echeverri et al., 2006; Ma et al., 2006; Perkins et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "be7b0b66-1d0e-4ee4-b346-da763c4e8004",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C12",
+      "claim": "RNAi can suffer from off-target effects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, RNAi is often limited by incomplete penetrance due to residual gene expression and can suffer from off-target effects (Echeverri et al., 2006; Ma et al., 2006; Perkins et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "8497b352-4ad5-401f-be54-f5b4d856ad12",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C13",
+      "claim": "In Drosophila only 20% of genes have associated mutant alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in Drosophila only 20% of genes have associated mutant alleles (Kaufman, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Kaufman, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "fe9ecb3f-e4d0-4add-9424-201cebdb5b38",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C14",
+      "claim": "Not all Cas9-mediated indel mutations abrogate gene function.",
+      "claim_type": "EXPLICIT",
+      "source": "However, not all Cas9-mediated indel mutations abrogate gene function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known limitation of CRISPR mutagenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "25ddea3e-2a20-4048-9310-482e94034e44",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C15",
+      "claim": "Several sgRNAs are often required to generate bi-allelic loss-of-function mutations in all cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of such multiplexing strategies has been demonstrated in flies, mice, fish and plants, and several sgRNAs are often required to generate bi-allelic loss-of function mutations in all cells (Port and Bullock, 2016; Xie et al., 2015; Yin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "3429aa92-29a8-43e1-b068-03d515bc81ae",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C16",
+      "claim": "Cas9 expression vectors with tissue-specific enhancers often display 'leaky' Cas9 expression in other tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Cas9 expression vectors with tissue-specific enhancers often display 'leaky' Cas9 expression in other tissues and poor control of CRISPR mutagenesis has been observed in multiple systems, including flies, mice and patient derived xenografts (Chen et al., 2017; Dow et al., 2015; Hulton et al., 2019; Port and Bullock, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "9dc41e23-a12b-4547-b7f4-1e8973ba3496",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C17",
+      "claim": "Expressing both Cas9 and sgRNA from conditional regulatory elements can result in tightly controlled genome editing.",
+      "claim_type": "EXPLICIT",
+      "source": "It has recently been demonstrated that expressing both Cas9 and sgRNA from conditional regulatory elements can result in tightly controlled genome editing (Port and Bullock, 2016), but the robustness of such a strategy across many genomic target sites has so far not been explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Port and Bullock, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "47289e2e-c12c-491a-aec6-fd9bce2fe2c5",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C18",
+      "claim": "Conditional expression of both Cas9 and sgRNAs is necessary to achieve tight control of mutagenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that conditional expression of both Cas9 and sgRNAs is necessary to achieve tight control of mutagenesis (Figure 1B; Port and Bullock, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "f5af63ff-2c67-4e68-9147-e655ed0a6cd0",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C19",
+      "claim": "pCFD6-arm2x results in loss of Arm protein exclusively in the Gal4 expression domain in nearly all cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene editing with pCFD6-arm2x results in loss of Arm protein exclusively in the Gal4 expression domain in nearly all cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by immunohistochemistry in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "f6939724-0dd3-4027-a599-32168c1a77bc",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C20",
+      "claim": "CRISPR mutagenesis of Notch in intestinal stem cells drives tumor formation in the midgut.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional CRISPR mutagenesis of Notch in intestinal stem cells drives tumor formation in the midgut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "59b92e37-97cc-4216-b105-0139f2d60b41",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C21",
+      "claim": "Notch mutagenesis by CRISPR induces strong overgrowth in both male and female midguts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed a qualitative difference between perturbation of N expression by RNAi, which only induces hyperplasia in female flies (Figure 1\u2014figure supplement 2; Hudry et al., 2016; Siudeja et al., 2015), and N mutagenesis by CRISPR, which induces strong overgrowth in both male and female midguts (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data comparing RNAi and CRISPR approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "0acfdd10-2c70-4070-8ba4-c0d53f6caeba",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C22",
+      "claim": "Notch RNAi only induces hyperplasia in female flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed a qualitative difference between perturbation of N expression by RNAi, which only induces hyperplasia in female flies (Figure 1\u2014figure supplement 2; Hudry et al., 2016; Siudeja et al., 2015), and N mutagenesis by CRISPR, which induces strong overgrowth in both male and female midguts (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "88ed41d6-120f-4c00-99c5-458023cc0d3f",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C23",
+      "claim": "nos-Gal4VP16 UAS-Cas9.P1 pCFD6-sgRNA2x flies were viable and morphologically normal, demonstrating tightly restricted mutagenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that all five genes are essential for Drosophila development and act in multiple tissues, nos-Gal4VP16 UAS-Cas9.P1 pCFD6-sgRNA2x flies were viable and morphologically normal, demonstrating tightly restricted mutagenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental observation of fly viability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "8cf4e399-b84f-4ef7-a923-be69a4a53a9d",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C24",
+      "claim": "Crosses with pCFD6-sgRNA2x targeting neur, N, ct and Ras85D passed on mutations to most or all analysed offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Crosses with pCFD6-sgRNA2x targeting neur, N, ct and Ras85D passed on mutations to most or all analysed offspring (Figure 1G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by sequencing data in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "1656dcfd-f0d5-4544-b1b0-7e803a82c763",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C25",
+      "claim": "Mutations were often found on both target sites, were frequently out-of-frame and included large deletions of 8 and 14 kb between the sgRNA target sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations were often found on both target sites, were frequently out-of-frame and included large deletions of 8 and 14 kb between the sgRNA target sites (Figure 1G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by sequencing data in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "0f9738a9-0921-4d72-9959-860660e57302",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C26",
+      "claim": "nos-Gal4VP16 UAS-Cas9.P1 pCFD6-dpp2x flies produced only few viable offspring of which only 1/11 carried a mutation, which was in-frame.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, nos-Gal4VP16 UAS-Cas9.P1 pCFD6-dpp2x flies produced only few viable offspring of which only 1/11 carried a mutation, which was in-frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "3e1054f7-764b-47bd-a11a-8a256d94a109",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C27",
+      "claim": "dpp is haploinsufficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Since dpp is known to be haploinsufficient (St Johnston et al., 1990), this is consistent with a high number of dpp loss-of function alleles being transmitted to the next generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from St Johnston et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "fef74731-0fea-40d2-a8ad-331c95302853",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C28",
+      "claim": "Expression of high amounts of Cas9 protein is toxic in various organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have shown that expression of high amounts of Cas9 protein is toxic in various organisms (Jiang et al., 2014; Poe et al., 2019; Port et al., 2014; Yang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "e050e3dd-13e2-4225-9108-8c3b08a79faa",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C29",
+      "claim": "Overexpression of Cas9 in the wing imaginal disc of nub-Gal4 UAS-cas9.P2 animals results in a strong induction of apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, overexpression of Cas9 in the wing imaginal disc of nub-Gal4 UAS-cas9.P2 animals results in a strong induction of apoptosis (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "30f6fbca-f24f-4ce5-ac1a-888043c43ea1",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C30",
+      "claim": "Only relatively low levels of Cas9 are sufficient for efficient gene editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Since only relatively low levels of Cas9 are sufficient for efficient gene editing (Figure 2\u2014figure supplement 1B), we sought to engineer a system that would allow to tune Cas9 expression to optimally balance activity and toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "da2ab107-c631-43fc-9652-a816a1eae294",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C31",
+      "claim": "The UAS-uCas9 series uses upstream open reading frames (uORF) of different length to predictably reduce translation of the main, downstream ORF.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed a method that uses upstream open reading frames (uORF) of different length to predictably reduce translation of the main, downstream ORF (Ferreira et al., 2013; Kozak, 2001; Southall et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "859ff48b-f15e-4e0c-b737-c6a9983af8b8",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C32",
+      "claim": "The UAS-uCas9 plasmids resulted in Cas9 protein levels inversely correlated with the length of the uORF.",
+      "claim_type": "EXPLICIT",
+      "source": "When combined with nos-cas9 these plasmids resulted in Cas9 protein levels inversely correlated with the length of the uORF (Figure 2B, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "72800abd-2926-4fa5-8f87-67d85845b29e",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C33",
+      "claim": "Reducing the amount of Cas9 protein resulted in a strong decrease in the number of apoptotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing the amount of Cas9 protein resulted in a strong decrease in the number of apoptotic cells (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "d0f2a523-665a-4de0-abbe-1039166414ea",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C34",
+      "claim": "Three UAS-uCas9 transgenes with moderate levels of Cas9 expression and apoptosis levels similar to controls did mediate full on-target gene editing activity at the evi locus in wing imaginal discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, three UAS-uCas9 transgenes with moderate levels of Cas9 expression and apoptosis levels similar to controls did mediate full on-target gene editing activity at the evi locus in wing imaginal discs (Figure 2D, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "51f2e133-2e28-4df3-ad2a-9c9f9f753f06",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C35",
+      "claim": "Some Gal4 UAS-uMCas9 lines resulted in mutagenesis exclusively in cells positive for Cas9 at that stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that while some Gal4 UAS-uMCas9 lines resulted in mutagenesis exclusively in cells positive for Cas9 at that stage (Figure 2\u2014figure supplement 2D,E), others had much broader mutagenesis patterns (Figure 2E, Figure 2\u2014figure supplement 2F,G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "0328fdc1-5961-4bdd-a50d-03af562c94f9",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C36",
+      "claim": "ptc-Gal4 is expressed in a narrow band of cells along the anterior-posterior boundary in third instar wing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in third instar wing discs ptc-Gal4 is expressed in a narrow band of cells along the anterior-posterior boundary (Figure 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "2bef301d-c500-42f5-b2b0-23a4c8bb0741",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C37",
+      "claim": "CRISPR mutagenesis with ptc-Gal4 frequently leads to mutations throughout the entire anterior compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CRISPR mutagenesis with ptc-Gal4 frequently leads to mutations throughout the entire anterior compartment (Figure 2E'), likely reflecting broader expression of ptc-Gal4 in early development or expression at low level in this domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in Figure 2E'.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "de5b4278-b7bd-40e0-97d7-ab4f7a34bb71",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C38",
+      "claim": "Gal80ts mediated strong inhibition of mutagenesis in ptc-Gal4 UAS-uMCas9 tub-Gal80ts flies at the restrictive temperature of 18\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "While Gal80ts mediated strong inhibition of mutagenesis in ptc-Gal4 UAS-uMCas9 tub-Gal80ts flies at the restrictive temperature of 18\u00b0C, we still observed mutagenesis in Gal4-expressing cells in 11/24 wing discs, indicating residual Gal4 activity (Figure 2F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "57336b8a-f048-4bf3-b40e-5948c0f26b1f",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C39",
+      "claim": "Mutagenesis was still observed at 18\u00b0C in 11/24 discs in ptc-Gal4 UAS-uMCas9 tub-Gal80ts flies, indicating incomplete Gal4 suppression by Gal80ts.",
+      "claim_type": "EXPLICIT",
+      "source": "While Gal80ts mediated strong inhibition of mutagenesis in ptc-Gal4 UAS-uMCas9 tub-Gal80ts flies at the restrictive temperature of 18\u00b0C, we still observed mutagenesis in Gal4-expressing cells in 11/24 wing discs, indicating residual Gal4 activity (Figure 2F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "f2549824-7895-47f8-b639-470bcf1d48bf",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C40",
+      "claim": "A brief pulse of Flp recombinase can be used to excise the GFP cassette at the desired time and induce Cas9 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "A brief pulse of Flp recombinase (from a hs-Flp transgene) can be used to excise the GFP cassette at the desired time and induce Cas9 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "f47d154a-9b6c-4104-9efe-875c25341aa7",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C41",
+      "claim": "Loss of Ct protein was observed exclusively in cells that had lost GFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated this approach by mutagenizing ct in a negatively marked subset of cells in the wing disc and observed loss of Ct protein exclusively in cells that had lost GFP expression (Figure 2G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "43527c1e-63ca-4b64-96dc-182cbf7b9407",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C42",
+      "claim": "The HD_CFD library currently contains 2622 plasmids and 1739 fly stocks targeting 1513 unique genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We then generated a large-scale transgenic sgRNA library, which we collectively refer to as the 'Heidelberg CRISPR Fly Design Library' (short HD_CFD library). This growing resource currently contains 2622 plasmids and 1739 fly stocks targeting 1513 unique genes (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly with specific numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "1ae5b7f7-af42-41fa-9d6e-3ddd2fb631a0",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C43",
+      "claim": "Fly lines are available for 545/754 (72%) transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Fly lines are so far available for 545/754 (72%) transcription factors, 199/230 (87%) protein kinases and 141/207 (68%) phosphatases (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly with specific numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "0c9ce767-b743-4b55-8479-47aedcef1ed3",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C44",
+      "claim": "Fly lines are available for 199/230 (87%) protein kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Fly lines are so far available for 545/754 (72%) transcription factors, 199/230 (87%) protein kinases and 141/207 (68%) phosphatases (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly with specific numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "4dff6f83-7326-4a7b-8642-96461333e4e8",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C45",
+      "claim": "Fly lines are available for 141/207 (68%) phosphatases.",
+      "claim_type": "EXPLICIT",
+      "source": "Fly lines are so far available for 545/754 (72%) transcription factors, 199/230 (87%) protein kinases and 141/207 (68%) phosphatases (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly with specific numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "2426571e-aa3b-4fc8-b9d0-f33cd2a3ff71",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C46",
+      "claim": "The vast majority (26/28) of HD_CFD sgRNA lines resulted in gene editing on both target sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the vast majority (26/28) of HD_CFD sgRNA lines resulted in gene editing on both target sites (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by sequencing data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "807742a9-6f33-4855-a0ca-e0d799fac4a7",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C47",
+      "claim": "For 12/28 of lines editing on both sites was inferred to be at least 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "For 12/28 of lines editing on both sites was inferred to be at least 50% and 23/28 reached this threshold on at least one target site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by sequencing data and ICE analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "540c9a61-1920-4785-aeb3-974053b01238",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C48",
+      "claim": "23/28 lines reached at least 50% editing on at least one target site.",
+      "claim_type": "EXPLICIT",
+      "source": "For 12/28 of lines editing on both sites was inferred to be at least 50% and 23/28 reached this threshold on at least one target site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by sequencing data and ICE analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "4ea7190b-d704-4e46-bf39-3c2c49a28a45",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C49",
+      "claim": "Only a single line (HD_CFD00032) resulted in no detectable gene editing at either sgRNA target site.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only a single line (HD_CFD00032) resulted in no detectable gene editing at either sgRNA target site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "cd28737d-ae08-4adf-a53b-0aa02c2d8a4b",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C50",
+      "claim": "290/639 (45%) of all crosses did not yield any viable offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "290/639 (45%) of all crosses did not yield any viable offspring, while 269 (42%) lines produced viable adults and 53 (8%) of the lines resulted in lethality with incomplete penetrance (Figure 4B and Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the lethality screen data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "ecb5e716-e7fc-4b42-b356-fb094607d032",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C51",
+      "claim": "269 (42%) lines produced viable adults.",
+      "claim_type": "EXPLICIT",
+      "source": "290/639 (45%) of all crosses did not yield any viable offspring, while 269 (42%) lines produced viable adults and 53 (8%) of the lines resulted in lethality with incomplete penetrance (Figure 4B and Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the lethality screen data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "8df81bbd-01f1-4433-a999-909682de8e8b",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C52",
+      "claim": "53 (8%) of the lines resulted in lethality with incomplete penetrance.",
+      "claim_type": "EXPLICIT",
+      "source": "290/639 (45%) of all crosses did not yield any viable offspring, while 269 (42%) lines produced viable adults and 53 (8%) of the lines resulted in lethality with incomplete penetrance (Figure 4B and Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the lethality screen data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "08352804-8e6c-45e9-a47e-1033191a504c",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C53",
+      "claim": "Of 210 lines targeting known essential genes, 167 (79%) resulted in lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in a list of 210 lines that target known essential genes. Of those, 167 (79%) resulted in lethality, 20 (10%) were scored as semi-lethal, and 23 (11%) gave rise to viable adult offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the lethality screen data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "0129fa2a-a188-4635-b358-b532f6917638",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C54",
+      "claim": "Of 210 lines targeting known essential genes, 20 (10%) were scored as semi-lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in a list of 210 lines that target known essential genes. Of those, 167 (79%) resulted in lethality, 20 (10%) were scored as semi-lethal, and 23 (11%) gave rise to viable adult offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the lethality screen data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "4e188b7f-7cfc-4dea-8fc8-dd07bbe092e4",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C55",
+      "claim": "Of 210 lines targeting known essential genes, 23 (11%) gave rise to viable adult offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in a list of 210 lines that target known essential genes. Of those, 167 (79%) resulted in lethality, 20 (10%) were scored as semi-lethal, and 23 (11%) gave rise to viable adult offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the lethality screen data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "d00fe31d-0a75-4d9a-af2e-7b623cbc731f",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C56",
+      "claim": "Among the targets of sgRNA lines that produced false-negative results there was a strong enrichment of genes known to play important roles, and to be highly expressed, during early embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, among the targets of sgRNA lines that produced false-negative results there was a strong enrichment of genes known to play important roles, and to be highly expressed, during early embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from expression data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "4aedecfc-0c3f-4d36-ac8c-fe0d0262ce77",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C57",
+      "claim": "Sequencing the sgRNA target sites in randomly selected false-negative lines revealed efficient gene editing on one or both sites in 3/3 lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, sequencing the sgRNA target sites in randomly selected false-negative lines revealed efficient gene editing on one or both sites in 3/3 lines (Figure 4\u2014figure supplement 1), suggesting that false-negative results often arise due to mRNA perdurance, not inactive sgRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by sequencing data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "f6a773df-6174-43b1-a7f2-f547bb9f0eb5",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C58",
+      "claim": "False-negative results often arise due to mRNA perdurance, not inactive sgRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, sequencing the sgRNA target sites in randomly selected false-negative lines revealed efficient gene editing on one or both sites in 3/3 lines (Figure 4\u2014figure supplement 1), suggesting that false-negative results often arise due to mRNA perdurance, not inactive sgRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from sequencing data showing efficient editing in false-negative lines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "94144a73-9a82-45c2-ac0e-a188531b5331",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C59",
+      "claim": "Among 54 lines targeting genes annotated as viable, 48 (89%) gave rise to viable adult offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 639 lines present in our screen, 54 target genes are currently annotated as viable. Of those, 48 (89%) gave rise to viable adult offspring, one resulted in semi-lethal offspring and 5 (9%) produced no viable offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the lethality screen data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "378f2015-994e-48ba-98f2-b927578ef694",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C60",
+      "claim": "Among 54 lines targeting genes annotated as viable, one resulted in semi-lethal offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 639 lines present in our screen, 54 target genes are currently annotated as viable. Of those, 48 (89%) gave rise to viable adult offspring, one resulted in semi-lethal offspring and 5 (9%) produced no viable offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the lethality screen data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "1ea4ce87-9bd0-4a3a-9874-4a9284ff1369",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C61",
+      "claim": "Among 54 lines targeting genes annotated as viable, 5 (9%) produced no viable offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 639 lines present in our screen, 54 target genes are currently annotated as viable. Of those, 48 (89%) gave rise to viable adult offspring, one resulted in semi-lethal offspring and 5 (9%) produced no viable offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the lethality screen data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "1be836e3-20c1-4472-849a-cf581e02e699",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C62",
+      "claim": "Two of the five lines giving rise to false-positive results target the same gene (Blos1).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the five lines giving rise to false-positive results in our screen two target the same gene (Blos1), arguing against sgRNA-mediated off-target mutagenesis in this case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "c01a542b-d32c-4132-ada8-8325b5b00ca8",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C63",
+      "claim": "sgRNA line HD_CFD558 targets CG9890, an evolutionary conserved zinc finger protein of unknown function.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, sgRNA line HD_CFD558 targets CG9890, an evolutionary conserved (55% amino acid similarity to the human ortholog) zinc finger protein of unknown function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "4b2bc477-9cb1-4f51-8f06-60a0ba357e4e",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C64",
+      "claim": "CG9890 has 55% amino acid similarity to the human ortholog.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, sgRNA line HD_CFD558 targets CG9890, an evolutionary conserved (55% amino acid similarity to the human ortholog) zinc finger protein of unknown function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "02949f62-bc13-4640-87d8-49907829e1d0",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C65",
+      "claim": "CG6470 is targeted by HD_CFD557 and HD_CFD599 with independent sgRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Another interesting example is CG6470, which is targeted by HD_CFD557 and HD_CFD599 with independent sgRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "c73d4759-07c9-4aa3-b6c3-7613dd9d0bcc",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C66",
+      "claim": "CG6470 encodes an uncharacterized zinc finger protein that is evolutionary restricted to the genus Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "CG6470 encodes an uncharacterized zinc finger protein that despite its essential role during development is evolutionary restricted to the genus Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "406e02de-91f0-4bc5-a6a0-85d32a6c227d",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C67",
+      "claim": "All lines targeting genes associated with dpp/TGFb signalling resulted in offspring that had wings of abnormal size and morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, all lines resulted in offspring that had wings of abnormal size and morphology and faithfully recapitulated the known phenotypes of loss-of function mutations of their target genes (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "a5cde295-ecaa-426c-bae1-9ad9cf31fe80",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C68",
+      "claim": "The lines faithfully recapitulated the known phenotypes of loss-of-function mutations of their target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, all lines resulted in offspring that had wings of abnormal size and morphology and faithfully recapitulated the known phenotypes of loss-of function mutations of their target genes (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "b2efb187-b3b7-460b-93e4-b0d7db3cf5ee",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C69",
+      "claim": "CRISPR mutagenesis in vivo can cause phenotypes that are significantly more penetrant than RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this notion three recent studies demonstrate that CRISPR mutagenesis in vivo can cause phenotypes that are significantly more penetrant than RNAi (Meltzer et al., 2019) or are missed altogether in RNAi experiments (Delventhal et al., 2019; Schlichting et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "95296ccb-5a82-473d-92dc-8192e5954955",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C70",
+      "claim": "CRISPR mutagenesis can reveal phenotypes that are missed altogether in RNAi experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this notion three recent studies demonstrate that CRISPR mutagenesis in vivo can cause phenotypes that are significantly more penetrant than RNAi (Meltzer et al., 2019) or are missed altogether in RNAi experiments (Delventhal et al., 2019; Schlichting et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "cc392815-21e9-4199-9192-83bf37444661",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C71",
+      "claim": "The fraction of HD_CFD lines that produce no or only insufficient on-target mutations is less than 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our molecular analysis of mutations induced by the CRISPR library described here, as well as the phenotypes arising from them, suggest that the fraction of lines that produce no or only insufficient on-target mutations is less than 10%, which compares favorably to current Drosophila RNAi libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from sequencing and phenotypic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "36394bb5-a801-4afd-8247-d416da52d9f1",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C72",
+      "claim": "CRISPR with transgenic components is effective in postmitotic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, others have shown that CRISPR with transgenic components is also effective in postmitotic neurons (Delventhal et al., 2019) or in cells of the prothoracic gland, which are endoreplicating and contain multiple copies of the genome (Huynh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Delventhal et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "3cf9994e-4549-4fe9-88f2-1c4179f48e31",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C73",
+      "claim": "CRISPR with transgenic components is effective in cells of the prothoracic gland, which are endoreplicating and contain multiple copies of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, others have shown that CRISPR with transgenic components is also effective in postmitotic neurons (Delventhal et al., 2019) or in cells of the prothoracic gland, which are endoreplicating and contain multiple copies of the genome (Huynh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Huynh et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "2764f2a7-6a5e-4b1e-8bc0-68653b73ed50",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C74",
+      "claim": "Sequencing of PCR amplicons generated from genomic DNA of entire flies frequently indicates mutations in over 90% of the amplicons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our finding that sequencing of PCR amplicons generated from genomic DNA of entire flies frequently indicates mutations in over 90% of the amplicons suggests that CRISPR is effective in most cells of the animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "6477e474-3373-4ef2-ad29-788d5dd64958",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C75",
+      "claim": "CRISPR is effective in most cells of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our finding that sequencing of PCR amplicons generated from genomic DNA of entire flies frequently indicates mutations in over 90% of the amplicons suggests that CRISPR is effective in most cells of the animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from sequencing data showing high mutation rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "75f2121b-7fa1-4f49-bbca-0318a5061e94",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C76",
+      "claim": "The National Institute of Genetics (NIG) in Japan, the Transgenic RNAi Project (TRIP) at Harvard University and the Schuldiner group at the Weizmann Institute are generating collections of transgenic sgRNA lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel to the CRISPR library described here, the National Institute of Genetics (NIG) in Japan, the Transgenic RNAi Project (TRIP) at Harvard University and the Schuldiner group at the Weizmann Institute are generating collections of transgenic sgRNA lines (Meltzer et al., 2019; Zirin et al., 2020; https://shigen.nig.ac.jp/fly/nigfly/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from other studies and resources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "25c34319-952c-4a4b-b545-294a2b8ed6cb",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C77",
+      "claim": "The NIG and the majority of TRIP and Weizmann libraries encode a single sgRNA per transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the NIG and the majority of TRIP and Weizmann libraries encode a single sgRNAs per transgene, while all HD_CFD lines encode two sgRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison between different libraries.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "a0eeab9d-69f7-4421-9da5-fee23d4b60bb",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C78",
+      "claim": "All HD_CFD lines encode two sgRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the NIG and the majority of TRIP and Weizmann libraries encode a single sgRNAs per transgene, while all HD_CFD lines encode two sgRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "fe63be3b-7766-47d6-9e5d-7429ea445384",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C79",
+      "claim": "Co-expression of more than one sgRNA against the same target leads to more penetrant phenotypes and reduces the number of inactive lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of more than one sgRNA against the same target leads to more penetrant phenotypes and reduces the number of inactive lines (Port and Bullock, 2016; Xie et al., 2015; Yin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "06e1093c-0dc6-4b21-9528-81fdc1d496b2",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C80",
+      "claim": "The HD_CFD sgRNAs are encoded in pCFD6 or pCFD6.FRT, which are conditional UAS vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the HD_CFD sgRNAs are encoded in pCFD6 or pCFD6.FRT, which are conditional UAS vectors, while all other libraries so far used plasmids expressing sgRNAs from ubiquitous U6 promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "529c6648-09d2-4e4a-aa20-8b9aa73afefa",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C81",
+      "claim": "All other libraries so far used plasmids expressing sgRNAs from ubiquitous U6 promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the HD_CFD sgRNAs are encoded in pCFD6 or pCFD6.FRT, which are conditional UAS vectors, while all other libraries so far used plasmids expressing sgRNAs from ubiquitous U6 promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison between different libraries.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "3d6111ea-3860-4da4-9e36-5254049903a1",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C82",
+      "claim": "Expression of U6-sgRNA in combination with UAS-Cas9 alone is not sufficient to efficiently restrict mutagenesis to Gal4 expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that expression of U6-sgRNA in combination with UAS-Cas9 alone is not sufficient to efficiently restrict mutagenesis to Gal4 expressing cells and that expression of sgRNAs from a UAS vector, such as pCFD6, results in a significant improvement in spatial and temporal control (Port and Bullock, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "78953d75-793c-45e1-819c-8764da705388",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C83",
+      "claim": "Expression of sgRNAs from a UAS vector, such as pCFD6, results in a significant improvement in spatial and temporal control.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that expression of U6-sgRNA in combination with UAS-Cas9 alone is not sufficient to efficiently restrict mutagenesis to Gal4 expressing cells and that expression of sgRNAs from a UAS vector, such as pCFD6, results in a significant improvement in spatial and temporal control (Port and Bullock, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "d34f0bec-5f52-4b4f-a084-5f2dbf40346b",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C84",
+      "claim": "The use of transgenes of the UAS-uCas9 series can reduce, but not prevent, unwanted mutagenesis in combination with U6-sgRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of transgenes of the UAS-uCas9 series can reduce, but not prevent, unwanted mutagenesis in combination with U6-sgRNAs, as leaky (i.e. Gal4 independent) Cas9 expression is reduced in the presence of a uORF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the mechanism of uORF-mediated translational control.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "0bad6d74-19b7-4008-9472-a02dfd8b66e1",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C85",
+      "claim": "An advantage of U6-sgRNA vectors is the consistent high sgRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "An advantage of U6-sgRNA vectors is the consistent high sgRNA expression, whereas the level of sgRNAs expressed from UAS promoters depends on the strength of the Gal4 line and can become limiting with weak Gal4 drivers (Meltzer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison and cited from Meltzer et al., 2019.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "e40cb4de-4d9c-4bd1-9a1c-6bb3f612eac9",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C86",
+      "claim": "The level of sgRNAs expressed from UAS promoters depends on the strength of the Gal4 line and can become limiting with weak Gal4 drivers.",
+      "claim_type": "EXPLICIT",
+      "source": "An advantage of U6-sgRNA vectors is the consistent high sgRNA expression, whereas the level of sgRNAs expressed from UAS promoters depends on the strength of the Gal4 line and can become limiting with weak Gal4 drivers (Meltzer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Meltzer et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "942ff56b-830c-4020-b315-ee45ec15d2a0",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C87",
+      "claim": "pCFD6.FRT can alleviate the problem of limiting sgRNA expression by allowing users to swap the UAS promoter for a U6:3 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, pCFD6.FRT can alleviate this problem, as users can easily swap the UAS promoter for a U6:3 promoter in cases where high sgRNA expression is a higher priority than tight conditional mutagenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a feature of pCFD6.FRT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "cc19aad9-8a08-4e2b-87ac-3057199bf1ac",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C88",
+      "claim": "The lethality screen revealed 259 putative essential genes.",
+      "claim_type": "IMPLICIT",
+      "source": "We validate our library by conducting a fully transgenic CRISPR mutagenesis screen, to our knowledge the so far largest in any multicellular animal, which revealed 259 putative essential genes, of which 56 are poorly characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the screen results showing 290 lethal + 53 semi-lethal lines, but the text states 259 putative essential genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "57453b4f-4065-4082-8a41-4f553614dc2b",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C89",
+      "claim": "Of the 259 putative essential genes revealed by the screen, 56 are poorly characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "We validate our library by conducting a fully transgenic CRISPR mutagenesis screen, to our knowledge the so far largest in any multicellular animal, which revealed 259 putative essential genes, of which 56 are poorly characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "5913eb92-2f93-4b23-b506-ed05f595f9de",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C90",
+      "claim": "A significant number of transgenic RNAi lines do not mediate efficient gene knock-down.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a significant number of these lines do not mediate efficient gene knock-down and the majority reduces mRNA levels by less than 75% (Perkins et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Perkins et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "4b5175b6-6bb2-4f5d-8b1d-f6f6f66d7f41",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "claim_id": "C91",
+      "claim": "The majority of transgenic RNAi lines reduces mRNA levels by less than 75%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a significant number of these lines do not mediate efficient gene knock-down and the majority reduces mRNA levels by less than 75% (Perkins et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Perkins et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e64883f4-2c8a-440c-9348-3729f80323a5",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The HD_CFD library is a large-scale resource containing 2622 plasmids and 1739 fly stocks targeting 1513 unique genes, with a focus on kinases, phosphatases, and transcription factors. Each line expresses two sgRNAs under Gal4/UAS control, achieving coverage of 72% of transcription factors, 87% of kinases, and 68% of phosphatases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C42-C45 provide consistent, specific numerical data about the library composition and coverage. The numbers are stated explicitly and represent direct counts of generated resources, making this a well-documented descriptive result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "742b20cb-e747-408f-b915-d4c4e946bbb3",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Conditional CRISPR mutagenesis using the pCFD6 system is robust across multiple target genes and tissues. The system achieves efficient, spatially restricted mutagenesis in wing imaginal discs, midgut, and germline, with mutations transmitted to offspring and producing expected phenotypes. CRISPR mutagenesis of Notch shows more complete penetrance than RNAi, inducing overgrowth in both male and female midguts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C19-C27 collectively demonstrate tissue-specific mutagenesis across multiple genes (arm, Notch, neur, ct, Ras85D, dpp) and tissues with appropriate controls and phenotypic validation. The comparison with RNAi (C21-C22) provides additional validation. Sequencing data (C24-C26) confirms efficient germline transmission of mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "0ab562bd-fbfe-4ff4-aa1d-58598d9e6973",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A novel UAS-uCas9 series using upstream ORFs of varying length allows tunable Cas9 expression to balance gene editing activity and toxicity. Cas9 protein levels inversely correlate with uORF length, reducing apoptosis while maintaining full on-target editing activity at moderate expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 provide systematic characterization showing that uORF length inversely correlates with Cas9 expression (C32), reduces toxicity (C33), while maintaining editing efficiency (C34). The experimental design includes appropriate controls and quantification of both toxicity and activity, supporting the conclusion that this system balances these parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "47deeed8-c7b2-414c-bd01-cedd288728de",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Spatial mutagenesis patterns can extend beyond current Gal4 expression domains, reflecting expression history. Gal80ts provides incomplete temporal control, while FLP/FRT-based systems enable precise temporal induction of Cas9 expression with tight spatial restriction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41 demonstrate that mutagenesis patterns reflect Gal4 expression history (C37) and that Gal80ts shows incomplete suppression (C38-C39). The FLP/FRT system (C40-C41) provides an alternative with validated spatial restriction. These findings are important for proper interpretation and design of conditional CRISPR experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "839f8fe0-6c0b-4c16-a356-95ae96ec3625",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The vast majority (26/28, 93%) of HD_CFD sgRNA lines mediate efficient gene editing on both target sites, with 23/28 (82%) achieving at least 50% editing on one site. Only one line showed no detectable editing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 provide sequencing-based validation of editing efficiency across a random sample of 28 lines. The ICE analysis provides quantitative estimates of editing rates. The high success rate (93% showing editing on both sites) supports claim C8 about the overall efficiency of the library.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "ee6b832f-fc1f-41f6-aceb-9924e97ab442",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A large-scale lethality screen of 639 HD_CFD lines represents the largest fully transgenic CRISPR screen in any metazoan organism. The screen revealed 259 putative essential genes, including 56 poorly characterized genes, with 79% of known essential genes correctly identified as lethal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C50-C55 provide comprehensive screen statistics. The 79% true positive rate for known essential genes (C53) validates the approach. Claims C88-C89 highlight the discovery aspect. The scale (639 lines) and systematic nature support the claim of being the largest such screen.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "962ce67c-77dc-47cc-9944-d30a7eefdc80",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "False-negative results in the lethality screen are enriched for genes highly expressed in early embryonic development and often arise from mRNA perdurance rather than inactive sgRNAs, as evidenced by efficient editing detected in 3/3 sequenced false-negative lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 provide a mechanistic explanation for false negatives. The sequencing data (C57) demonstrating efficient editing in false-negative lines strongly supports the perdurance hypothesis (C58) over sgRNA inactivity. The enrichment analysis (C56) provides additional supporting evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "e3c8046e-9480-4ddf-b7f8-fe728c5d5d48",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Among 54 lines targeting genes annotated as viable, 48 (89%) correctly produced viable offspring, with only 5 (9%) false positives. Two false-positive lines target the same gene (Blos1) with independent sgRNAs, arguing against off-target effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 demonstrate high specificity (89% true negatives) of the screen. The observation that two independent sgRNA lines targeting Blos1 both show lethality (C62) argues against off-target effects and suggests either incorrect annotation or context-dependent essentiality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "83257a9a-2a02-4d53-9a4c-e33e670583ed",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The screen identified novel essential genes including CG9890 (55% similar to human ortholog) and CG6470 (Drosophila-restricted). Tissue-specific mutagenesis of dpp/TGF\u03b2 signaling components faithfully recapitulates known loss-of-function phenotypes in wing morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 identify specific novel essential genes with evolutionary context. Claims C67-C68 demonstrate phenotypic validation through tissue-specific mutagenesis, showing that the library produces expected phenotypes. This validates both the library's utility and the biological relevance of the identified genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "870e2796-8c09-4472-ad85-3b478bf3a982",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Less than 10% of HD_CFD lines produce insufficient on-target mutations, comparing favorably to RNAi libraries where the majority of lines reduce mRNA by less than 75%. CRISPR mutagenesis reveals phenotypes that are more penetrant than or missed entirely by RNAi.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C90-C91 establish the performance benchmark against RNAi. Claims C69-C70 cite recent studies demonstrating CRISPR's advantages. The <10% failure rate (C71) is inferred from sequencing and phenotypic data and represents a significant improvement over RNAi's limitations (C90-C91).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "67fb4a2f-4c2b-4ba7-9b07-dbe2f98e472e",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CRISPR with transgenic components is effective across diverse cell types including postmitotic neurons and endoreplicating cells. Sequencing data showing >90% mutation rates in whole-fly DNA suggests CRISPR is effective in most cells of the animal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 cite published evidence for effectiveness in specialized cell types. Claims C74-C75 provide direct sequencing evidence for broad effectiveness. However, the inference that >90% editing in bulk DNA means effectiveness in \"most cells\" (C75) assumes relatively uniform editing across tissues, which may not be fully validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "eaae8df9-e597-41a5-9f00-35b05842c764",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The HD_CFD library differs from other transgenic sgRNA libraries (NIG, TRIP, Weizmann) in encoding two sgRNAs per transgene and using conditional UAS vectors rather than ubiquitous U6 promoters. This design provides superior spatial/temporal control, though U6 promoters offer more consistent sgRNA expression with weak Gal4 drivers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C87 systematically compare library designs. The key differences (two sgRNAs vs. one, UAS vs. U6 promoters) are clearly stated with supporting citations. Claims C82-C83 cite prior work demonstrating advantages of UAS-based sgRNA expression. The trade-offs are acknowledged (C85-C87), and pCFD6.FRT is presented as offering flexibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    },
+    {
+      "id": "ac21fa3c-e2cb-4feb-b8ab-d08a47017065",
+      "content_id": "d84c50fb-c14d-42eb-9c3a-34e9093e5ccc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work establishes that RNAi has limitations including incomplete penetrance and off-target effects, only 20% of Drosophila genes have mutant alleles, and tissue-specific Cas9 expression often shows leaky expression. Conditional expression of both Cas9 and sgRNAs is necessary for tight control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C18 summarize prior knowledge and published work that motivates the current study. All claims are supported by appropriate citations. These establish the scientific context and rationale for developing the HD_CFD library and conditional CRISPR system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:10:32.291802Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9760317a-4c5b-4ebd-bc63-c389854907ea",
+      "result_id": "e64883f4-2c8a-440c-9348-3729f80323a5"
+    },
+    {
+      "claim_id": "4d9d4c95-b0d2-4058-9e6a-bc3a538a6dfb",
+      "result_id": "e64883f4-2c8a-440c-9348-3729f80323a5"
+    },
+    {
+      "claim_id": "79c3277b-9186-40a3-aca1-273259bf5a4e",
+      "result_id": "e64883f4-2c8a-440c-9348-3729f80323a5"
+    },
+    {
+      "claim_id": "43527c1e-63ca-4b64-96dc-182cbf7b9407",
+      "result_id": "e64883f4-2c8a-440c-9348-3729f80323a5"
+    },
+    {
+      "claim_id": "1ae5b7f7-af42-41fa-9d6e-3ddd2fb631a0",
+      "result_id": "e64883f4-2c8a-440c-9348-3729f80323a5"
+    },
+    {
+      "claim_id": "0c9ce767-b743-4b55-8479-47aedcef1ed3",
+      "result_id": "e64883f4-2c8a-440c-9348-3729f80323a5"
+    },
+    {
+      "claim_id": "4dff6f83-7326-4a7b-8642-96461333e4e8",
+      "result_id": "e64883f4-2c8a-440c-9348-3729f80323a5"
+    },
+    {
+      "claim_id": "a9841185-0184-4864-b5c4-1fd54471533c",
+      "result_id": "742b20cb-e747-408f-b915-d4c4e946bbb3"
+    },
+    {
+      "claim_id": "5593d3e3-c84b-4e18-a168-464e895ecebf",
+      "result_id": "742b20cb-e747-408f-b915-d4c4e946bbb3"
+    },
+    {
+      "claim_id": "f5af63ff-2c67-4e68-9147-e655ed0a6cd0",
+      "result_id": "742b20cb-e747-408f-b915-d4c4e946bbb3"
+    },
+    {
+      "claim_id": "f6939724-0dd3-4027-a599-32168c1a77bc",
+      "result_id": "742b20cb-e747-408f-b915-d4c4e946bbb3"
+    },
+    {
+      "claim_id": "59b92e37-97cc-4216-b105-0139f2d60b41",
+      "result_id": "742b20cb-e747-408f-b915-d4c4e946bbb3"
+    },
+    {
+      "claim_id": "0acfdd10-2c70-4070-8ba4-c0d53f6caeba",
+      "result_id": "742b20cb-e747-408f-b915-d4c4e946bbb3"
+    },
+    {
+      "claim_id": "88ed41d6-120f-4c00-99c5-458023cc0d3f",
+      "result_id": "742b20cb-e747-408f-b915-d4c4e946bbb3"
+    },
+    {
+      "claim_id": "8cf4e399-b84f-4ef7-a923-be69a4a53a9d",
+      "result_id": "742b20cb-e747-408f-b915-d4c4e946bbb3"
+    },
+    {
+      "claim_id": "1656dcfd-f0d5-4544-b1b0-7e803a82c763",
+      "result_id": "742b20cb-e747-408f-b915-d4c4e946bbb3"
+    },
+    {
+      "claim_id": "0f9738a9-0921-4d72-9959-860660e57302",
+      "result_id": "742b20cb-e747-408f-b915-d4c4e946bbb3"
+    },
+    {
+      "claim_id": "3e1054f7-764b-47bd-a11a-8a256d94a109",
+      "result_id": "742b20cb-e747-408f-b915-d4c4e946bbb3"
+    },
+    {
+      "claim_id": "40b15d16-3e1e-4741-955c-defef7c1f17b",
+      "result_id": "0ab562bd-fbfe-4ff4-aa1d-58598d9e6973"
+    },
+    {
+      "claim_id": "48513eb0-01f7-40c6-a897-6f89ccd89f50",
+      "result_id": "0ab562bd-fbfe-4ff4-aa1d-58598d9e6973"
+    },
+    {
+      "claim_id": "fef74731-0fea-40d2-a8ad-331c95302853",
+      "result_id": "0ab562bd-fbfe-4ff4-aa1d-58598d9e6973"
+    },
+    {
+      "claim_id": "e050e3dd-13e2-4225-9108-8c3b08a79faa",
+      "result_id": "0ab562bd-fbfe-4ff4-aa1d-58598d9e6973"
+    },
+    {
+      "claim_id": "30f6fbca-f24f-4ce5-ac1a-888043c43ea1",
+      "result_id": "0ab562bd-fbfe-4ff4-aa1d-58598d9e6973"
+    },
+    {
+      "claim_id": "da2ab107-c631-43fc-9652-a816a1eae294",
+      "result_id": "0ab562bd-fbfe-4ff4-aa1d-58598d9e6973"
+    },
+    {
+      "claim_id": "859ff48b-f15e-4e0c-b737-c6a9983af8b8",
+      "result_id": "0ab562bd-fbfe-4ff4-aa1d-58598d9e6973"
+    },
+    {
+      "claim_id": "72800abd-2926-4fa5-8f87-67d85845b29e",
+      "result_id": "0ab562bd-fbfe-4ff4-aa1d-58598d9e6973"
+    },
+    {
+      "claim_id": "d0f2a523-665a-4de0-abbe-1039166414ea",
+      "result_id": "0ab562bd-fbfe-4ff4-aa1d-58598d9e6973"
+    },
+    {
+      "claim_id": "51f2e133-2e28-4df3-ad2a-9c9f9f753f06",
+      "result_id": "47deeed8-c7b2-414c-bd01-cedd288728de"
+    },
+    {
+      "claim_id": "0328fdc1-5961-4bdd-a50d-03af562c94f9",
+      "result_id": "47deeed8-c7b2-414c-bd01-cedd288728de"
+    },
+    {
+      "claim_id": "2bef301d-c500-42f5-b2b0-23a4c8bb0741",
+      "result_id": "47deeed8-c7b2-414c-bd01-cedd288728de"
+    },
+    {
+      "claim_id": "de5b4278-b7bd-40e0-97d7-ab4f7a34bb71",
+      "result_id": "47deeed8-c7b2-414c-bd01-cedd288728de"
+    },
+    {
+      "claim_id": "57336b8a-f048-4bf3-b40e-5948c0f26b1f",
+      "result_id": "47deeed8-c7b2-414c-bd01-cedd288728de"
+    },
+    {
+      "claim_id": "f2549824-7895-47f8-b639-470bcf1d48bf",
+      "result_id": "47deeed8-c7b2-414c-bd01-cedd288728de"
+    },
+    {
+      "claim_id": "f47d154a-9b6c-4104-9efe-875c25341aa7",
+      "result_id": "47deeed8-c7b2-414c-bd01-cedd288728de"
+    },
+    {
+      "claim_id": "2426571e-aa3b-4fc8-b9d0-f33cd2a3ff71",
+      "result_id": "839f8fe0-6c0b-4c16-a356-95ae96ec3625"
+    },
+    {
+      "claim_id": "807742a9-6f33-4855-a0ca-e0d799fac4a7",
+      "result_id": "839f8fe0-6c0b-4c16-a356-95ae96ec3625"
+    },
+    {
+      "claim_id": "540c9a61-1920-4785-aeb3-974053b01238",
+      "result_id": "839f8fe0-6c0b-4c16-a356-95ae96ec3625"
+    },
+    {
+      "claim_id": "4ea7190b-d704-4e46-bf39-3c2c49a28a45",
+      "result_id": "839f8fe0-6c0b-4c16-a356-95ae96ec3625"
+    },
+    {
+      "claim_id": "61904be5-7528-4323-a050-02a1ad764a2c",
+      "result_id": "839f8fe0-6c0b-4c16-a356-95ae96ec3625"
+    },
+    {
+      "claim_id": "f715caab-352b-4d4b-8f83-be7cb02b86e5",
+      "result_id": "ee6b832f-fc1f-41f6-aceb-9924e97ab442"
+    },
+    {
+      "claim_id": "cd28737d-ae08-4adf-a53b-0aa02c2d8a4b",
+      "result_id": "ee6b832f-fc1f-41f6-aceb-9924e97ab442"
+    },
+    {
+      "claim_id": "ecb5e716-e7fc-4b42-b356-fb094607d032",
+      "result_id": "ee6b832f-fc1f-41f6-aceb-9924e97ab442"
+    },
+    {
+      "claim_id": "8df81bbd-01f1-4433-a999-909682de8e8b",
+      "result_id": "ee6b832f-fc1f-41f6-aceb-9924e97ab442"
+    },
+    {
+      "claim_id": "08352804-8e6c-45e9-a47e-1033191a504c",
+      "result_id": "ee6b832f-fc1f-41f6-aceb-9924e97ab442"
+    },
+    {
+      "claim_id": "0129fa2a-a188-4635-b358-b532f6917638",
+      "result_id": "ee6b832f-fc1f-41f6-aceb-9924e97ab442"
+    },
+    {
+      "claim_id": "4e188b7f-7cfc-4dea-8fc8-dd07bbe092e4",
+      "result_id": "ee6b832f-fc1f-41f6-aceb-9924e97ab442"
+    },
+    {
+      "claim_id": "cc19aad9-8a08-4e2b-87ac-3057199bf1ac",
+      "result_id": "ee6b832f-fc1f-41f6-aceb-9924e97ab442"
+    },
+    {
+      "claim_id": "57453b4f-4065-4082-8a41-4f553614dc2b",
+      "result_id": "ee6b832f-fc1f-41f6-aceb-9924e97ab442"
+    },
+    {
+      "claim_id": "d00fe31d-0a75-4d9a-af2e-7b623cbc731f",
+      "result_id": "962ce67c-77dc-47cc-9944-d30a7eefdc80"
+    },
+    {
+      "claim_id": "4aedecfc-0c3f-4d36-ac8c-fe0d0262ce77",
+      "result_id": "962ce67c-77dc-47cc-9944-d30a7eefdc80"
+    },
+    {
+      "claim_id": "f6a773df-6174-43b1-a7f2-f547bb9f0eb5",
+      "result_id": "962ce67c-77dc-47cc-9944-d30a7eefdc80"
+    },
+    {
+      "claim_id": "94144a73-9a82-45c2-ac0e-a188531b5331",
+      "result_id": "e3c8046e-9480-4ddf-b7f8-fe728c5d5d48"
+    },
+    {
+      "claim_id": "378f2015-994e-48ba-98f2-b927578ef694",
+      "result_id": "e3c8046e-9480-4ddf-b7f8-fe728c5d5d48"
+    },
+    {
+      "claim_id": "1ea4ce87-9bd0-4a3a-9874-4a9284ff1369",
+      "result_id": "e3c8046e-9480-4ddf-b7f8-fe728c5d5d48"
+    },
+    {
+      "claim_id": "1be836e3-20c1-4472-849a-cf581e02e699",
+      "result_id": "e3c8046e-9480-4ddf-b7f8-fe728c5d5d48"
+    },
+    {
+      "claim_id": "c01a542b-d32c-4132-ada8-8325b5b00ca8",
+      "result_id": "83257a9a-2a02-4d53-9a4c-e33e670583ed"
+    },
+    {
+      "claim_id": "4b2bc477-9cb1-4f51-8f06-60a0ba357e4e",
+      "result_id": "83257a9a-2a02-4d53-9a4c-e33e670583ed"
+    },
+    {
+      "claim_id": "02949f62-bc13-4640-87d8-49907829e1d0",
+      "result_id": "83257a9a-2a02-4d53-9a4c-e33e670583ed"
+    },
+    {
+      "claim_id": "c73d4759-07c9-4aa3-b6c3-7613dd9d0bcc",
+      "result_id": "83257a9a-2a02-4d53-9a4c-e33e670583ed"
+    },
+    {
+      "claim_id": "406e02de-91f0-4bc5-a6a0-85d32a6c227d",
+      "result_id": "83257a9a-2a02-4d53-9a4c-e33e670583ed"
+    },
+    {
+      "claim_id": "a5cde295-ecaa-426c-bae1-9ad9cf31fe80",
+      "result_id": "83257a9a-2a02-4d53-9a4c-e33e670583ed"
+    },
+    {
+      "claim_id": "cc392815-21e9-4199-9192-83bf37444661",
+      "result_id": "870e2796-8c09-4472-ad85-3b478bf3a982"
+    },
+    {
+      "claim_id": "b2efb187-b3b7-460b-93e4-b0d7db3cf5ee",
+      "result_id": "870e2796-8c09-4472-ad85-3b478bf3a982"
+    },
+    {
+      "claim_id": "95296ccb-5a82-473d-92dc-8192e5954955",
+      "result_id": "870e2796-8c09-4472-ad85-3b478bf3a982"
+    },
+    {
+      "claim_id": "5913eb92-2f93-4b23-b506-ed05f595f9de",
+      "result_id": "870e2796-8c09-4472-ad85-3b478bf3a982"
+    },
+    {
+      "claim_id": "4b5175b6-6bb2-4f5d-8b1d-f6f6f66d7f41",
+      "result_id": "870e2796-8c09-4472-ad85-3b478bf3a982"
+    },
+    {
+      "claim_id": "36394bb5-a801-4afd-8247-d416da52d9f1",
+      "result_id": "67fb4a2f-4c2b-4ba7-9b07-dbe2f98e472e"
+    },
+    {
+      "claim_id": "3cf9994e-4549-4fe9-88f2-1c4179f48e31",
+      "result_id": "67fb4a2f-4c2b-4ba7-9b07-dbe2f98e472e"
+    },
+    {
+      "claim_id": "2764f2a7-6a5e-4b1e-8bc0-68653b73ed50",
+      "result_id": "67fb4a2f-4c2b-4ba7-9b07-dbe2f98e472e"
+    },
+    {
+      "claim_id": "6477e474-3373-4ef2-ad29-788d5dd64958",
+      "result_id": "67fb4a2f-4c2b-4ba7-9b07-dbe2f98e472e"
+    },
+    {
+      "claim_id": "75f2121b-7fa1-4f49-bbca-0318a5061e94",
+      "result_id": "eaae8df9-e597-41a5-9f00-35b05842c764"
+    },
+    {
+      "claim_id": "25c34319-952c-4a4b-b545-294a2b8ed6cb",
+      "result_id": "eaae8df9-e597-41a5-9f00-35b05842c764"
+    },
+    {
+      "claim_id": "a0eeab9d-69f7-4421-9da5-fee23d4b60bb",
+      "result_id": "eaae8df9-e597-41a5-9f00-35b05842c764"
+    },
+    {
+      "claim_id": "fe63be3b-7766-47d6-9e5d-7429ea445384",
+      "result_id": "eaae8df9-e597-41a5-9f00-35b05842c764"
+    },
+    {
+      "claim_id": "06e1093c-0dc6-4b21-9528-81fdc1d496b2",
+      "result_id": "eaae8df9-e597-41a5-9f00-35b05842c764"
+    },
+    {
+      "claim_id": "529c6648-09d2-4e4a-aa20-8b9aa73afefa",
+      "result_id": "eaae8df9-e597-41a5-9f00-35b05842c764"
+    },
+    {
+      "claim_id": "3d6111ea-3860-4da4-9e36-5254049903a1",
+      "result_id": "eaae8df9-e597-41a5-9f00-35b05842c764"
+    },
+    {
+      "claim_id": "78953d75-793c-45e1-819c-8764da705388",
+      "result_id": "eaae8df9-e597-41a5-9f00-35b05842c764"
+    },
+    {
+      "claim_id": "d34f0bec-5f52-4b4f-a084-5f2dbf40346b",
+      "result_id": "eaae8df9-e597-41a5-9f00-35b05842c764"
+    },
+    {
+      "claim_id": "0bad6d74-19b7-4008-9472-a02dfd8b66e1",
+      "result_id": "eaae8df9-e597-41a5-9f00-35b05842c764"
+    },
+    {
+      "claim_id": "e40cb4de-4d9c-4bd1-9a1c-6bb3f612eac9",
+      "result_id": "eaae8df9-e597-41a5-9f00-35b05842c764"
+    },
+    {
+      "claim_id": "942ff56b-830c-4020-b315-ee45ec15d2a0",
+      "result_id": "eaae8df9-e597-41a5-9f00-35b05842c764"
+    },
+    {
+      "claim_id": "774ae063-6e41-4594-b2e7-fec03ae109ad",
+      "result_id": "ac21fa3c-e2cb-4feb-b8ab-d08a47017065"
+    },
+    {
+      "claim_id": "be7b0b66-1d0e-4ee4-b346-da763c4e8004",
+      "result_id": "ac21fa3c-e2cb-4feb-b8ab-d08a47017065"
+    },
+    {
+      "claim_id": "8497b352-4ad5-401f-be54-f5b4d856ad12",
+      "result_id": "ac21fa3c-e2cb-4feb-b8ab-d08a47017065"
+    },
+    {
+      "claim_id": "fe9ecb3f-e4d0-4add-9424-201cebdb5b38",
+      "result_id": "ac21fa3c-e2cb-4feb-b8ab-d08a47017065"
+    },
+    {
+      "claim_id": "25ddea3e-2a20-4048-9310-482e94034e44",
+      "result_id": "ac21fa3c-e2cb-4feb-b8ab-d08a47017065"
+    },
+    {
+      "claim_id": "3429aa92-29a8-43e1-b068-03d515bc81ae",
+      "result_id": "ac21fa3c-e2cb-4feb-b8ab-d08a47017065"
+    },
+    {
+      "claim_id": "9dc41e23-a12b-4547-b7f4-1e8973ba3496",
+      "result_id": "ac21fa3c-e2cb-4feb-b8ab-d08a47017065"
+    },
+    {
+      "claim_id": "47289e2e-c12c-491a-aec6-fd9bce2fe2c5",
+      "result_id": "ac21fa3c-e2cb-4feb-b8ab-d08a47017065"
+    }
+  ],
+  "comparisons": []
+}

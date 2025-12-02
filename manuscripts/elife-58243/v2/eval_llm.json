@@ -1,0 +1,398 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Full-length Ded1 binds specifically to both GST-eIF4A and GST-eIF4E in vitro, and this binding requires the Ded1 N-terminal domain (NTD) for eIF4A interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 demonstrate through GST pull-down assays (Figure 1B-C) that FL Ded1 binds both eIF4A and eIF4E, but not GST alone, and that deletion of the NTD (\u0394N2-92) drastically reduces eIF4A binding while the CTD deletion does not affect eIF4A binding. This provides clear evidence for specific NTD-mediated eIF4A interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The Ded1 NTD is considerably more important than the CTD for eIF4E binding, providing the first evidence that eIF4E binds directly to the yeast Ded1 NTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by GST pull-down data (Figure 1D) showing that NTD deletion reduces eIF4E binding more than CTD deletion, and that the double deletion (\u0394NC) does not further reduce binding beyond \u0394N2-92 alone. This establishes the NTD as the primary eIF4E binding site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The Ded1 CTD is essential for binding to eIF4G but dispensable for eIF4A interaction and relatively unimportant for eIF4E interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by GST pull-down data (Figure 1\u2014figure supplement 1) showing that \u0394C562-604 abolishes eIF4G binding but has minimal effect on eIF4A binding (Figure 1C) and modest effect on eIF4E binding (Figure 1D). This establishes distinct binding requirements for different eIF4F subunits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Specific amino acid clusters in the Ded1 NTD mediate binding to eIF4A (residues 21-57) or eIF4E (residues 59-89) in non-overlapping regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 are supported by systematic mutagenesis and GST pull-down assays (Figure 2B-C) showing that substitutions in residues 21-27, 29-35, and 51-57 reduce eIF4A binding, while substitutions in residues 59-65 and 83-89 reduce eIF4E binding. This fine-mapping identifies distinct binding determinants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Non-contiguous substitutions 21-27 and 51-57 have additive effects on eIF4A binding, with the double mutant showing binding defects comparable to complete NTD deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by GST pull-down data (Figure 2B) showing that combining 21-27 with 51-57 produces additive binding defects equivalent to \u0394N2-92, while combining contiguous substitutions 21-27 and 29-35 does not. This demonstrates that multiple non-overlapping regions contribute to eIF4A binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The binding determinants for eIF4A and eIF4E are segregated into non-overlapping adjacent segments of the Ded1 NTD, with mutations selectively affecting one interaction but not the other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by GST pull-down data (Figure 2B-C) showing that double substitutions 21-27/51-57 and 59-65/83-89 selectively impair eIF4A or eIF4E binding respectively without affecting the other interaction. This demonstrates functional segregation of binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Single amino acid substitutions R27A, Y65A, and W88A recapitulate the binding defects of their respective cluster mutations, with R27 and W88 being highly conserved residues critical for eIF4A and eIF4E binding respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C98 are supported by single-residue mutagenesis data (Figure 2\u2014figure supplement 4B-C) showing that R27A impairs eIF4A binding to the same extent as the 21-27 cluster, while Y65A and W88A impair eIF4E binding equivalently to their respective clusters. Conservation analysis supports the functional importance of these residues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "NTD substitutions that impair eIF4A or eIF4E binding in vitro confer slow-growth phenotypes in vivo when combined with ded1-ts, with eIF4A-binding mutations showing stronger effects than eIF4E-binding mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by growth assays (Figure 3B) showing that mutations impairing eIF4A binding (21-27, 51-57, 21-27/51-57) confer stronger growth defects than those impairing eIF4E binding (59-65, 83-89, 59-65/83-89), while control mutations have no effect. Western blots confirm these effects are not due to reduced expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The quadruple mutation 21-27/51-57/59-65/83-89 that eliminates both eIF4A and eIF4E binding confers a growth defect comparable to complete NTD deletion, suggesting that eIF4A/eIF4E binding constitutes the key in vivo function of the Ded1 NTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 are supported by growth assays (Figure 3C) showing that the quadruple mutation and \u03942-90 deletion produce equivalent severe growth defects, and Western blots confirm similar expression levels. This provides strong evidence that eIF4A/eIF4E binding is the primary NTD function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Deletion of the Ded1 CTD exacerbates the growth defects of NTD mutations that impair eIF4A or eIF4E binding, revealing that the CTD becomes more important when NTD interactions are compromised.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 are supported by growth assays (Figure 4A) showing that \u0394C exacerbates growth defects of NTD mutations, particularly for 21-27 and double-cluster substitutions, without reducing protein expression (Figure 4B). This demonstrates functional redundancy and compensation between Ded1 domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "NTD mutations that impair eIF4A or eIF4E binding in vitro also selectively reduce coimmunoprecipitation of native eIF4A or eIF4E with Ded1 in vivo, confirming the physiological relevance of these binding determinants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 are supported by coimmunoprecipitation experiments (Figure 5) showing that 21-27/51-57 mutations reduce eIF4A but not eIF4E/eIF4G coIP, while 59-65/83-89 mutations reduce eIF4E but not eIF4A/eIF4G coIP. RNase treatment confirms these are protein-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Overexpression of eIF4A suppresses growth defects of NTD mutations that partially impair eIF4A binding but not those that completely abolish eIF4A binding or those that impair eIF4E binding, demonstrating that growth defects result from impaired Ded1-eIF4A association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132 are supported by genetic suppression experiments (Figure 6B, Figure 6\u2014figure supplement 1) showing selective rescue of partial eIF4A-binding mutants by eIF4A overexpression. This provides strong genetic evidence that the NTD mutations function by disrupting specific protein-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Overexpression of WT Ded1 or the eIF4A-binding mutant ded1-21-27/51-57 suppresses the cdc33-1 (eIF4E) mutant, but the eIF4E-binding mutant ded1-59-65/83-89 does not, demonstrating that Ded1-eIF4E interaction is functionally important in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 are supported by genetic suppression experiments (Figure 7A) showing differential rescue of cdc33-1 by different Ded1 variants, with Western blots confirming similar expression levels (Figure 7B). This provides reciprocal genetic evidence for the functional importance of Ded1-eIF4E interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "Both eIF4A-binding and eIF4E-binding mutations in the Ded1 NTD reduce bulk polysome assembly to similar extents, indicating reduced translation initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 are supported by polysome profiling (Figure 8A) showing that both ded1-ts,21-27/51-57 and ded1-ts,59-65/83-89 reduce P/M ratios compared to parental ded1-ts, with no significant difference between the two mutants. This demonstrates that both interactions contribute to bulk translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "NTD mutations that impair eIF4A or eIF4E binding preferentially reduce translation of reporter mRNAs with structured 5'UTRs, with eIF4A-binding mutations showing stronger effects on cap-proximal stem-loop reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 are supported by luciferase reporter assays (Figure 8C, Figure 8\u2014figure supplement 1) showing that NTD mutations have minimal effect on unstructured reporters but reduce expression of structured reporters, with eIF4A-binding mutations showing the strongest effects on cap-proximal SL reporters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The eIF4A-binding mutant shows a more extensive shift of reporter mRNA from polysomes to free mRNP compared to the eIF4E-binding mutant, consistent with the greater reduction in cap-proximal SL reporter expression by eIF4A-binding mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 are supported by polysome distribution analysis (Figure 8D) showing differential effects of the two mutants on reporter mRNA distribution, with the eIF4A-binding mutant causing greater accumulation in free mRNP. This correlates with the luciferase data and demonstrates distinct mechanistic roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The polysome distribution of native ACT1 mRNA is not substantially altered by NTD mutations, suggesting that Ded1 interactions with eIF4A and eIF4E are relatively more important for structured reporter mRNAs than for Ded1-hypodependent native mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C152 are supported by polysome distribution analysis (Figure 8D) showing that ACT1 mRNA distribution is unaffected by NTD mutations that alter reporter mRNA distribution. This is consistent with prior ribosome profiling data showing ACT1 is not Ded1-hyperdependent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The quadruple-cluster mutation 21-27/51-57/59-65/83-89 and the \u03942-90 NTD deletion produce nearly indistinguishable reductions in bulk polysome assembly and reporter mRNA translation, demonstrating that eIF4A/eIF4E binding essentially accounts for all NTD function in translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 are supported by polysome profiling and luciferase assays (Figure 8\u2014figure supplement 2) showing equivalent defects for the quadruple mutation and NTD deletion. This provides strong functional evidence that eIF4A/eIF4E binding is the primary NTD function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The CTD deletion (\u0394C) exacerbates the effects of NTD mutations on polysome assembly and reporter translation, with greater effects for the eIF4A-binding mutant, demonstrating that eliminating eIF4G association increases the requirement for NTD interactions with eIF4A and eIF4E.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C162 are supported by polysome profiling and luciferase assays (Figure 8\u2014figure supplement 3) showing that \u0394C alone has minimal effects but exacerbates NTD mutation phenotypes. This demonstrates functional compensation between Ded1 domains in translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "In the reconstituted system, FL Ded1 increases the kmax of 48S PIC formation on CP-8.1 mRNA by ~5-fold, and disrupting eIF4A binding (21-27/51-57) reduces kmax comparably to NTD deletion, while disrupting eIF4E binding (59-65) has no effect on kmax.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C166 are supported by reconstituted system kinetic assays (Figure 9A) showing differential effects of NTD mutations on kmax for CP-8.1 mRNA. This demonstrates that eIF4A interaction is specifically required for maximum rate enhancement on structured mRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "Both the 21-27/51-57 and 59-65 substitutions increase the K1/2 for Ded1 on CP-8.1 mRNA to ~40% of the increase given by complete NTD deletion, indicating that both interactions contribute to efficient Ded1 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C168 are supported by reconstituted system kinetic assays (Figure 9B) showing that both NTD mutations increase K1/2, though less than complete NTD deletion. This demonstrates that both eIF4A and eIF4E interactions enhance Ded1 function on structured mRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "On the less structured RPL41A mRNA, NTD deletion increases K1/2 by ~70-fold, but individual disruption of eIF4A or eIF4E binding increases K1/2 by only ~4-7 fold, suggesting that strong interaction with either factor is sufficient for efficient Ded1 function on unstructured mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C176 are supported by reconstituted system kinetic assays (Figure 9\u2014figure supplement 1) showing differential effects of NTD mutations on RPL41A versus CP-8.1 mRNA. This demonstrates that structured and unstructured mRNAs have different requirements for Ded1-eIF4F interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C177",
+      "C178"
+    ],
+    "result": "Both eIF4A and eIF4E interactions are needed simultaneously to enhance Ded1 function on the structured CP-8.1 mRNA, whereas each interaction can contribute independently on the less structured RPL41A mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C178 are supported by comparing reconstituted system data for CP-8.1 (Figure 9B) and RPL41A (Figure 9\u2014figure supplement 1B) mRNAs, showing different patterns of K1/2 increases for single versus double mutations. This demonstrates mRNA-specific requirements for Ded1-eIF4F interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C179",
+      "C180"
+    ],
+    "result": "The Ded1 NTD interacts directly with eIF4E and eIF4A via adjacent, non-overlapping segments, and these interactions, together with Ded1-CTD interaction with eIF4G, make independent, additive contributions to Ded1 function in stimulating translation initiation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C180 represent the main conclusion of the study, supported by the comprehensive set of in vitro binding, in vivo functional, and reconstituted system data throughout the manuscript. The evidence demonstrates distinct binding sites with independent functional contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C181",
+      "C182"
+    ],
+    "result": "In all in vivo assays, eliminating Ded1-eIF4G interaction by CTD deletion has less severe impact than impairing eIF4A or eIF4E binding to the NTD, with the eIF4A interaction appearing most important overall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C182 are supported by the comprehensive in vivo data (Figures 3-8) showing consistent patterns across growth, polysome, and reporter assays. This establishes a hierarchy of importance for Ded1-eIF4F interactions in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "A model is proposed where Ded1-NTD interactions with eIF4A and eIF4E, and Ded1-CTD binding to eIF4G, tether Ded1 to the eIF4F\u00b7mRNA complex to enhance initiation of nearly all mRNAs, while the Ded1-NTD/eIF4A interaction additionally stimulates unwinding of strong secondary structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C186 represent a mechanistic model (Figure 9C) that integrates the in vitro, in vivo, and reconstituted system data. The model is well-supported by the differential effects of mutations on structured versus unstructured mRNAs and the correlation with prior biochemical data on Ded1 unwinding activity.",
+    "result_type": "MAJOR"
+  }
+]

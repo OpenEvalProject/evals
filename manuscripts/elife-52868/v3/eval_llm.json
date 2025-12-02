@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C14",
+      "C17",
+      "C19",
+      "C26",
+      "C27",
+      "C28",
+      "C58",
+      "C129",
+      "C130"
+    ],
+    "result": "Nuclei act as pacemakers for mitotic waves by concentrating cell cycle regulators through nuclear import. Pacemaker regions are characterized by brighter GFP-NLS intensity, faster oscillation periods, and nuclei that are more separated from neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple experimental observations converge to support this result: pacemakers correlate with regions of highest GFP-NLS intensity (C19, C26), fastest oscillation periods (C27), and nuclei most separated from neighbors (C28). The mechanism is supported by nuclear import experiments (C48-C53) showing that inhibiting import abolishes waves. The claims are internally consistent and supported by both microscopy data and quantitative analysis across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C47",
+      "C144",
+      "C145"
+    ],
+    "result": "Centrosomes are not required for pacemaker generation and mitotic wave formation. Purified DNA lacking centrosomes is sufficient to generate pacemaker-driven mitotic waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result directly contradicts previous suggestions (C12, C45) and is supported by clear experimental evidence using purified DNA (C47, C145, Figure 2D). The experiment provides a critical control demonstrating that DNA alone is sufficient, establishing nuclei rather than centrosomes as the essential pacemaker component.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Nuclear density modulates cell cycle period and mitotic wave dynamics. Lower nuclear density leads to faster cell cycles, faster initial wave speeds, and creation of nuclear-free regions where pacemakers localize. In the complete absence of nuclei, oscillations persist but mitotic waves are abolished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims form a coherent dose-response relationship supported by systematic experiments at different nuclear densities (C30-C33, Figure 2A-B). The observation that waves are abolished without nuclei (C44) while oscillations persist (C43) is particularly strong evidence for the specific role of nuclei in wave organization. The spatial analysis (C37-C39) provides mechanistic insight into how nuclear distribution affects pacemaker location.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Nuclear import strength is critical for mitotic wave organization. Inhibiting nuclear import with importazole or STLC increases cell cycle period, reduces nuclear size and GFP-NLS intensity, and at high concentrations abolishes both nuclear formation and mitotic waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response experiments with importazole (C48-C53, Figure 2E-G) and STLC (C54-C55) provide strong pharmacological evidence. The graded effects from partial inhibition to complete abolition of waves support a mechanistic role for nuclear import. The correlation between nuclear size, GFP-NLS intensity, and wave formation (C52-C53) strengthens the causal link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C131"
+    ],
+    "result": "Computational modeling shows that nuclear positioning and spatial dimensions determine the distribution of cell cycle regulators. Regular nuclear patterns lead to accumulation of regulators at boundaries due to competition between nuclei, with the effect strengthening as system width increases. Removing nuclei or introducing gaps abolishes boundary accumulation and shifts regulator concentration to internal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational model (Figure 3) systematically explores parameter space and demonstrates robust boundary accumulation (C74, C77, C79, C80). The mechanism is clearly explained through competition between nuclei (C73). The model predictions about nuclear removal (C78) and system dimensions (C80) are testable and later validated experimentally. The 1D and 2D implementations show consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C135",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "System width determines whether mitotic waves originate from boundaries or internal regions. Wider tubes show increased probability of boundary-driven waves due to enhanced regulator accumulation at boundaries. Intermediate widths allow coexistence of both wave types. Lower nuclear density reduces boundary-driven waves by disrupting regular nuclear patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central experimental validation of the modeling predictions. The systematic variation of tube width (100-560 \u03bcm) with quantification of wave origin (C109-C111, Figure 5A) provides strong support. The dose-response relationship is clear and reproducible. The nuclear density experiments (C112-C114, Figure 5B) provide additional mechanistic validation. The GFP-NLS intensity analysis (C116) directly confirms the predicted boundary accumulation in wider tubes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "When cell cycle period depends on local regulator concentration, multiple pacemaker regions compete. Boundary pacemakers dominate in regular nuclear patterns, but increasing nuclear import strength or removing central nuclei shifts control to internal pacemakers. This competition is robust across different oscillator models (cell cycle oscillator and FitzHugh-Nagumo).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expanded computational model (Figure 4) demonstrates clear transitions between boundary-driven and internally-driven waves as parameters change (C87-C88). The nuclear removal experiments (C89-C90) validate model predictions. Testing with multiple oscillator models (C93-C95, Figure 4 supplements) demonstrates generality beyond specific biochemical details. The gradual transition (C92) is consistent with transient dynamics expected in biological systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C29"
+    ],
+    "result": "Mitotic waves in 100-200 \u03bcm tubes propagate at approximately 20 \u03bcm/min with ~250 nuclei/\u03bcl, and can be visualized using either GFP-NLS or fluorescent microtubule reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are straightforward measurements from microscopy experiments (Figure 1A, 1C). The wave speed measurement is clearly quantified and the use of multiple reporters provides technical validation. These are well-supported descriptive findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The correlation between wave speed and cell cycle duration is consistent with a transition from sweep waves to trigger waves. The increase in cell cycle period over time may be due to ATP depletion or increasing DNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the correlation is observed (C33), the mechanistic explanations are speculative and rely entirely on citations (C34-C36). The authors do not directly test ATP levels or DNA content effects. The wave type classification (sweep vs. trigger) is inferred rather than directly demonstrated. Additional experiments would be needed to definitively establish the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C147",
+      "C148"
+    ],
+    "result": "The measured internuclear distance of approximately 150 \u03bcm is consistent with the nuclear domain size reported in other systems including syncytial muscle fibers, Drosophila embryos, and cell-free extracts, as well as with spontaneously forming cell-like compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The measurement is clearly documented (C69, Figure 1 supplement 2G-I) and the comparison with literature values is appropriate (C70-C71, C147-C148). This provides important context for the modeling parameters and validates the biological relevance of the observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The transition region where boundary-driven and internal pacemaker-driven waves coexist shrinks with longer simulation times, but biological relevance is limited since embryonic cell cycles only persist for ~13 cycles, suggesting transient pacemaker dynamics are biologically relevant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a thoughtful analysis of the modeling results in biological context. The computational observation (C99) is clearly stated, and the biological constraint (C100) appropriately limits the interpretation. The inference about transient dynamics (C101) is reasonable given the limited number of biological cycles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C136",
+      "C140"
+    ],
+    "result": "Having the nucleus control mitosis timing may ensure DNA replication completes before mitosis initiation. If the pacemaker were elsewhere, DNA replication and mitosis could become decoupled, potentially leading to errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative functional interpretations (C15, C16, C136, C140) not directly tested in the study. While the logic is reasonable, no experiments directly address DNA replication checkpoint function or consequences of mislocalized pacemakers. The speculation is acknowledged by the authors' use of 'may' and 'might,' but remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Mitotic waves in Drosophila embryos also originate at boundaries. Computational modeling suggests sweep waves can generate boundary-driven waves and propagate faster than trigger waves, though the larger internuclear distance in simulations compared to Drosophila limits direct applicability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The Drosophila comparison is based on literature (C152-C155) and computational modeling (C156-C157), but the authors appropriately note the limitation that their internuclear distances differ significantly from Drosophila (C158). The modeling shows sweep waves can produce boundary effects, but whether this mechanism applies to Drosophila remains unclear. The claim of relevance to coenocytes (C159) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The overall effect of increasing nuclear import is to decrease the cell cycle period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This inference (C67) is well-supported by the importazole experiments showing that inhibiting import increases period (C48), and by the observation that brighter nuclei (higher import) correlate with faster oscillations (C26-C27). The logic is sound though the specific regulators responsible are not definitively identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "Nuclei self-organize in regular spatial patterns within tubes of Xenopus cell-free extract.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is clearly demonstrated by the microscopy images and quantitative analysis of internuclear distances (Figure 1 supplement 2G-I, C69). The regular spacing is a key observation that motivates the modeling approach.",
+    "result_type": "MINOR"
+  }
+]

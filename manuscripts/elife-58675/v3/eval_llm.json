@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "PHF1 and PHF19 Tudor domains preferentially bind H3tK27me3 over canonical H3K27me3 in vitro. ITC measurements show PHF1 binds H3tK27me3 (Kd=62\u00b15 \u03bcM) ~4-fold stronger than H3K27me3 (Kd=249\u00b130 \u03bcM), and PHF19 binds H3tK27me3 (Kd=44\u00b14 \u03bcM) ~5-fold stronger than H3K27me3 (Kd=224\u00b125 \u03bcM). MTF2 shows weak binding to both peptides (Kd>500 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C60 provide systematic ITC binding data demonstrating preferential recognition of H3tK27me3 over H3K27me3 by PHF1 and PHF19. The quantitative Kd values are internally consistent and support the main conclusion. MTF2's weak binding provides a useful negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C155",
+      "C156"
+    ],
+    "result": "MTF2's incomplete aromatic cage explains its weak histone binding. MTF2 has only three aromatic residues (Ser86 instead of Phe/Tyr), and S86F or S86Y mutations dramatically enhance binding affinity to H3tK27me3 (Kd=91\u00b121 \u03bcM and 110\u00b111 \u03bcM respectively), demonstrating that a complete aromatic cage is required for efficient histone binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 and C155-C156 provide structural rationale and mutagenesis validation for MTF2's weak binding. The rescue of binding by S86F/Y mutations directly tests the hypothesis and supports the conclusion about aromatic cage requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C7",
+      "C51"
+    ],
+    "result": "PHF1 co-localizes with H3t in testis during spermatogenesis. RT-qPCR shows PHF1 is highly expressed in testis, and immunostaining demonstrates PHF1 co-localizes with H3t during pachytene, diplotene, and round spermatid stages. Like H3t, PHF1 is excluded from the XY body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 provide converging evidence from expression analysis and immunostaining showing spatial and temporal co-localization of PHF1 and H3t in testis. The XY body exclusion pattern strengthens the association. The data directly support the in vivo relevance of PHF1-H3t interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "PHF1-Tudor binds methylated H3tK27 in vitro and in vivo. GST pull-down assays show PHF1-Tudor (but not GST alone) pulls down H3 and H3t from cell extracts. LC-MS/MS analysis detected H3tK27-methylated fragments enriched in pull-down samples, with H3K27me2/3 peptides strongly enriched while H3K36me3 was not noticeably enriched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 provide biochemical evidence for PHF1-H3tK27me3 interaction using pull-down and mass spectrometry. The preferential enrichment of K27me2/3 over K36me3 is consistent with the ITC data and supports the physiological relevance of H3tK27me3 as a PHF1 ligand.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C164",
+      "C165"
+    ],
+    "result": "Crystal structures of PHF1-H3tK27me3 (1.80 \u00c5) and PHF19-H3tK27me3 (1.71 \u00c5) reveal the molecular basis for recognition. Both adopt classic Tudor domain folds with conserved binding modes. The interaction surface comprises a hydrophobic leucyl patch, an aromatic cage (Trp41, Tyr47, Phe65, Phe71 in PHF1) that accommodates K27me3, and a negatively charged groove.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 and C164-C165 describe high-resolution crystal structures that provide detailed molecular insights. The structural observations are internally consistent and explain the binding specificity. Resolution quality is excellent for detailed analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C154"
+    ],
+    "result": "Mutagenesis of aromatic cage residues validates their importance for H3tK27me3 binding. PHF1 mutants W41A, Y47A, and F65A show no detectable binding, E66A shows >200 \u03bcM Kd, while peripheral F71A shows 3-fold weaker binding (192\u00b118 \u03bcM). These data confirm the structural model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 and C144-C147, C154 provide systematic mutagenesis data that validate the structural observations. The gradient of effects (complete loss for core residues, partial loss for peripheral residues) is consistent with the structural model and strengthens the mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C96",
+      "C97",
+      "C148",
+      "C149",
+      "C150",
+      "C152"
+    ],
+    "result": "The leucyl patch (Leu38, Leu45, Leu46, Leu48) is the structural determinant for preferential H3tK27me3 recognition. V24 of H3t (vs A24 in H3) enables more extensive hydrophobic interactions with this patch. Single point mutants L38A, L45A, L46A show 2-3-fold reduced binding, validating the structural model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91, C96-C97, and C148-C150, C152 identify the key structural feature explaining H3tK27me3 preference. The mutagenesis data quantitatively support the structural observations. The leucyl patch-V24 interaction provides a clear molecular explanation for specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C151"
+    ],
+    "result": "PHF19's Tyr55 (vs Leu46 in PHF1) provides stronger hydrophobic interactions with V24, explaining PHF19's slightly stronger H3tK27me3 binding. The PHF1 L46Y mutant shows enhanced binding (Kd=50\u00b15 \u03bcM), confirming this structural interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 and C151 explain the subtle difference between PHF1 and PHF19 binding affinities. The gain-of-function mutation (L46Y) provides strong validation of the structural model and demonstrates structure-based engineering of binding affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C120",
+      "C121"
+    ],
+    "result": "H3tK27me3 and H3K36me3 bind PHF1/19 in opposite orientations within the same binding groove. The N-VARKme3-C fragment of H3tK27me3 overlays with C-HPKKme3-N of H3K36me3, with V24/H39, A25/P38, R26/K37, and K27me3/K36me3 occupying equivalent positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 and C120-C121 reveal an unexpected binding mode promiscuity. The structural superposition is well-documented and explains how the same binding surface can accommodate different peptides. This is a novel mechanistic insight supported by high-resolution structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Valine at the V24-equivalent position is optimal for PHF1/19 binding. H3K36me3-H39V shows ~2-fold enhanced binding, while H3tK27me3-V24H shows ~10-fold reduced binding. H4K20me3-R17V also shows enhanced binding compared to wild-type or R17H, confirming valine preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 and C157-C163 systematically test the importance of the valine residue through peptide mutagenesis across multiple histone marks. The consistent pattern across different peptides strongly supports the conclusion about valine preference and validates the leucyl patch model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C166"
+    ],
+    "result": "Crystal structure of PHF1-H3K36me3-H39V (1.70 \u00c5) confirms that V39 mimics H3tK27me3-V24 by occupying the hydrophobic leucyl patch, while K36me3 inserts into the same aromatic cage and P38 is structurally conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 and C166 provide direct structural validation of the engineered peptide. The structure confirms the predicted binding mode and demonstrates that the V24-leucyl patch interaction can be transplanted to H3K36me3, validating the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C139",
+      "C140",
+      "C135",
+      "C136"
+    ],
+    "result": "V24 is unique to H3t among H3 variants and may be a key epigenetic element distinguishing testis-specific H3t. Human H3t differs from H3.1 at only four positions (Val24, Met71, Ser98, Val111), with Val24 and Ser98 conserved across human, mouse, and rat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116, C135-C136, C139-C140 establish the uniqueness of V24 to H3t through sequence comparison. The conservation across species and location in the modifiable N-terminal tail support its functional importance. However, the claim that V24 'may be' a key element is appropriately cautious given the lack of functional validation in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The study provides structural basis for preferential H3tK27me3 recognition and implicates H3tK27me3 as a potential physiological ligand of PHF1/19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 summarize the main findings. The structural and biochemical data strongly support preferential binding. The suggestion that H3tK27me3 'might be' a physiological ligand is appropriately speculative, supported by in vitro binding data and co-localization but lacking functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C131",
+      "C133"
+    ],
+    "result": "PHF1/19 likely reads H3tK27me3 to spread this mark and contribute to gene repression during spermatogenesis. PHF1 might play a crucial role in gene silencing in male germ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128, C131, C133 propose functional roles based on the binding data and co-localization. While plausible, these are speculative conclusions lacking direct functional evidence. The manuscript appropriately uses cautious language ('likely', 'might'), but functional validation through knockdown/knockout experiments would be needed to support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C143"
+    ],
+    "result": "The unique valine recognition could be used for designing chemical probes and drugs, and PHF1/19 may have wide-ranging functions in mammals beyond testis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117 and C143 are speculative statements about future applications and broader functions. While the structural insights could inform drug design, no validation is provided. The suggestion of broader functions is based on H3t expression in brain and embryo but lacks functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C118",
+      "C119",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C129",
+      "C130",
+      "C132",
+      "C134",
+      "C137",
+      "C138",
+      "C141",
+      "C142"
+    ],
+    "result": "Background information on PRC2, PCL proteins, their functions, and prior studies on PHF1/19 binding specificity and H3t biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C48, C118-C119, C122-C127, C129-C130, C132, C134, C137-C138, C141-C142) provide established background knowledge supported by appropriate citations. They contextualize the study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2239 @@
+{
+  "submission": {
+    "id": "b5e735ff-2eff-4949-aa08-718e0833807b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:49:40.329532Z",
+    "updated_at": "2025-12-02T15:49:40.329532Z"
+  },
+  "content": [
+    {
+      "id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "submission_id": "b5e735ff-2eff-4949-aa08-718e0833807b",
+      "content_type": "manuscript",
+      "content_text": "# A loop structure allows TAPBPR to exert its dual function as MHC I chaperone and peptide editor\n\n## Authors\n\n- Lina Sagert<sup>1</sup>\n- Felix Hennig<sup>1</sup>\n- Christoph Thomas<sup>1</sup> ([ORCID: 0000-0001-7441-1089](https://orcid.org/0000-0001-7441-1089)) \u2020\n- Robert Tamp\u00e9<sup>1</sup> ([ORCID: 0000-0002-0403-2160](https://orcid.org/0000-0002-0403-2160)) \u2020\n\n### Affiliations\n\n1. Institute of Biochemistry, Biocenter, Goethe University Frankfurt Frankfurt Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nAdaptive immunity vitally depends on major histocompatibility complex class I (MHC I) molecules loaded with peptides. Selective loading of peptides onto MHC I, referred to as peptide editing, is catalyzed by tapasin and the tapasin-related TAPBPR. An important catalytic role has been ascribed to a structural feature in TAPBPR called the scoop loop, but the exact function of the scoop loop remains elusive. Here, using a reconstituted system of defined peptide-exchange components including human TAPBPR variants, we uncover a substantial contribution of the scoop loop to the stability of the MHC I-chaperone complex and to peptide editing. We reveal that the scoop loop of TAPBPR functions as an internal peptide surrogate in peptide-depleted environments stabilizing empty MHC I and impeding peptide rebinding. The scoop loop thereby acts as an additional selectivity filter in shaping the repertoire of presented peptide epitopes and the formation of a hierarchical immune response.\n\n## Introduction\n\nNucleated cells of higher vertebrates provide information about their health status by presenting a selection of endogenous peptides on MHC I molecules at the cell surface. By sampling these peptide-MHC I (pMHC I) complexes, CD8+ T lymphocytes are able to detect and eliminate infected or cancerous cells (Blum et al., 2013; Rock et al., 2016). In a process called peptide editing or proofreading, peptides derived from the cellular proteome are selected for their ability to form stable pMHC I complexes. This peptide editing is known to be catalyzed by the two homologous MHC I-specific chaperones tapasin (Tsn) and TAP-binding protein-related (TAPBPR) (Fleischmann et al., 2015; Hermann et al., 2015; Morozov et al., 2016; Neerincx and Boyle, 2017; Tan et al., 2002; Thomas and Tamp\u00e9, 2019; Wearsch and Cresswell, 2007; Wearsch et al., 2011). The selection of high-affinity MHC I-associated peptide epitopes is of pivotal importance not only for immunosurveillance by effector T lymphocytes, but also for priming of na\u00efve T cells and T cell differentiation. As an integral constituent of the peptide-loading complex (PLC) in the endoplasmic reticulum (ER) membrane, the ER-restricted Tsn functions in a \u2018nanocompartment\u2019 characterized by a high concentration of diverse, optimal peptides. The peptides are shuttled into the ER by the heterodimeric ABC (ATP-binding cassette) transporter associated with antigen processing TAP1/2, the central component of the PLC (Abele and Tamp\u00e9, 2018). In the ER, most peptides are further trimmed by the aminopeptidases ERAP1 and ERAP2 to an optimal length for binding in the MHC\u2009I groove (Evnouchidou and van Endert, 2019; Hammer et al., 2007). In contrast to Tsn, TAPBPR operates independently of the PLC and is also found in the peptide-depleted cis-Golgi network (Boyle et al., 2013). Fundamental insights into the architecture and dynamic nature of the Tsn-containing PLC have come from a recent cryo-EM study of the fully-assembled human PLC (Blees et al., 2017), while the basic principles underlying catalyzed peptide editing have been elucidated by crystal structures of the TAPBPR-MHC I complex (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017a): TAPBPR stabilizes the peptide-binding groove in a widened conformation primarily through the MHC I \u03b12\u20131 helix, distorts the floor of the binding groove, and shifts the position of \u03b22-microglobulin (\u03b22m). Furthermore, one of the two TAPBPR-MHC\u2009I complex structures revealed a remarkable structural feature in TAPBPR named the scoop loop (Thomas and Tamp\u00e9, 2017a). In TAPBPR, this loop is significantly longer than the corresponding region in Tsn, which was not resolved in the X-ray structure of Tsn (Dong et al., 2009). Notably, the scoop loop of TAPBPR is located in the F-pocket region of the empty MHC I binding groove (Figure 1A,B). By anchoring the C-terminal part of the peptide, the F pocket region is crucially involved in defining pMHC I stability (Abualrous et al., 2015; Hein et al., 2014). The scoop loop occupies a position that is incompatible with peptide binding and displaces or coordinates several key MHC I residues responsible for binding the C terminus of the peptide. We therefore proposed that the scoop loop can be regarded as a surrogate for the C terminus of the displaced peptide, stabilizing the inherently labile empty MHC I molecule (Thomas and Tamp\u00e9, 2017a). At the same time, by occupying a region critical to peptide binding, the scoop loop might allow only high-affinity peptides to re-enter the MHC I binding groove after displacement of sub-optimal peptide. The proposed importance of the scoop loop for TAPBPR function has recently been scrutinized in a study by Ilca et al. investigating TAPBPR scoop-loop variants using immunopeptidomics and cell-based assays (Ilca et al., 2018). Ilca et al. found that a specific leucine residue in the scoop loop facilitates peptide displacement on MHC I allomorphs favoring hydrophobic peptide side chains in their F pocket. Here, we aimed to clarify the role of the scoop loop during TAPBPR-catalyzed peptide editing using in vitro interaction and peptide-exchange studies with defined, purified components. We demonstrate that the scoop loop is of critical importance for TAPBPR-mediated stabilization of empty MHC I clients in peptide-depleted environments and contributes to peptide quality control during editing by impeding released peptide to rebind in the MHC I groove. Collectively, our data support a crucial role for the TAPBPR scoop loop in establishing a hierarchical immune response.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig1-v2.jpg)\n\n**Figure 1.:** (A) X-ray structure of the TAPBPR-MHC I complex in cartoon representation (PDB ID: 5OPI). The zoom-in shows how the TAPBPR scoop loop (purple) is inserted into the F-pocket region of the MHC I peptide-binding groove that is occupied by the C terminus of the peptide before peptide displacement. (B) 2Fo-Fc electron density of the X-ray structure in the region of the scoop loop, contoured at 0.8\u03c3. The width of the helix cartoons has been reduced to facilitate visualization of the electron density. The viewing direction is indicated by the black arrow in panel (A). (C) Sequence alignment of the scoop-loop region in the TAPBPR constructs used in this study. (D, E) Purified proteins used in the current study were analyzed by non-reducing SDS-PAGE. The MHC I allomorphs H2-Db (mouse) and HLA-A*02:01 (human) were refolded in the presence of \u03b22m and peptide. (F) The TAPBPR proteins, injected at different concentrations to facilitate comparison, eluted as monodisperse samples during size-exclusion chromatography (SEC). Abbreviations: MHC I hc: MHC I heavy chain; wt: wildtype; Tsn: tapasin; SL: scoop loop; M: protein marker; kDa: kilodalton; A280: absorption at 280 nm; V0: void volume; Vt: total volume.\n\n## Results\n\n### Design of TAPBPR scoop-loop variants\n\nTo investigate the function of the scoop loop, we prepared two human TAPBPR variants: TAPBPRTsn-SL, in which the TAPBPR scoop loop was replaced with the corresponding shorter loop of Tsn, and TAPBPR\u0394SL, in which the original scoop loop was essentially deleted by replacing it with three glycine residues to preserve proper folding of the MHC I chaperone (Figure 1C). The ER-lumenal domains of wildtype (wt) TAPBPR and the variants, each harboring a C-terminal histidine tag, were expressed in insect cells and purified from the cell culture supernatant via immobilized-metal affinity chromatography (IMAC) and size-exclusion chromatography (SEC). As MHC I chaperone clients, we chose mouse H2-Db and human HLA-A*02:01, which are known to interact with TAPBPR (Hermann et al., 2013; Ilca et al., 2019; Morozov et al., 2016). HLA-A*02:01, the major MHC I allomorph in the Caucasian population and found in more than 50% of the global population, presents a diverse spectrum of immunodominant autoimmune, viral, and tumor epitopes and is therefore medically highly relevant (Boucherma et al., 2013). The MHC I allomorphs were expressed in E. coli as inclusion bodies and refolded in the presence of \u03b22m and fluorescently-labeled or photo-cleavable peptide (Rodenko et al., 2006). The highly pure TAPBPR variants and pMHC I complexes eluted as monodisperse samples at expected size during SEC (Figure 1D\u2013F).\n\n### Scoop-loop variants have reduced chaperone activity towards peptide-free MHC I\n\nDuring peptide exchange, MHC I molecules go through a peptide-free high-energy intermediate state after peptide release and before re-entry of a new peptide. A hallmark of peptide editors like TAPBPR is their ability to recognize and chaperone this intermediate until it is located in a peptide-rich environment where a high-affinity peptide ligand can enter the MHC I binding groove (Thomas and Tamp\u00e9, 2019; Thomas and Tamp\u00e9, 2017b). To scrutinize the role of the scoop loop in chaperoning empty MHC I, we tested the ability of our TAPBPR variants to stabilize peptide-free H2-Db. Hence, H2-Db (10 \u00b5M) loaded with a photo-cleavable peptide was incubated with TAPBPR (3\u00a0\u00b5M) under UV exposure. Subsequent SEC analysis revealed that both TAPBPRTsn-SL and TAPBPR\u0394SL are, in principle, competent to form complexes with MHC I (Figure 2A). However, in comparison to TAPBPRwt (Figure 2A,B), the amount of H2-Db complex detected for TAPBPRTsn-SL and TAPBPR\u0394SL during SEC was reduced by around 40% and 90%, respectively (Figure 2C). After reanalysis of the MHC I chaperone complexes by SEC, the mutant complexes were mostly dissociated, indicating kinetic instability (Figure 2\u2014figure supplement 1A). In contrast, isolation and reinjection of the wt complex showed that it remained stable for the duration of the experiment (Figure 2\u2014figure supplement 1A,B). Yet, in the presence of a high-affinity peptide, even the TAPBPRwt-MHC I complex dissociated, in accordance with the role of TAPBPR as a chaperone that stabilizes the MHC I as long as no optimal peptide is present (Figure 2\u2014figure supplement 1B). Taken together, these findings demonstrate that the scoop loop is crucial to an extended lifetime of the chaperone-client complex, enabling the escorting of empty MHC I by TAPBPR in a peptide-deficient environment.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig2-v2.jpg)\n\n**Figure 2.:** (A) H2-Db (10 \u00b5M) loaded with a photo-cleavable peptide (RGPGRAFJ*TI, J* denotes photocleavable amino acid) was irradiated with UV light in the presence of TAPBPRwt (3 \u00b5M, red), TAPBPRTsn-SL (blue), or TAPBPR\u0394SL (yellow) and subsequently analyzed by SEC. The different elution volumes of the first main peak, marked by dashed lines, already hint at different complex stabilities. (B) Deconvolution of size-exclusion chromatogram from TAPBPRwt complex formation (experiment independent of the sample shown in (A)). The experimental chromatogram (red) was deconvoluted using three Gaussian functions (gray) that can be ascribed to the TAPBPR-H2-Db complex (1.06 mL), free TAPBPR (1.12 mL), and free H2-Db (1.20 mL). The sum of the three Gaussians is shown as dotted curve. The residual plot depicted beneath the main panel shows the difference between the experimental data and the sum. (C) Stability of complexes formed by TAPBPRwt, TAPBPRTsn-SL, and TAPBPR\u0394SL, respectively, as judged by the area of the complex peak obtained by deconvolution. Data represent mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a02).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Re-analysis by SEC (Superdex 200) of SEC-purified peptide-free TAPBPRwt-H2-Db (red trace), TAPBPRTsn-SL-H2-Db (blue trace), and TAPBPR\u0394SL-H2-Db (yellow trace) complex. Please note that dissociated peptide-deficient H2-Db is unstable and gets lost during the course of the experiment. (B) SEC-purified peptide-free TAPBPRwt-H2-Db complex was re-analyzed by SEC (Superdex 75) without (solid red trace) and with prior incubation with a 100-fold molar excess of high-affinity peptide (ASNENMETM) (dashed red trace). Please note that the extinction coefficient at 280 nm of the MHC I including \u03b22m is 2.6-fold higher than the extinction coefficient of TAPBPR.\n\n### Scoop-loop variants retain their function in catalyzing peptide dissociation from MHC I\n\nAfter investigating the chaperone activity of the TAPBPR scoop-loop mutants, we tested their ability to displace MHC I-bound peptide. To this end, we employed an in-vitro peptide exchange assay similar to the one previously described for measuring the activity of Tsn (Fleischmann et al., 2015; Chen and Bouvier, 2007). Dissociation of medium-affinity fluorescent peptide from refolded and purified p*MHC I (p* denotes fluorescently-labeled peptide) was monitored by fluorescence polarization after addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide in the absence or presence of TAPBPR (Figure 3A). The large molar excess of unlabeled competitor peptide ensures that once a fluorescent peptide dissociates, it does not rebind, but is replaced by an unlabeled competitor-peptide molecule. The observed rate constant is thus solely determined by the dissociation rate constant of the fluorescent peptide. The condition of this assay mimics the environment of the PLC, where optimal, high-affinity peptides abound. For the mouse MHC I allomorph H2-Db, TAPBPRwt and the scoop-loop variants accelerated the uncatalyzed peptide release (2.53\u00a0\u00b1\u00a00.37\u00a0\u00d7\u00a010\u22123 s\u22121) to a similar extent. The TAPBPR\u0394SL mutant lacking the entire scoop loop exhibited slightly reduced activity (7.68\u00a0\u00b1\u00a01.17\u00a0\u00d7\u00a010\u22123 s\u22121) compared to the wt protein (10.41\u00a0\u00b1\u00a00.54\u00a0\u00d7\u00a010\u22123 s\u22121), whereas TAPBPRTsn-SL was slightly more active (12.64\u00a0\u00b1\u00a01.03\u00a0\u00d7\u00a010\u22123 s\u22121) (Figure 3B,C). When we performed the experiment at a much lower TAPBPR concentration (75 nM), the TAPBPRs retained their activity, and the gradual activity differences between the variants remained (Figure 3\u2014figure supplement 1). This suggests that TAPBPRwt and the scoop-loop mutants have similar affinities for H2-Db. TAPBPRwt was even able to catalyze displacement of a high-affinity peptide from H2-Db, although the catalytic effect was considerably smaller (1.8-fold acceleration) than for H2-Db loaded with the medium-affinity peptide (4.1-fold acceleration) (Figure 3\u2014figure supplement 2A,B). In a second set of experiments, we analyzed peptide dissociation from the human MHC I allomorph HLA-A*02:01. Similar to the experiments with H2-Db, in a peptide-rich environment (1000-fold molar excess of peptide), the highest catalytic activity towards HLA-A*02:01 was observed for TAPBPRTsn-SL, followed by TAPBPRwt and TAPBPR\u0394SL; yet, the differences in activity between the three TAPBPRs were more pronounced, and the acceleration of the uncatalyzed peptide dissociation from HLA-A*02:01 (1.90\u00a0\u00b1\u00a00.04\u00a0\u00d7\u00a010\u22123 s\u22121) by TAPBPRTsn-SL (26.31\u00a0\u00b1\u00a02.59\u00a0\u00d7\u00a010\u22123 s\u22121) and TAPBPRwt (15.79\u00a0\u00b1\u00a00.71\u00a0\u00d7\u00a010\u22123 s\u22121) was significantly higher than for H2-Db, while the activity of TAPBPR\u0394SL (8.52\u00a0\u00b1\u00a01.18\u00a0\u00d7\u00a010\u22123 s\u22121) remained almost the same (Figure 3D,E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of peptide displacement assay. (B) Peptide dissociation kinetics from H2-Db (300 nM) loaded with fluorescently-labeled peptide (TQSC*NTQSI) was monitored in real time by fluorescence polarization. The arrow indicates the addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (ASNENMETM) without TAPBPR (black trace) or in combination with 1 \u00b5M TAPBPR (red, blue, and yellow traces). (C) Average dissociation rate constants of uncatalyzed and catalyzed peptide dissociation from H2-Db, using the same conditions as in (B). Data represent mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a02\u20136). (D) Representative fluorescence polarization traces of uncatalyzed and catalyzed peptide (FLPSDC*FPSF) dissociation from HLA-A*02:01 (300 nM). The arrow indicates the addition of a 1000-fold molar excess of unlabeled competitor peptide (FLPSDEEPYV, 300 \u00b5M) with and without TAPBPR (1 \u00b5M). (E) Average dissociation rate constants of uncatalyzed and catalyzed peptide dissociation from HLA-A*02:01, using the same experimental conditions as in (D). Data represent mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03). (F) Peptide dissociation from H2-Db (300 nM) after addition (arrow) of unlabeled competitor peptide (300 \u00b5M) without TAPBPR or in combination with the interface mutants TN6-TAPBPR and TN3-Ala-TAPBPR (1 \u00b5M each), respectively. A TAPBPRwt-catalyzed peptide release reaction is shown as reference. The average dissociation rate constants in the presence of TN6 (koff\u00a0=\u00a02.53\u00a0\u00b1\u00a00.30\u00d710\u22123 s\u22121) and TN3-Ala (koff\u00a0=\u00a04.23\u00a0\u00b1\u00a00.45\u00d710\u22123 s\u22121) are shown in panel (C). Abbreviations: \u03b22m: \u03b22-microglobulin; MHC I hc: MHC I heavy chain; pMHC I: peptide-MHC I; mP: milli-polarization units; wt: wildtype; Tsn: tapasin; SL: scoop loop.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Peptide dissociation kinetics from H2-Db (300 nM) loaded with fluorescently-labeled peptide (TQSC*NTQSI) was monitored in real time by fluorescence polarization. The arrow indicates the addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (ASNENMETM) without TAPBPR (black fit, uncatalyzed reaction of Figure 3B) or in combination with 75 nM TAPBPR [red, blue, and yellow traces; koff (TAPBPRwt)\u00a0=\u00a07.05\u00a0\u00d7\u00a010\u22123 s\u22121, koff (TAPBPRTsn-SL)\u00a0=\u00a010.12\u00a0\u00d7\u00a010\u22123 s\u22121, koff (TAPBPR\u0394SL)=5.57\u00a0\u00d7\u00a010\u22123 s\u22121].\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Peptide dissociation kinetics (representative traces) from H2-Db (300 nM) loaded with a fluorescently-labeled high-affinity peptide (ASNC*NMETM) was monitored in real time by fluorescence polarization. The arrow indicates the addition of a 1000-fold molar excess of unlabeled high-affinity peptide (ASNENMETM, 300 \u00b5M) without TAPBPRwt (black trace) or in combination with TAPBPRwt (1 \u00b5M, red trace). (B) Average rate constants of uncatalyzed (0.20\u00a0\u00b1\u00a00.06\u00a0\u00d7\u00a010\u22123 s\u22121) and catalyzed dissociation (0.35\u00a0\u00b1\u00a00.07\u00a0\u00d7\u00a010\u22123 s\u22121) of high-affinity peptide from H2-Db, using the same conditions as in (A). Data represent mean\u00a0\u00b1\u00a0SD (uncatalyzed: n\u00a0=\u00a04; catalyzed: n\u00a0=\u00a05). The p value was determined using an unpaired t test. (C) Representative trace (n\u00a0=\u00a03) of fluorescent high-affinity peptide displacement from H2-Db (300 nM), monitored by fluorescence polarization after addition of TAPBPRwt (1 \u00b5M, first arrow) and after subsequent addition of a 1000-fold molar excess of unlabeled high-affinity peptide (300 \u00b5M, second arrow). Abbreviation: mP: milli-polarization units.\n\nThe validity of our peptide exchange assay was confirmed by two interface mutants of TAPBPRwt, TN3-Ala and TN6. The TN3 (E72K) and TN6 (E185K, R187E, Q189S, Q261S) mutants were initially described for Tsn to significantly reduce or abolish MHC I binding (Dong et al., 2009). The impact of the TN6 mutations on MHC I interaction was later confirmed for TAPBPR (Morozov et al., 2016). According to the TAPBPR-MHC I crystal structures (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017a), the residue in TAPBPR (E105) corresponding to the mutated residue in Tsn-TN3 forms a hydrogen bond with the swung-out Y84 of the MHC heavy chain, which is involved in coordinating the C-terminus of the peptide in liganded MHC. We reasoned that a mutation to Ala instead of Lys might increase the mutational effect and therefore generated the TN3-Ala mutant. Two of the mutated residues in TN6 (R210 and Q212) are part of the jack hairpin of TAPBPR and form several interactions with MHC I heavy-chain residues, while Q275 lies in the interface with the \u03b12\u20131 helix and the \u03b28 sheet in the floor of the MHC I binding groove. Consequently, TN3-Ala and TN6 displayed drastically reduced activity towards H2-Db in our peptide-exchange experiment, with peptide dissociation rate constants close to the value of the uncatalyzed reaction (Figure 3C,F). In summary, the results of our exchange assays demonstrate that under peptide-rich condition, the tested TAPBPR variants differ gradually in their displacement activity in an allomorph-dependent manner. But even the TAPBPR\u0394SL mutant lacking the scoop loop is still able to substantially accelerate peptide dissociation from MHC I.\n\n### The scoop loop acts as an internal peptide competitor\n\nIn the TAPBPR-MHC I crystal structure, the scoop loop binds in the F pocket region of the MHC binding groove and appears to act as a surrogate for the peptide C terminus (Thomas and Tamp\u00e9, 2017a). This notion is corroborated by our SEC analyses, which show that the scoop loop stabilizes peptide-free MHC I. We therefore wondered if the scoop loop impedes rebinding of displaced peptide and functions \u2018in cis\u2019 as a tethered, internal peptide competitor in the F pocket with extremely high effective concentration. To test this hypothesis, we modified the peptide exchange assay for H2-Db and HLA-A*02:01 by adding in a first step only TAPBPR without competitor peptide, which allowed us to monitor the change in free and bound fluorescent peptide under the influence of peptide rebinding in the presence of TAPBPR (Figure 4A). This condition mimics the physiological environment TAPBPR is operating in, where optimal replacement peptides are scarce. Strikingly, after addition of the different TAPBPRs to H2-Db loaded with fluorescent peptide, the polarization changes, which correspond to the changes in the ratio of free to bound peptide, diverged dramatically (Figure 4B). Peptide dissociation was most pronounced for TAPBPRwt with the native scoop loop, reaching\u00a0~\u00a060% peptide release, whereas only\u00a0~\u00a012% of the peptide population was released from H2-Db by TAPBPRTsn-SL, and almost no decrease in polarization was caused by TAPBPR\u0394SL. Similar to our original peptide exchange assay (Figure 3), differences between the two MHC I allomorphs were observed: In comparison to H2-Db, TAPBPRTsn-SL-induced peptide dissociation from HLA-A*02:01 was significantly stronger, approaching the level of peptide release induced by TAPBPRwt (Figure 4\u2014figure supplement 1A). Peptide release was also peptide-dependent, as H2-Db loaded with a high-affinity peptide led to a significantly smaller decline in bound peptide (Figure 3\u2014figure supplement 2C). After addition of competitor peptide (2nd step), the observed dissociation rate constants were in the same range as the values determined for the one-step experiment. Moreover, the level of released peptide after TAPBPR addition was titratable and reached saturation at 3 \u00b5M TAPBPR (Figure 4C\u2013E, Figure 4\u2014figure supplement 1B). Under the given conditions, TAPBPRwt was able to dissociate 70% (H2-Db) and 80% (HLA-A*02:01) of total MHC I-associated peptide, respectively (Figure 4C, Figure 4\u2014figure supplement 1B). These results suggest that the scoop loop interferes with re-binding of displaced peptide. It can only be completely dislodged from the MHC I binding pocket by a high-affinity peptide. The scoop loop thus acts as a crucial selectivity filter during peptide editing on MHC I.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of two-step peptide exchange assay. (B) Peptide displacement from H2-Db (300 nM) loaded with fluorescently-labeled peptide (TQSC*NTQSI) was monitored by fluorescence polarization after addition of TAPBPR (1 \u00b5M, first arrow) and after subsequent addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (ASNENMETM, 300 \u00b5M, second arrow). (C) Titration of peptide-loaded H2-Db (300 nM) with varying concentrations of TAPBPRwt (first arrow) and final addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (300 \u00b5M, second arrow). (D) Peptide displacement from H2-Db (300 nM) loaded with fluorescently-labeled peptide monitored by fluorescence polarization after addition of 3 \u00b5M and 10 \u00b5M TAPBPRTsn-SL, respectively (first arrow), and after subsequent addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (300 \u00b5M, second arrow). (E) Peptide displacement from H2-Db (300 nM) loaded with fluorescently-labeled peptide monitored by fluorescence polarization after addition of TAPBPR\u0394SL (3 \u00b5M, first arrow) and after subsequent addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (300 \u00b5M, second arrow). Data shown in (B)-(E) are representative of three independent measurements.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Peptide displacement from HLA-A*02:01 (300 nM) loaded with fluorescently-labeled peptide (FLPSDC*FPSF) was monitored by fluorescence polarization after addition of TAPBPR (1 \u00b5M, first arrow) and after subsequent addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (FLPSDEEPYV, 300 \u00b5M, second arrow). (B) Titration of peptide-loaded HLA-A*02:01 (300 nM) with varying concentrations of TAPBPRwt (first arrow) and final addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (300 \u00b5M, second arrow). The data shown in (A) and (B) are representative of three independent measurements.\n\n## Discussion\n\nTsn and TAPBPR are MHC I-dedicated chaperones, which facilitate loading and selective exchange of antigenic peptides and thereby generate stable pMHC I complexes that shape a hierarchical immune response. The molecular underpinnings of their chaperone and peptide proofreading activities have only recently been uncovered by crystal structures of the TAPBPR-MHC I complex (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017a). Notably, one of the X-ray structures resolved a loop structure, termed the scoop loop, that is wedged into the F-pocket region of the empty MHC I binding groove and has been postulated to play an important role during peptide exchange (Thomas and Tamp\u00e9, 2017a). Here, we show that the TAPBPR scoop loop is indeed critically important in chaperoning intrinsically unstable empty MHC I clients in a peptide-depleted environment. This is illustrated by the reduced chaperone activity of TAPBPRTsn-SL, which harbors the shorter Tsn scoop loop, and by the dramatically reduced lifetime of the TAPBPR\u0394SL complex. In a peptide-rich, PLC-like environment, emulated by our one-step displacement experiments, the TAPBPRTsn-SL mutant displays the highest activity, while TAPBPR\u0394SL retains the ability to displace peptide. The latter observation appears to be in contrast to the study by Ilca et al. which found that TAPBPR with a mutated, but full-length scoop loop loses its ability to effectively mediate peptide dissociation (Ilca et al., 2018). In addition to stabilizing the chaperone-MHC I complex, we demonstrate that the TAPBPR scoop loop acts as an internal peptide competitor, and thus, as a selectivity filter in the discrimination between low- and high-affinity peptides. Although a direct competition appears to be the most obvious explanation for the effect on peptide rebinding, we cannot exclude that the scoop loop exerts its influence on peptide rebinding by an allosteric mechanism. The peptide-filtering activity seems to be allomorph-dependent for TAPBPRTsn-SL. Our current interpretation of this allomorph specificity is that the Tsn scoop loop interacts more strongly with the F-pocket region of HLA-A*02:01 and is therefore able to impede peptide rebinding more efficiently than in the case of H2-Db. In contrast, TAPBPRwt shows a\u00a0strong peptide release activity towards both MHC I allomorphs.\n\nBased on the new insights, we propose the following model of TAPBPR-catalyzed peptide optimization on MHC I (Figure 5): The large concave surface formed by the N-terminal domain of TAPBPR mediates its initial encounter with a suboptimally-loaded MHC I, assisted by the C-terminal domain of TAPBPR, which contacts the \u03b13 domain of the MHC I heavy chain and \u03b22m. TAPBPR facilitates the release of low- to medium-affinity peptides primarily by widening the peptide-binding groove through the MHC I \u03b12\u20131-helix, fastening the peptide-coordinating Tyr84, distorting the floor of the binding groove, and shifting the position of \u03b22m (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017a). This remodeling is made possible by the intrinsic plasticity of MHC I molecules (Bailey et al., 2015; Garstka et al., 2011; McShan et al., 2019; Natarajan et al., 2018; Thomas and Tamp\u00e9, 2017b; van Hateren et al., 2017; van Hateren et al., 2015; Wieczorek et al., 2017), and it appears to be induced primarily by structural elements of TAPBPR that lie outside the scoop loop. As a result, the TAPBPR\u0394SL mutant lacking the scoop loop is still able to catalyze peptide displacement. Once the suboptimal peptide has been released, the scoop loop occupies the position of the peptide C terminus in the F-pocket region. The scoop loop thereby contributes to the stabilization of the peptide-deficient binding groove. Our two-step peptide exchange \u2014 mimicking a peptide-depleted environment \u2014 demonstrates that the scoop loop functions at the same time as a peptide selectivity filter by impeding re-binding of the replaced peptide, either through direct competition with the C terminus of the incoming replacement peptide or through an allosteric mechanism. Hence, the scoop loop contributes to the significant affinity decrease of incoming peptides for the MHC I groove in the presence of TAPBPR (McShan et al., 2018). Assuming a mode of direct competition, the replacement peptide would dock in the MHC I groove first with its N terminus, before it competes with the TAPBPR scoop loop over the F pocket region (Hafstrand et al., 2019; Thomas and Tamp\u00e9, 2017a). Negative allosteric coupling between different parts of the MHC I molecule might play a role in the final release of TAPBPR (McShan et al., 2018). The shorter scoop loop in Tsn suggests that its selective pressure on the replacement peptide is weaker than in TAPBPR. Indeed, our fluorescence polarization and SEC analyses show that the tapasin scoop loop in TAPBPRTsn-SL is less efficient in preventing re-binding of dissociated peptide.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig5-v2.jpg)\n\n**Figure 5.:** MHC I molecules bound to low-affinity peptide are recognized by the peptide editor (TAPBPR) (step 1). The editor lowers the peptide affinity of the suboptimally-loaded MHC I and induces dissociation of the low- to medium-affinity peptide (step 2). The scoop loop, which inserts into the F-pocket region of the peptide-binding groove, crucially contributes to the stabilization of the empty MHC I. In the absence of suitable peptides, empty MHC I clients are thereby held in a stable state until they can be loaded with an optimal epitope, for\u00a0example in the PLC. Re-binding of the low-affinity peptide (step 3) is impeded by the scoop loop, through direct competition and/or via allosteric means. Only high-affinity peptides are able to compete with the editor over key regions of the peptide-binding groove (step 4) to eventually displace the scoop loop and the editor from the MHC I (step 5). The displaced editor is now ready for a new round of peptide selection, and the stable pMHC I complex is licensed to travel via the Golgi apparatus to the cell surface.\n\nPhysiologically, these observations might be explained by the fact that Tsn functions within the PLC, a \u2018nanocompartment\u2019 characterized by an abundant and diverse supply of optimal peptides, reaching a bulk concentration of up to 16 \u00b5M before the TAP transporter is arrested by trans-inhibition (Grossmann et al., 2014). Moreover, Tsn is supported by other PLC chaperones in stabilizing empty MHC I clients. In contrast, TAPBPR operates as a single MHC I-dedicated chaperone outside the PLC in environments where the concentration of high-affinity peptides is drastically lower and MHC I clients have to be stabilized in a peptide-receptive state for extended periods of time. Long-term stabilization of suboptimally-loaded or empty MHC I by TAPBPR also allows the major ER/cis-Golgi glycoprotein folding sensor UGGT1 (UDP-glucose:glycoprotein glucosyltransferase 1) to re-glucosylate the MHC I molecule in order to feed it back into the calnexin/calreticulin cycle and/or allow recruitment of the MHC I to the PLC (Neerincx et al., 2017; Thomas and Tamp\u00e9, 2019). In conclusion, the evidence provided by our study indicates that the scoop loop is evolutionarily fine-tuned to enable Tsn and TAPBPR to accomplish their dual function as chaperone and proofreader in the specific subcellular location they operate in. By serving both as a stabilizing element and as selectivity filter in TAPBPR, the scoop loop influences peptide editing and impacts the repertoire of MHC I-associated epitopes presented on the cell surface.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (human)</td>\n      <td>TAPBPRwt</td>\n      <td>PMID:29025996</td>\n      <td></td>\n      <td>lumenal domain</td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>TAPBPR\u0394SL</td>\n      <td>This study (Figure 1C, Materials and methods section)</td>\n      <td></td>\n      <td>lumenal domain</td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>TAPBPRTsn-SL</td>\n      <td>This study (Figure 1C, Materials and methods section)</td>\n      <td></td>\n      <td>lumenal domain</td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>TAPBPRTN3-Ala</td>\n      <td>PMID:19119025</td>\n      <td></td>\n      <td>lumenal domain</td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>TAPBPRTN6</td>\n      <td>PMID:19119025</td>\n      <td></td>\n      <td>lumenal domain</td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>HLA-A*02:01</td>\n      <td>This study (Materials and methods section)</td>\n      <td></td>\n      <td>ectodomain</td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>\u03b22-microglobulin</td>\n      <td>PMID:29025996</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (mouse)</td>\n      <td>H2-Db</td>\n      <td>PMID:29025996</td>\n      <td></td>\n      <td>ectodomain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>DH10Bac</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>10361012</td>\n      <td>chemically competent</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21(DE3)</td>\n      <td>Sigma-Aldrich</td>\n      <td>CMC0014</td>\n      <td>chemically competent</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET-22</td>\n      <td>Novagen/ Merck Millipore</td>\n      <td>69744</td>\n      <td>vector for protein expression in E. coli</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET-28</td>\n      <td>Novagen/ Merck Millipore</td>\n      <td>69864</td>\n      <td>vector for protein expression in E. coli</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFastBacI-gp67</td>\n      <td>PMID:29025996</td>\n      <td></td>\n      <td>transfer vector for Bac-to-Bac system</td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera frugiperda)</td>\n      <td>Sf9</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>11496015</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera frugiperda)</td>\n      <td>Sf21</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>11497013</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>RGPGRAFJ*TI (photo-P18-I10)</td>\n      <td>PMID:26869717</td>\n      <td></td>\n      <td>J* denotes photo-cleavable amino acid</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>ASNENMETM</td>\n      <td>IEDB: epitope ID 4602</td>\n      <td></td>\n      <td>competitor peptide for H2-Db</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>FLPSDEEPYV</td>\n      <td>This study (Materials and methods section)</td>\n      <td></td>\n      <td>competitor peptide for HLA-A*02:01</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>TQSC*NTQSI</td>\n      <td>This study (Materials and methods section)</td>\n      <td></td>\n      <td>C* denotes TAMRA-labeled Cys</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>FLPSDC*FPSF</td>\n      <td>This study (Materials and methods section)</td>\n      <td></td>\n      <td>C* denotes TAMRA-labeled Cys</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>ASNC*NMETM</td>\n      <td>This study (Materials and methods section)</td>\n      <td></td>\n      <td>C* denotes TAMRA-labeled Cys</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TAMRA-5 maleimide</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>T6027</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TAMRA-6 C2 maleimide</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>48180</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fmoc-3-amino-3-(2-nitro)phenyl-propionic acid</td>\n      <td>Peptech</td>\n      <td>CAS #: 517905-93-0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism 6</td>\n      <td>GraphPad Software</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fityk 1.3.1</td>\n      <td>DOI: 10.1107/S0021889810030499</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Superdex 200 Increase 10/300</td>\n      <td>GE Healthcare</td>\n      <td>28990944</td>\n      <td>SEC column</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Superdex 200 Increase 3.2/300</td>\n      <td>GE Healthcare</td>\n      <td>28990946</td>\n      <td>SEC column</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Superdex 75 Increase 3.2/300</td>\n      <td>GE Healthcare</td>\n      <td>29148723</td>\n      <td>SEC column</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HiLoad Superdex 75 16/60</td>\n      <td>GE Healthcare</td>\n      <td>28989333</td>\n      <td>SEC column</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Fluorolog-3</td>\n      <td>Horiba Jobin Yvon</td>\n      <td></td>\n      <td>spectro-fluorometer</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>\u00c4kta Purifier</td>\n      <td>GE Healthcare</td>\n      <td></td>\n      <td>protein purification</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Agilent 1200</td>\n      <td>Agilent</td>\n      <td></td>\n      <td>analytical SEC</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Liberty Blue</td>\n      <td>CEM Corporation</td>\n      <td></td>\n      <td>peptide synthesizer</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>X-tremeGENE HP</td>\n      <td>Sigma-Aldrich</td>\n      <td>6366236001</td>\n      <td>transfection reagent</td>\n    </tr>\n  </tbody>\n</table>\n\n### DNA constructs\n\nThe DNA constructs of human \u03b22m, the ectodomain of mouse H2-Db, and TAPBPRwt were identical to the ones previously described (Thomas and Tamp\u00e9, 2017a), except for position 97 in TAPBPRwt, which contained the native cysteine. The TAPBPR scoop loop mutants TAPBPRTsn-SL and TAPBPR\u0394SL were generated by overlap extension PCR, the TN3-Ala and TN6 mutants were generated by site-directed mutagenesis. The TN3-Ala and TN6 mutants harbored the same mutations that were described for the corresponding mutants of Tsn (Dong et al., 2009), except that in TN3-Ala E105 was mutated to alanine. TAPBPRTsn-SL, TAPBPR\u0394SL, TN3-Ala, and TN6 all contained the C97A mutation. Human HLA-A*02:01 (amino acids 1\u2013278) was cloned into pET-28 (Novagen, Merck Millipore, Darmstadt, Germany) and ended in a C-terminal His6-tag preceded by a linker (sequence: HE). The amino acid numbering of TAPBPR is based on the mature protein as defined by N-terminal sequencing (Zhang and Henzel, 2004).\n\n### Protein expression\n\nHuman \u03b22m and the ectodomains of mouse H2-Db and human HLA-A*02:01 were expressed as inclusion bodies in Escherichia coli BL21(DE3) as described before (Rodenko et al., 2006; Thomas and Tamp\u00e9, 2017a). TAPBPR proteins were expressed in Spodoptera frugiperda (Sf21 or Sf9) insect cells according to standard protocols for the Bac-to-Bac system (Thermo Fisher Scientific, Waltham, MA). A high-titer recombinant baculovirus stock was used to infect the insect cells at a density of 1.5\u20132.0 \u00d7 106 cells/mL, which were cultivated in Sf-900 III SFM medium (Thermo Fisher Scientific) at 28\u00b0C. The cell culture medium containing secreted TAPBPR was harvested 72 hr after infection.\n\n### Refolding and purification of \u03b22m\n\n\u03b22m was refolded by dialysis essentially as described previously (Rodenko et al., 2006) and purified by SEC on a Superdex 75 column (GE Healthcare, Piscataway, NJ) in HEPES-buffered saline (1xHBS: 10 mM HEPES pH 7.2, 150 mM NaCl). Purified protein was concentrated by ultrafiltration (Amicon Ultra 3 kDa MWCO, Merck Millipore).\n\n### Peptide synthesis and labeling\n\nThe following peptides were used: the photo-cleavable peptide photo-P18-I10 (RGPGRAFJ*TI) (H2-Db) [J*=3-amino-3-(2-nitro)phenyl-propionic acid], the non-fluorescent competitor peptides ASNENMETM (H2-Db) and FLPSDEEPYV (HLA-A*02:01), as well as the fluorescently labeled peptides TQSC*NTQSI (H2-Db), FLPSDC*FPSF (HLA-A*02:01), ASNC*NMETM (H2-Db) (C* denotes TAMRA-labeled cysteine). Non-natural peptide epitopes were designed based on their theoretical affinities according to the NetMHCpan server (Jurtz et al., 2017). While TQSC*NTQSI and FLPSDC*FPSF were constructed to have medium affinity (500\u2013600 nM), ASNC*NMETM and the competitor peptides\u00a0were designed to be high-affinity (8\u201310 nM) ligands. Peptides were synthesized using standard Fmoc solid-phase chemistry and purified by C18 reversed-phase HPLC. The identity of peptides was verified either by matrix-assisted laser desorption/ionization mass spectrometry (MALDI-MS) or by electrospray ionization-mass spectrometry (ESI-MS). In order to site-specifically label peptides with fluorophores, 10.5 \u00b5M peptide were incubated with 26 \u00b5M TAMRA-5-maleimide (single isomer, Thermo Fisher Scientific) or TAMRA-6 C2 maleimide (Lumiprobe, Hannover, Germany) (used for labeling of FLPSDC*FPSF) overnight at 4\u00b0C. Labeled peptides were purified by C18 reversed-phase HPLC, and their identity was confirmed by ESI-MS.\n\n### Refolding and purification of MHC I allomorphs\n\nH2-Db and HLA-A*02:01 were refolded from inclusion bodies by rapid dilution in the presence of purified \u03b22m and peptide according to established protocols (Rodenko et al., 2006). Refolded MHC I complexes were purified by SEC (Superdex 200 Increase 10/300, GE Healthcare) in 1xHBS and concentrated by ultrafiltration (Amicon Ultra, Merck Millipore).\n\n### Purification of TAPBPR proteins\n\nTAPBPR proteins were purified from the insect cell culture medium by IMAC according to a protocol published earlier (Thomas and Tamp\u00e9, 2017a), polished by SEC (Superdex 200 Increase 10/300, GE Healthcare) in 1xHBS, and concentrated by ultrafiltration (Amicon Ultra, Merck Millipore).\n\n### Peptide exchange\n\nDissociation of fluorescently labeled peptide from MHC I was monitored at 23\u00b0C in 1xHBS by fluorescence polarization (Fluorolog-3 spectrofluorometer, Horiba Jobin Yvon, Bensheim, Germany) with \u03bbex/em of 530/560 nm. One-step and two-step dissociation assays were carried out with 300 nM MHC I loaded with TAMRA-labeled peptide, 1 \u00b5M TAPBPR, and 300 \u00b5M competitor peptide. Dissociation rate constants were determined in GraphPad Prism using a one-phase exponential decay regression.\n\n### MHC I-chaperone complex formation\n\nIn the presence of purified TAPBPR (3 \u00b5M), photo-P18-I10-loaded H2-Db (10 \u00b5M) was irradiated with UV light (36 nm, 185 mW/cm2, 120 s) on ice and afterwards incubated for 10 min at room temperature. Samples were subsequently centrifuged at 10,000xg for 10 min and analyzed by analytical SEC on a Superdex 75 (3.2/300) column (GE Healthcare). SEC runs were conducted in 1xHBS and monitored by absorbance at 280 nm. Chromatograms were deconvoluted into three Gaussian functions using the program Fityk 1.3.1 (Wojdyr, 2010). The amount of complex was assessed by the area of the complex peak.\n\n### TAPBPR-MHC I complex stability\n\nPurified peptide-deficient TAPBPRwt-H2-Db, TAPBPRTsn-SL-H2-Db, and TAPBPR\u0394SL-H2-Db complexes were analyzed via analytical SEC either on a Superdex 75 (3.2/300) or a Superdex 200 (3.2/300) column (GE Healthcare) at a flow rate of 0.075 mL/min. A separate sample of purified TAPBPRwt-H2-Db complex was incubated with a 100-fold molar excess of high-affinity peptide prior to re-analysis by SEC.\n",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "92916ed0-5879-482d-9445-cb0137c85ae8",
+      "submission_id": "b5e735ff-2eff-4949-aa08-718e0833807b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pamela J Bjorkman, California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55326.sa1](https://doi.org/10.7554/eLife.55326.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThese careful experiments to analyze the role of the scoop loop in TAPBPR's chaperone activity during peptide loading onto the MHC I proteins will add to the general understanding of antigen presentation.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A loop structure allows TAPBPR to exert its dual function as MHC I chaperone and peptide editor\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tadatsugu Taniguchi as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Malini Raghavan (Reviewer #1); Scheherazade Sadegh-Nasseri (Reviewer #2); Efstratios Stratikos (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nTAPBPR functions as a chaperone and peptide editor during the assembly of MHC class I molecules. Two different crystal structures of TAPBPR-MHC class I complexes have been solved (Jiang et al., 2017; Thomas and Tampe, 2017). While the two structures show overall similarities in the interaction modes, the location of the scoop loop (approximately residues 22-25 of TAPBPR) in the F-pocket region of peptide-free MHC class I have been in debate (Natarajan et al., Crit Rev Biochem Mol Biol., 2019). More recent studies support a model in which the scoop loop plays an important role in TAPBPR-mediated peptide dissociation from MHC class I (Ilca et al., 2018). Using purified human and mouse MHC class I molecules, and purified TAPBPR and its scoop loop mutant, the new study by Sagert et al. further analyzes the role of the scoop loop in TAPBPR function. Overall, this is a very well written manuscript that presents well-thought experiments and interesting results. The experiments are well-performed and controlled, and the results are generally clear-cut, under the tested conditions. Concerns with the manuscript relate to some of the experimental interpretations and conclusions leading to the model.\n\nEssential revisions:\n\n1) Figure 2 nicely presents the formation of TAPBPR/H2-Db and how mutating the scoop loop can affect the relative amount of complex formed. While the experiment is highly informative, I am not persuaded that it accurately reports kinetic instability as the authors claim. Rather it is equally possible that it reports thermodynamic destabilisation. Given the reported interactions of the scoop loop with the MHC I peptide-binding groove, lack of the scoop loop or sequence substitution would be expected to weaken the interaction, something that could explain the observations in Figure 2. Can the authors more directly measure the affinity of TAPBPR for MHC I? Even if this is not easily achievable, I think the authors should reconsider their claims for kinetic instability, since deconvolution of kinetics vs. thermodynamics is probably impossible by this particular experiment.\n\n2) Given the result presented in Figure 2, how do the authors explain the finding that scoop loop variants largely retain their ability to catalyse peptide dissociation (Figure 3)? Is it because the scoop loop interactions with MHC are secondary to the overall TAPBPR-MHC interactions? If the scoop loop variants have a reduced affinity for MHC, would an effect be more obvious if experiments in Figure 3 are repeated at lower concentrations?\n\n3) Relative to a TAPBPR chimeric construct containing the shorter scoop loop of tapasin, the wild type TAPBPR is shown to form more stable (higher affinity complexes) with MHC I (Figure 2), although the peptide dissociation function of the wild type TAPBPR is less efficient than the chimera with the tapasin scoop loop (Figure 3). The stronger peptide dissociation effect of a TAPBPR with the tapasin scoop loop compared with TAPBPRwt should be interpreted, explicitly discussed, and taken into account in the overall model of Figure 5.\n\n4) Notably, mutations of other key TABBPR residues at the TAPBPR-MHC class I interface (TN3 and TN6) are shown in the representative figure to have more significant effects on peptide dissociation than a TAPBPR mutant in which the scoop loop was mutated to a 3xGly sequence, suggesting a dominant role for TN3 and TN6-mediated interactions in inducing peptide dissociation. The dominant role of TN3 and TN6-mediated interactions in inducing peptide dissociation should be acknowledged (including within the model), and their quantifications shown in the same way as Figure 3C and 3E.\n\n5) In a variant of the peptide dissociation experiment, peptide dissociation was measured in the presence of the three TAPBPR variants, but in the absence of excess unlabeled peptide (Figure 4 and Figure 4\u2014figure supplement 1). Under this set of conditions, wild type TAPBPR was more efficient at inducing peptide dissociation from H2-Db than the two scoop loop mutants, whereas wild type TAPBPR and the tapasin scoop loop mutant appear to have similar efficiencies towards peptide dissociation from HLA-A2. These data are used to argue for a model in which the scoop loop directly interferes with rebinding of a displaced peptide (internal competitor). However, concerns with these interpretations are:\n\na) Other models (such as different allosteric effects induced by the three scoop loop variants of TAPBPR) could explain the varying degrees of inhibition of rebinding of dissociated peptides by the TAPBPR variants, which are also predicted to have different affinities for MHC class I. Model validation will need data that can more clearly sort out the difference between an internal competitor model and alternative allosteric effects-based models. If the differences cannot be easily sorted out, at minimum, the model of Figure 5 should be changed to indicate that both the internal competitor model and allosteric model are likely to be relevant.\n\nb) The effects of the three TAPBPR constructs on inhibition of peptide rebinding vary between HLA-A2 and H2-Db (comparing Figure 4 with Figure 4\u2014figure supplement 1). The variable effects of tapasin scoop loop on Db vs. HLA-A2 should be expanded, interpreted, and explicitly discussed.\n\n6) Does the experiment in Figure 4 report a reduced \"functional\" ability of the scoop loop mutants to remove the peptide from MHC or a reduced affinity of the TAPBPR variants for MHC? This difference is relevant to our understanding of the distinct functionality of the scoop loop (versus being a hinge that makes additional interactions with the MHC). Perhaps the authors could test this by titrating the less active TAPBPRTsn-SL to higher concentrations to see if they can get similar results to the TAPBPRwt-SL.\n\n7) The importance of the scoop loop has recently been demonstrated in the study by Ilca et al. (2018), but the latter paper is only referenced to highlight the differences in conclusions, rather than many other overall similarities in findings. The Ilca et al. paper should be referenced within the Introduction for better acknowledgement of prior contributions to the same questions, and similarities with the present study pointed out in addition to the differences-within the Discussion.\n\n8) Finally, for readers and for the field, this section in the Introduction is very confusing \"Furthermore, one of the two TAPBPR-MHC I complex structures revealed a remarkable structural feature in TAPBPR named the scoop loop (Thomas and Tampe, 2017). [\u2026] The scoop loop occupies a position that is incompatible with high-affinity peptide binding and displaces or coordinates several key MHC I residues, including Y84, T143, K146, and W147, which are responsible for binding the C terminus of the peptide.\" The authors should rephrase to clarify what has been discovered regarding the scoop loop previously, what is in debate, and specify the open questions that this study will address.\n\n9) As noted above, model validation will need data that can more clearly sort out the difference between an internal competitor model and alternative allosteric effects-based models. Additional higher resolution structural data, if possible to acquire within two months, may be helpful because the loop was modeled as inserting into the F-pocket in one of the structures (Thomas and Tampe, 2017) but not in the second (Jiang et al., 2017).\n\nOverall, this is a well-executed study, but the data do not integrate well with the proposed model. In line with the above points, the data are more consistent with a relatively minor (and possibly MHC-context dependent) contribution of the scoop loop to peptide editing, rather than the current emphasis of a critical role. This message should be evident within the Abstract and throughout the manuscript.\n",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d4b09707-6699-4671-8254-6c68749b2b95",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C1",
+      "claim": "Adaptive immunity vitally depends on major histocompatibility complex class I (MHC I) molecules loaded with peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptive immunity vitally depends on major histocompatibility complex class I (MHC I) molecules loaded with peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the immune system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "94e69afb-7824-4958-afac-d42fb0604a47",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C2",
+      "claim": "Selective loading of peptides onto MHC I, referred to as peptide editing, is catalyzed by tapasin and the tapasin-related TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective loading of peptides onto MHC I, referred to as peptide editing, is catalyzed by tapasin and the tapasin-related TAPBPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge and citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "f950cc89-030a-4fbc-9daa-979c42a5539e",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C3",
+      "claim": "An important catalytic role has been ascribed to a structural feature in TAPBPR called the scoop loop.",
+      "claim_type": "EXPLICIT",
+      "source": "An important catalytic role has been ascribed to a structural feature in TAPBPR called the scoop loop, but the exact function of the scoop loop remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior research cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "92ab2ce1-00ab-4890-930d-c6408872cc53",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C4",
+      "claim": "The scoop loop of TAPBPR contributes substantially to the stability of the MHC I-chaperone complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using a reconstituted system of defined peptide-exchange components including human TAPBPR variants, we uncover a substantial contribution of the scoop loop to the stability of the MHC I-chaperone complex and to peptide editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the manuscript, specifically SEC analyses showing reduced complex stability for scoop loop variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "3adc544c-839c-4100-b884-593747b11ee6",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C5",
+      "claim": "The scoop loop of TAPBPR contributes substantially to peptide editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using a reconstituted system of defined peptide-exchange components including human TAPBPR variants, we uncover a substantial contribution of the scoop loop to the stability of the MHC I-chaperone complex and to peptide editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from peptide exchange assays presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "84a8c6ab-68b2-4b93-8e67-bbe8c0012b52",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C6",
+      "claim": "The scoop loop of TAPBPR functions as an internal peptide surrogate in peptide-depleted environments stabilizing empty MHC I.",
+      "claim_type": "EXPLICIT",
+      "source": "We reveal that the scoop loop of TAPBPR functions as an internal peptide surrogate in peptide-depleted environments stabilizing empty MHC I and impeding peptide rebinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-step peptide exchange assays and SEC analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "b48b9cfe-efe3-42bc-800b-731a875de555",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C7",
+      "claim": "The scoop loop of TAPBPR impedes peptide rebinding.",
+      "claim_type": "EXPLICIT",
+      "source": "We reveal that the scoop loop of TAPBPR functions as an internal peptide surrogate in peptide-depleted environments stabilizing empty MHC I and impeding peptide rebinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-step peptide exchange assays showing differential peptide release.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "53abfb5b-1d6e-45cb-b385-f133cf956622",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C8",
+      "claim": "The scoop loop acts as an additional selectivity filter in shaping the repertoire of presented peptide epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "The scoop loop thereby acts as an additional selectivity filter in shaping the repertoire of presented peptide epitopes and the formation of a hierarchical immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing differential peptide release and rebinding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "5337149a-9778-4b1b-aad7-f4bdb05686e1",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C9",
+      "claim": "Nucleated cells of higher vertebrates present a selection of endogenous peptides on MHC I molecules at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleated cells of higher vertebrates provide information about their health status by presenting a selection of endogenous peptides on MHC I molecules at the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about MHC I antigen presentation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "170a1231-afd0-42f2-83af-67f4ec6537c9",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C10",
+      "claim": "CD8+ T lymphocytes are able to detect and eliminate infected or cancerous cells by sampling peptide-MHC I complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "By sampling these peptide-MHC I (pMHC I) complexes, CD8+ T lymphocytes are able to detect and eliminate infected or cancerous cells (Blum et al., 2013; Rock et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "872a01d4-a059-4d3c-bf5a-efeefd58bff1",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C11",
+      "claim": "Peptide editing is catalyzed by the two homologous MHC I-specific chaperones tapasin (Tsn) and TAP-binding protein-related (TAPBPR).",
+      "claim_type": "EXPLICIT",
+      "source": "In a process called peptide editing or proofreading, peptides derived from the cellular proteome are selected for their ability to form stable pMHC I complexes. This peptide editing is known to be catalyzed by the two homologous MHC I-specific chaperones tapasin (Tsn) and TAP-binding protein-related (TAPBPR) (Fleischmann et al., 2015; Hermann et al., 2015; Morozov et al., 2016; Neerincx and Boyle, 2017; Tan et al., 2002; Thomas and Tamp\u00e9, 2019; Wearsch and Cresswell, 2007; Wearsch et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "1c42c674-53ff-4b85-9d90-bb7c2019e396",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C12",
+      "claim": "The selection of high-affinity MHC I-associated peptide epitopes is of pivotal importance for immunosurveillance by effector T lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The selection of high-affinity MHC I-associated peptide epitopes is of pivotal importance not only for immunosurveillance by effector T lymphocytes, but also for priming of na\u00efve T cells and T cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about adaptive immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "657876ad-8ea9-4035-8340-b257b31f25e2",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C13",
+      "claim": "The selection of high-affinity MHC I-associated peptide epitopes is of pivotal importance for priming of na\u00efve T cells and T cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The selection of high-affinity MHC I-associated peptide epitopes is of pivotal importance not only for immunosurveillance by effector T lymphocytes, but also for priming of na\u00efve T cells and T cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about adaptive immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "14354105-2d6f-4539-8f80-e82ef9e35b4c",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C14",
+      "claim": "Tapasin functions as an integral constituent of the peptide-loading complex (PLC) in the endoplasmic reticulum (ER) membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "As an integral constituent of the peptide-loading complex (PLC) in the endoplasmic reticulum (ER) membrane, the ER-restricted Tsn functions in a 'nanocompartment' characterized by a high concentration of diverse, optimal peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the PLC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "b1777185-cefa-4c70-8f86-3c909a683a56",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C15",
+      "claim": "Tapasin is ER-restricted.",
+      "claim_type": "EXPLICIT",
+      "source": "As an integral constituent of the peptide-loading complex (PLC) in the endoplasmic reticulum (ER) membrane, the ER-restricted Tsn functions in a 'nanocompartment' characterized by a high concentration of diverse, optimal peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about tapasin localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "0ec948c9-6768-4b04-a6b3-5ccf3f340b81",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C16",
+      "claim": "Tapasin functions in a 'nanocompartment' characterized by a high concentration of diverse, optimal peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "As an integral constituent of the peptide-loading complex (PLC) in the endoplasmic reticulum (ER) membrane, the ER-restricted Tsn functions in a 'nanocompartment' characterized by a high concentration of diverse, optimal peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the PLC environment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "9ac6a2b6-2b9d-416c-874d-cb67c11d433a",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C17",
+      "claim": "Peptides are shuttled into the ER by the heterodimeric ABC transporter associated with antigen processing TAP1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptides are shuttled into the ER by the heterodimeric ABC (ATP-binding cassette) transporter associated with antigen processing TAP1/2, the central component of the PLC (Abele and Tamp\u00e9, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "c8c5080f-dc19-4580-8f0f-d60d94850d6d",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C18",
+      "claim": "TAP1/2 is the central component of the PLC.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptides are shuttled into the ER by the heterodimeric ABC (ATP-binding cassette) transporter associated with antigen processing TAP1/2, the central component of the PLC (Abele and Tamp\u00e9, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "0ff26dc1-81a2-44c6-ad70-c974df1d9a8f",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C19",
+      "claim": "In the ER, most peptides are further trimmed by the aminopeptidases ERAP1 and ERAP2 to an optimal length for binding in the MHC I groove.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ER, most peptides are further trimmed by the aminopeptidases ERAP1 and ERAP2 to an optimal length for binding in the MHC I groove (Evnouchidou and van Endert, 2019; Hammer et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "f249c228-9a9a-416c-b217-154ec058b810",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C20",
+      "claim": "TAPBPR operates independently of the PLC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Tsn, TAPBPR operates independently of the PLC and is also found in the peptide-depleted cis-Golgi network (Boyle et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "fe8ae295-9868-4c19-a935-14431172270b",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C21",
+      "claim": "TAPBPR is found in the peptide-depleted cis-Golgi network.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Tsn, TAPBPR operates independently of the PLC and is also found in the peptide-depleted cis-Golgi network (Boyle et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "20bd3815-ac95-49e9-9a82-e8a39df9684a",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C22",
+      "claim": "A recent cryo-EM study of the fully-assembled human PLC provided fundamental insights into the architecture and dynamic nature of the Tsn-containing PLC.",
+      "claim_type": "EXPLICIT",
+      "source": "Fundamental insights into the architecture and dynamic nature of the Tsn-containing PLC have come from a recent cryo-EM study of the fully-assembled human PLC (Blees et al., 2017), while the basic principles underlying catalyzed peptide editing have been elucidated by crystal structures of the TAPBPR-MHC I complex (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017a):",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "bbc166c4-80d7-4c31-aacd-76139ebeb0f7",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C23",
+      "claim": "Crystal structures of the TAPBPR-MHC I complex elucidated the basic principles underlying catalyzed peptide editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Fundamental insights into the architecture and dynamic nature of the Tsn-containing PLC have come from a recent cryo-EM study of the fully-assembled human PLC (Blees et al., 2017), while the basic principles underlying catalyzed peptide editing have been elucidated by crystal structures of the TAPBPR-MHC I complex (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017a):",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "e2d83ba5-7085-4341-a305-e5728c41f6c6",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C24",
+      "claim": "TAPBPR stabilizes the peptide-binding groove in a widened conformation primarily through the MHC I \u03b12\u20131 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "TAPBPR stabilizes the peptide-binding groove in a widened conformation primarily through the MHC I \u03b12\u20131 helix, distorts the floor of the binding groove, and shifts the position of \u03b22-microglobulin (\u03b22m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on crystal structures cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "6bd28657-aad3-4f84-b73c-3fe7ed249c87",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C25",
+      "claim": "TAPBPR distorts the floor of the MHC I binding groove.",
+      "claim_type": "EXPLICIT",
+      "source": "TAPBPR stabilizes the peptide-binding groove in a widened conformation primarily through the MHC I \u03b12\u20131 helix, distorts the floor of the binding groove, and shifts the position of \u03b22-microglobulin (\u03b22m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on crystal structures cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "ac078dcb-75c4-485e-a316-1d5fb8831a4b",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C26",
+      "claim": "TAPBPR shifts the position of \u03b22-microglobulin (\u03b22m).",
+      "claim_type": "EXPLICIT",
+      "source": "TAPBPR stabilizes the peptide-binding groove in a widened conformation primarily through the MHC I \u03b12\u20131 helix, distorts the floor of the binding groove, and shifts the position of \u03b22-microglobulin (\u03b22m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on crystal structures cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "6cdc325c-baa9-48fa-b852-3c387627bb6a",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C27",
+      "claim": "One of the two TAPBPR-MHC I complex structures revealed a structural feature in TAPBPR named the scoop loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, one of the two TAPBPR-MHC I complex structures revealed a remarkable structural feature in TAPBPR named the scoop loop (Thomas and Tamp\u00e9, 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "9fe47b85-0de0-470b-a57a-4162d0429157",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C28",
+      "claim": "The scoop loop in TAPBPR is significantly longer than the corresponding region in Tsn.",
+      "claim_type": "EXPLICIT",
+      "source": "In TAPBPR, this loop is significantly longer than the corresponding region in Tsn, which was not resolved in the X-ray structure of Tsn (Dong et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of crystal structures cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "781ca25e-bf0b-47c5-ae10-6a4c2573ec3b",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C29",
+      "claim": "The corresponding region to the scoop loop in Tsn was not resolved in the X-ray structure of Tsn.",
+      "claim_type": "EXPLICIT",
+      "source": "In TAPBPR, this loop is significantly longer than the corresponding region in Tsn, which was not resolved in the X-ray structure of Tsn (Dong et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "56ca393a-4d12-4840-9bba-cd5d36441685",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C30",
+      "claim": "The scoop loop of TAPBPR is located in the F-pocket region of the empty MHC I binding groove.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the scoop loop of TAPBPR is located in the F-pocket region of the empty MHC I binding groove (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure and Figure 1A,B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "6e8425ad-79cc-4876-91e5-a947c37aa636",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C31",
+      "claim": "The F pocket region is crucially involved in defining pMHC I stability by anchoring the C-terminal part of the peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "By anchoring the C-terminal part of the peptide, the F pocket region is crucially involved in defining pMHC I stability (Abualrous et al., 2015; Hein et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "c92e3ae7-99e9-427c-b7f3-8d5c9c3b2aae",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C32",
+      "claim": "The scoop loop occupies a position that is incompatible with peptide binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The scoop loop occupies a position that is incompatible with peptide binding and displaces or coordinates several key MHC I residues responsible for binding the C terminus of the peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "cded13b6-e067-4b9b-b1f4-e398c82bb961",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C33",
+      "claim": "The scoop loop displaces or coordinates several key MHC I residues responsible for binding the C terminus of the peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "The scoop loop occupies a position that is incompatible with peptide binding and displaces or coordinates several key MHC I residues responsible for binding the C terminus of the peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "b26d221c-2267-4aa1-96a0-280d55863f3a",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C34",
+      "claim": "The scoop loop can be regarded as a surrogate for the C terminus of the displaced peptide, stabilizing the inherently labile empty MHC I molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore proposed that the scoop loop can be regarded as a surrogate for the C terminus of the displaced peptide, stabilizing the inherently labile empty MHC I molecule (Thomas and Tamp\u00e9, 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed in prior research cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "fd181bc4-14d0-48d8-a705-4e963d3b95a8",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C35",
+      "claim": "By occupying a region critical to peptide binding, the scoop loop might allow only high-affinity peptides to re-enter the MHC I binding groove after displacement of sub-optimal peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, by occupying a region critical to peptide binding, the scoop loop might allow only high-affinity peptides to re-enter the MHC I binding groove after displacement of sub-optimal peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on structural observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "29eba1b4-c748-49e7-ac39-b937c31f0955",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C36",
+      "claim": "Ilca et al. investigated TAPBPR scoop-loop variants using immunopeptidomics and cell-based assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed importance of the scoop loop for TAPBPR function has recently been scrutinized in a study by Ilca et al. investigating TAPBPR scoop-loop variants using immunopeptidomics and cell-based assays (Ilca et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "5264c1a4-227a-42b2-9e5b-23b13e12ad8c",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C37",
+      "claim": "Ilca et al. found that a specific leucine residue in the scoop loop facilitates peptide displacement on MHC I allomorphs favoring hydrophobic peptide side chains in their F pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Ilca et al. found that a specific leucine residue in the scoop loop facilitates peptide displacement on MHC I allomorphs favoring hydrophobic peptide side chains in their F pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "54cf8d80-62b7-4536-819e-b4fbf9bda5a2",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C38",
+      "claim": "The scoop loop is of critical importance for TAPBPR-mediated stabilization of empty MHC I clients in peptide-depleted environments.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the scoop loop is of critical importance for TAPBPR-mediated stabilization of empty MHC I clients in peptide-depleted environments and contributes to peptide quality control during editing by impeding released peptide to rebind in the MHC I groove.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from SEC analyses and peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "ec0cf144-9276-4243-8430-55e06c6b0ff9",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C39",
+      "claim": "The scoop loop contributes to peptide quality control during editing by impeding released peptide to rebind in the MHC I groove.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the scoop loop is of critical importance for TAPBPR-mediated stabilization of empty MHC I clients in peptide-depleted environments and contributes to peptide quality control during editing by impeding released peptide to rebind in the MHC I groove.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-step peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "ce42bc6a-a044-4faa-ab89-e59d381f660b",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C40",
+      "claim": "The TAPBPR scoop loop has a crucial role in establishing a hierarchical immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our data support a crucial role for the TAPBPR scoop loop in establishing a hierarchical immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing the scoop loop's role in peptide selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "8e09703b-0419-4e1e-a271-f0a0bdce6243",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C41",
+      "claim": "TAPBPRTsn-SL and TAPBPR\u0394SL are competent to form complexes with MHC I.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent SEC analysis revealed that both TAPBPRTsn-SL and TAPBPR\u0394SL are, in principle, competent to form complexes with MHC I (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "a3d4f80e-dc96-4cc1-95a1-21197d12ec3f",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C44",
+      "claim": "After reanalysis of the MHC I chaperone complexes by SEC, the mutant complexes were mostly dissociated, indicating kinetic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "After reanalysis of the MHC I chaperone complexes by SEC, the mutant complexes were mostly dissociated, indicating kinetic instability (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "3a1512bd-2147-4426-80ef-98101047d8c4",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C45",
+      "claim": "Isolation and reinjection of the wt complex showed that it remained stable for the duration of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, isolation and reinjection of the wt complex showed that it remained stable for the duration of the experiment (Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "fb67b25a-3993-4b0b-9bbf-2a7e029b63b6",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C46",
+      "claim": "In the presence of a high-affinity peptide, the TAPBPRwt-MHC I complex dissociated.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, in the presence of a high-affinity peptide, even the TAPBPRwt-MHC I complex dissociated, in accordance with the role of TAPBPR as a chaperone that stabilizes the MHC I as long as no optimal peptide is present (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "1cd53ec5-1ec5-4e4b-a376-f5ad078c08e4",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C47",
+      "claim": "The scoop loop is crucial to an extended lifetime of the chaperone-client complex, enabling the escorting of empty MHC I by TAPBPR in a peptide-deficient environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings demonstrate that the scoop loop is crucial to an extended lifetime of the chaperone-client complex, enabling the escorting of empty MHC I by TAPBPR in a peptide-deficient environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing reduced complex stability for scoop loop variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "91ede8da-cad8-46ac-8613-d9ded4750862",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C48",
+      "claim": "TAPBPRwt and the scoop-loop variants accelerated the uncatalyzed peptide release from H2-Db to a similar extent.",
+      "claim_type": "EXPLICIT",
+      "source": "For the mouse MHC I allomorph H2-Db, TAPBPRwt and the scoop-loop variants accelerated the uncatalyzed peptide release (2.53 \u00b1 0.37 \u00d7 10\u22123 s\u22121) to a similar extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "20f5dd63-8ac3-4585-ae68-c082e04501e9",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C49",
+      "claim": "The TAPBPR\u0394SL mutant lacking the entire scoop loop exhibited slightly reduced activity (7.68 \u00b1 1.17 \u00d7 10\u22123 s\u22121) compared to the wt protein (10.41 \u00b1 0.54 \u00d7 10\u22123 s\u22121) in peptide displacement from H2-Db.",
+      "claim_type": "EXPLICIT",
+      "source": "The TAPBPR\u0394SL mutant lacking the entire scoop loop exhibited slightly reduced activity (7.68 \u00b1 1.17 \u00d7 10\u22123 s\u22121) compared to the wt protein (10.41 \u00b1 0.54 \u00d7 10\u22123 s\u22121), whereas TAPBPRTsn-SL was slightly more active (12.64 \u00b1 1.03 \u00d7 10\u22123 s\u22121) (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "bff2bc3b-0c83-4da4-a3d2-bd8efcc093f9",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C50",
+      "claim": "TAPBPRTsn-SL was slightly more active (12.64 \u00b1 1.03 \u00d7 10\u22123 s\u22121) than TAPBPRwt in peptide displacement from H2-Db.",
+      "claim_type": "EXPLICIT",
+      "source": "The TAPBPR\u0394SL mutant lacking the entire scoop loop exhibited slightly reduced activity (7.68 \u00b1 1.17 \u00d7 10\u22123 s\u22121) compared to the wt protein (10.41 \u00b1 0.54 \u00d7 10\u22123 s\u22121), whereas TAPBPRTsn-SL was slightly more active (12.64 \u00b1 1.03 \u00d7 10\u22123 s\u22121) (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "d7e3c829-6dbc-4032-a622-2bc2273b08a5",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C51",
+      "claim": "When the experiment was performed at a much lower TAPBPR concentration (75 nM), the TAPBPRs retained their activity, and the gradual activity differences between the variants remained.",
+      "claim_type": "EXPLICIT",
+      "source": "When we performed the experiment at a much lower TAPBPR concentration (75 nM), the TAPBPRs retained their activity, and the gradual activity differences between the variants remained (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "6744d7ac-3854-44f7-a0b3-72aa969f757b",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C52",
+      "claim": "TAPBPRwt and the scoop-loop mutants have similar affinities for H2-Db.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that TAPBPRwt and the scoop-loop mutants have similar affinities for H2-Db.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing retained activity at low TAPBPR concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "3da2eb63-9cd3-4971-9c94-224360eb3efa",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C53",
+      "claim": "TAPBPRwt was able to catalyze displacement of a high-affinity peptide from H2-Db, although the catalytic effect was considerably smaller (1.8-fold acceleration) than for H2-Db loaded with the medium-affinity peptide (4.1-fold acceleration).",
+      "claim_type": "EXPLICIT",
+      "source": "TAPBPRwt was even able to catalyze displacement of a high-affinity peptide from H2-Db, although the catalytic effect was considerably smaller (1.8-fold acceleration) than for H2-Db loaded with the medium-affinity peptide (4.1-fold acceleration) (Figure 3\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "442e37b9-e6ff-420c-b2b6-8d009364705a",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C54",
+      "claim": "In a peptide-rich environment (1000-fold molar excess of peptide), the highest catalytic activity towards HLA-A*02:01 was observed for TAPBPRTsn-SL, followed by TAPBPRwt and TAPBPR\u0394SL.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the experiments with H2-Db, in a peptide-rich environment (1000-fold molar excess of peptide), the highest catalytic activity towards HLA-A*02:01 was observed for TAPBPRTsn-SL, followed by TAPBPRwt and TAPBPR\u0394SL; yet, the differences in activity between the three TAPBPRs were more pronounced, and the acceleration of the uncatalyzed peptide dissociation from HLA-A*02:01 (1.90 \u00b1 0.04 \u00d7 10\u22123 s\u22121) by TAPBPRTsn-SL (26.31 \u00b1 2.59 \u00d7 10\u22123 s\u22121) and TAPBPRwt (15.79 \u00b1 0.71 \u00d7 10\u22123 s\u22121) was significantly higher than for H2-Db, while the activity of TAPBPR\u0394SL (8.52 \u00b1 1.18 \u00d7 10\u22123 s\u22121) remained almost the same (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "339da474-e371-4424-8dd3-9d54ffcfc3ab",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C55",
+      "claim": "The differences in activity between the three TAPBPRs were more pronounced for HLA-A*02:01 than for H2-Db.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the experiments with H2-Db, in a peptide-rich environment (1000-fold molar excess of peptide), the highest catalytic activity towards HLA-A*02:01 was observed for TAPBPRTsn-SL, followed by TAPBPRwt and TAPBPR\u0394SL; yet, the differences in activity between the three TAPBPRs were more pronounced, and the acceleration of the uncatalyzed peptide dissociation from HLA-A*02:01 (1.90 \u00b1 0.04 \u00d7 10\u22123 s\u22121) by TAPBPRTsn-SL (26.31 \u00b1 2.59 \u00d7 10\u22123 s\u22121) and TAPBPRwt (15.79 \u00b1 0.71 \u00d7 10\u22123 s\u22121) was significantly higher than for H2-Db, while the activity of TAPBPR\u0394SL (8.52 \u00b1 1.18 \u00d7 10\u22123 s\u22121) remained almost the same (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "35ee12a3-72de-410f-b158-d456383e16ec",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C56",
+      "claim": "The acceleration of the uncatalyzed peptide dissociation from HLA-A*02:01 by TAPBPRTsn-SL and TAPBPRwt was significantly higher than for H2-Db.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the experiments with H2-Db, in a peptide-rich environment (1000-fold molar excess of peptide), the highest catalytic activity towards HLA-A*02:01 was observed for TAPBPRTsn-SL, followed by TAPBPRwt and TAPBPR\u0394SL; yet, the differences in activity between the three TAPBPRs were more pronounced, and the acceleration of the uncatalyzed peptide dissociation from HLA-A*02:01 (1.90 \u00b1 0.04 \u00d7 10\u22123 s\u22121) by TAPBPRTsn-SL (26.31 \u00b1 2.59 \u00d7 10\u22123 s\u22121) and TAPBPRwt (15.79 \u00b1 0.71 \u00d7 10\u22123 s\u22121) was significantly higher than for H2-Db, while the activity of TAPBPR\u0394SL (8.52 \u00b1 1.18 \u00d7 10\u22123 s\u22121) remained almost the same (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "39065b2d-7e4b-4d42-a6ce-ece016d81928",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C57",
+      "claim": "The activity of TAPBPR\u0394SL towards HLA-A*02:01 (8.52 \u00b1 1.18 \u00d7 10\u22123 s\u22121) remained almost the same as for H2-Db.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the experiments with H2-Db, in a peptide-rich environment (1000-fold molar excess of peptide), the highest catalytic activity towards HLA-A*02:01 was observed for TAPBPRTsn-SL, followed by TAPBPRwt and TAPBPR\u0394SL; yet, the differences in activity between the three TAPBPRs were more pronounced, and the acceleration of the uncatalyzed peptide dissociation from HLA-A*02:01 (1.90 \u00b1 0.04 \u00d7 10\u22123 s\u22121) by TAPBPRTsn-SL (26.31 \u00b1 2.59 \u00d7 10\u22123 s\u22121) and TAPBPRwt (15.79 \u00b1 0.71 \u00d7 10\u22123 s\u22121) was significantly higher than for H2-Db, while the activity of TAPBPR\u0394SL (8.52 \u00b1 1.18 \u00d7 10\u22123 s\u22121) remained almost the same (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "7d939054-f7ec-4868-8843-d316083e6ecf",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C58",
+      "claim": "TN3-Ala and TN6 displayed drastically reduced activity towards H2-Db in the peptide-exchange experiment, with peptide dissociation rate constants close to the value of the uncatalyzed reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, TN3-Ala and TN6 displayed drastically reduced activity towards H2-Db in our peptide-exchange experiment, with peptide dissociation rate constants close to the value of the uncatalyzed reaction (Figure 3C,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3C and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "baedaa9b-4375-4bed-bbca-2096c8d0893f",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C59",
+      "claim": "Under peptide-rich condition, the tested TAPBPR variants differ gradually in their displacement activity in an allomorph-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the results of our exchange assays demonstrate that under peptide-rich condition, the tested TAPBPR variants differ gradually in their displacement activity in an allomorph-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from peptide exchange assays with H2-Db and HLA-A*02:01.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "79e23e22-43e6-49cf-82ac-f2af8efa2fdb",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C60",
+      "claim": "The TAPBPR\u0394SL mutant lacking the scoop loop is still able to substantially accelerate peptide dissociation from MHC I.",
+      "claim_type": "EXPLICIT",
+      "source": "But even the TAPBPR\u0394SL mutant lacking the scoop loop is still able to substantially accelerate peptide dissociation from MHC I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "f9a8740f-402c-42bc-a772-fe9f28d4c148",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C61",
+      "claim": "In the TAPBPR-MHC I crystal structure, the scoop loop binds in the F pocket region of the MHC binding groove and appears to act as a surrogate for the peptide C terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "In the TAPBPR-MHC I crystal structure, the scoop loop binds in the F pocket region of the MHC binding groove and appears to act as a surrogate for the peptide C terminus (Thomas and Tamp\u00e9, 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "bfa30167-2a40-4e50-8506-a5e390ecac34",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C62",
+      "claim": "After addition of the different TAPBPRs to H2-Db loaded with fluorescent peptide, the polarization changes diverged dramatically.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, after addition of the different TAPBPRs to H2-Db loaded with fluorescent peptide, the polarization changes, which correspond to the changes in the ratio of free to bound peptide, diverged dramatically (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "4c6bf7ca-38fc-487f-92ec-1b27284ce0fa",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C63",
+      "claim": "Peptide dissociation was most pronounced for TAPBPRwt with the native scoop loop, reaching ~ 60% peptide release from H2-Db.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptide dissociation was most pronounced for TAPBPRwt with the native scoop loop, reaching ~ 60% peptide release, whereas only ~ 12% of the peptide population was released from H2-Db by TAPBPRTsn-SL, and almost no decrease in polarization was caused by TAPBPR\u0394SL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-step peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "299dcb39-4a45-4aa9-a8bb-9e6693e1e1af",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C64",
+      "claim": "Only ~ 12% of the peptide population was released from H2-Db by TAPBPRTsn-SL.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptide dissociation was most pronounced for TAPBPRwt with the native scoop loop, reaching ~ 60% peptide release, whereas only ~ 12% of the peptide population was released from H2-Db by TAPBPRTsn-SL, and almost no decrease in polarization was caused by TAPBPR\u0394SL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-step peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "b69c038a-cc8b-468c-9724-a38534586402",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C65",
+      "claim": "Almost no decrease in polarization was caused by TAPBPR\u0394SL in the two-step peptide exchange assay with H2-Db.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptide dissociation was most pronounced for TAPBPRwt with the native scoop loop, reaching ~ 60% peptide release, whereas only ~ 12% of the peptide population was released from H2-Db by TAPBPRTsn-SL, and almost no decrease in polarization was caused by TAPBPR\u0394SL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-step peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "a55cf2a2-948c-438b-848b-6a0381ee54d7",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C66",
+      "claim": "TAPBPRTsn-SL-induced peptide dissociation from HLA-A*02:01 was significantly stronger than from H2-Db, approaching the level of peptide release induced by TAPBPRwt.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our original peptide exchange assay (Figure 3), differences between the two MHC I allomorphs were observed: In comparison to H2-Db, TAPBPRTsn-SL-induced peptide dissociation from HLA-A*02:01 was significantly stronger, approaching the level of peptide release induced by TAPBPRwt (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "1d279c07-76a3-419e-8d67-15f09b3defcf",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C67",
+      "claim": "Peptide release was peptide-dependent, as H2-Db loaded with a high-affinity peptide led to a significantly smaller decline in bound peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptide release was also peptide-dependent, as H2-Db loaded with a high-affinity peptide led to a significantly smaller decline in bound peptide (Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "6af8e6d2-516e-477e-a2da-ccd8d6b19d72",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C68",
+      "claim": "After addition of competitor peptide (2nd step), the observed dissociation rate constants were in the same range as the values determined for the one-step experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "After addition of competitor peptide (2nd step), the observed dissociation rate constants were in the same range as the values determined for the one-step experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "64a59fe7-4487-4643-8c2f-e3c482a3821c",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C69",
+      "claim": "The level of released peptide after TAPBPR addition was titratable and reached saturation at 3 \u00b5M TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the level of released peptide after TAPBPR addition was titratable and reached saturation at 3 \u00b5M TAPBPR (Figure 4C\u2013E, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 4C\u2013E and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "c0f3f7db-b7b1-4471-bf65-841ff92e99a0",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C70",
+      "claim": "Under the given conditions, TAPBPRwt was able to dissociate 70% of total H2-Db-associated peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the given conditions, TAPBPRwt was able to dissociate 70% (H2-Db) and 80% (HLA-A*02:01) of total MHC I-associated peptide, respectively (Figure 4C, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "fc67c895-7bfa-4bb1-a7f2-7c9f909a248f",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C71",
+      "claim": "Under the given conditions, TAPBPRwt was able to dissociate 80% of total HLA-A*02:01-associated peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the given conditions, TAPBPRwt was able to dissociate 70% (H2-Db) and 80% (HLA-A*02:01) of total MHC I-associated peptide, respectively (Figure 4C, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "673a38ee-403e-49ec-b274-26aed4ceff3d",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C72",
+      "claim": "The scoop loop interferes with re-binding of displaced peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the scoop loop interferes with re-binding of displaced peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing differential peptide release in the two-step assay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "f8273794-419e-4c31-bc31-3d2b37907b08",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C73",
+      "claim": "The scoop loop can only be completely dislodged from the MHC I binding pocket by a high-affinity peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "It can only be completely dislodged from the MHC I binding pocket by a high-affinity peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that high-affinity peptides can displace TAPBPR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "363f80d0-37d7-4175-8068-e3c2bc915c34",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C74",
+      "claim": "The scoop loop acts as a crucial selectivity filter during peptide editing on MHC I.",
+      "claim_type": "EXPLICIT",
+      "source": "The scoop loop thus acts as a crucial selectivity filter during peptide editing on MHC I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing the scoop loop's role in impeding peptide rebinding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "057cd4f3-4336-4fce-bbbc-5d08838fa0e7",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C75",
+      "claim": "The TAPBPR scoop loop is critically important in chaperoning intrinsically unstable empty MHC I clients in a peptide-depleted environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the TAPBPR scoop loop is indeed critically important in chaperoning intrinsically unstable empty MHC I clients in a peptide-depleted environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from SEC analyses showing reduced complex stability for scoop loop variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "91f772fb-1ff4-4e07-9ae5-d09e1cef782c",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C76",
+      "claim": "The reduced chaperone activity of TAPBPRTsn-SL is illustrated by the dramatically reduced lifetime of the TAPBPR\u0394SL complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This is illustrated by the reduced chaperone activity of TAPBPRTsn-SL, which harbors the shorter Tsn scoop loop, and by the dramatically reduced lifetime of the TAPBPR\u0394SL complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from SEC analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "bc5f2860-b5bc-4461-b8cc-6306a6c43b20",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C77",
+      "claim": "In a peptide-rich, PLC-like environment, the TAPBPRTsn-SL mutant displays the highest activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In a peptide-rich, PLC-like environment, emulated by our one-step displacement experiments, the TAPBPRTsn-SL mutant displays the highest activity, while TAPBPR\u0394SL retains the ability to displace peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from one-step peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "0a23000f-b318-401a-a105-e4f114e03e95",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C78",
+      "claim": "TAPBPR\u0394SL retains the ability to displace peptide in a peptide-rich environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In a peptide-rich, PLC-like environment, emulated by our one-step displacement experiments, the TAPBPRTsn-SL mutant displays the highest activity, while TAPBPR\u0394SL retains the ability to displace peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from one-step peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "b557fa94-8b77-49b1-ad45-6353154a0994",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C79",
+      "claim": "The observation that TAPBPR\u0394SL retains the ability to displace peptide appears to be in contrast to the study by Ilca et al. which found that TAPBPR with a mutated, but full-length scoop loop loses its ability to effectively mediate peptide dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter observation appears to be in contrast to the study by Ilca et al. which found that TAPBPR with a mutated, but full-length scoop loop loses its ability to effectively mediate peptide dissociation (Ilca et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the current study's findings and prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "f6132ede-c853-4712-83ab-15069ebfaa9c",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C80",
+      "claim": "The TAPBPR scoop loop acts as an internal peptide competitor.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to stabilizing the chaperone-MHC I complex, we demonstrate that the TAPBPR scoop loop acts as an internal peptide competitor, and thus, as a selectivity filter in the discrimination between low- and high-affinity peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-step peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "fc9f53c5-5c81-4b4e-ba24-15611abeb100",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C81",
+      "claim": "The TAPBPR scoop loop acts as a selectivity filter in the discrimination between low- and high-affinity peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to stabilizing the chaperone-MHC I complex, we demonstrate that the TAPBPR scoop loop acts as an internal peptide competitor, and thus, as a selectivity filter in the discrimination between low- and high-affinity peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-step peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "4ed7532f-24ca-4422-ae05-562bb2ac92c4",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C82",
+      "claim": "The peptide-filtering activity of the scoop loop seems to be allomorph-dependent for TAPBPRTsn-SL.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptide-filtering activity seems to be allomorph-dependent for TAPBPRTsn-SL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing different peptide release levels for H2-Db and HLA-A*02:01.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "03f8cd8d-1d0e-40e8-a6b0-7a6456c9bb1c",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C83",
+      "claim": "The Tsn scoop loop interacts more strongly with the F-pocket region of HLA-A*02:01 and is therefore able to impede peptide rebinding more efficiently than in the case of H2-Db.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current interpretation of this allomorph specificity is that the Tsn scoop loop interacts more strongly with the F-pocket region of HLA-A*02:01 and is therefore able to impede peptide rebinding more efficiently than in the case of H2-Db.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "d6a4e8e8-a190-4038-a766-90c12510c6ee",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C84",
+      "claim": "TAPBPRwt shows a strong peptide release activity towards both H2-Db and HLA-A*02:01.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TAPBPRwt shows a strong peptide release activity towards both MHC I allomorphs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-step peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "2e2afd65-aff4-46ac-abae-9c71caf231a7",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C85",
+      "claim": "The large concave surface formed by the N-terminal domain of TAPBPR mediates its initial encounter with a suboptimally-loaded MHC I, assisted by the C-terminal domain of TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "The large concave surface formed by the N-terminal domain of TAPBPR mediates its initial encounter with a suboptimally-loaded MHC I, assisted by the C-terminal domain of TAPBPR, which contacts the \u03b13 domain of the MHC I heavy chain and \u03b22m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural knowledge from crystal structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "e4d482d0-cbcd-4cde-bfb4-21a2707a3f21",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C86",
+      "claim": "The C-terminal domain of TAPBPR contacts the \u03b13 domain of the MHC I heavy chain and \u03b22m.",
+      "claim_type": "EXPLICIT",
+      "source": "The large concave surface formed by the N-terminal domain of TAPBPR mediates its initial encounter with a suboptimally-loaded MHC I, assisted by the C-terminal domain of TAPBPR, which contacts the \u03b13 domain of the MHC I heavy chain and \u03b22m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural knowledge from crystal structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "b1f118ec-5dcd-495a-8d9a-dc67206f3cdb",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C87",
+      "claim": "TAPBPR facilitates the release of low- to medium-affinity peptides primarily by widening the peptide-binding groove through the MHC I \u03b12\u20131-helix, fastening the peptide-coordinating Tyr84, distorting the floor of the binding groove, and shifting the position of \u03b22m.",
+      "claim_type": "EXPLICIT",
+      "source": "TAPBPR facilitates the release of low- to medium-affinity peptides primarily by widening the peptide-binding groove through the MHC I \u03b12\u20131-helix, fastening the peptide-coordinating Tyr84, distorting the floor of the binding groove, and shifting the position of \u03b22m (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural knowledge from crystal structures cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "ec72e6f4-3b1d-42f4-bf6a-072c3e05340f",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C88",
+      "claim": "The remodeling of MHC I by TAPBPR is made possible by the intrinsic plasticity of MHC I molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "This remodeling is made possible by the intrinsic plasticity of MHC I molecules (Bailey et al., 2015; Garstka et al., 2011; McShan et al., 2019; Natarajan et al., 2018; Thomas and Tamp\u00e9, 2017b; van Hateren et al., 2017; van Hateren et al., 2015; Wieczorek et al., 2017), and it appears to be induced primarily by structural elements of TAPBPR that lie outside the scoop loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "a89abee7-8076-4c78-9344-8caa5fcef00e",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C89",
+      "claim": "The remodeling of MHC I by TAPBPR appears to be induced primarily by structural elements of TAPBPR that lie outside the scoop loop.",
+      "claim_type": "EXPLICIT",
+      "source": "This remodeling is made possible by the intrinsic plasticity of MHC I molecules (Bailey et al., 2015; Garstka et al., 2011; McShan et al., 2019; Natarajan et al., 2018; Thomas and Tamp\u00e9, 2017b; van Hateren et al., 2017; van Hateren et al., 2015; Wieczorek et al., 2017), and it appears to be induced primarily by structural elements of TAPBPR that lie outside the scoop loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that TAPBPR\u0394SL can still catalyze peptide displacement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "a29b4639-ef5b-4716-84f6-e5d6f58701e7",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C90",
+      "claim": "The TAPBPR\u0394SL mutant lacking the scoop loop is still able to catalyze peptide displacement because the remodeling is induced primarily by structural elements outside the scoop loop.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the TAPBPR\u0394SL mutant lacking the scoop loop is still able to catalyze peptide displacement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "fdfb8ffb-8fe7-477a-9125-6b42a09ceab0",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C91",
+      "claim": "Once the suboptimal peptide has been released, the scoop loop occupies the position of the peptide C terminus in the F-pocket region.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the suboptimal peptide has been released, the scoop loop occupies the position of the peptide C terminus in the F-pocket region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure and experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "ca5489bb-0715-49bf-b099-796a894735cc",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C92",
+      "claim": "The scoop loop contributes to the stabilization of the peptide-deficient binding groove.",
+      "claim_type": "EXPLICIT",
+      "source": "The scoop loop thereby contributes to the stabilization of the peptide-deficient binding groove.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from SEC analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "90eb64a3-94ae-464a-9a17-2ac49969c99a",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C93",
+      "claim": "The scoop loop functions as a peptide selectivity filter by impeding re-binding of the replaced peptide, either through direct competition with the C terminus of the incoming replacement peptide or through an allosteric mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Our two-step peptide exchange \u2014 mimicking a peptide-depleted environment \u2014 demonstrates that the scoop loop functions at the same time as a peptide selectivity filter by impeding re-binding of the replaced peptide, either through direct competition with the C terminus of the incoming replacement peptide or through an allosteric mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-step peptide exchange assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "7b0ecd0b-3538-4a84-9a22-a4cfcd232a5c",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C94",
+      "claim": "The scoop loop contributes to the significant affinity decrease of incoming peptides for the MHC I groove in the presence of TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the scoop loop contributes to the significant affinity decrease of incoming peptides for the MHC I groove in the presence of TAPBPR (McShan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research and experimental data from the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "fc420d51-6de3-4065-a044-287b8095a0f0",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C95",
+      "claim": "Assuming a mode of direct competition, the replacement peptide would dock in the MHC I groove first with its N terminus, before it competes with the TAPBPR scoop loop over the F pocket region.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming a mode of direct competition, the replacement peptide would dock in the MHC I groove first with its N terminus, before it competes with the TAPBPR scoop loop over the F pocket region (Hafstrand et al., 2019; Thomas and Tamp\u00e9, 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model based on structural considerations and citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "01923585-6ebe-4cce-8d90-e5953c1a98ef",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C96",
+      "claim": "Negative allosteric coupling between different parts of the MHC I molecule might play a role in the final release of TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative allosteric coupling between different parts of the MHC I molecule might play a role in the final release of TAPBPR (McShan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "f657c7e8-5caf-4cf2-b303-eb4934e16225",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C97",
+      "claim": "The shorter scoop loop in Tsn suggests that its selective pressure on the replacement peptide is weaker than in TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "The shorter scoop loop in Tsn suggests that its selective pressure on the replacement peptide is weaker than in TAPBPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural comparison and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "90819fab-0ca7-4d77-ada8-afe0d8615525",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C98",
+      "claim": "Fluorescence polarization and SEC analyses show that the tapasin scoop loop in TAPBPRTsn-SL is less efficient in preventing re-binding of dissociated peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our fluorescence polarization and SEC analyses show that the tapasin scoop loop in TAPBPRTsn-SL is less efficient in preventing re-binding of dissociated peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-step peptide exchange assays and SEC analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "29347a01-d11f-446b-bae5-2801c4f3a1fc",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C99",
+      "claim": "Tsn functions within the PLC, a 'nanocompartment' characterized by an abundant and diverse supply of optimal peptides, reaching a bulk concentration of up to 16 \u00b5M before the TAP transporter is arrested by trans-inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiologically, these observations might be explained by the fact that Tsn functions within the PLC, a 'nanocompartment' characterized by an abundant and diverse supply of optimal peptides, reaching a bulk concentration of up to 16 \u00b5M before the TAP transporter is arrested by trans-inhibition (Grossmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "18842620-6199-4246-9f52-819db42333df",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C100",
+      "claim": "Tsn is supported by other PLC chaperones in stabilizing empty MHC I clients.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Tsn is supported by other PLC chaperones in stabilizing empty MHC I clients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the PLC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "1f1249ad-b5b5-4cdc-80f1-0aedab1a0b13",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C101",
+      "claim": "TAPBPR operates as a single MHC I-dedicated chaperone outside the PLC in environments where the concentration of high-affinity peptides is drastically lower.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TAPBPR operates as a single MHC I-dedicated chaperone outside the PLC in environments where the concentration of high-affinity peptides is drastically lower and MHC I clients have to be stabilized in a peptide-receptive state for extended periods of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TAPBPR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "1352b37b-30bb-4572-a9cc-e1ec854c3415",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C102",
+      "claim": "MHC I clients have to be stabilized in a peptide-receptive state for extended periods of time in the environments where TAPBPR operates.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TAPBPR operates as a single MHC I-dedicated chaperone outside the PLC in environments where the concentration of high-affinity peptides is drastically lower and MHC I clients have to be stabilized in a peptide-receptive state for extended periods of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the function and localization of TAPBPR.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "efab9bfe-db6a-4c6f-b647-76f70d499c94",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C103",
+      "claim": "Long-term stabilization of suboptimally-loaded or empty MHC I by TAPBPR allows the major ER/cis-Golgi glycoprotein folding sensor UGGT1 to re-glucosylate the MHC I molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-term stabilization of suboptimally-loaded or empty MHC I by TAPBPR also allows the major ER/cis-Golgi glycoprotein folding sensor UGGT1 (UDP-glucose:glycoprotein glucosyltransferase 1) to re-glucosylate the MHC I molecule in order to feed it back into the calnexin/calreticulin cycle and/or allow recruitment of the MHC I to the PLC (Neerincx et al., 2017; Thomas and Tamp\u00e9, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "e8b04b31-6243-471a-9495-8c9f8a244c75",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C104",
+      "claim": "Re-glucosylation of MHC I by UGGT1 feeds it back into the calnexin/calreticulin cycle and/or allows recruitment of the MHC I to the PLC.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-term stabilization of suboptimally-loaded or empty MHC I by TAPBPR also allows the major ER/cis-Golgi glycoprotein folding sensor UGGT1 (UDP-glucose:glycoprotein glucosyltransferase 1) to re-glucosylate the MHC I molecule in order to feed it back into the calnexin/calreticulin cycle and/or allow recruitment of the MHC I to the PLC (Neerincx et al., 2017; Thomas and Tamp\u00e9, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "82dad962-32e7-49f4-b6b8-a114dcd23f19",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C105",
+      "claim": "The scoop loop is evolutionarily fine-tuned to enable Tsn and TAPBPR to accomplish their dual function as chaperone and proofreader in the specific subcellular location they operate in.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the evidence provided by our study indicates that the scoop loop is evolutionarily fine-tuned to enable Tsn and TAPBPR to accomplish their dual function as chaperone and proofreader in the specific subcellular location they operate in.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing differential scoop loop functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "9090fe64-9947-4971-9acb-97a3bc50ab45",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C106",
+      "claim": "By serving both as a stabilizing element and as selectivity filter in TAPBPR, the scoop loop influences peptide editing.",
+      "claim_type": "EXPLICIT",
+      "source": "By serving both as a stabilizing element and as selectivity filter in TAPBPR, the scoop loop influences peptide editing and impacts the repertoire of MHC I-associated epitopes presented on the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "9faee971-ceb0-4281-8a60-a357108c42ad",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C107",
+      "claim": "The scoop loop impacts the repertoire of MHC I-associated epitopes presented on the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "By serving both as a stabilizing element and as selectivity filter in TAPBPR, the scoop loop influences peptide editing and impacts the repertoire of MHC I-associated epitopes presented on the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing the scoop loop's role in peptide selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "7d857ff1-8923-4ea3-bd2f-1841844ff357",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C108",
+      "claim": "HLA-A*02:01 is the major MHC I allomorph in the Caucasian population and found in more than 50% of the global population.",
+      "claim_type": "EXPLICIT",
+      "source": "HLA-A*02:01, the major MHC I allomorph in the Caucasian population and found in more than 50% of the global population, presents a diverse spectrum of immunodominant autoimmune, viral, and tumor epitopes and is therefore medically highly relevant (Boucherma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "08786795-e7fa-4003-95a5-61ec143ab62c",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C109",
+      "claim": "HLA-A*02:01 presents a diverse spectrum of immunodominant autoimmune, viral, and tumor epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "HLA-A*02:01, the major MHC I allomorph in the Caucasian population and found in more than 50% of the global population, presents a diverse spectrum of immunodominant autoimmune, viral, and tumor epitopes and is therefore medically highly relevant (Boucherma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "d633e461-6d5d-41e0-a678-d579d1f2aacf",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C110",
+      "claim": "HLA-A*02:01 is medically highly relevant.",
+      "claim_type": "EXPLICIT",
+      "source": "HLA-A*02:01, the major MHC I allomorph in the Caucasian population and found in more than 50% of the global population, presents a diverse spectrum of immunodominant autoimmune, viral, and tumor epitopes and is therefore medically highly relevant (Boucherma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the prevalence and epitope presentation characteristics of HLA-A*02:01.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "34e0424d-79cf-4759-9389-7d1fdca7fbe5",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C111",
+      "claim": "H2-Db and HLA-A*02:01 are known to interact with TAPBPR.",
+      "claim_type": "EXPLICIT",
+      "source": "As MHC I chaperone clients, we chose mouse H2-Db and human HLA-A*02:01, which are known to interact with TAPBPR (Hermann et al., 2013; Ilca et al., 2019; Morozov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "c3d030ba-da0d-4f2d-9ca4-4868d939dedc",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C112",
+      "claim": "During peptide exchange, MHC I molecules go through a peptide-free high-energy intermediate state after peptide release and before re-entry of a new peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "During peptide exchange, MHC I molecules go through a peptide-free high-energy intermediate state after peptide release and before re-entry of a new peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MHC I peptide exchange.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "6127c590-295a-4d3a-931a-1409e5aad4e1",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C113",
+      "claim": "A hallmark of peptide editors like TAPBPR is their ability to recognize and chaperone the peptide-free intermediate until it is located in a peptide-rich environment where a high-affinity peptide ligand can enter the MHC I binding groove.",
+      "claim_type": "EXPLICIT",
+      "source": "A hallmark of peptide editors like TAPBPR is their ability to recognize and chaperone this intermediate until it is located in a peptide-rich environment where a high-affinity peptide ligand can enter the MHC I binding groove (Thomas and Tamp\u00e9, 2019; Thomas and Tamp\u00e9, 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "b0985633-16cc-44c5-9174-64f66b68306f",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C114",
+      "claim": "The residue in TAPBPR (E105) corresponding to the mutated residue in Tsn-TN3 forms a hydrogen bond with the swung-out Y84 of the MHC heavy chain.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the TAPBPR-MHC I crystal structures (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017a), the residue in TAPBPR (E105) corresponding to the mutated residue in Tsn-TN3 forms a hydrogen bond with the swung-out Y84 of the MHC heavy chain, which is involved in coordinating the C-terminus of the peptide in liganded MHC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on crystal structures cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "39370a24-ec11-4f8d-a1ca-bb9042c64a37",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C115",
+      "claim": "Y84 of the MHC heavy chain is involved in coordinating the C-terminus of the peptide in liganded MHC.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the TAPBPR-MHC I crystal structures (Jiang et al., 2017; Thomas and Tamp\u00e9, 2017a), the residue in TAPBPR (E105) corresponding to the mutated residue in Tsn-TN3 forms a hydrogen bond with the swung-out Y84 of the MHC heavy chain, which is involved in coordinating the C-terminus of the peptide in liganded MHC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MHC I structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "3d654e86-c6d1-46a7-9639-74711a3f5dd9",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C116",
+      "claim": "Two of the mutated residues in TN6 (R210 and Q212) are part of the jack hairpin of TAPBPR and form several interactions with MHC I heavy-chain residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the mutated residues in TN6 (R210 and Q212) are part of the jack hairpin of TAPBPR and form several interactions with MHC I heavy-chain residues, while Q275 lies in the interface with the \u03b12\u20131 helix and the \u03b28 sheet in the floor of the MHC I binding groove.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "9bd066ac-e6e0-43bf-af6d-bfc7bee21438",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "claim_id": "C117",
+      "claim": "Q275 in TN6 lies in the interface with the \u03b12\u20131 helix and the \u03b28 sheet in the floor of the MHC I binding groove.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the mutated residues in TN6 (R210 and Q212) are part of the jack hairpin of TAPBPR and form several interactions with MHC I heavy-chain residues, while Q275 lies in the interface with the \u03b12\u20131 helix and the \u03b28 sheet in the floor of the MHC I binding groove.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "22f24aba-5496-4866-982b-38890a0bf460",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context that adaptive immunity depends on MHC I molecules presenting peptides to CD8+ T cells, and that peptide editing by tapasin and TAPBPR is crucial for selecting high-affinity epitopes important for immunosurveillance and T cell priming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C2, C9-C13) represent well-established immunological knowledge supported by extensive prior literature. The claims are appropriately cited and provide necessary background context for the experimental work. No novel experimental validation is required for these foundational concepts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "fd5ca0e7-6167-4e02-b4cd-5487a61a0921",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript describes the distinct subcellular localizations and functional environments of tapasin (ER-restricted, PLC-associated, peptide-rich) versus TAPBPR (PLC-independent, also in peptide-depleted cis-Golgi).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 accurately describe established knowledge about the PLC, TAP transporter, ERAP aminopeptidases, and the differential localization of tapasin versus TAPBPR. These are well-supported by appropriate citations to prior structural and functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "6634a4b3-5574-4ea2-bc5f-ebb98137d073",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Prior structural studies revealed that TAPBPR stabilizes the MHC I peptide-binding groove in a widened conformation and contains a scoop loop structure located in the F-pocket region that is incompatible with peptide binding and longer than the corresponding region in tapasin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C33 accurately summarize prior structural work (cryo-EM of PLC, crystal structures of TAPBPR-MHC I complexes) with appropriate citations. The structural features described (groove widening, scoop loop location, F-pocket occupation) are well-established from published structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "abd31649-247e-488f-a8d4-4a18148f0555",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prior work proposed that the scoop loop might function as a peptide C-terminus surrogate to stabilize empty MHC I and allow only high-affinity peptides to re-enter the binding groove.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 appropriately characterize these as hypotheses from prior work (Thomas and Tamp\u00e9, 2017a). The speculative nature is clearly indicated, and these hypotheses provide the motivation for the current experimental investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "3b952df6-84f9-42d8-b0f6-150edc56ec02",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A prior study by Ilca et al. investigated TAPBPR scoop-loop variants and found that a specific leucine residue facilitates peptide displacement on certain MHC I allomorphs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 accurately cite prior work by Ilca et al. (2018) that investigated scoop loop function using different methodologies (immunopeptidomics and cell-based assays). This provides important context for the current in vitro biochemical study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "6ed4ffca-b621-4c3b-ad9b-d178a28be1e3",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The scoop loop is crucial for stabilizing the TAPBPR-MHC I complex in peptide-depleted environments, as demonstrated by SEC analyses showing that scoop loop variants (TAPBPRTsn-SL and TAPBPR\u0394SL) form less stable complexes with peptide-free MHC I compared to wildtype TAPBPR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C44-C47, C75-C76 are well-supported by SEC data in Figures 2A-C and Figure 2\u2014figure supplement 1. The experiments show reduced complex formation (~40% for TAPBPRTsn-SL, ~90% for TAPBPR\u0394SL) and kinetic instability upon re-analysis. Controls demonstrate wildtype complex stability and appropriate dissociation with high-affinity peptide. The experimental design is sound and the conclusion is justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In peptide-rich conditions (one-step exchange assay), all TAPBPR variants including TAPBPR\u0394SL retain substantial peptide displacement activity, with TAPBPRTsn-SL showing the highest activity, particularly toward HLA-A*02:01, demonstrating allomorph-dependent and scoop loop-dependent differences in catalytic efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C60, C77-C78 are supported by fluorescence polarization data in Figures 3B-E showing rate constants for peptide dissociation. The data demonstrate that TAPBPR\u0394SL retains ~4-fold acceleration (vs. ~5-fold for wildtype) for H2-Db and similar activity for HLA-A*02:01. TAPBPRTsn-SL shows enhanced activity. The experiments include appropriate controls (uncatalyzed reactions, concentration dependence, high-affinity peptide substrate) and statistical analysis. The conclusion that scoop loop is not essential for displacement activity in peptide-rich conditions is justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "36de5149-bc73-428c-946e-df4d38206915",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Interface mutants TN3-Ala and TN6 show drastically reduced peptide displacement activity, validating the assay system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by data in Figures 3C and 3F showing that these mutants have rate constants near the uncatalyzed reaction. This provides important validation that the observed catalytic effects require proper TAPBPR-MHC I interaction, strengthening confidence in the scoop loop variant results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In peptide-depleted conditions (two-step exchange assay), the scoop loop acts as an internal peptide competitor that impedes rebinding of displaced peptide, with wildtype TAPBPR releasing ~60-70% of peptide from H2-Db and ~80% from HLA-A*02:01, while TAPBPRTsn-SL releases only ~12% from H2-Db (but more from HLA-A*02:01) and TAPBPR\u0394SL releases almost no peptide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C74, C80-C81, C93 are strongly supported by the two-step fluorescence polarization experiments in Figures 4B-E and Figure 4\u2014figure supplement 1. The experimental design cleverly separates peptide displacement from rebinding by adding TAPBPR first without competitor peptide. The dramatic differences in peptide release (60% for wildtype vs. 12% for TAPBPRTsn-SL vs. <1% for TAPBPR\u0394SL with H2-Db) provide compelling evidence for the scoop loop's role in preventing peptide rebinding. Titration experiments and allomorph-dependent effects strengthen the conclusions. This represents a key mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "752f89dd-5675-41d6-928f-fcb39ed167ef",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The observation that TAPBPR\u0394SL retains peptide displacement activity appears to contrast with findings by Ilca et al. that TAPBPR with a mutated full-length scoop loop loses displacement activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 appropriately notes an apparent discrepancy between the current findings and prior work. The authors acknowledge this difference, which could reflect methodological differences (in vitro biochemical vs. cell-based/immunopeptidomics approaches) or the distinction between deletion vs. point mutation of the scoop loop. This honest assessment strengthens the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "7a8a417f-bc08-4172-8b4e-170f16efb921",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The peptide-filtering activity of the scoop loop shows allomorph-dependence, with the tapasin scoop loop in TAPBPRTsn-SL being less efficient at preventing peptide rebinding for H2-Db but more efficient for HLA-A*02:01, possibly due to differential interactions with the F-pocket region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84, C97-C98 are supported by comparing results across H2-Db and HLA-A*02:01 in both one-step and two-step assays (Figures 3, 4, and supplements). The allomorph-specific differences are clearly demonstrated. However, the mechanistic interpretation (C83) regarding differential F-pocket interactions is appropriately characterized as speculative, as no direct structural evidence is provided. The conclusion of allomorph-dependence is solid, but the mechanism remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "3c8317bd-71bd-4f3a-bd43-11adf7dcade6",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript proposes a mechanistic model where TAPBPR initially engages MHC I through its N- and C-terminal domains, facilitates peptide release primarily through structural elements outside the scoop loop (explaining TAPBPR\u0394SL activity), and then the scoop loop occupies the F-pocket to stabilize empty MHC I and filter incoming peptides through direct competition or allosteric mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C96 present a mechanistic model integrating current results with prior structural knowledge. The model is well-supported by the experimental data showing that TAPBPR\u0394SL retains displacement activity (supporting C89-C90) while losing stabilization and peptide-filtering functions (supporting C91-C92). The proposed mechanisms for peptide filtering (direct competition vs. allostery, C93-C96) are appropriately presented as possibilities rather than definitive conclusions. The model is logical and consistent with available evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "147b59b5-8844-4579-bcfb-452b1571ac4f",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The differential scoop loop lengths in tapasin versus TAPBPR are evolutionarily fine-tuned for their distinct functional environments: tapasin operates in the peptide-rich PLC with support from other chaperones, while TAPBPR operates independently in peptide-depleted environments requiring extended MHC I stabilization and stricter peptide selectivity, with TAPBPR-stabilized MHC I potentially being re-glucosylated by UGGT1 for recycling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C105 present a physiologically-grounded interpretation of the experimental findings. The functional logic is sound: the longer TAPBPR scoop loop provides stronger stabilization and selectivity appropriate for peptide-depleted environments, while the shorter tapasin loop is sufficient in the peptide-rich PLC. The connection to UGGT1-mediated recycling (C103-C104) is appropriately cited to prior work. This represents a well-reasoned synthesis of the experimental results with biological context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "d4f8f6ab-5360-48f9-bf6d-96ee3a295b36",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The scoop loop contributes substantially to both MHC I-chaperone complex stability and peptide editing, functioning as an internal peptide surrogate that stabilizes empty MHC I in peptide-depleted environments, impedes peptide rebinding, acts as a selectivity filter for high-affinity peptides, and thereby influences the repertoire of presented epitopes and hierarchical immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8, C38-C40, C106-C107 represent the main conclusions of the study. These are well-supported by the combined evidence from SEC analyses (complex stability), one-step exchange assays (contribution to displacement), and two-step exchange assays (peptide rebinding inhibition). The claim about influencing epitope repertoire and immune hierarchy (C8, C40, C107) is a reasonable inference from the demonstrated peptide selectivity function, though direct in vivo evidence is not provided. The conclusions are appropriately stated and justified by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "030a0a2c-9f4c-49d8-b068-efe8a721997b",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "HLA-A*02:01 is a medically relevant MHC I allomorph found in >50% of the global population that presents diverse immunodominant epitopes, and both H2-Db and HLA-A*02:01 are known TAPBPR clients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C111 provide appropriate justification for the choice of MHC I allomorphs used in the study. The prevalence and medical relevance of HLA-A*02:01 is well-established and properly cited. The interaction of both allomorphs with TAPBPR is documented in prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "85a8dcd0-056a-4b4c-8a12-c397be00a2ef",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The manuscript describes established mechanistic features of peptide exchange (peptide-free intermediate state) and provides structural context for the TN3-Ala and TN6 interface mutants based on crystal structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C117 accurately describe established knowledge about MHC I peptide exchange and provide structural rationale for the control mutants used in the study. The structural details are appropriately cited and help interpret the functional data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    },
+    {
+      "id": "0029cad9-7000-44be-af55-ad84684eef62",
+      "content_id": "0b0d437e-70c4-4fee-b79a-894d1bd63ed3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior work ascribed an important catalytic role to the scoop loop, but its exact function remained elusive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 accurately characterizes the state of knowledge prior to this study, providing clear motivation for the experimental investigation. This is appropriately cited and sets up the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:49:40.329532Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d4b09707-6699-4671-8254-6c68749b2b95",
+      "result_id": "22f24aba-5496-4866-982b-38890a0bf460"
+    },
+    {
+      "claim_id": "94e69afb-7824-4958-afac-d42fb0604a47",
+      "result_id": "22f24aba-5496-4866-982b-38890a0bf460"
+    },
+    {
+      "claim_id": "5337149a-9778-4b1b-aad7-f4bdb05686e1",
+      "result_id": "22f24aba-5496-4866-982b-38890a0bf460"
+    },
+    {
+      "claim_id": "170a1231-afd0-42f2-83af-67f4ec6537c9",
+      "result_id": "22f24aba-5496-4866-982b-38890a0bf460"
+    },
+    {
+      "claim_id": "872a01d4-a059-4d3c-bf5a-efeefd58bff1",
+      "result_id": "22f24aba-5496-4866-982b-38890a0bf460"
+    },
+    {
+      "claim_id": "1c42c674-53ff-4b85-9d90-bb7c2019e396",
+      "result_id": "22f24aba-5496-4866-982b-38890a0bf460"
+    },
+    {
+      "claim_id": "657876ad-8ea9-4035-8340-b257b31f25e2",
+      "result_id": "22f24aba-5496-4866-982b-38890a0bf460"
+    },
+    {
+      "claim_id": "14354105-2d6f-4539-8f80-e82ef9e35b4c",
+      "result_id": "fd5ca0e7-6167-4e02-b4cd-5487a61a0921"
+    },
+    {
+      "claim_id": "b1777185-cefa-4c70-8f86-3c909a683a56",
+      "result_id": "fd5ca0e7-6167-4e02-b4cd-5487a61a0921"
+    },
+    {
+      "claim_id": "0ec948c9-6768-4b04-a6b3-5ccf3f340b81",
+      "result_id": "fd5ca0e7-6167-4e02-b4cd-5487a61a0921"
+    },
+    {
+      "claim_id": "9ac6a2b6-2b9d-416c-874d-cb67c11d433a",
+      "result_id": "fd5ca0e7-6167-4e02-b4cd-5487a61a0921"
+    },
+    {
+      "claim_id": "c8c5080f-dc19-4580-8f0f-d60d94850d6d",
+      "result_id": "fd5ca0e7-6167-4e02-b4cd-5487a61a0921"
+    },
+    {
+      "claim_id": "0ff26dc1-81a2-44c6-ad70-c974df1d9a8f",
+      "result_id": "fd5ca0e7-6167-4e02-b4cd-5487a61a0921"
+    },
+    {
+      "claim_id": "f249c228-9a9a-416c-b217-154ec058b810",
+      "result_id": "fd5ca0e7-6167-4e02-b4cd-5487a61a0921"
+    },
+    {
+      "claim_id": "fe8ae295-9868-4c19-a935-14431172270b",
+      "result_id": "fd5ca0e7-6167-4e02-b4cd-5487a61a0921"
+    },
+    {
+      "claim_id": "20bd3815-ac95-49e9-9a82-e8a39df9684a",
+      "result_id": "6634a4b3-5574-4ea2-bc5f-ebb98137d073"
+    },
+    {
+      "claim_id": "bbc166c4-80d7-4c31-aacd-76139ebeb0f7",
+      "result_id": "6634a4b3-5574-4ea2-bc5f-ebb98137d073"
+    },
+    {
+      "claim_id": "e2d83ba5-7085-4341-a305-e5728c41f6c6",
+      "result_id": "6634a4b3-5574-4ea2-bc5f-ebb98137d073"
+    },
+    {
+      "claim_id": "6bd28657-aad3-4f84-b73c-3fe7ed249c87",
+      "result_id": "6634a4b3-5574-4ea2-bc5f-ebb98137d073"
+    },
+    {
+      "claim_id": "ac078dcb-75c4-485e-a316-1d5fb8831a4b",
+      "result_id": "6634a4b3-5574-4ea2-bc5f-ebb98137d073"
+    },
+    {
+      "claim_id": "6cdc325c-baa9-48fa-b852-3c387627bb6a",
+      "result_id": "6634a4b3-5574-4ea2-bc5f-ebb98137d073"
+    },
+    {
+      "claim_id": "9fe47b85-0de0-470b-a57a-4162d0429157",
+      "result_id": "6634a4b3-5574-4ea2-bc5f-ebb98137d073"
+    },
+    {
+      "claim_id": "781ca25e-bf0b-47c5-ae10-6a4c2573ec3b",
+      "result_id": "6634a4b3-5574-4ea2-bc5f-ebb98137d073"
+    },
+    {
+      "claim_id": "56ca393a-4d12-4840-9bba-cd5d36441685",
+      "result_id": "6634a4b3-5574-4ea2-bc5f-ebb98137d073"
+    },
+    {
+      "claim_id": "6e8425ad-79cc-4876-91e5-a947c37aa636",
+      "result_id": "6634a4b3-5574-4ea2-bc5f-ebb98137d073"
+    },
+    {
+      "claim_id": "c92e3ae7-99e9-427c-b7f3-8d5c9c3b2aae",
+      "result_id": "6634a4b3-5574-4ea2-bc5f-ebb98137d073"
+    },
+    {
+      "claim_id": "cded13b6-e067-4b9b-b1f4-e398c82bb961",
+      "result_id": "6634a4b3-5574-4ea2-bc5f-ebb98137d073"
+    },
+    {
+      "claim_id": "b26d221c-2267-4aa1-96a0-280d55863f3a",
+      "result_id": "abd31649-247e-488f-a8d4-4a18148f0555"
+    },
+    {
+      "claim_id": "fd181bc4-14d0-48d8-a705-4e963d3b95a8",
+      "result_id": "abd31649-247e-488f-a8d4-4a18148f0555"
+    },
+    {
+      "claim_id": "29eba1b4-c748-49e7-ac39-b937c31f0955",
+      "result_id": "3b952df6-84f9-42d8-b0f6-150edc56ec02"
+    },
+    {
+      "claim_id": "5264c1a4-227a-42b2-9e5b-23b13e12ad8c",
+      "result_id": "3b952df6-84f9-42d8-b0f6-150edc56ec02"
+    },
+    {
+      "claim_id": "8e09703b-0419-4e1e-a271-f0a0bdce6243",
+      "result_id": "6ed4ffca-b621-4c3b-ad9b-d178a28be1e3"
+    },
+    {
+      "claim_id": "a3d4f80e-dc96-4cc1-95a1-21197d12ec3f",
+      "result_id": "6ed4ffca-b621-4c3b-ad9b-d178a28be1e3"
+    },
+    {
+      "claim_id": "3a1512bd-2147-4426-80ef-98101047d8c4",
+      "result_id": "6ed4ffca-b621-4c3b-ad9b-d178a28be1e3"
+    },
+    {
+      "claim_id": "fb67b25a-3993-4b0b-9bbf-2a7e029b63b6",
+      "result_id": "6ed4ffca-b621-4c3b-ad9b-d178a28be1e3"
+    },
+    {
+      "claim_id": "1cd53ec5-1ec5-4e4b-a376-f5ad078c08e4",
+      "result_id": "6ed4ffca-b621-4c3b-ad9b-d178a28be1e3"
+    },
+    {
+      "claim_id": "057cd4f3-4336-4fce-bbbc-5d08838fa0e7",
+      "result_id": "6ed4ffca-b621-4c3b-ad9b-d178a28be1e3"
+    },
+    {
+      "claim_id": "91f772fb-1ff4-4e07-9ae5-d09e1cef782c",
+      "result_id": "6ed4ffca-b621-4c3b-ad9b-d178a28be1e3"
+    },
+    {
+      "claim_id": "91ede8da-cad8-46ac-8613-d9ded4750862",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "20f5dd63-8ac3-4585-ae68-c082e04501e9",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "bff2bc3b-0c83-4da4-a3d2-bd8efcc093f9",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "d7e3c829-6dbc-4032-a622-2bc2273b08a5",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "6744d7ac-3854-44f7-a0b3-72aa969f757b",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "3da2eb63-9cd3-4971-9c94-224360eb3efa",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "442e37b9-e6ff-420c-b2b6-8d009364705a",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "339da474-e371-4424-8dd3-9d54ffcfc3ab",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "35ee12a3-72de-410f-b158-d456383e16ec",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "39065b2d-7e4b-4d42-a6ce-ece016d81928",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "baedaa9b-4375-4bed-bbca-2096c8d0893f",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "79e23e22-43e6-49cf-82ac-f2af8efa2fdb",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "bc5f2860-b5bc-4461-b8cc-6306a6c43b20",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "0a23000f-b318-401a-a105-e4f114e03e95",
+      "result_id": "4dbebc99-8e44-4efc-ae13-1123f45e57dd"
+    },
+    {
+      "claim_id": "7d939054-f7ec-4868-8843-d316083e6ecf",
+      "result_id": "36de5149-bc73-428c-946e-df4d38206915"
+    },
+    {
+      "claim_id": "bfa30167-2a40-4e50-8506-a5e390ecac34",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "4c6bf7ca-38fc-487f-92ec-1b27284ce0fa",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "299dcb39-4a45-4aa9-a8bb-9e6693e1e1af",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "b69c038a-cc8b-468c-9724-a38534586402",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "a55cf2a2-948c-438b-848b-6a0381ee54d7",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "1d279c07-76a3-419e-8d67-15f09b3defcf",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "6af8e6d2-516e-477e-a2da-ccd8d6b19d72",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "64a59fe7-4487-4643-8c2f-e3c482a3821c",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "c0f3f7db-b7b1-4471-bf65-841ff92e99a0",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "fc67c895-7bfa-4bb1-a7f2-7c9f909a248f",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "673a38ee-403e-49ec-b274-26aed4ceff3d",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "f8273794-419e-4c31-bc31-3d2b37907b08",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "363f80d0-37d7-4175-8068-e3c2bc915c34",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "f6132ede-c853-4712-83ab-15069ebfaa9c",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "fc9f53c5-5c81-4b4e-ba24-15611abeb100",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "90eb64a3-94ae-464a-9a17-2ac49969c99a",
+      "result_id": "06a3cbbe-c9cd-4880-bdc7-b4359fd4fb39"
+    },
+    {
+      "claim_id": "b557fa94-8b77-49b1-ad45-6353154a0994",
+      "result_id": "752f89dd-5675-41d6-928f-fcb39ed167ef"
+    },
+    {
+      "claim_id": "4ed7532f-24ca-4422-ae05-562bb2ac92c4",
+      "result_id": "7a8a417f-bc08-4172-8b4e-170f16efb921"
+    },
+    {
+      "claim_id": "03f8cd8d-1d0e-40e8-a6b0-7a6456c9bb1c",
+      "result_id": "7a8a417f-bc08-4172-8b4e-170f16efb921"
+    },
+    {
+      "claim_id": "d6a4e8e8-a190-4038-a766-90c12510c6ee",
+      "result_id": "7a8a417f-bc08-4172-8b4e-170f16efb921"
+    },
+    {
+      "claim_id": "f657c7e8-5caf-4cf2-b303-eb4934e16225",
+      "result_id": "7a8a417f-bc08-4172-8b4e-170f16efb921"
+    },
+    {
+      "claim_id": "90819fab-0ca7-4d77-ada8-afe0d8615525",
+      "result_id": "7a8a417f-bc08-4172-8b4e-170f16efb921"
+    },
+    {
+      "claim_id": "2e2afd65-aff4-46ac-abae-9c71caf231a7",
+      "result_id": "3c8317bd-71bd-4f3a-bd43-11adf7dcade6"
+    },
+    {
+      "claim_id": "e4d482d0-cbcd-4cde-bfb4-21a2707a3f21",
+      "result_id": "3c8317bd-71bd-4f3a-bd43-11adf7dcade6"
+    },
+    {
+      "claim_id": "b1f118ec-5dcd-495a-8d9a-dc67206f3cdb",
+      "result_id": "3c8317bd-71bd-4f3a-bd43-11adf7dcade6"
+    },
+    {
+      "claim_id": "ec72e6f4-3b1d-42f4-bf6a-072c3e05340f",
+      "result_id": "3c8317bd-71bd-4f3a-bd43-11adf7dcade6"
+    },
+    {
+      "claim_id": "a89abee7-8076-4c78-9344-8caa5fcef00e",
+      "result_id": "3c8317bd-71bd-4f3a-bd43-11adf7dcade6"
+    },
+    {
+      "claim_id": "a29b4639-ef5b-4716-84f6-e5d6f58701e7",
+      "result_id": "3c8317bd-71bd-4f3a-bd43-11adf7dcade6"
+    },
+    {
+      "claim_id": "fdfb8ffb-8fe7-477a-9125-6b42a09ceab0",
+      "result_id": "3c8317bd-71bd-4f3a-bd43-11adf7dcade6"
+    },
+    {
+      "claim_id": "ca5489bb-0715-49bf-b099-796a894735cc",
+      "result_id": "3c8317bd-71bd-4f3a-bd43-11adf7dcade6"
+    },
+    {
+      "claim_id": "7b0ecd0b-3538-4a84-9a22-a4cfcd232a5c",
+      "result_id": "3c8317bd-71bd-4f3a-bd43-11adf7dcade6"
+    },
+    {
+      "claim_id": "fc420d51-6de3-4065-a044-287b8095a0f0",
+      "result_id": "3c8317bd-71bd-4f3a-bd43-11adf7dcade6"
+    },
+    {
+      "claim_id": "01923585-6ebe-4cce-8d90-e5953c1a98ef",
+      "result_id": "3c8317bd-71bd-4f3a-bd43-11adf7dcade6"
+    },
+    {
+      "claim_id": "29347a01-d11f-446b-bae5-2801c4f3a1fc",
+      "result_id": "147b59b5-8844-4579-bcfb-452b1571ac4f"
+    },
+    {
+      "claim_id": "18842620-6199-4246-9f52-819db42333df",
+      "result_id": "147b59b5-8844-4579-bcfb-452b1571ac4f"
+    },
+    {
+      "claim_id": "1f1249ad-b5b5-4cdc-80f1-0aedab1a0b13",
+      "result_id": "147b59b5-8844-4579-bcfb-452b1571ac4f"
+    },
+    {
+      "claim_id": "1352b37b-30bb-4572-a9cc-e1ec854c3415",
+      "result_id": "147b59b5-8844-4579-bcfb-452b1571ac4f"
+    },
+    {
+      "claim_id": "efab9bfe-db6a-4c6f-b647-76f70d499c94",
+      "result_id": "147b59b5-8844-4579-bcfb-452b1571ac4f"
+    },
+    {
+      "claim_id": "e8b04b31-6243-471a-9495-8c9f8a244c75",
+      "result_id": "147b59b5-8844-4579-bcfb-452b1571ac4f"
+    },
+    {
+      "claim_id": "82dad962-32e7-49f4-b6b8-a114dcd23f19",
+      "result_id": "147b59b5-8844-4579-bcfb-452b1571ac4f"
+    },
+    {
+      "claim_id": "54cf8d80-62b7-4536-819e-b4fbf9bda5a2",
+      "result_id": "d4f8f6ab-5360-48f9-bf6d-96ee3a295b36"
+    },
+    {
+      "claim_id": "ec0cf144-9276-4243-8430-55e06c6b0ff9",
+      "result_id": "d4f8f6ab-5360-48f9-bf6d-96ee3a295b36"
+    },
+    {
+      "claim_id": "ce42bc6a-a044-4faa-ab89-e59d381f660b",
+      "result_id": "d4f8f6ab-5360-48f9-bf6d-96ee3a295b36"
+    },
+    {
+      "claim_id": "92ab2ce1-00ab-4890-930d-c6408872cc53",
+      "result_id": "d4f8f6ab-5360-48f9-bf6d-96ee3a295b36"
+    },
+    {
+      "claim_id": "3adc544c-839c-4100-b884-593747b11ee6",
+      "result_id": "d4f8f6ab-5360-48f9-bf6d-96ee3a295b36"
+    },
+    {
+      "claim_id": "84a8c6ab-68b2-4b93-8e67-bbe8c0012b52",
+      "result_id": "d4f8f6ab-5360-48f9-bf6d-96ee3a295b36"
+    },
+    {
+      "claim_id": "b48b9cfe-efe3-42bc-800b-731a875de555",
+      "result_id": "d4f8f6ab-5360-48f9-bf6d-96ee3a295b36"
+    },
+    {
+      "claim_id": "53abfb5b-1d6e-45cb-b385-f133cf956622",
+      "result_id": "d4f8f6ab-5360-48f9-bf6d-96ee3a295b36"
+    },
+    {
+      "claim_id": "9090fe64-9947-4971-9acb-97a3bc50ab45",
+      "result_id": "d4f8f6ab-5360-48f9-bf6d-96ee3a295b36"
+    },
+    {
+      "claim_id": "9faee971-ceb0-4281-8a60-a357108c42ad",
+      "result_id": "d4f8f6ab-5360-48f9-bf6d-96ee3a295b36"
+    },
+    {
+      "claim_id": "7d857ff1-8923-4ea3-bd2f-1841844ff357",
+      "result_id": "030a0a2c-9f4c-49d8-b068-efe8a721997b"
+    },
+    {
+      "claim_id": "08786795-e7fa-4003-95a5-61ec143ab62c",
+      "result_id": "030a0a2c-9f4c-49d8-b068-efe8a721997b"
+    },
+    {
+      "claim_id": "d633e461-6d5d-41e0-a678-d579d1f2aacf",
+      "result_id": "030a0a2c-9f4c-49d8-b068-efe8a721997b"
+    },
+    {
+      "claim_id": "34e0424d-79cf-4759-9389-7d1fdca7fbe5",
+      "result_id": "030a0a2c-9f4c-49d8-b068-efe8a721997b"
+    },
+    {
+      "claim_id": "c3d030ba-da0d-4f2d-9ca4-4868d939dedc",
+      "result_id": "85a8dcd0-056a-4b4c-8a12-c397be00a2ef"
+    },
+    {
+      "claim_id": "6127c590-295a-4d3a-931a-1409e5aad4e1",
+      "result_id": "85a8dcd0-056a-4b4c-8a12-c397be00a2ef"
+    },
+    {
+      "claim_id": "b0985633-16cc-44c5-9174-64f66b68306f",
+      "result_id": "85a8dcd0-056a-4b4c-8a12-c397be00a2ef"
+    },
+    {
+      "claim_id": "39370a24-ec11-4f8d-a1ca-bb9042c64a37",
+      "result_id": "85a8dcd0-056a-4b4c-8a12-c397be00a2ef"
+    },
+    {
+      "claim_id": "3d654e86-c6d1-46a7-9639-74711a3f5dd9",
+      "result_id": "85a8dcd0-056a-4b4c-8a12-c397be00a2ef"
+    },
+    {
+      "claim_id": "9bd066ac-e6e0-43bf-af6d-bfc7bee21438",
+      "result_id": "85a8dcd0-056a-4b4c-8a12-c397be00a2ef"
+    },
+    {
+      "claim_id": "f950cc89-030a-4fbc-9daa-979c42a5539e",
+      "result_id": "0029cad9-7000-44be-af55-ad84684eef62"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,177 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C31",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C60",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The crystal structure of near full-length Mot1 from Chaetomium thermophilum (residues 1-1836, lacking 50 C-terminal amino acids and containing E1434Q mutation) was determined to 3.2 \u00c5 resolution by Se-SAD. The structure reveals that Mot1 adopts a ring-like architecture in which the N-terminal HEAT repeat domain (16 HEAT repeats) forms a horseshoe that is closed by the C-terminal ATPase domain, with lobe 1 contacting the C-terminus of Mot1NTD via extensive hydrophobic interactions (2500 \u00c5\u00b2) and lobe 2 binding in the cleft between lobe 1 and HR1/2 via hydrogen bonds and salt bridges (~1900 \u00c5\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural claims are well-supported by crystallographic data at 3.2 \u00c5 resolution (C36, C105) with appropriate statistics reported in Table 1. The architectural features described (C7, C38, C60) are directly observable in the crystal structure and shown in Figure 1B. The specific interface measurements (C49, C53) and domain interactions (C48, C50, C52) are derived from structural analysis of the deposited coordinates (C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C51"
+    ],
+    "result": "Structural comparison reveals that CtMot1NTD consists of 16 HEAT repeats with insertions at four sites and is architecturally similar to the smaller E. cuniculi orthologue (EcMot1NTD), with differences in helix length rather than number. The ring architecture imposes constraints that explain the conservation of HEAT repeat number among Mot1 proteins across evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison between CtMot1 and EcMot1 (C40-C42) is supported by the crystal structure data. The inference about evolutionary conservation (C43-C44) is reasonable given the structural similarity despite genome compaction in E. cuniculi. The explanation for HEAT repeat conservation (C51) logically follows from the ring architecture requiring specific architectural constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C32",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C75",
+      "C86",
+      "C87"
+    ],
+    "result": "The crystal structure reveals that Mot1 adopts a catalytically inactive resting state in which lobe 2 of the ATPase domain is flipped ~180\u00b0 from the active conformation, with motifs IV-VI fully solvent-exposed rather than positioned for ATP hydrolysis. This auto-inhibited conformation is stabilized by interactions between subdomain 2A and HR1/2, and is similar to the conformation observed in S. solfataricus Rad54. The structural coupling between Mot1CTD and Mot1NTD explains why Mot1's ATPase is robustly activated by TBP:DNA complexes but not by DNA alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inactive conformation is directly supported by structural data (C67-C68) and comparison with other SF2 enzymes (C69, C72). The stabilizing interactions are identified in the structure (C75). The biochemical activation pattern (C61-C64) is supported by multiple citations to prior work. The proposed coupling mechanism (C65-C66, C87) is a reasonable inference connecting the structural and biochemical observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Mutagenesis of residues at the interface between lobe 2 and HR1/2 (R4D, D1720R, L1658A/Y1659A) greatly increased basal ATPase activity and eliminated TBP/DNA-dependent activation, supporting the hypothesis that these interactions stabilize the resting state. However, the \u0394C construct (lacking the bridge element) showed impaired TBP:DNA dissociation activity despite elevated ATPase rates, while other mutants retained wild-type dissociation activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis experiments (C76-C78) directly test the structural hypothesis and show the predicted effects on ATPase activity (Figure 2C). The dissociation assays (C82-C83, Figure 2D) demonstrate that the bridge element is required for productive coupling of ATP hydrolysis to remodeling. The data are internally consistent and support the proposed auto-inhibition mechanism, though the precise role of the bridge requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C84",
+      "C85"
+    ],
+    "result": "The bridge element (64 amino acids in CtMot1, residues 1822-1886) was almost entirely omitted from the crystallization construct and is not visible in the electron density. Biochemical data suggest the bridge acts in response to TBP binding to ensure productive coupling of ATP hydrolysis to the remodeling reaction, similar to SnAC in Snf2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The absence of the bridge from the structure is clearly stated (C58-C59). The functional role (C84-C85) is supported by the \u0394C mutant data showing uncoupled ATP hydrolysis (C82). The comparison to SnAC in Snf2 (C85) is supported by citation. However, the precise mechanism remains unclear since the bridge structure is not resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "A structural model of the Mot1:TBP:DNA complex was derived by superimposing the EcMot1NTD:TBP:NC2:DNA structure onto CtMot1 via conserved HEAT repeats and superimposing SsoRad54:DNA onto CtMot1 via lobe 1. The model suggests that the Swi2/Snf2 motor translocates toward the TATA box and TBP along the DNA scaffold, with the DNA bound by the ATPase forming a nearly continuous path with the promoter DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The modeling approach (C88-C89) is reasonable and the resulting model is consistent with prior EM and crosslinking data (C91-C92). However, the model is based on superposition of structures from different organisms and functional states, introducing uncertainty. The proposed directionality of translocation (C94) relies on assumptions about Swi2/Snf2 motor behavior that may not apply to Mot1. The model provides a plausible hypothesis but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C101",
+      "C102"
+    ],
+    "result": "Based on the structural model, the authors propose that Mot1 could displace TBP through short-range DNA tracking leading to steric collision, or by introducing DNA distortions (overwinding) that allosterically affect TBP binding to the TATA box. The ATPase orientation suggests Mot1 'pulls' DNA from TBP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative mechanistic proposals (C96-C98, C101-C102) based on the structural model and analogy to other transcription factors (C99-C100). While the proposals are plausible and supported by citations, they lack direct experimental validation. The absence of observed processive translocation (C95) is noted but the proposed alternatives remain hypothetical. These ideas require further biochemical and biophysical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Comparison with the INO80 remodeler reveals opposite architectural orientations: while Mot1's ATPase orientation suggests it pulls DNA from TBP and overwinds DNA, INO80 appears to pump DNA into the nucleosome and underwind DNA. This suggests Swi2/Snf2 proteins can use DNA translocation in different ways to disrupt protein:DNA interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with INO80 (C103) is supported by citation to recent structural work. The broader conclusion about mechanistic diversity (C104) is a reasonable inference from comparing the two structures, though it is based on a limited sample of remodelers. The conclusion is appropriately cautious ('suggest') given the inferential nature of the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The DNA binding site of S. cerevisiae Chd1 Swi2/Snf2 domain is directly occluded by the chromodomain in the inactive state, providing a mechanism for specific activation by nucleosomal substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is established knowledge from prior structural studies (Hauk et al., 2010; Farnung et al., 2017) that is appropriately cited and used for comparison with the Mot1 structure. The claim serves as context for understanding auto-inhibition mechanisms in Swi2/Snf2 remodelers.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C105",
+      "C106"
+    ],
+    "result": "CDK1:Cyclin B phosphorylates SKA3 at Thr358 and Thr360, which is necessary and sufficient for direct Ska:Ndc80 complex formation in vitro. Mass spectrometry identified 12 of 14 CDK consensus sites as phosphorylated. Mutations T358A/T360A prevent complex formation, while phosphomimetic mutations T358D/T360D do not restore binding, indicating that phosphate groups cannot be functionally replaced by single negative charges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 provide converging evidence from SEC, mass spectrometry, and mutagenesis experiments (Figures 1D-F) demonstrating that CDK1-mediated phosphorylation of SKA3 at specific threonine residues is necessary for Ska:Ndc80 binding. The failure of phosphomimetic mutants contradicts some prior work but is well-supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C68",
+      "C69",
+      "C107",
+      "C111"
+    ],
+    "result": "The Ska:Ndc80 interaction requires the NDC80:NUF2 coiled-coil region (residues 286-504) but does not require microtubules, applied force, the Ndc80-loop, or the Ndc80-tail. Loopless and tailless Ndc80 constructs retain Ska binding in vitro, indicating these regions play regulatory rather than direct binding roles in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 and C68 are supported by systematic SEC experiments with various Ndc80 constructs (Figures 2A, 2D, 3A). The data clearly demonstrate that previously implicated regions (loop, tail) are dispensable for binding in vitro, resolving contradictions in prior literature. Crosslinking mass spectrometry (C65, C111) confirms the coiled-coil interaction site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Structural characterization by electron microscopy and crosslinking mass spectrometry reveals that a Ska dimer binds a single Ndc80 complex. Upon phosphorylation and Ndc80 binding, the unstructured SKA3 C-terminus contacts the NDC80:NUF2 coiled-coil, while the SKA1 microtubule-binding domain is positioned near the Ndc80 tetramerization domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by complementary structural approaches (Figure 2E-F). Electron microscopy provides low-resolution visualization, while crosslinking mass spectrometry provides proximity constraints. The data consistently show the binding stoichiometry and general architecture, though high-resolution structural details are lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C114",
+      "C115"
+    ],
+    "result": "Aurora B kinase activity does not disrupt pre-formed Ska:Ndc80 complexes in vitro, despite successfully phosphorylating both complexes. Lambda-phosphatase treatment does disrupt the complex. This suggests Aurora B plays an indirect role in regulating Ska recruitment to kinetochores in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by SEC and phostag SDS-PAGE data (Figure 3B) confirming Aurora B activity without complex dissociation. This is a well-controlled experiment distinguishing direct from indirect regulatory mechanisms. The inference about indirect regulation (C115) is reasonable but requires future mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C121"
+    ],
+    "result": "The Ndc80 N-terminal tail is essential for tracking depolymerizing microtubule ends in the absence of force, but is dispensable for stable binding to the microtubule lattice when Ndc80 is oligomerized. Truncation of the tail prevents end-tracking, while Aurora B phosphorylation of the tail does not affect lattice binding or end-tracking without force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by TIRF microscopy data (Figure 4D-F) showing that trivalent Ndc80 modules with deleted tails cannot track depolymerizing ends, while phosphorylated tails retain this ability. The distinction between lattice binding and end-tracking is clearly demonstrated with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C122"
+    ],
+    "result": "Under force, Aurora B phosphorylation of the Ndc80-tail impairs the ability to stall and rescue microtubule shortening. Phosphorylated Ndc80 modules detached without rescue in 27 of 29 events, while unphosphorylated modules showed rescue in 21 of 57 events. Tailless modules never rescued microtubule shortening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by optical tweezers data (Figure 4H-I) with clear quantitative differences between conditions. The experiments appropriately test force-coupling under physiologically relevant conditions. Statistical analysis (Fisher exact test) confirms significant differences in detachment-rescue distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C10",
+      "C123",
+      "C124"
+    ],
+    "result": "Rescue events after force-induced stalls only occur when stall duration exceeds approximately 1 second, regardless of stall force. This temporal threshold appears to be a general property of force-induced switching from depolymerization to polymerization, possibly reflecting the time needed to stabilize protofilaments and assemble a GTP-tubulin cap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 and C123 are supported by optical tweezers data (Figures 4I, 6B) showing a clear temporal threshold for rescue events. The ~1 second threshold is consistently observed across conditions. The mechanistic interpretation (C124) is speculative but reasonable given the data. This is a novel and important finding about microtubule dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Phosphorylated Ska confers end-tracking ability to tailless Ndc80 trimers at concentrations as low as 100 pM. At 1-10 nM, phosphorylated Ska effectively enables end-tracking while dephosphorylated Ska does not. At 100 nM, both phosphorylated and dephosphorylated Ska enable end-tracking, and this effect requires the SKA1 microtubule-binding domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by TIRF microscopy data (Figure 5B-C) showing concentration-dependent effects of Ska on end-tracking. The requirement for the SKA1 MTBD is demonstrated by appropriate deletion controls. The data clearly show that Ska creates an additional microtubule-binding site that enables end-tracking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C108",
+      "C109"
+    ],
+    "result": "In the context of multivalent Ndc80 modules, the requirement for SKA3 phosphorylation by CDK1 is attenuated. Non-phosphorylated Ska can bind to beads coated with Ndc80 trimers, though binding is weaker than for phosphorylated Ska and still requires the SKA3 C-terminal region. This suggests microtubules and Ndc80 multimerization facilitate Ska binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 and C108 are supported by bead-binding assays (Figure 5D) and TIRF microscopy data (Figure 5C). The data show concentration-dependent binding of non-phosphorylated Ska to multivalent Ndc80, consistent with avidity effects. This reconciles apparent contradictions with prior studies using different experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C125"
+    ],
+    "result": "Ska stabilizes Ndc80-mediated microtubule stalls under force, resulting in remarkably long stall durations (>5 s in 25/66 cases vs. 1/57 without Ska) and enabling stalls at forces up to ~10 pN (exceeding the 6 pN limit without Ska). This stabilization requires both SKA3-Ndc80 and SKA1-microtubule interactions and increases rescue probability for phosphorylated or tailless Ndc80.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 are supported by optical tweezers data (Figures 5F-I, 6) showing dramatic increases in stall duration and force capacity in the presence of Ska. The requirement for both interaction domains is demonstrated by appropriate deletion controls (Figure 5\u2014supplement 3). Statistical analysis confirms increased rescue rates with Ska.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C26"
+    ],
+    "result": "Recombinant Ska complex is predominantly a dimer of heterotrimers at 1 mg/ml concentration, as determined by SEC-MALS and sedimentation velocity AUC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C26 are supported by SEC-MALS data (Figure 1\u2014supplement 1A) and AUC analysis (Figure 1\u2014supplement 1B). The oligomeric state is consistent with previous structural studies and is important for interpreting binding and functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The direct interaction of Ska with Ndc80 in solution without applied force suggests that tension is not required to expose a cryptic binding site, though force may modulate binding affinity. This is consistent with Ska localization to kinetochores in cells with depolymerized microtubules when Aurora B is inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by the SEC data showing robust binding without force (Figure 1D) and by inference from cited in vivo studies. However, the authors appropriately note they cannot exclude force-dependent affinity changes. This addresses an important mechanistic question about force-dependent regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C116"
+    ],
+    "result": "Ska recruitment to kinetochores is licensed by features of the kinetochore-microtubule interface that signal successful bi-orientation, representing an effector of a separate, unidentified tension-sensing mechanism. The Ndc80-loop and Ndc80-tail contribute indirectly to Ska recruitment rather than providing direct binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73 and C116 are speculative inferences based on the disconnect between in vitro binding (which doesn't require loop/tail) and in vivo recruitment (which does). While the inference is logical, the actual tension-sensing mechanism remains unidentified and requires future investigation. The claims appropriately acknowledge this uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Ska stabilizes kinetochore-proximal protofilaments in a force- or curvature-dependent manner, consistent with gradual and tension-dependent recruitment of Ska to kinetochores during chromosome congression in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C127 are speculative mechanistic interpretations of the stall stabilization data. While the in vitro observations of extended stalls are well-supported, the specific mechanism (force/curvature-dependent protofilament stabilization) and the connection to in vivo recruitment kinetics require additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "Phosphorylation of the Ndc80-tail by Aurora B ensures reversible and tension-sensitive kinetochore-microtubule interactions, providing mechanistic insight into the effects of phosphorylation-mimetic mutations observed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is supported by the optical tweezers data (Figure 4) showing that Aurora B phosphorylation promotes detachment under force while maintaining end-tracking without force. This provides a clear molecular mechanism for tension-sensitive error correction and reconciles extensive prior in vivo observations.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors solved the X-ray crystal structure of MtTMEM175 in complex with a nanobody-MBP fusion protein (macrobody) at 2.4 \u00c5 resolution. The structure reveals that MtTMEM175 forms a tetrameric channel with six transmembrane helices per subunit, where helix one is the pore-lining helix and shows the highest conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26-C31 are well-supported by crystallographic data (Supplementary file 1), SEC-MALLS analysis (Figure 1\u2014figure supplement 1c), and electron density maps (Figure 1\u2014figure supplements 2-4). The resolution, oligomeric state, and structural features are clearly documented with appropriate experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "MtTMEM175 exhibits non-rectifying, voltage-independent K+ currents with low selectivity (PK/PNa ~ 4.3) when expressed in HEK293 cells. The channel conducts Cs+, Rb+, and Li+ but not anions, is blocked by Zn2+ in a voltage-independent manner, and shows single channel conductance of ~70 pS with flickering behavior inconsistent with a leak channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 are supported by whole-cell and single-channel patch-clamp recordings (Figure 2). The electrophysiological characterization is comprehensive with appropriate controls (mock transfections), ion substitution experiments, and statistical reporting (n values and standard deviations provided). The observation of gating events (C39-C40) provides important functional context for interpreting the closed-state structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The MtTMEM175 structure reveals two K+ ion positions: 1K+ at the extracellular entrance coordinated by eight water molecules in an anti-prismatic geometry, and 2K+ within the pore without water coordination. Anomalous scattering confirms K+ at both positions, and Cs+/Rb+ can substitute at 1K+ but not at 2K+ in the closed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C51 are well-supported by electron density maps (Figure 3a-d), anomalous scattering data at wavelengths near the K absorption edge (2.02460 \u00c5, Figure 3\u2014figure supplement 1a,b), and crystal soaking experiments with Cs+ and Rb+ (Figure 3e). The detailed geometry analysis (Figure 3\u2014figure supplement 1c,d) and occupancy refinements provide strong structural evidence. The inference that Cs+/Rb+ absence at 2K+ indicates a closed state (C51) is reasonable given the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Leu35 occludes the pore in the MtTMEM175 structure, forming a hydrophobic physical gate that prevents K+ passage. The structure represents a closed state, and channel opening would require displacement of Leu35, likely through helix rotation similar to other ion channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by pore radius calculations (Figure 4b) showing constriction at Leu35, structural analysis, and comparison to gating mechanisms in other channels (NaK, TRPV6). The inference that this is a closed state (C54) is strengthened by single-channel recordings showing gating (C39) and the absence of Cs+/Rb+ at the 2K+ position (C50-C51). The proposed helix rotation mechanism (C56) is reasonable but remains speculative without an open-state structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Thr38 plays a pivotal role in K+ selectivity in MtTMEM175. The T38A mutant shows strongly impaired selectivity (PK/PNa < 2), while the L35A mutant shows only slightly reduced selectivity, indicating Thr38 rather than Leu35 is critical for ion discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are strongly supported by electrophysiology data (Figure 5b) showing dramatic loss of selectivity in T38A (Erev = -15 \u00b1 2 mV, n=4) compared to WT (Erev = -37 \u00b1 6 mV, n=22) and minimal effect in L35A (Erev = -31 \u00b1 2 mV, n=6). The high conservation of Thr38 (Figure 4\u2014figure supplement 1e) provides additional support. This is a key result distinguishing the authors' interpretation from prior work on CmTMEM175.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The threonine layer is conserved in vertebrate TMEM175 proteins and contributes to K+ selectivity. In human TMEM175, mutation of Thr49/Thr274 to alanine strongly reduces selectivity, though the measured PK/PNa (~10) is somewhat lower than previously reported values (35-20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by sequence alignment (Figure 5c) and electrophysiology data (Figure 5d) showing reduced selectivity in the T49A/T274A mutant (Erev = -17 \u00b1 3 mV, n=8) compared to WT (Erev = -58 \u00b1 3 mV, n=7). The discrepancy between measured PK/PNa (~10) and literature values (35-20) is acknowledged but not fully explained, which introduces minor uncertainty about absolute selectivity values while the relative effects of mutations remain clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Ser45 in repeat one of human TMEM175 accounts for increased K+ selectivity compared to bacterial channels. The S45A mutant reduces selectivity to bacterial levels (Erev = -27 \u00b1 2 mV), and the triple mutant S45A/T49A/T274A shows similar reduction as T49A/T274A alone, indicating Ser45 works in conjunction with the threonine layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are well-supported by sequence alignment (Figure 5c, Figure 5\u2014figure supplement 1e,f) showing Ser45 is conserved in vertebrate repeat 1 but replaced by Ala270 in repeat 2, and electrophysiology data (Figure 5d) demonstrating the S45A mutant has selectivity similar to bacterial channels. The triple mutant data (C68) confirms the serine and threonine layers work together. This elegantly explains the selectivity difference between bacterial and vertebrate TMEM175 channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Human TMEM175 is substantially more sensitive to Zn2+ (IC50 ~38 \u00b5M) and 4-AP (IC50 ~35 \u00b5M) than bacterial channels. The S45A mutant of hTMEM175 loses sensitivity to both blockers, confirming they act as pore blockers at the selectivity filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by electrophysiology data (Figure 6a,b) showing loss of Zn2+ and 4-AP block in the S45A mutant. The voltage independence of the block (Figure 6a) is unusual but documented. The IC50 values for hTMEM175 (C70-C71) are cited from prior work (Cang et al., 2015), and the comparison to bacterial channels is consistent with the authors' data. The conclusion that both blockers act at the selectivity filter (C75) is well-supported by the mutant data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The T38A mutant of MtTMEM175 retains Zn2+ sensitivity in functional assays, but anomalous Zn2+ signal near Thr38/Leu35 is lost in T38A crystals. This suggests Zn2+ blocks MtTMEM175 by a different mechanism than hTMEM175, though the T38A mutation changes the electrostatic environment affecting Zn2+ binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by electrophysiology showing similar Zn2+ block in WT and T38A (Figure 6\u2014figure supplement 1a) and anomalous scattering data showing Zn2+ signal in WT crystals (Figure 6\u2014figure supplement 1b) but not in T38A crystals even at high concentrations (Figure 6\u2014figure supplement 1c). The conclusion that MtTMEM175 and hTMEM175 have different Zn2+ blocking mechanisms (C81) is reasonable given the contrasting effects of Thr/Ser mutations in the two channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The TMEM175 ion pathway comprises three functional layers: an extracellular ion binding site, a gate at Leu35, and one (prokaryotes) or two (vertebrates) interspersed polar layers that tune K+ selectivity. Channel opening likely involves iris-like helix rotation that simultaneously displaces the gate and exposes the selectivity filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are well-supported by the integration of structural data (Figure 7a) and mutagenesis results. The proposed iris-like opening mechanism (C86) is a reasonable inference based on the structure showing Thr38/Ser45 facing away from the pore in the closed state, the need for these residues to coordinate ions for selectivity, and analogies to other channels. However, this mechanism remains speculative without an open-state structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C90"
+    ],
+    "result": "In hTMEM175, selectivity can be reduced to bacterial levels by mutating Ser45 to alanine, reducing coordinating ligands from six to four. Ser45 also underlies pore block by Zn2+ and 4-AP at the selectivity filter, confirming these residues are part of the conductive pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C90 are supported by the S45A mutant data showing both reduced selectivity (Figure 5d) and loss of blocker sensitivity (Figure 6a,b). This provides strong evidence that Ser45 is functionally important and accessible to ions and blockers, supporting the proposed mechanism where these residues face the pore in the open state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The voltage independence of Zn2+ and 4-AP block in hTMEM175 is unusual for a binding site in the electric field. This may be explained by TMEM175 channels spontaneously opening and closing without a trigger, allowing blockers to bind before voltage is applied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C91 is supported by electrophysiology data (Figure 6a) showing voltage-independent block. However, the explanation in C92 is speculative. While the spontaneous gating is consistent with single-channel recordings showing flickering (C39), the proposed mechanism for voltage-independent block lacks direct experimental support. Alternative explanations (e.g., blocker binding site outside the main electric field) are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Structural differences between MtTMEM175 (pH 8.5) and CmTMEM175 (pH 4.5) suggest pH-dependent gating. The CmTMEM175 structure shows a more open intracellular pore, a 310-helix at the extracellular tip of helix 1 (possibly due to crystal contacts), and backbone oxygens too distant to coordinate a K+-hydrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 are supported by structural comparison (Figure 6\u2014figure supplement 2c, Figure 3\u2014figure supplement 1f-k) and crystallization conditions stated in methods. The observation of crystal contacts involving the 310-helix region (C99) appropriately cautions against over-interpreting this structural difference. The proposed pH-dependent gating mechanism (C95) is speculative but reasonable given the pH difference and structural variations. The pore radius calculations (C96) provide quantitative support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Prior work suggested Ile23 in CmTMEM175 acts as a hydrophobic selectivity filter, but mutation of gate residues to small/hydrophilic residues typically results in permanently open channels (as seen in bestrophins), not loss of selectivity. Recent bestrophin structures confirm bulky residues are physical gates, not selectivity filters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are supported by citations to prior work on CmTMEM175 (Lee et al., 2017) and bestrophins (Vaisey et al., 2016; Rao et al., 2017; Miller et al., 2019). This provides important context for reinterpreting the role of bulky hydrophobic residues in TMEM175 channels. The authors' alternative interpretation (gate rather than selectivity filter) is consistent with their L35A data (C59) showing minimal selectivity loss.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "TMEM175 channels recapitulate classical ion channel principles (hydrophobic gates, polar ion coordination) but with a unique feature: selectivity is mediated by cryptic hydroxyl-bearing side chains only available for ion solvation in the open conformation. The conductive state must deviate substantially from the closed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 represent well-supported conclusions integrating structural and functional data. The classical principles (C104) are evident from the structure and mutagenesis. The cryptic selectivity filter concept (C105) is supported by Thr38/Ser45 facing away from the pore in the closed state yet being critical for selectivity. The need for substantial conformational change (C106-C107) is supported by pore occlusion, ion binding data, and blocker sensitivity studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C82"
+    ],
+    "result": "TMEM175 channels are important for autophagosome turnover and lysosomal pH regulation, are associated with early-onset Parkinson's disease, and exhibit diverse properties including phylogenetic distribution, variable K+ selectivity, and distinct pharmacology compared to canonical K+ channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C25, and C82 are background claims supported by citations to prior work (Henning, 1975; Cang et al., 2015; Lee et al., 2017; Jinn et al., 2017; Nalls et al., 2014; Chang et al., 2017). These establish the biological and medical importance of TMEM175 and provide context for the structural study. The claims are appropriately cited and consistent with the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "TMEM175 channels lack a P-loop selectivity filter, a hallmark of all known K+ channels, raising the question of how selectivity is achieved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is supported by established knowledge of canonical K+ channel architecture and the structural characterization of TMEM175 showing no P-loop motif. This is a key motivation for the study and is well-established in the literature.",
+    "result_type": "MINOR"
+  }
+]

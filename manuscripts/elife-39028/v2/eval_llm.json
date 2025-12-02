@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C27",
+      "C28",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "R. capsulatus synthesizes two AerR isoforms (LAerR ~30 kDa and SAerR ~25 kDa) through two offset promoters and an alternative internal Leu41 (CTG) start codon. SAerR is not derived from proteolytic processing but from internal translation initiation with its own ribosome binding site and transcription start site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, C27, C37-C40 provide converging evidence from Western blots, frameshift mutations, deletion analysis, reporter assays, and 5'-RACE sequencing. The identification of the L41 CTG start codon (C40) is directly demonstrated through reporter constructs, and the two transcription start sites (C42) are confirmed by 5'-RACE. The ribosome binding site analysis (C41) and promoter characterization (C44-C46) provide mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C105"
+    ],
+    "result": "The ratio of LAerR to SAerR changes with growth phase and light conditions: LAerR predominates during exponential photosynthetic growth and upon dark-to-light shifts, while SAerR predominates in stationary phase and dark conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30-C35 are directly supported by Western blot data shown in Figure 1 across multiple growth conditions and time points. The observations are consistent across different experimental conditions (aerobic vs. photosynthetic growth, light shifts). However, the manuscript does not provide quantitative measurements or statistical analysis of the band intensities, relying on visual assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C25",
+      "C26",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "LAerR and SAerR have opposite regulatory functions: SAerR represses photosystem gene expression (particularly bchEJGP, crtA-bchIDO, crtIB, and puc operons), while LAerR activates photosystem gene expression. This is demonstrated through pigmentation assays and RNA-seq analysis under both dark semi-aerobic and photosynthetic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C25-C26, C47-C48, C50-C52, C78-C88 are well-supported by multiple lines of evidence: pigment quantification (Figure 3A-B), RNA-seq data (Figure 6A-B, Supplementary files), and growth curves (Figure 3C). The phenotypes are consistent across different growth conditions. The 'super repression' observed in \u0394LAerR strain (C81-C83) is particularly striking, showing more severe repression than the AerR null strain, supporting SAerR's repressor role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61",
+      "C62",
+      "C58",
+      "C59",
+      "C63",
+      "C64"
+    ],
+    "result": "Both LAerR and SAerR function in a CrtJ-dependent manner. LAerR binds CrtJ with EC50 = 7.8 \u00b1 1.2 \u00b5M, while SAerR binds with EC50 = 2.1 \u00b1 1 \u00b5M. Deletion of crtJ suppresses the phenotypes of both \u0394LAerR and \u0394SAerR strains, demonstrating that both isoforms require CrtJ for their regulatory functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 provide in vitro binding data via MST, while C58-C64 demonstrate CrtJ dependency through genetic epistasis experiments. The suppression of AerR mutant phenotypes by \u0394crtJ (Figure 3\u2014figure supplement 1) provides strong evidence for CrtJ dependency. However, the MST measurements lack information about replicates and statistical significance of the EC50 differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C75",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "SAerR and LAerR differ in cobalamin binding specificity: SAerR promiscuously binds all tested cobalamin forms (OH-Cbl, Ado-Cbl, cyano-Cbl, methyl-Cbl) in a light-independent manner, while LAerR selectively binds only light-generated OH-Cbl. His10, present only in LAerR, is responsible for this selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C75, C112-C114 are supported by spectral analysis (Figure 4A-B, Figure 4\u2014figure supplement 1) showing differential cobalamin binding. The inference that His10 confers selectivity (C69, C112) is logical given that this residue is the only difference in the cobalamin binding region between the two isoforms. However, direct mutagenesis of His10 in LAerR to test this hypothesis is not presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76"
+    ],
+    "result": "Cobalamin binding is essential for SAerR repressor activity. The H145A/G148E double mutant abolishes cobalamin binding, and expression of this mutant in vivo fails to repress pigment synthesis, demonstrating that cobalamin binding is required for SAerR function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74, C76 are supported by spectral analysis (Figure 4C) showing loss of cobalamin binding and in vivo pigmentation assays (Figure 5A) showing loss of repressor activity. The correlation between loss of cobalamin binding and loss of function is clear. However, C77 notes incomplete phenotype rescue, suggesting additional complexity not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "\u0394LAerR and AerR null strains exhibit severe growth lags (~60 and ~30 hr respectively) when shifted to photosynthetic conditions, presumably due to decreased pigment biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by growth curve data (Figure 3C). The correlation between reduced pigment levels and growth lag is logical. However, the causal relationship (C54) is inferred rather than directly demonstrated\u2014other metabolic defects could contribute to the growth lag.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C115"
+    ],
+    "result": "Under dark semi-aerobic conditions, AerR primarily controls photosynthesis genes (only 8 non-photosynthesis genes affected). Under photosynthetic conditions, LAerR controls >1500 genes affecting diverse cellular processes beyond photosynthesis, demonstrating condition-dependent regulatory scope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93, C115 are supported by RNA-seq data (Supplementary file 3, Figure 7). The dramatic difference in the number of affected genes between conditions (8 vs. >1500) is striking. However, the manuscript does not discuss potential indirect effects or provide validation of key targets by independent methods (e.g., qRT-PCR).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "LAerR activates diverse metabolic processes including glycolysis, TCA cycle, carbon fixation, cobalamin biosynthesis, ribosomal proteins, and motility/chemotaxis genes. SAerR has opposite effects where it has activity. LAerR represses bacterial microcompartment genes as an exception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C101 are supported by RNA-seq data (Figure 7, Figure 8, Supplementary file 4). The opposite regulatory effects of LAerR and SAerR (C94) are demonstrated for specific genes. The metabolic pathway analysis (C97-C98) is well-illustrated in Figure 8. However, many of these effects could be indirect (as acknowledged in C118-C119), and direct binding evidence is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "LAerR likely has both direct effects (via CrtJ interaction) and indirect effects on gene expression. Reduced ribosomal gene expression in \u0394LAerR may result from energy limitation/stringent response, as ribosomal genes show no CrtJ binding. Reduced BCAA transporter expression and altered quinone redox state may trigger indirect effects via (p)ppGpp and RegB/RegA pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C127 propose indirect regulatory mechanisms to explain observations that cannot be explained by direct CrtJ-mediated regulation. While the logic is sound and supported by prior knowledge (C124, C126), these are largely speculative explanations (C122, C127) without direct experimental validation. The correlation between LAerR deletion and ribosomal gene downregulation (C120-C121) is observed, but the proposed mechanisms remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "SAerR enhances CrtJ-mediated repression, particularly at promoters with distantly spaced CrtJ binding motifs. LAerR switches CrtJ from a repressor to an activator, likely by extending CrtJ's DNA interaction beyond tandem binding motifs. CrtJ alone provides partial repression without SAerR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107, C110 are inferred from genetic and transcriptomic data but lack direct mechanistic evidence. C108 is supported by prior citations. C109 is inferred from RNA-seq patterns but not directly tested. C111 is explicitly stated as a proposal based on prior in vitro DNA binding studies (C103). While the model is consistent with the data, direct demonstration of the proposed DNA binding changes in the presence of LAerR vs. SAerR is not provided in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "R. centenum synthesizes both long and short AerR isoforms, while R. sphaeroides AerR (PpaA) appears to have only one large isoform, suggesting species-specific differences in AerR regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 are supported by Western blot data (Figure 1\u2014figure supplement 2). However, the analysis is limited to single Western blots without quantification or analysis across growth conditions. The observation is preliminary but supports the broader evolutionary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "R. sphaeroides may have replaced the short AerR isoform with AppA, a flavin-based photoreceptor with opposing function to AerR, through gene duplication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C134 are supported by citations to prior work. However, C135 is explicitly speculative ('suggesting that this species may have replaced'). While the functional analogy between SAerR and AppA is intriguing, the evolutionary claim lacks phylogenetic or comparative genomic evidence to support the gene duplication hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C65",
+      "C66",
+      "C67",
+      "C102",
+      "C103",
+      "C104",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Background information on purple photosynthetic bacteria, photoreceptors, CrtJ/PpsR regulation, and prior AerR characterization from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C23, C65-C67, C102-C104, C128-C130 are all supported by citations to prior work. These provide essential context but are not novel findings of this study. The citations appear appropriate and the background information is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Apo-SAerR (without cobalamin) may have an undefined role in cells, as the cobalamin-binding mutant does not fully restore wild-type phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 is speculative based on incomplete phenotype rescue by the SAerR H145A/G148E mutant. While the observation is valid, the interpretation that apo-SAerR has a function is one of several possible explanations (e.g., the mutations could affect protein stability or other functions beyond cobalamin binding). Further experiments would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The high LAerR/SAerR ratio during exponential phase enhances energy production and protein biosynthesis for growth, while the low ratio in stationary phase reduces photosystem synthesis and glycolysis as cells stop replicating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are logical inferences from the observed isoform ratios (C4, C30-C33) and metabolic effects (C95-C100). The model is consistent with the data and general principles of bacterial physiology. However, these are interpretations rather than directly tested hypotheses\u2014the manuscript does not experimentally manipulate the LAerR/SAerR ratio to test these predictions.",
+    "result_type": "MINOR"
+  }
+]

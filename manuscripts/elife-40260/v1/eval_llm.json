@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The introduction establishes arsenic as a major environmental toxin affecting ~100 million people, describes its metabolism via AS3MT with population-level variation in detoxification capacity, and notes its therapeutic use in treating acute promyelocytic leukemia (APL) despite individual variation in treatment response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 are all supported by appropriate citations to prior literature. These claims establish the background context for the study by reviewing established knowledge about arsenic toxicity, metabolism, population genetics, and therapeutic applications. All claims are appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "C. elegans is established as a valid model for studying arsenic toxicity, with effects similar to mammalian systems. Previous studies used only the N2 laboratory strain, while 152 wild strains exist with unexplored genetic diversity relevant to environmental responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C31 are supported by citations to prior literature establishing C. elegans as a model for arsenic studies and documenting the existence of natural genetic variation. These claims appropriately motivate the use of natural variation approaches in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C42"
+    ],
+    "result": "The study identifies natural variation in the dbt-1 gene, encoding a component of the BCKDH complex involved in branched-chain amino acid catabolism, as a major source of variation in C. elegans arsenic responses. A single missense variant (S78C) in the lipoyl-binding domain underlies phenotypic variation, affecting differential synthesis of mono-methyl branched chain fatty acids (mmBCFA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38, C41-C42 represent the core findings of the manuscript and are supported by the experimental data from linkage mapping, GWA mapping, allele replacement experiments, and metabolomics presented in the results section. The identification of dbt-1 and the S78C variant is well-supported by converging evidence from multiple genetic approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Arsenic treatment perturbs branched chain fatty acid levels in human cells, with broad implications for arsenic toxicity and chemotherapeutics across human populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by experimental data from human cell metabolomics (Figure 5). However, C40 is speculative about implications. The human cell data shows perturbation of fatty acids but with different patterns than C. elegans (straight-chain more affected than ISO), limiting direct translation of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In dose-response experiments with four C. elegans strains (N2, CB4856, JU775, DL238), 1 mM arsenic trioxide was the lowest concentration causing significant brood size reduction in all strains. CB4856 was more resistant, producing ~16% more offspring that were ~20% larger than other strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C58-C61 are supported by experimental data shown in Figure 1\u2014figure supplement 1. The dose-response data appropriately establishes the concentration used for subsequent mapping experiments and identifies CB4856 as the resistant strain, motivating the N2 \u00d7 CB4856 cross.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Principal component analysis of four BIOSORT traits showed PC1 explained 75% of phenotypic variance and was most strongly influenced by optical density, suggesting PC1 is a biologically relevant trait capturing arsenic-induced developmental effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by PCA data in Figure 1\u2014figure supplement 2. The use of PC1 as a composite trait is justified by the high variance explained and correlation with individual traits. This analytical approach is appropriate for reducing dimensionality while capturing arsenic response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Linkage mapping in 252 RIAILs identified a major QTL on chromosome II (7.04-8.87 Mb) explaining 35.4% of phenotypic variation (63.4% of heritable variation) and a secondary QTL on chromosome X. Additional QTL were detected on chromosomes I and V for specific traits. PC1 was highly correlated with brood size and animal length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C81 are supported by linkage mapping data in Figures 1 and supplementary figures. The QTL mapping is appropriately conducted with adequate sample size (252 RIAILs), proper statistical thresholds, and confidence intervals. The chromosome II QTL is the primary focus for subsequent fine-mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Two near-isogenic lines (NILs) with CB4856 introgressions spanning the chromosome II QTL recapitulated the CB4856 resistant phenotype. The left NIL spans 5.75-8.02 Mb and the right NIL spans 7.83-9.66 Mb, with overlapping region 7.83-8.02 Mb. NILs recapitulated 70.6% and 81.9% of the effect size, exceeding the 63.4% from linkage mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C97 are supported by NIL phenotyping and whole-genome sequencing data (Figure 1C, supplementary figures). The NIL approach appropriately narrows the QTL interval and validates the chromosome II locus. The higher effect size in NILs compared to RIAILs is reasonably attributed to more homogeneous genetic background and higher replication (C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "GWA mapping with 86 wild isolates identified a QTL on chromosome II (7.6-8.21 Mb) overlapping the linkage mapping QTL. The peak marker (II:7,931,252) explains 84.6% of heritable variation. CB4856 has the non-reference genotype at this marker, suggesting the same variant underlies both mapping populations. Brood size did not map significantly, likely due to lower statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 are supported by GWA mapping data in Figure 2. The convergence of linkage and GWA mapping to the same genomic region provides strong evidence for the QTL. The lower power for brood size (C99-C100) is a reasonable interpretation given the smaller sample size (86 strains) compared to linkage mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Fine mapping identified eight markers in complete linkage disequilibrium most correlated with PC1. Only one marker is located within an annotated gene (dbt-1), predicted to encode a C78S variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by fine-mapping data in Figure 2\u2014figure supplement 2 and Figure 2C. The identification of dbt-1 as the only gene containing a variant in complete LD with the phenotype provides a strong candidate, though the authors appropriately acknowledge that intergenic variants remain possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The dbt-1 gene encodes the E2 component of the BCKDH complex, which catalyzes irreversible oxidative decarboxylation of branched-chain \u03b1-ketoacids. The E2 component requires lipoylation at a critical lysine (K71 in C. elegans DBT-1) for function. The C78S variant is in close proximity to this lipoylated lysine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 are supported by citations to prior literature and sequence analysis. The biochemical context for DBT-1 function is well-established, and the proximity of C78 to the lipoylated lysine (K71) provides mechanistic rationale for how this variant might affect enzyme function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "CRISPR-Cas9 allele replacement experiments functionally validated the DBT-1 C78S variant. The N2 DBT-1(S78) strain recapitulated 56.4% and CB4856 DBT-1(C78) recapitulated 64.8% of the phenotypic difference, matching the 63.4% from linkage mapping. Brood size showed a different pattern, suggesting additional genetic variants may interact with DBT-1(C78S).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C124 are supported by allele replacement data in Figure 3. The reciprocal allele swaps provide strong causal evidence that the C78S variant underlies the majority of the phenotypic difference. The discrepancy in brood size (C121-C123) is appropriately noted and suggests epistatic interactions, though this is not further explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Mono-methyl branched chain fatty acids (mmBCFA) are produced via BCAA catabolism requiring BCKDH and other enzymes. Strains lacking functional elo-5, elo-6, or dbt-1 produce less C15ISO and C17ISO, arrest at L1, and can be rescued by C15ISO or C17ISO supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 are supported by citations to prior literature (Kniazeva et al., 2004; Jia et al., 2016; Kniazeva et al., 2008) and provide essential background for interpreting the metabolomics results. This establishes the biological importance of mmBCFA for C. elegans development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Targeted metabolomics showed arsenic treatment reduced C15ISO/C15SC and C17ISO/C17SC ratios. The effect was 7.6-fold stronger on C15ISO/C15SC and 6.6-fold stronger on C17ISO/C17SC in N2 DBT-1(C78) compared to N2 DBT-1(S78), suggesting DBT-1(C78) is more strongly inhibited by arsenic. Similar but smaller effects were observed in CB4856 background. The differential reduction in branched-chain fatty acids likely underlies physiological differences between strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C140 are supported by metabolomics data in Figure 4B and supplementary figures. The targeted metabolomics provides mechanistic insight linking the genetic variant to metabolic phenotype. Statistical tests are reported with appropriate p-values. The conclusion that differential mmBCFA reduction underlies physiological differences (C140) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "In control conditions, strains with DBT-1(C78) had higher ISO/SC ratios than DBT-1(S78) strains at the L1 larval stage for both C15 and C17, suggesting DBT-1(C78) produces more branched chain fatty acids. This effect was developmental stage-dependent, not observed in young adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145 are supported by metabolomics data in Figure 4\u2014figure supplement 3-5. The developmental stage-specificity is an interesting observation, though the mechanism is not explored. This suggests the C78 allele may have different activity levels depending on developmental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "C15ISO supplementation rescued 53.5% of the allele-specific effect in N2 background and 25.6% in CB4856 background when animals were exposed to arsenic. Strains with DBT-1(S78) were unaffected by C15ISO supplementation. This supports the hypothesis that the C78S variant contributes to arsenic sensitivity by reducing ISO fatty acid biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 are supported by chemical rescue data in Figure 4\u2014figure supplement 6. The rescue experiments provide functional validation that reduced mmBCFA production is the mechanism linking DBT-1(C78) to arsenic sensitivity. The partial rescue is expected given the complexity of the pathway and potential for other limiting factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Human DBT1 contains serine at position 112 (corresponding to C. elegans C78). CRISPR editing in 293T cells showed arsenic exposure increased cells with DBT1(C112) by 4%, W84C by 2%, and R113C by 1%. All three missense variants caused slight fitness increases in arsenic\u2014opposite to C. elegans results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C158 are supported by sequence alignment (Figure 5A) and human cell editing/selection data (Figure 5B). The opposite effect in human cells compared to C. elegans is appropriately noted. However, the interpretation is complicated by the batch editing approach and the fact that S112 doesn't naturally vary in humans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "In human cells, arsenic treatment markedly reduced overall fatty acid production, with straight-chain fatty acids more drastically reduced than ISO fatty acids\u2014opposite to C. elegans. This suggests pleiotropic effects and general perturbation of fatty acid metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161 are supported by metabolomics data from human cells (Figure 5\u2014source data 3). The different pattern in human cells (straight-chain more affected than ISO) compared to C. elegans is appropriately noted and suggests species-specific differences in arsenic's effects on fatty acid metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The study demonstrates that arsenic trioxide differentially inhibits two natural alleles of the BCKDH E2 domain (encoded by dbt-1). Strains with DBT-1(C78) are more sensitive than DBT-1(S78), largely explained by differences in mmBCFA production, which are critical for developmental progression beyond L1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C165 summarize the main findings and are supported by the collective evidence from genetic mapping, allele replacement, metabolomics, and rescue experiments. The mechanistic link from genetic variant to metabolic phenotype to organismal phenotype is well-established through multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Arsenic is known to inhibit PDH and KGDH through interactions with reduced lipoate. The E2 domain of BCKDH also requires lipoate. Arsenic could inhibit DBT-1(C78) through coordination with C78 and lipoate thiols (~32 \u00c5 apart, possibly too far) or between C78 and C65 (~8.5 \u00c5). This represents the first connection of arsenic toxicity to BCKDH E2 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C166-C168 are supported by prior literature. Claims C169-C172 are speculative mechanistic proposals based on structural data (PDB:1Y8N). The proposed mechanisms are plausible but not experimentally tested. C174-C175 correctly note this is the first report of BCKDH inhibition by arsenic, which is a novel finding, but the specific mechanism remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "C. elegans C65 and C78 correspond to human S112 and C99. Cancer cells upregulate BCAA metabolism to promote growth. The increased proliferation of human cells with DBT1(C112) might be caused by increased BCKDH activity. Human cell lines have variable fatty acid requirements unlike C. elegans, where mmBCFA requirements depend on multi-tissue coordination that cannot be recapitulated in cell culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C176 is supported by sequence alignment. C177 is supported by citations. C178 is speculative. C179-C182 are supported by citations and provide reasonable explanations for why human cell culture results differ from C. elegans organismal results. The discussion appropriately acknowledges limitations of cell culture models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Arsenic trioxide is standard-of-care for APL and gaining traction for other leukemias. It may be important to explore effects of arsenic on BCAA metabolism and cancer growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C183 is supported by citation. C184 is stated as current knowledge. C185 is a speculative suggestion for future research that is reasonable given the findings but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "The C78 allele is likely derived in C. elegans as other organisms have serine. Loss of serine might reflect relaxed selection, though this is difficult to test. C. elegans may have originated from the Pacific Rim (CB4856 from Hawaii, which could have elevated arsenic). As the species spread to lower-arsenic areas, selective pressure for arsenic tolerance may have relaxed. However, the dbt-1 locus shows no selection signature by Tajima's D, and S78 strains show no geographic clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C186-C192 are speculative evolutionary scenarios. C188-C189 are supported by citations. C190 is speculative about arsenic sources in Hawaii. C193 is supported by data. C194-C195 are supported by data (Figure 2\u2014figure supplement 3-4) and contradict the selection hypothesis. The evolutionary speculation is interesting but not well-supported by population genetic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C196"
+    ],
+    "result": "C. elegans is a powerful model to investigate molecular mechanisms for how populations respond to environmental toxins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C196 is supported by the successful identification of dbt-1 as a novel arsenic response gene using C. elegans natural variation. The study demonstrates the value of the natural diversity approach for identifying mechanisms not found in single-strain studies.",
+    "result_type": "MINOR"
+  }
+]

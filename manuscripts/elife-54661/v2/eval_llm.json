@@ -1,0 +1,529 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5"
+    ],
+    "result": "DsbD is a three-domain membrane protein that transfers electrons from cytoplasmic thioredoxin to periplasmic partner proteins through a series of thiol-disulfide exchange reactions involving conserved cysteine residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C4, and C5 describe the established structural and functional properties of DsbD based on prior work. These are well-supported by citations to X-ray structures and established knowledge of the electron transfer pathway. The claims accurately represent the background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C13",
+      "C14"
+    ],
+    "result": "X-ray structures show that the cap loop (residues 68-72) covers the active site in both oxidized and reduced nDsbD in a closed conformation, with F70 shielding the active-site disulfide bond, while the cap loop adopts an open conformation in complexes with binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C13-C14 are directly supported by cited X-ray structures (PDB: 1L6P, 1JPE, 3PFU, 1VRS) showing closed and open conformations. The structural similarity between oxidation states (RMSD <0.15 \u00c5) is quantitatively demonstrated. These are well-established structural observations from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The cap loop shields the active-site cysteines from chemical modification, as evidenced by slow DTT reduction of nDsbDox and a high pKa (>11) for C109 in nDsbDred, protecting the cysteines from non-cognate reactions in the oxidizing periplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are supported by experimental data (DTT reduction kinetics, NMR pH titration showing no chemical shift changes from pH 6-11). The interpretation that the cap loop provides protection is reasonable given the slow reduction rate and high pKa. The functional inference about protection in the periplasm is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C40"
+    ],
+    "result": "RDC measurements indicate that the solution structures of both oxidized and reduced nDsbD are well described by X-ray structures with closed cap loops, and agreement between experimental and calculated RDCs improved when using MD ensemble structures compared to static X-ray structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C40 are supported by RDC data showing good Q values (0.19-0.24) for fits to X-ray structures and improved agreement with MD ensembles. The RDC analysis provides experimental validation that the closed conformation predominates in solution for both oxidation states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "15N relaxation experiments show that most of the nDsbD backbone is relatively rigid with S\u00b2 values above 0.8, while N- and C-terminal regions are disordered. The cap-loop region shows S\u00b2 values similar to the folded protein core in both oxidation states, indicating no large amplitude motions on the ps-ns timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 are supported by model-free analysis of 15N relaxation data showing high S\u00b2 values (>0.8) for most residues including the cap loop. The data demonstrate that the cap loop does not undergo large amplitude fast motions on average, consistent with a predominantly closed conformation. The experimental approach and analysis are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Despite similar S\u00b2 values, the cap-loop region of nDsbDox shows lower {1H}-15N NOE values and requires more complex model-free fitting (with \u03c4e parameter ~50-350 ps) compared to nDsbDred, indicating differences in the timescale of fast dynamics between oxidation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by NOE data and model-free analysis showing that nDsbDox requires a more complex fitting model for cap-loop residues. This subtle but important difference in dynamics timescale between oxidation states is well-documented by the experimental data and provides evidence for oxidation-state-dependent behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MD simulations (1 \u03bcs total) starting from the reduced nDsbD X-ray structure show that the cap loop remains stably closed with F70-C109 distance near the crystal structure value, C103 and C109 remain shielded from solvent, and no loop opening is observed, confirming the protective role of the cap loop in nDsbDred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by MD simulation data showing stable closed conformation throughout 1 \u03bcs of simulation. The SASA calculations confirm cysteines remain shielded. The simulations provide computational evidence consistent with the protective role inferred from experimental data. The simulation length (1 \u03bcs) is substantial for this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "MD simulations of nDsbDox show more complex dynamics than nDsbDred, with spontaneous cap loop opening events ranging from <1 ns to 22 ns duration. Opening increases solvent exposure of C103 and C109, and partially open conformations are relatively stable, marking a clear difference in conformational ensembles between oxidation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by MD simulation data showing multiple opening events in nDsbDox but not nDsbDred. The SASA calculations confirm increased solvent exposure upon opening. The observation of spontaneous opening in simulations is a key finding, though the timescales and populations should be interpreted cautiously given simulation limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "MD simulations starting from open loop conformations show that the cap loop can close rapidly (within 10 ns) in both oxidation states in the absence of a binding partner, with 5/8 trajectories closing for nDsbDred and 3/10 for nDsbDox.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by MD simulation data showing rapid closing from open conformations. This demonstrates that the closed state is thermodynamically favorable in both oxidation states when no binding partner is present, though nDsbDox shows somewhat slower/less complete closing consistent with its greater conformational flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "MD simulations correctly reproduce the extent of fast timescale (ps-ns) dynamics observed by NMR, including high S\u00b2 values for the cap loop in both oxidation states. The lowered NOE values and need for \u03c4e parameter in nDsbDox are consistent with rare loop opening events observed in MD, validating the simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by good agreement between experimental and calculated S\u00b2 values (RMSD 0.08) and RDCs. The validation against multiple experimental observables (RDCs, S\u00b2, NOE) provides confidence in the MD simulations. The explanation for why rare opening events don't significantly lower S\u00b2 values is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The differences in cap loop dynamics between oxidation states, with greater flexibility in nDsbDox, are a direct effect of the oxidation state of the active-site cysteines. Despite very similar average structures, the disulfide bond introduces local structural frustration in nDsbDox.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by the combined NMR and MD data showing oxidation-state-dependent dynamics despite structural similarity. The conclusion that the disulfide bond is responsible for the dynamic differences is well-justified since it is the only major structural difference between the two states. The concept of local frustration provides a mechanistic framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In nDsbDox, the C103-C109 disulfide bond adopts gauche- conformations (\u03c71 ~ -60\u00b0) providing a flat binding surface for F70, which samples both gauche- and trans orientations approximately equally with rapid exchange on a tens of ns timescale. This conformational averaging is evidenced by nearly identical F70 H\u03b2 chemical shifts and TALOS-N analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are supported by MD simulations showing F70 conformational exchange and NMR data showing nearly identical H\u03b2 chemical shifts (0.015 ppm difference) consistent with averaging. The TALOS-N analysis not predicting a single \u03c71 value supports the dynamic model. The integration of MD and NMR data is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In nDsbDred, C103 and C109 adopt trans conformations (\u03c71 ~180\u00b0) creating a snug-fitting binding site that locks F70 in a single gauche- conformation. This is supported by MD simulations, upfield-shifted C109 H\u03b2 resonances (1.83 and 0.66 ppm), distinct F70 H\u03b2 shifts with differential NOEs, and TALOS-N prediction of gauche- \u03c71.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are supported by convergent evidence from MD simulations and multiple NMR observables (chemical shifts, NOEs, TALOS-N). The large upfield shifts of C109 H\u03b2 are consistent with ring current effects from F70. The distinct H\u03b2 shifts with differential NOE intensities support a single well-defined conformation. The data integration is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "X-ray structures of N. meningitidis nDsbD show similar features to E. coli: nDsbDred has a closed loop with F66 in gauche- conformation, while nDsbDox crystallizes with six molecules showing one open loop and five closed loops with F66 in both trans and gauche- orientations, suggesting local structural frustration is conserved across Gram-negative bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by X-ray structures from N. meningitidis (PDB: 6DPS) showing conformational heterogeneity in nDsbDox consistent with the E. coli MD simulations. The observation of multiple conformations in the crystal provides independent validation of the frustrated nature of nDsbDox. The conservation argument is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Analysis of 20 loop opening events (\u22651 ns duration, F70-C109 \u226510 \u00c5) in nDsbDox MD simulations shows that opening is not underpinned by a specific F70 \u03c71 conformer, with 14 openings starting from trans and 5 from gauche-, and only one event showing gauche- to trans transition at the point of opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by detailed analysis of opening events in MD simulations. The finding that loop opening is not linked to a specific F70 conformer is important for understanding the mechanism. The statistical analysis of 20 events provides reasonable sampling, though longer simulations would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The dynamics of Y71 and its relative orientation to F70 are important for cap loop opening in nDsbDox. Y71 preferentially adopts gauche- conformation (86%) but shows no correlation with F70 \u03c71. F70 and Y71 have higher RMSDs in nDsbDox (2.8\u00b10.8 and 2.6\u00b10.7 \u00c5) than nDsbDred (1.7\u00b10.6 and 1.6\u00b10.8 \u00c5). Local structural frustration of F70 results in increased dynamics for both F70 and Y71, leading to occasional loop opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 are supported by MD simulation analysis showing increased flexibility of both F70 and Y71 in nDsbDox. The RMSD differences between oxidation states are statistically significant. The proposed mechanism linking F70 frustration to Y71 dynamics and loop opening is well-supported by the simulation data and consistent with N. meningitidis crystal structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Following loop opening, F70 and Y71 continue sampling various conformations. Y71 can adopt a 'blocking' conformation between C109 and F70 that prevents complete loop closure. The cap loop can adopt very open conformations (F70-C109 >16 \u00c5, Y71-C109 >10 \u00c5) that may facilitate initial docking of cDsbD by minimizing steric clashes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by MD simulation observations showing Y71 blocking conformations and very open states. The speculation about functional importance for cDsbD docking (C85) is reasonable but remains a hypothesis requiring experimental validation. The blocking role of Y71 is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Backbone torsion angles of cap-loop residues (D68, E69, F70, Y71, G72) change upon loop opening at 82.5 ns, with E69 \u03c6/\u03c8 becoming less variable while D68 and F70 become more variable. These changes correlate with loss of the Y71HN-D68O\u03b4 hydrogen bond (observed in 95% of closed structures), while backbone \u03b2-hairpin hydrogen bonds are retained in open structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by detailed MD simulation analysis of backbone torsion angles and hydrogen bonding patterns. The correlation between hydrogen bond loss and torsion angle changes provides mechanistic insight into loop opening. The retention of \u03b2-hairpin hydrogen bonds explains why the loop maintains some structural integrity when open.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "During simulations of loop closing that fail to complete within 10 ns, Y71 adopts conformations between F70 and C109 that block complete loop closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by MD simulation observations showing Y71 blocking conformations during incomplete closing trajectories. This provides a mechanistic explanation for why some closing attempts are unsuccessful and highlights the important role of Y71 in modulating loop dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Bioinformatics analysis of 134 representative nDsbD sequences shows the cap-loop motif is more conserved than flanking \u03b2-strands. Position 70 has F or Y in 53% of sequences (plus bulky residues in 36.4%), while position 71 has F or Y in 85% of sequences (plus I/L in 5.2%), highlighting the key role of Y71 in loop opening and preventing rapid closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by sequence alignment analysis of 134 sequences from \u03b2- and \u03b3-proteobacteria. The high conservation of aromatic residues at position 71 (85%) is striking and supports the functional importance of Y71 identified in the MD simulations. The bioinformatics analysis strengthens the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "15N NMR relaxation dispersion experiments show no evidence for \u03bcs-ms dynamics in the cap loop or active site of nDsbDred, consistent with the absence of a significantly populated open state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by flat relaxation dispersion profiles for nDsbDred. The absence of \u03bcs-ms dynamics is consistent with MD simulations showing no loop opening and provides strong evidence that nDsbDred does not sample open conformations to a significant extent in solution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "In nDsbDox, eight cap-loop residues (V64, W65, E69, F70, Y71, G72, K73, S74) show strong relaxation dispersion effects. Active-site residues C103, C109, and Y110 show peak broadening or absence in HSQC spectra of nDsbDox but not nDsbDred, likely due to chemical exchange. The cap loop and active-site cysteines of nDsbDox exchange between conformations on the \u03bcs-ms timescale, while nDsbDred adopts a single conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by relaxation dispersion data showing clear effects for cap-loop residues in nDsbDox and the observation of peak broadening for active-site residues. The contrast with nDsbDred is striking and provides strong evidence for oxidation-state-dependent conformational exchange on the \u03bcs-ms timescale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Analysis of relaxation dispersion data at 25\u00b0C shows nDsbDox undergoes a single global exchange process between a major state (pA\u224898%) and minor state (pB\u22482%). Data at five temperatures (10-35\u00b0C) could be fitted simultaneously for all cap-loop residues, confirming a single underlying exchange process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by CATIA analysis of relaxation dispersion data. The global fitting at multiple temperatures is rigorous and the ability to fit all residues simultaneously with a single exchange process is strong evidence for a concerted conformational change. The populations (98%/2%) are well-determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Temperature-dependent analysis shows the minor state of nDsbDox is enthalpically more favorable but entropically less favorable than the major state, with no enthalpic barrier separating the states. The absence of an enthalpic barrier suggests no favorable interactions must be broken in the transition state, with the diffusion process potentially limiting transition speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by thermodynamic analysis of temperature-dependent relaxation dispersion data. The finding of no enthalpic barrier is interesting and well-supported by the data. Claim C105 is speculative but reasonable, appropriately citing a reference for the interpretation. The thermodynamic characterization is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Chemical shift analysis suggests the minor state cap loop conformation is similar to nDsbDred rather than disordered. The 15N chemical shift differences between major and minor states of nDsbDox resemble differences between oxidized and reduced isoforms, though imperfect correlation likely reflects electronic/steric differences between disulfide bond and thiols. Signs of chemical shift differences for W65, E69, F70, Y71, G72, K73 indicate the minor state is not disordered but similar to nDsbDred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 are supported by chemical shift analysis showing correlation with oxidized-reduced differences but not with random coil predictions. The determination of chemical shift signs for six residues strengthens the conclusion. The interpretation that the minor state resembles nDsbDred is well-supported, though the exact structure remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The minor state of nDsbDox is attributed to coupling between active-site cysteine and cap loop dynamics. In this state, C103 and C109 side chains likely adopt a 'reduced-like' trans conformation (rather than the gauche- conformation typical of nDsbDox), allowing the cap loop to pack tightly onto the disulfide bond as in nDsbDred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C115 propose a specific structural model for the minor state based on chemical shift similarities to nDsbDred. While the hypothesis is reasonable and consistent with the data, claims C114-C115 are explicitly speculative ('postulate', 'could pack'). Direct structural evidence for the proposed trans conformation of cysteines in the minor state is lacking. Additional experiments would be needed to confirm this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Model building of a disulfide bond into the reduced 3PFU structure followed by energy minimization shows the resulting structure maintains 'reduced-like' trans conformation (\u03c71 ~ -140\u00b0) for cysteines and gauche- conformation for F70. This 'reduced-like' conformation for nDsbDox might be enthalpically more favorable and entropically less favorable than the major state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is supported by the modeling and energy minimization results showing a stable 'reduced-like' structure is possible for nDsbDox. Claim C117 appropriately qualifies the thermodynamic interpretation as speculative ('might be') while noting consistency with the relaxation dispersion analysis. The modeling provides structural plausibility for the proposed minor state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "Previous NMR and MD studies have detected complex dynamics in BPTI stemming from disulfide bonds, supporting the idea that disulfide bonds can shape protein dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 accurately cites prior work on BPTI showing disulfide bond-related dynamics. This provides precedent for the findings in nDsbD and supports the general concept that disulfide bonds can introduce complex dynamics in proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "X-ray structure of \u0394loop-nDsbDox shows deletion of the cap loop causes no significant structural changes (C\u03b1 RMSD 0.25 \u00c5 for residues 12-122), but the shorter loop cannot pack closely onto the disulfide bond. Relaxation dispersion experiments show no exchange for cap-loop residues (W65) or active-site residues (A104, C103, C109) in \u0394loop-nDsbDox, demonstrating that cap loop truncation alters \u03bcs-ms dynamics and supporting tight coupling between cap loop and active-site cysteines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C125 are supported by X-ray structure of \u0394loop-nDsbDox and relaxation dispersion data showing loss of exchange dynamics upon loop deletion. This is a critical control experiment demonstrating that the cap loop is essential for the observed dynamics in wild-type nDsbDox. The appearance of previously broadened peaks (C103, C109) in the deletion mutant is particularly compelling evidence for coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The conformational dynamics of active-site cysteines and cap loop are coupled and behave in an oxidation-state-dependent manner. The cap loop is rigid in nDsbDred with no evidence for significant open population, remaining closed to protect cysteine thiols from non-cognate reactions. The nDsbDred cap loop may only open via induced-fit when encountering binding partners (CcmG, DsbC, DsbG).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 are well-supported by the combined NMR and MD data showing oxidation-state-dependent dynamics and lack of open states in nDsbDred. Claim C130 is appropriately qualified as speculative ('may only open') and represents a reasonable hypothesis about the binding mechanism for nDsbDred based on the data, though direct experimental evidence is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "In nDsbDox, the cap loop opens spontaneously in MD simulations with partially open structures being stable. NMR relaxation dispersion shows no long-lived open or disordered conformation, but instead reveals a minor state (2%) with 'reduced-like' conformation in active site and cap loop. nDsbDox may form complexes with cDsbDred via conformational selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131, C133-C134 are well-supported by MD simulations and NMR data. The finding that the minor state is 'reduced-like' rather than open is surprising and important. Claim C132 is appropriately qualified as speculative ('may form') and represents a reasonable hypothesis about the binding mechanism, though the transient open states observed in MD (not detected by NMR) could also play a role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Local frustration in nDsbDox, but not nDsbDred, gives rise to differences in dynamics on multiple timescales. In nDsbDred, the cap loop packs perfectly onto active-site cysteines with stable closed conformation. In nDsbDox, the disulfide bond disrupts tight fit of F70, which switches freely between gauche- and trans orientations, resulting in increased flexibility for F70 and Y71 and driving occasional loop opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 represent the central mechanistic conclusions of the study, well-supported by the integrated NMR and MD data. The concept of local frustration provides a unifying framework for understanding how the disulfide bond leads to increased dynamics. The mechanism linking F70 frustration to Y71 flexibility and loop opening is well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C140"
+    ],
+    "result": "Sequence alignments show the general architecture of the cap-loop region in \u03b2- and \u03b3-proteobacteria is conserved, indicating observations in E. coli nDsbD can be generalized to other bacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C140 is supported by bioinformatics analysis showing conservation of the cap-loop architecture across 134 representative sequences. Combined with the N. meningitidis structural data, this provides strong evidence for the generalizability of the findings beyond E. coli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "The oxidation state of the cysteine pair acts as a 'switch' controlling the presence or absence of local frustration in the active site. This oxidation-state-dependent switch determines cap loop dynamic behavior, translating into optimized protein-protein interaction and biological activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 represent the main conceptual conclusions of the study. The 'switch' model is well-supported by the data showing oxidation-state-dependent frustration and dynamics. The connection to optimized protein function is a reasonable inference based on the different binding mechanisms proposed for the two oxidation states, though direct functional validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "Redox-state modulation of local frustration may play a wider role in biomolecular recognition in other pathways involving redox proteins across all organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C143 is explicitly speculative ('propose', 'may play') and represents a hypothesis about broader implications. While the concept is interesting and the nDsbD system provides a compelling example, evidence for this mechanism in other redox proteins would be needed to support this generalization. This is appropriately framed as a proposal for future investigation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C104",
+      "C105",
+      "C107"
+    ],
+    "result": "RNA-Seq analysis of M. xanthus DK1622 development was performed with two biological replicates at seven time points (0, 6, 12, 24, 48, 72, 96 hr), yielding high-quality data with good replicate concordance (R\u00b2 > 0.98 except at 24 hr) and adequate mRNA coverage. The RNA-Seq data were validated against \u03b2-galactosidase reporter assays and previous studies, showing general agreement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe a well-designed RNA-Seq experiment with appropriate replication, sampling, and quality metrics. The validation experiments (C104, C105) demonstrate concordance with independent methods. The false discovery rate calculation (C107, 3.97%) provides statistical confidence. The lower correlation at 24 hr (C28, C29) is acknowledged with a plausible biological explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C106"
+    ],
+    "result": "1415 genes (19.6% of the M. xanthus genome) showed statistically significant developmental regulation and were organized into 10 developmental groups (DGs) based on expression patterns. These DGs corresponded to distinct developmental phases: growth (DGs 1-2), aggregation (DGs 3-5), transition to sporulation (DGs 6-7), and sporulation (DGs 8-10), with 35.6% of regulated genes peaking during sporulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C30-C40 present the core transcriptomic findings with clear quantitative data and appropriate clustering methodology. The k-means clustering approach was validated by comparing 6-12 clusters, and 10 DGs were selected based on visual inspection. The distribution of genes across developmental phases is well-documented with specific percentages. The interpretation that high sporulation gene expression reflects morphological rewiring (C40) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The number of genes accounting for 50% of mRNA expression increased from ~300 during growth to 762 by the end of sporulation, suggesting the transcriptome becomes distributed across a broader number of genes during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 provides quantitative data showing transcriptome redistribution, and C42 offers a reasonable interpretation. This pattern is consistent with the biological complexity of sporulation requiring diverse gene expression. The data are clearly presented in Figure 3\u2014figure supplement 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Of approximately 280 characterized developmental genes, 167 were included in the developmental groups, and most showed peak expression patterns matching their known functional phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 demonstrate that the RNA-Seq data are consistent with prior functional studies, providing validation of the developmental groupings. This internal consistency check strengthens confidence in the clustering approach and temporal assignments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "92% of genes up-regulated in a chemical-induced sporulation transcriptome were also up-regulated in the developmental transcriptome, with significant enrichment in DGs 7 and 8 (p = 1\u00d710\u207b\u00b9\u00b2 and p = 2\u00d710\u207b\u00b9\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 provide strong statistical evidence for overlap between two independent sporulation datasets. The high percentage (92%) and highly significant p-values indicate robust concordance. This cross-validation strengthens the biological relevance of DGs 7 and 8 for sporulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A-motility genes were up-regulated during early development while S-motility genes decreased at 6 hr then returned to growth levels during aggregation, suggesting A-motility is preferentially used during aggregation. Both motility systems decreased during sporulation, though some A-motility genes peaked again, consistent with their repurposing for spore coat assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 present clear differential expression patterns for two motility systems with biological interpretation. The inference that A-motility is preferential during aggregation (C49) is reasonable given the expression data. The connection to spore coat assembly (C51) is supported by citation to prior work (Wartel et al., 2013) and is consistent with the observed late expression peak.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Energy generation genes (TCA cycle, oxidative phosphorylation) in DG2 were down-regulated at 6 hr but later up-regulated at lower levels, while glycolytic/gluconeogenic pathway genes were up-regulated during development, peaking at 24-48 hr. Glycogen synthesis genes (e.g., GlgC) were in DG4 while utilization genes appeared constitutive, suggesting post-transcriptional regulation of glycogen metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 describe metabolic rewiring during development with clear expression patterns. The interpretation that glycolytic up-regulation enables energy extraction from lysed cells or glycogen (C57) is speculative but reasonable. The inference of post-transcriptional regulation (C61) is supported by citation to prior work on PfkA phosphorylation and is consistent with overlapping expression of opposing pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Lipid bodies accumulate prior to sporulation and consist of triacylglycerides from membrane phospholipids. Genes for lipid degradation (\u03b2-oxidation and other pathways) reached maximum expression at 24-48 hr or later, suggesting lipids are preferentially consumed during sporulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by citations to prior work. Claims C65-C66 present expression data with reasonable interpretation that lipid degradation timing indicates sporulation-phase consumption. The inference (C66) is consistent with the temporal expression patterns shown in Figure 6C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Four glycosyl hydrolases and 60 proteases were developmentally up-regulated, suggesting cells recycle vegetative polysaccharides and proteins or scavenge macromolecules from lysed cells. Sixteen proteases were growth-specific and down-regulated after 6 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C69-C70 provide quantitative data on hydrolytic enzyme expression. The interpretation that these enzymes enable recycling/scavenging (C68) is speculative but biologically plausible given the starvation context and need for building blocks during development. The data are clearly presented in Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Genes for secondary metabolite biosynthesis, including myxovirescine and myxoprincomide, were expressed during growth but increased during development. Of 46 NRPS/PKS/mixed genes, 10 were developmentally up-regulated with 9/10 in DGs 8-10. Overall, 129 genes in secondary metabolite regions were in DGs, with 51 in DGs 8-10, suggesting secondary metabolites may play unrecognized developmental roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 present clear expression data for secondary metabolite genes with appropriate citations. The speculation that secondary metabolites have unrecognized developmental roles (C77) is reasonable given the unexpected late-stage expression patterns. The enrichment in late DGs (8-10) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "76 translation-related genes (5.4% of DG genes) were developmentally regulated, initially down-regulated at 6 hr (likely due to stringent response) but subsequently up-regulated to growth levels or higher. M. xanthus encodes paralogous ribosomal proteins (S1, S4, S14, L28, L33), with S4 paralogs showing 10-fold differential expression at 48 hr, suggesting translational machinery regulation may direct development through alternative ribosome composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C83 present clear expression data for translation genes and ribosomal protein paralogs. However, the speculation that translational regulation directs development (C84) lacks direct experimental support. While the authors cite prior work on alternative ribosomes in other bacteria (C85-C86), demonstrating functional significance of the observed expression changes would require additional experiments (e.g., ribosome profiling, functional studies of paralogs). The data are suggestive but not conclusive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "21 one-component system genes, 47 two-component system genes (23 HKs, 10 hybrid HKs, 14 RRs), and 9 sigma factors were developmentally regulated in sequential fashion. Only 16 of 47 TCS genes were previously characterized. The major sigma factor rpoD showed complex regulation while rpoN was up-regulated throughout development, consistent with bEBP cascade activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 provide comprehensive quantitative data on regulatory gene expression with clear temporal patterns. The identification of many uncharacterized regulators (C91) is valuable for future studies. The interpretation that rpoN/bEBP expression is consistent with prior cascade models (C95) is supported by citation and strengthens the biological validity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "22 serine/threonine protein kinase genes were developmentally regulated, including 7 pseudokinases and 15 predicted active kinases. A high number of regulators direct M. xanthus development, acting simultaneously and sequentially to modulate developmental events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 provide clear quantitative data on STPK expression. The interpretation that multiple regulators act in coordinated fashion (C99) is reasonable given the complex temporal patterns observed across all regulatory gene classes. This synthesis is well-supported by the comprehensive expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "M. xanthus is a soil bacterium with a complex multicellular lifecycle involving predatory growth and starvation-induced development. Upon starvation, cells aggregate using A- and S-motility systems to form fruiting bodies containing ~10\u2075-10\u2076 myxospores. Only ~10% of cells become myxospores, ~60% undergo programmed cell death (likely providing nutrients), and the remainder become peripheral rods. Development is controlled by regulatory networks responding to starvation signals (cyclic-di-GMP, (p)ppGpp) through four master modules and five extracellular signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 provide background information on M. xanthus biology, all supported by appropriate citations to prior literature. These claims establish the biological context for the transcriptomic study and are well-established in the field. The speculative element about programmed cell death providing nutrients (C12) is appropriately qualified with 'most likely' and supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Comparison to other developmental bacteria shows similar proportions of developmentally regulated genes: C. crescentus (>19%), B. subtilis (520 Spo0A-dependent genes), and S. coelicolor (1901 genes, 24% of ORFs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 provide comparative context from other model organisms, all supported by appropriate citations. This comparison helps contextualize the M. xanthus findings within broader bacterial developmental biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "The developmental mRNA expression profiling will act as a blueprint for complete elucidation of the M. xanthus developmental regulatory program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is a forward-looking statement about the utility of the dataset. While speculative about future impact, this is a reasonable assessment given the comprehensive nature of the data and the identification of many uncharacterized regulators. This type of concluding statement is appropriate for a resource paper.",
+    "result_type": "MINOR"
+  }
+]

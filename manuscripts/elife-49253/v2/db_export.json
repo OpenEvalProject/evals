@@ -1,0 +1,1813 @@
+{
+  "submission": {
+    "id": "342a0795-ab09-4a22-a181-31d1816ced80",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:37:41.706888Z",
+    "updated_at": "2025-12-02T11:37:41.706888Z"
+  },
+  "content": [
+    {
+      "id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "submission_id": "342a0795-ab09-4a22-a181-31d1816ced80",
+      "content_type": "manuscript",
+      "content_text": "# A potent voltage-gated calcium channel inhibitor engineered from a nanobody targeted to auxiliary CaV\u03b2 subunits\n\n## Authors\n\n- Travis J Morgenstern<sup>1</sup> ([ORCID: 0000-0003-2634-8470](https://orcid.org/0000-0003-2634-8470))\n- Jinseo Park<sup>1</sup>\n- Qing R Fan<sup>1</sup> ([ORCID: 0000-0002-9330-0963](https://orcid.org/0000-0002-9330-0963))\n- Henry M Colecraft<sup>1</sup> ([ORCID: 0000-0002-2340-8899](https://orcid.org/0000-0002-2340-8899)) \u2020\n\n### Affiliations\n\n1. Department of Pharmacology Columbia University, Vagelos College of Physicians and Surgeons New York United States\n2. Department of Physiology and Cellular Biophysics Columbia University, Vagelos College of Physicians and Surgeons New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nInhibiting high-voltage-activated calcium channels (HVACCs; CaV1/CaV2) is therapeutic for myriad cardiovascular and neurological diseases. For particular applications, genetically-encoded HVACC blockers may enable channel inhibition with greater tissue-specificity and versatility than is achievable with small molecules. Here, we engineered a genetically-encoded HVACC inhibitor by first isolating an immunized llama nanobody (nb.F3) that binds auxiliary HVACC CaV\u03b2 subunits. Nb.F3 by itself is functionally inert, providing a convenient vehicle to target active moieties to CaV\u03b2-associated channels. Nb.F3 fused to the catalytic HECT domain of Nedd4L (CaV-a\u03b2lator), an E3 ubiquitin ligase, ablated currents from diverse HVACCs reconstituted in HEK293 cells, and from endogenous CaV1/CaV2 channels in mammalian cardiomyocytes, dorsal root ganglion neurons, and pancreatic \u03b2 cells. In cardiomyocytes, CaV-a\u03b2lator redistributed CaV1.2 channels from dyads to Rab-7-positive late endosomes. This work introduces CaV-a\u03b2lator as a potent genetically-encoded HVACC inhibitor, and describes a general approach that can be broadly adapted to generate versatile modulators for macro-molecular membrane protein complexes.\n\n## Introduction\n\nInhibition of high-voltage-activated calcium channels (HVACCs) is an important prevailing or potential therapy for diverse cardiovascular (hypertension, cardiac arrhythmias, cerebral vasospasm) and neurological diseases (epilepsy, chronic pain, Parkinson\u2019s disease) (Zamponi et al., 2015). Small molecule HVACC inhibitors include CaV1 blockers (dihydropyridines, benzothiazepenes phenylalkylamines) and venom peptides that target CaV2.1 (\u03c9-agatoxin), CaV2.2 (\u03c9-conotoxin), and CaV2.3 (SNX-482) channels. When introduced into an organism, small-molecule HVACC blockers are typically widely distributed leading to off-target effects that can narrow the therapeutic window and, thereby, adversely impact therapy. Genetically-encoded HVACC inhibitors can circumvent off-target effects because they can be selectively expressed in target tissues or cells; thus, they may be useful alternatives or complements to small molecule therapy (Yang et al., 2013; Murata et al., 2004).\n\nThere are seven distinct HVACCs (CaV1.1 - CaV1.4; CaV2.1 - CaV2.3) which exist in cells as multi-subunit complexes comprising pore-forming \u03b11-subunits assembled with auxiliary proteins which include \u03b2, \u03b12-\u03b4, and \u03b3 subunits (Zamponi et al., 2015; Buraei and Yang, 2010; Dolphin, 2012). HVACCs are named according to the identity of the component \u03b11 subunit (\u03b11A-\u03b11F; \u03b11S) which also contains the voltage sensor, selectivity filter, and channel pore. The various auxiliary subunits typically regulate HVACC trafficking, gating, and modulation, and are recognized as potential targets for developing HVACC-directed therapeutics. For example, gabapentin, which is clinically utilized for treating epilepsy and neuropathic pain, targets HVACC \u03b12-\u03b4 subunits (Gee et al., 1996). Based on the presumption that the association of \u03b11 with \u03b2 is obligatory for the formation of surface-targeted functional HVACCs as indicated by heterologous expression experiments (Buraei and Yang, 2010), disruption of the \u03b11-\u03b2 interaction has been long pursued as a strategy to develop HVACC inhibitors (Young et al., 1998; Findeisen et al., 2017; Chen, 2018; Khanna et al., 2019). To this end, over-expression of peptides derived from the \u03b11-interaction domain (AID) which contains the amino acid sequence responsible for high-affinity \u03b11-\u03b2 association (Pragnell et al., 1994; Van Petegem et al., 2004; Chen et al., 2004; Opatowsky et al., 2003), has been utilized by several groups as putative genetically-encoded HVACC inhibitors (Findeisen et al., 2017; Yang et al., 2019). However, the efficacy of this approach in vivo may be limited as recent data suggests that in some adult tissue the \u03b11-\u03b2 interaction is not absolutely essential for surface trafficking of HVACCs (Yang et al., 2019; Meissner et al., 2011).\n\nRad/Rem/Rem2/Gem/Kir (RGK) proteins are endogenous small Ras-like G-proteins that profoundly inhibit all HVACCs when over-expressed in either heterologous cells or native tissue (B\u00e9guin et al., 2001; Finlin et al., 2003; Chen et al., 2005; Xu et al., 2010). They form ternary complexes with HVACCs via binding to constituent \u03b2 subunits and inhibit currents via multiple mechanisms including removal of surface channels and impairing gating (Yang and Colecraft, 2013; Yang et al., 2010). Despite their efficacy, utility of RGKs as genetically-encoded HVACC inhibitors is confounded by potential off-target effects since they interact with and regulate other binding partners such as cytoskeletal proteins, 14-3-3, calmodulin, and CaM kinase II (Yang and Colecraft, 2013; Correll et al., 2008; Royer et al., 2018; B\u00e9guin et al., 2005; Ward et al., 2004). A critical unmet need is the development of genetically-encoded HVACC inhibitors that possess the high efficacy of RGKs but lack the problematic interactions with other signaling proteins. Here, we achieve this by fusing the homologous to the E6-AP carboxyl terminus (HECT) catalytic domain of the E3 ubiquitin ligase, neural precursor cell developmentally down-regulated protein 4 (Nedd4-2 or hereafter referred to as Nedd4L), to a CaV\u03b2-targeted nanobody. The resulting construct, termed CaV-a\u03b2lator, eliminated diverse HVACCs both in both reconstituted systems and native excitable cells, providing a unique new tool for probing CaV1/CaV2 signaling and regulation in vivo, and potential development into a therapeutic.\n\n## Results\n\n### Isolation and characterization of CaV\u03b2-targeted nanobodies\n\nWe sought to develop a nanobody targeted to CaV\u03b2s that would be incorporated into CaV channel complexes but be functionally silent, to serve as a vehicle to potentially address distinct enzymatic moieties or sensors to endogenous channels. We expressed CaV\u03b21b and CaV\u03b23 in HEK293 cells using BacMam expression and purified the proteins using affinity purification, ion exchange, and size exclusion chromatography (Figure 1a). Purified \u03b21 and \u03b23 (1 mg each) were used for llama immunization, and successful serum conversion was confirmed by ELISA (not shown). Messenger RNA was extracted from isolated lymphocytes, PCR-amplified and cloned into a plasmid vector (pComb3XSS) to generate a VHHS phage library (Figure 1b). Putative nanobody binders were enriched from the phage library using three rounds of phage display and panning (Pardon et al., 2014). We performed a 96-well ELISA on enriched phage libraries and selected 14 positive clones for sequencing (Figure 1c). We identified at least seven distinct classes of nanobody binders based on the unique sequences within complementarity determining regions (CDR1-3), the major determinants of antigen binding (Figure 1d,e).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49253/elife-49253-fig1-v2.jpg)\n\n**Figure 1.:** (a) Size-exclusion chromatograph and Coomassie gel (inset) showing purified Cav\u03b21 from baculovirus-infected HEK293 GnTl- cells. (b) Flow-chart of nanobody generation. (c) Phage ELISA using CaV\u03b21 as bait and periplasmic extracts from single infected E. coli clones. Red bars represent clones that were selected for subsequent analyses; blue bar represents a negative control from an E. coli expressing an anti-GFP nanobody. (d) Cartoon showing conventional IgG antibody (left) and camelid heavy-chain antibody (center). Right, a schematic representation of the variable heavy chain (VHH or nanobody) of camelid heavy-chain antibodies. The three CDR loops which are the primary determinants of antigen-binding are shown in red, green, and blue. (e) Sequence alignment of CDR3 from selected clones. (f) Left, schematic of co-translocation assay to determine nanobody/CaV\u03b2 interaction in HEK293 cells. Right, confocal images showing membrane co-translocation of CaV\u03b2X-YFP and nb.F3-CFP-C1PKC\u03b3 in response to treatment with 1 uM phorbol 12,13-dibutyrate (PdBu). (g) Left, exemplar isothermal titration calorimetry trace using purified CaV\u03b22b and nb.F3. Right, summary of ITC thermodynamic parameters. N, stoichiometry; Kd, dissociation constant; Ka, affinity constant; \u2206H, enthalpic change; \u2206S entropic change. T\u00a0=\u00a0298K.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49253/elife-49253-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Right, confocal images of HEK293 cells expressing nb.F3-CFP-C1PKC\u03b3 and a YFP-CaV\u03b2 before (top) and after (bottom) the addition of 1 \u00b5M Pdbu.\n\nWe adopted a small-molecule-induced fluorescence co-translocation assay to simultaneously determine whether: (1) individual nanobodies were well-behaved when expressed in mammalian cells (i.e. do not aggregate), and (2) bound CaV\u03b2s. A tripartite construct consisting of individual nanobodies fused to CFP and the C1 domain of PKC\u03b3 was cloned into a CMV expression vector and transiently co-transfected with YFP-tagged CaV\u03b2s into HEK293 cells. After pilot experiments, we chose one nanobody clone, nb.F3, for in-depth characterization and development. Both nb.F3-CFP-C1 and YFP-\u03b21 were uniformly expressed in the cytosol of transfected HEK293 cells (Figure 1f). Application of 1 \u03bcM phorbol-12,13-dibutyrate (PdBu) led to the rapid and dramatic redistribution of nb.F3-CFP-C1 from the cytosol to the plasma and nuclear membranes (Figure 1f). Reassuringly, YFP-\u03b21 concomitantly redistributed to the plasma and nuclear membranes, providing a convenient visual confirmation that it associates with nb.F3 inside cells (Figure 1f). Similar experiments conducted with the other CaV\u03b2s (\u03b22-\u03b24) showed that they all bind with nb.F3-CFP-C1 in cells (Figure 1f; Figure 1\u2014figure supplement 1), indicating the nanobody interacts with an epitope conserved among CaV\u03b2s. Isothermal titration calorimetry using purified nb.F3 and CaV\u03b22b indicated a high-affinity (Kd\u00a0=\u00a013.2\u00a0\u00b1\u00a07.2 nM) interaction and a 1:1 stoichiometry (Figure 1g).\n\nIt was important to our overall strategy that nb.F3 incorporate into assembled HVACC complexes without impacting channel function or subunit stability. We utilized a flow cytometry assay to assess the impact of nb.F3 on recombinant CaV2.2 trafficking, subunit expression levels, and whole-cell currents, all of which are known to be regulated by CaV\u03b2 (Figure 2) (Waithe et al., 2011). We used an engineered \u03b11B harboring two tandem high-affinity bungarotoxin-binding sites (2XBBS) in the extracellular domain IV S5-S6 loop and a C-terminus YFP tag to enable simultaneous detection of surface (Alexa647-conjugated bungarotoxin) and total (YFP fluorescence) channel populations in non-permeabilized cells (Figure 2a). We co-expressed BBS-\u03b11B-YFP and CaV\u03b2 either with or without nb.F3-P2A-CFP and utilized flow cytometry to rapidly measure surface and total channel expression. In cells expressing BBS-\u03b11B-YFP and \u03b21b, nb.F3 had no impact on Alexa647 or YFP fluorescence compared to control (Figure 2b\u2013d), indicating no disruption of channel trafficking or effect on \u03b11B expression. Similar results regarding the inertness of nb.F3 on \u03b11B trafficking and stability were obtained when CaV2.2 was reconstituted with the other CaV\u03b2 (\u03b22-\u03b24) subunits (Figure 2d).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49253/elife-49253-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic of experimental strategy; BBS-\u03b11B-YFP was transfected in HEK293 cells with \u03b12\u03b4, CaV\u03b2 and either CFP or nb.F3-P2A-CFP. (b) Exemplar flow cytometry dot plot of cells expressing BBS-\u03b11B-YFP + CaV\u03b21 + \u03b12\u03b4-1 and either CFP (left) or nb.F3-P2A-CFP (right). Approximately 100,000 cells are represented here and throughout. Horizontal and vertical lines represent the threshold for YFP- and Alexa-647-positive cells, respectively, as determined with single color controls. (c) Cumulative distribution histogram of Alexa-647 (left) or YFP fluorescence (right) from CFP (black) or nb.F3 (red) expressing cells. YFP-positive cells were selected for the analysis; dashed lines represent thresholds for Alexa-647 and YFP fluorescence signals above background. (d) Summary flow cytometry data of surface (647, filled) and total (YFP, patterned) levels of BBS-\u03b11B-YFP. Data from nb.F3-expressing cells was normalized to CFP control group. n=>5,000 cells analyzed per experiment, N=4 separate experiments, error bars, s.e.m. (e) Experimental strategy; HEK293 cells were transfected with BBS-\u03b11B + CaV\u03b2-YFP + \u03b12\u03b4-1. (f-h) Same format as (b-d) for cells expressing BBS-\u03b11B + CaV\u03b2-YFP+ \u03b12\u03b4-1 \u00b1 nb.F3-P2A-CFP. (i) Exemplar whole-cell Ba2+ currents (top) and population I-V curves (bottom) in HEK293 cells expressing \u03b11B + CaV\u03b21 + \u03b12\u03b4-1 and either CFP (black) or nb.F3-P2A-CFP (red). (j-l) Same format as (i) for cells expressing CaV\u03b22 (j), CaV\u03b23 (k), and CaV\u03b24 (l). Scale bar 1 nA, 10 ms. Data are means \u00b1 s.e.m., n=10 for each point.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49253/elife-49253-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a)\u00a0Exemplar flow cytometry dot plot of cells transfected with BBS-\u03b11B, \u03b12-\u03b4, YFP-CaV\u03b22 and CFP (left) or nb.F3 (right).\u00a0(b) Cumulative distribution histogram of data from (a) of Alexa-647 (left) or YFP fluorescence (right) from CFP (black) or nb.F3 (red) expressing cells. YFP-positive cells (n\u00a0=>\u00a05,000 cells/experiment) were selected for analysis; the threshold for 647 labeling and YFP fluorescence above background is represented with the dashed line. (c,d) as in (a,b) for cells expressing YFP-CaV\u03b23. (e,f) as in (a,b) for cells expressing CaV\u03b24..\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49253/elife-49253-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a)\u00a0Cartoon of experimental strategy. BBS-\u03b11C was transfected in HEK293 cells with each YFP-CaV\u03b2 and either CFP or nb.F3-P2A-CFP. (b) Exemplar flow cytometry dot plot of cells transfected with BBS-\u03b11C, CaV\u03b21 and CFP (left) or nb.F3 (right). (c) Cumulative distribution histogram of Alexa-647 (left) or YFP fluorescence (right) from CFP (black) or nb.F3 (red) expressing cells. YFP-positive cells (n\u00a0>\u00a05,000 cells/experiment) were selected for analysis; the threshold for 647 labeling and YFP fluorescence above background is represented with the dashed line. (d) Summary flow cytometry data of surface (647, filled) and total (YFP, patterned) levels of BBS-\u03b11C. Data from nb.F3 was normalized to CFP control group. N\u00a0=\u00a04 separate experiments, error bars, s.e.m. (e) population I-V curves from whole-cell patch clamp measurements in HEK293 cells expressing \u03b11C, CaV\u03b22a, and CFP (black, n\u00a0=\u00a09) or nb.F3 (red, n\u00a0=\u00a012). Data are means\u00a0\u00b1\u00a0s.e.m.\n\nTo examine a potential direct impact of nb.F3 on CaV\u03b2 itself, we applied the flow cytometry assay to cells expressing BBS-\u03b11B + \u03b2-YFP\u00a0\u00b1\u00a0nb .F3-P2A-CFP (Figure 2e). Not surprisingly, nb.F3 did not impact the surface trafficking of BBS-\u03b11B co-expressed with any of the four CaV\u03b2 isoforms (Figure 2f\u2013h, Figure 2\u2014figure supplement 1). The expression levels of \u03b21-YFP and \u03b24-YFP were unaffected by nb.F3, whereas the levels of \u03b22 and \u03b23 were modestly reduced (although this effect did not reach statistical significance), suggesting a possible slightly increased vulnerability of these two isoforms to degradation when bound by the nanobody (Figure 2h). Similar observations regarding the lack of effect of nb.F3 on channel trafficking and subunit expression levels were made in cells expressing CaV1.2 channels reconstituted from BBS-\u03b11C + \u03b2-YFP\u00a0\u00b1\u00a0nb .F3-P2A-CFP (Figure 2\u2014figure supplement 2).\n\nFinally, we used patch-clamp electrophysiology to evaluate the impact of nb.F3 on whole-cell currents through recombinant CaV2.2 channels reconstituted in HEK293 cells. Cells expressing \u03b11B + \u03b21b + \u03b12\u03b4 displayed robust whole-cell Ba2+ currents that were completely unaffected by nb.F3 (Figure 2i; Ipeak,0mV\u00a0=\u00a0\u2212104.4\u00a0\u00b1\u00a022.0 pA/pF, n\u00a0=\u00a010 for CFP, and Ipeak,0mV\u00a0=\u00a0\u2212103.5\u00a0\u00b1\u00a039.5 pA/pF, n\u00a0=\u00a010 for nb.F3). A similar lack of effect of nb.F3 was observed on currents from either CaV2.2 reconstituted with the other \u03b22-\u03b24 subunits (Figure 2j-l), or CaV1.2 (\u03b11C + \u03b22a + \u03b12\u03b4) channels (Figure 2\u2014figure supplement 2).\n\nOverall, these results indicate that nb.F3 binds \u03b21-\u03b24 subunits in cells, and is potentially assembled into CaV channel complexes in a functionally silent manner, essentially acting as an unobtrusive passenger. However, it was also possible that the apparent functional inertness of nb.F3 on CaV2.2 and CaV1.2 channels had a more trivial explanation\u2014 that CaV\u03b2s assembled with pore-forming \u03b11-subunits are simply inaccessible to nb.F3. We could discriminate between these two possible scenarios by determining whether nb.F3 could be used to target bioactive molecules to regulate assembled channels, as we did next.\n\n### Potent functional effects of an F3-Nedd4L chimeric protein on CaV1/CaV2 channels\n\nWe hypothesized that fusing the catalytic domain of an E3 ubiquitin ligase to nb.F3 would generate a genetically-encoded molecule that inhibits Cav1/Cav2 channels by reducing their surface density (Kanner et al., 2017). Accordingly, we generated a chimeric construct (nb.F3-Nedd4L) by fusing the catalytic HECT domain of Nedd4L to the C-terminus of nb.F3. We also generated a catalytically dead mutant of the chimeric construct (nb.F3-Nedd4L[C942S]) to distinguish between ubiquitination-dependent and independent effects. Both constructs were generated in a P2A-CFP expression vector, enabling use of CFP fluorescence to confirm protein expression.\n\nIn experiments mimicking those described for nb.F3, we examined the impact of nb.F3-Nedd4L and nb.F3-Nedd4L[C942S] on reconstituted CaV2.2 channel trafficking, subunit expression levels, and whole-cell currents (Figure 3). Given the classical role of E3 ubiquitin ligases in mediating degradation of target proteins, we first assessed if nb.F3-Nedd4L affected total CaV\u03b2 expression (Figure 3a,b). In cells expressing BBS-\u03b11B + \u03b21b-YFP + \u03b12\u03b4, neither F3-Nedd4L nor F3-Nedd4L[C942S] had any significant impact on \u03b21b total expression as reported by the unchanged YFP fluorescence compared to negative control cells (Figure 3a,b). Similar results were obtained when BBS-\u03b11B was reconstituted with YFP-tagged \u03b22, \u03b23, or \u03b24 subunits, though there was a trend towards lower fluorescence with \u03b22a and \u03b24 (Figure 3b). By contrast, nb.F3-Nedd4L significantly suppressed surface density of BBS-\u03b11B irrespective of the identity of the co-expressed YFP-tagged CaV\u03b2 (Figure 3c, red bars; Figure 3\u2014figure supplement 1). The decreased BBS-\u03b11B surface density was not observed with nb.F3-Nedd4L[C942S] (Figure 3c, green bars), indicating it requires the catalytic activity of the attached Nedd4L HECT domain. Similarly, in cells expressing BBS-\u03b11C + \u03b2X-YFP, nb.F3-Nedd4L strongly reduced CaV1.2 surface density in a ubiquitin-dependent manner (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49253/elife-49253-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic of experimental design; HEK293 cells were transfected with BBS-\u03b11B + CaV\u03b2-YFP + \u03b12\u03b4\u22121, and either nb.F3, nb.F3-Nedd4L, or nb.F3-Nedd4L[C942S]. (b) Exemplar histograms (left) and summary data (right) of flow cytometry experiments measuring total (YFP) levels of CaV\u03b21b-YFP. Each data set was normalized to a control group that expressed CFP. n\u00a0>\u00a05,000 cells analyzed per experiment, N\u00a0=\u00a03 separate experiments, error bars, s.e.m. (c) Exemplar histograms (left) and summary data (right) of flow cytometry experiments measuring surface (647) levels of BBS-\u03b11B. White dashed line is the threshold for 647 signal above background. (d) Experimental strategy; same format as in (a) except YFP was fused to BBS-\u03b11B, enabling measurement of the total levels of the \u03b11B subunit. (e-f) Same format as in (b-d) for cells expressing BBS-\u03b11B-YFP + CaV\u03b2 + \u03b12\u03b4-1. (g) Exemplar traces (top) and population I-V curves (bottom) from whole-cell patch clamp measurements in HEK293 cells expressing \u03b11B + CaV\u03b21b + \u03b12\u03b4-1 and nb.F3 (black, Ipeak, 0mV = -103.5 \u00b1 39.5 pA/pF, n=10), nb.F3-Nedd4L (red, Ipeak, 0mV = -3 \u00b1 0.53 pA/pF, n=11), or nb.F3-Nedd4L[C942S] (green, Ipeak, 0mV = -117 \u00b1 34.8 pA/pF, n=8). (h-j) Same format as (g) for CaV2.2 channels reconstituted with CaV\u03b22 (h), CaV\u03b23 (i), and CaV\u03b24 (j) with nb.F3 (black) or nb.F3-Nedd4L (red). Scale bar 1nA, 10ms. Data are means \u00b1 s.e.m., n=10 for each point. *P < 0.05 compared with control, one-way ANOVA with Tukey\u2019s multiple comparison test. \u2020P < 0.01 compared with control, unpaired, two-tailed Student\u2019s t-test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49253/elife-49253-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a)\u00a0Exemplar flow cytometry dot plot of cells transfected with BBS-\u03b11B, \u03b12-\u03b4, YFP-CaV\u03b21 and nb.F3 (left), nb.F3-Nedd4L (middle) or nb.F3-Nedd4L[C942S] (right).\u00a0(b) Histogram a of YFP (left) or Alexa-647 fluorescence (right) from samples in (a) YFP-positive cells (n\u00a0>\u00a05,000/experiment) were selected for analysis, the threshold for 647 labeling above background is represented with the dashed line. (c,d) as in (a,b) for cells expressing YFP-CaV\u03b22. (e,f) as in (a,b) for cells expressing YFP-CaV\u03b23. (c,d) as in (a,b) for cells expressing YFP-CaV\u03b22. (g,h) as in (a,b) for cells expressing YFP-CaV\u03b24.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49253/elife-49253-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a)\u00a0Schematic of experimental design. HEK293 cells were transfected with BBS-\u03b11C, YFP-CaV\u03b2, and either nb.F3, nb.F3-Nedd4L or nb.F3-Nedd4L[C942S]. (b) Exemplar flow cytometry dot plot of cells transfected with BBS-\u03b11C, YFP-CaV\u03b21b and nb.F3 (left), nb.F3-Nedd4L (middle) or nb.F3-Nedd4L[C942S] (right). (c,d) Histogram of YFP (c) and Alexa-647 (d) fluorescence from samples in (b) (left) and summary data from N\u00a0=\u00a03 separate experiments (right). YFP-positive cells (n\u00a0>\u00a05,000 cells per experiment) were selected for analysis, the threshold for 647 labeling above background is represented with the dashed line. *p<0.05 compared with control, one-way ANOVA with Tukey\u2019s multiple comparison test.\n\nGiven the striking effect of nb.F3-Nedd4L on surface population of channels without affecting total levels Cav\u03b2, we next assessed whether there was any impact of nb.F3-Nedd4L on total \u03b11B subunit expression. Similar to our observations for CaV\u03b2, nb.F3-NeddL had no significant impact on the expression of BBS-\u03b11B-YFP (Figure 3e, red bars) relative to either negative controls (black bars) or cells expressing nb.F3-Nedd4L[C942S] (green bars). Not surprisingly, nb.F3-Nedd4L markedly impaired surface trafficking of BBS-\u03b11B-YFP co-expressed with any CaV\u03b2 (Figure 3f).\n\nFinally, we examined the functional impact of nb.F3-Nedd4L on reconstituted CaV2.2 whole-cell currents. Remarkably, nb.F3-Nedd4L essentially eliminated CaV2.2 currents reconstituted from \u03b11B + \u03b12\u03b4 co-expressed with any of the four CaV\u03b2s (Figure 3g-j). Further, nb.F3-Nedd4L was equally effective in ablating whole-cell currents in reconstituted CaV1.2, CaV1.3, CaV2.1, and CaV2.3 channels (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49253/elife-49253-fig4-v2.jpg)\n\n**Figure 4.:** (a) Population I-V curves from HEK293 expressing \u03b11C + \u03b21b + \u03b12\u03b4\u22121 with either nb.F3 (black, Ipeak, 0mV\u00a0=\u00a0\u221248.4\u00a0\u00b1\u00a08.4 pA/pF, n\u00a0=\u00a012) or CaV-a\u03b2lator (red, Ipeak, 0mV\u00a0=\u00a0\u22120.93\u00a0\u00b1\u00a00.16 pA/pF, n\u00a0=\u00a08). (b-d) Same format as (a) for cells expressing reconstituted CaV1.3 (b), CaV2.1 (c), or CaV2.3 (d) channels. Data are means\u00a0\u00b1\u00a0s.e.m.\u2020p<0.01 compared with control, unpaired, two-tailed Student\u2019s t-test.\n\nGiven its exceptional efficacy in ablating whole-cell HVACC currents via a functionalized CaV\u03b2-targeted nanobody, we named nb.F3-Nedd4L as CaV-a\u03b2lator, and describe the process of HVACC current elimination by this molecule as CaV-a\u03b2lation.\n\n### CaV-a\u03b2lation of endogenous CaV1.2 channels in cardiomyocytes\n\nWe next determined whether CaV-a\u03b2lator could effectively inhibit HVACC currents in native cells where the nano-environment around CaV1/CaV2 channels is typically more complex than in heterologous cells. Cultured adult guinea pig ventricular cardiomyocytes (CAGPVCs) provided an initial exceptional challenge because they have an intricate cyto-architecture and express CaV1.2 channels that are predominantly targeted to specialized dyadic junctions. Moreover, as it has now been shown that in adult cardiomyocytes binding of \u03b11C to CaV\u03b2 is not obligatory for substantive CaV1.2 channel trafficking to the surface sarcolemma (Yang et al., 2019; Meissner et al., 2011), the fraction of CaV\u03b2-bound CaV1.2 channels contributing to the whole-cell L-type current (ICa,L) in ventricular myocytes is ambiguous. We used adenovirus to express CaV-a\u03b2lator or nb.F3-Nedd4L[C942S] in CAGPVCs which retain the rod-shaped phenotype and overall cyto-architecture of freshly isolated heart cells (Figure 5a). Control (non-infected) cardiomyocytes expressed ICa,L that peaked at a 0 mV test pulse (Figure 5a,b; Ipeak,0mV\u00a0=\u00a0\u22126.5\u00a0\u00b1\u00a00.2 pA/pF, n\u00a0=\u00a08). By contrast, in contemporaneous experiments, cardiomyocytes expressing CaV-a\u03b2lator via adenovirus-mediated infection displayed virtually no CaV1.2 currents, demonstrating an exceptional CaV-a\u03b2lation efficiency in this system (Figure 5a,b; Ipeak,0mV\u00a0=\u00a0\u22121.0\u00a0\u00b1\u00a00.3 pA/pF, n\u00a0=\u00a09). Cardiomyocytes expressing nb.F3-Nedd4L[C942S] displayed ICa,L similar to control (Ipeak,0mV\u00a0=\u00a0\u22125.1\u00a0\u00b1\u00a00.6 pA/pF, n\u00a0=\u00a010), indicating that ubiquitination is necessary for CaV-a\u03b2lation in this system.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49253/elife-49253-fig5-v2.jpg)\n\n**Figure 5.:** (a) Confocal images (top) and exemplar traces from whole-cell recordings of uninfected guinea pig cardiomyocytes (left), or infected with adenovirus expressing either CaV-\u03b2lator (middle) or nb.F3-Nedd4L[C942S] (right). Scale bar 0.2nA, 10 ms. (b) Population I-V curves from cardiomyocytes expressing CaV-\u03b2lator (red), nb.F3-Nedd4L[C942S] (green), or an uninfected control (black). (c) Left, exemplar confocal images of cardiomyocytes fixed and immunostained with \u03b11C (green) and ryanodine receptor (RyR2, magenta) antibodies. Yellow box indicates region of high-zoom merge image.Right, co-localization between \u03b11C and RyR in uninfected cardiomyocytes (gray, PCC\u00a0=\u00a00.47\u00a0\u00b1\u00a00.02, n\u00a0=\u00a015), and those expressing either CaV-a\u03b2lator (red, PCC\u00a0=\u00a00.24\u00a0\u00b1\u00a00.02 n\u00a0=\u00a019), or nb.F3-Nedd4L[C942S] (green, PCC\u00a0=\u00a00.50\u00a0\u00b1\u00a00.01, n\u00a0=\u00a017). (d) Left, exemplar confocal images of fixed cardiomyocytes immunostained with \u03b11C (green) and Rab7 (magenta) antibodies. Yellow box indicates region of high-zoom merge image. Right, colocalization between \u03b11C and Rab7 in uninfected cardiomyocytes (gray, PCC\u00a0=\u00a00.29\u00a0\u00b1\u00a00.02, n\u00a0=\u00a016), and those expressing either CaV-a\u03b2lator (red, PCC\u00a0=\u00a00.42\u00a0\u00b1\u00a00.02, n\u00a0=\u00a018), or nb.F3-Nedd4L[C942S] (green, PCC\u00a0=\u00a00.30\u00a0\u00b1\u00a00.03, n\u00a0=\u00a016). (e) Pulldown of \u03b11C in HEK293 cells expressing \u03b11C, \u03b21b and either CFP, nb.F3, CaV-a\u03b2lator, or nb.F3-Nedd4L-[C942S]. Top, probing pulldown with \u03b11C antibody. Bottom, same blot stripped and re-probed with ubiquitin antibody. (f) Quantification of four separate experiments, as performed in (e). Data are means\u00a0\u00b1\u00a0s.e.m for each point. *p<0.05 compared to control, one-way ANOVA with Tukey\u2019s multiple comparison test. (g) Pulldown of CaV\u03b21b, as in (e). Left, probing with CaV\u03b21b. Right, same blot stripped and re-probed with ubiquitin antibody. (h) Cartoon illustrating CaV-a\u03b2lator-induced relocation of CaV1.2 from dyads to Rab7-positive late endosomes in cardiomyocytes.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49253/elife-49253-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Comparison of total \u03b11C levels in uninfected cardiomyocytes (gray, n\u00a0=\u00a015) and those infected with nb.F3-Nedd4L (red, n\u00a0=\u00a019). (b). Comparison of total \u03b22 levels in uninfected cardiomyocytes (gray, n\u00a0=\u00a015) and those infected with nb.F3-Nedd4L (red, n\u00a0=\u00a016), normalized to uninfected controls. Data are means\u00a0\u00b1\u00a0s.e.m. (c) Left, exemplar confocal images of uninfected (top) or F3-Nedd4L-infected (bottom) guinea pig cardiomyocytes, fixed and immunostained with antibodies towards \u03b11C (left) and LAMP1 (middle). Right, colocalization between \u03b11C and Rab5 in uninfected cardiomyocytes (gray, n\u00a0=\u00a07) and those expressing F3-Nedd4L (red, n\u00a0=\u00a07). Data are means\u00a0\u00b1\u00a0s.e.m. (d) as in (c), showing immunostaining and colocalization analysis of cardiomyocytes immunostained against \u03b11C and Rab5.\n\nWhat is the mechanism of CaV-a\u03b2lation in cardiomyocytes? We used immunofluorescence to probe how CaV-a\u03b2lator affected expression levels and sub-cellular localization of CaV1.2 \u03b11C and \u03b22 subunits, respectively, in cardiomyocytes. CaV\u03b11C in uninfected cardiomyocytes presented with a characteristic striated punctate distribution pattern that co-localized with that of ryanodine (RyR2) receptors (Figure 5c), reflecting their well-known predominant localization at dyadic junctions (Scriven et al., 2000; Bers, 2002). A similar distribution pattern for \u03b11C was observed in cardiomyocytes expressing nb.F3-Nedd4L[C942S], consistent with the lack of effect of this protein on ICa,L. In cardiomyocytes expressing CaV-a\u03b2lator, the signal intensity for punctate \u03b11C staining was unchanged from control cells (Figure 5\u2014figure supplement 1), suggesting no impact of the presumed increase in ubiquitination on the stability of the protein. However, there was a redistribution of \u03b11C from dyadic junctions, as reported by a dramatic loss of co-localization between \u03b11C and RyR2 (Figure 5c). Rather, the punctate \u03b11C signals in CaV-a\u03b2lator-expressing cardiomyocytes coincided with Rab7, but not Rab5 or LAMP1, immunofluorescence signals (Figure 5d; Figure 5\u2014figure supplement 1). Thus, the mechanism of CaV-a\u03b2lator inhibition of ICa,L is redistribution of \u03b11C from dyadic junctions to intracellular compartments, specifically Rab7-positive late endosomes (Figure 5h) (Rink et al., 2005).\n\nCardiomyocytes expressing CaV-a\u03b2lator also showed no difference in total CaV\u03b22 levels as compared to either uninfected or nb.F3-Nedd4L[C942S]-expressing cells (Figure 5\u2014figure supplement 1). Hence, CaV-a\u03b2lator-mediated redistribution of CaV1.2 in cardiomyocytes cannot be explained as simply due to an absence of CaV\u03b2. An intriguing possibility was that though CaV-a\u03b2lator is specifically targeted to CaV\u03b2 in channel complexes, it is also able to directly catalyze ubiquitination of \u03b11 subunits within the macro-molecular complex. Indeed, in pulldown experiments of recombinant CaV1.2 channels, CaV-a\u03b2lator substantially increased ubiquitination of both \u03b11C (Figure 5e,f) and CaV\u03b21b subunits (Figure 5g). Nevertheless, the overall levels of \u03b11C expression was unchanged with CaV-a\u03b2lator despite the increased ubiquitination (Figure 5e). Taken together, our results suggest that direct ubiquitination of \u03b11C by CaV-a\u03b2lator may underlie the redistribution of CaV1.2 channels from dyads to Rab7-positive late endosomes (Figure 5h).\n\n### CaV-a\u03b2lation in dorsal root ganglion (DRG) neurons and pancreatic \u03b2 cells\n\nWe next tested the efficacy of CaV-a\u03b2lator to suppress HVACCs in murine dorsal root ganglion (DRG) neurons which were of interest because they express multiple CaV1/CaV2 channel types (Murali et al., 2015; McCallum et al., 2011), and also play a key role in the processing of noxious signals including pain and itch (Han et al., 2013; Kim et al., 2016). We infected cultured DRG neurons with adenovirus expressing either GFP, CaV-a\u03b2lator, or nb.F3-Nedd4L[C942S]. Given their heterogeneous nature, we first used fura-2 to measure calcium influx into a population of DRG neurons in response to depolarization with 40 mM KCl (Figure 6a,b). Recordings were done in the presence of 5 \u03bcM mibefradil to block low-voltage-activated T-type calcium channels which are also prevalent in these cells (Puckerin et al., 2018; Jagodic et al., 2008). In neurons expressing GFP or nb.F3-Nedd4L[C942S], a substantial fraction of cells displayed large increases in fura-2-reported Ca2+ transients in response to 40 mM KCl, indicating the opening of CaV1/CaV2 channels (Figure 6a,b). By contrast, depolarization-induced Ca2+ influx was virtually eliminated in neurons expressing CaV-ablator, demonstrating highly efficient CaV-ablation in this system (Figure 6a,b).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49253/elife-49253-fig6-v2.jpg)\n\n**Figure 6.:** (a) Exemplar Fura-2 traces of murine DRG neurons infected with GFP (left), F3-Nedd4L (middle), F3-Nedd4L[C942S] (right), with confocal images in inset. The orange bars represent depolarization with 40 mM KCl. (b) Summary of maximum responses from neurons infected with GFP (Peak response\u00a0=\u00a01.25\u00a0\u00b1\u00a00.04, n\u00a0=\u00a084), F3-Nedd4L (1.04\u00a0\u00b1\u00a00.01, n\u00a0=\u00a077), and F3-Nedd4L[C942S] (1.30\u00a0\u00b1\u00a00.05, n\u00a0=\u00a092) in response to 40 mM KCl. Peaks were normalized to the baseline, defined as 1 min prior to the addition of KCl. (c) Exemplar traces of DRG neurons infected with GFP (left), F3-Nedd4L (middle), F3-Nedd4L[C942S] (right). Traces were collected at both a holding potential of \u221290 mV (top) and \u221250 mV (bottom). Notably, CaV-a\u03b2lator-infected neurons still show robust T-type current when held at \u221290 mV. (d) Population I-V curves from DRG neurons infected as in (a). Measurements were made at a holding potential of \u221290 mV. Symbols are mean currents calculated from 15 to 20 ms of a 20 ms test pulse. Data are means\u00a0\u00b1\u00a0s.e.m. (e) Exemplar fura-2 traces from dispersed pancreatic islets infected with CaV-a\u03b2lator (left) or F3-Nedd4L[C942S] (right) challenged with 16.8 mM glucose (blue bars) and 40 mM KCl (orange bars). (f) Summary of maximum responses from pancreatic \u03b2-cells infected with GFP (Peak response\u00a0=\u00a01.22\u00a0\u00b1\u00a00.02, n\u00a0=\u00a053), F3-Nedd4L (Peak response\u00a0=\u00a01.04\u00a0\u00b1\u00a00.01, n\u00a0=\u00a062), and F3-Nedd4L[C942S] (Peak response\u00a0=\u00a01.18\u00a0\u00b1\u00a00.01, n\u00a0=\u00a0122) in response to 16.8 mM glucose. (g) Summary of maximum responses from pancreatic \u03b2-cells infected with GFP (Peak response\u00a0=\u00a01.25\u00a0\u00b1\u00a00.02, n\u00a0=\u00a077), F3-Nedd4L (Peak response\u00a0=\u00a01.04\u00a0\u00b1\u00a00.01, n\u00a0=\u00a062), and F3-Nedd4L[C942S] (Peak response\u00a0=\u00a01.21\u00a0\u00b1\u00a00.01, n\u00a0=\u00a0122) in response to 40 mM KCl. Data are means\u00a0\u00b1\u00a0s.e.m. *p<0.05 compared to control, one-way ANOVA with Tukey\u2019s multiple comparison test.\n\nWe used whole-cell patch clamp to further characterize the impact of CaV-a\u03b2lator on calcium currents in DRG neurons. It was of particular interest to determine relative effects of CaV-a\u03b2lator on HVACCs and LVA T-type channels that are present in a subset of DRG neurons. We recorded families of whole-cell currents evoked by test pulses (from \u221240 mV to\u00a0+60 mV in 10 mV increments) from a holding potential of either \u221290 mV or \u221250 mV to inactivate any T-type channel present (Figure 6c). Cells expressing GFP (control) or F3-Nedd4L[C942S] displayed large IBa irrespective of the holding potential (Figure 6c,d; Ipeak,-10mV\u00a0=\u00a0\u2212173.9\u00a0\u00b1\u00a028.2 pA/pF, n\u00a0=\u00a06 for GFP, Ipeak,-10mv\u00a0=\u00a0\u2212206.7\u00a0\u00b1\u00a036.4 pA/pF, n\u00a0=\u00a05 for F3-Nedd4L[C942S]), though those recorded with a \u221250 mV holding potential had a lower amplitude reflecting inactivation of T-type channels and also a fraction of HVACCs. Cells expressing CaV-a\u03b2lator displayed essentially no HVACC currents (Figure 6c,d; Ipeak,-10mV\u00a0=\u00a0\u221214.3\u00a0\u00b1\u00a06.2 pA/pF), most evident as an absence of IBa recorded from a \u221250 mV holding potential (Figure 6c, middle). Moreover, in these cells, when currents were recorded from a \u221290 mV holding potential, they displayed fast inactivation kinetics characteristic of T-type channels (Figure 6c). Overall, these results indicate CaV-ablator selectively eliminates HVACCs in DRG neurons without impacting LVA T-type channels.\n\nFinally, we tested whether CaV-ablator is also effective in murine pancreatic \u03b2-cells, which have multiple CaV channel types (CaV1.2, CaV1.3, and CaV2.1) involved in insulin release (Yang and Berggren, 2006). We used adenovirus to infect digested islets isolated from transgenic mice expressing tdTomato in pancreatic \u03b2-cells. Control cells expressing GFP or nb.F3-Nedd4L[C942S] displayed robust glucose- or KCl-evoked fura-2-reported Ca2+ transients that were essentially abolished in cells expressing CaV-a\u03b2lator (Figure 6e-g). Altogether, these results reveal the exceptional activity of CaV-a\u03b2lator as a genetically-encoded HVACC inhibitor that is effective across diverse cellular contexts.\n\n## Discussion\n\nThis work introduces CaV-a\u03b2lator as a novel genetically-encoded molecule that potently inhibits HVACCs by targeting auxiliary CaV\u03b2 subunits. CaV-a\u03b2lator combines the exquisite specificity of a CaV\u03b2-targeted nanobody and the powerfully consequential catalytic activity of an E3 ubiquitin ligase. We discuss four distinct aspects of this work, based on viewing CaV-a\u03b2lator from different perspectives; 1) as a unique tool to selectively erase HVACCs in cells, 2) as a method to probe mechanisms of HVACC regulation and trafficking, 3) as a potential therapeutic, and 4) as a prototype engineered protein that enables probing new dimensions of macro-molecular membrane protein signaling.\n\nCa2+ is a universal second messenger critical to the biology of virtually all cells. In excitable cells, both LVACCs and HVACCs transduce electrical signals encoded in action potentials into changes in intracellular Ca2+ that then drive many biological responses. In cells expressing both classes of channels, the physiological effects mediated specifically through LVACCs versus HVACCs in vivo can be difficult to decipher. CaV-a\u03b2lator now presents as a tool that can be deployed in target cells to virtually erase all HVACCs while leaving LVACC actions intact. The closest existing proteins that can similarly eliminate HVACCs are RGK GTPases which are capable of potently inhibiting CaV1/CaV2 channels when over-expressed in target cells (Murata et al., 2004; Chen et al., 2005; Xu et al., 2010; Puckerin et al., 2018; Bannister et al., 2008). However, a distinct disadvantage of RGKs is their propensity for off-target effects due to their known interactions with, and regulation of, cytoskeletal proteins and other signaling molecules including 14-3-3, calmodulin, and CaM kinase II (Yang and Colecraft, 2013; Correll et al., 2008; Royer et al., 2018; B\u00e9guin et al., 2005). Over the last two decades, several groups have sought to disrupt the \u03b11-CaV\u03b2 interaction with either small molecules or by over-expressing the AID peptide as a CaV\u03b2 sponge (Findeisen et al., 2017; Chen, 2018; Khanna et al., 2019; Yang et al., 2019). While this approach has shown some efficacy in certain instances, the potency of HVACC inhibition falls well short of that achieved here with CaV-a\u03b2lator. Indeed, over-expressing the AID peptide in adult cardiac myocytes is not effective in inhibiting CaV1.2 channels (Yang et al., 2019), because in this context \u03b11C binding to CaV\u03b2 is not absolutely required for channel trafficking to the surface (Yang et al., 2019; Meissner et al., 2011). Nevertheless, the ability of CaV-a\u03b2lator to essentially eradicate ICa,L in adult cardiomyocytes indicates that under normal physiological conditions essentially all \u03b11C subunits are associated with a CaV\u03b2 in ventricular heart cells.\n\nCaV1/CaV2 channels and other surface membrane proteins spend a significant portion of their life cycles in intracellular compartments reflecting their biogenesis, recycling, and ultimate destruction. The signals regulating HVACC degradation and trafficking among compartments are arcane and poorly understood, but likely prominently involve post-translational modifications of channel subunits. Here, we show that targeted ubiquitination of \u03b11C/\u03b22 complexes in cardiomyocytes with CaV-a\u03b2lator specifically arrests CaV1.2 channels in Rab7-positive late endosomes. CaV-a\u03b2lator possesses the catalytic HECT domain of Nedd4L which is known to principally catalyze the addition of K63-linkage polyubiquitin chains to target proteins (Kim and Huibregtse, 2009; Scheffner and Kumar, 2014). Thus, our results suggest that K63-ubiquitin chains on \u03b11C/\u03b22 subunits may be a key signal directing CaV1.2 channels to late endosomes. We further found that targeted ubiquitination of HVACC \u03b11 subunits with CaV-a\u03b2lator did not lead to their enhanced degradation either in heterologous cells or cardiomyocytes. By contrast, using a GFP nanobody to target the Nedd4L HECT domain to YFP-tagged KCNQ1, a known substrate of endogenous Nedd4L, resulted in reduced expression of this K+ channel pore-forming \u03b11 subunit (Kanner et al., 2017). Hence, the impact of Nedd4L HECT domain on the stability of membrane proteins is likely substrate-dependent. We speculate that arming nb.F3 with the catalytic domains of other types of E3 ligases that catalyze formation of different polyubiquitin chains will elucidate the precise signals dictating CaV1/CaV2 channel degradation and trafficking among distinct compartments. Beyond ubiquitination, the approach could also be potentially used to elucidate functional consequences and mechanisms of other post-translational modifications such as phosphorylation/dephosphorylation on CaV1/CaV2 channels, as well as to localize sensors that report on signals within HVACC nano-domains in live cells.\n\nBlocking the activity of specific HVACCs with small molecules is a prevailing or potential therapy for many cardiovascular and neurological diseases including; pain, hypertension, cardiac arrhythmias, epilepsy, and Parkinson\u2019s disease (Zamponi, 2016). A limitation of small molecule or toxin blockers for HVACCs is the propensity for off-target effects due to their inevitable widespread distribution when administered to a patient. In some circumstances such off-target effects may limit the therapeutic window sufficiently to adversely affect treatment efficacy. Genetically-encoded HVACC inhibitors have great potential to be useful therapeutics with the advantage that their expression can be restricted to target tissues/cell types, or even to spatially discrete channels within single cells (Murata et al., 2004; Makarewich et al., 2012). Given its potency in silencing HVACC activity, CaV-a\u03b2lator could be a lead molecule for future development into a gene therapy for particular applications where a genetically-encoded HVACC inhibitor is warranted. For this purpose, it may be desirable to generate CaV-a\u03b2lator versions whose time course and extent of action could be tuned by either a small molecule or light. Indeed, this is a focus of ongoing work.\n\nFinally, an exciting prospect is the potential of CaV-a\u03b2lator as a prototype that can be further developed to engineer proteins that regulate CaV1/CaV2 channel complexes with new dimensions of specificity. For example, a prevailing idea is that CaV1/CaV2 channels of a particular type (e.g. CaV1.2 channels in cardiomyocytes) may yet form discrete signaling units with different functional outputs in single cells based on their incorporation into divergent macro-molecular complexes (Shaw and Colecraft, 2013). There are tantalizing hints that different CaV\u03b2 isoforms could be a node of signal diversification by promoting formation of molecularly distinct HVACC macro-molecular complexes (McEnery et al., 1998; Brice and Dolphin, 1999; Campiglio and Flucher, 2015). Hence, the ability to inhibit specific CaV channel macro-molecular complexes based on the identity of the constituent CaV\u03b2 is biologically important, yet not rigorously addressable with conventional knockout/knockdown approaches. However, this capability may be readily achieved with CaV-a\u03b2lators directed towards particular CaV\u03b2 isoforms. A challenge to realize this possibility is the development of CaV\u03b2 isoform-specific nanobodies which should be feasible given that there is sequence divergence among CaV\u03b2s outside the conserved src homology 3 (SH3) and guanylate kinase (GK) domains (Buraei and Yang, 2010). In a broader context, the phenomenon of ion channel pore-forming \u03b11 subunits assembled with diverse auxiliary subunits in individual cells is common throughout biology (O'Malley and Isom, 2015; Copits and Swanson, 2012; Trimmer, 2015). Hence, CaV-a\u03b2lator-inspired molecules and approaches might be expected to elucidate functional dimensions of ion channel macro-molecular complex signaling that, to date, have remained refractory to analyses.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (rat)</td>\n      <td>CACNA1B</td>\n      <td></td>\n      <td>NM_147141</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (rabbit)</td>\n      <td>CACNA1C</td>\n      <td></td>\n      <td>NM_001136522</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (rat)</td>\n      <td>CACNB1</td>\n      <td></td>\n      <td>NM_017346</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>CACNB2</td>\n      <td></td>\n      <td>NM_201590</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (rat)</td>\n      <td>CACNB3</td>\n      <td></td>\n      <td>NM_012828.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (rat)</td>\n      <td>CACNB4</td>\n      <td></td>\n      <td>NM_001105733.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>CACNA2D1</td>\n      <td></td>\n      <td>NM_000722.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>NEDD4L</td>\n      <td></td>\n      <td>NM_001144965.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>strain, strain background (Escherichia coli)</td>\n      <td>Rosetta DE3</td>\n      <td>Millipore Sigma</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>HEK293</td>\n      <td>Other</td>\n      <td>RRID: CVCL_0045</td>\n      <td>Laboratory of Dr. Robert Kass</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>nb.F3-CFP-PKC\u03b3</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by PCR, see molecular biology and cloning</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>nb.F3-P2A-CFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by PCR, see molecular biology and cloning</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>nb.F3-Nedd4L-P2A-CFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made from pCI HA Nedd4L (Addgene #27000); see molecular biology and cloning</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>nb.F3-Nedd4L [C942S]-P2A-CFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by site-directed mutagenesis</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>BBS-\u03b11B</td>\n      <td>PMID: 20308247</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>BBS-\u03b11C</td>\n      <td>PMID: 20308247</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b11C</td>\n      <td>Alomone</td>\n      <td>Cat#: ACC-003</td>\n      <td>1:1000 WB/IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b11C</td>\n      <td>NeuroMab</td>\n      <td>Clone:\u00a0N263/31</td>\n      <td>1:200 IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CaV\u03b21</td>\n      <td>NeuroMab</td>\n      <td>Clone:\u00a0N7/18</td>\n      <td>1:500 WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CaV\u03b22</td>\n      <td>Alomone</td>\n      <td>Cat#: ACC-105</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Rab5</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat#: 3547</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Rab7</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat#: 9367</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-LAMP1</td>\n      <td>Developmental Studies Hybridoma Bank at the University of Iowa</td>\n      <td>RRID: AB_528127</td>\n      <td>1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RyR</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat#: MA3-916</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-actin</td>\n      <td>Sigma</td>\n      <td>Cat#: A5060</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-ubiquitin, VU-1</td>\n      <td>LifeSensors</td>\n      <td>Cat#: VU101</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>RFP-trap agarose beads</td>\n      <td>Chromotek</td>\n      <td>Cat#: rta-20</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-FLAG affinity gel</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: A2220</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant reagent</td>\n      <td>FLAG peptide</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: F3290</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant reagent</td>\n      <td>Ni-NTA agarose</td>\n      <td>Qiagen</td>\n      <td>Cat#: 30210</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant reagent</td>\n      <td>Protein A/G sepharose beads</td>\n      <td>Rockland</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant reagent</td>\n      <td>\u03b1-bungarotoxin, Alexa Fluor 647 conjugate</td>\n      <td>Life Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant reagent</td>\n      <td>Fura-2 AM</td>\n      <td>Life Technologies</td>\n      <td>Cat#: F1221</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Phorbol 12,13-dibutyrate</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: P1269</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>AdEasy Adenoviral Vector Systems</td>\n      <td>Stratagene</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>QuikChange Lightning Site-Directed Mutagenesis Kit</td>\n      <td>Stratagene</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>FlowJo</td>\n      <td></td>\n      <td>RRID: SCR_008520</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>PulseFit</td>\n      <td>HEKA</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>EasyRatioPro</td>\n      <td>HORIBA</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td></td>\n      <td>RRID: SCR_002798</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein purification\n\nWe used the BacMam expression system to purify CaV\u03b21B and CaV\u03b23 (Goehring et al., 2014). Briefly, full-length CaV\u03b21b and CaV\u03b23 were cloned into a modified pEG BacMam vector with a C-terminal FLAG tag using BamHI and EcoRI sites. BacMam virus was subsequently generated in Sf9 cells and harvested after three rounds of amplification. 100 mL of BacMam virus was used to infect 1\u00a0L of HEK293 GnTI- cells (N-acetylglucosaminyltransferase I-negative) and kept shaking at 37\u00b0C. After 18 hrs the cells were stimulated with 10 mM sodium butyrate and harvested 72 hrs later. Cells were lysed using an Avestin Emulsiflex-C3 homogenizer in buffer containing 50 mM Tris, 150 mM KCl, 10% sucrose, 1 mM PMSF (phenylmethylsulfonyl fluoride), and EDTA-free Complete protease inhibitor cocktail (Roche), pH 7.4. Lysate was spun down at 35,000 g for 1 hr. CaV\u03b2 was subsequently isolated from supernatant with anti-FLAG antibody (M2) affinity chromatography, and eluted with 100 \u00b5g/mL FLAG peptide (Sigma Millipore) in 50 mM TrisHCl, 150 mM KCl, pH 7.4. The protein was then applied to an ion exchange column (MonoQ, GE) and eluted with a linear KCl gradient of 50 mM to 1M. Peak fractions were collected and subjected to size exclusion chromatography (Superdex 200, GE) in a buffer containing 20 mM Tris, 150 mM KCl, pH 7.4. Proteins were brought to 20% glycerol, flash frozen, and stored at \u221280\u00b0C.\n\nFor isothermal titration calorimetry experiments, both CaV\u03b22b and nb.F3 were cloned via Gibson assembly (Gibson et al., 2009) into an IPTG (isopropyl \u03b2-D-1-thiogalactopyranoside) inducible, kanamycin-resistant pET derived plasmid (Novagen, Madison, Wisconsin), with an N-terminal deca-histidine tag (His10) and transformed into Rosetta DE3 E. coli (Millipore Sigma), following manufacturers\u2019 instructions. Cells were grown at 37\u00b0C in 1L 2xTY media supplemented with 50 ug/mL carbenicillin and 35 \u03bcg/mL chloramphenicol and shook at 225 rpm. Protein expression was induced with 0.2 mM IPTG when the cells reached an OD of 0.6\u20130.8. The cells were then grown overnight at 22\u00b0C.\n\nNb.F3 was purified as previously described (McMahon et al., 2018): briefly, cells were harvested and resuspended in 100 mL buffer containing (mM) 500 sucrose, 200 Tris (pH 8), 0.5 EDTA and osmotically shocked with the addition of 200 mL water with stirring. The lysate was brought to a concentration of (mM) 150 NaCl, 2 MgCl2, and 20 imidazole and centrifuged at 20,000 g, 4\u00b0C for 30\u00a0min. The supernatant was combined with 2 mL Ni-NTA Sepharose resin (Qiagen) in batch, washed with 70 mM imidazole, and eluted with 350 mM imidazole. The eluant was dialyzed into a buffer containing 150 mM NaCl, 10 mM HEPES, pH 7.4 and purified with an S200 size exclusion column (GE Healthcare).\n\nFor the purification of CaV\u03b22b, cells were pelleted and resuspended in a buffer containing (mM) 300 NaCl, 20 Tris HCl, 10% glycerol, pH 7.4, 0.5 PMSF, and EDTA-free Complete protease inhibitor cocktail (Roche). Cells were lysed using an Avestin Emulisflex-C3 homogenizer and spun at 35,000 g for 30\u2019. The solubilized protein was applied to Ni-NTA Sepharose (Qiagen) and purified as nb.F3.\n\n### Nanobody generation\n\nOne llama was immunized with an initial injection of 600 \u00b5g purified CaV\u03b21b and CaV\u03b23, with four boosters of 200 ug each protein administered every other week (Capralogics Inc, Hardwick, MA). 87 days after the first immunization, lymphocytes were isolated from blood and a cDNA library with ProtoScript II Reverse Transcriptase (New England Biolabs). Nanobodies were isolated as previously described (Pardon et al., 2014), using a two-step nested PCR. Amplified Vhh genes were cloned into the phagemid plasmid pComb3xSS, a gift from Carlos Barbas (Andris-Widhopf et al., 2000) (Addgene plasmid # 63890). A phage display library was created using electrocompetent TG1 E. coli cells (Lucigen). Three rounds of phage display were performed as previously described (Pardon et al., 2014), using 100 nM biotinylated CaV\u03b23 as bait on neutravidin-coated Nunc-Immuno plates (Thermo Scientific). Clones of interest were subsequently cloned into mammalian expression systems for further study (see below).\n\n### Isothermal titration calorimetry\n\nIsothermal Titraction calorimetry measurements were performed using an MicroCal Auto iTC 200 (Malvern Panalytical) at 25\u00b0C. Samples were dialyzed into 300 mM NaCl, 20 mM HEPES, 5% glycerol, pH 7.5 and filtered beforehand. Injections of 2 \u00b5L nb.F3 into 400 \u00b5L of CaV\u03b22b. Data were processed with MicroCal Origin 7.0.\n\n### Molecular biology and plasmid construction\n\nPotential nbs were PCR amplified with primers flanking their conserved framework (FW) FW1 and FW4 regions and inserted into the mammalian expression plasmid pcDNA3 (Invitrogen) using HindIII and EcoRI sites. An additional GSG linker was included in the PCR and the insert was ligated upstream of an enhanced CFP and C1 domain of human PKC\u03b3 (residues 51\u2013180).\n\nRat CaV\u03b21b, a kind gift from Dr. Jian Yang (Columbia University), was PCR amplified for subsequent overlap PCR with YFP, inserting a GSG linker between the two proteins. The resulting CaV\u03b21b-GSG-YFP sequence was digested with BamHI and NotI and ligated into a PiggyBac CMV mammalian expression vector (System Biosciences). A similar cloning strategy was used for CaV\u03b23 and CaV\u03b24. Rat CaV\u03b22a was PCR amplified with an N-terminal YFP to prevent palmitoylation of the \u03b22a subunit (Chien et al., 1996) and inserted with a similar strategy.\n\nA customized bicistronic vector (xx-P2A-CFP) was synthesized in the pUC57 vector, in which coding sequence for P2A peptide was sandwiched between an upstream multiple cloning site and enhanced cyan fluorescent protein (CFP) (Genewiz). The xx-P2A-CFP fragment was amplified by PCR and cloned into the PiggyBac CMV mammalian expression vector (System Biosciences) using NheI/NotI sites. To generate nb.F3 -P2A-CFP, we PCR amplified the coding sequence for nb.F3 and cloned it into xx-P2A-CFP using NheI/AflII sites. A similar backbone was created in the PiggyBac CMV mammalian expression vector in which CFP-P2A-xx contained a multiple cloning site downstream of the P2A site (Genewiz). Nb.F3 was PCR amplified and ligated into the vector with BglII/AscI sites. The HECT domain of human Nedd4L (Gao et al., 2009) (a gift from Joan Massague, Addgene plasmid # 27000) consisting of residues 594\u2013974 was PCR amplified and inserted downstream of nb.F3 using AscI/AgeI sites. Mutagenesis of C942S was accomplished using site-directed mutagenesis.\n\n\u03b11B-BBS, harboring two tandem 13 residue bungarotoxin-binding sites (SWRYYESSLEPYPD) in the domain IV S5-S6 extracellular loop, was a kind gift from Dr. Steven Ikeda (NIAAA). \u03b11C and \u03b11C-BBS, and \u03b11C-BBS-YFP have been described previously (Yang et al., 2010; Kanner et al., 2017).\n\n### Cell culture and transfection\n\nHuman embryonic kidney (HEK293) cells were a kind gift from the laboratory of Dr. Robert Kass (Columbia University). Cells were mycoplasma free, as determined by the MycoFluor Mycoplasma Detection Kit (Invitrogen, Carlsbad, CA). Low passage HEK293 cells were cultured at 37\u00b0C in DMEM supplemented with 5% fetal bovine serum (FBS) and 100 mg/mL of penicillin\u2013streptomycin. HEK293 cell transfection was accomplished using the calcium phosphate precipitation method. Briefly, plasmid DNA was mixed with 7.75 \u03bcL of 2 M CaCl2 and sterile deionized water (to a final volume of 62 \u03bcL). The mixture was added dropwise, with constant tapping to 62 \u03bcL of 2x Hepes buffered saline containing (in mM): Hepes 50, NaCl 280, Na2HPO4 1.5, pH 7.09. The resulting DNA\u2013calcium phosphate mixture was incubated for 20 min at room temperature and then added dropwise to HEK293 cells (60\u201380% confluent). Cells were washed with Ca2+-free phosphate buffered saline after 4\u20136 hr and maintained in supplemented DMEM.\n\nIsolation of adult guinea pig cardiomyocytes was performed in accordance with the guidelines of Columbia University Animal Care and Use Committee. Prior to isolation, plating dishes were precoated with 15 \u00b5g/mL laminin (Gibco). Adult female Hartley guinea pigs (Charles River) were euthanized with 5% isoflurane, hearts were excised and ventricular myocytes isolated by first perfusing in KH solution (mM): 118 NaCl, 4.8 KCl, 1 CaCl2 25 HEPES, 1.25 K2HPO4, 1.25 MgSO4, 11 glucose,. 02 EGTA, pH 7.4, followed by KH solution without calcium using a Langendorff perfusion apparatus. Enzymatic digestion with 0.3 mg/mL Collagenase Type 4 (Worthington) with 0.08 mg/mL protease and. 05% BSA was performed in KH buffer without calcium for six minutes. After digestion, 40 mL of a high K+ solution was perfused through the heart (mM): 120 potassium glutamate, 25 KCl, 10 HEPES, 1 MgCl2, and. 02 EGTA, pH 7.4. Cells were subsequently dispersed in high K+ solution. Healthy rod-shaped myocytes were cultured in Medium 199 (Life Technologies) supplemented with (mM): 10 HEPES (Gibco), 1x MEM non-essential amino acids (Gibco), 2 L-glutamine (Gibco), 20 D-glucose (Sigma Aldrich), 1% vol vol\u22121 penicillin-streptomycin-glutamine (Fisher Scientific),. 02 mg/mL Vitamin B-12 (Sigma Aldrich) and 5% (vol/vol) FBS (Life Technologies) to promote attachment to dishes. After 5 hr, the culture medium was switched to Medium 199 with 1% (vol/vol) serum, but otherwise supplemented as described above. Cultures were maintained in humidified incubators at 37\u00b0C and 5% CO2.\n\nMurine dorsal root ganglion (DRG) neurons were kindly provided by the laboratory of Dr. Ellen Lumpkin (Columbia University). DRG neurons were isolated as previously described (Albuquerque et al., 2009). DRG neurons were plated onto glass coverslips coated with 15 \u00b5g/mL laminin (Corning) and maintained in Neurobasal media (Thermo Fisher Scientific) supplemented with 1x B-27 (Thermo Fisher Scientific), 100 \u00b5g mL\u22121 penicillin/streptomycin (Fisher Scientific), 0.29 mg/mL L-glutamine (Gibco), 50 ng mL\u22121 NGF (Sigma Aldrich), 2 ng mL\u22121 GDNF (Sigma Aldrich), and 10 \u00b5M cytosine \u03b2-D-arabinofuranoside (Sigma Aldrich).\n\n### Pancreatic beta cell isolation and culture\n\nMurine pancreatic \u03b2-cells from Rip-Cre (Jackson Laboratories Stock #003573) mice crossed with Rosa26-tdTomato (Jackson Laboratories Stock #007909) mice were kindly provided by the laboratory of Dr. Domenico Accili (Columbia University). Islets were isolated as previously described (Stull et al., 2012), dispersed with 0.05% trypsin EDTA (Gibco) and plated onto 35 mm glass bottom dishes with 10 mm microwells (Cellvis) pre-coated with 10 mg/mL fibronectin (Sigma Aldrich). Islets were maintained in RPMI 1640 media (Corning) supplemented with 15% FBS and 100 \u00b5g mL\u22121 penicillin/streptomycin. Islets were imaged 24\u201348 hr after adenoviral infection.\n\n### Adenoviral generation\n\nAdenoviral vectors expressing GFP and CFP-P2A-nb.F3-Nedd4L[C942S] were generated using the pAdEasy system (Stratagene) according to manufacturer\u2019s instructions as previously described (Kanner et al., 2017; Subramanyam, 2013). Plasmid shuttle vectors (pShuttle CMV) containing cDNA for CFP-P2A-nb.F3-Nedd4L[C942S] were linearized with PmeI and electroporated into BJ5183-AD-1 electrocompetent cells pre-transformed with the pAdEasy-1 viral plasmid (Stratagene). PacI restriction digestion was used to identify transformants with successful recombination. Positive recombinants were amplified using XL-10-Gold bacteria, and the recombinant adenoviral plasmid DNA linearized with PacI digestion. HEK cells cultured in 60 mm diameter dishes at 70\u201380% confluency were transfected with PacI-digested linearized adenoviral DNA. Transfected plates were monitored for cytopathic effects (CPEs) and adenoviral plaques. Cells were harvested and subjected to three consecutive freeze-thaw cycles, followed by centrifugation (2,500\u00a0\u00d7\u00a0g) to remove cellular debris. The supernatant (2 mL) was used to infect a 10 cm dish of 90% confluent HEK293 cells. Following observation of CPEs after 2\u20133 d, cell supernatants were used to re-infect a new plate of HEK293 cells. Viral expansion and purification was carried out as previously described (Colecraft et al., 2002). Briefly, confluent HEK293 cells grown on 15 cm culture dishes (x8) were infected with viral supernatant (1 mL) obtained as described above. After 48 hr, cells from all of the plates were harvested, pelleted by centrifugation, and resuspended in 8 mL of buffer containing (in mM) 20 Tris HCl, 1 CaCl2, one and MgCl2 (pH 8). Cells were lysed by four consecutive freeze-thaw cycles and cellular debris pelleted by centrifugation. The virus-laden supernatant was purified on a cesium chloride (CsCl) discontinuous gradient by layering three densities of CsCl (1.25, 1.33, and 1.45 g/mL). After centrifugation (50,000 rpm; SW41Ti Rotor, Beckman-Coulter Optima L-100K ultracentrifuge; 1 hr, 4\u00b0C), a band of virus at the interface between the 1.33 and 1.45 g/mL layers was removed and dialyzed against PBS (12 hr, 4\u00b0C). Adenoviral vector aliquots were frozen in 10% glycerol at \u221280\u00b0C until use. Generation of CFP-P2A-nb.F3-Nedd4L was performed by Vector Biolabs (Malvern, PA).\n\n### Flow cytometry assay of total and surface calcium channels\n\nCell surface and total ion channel pools were assayed by flow cytometry in live, transfected HEK293 cells as previously described (Kanner et al., 2017; Aromolaran et al., 2014). Briefly, 48 hr post-transfection, cells cultured in 12-well plates were gently washed with ice cold PBS containing Ca2+ and Mg2+ (in mM: 0.9 CaCl2, 0.49 MgCl2, pH 7.4), and then incubated for 30 min in blocking medium (DMEM with 3% BSA) at 4\u00b0C. HEK293 cells were then incubated with 1 \u03bcM Alexa Fluor 647 conjugated \u03b1-bungarotoxin (BTX647; Life Technologies) in DMEM/3% BSA on a rocker at 4\u00b0C for 1 hr, followed by washing three times with PBS (containing Ca2+ and Mg2+). Cells were gently harvested in Ca2+-free PBS, and assayed by flow cytometry using a BD Fortessa Cell Analyzer (BD Biosciences, San Jose, CA, USA). CFP- and YFP-tagged proteins were excited at 407 and 488 nm, respectively, and Alexa Fluor 647 was excited at 633 nm.\n\n### Electrophysiology\n\nWhole-cell recordings of HEK293 cells were conducted 48 hr after transfection using an EPC-10 patch clamp amplifier (HEKA Electronics) controlled by Pulse software (HEKA). Micropipettes were prepared from 1.5 mm thin-walled glass (World Precision Instruments) using a P97 microelectrode puller (Sutter Instruments). Internal solution contained (mM): 135 cesium-methansulfonate (CsMeSO3), 5 CsCl, 5 EGTA, 1 MgCl2, 2 MgATP, and 10 HEPES (pH 7.3). Series resistance was typically between 1\u20132 M\u03a9. There was no electronic resistance compensation. External solution contained (mM): 140 tetraethylammonium-MeSO3, 5 BaCl2, and 10 HEPES (pH 7.4). Whole-cell I-V curves were generated from a family of step depolarizations (\u221260 mV to\u00a0+80 mV from a holding potential of \u221290 mV). Currents were sampled at 20 kHz and filtered at 5 kHz. Traces were acquired at a repetition interval of 10 s. Leak and capacitive transients were subtracted using a P/4 protocol.\n\nWhole-cell recordings of cardiomyocytes and DRG neurons were performed 48 hr after infection. HEK cell internal and external solutions were used for DRG experiments. Whole-cell recordings for guinea pig cardiomyocytes used internal solution comprised of (mM): 150 CsMeSO3, 10 EGTA, 5 CsCl, MgCl2, 4 MgATP, and 10 HEPES. For formation of gigaohm seals and initial break-in to the whole-cell configuration, cells were perfused in Tyrode solution containing (mM): 138 NaCl, 4 KCl, 2 CaCl2, 1 MgCl2, 0.33 NaH2PO4, and 10 HEPES (pH 7.4). Upon successful break-in, the perfusing media was switched to an external solution composed of (mM): 155 N-methyl-D-glucamine, 10 4-amino-pyridine, 1 MgCl2, 5 BaCl2, and 10 HEPES (pH 7.4). Currents were sampled at 20 kHz and filtered at 5 kHz. Leak and capacitive transients were subtracted using a P/4 protocol.\n\n### Immunofluorescence staining\n\nApproximately 48 hr after adenoviral infection, guinea pig cardiomyocytes were fixed in 4% paraformaldehyde (wt/vol, in PBS) for 20 min at RT. Cells were washed twice with PBS and then incubated in 0.1M glycine (in PBS) for 10 min at RT to block free aldehyde groups. Fixed cells were then permeabilized with 0.2% Triton X-100 (in PBS) for 20 min at RT. Non-specific binding was blocked with a 1 hr incubation at RT in PBS solution containing 3% (vol vol\u22121) normal goat serum (NGS), 1% BSA, and 0.1% Triton X-100. Cells were then incubated with primary antibody in PBS containing 1% NGS, 1% BSA, and 0.1% BSA overnight at 4\u00b0C. Cells were washed three times for 10 min each with PBS with 0.1% Triton X-100 and then stained with secondary antibody for 1 hr at RT. Antibody dilutions were prepared in PBS solution containing 1% NGS, 1% BSA, and 0.1% Triton X-100. The cells were then washed in PBS with 0.1% Triton X-100 and imaged in the same solution. Primary antibodies and working dilutions were as follows: \u03b11C: Alomone, 1:1000; UC Davis/NIH NeuroMab Facility, clone N263/31, 1:200. RyR: Sigma Aldrich, 1:1000. CaV\u03b22: Alomone, 1:200. Rab7: Cell Signaling Technology, 1:100. Rab5: Cell Signaling Technology, 1:200. Lamp1: Developmental Studies Hybridoma Bank, created by the NICHD of the NIH and maintained at The University of Iowa, Department of Biology, Iowa City, IA 52242, 1:100. Secondary antibodies (Thermofisher) were used at a dilution of 1:1000.\n\n### Confocal microscopy\n\nCells were plated onto 35 mm MatTek imaging dishes (MatTek Corporation). Images were captured on a Nikon A1RMP confocal microscope with a 40x oil immersion objective (1.3 N.A.). CFP, Alexa-488, YFP, and Alexa-647 were imaged using 458, 488, 514 and 639 nm laser lines, respectively.\n\n### Pulldown assays\n\nTransfected HEK293 cells cultured in 60 mm dishes were harvested in PBS, centrifuged at 2,000 g (4\u00b0C) for 5 min, and the pellet resuspended in RIPA lysis buffer containing (mM): 150 NaCl, 20 Tris HCl, 1 EDTA, 0.1% (wt vol\u22121) SDS, 1% Triton X-100, 1% sodium deoxycholate, and supplemented with protease inhibitor mixture (10 \u00b5L mL\u22121, Sigma Aldrich), 1 PMSF, 2 N-ethylmaleimide,. 05 PR-619 deubiquitinase inhibitor (LifeSensors). Cells were lysed on ice for 1 hr with intermittent vortexing and centrifuged at 10,000 g for 10 min (4\u00b0C). The soluble lysate collected and protein concentration determined with the bis-cinchonic acid protein estimation kit (Pierce Technologies).\n\nFor CaV\u03b21b pulldowns, lysates were precleared with 10 \u00b5L of protein A/G sepharose beads (Rockland) for 1 hr at 4\u00b0C and then incubated with 2 \u00b5g anti-CaV\u03b21 antibody (UC Davis/NIH NeuroMab Facility, clone N7/18) for 1 hr at 4\u00b0C. Equivalent amounts of protein were then added to spin columns with 25 \u03bcL equilibrated protein A/G sepharose beads and rotated overight at 4\u00b0C. Immunoprecipitates were washed a total of five times with RIPA buffer and then eluted with 30 \u03bcL elution buffer (50 mM Tris, 10% (vol vol\u22121) glycerol, 2% SDS, 100 mM DTT, and 0.2 mg mL\u22121 bromophenol blue) at 55\u00b0C for 15 min. For \u03b11C pulldowns, lysates were added to spin columns containing 10 \u03bcL of equilibrated RFP-trap agarose beads, rotated at 4\u00b0C for 1 hr, and then washed/eluted as described above. Proteins were resolved on a 4\u201312% Bis Tris gradient precast gel (Life Technologies) in MOPS-SDS running buffer (Life Technologies) at 200 V constant for\u00a0~1 hr. Protein bands were transferred by tank transfer onto a polyvinylidene difluoride (PVDF, EMD Millipore) membrane in transfer buffer (25 mM Tris pH 8.3, 192 mM glycine, 15% (vol/vol) methanol, and 0.1% SDS). The membranes were blocked with a solution of 5% nonfat milk (BioRad) in Tris-buffered saline-tween (TBS-T) (25 mM Tris pH 7.4, 150 mM NaCl, and 0.1% Tween-20) for 1 hr at RT and then incubated overnight at 4\u00b0C with primary antibodies (CaV\u03b21, UC Davis/NIH NeuroMab Facility. Actin, Sigma Aldrich) in blocking solution. The blots were washed with TBS-T three times for 10 min each and then incubated with secondary horseradish peroxidase-conjugated antibody for 1 hr at RT. After washing in TBS-T, the blots were developed with a chemiluminiscent detection kit (Pierce Technologies) and then visualized on a gel imager. Membranes were then stripped with harsh stripping buffer (2% SDS, 62 mM Tris pH 6.8, 0.8% \u00df-mercaptoethanol) at 50\u00b0C for 30 min, rinsed under running water for 2 min, and washed with TBST (3x, 10 min). Membranes were pre-treated with 0.5% glutaraldehyde and re-blotted with anti-ubiquitin (VU1, LifeSensors) as per the manufacturers\u2019 instructions.\n\n### Calcium imaging\n\nDRG neurons were washed twice in basal solution containing (mM): 145 NaCl, 5 KCl, 2 CaCl2, 1 MgCl2, one sodium citrate, 10 HEPES, 10 D-glucose, pH 7.4, and incubated in the same solution containing 5 uM fura-2 with 0.05% Pluronic F-127 detergent (Life Technologies) for 1 hr at 37\u00b0C, 5% CO2. Afterwards, cells were washed twice in same solution and placed on an inverted Nikon Ti-eclipse microscope with a Nikon Plan fluor 20x objective (0.45 N.A.). Fura-2 measurements were recorded at excitation wavelengths of 340 and 380 nm using EasyRatioPro (HORIBA Scientific). DRG neurons were depolarized with a solution in which NaCl was reduced to 110 mM and KCl increased to 40 mM.\n\nPancreatic \u03b2-cells were imaged with a similar protocol. Cells were maintained in a basal KRBH solution composed of (mM): 134 NaCl, 3.5 KCl, 1.2 KH2PO4, 0.5 MgSO4, 1.5 CaCl2, 5 NaHCO3, 10 HEPES, 2.8 D-glucose, pH 7.4. Stimulation solutions included either 16.8 mM glucose or 40 mM KCl, with NaCl concentrations adjusted accordingly to balance osmolarity with KRBH solution.\n\n### Data and statistical analysis\n\nData were analyzed off-line using FloJo, PulseFit (HEKA), Microsoft Excel, Origin and GraphPad Prism software. Statistical analyses were performed in Origin or GraphPad Prism using built-in functions. Statistically significant differences between means (p<0.05) were determined using Student\u2019s t test for comparisons between two groups or one-way ANOVA for three groups, with Tukey\u2019s post-hoc analysis. Data are presented as means\u00a0\u00b1\u00a0s.e.m.\n",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "f1af1ad5-934a-4d6d-88be-fea3939509d6",
+      "submission_id": "342a0795-ab09-4a22-a181-31d1816ced80",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark T Nelson, University of Vermont United States\n\nReviewers:\n- Mark T Nelson, University of Vermont United States\n- Kurt Beam, University of Colorado United States\n\n## Review text\n\nDOI: [10.7554/eLife.49253.016](https://doi.org/10.7554/eLife.49253.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A potent voltage-gated calcium channel inhibitor engineered from a nanobody targeted to auxiliary CaV\u03b2 subunits\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Mark T Nelson as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Olga Boudker as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Kurt Beam (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Morgenstern et al. describe the development of a genetically encoded, nanobody-based system that inhibits the activity of high-voltage-activated calcium channels (CaV1/CaV2) without affecting the activity of low-voltage-activated calcium channels. To accomplish this, they fused a nanobody isolated from an antibody raised against CaV\u03b2 subunits (\u03b21-4)-which was functionally inert alone-to the catalytic domain of the E3 ubiquitin ligase, Nedd4L. They then showed that this fusion protein, termed CaV-a\u03b2lator, was capable of completing eliminating CaV1/CaV2 currents of reconstituted channel complexes in HEK cells and endogenous channels in cardiomyocytes, dorsal root ganglion neurons and pancreatic \u03b2-cells. They further demonstrated that CaV-a\u03b2lator produced its inhibitory effects on CaV1.2 channels by promoting their ubiquitination-dependent accumulation in Rab-7-positive late endosomes without promoting ubiquitin-dependent degradation of channel subunits. Further development of this system could lead to selective targeting of specific cell types or channels with different subunit composition. Overall, this elegantly conceived study makes excellent use of appropriate experimental approaches to convincingly demonstrate the operation and potential adaptability of their system.\n\nEssential revisions:\n\n1) It is difficult to make sense of results presented in Figure 3B and C without more stage-setting. Specifically, the absence of an effect of nb.F3-Nedd4L on CaV\u03b2 subunit expression runs counter to the expectation that Nedd4L, given its function as a ubiquitin ligase (and the fact that it binds directly to CaV\u03b2), might cause CaV\u03b2 degradation. This becomes clear in subsequent Results sections, but it would be helpful to provide more context by setting up these earlier experiments as a test of whether Nedd4L acts broadly through degradation or via some other mechanism. The absence of an effect of nb.F3-Nedd4L on CaV\u03b2 subunit expression would then support the sub-conclusion that nb.F3-Nedd4L acts through a mechanism independent of ubiquitin-dependent degradation. It may be a minor point, but there's no good reason to be coy about the mechanism if doing so might leave some readers scratching their heads.\n\n2) A cartoon showing the overall mechanism of action of CaV-a\u03b2lation would be helpful.\n\n3) Interestingly, in addition to localizing to the plasma membrane, \u03b21 and \u03b23 subunits, but not \u03b22 or \u03b24 subunits, also showed substantial accumulation in nuclear membranes. Do the authors have any thoughts on what causes this differential distribution and how it might be exploited in the context of their system?\n\n4) Specific concerns about Figure 5. The text states that the data in Figure 5 show that the infection of cardiomyocytes with F3-Nedd4L causes the ubiquitination of CaV1.2 and CaV\u00df (I agree) and causes the channel complex to re-locate away from dyads and to become associated with Rab7. The latter appears unconvincing: the co-localization with RyR2 in the control myocytes is not robust (Figure 5C) and the distribution pattern of CaV1.2 in the F3-Nedd4L infected cells is very different in Figure 5C (a scattered pattern, which is supposed to show movement away from dyads) and in Figure 5D (concentrated near the sides of the myocyte, which is supposed to show association with Rab7). These imaging data should be removed.\n\n5) The data support the notion that the nanobody interacts with an epitope conserved among CaV\u03b2s, thus allowing for a single construct with pan-CaV \u03b2 binding. This is a nice feature for the first pass of experiments but much of the downstream utility/promise for the approach would require isoform specific nanobody development. While this is obviously theoretically possible, its notable that despite using two Cav \u03b2 isoforms for nanobody production, the best performing hit is nonselective. The authors could do better in pointing out this area of future optimization for the reader.\n\n6) The results are presented in a way that mostly ignores complexities of likely importance. In particular, if this technique is to be used either therapeutically or as an investigative tool, one would want to know something about the time course of the effect and about whether it would be possible to regulate the extent of action of the nanobody complex. It would be a major undertaking to obtain such information. Nonetheless, it would useful to discuss these potential complications.\n",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0775ec97-0523-4480-8d14-47b240034f6a",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C1",
+      "claim": "Inhibiting high-voltage-activated calcium channels (HVACCs; CaV1/CaV2) is therapeutic for myriad cardiovascular and neurological diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting high-voltage-activated calcium channels (HVACCs; CaV1/CaV2) is therapeutic for myriad cardiovascular and neurological diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the therapeutic value of HVACC inhibition, drawing from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "cfbefeb8-ccce-43df-89a2-a6eaa5f47e19",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C2",
+      "claim": "Nb.F3 binds auxiliary HVACC CaV\u03b2 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we engineered a genetically-encoded HVACC inhibitor by first isolating an immunized llama nanobody (nb.F3) that binds auxiliary HVACC CaV\u03b2 subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the isolation and characterization of nb.F3, including co-translocation assays and isothermal titration calorimetry showing binding to CaV\u03b2 subunits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "7446f45a-7f50-4400-9e8d-d66f222b0164",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C3",
+      "claim": "Nb.F3 by itself is functionally inert.",
+      "claim_type": "EXPLICIT",
+      "source": "Nb.F3 by itself is functionally inert, providing a convenient vehicle to target active moieties to CaV\u03b2-associated channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents flow cytometry and electrophysiology data showing that nb.F3 does not affect channel trafficking or currents.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "f4777147-2559-40d4-84e6-b3a73ef1314e",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C4",
+      "claim": "CaV-a\u03b2lator ablated currents from diverse HVACCs reconstituted in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nb.F3 fused to the catalytic HECT domain of Nedd4L (CaV-a\u03b2lator), an E3 ubiquitin ligase, ablated currents from diverse HVACCs reconstituted in HEK293 cells, and from endogenous CaV1/CaV2 channels in mammalian cardiomyocytes, dorsal root ganglion neurons, and pancreatic \u03b2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents electrophysiology data showing elimination of currents from multiple HVACC types in HEK293 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "91c771fc-685f-44ab-abf0-93bc1f8aeb47",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C5",
+      "claim": "CaV-a\u03b2lator ablated currents from endogenous CaV1/CaV2 channels in mammalian cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nb.F3 fused to the catalytic HECT domain of Nedd4L (CaV-a\u03b2lator), an E3 ubiquitin ligase, ablated currents from diverse HVACCs reconstituted in HEK293 cells, and from endogenous CaV1/CaV2 channels in mammalian cardiomyocytes, dorsal root ganglion neurons, and pancreatic \u03b2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents electrophysiology data from guinea pig cardiomyocytes showing elimination of L-type calcium currents.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "21aa14a8-f8c7-4064-95d1-99a42dc223ee",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C6",
+      "claim": "CaV-a\u03b2lator ablated currents from endogenous CaV1/CaV2 channels in dorsal root ganglion neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Nb.F3 fused to the catalytic HECT domain of Nedd4L (CaV-a\u03b2lator), an E3 ubiquitin ligase, ablated currents from diverse HVACCs reconstituted in HEK293 cells, and from endogenous CaV1/CaV2 channels in mammalian cardiomyocytes, dorsal root ganglion neurons, and pancreatic \u03b2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents calcium imaging and electrophysiology data from DRG neurons showing elimination of HVACC-mediated calcium influx.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "37caffd7-f3e8-4abd-9c02-02e99859d711",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C7",
+      "claim": "CaV-a\u03b2lator ablated currents from endogenous CaV1/CaV2 channels in pancreatic \u03b2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nb.F3 fused to the catalytic HECT domain of Nedd4L (CaV-a\u03b2lator), an E3 ubiquitin ligase, ablated currents from diverse HVACCs reconstituted in HEK293 cells, and from endogenous CaV1/CaV2 channels in mammalian cardiomyocytes, dorsal root ganglion neurons, and pancreatic \u03b2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents calcium imaging data from pancreatic \u03b2 cells showing elimination of glucose- and KCl-evoked calcium transients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "5454da1d-d39a-436d-895d-4a7eac083bb3",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C8",
+      "claim": "In cardiomyocytes, CaV-a\u03b2lator redistributed CaV1.2 channels from dyads to Rab-7-positive late endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In cardiomyocytes, CaV-a\u03b2lator redistributed CaV1.2 channels from dyads to Rab-7-positive late endosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents immunofluorescence data showing decreased colocalization of \u03b11C with RyR2 and increased colocalization with Rab7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "72231b05-a77a-4e86-a560-83398670a584",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C9",
+      "claim": "Small molecule HVACC inhibitors include CaV1 blockers (dihydropyridines, benzothiazepenes phenylalkylamines).",
+      "claim_type": "EXPLICIT",
+      "source": "Small molecule HVACC inhibitors include CaV1 blockers (dihydropyridines, benzothiazepenes phenylalkylamines) and venom peptides that target CaV2.1 (\u03c9-agatoxin), CaV2.2 (\u03c9-conotoxin), and CaV2.3 (SNX-482) channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about existing HVACC inhibitors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "b9be7a1c-6428-4b27-ad37-1e6513e09e8c",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C10",
+      "claim": "Venom peptides target CaV2.1 (\u03c9-agatoxin), CaV2.2 (\u03c9-conotoxin), and CaV2.3 (SNX-482) channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Small molecule HVACC inhibitors include CaV1 blockers (dihydropyridines, benzothiazepenes phenylalkylamines) and venom peptides that target CaV2.1 (\u03c9-agatoxin), CaV2.2 (\u03c9-conotoxin), and CaV2.3 (SNX-482) channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about venom peptide HVACC inhibitors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "b65c54af-ebc3-4829-9a75-08c1beaaf243",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C11",
+      "claim": "Small-molecule HVACC blockers are typically widely distributed when introduced into an organism, leading to off-target effects.",
+      "claim_type": "EXPLICIT",
+      "source": "When introduced into an organism, small-molecule HVACC blockers are typically widely distributed leading to off-target effects that can narrow the therapeutic window and, thereby, adversely impact therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the pharmacological properties of small molecule drugs, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "56f038d5-ee6c-4152-a7b2-a534edfcc932",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C12",
+      "claim": "Genetically-encoded HVACC inhibitors can circumvent off-target effects because they can be selectively expressed in target tissues or cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically-encoded HVACC inhibitors can circumvent off-target effects because they can be selectively expressed in target tissues or cells; thus, they may be useful alternatives or complements to small molecule therapy (Yang et al., 2013; Murata et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on genetically-encoded inhibitors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "189657fd-9774-464b-a0e4-9b4c7d12c787",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C13",
+      "claim": "There are seven distinct HVACCs (CaV1.1 - CaV1.4; CaV2.1 - CaV2.3).",
+      "claim_type": "EXPLICIT",
+      "source": "There are seven distinct HVACCs (CaV1.1 - CaV1.4; CaV2.1 - CaV2.3) which exist in cells as multi-subunit complexes comprising pore-forming \u03b11-subunits assembled with auxiliary proteins which include \u03b2, \u03b12-\u03b4, and \u03b3 subunits (Zamponi et al., 2015; Buraei and Yang, 2010; Dolphin, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about HVACC classification, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "1bdc2234-2b76-4f02-879d-1b4a055d7618",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C14",
+      "claim": "HVACCs exist in cells as multi-subunit complexes comprising pore-forming \u03b11-subunits assembled with auxiliary proteins which include \u03b2, \u03b12-\u03b4, and \u03b3 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "There are seven distinct HVACCs (CaV1.1 - CaV1.4; CaV2.1 - CaV2.3) which exist in cells as multi-subunit complexes comprising pore-forming \u03b11-subunits assembled with auxiliary proteins which include \u03b2, \u03b12-\u03b4, and \u03b3 subunits (Zamponi et al., 2015; Buraei and Yang, 2010; Dolphin, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about HVACC structure, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "236c4da7-ed33-4de0-be73-2ba7e4446775",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C15",
+      "claim": "The \u03b11 subunit contains the voltage sensor, selectivity filter, and channel pore.",
+      "claim_type": "EXPLICIT",
+      "source": "HVACCs are named according to the identity of the component \u03b11 subunit (\u03b11A-\u03b11F; \u03b11S) which also contains the voltage sensor, selectivity filter, and channel pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about the functional domains of the \u03b11 subunit.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "706efcde-5c31-4cc4-b72d-ca9c75f4e838",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C16",
+      "claim": "Auxiliary subunits typically regulate HVACC trafficking, gating, and modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The various auxiliary subunits typically regulate HVACC trafficking, gating, and modulation, and are recognized as potential targets for developing HVACC-directed therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about the function of auxiliary subunits.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "86563ffa-ead4-4353-b292-5db9ddd9a9ee",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C17",
+      "claim": "Gabapentin targets HVACC \u03b12-\u03b4 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, gabapentin, which is clinically utilized for treating epilepsy and neuropathic pain, targets HVACC \u03b12-\u03b4 subunits (Gee et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work on gabapentin's mechanism of action.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "bf632399-41f0-4ca7-9380-4b8d64090ee6",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C18",
+      "claim": "Heterologous expression experiments indicate that the association of \u03b11 with \u03b2 is obligatory for the formation of surface-targeted functional HVACCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the presumption that the association of \u03b11 with \u03b2 is obligatory for the formation of surface-targeted functional HVACCs as indicated by heterologous expression experiments (Buraei and Yang, 2010), disruption of the \u03b11-\u03b2 interaction has been long pursued as a strategy to develop HVACC inhibitors (Young et al., 1998; Findeisen et al., 2017; Chen, 2018; Khanna et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on \u03b11-\u03b2 interactions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "30a9fd07-ef9f-4e1b-ab74-916ba46cdf4e",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C19",
+      "claim": "Disruption of the \u03b11-\u03b2 interaction has been long pursued as a strategy to develop HVACC inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the presumption that the association of \u03b11 with \u03b2 is obligatory for the formation of surface-targeted functional HVACCs as indicated by heterologous expression experiments (Buraei and Yang, 2010), disruption of the \u03b11-\u03b2 interaction has been long pursued as a strategy to develop HVACC inhibitors (Young et al., 1998; Findeisen et al., 2017; Chen, 2018; Khanna et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on HVACC inhibitor development strategies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "44b4a774-6f41-4560-81a8-701ff6cfc234",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C20",
+      "claim": "Over-expression of peptides derived from the \u03b11-interaction domain (AID) has been utilized as putative genetically-encoded HVACC inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, over-expression of peptides derived from the \u03b11-interaction domain (AID) which contains the amino acid sequence responsible for high-affinity \u03b11-\u03b2 association (Pragnell et al., 1994; Van Petegem et al., 2004; Chen et al., 2004; Opatowsky et al., 2003), has been utilized by several groups as putative genetically-encoded HVACC inhibitors (Findeisen et al., 2017; Yang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on AID peptides as HVACC inhibitors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "406b81a4-8a16-44ee-842b-2487ee985eb4",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C21",
+      "claim": "Recent data suggests that in some adult tissue the \u03b11-\u03b2 interaction is not absolutely essential for surface trafficking of HVACCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the efficacy of this approach in vivo may be limited as recent data suggests that in some adult tissue the \u03b11-\u03b2 interaction is not absolutely essential for surface trafficking of HVACCs (Yang et al., 2019; Meissner et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to recent work on \u03b11-\u03b2 interactions in adult tissue.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "208c7c57-9bd0-40b8-9798-aa08d13010fc",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C22",
+      "claim": "RGK proteins are endogenous small Ras-like G-proteins that profoundly inhibit all HVACCs when over-expressed in either heterologous cells or native tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Rad/Rem/Rem2/Gem/Kir (RGK) proteins are endogenous small Ras-like G-proteins that profoundly inhibit all HVACCs when over-expressed in either heterologous cells or native tissue (B\u00e9guin et al., 2001; Finlin et al., 2003; Chen et al., 2005; Xu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on RGK proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "d11aa5ff-f71b-4c11-9d21-c9637546e9e0",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C23",
+      "claim": "RGK proteins form ternary complexes with HVACCs via binding to constituent \u03b2 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "They form ternary complexes with HVACCs via binding to constituent \u03b2 subunits and inhibit currents via multiple mechanisms including removal of surface channels and impairing gating (Yang and Colecraft, 2013; Yang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on RGK protein mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "da03ff38-4a8e-4257-9a9f-cbebaf2a90ea",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C24",
+      "claim": "RGK proteins inhibit currents via multiple mechanisms including removal of surface channels and impairing gating.",
+      "claim_type": "EXPLICIT",
+      "source": "They form ternary complexes with HVACCs via binding to constituent \u03b2 subunits and inhibit currents via multiple mechanisms including removal of surface channels and impairing gating (Yang and Colecraft, 2013; Yang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on RGK protein mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "69a1b9cb-5530-40dc-a968-6c7ecec6e45f",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C25",
+      "claim": "Utility of RGKs as genetically-encoded HVACC inhibitors is confounded by potential off-target effects since they interact with and regulate other binding partners such as cytoskeletal proteins, 14-3-3, calmodulin, and CaM kinase II.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their efficacy, utility of RGKs as genetically-encoded HVACC inhibitors is confounded by potential off-target effects since they interact with and regulate other binding partners such as cytoskeletal proteins, 14-3-3, calmodulin, and CaM kinase II (Yang and Colecraft, 2013; Correll et al., 2008; Royer et al., 2018; B\u00e9guin et al., 2005; Ward et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on RGK protein interactions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "1f70e098-960c-4428-866c-ef60a7fe15ab",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C26",
+      "claim": "Purified CaV\u03b21 and CaV\u03b23 were used for llama immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "Purified \u03b21 and \u03b23 (1 mg each) were used for llama immunization, and successful serum conversion was confirmed by ELISA (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental procedure for llama immunization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "ce6b27de-5307-4ea2-ba3c-6ec5348b031a",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C27",
+      "claim": "At least seven distinct classes of nanobody binders were identified based on unique sequences within complementarity determining regions (CDR1-3).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified at least seven distinct classes of nanobody binders based on the unique sequences within complementarity determining regions (CDR1-3), the major determinants of antigen binding (Figure 1d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents sequence alignment data showing distinct CDR3 sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "e259981d-22bd-46e0-96e5-db67bcdda36c",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C28",
+      "claim": "Nb.F3 binds all four CaV\u03b2 isoforms (\u03b21-\u03b24) in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar experiments conducted with the other CaV\u03b2s (\u03b22-\u03b24) showed that they all bind with nb.F3-CFP-C1 in cells (Figure 1f; Figure 1\u2014figure supplement 1), indicating the nanobody interacts with an epitope conserved among CaV\u03b2s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents co-translocation assay data showing nb.F3 binding to all CaV\u03b2 isoforms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "9b160767-42e7-420a-99ab-d4c18131ba54",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C29",
+      "claim": "Nb.F3 interacts with an epitope conserved among CaV\u03b2s.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar experiments conducted with the other CaV\u03b2s (\u03b22-\u03b24) showed that they all bind with nb.F3-CFP-C1 in cells (Figure 1f; Figure 1\u2014figure supplement 1), indicating the nanobody interacts with an epitope conserved among CaV\u03b2s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that nb.F3 binds all four CaV\u03b2 isoforms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "303325f9-206d-46de-b907-143c5d91f004",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C30",
+      "claim": "Isothermal titration calorimetry using purified nb.F3 and CaV\u03b22b indicated a high-affinity (Kd = 13.2 \u00b1 7.2 nM) interaction and a 1:1 stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Isothermal titration calorimetry using purified nb.F3 and CaV\u03b22b indicated a high-affinity (Kd = 13.2 \u00b1 7.2 nM) interaction and a 1:1 stoichiometry (Figure 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents ITC data showing the binding affinity and stoichiometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "1cfd9829-0d9b-4dd0-b5cf-5520baf53322",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C31",
+      "claim": "Nb.F3 had no impact on surface or total expression of BBS-\u03b11B-YFP co-expressed with \u03b21b.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing BBS-\u03b11B-YFP and \u03b21b, nb.F3 had no impact on Alexa647 or YFP fluorescence compared to control (Figure 2b\u2013d), indicating no disruption of channel trafficking or effect on \u03b11B expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents flow cytometry data showing no change in surface or total channel levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "c63cd3db-df00-4b82-97cd-7d637b215bd8",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C32",
+      "claim": "Nb.F3 had no impact on whole-cell Ba2+ currents from CaV2.2 channels reconstituted with \u03b21b.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing \u03b11B + \u03b21b + \u03b12\u03b4 displayed robust whole-cell Ba2+ currents that were completely unaffected by nb.F3 (Figure 2i; Ipeak,0mV = \u2212104.4 \u00b1 22.0 pA/pF, n = 10 for CFP, and Ipeak,0mV = \u2212103.5 \u00b1 39.5 pA/pF, n = 10 for nb.F3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents electrophysiology data showing no change in current amplitude.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "12b32c61-6189-40fe-b64c-1df8c06cfc49",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C33",
+      "claim": "Nb.F3 had no impact on whole-cell Ba2+ currents from CaV2.2 channels reconstituted with \u03b22, \u03b23, or \u03b24.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar lack of effect of nb.F3 was observed on currents from either CaV2.2 reconstituted with the other \u03b22-\u03b24 subunits (Figure 2j-l), or CaV1.2 (\u03b11C + \u03b22a + \u03b12\u03b4) channels (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents electrophysiology data showing no change in current amplitude for different \u03b2 subunits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "3653860e-d843-4212-b79e-8e17a742aa80",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C34",
+      "claim": "Nb.F3 had no impact on whole-cell Ba2+ currents from CaV1.2 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar lack of effect of nb.F3 was observed on currents from either CaV2.2 reconstituted with the other \u03b22-\u03b24 subunits (Figure 2j-l), or CaV1.2 (\u03b11C + \u03b22a + \u03b12\u03b4) channels (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents electrophysiology data showing no change in current amplitude for CaV1.2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "8a4a9642-7a9f-408a-8fb8-981eb1bef40a",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C35",
+      "claim": "Nb.F3-Nedd4L significantly suppressed surface density of BBS-\u03b11B irrespective of the identity of the co-expressed YFP-tagged CaV\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, nb.F3-Nedd4L significantly suppressed surface density of BBS-\u03b11B irrespective of the identity of the co-expressed YFP-tagged CaV\u03b2 (Figure 3c, red bars; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents flow cytometry data showing decreased surface channel levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "346dcbd7-032f-4394-a201-26b670f8134a",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C36",
+      "claim": "The decreased BBS-\u03b11B surface density by nb.F3-Nedd4L requires the catalytic activity of the attached Nedd4L HECT domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The decreased BBS-\u03b11B surface density was not observed with nb.F3-Nedd4L[C942S] (Figure 3c, green bars), indicating it requires the catalytic activity of the attached Nedd4L HECT domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents flow cytometry data showing that the catalytically dead mutant does not reduce surface channels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "b6373753-cb67-4c97-b803-b0291b7f5404",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C37",
+      "claim": "Nb.F3-Nedd4L strongly reduced CaV1.2 surface density in a ubiquitin-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in cells expressing BBS-\u03b11C + \u03b2X-YFP, nb.F3-Nedd4L strongly reduced CaV1.2 surface density in a ubiquitin-dependent manner (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents flow cytometry data showing decreased CaV1.2 surface levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "2e71493f-20e4-4cb7-86c4-9baa22c00e95",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C38",
+      "claim": "Nb.F3-Nedd4L had no significant impact on total \u03b11B subunit expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our observations for CaV\u03b2, nb.F3-NeddL had no significant impact on the expression of BBS-\u03b11B-YFP (Figure 3e, red bars) relative to either negative controls (black bars) or cells expressing nb.F3-Nedd4L[C942S] (green bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents flow cytometry data showing no change in total \u03b11B levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "ad75389e-9ab8-44ec-b53d-f50434a8c9f6",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C39",
+      "claim": "Nb.F3-Nedd4L essentially eliminated CaV2.2 currents reconstituted from \u03b11B + \u03b12\u03b4 co-expressed with any of the four CaV\u03b2s.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, nb.F3-Nedd4L essentially eliminated CaV2.2 currents reconstituted from \u03b11B + \u03b12\u03b4 co-expressed with any of the four CaV\u03b2s (Figure 3g-j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents electrophysiology data showing near-complete elimination of currents.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "d01a23a1-c75a-4d4f-beb1-6d49b138798c",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C40",
+      "claim": "Nb.F3-Nedd4L was equally effective in ablating whole-cell currents in reconstituted CaV1.2, CaV1.3, CaV2.1, and CaV2.3 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, nb.F3-Nedd4L was equally effective in ablating whole-cell currents in reconstituted CaV1.2, CaV1.3, CaV2.1, and CaV2.3 channels (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents electrophysiology data showing elimination of currents from multiple HVACC types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "887f1c8b-dbc5-4bf6-b452-cb2a98dd08ec",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C41",
+      "claim": "CaV-a\u03b2lator virtually eliminated CaV1.2 currents in cultured adult guinea pig ventricular cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in contemporaneous experiments, cardiomyocytes expressing CaV-a\u03b2lator via adenovirus-mediated infection displayed virtually no CaV1.2 currents, demonstrating an exceptional CaV-a\u03b2lation efficiency in this system (Figure 5a,b; Ipeak,0mV = \u22121.0 \u00b1 0.3 pA/pF, n = 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents electrophysiology data from cardiomyocytes showing near-complete elimination of L-type calcium currents.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "3042e6ad-10ed-4bf7-8929-3aff20fbfee2",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C42",
+      "claim": "Ubiquitination is necessary for CaV-a\u03b2lation in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiomyocytes expressing nb.F3-Nedd4L[C942S] displayed ICa,L similar to control (Ipeak,0mV = \u22125.1 \u00b1 0.6 pA/pF, n = 10), indicating that ubiquitination is necessary for CaV-a\u03b2lation in this system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents electrophysiology data showing that the catalytically dead mutant does not eliminate currents.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "6db5af62-8c2e-4687-b5d5-54b4864ec61a",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C43",
+      "claim": "CaV-a\u03b2lator caused a redistribution of \u03b11C from dyadic junctions in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was a redistribution of \u03b11C from dyadic junctions, as reported by a dramatic loss of co-localization between \u03b11C and RyR2 (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents immunofluorescence data showing decreased colocalization of \u03b11C with RyR2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "1bb4d420-ed1a-4f21-aa11-7c5966570735",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C44",
+      "claim": "The punctate \u03b11C signals in CaV-a\u03b2lator-expressing cardiomyocytes coincided with Rab7 immunofluorescence signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the punctate \u03b11C signals in CaV-a\u03b2lator-expressing cardiomyocytes coincided with Rab7, but not Rab5 or LAMP1, immunofluorescence signals (Figure 5d; Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents immunofluorescence data showing increased colocalization of \u03b11C with Rab7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "05cea2d7-7d7b-46f5-b27b-e6f8b4c0ff50",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C45",
+      "claim": "The mechanism of CaV-a\u03b2lator inhibition of ICa,L is redistribution of \u03b11C from dyadic junctions to intracellular compartments, specifically Rab7-positive late endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mechanism of CaV-a\u03b2lator inhibition of ICa,L is redistribution of \u03b11C from dyadic junctions to intracellular compartments, specifically Rab7-positive late endosomes (Figure 5h) (Rink et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the immunofluorescence data showing redistribution of \u03b11C to Rab7-positive compartments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "1d94aad9-1315-48dd-9339-c6e48dbeaada",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C46",
+      "claim": "CaV-a\u03b2lator substantially increased ubiquitination of both \u03b11C and CaV\u03b21b subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in pulldown experiments of recombinant CaV1.2 channels, CaV-a\u03b2lator substantially increased ubiquitination of both \u03b11C (Figure 5e,f) and CaV\u03b21b subunits (Figure 5g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents pulldown and western blot data showing increased ubiquitination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "88b8120a-3ccd-4578-94c1-07fd1b9028ad",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C47",
+      "claim": "The overall levels of \u03b11C expression was unchanged with CaV-a\u03b2lator despite the increased ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the overall levels of \u03b11C expression was unchanged with CaV-a\u03b2lator despite the increased ubiquitination (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents western blot data showing no change in total \u03b11C levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "41a5fd43-d099-4560-8c3f-4db095fec1da",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C48",
+      "claim": "Direct ubiquitination of \u03b11C by CaV-a\u03b2lator may underlie the redistribution of CaV1.2 channels from dyads to Rab7-positive late endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that direct ubiquitination of \u03b11C by CaV-a\u03b2lator may underlie the redistribution of CaV1.2 channels from dyads to Rab7-positive late endosomes (Figure 5h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the observed ubiquitination and redistribution data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "1b9777dd-f01c-498f-9417-bf3c9c88d282",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C49",
+      "claim": "Depolarization-induced Ca2+ influx was virtually eliminated in DRG neurons expressing CaV-a\u03b2lator.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, depolarization-induced Ca2+ influx was virtually eliminated in neurons expressing CaV-ablator, demonstrating highly efficient CaV-ablation in this system (Figure 6a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents calcium imaging data showing elimination of KCl-evoked calcium transients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "aa7765da-d828-41ee-8170-bb287ff34d58",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C50",
+      "claim": "CaV-a\u03b2lator selectively eliminates HVACCs in DRG neurons without impacting LVA T-type channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results indicate CaV-ablator selectively eliminates HVACCs in DRG neurons without impacting LVA T-type channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents electrophysiology data showing elimination of HVACC currents while T-type currents remain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "05acd78f-cc26-4824-9329-827fec7809fc",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C51",
+      "claim": "Control pancreatic \u03b2-cells expressing GFP or nb.F3-Nedd4L[C942S] displayed robust glucose- or KCl-evoked fura-2-reported Ca2+ transients that were essentially abolished in cells expressing CaV-a\u03b2lator.",
+      "claim_type": "EXPLICIT",
+      "source": "Control cells expressing GFP or nb.F3-Nedd4L[C942S] displayed robust glucose- or KCl-evoked fura-2-reported Ca2+ transients that were essentially abolished in cells expressing CaV-a\u03b2lator (Figure 6e-g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents calcium imaging data showing elimination of glucose- and KCl-evoked calcium transients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "a8ab11c6-6fc1-4cfd-9a6d-0a2fbf8bdfab",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C52",
+      "claim": "CaV-a\u03b2lator is a potent genetically-encoded HVACC inhibitor that is effective across diverse cellular contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results reveal the exceptional activity of CaV-a\u03b2lator as a genetically-encoded HVACC inhibitor that is effective across diverse cellular contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the data presented from multiple cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "b740c132-4f2d-474a-9062-e2be3bf5d737",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C53",
+      "claim": "CaV-a\u03b2lator combines the exquisite specificity of a CaV\u03b2-targeted nanobody and the powerfully consequential catalytic activity of an E3 ubiquitin ligase.",
+      "claim_type": "EXPLICIT",
+      "source": "CaV-a\u03b2lator combines the exquisite specificity of a CaV\u03b2-targeted nanobody and the powerfully consequential catalytic activity of an E3 ubiquitin ligase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement describing the design of CaV-a\u03b2lator.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "cb37bc5f-1d1c-445c-9e2e-35c695c9a40f",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C54",
+      "claim": "In cells expressing both LVACCs and HVACCs, the physiological effects mediated specifically through LVACCs versus HVACCs in vivo can be difficult to decipher.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing both classes of channels, the physiological effects mediated specifically through LVACCs versus HVACCs in vivo can be difficult to decipher.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the challenges in studying calcium channel function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "29cd6b9f-e3cb-4591-8511-b4486e415ae9",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C55",
+      "claim": "CaV-a\u03b2lator can be deployed in target cells to virtually erase all HVACCs while leaving LVACC actions intact.",
+      "claim_type": "EXPLICIT",
+      "source": "CaV-a\u03b2lator now presents as a tool that can be deployed in target cells to virtually erase all HVACCs while leaving LVACC actions intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the data showing selective elimination of HVACCs but not T-type channels in DRG neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "fb89376a-de73-49da-8ed2-7cf69f804224",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C56",
+      "claim": "RGK GTPases are capable of potently inhibiting CaV1/CaV2 channels when over-expressed in target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The closest existing proteins that can similarly eliminate HVACCs are RGK GTPases which are capable of potently inhibiting CaV1/CaV2 channels when over-expressed in target cells (Murata et al., 2004; Chen et al., 2005; Xu et al., 2010; Puckerin et al., 2018; Bannister et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on RGK proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "143a4400-aa7a-4504-957a-9ebf3ebbe709",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C57",
+      "claim": "A distinct disadvantage of RGKs is their propensity for off-target effects due to their known interactions with cytoskeletal proteins and other signaling molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a distinct disadvantage of RGKs is their propensity for off-target effects due to their known interactions with, and regulation of, cytoskeletal proteins and other signaling molecules including 14-3-3, calmodulin, and CaM kinase II (Yang and Colecraft, 2013; Correll et al., 2008; Royer et al., 2018; B\u00e9guin et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on RGK protein interactions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "c1997a78-df02-4f28-9a1a-5e55e3dd75ba",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C58",
+      "claim": "Over-expressing the AID peptide in adult cardiac myocytes is not effective in inhibiting CaV1.2 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, over-expressing the AID peptide in adult cardiac myocytes is not effective in inhibiting CaV1.2 channels (Yang et al., 2019), because in this context \u03b11C binding to CaV\u03b2 is not absolutely required for channel trafficking to the surface (Yang et al., 2019; Meissner et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on AID peptides in cardiomyocytes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "c36f1e3e-c848-4058-8b7b-42495a426f9f",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C59",
+      "claim": "In adult cardiomyocytes, \u03b11C binding to CaV\u03b2 is not absolutely required for channel trafficking to the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, over-expressing the AID peptide in adult cardiac myocytes is not effective in inhibiting CaV1.2 channels (Yang et al., 2019), because in this context \u03b11C binding to CaV\u03b2 is not absolutely required for channel trafficking to the surface (Yang et al., 2019; Meissner et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on \u03b11C trafficking in cardiomyocytes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "1cff060b-ae51-4013-b2e4-c79c9a097992",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C60",
+      "claim": "The ability of CaV-a\u03b2lator to essentially eradicate ICa,L in adult cardiomyocytes indicates that under normal physiological conditions essentially all \u03b11C subunits are associated with a CaV\u03b2 in ventricular heart cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the ability of CaV-a\u03b2lator to essentially eradicate ICa,L in adult cardiomyocytes indicates that under normal physiological conditions essentially all \u03b11C subunits are associated with a CaV\u03b2 in ventricular heart cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that CaV-a\u03b2lator, which targets CaV\u03b2, eliminates essentially all ICa,L.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "15759b21-0551-4b48-974a-12b29c6a7442",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C61",
+      "claim": "Targeted ubiquitination of \u03b11C/\u03b22 complexes in cardiomyocytes with CaV-a\u03b2lator specifically arrests CaV1.2 channels in Rab7-positive late endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that targeted ubiquitination of \u03b11C/\u03b22 complexes in cardiomyocytes with CaV-a\u03b2lator specifically arrests CaV1.2 channels in Rab7-positive late endosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the immunofluorescence data showing redistribution of \u03b11C to Rab7-positive compartments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "dde704bd-ab20-4160-aa93-afd407a6ea65",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C62",
+      "claim": "The HECT domain of Nedd4L principally catalyzes the addition of K63-linkage polyubiquitin chains to target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "CaV-a\u03b2lator possesses the catalytic HECT domain of Nedd4L which is known to principally catalyze the addition of K63-linkage polyubiquitin chains to target proteins (Kim and Huibregtse, 2009; Scheffner and Kumar, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on Nedd4L catalytic activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "12013547-26a8-4bce-b991-429db4a24561",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C63",
+      "claim": "K63-ubiquitin chains on \u03b11C/\u03b22 subunits may be a key signal directing CaV1.2 channels to late endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggest that K63-ubiquitin chains on \u03b11C/\u03b22 subunits may be a key signal directing CaV1.2 channels to late endosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the known activity of Nedd4L and the observed redistribution.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "782ae12b-b1ad-44b3-ae98-2ee010e032c5",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C64",
+      "claim": "Targeted ubiquitination of HVACC \u03b11 subunits with CaV-a\u03b2lator did not lead to their enhanced degradation either in heterologous cells or cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that targeted ubiquitination of HVACC \u03b11 subunits with CaV-a\u03b2lator did not lead to their enhanced degradation either in heterologous cells or cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the flow cytometry and immunofluorescence data showing no change in total \u03b11 levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "815a16e9-1554-4d85-8623-89d58044ab20",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C65",
+      "claim": "Using a GFP nanobody to target the Nedd4L HECT domain to YFP-tagged KCNQ1 resulted in reduced expression of this K+ channel pore-forming \u03b11 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, using a GFP nanobody to target the Nedd4L HECT domain to YFP-tagged KCNQ1, a known substrate of endogenous Nedd4L, resulted in reduced expression of this K+ channel pore-forming \u03b11 subunit (Kanner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work on KCNQ1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "5a950302-026c-43d6-8402-62fa4b12cccd",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C66",
+      "claim": "The impact of Nedd4L HECT domain on the stability of membrane proteins is likely substrate-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the impact of Nedd4L HECT domain on the stability of membrane proteins is likely substrate-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the different effects on CaV channels versus KCNQ1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "f805d111-e1a9-434b-9b6b-bfcc529eb37d",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C67",
+      "claim": "Blocking the activity of specific HVACCs with small molecules is a prevailing or potential therapy for many cardiovascular and neurological diseases including pain, hypertension, cardiac arrhythmias, epilepsy, and Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking the activity of specific HVACCs with small molecules is a prevailing or potential therapy for many cardiovascular and neurological diseases including; pain, hypertension, cardiac arrhythmias, epilepsy, and Parkinson's disease (Zamponi, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a review on HVACC therapeutics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "91de3276-98f6-4e34-8d96-6b88f456d0d4",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C68",
+      "claim": "A limitation of small molecule or toxin blockers for HVACCs is the propensity for off-target effects due to their inevitable widespread distribution when administered to a patient.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of small molecule or toxin blockers for HVACCs is the propensity for off-target effects due to their inevitable widespread distribution when administered to a patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the pharmacological properties of small molecule drugs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "cc5d7372-d3d3-4903-b6d7-d138e6e4b1fb",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C69",
+      "claim": "Genetically-encoded HVACC inhibitors have great potential to be useful therapeutics with the advantage that their expression can be restricted to target tissues/cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically-encoded HVACC inhibitors have great potential to be useful therapeutics with the advantage that their expression can be restricted to target tissues/cell types, or even to spatially discrete channels within single cells (Murata et al., 2004; Makarewich et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on genetically-encoded inhibitors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "da0adf40-453f-405b-9350-537e8920bb81",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C70",
+      "claim": "CaV-a\u03b2lator could be a lead molecule for future development into a gene therapy for particular applications where a genetically-encoded HVACC inhibitor is warranted.",
+      "claim_type": "EXPLICIT",
+      "source": "Given its potency in silencing HVACC activity, CaV-a\u03b2lator could be a lead molecule for future development into a gene therapy for particular applications where a genetically-encoded HVACC inhibitor is warranted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "b7dde1a3-f380-4566-b2c4-ff541b1e8b33",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C71",
+      "claim": "CaV1/CaV2 channels of a particular type may form discrete signaling units with different functional outputs in single cells based on their incorporation into divergent macro-molecular complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a prevailing idea is that CaV1/CaV2 channels of a particular type (e.g. CaV1.2 channels in cardiomyocytes) may yet form discrete signaling units with different functional outputs in single cells based on their incorporation into divergent macro-molecular complexes (Shaw and Colecraft, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work on channel signaling complexes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "1336eb6d-7c56-4d88-8576-aa3c5109f3b8",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C72",
+      "claim": "Different CaV\u03b2 isoforms could be a node of signal diversification by promoting formation of molecularly distinct HVACC macro-molecular complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "There are tantalizing hints that different CaV\u03b2 isoforms could be a node of signal diversification by promoting formation of molecularly distinct HVACC macro-molecular complexes (McEnery et al., 1998; Brice and Dolphin, 1999; Campiglio and Flucher, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on CaV\u03b2 isoforms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "7dc7fb33-5e8a-4f6a-a6c5-32801a901476",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C73",
+      "claim": "The ability to inhibit specific CaV channel macro-molecular complexes based on the identity of the constituent CaV\u03b2 is biologically important, yet not rigorously addressable with conventional knockout/knockdown approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the ability to inhibit specific CaV channel macro-molecular complexes based on the identity of the constituent CaV\u03b2 is biologically important, yet not rigorously addressable with conventional knockout/knockdown approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of current approaches and the potential of the new tool.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "3470af7c-75f2-494f-a11a-2deeeaf55096",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C74",
+      "claim": "Development of CaV\u03b2 isoform-specific nanobodies should be feasible given that there is sequence divergence among CaV\u03b2s outside the conserved src homology 3 (SH3) and guanylate kinase (GK) domains.",
+      "claim_type": "EXPLICIT",
+      "source": "A challenge to realize this possibility is the development of CaV\u03b2 isoform-specific nanobodies which should be feasible given that there is sequence divergence among CaV\u03b2s outside the conserved src homology 3 (SH3) and guanylate kinase (GK) domains (Buraei and Yang, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future possibilities, supported by a citation about CaV\u03b2 structure.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "83cdc560-6a6d-4552-9e10-53bac23bd660",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C75",
+      "claim": "The phenomenon of ion channel pore-forming \u03b11 subunits assembled with diverse auxiliary subunits in individual cells is common throughout biology.",
+      "claim_type": "EXPLICIT",
+      "source": "In a broader context, the phenomenon of ion channel pore-forming \u03b11 subunits assembled with diverse auxiliary subunits in individual cells is common throughout biology (O'Malley and Isom, 2015; Copits and Swanson, 2012; Trimmer, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on ion channel structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "dfba0cf7-9c49-4f4c-afa4-0f39e2506dc5",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C76",
+      "claim": "CaV-a\u03b2lator-inspired molecules and approaches might be expected to elucidate functional dimensions of ion channel macro-molecular complex signaling that have remained refractory to analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, CaV-a\u03b2lator-inspired molecules and approaches might be expected to elucidate functional dimensions of ion channel macro-molecular complex signaling that, to date, have remained refractory to analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "ed4a4bd1-62bd-4e26-9dd1-d865a9de76b9",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C77",
+      "claim": "Nb.F3 binds CaV\u03b22b with a 1:1 stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Isothermal titration calorimetry using purified nb.F3 and CaV\u03b22b indicated a high-affinity (Kd = 13.2 \u00b1 7.2 nM) interaction and a 1:1 stoichiometry (Figure 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The ITC data shows N = 0.93 \u00b1 0.02, indicating 1:1 stoichiometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "3fb555f1-0627-418e-a31f-b86b0fa467f0",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C78",
+      "claim": "Application of 1 \u03bcM phorbol-12,13-dibutyrate (PdBu) led to the rapid and dramatic redistribution of nb.F3-CFP-C1 from the cytosol to the plasma and nuclear membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of 1 \u03bcM phorbol-12,13-dibutyrate (PdBu) led to the rapid and dramatic redistribution of nb.F3-CFP-C1 from the cytosol to the plasma and nuclear membranes (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents confocal imaging data showing membrane translocation upon PdBu treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "e6371df9-2213-41f8-9f23-66c0ebc0adfa",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C79",
+      "claim": "YFP-\u03b21 concomitantly redistributed to the plasma and nuclear membranes upon PdBu treatment, confirming it associates with nb.F3 inside cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Reassuringly, YFP-\u03b21 concomitantly redistributed to the plasma and nuclear membranes, providing a convenient visual confirmation that it associates with nb.F3 inside cells (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents confocal imaging data showing co-translocation of YFP-\u03b21 with nb.F3-CFP-C1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "ec98e5f1-ee4e-4717-b891-229adf4b8b71",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C80",
+      "claim": "Neither F3-Nedd4L nor F3-Nedd4L[C942S] had any significant impact on \u03b21b total expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing BBS-\u03b11B + \u03b21b-YFP + \u03b12\u03b4, neither F3-Nedd4L nor F3-Nedd4L[C942S] had any significant impact on \u03b21b total expression as reported by the unchanged YFP fluorescence compared to negative control cells (Figure 3a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents flow cytometry data showing no change in YFP fluorescence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "119328d8-850f-4909-b497-c1b7ee58be32",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C81",
+      "claim": "The expression levels of \u03b22 and \u03b23 were modestly reduced by nb.F3, although this effect did not reach statistical significance.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression levels of \u03b21-YFP and \u03b24-YFP were unaffected by nb.F3, whereas the levels of \u03b22 and \u03b23 were modestly reduced (although this effect did not reach statistical significance), suggesting a possible slightly increased vulnerability of these two isoforms to degradation when bound by the nanobody (Figure 2h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents flow cytometry data showing a trend towards lower \u03b22 and \u03b23 levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "cec16cb5-ba25-4251-ae6e-1cbb0079fdd0",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C82",
+      "claim": "Cultured adult guinea pig ventricular cardiomyocytes retain the rod-shaped phenotype and overall cyto-architecture of freshly isolated heart cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We used adenovirus to express CaV-a\u03b2lator or nb.F3-Nedd4L[C942S] in CAGPVCs which retain the rod-shaped phenotype and overall cyto-architecture of freshly isolated heart cells (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents confocal images showing rod-shaped cardiomyocytes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "1d5e1ddb-18b1-46a1-8e95-2da5d51ec7ec",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C83",
+      "claim": "Control (non-infected) cardiomyocytes expressed ICa,L that peaked at a 0 mV test pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "Control (non-infected) cardiomyocytes expressed ICa,L that peaked at a 0 mV test pulse (Figure 5a,b; Ipeak,0mV = \u22126.5 \u00b1 0.2 pA/pF, n = 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents electrophysiology data showing the voltage dependence of ICa,L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "0010677c-b3b3-4eb5-a6d4-79b501e0da6f",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C84",
+      "claim": "CaV-a\u03b2lator expressing cardiomyocytes showed no difference in total CaV\u03b22 levels as compared to either uninfected or nb.F3-Nedd4L[C942S]-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiomyocytes expressing CaV-a\u03b2lator also showed no difference in total CaV\u03b22 levels as compared to either uninfected or nb.F3-Nedd4L[C942S]-expressing cells (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents immunofluorescence data showing no change in total \u03b22 levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "c6e22a3d-af18-46b3-b199-0b5bbf18e97b",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C85",
+      "claim": "The signal intensity for punctate \u03b11C staining was unchanged in CaV-a\u03b2lator expressing cardiomyocytes compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cardiomyocytes expressing CaV-a\u03b2lator, the signal intensity for punctate \u03b11C staining was unchanged from control cells (Figure 5\u2014figure supplement 1), suggesting no impact of the presumed increase in ubiquitination on the stability of the protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents immunofluorescence data showing no change in total \u03b11C levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "0e027ed1-c579-4633-9599-e19fa7a9931e",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C86",
+      "claim": "Murine dorsal root ganglion (DRG) neurons express multiple CaV1/CaV2 channel types.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested the efficacy of CaV-a\u03b2lator to suppress HVACCs in murine dorsal root ganglion (DRG) neurons which were of interest because they express multiple CaV1/CaV2 channel types (Murali et al., 2015; McCallum et al., 2011), and also play a key role in the processing of noxious signals including pain and itch (Han et al., 2013; Kim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on DRG neuron channel expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "0954c05f-62ba-4d0c-a698-933530027382",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C87",
+      "claim": "DRG neurons play a key role in the processing of noxious signals including pain and itch.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested the efficacy of CaV-a\u03b2lator to suppress HVACCs in murine dorsal root ganglion (DRG) neurons which were of interest because they express multiple CaV1/CaV2 channel types (Murali et al., 2015; McCallum et al., 2011), and also play a key role in the processing of noxious signals including pain and itch (Han et al., 2013; Kim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on DRG neuron function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "15b7a90b-b0a6-479a-9e11-cdcfa6c6d9aa",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C88",
+      "claim": "Murine pancreatic \u03b2-cells have multiple CaV channel types (CaV1.2, CaV1.3, and CaV2.1) involved in insulin release.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we tested whether CaV-ablator is also effective in murine pancreatic \u03b2-cells, which have multiple CaV channel types (CaV1.2, CaV1.3, and CaV2.1) involved in insulin release (Yang and Berggren, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work on pancreatic \u03b2-cell calcium channels.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "77d648d6-a2d3-4ee7-a6b8-7ef9f843799d",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C89",
+      "claim": "In adult cardiomyocytes, binding of \u03b11C to CaV\u03b2 is not obligatory for substantive CaV1.2 channel trafficking to the surface sarcolemma.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as it has now been shown that in adult cardiomyocytes binding of \u03b11C to CaV\u03b2 is not obligatory for substantive CaV1.2 channel trafficking to the surface sarcolemma (Yang et al., 2019; Meissner et al., 2011), the fraction of CaV\u03b2-bound CaV1.2 channels contributing to the whole-cell L-type current (ICa,L) in ventricular myocytes is ambiguous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on \u03b11C-\u03b2 interactions in cardiomyocytes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "c9c1e0de-099e-45f0-b4b5-6e21a2290558",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C90",
+      "claim": "The fraction of CaV\u03b2-bound CaV1.2 channels contributing to the whole-cell L-type current (ICa,L) in ventricular myocytes is ambiguous.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as it has now been shown that in adult cardiomyocytes binding of \u03b11C to CaV\u03b2 is not obligatory for substantive CaV1.2 channel trafficking to the surface sarcolemma (Yang et al., 2019; Meissner et al., 2011), the fraction of CaV\u03b2-bound CaV1.2 channels contributing to the whole-cell L-type current (ICa,L) in ventricular myocytes is ambiguous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that \u03b11C-\u03b2 binding is not obligatory for trafficking.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "83f3c4f7-9da7-4b7f-94bd-b50f95646e72",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C91",
+      "claim": "CaV\u03b11C in uninfected cardiomyocytes presented with a characteristic striated punctate distribution pattern that co-localized with that of ryanodine (RyR2) receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "CaV\u03b11C in uninfected cardiomyocytes presented with a characteristic striated punctate distribution pattern that co-localized with that of ryanodine (RyR2) receptors (Figure 5c), reflecting their well-known predominant localization at dyadic junctions (Scriven et al., 2000; Bers, 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents immunofluorescence data showing colocalization of \u03b11C with RyR2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "de34ce90-b052-4270-a21b-a45dea467b7c",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C92",
+      "claim": "The colocalization of \u03b11C with RyR2 reflects their well-known predominant localization at dyadic junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "CaV\u03b11C in uninfected cardiomyocytes presented with a characteristic striated punctate distribution pattern that co-localized with that of ryanodine (RyR2) receptors (Figure 5c), reflecting their well-known predominant localization at dyadic junctions (Scriven et al., 2000; Bers, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on CaV1.2 and RyR2 localization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "51d8aa3e-fa3b-4481-afc1-5612bd824e34",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "claim_id": "C93",
+      "claim": "Rab7 is a marker of late endosomes.",
+      "claim_type": "IMPLICIT",
+      "source": "Thus, the mechanism of CaV-a\u03b2lator inhibition of ICa,L is redistribution of \u03b11C from dyadic junctions to intracellular compartments, specifically Rab7-positive late endosomes (Figure 5h) (Rink et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in cell biology, supported by the citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4ced653b-361e-48ec-9572-47d8e094eebf",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors isolated a llama nanobody (nb.F3) that binds to all four CaV\u03b2 isoforms (\u03b21-\u03b24) with high affinity (Kd = 13.2 \u00b1 7.2 nM) and 1:1 stoichiometry. Nb.F3 recognizes a conserved epitope among CaV\u03b2 subunits and can be incorporated into HVACC complexes in cells, as demonstrated by co-translocation assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C26-C30, C77-C79 are well-supported by multiple complementary experimental approaches including phage display, ITC measurements showing high-affinity binding with appropriate stoichiometry, and cellular co-translocation assays demonstrating binding to all four CaV\u03b2 isoforms. The data converge to support the isolation and characterization of a pan-CaV\u03b2 nanobody.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "f8690e23-7423-444a-8d68-3bac3186e3fe",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nb.F3 by itself is functionally inert, having no significant impact on HVACC surface trafficking, total expression levels, or whole-cell currents when co-expressed with CaV2.2 or CaV1.2 channels reconstituted with any of the four CaV\u03b2 isoforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C31-C34, C81 are supported by comprehensive flow cytometry and electrophysiology data showing that nb.F3 does not alter channel trafficking, expression, or function across multiple CaV\u03b2 isoforms and channel types. The modest reduction in \u03b22 and \u03b23 levels (C81) did not reach statistical significance, appropriately qualifying this observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "da22de98-1324-4ddf-8913-b1a00db0861c",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Fusion of nb.F3 to the catalytic HECT domain of Nedd4L (nb.F3-Nedd4L) significantly suppressed surface density of reconstituted HVACCs in a ubiquitin-dependent manner without affecting total expression levels of either CaV\u03b2 or \u03b11 subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38, C80 are well-supported by flow cytometry data showing that nb.F3-Nedd4L reduces surface channel density across all CaV\u03b2 isoforms, that this effect requires catalytic activity (abolished in C942S mutant), and that total protein levels remain unchanged. The data consistently demonstrate a trafficking defect rather than degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "21c88984-5683-4d81-86c2-0be711b2e054",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CaV-a\u03b2lator (nb.F3-Nedd4L) essentially eliminated whole-cell currents from diverse reconstituted HVACCs (CaV1.2, CaV1.3, CaV2.1, CaV2.2, CaV2.3) in HEK293 cells, regardless of which CaV\u03b2 isoform was co-expressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C39-C40 are strongly supported by comprehensive electrophysiology data showing near-complete elimination of currents across multiple HVACC subtypes and all four CaV\u03b2 isoforms. The consistency across channel types and \u03b2 subunits demonstrates broad efficacy of the tool.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "ffc3f71c-bd38-4bbb-a1a6-80e53fbb1816",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CaV-a\u03b2lator virtually eliminated endogenous CaV1.2 currents in cultured adult guinea pig ventricular cardiomyocytes in a ubiquitin-dependent manner, reducing peak current density from -6.5 \u00b1 0.2 pA/pF to -1.0 \u00b1 0.3 pA/pF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C41-C42, C82-C83 are well-supported by electrophysiology data from cardiomyocytes showing near-complete elimination of ICa,L with CaV-a\u03b2lator but not with the catalytically dead mutant. The use of cultured adult cardiomyocytes that retain native architecture strengthens the physiological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "ee5faba8-4925-4e60-9e6a-e0bad1abec3b",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In cardiomyocytes, CaV-a\u03b2lator redistributed CaV1.2 channels from dyadic junctions (marked by RyR2 colocalization) to Rab7-positive late endosomes without affecting total \u03b11C or \u03b22 protein levels, revealing the mechanism of current elimination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C43-C45, C61, C84-C85, C91-C93 are supported by immunofluorescence data showing decreased \u03b11C/RyR2 colocalization and increased \u03b11C/Rab7 colocalization, with no change in total protein levels. The data provide a clear mechanistic explanation for functional inhibition through channel redistribution rather than degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "7a21f56d-72a5-46bb-8b7c-af7959dc5e4a",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CaV-a\u03b2lator substantially increased ubiquitination of both \u03b11C and CaV\u03b21b subunits without affecting total protein levels, suggesting that K63-linked ubiquitin chains may direct channels to late endosomes rather than promoting degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C46-C47, C64 are supported by pulldown/western blot data showing increased ubiquitination without degradation. However, claims C48, C62-C63 regarding K63-linkage are speculative, as the authors did not directly demonstrate the type of ubiquitin linkage added by CaV-a\u03b2lator. The inference is reasonable based on known Nedd4L activity but requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "8235d78f-c04d-450f-a1fb-0cd40cb5035a",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CaV-a\u03b2lator selectively eliminated HVACC-mediated calcium influx in murine DRG neurons while leaving low-voltage-activated T-type calcium channels intact, as demonstrated by calcium imaging and voltage-clamp recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C49-C50, C86-C87 are well-supported by calcium imaging showing elimination of KCl-evoked responses and electrophysiology data showing selective loss of HVACC currents while T-type currents (recorded from -90 mV holding potential) remain intact. This demonstrates important selectivity of the tool.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "2ab99bac-b9f7-4e81-91e9-f792f605e572",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CaV-a\u03b2lator essentially abolished glucose- and KCl-evoked calcium transients in murine pancreatic \u03b2-cells, which express multiple CaV channel types (CaV1.2, CaV1.3, CaV2.1) involved in insulin release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C51, C88 are supported by calcium imaging data showing elimination of both glucose- and KCl-evoked responses in pancreatic \u03b2-cells. The citation supporting C88 regarding channel types in \u03b2-cells is appropriate background knowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "5969d905-d457-499c-8e84-ae4230546f30",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CaV-a\u03b2lator represents a potent genetically-encoded HVACC inhibitor that combines the specificity of a CaV\u03b2-targeted nanobody with the catalytic activity of an E3 ubiquitin ligase, and is effective across diverse cellular contexts including heterologous cells and native excitable cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53, C55 are summary statements well-supported by the collective data from HEK293 cells, cardiomyocytes, DRG neurons, and pancreatic \u03b2-cells. The tool demonstrates consistent efficacy across multiple experimental systems and cell types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "23cb115c-9626-4140-bfcf-c0cc485ef3cc",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The ability of CaV-a\u03b2lator to essentially eradicate ICa,L in adult cardiomyocytes indicates that under normal physiological conditions essentially all \u03b11C subunits are associated with a CaV\u03b2 in ventricular heart cells, despite prior evidence that \u03b11C-\u03b2 binding is not obligatory for trafficking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C89-C90 present a logical inference supported by the data: if CaV-a\u03b2lator (which targets CaV\u03b2) eliminates essentially all ICa,L, then essentially all functional channels must be associated with CaV\u03b2. The citations supporting C89 regarding non-obligatory binding are appropriate context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "c26be6b1-4c24-47f6-b509-0de0b0b84c5a",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The impact of the Nedd4L HECT domain on membrane protein stability is substrate-dependent, as targeting it to KCNQ1 channels resulted in degradation while targeting to CaV channels did not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 are supported by citation to prior work on KCNQ1 and the current data on CaV channels. The comparison appropriately highlights substrate-specific effects of ubiquitination, though the mechanistic basis for this difference remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    },
+    {
+      "id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f",
+      "content_id": "3abf465c-77bd-4555-8537-f90dd65e12c2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on HVACCs, existing inhibitors, and the rationale for developing genetically-encoded inhibitors, along with discussion of potential future applications and therapeutic development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C9-C25, C54, C56-C59, C67-C76) represent background knowledge, literature context, and speculative future directions. They are appropriately supported by citations and established knowledge. Claims about future applications (C70, C74, C76) are appropriately qualified as speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:37:41.706888Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cfbefeb8-ccce-43df-89a2-a6eaa5f47e19",
+      "result_id": "4ced653b-361e-48ec-9572-47d8e094eebf"
+    },
+    {
+      "claim_id": "1f70e098-960c-4428-866c-ef60a7fe15ab",
+      "result_id": "4ced653b-361e-48ec-9572-47d8e094eebf"
+    },
+    {
+      "claim_id": "ce6b27de-5307-4ea2-ba3c-6ec5348b031a",
+      "result_id": "4ced653b-361e-48ec-9572-47d8e094eebf"
+    },
+    {
+      "claim_id": "e259981d-22bd-46e0-96e5-db67bcdda36c",
+      "result_id": "4ced653b-361e-48ec-9572-47d8e094eebf"
+    },
+    {
+      "claim_id": "9b160767-42e7-420a-99ab-d4c18131ba54",
+      "result_id": "4ced653b-361e-48ec-9572-47d8e094eebf"
+    },
+    {
+      "claim_id": "303325f9-206d-46de-b907-143c5d91f004",
+      "result_id": "4ced653b-361e-48ec-9572-47d8e094eebf"
+    },
+    {
+      "claim_id": "ed4a4bd1-62bd-4e26-9dd1-d865a9de76b9",
+      "result_id": "4ced653b-361e-48ec-9572-47d8e094eebf"
+    },
+    {
+      "claim_id": "3fb555f1-0627-418e-a31f-b86b0fa467f0",
+      "result_id": "4ced653b-361e-48ec-9572-47d8e094eebf"
+    },
+    {
+      "claim_id": "e6371df9-2213-41f8-9f23-66c0ebc0adfa",
+      "result_id": "4ced653b-361e-48ec-9572-47d8e094eebf"
+    },
+    {
+      "claim_id": "7446f45a-7f50-4400-9e8d-d66f222b0164",
+      "result_id": "f8690e23-7423-444a-8d68-3bac3186e3fe"
+    },
+    {
+      "claim_id": "1cfd9829-0d9b-4dd0-b5cf-5520baf53322",
+      "result_id": "f8690e23-7423-444a-8d68-3bac3186e3fe"
+    },
+    {
+      "claim_id": "c63cd3db-df00-4b82-97cd-7d637b215bd8",
+      "result_id": "f8690e23-7423-444a-8d68-3bac3186e3fe"
+    },
+    {
+      "claim_id": "12b32c61-6189-40fe-b64c-1df8c06cfc49",
+      "result_id": "f8690e23-7423-444a-8d68-3bac3186e3fe"
+    },
+    {
+      "claim_id": "3653860e-d843-4212-b79e-8e17a742aa80",
+      "result_id": "f8690e23-7423-444a-8d68-3bac3186e3fe"
+    },
+    {
+      "claim_id": "119328d8-850f-4909-b497-c1b7ee58be32",
+      "result_id": "f8690e23-7423-444a-8d68-3bac3186e3fe"
+    },
+    {
+      "claim_id": "8a4a9642-7a9f-408a-8fb8-981eb1bef40a",
+      "result_id": "da22de98-1324-4ddf-8913-b1a00db0861c"
+    },
+    {
+      "claim_id": "346dcbd7-032f-4394-a201-26b670f8134a",
+      "result_id": "da22de98-1324-4ddf-8913-b1a00db0861c"
+    },
+    {
+      "claim_id": "b6373753-cb67-4c97-b803-b0291b7f5404",
+      "result_id": "da22de98-1324-4ddf-8913-b1a00db0861c"
+    },
+    {
+      "claim_id": "2e71493f-20e4-4cb7-86c4-9baa22c00e95",
+      "result_id": "da22de98-1324-4ddf-8913-b1a00db0861c"
+    },
+    {
+      "claim_id": "ec98e5f1-ee4e-4717-b891-229adf4b8b71",
+      "result_id": "da22de98-1324-4ddf-8913-b1a00db0861c"
+    },
+    {
+      "claim_id": "f4777147-2559-40d4-84e6-b3a73ef1314e",
+      "result_id": "21c88984-5683-4d81-86c2-0be711b2e054"
+    },
+    {
+      "claim_id": "ad75389e-9ab8-44ec-b53d-f50434a8c9f6",
+      "result_id": "21c88984-5683-4d81-86c2-0be711b2e054"
+    },
+    {
+      "claim_id": "d01a23a1-c75a-4d4f-beb1-6d49b138798c",
+      "result_id": "21c88984-5683-4d81-86c2-0be711b2e054"
+    },
+    {
+      "claim_id": "91c771fc-685f-44ab-abf0-93bc1f8aeb47",
+      "result_id": "ffc3f71c-bd38-4bbb-a1a6-80e53fbb1816"
+    },
+    {
+      "claim_id": "887f1c8b-dbc5-4bf6-b452-cb2a98dd08ec",
+      "result_id": "ffc3f71c-bd38-4bbb-a1a6-80e53fbb1816"
+    },
+    {
+      "claim_id": "3042e6ad-10ed-4bf7-8929-3aff20fbfee2",
+      "result_id": "ffc3f71c-bd38-4bbb-a1a6-80e53fbb1816"
+    },
+    {
+      "claim_id": "cec16cb5-ba25-4251-ae6e-1cbb0079fdd0",
+      "result_id": "ffc3f71c-bd38-4bbb-a1a6-80e53fbb1816"
+    },
+    {
+      "claim_id": "1d5e1ddb-18b1-46a1-8e95-2da5d51ec7ec",
+      "result_id": "ffc3f71c-bd38-4bbb-a1a6-80e53fbb1816"
+    },
+    {
+      "claim_id": "5454da1d-d39a-436d-895d-4a7eac083bb3",
+      "result_id": "ee5faba8-4925-4e60-9e6a-e0bad1abec3b"
+    },
+    {
+      "claim_id": "6db5af62-8c2e-4687-b5d5-54b4864ec61a",
+      "result_id": "ee5faba8-4925-4e60-9e6a-e0bad1abec3b"
+    },
+    {
+      "claim_id": "1bb4d420-ed1a-4f21-aa11-7c5966570735",
+      "result_id": "ee5faba8-4925-4e60-9e6a-e0bad1abec3b"
+    },
+    {
+      "claim_id": "05cea2d7-7d7b-46f5-b27b-e6f8b4c0ff50",
+      "result_id": "ee5faba8-4925-4e60-9e6a-e0bad1abec3b"
+    },
+    {
+      "claim_id": "15759b21-0551-4b48-974a-12b29c6a7442",
+      "result_id": "ee5faba8-4925-4e60-9e6a-e0bad1abec3b"
+    },
+    {
+      "claim_id": "0010677c-b3b3-4eb5-a6d4-79b501e0da6f",
+      "result_id": "ee5faba8-4925-4e60-9e6a-e0bad1abec3b"
+    },
+    {
+      "claim_id": "c6e22a3d-af18-46b3-b199-0b5bbf18e97b",
+      "result_id": "ee5faba8-4925-4e60-9e6a-e0bad1abec3b"
+    },
+    {
+      "claim_id": "83f3c4f7-9da7-4b7f-94bd-b50f95646e72",
+      "result_id": "ee5faba8-4925-4e60-9e6a-e0bad1abec3b"
+    },
+    {
+      "claim_id": "de34ce90-b052-4270-a21b-a45dea467b7c",
+      "result_id": "ee5faba8-4925-4e60-9e6a-e0bad1abec3b"
+    },
+    {
+      "claim_id": "51d8aa3e-fa3b-4481-afc1-5612bd824e34",
+      "result_id": "ee5faba8-4925-4e60-9e6a-e0bad1abec3b"
+    },
+    {
+      "claim_id": "1d94aad9-1315-48dd-9339-c6e48dbeaada",
+      "result_id": "7a21f56d-72a5-46bb-8b7c-af7959dc5e4a"
+    },
+    {
+      "claim_id": "88b8120a-3ccd-4578-94c1-07fd1b9028ad",
+      "result_id": "7a21f56d-72a5-46bb-8b7c-af7959dc5e4a"
+    },
+    {
+      "claim_id": "41a5fd43-d099-4560-8c3f-4db095fec1da",
+      "result_id": "7a21f56d-72a5-46bb-8b7c-af7959dc5e4a"
+    },
+    {
+      "claim_id": "dde704bd-ab20-4160-aa93-afd407a6ea65",
+      "result_id": "7a21f56d-72a5-46bb-8b7c-af7959dc5e4a"
+    },
+    {
+      "claim_id": "12013547-26a8-4bce-b991-429db4a24561",
+      "result_id": "7a21f56d-72a5-46bb-8b7c-af7959dc5e4a"
+    },
+    {
+      "claim_id": "782ae12b-b1ad-44b3-ae98-2ee010e032c5",
+      "result_id": "7a21f56d-72a5-46bb-8b7c-af7959dc5e4a"
+    },
+    {
+      "claim_id": "21aa14a8-f8c7-4064-95d1-99a42dc223ee",
+      "result_id": "8235d78f-c04d-450f-a1fb-0cd40cb5035a"
+    },
+    {
+      "claim_id": "1b9777dd-f01c-498f-9417-bf3c9c88d282",
+      "result_id": "8235d78f-c04d-450f-a1fb-0cd40cb5035a"
+    },
+    {
+      "claim_id": "aa7765da-d828-41ee-8170-bb287ff34d58",
+      "result_id": "8235d78f-c04d-450f-a1fb-0cd40cb5035a"
+    },
+    {
+      "claim_id": "0e027ed1-c579-4633-9599-e19fa7a9931e",
+      "result_id": "8235d78f-c04d-450f-a1fb-0cd40cb5035a"
+    },
+    {
+      "claim_id": "0954c05f-62ba-4d0c-a698-933530027382",
+      "result_id": "8235d78f-c04d-450f-a1fb-0cd40cb5035a"
+    },
+    {
+      "claim_id": "37caffd7-f3e8-4abd-9c02-02e99859d711",
+      "result_id": "2ab99bac-b9f7-4e81-91e9-f792f605e572"
+    },
+    {
+      "claim_id": "05acd78f-cc26-4824-9329-827fec7809fc",
+      "result_id": "2ab99bac-b9f7-4e81-91e9-f792f605e572"
+    },
+    {
+      "claim_id": "15b7a90b-b0a6-479a-9e11-cdcfa6c6d9aa",
+      "result_id": "2ab99bac-b9f7-4e81-91e9-f792f605e572"
+    },
+    {
+      "claim_id": "a8ab11c6-6fc1-4cfd-9a6d-0a2fbf8bdfab",
+      "result_id": "5969d905-d457-499c-8e84-ae4230546f30"
+    },
+    {
+      "claim_id": "b740c132-4f2d-474a-9062-e2be3bf5d737",
+      "result_id": "5969d905-d457-499c-8e84-ae4230546f30"
+    },
+    {
+      "claim_id": "29cd6b9f-e3cb-4591-8511-b4486e415ae9",
+      "result_id": "5969d905-d457-499c-8e84-ae4230546f30"
+    },
+    {
+      "claim_id": "1cff060b-ae51-4013-b2e4-c79c9a097992",
+      "result_id": "23cb115c-9626-4140-bfcf-c0cc485ef3cc"
+    },
+    {
+      "claim_id": "77d648d6-a2d3-4ee7-a6b8-7ef9f843799d",
+      "result_id": "23cb115c-9626-4140-bfcf-c0cc485ef3cc"
+    },
+    {
+      "claim_id": "c9c1e0de-099e-45f0-b4b5-6e21a2290558",
+      "result_id": "23cb115c-9626-4140-bfcf-c0cc485ef3cc"
+    },
+    {
+      "claim_id": "815a16e9-1554-4d85-8623-89d58044ab20",
+      "result_id": "c26be6b1-4c24-47f6-b509-0de0b0b84c5a"
+    },
+    {
+      "claim_id": "5a950302-026c-43d6-8402-62fa4b12cccd",
+      "result_id": "c26be6b1-4c24-47f6-b509-0de0b0b84c5a"
+    },
+    {
+      "claim_id": "0775ec97-0523-4480-8d14-47b240034f6a",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "72231b05-a77a-4e86-a560-83398670a584",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "b9be7a1c-6428-4b27-ad37-1e6513e09e8c",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "b65c54af-ebc3-4829-9a75-08c1beaaf243",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "56f038d5-ee6c-4152-a7b2-a534edfcc932",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "189657fd-9774-464b-a0e4-9b4c7d12c787",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "1bdc2234-2b76-4f02-879d-1b4a055d7618",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "236c4da7-ed33-4de0-be73-2ba7e4446775",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "706efcde-5c31-4cc4-b72d-ca9c75f4e838",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "86563ffa-ead4-4353-b292-5db9ddd9a9ee",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "bf632399-41f0-4ca7-9380-4b8d64090ee6",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "30a9fd07-ef9f-4e1b-ab74-916ba46cdf4e",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "44b4a774-6f41-4560-81a8-701ff6cfc234",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "406b81a4-8a16-44ee-842b-2487ee985eb4",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "208c7c57-9bd0-40b8-9798-aa08d13010fc",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "d11aa5ff-f71b-4c11-9d21-c9637546e9e0",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "da03ff38-4a8e-4257-9a9f-cbebaf2a90ea",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "69a1b9cb-5530-40dc-a968-6c7ecec6e45f",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "cb37bc5f-1d1c-445c-9e2e-35c695c9a40f",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "fb89376a-de73-49da-8ed2-7cf69f804224",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "143a4400-aa7a-4504-957a-9ebf3ebbe709",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "c1997a78-df02-4f28-9a1a-5e55e3dd75ba",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "c36f1e3e-c848-4058-8b7b-42495a426f9f",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "f805d111-e1a9-434b-9b6b-bfcc529eb37d",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "91de3276-98f6-4e34-8d96-6b88f456d0d4",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "cc5d7372-d3d3-4903-b6d7-d138e6e4b1fb",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "da0adf40-453f-405b-9350-537e8920bb81",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "b7dde1a3-f380-4566-b2c4-ff541b1e8b33",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "1336eb6d-7c56-4d88-8576-aa3c5109f3b8",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "7dc7fb33-5e8a-4f6a-a6c5-32801a901476",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "3470af7c-75f2-494f-a11a-2deeeaf55096",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "83cdc560-6a6d-4552-9e10-53bac23bd660",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    },
+    {
+      "claim_id": "dfba0cf7-9c49-4f4c-afa4-0f39e2506dc5",
+      "result_id": "ce7d6f1f-cc61-4eb5-a912-53957a95b29f"
+    }
+  ],
+  "comparisons": []
+}

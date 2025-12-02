@@ -1,0 +1,1932 @@
+{
+  "submission": {
+    "id": "486ca1df-9623-4347-89ab-33a6d7c4f89a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:21:54.947928Z",
+    "updated_at": "2025-12-02T10:21:54.947928Z"
+  },
+  "content": [
+    {
+      "id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "submission_id": "486ca1df-9623-4347-89ab-33a6d7c4f89a",
+      "content_type": "manuscript",
+      "content_text": "# Natural depletion of histone H1 in sex cells causes DNA demethylation, heterochromatin decondensation and transposon activation\n\n## Authors\n\n- Shengbo He<sup>1</sup> ([ORCID: 0000-0003-3773-9995](https://orcid.org/0000-0003-3773-9995))\n- Martin Vickers<sup>1</sup>\n- Jingyi Zhang<sup>1</sup>\n- Xiaoqi Feng<sup>1</sup> ([ORCID: 0000-0002-4008-1234](https://orcid.org/0000-0002-4008-1234)) \u2020\n\n### Affiliations\n\n1. Department of Cell and Developmental Biology John Innes Centre Norwich United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nTransposable elements (TEs), the movement of which can damage the genome, are epigenetically silenced in eukaryotes. Intriguingly, TEs are activated in the sperm companion cell \u2013 vegetative cell (VC) \u2013 of the flowering plant Arabidopsis thaliana. However, the extent and mechanism of this activation are unknown. Here we show that about 100 heterochromatic TEs are activated in VCs, mostly by DEMETER-catalyzed DNA demethylation. We further demonstrate that DEMETER access to some of these TEs is permitted by the natural depletion of linker histone H1 in VCs. Ectopically expressed H1 suppresses TEs in VCs by reducing DNA demethylation and via a methylation-independent mechanism. We demonstrate that H1 is required for heterochromatin condensation in plant cells and show that H1 overexpression creates heterochromatic foci in the VC progenitor cell. Taken together, our results demonstrate that the natural depletion of H1 during male gametogenesis facilitates DEMETER-directed DNA demethylation, heterochromatin relaxation, and TE activation.\n\n## Introduction\n\nLarge proportions of most eukaryotic genomes are comprised of transposable elements (TEs), mobile genetic fragments that can jump from one location to another. For example, TEs comprise approximately 50% of the human genome (International Human Genome Sequencing Consortium, 2001; Venter et al., 2001), and more than 85% of the genomes in crops such as wheat and maize (Schnable et al., 2009; Wicker et al., 2018). Regarded as selfish and parasitic, activities of TEs compromise genome stability, disrupt functional genes, and are often associated with severe diseases including cancers in animals (Anwar et al., 2017). To safeguard genome integrity, eukaryotic hosts have evolved efficient epigenetic mechanisms, including DNA methylation, to suppress TEs (He et al., 2011; Law and Jacobsen, 2010). Curiously, recent studies point to episodes of TE activation that occur in specific cell types and/or particular developmental stages (Garcia-Perez et al., 2016; Mart\u00ednez and Slotkin, 2012). These TE activation events provide unique opportunities to understand epigenetic silencing mechanisms, and the co-evolution between TEs and their hosts.\n\nDevelopmental TE activation has been shown in mammalian embryos, germlines and brain cells. In pre-implantation embryos and the fetal germline, LINE-1 retrotransposons are highly expressed despite relatively low levels of transposition (Fadloun et al., 2013; Kano et al., 2009; Percharde et al., 2017; Richardson et al., 2017). Recently, LINE-1 RNA was shown to play a key regulatory role in promoting pre-implantation embryo development in mice (Percharde et al., 2018). LINE-1 elements have also been shown to transcribe and mobilize in neuronal precursor cells in mice and human (Coufal et al., 2009; Muotri et al., 2005). The underlying mechanism of such cell-specific TE activation is still unclear. Hypomethylation at LINE-1 promoters in neurons has been proposed to contribute (Coufal et al., 2009), and possibly the availability of transcription factors (Muotri et al., 2005; Richardson et al., 2014). The frequency of LINE-1 retrotransposition in mammalian brain is still under debate; however, it has been speculated that LINE-1 activities might serve to promote genetic diversity among cells of a highly complex organ like the brain (Garcia-Perez et al., 2016; Richardson et al., 2014; Singer et al., 2010).\n\nOne of the best demonstrated cases of developmental TE activation occurs in the male gametophyte of flowering plants, pollen grains. Pollen are products of male gametogenesis, which initiates from haploid meiotic products called microspores. Each microspore undergoes an asymmetric mitosis to generate a bicellular pollen comprised of a large vegetative cell (VC) and a small generative cell engulfed by the VC (Berger and Twell, 2011). Subsequently the generative cell divides again mitotically to produce two sperm. Upon pollination, the VC develops into a pollen tube to deliver the sperm to meet the female cells, and subsequently degenerates. In the mature tricellular pollen of Arabidopsis thaliana, several TEs were found activated and transposed (Slotkin et al., 2009). Enhancer/gene trap insertions into TEs showed specific reporter activity in the VC, and TE transpositions detected in pollen were absent in progeny (Slotkin et al., 2009). These results demonstrated TE activation in pollen is confined to the VC. TE expression in the short-lived VC has been proposed to promote the production of small RNAs, which may be transported into sperm to reinforce the silencing of cognate TEs (Calarco et al., 2012; Ibarra et al., 2012; Mart\u00ednez et al., 2016; Slotkin et al., 2009). However, TE transcription in the VC has not been comprehensively investigated, hindering our understanding of this phenomenon.\n\nThe mechanisms underlying TE reactivation in the VC are also unknown. One proposed mechanism is the absence of the Snf2 family nucleosome remodeler DDM1 (Slotkin et al., 2009). DDM1 functions to overcome the impediment of nucleosomes and linker histone H1 to DNA methyltransferases (Lyons and Zilberman, 2017; Zemach et al., 2013). Loss of DDM1 leads to DNA hypomethylation and massive TE derepression in somatic tissues (Jeddeloh et al., 1999; Lippman et al., 2004; Tsukahara et al., 2009; Zemach et al., 2013). However, global DNA methylation in the VC is comparable to that of microspores and substantially higher than in somatic tissues (Calarco et al., 2012; Hsieh et al., 2016; Ibarra et al., 2012). This suggests that DDM1 is present during the first pollen mitosis that produces the VC, so its later absence is unlikely to cause TE activation.\n\nA plausible mechanism underlying TE activation in the VC is active DNA demethylation. DNA methylation in plants occurs on cytosines in three sequence contexts: CG, CHG and CHH (H\u00a0=\u00a0A, C or T). Approximately ten thousand loci \u2013 predominantly TEs \u2013 are hypomethylated in the VC, primarily in the CG context and to a lesser extent in the CHG/H contexts (Calarco et al., 2012; Ibarra et al., 2012). Hypomethylation in the VC is caused by a DNA glycosylase called DEMETER (DME) (Ibarra et al., 2012). DME demethylates DNA via direct excision of methylated cytosine, and its expression is confined to the VC and its female counterpart, the central cell, during sexual reproduction (Choi et al., 2002; Schoft et al., 2011). DME demethylation may therefore cause TE transcription in the VC; however, this hypothesis has not been tested.\n\nAnother plausible mechanism for epigenetic TE activation is chromatin decondensation (Feng et al., 2013). Drastic reprogramming of histone variants and histone modifications occurs during both male and female gametogenesis, rendering the gametes and companion cells with radically different chromatin states (Baroux et al., 2011; Borg and Berger, 2015). For example, centromeric repeats, which are condensed in sperm and other cell types, are decondensed in the VC, accompanied by the depletion of centromeric histone H3 (Ingouff et al., 2010; M\u00e9rai et al., 2014; Schoft et al., 2009). Chromocenters, which are comprised of condensed pericentromeric heterochromatin and rDNA repeats (Chandrasekhara et al., 2016; Fransz et al., 2002; Tessadori et al., 2004), are observed in sperm nuclei but absent in the VC nucleus, suggesting that pericentromeric heterochromatin is decondensed in the VC (Baroux et al., 2011; Ingouff et al., 2010; Schoft et al., 2009). Heterochromatin decondensation in the VC is proposed to promote rDNA transcription that empowers pollen tube growth (M\u00e9rai et al., 2014). However, the cause of VC heterochromatin decondensation remains unclear.\n\nOur previous work showed that histone H1, which binds to the nucleosome surface and the linker DNA between two adjacent nucleosomes (Fyodorov et al., 2018), is depleted in Arabidopsis VC nuclei (Hsieh et al., 2016). H1 depletion in the VC has also been observed in a distantly related lily species (Tanaka et al., 1998), suggesting a conserved phenomenon in flowering plants. In Drosophila and mouse embryonic stem cells, H1 has been shown to contribute to heterochromatin condensation (Cao et al., 2013; Lu et al., 2009). H1 is also more abundant in heterochromatin than euchromatin in Arabidopsis (Ascenzi and Gantt, 1999; Rutowicz et al., 2015). However, it is unknown whether H1 participates in heterochromatin condensation in plant cells, and specifically whether the lack of H1 contributes to heterochromatin decondensation in the VC.\n\nWhether and how the depletion of H1 in the VC contributes to TE derepression is also unclear. A recent study pointed to an intriguing link between H1 and DME. In the central cell, the histone chaperone FACT (facilitates chromatin transactions) is required for DME-directed DNA demethylation in heterochromatic TEs, and this requirement is dependent on H1 (Frost et al., 2018). However, DME activity in the VC is independent of FACT (Frost et al., 2018). One attractive hypothesis is that the lack of H1 in the VC causes heterochromatin decondensation and thereby contributes to the independence of DME from FACT. H1 depletion may therefore participate in VC TE activation by promoting DME-directed demethylation. Additionally, H1 depletion may activate TE transcription independently of DNA methylation, as shown in Drosophila where DNA methylation is absent (Iwasaki et al., 2016; Lu et al., 2013; Vujatovic et al., 2012; Zemach et al., 2010; Zhang et al., 2015).\n\nIn this study, we identify heterochromatic TEs that are epigenetically activated in Arabidopsis VCs. We demonstrate that these TEs are typically subject to DME-directed demethylation at the transcriptional start site (TSS), which is at least partially permitted by the depletion of H1. However, we find that loss of H1 activates some TEs without altering DNA methylation. We also show that developmental depletion of H1 decondenses heterochromatin in late microspores and is important for pollen fertility. Our results demonstrate that H1 condenses heterochromatin in plants and maintains genome stability by silencing TEs via methylation-dependent and -independent mechanisms.\n\n## Results\n\n### Heterochromatic transposons are preferentially expressed in the vegetative cell\n\nTo measure the extent of TE activation in the VC, we performed RNA-seq using mature pollen grains, followed by the annotation of gene and TE transcripts using Mikado and the TAIR10 annotation (Venturini et al., 2018). We identified 114 TEs that are transcribed at significantly higher levels in pollen than rosette leaves (fold change\u00a0>2; p<0.05, likelihood ratio test), and hence likely to be specifically activated in the VC (Figure 1\u2014source data 1) (Slotkin et al., 2009).\n\nThe VC-activated TEs are primarily located in pericentromeric regions and exhibit features of heterochromatic TEs, such as being long and GC rich (Frost et al., 2018) (Figure 1A,B, Figure 1\u2014figure supplement 1A). As is typical of heterochromatic TEs (Zemach et al., 2013), VC-activated TEs are significantly enriched in dimethylation of histone H3 on lysine 9 (H3K9me2) in somatic tissues, and are significantly depleted of euchromatin-associated modifications (Figure 1B, Figure 1\u2014figure supplement 1B). VC-activated TEs encompass diverse TE families, among which MuDR DNA transposons and Gypsy LTR-retrotransposons are significantly overrepresented (p<10\u22129 and 0.01, respectively, Fisher\u2019s exact test; Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig1-v2.jpg)\n\n**Figure 1.:** (A) Expression and locations of VC-activated TEs along Chromosome 5. The purple ellipse and red bars indicate the centromere and borders of pericentromeric regions, respectively. (B) Box plots showing the length, GC content, and H3K9me2 level of TEs. Each box encloses the middle 50% of the distribution, with the horizontal line marking the median and vertical lines marking the minimum and maximum values that fall within 1.5 times the height of the box. Difference between the two datasets compared for each feature is significant (Kolmogorov-Smirnov test p<0.001). (C) Percentages of TEs classified by superfamily. (D) VC-activated TEs were aligned at the TSS and TTS (dashed lines), respectively, and average CG methylation levels for each 100 bp interval were plotted (referred to as ends analysis). (E) Snapshots demonstrating the expression (Log2RPKM), absolute and differential CG methylation at two example VC-activated TEs. Red lines under TE annotations indicate VC DME targets. Spm, sperm. (F) Pie charts illustrating percentages of VC-activated TEs with TSS overlapping (top) or within 500 bp (bottom) of VC DME targets. (G) Box plot showing the expression level of VC-activated TEs in pollen from WT and dme/+\u00a0heterozygous mutant. WT/2 shows half of the WT expression level. Wilcoxon matched-pairs signed-rank test is used. n.s., no significance.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Chromosomal view of VC-activated TEs, similar to Figure 1A. (B) Box plots showing the enrichment of euchromatic histone modifications at TEs, similar to Figure 1B. Difference between the two datasets compared for each feature is significant (Kolmogorov-Smirnov test p<0.001). H2Bub, H2B ubiquitination. (C) Ends analysis of VC-activated TEs, similar to Figure 1D. (D) Percentages of VC-activated TEs with TSS and/or TTS within indicated distances of VC DME targets.\n\n### Transposon derepression in the VC is caused by DME-directed DNA demethylation\n\nTo assess whether TE activation in the VC is caused by DME-mediated DNA demethylation, we examined DNA methylation in VC and sperm at the 114 activated TEs. We found that these TEs have substantially lower CG methylation in the VC than in sperm at and near the TSS (Figure 1D,E), indicative of DME activity. Because TEs tend to be flanked by repeats (Joly-Lopez and Bureau, 2018), the transcriptional termination site (TTS) regions of activated TEs also tend to be hypomethylated in the VC (Figure 1D,E, Figure 1\u2014figure supplement 1C). Examination of DNA methylation in VCs from dme/+ heterozygous plants (dme homozygous mutants are embryonic lethal), which produce a 50:50 ratio of dme mutant and WT pollen, revealed an intermediate level of methylation at TSS and TTS of VC-activated TEs (Figure 1D,E). CHG and CHH methylation is also substantially increased at the TSS (and TTS) of VC-activated TEs in dme/+\u00a0VC (Figure 1\u2014figure supplement 1C), consistent with the knowledge that DME demethylates all sequence contexts (Gehring et al., 2006; Ibarra et al., 2012).\n\nConsistent with the above results, 71 of the 114 (62%) VC-activated TEs overlap VC DME targets at their TSSs (Figure 1F, Figure 1\u2014source datas 1 and 2). 92 out of the 114 TEs (81%) have VC DME targets within 500 bp of the TSS (Figure 1F, Figure 1\u2014figure supplement 1D, Figure 1\u2014source data 1). As DNA methylation at/near the TSS has been well-demonstrated to suppress the transcription of genes and TEs in plants and animals (Barau et al., 2016; Eichten et al., 2012; Hollister and Gaut, 2009; Manakov et al., 2015; Meng et al., 2016), our results indicate that DME-directed demethylation is a major mechanism of TE activation in the VC. Consistently, RNA-seq of pollen from dme/+ heterozygous plants showed significantly reduced expression at the 114 VC-activated TEs (Figure 1G, Figure 1\u2014source data 1). As dme/+ heterozygous plants produce half dme mutant and half WT pollen, we expect the transcription of VC-activated TEs to be reduced to roughly half in dme/+ pollen. The 114 VC-activated TEs are transcribed at levels close to this expectation (Figure 1G), with the median ratio of their transcription in dme/+\u00a0versus WT pollen being 0.43 (Figure 1\u2014source data 1).\n\n### Vegetative-cell-expressed H1 impedes DME from accessing heterochromatic transposons\n\nWe next tested our hypothesis that the lack of histone H1 in the VC (Hsieh et al., 2016) allows heterochromatin to be accessible by DME. We first examined the developmental timing of H1 depletion during microspore and pollen development using GFP translational fusion lines (Hsieh et al., 2016; She et al., 2013). There are three H1 homologs in Arabidopsis, with H1.1 and H1.2 encoding the canonical H1 proteins, and H1.3 expressed at a much lower level and induced by stress (Rutowicz et al., 2015). H1.1- and H1.2- GFP reporters exhibit the same expression pattern: present in early microspore nucleus but absent in the late microspore stage, and remaining absent in the VC nucleus while present in the generative cell and subsequent sperm nuclei (Figure 2A). H1.3 is not detectable in either microspore or pollen (Figure 2A). These results are consistent with our previous observations, confirming that H1 is absent in the VC (Hsieh et al., 2016), and demonstrating that H1 depletion begins at the late microspore stage.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013B) Confocal images showing H1 localization under native promoter (A) and VC-specific promoter (pVC, B) during male gametogenesis. Msp, microspore; BCP, bicellular pollen; TCP, tricellular pollen. Bars, 5 \u03bcm. All pVC::H1.1-mRFP (short as pVC::H1) refers to line #2. (C) Ends analysis of all TEs or genes in VCs from pVC::H1 (line #2) and WT. (D\u2013E) Kernel density plots illustrating frequency distribution of methylation differences in 50 bp windows between VCs from pVC::H1 and WT (D), and between WT sperm (Spm) and VC (E). (F) Snapshots showing CG methylation difference between the indicated cell types. Arrows point to DME targets that are hypermethylated by pVC::H1. (G) Snapshots demonstrating CG methylation in sperm and VCs at single-nucleotide resolution, with the cytosine most hypomethylated by DME marked in red. VC DME targets are underlined in black. (H) Scatter plot illustrating CG methylation differences between the indicated cell types at H1 hyperDMRs. 82.25% of H1 hyperDMRs show significant increase in sperm in comparison to VCs. (I) Box plot illustrating H3K9me2 level at VC DME targets that are significantly hypermethylated in pVC::H1 (H1-inhibited) or not (H1-independent), respectively. Difference between the two groups is significant (Kolmogorov-Smirnov test p<0.001). (J) VC DME targets were grouped according to H3K9me2 levels, aligned at the most demethylated cytosine (dashed lines), and plotted for average CG methylation difference as indicated in each 10 bp interval (left). Similarly, CG methylation in pVC::H1 and WT VCs was plotted for the group with the lowest and highest H3K9me2, respectively. Spm, sperm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** pVC::H1 (pLAT52::H1-mRFP line #2) plants show reduced silique length (A) and an increased proportion of malformed pollen grains (B), which are indicated by red arrows in the SEM image (C). (D) Box plot showing the germination rate of the indicated genotypes. Statistics: (B), Student\u2019s t test p<10\u221210, n\u00a0=\u00a017, mean\u00a0\u00b1\u00a0SD are shown; (D), Kolmogorov-Smirnov test p<0.01, n\u00a0=\u00a08. Bars: (A), 1 cm; (C), 20 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A,C,D) Kernel density plots showing frequency distribution of methylation differences between VCs from pVC::H1 and WT in all 50 bp windows (blue traces) and windows overlapping VC DME targets (orange traces). (B) Ends analysis of DME-targeted TEs in VCs from pVC::H1 (line #2) and WT.\n\nTo understand how H1 affects DME activity, we ectopically expressed H1 in the VC. To ensure H1 incorporation into VC chromatin, we used the pLAT52 promoter, which is expressed from the late microspore stage immediately prior to Pollen Mitosis 1, and is progressively upregulated in VC during later stages of pollen development (Eady et al., 1994; Grant-Downton et al., 2013). Using pLAT52 to drive the expression of H1.1 tagged with mRFP (simplified as pVC::H1), we observed continuous H1-mRFP signal in the VC at the bicellular and tricellular pollen stages, while the signal was undetectable in the generative cell and sperm (Figure 2B). H1-mRFP signal was also undetectable in late microspores (Figure 2B), probably due to the low activity of pLAT52 at this stage (Eady et al., 1994). Notably, we found H1 expression in VC leads to shortened siliques, a substantial proportion of malformed pollen, and reduced pollen germination rate (Figure 2\u2014figure supplement 1A\u2013D), suggesting the depletion of H1 in the VC is important for pollen fertility.\n\nTo evaluate the effect of VC-expressed H1 on DNA methylation, we obtained genome-wide methylation profiles for VC nuclei from a strong pVC::H1 line (#2; Figure 2B) and WT via fluorescence-activated cell sorting (FACS) followed by bisulfite sequencing (Supplementary file 1). CG methylation in the VC of pVC::H1 plants is largely similar to that of WT, except for a slight increase in TE methylation (Figure 2C, Figure 2\u2014figure supplement 2A). Consistently, the frequency distribution of CG methylation differences between VCs of pVC::H1 and WT at loci that are not DME targets peaks near zero, showing almost no global difference (Figure 2D). However, a substantial proportion of loci that are targeted by DME show hypermethylation in pVC::H1 VC (Figure 2D, Figure 2\u2014figure supplement 2B). DME targets also show preferential hypermethylation in CHG and CHH contexts in the VC of pVC::H1 (Figure 2\u2014figure supplement 2C\u2013D). These results indicate that H1 expression in the VC specifically impedes DME activity.\n\nAcross the genome, we found 2964 differentially methylated regions (DMRs) that are significantly CG hypermethylated in the VC of pVC::H1 plants (referred to as H1 hyperDMRs hereafter; ranging from 101 to 2155 nt in length, 280 nt on average; Figure 2\u2014source data 1). Most of the H1 hyperDMRs (1618, 55%) overlap DME targets in the VC (Figure 2\u2014source data 1), and H1 hyperDMRs exhibit strong hypomethylation in WT VCs, with 81.4% (2412 sites) having significantly more CG methylation in sperm than VC (p<0.001, Fisher\u2019s exact test), indicating that most H1 hyperDMRs are DME targets (Figure 2E\u2013H).\n\nOur results demonstrate that H1 hyperDMRs are primarily caused by the inhibition of DME. However, only 3066 out of 11896 (26%) VC DME targets have significantly more CG methylation in the VC of pVC::H1 than WT (p<0.001, Fisher\u2019s exact test; Figure 1\u2014source data 2), indicating that VC-expressed H1 impedes DME at a minority of its genomic targets. These H1-impeded DME targets are heterochromatic and significantly enriched in H3K9me2 compared with H1-independent DME targets (Figure 2I). To further examine the link with heterochromatin, we aligned all VC DME target loci at the most hypomethylated cytosine, and separated them into five groups by H3K9me2 levels (Figure 2J). pVC::H1-induced hypermethylation peaks where DME-mediated hypomethylation peaks, but is apparent only in the most heterochromatic group (highest H3K9me2) of DME target loci (Figure 2J). Taken together, our results demonstrate that developmental removal of H1 from the VC allows DME to access heterochromatin.\n\n### H1 represses transposons via methylation-dependent and independent mechanisms\n\nGiven the importance of H1 removal for DME-directed DNA demethylation and the well-demonstrated role of DME demethylation in regulating gene expression (Choi et al., 2002; Ibarra et al., 2012; Schoft et al., 2011), we investigated the contribution of H1 to gene regulation in pollen. RNA-seq was performed using pollen from the pVC::H1 line (#2), which showed strong H1 expression in VC (Figures 2B and 3A). Only a small fraction of pollen-expressed genes (3%; 89 out of 2845) is differentially expressed (fold change\u00a0>2; p<0.05, likelihood ratio test) between pVC::H1 and WT (Figure 3B, Figure 3\u2014source data 1). Among these 89 genes, 58 (65%) are suppressed by H1 expression in the VC, and 31 (35%) are activated (Figure 3B, Figure 3\u2014source data 1). 85 out of these 89 genes (96%) do not overlap DME targets within 500 bp of the TSS, hence the effect of H1 on their expression is probably not mediated by DME. Among the four genes that overlap DME targets within 500 bp of the TSS, two genes gain a small amount of methylation at the overlapping DME targets and are suppressed in pVC::H1 pollen (Figure 3\u2014figure supplement 1, Figure 3\u2014source data 1), hence are possibly suppressed by H1 via the inhibition of DME.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig3-v2.jpg)\n\n**Figure 3.:** pVC::H1 refers to line #2 except as specified in A) and F). (A,F) quantitative RT-PCR demonstrating H1.1 (A) or TE (F) expression in pollen from WT and two independent pVC::H1 transgenic lines. Relative expression is calculated by normalizing to WT (WT\u00a0=\u00a01). Student\u2019s t test *p<0.05, **p<0.01, ***p<0.001; ns, not significant; n\u00a0=\u00a03; mean\u00a0\u00b1\u00a0SD are shown. (B,D) Scatter plot illustrating the expression (Log2TPM) of TEs or genes in WT and pVC::H1 pollen. Red and green dots indicate significant down- and up-regulation in pVC::H1 compared to WT (|fold change|\u00a0>\u00a02, marked by dashed lines; likelihood ratio test p<0.05), respectively. (C) Box plots illustrating H3K9me2 enrichment and H1 occupancy at endosperm DME targets which are within 500 bp of the TSS of imprinted genes, or VC DME targets inhibited by pVC::H1 (refer to Figure 2I). Difference between the two datasets compared for each feature is significant (Kolmogorov-Smirnov test p<0.001). (E) Snapshots showing the expression (Log2RPKM) of 3 example H1-repressed TEs in WT and pVC::H1 pollen. Rep, biological replicate. (G) Chromosomal view of H1-repressed TEs, similar to Figure 1A. (H) Box plots illustrating the length, H3K9me2 enrichment, and H1 occupancy at two groups of VC-activated TEs. Difference between the two datasets compared for each feature is significant (Kolmogorov-Smirnov test p<0.05 for length, and\u00a0<0.001 for others). (I) Percentages of TEs classified by superfamily.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Top two traces show expression (Log2RPKM) in pVC::H1 (line #2) or WT pollen; three traces at the bottom show differential DNA methylation between pVC::H1 (line #2) and WT VC. The red lines indicate VC DME targets.\n\nBecause DME regulates the expression of imprinted genes in the endosperm (Choi et al., 2002; Hsieh et al., 2011; Ibarra et al., 2012), we specifically examined the imprinted genes to further investigate the role of VC H1 removal in regulating pollen gene transcription. Out of the 640 known imprinted genes (Gehring et al., 2011; Hsieh et al., 2011; Pignatta et al., 2014; Wolff et al., 2011), 85 overlap endosperm DME targets within 500 bp of their TSS (Figure 3\u2014source data 2). Because DME targets different loci in the VC and CC (Ibarra et al., 2012), we subsequently examined if these 85 putative DME-regulated imprinted genes are also subject to DME demethylation in the VC. 63 of these genes also overlap VC DME targets within 500 bp of their TSS, none of which is differentially expressed in pVC::H1 pollen compared with WT pollen (Figure 3\u2014source data 2), showing that transcription of these genes in pollen is unlikely regulated by H1. This is not surprising, because only 8 out of these 63 genes are expressed in WT pollen (Figure 3\u2014source data 2), and H1 preferentially regulates heterochromatic DME targets (Figures 2I,J and 3G), whereas DME targets involved in gene regulation are typically euchromatic sites next to genes (Figure 3C). Consistently, DME targets likely regulating imprinted genes are associated with significantly less H1 in somatic tissues than the VC DME targets that are dependent on H1 (Figure 3C).\n\nIn contrast to the small effect of H1 on gene transcription, a substantial proportion of VC-activated TEs (41%; 47 out of 114) show significant differential expression (fold change\u00a0>2; p<0.05, likelihood ratio test) due to H1 expression in VC (Figure 3D). Among these differentially expressed TEs, the overwhelming majority (46; 98%) are repressed (Figure 3D,E, Figure 1\u2014source data 1). These data indicate that ectopic expression of H1 in the VC preferentially represses TEs. Quantitative RT-PCR validated our RNA-seq results and confirmed the strong suppression of TEs in pVC::H1 (Figure 3F). Taking advantage of a pVC::H1 line #7 with weaker H1 expression in pollen (Figure 3A), we found H1 represses TE expression in a dosage-dependent manner: TEs are suppressed to a lesser extent in line #7 compared to the strong line #2 (Figure 3F). H1-repressed TEs in the VC are predominantly localized to pericentromeric regions and are overrepresented for LTR retrotransposons, including Gypsy and Copia elements (Figure 3G\u2013I). Compared to other VC-activated TEs, the H1-repressed TEs are significantly longer and enriched for H3K9me2 and H1 in somatic tissues (Figure 3H), consistent with the observation that H1 precludes DME access to heterochromatin.\n\nIn support of the hypothesis that H1 represses VC TE expression by blocking DME, 20 of 46 H1-repressed TEs show significant increase of DNA methylation in at least one sequence context within 500 bp of the TSS in pVC::H1 (p<0.001, Fisher\u2019s exact test; Figure 4A,B). Four more TEs overlap a DME target, which is hypermethylated in pVC::H1, within 500 bp of the TSS, and hence may also be suppressed by DME inhibition. However, 21 out of the rest of 22 TEs do not overlap any H1 hyperDMRs within 500 bp of the TSS (Figure 4A, marked by asterisks in the lower panel), indicating that their suppression by H1 is not mediated by DNA methylation. Of these 21 TEs, 15 TEs overlap DME targets within 500 bp of TSS. DME maintains access to these TEs in the presence of H1, suggesting their VC demethylation does not rely on the depletion of H1 and their repression in pVC::H1 is DME-independent as exemplified by AT3TE60310 (Figure 4C). Our results demonstrate that H1 overexpression in the VC represses heterochromatic TEs via both DNA methylation-dependent and independent mechanisms.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig4-v2.jpg)\n\n**Figure 4.:** (A) Heat map demonstrating DNA methylation differences between pVC::H1 and WT VCs within 500 bp of the TSS of H1-repressed TEs. Asterisks mark TEs whose suppression is not caused by changes in DNA methylation. Data are sorted in descending order based on CG methylation difference for upper and lower panels, respectively. (B,C) Snapshots showing the expression and DNA methylation of representative TEs suppressed by pVC::H1 via methylation-dependent (B) and -independent (C) mechanisms, respectively. Spm, sperm.\n\n### Depletion of H1 decondenses heterochromatin during male gametogenesis\n\nH1 depletion and TE activation in the VC are accompanied by loss of cytologically detectable heterochromatin (Baroux et al., 2011; Ingouff et al., 2010; Schoft et al., 2009). We therefore tested whether H1 contributes to heterochromatin condensation in plant cells. Immunostaining of leaf nuclei showed that H1 co-localizes with H3K9me2 in highly-compacted heterochromatic foci, known as chromocenters (Figure 5A). Furthermore, we found that chromocenters become dispersed in the nuclei of h1 mutant rosette leaves (Figure 5B). These observations demonstrate that H1 is required for heterochromatin condensation in plants.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig5-v2.jpg)\n\n**Figure 5.:** (A) Immunostaining with GFP and H3K9me2 antibodies showing the co-localization of H1 and H3K9me2-enriched chromocenters. (B) Examples of leaf nuclei with condensed, intermediate or decondensed chromocenters, and their percentages in WT or the h1 mutant. (C) Gradual decondensation of heterochromatin during male gametogenesis in Arabidopsis. Micrographs of Hoechst-stained microspores (Msp) and pollen (BCP, bicellular pollen; TCP, tricellular pollen) demonstrate a gradual dispersion of chromocenters in late microspores and subsequently the vegetative nucleus (VN) in pollen. Chromocenters are not detected in the VN of BCP and TCP. GN, generative nucleus. (D) Percentages of late microspores with no, weak or strong chromocenters (CCs; examples on the left) in WT and pMSP1::H1.1-mRFP, in which H1 co-localizes with the strong CCs. (E) H1 is induced only in late microspores in pMSP1::H1.1-mRFP, and co-localizes with strong CCs. All bars, 5 \u03bcm.\n\nWe then examined whether ectopic H1 expression can condense the heterochromatin in VC nuclei. Consistent with previous observations (Baroux et al., 2011; Ingouff et al., 2010; Schoft et al., 2009), no condensed chromocenters were detected in WT VC (Figure 5C). pVC::H1 VC also showed no obvious chromocenters (n\u00a0>\u00a0500; Figure 2B). This suggests either that H1 expression is not strong enough in pVC::H1, or other factors are involved in heterochromatin decondensation in the VC.\n\nHeterochromatin decondensation during male gametogenesis seems to be gradual: chromocenters are observed at early microspore stage, but become dispersed in late microspore stage, when H1 is depleted (Figures 2A and 5C). We observed strong and weak chromocenters, respectively, in 27% and 59% of late microspore nuclei, whereas no chromocenters were observed in the VC at either bicellular or tricellular pollen stage (Figure 5C,D). The further decondensation of VC heterochromatin after H1 depletion during the late microspore stage suggests the involvement of other factors in the VC. To test whether H1 is sufficient to induce chromatin condensation in microspores, we used the late-microspore-specific MSP1 promoter (Honys et al., 2006) to drive H1 expression (pMSP1::H1.1-mRFP, short as pMSP1::H1). In pMSP1::H1, we observed strong chromocenters in the majority (68%) of late microspores (Figure 5D). H1 expression in pMSP1::H1 is specific to late microspores, and co-localizes with induced chromocenters (Figure 5E). These results show that H1 is sufficient to promote heterochromatic foci in late microspores, thus demonstrating the causal relationship between H1 depletion and the decondensation of heterochromatin.\n\n## Discussion\n\nEpigenetic reactivation of TEs in the VC of flowering plants is an intriguing phenomenon, which is important not only for understanding sexual reproduction, but also for elucidating epigenetic silencing mechanisms. Here we show that Arabidopsis VC-activated TEs are heterochromatic, and mostly subject to DME-directed demethylation at their TSS (Figure 1F). Given the well-demonstrated role of DNA methylation at the TSS for transcriptional suppression (Barau et al., 2016; Eichten et al., 2012; Hollister and Gaut, 2009; Manakov et al., 2015; Meng et al., 2016), our data demonstrate that DME-mediated demethylation in the VC is the primary cause of TE activation. As DNA demethylation of TEs during reproduction also occurs in rice and maize (Park et al., 2016; Rodrigues et al., 2013; Zhang et al., 2014), species that diverged from Arabidopsis more than 150 million years ago (Chaw et al., 2004), our results suggest that TE activation in the VC is prevalent among flowering plants.\n\nDME demethylates about ten thousand loci in the VC and central cell, respectively, however, only half of these loci overlap (Ibarra et al., 2012). It was unclear why DME targets differ in these cell types, but differences in chromatin configuration have been postulated to contribute (Feng et al., 2013). Our finding that the access of DME to heterochromatic TEs in the VC is permitted by the lack of H1 supports this idea. H1 is presumably present in the central cell (Frost et al., 2018) but is absent in the VC (Hsieh et al., 2016), thus rendering heterochromatic TEs more accessible in the VC. Differential distribution of other factors in the VC and central cell, such as histone variant H3.1 (Borg and Berger, 2015; Ingouff et al., 2010), may also affect DME targeting. Consistently, FACT is required for DME activity in the central cell at many loci even in the absence of H1, whereas DME is entirely independent of FACT in the VC (Frost et al., 2018), suggesting the presence of impeding factor(s) other than H1 in the central cell. With distinct chromatin architectures, the vegetative and central cells are excellent systems for understanding how chromatin regulates DNA demethylation.\n\nOur finding that histone H1 affects DME activity adds to the emerging picture of H1 as an important and complex regulator of eukaryotic DNA methylation. H1 depletion causes local hypomethylation in mouse cells (Fan et al., 2005) and extensive hypermethylation in the fungi Ascobolus immersus (Barra et al., 2000) and Neurospora crassa (Seymour et al., 2016). In Arabidopsis, loss of H1 causes global heterochromatic hypermethylation in all sequence contexts by allowing greater access of DNA methyltransferases (Lyons and Zilberman, 2017; Zemach et al., 2013). Our results suggest that H1 may also influence DME-homologous demethylases that control methylation in somatic tissues (He et al., 2011). By regulating both methylation and demethylation, H1 may serve as an integrator of methylation pathways that tunes methylation up or down depending on the locus.\n\nOur data also indicate that the regulatory functions of H1 extend beyond DNA methylation in plants. Activated TEs in the VC can be categorized into four groups, based on the mechanism of their activation (Figure 6). TEs in Group I are the least heterochromatic and their activation is dependent on DME but not H1 (Figures 3H and 6). Group II comprises TEs in which H1 absence is required for DME demethylation and activation (Figure 6). For TEs in Group III, H1 depletion and DME demethylation are both required for activation, but DME activity is not affected by H1 (Figure 6). Group IV TEs are activated by H1 depletion and are not targeted by DME (Figure 6). Groups III and IV demonstrate that H1 can silence TEs independently of DNA methylation. Group III also demonstrates that DNA methylation and H1 cooperate to suppress TE expression in plants. Thus, H1 regulates TEs via DNA methylation-dependent and -independent mechanisms.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig6-v2.jpg)\n\n**Figure 6.:** The number of TEs in each group is shown on the top. Significantly less heterochromatic than TEs in other groups (Figure 3H), Group I TEs are activated by DME-directed DNA demethylation. Group II TEs rely on H1 depletion to allow DME demethylation and activation. Group III TEs are demethylated by DME but require H1 depletion to allow transcription (ie. pVC::H1 represses these TEs without affecting DME). Group IV TEs are not demethylated by DME; their activation is solely dependent on the depletion of H1. TEs belong to each group are listed in Figure 1\u2014source data 1. Red lollipops denote DNA methylation.\n\nDuring the ongoing arms race between TEs and their hosts, it may be difficult to determine whether TE expression represents temporary TE triumphs or is domesticated by the host to serve a function. TE activation in the VC \u2013 a cell that engulfs the male plant gametes \u2013 has been proposed as a defense strategy, which generates small RNAs that enhance TE silencing in sperm (Calarco et al., 2012; Ibarra et al., 2012; Mart\u00ednez et al., 2016; Slotkin et al., 2009). However, TEs can also use companion cells as staging grounds for invasion of the gametes (Wang et al., 2018). Our demonstration that programmed DME demethylation, which is facilitated by developmental heterochromatin decondensation, is the predominant cause of VC TE activation is consistent with a defensive, host-beneficial model. Nonetheless, the alternative TE-driven model is also plausible. DME demethylates about ten thousand loci in the VC, most of which are small and euchromatic TEs (Ibarra et al., 2012). However, only a hundred heterochromatic TEs are activated, at least partially permitted by developmental H1 depletion. As small euchromatic TEs tend to be next to genes, DME demethylation regulates genes and is important for pollen fertility (Choi et al., 2002; Ibarra et al., 2012; Schoft et al., 2011). Our data show that developmental H1 depletion is also important for pollen fertility. Therefore, at least some TEs may be hijacking an essential epigenetic reprogramming process. TE activation in the VC may facilitate both host defense and transposition, with the balance specific to each TE family and changing over evolutionary time. The effects of VC TE activation on TE proliferation in the progeny may warrant investigation, particularly in out-crossing species with aggressive TEs and in natural populations.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td>H1.1</td>\n      <td>NA</td>\n      <td>AT1G06760</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (A. thaliana)</td>\n      <td>H1.2</td>\n      <td>NA</td>\n      <td>AT2G30620</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (A. thaliana)</td>\n      <td>DEMETER</td>\n      <td>NA</td>\n      <td>AT5G04560</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>h1.1\u20131</td>\n      <td>Nottingham Arabidopsis Stock Centre</td>\n      <td>SALK_128430C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>h1.2\u20131</td>\n      <td>GABI-Kat</td>\n      <td>GABI_406H11</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>dme-7</td>\n      <td>Nottingham Arabidopsis Stock Centre</td>\n      <td>SALK_107538</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>pLAT52::H1.1-mRFP</td>\n      <td>this paper</td>\n      <td></td>\n      <td>LAT52 promoter from tomato is used</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>pMSP1::H1.1-mRFP</td>\n      <td>this paper</td>\n      <td></td>\n      <td>MSP1 (AT5G59040) promoter is used</td>\n    </tr>\n    <tr>\n      <td>Biological sample (A. thaliana)</td>\n      <td>sperm nuclei from Col-0</td>\n      <td>this paper</td>\n      <td></td>\n      <td>bisulfite-sequencing</td>\n    </tr>\n    <tr>\n      <td>Biological sample (A. thaliana)</td>\n      <td>vegetative nuclei from Col-0</td>\n      <td>this paper</td>\n      <td></td>\n      <td>bisulfite-sequencing</td>\n    </tr>\n    <tr>\n      <td>Biological sample (A. thaliana)</td>\n      <td>vegetative nuclei from pLAT52::H1.1-mRFP</td>\n      <td>this paper</td>\n      <td></td>\n      <td>bisulfite-sequencing</td>\n    </tr>\n    <tr>\n      <td>Biological sample (A. thaliana)</td>\n      <td>pollen from Col-0</td>\n      <td>this paper</td>\n      <td></td>\n      <td>RNA-sequencing</td>\n    </tr>\n    <tr>\n      <td>Biological sample (A. thaliana)</td>\n      <td>pollen from pLAT52::H1.1-mRFP</td>\n      <td>this paper</td>\n      <td></td>\n      <td>RNA-sequencing</td>\n    </tr>\n    <tr>\n      <td>Biological sample (A. thaliana)</td>\n      <td>pollen from dme-7/+</td>\n      <td>this paper</td>\n      <td></td>\n      <td>RNA-sequencing</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>GFP</td>\n      <td>Abcam</td>\n      <td>Cat# ab290, RRID:AB_303395</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>H3K9me2</td>\n      <td>Abcam</td>\n      <td>Cat# ab1220, RRID:AB_449854</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa 488- secondaries</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat# A-11034, RRID:AB_2576217</td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa 555- secondaries</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat# A28180, RRID:AB_2536164</td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Mikado</td>\n      <td>Venturini et al., 2018</td>\n      <td>RRID:SCR_016159</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Kallisto</td>\n      <td>Bray et al., 2016</td>\n      <td>RRID:SCR_016582</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Sleuth</td>\n      <td>Pimentel et al., 2017</td>\n      <td>RRID:SCR_016883</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Hoechst 33342</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat# H3570</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat# D1306, RRID:AB_2629482</td>\n      <td>(100 ng/mL)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Plant materials and growth conditions\n\nA. thaliana plants were grown under 16 hr light/8 hr dark in a growth chamber (20\u00b0C, 80% humidity). All plants used are of the Col-0 ecotype. pH1.1::H1.1-eGFP, pH1.2::H1.2-eGFP, dme-7, and the h1 (h1.1 h1.2 double) mutant lines were described previously (Schoft et al., 2011; She et al., 2013; Zemach et al., 2013). pLAT52::H1.1-mRFP and pMSP1::H1.1-mRFP were constructed with MultiSite Gateway System into the destination vector pK7m34GW (Invitrogen). The BP clones pDONR-P4-P1R-pLAT52 and pDONR-P2R-P3-mRFP were kindly provided by Prof. David Twell (Leicester University, UK) (Eady et al., 1994). MSP1 promoter was cloned into pDONR-P4-P1R as described previously (Honys et al., 2006). WT plants were transformed via floral dip (Clough and Bent, 1998), and T2 or T3 plants homozygous for the transgene were used in this study.\n\n### Pollen extraction, RNA sequencing and quantitative RT-PCR\n\nOpen flowers were collected for pollen isolation in Galbraith buffer (45 mM MgCl2, 30 mM sodium citrate, 20 mM MOPS, 1% Triton-X-100, pH\u00a07.0) by vortexing at 2000 rpm for 3 min. The crude fraction was filtered through a 40 \u03bcm cell strainer to remove flower parts, and subsequently centrifuged at 2600 g for 5 min to obtain pollen grains. RNA was extracted from pollen grains with RNeasy Micro Kit (Qiagen) following manufacturer\u2019s instructions. RNA-sequencing libraries were prepared using Ovation RNA-seq Systems 1\u201316 for Model Organisms (Nugen Technologies), and sequenced on the Hiseq 2500 (Illumina) instrument at the UC Berkeley Vincent J. Coates Genomics Sequencing Laboratory or on the Nextseq 500 (Illumina) at the John Innes Centre. Quantitative RT-PCR (qRT-PCR) was performed as described previously (Walker et al., 2018), and TUA2 was used as an internal control. Primers for qRT-PCR are listed in Supplementary file 2.\n\n### In vitro pollen germination\n\nThe experiment was performed as described previously with some modifications (Rodriguez-Enriquez et al., 2013). Pollen from three newly opened flowers for individual plants were brushed on cellulose membrane sitting on germination medium (18% sucrose, 0.01% boric acid, 1 mM CaCl2, 1 mM Ca(NO3)2, 1 mM KCl, 0.25 mM spermidine, pH 8.0 with KOH adjusted, 0.5% agarose) in small petri dishes. Petri dishes were placed in a box with a piece of wet tissue at the bottom to keep humidity. The boxes were incubated in Sanyo cabinet (MLR-351H) at 21\u00b0C for 4 hr. 300 pollen grains were counted from each cellulose membrane and eight replicates for each genotype. Pollen germination was counted by using ImageJ.\n\n### RNA-seq analysis\n\nTE transcript annotation was created using RNA-seq data from four biological replicates of pollen. Tophat2, Hisat, and STAR were used to align RNA-seq reads to the TAIR10 genome, and transcripts were assembled using CLASS2, StringTie, and Cufflinks, respectively. Assembled transcripts were selected by Mikado using default options except that the BLAST and Transdecoder steps were disabled (Venturini et al., 2018). As a result, 21381 transcripts (called superloci; GSE120519) were identified.\n\nTo identify VC-activated TEs, we first refined the list of superloci by selecting those overlapping with TAIR10 TE annotation. Subsequently to eliminate TE-like genes from the refined list, superloci with CG methylation less than 0.7 in rosette leaves (Stroud et al., 2014; Stroud et al., 2013) were excluded. This gave rise to an annotation of pollen TE transcripts, which was combined with TAIR10 gene annotation for Kallisto analysis (Bray et al., 2016). RNA-seq data from WT and dme/+\u00a0pollen (this study) and rosette leaves (Walker et al., 2018), each including three biological replicates, were processed using Kallisto and Sleuth (Bray et al., 2016; Pimentel et al., 2017). TEs that are transcribed at least five times more in WT pollen than leaves (with p<0.05, likelihood ratio test) are considered as activated in the VC (refer to Figure 1\u2014source data 1 for the list of VC-activated TEs). A total of 2845 genes were found to be expressed in pollen with TPM (transcripts per million) more than five in the Kallisto output (Figure 3\u2014source data 1; data used in Figure 3B).\n\nTo identify TEs and genes that are suppressed by H1 in the VC, we analyzed RNA-seq data from WT and pLAT52::H1.1-mRFP line #2 (short as pVC::H1 unless specified otherwise) pollen using Kallisto and Sleuth as described above. Significant differential expression was defined with a fold change at least two and a p-value less than 0.05. H1-repressed TEs were listed in Figure 1\u2014source data 1.\n\n### Whole-genome bisulfite sequencing and analysis\n\nVegetative and sperm nuclei were isolated via FACS as described previously (Ibarra et al., 2012). Bisulfite-sequencing libraries were prepared as previously described (Walker et al., 2018). Sequencing was performed on Hiseq 2500 (Illumina) at the UC Berkeley Vincent J. Coates Genomics Sequencing Laboratory, Hiseq 4000 (Illumina) at Novogene Ltd. and Harvard University, and Nextseq 500 (Illumina) at Cambridge University Biochemistry Department and the John Innes Centre. Sequenced reads (100, 75, or 50 nt single-end) were mapped to the TAIR10 reference genome, and cytosine methylation analysis was performed as previously described (Ibarra et al., 2012).\n\n### Identification of DME targets and H1 hyperDMRs in the VC\n\nAs all CG hypomethylation in the VC in comparison to sperm is caused by DME (Ibarra et al., 2012), we identified VC DME targets via detecting CG differentially methylated regions (DMRs) that are hypermethylated in sperm in comparison to the VC. DMRs were identified first by using MethPipe (settings: p=0.05 and bin\u00a0=\u00a0100) (Song et al., 2013), and subsequently retained if the fractional CG methylation across the whole DMR was at least 0.2 higher in sperm than the VC. The refined DMRs were merged to generate larger DMRs if they occurred within 300 bp. Finally, merged DMRs were retained if they cover at least 100 bp, and the fractional CG methylation across the whole DMR was significantly (Fisher\u2019s exact test p<0.01) and substantially (>0.2) higher in sperm than the VC. This resulted in the identification of 11896 VC DME targets (Figure 1\u2014source data 2).\n\nH1 hyperDMRs were identified using the same criteria, except comparing CG methylation in VCs from pVC::H1 and WT. In total, 2964 H1 hyperDMRs were identified (Figure 2\u2014source data 1).\n\n### Box plots\n\nBox plots compare the enrichment of genomic or chromatin features among TEs (Figures 1B and 3G, Figure 1\u2014figure supplement 1B) or VC DME targets (Figure 2I) as described in corresponding figure legends. ChIP-seq data for H3K9me2 (Stroud et al., 2014), and ChIP-chip data for H1 (Rutowicz et al., 2015), H3K27me3 (Kim et al., 2012), and other histone modifications (Roudier et al., 2011) were used.\n\n### Density plots\n\nAll DNA methylation kernel density plots compare fractional methylation within 50 bp windows. We used windows with at least 20 informative sequenced cytosines and fractional methylation of at least 0.5 (Figure 2D, Figure 2\u2014figure supplement 2) or 0.7 (Figure 2E) for CG context, and 0.4 and 0.1 for CHG and CHH context, respectively, in at least one of the samples being compared.\n\n### Meta analysis (ends analysis)\n\nEnds analysis for TEs and genes was performed as described previously (Ibarra et al., 2012). Similarly, ends analysis of TE transcripts was performed using the annotation of VC-activated TEs described above (Figure 1\u2014source data 1). DNA methylation data from Ibarra et al. (2012) was used.\n\nIn Figure 2J, DME sites were aligned at the most demethylated cytosine, and average CG methylation levels for each 10 bp interval at both sides were plotted. To identify individual hypomethylation sites created by DME, we first obtained the 50 bp windows with a CG methylation difference larger than 0.5 between sperm and VC (sperm \u2013 VC\u00a0>0.5 and Fisher\u2019s exact test p<0.001). Windows were then merged if they occurred within 200 bp. Merged windows were retained for further analysis if the fractional CG methylation across the whole site was 0.2 greater in sperm than VC (sperm \u2013 VC\u00a0>0.2 and Fisher\u2019s exact test p<0.0001). This resulted in 13610 DME sites, which were separated into five groups according to H3K9me2 level (Stroud et al., 2014):<2.5, 2.5\u20134.3, 4.3\u20136.5, 6.5\u201310.5, and\u00a0>10.5 (Figure 2J). The most demethylated cytosine within each site was identified if it had the greatest differential methylation in sperm than VC among cytosines in the CG context (sperm \u2013 VC\u00a0>0.2, and Fisher\u2019s exact test p<0.001) and was sequenced at least 10 times.\n\n### DNA methylation analysis of H1-repressed TEs\n\nDifferential methylation at a 1000 bp region centered upon the TSS of H1-repressed TEs was calculated between VCs of pVC::H1 and WT (Figure 4A). TEs whose differential methylation is significant (Fisher\u2019s exact test p<0.001) and larger than 0.2 (in CG context), 0.1 (in CHG context), or 0.05 (in CHH context) are illustrated in the upper panel in Figure 4A.\n\n### Confocal and scanning electron microscopy\n\nMicrospores and pollen were isolated as described previously (Borges et al., 2012), stained with Hoechst or DAPI, and examined under a Leica SP8 confocal microscope. Scanning electron microscopy was performed on a Zeiss Supra 55 VP FEG.\n\n### Immunofluorescence\n\nImmunofluorescence was performed as described previously with small modifications (Yelagandula et al., 2014). Rosette leaves from 3-week-old plants were fixed in TRIS buffer with 4% paraformaldehyde (10 mM Tris-HCl pH 7.5, 10 mM EDTA, 100 mM NaCl) for 20 min. After being washed with TRIS buffer twice, the fixed leaves were chopped with razor blades in 1 mL of lysis buffer (15 mM Tris pH 7.5, 2 mM EDTA, 0.5 mM spermine, 80 mM KCl, 20 mM NaCl, 0.1% Triton X-100) and filtered through a 35 \u03bcm cell strainer. Nuclei were pelleted via centrifugation at 500 g for 3 min and resuspended in 100 \u03bcL of lysis buffer. Next, 10 \u03bcL was spotted onto coverslips, air-dried, and post-fixed in PBS with 4% paraformaldehyde for 30 min. After being washed with PBS twice, coverslips were incubated in blocking buffer (PBS with 1% BSA) at 37\u00b0C for 30 min and then incubated in blocking buffer with primary antibodies at 4\u00b0C overnight (Mouse anti-H3K9me2 Abcam ab1220, 1:100; Rabbit anti-GFP Abcam ab290, 1:100). After being washed with PBS three times, coverslips were incubated in PBS with secondary antibodies at 37\u00b0C for 30 min, and then washed with PBS three times again before being counterstained and mounted in Vectashield mounting media with DAPI (Vector H-1200).\n",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "c31cad8b-e20f-414d-94e3-e25980747c07",
+      "submission_id": "486ca1df-9623-4347-89ab-33a6d7c4f89a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Amasino, University of Wisconsin Madison United States\n\nReviewers:\n- Richard Amasino, University of Wisconsin Madison United States\n- Germ\u00e1n Mart\u00ednez, Swedish University of Agricultural Sciences | SLU \u00b7 Department of Plant Biology and Forest Genetics Sweden\n\n## Review text\n\nDOI: [10.7554/eLife.42530.034](https://doi.org/10.7554/eLife.42530.034)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Natural depletion of H1 in sex cells causes DNA demethylation, heterochromatin decondensation and transposon activation\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Christian Hardtke as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nFor a long time, it has been known that there is a reprogramming of epigenetic marks in both the vegetative nucleus and the sperm nuclei. For example, it was known that in the vegetative nuclei there is a loss of H3K9me2, lack of activity of the chromatin remodeler DDM1 and high activity of the DNA demethylase DME and of the de novo methyltransferase DRM2. This manuscript adds new knowledge about the intricacy of the mechanisms leading to TE reactivation in the vegetative nucleus. The manuscript is well written, concise, and sincere in the presentation of the results including pointing to the limits of the analysis. If the issues raised below can be properly addressed, the manuscript should be suitable for publication in eLife.\n\nEssential revisions:\n\n1) TE reactivation observed by the authors is very modest compared to the analysis of DNA methylation for the VC that has been published before (1781 TEs in Calarco et al., 2012, Cell vs. 114 TEs on this manuscript). I think that this difference must be discussed. At the same time, in previous manuscripts it has been shown that companion cell demethylation mediated by DME takes place at loci that tend to be within smaller AT-rich TEs that are enriched for euchromatin-associated histone modifications. This is quite the opposite of what the authors find on the reactivated TEs and should be discussed in order to connect better with DME function.\n\n2) Another point regarding the 114 reactivated TEs. In terms of proximity to genes these TEs are located in pericentromeric regions where genes and TEs coexist. Is this a feature of these TEs? Could they be involved in gene regulation? Do they give rise to more or a different profile of small RNAs compared to other TEs? Are these sRNAs more mobile to the SCs? This analysis could easily be added since datasets are already available and will help to dig into the characteristics of theses TEs and why they are targets of DME.\n\n3) Because a very important function of DME is the regulation of imprinted genes I think it would be interesting to the overall community for the authors to also include an analysis (or at least comment) on the effects of H1 overexpression on imprinted genes. In principle DME and related glycosylases preferentially demethylate gene-adjacent sequences so this might be an important part of how it regulates gene expression.\n\n4) It is intriguing why the authors use two different transgenic lines for H1 overexpression: one with the LAT52 promoter and a different one with the MSP1 promoter. Since the LAT52 promoter is active at later stages of pollen development, are chromocenters also seen at later stages of pollen development in the pLAT52::H1.1-RFP line? Can this be quantified and added to the manuscript along with a more detail about why the two different promoters were used?\n\nTwo relatively major issues in writing:\n\n1)\"Examination of DNA methylation in VCs from dme/+ heterozygous 155 plants (dme homozygous mutants are embryonic lethal), which produce a 50:50 ratio of dme 156 mutant and WT pollen, REVEALED PARTIAL RESTORATION of methylation at TSS and TTS of VC \u2013 157 activated TEs (Figure 1D,E).\"\n\nDo you really mean \"restoration\"? Restoration would mean there was demethylation in the VC and then DNA methylation was added back. If in the dme VCs, there was simply not as much loss of DNA methylation, do not use the word restoration.\n\n2) The following sentence (subsection \u201cDepletion of H1 decondenses heterochromatin during male gametogenesis\u201d) does not \"make sense.\"\n\n\"We observed strong and weak chromocenters in 27% and 59%, respectively, of late microspore nuclei, whereas no chromocenters were observed in the VC at either bicellular or tricellular pollen stage (Figure 5C, Figure 5\u2014figure supplement 1).\u201d\n\n\"respectively\" is used to match A and B with C and D. In the sentence there is no D (see below).\n\n\u201cwe observed strong and weak chromocenters in 27% (A) and 59% (B), respectively, of late microspore nuclei (C).\u201d\n\nSomething is missing in this sentence.\n",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "609b17e4-509b-4a4f-a9da-c15f14544fa5",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C1",
+      "claim": "About 100 heterochromatic TEs are activated in vegetative cells (VCs) of Arabidopsis thaliana pollen.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that about 100 heterochromatic TEs are activated in VCs, mostly by DEMETER-catalyzed DNA demethylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents RNA-seq data identifying 114 TEs transcribed at significantly higher levels in pollen than rosette leaves, which are characterized as heterochromatic based on their genomic features and histone modifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "c071380a-c351-45d5-a5cc-5ef2835fc692",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C2",
+      "claim": "TE activation in VCs is mostly caused by DEMETER-catalyzed DNA demethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that about 100 heterochromatic TEs are activated in VCs, mostly by DEMETER-catalyzed DNA demethylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript shows that 71 of 114 (62%) VC-activated TEs overlap VC DME targets at their TSSs, and RNA-seq of dme/+ heterozygous plants showed significantly reduced expression at VC-activated TEs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "c503fd26-c9cc-4e91-8fd4-fff7e8b3eca8",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C3",
+      "claim": "DEMETER access to some heterochromatic TEs is permitted by the natural depletion of linker histone H1 in VCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that DEMETER access to some of these TEs is permitted by the natural depletion of linker histone H1 in VCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript demonstrates through bisulfite sequencing that ectopic H1 expression in VCs causes hypermethylation at DME targets, particularly heterochromatic ones, indicating H1 normally impedes DME access.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "17365d0a-aacc-4cb1-8ce5-1bdcd594afb7",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C4",
+      "claim": "Ectopically expressed H1 suppresses TEs in VCs by reducing DNA demethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopically expressed H1 suppresses TEs in VCs by reducing DNA demethylation and via a methylation-independent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript shows that 20 of 46 H1-repressed TEs show significant increase of DNA methylation within 500 bp of the TSS in pVC::H1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "ae8c383b-6d24-4839-b646-be69bbf06a89",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C5",
+      "claim": "Ectopically expressed H1 suppresses TEs in VCs via a methylation-independent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopically expressed H1 suppresses TEs in VCs by reducing DNA demethylation and via a methylation-independent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript shows that 21 out of 22 H1-repressed TEs do not overlap any H1 hyperDMRs within 500 bp of the TSS, indicating their suppression by H1 is not mediated by DNA methylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "e85d8270-45a5-48f8-bee0-f440421e81ef",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C6",
+      "claim": "H1 is required for heterochromatin condensation in plant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that H1 is required for heterochromatin condensation in plant cells and show that H1 overexpression creates heterochromatic foci in the VC progenitor cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript shows through immunostaining that H1 co-localizes with H3K9me2 in chromocenters, and chromocenters become dispersed in h1 mutant rosette leaves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "14f29236-1238-4241-ba97-60399ae06476",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C7",
+      "claim": "H1 overexpression creates heterochromatic foci in the VC progenitor cell (late microspore).",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that H1 is required for heterochromatin condensation in plant cells and show that H1 overexpression creates heterochromatic foci in the VC progenitor cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript shows through confocal microscopy that strong chromocenters are observed in 68% of late microspores in pMSP1::H1 plants, compared to 27% in WT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "744f88ae-aa25-4305-bb00-9fa229fa5cf4",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C8",
+      "claim": "Natural depletion of H1 during male gametogenesis facilitates DEMETER-directed DNA demethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results demonstrate that the natural depletion of H1 during male gametogenesis facilitates DEMETER-directed DNA demethylation, heterochromatin relaxation, and TE activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript demonstrates through bisulfite sequencing that ectopic H1 expression in VCs impedes DME activity at heterochromatic targets, showing that H1 absence normally facilitates DME access.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "88781cb7-9278-42b6-97ac-246b01d655f3",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C9",
+      "claim": "Natural depletion of H1 during male gametogenesis facilitates heterochromatin relaxation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results demonstrate that the natural depletion of H1 during male gametogenesis facilitates DEMETER-directed DNA demethylation, heterochromatin relaxation, and TE activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript shows that H1 is required for heterochromatin condensation in plant cells, and H1 depletion begins at the late microspore stage when chromocenters start to disperse.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "1537669a-d2c0-4efa-ad4c-e7f19fe37a6e",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C10",
+      "claim": "Natural depletion of H1 during male gametogenesis facilitates TE activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results demonstrate that the natural depletion of H1 during male gametogenesis facilitates DEMETER-directed DNA demethylation, heterochromatin relaxation, and TE activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript shows that ectopic H1 expression in VCs suppresses 46 out of 114 VC-activated TEs, demonstrating that H1 absence normally permits their activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "ad2bcae4-9804-4c3f-a0ef-2d579eda1e1b",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C11",
+      "claim": "TEs comprise approximately 50% of the human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, TEs comprise approximately 50% of the human genome (International Human Genome Sequencing Consortium, 2001; Venter et al., 2001), and more than 85% of the genomes in crops such as wheat and maize (Schnable et al., 2009; Wicker et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "aae5ae55-57c0-4ad4-a900-2eea319cce68",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C12",
+      "claim": "TEs comprise more than 85% of the genomes in crops such as wheat and maize.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, TEs comprise approximately 50% of the human genome (International Human Genome Sequencing Consortium, 2001; Venter et al., 2001), and more than 85% of the genomes in crops such as wheat and maize (Schnable et al., 2009; Wicker et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "b26b7eae-710f-4bc1-8b7c-edb5090440d8",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C13",
+      "claim": "Activities of TEs compromise genome stability, disrupt functional genes, and are often associated with severe diseases including cancers in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarded as selfish and parasitic, activities of TEs compromise genome stability, disrupt functional genes, and are often associated with severe diseases including cancers in animals (Anwar et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "a9d9dd25-ff2c-4a5d-add5-e649988b8b77",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C14",
+      "claim": "Eukaryotic hosts have evolved efficient epigenetic mechanisms, including DNA methylation, to suppress TEs.",
+      "claim_type": "EXPLICIT",
+      "source": "To safeguard genome integrity, eukaryotic hosts have evolved efficient epigenetic mechanisms, including DNA methylation, to suppress TEs (He et al., 2011; Law and Jacobsen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "3568ed69-0dc9-4c13-b1bf-05ab17036521",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C15",
+      "claim": "LINE-1 retrotransposons are highly expressed in pre-implantation embryos and the fetal germline despite relatively low levels of transposition.",
+      "claim_type": "EXPLICIT",
+      "source": "In pre-implantation embryos and the fetal germline, LINE-1 retrotransposons are highly expressed despite relatively low levels of transposition (Fadloun et al., 2013; Kano et al., 2009; Percharde et al., 2017; Richardson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "849fcd2e-ea86-41da-b6a9-839b892bc7a5",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C16",
+      "claim": "LINE-1 RNA plays a key regulatory role in promoting pre-implantation embryo development in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, LINE-1 RNA was shown to play a key regulatory role in promoting pre-implantation embryo development in mice (Percharde et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "1c2386e0-5edb-46c6-bc7b-2f5a8b0bf92d",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C17",
+      "claim": "LINE-1 elements transcribe and mobilize in neuronal precursor cells in mice and human.",
+      "claim_type": "EXPLICIT",
+      "source": "LINE-1 elements have also been shown to transcribe and mobilize in neuronal precursor cells in mice and human (Coufal et al., 2009; Muotri et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "fcf6a527-2a4f-477c-a1b1-03f6b1820679",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C18",
+      "claim": "Hypomethylation at LINE-1 promoters in neurons has been proposed to contribute to TE activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypomethylation at LINE-1 promoters in neurons has been proposed to contribute (Coufal et al., 2009), and possibly the availability of transcription factors (Muotri et al., 2005; Richardson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "14034fb7-d7b2-4096-bcbc-e034d0d94585",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C19",
+      "claim": "Each microspore undergoes an asymmetric mitosis to generate a bicellular pollen comprised of a large vegetative cell (VC) and a small generative cell engulfed by the VC.",
+      "claim_type": "EXPLICIT",
+      "source": "Each microspore undergoes an asymmetric mitosis to generate a bicellular pollen comprised of a large vegetative cell (VC) and a small generative cell engulfed by the VC (Berger and Twell, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature and represents established knowledge about plant reproduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "13999f69-cac0-4a85-ad5a-a7e581b0673e",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C20",
+      "claim": "The generative cell divides again mitotically to produce two sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently the generative cell divides again mitotically to produce two sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about plant reproduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "13baac7d-6cc7-41d9-ac6b-553877a8cee5",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C21",
+      "claim": "Upon pollination, the VC develops into a pollen tube to deliver the sperm to meet the female cells, and subsequently degenerates.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon pollination, the VC develops into a pollen tube to deliver the sperm to meet the female cells, and subsequently degenerates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about plant reproduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "f99d1a1b-831b-49ca-8548-b273f2c7562d",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C22",
+      "claim": "Several TEs were found activated and transposed in the mature tricellular pollen of Arabidopsis thaliana.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mature tricellular pollen of Arabidopsis thaliana, several TEs were found activated and transposed (Slotkin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "9be7fbf6-188e-46f4-8d77-8a99195076f1",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C23",
+      "claim": "TE activation in pollen is confined to the VC.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancer/gene trap insertions into TEs showed specific reporter activity in the VC, and TE transpositions detected in pollen were absent in progeny (Slotkin et al., 2009). These results demonstrated TE activation in pollen is confined to the VC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "a7d7d514-c0cc-4168-8557-391fe98f1b93",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C24",
+      "claim": "TE expression in the short-lived VC has been proposed to promote the production of small RNAs, which may be transported into sperm to reinforce the silencing of cognate TEs.",
+      "claim_type": "EXPLICIT",
+      "source": "TE expression in the short-lived VC has been proposed to promote the production of small RNAs, which may be transported into sperm to reinforce the silencing of cognate TEs (Calarco et al., 2012; Ibarra et al., 2012; Mart\u00ednez et al., 2016; Slotkin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature and represents a hypothesis.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "252955c3-df04-4cd3-8e44-a9c57e5ad1e3",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C25",
+      "claim": "DDM1 functions to overcome the impediment of nucleosomes and linker histone H1 to DNA methyltransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "DDM1 functions to overcome the impediment of nucleosomes and linker histone H1 to DNA methyltransferases (Lyons and Zilberman, 2017; Zemach et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "8b8bbf3b-ad5b-485b-a4a1-f0796aa968e8",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C26",
+      "claim": "Loss of DDM1 leads to DNA hypomethylation and massive TE derepression in somatic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of DDM1 leads to DNA hypomethylation and massive TE derepression in somatic tissues (Jeddeloh et al., 1999; Lippman et al., 2004; Tsukahara et al., 2009; Zemach et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "05cd1349-bd10-4860-aaef-7d08d7382a8e",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C27",
+      "claim": "Global DNA methylation in the VC is comparable to that of microspores and substantially higher than in somatic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, global DNA methylation in the VC is comparable to that of microspores and substantially higher than in somatic tissues (Calarco et al., 2012; Hsieh et al., 2016; Ibarra et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "bdb518c0-a8a4-437c-a6df-05a63554f665",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C28",
+      "claim": "Approximately ten thousand loci \u2013 predominantly TEs \u2013 are hypomethylated in the VC, primarily in the CG context and to a lesser extent in the CHG/H contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately ten thousand loci \u2013 predominantly TEs \u2013 are hypomethylated in the VC, primarily in the CG context and to a lesser extent in the CHG/H contexts (Calarco et al., 2012; Ibarra et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "0feba334-30ec-43ba-9766-4f5dd33ff03e",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C29",
+      "claim": "Hypomethylation in the VC is caused by a DNA glycosylase called DEMETER (DME).",
+      "claim_type": "EXPLICIT",
+      "source": "Hypomethylation in the VC is caused by a DNA glycosylase called DEMETER (DME) (Ibarra et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "63ff7669-d6d7-4534-86cb-3777ef9b4a50",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C30",
+      "claim": "DME demethylates DNA via direct excision of methylated cytosine.",
+      "claim_type": "EXPLICIT",
+      "source": "DME demethylates DNA via direct excision of methylated cytosine, and its expression is confined to the VC and its female counterpart, the central cell, during sexual reproduction (Choi et al., 2002; Schoft et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "4c0c6f9e-556a-4cc3-8221-d8ba018e0d02",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C31",
+      "claim": "DME expression is confined to the VC and its female counterpart, the central cell, during sexual reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "DME demethylates DNA via direct excision of methylated cytosine, and its expression is confined to the VC and its female counterpart, the central cell, during sexual reproduction (Choi et al., 2002; Schoft et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "371fac0d-b32e-41a5-8d35-832139ecdbac",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C32",
+      "claim": "Centromeric repeats are condensed in sperm and other cell types but are decondensed in the VC.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, centromeric repeats, which are condensed in sperm and other cell types, are decondensed in the VC, accompanied by the depletion of centromeric histone H3 (Ingouff et al., 2010; M\u00e9rai et al., 2014; Schoft et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "3c010788-caa5-4a0f-8f22-e3636d17eec0",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C33",
+      "claim": "Chromocenters are observed in sperm nuclei but absent in the VC nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromocenters, which are comprised of condensed pericentromeric heterochromatin and rDNA repeats (Chandrasekhara et al., 2016; Fransz et al., 2002; Tessadori et al., 2004), are observed in sperm nuclei but absent in the VC nucleus, suggesting that pericentromeric heterochromatin is decondensed in the VC (Baroux et al., 2011; Ingouff et al., 2010; Schoft et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "761598d7-f248-4b4a-a056-49ac38231c1e",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C34",
+      "claim": "Heterochromatin decondensation in the VC is proposed to promote rDNA transcription that empowers pollen tube growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterochromatin decondensation in the VC is proposed to promote rDNA transcription that empowers pollen tube growth (M\u00e9rai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature and represents a hypothesis.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "54fc52f3-5cf0-4dd2-9c36-02ba9f7ec6ce",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C35",
+      "claim": "Histone H1 is depleted in Arabidopsis VC nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work showed that histone H1, which binds to the nucleosome surface and the linker DNA between two adjacent nucleosomes (Fyodorov et al., 2018), is depleted in Arabidopsis VC nuclei (Hsieh et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "7959037c-6042-4bae-94e2-285f2fa32586",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C36",
+      "claim": "H1 depletion in the VC has been observed in a distantly related lily species.",
+      "claim_type": "EXPLICIT",
+      "source": "H1 depletion in the VC has also been observed in a distantly related lily species (Tanaka et al., 1998), suggesting a conserved phenomenon in flowering plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "c5fa02fb-3659-4a53-8f6a-d9169f04f9e0",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C37",
+      "claim": "H1 contributes to heterochromatin condensation in Drosophila and mouse embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila and mouse embryonic stem cells, H1 has been shown to contribute to heterochromatin condensation (Cao et al., 2013; Lu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "abc986e7-19f7-4a80-b249-c228e2a69edb",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C38",
+      "claim": "H1 is more abundant in heterochromatin than euchromatin in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "H1 is also more abundant in heterochromatin than euchromatin in Arabidopsis (Ascenzi and Gantt, 1999; Rutowicz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "8a2cee21-b7ac-4533-8ac0-189bc1e52498",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C39",
+      "claim": "In the central cell, the histone chaperone FACT is required for DME-directed DNA demethylation in heterochromatic TEs, and this requirement is dependent on H1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the central cell, the histone chaperone FACT (facilitates chromatin transactions) is required for DME-directed DNA demethylation in heterochromatic TEs, and this requirement is dependent on H1 (Frost et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "aaa13899-3cb4-49d0-89a8-d1032be14eda",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C40",
+      "claim": "DME activity in the VC is independent of FACT.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DME activity in the VC is independent of FACT (Frost et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "c874c72e-7254-4c62-adbf-3bcf5f3167d5",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C41",
+      "claim": "114 TEs are transcribed at significantly higher levels in pollen than rosette leaves.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 114 TEs that are transcribed at significantly higher levels in pollen than rosette leaves (fold change >2; p<0.05, likelihood ratio test), and hence likely to be specifically activated in the VC (Figure 1\u2014source data 1) (Slotkin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents RNA-seq data analyzed using Mikado, Kallisto, and Sleuth to identify these TEs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "b648dac4-f9f4-4b61-b2ce-3a3239c5b7fb",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C42",
+      "claim": "VC-activated TEs are primarily located in pericentromeric regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The VC-activated TEs are primarily located in pericentromeric regions and exhibit features of heterochromatic TEs, such as being long and GC rich (Frost et al., 2018) (Figure 1A,B, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents chromosomal distribution data shown in Figure 1A and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "45d416c4-9ec7-4b0e-b305-a7d2a8ed2086",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C43",
+      "claim": "VC-activated TEs are long and GC rich.",
+      "claim_type": "EXPLICIT",
+      "source": "The VC-activated TEs are primarily located in pericentromeric regions and exhibit features of heterochromatic TEs, such as being long and GC rich (Frost et al., 2018) (Figure 1A,B, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents box plots in Figure 1B showing length and GC content of VC-activated TEs compared to all TEs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "963c0857-87c8-48c4-ae1c-c103f6205eb5",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C44",
+      "claim": "VC-activated TEs are significantly enriched in dimethylation of histone H3 on lysine 9 (H3K9me2) in somatic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "As is typical of heterochromatic TEs (Zemach et al., 2013), VC-activated TEs are significantly enriched in dimethylation of histone H3 on lysine 9 (H3K9me2) in somatic tissues, and are significantly depleted of euchromatin-associated modifications (Figure 1B, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents box plots in Figure 1B showing H3K9me2 enrichment at VC-activated TEs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "a73062e8-e960-4d7f-9e91-34cfd2dc02a7",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C45",
+      "claim": "VC-activated TEs are significantly depleted of euchromatin-associated modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "As is typical of heterochromatic TEs (Zemach et al., 2013), VC-activated TEs are significantly enriched in dimethylation of histone H3 on lysine 9 (H3K9me2) in somatic tissues, and are significantly depleted of euchromatin-associated modifications (Figure 1B, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents box plots in Figure 1\u2014figure supplement 1B showing depletion of euchromatic histone modifications at VC-activated TEs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "aa658ee4-8fd0-4771-ac90-c35cd90ab84a",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C46",
+      "claim": "MuDR DNA transposons and Gypsy LTR-retrotransposons are significantly overrepresented among VC-activated TEs.",
+      "claim_type": "EXPLICIT",
+      "source": "VC-activated TEs encompass diverse TE families, among which MuDR DNA transposons and Gypsy LTR-retrotransposons are significantly overrepresented (p<10\u22129 and 0.01, respectively, Fisher's exact test; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents statistical analysis (Fisher's exact test) of TE family composition shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "85e06866-94c6-4223-b469-a8855ab70b52",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C47",
+      "claim": "VC-activated TEs have substantially lower CG methylation in the VC than in sperm at and near the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these TEs have substantially lower CG methylation in the VC than in sperm at and near the TSS (Figure 1D,E), indicative of DME activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents bisulfite sequencing data shown in Figure 1D,E demonstrating differential methylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "cf6c3f29-60bf-4656-9f1d-14efa1e8b588",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C48",
+      "claim": "DNA methylation in VCs from dme/+ heterozygous plants shows an intermediate level of methylation at TSS and TTS of VC-activated TEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of DNA methylation in VCs from dme/+ heterozygous plants (dme homozygous mutants are embryonic lethal), which produce a 50:50 ratio of dme mutant and WT pollen, revealed an intermediate level of methylation at TSS and TTS of VC-activated TEs (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents bisulfite sequencing data from dme/+ VCs shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "149e3bd7-4085-4606-9f34-3a43ee69837b",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C49",
+      "claim": "CHG and CHH methylation is substantially increased at the TSS (and TTS) of VC-activated TEs in dme/+ VC.",
+      "claim_type": "EXPLICIT",
+      "source": "CHG and CHH methylation is also substantially increased at the TSS (and TTS) of VC-activated TEs in dme/+ VC (Figure 1\u2014figure supplement 1C), consistent with the knowledge that DME demethylates all sequence contexts (Gehring et al., 2006; Ibarra et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents bisulfite sequencing data shown in Figure 1\u2014figure supplement 1C and cites published literature about DME activity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "22aa657b-65fa-4789-9c85-faadd2c36d3e",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C50",
+      "claim": "71 of the 114 (62%) VC-activated TEs overlap VC DME targets at their TSSs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the above results, 71 of the 114 (62%) VC-activated TEs overlap VC DME targets at their TSSs (Figure 1F, Figure 1\u2014source datas 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents analysis of overlap between VC-activated TEs and DME targets shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "10854931-00f5-42f5-92d2-a51e0f59a60d",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C51",
+      "claim": "92 out of the 114 TEs (81%) have VC DME targets within 500 bp of the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "92 out of the 114 TEs (81%) have VC DME targets within 500 bp of the TSS (Figure 1F, Figure 1\u2014figure supplement 1D, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents analysis of proximity between VC-activated TEs and DME targets shown in Figure 1F and Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "907f6f10-5a53-4244-9685-2d577c65dd52",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C52",
+      "claim": "RNA-seq of pollen from dme/+ heterozygous plants showed significantly reduced expression at the 114 VC-activated TEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, RNA-seq of pollen from dme/+ heterozygous plants showed significantly reduced expression at the 114 VC-activated TEs (Figure 1G, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents RNA-seq data from dme/+ pollen shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "a53240b0-0049-4584-8d4c-a0df396c618a",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C53",
+      "claim": "The median ratio of transcription of VC-activated TEs in dme/+ versus WT pollen is 0.43.",
+      "claim_type": "EXPLICIT",
+      "source": "The 114 VC-activated TEs are transcribed at levels close to this expectation (Figure 1G), with the median ratio of their transcription in dme/+ versus WT pollen being 0.43 (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents RNA-seq data analysis shown in Figure 1G and Figure 1\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "4b6bf128-ccb8-46f7-a78f-d7d6f08b2645",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C54",
+      "claim": "H1.1 and H1.2 are present in early microspore nucleus but absent in the late microspore stage.",
+      "claim_type": "EXPLICIT",
+      "source": "H1.1- and H1.2- GFP reporters exhibit the same expression pattern: present in early microspore nucleus but absent in the late microspore stage, and remaining absent in the VC nucleus while present in the generative cell and subsequent sperm nuclei (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents confocal microscopy images of H1-GFP reporters shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "ebf29fdc-0ab5-45e4-af89-fcc837689e00",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C55",
+      "claim": "H1.1 and H1.2 remain absent in the VC nucleus while present in the generative cell and subsequent sperm nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "H1.1- and H1.2- GFP reporters exhibit the same expression pattern: present in early microspore nucleus but absent in the late microspore stage, and remaining absent in the VC nucleus while present in the generative cell and subsequent sperm nuclei (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents confocal microscopy images of H1-GFP reporters shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "ecbc9a30-dcf5-4286-8ebe-9c1a4965ae74",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C56",
+      "claim": "H1.3 is not detectable in either microspore or pollen.",
+      "claim_type": "EXPLICIT",
+      "source": "H1.3 is not detectable in either microspore or pollen (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents confocal microscopy images of H1.3-GFP reporter shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "69c89a18-bbec-44e9-a4ca-0195358380a3",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C57",
+      "claim": "H1 depletion begins at the late microspore stage.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with our previous observations, confirming that H1 is absent in the VC (Hsieh et al., 2016), and demonstrating that H1 depletion begins at the late microspore stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents confocal microscopy data showing H1 presence in early microspores but absence in late microspores.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "a7681c82-ec1d-4176-b9c1-c8e3c43e8490",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C58",
+      "claim": "H1 expression in VC leads to shortened siliques.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found H1 expression in VC leads to shortened siliques, a substantial proportion of malformed pollen, and reduced pollen germination rate (Figure 2\u2014figure supplement 1A\u2013D), suggesting the depletion of H1 in the VC is important for pollen fertility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents phenotypic data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "1f8e2000-c4f4-4caa-bfcf-a286c624ab36",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C59",
+      "claim": "H1 expression in VC leads to a substantial proportion of malformed pollen.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found H1 expression in VC leads to shortened siliques, a substantial proportion of malformed pollen, and reduced pollen germination rate (Figure 2\u2014figure supplement 1A\u2013D), suggesting the depletion of H1 in the VC is important for pollen fertility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents phenotypic data shown in Figure 2\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "d08c4b64-766b-45b9-afb8-d1e66bea31d8",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C60",
+      "claim": "H1 expression in VC leads to reduced pollen germination rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found H1 expression in VC leads to shortened siliques, a substantial proportion of malformed pollen, and reduced pollen germination rate (Figure 2\u2014figure supplement 1A\u2013D), suggesting the depletion of H1 in the VC is important for pollen fertility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents pollen germination data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "f5d448c2-6b83-42a4-97b6-5448805466fd",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C61",
+      "claim": "The depletion of H1 in the VC is important for pollen fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found H1 expression in VC leads to shortened siliques, a substantial proportion of malformed pollen, and reduced pollen germination rate (Figure 2\u2014figure supplement 1A\u2013D), suggesting the depletion of H1 in the VC is important for pollen fertility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that ectopic H1 expression causes fertility defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "c4ef468f-717f-4a80-ba80-875a64c2207a",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C62",
+      "claim": "CG methylation in the VC of pVC::H1 plants is largely similar to that of WT, except for a slight increase in TE methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "CG methylation in the VC of pVC::H1 plants is largely similar to that of WT, except for a slight increase in TE methylation (Figure 2C, Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents bisulfite sequencing data shown in Figure 2C and Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "d1429101-9665-471e-9456-813a6f27fba9",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C63",
+      "claim": "A substantial proportion of loci that are targeted by DME show hypermethylation in pVC::H1 VC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a substantial proportion of loci that are targeted by DME show hypermethylation in pVC::H1 VC (Figure 2D, Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents kernel density plots shown in Figure 2D and Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "992d4253-0680-4d4e-afc8-bf56344a14c1",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C64",
+      "claim": "DME targets show preferential hypermethylation in CHG and CHH contexts in the VC of pVC::H1.",
+      "claim_type": "EXPLICIT",
+      "source": "DME targets also show preferential hypermethylation in CHG and CHH contexts in the VC of pVC::H1 (Figure 2\u2014figure supplement 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents kernel density plots shown in Figure 2\u2014figure supplement 2C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "3252ef1d-f67c-4b59-b2b6-cb967836e24b",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C65",
+      "claim": "2964 differentially methylated regions (DMRs) are significantly CG hypermethylated in the VC of pVC::H1 plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the genome, we found 2964 differentially methylated regions (DMRs) that are significantly CG hypermethylated in the VC of pVC::H1 plants (referred to as H1 hyperDMRs hereafter; ranging from 101 to 2155 nt in length, 280 nt on average; Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents bisulfite sequencing data analysis identifying H1 hyperDMRs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "d384c3ab-522e-4af2-aefa-5ed8bf45b8eb",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C66",
+      "claim": "Most of the H1 hyperDMRs (1618, 55%) overlap DME targets in the VC.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the H1 hyperDMRs (1618, 55%) overlap DME targets in the VC (Figure 2\u2014source data 1), and H1 hyperDMRs exhibit strong hypomethylation in WT VCs, with 81.4% (2412 sites) having significantly more CG methylation in sperm than VC (p<0.001, Fisher's exact test), indicating that most H1 hyperDMRs are DME targets (Figure 2E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents analysis of overlap between H1 hyperDMRs and DME targets, and methylation data shown in Figure 2E\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "60d6eb54-2e6e-44fe-b1d2-f7f68db76a0a",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C67",
+      "claim": "81.4% (2412 sites) of H1 hyperDMRs have significantly more CG methylation in sperm than VC.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the H1 hyperDMRs (1618, 55%) overlap DME targets in the VC (Figure 2\u2014source data 1), and H1 hyperDMRs exhibit strong hypomethylation in WT VCs, with 81.4% (2412 sites) having significantly more CG methylation in sperm than VC (p<0.001, Fisher's exact test), indicating that most H1 hyperDMRs are DME targets (Figure 2E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents statistical analysis of methylation differences shown in Figure 2E\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "e9695a71-2264-430b-9138-a3b2d3e70a29",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C68",
+      "claim": "Only 3066 out of 11896 (26%) VC DME targets have significantly more CG methylation in the VC of pVC::H1 than WT.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only 3066 out of 11896 (26%) VC DME targets have significantly more CG methylation in the VC of pVC::H1 than WT (p<0.001, Fisher's exact test; Figure 1\u2014source data 2), indicating that VC-expressed H1 impedes DME at a minority of its genomic targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents statistical analysis of methylation differences at DME targets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "ccee7e5e-9fc2-4ba4-a428-cd48c0c9733c",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C69",
+      "claim": "H1-impeded DME targets are heterochromatic and significantly enriched in H3K9me2 compared with H1-independent DME targets.",
+      "claim_type": "EXPLICIT",
+      "source": "These H1-impeded DME targets are heterochromatic and significantly enriched in H3K9me2 compared with H1-independent DME targets (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents box plot analysis shown in Figure 2I comparing H3K9me2 levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "f3d78a35-145b-4501-a21a-a82d477f5bf5",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C70",
+      "claim": "pVC::H1-induced hypermethylation is apparent only in the most heterochromatic group (highest H3K9me2) of DME target loci.",
+      "claim_type": "EXPLICIT",
+      "source": "pVC::H1-induced hypermethylation peaks where DME-mediated hypomethylation peaks, but is apparent only in the most heterochromatic group (highest H3K9me2) of DME target loci (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents meta-analysis shown in Figure 2J demonstrating H1 effects on different groups of DME targets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "2c4e8feb-d481-4fb0-8e4c-555f6b4ff38d",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C71",
+      "claim": "Only a small fraction of pollen-expressed genes (3%; 89 out of 2845) is differentially expressed between pVC::H1 and WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a small fraction of pollen-expressed genes (3%; 89 out of 2845) is differentially expressed (fold change >2; p<0.05, likelihood ratio test) between pVC::H1 and WT (Figure 3B, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents RNA-seq data analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "e7cc5d74-50c7-452d-b3cb-c6ba3e9c5bc4",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C72",
+      "claim": "Among the 89 differentially expressed genes, 58 (65%) are suppressed by H1 expression in the VC, and 31 (35%) are activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these 89 genes, 58 (65%) are suppressed by H1 expression in the VC, and 31 (35%) are activated (Figure 3B, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents RNA-seq data analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "ac392e51-64b6-42e4-8404-9f69b92b71cb",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C73",
+      "claim": "85 out of 89 differentially expressed genes (96%) do not overlap DME targets within 500 bp of the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "85 out of these 89 genes (96%) do not overlap DME targets within 500 bp of the TSS, hence the effect of H1 on their expression is probably not mediated by DME.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents analysis of overlap between differentially expressed genes and DME targets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "de3f7230-b5f7-445a-963f-558f313f1aa9",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C74",
+      "claim": "DME targets likely regulating imprinted genes are associated with significantly less H1 in somatic tissues than the VC DME targets that are dependent on H1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, DME targets likely regulating imprinted genes are associated with significantly less H1 in somatic tissues than the VC DME targets that are dependent on H1 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents box plot analysis shown in Figure 3C comparing H1 occupancy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "32dd1866-ad61-4f42-9ce3-39cf2e387971",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C75",
+      "claim": "A substantial proportion of VC-activated TEs (41%; 47 out of 114) show significant differential expression due to H1 expression in VC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the small effect of H1 on gene transcription, a substantial proportion of VC-activated TEs (41%; 47 out of 114) show significant differential expression (fold change >2; p<0.05, likelihood ratio test) due to H1 expression in VC (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents RNA-seq data analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "f2943329-fee9-4364-a73f-712275552b84",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C76",
+      "claim": "Among the differentially expressed TEs, the overwhelming majority (46; 98%) are repressed by H1.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these differentially expressed TEs, the overwhelming majority (46; 98%) are repressed (Figure 3D,E, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents RNA-seq data analysis shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "282f6cbb-c571-4367-beaa-f18212f8d739",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C77",
+      "claim": "H1 represses TE expression in a dosage-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking advantage of a pVC::H1 line #7 with weaker H1 expression in pollen (Figure 3A), we found H1 represses TE expression in a dosage-dependent manner: TEs are suppressed to a lesser extent in line #7 compared to the strong line #2 (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents qRT-PCR data shown in Figure 3A and 3F comparing two lines with different H1 expression levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "e33ab831-fe60-420a-b8d4-379dc57dc1cb",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C78",
+      "claim": "H1-repressed TEs in the VC are predominantly localized to pericentromeric regions.",
+      "claim_type": "EXPLICIT",
+      "source": "H1-repressed TEs in the VC are predominantly localized to pericentromeric regions and are overrepresented for LTR retrotransposons, including Gypsy and Copia elements (Figure 3G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents chromosomal distribution data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "233f6403-887d-4505-9621-c0ef473c01d2",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C79",
+      "claim": "H1-repressed TEs are overrepresented for LTR retrotransposons, including Gypsy and Copia elements.",
+      "claim_type": "EXPLICIT",
+      "source": "H1-repressed TEs in the VC are predominantly localized to pericentromeric regions and are overrepresented for LTR retrotransposons, including Gypsy and Copia elements (Figure 3G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents TE family composition data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "86a4217e-a76c-40a3-ba56-14ebbfa8bc65",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C80",
+      "claim": "H1-repressed TEs are significantly longer and enriched for H3K9me2 and H1 in somatic tissues compared to other VC-activated TEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to other VC-activated TEs, the H1-repressed TEs are significantly longer and enriched for H3K9me2 and H1 in somatic tissues (Figure 3H), consistent with the observation that H1 precludes DME access to heterochromatin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents box plot analysis shown in Figure 3H comparing genomic features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "59585c10-b62f-415a-bc13-f6ee369f47f7",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C81",
+      "claim": "20 of 46 H1-repressed TEs show significant increase of DNA methylation in at least one sequence context within 500 bp of the TSS in pVC::H1.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the hypothesis that H1 represses VC TE expression by blocking DME, 20 of 46 H1-repressed TEs show significant increase of DNA methylation in at least one sequence context within 500 bp of the TSS in pVC::H1 (p<0.001, Fisher's exact test; Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents methylation analysis shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "ba5f1a0d-a438-4e67-a175-d22548c2a5be",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C82",
+      "claim": "21 out of 22 H1-repressed TEs that do not show increased methylation do not overlap any H1 hyperDMRs within 500 bp of the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 21 out of the rest of 22 TEs do not overlap any H1 hyperDMRs within 500 bp of the TSS (Figure 4A, marked by asterisks in the lower panel), indicating that their suppression by H1 is not mediated by DNA methylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents methylation analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "389f3a73-6e6d-48a8-a969-0eb91dbc229b",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C83",
+      "claim": "H1 co-localizes with H3K9me2 in highly-compacted heterochromatic foci (chromocenters) in leaf nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining of leaf nuclei showed that H1 co-localizes with H3K9me2 in highly-compacted heterochromatic foci, known as chromocenters (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents immunostaining data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "c2bbe20d-8128-47e5-af85-06aa201de8a1",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C84",
+      "claim": "Chromocenters become dispersed in the nuclei of h1 mutant rosette leaves.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that chromocenters become dispersed in the nuclei of h1 mutant rosette leaves (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents immunostaining data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "929d34d6-2b91-48e5-aa7c-96b7f4c98e0b",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C85",
+      "claim": "No condensed chromocenters are detected in WT VC.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous observations (Baroux et al., 2011; Ingouff et al., 2010; Schoft et al., 2009), no condensed chromocenters were detected in WT VC (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents confocal microscopy data shown in Figure 5C and cites previous observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "2ed25918-2df1-4747-9526-8ef701deb643",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C86",
+      "claim": "pVC::H1 VC show no obvious chromocenters.",
+      "claim_type": "EXPLICIT",
+      "source": "pVC::H1 VC also showed no obvious chromocenters (n > 500; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents confocal microscopy observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "87feffe1-58ce-43bf-8537-6cdef6f8c82c",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C87",
+      "claim": "Chromocenters are observed at early microspore stage, but become dispersed in late microspore stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterochromatin decondensation during male gametogenesis seems to be gradual: chromocenters are observed at early microspore stage, but become dispersed in late microspore stage, when H1 is depleted (Figures 2A and 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents confocal microscopy data shown in Figures 2A and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "044ffb5c-8453-45df-bec1-0ea12211f955",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C88",
+      "claim": "Strong and weak chromocenters are observed in 27% and 59% of late microspore nuclei, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed strong and weak chromocenters, respectively, in 27% and 59% of late microspore nuclei, whereas no chromocenters were observed in the VC at either bicellular or tricellular pollen stage (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents quantification of chromocenter observations shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "106b37ab-ff3a-4467-a5f3-1d92d2a80abd",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C89",
+      "claim": "No chromocenters are observed in the VC at either bicellular or tricellular pollen stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed strong and weak chromocenters, respectively, in 27% and 59% of late microspore nuclei, whereas no chromocenters were observed in the VC at either bicellular or tricellular pollen stage (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents quantification of chromocenter observations shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "fa6824bc-43c0-40c9-95a7-c981ee132689",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C90",
+      "claim": "Strong chromocenters are observed in the majority (68%) of late microspores in pMSP1::H1.",
+      "claim_type": "EXPLICIT",
+      "source": "In pMSP1::H1, we observed strong chromocenters in the majority (68%) of late microspores (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents quantification of chromocenter observations shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "95f80998-b981-4365-8588-ac777631b506",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C91",
+      "claim": "H1 expression in pMSP1::H1 is specific to late microspores, and co-localizes with induced chromocenters.",
+      "claim_type": "EXPLICIT",
+      "source": "H1 expression in pMSP1::H1 is specific to late microspores, and co-localizes with induced chromocenters (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents confocal microscopy data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "0e9dbb1c-fd92-4b2e-8fab-b129224c7fa5",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C92",
+      "claim": "H1 is sufficient to promote heterochromatic foci in late microspores.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that H1 is sufficient to promote heterochromatic foci in late microspores, thus demonstrating the causal relationship between H1 depletion and the decondensation of heterochromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that ectopic H1 expression in late microspores induces chromocenters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "072c15a5-6a80-47f4-83ed-fb7978090b73",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C93",
+      "claim": "DNA methylation at the TSS suppresses the transcription of genes and TEs in plants and animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As DNA methylation at/near the TSS has been well-demonstrated to suppress the transcription of genes and TEs in plants and animals (Barau et al., 2016; Eichten et al., 2012; Hollister and Gaut, 2009; Manakov et al., 2015; Meng et al., 2016), our results indicate that DME-directed demethylation is a major mechanism of TE activation in the VC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "1813215d-dd59-4e86-ad3c-0fa0547e5937",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C94",
+      "claim": "H1 depletion causes local hypomethylation in mouse cells.",
+      "claim_type": "EXPLICIT",
+      "source": "H1 depletion causes local hypomethylation in mouse cells (Fan et al., 2005) and extensive hypermethylation in the fungi Ascobolus immersus (Barra et al., 2000) and Neurospora crassa (Seymour et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "d585e1fd-bdf1-43c0-a40f-385510210a3d",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C95",
+      "claim": "H1 depletion causes extensive hypermethylation in the fungi Ascobolus immersus and Neurospora crassa.",
+      "claim_type": "EXPLICIT",
+      "source": "H1 depletion causes local hypomethylation in mouse cells (Fan et al., 2005) and extensive hypermethylation in the fungi Ascobolus immersus (Barra et al., 2000) and Neurospora crassa (Seymour et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "6e4d9211-7498-4a21-a261-e022f42c102e",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C96",
+      "claim": "Loss of H1 causes global heterochromatic hypermethylation in all sequence contexts in Arabidopsis by allowing greater access of DNA methyltransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis, loss of H1 causes global heterochromatic hypermethylation in all sequence contexts by allowing greater access of DNA methyltransferases (Lyons and Zilberman, 2017; Zemach et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "11c38fcb-8b22-408d-91a8-382b8996961a",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C97",
+      "claim": "H1 may influence DME-homologous demethylases that control methylation in somatic tissues.",
+      "claim_type": "IMPLICIT",
+      "source": "Our results suggest that H1 may also influence DME-homologous demethylases that control methylation in somatic tissues (He et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observed effects of H1 on DME activity in the VC.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "940f441e-db33-4208-beed-640bf7f0a75f",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C98",
+      "claim": "H1 may serve as an integrator of methylation pathways that tunes methylation up or down depending on the locus.",
+      "claim_type": "IMPLICIT",
+      "source": "By regulating both methylation and demethylation, H1 may serve as an integrator of methylation pathways that tunes methylation up or down depending on the locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observed dual effects of H1 on methylation and demethylation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "12e43828-bbea-47bc-a871-e29631e3d53b",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C100",
+      "claim": "DNA methylation and H1 cooperate to suppress TE expression in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Group III also demonstrates that DNA methylation and H1 cooperate to suppress TE expression in plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript shows that some TEs require both H1 depletion and DME demethylation for activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "b2198ed1-e51d-437f-b20d-4e24c7e0c1cb",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "claim_id": "C101",
+      "claim": "TE activation in the VC may facilitate both host defense and transposition, with the balance specific to each TE family and changing over evolutionary time.",
+      "claim_type": "IMPLICIT",
+      "source": "TE activation in the VC may facilitate both host defense and transposition, with the balance specific to each TE family and changing over evolutionary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the discussion of competing hypotheses about the function of TE activation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6b32e728-0c5e-432d-abc5-46806955af8a",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identify 114 heterochromatic TEs that are transcriptionally activated in vegetative cells (VCs) of Arabidopsis pollen. These TEs are characterized by pericentromeric localization, long length, high GC content, enrichment in H3K9me2, depletion of euchromatic histone modifications, and overrepresentation of MuDR DNA transposons and Gypsy LTR-retrotransposons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C41-C46 provide comprehensive RNA-seq and genomic characterization data demonstrating that 114 TEs are activated in VCs with heterochromatic features. The statistical analyses (Fisher's exact test, Kolmogorov-Smirnov test) and multiple genomic features consistently support the heterochromatic nature of these TEs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "63b724e9-8d26-488c-bda3-f3922525a0eb",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TE activation in VCs is primarily caused by DEMETER (DME)-catalyzed DNA demethylation at transcriptional start sites (TSSs). The majority (62-81%) of VC-activated TEs overlap or are proximal to DME targets at their TSSs, show reduced CG methylation in VCs compared to sperm, and exhibit reduced expression in dme/+ heterozygous mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C47-C53 provide converging evidence from bisulfite sequencing and RNA-seq showing that DME demethylation at TSSs is the primary mechanism of TE activation. The dme/+ heterozygote data showing intermediate methylation and ~50% reduction in TE expression (median ratio 0.43) strongly supports DME's causal role. The well-established principle (C93) that TSS methylation suppresses transcription provides mechanistic support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "f5c331be-295e-4923-b919-2c4908c38ca6",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "H1 depletion in VCs facilitates DME access to heterochromatic TEs. Ectopic H1 expression in VCs causes hypermethylation at DME targets, particularly heterochromatic ones enriched in H3K9me2, indicating that H1 normally impedes DME activity at these loci. Only 26% of DME targets show H1-dependent hypermethylation, specifically the most heterochromatic subset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C63-C70 demonstrate through bisulfite sequencing that ectopic H1 expression causes hypermethylation specifically at heterochromatic DME targets. The identification of 2964 H1 hyperDMRs, of which 55% overlap DME targets and 81.4% show VC hypomethylation, provides strong quantitative evidence. The H3K9me2 enrichment analysis (C69-C70) convincingly shows H1 specifically affects the most heterochromatic DME targets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "60bf0d75-260d-4ebc-baee-427349d1d2ba",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ectopic H1 expression in VCs suppresses 46 out of 114 VC-activated TEs (40%) in a dosage-dependent manner, primarily through reducing DNA demethylation. These H1-repressed TEs are predominantly pericentromeric, longer, enriched in H3K9me2 and H1, and overrepresented for LTR retrotransposons. Twenty of 46 H1-repressed TEs show increased DNA methylation near the TSS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C75-C81 provide RNA-seq and methylation data demonstrating H1's repressive effect on TEs. The dosage-dependent repression shown by comparing two pVC::H1 lines (C77) strengthens the causal relationship. The methylation analysis (C81) showing 20/46 TEs with increased methylation provides mechanistic support for methylation-dependent repression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "1a54f7ea-3739-49a5-b4e2-697949769755",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ectopic H1 expression suppresses 21 out of 22 remaining H1-repressed TEs via a methylation-independent mechanism, as these TEs do not overlap H1 hyperDMRs within 500 bp of the TSS. This demonstrates that H1 can repress TEs independently of DNA methylation and that DNA methylation and H1 cooperate to suppress TE expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C82, and C100 provide clear evidence that H1 represses TEs through both methylation-dependent and -independent mechanisms. The analysis showing 21/22 TEs without H1 hyperDMRs near their TSS yet still repressed by H1 (C82) directly supports methylation-independent repression. The categorization of TEs into four groups based on their dependence on H1 and DME provides a comprehensive framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "87a20238-8efe-497b-9a1d-63cd172833c3",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "H1 is required for heterochromatin condensation in plant cells. H1 co-localizes with H3K9me2 in chromocenters in leaf nuclei, and chromocenters become dispersed in h1 mutant rosette leaves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C83, and C84 provide immunostaining data demonstrating H1's role in heterochromatin condensation. The co-localization with H3K9me2 (C83) and the dispersal of chromocenters in h1 mutants (C84) provide strong evidence for H1's requirement in maintaining heterochromatin structure in plants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "643145fc-6e22-4690-af13-ec6bb6358386",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "H1 overexpression in late microspores (pMSP1::H1) creates heterochromatic foci (chromocenters) in 68% of cells compared to 27% in wild-type. This demonstrates H1 is sufficient to promote heterochromatin condensation and establishes a causal relationship between H1 depletion and heterochromatin decondensation during male gametogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C87-C92 provide confocal microscopy data showing that ectopic H1 expression in late microspores induces chromocenters. The quantification showing 68% vs 27% strong chromocenters (C90) and the co-localization of H1 with induced chromocenters (C91) provide strong evidence for H1's sufficiency in promoting heterochromatin condensation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "fb0fdf05-0bee-4900-8b31-7a2315fa12bf",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "H1 depletion begins at the late microspore stage and continues through VC development, facilitating heterochromatin relaxation and TE activation. H1.1 and H1.2 are present in early microspores but absent in late microspores and VCs, while remaining present in generative cells and sperm. No condensed chromocenters are detected in WT VCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 and C54-C57, C85-C86 provide confocal microscopy data tracking H1 localization during male gametogenesis. The H1-GFP reporter data (C54-C56) clearly demonstrates the developmental timing of H1 depletion. The absence of chromocenters in WT VCs (C85-C86) is consistent with heterochromatin decondensation following H1 depletion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "3aadd1ed-17e2-4d84-ad63-0a8327a347db",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "H1 depletion in VCs is important for pollen fertility. Ectopic H1 expression in VCs leads to shortened siliques, malformed pollen, and reduced pollen germination rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 provide phenotypic data showing that ectopic H1 expression causes fertility defects. The multiple phenotypes (shortened siliques, malformed pollen, reduced germination) provide converging evidence that H1 depletion is functionally important for pollen development, though the mechanistic connection to TE activation is inferred rather than directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "70e4cab2-b9d5-45b0-ac92-5e265cff3427",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "H1 has minimal effect on gene expression in pollen. Only 3% (89/2845) of pollen-expressed genes are differentially expressed in pVC::H1, with 96% not overlapping DME targets near their TSS. DME targets regulating imprinted genes are associated with less H1 than VC DME targets dependent on H1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 provide RNA-seq data showing H1's limited effect on gene expression compared to its strong effect on TEs. The analysis showing 96% of differentially expressed genes don't overlap DME targets (C73) and the H1 occupancy comparison (C74) support the conclusion that H1's primary regulatory role in VCs is TE suppression rather than gene regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "8d3f83bb-9ff7-453c-8fe5-955d50c87582",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Global CG methylation in pVC::H1 VCs is largely similar to WT, except for a slight increase in TE methylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by bisulfite sequencing data showing minimal global methylation changes. This finding is important for establishing that H1's effects are targeted rather than causing widespread methylation changes, supporting the specificity of H1's role in regulating heterochromatic TEs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about TEs, plant reproduction, and prior work on H1, DME, and heterochromatin in various organisms and cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C40 and C94-C96 represent background information supported by citations to published literature. These claims establish the context for the current work and are appropriately cited. They are not novel findings of this manuscript but provide essential background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    },
+    {
+      "id": "870f4a8e-3446-43ad-b306-b73eaf4664df",
+      "content_id": "ce59a0ae-9beb-4c57-9a23-f8112b77a836",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Speculative claims about H1's potential role in regulating DME-homologous demethylases in somatic tissues, H1 serving as an integrator of methylation pathways, and TE activation facilitating both host defense and transposition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97, C98, and C101 are explicitly speculative (marked as SPECULATION in evidence_type). While they are reasonable hypotheses based on the presented data, they lack direct experimental support in this manuscript. These represent interesting directions for future research but should not be considered established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:54.947928Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "609b17e4-509b-4a4f-a9da-c15f14544fa5",
+      "result_id": "6b32e728-0c5e-432d-abc5-46806955af8a"
+    },
+    {
+      "claim_id": "c874c72e-7254-4c62-adbf-3bcf5f3167d5",
+      "result_id": "6b32e728-0c5e-432d-abc5-46806955af8a"
+    },
+    {
+      "claim_id": "b648dac4-f9f4-4b61-b2ce-3a3239c5b7fb",
+      "result_id": "6b32e728-0c5e-432d-abc5-46806955af8a"
+    },
+    {
+      "claim_id": "45d416c4-9ec7-4b0e-b305-a7d2a8ed2086",
+      "result_id": "6b32e728-0c5e-432d-abc5-46806955af8a"
+    },
+    {
+      "claim_id": "963c0857-87c8-48c4-ae1c-c103f6205eb5",
+      "result_id": "6b32e728-0c5e-432d-abc5-46806955af8a"
+    },
+    {
+      "claim_id": "a73062e8-e960-4d7f-9e91-34cfd2dc02a7",
+      "result_id": "6b32e728-0c5e-432d-abc5-46806955af8a"
+    },
+    {
+      "claim_id": "aa658ee4-8fd0-4771-ac90-c35cd90ab84a",
+      "result_id": "6b32e728-0c5e-432d-abc5-46806955af8a"
+    },
+    {
+      "claim_id": "c071380a-c351-45d5-a5cc-5ef2835fc692",
+      "result_id": "63b724e9-8d26-488c-bda3-f3922525a0eb"
+    },
+    {
+      "claim_id": "85e06866-94c6-4223-b469-a8855ab70b52",
+      "result_id": "63b724e9-8d26-488c-bda3-f3922525a0eb"
+    },
+    {
+      "claim_id": "cf6c3f29-60bf-4656-9f1d-14efa1e8b588",
+      "result_id": "63b724e9-8d26-488c-bda3-f3922525a0eb"
+    },
+    {
+      "claim_id": "149e3bd7-4085-4606-9f34-3a43ee69837b",
+      "result_id": "63b724e9-8d26-488c-bda3-f3922525a0eb"
+    },
+    {
+      "claim_id": "22aa657b-65fa-4789-9c85-faadd2c36d3e",
+      "result_id": "63b724e9-8d26-488c-bda3-f3922525a0eb"
+    },
+    {
+      "claim_id": "10854931-00f5-42f5-92d2-a51e0f59a60d",
+      "result_id": "63b724e9-8d26-488c-bda3-f3922525a0eb"
+    },
+    {
+      "claim_id": "907f6f10-5a53-4244-9685-2d577c65dd52",
+      "result_id": "63b724e9-8d26-488c-bda3-f3922525a0eb"
+    },
+    {
+      "claim_id": "a53240b0-0049-4584-8d4c-a0df396c618a",
+      "result_id": "63b724e9-8d26-488c-bda3-f3922525a0eb"
+    },
+    {
+      "claim_id": "072c15a5-6a80-47f4-83ed-fb7978090b73",
+      "result_id": "63b724e9-8d26-488c-bda3-f3922525a0eb"
+    },
+    {
+      "claim_id": "c503fd26-c9cc-4e91-8fd4-fff7e8b3eca8",
+      "result_id": "f5c331be-295e-4923-b919-2c4908c38ca6"
+    },
+    {
+      "claim_id": "744f88ae-aa25-4305-bb00-9fa229fa5cf4",
+      "result_id": "f5c331be-295e-4923-b919-2c4908c38ca6"
+    },
+    {
+      "claim_id": "d1429101-9665-471e-9456-813a6f27fba9",
+      "result_id": "f5c331be-295e-4923-b919-2c4908c38ca6"
+    },
+    {
+      "claim_id": "992d4253-0680-4d4e-afc8-bf56344a14c1",
+      "result_id": "f5c331be-295e-4923-b919-2c4908c38ca6"
+    },
+    {
+      "claim_id": "3252ef1d-f67c-4b59-b2b6-cb967836e24b",
+      "result_id": "f5c331be-295e-4923-b919-2c4908c38ca6"
+    },
+    {
+      "claim_id": "d384c3ab-522e-4af2-aefa-5ed8bf45b8eb",
+      "result_id": "f5c331be-295e-4923-b919-2c4908c38ca6"
+    },
+    {
+      "claim_id": "60d6eb54-2e6e-44fe-b1d2-f7f68db76a0a",
+      "result_id": "f5c331be-295e-4923-b919-2c4908c38ca6"
+    },
+    {
+      "claim_id": "e9695a71-2264-430b-9138-a3b2d3e70a29",
+      "result_id": "f5c331be-295e-4923-b919-2c4908c38ca6"
+    },
+    {
+      "claim_id": "ccee7e5e-9fc2-4ba4-a428-cd48c0c9733c",
+      "result_id": "f5c331be-295e-4923-b919-2c4908c38ca6"
+    },
+    {
+      "claim_id": "f3d78a35-145b-4501-a21a-a82d477f5bf5",
+      "result_id": "f5c331be-295e-4923-b919-2c4908c38ca6"
+    },
+    {
+      "claim_id": "17365d0a-aacc-4cb1-8ce5-1bdcd594afb7",
+      "result_id": "60bf0d75-260d-4ebc-baee-427349d1d2ba"
+    },
+    {
+      "claim_id": "32dd1866-ad61-4f42-9ce3-39cf2e387971",
+      "result_id": "60bf0d75-260d-4ebc-baee-427349d1d2ba"
+    },
+    {
+      "claim_id": "f2943329-fee9-4364-a73f-712275552b84",
+      "result_id": "60bf0d75-260d-4ebc-baee-427349d1d2ba"
+    },
+    {
+      "claim_id": "282f6cbb-c571-4367-beaa-f18212f8d739",
+      "result_id": "60bf0d75-260d-4ebc-baee-427349d1d2ba"
+    },
+    {
+      "claim_id": "e33ab831-fe60-420a-b8d4-379dc57dc1cb",
+      "result_id": "60bf0d75-260d-4ebc-baee-427349d1d2ba"
+    },
+    {
+      "claim_id": "233f6403-887d-4505-9621-c0ef473c01d2",
+      "result_id": "60bf0d75-260d-4ebc-baee-427349d1d2ba"
+    },
+    {
+      "claim_id": "86a4217e-a76c-40a3-ba56-14ebbfa8bc65",
+      "result_id": "60bf0d75-260d-4ebc-baee-427349d1d2ba"
+    },
+    {
+      "claim_id": "59585c10-b62f-415a-bc13-f6ee369f47f7",
+      "result_id": "60bf0d75-260d-4ebc-baee-427349d1d2ba"
+    },
+    {
+      "claim_id": "ae8c383b-6d24-4839-b646-be69bbf06a89",
+      "result_id": "1a54f7ea-3739-49a5-b4e2-697949769755"
+    },
+    {
+      "claim_id": "ba5f1a0d-a438-4e67-a175-d22548c2a5be",
+      "result_id": "1a54f7ea-3739-49a5-b4e2-697949769755"
+    },
+    {
+      "claim_id": "12e43828-bbea-47bc-a871-e29631e3d53b",
+      "result_id": "1a54f7ea-3739-49a5-b4e2-697949769755"
+    },
+    {
+      "claim_id": "e85d8270-45a5-48f8-bee0-f440421e81ef",
+      "result_id": "87a20238-8efe-497b-9a1d-63cd172833c3"
+    },
+    {
+      "claim_id": "389f3a73-6e6d-48a8-a969-0eb91dbc229b",
+      "result_id": "87a20238-8efe-497b-9a1d-63cd172833c3"
+    },
+    {
+      "claim_id": "c2bbe20d-8128-47e5-af85-06aa201de8a1",
+      "result_id": "87a20238-8efe-497b-9a1d-63cd172833c3"
+    },
+    {
+      "claim_id": "14f29236-1238-4241-ba97-60399ae06476",
+      "result_id": "643145fc-6e22-4690-af13-ec6bb6358386"
+    },
+    {
+      "claim_id": "87feffe1-58ce-43bf-8537-6cdef6f8c82c",
+      "result_id": "643145fc-6e22-4690-af13-ec6bb6358386"
+    },
+    {
+      "claim_id": "044ffb5c-8453-45df-bec1-0ea12211f955",
+      "result_id": "643145fc-6e22-4690-af13-ec6bb6358386"
+    },
+    {
+      "claim_id": "106b37ab-ff3a-4467-a5f3-1d92d2a80abd",
+      "result_id": "643145fc-6e22-4690-af13-ec6bb6358386"
+    },
+    {
+      "claim_id": "fa6824bc-43c0-40c9-95a7-c981ee132689",
+      "result_id": "643145fc-6e22-4690-af13-ec6bb6358386"
+    },
+    {
+      "claim_id": "95f80998-b981-4365-8588-ac777631b506",
+      "result_id": "643145fc-6e22-4690-af13-ec6bb6358386"
+    },
+    {
+      "claim_id": "0e9dbb1c-fd92-4b2e-8fab-b129224c7fa5",
+      "result_id": "643145fc-6e22-4690-af13-ec6bb6358386"
+    },
+    {
+      "claim_id": "88781cb7-9278-42b6-97ac-246b01d655f3",
+      "result_id": "fb0fdf05-0bee-4900-8b31-7a2315fa12bf"
+    },
+    {
+      "claim_id": "1537669a-d2c0-4efa-ad4c-e7f19fe37a6e",
+      "result_id": "fb0fdf05-0bee-4900-8b31-7a2315fa12bf"
+    },
+    {
+      "claim_id": "4b6bf128-ccb8-46f7-a78f-d7d6f08b2645",
+      "result_id": "fb0fdf05-0bee-4900-8b31-7a2315fa12bf"
+    },
+    {
+      "claim_id": "ebf29fdc-0ab5-45e4-af89-fcc837689e00",
+      "result_id": "fb0fdf05-0bee-4900-8b31-7a2315fa12bf"
+    },
+    {
+      "claim_id": "ecbc9a30-dcf5-4286-8ebe-9c1a4965ae74",
+      "result_id": "fb0fdf05-0bee-4900-8b31-7a2315fa12bf"
+    },
+    {
+      "claim_id": "69c89a18-bbec-44e9-a4ca-0195358380a3",
+      "result_id": "fb0fdf05-0bee-4900-8b31-7a2315fa12bf"
+    },
+    {
+      "claim_id": "929d34d6-2b91-48e5-aa7c-96b7f4c98e0b",
+      "result_id": "fb0fdf05-0bee-4900-8b31-7a2315fa12bf"
+    },
+    {
+      "claim_id": "2ed25918-2df1-4747-9526-8ef701deb643",
+      "result_id": "fb0fdf05-0bee-4900-8b31-7a2315fa12bf"
+    },
+    {
+      "claim_id": "a7681c82-ec1d-4176-b9c1-c8e3c43e8490",
+      "result_id": "3aadd1ed-17e2-4d84-ad63-0a8327a347db"
+    },
+    {
+      "claim_id": "1f8e2000-c4f4-4caa-bfcf-a286c624ab36",
+      "result_id": "3aadd1ed-17e2-4d84-ad63-0a8327a347db"
+    },
+    {
+      "claim_id": "d08c4b64-766b-45b9-afb8-d1e66bea31d8",
+      "result_id": "3aadd1ed-17e2-4d84-ad63-0a8327a347db"
+    },
+    {
+      "claim_id": "f5d448c2-6b83-42a4-97b6-5448805466fd",
+      "result_id": "3aadd1ed-17e2-4d84-ad63-0a8327a347db"
+    },
+    {
+      "claim_id": "2c4e8feb-d481-4fb0-8e4c-555f6b4ff38d",
+      "result_id": "70e4cab2-b9d5-45b0-ac92-5e265cff3427"
+    },
+    {
+      "claim_id": "e7cc5d74-50c7-452d-b3cb-c6ba3e9c5bc4",
+      "result_id": "70e4cab2-b9d5-45b0-ac92-5e265cff3427"
+    },
+    {
+      "claim_id": "ac392e51-64b6-42e4-8404-9f69b92b71cb",
+      "result_id": "70e4cab2-b9d5-45b0-ac92-5e265cff3427"
+    },
+    {
+      "claim_id": "de3f7230-b5f7-445a-963f-558f313f1aa9",
+      "result_id": "70e4cab2-b9d5-45b0-ac92-5e265cff3427"
+    },
+    {
+      "claim_id": "c4ef468f-717f-4a80-ba80-875a64c2207a",
+      "result_id": "8d3f83bb-9ff7-453c-8fe5-955d50c87582"
+    },
+    {
+      "claim_id": "ad2bcae4-9804-4c3f-a0ef-2d579eda1e1b",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "aae5ae55-57c0-4ad4-a900-2eea319cce68",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "b26b7eae-710f-4bc1-8b7c-edb5090440d8",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "a9d9dd25-ff2c-4a5d-add5-e649988b8b77",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "3568ed69-0dc9-4c13-b1bf-05ab17036521",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "849fcd2e-ea86-41da-b6a9-839b892bc7a5",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "1c2386e0-5edb-46c6-bc7b-2f5a8b0bf92d",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "fcf6a527-2a4f-477c-a1b1-03f6b1820679",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "14034fb7-d7b2-4096-bcbc-e034d0d94585",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "13999f69-cac0-4a85-ad5a-a7e581b0673e",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "13baac7d-6cc7-41d9-ac6b-553877a8cee5",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "f99d1a1b-831b-49ca-8548-b273f2c7562d",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "9be7fbf6-188e-46f4-8d77-8a99195076f1",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "a7d7d514-c0cc-4168-8557-391fe98f1b93",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "252955c3-df04-4cd3-8e44-a9c57e5ad1e3",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "8b8bbf3b-ad5b-485b-a4a1-f0796aa968e8",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "05cd1349-bd10-4860-aaef-7d08d7382a8e",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "bdb518c0-a8a4-437c-a6df-05a63554f665",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "0feba334-30ec-43ba-9766-4f5dd33ff03e",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "63ff7669-d6d7-4534-86cb-3777ef9b4a50",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "4c0c6f9e-556a-4cc3-8221-d8ba018e0d02",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "371fac0d-b32e-41a5-8d35-832139ecdbac",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "3c010788-caa5-4a0f-8f22-e3636d17eec0",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "761598d7-f248-4b4a-a056-49ac38231c1e",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "54fc52f3-5cf0-4dd2-9c36-02ba9f7ec6ce",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "7959037c-6042-4bae-94e2-285f2fa32586",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "c5fa02fb-3659-4a53-8f6a-d9169f04f9e0",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "abc986e7-19f7-4a80-b249-c228e2a69edb",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "8a2cee21-b7ac-4533-8ac0-189bc1e52498",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "aaa13899-3cb4-49d0-89a8-d1032be14eda",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "1813215d-dd59-4e86-ad3c-0fa0547e5937",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "d585e1fd-bdf1-43c0-a40f-385510210a3d",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "6e4d9211-7498-4a21-a261-e022f42c102e",
+      "result_id": "0a9f1f1f-6e64-4eab-831f-d622c6526dcc"
+    },
+    {
+      "claim_id": "11c38fcb-8b22-408d-91a8-382b8996961a",
+      "result_id": "870f4a8e-3446-43ad-b306-b73eaf4664df"
+    },
+    {
+      "claim_id": "940f441e-db33-4208-beed-640bf7f0a75f",
+      "result_id": "870f4a8e-3446-43ad-b306-b73eaf4664df"
+    },
+    {
+      "claim_id": "b2198ed1-e51d-437f-b20d-4e24c7e0c1cb",
+      "result_id": "870f4a8e-3446-43ad-b306-b73eaf4664df"
+    }
+  ],
+  "comparisons": []
+}

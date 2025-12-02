@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C25",
+      "C26",
+      "C76",
+      "C110"
+    ],
+    "result": "The authors demonstrate that reproductive specialization can evolve in sparse networks even when returns on investment are saturating (concave, \u03b1 < 1), contradicting classical theory that requires accelerating (convex, \u03b1 > 1) returns. This finding is supported by both analytical theory and evolutionary simulations across multiple network topologies including neighbor networks, bipartite networks, and random graphs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C25, C26, C76, and C110 collectively establish the central finding through analytical derivations (Hessian analysis), evolutionary simulations (Figures 1-4), and systematic exploration of network topologies (Figure 3). The mathematical framework is clearly defined, simulations are appropriately designed with sufficient replication, and results consistently show specialization emerging under concave ROI conditions for sparse networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Simulations reveal that sparse network topologies (neighbor and balanced bipartite networks) favor specialization more readily than fully connected networks. The neighbor network leads to alternating specialists in viability and fecundity, while the balanced bipartite network shows specialization across an even wider parameter range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C40, C41, and C42 are directly supported by simulation results shown in Figure 1b-c. The evolutionary simulations demonstrate clear patterns of specialization emergence, with quantitative comparisons between network types. The analytical predictions (red curves in Figure 1) align well with simulation outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C57",
+      "C59",
+      "C60"
+    ],
+    "result": "Analysis of Erd\u0151s-R\u00e9nyi random graphs reveals that specialization with saturating returns (\u03b1 < 1) occurs most readily at intermediate connectivity levels, with a non-monotonic relationship between network sparsity and specialization favorability. The authors conjecture this relates to spanning tree formation probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C57, C59, and C60 are supported by systematic simulations across varying connectivity levels (Figure 3b). The data clearly show the U-shaped relationship between connectivity and \u03b1* values. However, C60 is explicitly labeled as a conjecture by the authors, indicating this mechanistic explanation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C61",
+      "C62"
+    ],
+    "result": "Simulations of biologically realistic topologies (filaments and branched structures observed in early multicellular organisms) demonstrate that specialization is favored in the sub-linear regime for these sparse topologies, but not for fully connected topologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C64 are directly supported by simulation results in Figure 4a-c. Claims C61 and C62 provide biological context through citations and fossil/experimental evidence. The combination establishes both the biological relevance and the computational validation of the theoretical predictions for realistic morphologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The benefit of specialization in neighbor networks increases with group size, and group morphologies arising from simple biophysical mechanisms strongly promote reproductive specialization. This demonstrates that reproductive specialization can evolve under broader conditions than previously thought.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by analytical derivation showing fitness scaling with N. Claims C27, C28, and C29 represent inferences from the collective results. The analytical results and simulations across different group sizes (Figure 3b, Figure 4D) provide converging evidence for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C80",
+      "C77",
+      "C78",
+      "C79",
+      "C84"
+    ],
+    "result": "The authors explain why their results differ from classical predictions by distinguishing between absolute productivity (governed by Jensen's inequality) and realized productivity (group fitness). For fully connected topologies, convex ROI is required for specialization, but for sparse topologies, network structure allows specialization to increase realized productivity even with concave ROI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C77, C78, and C79 correctly invoke Jensen's inequality and its limitations. Claims C80 and C84 provide the key mechanistic insight connecting network topology to fitness. This explanation is mathematically sound and reconciles the new findings with established theory. The logic is clearly articulated and supported by the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "When complete generalization is not a fitness maximum, evolutionary simulations suggest high or complete specialization typically maximizes fitness. Complete reproductive specialization (where specialists cannot survive independently) occurs in both fixed and evolved resource sharing models, establishing sparse topology as a cooperation-prone substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C48 are supported by simulation results (Figure 1, Appendix 1\u2014figure 1). Claim C47 provides a clear definition with citations. Claim C50 represents a valid inference from the collective results. The evolutionary simulations consistently show this pattern across multiple network types and parameter regimes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C88",
+      "C89",
+      "C87"
+    ],
+    "result": "For topologically structured organisms, fitness depends on how complementary specialist cells are connected. The primary benefit of sparsity is that sparse networks tend to be bipartite-like, reducing wasted effort and favoring specialization when cells share resources only with physically-attached neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C88, and C89 represent key mechanistic insights from the analysis. Claim C87 connects physical topology to interaction topology. These inferences are well-supported by the mathematical analysis (particularly the mean-field model and bipartite network results) and provide a coherent explanation for the observed patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors contextualize their findings within the evolutionary history of complex multicellularity across multiple lineages (plants, algae, fungi, animals), noting that early multicellular organisms in these lineages formed sparse network structures. They infer that choanoflagellate growth forms share characteristics promoting cellular differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C101 are well-supported by citations to paleontological and phylogenetic literature. Claim C102 represents an inference applying the manuscript's findings to choanoflagellate biology. While the biological facts are appropriately cited, C102 is an extrapolation that, while reasonable, extends beyond the direct evidence presented in the simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The model defines viability as activities keeping cells alive and fecundity as activities involved in reproduction. A key assumption is that viability can be shared across connected cells but fecundity cannot, reflecting a fundamental asymmetry in cellular biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 clearly define the model structure and assumptions. The asymmetry assumption (C33, C34) is justified with biological examples (C32) and is central to the model's novelty. The authors acknowledge testing sensitivity to this assumption (C34, C105), demonstrating appropriate scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors distinguish their approach from previous work by focusing on group-level productivity rather than individual cell productivity, and by considering highly asymmetric sharing. They demonstrate the approach is general and show that sufficient asymmetry in sharing allows specialization with saturating returns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103 and C104 accurately characterize the novelty of the approach. Claim C105 is supported by supplementary analysis (Appendix 1\u2014figure 2). These claims appropriately position the work within the existing literature and demonstrate the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Networks favoring specialization readily arise from physical processes structuring simple cellular groups, such as septin defects during cell division that create groups where cells connect only to parents and offspring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by citation to prior work on physical processes. Claim C86 is supported by multiple citations and Figure 4a-b showing experimental examples. These claims effectively connect the theoretical findings to biological mechanisms of multicellular group formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors conclude that group topological structure plays a key role in reproductive division of labor evolution, underscoring the importance of life history trade-offs and supporting the view that evolutionary transitions in individuality are not highly constrained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C111, and C112 represent appropriate high-level conclusions from the body of work. They are well-supported by the analytical and simulation results, and appropriately contextualized with citations to relevant literature. These conclusions follow logically from the demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The introduction establishes that reproductive division of labor is a hallmark of multicellularity evolution, signifying new individuality and facilitating complexity. Despite its importance, the origin and evolution of reproductive specialization remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide appropriate background context, all supported by citations to established literature. These claims accurately represent the current state of knowledge and identify the gap the manuscript addresses. The characterization of the field is appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Classical theory from evolutionary biology, economics, and ecology predicts specialization is beneficial only with accelerating returns (convex functions), while saturating returns (concave functions) should inhibit specialization. Reciprocal interactions amplify cooperation benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C14, C15, C16, and C17 accurately summarize prior theoretical work with appropriate citations. This establishes the classical view that the manuscript challenges. The characterization of prior work is accurate and provides essential context for understanding the novelty of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Reproductive specialization differs from classical trade models because trade between germ and soma is intrinsically asymmetric, selection acts on group fitness, and optimal specialization can reduce short-term fitness of some cells (reproductive altruism).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C19, and C20 articulate key conceptual distinctions supported by citations. These claims establish why reproductive specialization requires different theoretical treatment than classical trade models. The reasoning is sound and appropriately supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Network theory is well-suited for understanding early multicellular evolution. Permanent cell-cell bonds create sparse network-like bodies (filaments and trees), a common mode of group formation in simple multicellular organisms and dominant in lineages evolving complex multicellularity (except animals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 establish the biological relevance of network approaches with appropriate citations. The statements about the prevalence of sparse topologies in multicellular evolution are supported by the cited literature and provide strong motivation for the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Simple routes to multicellular group formation can readily evolve in response to selection for size, and this process may favor cellular differentiation evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by multiple citations to prior experimental and theoretical work. This claim provides additional context for understanding the evolutionary accessibility of the morphologies studied in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "In metabolic cross-feeding, the spatial arrangement of unlike specialists plays a key role in determining productivity and fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by citation to prior work and provides a useful parallel to the reproductive specialization case. This comparison helps contextualize the findings within broader principles of spatial structure and cooperation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors speculate that alternative paths to specialization exist, such as through positional effects creating heterogeneous cell types. Previous work considered this for well-mixed groups, and future work on topology-heterogeneity interactions may provide insight into multicellular form diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106 and C108 are explicitly speculative about alternative mechanisms and future directions. Claim C107 accurately characterizes prior work. While these are reasonable speculations, they represent hypotheses for future testing rather than findings of the current work. The speculation is appropriately qualified by the authors.",
+    "result_type": "MINOR"
+  }
+]

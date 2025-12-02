@@ -1,0 +1,1788 @@
+{
+  "submission": {
+    "id": "9bed6dff-aee2-4005-978d-09dce03d8389",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:19:55.335399Z",
+    "updated_at": "2025-12-02T14:19:55.335399Z"
+  },
+  "content": [
+    {
+      "id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "submission_id": "9bed6dff-aee2-4005-978d-09dce03d8389",
+      "content_type": "manuscript",
+      "content_text": "# Decreasing human body temperature in the United States since the Industrial Revolution\n\n## Authors\n\n- Myroslava Protsiv<sup>1</sup> ([ORCID: 0000-0002-7787-5898](https://orcid.org/0000-0002-7787-5898))\n- Catherine Ley<sup>1</sup> ([ORCID: 0000-0002-8424-7873](https://orcid.org/0000-0002-8424-7873))\n- Joanna Lankester<sup>2</sup> ([ORCID: 0000-0003-0709-6722](https://orcid.org/0000-0003-0709-6722))\n- Trevor Hastie<sup>3</sup>\n- Julie Parsonnet<sup>1</sup> ([ORCID: 0000-0001-7342-5366](https://orcid.org/0000-0001-7342-5366)) \u2020\n\n### Affiliations\n\n1. Division of Infectious Diseases and Geographic Medicine, Department of Medicine Stanford University, School of Medicine Stanford United States\n2. Division of Cardiovascular Medicine Stanford University, School of Medicine Stanford United States\n3. Department of Statistics Stanford University Stanford United States\n4. Department of Biomedical Data Science Stanford University, School of Medicine Stanford United States\n5. Division of Epidemiology, Department of Health Research and Policy Stanford University, School of Medicine Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn the US, the normal, oral temperature of adults is, on average, lower than the canonical 37\u00b0C established in the 19th century. We postulated that body temperature has decreased over time. Using measurements from three cohorts\u2014the Union Army Veterans of the Civil War (N = 23,710; measurement years 1860\u20131940), the National Health and Nutrition Examination Survey I (N = 15,301; 1971\u20131975), and the Stanford Translational Research Integrated Database Environment (N = 150,280; 2007\u20132017)\u2014we determined that mean body temperature in men and women, after adjusting for age, height, weight and, in some models date and time of day, has decreased monotonically by 0.03\u00b0C per birth decade. A similar decline within the Union Army cohort as between cohorts, makes measurement error an unlikely explanation. This substantive and continuing shift in body temperature\u2014a marker for metabolic rate\u2014provides a framework for understanding changes in human health and longevity over 157 years.\n\n## Introduction\n\nIn 1851, the German physician Carl Reinhold August Wunderlich obtained millions of axillary temperatures from 25,000 patients in Leipzig, thereby establishing the standard for normal human body temperature of 37\u00b0C or 98.6 \u00b0F (range: 36.2\u201337.5\u00b0C [97.2- 99.5 \u00b0F]) (Mackowiak, 1997; Wunderlich and Sequin, 1871). A compilation of 27 modern studies, however (Sund-Levander et al., 2002), reported mean temperature to be uniformly lower than Wunderlich\u2019s estimate. Recently, an analysis of more than 35,000 British patients with almost 250,000 temperature measurements, found mean oral temperature to be 36.6\u00b0C, confirming this lower value (Obermeyer et al., 2017). Remaining unanswered is whether the observed difference between Wunderlich\u2019s and modern averages represents true change or bias from either the method of obtaining temperature (axillary by Wunderlich vs. oral today) or the quality of thermometers and their calibration (Mackowiak, 1997). Wunderlich obtained his measurements in an era when life expectancy was 38 years and untreated chronic infections such as tuberculosis, syphilis, and periodontitis afflicted large proportions of the population (Murray et al., 2015; Tampa et al., 2014; Richmond, 2014). These infectious diseases and other causes of chronic inflammation may well have influenced the \u2018normal\u2019 body temperature of that era.\n\nThe question of whether mean body temperature is changing over time is not merely a matter of idle curiosity. Human body temperature is a crude surrogate for basal metabolic rate which, in turn, has been linked to both longevity (higher metabolic rate, shorter life span) and body size (lower metabolism, greater body mass). We speculated that the differences observed in temperature between the 19th century and today are real and that the change over time provides important physiologic clues to alterations in human health and longevity since the Industrial Revolution.\n\n## Results\n\nIn men, we analyzed: a) 83,900 measurements from the Union Army Veterans of the Civil War cohort (UAVCW) obtained between 1862 and 1930, b) 5998 measurements from the National Health and Nutrition Examination Survey I cohort (NHANES) obtained between 1971 and 1975, and c) 230,261 measurements from the Stanford Translational Research Integrated Database Environment cohort (STRIDE) obtained between 2007 and 2017 (Table 1). We also compared temperature measurements in women within the two later time periods (NHANES, 9303 measurements; and STRIDE, 348,006 measurements).\n\n**Table 1.**\n Demographic characteristics (N (%)) and mean (SD)) of cohort participants included in the analyses.Table 1\u2014source code 1.R code for Table 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Total, N (%)</th>\n      <th>Uavcw</th>\n      <th>Nhanes i</th>\n      <th>Stride</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Individuals</td>\n      <td>189,338 (100%)</td>\n      <td>23,710 (13%)</td>\n      <td>15,301 (8%)</td>\n      <td>150,280 (79%)</td>\n    </tr>\n    <tr>\n      <td>Observations1</td>\n      <td>677,423 (100%)</td>\n      <td>83,699 (12%)</td>\n      <td>15,301 (2%)</td>\n      <td>578,222 (85%)</td>\n    </tr>\n    <tr>\n      <td>Age (years)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Overall*</td>\n      <td></td>\n      <td>56.89 (8.85)</td>\n      <td>46.55 (16.74)</td>\n      <td>53.00 (15.62)</td>\n    </tr>\n    <tr>\n      <td>20\u201340</td>\n      <td>144,379 (21%)</td>\n      <td>1682 (2%)</td>\n      <td>6489 (42%)</td>\n      <td>136,181 (24%)</td>\n    </tr>\n    <tr>\n      <td>40\u201360</td>\n      <td>283,059 (42%)</td>\n      <td>52,117 (62%)</td>\n      <td>4422 (29%)</td>\n      <td>225,365 (39%)</td>\n    </tr>\n    <tr>\n      <td>60\u201380</td>\n      <td>249,985 (37%)</td>\n      <td>28,900 (35%)</td>\n      <td>4390 (29%)</td>\n      <td>216,676 (37%)</td>\n    </tr>\n    <tr>\n      <td>Weight (Kg)</td>\n      <td>0 (0%)</td>\n      <td>0 (0%)</td>\n      <td>0 (0%)</td>\n      <td>0 (0%)</td>\n    </tr>\n    <tr>\n      <td>Overall*</td>\n      <td></td>\n      <td>68.63 (10.54)</td>\n      <td>70.44 (15.76)</td>\n      <td>78.53 (19.75)</td>\n    </tr>\n    <tr>\n      <td>&gt;60</td>\n      <td>123,931 (18%)</td>\n      <td>16,147 (19%)</td>\n      <td>4245 (28%)</td>\n      <td>103,516 (18%)</td>\n    </tr>\n    <tr>\n      <td>60\u201380</td>\n      <td>296,244 (44%)</td>\n      <td>57,475 (69%)</td>\n      <td>7311 (48%)</td>\n      <td>231,312 (40%)</td>\n    </tr>\n    <tr>\n      <td>80\u2013100</td>\n      <td>175,598 (26%)</td>\n      <td>9054 (11%)</td>\n      <td>3115 (20%)</td>\n      <td>163,402 (28%)</td>\n    </tr>\n    <tr>\n      <td>&gt;100</td>\n      <td>81,650 (12%)</td>\n      <td>1023 (1%)</td>\n      <td>630 (4%)</td>\n      <td>79,992 (14%)</td>\n    </tr>\n    <tr>\n      <td>Height (cm)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Overall*</td>\n      <td></td>\n      <td>172.34 (6.8)</td>\n      <td>166.31 (9.17)</td>\n      <td>167.78 (10.46)</td>\n    </tr>\n    <tr>\n      <td>&lt;160</td>\n      <td>145,964 (64%)</td>\n      <td>2587 (3%)</td>\n      <td>4077 (27%)</td>\n      <td>139,295 (24%)</td>\n    </tr>\n    <tr>\n      <td>160\u2013180</td>\n      <td>432,404 (64%)</td>\n      <td>69,506 (83%)</td>\n      <td>9995 (65%)</td>\n      <td>352,762 (61%)</td>\n    </tr>\n    <tr>\n      <td>180\u2013200</td>\n      <td>98,320 (15%)</td>\n      <td>11,569 (14%)</td>\n      <td>1227 (8%)</td>\n      <td>85,470 (15%)</td>\n    </tr>\n    <tr>\n      <td>&gt;200</td>\n      <td>735 (0%)</td>\n      <td>37 (0%)</td>\n      <td>2 (0%)</td>\n      <td>695 (0%)</td>\n    </tr>\n    <tr>\n      <td>Sex</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Women2</td>\n      <td>357,309 (53%)</td>\n      <td>0 (0%)</td>\n      <td>9303 (61%)</td>\n      <td>348,006 (60%)</td>\n    </tr>\n    <tr>\n      <td>Men</td>\n      <td>320,114 (47%)</td>\n      <td>83,699 (100%)</td>\n      <td>5998 (39%)</td>\n      <td>230,216 (40%)</td>\n    </tr>\n    <tr>\n      <td>Ethnicity</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Black</td>\n      <td>68,955 (10%)</td>\n      <td>20,801 (25%)</td>\n      <td>2399 (16%)</td>\n      <td>45,689 (8%)</td>\n    </tr>\n    <tr>\n      <td>White</td>\n      <td>381,330 (56%)</td>\n      <td>62,898 (75%)</td>\n      <td>12,716 (83%)</td>\n      <td>305,581 (53%)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>78,277 (12%)</td>\n      <td>0 (0%)</td>\n      <td>186 (1%)</td>\n      <td>78,091 (14%)</td>\n    </tr>\n    <tr>\n      <td>Unknown</td>\n      <td>148,861 (22%)</td>\n      <td>0 (0%)</td>\n      <td>0 (0%)</td>\n      <td>148,861 (26%)</td>\n    </tr>\n  </tbody>\n</table>\n\n_SD: standard deviation; UAVCW: Union Army Veterans of the Civil War; NHANES: National Health and Nutrition Examination Survey I; STRIDE: Stanford Translational Research Integrated Database Environment; BMI: body mass index. * Mean (SD). 1 Between one and four temperature measurements were available per person. 2UAVCW included men only._\n\nOverall, temperature measurements were significantly higher in the UAVCW cohort than in NHANES, and higher in NHANES than in STRIDE (Figure 1; Figure 1\u2014figure supplement 1). In each of the three cohorts, and for both men and women, we observed that temperature decreased with age with a similar magnitude of effect (between \u22120.003\u00b0C and \u22120.0043\u00b0C per year of age, Figure 1). As has been previously reported (Eriksson et al., 1985), temperature was directly related to weight and inversely related to height, although these associations were not statistically significant in the UAVCW cohort. Analysis using body mass index (BMI) and BMI adjusted for height produced similar results (Figure 1\u2014figure supplement 2) and analyses including only white and black subjects (Figure 1\u2014figure supplement 3) showed similar results to those including subjects of all ethnicities.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-v2.jpg)\n\n**Figure 1.:** (A) Unadjusted data (local regression) for temperature measurements, showing a decrease in temperature across age in white men, black men, white women, and black women, in the three cohorts. (B) Coefficients and standard errors from multivariate linear regression models for each cohort including age, weight, height, ethnicity group and time of day as available. Yellow cells are statistically significant at a p value of\u00a0<\u00a00.01, orange cells are of borderline significance (p<0.1 but>0.05), and remaining uncolored cells are not statistically significant. (C) Expected body temperature for 30 year old men and women with weight 70 kg and height 170 cm in each time period/cohort.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Coefficients (and standard errors) are from multivariate linear regression models for each cohort including age, height, BMI adjusted for height and time of day (as available). NHANES I includes population weights. *, **, *** indicates significance at the 90%, 95%, and 99% level, respectively.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Coefficients (and standard errors) from multivariate linear regression models for each cohort including age, body weight, height and time of day. Separate regression models were fitted for men and women, in black and white ethnicity groups. NHANES I includes population weights. *, **, *** indicates significance at the 90%, 95%, and 99% level, respectively. (B) Expected body temperature (and associated 95% confidence interval) for 30 year old men and women with body weight 70 kg and height 170 cm in each time period/cohort. These values derive from the regression models presented in A.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Graph shows a decrease of predicted body temperature by birth year for both white men (blue line) and white women (red line) based on the linear regression coefficients displayed in B. No data for women were available for the period 1800\u20131890. For all measurements from UACWV, where time of the day was not available, the values of 12:00 PM (noon) were imputed. (B) Coefficients (and standard errors) from linear regression model including age, weight in kg, height in cm and birth year.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Mixed effect predictions and confidence intervals of the month during which the measurement was taken on the measured temperature. (A) White men in UACWV, (B) white men in NHANES I, (C) white men in STRIDE, (D) white women in NHANES I, and (E) white women in STRIDE.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Coefficients (and standard errors) are from a multivariate linear regression model for the UAVCW cohort including age, weight, height, month and state climate classification (cold, moderate-cold, moderate, warm or hot). While UAVCW provided state information, NHANES I provided general region only and STRIDE was in Northern California only. *, **, *** indicates significance at the 90%, 95%, and 99% level, respectively.\n\nIn both STRIDE and a one-third subsample of NHANES, we confirmed the known relationship between later hour of the day and higher temperature: temperature increased 0.02\u00b0C per hour of the day in STRIDE compared to 0.01\u00b0C in NHANES (Figure 1, Figure 1\u2014figure supplement 2, Figure 1\u2014figure supplement 4). The month of the year had a relatively small, though statistically significant, effect on temperature in all three cohorts, but no consistent pattern emerged (Figure 1\u2014figure supplement 5). Using approximated ambient temperature for the date and geographic location of the examination in UAVCW and STRIDE, a rise in ambient temperature of one degree Celsius correlated with 0.001 degree (p<0.001) and 0.0004 degree (p=0.013) increases in body temperature in UAVCW and STRIDE, respectively. Because the seasonal and climatic effects were small and the independent variables were unavailable for many measurements, we omitted month and estimated ambient temperature from further models.\n\nWe explored whether chronic infectious diseases\u2014even in the absence of a diagnosis of fever\u2014might raise temperature in the UAVCW cohort, by assessing the temperatures of men reporting a history of malaria (N\u00a0=\u00a02,203), syphilis (N\u00a0=\u00a0465), or hepatitis (N\u00a0=\u00a024), or with active tuberculosis (N\u00a0=\u00a0738), pneumonia (N\u00a0=\u00a0277) or cystitis (N\u00a0=\u00a01,301). Only those currently diagnosed with tuberculosis or pneumonia had elevated temperatures compared to the remainder of the UAVCW population [37.22\u00b0C (95% CI: 37.20\u201337.24\u00b0C) and 37.06\u00b0C (95% CI: 37.03\u201337.09\u00b0C), respectively compared to 37.02 (95% CI: 36.52\u201337.53)] (Supplementary file 1).\n\nOne\u00a0possible reason for the lower temperature estimates today than in the past is the difference in thermometers or methods of obtaining temperature. To minimize these biases, we examined changes in body temperature by birth decade within each cohort under the assumption that the method of thermometry would not be biased on birth year. Within the UAVCW, we observed a significant birth cohort effect, with temperatures in earlier birth decades consistently higher than those in later cohorts (Figure 2). With each birth decade, temperature decreased by\u00a0\u22120.02\u00b0C. We then assessed change in temperature over the 197 birth-year span covered by the three cohorts. We observed a steady decrease in body temperature by birth cohort for both men\u00a0(\u22120.59\u00b0C between birth decades from 1800 to 1997; \u22120.030\u00b0C per decade) and women (\u22120.32\u00b0C between 1890 and 1997; \u22120.029\u00b0C per decade). Black and white men and women demonstrated similar trends over time (Figure 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig2-v2.jpg)\n\n**Figure 2.:** (A) Smoothed unadjusted data (local regression) for temperature measurement trends within birth cohorts. The different colors represent different birth cohorts (green: 1820s, blue: 1830s, orange: 1840s).\u00a0(B) Coefficients (and standard errors) from multivariate linear regression including age, body weight, height and decade of birth (1820\u20131840) (these coefficients do not correspond to the graph as here the trajectories are approximated by linear functions). Only the three birth cohorts with more than 8000 members are included. * and ** indicate significance at the 90%, and 99% level, respectively. (C) Expected body temperature (and associated 95% confidence interval) for 30 year old men with body weight 70 kg and height 170 cm in each birth cohort. These values derive from the regression models presented in B.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig3-v2.jpg)\n\n**Figure 3.:** (A) Body temperature decreases by birth year in white and black men and women. No data for women were available for the birth years from 1800 to 1890. (B) Coefficients (and standard errors) used for the graph from multivariate linear regression including age, body weight, height and birth year. All cells are significant at greater than 99% significance level.\n\n## Discussion\n\nIn this study, we analyzed 677,423 human body temperature measurements from three different cohort populations spanning 157 years of measurement and 197 birth years. We found that men born in the early 19th century had temperatures 0.59\u00b0C higher than men today, with a monotonic decrease of \u22120.03\u00b0C per birth decade. Temperature has also decreased in women by \u22120.32\u00b0C since the 1890s with a similar rate of decline (\u22120.029\u00b0C per birth decade). Although one might posit that the differences among cohorts reflect systematic measurement bias due to the varied thermometers and methods used to obtain temperatures, we believe this explanation to be unlikely. We observed similar temporal change within the UAVCW cohort\u2014in which measurement were presumably obtained irrespective of the subject's birth decade\u2014as we did between cohorts. Additionally, we saw a comparable magnitude of difference in temperature between two modern cohorts using thermometers that would be expected to be similarly calibrated. Moreover, biases introduced by the method of thermometry (axillary presumed in a subset of UAVCW vs. oral for other cohorts) would tend to underestimate change over time since axillary values typically average one degree Celsius lower than oral temperatures (Sund-Levander et al., 2002; Niven et al., 2015). Thus, we believe the observed drop in temperature reflects physiologic differences rather than measurement bias. Other findings in our study\u2014for\u00a0example increased temperature at younger ages, in women, with increased body mass and with later time of day\u2014support a wealth of other studies dating back to the time of Wunderlich (Wunderlich and Sequin, 1871; Waalen and Buxbaum, 2011).\n\nResting metabolic rate is the largest component of a typical modern human\u2019s energy expenditure, comprising around 65% of daily energy expenditure for a sedentary individual (Heymsfield et al., 2006). Heat is a byproduct of metabolic processes, the reason nearly all warm-blooded animals have temperatures within a narrow range despite drastic differences in environmental conditions. Over several decades, studies examining whether metabolism is related to body surface area or body weight (Du Bois, 1936; Kleiber, 1972), ultimately, converged on weight-dependent models (Mifflin et al., 1990; Schofield, 1985; Nelson et al., 1992). Since US residents have increased in mass since the mid-19th century, we should have correspondingly expected increased body temperature. Thus, we interpret our finding of a decrease in body temperature as indicative of a decrease in metabolic rate independent of changes in anthropometrics. A decline in metabolic rate in recent years is supported in the literature when comparing modern experimental data to those from 1919 (Frankenfield et al., 2005).\n\nAlthough there are many factors that influence resting metabolic rate, change in the population-level of inflammation seems the most plausible explanation for the observed decrease in temperature over time. Economic development, improved standards of living and sanitation, decreased chronic infections from war injuries, improved dental hygiene, the waning of tuberculosis and malaria infections, and the dawn of the antibiotic age together are likely to have decreased chronic inflammation since the 19th century. For example, in the mid-19th century, 2\u20133% of the population would have been living with active tuberculosis (Tiemersma et al., 2011). This figure is consistent with the UAVCW Surgeons' Certificates that reported 737 cases of active tuberculosis among 23,757 subjects (3.1%). That UAVCW veterans who reported either current tuberculosis or pneumonia had a higher temperature (0.19\u00b0C and 0.03\u00b0C respectively) than those without infectious conditions supports this theory (Supplementary file 1). Although we would have liked to have compared our modern results to those from a location with a continued high risk of chronic infection, we could identify no such database that included temperature measurements. However, a small study of healthy volunteers from Pakistan\u2014a country with a continued high incidence of tuberculosis and other chronic infections\u2014confirms temperatures more closely approximating the values reported by Wunderlich (mean, median and mode, respectively, of 36.89\u00b0C, 36.94\u00b0C, and 37\u00b0C) (Adhi et al., 2008).\n\nReduction in inflammation may also explain the continued drop in temperature observed between the two more modern cohorts: NHANES and STRIDE. Although many chronic infections had been conquered before the NHANES study, some\u2014periodontitis as one example (Capilouto and Douglass, 1988)\u2014 continued to decrease over this short period. Moreover, the use of anti-inflammatory drugs including aspirin (Luepker et al., 2015), statins (Salami et al., 2017) and non-steroidal anti-inflammatory drugs (NSAIDs) (Lamont and Dias, 2008) increased over this interval, potentially reducing inflammation. NSAIDs have been specifically linked to blunting of body temperature, even in normal volunteers (Murphy et al., 1996). In support of declining inflammation in the modern era, a study of NHANES participants demonstrated a 5% decrease in abnormal C-reactive protein levels between 1999 and 2010 (Ong et al., 2013).\n\nChanges in ambient temperature may also explain some of the observed change in body temperature over time. Maintaining constant body temperature despite fluctuations in ambient temperature consumes up to 50\u201370% of daily energy intake (Levine, 2007). Resting metabolic rate (RMR), for which body temperature is a crude proxy, increases when the ambient temperature decreases below or rises above the thermoneutral zone, that\u00a0is the temperature of the environment at which humans can maintain normal temperature with minimum energy expenditure (Erikson et al., 1956). In the 19th century, homes in the US were irregularly and inconsistently heated and never cooled. By the 1920s, however, heating systems reached a broad segment of the population with mean night-time temperature continuing to increase even in the modern era (Mavrogianni et al., 2013). Air conditioning is now found in more than 85% of US homes (US Energy Information Administration, 2011). Thus, the amount of time the population has spent at thermoneutral zones has markedly increased, potentially causing a decrease in RMR, and, by analogy, body temperature.\n\nSome factors known to influence body temperature were not included in our final model due to missing data (ambient temperature and time of day) or complete lack of information (dew point)(Obermeyer et al., 2017). Adjusting for ambient temperature, however, would likely have amplified the changes over time due to lack of heating and cooling in the earlier cohorts. Time of day at which measurement was conducted had a more significant effect on temperature (Figure 1\u2014figure supplement 4). Based on the distribution of times of day for temperature measurement available to us in STRIDE and NHANES, we estimate that even in the worst case scenario, that\u00a0is the UAVCW measurements were all were obtained late in the afternoon, adjustment for time of day would have only a small influence (<0.05\u00b0C) on the \u22120.59\u00b0C change over time.\n\nIn summary, normal body temperature is assumed by many, including a great preponderance of physicians, to be 37\u00b0C. Those who have shown this value to be too high have concluded that Wunderlich\u2019s 19th century measurements were simply flawed (Mackowiak, 1997; Sund-Levander et al., 2002). Our investigation indicates that humans in high-income countries have changed physiologically over the last 200 birth years with a mean body temperature 1.6% lower than in the pre-industrial era. The role that this physiologic \u2018evolution\u2019 plays in human anthropometrics and longevity is unknown.\n\n## Materials and methods\n\n### Cohorts\n\nWe compared body temperature measurements from three cohorts. Cohort 1: The Union Army Veterans of the Civil War, 1860\u20131940 (UAVCW) is a database from the \u2018Early Indictors of Later Work Levels, Disease and Death Study\u2019, initiated by the late Nobel Laureate, Robert Fogel in 1978 (Fogel and Wimmer, 1992) and continuing today. The study abstracted the Compiled Military Service Records, the Pension Records, Carded Medical Records, the Surgeons' Certificates (detailed medical records) and information from the US Federal Census for a cluster sample of Union Army companies in the US Civil War. In total, 331 companies of white and 52 companies of black Union Army veterans were included in the dataset. The Surgeons\u2019 Certificates were obtained at locations throughout the US for veterans seeking pension benefits. These certificates include comprehensive medical histories and physical examinations. Body temperatures in Fahrenheit were hand-written on 83,900 Surgeons' Certificates from 23,710 individuals (mean: 3.53 examinations per individual; Table 1). Whether the temperatures were taken orally or in the axilla is unknown; both methods were employed in the 19th century although oral temperature was more common (Salinger and Kalteyer, 1900). Precision of the instruments is also unknown. Inspection of the distribution of reads, however, suggest that it is no better than 0.2 degrees Fahrenheit, consistent with the hashmarks on mercury thermometers (Figure 1\u2014figure supplement 1). The UAVCW data\u2014including birth date, temperature, height, weight, location and date of the medical visit, medical history, ongoing medical complaints and findings of physical examinations \u2014are freely available on-line in digital format (The Colored Troops (USCT) original and expanded datasets;\u00a0Fogel et al., 2000; Costa, 2019). Cohort 2: The National Health and Nutrition Examination Survey (NHANES I) is a multistage, national probability survey conducted between 1971 and 1975 in the US civilian population. A subset of subjects, aged 1 to 74 years (N\u00a0=\u00a023,710) underwent a medical examination (ICPSR study No. 8055), including 15,301 adults. The major focus of NHANES I was nutrition, and persons with low income, pregnant women and the elderly were consequently oversampled (Centers for Disease Control, National Center for Health Statistics, 1975). Data abstracted included weight, height, sex, ethnicity, and month and geographic region of examination and, as available, time of day the temperature was obtained. In NHANES, mercury thermometers were used and temperatures were taken orally. Precision, as with the UAVCW cohort, is assumed to be 0.2 \u00b0F. The medical examination was performed by a physician with the help of a nurse. Cohort 3: The Stanford Translational Research Integrated Database Environment (STRIDE) extracts electronic medical record information from patient encounters at Stanford Health Care\u00a0(Stanford, CA). All adult outpatient encounters at Stanford Health Care from 2007 to 2017 with recorded temperature measurements in the electronic medical record are included in this study (N\u00a0=\u00a0578,522 adult outpatient encounters). Temperature measurements were obtained orally with annually-calibrated, digital thermometers with precision of 0.1 \u00b0F and extracted from the dataset along with age, sex, weight, height, primary concern at the visit, prescribed medications, other conditions in the health record with ICD10 codes, and year and time of day the temperature was obtained (mean: 3.85 examinations per individual; Table 1).\n\nFor the UAVCW and STRIDE datasets, any observations having a diagnosis of fever at the time of the medical examination were excluded. From all three datasets, any extreme values of temperature (<35\u00b0C and\u00a0>39\u00b0C) were also excluded from the analysis either because they were implausible or because they indicated a diagnosis of fever and would otherwise have been excluded. Improbable values of both body weight (<30 kg and\u00a0>200 kg) and height (<120 cm and\u00a0>220 cm) were also removed. In the UAVCW, we also excluded veterans born after 1850, because they were unlikely to have served in the Union Army.\n\nThe use of the STRIDE data was approved as an expedited protocol by the Stanford Institutional Review Board (protocol 40539) and informed consent was waived since the only personal health information abstracted was month of clinic visit. Anonymized data from NHANES and the data from UAVCW are freely available on-line for research use.\n\n### Data analysis\n\nEthnicity categories were defined differently across cohorts. UAVCW included only white and black men. For comparability, we restricted analyses between the UAVCW and other cohorts to men in these two ethnicity groups. Asians were categorized as \u2018Other\u2019 in NHANES and as \u2018Asian\u2019 in STRIDE, so were considered as \u2018Other ethnicity\u2019 in combined analyses. We performed analyses stratified by sex to account for known temperature differences between men and women. The NHANES study uses sample weights to account for its design; these were incorporated into models including NHANES data (Centers for Disease Control, National Center for Health Statistics, 1975).\n\nTo estimate the average body temperature during each of the three time periods, we modeled temperature within each cohort using multivariate linear regression, simultaneously assessing the effects of age, body weight, and height. Measurements in men and women were analyzed separately, by white and black ethnicity groups. We also conducted mixed effects modeling to account for the repeated temperature measurements from some individuals. Because the coefficients were almost identical to those of the linear regression models, we chose to present this more simple statistical method. We also assessed the effects of geography, that\u00a0is location at which temperature was obtained, on temperature (Figure 1\u2014figure supplement 6).\n\nTo evaluate temperature changes over time, we predicted body temperature using multivariate linear regression including age, body weight, height and birth decade in the UAVCW cohort (the timeframe of NHANES and STRIDE spanned relatively few years, with insufficient variability to evaluate birth cohort effects within these datasets). To assess change in temperature over the 197 birth-year span covered by the three cohorts (between years 1800 and 1997 for men, and between 1890 and 1997 for women), we used linear regression with temperature as the outcome and age, weight, height, and birth decade as independent variables, stratifying by ethnicity and sex. The UAVCW cohort was further investigated for reported infectious conditions that might affect temperature. Diagnoses of infectious conditions, either in the medical history (malaria, syphilis, hepatitis) or active at the time of examination (tuberculosis, pneumonia or cystitis), were included in regression models if fever was not listed as part of that record.\n\nSome models included time of day, ambient temperature and month of year. Time of day at which temperature was taken was available for STRIDE and a subset of NHANES. For individuals without time of day, we imputed the time to be 12:00 PM (noon). We accounted for ambient temperature using the date and geographic location of examination (available in UAVCW and STRIDE) based on data from the National Centers for Environmental Information (NOAA National Centers for Environmental Information, 2018). We used the month of year when each measurement was taken as a random effect. To assess the robustness of our result to the chosen methodology, we repeated the analyses using linear mixed effect modeling, adjusting for multiple measurements.\n\nWithin the UAVCW, minimum ages varied across birth cohorts due to the bias inherent in the cohort structure (for example, it is impossible to be younger than 30 years of age at the time of the pension visit, be born in 1820s, and be a veteran of the Civil War). To avoid instability in the analysis due to having too few people within specific age groups per birth decade, we excluded the lowest 1% of observations in each birth cohort according to age.\n\nAll analyses were performed using R statistical software version 3.3.0. and packages easyGgplot2, lme4, merTools, and ggplot2 for statistical analysis and graphs (www.r-project.org).\n",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "aa39a367-a315-48c3-8d3d-fdfdfb25eec3",
+      "submission_id": "9bed6dff-aee2-4005-978d-09dce03d8389",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark Jit, London School of Hygiene & Tropical Medicine, and Public Health England United Kingdom\n\nReviewers:\n- Jill Waalen, The Scripps Research Institute United States\n- Frank R\u00fchli\n\n## Review text\n\nDOI: [10.7554/eLife.49555.sa1](https://doi.org/10.7554/eLife.49555.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Decreasing human body temperature in the United States since the Industrial Revolution\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Mark Jit as the Reviewing Editor and Eduardo Franco as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jill Waalen (Reviewer #1); Frank R\u00fchli (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. We believe that the manuscript is basically acceptable for publication, but would like you to address some minor textual comments raised by the reviewers.\n\nWe find that this is an interesting and well-written manuscript using measurements of mean body temperature among 3 US cohorts with data collected in 3 distinct time periods to support the hypothesis that mean population body temperature has decreased over the time from 1860 to 2017. We highly appreciate this work due to its relevant yet unique research topic, solid data sets and straight-forward analysis.\n\nGiven the differences in measurement practices, data collection, and environmental conditions over that time period, the paper has tackled a question that is inherently unprovable in regard to cause-effect. However, the arguments are cogent enough (e.g., same known temperature trends corresponding to age seen in all cohorts) and the data supportive enough (e.g., same known temperature trends corresponding to age seen in all cohorts), that it is worth its thought-provocation.\n\nWe would like the following textual changes to be made to the manuscript:\n\n1) The last sentence of the Abstract states that understanding the trend of decreasing mean population body temperature \"provides a framework for understanding changes in body habitus and human longevity over the last 200 years.\" There are two problems with this:\n\na) The study spans 1860-2017, which is 157 years.\n\nb) Given that body temperature is defined as a biomarker for metabolic rate, discussion regarding body habitus in different parts of the manuscript are a bit difficult to reconcile: 1) lower metabolism is associated with greater body mass (Introduction, last paragraph); 2) increased body mass is associated with increased body temperature (Discussion, second paragraph).\n\nGiven the above, please change the line in the Abstract to: \"provides a framework for understanding changes in human health and longevity over the last 150 years\" (or\u2026 since the Civil War\u2026.)\n\n2) Given the relative paucity of published medical research on the UAVCW cohort (there appears to be only a few PubMed listings), it would be helpful to give more detail about the medical data included for this cohort and how it was obtained:\n\na) From the brief description in the Materials and methods section, it is not clear how many times an individual may have been examined, for example. Were they tested on a regular basis for pension benefits and disqualified based on some findings? It is stated in the first paragraph of the subsection \u201cCohorts\u201d, that measures could have been obtained on multiple occasions from individual veterans, which, of course, introduces that problem of lack of independence of measures, but need to have some idea of how big a problem this would be (not likely to be big, but would be good to have numbers).\n\nb) Also, were the examinations done at one location for all veterans (relevant to correlating body temperature with ambient temperature)? This is implied in the third paragraph of the Results, but would be helpful to state explicitly in the Materials and methods.\n\nc) A \"Table 1\" with basic characteristics of the three cohorts would also be helpful in this regard, given the likely differences, for example, in ranges of height, weight, age, and other covariates. This would be helpful, for example, in understanding why height and weight were not statistically significantly associated in the UAVCW (Results, second paragraph) \u2013 perhaps a narrower range in the other cohorts?\n\n3) It is implied in the third paragraph of the subsection \u201cData Analysis\u201d, that fever was recorded and that these records were excluded in at least some of the models. This raises the question of whether \"febrile\" subjects were excluded in all cohorts and, if so, what cut-offs were used to define fever in the different cohorts?\n\n4) Given that the changes in mean temperature of interest are relatively small (less than 1 degree), more information regarding the measurement is of interest:\n\na) In what scale were the measurements in each cohort originally made (Celsius or Fahrenheit)? To what precision level were they recorded?\n\nb) Is it known how thermometers were calibrated for the measures in the respective cohorts (particularly UAVCW)?\n\n5) Please use the term \"ethnicity\" rather than \"race\" since we assume this is what is actually being recorded from the cohorts.\n\n6) Discussion, first paragraph: \"that\" should be \"than\"\n",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8adfc9f1-9e8f-4882-a02a-05e393be9ded",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C1",
+      "claim": "In 1851, Carl Reinhold August Wunderlich obtained millions of axillary temperatures from 25,000 patients in Leipzig.",
+      "claim_type": "EXPLICIT",
+      "source": "In 1851, the German physician Carl Reinhold August Wunderlich obtained millions of axillary temperatures from 25,000 patients in Leipzig, thereby establishing the standard for normal human body temperature of 37\u00b0C or 98.6 \u00b0F (range: 36.2\u201337.5\u00b0C [97.2- 99.5 \u00b0F]) (Mackowiak, 1997; Wunderlich and Sequin, 1871).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Mackowiak (1997) and Wunderlich and Sequin (1871), which are historical references to Wunderlich's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "dc8186c4-9908-4e8a-8ae4-92888a53e792",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C2",
+      "claim": "Wunderlich established the standard for normal human body temperature of 37\u00b0C or 98.6\u00b0F with a range of 36.2\u201337.5\u00b0C (97.2-99.5\u00b0F).",
+      "claim_type": "EXPLICIT",
+      "source": "In 1851, the German physician Carl Reinhold August Wunderlich obtained millions of axillary temperatures from 25,000 patients in Leipzig, thereby establishing the standard for normal human body temperature of 37\u00b0C or 98.6 \u00b0F (range: 36.2\u201337.5\u00b0C [97.2- 99.5 \u00b0F]) (Mackowiak, 1997; Wunderlich and Sequin, 1871).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to historical work by Mackowiak (1997) and Wunderlich and Sequin (1871).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "12d25170-184b-4237-a4bb-05aa0b687748",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C3",
+      "claim": "A compilation of 27 modern studies reported mean temperature to be uniformly lower than Wunderlich's estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "A compilation of 27 modern studies, however (Sund-Levander et al., 2002), reported mean temperature to be uniformly lower than Wunderlich's estimate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sund-Levander et al. (2002), which compiled modern temperature studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "b7617b02-e374-40a8-836b-9518b5a8c7ee",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C4",
+      "claim": "An analysis of more than 35,000 British patients with almost 250,000 temperature measurements found mean oral temperature to be 36.6\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, an analysis of more than 35,000 British patients with almost 250,000 temperature measurements, found mean oral temperature to be 36.6\u00b0C, confirming this lower value (Obermeyer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Obermeyer et al. (2017), which analyzed a large dataset of British patients.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "899b6605-9442-4131-9a4b-548c22b46622",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C5",
+      "claim": "In Wunderlich's era, life expectancy was 38 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Wunderlich obtained his measurements in an era when life expectancy was 38 years and untreated chronic infections such as tuberculosis, syphilis, and periodontitis afflicted large proportions of the population (Murray et al., 2015; Tampa et al., 2014; Richmond, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Murray et al. (2015), Tampa et al. (2014), and Richmond (2014), which provide historical context about life expectancy and disease prevalence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "075464ad-1c10-4969-b073-52fbddca55ad",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C6",
+      "claim": "Untreated chronic infections such as tuberculosis, syphilis, and periodontitis afflicted large proportions of the population in Wunderlich's era.",
+      "claim_type": "EXPLICIT",
+      "source": "Wunderlich obtained his measurements in an era when life expectancy was 38 years and untreated chronic infections such as tuberculosis, syphilis, and periodontitis afflicted large proportions of the population (Murray et al., 2015; Tampa et al., 2014; Richmond, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Murray et al. (2015), Tampa et al. (2014), and Richmond (2014), which document historical disease prevalence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "608265af-d99b-4662-a0fe-47041bcf1958",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C7",
+      "claim": "Human body temperature is a crude surrogate for basal metabolic rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Human body temperature is a crude surrogate for basal metabolic rate which, in turn, has been linked to both longevity (higher metabolic rate, shorter life span) and body size (lower metabolism, greater body mass).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about the relationship between body temperature and metabolic rate.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "008c3654-4c47-47dc-aa98-2e6260fc3cc3",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C8",
+      "claim": "Basal metabolic rate has been linked to longevity, with higher metabolic rate associated with shorter life span.",
+      "claim_type": "EXPLICIT",
+      "source": "Human body temperature is a crude surrogate for basal metabolic rate which, in turn, has been linked to both longevity (higher metabolic rate, shorter life span) and body size (lower metabolism, greater body mass).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about the relationship between metabolic rate and longevity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "6da131bc-5629-4f24-a2ff-8fcf7b02dbba",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C9",
+      "claim": "Basal metabolic rate has been linked to body size, with lower metabolism associated with greater body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Human body temperature is a crude surrogate for basal metabolic rate which, in turn, has been linked to both longevity (higher metabolic rate, shorter life span) and body size (lower metabolism, greater body mass).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about the relationship between metabolic rate and body size.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "d361eadf-2e2d-4978-9379-b57f9c7fc0db",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C10",
+      "claim": "The study analyzed 83,900 measurements from the Union Army Veterans of the Civil War cohort (UAVCW) obtained between 1862 and 1930 in men.",
+      "claim_type": "EXPLICIT",
+      "source": "In men, we analyzed: a) 83,900 measurements from the Union Army Veterans of the Civil War cohort (UAVCW) obtained between 1862 and 1930, b) 5998 measurements from the National Health and Nutrition Examination Survey I cohort (NHANES) obtained between 1971 and 1975, and c) 230,261 measurements from the Stanford Translational Research Integrated Database Environment cohort (STRIDE) obtained between 2007 and 2017 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript, specifically the number of measurements from the UAVCW cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "9d68d4d3-01ad-4c91-aeb7-6ed3e0851398",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C11",
+      "claim": "The study analyzed 5,998 measurements from the National Health and Nutrition Examination Survey I cohort (NHANES) obtained between 1971 and 1975 in men.",
+      "claim_type": "EXPLICIT",
+      "source": "In men, we analyzed: a) 83,900 measurements from the Union Army Veterans of the Civil War cohort (UAVCW) obtained between 1862 and 1930, b) 5998 measurements from the National Health and Nutrition Examination Survey I cohort (NHANES) obtained between 1971 and 1975, and c) 230,261 measurements from the Stanford Translational Research Integrated Database Environment cohort (STRIDE) obtained between 2007 and 2017 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript, specifically the number of measurements from the NHANES cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "90566ca6-ebd3-4b5c-af96-3339a55173f5",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C12",
+      "claim": "The study analyzed 230,261 measurements from the Stanford Translational Research Integrated Database Environment cohort (STRIDE) obtained between 2007 and 2017 in men.",
+      "claim_type": "EXPLICIT",
+      "source": "In men, we analyzed: a) 83,900 measurements from the Union Army Veterans of the Civil War cohort (UAVCW) obtained between 1862 and 1930, b) 5998 measurements from the National Health and Nutrition Examination Survey I cohort (NHANES) obtained between 1971 and 1975, and c) 230,261 measurements from the Stanford Translational Research Integrated Database Environment cohort (STRIDE) obtained between 2007 and 2017 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript, specifically the number of measurements from the STRIDE cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "9ecfdabb-7365-4154-960b-ff0f257556b7",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C13",
+      "claim": "The study compared temperature measurements in women within NHANES (9,303 measurements) and STRIDE (348,006 measurements).",
+      "claim_type": "EXPLICIT",
+      "source": "We also compared temperature measurements in women within the two later time periods (NHANES, 9303 measurements; and STRIDE, 348,006 measurements).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript, specifically the number of measurements from women in NHANES and STRIDE cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "e6e63085-7fa5-4bc4-8750-2372ee294962",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C14",
+      "claim": "Temperature measurements were significantly higher in the UAVCW cohort than in NHANES.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, temperature measurements were significantly higher in the UAVCW cohort than in NHANES, and higher in NHANES than in STRIDE (Figure 1; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1 and Figure 1\u2014figure supplement 1, showing temperature differences across cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "85983ec1-c892-4f1f-b869-3567f77d86b2",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C15",
+      "claim": "Temperature measurements were higher in NHANES than in STRIDE.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, temperature measurements were significantly higher in the UAVCW cohort than in NHANES, and higher in NHANES than in STRIDE (Figure 1; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1 and Figure 1\u2014figure supplement 1, showing temperature differences across cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "8ede6c2d-8042-4bcf-8601-2d0474bca640",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C16",
+      "claim": "In each of the three cohorts, and for both men and women, temperature decreased with age with a similar magnitude of effect (between \u22120.003\u00b0C and \u22120.0043\u00b0C per year of age).",
+      "claim_type": "EXPLICIT",
+      "source": "In each of the three cohorts, and for both men and women, we observed that temperature decreased with age with a similar magnitude of effect (between \u22120.003\u00b0C and \u22120.0043\u00b0C per year of age, Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1, showing the relationship between age and temperature across cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "0e9db52f-f6e4-4dd3-b212-bb0f36e3cc7f",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C17",
+      "claim": "Temperature was directly related to weight.",
+      "claim_type": "EXPLICIT",
+      "source": "As has been previously reported (Eriksson et al., 1985), temperature was directly related to weight and inversely related to height, although these associations were not statistically significant in the UAVCW cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data in the manuscript and a citation to Eriksson et al. (1985), which previously reported this relationship.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "1460bdd4-9575-49d8-9603-2de999475729",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C18",
+      "claim": "Temperature was inversely related to height.",
+      "claim_type": "EXPLICIT",
+      "source": "As has been previously reported (Eriksson et al., 1985), temperature was directly related to weight and inversely related to height, although these associations were not statistically significant in the UAVCW cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data in the manuscript and a citation to Eriksson et al. (1985), which previously reported this relationship.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "134bb2fe-c3c5-4c20-b093-887295f165bf",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C19",
+      "claim": "The associations between temperature and weight/height were not statistically significant in the UAVCW cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "As has been previously reported (Eriksson et al., 1985), temperature was directly related to weight and inversely related to height, although these associations were not statistically significant in the UAVCW cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the UAVCW cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "0e298e3a-df46-4d36-b264-408fe9cf9e03",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C20",
+      "claim": "In STRIDE, temperature increased 0.02\u00b0C per hour of the day.",
+      "claim_type": "EXPLICIT",
+      "source": "In both STRIDE and a one-third subsample of NHANES, we confirmed the known relationship between later hour of the day and higher temperature: temperature increased 0.02\u00b0C per hour of the day in STRIDE compared to 0.01\u00b0C in NHANES (Figure 1, Figure 1\u2014figure supplement 2, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1, Figure 1\u2014figure supplement 2, and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "76282d88-c424-4018-9ffb-57af6cf77d1b",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C21",
+      "claim": "In NHANES, temperature increased 0.01\u00b0C per hour of the day.",
+      "claim_type": "EXPLICIT",
+      "source": "In both STRIDE and a one-third subsample of NHANES, we confirmed the known relationship between later hour of the day and higher temperature: temperature increased 0.02\u00b0C per hour of the day in STRIDE compared to 0.01\u00b0C in NHANES (Figure 1, Figure 1\u2014figure supplement 2, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1, Figure 1\u2014figure supplement 2, and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "bcbf5ba8-32d4-48be-b9ca-e5552a5f58fb",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C22",
+      "claim": "The month of the year had a relatively small, though statistically significant, effect on temperature in all three cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "The month of the year had a relatively small, though statistically significant, effect on temperature in all three cohorts, but no consistent pattern emerged (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1\u2014figure supplement 5, showing the effect of month on temperature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "890c9491-3257-4ba1-906d-ae1a499ae032",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C23",
+      "claim": "No consistent pattern emerged for the effect of month on temperature across the three cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "The month of the year had a relatively small, though statistically significant, effect on temperature in all three cohorts, but no consistent pattern emerged (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1\u2014figure supplement 5, showing the lack of consistent pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "bcecd7ea-18e8-4159-9251-d99cd0554e65",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C24",
+      "claim": "In UAVCW, a rise in ambient temperature of one degree Celsius correlated with 0.001 degree (p<0.001) increase in body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Using approximated ambient temperature for the date and geographic location of the examination in UAVCW and STRIDE, a rise in ambient temperature of one degree Celsius correlated with 0.001 degree (p<0.001) and 0.0004 degree (p=0.013) increases in body temperature in UAVCW and STRIDE, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the UAVCW cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "ff4cbafb-c8e0-4b57-ac78-3958002e4405",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C25",
+      "claim": "In STRIDE, a rise in ambient temperature of one degree Celsius correlated with 0.0004 degree (p=0.013) increase in body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Using approximated ambient temperature for the date and geographic location of the examination in UAVCW and STRIDE, a rise in ambient temperature of one degree Celsius correlated with 0.001 degree (p<0.001) and 0.0004 degree (p=0.013) increases in body temperature in UAVCW and STRIDE, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the STRIDE cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "31c11944-07f8-4c57-bb01-553e83bc502c",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C26",
+      "claim": "In the UAVCW cohort, 2,203 men reported a history of malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored whether chronic infectious diseases\u2014even in the absence of a diagnosis of fever\u2014might raise temperature in the UAVCW cohort, by assessing the temperatures of men reporting a history of malaria (N = 2,203), syphilis (N = 465), or hepatitis (N = 24), or with active tuberculosis (N = 738), pneumonia (N = 277) or cystitis (N = 1,301).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the UAVCW cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "84568ae4-97cb-4005-b40a-15d36b050f8a",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C27",
+      "claim": "In the UAVCW cohort, 465 men reported a history of syphilis.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored whether chronic infectious diseases\u2014even in the absence of a diagnosis of fever\u2014might raise temperature in the UAVCW cohort, by assessing the temperatures of men reporting a history of malaria (N = 2,203), syphilis (N = 465), or hepatitis (N = 24), or with active tuberculosis (N = 738), pneumonia (N = 277) or cystitis (N = 1,301).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the UAVCW cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "ef36c714-b61f-481c-9362-f422f3f52593",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C28",
+      "claim": "In the UAVCW cohort, 24 men reported a history of hepatitis.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored whether chronic infectious diseases\u2014even in the absence of a diagnosis of fever\u2014might raise temperature in the UAVCW cohort, by assessing the temperatures of men reporting a history of malaria (N = 2,203), syphilis (N = 465), or hepatitis (N = 24), or with active tuberculosis (N = 738), pneumonia (N = 277) or cystitis (N = 1,301).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the UAVCW cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "7d462b0d-c8c9-4b27-a32d-a444cb100eb6",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C29",
+      "claim": "In the UAVCW cohort, 738 men had active tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored whether chronic infectious diseases\u2014even in the absence of a diagnosis of fever\u2014might raise temperature in the UAVCW cohort, by assessing the temperatures of men reporting a history of malaria (N = 2,203), syphilis (N = 465), or hepatitis (N = 24), or with active tuberculosis (N = 738), pneumonia (N = 277) or cystitis (N = 1,301).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the UAVCW cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "02f37386-6211-4ac6-84f4-0164ed3c19df",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C30",
+      "claim": "In the UAVCW cohort, 277 men had active pneumonia.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored whether chronic infectious diseases\u2014even in the absence of a diagnosis of fever\u2014might raise temperature in the UAVCW cohort, by assessing the temperatures of men reporting a history of malaria (N = 2,203), syphilis (N = 465), or hepatitis (N = 24), or with active tuberculosis (N = 738), pneumonia (N = 277) or cystitis (N = 1,301).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the UAVCW cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "70ab0f06-a44e-4035-b054-006ae7eafa29",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C31",
+      "claim": "In the UAVCW cohort, 1,301 men had active cystitis.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored whether chronic infectious diseases\u2014even in the absence of a diagnosis of fever\u2014might raise temperature in the UAVCW cohort, by assessing the temperatures of men reporting a history of malaria (N = 2,203), syphilis (N = 465), or hepatitis (N = 24), or with active tuberculosis (N = 738), pneumonia (N = 277) or cystitis (N = 1,301).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the UAVCW cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "18f2ead7-42f0-4419-bbc5-03e37522774e",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C32",
+      "claim": "Only those currently diagnosed with tuberculosis or pneumonia had elevated temperatures compared to the remainder of the UAVCW population.",
+      "claim_type": "EXPLICIT",
+      "source": "Only those currently diagnosed with tuberculosis or pneumonia had elevated temperatures compared to the remainder of the UAVCW population [37.22\u00b0C (95% CI: 37.20\u201337.24\u00b0C) and 37.06\u00b0C (95% CI: 37.03\u201337.09\u00b0C), respectively compared to 37.02 (95% CI: 36.52\u201337.53)] (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the UAVCW cohort presented in the manuscript and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "b47eedd0-86a3-45f0-b10e-6c6811861fd4",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C33",
+      "claim": "UAVCW veterans with active tuberculosis had a mean temperature of 37.22\u00b0C (95% CI: 37.20\u201337.24\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Only those currently diagnosed with tuberculosis or pneumonia had elevated temperatures compared to the remainder of the UAVCW population [37.22\u00b0C (95% CI: 37.20\u201337.24\u00b0C) and 37.06\u00b0C (95% CI: 37.03\u201337.09\u00b0C), respectively compared to 37.02 (95% CI: 36.52\u201337.53)] (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the UAVCW cohort presented in the manuscript and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "dd2e8d27-f099-474a-b4cb-30e32a4d0ea9",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C34",
+      "claim": "UAVCW veterans with active pneumonia had a mean temperature of 37.06\u00b0C (95% CI: 37.03\u201337.09\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Only those currently diagnosed with tuberculosis or pneumonia had elevated temperatures compared to the remainder of the UAVCW population [37.22\u00b0C (95% CI: 37.20\u201337.24\u00b0C) and 37.06\u00b0C (95% CI: 37.03\u201337.09\u00b0C), respectively compared to 37.02 (95% CI: 36.52\u201337.53)] (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the UAVCW cohort presented in the manuscript and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "99d1181e-3f55-4ad4-ae15-a089c1005265",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C35",
+      "claim": "The remainder of the UAVCW population had a mean temperature of 37.02\u00b0C (95% CI: 36.52\u201337.53).",
+      "claim_type": "EXPLICIT",
+      "source": "Only those currently diagnosed with tuberculosis or pneumonia had elevated temperatures compared to the remainder of the UAVCW population [37.22\u00b0C (95% CI: 37.20\u201337.24\u00b0C) and 37.06\u00b0C (95% CI: 37.03\u201337.09\u00b0C), respectively compared to 37.02 (95% CI: 36.52\u201337.53)] (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the UAVCW cohort presented in the manuscript and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "939e31f8-3006-410c-846b-da658aa11443",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C36",
+      "claim": "Within the UAVCW, a significant birth cohort effect was observed, with temperatures in earlier birth decades consistently higher than those in later cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the UAVCW, we observed a significant birth cohort effect, with temperatures in earlier birth decades consistently higher than those in later cohorts (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 2, showing temperature differences across birth cohorts within UAVCW.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "29b8da7a-5f34-432a-942d-615f3a669955",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C37",
+      "claim": "With each birth decade in the UAVCW, temperature decreased by \u22120.02\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "With each birth decade, temperature decreased by \u22120.02\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the UAVCW cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "4712906e-3c9f-412d-82b7-16d01b440a0b",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C38",
+      "claim": "A steady decrease in body temperature by birth cohort was observed for men (\u22120.59\u00b0C between birth decades from 1800 to 1997; \u22120.030\u00b0C per decade).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a steady decrease in body temperature by birth cohort for both men (\u22120.59\u00b0C between birth decades from 1800 to 1997; \u22120.030\u00b0C per decade) and women (\u22120.32\u00b0C between 1890 and 1997; \u22120.029\u00b0C per decade).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results across all three cohorts presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "912cf25a-7924-46d7-9c09-6983a5c250a5",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C39",
+      "claim": "A steady decrease in body temperature by birth cohort was observed for women (\u22120.32\u00b0C between 1890 and 1997; \u22120.029\u00b0C per decade).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a steady decrease in body temperature by birth cohort for both men (\u22120.59\u00b0C between birth decades from 1800 to 1997; \u22120.030\u00b0C per decade) and women (\u22120.32\u00b0C between 1890 and 1997; \u22120.029\u00b0C per decade).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results across all three cohorts presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "37c0fba5-de00-4bd6-b2e5-b991fe0fac3e",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C40",
+      "claim": "Black and white men and women demonstrated similar trends in temperature decrease over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Black and white men and women demonstrated similar trends over time (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 3, showing temperature trends across ethnicities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "7b54e9a3-ab05-456e-a10f-3cde620fefa1",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C41",
+      "claim": "The study analyzed 677,423 human body temperature measurements from three different cohort populations spanning 157 years of measurement and 197 birth years.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we analyzed 677,423 human body temperature measurements from three different cohort populations spanning 157 years of measurement and 197 birth years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript, specifically the total number of measurements analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "f89e6e66-274a-4740-a0a6-8664631278b7",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C42",
+      "claim": "Men born in the early 19th century had temperatures 0.59\u00b0C higher than men today.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that men born in the early 19th century had temperatures 0.59\u00b0C higher than men today, with a monotonic decrease of \u22120.03\u00b0C per birth decade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results across all three cohorts presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "f8b6126d-ff1a-41c4-b9e2-68101587c80d",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C43",
+      "claim": "Men's body temperature showed a monotonic decrease of \u22120.03\u00b0C per birth decade.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that men born in the early 19th century had temperatures 0.59\u00b0C higher than men today, with a monotonic decrease of \u22120.03\u00b0C per birth decade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results across all three cohorts presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "743021d0-8a14-43d4-9f84-f05463c2d05c",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C44",
+      "claim": "Temperature has decreased in women by \u22120.32\u00b0C since the 1890s with a similar rate of decline (\u22120.029\u00b0C per birth decade).",
+      "claim_type": "EXPLICIT",
+      "source": "Temperature has also decreased in women by \u22120.32\u00b0C since the 1890s with a similar rate of decline (\u22120.029\u00b0C per birth decade).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results across all three cohorts presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "bdeb7c27-0e79-4c36-81af-f8702f018377",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C45",
+      "claim": "Similar temporal change was observed within the UAVCW cohort as between cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed similar temporal change within the UAVCW cohort\u2014in which measurement were presumably obtained irrespective of the subject's birth decade\u2014as we did between cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the UAVCW cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "fa5248ed-f54d-45fa-8dcc-8e7e06394c10",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C46",
+      "claim": "A comparable magnitude of difference in temperature was seen between two modern cohorts (NHANES and STRIDE) using thermometers that would be expected to be similarly calibrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we saw a comparable magnitude of difference in temperature between two modern cohorts using thermometers that would be expected to be similarly calibrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results comparing NHANES and STRIDE cohorts presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "3084ec4a-a028-4304-a47c-7ffa34fde32f",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C47",
+      "claim": "Axillary values typically average one degree Celsius lower than oral temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, biases introduced by the method of thermometry (axillary presumed in a subset of UAVCW vs. oral for other cohorts) would tend to underestimate change over time since axillary values typically average one degree Celsius lower than oral temperatures (Sund-Levander et al., 2002; Niven et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Sund-Levander et al. (2002) and Niven et al. (2015), which document the difference between axillary and oral temperature measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "201d1673-dc26-4b47-9193-b70ec8b6ee45",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C48",
+      "claim": "Resting metabolic rate is the largest component of a typical modern human's energy expenditure, comprising around 65% of daily energy expenditure for a sedentary individual.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting metabolic rate is the largest component of a typical modern human's energy expenditure, comprising around 65% of daily energy expenditure for a sedentary individual (Heymsfield et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Heymsfield et al. (2006), which documents the contribution of resting metabolic rate to energy expenditure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "e44db562-3ede-4a80-894b-57c2921cd134",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C49",
+      "claim": "Heat is a byproduct of metabolic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Heat is a byproduct of metabolic processes, the reason nearly all warm-blooded animals have temperatures within a narrow range despite drastic differences in environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about metabolism and heat production.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "90a27144-8d35-4192-8ff1-f81c1af867d9",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C50",
+      "claim": "Nearly all warm-blooded animals have temperatures within a narrow range despite drastic differences in environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Heat is a byproduct of metabolic processes, the reason nearly all warm-blooded animals have temperatures within a narrow range despite drastic differences in environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about thermoregulation in warm-blooded animals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "aca48634-28c9-48ad-a602-ba286fffe7ec",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C51",
+      "claim": "US residents have increased in mass since the mid-19th century.",
+      "claim_type": "EXPLICIT",
+      "source": "Since US residents have increased in mass since the mid-19th century, we should have correspondingly expected increased body temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about historical trends in body mass in the US population.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "ab04df10-84ec-445b-804c-ca21f7000e35",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C52",
+      "claim": "A decline in metabolic rate in recent years is supported in the literature when comparing modern experimental data to those from 1919.",
+      "claim_type": "EXPLICIT",
+      "source": "A decline in metabolic rate in recent years is supported in the literature when comparing modern experimental data to those from 1919 (Frankenfield et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Frankenfield et al. (2005), which compared modern and historical metabolic rate data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "34a104da-ac72-4783-8b81-5053dc0f34a9",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C53",
+      "claim": "Change in the population-level of inflammation seems the most plausible explanation for the observed decrease in temperature over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are many factors that influence resting metabolic rate, change in the population-level of inflammation seems the most plausible explanation for the observed decrease in temperature over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data and discussion of potential mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "1bceb251-bbb9-480e-a833-85d55631a5e5",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C54",
+      "claim": "In the mid-19th century, 2\u20133% of the population would have been living with active tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the mid-19th century, 2\u20133% of the population would have been living with active tuberculosis (Tiemersma et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tiemersma et al. (2011), which documents historical tuberculosis prevalence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "b1d5217b-e220-4c0b-a62e-15ed87010ad4",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C55",
+      "claim": "UAVCW Surgeons' Certificates reported 737 cases of active tuberculosis among 23,757 subjects (3.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "This figure is consistent with the UAVCW Surgeons' Certificates that reported 737 cases of active tuberculosis among 23,757 subjects (3.1%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the UAVCW cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "5f327384-3c2d-4fe6-83c2-a896229da4bd",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C56",
+      "claim": "UAVCW veterans who reported either current tuberculosis or pneumonia had a higher temperature (0.19\u00b0C and 0.03\u00b0C respectively) than those without infectious conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "That UAVCW veterans who reported either current tuberculosis or pneumonia had a higher temperature (0.19\u00b0C and 0.03\u00b0C respectively) than those without infectious conditions supports this theory (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the UAVCW cohort presented in the manuscript and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "4799c4c0-d0e7-463e-ba22-7a73910d70c0",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C57",
+      "claim": "A small study of healthy volunteers from Pakistan confirms temperatures more closely approximating the values reported by Wunderlich (mean, median and mode, respectively, of 36.89\u00b0C, 36.94\u00b0C, and 37\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "However, a small study of healthy volunteers from Pakistan\u2014a country with a continued high incidence of tuberculosis and other chronic infections\u2014confirms temperatures more closely approximating the values reported by Wunderlich (mean, median and mode, respectively, of 36.89\u00b0C, 36.94\u00b0C, and 37\u00b0C) (Adhi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Adhi et al. (2008), which measured body temperature in a Pakistani population.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "0ab68c04-d973-416f-8295-6756b2f4a917",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C58",
+      "claim": "The use of anti-inflammatory drugs including aspirin, statins and non-steroidal anti-inflammatory drugs (NSAIDs) increased between NHANES and STRIDE.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the use of anti-inflammatory drugs including aspirin (Luepker et al., 2015), statins (Salami et al., 2017) and non-steroidal anti-inflammatory drugs (NSAIDs) (Lamont and Dias, 2008) increased over this interval, potentially reducing inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Luepker et al. (2015), Salami et al. (2017), and Lamont and Dias (2008), which document increased use of these medications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "37e68de8-3db0-43d5-b3a6-9fb7ff786e71",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C59",
+      "claim": "NSAIDs have been specifically linked to blunting of body temperature, even in normal volunteers.",
+      "claim_type": "EXPLICIT",
+      "source": "NSAIDs have been specifically linked to blunting of body temperature, even in normal volunteers (Murphy et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Murphy et al. (1996), which documented the effect of NSAIDs on body temperature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "abcfe9a3-89d8-4e35-9b24-887d0b17f86f",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C60",
+      "claim": "A study of NHANES participants demonstrated a 5% decrease in abnormal C-reactive protein levels between 1999 and 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of declining inflammation in the modern era, a study of NHANES participants demonstrated a 5% decrease in abnormal C-reactive protein levels between 1999 and 2010 (Ong et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ong et al. (2013), which documented declining C-reactive protein levels in NHANES participants.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "fd4d5c94-c560-4fa6-b6d7-64921029dad9",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C61",
+      "claim": "Maintaining constant body temperature despite fluctuations in ambient temperature consumes up to 50\u201370% of daily energy intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintaining constant body temperature despite fluctuations in ambient temperature consumes up to 50\u201370% of daily energy intake (Levine, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Levine (2007), which documented the energy cost of thermoregulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "6c644841-897e-46ac-8e98-67e2d8f115b8",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C62",
+      "claim": "Resting metabolic rate (RMR) increases when the ambient temperature decreases below or rises above the thermoneutral zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting metabolic rate (RMR), for which body temperature is a crude proxy, increases when the ambient temperature decreases below or rises above the thermoneutral zone, that is the temperature of the environment at which humans can maintain normal temperature with minimum energy expenditure (Erikson et al., 1956).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Erikson et al. (1956), which documented the relationship between ambient temperature and metabolic rate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "2dae778f-d4ca-4386-b7f4-4bc7dbcfb261",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C63",
+      "claim": "In the 19th century, homes in the US were irregularly and inconsistently heated and never cooled.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 19th century, homes in the US were irregularly and inconsistently heated and never cooled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established historical knowledge about home heating and cooling in the 19th century.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "fd36e320-ae97-43a1-b7c6-f403c880ec8b",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C64",
+      "claim": "By the 1920s, heating systems reached a broad segment of the population with mean night-time temperature continuing to increase even in the modern era.",
+      "claim_type": "EXPLICIT",
+      "source": "By the 1920s, however, heating systems reached a broad segment of the population with mean night-time temperature continuing to increase even in the modern era (Mavrogianni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mavrogianni et al. (2013), which documented historical trends in home heating.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "540f6187-3efb-4f01-81b0-b241fe2d7dde",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C65",
+      "claim": "Air conditioning is now found in more than 85% of US homes.",
+      "claim_type": "EXPLICIT",
+      "source": "Air conditioning is now found in more than 85% of US homes (US Energy Information Administration, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to US Energy Information Administration (2011), which documented air conditioning prevalence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "18c5b45f-acbb-4869-8595-f7a6f1869dd3",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C66",
+      "claim": "The amount of time the population has spent at thermoneutral zones has markedly increased, potentially causing a decrease in RMR, and, by analogy, body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the amount of time the population has spent at thermoneutral zones has markedly increased, potentially causing a decrease in RMR, and, by analogy, body temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data and discussion of potential mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "b58228af-5017-49e5-be6d-e53f094001c8",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C67",
+      "claim": "Even in the worst case scenario where all UAVCW measurements were obtained late in the afternoon, adjustment for time of day would have only a small influence (<0.05\u00b0C) on the \u22120.59\u00b0C change over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the distribution of times of day for temperature measurement available to us in STRIDE and NHANES, we estimate that even in the worst case scenario, that is the UAVCW measurements were all were obtained late in the afternoon, adjustment for time of day would have only a small influence (<0.05\u00b0C) on the \u22120.59\u00b0C change over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data and statistical modeling presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "9f681517-97c8-49bb-bfba-7369249dce3e",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C68",
+      "claim": "Normal body temperature is assumed by many, including a great preponderance of physicians, to be 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, normal body temperature is assumed by many, including a great preponderance of physicians, to be 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about common assumptions regarding normal body temperature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "10a235f8-fef1-4c07-a35d-607b3c024f6a",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C69",
+      "claim": "Those who have shown the 37\u00b0C value to be too high have concluded that Wunderlich's 19th century measurements were simply flawed.",
+      "claim_type": "EXPLICIT",
+      "source": "Those who have shown this value to be too high have concluded that Wunderlich's 19th century measurements were simply flawed (Mackowiak, 1997; Sund-Levander et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Mackowiak (1997) and Sund-Levander et al. (2002), which questioned the accuracy of Wunderlich's measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "3e40f159-f06d-467f-884b-c3325572ded2",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C70",
+      "claim": "Humans in high-income countries have changed physiologically over the last 200 birth years with a mean body temperature 1.6% lower than in the pre-industrial era.",
+      "claim_type": "EXPLICIT",
+      "source": "Our investigation indicates that humans in high-income countries have changed physiologically over the last 200 birth years with a mean body temperature 1.6% lower than in the pre-industrial era.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results across all three cohorts presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "a1e0b994-60c9-4980-a278-d3b42acb5766",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C71",
+      "claim": "The Union Army Veterans of the Civil War database is from the 'Early Indictors of Later Work Levels, Disease and Death Study', initiated by Robert Fogel in 1978.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohort 1: The Union Army Veterans of the Civil War, 1860\u20131940 (UAVCW) is a database from the 'Early Indictors of Later Work Levels, Disease and Death Study', initiated by the late Nobel Laureate, Robert Fogel in 1978 (Fogel and Wimmer, 1992) and continuing today.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fogel and Wimmer (1992), which documents the origin of the UAVCW database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "bd726250-587a-472f-a3d2-1bd229602919",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C72",
+      "claim": "The UAVCW study abstracted the Compiled Military Service Records, the Pension Records, Carded Medical Records, the Surgeons' Certificates and information from the US Federal Census.",
+      "claim_type": "EXPLICIT",
+      "source": "The study abstracted the Compiled Military Service Records, the Pension Records, Carded Medical Records, the Surgeons' Certificates (detailed medical records) and information from the US Federal Census for a cluster sample of Union Army companies in the US Civil War.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data sources for the UAVCW cohort as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "3250e84a-d588-4646-9bb6-f603c539769f",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C73",
+      "claim": "In total, 331 companies of white and 52 companies of black Union Army veterans were included in the UAVCW dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 331 companies of white and 52 companies of black Union Army veterans were included in the dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the composition of the UAVCW cohort as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "b75f670e-11e3-48aa-88e0-febfa0ae122c",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C74",
+      "claim": "Whether the temperatures in UAVCW were taken orally or in the axilla is unknown; both methods were employed in the 19th century although oral temperature was more common.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether the temperatures were taken orally or in the axilla is unknown; both methods were employed in the 19th century although oral temperature was more common (Salinger and Kalteyer, 1900).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Salinger and Kalteyer (1900), which documents historical temperature measurement methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "ef49a45c-ff00-415a-a25c-5bece022ebda",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C75",
+      "claim": "Inspection of the distribution of temperature reads in UAVCW suggests precision is no better than 0.2 degrees Fahrenheit, consistent with the hashmarks on mercury thermometers.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the distribution of reads, however, suggest that it is no better than 0.2 degrees Fahrenheit, consistent with the hashmarks on mercury thermometers (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the data distribution shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "f7985eaf-34d7-4595-8837-621051203f92",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C76",
+      "claim": "The National Health and Nutrition Examination Survey (NHANES I) is a multistage, national probability survey conducted between 1971 and 1975 in the US civilian population.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohort 2: The National Health and Nutrition Examination Survey (NHANES I) is a multistage, national probability survey conducted between 1971 and 1975 in the US civilian population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the NHANES I cohort as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "8070776b-38ef-4fa7-ac22-8b70a163e377",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C77",
+      "claim": "In NHANES I, a subset of subjects, aged 1 to 74 years (N = 23,710) underwent a medical examination, including 15,301 adults.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of subjects, aged 1 to 74 years (N = 23,710) underwent a medical examination (ICPSR study No. 8055), including 15,301 adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the NHANES I cohort as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "587bb26a-b968-4cbc-b242-7bd48cd29d7f",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C78",
+      "claim": "The major focus of NHANES I was nutrition, and persons with low income, pregnant women and the elderly were consequently oversampled.",
+      "claim_type": "EXPLICIT",
+      "source": "The major focus of NHANES I was nutrition, and persons with low income, pregnant women and the elderly were consequently oversampled (Centers for Disease Control, National Center for Health Statistics, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Centers for Disease Control, National Center for Health Statistics (1975), which documents the NHANES I study design.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "2265d3d6-ca97-4e5f-bcc7-63ba3af9f516",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C79",
+      "claim": "In NHANES, mercury thermometers were used and temperatures were taken orally.",
+      "claim_type": "EXPLICIT",
+      "source": "In NHANES, mercury thermometers were used and temperatures were taken orally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the temperature measurement method in NHANES as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "043db386-2a87-4d9c-b97a-b77f5e908d5f",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C80",
+      "claim": "In NHANES, precision of temperature measurement is assumed to be 0.2 \u00b0F.",
+      "claim_type": "EXPLICIT",
+      "source": "Precision, as with the UAVCW cohort, is assumed to be 0.2 \u00b0F.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the assumed precision of temperature measurement in NHANES as documented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "4408343a-636b-4f88-b1eb-4cdbc640c5c7",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C81",
+      "claim": "The Stanford Translational Research Integrated Database Environment (STRIDE) extracts electronic medical record information from patient encounters at Stanford Health Care.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohort 3: The Stanford Translational Research Integrated Database Environment (STRIDE) extracts electronic medical record information from patient encounters at Stanford Health Care (Stanford, CA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the STRIDE cohort as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "77923002-5420-42b3-af90-a69b92e33bbf",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C82",
+      "claim": "All adult outpatient encounters at Stanford Health Care from 2007 to 2017 with recorded temperature measurements in the electronic medical record are included in the STRIDE study (N = 578,522 adult outpatient encounters).",
+      "claim_type": "EXPLICIT",
+      "source": "All adult outpatient encounters at Stanford Health Care from 2007 to 2017 with recorded temperature measurements in the electronic medical record are included in this study (N = 578,522 adult outpatient encounters).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the STRIDE cohort as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "bebed834-ba98-4e49-afda-20b55d16af88",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C83",
+      "claim": "In STRIDE, temperature measurements were obtained orally with annually-calibrated, digital thermometers with precision of 0.1 \u00b0F.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperature measurements were obtained orally with annually-calibrated, digital thermometers with precision of 0.1 \u00b0F and extracted from the dataset along with age, sex, weight, height, primary concern at the visit, prescribed medications, other conditions in the health record with ICD10 codes, and year and time of day the temperature was obtained (mean: 3.85 examinations per individual; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the temperature measurement method in STRIDE as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "f2c50863-83e9-4951-8166-05d194bdda58",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C84",
+      "claim": "From all three datasets, any extreme values of temperature (<35\u00b0C and >39\u00b0C) were excluded from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "From all three datasets, any extreme values of temperature (<35\u00b0C and >39\u00b0C) were also excluded from the analysis either because they were implausible or because they indicated a diagnosis of fever and would otherwise have been excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data exclusion criteria as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "a48df03b-e8ca-4513-a4be-cda7abb8e006",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C85",
+      "claim": "Improbable values of both body weight (<30 kg and >200 kg) and height (<120 cm and >220 cm) were removed from all three datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Improbable values of both body weight (<30 kg and >200 kg) and height (<120 cm and >220 cm) were also removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data exclusion criteria as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "1c695df8-f59e-4f1f-92e8-9a826721babf",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C86",
+      "claim": "In the UAVCW, veterans born after 1850 were excluded because they were unlikely to have served in the Union Army.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UAVCW, we also excluded veterans born after 1850, because they were unlikely to have served in the Union Army.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data exclusion criteria as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "efdc710c-085f-4daf-ad06-7ea8b359d5b4",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C87",
+      "claim": "The use of the STRIDE data was approved as an expedited protocol by the Stanford Institutional Review Board (protocol 40539).",
+      "claim_type": "EXPLICIT",
+      "source": "The use of the STRIDE data was approved as an expedited protocol by the Stanford Institutional Review Board (protocol 40539) and informed consent was waived since the only personal health information abstracted was month of clinic visit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the ethical approval for the STRIDE data as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "b95c9ab7-f425-4286-b22e-125f65681e63",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C88",
+      "claim": "Informed consent was waived for STRIDE data since the only personal health information abstracted was month of clinic visit.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of the STRIDE data was approved as an expedited protocol by the Stanford Institutional Review Board (protocol 40539) and informed consent was waived since the only personal health information abstracted was month of clinic visit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the ethical approval for the STRIDE data as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "e90c930b-29d3-41f1-a675-bb5a1e99bbab",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C89",
+      "claim": "UAVCW included only white and black men.",
+      "claim_type": "EXPLICIT",
+      "source": "UAVCW included only white and black men.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the demographic composition of the UAVCW cohort as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "ad5d86ec-9d30-4250-9e75-3cb8535f2b94",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C90",
+      "claim": "The NHANES study uses sample weights to account for its design.",
+      "claim_type": "EXPLICIT",
+      "source": "The NHANES study uses sample weights to account for its design; these were incorporated into models including NHANES data (Centers for Disease Control, National Center for Health Statistics, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methodology for NHANES data as documented in the manuscript, supported by a citation to Centers for Disease Control, National Center for Health Statistics (1975).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "d94f617c-21bf-4df7-9698-b860180baa01",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C91",
+      "claim": "Mixed effects modeling was conducted to account for the repeated temperature measurements from some individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We also conducted mixed effects modeling to account for the repeated temperature measurements from some individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methodology as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "c97f7e41-8446-4f9b-afbc-78a48ef7da9e",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C92",
+      "claim": "The coefficients from mixed effects modeling were almost identical to those of the linear regression models.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the coefficients were almost identical to those of the linear regression models, we chose to present this more simple statistical method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the results of statistical analysis as documented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "946770ba-ebb8-4d99-a918-51494a9213d4",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C93",
+      "claim": "Mean body temperature in men and women, after adjusting for age, height, weight and, in some models date and time of day, has decreased monotonically by 0.03\u00b0C per birth decade.",
+      "claim_type": "EXPLICIT",
+      "source": "Using measurements from three cohorts\u2014the Union Army Veterans of the Civil War (N = 23,710; measurement years 1860\u20131940), the National Health and Nutrition Examination Survey I (N = 15,301; 1971\u20131975), and the Stanford Translational Research Integrated Database Environment (N = 150,280; 2007\u20132017)\u2014we determined that mean body temperature in men and women, after adjusting for age, height, weight and, in some models date and time of day, has decreased monotonically by 0.03\u00b0C per birth decade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results across all three cohorts presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "e4adf543-384e-4d95-8995-3142b59dc421",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "claim_id": "C94",
+      "claim": "A similar decline within the Union Army cohort as between cohorts makes measurement error an unlikely explanation for the temperature decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar decline within the Union Army cohort as between cohorts, makes measurement error an unlikely explanation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data analysis results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c656bc83-8161-43d3-b481-96161961dd12",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 677,423 body temperature measurements from three historical cohorts: UAVCW (1862-1930), NHANES (1971-1975), and STRIDE (2007-2017), using appropriate statistical methods including linear regression and mixed effects modeling with sample weights where applicable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13, C41, and C71-C92 collectively describe the study design, data sources, and analytical methods. The cohort descriptions are well-documented with appropriate citations, sample sizes are clearly stated, and statistical methods are described with justification (e.g., C92 notes mixed effects and linear regression yielded similar results). Data exclusion criteria (C84-C86) and ethical approvals (C87-C88) are appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "e6cf8fee-0c96-4f55-80a3-11d2a8d2294b",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Temperature measurements were significantly higher in earlier cohorts (UAVCW > NHANES > STRIDE), with consistent age-related decreases across all cohorts (-0.003 to -0.0043\u00b0C per year), and expected relationships with anthropometric variables and time of day.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 describe cross-cohort comparisons and within-cohort patterns. The data are supported by Figure 1 and statistical analyses showing significant differences between cohorts and consistent age effects. The relationships with weight, height, and time of day align with established physiological knowledge and are documented with appropriate statistical significance testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "92aa0448-8fd5-466c-9177-457ae5e3ac47",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Month of year had small but statistically significant effects on temperature without consistent patterns across cohorts, while ambient temperature showed minimal correlation with body temperature (0.001\u00b0C and 0.0004\u00b0C per 1\u00b0C ambient increase in UAVCW and STRIDE respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 describe seasonal and ambient temperature effects. Figure 1\u2014figure supplement 5 supports the lack of consistent monthly patterns, and the ambient temperature correlations are statistically significant but physiologically minimal. The authors appropriately note these effects are small and omit them from final models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "6b78e0e6-1469-43e0-87ab-cda223e80a77",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the UAVCW cohort, only veterans with active tuberculosis (37.22\u00b0C) or pneumonia (37.06\u00b0C) had elevated temperatures compared to the remainder of the population (37.02\u00b0C), while historical infections without active disease showed no temperature elevation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C35 and C54-C56 describe infectious disease effects on temperature in UAVCW. The data show clear sample sizes for each condition, appropriate statistical comparisons with confidence intervals, and consistency with historical tuberculosis prevalence (C54-C55: ~3% prevalence). The finding that only active infections elevate temperature is physiologically plausible and well-supported by the data in Supplementary file 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "259aaecc-ff7e-4ffa-9c45-998626c59b81",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Body temperature decreased monotonically by 0.03\u00b0C per birth decade in men (0.59\u00b0C total decrease from 1800s to 1997) and 0.029\u00b0C per decade in women (0.32\u00b0C from 1890s to 1997), with similar trends observed across white and black populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C44 and C93 describe the primary finding of decreasing body temperature over time. The within-cohort analysis (C36-C37) and between-cohort analysis (C38-C40) show consistent trends supported by Figure 2 and Figure 3. The magnitude of decline is precisely quantified with appropriate statistical modeling adjusting for confounders (age, weight, height). The consistency across ethnicities (C40) strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "8027fe03-7c0e-456f-9b82-5647cd0bb4e1",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Measurement error is unlikely to explain the observed temperature decrease because similar temporal changes were observed within the UAVCW cohort as between cohorts, comparable differences existed between modern cohorts with similarly calibrated thermometers, and potential biases from measurement method would underestimate rather than overestimate the change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47, C67, and C94 address the critical question of whether findings reflect true physiological change versus measurement artifact. The within-cohort decline (C45) is particularly compelling evidence against systematic measurement bias. The argument about axillary vs. oral temperatures (C47) is well-supported by citations and would bias results conservatively. The time-of-day sensitivity analysis (C67) shows minimal impact (<0.05\u00b0C) on the main finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "94f800e4-deef-463e-b3e1-a107f198fa17",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Body temperature serves as a crude proxy for basal metabolic rate, which is linked to longevity and body size, and the observed decrease in temperature likely reflects decreased metabolic rate, with declining inflammation proposed as the most plausible explanation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7-C9 and C48-C53 establish the theoretical framework linking temperature to metabolism and propose inflammation as the mechanism. While the relationship between temperature and metabolism (C7-C9, C48-C49) is well-established, the interpretation that decreased temperature reflects decreased metabolic rate (C52-C53) is more speculative. The claim that inflammation is the 'most plausible explanation' (C53) is not definitively supported\u2014it remains a hypothesis requiring direct measurement of metabolic rate and inflammatory markers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "97985f75-bf34-4821-bca0-f81b911ec4f2",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Supporting evidence for the inflammation hypothesis includes: Pakistani populations with high chronic infection rates showing temperatures closer to Wunderlich's values (36.89-37\u00b0C), increased use of anti-inflammatory medications between NHANES and STRIDE, NSAIDs' documented effect on temperature, and declining C-reactive protein levels in modern populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C60 provide circumstantial evidence for the inflammation hypothesis. The Pakistani study (C57) is described as 'small' and lacks details on sample size or methodology. The medication use trends (C58-C59) are documented but the causal link to population temperature is inferential. The CRP decline (C60) supports declining inflammation but doesn't directly link to temperature changes. These claims provide suggestive but not definitive evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "d253581d-5177-4e9b-88fc-b73b9b4f80f3",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Changes in ambient temperature exposure may contribute to decreased body temperature, as thermoregulation consumes 50-70% of daily energy, and the population has spent increasingly more time in thermoneutral zones due to widespread heating (by 1920s) and air conditioning (>85% of homes by 2011).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C66 propose improved climate control as an alternative mechanism. The energy cost of thermoregulation (C61) and the relationship between ambient temperature and metabolic rate (C62) are well-supported by citations. However, the causal link between increased time in thermoneutral zones and decreased body temperature (C66) is speculative. The authors acknowledge this is a potential mechanism but provide no direct evidence quantifying this effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    },
+    {
+      "id": "e837a1da-65ba-488c-91a5-8f648808663b",
+      "content_id": "70142f26-fabf-4c85-8396-c02903082de5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Historical context establishes that Wunderlich's 1851 standard of 37\u00b0C has been questioned by modern studies showing lower temperatures, with previous explanations attributing this to measurement error, but the current study demonstrates humans in high-income countries have physiologically changed with 1.6% lower mean body temperature over 200 years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 and C68-C70 provide historical context and frame the study's contribution. The historical claims about Wunderlich (C1-C2) and modern studies (C3-C4) are well-supported by citations. The historical disease context (C5-C6) is appropriately documented. The conclusion (C70) that humans have changed physiologically is supported by the data, though the 1.6% figure requires verification (0.59\u00b0C decrease from ~37\u00b0C baseline = ~1.6%).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:19:55.335399Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d361eadf-2e2d-4978-9379-b57f9c7fc0db",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "9d68d4d3-01ad-4c91-aeb7-6ed3e0851398",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "90566ca6-ebd3-4b5c-af96-3339a55173f5",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "9ecfdabb-7365-4154-960b-ff0f257556b7",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "7b54e9a3-ab05-456e-a10f-3cde620fefa1",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "a1e0b994-60c9-4980-a278-d3b42acb5766",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "bd726250-587a-472f-a3d2-1bd229602919",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "3250e84a-d588-4646-9bb6-f603c539769f",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "b75f670e-11e3-48aa-88e0-febfa0ae122c",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "ef49a45c-ff00-415a-a25c-5bece022ebda",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "f7985eaf-34d7-4595-8837-621051203f92",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "8070776b-38ef-4fa7-ac22-8b70a163e377",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "587bb26a-b968-4cbc-b242-7bd48cd29d7f",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "2265d3d6-ca97-4e5f-bcc7-63ba3af9f516",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "043db386-2a87-4d9c-b97a-b77f5e908d5f",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "4408343a-636b-4f88-b1eb-4cdbc640c5c7",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "77923002-5420-42b3-af90-a69b92e33bbf",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "bebed834-ba98-4e49-afda-20b55d16af88",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "f2c50863-83e9-4951-8166-05d194bdda58",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "a48df03b-e8ca-4513-a4be-cda7abb8e006",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "1c695df8-f59e-4f1f-92e8-9a826721babf",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "efdc710c-085f-4daf-ad06-7ea8b359d5b4",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "b95c9ab7-f425-4286-b22e-125f65681e63",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "e90c930b-29d3-41f1-a675-bb5a1e99bbab",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "ad5d86ec-9d30-4250-9e75-3cb8535f2b94",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "d94f617c-21bf-4df7-9698-b860180baa01",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "c97f7e41-8446-4f9b-afbc-78a48ef7da9e",
+      "result_id": "c656bc83-8161-43d3-b481-96161961dd12"
+    },
+    {
+      "claim_id": "e6e63085-7fa5-4bc4-8750-2372ee294962",
+      "result_id": "e6cf8fee-0c96-4f55-80a3-11d2a8d2294b"
+    },
+    {
+      "claim_id": "85983ec1-c892-4f1f-b869-3567f77d86b2",
+      "result_id": "e6cf8fee-0c96-4f55-80a3-11d2a8d2294b"
+    },
+    {
+      "claim_id": "8ede6c2d-8042-4bcf-8601-2d0474bca640",
+      "result_id": "e6cf8fee-0c96-4f55-80a3-11d2a8d2294b"
+    },
+    {
+      "claim_id": "0e9db52f-f6e4-4dd3-b212-bb0f36e3cc7f",
+      "result_id": "e6cf8fee-0c96-4f55-80a3-11d2a8d2294b"
+    },
+    {
+      "claim_id": "1460bdd4-9575-49d8-9603-2de999475729",
+      "result_id": "e6cf8fee-0c96-4f55-80a3-11d2a8d2294b"
+    },
+    {
+      "claim_id": "134bb2fe-c3c5-4c20-b093-887295f165bf",
+      "result_id": "e6cf8fee-0c96-4f55-80a3-11d2a8d2294b"
+    },
+    {
+      "claim_id": "0e298e3a-df46-4d36-b264-408fe9cf9e03",
+      "result_id": "e6cf8fee-0c96-4f55-80a3-11d2a8d2294b"
+    },
+    {
+      "claim_id": "76282d88-c424-4018-9ffb-57af6cf77d1b",
+      "result_id": "e6cf8fee-0c96-4f55-80a3-11d2a8d2294b"
+    },
+    {
+      "claim_id": "bcbf5ba8-32d4-48be-b9ca-e5552a5f58fb",
+      "result_id": "92aa0448-8fd5-466c-9177-457ae5e3ac47"
+    },
+    {
+      "claim_id": "890c9491-3257-4ba1-906d-ae1a499ae032",
+      "result_id": "92aa0448-8fd5-466c-9177-457ae5e3ac47"
+    },
+    {
+      "claim_id": "bcecd7ea-18e8-4159-9251-d99cd0554e65",
+      "result_id": "92aa0448-8fd5-466c-9177-457ae5e3ac47"
+    },
+    {
+      "claim_id": "ff4cbafb-c8e0-4b57-ac78-3958002e4405",
+      "result_id": "92aa0448-8fd5-466c-9177-457ae5e3ac47"
+    },
+    {
+      "claim_id": "31c11944-07f8-4c57-bb01-553e83bc502c",
+      "result_id": "6b78e0e6-1469-43e0-87ab-cda223e80a77"
+    },
+    {
+      "claim_id": "84568ae4-97cb-4005-b40a-15d36b050f8a",
+      "result_id": "6b78e0e6-1469-43e0-87ab-cda223e80a77"
+    },
+    {
+      "claim_id": "ef36c714-b61f-481c-9362-f422f3f52593",
+      "result_id": "6b78e0e6-1469-43e0-87ab-cda223e80a77"
+    },
+    {
+      "claim_id": "7d462b0d-c8c9-4b27-a32d-a444cb100eb6",
+      "result_id": "6b78e0e6-1469-43e0-87ab-cda223e80a77"
+    },
+    {
+      "claim_id": "02f37386-6211-4ac6-84f4-0164ed3c19df",
+      "result_id": "6b78e0e6-1469-43e0-87ab-cda223e80a77"
+    },
+    {
+      "claim_id": "70ab0f06-a44e-4035-b054-006ae7eafa29",
+      "result_id": "6b78e0e6-1469-43e0-87ab-cda223e80a77"
+    },
+    {
+      "claim_id": "18f2ead7-42f0-4419-bbc5-03e37522774e",
+      "result_id": "6b78e0e6-1469-43e0-87ab-cda223e80a77"
+    },
+    {
+      "claim_id": "b47eedd0-86a3-45f0-b10e-6c6811861fd4",
+      "result_id": "6b78e0e6-1469-43e0-87ab-cda223e80a77"
+    },
+    {
+      "claim_id": "dd2e8d27-f099-474a-b4cb-30e32a4d0ea9",
+      "result_id": "6b78e0e6-1469-43e0-87ab-cda223e80a77"
+    },
+    {
+      "claim_id": "99d1181e-3f55-4ad4-ae15-a089c1005265",
+      "result_id": "6b78e0e6-1469-43e0-87ab-cda223e80a77"
+    },
+    {
+      "claim_id": "1bceb251-bbb9-480e-a833-85d55631a5e5",
+      "result_id": "6b78e0e6-1469-43e0-87ab-cda223e80a77"
+    },
+    {
+      "claim_id": "b1d5217b-e220-4c0b-a62e-15ed87010ad4",
+      "result_id": "6b78e0e6-1469-43e0-87ab-cda223e80a77"
+    },
+    {
+      "claim_id": "5f327384-3c2d-4fe6-83c2-a896229da4bd",
+      "result_id": "6b78e0e6-1469-43e0-87ab-cda223e80a77"
+    },
+    {
+      "claim_id": "939e31f8-3006-410c-846b-da658aa11443",
+      "result_id": "259aaecc-ff7e-4ffa-9c45-998626c59b81"
+    },
+    {
+      "claim_id": "29b8da7a-5f34-432a-942d-615f3a669955",
+      "result_id": "259aaecc-ff7e-4ffa-9c45-998626c59b81"
+    },
+    {
+      "claim_id": "4712906e-3c9f-412d-82b7-16d01b440a0b",
+      "result_id": "259aaecc-ff7e-4ffa-9c45-998626c59b81"
+    },
+    {
+      "claim_id": "912cf25a-7924-46d7-9c09-6983a5c250a5",
+      "result_id": "259aaecc-ff7e-4ffa-9c45-998626c59b81"
+    },
+    {
+      "claim_id": "37c0fba5-de00-4bd6-b2e5-b991fe0fac3e",
+      "result_id": "259aaecc-ff7e-4ffa-9c45-998626c59b81"
+    },
+    {
+      "claim_id": "f89e6e66-274a-4740-a0a6-8664631278b7",
+      "result_id": "259aaecc-ff7e-4ffa-9c45-998626c59b81"
+    },
+    {
+      "claim_id": "f8b6126d-ff1a-41c4-b9e2-68101587c80d",
+      "result_id": "259aaecc-ff7e-4ffa-9c45-998626c59b81"
+    },
+    {
+      "claim_id": "743021d0-8a14-43d4-9f84-f05463c2d05c",
+      "result_id": "259aaecc-ff7e-4ffa-9c45-998626c59b81"
+    },
+    {
+      "claim_id": "946770ba-ebb8-4d99-a918-51494a9213d4",
+      "result_id": "259aaecc-ff7e-4ffa-9c45-998626c59b81"
+    },
+    {
+      "claim_id": "bdeb7c27-0e79-4c36-81af-f8702f018377",
+      "result_id": "8027fe03-7c0e-456f-9b82-5647cd0bb4e1"
+    },
+    {
+      "claim_id": "fa5248ed-f54d-45fa-8dcc-8e7e06394c10",
+      "result_id": "8027fe03-7c0e-456f-9b82-5647cd0bb4e1"
+    },
+    {
+      "claim_id": "3084ec4a-a028-4304-a47c-7ffa34fde32f",
+      "result_id": "8027fe03-7c0e-456f-9b82-5647cd0bb4e1"
+    },
+    {
+      "claim_id": "b58228af-5017-49e5-be6d-e53f094001c8",
+      "result_id": "8027fe03-7c0e-456f-9b82-5647cd0bb4e1"
+    },
+    {
+      "claim_id": "e4adf543-384e-4d95-8995-3142b59dc421",
+      "result_id": "8027fe03-7c0e-456f-9b82-5647cd0bb4e1"
+    },
+    {
+      "claim_id": "608265af-d99b-4662-a0fe-47041bcf1958",
+      "result_id": "94f800e4-deef-463e-b3e1-a107f198fa17"
+    },
+    {
+      "claim_id": "008c3654-4c47-47dc-aa98-2e6260fc3cc3",
+      "result_id": "94f800e4-deef-463e-b3e1-a107f198fa17"
+    },
+    {
+      "claim_id": "6da131bc-5629-4f24-a2ff-8fcf7b02dbba",
+      "result_id": "94f800e4-deef-463e-b3e1-a107f198fa17"
+    },
+    {
+      "claim_id": "201d1673-dc26-4b47-9193-b70ec8b6ee45",
+      "result_id": "94f800e4-deef-463e-b3e1-a107f198fa17"
+    },
+    {
+      "claim_id": "e44db562-3ede-4a80-894b-57c2921cd134",
+      "result_id": "94f800e4-deef-463e-b3e1-a107f198fa17"
+    },
+    {
+      "claim_id": "90a27144-8d35-4192-8ff1-f81c1af867d9",
+      "result_id": "94f800e4-deef-463e-b3e1-a107f198fa17"
+    },
+    {
+      "claim_id": "aca48634-28c9-48ad-a602-ba286fffe7ec",
+      "result_id": "94f800e4-deef-463e-b3e1-a107f198fa17"
+    },
+    {
+      "claim_id": "ab04df10-84ec-445b-804c-ca21f7000e35",
+      "result_id": "94f800e4-deef-463e-b3e1-a107f198fa17"
+    },
+    {
+      "claim_id": "34a104da-ac72-4783-8b81-5053dc0f34a9",
+      "result_id": "94f800e4-deef-463e-b3e1-a107f198fa17"
+    },
+    {
+      "claim_id": "4799c4c0-d0e7-463e-ba22-7a73910d70c0",
+      "result_id": "97985f75-bf34-4821-bca0-f81b911ec4f2"
+    },
+    {
+      "claim_id": "0ab68c04-d973-416f-8295-6756b2f4a917",
+      "result_id": "97985f75-bf34-4821-bca0-f81b911ec4f2"
+    },
+    {
+      "claim_id": "37e68de8-3db0-43d5-b3a6-9fb7ff786e71",
+      "result_id": "97985f75-bf34-4821-bca0-f81b911ec4f2"
+    },
+    {
+      "claim_id": "abcfe9a3-89d8-4e35-9b24-887d0b17f86f",
+      "result_id": "97985f75-bf34-4821-bca0-f81b911ec4f2"
+    },
+    {
+      "claim_id": "fd4d5c94-c560-4fa6-b6d7-64921029dad9",
+      "result_id": "d253581d-5177-4e9b-88fc-b73b9b4f80f3"
+    },
+    {
+      "claim_id": "6c644841-897e-46ac-8e98-67e2d8f115b8",
+      "result_id": "d253581d-5177-4e9b-88fc-b73b9b4f80f3"
+    },
+    {
+      "claim_id": "2dae778f-d4ca-4386-b7f4-4bc7dbcfb261",
+      "result_id": "d253581d-5177-4e9b-88fc-b73b9b4f80f3"
+    },
+    {
+      "claim_id": "fd36e320-ae97-43a1-b7c6-f403c880ec8b",
+      "result_id": "d253581d-5177-4e9b-88fc-b73b9b4f80f3"
+    },
+    {
+      "claim_id": "540f6187-3efb-4f01-81b0-b241fe2d7dde",
+      "result_id": "d253581d-5177-4e9b-88fc-b73b9b4f80f3"
+    },
+    {
+      "claim_id": "18c5b45f-acbb-4869-8595-f7a6f1869dd3",
+      "result_id": "d253581d-5177-4e9b-88fc-b73b9b4f80f3"
+    },
+    {
+      "claim_id": "8adfc9f1-9e8f-4882-a02a-05e393be9ded",
+      "result_id": "e837a1da-65ba-488c-91a5-8f648808663b"
+    },
+    {
+      "claim_id": "dc8186c4-9908-4e8a-8ae4-92888a53e792",
+      "result_id": "e837a1da-65ba-488c-91a5-8f648808663b"
+    },
+    {
+      "claim_id": "12d25170-184b-4237-a4bb-05aa0b687748",
+      "result_id": "e837a1da-65ba-488c-91a5-8f648808663b"
+    },
+    {
+      "claim_id": "b7617b02-e374-40a8-836b-9518b5a8c7ee",
+      "result_id": "e837a1da-65ba-488c-91a5-8f648808663b"
+    },
+    {
+      "claim_id": "899b6605-9442-4131-9a4b-548c22b46622",
+      "result_id": "e837a1da-65ba-488c-91a5-8f648808663b"
+    },
+    {
+      "claim_id": "075464ad-1c10-4969-b073-52fbddca55ad",
+      "result_id": "e837a1da-65ba-488c-91a5-8f648808663b"
+    },
+    {
+      "claim_id": "9f681517-97c8-49bb-bfba-7369249dce3e",
+      "result_id": "e837a1da-65ba-488c-91a5-8f648808663b"
+    },
+    {
+      "claim_id": "10a235f8-fef1-4c07-a35d-607b3c024f6a",
+      "result_id": "e837a1da-65ba-488c-91a5-8f648808663b"
+    },
+    {
+      "claim_id": "3e40f159-f06d-467f-884b-c3325572ded2",
+      "result_id": "e837a1da-65ba-488c-91a5-8f648808663b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Endogenous Bcd and Zld were successfully tagged with fluorescent proteins (mEos3.2 and mNeonGreen) using CRISPR/Cas9, and His2B control lines were generated. All tagged lines are homozygous viable with no detectable untagged protein, demonstrating functionality of the fusion proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 collectively demonstrate successful generation of functional fluorescently-tagged lines. The viability of homozygous lines (C4), requirement of these proteins for viability (C5), and western blot verification of no untagged protein (C6) provide strong evidence that the tagged proteins are functional. The methodology is well-documented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "A lattice light-sheet microscope was modified to enable photoactivation and optimized for single-molecule tracking of mEos3.2-tagged proteins at frame intervals from 10 to 500 ms with excellent signal-to-noise ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 describe technical advances in microscopy that are well-supported by the methods section and referenced figures. The optimization for particle density control and achievement of robust single-molecule detection across multiple time scales is documented with appropriate visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Different temporal resolutions (10 ms, 100 ms, 500 ms) capture distinct aspects of molecular behavior: short exposures track rapidly diffusing molecules but suffer from photobleaching of bound molecules, while longer exposures blur mobile molecules but allow detection of unbinding events with reduced photobleaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 describe the rationale for multi-timescale imaging and are well-supported by both theoretical considerations and empirical observations. The trade-offs between temporal resolution, photobleaching, and ability to measure different molecular populations are clearly articulated and supported by cited literature and experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "His2B serves as a suitable control for chromatin-bound proteins, showing predominantly immobile trajectories at 10 ms frame rates with trajectory lengths limited by photobleaching rather than unbinding. In contrast, Zld and Bcd show mixed populations of bound and mobile molecules. Chromatin motion is greater in Drosophila embryos than mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 establish His2B as an appropriate control through FRAP validation (C18) and characterization of its dynamics. The comparison to Zld and Bcd is well-documented with visual and quantitative data. The observation of greater chromatin motion in Drosophila (C23) is appropriately cited and provides important context for interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Quantitative analysis of displacement distributions reveals that ~50% of Zld and Bcd molecules are immobile/bound compared to 88% for His2B, indicating these transcription factors spend roughly equal time searching for and binding to chromatin. Diffusion coefficients differ among the three proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 present quantitative kinetic modeling results that are well-supported by the described two-state model fitting approach. The interpretation that ~50% bound fraction indicates equal time spent searching and binding (C28) is reasonable and appropriately cited. Error estimates are provided over multiple embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "His2B trajectories are longer than Zld and Bcd at all frame rates. Genome average residence times are ~5 s for Zld and ~2 s for Bcd, estimated from 500 ms data with photobleaching correction using His2B. These estimates are consistent with FRAP measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 present residence time estimates using an appropriate photobleaching correction method. The consistency between single-molecule tracking and FRAP measurements (C36) provides important validation. The comparison to previous Bcd estimates (C35) with explanation for differences demonstrates scientific rigor. The methodology is clearly described in supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Analysis of anomalous diffusion shows Bcd has a high \u03b1 value similar to His2B, while Zld has a low \u03b1 value consistent with highly anomalous motion. The complexity of Zld TAMSDs suggests measurement of a mixture of effects leading to relative immobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 present TAMSD analysis revealing distinct motion characteristics of Zld compared to Bcd and His2B. The interpretation is appropriately cautious (C39), acknowledging the complexity and potential mixture of underlying mechanisms. The analysis is appropriate for the 500 ms data where mobile molecules are motion-blurred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Zld exhibits dynamic cell cycle-dependent behavior: rapidly loading into nuclei at telophase, forming dynamic clusters in interphase that vary in size and persistence, leaving the nucleus during prophase, and remaining absent from chromatin during mitosis. Zld hubs show sub-second dynamics suggesting dynamic molecular exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 describe detailed observations of Zld dynamics through the cell cycle, supported by high-resolution 4D imaging. The characterization of hub properties (C45) and dynamics (C46) is well-documented with appropriate video evidence. The observations provide important context for understanding Zld function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Bcd also forms dynamic hubs in interphase, though less prominent than Zld hubs. Bcd nuclear dynamics are consistent with previous reports, and Bcd hubs do not form in the absence of maternal Zld.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 characterize Bcd hub formation and its dependence on Zld. The consistency with previous reports (C49) and prior work showing Zld-dependence (C50) strengthen the findings. The comparison to Zld hubs (C48) is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Bcd binding is enriched in high Zld density regions, with enrichment increasing from 2-fold in the anterior to 4-fold in the posterior, while Zld distribution remains unchanged along the AP axis. Longer Bcd binding events are associated with higher Zld density in posterior positions. Zld increases Bcd occupancy primarily by increasing local concentration (kon) rather than residence time (koff).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 present a comprehensive analysis of the spatial relationship between Bcd binding and Zld density. The quantitative measurements (C52, C53) are well-documented with appropriate controls. The mechanistic interpretation (C58) that Zld acts through kon rather than koff is appropriately cautious and based on the observation that increased binding stability (C56, C57) is insufficient to explain overall enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The hunchback (hb) gene is a well-characterized Bcd target with regulatory sequences containing Bcd and Zld binding sites. Both factors bind strongly at the hb locus by ChIP, though Zld loss has modest effects on hb expression. Previous FISH studies showed Bcd enrichment at active hb loci, but dynamics and relationship to Zld were unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 provide appropriate background on hb as a model locus for studying Bcd-Zld interactions. The claims are well-supported by citations to prior literature and clearly identify the gap in knowledge (C65) that motivates the current experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The relationship between Zld/Bcd hubs and the active hb locus is highly dynamic, with frequent but transient contacts rather than stable associations. Time-averaged analysis shows sharp Bcd enrichment at hb but no Zld enrichment, possibly because Zld has many more targets. This implies individual hubs are multifactorial and service many genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 present surprising findings about the transient nature of hub-gene interactions. The time-averaged enrichment analysis (C69, C70) is methodologically sound with appropriate controls. The explanation for lack of Zld enrichment (C71, C72) is reasonable given the difference in target numbers. The interpretation about multifactorial hubs (C73) is a logical inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Previous work showed strong correlation between Zld and Bcd binding genomically and that Bcd binds DNA transiently in a Zld-dependent spatial pattern. However, the current finding that Zld also binds transiently means it cannot act as a stable scaffold at enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 appropriately contextualize current findings with prior work. The key insight (C78) that transient Zld binding precludes a stable scaffold model is a logical inference from the residence time measurements and represents an important conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose an alternative model where multiple factors enriched within dynamic hubs interact to increase DNA occupancy through frequent transient weak binding events rather than long stable interactions, without requiring conventional 'lock and key' stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C81 present a speculative model based on the observations. While the model is consistent with the data, it remains a hypothesis that requires further testing. The claims appropriately acknowledge this is a proposed model rather than demonstrated mechanism. Additional experiments would be needed to distinguish this from alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Previous reports in mammalian cells and Drosophila showed correlations between transcription and transcription factor hubs. However, high-frame-rate LLSM imaging reveals hubs are not stable structures and interact only transiently with active transcription sites. Previous reports of stable clusters likely reflect time-averaged accumulations from insufficient temporal resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 appropriately contextualize findings with prior literature and offer a reinterpretation based on superior temporal resolution. The critique of previous work (C86) is reasonable given the technical advances demonstrated here. The high-frame-rate imaging provides strong evidence for the dynamic nature of hubs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Transcription occurs with rare transient visits of activator-containing hubs, suggesting regulation by visit frequency rather than stable association. Hubs form rapidly after mitosis when transcription is absent, consistent with a role in chromatin licensing and 3D structure formation early in the nuclear cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C92 present important observations (C87, C89) but the mechanistic interpretations (C88, C90-C92) remain speculative. While the timing of hub formation relative to transcription (C89) is intriguing, the proposed mechanisms require additional experimental validation. The claims appropriately cite supporting literature but acknowledge uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The anomalous motion of Zld suggests dependence on off-DNA interactions. Most of Zld consists of intrinsically disordered domains (IDDs), some required for function, which mediate weak multivalent protein-protein interactions leading to factor enrichment in hubs. Zld and Bcd hubs are likely formed by IDD-mediated interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 connect the observed anomalous motion to molecular properties of Zld and propose a mechanism for hub formation. The inference about off-DNA interactions (C93) is reasonable given the distinct motion from chromatin-associated proteins. The connection to IDDs (C94-C97) is well-supported by cited literature. The conclusion about hub formation (C98) is a logical inference though direct demonstration would strengthen it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Many proteins beyond Bcd have overlapping binding sites with Zld. The authors hypothesize Zld provides scaffolds for distinct hubs with multiple factors through weak transient interactions, creating loose assemblages with diverse activities. Such multifactor hubs could provide each transcription factor with a bespoke proteome with greater regulatory capacity than stable direct interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C102 extend the findings to propose a general model for Zld function with multiple factors. While C99 is well-supported by citations, C100-C102 are speculative hypotheses that require experimental validation. The model is plausible and consistent with observations but represents future work rather than demonstrated findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The introduction provides comprehensive background on Drosophila development, the maternal-to-zygotic transition, transcriptional regulation by enhancers and transcription factors, the role of Zelda as a pioneer factor, and the potential role of low-complexity domains in forming higher-order structures that regulate transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C128 provide well-cited background information establishing the biological context and prior knowledge. These claims appropriately set up the scientific questions addressed in the study and are supported by extensive literature citations. They identify key gaps in understanding (C112, C113, C120, C126) that motivate the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Previous work using LLSM for single-molecule tracking showed Bcd binds DNA transiently and forms concentration-dependent hubs that are more prominent in the posterior where Bcd concentration is low. Bcd hubs facilitate binding by increasing local concentration, require Zld to form, and preliminary experiments showed Zld also forms hubs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C141 summarize prior work from the authors and others that directly motivates the current study. The claims are appropriately cited and establish the foundation for investigating the relationship between Zld and Bcd hubs. The preliminary observation of Zld hubs (C141) provides the key motivation for the detailed characterization presented in the current work.",
+    "result_type": "MINOR"
+  }
+]

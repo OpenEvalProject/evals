@@ -1,0 +1,436 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "RNA sequencing of anterior poles from uninjured and regenerating planarians identified 203 and 86 pole-enriched genes respectively, with 51 genes shared between conditions including known anterior-pole markers foxD, notum, zic-1, and follistatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by bulk RNA sequencing with appropriate differential expression analysis (padj <0.05). The identification of previously validated anterior-pole genes (C4) serves as positive controls, strengthening confidence in the novel gene discoveries. Sample collection methods and statistical thresholds are clearly defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Single-cell RNA sequencing identified 198 genes with significantly higher expression in posterior-pole cells compared to non-pole muscle cells, with known posterior-pole genes wnt1, pitx, and islet1 ranking in the top 16%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 are supported by single-cell differential expression analysis using SCDE methodology with appropriate statistical thresholds (p<0.05). The presence of known posterior-pole genes in top-ranked positions validates the approach. However, the small sample size (11 pole cells vs 90 muscle cells) is a limitation, though this is acknowledged by the technical challenges of isolating these rare cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Whole-mount in situ hybridization validated 12 new anterior-pole and 10 new posterior-pole genes from RNA sequencing candidates, including genes encoding secreted factors, cell-surface receptors, and transcription factors, with some genes expressed in both poles suggesting molecular similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 are supported by in situ hybridization validation of RNA sequencing candidates. The validation rate (12/133 anterior, 10/96 posterior) is reasonable given the stringent spatial expression criteria for pole genes. The identification of genes expressed in both poles (C10-C11) is well-documented, though the interpretation of 'molecular similarity' (C11) is somewhat speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "nr4A encodes the S. mediterranea homolog of the broadly conserved NR4A nuclear receptor family found across metazoans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by phylogenetic analysis showing nr4A clustering with NR4A family members from multiple species with strong bootstrap support (Figure 2\u2014figure supplement 1). The phylogenetic tree includes appropriate outgroups and representatives from all six nuclear receptor subfamilies, providing robust evidence for orthology assignment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "nr4A RNAi causes progressive formation of posterior ectopic eyes in uninjured animals, with the distance between original eyes and head tip decreasing over time, leading to iterative appearance of additional eye pairs (up to 10 eyes after 16 weeks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are strongly supported by longitudinal live imaging of individual animals over extended time periods (up to 16 weeks). The progressive, iterative nature of the phenotype is well-documented with clear temporal progression. Sample sizes are reported as proportions, and the phenotype is highly penetrant and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "nr4A RNAi causes dorsal outgrowths at tail tips by 12 weeks, indicating that nr4A influences patterning at both head and tail extremities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by live imaging showing tail phenotypes. The interpretation that nr4A influences both ends (C21) is reasonable given the observed phenotypes at both extremities, though the tail phenotype is less extensively characterized than the head phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Amputated nr4A(RNAi) trunk fragments regenerate heads with normal eye number and tails without outgrowths, indicating the nr4A phenotype is most apparent during homeostatic tissue turnover rather than regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by regeneration experiments showing normal regeneration outcomes after amputation. The interpretation (C24) that the phenotype is specific to homeostasis is well-supported by the contrast between homeostatic and regenerative contexts, though the mechanism underlying this difference is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "nr4A(RNAi) animals develop ectopic eyes and internal ectopic foci of normally peripheral tissues (laminB+, NB.22.1e+, mag-1+ cells) in both head and tail, with quantifiable expansion of differentiated tissue domains and loss of head tip regions, demonstrating nr4A is required for proper tissue restriction at AP axis ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 are well-supported by FISH with multiple tissue-specific markers and quantitative measurements of expression domains (Supplementary file 1D). The use of multiple independent markers strengthens the conclusions. Statistical comparisons are appropriate (Welch's t-tests), and the phenotypes are consistent across markers. The conclusion (C32) is well-justified by the comprehensive tissue analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In uninjured nr4A(RNAi) animals, anterior PCG expression domains (ndl-4, sFRP-1, notum, foxD) retract from the head tip and expand posteriorly, with anterior pole cells scattered between eyes rather than clustered at the tip; this phenotype also occurs during regeneration by 7 days post-amputation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by FISH with multiple PCG markers and quantitative domain measurements. The posterior shift is statistically significant and reproducible across multiple genes. The regeneration data (C35-C36) shows the phenotype manifests even in regenerating tissue, though with some delay, supporting the robustness of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "nr4A RNAi causes loss of the posterior-most wnt1 expression domain and abrogation of wnt11-2 expression at the tail tip, while wnt11-1 expression area increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by FISH and quantitative measurements of posterior PCG expression domains. The changes are statistically significant and consistent with a general retraction of posterior pole identity from the tail tip. The increase in wnt11-1 (C39) suggests complex regulatory changes rather than simple loss of posterior identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "nr4A inhibition causes anterior PCGs to shift posteriorly and posterior PCGs to shift anteriorly while largely sparing midbody, midline, and DV PCG expression domains outside head and tail ends, with midline defects (slit, ephR1) restricted to head and tail regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 are well-supported by comprehensive PCG expression analysis with appropriate quantification and statistical testing. The regional specificity of effects (sparing midbody) is important for understanding nr4A function and is well-documented. The interpretation of midline defects (C46) as secondary to pole disruption is reasonable given the known roles of poles in midline patterning, though this remains somewhat speculative without direct testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "nr4A is predominantly expressed in planarian muscle in both intact and regenerating animals, with enrichment at AP axis ends including the posterior pole, and is expressed in longitudinal, circular, and DV muscle fiber types but not intestinal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by FISH co-localization with muscle markers, quantification across body regions, and analysis of published single-cell datasets. The integration of multiple approaches (FISH, single-cell mapping) strengthens the conclusions. The regional enrichment at axis ends (C50-C51) is consistent with the patterning phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "During regeneration, nr4A expression is upregulated by 48 hpa and increases at 72 hpa at both anterior- and posterior-facing wounds, showing expression dynamics similar to both anterior and posterior PCGs, unlike canonical muscle-expressed patterning factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by in situ hybridization time course and comparison to published PCG expression dynamics. The unique pattern of upregulation at both wound types (C57) distinguishes nr4A from typical anterior- or posterior-specific PCGs and is consistent with its role at both axis ends. The comparison to published data is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "RNA sequencing of nr4A(RNAi) animals identified 56 and 41 genes with significant expression changes in head and tail respectively, with the majority downregulated and most having muscle-enriched expression; 16 genes were affected in both regions, predominantly muscle-expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by RNA sequencing with appropriate differential expression analysis (DESeq, padj <0.05) and comparison to published single-cell data for tissue enrichment. The time course approach (2-5 weeks) allows identification of early vs. late changes. The predominance of muscle-expressed genes is consistent with nr4A's muscle expression pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "nr4A RNAi reduces body-wide expression of some genes (col21a1, psapl1) while inhibiting others more specifically in head and tail (dd_2972, ca12, vim), with one-third of nr4A-regulated genes enriched in head and tail compared to midbody.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by FISH validation of RNA sequencing hits and analysis of published regional expression data. The distinction between body-wide and region-specific effects is important for understanding nr4A's mechanism and is well-documented with representative examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "RNA sequencing time course shows nr4A regulates expression of PCGs including ndl-2, ndl-5 (downregulated in head by weeks 3-4), wnt11-1 (upregulated in tail by week 2), and nlg-8 (downregulated in tail by week 3), which encode FGFRL, Wnt, and Bmp-regulatory proteins implicated in patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by RNA sequencing time course with appropriate statistical analysis. The temporal progression of changes is important for understanding the sequence of events. The identification of known patterning genes (C71-C72) as nr4A targets provides mechanistic insight, though direct transcriptional regulation is not demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "By 9 weeks of nr4A RNAi, uninjured animals show loss of muscle fibers and decreased collagen+ muscle cells specifically in the head, with trunk and tail muscle unaffected; at 4 weeks, no muscle changes are detected in any region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by immunofluorescence with muscle antibody, FISH with collagen probe, and quantitative cell counting performed blind to condition. The regional specificity (head only) and temporal progression (absent at 4 weeks, present at 9 weeks) are well-documented. Statistical comparisons are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "EdU labeling shows significantly decreased new muscle cell incorporation specifically in the head tip of nr4A(RNAi) animals at 9 weeks, with no changes in other regions or in total EdU incorporation; new muscle cell numbers anterior to the newest ectopic eyes are similar to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by EdU labeling and quantification of double-positive cells (EdU+; collagen+) performed blind to condition. The regional specificity and the finding that total EdU incorporation is unchanged (C80) suggest a targeting defect rather than a general proliferation defect. The comparison to newest eyes (C81) is important for understanding the iterative phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "TUNEL assays show comparable apoptotic cell numbers in head tips of nr4A(RNAi) and control animals, suggesting defective progenitor targeting rather than increased cell death underlies muscle loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by TUNEL assay with quantification. The interpretation (C83) that targeting defects rather than cell death cause muscle loss is reasonable given the TUNEL data, though alternative explanations (e.g., decreased differentiation) are not fully excluded. The conclusion is consistent with the EdU data showing normal total proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "nr4A is not generally required for muscle progenitor production and differentiation throughout the body; the head-tip-specific muscle defect occurs after PCG expression changes, indicating muscle loss is not the cause of earlier PCG changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are well-supported by the regional specificity of muscle phenotypes and the temporal sequence showing PCG changes (weeks 2-3) precede muscle loss (after week 4). This temporal analysis is critical for establishing causality and is well-documented. The conclusion (C86) is logically sound based on the temporal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "PCG expression changes precede differentiated tissue changes in nr4A(RNAi) animals: anterior pole cells scatter by 2 weeks, ndl-2/ndl-5 shift posteriorly by 3 weeks (when muscle is still normal), with notum shift preceding other PCG and differentiated tissue changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are strongly supported by comprehensive time course analysis with FISH for multiple markers at 2, 3, and 4 weeks. The temporal sequence is critical for understanding mechanism and is well-documented with appropriate quantification and statistical analysis. The finding that muscle is normal at 2 weeks when pole cells are already mispositioned (C92) is particularly important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "In the tail, posterior pole shifts anteriorly and wnt11-2 expression decreases by 3 weeks of nr4A RNAi, while mag-1+ cells remain normal, indicating PCG pattern changes precede differentiated tissue shifts at the posterior extremity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by FISH time course in tails showing the same temporal pattern as in heads (PCG changes before differentiated tissue changes). The parallel findings in head and tail strengthen the overall model. The conclusion (C96) is well-justified by the temporal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "After just 1 week of nr4A RNAi, there is a quantifiable posterior shift of notum+ anterior pole cells that is suppressed by lethal irradiation, demonstrating anterior-pole changes are neoblast-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by FISH with quantification at 1 week and irradiation experiments. The irradiation control (C98-C99) is critical for demonstrating that the phenotype requires neoblast activity (cell turnover) rather than being a direct effect on existing pole cells. Statistical analysis is appropriate (Kruskal-Wallis with Dunn's test).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "SMEDWI-1+ ectopic anterior pole cells are present at both 2 and 9 weeks of nr4A RNAi, indicating new anterior pole cells are continually targeted to ectopically posterior regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by FISH with SMEDWI-1 antibody showing newly differentiated pole cells at ectopic locations. The presence of SMEDWI-1+ cells at both early and late time points (C100) supports the interpretation of continuous mis-targeting (C101), though this remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "foxD; nr4A double RNAi results in fewer animals with ectopic eyes compared to control; nr4A double RNAi (consistently observed across intact and pole-cut groups with similar nr4A knockdown levels), indicating head patterning defects are mediated at least in part by mis-positioning of anterior pole cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are supported by double RNAi experiments with appropriate controls (qPCR showing similar nr4A knockdown, C104) and multiple experimental groups (intact and pole-cut animals, C103). The statistical analysis (chi-squared tests) is appropriate. The conclusion (C105) is well-justified, though the partial rescue indicates additional mechanisms may also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "During extended nr4A inhibition (up to 21 weeks), original and older ectopic eyes eventually fade and disappear at the head tip, with eye progenitors iteratively shifting targeting to the most posterior eye set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are supported by longitudinal tracking of individual animals over very long time periods. The observation of eye disappearance is well-documented with multiple examples. The interpretation of progenitor targeting shifts (C107) is reasonable given the pattern of eye appearance and disappearance, though this is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Significantly more new eye cells (opsin+; SMEDWI+) are present in the newest posterior ectopic eyes than in older anterior eyes, with similar numbers to control eyes, suggesting eye progenitor targeting continues to shift posteriorly without reaching a stable pattern state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by quantification of newly incorporated eye cells (opsin+; SMEDWI-1+) with appropriate statistical analysis. The finding that newest eyes receive similar progenitor numbers as control eyes (C109) while older eyes receive fewer is critical evidence for the iterative targeting model. The conclusion (C110) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Planarian muscle cells express signaling molecules to promote positional identity, with anterior and posterior poles serving as putative organizers at AP axis ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 represent established knowledge in the planarian field supported by extensive prior literature. These are appropriate background statements that frame the current work. No new data is presented for these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C116"
+    ],
+    "result": "NR4A is a transcription factor that helps regulate tissue pattern at both AP axis ends through restriction of patterning gene expression domains, with the nr4A phenotype representing a unique patterning abnormality where stable anatomical pattern is not reached and iterative tissue duplication continues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are well-supported as overall conclusions synthesizing the extensive experimental data. C116 is explicitly stated as a proposed mechanism ('we propose'), which is reasonable given the observed PCG expression changes and nr4A's transcription factor identity, though direct transcriptional targets are not identified. The characterization of the phenotype as unique (C114) is justified by the iterative, non-equilibrating nature.",
+    "result_type": "MAJOR"
+  }
+]

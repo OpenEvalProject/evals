@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C70",
+      "C71",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study analyzed 70,694 papers from PLoS journals (88% from PLoS One) authored by 347,136 scientists in Medical and Life Sciences. After applying filters (gender assignment threshold of 90%, first publication from 1980 onwards, minimum 5 publications), the final dataset contained 222,925 individuals and 6,236,239 publications. Five contribution types were analyzed across four career stages defined by years since first publication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C12, C13, C70-C81 provide comprehensive documentation of the dataset construction, inclusion criteria, and methodological choices. The data are openly accessible (C70), and the methods are explicitly described with clear thresholds and rationale. The restriction to Medical and Life Sciences (C76) and use of established disambiguation algorithms (C77) are appropriately justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Contribution patterns vary systematically by career stage and author position. Earlier career stages are associated with performing experiments and analyzing data (decreasing with seniority), while writing and contributing reagents/tools increase over time with a decline in late-career. First authors are heavily involved in most contributions except contributing tools; middle authors contribute resources; last authors focus on design, conception, and writing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 describe patterns observed in Figure 1 from the seed dataset of self-reported contributions. These are descriptive findings directly supported by the data visualization. The patterns are consistent with established norms in scientific authorship and provide the empirical basis for the subsequent predictive modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Correlation analysis reveals that writing the manuscript and conceiving experiments are highly correlated (0.71), while bibliometric variables show moderate correlations (countries-institutions: 0.66; author position-number of authors: 0.68; authors-institutions: 0.72). Number of contributions strongly correlates with writing (0.85), conceiving (0.82), and analyzing data (0.79).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 report correlation coefficients shown in Figure 2A. These are straightforward statistical measures appropriately calculated using mixed correlation methods (Spearman, tetrachoric, biserial, polyserial) for different variable types. The correlations inform the structure of the Bayesian network model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C25"
+    ],
+    "result": "A Bayesian network was constructed using the Max-Min Hill Climbing algorithm with robustness testing via 50 bootstrap repetitions. Only arcs present in 80% of bootstrap samples were retained. The model achieved 6-8% classification error for contributorships and MSE of 0.12 for number of contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75, C25 describe the BN methodology and validation. The MMHC algorithm is appropriate for learning BN structure, the bootstrap procedure (50 repetitions, 80% threshold) provides robustness assessment, and cross-validation results (Table 3) demonstrate good predictive performance. The methods are standard and well-executed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Predicted contribution probabilities show that performing experiments is most discriminative by career stage, with junior scientists most likely to perform experiments and this likelihood decreasing with career advancement. Conversely, writing, conceiving experiments, and contributing tools become more likely at advanced career stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 describe patterns in Figure 3 showing predicted probability distributions by career stage. These findings are consistent with the descriptive patterns in the seed data (C14-C16) and represent successful model predictions. The distributions show clear separation by career stage, validating the model's discriminative ability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C29",
+      "C30",
+      "C31",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C95",
+      "C96"
+    ],
+    "result": "Robust archetypal analysis identified three archetypes: Leader (high on all contributions except performing experiments), Specialized (high on performing experiments and analyzing data), and Supporting (low on all contributions). Junior and late-career stages show only two archetypes each: junior has Specialized and Supporting; late-career has Leader and Supporting. Early- and mid-career stages exhibit all three archetypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C29-C31, C83-C86, C95-C96 describe the archetypal analysis results shown in Figure 4. The choice of archetype numbers is justified by RSS analysis and elbow criterion (C84-C85). Uncertainty intervals confirm robustness (C86). The finding that archetype composition varies by career stage is well-supported and represents a key discovery of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C59",
+      "C7"
+    ],
+    "result": "Career progression analysis shows that only 12% (27,714 of 222,925) scientists reached late-career stage. Attrition is low between junior and early-career (93% Specialized, 83% Supporting progress), but substantial thereafter. From early- to mid-career: 84% of Leaders progress vs. 30% Specialized and 16% Supporting. From mid- to late-career: 37% Leaders vs. 1-2% Specialized/Supporting. 98% of late-career scientists were Specialized as juniors, and 67% consistently showed Leader profile in early- and mid-career. Despite this, 66% of late-career researchers are in Supporting roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C42, C59, C7 present career trajectory data from Figure 5A. The progression rates are explicitly stated and show dramatic differences by archetype. The finding that Leader archetype scientists have substantially higher progression rates is well-documented. However, the interpretation requires caution given the cross-sectional nature of the data and potential cohort effects (acknowledged in C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C61"
+    ],
+    "result": "Productivity and citation impact differ significantly by archetype. Leaders show highest productivity (except late-career where Supporting is most productive), followed by Supporting. Specialized scientists are much less productive in early- and mid-career stages and have lower shares of highly cited publications than Leaders and Supporting scientists. All comparisons are statistically significant with large effect sizes for productivity differences in early- and mid-career.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46, C61 describe productivity and citation patterns in Figure 5B-C with statistical testing. Wilcoxon tests show significance (C45), and effect size analysis (Figure 5\u2014supplement 1) confirms large effects for productivity differences (C46). The finding that Specialized scientists have lower productivity and citation impact is well-supported, though effect sizes for citation impact are small despite statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C62",
+      "C87"
+    ],
+    "result": "Gender disparities exist across career stages, with men predominantly in Leader archetype and women in Specialized archetype, especially at early- and mid-career. Specifically: junior stage shows similar distributions (87% men, 84% women Specialized); early-career shows 43% men vs. 27% women as Leaders; mid-career shows 77% men vs. 65% women as Leaders. Late-career becomes more balanced (35% men, 31% women Leaders). Effect sizes are medium for Leader and Specialized profiles at early- and mid-career stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C47-C54, C62, C87 present gender distribution data from Figure 6. Two-proportion z-tests confirm statistical significance with very small p-values, and effect size analysis (Figure 6\u2014supplement 3) shows medium effects at early- and mid-career (C87). The gender disparities are well-documented, though the analysis is limited by the 90% gender assignment threshold (C78) which may introduce selection bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C88",
+      "C89"
+    ],
+    "result": "Author position patterns vary by archetype and career stage. Middle authorships dominate across all archetypes due to team size. At junior stage, Specialized scientists publish 50% as middle authors while Supporting publish 75% as middle authors. Leaders at early-career show balanced distribution (32% first, 37% middle, 32% last). All pairwise comparisons are statistically significant with large effect sizes for specialized junior and supporting late-career scientists between first and last authorship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C88-C89 describe author position distributions in Figure 7. The statistical testing confirms significance (C88) and effect size analysis (Figure 7\u2014supplement 1) shows large effects for specific comparisons (C89). The finding that middle authorship dominates is appropriately attributed to team size (C55), and the patterns by archetype are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C94",
+      "C98",
+      "C99",
+      "C67",
+      "C68",
+      "C69",
+      "C97"
+    ],
+    "result": "The diversity of scientific profiles exists within and between career stages, not just as a result of career evolution. Scientists with Leader profiles show high versatility and can move across archetypes, while most Specialized and Supporting scientists do not progress to senior stages. This creates systematic barriers to career advancement that disproportionately affect women, who are more likely to adopt Specialized and Supporting roles, suggesting biases in the scientific system's organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C94, C98-C99, C67-C69, C97 present interpretive conclusions based on the empirical findings. The interpretation that profile diversity exists within stages (C60) is supported by the archetypal analysis. The differential progression rates by archetype (C67, C99) and gender (C68) are well-documented. However, the causal claims about systematic biases (C69, C97) are inferential and would benefit from additional evidence about mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Current assessment schemes lack sensitivity to profile diversity, limiting policy capacity to address inequalities. Structural changes in academic reward systems are necessary to support Specialized and Supporting scientists. Early-career stage is critical for career development, where large gender differences emerge, potentially explaining higher attrition rates for women.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C103 present policy recommendations and causal interpretations. While the empirical findings on gender disparities and differential progression are well-supported, the causal link to attrition (C103) relies on cited literature rather than direct evidence from this study. The policy recommendations (C101) are reasonable but speculative. The claim about assessment schemes (C100) is interpretive rather than empirically tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C72",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C104"
+    ],
+    "result": "The study situates findings within existing literature on collaboration, team science, gender disparities, and academic reward systems. Prior work establishes that collaboration is ubiquitous, team size increases may disadvantage non-leaders, women engage disproportionately in technical labor, and larger teams require task distribution and role specialization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C63-C66, C72, C90-C93, C104 cite prior literature to contextualize the study. These are appropriately referenced claims that establish the research context. The citations appear relevant and support the study's motivation, though the accuracy of the cited claims themselves cannot be verified without examining the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The study acknowledges limitations including potential lack of representativeness of the sample, reliance on author name disambiguation algorithms, and limitations of self-reported contributorship data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 explicitly acknowledge study limitations. This is appropriate scientific practice. The limitations are real and could affect generalizability (C105), accuracy of author identification (C106), and validity of contribution data (C107). The authors appropriately note these constraints on interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The computational analysis required approximately 30 hours total, with 20 hours for data modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 provides computational resource information. This is a straightforward factual statement about the analysis runtime and is useful for reproducibility assessment.",
+    "result_type": "MINOR"
+  }
+]

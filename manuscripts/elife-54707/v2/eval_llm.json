@@ -1,0 +1,152 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C71",
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "The cytosol of yeast cells acidifies modestly during early aging and sharply after senescence entry. Young cells have an average cytosolic pH of 7.7, which decreases by 0.5 pH units in old cells. High time-resolution measurements reveal that 36% of cells display abrupt senescence entry with the highest acidification (~2-fold), 50% show gradual senescence with moderate acidification (1.6-fold), and 14% remain actively dividing with minimal pH change (1.4-fold). Critically, senescence entry always precedes the sharp pH drop, indicating acidification is not the cause of senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C30-C45, C71-C73, and C75 collectively provide strong experimental evidence from single-cell pH measurements using calibrated pHluorin sensors in microfluidic devices. The temporal relationship between senescence and acidification is well-documented with high time-resolution data (C37-C45), and the statistical analyses support the correlations reported (C34, C45). The conclusion that acidification follows rather than causes senescence (C40, C72) is logically derived from the temporal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C84",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Macromolecular crowding remains stable during aging with average NFRET ratios of 0.51 in both young and old cells. However, crowding stability rather than absolute levels predicts lifespan: shortest-lived cells tend to increase crowding during their lifespan while longer-lived cells maintain stable crowding. Cells living shorter than 18 divisions have significantly higher crowding ratios in aging compared to long-lived cells, and young cell crowding levels do not correlate with lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C55-C61, C84, C86-C88 are supported by experimental measurements using the optimized CrGE2.3 FRET sensor across 80 cells. The statistical analyses show weak but significant correlations (R\u00b2=0.14-0.22, p<0.001) between crowding changes and lifespan (C58, C59). The single-cell trajectory data (C56, C57) and comparative analysis between short- and long-lived cells (C60) provide converging evidence. The lack of correlation between young cell crowding and lifespan (C61, C87) strengthens the conclusion about stability being key.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Aged yeast cells exhibit drastic changes in organellar volumes leading to organellar crowding. Vacuoles increase from 3-24% v/v in young cells to 16-66% v/v in old cells, while cytosol decreases from 54-82% to 22-70% v/v. Nuclear volumes remain relatively stable (8-37% in young, 7-30% in old). The average inter-organelle distance decreases from ~1000 nm to <500 nm, with the most common distance changing from 400-600 nm to 0-200 nm. This represents a reversal of compartmental hierarchy where vacuoles become the largest compartment in old cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C62-C70, C90-C94 are supported by quantitative electron tomography analysis of 14 aged and 10 young cells identified by CLEM. The volumetric measurements (C63-C68) and inter-organelle distance calculations (C70, C90, C91) provide direct evidence for organellar crowding. The loss of correlation between organellar and plasma membrane surface areas in aging (C69) and the reversal of compartmental size hierarchy (C93, C94) are well-documented. The inference about expanded contact sites (C92) is reasonable given the distribution data showing 12% vs 2% of distances <80 nm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The CrGE2.3 crowding sensor was validated and optimized for long-term aging measurements. The original crGE sensor shows 18% increase in crowding ratio upon 1M NaCl osmotic shock, while CrGE2.3 shows 23% increase. Critically, the original sensor (mCerulean3-mCitrine) has strong pH dependence, while CrGE2.3 (mEGFP-mScarlet-I) provides more stable read-outs within the pH range observed in aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by experimental validation data showing sensor responses to osmotic shock (Figure 2B) and pH sensitivity measurements (Figure 2C). The comparison between the two sensor versions demonstrates the improvement achieved with CrGE2.3 for aging studies where pH changes occur. The statistical significance (p<0.001) and reproducibility across independent experiments strengthen the validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C76",
+      "C77",
+      "C78",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The proteome isoelectric point (pI) decreases from 7.1 in young cells to 6.7 in aged cells (60 hr, ~22 divisions), roughly following the cytosolic pH trajectory. This suggests that changes in proteome buffering capacity may contribute to cytosolic pH decline in addition to proton pump activity. The cytosolic pH changes are temporally decoupled from vacuolar pH changes and distinct from cortical pH, indicating that pH homeostasis involves additional mechanisms beyond competition between vacuolar and plasma membrane ATPases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C50 and C76-C78, C81-C83 present an interesting correlation between proteome pI and cytosolic pH, but the analysis carries acknowledged uncertainties (C49) related to pI predictions and aggregate formation. The computational analysis uses published datasets (C47, C48) but the mechanistic link between proteome pI and pH regulation (C50, C81-C83) remains speculative. The temporal decoupling from vacuolar pH (C76) is well-supported by comparison with Chen et al. 2020 data, but the proposed buffering mechanism requires experimental validation beyond correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C89",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The stability of macromolecular crowding despite cell volume increases may result from relatively small changes in cytoplasmic volume fraction and efficient homeostatic mechanisms. Organellar crowding likely influences phenomena at the 100 nm to \u03bcm scale (diffusion of larger particles, condensate formation, organellar shape) while crowding at the single protein scale (~10 nm) changes little. The vacuole and cytosol lose aspects of their compartmental identity in terms of both size and pH during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85, C89, C95-C99 combine supported observations (C95, C97) with speculative mechanistic interpretations (C85, C96, C98, C99). The observation that macromolecular crowding remains stable (C97) is well-supported by experimental data, and the loss of compartmental identity (C95) follows from the volumetric and pH data. However, the proposed mechanisms for crowding stability (C85) and the differential effects on different length scales (C96, C98, C99) are largely speculative and require experimental validation. The citation to Neurohr et al. 2019 (C89) supports the dilution-senescence link but doesn't directly validate the crowding homeostasis mechanisms proposed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C79",
+      "C80"
+    ],
+    "result": "Low energy availability in aging cells is proposed as a potential driver of both senescence entry and cytosolic acidification. The alkalinization of the cell cortex may result from high concentrations of proton pumps in the plasma membrane creating an alkaline microenvironment, while vacuolar alkalinization could be driven by loss of functional V-ATPases in addition to proton competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74, C79, and C80 are explicitly speculative (all marked as SPECULATION in evidence_type). While these hypotheses are reasonable given the observed temporal relationships and prior literature on V-ATPase stoichiometry changes (C12), they lack direct experimental support in this study. The energy hypothesis (C74) could explain why acidification follows senescence, but no energy measurements are provided. These represent testable hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study identified 8,596-15,161 POGs per taxon pair, with most showing low divergence (Ks < 0.1, Ka < 0.04). Peak Ks values ranged from <0.01 to <0.06 across genera, with specific patterns observed in different lineages. A portion of POGs (53-237) mapped to known single-copy genes in seed plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 are well-supported by data presented in Table 1, Figures 1-2, and supplementary files. The quantitative measurements of POG numbers, Ks/Ka values, and mapping to reference gene sets provide consistent evidence for the reported patterns of molecular divergence across the 20 taxon pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "More than 90% of POGs in each taxon pair are under purifying selection (Ka/Ks < 0.9), with a consistent hierarchical pattern across all pairs: moderate purifying selection (41-68%) > strong purifying selection (11-36%) > relaxed purifying selection (9.7-19.5%) > weak positive selection (3.1-8.8%) > neutral (1.6-3.7%) > strong positive selection (0.6-2.0%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C21-C27 are strongly supported by Ka/Ks ratio data shown in Figure 3, Figure 4, and Supplementary file 3. The repeated pattern across all 20 phylogenetically diverse taxon pairs provides robust evidence for this conserved genomic architecture. The quantitative ranges are clearly documented and visualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Phylogenetic analysis using seven shared POGs recovered relationships congruent with APG IV classification. Divergence time estimates place species pair isolation between late Miocene and Pleistocene (~10.67-1.69 mya), with divergence time positively correlated with Ks peak frequency (r=0.8034, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by phylogenetic analyses (Figure 5, Figure 5\u2014supplement 1) and correlation analyses. The congruence with established phylogenetic relationships validates the approach, and the strong positive correlation between divergence time and Ks values is statistically significant and biologically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Divergence time and Ks peak frequency show significant correlations with gene abundance under different selection regimes: positive correlation with moderate purifying selection (0.1<Ka/Ks<0.5; r=0.73-0.93, p<0.001) and negative correlation with strong purifying selection (Ka/Ks<0.1; r=-0.64 to -0.79, p<0.009) and positive selection (Ka/Ks\u22651.0; r=-0.53, p=0.015).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C31-C33 are supported by correlation analyses shown in Figures 5-6 and Supplementary file 4. The statistical significance of correlations and consistency across multiple comparisons provide strong evidence. However, the authors acknowledge potential circularity due to overlapping data between Ks measurements and divergence time estimation, which slightly reduces stringency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C7",
+      "C8",
+      "C41"
+    ],
+    "result": "Genes under strong positive selection (Ka/Ks>2) vary from 72-184 per taxon pair, with ~50% having GO annotations mapping to 223 total GO terms. Most terms (44.8%) are lineage-specific, with 14 BP terms related to stimuli responses shared by 10-15 pairs. One GO term (integral component of membrane) is shared by all 20 pairs and represents the most abundant CC category in each pair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41, C7-C8 are supported by data in Table 2, Figure 7, and Supplementary file 5. The GO annotation analysis provides functional context for positively selected genes. However, the authors acknowledge that Ka/Ks and variation cluster methods may underestimate positive selection, and uncertainty is high when Ks is small, which could affect the exact gene counts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Most genes with Ka/Ks>2 (>57% in all pairs, >70% in 15 pairs) were also identified as under positive selection by the variation cluster method, providing independent validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by variation cluster analysis results (Supplementary file 6). The use of two independent methods strengthens confidence in identifying positively selected genes, though both methods are acknowledged to be conservative and may underestimate the true number.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C49",
+      "C50"
+    ],
+    "result": "The study reveals a repeated pattern of POG divergence across all taxon pairs, with most genes showing low divergence and evolving slowly under purifying selection, while a small proportion evolves faster. This pattern is consistent regardless of divergence time, suggesting most molecular evolution in POGs is neutral (synonymous).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C49-C50 are supported by the consistent patterns observed in Figures 1-4 across all 20 taxon pairs. The inference that most molecular evolution is neutral is reasonable given the excess of synonymous over nonsynonymous substitutions and the predominance of purifying selection. However, these are interpretive claims based on observed patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The divergence pattern revealed by nuclear genes is consistent with previous studies using ITS/plastid markers. Divergence times support the importance of the Bering Land Bridge (available throughout Paleogene-Neogene, closed 7.4-4.8 mya) and possibly long-distance dispersal in explaining EA-ENA floristic similarity, while the North Atlantic Land Bridge broke up in early Eocene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by comparison with cited literature and geological evidence. The consistency with previous studies strengthens the findings. However, C46 involves biogeographic interpretation that cannot be definitively proven from molecular data alone\u2014the authors acknowledge they cannot distinguish between vicariance and LDD hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The positive correlation between divergence time and moderate purifying selection, coupled with negative correlation with strong purifying selection, suggests purifying selection intensity may shift from high to low over time. Analysis of 79 widely-shared POGs showed 8 genes with r>0.5 correlation between Ka/Ks and time (all Ka/Ks<1.0), providing indirect evidence for shifts in selection pressure, though most genes show taxon-specific evolutionary trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C67 involve complex interpretations of correlation patterns. While the correlations are statistically supported (C9-C10, C31-C33), the mechanistic explanations (C59-C60, C62, C66) are speculative. The analysis of individual genes (C63-C65) provides some support but is limited\u2014only 8 of 79 genes show the pattern. Alternative explanations (accumulation of deleterious mutations vs. adaptive evolution) cannot be distinguished with the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C78"
+    ],
+    "result": "Nelumbo (aquatic) has the highest proportion of POGs under positive selection and lowest under purifying selection, while Gelsemium (terrestrial vine) shows the opposite pattern. Positively selected genes are enriched for immunity/stimuli responses, and the shared ICM GO term across all pairs suggests common regional selective forces. These genes may play roles in allopatric divergence and local adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by Ka/Ks data comparisons. C71-C72 provide morphological context from literature. C74 is supported by GO annotation data. However, C73, C76, and C78 involve speculative interpretations about the functional significance and evolutionary roles of these genes. The link between positively selected genes and morphological/ecological divergence remains hypothetical without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors propose that similar climatic/ecological conditions between EA and ENA result in low divergence pressure, leading most genes to evolve slowly under purifying selection. However, micro-environmental differences could drive diversifying evolution in some genes. The conserved pattern of gene abundance may represent a genomic 'rule' for allopatric speciation, balancing ancestral system preservation with adaptive evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C57 are largely speculative hypotheses. C51 is supported by citation and general knowledge. C52-C53 represent theoretical expectations. C54-C57 are proposed explanations for observed patterns but lack direct experimental evidence. These are reasonable interpretations but remain untested hypotheses that require future validation through additional studies examining all gene families or testing in other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C77"
+    ],
+    "result": "The study's findings parallel observations in mammals, where positive selection genes are enriched for immunity/defense functions. Recent studies suggest natural selection targets specific gene sets in repeated patterns of genomic divergence during speciation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C77 are supported by citations to published literature (Kosiol et al., 2008; Pereira et al., 2016). These provide comparative context from other systems that strengthens the interpretation of the plant data, though they represent prior work rather than findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study addresses methodological considerations: OrthoMCL performs well for ortholog identification (validated by phylogenetic analyses showing sister relationships); most genes with Ka/Ks>2 have Ks>0.005 and span a range of Ks values, making saturation unlikely; POGs represent 52-68% of total orthologous gene families; Ka/Ks is a conservative measure that may underestimate positive selection; genes identified by both Ka/Ks and variation cluster methods are likely true positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C93 address important methodological issues and limitations. C79-C80 are supported by citations and phylogenetic validation. C81-C82, C86 are supported by data examination. C87-C89 represent established knowledge. C90 describes methodological decisions. C91-C93 involve reasonable inferences about method limitations. The authors appropriately acknowledge uncertainties and validate their approaches where possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors acknowledge that divergence times may be underestimated due to sparse phylogenetic sampling and few deep calibrations, but note results are similar to previous rbcL-based estimates and the relative order of divergence should be consistent, making them suitable for correlation analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 appropriately acknowledge limitations in divergence time estimation while providing justification for their use in comparative analyses. C84 is supported by comparison with previous work. The reasoning in C85 about relative vs. absolute timing is sound, though the potential systematic bias could still affect some conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The EA-ENA floristic disjunction involves 65 genera of seed plants, is a major Northern Hemisphere phytogeographic pattern known since Linnaeus, and previous studies showed divergence times varying from Miocene to Pleistocene (15 to <2.0 mya).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by multiple citations to established literature documenting the EA-ENA floristic disjunction and previous divergence time estimates. These represent accepted background knowledge that provides context for the current study.",
+    "result_type": "MINOR"
+  }
+]

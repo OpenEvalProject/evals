@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The study employed a novel somatosensory detection task with fMRI (n=27) that explicitly controlled for stimulus uncertainty, behavioral relevance, overt reports, and motor responses. The task varied stimulus intensities across 10 levels, used visual matching cues to dissociate detection from reports, and employed saccadic rather than manual responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C39 describe the experimental design and methodology. The task design is well-documented with clear rationale for each control (C27-C28), appropriate sample size (C26, C39), and validated behavioral outcomes showing independence between detection and reports (C45-C46). The methodological approach is internally consistent and appropriately addresses the stated confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Behavioral results showed participants detected 52.25\u00b111.65% of targets with sigmoidal psychometric functions. Detected targets had shorter reaction times (11.77\u00b114.84 ms difference, BF10=88.01), and target detection was successfully dissociated from overt reports (all participants showed BF01>4 for independence except one).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 present behavioral validation data with appropriate statistical support. The detection rate near 50% (C40) confirms threshold-level stimulation, psychometric functions show expected sigmoidal shape (C43), and Bayesian statistics strongly support the dissociation between detection and reports (C45-C46). The behavioral data validate the experimental manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Bayesian Model Selection revealed that within somatosensory cortex, anterior SI (areas 3b, 1, 2) represented stimulus intensity, posterior SI (area 2) represented detection probability, and bilateral SII showed representations of intensity, detection probability, and binary target detection in distinct subregions. The spatial distribution in SI followed cytoarchitectonic subdivisions, while SII did not show clear cytoarchitectonic organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C47-C62 describe the primary fMRI findings from Bayesian Model Selection with high exceedance probabilities (EP\u22650.99). The hierarchical transformation from intensity to detection probability to binary detection is supported by anatomically specific activations with appropriate statistical thresholds. The cytoarchitectonic analysis (C61-C62) provides additional anatomical validation. However, the lack of systematic beta estimates in some detection-sensitive regions outside SII (C68-C69) suggests caution in interpreting those activations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Parameter estimates confirmed systematic positive relationships between BOLD responses and the respective regressors in intensity-sensitive regions (BF10=33.94-6114.09), detection probability-sensitive regions (BF10=3.04-232795.89), and binary detection-sensitive regions in bilateral SII (BF10=8.63-96.7). Detection-sensitive regions outside SII (SFG, IPL, V3) showed no systematic deviation from zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 provide critical validation of the model selection results through parameter estimate analysis. The Bayes factors strongly support systematic effects in somatosensory regions (C63, C65, C67) while revealing lack of systematic effects in higher-order regions (C68-C69). This pattern strengthens the main conclusion that detection is restricted to somatosensory cortex. The stimulus response profiles (C64, C66) provide visual confirmation of the expected relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Activity in bilateral superior medial gyrus/ACC and bilateral anterior insular cortex was best explained by stimulus uncertainty, showing inverse U-shaped response profiles with strongest activity for near-threshold stimuli (all BF10>453).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C70-C73 demonstrate that uncertainty-related activity is localized to salience network regions distinct from detection-related somatosensory activity. The very strong Bayes factors (C72) and characteristic inverse U-shaped response profiles (C73) provide compelling evidence. This dissociation is central to the paper's argument about functional specificity in the detection network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The report model best explained activity in left SMA, left thalamus, and right supramarginal gyrus. Only SMA showed systematic beta estimates (BF10=65.14), while thalamus and SMarG did not show positive evidence for systematic effects. None showed systematic relationships with stimulus intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 identify report-related activity distinct from detection. The finding that only SMA shows systematic effects (C77-C78) is appropriately conservative, acknowledging that model selection alone is insufficient without systematic parameter estimates. The lack of intensity relationship (C79) confirms these regions process report-related rather than stimulus-related information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C124",
+      "C171"
+    ],
+    "result": "The study emphasizes that responses in somatosensory cortex, particularly secondary somatosensory cortex (SII), are the best correlates of perceptual awareness for simple somatosensory stimuli, while frontoparietal network activity reflects uncertainty and report-related processes rather than detection per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C80-C84, C124, C171 present the main interpretive conclusions. These are well-supported by the convergent evidence from model selection (showing SII as the only region with systematic binary detection effects), parameter estimates (confirming systematic detection-related activity only in SII), and the successful dissociation of uncertainty and report processes to other regions. The conclusion is appropriately qualified to simple electrical stimuli (C171).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Within primary somatosensory cortex (SI), anterior areas (3b, 1, anterior area 2) process physical stimulus intensity while posterior area 2 represents detection probability. However, SI does not show detection-sensitivity as the detection probability model does not differentiate between detected and undetected trials at threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88, C95-C98 describe the functional organization within SI and the critical distinction between detection probability and binary detection. The interpretation that SI lacks detection-sensitivity (C98) is logically sound given that detection probability predicts the same activation for detected and undetected threshold stimuli (C97). This nuanced interpretation appropriately distinguishes between perceptual transformation and conscious detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C109",
+      "C114",
+      "C149",
+      "C156"
+    ],
+    "result": "Bilateral SII shows the complete transformation from intensity to detection probability to binary detection in adjacent regions, with only SII showing reliable and systematic covariation with target detection. This suggests SII is a central relay point where behaviorally relevant stimuli are transformed into perceptual outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100, C109, C114, C149, C156 establish SII as the critical locus for conscious detection. The evidence is strong: SII is the only region showing systematic binary detection effects (C149), the transformation is anatomically organized within SII (C99-C100), and this is consistent with monkey electrophysiology (C109). The interpretation as a relay point (C114) is reasonable speculation based on the data, though it requires future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The study found no reliable representations of somatosensory awareness in prefrontal cortex or strictly detection-related responses in posterior parietal cortex, conflicting with the 'posterior hot zone' theory but consistent with findings that these regions relate to goal completion rather than stimulus awareness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 present negative findings regarding PFC and posterior parietal cortex. The absence of systematic detection-related activity in these regions (C68-C69, C132-C133) is well-documented. The interpretation is appropriately cautious, acknowledging limitations to the specific stimuli and methods used (C131-C132). The comparison with theoretical frameworks (C134-C135) appropriately contextualizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The experimental design successfully dissociated target detection from stimulus uncertainty by varying intensities and testing for specific response profiles. Regions showing low activity for subthreshold and high activity for suprathreshold stimuli could not be explained by uncertainty, which decreases at high intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 describe the logic for dissociating detection from uncertainty. The reasoning is sound: the inverse relationship between stimulus intensity and uncertainty (C139) allows discrimination of detection-related (monotonic) from uncertainty-related (inverse-U) responses. The behavioral validation (C141) confirms equal relevance of detected and undetected targets. This represents a key methodological strength.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The authors address the potential confound that participants might form covert explicit decisions about target presence before the match/mismatch decision. They argue against this based on time constraints, participant reports, and the restriction of detection effects to SII rather than supramodal association cortices, though rapid low-level decision processes cannot be completely excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C152 present a potential alternative explanation and the authors' counterarguments. The reasoning is logical: explicit decisions would recruit supramodal regions (C150), but only sensory-specific SII showed effects (C149, C151). The acknowledgment that low-level decision processes cannot be excluded (C152) is appropriately cautious. This represents good scientific practice in considering alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Motor response-related confounds were controlled by using saccadic rather than manual responses. Detection effects did not overlap with regions involved in saccadic eye movements and were localized to hand areas in SI, far from eye representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155 address motor confounds. The evidence is straightforward: no overlap with saccade-related regions (C153) and anatomical separation from eye representations (C154). This control is important given previous concerns about motor contamination in detection studies (C25). The inference that motor responses did not affect results (C155) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Previous research on somatosensory awareness has yielded diverse findings ranging from somatosensory cortex to widespread frontoparietal networks. This diversity may result from cognitive processes that coincide with stimulus awareness in experimental settings, and the functional specificity of identified regions remains largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C21 summarize the state of the field and motivation for the study. These are well-supported by appropriate citations (C10-C17) and accurately characterize the problem (C20-C21). The speculation about cognitive confounds (C2) is reasonable and motivates the experimental design. This provides appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Classical near-threshold detection tasks involve four potentially confounding processes: uncertainty and introspection may differ between detected and undetected targets, detected targets have higher behavioral relevance, detection is mapped to overt reports, and manual responses may affect cortical excitability in homologous regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 identify specific confounds in previous detection studies, each supported by appropriate citations. These confounds provide clear rationale for the experimental controls implemented in the current study. The identification of these issues represents important methodological insight, though the claims themselves are about prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Previous research on SI's role in target detection has been ambiguous, with some studies finding no difference between detected and undetected targets while others reported stronger responses for detected stimuli. Studies using classical near-threshold tasks tended to find detection effects, while those using alternative approaches did not, raising questions about whether SI responses reflect awareness or pre-stimulus brain states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 summarize conflicting findings in the literature regarding SI, supported by appropriate citations. The observation about methodological differences (C91-C92) is insightful and the question raised (C94) is legitimate. This contextualizes the current study's findings about SI (C95-C98) and demonstrates awareness of the complexity in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The relevance of SII for somatosensory target detection is well-documented, showing stronger evoked potentials, increased spike rates, stronger BOLD changes, and increased network integration for detected versus missed stimuli. SII also integrates information across body parts, indexes unexpected stimuli and omissions, and adapts to task requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C113 summarize extensive prior literature on SII function, all supported by appropriate citations. This provides important context for interpreting the current study's findings about SII (C99-C100, C149). The summary accurately represents the state of knowledge and strengthens the interpretation that SII is critical for detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The salience network (SMG/ACC and AIC) is involved in conflict monitoring, attention reorienting, and introspection, and has been found sensitive to perceptual ambiguity. Both regions have been implicated in somatosensory detection, with the insula assigned roles in interoceptive inference and awareness, though recent research suggests AIC may reflect sensitivity and learning rather than subjective experience. AIC shows strengthened connectivity with somatosensory cortex during mismatch detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C123 provide theoretical context for interpreting the uncertainty-related findings (C70-C73, C82), all supported by appropriate citations. The nuanced discussion of AIC function (C119-C121) acknowledges ongoing debates. The speculation about top-down modulation (C123) is reasonable given the current findings and prior connectivity data (C122), though it requires future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The role of prefrontal cortex in perceptual awareness remains debated, with opponents arguing PFC activity reflects report requirements and behavioral relevance while proponents argue PFC codes perceptual content even in passive paradigms and that null-findings may reflect insufficient methodological sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 accurately characterize an ongoing debate in the consciousness literature, supported by appropriate citations representing both sides. This provides important context for the study's negative findings regarding PFC (C132) and demonstrates awareness of alternative interpretations. The balanced presentation of both positions is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C157",
+      "C158"
+    ],
+    "result": "The recurrent processing hypothesis proposes that perceptual awareness emerges when feedforward signals from early sensory cortex are consolidated by re-entrant feedback. Previous research suggests somatosensory awareness is best captured in recurrent interactions between SI and SII.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C158 present a theoretical framework that could explain the observed transformation from intensity to detection probability in SI and binary detection in SII. The framework is appropriately cited (C157) and the application to somatosensory detection is supported by prior research (C158). However, the current study does not directly test recurrent processing, so this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The detection model does not capture subjective experience, which varies across intensities and for identical physical stimuli. Trial-by-trial awareness ratings would better model subjective experience but would reintroduce report requirements and differential relevance. Previous research shows subjective awareness is encoded in connectivity patterns between somatosensory and higher-order regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C163 acknowledge important limitations of the current approach regarding subjective experience. The reasoning about why awareness ratings were not collected (C162) is sound given the study's goals. The citation of connectivity-based approaches (C163) suggests productive future directions. This represents appropriate acknowledgment of scope limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The findings dissect functional contributions in the detection network and advocate for more complex paradigms to separate conscious access from collateral functions. The authors acknowledge that frontal and parietal areas may contribute to full phenomenal experience, and that the simple detection task is a reduction of everyday conscious perception. More complex stimuli may require additional cognitive resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C170 provide appropriate caveats and contextualization of the findings. The acknowledgment that the task is simplified (C167-C168) and that higher-order regions may contribute to richer experience (C166, C169-C170) demonstrates scientific humility. The call for more complex paradigms (C165) is a reasonable recommendation based on the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The study hypothesized that BOLD responses associated with target detection would be restricted to somatosensory regions, while frontoparietal network activity would reflect cognitive processes following from task requirements, based on insights from visual modality research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 state the study's a priori hypotheses, appropriately based on prior visual research (citations provided). These hypotheses are largely confirmed by the results (C3-C6, C80-C84), demonstrating good hypothesis-driven research. The hypotheses are clearly stated and testable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The distribution of intensity, detection probability, and detection effects in SII did not align with cytoarchitectonic subdivisions of the parietal operculum, whose functional roles remain elusive. Less pronounced somatotopy and large interindividual variability in SII may have concealed the exact organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 acknowledge a limitation in the anatomical specificity of SII findings. The observation is honest (C101), the acknowledgment of uncertainty appropriate (C102), and the explanation reasonable given known properties of SII (C103, with citations). The call for further studies is warranted. This represents appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Thirty-two participants completed the experiment, with five excluded for unstable psychometric functions, leaving n=27 for analysis. The study was ethically approved and complied with Declaration of Helsinki guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C174 provide basic methodological information about participants and ethics. The exclusion criteria (C173) are clearly stated and appropriate (participants not showing full psychometric range). Sample size of n=27 is reasonable for fMRI studies. Ethical approval is documented (C174).",
+    "result_type": "MINOR"
+  }
+]

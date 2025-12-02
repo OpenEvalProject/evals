@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors establish the clinical and scientific context for developing retinal models, noting that retinal diseases are leading causes of vision loss with no cures, that retinal tissue is susceptible to drug toxicity, and that animal models fail to recapitulate key features of human vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are all supported by citations to published literature and represent established knowledge in the field. These background claims provide appropriate context for the study but do not constitute novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The authors describe retinal organoids (ROs) as containing most relevant retinal cell types in physiological layering, but note major limitations including lack of functional maturation, missing cell types (e.g., microglia), lack of physiological RPE-photoreceptor interaction, and missing vascularization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 are supported by citations to published literature and review articles. The characterization of RO composition (C7) is further supported by immunostaining data in Figure 2\u2014figure supplement 1. These claims accurately describe the state of the field and motivate the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors characterize 180-day-old ROs as containing matured photoreceptors with simple inner and outer segments, a mixed population of rods and cones, and identify ROM1 as a specific outer segment marker while finding that PNA lectin labels both rod and cone segments in ROs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are well-supported by microscopy and immunostaining data in Figure 2. Claim C23 represents a novel finding that contradicts prior literature (Blanks and Johnson, 1984) which described PNA lectin as cone-specific. The co-staining data in Figure 2e clearly demonstrates PNA lectin labeling of both rhodopsin-positive (rod) and rhodopsin-negative (cone) segments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors developed a retina-on-a-chip (RoC) platform integrating hiPSC-derived retinal organoids and RPE cells in a two-layer microfluidic device with vasculature-like perfusion, separated by a porous membrane that shields tissues from shear forces while enabling nutrient exchange, with ROs embedded in hyaluronic acid-based hydrogel to maintain defined spacing and prevent cell outgrowth, enabling stable culture for at least 21 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C24-C34 are well-supported by the detailed description of the RoC fabrication and assembly process, along with supporting data in Figures 3 and 5. The design rationale is sound, and the viability data in Figure 3\u2014figure supplement 1 demonstrates stable culture over 21 days. The use of hyaluronic acid as interphotoreceptor matrix (C31) is based on established knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors demonstrate that RPE cells in the RoC express appropriate markers (PAX6, MITF, Melanoma gp100, ZO-1), display cobblestone morphology with tight junctions, exhibit polarization features including apical microvilli and basal membrane, show polarized expression of ezrin, and display preferential basal secretion of VEGF-A (70 vs 40 pg per chip in 24 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 are well-supported by comprehensive characterization data in Figure 4, including immunostaining, electron microscopy, and ELISA measurements. The VEGF-A polarization data (C40-C41) shows a trend toward basal secretion but the difference is not statistically significant (p=0.0592), which should be noted. Overall, the data demonstrate mature, polarized RPE in the RoC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors demonstrate that the RoC's porous membrane confines convective flow to media channels while enabling rapid diffusion-based transport to tissue chambers (complete distribution within 300 s at 20 \u00b5l/hr), and show controlled delivery and washout kinetics using TGF-\u03b21 stimulation, which induced a 2-fold increase in VEGF-A secretion after 2 hr that decreased following washout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by computational fluid dynamics simulations (Figure 5a-b), experimental validation with dye infusion (Figure 5\u2014figure supplement 1, Videos 1-2), and VEGF-A secretion kinetics (Figure 5c). The data demonstrate precise control over compound delivery and washout, validating the microfluidic design. Sample size for VEGF-A experiments is adequate (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors demonstrate that the RoC enables a defined interaction between photoreceptor segments and RPE at approximately 5 \u00b5m distance without impairing organoid viability or structure, and that this interaction enhances outer segment formation approximately 3-fold compared to ROs cultured without RPE or in dish culture, with no difference between the latter two conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 are well-supported by multiple lines of evidence including live-cell imaging (Figure 6a-c), immunofluorescence (Figure 6d), electron microscopy (Figure 6e-g), and quantification (Figure 6h). The 3-fold enhancement in outer segment formation is statistically significant (p<0.05). The preservation of organoid viability and structure is demonstrated in Figure 6\u2014figure supplements 1-2. The finding that RPE specifically enhances outer segment formation (C56) is a key result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors demonstrate functional phagocytosis of photoreceptor outer segments by RPE in the RoC, showing PNA lectin-positive and rhodopsin-positive particles within RPE cells after 1 day, co-localization with early endosomes, and electron microscopy evidence of membrane stack structures in RPE resembling outer segment disks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 are well-supported by multiple complementary approaches including live-cell imaging (Figure 7a), immunostaining (Figure 7b-c), and electron microscopy (Figure 7d). The phagocytosis capability was first validated using bovine outer segments (C59, Figure 7\u2014figure supplement 2). The data collectively demonstrate functional RPE-photoreceptor interaction, a key feature of the visual cycle. Claim C64 is an appropriate inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "The authors claim that the RoC enables establishment of in vivo-like calcium dynamics in photoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C17 is supported only by reference to Figure 7\u2014figure supplement 1, which shows calcium imaging traces from photoreceptors and RPE. However, no quantitative analysis, comparison to controls, or validation of 'in vivo-like' characteristics is provided. The data demonstrate that calcium imaging is feasible in the RoC, but whether the observed dynamics are truly 'in vivo-like' is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C78"
+    ],
+    "result": "The authors demonstrate that the RoC recapitulates chloroquine-induced retinopathy, showing dose-dependent effects with no significant impact at 20 \u00b5g/ml but significant cell death and lysosomal dysfunction (increased LAMP2) at 80 \u00b5g/ml in both RPE and RO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 and C78 are well-supported by data in Figure 8a-c and Figure 8\u2014figure supplement 1. The dose-response is appropriate, with concentrations based on prior literature (Chen et al., 2011). The increased LAMP2 signal at 80 \u00b5g/ml is consistent with known mechanisms of chloroquine toxicity (C70, supported by citations). Statistical significance is demonstrated for the 80 \u00b5g/ml condition. The result validates the RoC for toxicity screening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79"
+    ],
+    "result": "The authors demonstrate that the RoC mimics gentamicin-induced retinopathy with dose-dependent toxicity, and reveal a potential protective effect of the RPE barrier, as ROs cultured with RPE showed no increase in cell death at 0.5 mg/ml gentamicin while ROs without RPE showed increased cell death at this concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C75 are supported by data in Figure 8d-h showing dose-dependent gentamicin toxicity. However, claims C76-C77 regarding the protective effect of RPE are speculative and based on inference from a single comparison (Figure 8h). The proposed mechanisms (tight barrier function and melanin-binding) are plausible but not directly tested. The statistical analysis for the protective effect is not clearly presented, and the calculation method for separating RO and RPE signals (described in Methods) may introduce uncertainty. Additional experiments would be needed to confirm the protective mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C80",
+      "C81",
+      "C93"
+    ],
+    "result": "The authors claim that the RoC provides vasculature-like perfusion and enables, for the first time, recapitulation of mature photoreceptor-RPE interaction in vitro, enhancing outer segment formation and establishing physiological processes including phagocytosis, thereby recapitulating key functionalities of the human retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C13-C16, C80-C81, C93) are supported by the collective evidence from the study. The vasculature-like perfusion is demonstrated by microfluidic design and CFD simulations (Figure 5). The photoreceptor-RPE interaction is shown by multiple approaches (Figures 6-7). The enhancement of outer segment formation (3-fold increase) and functional phagocytosis are well-documented. The claim of 'for the first time' (C14) is reasonable given the novelty of combining organoids with RPE in a microfluidic platform, though this should be verified against the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94"
+    ],
+    "result": "The authors discuss the advantages of the RoC compared to existing models, including flexibility for disease modeling, advantages over post-mortem explants and animal models, scalability potential, and applications in drug development, toxicity screening, disease modeling, and personalized medicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C94 are primarily speculative statements about future applications and comparisons to other model systems. While some are based on established knowledge (e.g., C83-C85, C88, C90) or reasonable inferences from the demonstrated capabilities (e.g., C89, C91), many represent aspirational goals rather than demonstrated results (e.g., C82, C86, C87, C92, C94). The claim that the RoC 'can be the first step towards reduction and replacement of animal models' (C92) is particularly speculative and would require extensive validation studies.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2110 @@
+{
+  "submission": {
+    "id": "cdad3fdb-88ee-49ca-b8e0-4d03978887bf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:02:54.661307Z",
+    "updated_at": "2025-12-02T16:02:54.661307Z"
+  },
+  "content": [
+    {
+      "id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "submission_id": "cdad3fdb-88ee-49ca-b8e0-4d03978887bf",
+      "content_type": "manuscript",
+      "content_text": "# Cell-specific exon methylation and CTCF binding in neurons regulate calcium ion channel splicing and function\n\n## Authors\n\n- Eduardo Javier L\u00f3pez Soto<sup>1</sup> ([ORCID: 0000-0003-3298-8001](https://orcid.org/0000-0003-3298-8001))\n- Diane Lipscombe<sup>1</sup> ([ORCID: 0000-0002-7146-9119](https://orcid.org/0000-0002-7146-9119)) \u2020\n\n### Affiliations\n\n1. The Robert J and Nancy D Carney Institute for Brain Science & Department of Neuroscience, Brown University Providence United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell-specific alternative splicing modulates myriad cell functions and is disrupted in disease. The mechanisms governing alternative splicing are known for relatively few genes and typically focus on RNA splicing factors. In sensory neurons, cell-specific alternative splicing of the presynaptic CaV channel Cacna1b gene modulates opioid sensitivity. How this splicing is regulated is unknown. We find that cell and exon-specific DNA hypomethylation permits CTCF binding, the master regulator of mammalian chromatin structure, which, in turn, controls splicing in a DRG-derived cell line. In vivo, hypomethylation of an alternative exon specifically in nociceptors, likely permits CTCF binding and expression of CaV2.2 channel isoforms with increased opioid sensitivity in mice. Following nerve injury, exon methylation is increased, and splicing is disrupted. Our studies define the molecular mechanisms of cell-specific alternative splicing of a functionally validated exon in normal and disease states \u2013 and reveal a potential target for the treatment of chronic pain.\n\n## Introduction\n\nThe precise exon composition of expressed genes defines fundamental features of neuronal function (Fiszbein and Kornblihtt, 2017; Lopez Soto et al., 2019; Ule and Blencowe, 2019). It is essential to understand the mechanisms that regulate alternative pre mRNA splicing. This dynamic process regulates exon composition for\u00a0>95% of multi-exon genes according to cell-type and influenced by development, cellular activity and disease (Furlanis and Scheiffele, 2018). The cell-specific actions of RNA binding proteins are relatively well described; these splicing factors promote or repress spliceosome recruitment to pre mRNAs via cis-elements proximal to intron-exon splice junctions (Vuong et al., 2016). DNA binding proteins and epigenetic modifications have also been reported to alter alternative pre mRNA splicing by influencing RNA Polymerase II kinetics or splicing factor recruitment (Luco et al., 2011). However, epigenetic factors are not generally considered physiologically important regulators of cell-specific alternative pre mRNA splicing in neurons (except see [Ding et al., 2017]).\n\nMechanisms that regulate cell-specific alternative splicing of physiologically significant events are determined for a relatively small number of exons (Furlanis and Scheiffele, 2018; Lopez Soto et al., 2019). Voltage-gated ion channel genes, essential for all electrical signaling in the nervous system, are large multi-exon genes subject to extensive alternative splicing. The cell-specific characteristics of ion channel splice isoforms determine synapse-specific release probability, neuronal firing frequencies, sensitivity to G protein coupled receptor (GPCR) modulation, subcellular targeting, and more (Gu et al., 2012; Heck et al., 2019; Lipscombe et al., 2013; Raingo et al., 2007; Thalhammer et al., 2017).\n\nCacna1b encodes the functional core of CaV2.2 voltage-gated calcium channels which control presynaptic calcium entry and exocytosis at mammalian synapses. Numerous drugs and neurotransmitters downregulate synaptic transmission via GPCR that act on CaV2.2 channels (Huang and Zamponi, 2017). Cacna1b generates CaV2.2 splice isoforms with unique characteristics, including sensitivity to GPCRs, that underlie their functional differences across the nervous system (Allen et al., 2010; Bunda et al., 2019; Gandini et al., 2019; Macabuag and Dolphin, 2015; Marangoudakis et al., 2012; Raingo et al., 2007). The best characterized of these involves a mutually exclusive exon pair (e37a and e37b). CaV2.2 channels that contain e37a, in place of the more prevalent e37b, are expressed in a subset of nociceptors and they are especially sensitive to inhibition by \u03bc-opioid receptors (Bell et al., 2004; Castiglioni et al., 2006; Macabuag and Dolphin, 2015; Raingo et al., 2007). Cell-specific inclusion of e37a enhances morphine analgesia in vivo, and disruption of this splicing event following nerve injury reduces the action of morphine (Altier et al., 2007; Andrade et al., 2010; Jiang et al., 2013).\n\nHere,\u00a0we report the molecular mechanisms that regulate this physiologically significant splicing event, and the surprising finding that the ubiquitous 11-zinc finger CCCTC binding factor (CTCF), the master regulator of chromatin architecture in mammals, and CpG methylation are critical for cell-specific expression of Cacna1b e37a in a DRG-derived cell line. We show striking cell-specific hypomethylation of Cacna1b e37a in noxious heat sensing nociceptors and long-term disruption of this epigenetic modification in an animal model of nerve injury. Our studies offer the most comprehensive description yet, of the mechanisms of cell-specific alternative splicing of a synaptic ion channel gene exon in normal and in disease states.\n\n## Results\n\n### The ubiquitous DNA binding protein CTCF binds the Cacna1b e37a locus\n\nTo screen for factors governing cell-specific exon selection at Cacna1b e37 loci, we searched publicly available databases for RNA and DNA binding protein associated with this region (Figure 1A). We found no evidence for any RNA binding protein associating with Cacna1b e37a or e37b, based on analyses of cross-linking immunoprecipitation following by sequencing (CLIP-seq) data. However, we observed a robust chromatin immunoprecipitation followed by sequencing (ChIP-seq) signal for the zinc finger DNA binding protein CCCTC-binding factor (CTCF) that overlaps the CACNA1B e37a locus in\u00a0~50% of human cell lines (27 of 50; 9 of 50 tracks are shown in Figure 1B; ENCODE Project Consortium, 2012). None of the 50 tracks contained a ChIP-seq CTCF signal associated with CACNA1B e37b (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54879/elife-54879-fig1-v2.jpg)\n\n**Figure 1.:** (A) The 100 vertebrate basewise conservation track for\u00a0~30 kb region of CACNA1B (Hg19; chr9:104,970,785\u2013141,003,093). Five conserved elements align to e35, e36, e37a, e37b, and e38. (B) ChIP-seq signals for CTCF binding in nine different human cell lines are aligned to CACNA1B region in A. Y-axes for ChIP-seq tracks are scaled to the maximum signal within the selected region. In total, there is CTCF signal at CACNA1B e37a in 27 of 50 human cell lines. Link to the UCSC genome output (https://genome.ucsc.edu/s/ejlopezsoto/Cacna1b%20e35%20to%20e38%20conservation%20track) (ENCODE Project Consortium, 2012).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54879/elife-54879-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** ChIP-seq signals for RAD21, SMC3, CEBPB and CTCFL binding in human cell lines aligned to\u00a0~10 kb region of CACNA1B (Hg19; chr9: 140,990,685\u2013141,000,586). Y-axes for ChIP-seq tracks are scaled to the maximum signal within the selected region. Tracks with positive binding signals are shown. In total, there were binding signals in CACNA1B e37a locus for RAD21 in 3 of 27 cell lines, SMC3 in 1 of 27 cell lines, CEBPB in 3 of 27 cell lines, and CTCFL in 1 of 27 cell lines (https://genome.ucsc.edu/s/ejlopezsoto/Cacna1b%20e35%20to%20e38%20conservation%20track) (ENCODE Project Consortium, 2012).\n\nIn addition to CTCF, four other DNA binding proteins associate with CACNA1B e37a but in far fewer cell lines compared to CTCF (Figure 1\u2014figure supplement 1). Of these, RAD21 (3 of 27 cell lines) and SMC3 (1 of 27 cell lines) are often found in a complex with CTCF (Zhang et al., 2018); CTCFL (1 of 27 cell lines) is a CTCF-like testes-specific DNA binding protein (Loukinov et al., 2002), and CEBPB (3 of 27 cell lines) is associated with gene enhancers (Figure 1\u2014figure supplement 1A; Nerlov, 2007). We focused on CTCF as the most likely factor involved in enhancing CACNA1B e37a inclusion during pre-mRNA splicing given these data, and because CTCF has been proposed to influence exon recognition in PTPRC (Shukla et al., 2011).\n\nCTCF is ubiquitously expressed in the bilaterian phyla (Heger et al., 2012) and widely recognized as the master organizer of chromatin in mammals (Ong and Corces, 2014). Notably, CTCF was proposed as a regulator of alternative splicing in immune cells (Ruiz-Velasco et al., 2017; Shukla et al., 2011), although a role for CTCF in regulating cell-specific splicing has not been proposed in neurons.\n\nSeveral observations suggested to us that CTCF might be the key factor promoting Cacna1b e37a recognition in neurons: CTCF binding was robust in many, but not all human cell lines (Figure 1B); Cacna1b e37a contains a highly conserved consensus CTCF binding motif that is not present in e37b (Figure 2A); and it associates with mouse Cacna1b e37a but not e37b, which share 60% nucleotide identity (Figure 2A and B). We therefore set out to test this hypothesis in vitro and in vivo.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54879/elife-54879-fig2-v2.jpg)\n\n**Figure 2.:** (A) Mouse Cacna1b e37a and e37b sequences are\u00a0~60% identical. Nucleotides conserved across exons are shown as dashes in the e37b sequence. A 15 nucleotide CTCF binding motif in e37a (underlined) is not present in e37b. (B) Gel shift assay for CTCF and a Cacna1b e37a DNA probe (139 bp) that also contains 5\u2019 and 3\u2019 flanking intron sequences alone (0 ng) or with increasing concentrations of recombinant CTCF (10\u2013200 ng). Quantification of CTCF bound to e37a probe relative to total e37a probe at different CTCF concentrations (red line represents fitted Hill equations r2 = 0.9338; Kd\u00a0=\u00a00.0461\u00a0\u00b1\u00a00.0055 ng) (at least two biological replicates per CTCF concentration). (C) Gel shift assay for CTCF and DNA probes (139 bp) containing either Cacna1b e37a or e37b alone (lanes 1 and 5) or preincubated with 50 ng recombinant CTCF (lanes 2 and 6), CTCF plus 0.5 \u03bcg anti-CTCF (lanes 3 and 7), or CTCF plus 1000-fold excess unlabeled e37a or e37b probes (lanes 4 and 8). (D) Quantification of CTCF bound to e37 probes relative to total e37a or e37b probe (ANOVA P value\u00a0=\u00a00.0006 for e37a probe, Dunnett\u2019s multi-comparison P values for lane 1 vs 2\u00a0=\u00a00.0067, lane 1 vs 3\u00a0=\u00a00.0009, lane 1 vs 4\u00a0=\u00a00.9999) (three biological replicates per condition). Biological replicates represent independent gel shift assays.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54879/elife-54879-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) RNA gel shift assay for Cacna1b probes (97 bp) containing e37a or e37b with 50 ng recombinant CTCF. (B) DNA gel shift assay for different length e37a Cacna1b DNA probes. Full length, 3\u2019 truncated, and 5\u2019 truncated DNA probes containing e37a either alone (lanes 1, 4, 7, 10, 13, 16, 19, 22 and 25) or preincubated with 50 ng recombinant CTCF (lanes 2, 5, 8, 11, 14, 17, 20, 23 and 26), or CTCF plus 1000-fold excess unlabeled e37a competitor (lanes 3, 6, 9, 12, 15, 18, 21, 24 and 27). Cacna1b probes containing e37a (purple) and CTCF binding motif (yellow) are shown. 3\u2019 truncated DNA probes are shown in lanes 4 to 12, and 5\u2019 truncated DNA probes in lanes 13 to 27.\n\n### CTCF binds Cacna1b e37a in vitro\n\nWe investigated direct and specific binding of CTCF to Cacna1b e37a in vitro using the electrophoretic mobility shift assay. Recombinant CTCF bound to an e37a-containing DNA probe in a concentration manner (Figure 2B) but CTCF failed to bind an e37a-containing RNA probe (Figure 2\u2014figure supplement 1A). To establish specificity of binding, we incubated labelled e37a and e37b DNA probes (139 bp) alone; with recombinant CTCF; with CTCF plus CTCF monoclonal antibody; or with CTCF plus unlabeled probe (Figure 2C and D). In the presence of 50 ng recombinant CTCF,~30\u201340% of the e37a DNA probe migration was slowed, relative to no CTCF, as indicated by the presence of a second band which was shifted to higher molecular weights (Figure 2C and D; compare lanes 1 and 2). Based on the following observations we conclude that CTCF binds with high specificity to Cacna1b e37a but not Cacna1b e37b: 1) CTCF bound e37a but not e37b DNA probes when studied using the same conditions (Figure 2C and D; compare lanes 2 and 6); 2) the appearance of a third super-shifted band when e37a probe is incubated with both recombinant CTCF and a CTCF monoclonal antibody (Figure 2C and D; lane 3); 3) total displacement of CTCF binding from the labeled e37a DNA probe on addition of unlabeled e37a DNA probe (Figure 2C and D; lane 4); and CTCF binding to e37a DNA is concentration dependent (Figure 2B). We also tested the ability of various truncated e37a DNA probes to bind CTCF, but CTCF binding was reduced in all truncated constructs (Figure 2\u2014figure supplement 1B). This is consistent with other reports that CTCF binding to DNA is strongly influenced by several factors including probe length (Fitzpatrick et al., 2007).\n\n### CTCF binds Cacna1b e37a locus in vivo and modifies e37a splicing in neuronal cells\n\nHaving shown that CTCF binds directly and specifically to Cacna1b e37a locus in vitro, but not e37b, we next tested if CTCF levels influence Cacna1b e37a splicing in neuronal cells. We used the rat DRG/mouse neuroblastoma hybrid F11 cell line which expresses Cacna1b (Allen et al., 2017), to determine if CTCF binds Cacna1b e37a locus in a cell, and to test if CTCF levels influence Cacna1b e37a splicing. CTCF is localized to cell nuclei in F11 cells (Figure 3A). We found that CTCF binds Cacna1b e37a locus in F11 cells based on CTCF ChIP-qPCR (Figure 3B). By contrast, CTCF does not bind e37b locus (Figure 3B). Our findings in F11 cells, that CTCF associates with e37a but not e37b, are consistent with ChIP-seq data analyzed in 27 different human cell lines (see Figure 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54879/elife-54879-fig3-v2.jpg)\n\n**Figure 3.:** (A) CTCF is expressed in F11 cells and is localized to cell nuclei. Fluorescence images show DAPI (nuclear maker), anti-CTCF, and overlay. (B) CTCF ChIP-qPCR targeted to Cacna1b e37 loci in F11 cells (Paired t-test, P value\u00a0=\u00a00.0274 for e37a vs e37b) (three biological replicates per condition). (C) Efficiency and specificity of qPCR primers. Cacna1b e36, e37a and e37b-specific primers amplify DNA with similar log-linear relationships between 1 \u00d7 10\u22128 and 1.5 \u00d7 10\u22121 ng cDNA (upper panel) (gray, pink and orange lineal regression lines for e36, e37a and e37b data sets have similar slopes; Fisher's tests P value\u00a0=\u00a00.4383). qPCR primer specificity was confirmed by using Cacna1b e37a and e37b cDNA clones (lower panel). (D) Western blot from F11 cells expressing control Gfp or Ctcf-Gfp cDNA 3 days after transfection. In control cells, anti-CTCF identifies a single band at\u00a0~135 kDa. Whereas, in cells overexpressing Ctcf-Gfp, anti-CTCF identifies two bands, endogenous\u00a0~135 kDa and a second\u00a0~160 kDa band consistent with the expected size of the CTCF-GFP fusion protein. Transfer membrane was cut at\u00a0~75 kDa (dotted red line) and the lower part treated with anti-GAPDH to measure GAPDH levels for protein expression and loading reference. CTCF protein levels relative to GAPDH (t-test P value\u00a0=\u00a00.0227 for Gfp vs Ctcf-Gfp) (three biological replicates per condition). (E) qRT-PCR of Cacna1b e37a relative to e36 in F11 cells overexpressing Gfp or Ctcf -Gfp cDNA over three days (t-test P values\u00a0=\u00a00.2263 for Gfp vs Ctcf -Gfp for day 1; p=0.0065 for day 2; and p=0.0019 for day 3) (three biological replicates per condition). (F) Western blot from F11 cells expressing control siRNA (Con) or Ctcf siRNA 3 days after transfection. In control cells, anti-CTCF identifies endogenous CTCF at\u00a0~135 kDa, and reduced CTCF levels in cells expressing Ctcf siRNA. Transfer membrane was cut at\u00a0~75 kDa (dotted red line) and the lower part treated with anti-GAPDH to measure GAPDH levels for protein expression and loading reference. CTCF protein levels relative to GAPDH (t-test P value\u00a0=\u00a00.0008 for Con vs Ctcf siRNA) (three biological replicates per condition). (G) qRT-PCR of Cacna1b e37a relative to e36 in F11 cells expressing control siRNA (Con) or Ctcf siRNA over three days (t-test P values\u00a0=\u00a00.6035 for Con vs Ctcf siRNA for day 1; p=0.0022 for day 2; and p=0.0046 for day 3) (at least three biological replicates per condition). Biological replicates represent independent cell cultures, treatment and transfections.\n\nWe next tested if CTCF levels in F11 cells influence the expression of Cacna1b e37a mRNAs. We conducted high-efficient qPCR using primer pairs for e37a, e37b, and e36 (constitutive exon), which were optimized and matched for specificity and accuracy, to quantify mRNAs (Figure 3C). We either overexpressed CTCF, or knocked down CTCF in F11 cells (Figure 3D and F) and then quantified levels of Cacna1b e37a mRNAs, relative to total Cacna1b mRNAs (e36; Figure 3E and G). When overexpressed (Figure 3D and E), recombinant CTCF tagged with GFP induced a\u00a0~\u00a02 fold increase in Cacna1b e37a levels within 2 days of cDNA transfection, as compared to cells expressing Gfp alone (Figure 3E). siRNA targeting Ctcf in F11 cells (Figure 3F and G) had the expected opposite effect; levels of e37a-containing Cacna1b mRNAs were\u00a0~30% reduced 3 days after transfecting Ctcf siRNA relative to control siRNA (Figure 3G). Our findings show that CTCF promotes e37a inclusion in Cacna1b mRNAs, and that CTCF levels are rate limiting for Cacna1b e37a splicing in neuronal cells.\n\n### 5-mC DNA modification controls CTCF binding and Cacna1b e37a inclusion\n\nCTCF binding to gDNA is reported to be inhibited by 5-methylcytosine (5-mC) within the CTCF binding motif and influences control of alternative splicing in PTPRC\u00a0(Hashimoto et al., 2017; Marina et al., 2016; Shukla et al., 2011). We used pharmacological agents to alter global gDNA 5-mC, assessed their impact on Cacna1b e37a splicing and e37a locus CpG 5-mC in F11 cells (Figure 4; Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54879/elife-54879-fig4-v2.jpg)\n\n**Figure 4.:** (A) 5-Azacytidine (5-Aza) inhibits the activity of DNA methyltransferases (DNMTs), and 2-hydroxyglutarate (2-HG) inhibits the activity of ten-eleven translocation proteins (TETs). (B) Global 5-mC levels in F11 cells after 3 day exposure to different concentrations of 5-Aza (left) (ANOVA P value\u00a0=\u00a00.056, Dunnett\u2019s multi-comparison P values for 0 vs 0.5 \u03bcM\u00a0=\u00a00.5371, 0 vs 1 \u03bcM\u00a0=\u00a00.1333, 0 vs 5 \u03bcM\u00a0=\u00a00.0688, 0 vs 10 \u03bcM\u00a0=\u00a00.0421, and 0 vs 10 \u03bcM\u00a0=\u00a00.0280) and associated qRT-PCR of Cacna1b e37a relative to e36 levels (right) (ANOVA P value =\u00a0<0.0001, Dunnett\u2019s multi-comparison P values for 0 vs 0.5 \u03bcM\u00a0=\u00a00.9874, 0 vs 1 \u03bcM\u00a0=\u00a00.9998, 0 vs 5 \u03bcM\u00a0=\u00a00.0015, 0 vs 10 \u03bcM =\u00a0<0.0001) (three biological replicates per condition). (C) Location of 5 CpG sites in Cacna1b e37a locus (open circles) and CTCF binding motif (underlined). (D) 5-mC levels at CpG sites in Cacna1b e37a locus in control F11 cells (DMSO, left) and after 3 day treatment with 5 \u03bcM 5-Aza (right). Methylated (5-mCpG, filled circle) and unmethylated (CpG, open circle) sites are shown for independent clones ordered from most to least methylated. 5-mC levels for both conditions (two-way ANOVA P value\u00a0=\u00a00.0260 for treatment factor) (three biological replicates per condition). (E) qRT-PCR of Cacna1b e37a relative to e36 in F11 cells in the absence and after 3 day treatment with 5 \u03bcM 5-Aza for cells expressing control siRNA (Con) or Ctcf siRNA (t-test P value\u00a0=\u00a00.0219 for untreated vs 5-Aza with Con siRNA; and\u00a0=\u00a00.9303 for untreated vs 5-Aza with Ctcf siRNA) (three biological replicates per condition). (F) Global 5-mC levels in F11 cells following 1 day exposure to different concentrations of 2-HG (left) (ANOVA P value\u00a0=\u00a00.0022, Dunnett\u2019s multi-comparison P values for 0 vs 0.01 mM =\u00a0>0.9999, 0 vs 0.1 mM\u00a0=\u00a00.9878, 0 vs 0.5 mM\u00a0=\u00a00.6062, 0 vs 1 mM\u00a0=\u00a00.4755, and 0 vs 10 mM\u00a0=\u00a00.0010), and associated qRT-PCR of Cacna1b e37a relative to e36 levels (right) (ANOVA P value\u00a0=\u00a00.0001, Dunnett\u2019s multi-comparison P values for 0 vs 0.01 mM\u00a0=\u00a00.9997, 0 vs 0.1 mM\u00a0=\u00a00.6026, 0 vs 0.5 mM\u00a0=\u00a00.1799, 0 vs 1 mM\u00a0=\u00a00.0487, and 0 vs 10 mM\u00a0=\u00a00.0003) (three biological replicates per condition). (G) 5-mC levels at CpG sites in Cacna1b e37a locus in control F11 cells (H2O, left) and after 1 day treatment with 10 mM 2-HG (right). Methylated (5-mCpG, filled circle) and unmethylated (CpG, open circle) sites are shown for independent clones ordered from most to least methylated. 5-mC levels for both conditions (two-way ANOVA P value\u00a0=\u00a00.0745 for treatment factor) (three biological replicates per condition). Biological replicates represent independent cell cultures, treatment and transfections.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54879/elife-54879-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) F11 cytotoxicity with different concentrations of 5-Azacytidine (5-Aza) for 3 days (ANOVA P value =\u00a0<0.0001, Dunnett\u2019s multi-comparison P values for 0 vs 0.5 \u03bcM\u00a0=\u00a00.9380, 0 vs 1 \u03bcM\u00a0=\u00a00.3112, 0 vs 5 \u03bcM\u00a0=\u00a00.0518, 0 vs 10 \u03bcM\u00a0=\u00a00.0061, 0 vs 100 \u03bcM =\u00a0<0.0001) (three biological replicates per condition). (B) CTCF protein levels in F11 cells after 3 days of control (DMSO) or 5 \u03bcM 5-Aza treatment. Anti-CTCF identifies a single band at\u00a0~135 kDa. Transfer membrane was cut at\u00a0~75 kDa (dotted red line) and the lower part treated with anti-GAPDH to measure GAPDH levels for protein expression and loading reference. CTCF protein levels relative to GAPDH (t-test P value\u00a0=\u00a00.2637 for DMSO vs 5-Aza) (three biological replicates per condition). (C) Global 5-hydroxymethylcytosine (5-hmC) levels in F11 cells after 3 days exposure to different concentrations of 5-Aza (ANOVA P value\u00a0=\u00a00.9832, Dunnett\u2019s multi-comparison P values for 0 vs 0.5 \u03bcM\u00a0=\u00a00.9998, 0 vs 1 \u03bcM\u00a0=\u00a00.9935, 0 vs 5 \u03bcM\u00a0=\u00a00.9975, and 0 vs 10 \u03bcM\u00a0=\u00a00.99971) (three biological replicates per condition). (D) CTCF protein levels in F11 cells after 1 day of control (H2O) or 10 mM 2-hydroxyglutarate (2-HG) treatment. Anti-CTCF identifies a single band at\u00a0~135 kDa. Transfer membrane was cut at\u00a0~75 kDa (dotted red line) and the lower part treated with anti-GAPDH to measure GAPDH levels for protein expression and loading reference. CTCF protein levels relative to GAPDH (t-test P value\u00a0=\u00a00.3716 for H2O vs 2-HG) (three biological replicates per condition). (E) Global 5-hmC levels in F11 cells after 1 day exposure to different concentrations of 2-HG (ANOVA P value\u00a0=\u00a00.0667, Dunnett\u2019s multi-comparison P values for 0 vs 0.01 mM\u00a0=\u00a00.5444, 0 vs 0.1 mM\u00a0=\u00a00.4971, 0 vs 0.5 mM\u00a0=\u00a00.9087, 0 vs 1 mM\u00a0=\u00a00.0417, and 0 vs 1 mM\u00a0=\u00a00.0511) (three biological replicates per condition). Biological replicates represent independent cell cultures, treatment and transfections.\n\nWe used the pharmacological inhibitor of DNA methyltransferases (DNMTs), 5-Azacytidine (5-Aza), to reduce overall 5-mC levels in F11 cells (Figure 4A). Increasing concentrations of 5-Aza decreased global gDNA 5-mC levels in F11 cells to\u00a0~60% of control (Figure 4B), without altering CTCF protein levels or global levels of 5-hydroxymethylcytosine (5-hmC) (Figure 4\u2014figure supplement 1B and C). Reduced 5-mC levels induced by 5-Aza were associated with a concentration dependent increase in Cacna1b e37a mRNA levels in F11 (Figure 4B). We used 5 \u03bcM 5-Aza for 3 days in subsequent experiments to maximize effects on 5-mC levels, while limiting cell toxicity (Figure 4D and E); higher concentrations of 5-Aza were cytotoxic (Figure 4\u2014figure supplement 1A).\n\nBy targeted bisulfite sequencing, we found that 5 \u03bcM 5-Aza treatment in F11 cells, which induced a\u00a0>\u00a02 fold increase in Cacna1b e37a mRNA levels, reduced 5-mC levels of the 5 CpG sites in Cacna1b e37a locus by on average\u00a0~20%, although not uniformly, relative to control (DMSO) (Figure 4C and D). The changes in methylation induced by 5 \u03bcM 5-Aza in our experiments are consistent with other studies that use pharmacological agents, and DNA editing tools, to manipulate gDNA methylation and alter gene expression (Hwang et al., 2007; Kang et al., 2019; Liu et al., 2016; Tabolacci et al., 2016; Zhou et al., 2014). We also found that the ability of 5-Aza to promote Cacna1b e37a inclusion in F11 cells depended on CTCF availability. In cells expressing Ctcf siRNA, 5-Aza had no effect on e37a inclusion (Figure 4E). These experiments reinforce our hypothesis that CTCF is a factor in Cacna1b e37a recognition and that it promotes e37a inclusion during Cacna1b pre-mRNA splicing.\n\nNext, we used the global pharmacological inhibitor of ten eleven translocase enzymes (TETs), 2-hydroxyglutarate (2-HG), to increase overall 5-mC levels in F11 cells (Figure 4A). Increasing concentrations of 2-HG increased global DNA 5-mC levels in F11 cells (Figure 4F), reduced levels of 5-hydroxymethylcytosine (5-hmC), but did not alter CTCF protein levels (Figure 4\u2014figure supplement 1D and E). 10 mM 2-HG treatment for 1 day induced\u00a0~3 fold increase in global 5-mC methylation in F11 cells (Figure 4F) and, under these conditions, reduced Cacna1b e37a mRNAs to almost undetectable levels (Figure 4F). By targeted bisulfite sequencing, we found that 10 mM 2-HG treatment in F11 cells induces a slight increase of\u00a0~10% in 5-mC levels at the 5 CpG sites in Cacna1b e37a locus relative to control (Figure 4G).\n\nIn the above experiments, global pharmacological manipulation of 5-mC gDNA reveals a negative correlation between 5-mC at the Cacna1b e37a locus and Cacna1b e37a mRNA levels in F11 cells. Our findings support the hypothesis that 5-mC within Cacna1b e37a locus occludes CTCF binding and impairs CTCF-mediated exon recognition during alternative pre-mRNA splicing.\n\n### DNMT3a, TET1 and TET2 control CTCF actions on Cacna1b e37a splicing\n\nTo identify the specific enzymes that regulate the 5-mC within Cacna1b e37a locus in F11 cells, we knocked down individual DNMTs, and overexpressed cDNAs encoding known TETs, implicated in dynamic regulation of gDNA methylation in neurons (Chen et al., 1991; He et al., 2011) and then quantified the impact on Cacna1b e37a expression by qRT-PCR (Figure 5A and B). We found that Dnmt3a siRNA (3a), but not Dnmt1 (1) or Dnmt3b siRNAs (3b), promoted\u00a0>2 fold increase Cacna1b e37a inclusion, compared to control siRNA in F11 cells (Figure 5A); and that overexpressed cDNAs encoding Tet1 (1) and Tet2 (2), but not Tet3 (3) cDNAs, promoted\u00a0~2 fold increase Cacna1b e37a inclusion in mRNA in F11 cells compared to control (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54879/elife-54879-fig5-v2.jpg)\n\n**Figure 5.:** (A) DNA methyltransferases (DNMTs) methylate CpG sites in gDNA. qRT-PCR of Cacna1b e37a relative to e36 levels in F11 cells in the absence and after 3 day treatment with 5 \u03bcM 5-Aza (t-test P value\u00a0=\u00a00.0923), and in cells expressing control siRNAs (Con) or siRNAs targeting Dnmt1, Dnmt3a, or Dnmt3b after 3 days (ANOVA P value\u00a0=\u00a00.0002, Dunnett\u2019s multi-comparison P values for Con vs Dnmt1 siRNA\u00a0=\u00a00.6925, Con vs Dnmt3a siRNA\u00a0=\u00a00.0003, and Con vs Dnmt3b siRNA\u00a0=\u00a00.9226) (three biological replicates per condition). (B) Ten-eleven translocating proteins (TETs) promote demethylation of CpG sites in gDNA. qRT-PCR of Cacna1b e37a relative to e36 levels in F11 cells expressing control Gfp, Tet1, Tet2, or Tet3 cDNAs for 3 days (ANOVA P value =\u00a0<0.0001, Dunnett\u2019s multi-comparison P values for Gfp vs Tet1 cDNA =\u00a0<0.0001, Gfp vs Tet2 cDNA\u00a0=\u00a00.0008, and Gfp vs Tet3 cDNA\u00a0=\u00a00.8676) (three biological replicates per condition). (C) dCAS-targeting strategy to localize TET1 to Cacna1b e37a locus using guide RNAs (gRNA). qRT-PCR of Cacna1b e37a relative to e36 levels in F11 cells expressing dCas9-Tet1 alone (Con) or with gRNAs to the 5\u2019 (1) or 3\u2019 (2) ends of Cacna1b e37a locus or non-targeting gRNA (nt) (ANOVA P value\u00a0=\u00a00.0010, Dunnett\u2019s multi-comparison P values for Con vs gRNA 1\u00a0=\u00a00.0010, Con vs gRNA 2\u00a0=\u00a00.0186, and Con vs gRNA nt\u00a0=\u00a00.9914) (three biological replicates per condition). Biological replicates represent independent cell cultures, treatment and transfections.\n\nWe next employed deactivated CAS9 (dCAS9) to target TET1 directly to Cacna1b e37a locus. We target-optimized guide RNA (gRNA) sequences to 5\u2019 and 3\u2019 regions of Cacna1b e37a locus to localize dCAS9-TET1 and measured Cacna1b e37a inclusion by qRT-PCR in F11 cells (Figure 5C). Both gRNA-dCAS9-TET1 complexes increased Cacna1b e37a expression in F11 by\u00a0~2 fold compared to F11 cells expressing dCas9-Tet1 alone (Con) or to F11 cells expressing a non-targeting gRNA (nt) (Figure 5C).\n\nOur results support a model in which Cacna1b e37a inclusion during alternative splicing is inhibited by DNMT3a and promoted by TET1 and TET2.\n\n### Cacna1b e37a is expressed in Trpv1-lineage sensory neurons of mouse dorsal root ganglia\n\nIn previous studies, we showed that Cacna1b e37a mRNAs are enriched in DRG of rat and, by single cell RT-PCR coupled to electrophysiological analyses, we found further enrichment in a subset of capsaicin-responsive nociceptors (Bell et al., 2004). Here we extend these studies and use a mouse strain expressing the tdTomato or yfp reporter in Trpv1-lineage neurons for fluorescence-activated cell sorting (FACS). By endpoint RT-PCR, we found that Cacna1b e37a mRNAs are exclusive to Trpv1-lineage neurons of DRG (Figure 6A), whereas Cacna1b e37b mRNAs are expressed in both Trpv1-lineage and non Trpv1-lineage cells (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54879/elife-54879-fig6-v2.jpg)\n\n**Figure 6.:** (A) Trpv1Cre mouse strain crossed to lox-STOP-loxTdTomato expressed the TdTomato reporter in Trpv1-lineage neurons (Trpv1TdTomato). DRG cells were separated into Trpv1-lineage and non-Trpv1-lineage cells by fluorescence-activated cell sorting (FACS). Using specific primer pairs RT-PCR products amplified: constitutive Cacna1b e36, alternative spliced e37a and e37b, and Gapdh in Trpv1-lineage and non Trpv1-lineage cells for all primer pairs except for non Trpv1-lineage cells that failed to amplify from e37a-specific primers. Data shown are representative of a biological replicate from at least three different FACS-separated DRGs from three animals. (B) Methylation state of 5 CpG sites in Cacna1b e37a locus in non Trpv1-lineage (left) and in Trpv1-lineage neurons (right). Methylated (5-mCpG, filled circle) and unmethylated (CpG, open circle) sites are shown for independent clones ordered from most to least methylated. Each set of sequences represents data pooled from at least 10 FACS-separated DRG cells from one animal. These results are confirmed in Figure 7D for six additional animals.\n\nThe striking cell-specific expression pattern in Trpv1-lineage, but not in non Trpv1-lineage neurons, offered a way to test our hypothesis in vivo: If 5-mC CpG of Cacna1b e37a locus is important for e37a recognition, then Trpv1-lineage neurons should have reduced 5-mC levels relative to non Trpv1-lineage DRG cells in Cacna1b e37a locus. We used targeted bisulfite sequencing and found that all 5 CpG sites in Cacna1b e37a locus in non Trpv1-lineage cells are methylated in the majority of sequences (Figure 6B). By contrast, of 20 independent clones derived from Trpv1-lineage neurons, only one CpG site in Cacna1b e37a locus, in one sequence contained 5-mC (Figure 6B).\n\nOur results show that 5-mC CpGs of Cacna1b e37a locus are cell-specific \u2013 CpG sites in e37a are hypomethylated in Trpv1-lineage neurons relative to the close to fully methylated state of e37a locus in non Trpv1-lineage cells. These data provide strong independent support for our hypothesis, and they suggest that cell-specific control of local methylation regulates the level of Cacna1b e37a inclusion during pre-mRNA splicing.\n\n### Peripheral nerve injury increases 5-mC within Cacna1b e37a locus in Trpv1-lineage neurons\n\nWe showed previously that Cacna1b e37a mRNA levels decrease in rat DRG following peripheral nerve injury, and this disruption in splicing is linked to reduced efficacy of morphine analgesia (Altier et al., 2007; Jiang et al., 2013). We therefore tested if nerve injury-induced disruption of Cacna1b e37a expression might reflect an underlying alteration in the local methylation state of Cacna1b e37a locus. We used the spared nerve injury (SNI) model of neuropathic pain which involves ligating and transecting two of three branches of the sciatic nerve (tibial and common peroneal) on one side of the animal, while leaving the sural nerve intact (Decosterd and Woolf, 2000). The SNI model results in stable, long-term hypersensitivity in the ipsilateral area of the hind paw which is innervated by the spared sural. We measured behavioral responses in hind paw, 5-mC and Cacna1b e37a levels in DRG, ipsilateral and contralateral to the surgery within the same animals. Hyperalgesia in ipsilateral hind paws developed within 2 days, and was sustained at least 8 days following SNI (Figure 7A and B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/54879/elife-54879-fig7-v2.jpg)\n\n**Figure 7.:** (A) Spared nerve injury (SNI) model was used to induce prolonged hyperalgesia in Trpv1TdTomato mice. Behavioral assessments are shown in B. Trpv1-lineage and non Trpv1-lineage cells of contralateral and ipsilateral L3 and L4 DRG from Sham and SNI mice were separated by FACS. Trpv1-lineage neurons were analyzed by qRT-PCR in C, and Trpv1-lineage and non Trpv1-lineage cells pooled from three mice per condition for bisulfite sequencing in D. (B) Thermal sensitivity assessment of mice prior to, and 8 days after surgery. Plantar, hind paw withdrawal latencies measured in response to a radiant heat source both ipsilateral and contralateral to the site of surgery in sham and SNI mice. SNI mice developed hyperalgesia in ipsilateral but not contralateral hind paws (two-way ANOVA P value\u00a0=\u00a00.0173 for side to the surgery factor, and P value =\u00a0<0.0001 for time factor). By contrast, sham surgery had no effect on paw withdrawal latencies in response to heat source (two-way ANOVA P value\u00a0=\u00a00.2136 for side to the surgery factor, and P value\u00a0=\u00a00.7780 for time factor) (four biological replicates per condition). (C) qRT-PCR of e37a relative to e36 in Trpv1-lineage neurons. Dotted lines connect contra and ipsilateral L3 and L4 DRG values from the same animals (Paired t-test P values for contra vs ipsilateral DRG\u00a0=\u00a00.3671 from sham, and P value\u00a0=\u00a00.0384 from SNI mice) (four biological replicates per condition). (D) Methylation state of 5 CpG sites in Cacna1b e37a locus in non Trpv1-lineage and in Trpv1-lineage neurons from L3 and L4 DRG ipsilateral to the site of surgery for sham (left) and SNI (right) mice. Methylated (5-mCpG, filled circle) and unmethylated (CpG, open circle) sites are shown for independent clones ordered from most to least methylated. Each set of sequences represents data pooled from L3 and L4 DRG from three animals, for a total of 6 animals per condition. Biological replicates are independent mice.\n\nWe found that Cacna1b e37a mRNA levels were reduced in Trpv1-lineage neurons isolated from L3-L4 DRG ipsilateral to the injured nerve in all four animals, relative to contralateral L3-L4 DRG (Figure 7C). By contrast, there were no consistent changes in Cacna1b e37a mRNA levels in Trpv1-lineage neurons isolated from sham DRG compared to contralateral (Figure 7C). We quantified 5-mC levels within Cacna1b e37a locus in Trpv1-lineage neurons and non Trpv1-lineage cells from ipsilateral L3-L5 DRG pooled from 3 sham and 3 SNI animals. We confirmed that Cacna1b e37a locus is hypomethylated in Trpv1-lineage neurons relative to the non Trpv1-lineage cell population in DRG (also see Figure 6) but, after injury, 5-mC CpG at Cacna1b e37a locus is greater in ipsilateral Trpv1-lineage neurons (Figure 7D). 5-mC CpG levels are unchanged in ipsilateral non Trpv1-lineage cell populations of DRG from SNI animals compared to sham (see Figure 7D).\n\nWe conclude that 5-mC levels of CpG sites in Cacna1b e37a locus suppresses e37a inclusion during Cacna1b alternative pre-mRNA splicing in vivo in most neurons. Methylation of Cacna1b e37a locus likely\u00a0occludes CTCF binding and accounts for the low expression of Cacna1b e37a mRNAs throughout the nervous system. In contrast, in Trpv1-lineage neurons, Cacna1b e37a locus is hypomethylated, likely\u00a0permitting CTCF to bind and to promote Cacna1b e37a inclusion. Differential local methylation dictates the cell-specific pattern of Cacna1b e37a expression particularly in Trpv1-lineage neurons of DRG. We showed that the increase in 5-mC at CpG sites in Cacna1b e37a locus following peripheral nerve injury, that induces long-lasting hyperalgesia, is associated with reduced Cacna1b e37a expression in Trpv1-lineage neurons.\n\n## Discussion\n\nCell-specific alternative splicing is essential for normal cell function, and\u00a0~30% of all disease-causing mutations are related to RNA splicing (Montes et al., 2019). Our studies reveal the cell-specific mechanisms that govern alternative splicing of a critical synaptic calcium ion channel gene and they shed light on chronic pathology that follows nerve injury.\n\nCell-specific Cacna1b e37a splicing in Trpv1-lineage nociceptors underlies the unique sensitivity of voltage-gated CaV2.2 calcium channels to GPCRs important for defining their properties in vivo. Contrary to our initial expectations, we found that a ubiquitous DNA binding protein, CTCF promotes e37a inclusion in Cacna1b mRNAs in F11 cells (Figure 8). This unexpected exon-specific action of CTCF is conferred by cell-specific hypomethylation within the CTCF binding motif in Cacna1b e37a locus. E37a locus demethylation is disrupted following nerve injury resulting in increased methylation levels and impaired Cacna1b e37a splicing in Trpv1-lineage nociceptors. Injury-induced increased methylation levels of Cacna1b e37a locus likely underlies some of the chronic pathophysiology associated with peripheral nerve injury.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/54879/elife-54879-fig8-v2.jpg)\n\n**Figure 8.:** In na\u00efve animals, in most neurons, Cacna1b e37a locus is hypermethylated (5-mC) and CTCF is presumed not to bind this locus based on our results in the DRG-derived F11 cell line. During splicing, e37a is skipped and Cacna1b mRNAs include e37b. In contrast, in Trpv1-lineage neurons, Cacna1b e37a locus is hypomethylated and is presumed to be permissive for CTCF binding. Hypomethylation promotes e37a inclusion and both Cacna1b e37a and e37b mRNAs are expressed. E37a confers strong sensitivity to the CaV2.2 channel to inhibition by \u03bc-opioid receptors (\u03bcOR; [Andrade et al., 2010; Raingo et al., 2007]). Morphine is more effective at inhibiting e37a-containing CaV2.2 channels. After peripheral nerve injury that results in pathological pain, methylation level of Cacna1b e37a locus is increased, CTCF binding is presumed to be impaired, and Cacna1b e37a mRNA levels are decreased. This disrupted splicing pattern is associated with reduced efficacy of morphine in vivo (Jiang et al., 2013).\n\n### CTCF and methylation regulate cell-specific alternative splicing\n\nTo date, the action of CTCF on alternative splicing has only been studied in immune cells and non-neuronal-derived cell lines (Agirre et al., 2015; Ruiz-Velasco et al., 2017; Shukla et al., 2011), and a role in cell-specific splicing in neurons have not been demonstrated. Our data are consistent with a model in which local hypomethylation of Cacna1b e37a locus permits CTCF binding, and this converts a normally weak exon, into one that is recognized by the spliceosome (Shukla et al., 2011). This splicing enhancer model for CTCF action, proposed by Oberdoerffer and colleagues studying its role in alternative splicing in PTPRC\u00a0(Shukla et al., 2011), is supported by our previous analyses. For example, using two novel exon-substituted Cacna1b knock in mouse strains (Cacna1be37a/e37a and Cacna1be37b/e37b) (Andrade et al., 2010) we observed Cacna1b e37a expression patterns consistent with the presence of a strong splice enhancer within Cacna1b e37b, except in Tprv1-lineage neurons where Cacna1b e37a is hypomethylated and presumably permits CTCF binding to promote its recognition and inclusion.\n\nCTCF has been suggested to enhance exon recognition by slowing the elongation rate of Pol II (Shukla et al., 2011) and this co-transcription-splicing mechanism proposed to account for the influence of epigenetic modifications on pre mRNA splicing in neurons (Ding et al., 2017; Schor et al., 2013). CTCF binds\u00a0~60,000 sites on average on mammalian chromosomes (Maurano et al., 2015), most of which (~70%) reside in intergenic or near to promoter regions important for regulating chromatin structure and gene expression (Barski et al., 2007; Kim et al., 2007; Ong and Corces, 2014). CTCF binding to intragenic sites is reported to be relatively invariant across different cell types (>97%) (Lee et al., 2012). But, as we document for Cacna1b e37a and based on analyses of mouse tissue and mouse and human cell lines, intragenic CTCF binding is variable across cell types and correlated with alternatively spliced exons (Agirre et al., 2015; Ruiz-Velasco et al., 2017; Shukla et al., 2011). Our study is consistent with the documented actions of CTCF controlling alternative pre mRNA splicing in immune cells and cell lines (Agirre et al., 2015; Ruiz-Velasco et al., 2017; Shukla et al., 2011), and it points to a physiological role for CTCF in cell-specific alternative splicing in neurons.\n\n### Functional consequences of CTCF-demethylation controlled splicing\n\nCacna1b e37a is functionally important and cell-specific. CaV2.2 channels containing e37a are trafficked more efficiently to the neuronal cell surface and are inhibited more effectively by Gi/o coupled receptors, including \u03bc-opioid receptors (Andrade et al., 2010; Castiglioni et al., 2006; Gandini et al., 2019; Macabuag and Dolphin, 2015; Raingo et al., 2007). GPCR inhibition of CaV2.2 channels at nociceptor terminals accounts for the analgesic actions of morphine at the level of the spinal cord, and cell-specific Cacna1b e37a inclusion translates into greater efficiency of morphine action in vivo (Andrade et al., 2010). After peripheral nerve injury Cacna1b e37a splicing in DRG is disrupted and morphine efficacy is reduced in vivo (Altier et al., 2007; Jiang et al., 2013). In this study, we identify the underlying molecular mechanism: peripheral nerve injury leads to increased methylation levels at CpG sites within Cacna1b e37a locus impairing cell-specific Cacna1b e37a splicing.\n\nPeripheral nerve injury triggers dynamic chromatin accessibility in DRG neurons associated with changes in gene expression and gene regions enriched with CTCF binding motifs (Palmisano et al., 2019) possibility also influencing epigenetic modifications. DNMT3a is a strong candidate for mediating increased levels of methylation of Cacna1b e37a locus in Trpv1-lineage neurons. DNMT3a is upregulated in models of neuropathic pain and is associated with hypermethylation at promotor regions of neuronal genes including Oprm1 and Kcna2 (Mo et al., 2018; Zhao et al., 2017); we show that DNMT3a, but not DNMT1 or DNMT3b, shifts the pattern of Cacna1b e37a splicing in F11 cells. Global and highly localized changes in TET1 can also modify the methylation levels of exons (Liu et al., 2016; Liu et al., 2018; Marina et al., 2016) and, as we show for dCAS9-TET1 targeted to Cacna1b e37a, can promote the action of CTCF to shift the pattern of alternative splicing. dCAS9-TET1 has been used to correct disease-induced alterations in gene expression and mis-splicing events (Liu et al., 2016; Liu et al., 2018), raising the possibility that this approach could be used as a strategy to correct cell-specific alternative splicing of Cacna1b e37a in vivo following peripheral nerve injury.\n\nThis study reveals a novel mechanism of cell-specific alternative splicing in neurons. Remarkably, the ubiquitous DNA binding protein, CTCF, is critical for cell-specific inclusion of a mutually exclusive exon during Cacna1b pre mRNA splicing in a DRG-derived cell line and likely in nociceptors (Figure 8). The specificity of exon inclusion arises from a striking cell-specific exon-specific hypomethylation pattern in a subset of nociceptors, providing an exciting path for understanding cell-specific CTCF action and potentially identifying a major mechanism in neuronal alternative splicing.\n\n## Materials and methods\n\n### Contact for reagent and resource sharing\n\nInformation and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact Diane Lipscombe (diane_lipscombe@brown.edu). There are no restrictions on any data or materials presented in this paper.\n\n### Mice\n\nMice were housed and bred at Brown University. All protocols and procedures were approved by the Brown University Institutional Animal Care and Use Committee. Mice were maintained at 22\u00b0C in a 12 hr light/dark cycle, with food and water available ad libitum. Trpv1Cre (Cavanaugh et al., 2011) (Cat# JAX:017769, RRID:IMSR_JAX:017769), lox-STOP-loxChR2-EYFP (Cat# JAX:012569, RRID:IMSR_JAX:012569) and lox-STOP-loxTdTomato (Madisen et al., 2012) (Cat# JAX:007908, RRID:IMSR_JAX:007908) mice were purchased from The Jackson Laboratory. Mice used in this study were first generation double heterozygous offspring from single homozygous parents. All procedures used to generate data reported in this study are described here. Mice had no prior history of drug administration, surgery or behavioral testing. Behavioral experiments were performed on male and female mice 3\u20135 month of age.\n\n### Spared nerve injury\n\nThe spared nerve injury (SNI) mouse model (Decosterd and Woolf, 2000; Jiang et al., 2013) was performed on male and female mice 3\u20135 month of age to develop long lasting neuropathic pain. Mice were anesthetized with 3% isoflurane (induction, Patterson Veterinary Cat# 14043070406) and 2% isoflurane (maintenance) with oxygenation throughout surgery. The left hind leg was shaved, wiped clean with sterile 70% isopropyl alcohol (Dynarex Cat# 1113) and sterile 10% povidone-iodine solution (Dynarex Cat# 1108). An\u00a0~1 cm incision was made in the skin of the upper thigh, approximately where the sciatic nerve trifurcates. The common peroneal, tibial, and sural branches of the sciatic nerve were exposed by blunt dissection and teasing open biceps femoris muscle. The common peroneal and tibial nerves were ligated with a sterile 6\u20130 coated vicryl suture (Ethicon Cat# J833G) and transected 2 mm from the distal end. The surgical field was irrigated with sterile saline, the skin incision sutured closed, and then wiped clean with sterile 10% povidone-iodine solution (Dynarex Cat# 1108). For sham-operated mice, the surgery was identical except that the nerves were not ligated or transected after exposure. Immediately after surgery, mice were placed on a warm Deltaphase Isothermal Pads (Braintree scientific Cat# DPIP) to recover for\u00a0~1 hr before being returned to their home cage. Mice were closely monitored for three days.\n\n### Thermosensitivity assessment\n\nWe used a Plantar Analgesia Meter (IITC Cat# II-390G) to assess thermal responses to radiant heat from a focal heat source (Hargreaves method) (Hargreaves et al., 1988). All testing was performed at room temperature (22\u00b0C). Mice were habituated for at least 30 min in four individual Plexiglas chambers placed on a 22 cm elevated glass stage. Males and females were tested in separate trials. A focused visible-light, radiant heat source was positioned beneath the plantar surface of the hind paw. In all experiments, the high-intensity beam was set at 40%, low-intensity beam set at 10%, and maximum trial duration at 30 s. An orange-pass filter was used to prevent blue-light activation of mice expressing channelrhodopsin in sensory nerve terminals. Paw withdrawal latencies were measured in response to radiant heat source applied to the plantar surface of the hind paw. We assessed withdrawal latencies for contralateral and ipsilateral paws, before and after surgery, in SNI and sham mice. We measured latencies in response to three individual trials for each hind paw, and trials were separated by at least two mins. Withdrawal responses were counted if the hind paw withdrawal was rapid and associated with licking or shaking. Withdrawal thresholds were calculated as the average withdrawal latency for the three trials. The experimenter was blind to injury, and each testing group (four mice) was randomized for SNI and sham conditions.\n\n### DRG dissociation and cell sorting\n\nFreshly dissociated DRG were prepared from 3 to 5 month male and female mice. Under isoflurane anesthesia, mice were euthanized and all axial DRG (Figure 6) or L3-L4 DRG (Figure 7) removed. Total dissection time was kept under 30 min. Freshly dissected DRG were placed into ice-cold HBSS (Gibco Cat# 24020117), roots were carefully removed and briefly washed in HBSS (Gibco Cat# 24020117). DRG were enzymatically treated with 2 mg/mL collagenase (Sigma-Aldrich Cat# C9891) and 0.25% trypsin (Sigma-Aldrich Cat# 85450C) in HBSS (Gibco Cat# 24020117) at 37\u00b0C for 20 mins, and separated by gently mechanical dissociation using a pipette tip. Cells were centrifuged at 300 g for 7 min at RT\u00b0C, resuspended in PBS (Gibco Cat# 10010031) and passed through a Flowmi Cell Strainer (porosity 70 \u03bcm, Sigma-Aldrich Cat# BAH136800070) pre-rinsed with PBS. Cells were collected and centrifuged at 300 g for 7 min at 4\u00b0C, resuspended in 1\u20133 mL PBS (Gibco Cat# 10010031) with 10% FBS (Gibco Cat# A3160601) and kept on ice. Samples were immediately transported to the Flow Cytometry and Sorting Facility at Brown University. DRG cells were separated into Trpv1-lineage and non-Trpv1-lineage by fluorescent-activated cell sorting using a BD FACS Aria IIIu cytometer and sorter. Sorting criteria were determined monitoring distribution of GFP or TDTOMATO signals; a subsample of sorted cells were examined under fluorescent microscope for validation of sorting. At least 5000 neurons were collected for each sample in PBS (Gibco Cat# 10010031) with 10% FBS (Gibco Cat# A3160601) when used for gDNA extraction or TRIzol LS Reagent (Invitrogen Cat# 10296010) when used for RNA extraction. Samples were sorted at 4\u00b0C and kept on ice until used within 1 hr.\n\n### Cell culture\n\nThe F11 cell line is a somatic cell hybrid of rat embryonic DRG and mouse neuroblastoma cell line N18TG2. F11 cells express receptors and ion channels found in nociceptors including CaV2.2 channels (Allen et al., 2017; Yin et al., 2016). F11 cell cultures were maintained at sub-confluent density in Dulbecco\u2019s modified Eagle\u2019s medium (Gibco Cat# 10569010) with 10% FBS (Gibco Cat# A3160601). Exponentially dividing cultures were transfected using Lipofectamine 2000 Transfection Reagent (Invitrogen Cat# 11668027) and Opti-MEM reduced serum medium (Gibco Cat# 31985070) as per manufacturer\u2019s protocol. F11 cells were mycoplasma free and, phenotypically identified by morphological, functional and transcriptional analysis (this paper and Allen et al., 2010). F11 cell line was a gift from Dr. Probal Banerjee.\n\n### Western blot\n\nDissociated F11 cells were lysed in ice-cold RIPA buffer (25 mM Tris\u2022HCl pH 7.6, 150 mM NaCl, 1% NP-40, 1% sodium deoxycholate, 0.1% Sodium dodecyl sulfate and 1X protease inhibitor (cOmplete, Mini, EDTA-free Protease Inhibitor Cocktail, Roche Cat# 04693159001) and kept on ice during the following procedure: 30 mins incubation, sonication (three cycles @ 30 s on and 1 min off, at high amplitude with a Q500A sonicator system Qsonica), and 10 min centrifugation at 14000 g. Proteins were detected, and concentrations determined from supernatants by Pierce BCA Protein Assay Kit (Thermo Fisher Scientific, cat#23227) prior to Western blotting.\n\nFor Western blotting and analysis: Protein samples were denatured in Laemmli buffer at 95\u00b0C for 5 min and immediately placed on ice until needed. 10 \u03bcg of each sample and 8 \u03bcl of Precision Plus Protein Dual Color Standards (Bio-Rad, cat#1610374) were separated in SDS-PAGE (4% stacking and 6% resolving gels). Samples were run for 1 hr at 10 mA followed by 13 min at 20 mA, and transferred to nitrocellulose membrane for 1 hr at 100 V (GH Healthcare Life Science, Amersham Protan 0,45 \u03bcM NC Cat# 10600002). Membranes were rinsed with PBS-T, blocked with 2.5% nonfat milk and 5% BSA in PBS-T for either 2 hr at RT\u00b0C, or overnight at 4\u00b0C. Membranes were cut at\u00a0~75 kDa and\u00a0>75 kDa region incubated in CTCF primary antibody (CTCF (D31H2) XP Rabbit mAb - Cell Signaling Technology, Cat# 3418, RRID:AB_2086791) and\u00a0<75 kDa region with GAPDH primary antibody (GAPDH (14C10) Rabbit mAb - Cell Signaling Technology, Cat# 2118, RRID:AB_561053). Primary antibodies were diluted in 5% BSA PBS-T and membranes were incubated for 2 hr at RT\u00b0C or overnight at 4\u00b0C (CTCF 1:1000; GAPDH 1:1000). Membranes were rinsed 2x in PBST-T and 4x in PBS-T for 10 min, both at RT\u00b0C, and incubated at 1 hr at RT\u00b0C with horseradish peroxidase-labeled anti\u2013rabbit secondary antibody (1:15,000; Kirkegaard and Perry Laboratories Cat# 474\u20131516), and Precision Protein StrepTactin-HRP Conjugate (1:10,000 - Bio-Rad, cat#1610381) for ladder detection. Membranes were rinsed 2x in PBS-T and washed 3x in PBS-T for 10 min at RT\u00b0C.\n\nProtein bands were visualized using ProSignal Dura ECL Reagent (Genesee Scientific, cat#20\u2013301) and imaged with an Azure C600 system (Azure Biosystems). A series of exposures were sampled to ensure that signals were in the linear range for detection. Intensities of protein bands were quantified in non-saturated images using ImageJ software (Schneider et al., 2012). CTCF protein expression levels were normalized to GAPDH levels measured from the same gel. Complete western blots are shown for each figure.\n\n### Bisulfite sequencing\n\nGenomic DNA (gDNA) from F11 and DRG was extracted using QIAamp DNA Mini Kit (QIAGEN Cat# 51304). Bisulfite conversion of gDNA was performed using the EpiTect Bisulfite Kit (QIAGEN Cat# 59104) following the low-concentration sample protocol according to the manufacturer\u2019s instructions. Cacna1b e37a bisulfite converted gDNA fragments (207 bp) were amplified by PCR in 10 \u00b5l reactions containing 4 \u03bcl of bisulfite converted gDNA; 0.3 \u03bcM forward and reverse primers (JLS47 and JLS48, Key\u00a0Resources\u00a0Table) designed with MethPrimer (Li and Dahiya, 2002); 200 \u03bcM dNTPs; 1.25 units EpiMark Hot Start Taq DNA Polymerase and 1X reaction buffer (New England Biolabs Cat# M0490S); and H2O in a C1000 Touch Thermal Cycler (BIO RAD). PCR reactions consisted of 1 min of initial incubation at 95\u00b0C and 40 cycles of 30 s at 95\u00b0C, 1 min at 58\u00b0C, and 1 min at 68\u00b0C, followed by 5 min at 68\u00b0C. PCR products were visualized in a 1.5% SeaKem LE agarose (Lonza Cat# 50004), extracted using QIAquick gel extraction kit (QIAGEN Cat# 28704) and subcloned into pJET1.2/blunt vector using CloneJET PCR Cloning Kit (Thermo Fisher Scientific Cat# K1232). One Shot Stbl3 Chemically Competent E. coli (Thermo Fisher Scientific Cat# C737303) were transform with the ligation mixture; and at least 20 independent clones per condition were amplified overnight, isolated using QIAprep Spin Miniprep Kit (QIAGEN Cat# 27106) and sequenced using Fw or Rv pJET1.2 primers (JLS53 and JLS54, Key\u00a0Resources\u00a0Table). Methylation status of Cacna1b-e37a locus was determined by comparing bisulfite converted sequences with the original Cacna1b-e37a sequence. The overall efficiency of bisulfite conversion was superior to 99% as estimated from cytosines from non-CpG sites.\n\n### Chromatin immunoprecipitation (ChIP)\n\nProtein-DNA crosslinking was performed at RT\u00b0C in F11 cells with 1% formaldehyde in PBS (Gibco cat# 10010031) for 10 min and gentle shaking. The crosslinking reaction was quenched by adding glycine (final concentration of 125 mM) during 5 min rotation mixing at RT\u00b0C. Samples were washed 3x in chilled PBS and resuspended in lysis buffer (50 mM HEPES-KOH pH 7.5, 140 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.1% sodium deoxycholate, 0.1% sodium dodecyl sulfate and 1X protease inhibitor (cOmplete, Mini, EDTA-free Protease Inhibitor Cocktail, Roche Cat# 04693159001)). Cells were resuspended 20x using pipette and vortex 3x during 10 s. Chromatin sonication was performed in a Q500A sonicator system (Qsonica) using 2 \u00d7 5 cycles (30 s on and 1 min off, high amplitude at 4\u00b0C) separated by a 10 min incubation on ice. Samples were centrifuged at 4\u00b0C for 8 min at 10,000 g. Samples were resuspended in dilution buffer (16.7 mM Tris-HCl pH 8, 1.2 mM EDTA, 334 mM NaCl, 2.2% Triton X-100, 0.01% SDS, and 1X protease inhibitor (cOmplete, Mini, EDTA-free Protease Inhibitor Cocktail, Roche Cat# 04693159001)) to a final volume of 500 \u00b5l. 5% of the sample was removed to use as a positive control (input). Chromatin was inmunoprecipitated by adding 2 \u00b5g CTCF (D31H2) XP Rabbit mAb (CTCF (D31H2) XP Rabbit mAb - Cell Signaling Technology Cat# 3418, RRID:AB_2086791) or 2 \u00b5g of normal rabbit IgG (Cell Signaling Technology Cat# 2729, RRID:AB_1031062) followed by overnight incubation at 4\u00b0C with gentle shaking. 30 \u00b5l Magna ChIP Protein A+G Magnetic Beads (Millipore Cat#\u00a016\u2013663) were added to each sample and incubated 2 hs at 4\u00b0C with gentle shaking. Prior to use, magnetic beads were washed twice with dilution buffer at RT\u00b0C to reduce background. The Ab-CTCF-DNA complex was displaced from the magnetic beads and collected after sequential washes in the following buffers for 4 min each at 4\u00b0C: low salt buffer (20 mM Tris-HCl pH 8, 150 mM NaCl, 2 mM EDTA, 0.1% SDS, 1% Triton X-100); high salt buffer (20 mM Tris-HCl pH 8, 500 mM NaCl, 2 mM EDTA, 0.1% SDS, 1% Triton X-100); LiCl buffer (10 mM Tris-HCl pH 8, 1 mM EDTA, 250 mM LiCl, 1% NP40, 1% sodium deoxycholate); and finally TE. The IP and input samples were diluted in elution buffer (50 mM Tris-HCl pH 8, 10 mM EDTA, 50 mM NaHCO3 and 1% sodium dodecyl sulfate), incubated with RNase Cocktail Enzyme Mix (1 \u03bcg final concentration; Invitrogen Cat# AM2286) 20 min at 37\u00b0C and further incubated with proteinase K (20 \u03bcg/ml; Ambion/Thermo Fisher Scientific Cat# AM2546) for 3 hr at 65\u00b0C. gDNA was isolated using QIAquick PCR Purification Kit (QIAGEN Cat# 28106).\n\nIP and input gDNAs were amplified in the real-time PCR reaction using Cacna1b e37a or e37b specific primer pairs (Fw-e37a and Rv-e37a for e37a; Fw-e37b and Rv-e37b for e37b, Key\u00a0Resources\u00a0Table) in a 10 \u00b5l reaction with 0.3 \u03bcM forward and reverse primers, 1X Power SYBR Green PCR Master Mix (Thermo Fisher Scientific Cat # 4368706) and H2O in a StepOnePlus Real-Time PCR System (Applied Biosystems). PCR reactions consisted of 10 min of initial incubation at 95\u00b0C and 45 cycles of 20 s at 95\u00b0C, and 1 min at 60\u00b0C.\n\nQuantification of CTCF bound to Cacna1b e37 loci was calculated using the formula 100*2\u0394Ct (adjusted input-IP); normalized to IgG condition.\n\n### Electrophoretic mobility shift assay (EMSA)\n\nDNA double-stranded Cacna1b e37a and e37b probes were PCR-amplified from mouse gDNA using PAGE purified specific primer pairs (Integrated DNA Technologies). gDNA fragments were amplified by PCR in 25 \u00b5l reactions containing 0.5 \u03bcg mouse gDNA; 0.5 \u03bcM forward and reverse primers (Fw-e37a and Rv-e37a for Cacna1b e37a locus; and Fw-e37b and Rv-e37b for Cacna1b e37b locus; Key\u00a0Resources\u00a0Table) designed with Primer3 (Koressaar and Remm, 2007); 200 \u03bcM dNTPs; one unit Q5 High-Fidelity DNA Polymerase and 1X reaction buffer (New England Biolabs Cat# M0491); and H2O in a C1000 Touch Thermal Cycler (BIO RAD). PCR reactions consisted of 30 s of initial incubation at 98\u00b0C and 35 cycles of 10 s at 98\u00b0C, 20 s at 65\u00b0C, and 10 s at 72\u00b0C, followed by 2 min at 72\u00b0C. PCR products were visualized in a 1% agarose gel (Lonza Cat# 50004), extracted using QIAquick gel extraction kit (QIAGEN Cat# 28704) and followed by standard ethanol precipitation. DNA probes were label using the Pierce Biotin 3' End DNA Labeling Kit (Thermo Fisher Scientific Cat# 89818) and biotinylation efficiency was evaluated by Dot Blot. Annealing of DNA probes was performed by following 6 min at 95\u00b0C and a passive slow ramp until 22\u00b0C for 1 hr. RNA Cacna1b e37a and e37b probes (90 nucleotides) were 3' biotinylated and HPLC purificated (Integrated DNA Technologies).\n\nTo determine nucleic acid-protein interaction, 20 fmol probe was incubated in binding reaction buffer (10 mM Tris, 50 mM KCl, 5 mM MgCl2, 0.1 mM ZnSO4, 1 mM DTT, 0.1% (v/v) NP-40, 50 ng/\u00b5l Poly (dl\u00b7dC) and 2.5% (v/v) glycerol) for 30 min at 25\u00b0C with 0.1 \u00b5g CTCF human recombinant protein (Abnova Cat# H00010664-P01). To confirm specificity of binding, 0.5 \u00b5g mouse anti-CTCF (Purified Mouse Anti-CTCF Clone 48/CTCF (RUO), BD Biosciences Cat# 612148, RRID:AB_399519) or 1000-fold excess of an unlabeled DNA probe was added to the binding reaction buffer. DNA-protein complexes were separated in 5% native polyacrylamide gel using 0.5 X Tris/borate/EDTA buffer at 4\u00b0C and transferred to positively charged nitrocellulose membrane (Hybond-N+ 0.45 \u00b5m; Amersham Cat# 95038\u2013376). EMSAs were performed using the LightShift Chemiluminescent EMSA Kit (Thermo Fisher Scientific Cat# 20148).\n\nDNA and RNA bands were imaged with an Azure C600 system (Azure Biosystems). A series of exposures were sampled to ensure that signals were in the linear range for detection. Intensities of bands were quantified in non-saturated images using ImageJ software (Schneider et al., 2012). CTCF bound to DNA probes was calculated as % of shifted band intensity normalized to total band intensity (shifted + free bands) per condition from the same blot.\n\n### RNA extraction, RT-PCR and qPCR\n\nRNA extraction from F11 cells was performed using TRIzol (Invitrogen Cat# 15596018) and from dissociated DRG cells using TRIzol LS Reagent (Invitrogen Cat# 10296010) according to the manufacturer\u2019s instructions. 1\u20132 \u03bcg of RNA was immediately reverse transcribed to cDNA using the SuperScript III First-Strand Synthesis System with Poli-dT primers (Invitrogen Cat# 18080051). Cacna1b e36, e37a, e37b or Gapdh cDNAs were amplified in 10 \u00b5l real-time PCR reactions using 0.3 \u00b5M forward and reverse primers (JLS19 and JLS20 for Cacna1b e36; JLS19 and JLS09 for e37a; JLS19 and JLS10 for e37a; and JLS21 and JLS22 for Gapdh (Toyoda et al., 2014, Key\u00a0Resources\u00a0Table), 1X Power SYBR Green PCR Master Mix (Thermo Fisher Scientific Cat # 4368706) and H2O in a StepOnePlus Real-Time PCR System (Applied Biosystems). PCR reactions consisted of 10 min of initial incubation at 95\u00b0C and 45 cycles of 20 s at 95\u00b0C, and 1 min at 60\u00b0C. Each sample was run in triplicate per target. PCR efficiencies were calculated for all primer pairs by qPCR analysis of serial dilutions of gDNA containing target sequences, and using 5\u20139 replicates per DNA concentration assessed. Efficiency was calculated obtaining standard curves as described in Pfaffl (2001). PCR specificity was determined by PCR product length using 2% agarose electrophoresis gel, and by post PCR melting curve analysis as follows: 15 s at 95\u00b0C followed by a temperature ramp from 60\u00b0C to 95\u00b0C in 0.3\u00b0C steps every 15 s. Cacna1b e37 quantification was calculated by the following ratio = (E e37) \u0394Ct e37 (control-sample) / (E e36) \u0394Ct e36 (control-sample); normalized to control condition.\n\n### Genomic DNA methylation and hydroxyl-methylation ELISAs\n\nGenomic DNA methylation and hydroxyl-methylation ELISAs gDNA was extracted from F11 cells using QIAamp DNA Mini Kit (QIAGEN Cat# 51304) and global DNA methylation (5-mC) and hydroxyl-methylation (5-hmC) levels were measured by ELISA assays (MethylFlash Methylated DNA 5-mC Quantification Kit - EpiGentek Cat# P-1030; MethylFlash Global DNA Hydroxymethylation 5-hmC ELISA Easy Kit - EpiGentek Cat# P-1032) according to manufacturer\u2019s protocols.\n\n### cDNA plasmids and siRNAs\n\ncDNA plasmids and siRNAs cDNA plasmid expression vectors are listed in Key\u00a0Resources\u00a0Table. pcDNA3-Tet1 (Addgene plasmid # 60938; http://n2t.net/addgene:60938; RRID:Addgene_60938), pcDNA3-Tet2 (Addgene plasmid # 60939; http://n2t.net/addgene:60939; RRID:Addgene_60939), and pcDNA-Flag-Tet3 were gifts from Yi Zhang (Addgene plasmid # 60940; http://n2t.net/addgene:60940; RRID:Addgene_60940) (Wang and Zhang, 2014). Fuw-dCas9-Tet1CD (Addgene plasmid # 84475; http://n2t.net/addgene:84475; RRID:Addgene_84475) and pgRNA-modified were gifts from Rudolf Jaenisch (Addgene plasmid # 84477; http://n2t.net/addgene:84477; RRID:Addgene_84477) (Liu et al., 2016). CTCF-GFP and GFP were gifts from Rainer Renkawitz (Burke et al., 2005).\n\nGuide RNA (gRNA) expression constructs were cloned by inserting annealed oligo pairs JLS59-JLS60 (gRNA1); JLS61-JLS62 (gRNA2); and JLS63-JLS64 (gRNAnt) (Key\u00a0Resources\u00a0Table) into modified pgRNA plasmid (Addgene Cat# 84477) (Liu et al., 2016) in AarI site (Thermo Fisher Scientific Cat# ER1581). Oligo pairs were anneal in 1X NEBuffer 3.1 (New England Biolabs Cat# B7203S) following 4 min at 95\u00b0C, 10 min at 70\u00b0C and a passive slow ramp until 22\u00b0C. Vector and insert were ligated using T4 DNA Ligase and 1X buffer (New England Biolabs Cat# M0202S) at room temperature for 2 hr. One Shot TOP10 Electrocomp E. coli (Thermo Fisher Scientific Cat# C404050) were transformed with the ligation mixture; and independent clones per condition were amplified overnight, isolated using QIAprep Spin Miniprep Kit (QIAGEN Cat# 27106) and sequenced using JLS65 primer (Key\u00a0Resources\u00a0Table).\n\nsiRNAs are listed in Key\u00a0Resources\u00a0Table. Ctcf, Dnmt1, Dnmt3a, Dnmt3b and non-targeting SMARTpool siGENOME siRNAs (GE Healthcare Dharmacon Cat# M-044693\u20130, M-056796\u201301, M-065433\u201301, M-044164\u201301, and D-001206\u201313) were resuspended in RNase free H2O and shacked 30 min at RT, and storage at \u221280\u00b0C until need them.\n\n### Drugs\n\nF11 cells were treated with 5-Azacytidine (Sigma-Aldrich Cat# A2385) to inhibit DNA methyltransferase action and promote a decrease in global methylation; and (2S)\u22122-Hydroxyglutaric Acid Octyl Ester Sodium Salt (TRC Toronto Research Chemicals Cat# H942596) to inhibit ten eleven translocase enzymes (TET) and promote an increase in global methylation. 5-Azacytidine was dissolved in DMSO and kept on ice until use or storage at \u221280\u00b0C. (2S)\u22122-Hydroxyglutaric Acid Octyl Ester Sodium Salt was dissolved in H2O and kept on ice until use or storage at \u22124\u00b0C. Concentration and incubation times are indicated in each experiment.\n\n### Statistical analysis\n\nAll behavioral testing was randomized and blinded. N values represent biological replicates (number of animals, individual transfections). We plot all individual biological replicates in figures and corresponding mean and SE. Experimental groups were compared using paired or unpaired t-test, two-way or one-way ANOVA followed by Dunnett\u2019s test as indicated. Absolute P values are reported in figure legends.\n",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "bcf60cef-a57d-4ed4-bf61-621795aa82ae",
+      "submission_id": "cdad3fdb-88ee-49ca-b8e0-4d03978887bf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David D Ginty, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54879.sa1](https://doi.org/10.7554/eLife.54879.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe study addresses the mechanism of cell-type specific expression of a splice variant of the Cav2.2 N-type channel (Cav2.2ex37a) in nociceptive neurons of the DRG. The work is impactful from a mechanistic standpoint in demonstrating a novel function of the chromatin-modifying factor CTCF in binding to hypomethylated regions of the Cacna1b gene encoding Cav2.2, thus controlling inclusion of the alternatively spliced exon 37a in nociceptors. The findings are important from a disease perspective in that they establish hypermethylation-dependent loss of CTCF regulation as underlying the downregulation of Cav2.2ex37a in the context of peripheral nerve injury-induced hyperalgesia.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cell-specific exon methylation and CTCF binding in neurons regulates calcium ion channel splicing and function\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by David Ginty as the Reviewing Editor and Richard Aldrich as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Henry M Colecraft (Reviewer #1); Amy Lee (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript addresses the mechanism controlling the cell-type specific expression of a splice variant of the Cav2.2 N-type channel (Cav2.2ex37a) in nociceptive neurons of the dorsal root ganglion (DRG). The work is impactful from a mechanistic standpoint in demonstrating a novel function of the chromatin-modifying factor CTCF in binding to hypomethylated regions of the Cacna1b gene encoding Cav2.2, thus controlling inclusion of the alternatively spliced exon 37a in particular class of heat-sensitive nociceptors. The results are important from a disease perspective in that they establish hypermethylation-dependent loss of CTCF regulation as a mechanism underlying the downregulation of Cav2.2ex37a in the context of peripheral nerve injury-induced hyperalgesia.\n\nEssential revisions:\n\nThe authors provide convincing data that CTCF binds to the Cacna1b e37a locus, and that the DNA methyl transferase DNMT3a promotes hypermethylation of this region and inhibits CTCF binding, thus decreasing inclusion of e37a in Cacna1b transcripts. These results were obtained in the F11 cell line derived from DRG neurons. However, there is a gap between these findings and the data in Figures 6, 7 with respect to the conclusions that are being made. The authors show that Cacna1b e37a gDNA is hypomethylated in TRPV1+, likely nociceptive, DRG neurons, and that hypermethylation of this region accompanies sciatic nerve injury. It is not shown that CTCF or DNMT3a are involved in controlling the methylation state of Cacna1b e37a in the TRPV1+ vs. TRPV1- neurons. DRG neurons are functionally heterogeneous and previous work has shown that DNMT3a is expressed in most all DRG neuron subtypes. Moreover, F11 cells express a variety of proteins that are present in non-nociceptive DRG neurons. Thus, whether the scheme outlined in Figure 8 top panels corresponds to what is happening to control Cacna1b e37a expression in DRG neurons is not fully supported by the data. The reviewers and Reviewing Editor agree that the authors should acknowledge this gap by toning down conclusions with regards to TrpV1+ nociceptors. The authors should be careful to comment on CTCF as a \"candidate regulator of exon 37 splicing\" in nociceptors. For example, the following statement in the Abstract may be a bit strong based on the data: \"We find that cell-specific exon DNA hypomethylation permits binding of CTCF, the master regulator of chromatin structure in mammals, which, in turn, controls splicing in noxious heat-sensing nociceptors.\"\n",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e8bc3d35-5604-43b8-8783-4aff9c6889f5",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C1",
+      "claim": "CTCF ChIP-seq signal overlaps the CACNA1B e37a locus in approximately 50% of human cell lines (27 of 50).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a robust chromatin immunoprecipitation followed by sequencing (ChIP-seq) signal for the zinc finger DNA binding protein CCCTC-binding factor (CTCF) that overlaps the CACNA1B e37a locus in ~50% of human cell lines (27 of 50; 9 of 50 tracks are shown in Figure 1B; ENCODE Project Consortium, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by analysis of ENCODE ChIP-seq data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "cfb3c0ee-1916-4f58-8178-197eddaa4b66",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C2",
+      "claim": "None of the 50 human cell line tracks contained a ChIP-seq CTCF signal associated with CACNA1B e37b.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the 50 tracks contained a ChIP-seq CTCF signal associated with CACNA1B e37b (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated in the text and supported by the ChIP-seq data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "36ba4886-57af-49a1-b24a-fa63b4f8b8eb",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C4",
+      "claim": "Mouse Cacna1b e37a and e37b share 60% nucleotide identity.",
+      "claim_type": "EXPLICIT",
+      "source": "and it associates with mouse Cacna1b e37a but not e37b, which share 60% nucleotide identity (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated in the text and supported by sequence comparison shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "90b61957-4e5d-4e2f-8683-eb06ccc5d070",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C5",
+      "claim": "Recombinant CTCF binds to an e37a-containing DNA probe in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombinant CTCF bound to an e37a-containing DNA probe in a concentration manner (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by gel shift assay data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "effe252e-fe12-4cc1-ad64-46e6065d65d3",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C6",
+      "claim": "CTCF failed to bind an e37a-containing RNA probe.",
+      "claim_type": "EXPLICIT",
+      "source": "but CTCF failed to bind an e37a-containing RNA probe (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by RNA gel shift assay data in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "7f26ec81-50cb-4e08-aca5-e41c4757627a",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C7",
+      "claim": "CTCF binds with high specificity to Cacna1b e37a but not Cacna1b e37b.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the following observations we conclude that CTCF binds with high specificity to Cacna1b e37a but not Cacna1b e37b: 1) CTCF bound e37a but not e37b DNA probes when studied using the same conditions (Figure 2C and D; compare lanes 2 and 6); 2) the appearance of a third super-shifted band when e37a probe is incubated with both recombinant CTCF and a CTCF monoclonal antibody (Figure 2C and D; lane 3); 3) total displacement of CTCF binding from the labeled e37a DNA probe on addition of unlabeled e37a DNA probe (Figure 2C and D; lane 4); and CTCF binding to e37a DNA is concentration dependent (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated as a conclusion and supported by multiple lines of experimental evidence from gel shift assays shown in Figures 2B, 2C, and 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "577c3bbd-0e0b-4038-a5e5-49ed4c3dbf9d",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C8",
+      "claim": "CTCF is localized to cell nuclei in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF is localized to cell nuclei in F11 cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by fluorescence microscopy images in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "9fd16672-313c-4ad8-94a7-ea9040668e56",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C9",
+      "claim": "CTCF binds Cacna1b e37a locus in F11 cells based on CTCF ChIP-qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CTCF binds Cacna1b e37a locus in F11 cells based on CTCF ChIP-qPCR (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by ChIP-qPCR data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "6a815fce-805f-40c1-9a23-988bda063b36",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C10",
+      "claim": "CTCF does not bind e37b locus in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, CTCF does not bind e37b locus (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by ChIP-qPCR data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "0d4c38eb-5c48-4c39-9090-fd944e9c7f3a",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C11",
+      "claim": "Overexpression of recombinant CTCF tagged with GFP induced approximately 2-fold increase in Cacna1b e37a levels within 2 days of cDNA transfection in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When overexpressed (Figure 3D and E), recombinant CTCF tagged with GFP induced a ~ 2 fold increase in Cacna1b e37a levels within 2 days of cDNA transfection, as compared to cells expressing Gfp alone (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by Western blot and qRT-PCR data shown in Figures 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "dd858d70-88c6-422d-bd3d-2ce45265b078",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C12",
+      "claim": "siRNA targeting Ctcf in F11 cells reduced levels of e37a-containing Cacna1b mRNAs by approximately 30% 3 days after transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "siRNA targeting Ctcf in F11 cells (Figure 3F and G) had the expected opposite effect; levels of e37a-containing Cacna1b mRNAs were ~30% reduced 3 days after transfecting Ctcf siRNA relative to control siRNA (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by Western blot and qRT-PCR data shown in Figures 3F and 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "89ddce94-d60d-46b8-8188-8742a5b6b67b",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C13",
+      "claim": "CTCF promotes e37a inclusion in Cacna1b mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings show that CTCF promotes e37a inclusion in Cacna1b mRNAs, and that CTCF levels are rate limiting for Cacna1b e37a splicing in neuronal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion based on the overexpression and knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "1439b7ce-1b13-4cd7-9692-ab39bc427e99",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C14",
+      "claim": "CTCF levels are rate limiting for Cacna1b e37a splicing in neuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings show that CTCF promotes e37a inclusion in Cacna1b mRNAs, and that CTCF levels are rate limiting for Cacna1b e37a splicing in neuronal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion based on the overexpression and knockdown experiments showing dose-dependent effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "01c9fb28-d47a-4e7d-bb59-cc73ccb3b7bf",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C15",
+      "claim": "CTCF binding to gDNA is inhibited by 5-methylcytosine (5-mC) within the CTCF binding motif.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF binding to gDNA is reported to be inhibited by 5-methylcytosine (5-mC) within the CTCF binding motif and influences control of alternative splicing in PTPRC (Hashimoto et al., 2017; Marina et al., 2016; Shukla et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "8725e24a-cf83-4b18-97a5-65b13aaa241e",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C16",
+      "claim": "Increasing concentrations of 5-Aza decreased global gDNA 5-mC levels in F11 cells to approximately 60% of control.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing concentrations of 5-Aza decreased global gDNA 5-mC levels in F11 cells to ~60% of control (Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by ELISA data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "e225147e-2de6-41ea-b32e-ada3d217eb55",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C17",
+      "claim": "5-Aza treatment did not alter CTCF protein levels in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "without altering CTCF protein levels or global levels of 5-hydroxymethylcytosine (5-hmC) (Figure 4\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by Western blot data in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "3082da33-ab8f-4d0a-a6c6-e7a607bde2d2",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C18",
+      "claim": "5-Aza treatment did not alter global levels of 5-hydroxymethylcytosine (5-hmC) in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "without altering CTCF protein levels or global levels of 5-hydroxymethylcytosine (5-hmC) (Figure 4\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by ELISA data in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "a1082833-3f74-45c8-b287-ba2c37f373af",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C19",
+      "claim": "Reduced 5-mC levels induced by 5-Aza were associated with a concentration-dependent increase in Cacna1b e37a mRNA levels in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced 5-mC levels induced by 5-Aza were associated with a concentration dependent increase in Cacna1b e37a mRNA levels in F11 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by qRT-PCR data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "c7ba2d8c-c009-4a3f-8f0e-ed5a5cae0193",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C20",
+      "claim": "5 \u03bcM 5-Aza treatment in F11 cells reduced 5-mC levels of the 5 CpG sites in Cacna1b e37a locus by on average approximately 20% relative to control.",
+      "claim_type": "EXPLICIT",
+      "source": "By targeted bisulfite sequencing, we found that 5 \u03bcM 5-Aza treatment in F11 cells, which induced a > 2 fold increase in Cacna1b e37a mRNA levels, reduced 5-mC levels of the 5 CpG sites in Cacna1b e37a locus by on average ~20%, although not uniformly, relative to control (DMSO) (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by bisulfite sequencing data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "bbc24cba-0b17-4252-a871-f0aaad00576f",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C21",
+      "claim": "The ability of 5-Aza to promote Cacna1b e37a inclusion in F11 cells depended on CTCF availability.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the ability of 5-Aza to promote Cacna1b e37a inclusion in F11 cells depended on CTCF availability. In cells expressing Ctcf siRNA, 5-Aza had no effect on e37a inclusion (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by qRT-PCR data in Figure 4E showing no effect of 5-Aza when CTCF is knocked down.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "dd35d562-1184-423c-9571-2f983091ed3b",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C22",
+      "claim": "Increasing concentrations of 2-HG increased global DNA 5-mC levels in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing concentrations of 2-HG increased global DNA 5-mC levels in F11 cells (Figure 4F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by ELISA data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "733447c8-0819-4c22-8828-fcad9e50deaa",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C23",
+      "claim": "2-HG treatment reduced levels of 5-hydroxymethylcytosine (5-hmC) in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "reduced levels of 5-hydroxymethylcytosine (5-hmC), but did not alter CTCF protein levels (Figure 4\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by ELISA data in Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "77003df3-9fc9-49c2-bc3e-aff4ce10351f",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C24",
+      "claim": "2-HG treatment did not alter CTCF protein levels in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "reduced levels of 5-hydroxymethylcytosine (5-hmC), but did not alter CTCF protein levels (Figure 4\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by Western blot data in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "732690da-a137-46d7-a684-47a899224eb6",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C25",
+      "claim": "10 mM 2-HG treatment for 1 day induced approximately 3-fold increase in global 5-mC methylation in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "10 mM 2-HG treatment for 1 day induced ~3 fold increase in global 5-mC methylation in F11 cells (Figure 4F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by ELISA data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "6002bd09-97cf-4944-8ee6-5cd1f05d550d",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C26",
+      "claim": "10 mM 2-HG treatment reduced Cacna1b e37a mRNAs to almost undetectable levels in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and, under these conditions, reduced Cacna1b e37a mRNAs to almost undetectable levels (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by qRT-PCR data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "74e889be-2dc4-45da-abcb-2f9d47afd87b",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C27",
+      "claim": "10 mM 2-HG treatment in F11 cells induces a slight increase of approximately 10% in 5-mC levels at the 5 CpG sites in Cacna1b e37a locus relative to control.",
+      "claim_type": "EXPLICIT",
+      "source": "By targeted bisulfite sequencing, we found that 10 mM 2-HG treatment in F11 cells induces a slight increase of ~10% in 5-mC levels at the 5 CpG sites in Cacna1b e37a locus relative to control (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by bisulfite sequencing data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "b0d612f0-83fc-4c2d-a48f-1e3f817dbca0",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C28",
+      "claim": "There is a negative correlation between 5-mC at the Cacna1b e37a locus and Cacna1b e37a mRNA levels in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the above experiments, global pharmacological manipulation of 5-mC gDNA reveals a negative correlation between 5-mC at the Cacna1b e37a locus and Cacna1b e37a mRNA levels in F11 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion based on the 5-Aza and 2-HG experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "6bf1eb23-90e1-4413-8ae8-e16091e0d541",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C29",
+      "claim": "5-mC within Cacna1b e37a locus occludes CTCF binding and impairs CTCF-mediated exon recognition during alternative pre-mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings support the hypothesis that 5-mC within Cacna1b e37a locus occludes CTCF binding and impairs CTCF-mediated exon recognition during alternative pre-mRNA splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion supported by the methylation manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "bae8692a-1828-4e45-b113-1cc286eb66f1",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C30",
+      "claim": "Dnmt3a siRNA, but not Dnmt1 or Dnmt3b siRNAs, promoted greater than 2-fold increase in Cacna1b e37a inclusion in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Dnmt3a siRNA (3a), but not Dnmt1 (1) or Dnmt3b siRNAs (3b), promoted >2 fold increase Cacna1b e37a inclusion, compared to control siRNA in F11 cells (Figure 5A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by qRT-PCR data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "5e7e932b-2072-42ef-8023-55eb03ac9895",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C31",
+      "claim": "Overexpressed cDNAs encoding Tet1 and Tet2, but not Tet3, promoted approximately 2-fold increase in Cacna1b e37a inclusion in mRNA in F11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and that overexpressed cDNAs encoding Tet1 (1) and Tet2 (2), but not Tet3 (3) cDNAs, promoted ~2 fold increase Cacna1b e37a inclusion in mRNA in F11 cells compared to control (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by qRT-PCR data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "3e922d9d-2423-4f77-9a70-944b36183ea5",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C32",
+      "claim": "Both gRNA-dCAS9-TET1 complexes targeting 5' and 3' regions of Cacna1b e37a locus increased Cacna1b e37a expression in F11 by approximately 2-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Both gRNA-dCAS9-TET1 complexes increased Cacna1b e37a expression in F11 by ~2 fold compared to F11 cells expressing dCas9-Tet1 alone (Con) or to F11 cells expressing a non-targeting gRNA (nt) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by qRT-PCR data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "03f32543-6942-46b3-8094-31e43b872529",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C33",
+      "claim": "Cacna1b e37a inclusion during alternative splicing is inhibited by DNMT3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support a model in which Cacna1b e37a inclusion during alternative splicing is inhibited by DNMT3a and promoted by TET1 and TET2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion based on the siRNA and overexpression experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "f11dbe25-ee19-4095-b76e-c9d984db3782",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C34",
+      "claim": "Cacna1b e37a inclusion during alternative splicing is promoted by TET1 and TET2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support a model in which Cacna1b e37a inclusion during alternative splicing is inhibited by DNMT3a and promoted by TET1 and TET2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion based on the overexpression and dCAS9-TET1 experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "d85a2e2f-be7d-4dd3-9d5e-a444407fed7d",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C35",
+      "claim": "Cacna1b e37a mRNAs are enriched in DRG of rat.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, we showed that Cacna1b e37a mRNAs are enriched in DRG of rat and, by single cell RT-PCR coupled to electrophysiological analyses, we found further enrichment in a subset of capsaicin-responsive nociceptors (Bell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "2ea2d9f8-f808-445e-aca8-e92653cc2d1b",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C36",
+      "claim": "Cacna1b e37a mRNAs are enriched in a subset of capsaicin-responsive nociceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, we showed that Cacna1b e37a mRNAs are enriched in DRG of rat and, by single cell RT-PCR coupled to electrophysiological analyses, we found further enrichment in a subset of capsaicin-responsive nociceptors (Bell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "c404543a-9128-4f1d-9239-a255916b3d9b",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C37",
+      "claim": "Cacna1b e37a mRNAs are exclusive to Trpv1-lineage neurons of DRG.",
+      "claim_type": "EXPLICIT",
+      "source": "By endpoint RT-PCR, we found that Cacna1b e37a mRNAs are exclusive to Trpv1-lineage neurons of DRG (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by RT-PCR data from FACS-separated cells shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "022cc1d1-45a5-4011-8393-ea7f3b0373bd",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C38",
+      "claim": "Cacna1b e37b mRNAs are expressed in both Trpv1-lineage and non Trpv1-lineage cells.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Cacna1b e37b mRNAs are expressed in both Trpv1-lineage and non Trpv1-lineage cells (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by RT-PCR data from FACS-separated cells shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "73cb9fee-3aab-4394-a921-f7a84253251a",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C39",
+      "claim": "All 5 CpG sites in Cacna1b e37a locus in non Trpv1-lineage cells are methylated in the majority of sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We used targeted bisulfite sequencing and found that all 5 CpG sites in Cacna1b e37a locus in non Trpv1-lineage cells are methylated in the majority of sequences (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by bisulfite sequencing data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "d4327405-dd75-49aa-8203-d0772e17a3a2",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C40",
+      "claim": "Of 20 independent clones derived from Trpv1-lineage neurons, only one CpG site in Cacna1b e37a locus, in one sequence contained 5-mC.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, of 20 independent clones derived from Trpv1-lineage neurons, only one CpG site in Cacna1b e37a locus, in one sequence contained 5-mC (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by bisulfite sequencing data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "29acece1-dab1-4d69-9f28-4178ca349c1c",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C41",
+      "claim": "5-mC CpGs of Cacna1b e37a locus are cell-specific \u2013 CpG sites in e37a are hypomethylated in Trpv1-lineage neurons relative to the close to fully methylated state of e37a locus in non Trpv1-lineage cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that 5-mC CpGs of Cacna1b e37a locus are cell-specific \u2013 CpG sites in e37a are hypomethylated in Trpv1-lineage neurons relative to the close to fully methylated state of e37a locus in non Trpv1-lineage cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion based on the bisulfite sequencing data from FACS-separated cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "8d71f1ef-51ea-4292-b473-f9bfd4fd9a38",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C42",
+      "claim": "Cell-specific control of local methylation regulates the level of Cacna1b e37a inclusion during pre-mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "These data provide strong independent support for our hypothesis, and they suggest that cell-specific control of local methylation regulates the level of Cacna1b e37a inclusion during pre-mRNA splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion based on the cell-specific methylation patterns observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "bcdaf559-6b30-42ee-98fa-249f3c6ae494",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C43",
+      "claim": "Cacna1b e37a mRNA levels decrease in rat DRG following peripheral nerve injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed previously that Cacna1b e37a mRNA levels decrease in rat DRG following peripheral nerve injury, and this disruption in splicing is linked to reduced efficacy of morphine analgesia (Altier et al., 2007; Jiang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "b200e6c9-cafb-4fda-942b-7d771c0bdce3",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C44",
+      "claim": "Disruption of Cacna1b e37a splicing following peripheral nerve injury is linked to reduced efficacy of morphine analgesia.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed previously that Cacna1b e37a mRNA levels decrease in rat DRG following peripheral nerve injury, and this disruption in splicing is linked to reduced efficacy of morphine analgesia (Altier et al., 2007; Jiang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "5e0e616c-0815-467f-83af-1a40731830fb",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C45",
+      "claim": "SNI model results in stable, long-term hypersensitivity in the ipsilateral area of the hind paw which is innervated by the spared sural nerve.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNI model results in stable, long-term hypersensitivity in the ipsilateral area of the hind paw which is innervated by the spared sural.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and represents established knowledge about the SNI model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "d5129153-ced4-4399-9bad-a1597d77eed9",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C46",
+      "claim": "Hyperalgesia in ipsilateral hind paws developed within 2 days and was sustained at least 8 days following SNI.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyperalgesia in ipsilateral hind paws developed within 2 days, and was sustained at least 8 days following SNI (Figure 7A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by behavioral data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "d36911ee-c04c-4407-aa15-8baf16913fb5",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C47",
+      "claim": "Cacna1b e37a mRNA levels were reduced in Trpv1-lineage neurons isolated from L3-L4 DRG ipsilateral to the injured nerve in all four animals, relative to contralateral L3-L4 DRG.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Cacna1b e37a mRNA levels were reduced in Trpv1-lineage neurons isolated from L3-L4 DRG ipsilateral to the injured nerve in all four animals, relative to contralateral L3-L4 DRG (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by qRT-PCR data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "7e729005-10e4-4ee1-a60a-848a28a21c86",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C48",
+      "claim": "There were no consistent changes in Cacna1b e37a mRNA levels in Trpv1-lineage neurons isolated from sham DRG compared to contralateral.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, there were no consistent changes in Cacna1b e37a mRNA levels in Trpv1-lineage neurons isolated from sham DRG compared to contralateral (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by qRT-PCR data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "34dab5f2-9def-4be9-8c67-23b6f587ca89",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C49",
+      "claim": "Cacna1b e37a locus is hypomethylated in Trpv1-lineage neurons relative to the non Trpv1-lineage cell population in DRG.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that Cacna1b e37a locus is hypomethylated in Trpv1-lineage neurons relative to the non Trpv1-lineage cell population in DRG (also see Figure 6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by bisulfite sequencing data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "573f57be-bcb5-43b9-b982-57777af35033",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C50",
+      "claim": "After injury, 5-mC CpG at Cacna1b e37a locus is greater in ipsilateral Trpv1-lineage neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "but, after injury, 5-mC CpG at Cacna1b e37a locus is greater in ipsilateral Trpv1-lineage neurons (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by bisulfite sequencing data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "a9b424a7-1f18-4082-8b97-f3abf4e40680",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C51",
+      "claim": "5-mC CpG levels are unchanged in ipsilateral non Trpv1-lineage cell populations of DRG from SNI animals compared to sham.",
+      "claim_type": "EXPLICIT",
+      "source": "5-mC CpG levels are unchanged in ipsilateral non Trpv1-lineage cell populations of DRG from SNI animals compared to sham (see Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by bisulfite sequencing data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "da208a55-95c2-4a74-84a7-f5b73f97eb7e",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C52",
+      "claim": "5-mC levels of CpG sites in Cacna1b e37a locus suppresses e37a inclusion during Cacna1b alternative pre-mRNA splicing in vivo in most neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that 5-mC levels of CpG sites in Cacna1b e37a locus suppresses e37a inclusion during Cacna1b alternative pre-mRNA splicing in vivo in most neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion based on the in vivo methylation and expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "b107e457-d580-4118-84bb-33fda3ef7d69",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C53",
+      "claim": "Methylation of Cacna1b e37a locus likely occludes CTCF binding and accounts for the low expression of Cacna1b e37a mRNAs throughout the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation of Cacna1b e37a locus likely occludes CTCF binding and accounts for the low expression of Cacna1b e37a mRNAs throughout the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion based on the combined in vitro and in vivo data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "eb81a391-f098-4d7f-894f-e9668626fd8e",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C54",
+      "claim": "In Trpv1-lineage neurons, Cacna1b e37a locus is hypomethylated, likely permitting CTCF to bind and to promote Cacna1b e37a inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in Trpv1-lineage neurons, Cacna1b e37a locus is hypomethylated, likely permitting CTCF to bind and to promote Cacna1b e37a inclusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion based on the cell-specific methylation patterns and CTCF binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "3b91508f-b3ef-4fff-a532-463c4519a4bb",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C55",
+      "claim": "Differential local methylation dictates the cell-specific pattern of Cacna1b e37a expression particularly in Trpv1-lineage neurons of DRG.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential local methylation dictates the cell-specific pattern of Cacna1b e37a expression particularly in Trpv1-lineage neurons of DRG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion based on the cell-specific methylation and expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "1e3355f0-9090-4d12-a784-94818574ae75",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C56",
+      "claim": "The increase in 5-mC at CpG sites in Cacna1b e37a locus following peripheral nerve injury is associated with reduced Cacna1b e37a expression in Trpv1-lineage neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the increase in 5-mC at CpG sites in Cacna1b e37a locus following peripheral nerve injury, that induces long-lasting hyperalgesia, is associated with reduced Cacna1b e37a expression in Trpv1-lineage neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion based on the SNI model data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "b35f5475-e9b1-4460-9347-13cb7c2e4d25",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C57",
+      "claim": "Cell-specific alternative splicing modulates myriad cell functions and is disrupted in disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-specific alternative splicing modulates myriad cell functions and is disrupted in disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract as general background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "8e083cad-3ece-41fc-9eb4-7d43a7449a16",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C58",
+      "claim": "In sensory neurons, cell-specific alternative splicing of the presynaptic CaV channel Cacna1b gene modulates opioid sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In sensory neurons, cell-specific alternative splicing of the presynaptic CaV channel Cacna1b gene modulates opioid sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and represents a key finding from previous work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "63db558b-e472-4c97-b63b-626853b84dd4",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C59",
+      "claim": "Cell and exon-specific DNA hypomethylation permits CTCF binding in a DRG-derived cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that cell and exon-specific DNA hypomethylation permits CTCF binding, the master regulator of mammalian chromatin structure, which, in turn, controls splicing in a DRG-derived cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract as a main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "8926a353-853c-46d3-869a-147280946197",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C60",
+      "claim": "CTCF controls splicing in a DRG-derived cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that cell and exon-specific DNA hypomethylation permits CTCF binding, the master regulator of mammalian chromatin structure, which, in turn, controls splicing in a DRG-derived cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract as a main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "66c84ec6-185b-4595-bef4-06c246dd3924",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C61",
+      "claim": "Hypomethylation of an alternative exon specifically in nociceptors likely permits CTCF binding and expression of CaV2.2 channel isoforms with increased opioid sensitivity in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, hypomethylation of an alternative exon specifically in nociceptors, likely permits CTCF binding and expression of CaV2.2 channel isoforms with increased opioid sensitivity in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract as a main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "6514f0b8-da08-43c3-b88c-090894d04358",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C62",
+      "claim": "Following nerve injury, exon methylation is increased, and splicing is disrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "Following nerve injury, exon methylation is increased, and splicing is disrupted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract as a main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "e83c7989-eb20-43a3-91d4-24607b69595b",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C63",
+      "claim": "Alternative pre mRNA splicing regulates exon composition for >95% of multi-exon genes according to cell-type and influenced by development, cellular activity and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This dynamic process regulates exon composition for >95% of multi-exon genes according to cell-type and influenced by development, cellular activity and disease (Furlanis and Scheiffele, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "5f660f9c-c343-424e-b4ed-ef3de787df9d",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C64",
+      "claim": "CaV2.2 channels that contain e37a are expressed in a subset of nociceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "CaV2.2 channels that contain e37a, in place of the more prevalent e37b, are expressed in a subset of nociceptors and they are especially sensitive to inhibition by \u03bc-opioid receptors (Bell et al., 2004; Castiglioni et al., 2006; Macabuag and Dolphin, 2015; Raingo et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "42008a4e-2e28-4d4a-9601-b79993e213e2",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C65",
+      "claim": "CaV2.2 channels that contain e37a are especially sensitive to inhibition by \u03bc-opioid receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "CaV2.2 channels that contain e37a, in place of the more prevalent e37b, are expressed in a subset of nociceptors and they are especially sensitive to inhibition by \u03bc-opioid receptors (Bell et al., 2004; Castiglioni et al., 2006; Macabuag and Dolphin, 2015; Raingo et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "8a9cb45e-68de-473b-9324-54aef6f21946",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C66",
+      "claim": "Cell-specific inclusion of e37a enhances morphine analgesia in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-specific inclusion of e37a enhances morphine analgesia in vivo, and disruption of this splicing event following nerve injury reduces the action of morphine (Altier et al., 2007; Andrade et al., 2010; Jiang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "30f7e40e-ecdd-46f0-9443-e681e4138a14",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C67",
+      "claim": "Disruption of e37a splicing following nerve injury reduces the action of morphine.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-specific inclusion of e37a enhances morphine analgesia in vivo, and disruption of this splicing event following nerve injury reduces the action of morphine (Altier et al., 2007; Andrade et al., 2010; Jiang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "a6a09eea-5054-40df-86b1-7c9e3bcd8c32",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C68",
+      "claim": "CTCF is the master regulator of chromatin architecture in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "the ubiquitous 11-zinc finger CCCTC binding factor (CTCF), the master regulator of chromatin architecture in mammals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and represents established knowledge about CTCF.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "ea5c2d15-ac51-4fd4-8fc3-55c00cb5575d",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C69",
+      "claim": "CTCF is critical for cell-specific expression of Cacna1b e37a in a DRG-derived cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report the molecular mechanisms that regulate this physiologically significant splicing event, and the surprising finding that the ubiquitous 11-zinc finger CCCTC binding factor (CTCF), the master regulator of chromatin architecture in mammals, and CpG methylation are critical for cell-specific expression of Cacna1b e37a in a DRG-derived cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text as a main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "dd659a51-2416-47cf-aae3-0220e38b23cd",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C70",
+      "claim": "CpG methylation is critical for cell-specific expression of Cacna1b e37a in a DRG-derived cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report the molecular mechanisms that regulate this physiologically significant splicing event, and the surprising finding that the ubiquitous 11-zinc finger CCCTC binding factor (CTCF), the master regulator of chromatin architecture in mammals, and CpG methylation are critical for cell-specific expression of Cacna1b e37a in a DRG-derived cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text as a main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "dd675956-7a72-486d-9a85-6aaf29a898c0",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C71",
+      "claim": "Peripheral nerve injury leads to increased methylation levels at CpG sites within Cacna1b e37a locus impairing cell-specific Cacna1b e37a splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we identify the underlying molecular mechanism: peripheral nerve injury leads to increased methylation levels at CpG sites within Cacna1b e37a locus impairing cell-specific Cacna1b e37a splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text as a main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "4a7695d3-e1fa-446e-b413-06d50c85c895",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C72",
+      "claim": "RAD21 associates with CACNA1B e37a locus in 3 of 27 human cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, there were binding signals in CACNA1B e37a locus for RAD21 in 3 of 27 cell lines, SMC3 in 1 of 27 cell lines, CEBPB in 3 of 27 cell lines, and CTCFL in 1 of 27 cell lines",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the figure legend for Figure 1\u2014figure supplement 1 and supported by ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "84af9b71-0dde-428e-a831-18adc3dc4570",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C73",
+      "claim": "SMC3 associates with CACNA1B e37a locus in 1 of 27 human cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, there were binding signals in CACNA1B e37a locus for RAD21 in 3 of 27 cell lines, SMC3 in 1 of 27 cell lines, CEBPB in 3 of 27 cell lines, and CTCFL in 1 of 27 cell lines",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the figure legend for Figure 1\u2014figure supplement 1 and supported by ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "3bdd173a-93ef-4bd9-bc78-54854ca34af6",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C74",
+      "claim": "CEBPB associates with CACNA1B e37a locus in 3 of 27 human cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, there were binding signals in CACNA1B e37a locus for RAD21 in 3 of 27 cell lines, SMC3 in 1 of 27 cell lines, CEBPB in 3 of 27 cell lines, and CTCFL in 1 of 27 cell lines",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the figure legend for Figure 1\u2014figure supplement 1 and supported by ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "21fd4019-e9fa-4d7b-8347-d0099498f5aa",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C75",
+      "claim": "CTCFL associates with CACNA1B e37a locus in 1 of 27 human cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, there were binding signals in CACNA1B e37a locus for RAD21 in 3 of 27 cell lines, SMC3 in 1 of 27 cell lines, CEBPB in 3 of 27 cell lines, and CTCFL in 1 of 27 cell lines",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the figure legend for Figure 1\u2014figure supplement 1 and supported by ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "48b4a006-adcb-4377-8884-a5fa161a55e6",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C76",
+      "claim": "RAD21 and SMC3 are often found in a complex with CTCF.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, RAD21 (3 of 27 cell lines) and SMC3 (1 of 27 cell lines) are often found in a complex with CTCF (Zhang et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "7e5ac2eb-5764-46f5-9159-e5b97ed9cc13",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C77",
+      "claim": "CTCFL is a CTCF-like testes-specific DNA binding protein.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCFL (1 of 27 cell lines) is a CTCF-like testes-specific DNA binding protein (Loukinov et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "093cea91-4d74-4824-a103-0cd29fb617e2",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C78",
+      "claim": "CEBPB is associated with gene enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "and CEBPB (3 of 27 cell lines) is associated with gene enhancers (Figure 1\u2014figure supplement 1A; Nerlov, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "7f0a56af-6034-42c1-9eb6-70d7978a61cd",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C79",
+      "claim": "CTCF is ubiquitously expressed in the bilaterian phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF is ubiquitously expressed in the bilaterian phyla (Heger et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "39c6f43c-e34c-40ff-9c82-2043199912c7",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C80",
+      "claim": "CTCF was proposed as a regulator of alternative splicing in immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, CTCF was proposed as a regulator of alternative splicing in immune cells (Ruiz-Velasco et al., 2017; Shukla et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "1b11ba0e-e689-4cb8-a20d-84afc9a28760",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C81",
+      "claim": "CTCF binding was robust in many, but not all human cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Several observations suggested to us that CTCF might be the key factor promoting Cacna1b e37a recognition in neurons: CTCF binding was robust in many, but not all human cell lines (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by ChIP-seq data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "a4cda043-fa22-430d-a41a-18504d312a5f",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C82",
+      "claim": "CTCF binding to truncated e37a DNA probes was reduced in all truncated constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the ability of various truncated e37a DNA probes to bind CTCF, but CTCF binding was reduced in all truncated constructs (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by gel shift assay data in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "339c6953-33b6-4c27-8cbf-b59789725fb8",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C83",
+      "claim": "CTCF binding to DNA is strongly influenced by several factors including probe length.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with other reports that CTCF binding to DNA is strongly influenced by several factors including probe length (Fitzpatrick et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "2360523c-bb2d-4004-8eac-b8ffc7e60890",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C84",
+      "claim": "F11 cell line expresses Cacna1b.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the rat DRG/mouse neuroblastoma hybrid F11 cell line which expresses Cacna1b (Allen et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "3fd0c146-d014-4ee3-8c52-a723b03fcc63",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C87",
+      "claim": "GPCR inhibition of CaV2.2 channels at nociceptor terminals accounts for the analgesic actions of morphine at the level of the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "GPCR inhibition of CaV2.2 channels at nociceptor terminals accounts for the analgesic actions of morphine at the level of the spinal cord, and cell-specific Cacna1b e37a inclusion translates into greater efficiency of morphine action in vivo (Andrade et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "3b95f5e0-f1e4-4a64-87cb-ec52009b354d",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C88",
+      "claim": "Cell-specific Cacna1b e37a inclusion translates into greater efficiency of morphine action in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "GPCR inhibition of CaV2.2 channels at nociceptor terminals accounts for the analgesic actions of morphine at the level of the spinal cord, and cell-specific Cacna1b e37a inclusion translates into greater efficiency of morphine action in vivo (Andrade et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "0a179992-87f9-45c5-aec7-530a5d8732d5",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C89",
+      "claim": "Peripheral nerve injury triggers dynamic chromatin accessibility in DRG neurons associated with changes in gene expression and gene regions enriched with CTCF binding motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Peripheral nerve injury triggers dynamic chromatin accessibility in DRG neurons associated with changes in gene expression and gene regions enriched with CTCF binding motifs (Palmisano et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "fb81b880-5799-439c-8828-d909cf2382e1",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C90",
+      "claim": "DNMT3a is upregulated in models of neuropathic pain.",
+      "claim_type": "EXPLICIT",
+      "source": "DNMT3a is upregulated in models of neuropathic pain and is associated with hypermethylation at promotor regions of neuronal genes including Oprm1 and Kcna2 (Mo et al., 2018; Zhao et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "f25bcb0f-9a52-4dc2-8a5c-149e672c8326",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C91",
+      "claim": "DNMT3a is associated with hypermethylation at promotor regions of neuronal genes including Oprm1 and Kcna2.",
+      "claim_type": "EXPLICIT",
+      "source": "DNMT3a is upregulated in models of neuropathic pain and is associated with hypermethylation at promotor regions of neuronal genes including Oprm1 and Kcna2 (Mo et al., 2018; Zhao et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "23e48ace-83ef-420c-b9ae-c7be34b5e828",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C92",
+      "claim": "Global and highly localized changes in TET1 can modify the methylation levels of exons.",
+      "claim_type": "EXPLICIT",
+      "source": "Global and highly localized changes in TET1 can also modify the methylation levels of exons (Liu et al., 2016; Liu et al., 2018; Marina et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "4f148c9d-faaf-4a9e-b1a4-85e9afd6a2c0",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C93",
+      "claim": "dCAS9-TET1 has been used to correct disease-induced alterations in gene expression and mis-splicing events.",
+      "claim_type": "EXPLICIT",
+      "source": "dCAS9-TET1 has been used to correct disease-induced alterations in gene expression and mis-splicing events (Liu et al., 2016; Liu et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "3523381a-999a-4a91-b925-ec06b99efbb8",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C94",
+      "claim": "Local hypomethylation of Cacna1b e37a locus permits CTCF binding, which converts a normally weak exon into one that is recognized by the spliceosome.",
+      "claim_type": "IMPLICIT",
+      "source": "Our data are consistent with a model in which local hypomethylation of Cacna1b e37a locus permits CTCF binding, and this converts a normally weak exon, into one that is recognized by the spliceosome (Shukla et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a model consistent with the data and supported by citation to a similar mechanism in another gene.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "fdc81812-7abb-4c36-8c4e-c143ff2dfe1d",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C95",
+      "claim": "CTCF enhances exon recognition by slowing the elongation rate of Pol II.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF has been suggested to enhance exon recognition by slowing the elongation rate of Pol II (Shukla et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "4d7e59a3-0792-4594-bb5d-49e85f5578ba",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C96",
+      "claim": "CTCF binds approximately 60,000 sites on average on mammalian chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF binds ~60,000 sites on average on mammalian chromosomes (Maurano et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "bd51a26d-765e-48f2-834f-a0bb599b6aed",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C97",
+      "claim": "Most CTCF binding sites (approximately 70%) reside in intergenic or near to promoter regions important for regulating chromatin structure and gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "most of which (~70%) reside in intergenic or near to promoter regions important for regulating chromatin structure and gene expression (Barski et al., 2007; Kim et al., 2007; Ong and Corces, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "40c4867b-2760-43ea-8c2e-64cd8c3d5cc5",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C98",
+      "claim": "CTCF binding to intragenic sites is reported to be relatively invariant across different cell types (>97%).",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF binding to intragenic sites is reported to be relatively invariant across different cell types (>97%) (Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "4cb479f7-71c3-4974-a231-1cd80339b835",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C99",
+      "claim": "Intragenic CTCF binding is variable across cell types and correlated with alternatively spliced exons.",
+      "claim_type": "EXPLICIT",
+      "source": "But, as we document for Cacna1b e37a and based on analyses of mouse tissue and mouse and human cell lines, intragenic CTCF binding is variable across cell types and correlated with alternatively spliced exons (Agirre et al., 2015; Ruiz-Velasco et al., 2017; Shukla et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by the current study's data and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "e7dc7a91-098b-46d3-8102-eb258617aab1",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C100",
+      "claim": "Approximately 30% of all disease-causing mutations are related to RNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-specific alternative splicing is essential for normal cell function, and ~30% of all disease-causing mutations are related to RNA splicing (Montes et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "efed0dbd-710f-419d-a2b9-a39dd70c5328",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C101",
+      "claim": "Injury-induced increased methylation levels of Cacna1b e37a locus likely underlies some of the chronic pathophysiology associated with peripheral nerve injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Injury-induced increased methylation levels of Cacna1b e37a locus likely underlies some of the chronic pathophysiology associated with peripheral nerve injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text as a conclusion based on the nerve injury data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "d7171b1b-f8c8-4072-a046-a30821f769f6",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C102",
+      "claim": "In na\u00efve animals, in most neurons, Cacna1b e37a locus is hypermethylated and CTCF is presumed not to bind this locus.",
+      "claim_type": "EXPLICIT",
+      "source": "In na\u00efve animals, in most neurons, Cacna1b e37a locus is hypermethylated (5-mC) and CTCF is presumed not to bind this locus based on our results in the DRG-derived F11 cell line.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Figure 8 legend and represents a model based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "be46b8e6-7978-4101-ad0a-cdd5242698f2",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C103",
+      "claim": "In most neurons during splicing, e37a is skipped and Cacna1b mRNAs include e37b.",
+      "claim_type": "EXPLICIT",
+      "source": "During splicing, e37a is skipped and Cacna1b mRNAs include e37b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Figure 8 legend and represents a model based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "d8f82d98-3b87-49cd-9e42-e385813a0c71",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C104",
+      "claim": "In Trpv1-lineage neurons, Cacna1b e37a locus is hypomethylated and is presumed to be permissive for CTCF binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in Trpv1-lineage neurons, Cacna1b e37a locus is hypomethylated and is presumed to be permissive for CTCF binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Figure 8 legend and represents a model based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "04bbcaa4-f0e2-492b-a06f-54d8c457509f",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C105",
+      "claim": "Hypomethylation promotes e37a inclusion and both Cacna1b e37a and e37b mRNAs are expressed in Trpv1-lineage neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypomethylation promotes e37a inclusion and both Cacna1b e37a and e37b mRNAs are expressed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Figure 8 legend and represents a model based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "d21c29ab-9b90-493c-b22e-d283f9205af3",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C106",
+      "claim": "E37a confers strong sensitivity to the CaV2.2 channel to inhibition by \u03bc-opioid receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "E37a confers strong sensitivity to the CaV2.2 channel to inhibition by \u03bc-opioid receptors (\u03bcOR; [Andrade et al., 2010; Raingo et al., 2007]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Figure 8 legend and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "fe3b8e01-1b26-4f49-8073-9e8b948814c0",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C107",
+      "claim": "Morphine is more effective at inhibiting e37a-containing CaV2.2 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphine is more effective at inhibiting e37a-containing CaV2.2 channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Figure 8 legend and represents a conclusion from previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "8bfa1456-bba1-4898-9dd6-5ace7db191c1",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C108",
+      "claim": "After peripheral nerve injury, methylation level of Cacna1b e37a locus is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "After peripheral nerve injury that results in pathological pain, methylation level of Cacna1b e37a locus is increased",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Figure 8 legend and supported by the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "8bd9ad5b-cf44-4277-bf0d-f522c9014181",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C109",
+      "claim": "After peripheral nerve injury, CTCF binding to Cacna1b e37a locus is presumed to be impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF binding is presumed to be impaired",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Figure 8 legend and represents an inference based on the methylation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "aa276146-3ccd-47d1-bc81-01a09df49910",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C110",
+      "claim": "After peripheral nerve injury, Cacna1b e37a mRNA levels are decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "and Cacna1b e37a mRNA levels are decreased.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Figure 8 legend and supported by the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "7d317199-ddb9-4b54-86c0-cc3725fdfa0a",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "claim_id": "C111",
+      "claim": "Disrupted splicing pattern after nerve injury is associated with reduced efficacy of morphine in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This disrupted splicing pattern is associated with reduced efficacy of morphine in vivo (Jiang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Figure 8 legend and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2534073f-ee3b-4d9a-997a-f5e2f7a621d5",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CTCF ChIP-seq signal overlaps the CACNA1B e37a locus in approximately 50% of human cell lines (27 of 50), but not e37b. Other DNA binding proteins (RAD21, SMC3, CEBPB, CTCFL) show minimal association with e37a locus compared to CTCF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C72-C81 provide converging evidence from ENCODE ChIP-seq data showing CTCF binding to e37a but not e37b across multiple human cell lines. The data is publicly available and the analysis is straightforward, with appropriate controls showing other factors bind less frequently.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "78f7d2d2-52e2-422b-9d4e-3f032101366f",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CTCF binds specifically to Cacna1b e37a DNA but not e37b or e37a RNA in vitro. The binding is concentration-dependent and specific, as demonstrated by gel shift assays with antibody supershift and competition experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 and C82-C83 demonstrate specific CTCF-e37a DNA binding through multiple complementary in vitro assays (EMSA with concentration dependence, antibody supershift, competition). The lack of binding to e37b and RNA probes strengthens specificity. Truncation experiments (C82) provide additional mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "479ef8d5-a70e-470f-8501-487133cdf086",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CTCF is localized to nuclei and binds Cacna1b e37a locus but not e37b locus in F11 cells (a DRG-derived cell line), as demonstrated by immunofluorescence and ChIP-qPCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 and C84 provide direct evidence of CTCF binding to e37a in a relevant cellular context using orthogonal methods (microscopy and ChIP-qPCR). The cell line is appropriate for the study and the differential binding to e37a vs e37b is consistent with in vitro and human cell line data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "a3bd5d50-818a-4319-b2db-7aa541c9f88d",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CTCF levels are rate-limiting for Cacna1b e37a splicing in F11 cells. CTCF overexpression increases e37a mRNA levels approximately 2-fold, while CTCF knockdown reduces e37a levels by approximately 30%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 demonstrate bidirectional effects of CTCF manipulation on e37a splicing using gain-of-function (overexpression) and loss-of-function (siRNA) approaches. The time course and magnitude of effects are consistent and support a causal role for CTCF in e37a inclusion. Statistical significance is reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "05a51ad5-8280-4039-9f49-0f58430a3cfe",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DNA methylation (5-mC) at the Cacna1b e37a locus negatively regulates e37a inclusion in a CTCF-dependent manner. Treatment with the demethylating agent 5-Aza reduces global and local 5-mC levels and increases e37a mRNA in a CTCF-dependent fashion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C21, C28-C29 establish a mechanistic link between DNA methylation and CTCF-mediated splicing regulation. The 5-Aza experiments show dose-dependent effects on both methylation and splicing, and the requirement for CTCF (C21) demonstrates epistasis. The ~20% reduction in local methylation correlating with >2-fold increase in e37a expression is consistent with methylation blocking CTCF binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "1657f82a-af5a-4af8-affd-40f7b74b9b9b",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Treatment with 2-HG (a TET enzyme inhibitor) increases global 5-mC levels and decreases Cacna1b e37a mRNA levels in F11 cells. 10 mM 2-HG induces approximately 3-fold increase in global methylation and reduces e37a mRNA to nearly undetectable levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 provide complementary evidence to the 5-Aza experiments by showing that increasing methylation reduces e37a expression. The effects are dose-dependent and the magnitude of changes in methylation (~10% local increase, 3-fold global increase) correlate with dramatic reduction in e37a mRNA. Controls show no effect on CTCF protein levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "5b70c235-2c3f-4afb-95b0-a57d962bdf07",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DNMT3a inhibits Cacna1b e37a inclusion, while TET1 and TET2 promote e37a inclusion. Targeted demethylation of e37a locus using dCAS9-TET1 increases e37a expression approximately 2-fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 identify specific enzymes regulating e37a methylation and splicing. The siRNA and overexpression experiments show specificity (DNMT3a but not DNMT1/3b; TET1/2 but not TET3). The dCAS9-TET1 targeting experiment (C32) provides strong evidence for locus-specific effects with appropriate controls (non-targeting gRNA).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "8967b375-c420-4753-a656-ea12ca9c027a",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cacna1b e37a mRNAs are exclusively expressed in Trpv1-lineage neurons of mouse DRG, while e37b mRNAs are expressed in both Trpv1-lineage and non-Trpv1-lineage cells, as determined by FACS separation and RT-PCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 establish cell-type-specific expression patterns in vivo using genetic lineage tracing and FACS. The exclusive expression of e37a in Trpv1-lineage neurons is clearly demonstrated by RT-PCR from sorted populations. This provides critical in vivo validation of the cell-specific splicing mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "1e3d9ae5-de96-4ace-bda8-feff97db3b0d",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Cacna1b e37a locus shows cell-type-specific methylation patterns: it is hypermethylated in non-Trpv1-lineage cells (all 5 CpG sites methylated in majority of sequences) but hypomethylated in Trpv1-lineage neurons (only 1 of 20 clones showed methylation at 1 CpG site).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 and C49 demonstrate striking cell-type-specific methylation differences using bisulfite sequencing of FACS-sorted populations. The near-complete methylation in non-Trpv1 cells versus near-complete demethylation in Trpv1-lineage neurons provides strong support for the methylation-based mechanism of cell-specific splicing regulation in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Peripheral nerve injury (SNI model) increases methylation at the Cacna1b e37a locus in Trpv1-lineage neurons and reduces e37a mRNA expression. This occurs specifically in ipsilateral DRG and is associated with sustained hyperalgesia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48, C50-C51, C56, C62, C71, C108, C110 demonstrate injury-induced changes in methylation and splicing using an established pain model. The within-animal comparison (ipsilateral vs contralateral) and sham controls strengthen the findings. The cell-type specificity (Trpv1-lineage affected, non-Trpv1 unchanged) and correlation with behavioral outcomes support the pathophysiological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cell-specific hypomethylation of Cacna1b e37a locus in Trpv1-lineage neurons permits CTCF binding, which promotes e37a inclusion during alternative splicing. In most neurons, methylation occludes CTCF binding and suppresses e37a expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55, C59-C61, C69-C70, C94, C102-C105 synthesize the mechanistic model supported by the in vitro (F11 cells) and in vivo (DRG) data. The model is well-supported by the convergence of ChIP-seq, EMSA, methylation manipulation, cell-type-specific methylation patterns, and functional splicing assays. The use of 'likely' and 'presumed' appropriately acknowledges that direct CTCF binding in vivo was not measured.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "a8d982d0-8ef8-472d-9ebb-008302ec1db9",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CaV2.2 channels containing e37a are expressed in nociceptors, are especially sensitive to \u03bc-opioid receptor inhibition, and cell-specific e37a inclusion enhances morphine analgesia in vivo. Disruption of e37a splicing after nerve injury reduces morphine efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67, C87-C88, C106-C107, C111 establish the functional significance of e37a splicing regulation based on prior published work (multiple citations provided). These claims provide essential context for why the splicing mechanism matters physiologically and clinically, though the functional characterization was not performed in the current study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "0f0a7a4c-6537-4591-a6ce-47cdd0527742",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Injury-induced increased methylation of Cacna1b e37a locus likely underlies some chronic pathophysiology associated with peripheral nerve injury, presumably by impairing CTCF binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101 and C109 make broader conclusions about pathophysiology and infer impaired CTCF binding after injury. While the methylation increase and splicing disruption are demonstrated (C50, C47), direct evidence of impaired CTCF binding in injured neurons is not provided. The causal link to 'chronic pathophysiology' requires additional functional validation beyond the 8-day timepoint studied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "75815e0f-ece6-4900-b10a-316c69b9ab90",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims about alternative splicing, CTCF function, and disease relevance establish the context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58, C63, C68, C79-C80, C95-C100 provide established background knowledge supported by appropriate citations. These contextual claims are well-supported by the literature and frame the significance of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "73a8c9a9-72d0-4e02-a33e-81d937938a32",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "DNMT3a is upregulated in neuropathic pain models and associated with gene hypermethylation. TET enzymes and dCAS9-TET1 can modify exon methylation and correct disease-induced splicing alterations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C93 cite prior literature establishing the roles of DNMTs and TETs in pain models and therapeutic potential. These claims provide important context for the enzyme-specific experiments (C30-C32) and potential therapeutic applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    },
+    {
+      "id": "1c763493-b124-47e4-97c9-ac07cd4cff61",
+      "content_id": "d2dc6775-3b9e-4944-9d0e-4afdaddbcb38",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Peripheral nerve injury triggers dynamic chromatin accessibility in DRG neurons associated with changes in gene expression and CTCF binding motif-enriched regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 cites prior work establishing that nerve injury affects chromatin accessibility at CTCF sites. This provides important context for the injury-induced methylation changes observed in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:54.661307Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e8bc3d35-5604-43b8-8783-4aff9c6889f5",
+      "result_id": "2534073f-ee3b-4d9a-997a-f5e2f7a621d5"
+    },
+    {
+      "claim_id": "cfb3c0ee-1916-4f58-8178-197eddaa4b66",
+      "result_id": "2534073f-ee3b-4d9a-997a-f5e2f7a621d5"
+    },
+    {
+      "claim_id": "4a7695d3-e1fa-446e-b413-06d50c85c895",
+      "result_id": "2534073f-ee3b-4d9a-997a-f5e2f7a621d5"
+    },
+    {
+      "claim_id": "84af9b71-0dde-428e-a831-18adc3dc4570",
+      "result_id": "2534073f-ee3b-4d9a-997a-f5e2f7a621d5"
+    },
+    {
+      "claim_id": "3bdd173a-93ef-4bd9-bc78-54854ca34af6",
+      "result_id": "2534073f-ee3b-4d9a-997a-f5e2f7a621d5"
+    },
+    {
+      "claim_id": "21fd4019-e9fa-4d7b-8347-d0099498f5aa",
+      "result_id": "2534073f-ee3b-4d9a-997a-f5e2f7a621d5"
+    },
+    {
+      "claim_id": "48b4a006-adcb-4377-8884-a5fa161a55e6",
+      "result_id": "2534073f-ee3b-4d9a-997a-f5e2f7a621d5"
+    },
+    {
+      "claim_id": "7e5ac2eb-5764-46f5-9159-e5b97ed9cc13",
+      "result_id": "2534073f-ee3b-4d9a-997a-f5e2f7a621d5"
+    },
+    {
+      "claim_id": "093cea91-4d74-4824-a103-0cd29fb617e2",
+      "result_id": "2534073f-ee3b-4d9a-997a-f5e2f7a621d5"
+    },
+    {
+      "claim_id": "1b11ba0e-e689-4cb8-a20d-84afc9a28760",
+      "result_id": "2534073f-ee3b-4d9a-997a-f5e2f7a621d5"
+    },
+    {
+      "claim_id": "36ba4886-57af-49a1-b24a-fa63b4f8b8eb",
+      "result_id": "78f7d2d2-52e2-422b-9d4e-3f032101366f"
+    },
+    {
+      "claim_id": "90b61957-4e5d-4e2f-8683-eb06ccc5d070",
+      "result_id": "78f7d2d2-52e2-422b-9d4e-3f032101366f"
+    },
+    {
+      "claim_id": "effe252e-fe12-4cc1-ad64-46e6065d65d3",
+      "result_id": "78f7d2d2-52e2-422b-9d4e-3f032101366f"
+    },
+    {
+      "claim_id": "7f26ec81-50cb-4e08-aca5-e41c4757627a",
+      "result_id": "78f7d2d2-52e2-422b-9d4e-3f032101366f"
+    },
+    {
+      "claim_id": "a4cda043-fa22-430d-a41a-18504d312a5f",
+      "result_id": "78f7d2d2-52e2-422b-9d4e-3f032101366f"
+    },
+    {
+      "claim_id": "339c6953-33b6-4c27-8cbf-b59789725fb8",
+      "result_id": "78f7d2d2-52e2-422b-9d4e-3f032101366f"
+    },
+    {
+      "claim_id": "577c3bbd-0e0b-4038-a5e5-49ed4c3dbf9d",
+      "result_id": "479ef8d5-a70e-470f-8501-487133cdf086"
+    },
+    {
+      "claim_id": "9fd16672-313c-4ad8-94a7-ea9040668e56",
+      "result_id": "479ef8d5-a70e-470f-8501-487133cdf086"
+    },
+    {
+      "claim_id": "6a815fce-805f-40c1-9a23-988bda063b36",
+      "result_id": "479ef8d5-a70e-470f-8501-487133cdf086"
+    },
+    {
+      "claim_id": "2360523c-bb2d-4004-8eac-b8ffc7e60890",
+      "result_id": "479ef8d5-a70e-470f-8501-487133cdf086"
+    },
+    {
+      "claim_id": "0d4c38eb-5c48-4c39-9090-fd944e9c7f3a",
+      "result_id": "a3bd5d50-818a-4319-b2db-7aa541c9f88d"
+    },
+    {
+      "claim_id": "dd858d70-88c6-422d-bd3d-2ce45265b078",
+      "result_id": "a3bd5d50-818a-4319-b2db-7aa541c9f88d"
+    },
+    {
+      "claim_id": "89ddce94-d60d-46b8-8188-8742a5b6b67b",
+      "result_id": "a3bd5d50-818a-4319-b2db-7aa541c9f88d"
+    },
+    {
+      "claim_id": "1439b7ce-1b13-4cd7-9692-ab39bc427e99",
+      "result_id": "a3bd5d50-818a-4319-b2db-7aa541c9f88d"
+    },
+    {
+      "claim_id": "01c9fb28-d47a-4e7d-bb59-cc73ccb3b7bf",
+      "result_id": "05a51ad5-8280-4039-9f49-0f58430a3cfe"
+    },
+    {
+      "claim_id": "8725e24a-cf83-4b18-97a5-65b13aaa241e",
+      "result_id": "05a51ad5-8280-4039-9f49-0f58430a3cfe"
+    },
+    {
+      "claim_id": "e225147e-2de6-41ea-b32e-ada3d217eb55",
+      "result_id": "05a51ad5-8280-4039-9f49-0f58430a3cfe"
+    },
+    {
+      "claim_id": "3082da33-ab8f-4d0a-a6c6-e7a607bde2d2",
+      "result_id": "05a51ad5-8280-4039-9f49-0f58430a3cfe"
+    },
+    {
+      "claim_id": "a1082833-3f74-45c8-b287-ba2c37f373af",
+      "result_id": "05a51ad5-8280-4039-9f49-0f58430a3cfe"
+    },
+    {
+      "claim_id": "c7ba2d8c-c009-4a3f-8f0e-ed5a5cae0193",
+      "result_id": "05a51ad5-8280-4039-9f49-0f58430a3cfe"
+    },
+    {
+      "claim_id": "bbc24cba-0b17-4252-a871-f0aaad00576f",
+      "result_id": "05a51ad5-8280-4039-9f49-0f58430a3cfe"
+    },
+    {
+      "claim_id": "b0d612f0-83fc-4c2d-a48f-1e3f817dbca0",
+      "result_id": "05a51ad5-8280-4039-9f49-0f58430a3cfe"
+    },
+    {
+      "claim_id": "6bf1eb23-90e1-4413-8ae8-e16091e0d541",
+      "result_id": "05a51ad5-8280-4039-9f49-0f58430a3cfe"
+    },
+    {
+      "claim_id": "dd35d562-1184-423c-9571-2f983091ed3b",
+      "result_id": "1657f82a-af5a-4af8-affd-40f7b74b9b9b"
+    },
+    {
+      "claim_id": "733447c8-0819-4c22-8828-fcad9e50deaa",
+      "result_id": "1657f82a-af5a-4af8-affd-40f7b74b9b9b"
+    },
+    {
+      "claim_id": "77003df3-9fc9-49c2-bc3e-aff4ce10351f",
+      "result_id": "1657f82a-af5a-4af8-affd-40f7b74b9b9b"
+    },
+    {
+      "claim_id": "732690da-a137-46d7-a684-47a899224eb6",
+      "result_id": "1657f82a-af5a-4af8-affd-40f7b74b9b9b"
+    },
+    {
+      "claim_id": "6002bd09-97cf-4944-8ee6-5cd1f05d550d",
+      "result_id": "1657f82a-af5a-4af8-affd-40f7b74b9b9b"
+    },
+    {
+      "claim_id": "74e889be-2dc4-45da-abcb-2f9d47afd87b",
+      "result_id": "1657f82a-af5a-4af8-affd-40f7b74b9b9b"
+    },
+    {
+      "claim_id": "bae8692a-1828-4e45-b113-1cc286eb66f1",
+      "result_id": "5b70c235-2c3f-4afb-95b0-a57d962bdf07"
+    },
+    {
+      "claim_id": "5e7e932b-2072-42ef-8023-55eb03ac9895",
+      "result_id": "5b70c235-2c3f-4afb-95b0-a57d962bdf07"
+    },
+    {
+      "claim_id": "3e922d9d-2423-4f77-9a70-944b36183ea5",
+      "result_id": "5b70c235-2c3f-4afb-95b0-a57d962bdf07"
+    },
+    {
+      "claim_id": "03f32543-6942-46b3-8094-31e43b872529",
+      "result_id": "5b70c235-2c3f-4afb-95b0-a57d962bdf07"
+    },
+    {
+      "claim_id": "f11dbe25-ee19-4095-b76e-c9d984db3782",
+      "result_id": "5b70c235-2c3f-4afb-95b0-a57d962bdf07"
+    },
+    {
+      "claim_id": "d85a2e2f-be7d-4dd3-9d5e-a444407fed7d",
+      "result_id": "8967b375-c420-4753-a656-ea12ca9c027a"
+    },
+    {
+      "claim_id": "2ea2d9f8-f808-445e-aca8-e92653cc2d1b",
+      "result_id": "8967b375-c420-4753-a656-ea12ca9c027a"
+    },
+    {
+      "claim_id": "c404543a-9128-4f1d-9239-a255916b3d9b",
+      "result_id": "8967b375-c420-4753-a656-ea12ca9c027a"
+    },
+    {
+      "claim_id": "022cc1d1-45a5-4011-8393-ea7f3b0373bd",
+      "result_id": "8967b375-c420-4753-a656-ea12ca9c027a"
+    },
+    {
+      "claim_id": "73cb9fee-3aab-4394-a921-f7a84253251a",
+      "result_id": "1e3d9ae5-de96-4ace-bda8-feff97db3b0d"
+    },
+    {
+      "claim_id": "d4327405-dd75-49aa-8203-d0772e17a3a2",
+      "result_id": "1e3d9ae5-de96-4ace-bda8-feff97db3b0d"
+    },
+    {
+      "claim_id": "29acece1-dab1-4d69-9f28-4178ca349c1c",
+      "result_id": "1e3d9ae5-de96-4ace-bda8-feff97db3b0d"
+    },
+    {
+      "claim_id": "8d71f1ef-51ea-4292-b473-f9bfd4fd9a38",
+      "result_id": "1e3d9ae5-de96-4ace-bda8-feff97db3b0d"
+    },
+    {
+      "claim_id": "34dab5f2-9def-4be9-8c67-23b6f587ca89",
+      "result_id": "1e3d9ae5-de96-4ace-bda8-feff97db3b0d"
+    },
+    {
+      "claim_id": "bcdaf559-6b30-42ee-98fa-249f3c6ae494",
+      "result_id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee"
+    },
+    {
+      "claim_id": "b200e6c9-cafb-4fda-942b-7d771c0bdce3",
+      "result_id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee"
+    },
+    {
+      "claim_id": "5e0e616c-0815-467f-83af-1a40731830fb",
+      "result_id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee"
+    },
+    {
+      "claim_id": "d5129153-ced4-4399-9bad-a1597d77eed9",
+      "result_id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee"
+    },
+    {
+      "claim_id": "d36911ee-c04c-4407-aa15-8baf16913fb5",
+      "result_id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee"
+    },
+    {
+      "claim_id": "7e729005-10e4-4ee1-a60a-848a28a21c86",
+      "result_id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee"
+    },
+    {
+      "claim_id": "573f57be-bcb5-43b9-b982-57777af35033",
+      "result_id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee"
+    },
+    {
+      "claim_id": "a9b424a7-1f18-4082-8b97-f3abf4e40680",
+      "result_id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee"
+    },
+    {
+      "claim_id": "1e3355f0-9090-4d12-a784-94818574ae75",
+      "result_id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee"
+    },
+    {
+      "claim_id": "6514f0b8-da08-43c3-b88c-090894d04358",
+      "result_id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee"
+    },
+    {
+      "claim_id": "dd675956-7a72-486d-9a85-6aaf29a898c0",
+      "result_id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee"
+    },
+    {
+      "claim_id": "8bfa1456-bba1-4898-9dd6-5ace7db191c1",
+      "result_id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee"
+    },
+    {
+      "claim_id": "aa276146-3ccd-47d1-bc81-01a09df49910",
+      "result_id": "5d9d0fd6-aa2f-4f5c-a70c-03c4495748ee"
+    },
+    {
+      "claim_id": "da208a55-95c2-4a74-84a7-f5b73f97eb7e",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "b107e457-d580-4118-84bb-33fda3ef7d69",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "eb81a391-f098-4d7f-894f-e9668626fd8e",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "3b91508f-b3ef-4fff-a532-463c4519a4bb",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "63db558b-e472-4c97-b63b-626853b84dd4",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "8926a353-853c-46d3-869a-147280946197",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "66c84ec6-185b-4595-bef4-06c246dd3924",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "ea5c2d15-ac51-4fd4-8fc3-55c00cb5575d",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "dd659a51-2416-47cf-aae3-0220e38b23cd",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "3523381a-999a-4a91-b925-ec06b99efbb8",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "d7171b1b-f8c8-4072-a046-a30821f769f6",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "be46b8e6-7978-4101-ad0a-cdd5242698f2",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "d8f82d98-3b87-49cd-9e42-e385813a0c71",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "04bbcaa4-f0e2-492b-a06f-54d8c457509f",
+      "result_id": "287ccd6a-1d83-41c8-b363-dd0b9bf2e21d"
+    },
+    {
+      "claim_id": "5f660f9c-c343-424e-b4ed-ef3de787df9d",
+      "result_id": "a8d982d0-8ef8-472d-9ebb-008302ec1db9"
+    },
+    {
+      "claim_id": "42008a4e-2e28-4d4a-9601-b79993e213e2",
+      "result_id": "a8d982d0-8ef8-472d-9ebb-008302ec1db9"
+    },
+    {
+      "claim_id": "8a9cb45e-68de-473b-9324-54aef6f21946",
+      "result_id": "a8d982d0-8ef8-472d-9ebb-008302ec1db9"
+    },
+    {
+      "claim_id": "30f7e40e-ecdd-46f0-9443-e681e4138a14",
+      "result_id": "a8d982d0-8ef8-472d-9ebb-008302ec1db9"
+    },
+    {
+      "claim_id": "3fd0c146-d014-4ee3-8c52-a723b03fcc63",
+      "result_id": "a8d982d0-8ef8-472d-9ebb-008302ec1db9"
+    },
+    {
+      "claim_id": "3b95f5e0-f1e4-4a64-87cb-ec52009b354d",
+      "result_id": "a8d982d0-8ef8-472d-9ebb-008302ec1db9"
+    },
+    {
+      "claim_id": "d21c29ab-9b90-493c-b22e-d283f9205af3",
+      "result_id": "a8d982d0-8ef8-472d-9ebb-008302ec1db9"
+    },
+    {
+      "claim_id": "fe3b8e01-1b26-4f49-8073-9e8b948814c0",
+      "result_id": "a8d982d0-8ef8-472d-9ebb-008302ec1db9"
+    },
+    {
+      "claim_id": "7d317199-ddb9-4b54-86c0-cc3725fdfa0a",
+      "result_id": "a8d982d0-8ef8-472d-9ebb-008302ec1db9"
+    },
+    {
+      "claim_id": "efed0dbd-710f-419d-a2b9-a39dd70c5328",
+      "result_id": "0f0a7a4c-6537-4591-a6ce-47cdd0527742"
+    },
+    {
+      "claim_id": "8bd9ad5b-cf44-4277-bf0d-f522c9014181",
+      "result_id": "0f0a7a4c-6537-4591-a6ce-47cdd0527742"
+    },
+    {
+      "claim_id": "b35f5475-e9b1-4460-9347-13cb7c2e4d25",
+      "result_id": "75815e0f-ece6-4900-b10a-316c69b9ab90"
+    },
+    {
+      "claim_id": "8e083cad-3ece-41fc-9eb4-7d43a7449a16",
+      "result_id": "75815e0f-ece6-4900-b10a-316c69b9ab90"
+    },
+    {
+      "claim_id": "e83c7989-eb20-43a3-91d4-24607b69595b",
+      "result_id": "75815e0f-ece6-4900-b10a-316c69b9ab90"
+    },
+    {
+      "claim_id": "a6a09eea-5054-40df-86b1-7c9e3bcd8c32",
+      "result_id": "75815e0f-ece6-4900-b10a-316c69b9ab90"
+    },
+    {
+      "claim_id": "7f0a56af-6034-42c1-9eb6-70d7978a61cd",
+      "result_id": "75815e0f-ece6-4900-b10a-316c69b9ab90"
+    },
+    {
+      "claim_id": "39c6f43c-e34c-40ff-9c82-2043199912c7",
+      "result_id": "75815e0f-ece6-4900-b10a-316c69b9ab90"
+    },
+    {
+      "claim_id": "fdc81812-7abb-4c36-8c4e-c143ff2dfe1d",
+      "result_id": "75815e0f-ece6-4900-b10a-316c69b9ab90"
+    },
+    {
+      "claim_id": "4d7e59a3-0792-4594-bb5d-49e85f5578ba",
+      "result_id": "75815e0f-ece6-4900-b10a-316c69b9ab90"
+    },
+    {
+      "claim_id": "bd51a26d-765e-48f2-834f-a0bb599b6aed",
+      "result_id": "75815e0f-ece6-4900-b10a-316c69b9ab90"
+    },
+    {
+      "claim_id": "40c4867b-2760-43ea-8c2e-64cd8c3d5cc5",
+      "result_id": "75815e0f-ece6-4900-b10a-316c69b9ab90"
+    },
+    {
+      "claim_id": "4cb479f7-71c3-4974-a231-1cd80339b835",
+      "result_id": "75815e0f-ece6-4900-b10a-316c69b9ab90"
+    },
+    {
+      "claim_id": "e7dc7a91-098b-46d3-8102-eb258617aab1",
+      "result_id": "75815e0f-ece6-4900-b10a-316c69b9ab90"
+    },
+    {
+      "claim_id": "fb81b880-5799-439c-8828-d909cf2382e1",
+      "result_id": "73a8c9a9-72d0-4e02-a33e-81d937938a32"
+    },
+    {
+      "claim_id": "f25bcb0f-9a52-4dc2-8a5c-149e672c8326",
+      "result_id": "73a8c9a9-72d0-4e02-a33e-81d937938a32"
+    },
+    {
+      "claim_id": "23e48ace-83ef-420c-b9ae-c7be34b5e828",
+      "result_id": "73a8c9a9-72d0-4e02-a33e-81d937938a32"
+    },
+    {
+      "claim_id": "4f148c9d-faaf-4a9e-b1a4-85e9afd6a2c0",
+      "result_id": "73a8c9a9-72d0-4e02-a33e-81d937938a32"
+    },
+    {
+      "claim_id": "0a179992-87f9-45c5-aec7-530a5d8732d5",
+      "result_id": "1c763493-b124-47e4-97c9-ac07cd4cff61"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2435 @@
+{
+  "submission": {
+    "id": "4fb1357c-5be7-4dc7-babb-34b511b97fc7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:12:20.447584Z",
+    "updated_at": "2025-12-02T13:12:20.447584Z"
+  },
+  "content": [
+    {
+      "id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "submission_id": "4fb1357c-5be7-4dc7-babb-34b511b97fc7",
+      "content_type": "manuscript",
+      "content_text": "# Modular transcriptional programs separately define axon and dendrite connectivity\n\n## Authors\n\n- Yerbol Z Kurmangaliyev<sup>1</sup> ([ORCID: 0000-0003-4829-2025](https://orcid.org/0000-0003-4829-2025))\n- Juyoun Yoo<sup>2</sup>\n- Samuel A LoCascio<sup>1</sup>\n- S Lawrence Zipursky<sup>1</sup> ([ORCID: 0000-0001-5630-7181](https://orcid.org/0000-0001-5630-7181)) \u2020\n\n### Affiliations\n\n1. Department of Biological Chemistry Howard Hughes Medical Institute, David Geffen School of Medicine, University of California, Los Angeles Los Angeles United States\n2. Neuroscience Interdepartmental Program University of California, Los Angeles Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPatterns of synaptic connectivity are remarkably precise and complex. Single-cell RNA sequencing has revealed a vast transcriptional diversity of neurons. Nevertheless, a clear logic underlying the transcriptional control of neuronal connectivity has yet to emerge. Here, we focused on Drosophila T4/T5 neurons, a class of closely related neuronal subtypes with different wiring patterns. Eight subtypes of T4/T5 neurons are defined by combinations of two patterns of dendritic inputs and four patterns of axonal outputs. Single-cell profiling during development revealed distinct transcriptional programs defining each dendrite and axon wiring pattern. These programs were defined by the expression of a few transcription factors and different combinations of cell surface proteins. Gain and loss of function studies provide evidence for independent control of different wiring features. We propose that modular transcriptional programs for distinct wiring features are assembled in different combinations to generate diverse patterns of neuronal connectivity.\n\n## Introduction\n\nBrain function relies on precise patterns of synaptic connections between neurons. At the cellular level, this entails each neuron adopting a specific wiring pattern, the combination of specific synaptic inputs and outputs. In invertebrates, stereotypical wiring patterns are genetically encoded in the programs regulating the development of neurons. Much of the specificity of inputs and outputs of neurons in the mammalian CNS is also genetically determined (Sanes and Zipursky, 2010).\n\nVast numbers of neurites from a diversity of neurons are intermingled within the developing central nervous system, and they form highly specific synaptic connections with a discrete subset of the neurons they contact. Studies in both vertebrates and invertebrates have led to the identification of cell surface proteins (CSPs) that mediate selective association between neurites (Tessier-Lavigne and Goodman, 1996; de Wit and Ghosh, 2016; Zinn and \u00d6zkan, 2017). Gain and loss of function genetic studies have shown that combinations of different CSP families regulate this specificity (Zarin et al., 2014). Indeed, neuronal subtypes express highly diverse repertoires of CSPs during circuit assembly (Tan et al., 2015; Li et al., 2017; Sarin et al., 2018). Conserved regulatory strategies involving combinations of transcription factors (TFs) establish unique neuronal identities (Allan and Thor, 2015; Enriquez et al., 2015; Hobert, 2016). However, the programs regulating expression of CSPs for specific neuronal wiring features are still poorly understood.\n\nSingle-cell RNA sequencing (RNA-Seq) provides an unsupervised approach to uncover the genetic programs underlying specific wiring features by exploring subtype-specific transcriptomes during development. As neuronal subtypes exhibit differences in characteristics other than wiring patterns, the relationship between genes and wiring specificity may be obscured by genes contributing to other aspects of neuronal diversity. Therefore, sets of closely related neurons with highly specific differences in wiring patterns are ideally suited to uncover the genetic programs specific to wiring. Here, we explore the genetic logic underlying synaptic specificity in one such set of neurons: T4/T5 neurons of the Drosophila visual motion detection pathway. We envision that our findings in this system will provide insights into the genetic logic of wiring specificity more broadly in both vertebrate and invertebrate systems.\n\nT4/T5 neurons share a common developmental origin, physiological function, and general morphology, but differ in their precise wiring patterns and preferred stimulus (Fischbach and Dittrich, 1989; Maisak et al., 2013; Apitz and Salecker, 2018; Pinto-Teixeira et al., 2018; Shinomiya et al., 2019). There are eight morphological subtypes of T4/T5 neurons in each column of the lobula plate (LoP) neuropil (see below), comprising the most abundant cell type in the fly visual system. These subtypes can be classified into two quartets of subtypes based on dendritic inputs: the four T4 subtypes share a common set of dendritic inputs in the medulla, and the four T5 subtypes share a different set of dendritic inputs in the lobula (Figure 1A\u2013C). T4 neurons respond to ON stimuli (i.e. bright edges moving against a dark background) and T5 to OFF stimuli (i.e. dark edges moving across a bright background). T4/T5 neurons can also be classified into four pairs of subtypes (a-d) based on the location of their axon terminals within a given column in layers a-d of the LoP. Each pair responds selectively to visual motion in one of four cardinal directions: posterior, anterior, upwards, and downwards, respectively (Figure 1A\u2013C). Although transcriptional profiling of the adult Drosophila brain revealed a common transcriptional signature for all T4/T5 neurons, genetic programs for individual subtypes have not been identified (Davie et al., 2018; Konstantinides et al., 2018). We hypothesized that identification of gene expression programs for individual T4/T5 subtypes during circuit assembly would provide insight into the genetic programs regulating discrete wiring features.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig1-v2.jpg)\n\n**Figure 1.:** (A) Common morphology of a T4/T5 neuron, with axon and dendrite wiring pattern variations in parentheses. (B) Arrangement of the eight T4/T5 subtypes in the optic lobe. Each subtype is defined by a combination of one dendrite (M10 or Lo1) and one axon (LoP a, b, c, or d) wiring pattern. (C) A single T4a neuron (green) with dendrites in M10 (asterisk) and axon terminal in LoP layer a (arrowhead). All T4/T5 neurons labeled in magenta. Scale bar, 20 \u03bcm. (D\u2013F) Single-cell sequencing of T4/T5 neurons at 48 hr APF. Unsupervised analysis revealed eight distinct transcriptional clusters. (D) T4/T5 neurons were labeled with nuclear GFP, purified by FACS and used for single-cell RNA-Seq. (E) t-distributed stochastic neighbor embedding (tSNE) plot of 3557 single-cell transcriptomes. Clusters are color-coded according to subtype identity based on following results. Cell numbers are displayed for each cluster. See also Figure 1\u2014figure supplement 1. (F) Heatmap of expression patterns of cluster-enriched genes (\u2018one versus all\u2019, see Materials\u00a0and\u00a0methods). Cells (rows) grouped by cluster identities as in (E). Genes (columns) are ordered by similarity of their expression patterns. Scaled expression levels are indicated, as in scale.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Principal component analysis (PCA). (B) Independent component analysis (ICA). Distributions of cells along eight principal components (PCs) and eight independent components (ICs). (C) tSNE plots based on IC 1\u20133 (left), IC 1\u20138 (middle), PC 1\u20138 (right). Cells are color coded according to the final clustering results based on IC 1\u20133, as in Figure 1.\n\nHere, we report that independent transcriptional programs define the dendritic inputs and axonal outputs of T4/T5 neurons. We present gain and loss of function studies indicating that these programs control their corresponding morphological features. Our findings suggest that the modular assembly of separate dendritic and axonal transcriptional programs contributes to the diversity of wiring patterns in complex nervous systems.\n\n## Results\n\n### Single-cell RNA-Seq reveals eight transcriptionally distinct populations of T4/T5 cells\n\nAs a step towards uncovering genetic programs that control neuronal wiring patterns, we performed single-cell RNA-Seq on developing T4/T5 neurons. Sequencing was performed at 48 hr after puparium formation (APF). This developmental time point precedes a period of widespread synaptogenesis in the visual system, and coincides with the appearance of four discrete synaptic layers (a, b, c, d) in the LoP neuropil. Neurons were purified from dissected optic lobes by FACS using a transgenic line with nuclear GFP selectively expressed in all T4/T5 neurons (Figure 1D). RNA-Seq libraries were generated using 10X Chromium technology (Zheng et al., 2017) and sequenced to a mean depth of 92,000 reads per cell. In total, we profiled 3894 cells with a median of 1633 genes and 4389 transcripts captured per cell. After quality control and removal of outlier cells, our final dataset consisted of 3557 cells with 1000\u20132000 genes per cell.\n\nWe applied independent component analysis (ICA) followed by a graph-based clustering method to separate transcriptionally distinct cell populations (Butler et al., 2018; Saunders et al., 2018). Unsupervised analysis revealed eight clusters of approximately equal numbers of cells (Figure 1E and Figure 1\u2014figure supplement 1), suggesting that each cluster corresponded to a single T4/T5 subtype.\n\nTo identify genes preferentially expressed in T4/T5 subtypes, we performed differential gene expression analysis between each of the eight individual clusters and all other cells in the dataset (i.e. \u2018one versus all,\u2019 see Materials\u00a0and\u00a0methods). This revealed 69 genes which were strongly expressed in some clusters and not in others. Cluster-enriched genes, however, were not specific to single clusters. By contrast, for instance, each of the five subtypes of lamina neurons is defined by at least one subtype-type specific transcription factor (Tan et al., 2015). Thus, while T4/T5 subtypes separated into eight transcriptionally distinct clusters, they were not defined by unique molecular markers (Figure 1F).\n\n### Eight T4/T5 transcriptional clusters are separated by three primary axes of transcriptional diversity\n\nThe absence of unique markers for individual subtypes suggested that they were instead defined by unique combinations of genes. ICA has been shown to capture groups of genes corresponding to discrete biological phenomena (Saunders et al., 2018). Intriguingly, three independent components (ICs) each split the eight T4/T5 clusters into two groups of four, each in a different way (Figure 2A). Together, these three ICs were sufficient to define all eight clusters (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig2-v2.jpg)\n\n**Figure 2.:** (A) Three independent components (ICs, henceforth Axis 1, 2, 3) separate cells into approximate halves. Histograms (bottom) and 1-D scatterplots (top) show the distributions of cells along each axis. Cells are grouped into rows based on cluster identities. ICs/Axes are ordered according to following results. Clusters are color-coded as in Figure 1E. See also Figure 1\u2014figure supplement 1. (B) 3-D scatterplot of the distributions of cells along the three ICs/Axes. (C) Heatmaps of expression patterns of the top 15 genes with highest contribution (loading) to each IC/Axis. Cells (columns) are ordered according to a score for each IC/Axis. Genes (rows) are ordered according to the contribution to each IC/Axis. Scaled expression levels are indicated, as in scale. Axes ordered as in (A). (D) 3-D scatterplots with expression patterns of transcription factors (TFs) with highest contribution to each IC/Axis. Normalized expression levels are indicated by color, as in scale. Axes are arranged as in (B).\n\nEach of the three ICs defined an axis of transcriptional diversity (hereafter referred to as Axis 1, 2, 3) driven by a group of genes differentially expressed along each axis. Many of these genes were expressed in a binary (ON/OFF) pattern in one of the two groups of clusters separated along each axis (Figure 2C). A small set of TFs were among the genes with the highest contributions to each axis and illustrate this pattern. Binary expression of bifid (bi) defined the two groups of clusters separated by Axis 1, grain (grn) defined the clusters separated by Axis 2, and TfAP-2 defined the clusters separated by Axis 3 (Figure 2D). Thus, while no individual cluster is uniquely defined by the expression of a single gene, each cluster expresses a unique combination of genes. In this way, three axes of diversity with orthogonal ON/OFF expression patterns of TFs define the eight T4/T5 clusters.\n\n### Primary axes of transcriptional diversity correspond to axon and dendrite wiring patterns\n\nWe next sought to map transcriptional clusters to T4/T5 subtypes, and to determine the biological significance of the observed axes of transcriptional diversity. We inspected in vivo expression patterns of genes associated with the three primary axes of diversity using transgenic reporters inserted into the endogenous loci (Venken et al., 2011).\n\nAxis 1\u00a0separated clusters into two groups of four that were defined by mutually exclusive binary expression of two genes, Fasciclin 2 (Fas2) and klingon (klg), respectively (Figure 3A), each encoding immunoglobulin (Ig) superfamily proteins. Fas2 was expressed in LoP layers a/b, whereas klg was expressed in LoP layers c/d (Figure 3B). Clusters expressing Fas2 and klg also expressed previously described markers for T4/T5 subtypes a/b (dachshund (dac)) and c/d (bi, Connectin (Con)) (Apitz and Salecker, 2018) (Figure 3\u2014figure supplement 1). Thus, Axis 1\u00a0separated LoP layer a/b and c/d subtypes, defining specificity of axonal outputs between two broad domains of the LoP (Figure 3C). This corresponds to separation of horizontal (posterior/anterior) and vertical (upwards/downwards) motion detection circuits, respectively.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013A\u201d) 1-D scatterplots show distribution of cells along Axis 1, 2, and 3\u00a0for each cluster. Normalized expression levels are indicated by color, as in scale. (B\u2013B\u201d) In vivo expression of marker genes for each axis at 48 hr APF. Fas2 labels LoP layers a/b, klg labels LoP layers c/d, beat-IV and grn label LoP layers b/c, dpr2 and beat-VI label M10 but not Lo1. Scale bars, 20 \u03bcm. Sets of positive clusters in (A) are matched to specific sets of T4/T5 subtypes based on in vivo expression patterns in (B). Individual cluster identities are deduced based on combination of expression patterns. For example, T4a is Fas2+ (a/b), beat-IV- (not b/c), dpr2+ (M10). (C\u2013C\u201d) Schematic of wiring patterns of T4/T5 subtypes corresponding to the expression patterns of marker genes (red). See also Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** See legend of Figure 3 for details.\n\nAxis 2\u00a0separated clusters into two groups of four defined by binary expression of beat-IV (an Ig superfamily protein) and the TF grn. Both genes were expressed in LoP layers b/c, but not a/d. Thus, Axis 2\u00a0further separated subtypes into inner (b and c) and outer (a and d) LoP layer subtypes in a symmetrical fashion, defining specificity of axonal outputs between adjacent layers within the two broad domains of the LoP (Figure 3A\u2019\u20133C\u2019). This corresponds to further separation of each of the motion detection circuits into two subcircuits detecting motion in two opposing directions (i.e. horizontal into posterior and anterior, and vertical into upwards and downwards motion).\n\nAxis 3\u00a0separated clusters into two groups of four defined by binary expression of dpr2 and beat-VI, each encoding an Ig superfamily protein. In vivo, both genes were expressed in all LoP layers, and M10 but not Lo1. Thus, Axis 3\u00a0separated all T4 from all T5 subtypes, defining specificity of dendritic inputs (Figure 3A\u2019\u2019\u20133C\u2019\u2019). This corresponds to separation into two parallel circuits for ON and OFF motion detection, respectively.\n\nTaken together, three primary axes of diversity defined distinct wiring features of T4/T5 subtypes and in combination defined wiring patterns of each T4/T5 subtype (Figure 3A\u20133A\u2019\u2019). A combination of Axis 1\u00a0and Axis 2\u00a0defined four types of axonal outputs (a, b, c, d), and Axis 3\u00a0defined two types of dendritic inputs (T4 and T5).\n\n### Transcriptional program of a single T4/T5 subtype\n\nIn addition to the transcriptional differences between groups of T4/T5 subtypes described above, further variation might exist at the individual subtype level. To examine this possibility, we focused on a single subtype (T4a) and performed comprehensive pairwise comparisons with each of the other subtypes (i.e. \u2018one versus one\u2019).\n\nFirst, we compared T4a and each subtype that differed by a single wiring feature: either axonal outputs (T4b, T4c, T4d), or dendritic inputs (T5a) (Figure 4, upper dot plots). Comparison of T4a to T4c or T4d, which have axonal outputs in non-adjacent LoP layers, yielded the largest number of differentially expressed genes (DEGs, 58 and 55, respectively). T4a and T4b have axonal outputs in adjacent LoP layers, and were separated by an intermediate number of DEGs (16). Finally, only a small number of DEGs (9) separated T4a and T5a, which share axonal output but receive different dendritic inputs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig4-v2.jpg)\n\n**Figure 4.:** Pairwise comparisons between T4a and other subtypes (\u2018one versus one\u2019, see Materials\u00a0and\u00a0methods) that differ by either axonal outputs (A\u2013C), or dendritic inputs (D). For each comparison, insets indicate morphologies (upper left) and cluster distributions along axes of transcriptional diversity (lower left). Expression patterns of differentially expressed genes (DEGs) for each pairwise comparison are shown in upper right. Dot size indicates the percentage of cells in which the DEG was detected, color represents average scaled expression, as in scale. Genes are ordered by fold-change values. Top 20 DEGs are shown for (A) and (B). Expression patterns of DEGs among all eight subtypes are shown in lower right. See also Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Top 20 DEGs are shown for each comparison. See legend of Figure 4 for details.\n\nExpression patterns of the DEGs from pairwise comparisons across all T4/T5 subtypes revealed a general pattern (Figure 4, lower dot plots): virtually all DEGs were co-regulated across all subtypes according to either specificity of axonal outputs or dendritic inputs. In other words, distinct sets of DEGs were expressed in each pair of subtypes with shared axonal outputs, but different dendritic inputs (e.g. in T4a and T5a, Figure 4A\u2013C). Similarly, a distinct set of DEGs was expressed in groups of subtypes with shared dendritic inputs, but different axonal outputs (i.e. all T4 subtypes, Figure 4D).\n\nThe co-regulation of DEGs according to wiring patterns was not limited to comparisons between subtypes that differed by a single wiring feature. DEGs between T4a and subtypes that differed by both axon and dendrite wiring patterns (e.g. T5c), were also expressed in groups of subtypes sharing either axonal outputs or dendritic inputs (Figure 4\u2014figure supplement 1).\n\nIn addition to three primary axes of transcriptional diversity, this analysis shows that a number of DEGs exhibited more distinct LoP layer-specific patterns. For example, many DEGs were specifically expressed or suppressed in T4/T5 subtypes from a single LoP layer (Figure 4C).\n\nMany of the DEGs have been implicated in neuronal wiring specificity (Figure 4). Approximately half of the DEGs encoded CSPs with cell adhesion domains (Ig/LRR), including multiple members of the dpr/DIP and beat/side families of interacting proteins (Zinn and \u00d6zkan, 2017); specific members of these families have been shown to regulate axon guidance and synaptic specificity in the developing fly nervous system.\n\nTaken together, these results reveal that the transcriptional organization of T4/T5 neurons mirrored their wiring patterns. Discrete groups of co-regulated genes reiteratively defined either shared axon or shared dendrite wiring patterns among different subtypes. These groups of genes were assembled in different combinations to uniquely define the eight T4/T5 subtypes.\n\n### Stable and dynamic features of T4/T5 transcriptional programs during development\n\nTo evaluate how gene expression in T4/T5 subtypes changes during development, we profiled T4/T5s at an earlier time point, 24 hr APF. Similar to our dataset at 48 hr APF, we identified eight distinct populations separated by three equivalent axes of transcriptional diversity. Many of the same genes were associated with these axes at both time points, allowing us to match subtypes between 24 hr and 48 hr APF (Figure 5\u2014figure supplement 1).\n\nComparison of 24 hr and 48 hr datasets revealed stable and dynamic features of T4/T5 transcriptional programs. TFs defining the primary axes of diversity (bi, grn, TfAP-2) were expressed in the same sets of subtypes at both time points, suggesting they may contribute to stable subtype identities during development (Figure 5A). Some CSPs also exhibited stable expression, marking subtypes with shared axon or dendrite wiring patterns at both time points. Other CSPs were dynamically regulated and were specific to subtypes only at a particular stage of development (Figure 5B\u2013D and Figure 7\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig5-v2.jpg)\n\n**Figure 5.:** Distributions of normalized expression levels of TFs (A)\u00a0and selected families of CSPs\u00a0(B-D) at 24 hr and 48 hr APF. Distributions for each subtype are color-coded as in Figure 1. See also Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Unsupervised analysis revealed eight transcriptionally distinct populations. (A) tSNE plot of 3833 single-cell transcriptomes. (B). Distribution of cells along three primary axes of transcriptional diversity, and expression patterns of TF with highest contribution to each axis. See legends of Figures 1\u20133 for details.\n\nInterestingly, dynamic changes in gene expression were also coordinated among subtypes with shared wiring features (Figure 5B\u2013D). For example, dpr3 and a few other CSPs were synchronously upregulated in all T4 subtypes from 24 hr to 48 hr APF. Similarly, Toll-6 was synchronously upregulated in both LoP layer \u2018a\u2019 subtypes (T4a/T5a). These data indicate that similar transcriptional programs unfold in parallel among T4/T5 subtypes with shared wiring features.\n\n### Axon-specific transcriptional programs of T4/T5 neurons control lamination of LoP layers\n\nA remarkable correspondence between transcriptional programs and wiring patterns suggested that these programs control development of corresponding features of T4/T5 neurons. During the period covered in our study (24\u201348 hr APF) four LoP layers form in two discrete lamination steps (Figure 6\u2014figure supplement 1). The T4/T5 axon terminals first laminate into two broad domains corresponding to layers a/b and c/d. These domains then further sublaminate into two pairs of adjacent layers to form the four discrete LoP layers, a, b, c, and d. The two primary axes of transcriptional diversity mirrored these two stages of LoP layer formation, suggesting a regulatory code for axon wiring (Figure 3). Mutually exclusive expression of the TFs dac and bi/pros separated a/b (dac+) from c/d (bi+/pros+) subtypes (i.e. Axis 1, Apitz and Salecker, 2018). These subtypes were further separated by expression of the TF grn into inner (b and c, grn+) and outer (a and d, grn-) layer subtypes in a symmetrical fashion (i.e. Axis 2). This suggested that two levels of transcriptional regulation, acting either sequentially or in a temporally overlapping way, control development of four types of T4/T5 axonal outputs.\n\nWe sought to experimentally address this issue. Previous studies indicate that bi specifies c/d subtypes and formation of corresponding LoP layers. RNAi of bi in all T4/T5 neurons results in loss of the c/d domain of the LoP, whereas overexpression results in loss of the a/b domain. In both cases, further sublamination of remaining inner and outer LoP layer pairs still occurs (Apitz and Salecker, 2018). We performed RNAi of grn, which resulted in a different phenotype; whereas distinct a/b and c/d LoP domains were still separated by a pronounced gap and differential expression of Con (a marker for LoP layers c/d), both domains failed to sublaminate into inner and outer layers, instead forming a single layer each (Figure 6A\u2013B). The overall morphological organization of T4/T5 neurons was otherwise unaffected. Overexpression of grn in all T4/T5 neurons also resulted in a specific failure of a/b and c/d LoP domains to sublaminate.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic of grn+ (red) T4/T5 subtypes in wild-type optic lobe. grn expression defines inner LoP layer subtypes. See also Figure 6\u2014figure supplement 1. (B) grn RNAi and grn overexpression in all T4/T5 neurons specifically disrupts sublamination of a/b (Con-) and c/d (Con+) LoP subdomains into inner and outer layers. Insets depict LoP phenotypes. (C\u2013D) Immunostaining for Death caspase-1 (Dcp-1) reveals increased apoptotic T4/T5 neurons under grn RNAi and overexpression (UAS-grn) conditions at 30 hr APF. See also Figure 6\u2014figure supplement 2, and Figure 6\u2014source data 1. (E) Ectopic expression of p35 in T4/T5 neurons (UAS-p35) rescues apoptotic cell death associated with overexpression of grn. (F) grn overexpression specifically disrupts axon sublamination when apoptosis is blocked. Statistical significance assessed by one-way ANOVA with Tukey\u2019s multiple comparison test (**p<0.01, ***p<0.001). Bars and whiskers represent mean and standard deviation. Dots represent values for individual optic lobes.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** 23G12-Gal4 drives membrane localized RFP (grey) and nuclear localized GFP (green) in all T4/T5 neurons throughout pupal development.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Statistical significance assessed by one-way ANOVA with Dunnett\u2019s multiple comparison test (**p<0.01).\n\nRNAi and overexpression of grn resulted in significant loss of T4/T5 neuron numbers between 24 hr and 48 hr APF (Figure 6\u2014figure supplement 2), associated with an increase in apoptosis (Figure 6C\u2013D). Failure of LoP layer sublamination could result from death of specific subtypes during development. Alternatively, differential expression of grn might be required to direct T4/T5 axons to discrete layers. Expression of baculovirus caspase inhibitor p35 in developing T4/T5s rescued cell death associated with grn overexpression. Nevertheless, T4/T5 axons still failed to sublaminate into four discrete LoP layers (Figure 6E\u2013F). Thus, differential expression of grn is specifically required for sublamination of T4/T5 axons between pairs of adjacent LoP layers.\n\nWe conclude that axon-specific transcriptional programs defined by binary (ON/OFF) expression patterns of two TFs, bi and grn, control the formation of four LoP layers and corresponding T4/T5 axonal wiring patterns.\n\n## Discussion\n\nSingle-cell transcriptional profiling has the potential to transform our understanding of the genetic programs controlling wiring in complex nervous systems (Li et al., 2017; Tasic et al., 2018; Klingler et al., 2018). However, neurons exhibit a vast diversity of wiring patterns, morphologies, and molecular identities, making it difficult to extract the transcriptional logic underlying specific wiring features. Here, we turned to the closely related T4/T5 subtypes of the Drosophila visual system, which differ by specific variations in wiring, with the expectation that transcriptional differences among them would reflect the specificity of dendritic inputs and axonal outputs. A unique attribute of T4/T5 neurons is that the same dendritic and axonal wiring patterns are reiteratively used among different subtypes; each neuron can be described by a unique combination of one of four types of axonal outputs and one of two types of dendritic inputs. We anticipated that this property of T4/T5 neurons would provide an opportunity to assess the relationship between specific genetic programs and fundamental features of neuronal architecture.\n\nUnsupervised analysis revealed that separable transcriptional programs correlate with these specific wiring features. We demonstrate through gain and loss of function experiments that these programs control specific axonal targeting features, which are separable from other features (e.g. dendrite targeting). These programs can be re-assembled in a modular fashion to generate neuronal subtypes with different combinations of wiring features. A modular transcriptional architecture may provide a general strategy for discrete modifications to neuronal connectivity in development and evolution.\n\nA common T4/T5 neuronal identity is defined by a unique combination of TFs expressed in all subtypes (e.g. Lim1, Drgx, acj6) (Davie et al., 2018; Konstantinides et al., 2018). Perturbation of TFs expressed in all subtypes disrupts overall organization of T4/T5 neurons, including both dendritic and axonal morphologies (Contreras et al., 2018; Schilling et al., 2019). We find that this common T4/T5 transcriptional program is further diversified by separable feature-specific transcriptional programs. These programs are defined by three binary (ON/OFF) TF expression patterns, with two TF patterns defining the four axonal outputs and one TF pattern defining the two dendritic inputs. In this way, modular TF codes defining common and feature-specific transcriptional programs give rise to eight T4/T5 subtypes (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig7-v2.jpg)\n\n**Figure 7.:** A common T4/T5 regulatory program is defined by TFs expressed in all subtypes (Davie et al., 2018; Konstantinides et al., 2018; Contreras et al., 2018; Schilling et al., 2019). This program is diversified by modular combinations of feature-specific TFs defining unique wiring patterns of eight T4/T5 subtypes. Dot size indicates the percentage of cells in which the TF was detected, color represents average scaled expression, as in scale. Data shown for 48 hr APF. See also Figure 7\u2014figure supplements 1 and 2.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** See Figure 7 legend for details.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50822/elife-50822-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Expression patterns of subtype-enriched CSPs with cell adhesion domains (e.g. Ig and LRR). Expression patterns are shown for 24 hr and 48 hr APF. CSPs are ordered by similarity of their expression patterns. See Figure 7 legend for details.\n\nFour pairs of T4/T5 subtypes with shared axonal outputs (and different dendritic inputs) each target one of four LoP layers, a-d. The ultimate layered architecture of neuropils develops through sequential lamination into increasing numbers of layers (Sanes and Zipursky, 2010; Millard and Pecot, 2018). Together with previous results, our findings suggest that the lamination of T4/T5 axonal outputs occurs via two distinct processes, each controlled by a separate TF. Binary expression of bi is required for lamination of the broad a/b from c/d LoP domains (Apitz and Salecker, 2018), whereas binary expression of grn is required for sublamination of each of these two domains into separate LoP layers. Importantly, perturbation of each TF exclusively disrupts the corresponding lamination step, while not affecting other morphological features of T4/T5 neurons. Similarly, two quartets of subtypes with shared dendritic inputs (and different axonal outputs) were defined by binary expression of TfAP-2. Arborization of dendrites in M10 (T4) or Lo1 (T5) occurs during initial neurite guidance steps, preceding the developmental stages covered in this study (Pinto-Teixeira et al., 2018). We hypothesize that DEGs between T4 and T5 subtypes identified in our analysis contribute to the connections with two distinct sets of presynaptic partners (Shinomiya et al., 2019).\n\nThe binary expression patterns of TFs also mirror the developmental lineages of T4/T5 neurons. a/b and c/d subtypes arise from bi- and bi+ progenitor populations. Neuroblasts from each population undergo two terminal Notch-dependent asymmetric divisions to give rise to the eight subtypes (Pinto-Teixeira et al., 2018). These divisions correspond to binary expression patterns of grn and TfAP-2, respectively, which act with Notch signaling to regulate wiring. Remarkably, despite divergent developmental trajectories separated by multiple divisions and distinct progenitor pools, all T4 and all T5 subtypes converge onto the same transcriptional programs associated with two types of dendritic inputs. Three regulatory dichotomies could also reflect the evolutionary origin of T4/T5 subtypes and correspond to consecutive duplications of ancestral cell types and circuits (Shinomiya et al., 2015; Arendt et al., 2016).\n\nEach axonal and dendritic transcriptional program is characterized by a specific pattern of TFs, as well as a set of CSPs, many of which are implicated in regulating wiring in other developmental contexts. These include Ig superfamily proteins in which different paralogs exhibit discrete heterophilic binding specificities, including the beat/side and the dpr/DIP interacting protein families (Zinn and \u00d6zkan, 2017). Interestingly, dynamic expression of these proteins in neurons with shared wiring features was developmentally coordinated. We envision that the synaptic specificity of T4/T5 dendrites and axons are determined by the combined activity of these recognition molecules through interactions with synaptic partners. Future experiments utilizing gain and loss of function analysis, either alone or different combinations, will provide insights into the cellular recognition mechanisms by which synaptic specificity is established.\n\nThe composite morphological properties of T4/T5 subtypes allowed us to identify, and thus decouple transcriptional programs for dendrite and axon wiring. Combining separate dendritic and axonal programs, and variations on them, may contribute to the diversification of synaptic specificity in different neuronal subtypes across complex nervous systems\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>MCFO-1 (pBPhsFLP2::PEST;+; UAS-FSF-smGdP::HA_V5_FLAG)</td>\n      <td>PMID: 25964354</td>\n      <td>RRID: BDSC_64085</td>\n      <td>Gift from Aljoscha Nern and Gerald Rubin</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>10XUAS-IVS-myr::tdTomato</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_32222</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>23G12-GAL4 (T4/T5)</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_49044</td>\n      <td>T4/T5 driver</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>42F06-GAL4 (T4/T5)</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_41253</td>\n      <td>T4/T5 driver</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>23G12-LexA (T4/T5)</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_65044</td>\n      <td>T4/T5 driver</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>{R59E08-p65ADZp (attP40); R42F06-ZpGdbd (attP2)} (T4/T5 splitGAL4)</td>\n      <td>PMID: 28384470</td>\n      <td>JRC_SS00324</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-CD4-tdGFP</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_35839</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-H2A::GFP</td>\n      <td>PMID: 26687360</td>\n      <td>N/A</td>\n      <td>Gift from Barret Pfeiffer and Gerald Rubin</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>LexAop-myr::tdTomato</td>\n      <td>PMID: 24462095</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>10XUAS-IVS-myr::GFP</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_32197</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>10XUAS-IVS-mCD8::RFP</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_32219</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Mi{PT-GFSTF.1}klg[MI02135-GFSTF.1]</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_59787</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Mi{PT-GFSTF.1}beat-IV[MI05715-GFSTF.1]</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_66506</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>dpr2-Gal4</td>\n      <td>Hugo J. Bellen</td>\n      <td>N/A</td>\n      <td>Gift from Hugo J. Bellen</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>P{w[+mW.hs]=GawB}grn[05930-GAL4]</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_42224</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Mi{y[+mDint2]=MIC}beat-VI[MI13252]</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_58680</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>P{y[+t7.7] v[+t1.8]=TRiP.HMS01085}attP2</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_33746</td>\n      <td>UAS-grnRNAi</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>P{UAS-p35.H}BH1</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID: BDSC_5072</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-grn.ORF.3xHA</td>\n      <td>FlyORF</td>\n      <td>Stock #: F001916</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Chicken polyclonal anti-GFP</td>\n      <td>Abcam</td>\n      <td>Cat. #: ab13970 RRID: AB_300798</td>\n      <td>IHC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-dsRed</td>\n      <td>Clontech</td>\n      <td>Cat. #: 632496 RRID: AB_10013483</td>\n      <td>IHC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-Brp</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>Cat. #: nc82 RRID: AB_2314866</td>\n      <td>IHC (1:20)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-V5</td>\n      <td>Abcam</td>\n      <td>Cat. #: ab27671 RRID: AB_471093</td>\n      <td>IHC (1:300)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-Dcp-1</td>\n      <td>Cell Signalling</td>\n      <td>Cat. #: 9578 RRID: AB_2721060</td>\n      <td>IHC (1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat polyclonal anti-chicken IgY Alexa Fluor 488</td>\n      <td>Invitrogen</td>\n      <td>Cat. #: A11039 RRID: AB_142924</td>\n      <td>IHC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat polyclonal anti-mouse IgG Alexa Fluor 488</td>\n      <td>Invitrogen</td>\n      <td>Cat. #: A11029 RRID: AB_138404</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat monoclonal anti-rabbit IgG Alexa Fluor 568</td>\n      <td>Invitrogen</td>\n      <td>Cat. #: A11011 RRID: AB_143157</td>\n      <td>IHC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat polyclonal anti-rat IgG Alexa Fluor 568</td>\n      <td>Invitrogen</td>\n      <td>Cat. #: A11077 RRID: AB_141874</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat oligoclonal anti-rabbit IgG Alexa Fluor 647</td>\n      <td>Invitrogen</td>\n      <td>Cat. #: A27040 RRID: AB_2536101</td>\n      <td>IHC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey polyclonal anti-mouse IgG Cy5</td>\n      <td>Jackson ImmunoResearch Laboratories</td>\n      <td>Cat. #: 715-175-150 RRID: AB_2340819</td>\n      <td>IHC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Papain</td>\n      <td>Worthington</td>\n      <td>Cat. #: LK003178</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Liberase protease</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat. #: 5401119001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cell Ranger 2.2.0</td>\n      <td>https://10xgenomics.com</td>\n      <td>RRID:SCR_017344</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Seurat 2.3.4</td>\n      <td>https://satijalab.org/seurat/</td>\n      <td>RRID: SCR_016341</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animal husbandry\n\nFlies (Drosophila melanogaster) were reared at 25\u00b0C on standard medium. For developmental analysis by immunohistochemistry, sorting, and sequencing, white pre-pupae (0 hr APF) were collected and incubated for indicated number of hours.\n\n### Fly stocks\n\nMultiple-transgene genotypes are enclosed in brackets. The following transgenic lines were used in this study: MCFO-1 {pBPhsFLP2::PEST;+; UAS-FSF-smGdP::HA_V5_FLAG} (gift from Aljoscha Nern and Gerald Rubin), 10XUAS-IVS-myr::tdTomato (Bloomington Drosophila Stock Center (BDSC #32222)), 23G12-Gal4 (BDSC #49044), {R59E08-p65ADZp (attP40); R42F06-ZpGdbd (attP2)} (JRC_SS00324, Aljoscha Nern and Gerald Rubin), UAS-H2A::GFP (Barret Pfeiffer and Gerald Rubin), UAS-CD4-tdGFP (BDSC #35839), 23G12-LexA (BDSC #65044), LexAop-myr::tdTomato (Zipursky laboratory), 10XUAS-myr::GFP (Zipursky laboratory), 10XUAS-IVS-mCD8::RFP (BDSC #32219), Mi{PT-GFSTF.1}klg[MI02135-GFSTF.1] (BDSC #59787), Mi{PT-GFSTF.1}beat-IV[MI05715-GFSTF.1] (BDSC #66506), dpr2-Gal4 (Zipursky laboratory), P{w[+mW.hs]=GawB}grn[05930-GAL4] (BDSC #42224), Mi{y[+mDint2]=MIC}beat-VI[MI13252] (BDSC #58680), P{y[+t7.7] v[+t1.8]=TRiP.HMS01085}attP2 (UAS-grn-RNAi) BDSC #33746), UAS-grn.ORF.3xHA (FlyORF #F001916), 42F06-Gal4 (BDSC #41253), UAS-p35 (BDSC #5072).\n\nFor visualization of T4a clone, virgin females {pBPhsFlp2::PEST; 10XUAS-IVS-myr::tdTomato; UAS-FSF-smGdP::HA_V5_FLAG/CyO::TM6B} were crossed to males with the T4/T5-specific Split-Gal4 driver {R59E08-p65ADZp (attP40); R42F06-ZpGdbd (attP2)} (JRC_SS00324). White pre-pupae were heat shocked at 37\u00b0C for 3 min. For FACS sorting of GFP+ T4/T5 neurons, 23G12-Gal4 was used to drive UAS-H2A::GFP. For T4/T5 developmental timecourse, 23G12-Gal4 was used to drive UAS-H2A::GFP and 10XUAS-IVS-mCD8:RFP. For visualization of all T4/T5 neurons with subtype-specific markers, female virgins of the genotypes: {23G12-LexA; LexAop-myr::tdTomato; 10XUAS-myr::GFP/CyO::TM6B} or {w; 10xUAS-IVS-mCD8::RFP; 23G12-Gal4} were crossed to males with MiMICs or their derivatives for klg, beat-IV, dpr2, beat-VI, or to w[1] males for Fas2 immunolabeling. For visualization of grn-expressing neurons, grn-Gal4 was used to drive 10XUAS-myr::GFP. For grn phenotypes, virgin females {w[1];UAS-CD4-tdGFP;23G12-Gal4} were crossed to males with UAS-grn-RNAi or UAS-grn.ORF.3xHA transgenes. For p35 rescue experiments, virgin females with 23G12-Gal4, UAS-CD4-tdGFP and with or without UAS-grn.ORF.3xHA were crossed to males with 42F06-Gal4, and with or without UAS-p35 transgene, as indicated. All RNAi and overexpression crosses were raised at 29\u00b0C.\n\n### Immunohistochemistry/Immunofluorescence\n\nBrains were dissected in ice-cold Schneider\u2019s Drosophila Medium (Gibco #21720\u2013024), and fixed in PBS (Bioland Scientific LLC #PBS01-03) containing 4% paraformaldehyde (Electron Microscopy Sciences, Cat#15710) for 25 min at room temperature (RT). Brains were rinsed repeatedly with PBST (PBS containing 0.5% Triton-X100 (Sigma #T9284)), and incubated in blocking solution (PBST containing 10% Normal Goat Serum (Sigma #G6767)) for at least 1 hr at RT prior to incubation with antibody. Brains were incubated sequentially with primary and secondary antibodies diluted in blocking solution overnight at 4C, with at least 2 PBST rinses followed by 2 hr incubations at RT in between and afterwards. Brains were transferred to 50% (for 30 min), then 100% EverBrite mounting medium (Biotium #23001) and mounted on slides for confocal microscopy.\n\nPrimary antibodies and dilutions used in this study were as follows: chicken anti-GFP (abcam #13970, 1:1000), rabbit anti-dsRed (Clontech #632496, 1:200), mouse anti-Brp (nc82 from Developmental Studies Hybridoma Bank (DSHB), 1:30), mouse anti-Fasciclin II (1D4 from DSHB, 1:20), mouse anti-V5 (abcam #ab27671, 1:300), rabbit anti-Dcp-1 (Cell Signaling Technology #9578, 1:50). Secondary antibodies and dilutions used in this study were as follows: goat anti-chicken Alexa Fluor 488 (AF488) (Invitrogen #A11039, 1:200), goat anti-mouse AF488 (Invitrogen #A11029, 1:500), goat anti-rabbit AF568 (Invitrogen #A11011, 1:200), goat anti-rat 568 (Invitrogen #A11077, 1:500), goat anti-rabbit AF647 (Invitrogen #A27040, 1:200), and donkey anti-mouse Cy5 (Jackson ImmunoResearch #715-175-150, 1:200).\n\n### Confocal microscopy and image analysis\n\nImmunofluorescence images were acquired using a Zeiss LSM 880 confocal microscope with Zen digital imaging software. Optical sections or maximum intensity projections were level-adjusted, cropped and exported for presentation using Image J software (Fiji). Reported expression patterns were reproducible across three or more biological samples. For cell number quantifications, optic lobes were mounted with ventral side facing objective (as in Figure 1), and a single optical section per lobe was acquired at 3/8 total depth in z-dimension through M10. For quantification of apoptosis, optic lobes were mounted with posterior side facing objective, and a superficial optical section with approximately 300 T4/T5 cell bodies was acquired per lobe. The section depth was determined with Dcp-1 immunofluorescence channel turned off. Files were randomized, and cell numbers and proportion of apoptotic cells were quantified blind to condition using Fiji.\n\n### Single-cell transcriptome profiling\n\n#### Purification of genetically labelled T4/T5 neurons\n\nMales with 23G12-Gal4 driver were crossed to virgin females with UAS-H2A::GFP reporter. F1-generation female white pre-pupae were collected at 0 hr APF and reared at 25\u00b0C. Optic lobes were dissected out at 24 hr and 48 hr APF from 27 and 18 pupae, respectively. Brain tissue was incubated in papain (Worthington #LK003178) and Liberase protease (Sigma-Aldrich #5401119001) cocktail at 25\u00b0C for 15 min. Next, tissue was gently washed twice with 1X PBS and dissociated mechanically by pipetting. Cell suspension was filtered through 20 \u03bcm cell-strainer (Corning #352235). Single-cell suspension was FACS sorted (BD FACSAria II) to isolate GFP-positive cells.\n\n#### Single-cell library preparation and sequencing\n\nFACS-sorted single-cells were captured from a cell suspension using the 10X Chromium platform (~6500\u20137000 cells loaded). Single-cell RNA-Seq libraries were generated using Chromium Single Cell Reagent Kit V2 according to the manufacturer's protocol, with 12 cycles of PCR for cDNA amplification. RNA-Seq libraries were sequenced using Illumina Hiseq 4000 platform (paired-end 100 bp reads). Each sample was captured and sequenced using one lane of 10X Chromium and one lane of HiSeq 4000.\n\n### Raw data processing\n\nRaw Illumina base call files (*.bcl files) were converted into fastq files using bcl2fastq (--use-bases-mask=Y26 n*,I8n*,Y100n*). Fastq files were processed using Cell Ranger (2.2.0) pipeline with default parameters. Reference transcriptome package for Cell Ranger was generated using Drosophila melanogaster genome sequence and gene annotations from FlyBase (release 6.22). Both samples were sequenced at mean depth of 92,000 reads per cell (92% saturation). Average fractions of reads uniquely (confidently) mapped to genome and transcriptome were 93% and 83%, respectively.\n\n### Single-cell data analysis\n\nAll steps of single-cell data analysis were performed using functions and methods implemented in Seurat package (2.3.4) (Butler et al., 2018). Analysis for 24 hr and 48 hr datasets were performed separately.\n\n#### Quality control and data pre-processing\n\nFor 24 hr dataset, we recovered 3833 cells (median of 1447 genes and 3353 transcripts per cell). For 48 hr dataset, we recovered 3894 cells (median of 1633 genes and 4389 transcripts per cell). Initial set of cells was pre-filtered based on total number of detected genes (min. 1000; max. 2000), and percentage of mitochondrial transcripts (max. 5%). After pre-filtering, 3312 and 3620 cells remained for 24 hr and 48 hr datasets, respectively. Raw transcript counts were log-normalized using NormalizeData function. Next, we regressed out total number of transcripts per cell (nUMI) and scaled expression values to Z-scores using ScaleData function.\n\n#### Preliminary dimensionality reduction and detection of outlier cells\n\nSets of highly variable genes were selected using FindVariableGenes function (x.low.cutoff: 0.1, x.high.cutoff: 5, y.cutoff: 0.5). Highly variable genes were used to perform independent component analysis (ICA) using RunICA function. Independent components (ICs) were manually inspected to identify and flag outlier cells. In total, 241 and 60 cells were flagged as outliers in 24 hr and 48 hr datasets, respectively. Outlier cells were removed from subsequent steps of the analysis. After quality control and filtering, final datasets included 3071 cells for 24 hr, and 3557 cells for 48 hr datasets.\n\n#### Dimensionality reduction and clustering (48 hr APF)\n\nWe repeated selection of highly variable genes on final datasets using the same parameters (2290 genes), and used them to perform ICA. Inspection of results of ICA revealed that the three ICs separated cells into two discrete populations of approximate halves. Final clustering was performed based on these 3 ICs using the graph based clustering approach implemented in FindClusters function with default parameters. In addition to ICA, we performed principal component analysis (PCA) using the same set of highly variable genes. Comparison of ICA and PCA results revealed robustness of clusters identified by both methods (Figure 1\u2014figure supplement 1).\n\nt-distributed stochastic neighbor embedding (tSNE) was used to visualize cellular heterogeneity based on ICA and PCA results using RunTSNE function (perplexity: 100). Clusters were validated and matched to eight morphological T4/T5 subtypes using in vivo expression patterns of marker genes (Figure 3).\n\n#### Dimensionality reduction and clustering (24 hr APF)\n\nSimilar to 48 hr dataset, we selected highly variable genes (2198 genes), and used them to perform ICA. We selected three ICs that were driven by similar sets of genes as ICs used for clustering of 48 hr dataset. Selected ICs were used to perform clustering and tSNE using same parameters as 48 hr dataset. Cluster identities were matched with T4/T5 subtypes using expression patterns of the same sets of marker genes (Figure 5\u2014figure supplement 1). In comparison to 48 hr dataset, differences between subtypes at 24 hr were less pronounced. This may reflect a lower degree of transcriptional divergence among distinct subtypes at earlier stages of development.\n\n#### Differential gene expression analysis\n\nDifferentially expressed genes (DEGs) were identified using Wilcoxon rank-sum test implemented in FindMarkers function (min.pct: 0.25, min.diff.pct: 0.25; fold-change: 1.5). We performed this analysis for each cluster against all other cells in dataset (\u2018one versus all\u2019, Figure 1), and between pairs of individual clusters (\u2018one versus one\u2019, Figure 4 and Figure 4\u2014figure supplement 1).\n\n### Data availability\n\nRaw sequencing data (fastq-files), single-cell expression matrix and cell clustering results were deposited to NCBI Gene Expression Omnibus (GEO) under accession: GSE126139.\n",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "6bd3efe5-b58c-4d0d-9ef0-557b1acc091a",
+      "submission_id": "4fb1357c-5be7-4dc7-babb-34b511b97fc7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Graeme W Davis, University of California, San Francisco United States\n\nReviewers:\n- Bing Ye, University of Michigan United States\n- Stefan Thor, Linkoping University Sweden\n\n## Review text\n\nDOI: [10.7554/eLife.50822.022](https://doi.org/10.7554/eLife.50822.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nAcceptance summary:\n\nThis manuscript addresses the central issue of how transcription factor (TF) codes dictate neuronal sub-type cell fate, with particular emphasis upon how the proper mix of cell surface proteins (CSPs) are activated in each sub-type. Ultimately, this work informs regarding the genetic logic underlying the regulation of neuronal connectivity, addressed using single-cell sequencing of a group of eight closely related neurons with different wiring specificity.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Modular transcriptional programs separately define axon and dendrite connectivity\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Bing Ye (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Please aim to submit the revised version within two months.\n\nSummary:\n\nThis manuscript addresses the central issue of how transcription factor (TF) codes dictate neuronal sub-type cell fate, with particular emphasis upon how the proper mix of cell surface proteins (CSPs) are activated in each sub-type. They focus upon the T4/T5 neurons of the Drosophila visual system, and perform scRNA-seq upon FACS-purified cells. They find that T4/T5 neurons belong to eight major sub-types, and identify TF and CSP signatures for these groups. They functionally address the role of one TF, grn, and find that it controls a particular feature of the sub-types expressing this TF. Another TF with sub-type defining expression, bi, was addressed in a previously published study. The authors propose a model whereby TF codes, rather than single TFs, govern CSP codes, to thereby govern neuronal morphology. This general notion has been around for quite some time, but detailed examples of precise players and pathways have been frustratingly slow to emerge. Hence, progress in this area is of great importance to the field of developmental neurobiology.\n\nMajor Concerns:\n\n1) It would be valuable to separately show what the TF and CSP codes are for each of the eight sub-types. More specifically, it is unclear to this reviewer what the TF codes are for the eight sub-types of T4/T5 neurons. They discuss bi, grn and TfAP-2, and briefly mention some others, but what are the complete TFs codes for each sub-type? Most of the data depict a mix of DEG, CSPs and TFs. Can the authors address this issue in greater depth?\n\nMinor Concerns:\n\n1) Can the authors also conduct RNAi of TfAP-2 and/or other TFs that they believe may specify T4/T5 sub-types to confirm some aspect of functional significance. This would be a substantive addition to the manuscript, elevating significance and impact, and they authors may likely have some of this data already in place?\n\n2) It is difficult to understand if the grn LOF and GOF phenotype, and the previously published bi phenotype, fits with a combinatorial model for T4/T5 sub-type cell fate specification. Could the authors discuss this issue?\n\n4) Figure 6: They use UAS-p35 to suppress the apoptosis triggered by grn overexpression, and could observe a similar phenotype even with apoptosis suppressed. Can they use the same approach to suppress apoptosis in grn RNAi, to see if this phenotype is also independent of apoptosis?\n\n5) When describing the T4/T5 neurons maybe they could elaborate more regarding the numbers of these neurons, and previous predictions of sub-types, based upon gene expression and morphology.\n\n6) How does the 24h APF and 48h APF time-point used for scRNA-seq relate to when the T4/T5 neurons are born?\n",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "73debc95-7d33-49fd-9c0e-0c4bb0b54477",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C1",
+      "claim": "Eight subtypes of T4/T5 neurons are defined by combinations of two patterns of dendritic inputs and four patterns of axonal outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight subtypes of T4/T5 neurons are defined by combinations of two patterns of dendritic inputs and four patterns of axonal outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by the morphological descriptions and figures throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "7ad433a9-77dc-4ffe-991e-90b0b74602e5",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C2",
+      "claim": "Single-cell profiling during development revealed distinct transcriptional programs defining each dendrite and axon wiring pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell profiling during development revealed distinct transcriptional programs defining each dendrite and axon wiring pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the single-cell RNA-seq data presented in the manuscript, including clustering analysis and differential gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "3d108dec-ec28-4a42-a9e1-afdd8ff6dc0d",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C3",
+      "claim": "These programs were defined by the expression of a few transcription factors and different combinations of cell surface proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These programs were defined by the expression of a few transcription factors and different combinations of cell surface proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing specific TFs (bi, grn, TfAP-2) and CSPs associated with different wiring patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "6d75ad1e-23e7-4016-aece-ef0434034414",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C4",
+      "claim": "Gain and loss of function studies provide evidence for independent control of different wiring features.",
+      "claim_type": "EXPLICIT",
+      "source": "Gain and loss of function studies provide evidence for independent control of different wiring features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data from RNAi and overexpression experiments, particularly for grn.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "84ceae53-d00d-402c-bbe4-ca5a8c4d1fd2",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C5",
+      "claim": "Modular transcriptional programs for distinct wiring features are assembled in different combinations to generate diverse patterns of neuronal connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that modular transcriptional programs for distinct wiring features are assembled in different combinations to generate diverse patterns of neuronal connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the integration of transcriptional profiling and functional studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "1354c676-a017-441f-8dec-cfe8b8298cbe",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C6",
+      "claim": "T4/T5 neurons share a common developmental origin, physiological function, and general morphology, but differ in their precise wiring patterns and preferred stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "T4/T5 neurons share a common developmental origin, physiological function, and general morphology, but differ in their precise wiring patterns and preferred stimulus (Fischbach and Dittrich, 1989; Maisak et al., 2013; Apitz and Salecker, 2018; Pinto-Teixeira et al., 2018; Shinomiya et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "d4da5eb2-ae00-4520-93b0-b0b94af5e109",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C7",
+      "claim": "There are eight morphological subtypes of T4/T5 neurons in each column of the lobula plate (LoP) neuropil.",
+      "claim_type": "EXPLICIT",
+      "source": "There are eight morphological subtypes of T4/T5 neurons in each column of the lobula plate (LoP) neuropil (see below), comprising the most abundant cell type in the fly visual system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by the morphological descriptions and figures.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "05467bc8-a109-4a90-bd60-9ab3fed2144d",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C8",
+      "claim": "The four T4 subtypes share a common set of dendritic inputs in the medulla.",
+      "claim_type": "EXPLICIT",
+      "source": "These subtypes can be classified into two quartets of subtypes based on dendritic inputs: the four T4 subtypes share a common set of dendritic inputs in the medulla, and the four T5 subtypes share a different set of dendritic inputs in the lobula (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "91068981-3546-485e-a3da-b394039bf057",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C9",
+      "claim": "The four T5 subtypes share a different set of dendritic inputs in the lobula.",
+      "claim_type": "EXPLICIT",
+      "source": "These subtypes can be classified into two quartets of subtypes based on dendritic inputs: the four T4 subtypes share a common set of dendritic inputs in the medulla, and the four T5 subtypes share a different set of dendritic inputs in the lobula (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "486dcac7-b7a7-43ce-8186-809dd49346ba",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C10",
+      "claim": "T4 neurons respond to ON stimuli (i.e. bright edges moving against a dark background).",
+      "claim_type": "EXPLICIT",
+      "source": "T4 neurons respond to ON stimuli (i.e. bright edges moving against a dark background) and T5 to OFF stimuli (i.e. dark edges moving across a bright background).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and is based on established knowledge about T4/T5 neurons.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "2d3f3df7-03d0-4758-b593-392e68718364",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C11",
+      "claim": "T5 neurons respond to OFF stimuli (i.e. dark edges moving across a bright background).",
+      "claim_type": "EXPLICIT",
+      "source": "T4 neurons respond to ON stimuli (i.e. bright edges moving against a dark background) and T5 to OFF stimuli (i.e. dark edges moving across a bright background).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and is based on established knowledge about T4/T5 neurons.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "963e37cd-1b00-489b-a02c-93c9e06474b9",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C12",
+      "claim": "T4/T5 neurons can be classified into four pairs of subtypes (a-d) based on the location of their axon terminals within a given column in layers a-d of the LoP.",
+      "claim_type": "EXPLICIT",
+      "source": "T4/T5 neurons can also be classified into four pairs of subtypes (a-d) based on the location of their axon terminals within a given column in layers a-d of the LoP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and illustrated in the figures.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "088ed83b-1271-4563-90cf-bc78b1540a3f",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C13",
+      "claim": "Each pair of T4/T5 subtypes responds selectively to visual motion in one of four cardinal directions: posterior, anterior, upwards, and downwards, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Each pair responds selectively to visual motion in one of four cardinal directions: posterior, anterior, upwards, and downwards, respectively (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and is based on established knowledge about T4/T5 neurons.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "985386dc-2ecd-4c35-a237-b24db0ad62b0",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C14",
+      "claim": "Transcriptional profiling of the adult Drosophila brain revealed a common transcriptional signature for all T4/T5 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Although transcriptional profiling of the adult Drosophila brain revealed a common transcriptional signature for all T4/T5 neurons, genetic programs for individual subtypes have not been identified (Davie et al., 2018; Konstantinides et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "88510caa-ac85-4f54-9c31-ccd5704da00c",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C15",
+      "claim": "Genetic programs for individual T4/T5 subtypes have not been identified prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Although transcriptional profiling of the adult Drosophila brain revealed a common transcriptional signature for all T4/T5 neurons, genetic programs for individual subtypes have not been identified (Davie et al., 2018; Konstantinides et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies and sets up the motivation for the current work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "028672c3-07bb-4794-8745-a281f89c6ddb",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C16",
+      "claim": "Sequencing was performed at 48 hr after puparium formation (APF).",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing was performed at 48 hr after puparium formation (APF).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "290ccdb0-c007-493f-a63e-3d41efca83f6",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C17",
+      "claim": "48 hr APF precedes a period of widespread synaptogenesis in the visual system.",
+      "claim_type": "EXPLICIT",
+      "source": "This developmental time point precedes a period of widespread synaptogenesis in the visual system, and coincides with the appearance of four discrete synaptic layers (a, b, c, d) in the LoP neuropil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and provides context for the developmental timing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "a5538a3b-e61a-4efd-8c39-e0dfad775c21",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C18",
+      "claim": "48 hr APF coincides with the appearance of four discrete synaptic layers (a, b, c, d) in the LoP neuropil.",
+      "claim_type": "EXPLICIT",
+      "source": "This developmental time point precedes a period of widespread synaptogenesis in the visual system, and coincides with the appearance of four discrete synaptic layers (a, b, c, d) in the LoP neuropil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and provides context for the developmental timing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "974aade9-4b6c-4856-9dd2-b3c6161c2201",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C19",
+      "claim": "RNA-Seq libraries were generated using 10X Chromium technology.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-Seq libraries were generated using Chromium Single Cell Reagent Kit V2 according to the manufacturer's protocol, with 12 cycles of PCR for cDNA amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "86461224-ac1f-47e8-ae3a-97d9cfd78683",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C20",
+      "claim": "The final dataset consisted of 3557 cells with 1000\u20132000 genes per cell at 48 hr APF.",
+      "claim_type": "EXPLICIT",
+      "source": "After quality control and removal of outlier cells, our final dataset consisted of 3557 cells with 1000\u20132000 genes per cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "9c30f606-52e9-4a5e-ad60-25fdf475d4d6",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C21",
+      "claim": "Unsupervised analysis revealed eight clusters of approximately equal numbers of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupervised analysis revealed eight clusters of approximately equal numbers of cells (Figure 1E and Figure 1\u2014figure supplement 1), suggesting that each cluster corresponded to a single T4/T5 subtype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "c0b4b89b-f60f-48d8-9c98-d2dbd5b2a46e",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C22",
+      "claim": "Each cluster corresponded to a single T4/T5 subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupervised analysis revealed eight clusters of approximately equal numbers of cells (Figure 1E and Figure 1\u2014figure supplement 1), suggesting that each cluster corresponded to a single T4/T5 subtype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation of eight clusters matching the known eight subtypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "c0363466-0c47-4caa-834c-3cd91ed79f5d",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C23",
+      "claim": "Differential gene expression analysis revealed 69 genes which were strongly expressed in some clusters and not in others.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed 69 genes which were strongly expressed in some clusters and not in others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "3ac1feab-e49f-4bf6-b12c-56c32d95ebcd",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C24",
+      "claim": "Cluster-enriched genes were not specific to single clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster-enriched genes, however, were not specific to single clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results and shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "10741496-86f3-4df3-a436-1b299dd07bb5",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C25",
+      "claim": "Each of the five subtypes of lamina neurons is defined by at least one subtype-type specific transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, for instance, each of the five subtypes of lamina neurons is defined by at least one subtype-type specific transcription factor (Tan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work and provides a contrast to the T4/T5 findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "59fd8ffe-c8c5-4144-97eb-f5c99019c410",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C26",
+      "claim": "T4/T5 subtypes separated into eight transcriptionally distinct clusters, but were not defined by unique molecular markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while T4/T5 subtypes separated into eight transcriptionally distinct clusters, they were not defined by unique molecular markers (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "b3f2a54f-c336-4042-83f7-cab09868edec",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C27",
+      "claim": "Three independent components (ICs) each split the eight T4/T5 clusters into two groups of four, each in a different way.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, three independent components (ICs) each split the eight T4/T5 clusters into two groups of four, each in a different way (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "0f71773a-5827-4253-9405-63c717d8dc3f",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C28",
+      "claim": "Three ICs were sufficient to define all eight clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these three ICs were sufficient to define all eight clusters (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "cde29c04-d6de-426f-bbae-7fc00fb2c908",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C29",
+      "claim": "Each of the three ICs defined an axis of transcriptional diversity driven by a group of genes differentially expressed along each axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the three ICs defined an axis of transcriptional diversity (hereafter referred to as Axis 1, 2, 3) driven by a group of genes differentially expressed along each axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the analysis of ICs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "23349918-cfe2-4c3a-87e5-f4025d17b437",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C30",
+      "claim": "Many genes associated with the three axes were expressed in a binary (ON/OFF) pattern in one of the two groups of clusters separated along each axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these genes were expressed in a binary (ON/OFF) pattern in one of the two groups of clusters separated along each axis (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "0140dcb6-2b45-4ad5-b94e-7683875a4b8a",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C31",
+      "claim": "Binary expression of bifid (bi) defined the two groups of clusters separated by Axis 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Binary expression of bifid (bi) defined the two groups of clusters separated by Axis 1, grain (grn) defined the clusters separated by Axis 2, and TfAP-2 defined the clusters separated by Axis 3 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "c08a62ff-f6dc-453a-9dfc-20b4d67ca4b1",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C32",
+      "claim": "Binary expression of grain (grn) defined the clusters separated by Axis 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Binary expression of bifid (bi) defined the two groups of clusters separated by Axis 1, grain (grn) defined the clusters separated by Axis 2, and TfAP-2 defined the clusters separated by Axis 3 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "946f4dc9-f71d-492d-b9c8-1701930e53d0",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C33",
+      "claim": "Binary expression of TfAP-2 defined the clusters separated by Axis 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Binary expression of bifid (bi) defined the two groups of clusters separated by Axis 1, grain (grn) defined the clusters separated by Axis 2, and TfAP-2 defined the clusters separated by Axis 3 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "bd917041-6c2b-4577-a73b-625760740c39",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C34",
+      "claim": "Each cluster expresses a unique combination of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while no individual cluster is uniquely defined by the expression of a single gene, each cluster expresses a unique combination of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a conclusion from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "33e76e30-2298-459c-9ced-acc42058754b",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C35",
+      "claim": "Three axes of diversity with orthogonal ON/OFF expression patterns of TFs define the eight T4/T5 clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, three axes of diversity with orthogonal ON/OFF expression patterns of TFs define the eight T4/T5 clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "bfd90f7d-2131-443c-a9ff-184c50de74ba",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C36",
+      "claim": "Axis 1 separated clusters into two groups of four that were defined by mutually exclusive binary expression of Fasciclin 2 (Fas2) and klingon (klg).",
+      "claim_type": "EXPLICIT",
+      "source": "Axis 1 separated clusters into two groups of four that were defined by mutually exclusive binary expression of two genes, Fasciclin 2 (Fas2) and klingon (klg), respectively (Figure 3A), each encoding immunoglobulin (Ig) superfamily proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "50484d44-c35c-43b5-a6ca-7cea5b14f910",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C37",
+      "claim": "Fas2 was expressed in LoP layers a/b.",
+      "claim_type": "EXPLICIT",
+      "source": "Fas2 was expressed in LoP layers a/b, whereas klg was expressed in LoP layers c/d (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "79725ef9-c179-46c9-af08-f15beda7d7b3",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C38",
+      "claim": "klg was expressed in LoP layers c/d.",
+      "claim_type": "EXPLICIT",
+      "source": "Fas2 was expressed in LoP layers a/b, whereas klg was expressed in LoP layers c/d (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "a36d56b9-0f85-49f5-9086-e875e4041d24",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C39",
+      "claim": "Clusters expressing Fas2 and klg also expressed previously described markers for T4/T5 subtypes a/b (dachshund (dac)) and c/d (bi, Connectin (Con)).",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters expressing Fas2 and klg also expressed previously described markers for T4/T5 subtypes a/b (dachshund (dac)) and c/d (bi, Connectin (Con)) (Apitz and Salecker, 2018) (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 3\u2014figure supplement 1, with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "786f2471-4feb-4c80-9ffc-fcb3adbaf66c",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C40",
+      "claim": "Axis 1 separated LoP layer a/b and c/d subtypes, defining specificity of axonal outputs between two broad domains of the LoP.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Axis 1 separated LoP layer a/b and c/d subtypes, defining specificity of axonal outputs between two broad domains of the LoP (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "b3555009-d888-4e74-8790-fe12da37b27c",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C41",
+      "claim": "Axis 1 corresponds to separation of horizontal (posterior/anterior) and vertical (upwards/downwards) motion detection circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to separation of horizontal (posterior/anterior) and vertical (upwards/downwards) motion detection circuits, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as an interpretation of the Axis 1 separation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "14207794-389a-4821-91f5-325c97158ede",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C42",
+      "claim": "Axis 2 separated clusters into two groups of four defined by binary expression of beat-IV and the TF grn.",
+      "claim_type": "EXPLICIT",
+      "source": "Axis 2 separated clusters into two groups of four defined by binary expression of beat-IV (an Ig superfamily protein) and the TF grn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "90a14bb5-6622-42c3-94ef-7f347b68089a",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C43",
+      "claim": "Both beat-IV and grn were expressed in LoP layers b/c, but not a/d.",
+      "claim_type": "EXPLICIT",
+      "source": "Both genes were expressed in LoP layers b/c, but not a/d.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "9c002605-a0bf-4f71-969a-2221537ec1ac",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C44",
+      "claim": "Axis 2 separated subtypes into inner (b and c) and outer (a and d) LoP layer subtypes in a symmetrical fashion, defining specificity of axonal outputs between adjacent layers within the two broad domains of the LoP.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Axis 2 further separated subtypes into inner (b and c) and outer (a and d) LoP layer subtypes in a symmetrical fashion, defining specificity of axonal outputs between adjacent layers within the two broad domains of the LoP (Figure 3A'\u20133C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "346dddb8-34c7-4eec-bd34-94a6a7bce1d9",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C45",
+      "claim": "Axis 2 corresponds to further separation of each of the motion detection circuits into two subcircuits detecting motion in two opposing directions.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to further separation of each of the motion detection circuits into two subcircuits detecting motion in two opposing directions (i.e. horizontal into posterior and anterior, and vertical into upwards and downwards motion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as an interpretation of the Axis 2 separation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "be2cb246-644e-4efa-8a47-6a6de829e931",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C46",
+      "claim": "Axis 3 separated clusters into two groups of four defined by binary expression of dpr2 and beat-VI, each encoding an Ig superfamily protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Axis 3 separated clusters into two groups of four defined by binary expression of dpr2 and beat-VI, each encoding an Ig superfamily protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "6468d06a-c8a4-44fb-824e-3876ad1f6f31",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C47",
+      "claim": "Both dpr2 and beat-VI were expressed in all LoP layers, and M10 but not Lo1.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, both genes were expressed in all LoP layers, and M10 but not Lo1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "113e6271-7fdf-485f-912b-cef62d22238e",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C48",
+      "claim": "Axis 3 separated all T4 from all T5 subtypes, defining specificity of dendritic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Axis 3 separated all T4 from all T5 subtypes, defining specificity of dendritic inputs (Figure 3A''\u20133C'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "3c8889c4-0071-44c5-8053-f6d6af116a79",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C49",
+      "claim": "Axis 3 corresponds to separation into two parallel circuits for ON and OFF motion detection.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to separation into two parallel circuits for ON and OFF motion detection, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as an interpretation of the Axis 3 separation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "4bcb79bb-3ce6-4703-b53f-2900aed8f437",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C50",
+      "claim": "A combination of Axis 1 and Axis 2 defined four types of axonal outputs (a, b, c, d).",
+      "claim_type": "EXPLICIT",
+      "source": "A combination of Axis 1 and Axis 2 defined four types of axonal outputs (a, b, c, d), and Axis 3 defined two types of dendritic inputs (T4 and T5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "ec259c87-a0ed-43f6-845a-af49a6bac6fc",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C51",
+      "claim": "Axis 3 defined two types of dendritic inputs (T4 and T5).",
+      "claim_type": "EXPLICIT",
+      "source": "A combination of Axis 1 and Axis 2 defined four types of axonal outputs (a, b, c, d), and Axis 3 defined two types of dendritic inputs (T4 and T5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "d5277d30-9988-4127-9490-1136ee35848a",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C52",
+      "claim": "Comparison of T4a to T4c or T4d, which have axonal outputs in non-adjacent LoP layers, yielded the largest number of differentially expressed genes (58 and 55, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of T4a to T4c or T4d, which have axonal outputs in non-adjacent LoP layers, yielded the largest number of differentially expressed genes (DEGs, 58 and 55, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing pairwise comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "c00b5548-0266-4de8-b6a6-01f1c111b947",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C53",
+      "claim": "T4a and T4b have axonal outputs in adjacent LoP layers, and were separated by an intermediate number of DEGs (16).",
+      "claim_type": "EXPLICIT",
+      "source": "T4a and T4b have axonal outputs in adjacent LoP layers, and were separated by an intermediate number of DEGs (16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing pairwise comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "765d1f94-fbc2-4e74-a405-fd9f870bcf99",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C54",
+      "claim": "Only a small number of DEGs (9) separated T4a and T5a, which share axonal output but receive different dendritic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, only a small number of DEGs (9) separated T4a and T5a, which share axonal output but receive different dendritic inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing pairwise comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "b5f767a8-03a4-4731-a5e0-f742f25a5ddd",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C55",
+      "claim": "Virtually all DEGs were co-regulated across all subtypes according to either specificity of axonal outputs or dendritic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression patterns of the DEGs from pairwise comparisons across all T4/T5 subtypes revealed a general pattern (Figure 4, lower dot plots): virtually all DEGs were co-regulated across all subtypes according to either specificity of axonal outputs or dendritic inputs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "e35c2627-2c49-45ab-a2d9-8299bccf104a",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C56",
+      "claim": "Distinct sets of DEGs were expressed in each pair of subtypes with shared axonal outputs, but different dendritic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, distinct sets of DEGs were expressed in each pair of subtypes with shared axonal outputs, but different dendritic inputs (e.g. in T4a and T5a, Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "f73e436a-96ce-46c6-be2f-4cff8e383121",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C57",
+      "claim": "A distinct set of DEGs was expressed in groups of subtypes with shared dendritic inputs, but different axonal outputs (i.e. all T4 subtypes).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a distinct set of DEGs was expressed in groups of subtypes with shared dendritic inputs, but different axonal outputs (i.e. all T4 subtypes, Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "42680532-cf65-44f2-ab6b-5b5faf213131",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C58",
+      "claim": "Many of the DEGs have been implicated in neuronal wiring specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the DEGs have been implicated in neuronal wiring specificity (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "e139bf04-4dac-4b79-8360-f5142cb24480",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C59",
+      "claim": "Approximately half of the DEGs encoded CSPs with cell adhesion domains (Ig/LRR), including multiple members of the dpr/DIP and beat/side families of interacting proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately half of the DEGs encoded CSPs with cell adhesion domains (Ig/LRR), including multiple members of the dpr/DIP and beat/side families of interacting proteins (Zinn and \u00d6zkan, 2017); specific members of these families have been shown to regulate axon guidance and synaptic specificity in the developing fly nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "ca758ee6-5cb3-43a1-9569-88e87fd2e528",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C60",
+      "claim": "Specific members of the dpr/DIP and beat/side families have been shown to regulate axon guidance and synaptic specificity in the developing fly nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately half of the DEGs encoded CSPs with cell adhesion domains (Ig/LRR), including multiple members of the dpr/DIP and beat/side families of interacting proteins (Zinn and \u00d6zkan, 2017); specific members of these families have been shown to regulate axon guidance and synaptic specificity in the developing fly nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "c66b024d-57a5-4acc-8119-ec5e4d3631e7",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C61",
+      "claim": "The transcriptional organization of T4/T5 neurons mirrored their wiring patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results reveal that the transcriptional organization of T4/T5 neurons mirrored their wiring patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a conclusion from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "bc210d25-e625-40fa-accd-90b327b2a773",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C62",
+      "claim": "Discrete groups of co-regulated genes reiteratively defined either shared axon or shared dendrite wiring patterns among different subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Discrete groups of co-regulated genes reiteratively defined either shared axon or shared dendrite wiring patterns among different subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a conclusion from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "0f96b322-ef6f-463f-9057-b0ff2835eec0",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C63",
+      "claim": "These groups of genes were assembled in different combinations to uniquely define the eight T4/T5 subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "These groups of genes were assembled in different combinations to uniquely define the eight T4/T5 subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a conclusion from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "28520fd1-633f-4df9-826f-34ee832e4912",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C64",
+      "claim": "At 24 hr APF, eight distinct populations were identified separated by three equivalent axes of transcriptional diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our dataset at 48 hr APF, we identified eight distinct populations separated by three equivalent axes of transcriptional diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the 24 hr APF dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "54ebd5e5-02c1-4f58-8da7-8d3ffa278c1d",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C65",
+      "claim": "Many of the same genes were associated with the three axes at both 24 hr and 48 hr APF.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the same genes were associated with these axes at both time points, allowing us to match subtypes between 24 hr and 48 hr APF (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "369c4ac2-6419-4516-9917-967849f097fb",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C66",
+      "claim": "TFs defining the primary axes of diversity (bi, grn, TfAP-2) were expressed in the same sets of subtypes at both 24 hr and 48 hr APF.",
+      "claim_type": "EXPLICIT",
+      "source": "TFs defining the primary axes of diversity (bi, grn, TfAP-2) were expressed in the same sets of subtypes at both time points, suggesting they may contribute to stable subtype identities during development (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "6ac7d3c4-0757-41be-b5a9-88f9d88a3872",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C67",
+      "claim": "Some CSPs exhibited stable expression, marking subtypes with shared axon or dendrite wiring patterns at both time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Some CSPs also exhibited stable expression, marking subtypes with shared axon or dendrite wiring patterns at both time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "75342bca-93c5-48fa-a293-1656d25e03ee",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C68",
+      "claim": "Other CSPs were dynamically regulated and were specific to subtypes only at a particular stage of development.",
+      "claim_type": "EXPLICIT",
+      "source": "Other CSPs were dynamically regulated and were specific to subtypes only at a particular stage of development (Figure 5B\u2013D and Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "1f2c1aeb-3b58-4231-b029-f0ad6583897c",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C69",
+      "claim": "Dynamic changes in gene expression were coordinated among subtypes with shared wiring features.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dynamic changes in gene expression were also coordinated among subtypes with shared wiring features (Figure 5B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "9f24daed-3c0f-4b31-8001-60084fff1fb1",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C70",
+      "claim": "dpr3 and a few other CSPs were synchronously upregulated in all T4 subtypes from 24 hr to 48 hr APF.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, dpr3 and a few other CSPs were synchronously upregulated in all T4 subtypes from 24 hr to 48 hr APF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as an example of coordinated gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "7abc3cb1-731d-45f9-a995-f993642f4375",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C71",
+      "claim": "Toll-6 was synchronously upregulated in both LoP layer 'a' subtypes (T4a/T5a).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Toll-6 was synchronously upregulated in both LoP layer 'a' subtypes (T4a/T5a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as an example of coordinated gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "fc90e438-19cb-4853-a247-5dc592620613",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C72",
+      "claim": "Similar transcriptional programs unfold in parallel among T4/T5 subtypes with shared wiring features.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that similar transcriptional programs unfold in parallel among T4/T5 subtypes with shared wiring features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a conclusion from the developmental analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "40fd6c8b-7873-4253-8a2d-460b11fe87ad",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C73",
+      "claim": "During the period covered in the study (24\u201348 hr APF) four LoP layers form in two discrete lamination steps.",
+      "claim_type": "EXPLICIT",
+      "source": "During the period covered in our study (24\u201348 hr APF) four LoP layers form in two discrete lamination steps (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "ff4c92e7-8138-4f55-a9dd-fe84c67d2926",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C74",
+      "claim": "The T4/T5 axon terminals first laminate into two broad domains corresponding to layers a/b and c/d.",
+      "claim_type": "EXPLICIT",
+      "source": "The T4/T5 axon terminals first laminate into two broad domains corresponding to layers a/b and c/d.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results describing the lamination process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "ded0adbb-faa7-475c-86d9-db427f3d0126",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C75",
+      "claim": "The two broad domains then further sublaminate into two pairs of adjacent layers to form the four discrete LoP layers, a, b, c, and d.",
+      "claim_type": "EXPLICIT",
+      "source": "These domains then further sublaminate into two pairs of adjacent layers to form the four discrete LoP layers, a, b, c, and d.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results describing the lamination process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "28b43beb-ae6f-4352-b4a7-17af975a2e4e",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C76",
+      "claim": "The two primary axes of transcriptional diversity mirrored the two stages of LoP layer formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The two primary axes of transcriptional diversity mirrored these two stages of LoP layer formation, suggesting a regulatory code for axon wiring (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "c3761e7f-cb56-4d80-93e1-8cc960b25091",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C77",
+      "claim": "Mutually exclusive expression of the TFs dac and bi/pros separated a/b (dac+) from c/d (bi+/pros+) subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutually exclusive expression of the TFs dac and bi/pros separated a/b (dac+) from c/d (bi+/pros+) subtypes (i.e. Axis 1, Apitz and Salecker, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "4c2be0d8-10de-4541-a2f9-04280cdd6a5a",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C78",
+      "claim": "Expression of the TF grn separated subtypes into inner (b and c, grn+) and outer (a and d, grn-) layer subtypes in a symmetrical fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "These subtypes were further separated by expression of the TF grn into inner (b and c, grn+) and outer (a and d, grn-) layer subtypes in a symmetrical fashion (i.e. Axis 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "608449d5-43e4-43bf-af4d-cbe571a7a932",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C79",
+      "claim": "RNAi of bi in all T4/T5 neurons results in loss of the c/d domain of the LoP.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi of bi in all T4/T5 neurons results in loss of the c/d domain of the LoP, whereas overexpression results in loss of the a/b domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "c21f985e-ab28-4584-b4eb-9a99840e444d",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C80",
+      "claim": "Overexpression of bi results in loss of the a/b domain of the LoP.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi of bi in all T4/T5 neurons results in loss of the c/d domain of the LoP, whereas overexpression results in loss of the a/b domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "c023b5bb-5511-48cb-8488-73281fe21ee9",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C81",
+      "claim": "In both RNAi and overexpression of bi, further sublamination of remaining inner and outer LoP layer pairs still occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, further sublamination of remaining inner and outer LoP layer pairs still occurs (Apitz and Salecker, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "19da85d0-ea5d-4d3c-815f-471c0a199578",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C82",
+      "claim": "RNAi of grn resulted in distinct a/b and c/d LoP domains still being separated by a pronounced gap and differential expression of Con, but both domains failed to sublaminate into inner and outer layers.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed RNAi of grn, which resulted in a different phenotype; whereas distinct a/b and c/d LoP domains were still separated by a pronounced gap and differential expression of Con (a marker for LoP layers c/d), both domains failed to sublaminate into inner and outer layers, instead forming a single layer each (Figure 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "beb0300d-9710-480f-a3cb-f29675c795b7",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C83",
+      "claim": "The overall morphological organization of T4/T5 neurons was otherwise unaffected by grn RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall morphological organization of T4/T5 neurons was otherwise unaffected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results describing the grn RNAi phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "ec8f6c00-b9e3-4357-9885-b21a2cedd904",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C84",
+      "claim": "Overexpression of grn in all T4/T5 neurons resulted in a specific failure of a/b and c/d LoP domains to sublaminate.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of grn in all T4/T5 neurons also resulted in a specific failure of a/b and c/d LoP domains to sublaminate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "58f68bd9-0c73-446e-96a5-9e9046cd3ea7",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C85",
+      "claim": "RNAi and overexpression of grn resulted in significant loss of T4/T5 neuron numbers between 24 hr and 48 hr APF.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi and overexpression of grn resulted in significant loss of T4/T5 neuron numbers between 24 hr and 48 hr APF (Figure 6\u2014figure supplement 2), associated with an increase in apoptosis (Figure 6C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "ea35e2c8-0bf2-4ee7-b06f-d49134e9bf3b",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C86",
+      "claim": "RNAi and overexpression of grn were associated with an increase in apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi and overexpression of grn resulted in significant loss of T4/T5 neuron numbers between 24 hr and 48 hr APF (Figure 6\u2014figure supplement 2), associated with an increase in apoptosis (Figure 6C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "7eb04710-7233-4801-a461-60985800429c",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C87",
+      "claim": "Expression of baculovirus caspase inhibitor p35 in developing T4/T5s rescued cell death associated with grn overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of baculovirus caspase inhibitor p35 in developing T4/T5s rescued cell death associated with grn overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "396bc7ee-3284-412f-a4b2-3d5faf33861c",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C88",
+      "claim": "T4/T5 axons still failed to sublaminate into four discrete LoP layers when apoptosis was blocked by p35 expression during grn overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, T4/T5 axons still failed to sublaminate into four discrete LoP layers (Figure 6E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "e01d6698-243e-4bf3-8032-c5c98c02867d",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C89",
+      "claim": "Differential expression of grn is specifically required for sublamination of T4/T5 axons between pairs of adjacent LoP layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, differential expression of grn is specifically required for sublamination of T4/T5 axons between pairs of adjacent LoP layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a conclusion from the functional experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "3372ebf8-c44f-4323-9fc6-cd5e408720fc",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C90",
+      "claim": "Axon-specific transcriptional programs defined by binary (ON/OFF) expression patterns of two TFs, bi and grn, control the formation of four LoP layers and corresponding T4/T5 axonal wiring patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that axon-specific transcriptional programs defined by binary (ON/OFF) expression patterns of two TFs, bi and grn, control the formation of four LoP layers and corresponding T4/T5 axonal wiring patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a conclusion from the functional experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "10cae06d-7526-498d-b798-c195f9c26718",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C91",
+      "claim": "Separable transcriptional programs correlate with specific wiring features of T4/T5 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupervised analysis revealed that separable transcriptional programs correlate with these specific wiring features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "905b9497-ded8-4e07-b9db-d0c12762cd80",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C92",
+      "claim": "These programs control specific axonal targeting features, which are separable from other features (e.g. dendrite targeting).",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate through gain and loss of function experiments that these programs control specific axonal targeting features, which are separable from other features (e.g. dendrite targeting).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "9a468f58-9b84-488a-86bc-c2ffa231c430",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C93",
+      "claim": "These programs can be re-assembled in a modular fashion to generate neuronal subtypes with different combinations of wiring features.",
+      "claim_type": "EXPLICIT",
+      "source": "These programs can be re-assembled in a modular fashion to generate neuronal subtypes with different combinations of wiring features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "d2277936-8b15-4c68-80c7-0457707c3b42",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C94",
+      "claim": "A modular transcriptional architecture may provide a general strategy for discrete modifications to neuronal connectivity in development and evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "A modular transcriptional architecture may provide a general strategy for discrete modifications to neuronal connectivity in development and evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a speculation about broader implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "30aa6cd8-6b60-4b03-9c48-ccce5c0c5f47",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C95",
+      "claim": "A common T4/T5 neuronal identity is defined by a unique combination of TFs expressed in all subtypes (e.g. Lim1, Drgx, acj6).",
+      "claim_type": "EXPLICIT",
+      "source": "A common T4/T5 neuronal identity is defined by a unique combination of TFs expressed in all subtypes (e.g. Lim1, Drgx, acj6) (Davie et al., 2018; Konstantinides et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "590be4d0-c3cd-4a06-8220-1ce422215bf9",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C96",
+      "claim": "Perturbation of TFs expressed in all subtypes disrupts overall organization of T4/T5 neurons, including both dendritic and axonal morphologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbation of TFs expressed in all subtypes disrupts overall organization of T4/T5 neurons, including both dendritic and axonal morphologies (Contreras et al., 2018; Schilling et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "c0519bdb-0de8-4f31-bd24-5fd7b81e315b",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C97",
+      "claim": "The common T4/T5 transcriptional program is further diversified by separable feature-specific transcriptional programs.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that this common T4/T5 transcriptional program is further diversified by separable feature-specific transcriptional programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "76d9b56b-dd83-4bd4-88f4-671626174231",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C98",
+      "claim": "Feature-specific programs are defined by three binary (ON/OFF) TF expression patterns, with two TF patterns defining the four axonal outputs and one TF pattern defining the two dendritic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "These programs are defined by three binary (ON/OFF) TF expression patterns, with two TF patterns defining the four axonal outputs and one TF pattern defining the two dendritic inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "46e1772e-c694-4f09-8ecd-e4f979c2cde0",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C99",
+      "claim": "Modular combinations of feature-specific TFs defining unique wiring patterns give rise to eight T4/T5 subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, modular TF codes defining common and feature-specific transcriptional programs give rise to eight T4/T5 subtypes (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "f5a929b4-a1f1-44f7-9b15-67431cbfd39c",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C100",
+      "claim": "Four pairs of T4/T5 subtypes with shared axonal outputs (and different dendritic inputs) each target one of four LoP layers, a-d.",
+      "claim_type": "EXPLICIT",
+      "source": "Four pairs of T4/T5 subtypes with shared axonal outputs (and different dendritic inputs) each target one of four LoP layers, a-d.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "492593a1-0828-4caf-b7d7-3be957e2614d",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C101",
+      "claim": "The ultimate layered architecture of neuropils develops through sequential lamination into increasing numbers of layers.",
+      "claim_type": "EXPLICIT",
+      "source": "The ultimate layered architecture of neuropils develops through sequential lamination into increasing numbers of layers (Sanes and Zipursky, 2010; Millard and Pecot, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "5770049f-d1ad-4605-b610-0bd895cafbc6",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C102",
+      "claim": "Binary expression of bi is required for lamination of the broad a/b from c/d LoP domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Binary expression of bi is required for lamination of the broad a/b from c/d LoP domains (Apitz and Salecker, 2018), whereas binary expression of grn is required for sublamination of each of these two domains into separate LoP layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "4dd54220-991e-4801-8bd7-cc21091cb71b",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C103",
+      "claim": "Binary expression of grn is required for sublamination of each of the two broad domains into separate LoP layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Binary expression of bi is required for lamination of the broad a/b from c/d LoP domains (Apitz and Salecker, 2018), whereas binary expression of grn is required for sublamination of each of these two domains into separate LoP layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "e83ea6c1-daa7-4f3b-b399-a5a75be4f766",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C104",
+      "claim": "Perturbation of each TF (bi or grn) exclusively disrupts the corresponding lamination step, while not affecting other morphological features of T4/T5 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, perturbation of each TF exclusively disrupts the corresponding lamination step, while not affecting other morphological features of T4/T5 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "382a8c21-b499-4bc3-b55b-cdcb613778a2",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C105",
+      "claim": "Two quartets of subtypes with shared dendritic inputs (and different axonal outputs) were defined by binary expression of TfAP-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, two quartets of subtypes with shared dendritic inputs (and different axonal outputs) were defined by binary expression of TfAP-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "91ce1f3a-873e-4d70-a101-1d071babeb77",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C106",
+      "claim": "Arborization of dendrites in M10 (T4) or Lo1 (T5) occurs during initial neurite guidance steps, preceding the developmental stages covered in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Arborization of dendrites in M10 (T4) or Lo1 (T5) occurs during initial neurite guidance steps, preceding the developmental stages covered in this study (Pinto-Teixeira et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "732fefcf-c35b-4da0-8527-c718a7a7f4ca",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C107",
+      "claim": "DEGs between T4 and T5 subtypes contribute to the connections with two distinct sets of presynaptic partners.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that DEGs between T4 and T5 subtypes identified in our analysis contribute to the connections with two distinct sets of presynaptic partners (Shinomiya et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a hypothesis with citation to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "858187a5-113d-4c49-a937-cc132059a6a7",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C108",
+      "claim": "The binary expression patterns of TFs mirror the developmental lineages of T4/T5 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The binary expression patterns of TFs also mirror the developmental lineages of T4/T5 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "b8dc7ac6-69a0-41c3-998f-164e01da0ab0",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C109",
+      "claim": "a/b and c/d subtypes arise from bi- and bi+ progenitor populations.",
+      "claim_type": "EXPLICIT",
+      "source": "a/b and c/d subtypes arise from bi- and bi+ progenitor populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "48fea9b1-a7bc-4d6e-a1e1-60a18167d2b0",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C110",
+      "claim": "Neuroblasts from each population undergo two terminal Notch-dependent asymmetric divisions to give rise to the eight subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuroblasts from each population undergo two terminal Notch-dependent asymmetric divisions to give rise to the eight subtypes (Pinto-Teixeira et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "7583bb2b-7017-44dd-a832-5d9dfcbdeade",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C111",
+      "claim": "These divisions correspond to binary expression patterns of grn and TfAP-2, which act with Notch signaling to regulate wiring.",
+      "claim_type": "EXPLICIT",
+      "source": "These divisions correspond to binary expression patterns of grn and TfAP-2, respectively, which act with Notch signaling to regulate wiring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "521e4436-d7f2-4be1-b44c-db9483f3c641",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C112",
+      "claim": "Despite divergent developmental trajectories separated by multiple divisions and distinct progenitor pools, all T4 and all T5 subtypes converge onto the same transcriptional programs associated with two types of dendritic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, despite divergent developmental trajectories separated by multiple divisions and distinct progenitor pools, all T4 and all T5 subtypes converge onto the same transcriptional programs associated with two types of dendritic inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an observation from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "ab34e89c-b005-4ea1-9e28-3a6f8e809ba7",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C113",
+      "claim": "Three regulatory dichotomies could reflect the evolutionary origin of T4/T5 subtypes and correspond to consecutive duplications of ancestral cell types and circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Three regulatory dichotomies could also reflect the evolutionary origin of T4/T5 subtypes and correspond to consecutive duplications of ancestral cell types and circuits (Shinomiya et al., 2015; Arendt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a speculation with citations to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "d476fd70-65c6-4bfa-8387-92e83056c026",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C114",
+      "claim": "Each axonal and dendritic transcriptional program is characterized by a specific pattern of TFs, as well as a set of CSPs, many of which are implicated in regulating wiring in other developmental contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Each axonal and dendritic transcriptional program is characterized by a specific pattern of TFs, as well as a set of CSPs, many of which are implicated in regulating wiring in other developmental contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "66748043-e392-472a-bf78-e68cb7bcc33a",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C115",
+      "claim": "Dynamic expression of CSPs in neurons with shared wiring features was developmentally coordinated.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dynamic expression of these proteins in neurons with shared wiring features was developmentally coordinated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "c5af4cc6-6c75-43aa-aad4-3ac63f50e895",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C116",
+      "claim": "The synaptic specificity of T4/T5 dendrites and axons are determined by the combined activity of recognition molecules through interactions with synaptic partners.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that the synaptic specificity of T4/T5 dendrites and axons are determined by the combined activity of these recognition molecules through interactions with synaptic partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "cd023c32-8de3-41ea-831e-ee82d74e82f2",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C117",
+      "claim": "Combining separate dendritic and axonal programs, and variations on them, may contribute to the diversification of synaptic specificity in different neuronal subtypes across complex nervous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining separate dendritic and axonal programs, and variations on them, may contribute to the diversification of synaptic specificity in different neuronal subtypes across complex nervous systems",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a speculation about broader implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "918611d4-a10a-4c49-82b3-0d31194bc8b4",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C118",
+      "claim": "T4/T5 neurons comprise the most abundant cell type in the fly visual system.",
+      "claim_type": "EXPLICIT",
+      "source": "There are eight morphological subtypes of T4/T5 neurons in each column of the lobula plate (LoP) neuropil (see below), comprising the most abundant cell type in the fly visual system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "0859c8a4-87db-495c-806d-09ec111e3278",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C119",
+      "claim": "Studies in both vertebrates and invertebrates have led to the identification of cell surface proteins (CSPs) that mediate selective association between neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in both vertebrates and invertebrates have led to the identification of cell surface proteins (CSPs) that mediate selective association between neurites (Tessier-Lavigne and Goodman, 1996; de Wit and Ghosh, 2016; Zinn and \u00d6zkan, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "8a81a8a1-2f27-4692-81d0-f9d289ba8ca4",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C120",
+      "claim": "Gain and loss of function genetic studies have shown that combinations of different CSP families regulate specificity of neuronal connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Gain and loss of function genetic studies have shown that combinations of different CSP families regulate this specificity (Zarin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "d6d9341d-d7f2-4fd0-9acf-844ab0f95a9b",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C121",
+      "claim": "Neuronal subtypes express highly diverse repertoires of CSPs during circuit assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, neuronal subtypes express highly diverse repertoires of CSPs during circuit assembly (Tan et al., 2015; Li et al., 2017; Sarin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "a542c246-c01d-401e-8b64-1f51e7862464",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C122",
+      "claim": "Conserved regulatory strategies involving combinations of transcription factors (TFs) establish unique neuronal identities.",
+      "claim_type": "EXPLICIT",
+      "source": "Conserved regulatory strategies involving combinations of transcription factors (TFs) establish unique neuronal identities (Allan and Thor, 2015; Enriquez et al., 2015; Hobert, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "13b82b6f-d14e-4b6a-adc5-65fa4778b40c",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "claim_id": "C123",
+      "claim": "The programs regulating expression of CSPs for specific neuronal wiring features are still poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the programs regulating expression of CSPs for specific neuronal wiring features are still poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and sets up the motivation for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ed1aa1d6-988a-4113-8317-ad179b4f64b1",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Eight T4/T5 neuron subtypes are defined by combinations of two dendritic input patterns (T4 in medulla, T5 in lobula) and four axonal output patterns (LoP layers a-d), with each pair responding to one of four cardinal directions of motion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C9, C12-C13 collectively establish the morphological organization of T4/T5 neurons. These claims are supported by established knowledge (C6, C10-C11), direct observations in figures (C8-C9), and consistent descriptions throughout the manuscript. The eight-subtype structure is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "f4c33b5d-dace-4066-8bc0-5d21ed5e3b5a",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single-cell RNA-seq at 48 hr APF identified eight transcriptionally distinct clusters corresponding to the eight T4/T5 subtypes, but individual subtypes were not defined by unique molecular markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C20-C24, C26 describe the single-cell profiling results. The identification of eight clusters (C21) matching eight known subtypes (C22) is well-supported by the data in Figure 1E. The absence of unique markers (C24, C26) distinguishes this system from other neuronal subtypes (C25) and motivates the subsequent analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "497f6992-08c4-4bd8-a470-ba432cc5ed1c",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Three independent components (ICs) define three orthogonal axes of transcriptional diversity that together define all eight T4/T5 clusters through binary expression patterns of transcription factors (bi for Axis 1, grn for Axis 2, TfAP-2 for Axis 3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C35 describe the ICA results shown in Figure 2. The identification of three ICs that separate clusters into groups of four (C27-C28) and the association with binary TF expression (C31-C33) are clearly demonstrated. The conclusion that unique gene combinations define each cluster (C34-C35) follows logically from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "b1983056-8dc8-4316-85e6-8c7a8967ee4e",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Axis 1 separates T4/T5 subtypes into LoP layers a/b versus c/d based on mutually exclusive expression of Fas2 and klg, corresponding to horizontal versus vertical motion detection circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 describe Axis 1 and are supported by both transcriptional data (C36) and in vivo expression patterns (C37-C38) shown in Figure 3. The correspondence to previously described markers (C39) and the functional interpretation (C40-C41) are well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "84da68c7-0023-4087-bdbb-976ff8427bc1",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Axis 2 further separates T4/T5 subtypes into inner (b/c) versus outer (a/d) LoP layers based on binary expression of beat-IV and grn, corresponding to opposing directions within each motion detection circuit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 describe Axis 2 and are supported by transcriptional and expression data in Figure 3. The symmetrical separation into inner and outer layers (C44) and the functional interpretation (C45) are consistent with the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "97ea8955-bf47-4933-9452-3be16e5edf76",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Axis 3 separates all T4 from all T5 subtypes based on binary expression of dpr2 and beat-VI, corresponding to ON versus OFF motion detection circuits and defining dendritic input specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 describe Axis 3 and are supported by transcriptional and expression data in Figure 3. The separation of T4 from T5 (C48) and the correspondence to dendritic inputs (C49) are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "15932261-9fb4-4546-a398-06d63c63f362",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Axes 1 and 2 together define four types of axonal outputs (a, b, c, d), while Axis 3 defines two types of dendritic inputs (T4 and T5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 summarize the relationship between the three axes and wiring patterns. This conclusion is well-supported by the preceding analysis of individual axes (C36-C49) and represents a key finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "99b8e4be-4ba3-4290-a876-d5f71aa62134",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pairwise comparisons between T4/T5 subtypes revealed that differentially expressed genes (DEGs) are co-regulated according to shared wiring features, with distinct gene sets defining shared axonal outputs or shared dendritic inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 describe pairwise comparison results shown in Figure 4. The observation that DEG numbers correlate with wiring differences (C52-C54) and that DEGs are co-regulated by wiring features (C55-C57) is clearly demonstrated in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "3cd12039-06aa-4093-8c4f-88a03670082a",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Many DEGs encode cell surface proteins implicated in wiring specificity, and the transcriptional organization mirrors wiring patterns through modular assembly of gene groups defining specific wiring features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 interpret the DEG results. The identification of CSPs with adhesion domains (C59) and their known roles (C60) are supported by citations. The conclusion that transcriptional organization mirrors wiring patterns (C61-C63) is well-supported by the comprehensive analysis in Figure 4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "8dfbfbcd-b336-4afc-ae4c-729394daa86c",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Developmental profiling at 24 hr APF revealed stable expression of key TFs (bi, grn, TfAP-2) and coordinated dynamic changes in CSP expression among subtypes with shared wiring features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C72 describe the developmental analysis shown in Figure 5. The identification of eight clusters at 24 hr APF (C64-C65), stable TF expression (C66), and coordinated dynamic CSP expression (C67-C72) are clearly demonstrated in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "6104a4e0-ef64-44d5-9cc5-197bef0de39b",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "LoP layer formation occurs in two discrete lamination steps (first into a/b and c/d domains, then sublamination into four layers), mirroring the two primary axes of transcriptional diversity defined by bi/dac and grn expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 describe the developmental process and its relationship to transcriptional programs. The two-step lamination process (C73-C75) is documented in Figure 6\u2014figure supplement 1, and the correspondence to transcriptional axes (C76-C78) is well-supported by the data and previous work (C77).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "442d6b7e-99b7-43a8-83ea-fa0578a5f7a1",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Functional experiments demonstrate that differential expression of grn is specifically required for sublamination of T4/T5 axons into inner and outer LoP layers, independent of cell survival, while bi controls the initial a/b versus c/d separation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C90 describe functional experiments shown in Figure 6. The grn RNAi and overexpression phenotypes (C82-C84) specifically affect sublamination without disrupting overall morphology (C83). The p35 rescue experiment (C87-C88) demonstrates that the sublamination defect is independent of apoptosis. The conclusion (C89-C90) is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "3b503e43-3057-4fe7-89ae-4e17f40f8a47",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Modular transcriptional programs defined by specific TFs and CSPs control distinct wiring features independently and can be assembled in different combinations to generate diverse neuronal connectivity patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C91-C94 represent the main conclusions of the study. These are well-supported by the comprehensive transcriptional profiling (C2, C27-C63) and functional experiments (C79-C90). The modular architecture concept (C93-C94) is a reasonable interpretation of the data, though broader applicability (C94) remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "b335ee3a-686f-4cad-887d-c1f7eea7fde3",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A common T4/T5 identity defined by shared TFs is diversified by feature-specific programs defined by three binary TF patterns, giving rise to eight subtypes through modular combinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C99 summarize the hierarchical organization of transcriptional programs shown in Figure 7. The common T4/T5 program (C95-C96) is supported by citations, and the feature-specific diversification (C97-C99) is well-supported by the data presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "592dd27f-b91f-4360-89b4-8b7df955c8c9",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Sequential lamination controlled by bi and grn establishes four LoP layers, with each TF perturbation specifically disrupting its corresponding lamination step without affecting other morphological features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C104 synthesize the developmental and functional findings. The sequential lamination model (C101-C103) is supported by developmental observations and functional experiments. The specificity of TF perturbations (C104) is clearly demonstrated in the grn experiments (C82-C90) and previous bi work (C79-C81).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "c9dc309b-2e3f-4007-8ef0-620bf953d06f",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "TfAP-2 defines T4 versus T5 dendritic inputs, which are established during early neurite guidance, and DEGs between T4 and T5 likely contribute to connections with distinct presynaptic partners.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C105 is supported by the transcriptional data. However, C106 relies on a citation to previous work, and C107 is explicitly stated as a hypothesis. No functional experiments were performed to test TfAP-2 function or the role of T4/T5 DEGs in dendritic connectivity, making this result less certain than the axonal findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "f6795936-8053-46d8-9db9-9fde5c592dc3",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Binary TF expression patterns mirror developmental lineages, with T4 and T5 subtypes arising from distinct progenitor populations through Notch-dependent divisions, yet converging onto shared transcriptional programs for dendritic inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C112 relate transcriptional patterns to developmental lineages. The correspondence between TF patterns and lineages (C108-C111) is supported by citations to previous developmental studies. The convergence observation (C112) is a novel insight from the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "34ebc7a6-c320-4f67-83e3-26b604cf2e73",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Three regulatory dichotomies may reflect evolutionary origins through consecutive duplications of ancestral cell types and circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C113 is explicitly speculative and supported only by citations to previous work on evolutionary considerations. No direct evolutionary evidence is presented in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "ec4f3102-88c5-4130-a710-b53b91d52eeb",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Each transcriptional program includes TFs and CSPs implicated in wiring, with coordinated dynamic expression suggesting combined activity determines synaptic specificity, potentially contributing to diversification across nervous systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C114-C115 are supported by the data (Figures 5, 7). However, C116 is explicitly stated as a hypothesis, and C117 is speculative about broader applicability. No direct functional tests of CSP combinations or synaptic specificity were performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "3dcb5e77-a04a-49a3-8320-bd713636e1e9",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Single-cell RNA-seq was performed at 48 hr APF using 10X Chromium technology, yielding 3557 high-quality cells at a developmental stage preceding synaptogenesis and coinciding with LoP layer formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 describe the experimental design and are clearly stated in the Methods and Results. The developmental timing rationale (C17-C18) is appropriate for studying wiring programs before synapse formation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    },
+    {
+      "id": "52e9d65b-907c-46dd-9461-46a22a07c13a",
+      "content_id": "96637e8b-20ad-4a00-bf58-53ffbd042e33",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "T4/T5 neurons are the most abundant cell type in the fly visual system with shared developmental origin but distinct wiring patterns, and while previous studies identified a common transcriptional signature, programs for individual subtypes and CSP regulation remained poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C10-C11, C14-C15, C118-C123 establish the background and motivation for the study. These are well-supported by citations to previous literature and accurately represent the state of knowledge prior to this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:20.447584Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "73debc95-7d33-49fd-9c0e-0c4bb0b54477",
+      "result_id": "ed1aa1d6-988a-4113-8317-ad179b4f64b1"
+    },
+    {
+      "claim_id": "d4da5eb2-ae00-4520-93b0-b0b94af5e109",
+      "result_id": "ed1aa1d6-988a-4113-8317-ad179b4f64b1"
+    },
+    {
+      "claim_id": "05467bc8-a109-4a90-bd60-9ab3fed2144d",
+      "result_id": "ed1aa1d6-988a-4113-8317-ad179b4f64b1"
+    },
+    {
+      "claim_id": "91068981-3546-485e-a3da-b394039bf057",
+      "result_id": "ed1aa1d6-988a-4113-8317-ad179b4f64b1"
+    },
+    {
+      "claim_id": "963e37cd-1b00-489b-a02c-93c9e06474b9",
+      "result_id": "ed1aa1d6-988a-4113-8317-ad179b4f64b1"
+    },
+    {
+      "claim_id": "088ed83b-1271-4563-90cf-bc78b1540a3f",
+      "result_id": "ed1aa1d6-988a-4113-8317-ad179b4f64b1"
+    },
+    {
+      "claim_id": "7ad433a9-77dc-4ffe-991e-90b0b74602e5",
+      "result_id": "f4c33b5d-dace-4066-8bc0-5d21ed5e3b5a"
+    },
+    {
+      "claim_id": "86461224-ac1f-47e8-ae3a-97d9cfd78683",
+      "result_id": "f4c33b5d-dace-4066-8bc0-5d21ed5e3b5a"
+    },
+    {
+      "claim_id": "9c30f606-52e9-4a5e-ad60-25fdf475d4d6",
+      "result_id": "f4c33b5d-dace-4066-8bc0-5d21ed5e3b5a"
+    },
+    {
+      "claim_id": "c0b4b89b-f60f-48d8-9c98-d2dbd5b2a46e",
+      "result_id": "f4c33b5d-dace-4066-8bc0-5d21ed5e3b5a"
+    },
+    {
+      "claim_id": "c0363466-0c47-4caa-834c-3cd91ed79f5d",
+      "result_id": "f4c33b5d-dace-4066-8bc0-5d21ed5e3b5a"
+    },
+    {
+      "claim_id": "3ac1feab-e49f-4bf6-b12c-56c32d95ebcd",
+      "result_id": "f4c33b5d-dace-4066-8bc0-5d21ed5e3b5a"
+    },
+    {
+      "claim_id": "59fd8ffe-c8c5-4144-97eb-f5c99019c410",
+      "result_id": "f4c33b5d-dace-4066-8bc0-5d21ed5e3b5a"
+    },
+    {
+      "claim_id": "b3f2a54f-c336-4042-83f7-cab09868edec",
+      "result_id": "497f6992-08c4-4bd8-a470-ba432cc5ed1c"
+    },
+    {
+      "claim_id": "0f71773a-5827-4253-9405-63c717d8dc3f",
+      "result_id": "497f6992-08c4-4bd8-a470-ba432cc5ed1c"
+    },
+    {
+      "claim_id": "cde29c04-d6de-426f-bbae-7fc00fb2c908",
+      "result_id": "497f6992-08c4-4bd8-a470-ba432cc5ed1c"
+    },
+    {
+      "claim_id": "23349918-cfe2-4c3a-87e5-f4025d17b437",
+      "result_id": "497f6992-08c4-4bd8-a470-ba432cc5ed1c"
+    },
+    {
+      "claim_id": "0140dcb6-2b45-4ad5-b94e-7683875a4b8a",
+      "result_id": "497f6992-08c4-4bd8-a470-ba432cc5ed1c"
+    },
+    {
+      "claim_id": "c08a62ff-f6dc-453a-9dfc-20b4d67ca4b1",
+      "result_id": "497f6992-08c4-4bd8-a470-ba432cc5ed1c"
+    },
+    {
+      "claim_id": "946f4dc9-f71d-492d-b9c8-1701930e53d0",
+      "result_id": "497f6992-08c4-4bd8-a470-ba432cc5ed1c"
+    },
+    {
+      "claim_id": "bd917041-6c2b-4577-a73b-625760740c39",
+      "result_id": "497f6992-08c4-4bd8-a470-ba432cc5ed1c"
+    },
+    {
+      "claim_id": "33e76e30-2298-459c-9ced-acc42058754b",
+      "result_id": "497f6992-08c4-4bd8-a470-ba432cc5ed1c"
+    },
+    {
+      "claim_id": "bfd90f7d-2131-443c-a9ff-184c50de74ba",
+      "result_id": "b1983056-8dc8-4316-85e6-8c7a8967ee4e"
+    },
+    {
+      "claim_id": "50484d44-c35c-43b5-a6ca-7cea5b14f910",
+      "result_id": "b1983056-8dc8-4316-85e6-8c7a8967ee4e"
+    },
+    {
+      "claim_id": "79725ef9-c179-46c9-af08-f15beda7d7b3",
+      "result_id": "b1983056-8dc8-4316-85e6-8c7a8967ee4e"
+    },
+    {
+      "claim_id": "a36d56b9-0f85-49f5-9086-e875e4041d24",
+      "result_id": "b1983056-8dc8-4316-85e6-8c7a8967ee4e"
+    },
+    {
+      "claim_id": "786f2471-4feb-4c80-9ffc-fcb3adbaf66c",
+      "result_id": "b1983056-8dc8-4316-85e6-8c7a8967ee4e"
+    },
+    {
+      "claim_id": "b3555009-d888-4e74-8790-fe12da37b27c",
+      "result_id": "b1983056-8dc8-4316-85e6-8c7a8967ee4e"
+    },
+    {
+      "claim_id": "14207794-389a-4821-91f5-325c97158ede",
+      "result_id": "84da68c7-0023-4087-bdbb-976ff8427bc1"
+    },
+    {
+      "claim_id": "90a14bb5-6622-42c3-94ef-7f347b68089a",
+      "result_id": "84da68c7-0023-4087-bdbb-976ff8427bc1"
+    },
+    {
+      "claim_id": "9c002605-a0bf-4f71-969a-2221537ec1ac",
+      "result_id": "84da68c7-0023-4087-bdbb-976ff8427bc1"
+    },
+    {
+      "claim_id": "346dddb8-34c7-4eec-bd34-94a6a7bce1d9",
+      "result_id": "84da68c7-0023-4087-bdbb-976ff8427bc1"
+    },
+    {
+      "claim_id": "be2cb246-644e-4efa-8a47-6a6de829e931",
+      "result_id": "97ea8955-bf47-4933-9452-3be16e5edf76"
+    },
+    {
+      "claim_id": "6468d06a-c8a4-44fb-824e-3876ad1f6f31",
+      "result_id": "97ea8955-bf47-4933-9452-3be16e5edf76"
+    },
+    {
+      "claim_id": "113e6271-7fdf-485f-912b-cef62d22238e",
+      "result_id": "97ea8955-bf47-4933-9452-3be16e5edf76"
+    },
+    {
+      "claim_id": "3c8889c4-0071-44c5-8053-f6d6af116a79",
+      "result_id": "97ea8955-bf47-4933-9452-3be16e5edf76"
+    },
+    {
+      "claim_id": "4bcb79bb-3ce6-4703-b53f-2900aed8f437",
+      "result_id": "15932261-9fb4-4546-a398-06d63c63f362"
+    },
+    {
+      "claim_id": "ec259c87-a0ed-43f6-845a-af49a6bac6fc",
+      "result_id": "15932261-9fb4-4546-a398-06d63c63f362"
+    },
+    {
+      "claim_id": "d5277d30-9988-4127-9490-1136ee35848a",
+      "result_id": "99b8e4be-4ba3-4290-a876-d5f71aa62134"
+    },
+    {
+      "claim_id": "c00b5548-0266-4de8-b6a6-01f1c111b947",
+      "result_id": "99b8e4be-4ba3-4290-a876-d5f71aa62134"
+    },
+    {
+      "claim_id": "765d1f94-fbc2-4e74-a405-fd9f870bcf99",
+      "result_id": "99b8e4be-4ba3-4290-a876-d5f71aa62134"
+    },
+    {
+      "claim_id": "b5f767a8-03a4-4731-a5e0-f742f25a5ddd",
+      "result_id": "99b8e4be-4ba3-4290-a876-d5f71aa62134"
+    },
+    {
+      "claim_id": "e35c2627-2c49-45ab-a2d9-8299bccf104a",
+      "result_id": "99b8e4be-4ba3-4290-a876-d5f71aa62134"
+    },
+    {
+      "claim_id": "f73e436a-96ce-46c6-be2f-4cff8e383121",
+      "result_id": "99b8e4be-4ba3-4290-a876-d5f71aa62134"
+    },
+    {
+      "claim_id": "42680532-cf65-44f2-ab6b-5b5faf213131",
+      "result_id": "3cd12039-06aa-4093-8c4f-88a03670082a"
+    },
+    {
+      "claim_id": "e139bf04-4dac-4b79-8360-f5142cb24480",
+      "result_id": "3cd12039-06aa-4093-8c4f-88a03670082a"
+    },
+    {
+      "claim_id": "ca758ee6-5cb3-43a1-9569-88e87fd2e528",
+      "result_id": "3cd12039-06aa-4093-8c4f-88a03670082a"
+    },
+    {
+      "claim_id": "c66b024d-57a5-4acc-8119-ec5e4d3631e7",
+      "result_id": "3cd12039-06aa-4093-8c4f-88a03670082a"
+    },
+    {
+      "claim_id": "bc210d25-e625-40fa-accd-90b327b2a773",
+      "result_id": "3cd12039-06aa-4093-8c4f-88a03670082a"
+    },
+    {
+      "claim_id": "0f96b322-ef6f-463f-9057-b0ff2835eec0",
+      "result_id": "3cd12039-06aa-4093-8c4f-88a03670082a"
+    },
+    {
+      "claim_id": "28520fd1-633f-4df9-826f-34ee832e4912",
+      "result_id": "8dfbfbcd-b336-4afc-ae4c-729394daa86c"
+    },
+    {
+      "claim_id": "54ebd5e5-02c1-4f58-8da7-8d3ffa278c1d",
+      "result_id": "8dfbfbcd-b336-4afc-ae4c-729394daa86c"
+    },
+    {
+      "claim_id": "369c4ac2-6419-4516-9917-967849f097fb",
+      "result_id": "8dfbfbcd-b336-4afc-ae4c-729394daa86c"
+    },
+    {
+      "claim_id": "6ac7d3c4-0757-41be-b5a9-88f9d88a3872",
+      "result_id": "8dfbfbcd-b336-4afc-ae4c-729394daa86c"
+    },
+    {
+      "claim_id": "75342bca-93c5-48fa-a293-1656d25e03ee",
+      "result_id": "8dfbfbcd-b336-4afc-ae4c-729394daa86c"
+    },
+    {
+      "claim_id": "1f2c1aeb-3b58-4231-b029-f0ad6583897c",
+      "result_id": "8dfbfbcd-b336-4afc-ae4c-729394daa86c"
+    },
+    {
+      "claim_id": "9f24daed-3c0f-4b31-8001-60084fff1fb1",
+      "result_id": "8dfbfbcd-b336-4afc-ae4c-729394daa86c"
+    },
+    {
+      "claim_id": "7abc3cb1-731d-45f9-a995-f993642f4375",
+      "result_id": "8dfbfbcd-b336-4afc-ae4c-729394daa86c"
+    },
+    {
+      "claim_id": "fc90e438-19cb-4853-a247-5dc592620613",
+      "result_id": "8dfbfbcd-b336-4afc-ae4c-729394daa86c"
+    },
+    {
+      "claim_id": "40fd6c8b-7873-4253-8a2d-460b11fe87ad",
+      "result_id": "6104a4e0-ef64-44d5-9cc5-197bef0de39b"
+    },
+    {
+      "claim_id": "ff4c92e7-8138-4f55-a9dd-fe84c67d2926",
+      "result_id": "6104a4e0-ef64-44d5-9cc5-197bef0de39b"
+    },
+    {
+      "claim_id": "ded0adbb-faa7-475c-86d9-db427f3d0126",
+      "result_id": "6104a4e0-ef64-44d5-9cc5-197bef0de39b"
+    },
+    {
+      "claim_id": "28b43beb-ae6f-4352-b4a7-17af975a2e4e",
+      "result_id": "6104a4e0-ef64-44d5-9cc5-197bef0de39b"
+    },
+    {
+      "claim_id": "c3761e7f-cb56-4d80-93e1-8cc960b25091",
+      "result_id": "6104a4e0-ef64-44d5-9cc5-197bef0de39b"
+    },
+    {
+      "claim_id": "4c2be0d8-10de-4541-a2f9-04280cdd6a5a",
+      "result_id": "6104a4e0-ef64-44d5-9cc5-197bef0de39b"
+    },
+    {
+      "claim_id": "608449d5-43e4-43bf-af4d-cbe571a7a932",
+      "result_id": "442d6b7e-99b7-43a8-83ea-fa0578a5f7a1"
+    },
+    {
+      "claim_id": "c21f985e-ab28-4584-b4eb-9a99840e444d",
+      "result_id": "442d6b7e-99b7-43a8-83ea-fa0578a5f7a1"
+    },
+    {
+      "claim_id": "c023b5bb-5511-48cb-8488-73281fe21ee9",
+      "result_id": "442d6b7e-99b7-43a8-83ea-fa0578a5f7a1"
+    },
+    {
+      "claim_id": "19da85d0-ea5d-4d3c-815f-471c0a199578",
+      "result_id": "442d6b7e-99b7-43a8-83ea-fa0578a5f7a1"
+    },
+    {
+      "claim_id": "beb0300d-9710-480f-a3cb-f29675c795b7",
+      "result_id": "442d6b7e-99b7-43a8-83ea-fa0578a5f7a1"
+    },
+    {
+      "claim_id": "ec8f6c00-b9e3-4357-9885-b21a2cedd904",
+      "result_id": "442d6b7e-99b7-43a8-83ea-fa0578a5f7a1"
+    },
+    {
+      "claim_id": "58f68bd9-0c73-446e-96a5-9e9046cd3ea7",
+      "result_id": "442d6b7e-99b7-43a8-83ea-fa0578a5f7a1"
+    },
+    {
+      "claim_id": "ea35e2c8-0bf2-4ee7-b06f-d49134e9bf3b",
+      "result_id": "442d6b7e-99b7-43a8-83ea-fa0578a5f7a1"
+    },
+    {
+      "claim_id": "7eb04710-7233-4801-a461-60985800429c",
+      "result_id": "442d6b7e-99b7-43a8-83ea-fa0578a5f7a1"
+    },
+    {
+      "claim_id": "396bc7ee-3284-412f-a4b2-3d5faf33861c",
+      "result_id": "442d6b7e-99b7-43a8-83ea-fa0578a5f7a1"
+    },
+    {
+      "claim_id": "e01d6698-243e-4bf3-8032-c5c98c02867d",
+      "result_id": "442d6b7e-99b7-43a8-83ea-fa0578a5f7a1"
+    },
+    {
+      "claim_id": "3372ebf8-c44f-4323-9fc6-cd5e408720fc",
+      "result_id": "442d6b7e-99b7-43a8-83ea-fa0578a5f7a1"
+    },
+    {
+      "claim_id": "3d108dec-ec28-4a42-a9e1-afdd8ff6dc0d",
+      "result_id": "3b503e43-3057-4fe7-89ae-4e17f40f8a47"
+    },
+    {
+      "claim_id": "6d75ad1e-23e7-4016-aece-ef0434034414",
+      "result_id": "3b503e43-3057-4fe7-89ae-4e17f40f8a47"
+    },
+    {
+      "claim_id": "84ceae53-d00d-402c-bbe4-ca5a8c4d1fd2",
+      "result_id": "3b503e43-3057-4fe7-89ae-4e17f40f8a47"
+    },
+    {
+      "claim_id": "10cae06d-7526-498d-b798-c195f9c26718",
+      "result_id": "3b503e43-3057-4fe7-89ae-4e17f40f8a47"
+    },
+    {
+      "claim_id": "905b9497-ded8-4e07-b9db-d0c12762cd80",
+      "result_id": "3b503e43-3057-4fe7-89ae-4e17f40f8a47"
+    },
+    {
+      "claim_id": "9a468f58-9b84-488a-86bc-c2ffa231c430",
+      "result_id": "3b503e43-3057-4fe7-89ae-4e17f40f8a47"
+    },
+    {
+      "claim_id": "d2277936-8b15-4c68-80c7-0457707c3b42",
+      "result_id": "3b503e43-3057-4fe7-89ae-4e17f40f8a47"
+    },
+    {
+      "claim_id": "30aa6cd8-6b60-4b03-9c48-ccce5c0c5f47",
+      "result_id": "b335ee3a-686f-4cad-887d-c1f7eea7fde3"
+    },
+    {
+      "claim_id": "590be4d0-c3cd-4a06-8220-1ce422215bf9",
+      "result_id": "b335ee3a-686f-4cad-887d-c1f7eea7fde3"
+    },
+    {
+      "claim_id": "c0519bdb-0de8-4f31-bd24-5fd7b81e315b",
+      "result_id": "b335ee3a-686f-4cad-887d-c1f7eea7fde3"
+    },
+    {
+      "claim_id": "76d9b56b-dd83-4bd4-88f4-671626174231",
+      "result_id": "b335ee3a-686f-4cad-887d-c1f7eea7fde3"
+    },
+    {
+      "claim_id": "46e1772e-c694-4f09-8ecd-e4f979c2cde0",
+      "result_id": "b335ee3a-686f-4cad-887d-c1f7eea7fde3"
+    },
+    {
+      "claim_id": "f5a929b4-a1f1-44f7-9b15-67431cbfd39c",
+      "result_id": "592dd27f-b91f-4360-89b4-8b7df955c8c9"
+    },
+    {
+      "claim_id": "492593a1-0828-4caf-b7d7-3be957e2614d",
+      "result_id": "592dd27f-b91f-4360-89b4-8b7df955c8c9"
+    },
+    {
+      "claim_id": "5770049f-d1ad-4605-b610-0bd895cafbc6",
+      "result_id": "592dd27f-b91f-4360-89b4-8b7df955c8c9"
+    },
+    {
+      "claim_id": "4dd54220-991e-4801-8bd7-cc21091cb71b",
+      "result_id": "592dd27f-b91f-4360-89b4-8b7df955c8c9"
+    },
+    {
+      "claim_id": "e83ea6c1-daa7-4f3b-b399-a5a75be4f766",
+      "result_id": "592dd27f-b91f-4360-89b4-8b7df955c8c9"
+    },
+    {
+      "claim_id": "382a8c21-b499-4bc3-b55b-cdcb613778a2",
+      "result_id": "c9dc309b-2e3f-4007-8ef0-620bf953d06f"
+    },
+    {
+      "claim_id": "91ce1f3a-873e-4d70-a101-1d071babeb77",
+      "result_id": "c9dc309b-2e3f-4007-8ef0-620bf953d06f"
+    },
+    {
+      "claim_id": "732fefcf-c35b-4da0-8527-c718a7a7f4ca",
+      "result_id": "c9dc309b-2e3f-4007-8ef0-620bf953d06f"
+    },
+    {
+      "claim_id": "858187a5-113d-4c49-a937-cc132059a6a7",
+      "result_id": "f6795936-8053-46d8-9db9-9fde5c592dc3"
+    },
+    {
+      "claim_id": "b8dc7ac6-69a0-41c3-998f-164e01da0ab0",
+      "result_id": "f6795936-8053-46d8-9db9-9fde5c592dc3"
+    },
+    {
+      "claim_id": "48fea9b1-a7bc-4d6e-a1e1-60a18167d2b0",
+      "result_id": "f6795936-8053-46d8-9db9-9fde5c592dc3"
+    },
+    {
+      "claim_id": "7583bb2b-7017-44dd-a832-5d9dfcbdeade",
+      "result_id": "f6795936-8053-46d8-9db9-9fde5c592dc3"
+    },
+    {
+      "claim_id": "521e4436-d7f2-4be1-b44c-db9483f3c641",
+      "result_id": "f6795936-8053-46d8-9db9-9fde5c592dc3"
+    },
+    {
+      "claim_id": "ab34e89c-b005-4ea1-9e28-3a6f8e809ba7",
+      "result_id": "34ebc7a6-c320-4f67-83e3-26b604cf2e73"
+    },
+    {
+      "claim_id": "d476fd70-65c6-4bfa-8387-92e83056c026",
+      "result_id": "ec4f3102-88c5-4130-a710-b53b91d52eeb"
+    },
+    {
+      "claim_id": "66748043-e392-472a-bf78-e68cb7bcc33a",
+      "result_id": "ec4f3102-88c5-4130-a710-b53b91d52eeb"
+    },
+    {
+      "claim_id": "c5af4cc6-6c75-43aa-aad4-3ac63f50e895",
+      "result_id": "ec4f3102-88c5-4130-a710-b53b91d52eeb"
+    },
+    {
+      "claim_id": "cd023c32-8de3-41ea-831e-ee82d74e82f2",
+      "result_id": "ec4f3102-88c5-4130-a710-b53b91d52eeb"
+    },
+    {
+      "claim_id": "028672c3-07bb-4794-8745-a281f89c6ddb",
+      "result_id": "3dcb5e77-a04a-49a3-8320-bd713636e1e9"
+    },
+    {
+      "claim_id": "290ccdb0-c007-493f-a63e-3d41efca83f6",
+      "result_id": "3dcb5e77-a04a-49a3-8320-bd713636e1e9"
+    },
+    {
+      "claim_id": "a5538a3b-e61a-4efd-8c39-e0dfad775c21",
+      "result_id": "3dcb5e77-a04a-49a3-8320-bd713636e1e9"
+    },
+    {
+      "claim_id": "974aade9-4b6c-4856-9dd2-b3c6161c2201",
+      "result_id": "3dcb5e77-a04a-49a3-8320-bd713636e1e9"
+    },
+    {
+      "claim_id": "86461224-ac1f-47e8-ae3a-97d9cfd78683",
+      "result_id": "3dcb5e77-a04a-49a3-8320-bd713636e1e9"
+    },
+    {
+      "claim_id": "1354c676-a017-441f-8dec-cfe8b8298cbe",
+      "result_id": "52e9d65b-907c-46dd-9461-46a22a07c13a"
+    },
+    {
+      "claim_id": "486dcac7-b7a7-43ce-8186-809dd49346ba",
+      "result_id": "52e9d65b-907c-46dd-9461-46a22a07c13a"
+    },
+    {
+      "claim_id": "2d3f3df7-03d0-4758-b593-392e68718364",
+      "result_id": "52e9d65b-907c-46dd-9461-46a22a07c13a"
+    },
+    {
+      "claim_id": "985386dc-2ecd-4c35-a237-b24db0ad62b0",
+      "result_id": "52e9d65b-907c-46dd-9461-46a22a07c13a"
+    },
+    {
+      "claim_id": "88510caa-ac85-4f54-9c31-ccd5704da00c",
+      "result_id": "52e9d65b-907c-46dd-9461-46a22a07c13a"
+    },
+    {
+      "claim_id": "918611d4-a10a-4c49-82b3-0d31194bc8b4",
+      "result_id": "52e9d65b-907c-46dd-9461-46a22a07c13a"
+    },
+    {
+      "claim_id": "0859c8a4-87db-495c-806d-09ec111e3278",
+      "result_id": "52e9d65b-907c-46dd-9461-46a22a07c13a"
+    },
+    {
+      "claim_id": "8a81a8a1-2f27-4692-81d0-f9d289ba8ca4",
+      "result_id": "52e9d65b-907c-46dd-9461-46a22a07c13a"
+    },
+    {
+      "claim_id": "d6d9341d-d7f2-4fd0-9acf-844ab0f95a9b",
+      "result_id": "52e9d65b-907c-46dd-9461-46a22a07c13a"
+    },
+    {
+      "claim_id": "a542c246-c01d-401e-8b64-1f51e7862464",
+      "result_id": "52e9d65b-907c-46dd-9461-46a22a07c13a"
+    },
+    {
+      "claim_id": "13b82b6f-d14e-4b6a-adc5-65fa4778b40c",
+      "result_id": "52e9d65b-907c-46dd-9461-46a22a07c13a"
+    }
+  ],
+  "comparisons": []
+}

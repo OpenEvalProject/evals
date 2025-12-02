@@ -1,0 +1,1248 @@
+{
+  "submission": {
+    "id": "9f8451cd-8a23-4503-b4db-ab62763fff76",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:49:08.385339Z",
+    "updated_at": "2025-12-02T08:49:08.385339Z"
+  },
+  "content": [
+    {
+      "id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "submission_id": "9f8451cd-8a23-4503-b4db-ab62763fff76",
+      "content_type": "manuscript",
+      "content_text": "# Optogenetically induced low-frequency correlations impair perception\n\n## Authors\n\n- Anirvan Nandy<sup>1</sup> ([ORCID: 0000-0002-4225-5349](https://orcid.org/0000-0002-4225-5349)) \u2020\n- Jonathan J Nassi<sup>1</sup>\n- Monika P Jadi<sup>2</sup>\n- John Reynolds<sup>1</sup>\n\n### Affiliations\n\n1. Systems Neurobiology Laboratories The Salk Institute for Biological Studies La Jolla United States\n2. Department of Neuroscience Yale University New Haven United States\n3. Department of Psychiatry Yale University New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDeployment of covert attention to a spatial location can cause large decreases in low-frequency correlated variability among neurons in macaque area V4 whose receptive-fields lie at the attended location. It has been estimated that this reduction accounts for a substantial fraction of the attention-mediated improvement in sensory processing. These estimates depend on assumptions about how population signals are decoded and the conclusion that correlated variability impairs perception, is purely hypothetical. Here we test this proposal directly by optogenetically inducing low-frequency fluctuations, to see if this interferes with performance in an attention-demanding task. We find that low-frequency optical stimulation of neurons in V4 elevates correlations among pairs of neurons and impairs the animal\u2019s ability to make fine sensory discriminations. Stimulation at higher frequencies does not impair performance, despite comparable modulation of neuronal responses. These results support the hypothesis that attention-dependent reductions in correlated variability contribute to improved perception of attended stimuli.\n\n## Introduction\n\nNeurons exhibit responses that are highly variable (Shadlen and Newsome, 1998), with nearby neurons in the cortex exhibiting correlated variability in their spiking output (Cohen and Kohn, 2011; Smith and Kohn, 2008; Smith and Sommer, 2013; Zohary et al., 1994). It has been estimated on theoretical grounds that even weak correlations substantially reduce the information coding capacity of a population (Zohary et al., 1994). Spatial attention can reduce correlated variability (often referred to as noise correlations) among neurons in macaque visual area V4 (Cohen and Maunsell, 2009; Mitchell et al., 2009), an area that is strongly modulated by spatial attention (Reynolds and Chelazzi, 2004). Mitchell et al., 2009 found that this reduction is restricted to low frequencies below 10 Hz. These studies have estimated, on theoretical grounds, that the reduction in correlated variability accounts for a large fraction (about 80%) of the perceptual benefit due to attention. However, these estimates rely on specific assumptions about the relationship between noise and signal correlations, and thereby, on how population signals are read out in the brain (Abbott and Dayan, 1999; Averbeck et al., 2006; Moreno-Bote et al., 2014; Panzeri et al., 1999). Theoretical studies using heterogeneous tuning curves and optimal readout have concluded that correlated variability does not necessarily limit information (Ecker et al., 2011; Shamir and Sompolinsky, 2006). Consistent with the interpretation that attention-dependent reductions in correlated variability improve perception, a recent study of the effects of naturally occurring fluctuations in neural correlations found improved sensory discrimination when neurons in Area V4 were desynchronized (Beaman et al., 2017). However, other studies have posited that correlations themselves may be induced by fluctuations in attention (Goris et al., 2014), resulting in variation in response gain that is shared across neurons, and other experiments have shown that attention can, under some conditions, also increase correlated neural response variability (Ruff and Cohen, 2014). Taken together, these studies call into question the simple idea that attention reduces correlations so as to improve sensory discrimination. Importantly, all of these studies are correlative in nature. The causal role of correlated variability in perception has not been tested and thus the proposal that low-frequency correlated variability is detrimental for perception has remained purely hypothetical.\n\nHere, we sought to directly test the effects of correlated variability on sensory discrimination by using optogenetic activation to induce correlations in Area V4 as monkeys performed an orientation discrimination task near perceptual threshold. We exploited the fact that attentional modulation of correlated variability is both spatially- and frequency selective: attention-dependent reductions in correlation are restricted to low frequencies (<10 Hz (Mitchell et al., 2009)). We reasoned that the correlations that impair perception may have an inherent time scale, with low- but not high-frequency correlations impairing perception. If so, we would predict that the effects of correlations on perception should be specific to this low-frequency range.\n\n## Results and discussion\n\nWe took advantage of a novel approach to primate optogenetics and electrophysiology (Nassi et al., 2015; Ruiz et al., 2013) in which the native dura mater is replaced by a silicone based artificial dura (Figure 1A, B). This approach provides an optically clear window into the awake-behaving primate brain and allows precise opto-electrophysiology. We injected a lenti-viral construct (lenti-CaMKIIa-C1V1E162T-ts-EYFP) to preferentially drive expression of the depolarizing opsin C1V1 in excitatory neurons (Yizhar et al., 2011) in a restricted portion (200-300\u00a0\u00b5m diameter) of dorsal V4 of two macaque monkeys (Figure 1C). Despite some heterogeneity in orientation tuning width at each injection site, overall there was similar tuning among neurons within a site (Figure 2\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic of an artificial dura (AD) chamber.\u00a0A portion of the native dura mater (red) is resected and replaced with a silicone based optically clear artificial dura (AD). The optical clarity of the AD allows precisely targeted injections of viral constructs and subsequent optical stimulation and electrophysiological recordings. (B) An AD chamber is shown over dorsal V4 in the right hemisphere of Monkey A. sts\u00a0=\u00a0superior temporal sulcus, lu\u00a0=\u00a0lunate sulcus, io\u00a0=\u00a0inferior occipital sulcus. Area V4 lies on the pre-lunate gyrus between the superior temporal and lunate sulci. Scale bar\u00a0=\u00a05 mm; M\u00a0=\u00a0medial, A\u00a0=\u00a0anterior (C) EYFP expression at the first injection site (lenti-CaMKII\u03b1-C1V1-ts-EYFP) after 4 weeks.\n\nWe trained two monkeys to perform an attention-demanding orientation-change detection task (Figure 2A). The monkeys were spatially cued to attend to one of two spatial locations. In the \u2018attend in\u2019 condition, the monkeys were instructed to covertly attend to a spatial location within the receptive fields of neurons at the viral injection site, while maintaining fixation at a central fixation point. In the \u2018attend-away\u2019 condition attention was directed to a location of equal eccentricity across the vertical meridian. On each trial, a sequence of oriented Gabor stimuli simultaneously flashed on and off at both spatial locations (200 ms on, variable 200\u2013400 ms off). At an unpredictable time (minimum 1 s, maximum 5 s), one of the two stimuli (95% probability at cued location; 5% probability at uncued location, \u2018foil trials\u2019) briefly changed in orientation (200 ms) and the monkey was rewarded for making a saccade to the location of orientation change. If no change occurred within 5 s (\u2018catch trials\u2019, 13% of trials), the monkey was rewarded for holding fixation. We controlled task difficulty by varying the degree of orientation change and thereby obtained behavioral performance curves (psychometric functions) for each recording session (Figure 2B, Figure 2\u2014figure supplement 2A,B). Impaired performance (Figure 2\u2014figure supplement 2A, left panel, square symbol) and slower reaction times (Figure 2\u2014figure supplement 2A, right panel, square symbol) were observed for the foil trials, indicating that the monkey was indeed using the spatial cue in performing the task.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig2-v3.jpg)\n\n**Figure 2.:** (A) Attention task: While the monkey maintained fixation, two oriented Gabor stimuli (schematized as oriented bars) flashed on and off simultaneously at two spatial locations: one at the RF of the opsin injection site, the other at a location of equal eccentricity across the vertical meridian.\u00a0The monkey was cued to covertly attend to one of the two locations. At an unpredictable time, one of the two stimuli changed in orientation. The monkey was rewarded for making a saccade to the location of orientation change at either location (95% probability of change at cued location; 5% probability at un-cued location [foil trials]). If no change occurred (catch trials), the monkey was rewarded for maintaining fixation. On a random subset of trials, the opsin site was optically stimulated using a low-frequency (4-5 Hz) sinusoidally modulated laser light ($\\lambda=532nm$). (B) Psychometric functions for an example behavioral session showing performance (hit rate) as a function of task difficulty (size of orientation change) for the baseline (no optical stimulation) condition in gray and low-frequency optical stimulation condition in blue. Top, monkey was instructed to attend to the site of optical stimulation; Bottom, monkey was instructed to attend to the contralateral hemifield. Error bars are std. dev. obtained by a jackknife procedure and corrected for the number of jackknives (20). The data has been fitted with a smooth logistic function. (C) The perceptual discrimination modulation index (PDMI; change in psychometric function threshold due to optical stimulation) in the low-frequency optical stimulation condition when the monkey was attending in to the site of optical stimulation across all behavioral sessions. The solid line represents the mean of the distribution. The PDMI distribution is significantly different from zero. (D\u2013E) No significant change in PDMI either when the monkey was attending away from the site of optical stimulation (D) or due to high-frequency optical stimulation (E).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Orientation tuning plots of single units and multi-unit activity at the different cortical injection sites (two in monkey A, one in monkey C) were fitted with ellipses (least-squares fit). The fitted ellipses are overlaid to illustrate the overlap in tuning at each injection site. The ellipses are color-coded such that more saturated colors correspond to units with sharper orientation tuning, as estimated from the aspect ratio of the fitted ellipse. The dotted red lines represent the average peak tuning at each site. The gray sectors represent the range of orientation changes that the monkeys had to detect with respect to baseline orientation (black line within each sector) across different behavioral sessions.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Left panel: example behavioral session showing performance (hit rate) as a function of task difficulty (size of orientation change) for the baseline condition (no optical stimulation). Square symbol: foil-trial performance. Star symbol: catch-trial performance. Error bars are std. dev. obtained by a jackknife procedure and corrected for the number of jackknives (20). The data has been fitted with a smooth logistic function. Right panel: reaction time as a function of task difficulty for the same session. The data has been fitted with a linear regression line. Performance is degraded and reaction times are slower for the foil trials, indicating that the animal was indeed deploying attention to the spatially cued location. (B) Two example sessions showing a behavioral impairment due to low-frequency (4-5Hz) optical stimulation when the monkey was attending in to the site of optical stimulation. Same format as in Figure 2B, top panel. (C) Example behavioral session showing no change in performance due to high-frequency (20Hz) optical stimulation. (D) Performance at the smallest target orientation change and discrimination thresholds for cardinal (0\u00b0, 90\u00b0) and non-cardinal non-target orientations. Mean +/- s.e.m. (E) False alarm rates for baseline, low-frequency stimulation and high-frequency stimulation conditions ($n=42$\u00a0sessions for low-frequency; $n=15$\u00a0sessions for high-frequency).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Change in psychometric function slope due to low-frequency optical stimulation when the monkey was attending in to the site of optical stimulation.\u00a0The solid line represents the mean of the distribution, which is significantly different from zero. (B) Change in psychometric function threshold and slope due to low-frequency optical stimulation when the monkey was attending in to the site of optical stimulation. Each point represents one behavioral session. Changes are expressed as a difference between stimulation and baseline conditions (normalized by baseline). The color code represents whether the changes is threshold and slope were significant in each behavioral session: red\u00a0=\u00a0both threshold and slope changes were significant; green\u00a0=\u00a0only threshold change was significant; blue\u00a0=\u00a0only slope change was significant; black\u00a0=\u00a0neither were significant.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Stimulation at a non-opsin site does not perturb behavior.\u00a0(B) Stimulation with optical fiber outside the brain (with the opto-physiology chamber closed) does not perturb behavior.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig2-figsupp5-v3.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Response of two neurons to presentations of a visual stimulus and simultaneous optical stimulation. The visual stimulus was a 20% contrast Gabor stimulus presented for 200ms. The optical stimulation consisted of a concurrent light pulse of various irradiance values (x-axis). The first unit exhibits increase in firing rate with increasing intensity of optical stimulation. The second unit exhibits decrease in firing rate with increasing intensity of optical stimulation, due to indirect network effects. Schematics at the bottom illustrate possible network scenarios. E=excitatory neuron (magenta E = opsin expressing; green E = non-opsin expressing). I=inhibitory neuron. The horizontal line represents baseline firing-rate. Mean +/- s.e.m. in all plots.\n\nTo test if low-frequency correlations impair discrimination we optically stimulated neurons at the opsin injection site with 4-5Hz sinusoidally modulated low-power laser stimulation, on a randomly chosen subset of trials (\u2018low-frequency stimulation\u2019 condition). Our goal was to induce correlations without significantly altering the mean firing rates by using low-power stimulation. Significant changes in mean firing rate could have unknown effects such as masking of the stimulus evoked response. Equating firing rates also avoids any indirect effects of mean firing rate changes on spike-count correlations (Cohen and Kohn, 2011). We find that low-frequency optical stimulation modulates the timing of the neural response (Figure 4D) but does not alter the overall magnitude of the population response (Figure 4A, B, C). We replicate previous findings that attention reduces low-frequency spike-count correlations in the baseline (no optical stimulation) condition (Mitchell et al., 2009) (Figure 3A, left panel; gray versus white bars, $p=0.02$, t-test). As predicted, low-frequency optical stimulation increases low-frequency correlations (Figure 3A, left panel; blue versus gray bar, $p=0.045$, t-test). The induced correlations were at a level comparable in strength to that observed when attention was directed away from the RF location in the baseline condition (Figure 3A, left panel; blue versus white bar). Optogenetic activation is accompanied by a period of reduced activity following stimulation. By careful titration of laser intensity (amplitude of sinusoidal modulation) we were able to alter the timing of spiking without altering mean firing rate. This is shown in Figure 4: we see a robust increase in firing rate due to attention in both the low-frequency stimulation and baseline conditions (Figure 4A, B), but there is no significant rate increase due to optical stimulation either during the pre-stimulus blank period (Figure 4C, left panel, $p=0.49$, t-test; Figure 4\u2014figure supplement 1, top-left panel) or during the stimulus presentation period (Figure 4C, right panel, $p>0.1$, t-test; Figure 4\u2014figure supplement 1, bottom-left panel). Rather, unit activity shows phase locking to optical stimulation (Figure 4D,E; pre-stimulus period). The distributions of spiking activity with respect to the phase of the optical stimulation show significant deviation from what would be expected from a null distribution (Figure 4D, example units,\u00a0$p\u226a0.01$; Figure 4E, population, $p<0.01$, Rayleigh test). The null distributions were derived from a rate-matched Poisson process. We see a similar phase locking due to optical stimulation during the stimulus presentation period (Figure 4F, $p<0.01$, Rayleigh test), although the peak of the phase-lock distribution for the stimulus presentation period occurs earlier (around 120\u00b0) compared to that for the pre-stimulus period (around 210\u00b0). This would be expected, as the neurons are depolarized by the visual stimulus and hence more easily pushed to spiking threshold by optogenetic depolarization, as compared to when no stimulus is present. Thus, the physiology data shows that we successfully induced correlated activity among neurons at the opsin site without affecting the response rates.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig3-v3.jpg)\n\n**Figure 3.:** (A) Consistent with earlier reports (Mitchell et al., 2009), attention reduces baseline spike-count correlations at low frequencies (200ms counting window,\u00a0$p=0.02$; left panel, white versus gray bar) but not at high frequencies (50ms window; right panel, white versus gray bar). Low-frequency optical stimulation increases low-frequency correlations ($p=0.045$; left panel, gray versus blue bar) but not high-frequency correlations ($p>0.1$; right panel, gray versus blue bar). (B) High-frequency optical stimulation increases high-frequency correlations ($p<0.05$). $n=79$\u00a0pairs for baseline and low-frequency stimulation, $n=27$\u00a0pairs for high-frequency stimulation, collapsed across attention conditions. Mean +/- s.e.m. in all plots.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig4-v3.jpg)\n\n**Figure 4.:** (A) Peri-stimulus time histograms (PSTH) of two example units for the different experimental conditions.\u00a0Both units show a robust firing rate modulation due to attention (solid versus dashed lines) but no rate increase due to low-frequency optical stimulation (blue versus gray lines). Horizontal bars represent stimulus duration. (B) Population data showing the same rate increase due to attention, but no significant increase due to optical stimulation ($n=94$). Same convention as in (A). (C) Distribution of rate modulation indices for the low-frequency stimulation attend-in condition compared to the baseline attend-in condition for a 200ms pre-stimulus period (left panel) and 200ms stimulus presentation period (60-260ms after stimulus onset; right panel). The arrowheads depict the median of the distributions. Neither distribution is significantly different from zero ($p>0.1$). (D) Phase plots for two example units showing the distribution of spiking activity with respect to the phase of the optical stimulation, during the pre-stimulus period. In gray is the null distribution obtained from a rate-matched Poisson process. Both units show significant deviations from the null distribution ($p\u226a0.01$\u00a0for both, Rayleigh test), indicative of phase locking. (E) Population phase-locking plot illustrating the bias in spiking activity to the downswing of optical stimulation during the pre-stimulus period ($n=68$). Same convention as in D). The distribution of spiking phase is significantly different from null ($p<0.01$, Rayleigh test). (F) Same as in (E), but for the stimulus presentation period ($n=74$). The distribution of spiking phase is significantly different from null ($p<0.01$, Rayleigh test).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Comparison of spike rates between the optical stimulation conditions (low-frequency: left panels; high-frequency: right panels) and the baseline condition for a 200 ms pre-stimulus period (top panels) and 200 ms stimulus presentation period (60\u2013260 ms after stimulus onset; bottom panels). Each dot represents a unit in the population of recorded units.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Phase plots for an example unit showing the distribution of spiking activity with respect to the phase of the low-frequency (5Hz, left) and high-frequency (20Hz, right) optical stimulation.\u00a0In gray is the null distribution obtained from a rate-matched Poisson process. The unit shows significant deviations from the null distribution, indicative of phase locking to both stimulations ($p\u226a0.01$\u00a0for both stimulation conditions, Rayleigh test). (B) Population phase-locking plot illustrating the bias in spiking activity to the high-frequency optical stimulation ($n=25$). Same convention as in (A).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Phase plots showing the distribution of target stimulus onset times with respect to the phase of the low-frequency (5 Hz, left) and high-frequency (20 Hz, right) optical stimulation.\u00a0Mean\u00a0\u00b1\u00a0s.e.m. (B) Normalized performance (pooled across all behavioral sessions) as a function of target stimulus phase. The target stimulus onset times with respect to the phase of the low-frequency stimulation is binned into four phase bins (legend). The panels show two different bin arrangements.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Orientation tuning curves for the neuronal population with and without optical stimulation (left panel, low-frequency stimulation condition, $n=68$\u00a0units; right panel, high-frequency stimulation condition, $n=25$\u00a0units). The spike rates were normalized to peak response across stimulation conditions (optical stimulation and baseline no-stimulation conditions). The population tuning curves were plotted after aligning the peak response of each neuron to zero and binning the data into orientation bins. The x-axis shows the edges of the orientation bins. Mean +/- s.e.m.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig4-figsupp5-v3.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) Responses evoked by the first four non-target stimuli, for trials in which attention was cued to the stimuli appearing at the opsin site.\u00a0Responses were averaged and normalized for each neuron to the maximum response across all stimulus positions. Normalized responses were then averaged across 38 neurons recorded in 15 sessions. (B) The corresponding average firing rates over the 200 ms stimulus-evoked period indicated by the box in A (60\u2013260 ms post stimulus onset).\n\nBehaviorally, we find that low-frequency stimulation impairs the monkey\u2019s ability to detect fine orientation changes, and does so only at the opsin location, as indicated by impairment in the attend-in condition (Figure 2B, upper panel; Figure 2\u2014figure supplement 2B), not in the attend-away condition (Figure 2B, lower panel), in which the monkey discriminated orientation at the contralateral location. To quantify this behavioral deficit, we estimated the threshold of the monkeys\u2019 psychometric functions and calculated the change in threshold due to optical stimulation as a modulation index (perceptual discrimination modulation index, PDMI; see Materials\u00a0and\u00a0methods). We find a significant increase in PDMI due to low-frequency stimulation in the attend-in condition ($p=0.02$, t-test; Figure 2C), indicating impaired detection of fine orientation changes. Unexpectedly, we also found a significant increase in slope ($p=0.007$, t-test; Figure 2\u2014figure supplement 5A), suggesting that the shift from non-detection to detection occurs over a narrower range of orientations in the laser stimulation condition. In a large fraction of individual behavioral sessions (Figure 2\u2014figure supplement 5B), both the changes in threshold and slope were significant (20/42 sessions). 11/42 sessions had significant threshold change only, while 5/42 sessions had significant slope change only.\n\nThe impairment due to optical stimulation is location specific: there was no significant change in PDMI on trials when the monkey was cued to detect the target at the unstimulated location (attend-away condition, Figure 2D). Importantly, the impairment is also frequency specific. When we stimulate the neurons with 20Hz sinusoidally modulated low-power laser stimulation (\u2018high-frequency stimulation\u2019 condition), we observed no significant change in PDMI (Figure 2E), despite a significant increase in high-frequency spike-count correlations (Figure 3B) and phase locking comparable to the low-frequency stimulation condition (Figure 4\u2014figure supplement 2). As in the low-frequency stimulation condition, we find no significant changes in mean firing rates with the high-frequency stimulation condition (Figure 4\u2014figure supplement 1, right panels). The stimuli in each sequence were presented with irregular timing to ensure that any impairment did not stem from stimuli appearing at a particular phase of the laser stimulation, such as the phase at which neural sensitivity was at its nadir. To verify that such phase alignment did not nonetheless occur by chance, we measured the phase of target stimulus onset for both low- and high-frequency stimulation and found no phase preference (Figure 4\u2014figure supplement 3A). Nor was behavioral performance phase dependent (Figure 4\u2014figure supplement 3B). A two-way ANOVA of normalized performance with factors 'laser-phase' (two different phase bin arrangements are shown in Figure 4\u2014figure supplement 3B) and 'delta-orientation' (the trial-by-trial difference between target and non-target orientation) revealed no significant main effect of laser phase ($F_{laser-phase}=1.53,p=0.2$, left bin arrangement in Figure 4\u2014figure supplement 3B;\u00a0$F_{laser-phase}=0.73,p=0.53$, right bin arrangement in Figure 4\u2014figure supplement 3B), a significant main effect of orientation and no significant interaction between the factors. A second potential concern is that the laser might impair orientation discrimination by distorting or flattening orientation tuning curves. We find that orientation tuning curves were not significantly altered by the laser at either frequency (Figure 4\u2014figure supplement 4), at least in the range of orientations used in the experiment. A two-way ANOVA of normalized firing rates with factors 'laser-condition' (low-frequency laser, no laser) and 'orientation' revealed no significant main effect of laser condition ($F_{laser-condition}=0.8,p=0.37$), a significant main effect of orientation and no significant interaction between the two factors. Similarly, we found no significant main effect of the high-frequency laser condition ($F_{laser-condition}=0.05,p=0.82$), a significant main effect of orientation and no significant interaction between the two factors. A third potential concern is that the rhythmic laser stimulation might cause a sort of frequency-dependent adaptation that would cause neurons to be less sensitive to visual stimuli presented at a similar frequency. If so, the low-frequency (4-5Hz) laser stimulation could reduce the responses evoked by 200ms visual stimuli, impairing the monkey\u2019s ability to discriminate the stimuli, while the high-frequency laser stimulation might not cause this effect, explaining the observed impairment. To test this, we measured the firing rates evoked by the first four non-target stimulus flashes, on no-laser, low-frequency laser and high-frequency laser trials, in the 'attend in' condition (Figure 4\u2014figure supplement 5). Though the first stimulus in the sequence evoked a stronger response than the subsequent stimuli (reflecting a form of visual stimulus-driven adaptation), we find no evidence that the addition of the laser at either frequency caused a change in mean firing rate. A two-way ANOVA of normalized firing rate with factors 'flash-position' (1,2,3 or 4) and 'laser condition' (low-frequency laser, high-frequency laser, no laser) revealed a significant main effect of flash position ($F_{flash-position}=3.33,p=0.02$), no significant main effect of laser condition ($F_{laser-condition}=0.65,p=0.52$) and no significant interaction between the two factors. For the small number of sessions ($n=15$) over which we could do this analysis, the PDMI trends toward significance for the low-frequency condition ($p=0.07$), but is highly non-significant for the high-frequency condition ($p=0.7$). Additionally, we did not find significant changes in false-alarm rates with either low- or high-frequency stimulation ($p>0.1$, t-test; Figure 2\u2014figure supplement 2E). This was true for false alarms made during catch trials as well as on non-catch trials. Thus, we find no evidence that laser stimulation caused our subjects to mis-perceive a non-target as a target.\n\nV4 has patchy organization for orientation tuning, so simultaneously recorded neurons tended to prefer similar orientations (see Figure 2\u2014figure supplement 1). Under these conditions, where signal correlations are positive, positive noise correlations should reduce discriminability (Averbeck et al., 2006) by increasing the overlap between neural responses evoked by discriminanda. In the present experiment, where the task was to discriminate target from non-target, this would predict that in sessions where we observed laser-induced perceptual impairment, we should observe laser-induced decreases in discriminability at the level of pairs or populations of neurons, especially on miss trials, when the monkey was unable to discriminate target from non-target. For each recording session, we calculated a neural measure of discriminability between non-target and target stimuli across simultaneously recorded neurons (neural discriminability modulation index, NDMI; Figure 5; see Materials\u00a0and\u00a0methods, (Cohen and Maunsell, 2010)). We then examined whether laser-induced increases in perceptual threshold were correlated with laser-induced reductions in neural discriminability on trials in which the target appeared at the opsin location (the 'attend in' condition). Figure 5B shows NDMI for each experimental session (calculated from miss trials where the animal failed to detect a target) against the corresponding PDMI. We examined this in two ways: by measuring the correlation in a N-dimensional space where N is the number of neurons recorded in a given session (left panel) or by measuring the average NDMI across neural pairs (right panel). As predicted, there is a strong and significant negative correlation in both analyses (Figure 5B;\u00a0$\u03c1=-0.29p=0.05$, NDMI from all simultaneous neurons, left panel;\u00a0$\u03c1=-0.42p=0.01$, average NDMI across all simultaneous pairs, right panel; robust correlation). In both analyses, the sessions in which low-frequency laser-induced correlations caused the strongest perceptual suppression all showed negative NDMIs. In other words, laser-induced reductions in discriminability at the neural level corresponded to increased perceptual thresholds. There was no significant correlation between NDMI and changes in the slope of the psychometric function. NDMI calculated from hit trials had no correlation with threshold or slope changes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig5-v3.jpg)\n\n**Figure 5.:** (A) Schematic of neural discriminability analysis.\u00a0The responses of a hypothetical set of 3 neurons to target (green) and non-target (magenta) stimuli are depicted as point clouds. Each dot represents a stimulus presentation. The discriminability (D) between the two response categories is defined as the Mahalanobis distance between the centroid of the target responses and the non-target point cloud. (B) Neural Discriminability Modulation Index (NDMI) due to optical stimulation is plotted against the corresponding PDMI (behavioral threshold change) for each experimental session. NDMI is calculated either from multi-dimensional clouds from all simultaneously recorded neurons (left panel; n\u00a0=\u00a042 sessions) or as the average of two-dimensional clouds from all pairs of simultaneously recorded neurons (right panel; n\u00a0=\u00a035 sessions). NDMI is negatively correlated with PDMI. Since both NDMI and PDMI are dependent measures, the data were fitted with a line whose slope was obtained from a Model II regression.\n\nTo confirm whether it is possible to induce coherent activity in a neuronal ensemble due to sub-threshold rhythmic stimulation, we examined the consequences of such stimulation on a conductance-based model of excitatory and inhibitory neurons (Figure 6A; see Materials\u00a0and\u00a0methods). We calculated the strength of coherent activity in the network (spike-spike coherence, SSC) both with and without sub-threshold stimulation (Figure 6B,C). We quantified the change in coherence due to stimulation as a modulation index (SSC MI; Figure 6D). We find that it is indeed possible to induce coherent activity in the network at a desired frequency (Figure 6D, Figure 6\u2014figure supplement 1D) and that this induction is robust to a wide range of network (Figure 6\u2014figure supplement 1C, Figure 6\u2014figure supplement 2A) and stimulation parameters (Figure 6\u2014figure supplement 2B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig6-v3.jpg)\n\n**Figure 6.:** (A) Schematic of a local conductance-based E-I network with mutually coupled excitatory (E) and inhibitory (I) units. A fraction (50%) of the E units are sensitive to 'optical' stimulation.\u00a0$W_{ee}$, self-excitation among E units;$W_{ii}$, self-inhibition among I units;$W_{ie}$, excitation provided by E to I;\u00a0$W_{ei}$, inhibition provided by I to E. (B) Simulation of a network of 800 E and 200 I units ($W_{ee}=16,W_{ii}=-1,W_{ie}=4,W_{ei}=-18$). The raster plot shows the activity of all units in the model (blue, I; green, E without opsin; magenta, E with opsin) to a step input ($I_{e},I_{i}$) and 4Hz sinusoidal optical stimulation ($I_{opto}$). (C) Population spiking rate averaged across 1000 simulations of the scenario in (B) with and without optical stimulation. (blue, I; orange, all E; green, E without opsin; magenta, E with opsin. solid lines, with optical stimulation; dashed lines, without optical stimulation) (D) Spike- spike coherence (SSC) among E units was calculated for the two conditions with and without optical stimulation and the change in SSC across the two conditions was calculated as a modulation index (SSC MI). SSC MI exhibits a peak at 4Hz due to optical stimulation.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A)-(B) same as Figure 6A-B.\u00a0(C) Spike-spike coherence modulation index (SSC MI; see Figure 6D) as a function of varying the self-coupling parameters $W_{ee}$ and\u00a0$W_{ii}$, keeping the other two parameters fixed ($W_{ie}=4,W_{ei}=-18$). SSC MI exhibits a peak at the 4Hz optical stimulation frequency irrespective of the self-coupling parameters. The dotted lines represent the null SSC MI obtained by shuffling trial identities. (D) The peak SSC MI shifts with increasing optical stimulation frequency ($f_{opto}$, network parameters same as in Figure 6), indicating that the peak is not due to any intrinsic resonant activity in the network. Dotted lines same as in (C).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35123/elife-35123-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Spike-spike coherence modulation index (SSC MI; see\u00a0Figure 6D) as a function of varying the cross-coupling parameters $W_{ie}$ and\u00a0$W_{ei}$, keeping the other two parameters fixed ($W_{ee}=16,W_{ii}=-1$).\u00a0(B) SSC MI as a function of the mean and peak-to-peak variation of the 4Hz sinusoidal optical stimulation ($I_{opto}$). Network parameters same as in Figure 6.\n\nThe location specificity of the impairment also suggests that the impairment is not due to a phosphene effect (Jazayeri et al., 2012). If attention were drawn away from the unstimulated location by a phosphene we would expect impaired performance in the attend-away condition. We also verified that the impairment was not due to a thermal effect by stimulating a location in the chamber a few millimeters from the opsin site (Figure 2\u2014figure supplement 4A) and not due to visual distractions caused by the laser light by stimulating outside the brain (Figure 2\u2014figure supplement 4B). In both cases, we did not observe any changes in behavior.\n\nOne of the two animals used in this study was euthanized to verify that, as we have previously found in macaque V1 (Nassi et al., 2015), lenti/CAMKII leads to selective expression in pyramidal neurons. The dura mater adhered to V4 bilaterally and we were unable to perform histology. The second animal (Monkey A) is currently in use in another study. Thus, we do not have a measure of lenti/CAMKII selectivity in macaque V4. However, it is reasonable to assume that the opsin was strongly biased toward pyramidal neurons. The viral constructs and injection protocol used in the present study were identical to those used previously in V1 (Nassi et al., 2015). In that study, lenti/CAMKII expressing C1V1/EYFP led to expression that was highly selective for excitatory neurons (Figure\u00a01B of Nassi et al., 2015): of 119 neurons imaged in five different fields of view, only 2 (1.7%) were double labeled for both EYFP and parvalbumin/calretinin/calbindin, indicating that expression was heavily biased toward excitatory neurons. CaMKII has also been used in other macaque brain areas including perirhinal cortex (Tamura et al., 2017), where it also led to opsin expression primarily in excitatory neurons. It is possible that lenti/CAMKII leads to less selective expression in V4 pyramidal neurons, but whatever the degree of selectivity we were able to activate neuronal responses in a phase-dependent manner with low intensity laser stimulation. as needed to test the effect of correlated variability on perceptual discrimination in the present study.\n\nOur results establish the first causal link between correlated variability and perception. The optogenetic stimulation protocol in our study, using sinusoidal modulation of laser irradiance, induces the kind of correlations in a local population of the cortex that might not be physiologically realistic. It nevertheless establishes the causal relevance of low-frequency correlated variability in perception and supports the hypothesis that attention-dependent reductions in correlated variability enhance perception. Recently, studies have theorized that only certain correlations \u2013 those that are indistinguishable from stimulus-induced correlations \u2013 are information limiting (Moreno-Bote et al., 2014). We speculate that the correlations induced in our study included such information-limiting correlations, resulting in the observed impairment. The timescale of these low-frequency correlations is consistent with inter-saccadic intervals (200\u2013300 ms), which may be a relevant timeframe for gathering visual information (Yarbus et al., 1967). Decreases in correlated variability at this timescale could therefore be critical for perception. Our study paves the way for investigating the laminar and cell-class specific components of the cortical circuit that determine this critical component of perception.\n\n## Materials and methods\n\n### Surgical procedures\n\nSurgical procedures have been described in detail previously (Nandy et al., 2017; Nassi et al., 2015; Ruiz et al., 2013). In brief, an MRI compatible low-profile titanium chamber was placed over the pre-lunate gyrus, on the basis of preoperative MRI imaging in two rhesus macaques (right hemisphere in Monkey A, left hemisphere in Monkey C). The native dura mater was then removed and a silicone based optically clear artificial dura (AD) was inserted, resulting in an optical window over dorsal V4 (Figure 1A,B). All procedures were approved by the Institutional Animal Care and Use Committee and conformed to NIH guidelines.\n\n### Viral injections\n\nViral injection procedures have been described in detail previously (Nassi et al., 2015). In brief, we injected a VSVg-pseudotyped lentivirus carrying the C1V1-EYFP gene behind the 1.3kb CaMKII\u03b1 promoter (lenti-CaMKIIa-C1V1E162T-ts-EYFP; titer = $3\\times10^{10}$ TU/ml) at 2 cortical sites in monkey A and 1 cortical site in monkey C while they were anesthetized and secured in a stereotactic frame. The viral constructs were chosen to preferentially drive expression of the depolarizing opsin C1V1 in excitatory neurons local to the injection site (Han et al., 2009). We injected approximately 0.5\u03bcl of virus at each depth in 200\u03bcm increments across the full 2mm thickness of cortex. All injections were targeted to para-foveal regions of V4 with eccentricities between 5 and 8 degrees of visual angle. Expression of the fluorescently tagged opsin was confirmed using epifluorescence goggles (BLS Ltd., Budapest, Hungary) after about 4-6 weeks of viral injection (Figure 1C).\n\n### Opto-Electrophysiology\n\nAt the beginning of each recording session, a plastic insert, with an opening for targeting electrodes and for optical stimulation, was lowered into the chamber and secured. This served to stabilize the site against cardiac and respiratory pulsations. The opening was centered at the site of viral injection. A single tungsten microelectrode (FHC Inc) was mounted on an adjustable X-Y stage attached to the recording chamber and advanced into the injection site using a micromanipulator (Narishige Inc) until a spike (single neuron or multi-unit) could be reliably isolated from background voltage fluctuations. Site targeting was done under microscopic guidance (Zeiss Inc) using the microvasculature as reference. A single optical fiber (600 \u03bcm multimode fiber, 0.37NA, Thorlabs Inc) was mounted on the same X-Y stage and positioned over the injection site perpendicular to the calvarium. The microelectrode was positioned at an angle of 20 degrees with respect to the optical fiber (see schematic in Figure 1A).\n\nWe used a 532 nm diode-pumped solid-state (DPSS) laser (OEM Laser Systems Inc) as the light source for optical stimulation. The laser was placed on an optical breadboard in-line with a Uniblitz mechanical shutter (Vincent Associates), electro-optical modulator (\u2018EOM\u2019, ConOptics Inc) and an optical fiber collimator/coupler (Thorlabs, Inc) attached to the optical fiber. A beam-splitter between the EOM and collimator directed approximately 1% of the light toward a high-speed photo-detector (Thorlabs, Inc). The EOM allowed us to control the intensity of laser light entering the fiber and was controlled using custom-written Labview software and a National Instruments digital acquisition board. Before each experiment we calibrated the output of the high-speed photodetector to the full range of intensities (irradiance units) measured at the fiber tip using an integrating sphere photodiode power sensor and a digital power meter (Thorlabs, Inc). This enabled real-time, calibrated irradiance measurements during all experiments.\n\nNeuronal signals were recorded extracellularly, filtered, and stored using the Multichannel Acquisition Processor system (Plexon Inc). Neuronal signals were classified as either multi-unit clusters or isolated single units using Plexon Offline Sorter software. Single units were identified based on two criteria: (a) if they formed an identifiable cluster, separate from noise and other units, when projected into the principal components of waveforms recorded on that electrode and (b) if the inter-spike interval (ISI) distribution had a well defined refractory period.\n\nData was collected over 42 sessions (24 sessions in Monkey A, 18 in Monkey C), yielding a total of 94 units. Frequently, multiple units could be identified while recording from the single tungsten electrodes. Data was collected over an additional three sessions for control analyses (Figure 2\u2014figure supplement 4).\n\n### Task and stimuli\n\nStimuli were presented on a computer monitor placed 57 cm from the eye. Eye position was continuously monitored with an infrared eye tracking system (ISCAN ETL-200). Trials were aborted if eye position deviated more that 1\u00b0 (degree of visual angle, \u2018dva\u2019) from fixation. Experimental control was handled by NIMH Cortex software (http://www.cortex.salk.edu/).\n\n#### Receptive Field (RF) Mapping\n\nAt the beginning of each recording session, neuronal RFs were mapped using subspace reverse correlation (Ringach et al., 1997) in which Gabor (eight orientations, 80% luminance contrast, spatial frequency 1.2 cycles/degree, Gaussian half-width 2\u00b0) or ring stimuli (80% luminance contrast) appeared at 60 Hz while monkeys maintained fixation. Each stimulus appeared at a random location selected from an 11 \u00d7 11 grid with 1\u00b0 spacing in the appropriate visual quadrant. All RFs were in the lower visual quadrant (lower-left in Monkey A, lower-right in Monkey C) and with eccentricities between 5 and 8 dva.\n\n#### Irradiance response curves\n\nAfter estimating the RF of a single-unit or multi-unit cluster, we assessed its sensitivity to optical stimulation. While the monkey maintained fixation, we measured the neuronal response to visual (achromatic Gabor stimulus, spatial frequency 1.2 cycles/degree, 20% luminance contrast) and optical stimulation. The visual stimulus was flashed at the RF for 200 ms with a simultaneous step laser pulse chosen from one of several irradiance values (typically 0, 10, 30, 50 and 70 mW/mm2) (Figure 2\u2014figure supplement 5).\n\n#### Attention task\n\nIn the main experiment, monkeys had to perform an attention-demanding orientation change-detection task (Figure 2A). While the monkey maintained fixation, two achromatic Gabor stimuli (spatial frequency 1.2 cycles/degree, 6 contrasts randomly chosen from an uniform distribution of luminance contrasts,\u00a0$c=[10,\u00a018,\u00a026,\u00a034,\u00a042,\u00a050%]$) were flashed on for 200ms and off for a variable period chosen from a uniform distribution between 200-400ms. One of the Gabors was flashed in the center of the RFs, the other at a location of equal eccentricity across the vertical meridian. At the beginning of a block of trials, the monkey was spatially cued (\u2018instruction trials\u2019) to covertly attend to one of these two spatial locations. During these instruction trials, the stimuli were only flashed at the spatially cued location. At an unpredictable time (minimum 1s, maximum 5s, mean 3s), one of the two stimuli changed in orientation. The time of orientation change was chosen by sampling from an exponential distribution (thus leading to a flat hazard function of wait times till orientation change). If the sampled change time exceeded 5s, the trial was treated as a catch trial (see below), in which the change did not actually occur during the trial and the monkey was rewarded for maintaining fixation. If the orientation change did occur, the monkey was rewarded for making a saccade to the location of orientation change. However, the monkey was rewarded for only those saccades where the saccade onset time was within a window of 100-400ms after the onset of the orientation change. The location of orientation change was chosen with 95% probability at the cued location and with 5% probability at the uncued location (\u2018foil trials\u2019). We controlled task difficulty by varying the degree of orientation change ($\u0394_{ori}$), which was randomly chosen from one of 8 orientations in the range 1-15\u00b0. The orientation change in the foil trials was fixed at 4\u00b0. These foil trials allowed us to assess the extent to which the monkey was using the spatial cue, with the expectation that there would be an impairment in performance and slower reaction times (Figure 2\u2014figure supplement 2A) compared to the case in which the change occurred at the cued location. If no change occurred before 5s, the monkey was rewarded for maintaining fixation (\u2018catch trials\u2019, 13% of trials). We will refer to all stimuli at the baseline orientation as \u2018non-targets\u2019 and the stimulus flash with the orientation change as the \u2018target\u2019. If the monkey made a saccade to a non-target stimulus at any time, it was treated as a false alarm and the monkey was not rewarded.\n\nOn a random subset of trials (50% of trials in experimental sessions with low-frequency stimulation only; 33% of trials in experimental sessions with both low- and high-frequency stimulation conditions), neurons at the injection site were stimulated with 4\u20135 Hz sinusoidally modulated low-power laser stimulation (\u2018low-frequency stimulation\u2019 condition). The sinusoidal modulation had excursions from a minimum irradiance close to 0 mW/mm2 to a maximum irradiance, chosen such that the equivalent root-mean-squared intensity elicited a firing rate either 10% above (Figure 2\u2014figure supplement 5, left example unit) or 10% below (Figure 2\u2014figure supplement 5, right example unit) the firing rate in the zero-irradiance condition. The optical stimulation lasted the entire duration of the trial. On a subset of experimental sessions (n\u00a0=\u00a015), neurons at the injection site were also stimulated with 20 Hz sinusoidally modulated low-power laser stimulation (\u2018high-frequency stimulation\u2019 condition; 33% of trials).\n\n### Data analysis\n\n#### Behavioral Analysis\n\nFor each orientation change condition\u00a0$\u0394_{ori}$, we calculated the hit rate as the ratio of the number of trials in which the monkey correctly identified the target with a saccade over the number of trials in which the target was presented. The hit rate as a function of\u00a0$\u0394_{ori}$, yields a behavioral psychometric function (Figure 2B, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2). Psychometric functions were fitted with a smooth logistic function (Palamedes MATLAB toolbox). Error bars were obtained by a jackknife procedure (20 jackknives, 5% of trials left out for each jackknife). Performance for the foil trials were calculated similarly as the hit rate for trials in which the orientation change occurred at the un-cued location (Figure 2\u2014figure supplement 2A, left panel, square symbol). Performance for the catch trials was calculated as the fraction of trials in which the monkey correctly held fixation for trials in which there was no orientation change (Figure 2\u2014figure supplement 2A, left panel, star symbol). Psychometric functions were obtained separately for the baseline (no laser stimulation) and the optical stimulation conditions.\n\nPsychophysical studies have found that human observers are better able to discriminate stimulus orientations near the cardinal than oblique orientations (Girshick et al., 2011; Heeley and Timney, 1988; Appelle, 1972; Orban et al., 1984; Campbell et al., 1966). Electrophysiological and imaging studies in humans, monkeys, cats and ferrets have found that cardinal orientations are overrepresented in V1 (De Valois et al., 1982; Furmanski and Engel, 2000; Li et al., 2003; Wang et al., 2003; Chapman and Bonhoeffer, 1998). Consistent with this, we find that monkeys performed the task better during sessions in which they were required to discriminate orientation changes from cardinal (0\u00b0, 90\u00b0) non-target orientations, as reflected in elevated performance in detecting the smallest orientation change ($p=0.05$, t-test) and elevated threshold ($p=0.002$, t-test) for cardinal compared to non-cardinal orientations (Figure 2\u2014figure supplement 2D). Threshold is the stimulus condition at which performance was mid-way between the lower and upper asymptotes of the fitted psychometric function.\n\nWe characterized the change in behavioral performance due to optical stimulation as a modulation index (PDMI, perceptual discrimination modulation index):\n\n$$\nPDMI=threshold_{opto}-threshold_{baseline}/threshold_{baseline}\n$$\n\nIn addition, we assessed any changes in psychometric function slope (steepness of the curve at threshold) due to optical stimulation as the change over the baseline (no laser) condition normalized by the slope at baseline (Figure 2\u2014figure supplement 3A). Significant changes in threshold and slope for each individual behavioral session (Figure 2\u2014figure supplement 3B) were calculated by comparing the distributions of threshold and slope values estimated from the jackknife procedure between the optical stimulation and baseline conditions (t-test, $\\alpha=0.05$, corrected for the number of jackknifes).\n\n#### Peri-stimulus time-histograms\n\nFor this and subsequent analyses of neuronal data, we restricted our analyses to non-target flashes from correct trials (hit trials in which the monkey correctly detected a target or correct catch trials). Neuronal responses were binned using a sliding window of width 30 ms that was shifted by 10 ms increments to obtain the time-varying firing rates, also known as the peri-stimulus time-histograms (PSTH), of the recorded units (Figure 4A). Population PSTH plots (Figure 4B) were obtained after normalizing the responses of each neuron to the peak across the four experimental conditions (two attention conditions [attend-in, attend-away] x two stimulation conditions [no stimulation, laser stimulation]).\n\n#### Spike-phase distributions\n\nWe calculated the phase of each spike with respect to the sinusoidal laser stimulation during a 200 ms blank period before a non-target stimulus flash. We only considered those inter-stimulus periods where the inter-stimulus interval was greater than 500 ms (in other words, the interval between onset of the stimulus and the offset of the previous stimulus was greater than 300 ms), so as to minimize artifacts due to stimulus offset. Polar plots in Figure 4C show the distributions of spiking phases. To see if these distributions were significantly different from chance, we calculated a null distribution by generating spike times from a rate-matched Poisson process (gray polar plots in Figure 4C). To obtain reliable estimates for spike-phase distributions, we restricted our analysis to units with a minimum firing rate of 5 spikes/s (n\u00a0=\u00a068; firing rate averaged over the 200 ms stimulus-evoked period between 60\u2013260 ms after non-target onset).\n\n#### Spike-count correlations (rSC)\n\nWe calculated the Pearson correlation of spike counts across trials for every pair of simultaneously recorded units. In order to remove the influence of confounding variables like stimulus strength, spike counts were z-scored using the mean and standard deviation for repetitions of each stimulus type. Ordered pairs of z-scored spike counts were collapsed across contrast conditions and the Pearson correlation was calculated from these ordered pairs. This was done separately for the different attention and optical stimulation conditions and also for different sized counting windows (50ms for high-frequency correlations, 200ms for low-frequency correlations) during the stimulus-evoked period between 60-260ms after non-target onset (Figure 3). Multiple non-overlapping windows were used for those counting windows that were smaller than the 200ms stimulus evoked period.\n\n#### Neural Discrimination Modulation Index (NDMI)\n\nFor each neuron in our population, we extracted spike counts to repeated presentations of non-target and target stimuli (60-260ms after stimulus onset) for the baseline and low-frequency stimulation conditions when the animals were attending in to the RF. Response rates for each neuron were normalized by the maximum response across conditions after first subtracting the spike rates during a 200ms pre-stimulus period (pre-stimulus rates calculated separately for baseline and low-frequency stimulation conditions). We thus obtained two response clouds for each experimental condition: one for the non-target stimuli and the other for the target stimuli (schematic in Figure 5A). We calculated the neural discriminability between the two response clouds as the Mahalanobis distance ($D$) between the centroid of the target responses and the non-target response cloud. The modulation of this discriminability measure due to optical stimulation was quantified as an index (Neural Discriminability Modulation Index, NDMI):\n\n$$\nNDMI=\\frac{D_{opto}-D_{baseline}}{D_{opto}+D_{baseline}}\n$$\n\nNDMI for each experimental session was calculated in two ways:\u00a0either from multi-dimensional clouds from all simultaneously recorded neurons or as the average of two-dimensional clouds across all pairs of simultaneously recorded neurons.\n\n### Computational model\n\nA similar model has been described previously (Nandy et al., 2017). We set up a conductance-based model of $N_{E}$ excitatory and $N_{I}$ inhibitory neurons with 80% connection probability (both within and across the two populations) and with the following synaptic weights (Figure 6):\n\n$$\nE\u00a0to\u00a0E:\u00a0w_{EE}=\\frac{W_{EE}}{N_{E}};\u00a0I\u00a0to\u00a0I:\u00a0w_{II}=\\frac{W_{II}}{N_{I}};\u00a0E\u00a0to\u00a0I:\u00a0w_{IE}=\\frac{W_{IE}}{N_{E}};\u00a0I\u00a0to\u00a0E:\u00a0w_{EI}=\\frac{W_{EI}}{N_{I}}\n$$\n\nWe simulated models of $N_{E}=800$ excitatory and $N_{I}=200$ inhibitory spiking units. The spiking units were modeled as Izhikevich neurons (Izhikevich, 2003) with the following dynamics:\n\n$$\n\\frac{dv}{dt}=0.04v^{2}+5v+140-u+I\n$$\n\n\n\n$$\n\\frac{du}{dt}=abv-u\n$$\n\n\n\n$$\nifv=30mV,thenv\u2190candu\u2190u+d\n$$\n\n$v$\u00a0is the membrane potential of the neuron and $u$\u00a0is a membrane recovery variable. $I$\u00a0is the current input to the neuron (synaptic and injected DC currents). The parameters\u00a0$a$,\u00a0$b$, $c$ and $d$\u00a0determine intrinsic firing patterns and were chosen as follows:\n\n$$\nExcitatoryunits:a=0.02,\u00a0b=0.2,\u00a0c=\u221265,\u00a0d=8\n$$\n\n\n\n$$\nInhibitoryunits:a=0.1,\u00a0b=0.2,\u00a0c=\u221265,\u00a0d=2\n$$\n\nPresynaptic spikes from excitatory units generated fast (AMPA) and slow (NMDA) synaptic currents, while presynaptic spikes from inhibitory units generated fast GABA currents:\n\n$$\nI_{syn}=\\sum_{i}g_{AMPA}tvt-V_{AMPA}+\\sum_{j}g_{NMDA}tvt-V_{NMDA}+\\sum_{k}g_{GABA}tvt-V_{GABA}\n$$\n\nwhere $V_{AMPA}=0,V_{NMDA}=0,V_{GABA}=-70$ are the respective reversal potentials (mV). The synaptic time courses $g(t)$\u00a0were modeled as a difference of exponentials:\n\n$gt=\\frac{1}{\\tau_{d}-\\tau_{r}}exp-\\frac{t-\\tau_{l}}{\\tau_{d}}-exp-\\frac{t-\\tau_{l}}{\\tau_{r}}$ where $\\tau_{l},\\tau_{r}and\\tau_{d}$ are the latency, rise and decay time constants with the following parameter values (ms) (Brunel and Wang, 2003):\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>\u03c4l</th>\n      <th>\u03c4r</th>\n      <th>\u03c4d</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>AMPA</td>\n      <td>1</td>\n      <td>0.5</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>NMDA</td>\n      <td>1</td>\n      <td>2</td>\n      <td>80</td>\n    </tr>\n    <tr>\n      <td>GABA</td>\n      <td>1</td>\n      <td>0.5</td>\n      <td>5</td>\n    </tr>\n  </tbody>\n</table>\n\nThe NMDA to AMPA ratio was chosen as 0.45 (Myme et al., 2003).\u00a0The network was stimulated by a DC step current ($I_{E}=2.8,I_{I}=2.3$) of duration 1.5s (Figure 6B). Synaptic noise was simulated by drawing from a normal distribution ($I_{syn-noise}\u223cN(\\mu=0,\\sigma=3)$). To simulate the laser stimulation in the main experiment, we chose a random subset (50%) of excitatory units to which we injected a 4Hz sinusoidally modulated current ($I_{opto};mean current=0.5;peak to trough range=0.7$). Such a current by itself did not produce spiking activity in the network.\n\nWe computed the spike-spike coherence between all pairs of excitatory units in the model (irrespective of whether the units were subjected to the additional sinusoidally modulated current) using multi-taper methods (Mitra and Pesaran, 1999), over a 400ms window for both simulation conditions: with and without\u00a0$I_{opto}$. Spike trains were tapered with a single Slepian taper, giving an effective smoothing of 2.5Hz for the 400ms window (NW=1, K=1). To control for differences in firing rate between the two conditions, we adopted a rate matching procedure similar to (Mitchell et al., 2009). Induction of coherent activity in the network due to sub-threshold sinusoidal stimulation was calculated as a modulation index of coherence across the two conditions:\u00a0$SSC MI=(SSC_{with}-SSC_{without})/(SSC_{with}+SSC_{without})$. In order to obtain a baseline for the coherence expected solely due to trends in firing time-locked to network stimulation, we also computed coherence in which trial identities were randomly shuffled (Figure 6\u2014figure supplement 1C-D).\n",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "910a0cf0-f123-4d4d-9560-e4c9b41da435",
+      "submission_id": "9f8451cd-8a23-4503-b4db-ab62763fff76",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tatiana Pasternak, University of Rochester United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35123.024](https://doi.org/10.7554/eLife.35123.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Optogenetically induced low-frequency correlations impair perception\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper examined whether optogenetically induced increases in spike count correlations in V4 neurons affect the ability of macaque monkeys to detect small orientation changes of Gabor gratings. The authors report that the optogenetic stimulation in the low but not high frequency range affected performance and this effect was limited to the attended location, concluding that the attention induced reduction of low frequency spike count correlations results in improved performance.\n\nThe reviewers commented on the ambitious nature of the work and its potential importance, but raised a number of serious reservations that must be addressed for the paper to be further considered for publication in eLife. These are summarized below.\n\nEssential revisions:\n\n1) Anatomical evidence confirming that the neurons were actually transfected should be provided. This includes the information about the affected cell type, their layer locations and variability of the expression.\n\n2) Variable performance on the orientation change task makes it difficult to interpret the effects of optogenetic stimulation. This problem should be addressed.\n\n3) The presence of on- and off- transients in visual stimulation occurring at a frequency of 3-5Hz creates a potential problem in the study aimed at detecting correlations occurring at similarly low frequency. It is important to rule out that optogenetic stimulation may be affecting the detection of the onsets and offsets of visual stimuli. Reviewer 1 suggests a control condition that would eliminate such transients to see whether optogenetic manipulation is still selective for low frequencies.\n\nA related question (reviewer 2) concerns the phase of optical stimulation relative to stimulus presentation whether the presence of the behavioral deficits depended on the phase of optical stimulation. Also, provide information about the phase of optical stimulation used to compute noise correlations\n\n4) Data presentation limited to averages and distributions does not allow the evaluation of significant effects in each experiment. The data suggest that in some cases optogenetic stimulation resulted in elevated thresholds and slopes and in some cases in opposite effects. This is a problem that needs to be addressed and discussed.\n\n5) Please provide a direct comparison between firing rates with and without optical stimulation, showing effects on individual neurons. Rate modulation index does not allow the reader to assess such effects directly.\n\n6) Was orientation tuning affected by optical stimulation? If they were, the disruption of orientation representation in V4 by stimulation could potentially explain the behavioral effects. This should be addressed.\n\n7) Please explain cued and uncued locations vs. \"catch trials\" and their randomization during the experiment (reviewer 1).\n\nReviewer #1:\n\nThe goal of this paper is to causally test the idea that low-frequency oscillations amongst cortical neurons are a major limiting factor in visual perception and are actively controlled for visual attention. The strategy is a bold one \u2013 use optogenetics to introduce low-frequency correlations into the activity of cortical neurons in extrastriate area V4 and document the effects on both visual perception and neuronal activity. If the idea is correct, then the introduction of low-frequency correlations should impair performance. But there are many reasons that performance might be impaired when you alter visual cortical activity. So it is also necessary to show that visual activity has not simply been disrupted by the optogenetic manipulation, and that it is specifically the temporal restructuring of the activity that is crucial. To this end, the paper shows that overall firing rates are not changed, and that the effects are found only with low-frequency and not high-frequency stimulation, among other controls.\n\nThis is an ambitious set of experiments to attempt to pack into a short paper, especially given all of the potential pitfalls and controls that need to be considered. In the end, I was not fully convinced that the results as presented support the conclusions. There are several basic issues that need to be addressed to make the case more convincing. I also think that a more detailed unpacking of the data is need in order to understand the results.\n\nThe most obvious missing piece is histology. Figure 1C shows a surface view of the cortex illustrating the expression of EYFP. This is not sufficient to answer the questions relevant for interpreting the behavioral and neuronal data. Can you confirm that neurons were transfected? Which types of neurons, and in which layers? How variable was the expression across layers? Can you rule out retrograde transfection from axon terminals? Without histology to verify what was stimulated, I find it difficult to interpret the results.\n\nPerformance in the orientation change task seems extremely variable, to the point that it raises concerns about how to interpret changes in task performance. In some cases, the thresholds for detecting orientation changes seem to be in the expected range (a few degrees) \u2013 for example, Figure 2B and Figure 2\u2014figure supplement 2A. But in other cases, the thresholds are unusually high, 10 degrees or more (Figure 2\u2014figure supplement 2C). There are also unexpected elevations in% correct for signal values that should be below threshold \u2013 for example, 40% correct for the lowest orientation change value in Figure 2\u2014figure supplement 2B. How could the monkey get 40% correct for an undetectable signal? In order to interpret the optogenetic manipulation, I would need to be reassured about the reliability of task performance in the absence of optogenetic manipulation.\n\nThere is a very basic aspect of the experimental design that seems like a problem, but perhaps the authors have a very well-reasoned explanation for this approach. The hypothesis is that low-frequency (4-5 Hz) correlations play a central role in cortical processing, and this guides the choice of sinusoidal optogenetic stimulation. But the stimulus itself is flashed on for 200 ms and then left off for 200-400 ms, which means that there were visual transients (on or off) also occurring at a frequency of 3-5 Hz. If the goal is to test the importance of intrinsic low-frequency correlations, why use a stimulus that includes transients in this same frequency range? It seems that an alternative explanation for the perturbations in performance might be that the optogenetic stimulation masks the ability to detect the onsets and offsets of the visual stimulus. Can this be ruled out? If the stimulus were simply left on for an extended period of time (seconds), and then changed orientation, would the optogenetic manipulation still be effective and still selective for low frequencies?\n\nThe data were compressed for presentation in ways that made it difficult to understand what additional significant effects might be present in each experiment. Figure 2C is a good example of this. The histogram illustrates that, overall, both the threshold and slope increased in trials with low-frequency optical stimulation, by showing that the population-level ratio of stimulation relative to baseline is significantly greater than 1. First, please clarify the stats (here and elsewhere). This is reported as a t-test in the fourth paragraph of the Results and Discussion. Which type \u2013 paired sample? Is the distribution normal, or should a non-parametric test be used? Second, please report the data in a way that allows us to appreciate what happened on individual experiments. Given the scale on the x-axis, it looks like optical stimulation may have caused significant increases in threshold or slope in some experiments and significant decreases in others. If so, it would be misleading to base the conclusion on the average effect. This point is especially relevant for the attend away condition (Figure 2D), in which the average threshold is not different, but the spread in the histogram suggests that many individual experiments were significant but roughly equally split between increases and decreases.\n\nI had similar concerns about the neuronal data in Figure 4. In addition to plotting the rate modulation index, please directly compare the firing rates with and without optical stimulation. Was the firing rate significantly changed for individual neurons? The effects of attend-in and attend-away should be similarly documented across the population of neurons. Did optical stimulation significantly change this modulation for individual neurons? The concern here is that there may be no difference on average, but a more or less balanced combination of significant increases and significant decreases.\n\nBeyond changes in firing rate, it is also possible that the optical stimulation disrupted the tuning properties of the neurons. Do you have data to confirm that the orientation tuning and receptive field properties of the neurons was not changed during optical stimulation? If the claim is specifically about the role of low-frequency correlations, it is important to rule out the possibility that behavioral effects were due simply to disrupting the representation of orientation information in V4.\n\nReviewer #2:\n\nNandy and colleagues investigate whether optogenetically induced increases in spike count correlations in V4 neurons affect the ability of macaque monkeys to detect small orientation changes of Gabor gratings. The find that this is indeed the case, but only if the optogenetic stimulation is in the low frequency range (4-5Hz, sinusoidal modulation), not when it occurs at higher frequencies (tested were 20 Hz). This only occurred when the neurons stimulated represented the attended (instructed) location, not when the represented the non-instructed location. The authors conclude that the attention induced reduction of low frequency spike count correlations indeed convey behavioural benefits.\n\nThis is an interesting study, but I have a few questions:\n\nI was unable to determine whether the phase of stimulation was fixed relative to stimulus presentation. Probably not as stimulus presentation varied within a trial. This means that orientation changes would occur at variable phases of optogenetic stimulation. If so, it will be important to know whether behavioural deficits occurred equally across different phases, or whether they were co-modulated.\n\nThe histograms show and the noise correlations also seem to be calculated over different optogenetic phases (if my assumption from above is correct). It will be important to determine whether there were changes in either when calculated for different optogenetic phases. If so, these need to be documented in detail.\n\nThe authors state that no effect was seen in the attend away condition. Was that even true on catch trials (i.e. attend away, but change occurs at RF)? If so, it needs to be explained why.\n\nWhy was the higher frequency in the beta range, not in the gamma range, where some people might expect to see behavioural benefits to occur?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Optogenetically induced low-frequency correlations impair perception\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers acknowledged your efforts to address the comment raised in their initial review. However, a number of issues remain and those undermine their confidence in the main conclusions of the paper. These must be addressed for the manuscript to be considered for publication in eLife. The points listed below are based not only on the reviews attached below, but also on the discussion among the reviewers that followed.\n\nEssential revisions:\n\n1) Lack of histology\n\nThe reviewers felt that the lack of histology seriously complicates the interpretation of the results but are willing to accept a possibility that the expression patterns of the viral vector in V4 are the same as those shown for V1 in the previous publication from the lab. However, you should add appropriate disclaimers about the assumptions about transfected neurons (based on the published V1 data), and discuss how your interpretation would be affected if these assumptions turn out to be incorrect.\n\n2) Variability in orientation thresholds\n\nThe reviewers felt that the explanation attributing variability to the difference in thresholds for oblique and cardinal orientation, needs stronger documentation. To that end, rather than providing 8 example psychometric functions, the relationship between base orientation and performance should be documented by plotting thresholds for each of the sessions as a function of orientation.\n\n3) Potential confound of visual and optogenetic stimulation delivered at similar low frequencies\n\nReviewers did not feel that the phase analysis included in the revision adequately addressed the problem. Reviewer 2 commented that while the overall effect may not be phase-specific, it may be specific \"to cases where the optogenetic frequency is similar to the stimulus onset/offset frequency\". Please provide additional information, to address this.\n\nPlease address the absence of label for the x-axis in Figure 4\u2014figure supplement 3B and different sign of effects on threshold and sensitivity. One of the reviewers suggests sorting the experiments into subsets based on how the psychometric curves change (for example, based on where the experiments fall in Figure 2\u2014figure supplement 5).\n\n4) Changes in thresholds and slopes\n\nThe summary plot (Figure 2\u2014figure supplement 5) reveals not only increases in threshold (22/42 cases) but also decreases in threshold (~14 cases). Please address the apparently opposite effects produced by stimulation.\n\nIn addition, it appears that stimulation increased the slope more often than decrease it. Since the increase in slope is likely to be associated with an increase in sensitivity, the proposed role of decreased correlations in improving the separability of neuronal activity is puzzling. This effect appears inconsistent with the proposed interpretation of the changes in spike-count correlations with stimulation. The reviewers suggest that you link the measured changes in correlations with the observed changes in psychometric functions by using a decoding scheme similar to that used by Cohen and Maunsell, 2009. This approach would allow you to predict the changes in psychometric curves given the changes in spike-count correlations.\n\n5) Orientation tuning\n\nPlease provide additional information concerning the Figure 4\u2014figure supplement 4 scaling on the x-axis and pooling data across neurons. How were the neurons used for this analysis selected? (see comment from reviewer 1).\n\n6) Please provide documentation of false alarm rates from catch trials with and without optogenetic stimulation (see comment from reviewer 1).\n\n7) The phase locking of spikes to the phase of stimulation should also be shown during the stimulus, in addition in the absence of stimulation.\n\n8) The effect of optogenetic phase on behavior should be aligned with the preferential population activity, which seems to peak/trough at 240\u00b0 and 60\u00b0 respectively.\n\n9) Please clarify what statistical test was used to determine that the phase of optical stimulation did not affect behavior or orientation tuning\n\nReviewer #1:\n\nIn my comments below, for clarity I repeat the original comments in quotes, with my new comments inserted after each item.\n\nOverall, the authors have made efforts to address each major comment, but have been prevented from fully settling several of the points due to technical limitations. Some of these are substantial points that affect my confidence in the main conclusions.\n\n\"The most obvious missing piece is histology. Figure 1C shows a surface view of the cortex illustrating the expression of EYFP. This is not sufficient to answer the questions relevant for interpreting the behavioral and neuronal data. Can you confirm that neurons were transfected? Which types of neurons, and in which layers? How variable was the expression across layers? Can you rule out retrograde transfection from axon terminals? Without histology to verify what was stimulated, I find it difficult to interpret the results.\"\n\nThe authors do not have histology for the two monkeys used in the study but they show a figure from a previously published study using the same viral vector injected into cortical area V1.\n\nWill the expression patterns be the same in V4, the area targeted in this study? I don't know, and I don't know of any published work using this vector in macaque V4. Apparently, there is tissue from one of the monkeys (that was sacrificed) from this study; even if the tissue is damaged due to penetrations it should be possible to identify transfected cells, and the approximate size and layer distribution. It is not clear what steps were taken along these lines, or if that tissue was unfortunately discarded.\n\n\"Performance in the orientation change task seems extremely variable, to the point that it raises concerns about how to interpret changes in task performance. In some cases, the thresholds for detecting orientation changes seem to be in the expected range (a few degrees) \u2013 for example, Figure 2B and Figure 2\u2014figure supplement 2A. But in other cases, the thresholds are unusually high, 10 degrees or more (Figure 2\u2014figure supplement 2C). There are also unexpected elevations in% correct for signal values that should be below threshold \u2013 for example, 40% correct for the lowest orientation change value in Figure 2\u2014figure supplement 2B. How could the monkey get 40% correct for an undetectable signal? In order to interpret the optogenetic manipulation, I would need to be reassured about the reliability of task performance in the absence of optogenetic manipulation.\"\n\nThe authors explain that this is probably due to differences in detection performance \u2013 in particular, thresholds were lower for baseline orientations near the cardinal (i.e., horizontal and vertical) orientations. They show 8 sample psychometric curves that are consistent with this explanation.\n\nThis seems plausible, but the author should show it holds true for the other 34 sessions as well. If you simply plot threshold for each session as a function of the baseline orientation, this would show whether the variance was indeed systematically related to the baseline orientation.\n\n\"There is a very basic aspect of the experimental design that seems like a problem, but perhaps the authors have a very well-reasoned explanation for this approach. The hypothesis is that low-frequency (4-5 Hz) correlations play a central role in cortical processing, and this guides the choice of sinusoidal optogenetic stimulation. But the stimulus itself is flashed on for 200 ms and then left off for 200-400 ms, which means that there were visual transients (on or off) also occurring at a frequency of 3-5 Hz. If the goal is to test the importance of intrinsic low-frequency correlations, why use a stimulus that includes transients in this same frequency range? It seems that an alternative explanation for the perturbations in performance might be that the optogenetic stimulation masks the ability to detect the onsets and offsets of the visual stimulus. Can this be ruled out? If the stimulus were simply left on for an extended period of time (seconds), and then changed orientation, would the optogenetic manipulation still be effective and still selective for low frequencies?\"\n\nThe authors agree these are important potential confounds but for technical reasons, they are not able to do the control experiment in which the stimulus is simply left on, to test whether the optogenetic stimulus might be masking the visual onset and offsets that occur in the same frequency range.\n\nThe phase analysis is interesting, but does not address the same point exactly. I wouldn't necessarily expect the effect to be phase-specific, but I do suspect it might be specific to cases where the opto frequency is similar to the stimulus onset/offset frequency. This question remains open.\n\nSome comments about Figure 4\u2014figure supplement 3B: What is the x-axis and why is it unlabeled? There seem to be some interesting possible mixed effects at low delta orientations. If you pool across all sessions (with different sign of effects on threshold and sensitivity) perhaps some effects are getting averaged out. Have you tried sorting the experiments into subsets based on how the psychometric curves change (for example, based on where the experiments fall in Figure 2\u2014figure supplement 5)?\n\n\"The data were compressed for presentation in ways that made it difficult to understand what additional significant effects might be present in each experiment. Figure 2C is a good example of this. The histogram illustrates that, overall, both the threshold and slope increased in trials with low-frequency optical stimulation, by showing that the population-level ratio of stimulation relative to baseline is significantly greater than 1. First, please clarify the stats (here and elsewhere). This is reported as a t-test in the fourth paragraph of the Results and Discussion. Which type \u2013 paired sample? Is the distribution normal, or should a non-parametric test be used? Second, please report the data in a way that allows us to appreciate what happened on individual experiments. Given the scale on the x-axis, it looks like optical stimulation may have caused significant increases in threshold or slope in some experiments and significant decreases in others. If so, it would be misleading to base the conclusion on the average effect. This point is especially relevant for the attend away condition (Figure 2D), in which the average threshold is not different, but the spread in the histogram suggests that many individual experiments were significant but roughly equally split between increases and decreases.\"\n\nThe authors now provide a summary plot (Figure 2\u2014figure supplement 5) that summarizes the changes in threshold and slope. This is helpful. It shows that in addition to the main effect reported in the paper \u2013 the increase in threshold seen in 22/42 cases \u2013 there is also sometimes a significant decrease in threshold (~14 cases). Any ideas about why the effect flips sign in these cases?\n\nMore curiously, and harder to understand, the stimulation also tends to increase the slopes more often than it significantly decreases the slopes. An increase in slope would imply that the sensitivity of the monkey during the stimulation had increased. Given the proposed role of decreased correlations in improving the separability of neuronal activity, shouldn't the main effect have been a decrease in slope?\n\n\"I had similar concerns about the neuronal data in Figure 4. In addition to plotting the rate modulation index, please directly compare the firing rates with and without optical stimulation. Was the firing rate significantly changed for individual neurons? The effects of attend-in and attend-away should be similarly documented across the population of neurons. Did optical stimulation significantly change this modulation for individual neurons? The concern here is that there may be no difference on average, but a more or less balanced combination of significant increases and significant decreases.\"\n\nThe authors have added a Figure 4\u2014figure supplement 1 that compares the spike rates for all neurons with and without optogenetic stimulation, and report no significant change in firing rate due to stimulation. I find this set of figures very convincing.\n\n\"Beyond changes in firing rate, it is also possible that the optical stimulation disrupted the tuning properties of the neurons. Do you have data to confirm that the orientation tuning and receptive field properties of the neurons was not changed during optical stimulation? If the claim is specifically about the role of low-frequency correlations, it is important to rule out the possibility that behavioral effects were due simply to disrupting the representation of orientation information in V4.\"\n\nThe authors respond that they did not measure tuning curves. However, they do have data from the non-target orientation and some target orientations, which they report in Figure 4\u2014figure supplement 4. I find it difficult to evaluate this plot because I don't understand the scaling on the x-axis or how data were pooled across neurons. It is also not clear that data from all neurons should be included in this analysis, unless their activity was strongly modulated across the range of orientations used (i.e., the data indicate direction tuning over the domain tested). And then the data might be aligned on the x-axis so that 1 value corresponded to the \"best\" direction.\n\nThe issue of possible changes in neuronal tuning is critical for interpreting the results. Perhaps the authors can do more to address this.\n\n\"There was some ambiguity in the description of how the orientation change in the stimulus was managed. The paper describes a 95% probability at the cued location and 5% at the uncued location. But then there were also \"catch trials\" without any change. It's not clear how these add up. Were the 95% and 5% independent? What was the probability of a catch trial? Were these truly randomized, or were they presented in as a fixed fraction of the trials?\"\n\nThe authors now explain their definition of 'catch' trials.\n\nAre the FA rates on from catch trials documented somewhere in the paper? I did not see it except for Figure 2\u2014Figure supplement 2A, which curiously appears to show a false alarm rate on catch trials of about 50% Is this correct? How can the FA rate be that high when the hit rate drops well below that for small orientation changes? I would expect the FA rate to be the floor for the curve.\n\nAside from trying to understand the plots, the other reason for asking about FAs is to know whether the FAs also changed with optogenetic stimulation. This would be important for assessing possible changes in response criterion, which would also be important to nail down, since changes in criterion could also shift the psychometric curves\n\nReviewer #2:\n\nThe authors have addressed some of my previous points, but I have a few issues remaining:\n\nThey describe the phase locking of spikes to the phase of stimulation when no stimulus was present. However, it would be important to see this also for the stimulus period.\n\nThe authors use 4 bins to calculate the effect of optogenetic phase on behaviour, but these are not aligned with the preferential population activity alignment, which seems to peak/trough at 240\u00b0 and 60\u00b0 respectively. This needs to be done.\n\nIt is unclear what statistical test was used to determine whether behaviour was unaffected by the phase of optical stimulation?\n\nThe same is true for the effect on orientation tuning.\n\nIn general, statistical reporting should be checked and adequately improved.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Optogenetically induced low-frequency correlations impair perception\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe revised manuscript has addressed most of the reservations raised by the two reviewers. There remain only a few issues that need the authors attention. These are listed below.\n\nEssential revisions:\n\n1) Please substitute multiple t-tests with ANOVA to reveal potential interactions.\n\n2) Please address the point concerning correction analysis, raised by reviewer 2.\n\n3) Please include the figure from Essential Revisions #3 as a supplementary figure. Also include: a) the average firing rate traces for each of the 4 flashes, and b) confirm the behavioral effects for the low-frequency but not high-frequency stimulation.\n\nReviewer #2:\n\nThe authors have also performed the analysis relating to the NDMI and PDMI. They report a significant negative correlation, between the two. Looking at Figure 5 this seems to be driven by 5/42 experiments. They do not report what type of correlation was calculated (Pearson? Spearman? Robust correlation to control for outliers?). I think a robust correlation would be appropriate, while given the distribution of data I assume Pearson is inappropriate. They also present a line, which I assume is a slope of a linear regression? Given that NDMI and PDMI are dependent variables, slopes need to be calculated of x vs. y and y vs. x, and then the average slope needs to be taken.\n",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "62c6bf56-2a8e-4a38-b0c6-fec37cef4a94",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C1",
+      "claim": "Deployment of covert attention to a spatial location can cause large decreases in low-frequency correlated variability among neurons in macaque area V4 whose receptive-fields lie at the attended location.",
+      "claim_type": "EXPLICIT",
+      "source": "Deployment of covert attention to a spatial location can cause large decreases in low-frequency correlated variability among neurons in macaque area V4 whose receptive-fields lie at the attended location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "2de822d0-350b-4bb3-8ec0-d8470cc14911",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C2",
+      "claim": "The reduction in correlated variability accounts for a substantial fraction of the attention-mediated improvement in sensory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been estimated that this reduction accounts for a substantial fraction of the attention-mediated improvement in sensory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on estimates from prior theoretical work, as indicated by the phrase 'it has been estimated'.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "526a2264-0dd2-4de7-ac49-d838b3b43863",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C3",
+      "claim": "Low-frequency optical stimulation of neurons in V4 elevates correlations among pairs of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that low-frequency optical stimulation of neurons in V4 elevates correlations among pairs of neurons and impairs the animal's ability to make fine sensory discriminations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically in Figure 3A showing increased spike-count correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "936e2d16-94b9-4da9-bfb8-2dcd47ad27b6",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C4",
+      "claim": "Low-frequency optical stimulation of neurons in V4 impairs the animal's ability to make fine sensory discriminations.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that low-frequency optical stimulation of neurons in V4 elevates correlations among pairs of neurons and impairs the animal's ability to make fine sensory discriminations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data showing increased discrimination thresholds during low-frequency stimulation (Figure 2C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "487fd371-43db-48c7-a118-cac65c89a2bc",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C5",
+      "claim": "Stimulation at higher frequencies does not impair performance, despite comparable modulation of neuronal responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation at higher frequencies does not impair performance, despite comparable modulation of neuronal responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral and physiological data comparing high-frequency and low-frequency stimulation conditions (Figures 2E, 3B, 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "5ed6f763-6527-4247-8450-3a83702ec2a7",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C6",
+      "claim": "Neurons exhibit responses that are highly variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons exhibit responses that are highly variable (Shadlen and Newsome, 1998), with nearby neurons in the cortex exhibiting correlated variability in their spiking output (Cohen and Kohn, 2011; Smith and Kohn, 2008; Smith and Sommer, 2013; Zohary et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "01f88d79-ad45-435e-91b9-dd2ce3cd55ff",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C7",
+      "claim": "Nearby neurons in the cortex exhibit correlated variability in their spiking output.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons exhibit responses that are highly variable (Shadlen and Newsome, 1998), with nearby neurons in the cortex exhibiting correlated variability in their spiking output (Cohen and Kohn, 2011; Smith and Kohn, 2008; Smith and Sommer, 2013; Zohary et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "65f4b76b-c595-43b3-927f-b518cac12268",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C8",
+      "claim": "Even weak correlations substantially reduce the information coding capacity of a population.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been estimated on theoretical grounds that even weak correlations substantially reduce the information coding capacity of a population (Zohary et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on theoretical estimates from cited prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "e74ac38c-a40b-42bc-be37-fee7536e3345",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C9",
+      "claim": "Spatial attention can reduce correlated variability among neurons in macaque visual area V4.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial attention can reduce correlated variability (often referred to as noise correlations) among neurons in macaque visual area V4 (Cohen and Maunsell, 2009; Mitchell et al., 2009), an area that is strongly modulated by spatial attention (Reynolds and Chelazzi, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "8f816b65-a3e9-43ef-93d9-13a9bad09861",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C10",
+      "claim": "Area V4 is strongly modulated by spatial attention.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial attention can reduce correlated variability (often referred to as noise correlations) among neurons in macaque visual area V4 (Cohen and Maunsell, 2009; Mitchell et al., 2009), an area that is strongly modulated by spatial attention (Reynolds and Chelazzi, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "e66a08d3-8c22-4a6c-b1e1-6b57dfe7d44b",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C11",
+      "claim": "The reduction in correlated variability due to attention is restricted to low frequencies below 10 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitchell et al., 2009 found that this reduction is restricted to low frequencies below 10 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "3b97b54c-edc8-4e7d-ad47-2ff41a9cf799",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C12",
+      "claim": "The reduction in correlated variability accounts for about 80% of the perceptual benefit due to attention.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies have estimated, on theoretical grounds, that the reduction in correlated variability accounts for a large fraction (about 80%) of the perceptual benefit due to attention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on theoretical estimates from prior studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "7921fcbd-8567-4ae1-a84e-e7ad28a9ae6b",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C13",
+      "claim": "Estimates of the perceptual benefit from reduced correlations rely on specific assumptions about the relationship between noise and signal correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these estimates rely on specific assumptions about the relationship between noise and signal correlations, and thereby, on how population signals are read out in the brain (Abbott and Dayan, 1999; Averbeck et al., 2006; Moreno-Bote et al., 2014; Panzeri et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical work discussing assumptions in decoding models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "77c8c79d-9847-49e1-9f65-dc53a7c1171a",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C14",
+      "claim": "Correlated variability does not necessarily limit information when using heterogeneous tuning curves and optimal readout.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical studies using heterogeneous tuning curves and optimal readout have concluded that correlated variability does not necessarily limit information (Ecker et al., 2011; Shamir and Sompolinsky, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "7c9869a0-2313-4437-a570-0b60c47f33e4",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C15",
+      "claim": "A recent study found improved sensory discrimination when neurons in Area V4 were desynchronized.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the interpretation that attention-dependent reductions in correlated variability improve perception, a recent study of the effects of naturally occurring fluctuations in neural correlations found improved sensory discrimination when neurons in Area V4 were desynchronized (Beaman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "50971990-9dbd-4f66-a31c-182f9c6e4975",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C16",
+      "claim": "Correlations may be induced by fluctuations in attention.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other studies have posited that correlations themselves may be induced by fluctuations in attention (Goris et al., 2014), resulting in variation in response gain that is shared across neurons, and other experiments have shown that attention can, under some conditions, also increase correlated neural response variability (Ruff and Cohen, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "98d48ede-6a9d-465a-bba2-c9e977c42553",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C17",
+      "claim": "Attention can, under some conditions, increase correlated neural response variability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other studies have posited that correlations themselves may be induced by fluctuations in attention (Goris et al., 2014), resulting in variation in response gain that is shared across neurons, and other experiments have shown that attention can, under some conditions, also increase correlated neural response variability (Ruff and Cohen, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "bbe7044e-ad02-40b6-b693-8b162c9994ce",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C18",
+      "claim": "The causal role of correlated variability in perception has not been tested prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all of these studies are correlative in nature. The causal role of correlated variability in perception has not been tested and thus the proposal that low-frequency correlated variability is detrimental for perception has remained purely hypothetical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on a review of prior literature and the identification of a gap in causal evidence.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "e71290d2-febc-473e-8ab0-d24937afad4f",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C19",
+      "claim": "Attentional modulation of correlated variability is spatially selective.",
+      "claim_type": "EXPLICIT",
+      "source": "We exploited the fact that attentional modulation of correlated variability is both spatially- and frequency selective: attention-dependent reductions in correlation are restricted to low frequencies (<10 Hz (Mitchell et al., 2009)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "a9333689-ad56-4c7e-8e0d-5e5e6fe51943",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C20",
+      "claim": "Attentional modulation of correlated variability is frequency selective, with reductions restricted to low frequencies (<10 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "We exploited the fact that attentional modulation of correlated variability is both spatially- and frequency selective: attention-dependent reductions in correlation are restricted to low frequencies (<10 Hz (Mitchell et al., 2009)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "21a6ac91-48db-4b05-a3e8-e798da66b299",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C21",
+      "claim": "The correlations that impair perception may have an inherent time scale, with low- but not high-frequency correlations impairing perception.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that the correlations that impair perception may have an inherent time scale, with low- but not high-frequency correlations impairing perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on prior findings about frequency-selective attention effects.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "3eaf8522-77c8-4914-8e4c-744eaded3914",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C22",
+      "claim": "The artificial dura approach provides an optically clear window into the awake-behaving primate brain.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach provides an optically clear window into the awake-behaving primate brain and allows precise opto-electrophysiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the description of the method and citations to prior work using this approach.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "24c06850-7a6d-4fc1-9abc-f1740130a1ca",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C23",
+      "claim": "A lenti-viral construct was injected to preferentially drive expression of the depolarizing opsin C1V1 in excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We injected a lenti-viral construct (lenti-CaMKIIa-C1V1E162T-ts-EYFP) to preferentially drive expression of the depolarizing opsin C1V1 in excitatory neurons (Yizhar et al., 2011) in a restricted portion (200-300 \u00b5m diameter) of dorsal V4 of two macaque monkeys (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental methods and citation to prior work on the opsin.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "eb2090fa-7f46-4437-abdd-fe962ddee603",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C24",
+      "claim": "There was similar orientation tuning among neurons within each injection site.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite some heterogeneity in orientation tuning width at each injection site, overall there was similar tuning among neurons within a site (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "9d875901-0c34-47cc-a6f3-ba0ad1bdae56",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C25",
+      "claim": "Impaired performance and slower reaction times were observed for foil trials, indicating that the monkey was using the spatial cue.",
+      "claim_type": "EXPLICIT",
+      "source": "Impaired performance (Figure 2\u2014figure supplement 2A, left panel, square symbol) and slower reaction times (Figure 2\u2014figure supplement 2A, right panel, square symbol) were observed for the foil trials, indicating that the monkey was indeed using the spatial cue in performing the task.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "5471e854-d9ab-4c73-a47d-22efdcf656c4",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C26",
+      "claim": "Low-frequency optical stimulation modulates the timing of the neural response but does not alter the overall magnitude of the population response.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that low-frequency optical stimulation modulates the timing of the neural response (Figure 4D) but does not alter the overall magnitude of the population response (Figure 4A, B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by physiological data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "dc25bdad-f3cc-47bf-851a-b44851b21745",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C29",
+      "claim": "The induced correlations were at a level comparable in strength to that observed when attention was directed away from the RF location in the baseline condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The induced correlations were at a level comparable in strength to that observed when attention was directed away from the RF location in the baseline condition (Figure 3A, left panel; blue versus white bar).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "bce72045-cc3e-4d54-976a-d1db5dbf295e",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C32",
+      "claim": "Unit activity shows phase locking to optical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, unit activity shows phase locking to optical stimulation (Figure 4D,E; pre-stimulus period).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "71aaf3b9-0d62-47bf-b822-590a6ef2a3c8",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C35",
+      "claim": "The peak of the phase-lock distribution for the stimulus presentation period occurs earlier than for the pre-stimulus period because neurons are depolarized by the visual stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "This would be expected, as the neurons are depolarized by the visual stimulus and hence more easily pushed to spiking threshold by optogenetic depolarization, as compared to when no stimulus is present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known neurophysiology and the observed data.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "6699905e-4be9-4fd0-a23b-2de5a7192399",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C36",
+      "claim": "Low-frequency stimulation impairs the monkey's ability to detect fine orientation changes only at the opsin location.",
+      "claim_type": "EXPLICIT",
+      "source": "Behaviorally, we find that low-frequency stimulation impairs the monkey's ability to detect fine orientation changes, and does so only at the opsin location, as indicated by impairment in the attend-in condition (Figure 2B, upper panel; Figure 2\u2014figure supplement 2B), not in the attend-away condition (Figure 2B, lower panel), in which the monkey discriminated orientation at the contralateral location.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 2B and Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "2c116514-8606-40a6-8e07-15ad85bafe9b",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C39",
+      "claim": "In a large fraction of individual behavioral sessions, both changes in threshold and slope were significant.",
+      "claim_type": "EXPLICIT",
+      "source": "In a large fraction of individual behavioral sessions (Figure 2\u2014figure supplement 5B), both the changes in threshold and slope were significant (20/42 sessions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of individual session data shown in Figure 2\u2014figure supplement 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "b7250f2a-462f-4292-b429-a155f8e137e4",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C40",
+      "claim": "There was no significant change in PDMI on trials when the monkey was cued to detect the target at the unstimulated location.",
+      "claim_type": "EXPLICIT",
+      "source": "The impairment due to optical stimulation is location specific: there was no significant change in PDMI on trials when the monkey was cued to detect the target at the unstimulated location (attend-away condition, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "ee145d43-39a5-491f-8de6-f31fb2a927de",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C41",
+      "claim": "High-frequency stimulation produces no significant change in PDMI despite a significant increase in high-frequency spike-count correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the impairment is also frequency specific. When we stimulate the neurons with 20Hz sinusoidally modulated low-power laser stimulation ('high-frequency stimulation' condition), we observed no significant change in PDMI (Figure 2E), despite a significant increase in high-frequency spike-count correlations (Figure 3B) and phase locking comparable to the low-frequency stimulation condition (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral and physiological data shown in Figures 2E, 3B, and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "93688d1a-45d7-4fd9-a525-e6c87528e1ed",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C42",
+      "claim": "There is no significant change in mean firing rates with the high-frequency stimulation condition.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the low-frequency stimulation condition, we find no significant changes in mean firing rates with the high-frequency stimulation condition (Figure 4\u2014figure supplement 1, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "72f69655-f37b-43f5-ae44-3280185b5d5b",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C43",
+      "claim": "There is no phase preference for target stimulus onset with respect to laser stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify that such phase alignment did not nonetheless occur by chance, we measured the phase of target stimulus onset for both low- and high-frequency stimulation and found no phase preference (Figure 4\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "5539e408-b73c-473e-aa5d-a80b67512663",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C45",
+      "claim": "Orientation tuning curves were not significantly altered by the laser at either frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that orientation tuning curves were not significantly altered by the laser at either frequency (Figure 4\u2014figure supplement 4), at least in the range of orientations used in the experiment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "c16d613d-3d85-4653-b79d-ee8506d49818",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C48",
+      "claim": "There is no evidence that laser stimulation caused frequency-dependent adaptation that would reduce responses to visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we measured the firing rates evoked by the first four non-target stimulus flashes, on no-laser, low-frequency laser and high-frequency laser trials, in the 'attend in' condition (Figure 4\u2014figure supplement 5). Though the first stimulus in the sequence evoked a stronger response than the subsequent stimuli (reflecting a form of visual stimulus-driven adaptation), we find no evidence that the addition of the laser at either frequency caused a change in mean firing rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of data shown in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "ecd9f719-f8b5-41ac-90f8-09f504ba96a6",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C51",
+      "claim": "V4 has patchy organization for orientation tuning, so simultaneously recorded neurons tended to prefer similar orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "V4 has patchy organization for orientation tuning, so simultaneously recorded neurons tended to prefer similar orientations (see Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 1 and established knowledge about V4 organization.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "4371f25d-b47c-4cab-a364-af7c98976286",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C52",
+      "claim": "Where signal correlations are positive, positive noise correlations should reduce discriminability by increasing the overlap between neural responses evoked by discriminanda.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, where signal correlations are positive, positive noise correlations should reduce discriminability (Averbeck et al., 2006) by increasing the overlap between neural responses evoked by discriminanda.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on theoretical work cited and logical inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "21e03282-57c4-4ef7-b3e9-b9f1695839b7",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C54",
+      "claim": "Sessions in which low-frequency laser-induced correlations caused the strongest perceptual suppression all showed negative NDMIs.",
+      "claim_type": "EXPLICIT",
+      "source": "In both analyses, the sessions in which low-frequency laser-induced correlations caused the strongest perceptual suppression all showed negative NDMIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of the relationship between NDMI and PDMI shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "3e566821-607d-485e-a807-ad89ac769857",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C55",
+      "claim": "Laser-induced reductions in discriminability at the neural level corresponded to increased perceptual thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, laser-induced reductions in discriminability at the neural level corresponded to increased perceptual thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an interpretation of the correlation between NDMI and PDMI shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "99a3172b-848c-4fee-a24b-7bb1a8385003",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C56",
+      "claim": "There was no significant correlation between NDMI and changes in the slope of the psychometric function.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant correlation between NDMI and changes in the slope of the psychometric function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of the relationship between NDMI and slope changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "3a4f05e5-3285-499e-ae7f-06920631dd33",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C57",
+      "claim": "NDMI calculated from hit trials had no correlation with threshold or slope changes.",
+      "claim_type": "EXPLICIT",
+      "source": "NDMI calculated from hit trials had no correlation with threshold or slope changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of NDMI from hit trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "664ff2c2-a3ed-4abf-b970-4fd156d9f683",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C58",
+      "claim": "It is possible to induce coherent activity in a neuronal ensemble due to sub-threshold rhythmic stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm whether it is possible to induce coherent activity in a neuronal ensemble due to sub-threshold rhythmic stimulation, we examined the consequences of such stimulation on a conductance-based model of excitatory and inhibitory neurons (Figure 6A; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "e2625ea7-de68-479c-a985-16c6430b2f10",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C59",
+      "claim": "Sub-threshold stimulation can induce coherent activity in the network at a desired frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that it is indeed possible to induce coherent activity in the network at a desired frequency (Figure 6D, Figure 6\u2014figure supplement 1D) and that this induction is robust to a wide range of network (Figure 6\u2014figure supplement 1C, Figure 6\u2014figure supplement 2A) and stimulation parameters (Figure 6\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 6D and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "9a9d1986-2b69-4b13-bd75-a29afa6057e6",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C60",
+      "claim": "The location specificity of the impairment suggests that the impairment is not due to a phosphene effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The location specificity of the impairment also suggests that the impairment is not due to a phosphene effect (Jazayeri et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the spatial specificity of the behavioral effect and citation to prior work on phosphenes.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "d715ebb6-a6b5-47a0-a275-72895e41313f",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C61",
+      "claim": "If attention were drawn away from the unstimulated location by a phosphene, impaired performance would be expected in the attend-away condition.",
+      "claim_type": "EXPLICIT",
+      "source": "If attention were drawn away from the unstimulated location by a phosphene we would expect impaired performance in the attend-away condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about what would be expected if a phosphene were causing the effect.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "ca0ee79a-b43d-4f85-aec4-a24f0eec66bc",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C62",
+      "claim": "Stimulation at a non-opsin site does not cause changes in behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We also verified that the impairment was not due to a thermal effect by stimulating a location in the chamber a few millimeters from the opsin site (Figure 2\u2014figure supplement 4A) and not due to visual distractions caused by the laser light by stimulating outside the brain (Figure 2\u2014figure supplement 4B). In both cases, we did not observe any changes in behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control experiments shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "16f6b0c5-ffb0-4faa-ba35-77a7171cf20b",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C63",
+      "claim": "Stimulation outside the brain does not cause changes in behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We also verified that the impairment was not due to a thermal effect by stimulating a location in the chamber a few millimeters from the opsin site (Figure 2\u2014figure supplement 4A) and not due to visual distractions caused by the laser light by stimulating outside the brain (Figure 2\u2014figure supplement 4B). In both cases, we did not observe any changes in behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control experiments shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "bbb5f226-ac5c-45c2-b0ef-3cef383557a4",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C64",
+      "claim": "It is reasonable to assume that the opsin was strongly biased toward pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we do not have a measure of lenti/CAMKII selectivity in macaque V4. However, it is reasonable to assume that the opsin was strongly biased toward pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on prior work showing selectivity in V1 and other brain areas.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "5522e799-6d5e-4dc2-a9a4-27c487ee8b45",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C65",
+      "claim": "In a previous study in V1, lenti/CAMKII expressing C1V1/EYFP led to expression that was highly selective for excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In that study, lenti/CAMKII expressing C1V1/EYFP led to expression that was highly selective for excitatory neurons (Figure 1B of Nassi et al., 2015): of 119 neurons imaged in five different fields of view, only 2 (1.7%) were double labeled for both EYFP and parvalbumin/calretinin/calbindin, indicating that expression was heavily biased toward excitatory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "186c22bd-fdac-4dbd-ba2e-16932628b3d7",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C66",
+      "claim": "CaMKII has been used in other macaque brain areas including perirhinal cortex, where it led to opsin expression primarily in excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII has also been used in other macaque brain areas including perirhinal cortex (Tamura et al., 2017), where it also led to opsin expression primarily in excitatory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "5f1498df-c45c-4ba5-ad56-a43c7ec42730",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C67",
+      "claim": "The results establish the first causal link between correlated variability and perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results establish the first causal link between correlated variability and perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "526d55fc-ca5a-47ab-b78b-3615a96ddb7f",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C68",
+      "claim": "The optogenetic stimulation protocol induces correlations that might not be physiologically realistic.",
+      "claim_type": "EXPLICIT",
+      "source": "The optogenetic stimulation protocol in our study, using sinusoidal modulation of laser irradiance, induces the kind of correlations in a local population of the cortex that might not be physiologically realistic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation of the experimental approach.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "13593ea9-eb64-49e6-a7f2-2ee230cf7f8b",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C69",
+      "claim": "The study establishes the causal relevance of low-frequency correlated variability in perception.",
+      "claim_type": "EXPLICIT",
+      "source": "It nevertheless establishes the causal relevance of low-frequency correlated variability in perception and supports the hypothesis that attention-dependent reductions in correlated variability enhance perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "2602f701-430e-4ebf-96f2-fe181cda2cfe",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C70",
+      "claim": "The correlations induced in the study included information-limiting correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, studies have theorized that only certain correlations \u2013 those that are indistinguishable from stimulus-induced correlations \u2013 are information limiting (Moreno-Bote et al., 2014). We speculate that the correlations induced in our study included such information-limiting correlations, resulting in the observed impairment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on theoretical work and the observed results.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "25ad9498-b9ab-4c04-bb13-cb4553132ab5",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C71",
+      "claim": "The timescale of low-frequency correlations is consistent with inter-saccadic intervals (200\u2013300 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "The timescale of these low-frequency correlations is consistent with inter-saccadic intervals (200\u2013300 ms), which may be a relevant timeframe for gathering visual information (Yarbus et al., 1967).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the timescale of correlations to a known behavioral timescale, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "58f3850c-e0f5-40b5-82a0-82625fc013b1",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C72",
+      "claim": "Decreases in correlated variability at the inter-saccadic timescale could be critical for perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreases in correlated variability at this timescale could therefore be critical for perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the connection between correlation timescales and behavioral timescales.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "8ad80488-657b-4138-ac7b-bc03904ba97e",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C73",
+      "claim": "Human observers are better able to discriminate stimulus orientations near the cardinal than oblique orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "Psychophysical studies have found that human observers are better able to discriminate stimulus orientations near the cardinal than oblique orientations (Girshick et al., 2011; Heeley and Timney, 1988; Appelle, 1972; Orban et al., 1984; Campbell et al., 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior psychophysical research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "ab132ab6-d800-46b8-8911-1744fd134c85",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "claim_id": "C74",
+      "claim": "Cardinal orientations are overrepresented in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological and imaging studies in humans, monkeys, cats and ferrets have found that cardinal orientations are overrepresented in V1 (De Valois et al., 1982; Furmanski and Engel, 2000; Li et al., 2003; Wang et al., 2003; Chapman and Bonhoeffer, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior electrophysiological and imaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7a50d2ab-84ca-4c70-91b9-cf916992dca2",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Low-frequency (4-5 Hz) optogenetic stimulation of V4 neurons impairs orientation discrimination performance in a spatially-specific manner. The impairment is observed only when attention is directed to the stimulated location (attend-in condition), with significant increases in perceptual thresholds across 42 behavioral sessions and significant changes in both threshold and slope in 20/42 individual sessions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C36, C39, and C40 collectively demonstrate a robust and spatially-specific behavioral impairment. The data show significant increases in PDMI (p=0.02) in the attend-in condition but not in the attend-away condition, with control experiments ruling out thermal effects and visual distractions (C62, C63). The effect is replicated across multiple sessions with appropriate statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "611d7b0f-7a7f-48cf-b702-62fa4bc69e4b",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Low-frequency optogenetic stimulation increases low-frequency spike-count correlations among V4 neurons without significantly altering mean firing rates. The stimulation induces phase-locked neural activity and elevates correlations to levels comparable to those observed when attention is directed away from the receptive field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C26, C29, and C32 are well-supported by physiological data in Figures 3A and 4. The authors successfully demonstrate increased correlations (p=0.045) while maintaining stable firing rates (p=0.49 pre-stimulus, p>0.1 stimulus period), achieving their goal of manipulating correlation structure independently of mean rate. Phase-locking analysis provides mechanistic insight into how the manipulation works.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "1a6896af-a6d8-4f20-9093-44bd627b3ed3",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "High-frequency (20 Hz) optogenetic stimulation does not impair behavioral performance despite inducing high-frequency spike-count correlations and comparable phase-locking to low-frequency stimulation. Mean firing rates remain unchanged with high-frequency stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C41, and C42 establish the frequency-specificity of the behavioral effect, which is critical for the main conclusion. The data show no significant change in PDMI with high-frequency stimulation (Figure 2E) despite significant increases in high-frequency correlations (Figure 3B, p<0.05) and comparable phase-locking (Figure 4\u2014figure supplement 2). This dissociation strengthens the causal argument by ruling out non-specific effects of neural modulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "ba95c279-48ca-49e7-953f-d1ac8d06cb5a",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sessions with the strongest laser-induced perceptual impairment show corresponding reductions in neural discriminability (negative NDMI), with significant negative correlations between NDMI and PDMI (\u03c1=-0.29, p=0.05 for multi-dimensional analysis; \u03c1=-0.42, p=0.01 for pairwise analysis). This relationship is observed specifically on miss trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C52, C54, and C55 link the behavioral and neural effects through discriminability analysis. The negative correlation between NDMI and PDMI (Figure 5B) provides evidence that laser-induced correlations reduce neural discriminability in a manner that predicts behavioral impairment. The analysis appropriately focuses on miss trials and accounts for the positive signal correlations expected in V4's patchy organization. However, the correlation is modest and the lack of correlation with slope changes (C56) and hit trials (C57) suggests complexity in the relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "f69c8dd2-09e5-451f-b43f-7b78202615e4",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Computational modeling demonstrates that sub-threshold rhythmic stimulation can induce coherent activity in a conductance-based excitatory-inhibitory network at a desired frequency, and this induction is robust across a wide range of network and stimulation parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58 and C59 are supported by the modeling results in Figure 6 and supplementary figures. The model successfully demonstrates the plausibility of the experimental manipulation, showing that sub-threshold stimulation can induce frequency-specific coherence. The robustness analysis across parameter space (Figure 6\u2014figure supplements 1-2) strengthens this conclusion. However, the model is relatively simple and does not capture all aspects of cortical circuitry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "66788047-c5a5-4ce8-93e2-a49ee2354a55",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Control analyses rule out alternative explanations for the behavioral impairment: target stimulus onset shows no phase preference relative to laser stimulation, orientation tuning curves are not significantly altered by laser stimulation at either frequency, and there is no evidence of frequency-dependent adaptation that would reduce responses to visual stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C45, and C48 are supported by comprehensive control analyses shown in Figure 4\u2014figure supplements 3-5. These controls address important alternative explanations: phase-dependent effects, tuning curve distortion, and adaptation. The two-way ANOVAs show no significant main effects of laser condition on tuning (p=0.37 for low-freq, p=0.82 for high-freq) or adaptation (p=0.52). These negative results strengthen the main conclusion by ruling out confounds.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "85565a94-4d13-4ed0-af2a-083438dec9bc",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The spatial specificity of the behavioral impairment and control experiments rule out phosphene effects, thermal effects, and visual distractions from the laser light as explanations for the observed behavioral changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 are supported by the spatial specificity of the effect (no impairment in attend-away condition) and direct control experiments (Figure 2\u2014figure supplement 4). The logic is sound: if a phosphene drew attention away, the attend-away condition would show impairment, which it does not. Stimulation at non-opsin sites and outside the brain produced no behavioral changes, ruling out thermal and visual distraction artifacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "0bcb91d6-8fda-4a14-bf38-82f61281b553",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The artificial dura approach enables optogenetic manipulation in awake-behaving primates, with lenti-viral expression of C1V1 in excitatory neurons producing functionally similar orientation tuning among neurons within each injection site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 describe the methodological approach, which is supported by Figure 1 and prior publications. The artificial dura provides optical access, and Figure 2\u2014figure supplement 1 shows similar orientation tuning within sites. However, the lack of histological verification of cell-type specificity in V4 (acknowledged in C64) is a limitation, though the authors provide reasonable justification based on prior work in V1 (C65) and other areas (C66).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "e7a07d74-267d-446e-b4d7-250f197cf2f0",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While direct histological verification in V4 is unavailable, it is reasonable to assume strong bias toward pyramidal neurons based on prior work showing that lenti/CaMKII expressing C1V1/EYFP led to highly selective expression in excitatory neurons in macaque V1 (1.7% co-labeling with inhibitory markers) and perirhinal cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C66 acknowledge a significant limitation: lack of direct histological verification of cell-type specificity in the current study. While the inference based on prior work in V1 and perirhinal cortex is reasonable, the assumption of similar selectivity in V4 remains unverified. This uncertainty affects interpretation of the mechanism, though it does not invalidate the main behavioral and correlational findings. The authors appropriately acknowledge this limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "d98529b9-7bd7-4488-9481-d406cc058ef0",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Behavioral performance on foil trials (where orientation change occurred at the uncued location) was impaired with slower reaction times, indicating that monkeys were using the spatial cue to deploy attention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by data in Figure 2\u2014figure supplement 2A showing reduced performance and slower reaction times for foil trials. This control is essential for validating that the task engaged spatial attention as intended. The result is straightforward and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "35ed9ba4-8370-4947-8d16-375909022348",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study establishes the first causal link between correlated variability and perception, demonstrating the causal relevance of low-frequency correlated variability in perception and supporting the hypothesis that attention-dependent reductions in correlated variability enhance perception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C69 represent the main conclusion of the study. This is supported by the convergence of behavioral impairment (C3-C4), increased low-frequency correlations (C3), frequency-specificity (C5), spatial specificity (C40), and correlation with neural discriminability (C54-C55). The causal claim is justified by the experimental manipulation, though the authors appropriately acknowledge limitations regarding the physiological realism of the induced correlations (C68).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "b8601c78-1bb6-4e07-8861-95c917bdbff2",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work has established that spatial attention reduces low-frequency correlated variability among V4 neurons, with this reduction estimated to account for approximately 80% of attention-mediated improvements in sensory processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C9-C12 accurately summarize prior literature on attention and correlations in V4, particularly work by Mitchell et al. (2009) and Cohen and Maunsell (2009). These claims provide appropriate context for the current study. The citations appear accurate and the characterization of prior findings is fair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "62375feb-4668-4794-b2d5-f91d835e5be4",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior theoretical and empirical work on the relationship between correlated variability and perception has yielded mixed conclusions, with estimates depending on assumptions about neural readout, and the causal role of correlated variability in perception remaining untested prior to this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 provide a balanced review of the controversy in the field, citing both supportive (C15) and contradictory (C14, C16-C17) evidence regarding the role of correlations in perception. The identification of the gap in causal evidence (C18) appropriately motivates the current study. The characterization of prior work appears accurate and fair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "4c8b9685-7f84-4c94-a8c9-78a9572f6800",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "There was no significant correlation between neural discriminability modulation (NDMI) and changes in psychometric function slope, and NDMI calculated from hit trials showed no correlation with threshold or slope changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56 and C57 report negative results that are important for understanding the specificity of the neural-behavioral relationship. These findings suggest that the correlation between NDMI and behavioral impairment is specific to threshold changes and miss trials, which is consistent with the hypothesis but also indicates complexity in the relationship. The negative results are appropriately reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    },
+    {
+      "id": "d38a2020-a28d-4e5e-aecf-24126cfc796c",
+      "content_id": "79e2d84b-f462-4213-82b1-6d3a8c47ce1e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors acknowledge that the optogenetic stimulation protocol may induce correlations that are not physiologically realistic, but speculate that the induced correlations included information-limiting correlations. They propose that the timescale of low-frequency correlations is consistent with inter-saccadic intervals (200-300 ms), which may be a relevant timeframe for visual information gathering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68, C70-C72 represent appropriate acknowledgment of limitations and speculation about mechanisms. The concern about physiological realism (C68) is valid, and the speculation about information-limiting correlations (C70) and inter-saccadic timescales (C71-C72) is reasonable but remains untested. These claims appropriately distinguish between what was demonstrated and what remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:08.385339Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "526a2264-0dd2-4de7-ac49-d838b3b43863",
+      "result_id": "7a50d2ab-84ca-4c70-91b9-cf916992dca2"
+    },
+    {
+      "claim_id": "936e2d16-94b9-4da9-bfb8-2dcd47ad27b6",
+      "result_id": "7a50d2ab-84ca-4c70-91b9-cf916992dca2"
+    },
+    {
+      "claim_id": "6699905e-4be9-4fd0-a23b-2de5a7192399",
+      "result_id": "7a50d2ab-84ca-4c70-91b9-cf916992dca2"
+    },
+    {
+      "claim_id": "2c116514-8606-40a6-8e07-15ad85bafe9b",
+      "result_id": "7a50d2ab-84ca-4c70-91b9-cf916992dca2"
+    },
+    {
+      "claim_id": "b7250f2a-462f-4292-b429-a155f8e137e4",
+      "result_id": "7a50d2ab-84ca-4c70-91b9-cf916992dca2"
+    },
+    {
+      "claim_id": "526a2264-0dd2-4de7-ac49-d838b3b43863",
+      "result_id": "611d7b0f-7a7f-48cf-b702-62fa4bc69e4b"
+    },
+    {
+      "claim_id": "5471e854-d9ab-4c73-a47d-22efdcf656c4",
+      "result_id": "611d7b0f-7a7f-48cf-b702-62fa4bc69e4b"
+    },
+    {
+      "claim_id": "dc25bdad-f3cc-47bf-851a-b44851b21745",
+      "result_id": "611d7b0f-7a7f-48cf-b702-62fa4bc69e4b"
+    },
+    {
+      "claim_id": "bce72045-cc3e-4d54-976a-d1db5dbf295e",
+      "result_id": "611d7b0f-7a7f-48cf-b702-62fa4bc69e4b"
+    },
+    {
+      "claim_id": "487fd371-43db-48c7-a118-cac65c89a2bc",
+      "result_id": "1a6896af-a6d8-4f20-9093-44bd627b3ed3"
+    },
+    {
+      "claim_id": "ee145d43-39a5-491f-8de6-f31fb2a927de",
+      "result_id": "1a6896af-a6d8-4f20-9093-44bd627b3ed3"
+    },
+    {
+      "claim_id": "93688d1a-45d7-4fd9-a525-e6c87528e1ed",
+      "result_id": "1a6896af-a6d8-4f20-9093-44bd627b3ed3"
+    },
+    {
+      "claim_id": "ecd9f719-f8b5-41ac-90f8-09f504ba96a6",
+      "result_id": "ba95c279-48ca-49e7-953f-d1ac8d06cb5a"
+    },
+    {
+      "claim_id": "4371f25d-b47c-4cab-a364-af7c98976286",
+      "result_id": "ba95c279-48ca-49e7-953f-d1ac8d06cb5a"
+    },
+    {
+      "claim_id": "21e03282-57c4-4ef7-b3e9-b9f1695839b7",
+      "result_id": "ba95c279-48ca-49e7-953f-d1ac8d06cb5a"
+    },
+    {
+      "claim_id": "3e566821-607d-485e-a807-ad89ac769857",
+      "result_id": "ba95c279-48ca-49e7-953f-d1ac8d06cb5a"
+    },
+    {
+      "claim_id": "664ff2c2-a3ed-4abf-b970-4fd156d9f683",
+      "result_id": "f69c8dd2-09e5-451f-b43f-7b78202615e4"
+    },
+    {
+      "claim_id": "e2625ea7-de68-479c-a985-16c6430b2f10",
+      "result_id": "f69c8dd2-09e5-451f-b43f-7b78202615e4"
+    },
+    {
+      "claim_id": "72f69655-f37b-43f5-ae44-3280185b5d5b",
+      "result_id": "66788047-c5a5-4ce8-93e2-a49ee2354a55"
+    },
+    {
+      "claim_id": "5539e408-b73c-473e-aa5d-a80b67512663",
+      "result_id": "66788047-c5a5-4ce8-93e2-a49ee2354a55"
+    },
+    {
+      "claim_id": "c16d613d-3d85-4653-b79d-ee8506d49818",
+      "result_id": "66788047-c5a5-4ce8-93e2-a49ee2354a55"
+    },
+    {
+      "claim_id": "9a9d1986-2b69-4b13-bd75-a29afa6057e6",
+      "result_id": "85565a94-4d13-4ed0-af2a-083438dec9bc"
+    },
+    {
+      "claim_id": "d715ebb6-a6b5-47a0-a275-72895e41313f",
+      "result_id": "85565a94-4d13-4ed0-af2a-083438dec9bc"
+    },
+    {
+      "claim_id": "ca0ee79a-b43d-4f85-aec4-a24f0eec66bc",
+      "result_id": "85565a94-4d13-4ed0-af2a-083438dec9bc"
+    },
+    {
+      "claim_id": "16f6b0c5-ffb0-4faa-ba35-77a7171cf20b",
+      "result_id": "85565a94-4d13-4ed0-af2a-083438dec9bc"
+    },
+    {
+      "claim_id": "3eaf8522-77c8-4914-8e4c-744eaded3914",
+      "result_id": "0bcb91d6-8fda-4a14-bf38-82f61281b553"
+    },
+    {
+      "claim_id": "24c06850-7a6d-4fc1-9abc-f1740130a1ca",
+      "result_id": "0bcb91d6-8fda-4a14-bf38-82f61281b553"
+    },
+    {
+      "claim_id": "eb2090fa-7f46-4437-abdd-fe962ddee603",
+      "result_id": "0bcb91d6-8fda-4a14-bf38-82f61281b553"
+    },
+    {
+      "claim_id": "bbb5f226-ac5c-45c2-b0ef-3cef383557a4",
+      "result_id": "e7a07d74-267d-446e-b4d7-250f197cf2f0"
+    },
+    {
+      "claim_id": "5522e799-6d5e-4dc2-a9a4-27c487ee8b45",
+      "result_id": "e7a07d74-267d-446e-b4d7-250f197cf2f0"
+    },
+    {
+      "claim_id": "186c22bd-fdac-4dbd-ba2e-16932628b3d7",
+      "result_id": "e7a07d74-267d-446e-b4d7-250f197cf2f0"
+    },
+    {
+      "claim_id": "9d875901-0c34-47cc-a6f3-ba0ad1bdae56",
+      "result_id": "d98529b9-7bd7-4488-9481-d406cc058ef0"
+    },
+    {
+      "claim_id": "5f1498df-c45c-4ba5-ad56-a43c7ec42730",
+      "result_id": "35ed9ba4-8370-4947-8d16-375909022348"
+    },
+    {
+      "claim_id": "13593ea9-eb64-49e6-a7f2-2ee230cf7f8b",
+      "result_id": "35ed9ba4-8370-4947-8d16-375909022348"
+    },
+    {
+      "claim_id": "62c6bf56-2a8e-4a38-b0c6-fec37cef4a94",
+      "result_id": "b8601c78-1bb6-4e07-8861-95c917bdbff2"
+    },
+    {
+      "claim_id": "2de822d0-350b-4bb3-8ec0-d8470cc14911",
+      "result_id": "b8601c78-1bb6-4e07-8861-95c917bdbff2"
+    },
+    {
+      "claim_id": "e74ac38c-a40b-42bc-be37-fee7536e3345",
+      "result_id": "b8601c78-1bb6-4e07-8861-95c917bdbff2"
+    },
+    {
+      "claim_id": "8f816b65-a3e9-43ef-93d9-13a9bad09861",
+      "result_id": "b8601c78-1bb6-4e07-8861-95c917bdbff2"
+    },
+    {
+      "claim_id": "e66a08d3-8c22-4a6c-b1e1-6b57dfe7d44b",
+      "result_id": "b8601c78-1bb6-4e07-8861-95c917bdbff2"
+    },
+    {
+      "claim_id": "3b97b54c-edc8-4e7d-ad47-2ff41a9cf799",
+      "result_id": "b8601c78-1bb6-4e07-8861-95c917bdbff2"
+    },
+    {
+      "claim_id": "7921fcbd-8567-4ae1-a84e-e7ad28a9ae6b",
+      "result_id": "62375feb-4668-4794-b2d5-f91d835e5be4"
+    },
+    {
+      "claim_id": "77c8c79d-9847-49e1-9f65-dc53a7c1171a",
+      "result_id": "62375feb-4668-4794-b2d5-f91d835e5be4"
+    },
+    {
+      "claim_id": "7c9869a0-2313-4437-a570-0b60c47f33e4",
+      "result_id": "62375feb-4668-4794-b2d5-f91d835e5be4"
+    },
+    {
+      "claim_id": "50971990-9dbd-4f66-a31c-182f9c6e4975",
+      "result_id": "62375feb-4668-4794-b2d5-f91d835e5be4"
+    },
+    {
+      "claim_id": "98d48ede-6a9d-465a-bba2-c9e977c42553",
+      "result_id": "62375feb-4668-4794-b2d5-f91d835e5be4"
+    },
+    {
+      "claim_id": "bbe7044e-ad02-40b6-b693-8b162c9994ce",
+      "result_id": "62375feb-4668-4794-b2d5-f91d835e5be4"
+    },
+    {
+      "claim_id": "99a3172b-848c-4fee-a24b-7bb1a8385003",
+      "result_id": "4c8b9685-7f84-4c94-a8c9-78a9572f6800"
+    },
+    {
+      "claim_id": "3a4f05e5-3285-499e-ae7f-06920631dd33",
+      "result_id": "4c8b9685-7f84-4c94-a8c9-78a9572f6800"
+    },
+    {
+      "claim_id": "526d55fc-ca5a-47ab-b78b-3615a96ddb7f",
+      "result_id": "d38a2020-a28d-4e5e-aecf-24126cfc796c"
+    },
+    {
+      "claim_id": "2602f701-430e-4ebf-96f2-fe181cda2cfe",
+      "result_id": "d38a2020-a28d-4e5e-aecf-24126cfc796c"
+    },
+    {
+      "claim_id": "25ad9498-b9ab-4c04-bb13-cb4553132ab5",
+      "result_id": "d38a2020-a28d-4e5e-aecf-24126cfc796c"
+    },
+    {
+      "claim_id": "58f3850c-e0f5-40b5-82a0-82625fc013b1",
+      "result_id": "d38a2020-a28d-4e5e-aecf-24126cfc796c"
+    }
+  ],
+  "comparisons": []
+}

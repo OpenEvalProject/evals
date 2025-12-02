@@ -1,0 +1,957 @@
+{
+  "submission": {
+    "id": "62715f29-dac6-46d4-99e6-81ee03aaa1d2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:33:01.122830Z",
+    "updated_at": "2025-12-02T17:33:01.122830Z"
+  },
+  "content": [
+    {
+      "id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "submission_id": "62715f29-dac6-46d4-99e6-81ee03aaa1d2",
+      "content_type": "manuscript",
+      "content_text": "# Temperature compensation in a small rhythmic circuit\n\n## Authors\n\n- Leandro M Alonso<sup>1</sup> ([ORCID: 0000-0001-8211-2855](https://orcid.org/0000-0001-8211-2855)) \u2020\n- Eve Marder<sup>1</sup> ([ORCID: 0000-0001-9632-5448](https://orcid.org/0000-0001-9632-5448))\n\n### Affiliations\n\n1. Volen Center and Biology Department, Brandeis University Waltham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTemperature affects the conductances and kinetics of the ionic channels that underlie neuronal activity. Each membrane conductance has a different characteristic temperature sensitivity, which raises the question of how neurons and neuronal circuits can operate robustly over wide temperature ranges. To address this, we employed computational models of the pyloric network of crabs and lobsters. We produced multiple different models that exhibit a triphasic pyloric rhythm over a range of temperatures and explored the dynamics of their currents and how they change with temperature. Temperature can produce smooth changes in the relative contributions of the currents to neural activity so that neurons and networks undergo graceful transitions in the mechanisms that give rise to their activity patterns. Moreover, responses of the models to deletions of a current can be different at high and low temperatures, indicating that even a well-defined genetic or pharmacological manipulation may produce qualitatively distinct effects depending on the temperature.\n\n## Introduction\n\nBiological systems depend on many interacting nonlinear processes that together produce complex outputs. In the nervous system, neuronal activity requires the coordinated activation and inactivation of many inward and outward currents. Temperature influences all biological processes, to a greater or lesser degree. This poses an inherent difficulty for neuronal signaling: if the currents involved in neuronal and network dynamics are differentially temperature-dependent a system that is well-tuned to work at one temperature may not function at a different temperature (Caplan et al., 2014; O'Leary and Marder, 2016; Tang et al., 2010;\u00a0Tang et al., 2012). Nonetheless, many ectothermic animals have neurons and circuits that function well over an extended temperature range (Robertson and Money, 2012). It then becomes important to understand how and to what extent this can occur.\n\nThe effects of temperature on channel function and neuronal activity have been studied extensively for many years (Taylor and Kerkut, 1958). Increasing temperature generally results in increases of channel maximal conductances and faster activation/inactivation rates (Frankenhaeuser and Moore, 1963). But, importantly ionic channels of different types are affected by temperature to different extents: each of these processes has a different $Q_{10}$\u00a0(Schauf, 1973; Kukita, 1982; Ruff, 1999; Tang et al., 2010; Ranjan et al., 2019). The effect of temperature on neuronal intrinsic excitability such as voltage and current thresholds can be diverse (Sjodin and Mullins, 1958; Guttman, 1962; Guttman, 1966;\u00a0Fitzhugh, 1966). For example, identified neurons in locust showed reversible changes in spike amplitude and duration of spikes as temperature varies from 18 to 35\u00b0C\u00a0(Heitler et al., 1977). Studies in the jump neural circuit of grasshopers showed that neural excitability is differently affected by temperature across neuronal types (Abrams and Pearson, 1982).\n\nThere are also examples of neuronal and circuit processes that are relatively temperature-compensated. The frequency/current (f/I) curves in both molluscan and locust neurons are not substantially affected by small temperature changes (6\u20138\u00b0C) (Connor, 1975; Heitler et al., 1977). The f/I curves of auditory sensory neurons in grasshoppers remain largely unaffected by changes in temperature between 21\u00b0C and 29\u00b0C (Roemschied et al., 2014). Temperature compensation also takes place across the behavioral level. For example, a recent study in hunting archerfish showed that the duration of the two major phases of the C-start\u2014a fast escape reflex which follows prey release\u2014were temperature compensated (Krupczynski and Schuster, 2013). The question then arises of how these behaviors are preserved when the currents in the cells and their intrinsic excitability properties are differentially modified by temperature.\n\nHere, we explore these issues using computational models of the pyloric network\u2014a subnetwork within the stomatogastric ganglion (STG) of crustaceans (Marder and Bucher, 2007; Maynard, 1972). The pyloric rhythm is a triphasic motor pattern that consists of bursts of action potentials in a specific sequence. This behavior is robust and stable, and the cells and their connections are well-characterized. Robustness to temperature in the pyloric network has been explored experimentally by Tang et al., 2010;\u00a0Tang et al., 2012; Soofi et al., 2014 and Haddad and Marder, 2018. These studies show that as temperature increases the frequency of the pyloric rhythm increases but the phases of the cycle at which each cell is active remain approximately constant. Additional work on the pacemaker kernel of the pyloric network (three cells connected by gap junctions that burst synchronously) showed that temperature increases the frequency of these bursts ($Q_{10}\u22482$), but their duty cycle (the burst duration in units of the period) stays approximately constant (Rinberg et al., 2013).\n\nTemperature robustness was explored in computational models of the pacemaking kernel (Soto-Trevi\u00f1o et al., 2005) by Caplan et al., 2014 and O'Leary and Marder, 2016. They showed that it was possible to find multiple sets of $Q_{10}$ values for different membrane conductances processes, so that the duty cycle of the cells remained constant as their bursting frequency increased. In this work, we build on the results in Caplan et al., 2014 and implemented temperature sensitivity in a model of the pyloric network (Prinz et al., 2004). We show that in these models, there are multiple sets of maximal conductances and temperature sensitivities that reproduce much of the experimental phenomenology previously reported (Tang et al., 2010;\u00a0Tang et al., 2012;\u00a0Soofi et al., 2014; Haddad and Marder, 2018). In addition, we explored how the dynamics of the currents are modified to sustain the correct activity at each temperature. We performed this study for 36 different models and found that in all cases, the contributions of the currents to the activity can be significantly different across temperatures. The currents are not simply scaled up but instead become reorganized: a current that is important for burst termination at 10\u00b0C may no longer play that role at 25\u00b0C. Because the contribution of a given current to a neuronal process can be replaced by another at different temperatures, deletion or blockade of a current can produce qualitatively different effects at high and low temperatures. These results provide a plausible hypothesis for why interactions between temperature and a second perturbation can be observed experimentally (Haddad and Marder, 2018; Ratliff et al., 2018).\n\n## Results\n\n### Duty cycle and phase maintenance in model pyloric networks\n\nThe triphasic pyloric rhythm is produced by the periodic sequential activation of the pyloric dilator (PD) neurons, which are electrically coupled to the anterior burster (AB) neuron forming a pacemaking kernel, the lateral pyloric (LP) neuron and five to eight pyloric (PY) neurons. We modified the model of the pyloric circuit in Prinz et al., 2004 to include temperature sensitivity. Figure 1A shows a schematic representation of the model pyloric network studied here. The model network consists of three cells, each modeled by a single compartment with eight currents as in previous studies (Golowasch and Marder, 1992; Buchholtz et al., 1992; Goldman et al., 2001). The synaptic connections are given by seven chemical synapses of two types as in Prinz et al., 2004. In this model the pacemaking kernel is aggregated into a single compartment $A\u2062B-P\u2062D$ (here we refer to this compartment as $P\u2062D$). Following Liu et al., 1998, each neuron has a sodium current, $I_{N\u2062a}$; transient and slow calcium currents, $I_{C\u2062a\u2062T}$ and $I_{C\u2062a\u2062S}$; a transient potassium current, $I_{A}$; a calcium-dependent potassium current, $I_{K\u2062C\u2062a}$; a delayed rectifier potassium current, $I_{K\u2062d}$; a hyperpolarization-activated inward current, $I_{H}$; and a leak current $I_{l\u2062e\u2062a\u2062k}$. The traces in Figure 1A show a solution of this model for one set of maximal conductances $G$. The traces exhibit a triphasic pyloric rhythm that consists of the sequential bursting of the $P\u2062D$, $L\u2062P$ and $P\u2062Y$ cells. This pattern remains approximately periodic so we can measure the phases of the cycle at which each burst begins and terminates using the burst start of the $P\u2062D$ cell as reference (indicated as $B_{R\u2062E\u2062F}$ in magenta in Figure 1A), as indicated by the color labels.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic diagram of the model pyloric network in Prinz et al., 2004. The three groups interact via seven inhibitory chemical synapses. The red synapses are cholinergic from the PD neurons and all others are glutamatergic. The traces below show a representative solution that exhibits a triphasic rhythm: the activity is approximately periodic and the cells burst in a specific sequence: $P\u2062D$-$L\u2062P$-$P\u2062Y$. (B) Activity of a temperature robust model network at 10\u00b0C\u00a0-\u00a025\u00b0C. As temperature increases the frequency of the rhythm increases but the duty cycle of the cells (the burst duration in units of the period) remains approximately constant. (C) Top: average burst frequency of each cell over temperature (values are nearly identical so dots overlap). Middle: average duty cycle of each cell (cell type indicated in colors). Bottom: average phases of the cycle at which bursts begin and terminate using the start of the PD burst as reference (indicated by label $B_{R\u2062E\u2062F}$ in magenta). As temperature increases these phases remain approximately constant. The panels show average values over 30 s for 16 values of temperature between 10\u00b0C\u00a0-\u00a025\u00b0C.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** For each set of maximal conductances we studied, it was possible to find multiple sets of $Q_{10}$ that yielded temperature compensated solutions. (A) Burst frequency (top), duty cycle (middle), and phases (bottom) over the working temperature range for three different models (indicated in colors). (B) Values of the maximal conductances (in $\\mu\u2062S$) and $Q_{10}$ for each model indicated by symbols (triangle, square, rectangle).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The spiking patterns of the cells exhibit interesting dependencies with temperature. (A) Schematic representation of the temperature ramp used in these simulations. Temperature was increased linearly between 10\u00b0C and 25\u00b0C over 60 min. (B) ISI of each cell over temperature (y-axis is logarithmic). The spiking patterns consist of one large ISI corresponding to the inter-burst interval (\u2265\u00a0200\u00a0ms) and several smaller values produced by spikes within bursts. There are ranges of temperature over which the ISI takes almost the same values and the patterns result in nearly identical sets of points, and there are ranges where there is more variability. (C) Instantaneous frequency of each burst of the $P\u2062D$ cell. (D) Duty cycle of each burst in each cell. While the duty cycle remains approximately constant on average, there are ranges of temperature for which the duty cycle alternates between two or more values (pink shaded box in $P\u2062D$. (E) Traces of the $P\u2062D$ cell at 10\u00b0C (blue box) and 20\u00b0C (pink box). The brown filled and empty triangles indicate the prescence/abscence of a last spike in the burst which results in different duty cycle values for consecutive bursts.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Variability across models in duty cycle distributions of the LP cell as a function of temperature, during the same temperature ramp as in Figure 3. The precise shape of these patterns depends on the values of the maximal conductances and temperature sensitivities. Note that at all temperatures, the duty cycle of each burst remains close to the average duty cycle across temperatures (red dashed line), and thus is temperature invariant.\n\nTemperature sensitivity was modeled for each conductance as in Caplan et al., 2014 and O'Leary and Marder, 2016 (see Materials\u00a0and\u00a0methods). We increased each conductance by an Arrhenius type factor $R\u2062(T)=Q_{10}^{\\frac{T-T_{r\u2062e\u2062f}}{10}}$ (with $Q_{10}\\geq1$ and $T_{ref}$\u00a0=\u00a010\u00b0C) and also increased the rates of the channel kinetics $\\tau$ in similar fashion. We assume that $Q_{10_{G}}\\in[1,2]$ for the maximal conductances and $Q_{10_{\\tau}}\\in[1,4]$ for the timescales as these ranges are consistent with experimental measurements of these quantities (Tang et al., 2010). The $Q_{10}$ values are a property of the channel proteins, so in a given model we use the same $Q_{10}$ for a given current (and synapse) type in all cells. Different values of the maximal conductances $G$ can produce an innumerable variety of activities. The space of solutions of the model\u2014the different patterns produced for each set of maximal conductances $G$\u2014is formidably complex. This is in part due to the nonlinear nature of neuronal dynamics but also because the number of conductances that need to be specified is large (31 in total, 8 intrinsic conductances \u00d73\u00a0cells +7 synaptic conductances). The picture is more complicated as we consider the effect of temperature because it affects both the conductances and the time scales of the different processes (14 in total: 12 intrinsic, 2 synaptic). Therefore in the models, changes in temperature correspond to a coordinated change or a path in a 45-dimensional parameter space. The complexity of this problem led us to confine this study to specific questions suggested by biological observations over a permissible temperature range.\n\nIn the crab, as temperature is increased pyloric activity remains triphasic\u2014the cells fire in the same order and at the same relative phases\u2014while the pyloric network frequency increases by a two- to three-fold factor over a 15\u00b0C range (Tang et al., 2010). For this to happen in the model, there should be many regions in the parameter space for which the activity is triphasic at different frequencies and paths in the parameter space (sequences of values of $G$ and $\\tau$) that interpolate these regions. One of the main results in this work is that such paths do exist and that temperature compensation is possible in this model. Finding these temperature compensated networks is nontrivial: it requires the specification of 31\ufeff maximal conductances $G$ and \ufeff24\u00a0$Q_{10}$ values (see Materials\u00a0and\u00a0methods). Because it is virtually impossible to find these sets of parameters at random we employed a landscape optimization scheme described previously (Alonso and Marder, 2019) and adapted it to this particular scenario (see Materials\u00a0and\u00a0methods). We first searched for sets of maximal conductances $G$ that displayed triphasic rhythms at control temperature (10\u00b0C). Inspired by physiological recordings of the pyloric rhythm of crabs and lobsters we targeted control activities with a network frequency of $1Hz$, duty cycle \u2248\u00a020%\u00a0for $P\u2062D$, and duty cycle \u2248\u00a020% for $L\u2062P$ and $P\u2062Y$\u00a0(Bucher et al., 2006; Hamood et al., 2015). We then selected 36\ufeff of these models and for each of them we searched for $Q_{10}$ values so that the activity is preserved over a temperature range. We found that, regardless of the maximal conductances $G$, it was always possible to find multiple sets of $Q_{10}$ values that produced a temperature robust pyloric rhythm.\n\nFigure 1B shows the activity of one example network at several temperatures, similar to the experimental results reported by Tang et al., 2010. Figure 1C shows the same analysis as in Tang et al., 2010 performed on this particular model. We simulated the model at several temperatures over the working range (10\u00b0C to 25\u00b0C) and computed the average duty cycle, frequency and phases of the bursts. While the burst frequency increases with $Q_{10}\u22482$, the duty cycle of the cells, and the phases of the onsets/offsets of activity, remain approximately constant. Figure 1\u2014figure supplement 1A shows the same analysis performed on three different models. In all cases, the duty cycle and the phases stay approximately constant while the frequency increases. Figure 1\u2014figure supplement 1B shows the values of the maximal conductances $G$ and the $Q_{10}$ values for each of these models.\n\nWhile the duty cycle remains approximately constant on average, the spiking patterns of the cells show discernible differences across temperatures. We subjected the models to temperature ramps from 10\u00b0C to 25\u00b0C over 60 min and recorded the spike times (Figure 1\u2014figure supplement 2). As temperature is increased the spiking patterns change in complicated ways and the largest $I\u2062S\u2062I$ decreases monotonically, consistent with the overall increase in bursting frequency of the cells. Different values of temperature result in slightly different spiking patterns which in turn result in different values of the duty cycle. For some temperatures, the duty cycle is nearly identical in every burst resulting in a single point in the y-axis (Figure 1\u2014figure supplement 2D, blue box in PD cell). There are temperatures for which the duty cycle takes two values preferentially (Figure 1\u2014figure supplement 2D, pink box in $P\u2062D$ cell) and there are temperatures for which the duty cycle differs noticeably from burst to burst. Although in all models, the average duty cycle and phases stay approximately constant, as temperature is changed the precise way in which the spiking patterns change show marked differences across models: different maximal conductances and different $Q_{10}$ values produce different patterns. Figure 1\u2014figure supplement 3 shows the temperature dependence of the duty cycle in the $L\u2062P$ cell over the working range for all 36 models and provides a notion of how variable the bursting patterns of the cells can be across temperatures and individuals.\n\n### Changes in membrane potential over temperature\n\nExperimental studies on other systems reported measurable effects of temperature on resting membrane potentials (Klee et al., 1974), spiking thresholds, and amplitudes of spikes (Heitler et al., 1977). In the models studied here, some temporal properties of the activity remain approximately constant over a temperature range but the precise shape of the waveforms can also change. To inspect how the membrane potential changes over the working temperature range (10\u00b0C\u00a0-\u00a025\u00b0C), we computed the distribution of $V$ of each cell for 101 values of temperature. Temperature changes features of the voltage waveforms, resulting in changes in these distributions. Figure 2 shows example traces and the result of this analysis for the $L\u2062P$ cell in one model. The membrane potential changes with temperature in several ways: the spike amplitude decreases and the spike threshold depolarizes as temperature increases. At each temperature, we computed the distribution of $V$, and used a gray scale to indicate the fraction of time that the cell spends at each voltage value (y-axis). The color lines match features of the voltage waveforms at each temperature, with features in the distribution on the right. The distributions permit visualizing changes in the waveform as the control parameter is changed (Alonso and Marder, 2019). The effect of temperature on membrane potential is not consistent across models and depends on the precise values of conductances and temperature sensitivities. Figure 2\u2014figure supplement 1 shows the membrane potential distributions of each cell for three example models. In all cases, the waveforms show visible differences across temperatures and there is considerable variability in the amplitudes of the oscillations across models. In some models, the peak voltage of spikes, as indicated by the upper envelope of the distributions, decreases (left), increases (middle), or remains relatively constant (right). In addition, we found that cells can either become more depolarized or more hyperpolarized as temperature increases.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig2-v2.jpg)\n\n**Figure 2.:** (left) Representative traces of the $L\u2062P$ cell in one model at different temperatures. (right) Membrane potential distribution at each temperature. The gray scale indicates the proportion of time the cell spends at that potential. The distribution facilitates inspecting how features such as the total amplitude of the oscillations and spiking thresholds change with temperature.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The oscillation amplitudes, spiking thresholds and other features of the sub-threshold activity show clear differences across models (* indicates the $L\u2062P$ cell in Figure 2).\n\n### Dynamics of the currents at different temperatures\n\nNeuronal activity is governed by currents that result from the precise activation and inactivation of ion channels with different kinetics. Experimental access to these quantities is limited because it is hard to measure currents individually without blocking all other currents, and thus changing the activity. Here, we employ models to explore how these currents are differentially altered by temperature, and yet are able to remain balanced in such a way that the network activity speeds up while preserving its behavior and phase relationships.\n\nWe first compared the dynamics of the currents in two model $P\u2062D$ neurons with different maximal conductances $G$ and temperature sensitivities $Q_{10}$ by direct inspection of the currents\u2019 time series. Figure 3A shows the time series of each intrinsic current in $P\u2062D$ at 10\u00b0C and 25\u00b0C for one model. The corresponding membrane potential activity $V$ is shown in the blue traces on top. The red horizontal dashed lines indicate the peak amplitude of the currents at control temperature (10\u00b0C) to visualize whether it increases or decreases at 25\u00b0C. This is indicated by the arrows in each row (in colors: \u21d1 red increases,\u00a0\u21d3\u00a0green decreases). In this example, the $N\u2062a$ current increases its amplitude by more than two fold over the 15\u00b0C range. Despite the fact that $g\u2062C\u2062a\u2062T$ increases with temperature, the amplitude of the current decreases to about half its control value at 10\u00b0C. Similar observations can be made for other currents (Figure 3A). Note that all $Q_{10}$ values in these models are greater than 1. Therefore, when the current decreases it is because the relative timing of the currents\u2019 activation is changed by the neurons\u2019 firing properties. The way currents are modified by temperature is different across models. Figure 3B shows the currents in the PD cell at two temperatures for another model. In this case, the $N\u2062a$ current decreases by a small amount despite the fact that the maximal conductance and timescales of this current increase with temperature. The $K\u2062C\u2062a$ current which in Figure 3A grows by a factor of six, is moderately decreased by temperature in Figure 3B.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig3-v2.jpg)\n\n**Figure 3.:** Currents of the $P\u2062D$ cell for two different models (A-B). Temperature increases the peak amplitudes of some currents and it decreases it for others, as indicated by the \u21d1 and \u21d3 arrows in red and green. The way these currents are modified can vary substantially across models.\n\nBecause the total number of currents in the circuits is 31, it becomes cumbersome to compare them separately across temperatures (and models). For this reason, we computed and inspected their currentscapes (Alonso and Marder, 2019). The currentscapes use colors to show the percent contribution of each current to the total inward (or outward) current and are useful to display the dynamics of the currents in a compact fashion. Figure 4 shows the currentscapes of each cell in one model at 10\u00b0C and 25\u00b0C. The shares of each current of the total inward and outward currents are displayed in colors over time. The total inward and outward currents are represented by the filled black curves on a logarithmic scale at the top and bottom. The currentscapes are noticeably different at 10\u00b0C and 25\u00b0C indicating that the currents contribute differentially across temperatures. For example, in the $P\u2062D$ cell the $L\u2062e\u2062a\u2062k$ current contributes a visible share of the inward current both at the beginning and the end of the burst at 10\u00b0C, but at 25\u00b0C its contribution is mainly confined to the beginning of the burst. The $A$ current is evenly distributed during the burst at 10\u00b0C but at 25\u00b0C its contribution is visibly larger at the beginning of the burst. In all cells, but most notably in the $L\u2062P$ and $P\u2062Y$ neurons in this example model, temperature substantially increases the contribution of the $K\u2062C\u2062a$ current toward the end of the bursts.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig4-v2.jpg)\n\n**Figure 4.:** The currentscapes use colors to display the percent contribution of each current type to the total inward and outward currents over time. The filled lines at the top and bottom indicate the total inward/outward currents in logarithmic scale. The panel shows the currentscapes for the three cells in the model at two temperatures. The panels show 2 periods $\\tau$ of the oscillation.\n\nThe currentscapes show that in all models and at all temperatures, there are periods of time when the activity is dominated by one or two currents, and periods of time when several currents contribute to it by similar amounts. During spike production, the activity is first driven by $I_{N\u2062a}$ and later by $I_{K\u2062d}$. During these periods, the total inward and outward currents differ by orders of magnitude and are entirely dominated by one current type. Similarly, when the cells are most hyperpolarized the dominant currents are $I_{H}$ and the synaptic currents $I_{S\u2062y\u2062n}$. There are periods of time\u2014such as the beginnings and ends of bursts\u2014when the total inward and outward currents are composed of comparable contributions of several current types. It is during these periods, when multiple currents act together to change the membrane potential, where we observe the most dramatic changes with temperature.\n\nFigure 5 shows 20 ms after the burst in a $P\u2062D$ neuron over temperatures between 10\u00b0C and 25\u00b0C. Almost all of the currents change over this temperature range, most notably there is almost a tradeoff between the contributions of the $A$ and $K\u2062C\u2062a$ currents, with $A$ decreasing smoothly and $K\u2062C\u2062a$ increasing smoothly. The specifics of how the contributions change is different across models, but in all cases there is a smooth transition between different relative fractions of currents. This allows the neuron to slide smoothly through changes in burst termination mechanisms.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig5-v2.jpg)\n\n**Figure 5.:** The figure shows the currentscapes of the PD cell for the 20 ms following burst termination, and how these change over temperature (same model as in Figure 7A).\n\nDifferent compensation mechanisms fail in different ways. Figure 6 shows full currentscapes for two network models as they \u2018crash\u2019 at high temperature. Note that the complete loss of activity in the $P\u2062D$ neurons results from different currents being active in the two examples. Further examples of high temperature \u2018crashes\u2019 are shown in Figure 6\u2014figure supplement 1. These examples show that the networks are crashing by different mechanisms in each case.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig6-v2.jpg)\n\n**Figure 6.:** Currentscapes of two networks at 10\u00b0C and 25\u00b0C showing phase compensation, and \u2018crashes\u2019 at 30\u00b0C.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Currentscapes of the networks at high temperatures. Temperatures in these simulations listed in lexicographical order: 32\u00b0C, 30\u00b0C, 35\u00b0C, 29\u00b0C, 40\u00b0C, 35\u00b0C, 32\u00b0C, 32\u00b0C.\n\n### High temperatures produce disordered circuits or \u2018crashes\u2019\n\nFor temperatures higher than a critical temperature, the biological network displays anomalous regimes characterized by the emergence of slow time scales and intermittency between what appear to be metastable states (Tang et al., 2012; Haddad and Marder, 2018). At temperatures higher than 25\u00b0C some models do not display irregular behavior but just become quiescent, or produce subthreshold oscillations. Other models display irregular and seemingly aperiodic regimes. As expected, irregular regimes typically take place at values of the temperature near a transition between qualitatively different patterns of activity. Figure 7 shows the activity of five models at temperatures higher than their working regimes. The left panels show 30 s of data and the right panels show 5 s. In all cases, there are timescales in the behavior that are much longer than the period of the rhythm at 10\u00b0C (\u2248\u00a01\u00a0s). The dynamics of the models in these regimes is daunting and their characterization is beyond the scope of this work. However, qualitative features of these states such as the appearance of slow timescales or absence/presence of activity in one or more cells, are captured by these models. This, together with the multistable regimes shown before plus a source of noise, may provide a reasonable model to account for the irregular regimes in the biological network (Tang et al., 2012; Haddad and Marder, 2018).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig7-v2.jpg)\n\n**Figure 7.:** The models become dysfunctional\u2014or crash\u2014at temperatures higher than 25\u00b0C and do so in different ways. (A-E) Membrane potential of five models. The traces on the left show 30 s of data and the traces on the right show an expanded trace of 5 s. Note the emergence of time scales much longer than that of the original rhythm. Temperatures in the simulations are (A\u2013E): 34\u00b0C, 34\u00b0C,\u00a033\u00b0C, 29\u00b0C, 30\u00b0C.\n\n### Hysteresis and multistability\n\nIt is natural to ask whether these models show hysteresis when the temperature is returned to control levels. Moreover, multistability is also often observed in conductance-based models of neuronal activity and biological neurons (Cymbalyuk and Shilnikov, 2005; Malashchenko et al., 2011; Marin et al., 2013; Lechner et al., 1996; Paydarfar et al., 2006), and the network studied here also exhibits such features. We explored hysteresis in the models by increasing temperature linearly from 10\u00b0C to 35\u00b0C in 30 min and then decreasing it back to 10\u00b0C at the same rate. Figure 8 shows the spiking patterns for two $P\u2062D$ neurons during such temperature ramps (schematized on top). In Figure 8A the ISI distributions show bursting activity up to a critical temperature at\u00a0which the model becomes quiescent. The quiescent state remains stable as temperature continues to increase and eventually recovers activity during the decreasing ramp, but at a lower temperature than when it stopped spiking during the increasing ramp. This implies that there is a range of temperatures where the model can be either quiescent or spiking, and thus is multistable. In most models (34 of 36), the spiking patterns over the working temperature range are similar across the up and down ramps but are not identical, suggesting there are multiple stable attractors that correspond to the triphasic rhythm but differ slightly in their spiking patterns (Figure 1\u2014figure supplement 2E). This is consistent with the findings in Tang et al., 2010 where temperature was ramped slowly and no significant differences were found when ramping up and down in temperature.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig8-v2.jpg)\n\n**Figure 8.:** Temperature was increased from 10\u00b0C to 35\u00b0C and then decreased back to 10\u00b0C symmetrically. (Top) Schematic representation of the temperature ramp. Panels A and B show the ISI distributions of the $P\u2062D$ cell over time for two different models. (A) The cell ceases to produce spikes before 600 s, which is also before reaching 35\u00b0C, and remains quiescent until temperature is ramped down. The temperature at which the cell resumes spiking is \u2248\u00a02\u00b0C lower than the temperature at which it became quiescent, indicating that the system is multi-stable over that temperature range. (B) Hysteresis is more evident in this model. The spiking patterns during the down ramp differ visibly from those during the up ramp over a wide temperature range.\n\nWe also found models with pathological stable attractors that coexist with the pyloric rhythm at working temperatures. Figure 8B shows a model in which hysteresis is salient. At high temperatures (times between 25 and 35 min), this model produces $I\u2062S\u2062I$ values as long as\u00a0\u2248\u00a01\u00a0s and remains spiking at all temperatures. The spiking patterns differ noticeably on the up and down ramps. The spiking pattern of the $P\u2062D$ cell changes from regular bursting to a pathological state that remains stable until the model is ramped back down to \u2248\u00a020\u00b0C. In our simulations, hysteresis mainly occurs at high temperatures indicating that states such as those in Figure 7 can be multistable. The extent such hysteresis can be revealed in the biological experiments depends on the details of the perturbation protocol, and its currently under study.\n\n### Response to perturbations at different temperatures\n\nIn all models, the dynamics of the currents are different at different temperatures and their contributions become reorganized in complex ways. The combined activity of all the variables in the model\u2014the dynamical attractor\u2014is therefore expected to have different stability properties at different temperatures. This means that an extreme perturbation can have qualitatively different effects at different temperatures. The responses of different models to extreme perturbations such as partially or completely removing a current can be diverse at any temperature (Alonso and Marder, 2019). While this is expected due to the complexity of these models, the fact that these responses can also be qualitatively different across temperatures indicates that changes in the current contributions are meaningful and affect the stability of the network. To shed light on this issue, we performed several simple perturbations.\n\nFigure 9 shows one perturbation in two models. In Figure 9A, we explored the interaction between temperature and the effect of removing the $A$-type K+ channel at two temperatures: the models were simulated for 20 s in control conditions and then $I_{A}$ was completely removed for the next 20 s. Figure 9A (top) shows that removing the $A$ current at 10\u00b0C has catastrophic consequences for the network activity which becomes irregular. When the same perturbation is performed at 25\u00b0C (bottom), the triphasic rhythm is almost normal except for the irregular bursting of $P\u2062Y$. Figure 9B shows a similar pertubation in which we remove the $K\u2062C\u2062a$ current. This model displayed normal triphasic behavior at 10\u00b0C (top) and when the $K\u2062C\u2062a$ current was removed its activity slowed but the triphasic rhythm was maintained. The same perturbation at 25\u00b0C results in quiescence. In this model, the $K\u2062C\u2062a$ current is necessary for the activity at 25\u00b0C but not at 10\u00b0C.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig9-v2.jpg)\n\n**Figure 9.:** The response of the models to extreme perturbations can be different at different temperatures. The figure shows the responses of models to the same perturbation at two different temperatures. (A) (top) Membrane potential over time at 10\u00b0C. The first 4 s correspond to the control condition with all currents intact. At $T=4\u2062s\u2062e\u2062c$ we removed the $A$ current. (bottom) Same perturbation performed at 25\u00b0C (same model as in Figure 4). (B) Same protocol as in A but removing the $K\u2062C\u2062a$ current in a different model (Figure 7A).\n\nTo further characterize the differential response to perturbations at different temperatures, we performed a second assay in which we gradually decreased a current from control (100%) to complete deletion (0%) in five steps. We performed these simulations for all 36 models and all current types at 10\u00b0C and 25\u00b0C and compared their responses. In general, gradually removing a current can result in qualitatively different states depending on the temperature at which this perturbation is performed. The responses are so diverse that a coarse classification scheme is sufficient to highlight this observation. We classified the network activity based on the spiking patterns and waveforms of each cell, and also by their relative activities. The activities of each cell were classified as: regular bursting, irregular bursting, tonic spiking, irregular spiking, single spike bursting, quiescent and other, while the network activity was classified as triphasic or not triphasic. The classification scheme consists of a simple decision tree based on the statistics of spiking and is sufficient to tease apart the different regimes we observe at a coarse level (Materials\u00a0and\u00a0methods).\n\nFigure 10A shows the result of classifying the responses of one model to gradually decreasing a conductance in five steps, at two different temperatures, for four conductances. We employed 5\u00a0\u00d7 4\u00a0response grids to summarize the effects of partially or completely removing a conductance at 10\u00b0C and 25\u00b0C. The rows in the grids correspond to different values of conductance removals, with the control condition (100%) on top, and the completely removed condition (0%) at the bottom. The first three columns correspond to each of the cells (PD-LP-PY) and the fourth column corresponds to the network (NET). The colors indicate the type of activity of each cell and the network color coded for condition as indicated by the labels in the figure. The top left panel in Figure 10A shows the responses of one model to removing the sodium current $I_{N\u2062a}$. At 10\u00b0C, when $g\u2062N\u2062a\u219275%\u2062g\u2062N\u2062a$ the $L\u2062P$ cell bursts irregularly and the activity of the network is not triphasic, but if the same perturbation is performed at 25\u00b0C the activity remains triphasic. Removing the $K\u2062C\u2062a$ current in this model has little effect at 10\u00b0C as the activity remains triphasic. However, this current plays an important role at 25\u00b0C and the model becomes quiescent upon complete removal of $I_{K\u2062C\u2062a}$. The same observation that the responses to perturbation are different at each temperature holds regardless of the perturbation type. In the cases of the $C\u2062a\u2062T$ and $C\u2062a\u2062S$ currents complete removal results in different non-triphasic activity at each temperature. The responses of the model are in general qualitatively different at different temperatures, and they are also diverse across models (not shown). The fact that the models \u2018break-down\u2019 in different ways is consistent with the observation that these network mechanisms are diverse. In all models, the responses to extreme perturbation are temperature dependent for most perturbation types. In Figure 10B we quantify how many models respond differently to complete removal of a current at 10\u00b0C and 25\u00b0C. This corresponds to comparing the bottom row of the response grids at each temperature, for each conductance type. In most cases, about half of the models respond to complete removal in different ways at each temperature. The exceptions are the $C\u2062a\u2062T$ current for which most models respond in different ways, and the $H$ current where complete removal results in equivalent states (quiescence in this case) at both temperatures.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/55470/elife-55470-fig10-v2.jpg)\n\n**Figure 10.:** The models\u2019 responses to perturbations are diverse and are in general different at different temperatures. We classified the responses of the models at two temperatures for five values of gradual decrements of each current. (A) Response to removal of $N\u2062a$, $K\u2062C\u2062a$, $C\u2062a\u2062T$ and $C\u2062a\u2062S$ currents for one model. (B) The pie charts show the number of models for which the responses to complete removal (0%) are classified as the same (green) or different (blue) at 10\u00b0C and 25\u00b0C.\n\n## Discussion\n\nEnzymes and ion channels show altered behavior when temperature is changed, as temperature influences their conformation. Yet many animals live successfully over wide temperature ranges. For example, North Atlantic lobsters and crabs routinely experience more than 25\u00b0C temperature swings during a year, and may see 8\u00a0-\u00a010\u00b0C changes within a short time period (Haefner, 1977; Stehlik et al., 1991). This raises a series of fascinating questions of how behavior and circuit performance can be maintained while all biological molecules are, to a greater or lesser degree, differentially temperature dependent (Robertson and Money, 2012).\n\nIt is important to distinguish between altered activity that occurs rapidly in response to acute, or immediate changes in temperature and those changes that occur during slow adaptation and acclimation, processes that can take days, weeks or months. In this study, we have modeled the fast changes that we assume would occur \u2018automatically\u2019 as proteins change conformation and properties rapidly, and as are usually measured in their $Q_{10}$\u2019s. This is to be contrasted with the slower, long-term effects that result in acclimation in which a variety of molecular processes are triggered that may in turn change the proteins present in the membrane. These mechanisms, and much adaptation to long-term changes in temperature depend on the activation of heat shock proteins, RNA editing and a whole array of molecular mechanisms (Garrett and Rosenthal, 2012; Rosenthal, 2015; Martin Anduaga et al., 2019). We will first discuss the issues that arise from the examination of robustness to acute temperature changes, as modeled here, and then offer some speculations for additional processes that may be important to enhance robustness in response to long-term temperature changes.\n\nUnfortunately, there are relatively few data relevant to whether the $Q_{10}$ of a channel in a given animal changes in response to acclimation or seasonal conditions. Therefore, although it is often assumed that a $Q_{10}$ for a given protein is invariant over the lifetime of the animal this may not necessarily be the case. Another difficulty is that there are few, if any, studies of many ion channel $Q_{10}$s\u00a0in the same animal in the same temperature range. Computational modeling will not answer what the \u2018real\u2019 conductance and $Q_{10}$ combinations are.\n\nThe assumption that these quantities are stationary throughout the life of an animal (and/or the same across species) may not be warranted. For example, long-term acclimation over months resulting in RNA editing, could alter some $Q_{10}$s. Moreover, it is possible that minor genetic variations in channel proteins exist in the population so that different animals in the population could show modestly different $Q_{10}$s. Therefore, the point of this study is to ask generically how compensation occurs acutely assuming different temperature sensitivities for the processes, within the experimental range. For these reasons, in the absence of data, it is valuable to explore the $Q_{10}$ space to have on overview of how compensation takes place acutely at any point during the lifetime of an animal.\n\nOne of the most important and non-intuitive results from this work is seen in Figure 5, which demonstrates that a neuron can smoothly slide through mechanisms that govern a physiological process as temperature is changed. In the case of Figure 5, the repolarization of the last spike in the burst shows a large contribution from $I_{A}$ at 10\u00b0C but becomes small at 25\u00b0C while $I_{K\u2062C\u2062a}$ contributes little at 10\u00b0C and becomes dominant at 25\u00b0C. This shows that while both of these $K$ currents can contribute to spike and burst repolarization, their shares in these processes change, and the neuron is robust as it smoothly slides through these mechanisms. This smooth transition can occur precisely because these three K+ currents depend on voltage, time, and temperature differently.\n\nWe speculate that one advantage conferred by the expression of many different ion channels that differ in their properties is to provide many sets of such \u2018sliding stability mechanisms\u2019. Individual neurons in all species have large numbers of ion channel genes that encode proteins that give rise to the membrane currents that are usually measured and characterized in voltage-clamp. The model neurons used are loosely based on voltage-clamp measurements from crab and lobster stomatogastric ganglion (STG) neurons (Golowasch et al., 1992; Turrigiano et al., 1995) and have eight currents. That said, we now know that there are at least twenty to thirty and probably more voltage-gated ion channel genes in individual STG neurons (Northcutt et al., 2016). In some cases, several of these genes may contribute to one of the currents that we model here. For example, the delayed rectifier current modeled here may have contributions from at least three different genes, and $I_{A}$, modeled here, also probably has contributions from at least two different genes. Given that these genes encode similar but not identical protein subunits, it is not unreasonable to expect that these proteins may respond differently to temperature, and that the actual composition of the activated $K$ currents may reflect a change in these contributions as a function of temperature. This again, could provide still another \u2018sliding stability mechanism\u2019, and it would be interesting in the future to create models using data from currents that have been measured in isolation, such as in Ranjan et al., 2019.\n\nThe same principle of sliding circuit mechanisms is likely to hold when we approach network dynamics. The phase relationships of the pyloric rhythm are maintained over a considerable temperature range (Tang et al., 2010; Soofi et al., 2014). Likewise, the pyloric phase relationships are also maintained over a considerable frequency range (Hamood et al., 2015). In this latter case, it has been argued that the phase compensation depends on the conjoint action of a number of different cellular mechanisms, including synaptic depression (Manor et al., 1997; Hooper, 1997), and the activation and inactivation of $I_{A}$ and $I_{H}$\u00a0(Nadim et al., 1999; Nadim and Manor, 2000; Tang et al., 2010; Harris-Warrick et al., 1995). So, here the principle also holds: resilience and robust function may require smoothly moving between a variety of different cellular mechanisms.\n\nLong-term mechanisms for temperature adaptation and acclimation may extend robustness by changing the functional properties of ion channel proteins. In biological systems, sustained exposure to temperature often activates heat shock proteins and has effects on many cellular and molecular functions (Sharp et al., 1999). Interestingly, changes in ion channel composition can result from RNA editing, or changes in splice variants (Johnson et al., 2011; Lin and Baines, 2015). It is easy to imagine that these kinds of molecular mechanisms can result in shifts in the temperatures at which neurons and circuits may function. Acclimation to high temperatures usually requires at least 3\u20134 weeks of sustained alteration of the environmental temperature, and this is enough time to replace a large subset of ion channel proteins in the membrane. This raises a series of fascinating questions for how homeostatic regulation of excitability may be preserved if the molecular mechanisms that are engaged in homeostasis are also influenced by temperature.\n\nHysteresis in response to perturbation can result from a variety of time-dependent mechanisms. Figure 8 shows examples of hysteresis that can occur in response to temperature ramps, even in models in which the effects of temperature on the properties of each ion channel are viewed as essentially instantaneous. This hysteresis can occur because at high temperatures (>\u00a025\u00b0C) the network can produce several different patterns of activity or dynamical states (multistability). The activation and inactivation rates that characterize ion channel function are different for each of these states and therefore, as temperature is lowered, they lose stability in different ways. Of course, any long-term molecular mechanisms (not modeled here) that alter channel expression or splicing or phosphorylation, could produce long-lasting hysteresis.\n\nIn this work, we used a genetic algorithm (Alonso and Marder, 2019) to find temperature robust networks. It is important to reiterate that temperature robust neurons and networks are difficult to find doing random searches (Caplan et al., 2014). Therefore, despite the significant animal-to-animal differences in conductance densities seen across the population, randomly sampling conductance values is unlikely to result in successful solutions for individual animals. This argues that evolution has arrived at a series of biological mechanisms that give rise to successful temperature compensation. These are likely to include rules by which correlated values of conductances are produced, such as those found in homeostatic models (O'Leary and Marder, 2016; O'Leary et al., 2013).\n\nTaken at face value, models suggest that conductance densities drift throughout the life of an animal as a result of homeostatic processes (LeMasson et al., 1993; Liu et al., 1998; Golowasch et al., 1999a; O'Leary et al., 2014). Conductance densities can also change in an activity-dependent manner as a result of perturbations (Turrigiano et al., 1994; Golowasch et al., 1999a; Golowasch et al., 1999b; Golowasch et al., 1999a; Santin and Schulz, 2019; Golowasch, 2019). The temperature sensitivities of ion channels are dictated by their molecular structures, and for this reason it is tempting to assume that the temperature sensitivity of a given channel is similar throughout the lifetime of the animal. Nonetheless, as all channels are subject to splice variants and other mechanisms of molecular regulation, it is possible that environmental temperature results in changes in $Q_{10}$ that are consistent with acute robustness, even if there have been changes in conductance densities. This suggests that conductance densities and $Q_{10}$ regulation may be coordinately controlled in biological systems.\n\nOne of the most significant results of this paper is that temperature robustness of network function can take place in multiple different ways. In these models, both the membrane potential and the spiking patterns are affected by temperature changes and these changes appear to be different in every model we inspected. Across the models, different values of the maximal conductances G and temperature sensitivities $Q_{10}$ result in consistent differences in the duty cycle distributions. Measurements of the values of the maximal conductances in the STG show large variability across individual animals (Goaillard et al., 2009; Schulz et al., 2006;\u00a0Schulz et al., 2007; Temporal et al., 2014; Northcutt et al., 2016) so our expectation is that the duty cycle distributions of the biological cells will also display intricate dependencies with temperature, and that these distributions will be different across individuals.\n\nTemperature is not the only perturbation that crabs and lobsters experience. As with temperature, the responses of the STG to changes in pH are diverse across individuals (Haley et al., 2018), again consistent with the large amount of animal-to-animal variability in the expression of ion channels (Schulz et al., 2006; Temporal et al., 2014; Tran et al., 2019). It is therefore reasonable to assume that the responses to a global perturbation are diverse across individuals because different compositions of channel densities\u2014which produce similar pyloric rhythms\u2014are differentially resilient to any given perturbation. By the same token, as currents change as a function of temperature we expect that a second global perturbation of an individual may have qualitatively different effects at different temperatures, as is illustrated with the models in Figure 10. The interaction between temperature and a second perturbation is the subject of recent experimental studies (Haddad and Marder, 2018; Ratliff et al., 2018). These studies are consistent with the interpretation that different current configurations have different stability properties and that temperature changes these configurations.\n\nOne of the general take-home lessons from this work is that models can be resistant to a pharmacological perturbation at one temperature but the same model can be sensitive to the same perturbation at another temperature (Figure 10), and that different individuals may differ in their responses to the same perturbation. The potential implications of this for therapeutics are evident. But also evident, is that the search for therapeutic agents can be fraught if the assay itself is differentially sensitive to temperature or another perturbation. Moreover, the \u2018sliding mechanisms\u2019 provided by multiple ion channel genes and their molecular regulation suggests that over time therapeutic sensitivity to a given pharmacological intervention could be quite variable. These findings may contribute to our understanding of individual variable therapeutic efficacies within the population and across time within an individual.\n\n## Materials and methods\n\n### The model\n\nThe activity of the cells was modeled using single-compartment models similar to those described previously (Turrigiano et al., 1995; Liu et al., 1998; Goldman et al., 2001; Alonso and Marder, 2019). Each neuron has a sodium current, $I_{N\u2062a}$; transient and slow calcium currents, $I_{C\u2062a\u2062T}$ and $I_{C\u2062a\u2062S}$; a transient potassium current, $I_{A}$; a calcium-dependent potassium current, $I_{K\u2062C\u2062a}$; a delayed rectifier potassium current, $I_{K\u2062d}$; a hyperpolarization-activated inward current, $I_{H}$; and a leak current $I_{l\u2062e\u2062a\u2062k}$. The number of state variables per cell is 13. The units for voltage are $m\u2062V$, the conductances are expressed in $\\mu\u2062S$ and currents in $n\u2062A$. The pyloric network consists of three cells with the same ion channel types but different conductance densities. The interactions in the network consist of seven chemical synapses and are similar to Prinz et al., 2004. The synaptic current is given by $I_{s}=g_{s}\u2062s\u2062(V_{p\u2062o\u2062s\u2062t}-E_{s})$, where $g_{s}$ is the synapse strength, $V_{p\u2062o\u2062s\u2062t}$ is the membrane potential of the postsynaptic neuron and $E_{s}$ is the reversal potential of the synapse. The activation of a synapse $s\u2062(t)$ is given by\n\n$$\n\\frac{d\u2062s}{d\u2062t}=\\frac{s_{\u221e}\u2062(V_{p\u2062r\u2062e})-s}{\\tau_{r}+\\tau_{s}}\n$$\n\nwith,\n\n$$\ns_{\u221e}\u2062(V_{p\u2062r\u2062e})=\\frac{1}{1+e\u2062x\u2062p\u2062((V_{t\u2062h}-V_{p\u2062r\u2062e})/\u0394)},\n$$\n\nand\n\n$$\n\\tau_{s}=\\frac{1-s_{\u221e}\u2062(V_{p\u2062r\u2062e})}{k_{-}}.\n$$\n\nThese equations are identical to Prinz et al., 2004 except for the inclusion of a bound for the timescale of activation $\\tau_{r}=20msec$ (we want to avoid the case that as $s_{\u221e}\u21921$ then $\\tau_{s}\u21920$ and $s\u02d9\u2192\u221e$). All other parameters (except $g_{s}$) are identical to Prinz et al., 2004. Following Prinz et al., 2004, we set $E_{s}=\u221270mV$ and $k_{\u2212}=\\frac{1}{40}ms$ for glutamatergic synapses, and $E_{s}=\u221280mV$ and $k_{\u2212}=\\frac{1}{100}msec$ for cholinergic synapses. We set $V_{th}=\u221235mV$ and $\u0394=5mV$ for both synapse types.\n\nTemperature effects were included in this model as done previously by Caplan et al., 2014 and O'Leary and Marder, 2016. Temperature dependence was introduced in the time constants of the channel-gating variables $\\tau_{m_{i}}$ and $\\tau_{h_{i}}$, the maximal conductances $g_{i}$, the time constants of calcium buffering $\\tau_{C\u2062a}$, and the maximal conductances and time constants of the synapses. This was done by replacing all conductances $g_{i}$ by $R_{i}\u2062(T)\u2062g_{i}$ and all time scales $\\tau_{i}$ by $R_{i}\u2062(T)^{-1}\u2062\\tau_{i}$ where\n\n$$\nR_{i}\u2062(T)=Q_{10_{i}}^{\\frac{T-T_{r\u2062e\u2062f}}{10}}.\n$$\n\nHere $T$ is the temperature, $T_{ref}=10^{\u2218}$ is the reference temperature and $Q_{10_{i}}$ is defined as the fold change per 10\u00b0C from the reference temperature ($i$ indicates the process type). Finally, the calcium reversal potential $E_{C\u2062a}$ depends on temperature through the Nernst equation.\n\nThe total dimension of the model is 46\u00a0=\u00a03\u00a0\u00d7\u00a013\u00a0+\u00a07 with 13 state variables per cell, and 7 variables for the state of the synapses. In this work some parameters were considered fixed while others were allowed to take values in a range. The number of parameters we varied per cell is 9: the 8 maximal conductances plus the calcium time constant $\\tau_{C\u2062a}$. The temperature sensitivities were assumed to be the same for all cells and amount to 24 additional parameters. We need to specify 8\u00a0$Q_{10}$ values for the intrinsic maximal conductances (one per channel type), plus 11\u00a0$Q_{10}$ values for the time scales of each intrinsic process (not all currents inactivate), plus the $Q_{10}$ of the calcium time constant. The number of $Q_{10}$ parameters for the synapses is 4:2 for the maximal conductances (of each synapse type), and 2 for the timescales of activation. The models were simulated using a Runge-Kutta order 4 (RK4) method with a time step of $dt=0.05msec$\u00a0(Press et al., 1988). We used the same set of initial conditions for all simulations in this work $V=\u221251mV$, $m_{i},h_{i}=0$ and $[Ca^{+2}]=5\\muM$.\n\n### Finding parameters\n\nEach model is specified by the maximal conductances $G$ and calcium time constants of each cell (9\u00a0\u00d7\u00a03 parameters), and the temperature sensitivities $Q_{10}$ of each process (24 parameters). We recently introduced a function that upon minimization, results in values of the maximal conductances for which the activity of a single compartment corresponds to periodic bursting with a target frequency ($f_{t\u2062g}$) and duty cycle ($d\u2062c_{t\u2062g}$). The function uses thresholds to obtain temporal information of the waveform, such as spike times, and then uses it to assign a score or error that measures how close the solutions are to a target activity. This function is described in detail in Alonso and Marder, 2019 and was used here to find temperature robust networks.\n\nFor any given set of conductances we simulated the model for 20 s and dropped the first 10 s to minimize the effects of transient activity. We then computed the average ($<>$) burst frequency $<f_{b}>$, the average duty cycle $<dc>$, the number of crossings with a slow wave threshold $#_{sw}=\u221250mV$, the number of bursts $#_{b}$, and the average lags between bursts $<\u0394_{PD\u2212LP}>$ and $<\u0394_{PD\u2212PY}>$. To discard unstable solutions we checked if the standard deviation of the burst frequency and duty cycle distributions was small; a solution was discarded if $std({f_{b}})\u2265<f_{b}>\\times0.1$ or $std({dc})\u2265<dc>\\times0.2$. If a solution is not discarded we can use these quantities to measure how close it is to a target behavior,\n\n$$\nE_{f}=\\sumi=cell(f_{tg}\u2212<f_{b}>_{i})^{2}E_{dc}=\\sumi=cell(dc_{tg}\u2212<dc>_{i})^{2}E_{sw}=\\sumi=cell(#_{sw}\u2212#_{b})^{2}E_{ph}=(\u0394_{PD\u2212LPtg}\u2212\\frac{<\u0394_{PD\u2212LP}>}{\\tau_{b}})^{2}+(\u0394_{PD\u2212PYtg}\u2212\\frac{<\u0394_{PD\u2212PY}>}{\\tau_{b}})^{2}.\n$$\n\nHere $E_{f}$ measures the mismatch of the bursting frequency of each cell with a target frequency $f_{t\u2062g}$ and $E_{d\u2062c}$ accounts for the duty cycle. $E_{s\u2062w}$ measures the difference between the number of bursts and the number of crossings with the slow wave threshold $t_{sw}=\u221250mV$ (we ask that $#_{s\u2062w}=#_{b}$). $E_{p\u2062h}$ compares the lags between bursts (in units of the bursting period $\\tau_{b}=\\frac{1}{<f_{b}>}$) to a target lag $\u0394_{t\u2062g}$. These measures are discussed in more detail in Alonso and Marder, 2019.\n\nLet $G$ denote a set of maximal conductances (and $\\tau_{C\u2062a}$), we can then define an objective function\n\n$$\nE(G)=\\alphaE_{f}+\\betaE_{dc}+\\gammaE_{sw}+\u03b7E_{ph},\n$$\n\nwhere the coefficients $(\\alpha,\\beta,\\gamma,\u03b7)$ define how the different sources of penalties are weighted. In this work we used $\\alpha=10$, $\\beta=1000$, $\\gamma=1$, $\u03b7=10$. These weights were found by trial and error and kept fixed. The penalties $E_{i}$ were calculated using $T=10$ secs with $d\u2062t=0.05$ msecs. The target control behavior was defined as having all cells bursting with 20% duty cycle for $P\u2062D$ ($d\u2062c_{t\u2062g_{P\u2062D}}=0.2$) and 25% for the LP and PY cells ($d\u2062c_{t\u2062g_{L\u2062P,P\u2062Y}}=0.25$). The lag between bursts was targeted to be $\u0394_{P\u2062D-L\u2062P}\u2062t\u2062g=0.5$ and $\u0394_{P\u2062D-P\u2062Y}\u2062t\u2062g=0.75$. The target burst frequency of all cells was set to $f_{t\u2062g}=1\u2062H\u2062z$\u00a0(Bucher et al., 2006; Tang et al., 2010; Hamood et al., 2015).\n\nMinimization of the objective function produces sets of maximal conductances $G$ for which the resulting circuit activity mimics the pyloric rhythm. The minimization was performed over a search space of allowed values listed here: for each cell we searched for $g_{N\u2062a}\\in[0,10^{3}]$ ([$\\mu\u2062S$]), $g_{C\u2062a\u2062T}\\in[0,10^{2}]$, $g_{C\u2062a\u2062S}\\in[0,10^{2}]$, $g_{A}\\in[0,10^{2}]$, $g_{K\u2062C\u2062a}\\in[0,10^{3}]$, $g_{K\u2062d}\\in[0,10^{2}]$, $g_{H}\\in[0,10^{2}]$, $g_{L}\\in[0,10]$, $\\tau_{C\u2062a}\\in[0,2\\times10^{3}]$ (msec). All synaptic conductances were searched in the range $g_{s\u2062y\u2062n}\\in[0,5\\times10^{-2}]$ ([$\\mu\u2062S$]). The choice of search space contains our knowledge that some conductances like $g\u2062N\u2062a$ and $g\u2062K\u2062d$ are significantly larger than $g_{l\u2062e\u2062a\u2062k}$ or the synaptic conductances. This choice makes optimizations faster and produces diverse solutions. We discretized our search space by taking 103 equally spaced values for each parameter. We minimized the objective function (Equation 6) using a custom genetic algorithm (Holland, 1992)\u00a0on a desktop computer with 32 cores. For each network, we ran the algorithm using 1000 individuals taken at random in the search space for 10,000 generations. Finding a successful population takes several hours.\n\nTemperature robustness is achieved in our models by searching sets of $Q_{10}$ values that produce the target pyloric rhythm at each temperature. As in Caplan et al., 2014 and O'Leary and Marder, 2016 we searched for values of $Q_{10_{i}}$ between 1 and 2 for conductances and between 1 and 4 for activation/inactivation time scales. We built a new objective function by evaluating the previous objective function (Equation 6) over a set of control temperatures $T_{i}$ taken at 15\u00b0C, 20\u00b0C, 25\u00b0C and 35\u00b0C,\n\n$$\nE_{C}(Q_{10})=E(G,T=15^{\u2218})+E(G,T=20^{\u2218})+E(G,T=25^{\u2218})+E_{crash}(G,T=35^{\u2218}).\n$$\n\nHere, $E(G,T_{i})$ is the score of the solutions of the set of conductances $G$ at temperature $T_{i}$ and $E_{c\u2062r\u2062a\u2062s\u2062h}$ is the total number of spikes in all three cells. This last term is introduced to enforce that when the temperature is close to 35\u00b0C the network stops working as in experiments. Evaluation of the objective functions (Equation 6) and (Equation 7) requires that the model is simulated for a number of seconds and this is the part of the procedure that requires most computing power. Longer simulations will provide better estimations for the burst frequency and duty cycle of the solutions, but it will linearly increase the time it takes to evaluate them. If the simulations are shorter, evaluations of the objective function are faster but its minimization may be more difficult due to transient behaviors, and its minima may not correspond to stable pyloric rhythms.\n\nBecause we only target the activity at three temperature values, it is not guaranteed that the models will behave properly for temperatures in between. We found that if the system meets the target activity at the control temperatures, in the vast majority of the cases, the models also displayed the correct activity for temperatures in between, but there were exceptions (2 in 40 cases). This means that even if a solution achieves low scores, we are still required to screen the temperature values in between to make sure it is indeed temperature compensated over the full range. Increasing the number of control temperatures makes the estimation procedure slower and we met a good balance with 4 control temperatures. All models were subject to the same temperature perturbations and temperature compensation was confirmed in all cases by recording spikes and phases of bursting (Figures 1 and 3), membrane potential (Figure 2), and currents\u2019 dynamics (Figures 7, 8 and 9).\n\n### Membrane potential and current shares distributions\n\nThe membrane potential distributions were computed for 101 values of temperature between 10\u00b0C\u00a0and\u00a025\u00b0C. For each temperature, the models were simulated from identical initial conditions for 30 s with high numerical resolution ($d\u2062t=0.001$). The distributions were computed using the last 10 s of each simulation. The number of samples of the distributions at each temperature is 5\u00a0\u00d7\u00a0105.\n\n### Classification scheme\n\nWe classified the activity of each cell into several categories by inspecting their spiking patterns and features of their waveforms. For this we first compute the spike times and their ISI distributions. If the coefficient of variation $CV_{ISI}<0.1$, we declare the activity as spiking. We then measure the lag $\\delta$ between the spike onset and the crossing times with a slow wave threshold at $\u221250mV$. If this $\\delta<20msec$ we label the trace as tonic spiking and else, we label it as single-spike bursting. If $CV_{ISI}>0.1$ then we ask if the cell is bursting. For this we group spikes into bursts using a temporal threshold of 200\u00a0ms and compute the distributions of duty cycle $d\u2062c$ and instantaneous burst frequency $f_{b}$. If $CV_{dc}<1$, $CV_{f_{b}}<0.1$ and $mean(dc)>0$ we label the trace as regular bursting. If $mean(dc)>0$ and either $CV_{dc}>1$ or $CV_{f_{b}}>0.1$ we label the trace as irregular bursting. If $m\u2062e\u2062a\u2062n\u2062(d\u2062c)=0$ we label the trace as irregular spiker. If none of these conditions is met we label the trace as other and finally, if the total number of ISI values is not greater than 1 we label the trace as quiescent. The network state was classified as triphasic or not triphasic. We declared the network (NET) activity as triphasic if the frequency of the cells was similar (within 5%) and they fired in the right order, and not triphasic elsewhere.\n\n### Parameters used in this study\n\nEach model was assigned a six-character name. Here, we list which model was used in each figure. Code to simulate the network and the parameters of each model are supplemental to this work.\n\nFigure 1 4 \u00d7 6W66. Figure 1\u2014figure supplement 1: from left to right, WWZ3CN, FGFKQS, 71G6LA. Figure 1\u2014figure supplement 2: PLKTEM. Figure 1\u2014figure supplement 3: all models. Figure 2: G7P2WE. Figure 2\u2014figure supplement 1: from left to right, G7P2WE, 4 \u00d7 6W66, MAXTTP. Figure 3: 4 \u00d7 6W66, SJR46Y.Figure 4: WWZ3CN. Figure 5: FGFKQS.Figure 6: FGFKQS, 71G6LA. Figure 6\u2014figure supplement 1: in lexicographical order, B7SDOL, J9U8SQ, 4R2719, R3VIEW, Q8FBN1, RMZ8KZ, EF84RN, SJR46Y. Figure 7: (top to bottom), J9U8SQ, G81PUL, G7EOZ8, SAXT8Y, KNMLBC. Figure 8: OSHNMD, H5AIZR. Figure 9: WWZ3CN, FGFKQS. Figure 10: 4 \u00d7 6W66.\n",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "249598d7-88c9-4234-a3db-f6efb37c26a6",
+      "submission_id": "62715f29-dac6-46d4-99e6-81ee03aaa1d2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frances K Skinner, Krembil Research Institute, University Health Network Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55470.sa1](https://doi.org/10.7554/eLife.55470.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nTaking advantage of the pyloric network in crustaceans, this computational study beautifully shows how circuits and behaviour can adapt to the effect of temperature changes as a result of smooth adaptations in cellular and channel protein mechanisms, thus preserving the overall function of the circuit.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Temperature compensation in a small rhythmic circuit\" as a Research Advance for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after an extensive discussion between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife. As you will see, this was not an easy decision, but one in which the reviewers and Reviewing Editor reached consensus.\n\nSummary\n\nWe viewed this work as a thorough demonstration of the complex effects of temperature, but the results did not represent enough of a conceptual or mechanistic advance as presented. In essence, although all the authors found the work interesting and visually stunning, several concerns were raised, as detailed below in the reviewers' comments. Further, even though it was felt that the authors could potentially address some of the concerns raised (e.g., re Q10 variation assumptions etc.), all of the reviewers felt that something more besides a descriptive presentation was warranted to justify publication in eLife.\n\nReviewer #1:\n\nSince the paper that this work is building on is a tools and methods paper, we do not think that it is necessarily appropriate to be considered as a research advance paper, because A) it does not appear to be building on any of the tools and modeling techniques established in their previous publication, and B) it is using those techniques to explore a research topic that was not explored in the original publication. In other words, it would seem to be more appropriate to considered novel research, and not a research advance on the previous tools and methods paper. In their cover letter, the authors also considered this as an option. Our review is considered in the context of a research article.\n\nIn this manuscript, the authors use specialized computational methodologies and plotting techniques to uncover how current contributions in a set of models of the pyloric network change with temperature while still robustly generating stereotypical electrophysiological outputs. In selecting the models using their landscape optimization + a screening process approach, they ensured that the models were first capable of robustly generating triphasic spiking in the right order across different temperatures before analyzing current mechanisms through which this output emerges. For these models, they highlight a gradual change in current contributions as temperature is altered, showing that these current changes are complex and do not follow the same trends across models. In essence, they are able to show the existence of multistabilty, hysteresis and in general the non-trivial responses to changes in temperature.\n\nThe Marder lab has produced several interesting experimental and modeling studies examining temperature perturbations in previous works and this computational study adds to it. While the modeling work is robustly performed, it was thought that certain aspects of the modeling could be better contextualized in their connections to experimental literature. For example, when looking at hysteresis or removal of certain conductances during temperature changes, do the models \u2013 which were not designed to replicate any experimental electrophysiology outputs in these contexts \u2013 exhibit changes that are in line with what is seen experimentally (i.e. have there been any comparable experiments performed)? Could the authors consider/describe and/or design experiments that could be performed in light of their findings? For example, the finding that h-currents are not sensitive (and CaT are sensitive) to temperature (Figure 14C). Or perhaps a take-home finding would be that some types of currents (and not others) are sensitive? Is this something that the authors think appropriate in their context?\n\nReviewer #2:\n\nThis study compares models that reproduce operation of the pyloric network across a range of temperatures based on different sets of parameter values. Rather than identifying models that reproduce network operation using different sets of conductance densities (G), they identify models with different sets of G values and Q10 values. They then use their currentscape visualization approach to ascertain that \"temperature changes the relative contributions of the current to neuronal activity so that rhythmic activity smoothly slides through changes in mechanisms.\" Though interesting, there has been a lot of work in this area (i.e. temperature compensation in the pyloric network in particular, and more generally about degeneracy in the STG), which impacts the novelty of the current study. Moreover, I have significant reservations about how Q10 values are treated.\n\nMain Concerns:\n\n1) To my knowledge, the Q10 value for a given process (single channel conductance or gating) in a certain channel type tends to be quite consistent, which means it shouldn't differ much between two individuals of the same species. But if I understand the current study, the Q10 value for a given process is constant across the cells of a given network, but varies between networks. Is that correct? If so, is that justified? This comes up in the Discussion, where a handful of papers about RNA editing are cited. But in Garrett and Rosenthal, 2012, the difference is observed in different (arctic vs tropical) species of octopus. Reenan et al., 2015, address acute temperature effects, but don't report any physiological (Q10) changes. Is there any evidence for this sort of RNA editing in crabs/lobsters? Variation in Q10 values across individual is a critical yet dubious assumption. At the very least, the authors need to be transparent about this at the start of the paper.\n\n2) On the flip side, conductance densities within a network are fixed (i.e. do not vary with temperature). Is that correct? I thought that compensation was mediated via homeostatic changes mediated by changes in ion channel expression (O'Leary and Marder, 2016).\n\n3) There are 37 conductance densities in the model, plus 14 different Q10 values. Even before variations in Q10 values are considered, I suspect that there are many different G values that can produce models that behave appropriately across the full temperature range. Indeed, the solution space is high dimensional, which allows for a variety of solutions. It is not clear to me if the even higher dimensionality afforded by variations in Q10 is really necessary. For instance, if the analysis presented in Figure 4 of this paper (to models with different sets of Q10 and G values) was applied to models with the same Q10 values but different G values, would the results be fundamentally different? Wouldn't the currentscapes still look different because of differences in G values (especially if G values were subject to homeostatic regulation)? I suspect there would still be smooth transitions between different relative fractions of currents. Showing that this doesn't happen without variation in Q10 values is important if a conclusion of this paper is that Q10 variation is critical.\n\nReviewer #3:\n\nThis work uses simulations of a reduced computational model of the crustacean pyloric network to make the important points that (a) neuronal networks that generate multi-phase bursting rhythms may be able to do so robustly across temperature changes despite the fact that these changes have different effects on different currents, and (b) the mechanisms underlying rhythmogenesis, including relative importance of currents, may change with temperature. The work mostly uses methods first presented by the authors in a 2019 eLife paper but looks at new issues.\n\nGiven the past works by these authors and others, I do not find these points to be highly surprising, and the paper also has some flaws that I will discuss in more detail below. My general assessment is that the authors' vivid illustration of these points in a computational model is a worthy contribution to the literature, but not a major advance.\n\nSubstantive concerns:\n\n1) Much of the paper is written as a show and tell rather than as a flowing narrative. The authors tend to start sentences and paragraphs with phrases like \"Figure X shows\u2026\" instead of presenting ideas, with figures shown in support of these ideas. I think some significant rewriting is needed to rectify this issue.\n\n2) One of the issues that the authors consider is the relative roles of different currents in rhythms associated with different models and temperatures. I am not sure about the logic here: if a current has a larger magnitude in one regime than another, can we necessarily conclude that it has become more important? It may be that current A has grown larger, but current B has grown larger still; or perhaps current C, which is redundant with A, has also grown larger, such that A is no longer essential for rhythm generation. The authors need to be more careful with how this issue is presented; ideally, they would demonstrate that the changes are not just there, but are also meaningful. In a similar vein, they are making a choice to emphasize features that change between regimes, but there are also features that change very little, and this invariance could be as important as \u2013 or more important than \u2013 the changes. Finally, the extent of the changes in currents is not quantified \u2013 it is just displayed visually across Figures 8-10 and Figure 11. I would like to see some quantification of the changes, and I am not convinced that Figures 8-10 are needed at all since, to me, Figure 11 (which is beautiful) is much more illustrative.\n\n3) I think the Materials and methods section needs some improvements and additions. The authors should clarify how they set up and check their target features for a rhythm to be considered valid \u2013 are there specifications for each cell? for the network as a whole? what if activity is rhythmic but not every cell bursts on each cycle? how are temperatures between the 4 main values \"surveyed\", to ensure that rhythmicity persists? Also, the authors should provide experimental citations for target values used for duty cycles and conductance ranges. I would like some justification for the use of the non-standard reversal potential of -70 mV for glutamate and for why the leak conductance is varied over a much smaller range than other conductances. For those interested in reproducing the results, the authors should indicate what computing resources (desktop? cluster?.\u2026) and coding environment were used and how long simulations took (roughly \u2013 are we talking hours, days, weeks?). Finally, how were weights chosen for Equation 6?\n\n4) Although the figures overall are informative and aesthetically pleasing, some revisions and clarifications are needed:\n\na) Figure 1A: I don't understand the rationale for the phase labels used. Why does the \"PD off\" box enclose the time when the PD cell is active? Why is there overlap between \"LP on\" and \"LP off\"? And so on! Some explanations are needed. Also, I don't see 3 curves in the top panel of Figure 1C, and the \"PD, LP, PY\" labels are too far removed from the data in the middle panel.\n\nb) Figure 2: Panel B shows 6 examples. It would be nice to have some sort of summary of the findings over many models, not just these 6.\n\nc) Figure 3D: the caption erroneously suggests that the duty cycle is multi-valued in the pink box.\n\nd) Figure 6 and associated text: The authors should indicate how they define \"failure\" and how they detect it computationally (see (3) above).\n\ne) Figure 11 supplement is lovely but clarification is needed about what p(V) (probability of voltage) means here. I am not seeing any dramatic effects, which makes me wonder if there is any scientific reason to keep this figure.\n\nf) This is a very long paper. I am not convinced that the PCA adds much, and it's especially not clear to me how to get solid information from Figure 12C.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Temperature compensation in a small rhythmic circuit\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gary Westbrook as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Farzan Nadim (Reviewer #2); Alexandre Guet-McCreight (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript uses computational modeling to examine how neural circuits can produce consistent activity across a wide range of temperatures. The authors use a family of models of the crustacean pyloric network, based on prior work from the Marder lab and a recent paper of the same authors. The main finding is that similar activity in the network, at different temperatures, can arise from the dynamic contributions of different currents. Additionally, the study shows that different currents play a compensatory role for one another at different temperatures, and that strong perturbations to the system at different temperatures could result in very different outcomes. It is noteworthy that this detailed level of analysis of current contributions is not possible to do experimentally. Therefore, this work also offers a glimpse at the coordination of ion channel mechanisms that could be occurring beyond the scope of current-day experimental apparatuses.\n\nEssential revisions:\n\nThe reviewers found significant improvement over the original version, and the work was found to be comprehensive and worthy. However, concerns still remain. Overall, it was felt that the work as presented was too much on the descriptive side, the current narrative did not reflect what the interesting and important points of the study are. Some insight into why/how the compensation works needs to be provided. Specifics regarding these points are detailed here, and the various minor points raised by the reviewers are given below.\n\n1) The narrative of the results should be changed and arranged around the main points.\n\nThat is, the Results narrative should draw the reader's attention to the highlights of the findings and (when allowed) the details should be put in the supplemental figures and tables.\n\nIn particular the many details of all the models voltage ranges, duty cycles etc. could be put in figure supplements. For instance, Figure 8, is quite beautiful with its currentscapes, but it is unclear what the point of the figure is? What information is the reader is supposed to take from this? There's no useful information even in the legend. The one point they bring up in the Results is rather subtle (they could've at least put arrows or circles) and the main points they make in the Results are actually in the figure supplements.\n\n2) A problematic point here is that temperature changes are modeled in such an unconstrained manner (with 31 free parameters) that it is difficult to know whether any of the trajectories along different temperatures correspond to real biological changes. Does an ionic current respond to the same temperature change with widely different Q10s across preparations? If every single parameter is variable, independent of the conditions imposed, then what is the point of even measuring it? Would solution trajectories across a range of temperatures show more consistent underpinnings if the Q10s were consistent for each ionic current? In short, I find the unconstrained fitting of the parameters until the right solution is found akin to overfitting a curve to a few data points, and then trying to glean information from that fit. Please speak to this issue in some capacity.\n\n3) There are interesting and important points in the study: 1. compensation of currents for one another at different temperatures (which I presume is a form of homeostasis), 2. Smooth transitions of these currents for one another. 3. Different responses to the same perturbation at different temperatures. 4. Distinct ways that the system crashes at high temperatures and 5. The presence of temperature-dependent hysteresis. However, the narrative in the presentation of the results (especially in the first half) is mainly descriptive and detail oriented, rather than driven by questions.\n\n4) If one point of the study is that getting similar solutions at different temperatures requires ionic currents to assume different levels of contribution, this could be set as a central question and shown more directly. What is learned from how the models \"crash\" at high temperature? There may be some lessons there, but this point is not properly analyzed or explored.\n\nSimilarly, with the hysteresis. What is the lesson and what does it have to do with temperature or temperature compensation, rather than simply that a set of parameters may result in multistability?\n\n5) Subsection \u201cSpiking patterns during temperature ramps\u201d and Figure 3E: Although clearer in this updated manuscript, can the authors add something to the figure to make this more obvious (e.g. adding the number of spikes in each burst above each burst in the trace or adding an inset plot showing superimposed traces of a cycle with and a cycle without the extra spike). Without actually counting the number of spikes in each cycle it's not obvious to me just from looking at the trace.\n\n6) Paragraph three subsection \u201cSpiking patterns during temperature ramps\u201d: If these spiking patterns can be compared to experimental recordings, why is it the case that they are not compared here? In fact, this paragraph appears to end abruptly without much dissemination of Figure 4. I'm also hesitant on calling the duty cycle \"temperature invariant\", since it seems clear from Figure 4 that duty cycle definitely does vary with temperature to some degree \u2013 how the authors seem to define temperature-invariant strikes me as a bit too qualitative.\n\n7) Paragraph six of subsection \u201cDynamics of the currents at different temperatures\u201d: There are a lot of qualitative observations made regarding changes in currents across temperature and models. I feel as though this is an easy trap to fall into when there are many qualitative observations that could be made \u2013 for the reader, I find it becomes hard to follow since I end up going through the figures and squinting to try and see exactly what point the authors are trying to make for each observation. The main point is stated at the end and is very simple and much less specific: \"Together, these examples illustrate how a current can play different roles at different temperatures, and how diverse these mechanisms can be across individual solutions\". To bring this point forward better, I suggest the authors cut down on specific qualitative observations that individually do not carry much weight and speak more broadly. For example, you could replace the third sentence with something like \"the current contributions profiles in model 2 are different leading up to and following bursts\". Though I highlight this paragraph, I also feel that the writing is like this at various other points in the results as well.\n\n8) Final paragraph of subsection \u201cDynamics of the currents at different temperatures\u201d: Is there a case where current contribution transitions across temperature are not smooth? And is there any reason to believe that they would not be smooth in the first place? If not, I would argue that this does not seem like a very surprising finding given that many e-phys features are preserved and change gradually with temperature themselves. Of course, it is still informative as to why the e-phys features change gradually \u2013 just not really surprising. Perhaps some of the points put forth in the discussion should be first mentioned at this stage in the results to help the reader better understand why this finding is both important and non-intuitive.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Temperature compensation in a small rhythmic circuit\" for consideration by eLife. Your revised article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gary Westbrook as the Senior Editor The following individuals involved in review of your submission have agreed to reveal their identity: Farzan Nadim (Reviewer #2); Alexandre Guet-McCreight (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus, the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis manuscript uses computational modeling to examine how neural circuits can produce consistent activity across a wide range of temperatures. The authors use a family of models of the crustacean pyloric network, based on prior work from the Marder lab and a recent paper of the same authors. The main finding is that similar activity in the network, at different temperatures, can arise from the dynamic contributions of different currents. Additionally, the study shows that different currents play a compensatory role for one another at different temperatures, and that strong perturbations to the system at different temperatures could result in very different outcomes.\n\nEssential revisions:\n\nAll the reviewers found that the work was improved with better flow and was less descriptive. There are two aspects that the reviewers think should be addressed\n\n1) Although the hysteresis result is very interesting, the motivation for looking at it in the context of temperature sensitivity/robustness still isn't provided, nor is the biological link. This aspect of the paper would benefit from providing more biological context about the significance of multistability with respect to temperature sensitivity.\n\n2) Clarification of the authors' treatment of Q10s with a reasonable justification in the discussion, rather than hand waving. Specifically, although it is safe to assume that not all of the Q10 values are known and the authors set reasonable bounds when fitting the Q10 values, the concern is not that the Q10 for membrane current X sits somewhere between 1 and 4, but that the Q10 for membrane current X differs between models A, B and C when, in fact, the molecular identify of current X is the same in all of those models, because a Q10 value is not something that is regulated. Thus, if the authors took the set of Q10 values from model A or B or C, and then, using that set of fixed Q10 values, re-ran their genetic algorithm to determine new sets of conductance combinations that produce an acceptable triphasic rhythm, one might expect that successful conductance combinations will be far less diverse than when Q10 values are allowed to differ (as shown in Figure 1\u2014figure supplement 1B). Without knowing the real Q10 values, we still won't know what the real conductance combinations could be, but we'd have a clearer picture of how diverse those combinations could be under biologically realistic conditions.\n\nAlthough we encourage such additional simulations, it is not a requirement. However, an expanded discussion of how Q10's are treated is warranted.\n",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f0dda2ed-5612-45ae-adb2-064737caa3ea",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C1",
+      "claim": "Temperature affects the conductances and kinetics of the ionic channels that underlie neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperature affects the conductances and kinetics of the ionic channels that underlie neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about temperature effects on ion channels, drawing from established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "5fd76bfd-e3ad-4a44-8076-bcbdc049ac91",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C2",
+      "claim": "Each membrane conductance has a different characteristic temperature sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Each membrane conductance has a different characteristic temperature sensitivity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by references to experimental measurements and is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "7d51b149-b041-44d3-b837-26ef69d867e0",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C3",
+      "claim": "Multiple different models can exhibit a triphasic pyloric rhythm over a range of temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "We produced multiple different models that exhibit a triphasic pyloric rhythm over a range of temperatures and explored the dynamics of their currents and how they change with temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "859bd280-e274-4cd4-935c-759566dd631e",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C4",
+      "claim": "Temperature can produce smooth changes in the relative contributions of the currents to neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperature can produce smooth changes in the relative contributions of the currents to neural activity so that neurons and networks undergo graceful transitions in the mechanisms that give rise to their activity patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the currentscape analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "45e5649c-d3f9-4e75-92b5-bd705fe8434c",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C5",
+      "claim": "Responses of the models to deletions of a current can be different at high and low temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, responses of the models to deletions of a current can be different at high and low temperatures, indicating that even a well-defined genetic or pharmacological manipulation may produce qualitatively distinct effects depending on the temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the perturbation experiments shown in Figures 9 and 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "7d32bb49-3db0-4f32-a9a7-be0447068ee5",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C6",
+      "claim": "If the currents involved in neuronal and network dynamics are differentially temperature-dependent, a system that is well-tuned to work at one temperature may not function at a different temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "if the currents involved in neuronal and network dynamics are differentially temperature-dependent a system that is well-tuned to work at one temperature may not function at a different temperature (Caplan et al., 2014; O'Leary and Marder, 2016; Tang et al., 2010; Tang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "d685fce8-ee74-450c-b578-f60dd0bf4865",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C7",
+      "claim": "Many ectothermic animals have neurons and circuits that function well over an extended temperature range.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, many ectothermic animals have neurons and circuits that function well over an extended temperature range (Robertson and Money, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "681dcde8-d951-45b3-949d-a68f90fe488f",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C8",
+      "claim": "Increasing temperature generally results in increases of channel maximal conductances and faster activation/inactivation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing temperature generally results in increases of channel maximal conductances and faster activation/inactivation rates (Frankenhaeuser and Moore, 1963).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "e91556f3-d55b-4fd1-93d4-98b1482199ab",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C10",
+      "claim": "Identified neurons in locust showed reversible changes in spike amplitude and duration of spikes as temperature varies from 18 to 35\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, identified neurons in locust showed reversible changes in spike amplitude and duration of spikes as temperature varies from 18 to 35\u00b0C (Heitler et al., 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "f36b3009-d285-4250-84dc-ad0eb2c34e9f",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C11",
+      "claim": "Neural excitability is differently affected by temperature across neuronal types in the jump neural circuit of grasshoppers.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in the jump neural circuit of grasshopers showed that neural excitability is differently affected by temperature across neuronal types (Abrams and Pearson, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "b633d211-74a7-431d-992e-1f82e9852eb9",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C12",
+      "claim": "The frequency/current (f/I) curves in both molluscan and locust neurons are not substantially affected by small temperature changes (6\u20138\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency/current (f/I) curves in both molluscan and locust neurons are not substantially affected by small temperature changes (6\u20138\u00b0C) (Connor, 1975; Heitler et al., 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "d0f0d6b2-2ec5-4dad-9393-fb1240d2099d",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C13",
+      "claim": "The f/I curves of auditory sensory neurons in grasshoppers remain largely unaffected by changes in temperature between 21\u00b0C and 29\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The f/I curves of auditory sensory neurons in grasshoppers remain largely unaffected by changes in temperature between 21\u00b0C and 29\u00b0C (Roemschied et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "ce09a513-775a-4f9c-9ea6-da2dcc377f8c",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C14",
+      "claim": "The duration of the two major phases of the C-start in hunting archerfish were temperature compensated.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a recent study in hunting archerfish showed that the duration of the two major phases of the C-start\u2014a fast escape reflex which follows prey release\u2014were temperature compensated (Krupczynski and Schuster, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "8701e3da-9cb1-431e-b0f5-e89d6180e58a",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C15",
+      "claim": "As temperature increases in the pyloric network, the frequency of the pyloric rhythm increases but the phases of the cycle at which each cell is active remain approximately constant.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies show that as temperature increases the frequency of the pyloric rhythm increases but the phases of the cycle at which each cell is active remain approximately constant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies on the pyloric network.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "a28711da-5ac3-4e5a-940e-dfc13c1feb2a",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C18",
+      "claim": "There are multiple sets of maximal conductances and temperature sensitivities that reproduce much of the experimental phenomenology previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that in these models, there are multiple sets of maximal conductances and temperature sensitivities that reproduce much of the experimental phenomenology previously reported (Tang et al., 2010; Tang et al., 2012; Soofi et al., 2014; Haddad and Marder, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the computational modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "69f88344-89c4-464e-8e50-e64123ad9f1f",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C19",
+      "claim": "In all 36 models studied, the contributions of the currents to the activity can be significantly different across temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed this study for 36 different models and found that in all cases, the contributions of the currents to the activity can be significantly different across temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the currentscape analysis performed on all models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "ea61bb44-f12c-4a30-a2d4-66b8492d9d23",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C20",
+      "claim": "A current that is important for burst termination at 10\u00b0C may no longer play that role at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The currents are not simply scaled up but instead become reorganized: a current that is important for burst termination at 10\u00b0C may no longer play that role at 25\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the currentscape analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "48a246fb-8018-46f6-8fe1-1c24fb225764",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C21",
+      "claim": "Deletion or blockade of a current can produce qualitatively different effects at high and low temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the contribution of a given current to a neuronal process can be replaced by another at different temperatures, deletion or blockade of a current can produce qualitatively different effects at high and low temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the perturbation experiments shown in Figures 9 and 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "0d9499c9-3e38-408a-a65f-f76db5a646d3",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C22",
+      "claim": "The model network consists of three cells, each modeled by a single compartment with eight currents.",
+      "claim_type": "EXPLICIT",
+      "source": "The model network consists of three cells, each modeled by a single compartment with eight currents as in previous studies (Golowasch and Marder, 1992; Buchholtz et al., 1992; Goldman et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the computational model used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "e56ed1c2-94c7-4af9-8b70-02da59a71b5c",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C27",
+      "claim": "The spike amplitude decreases and the spike threshold depolarizes as temperature increases in the LP cell of one model.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane potential changes with temperature in several ways: the spike amplitude decreases and the spike threshold depolarizes as temperature increases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 for the LP cell.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "5029ffdc-2ba0-44c8-b6c7-a1f9c4e67907",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C28",
+      "claim": "The effect of temperature on membrane potential is not consistent across models and depends on the precise values of conductances and temperature sensitivities.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of temperature on membrane potential is not consistent across models and depends on the precise values of conductances and temperature sensitivities.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2\u2014figure supplement 1 showing variability across models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "a96edce7-bddd-4d23-abae-d8129993bc7a",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C29",
+      "claim": "Temperature increases the peak amplitudes of some currents and decreases it for others in the PD cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperature increases the peak amplitudes of some currents and it decreases it for others, as indicated by the \u21d1 and \u21d3 arrows in red and green.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3 for two different models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "bbc8a57f-4bb0-4a4a-ad79-88ecbf5b69e3",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C30",
+      "claim": "The currentscapes are noticeably different at 10\u00b0C and 25\u00b0C indicating that the currents contribute differentially across temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "The currentscapes are noticeably different at 10\u00b0C and 25\u00b0C indicating that the currents contribute differentially across temperatures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4 comparing currentscapes at two temperatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "3c16d4c3-01fe-49b8-b7df-9c4b31453d68",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C36",
+      "claim": "At temperatures higher than 25\u00b0C some models do not display irregular behavior but just become quiescent, or produce subthreshold oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "At temperatures higher than 25\u00b0C some models do not display irregular behavior but just become quiescent, or produce subthreshold oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavior of models at high temperatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "203c21fe-c486-444d-8afb-c0f18e45bd0b",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C37",
+      "claim": "Other models display irregular and seemingly aperiodic regimes at temperatures higher than 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Other models display irregular and seemingly aperiodic regimes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7 displaying irregular activity at high temperatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "63d6df39-6a63-491e-ba7c-329ded31cc6e",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C38",
+      "claim": "In all models displaying irregular regimes at high temperature, there are timescales in the behavior that are much longer than the period of the rhythm at 10\u00b0C (\u2248 1 s).",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, there are timescales in the behavior that are much longer than the period of the rhythm at 10\u00b0C (\u2248 1 s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7 displaying activity at high temperatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "e52e163b-898b-447d-9064-bf9ae2a5cb29",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C39",
+      "claim": "In most models (34 of 36), the spiking patterns over the working temperature range are similar across the up and down temperature ramps but are not identical.",
+      "claim_type": "EXPLICIT",
+      "source": "In most models (34 of 36), the spiking patterns over the working temperature range are similar across the up and down ramps but are not identical, suggesting there are multiple stable attractors that correspond to the triphasic rhythm but differ slightly in their spiking patterns (Figure 1\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of temperature ramp experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "49813f2d-4a8f-40b3-8702-44ad4a2d594c",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C40",
+      "claim": "One model shows hysteresis where the cell ceases to produce spikes before reaching 35\u00b0C and remains quiescent until temperature is ramped down, with the temperature at which the cell resumes spiking being \u2248 2\u00b0C lower than the temperature at which it became quiescent.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell ceases to produce spikes before 600 s, which is also before reaching 35\u00b0C, and remains quiescent until temperature is ramped down. The temperature at which the cell resumes spiking is \u2248 2\u00b0C lower than the temperature at which it became quiescent, indicating that the system is multi-stable over that temperature range.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "c38d2208-940d-429e-af15-88dc0f7558c3",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C44",
+      "claim": "In most cases, about half of the models respond to complete removal of a current in different ways at 10\u00b0C and 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In most cases, about half of the models respond to complete removal in different ways at each temperature.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 10B quantifying responses across models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "0686bd56-8b5c-4584-89fa-ad67d3ddcdc6",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C47",
+      "claim": "North Atlantic lobsters and crabs routinely experience more than 25\u00b0C temperature swings during a year, and may see 8 - 10\u00b0C changes within a short time period.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, North Atlantic lobsters and crabs routinely experience more than 25\u00b0C temperature swings during a year, and may see 8 - 10\u00b0C changes within a short time period (Haefner, 1977; Stehlik et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on temperature ranges experienced by these animals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "3e4902e7-6493-457a-89f6-30a0d943b4e5",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C48",
+      "claim": "A neuron can smoothly slide through mechanisms that govern a physiological process as temperature is changed.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most important and non-intuitive results from this work is seen in Figure 5, which demonstrates that a neuron can smoothly slide through mechanisms that govern a physiological process as temperature is changed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5 showing smooth transitions in current contributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "492f6d1e-96da-439a-bea4-e309af113bd1",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C50",
+      "claim": "There are at least twenty to thirty and probably more voltage-gated ion channel genes in individual STG neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "That said, we now know that there are at least twenty to thirty and probably more voltage-gated ion channel genes in individual STG neurons (Northcutt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study on ion channel gene expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "329020be-884c-47d1-98d0-33ef67294fa5",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C51",
+      "claim": "The delayed rectifier current modeled may have contributions from at least three different genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the delayed rectifier current modeled here may have contributions from at least three different genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from knowledge of ion channel diversity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "a65bfefe-70d9-4875-a891-66f62dddb809",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C53",
+      "claim": "The phase relationships of the pyloric rhythm are maintained over a considerable temperature range.",
+      "claim_type": "EXPLICIT",
+      "source": "The phase relationships of the pyloric rhythm are maintained over a considerable temperature range (Tang et al., 2010; Soofi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "0b9008f4-7c49-4e7f-b14b-cfeb8dafa9fd",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C54",
+      "claim": "The pyloric phase relationships are maintained over a considerable frequency range.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the pyloric phase relationships are also maintained over a considerable frequency range (Hamood et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "0b640194-95e7-4bfa-adc4-4a2daf829a06",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C56",
+      "claim": "Changes in ion channel composition can result from RNA editing, or changes in splice variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, changes in ion channel composition can result from RNA editing, or changes in splice variants (Johnson et al., 2011; Lin and Baines, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on molecular mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "c6a74f82-9cde-4c6e-bb82-2ebec6e5757b",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C57",
+      "claim": "Acclimation to high temperatures usually requires at least 3\u20134 weeks of sustained alteration of the environmental temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Acclimation to high temperatures usually requires at least 3\u20134 weeks of sustained alteration of the environmental temperature",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge of acclimation processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "3962c330-d82c-4fa9-be6a-1e99d13fd83f",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C58",
+      "claim": "Temperature robust neurons and networks are difficult to find doing random searches.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to reiterate that temperature robust neurons and networks are difficult to find doing random searches (Caplan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous computational work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "d278fa74-79c9-40ca-918d-c8c2e5484824",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C59",
+      "claim": "Conductance densities can change in an activity-dependent manner as a result of perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Conductance densities can also change in an activity-dependent manner as a result of perturbations (Turrigiano et al., 1994; Golowasch et al., 1999a; Golowasch et al., 1999b; Golowasch et al., 1999a; Santin and Schulz, 2019; Golowasch, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "1cb38556-da42-4a3c-b946-3fe3430c0d4c",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C60",
+      "claim": "Measurements of the values of the maximal conductances in the STG show large variability across individual animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements of the values of the maximal conductances in the STG show large variability across individual animals (Goaillard et al., 2009; Schulz et al., 2006; Schulz et al., 2007; Temporal et al., 2014; Northcutt et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "80df790d-0667-460a-9302-d0cfc1f94c36",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "claim_id": "C61",
+      "claim": "The responses of the STG to changes in pH are diverse across individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "As with temperature, the responses of the STG to changes in pH are diverse across individuals (Haley et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "31b8865a-bcbd-4357-aed9-04adc23fcbf8",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed computational models of the pyloric network consisting of three cells with eight currents each, and found multiple sets of maximal conductances and temperature sensitivities that produce triphasic rhythms over a temperature range (10-25\u00b0C), reproducing experimental phenomenology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18, and C22 describe the model structure and demonstrate that multiple parameter sets can produce temperature-robust triphasic rhythms. The computational results are presented with appropriate figures showing model behavior across temperatures, and the approach is clearly described in the methods section.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "61c9f041-115c-4011-ab08-abd9e7ced714",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Temperature produces smooth transitions in the relative contributions of ionic currents to neural activity, with currents becoming reorganized rather than simply scaled. A current important for burst termination at 10\u00b0C may no longer play that role at 25\u00b0C, allowing neurons to slide gracefully through different mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C19, C20, C29, C30, and C48 are supported by currentscape analysis shown in Figures 3-5. The visual data clearly demonstrates differential current contributions across temperatures in all 36 models studied. The smooth transitions in mechanism are well-documented through the currentscape visualizations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "a3c4afad-c487-424d-aa44-51071f92ce34",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Deletion or blockade of a current produces qualitatively different effects at high versus low temperatures. In approximately half of the models, complete removal of a current results in different responses at 10\u00b0C versus 25\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C21, and C44 are supported by perturbation experiments shown in Figures 9 and 10. The data demonstrates temperature-dependent responses to current deletions across multiple models and current types, with quantification showing about half of models respond differently at the two temperatures for most currents.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "d180e50d-c43a-4e50-bdb5-87a820c23202",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Temperature changes affect membrane potential features including spike amplitude and threshold, but these effects are not consistent across models and depend on the specific values of conductances and temperature sensitivities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C28 are supported by Figure 2 and Figure 2\u2014figure supplement 1, which show membrane potential distributions across temperatures for multiple models. The variability across models is clearly demonstrated, though the specific mechanisms underlying this variability could be explored further.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "14ec1800-2439-4eb4-84c5-df7cc13caaa9",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "At temperatures above 25\u00b0C, models either become quiescent/produce subthreshold oscillations, or display irregular aperiodic regimes with timescales much longer than the normal rhythm period (~1 s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C37, and C38 are supported by Figure 7 showing diverse high-temperature behaviors across five models. The emergence of slow timescales and irregular dynamics is clearly demonstrated, though detailed characterization of these regimes is acknowledged as beyond the scope of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "35265c33-7137-4ad1-ab66-47958117dac5",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Most models (34 of 36) show similar but not identical spiking patterns during temperature up and down ramps, suggesting multiple stable attractors. Some models exhibit hysteresis with temperature differences of ~2\u00b0C between transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39 and C40 are supported by Figure 8 and Figure 1\u2014figure supplement 2E showing temperature ramp experiments. The hysteresis is clearly demonstrated in specific examples, and the prevalence across models is quantified. The interpretation of multiple stable attractors is reasonable given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "fa089b0e-be91-4dbc-9633-13efe95cb142",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Temperature differentially affects ionic channel conductances and kinetics, with each conductance having different temperature sensitivity. While this poses challenges for neural function, many ectothermic animals maintain circuit function over extended temperature ranges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C6, C7, and C8 establish the biological context and are supported by appropriate citations to established literature. These are well-accepted principles in the field that motivate the computational study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "80d246a4-f261-4b79-aaf2-7b079287ea11",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior experimental work demonstrates diverse temperature effects on neural excitability across neuron types, with some properties (f/I curves, phase relationships) showing temperature compensation while others (spike amplitude, duration) show temperature dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 summarize prior experimental findings and are supported by appropriate citations. These claims accurately represent the cited literature and provide important context for the modeling work, though the authors do not independently verify these prior results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "ae65090a-dc61-4945-b9e6-d5ddf16cd813",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "North Atlantic lobsters and crabs experience temperature swings exceeding 25\u00b0C annually and may see 8-10\u00b0C changes within short time periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by citations to ecological studies. This provides biological relevance for the temperature range studied in the models (10-25\u00b0C), though the authors do not independently verify these temperature ranges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "929d7fdf-4ed8-485e-b9e5-8d7f48226d0c",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Individual STG neurons express at least 20-30 voltage-gated ion channel genes, with modeled currents like the delayed rectifier potentially having contributions from at least three different genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by citation to gene expression studies, while C51 is an inference based on knowledge of ion channel diversity. These claims provide important context for discussing model limitations, though the specific gene contributions to modeled currents remain uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "c3918005-9736-432a-bf39-0e31f324d25f",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The phase relationships of the pyloric rhythm are maintained over considerable temperature and frequency ranges in experimental preparations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C54 are supported by citations to experimental studies. These observations provide key targets for the computational models and are well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "91c67c41-0ada-41f3-acaf-6d5fe191627a",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Long-term acclimation mechanisms including RNA editing and splice variant changes can alter ion channel composition, with acclimation to high temperatures typically requiring 3-4 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by citations to molecular studies, while C57 is based on general knowledge. These claims appropriately distinguish acute temperature effects (modeled) from long-term acclimation (not modeled), though the 3-4 week timeframe lacks specific citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "4d4d328e-3bb6-4b2b-b328-89776ee27817",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Temperature robust neurons and networks are difficult to find through random parameter searches, requiring optimization approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by citation to prior computational work (Caplan et al., 2014). This justifies the use of genetic algorithms for parameter search and highlights the non-trivial nature of finding temperature-compensated solutions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "ce20f8ee-d801-4f3f-9031-5b5051841c00",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Conductance densities can change in activity-dependent manners following perturbations, and measurements show large variability in maximal conductances across individual animals in the STG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C60 are supported by multiple citations to experimental studies. These observations provide important biological context for interpreting model diversity and individual variability in temperature responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    },
+    {
+      "id": "3f0a9b9b-0843-4d2f-a68e-ced779246cbf",
+      "content_id": "df3fd80b-43e2-4126-9209-c8e87c979d5a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "STG responses to pH changes are diverse across individuals, similar to temperature responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by citation to experimental work. This provides a parallel example of individual variability in response to perturbations, supporting the broader interpretation of the temperature results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:33:01.122830Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7d51b149-b041-44d3-b837-26ef69d867e0",
+      "result_id": "31b8865a-bcbd-4357-aed9-04adc23fcbf8"
+    },
+    {
+      "claim_id": "a28711da-5ac3-4e5a-940e-dfc13c1feb2a",
+      "result_id": "31b8865a-bcbd-4357-aed9-04adc23fcbf8"
+    },
+    {
+      "claim_id": "0d9499c9-3e38-408a-a65f-f76db5a646d3",
+      "result_id": "31b8865a-bcbd-4357-aed9-04adc23fcbf8"
+    },
+    {
+      "claim_id": "859bd280-e274-4cd4-935c-759566dd631e",
+      "result_id": "61c9f041-115c-4011-ab08-abd9e7ced714"
+    },
+    {
+      "claim_id": "69f88344-89c4-464e-8e50-e64123ad9f1f",
+      "result_id": "61c9f041-115c-4011-ab08-abd9e7ced714"
+    },
+    {
+      "claim_id": "ea61bb44-f12c-4a30-a2d4-66b8492d9d23",
+      "result_id": "61c9f041-115c-4011-ab08-abd9e7ced714"
+    },
+    {
+      "claim_id": "a96edce7-bddd-4d23-abae-d8129993bc7a",
+      "result_id": "61c9f041-115c-4011-ab08-abd9e7ced714"
+    },
+    {
+      "claim_id": "bbc8a57f-4bb0-4a4a-ad79-88ecbf5b69e3",
+      "result_id": "61c9f041-115c-4011-ab08-abd9e7ced714"
+    },
+    {
+      "claim_id": "3e4902e7-6493-457a-89f6-30a0d943b4e5",
+      "result_id": "61c9f041-115c-4011-ab08-abd9e7ced714"
+    },
+    {
+      "claim_id": "45e5649c-d3f9-4e75-92b5-bd705fe8434c",
+      "result_id": "a3c4afad-c487-424d-aa44-51071f92ce34"
+    },
+    {
+      "claim_id": "48a246fb-8018-46f6-8fe1-1c24fb225764",
+      "result_id": "a3c4afad-c487-424d-aa44-51071f92ce34"
+    },
+    {
+      "claim_id": "c38d2208-940d-429e-af15-88dc0f7558c3",
+      "result_id": "a3c4afad-c487-424d-aa44-51071f92ce34"
+    },
+    {
+      "claim_id": "e56ed1c2-94c7-4af9-8b70-02da59a71b5c",
+      "result_id": "d180e50d-c43a-4e50-bdb5-87a820c23202"
+    },
+    {
+      "claim_id": "5029ffdc-2ba0-44c8-b6c7-a1f9c4e67907",
+      "result_id": "d180e50d-c43a-4e50-bdb5-87a820c23202"
+    },
+    {
+      "claim_id": "3c16d4c3-01fe-49b8-b7df-9c4b31453d68",
+      "result_id": "14ec1800-2439-4eb4-84c5-df7cc13caaa9"
+    },
+    {
+      "claim_id": "203c21fe-c486-444d-8afb-c0f18e45bd0b",
+      "result_id": "14ec1800-2439-4eb4-84c5-df7cc13caaa9"
+    },
+    {
+      "claim_id": "63d6df39-6a63-491e-ba7c-329ded31cc6e",
+      "result_id": "14ec1800-2439-4eb4-84c5-df7cc13caaa9"
+    },
+    {
+      "claim_id": "e52e163b-898b-447d-9064-bf9ae2a5cb29",
+      "result_id": "35265c33-7137-4ad1-ab66-47958117dac5"
+    },
+    {
+      "claim_id": "49813f2d-4a8f-40b3-8702-44ad4a2d594c",
+      "result_id": "35265c33-7137-4ad1-ab66-47958117dac5"
+    },
+    {
+      "claim_id": "f0dda2ed-5612-45ae-adb2-064737caa3ea",
+      "result_id": "fa089b0e-be91-4dbc-9633-13efe95cb142"
+    },
+    {
+      "claim_id": "5fd76bfd-e3ad-4a44-8076-bcbdc049ac91",
+      "result_id": "fa089b0e-be91-4dbc-9633-13efe95cb142"
+    },
+    {
+      "claim_id": "7d32bb49-3db0-4f32-a9a7-be0447068ee5",
+      "result_id": "fa089b0e-be91-4dbc-9633-13efe95cb142"
+    },
+    {
+      "claim_id": "d685fce8-ee74-450c-b578-f60dd0bf4865",
+      "result_id": "fa089b0e-be91-4dbc-9633-13efe95cb142"
+    },
+    {
+      "claim_id": "681dcde8-d951-45b3-949d-a68f90fe488f",
+      "result_id": "fa089b0e-be91-4dbc-9633-13efe95cb142"
+    },
+    {
+      "claim_id": "e91556f3-d55b-4fd1-93d4-98b1482199ab",
+      "result_id": "80d246a4-f261-4b79-aaf2-7b079287ea11"
+    },
+    {
+      "claim_id": "f36b3009-d285-4250-84dc-ad0eb2c34e9f",
+      "result_id": "80d246a4-f261-4b79-aaf2-7b079287ea11"
+    },
+    {
+      "claim_id": "b633d211-74a7-431d-992e-1f82e9852eb9",
+      "result_id": "80d246a4-f261-4b79-aaf2-7b079287ea11"
+    },
+    {
+      "claim_id": "d0f0d6b2-2ec5-4dad-9393-fb1240d2099d",
+      "result_id": "80d246a4-f261-4b79-aaf2-7b079287ea11"
+    },
+    {
+      "claim_id": "ce09a513-775a-4f9c-9ea6-da2dcc377f8c",
+      "result_id": "80d246a4-f261-4b79-aaf2-7b079287ea11"
+    },
+    {
+      "claim_id": "8701e3da-9cb1-431e-b0f5-e89d6180e58a",
+      "result_id": "80d246a4-f261-4b79-aaf2-7b079287ea11"
+    },
+    {
+      "claim_id": "0686bd56-8b5c-4584-89fa-ad67d3ddcdc6",
+      "result_id": "ae65090a-dc61-4945-b9e6-d5ddf16cd813"
+    },
+    {
+      "claim_id": "492f6d1e-96da-439a-bea4-e309af113bd1",
+      "result_id": "929d7fdf-4ed8-485e-b9e5-8d7f48226d0c"
+    },
+    {
+      "claim_id": "329020be-884c-47d1-98d0-33ef67294fa5",
+      "result_id": "929d7fdf-4ed8-485e-b9e5-8d7f48226d0c"
+    },
+    {
+      "claim_id": "a65bfefe-70d9-4875-a891-66f62dddb809",
+      "result_id": "c3918005-9736-432a-bf39-0e31f324d25f"
+    },
+    {
+      "claim_id": "0b9008f4-7c49-4e7f-b14b-cfeb8dafa9fd",
+      "result_id": "c3918005-9736-432a-bf39-0e31f324d25f"
+    },
+    {
+      "claim_id": "0b640194-95e7-4bfa-adc4-4a2daf829a06",
+      "result_id": "91c67c41-0ada-41f3-acaf-6d5fe191627a"
+    },
+    {
+      "claim_id": "c6a74f82-9cde-4c6e-bb82-2ebec6e5757b",
+      "result_id": "91c67c41-0ada-41f3-acaf-6d5fe191627a"
+    },
+    {
+      "claim_id": "3962c330-d82c-4fa9-be6a-1e99d13fd83f",
+      "result_id": "4d4d328e-3bb6-4b2b-b328-89776ee27817"
+    },
+    {
+      "claim_id": "d278fa74-79c9-40ca-918d-c8c2e5484824",
+      "result_id": "ce20f8ee-d801-4f3f-9031-5b5051841c00"
+    },
+    {
+      "claim_id": "1cb38556-da42-4a3c-b946-3fe3430c0d4c",
+      "result_id": "ce20f8ee-d801-4f3f-9031-5b5051841c00"
+    },
+    {
+      "claim_id": "80df790d-0667-460a-9302-d0cfc1f94c36",
+      "result_id": "3f0a9b9b-0843-4d2f-a68e-ced779246cbf"
+    }
+  ],
+  "comparisons": []
+}

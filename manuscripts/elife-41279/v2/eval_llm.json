@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The authors designed and successfully assayed two MPRA libraries: a synthetic library (SYN) containing all 624 unique combinations of 2-4 pluripotency TFBS in both orientations, and a genomic library (gWT/gMUT) with 407 genomic sequences containing three pluripotency sites plus matched mutant controls. Measurements were highly reproducible (R\u00b2=0.96-0.99) with near-complete recovery of library members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 describe the experimental design and technical quality metrics. The high reproducibility between replicates and near-complete recovery of sequences demonstrate robust experimental execution. These are well-documented methodological results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Synthetic elements with more binding sites generally drive higher expression (77% of SYN elements active, with 92% of 4-mers active), while only 28% of genomic sequences were active above basal levels. For active genomic sequences, 99% showed dependence on pluripotency TFBS. The presence of high-quality pluripotency TFBS is generally insufficient to drive expression in genomic contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 are supported by statistical analyses with appropriate multiple testing correction (Bonferroni, Wilcoxon rank-sum tests). The stark contrast between synthetic (77% active) and genomic (28% active) sequences is well-documented. The conclusion that TFBS presence is insufficient (C23) logically follows from the data showing most genomic sequences with consensus sites are inactive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The arrangement of TFBS influences synthetic element activity in a position-dependent manner. The highest expressing 4-mers have S and O sites in the first two positions and K followed by E in the last two positions. S is depleted (0/96) in position 4 of high expressers, while E is depleted (1/96) in position 4 of low expressers. Conversely, E is overrepresented (64/96) in position 4 of high expressers and S is overrepresented (48/96) in position 4 of low expressers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 describe clear positional patterns in the synthetic library data shown in Figure 2. The specific enrichment/depletion patterns are quantified and statistically robust given the exhaustive library design. These observations directly support the conclusion that precise TFBS arrangement influences synthetic element activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The order and orientation of pluripotency TFBS does not appear to contribute to genomic sequence activity. All four classes of gWT 3-mer sequences span the full range of expression levels, and there is no correlation (R\u00b2=0.001) between matched synthetic and genomic sequences with the same site configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by the data in Figure 3\u2014figure supplement 1. The lack of correlation (R\u00b2=0.001) between matched configurations is striking and well-documented. However, this result could also reflect confounding by other sequence features (spacing, affinity, flanking sequences) rather than definitively proving that order/orientation don't matter in genomic contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "An iRF model incorporating TFBS presence and position predicts synthetic element expression well (R\u00b2=0.87), with the most important features being TFBS presence/absence, E in position 4, and S in positions 1-2. An independent model using only TFBS presence achieved R\u00b2=0.56 but cannot distinguish between 4-mers (R\u00b2=0.00).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 report modeling results with clear performance metrics. The high R\u00b2 (0.87) for the positional model and the logical inability of the independent model to distinguish 4-mers (all have identical composition) are well-supported. Feature importance rankings align with the experimental observations in C24-C30.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Models trained on synthetic elements failed to predict or classify genomic sequence expression. Regression models showed no correlation with genomic data (R\u00b2=0.03 for independent, R\u00b2=0.001 for positional), and classification models performed at chance level (AUROC=0.47-0.52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 clearly document the failure of synthetic-trained models to generalize to genomic sequences. The near-zero R\u00b2 values and chance-level classification performance are unambiguous. This is a key negative result that motivates the subsequent analyses of genomic-specific features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Changing spacer sequences in synthetic elements had small but significant effects on 4-mer activity (average 6% change, range 0.3-25%). All tested 4-mers remained within the original expression range, but rank order changed with different spacers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 describe results from the mini spacer library experiment. The modest effect sizes (6% average) and maintained expression ranges are clearly documented in Figure 3\u2014figure supplement 3. The change in rank order despite small absolute effects supports the interpretation that spacer sequences affect regulatory grammar.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A gkm-SVM classified high vs. low genomic sequences with AUROC=0.75 and AUPRC=0.77. Many discriminative 8-mers (29/50) matched pluripotency factor motifs. PWM analysis showed no difference for SOX2 (p=0.07), modest differences for OCT4, and significant differences for KLF4 and ESRRB between high and low sequences. Summing PWM scores further separated high and low sequences, suggesting primary site quality contributes to genomic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 describe sequence-based modeling and PWM analysis. The gkm-SVM performance metrics are clearly stated, and the PWM score differences are supported by statistical tests (Welch's t-test) shown in Figure 4. The inference that site quality contributes to activity (C52) is reasonable given the data, though causality is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Low-affinity secondary sites for SOX2 and OCT4 are present in both high and low genomic sequences, making it unlikely they strongly contribute to expression differences. Primary site affinities contribute more to genomic regulatory activity than additional low-affinity sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by predicted occupancy analysis in Figure 4\u2014figure supplement 1. The presence of low-affinity sites in both high and low sequences argues against their importance. However, the conclusion relies on computational predictions of occupancy rather than direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "High activity genomic sequences show preferences for closely spaced OCT4-SOX2 sites (reflecting known interactions), as well as closely spaced KLF4-OCT4 and ESRRB-OCT4 sites. Binding site spacing may play a role in setting relative activities of genomic sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe spacing analysis shown in Figure 4\u2014figure supplement 2. The preference for close OCT4-SOX2 spacing is consistent with known biology. However, the analysis is descriptive and correlative; causality is not established. The conclusion that spacing 'may play a role' (C57) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "High activity genomic sequences show significant enrichment for FOXA1 sites and higher PWM scores for FOXA1 and NANOG. While FOXA1 is likely not present in mESCs, other FOX family members (FOXA2, FOXD1, FOXP1) are expressed and could act through these sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by motif analysis in Figures 4H and 5\u2014figure supplement 1A. The interpretation about FOX family members (C60) is supported by citations. However, the functional relevance of FOXA1 motifs when FOXA1 itself is absent requires the assumption that other family members bind similar sequences, which is plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Genomic sequences with higher TF occupancy (measured by ChIP-seq) have higher average MPRA expression, while chromatin accessibility (ATAC-seq) does not correlate with activity. High activity sequences show small but significant NANOG ChIP-seq overlap, though only 16% of NANOG-bound sequences have detectable NANOG motifs, suggesting indirect recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 integrate ChIP-seq and ATAC-seq data with MPRA results (Figure 5). The correlation with ChIP-seq but not ATAC-seq is clearly shown. The observation about NANOG binding without motifs (C64) is well-documented, and the inference about indirect recruitment (C65) is reasonable. However, the plasmid-based MPRA may not fully recapitulate chromatin context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "An iRF model with 58 features (including site affinities, spacing, additional TF sites, and ChIP-seq data) classified active vs. inactive genomic sequences with AUROC=0.67 and AUPRC=0.46. Models with feature subsets performed worse. The top feature was summed pluripotency factor affinity. Genomic sequences drive higher expression when they contain strong binding sites with preferred spacing embedded in sequences that recruit additional TFs or cofactors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 describe the comprehensive genomic model shown in Figure 6. The performance metrics are clearly stated, and the feature importance analysis (C69) is well-documented. The conclusion (C70) appropriately integrates multiple lines of evidence. However, the modest AUROC (0.67) indicates substantial unexplained variance, suggesting missing features or model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The strongest similarity between synthetic and genomic elements is that activity depends heavily on binding site number and affinity. The overall occupancy of a sequence by its cognate TFs is the primary determinant of activity, with the genomic model's predictive power deriving primarily from summing site number and affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 synthesize the major findings. The emphasis on occupancy is supported by multiple lines of evidence: the independent model performance (C35), the feature importance analysis (C69, C73), and the ChIP-seq correlation (C61). This represents the authors' central mechanistic interpretation of their data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Genomic element activity in plasmid MPRA does not correlate with native chromatin accessibility. While plasmid assays may not capture chromatin regulation, they often recapitulate chromosomally integrated element activity. Accessible regions may be bound by TFs without driving activity (e.g., poised elements). The correlation with ChIP-seq but not ATAC-seq supports the occupancy model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 discuss the relationship between MPRA results and chromatin state. The lack of correlation with ATAC-seq (C74) is documented in Figure 5\u2014figure supplement 1B. The citations supporting plasmid assay validity (C75) and poised elements (C76-C77) are appropriate. However, the interpretation requires accepting that plasmid-based assays are informative about genomic regulation despite lacking chromatin context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Two-thirds of genomic sequences with consensus motifs under ChIP-seq peaks had no MPRA activity. The sequence context in which occupied binding sites occur must contribute heavily to their activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 highlight a key observation that motivates the study's focus on sequence context. The 2/3 inactive fraction is clearly documented. The inference about sequence context (C80) is logical but somewhat circular\u2014the lack of activity in sequences with occupied sites is used to argue for context dependence, which is then invoked to explain the lack of activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Synthetic elements show clear evidence that activity depends on TFBS position and orientation, with elements having the same number and affinity of sites showing different activities based on arrangement. This suggests active genomic regulatory elements are defined by both TF-occupied motifs and cues in surrounding DNA sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 summarize the synthetic element findings and their implications. The position/orientation dependence is well-established by C24-C31 and C37-C38. The extrapolation to genomic elements (C83) is reasonable but represents an inference rather than direct demonstration, since synthetic-trained models failed on genomic sequences (C39-C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Models predicting synthetic element activity failed to predict genomic sequence activity. Changing spacer sequences in synthetic elements produced small but reproducible effects on expression. The authors interpret this as spacers affecting interactions between sites (regulatory grammar) rather than independent TFBS contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 integrate the model failure (C39-C41) with the spacer experiment (C42-C45). The interpretation (C86) is plausible given the data showing rank order changes despite small absolute effects. However, alternative explanations (e.g., spacers affecting DNA shape or creating weak binding sites) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C31",
+      "C82"
+    ],
+    "result": "For synthetic elements, expression is influenced by both the number and arrangement (order and orientation) of binding sites, with synthetic elements having the same composition showing different activities based on TFBS arrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result consolidates the main findings about synthetic elements from multiple claim groups. The evidence is strong and consistent across C18-C19 (number effects), C24-C30 (positional effects), and C37-C38 (modeling). The exhaustive library design provides definitive evidence for these effects in the synthetic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C32",
+      "C72"
+    ],
+    "result": "For genomic sequences, the relative activities are best explained by the predicted occupancy of binding sites, regardless of binding site identity and positioning. The overall occupancy of TFs is the primary determinant of genomic element activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result represents the authors' central conclusion about genomic sequences. It is supported by: lack of correlation with synthetic grammar (C34, R\u00b2=0.001), correlation with ChIP-seq occupancy (C61, C66), and feature importance showing summed affinity as top predictor (C69, C73). However, the modest model performance (AUROC=0.67) indicates this explanation is incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The authors predict that if synthetic element grammar reflects real cellular constraints, then synthetic-trained models should predict relative effects of single perturbations of genomic elements even if they cannot predict absolute expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is explicitly speculative about future experiments. It represents a testable hypothesis rather than a result from the current study. The prediction is logical given the findings, but no data are presented to support or refute it.",
+    "result_type": "MINOR"
+  }
+]

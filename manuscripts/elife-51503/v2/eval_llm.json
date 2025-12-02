@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "CNNs trained on 30 pancreatic islet epigenomic features achieved high predictive performance, with best results for promoters (AUROC=0.95, AUPRC=0.70), TF binding (AUROC=0.89, AUPRC=0.48), and DNA accessibility (AUROC=0.89, AUPRC=0.65). Lower performance was observed for enhancers (AUROC=0.77, AUPRC=0.24), active regions (AUROC=0.82, AUPRC=0.37), and repressed regions (AUROC=0.79, AUPRC=0.20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C43 provide comprehensive quantitative performance metrics (AUROC and AUPRC) for all feature categories, with appropriate test set validation on held-out chromosome 2 data. The performance differences across features are clearly documented and supported by figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "CNN convolutional filters captured regulatory sequence motifs, identifying 373 recurrent TF binding motifs including all TFs in training data (CTCF, FOXA2, PDX1, MAFB, NKX2.2, NKX6.1) and discovering ab initio motifs for islet-relevant TFs (RFX6, HNF1A, NEUROD1). Only 29/320 filters matched known motifs while 177 were informative, suggesting discovery of novel motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C54 demonstrate successful motif discovery with quantitative results (373 motifs at <5% FDR, 29 annotated vs 177 informative filters). The recovery of expected TFs validates the approach, while ab initio discovery of known islet TFs (with supporting citations C53) provides biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Application of CNN models to 109,779 variants from 380 T2D fine-mapped signals identified 11,389 regulatory variants (q<0.05, ~10% of credible set). These variants showed significantly higher evolutionary conservation (GERP scores, p=7.3e-04) than non-regulatory variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 describe the application methodology and provide clear quantitative results with appropriate statistical testing. The evolutionary conservation analysis (C60) provides independent validation of regulatory predictions using established conservation metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "CNN-predicted regulatory variants showed enrichment in pancreatic islet eQTLs (73/91 signals, ~80%) and chromatin accessibility QTLs (137 caQTLs, p=6.9e-20). Variants predicted to affect promoter/enhancer activities were preferentially enriched among top eQTL results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 provide multiple independent validations of CNN predictions using functional genomics data (eQTLs and caQTLs) with appropriate statistical testing. The enrichment analyses demonstrate biological relevance of predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "CNN-predicted regulatory variants showed good agreement with chromatin state annotations, with variants predicted to disrupt specific regulatory elements residing within those elements. Depletion was observed in heterochromatin and low methylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 demonstrate concordance between CNN predictions and independent chromatin state data, providing validation of prediction specificity. The depletion in heterochromatin is biologically expected and supports model validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CNN regulatory predictions converged with genetic and functional fine-mapping: regulatory variants were enriched among high gPPA variants (p=0.001, 28.8% at gPPA\u22650.8) and high fPPA variants (p=0.001, 40.6% at fPPA\u22650.8). Higher proportions of regulatory variants were observed at higher PPA ranks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 demonstrate convergence between CNN predictions and fine-mapping using rigorous permutation testing (1000 permutations). The quantitative enrichment metrics and statistical significance support the integration of these complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Enrichment of CNN-predicted regulatory variants was more pronounced for T2D signals acting through insulin secretion mechanisms compared to insulin action signals, which showed no enrichment over background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 demonstrate tissue-specificity of the islet-trained CNN model by showing differential performance on signals with different mechanisms of action. This is biologically expected and validates the tissue-specific approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CNN models identified regulatory variants at 327/380 fine-mapped signals. Among 74 signals fine-mapped to single variants (gPPA or fPPA\u226580%), 28 were predicted regulatory, including validated positive controls rs10830963 (MTNR1B) and rs7903146 (TCF7L2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 provide quantitative coverage statistics and include important positive controls with literature support (C77-C78). The identification of known functional variants validates the CNN approach for variant prioritization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Among 93 signals with multiple high fPPA variants (\u226520%), CNN predictions identified regulatory variants at 37 signals. At 25 signals, CNN integration highlighted a single most likely causal variant, refining fine-mapping resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 demonstrate the practical utility of CNN predictions for refining ambiguous fine-mapping results. The quantitative results show meaningful refinement at a substantial fraction of signals requiring additional resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "At the PROX1 locus, two variants in perfect LD (rs79687284 and rs17712208) were distinguished by CNN: rs17712208 showed much lower q-value (1.69e-160 vs 0.002), predicted H3K27ac reduction (\u0394=-0.12), disrupted HNF1B motif, and showed significant enhancer repression in luciferase assay (p=0.0001), while rs79687284 showed no significant effect (p=0.15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C94 provide comprehensive experimental validation of CNN predictions at a challenging locus with perfect LD. The integration of computational predictions (C87-C91), mechanistic insights (C90-C91), and experimental validation (C93-C94) strongly supports the causal role of rs17712208.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C106"
+    ],
+    "result": "Comparison with DeepSEA showed modest correlation (r=0.227-0.223, p<2.2e-16) but islet CNN outperformed on insulin secretion signals. DeepSEA failed to identify known functional variants at MTNR1B and TCF7L2, and showed only borderline significance for PROX1 rs17712208 (PanIslets p=0.049). Tissue-specific motifs (NEUROD1, HNF1B) were better captured by islet CNN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C106 provide systematic comparison with an established multi-tissue method, demonstrating advantages of tissue-specific training. The failure of DeepSEA on validated variants (C98-C99) and tissue-specific TFs (C102-C103) supports the value of tissue-specific models (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "CNNs successfully learned regulatory code from genomic sequences, with performance varying by feature type. Promoters, DNA accessibility, and TF binding were easiest to predict due to distinct sequence motifs. Performance was affected by data quality and number of training peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 provide reasonable interpretation of performance differences based on established deep learning principles (C109) and biological characteristics of features (C111). The explanations are consistent with observed results and general knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The study observed convergence of genetic fine-mapping, functional fine-mapping, and CNN regulatory predictions, representing the first report of enrichment of in silico regulatory predictions among fine-mapped variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 summarize the key finding of convergence across methods. While C113's novelty claim cannot be fully verified without comprehensive literature review, the convergence itself is well-supported by multiple analyses (C68-C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "CNN-prioritized variants were enriched in islet caQTLs and functional regulatory elements (promoters, strong open enhancers), consistent with prior studies. Integration with fine-mapping provides a powerful approach for identifying causal variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 provide additional validation through concordance with prior functional genomics studies (with appropriate citations). The conclusion about integration with fine-mapping (C117) is supported by the comprehensive analyses presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "GWAS have identified >400 T2D-associated signals, but identifying causal variants remains challenging as most map to non-coding sequences and likely act through transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C8 establish the research context with well-supported background information. C6 is supported by citation to Mahajan et al. 2018, while C7-C8 reflect established knowledge about GWAS findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Disease-associated variants likely perturb genes in disease-relevant tissues. T2D variants show enrichment in pancreatic islet enhancers, particularly in open chromatin/hypomethylated regions and 3D enhancer hubs. Islets are key for glucose homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 provide well-cited background on tissue-specificity and islet biology. All claims are supported by appropriate citations to prior work (Marbach 2016, Battle 2017, Parker 2013, Pasquali 2014, Thurner 2018, Miguel-Escalada 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Multiple epigenomic datasets exist for pancreatic islets and have been used for variant prioritization, but higher resolution methods are needed when multiple variants in LD reside in the same regulatory region. MPRAs offer a solution but are expensive and may not recapitulate cellular context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 establish the methodological context with appropriate citations. The limitations of current approaches (C16) and MPRAs (C18-C19) are well-established in the field and properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "CNNs are emerging tools for studying regulatory motifs and have been used for variant prioritization based on chromatin accessibility, modifications, and gene expression. Existing multi-tissue methods may miss tissue-specific regulatory grammar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are well-supported by citations to prior CNN work (Zhou & Troyanskaya 2015, Kelley 2016, Zhou 2018, Kelley 2018). C24 is speculative but represents a reasonable hypothesis motivating the tissue-specific approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The study trained tissue-specific CNNs on pancreatic islet epigenomic profiles to predict regulatory effects of T2D variants. The models recapitulate islet-specific regulatory grammar and can be integrated with fine-mapping for single-base resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 accurately summarize the study's approach and main findings. C26 is supported by motif analysis results (C44-C54), while C27 is demonstrated through the PROX1 example (C82-C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Deep learning models can predict epigenome features from DNA sequence. CNN models trained on islet data show convergence with conventional variant prioritization and can refine T2D association signals with experimental validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 summarize the abstract's main findings. C3 is supported by prior work and methodology, C4 by convergence analyses (C68-C72), and C5 by the PROX1 validation (C82-C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "A limitation is that tissue-specific CNN value depends on knowing the effector tissue. T2D involves multiple tissues (islets, liver, adipose, muscle), and tissues contain heterogeneous cell populations. Future cell-type-specific datasets may enable more precise inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 provide appropriate discussion of limitations and future directions. C119-C120 reflect established knowledge about T2D complexity and tissue heterogeneity. C121 is reasonable speculation about future improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "High-throughput experimental methods (MPRAs, HiDRA) have limitations including biases, errors, and restricted scope. CNN models can complement these by learning regulatory grammar and extrapolating to unassayed variants. Deep learning fine-mapping may become routine in GWAS analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 accurately describe limitations of experimental methods with appropriate citations. C124-C125 are reasonable speculation about complementary roles and future adoption, consistent with the demonstrated utility of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "A recent study (Liu et al. 2019) argued computational methods are not mature enough for GWAS fine-mapping, contrasting with the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 accurately cites a contrasting view from Liu et al. 2019. The current study's results provide evidence against this position through demonstrated convergence with fine-mapping and experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Multi-tissue CNN models may be biased toward features present across all tissues and may not detect tissue-specific signals with high confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 represent reasonable speculation about multi-tissue model limitations, supported by the comparative analysis with DeepSEA (C95-C103) showing better performance of tissue-specific models on tissue-specific signals.",
+    "result_type": "MINOR"
+  }
+]

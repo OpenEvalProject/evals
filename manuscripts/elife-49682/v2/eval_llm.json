@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8"
+    ],
+    "result": "The ERAT reporter successfully localizes to the ER in H9 CHO cells, as demonstrated by co-localization with ER-Tracker Red and the endogenous ER-resident protein PDIA6. This localization is maintained upon F8 induction by SAHA treatment and is not affected by bioenergetic inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C8 provide converging evidence from multiple imaging modalities (confocal microscopy with different ER markers) and demonstrate that the ERAT probe reliably reports ER-localized ATP under various experimental conditions. The Pearson correlation analysis (C8) provides quantitative validation of maintained ER localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C10",
+      "C12",
+      "C18"
+    ],
+    "result": "OxPhos-derived ATP constitutes the major ATP supply source for the ER compartment. All OxPhos inhibitors (oligomycin, rotenone, and FCCP) significantly decreased ER ATP levels immediately after administration, while glucose supplementation had no effect on ER ATP levels in medium supporting only OxPhos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C10, C12, and C18 collectively demonstrate through multiple experimental approaches (OCR measurements, flow cytometry, different cell lines) that ER ATP depends primarily on OxPhos. The control experiments showing 2-DG does not impair OxPhos (C5) and glucose supplementation has no effect (C10) strengthen the conclusion that glycolysis does not significantly contribute to ER ATP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Glycolysis inhibitors (IAA, 3-BrP, 2-DG) paradoxically increased ER ATP levels, while decreasing total cellular ATP and cytosolic ATP/ADP ratios. In contrast, OxPhos inhibition by oligomycin had minimal effects on cytosolic ATP/ADP ratios but strongly decreased ER ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data (C9, C11, C13-C17) consistently show glycolysis inhibitors increase ER ATP, the authors acknowledge these compounds have off-target effects and the mechanism remains unclear. The paradoxical increase in ER ATP when cytosolic ATP decreases suggests complex regulatory mechanisms that are not fully elucidated. The authors themselves state 'it is not possible to conclude whether ER ATP depends on glycolysis-generated ATP' (C18).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C33"
+    ],
+    "result": "SERCA inhibition by BHQ, Tg, or CPA rapidly decreases ER ATP levels in multiple cell types (INS1, H9 CHO), independent of extracellular Ca2+ availability. ER ATP levels show prolonged recovery after SERCA inhibitor removal, suggesting a 'memory' effect, and ATP import into the ER requires a Ca2+ gradient across the ER membrane maintained by SERCA activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 and C33 provide extensive evidence from multiple SERCA inhibitors, cell types, and experimental approaches (microscopy, flow cytometry) demonstrating the Ca2+ gradient dependence of ER ATP import. The correlation with ER Ca2+ depletion (C27) and independence from extracellular Ca2+ (C25) strengthen the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The decrease in ER ATP upon Tg treatment precedes the decrease in mitochondrial ATP and is not due to increased ATP usage in the ER. Tg treatment attenuated the decrease in cytosolic ATP/ADP ratio, suggesting reduced cytosolic ATP consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 provide temporal and compartment-specific ATP measurements that rule out alternative explanations for Tg-induced ER ATP depletion. The simultaneous measurement of ER and mitochondrial ATP (C28) and the oligomycin+Tg experiment (C30) provide strong evidence that the effect is specific to ER ATP import rather than general ATP depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Exogenously supplemented ATP in the perfusion buffer decreased the ER ATP pool through IP3R-mediated Ca2+ release, and this effect was neither reversed by addition of extracellular Ca2+ nor washout of the agonist, demonstrating sustained Ca2+ mobilization effects on ER ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 demonstrate through perfusion experiments that physiological Ca2+ mobilization (via IP3R) affects ER ATP levels in a sustained manner. This provides evidence that the Ca2+-ATP relationship is relevant under physiological signaling conditions, not just with pharmacological SERCA inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C44",
+      "C45"
+    ],
+    "result": "Using permeabilized CHO cells with mitochondrial respiration supported by pyruvate and malate, cytosolic Ca2+ (1 \u00b5M) significantly inhibits ATP import into the ER. The CaATiER mechanism responds to Ca2+ concentrations ranging from 500 nM to 2 \u00b5M, and the effect is specific to Ca2+ (not Mg2+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39, C44-C45 provide strong evidence from the semi-intact cell system that cytosolic Ca2+ directly inhibits ER ATP import. The controls demonstrating Ca2+ does not affect mitochondrial respiration (referenced in C44) and the specificity for Ca2+ over Mg2+ (C45) strengthen the conclusion. The dose-response relationship (C44) is physiologically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C47"
+    ],
+    "result": "Knock-down of Slc35b1 in CHO, HeLa, and INS1 cells significantly decreased baseline ER ATP levels and attenuated the ER ATP decrease upon SERCA inhibition or OxPhos inhibition, confirming SLC35B1 as the ER ATP transporter. The Ca2+-responsiveness is predicted to be mediated by a separate Ca2+-sensing component, not SLC35B1 itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 provide genetic validation across multiple cell types that SLC35B1 mediates ER ATP import. The Ca2+-dependent effects in the knockdown experiments (C40) and the attenuation of responses to SERCA and OxPhos inhibition (C41-C43) strongly support the CaATiER model. The prediction that SLC35B1 does not encode Ca2+-responsiveness (C47) is reasonable based on the E. coli expression data cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ER stress induced by F8 expression in H9 CHO cells increases Tg-triggered mitochondrial Ca2+ influx without altering basal mitochondrial or ER Ca2+ levels. This increased Ca2+ transfer is not due to increased ER Ca2+ stores but likely reflects enhanced Ca2+ mobilization or closer ER-mitochondria proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 demonstrate through multiple Ca2+ measurement approaches (mtGEM-GECO1, OCPC, GEM-CEPIA1er) that ER stress enhances ER-to-mitochondria Ca2+ transfer. The controls showing no change in basal Ca2+ levels (C50, C52) and the APB blocking experiment (C49) provide mechanistic insight. The interpretation regarding ER-mitochondria proximity is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "When F8 expression was induced by SAHA treatment, ER ATP homeostasis became more dependent on OxPhos, as oligomycin treatment caused greater reduction in ER ATP in SAHA-treated cells compared to uninduced cells. This increased dependence was not due to altered mitochondrial ATP supply or oxygen consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 demonstrate through multiple measurement approaches (flow cytometry, microscopy, Seahorse) that ER stress increases ER ATP dependence on OxPhos. The controls showing no change in mitochondrial ATP (C55) or OCR (C53) rule out alternative explanations. The cytosolic ATP/ADP measurements (C57) extend the finding beyond the ER compartment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C71"
+    ],
+    "result": "ER stressed H9 CHO cells exhibit an 'anti-Warburg effect' characterized by significantly reduced glucose uptake (measured by 2-NBDG) independently of the F8 inducer. This metabolic shift is specific to cells capable of mounting an ER stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 and C71 demonstrate through 2-NBDG uptake assays that ER stress causes decreased glucose uptake. The control experiment with 10A1 CHO cells (C59) that lack HDAC responsiveness and do not exhibit ER stress provides strong evidence for specificity. This represents a novel metabolic phenotype associated with ER stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C70",
+      "C77"
+    ],
+    "result": "ATP in the ER is mainly supplied from mitochondria through a highly efficient ATP transport mechanism that is antagonized by cytosolic Ca2+. The ER ATP level is insensitive to transient glucose deprivation and glycolysis inhibition, likely because ATP exiting mitochondria is spatially proximate to ER ATP transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64, C70, and C77 represent the main conclusions of the manuscript, synthesizing evidence from all experimental approaches. These conclusions are well-supported by the extensive experimental data, though the spatial proximity explanation (C64) remains somewhat speculative. The insensitivity to glycolysis inhibition (C63) is a key finding that distinguishes ER ATP homeostasis from cytosolic ATP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors propose that cytosolic Ca2+ inhibits ATP import into the ER through a Ca2+-responsive element facing the cytosolic surface, analogous to the MCU gating system. This mechanism conserves ATP for cytosolic functions when cytosolic Ca2+ is elevated and may have evolved as a bioenergetic advantage for multicellular organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 represent mechanistic and evolutionary interpretations of the experimental findings. While C65 is speculative regarding evolution, the mechanistic proposals (C66-C68) are well-supported by the experimental data. The reinterpretation of previous findings (C69) is reasonable given the new data. The analogy to MCU (C67) is appropriate given the similar Ca2+-sensing requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors predict that Ca2+ exchange and ATP exchange domains between mitochondria and ER are not compatible, suggesting either two categories of contact domains or temporally separated modes of operation. They speculate about potential roles of AMPK activation and ROS generation in ER stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C76 are largely speculative predictions and interpretations that extend beyond the direct experimental evidence. While these are reasonable hypotheses based on the findings, they require additional experimental validation. The authors acknowledge that altered mitochondrial function was not detected in their study (C74), which limits support for some of these speculations.",
+    "result_type": "MINOR"
+  }
+]

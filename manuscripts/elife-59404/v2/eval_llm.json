@@ -1,0 +1,183 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "SAMOSA can detect m6dA modifications on in vitro assembled chromatin arrays and accurately measure nucleosome positions. Using nonanucleosomal arrays with Widom 601 positioning sequences, the method achieved high accuracy in dyad calling (median \u00b1MAD = 4 \u00b1 2.97 bp from expected) and NRL measurements (median \u00b1MAD = 193\u00b17.40 bp pairwise, 192\u00b11.30 bp single-molecule averaged, compared to expected 193 bp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C22 collectively demonstrate successful in vitro validation of SAMOSA. The quantitative measurements (C18, C20) show high concordance with expected values for a well-characterized system (Widom 601 arrays). Controls (C21) and specificity analyses (C14, C22) support that the method specifically detects nucleosome-protected regions. The use of a gold-standard in vitro system with known properties provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "In vivo SAMOSA successfully captures nucleosome positioning in K562 cells by combining MNase-derived fragment ends with methyltransferase footprinting on the same molecule. The method sequenced 1,855,316 molecules and demonstrated dual-omic measurement capabilities, with fragment length distributions showing nucleosomal laddering and modification patterns capturing single-molecule nucleosome positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 describe the successful application of SAMOSA to cellular chromatin. The large number of molecules sequenced (C24), demonstration of expected nucleosomal patterns (C26, C27), and single-molecule resolution (C28) provide strong evidence. The claim of novelty (C29) regarding simultaneous dual-omic measurement is reasonable given the described capabilities, though comparative validation against other methods would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Unsupervised Leiden clustering of single-molecule autocorrelograms identified seven distinct oligonucleosome patterns genome-wide, stratifying chromatin by both nucleosome repeat length (NRL) and array regularity. These patterns fall into two broad categories: irregular clusters spanning multiple NRLs and regular clusters with defined NRLs ranging from ~172 bp to >200 bp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 describe a systematic clustering approach that identified reproducible patterns across replicates (C31). The clustering is based on quantitative features (autocorrelograms) and yields biologically interpretable categories (C32, C33). However, the biological significance and functional relevance of these seven specific clusters versus alternative clustering schemes is not fully established. The reproducibility across replicates strengthens confidence in the technical robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "SAMOSA captures nucleosome occupancy states at transcription factor binding sites, revealing 13 discrete accessibility states. Most TFs (except PU.1 and GATA1) showed significant enrichment for specific accessibility states, while control regions were depleted for accessible states. However, SAMOSA does not capture TF footprints as seen in DNase I or MNase cleavage data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 demonstrate that SAMOSA detects TF-associated chromatin states. The MNase cleavage patterns (C35, C36) resemble traditional data, and clustering identified distinct accessibility states (C40, C41). Statistical enrichment analyses (C41, C42) support biological relevance. The limitation regarding TF footprints (C39) is acknowledged with plausible explanations. However, the interpretation of these states and their relationship to TF binding dynamics remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Epigenomic domains are comprised of heterogeneous mixtures of oligonucleosome patterns that differ subtly in regularity and NRL. Domains are demarcated by their relative usage of specific oligonucleosome patterns rather than by homogeneous structures. Small but measurable shifts in median NRLs were observed (e.g., ~5 bp for H3K9me3, ~4 bp for H3K36me3), and H3K4me3 chromatin showed reduced regularity (78.0% vs 88.6% successful peak calls).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52, C57-C59 collectively demonstrate epigenomic heterogeneity. The quantitative measurements (C45, C46, C47) show small but consistent differences across domains. Statistical enrichment analyses (C50, C51, C52) support domain-specific patterns. The claim that these measurements are unattainable by other methods (C48) may be overstated, as some single-molecule methods exist, but SAMOSA does provide unique capabilities. The heterogeneity finding challenges simple models of chromatin organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Constitutive heterochromatin (H3K9me3 and satellite DNA) is enriched for irregular oligonucleosome patterns in addition to regular short NRL patterns, contrary to expectations of uniform regularity. This irregularity was confirmed by orthogonal analysis of Fiber-seq data and may have been missed by previous bulk-averaged methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, C71, C73 provide converging evidence for heterochromatin irregularity through SAMOSA data, statistical tests with significant q-values, and independent validation using Fiber-seq data. The explanation for why this was missed previously (C72) is plausible. Claims C55 and C56 represent important reinterpretations of prior findings. The orthogonal validation (C73) substantially strengthens confidence in this surprising result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SAMOSA offers multiple advantages over existing methyltransferase-based sequencing approaches: it avoids GpC/CpG sequence biases by using a nonspecific methyltransferase, reduces enzymatic bias and sample damage by natively detecting modifications without bisulfite conversion, and enables study of protein-DNA interactions at length scales beyond Illumina sequencing capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 describe methodological advantages that are well-supported by the technical design. The use of EcoGII (nonspecific methyltransferase) does avoid CpG/GpC biases, native detection avoids bisulfite damage, and PacBio long reads do enable longer-range analysis. However, these are largely design features rather than empirically demonstrated advantages through direct comparison. The claims are reasonable but would be strengthened by head-to-head comparisons with alternative methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The current SAMOSA protocol has several limitations: it enriches fragments of ~500 bp to ~2 kb (though PacBio can handle 10-15 kbp), is unlikely to capture transient protein-DNA interactions due to post-solubilization methylation, was performed in unsynchronized cells precluding cell cycle analysis, and provides proof-of-concept rather than high-coverage reference maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 honestly acknowledge technical limitations and areas for future improvement. These are reasonable assessments based on the experimental design (C66, C67) and sequencing depth (C68). The potential for future optimization (C65) is speculative but plausible given PacBio capabilities (C64). Transparent discussion of limitations strengthens rather than weakens the overall contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C74"
+    ],
+    "result": "SAMOSA results agree with recent electron tomography studies showing chromatin heterogeneity at multi-nucleosome scales and absence of 30 nm fibers. The observed irregularity in heterochromatin may be linked to dynamic restructuring by factors like HP1 that promote phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is supported by the data presented, and C70 provides external validation through agreement with orthogonal methods (electron tomography). However, C74 is explicitly speculative about the mechanistic link to HP1 and phase separation. While the speculation is reasonable and cited, it lacks direct experimental support in this study. The agreement with other methods (C70) strengthens confidence in the heterogeneity findings, but the mechanistic interpretation remains to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background claims establish that nucleosomes are the fundamental unit of chromatin with essential roles in transcription factor access, chromosomal compartment marking, and genome protection, with historical context from electron microscopy studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 represent established background knowledge supported by appropriate citations. These are not novel findings of this study but provide necessary context. C1 is fundamental knowledge, while C2-C4 are well-established functions supported by cited literature. C5 provides historical context. These claims are appropriately supported but represent prior work rather than new results.",
+    "result_type": "MINOR"
+  }
+]

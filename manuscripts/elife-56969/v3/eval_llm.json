@@ -1,0 +1,440 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Muscle-specific knockdown of pvf1 in adult male Drosophila leads to an obesity phenotype characterized by increased lipid droplet size in adipose tissue, lipid accumulation in oenocytes, and significantly elevated whole-animal TAG content. This phenotype is specific to pvf1 (not pvf2 or pvf3), more pronounced on high-sugar diet, and results from metabolic defects rather than increased food intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are well-supported by multiple lines of experimental evidence including BODIPY staining (Figures 1A-B), TAG assays with two independent RNAi lines (Figure 1C-D), dietary manipulation (Figure 1\u2014figure supplement 1B), and radioactive glucose feeding assays (Figure 1\u2014figure supplement 1C). The tissue specificity, genetic specificity, and mechanistic distinction from feeding behavior are all experimentally demonstrated with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Pvf1 protein is abundantly present in striated tubular leg muscles where it localizes between myofibrils and is concentrated at M and Z discs, but is absent from indirect flight muscles. Muscle-specific pvf1 knockdown strongly reduces Pvf1 protein levels in leg muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 are supported by immunostaining data using anti-Pvf1 antibody (Figure 1\u2014figure supplement 1D) showing both localization patterns in control flies and validation of knockdown efficiency. The tissue-specific distribution (tubular muscles vs IFMs) and subcellular localization are clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Single-nuclei RNA-sequencing was performed on 80 adult fly abdominal cuticles in two biological replicates, yielding 15,280 nuclei with median 192 genes per nucleus after quality control with SoupX and batch correction with Harmony. Clustering at resolution 0.1 identified 10 unique clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 describe the snRNA-seq methodology and are well-documented with appropriate quality control metrics (Figure 2\u2014figure supplement 1A-D, Supplementary file 1). The use of established computational tools (SoupX, Harmony, Seurat) with proper citations and the reporting of key metrics (read depth, nuclei count, genes per nucleus) demonstrate methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Three major clusters from snRNA-seq were assigned to adipose tissue, oenocytes, and muscle based on known markers (apolpp, fasn3, mhc respectively). These assignments were validated using GAL4 lines showing that Pellino, sallimus, and geko specifically express in adipose tissue, muscle, and oenocytes respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 are supported by both computational cluster analysis (Figure 2B, Figure 2\u2014figure supplement 1E) and experimental validation using tissue-specific GAL4 drivers (Figure 2\u2014figure supplement 1F-I). The combination of known marker genes and independent experimental validation provides strong support for cluster identity assignments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Minor clusters (4-10) are inferred to represent remnant tissues including gut/malpighian tubule and ejaculatory bulb based on gene expression patterns. Higher resolution clustering (0.4) identifies 15 clusters that may reflect heterogeneity within adipose tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C35 are based on inference from gene expression patterns without direct experimental validation of tissue identity. While the gene expression patterns are consistent with the proposed tissue identities (Supplementary file 2, Figure 2\u2014figure supplement 3), the lack of independent validation and the speculative nature of the heterogeneity interpretation (C35) make these claims uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Pathway enrichment analysis reveals EGFR and PVR RTK signaling is highly enriched in oenocytes. Egfr is specifically enriched in adipose tissue while Pvr is highly enriched in oenocytes. Immunostaining confirms PvR is most prominent on oenocyte surfaces, followed by adipose tissue, and localizes to muscle sarcolemma with relatively weak levels in leg muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are well-supported by both computational pathway analysis (Figure 2C, Supplementary file 3) and experimental validation through immunostaining (Figure 2D-E, Figure 2\u2014figure supplement 2B). The concordance between snRNA-seq predictions and protein localization data strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Oenocyte-specific loss of PvR signaling (via pvrDN overexpression or pvr RNAi) leads to obesity phenotypes similar to muscle-specific pvf1 knockdown, observed in both males and females. Over-expressing pvrDN in adipose tissue or muscle does not cause obesity, indicating Pvf/PvR signaling is primarily required in oenocytes to regulate lipid abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are strongly supported by tissue-specific genetic manipulations with appropriate controls (Figures 2F-G, Figure 2\u2014figure supplement 2A-D). The tissue specificity is demonstrated through systematic testing across multiple tissues, and the sex-independence rules out confounding effects from male accessory glands. The inference that muscle-derived Pvf1 signals to oenocytes (C48) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Two independent RNAi lines against ERK failed to replicate the obesity phenotype of oenocyte-specific pvrDN flies, suggesting PvR regulates lipid levels via an ERK-independent mechanism. Previous studies showed PvR can activate TOR pathway in cell culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by experimental data using two independent ERK RNAi lines (Figure 3A, C), providing genetic evidence against ERK involvement. The inference of ERK-independence (C50) is reasonable given the negative results with validated RNAi lines. C51 is appropriately cited to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Oenocyte-specific loss of TOR signaling (tsc1,tsc2 overexpression) or components of the Pi3K/Akt1 pathway (Pi3K92E, Pi3K21B, akt1 knockdown) leads to massive lipid accumulation in adipose tissue and oenocytes, indicating the Pi3K/Akt1/TOR pathway in oenocytes protects against obesity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are well-supported by systematic genetic manipulation of pathway components with consistent phenotypic outcomes (Figures 3B-E). Multiple independent manipulations of the same pathway yielding similar phenotypes strengthens the conclusion. The inference that this pathway protects against obesity (C57) is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Both muscle-specific pvf1 knockdown and oenocyte-specific pvrDN expression show strong down-regulation of p4EBP (a TOR target) in oenocytes, similar to tsc1,tsc2 overexpression but unlike InR loss. This indicates muscle Pvf regulates TORC1 signaling in oenocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by quantitative immunostaining of p4EBP (Figures 4A-C) with appropriate positive (tsc1,tsc2) and negative (inrDN) controls. The use of a direct TOR target (p4EBP) as readout and the concordance across multiple genotypes support the inference that Pvf regulates TORC1 (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Oenocyte-specific tsc2 knockdown strongly suppresses the obesity phenotype of pvrDN expression, and co-expression of constitutively active rheb completely rescues the phenotype, demonstrating TOR functions downstream of PvR in oenocytes to negatively regulate lipid deposits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are strongly supported by genetic epistasis experiments (Figures 4D-E, Figure 4\u2014figure supplement 1A-B). The rescue of the pvrDN phenotype by activating TOR signaling (either by tsc2 knockdown or rhebAV4 expression) provides compelling evidence for the pathway hierarchy. The inference of epistatic relationship (C65) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Oenocyte-specific InR loss does not increase lipid accumulation alone, but when combined with pvrDN, flies remain obese with adipose tissue lipid accumulation while oenocyte lipid accumulation is suppressed, indicating InR signaling is required for lipid accumulation specifically in oenocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by genetic interaction experiments (Figures 3D-E, Figure 4\u2014figure supplement 2A-B). The differential tissue-specific effects of InR loss (suppressing oenocyte but not adipose tissue lipid accumulation in pvrDN background) provide strong evidence for the tissue-specific role of InR. C66 is established knowledge appropriately stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Previous work showed InR activation in oenocytes causes lipid accumulation. Oenocyte-specific TOR activation (tsc2 knockdown) does not cause lipid accumulation. Together, the data demonstrate muscle-derived Pvf1 signals through PvR in oenocytes to activate TOR, protecting against obesity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C70 is appropriately cited. C71 is supported by experimental data (Figure 4\u2014figure supplement 1C-D). C72 represents a well-justified synthesis of multiple experimental results showing the complete signaling pathway from muscle Pvf1 through oenocyte PvR to TOR activation and obesity protection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Muscle-specific pvf1 knockdown and oenocyte-specific pvrDN flies show increased starvation resistance compared to controls, likely reflecting higher stored TAG levels that can be used for longer duration. Previous work established roles for oenocytes in starvation-induced lipid mobilization and VLCFA production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 appropriately cite prior work. C76-C77 are supported by starvation resistance assays (Figure 5A). The inference about nutrient mobilization capability (C78) and the mechanistic explanation based on higher TAG stores (C79) are reasonable given the experimental data, though C79 remains somewhat speculative without direct measurement during starvation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Muscle-specific pvf1 knockdown, oenocyte-specific tsc1,tsc2 overexpression, and oenocyte-specific pvrDN flies all show similar rates of lipid mobilization compared to controls, indicating loss of the muscle-to-oenocyte Pvf1 signaling axis does not impair lipid mobilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by radioisotope chase experiments measuring lipid mobilization rates (Figures 5B-C). The use of [1-14C]-oleate labeling followed by chase on cold food provides direct measurement of mobilization. The inference that the pathway does not affect mobilization (C83) is justified by the lack of differences across multiple genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Muscle-specific pvf1 knockdown, oenocyte-specific tsc1,tsc2 overexpression, and oenocyte-specific pvrDN flies all show increased rate of 14C incorporation into TAG fractions. In absence of effects on lipid mobilization, this indicates increased lipid synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by radioisotope incorporation experiments (Figures 5D-E). The inference that increased incorporation reflects increased synthesis (C87) is reasonable given the lack of mobilization defects, though alternative explanations (e.g., altered TAG turnover, changes in lipid trafficking) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In oenocyte-specific tsc1,tsc2 overexpression flies, oenocyte-specific fatty acid synthases (fasn2, fasn3) are strongly downregulated while acc and fasn1 are unchanged. This indicates TOR loss downregulates oenocyte lipogenic genes, and the increased lipid synthesis occurs through a mechanism independent of TOR's role in regulating lipogenic gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by RT-qPCR data (Figure 5F). The inferences (C90-C91) about the paradoxical increase in lipid synthesis despite reduced lipogenic gene expression are reasonable, though the mechanism remains unexplained. The authors appropriately acknowledge this paradox and suggest it requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Newly eclosed adult flies have low adipose tissue lipid content with small adipose cells. Over 3-7 days post-eclosion, adipose tissue builds up lipid stores through feeding and de novo synthesis, expanding significantly. Lipid droplet number per cell increases drastically with appearance of many smaller droplets, while average droplet size changes little, suggesting lipid buildup occurs through formation of new droplets that grow larger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by time-course imaging data (Figure 6\u2014figure supplement 1) with citation to prior work (C92). The detailed characterization of lipid droplet dynamics provides strong support. The inference about the mechanism of lipid buildup (C99) is reasonable based on the observed patterns, though direct tracking of individual droplets over time would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Muscle-specific pvf1 expression is low in newly eclosed flies and increases rapidly over 7 days. Premature muscle-specific pvf1 overexpression from day 1 leads to fewer large lipid droplets per adipose cell and more empty adipose cells, suggesting muscle-derived Pvf1 helps terminate the adipose tissue lipid buildup phase by suppressing lipid synthesis via oenocyte signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by RT-qPCR showing temporal expression (Figure 6A) and imaging/quantification of lipid droplets in overexpression flies (Figures 6B-D). The inference about Pvf1's role in terminating lipid buildup (C103) is well-supported by the temporal correlation and functional effects of premature expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C140"
+    ],
+    "result": "Muscle-Pvf1 serves as an inhibitory signal for suppressing de novo lipid synthesis once adult adipose tissue has accumulated sufficient lipid stores at the end of the lipid build-up phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104 and C140 (identical) represent the main conclusion integrating temporal expression data, gain-of-function experiments, and mechanistic studies. This synthesis is well-supported by the collective evidence showing: (1) pvf1 expression increases as lipid buildup completes, (2) premature expression inhibits buildup, (3) loss of function increases lipid synthesis, and (4) the pathway acts through oenocytes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The snRNA-seq dataset of adult abdominal region will serve as a resource for understanding adipose tissue, oenocyte, and muscle biology. A searchable webtool was created for data exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C105 is speculative about future utility but reasonable given the comprehensive nature of the dataset. C106 is factually supported by the description of the created resource with provided URL. The data deposition in GEO (GSE147601) enables reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "PDGF/VEGF ligands co-evolved with multicellularity and signal in organisms with tissue-level organization. In vertebrates, VEGF-A/B and PDGF-BB/-CC influence metabolic responses including adiposity and insulin resistance, though mechanisms are complex and context-dependent. Previous studies attributed effects to vascularization, but signaling to non-endothelial cells could be equally important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 appropriately cite and summarize prior literature. C113 is speculation but reasonable given the context. These claims provide appropriate background and motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "In Drosophila, PDGF/VEGF pathway ligands are encoded by pvf1, pvf2, and pvf3, which signal through the RTK Pvr to activate Ras/Raf/ERK. Pvf1 is closely related to both VEGFs and PDGFs. Pvf2 and Pvf3 are more ancestral and phylogenetically distinct, with Pvf2 lacking the conserved cysteine for cysteine knot formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 appropriately cite established knowledge about Drosophila PDGF/VEGF signaling and phylogenetic relationships. These provide necessary background for interpreting the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Core metabolic organs and signaling mechanisms are highly conserved between Drosophila and vertebrates. Drosophila adipose tissue, oenocytes, and muscles are functionally analogous to vertebrate adipose tissue, liver, and skeletal muscle. Various hormonal signals and the TOR pathway are conserved and well-studied in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C129 appropriately cite established knowledge about Drosophila as a metabolic model system. These provide essential context for the significance of the findings and justify the use of Drosophila for studying metabolic regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Drosophila Pvfs have been primarily studied in development and immunity, with metabolic roles less explored. This study identifies Pvf1 as a muscle-derived myokine regulating systemic lipid stores by inhibiting lipid synthesis, with oenocytes as primary targets identified by snRNA-seq. Pvf1 signals through PvR/Pi3K/Akt1/TOR in oenocytes and regulates adipose tissue lipid buildup in newly eclosed flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 appropriately summarize prior work and knowledge gaps. C132-C135 represent the main findings of the study and are well-supported by the collective experimental evidence presented throughout the manuscript, integrating genetic, molecular, and metabolic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Flies eclose with limited adipose tissue lipid stores and enter a developmental stage marked by increased lipid synthesis for lipid store accumulation. Muscle pvf1 expression increases rapidly during this stage, and premature expression interferes with lipid accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 are supported by imaging data (Figure 6\u2014figure supplement 1), RT-qPCR (Figure 6A), and gain-of-function experiments (Figures 6B-D). The temporal correlation between pvf1 expression and lipid buildup completion, combined with functional interference by premature expression, provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C141"
+    ],
+    "result": "This is the first evidence in a metazoan of a PDGF/VEGF ligand acting as a myokine that regulates systemic lipid homeostasis by activating TOR in hepatocyte-like cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C141 represents the novelty statement of the study. Based on the cited literature and the comprehensive experimental evidence presented, this claim of novelty appears justified. The study demonstrates a non-endothelial, metabolic role for PDGF/VEGF signaling through TOR activation in hepatocyte-like cells, which has not been previously reported in metazoans.",
+    "result_type": "MAJOR"
+  }
+]

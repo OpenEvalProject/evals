@@ -1,0 +1,1850 @@
+{
+  "submission": {
+    "id": "6c5b221f-1a13-4885-8af0-2f2a70f76a36",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:14:44.604422Z",
+    "updated_at": "2025-12-02T20:14:44.604422Z"
+  },
+  "content": [
+    {
+      "id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "submission_id": "6c5b221f-1a13-4885-8af0-2f2a70f76a36",
+      "content_type": "manuscript",
+      "content_text": "# Defining the function of OmpA in the Rcs stress response\n\n## Authors\n\n- Kilian Dekoninck<sup>1</sup> ([ORCID: 0000-0002-5093-1343](https://orcid.org/0000-0002-5093-1343))\n- Juliette L\u00e9toquart<sup>1</sup>\n- C\u00e9dric Laguri<sup>3</sup>\n- Pascal Demange<sup>4</sup>\n- Robin Bevernaegie<sup>5</sup> ([ORCID: 0000-0003-1605-9253](https://orcid.org/0000-0003-1605-9253))\n- Jean-Pierre Simorre<sup>3</sup>\n- Olivia Dehu<sup>2</sup>\n- Bogdan I Iorga<sup>2</sup> ([ORCID: 0000-0003-0392-1350](https://orcid.org/0000-0003-0392-1350))\n- Benjamin Elias<sup>5</sup> ([ORCID: 0000-0001-5037-3313](https://orcid.org/0000-0001-5037-3313))\n- Seung-Hyun Cho<sup>1</sup> ([ORCID: 0000-0002-5548-4239](https://orcid.org/0000-0002-5548-4239)) \u2020\n- Jean-Francois Collet<sup>1</sup> ([ORCID: 0000-0001-8069-7036](https://orcid.org/0000-0001-8069-7036)) \u2020\n\n### Affiliations\n\n1. WELBIO Brussels Belgium\n2. de Duve Institute, Universit\u00e9 catholique de Louvain (UCLouvain) Brussels Belgium\n3. Univ. Grenoble Alpes, CNRS, CEA Grenoble France\n4. Institut de Pharmacologie et de Biologie Structurale, IPBS, Universit\u00e9 de Toulouse, CNRS, Universit\u00e9 Paul Sabatier Toulouse France\n5. Institut de la Mati\u00e8re Condens\u00e9e et des Nanosciences (IMCN), Molecular Chemistry, Materials and Catalysis (MOST), Universit\u00e9 catholique de Louvain (UCLouvain) Louvain-la-Neuve Belgium\n6. Universit\u00e9 Paris-Saclay, CNRS UPR 2301, Institut de Chimie des Substances Naturelles Gif-sur-Yvette France\n\n\u2020 Corresponding author\n\n## Abstract\n\nOmpA, a protein commonly found in the outer membrane of Gram-negative bacteria, has served as a paradigm for the study of \u03b2-barrel proteins for several decades. In Escherichia coli, OmpA was previously reported to form complexes with RcsF, a surface-exposed lipoprotein that triggers the Rcs stress response when damage occurs in the outer membrane and the peptidoglycan. How OmpA interacts with RcsF and whether this interaction allows RcsF to reach the surface has remained unclear. Here, we integrated in vivo and in vitro approaches to establish that RcsF interacts with the C-terminal, periplasmic domain of OmpA, not with the N-terminal \u03b2-barrel, thus implying that RcsF does not reach the bacterial surface via OmpA. Our results suggest a novel function for OmpA in the cell envelope: OmpA competes with the inner membrane protein IgaA, the downstream Rcs component, for RcsF binding across the periplasm, thereby regulating the Rcs response.\n\n## Introduction\n\nThe cell envelope is the morphological hallmark of Gram-negative bacteria. It consists of an inner membrane (IM) surrounding the cytoplasm as well as an outer membrane (OM), an asymmetric bilayer with phospholipids in the inner leaflet and lipopolysaccharides in the outer leaflet (Silhavy et al., 2010). The two membranes are separated by the periplasm, a compartment in which lies a thin layer of peptidoglycan. The cell envelope is essential for viability: the OM serves as a permeability barrier against toxic compounds present in the environment while the peptidoglycan provides shape and osmotic protection to cells (Okuda et al., 2016; Typas et al., 2012; Egan et al., 2020).\n\nGiven the functional and structural importance of the envelope, bacteria need to respond to breaches in envelope integrity in a fast and adequate manner. Bacteria have therefore evolved sophisticated signaling systems that monitor envelope integrity and respond to perturbations (Ruiz and Silhavy, 2005; MacRitchie et al., 2008; Delhaye et al., 2019). In Escherichia coli and the Enterobacteriaceae, the Rcs system detects damage to the OM and the peptidoglycan (Wall et al., 2018; Laubacher and Ades, 2008; Farris et al., 2010). In response, Rcs modulates the expression of dozens of genes, including those involved in the biosynthesis of colanic acid, an exopolysaccharide that accumulates on the cell surface to form a protective capsule (Wall et al., 2018; Laloux and Collet, 2017).\n\nRcs signal transduction involves a multi-step phosphorelay (Wall et al., 2018). Under stress, the IM histidine kinase RcsC autophosphorylates, transfers the phosphoryl group to the IM protein RcsD and finally to the cytoplasmic response regulator RcsB. Rcs activity is modulated by two proteins that are not part of the phosphorylation cascade: RcsF and IgaA. RcsF is an OM lipoprotein that senses most Rcs-inducing cues, while IgaA is an essential IM protein that down-regulates Rcs (Takeda et al., 2001; Dom\u00ednguez-Bernal et al., 2004) by interacting with RcsD (Wall et al., 2020). When perturbations occur in the peptidoglycan or in the OM, RcsF, while remaining anchored in the OM, reaches across the periplasm to interact with IgaA, leading this protein to alleviate its inhibition of the phosphorelay, turning on Rcs (Cho et al., 2014; Hussein et al., 2018). In the absence of stress, RcsF is occluded from IgaA by interacting with OM proteins. A complex between RcsF and BamA, the core component of the \u03b2-barrel assembly machinery (BAM), was identified (Cho et al., 2014; Konovalova et al., 2014) and its structure solved (Rodr\u00edguez-Alonso et al., 2020). This complex forms as an intermediate (Cho et al., 2014; Konovalova et al., 2014): delivery of unfolded OM \u03b2-barrels (OMPs) to BAM triggers the release of RcsF from BamA and its transfer to OMP partners (Rodr\u00edguez-Alonso et al., 2020). Three abundant OMPs (OmpA, OmpC and OmpF) have been identified as RcsF partners (Cho et al., 2014; Konovalova et al., 2014). Under stress conditions, newly synthesized RcsF molecules fail to interact with BamA (Cho et al., 2014): they remain in the periplasm, free to bind IgaA, triggering Rcs.\n\nCrucially, whereas the general view is that OM lipoproteins are oriented toward the periplasm, previous work concluded that at least a portion of RcsF, a protein which is composed of an N-terminal disordered linker and a C-terminal globular domain required for signaling (Leverrier et al., 2011; Rogov et al., 2011), is exposed on the cell surface; OmpA, OmpC, and OmpF, but not BamA (Cho et al., 2014), were identified as potential vehicles for RcsF surface exposure (Cho et al., 2014; Konovalova et al., 2014; Konovalova et al., 2016). In a topological model of RcsF surface exposure (Konovalova et al., 2014), the lipid moiety of RcsF is anchored in the outer leaflet of the OM and the N-terminal disordered linker is exposed on the cell surface before being threaded through the lumen of the OMP partners. However, definitive evidence for this model is still lacking.\n\nIn addition, because OmpC, OmpF, and OmpA belong to two distinct structural groups, it is unclear whether RcsF interacts with its three OMP partners in a similar way. Indeed, OmpC and OmpF form 16-stranded \u03b2-barrels that associate into trimers in the OM. Because they form large \u03b2-barrels, they display a central pore (Basl\u00e9 et al., 2006; Yamashita et al., 2008; Radhakrishnan et al., 2010; Housden et al., 2013) that is large enough to accommodate a disordered peptide such as the RcsF linker. The situation is less clear for OmpA: although this protein, the most abundant OMP in Escherichia coli, has been studied for more than four decades, how it folds remains controversial. While some studies indicate that OmpA can also fold into a 16-stranded \u03b2-barrel with a large central pore (Singh et al., 2003; Stathopoulos, 1996), the predominant view is that OmpA adopts a two-domain structure with an N-terminal eight-stranded \u03b2-barrel inserted in the OM (Pautsch and Schulz, 1998) and a C-terminal, globular domain in the periplasm (Mot and Vanderleyden, 1994; Park et al., 2012). In this conformation, the \u03b2-barrel of OmpA is too small to accommodate a polypeptide. Thus, despite the tremendous work that has been done on OmpA, we do not know whether this protein adopts the large \u03b2-barrel structure when in complex with RcsF, or whether it folds into the predominant two-domain conformation. If the latter, where does RcsF bind OmpA?\n\nTo resolve these outstanding structural and mechanistic questions, here we dissected the OmpA-RcsF complex. By combining in vivo site-specific photo-crosslinking, targeted proteolysis, and nuclear magnetic resonance (NMR) titration, we established that OmpA adopts its two-domain structure when in complex with RcsF and that it is the C-terminal, periplasmic domain\u2014not the \u03b2-barrel\u2014that interacts with the lipoprotein. In addition, we identified residues in RcsF and in OmpA that are involved in the interaction, thus providing information about the binding interface. Taken together, our results indicate that the topology of OmpA-RcsF is different from that of OmpC/F-RcsF; they also imply that RcsF does not use OmpA to reach the cell surface. This has important implications for how RcsF senses OM stress: if the linker of RcsF is not on the surface in the OmpA-RcsF complex, then OmpA-RcsF cannot serve to monitor the state of the lipopolysaccharide leaflet via direct interactions with lipopolysaccharide molecules, as previously proposed (Konovalova et al., 2016). Finally, we determined the equilibrium dissociation constants of both the C-terminal domain of OmpA and the periplasmic domain of IgaA for RcsF and provide evidence suggesting that OmpA and IgaA compete for RcsF binding across the periplasm. Our results support a model in which OmpA serves as a buffer for RcsF, titrating it from IgaA, thereby fine-tuning Rcs activity.\n\n## Results\n\n### RcsF interacts with the C-terminal region of OmpA in vivo\n\nThe stress sensor lipoprotein RcsF was previously shown to be surface-exposed (Cho et al., 2014; Konovalova et al., 2014), and OmpA was described as a possible vehicle for its surface exposure (Cho et al., 2014; Konovalova et al., 2014). However, how OmpA folds when in complex with RcsF and whether this interaction allows RcsF to become surface-exposed remain to be determined.\n\nTo close this gap, we characterized the OmpA-RcsF interaction. In a previous study, we identified six RcsF residues (in the N-terminal disordered linker and at the tip of the signaling domain) as being part of the interaction interface between RcsF and OmpA (Cho et al., 2014). These residues were identified using a site-specific photo-crosslinking strategy in which a photoreactive, crosslinkable amino acid is inserted at specific positions in the protein of interest, with the help of an exogenous orthogonal tRNA/aminoacyl-tRNA synthetase pair (Chin et al., 2002). We first sought to confirm and extend these results to more clearly define the binding interface in RcsF. Instead of using the hydrophobic crosslinker p-benzoyl-L-phenylalanine like before (Cho et al., 2014), we used N6-((3-(3-methyl-3H-diazirin-3-yl)propyl)carbamoyl)-L-lysine (DiZPK), a lysine analog with substantially higher photo-crosslinking efficiency than p-benzoyl-L-phenylalanine (Zhang et al., 2011). We selected 11 positions distributed along the RcsF sequence, including four (R21, Q28, Q33, R45) in the disordered linker and seven on the surface of the signaling domain (N54, Q79, R89, K98, E110, P116, Q121) (Figure 1). After UV illumination, a\u00a0~\u00a055 kDa band, the size of the OmpA (40 kDa)-RcsF (14 kDa) complex, formed and was detected with an anti-RcsF antibody (Figure 1) for the following variants (in decreasing intensity): RcsFR89X, RcsFP116X, RcsFQ79X, RcsFR45X, RcsFK98X, RcsFQ121X, RcsFN54X, and RcsFE110X. The identity of the\u00a0~55 kDa band as OmpA-RcsF was further verified by showing that it did not form in \u2206ompA cells (Figure 1\u2014figure supplements 1 and 2). Thus, as in our previous study (Cho et al., 2014), complex formation was observed when the photoactivatable amino acid was inserted in the linker (R45) or at the tip of the signaling domain (Q79 and P116). The complex also formed when DiZPK was incorporated in other regions of the signaling domain, such as \u03b1-helix 1 (N54), \u03b1-helix 2 (R89 and K98), \u03b2-strand 2 (E110), and \u03b2-strand 3 (Q121) (Figure 1). Noteworthy, residues Q79, R89 and P116 are part of the binding interface between RcsF and the luminal wall of the BamA \u03b2-barrel in the recently published structure of the BamA-RcsF complex (Rodr\u00edguez-Alonso et al., 2020). Taken together, these observations substantially enlarge the region of RcsF known to interact with OmpA. Of note, we observed that the RcsFR45X, RcsFR89X and RcsFK98X variants formed a UV-dependent band migrating slightly higher than the OmpA-RcsF complex (Figure 1). Focusing on RcsFR89X, we identified this band as a complex between RcsF and OmpC/F because it did not form when ompR, a transcription factor required for the production of OmpC and OmpF (Hall and Silhavy, 1979; Chubiz and Rao, 2011), was deleted (Figure 1\u2014figure supplement 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60861/elife-60861-fig1-v2.jpg)\n\n**Figure 1.:** Upper panel: \u2206rcsF cells expressing wild-type (WT) RcsF or DiZPK-containing RcsF variants (from pSC253) were irradiated with UV light (+) or not (-), and protein samples were immunoblotted with an anti-RcsF antibody. A 55 kDa band, corresponding to the size of the OmpA-RcsF complex, was observed for eight of the mutants (R45, N54, Q79, R89, K98, E110, P116, Q121). Lower panel: residues of RcsF were replaced by DiZPK to map the zone of interaction with OmpA. In this cartoon of the NMR structure of RcsF (PDB: 2L8Y), the truncated N-terminal portion of the protein is shown as a dashed line and the residues that were found to interact with OmpA appear in magenta. The side chains of the residues that were selected for further experiments are shown as spheres, and other side chains are represented as sticks.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60861/elife-60861-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** To confirm the identification of the 55 kDa band as OmpA-RcsF, two DiZPK-containing RcsF variants (K98 and E110) were expressed from pSC253 in \u2206rcsF and \u2206rcsF\u2206ompA cells. Following UV exposure, the 55 kDa band only formed in cells in which OmpA was produced. Protein samples were immunoblotted with an anti-RcsF antibody.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60861/elife-60861-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** A band migrating slightly higher than OmpA-RcsF was observed with the RcsFR89X variant expressed from pSC253 in \u2206rcsF cells following UV exposure. This band corresponds to the OmpC/F-RcsF complex because it did not form in cells lacking ompR, a transcription factor required for the production of OmpC and OmpF. The unknown band marked by * migrates lower than OmpA-RcsF.\n\nWe next sought to identify where RcsF binds OmpA. The general view is that OmpA consists of two domains, an eight-stranded \u03b2-barrel anchoring the protein in the OM and a soluble C-terminal domain located in the periplasm, where it binds the peptidoglycan (Mot and Vanderleyden, 1994; Park et al., 2012; Figure 2A). However, an alternative conformation has been proposed in which OmpA folds into a large, 16-stranded \u03b2-barrel (Singh et al., 2003; Stathopoulos, 1996; Figure 2A). To gain insight into where RcsF binds OmpA and to characterize OmpA\u2019s conformation when in complex with RcsF, we first engineered an OmpA variant with a thrombin cleavage site inserted after residue V189 (OmpATH_189), in the middle of the OmpA sequence (Figure 2B). Taking the two-domain structure as a reference, the cleavage site was inserted between the N- and C-terminal domains. We then selected three DiZPK-containing RcsF mutants (RcsFR45X, RcsFQ79X, RcsFR89X) that formed a covalent complex with OmpA at high levels when exposed to UV light (Figure 1). These variants display DiZPK in three regions of RcsF: in RcsFR45X, DiZPK is present at the end of the disordered linker, while RcsFQ79X displays DiZPK in the large loop at the tip of the signaling domain and RcsFR89X displays it on the central \u03b1-helix 2 (Figure 1). These variants were expressed in E. coli cells also producing OmpATH_189, and complex formation was induced with UV light (Figure 2C). For all three RcsF variants, digestion of the 55 kDa OmpATH_189-RcsF complex with thrombin yielded a\u00a0~\u00a035 kDa band that was recognized by both anti-RcsF and anti-His antibodies (Figure 2C,D). Given the presence of a His-tag in the C-terminus of OmpA (Materials and Methods), we concluded that RcsF (14 kDa) interacts with the C-terminal region of OmpA (~16 kDa) in vivo.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60861/elife-60861-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of the two conformations of OmpA. Left: the predominant view is that OmpA adopts a two-domain structure, with an N-terminal \u03b2-barrel embedded in the OM and a C-terminal periplasmic domain binding the peptidoglycan. Right: an alternative conformation in which OmpA folds into a large \u03b2-barrel has also been proposed (Singh et al., 2003; Stathopoulos, 1996). (B) Schematic of OmpA variants containing a thrombin-specific cleavage site (scissors at positions V189 and I243) and a 6x-histidine tag (orange) at the C-terminus. (C\u2013D) In vivo site-specific photo-crosslinking of RcsF. \u2206rcsF cells co-expressing one of the DiZPK-containing RcsF variant (R45X, Q79X, or R89X) together with OmpA (wild-type, or with a thrombin site inserted at V189 or I243) were UV-irradiated. The RcsF variants were expressed from pSC253; OmpA, OmpATH_189,\u00a0and OmpATH_243 were expressed from the chromosome. After immunoprecipitation with anti-RcsF, protein samples were incubated (+) or not (-) with thrombin and immunoblotted with an anti-RcsF (C) or an anti-His-tag antibody (D). At least partial digestion of the\u00a0~55 kDa complex corresponding to OmpA-RcsF occurred with all three DiZPK-containing RcsF variants, yielding a band (RcsF-CleavedOmpATH_189 or RcsF-cleavedOmpATH_243) migrating at lower molecular weights that was detected by both antibodies.\n\nTo further delineate the region of OmpA that is important for complex formation, a second OmpA mutant with a thrombin cleavage site inserted after residue I243 (OmpATH_243) was generated (Figure 2B). Like OmpATH_189, OmpATH_243 (~10 kDa) could be photo-crosslinked to the three DiZPK-containing RcsF variants described above (Figure 2C,D). In all three cases, thrombin digestion of the OmpATH_243-RcsF complexes generated a smaller band (~30 kDa) that was recognized by anti-RcsF antibodies (Figure 2C,D). In contrast to OmpATH_189-RcsF, which underwent complete digestion, OmpATH_243-RcsF only underwent partial cleavage (Figure 2C,D), which probably reflected decreased accessibility of the cleavage site to the protease. This\u00a0~30 kDa band was also detected by anti-His antibodies (Figure 2D), indicating that the three tested residues of RcsF bind the region of OmpA between residue I243 and the C-terminus.\n\n### The C-terminal region of OmpA is necessary and sufficient for binding RcsF\n\nThe results above indicated that RcsF interacts with the C-terminal region of OmpA, raising the question of whether the N-terminal region also participates in this interaction. To probe this potential interaction directly, we generated an OmpA variant lacking the C-terminal moiety (OmpA1-170) and tested whether it could be crosslinked to RcsF (Figure 3A). Chemical crosslinking was carried out with 3,3\u2019-dithio-bis[sulfosuccinimidylpropionate] (DTSSP) (Cho et al., 2014). Although complexes formed in cells expressing wild-type OmpA, no complex was detected in cells producing OmpA1-170 (Figure 3A). In addition, expression of OmpA1-170 did not suppress the activation of the Rcs system (Figure 3A, see Figure 3\u2014source data 1 for statistics) that occurs in cells lacking OmpA and that results from the inability of RcsF to interact with this \u03b2-barrel (Cho et al., 2014).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60861/elife-60861-fig3-v2.jpg)\n\n**Figure 3.:** (A) Upper panel: Schematic of the truncated OmpA variant corresponding to the 8-stranded \u00df-barrel domain (OmpA1-170). Middle panel: In vivo chemical crosslinking of RcsF to OmpA and OmpA1-170. WT, \u0394ompA and \u0394ompA::ompA1-170 DH300 cells were incubated with or without 3,3\u2019-dithio-bis[sulfosuccinimidylpropionate] (DTSSP). Proteins were immunoblotted with anti-RcsF (same for the middle panel in B and C). The OmpA-RcsF complex was detected in WT cells but not in cells expressing OmpA1-170. Lower panel: \u00df-galactosidase (\u00df-gal) activity was measured using the transcriptional rprA-lacZ fusion on the chromosome (Majdalani et al., 2002) using the same DH300 strains as in the middle panel (same for the lower panel in B and C). Deleting ompA induces Rcs, expression of OmpA1-170 does not restore basal Rcs activity. (B) Upper panel: Schematic of the hybrid protein consisting of a fusion between the 8-stranded \u00df-barrel OmpX and the periplasmic domain of OmpA (OmpA171-325) (OmpAX). Middle panel: In vivo chemical crosslinking of RcsF to OmpA and OmpAX. WT, \u0394ompA and \u0394ompA::ompAX cells were incubated with or without DTSSP. The RcsF-OmpA complex was detected in WT cells as well as in cells expressing OmpAX (RcsF-OmpAX). Lower panel: Deleting ompA induces Rcs, expression of OmpAX restores basal Rcs activity. (C) Upper panel: Schematic of the C-terminal domain of OmpA (OmpA171-325) fused to the signal sequence and lipobox of the OM lipoprotein Pal (OmpAPal). Middle panel: In vivo chemical crosslinking of RcsF to OmpA and OmpAPal. WT and \u0394ompA harboring pDSW204, an empty vector, used as control, and \u0394ompA cells harboring pKiD22, expressing OmpAPal from an IPTG-inducible promoter, were incubated with or without DTSSP. The OmpA-RcsF complex was detected in WT cells as well as in cells expressing OmpAPal (OmpAPal-RcsF). Lower panel: Deleting ompA induces Rcs, expression of OmpAPal substantially decreases Rcs activity. See Figure 3\u2014source data 1 for details and statistics of middle panels. Mean (n\u00a0=\u00a03) and standard deviation (error bars) are shown. Differences were evaluated with Student\u2019s t test (ns, not significant; *p<0.05; ***p<0.001).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60861/elife-60861-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Superimposition of the structures of the membrane-embedded \u03b2-barrels of OmpA (blue; PDB: 1QJP; residues 1\u2013170) and OmpX (green; PDB: 2M07). The two \u00df-barrels, which have no sequence homology, can be superimposed with an RMSD of 2.49 \u00c5. (B) Surface representation of the \u00df-barrel domain of OmpA (PDB: 1QJP; residues 1\u2013170). The right panel is rotated 90\u00b0 around the horizontal axis from the left panel. In this conformation, OmpA does not display an open channel.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60861/elife-60861-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A,B) Cells expressing OmpA1-170 (A) and OmpAX (B) from the chromosome were harvested at mid-log phase (OD600\u00a0=\u00a00.4\u20130.6) and immunoblotted with antibodies specific for the periplasmic domain of OmpA (anti-OmpA186-325) or the \u03b2-barrel domain (anti-OmpA1-170) (Materials and methods). (C) Cells harboring pKiD22 were harvested at mid-log phase (OD600\u00a0=\u00a00.4\u20130.6). Expression of OmpAPal was induced with IPTG (20 \u00b5M). The membrane fraction was analyzed by SDS-PAGE and proteins stained with Coomassie Blue.\n\nTo test whether the N-terminal domain of OmpA was indirectly required for the OmpA-RcsF complex to form, we generated a hybrid protein (OmpAX) in which the C-terminal region of OmpA (OmpA171-325), corresponding to the periplasmic domain in the two-domain structure, was fused to OmpX (Figure 3B). OmpX is a small eight-stranded \u03b2-barrel that constitutes a structural homolog of the N-terminal region of OmpA when it folds as a small \u03b2-barrel (the two \u03b2-barrels can be superimposed with a root mean square deviation (RMSD) of 2.49 \u00c5; Figure 3\u2014figure supplement 1A). OmpX does not share sequence homology with the N-terminal region of OmpA (~25%) and can thus be considered as an OM anchor for the C-terminal region when fused to the latter as in OmpAX (Figure 3B). We found that OmpAX could be crosslinked to RcsF (Figure 3B) and that its expression fully suppressed Rcs activation (Figure 3B, see Figure 3\u2014source data 1 for statistics). Because we could not completely exclude the unlikely possibility that OmpAX could rearrange into a large \u03b2-barrel able to bind RcsF, we prepared an additional variant of OmpA (OmpAPal) in which the C-terminal domain (OmpA171-325) was fused to the signal sequence and lipobox (for lipid modification; Szewczyk and Collet, 2016) of the OM lipoprotein Pal, thus converting the C-terminal domain of OmpA into a lipoprotein (Figure 3C). Remarkably, expression of OmpAPal led to the formation of OmpAPal-RcsF and substantially decreased Rcs activity (Figure 3C, see Figure 3\u2014source data 1 for statistics). In these experiments, we confirmed that the expression levels of OmpA1-170, OmpAX and OmpAPal were similar to those of the wild type (Figure 3\u2014figure supplement 2). Thus, the C-terminal region of OmpA is necessary and sufficient for the interaction with RcsF, and the N-terminal region is dispensable. Altogether, these results are consistent with the conclusion that OmpA adopts its two-domain structure\u2014and not the large \u03b2-barrel conformer\u2014when in complex with RcsF. We therefore conclude that RcsF interacts with the C-terminal, globular domain of OmpA and that this interaction takes place on the periplasmic side of the OM.\n\n### RcsF interacts with the periplasmic domain of OmpA in vitro\n\nWe next sought to validate our in vivo observations by probing the formation of a complex between RcsF and the soluble, periplasmic domain of OmpA (OmpA186-325) in vitro using purified proteins. However, attempts to pull-down OmpA186-325 with a soluble, His-tagged version of RcsF failed (data not shown), suggesting that the interaction between these two proteins was weak. Because NMR is a highly effective tool to investigate weak protein-protein interactions (Vaynberg and Qin, 2006), we employed NMR titration experiments of 15N-labeled OmpA186-325 by RcsF. In this approach, the 15N-1H 2D NMR spectra of OmpA were recorded upon addition of increasing amounts of RcsF (2 and 10 molar equivalents); when OmpA and RcsF interact, concentration-dependent perturbations in the NMR spectra appear. Upon addition of RcsF, several OmpA residues showed chemical shift variations in 15N-1H 2D correlation experiments (Figure 4A,B, see Figure 4\u2014source data 1 for details). Most of the shifted residues (T240, G244, S245, D246, A247, G251, L252, K294 and A297; Figure 4B) were located near the tip of the periplasmic domain (Figure 4C,D), identifying this region, and in particular a flexible loop between \u03b2-strand two and \u03b1-helix 3, as part of the binding interface with RcsF. The importance of this loop for the OmpA-RcsF interaction was confirmed using site-specific photo-crosslinking: OmpA was strongly crosslinked to RcsF when DiZPK was introduced at residue D246, while weak complex formation was observed with OmpAR242X and OmpAY248X (Figure 4E). These results nicely fit with those obtained using OmpATH_243 (Figure 2B) that identified the same region of the C-terminal domain of OmpA as part of the zone of interaction with RcsF. Thus, taken together, our results allow us to conclude that RcsF interacts with the C-terminal domain of OmpA in its globular conformation, not only in vivo but also in vitro.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60861/elife-60861-fig4-v2.jpg)\n\n**Figure 4.:** (A) An expanded region of the HSQC titration spectra of 15N-labeled OmpA186-325 with RcsF. Several residues in the 1H/15N BEST-TROSY-HSQC spectrum of OmpA (blue) show chemical shift perturbations (CSP) upon addition of RcsF at molar ratios of RcsF to OmpA of 2 (green) and 10 (red). Arrows indicate the direction of the chemical shift changes upon addition of RcsF to OmpA. (B) CSPs induced by the addition of RcsF to 15N-labeled OmpA186-325. Residues that showed CSP larger than two standard deviation are colored in blue. Cartoon (C) and surface (D) view of OmpA186-325 (PDB: 2MQE): top view (on the left) and bottom view (on the right). The residues in OmpA that undergo a CSP larger than two standard deviation (as in panel B) appear as dark blue and are labeled. Most of these residues are located between \u03b2-strand 2 and \u03b1-helix 3. The residues R242 and Y248 that do not interact well with RcsF in (E) are colored in light blue. (E) To confirm the importance of the loop between \u03b2-strand 2 and \u03b1-helix 3 of OmpA for the interaction with RcsF, we used site-specific photo-crosslinking. \u0394ompA rcsF+ cells expressing wild-type (WT) OmpA or three DiZPK-containing OmpA variants (OmpAR242X, OmpAD246X, and OmpAY248X) from pPR21 were irradiated with UV light (+) or not (-), and protein samples were immunoblotted with an anti-RcsF antibody. A strong 55 kDa band, corresponding to the size of the OmpA-RcsF complex, was observed with the OmpAD246X variant, confirming the NMR data. Weak complex formation was also observed with OmpAR242X and OmpAY248X. The expression levels of the OmpA variants were verified by immunoblotting (lower panel).\n\n### IgaA and OmpA likely compete for RcsF across the periplasmic space\n\nRcsF turns on the Rcs response by interacting with the periplasmic domain of the IM protein IgaA under stress (Hussein et al., 2018). Here, we found that the interaction between RcsF and OmpA takes place in the periplasm (Figure 5A), thus suggesting that OmpA and IgaA compete for binding RcsF across this compartment. To investigate this hypothesis, we determined the effect of artificially increasing the IgaA concentration on the formation of the IgaA-RcsF and OmpA-RcsF complexes. In these experiments, a triple Flag-tagged, functional version of IgaA (Hussein et al., 2018) was expressed from an inducible plasmid. To monitor complex formation, we carried out chemical crosslinking using bis(sulfosuccinimidyl)suberate (BS3), a bifunctional crosslinker. Increasing the levels of IgaA led to changes in the IgaA-RcsF and OmpA-RcsF complexes that were inversely correlated: whereas overexpressing IgaA led to more IgaA-RcsF, it decreased the levels of the OmpA-RcsF complex (compare lanes 9 and 10 with lanes 7 and 8 in Figure 5B). Thus, IgaA and OmpA seem to compete for RcsF across the periplasm. Because IgaA (200 copies per cell; Li et al., 2014) is far less abundant than OmpA (200,000 copies), even when overexpressed (we estimate that IgaA levels were increased 8\u201340 fold over baseline (Figure 5\u2014figure supplement 1; Materials and methods) in the experiment above), these results suggested that IgaA has a substantially higher affinity for RcsF than OmpA. To probe this directly, we determined the affinity constants of the periplasmic domains of OmpA and IgaA for RcsF. Note that the periplasmic domain of IgaA interacts with RcsF in vivo and in vitro (Cho et al., 2014; Hussein et al., 2018). First, from the NMR shift data, we calculated the equilibrium dissociation constant (KD) of OmpA186-325 for RcsF as being 125\u00a0\u00b1\u00a085 \u00b5M (Figure 5C). Second, using biolayer interferometry, we measured that the periplasmic domain of IgaA has a KD of 1.6\u00a0\u00b1\u00a00.3 nM for RcsF (Figure 5D, see Figure 5\u2014source data 2 for statistics). Thus, these values confirm that IgaA has substantially more affinity for RcsF than OmpA (see Discussion). Interestingly, we noted that the BamA-RcsF complex was not modified by the increased expression of IgaA (lanes 7\u201310 in Figure 5B), which is consistent with the fact that BamA has a much higher affinity for RcsF (KD\u00a0~400 nM; Rodr\u00edguez-Alonso et al., 2020) than OmpA.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/60861/elife-60861-fig5-v2.jpg)\n\n**Figure 5.:** (A) Cartoon of the E. coli cell envelope, with IgaA in the IM and RcsF and OmpA in the OM. RcsF, an OM lipoprotein, interacts with OmpA. When in complex with RcsF, OmpA adopts its two-domain conformation, with an N-terminal \u03b2-barrel embedded in the OM and a C-terminal domain soluble in the periplasm. The periplasmic domain of OmpA interacts with RcsF, likely competing with IgaA for RcsF binding. Copy numbers are from Li et al., 2014. (B) Impact of over-expressing IgaA on the OmpA-RcsF complex (left). Cells harboring pSC231, an empty vector used as control, or pIgaA (pSC237, expressing IgaA-Flag3 from an IPTG-inducible promoter) were harvested at mid-log phase and incubated without (lanes 1\u20136) or with (lanes 7\u201312) BS3. Protein samples were immunoblotted with \u03b1-Flag (upper panel), \u03b1-RcsF (middle panel), or \u03b1-OmpA171-325 (lower panel) antibodies. IgaA-Flag3 was expressed in WT (lanes 2\u20134 and 8\u201310), \u2206rcsF (lanes 5 and 11), and \u2206ompA cells (lanes 6 and 12) with the indicated IPTG concentrations. Quantitation (see Figure 5\u2014source data 1 for details) of the IgaA-RcsF and OmpA-RcsF complexes detected by the anti-RcsF antibodies is shown (right panel).* and **, non-specific bands detected by the polyclonal \u03b1-RcsF antibody. (C) Plot of the chemical shift perturbation (CSP) measured on OmpA resonances as a function of the RcsF:OmpA ratio. Only the residues with significant CSP (colored in blue in Figure 4B) are plotted and used to fit the KD. (D) The interaction between RcsF and the periplasmic domain of IgaA was probed by biolayer interferometry (BLI). Sensortips carrying immobilized RcsF were dipped into increasing concentrations of IgaA (5.9, 8.9, 13.3, 20, 30 nM) from 0 to 1000s then into buffer (1000\u20132000s). Association and dissociation phases were fitted (red lines) to extract a KD value. Residuals from the fits are shown at the bottom of the panel (see Figure 5\u2014source data 2 for statistics).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60861/elife-60861-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** OmpA-Flag3 was expressed from pOmpA-Flag3 (pPR4) with 50 or 250 \u00b5M IPTG in \u2206ompA cells. IgaA-Flag3 was expressed from pIgaA-Flag3 (pSC237) with 250 \u00b5M IPTG in wild-type (WT) cells. Samples were serially diluted as indicated before SDS-PAGE. OmpA-Flag3 (lanes 1\u20134) and OmpA (lanes 5\u20139) were detected with anti-OmpA (upper panel); OmpA-Flag3 (lanes 1\u20134) and IgaA-Flag3 (lanes 5\u20139) were detected with anti-Flag (lower panel). Images are representative of experiments made in biological triplicate.\n\n## Discussion\n\n### OmpA is unlikely the vehicle allowing RcsF to reach the surface\n\nOmpA was first purified from E. coli membranes in 1977 (Chai and Foulds, 1977) and has served as a model for OMP assembly since then. Although the predominant view is that OmpA folds into a two-domain conformation, with an N-terminal eight-stranded \u03b2-barrel and a C-terminal periplasmic domain, an alternative conformation in which OmpA forms a single, 16-stranded \u03b2-barrel, has been proposed to also exist (Singh et al., 2003; Stathopoulos, 1996). Here, we integrated in vivo (Figures 2, 3, 4 and 5) and in vitro (Figures 4 and 5) approaches to dissect the interaction between OmpA and the lipoprotein RcsF; altogether, our data establish that OmpA is in the two-domain conformation in the OmpA-RcsF complex and that it is the C-terminal, periplasmic domain of OmpA that interacts with RcsF. Using protein-protein docking and molecular dynamics simulations, we built a three-dimensional model taking into accounts the results of the cross-linking experiments; in this model, RcsF and the periplasmic domain of OmpA show a good surface complementarity, with a buried accessible surface of 1087 \u00c52. In this model, all six residues mutated to DiZPK (RcsFR45X, RcsFQ79X, RcsFR89X, OmpAR242X, OmpAD246X, and OmpAY248X) are situated in close proximity to residues from the binding partner (Figure 6A), in good agreement with the crosslinking data. Interestingly, the peptidoglycan-binding region of OmpA (Park et al., 2012) remains accessible and is oriented in the direction opposite to the N-terminal end of RcsF. Our conclusions have two important implications.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/60861/elife-60861-fig6-v2.jpg)\n\n**Figure 6.:** (A) Cartoon and (B) surface representation of a complex between RcsF (residues 44\u2013134, colored in light green) and OmpA (residues 190\u2013315, colored in purple). The atoms from the six residues mutated to DiZPK (RcsFR45X, RcsFQ79X, RcsFR89X, OmpAR242X, OmpAD246X, and OmpAY248X) are represented as spheres with the van der Waals radius. This model, which shows a good surface complementarity between the two proteins, was obtained by protein-protein docking with constraints from the crosslinking experiments and further refined by all-atom molecular dynamics (50 ns). The N-terminal residue of RcsF points out in the same direction as the extremities of the periplasmic domain of OmpA, that\u00a0is toward the OM, and this binding mode is compatible with the interaction of the periplasmic domain of OmpA with the peptidoglycan.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60861/elife-60861-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Wild-type (WT; DH300, a MG1655 derivative Majdalani et al., 2002) and \u2206ompA cells were treated with increasing concentrations of polymyxin B (0.0001\u20130.001 \u2013 0.01\u20130.5 \u00b5g/mL) when they reached an OD600 of 0.4. Rcs activity was measured by a chromosomal rprA::lacZ fusion. Treatment with polymyxin B activated Rcs both in the WT and in the \u2206ompA mutant. Mean (n\u00a0=\u00a03) and standard deviation (error bars) are shown. See Figure 6\u2014figure supplement 1\u2014source data 1 for statistics. Differences were evaluated with Student\u2019s t test (ns, not significant; *p<0.05).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60861/elife-60861-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The concentration of (OmpA [OmpA] is high (1000 \u00b5M) and can therefore be considered constant ([OmpA]=C in the equations above)). Left panel: the concentration of the OmpA-RcsF complex [OmpA-RcsF] increases linearly with the concentration of RcsF in the periplasm. Right panel: the concentration of IgaA-RcsF [IgaA-RcsF] increases as a function of [RcsF] in the periplasm, but, in this case, the increase is decelerated and follows a hyperbolic curve. Thus, OmpA functions as a buffer for RcsF. See the Materials and methods for more information.\n\nFirst, we and others previously showed that portions of RcsF are surface-exposed (Cho et al., 2014; Konovalova et al., 2014) and proposed OmpA, OmpC, and OmpF as vehicles for surface exposure (Cho et al., 2014; Konovalova et al., 2014). Understanding how RcsF reaches the surface is crucial: lipoprotein surface exposure is an emerging concept in E. coli and Enterobacteriaceae (Szewczyk and Collet, 2016; Konovalova and Silhavy, 2015) and how lipoproteins cross the OM remains to be clearly established. It was proposed that it is the N-terminal linker of RcsF that is exposed on the surface before being threaded through the lumen of OmpA and other OMPs (Konovalova et al., 2014). However, when OmpA adopts the two-domain conformation, as in the OmpA-RcsF complex, its \u03b2-barrel domain does not have an open channel (Figure 3\u2014figure supplement 1B) to accommodate the RcsF linker. We therefore conclude that RcsF does not reach the surface when in complex with OmpA, and predict that only OmpC and OmpF (which form large \u03b2-barrels) serve as vehicles for surface exposure. The fact that only a subset of the DiZPK-containing variants of RcsF that form a complex with OmpA also form a complex with OmpC/F (Figure 1) also supports the idea that the topology of OmpA-RcsF is different from that of OmpC/F-RcsF.\n\nSecond, a model was proposed in which RcsF, when in complex with OmpA, uses its positively charged, surface-exposed N-terminal linker to sense when interactions between lipopolysaccharide molecules are disturbed (Konovalova et al., 2016). However, if the RcsF linker is not surface-exposed in the OmpA-RcsF complex, as we show here, then the function of OmpA-RcsF in Rcs needs to be re-evaluated (see below). Importantly, we found that lipopolysaccharide alterations caused by sub-lethal concentrations of polymyxin B induce Rcs in MG1655 cells lacking ompA (Figure 6\u2014figure supplement 1, see Figure 6\u2014figure supplement 1\u2014source data 1 for statistics), in contrast to what was previously reported in another strain background (MC4100) (Konovalova et al., 2016), which further questions the potential role of OmpA-RcsF in sensing lipopolysaccharide defects.\n\nIt will also be interesting to investigate the role of the BAM machinery in the assembly of OmpA-RcsF. It was reported that the formation of the OmpA-RcsF complex was likely mediated by BAM during the assembly of OmpA (Cho et al., 2014; Konovalova et al., 2014). However, our finding that RcsF interacts with the C-terminal, periplasmic domain of OmpA, whose folding is unlikely to depend on BAM (Noinaj et al., 2017), questions this conclusion. Further experiments, including pulse-chase experiments, will be carried out to clarify this point. Given that BAM both interacts with RcsF and assembles OmpA in the OM, we anticipate that interpreting the data will be challenging, and therefore these experiments are outside the scope of this publication.\n\n### OmpA functions as a buffer for RcsF\n\nFinally, if OmpA does not allow RcsF to reach the surface, what could be the function of the OmpA-RcsF complex? On the basis of our results, we propose that the role of OmpA in Rcs is to modulate the activity of this system. Consider the equilibrium dissociation constants of the IgaA-RcsF and OmpA-RcsF complexes:\n\n$$\nK_{d}^{OmpA\u2212RcsF}\u00a0=\u00a0\\frac{[OmpA][RcsF]}{[OmpA\u2212RcsF]}\n$$\n\n\n\n$$\nK_{d}^{IgaA\u2212RcsF}\u00a0=\u00a0\\frac{[IgaA][RcsF]}{[IgaA\u2212RcsF]}\n$$\n\nWe estimate that OmpA\u2019s C-terminal domain is present in the periplasm at\u00a0~1 mM, RcsF at\u00a0~15 \u00b5M, and IgaA at\u00a0~1 \u00b5M (Materials and methods). If we take into account these estimates, then the following equation can be derived from Equations 1 and 2 (Materials and methods):\n\n$$\nK_{d}^{IgaA-RcsF}=\\frac{IgaA[RcsF]}{[IgaA-RcsF]}\n$$\n\nwhere $K_{d}^{ratio}=\\frac{K_{d}^{OmpA\u2212RcsF}}{K_{d}^{IgaA\u2212RcsF}}$.\n\nBecause OmpA is highly abundant, [OmpA] can be considered constant. Thus, according to Equation 1, the concentration of the OmpA-RcsF complex increases linearly with the concentration of RcsF in the periplasm (Figure 6\u2014figure supplement 2). From Equation 3, we conclude that the concentration of IgaA-RcsF will also increase as a function of [RcsF] in the periplasm. However, in this case, the increase is not linear, but is decelerated and follows a hyperbolic curve (Figure 6\u2014figure supplement 2), indicating that OmpA functions as a buffer for RcsF, negatively impacting its ability to activate Rcs. The buffering function of OmpA is nicely illustrated by the fact that exposure to low concentrations of polymyxin B causes higher Rcs induction in cells lacking ompA than in the wild type (Figure 6\u2014figure supplement 1).\n\nWe acknowledge that the\u00a0~80,000 fold difference in affinity for RcsF that we measured between IgaA and OmpA (Figure 5) does not seem to support the function of OmpA as a buffer for RcsF: with such a high affinity for RcsF, IgaA should always outcompete OmpA and formation of the IgaA-RcsF complex should be constitutive, which is not the case (Hussein et al., 2018). To explain the apparent discrepancy between the in vivo observations and the in vitro measurements, we propose that intracellular factors such as attachment of the periplasmic domains of these proteins to their respective membrane anchors (we used the soluble periplasmic domains of OmpA, IgaA and RcsF for the in vitro measurements) and binding of OmpA to the peptidoglycan (Reusch, 2012) modulate the affinity of OmpA and IgaA for RcsF in vivo, allowing them to actually compete for RcsF. It is remarkable that OmpA, a protein that had mostly been known for its role in stabilizing the OM, is also involved in the network controlling the activity of Rcs, one of the most complex signal transduction systems in bacteria (Cho et al., 2014; Hussein et al., 2018; Laloux and Collet, 2017), whose correct functioning is critical for success of commensal Enterobacteriaceae and virulence of pathogens.\n\n## Materials and methods\n\n### Bacterial strains, primers, and plasmids\n\nThe bacterial strains and primers used in this study are listed in Supplementary files 1 and 2, respectively. The parental E. coli strain DH300 is a MG1655 derivative containing a deletion of the lac region; it also carries a chromosomal rprA::lacZ fusion at the \u03bb phage attachment site to monitor Rcs activation (Majdalani et al., 2002). The ompA, ompR and rcsF deletion mutants were obtained by transferring the corresponding alleles from the Keio collection (kanR) (Baba et al., 2006) into DH300 (Majdalani et al., 2002) via P1 phage transduction, which was verified via PCR. To excise the kanamycin-resistance cassette, we used pCP20 as previously described (Datsenko and Wanner, 2000). To insert ompA-His (encoding OmpA with six histidines at the C-terminus), ompATH189-His, ompATH243-His, and ompX-ompA171-325 on the chromosome at the ompA locus, we performed \u03bb-Red recombineering (Yu et al., 2000) with the pSIM5-Tet plasmid (Koskiniemi et al., 2011). First, a cat-sacB cassette encoding chloramphenicol acetyl transferase (cat) and SacB, a protein conferring sensitivity to sucrose, was amplified from strain CH1990 using primers \u2018ompA_delCmSB F\u2019 and \u2018ompA_delCmSB R\u2019. The resulting PCR product shared 40 bp of homology to the 5\u2019 UTR and 3\u2019 UTR of ompA at its 5\u2019 and 3\u2019 ends, respectively, and was used for \u03bb-Red recombineering (Yu et al., 2000). We selected transformants for chloramphenicol resistance and verified that the cat-sacB cassette replaced ompA by sequencing across the junctions. The cat-sacB cassette was subsequently replaced by one of the versions of ompA (ompA-His, ompATH189-His, ompATH243-His, or ompX-ompA171-325) using \u03bb-Red recombineering and negative selection on sucrose-containing medium (Thomason et al., 2014; Gennaris et al., 2015). ompA-His, ompATH189-His, and ompATH243-His were amplified via PCR using primers \u2018cmSB to OmpA_F\u2019 and \u2018cmSB to OmpAhis_R\u2019 and plasmids pPR11, pPR11189thrombin, and pPR11243thrombin (see below) as templates, respectively. The PCR product of ompX-OmpA171-325 was generated using primers \u2018JLEo20-F-Chrom-OmpX\u2019 and \u2018JLEo22-R-Chrom-OmpACt\u2019, and pJLE17-OmpX-OmpACter as template. Strains were verified through DNA sequencing. To delete ompA171-325, we performed \u03bb-Red recombineering on the chromosome at the ompA locus in a way similar to the description above. Briefly, the kanamycin cassette from the strain SEN588 (\u0394ompA::kan) was PCR-amplified using primers \u2018ompAc_delKm F\u2019 and \u2018ompAc_delKm R\u2019 to encompass the flanking regions of ompA171-325. We selected transformants for kanamycin resistance.\n\nThe plasmids used in this study are described in Supplementary file 3. pSC253, encoding RcsF, was constructed via digestion of pSC202 (Cho et al., 2014) with KpnI and HindIII and insertion of the generated fragment into pBAD18 (Guzman et al., 1995). To generate the rcsF variants containing an amber codon (TAG) at selected positions, site-directed mutagenesis was performed on pSC253 using primers described in Supplementary file 2. To generate pPR11, ompA-His was PCR-amplified using primers \u2018OmpA(NcoI) F\u2019 and \u2018OmpA-his(XbaI) R\u2019 and chromosomal E. coli DNA as template. The PCR product was inserted into pDSW204 restricted with NcoI and XbaI, generating pPR11. To insert thrombin cleavage sites after residues 189 and 243 in OmpA, site-directed mutagenesis was performed using primer pair \u2018189VPRGS thr_F\u2019 and \u2018189VPRGS thr_R\u2019 and primer pair \u2018243LVPR thr_F\u2019 and \u2018243LVPR thr_R\u2019, respectively, on pPR11, yielding pPR11189thrombin [OmpA(189-Val-Val-Pro-Arg-Gly-Ser-Gln-190)] and pPR11243thrombin [OmpA(243-Ile-Leu-Val-Pro-Arg-Gly-244)], respectively. pJLE17-OmpX-OmpA171-325 (encoding OmpAX) was constructed as follows. The two PCR products corresponding to ompX and OmpA171-325 were generated using primer pair \u2018OmpX(NcoI)F\u2019 and \u2018OmpX-OmpAc_R\u2019 and primer pair \u2018OmpX-OmpAc_F\u2019 \u2018JLEo16-R-XbaI-OmpACt\u2019, respectively, and chromosomal E. coli DNA as template. To join the two PCR fragments, overlapping PCR was performed using primers \u2018OmpX(NcoI)F\u2019 and \u2018JLEo16-R-XbaI-OmpACt\u2019, generating the PCR product encoding OmpAX. Next, the PCR product of OmpAX was digested with NcoI and XbaI and ligated with pDSW204 pre-digested with NcoI and XbaI, yielding pJLE17-OmpX-OmpACter. pKiD22, expressing OmpAPal, was constructed as follows. The sequence encoding the signal sequence and lipobox of the lipoprotein Pal was PCR-amplified using primers \u2018Palss(NcoI)F\u2019 and \u2018Palss-OmpAc_R\u2019 and the sequence encoding OmpA171-325 using primers \u2018Palss-OmpAc_F\u2019 and \u2018OmpA_stop_Flag3(KpnI)R\u2019. Chromosomal E. coli DNA was used as template. To join the two PCR fragments, overlapping PCR was performed using primers \u2018Palss(NcoI)F\u2019 and \u2018OmpA_stop_Flag3(KpnI)R\u2019. The PCR product encoding ssPal-OmpA171-325 was digested with NcoI and KpnI and ligated with pDSW204, pre-digested with NcoI and KpnI, yielding pKiD22.\n\nTo generate pPR21, site-directed mutagenesis was performed on pPR11 using primers \u2018OA_stopTGA_F\u2019 and \u2018OA_stopTGA_R\u2019 to insert a stop codon upstream of the 6xHis tag. To generate the ompA variants containing an amber codon (TAG) at selected positions, site directed mutagenesis was performed on pPR21 using primers described in Supplementary file 2. To obtain pKiD5, OmpA186-325 with an N-terminal Strep-tag but no signal sequence was PCR-amplified using primers \u2018KiDo14-F-NdeI-Strep-OmpACTD\u2019 and \u2018KiDo15-R-SacI-Rbs-OmpACTD\u2019 and chromosomal E. coli DNA as template. The PCR product was digested with NdeI and SacI and inserted into pET21a. To prepare a version of pAM238 containing lacIq, a trc promoter, and a triple Flag tag (Flag3), we prepared a PCR product using primers \u2018lacIq NsiI_F\u2019 and \u2018flag3-KpnI_R\u2019 and pMER77 as template (Hemmis et al., 2011). This product was digested with NsiI and KpnI and ligated with pAM238 pre-digested with PstI and KpnI. To reduce the basal activity of the trc promoter, we modified the \u221210 region (from TATAAT to CATTAT) and the \u221235 region (from TTTACA to TTGACA), generating pSC231 (Weiss et al., 1999). The coding sequences for OmpA and IgaA were obtained by PCR-amplification using primer pair \u2018OmpA(NcoI) F\u2019 and \u2018OmpA XbaI flag R\u2019 and primer pair \u2018IgaA(NcoI) F\u2019 and \u2018IgaA XbaI flag3 R\u2019, respectively. Each product was digested with NcoI and XbaI and ligated into pSC231 pre-digested with the same enzymes, generating pPR4 and pSC237, respectively.\n\n### In vivo site-specific photo-crosslinking using DiZPK\n\nWe used the site-specific photo-crosslinking method described previously (Cho et al., 2014) with some modifications. To incorporate N6-((3-(3-methyl-3H-diazirin-3-yl)propyl)carbamoyl)-L-lysine (DiZPK) into RcsF, we used the pSup-Mb-DIZPK-RS plasmid encoding an evolved Methanosarcina barkeri pyrrolysyl-tRNA synthetase (PylRS) and an optimized $[OmpA-RcsF]=\\frac{1000[RcsF]}{K_{d}^{OmpA-RcsF}}$\u00a0suppressor (Zhang et al., 2011). DH300 \u0394rcsF (PL358) cells were co-transformed with pSup-Mb-DIZPK-RS and one of the plasmids containing an amber codon in rcsF in pSC253. Cells were grown in 3-(N-morpholino)propanesulfonic acid (MOPS) minimal medium supplemented with 0.2% glucose, 0.2% L-arabinose (MOPS-glucose/arabinose minimal medium), and 0.8 mM DiZPK (no supplement of other amino acids; see the reasons for using MOPS medium below) (Neidhardt, Bloch, and Smith 1974). Cell cultures were grown to an OD600 of 1-1.2 and 1 mL of samples was irradiated with UV light at 365 nm or left unirradiated for 10 min. Cells were precipitated with trichloroacetic acid (TCA), and the pellets were washed with acetone and solubilized in 60 \u03bcL of SDS-sample buffer before further analysis. We used a similar method to incorporate DiZPK into OmpA with minor modifications; DH300 \u0394ompA (PR46) cells were co-transformed with pSup-Mb-DIZPK-RS and one of the plasmids containing an amber codon in ompA in pPR21. Cells were grown in LB medium supplemented with 0.2% L-arabinose, 200 \u00b5M IPTG and 1 mM DiZPK. Cell cultures were grown to an OD600 of 1 and 0.75 mL of samples was irradiated with UV light at 365 nm or left unirradiated for 10 min. Cells were precipitated with TCA, and the pellets were washed with acetone and solubilized in 100 \u00b5L of SDS-sample buffer before further analysis.\n\nIn previous experiments incorporating p-benzoyl-L-phenylalanine into RcsF, we used LB as the growth medium (Cho et al., 2014). However, we found that the expression levels of the DiZPK-containing RcsF mutant proteins were substantially lower when cells were grown in LB (data not shown); in contrast, the expression levels of RcsF were greatly enhanced in MOPS-glucose/arabinose minimal medium (data not shown). Therefore, we used MOPS-glucose/arabinose minimal medium for all photo-crosslinking experiments involving DiZPK-containing RcsF variants.\n\n### Synthesis of DiZPK\n\nDiZPK was synthesized as described previously (Zhang et al., 2011).\n\n### Immunoprecipitation of RcsF-containing complexes and thrombin cleavage\n\nProtein samples in SDS-sample buffer (without reducing agent) were denatured for 15 min at 65\u00b0C and 15 min at 95\u00b0C with vigorous shaking. Next, the samples were diluted in 750 \u00b5L of KI buffer (50 mM Tris-HCl [pH 8], 2% Triton X-100, 150 mM NaCl, 1 mM EDTA) and centrifuged at 4\u00b0C for 3 min at 12,000 x g to harvest the PG. Photo-crosslinked RcsF complexes were immunoprecipitated by adding 1 \u00b5L of undiluted guinea pig anti-RcsF antibody (Cho et al., 2014) and 10 \u00b5L of protein A/G magnetic beads (Pierce); samples were incubated for 1 hr on a wheel at room temperature. After three washes with 500 \u00b5L of KI buffer, RcsF complexes were eluted with 20 \u00b5L of glycine buffer (100 mM glycine [pH 1.5], 0.1% Triton X-100) after 10 min of incubation at room temperature. Proteins samples were neutralized with 2 \u00b5L of 1.5 M Tris-HCl [pH 8.8] and diluted with 18 \u00b5L of KI buffer before SDS-PAGE and immunoblotting or thrombin cleavage. For thrombin cleavage, 20 \u00b5L of the elution samples were incubated for 1 hr at room temperature with 1 \u00b5L of thrombin (thrombin from bovine plasma, Sigma). Samples were analyzed via SDS-PAGE and immunoblotting as indicated in the figure legends.\n\n### Immunoblotting and antibodies\n\nProtein bands were transferred from the gels onto nitrocellulose membranes (Millipore) using a semi-dry electroblotting system. The membranes were blocked with 5% skim milk. The rest of the immunoblot steps were performed using standard protocols. Signal from antibody binding was visualized by detecting chemiluminescence from the reaction of horseradish peroxidase with luminol. Polyclonal RcsF antibodies were purified against the carboxy-terminal domain of RcsF as previously described (Cho et al., 2014) and used at a dilution of 1:20,000 in 1% skim milk in 50 mM Tris-HCl [pH 7.6], 0.15 M NaCl and 0.1% Tween 20 (TBST). Since we found that the anti-OmpA antibody only recognizes the periplasmic domain (data not shown), we used an antibody directed against loop 4 of the \u00df-barrel of OmpA to detect OmpA1-170. The anti-OmpA antibodies are gifts from the Lloubes and Bernstein laboratories (Cascales et al., 2002; Hussain and Bernstein, 2018). These antibodies were used at dilutions of 1:20,000 and 1:10,000, respectively. The anti-His antibody conjugated to horseradish peroxidase (Qiagen) was used at a dilution of 1:5000. The anti-Flag M2 monoclonal antibody (F1804, Sigma) was used at a dilution of 1:20,000.\n\n### In vivo 3,3\u2019-dithio-bis[sulfosuccinimidylpropionate] and bis(sulfosuccinimidyl)-suberate (BS3) crosslinking\n\nDTSSP and BS3 (CovaChem) are bifunctional primary amine crosslinkers; DTSSP contains a disulfide bond in its spacer arm. In vivo crosslinking has been performed as described previously (Cho et al., 2014). The media used are MOPS-glucose minimal medium (Neidhardt et al., 1974; Figure 3) and LB (Figure 5).\n\n### \u03b2-Galactosidase assay\n\nE. coli cells were grown in MOPS-glucose minimal medium (Neidhardt et al., 1974) or LB to mid-log phase (OD600\u00a0=\u00a00.4\u20130.6). \u03b2-galactosidase activity was measured as described previously (Zhang and Bremer, 1995).\n\n### Expression and purification of RcsF, OmpA186-325 and of the periplasmic domain of IgaA\n\nExpression and purification of RcsF with a C-terminal His-tag were performed as previously described (Leverrier et al., 2011). E. coli BL21(DE3) cells harboring pKiD5 expressing N-terminal Strep-tagged OmpA186-325 were grown at 37\u00b0C in M9-glucose minimal medium containing 1 g/L 15NH4Cl (99%, 15N; Eurisotop) to uniformly label the protein with 15N. The expression was induced by adding 1 mM IPTG at an OD600 of 0.5. After a 5 hr induction, cells were harvested by centrifugation and resuspended in 20 mL of lysis buffer (20 mM Tris-HCl, 500 mM NaCl [pH8], containing a protease inhibitor cocktail (Complete, Roche)). Re-suspended cells were stored at \u221220\u00b0C. Frozen cells were thawed on ice and lysed by two passages through a French pressure cell at 1500 psi. The soluble fraction was isolated after centrifugation for 1 hr at 40,000 x g at 4\u00b0C. The supernatant was filtered through 0.45 \u03bcm filters and loaded onto a 5 mL Strep-Tactin column (IBA, Lifesciences), previously equilibrated in buffer A (50 mM NaH2PO4, 100 mM NaCl [pH7.0]). After a washing step with buffer A, elution was performed with buffer A supplemented with 2.5 mM D-desthiobiotin. The sample was then further purified using size-exclusion chromatography on a HiLoad 16/60 Superdex 75 column (GE Healthcare) using buffer A. To express IgaA361-654 with a C-terminal His-tag, E. coli SHuffle T7 cells harboring pSC211 were grown at 37\u00b0C in LB. Expression of the protein was induced by adding 1 mM IPTG at an OD600 of 0.5. After a 5 hr induction, cells were harvested by centrifugation and resuspended in 20 mL of lysis buffer. Re-suspended cells were stored at \u221220\u00b0C. Frozen cells were thawed on ice and processed as explained above for Strep-tagged OmpA186-325. IgaA361-654 was purified using Ni-NTA agarose beads (5 mL; IBA Lifescience), previously equilibrated in buffer B (20 mM NaH2PO4, 150 mM NaCl [pH7.5]). After washing the resin with buffer B supplemented with 20 mM imidazole, proteins were eluted with five column volumes of buffer B supplemented with 200 mM imidazole. As a final purification step, a size-exclusion chromatography was performed using a HiLoad 16/60 Superdex 200 column (GE Healthcare) with buffer B. Purity was checked via SDS-PAGE with Coomassie Staining and concentration was performed using Vivaspin Turbo apparatus (Sartorius) with a 5 kDa molecular weight cut-off.\n\n### NMR titration experiments of 15N-labelled OmpA186-325 with RcsF\n\n50 \u00b5M 15N-labelled OmpA186-325 in buffer A at 25\u00b0C was titrated with increasing concentrations of unlabelled RcsF in buffer A to reach 2 and 10 RcsF/OmpA186-325 molar ratios. To follow 15N-1H resonances chemical shifts perturbations, 15N-1H BEST-TROSY-HSQC correlation experiments were recorded at 25\u00b0C using Bruker AVANCE spectrometer operating at 700 MHz proton frequency equipped with a TCI cryoprobe (Favier and Brutscher, 2011). OmpA186-325 assignments were transposed from BMRB entry 25030. Chemical shift perturbations (CSP) were calculated on a per-residue basis for the highest substrate-to-protein ratio as described previously (Egan et al., 2018). Spectra were processed with Topspin 3.57 (Bruker) and analyzed with ccpnmr 3 (https://www.ccpn.ac.uk).\n\n### Western blot analysis\n\nQuantitation of the intensity of the bands was done by optical densitometry and analyzed using ImageQuant TL processing software (ImageQuant TL v8.1.0.0, GE HEalthcare). After background correction, the values were normalized by the intensity of non-specific bands detected by the polyclonal antibody.\n\n### Biolayer interferometry\n\nBiolayer Interferometry Experiments (BLI) were recorded on an OctetRED96e (Fortebio) using streptavidin (SA) biosensors (Fortebio). To biotinylate RcsF, RcsF-His (5 mg/mL in 0.1 M MES [pH 5.5]) was incubated with Biotin-LC-Hydrazide (1.25 mM, final concentration; Sigma) and N-(3-Dimethylaminopropyl)-N\u2032-ethylcarbodiimide (EDC; 6.5 mM, final concentration) during 2 hr at 22\u00b0C under agitation. Biotininylated RcsF was dialysed against buffer C (10 mM Hepes, 150 mM NaCl [pH7.5]) and immobilized at 5 \u00b5g/mL onto SA tips in buffer C supplemented with 0.02% Tween-20 to reach\u00a0~3.5 nM of immobilization level. RcsF-loaded biosensors were dipped into different concentrations of the periplasmic domain of IgaA (5.9 nM to 30 nM) in buffer C at 23\u00b0C. Kinetics were recorded with 1000s association and 1000s dissociation phases, and repeated four times with 10 mM HCl pulses (18 s in total) used for regeneration between cycles. Sensorgrams were subtracted for contribution of buffer alone and binding of non-functionalized biosensors. Kinetic analysis of the data was performed using 1:1 interaction model in the ForteBio data analysis software. KD obtained from four independent injection series were averaged and produced a KD of 1.6 nM with a standard deviation of 0.3.\n\n### Estimation of the expression levels of IgaA\n\nOverexpressed IgaA has a triple Flag tag (IgaA-Flag3). To compare the expression levels of IgaA to those of OmpA, we generated a triple Flag-tagged version of OmpA (OmpA-Flag3); this variant was expressed from an IPTG-inducible plasmid in the ompA strain. If we compare the intensity of the signal corresponding to OmpA-Flag3 detected either by the anti-OmpA or the anti-Flag antibodies, we estimate the anti-Flag antibodies to be\u00a0~25 times more sensitive than the anti-OmpA antibodies (lanes 1\u20134 in Figure 5\u2014figure supplement 1). With this value in hand, we can now compare the expression levels of IgaA-Flag3 to those of untagged OmpA produced from the chromosome and detected with the anti-OmpA antibodies (lanes 5\u20139 in Figure 5\u2014figure supplement 1); because the intensities of OmpA and IgaA-Flag3 in lane eight are similar, we estimate that IgaA-Flag3 is 25 times less abundant than OmpA when IgaA is expressed with 250 \u00b5M IPTG; likewise, we estimate the levels of IgaA-Flag3 to be\u00a0~1/125 (0.8%) of those of OmpA when IgaA is expressed with 50 \u00b5M IPTG. Because the concentration of OmpA is\u00a0~1 mM, we estimate the concentration of overexpressed IgaA to be 40 and 8 \u00b5M, respectively.\n\n### Molecular modelling\n\nHADDOCK 2.4 web server (van Zundert et al., 2016; Wassenaar et al., 2012) was used for protein-protein docking using the structures 2MQE for OmpA-CTD (Ishida et al., 2014) and 2L8Y for RcsF (Rogov et al., 2011). Six residues identified from the crosslinking experiments were considered as active during the docking calculations: 242, 246, and 248 for OmpA and 45, 79, and 89 for RcsF. The resulting clusters were inspected visually, and the one compatible with the interaction between the periplasmic domain of OmpA and the peptidoglycan (Park et al., 2012) was selected for further refinement using molecular dynamics. Molecular dynamics simulations were carried out with GROMACS version 2020.1 (Abraham et al., 2015) using the OPLS-AA (Jorgensen et al., 1996) force field. Each system was energy-minimized until convergence using a steepest descents algorithm. Molecular dynamics with position restraints was then performed (50 ps NVT and 50 ps NPT), followed by the production run of 50 ns. During the position restraints and production runs, the V-rescale and Parrinello-Rahman methods were used for temperature and pressure coupling, respectively. Electrostatics were calculated with the particle mesh Ewald method. The P-LINCS algorithm was used to constrain bond lengths, and a time step of 2 fs was used throughout.\n\n### Estimation of the concentrations of OmpA, RcsF and IgaA in the periplasm\n\nAccording to Li et al., 2014, each cell contains\u00a0~200,000 molecules of OmpA in rich media, which corresponds to\u00a0~3.448\u00d710 -19 mol (200,000/Avogadro constant). If we consider the volume of an E. coli cell to be 10\u221218 m3 (10\u221215 L) and compare it to a cube with 1 \u00b5m edges (E. coli has 0.5 \u00b5m in width and 2 \u00b5m in length; EcoliWiki ecoliwiki.net/colipedia/index.php/Escherichia_coli), we calculate that the cellular concentration of OmpA is\u00a0~3.448\u00d710 -4 M. The volume of the envelope being\u00a0~30% of the total cell volume (Stock et al., 1977), we calculate that the concentration of the C-terminal domain of OmpA in the periplasm is\u00a0~1 mM. If we perform the same calculations for RcsF and IgaA (~3000 and~200 copies/cell, respectively), we find that their periplasmic concentrations are\u00a0~15 \u00b5M and\u00a0~1 \u00b5M, respectively.\n\n### OmpA functions as a buffer for RcsF\n\nThe equilibrium dissociation constants for the OmpA-RcsF and IgaA-RcsF complexes are:\n\n$$\nK_{d}^{OmpA-RcsF}=\\frac{OmpA[RcsF]}{[OmpA-RcsF]}\n$$\n\n\n\n$$\nK_{d}^{IgaA\u2212RcsF}\u00a0=\u00a0\\frac{[IgaA][RcsF]}{[IgaA\u2212RcsF]}\n$$\n\nIf we divide Equation 4 with Equation 5, we obtain:\n\n$$\nK_{d}^{OmpA-RcsF}=\\frac{OmpA[RcsF]}{[OmpA-RcsF]}\n$$\n\nIf we replace $\\frac{K_{d}^{OmpA\u2212RcsF}}{K_{d}^{IgaA\u2212RcsF}}\u00a0by\u00a0K_{d}^{ratio}$, then we can rearrange Equation 6 to,\n\n$$\nK_{d}^{IgaA-RcsF}=\\frac{IgaA[RcsF]}{[IgaA-RcsF]}\n$$\n\nUnder physiological conditions, we estimate the concentration of IgaA to be\u00a0~1 \u00b5M (see above). Thus, because [IgaA] + [IgaA-RcsF]=1 \u00b5M, Equation 7 can be successively rearranged to,\n\n$$\n\\frac{K_{d}^{OmpA-RcsF}}{K_{d}^{IgaA-RcsF}}=\\frac{OmpA[IgaA-RcsF]}{IgaA[OmpA-RcsF]}\n$$\n\n\n\n$$\n\\frac{K_{d}^{OmpA-RcsF}}{K_{d}^{IgaA-RcsF}}byK_{d}^{ratio}\n$$\n\n\n\n$$\n\\frac{[IgaA-RcsF]}{IgaA}=\\frac{K_{d}^{ratio}[OmpA-RcsF]}{OmpA}\n$$\n\n\n\n$$\n\\frac{[IgaA-RcsF]}{1-[IgaA-RcsF]}=\\frac{K_{d}^{ratio}[OmpA-RcsF]}{OmpA}\n$$\n\nyielding:\n\n$$\n\\frac{1-[IgaA-RcsF]}{[IgaA-RcsF]}=\\frac{OmpA}{K_{d}^{ratio}[OmpA-RcsF]}\n$$\n\nIn Equation 4, [OmpA], which is\u00a0~1000 \u00b5M, can be considered as a constant. Therefore, Equations 4 and 14 become:\n\n$$\n\\frac{1}{[IgaA-RcsF]}=\\frac{OmpA}{K_{d}^{ratio}[OmpA-RcsF]}+1\n$$\n\n\n\n$$\n\\frac{1}{[IgaA-RcsF]}=\\frac{OmpA+K_{d}^{ratio}[OmpA-RcsF]}{K_{d}^{ratio}[OmpA-RcsF]}\n$$\n\n\n\n$$\n=\\frac{\\frac{1000\u00a0[RcsF]}{K_{d}^{OmpA\u2212RcsF}}}{1000/K_{d}^{ratio}+\u00a0\\frac{1000\u00a0[RcsF]}{K_{d}^{OmpA\u2212RcsF}}}\n$$\n\nThus, from Equation 14, we conclude that whereas [OmpA-RcsF] increases linearly to [RcsF], [IgaA-RcsF] increases proportionally, but not linearly, to [RcsF]. Thus, OmpA functions as a buffer for RcsF.\n\n### Analysis of protein structures\n\nProtein structures were downloaded from the Protein Data Bank (http://www.rcsb.org; PDB codes are indicated) and visualized using PyMOL Molecular Graphics System (Version 2.3.4, Schr\u00f6dinger, LLC). FASTA protein sequences were downloaded from Uniprot (http://www.uniprot.org/).\n",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "d90025d4-63a8-4052-974e-ba2d25989e05",
+      "submission_id": "6c5b221f-1a13-4885-8af0-2f2a70f76a36",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael T Laub, Massachusetts Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60861.sa1](https://doi.org/10.7554/eLife.60861.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe Rcs phosphorelay plays a critical role in enabling E. coli and related organisms to respond to outer membrane stress. Prior work has demonstrated that the outer membrane, \u03b2-barrel protein OmpA influeces Rcs activity via the protein RcsF, but the molecular details of this important interaction have remained incompletely defined. This paper presents evidence indicating that RcsF interacts with the periplasmic globular domain of OmpA rather than through binding of the N-terminus of RcsF to the \u03b2-barrel portion of OmpA, as previously suggested. Based on these and other findings, the authors propose a compelling model in which the RcsF-OmpA interaction in the periplasm helps to buffer the ability of RcsF to bind IgaA and induce the Rcs phoshporelay.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"OmpA and IgaA compete for the lipoprotein stress sensor RcsF across the periplasmic space, regulating Rcs activity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe reviewers each appreciated the attention to an important and still incompletely understood problem, namely understanding how RcsF helps E. coli cells respond to cell envelope stress. The reviewers also felt that the results related to the RcsF-OmpA interaction were likely to be of some interest, particularly those studying and following this sub-field. However, as one reviewer notes, the work here helps to rule out some possibilities for how RcsF works, but it did not fully support the competition model proposed. Additionally, there were concerns about how the biochemical findings reported here impact our understanding of Rcs signaling in vivo. The full reviews are included below and are quite constructive so we hope they will be of use to you moving forward.\n\nReviewer #1:\n\nIn this manuscript the authors find a new function for OmpA in the regulation of the RcsFBC system through a direct interaction with the periplasmic domain of the OmpA protein. Through biochemical and genetic experiments they elegantly establish that the carboxy-terminal domain of OmpA binds and suppresses the activation of RcsF that occurs when OmpA is deleted. The data is of high quality and the work resolves some controversies in the field and should be of general interest.\n\nSpecific comments:\n\nThe NMR results confirm that conformational changes in these residues occur when RcsF binds to OmpA, not that these residues are those that are bound directly, and though it is a distinct possibility that these residues form a binding interface the authors should be more cautious in the interpretation of their results.\n\nThe authors should be cautious about comparing the affinity of the interaction between IgaA and RcsF versus that between OmpA and RcsF based on the results with copy number, as many other factors include protein folding and accessary proteins/peptidoglycan binding could play a role in vivo.\n\nThe authors acutely point out the fact that it is hard to separate the effects of Bam binding to RcsF from its role in folding OmpA. However, does a periplasmic expressed carboxyl-terminal domain of OmpA (made as a fusion with a cleaved signal sequence) suppress the activation of RcsF in a OmpA null mutant, and if it does then a Bam null mutation could be added and would likely determine no effect on suppression. This experiment would rule out the rare possibility that the OmpX fusion has some unexpected binding through the OmpX domain.\n\nReviewer #2:\n\nThe outer-membrane linked lipoprotein RcsF is necessary for many signals that turn on the Rcs phosphorelay. The current model for signaling suggests that RcsF, when \"activated\" by an OM or PG stress, interacts with IgaA, relieving IgaA repression of Rcs signaling. How activation occurs, and in what way RcsF might be sequestered in the absence of signal and released upon signalling is the focus of the work here and would be of general interest in understanding this complex phosphorelay and its unique signaling mechanism. Previous findings had shown that parts of RcsF were exposed on the cell surface, and that RcsF interacted with outer membrane proteins, including OmpA, leading to a suggestion that RcsF might be threaded through the center of some porins (not necessarily but possibly OmpA) to the cell surface. This paper uses cross-linking and some chimeric protein constructs to suggest that RcsF binds to the periplasmic, rather than the \u03b2-barrel domain of OmpA, and that this binding acts to sequester RcsF. There are some major concerns that compromise the impact of this work: Many of the experiments require additional controls to confirm that they are assaying what they are said to assay, and the relationship of these findings to the critical in vivo signaling pathway is not currently well supported. Overall, it is not clear that the new information provided here adds significantly to our understanding of how RcsF signals; it may rule out some possibilities.\n\n1) Figure 1: Site-specific crosslinking of OmpA and RcsF: RcsF is expressed from a high copy plasmid, and OmpA is very abundant. What is the evidence for site-specific cross-linking? At a minimum, does wild-type RcsF without the DiZPK fail to bring down any OmpA when subjected to UV and immunoprecipitation. It would seem a comparison of amounts in such a control would help to support that the cross-linking is due to the cross-linker (and is thus site specific).\n\n2) In the Figure 1\u2014figure supplement 1: Some of these are said to be positive (Q28, Q121 (mislisted in text as N121) but show very low amounts in upper panel (with RcsF), and some at bottom have very low OmpA signals. Why are these not in the same ratios? Shouldn't they be the same complex?\n\n3) Figure 3D: This in vivo experiment is a critical part of the argument that only the periplasmic region of OmpA is critical for keeping RcsF from activating the cascade, and there are a number of questions about it.\n\na) Deletion of ompA changes permeability of the OM (as seen here for entry of the cross-linker, Figure 5\u2014figure supplement 1, and an observation in previous work from this group that the OM becomes permeable to an antibody in the absence of OmpA); does 1-170 or OmpAX restore \"wild-type\" permeability? This is important in distinguishing effects on the membrane affecting signaling (due to changes in permeability/behavior) from formation of a complex with RcsF that affects signaling.\n\nb) In work by others, deletion of ompA no longer responds to an inducing signal. This figure looks only at basal level; how do these constructs respond to inducing signals?\n\n4) The connection between observations in terms of NMR contacts, crosslinking, and in vivo effects needs to be reinforced. Are there residues in the C-term of OmpA identified by NMR that can be mutated to see if they fail to interact with RcsF (or even a truncation of the C-terminus). Do these lead to rprA induction as the deletion of ompA does? Do they affect response to signaling when introduced into the single copy of ompA? Otherwise, it is hard to know how many of the interactions from either the NMR or cross-linking are relevant to signaling.\n\nReviewer #3:\n\nL\u00e9toquar et al. investigate sites of interaction between OmpA and RcsF, discovering that RcsF interacts mainly with the C-terminal globular domain of OmpA in the periplasm and that this is competitive with the inner membrane protein IgaA. These interactions potentially play important roles in the functioning of RcsF, which is one of E. coli's key cell envelope stress sensor systems. OmpA is an abundant outer membrane protein consisting of two domains, an N-terminal 8-stranded \u03b2-barrel in the outer membrane and a globular domain in the periplasm non-covalently bound to the peptidoglycan (PG). Recently, both the Collet and Silhavy groups have shown that porins (OmpF/C and possibly OmpA) are involved in presenting RcsF on the cell surface although the region of RscF that is present is disputed. Here, the major focus is on OmpA-RcsF interactions in vivo and in vitro and how these are modulated by another component of the rcs relay, IgaA. The major issue with the paper is the absence of definitive biochemical and biophysical data supporting the main conclusion that IgaA and OmpA compete for binding to RcsF.\n\n1) A limitation with the paper as presented is that there are no equilibrium dissociation constants presented and no definitive experiments showing competitive binding between IgaA and the PG-binding domain of OmpA. Speculative arguments are made about possible affinities of complexes (Results, Discussion and Materials and methods) rather than direct binding measurements between the different binding partners in vitro. For example, by SPR or ITC. NMR titration data are shown (Figure 4) but no affinities are derived from these nor is it demonstrated that binding saturates in these experiments. NMR could also have been used to show competition with IgaA but was not.\n\n2) The paper nicely narrows down binding between OmpA PG-binding domain and RscF using crosslinking, thrombin sites and OmpX chimera. But does IgaA actually compete for the same site? The only experiment related to competition is in vivo crosslinking in conjunction with overexpression of IgaA (Figure 5). Can the authors discount a physiological response as being responsible for the decrease in OmpA-RcsF crosslinking rather than direct competition?\n\n3) Photoactivated crosslinking was used to identify sites on RcsF that link to OmpA but no LC-MS/MS was carried out to identify the precise sites on OmpA where crosslinking occurs, which is entirely feasible. This would have made the story much clearer. Moreover, if the same could be done with RcsF crosslinking to IgaA then it would be immediately apparent if IgaA shared the same binding site as OmpA. As it is, little can be said about competition other than a suggestion of this from Figure 5.\n\n4) The C-terminal domain of OmpA normally binds PG. Does binding to RcsF block binding to PG? This is a relatively trivial experiment to do (using isolated sacculi for example) and should have been included given the involvement of PG in the cell envelope stress response of RcsF.\n\n5) The authors suggest that the present work supports their argument that OmpA is not used as a conduit for RcsF to reach the surface of E. coli. Wouldn't a more direct approach be a cell ELISA using their RcsF antibodies in conjunction with porin deletion mutants with/without OmpA being expressed?\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Defining the function of OmpA in the Rcs stress response\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gisela Storz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Samuel I Miller (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nThis paper presents strong evidence indicating that RcsF, the sensing lipoprotein of the Rcs phosphorelay system, interacts with the periplasmic globular domain of OmpA rather than through binding of the N-terminus of RcsF to the \u03b2-barrel portion of OmpA, as previously suggested by others. Based on these and other recent findings, the authors propose a compelling model in which the RcsF/OmpA interaction in the periplasm helps to buffer the ability of RcsF to bind IgaA and induce the Rcs phoshporelay. Although the reviewers found the revised manuscript to be substantially improved, there were several issues that still need to be addressed, as summarized below. It was agreed that these issues can likely be addressed simply by modifying the text, although the authors should add new data and experiments if they think it would bolster their arguments.\n\n1) The revised manuscript provides significantly improved data on the lack of a required interaction of RcsF with the \u03b2-barrel portion of OmpA. It is certainly striking that chimeric constructions that are capable of complementing the higher basal level of Rcs expression seen in cells deleted for RcsA. What is a bit less clear is how the interaction with OmpA affects the response of the Rcs system. The authors show in Figure 6\u2014figure supplement 1 that their ompA deletion is still inducible with polymyxin, with a similar induced level with the deletion. What exactly would the buffering be expected to show? Should it change the dose of Polymyxin, for instance, that would induce? Can that be seen, or only the basal level of repression in the absence of signal?\n\n2) Is there any explanation for how MG1655 and MC4100 might differ for effects in the absence of OmpA?\n\n3) Figure 4: It would be useful to indicate in panel C and D where the OmpA residues that don't interact well with RcsF in panel E sit. They appear to be either absent or very low in terms of CSP in Figure 4B. Why were these chosen? Do mutations in these sites have any phenotype for the Rcs system in vivo? For instance, does deletion or mutation of the flexible loop act like an ompA deletion for basal level expression of the Rcs system? If such a deletion lost interaction, it would be a very useful control throughout this work. Where do those mutations sit in the model of the complex between RcsF and OmpA in Figure 6?\n\n4) Figure 5B: Why is the amount of the BamA-RcsF much lower when IgaA is overexpressed in the absence of OmpA (lane 12)? Does that suggest that OmpA is necessary for RcsF to interact with BamA (rather than the model, which I believe is the other way around)?\n\n5) Figure 5B: The idea that there is a competition for RcsF between IgaA and OmpA derives in significant part from this data, showing a decrease in the OmpA/RcsF complex when IgaA was overexpressed. Can these changes be quantitated?\n\n6) Competitive binding between OmpA and IgaA for RcsF. The data in the paper make a good case for both the periplasmic domain of OmpA and IgaA binding RcsF. However, the case for competitive binding is still not convincing. There is only one in vivo crosslinking blot that addresses this point, as in the original manuscript, in cells overexpressing IgaA (Figure 5B). For one, the authors should quantify these data. Also, the authors make the point that the massively different binding affinities of IgaA and OmpA for RcsF poses technical challenges to assessing the competition model. But would this necessarily be the case if they isotopically labelled RcsF (rather than OmpA) and demonstrated IgaA and OmpA cause the same residues to shift in heteronuclear NMR experiments? If the authors do not provide additional NMR data, they can only safely conclude IgaA and OmpA interact with RcsF. They would be on less solid ground when it comes to saying this is competitive as it's not clear that they can discount an allosteric mechanism. Either new data should be provided to substantiate the claims of a competition model or the text should be carefully revised to indicate that this model has not be definitively shown yet.\n\n7) The new docked model of the RcsF-OmpA complex raises new questions. The complex is described as being \u201cremarkable\u201d but it is not clear why? What are the statistics for this modelled complex to indicate how good a fit it is (e.g. what is the accessible surface area that is buried?) and how well it explains the crosslinking data? Also, it would have been useful to not only discuss the ramifications of this complex for OmpA function (the PG binding region is exposed apparently although this is not obvious from Figure 6) but to also indicate how this relates to RcsF functionality. The group recently published the crystal structure of RcsF bound to the lumen of BamA. Are the residues/regions of RcsF involved in BamA binding also involved in binding to OmpA or are they different?\n\n8) The authors should use reduce their use of the word \u201cremarkable\u201d throughout the manuscript and reserve this and related terms for the 1-2 cases where it is most justified.\n",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "deadbb43-7fe6-4067-a97b-4ebde11eaa2e",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C1",
+      "claim": "OmpA is a protein commonly found in the outer membrane of Gram-negative bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "OmpA, a protein commonly found in the outer membrane of Gram-negative bacteria, has served as a paradigm for the study of \u03b2-barrel proteins for several decades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about OmpA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "a10f57d0-a6de-4c14-b494-b0b953afe079",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C2",
+      "claim": "OmpA has served as a paradigm for the study of \u03b2-barrel proteins for several decades.",
+      "claim_type": "EXPLICIT",
+      "source": "OmpA, a protein commonly found in the outer membrane of Gram-negative bacteria, has served as a paradigm for the study of \u03b2-barrel proteins for several decades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a historical fact about OmpA research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "fa7c6c17-28af-4baf-b4c5-8db760bf0d1f",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C3",
+      "claim": "In Escherichia coli, OmpA was previously reported to form complexes with RcsF.",
+      "claim_type": "EXPLICIT",
+      "source": "In Escherichia coli, OmpA was previously reported to form complexes with RcsF, a surface-exposed lipoprotein that triggers the Rcs stress response when damage occurs in the outer membrane and the peptidoglycan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior work, indicating citation-based evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "05568442-5e85-4edc-9016-a8b1d4c7a91c",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C4",
+      "claim": "RcsF is a surface-exposed lipoprotein that triggers the Rcs stress response when damage occurs in the outer membrane and the peptidoglycan.",
+      "claim_type": "EXPLICIT",
+      "source": "In Escherichia coli, OmpA was previously reported to form complexes with RcsF, a surface-exposed lipoprotein that triggers the Rcs stress response when damage occurs in the outer membrane and the peptidoglycan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about RcsF function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "e9027931-5bc3-41f6-a15c-d135ad26a703",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C5",
+      "claim": "RcsF interacts with the C-terminal, periplasmic domain of OmpA, not with the N-terminal \u03b2-barrel.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we integrated in vivo and in vitro approaches to establish that RcsF interacts with the C-terminal, periplasmic domain of OmpA, not with the N-terminal \u03b2-barrel, thus implying that RcsF does not reach the bacterial surface via OmpA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data from in vivo and in vitro approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "52b5c079-441f-4951-abbb-4835fb1c4be9",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C6",
+      "claim": "RcsF does not reach the bacterial surface via OmpA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we integrated in vivo and in vitro approaches to establish that RcsF interacts with the C-terminal, periplasmic domain of OmpA, not with the N-terminal \u03b2-barrel, thus implying that RcsF does not reach the bacterial surface via OmpA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that RcsF interacts with the periplasmic domain of OmpA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "71b7a3d8-58f9-4a8d-bfeb-11ab60ddb256",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C7",
+      "claim": "OmpA competes with the inner membrane protein IgaA for RcsF binding across the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest a novel function for OmpA in the cell envelope: OmpA competes with the inner membrane protein IgaA, the downstream Rcs component, for RcsF binding across the periplasm, thereby regulating the Rcs response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "7dbf2e58-3ec6-4d2f-aa62-52cffc7de89e",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C8",
+      "claim": "OmpA regulates the Rcs response by competing with IgaA for RcsF binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest a novel function for OmpA in the cell envelope: OmpA competes with the inner membrane protein IgaA, the downstream Rcs component, for RcsF binding across the periplasm, thereby regulating the Rcs response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion inferred from the competition data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "db94f6a1-84f3-4cb1-b123-7033fae4ca83",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C9",
+      "claim": "The cell envelope of Gram-negative bacteria consists of an inner membrane surrounding the cytoplasm and an outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell envelope is the morphological hallmark of Gram-negative bacteria. It consists of an inner membrane (IM) surrounding the cytoplasm as well as an outer membrane (OM), an asymmetric bilayer with phospholipids in the inner leaflet and lipopolysaccharides in the outer leaflet (Silhavy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bacterial cell envelope structure, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "0743ac70-7e5b-4483-9c17-79be0b327592",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C10",
+      "claim": "The outer membrane is an asymmetric bilayer with phospholipids in the inner leaflet and lipopolysaccharides in the outer leaflet.",
+      "claim_type": "EXPLICIT",
+      "source": "It consists of an inner membrane (IM) surrounding the cytoplasm as well as an outer membrane (OM), an asymmetric bilayer with phospholipids in the inner leaflet and lipopolysaccharides in the outer leaflet (Silhavy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about outer membrane structure, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "1bdf973f-06e2-493c-bb69-7293e29655f2",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C11",
+      "claim": "The two membranes are separated by the periplasm, a compartment in which lies a thin layer of peptidoglycan.",
+      "claim_type": "EXPLICIT",
+      "source": "The two membranes are separated by the periplasm, a compartment in which lies a thin layer of peptidoglycan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bacterial cell envelope structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "9aba2ebd-c228-4a4a-b8d6-26c56fe548d0",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C12",
+      "claim": "The cell envelope is essential for viability.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell envelope is essential for viability: the OM serves as a permeability barrier against toxic compounds present in the environment while the peptidoglycan provides shape and osmotic protection to cells (Okuda et al., 2016; Typas et al., 2012; Egan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "d044cf46-adf3-42f2-82fb-c112743b12b5",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C13",
+      "claim": "The outer membrane serves as a permeability barrier against toxic compounds present in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell envelope is essential for viability: the OM serves as a permeability barrier against toxic compounds present in the environment while the peptidoglycan provides shape and osmotic protection to cells (Okuda et al., 2016; Typas et al., 2012; Egan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about outer membrane function, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "fed7f2bc-cb42-4e77-97e0-8eb2a45bd8af",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C14",
+      "claim": "The peptidoglycan provides shape and osmotic protection to cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell envelope is essential for viability: the OM serves as a permeability barrier against toxic compounds present in the environment while the peptidoglycan provides shape and osmotic protection to cells (Okuda et al., 2016; Typas et al., 2012; Egan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about peptidoglycan function, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "bbe12b33-ea71-4377-8b1a-325b2d3fa09e",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C15",
+      "claim": "Bacteria have evolved sophisticated signaling systems that monitor envelope integrity and respond to perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the functional and structural importance of the envelope, bacteria need to respond to breaches in envelope integrity in a fast and adequate manner. Bacteria have therefore evolved sophisticated signaling systems that monitor envelope integrity and respond to perturbations (Ruiz and Silhavy, 2005; MacRitchie et al., 2008; Delhaye et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "b77f4b67-c991-4add-8b2c-26d6211ae6f3",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C16",
+      "claim": "In Escherichia coli and the Enterobacteriaceae, the Rcs system detects damage to the OM and the peptidoglycan.",
+      "claim_type": "EXPLICIT",
+      "source": "In Escherichia coli and the Enterobacteriaceae, the Rcs system detects damage to the OM and the peptidoglycan (Wall et al., 2018; Laubacher and Ades, 2008; Farris et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Rcs system function, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "b75efa33-1c07-4fad-93f5-10539efc4d8a",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C17",
+      "claim": "Rcs modulates the expression of dozens of genes, including those involved in the biosynthesis of colanic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "In response, Rcs modulates the expression of dozens of genes, including those involved in the biosynthesis of colanic acid, an exopolysaccharide that accumulates on the cell surface to form a protective capsule (Wall et al., 2018; Laloux and Collet, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Rcs response, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "792146fc-8bdf-41f2-bc13-85961be3320e",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C18",
+      "claim": "Colanic acid is an exopolysaccharide that accumulates on the cell surface to form a protective capsule.",
+      "claim_type": "EXPLICIT",
+      "source": "In response, Rcs modulates the expression of dozens of genes, including those involved in the biosynthesis of colanic acid, an exopolysaccharide that accumulates on the cell surface to form a protective capsule (Wall et al., 2018; Laloux and Collet, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about colanic acid function, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "6f7fb59a-8d9e-4231-949b-eb36587e9fd3",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C19",
+      "claim": "Rcs signal transduction involves a multi-step phosphorelay.",
+      "claim_type": "EXPLICIT",
+      "source": "Rcs signal transduction involves a multi-step phosphorelay (Wall et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Rcs signaling, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "9ca46d98-bf4a-4bc3-b79c-d38b34f3177c",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C20",
+      "claim": "Under stress, the IM histidine kinase RcsC autophosphorylates, transfers the phosphoryl group to the IM protein RcsD and finally to the cytoplasmic response regulator RcsB.",
+      "claim_type": "EXPLICIT",
+      "source": "Under stress, the IM histidine kinase RcsC autophosphorylates, transfers the phosphoryl group to the IM protein RcsD and finally to the cytoplasmic response regulator RcsB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Rcs phosphorelay mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "3d598996-d15b-42b1-a216-ea91dfa3e06a",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C21",
+      "claim": "RcsF is an OM lipoprotein that senses most Rcs-inducing cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Rcs activity is modulated by two proteins that are not part of the phosphorylation cascade: RcsF and IgaA. RcsF is an OM lipoprotein that senses most Rcs-inducing cues, while IgaA is an essential IM protein that down-regulates Rcs (Takeda et al., 2001; Dom\u00ednguez-Bernal et al., 2004) by interacting with RcsD (Wall et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RcsF function, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "434ea3cb-0e9f-4755-a698-2c4e1204b96f",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C22",
+      "claim": "IgaA is an essential IM protein that down-regulates Rcs by interacting with RcsD.",
+      "claim_type": "EXPLICIT",
+      "source": "RcsF is an OM lipoprotein that senses most Rcs-inducing cues, while IgaA is an essential IM protein that down-regulates Rcs (Takeda et al., 2001; Dom\u00ednguez-Bernal et al., 2004) by interacting with RcsD (Wall et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about IgaA function, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "3d97cf6b-fc99-4188-b499-3d6def69cb38",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C23",
+      "claim": "When perturbations occur in the peptidoglycan or in the OM, RcsF reaches across the periplasm to interact with IgaA, leading this protein to alleviate its inhibition of the phosphorelay, turning on Rcs.",
+      "claim_type": "EXPLICIT",
+      "source": "When perturbations occur in the peptidoglycan or in the OM, RcsF, while remaining anchored in the OM, reaches across the periplasm to interact with IgaA, leading this protein to alleviate its inhibition of the phosphorelay, turning on Rcs (Cho et al., 2014; Hussein et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Rcs activation mechanism, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "309fc5ac-be61-4570-a8ae-3e2bf6119740",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C24",
+      "claim": "In the absence of stress, RcsF is occluded from IgaA by interacting with OM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of stress, RcsF is occluded from IgaA by interacting with OM proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RcsF regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "adc34c2c-6540-4fe8-9fca-37e1c53e66aa",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C25",
+      "claim": "A complex between RcsF and BamA, the core component of the \u03b2-barrel assembly machinery (BAM), was identified.",
+      "claim_type": "EXPLICIT",
+      "source": "A complex between RcsF and BamA, the core component of the \u03b2-barrel assembly machinery (BAM), was identified (Cho et al., 2014; Konovalova et al., 2014) and its structure solved (Rodr\u00edguez-Alonso et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "ad7b3c42-2944-4531-b82f-41d256caf5da",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C26",
+      "claim": "The structure of the RcsF-BamA complex was solved.",
+      "claim_type": "EXPLICIT",
+      "source": "A complex between RcsF and BamA, the core component of the \u03b2-barrel assembly machinery (BAM), was identified (Cho et al., 2014; Konovalova et al., 2014) and its structure solved (Rodr\u00edguez-Alonso et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "235a70a7-e5b7-4dda-b8f5-cd9cae6361d4",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C27",
+      "claim": "The RcsF-BamA complex forms as an intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex forms as an intermediate (Cho et al., 2014; Konovalova et al., 2014): delivery of unfolded OM \u03b2-barrels (OMPs) to BAM triggers the release of RcsF from BamA and its transfer to OMP partners (Rodr\u00edguez-Alonso et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "7694b23e-4d4c-4658-acae-1f8d1d61d380",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C28",
+      "claim": "Delivery of unfolded OM \u03b2-barrels (OMPs) to BAM triggers the release of RcsF from BamA and its transfer to OMP partners.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex forms as an intermediate (Cho et al., 2014; Konovalova et al., 2014): delivery of unfolded OM \u03b2-barrels (OMPs) to BAM triggers the release of RcsF from BamA and its transfer to OMP partners (Rodr\u00edguez-Alonso et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "91ffa975-a7ce-47b0-9c56-bc0a222aba55",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C29",
+      "claim": "Three abundant OMPs (OmpA, OmpC and OmpF) have been identified as RcsF partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Three abundant OMPs (OmpA, OmpC and OmpF) have been identified as RcsF partners (Cho et al., 2014; Konovalova et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "407568aa-7e8d-49f6-b461-3b8e643192be",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C30",
+      "claim": "Under stress conditions, newly synthesized RcsF molecules fail to interact with BamA.",
+      "claim_type": "EXPLICIT",
+      "source": "Under stress conditions, newly synthesized RcsF molecules fail to interact with BamA (Cho et al., 2014): they remain in the periplasm, free to bind IgaA, triggering Rcs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "0919971f-fd0d-4b4c-bc88-a853bb1ae83f",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C31",
+      "claim": "Under stress conditions, RcsF molecules remain in the periplasm, free to bind IgaA, triggering Rcs.",
+      "claim_type": "EXPLICIT",
+      "source": "Under stress conditions, newly synthesized RcsF molecules fail to interact with BamA (Cho et al., 2014): they remain in the periplasm, free to bind IgaA, triggering Rcs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "1c0a194a-d8aa-4734-9a80-0136c7e6fcc9",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C32",
+      "claim": "The general view is that OM lipoproteins are oriented toward the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, whereas the general view is that OM lipoproteins are oriented toward the periplasm, previous work concluded that at least a portion of RcsF, a protein which is composed of an N-terminal disordered linker and a C-terminal globular domain required for signaling (Leverrier et al., 2011; Rogov et al., 2011), is exposed on the cell surface",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "a8f88af2-29fe-4468-8488-2007e66320c5",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C33",
+      "claim": "RcsF is composed of an N-terminal disordered linker and a C-terminal globular domain required for signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "previous work concluded that at least a portion of RcsF, a protein which is composed of an N-terminal disordered linker and a C-terminal globular domain required for signaling (Leverrier et al., 2011; Rogov et al., 2011), is exposed on the cell surface",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RcsF structure, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "34f359c7-30e6-41b3-affc-25abc26c8a78",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C34",
+      "claim": "Previous work concluded that at least a portion of RcsF is exposed on the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, whereas the general view is that OM lipoproteins are oriented toward the periplasm, previous work concluded that at least a portion of RcsF, a protein which is composed of an N-terminal disordered linker and a C-terminal globular domain required for signaling (Leverrier et al., 2011; Rogov et al., 2011), is exposed on the cell surface",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is prior work being referenced, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "eae4c22b-cfa0-40a5-b820-6ddd9ce6b34a",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C35",
+      "claim": "OmpA, OmpC, and OmpF, but not BamA, were identified as potential vehicles for RcsF surface exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "OmpA, OmpC, and OmpF, but not BamA (Cho et al., 2014), were identified as potential vehicles for RcsF surface exposure (Cho et al., 2014; Konovalova et al., 2014; Konovalova et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is prior work being referenced, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "c680ef19-4575-47a1-b8dc-cf1ccec16945",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C36",
+      "claim": "OmpC and OmpF form 16-stranded \u03b2-barrels that associate into trimers in the OM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, OmpC and OmpF form 16-stranded \u03b2-barrels that associate into trimers in the OM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about OmpC and OmpF structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "b7679beb-817a-4059-9f30-eb88858c43d7",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C37",
+      "claim": "OmpC and OmpF display a central pore that is large enough to accommodate a disordered peptide such as the RcsF linker.",
+      "claim_type": "EXPLICIT",
+      "source": "Because they form large \u03b2-barrels, they display a central pore (Basl\u00e9 et al., 2006; Yamashita et al., 2008; Radhakrishnan et al., 2010; Housden et al., 2013) that is large enough to accommodate a disordered peptide such as the RcsF linker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about OmpC/F structure, supported by citations, with inference about RcsF accommodation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "2cacda22-1f5e-45f1-9752-5c9670d2cb75",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C38",
+      "claim": "OmpA is the most abundant OMP in Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "The situation is less clear for OmpA: although this protein, the most abundant OMP in Escherichia coli, has been studied for more than four decades, how it folds remains controversial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about OmpA abundance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "8cf5a6b6-a868-49a3-8c49-152225880f4a",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C39",
+      "claim": "OmpA has been studied for more than four decades.",
+      "claim_type": "EXPLICIT",
+      "source": "The situation is less clear for OmpA: although this protein, the most abundant OMP in Escherichia coli, has been studied for more than four decades, how it folds remains controversial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical fact about OmpA research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "5ed6c72a-8914-42d7-a860-5db65a423f2c",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C40",
+      "claim": "How OmpA folds remains controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "The situation is less clear for OmpA: although this protein, the most abundant OMP in Escherichia coli, has been studied for more than four decades, how it folds remains controversial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "0a2d0385-737d-49c7-b060-d9754894d54a",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C41",
+      "claim": "Some studies indicate that OmpA can fold into a 16-stranded \u03b2-barrel with a large central pore.",
+      "claim_type": "EXPLICIT",
+      "source": "While some studies indicate that OmpA can also fold into a 16-stranded \u03b2-barrel with a large central pore (Singh et al., 2003; Stathopoulos, 1996), the predominant view is that OmpA adopts a two-domain structure with an N-terminal eight-stranded \u03b2-barrel inserted in the OM (Pautsch and Schulz, 1998) and a C-terminal, globular domain in the periplasm (Mot and Vanderleyden, 1994; Park et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is prior work being referenced, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "3258fa9f-9949-4c26-9535-3eca33849d23",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C42",
+      "claim": "The predominant view is that OmpA adopts a two-domain structure with an N-terminal eight-stranded \u03b2-barrel inserted in the OM and a C-terminal, globular domain in the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "While some studies indicate that OmpA can also fold into a 16-stranded \u03b2-barrel with a large central pore (Singh et al., 2003; Stathopoulos, 1996), the predominant view is that OmpA adopts a two-domain structure with an N-terminal eight-stranded \u03b2-barrel inserted in the OM (Pautsch and Schulz, 1998) and a C-terminal, globular domain in the periplasm (Mot and Vanderleyden, 1994; Park et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the predominant view in the field, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "ec7af2d1-7e15-48a8-8cc1-82f9aed5622c",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C43",
+      "claim": "In the two-domain conformation, the \u03b2-barrel of OmpA is too small to accommodate a polypeptide.",
+      "claim_type": "EXPLICIT",
+      "source": "In this conformation, the \u03b2-barrel of OmpA is too small to accommodate a polypeptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a structural constraint of the two-domain OmpA conformation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "14cde502-ad2e-459a-93ea-42d8d621c1d6",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C44",
+      "claim": "OmpA adopts its two-domain structure when in complex with RcsF.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining in vivo site-specific photo-crosslinking, targeted proteolysis, and nuclear magnetic resonance (NMR) titration, we established that OmpA adopts its two-domain structure when in complex with RcsF and that it is the C-terminal, periplasmic domain\u2014not the \u03b2-barrel\u2014that interacts with the lipoprotein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by multiple experimental approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "cf51fe27-31de-47eb-9aa0-573b62a1a0f2",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C45",
+      "claim": "It is the C-terminal, periplasmic domain\u2014not the \u03b2-barrel\u2014of OmpA that interacts with RcsF.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining in vivo site-specific photo-crosslinking, targeted proteolysis, and nuclear magnetic resonance (NMR) titration, we established that OmpA adopts its two-domain structure when in complex with RcsF and that it is the C-terminal, periplasmic domain\u2014not the \u03b2-barrel\u2014that interacts with the lipoprotein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by multiple experimental approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "d9d71268-dabf-42ba-be7a-bb51813f07d6",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C46",
+      "claim": "Residues in RcsF and in OmpA that are involved in the interaction were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we identified residues in RcsF and in OmpA that are involved in the interaction, thus providing information about the binding interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "07a5c716-1195-4431-99f1-7fb41493a792",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C47",
+      "claim": "The topology of OmpA-RcsF is different from that of OmpC/F-RcsF.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results indicate that the topology of OmpA-RcsF is different from that of OmpC/F-RcsF",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "0586e17f-ed79-40c3-be0c-9220fe75f1d1",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C48",
+      "claim": "The equilibrium dissociation constant of the C-terminal domain of OmpA for RcsF is 125 \u00b1 85 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "First, from the NMR shift data, we calculated the equilibrium dissociation constant (KD) of OmpA186-325 for RcsF as being 125 \u00b1 85 \u00b5M (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from NMR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "b0286de6-832c-4865-abcb-675cd1ee584f",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C49",
+      "claim": "The periplasmic domain of IgaA has a KD of 1.6 \u00b1 0.3 nM for RcsF.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, using biolayer interferometry, we measured that the periplasmic domain of IgaA has a KD of 1.6 \u00b1 0.3 nM for RcsF (Figure 5D, see Figure 5\u2014source data 2 for statistics).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from biolayer interferometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "045bcbc5-20de-4188-b848-f8b8abfd32f4",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C50",
+      "claim": "IgaA has substantially more affinity for RcsF than OmpA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these values confirm that IgaA has substantially more affinity for RcsF than OmpA (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparing the measured KD values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "fb74ba8b-1983-429b-af06-5c5d802e3a5d",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C51",
+      "claim": "OmpA serves as a buffer for RcsF, titrating it from IgaA, thereby fine-tuning Rcs activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support a model in which OmpA serves as a buffer for RcsF, titrating it from IgaA, thereby fine-tuning Rcs activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental findings and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "84df5b77-fc12-49a5-8a07-74adc0ab2fbb",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C52",
+      "claim": "A ~ 55 kDa band, the size of the OmpA (40 kDa)-RcsF (14 kDa) complex, formed after UV illumination for RcsF variants RcsFR89X, RcsFP116X, RcsFQ79X, RcsFR45X, RcsFK98X, RcsFQ121X, RcsFN54X, and RcsFE110X.",
+      "claim_type": "EXPLICIT",
+      "source": "After UV illumination, a ~ 55 kDa band, the size of the OmpA (40 kDa)-RcsF (14 kDa) complex, formed and was detected with an anti-RcsF antibody (Figure 1) for the following variants (in decreasing intensity): RcsFR89X, RcsFP116X, RcsFQ79X, RcsFR45X, RcsFK98X, RcsFQ121X, RcsFN54X, and RcsFE110X.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from photo-crosslinking experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "b5c3399e-7ae6-4b09-8691-c2a84721366c",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C53",
+      "claim": "The identity of the ~55 kDa band as OmpA-RcsF was verified by showing that it did not form in \u2206ompA cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The identity of the ~55 kDa band as OmpA-RcsF was further verified by showing that it did not form in \u2206ompA cells (Figure 1\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental verification using a genetic deletion strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "3045eabe-4717-4432-bde2-24ad509e77cc",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C54",
+      "claim": "Residues Q79, R89 and P116 of RcsF are part of the binding interface between RcsF and the luminal wall of the BamA \u03b2-barrel.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, residues Q79, R89 and P116 are part of the binding interface between RcsF and the luminal wall of the BamA \u03b2-barrel in the recently published structure of the BamA-RcsF complex (Rodr\u00edguez-Alonso et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from a recently published structure, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "bf005eeb-6c68-4970-8892-2942c15974b4",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C55",
+      "claim": "The RcsFR45X, RcsFR89X and RcsFK98X variants formed a UV-dependent band migrating slightly higher than the OmpA-RcsF complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we observed that the RcsFR45X, RcsFR89X and RcsFK98X variants formed a UV-dependent band migrating slightly higher than the OmpA-RcsF complex (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental observation from photo-crosslinking data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "adba5317-9bef-41f5-8c40-3fa2fc24776c",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C56",
+      "claim": "The band migrating slightly higher than OmpA-RcsF was identified as a complex between RcsF and OmpC/F because it did not form when ompR was deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on RcsFR89X, we identified this band as a complex between RcsF and OmpC/F because it did not form when ompR, a transcription factor required for the production of OmpC and OmpF (Hall and Silhavy, 1979; Chubiz and Rao, 2011), was deleted (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental identification using a genetic deletion approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "a090a975-d52f-442b-8336-584041889d8f",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C57",
+      "claim": "Digestion of the 55 kDa OmpATH_189-RcsF complex with thrombin yielded a ~ 35 kDa band that was recognized by both anti-RcsF and anti-His antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "For all three RcsF variants, digestion of the 55 kDa OmpATH_189-RcsF complex with thrombin yielded a ~ 35 kDa band that was recognized by both anti-RcsF and anti-His antibodies (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from proteolysis experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "13176d75-57ae-4f44-9cb6-36c942db946a",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C58",
+      "claim": "RcsF (14 kDa) interacts with the C-terminal region of OmpA (~16 kDa) in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the presence of a His-tag in the C-terminus of OmpA (Materials and Methods), we concluded that RcsF (14 kDa) interacts with the C-terminal region of OmpA (~16 kDa) in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the proteolysis and antibody detection data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "776918c0-1368-4d3e-a048-c137166b5952",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C59",
+      "claim": "Thrombin digestion of the OmpATH_243-RcsF complexes generated a smaller band (~30 kDa) that was recognized by anti-RcsF antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Like OmpATH_189, OmpATH_243 (~10 kDa) could be photo-crosslinked to the three DiZPK-containing RcsF variants described above (Figure 2C,D). In all three cases, thrombin digestion of the OmpATH_243-RcsF complexes generated a smaller band (~30 kDa) that was recognized by anti-RcsF antibodies (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from proteolysis experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "1cbbaa81-a0b4-490c-a457-1b059a6d4a30",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C60",
+      "claim": "OmpATH_243-RcsF only underwent partial cleavage, which probably reflected decreased accessibility of the cleavage site to the protease.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to OmpATH_189-RcsF, which underwent complete digestion, OmpATH_243-RcsF only underwent partial cleavage (Figure 2C,D), which probably reflected decreased accessibility of the cleavage site to the protease.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental observation with a speculative interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "1c0d4cbc-6f77-42e3-bf22-525f1f18da7d",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C61",
+      "claim": "The three tested residues of RcsF bind the region of OmpA between residue I243 and the C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "This ~30 kDa band was also detected by anti-His antibodies (Figure 2D), indicating that the three tested residues of RcsF bind the region of OmpA between residue I243 and the C-terminus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the proteolysis and antibody detection data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "103fd104-9ecc-437b-bbe2-e2f959a0cdd3",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C62",
+      "claim": "No complex was detected between OmpA1-170 and RcsF in chemical crosslinking experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Although complexes formed in cells expressing wild-type OmpA, no complex was detected in cells producing OmpA1-170 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from chemical crosslinking shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "c3de5d74-4b0d-47ca-a541-08d8c696d3b9",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C63",
+      "claim": "Expression of OmpA1-170 did not suppress the activation of the Rcs system that occurs in cells lacking OmpA.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, expression of OmpA1-170 did not suppress the activation of the Rcs system (Figure 3A, see Figure 3\u2014source data 1 for statistics) that occurs in cells lacking OmpA and that results from the inability of RcsF to interact with this \u03b2-barrel (Cho et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from \u03b2-galactosidase assays shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "90aa9c0e-a2a8-4dbc-8dee-c1f327e961c5",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C64",
+      "claim": "OmpAX could be crosslinked to RcsF.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that OmpAX could be crosslinked to RcsF (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from chemical crosslinking shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "bea6e112-b8e9-4045-8c99-d06f5fb8ee4f",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C65",
+      "claim": "Expression of OmpAX fully suppressed Rcs activation.",
+      "claim_type": "EXPLICIT",
+      "source": "and that its expression fully suppressed Rcs activation (Figure 3B, see Figure 3\u2014source data 1 for statistics).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from \u03b2-galactosidase assays shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "e89db54f-0f5f-4428-a8ba-a1026de301c5",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C66",
+      "claim": "Expression of OmpAPal led to the formation of OmpAPal-RcsF.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, expression of OmpAPal led to the formation of OmpAPal-RcsF and substantially decreased Rcs activity (Figure 3C, see Figure 3\u2014source data 1 for statistics).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from chemical crosslinking shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "cf4de710-f61a-4896-8faa-9874c40e2700",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C67",
+      "claim": "Expression of OmpAPal substantially decreased Rcs activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, expression of OmpAPal led to the formation of OmpAPal-RcsF and substantially decreased Rcs activity (Figure 3C, see Figure 3\u2014source data 1 for statistics).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from \u03b2-galactosidase assays shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "2a4d9fd6-2689-4d2a-84be-2368b65f157f",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C68",
+      "claim": "The C-terminal region of OmpA is necessary and sufficient for the interaction with RcsF.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the C-terminal region of OmpA is necessary and sufficient for the interaction with RcsF, and the N-terminal region is dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data from OmpA variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "3868d190-a2a7-4426-985f-0e01c7246d66",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C69",
+      "claim": "The N-terminal region of OmpA is dispensable for the interaction with RcsF.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the C-terminal region of OmpA is necessary and sufficient for the interaction with RcsF, and the N-terminal region is dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data from OmpA variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "1a8779d0-2dc1-437f-b063-8662261207f6",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C70",
+      "claim": "The interaction between RcsF and OmpA takes place on the periplasmic side of the OM.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that RcsF interacts with the C-terminal, globular domain of OmpA and that this interaction takes place on the periplasmic side of the OM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the structural findings about OmpA-RcsF interaction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "cd07123f-3d50-46f4-9abd-0a9d5f012d31",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C71",
+      "claim": "Several OmpA residues showed chemical shift variations in 15N-1H 2D correlation experiments upon addition of RcsF.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon addition of RcsF, several OmpA residues showed chemical shift variations in 15N-1H 2D correlation experiments (Figure 4A,B, see Figure 4\u2014source data 1 for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from NMR titration experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "de73eea0-eabe-4bc9-b163-140f502477df",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C72",
+      "claim": "Most of the shifted residues (T240, G244, S245, D246, A247, G251, L252, K294 and A297) were located near the tip of the periplasmic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the shifted residues (T240, G244, S245, D246, A247, G251, L252, K294 and A297; Figure 4B) were located near the tip of the periplasmic domain (Figure 4C,D), identifying this region, and in particular a flexible loop between \u03b2-strand two and \u03b1-helix 3, as part of the binding interface with RcsF.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is analysis of NMR data mapped onto the structure, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "0d4b58fe-9bc0-4df3-b415-01a619cc24c4",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C73",
+      "claim": "A flexible loop between \u03b2-strand two and \u03b1-helix 3 of OmpA is part of the binding interface with RcsF.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the shifted residues (T240, G244, S245, D246, A247, G251, L252, K294 and A297; Figure 4B) were located near the tip of the periplasmic domain (Figure 4C,D), identifying this region, and in particular a flexible loop between \u03b2-strand two and \u03b1-helix 3, as part of the binding interface with RcsF.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on NMR data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "4bf4c6af-859f-44ba-8ec7-f07d728547d3",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C74",
+      "claim": "OmpA was strongly crosslinked to RcsF when DiZPK was introduced at residue D246.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of this loop for the OmpA-RcsF interaction was confirmed using site-specific photo-crosslinking: OmpA was strongly crosslinked to RcsF when DiZPK was introduced at residue D246, while weak complex formation was observed with OmpAR242X and OmpAY248X (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from photo-crosslinking shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "b83d52fe-3d4f-4e52-a4a6-36f1662adeee",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C75",
+      "claim": "Weak complex formation was observed with OmpAR242X and OmpAY248X.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of this loop for the OmpA-RcsF interaction was confirmed using site-specific photo-crosslinking: OmpA was strongly crosslinked to RcsF when DiZPK was introduced at residue D246, while weak complex formation was observed with OmpAR242X and OmpAY248X (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from photo-crosslinking shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "50291efa-d349-463d-8240-77bf9de6d88f",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C76",
+      "claim": "RcsF interacts with the C-terminal domain of OmpA in its globular conformation, not only in vivo but also in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, taken together, our results allow us to conclude that RcsF interacts with the C-terminal domain of OmpA in its globular conformation, not only in vivo but also in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on both in vivo and in vitro experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "4e963a58-408d-414e-ab85-ce11e8581fa7",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C77",
+      "claim": "Increasing the levels of IgaA led to more IgaA-RcsF complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the levels of IgaA led to changes in the IgaA-RcsF and OmpA-RcsF complexes that were inversely correlated: whereas overexpressing IgaA led to more IgaA-RcsF, it decreased the levels of the OmpA-RcsF complex (compare lanes 9 and 10 with lanes 7 and 8 in Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from chemical crosslinking with IgaA overexpression shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "f312123a-47f6-43b3-a29f-8ee75e7386d8",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C78",
+      "claim": "Overexpressing IgaA decreased the levels of the OmpA-RcsF complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the levels of IgaA led to changes in the IgaA-RcsF and OmpA-RcsF complexes that were inversely correlated: whereas overexpressing IgaA led to more IgaA-RcsF, it decreased the levels of the OmpA-RcsF complex (compare lanes 9 and 10 with lanes 7 and 8 in Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from chemical crosslinking with IgaA overexpression shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "95efb731-a1a1-4477-8411-86865cfdd661",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C79",
+      "claim": "IgaA and OmpA compete for RcsF across the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, IgaA and OmpA seem to compete for RcsF across the periplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the inverse correlation observed in the crosslinking data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "f3a3854b-b443-4fe8-af43-13cde6462f9b",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C80",
+      "claim": "IgaA (200 copies per cell) is far less abundant than OmpA (200,000 copies).",
+      "claim_type": "EXPLICIT",
+      "source": "Because IgaA (200 copies per cell; Li et al., 2014) is far less abundant than OmpA (200,000 copies), even when overexpressed (we estimate that IgaA levels were increased 8\u201340 fold over baseline (Figure 5\u2014figure supplement 1; Materials and methods) in the experiment above), these results suggested that IgaA has a substantially higher affinity for RcsF than OmpA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on published copy number data, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "1c97514c-c4c4-4039-b69d-1d9f2144b408",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C81",
+      "claim": "IgaA has a substantially higher affinity for RcsF than OmpA.",
+      "claim_type": "EXPLICIT",
+      "source": "Because IgaA (200 copies per cell; Li et al., 2014) is far less abundant than OmpA (200,000 copies), even when overexpressed (we estimate that IgaA levels were increased 8\u201340 fold over baseline (Figure 5\u2014figure supplement 1; Materials and methods) in the experiment above), these results suggested that IgaA has a substantially higher affinity for RcsF than OmpA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the competition data considering the relative abundances of IgaA and OmpA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "b8fa71f2-878b-4602-96bc-b3ee400d22da",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C82",
+      "claim": "The BamA-RcsF complex was not modified by the increased expression of IgaA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we noted that the BamA-RcsF complex was not modified by the increased expression of IgaA (lanes 7\u201310 in Figure 5B), which is consistent with the fact that BamA has a much higher affinity for RcsF (KD ~400 nM; Rodr\u00edguez-Alonso et al., 2020) than OmpA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental observation from the crosslinking data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "d26ac6d3-3b4f-430c-984e-0b0a74bc1599",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C83",
+      "claim": "BamA has a much higher affinity for RcsF (KD ~400 nM) than OmpA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we noted that the BamA-RcsF complex was not modified by the increased expression of IgaA (lanes 7\u201310 in Figure 5B), which is consistent with the fact that BamA has a much higher affinity for RcsF (KD ~400 nM; Rodr\u00edguez-Alonso et al., 2020) than OmpA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on published affinity data, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "6188252d-2956-425d-a752-c9b9d0ce67ab",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C84",
+      "claim": "OmpA was first purified from E. coli membranes in 1977.",
+      "claim_type": "EXPLICIT",
+      "source": "OmpA was first purified from E. coli membranes in 1977 (Chai and Foulds, 1977) and has served as a model for OMP assembly since then.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "10ddbb50-f7b1-4aec-9239-a7265ee4629f",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C85",
+      "claim": "OmpA has served as a model for OMP assembly since 1977.",
+      "claim_type": "EXPLICIT",
+      "source": "OmpA was first purified from E. coli membranes in 1977 (Chai and Foulds, 1977) and has served as a model for OMP assembly since then.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical fact about OmpA research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "d1faa78e-2c5e-4b95-bbfd-28c82ed541b4",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C86",
+      "claim": "An alternative conformation in which OmpA forms a single, 16-stranded \u03b2-barrel, has been proposed to also exist.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the predominant view is that OmpA folds into a two-domain conformation, with an N-terminal eight-stranded \u03b2-barrel and a C-terminal periplasmic domain, an alternative conformation in which OmpA forms a single, 16-stranded \u03b2-barrel, has been proposed to also exist (Singh et al., 2003; Stathopoulos, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is prior work being referenced, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "3c52104b-e3e8-4330-8d54-4708b759d597",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C87",
+      "claim": "In the OmpA-RcsF model, all six residues mutated to DiZPK are situated in close proximity to residues from the binding partner.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, all six residues mutated to DiZPK (RcsFR45X, RcsFQ79X, RcsFR89X, OmpAR242X, OmpAD246X, and OmpAY248X) are situated in close proximity to residues from the binding partner (Figure 6A), in good agreement with the crosslinking data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the computational model shown in Figure 6A, validated against experimental crosslinking data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "351ef7ff-63b2-4684-b41e-ec5eab823fc6",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C88",
+      "claim": "The peptidoglycan-binding region of OmpA remains accessible and is oriented in the direction opposite to the N-terminal end of RcsF in the OmpA-RcsF model.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the peptidoglycan-binding region of OmpA (Park et al., 2012) remains accessible and is oriented in the direction opposite to the N-terminal end of RcsF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the computational model, with reference to prior work on peptidoglycan binding.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "265a9a5a-d578-4ed5-81d9-341758757741",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C89",
+      "claim": "When OmpA adopts the two-domain conformation, its \u03b2-barrel domain does not have an open channel to accommodate the RcsF linker.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when OmpA adopts the two-domain conformation, as in the OmpA-RcsF complex, its \u03b2-barrel domain does not have an open channel (Figure 3\u2014figure supplement 1B) to accommodate the RcsF linker.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural inference based on the known structure of the two-domain OmpA conformation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "56083ff2-e26e-4539-8624-886a7d10daee",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C90",
+      "claim": "Only OmpC and OmpF serve as vehicles for RcsF surface exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that RcsF does not reach the surface when in complex with OmpA, and predict that only OmpC and OmpF (which form large \u03b2-barrels) serve as vehicles for surface exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the structural findings about OmpA-RcsF.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "a191a489-2bc6-45d6-af1c-dc0f645aca5a",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C91",
+      "claim": "Only a subset of the DiZPK-containing variants of RcsF that form a complex with OmpA also form a complex with OmpC/F.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that only a subset of the DiZPK-containing variants of RcsF that form a complex with OmpA also form a complex with OmpC/F (Figure 1) also supports the idea that the topology of OmpA-RcsF is different from that of OmpC/F-RcsF.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental observation from Figure 1 used to support a conclusion about topology differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "a92150b0-c3be-4d4d-b49a-148a7e36300a",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C92",
+      "claim": "Lipopolysaccharide alterations caused by sub-lethal concentrations of polymyxin B induce Rcs in MG1655 cells lacking ompA.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that lipopolysaccharide alterations caused by sub-lethal concentrations of polymyxin B induce Rcs in MG1655 cells lacking ompA (Figure 6\u2014figure supplement 1, see Figure 6\u2014figure supplement 1\u2014source data 1 for statistics), in contrast to what was previously reported in another strain background (MC4100) (Konovalova et al., 2016), which further questions the potential role of OmpA-RcsF in sensing lipopolysaccharide defects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from polymyxin B treatment shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "2940ed46-14b2-45da-980d-3f1da6a9a369",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C93",
+      "claim": "The formation of the OmpA-RcsF complex was likely mediated by BAM during the assembly of OmpA.",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that the formation of the OmpA-RcsF complex was likely mediated by BAM during the assembly of OmpA (Cho et al., 2014; Konovalova et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is prior work being referenced, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "44a99152-654c-42d5-a664-79b8656a8e2a",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C94",
+      "claim": "The finding that RcsF interacts with the C-terminal, periplasmic domain of OmpA questions the conclusion that BAM mediates OmpA-RcsF complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our finding that RcsF interacts with the C-terminal, periplasmic domain of OmpA, whose folding is unlikely to depend on BAM (Noinaj et al., 2017), questions this conclusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion that questions prior work based on the current findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "863601c9-b2a3-481b-9b40-fcd06dfc8bdb",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C95",
+      "claim": "OmpA functions as a buffer for RcsF, negatively impacting its ability to activate Rcs.",
+      "claim_type": "EXPLICIT",
+      "source": "From Equation 3, we conclude that the concentration of IgaA-RcsF will also increase as a function of [RcsF] in the periplasm. However, in this case, the increase is not linear, but is decelerated and follows a hyperbolic curve (Figure 6\u2014figure supplement 2), indicating that OmpA functions as a buffer for RcsF, negatively impacting its ability to activate Rcs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on mathematical modeling shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "d0446ae5-a91b-4169-a0f5-4d7e1e72192e",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C96",
+      "claim": "Exposure to low concentrations of polymyxin B causes higher Rcs induction in cells lacking ompA than in the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "The buffering function of OmpA is nicely illustrated by the fact that exposure to low concentrations of polymyxin B causes higher Rcs induction in cells lacking ompA than in the wild type (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from polymyxin B treatment shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "e23decc2-e897-423c-967b-5a1ce1d5cbd0",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C97",
+      "claim": "Intracellular factors such as attachment of the periplasmic domains to their respective membrane anchors and binding of OmpA to the peptidoglycan modulate the affinity of OmpA and IgaA for RcsF in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain the apparent discrepancy between the in vivo observations and the in vitro measurements, we propose that intracellular factors such as attachment of the periplasmic domains of these proteins to their respective membrane anchors (we used the soluble periplasmic domains of OmpA, IgaA and RcsF for the in vitro measurements) and binding of OmpA to the peptidoglycan (Reusch, 2012) modulate the affinity of OmpA and IgaA for RcsF in vivo, allowing them to actually compete for RcsF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed explanation to reconcile in vivo and in vitro observations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "3fc4d803-9555-40ef-beec-4064eda47244",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C98",
+      "claim": "OmpA is involved in the network controlling the activity of Rcs, one of the most complex signal transduction systems in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "It is remarkable that OmpA, a protein that had mostly been known for its role in stabilizing the OM, is also involved in the network controlling the activity of Rcs, one of the most complex signal transduction systems in bacteria (Cho et al., 2014; Hussein et al., 2018; Laloux and Collet, 2017), whose correct functioning is critical for success of commensal Enterobacteriaceae and virulence of pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the significance of the findings, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "ce5da1e7-4d51-4cf9-ae45-b7e542dc9284",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C99",
+      "claim": "Correct functioning of Rcs is critical for success of commensal Enterobacteriaceae and virulence of pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "It is remarkable that OmpA, a protein that had mostly been known for its role in stabilizing the OM, is also involved in the network controlling the activity of Rcs, one of the most complex signal transduction systems in bacteria (Cho et al., 2014; Hussein et al., 2018; Laloux and Collet, 2017), whose correct functioning is critical for success of commensal Enterobacteriaceae and virulence of pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the importance of Rcs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "a931d242-3d12-45e6-8f3e-cdc81c93f313",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C100",
+      "claim": "OmpA had mostly been known for its role in stabilizing the OM.",
+      "claim_type": "EXPLICIT",
+      "source": "It is remarkable that OmpA, a protein that had mostly been known for its role in stabilizing the OM, is also involved in the network controlling the activity of Rcs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge about OmpA function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "3fa8b4b7-e934-4ae7-8724-1139e1a28283",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C101",
+      "claim": "DiZPK is a lysine analog with substantially higher photo-crosslinking efficiency than p-benzoyl-L-phenylalanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of using the hydrophobic crosslinker p-benzoyl-L-phenylalanine like before (Cho et al., 2014), we used N6-((3-(3-methyl-3H-diazirin-3-yl)propyl)carbamoyl)-L-lysine (DiZPK), a lysine analog with substantially higher photo-crosslinking efficiency than p-benzoyl-L-phenylalanine (Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about DiZPK properties, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "09e7cc16-78be-43d6-bff3-499fc04de02a",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C102",
+      "claim": "The expression levels of the DiZPK-containing RcsF mutant proteins were substantially lower when cells were grown in LB.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that the expression levels of the DiZPK-containing RcsF mutant proteins were substantially lower when cells were grown in LB (data not shown)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation about protein expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "3ef078b3-7591-40f6-8f8f-6c8bcff8ce2d",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C103",
+      "claim": "The expression levels of RcsF were greatly enhanced in MOPS-glucose/arabinose minimal medium.",
+      "claim_type": "EXPLICIT",
+      "source": "in contrast, the expression levels of RcsF were greatly enhanced in MOPS-glucose/arabinose minimal medium (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation about protein expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "e13c3ee0-1e73-4752-a71c-ea50e0697099",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C104",
+      "claim": "OmpX is a small eight-stranded \u03b2-barrel that constitutes a structural homolog of the N-terminal region of OmpA when it folds as a small \u03b2-barrel.",
+      "claim_type": "EXPLICIT",
+      "source": "OmpX is a small eight-stranded \u03b2-barrel that constitutes a structural homolog of the N-terminal region of OmpA when it folds as a small \u03b2-barrel (the two \u03b2-barrels can be superimposed with a root mean square deviation (RMSD) of 2.49 \u00c5; Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on structural comparison shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "3ba010fc-94e9-480f-b00d-9fc15c313560",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C105",
+      "claim": "OmpX does not share sequence homology with the N-terminal region of OmpA (~25%).",
+      "claim_type": "EXPLICIT",
+      "source": "OmpX does not share sequence homology with the N-terminal region of OmpA (~25%) and can thus be considered as an OM anchor for the C-terminal region when fused to the latter as in OmpAX (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about sequence homology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "828a08f1-c753-4200-820c-c13d8ba4853f",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C106",
+      "claim": "The concentration of OmpA in the periplasm is ~1 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that OmpA's C-terminal domain is present in the periplasm at ~1 mM, RcsF at ~15 \u00b5M, and IgaA at ~1 \u00b5M (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate based on calculations described in Materials and methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "5e2aa4fb-c257-40b4-b167-2c8f55f0db8a",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C107",
+      "claim": "The concentration of RcsF in the periplasm is ~15 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that OmpA's C-terminal domain is present in the periplasm at ~1 mM, RcsF at ~15 \u00b5M, and IgaA at ~1 \u00b5M (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate based on calculations described in Materials and methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "664c2bcd-12e6-48a4-9c5a-f66da3f6d7e0",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C108",
+      "claim": "The concentration of IgaA in the periplasm is ~1 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that OmpA's C-terminal domain is present in the periplasm at ~1 mM, RcsF at ~15 \u00b5M, and IgaA at ~1 \u00b5M (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate based on calculations described in Materials and methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "052c8796-9706-4b08-a430-d200bb162942",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C109",
+      "claim": "The volume of the envelope is ~30% of the total cell volume.",
+      "claim_type": "EXPLICIT",
+      "source": "The volume of the envelope being ~30% of the total cell volume (Stock et al., 1977), we calculate that the concentration of the C-terminal domain of OmpA in the periplasm is ~1 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "107ecfce-0838-4329-8379-a1d262a65f44",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C110",
+      "claim": "Each E. coli cell contains ~200,000 molecules of OmpA in rich media.",
+      "claim_type": "EXPLICIT",
+      "source": "According to Li et al., 2014, each cell contains ~200,000 molecules of OmpA in rich media",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on published data, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "9ccd416d-1315-4b93-a5b5-957909f289b2",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C111",
+      "claim": "Each E. coli cell contains ~3000 molecules of RcsF.",
+      "claim_type": "EXPLICIT",
+      "source": "If we perform the same calculations for RcsF and IgaA (~3000 and~200 copies/cell, respectively), we find that their periplasmic concentrations are ~15 \u00b5M and ~1 \u00b5M, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on copy number data used for calculations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "c8b98fbc-d37c-4f99-a003-5f3b9119e076",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "claim_id": "C112",
+      "claim": "Each E. coli cell contains ~200 molecules of IgaA.",
+      "claim_type": "EXPLICIT",
+      "source": "If we perform the same calculations for RcsF and IgaA (~3000 and~200 copies/cell, respectively), we find that their periplasmic concentrations are ~15 \u00b5M and ~1 \u00b5M, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on copy number data used for calculations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RcsF interacts with the C-terminal periplasmic domain of OmpA, not the N-terminal \u03b2-barrel. OmpA adopts its two-domain structure when in complex with RcsF. The C-terminal region of OmpA is necessary and sufficient for RcsF binding, while the N-terminal region is dispensable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple complementary experimental approaches (photo-crosslinking with DiZPK at multiple positions, targeted proteolysis with thrombin cleavage sites, chemical crosslinking with truncated and chimeric OmpA variants, and NMR titration) converge on the same conclusion. The data from OmpA1-170 (no binding), OmpAX (binding retained), and OmpAPal (binding retained) definitively demonstrate that the C-terminal domain is necessary and sufficient. NMR chemical shift perturbations identify specific residues in the binding interface, validated by photo-crosslinking at D246.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "c1bb5f8d-1760-4716-a0ec-6640fc5e4208",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RcsF does not reach the bacterial surface via OmpA. The topology of OmpA-RcsF differs from OmpC/F-RcsF, and only OmpC and OmpF serve as vehicles for RcsF surface exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The finding that RcsF binds the periplasmic domain of OmpA in its two-domain conformation logically implies that RcsF cannot reach the surface through OmpA, since the eight-stranded \u03b2-barrel lacks an open channel to accommodate the RcsF linker (C89). This is supported by structural analysis and the observation that only a subset of DiZPK variants that crosslink to OmpA also crosslink to OmpC/F (C91), indicating different binding topologies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "2df7e9e4-b421-49ad-9b04-a7ac941fe2ab",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "OmpA competes with IgaA for RcsF binding across the periplasm, thereby regulating Rcs activity. OmpA functions as a buffer for RcsF, titrating it from IgaA and fine-tuning Rcs response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Chemical crosslinking experiments show that overexpressing IgaA increases IgaA-RcsF complex formation while decreasing OmpA-RcsF complex formation (C77, C78), demonstrating competition. The buffering function is supported by polymyxin B experiments showing higher Rcs induction in \u0394ompA cells (C96). Mathematical modeling based on measured KD values provides theoretical support for the buffering mechanism (C95).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "f5396624-434c-4a4d-a9d7-9ad0006f9b70",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "IgaA has substantially higher affinity for RcsF (KD = 1.6 \u00b1 0.3 nM) than OmpA (KD = 125 \u00b1 85 \u00b5M), representing an ~80,000-fold difference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The KD values were measured using appropriate biophysical techniques: NMR titration for OmpA-RcsF (C48) and biolayer interferometry for IgaA-RcsF (C49). The measurements are technically sound and the large difference in affinity is consistent with the competition experiments where low-abundance IgaA can still compete with high-abundance OmpA for RcsF binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "85a9bc10-2ec6-4488-9fa1-17750c0ad7c7",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Specific residues involved in the OmpA-RcsF interaction were identified, including R45, Q79, R89, K98, E110, P116, Q121 in RcsF and R242, D246, Y248 in OmpA, with a flexible loop between \u03b2-strand 2 and \u03b1-helix 3 of OmpA being critical for binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Photo-crosslinking with DiZPK at multiple positions in both RcsF and OmpA identified residues at the binding interface (C52, C74). NMR chemical shift perturbations independently identified the same region in OmpA (C72, C73). The computational model shows all six mutated residues in close proximity to their binding partners (C87), validating the experimental data. Multiple orthogonal approaches converge on the same binding interface.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "0716683d-93ff-4e20-9143-593b552662d6",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Polymyxin B-induced lipopolysaccharide alterations activate Rcs in MG1655 \u0394ompA cells, contradicting prior reports in MC4100 strain and questioning the role of OmpA-RcsF in sensing lipopolysaccharide defects. The finding that RcsF binds the periplasmic domain of OmpA questions whether BAM mediates OmpA-RcsF complex formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The polymyxin B experiment (C92) provides direct experimental evidence contradicting prior work, though strain-specific differences complicate interpretation. The questioning of BAM's role (C94) is a logical inference from the finding that RcsF binds the periplasmic domain, whose folding is unlikely to depend on BAM. However, these are primarily negative results that challenge prior models rather than establishing new mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "26c719f5-8a8e-40de-811e-e82bbc29841b",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Intracellular factors such as membrane anchoring and peptidoglycan binding may modulate the affinity of OmpA and IgaA for RcsF in vivo, reconciling the large in vitro affinity difference with observed in vivo competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is a speculative proposal (C97) to explain the apparent discrepancy between the ~80,000-fold difference in KD values measured in vitro and the observation that OmpA and IgaA compete for RcsF in vivo. While the proposal is reasonable, no direct experimental evidence is provided to test whether membrane anchoring or peptidoglycan binding actually modulate binding affinities. This remains a hypothesis requiring future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    },
+    {
+      "id": "7f3827c6-fd5c-48f7-a1bf-70c4cc663343",
+      "content_id": "4a3442f4-b5a2-4440-9060-d0838f60434f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The estimated periplasmic concentrations are ~1 mM for OmpA, ~15 \u00b5M for RcsF, and ~1 \u00b5M for IgaA, based on published copy numbers and cell volume calculations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The concentration estimates are based on published copy numbers (C110, C111, C112) and established cell volume measurements (C109). The calculations are straightforward and the methodology is clearly described. These estimates are reasonable approximations, though they assume uniform distribution in the periplasm and do not account for potential local concentration effects or protein localization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:14:44.604422Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "14cde502-ad2e-459a-93ea-42d8d621c1d6",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "cf51fe27-31de-47eb-9aa0-573b62a1a0f2",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "e9027931-5bc3-41f6-a15c-d135ad26a703",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "84df5b77-fc12-49a5-8a07-74adc0ab2fbb",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "b5c3399e-7ae6-4b09-8691-c2a84721366c",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "a090a975-d52f-442b-8336-584041889d8f",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "13176d75-57ae-4f44-9cb6-36c942db946a",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "776918c0-1368-4d3e-a048-c137166b5952",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "1c0d4cbc-6f77-42e3-bf22-525f1f18da7d",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "103fd104-9ecc-437b-bbe2-e2f959a0cdd3",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "c3de5d74-4b0d-47ca-a541-08d8c696d3b9",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "90aa9c0e-a2a8-4dbc-8dee-c1f327e961c5",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "bea6e112-b8e9-4045-8c99-d06f5fb8ee4f",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "e89db54f-0f5f-4428-a8ba-a1026de301c5",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "cf4de710-f61a-4896-8faa-9874c40e2700",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "2a4d9fd6-2689-4d2a-84be-2368b65f157f",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "3868d190-a2a7-4426-985f-0e01c7246d66",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "1a8779d0-2dc1-437f-b063-8662261207f6",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "cd07123f-3d50-46f4-9abd-0a9d5f012d31",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "de73eea0-eabe-4bc9-b163-140f502477df",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "0d4b58fe-9bc0-4df3-b415-01a619cc24c4",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "4bf4c6af-859f-44ba-8ec7-f07d728547d3",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "b83d52fe-3d4f-4e52-a4a6-36f1662adeee",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "50291efa-d349-463d-8240-77bf9de6d88f",
+      "result_id": "7eb1ec2c-6886-45eb-bfdf-ad37895f8259"
+    },
+    {
+      "claim_id": "52b5c079-441f-4951-abbb-4835fb1c4be9",
+      "result_id": "c1bb5f8d-1760-4716-a0ec-6640fc5e4208"
+    },
+    {
+      "claim_id": "07a5c716-1195-4431-99f1-7fb41493a792",
+      "result_id": "c1bb5f8d-1760-4716-a0ec-6640fc5e4208"
+    },
+    {
+      "claim_id": "265a9a5a-d578-4ed5-81d9-341758757741",
+      "result_id": "c1bb5f8d-1760-4716-a0ec-6640fc5e4208"
+    },
+    {
+      "claim_id": "56083ff2-e26e-4539-8624-886a7d10daee",
+      "result_id": "c1bb5f8d-1760-4716-a0ec-6640fc5e4208"
+    },
+    {
+      "claim_id": "a191a489-2bc6-45d6-af1c-dc0f645aca5a",
+      "result_id": "c1bb5f8d-1760-4716-a0ec-6640fc5e4208"
+    },
+    {
+      "claim_id": "71b7a3d8-58f9-4a8d-bfeb-11ab60ddb256",
+      "result_id": "2df7e9e4-b421-49ad-9b04-a7ac941fe2ab"
+    },
+    {
+      "claim_id": "7dbf2e58-3ec6-4d2f-aa62-52cffc7de89e",
+      "result_id": "2df7e9e4-b421-49ad-9b04-a7ac941fe2ab"
+    },
+    {
+      "claim_id": "4e963a58-408d-414e-ab85-ce11e8581fa7",
+      "result_id": "2df7e9e4-b421-49ad-9b04-a7ac941fe2ab"
+    },
+    {
+      "claim_id": "f312123a-47f6-43b3-a29f-8ee75e7386d8",
+      "result_id": "2df7e9e4-b421-49ad-9b04-a7ac941fe2ab"
+    },
+    {
+      "claim_id": "95efb731-a1a1-4477-8411-86865cfdd661",
+      "result_id": "2df7e9e4-b421-49ad-9b04-a7ac941fe2ab"
+    },
+    {
+      "claim_id": "fb74ba8b-1983-429b-af06-5c5d802e3a5d",
+      "result_id": "2df7e9e4-b421-49ad-9b04-a7ac941fe2ab"
+    },
+    {
+      "claim_id": "863601c9-b2a3-481b-9b40-fcd06dfc8bdb",
+      "result_id": "2df7e9e4-b421-49ad-9b04-a7ac941fe2ab"
+    },
+    {
+      "claim_id": "d0446ae5-a91b-4169-a0f5-4d7e1e72192e",
+      "result_id": "2df7e9e4-b421-49ad-9b04-a7ac941fe2ab"
+    },
+    {
+      "claim_id": "0586e17f-ed79-40c3-be0c-9220fe75f1d1",
+      "result_id": "f5396624-434c-4a4d-a9d7-9ad0006f9b70"
+    },
+    {
+      "claim_id": "b0286de6-832c-4865-abcb-675cd1ee584f",
+      "result_id": "f5396624-434c-4a4d-a9d7-9ad0006f9b70"
+    },
+    {
+      "claim_id": "045bcbc5-20de-4188-b848-f8b8abfd32f4",
+      "result_id": "f5396624-434c-4a4d-a9d7-9ad0006f9b70"
+    },
+    {
+      "claim_id": "1c97514c-c4c4-4039-b69d-1d9f2144b408",
+      "result_id": "f5396624-434c-4a4d-a9d7-9ad0006f9b70"
+    },
+    {
+      "claim_id": "d9d71268-dabf-42ba-be7a-bb51813f07d6",
+      "result_id": "85a9bc10-2ec6-4488-9fa1-17750c0ad7c7"
+    },
+    {
+      "claim_id": "84df5b77-fc12-49a5-8a07-74adc0ab2fbb",
+      "result_id": "85a9bc10-2ec6-4488-9fa1-17750c0ad7c7"
+    },
+    {
+      "claim_id": "3045eabe-4717-4432-bde2-24ad509e77cc",
+      "result_id": "85a9bc10-2ec6-4488-9fa1-17750c0ad7c7"
+    },
+    {
+      "claim_id": "de73eea0-eabe-4bc9-b163-140f502477df",
+      "result_id": "85a9bc10-2ec6-4488-9fa1-17750c0ad7c7"
+    },
+    {
+      "claim_id": "0d4b58fe-9bc0-4df3-b415-01a619cc24c4",
+      "result_id": "85a9bc10-2ec6-4488-9fa1-17750c0ad7c7"
+    },
+    {
+      "claim_id": "4bf4c6af-859f-44ba-8ec7-f07d728547d3",
+      "result_id": "85a9bc10-2ec6-4488-9fa1-17750c0ad7c7"
+    },
+    {
+      "claim_id": "3c52104b-e3e8-4330-8d54-4708b759d597",
+      "result_id": "85a9bc10-2ec6-4488-9fa1-17750c0ad7c7"
+    },
+    {
+      "claim_id": "a92150b0-c3be-4d4d-b49a-148a7e36300a",
+      "result_id": "0716683d-93ff-4e20-9143-593b552662d6"
+    },
+    {
+      "claim_id": "44a99152-654c-42d5-a664-79b8656a8e2a",
+      "result_id": "0716683d-93ff-4e20-9143-593b552662d6"
+    },
+    {
+      "claim_id": "e23decc2-e897-423c-967b-5a1ce1d5cbd0",
+      "result_id": "26c719f5-8a8e-40de-811e-e82bbc29841b"
+    },
+    {
+      "claim_id": "828a08f1-c753-4200-820c-c13d8ba4853f",
+      "result_id": "7f3827c6-fd5c-48f7-a1bf-70c4cc663343"
+    },
+    {
+      "claim_id": "5e2aa4fb-c257-40b4-b167-2c8f55f0db8a",
+      "result_id": "7f3827c6-fd5c-48f7-a1bf-70c4cc663343"
+    },
+    {
+      "claim_id": "664c2bcd-12e6-48a4-9c5a-f66da3f6d7e0",
+      "result_id": "7f3827c6-fd5c-48f7-a1bf-70c4cc663343"
+    },
+    {
+      "claim_id": "052c8796-9706-4b08-a430-d200bb162942",
+      "result_id": "7f3827c6-fd5c-48f7-a1bf-70c4cc663343"
+    },
+    {
+      "claim_id": "107ecfce-0838-4329-8379-a1d262a65f44",
+      "result_id": "7f3827c6-fd5c-48f7-a1bf-70c4cc663343"
+    },
+    {
+      "claim_id": "9ccd416d-1315-4b93-a5b5-957909f289b2",
+      "result_id": "7f3827c6-fd5c-48f7-a1bf-70c4cc663343"
+    },
+    {
+      "claim_id": "c8b98fbc-d37c-4f99-a003-5f3b9119e076",
+      "result_id": "7f3827c6-fd5c-48f7-a1bf-70c4cc663343"
+    }
+  ],
+  "comparisons": []
+}

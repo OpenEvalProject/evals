@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript establishes the context and challenges of studying intrinsically disordered regions (IDRs), noting that while IDRs are widespread in eukaryotic proteomes and can be identified from sequence, they lack stable structure, don't typically perform enzymatic functions, and their sequence-to-function relationship is poorly understood compared to folded domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C8-C16) are well-established background knowledge supported by multiple citations to prior literature. They accurately represent the current state of the field and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior work has shown that short conserved segments in IDRs point to functional residues important for post-translational modifications, but these segments represent only ~5% of disordered regions, with the vast majority showing little evolutionary constraint in sequence alignments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 accurately cite prior work including the authors' own previous studies. The 5% figure is specifically attributed to Colak et al., 2013, providing appropriate support for this quantitative claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors identified >5000 IDRs in S. cerevisiae, confirmed they evolve more rapidly than non-disordered regions, and verified that 91% have no overlap with Pfam domains, establishing that these IDRs are distinct from known folded domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are supported by computational analysis and data shown in supplementary figures. The methods are described and the results are consistent with prior literature on IDR properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C86"
+    ],
+    "result": "Proteome-wide analysis of 82 molecular features reveals that charge properties (net charge, acidic residue content) deviate from null expectations in >50% of IDRs, while other features like sequence complexity (43.0%), asparagine content (43.3%), and isoelectric point (53.9%) also frequently deviate. The median IDR has 15 significant features compared to 1 expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 and C86 are supported by the proteome-wide computational analysis shown in Figure 1B-C. The comparison to simulated null expectations provides appropriate statistical context. The specific percentages and median values are clearly presented in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C77"
+    ],
+    "result": "Most disordered regions contain multiple molecular features that are preserved during evolution, deviating from null expectations despite high sequence divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C77 represent the central finding of the proteome-wide analysis. This is well-supported by the data showing that the vast majority of IDRs have multiple significant molecular features (median of 15) compared to random expectation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "IDR swap experiments with Ste50 demonstrate that basal mating reporter expression and shmooing ability correspond to similarity of evolutionary signatures. IDRs from Pex5 and Stp4 (more similar signatures) partially rescue function, while Rad26 IDR (most different signature) cannot rescue function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 and C87-C91 are supported by experimental data in Figure 2. Statistical significance is reported (Wilcoxon test p<0.05), and microscopy data confirms the phenotypic differences. The experimental design appropriately tests the hypothesis that evolutionary signatures predict functional similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "IDRs with similar evolutionary signatures can rescue function in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by both the Ste50 swap experiments (C37-C40) and the mitochondrial targeting experiments (C69-C72). Multiple independent experimental systems demonstrate functional rescue by IDRs with similar evolutionary signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C6"
+    ],
+    "result": "Clustering analysis reveals that IDRs fall into at least 23 clusters based on evolutionary signatures, and these clusters are significantly associated with specific biological functions (FDR=5%, Benjamini-Hochberg corrected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, and C6 are supported by the clustering analysis shown in Figure 3 and enrichment statistics in Table 1. The authors performed appropriate controls for sequence similarity and null hypothesis specification (Supplementary Table S2). The statistical correction for multiple testing is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Cluster M is associated with nucleocytoplasmic transport and contains IDRs from FG-NUP proteins with molecular features including increased asparagine content, polar residue content, and proline/charged residue demixing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by enrichment analysis and evolutionary signature characterization. The association with known FG-NUP proteins provides validation, and the identified features are consistent with prior knowledge of these proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C95"
+    ],
+    "result": "Cluster O contains IDRs from proteins associated with phase separation (Sup35, Dhh1, Ccr4) and shows evolutionary signatures including increased polyglutamine repeats, reduced net charge variance, and depletion of charged residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C95 are supported by enrichment analysis, evolutionary signature data (Figure 4A), and sequence comparisons (Figure 4B). The association with known phase-separating proteins provides validation of the clustering approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C96",
+      "C97"
+    ],
+    "result": "Cluster D is associated with DNA repair and shows increased separation of oppositely charged residues (increased Kappa, decreased SCD) and increased negatively charged residue content, representing a novel association not previously reported for DNA repair IDRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 and C96-C97 are supported by enrichment analysis and evolutionary signature data (Figure 5A-B). The authors appropriately note this is a novel finding while acknowledging prior work on acidic stretches in histone chaperones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Three clusters (A, C, F) are associated with ribosome biogenesis but have distinct evolutionary signatures. Cluster A contains acidic IDRs with CKII sites, while cluster C contains polylysine repeats and is enriched for lysine polyphosphorylation targets (p=2.7\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by enrichment analysis and evolutionary signature characterization. The statistical enrichment for lysine polyphosphorylation targets in cluster C is appropriately tested and reported. The distinct signatures for functionally related clusters suggest functional sub-specialization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Multiple clusters (I, J, L, N, O, R) are enriched for transcription regulation but have distinct evolutionary signatures, including differences in glutamine content, proline content, and phosphorylation consensus sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by enrichment analysis and evolutionary signature characterization. The identification of multiple distinct signatures for transcription-related IDRs suggests functional heterogeneity within this broad category.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Cluster W is strongly associated with mitochondria (144/165 proteins), with 145/165 IDRs being N-terminal. These IDRs show features of mitochondrial targeting signals (depleted negative charge, enriched positive charge, increased hydrophobicity) and have significantly higher mitochondrial targeting probability scores than other clusters (p\u22646.5\u00d710\u207b\u00b9\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 and C92-C94 are supported by enrichment analysis, evolutionary signature data (Figure 6\u2014supplement 1A), and computational prediction scores (Figure 6B). The statistical comparison to other clusters is appropriately performed with Bonferroni correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Experimental validation shows that Cox15-GFP localizes to mitochondria when its IDR is swapped with Atm1 IDR (both from cluster W) but not when deleted or replaced with Emp47 IDR (from cluster V). Restoring the wildtype IDR rescues localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by microscopy data (Figure 6C and supplements). The experimental design includes appropriate controls (deletion, ER-targeting IDR swap, and rescue experiments) that strengthen the conclusion that evolutionary signatures predict targeting function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Rnq1 falls into cluster M (nucleocytoplasmic transport), and RNQ1 deletion causes nuclear aggregation of polyQ-expanded huntingtin, suggesting a role in nucleocytoplasmic transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is supported by the clustering analysis, and C74 accurately cites prior work. However, the connection between these observations is speculative. The authors appropriately present this as a hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "For the 10 most disordered yeast proteins with known functions, predictions based on cluster annotations matched gene descriptions in 5/10 cases, suggesting at least 50% predictive power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 presents a validation attempt, but the evaluation is subjective (\"clearly matched\") and based on a small sample (n=10). The 50% figure may be inflated given potential confirmation bias in assessing matches. More rigorous validation with independent assessment would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "Evolutionary signatures can be used to predict function for many disordered regions from their amino acid sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by the combination of: (1) strong functional enrichments in clusters (C42), (2) experimental validation of functional rescue (C5, C37-C40, C69-C72), and (3) preliminary validation on uncharacterized proteins (C75). While the predictive power needs further validation, the evidence supports this as a viable approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C99"
+    ],
+    "result": "The authors propose that IDRs evolve under stabilizing selection on molecular features rather than purifying selection on individual residues, representing a different evolutionary regime from folded regions. This model explains how IDRs can accumulate sequence divergence while maintaining function, and suggests disease mutations in IDRs are more likely gain-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 and C99 present an evolutionary interpretation supported by the data. The observation of preserved molecular features despite sequence divergence (C77) is consistent with stabilizing selection. The citations to evolutionary theory are appropriate. However, C83 (disease mutations) is speculative and appropriately qualified with citation to one supporting study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Mitochondrial precursor peptides that are not correctly targeted are thought to be degraded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is appropriately cited to recent literature (M\u00e5rtensson et al., 2019; Weidberg and Amon, 2018) and provides context for interpreting the localization experiments.",
+    "result_type": "MINOR"
+  }
+]

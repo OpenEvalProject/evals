@@ -1,0 +1,557 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "RMC is a rare, aggressive cancer primarily affecting adolescents of African descent with sickle cell trait, presenting with abdominal pain, hematuria, weight loss, and metastatic disease, with a mean overall survival of only 6-8 months despite aggressive multimodal therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by multiple citations to established literature documenting RMC's historical identification, epidemiology, clinical presentation, and poor prognosis. These represent established knowledge in the field rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "SMARCB1 is a tumor suppressor and core SWI/SNF complex member implicated in RMC and other cancers. RMC differs from MRT/ATRT in patient demographics (adolescents/young adults of African descent vs. young children) and genomic features (fusion events in SMARCB1 plus mutations in ERG, PDGFRB, MTOR, ERBB2 vs. primarily biallelic SMARCB1 loss).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 are supported by multiple citations to prior literature establishing SMARCB1's role as a tumor suppressor, its function in the SWI/SNF complex, and the genomic differences between RMC and other SMARCB1-deficient cancers. These claims provide important background context from established research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Patient-derived RMC cell lines were successfully generated from two of three patients: CLF_PEDS0005 (normal kidney line, primary tumor line, and two metastatic lines from relapse) and CLF_PEDS9001 (primary tumor line). Cell lines were derived from patients who received 4-8 weeks of neoadjuvant chemotherapy, and tumor cell lines expressed epithelial marker CAM5.2 and lacked SMARCB1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 describe the successful derivation of RMC cell line models with appropriate characterization. The data are directly stated and supported by immunohistochemistry showing expected marker expression patterns. This represents a significant methodological achievement given the rarity of RMC and difficulty in establishing cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "WES and WGS confirmed sickle cell trait in both RMC patients but revealed low tumor purity (<20%) in primary tissue samples that prevented fusion event identification. RMC cell lines showed low mutation frequency (1-3 mutations/mb) similar to other pediatric cancers, with only metastatic lines harboring TP53 and TPR mutations. Copy number analysis confirmed heterozygous SMARCB1 loss, but WES failed to identify the mechanism of second allele loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 are supported by sequencing data (WES/WGS) and copy number analysis. The low tumor purity finding is important for understanding limitations of tissue-based sequencing in RMC. The mutation frequency data appropriately compare RMC to other pediatric cancers with supporting citations. The failure to detect the second SMARCB1 allele loss mechanism by WES sets up the need for additional approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "FISH and WGS identified the mechanism of biallelic SMARCB1 inactivation in RMC cell lines: one allele lost by large deletion and the second by balanced translocation involving intronic regions. In CLF_PEDS0005_T1, deletion between BCR-MYH9 and translocation between SMARCB1 intron 1 and C1orf116 C-terminus. In CLF_PEDS9001_T1, deletion between TTC28-VPREB and translocation between PLEKHA5 intron 10 and SMARCB1 intron 6. Both translocations inactivated the C-terminal end of SMARCB1. Findings were validated by Sanger sequencing, qRT-PCR, and immunoblotting. No shared sequence features were found among SMARCB1 breakpoints from different RMC cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 are strongly supported by multiple orthogonal methods (FISH, WGS, Sanger sequencing, qRT-PCR, immunoblotting) that converge on the same conclusion. The detailed characterization of fusion breakpoints represents a major advance in understanding SMARCB1 inactivation mechanisms in RMC. The lack of shared breakpoint sequences (C30) is an important negative finding suggesting diverse mechanisms of translocation formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "RMC cell lines clustered with malignant rhabdoid tumor (MRT) samples by tSNE analysis of RNA-sequencing data and gene expression arrays, while the normal kidney cell line clustered with normal kidney tissues. RMC cell lines also clustered with RMC, MRT, and ATRT patient samples, demonstrating that RMC cell lines share expression patterns with SMARCB1-deficient cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by tSNE analysis of RNA-seq and gene expression array data comparing RMC models to multiple reference datasets (TARGET, French cohort). The clustering analysis appropriately validates that the cell line models recapitulate the transcriptional programs of SMARCB1-deficient tumors. The normal cell line serving as a control strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Glycerol gradient sedimentation analysis revealed that SMARCB1-deficient cells (G401, RMC lines) have smaller, destabilized SWI/SNF complexes at lower molecular weights compared to SMARCB1 wild-type cells (HA1E). Re-expression of SMARCB1 in RMC cells restored SWI/SNF complex size and stability, with ARID1A and SMARCA4 shifting to higher molecular weight fractions similar to wild-type cells. The composition of the SWI/SNF complex is similar between RMC and other SMARCB1-deficient cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by glycerol gradient sedimentation data showing consistent biochemical changes in SWI/SNF complex assembly across multiple cell lines. The rescue experiments with SMARCB1 re-expression provide strong evidence for causality. The findings are consistent with prior studies (C36 cites supporting literature), validating the RMC models as representative of SMARCB1-deficient cancers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Re-expression of SMARCB1 had no effect on viability in SMARCB1 wild-type HA1E cells but significantly decreased viability in SMARCB1-deficient cells: 41% reduction in MRT G401 cells and 37-62% reduction in RMC models. This demonstrates that loss of SMARCB1 is required for proliferation and viability of RMC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by cell viability assays using inducible SMARCB1 expression systems with appropriate LacZ controls. The differential effect between wild-type and SMARCB1-deficient cells provides strong evidence for dependency. The inference that SMARCB1 loss is required for RMC cell survival (C42) is well-supported by the data, though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Re-expression of SMARCB1 in RMC cells induced senescence, with 44.6% (\u00b117%) of cells staining positive for senescence-associated \u03b2-galactosidase, while LacZ control showed no staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by \u03b2-galactosidase staining assays with appropriate controls. The quantification shows substantial senescence induction upon SMARCB1 re-expression. However, the relatively high standard deviation (\u00b117%) and the use of 'may lead to senescence' language (C44) appropriately reflects some uncertainty in the interpretation. The result is consistent with known MRT cell line behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "RNA-sequencing analysis identified 1719 genes significantly altered (FDR<0.25) in RMC cells and 2735 genes in MRT cells upon SMARCB1 re-expression, with 527 genes overlapping between the two cell types (hypergeometric p<4.035e-63). Of these, 257 genes overlapped with genes differentially expressed between MRT tumors and normal tissues. Gene ontology analysis identified enrichment in cell cycle and ubiquitin-proteasome system pathways. Time-course analysis showed different kinetics for different genes (PLK1/CCNB1 gradual decrease vs. RRM2/UBE2C/TOP2A rapid then modest decrease). These findings confirm that transcriptional changes following SMARCB1 re-expression in RMC are similar to other SMARCB1-deficient cancers, demonstrating functional similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 are supported by RNA-sequencing data with appropriate statistical analysis (FDR thresholds, hypergeometric tests) and gene ontology enrichment analysis. The comparison to prior MRT studies and TARGET data strengthens the conclusions. The time-course analysis (C50-C51) provides mechanistic insights into temporal dynamics. The overall conclusion that RMC models are functionally similar to other SMARCB1-deficient cancers (C52-C53) is well-supported by the convergence of multiple lines of evidence (transcriptome, SWI/SNF complex, viability).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Integrated orthogonal screening (RNAi, CRISPR-Cas9, small-molecule) in RMC cell lines identified 19 genes that scored in all three screens in both CLF_PEDS0005_T2A and T2B. These genes include components of the ubiquitin-proteasome system (PSMB1, PSMB2, PSMB5, PSMD1, PSMD2, CUL1), cell cycle regulators (CDK1, CDK6, KIF11, PLK1), and nuclear export genes (KPNB1, XPO1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C65 are supported by three orthogonal screening approaches (RNAi, CRISPR-Cas9, small-molecule) performed in biological replicates. The integration of multiple screening modalities targeting the same genes through different mechanisms (genetic suppression, gene deletion, pharmacological inhibition) provides strong validation. The functional categorization of hits (C63-C65) is based on established gene annotations. This represents a rigorous approach to identifying dependencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "RMC tumor cells showed differential sensitivity (up to two standard deviations) to proteasome inhibitors bortezomib and MLN2238 compared to the normal kidney cell line, suggesting that vulnerability to proteasome inhibition may be dependent on loss of SMARCB1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by small-molecule screening data comparing tumor and normal isogenic cell lines. The differential sensitivity provides initial evidence for SMARCB1-dependent vulnerability. However, the inference in C67 ('may be dependent') appropriately reflects that this is correlative data requiring further validation, which is provided in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "CRISPR-Cas9 deletion of proteasome components affected the RMC model CLF_PEDS0005_T1 significantly more than the undifferentiated sarcoma model CLF_PEDS015T (p=7.1e-8). Gene deletion of PSMB5 in RMC cell lines led to decreased viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by CRISPR-Cas9 validation experiments with appropriate statistical analysis. The comparison to a non-SMARCB1-deficient control cell line (CLF_PEDS015T) strengthens the specificity of the finding. The validation of PSMB5 deletion effects provides orthogonal confirmation of the screening results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "SMARCB1-retained isogenic cell lines (early passage CLF_PEDS9001 and normal CLF_PEDS0005_N) showed significantly decreased sensitivity to proteasome inhibitors compared to SMARCB1-deficient lines. Re-expression of SMARCB1 in inducible cell lines led to 2-3-fold decreased sensitivity to bortezomib or MLN2238, partially rescuing sensitivity to proteasome inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by dose-response experiments in both naturally SMARCB1-expressing cells and inducible SMARCB1 systems. The use of isogenic comparisons (same genetic background with/without SMARCB1) provides strong evidence for SMARCB1-dependent sensitivity. The 'partial rescue' language (C73) appropriately reflects that SMARCB1 re-expression does not completely eliminate sensitivity, suggesting additional factors may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Analysis of CCLE small-molecule screening data showed that SMARCB1-deficient cell lines were significantly more sensitive to MLN2238 than non-multiple myeloma cell lines (p=0.011), with sensitivity similar to multiple myeloma cell lines known to be sensitive to proteasome inhibition. This confirms that SMARCB1-deficient cell lines are selectively vulnerable to proteasome inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by analysis of large-scale CCLE screening data with appropriate statistical testing. The comparison to multiple myeloma cell lines (known proteasome inhibitor-sensitive cancer type) provides important context for the magnitude of sensitivity. The conclusion of selective vulnerability (C76) is well-supported by the convergence of screening data, isogenic comparisons, and CCLE analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "SMARCB1-deficient cell lines (RMC, MRT, ATRT) exhibited single-digit nanomolar sensitivity to bortezomib similar to multiple myeloma cell line RPMI8226, while H2172 lung cancer cell line had at least 3-fold higher IC50. Wilms tumor cell line CLF_PEDS1012_T (SMARCB1 wild-type) was more resistant than RMC and MRT lines, confirming that SMARCB1-deficient cells are more sensitive to proteasome inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by dose-response experiments comparing multiple SMARCB1-deficient cell lines to appropriate controls (SMARCB1 wild-type cancer cells and known sensitive/resistant cell lines). The inclusion of a pediatric kidney cancer control (Wilms tumor) is particularly important for ruling out tissue-specific effects. The convergence of evidence strongly supports the conclusion that SMARCB1 deficiency confers proteasome inhibitor sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Treatment with bortezomib or MLN2238 did not suppress c-MYC protein levels in SMARCB1-deficient RMC and MRT cell lines, unlike in multiple myeloma cell line RPMI8226. c-MYC transcript levels were increased after MLN2238 treatment. Proteasome inhibition in SMARCB1-deficient models does not lead to c-MYC suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by immunoblot and RNA-sequencing data measuring c-MYC levels after proteasome inhibitor treatment. The comparison to RPMI8226 (where c-MYC suppression is a known mechanism) is appropriate. This is an important negative finding that rules out c-MYC suppression as the mechanism of proteasome inhibitor sensitivity in SMARCB1-deficient cancers, distinguishing it from multiple myeloma.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Subcellular fractionation and immunoblotting showed no consistent significant change in total or nuclear protein levels of SWI/SNF complex members (SMARCE1, SMARCD1, SMARCC1, SMARCC2, SMARCA4, ARID1A) upon proteasome inhibitor treatment, indicating that proteasome inhibition does not alter SWI/SNF complex member levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by immunoblot data from subcellular fractionation experiments. This is an important negative finding that rules out changes in SWI/SNF complex composition as the mechanism of proteasome inhibitor sensitivity. The experiments include appropriate controls (doxycycline-induced SMARCB1 as positive control for fractionation quality).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "ER stress markers GRP78 and IRE1\u03b1 increased following MLN2238 treatment but were not rescued by SMARCB1 re-expression, suggesting that although ER stress markers are elevated upon proteasome inhibition in SMARCB1-deficient cell lines, they are not rescued by SMARCB1 re-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by immunoblot data measuring ER stress markers. The finding that ER stress markers increase with proteasome inhibition is expected. However, the lack of rescue by SMARCB1 re-expression (C87-C88) suggests ER stress may not be the primary SMARCB1-dependent mechanism of sensitivity, though it could still contribute to cell death. The interpretation appropriately reflects this complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "GO-based GSEA identified ubiquitin-proteasome system gene sets among 527 genes altered by SMARCB1 re-expression. RNA-seq of MLN2238-treated cells identified 1758 significantly altered genes (FDR<0.1), with 92 genes overlapping with SMARCB1 re-expression genes. Of these, 63 genes showed inverse regulation (up with SMARCB1, down with MLN2238 or vice versa), with significant enrichment (adjusted p-value 0-0.0061) in cell cycle gene sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by RNA-sequencing data and GSEA analysis with appropriate statistical thresholds. The identification of genes inversely regulated by SMARCB1 re-expression and proteasome inhibition (C92) is a key finding linking SMARCB1 loss to proteasome dependency. The enrichment in cell cycle pathways (C93) provides mechanistic insight. The analysis appropriately integrates multiple datasets to identify convergent pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Treatment with MLN2238 for 24 hr caused significant G2/M arrest (p=0.0005), which was rescued by SMARCB1 re-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by cell cycle analysis using flow cytometry with appropriate statistical testing. The rescue by SMARCB1 re-expression demonstrates SMARCB1-dependent G2/M arrest. This finding is consistent with the gene expression data showing cell cycle pathway enrichment and provides a mechanistic link between proteasome inhibition and cell death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "By 48 hr after MLN2238 treatment, there was significant increase in Annexin V/PI positive cells and cleaved caspase-3 levels, indicating programmed cell death. Cleaved caspase-3 induction was less pronounced when SMARCB1 was re-expressed. Proteasome inhibitors initially lead to SMARCB1-dependent G2/M arrest followed by programmed cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 are supported by flow cytometry (Annexin V/PI) and immunoblot (cleaved caspase-3) data showing apoptosis markers. The temporal sequence (G2/M arrest at 24 hr, apoptosis at 48 hr) and the modulation by SMARCB1 status provide strong evidence for the proposed mechanism. The conclusion that proteasome inhibition leads to SMARCB1-dependent G2/M arrest followed by cell death (C100) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Treatment with cell cycle inhibitors nocodazole (microtubule inhibitor) or RO-3306 (CDK1 inhibitor) for 24 hr caused G2/M accumulation and increased cyclin B1 and cleaved caspase-3, similar to MLN2238. By 72 hr, 65-90% of cells underwent cell death. This demonstrates that SMARCB1-deficient cell lines are susceptible to programmed cell death following cell cycle arrest, and that G2/M arrest after MLN2238 treatment leads to cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are supported by cell cycle analysis, immunoblot, and viability data using orthogonal cell cycle inhibitors. The finding that different mechanisms of G2/M arrest (microtubule disruption, CDK1 inhibition, proteasome inhibition) all lead to cell death in SMARCB1-deficient cells is important for understanding the mechanism. This suggests SMARCB1-deficient cells have a specific vulnerability to G2/M arrest rather than proteasome inhibition per se.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Analysis of Project Achilles DepMap genome-wide CRISPR-Cas9 screening data (485 cell lines) showed that SMARCB1-deficient cancer cell lines (3 ATRT lines) required UBE2C for survival and were in the top 5% of cell lines dependent on UBE2C (p=0.00016), indicating that SMARCB1-deficient cancers are dependent on UBE2C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by analysis of large-scale Project Achilles screening data with appropriate statistical testing. The identification of UBE2C dependency in SMARCB1-deficient cell lines from an independent dataset provides strong validation. However, the analysis is limited to 3 ATRT cell lines in the dataset, and validation in RMC models is needed (which is provided in subsequent claims).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "CRISPR-Cas9 deletion of UBE2C led to significant viability defects in RMC and MRT cell lines compared to SWI/SNF wild-type (JMSU1) or SMARCA4 mutant (A549) cell lines (p=4.5e-5 and 4.6e-5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is supported by CRISPR-Cas9 validation experiments with appropriate statistical testing and controls. The comparison to both SWI/SNF wild-type and SMARCA4 mutant cell lines helps establish specificity for SMARCB1 deficiency. This validates the Project Achilles findings in RMC models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "UBE2C serves as the E2 ubiquitin-conjugating enzyme that adds the first ubiquitin to cyclin B1 for degradation. Cyclin B1 degradation is required in G2/M at the end of metaphase to enter anaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are supported by citations to established literature documenting UBE2C's biochemical function and cyclin B1's role in cell cycle progression. These represent established knowledge that provides important mechanistic context for understanding the UBE2C dependency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Integrated screens identified PLK1 and CDK1 (G2/M regulators) as required for RMC survival. MLN2238 treatment led to accumulation of cyclin B1 (but not cyclin D1), suggesting MLN2238 inhibits cyclin B1 degradation. When SMARCB1 was re-expressed, cyclin B1 levels were unchanged upon MLN2238 treatment. These findings suggest SMARCB1-deficient cancer cells require UBE2C expression for survival, in part by regulating cyclin B1 stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 are supported by screening data (C111) and immunoblot data showing selective cyclin B1 accumulation (C112-C114). The use of cyclin D1 as a control (C112) strengthens the specificity of the finding. The rescue by SMARCB1 re-expression (C114) demonstrates SMARCB1-dependent regulation. The conclusion (C115) appropriately uses 'in part' language, recognizing that cyclin B1 stability is likely one of multiple mechanisms. The mechanistic model linking UBE2C dependency, cyclin B1 accumulation, G2/M arrest, and cell death is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Proteasome activity assays showed that bortezomib or MLN2238 treatment inhibited the proteasome to a similar extent in SMARCB1-deficient cell lines as in multiple myeloma cell line RPMI8226. Pulse treatment with MLN2238 (simulating in vivo pharmacodynamics) caused G2/M arrest, cell death (Annexin V/PI staining), and cyclin B1 accumulation similar to continuous dose treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by proteasome activity assays and cell cycle/apoptosis analysis. The proteasome activity assay (C116) confirms that the drugs are working as intended at the concentrations used. The pulse treatment experiments (C117-C118) are important for demonstrating that transient proteasome inhibition (more relevant to in vivo dosing) produces similar effects to continuous treatment, supporting the translational potential of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "In vivo xenograft experiments using G401 cells showed that MLN2238 treatment (7 mg/kg IV twice weekly for 26 days) induced significant tumor stabilization or regression compared to vehicle (two-way ANOVA p<0.0001) without significant body weight changes (p=0.154). Mice treated with MLN2238 survived significantly longer than vehicle-treated mice (log-rank p=0.0489).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by in vivo xenograft data with appropriate statistical analysis. The tumor volume data show significant treatment effect, and the lack of body weight change suggests tolerability. The survival benefit (C121) is statistically significant but modest (p=0.0489), which is appropriately reported. However, the authors note heterogeneous responses (some tumors showed suboptimal response), which is addressed in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Immunoblot analysis of tumor tissue showed that responding tumors had increased cyclin B1 and cleaved caspase-3, while non-responding tumors did not, suggesting inadequate proteasome inhibition in non-responders. Overall, MLN2238 induces a cytostatic response in SMARCB1-deficient tumors in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 are supported by immunoblot analysis of tumor tissue from mice with different responses. The correlation between biomarker changes and response provides mechanistic validation. The inference that inadequate proteasome inhibition occurred in non-responders (C124) is reasonable but could benefit from direct proteasome activity measurements in tumor tissue. The conclusion of cytostatic (rather than cytotoxic) response (C125) is appropriate given the tumor stabilization rather than complete regression observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "RMC models are dependent upon SMARCB1 loss for survival, as demonstrated by decreased cell counts and senescence phenotype upon SMARCB1 re-expression. Biochemically, SMARCB1 re-expression in RMC leads to SWI/SNF complex stabilization in the same manner as in MRT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 are summary statements supported by the collective evidence from viability assays (C39-C42), senescence assays (C43-C44), and glycerol gradient experiments (C34-C38). These claims appropriately synthesize the major findings about SMARCB1 dependency in RMC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "Patients with RMC are often misdiagnosed with renal cell carcinoma due to RMC rarity, lack of access to SMARCB1 histological stains, and unknown sickle cell status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 is supported by a citation documenting diagnostic challenges in RMC. This provides important clinical context for the significance of the research but is not a novel finding from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Conventional targeted exome sequencing may fail to identify patients with RMC because SMARCB1 inactivation occurs through intronic fusions not detectable by standard exome sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 is supported by the study's own findings (C22, C23-C30) showing that WES failed to detect SMARCB1 fusion events that were only identified by WGS and FISH, combined with citations to prior studies. This is an important translational implication of the genomic characterization work, highlighting a diagnostic gap in current clinical sequencing approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Integrated genetic and pharmacologic screens identified the ubiquitin-proteasome system as a specific vulnerability in RMC. MRT and ATRT models were similarly sensitive to proteasome inhibition. SMARCB1 re-expression partially rescued sensitivity to proteasome inhibitors in RMC and MRT models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are summary statements supported by the collective screening data (C54-C65), validation experiments (C66-C80), and rescue experiments (C70-C73). These claims appropriately synthesize the major therapeutic vulnerability findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "Proteasome inhibition in SMARCB1-deficient cancer cell lines results in G2/M arrest due to inappropriate degradation of cyclin B1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 is a summary statement supported by the collective evidence from cell cycle analysis (C94-C95), cyclin B1 accumulation data (C112-C114), and UBE2C dependency findings (C105-C115). The mechanistic model linking proteasome inhibition to impaired cyclin B1 degradation and G2/M arrest is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "Treatment with MLN2238 of SMARCB1-deficient xenografts led to a cytostatic response (tumor stabilization) rather than tumor regression, contrasting with tumor regression observed in multiple myeloma xenografts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C135 is supported by the in vivo xenograft data (C119-C125) and appropriately contrasts the findings with multiple myeloma results from cited literature. The distinction between cytostatic and cytotoxic responses is important for setting appropriate expectations for clinical translation. The authors appropriately note that higher doses might produce different results but were not tolerated in their mouse strain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C136"
+    ],
+    "result": "Case reports document one adult and two children with RMC who exhibited extraordinary responses (2-7 years survival) following empiric therapy with bortezomib as monotherapy or combined with chemotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 is supported by citations to published case reports. This provides important clinical precedent supporting the therapeutic hypothesis but is not a novel finding from this study. The case reports strengthen the translational rationale for testing proteasome inhibitors in RMC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C137"
+    ],
+    "result": "The findings suggest that testing oral proteasome inhibitors such as MLN2238 for patients with RMC and potentially more broadly across SMARCB1-deficient cancers is warranted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C137 is a recommendation based on the collective findings from in vitro experiments (C54-C115), in vivo experiments (C119-C125), and supporting case report evidence (C136). The use of 'suggest' and 'warranted' appropriately reflects that this is a recommendation for future clinical investigation rather than a proven clinical benefit. The recommendation is well-supported by the mechanistic understanding, preclinical efficacy data, and clinical precedent, though the modest in vivo response and heterogeneity noted should temper expectations.",
+    "result_type": "MAJOR"
+  }
+]

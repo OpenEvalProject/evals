@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "A conditional RRF knockdown strain was constructed using an araBAD promoter replacement and YALAA degradation tag, achieving rapid RRF depletion within 15 minutes after glucose switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 describe the construction and validation of the RRF depletion system. The immunoblot data (Figure 1B) clearly demonstrates rapid protein depletion, and the experimental design is well-documented. This is a methodological result that enables the subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Bulk translation drops to approximately 40% within 5 minutes of RRF depletion and remains substantial even at 60 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by HPG incorporation assay data (Figure 1\u2014figure supplement 1). The quantitative measurements demonstrate that while translation is reduced, cells maintain significant protein synthesis capacity during RRF depletion, validating the experimental window for studying translational effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C1",
+      "C39",
+      "C40",
+      "C41",
+      "C43"
+    ],
+    "result": "RRF depletion leads to accumulation of 70S ribosomes in 3\u2032-UTRs, observable as early as 5 minutes and increasing through 60 minutes post-depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C39-C41, and C43 are strongly supported by ribosome profiling data (Figure 2A-D) showing progressive accumulation of ribosome-protected fragments in 3\u2032-UTRs. The use of sucrose gradient purification of 70S monosomes confirms these are intact ribosomes rather than subunits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Elongating ribosomes stack upstream of stop codons at regular intervals (~25-30 nt) when blocked by non-recycled post-termination complexes, demonstrating RRF's critical role in clearing post-TCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C44-C48 are supported by ribosome profiling data showing periodic peaks upstream of stop codons (Figure 2B-H). The spacing matches ribosome footprint size, and high-salt data provide additional resolution. This directly demonstrates the consequence of failed recycling on elongating ribosomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Stop codon peaks in standard ribosome profiling correspond to post-TCs awaiting recycling, and their accumulation indicates that ribosome recycling is slower than peptidyl-hydrolysis even in wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by the differential behavior of stop codon peaks in standard versus high-salt conditions (Figure 2). The loss of stop codon peaks in high-salt samples provides strong evidence for the identity of these complexes. The inference about recycling kinetics is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Most 3\u2032-UTR ribosomes are non-translating post-TCs that have diffused from stop codons, as evidenced by their sensitivity to high-salt treatment, while stacked ribosomes upstream of stop codons are elongating ribosomes stabilized by peptidyl-tRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are well-supported by the differential sensitivity to high-salt treatment (Figure 2E-H). The 2.5-fold reduction in 3\u2032-UTR density with high salt (p=1.1\u00d710\u207b\u00b3\u2070) versus retention of stacked ribosome peaks provides strong evidence for the distinct nature of these ribosome populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "GFP reporter assays in 3\u2032-UTRs of arcA and stpA genes show no increase in translation upon RRF depletion in any reading frame, indicating that re-initiation does not occur at high levels in 3\u2032-UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 are supported by immunoblot data (Figure 3B-C) showing no GFP expression from 3\u2032-UTR insertions in any frame upon RRF depletion. The experimental design with three reading frames provides comprehensive coverage, and the negative results are clear and consistent across two different genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Highly translated genes (high ribosome occupancy) show significantly more stacked ribosomes upon RRF depletion, with collision scores higher than low RO genes at all time points (p-values: 7.6\u00d710\u207b\u00b2\u00b3, 6.6\u00d710\u207b\u00b9\u2076, 5.4\u00d710\u207b\u00b9\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are strongly supported by ribosome profiling data (Figure 4A-B) with highly significant statistical tests. The observation that more ribosomes per mRNA leads to more collisions is logical and well-demonstrated. The quantitative collision score metric provides objective measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Genes with high ribosome occupancy have lower 3\u2032-UTR scores (fewer ribosomes in 3\u2032-UTR relative to CDS) compared to low RO genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by quantitative analysis (Figure 4C). This unexpected finding is clearly demonstrated in the data, though the mechanistic explanation remains speculative (addressed in C71, C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Five previously characterized translationally coupled gene pairs show coupling ratios ranging from 1.7 to 7.0, but these ratios do not change significantly upon RRF depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by luciferase reporter assay data (Figure 5B-C). The experimental design with RBS/NoRBS controls is appropriate, and the lack of change upon RRF depletion is clearly demonstrated across all five gene pairs with proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C83",
+      "C84",
+      "C85",
+      "C90"
+    ],
+    "result": "RRF depletion does not significantly affect translational coupling efficiency either in reporter assays or genome-wide, with strong correlation (r=0.89) between WT and RRF KD strains in upstream/downstream gene expression ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C83-C85, and C90 are supported by both reporter assays (Figure 5) and genome-wide ribosome profiling analysis (Figure 6A-B). The high correlation coefficient and consistency across multiple experimental approaches provide strong evidence against re-initiation as a major coupling mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C89"
+    ],
+    "result": "Gene pairs affected by RRF depletion (twofold changes) show no significant difference in intergenic distance distributions (p=0.36), and gene pairs with overlapping stop/start codons show high correlation between WT and RRF-depleted strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87 and C89 are supported by statistical analysis (Figure 6C-D). The lack of association between intergenic distance and RRF sensitivity, combined with maintained coupling in overlapping genes, argues against distance-dependent re-initiation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C136"
+    ],
+    "result": "Re-initiation is not a major mechanism of translational coupling in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C136 represent the major conclusion drawn from multiple lines of evidence: lack of 3\u2032-UTR translation (C62-C64), unchanged coupling efficiency in reporters (C82), and genome-wide correlation (C84-C85). The conclusion is well-supported by converging evidence from different experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C94"
+    ],
+    "result": "RRF depletion causes dramatic upregulation of ArfA protein (39-fold after 60 min), with 16 genes showing >10-fold increased ribosome footprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92, C94 are supported by ribosome profiling data (Figure 7A-B). The magnitude of ArfA upregulation is substantial and clearly demonstrated. The time course shows progressive induction, with full effect at 60 minutes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "ArfA upregulation occurs at the RNA level through post-transcriptional regulation rather than increased transcription, as demonstrated by increased mRNA levels without corresponding promoter activity changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by RNA-seq data (Figure 7C) and luciferase promoter assays (Figure 7E). The combination of increased mRNA without increased promoter activity clearly indicates post-transcriptional regulation, consistent with known arfA regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "RRF depletion causes accumulation of ribosome footprints on tmRNA, with a peak at the stop codon after 5 min and downstream accumulation after 60 min, likely representing non-translating post-TCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are supported by ribosome profiling data on tmRNA (Figure 7F). The pattern of accumulation and high-salt sensitivity (mentioned but data not shown) support the interpretation. This provides a mechanistic link to ArfA upregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C104",
+      "C111"
+    ],
+    "result": "RRF depletion induces a translation-based feedback pathway: post-TCs on tmRNA inhibit its rescue activity, preventing ArfA degradation and leading to ArfA upregulation as a backup ribosome rescue mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C104, and C111 integrate observations about tmRNA (C105-C108) and ArfA (C91-C98) into a coherent model. While the mechanism is partially inferred, it is consistent with established arfA regulation and supported by the temporal relationship between tmRNA ribosome accumulation and ArfA upregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "The data are most consistent with de novo initiation models where free 30S subunits are recruited directly to start codons, with mRNA structure melting as the likely coupling mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 represent a mechanistic conclusion based on the negative results regarding re-initiation. While this is an inference rather than direct demonstration, it is the most parsimonious explanation given the data and is consistent with prior literature on mRNA structure's role in bacterial translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The RRF depletion approach has limitations: complete loss is unlikely, and indirect effects are possible, though most phenotypes appear at 5 min when indirect effects are least likely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 represent appropriate acknowledgment of experimental limitations. The authors correctly note that essential gene depletion cannot be complete, but the early appearance of phenotypes (5 min) and the direct relationship to recycling function support the validity of the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "In E. coli, 3\u2032-UTR ribosome density upon RRF depletion reflects non-translating post-TCs, contrasting with yeast where it reflects active translation from re-initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 is supported by both high-salt sensitivity data (Figure 2) and GFP reporter assays (Figure 3). This represents an important distinction between bacterial and eukaryotic recycling mechanisms, though the comparison relies partly on prior literature for the yeast data.",
+    "result_type": "MAJOR"
+  }
+]

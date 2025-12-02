@@ -1,0 +1,1930 @@
+{
+  "submission": {
+    "id": "4b08796d-99ea-4813-bb40-e2a0429bdb18",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:11:20.107060Z",
+    "updated_at": "2025-12-02T08:11:20.107060Z"
+  },
+  "content": [
+    {
+      "id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "submission_id": "4b08796d-99ea-4813-bb40-e2a0429bdb18",
+      "content_type": "manuscript",
+      "content_text": "# Cellular cartography of the organ of Corti based on optical tissue clearing and machine learning\n\n## Authors\n\n- Shinji Urata<sup>1</sup> ([ORCID: 0000-0002-5947-6842](https://orcid.org/0000-0002-5947-6842))\n- Tadatsune Iida<sup>1</sup>\n- Masamichi Yamamoto<sup>3</sup>\n- Yu Mizushima<sup>2</sup> ([ORCID: 0000-0002-8184-4437](https://orcid.org/0000-0002-8184-4437))\n- Chisato Fujimoto<sup>2</sup>\n- Yu Matsumoto<sup>2</sup>\n- Tatsuya Yamasoba<sup>2</sup> \u2020\n- Shigeo Okabe<sup>1</sup> ([ORCID: 0000-0003-1216-8890](https://orcid.org/0000-0003-1216-8890)) \u2020\n\n### Affiliations\n\n1. Department of Cellular Neurobiology, Graduate School of Medicine The University of Tokyo Tokyo Japan\n2. Department of Otolaryngology, Graduate School of Medicine The University of Tokyo Tokyo Japan\n3. Department of Nephrology, Graduate School of Medicine Kyoto University Kyoto Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe highly organized spatial arrangement of sensory hair cells in the organ of Corti is essential for inner ear function. Here, we report a new analytical pipeline, based on optical clearing of tissue, for the construction of a single-cell resolution map of the organ of Corti. A sorbitol-based optical clearing method enabled imaging of the entire cochlea at subcellular resolution. High-fidelity detection and analysis of all hair cell positions along the entire longitudinal axis of the organ of Corti were performed automatically by machine learning\u2013based pattern recognition. Application of this method to samples from young, adult, and noise-exposed mice extracted essential information regarding cellular pathology, including longitudinal and radial spatial characteristics of cell loss, implying that multiple mechanisms underlie clustered cell loss. Our method of cellular mapping is effective for system-level phenotyping of the organ of Corti under both physiological and pathological conditions.\n\n## Introduction\n\nA complete understanding of auditory perception and transduction relies on an accurate reconstruction of the intact, three-dimensional structure of the cochlea. The spatial organization of the organ of Corti, the mammalian auditory sensory epithelium, determines the cochlear tonotopic map, which associates the positions of the inner hair cells (IHCs) in the cochlea with local characteristic frequencies. The basic pattern of the tonotopic map is simple, with higher frequencies on the base of the cochlear spiral and lower frequencies on the apex (von B\u00e9k\u00e9sy and Peake, 1990). However, multiple structural and cell biological factors influence the actual shape of the tonotopic map (Temchin and Ruggero, 2014).\n\nIn humans, age-related (Chien and Lin, 2012) and noise-induced hearing loss (Nelson et al., 2005) are prevalent health problems that require early prevention (Cunningham and Tucci, 2017). However, the field awaits the development of appropriate model animals that recapitulate human pathology (Wang et al., 2002; Yamasoba et al., 1998; Zheng et al., 1999). Moreover, the complexities of cochlear structure have prohibited a comprehensive cellular cartography, and current histological techniques are far from satisfactory for comprehensive analyses. Therefore, new methods that enable simultaneous examination of molecular signatures and subcellular structures across the entire cochlea would greatly accelerate the progress of research on auditory mechanisms.\n\nOptical access to the properties of cells within highly complex tissues and organs is an important technical goal of modern cell biology. Advancements in optical tissue clearing have enabled the acquisition of structural and molecular information from large volumes of tissues and organs (Chung et al., 2013; Dodt et al., 2007; Hama et al., 2015; Renier et al., 2014; Susaki et al., 2014). Recent reports showed that both organic solvent\u2013 and hydrophilic solution\u2013based clearing methods could be optimized in clearing hard tissues that contain large proportions of extracellular matrix (Berke et al., 2016; Cai et al., 2018; Calve et al., 2015; Greenbaum et al., 2017; Jing et al., 2018; Tainaka et al., 2018; Treweek et al., 2015). The accumulating knowledge and technologies should be helpful in development of effective clearing and labeling protocols for the inner ear inside the temporal bone (Nolte et al., 2017; Tinne et al., 2017). To date, however, an integrated method of tissue processing, labeling, and imaging techniques with single cell resolution has not yet been developed and optimized for the inner ear.\n\nHere, we report an analytical pipeline for the construction of a single-cell resolution map of the organ of Corti taken from C57BL/6J mice at postnatal day (PND) 5, 60, 120 and 360. The method is based on optical tissue clearing technology and automatic cell detection using a machine learning algorithm. In this method, a series of fixation, permeabilization, immunolabeling, and clearing processes transform the inner ear into optically transparent samples suitable for volume imaging at single-cell resolution. Automated high-fidelity recording and analysis of hair cell positions along the entire length of the organ of Corti were achieved based on machine learning\u2013based cell detection. Application of this method to pathological samples revealed distinct impacts of aging and noise on spatial features of sensory hair cell pathology. Our method of cellular mapping is highly effective for system-level phenotyping of the organ of Corti.\n\n## Results and discussion\n\n### Analytical pipeline for cellular cartography of the organ of Corti\n\nOur analytical pipeline for sensory hair cell mapping in the cochlea followed three steps. First, the mouse temporal bone was isolated at PND 60 and processed for clearing and immunolabeling of the sensory hair cells (Figure 1A and Figure 1\u2014figure supplement 1). Tissue clearing and immunolabeling were optimized for tissue transparency and antibody accessibility. After tissue preparation, three-dimensional two-photon excitation microscopy generated image stacks covering the entire structure of the organ of Corti, with an average size of 1200\u00a0\u00d7\u00a01200\u00a0\u00d7\u00a0800 \u03bcm (Figure 1B). The image data were processed by custom-made software to stitch and linearize the sensory epithelium, followed by detection of cell positions (Figure 1C). The software automatically generated a spatial map of the total hair cells and estimated the positions of putative lost cells. The entire experimental procedure could be completed within 5 days, with 4 days for tissue clearing and labeling, 4 hr for image acquisition, and 30 min for automated analysis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40946/elife-40946-fig1-v1.jpg)\n\n**Figure 1.:** (A) Time course and individual steps of tissue clearing with or without immunostaining.\u00a0(B) Three-dimensional imaging of the organ of Corti within the temporal bone. Top view (left), lateral view (middle), and the schematic presentation of the organ of Corti with its axis parallel to the modiolus. The size of the organ of Corti is indicated in the X, Y, and Z coordinates. Scale bar, 500 \u03bcm. (C) Computational processes of linearization, cell detection, and modeling. (D) Side-by-side comparison of 3DISCO, iDISCO, CLARITY, and CUBIC. Transmitted light images of samples before and after clearing, together with MYO7A staining. Scale bar, 500 \u03bcm. (E) Manual dissection of the iDISCO-processed sample confirmed MYO7A staining in the sensory epithelium. Scale bars, 500 \u03bcm (upper image) and 100 \u03bcm (lower image). (F) Lateral and horizontal views of the reconstructed three-dimensional images of the organ of Corti stained with anti-MYO7A. CUBIC with decalcification and original ScaleS failed to detect the deepest part of the organ of Corti (green dotted lines). With modified ScaleS, the entire structure of the organ of Corti could be visualized. Scale bar, 500 \u03bcm. (G) Modified ScaleS sample of the organ of Corti stained with anti-MYO7A antibody, together with transmitted light images before (upper left) and after (upper right) treatment. Scale bar, 500 \u03bcm. (H) Three steps of the modified ScaleS protocol. The initial decalcification step is followed by a clearing step, which mainly removes lipids from the extracellular matrix. Finally, the RI of the sample is matched with mounting solution. (I) Preservation of GFP fluorescence after modified ScaleS treatment. Scale bar, 10 \u03bcm. (J) Preservation of rhodamine-phalloidin signal after modified ScaleS treatment, which includes sorbitol to stabilize cytoskeletal polymers. Scale bar, 10 \u03bcm. IHC, inner hair cell; OHC, outer hair cell; RI, refractive index.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40946/elife-40946-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Comparison of optical transparency of mouse brain samples using 3DISCO, iDISCO, CLARITY and CUBIC. Scale, 3 mm. (B) Relationship between imaging depths and RIs using the decalcified cochlea as a sample. (n\u00a0=\u00a05 samples. Dunnet\u2019s multiple comparison test, *p\u00a0<\u00a00.05; ***p\u00a0<\u00a00.001; ns; not significant, p\u00a0>\u00a00.05.) (C) Time course and individual steps of modified Sca/eS compared to the previous protocols of cochlear tissue preparations. (D) Macroscopic images of the cochlea through the steps of decalcification, clearing, and RI matching. Each image corresponds to the time points (i) to (viii) shown in (A). Scale bar, 1 mm. (E) Mouse brain sections with 100 \u03bcm thickness were treated with urea and guanidine solutions at varying concentrations. After tissue clearing, tissue volume expansion and optical transmittance were measured. Scale bar, 5 mm. (n\u00a0=\u00a05 samples for each condition. One-way ANOVA with Bonferroni\u2019s post hoc test, *p\u00a0<\u00a00.05; ***p\u00a0<\u00a00.001; ns; not significant, p\u00a0>\u00a00.05.) RI, refractive index.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40946/elife-40946-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Tubular bone samples were treated with modified ScaleS and CB-perfusion. CB-perfusion was designed for whole-body imaging (see Appendix 1 for the detail). Transmitted light Images before and after clearing procedures were presented. The trabecular regions of the tubular bone (boxed regions of the low magnification images with transmitted light) stained with anti-vascular endothelial (VE)-cadherin were imaged through the surface of the compact bone. Boxed regions in fluorescence images were further enlarged for presentation of vasculature details. Scale bar, 5 mm (transmission images), 100 \u03bcm (fluorescence images). The graph shows the maximal depth at which the VE-cadherin signals could be detected from the surface. (n\u00a0=\u00a03 samples for each condition. Two-tailed unpaired t test, *p\u00a0<\u00a00.05.) (B) Application of modified ScaleS to multiple biological samples. To test the effectiveness of modified ScaleS for clearing the non-osseous tissue, multiple organs (brain, heart, stomach, lung, liver, kidney, intestine and spleen) were processed with modified ScaleS and CB-perfusion. Performance of CB-perfusion was better than modified ScaleS in stomach, lung, liver, kidney and spleen. This difference can be explained by better performance of CB-perfusion in elimination of blood cells by perfusion and effective delipidation and decolorization by aminoalcohol. Scale bar, 5 mm.\n\n### Optimization of imaging of the whole intact cochlea\n\nThe mouse inner ear forms complex and intricate structures inside the temporal bone. To achieve deeper and clearer imaging of the organ of Corti, it was necessary to overcome two hurdles. First, an inorganic component of the bone, mainly composed of calcium phosphate, had to be removed. Second, refractive index (RI) matching had to be fine-tuned to decrease optical aberration induced by heterogenous tissue components (Acar et al., 2015; Berke et al., 2016). The existence of multiple methods for optical tissue clearing provided us with an opportunity to perform a side-by-side comparison of their applicability to the organ of Corti. We tested five independent, well-established clearing and labeling protocols (3DISCO (Ert\u00fcrk et al., 2012), iDISCO (Renier et al., 2014), CLARITY (Chung et al., 2013), CUBIC (Susaki et al., 2014), and ScaleS (Hama et al., 2015)) for their performance in detection of total hair cells. Myosin 7a (MYO7A), specifically expressed in IHCs and outer hair cells (OHCs), was utilized as a standard marker for hair cells. We found that performances of different protocols were comparable when they were applied to adult mouse brains, but the efficiencies for clearing the temporal bone were variable (Figure 1D and Figure 1\u2014figure supplement 1). We failed to detect MYO7A-immunopositive hair cells in samples processed by 3DISCO, iDISCO, CLARITY, or CUBIC (Figure 1D). Microdissection of the membrane labyrinth of the iDISCO-processed samples confirmed the presence of MYO7A-immunopositive hair cells, suggesting that the surrounding bone tissue prevented the detection of fluorescence (Figure 1E). When CUBIC was combined with decalcification, MYO7A fluorescence could be detected down to 180 \u03bcm from the surface, but the combined method still did not enable imaging of the deeper part of the organ of Corti (Figure 1F). Among the pre-existing tissue clearing methods, ScaleS combined with decalcification yielded the best results (Figure 1F). However, this method still missed hair cells at the cochlear base, more than 500 \u03bcm away from the bone surface.\n\nBy modifying the original ScaleS method, we achieved efficient in situ detection of all MYO7A-positive hair cells in the organ of Corti (Figure 1G and Figure 1\u2014figure supplement 1). In the new protocol, we first decalcified the samples with EDTA (Figure 1H). In the subsequent clearing step, a combination of a nonionic detergent (Triton X-100) and an ionic chaotropic reagent (guanidine) was effective in increasing transparency. The ScaleS and CUBIC1 protocols use urea instead of guanidine (Hama et al., 2015; Susaki et al., 2015), but high concentrations of urea can induce tissue expansion (Tainaka et al., 2016). By contrast, our guanidine-based clearing solution did not induce detectable tissue expansion (Figure 1\u2014figure supplement 1). Although guanidine treatment denatures GFP and reduces its fluorescence intensity (Huang et al., 2007), this fluorescence quenching could be reversed by incubation in phosphate-buffered saline (PBS). Finally, we tested the solutions with RIs from 1.41 to 1.56 for their performance in tissue clearing by measuring the maximal depth of detectable MYO7A-positive hair cells from the temporal bone surface (Figure 1\u2014figure supplement 1). We found that a RI matching solution with a RI of 1.47 was most effective for detecting MYO7A-positive hair cells away from the bone surface. This RI lies between that of bone matrix (RI\u00a0=\u00a01.56) and tissue with scarce extracellular matrix (RI\u00a0=\u00a01.38). The new protocol for the in situ detection of all MYO7A-positive hair cells in the organ of Corti could be completed within 4 to 6 days (Figure 1A,H, and Figure 1\u2014figure supplement 1), and effectively detected GFP-based reporter molecules and F-actin by rhodamine phalloidin (Figure 1I,J). The presence of sorbitol in the clearing solution improved F-actin stabilization. The protocol could also be applied to detection of cellular components in other types of bone-containing samples (Figure 1\u2014figure supplement 2).\n\n### Machine learning\u2013based automated detection of sensory hair cells\n\nTo obtain information about hair cell distribution along the entire longitudinal axis of the organ of Corti, we applied our optimized tissue clearing and labeling methods to samples from na\u00efve C57BL/6J mice, and detected sensory hair cells with anti-MYO7A antibody. The combination of a widely used marker of sensory hair cells (MYO7A) and a standard mouse line (C57BL/6J) should facilitate replication of this protocol in other laboratories and comparative studies. Multiple image stacks that cover the entire structure of the organ of Corti were obtained by two-photon microscopy with voxel sizes of 0.99\u00a0\u00d7\u00a00.99\u00a0\u00d7\u00a01.0 \u03bcm for high-resolution imaging (Figure 2A). Spatially confined two-photon excitation effectively decreased photobleaching after repetitive imaging. To adjust the local fluorescence intensity of MYO7A-immunopositive hair cells, we controlled both excitation laser power and the cut-off range of pixel intensities.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40946/elife-40946-fig2-v1.jpg)\n\n**Figure 2.:** (A) Detection of single hair cells stained with anti-MYO7A.\u00a0The border between hair cells can be clearly detected. Scale bar, 10 \u03bcm. (B) Sequential steps in reconstruction of the linearized voxel image of the organ of Corti. The linearized voxel image was generated using the row of IHCs as a structural reference of the longitudinal axis of the organ of Corti. Scale bar, 100 \u03bcm. (C) Plot of the total longitudinal length of the organ of Corti against the total number of IHCs. (D) Plot of radial distance of IHCs from the modiolus. (E) Plot of hair cell positions along the vertical axis of the organ of Corti. (F) Normalization of heterogeneity in hair cell positions. Before normalization, both x and y axes represent physical positions of OHCs. After normalization, the coordinates are arbitrary units and are equalized in x and y axes. (G) Transformation of the positions of hair cells to fit the standardized template. The template is a two-dimensional grid parallel to the surface of the sensory epithelium (upper image). This transformation is useful for estimation of lost hair cells based on the calculation of cell-free space. The accuracy of estimation by this method was comparable to the performance of manual estimation (lower plot). [n\u00a0=\u00a0161 samples for each. Paired t-test; ns, not significant (p\u00a0>\u00a00.05).] IHC, inner hair cell; OHC, outer hair cell; PND, postnatal day; RI, refractive index.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40946/elife-40946-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Numbers of total IHCs and OHCs of C57BL/6J mice at PND 5, PND 60, and PND 360. (n\u00a0=\u00a04 (PND 5), 4 (PND 60), and 3 (PND 360). One-way ANOVA with Bonferroni's post hoc test, ***p\u00a0<\u00a00.001.) (B) ABR thresholds (left) and the numbers of lost OHCs (right) were compared between C57BL/6J (mouse model of age-related hearing loss) and CBA/Ca mice (control mice) at PND 60. (C) The effect of acoustic overexposure stimulus on ABR thresholds (left) and OHC loss (right) measured at PND 60. Acoustic overexposure stimulus induced an increase in ABR threshold and loss of OHCs. ABR, auditory brainstem response; IHC, inner hair cell; OHC, outer hair cell; PND, postnatal day.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40946/elife-40946-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Positions of Inner hair cells were sampled with regular intervals and the position data from different samples were overlaid. Hair cells from different samples were plotted as dots with different colors. Spiral directions of samples from right ears were converted to those of left ears for alignment of samples from both sides. PND, postnatal day.\n\nTo achieve automated detection of both IHCs and OHCs, we developed a series of custom-made MATLAB scripts (Figure 2B and Table 1, also see Appendices 1 and 2). Because loss of IHCs is rare even in pathological conditions, such as aging and noise exposure, the row of IHCs was used as a guide for linearization of the spiral sensory epithelium. First, multiple image stacks containing portions of the organ of Corti were assembled into a single image stack. Our image acquisition protocol was designed to obtain image stacks covering the volume of the entire cochlea. We also designed that the two adjacent imaged stacks always have the overlapping volume. With these image acquisition rules, the entire tissue volume containing the whole sensory epithelium could be easily reconstructed. Second, the best-fit arcs of the single IHC row were calculated to create a spiral that could be used as a structural reference for the entire organ of Corti. Third, a linearized voxel image was reconstructed using the best-fit spiral and the normal vectors of the plane fitted to the segments of the sensory epithelium. Finally, we employed machine learning models to perform an exhaustive search of all hair cells and recorded their positions as Cartesian coordinates. The search process by machine learning technique consists of two parts: the first step of signal-noise discrimination and the second step for the recovery of false negatives. The details are provided in Table 1 and Appendix 2. (LeCun et al., 1989; Friedman et al., 2000; Breiman, 2001)\n\n**Table 1.**\n Details of machine learning models (related to Figure 2).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Models</th>\n      <th>Type\u2021</th>\n      <th>Algorithm</th>\n      <th>Configuration</th>\n      <th>Use</th>\n      <th>Predictor</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>IHC*\u00a01</td>\n      <td>Binary</td>\n      <td>Gentle Boost</td>\n      <td>300 classification trees</td>\n      <td>Reduction of noise</td>\n      <td>Area, barycentric coordinates, maximum correlation coefficients, maximum intensity, same data set of the nearest neighbor group and relative position of the nearest neighbor group</td>\n    </tr>\n    <tr>\n      <td>IHC*\u00a02</td>\n      <td>Binary</td>\n      <td>Random Forest</td>\n      <td>300 classification trees</td>\n      <td>Detection of cells</td>\n      <td>Adding to the above, prediction score by \u2018IHC*\u00a01\u2019 of itself and that of adjacent groups in six directions\u00b6, relative position of the adjacent groups, and cropped image\u2020\u2020</td>\n    </tr>\n    <tr>\n      <td>OHC\u2020\u00a01</td>\n      <td>Binary</td>\n      <td>Gentle Boost</td>\n      <td>300 classification trees</td>\n      <td>Reduction of noise</td>\n      <td>Same as \u2018IHC*\u00a01\u2019</td>\n    </tr>\n    <tr>\n      <td>OHC\u2020\u00a02</td>\n      <td>Binary</td>\n      <td>Random Forest</td>\n      <td>300 classification trees</td>\n      <td>Detection of cells</td>\n      <td>Same as \u2018IHC*\u00a02\u2019</td>\n    </tr>\n    <tr>\n      <td>OHC\u2020\u00a03</td>\n      <td>Multiclass</td>\n      <td>Convolutional Neural Network</td>\n      <td>From the input, convolutional layer (filter size 5, number 60), ReLU\u00a7\u00a0layer, fully connected layer, Softmax Layer (three classes), and output.</td>\n      <td>Estimation of belonging row</td>\n      <td>Cropped image (39\u00a0\u00d7\u00a069 pixels in width and height)</td>\n    </tr>\n    <tr>\n      <td>OHC\u2020\u00a04</td>\n      <td>Binary</td>\n      <td>Convolutional Neural Network</td>\n      <td>From the input, convolutional layer (filter size 5, number 60), ReLU\u00a7\u00a0layer, convolutional layer (filter size 5, number 20), ReLU\u00a7\u00a0layer, fully connected layer, Softmax Layer (two classes), and output.</td>\n      <td>Detection of cells in spaces</td>\n      <td>Cropped image (39\u00a0\u00d7\u00a069 pixels in width and height)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*. IHC, inner hair cell.\u2020. OHC, outer hair cell.\u2021. Classification type.\u00a7. Rectified Linear Unit.\u00b6. Adjacent groups in direction of 0\u201360\u00b0, 60\u2013120\u00b0, 120\u2013180\u00b0, 180\u2013240\u00b0, 240\u2013300\u00b0, 300\u2013360\u00b0 with the y-axis as an initial line in the x-y plane.\u2020\u2020. Initial image size is 21\u00a0\u00d7\u00a069 pixels in width and height. The image is resized in 7\u00a0\u00d7\u00a023 then reshaped in 1\u00a0\u00d7\u00a0161._\n\nTo test the ability of our automated cell detection protocol to reliably record hair cell positions, we studied its performance by comparing its outputs with manually identified OHC positions in four independent samples of the organ of Corti labeled with anti-MYO7A antibody. The automated detection protocol recovered 98.8 \u00b1 0.6% of manually identified hair cells. In turn, 99.7 \u00b1 0.2% of hair cells identified by the algorithm were also scored as hair cells by human operators, with the remaining 0.3% representing false positives (Table 2). The detection efficiency of our protocol was much higher than a standard imaging processing protocol based on three-dimensional watershed ((Soille and Vincent, 1990; Table 2 and Appendix 2).\n\n**Table 2.**\n Detection efficiency of hair cells (related to Figure 2).*\n\n\n<table>\n  <tbody>\n    <tr>\n      <td></td>\n      <td colspan=\"5\">Inner\u00a0hair\u00a0cell</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Detect. (n)\u2020</td>\n      <td>Undetect. (n)\u2021</td>\n      <td>Err. detect. (n)\u00a7</td>\n      <td>Recover Rate\u00b6</td>\n      <td>Accuracy rate\u2020\u2020</td>\n    </tr>\n    <tr>\n      <td>Our Method</td>\n      <td>576\u00a0\u00b1\u00a033</td>\n      <td>13\u00a0\u00b1\u00a012</td>\n      <td>2\u00a0\u00b1\u00a02</td>\n      <td>0.979\u00a0\u00b1\u00a00.021</td>\n      <td>0.997\u00a0\u00b1\u00a00.003</td>\n    </tr>\n    <tr>\n      <td>3D Watershed</td>\n      <td>424\u00a0\u00b1\u00a098</td>\n      <td>152\u00a0\u00b1\u00a082</td>\n      <td>110\u00a0\u00b1\u00a078</td>\n      <td>0.733\u00a0\u00b1\u00a00.149</td>\n      <td>0.818\u00a0\u00b1\u00a00.100</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"5\">Outer\u00a0hair\u00a0cell</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Detect. (n)\u2020</td>\n      <td>Undetect. (n)\u2021</td>\n      <td>Err. Detect. (n)\u00a7</td>\n      <td>Recover Rate\u00b6</td>\n      <td>Accuracy rate\u2020\u2020</td>\n    </tr>\n    <tr>\n      <td>Our Method\u2021\u2021</td>\n      <td>1989\u00a0\u00b1\u00a0133</td>\n      <td>24\u00a0\u00b1\u00a013</td>\n      <td>6\u00a0\u00b1\u00a04</td>\n      <td>0.988\u00a0\u00b1\u00a00.006</td>\n      <td>0.997\u00a0\u00b1\u00a00.002</td>\n    </tr>\n    <tr>\n      <td>Principle 1 Only\u00a7\u00a7</td>\n      <td>1925\u00a0\u00b1\u00a0131</td>\n      <td>69\u00a0\u00b1\u00a041</td>\n      <td>16\u00a0\u00b1\u00a013</td>\n      <td>0.966\u00a0\u00b1\u00a00.021</td>\n      <td>0.992\u00a0\u00b1\u00a00.006</td>\n    </tr>\n    <tr>\n      <td>3D Watershed</td>\n      <td>1493\u00a0\u00b1\u00a0197</td>\n      <td>496\u00a0\u00b1\u00a0111</td>\n      <td>760\u00a0\u00b1\u00a0381</td>\n      <td>0.748\u00a0\u00b1\u00a00.064</td>\n      <td>0.682\u00a0\u00b1\u00a00.103</td>\n    </tr>\n  </tbody>\n</table>\n\n_*. Data from 10 samples (PND30: two sample, PND60: three sample, ACL: two sample, NCL: three sample). Data are expressed as means\u00a0\u00b1\u00a0SD.\u2020. Detection number.\u2021. Undetected number.\u00a7. Erroneous detection number.\u00b6. Recover rate of manually identified hair cells by the automated detection algorithm (almost synonymous with recall).\u2020\u2020. The number of hair cells identified by both manual and automated detection divided by the number of hair cells identified by automated detection (almost synonymous with precision).\u2021\u2021.The proposed method in this study (principle 1\u00a0+\u00a0principle 2).\u00a7\u00a7. The method using the first half of the proposed method. For details please see \u2018Principles of auto-detection by machine learning\u2019 in Appendix 2._\n\n### Automated detection of hair cells in samples with hair cell pathology\n\nPathological changes in the sensory epithelium associated with aging or noise exposure can impair the hearing functions of the inner ear. Previous studies provided qualitative evidence showing that the cellular changes associated with age-associated or noise-induced hearing loss partially overlap, but also have distinct characteristics. C57BL/6J mice are widely used for aging research and exhibit the classic pattern of age-related hearing loss, with the loss of both hair cells and neurons starting from the base (Hunter and Willott, 1987). The increase in auditory brainstem\u2013evoked response (ABR) threshold starts at the age of 10 weeks (Ison et al., 2007). Manual counting of lost cells in C57BL/6J mice at PND 5, 60, and 360 confirmed age-related cell loss (ACL) (Figure 2\u2014figure supplement 1). For the assessment of noise-induced cell loss (NCL), we applied acoustic overexposure stimulus to C57BL/6J mice at PND 60 to induce a moderate threshold shift (Figure 2\u2014figure supplement 1), as previously reported (Mizushima et al., 2017; Tuerdi et al., 2017). The cellular pathology varied from nearly normal appearance to severe hair cell damage in the basal end of the cochlea, and exhaustive screening of hair cell loss in this context should be useful.\n\nTo appropriately interpret cell position data from samples harvested under physiological and pathological conditions, it is necessary to evaluate variation in the morphology of the organ of Corti. Variation may also exist among samples collected under identical experimental conditions, potentially confounding data interpretation. To evaluate such variation in morphology, we performed the following three types of measurements (Appendix\u00a02). First, we measured the total longitudinal length of the IHC row and the number of IHCs. The plot of IHC number vs. the length of the IHC row for multiple samples is useful for evaluating the longitudinal sizes of the organ of Corti (Figure 2C). The plot shows that data from young control samples (PND 30) scattered in the range of 550\u2013650 IHCs, indicating the presence of physiological variation. Variation in the length and the cell number did not show a specific trend between samples from different ages. However, the data from noise-exposed mice exhibited a tendency of higher variation, potentially due to selective loss of hair cells at the basal end in some NCL samples. Second, we projected the position of IHCs onto a plane perpendicular to the modiolus and plotted the distance of IHCs from the modiolus (Figure 2D). This plot revealed small variation in IHC position among experimental groups. Third, the positions of IHCs were projected onto the axis of the modiolus, and the relative positions of every 25 IHCs were plotted (Figure 2E). The IHC distributions along the axis of the modiolus in all samples were similar. In summary, these measurements confirmed that the overall spatial distribution of IHCs can be maintained under pathological conditions (Figure 2\u2014figure supplement 2). Hence, we performed further analysis of the pattern of hair cell loss using a standardized template of cell positions.\n\nTo simplify the treatment of hair cell position in the subsequent analysis, the Cartesian coordinates of hair cell positions were transformed and normalized to match the standardized template, which consisted of the normalized two-dimensional grids parallel to the surface of the sensory epithelium (Figure 2F,G). The first axis was defined by the line of detected IHCs, and the second was set perpendicular to the first axis. This simplified presentation is useful for measuring the space unoccupied by the hair cells. We hypothesized that the area of the unoccupied space reflects the space previously occupied by hair cells that were subsequently lost. By dividing the areas that were not occupied by existing OHCs by the average area of a single OHC, we could estimate the number of OHCs lost. Comparison of the performances of trained operators and automated calculation confirmed that adequate estimation of hair cell loss could be achieved by automated calculation; indeed, the two methods were similarly effective (Figure 2G and Table 3). The total number of lost OHCs was 26.3\u00a0\u00b1\u00a06.3, 34.6\u00a0\u00b1\u00a05.1, 55.8\u00a0\u00b1\u00a04.5, and 49.3\u00a0\u00b1\u00a017.3 (mean\u00a0\u00b1SD) in wild-type C57BL/6J mice at PND 30, 60, and 120, and PND 60 plus noise exposure. These data are consistent with previous estimates of hair cell loss based on manual counting in rats and chinchillas (Hu et al., 2012; Yang et al., 2004). Therefore, our protocol is suitable for quantitative analysis of IHCs and OHCs, including detection and counting of lost hair cells.\n\n**Table 3.**\n Inter-operator percent match in void space detection (related to Experimental procedures).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"4\">Inter-operator percent match</th>\n      <th colspan=\"3\">Number of detected void space</th>\n    </tr>\n    <tr>\n      <th>Sample number</th>\n      <th>A\u00b6-B\u00b6</th>\n      <th>B\u00b6-C\u00b6</th>\n      <th>A\u00b6-C\u00b6</th>\n      <th>Auto\u2020\u2020-HC\u2021\u2021</th>\n      <th>Both</th>\n      <th>Auto\u2020\u2020-only</th>\n      <th>HC\u2021\u2021-only</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1*</td>\n      <td>0.960</td>\n      <td>0.880</td>\n      <td>0.917</td>\n      <td>0.920</td>\n      <td>24</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>2\u2020</td>\n      <td>0.898</td>\n      <td>0.917</td>\n      <td>0.906</td>\n      <td>0.952</td>\n      <td>84</td>\n      <td>2</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>3\u2021</td>\n      <td>0.923</td>\n      <td>0.885</td>\n      <td>0.958</td>\n      <td>0.889</td>\n      <td>24</td>\n      <td>3</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>4\u00a7</td>\n      <td>0.923</td>\n      <td>0.882</td>\n      <td>0.846</td>\n      <td>0.926</td>\n      <td>50</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Overall</td>\n      <td>0.916</td>\n      <td>0.898</td>\n      <td>0.897</td>\n      <td>0.931</td>\n      <td>182</td>\n      <td>9</td>\n      <td>4</td>\n    </tr>\n  </tbody>\n</table>\n\n_*. Sample 1, two months old, total loss rate of OHCs: 1.7%.\u2020. Sample 2, two months old with noise exposure, total loss rate of OHCs: 8.1%.\u2021. Sample 3, one month old, total loss rate of OHCs: 2.2%.\u00a7. Sample 4, four months old, total loss rate of OHCs: 4.2%.\u00b6. Skilled human operators (A, B, and C).\u2020\u2020. Auto, automated OHC loss counting program.\u2021\u2021. HC, human consensus._\n\n### Spatial characteristics of hair cell loss\n\nPresentation of lost cell density in the form of two-dimensional grids facilitates side-by-side comparison of hair cell loss along the longitudinal axis of the organ of Corti (Figure 3A and Figure 3\u2014figure supplement 1). In samples from young mice not exposed to noise, small numbers of hair cells were lost along both the longitudinal and radial axes (Figure 3A and Figure 3\u2014figure supplement 1). Samples of aged mice had a higher density of lost cells at both ends of the organ of Corti (Figure 3B). The difference between adult and aged mice was confirmed by comparison across ages. In particular, the age-dependent increase in lost cell density was prominent at the apical end (PND 60: 0.0596\u00a0\u00b1\u00a00.0048, PND 120: 0.116\u00a0\u00b1\u00a00.0150, Welch\u2019s t-test, p\u00a0<\u00a00.01, t\u00a0=\u00a03.59, df\u00a0=\u00a09.68). By contrast, previous studies reported a higher rate of ACL in the basal portion, but failed to detect a prominent increase in the proportion of lost cells in the apical region. This difference may be due to the fact that our tissue clearing technique enabled complete visualization of hair cells at the helicotrema (Figure 3C). ACL also had spatial features along the radial axis, with a higher density at positions distal to the modiolus (Figure 3D). This trend along the radial axis was already present in cochleae at PND 60, indicating that ACL may represent acceleration of a pathology already present in the early stage of life. In summary, the method we developed was well suited for comprehensive analysis of ACL.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40946/elife-40946-fig3-v1.jpg)\n\n**Figure 3.:** (A) Pseudo-color presentation of hair cell loss along the longitudinal axis of the organ of Corti (PND 30, 60, and 120 and noise exposure at PND 60).\u00a0Each row represents a single cochlear sample. Numbers of lost hair cells within 50 \u03bcm segments along the longitudinal axis were measured. For samples with higher cell loss in the basal portion, it was difficult to define the basal end of the sensory epithelium. These samples with ambiguous starting points of the epithelium were marked by thin red lines in rows of noise-exposed samples. The raw fluorescence image shows the definition of directions (distal and proximal, apex and base) relative to the sensory epithelium. (B) Distribution of lost cells along the longitudinal axis of the organ of Corti in three experimental groups. PND 60 and 120, and noise exposure at PND 60, exhibit distinct patterns of hair cell loss (Kruskal\u2013Wallis test with Steel\u2013Dwass test). (C) Detection of hair cell loss at the helicotrema. Scale bar, 100 \u03bcm. (D) Distribution of lost cells along the radial axis of the organ of Corti. Samples from PND 60 and 120 exhibit gradients of cell loss. (Paired t-test followed by Bonferroni\u2019s correction, *p\u00a0<\u00a00.05; ***p\u00a0<\u00a00.001.) Number of samples; n\u00a0=\u00a010 (PND 30), 14 (PND 60), 9 (PND 120), and 10 (Noise), except for n\u00a0=\u00a07 in segment \u2018a\u2019 of Noise in (B). *p\u00a0<\u00a00.05; **p\u00a0<\u00a00.01; ***p\u00a0<\u00a00.001. PND, postnatal day.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40946/elife-40946-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Pseudo-color presentation of the OHC loss frequency along the radial axis. Each row represents a single cochlear sample. The sample IDs were written on the left of the map. Note that the direction of comparison (proximal to distal) is perpendicular to the map shown in Figure 3A. Samples were arranged according to the extent of total cell loss in each experimental group from the highest to the lowest. The radial positions were divided into 15 sections and the scores were averaged within the sections. (B) Principal-component analysis (PCA) of the lost cell distribution in samples at PND 120 and at PND 60 with noise exposure (left). PCA was performed with the local OHC loss frequencies as variables. Frequencies of cell loss were calculated in individual segments set along the longitudinal and the radial axes. The percent variation explained by each principal component (PC) is indicated in parentheses. A dotted line indicates the decision boundary of the linear discriminant analysis. Coefficients of the first principal component (middle) and the second principal component (right) were presented from basal to apical and from proximal to distal. PND, postnatal day.\n\nThe cellular pathology of NCL was more complex than that of ACL, exhibiting a highly variable pattern among samples. This may be inevitable in our paradigm of NCL, because this protocol is expected to induce milder insults to the sensory epithelium (Figure 3A and Figure 3\u2014figure supplement 1). Our comprehensive analysis was useful in detecting higher variability of cell loss at the basal end after noise exposure (position \u2018a\u2019 against \u2018e\u2019 in Figure 3; p\u00a0<\u00a00.001, F(6,9) = 15.5) and also in aged mice, (position \u2018a\u2019 against \u2018e\u2019 in Figure 3; p\u00a0<\u00a00.05, F(8, 8)=\u00a05.69), suggesting that vulnerability at the basal end may be intrinsically variable. Principal component analysis applied to the spatial pattern of cell loss was helpful in isolating ACL- and NCL-related parameters (Figure 3\u2014figure supplement 1), and the results revealed that NCL had a weaker impact in the apical portion. Thus, distinct mechanisms of cellular pathology may be responsible for ACL and NCL.\n\n### Model-based analysis of hair cell loss\n\nThe positions of putative lost cells revealed spatial clustering above the level that would be expected by chance, regardless of age and the presence or absence of noise exposure (Figure 4A). To evaluate the spatial patterns of clustering, we constructed two distinct mechanistic models (Figure 4B). In the first model, cell loss occurs stochastically, but the probability increases if adjacent cells have been lost (neighborhood effect model). In the second model, the frequency of cell loss depends on adverse factors localized along the longitudinal axis of the organ of Corti (position effect model).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40946/elife-40946-fig4-v1.jpg)\n\n**Figure 4.:** (A) Evaluation of the extent of clustered cell loss by comparison with the extent of clustering based on a model of random cell loss.\u00a0The extent of cell clustering in the experimental data was much higher than would have been expected from random cell loss (99% confidence intervals within two lines) (Welch\u2019s t-test, ***p\u00a0<\u00a00.001). (B) Construction of two models of hair cell loss (upper: neighborhood effect model; lower: position effect model). Virtual cell loss data were generated from the models and compared with the experimental data (measured). (C) Evaluation of the goodness-of-fit of the two models to the experimental data using the error score, which measures the extent of deviation of the clustering properties generated by the models from those observed in real samples. (D) Assessment of the relative contributions of the two models (neighborhood effect and position effect) to achieve the best fit to the experimental data. The two models contribute differentially under various conditions. The color code shows the proportion of lost OHCs against the total OHCs. (E) Overall pattern of contribution from two models. Note that the neighborhood effect makes a stronger contribution in young adult mice, whereas the position effect makes a stronger contribution in aged mice (means\u00a0\u00b1\u00a0SD). Number of samples; n\u00a0=\u00a010 (PND 30), 14 (PND 60), 9 (PND 120), and 10 (Noise). PND, postnatal day.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40946/elife-40946-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) A pair of \u2018probability matrix\u2019 (upper panel) and \u2018cell matrix\u2019 (lower panel). The intensities of elements in the \u2018probability matrix\u2019 indicate the probability of cell loss for the next round of the simulation runs for individual cells. White pixels in the \u2018cell matrix\u2019 indicate the locations of already lost cells in previous rounds of the simulation runs. (B) An example of simulated histograms with different amounts of two effects (neighborhood effect and position effect). These histograms indicate the frequency distribution of cell loss clusters with different sizes. (C) Comparison of experimental data and simulation results for a given cochlear sample (No. 517). A heat map (right) shows the relative similarities between the experimental data and the simulation result (reverse of the error score in Figure 4C) when the weights of the neighborhood effect and the position effect were systematically changed. The weighted average point indicated by the red dot was taken as the estimated contributions of two effects to this sample.\n\nFitting of the two models was comparable in samples from aged mice or after noise exposure (Figure 4C), suggesting the complex relationship between lost cell clustering, various hair cell pathologies, and the extent of cell loss. Therefore, we developed a two-component model in which both the neighborhood effect and the position effect induced cell loss, but with different weights. By controlling the weights of the two effects, it was possible to improve fitting to the experimental data. The combinations of the two effects yielding the best fit to the experimental data were plotted along with a color code for the extent of cell loss (Figure 4D and Figure 4\u2014figure supplement 1). The overall pattern of data distribution suggests a higher contribution of the neighborhood effect in young and adult mice not exposed to noise (Figure 4E). With age, the contribution of the position effect increased, whereas noise exposure in adult mice resulted in a variable extent of damage; data points were dispersed, with highly damaged sensory epithelium experiencing a greater contribution from the position effect.\n\n### Automatic evaluation of cell damage and detection of multiple intracellular components\n\nFluorescence-based detection of cytoskeletal components, such as F-actin, enabled us to obtain information about the integrity of subcellular structure in hair cells. We evaluated F-actin integrity of OHCs at multiple positions of the organ of Corti, specified by the extent of cell loss and clustering of lost cells (Figure 5A). This approach is useful for automatic evaluation of the extent of stereocilia damage at multiple points of the organ of Corti. The reduction of F-actin content in hair cells near to lost hair cells supports the neighborhood effect model of lost cell clustering, described above.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40946/elife-40946-fig5-v1.jpg)\n\n**Figure 5.:** (A) Automated detection of areas with variable degrees of hair cell loss, combined with evaluation of subcellular pathology.\u00a0All sites of hair cell loss (white squares) were selected, and changes in the F-actin content were evaluated (upper image). White squares with dotted lines are representative analysis areas, and are enlarged at lower left. Hair cells surrounded by intact hair cells (crosses) or next to lost cells (asterisks) were compared for their F-actin content (lower right). The graph reveals loss of F-actin in hair cells adjacent to lost cells. Scale bars, 100 \u03bcm (upper) and 10 \u03bcm (lower). [n\u00a0=\u00a0108 (PND 60) and 103 (Noise), paired t-test for comparison within the group, Welch\u2019s t-test with Bonferroni\u2019s correction for comparison of cell groups between different experimental conditions, ***p\u00a0<\u00a00.001; ns, not significant, p\u00a0>\u00a00.05.] (B) Modified ScaleS technique can be adapted to multiple immunohistochemistry of cellular and subcellular components at PND 5. Antibodies against CtBP2, VGLUT3, NF200, and SOX2 were used to detect multiple components in situ. Scale bars, 10 \u03bcm. HC, hair cell; IHC, inner hair cell; OHC, outer hair cell; PND, postnatal day.\n\nWe also tried to image subcellular components in hair cells using specific antibodies against presynaptic ribbons (C-terminal-binding protein 2, CtBP2) and synaptic vesicles (vesicular glutamate transporter type 3, VGLUT3). Similar immunocytochemical approaches were applied to other components of the organ of Corti, including axons immunopositive for high\u2013molecular weight neurofilament protein (NF200) and supporting cells positive for SRY (sex determining region Y)-box 2 (SOX2) immunoreactivity (Oesterle et al., 2008) (Figure 5B). These results suggest that this method can be applicable to analysis of multiple cellular components in the cochlea. In this study we utilized a water immersion objective with moderate numerical aperture (NA). In future, modification of our method with an objective lens with higher NA may enable more precise imaging of intracellular structure in a scale of the entire cochlea.\n\nIn this study, we developed a rapid method for optical tissue clearing, labeling, and automated image analysis of the inner ear. Currently available tissue clearing and labeling technologies have limited applicability to hard tissues, including bone, tooth, cartilage, and tendon. Effective removal of fine hydroxyapatite crystals in hard tissues is a key to establishing clearing methods. Here, we demonstrated that our modified ScaleS method represents a powerful approach for exhaustive analysis of expression profiles in hair cells along the entire organ of Corti, using multiple antibodies. This technique can be directly applied to the characterization of genetic and environmental models of hearing loss. In future, the analytical pipeline we developed will be integrated with active elimination of bone mineral and organic components by physical principles (Lee et al., 2016). To further increase efficiency, the decalcification solution should be elaborated. Rapid decalcification can be achieved by combining EDTA with formic or hydrochloric acid (Treweek et al., 2015). A recent report also examined multiple conditions of clearing hard tissues and recommended lowering pH of the EDTA-containing decalcification solution (Tainaka et al., 2018). However, prolonged sample treatment with high concentrations of acid can reduce immunoreactivity and accelerate quenching of fluorescent proteins. Future investigations should seek to establish clearing and labeling methods optimized for a wide spectrum of hard tissue components.\n\nSystem-level analysis of the organ of Corti is important for extracting the operating principles of mechanosensory transduction. In parallel, generation of a variety of model mice harboring mutations in genes involved in hearing function will facilitate functional studies. While the functional consequences of gene mutation can be assessed using standardized protocols, such as ABR, at present we have no widely approved format for the assessment of cellular pathology. The method we developed in this study may be useful for standardization of cell-based analysis. A recent study of in situ two-photon imaging of the organ of Corti revealed the detailed architecture of the mechanical framework in the sensory epithelium (Soons et al., 2015). The method described here could be combined with information about mechanical characteristics. By integrating position-specific mechanical property, fluid dynamics, and hair cell physiology, such an approach would be useful for modeling of cochlear function (Liu et al., 2015). Manual identification of more than 2500 hair cells per sample and subsequent analysis of cell loss is not possible for large sets of cleared samples from animals of different ages, genetic backgrounds, and experimental conditions. Accordingly, the analytical pipeline described here was designed to minimize manual processing. Objective comparison of position-dependent cell pathology among multiple mouse models of hearing loss will facilitate identification of critical molecular signatures associated with cochlear pathology.\n\n## Materials and methods\n\nFor detailed procedures, see Appendix 1 and 2.\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>C57BL/6J</td>\n      <td>Sankyo Lab (JAPAN)</td>\n      <td>PRID:MGI:5658686</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>CBA/Ca</td>\n      <td>Sankyo Lab (JAPAN)</td>\n      <td>PRID:MGI:2159826</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Thy1-GFP line-M</td>\n      <td>Jackson Lab</td>\n      <td>PRID:MGI:3766828</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic \u00a0reagent (M. musculus)</td>\n      <td>GO-Ateam</td>\n      <td>PMID: 19720993</td>\n      <td></td>\n      <td>Dr. M Yamamoto (Kyoto University, Japan)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti- Myosin VIIa</td>\n      <td>Proteus Biosciences</td>\n      <td>cat# 25\u20136790 PRID:AB_10013626</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-Neurofilament 200</td>\n      <td>SIGMA</td>\n      <td>cat# N5389 PRID:AB_260781</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-SOX-2</td>\n      <td>EMD Millipore</td>\n      <td>cat# MAB4343 PRID:AB_827493</td>\n      <td>IHC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-CTBP2</td>\n      <td>BD Bioscience</td>\n      <td>cat# 612044 PRID:AB_399431</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Guinea pig polyclonal anti-VGLUT3</td>\n      <td>PMID: 20034056</td>\n      <td></td>\n      <td>IHC (1:500), Dr. H Hioki (Juntendo University, Japan)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 488-conjugated mouse monoclonal anti-VE cadherin</td>\n      <td>eBioscience</td>\n      <td>cat# 16-1441-81 PRID:AB_15604224</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rhodamine phalloidin</td>\n      <td>Invitrogen</td>\n      <td>cat# R415</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Triton X-100</td>\n      <td>Nakalai-tesque</td>\n      <td>cat# 12967\u201345</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Urea</td>\n      <td>SIGMA</td>\n      <td>cat# U0631-1KG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical \u00a0compound, drug</td>\n      <td>N,N,N',N'-Tetrakis (2-eydroxypropyl) ethylendiamine</td>\n      <td>TCI</td>\n      <td>cat# T0781</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D-sucrose</td>\n      <td>Wako</td>\n      <td>cat# 196\u201300015</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>2,2',2''-nitrilotriethanol</td>\n      <td>Wako</td>\n      <td>cat# 145\u201305605</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dichloromethane</td>\n      <td>SIGMA</td>\n      <td>cat# 270997\u2013100 ML</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tetrahydrofuran</td>\n      <td>SIGMA</td>\n      <td>cat# 186562\u2013100 ML</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dibenzyl Ether</td>\n      <td>Wako</td>\n      <td>cat# 022\u201301466</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Methanol</td>\n      <td>Wako</td>\n      <td>cat# 132\u201306471</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D-glucose</td>\n      <td>SIGMA</td>\n      <td>cat# G8270-100G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D-sorbitol</td>\n      <td>SIGMA</td>\n      <td>cat# S1816-1KG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Thiodiethanol</td>\n      <td>Wako</td>\n      <td>cat# 205\u201300936</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Acrylamide</td>\n      <td>Wako</td>\n      <td>cat# 011\u201308015</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bis-acrylamide</td>\n      <td>SIGMA</td>\n      <td>cat# 146072\u2013100G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>VA-044 initiator</td>\n      <td>Wako</td>\n      <td>cat# 225\u201302111</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium dodecyl sulfate</td>\n      <td>TCI</td>\n      <td>cat# I0352</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>FocusClear</td>\n      <td>CelExplorer Labs</td>\n      <td>cat# F101-KIT</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Glycerol</td>\n      <td>Wako</td>\n      <td>cat# 075\u201300616</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dimethyl sulfoxide</td>\n      <td>Wako</td>\n      <td>cat# 043\u201307216</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>N-acetyl-L-hydroxyproline</td>\n      <td>TCI</td>\n      <td>cat# A2265</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Methyl-\u03b2-cyclodextrin</td>\n      <td>TCI</td>\n      <td>cat# M1356</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>\u03b3-cyclodextrin</td>\n      <td>TCI</td>\n      <td>cat# C0869</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tween-20</td>\n      <td>Wako</td>\n      <td>cat# 167\u201311515</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>NIH</td>\n      <td>PRID: SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism\u00a06</td>\n      <td>GraphPad Software</td>\n      <td>PRID: SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>MathWorks</td>\n      <td>PRID: SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Microsoft Excel</td>\n      <td>Microsoft</td>\n      <td>PRID: SCR_016137</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Illustrator</td>\n      <td>Adobe</td>\n      <td>PRID: SCR_010279</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Signal processor</td>\n      <td>Nihon Kouden</td>\n      <td>Neuropack MEB2208</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>MATLAB codes</td>\n      <td>This paper</td>\n      <td></td>\n      <td>https://github.com/okabe-lab/cochlea-analyzer</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>25x water- immersion objective lens</td>\n      <td>Nikon</td>\n      <td>N25X-APO-MP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>25x water- immersion objective lens</td>\n      <td>Olympus</td>\n      <td>XPLN25XWMP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sound speaker</td>\n      <td>TOA</td>\n      <td>HDF-261\u20138</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Power amplifier</td>\n      <td>TOA</td>\n      <td>IP-600D</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Condenser microphone</td>\n      <td>RION</td>\n      <td>UC-31 and UN14</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sound calibrator</td>\n      <td>RION</td>\n      <td>NC-74</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Noise generator</td>\n      <td>RION</td>\n      <td>AA-61B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Dual channel programmable filter</td>\n      <td>NF corporation</td>\n      <td>3624</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Tissue acquisition\n\nAfter euthanasia, mice were perfused transcardially with 4% paraformaldehyde in PBS. Osteochondral samples (cochlea embedded in temporal bones and femurs) and other soft tissues (brain, heart, stomach, lung, liver, kidney, intestine, and spleen) were isolated by standard dissection techniques.\n\n### Decalcification\n\nSamples were washed for 30 to 180 min in PBS containing 0.1% Triton X-100 with continuous rocking at 40 rpm. Decalcification was performed by incubating samples for 48 to 120 hr in 500 mM EDTA in PBS at 37\u00b0C, and terminated by washing samples several times with PBS.\n\n### Tissue extraction\n\nSamples were placed in a solution containing 3 M guanidinium chloride, 35% (w/v) D-sorbitol, 15% (w/v) D-glucose, and 4% (w/v) Triton X-100 in PBS (pH 6.0\u20138.0) and incubated at 37\u00b0C for 2 to 12 hr.\n\n### Labeling with antibodies and small molecules\n\nAfter tissue extraction, samples were washed with PBS containing 0.1% Triton X-100 for 30 min with continuous rocking at 40 rpm. Samples were incubated for 2 to 48 hr in a solution containing primary antibodies or small molecules (details provided in Appendix 1) with appropriate dilutions at 37\u00b0C. Unbound antibodies or small molecules were removed by washing for 30 min with PBS containing 0.1% Triton X-100, with continuous rocking at 40 rpm. Primary antibodies were detected by incubation for 12 to 48 hr with a solution containing secondary antibodies at 37\u00b0C, followed by washing as described for removal of primary antibodies. Duration of antibody incubation was adjusted depending on the size of the sample and the affinity and specificity of the antibodies.\n\n### Adjustment of RI\n\nFor the adjustment of tissue RI, samples were incubated for 15 min to 2 hr at 37\u00b0C in a RI matching solution. The duration of this step was adjusted depending on the size and properties of the sample. Our optimized RI matching solution (RI\u00a0=\u00a01.47) contained 3 M guanidinium chloride (or 4 M urea), 60% (w/v) D-sorbitol, and 0.1% (w/v) Triton X-100 in PBS (pH 7.1). For the optimization of RI, we tested multiple RI matching solutions with their RIs ranging from 1.41 to 1.56. The RI matching solutions with their RI lower than 1.47 were made by diluting the RI matching solution with RI\u00a0=\u00a01.47 with water. The final RIs were confirmed by a refractometer. The RI matching solutions with RI\u00a0=\u00a01.52 and 1.57 were thiodiethanol and dibenzyl ether, respectively. After RI adjustment, samples were placed in a chamber with the same RI matching solution, covered by a coverslip, and imaged by a two-photon microscope. The same cochlear sample was imaged repetitively in the RI matching solutions with increasing RIs. The maximal image depth was determined by measuring the distance from the bone surface to the deepest position where fluorescence signal of MYO7A-positive hair cells can be detected (Figure 1\u2014figure supplement 1). In total, five independent cochlear preparations were imaged.\n\n### Microscopy and image acquisition\n\nImaging of IHCs and OHCs of the organ of Corti was performed on a two-photon microscope (Nikon A1MP) equipped with a mode-locked Ti:sapphire laser (Mai Tai Deep See, Spectra Physics) operated at 800 nm with a 25\u00a0\u00d7\u00a0water immersion objective lens (NA\u00a0=\u00a01.10). A chamber containing the sample was filled with the RI matching solution, covered by a glass coverslip, and placed under the objective lens. The size of single horizontal images was set to 512\u00a0\u00d7\u00a0512, with pixel sizes of 0.99\u00a0\u00d7\u00a00.99 \u03bcm and z-spacing of 1 \u03bcm. Images were successively acquired with 10\u201340% overlap. Image processing was performed using the ImageJ software (National Institute of Health), and three-dimensional rotation was performed using Imaris (Bitplane), FluoRender (Version 2.18, the University of Utah), and NIS-Element AR (Version 4.51, Nikon). Adjustment of fluorescence intensity along the longitudinal axis of the organ of Corti was performed using a MATLAB script written in-house (MathWorks).\n\n### Automated cell-count and three-dimensional morphology analysis\n\nHair cell detection and analysis were performed automatically using custom MATLAB scripts (R2017b, MathWorks); details are provided in Appendix 2. MATLAB source code is available on GitHub\u00a0(Iida, 2018a; copy archived at https://github.com/elifesciences-publications/cochlea-analyzer).\n\n#### Step 1: Stitching of multiple image stacks into a single stack\n\nMultiple image stacks containing portions of the organ of Corti were assembled into a single image stack. Shifts of coordinates between image stacks were calculated based on cross-correlation (MATLAB \u2018normxcorr2\u2019 function). After image stitching, a blending algorithm (Rankov et al., 2005) was applied to remove sharp intensity changes in the zone of overlap.\n\n#### Step 2: Reconstruction of linearized image\n\nHair cells in each image stack were detected as local intensity peaks (MATLAB \u2018imregionalmax\u2019 function). Single-linkage clustering (maximal distance of connection, 25 \u03bcm) was effective for eliminating or reducing the number of false positives. A stretch of local peaks corresponding to the entire row of hair cells were divided into segments of 200\u2013300 \u03bcm in length. In each segment, the best-fit plane was calculated (MATLAB \u2018pca\u2019 function), together with the best-fit arc along the rows of hair cells. The multiple best-fit arcs were stitched into a continuous curve (Figure 2B). A voxel image containing the entire straightened row of hair cells was reconstructed from the image stacks, based on the stitched-fit curve and the normal vectors of the fit planes.\n\n#### Step 3: Automated detection of IHCs\n\nFirst, local correlation between the hair cell template and the voxel image of linearized epithelium was calculated by template matching (MATLAB \u2018normxcorr2\u2019 function), and the peaks of the correlation were detected. Pixels corresponding to detected peaks were grouped according to the physical size of the IHCs via connected-component labeling. These connected pixel groups (hereinafter called \u2018cell candidates\u2019) were used as a first approximation of IHC positions linked to other attributes, including correlation values and local intensity distributions.\n\nThe cell candidates were further evaluated to eliminate false positives using two successive machine learning models. The first ensemble learning method created the model for selection with predictor data consisting of areas, barycentric coordinates, correlation values, the intensities of the peaks, and the corresponding values of nearby cell candidates (MATLAB \u2018fitensemble\u2019 function with \u2018GentleBoost\u2019 method) (Friedman et al., 2000). The model was trained to calculate posterior probability (prediction score), and cell candidates with a high prediction score (~1000 candidates out of initial\u00a0~50,000) were selected and further analyzed by the second ensemble learning method (MATLAB \u2018fitensemble\u2019 function with \u2018Bag\u2019 method) (Breiman, 2001). This method was based on expanded predictors (the prediction score from the first step of the candidate and nearby candidates, and the local intensity distribution centered on the barycentric coordinates of the peaks). The cell candidates after the second selection were connected sequentially, subject to the physical constraint that the IHCs must form a single row with roughly constant intervals of more than 6 \u03bcm. The resulting putative positions of IHCs were used for fine readjustment of image linearization and three-dimensional structural analysis.\n\n#### Step 4: Automated detection of OHCs\n\nThe image processing applied for IHCs in Step 3 was also applied to OHCs. Detection accuracy was improved by two additional evaluations based on machine learning. First, physical constraints of OHC alignment were introduced into three rows. A multiclass classification model, based on the convolutional neural network method [Neural Network Toolbox of MATLAB (LeCun et al., 1989)], sorted cell candidates into respective rows using input images each containing three rows of four or five OHCs. If the distance between two adjacent cell candidates in the same row exceeded 1.5 times the average distance, the presence of additional cells in the gap was assessed by the fourth model based on the convolutional neural network method. Input images for machine learning were sampled by placing small rectangular areas at equal distances from one another within the gap. If the model predicted the existence of additional cells in the gap, the nearest peaks of the correlation coefficient from the first template matching were recovered.\n\n### Frameworks of machine learning models\n\nDetails of the models used in the detection are shown in Table 1 and Table 4 (Sokolova and Lapalme, 2009). Ensemble learning methods were applied to a one-dimensional predictor data set, and the convolutional neural network method was applied to a two-dimensional predictor data set (images). For the first ensemble learning in Steps 3 and 4, the GentleBoost algorithm was selected because of its superior training performance on large data sets relative to the Random Forest algorithm [GentleBoost, MATLAB \u2018fitensemble\u2019 function with \u2018GentleBoost\u2019 method (Friedman et al., 2000); Random Forest, \u2018Bag\u2019 method in MATLAB (Breiman, 2001)].\n\n**Table 4.**\n Number of training and test dataset, and performance evaluation of machine learning models (related to Figure 2).\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Model</th>\n      <th colspan=\"2\">Training</th>\n      <th colspan=\"2\">Test</th>\n      <th rowspan=\"2\">Recall</th>\n      <th rowspan=\"2\">Precision</th>\n      <th rowspan=\"2\">F score</th>\n    </tr>\n    <tr>\n      <th>Total (n)</th>\n      <th>Positive labels (n)</th>\n      <th>Total (n)</th>\n      <th>Positive labels (n)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>IHC* 1</td>\n      <td>607,954</td>\n      <td>5906</td>\n      <td>578,851</td>\n      <td>5741</td>\n      <td>0.961</td>\n      <td>0.941</td>\n      <td>0.951</td>\n    </tr>\n    <tr>\n      <td>IHC* 2</td>\n      <td>37,576</td>\n      <td>11,977</td>\n      <td>18,104</td>\n      <td>5753</td>\n      <td>0.977</td>\n      <td>0.986</td>\n      <td>0.981</td>\n    </tr>\n    <tr>\n      <td>OHC\u2020\u00a01</td>\n      <td>1,112,659</td>\n      <td>20,576</td>\n      <td>1,099,519</td>\n      <td>19,959</td>\n      <td>0.978</td>\n      <td>0.914</td>\n      <td>0.945</td>\n    </tr>\n    <tr>\n      <td>OHC\u2020\u00a02</td>\n      <td>28,702</td>\n      <td>20,576</td>\n      <td>27,185</td>\n      <td>19,959</td>\n      <td>0.959</td>\n      <td>0.979</td>\n      <td>0.969</td>\n    </tr>\n    <tr>\n      <td>OHC\u2020\u00a03</td>\n      <td>20,416</td>\n      <td>Row1: 6706 Row2: 6745 Row3: 6965</td>\n      <td>19,594</td>\n      <td>Row1: 6421 Row2: 6450 Row3: 6723</td>\n      <td>0.993\u2021</td>\n      <td>0.993\u2021</td>\n      <td>0.993\u2021</td>\n    </tr>\n    <tr>\n      <td>OHC\u2020\u00a04</td>\n      <td>4114</td>\n      <td>1365</td>\n      <td>2990</td>\n      <td>905</td>\n      <td>0.920</td>\n      <td>0.946</td>\n      <td>0.933</td>\n    </tr>\n  </tbody>\n</table>\n\n_*. IHC, inner hair cell.\u2020. OHC, outer hair cell.\u2021. Calculated by micro-average of recall and precision (Sokolova M and Lapalme G, 2009)_\n\n### Evaluation of automated detection system for hair cells\n\nThe detection efficiency of the system is shown in Table 2. The models used in the system were trained on ten cochleae as described above, and the efficiency of the trained system was evaluated on ten other cochleae. The results of auto-detection were compared against a reference created by independent manual counting by three human operators. The reference contains fluorescent objects judged to be hair cells by at least two operators.\n\n### Analysis of spatial distribution of OHCs\n\nLoss of OHCs results in formation of spatial gaps. To evaluate the extent of cell loss, conventional manual counting estimates the number of lost cells based on the sizes of spatial gaps. In this study, a method that can directly and systematically evaluate the sizes of holes without assuming horizontal rows of hair cells was introduced. The first step of this method was equalization of the coordinates of detected cells throughout the cochlear. Cell positions were adjusted to normalize the average intercellular distance both horizontally and vertically, and to normalize the intercellular distances along the entire organ of Corti. Subsequent placement of square areas with positions matched to the normalized coordinates of detected hair cells left connected pixel groups corresponding to the spaces of putative lost cells. Details of these analyses are provided in Appendix 2.\n\n### Principal component analysis on OHC loss frequency\n\nPrincipal component analysis was performed on the OHC loss frequency along the longitudinal and radial axes of NCL and ACL samples. Variables were the frequency of OHC loss in specific spatial segments. These spatial segments were 13 longitudinal and 15 radial segments that equally divide the total area. A singular value decomposition algorithm was utilized for the calculation of coefficients for the first and second principal components (\u2018svd\u2019 option of MATLAB \u2018pca\u2019 function).\n\n### Analysis of the three-dimensional structure of the cochlea\n\nThe spiral structure of the cochlea was analyzed based on the three-dimensional spatial distribution of IHCs because these cells formed a row that was rarely disturbed. Details of these analyses are provided in Appendix 2.\n\n### Simulation analysis of clustered cell loss\n\nIt was observed that lost OHCs tended to be clustered. Simulation analysis was performed to evaluate two independent factors that could be responsible for such clustering. (1) A lost cell increases the probability that neighboring cells will be lost (Model 1; neighborhood effect). (2) Cell loss takes place with a probability that is a function of the local environment of the sensory epithelium (Model 2; position effect). The simulation was performed on each cochlea sample, using the measured ratio of cell loss, the number of clusters, and the cluster sizes. The simulation was performed on two matrices, the \u2018cell matrix\u2019 and \u2018probability matrix\u2019, with sizes of 3 rows\u00a0\u00d7\u00a0600 columns corresponding to the distribution of OHCs (Figure 4\u2014figure supplement 1). The cell matrix recorded the positions of cell loss, and the probability matrix recorded the probabilities of cell loss in each step of the simulation.\n\nEach operation started with a cell matrix with no lost cells and a probability matrix with or without an initial position effect. In each step, a single cell was selected for removal with a probability given by the probability matrix, and the position was recorded in the cell matrix. The operation was stopped when the total number of lost cells reached the number of cells lost in a given sample.\n\nThe neighborhood effect was created by adding an additional weight to the adjacent probability matrix elements. To introduce the position effect, random numbers were generated according to a power-law distribution calculated by the following function.\n\n$$\nP(x)=0.1\\timesp\\timesX^{(1\u22120.1\\timesp)},\n$$\n\nwhere p is the parameter controlling the shape of distribution. The values along the row of the probability matrix were obtained from the function P(x), with input x drawn from a uniform distribution between 0 and 1. Values in the same column were set to be identical. Gaussian filtering was applied to the probability matrix to broaden the peak width.\n\nA panel of 16 simulated histograms was created for each sample by changing the relative weights of two effects (neighborhood and position effects) (Figure 4\u2014figure supplement 1). The operation was repeated 500 times for each parameter set. A histogram of cluster size was constructed, and similarity to the measured data was evaluated (Figure 4\u2014figure supplement 1). The extent of histogram dissimilarity between measured and simulation results was calculated by the sum of squared errors (error score), and a two-dimensional heat map was created (Figure 4\u2014figure supplement 1). The weighted average of the top three combinations of weights was calculated and taken to represent the relative contribution of two factors to cell loss events.\n",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "b24c2577-9277-4493-80f2-2887ad76b049",
+      "submission_id": "4b08796d-99ea-4813-bb40-e2a0429bdb18",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tanya T Whitfield, University of Sheffield United Kingdom\n\nReviewers:\n- Stefan Heller, Stanford University United States\n\n## Review text\n\nDOI: [10.7554/eLife.40946.039](https://doi.org/10.7554/eLife.40946.039)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Cellular cartography of the organ of Corti based on optical tissue clearing and machine learning\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Andrew King as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Stefan Heller (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and agree that the manuscript requires minor revisions, which should be relatively quick to address. The Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Urata and colleagues describe a technical solution to minimize manual processing of cochlear samples from mice for quantitative analysis of hair cell numbers and location. The concept builds on a modified Sca/eS tissue clearing method, combined with immunolabeling of hair cells, 2-photon microscopy, and an elegant way of stitching image stacks and assembling a 3-dimensional image. The core of the automated analysis method is a series of MATLAB scripts that perform the analysis.\n\nEssential revisions:\n\n1) Please give more information about the methodology for the machine learning model and include a comparison with other methods. Transfer to other scripts is not essential, but please comment on whether such a transfer would be an option and how this might be done by someone interested in doing a similar analysis.\n\nThe full reviews are appended below.\n\nReviewer #1:\n\nThe MATLAB scripts appear well-documented and utilize common toolboxes. Unfortunately, this reviewer currently does not own a MATLAB license and therefore was not able to run the scripts to test for general applicability.\n\nThis brings me to my main critique. The beauty of this work is that it allows the researcher to process a large number of cochlear samples in parallel. With acquisition times of about 4h per sample using a 2-photon microscope and a 25x (NA = 1.1) objective and 30 min for an average analysis workflow, this method is indeed a major advancement for laboratories interested in an efficient and throughput-oriented method for quantitative assessment of hair cells and hair cell loss in the cochlea.\n\nNevertheless, the requirement for an expensive software package diminishes enthusiasm. What would it take to transfer the scripts to a widely available and free-for-all environment such as Python, Java, or R? Even C/C++ or a combination of languages comes to mind.\n\nThe overall approach is quite clever and this reviewer is enthusiastic about the work. Besides the automated data analysis, there is another very interesting hidden gem in this manuscript that this is related to Figure 4, and to the principles of observed clustering of lost hair cells and the two-component model. The use of a combination and dynamically changing (with age or noise challenge) model that takes into account local neighborhoods and position is truly a creative way to approach the analysis of such an observation. In this respect, I consider the results presented in this section of the paper and summarized in the last paragraph of the subsection \u201cModel-based analysis of hair cell loss\u201d, as a quite important and relevant finding.\n\nA second critique concerns the core method used for data analysis. Machine learning is such a buzzword, but it is not a simple method that is replicable for the common reader. Exactly what kind of principle was utilized? Please provide accurate references already in the text presented in the second paragraph of the subsection \u201cMachine learning\u2013based automated detection of sensory hair cells\u201d, and explain in more palatable fashion the kind of neural network approach that was used. Appendix 3 (Step 4) has some of this information, but the description there is difficult to follow and perhaps should be illustrated with some kind of drawing of the process. Appendix 2\u2014figure 5 is a good start as it shows the sample that is investigated directly, but it does not communicate the process. Since this is an important component of the core method that is presented, one would expect a more detailed and more approachable description of the procedure.\n\nReviewer #2:\n\nThis manuscript by Urata et al. reports an application of a tissue clearing method for whole organ of Corti imaging and a following quantitative analysis. This reviewer thinks that the work is very important for the field, because a limited method had been applicable for the observation of the organ. The quantification and modeling analysis on the mechanism of hair cell loss due to aging and noise will also give an impact to the field. This reviewer thus appreciate the basic concept of the study, while I found many points which should be corrected and improved in future manuscript.\n\n1) Please provide a simple and easily understandable figure indicating the step-by-step procedures of data processing according to the information in Materials and methods and Appendix part (e.g., Steps in Appendix 3) by modifying Figure 2. In the current manuscript, it was very difficult to follow and find relations of these steps in Figure 2 and Materials and methods/Appendix. Also, it seems problematic that there is no indication of procedure in Figure 2B (e.g., words such as \"raw data\" \"stitching\" \"linearize\" should be indicated in the panel).\n\n2) The panels in Figure 3A and Figure 3\u2014figure supplement 1A and the graph in panel B seem the same. Reuse of the same figure panel or data should be made explicit in figure legend. Is there any reason why the Figure 3\u2014figure supplement 1A is elongated?\n\nReviewer #3:\n\nThis manuscript describes a method to image and quantitatively characterize the spatial arrangement of sensory hair cells in the organ of Corti. A sorbitol-based optical clearing method was developed to optimize tissue clearing and immunolabeling to improve tissue transparency and antibody accessibility. Two-photon microscopy was used to image the organ of Corti in 3D. The spiral sensory epithelium was then linearized and the positions of the inner and outer hair cells (IHCs and OHCs) were automatically located using a machine learning based algorithm. Using the new sample preparation and imaging analysis method, the authors analyzed age-related and noise-induced cell loss in young, adult, and noise-exposed mice.\n\nOne novel aspect of the paper is the modification of the Sca/eS optical clearing protocol, which first decalcifies the bones and then uses a guanidine-based solution to increase transparency of the sample with minimal tissue expansion and GFP fluorescence quenching. The modified Sca/eS method was compared to established methods, including 3DISCO, iDISCO, CLARITY, CUBIC and Sca/eS, and MYO7A and F-actin labeled hair cells were most clearly identified in samples treated with the modified Sca/eS protocol.\n\nThe authors then fit a spiral curve based on the 3D image information and linearized the entire sensory epithelium of the organ of Corti for further image analysis. This approach is quite impressive to me, although I have to admit that I am not an expert in this field and am not sure whether this approach (e.g. linearization of the entire sensory epithelium) is novel to the auditory research field.\n\nLocalization and classification of IHCs and OHCs using a machine learning method are nice. But very little details were provided to describe the convolution neural network model and how the training and testing were performed. This needs to be further clarified and fleshed out in the revised manuscript. It does not look like that the authors have improved the structure of the machine learning model. The number of samples used for training and testing the machine learning model is limited and can be improved.\n\nSince the two-photon fluorescence images have very high contrast, a standard imaging processing method, such as 3D watershed, may just do the job with sufficient accuracy. It would be helpful to include a direct comparison of the machine learning model and the watershed algorithm. The reviewer also felt that the authors may consider downplaying the role of machine learning in the title and throughout the manuscript as traditional methods may achieve similar performance.\n\nBased on the localization analysis of the IHCs and OHCs, age-related and noise-induced cell loss was quantified and compared between different mice models. I will not comment on the biology of the auditory system since this is beyond my expertise.\n\nOverall, I commend the authors for providing a very careful analysis of the experiment results and assembled a comprehensive manuscript. Addressing the above comments may help to further strengthen the manuscript.\n",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8a75e071-b3b9-44bd-93f0-ae9c19aa5b9b",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C1",
+      "claim": "The highly organized spatial arrangement of sensory hair cells in the organ of Corti is essential for inner ear function.",
+      "claim_type": "EXPLICIT",
+      "source": "The highly organized spatial arrangement of sensory hair cells in the organ of Corti is essential for inner ear function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the relationship between hair cell organization and inner ear function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "fcaa77ae-9653-4c9f-aff4-aac3fe88a393",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C2",
+      "claim": "A sorbitol-based optical clearing method enabled imaging of the entire cochlea at subcellular resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "A sorbitol-based optical clearing method enabled imaging of the entire cochlea at subcellular resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and methods described in the manuscript showing successful imaging of the cochlea.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "24b68a78-1da1-43f1-9eea-be2e171ab642",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C3",
+      "claim": "High-fidelity detection and analysis of all hair cell positions along the entire longitudinal axis of the organ of Corti were performed automatically by machine learning\u2013based pattern recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "High-fidelity detection and analysis of all hair cell positions along the entire longitudinal axis of the organ of Corti were performed automatically by machine learning\u2013based pattern recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing automated detection performance and comparison with manual counting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "58d10185-a5a6-432f-accc-8e8a6b2347c8",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C4",
+      "claim": "Application of this method to samples from young, adult, and noise-exposed mice extracted essential information regarding cellular pathology, including longitudinal and radial spatial characteristics of cell loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of this method to samples from young, adult, and noise-exposed mice extracted essential information regarding cellular pathology, including longitudinal and radial spatial characteristics of cell loss, implying that multiple mechanisms underlie clustered cell loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data from multiple age groups and noise exposure conditions presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "14b3a336-f10e-4bc5-bd70-624c1a97b072",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C5",
+      "claim": "Multiple mechanisms underlie clustered cell loss in the organ of Corti.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of this method to samples from young, adult, and noise-exposed mice extracted essential information regarding cellular pathology, including longitudinal and radial spatial characteristics of cell loss, implying that multiple mechanisms underlie clustered cell loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the modeling analysis showing contributions from both neighborhood and position effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "4cb91607-5f90-4eae-960b-2627773c0605",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C6",
+      "claim": "The spatial organization of the organ of Corti determines the cochlear tonotopic map.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial organization of the organ of Corti, the mammalian auditory sensory epithelium, determines the cochlear tonotopic map, which associates the positions of the inner hair cells (IHCs) in the cochlea with local characteristic frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about cochlear organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "af4878ef-88c5-4a8c-912a-9ec605f23441",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C7",
+      "claim": "The cochlear tonotopic map associates the positions of the inner hair cells (IHCs) in the cochlea with local characteristic frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial organization of the organ of Corti, the mammalian auditory sensory epithelium, determines the cochlear tonotopic map, which associates the positions of the inner hair cells (IHCs) in the cochlea with local characteristic frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the tonotopic organization of the cochlea.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "ed574087-1a82-48ff-bcce-889552b0822f",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C8",
+      "claim": "Higher frequencies are represented at the base of the cochlear spiral and lower frequencies at the apex.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic pattern of the tonotopic map is simple, with higher frequencies on the base of the cochlear spiral and lower frequencies on the apex (von B\u00e9k\u00e9sy and Peake, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to von B\u00e9k\u00e9sy and Peake, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "805c8d6c-4446-4304-b2d9-fb270f38a39b",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C9",
+      "claim": "Multiple structural and cell biological factors influence the actual shape of the tonotopic map.",
+      "claim_type": "EXPLICIT",
+      "source": "However, multiple structural and cell biological factors influence the actual shape of the tonotopic map (Temchin and Ruggero, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Temchin and Ruggero, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "93bbe014-8650-4bea-a5f4-2a664281ab6b",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C10",
+      "claim": "Age-related hearing loss is a prevalent health problem in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, age-related (Chien and Lin, 2012) and noise-induced hearing loss (Nelson et al., 2005) are prevalent health problems that require early prevention (Cunningham and Tucci, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chien and Lin, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "d3a040cb-c176-48f0-bb34-229a04fe74af",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C11",
+      "claim": "Noise-induced hearing loss is a prevalent health problem in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, age-related (Chien and Lin, 2012) and noise-induced hearing loss (Nelson et al., 2005) are prevalent health problems that require early prevention (Cunningham and Tucci, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nelson et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "fc9c9897-fbba-4c21-b92e-67ce69e47968",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C12",
+      "claim": "Age-related and noise-induced hearing loss require early prevention.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, age-related (Chien and Lin, 2012) and noise-induced hearing loss (Nelson et al., 2005) are prevalent health problems that require early prevention (Cunningham and Tucci, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cunningham and Tucci, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "d37323c9-216f-4527-802d-56565680b0a2",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C13",
+      "claim": "The field awaits the development of appropriate model animals that recapitulate human hearing loss pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the field awaits the development of appropriate model animals that recapitulate human pathology (Wang et al., 2002; Yamasoba et al., 1998; Zheng et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang et al., 2002; Yamasoba et al., 1998; Zheng et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "399d820c-a755-47cf-8bf9-d17eae22ac33",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C14",
+      "claim": "The complexities of cochlear structure have prohibited a comprehensive cellular cartography.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the complexities of cochlear structure have prohibited a comprehensive cellular cartography, and current histological techniques are far from satisfactory for comprehensive analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field based on the authors' assessment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "4d8bbc77-7571-41b5-bb29-ac6d733f9d52",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C15",
+      "claim": "Current histological techniques are far from satisfactory for comprehensive analyses of the cochlea.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the complexities of cochlear structure have prohibited a comprehensive cellular cartography, and current histological techniques are far from satisfactory for comprehensive analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field based on the authors' assessment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "d9946897-a2b5-4b07-aa13-a26674c75e32",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C16",
+      "claim": "Advancements in optical tissue clearing have enabled the acquisition of structural and molecular information from large volumes of tissues and organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Advancements in optical tissue clearing have enabled the acquisition of structural and molecular information from large volumes of tissues and organs (Chung et al., 2013; Dodt et al., 2007; Hama et al., 2015; Renier et al., 2014; Susaki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to tissue clearing methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "410e7c0c-4227-449d-8d31-ae5d4146ac58",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C17",
+      "claim": "Both organic solvent\u2013 and hydrophilic solution\u2013based clearing methods could be optimized for clearing hard tissues that contain large proportions of extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent reports showed that both organic solvent\u2013 and hydrophilic solution\u2013based clearing methods could be optimized in clearing hard tissues that contain large proportions of extracellular matrix (Berke et al., 2016; Cai et al., 2018; Calve et al., 2015; Greenbaum et al., 2017; Jing et al., 2018; Tainaka et al., 2018; Treweek et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to recent reports on tissue clearing methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "9ed83371-63f7-41e1-abf5-977feeffc00d",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C18",
+      "claim": "An integrated method of tissue processing, labeling, and imaging techniques with single cell resolution has not yet been developed and optimized for the inner ear.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, however, an integrated method of tissue processing, labeling, and imaging techniques with single cell resolution has not yet been developed and optimized for the inner ear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "c4c68aab-ba84-4065-92fb-273f5e25cbe9",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C19",
+      "claim": "The analytical pipeline for sensory hair cell mapping in the cochlea can be completed within 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire experimental procedure could be completed within 5 days, with 4 days for tissue clearing and labeling, 4 hr for image acquisition, and 30 min for automated analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data and methods described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "c70739d7-dd69-43ac-b999-7a890545343f",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C20",
+      "claim": "Tissue clearing and labeling takes 4 days in the analytical pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire experimental procedure could be completed within 5 days, with 4 days for tissue clearing and labeling, 4 hr for image acquisition, and 30 min for automated analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental protocol described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "ba615208-2aa0-426c-b9d6-59d8feb76d99",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C21",
+      "claim": "Image acquisition takes 4 hours in the analytical pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire experimental procedure could be completed within 5 days, with 4 days for tissue clearing and labeling, 4 hr for image acquisition, and 30 min for automated analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental protocol described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "bbe740cf-1e45-48e7-9a16-0d0b7a7e7cf7",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C22",
+      "claim": "Automated analysis takes 30 minutes in the analytical pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire experimental procedure could be completed within 5 days, with 4 days for tissue clearing and labeling, 4 hr for image acquisition, and 30 min for automated analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental protocol described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "4d185536-8eb2-42d1-a85c-8afbaa0263fa",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C23",
+      "claim": "3DISCO, iDISCO, CLARITY, and CUBIC failed to detect MYO7A-immunopositive hair cells in samples of the temporal bone.",
+      "claim_type": "EXPLICIT",
+      "source": "We failed to detect MYO7A-immunopositive hair cells in samples processed by 3DISCO, iDISCO, CLARITY, or CUBIC (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "9cafe719-784d-4ea4-a7c8-22c1fc91b666",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C24",
+      "claim": "Microdissection of the membrane labyrinth of iDISCO-processed samples confirmed the presence of MYO7A-immunopositive hair cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Microdissection of the membrane labyrinth of the iDISCO-processed samples confirmed the presence of MYO7A-immunopositive hair cells, suggesting that the surrounding bone tissue prevented the detection of fluorescence (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "fd7a9b2d-3956-41ed-ad6d-79936af8abf6",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C25",
+      "claim": "Surrounding bone tissue prevented the detection of fluorescence in iDISCO-processed samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Microdissection of the membrane labyrinth of the iDISCO-processed samples confirmed the presence of MYO7A-immunopositive hair cells, suggesting that the surrounding bone tissue prevented the detection of fluorescence (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that fluorescence could be detected after microdissection but not before.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "61012dc4-4aed-400a-899f-5659af36ad53",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C26",
+      "claim": "CUBIC combined with decalcification enabled detection of MYO7A fluorescence down to 180 \u03bcm from the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "When CUBIC was combined with decalcification, MYO7A fluorescence could be detected down to 180 \u03bcm from the surface, but the combined method still did not enable imaging of the deeper part of the organ of Corti (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "29a5aaea-02f6-4142-abb2-87263f26261f",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C27",
+      "claim": "CUBIC combined with decalcification did not enable imaging of the deeper part of the organ of Corti.",
+      "claim_type": "EXPLICIT",
+      "source": "When CUBIC was combined with decalcification, MYO7A fluorescence could be detected down to 180 \u03bcm from the surface, but the combined method still did not enable imaging of the deeper part of the organ of Corti (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "24bf35ef-5fe2-470b-8fee-010171f0e0ae",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C28",
+      "claim": "ScaleS combined with decalcification yielded the best results among pre-existing tissue clearing methods for the organ of Corti.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the pre-existing tissue clearing methods, ScaleS combined with decalcification yielded the best results (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data comparing different clearing methods shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "11523cf0-aea3-4ce6-a65e-7dab01ecbbbc",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C29",
+      "claim": "Original ScaleS method missed hair cells at the cochlear base, more than 500 \u03bcm away from the bone surface.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this method still missed hair cells at the cochlear base, more than 500 \u03bcm away from the bone surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "1dd0cab3-341c-4117-b9b9-63b37db4e84a",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C30",
+      "claim": "Modified ScaleS achieved efficient in situ detection of all MYO7A-positive hair cells in the organ of Corti.",
+      "claim_type": "EXPLICIT",
+      "source": "By modifying the original ScaleS method, we achieved efficient in situ detection of all MYO7A-positive hair cells in the organ of Corti (Figure 1G and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1G and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "c81aca65-54e8-408d-959e-caffb47ab27a",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C31",
+      "claim": "A combination of a nonionic detergent (Triton X-100) and an ionic chaotropic reagent (guanidine) was effective in increasing transparency in the clearing step.",
+      "claim_type": "EXPLICIT",
+      "source": "In the subsequent clearing step, a combination of a nonionic detergent (Triton X-100) and an ionic chaotropic reagent (guanidine) was effective in increasing transparency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the optimization of the clearing protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "8d76ce5e-b73a-4a43-999f-a5b41f862809",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C32",
+      "claim": "High concentrations of urea can induce tissue expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "The ScaleS and CUBIC1 protocols use urea instead of guanidine (Hama et al., 2015; Susaki et al., 2015), but high concentrations of urea can induce tissue expansion (Tainaka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tainaka et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "05c52e72-8c77-4a44-8ba2-10773c298529",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C33",
+      "claim": "Guanidine-based clearing solution did not induce detectable tissue expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, our guanidine-based clearing solution did not induce detectable tissue expansion (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "760adbed-c1a4-4325-bfc7-13bdcc38a547",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C34",
+      "claim": "Guanidine treatment denatures GFP and reduces its fluorescence intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although guanidine treatment denatures GFP and reduces its fluorescence intensity (Huang et al., 2007), this fluorescence quenching could be reversed by incubation in phosphate-buffered saline (PBS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Huang et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "3fcaaa85-8b74-4f20-9327-0c51c6469c20",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C35",
+      "claim": "Fluorescence quenching of GFP by guanidine treatment could be reversed by incubation in phosphate-buffered saline (PBS).",
+      "claim_type": "EXPLICIT",
+      "source": "Although guanidine treatment denatures GFP and reduces its fluorescence intensity (Huang et al., 2007), this fluorescence quenching could be reversed by incubation in phosphate-buffered saline (PBS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "4cfdc85b-c4e3-4c58-aa49-1a6caf8b7345",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C36",
+      "claim": "A RI matching solution with a RI of 1.47 was most effective for detecting MYO7A-positive hair cells away from the bone surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a RI matching solution with a RI of 1.47 was most effective for detecting MYO7A-positive hair cells away from the bone surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing different RI matching solutions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "1de8f75b-2d5b-4273-94b6-8080cdd16e0b",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C37",
+      "claim": "The optimal RI of 1.47 lies between that of bone matrix (RI = 1.56) and tissue with scarce extracellular matrix (RI = 1.38).",
+      "claim_type": "EXPLICIT",
+      "source": "This RI lies between that of bone matrix (RI = 1.56) and tissue with scarce extracellular matrix (RI = 1.38).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the relationship between the optimal RI and the RIs of different tissue components.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "01abe425-8a53-40d5-8736-c14f754ad26a",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C38",
+      "claim": "The new protocol for in situ detection of all MYO7A-positive hair cells in the organ of Corti could be completed within 4 to 6 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The new protocol for the in situ detection of all MYO7A-positive hair cells in the organ of Corti could be completed within 4 to 6 days (Figure 1A,H, and Figure 1\u2014figure supplement 1), and effectively detected GFP-based reporter molecules and F-actin by rhodamine phalloidin (Figure 1I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental protocol and data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "38eb840d-68b8-448c-86ec-cedb198172f8",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C39",
+      "claim": "The modified ScaleS protocol effectively detected GFP-based reporter molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The new protocol for the in situ detection of all MYO7A-positive hair cells in the organ of Corti could be completed within 4 to 6 days (Figure 1A,H, and Figure 1\u2014figure supplement 1), and effectively detected GFP-based reporter molecules and F-actin by rhodamine phalloidin (Figure 1I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "f6e7c1fe-12cc-420c-aa4a-eac0b5447aab",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C40",
+      "claim": "The modified ScaleS protocol effectively detected F-actin by rhodamine phalloidin.",
+      "claim_type": "EXPLICIT",
+      "source": "The new protocol for the in situ detection of all MYO7A-positive hair cells in the organ of Corti could be completed within 4 to 6 days (Figure 1A,H, and Figure 1\u2014figure supplement 1), and effectively detected GFP-based reporter molecules and F-actin by rhodamine phalloidin (Figure 1I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "a5ff24dd-3ca3-4086-87ad-cc23899841ab",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C41",
+      "claim": "The presence of sorbitol in the clearing solution improved F-actin stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of sorbitol in the clearing solution improved F-actin stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "c92c1594-1140-4b93-bccf-5f1c2558d4da",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C42",
+      "claim": "The modified ScaleS protocol could be applied to detection of cellular components in other types of bone-containing samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The protocol could also be applied to detection of cellular components in other types of bone-containing samples (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "3eca1edb-78bd-4694-8a3a-44337be5a1ab",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C43",
+      "claim": "Spatially confined two-photon excitation effectively decreased photobleaching after repetitive imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatially confined two-photon excitation effectively decreased photobleaching after repetitive imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known properties of two-photon microscopy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "1a560ddf-9f96-4463-ae32-65e80e3d6fc4",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C44",
+      "claim": "The automated detection protocol recovered 98.8 \u00b1 0.6% of manually identified hair cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The automated detection protocol recovered 98.8 \u00b1 0.6% of manually identified hair cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing automated and manual detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "bef86ee8-f495-442d-ad9e-7c03ba442495",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C45",
+      "claim": "99.7 \u00b1 0.2% of hair cells identified by the algorithm were also scored as hair cells by human operators.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, 99.7 \u00b1 0.2% of hair cells identified by the algorithm were also scored as hair cells by human operators, with the remaining 0.3% representing false positives (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "73fa27db-543a-4cde-9b96-3278a0cda40f",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C46",
+      "claim": "The detection efficiency of the automated protocol was much higher than a standard imaging processing protocol based on three-dimensional watershed.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection efficiency of our protocol was much higher than a standard imaging processing protocol based on three-dimensional watershed ((Soille and Vincent, 1990; Table 2 and Appendix 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data comparing the two methods shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "ee2a29ce-7096-43cc-95f3-d780ee53e183",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C47",
+      "claim": "C57BL/6J mice are widely used for aging research and exhibit the classic pattern of age-related hearing loss.",
+      "claim_type": "EXPLICIT",
+      "source": "C57BL/6J mice are widely used for aging research and exhibit the classic pattern of age-related hearing loss, with the loss of both hair cells and neurons starting from the base (Hunter and Willott, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hunter and Willott, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "f67a3d56-de1e-40a0-89cb-f4694c3eed41",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C48",
+      "claim": "In C57BL/6J mice, age-related hearing loss involves loss of both hair cells and neurons starting from the base.",
+      "claim_type": "EXPLICIT",
+      "source": "C57BL/6J mice are widely used for aging research and exhibit the classic pattern of age-related hearing loss, with the loss of both hair cells and neurons starting from the base (Hunter and Willott, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hunter and Willott, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "5cbca0ae-918e-4999-8c7b-25ca4d3caef1",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C49",
+      "claim": "The increase in auditory brainstem\u2013evoked response (ABR) threshold in C57BL/6J mice starts at the age of 10 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in auditory brainstem\u2013evoked response (ABR) threshold starts at the age of 10 weeks (Ison et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ison et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "fe495451-daaa-46e1-a842-d8e736d95405",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C50",
+      "claim": "Manual counting of lost cells in C57BL/6J mice at PND 5, 60, and 360 confirmed age-related cell loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual counting of lost cells in C57BL/6J mice at PND 5, 60, and 360 confirmed age-related cell loss (ACL) (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "c723536b-e93a-4a65-a5ad-ab935374e561",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C51",
+      "claim": "Loss of IHCs is rare even in pathological conditions, such as aging and noise exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Because loss of IHCs is rare even in pathological conditions, such as aging and noise exposure, the row of IHCs was used as a guide for linearization of the spiral sensory epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about hair cell pathology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "81cdfb76-9938-44f9-bfdd-1465f5ba45fa",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C52",
+      "claim": "The total number of lost OHCs was 26.3 \u00b1 6.3 in wild-type C57BL/6J mice at PND 30.",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of lost OHCs was 26.3 \u00b1 6.3, 34.6 \u00b1 5.1, 55.8 \u00b1 4.5, and 49.3 \u00b1 17.3 (mean \u00b1SD) in wild-type C57BL/6J mice at PND 30, 60, and 120, and PND 60 plus noise exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from automated cell counting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "bd7cbb13-2c98-44ac-bfb7-53e13d69c04b",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C53",
+      "claim": "The total number of lost OHCs was 34.6 \u00b1 5.1 in wild-type C57BL/6J mice at PND 60.",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of lost OHCs was 26.3 \u00b1 6.3, 34.6 \u00b1 5.1, 55.8 \u00b1 4.5, and 49.3 \u00b1 17.3 (mean \u00b1SD) in wild-type C57BL/6J mice at PND 30, 60, and 120, and PND 60 plus noise exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from automated cell counting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "bc26b559-57d4-4df2-b636-5f37d32c2304",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C54",
+      "claim": "The total number of lost OHCs was 55.8 \u00b1 4.5 in wild-type C57BL/6J mice at PND 120.",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of lost OHCs was 26.3 \u00b1 6.3, 34.6 \u00b1 5.1, 55.8 \u00b1 4.5, and 49.3 \u00b1 17.3 (mean \u00b1SD) in wild-type C57BL/6J mice at PND 30, 60, and 120, and PND 60 plus noise exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from automated cell counting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "eb6417cb-3059-4581-a59c-8181e4960b22",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C55",
+      "claim": "The total number of lost OHCs was 49.3 \u00b1 17.3 in wild-type C57BL/6J mice at PND 60 plus noise exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of lost OHCs was 26.3 \u00b1 6.3, 34.6 \u00b1 5.1, 55.8 \u00b1 4.5, and 49.3 \u00b1 17.3 (mean \u00b1SD) in wild-type C57BL/6J mice at PND 30, 60, and 120, and PND 60 plus noise exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from automated cell counting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "189773a6-c38d-470f-913a-fd0fd5dfb8de",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C56",
+      "claim": "The estimates of hair cell loss are consistent with previous estimates based on manual counting in rats and chinchillas.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with previous estimates of hair cell loss based on manual counting in rats and chinchillas (Hu et al., 2012; Yang et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hu et al., 2012 and Yang et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "8a8dc32f-9355-4c24-a0a6-4c223132a9b5",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C57",
+      "claim": "Samples of aged mice had a higher density of lost cells at both ends of the organ of Corti.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples of aged mice had a higher density of lost cells at both ends of the organ of Corti (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "7ec00ea6-557e-4077-817a-3070e863751a",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C58",
+      "claim": "The age-dependent increase in lost cell density was prominent at the apical end.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the age-dependent increase in lost cell density was prominent at the apical end (PND 60: 0.0596 \u00b1 0.0048, PND 120: 0.116 \u00b1 0.0150, Welch's t-test, p < 0.01, t = 3.59, df = 9.68).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "4f7311ac-8dc6-4ab2-8297-d1a3da1d5e0f",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C59",
+      "claim": "Previous studies reported a higher rate of age-related cell loss in the basal portion but failed to detect a prominent increase in the proportion of lost cells in the apical region.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, previous studies reported a higher rate of ACL in the basal portion, but failed to detect a prominent increase in the proportion of lost cells in the apical region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research findings.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "1aa2c57f-ac27-4e69-8cbd-6e5c689bced6",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C60",
+      "claim": "The tissue clearing technique enabled complete visualization of hair cells at the helicotrema.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference may be due to the fact that our tissue clearing technique enabled complete visualization of hair cells at the helicotrema (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "9558c799-96d5-493c-8fc8-a8ecaffdd9d0",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C61",
+      "claim": "Age-related cell loss had spatial features along the radial axis, with a higher density at positions distal to the modiolus.",
+      "claim_type": "EXPLICIT",
+      "source": "ACL also had spatial features along the radial axis, with a higher density at positions distal to the modiolus (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "3b232842-3700-4087-b535-7d95b3b8b5a0",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C62",
+      "claim": "The trend of higher cell loss along the radial axis was already present in cochleae at PND 60.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend along the radial axis was already present in cochleae at PND 60, indicating that ACL may represent acceleration of a pathology already present in the early stage of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "5a571ac9-4c2c-4bdd-a4b0-17ef1ab0cd25",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C63",
+      "claim": "Age-related cell loss may represent acceleration of a pathology already present in the early stage of life.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend along the radial axis was already present in cochleae at PND 60, indicating that ACL may represent acceleration of a pathology already present in the early stage of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the radial gradient was present at PND 60.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "03847ed6-385a-42a4-aee2-54df6e982c19",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C64",
+      "claim": "The cellular pathology of noise-induced cell loss was more complex than that of age-related cell loss, exhibiting a highly variable pattern among samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular pathology of NCL was more complex than that of ACL, exhibiting a highly variable pattern among samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing variability in noise-induced cell loss patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "b0366945-a122-49f7-af29-8cd86cc83848",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C65",
+      "claim": "Comprehensive analysis detected higher variability of cell loss at the basal end after noise exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Our comprehensive analysis was useful in detecting higher variability of cell loss at the basal end after noise exposure (position 'a' against 'e' in Figure 3; p < 0.001, F(6,9) = 15.5) and also in aged mice, (position 'a' against 'e' in Figure 3; p < 0.05, F(8, 8)= 5.69), suggesting that vulnerability at the basal end may be intrinsically variable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data with statistical analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "db89ab84-28ed-434f-9a6f-0885a58cc96a",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C66",
+      "claim": "Comprehensive analysis detected higher variability of cell loss at the basal end in aged mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our comprehensive analysis was useful in detecting higher variability of cell loss at the basal end after noise exposure (position 'a' against 'e' in Figure 3; p < 0.001, F(6,9) = 15.5) and also in aged mice, (position 'a' against 'e' in Figure 3; p < 0.05, F(8, 8)= 5.69), suggesting that vulnerability at the basal end may be intrinsically variable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data with statistical analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "59a08e78-d362-46ef-a572-6332179d97f4",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C67",
+      "claim": "Vulnerability at the basal end may be intrinsically variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Our comprehensive analysis was useful in detecting higher variability of cell loss at the basal end after noise exposure (position 'a' against 'e' in Figure 3; p < 0.001, F(6,9) = 15.5) and also in aged mice, (position 'a' against 'e' in Figure 3; p < 0.05, F(8, 8)= 5.69), suggesting that vulnerability at the basal end may be intrinsically variable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation of higher variability at the basal end.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "cbff0169-79c1-44c2-9f7c-cd5fb026f56f",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C68",
+      "claim": "Noise-induced cell loss had a weaker impact in the apical portion.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis applied to the spatial pattern of cell loss was helpful in isolating ACL- and NCL-related parameters (Figure 3\u2014figure supplement 1), and the results revealed that NCL had a weaker impact in the apical portion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by principal component analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "025cf96d-10ef-4433-9458-84cdefccfde2",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C69",
+      "claim": "Distinct mechanisms of cellular pathology may be responsible for age-related cell loss and noise-induced cell loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, distinct mechanisms of cellular pathology may be responsible for ACL and NCL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the different spatial patterns of cell loss observed for ACL and NCL.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "7bf4948b-8d24-44cc-897f-1e51a98fba47",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C70",
+      "claim": "The positions of putative lost cells revealed spatial clustering above the level that would be expected by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "The positions of putative lost cells revealed spatial clustering above the level that would be expected by chance, regardless of age and the presence or absence of noise exposure (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and statistical analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "f876c2a0-f7d9-44d1-9ecf-b614d929e218",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C71",
+      "claim": "The neighborhood effect model proposes that cell loss occurs stochastically, but the probability increases if adjacent cells have been lost.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first model, cell loss occurs stochastically, but the probability increases if adjacent cells have been lost (neighborhood effect model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of one of the mechanistic models constructed for the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "48fe8163-3fb4-4a74-bf94-710638de07ba",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C72",
+      "claim": "The position effect model proposes that the frequency of cell loss depends on adverse factors localized along the longitudinal axis of the organ of Corti.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second model, the frequency of cell loss depends on adverse factors localized along the longitudinal axis of the organ of Corti (position effect model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of one of the mechanistic models constructed for the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "78ed848a-c0b9-49fc-a322-c88abdf38efd",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C73",
+      "claim": "Fitting of the two models was comparable in samples from aged mice or after noise exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting of the two models was comparable in samples from aged mice or after noise exposure (Figure 4C), suggesting the complex relationship between lost cell clustering, various hair cell pathologies, and the extent of cell loss.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "ccbb6fa1-cc3b-44a0-8d6a-4b52d0194141",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C74",
+      "claim": "There is a complex relationship between lost cell clustering, various hair cell pathologies, and the extent of cell loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting of the two models was comparable in samples from aged mice or after noise exposure (Figure 4C), suggesting the complex relationship between lost cell clustering, various hair cell pathologies, and the extent of cell loss.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the modeling analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "7fd64358-63c5-44ec-8191-c7b3f2d225fb",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C75",
+      "claim": "The neighborhood effect makes a higher contribution in young and adult mice not exposed to noise.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall pattern of data distribution suggests a higher contribution of the neighborhood effect in young and adult mice not exposed to noise (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "09c0c6eb-ece9-4fe8-b334-b83968f8ffd7",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C76",
+      "claim": "With age, the contribution of the position effect increased.",
+      "claim_type": "EXPLICIT",
+      "source": "With age, the contribution of the position effect increased, whereas noise exposure in adult mice resulted in a variable extent of damage; data points were dispersed, with highly damaged sensory epithelium experiencing a greater contribution from the position effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by modeling analysis described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "01875d50-9078-4778-99e9-2d794f1cb090",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C77",
+      "claim": "Noise exposure in adult mice resulted in a variable extent of damage.",
+      "claim_type": "EXPLICIT",
+      "source": "With age, the contribution of the position effect increased, whereas noise exposure in adult mice resulted in a variable extent of damage; data points were dispersed, with highly damaged sensory epithelium experiencing a greater contribution from the position effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by modeling analysis described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "f504fcd6-3f47-4323-8e30-abfd2fb06fe1",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C78",
+      "claim": "Highly damaged sensory epithelium after noise exposure experienced a greater contribution from the position effect.",
+      "claim_type": "EXPLICIT",
+      "source": "With age, the contribution of the position effect increased, whereas noise exposure in adult mice resulted in a variable extent of damage; data points were dispersed, with highly damaged sensory epithelium experiencing a greater contribution from the position effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by modeling analysis described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "9ed47d98-0768-4afc-a6ec-1a29dcf886a1",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C79",
+      "claim": "The reduction of F-actin content in hair cells near to lost hair cells supports the neighborhood effect model of lost cell clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction of F-actin content in hair cells near to lost hair cells supports the neighborhood effect model of lost cell clustering, described above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing reduced F-actin in hair cells adjacent to lost cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "ed119c59-b1a4-45f8-9faf-fc68273846b4",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C80",
+      "claim": "Modified ScaleS technique can be adapted to multiple immunohistochemistry of cellular and subcellular components at PND 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Modified ScaleS technique can be adapted to multiple immunohistochemistry of cellular and subcellular components at PND 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing detection of multiple markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "83ed6cad-96b4-41b7-bdc5-99a5d438a002",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C81",
+      "claim": "Antibodies against CtBP2, VGLUT3, NF200, and SOX2 were used to detect multiple components in situ.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies against CtBP2, VGLUT3, NF200, and SOX2 were used to detect multiple components in situ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "6aae0c8b-4733-4a43-a87c-c259b9e310f5",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C82",
+      "claim": "This method can be applicable to analysis of multiple cellular components in the cochlea.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that this method can be applicable to analysis of multiple cellular components in the cochlea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the successful detection of multiple markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "5d78cf36-91a8-4c6b-b3b9-6dc22e538af2",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C83",
+      "claim": "Currently available tissue clearing and labeling technologies have limited applicability to hard tissues, including bone, tooth, cartilage, and tendon.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently available tissue clearing and labeling technologies have limited applicability to hard tissues, including bone, tooth, cartilage, and tendon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "3a43fa79-6d0e-4444-9b55-bc26ae12718a",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C84",
+      "claim": "Effective removal of fine hydroxyapatite crystals in hard tissues is a key to establishing clearing methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Effective removal of fine hydroxyapatite crystals in hard tissues is a key to establishing clearing methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' understanding of the challenges in clearing hard tissues.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "b8aaecab-c34b-40df-843e-9ecbce5cb918",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C85",
+      "claim": "The modified ScaleS method represents a powerful approach for exhaustive analysis of expression profiles in hair cells along the entire organ of Corti, using multiple antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrated that our modified ScaleS method represents a powerful approach for exhaustive analysis of expression profiles in hair cells along the entire organ of Corti, using multiple antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "d50966aa-7899-4955-987c-bcad2ce1840f",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C86",
+      "claim": "This technique can be directly applied to the characterization of genetic and environmental models of hearing loss.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique can be directly applied to the characterization of genetic and environmental models of hearing loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential applications of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "a639d94b-ccde-4028-b3a9-58367903793a",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C87",
+      "claim": "Rapid decalcification can be achieved by combining EDTA with formic or hydrochloric acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid decalcification can be achieved by combining EDTA with formic or hydrochloric acid (Treweek et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Treweek et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "14a2dcdb-1941-4f5d-8cc0-475d684dff50",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C88",
+      "claim": "A recent report examined multiple conditions of clearing hard tissues and recommended lowering pH of the EDTA-containing decalcification solution.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent report also examined multiple conditions of clearing hard tissues and recommended lowering pH of the EDTA-containing decalcification solution (Tainaka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tainaka et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "21fc0059-5e49-4e91-87a4-da632c65a6e6",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C89",
+      "claim": "Prolonged sample treatment with high concentrations of acid can reduce immunoreactivity and accelerate quenching of fluorescent proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, prolonged sample treatment with high concentrations of acid can reduce immunoreactivity and accelerate quenching of fluorescent proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the effects of acid treatment on biological samples.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "cc607625-2ceb-4932-9556-7810ad140c07",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C90",
+      "claim": "System-level analysis of the organ of Corti is important for extracting the operating principles of mechanosensory transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "System-level analysis of the organ of Corti is important for extracting the operating principles of mechanosensory transduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of comprehensive analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "6d5305b4-d97b-416a-9233-db473ba4410b",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C91",
+      "claim": "At present we have no widely approved format for the assessment of cellular pathology in the cochlea.",
+      "claim_type": "EXPLICIT",
+      "source": "While the functional consequences of gene mutation can be assessed using standardized protocols, such as ABR, at present we have no widely approved format for the assessment of cellular pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "22986aaa-295f-44ce-ba5d-e158d7e09ca8",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C92",
+      "claim": "The method developed in this study may be useful for standardization of cell-based analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The method we developed in this study may be useful for standardization of cell-based analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential applications of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "e7c53436-6b90-402c-914f-8b4b7990cf99",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C93",
+      "claim": "A recent study of in situ two-photon imaging of the organ of Corti revealed the detailed architecture of the mechanical framework in the sensory epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study of in situ two-photon imaging of the organ of Corti revealed the detailed architecture of the mechanical framework in the sensory epithelium (Soons et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Soons et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "ef164e90-19c8-4758-bc87-22529340f541",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C94",
+      "claim": "The method described here could be combined with information about mechanical characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "The method described here could be combined with information about mechanical characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "272c8053-39dd-4aa9-b1d1-ff37df5f6b52",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C95",
+      "claim": "Integrating position-specific mechanical property, fluid dynamics, and hair cell physiology would be useful for modeling of cochlear function.",
+      "claim_type": "EXPLICIT",
+      "source": "By integrating position-specific mechanical property, fluid dynamics, and hair cell physiology, such an approach would be useful for modeling of cochlear function (Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Liu et al., 2015 and represents a speculative statement about future applications.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "150174d9-eac9-42df-9968-1c221f1cf56b",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C96",
+      "claim": "Manual identification of more than 2500 hair cells per sample and subsequent analysis of cell loss is not possible for large sets of cleared samples from animals of different ages, genetic backgrounds, and experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual identification of more than 2500 hair cells per sample and subsequent analysis of cell loss is not possible for large sets of cleared samples from animals of different ages, genetic backgrounds, and experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical limitations of manual analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "6cf6f959-b234-4bf8-ba79-b26bd8f3debe",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C97",
+      "claim": "The analytical pipeline was designed to minimize manual processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the analytical pipeline described here was designed to minimize manual processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the design goals of the analytical pipeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "a449e1fc-2dcd-4ac1-a7cf-ac7642cdead5",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "claim_id": "C98",
+      "claim": "Objective comparison of position-dependent cell pathology among multiple mouse models of hearing loss will facilitate identification of critical molecular signatures associated with cochlear pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Objective comparison of position-dependent cell pathology among multiple mouse models of hearing loss will facilitate identification of critical molecular signatures associated with cochlear pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a0a4bfd9-c782-4040-be81-a25896150991",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a modified ScaleS optical clearing protocol optimized for imaging the cochlea within the temporal bone. This protocol uses guanidine-based clearing, sorbitol for F-actin stabilization, and refractive index matching at 1.47, enabling complete visualization of all MYO7A-positive hair cells throughout the organ of Corti within 4-6 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C23-C42 collectively demonstrate systematic optimization of tissue clearing methods. The authors tested multiple existing protocols (3DISCO, iDISCO, CLARITY, CUBIC, ScaleS), identified limitations, and developed modifications that successfully enabled whole-cochlea imaging. The experimental data in Figures 1D-J and supplementary figures provide strong evidence for the effectiveness of the modified protocol.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "034ec786-a765-4b4a-8c36-9363c9549121",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed a machine learning-based automated detection system that achieved 98.8\u00b10.6% recall and 99.7\u00b10.2% precision for hair cell identification, significantly outperforming standard 3D watershed methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C44-C46 are well-supported by quantitative performance metrics in Table 2 comparing automated detection to manual counting by multiple operators. The machine learning approach using ensemble methods and convolutional neural networks demonstrated superior performance to conventional image processing methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "ea3668d4-0bb6-4859-a4ed-2e7b4ef748af",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The complete analytical pipeline from tissue clearing to automated analysis can be completed within 5 days (4 days clearing/labeling, 4 hours imaging, 30 minutes analysis).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 provide specific timing for each step of the pipeline. These are supported by the experimental protocol descriptions and represent practical performance metrics of the integrated method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "1e1dbb89-a051-407f-b124-7cd589f3ecde",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Automated quantification of outer hair cell (OHC) loss in C57BL/6J mice showed 26.3\u00b16.3 lost OHCs at PND30, 34.6\u00b15.1 at PND60, 55.8\u00b14.5 at PND120, and 49.3\u00b117.3 at PND60 with noise exposure, consistent with previous manual counting studies in other species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C52-C56 present quantitative cell loss data across multiple age groups and conditions. The data are internally consistent and validated against prior literature (C56), providing confidence in the automated counting method's accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "47e7cf17-f4f5-47d9-885a-5601f4c06e6d",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Age-related cell loss exhibited distinct spatial patterns with higher density at both cochlear ends, particularly prominent at the apex (PND60: 0.0596\u00b10.0048 vs PND120: 0.116\u00b10.0150, p<0.01), and along the radial axis with higher loss distal to the modiolus. The radial gradient was present even at PND60, suggesting acceleration of early-life pathology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63 describe spatial characteristics of age-related cell loss supported by Figure 3B-D with statistical analysis. The detection of apical cell loss (C58-C60) represents a novel finding enabled by complete visualization of the helicotrema. The inference about acceleration of early pathology (C63) is reasonable given the presence of radial gradients at PND60.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "967aab05-88d2-4389-bbff-8bbb8d775226",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Noise-induced cell loss showed more complex and variable patterns than age-related loss, with higher variability at the basal end (p<0.001 for noise, p<0.05 for aging) and weaker impact in the apical portion, suggesting distinct underlying mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 characterize noise-induced cell loss patterns with statistical support (C65-C66) and principal component analysis (C68). The inference of distinct mechanisms (C69) is reasonable given the different spatial patterns observed, though the mechanistic basis remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "62f7b937-69cc-43aa-9e8a-a10faf9e5ef5",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lost hair cells exhibited non-random spatial clustering explained by two mechanistic models: a neighborhood effect (cell loss increases probability of adjacent cell loss) and a position effect (cell loss depends on longitudinal location). Young/adult mice showed higher neighborhood effect contribution, while aged mice showed increased position effect contribution, with noise-exposed mice showing variable patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C78 present a modeling framework supported by simulation analysis in Figure 4. The statistical demonstration of non-random clustering (C70) and the differential contributions of two effects across conditions (C75-C78) are well-supported by the modeling results. However, the models are phenomenological rather than mechanistic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "214b1f4b-3238-47fb-9f1a-9108520a5731",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Reduced F-actin content in hair cells adjacent to lost cells provides evidence supporting the neighborhood effect model of cell loss clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by experimental data in Figure 5A showing quantitative reduction in F-actin fluorescence in hair cells neighboring lost cells. This provides biological validation for the neighborhood effect model, though the causal relationship remains correlative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "997d0e8a-ddfc-4f22-8185-0061b46a4664",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The modified ScaleS protocol can be adapted for multiple immunohistochemistry, successfully detecting CtBP2, VGLUT3, NF200, and SOX2 in addition to MYO7A and F-actin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 are supported by experimental data in Figure 5B demonstrating successful detection of multiple cellular and subcellular markers. This extends the utility of the method beyond single-marker analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "79900d48-8b99-4496-a7b6-c8a3fde5823b",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The guanidine-based clearing solution avoided tissue expansion observed with high urea concentrations, and GFP fluorescence quenching by guanidine could be reversed by PBS incubation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 address technical aspects of the clearing protocol. C32 is supported by citation, C33 by experimental data in Figure 1\u2014figure supplement 1, C34 by citation, and C35 by experimental observation. These collectively justify the choice of guanidine over urea.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "12c68a7c-3ed7-465f-b942-96e21f800e6c",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Application of the method to young, adult, and noise-exposed mice revealed that multiple mechanisms underlie clustered cell loss, including both neighborhood and position effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 summarize the main biological findings. C4 is directly supported by the experimental data across multiple conditions. C5 is an inference from the modeling analysis showing contributions from both neighborhood and position effects, which is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "b40581cd-472e-4e3b-8966-695da037f6b7",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors establish the biological and technical context for their work, noting that while hair cell organization is essential for inner ear function and hearing loss is a major health problem, current histological techniques are inadequate for comprehensive cochlear analysis, and no integrated method with single-cell resolution existed for the inner ear prior to this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C18 provide background context supported by appropriate citations and represent accurate statements about the field. These establish the motivation and novelty of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "b9ee4eca-08a4-489e-b63d-1c3683a98822",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Two-photon excitation effectively decreased photobleaching after repetitive imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is based on established properties of two-photon microscopy and is a standard justification for using this imaging modality. While not directly demonstrated in this study, it is well-established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "17caa480-82e2-4f7f-ab1d-5e5f2658c85c",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "C57BL/6J mice are an established model for age-related hearing loss, exhibiting hair cell and neuronal loss starting from the base with ABR threshold increases beginning at 10 weeks, and IHC loss is rare even under pathological conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49, C51 are supported by appropriate citations and represent established knowledge about the C57BL/6J mouse model. These justify the choice of this model and the use of IHCs as a structural reference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    },
+    {
+      "id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a",
+      "content_id": "1dceb02b-6a57-4801-9e6a-b28e3a7d8409",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors discuss the broader implications and future applications of their method, noting current limitations in clearing hard tissues, the importance of system-level analysis, lack of standardized cellular pathology assessment, and potential integration with mechanical and functional data for cochlear modeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C98 are primarily discussion points about limitations, context, and future directions. While C83-C89 are supported by citations and C90-C97 represent reasonable assessments, C94-C95, C98 are speculative statements about future applications. These are appropriate for a discussion section but do not represent demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:11:20.107060Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fcaa77ae-9653-4c9f-aff4-aac3fe88a393",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "4d185536-8eb2-42d1-a85c-8afbaa0263fa",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "9cafe719-784d-4ea4-a7c8-22c1fc91b666",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "fd7a9b2d-3956-41ed-ad6d-79936af8abf6",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "61012dc4-4aed-400a-899f-5659af36ad53",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "29a5aaea-02f6-4142-abb2-87263f26261f",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "24bf35ef-5fe2-470b-8fee-010171f0e0ae",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "11523cf0-aea3-4ce6-a65e-7dab01ecbbbc",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "1dd0cab3-341c-4117-b9b9-63b37db4e84a",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "c81aca65-54e8-408d-959e-caffb47ab27a",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "05c52e72-8c77-4a44-8ba2-10773c298529",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "4cfdc85b-c4e3-4c58-aa49-1a6caf8b7345",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "1de8f75b-2d5b-4273-94b6-8080cdd16e0b",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "01abe425-8a53-40d5-8736-c14f754ad26a",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "38eb840d-68b8-448c-86ec-cedb198172f8",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "f6e7c1fe-12cc-420c-aa4a-eac0b5447aab",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "a5ff24dd-3ca3-4086-87ad-cc23899841ab",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "c92c1594-1140-4b93-bccf-5f1c2558d4da",
+      "result_id": "a0a4bfd9-c782-4040-be81-a25896150991"
+    },
+    {
+      "claim_id": "24b68a78-1da1-43f1-9eea-be2e171ab642",
+      "result_id": "034ec786-a765-4b4a-8c36-9363c9549121"
+    },
+    {
+      "claim_id": "1a560ddf-9f96-4463-ae32-65e80e3d6fc4",
+      "result_id": "034ec786-a765-4b4a-8c36-9363c9549121"
+    },
+    {
+      "claim_id": "bef86ee8-f495-442d-ad9e-7c03ba442495",
+      "result_id": "034ec786-a765-4b4a-8c36-9363c9549121"
+    },
+    {
+      "claim_id": "73fa27db-543a-4cde-9b96-3278a0cda40f",
+      "result_id": "034ec786-a765-4b4a-8c36-9363c9549121"
+    },
+    {
+      "claim_id": "c4c68aab-ba84-4065-92fb-273f5e25cbe9",
+      "result_id": "ea3668d4-0bb6-4859-a4ed-2e7b4ef748af"
+    },
+    {
+      "claim_id": "c70739d7-dd69-43ac-b999-7a890545343f",
+      "result_id": "ea3668d4-0bb6-4859-a4ed-2e7b4ef748af"
+    },
+    {
+      "claim_id": "ba615208-2aa0-426c-b9d6-59d8feb76d99",
+      "result_id": "ea3668d4-0bb6-4859-a4ed-2e7b4ef748af"
+    },
+    {
+      "claim_id": "bbe740cf-1e45-48e7-9a16-0d0b7a7e7cf7",
+      "result_id": "ea3668d4-0bb6-4859-a4ed-2e7b4ef748af"
+    },
+    {
+      "claim_id": "fe495451-daaa-46e1-a842-d8e736d95405",
+      "result_id": "1e1dbb89-a051-407f-b124-7cd589f3ecde"
+    },
+    {
+      "claim_id": "81cdfb76-9938-44f9-bfdd-1465f5ba45fa",
+      "result_id": "1e1dbb89-a051-407f-b124-7cd589f3ecde"
+    },
+    {
+      "claim_id": "bd7cbb13-2c98-44ac-bfb7-53e13d69c04b",
+      "result_id": "1e1dbb89-a051-407f-b124-7cd589f3ecde"
+    },
+    {
+      "claim_id": "bc26b559-57d4-4df2-b636-5f37d32c2304",
+      "result_id": "1e1dbb89-a051-407f-b124-7cd589f3ecde"
+    },
+    {
+      "claim_id": "eb6417cb-3059-4581-a59c-8181e4960b22",
+      "result_id": "1e1dbb89-a051-407f-b124-7cd589f3ecde"
+    },
+    {
+      "claim_id": "189773a6-c38d-470f-913a-fd0fd5dfb8de",
+      "result_id": "1e1dbb89-a051-407f-b124-7cd589f3ecde"
+    },
+    {
+      "claim_id": "8a8dc32f-9355-4c24-a0a6-4c223132a9b5",
+      "result_id": "47e7cf17-f4f5-47d9-885a-5601f4c06e6d"
+    },
+    {
+      "claim_id": "7ec00ea6-557e-4077-817a-3070e863751a",
+      "result_id": "47e7cf17-f4f5-47d9-885a-5601f4c06e6d"
+    },
+    {
+      "claim_id": "4f7311ac-8dc6-4ab2-8297-d1a3da1d5e0f",
+      "result_id": "47e7cf17-f4f5-47d9-885a-5601f4c06e6d"
+    },
+    {
+      "claim_id": "1aa2c57f-ac27-4e69-8cbd-6e5c689bced6",
+      "result_id": "47e7cf17-f4f5-47d9-885a-5601f4c06e6d"
+    },
+    {
+      "claim_id": "9558c799-96d5-493c-8fc8-a8ecaffdd9d0",
+      "result_id": "47e7cf17-f4f5-47d9-885a-5601f4c06e6d"
+    },
+    {
+      "claim_id": "3b232842-3700-4087-b535-7d95b3b8b5a0",
+      "result_id": "47e7cf17-f4f5-47d9-885a-5601f4c06e6d"
+    },
+    {
+      "claim_id": "5a571ac9-4c2c-4bdd-a4b0-17ef1ab0cd25",
+      "result_id": "47e7cf17-f4f5-47d9-885a-5601f4c06e6d"
+    },
+    {
+      "claim_id": "03847ed6-385a-42a4-aee2-54df6e982c19",
+      "result_id": "967aab05-88d2-4389-bbff-8bbb8d775226"
+    },
+    {
+      "claim_id": "b0366945-a122-49f7-af29-8cd86cc83848",
+      "result_id": "967aab05-88d2-4389-bbff-8bbb8d775226"
+    },
+    {
+      "claim_id": "db89ab84-28ed-434f-9a6f-0885a58cc96a",
+      "result_id": "967aab05-88d2-4389-bbff-8bbb8d775226"
+    },
+    {
+      "claim_id": "59a08e78-d362-46ef-a572-6332179d97f4",
+      "result_id": "967aab05-88d2-4389-bbff-8bbb8d775226"
+    },
+    {
+      "claim_id": "cbff0169-79c1-44c2-9f7c-cd5fb026f56f",
+      "result_id": "967aab05-88d2-4389-bbff-8bbb8d775226"
+    },
+    {
+      "claim_id": "025cf96d-10ef-4433-9458-84cdefccfde2",
+      "result_id": "967aab05-88d2-4389-bbff-8bbb8d775226"
+    },
+    {
+      "claim_id": "7bf4948b-8d24-44cc-897f-1e51a98fba47",
+      "result_id": "62f7b937-69cc-43aa-9e8a-a10faf9e5ef5"
+    },
+    {
+      "claim_id": "f876c2a0-f7d9-44d1-9ecf-b614d929e218",
+      "result_id": "62f7b937-69cc-43aa-9e8a-a10faf9e5ef5"
+    },
+    {
+      "claim_id": "48fe8163-3fb4-4a74-bf94-710638de07ba",
+      "result_id": "62f7b937-69cc-43aa-9e8a-a10faf9e5ef5"
+    },
+    {
+      "claim_id": "78ed848a-c0b9-49fc-a322-c88abdf38efd",
+      "result_id": "62f7b937-69cc-43aa-9e8a-a10faf9e5ef5"
+    },
+    {
+      "claim_id": "ccbb6fa1-cc3b-44a0-8d6a-4b52d0194141",
+      "result_id": "62f7b937-69cc-43aa-9e8a-a10faf9e5ef5"
+    },
+    {
+      "claim_id": "7fd64358-63c5-44ec-8191-c7b3f2d225fb",
+      "result_id": "62f7b937-69cc-43aa-9e8a-a10faf9e5ef5"
+    },
+    {
+      "claim_id": "09c0c6eb-ece9-4fe8-b334-b83968f8ffd7",
+      "result_id": "62f7b937-69cc-43aa-9e8a-a10faf9e5ef5"
+    },
+    {
+      "claim_id": "01875d50-9078-4778-99e9-2d794f1cb090",
+      "result_id": "62f7b937-69cc-43aa-9e8a-a10faf9e5ef5"
+    },
+    {
+      "claim_id": "f504fcd6-3f47-4323-8e30-abfd2fb06fe1",
+      "result_id": "62f7b937-69cc-43aa-9e8a-a10faf9e5ef5"
+    },
+    {
+      "claim_id": "9ed47d98-0768-4afc-a6ec-1a29dcf886a1",
+      "result_id": "214b1f4b-3238-47fb-9f1a-9108520a5731"
+    },
+    {
+      "claim_id": "ed119c59-b1a4-45f8-9faf-fc68273846b4",
+      "result_id": "997d0e8a-ddfc-4f22-8185-0061b46a4664"
+    },
+    {
+      "claim_id": "83ed6cad-96b4-41b7-bdc5-99a5d438a002",
+      "result_id": "997d0e8a-ddfc-4f22-8185-0061b46a4664"
+    },
+    {
+      "claim_id": "6aae0c8b-4733-4a43-a87c-c259b9e310f5",
+      "result_id": "997d0e8a-ddfc-4f22-8185-0061b46a4664"
+    },
+    {
+      "claim_id": "8d76ce5e-b73a-4a43-999f-a5b41f862809",
+      "result_id": "79900d48-8b99-4496-a7b6-c8a3fde5823b"
+    },
+    {
+      "claim_id": "05c52e72-8c77-4a44-8ba2-10773c298529",
+      "result_id": "79900d48-8b99-4496-a7b6-c8a3fde5823b"
+    },
+    {
+      "claim_id": "760adbed-c1a4-4325-bfc7-13bdcc38a547",
+      "result_id": "79900d48-8b99-4496-a7b6-c8a3fde5823b"
+    },
+    {
+      "claim_id": "3fcaaa85-8b74-4f20-9327-0c51c6469c20",
+      "result_id": "79900d48-8b99-4496-a7b6-c8a3fde5823b"
+    },
+    {
+      "claim_id": "58d10185-a5a6-432f-accc-8e8a6b2347c8",
+      "result_id": "12c68a7c-3ed7-465f-b942-96e21f800e6c"
+    },
+    {
+      "claim_id": "14b3a336-f10e-4bc5-bd70-624c1a97b072",
+      "result_id": "12c68a7c-3ed7-465f-b942-96e21f800e6c"
+    },
+    {
+      "claim_id": "8a75e071-b3b9-44bd-93f0-ae9c19aa5b9b",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "4cb91607-5f90-4eae-960b-2627773c0605",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "af4878ef-88c5-4a8c-912a-9ec605f23441",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "ed574087-1a82-48ff-bcce-889552b0822f",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "805c8d6c-4446-4304-b2d9-fb270f38a39b",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "93bbe014-8650-4bea-a5f4-2a664281ab6b",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "d3a040cb-c176-48f0-bb34-229a04fe74af",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "fc9c9897-fbba-4c21-b92e-67ce69e47968",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "d37323c9-216f-4527-802d-56565680b0a2",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "399d820c-a755-47cf-8bf9-d17eae22ac33",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "4d8bbc77-7571-41b5-bb29-ac6d733f9d52",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "d9946897-a2b5-4b07-aa13-a26674c75e32",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "410e7c0c-4227-449d-8d31-ae5d4146ac58",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "9ed83371-63f7-41e1-abf5-977feeffc00d",
+      "result_id": "b40581cd-472e-4e3b-8966-695da037f6b7"
+    },
+    {
+      "claim_id": "3eca1edb-78bd-4694-8a3a-44337be5a1ab",
+      "result_id": "b9ee4eca-08a4-489e-b63d-1c3683a98822"
+    },
+    {
+      "claim_id": "ee2a29ce-7096-43cc-95f3-d780ee53e183",
+      "result_id": "17caa480-82e2-4f7f-ab1d-5e5f2658c85c"
+    },
+    {
+      "claim_id": "f67a3d56-de1e-40a0-89cb-f4694c3eed41",
+      "result_id": "17caa480-82e2-4f7f-ab1d-5e5f2658c85c"
+    },
+    {
+      "claim_id": "5cbca0ae-918e-4999-8c7b-25ca4d3caef1",
+      "result_id": "17caa480-82e2-4f7f-ab1d-5e5f2658c85c"
+    },
+    {
+      "claim_id": "c723536b-e93a-4a65-a5ad-ab935374e561",
+      "result_id": "17caa480-82e2-4f7f-ab1d-5e5f2658c85c"
+    },
+    {
+      "claim_id": "5d78cf36-91a8-4c6b-b3b9-6dc22e538af2",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "3a43fa79-6d0e-4444-9b55-bc26ae12718a",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "b8aaecab-c34b-40df-843e-9ecbce5cb918",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "d50966aa-7899-4955-987c-bcad2ce1840f",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "a639d94b-ccde-4028-b3a9-58367903793a",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "14a2dcdb-1941-4f5d-8cc0-475d684dff50",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "21fc0059-5e49-4e91-87a4-da632c65a6e6",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "cc607625-2ceb-4932-9556-7810ad140c07",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "6d5305b4-d97b-416a-9233-db473ba4410b",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "22986aaa-295f-44ce-ba5d-e158d7e09ca8",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "e7c53436-6b90-402c-914f-8b4b7990cf99",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "ef164e90-19c8-4758-bc87-22529340f541",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "272c8053-39dd-4aa9-b1d1-ff37df5f6b52",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "150174d9-eac9-42df-9968-1c221f1cf56b",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "6cf6f959-b234-4bf8-ba79-b26bd8f3debe",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    },
+    {
+      "claim_id": "a449e1fc-2dcd-4ac1-a7cf-ac7642cdead5",
+      "result_id": "f3458650-6e5b-4165-b1b3-9c9b453dc29a"
+    }
+  ],
+  "comparisons": []
+}

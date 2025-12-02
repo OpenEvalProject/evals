@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript provides background context on HCV epidemiology, genetic diversity, and evolutionary forces. Claims establish that 71 million people are chronically infected worldwide, 15-30% develop serious complications without treatment, seven major genotypes exist with multiple subtypes, quasispecies co-exist within individuals, and evolution is shaped by immune pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C5) are well-supported by appropriate citations to established literature (WHO 2017, Shepard et al. 2005, Simmonds 2004, Farci et al. 2000, Merani et al. 2011). They provide standard background knowledge that contextualizes the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes the biological and genetic basis for studying IFNL4 variation. Prior work by Ansari et al. (2017) identified associations between viral and human polymorphisms in IFN-\u03bb and HLA regions. The rs12979860 SNP is a marker for rs368234815, which affects IFN-\u03bb4 protein production, with the C allele (tagging absence of IFN-\u03bb4) associated with better HCV clearance and treatment response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 accurately summarize prior work with appropriate citations (Ansari et al. 2017, Ge et al. 2009, Prokunina-Olsson et al. 2013). The linkage disequilibrium values (r\u00b2=0.98 in CEU, 1.00 in CHB/JPT) and functional interpretation are consistent with established knowledge. This provides essential context for the current study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study analyzed 8,729 HCV-infected patients from clinical trials with heterogeneous ancestry (85% European, 13% Asian, 2% African) and viral genotypes (predominantly 1a, 2a, 3a). Deep sequencing of NS3, NS4A, NS5A, and NS5B was performed with >5000 reads coverage. Binary amino acid variables were generated (N=10,681), filtered to \u22650.3% frequency (N=4,022). Logistic regression with multiple covariates and Bonferroni correction (threshold 4.7\u00d710\u207b\u2076) was used, restricted to genotypes with \u2265100 participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C77 describe the study design, sample characteristics, sequencing methodology, and statistical approach. The methods are clearly described with appropriate detail including sample sizes, coverage thresholds, filtering criteria, covariate adjustments (sex, country, ethnicity, cirrhosis, treatment experience, phylogenetic PCs), and multiple testing correction. The Box-Cox transformation for viral load normalization is appropriate. Ethical approvals are documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Highly significant associations were observed between rs12979860 and HCV amino acid variants across all examined genotypes. The highest number of associations was in genotype 1a (likely due to largest sample size). Most associations were genotype-specific, but some were cross-genotype, including position 2576 in NS5B where the T allele associated with proline (p=1.5\u00d710\u207b\u00b9\u2070 to 1.2\u00d710\u207b\u2077 across genotypes 1a, 2b, 3a, 4a) and C allele with alanine (p=1.2\u00d710\u207b\u00b9\u00b9 to 3.8\u00d710\u207b\u2076 across genotypes 1a, 2a, 2b, 3a).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are supported by Figure 1 and Table 2, which show Manhattan plots and detailed association statistics. The p-values are highly significant and exceed the Bonferroni threshold. The interpretation that sample size affects power (C18) is reasonable. The cross-genotype associations at position 2576 provide strong evidence for consistent host-pathogen interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "In genotype 3a, the study replicated three previously reported associations (valine at NS5B-2570, histidine at NS5B-2991, asparagine at NS5A-2414) and identified novel associations at the same positions (alanine and threonine at NS5B-2570; glycine and serine at NS5A-2414). All novel associations were specific to genotype 3a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 demonstrate both replication (strengthening prior findings from Ansari et al. 2017) and novel discovery. The p-values are highly significant (ranging from 2.4\u00d710\u207b\u2077 to 8.8\u00d710\u207b\u00b9\u2075). The genotype-specificity of novel associations (C27) is clearly stated and important for understanding viral adaptation patterns. This represents successful validation and extension of prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Significant associations were observed with histidine at NS5A-2065 in genotypes 1a and 1b (concordant with Peiffer et al. 2016). Multiple associations were found in the ISDR region (NS5A positions 2209-2248) for genotype 1b, with the strongest at leucine-2224 (p=1.5\u00d710\u207b\u00b9\u00b2). For genotype 1a, a single ISDR association was found at leucine-2211 (p=2.8\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 identify associations in functionally important regions. The ISDR is known to affect interferon sensitivity, making these findings biologically relevant. The p-values exceed the significance threshold. The difference in number of ISDR associations between genotypes 1a and 1b may reflect biological differences or statistical power, but the findings are clearly supported by the data in Table 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The association between IFNL4 genotype and HCV amino acid variants is independent of viral replication rates, as demonstrated by comparing regression models with and without viral load as a covariate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by Figure 1\u2014figure supplement 1, which shows no significant difference between models with and without viral load adjustment. This control analysis strengthens the interpretation that the observed associations reflect direct immune selection rather than indirect effects through viral replication. The analytical approach is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Pre-treatment viral load was significantly associated with rs12979860 across all HCV genotypes (p<0.05), with the T allele consistently associated with lower viral load. While p-value strength varied by sample size, effect sizes were comparable across genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by Figure 1\u2014figure supplement 2. The consistent direction of effect (T allele \u2192 lower viral load) across genotypes is notable. The interpretation that p-value variation reflects sample size while effect sizes remain comparable (C35) is statistically sound and demonstrates biological consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Significant associations between viral load and HCV amino acid variants were identified in all genotypes except 4a. Among amino acids associated with viral load, a subset also associated with rs12979860: 9/18 in genotype 1a, 5/17 in genotype 1b, 0/2 in genotype 2a, 0/6 in genotype 2b, and 2/3 in genotype 3a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by Figure 2 and the text. The overlap between amino acids associated with both rs12979860 and viral load suggests these variants may mediate the host genetic effect on viral replication. The absence of associations in genotype 4a likely reflects limited sample size (N=193). The varying proportions across genotypes may reflect biological differences or statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "For leucine at position 2224 in genotype 1b, higher mean viral load was observed in both CC and non-CC genotypes of rs12979860 (p=6.2\u00d710\u207b\u2076 for CC; p=4.1\u00d710\u207b\u00b2 for CT), suggesting the leucine residue may impact viral replication independently of host genotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by Figure 3B showing stratified viral load distributions. The statistical significance in both genotype strata (C41) supports the inference that leucine-2224 affects replication (C42). However, the inference is cautiously stated as 'possible impact,' which is appropriate given this is observational association data rather than functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The study replicated the association between viral load and serine-to-asparagine change at NS5A-2414 in genotype 3a (p=4.5\u00d710\u207b\u2077), with lower mean viral load observed in non-CC genotype patients with serine at this position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 successfully replicate findings from Ansari et al. 2017, supported by Figure 3\u2014figure supplement 1. The replication strengthens confidence in this association. The stratified analysis showing genotype-specific effects (C44) adds nuance to the understanding of this variant's impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Residual viral load analysis (after regressing out rs12979860 effect) identified amino acids associated with viral load variation not explained by host genotype: 7 amino acids in genotype 1a and 6 in genotype 1b associated with rs12979860, viral load, and viral load residuals, including leucine-2224 in genotype 1b (p_residual=4.9\u00d710\u207b\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 describe a sophisticated residual analysis supported by Figure 3\u2014figure supplement 2 and supplementary files. This approach identifies viral variants with effects on viral load beyond what is explained by host genetics alone. The triple association (with rs12979860, viral load, and residuals) for specific amino acids suggests complex host-pathogen interactions. The analytical approach is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Within Europeans, the strongest association was isoleucine at NS5A-2252 in genotype 1a (p=1.2\u00d710\u207b\u00b2\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by Figure 3\u2014figure supplement 3 and supplementary file 4. The extremely low p-value reflects both large effect size and substantial sample size in this subgroup. This ancestry-specific analysis helps control for population stratification and identifies robust associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C56",
+      "C60",
+      "C61",
+      "C62",
+      "C78",
+      "C79"
+    ],
+    "result": "The study demonstrates that IFN-\u03bb4 presence/absence has pervasive impact on HCV, with IFN-\u03bb-driven viral adaptation occurring across genotypes. IFNL4 is confirmed as a functional gene playing a pivotal role in HCV pathogenesis. The large footprint on the viral proteome indicates the importance of innate immunity in viral control and HCV's capacity to evolve escape strategies, providing evidence of pervasive viral adaptation to innate immune pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C56, C60-C62, C78-C79 represent the major conclusions synthesizing the extensive association data. The 'pervasive impact' is supported by multiple significant associations across all tested proteins (NS3, NS4A, NS5A, NS5B), multiple genotypes, and ancestry groups. The cross-genotype consistency (C56) and the sheer number of associations justify the 'large footprint' characterization. These are appropriate inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "NS5A protein is required for HCV RNA replication and virus assembly, associates with interferon signaling and hepatocarcinogenesis, and previous studies have shown associations between ISDR variants and viral load/treatment response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 provide biological context for the NS5A findings, supported by appropriate citations (Nakamoto et al. 2014, Enomoto et al. 1995, Frangeul et al. 1998). This background information justifies the focus on NS5A and helps interpret the functional significance of associations in this protein.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The strongest associations in and around the ISDR region suggest a possible role of these variants in determining response to IFN-based antiviral treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 is speculative, appropriately hedged with 'suggesting a possible role.' While the associations in the ISDR are strong and this region is known to affect IFN sensitivity, the current study did not directly test treatment response. This is a reasonable hypothesis for future work but cannot be considered supported by the current data alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Ansari et al. demonstrated using a genotype 3 replicon assay that the serine-to-asparagine change at position 2414 increases RNA replication, concordant with the current study's findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 accurately cites functional validation from prior work (Ansari et al.) that supports the biological interpretation of associations found in the current study. The concordance between functional data and association data strengthens confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Only a fraction of host-driven HCV amino acid variants associated with viral load, indicating that integrated host-pathogen genome analysis can reveal correlations missed by studies using downstream phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 make an important methodological point supported by the data showing that many rs12979860-associated amino acids do not associate with viral load. This demonstrates the value of direct genome-to-genome analysis. The inference (C58) is logical: direct genetic associations can detect selection pressures not manifested in intermediate phenotypes like viral load.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59",
+      "C84",
+      "C85"
+    ],
+    "result": "IFN-\u03bb polymorphism is the strongest human genetic predictor of spontaneous HCV clearance and response to IFN-based therapy, with genetic polymorphism in the IFN-\u03bb region associated with both outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C84-C85 state established knowledge from prior literature, providing essential context for why IFNL4 variation was chosen as the focus of this study. These are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "A limitation of the study is the inability to distinguish between IFN-\u03bb4 P70 and S70 isoforms (which have distinctive influences on HCV pathogenesis) because rs12979860 was genotyped rather than directly assessing the functional variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 appropriately acknowledge a study limitation. While rs12979860 is a good marker for IFN-\u03bb4 presence/absence, it cannot distinguish between the P70 and S70 isoforms that may have different functional effects (Ansari 2018). This is a valid limitation that could affect interpretation of some associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study evaluated 8,729 patients (77% European, 13% Asian, 8% African) infected with genotypes predominantly 1a (41%), 1b (22%), and 3a (21%), searching for associations between rs12979860 and variants in NS3, NS4A, NS5A, and NS5B proteins. Multiple associations were reported in all tested proteins including the ISDR of NS5A, with amino acids associated with both IFN-\u03bb polymorphism and HCV load across genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 summarize the study design and main findings. These are accurate summaries supported by the data presented throughout the manuscript. Note that C82 reports slightly different percentages (77% vs 85% European) than C12, which may reflect different subsets or rounding, but both are consistent with the overall study population.",
+    "result_type": "MINOR"
+  }
+]

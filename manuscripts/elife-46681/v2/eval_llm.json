@@ -1,0 +1,383 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Norovirus VPg proteins interact with the eIF4F translation initiation complex and multiple host translation factors. VPg contains a conserved C-terminal domain that binds eIF4G via a conserved phenylalanine residue, and this interaction is required for association with other translation factors including ribosomal proteins, eIF3 subunits, and RNA binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 provide converging evidence from multiple experimental approaches (m7-GTP affinity purification, GFP-Trap immunoprecipitation, quantitative mass spectrometry, and western blotting) demonstrating VPg interactions with translation machinery. The data show both wild-type and mutant VPg proteins in authentic replication contexts and overexpression systems, with consistent results across MNV and human NV. The requirement for the eIF4G binding domain is demonstrated by reduced associations in F123A/F137A mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The MNV replication complex proteome was characterized using FLAG-tagged NS1/2 and NS4 proteins during authentic viral infection. The replication complex contains all viral proteins and is enriched for host factors involved in vesicle transport, fatty acid metabolism, and membrane organization, consistent with the membrane-associated nature of norovirus replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 describe a comprehensive proteomic analysis using SILAC labeling and FLAG-tagged viruses with appropriate controls. The silver stain, western blot, and mass spectrometry data (Figure 2) demonstrate specific enrichment of viral and host proteins. The high correlation between NS1/2 and NS4 pulldowns (Spearman 0.8832) and gene ontology analysis support the conclusions. Previous findings (VapA/VapB, NS1/2-NS4 interaction) validate the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "NS1/2 and NS4 differentially enrich VPg and translation factors during infection. NS1/2 enriches mature VPg and eIF4G, while NS4 only enriches the NS4/5(VPg) precursor without eIF4G, suggesting the uncleaved precursor cannot function in translation initiation. G3BP1 was uniquely enriched by both NS1/2 and NS4 as well as VPg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 are supported by western blot and mass spectrometry data comparing NS1/2 and NS4 pulldowns (Figure 2C, Figure 2\u2014figure supplement 2). The differential enrichment of mature VPg vs. NS4/5(VPg) precursor is clearly shown, and the lack of eIF4G enrichment by NS4 is consistent with previous work (C24) showing C-terminal fusions inhibit eIF4G binding. The unique enrichment of G3BP1 by all three baits is a key observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "A genome-wide CRISPR screen using two MNV strains (CW3 and CR6) identified host factors required for norovirus infection. The MNV receptor Cd300lf and G3BP1 were the top two hits, with 89 common pro-viral genes between strains. Gene ontology analysis highlighted mRNA processing, RNA splicing, and methylation as enriched pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 describe a well-controlled CRISPR screen with biological validation through use of two viral strains and comparison with previous screens. The identification of known factors (Cd300lf, VapA) validates the approach. The 24-hour infection time is appropriately justified to capture non-essential factors. However, the limited overlap with previous screens (only 4 common genes across all screens, C31) raises questions about reproducibility, though this is attributed to different experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "G3BP1 was identified as a common hit across all three independent screening approaches (VPg proteomics, replication complex proteomics, and CRISPR screens), establishing it as a high-confidence host factor for norovirus infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is strongly supported by the convergence of three orthogonal approaches, each with independent validation. The identification of G3BP1 in all screens provides high confidence in its importance, though the claim itself is descriptive rather than mechanistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "G3BP1 is essential for MNV replication in BV2 cells. Three independent \u0394G3BP1 clones showed severe defects in viral replication and cytopathic effect, while EMCV replication was unaffected, demonstrating specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by growth curves, cytopathic effect assays, and appropriate controls (Figure 4). The use of three independent knockout clones strengthens the conclusion, and the EMCV control demonstrates the defect is virus-specific rather than a general translation or cell viability issue. The conclusion (C38) appropriately summarizes the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "G3BP1 is essential for human Norwalk virus (NV) replication. NV replicon RNA requires VPg for colony formation, and G3BP1 knockout in U2OS and BV2 cells completely abolished NV replication, which was restored by complementation with wild-type G3BP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 demonstrate G3BP1 requirement for human norovirus using multiple cell types and complementation. The proteinase K control (C39-C40) validates VPg-dependence, and the complete loss of colony formation and RNA synthesis in \u0394G3BP1 cells (C41-C42) with restoration upon complementation (C43) provides strong evidence. The use of independently generated U2OS knockout cells (Kedersha et al., 2016) adds confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The RNA-binding domains (RGG and RRM) of G3BP1 are essential for its function in the norovirus life cycle. Complementation with full-length G3BP1 restored MNV replication, while deletion of the RGG domain resulted in limited complementation, and deletion of both RGG and RRM domains completely abolished complementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by complementation experiments with defined G3BP1 truncations (Figure 6). The graded loss of function with progressive domain deletions (full-length > \u0394RGG > \u0394RGG/\u0394RRM) provides strong evidence for the importance of RNA-binding domains. The conclusion (C48) is appropriately drawn from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "G3BP1 is required for a post-entry stage of the norovirus life cycle. Transfection of VPg-linked RNA into \u0394G3BP1 cells resulted in no detectable viral proteins or infectious virus, comparable to polymerase inhibitor treatment, indicating a defect at a very early stage after entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 use RNA transfection to bypass entry and demonstrate G3BP1 functions post-entry. The comparison with 2CMC (polymerase inhibitor) provides appropriate context for the magnitude of the defect. The lack of detectable viral proteins (C50) and restoration by complementation (C51) support the conclusions. However, the inference about 'very early stage' (C50) is somewhat vague.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "G3BP1 is required at or prior to viral negative-sense RNA synthesis. Both positive and negative-sense viral RNA synthesis were reduced to background levels in \u0394G3BP1 cells during infection and after RNA transfection, and complementation with wild-type but not RNA-binding domain mutants restored RNA synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 use strand-specific RT-qPCR to demonstrate defects at the level of negative-strand synthesis. The detection of first-round negative-strand synthesis in WT cells treated with 2CMC (C56) validates assay sensitivity. The consistency between infection and transfection experiments, and the requirement for RNA-binding domains (C58), support the conclusions. The inference (C59) is appropriately cautious about whether G3BP1 functions 'prior to, or at the level of' negative-strand synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "G3BP1 facilitates the association of VPg and viral RNA with ribosomal subunits. In the absence of G3BP1, VPg cannot efficiently pull down ribosomal proteins (RpS6, RpS3, RpL4), and viral RNA association with ribosomal protein RpS3 is decreased. This interaction requires both G3BP1 and the VPg-eIF4G interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 use GFP-Trap and RNA-IP experiments to demonstrate G3BP1's role in ribosome recruitment. The loss of ribosomal protein pulldown in \u0394G3BP1 cells (C63) and with eIF4G-binding mutants (C64), and restoration upon G3BP1 complementation (C65), provide strong evidence. The RNA-IP data (C66) extends this to VPg-linked RNA. However, the authors acknowledge the relatively weak ribosome association in the GFP-Trap system and provide a reasonable explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "G3BP1 promotes polysome loading of norovirus VPg-linked RNA. In the absence of G3BP1, viral RNA is less efficiently recruited to polysomes during infection, even when viral RNA synthesis is inhibited, suggesting a defect in translation initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 use polysome profiling to demonstrate reduced polysome association of viral RNA in \u0394G3BP1 cells (Figure 10). The use of 2CMC to inhibit RNA synthesis allows assessment of 'maiden round' translation. The observation of 80S accumulation in WT but not \u0394G3BP1 cells (C68) is consistent with translation occurring in WT cells. The extended fractionation (C71) strengthens the conclusion. The inference (C72) appropriately summarizes the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "G3BP1 specifically enhances norovirus VPg-dependent translation in vitro. Cell-free translation extracts from \u0394G3BP1 cells showed normal cap-dependent and IRES-dependent translation but reduced VPg-dependent translation by ~40-50%, in both nuclease-treated and untreated extracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 use in vitro translation assays with appropriate controls (cap-dependent and CrPV IRES-dependent translation) to demonstrate specificity for VPg-dependent translation (Figure 11). The ~40-50% reduction is consistent across multiple experiments and conditions (nuclease-treated and untreated extracts). The quantification (C75) and consistency (C76) strengthen the conclusion. However, the partial rather than complete loss of translation differs from the in vivo phenotype, which may reflect differences between in vitro and in vivo systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C88",
+      "C130",
+      "C131"
+    ],
+    "result": "G3BP1 plays a key role in norovirus VPg-dependent translation and is the first identified pan-norovirus host factor critical for both murine and human norovirus replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C79, C88, C130, and C131 are summary conclusions supported by the collective evidence from all experimental approaches. The demonstration of G3BP1 requirement for both MNV and human NV (C79, C131) across multiple assays establishes it as a pan-norovirus factor. The mechanistic link to VPg-dependent translation (C78, C88) is supported by multiple lines of evidence. These are appropriate summary statements of the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "G3BP1 is a multifunctional protein involved in stress granule formation, RNA stability, translation regulation, and viral infection responses. Different viruses interact with G3BP1 and stress granules in distinct ways, either to promote replication or counteract antiviral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 provide background context from the literature about G3BP1 function and virus-stress granule interactions. These are appropriately cited claims (C80-C87 all include citations) that establish the broader context for the study. While not original findings, they are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The RGG and RRM domains of G3BP1 are known to mediate 40S ribosome binding and stress granule formation, and these domains are required for G3BP1 function in norovirus VPg-dependent translation, confirming that 40S association is important for this role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C91-C94 integrate established knowledge (C91-C92, citing Kedersha et al., 2016) with the current findings (C93) to draw a mechanistic conclusion (C94). The logic is sound: if RGG/RRM domains are required for 40S binding (established) and for norovirus function (demonstrated in C93), then 40S binding is important for norovirus function. However, C94 is an inference that assumes the only relevant function of these domains is 40S binding, which may be an oversimplification (acknowledged in C95-C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The interaction between VPg and G3BP1 is likely indirect and mediated through eIF4G, rather than through a direct binding motif. Unlike alphaviruses that use an FGDF motif to bind G3BP1, noroviruses lack a conserved G3BP1-binding motif, and the VPg-G3BP1 interaction is reduced by mutations in the eIF4G-binding domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 use sequence analysis (C99-C100) and functional data (C7, C11, referenced in C101) to argue for an indirect interaction. The lack of a conserved FGDF-like motif in human NV VPg (C100) and the dependence on eIF4G binding (C101) support this conclusion. However, the evidence is somewhat indirect\u2014the authors do not directly test whether the interaction is mediated by eIF4G (e.g., by testing VPg-G3BP1 interaction in the absence of eIF4G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "G3BP1 may make multiple contacts with the 40S subunit and viral RNA genome, potentially contributing to additional functions beyond translation initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105 are speculative (both marked as SPECULATION in evidence_type) and acknowledge this with language like 'it is possible' and 'may.' While the speculation is reasonable given that G3BP1 is enriched at sites of viral RNA synthesis (citing Brocard et al., 2018; Fritzlar et al., 2019), there is no direct experimental evidence in this study to support these additional functions. These are appropriate discussion points but not supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "BV2 murine microglial cells support human norovirus GI replicon replication, and this replication requires G3BP1. Complementation with wild-type G3BP1 partially restored replicon colony formation, confirming the machinery for HuNoV replication is conserved across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 extend the G3BP1 requirement to a different cell type and confirm species conservation (Figure 5D). The partial restoration (C108) is consistent with the lower efficiency of HuNoV replication in BV2 cells compared to BHK or U2OS cells (C106). The conclusion about conservation (C107) is appropriately drawn from the ability of mouse cells to support human virus replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Norovirus infection leads to preferential viral translation through multiple mechanisms including NS6 protease-mediated cleavage of PABP, apoptosis-induced cleavage of translation factors, and potentially NS3-mediated effects. The relative contribution of these mechanisms may vary by cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116 summarize previous work (C109-C114 all cite prior studies) and provide context for the current findings. The claims accurately represent the cited literature. C115-C116 are reasonable hypotheses based on the literature, though they are somewhat speculative (C115-C116 include SPECULATION in evidence_type). These provide important context but are not original findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The differential enrichment of translation factors by NS1/2 versus NS4 may reflect distinct viral translation and replication complexes, or may result from NS1/2 being the first translated protein and serving as an anchor for translation complexes. The interaction may occur through an NS1/2-NS7-VPg complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C122 present alternative hypotheses to explain the differential enrichment observed in C20-C25. While the hypotheses are reasonable and based on established knowledge (C119-C121 cite previous work), they are largely speculative (C117, C118, C122 include SPECULATION in evidence_type). The authors appropriately acknowledge they 'cannot formally rule out other possible explanations' (C118). These are valuable discussion points but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The norovirus replication complex is enriched for proteins involved in vesicle transport and lipid metabolism, consistent with its membrane-associated nature. NS1/2 and NS4 likely work together to regulate membrane-bound replication complex formation through interactions with multiple host factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C129 integrate the proteomic data (C18, C128) with established knowledge about NS4 function (C126, citing Doerflinger et al., 2017) and NS1/2-NS4 interactions (C129, citing Emmott et al., 2019). The gene ontology analysis (C18, C123) supports the enrichment of relevant pathways. However, C127 and C129 include speculative elements (SPECULATION in evidence_type) about regulatory mechanisms that are not directly tested. The overall conclusion is supported by the data, but the mechanistic details remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "Targeting G3BP1 may hold future therapeutic potential for norovirus infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C132 is speculative (SPECULATION in evidence_type) and represents a potential application rather than a demonstrated result. While the essential role of G3BP1 in norovirus replication provides a rationale for this suggestion, there is no experimental evidence in this study regarding therapeutic targeting, potential toxicity, or feasibility. This is an appropriate discussion point but not a supported result.",
+    "result_type": "MINOR"
+  }
+]

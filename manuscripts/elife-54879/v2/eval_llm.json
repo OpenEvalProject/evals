@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C81"
+    ],
+    "result": "CTCF ChIP-seq signal overlaps the CACNA1B e37a locus in approximately 50% of human cell lines (27 of 50), but not e37b. Other DNA binding proteins (RAD21, SMC3, CEBPB, CTCFL) show minimal association with e37a locus compared to CTCF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C72-C81 provide converging evidence from ENCODE ChIP-seq data showing CTCF binding to e37a but not e37b across multiple human cell lines. The data is publicly available and the analysis is straightforward, with appropriate controls showing other factors bind less frequently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C82",
+      "C83"
+    ],
+    "result": "CTCF binds specifically to Cacna1b e37a DNA but not e37b or e37a RNA in vitro. The binding is concentration-dependent and specific, as demonstrated by gel shift assays with antibody supershift and competition experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C82-C83 demonstrate specific CTCF-e37a DNA binding through multiple complementary in vitro assays (EMSA with concentration dependence, antibody supershift, competition). The lack of binding to e37b and RNA probes strengthens specificity. Truncation experiments (C82) provide additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C84"
+    ],
+    "result": "CTCF is localized to nuclei and binds Cacna1b e37a locus but not e37b locus in F11 cells (a DRG-derived cell line), as demonstrated by immunofluorescence and ChIP-qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 and C84 provide direct evidence of CTCF binding to e37a in a relevant cellular context using orthogonal methods (microscopy and ChIP-qPCR). The cell line is appropriate for the study and the differential binding to e37a vs e37b is consistent with in vitro and human cell line data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "CTCF levels are rate-limiting for Cacna1b e37a splicing in F11 cells. CTCF overexpression increases e37a mRNA levels approximately 2-fold, while CTCF knockdown reduces e37a levels by approximately 30%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 demonstrate bidirectional effects of CTCF manipulation on e37a splicing using gain-of-function (overexpression) and loss-of-function (siRNA) approaches. The time course and magnitude of effects are consistent and support a causal role for CTCF in e37a inclusion. Statistical significance is reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C28",
+      "C29"
+    ],
+    "result": "DNA methylation (5-mC) at the Cacna1b e37a locus negatively regulates e37a inclusion in a CTCF-dependent manner. Treatment with the demethylating agent 5-Aza reduces global and local 5-mC levels and increases e37a mRNA in a CTCF-dependent fashion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21, C28-C29 establish a mechanistic link between DNA methylation and CTCF-mediated splicing regulation. The 5-Aza experiments show dose-dependent effects on both methylation and splicing, and the requirement for CTCF (C21) demonstrates epistasis. The ~20% reduction in local methylation correlating with >2-fold increase in e37a expression is consistent with methylation blocking CTCF binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Treatment with 2-HG (a TET enzyme inhibitor) increases global 5-mC levels and decreases Cacna1b e37a mRNA levels in F11 cells. 10 mM 2-HG induces approximately 3-fold increase in global methylation and reduces e37a mRNA to nearly undetectable levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 provide complementary evidence to the 5-Aza experiments by showing that increasing methylation reduces e37a expression. The effects are dose-dependent and the magnitude of changes in methylation (~10% local increase, 3-fold global increase) correlate with dramatic reduction in e37a mRNA. Controls show no effect on CTCF protein levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "DNMT3a inhibits Cacna1b e37a inclusion, while TET1 and TET2 promote e37a inclusion. Targeted demethylation of e37a locus using dCAS9-TET1 increases e37a expression approximately 2-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 identify specific enzymes regulating e37a methylation and splicing. The siRNA and overexpression experiments show specificity (DNMT3a but not DNMT1/3b; TET1/2 but not TET3). The dCAS9-TET1 targeting experiment (C32) provides strong evidence for locus-specific effects with appropriate controls (non-targeting gRNA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Cacna1b e37a mRNAs are exclusively expressed in Trpv1-lineage neurons of mouse DRG, while e37b mRNAs are expressed in both Trpv1-lineage and non-Trpv1-lineage cells, as determined by FACS separation and RT-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 establish cell-type-specific expression patterns in vivo using genetic lineage tracing and FACS. The exclusive expression of e37a in Trpv1-lineage neurons is clearly demonstrated by RT-PCR from sorted populations. This provides critical in vivo validation of the cell-specific splicing mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C49"
+    ],
+    "result": "The Cacna1b e37a locus shows cell-type-specific methylation patterns: it is hypermethylated in non-Trpv1-lineage cells (all 5 CpG sites methylated in majority of sequences) but hypomethylated in Trpv1-lineage neurons (only 1 of 20 clones showed methylation at 1 CpG site).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C49 demonstrate striking cell-type-specific methylation differences using bisulfite sequencing of FACS-sorted populations. The near-complete methylation in non-Trpv1 cells versus near-complete demethylation in Trpv1-lineage neurons provides strong support for the methylation-based mechanism of cell-specific splicing regulation in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C56",
+      "C62",
+      "C71",
+      "C108",
+      "C110"
+    ],
+    "result": "Peripheral nerve injury (SNI model) increases methylation at the Cacna1b e37a locus in Trpv1-lineage neurons and reduces e37a mRNA expression. This occurs specifically in ipsilateral DRG and is associated with sustained hyperalgesia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48, C50-C51, C56, C62, C71, C108, C110 demonstrate injury-induced changes in methylation and splicing using an established pain model. The within-animal comparison (ipsilateral vs contralateral) and sham controls strengthen the findings. The cell-type specificity (Trpv1-lineage affected, non-Trpv1 unchanged) and correlation with behavioral outcomes support the pathophysiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C59",
+      "C60",
+      "C61",
+      "C69",
+      "C70",
+      "C94",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Cell-specific hypomethylation of Cacna1b e37a locus in Trpv1-lineage neurons permits CTCF binding, which promotes e37a inclusion during alternative splicing. In most neurons, methylation occludes CTCF binding and suppresses e37a expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55, C59-C61, C69-C70, C94, C102-C105 synthesize the mechanistic model supported by the in vitro (F11 cells) and in vivo (DRG) data. The model is well-supported by the convergence of ChIP-seq, EMSA, methylation manipulation, cell-type-specific methylation patterns, and functional splicing assays. The use of 'likely' and 'presumed' appropriately acknowledges that direct CTCF binding in vivo was not measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C87",
+      "C88",
+      "C106",
+      "C107",
+      "C111"
+    ],
+    "result": "CaV2.2 channels containing e37a are expressed in nociceptors, are especially sensitive to \u03bc-opioid receptor inhibition, and cell-specific e37a inclusion enhances morphine analgesia in vivo. Disruption of e37a splicing after nerve injury reduces morphine efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67, C87-C88, C106-C107, C111 establish the functional significance of e37a splicing regulation based on prior published work (multiple citations provided). These claims provide essential context for why the splicing mechanism matters physiologically and clinically, though the functional characterization was not performed in the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C109"
+    ],
+    "result": "Injury-induced increased methylation of Cacna1b e37a locus likely underlies some chronic pathophysiology associated with peripheral nerve injury, presumably by impairing CTCF binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101 and C109 make broader conclusions about pathophysiology and infer impaired CTCF binding after injury. While the methylation increase and splicing disruption are demonstrated (C50, C47), direct evidence of impaired CTCF binding in injured neurons is not provided. The causal link to 'chronic pathophysiology' requires additional functional validation beyond the 8-day timepoint studied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C63",
+      "C68",
+      "C79",
+      "C80",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Background claims about alternative splicing, CTCF function, and disease relevance establish the context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C63, C68, C79-C80, C95-C100 provide established background knowledge supported by appropriate citations. These contextual claims are well-supported by the literature and frame the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "DNMT3a is upregulated in neuropathic pain models and associated with gene hypermethylation. TET enzymes and dCAS9-TET1 can modify exon methylation and correct disease-induced splicing alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 cite prior literature establishing the roles of DNMTs and TETs in pain models and therapeutic potential. These claims provide important context for the enzyme-specific experiments (C30-C32) and potential therapeutic applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Peripheral nerve injury triggers dynamic chromatin accessibility in DRG neurons associated with changes in gene expression and CTCF binding motif-enriched regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 cites prior work establishing that nerve injury affects chromatin accessibility at CTCF sites. This provides important context for the injury-induced methylation changes observed in the current study.",
+    "result_type": "MINOR"
+  }
+]

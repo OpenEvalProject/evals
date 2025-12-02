@@ -1,0 +1,419 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C87"
+    ],
+    "result": "The meta-analysis dataset comprised 69 case studies from 59 publications representing 660 observations, covering diverse geographic regions (primarily Europe and Americas), ecosystem types (aquatic and terrestrial), study approaches (observational and experimental), taxonomic groups (invertebrates and microbes), response variables (diversity and abundance), and environmental drivers (chemical stressors and nutrient enrichment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 and C87 provide comprehensive descriptive statistics about the dataset composition that are internally consistent and well-documented. The geographic distribution, ecosystem coverage, taxonomic groups, and driver types are clearly quantified with specific numbers of studies and observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Publication bias analysis revealed positive publication bias only in nutrient enrichment studies reporting decomposer abundance, with no publication bias detected in other datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 report results from standard publication bias tests (funnel plots and Egger's regression). The selective detection of bias in one specific dataset (nutrient-abundance) is appropriately documented and acknowledged in subsequent analyses (C22).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C46",
+      "C50"
+    ],
+    "result": "Chemical stressors consistently decreased decomposer diversity, abundance, and litter decomposition across studies, while nutrient enrichment showed non-significant trends toward decreased diversity but increased abundance and decomposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 report first-level meta-analysis results with appropriate statistical interpretation (confidence intervals overlapping zero for nutrients). These findings are consistent with prior literature (C46) and represent the overall patterns across all studies in the dataset as shown in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C43",
+      "C44"
+    ],
+    "result": "For chemical stressors, decreases in decomposition were significantly correlated with decreases in decomposer diversity and abundance, but no such relationship was found for nutrients, where a wide range of decomposition responses occurred even when decomposer diversity and abundance were unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 describe correlation patterns shown in Figure 4 with appropriate statistical support (meta-regression results). The contrasting patterns between stressors and nutrients are clearly demonstrated and form the basis for the main conclusions (C43-C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C23",
+      "C24",
+      "C47"
+    ],
+    "result": "Structural equation modeling demonstrated that the effects of chemical stressors on litter decomposition were mediated by shifts in decomposer diversity and abundance, with diversity-mediated effects being stronger than direct effects of stressor intensity and stronger than abundance-mediated effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C23-C24 report SEM results with appropriate model comparison statistics (mediation tests, AIC, path coefficients >0.1 and significantly different from zero). The magnitude comparisons between direct and indirect effects are quantitatively supported. This represents a key finding of the study (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C145",
+      "C147",
+      "C151"
+    ],
+    "result": "In contrast to chemical stressors, structural equation modeling did not support biodiversity-mediated effects of nutrient enrichment on litter decomposition, with direct effects of nutrient intensity dominating and no significant residual association between decomposer diversity/abundance and decomposition after controlling for nutrient intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C25 report SEM results for nutrients with appropriate caveats (path coefficient not significantly different from zero for diversity; abundance path not supported by mediation tests; publication bias noted). The lack of biodiversity-mediated effects for nutrients (C145, C147, C151) is consistently demonstrated across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Sensitivity analyses demonstrated that results were robust to the inclusion of approximated standard deviations and extreme values, though partially different results were obtained using log-response ratios due to lower sample sizes and emergence of extreme values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 report standard sensitivity analyses with appropriate documentation in appendices. The acknowledgment of different results with alternative effect size metrics (log-response ratios) and the explanation for these differences demonstrates appropriate analytical rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C139"
+    ],
+    "result": "Despite overall negative effects of chemical stressors on decomposition, negative responses were not associated with higher stressor intensity, and there was mixed support for a stressor intensity effect on decomposer diversity across analytical approaches (significant in SEM but not in meta-regression), while decomposer abundance responses were not associated with stressor intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 report results from two complementary analytical approaches (SEM and meta-regression) with appropriate acknowledgment of discrepancies between methods. The authors provide reasonable explanations for differences (different data included, similar slopes but different significance) and acknowledge the mixed support for intensity effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C51",
+      "C135"
+    ],
+    "result": "Decomposition and decomposer diversity responses to nutrient enrichment decreased with nutrient intensity, shifting from positive effects at low intensity to negative effects at high intensity, while decomposer abundance responses were not explained by nutrient intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 report clear dose-response patterns for nutrients shown in Figures 5-6, with appropriate statistical support from both SEM and meta-regression. The non-monotonic response pattern (C135) is consistent with previous findings and provides important context for understanding nutrient effects (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C124",
+      "C127"
+    ],
+    "result": "Animal decomposers responded more strongly to chemical stressors than microbial decomposers, with significantly more negative effects on animal diversity and abundance confirmed by statistical tests, consistent with expectations that larger organisms are more sensitive to environmental change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C124 report taxonomic group differences with appropriate statistical support (Wald tests, Figure 7). The interpretation (C127) is supported by multiple citations and represents a well-established ecological principle. The finding is consistent across aquatic and terrestrial ecosystems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C154",
+      "C155"
+    ],
+    "result": "In response to nutrient enrichment, animal decomposers decreased in diversity but increased in abundance, while microbial decomposers showed smaller magnitude responses with confidence intervals overlapping zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C154-C155 report taxonomic group differences in nutrient responses with appropriate statistical documentation (Figure 7, confidence intervals). The contrasting responses between animals and microbes are clearly demonstrated and provide important mechanistic insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "There were no clear differences between observational and experimental studies, or between biodiversity responses measured as taxa richness versus diversity indices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 report moderator analyses with appropriate statistical support (Figure 7, Appendix 2-table 4). The lack of differences between study types and diversity metrics suggests robustness of findings across methodological approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C45",
+      "C53",
+      "C166",
+      "C171",
+      "C174"
+    ],
+    "result": "The consequences of biodiversity change for ecosystem functioning depend on the type of environmental change, with significant real-world biodiversity-ecosystem function relationships particularly evident when environmental changes decrease biodiversity (as with chemical stressors), while real-world scenarios do not necessarily involve concomitant changes in both biodiversity and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C45, C53, C166, C171, C174 represent the main conclusions of the study, directly supported by the contrasting patterns observed for stressors versus nutrients across multiple analyses (meta-analysis, correlations, SEM). The conclusions appropriately synthesize the empirical findings and address the study's central research question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "While the study approach remains correlative despite SEM analysis, it builds on and extends previous experimental evidence by showing that non-random biodiversity losses induced by stressors are closely associated with decreases in decomposition across a wide range of real-world studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 appropriately acknowledge methodological limitations (correlative approach) while contextualizing the contribution relative to prior work. The extension beyond previous meta-analyses (C98) to real-world scenarios with non-random biodiversity change (C99) represents a clear advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Both decomposer diversity and abundance contributed to explaining shifts in decomposition in separate analyses, with some cases suggesting that increases in decomposer abundance may counteract negative effects of decreases in diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C107 is supported by the separate SEM analyses. However, claims C108-C109 are speculative interpretations of specific cases that the authors acknowledge cannot be specifically tested with the present data. Claim C110 cites supporting evidence from another study but does not directly test this mechanism in the current dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Concomitant shifts in diversity and abundance have important implications for estimates of diversity responses, as studies mostly reported richness without correcting for sampling effort, meaning lower abundances rather than lower species numbers per se might have caused some negative biodiversity effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 identify an important methodological limitation common to meta-analyses that rely on how individual studies report biodiversity. The caveat is appropriately acknowledged and represents a standard limitation in this type of synthesis work, with appropriate citation support (C111-C112).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The observed effects of decomposer diversity and abundance on decomposition might have channeled unmeasured changes in community structure (keystone species, functional diversity, vertical diversity, dominance patterns), but studies rarely reported such measurements, with only seven studies reporting evenness and few reporting comparable functional groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C120 appropriately identify data limitations and potential unmeasured mechanisms. The speculation about additional diversity components (C114-C116) is appropriately qualified and supported by citations. The documentation of data availability (C117-C118, C120) justifies why these analyses could not be conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "The differential sensitivity of animal versus microbial decomposers to chemical stressors could imply that biodiversity-mediated effects are more strongly linked to shifts in invertebrates than microbes, though a previous meta-analysis found that changes in fungal biomass and richness explained decomposition shifts under both stressors and nutrients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is an appropriately qualified inference based on the demonstrated differential sensitivity (C36-C37, C124) with citation support. Claim C129 provides important context from prior work showing that microbial effects can also be important, appropriately tempering the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The impacts of nutrient enrichment differed from chemical stressors, with nutrients having variable effects depending on taxonomic group and intensity, resulting in neutral overall mean effects; this pattern may reflect that individual studies did not span sufficiently large nutrient gradients to capture non-monotonic responses, and the use of correlation as an effect size may not capture such responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 provide appropriate interpretation of the nutrient results with acknowledgment of methodological considerations. The explanation for small mean effects (C133) is reasonable and supported by citation, while the data limitation (C134) is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C153",
+      "C156",
+      "C157"
+    ],
+    "result": "The complex responses to nutrients likely reflect that low nutrient intensities enhanced microbial activity by alleviating resource limitation while high intensities negatively impacted invertebrates, with animal decomposers showing loss of sensitive taxa benefiting tolerant taxa, and microbial decomposers showing mixed responses reflecting both positive and negative effects on growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C137, C153, C156-C157 are speculative mechanistic interpretations appropriately qualified with terms like \"might have\" and \"probably reflecting.\" While supported by citations and consistent with the data patterns, these mechanisms are not directly tested in the current study. The interpretations are reasonable but remain inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Contrasting patterns between stressor and nutrient intensity effects may reflect greater variability in stressor types and standardization sources, though datasets were dominated by similar quality criteria methodologies (75-100% of observations); testing the influence of different quality criteria was not possible as it would be confounded with stressor/nutrient types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 appropriately acknowledge methodological limitations and potential confounding factors in the standardization approach. The documentation of quality criteria sources (C143) provides transparency, while the acknowledgment of limitations (C142) is appropriate. The suggestion for future work (C144) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C146",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Increasing nutrient intensity decreased effects on decomposition and diversity but not abundance; after controlling for nutrient intensity, no residual association remained between decomposer responses and decomposition, contrasting with previous meta-analyses showing microbial abundance explained ecosystem function responses to nitrogen in terrestrial systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 report SEM results and appropriately contextualize findings relative to prior work (C148). The demonstration that previous patterns (C148) cannot be generalized across systems and taxonomic groups (C149) represents an important contribution, with the mechanism clearly explained (C150).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Nutrients can alleviate resource limitations at low intensities but exert toxic effects at high intensities, with initial nutrient levels conditioning subsequent responses; at high intensities nutrients may be associated with other stressors, but interactive effects could not be quantified as few experiments assessed both drivers independently and such combinations remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C160 describe well-established mechanisms supported by citations. Claims C161-C163 appropriately acknowledge data limitations preventing analysis of interactive effects and cite relevant literature on this knowledge gap. The acknowledgment of potential confounding (C161) is important for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C164",
+      "C165"
+    ],
+    "result": "While the stressor versus resource comparison allowed testing a clear concept, any ecological grouping may mask within-category variation, and a given environmental driver can represent a stressor for one species and a resource for another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C165 appropriately acknowledge limitations of the categorical approach used in the study. The recognition that drivers can have species-specific effects (C165) is supported by citation and represents an important caveat for interpretation of grouped analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Significant positive and negative effects on decomposers and decomposition were observed at environmental quality criteria levels used in risk assessment, highlighting the need to better incorporate biodiversity and ecosystem function into ecological risk assessment programs and reinforcing calls to consider chemical stressors as important global change drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C169 draw appropriate policy implications from the findings, with statistical support from Figure 6 (C167) and appropriate citations for broader context (C168-C169). The implications for risk assessment are directly supported by the demonstration of effects at current quality criteria levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study quantified effect sizes using correlation coefficients between environmental driver levels and responses, standardized stressor/nutrient intensities using environmental quality criteria, and employed meta-analysis and structural equation modeling to assess overall effects and biodiversity-mediated pathways while exploring moderator effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 describe the core methodological approach with appropriate detail. The use of correlation coefficients as effect sizes is justified in the text as accommodating heterogeneity in metrics. The analytical strategy combining meta-analysis and SEM is appropriate for addressing the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study hypothesized contrasting effects of chemical stressors (decreasing diversity, abundance, and decomposition) versus nutrients (decreasing diversity but increasing abundance and decomposition), and expected positive relationships between decomposer diversity/abundance and decomposition independent of environmental change intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 clearly state the study's a priori hypotheses with appropriate citation support. The hypotheses are testable and directly addressed by the analyses conducted. The expectations are grounded in prior literature and ecological theory.",
+    "result_type": "MINOR"
+  }
+]

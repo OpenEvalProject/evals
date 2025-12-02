@@ -1,0 +1,497 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Flow cytometry analysis reveals that sciatic nerve crush (SNC) triggers a massive and temporally dynamic infiltration of immune cells into the distal nerve stump, with granulocytes peaking at day 1 (~7,800 cells), monocytes/macrophages peaking at day 3 (~13,200 cells), and monocyte-derived dendritic cells increasing more gradually to day 7 (~3,400 cells). This inflammatory response is spatially confined to the crush site and distal nerve stump, with no significant changes in the proximal nerve stump.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 are well-supported by quantitative flow cytometry data presented in Figure 1, showing specific cell counts with standard errors at multiple time points. The spatial restriction of inflammation is confirmed by both flow cytometry (Figure 1\u2014figure supplement 2) and immunofluorescence imaging. The data are internally consistent and provide robust quantitative evidence for the temporal and spatial dynamics of nerve inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In axotomized DRGs, SNC induces a modest immune response characterized by transient increases in Iba1 and F4/80 immunolabeling peaking at day 3, with flow cytometry showing a ~2-fold increase in total leukocytes driven primarily by monocytes/macrophages. Western blotting confirms that the magnitude of myeloid cell increase in DRGs is an order of magnitude lower than in the injured nerve trunk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 are supported by multiple complementary techniques: immunofluorescence (Figure 2A), flow cytometry (Figure 2B-G), and Western blotting (Figure 2H-I). The quantitative data are consistent across methods, and the comparative analysis between nerve and DRG is well-documented. The conclusion that DRG inflammation is qualitatively and quantitatively different from nerve inflammation is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Parabiosis experiments demonstrate that blood-borne immune cells constitute the vast majority of immune cells in the injured nerve (with ~28% of myeloid cells being tdTom+ in a ~27% chimerism system), while only a small number of hematogenous leukocytes enter axotomized DRGs. TdTom+ cells are preferentially localized to the injury site and distal nerve stump, with very few in the proximal nerve or spinal cord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 are strongly supported by parabiosis experiments with appropriate controls. The chimerism level (~27%) is well-characterized, and the percentage of tdTom+ cells in injured nerve (~28%) is consistent with blood-borne origin. The spatial distribution data (Figure 3D) and quantification of tdTom+ cells in DRGs (Figure 3F) provide clear evidence for differential infiltration patterns. The experimental design is rigorous and the conclusions are well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Three-dimensional analysis of whole-mount DRGs reveals that SNC triggers a 2.3-fold increase in total Iba1+ cell volume, accompanied by striking morphological changes from predominantly amoeboid (84%) to increasingly stellate morphology (55% at day 7), without changes in individual cell volume. These findings indicate that local proliferation and morphological changes, rather than infiltration of blood-borne cells, account for increased Iba1 immunoreactivity in axotomized DRGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by sophisticated 3D imaging and quantitative morphological analysis (Figure 3G-K). The morphological categorization is clearly defined, and the quantification shows statistically significant changes over time. This conclusion is consistent with the parabiosis data (C39-C40) showing limited infiltration into DRGs. The integration of multiple lines of evidence strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Weighted gene co-expression network analysis (WGCNA) of bulk RNA-seq from axotomized DRGs identifies a large turquoise module enriched for immune system processes (including cell activation, immune effector process, and defense response) that is stably upregulated following SNC. However, this immune gene upregulation correlates with only modest (~1.5-fold) increases in canonical macrophage markers (CD11b, Iba1, F4/80), while regeneration-associated genes (Atf3, Jun, Stat3) show much more robust upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are supported by comprehensive transcriptomic analysis including WGCNA, GO enrichment, and IPA (Figure 4 and supplements). The data show clear upregulation of immune-related gene modules with appropriate statistical validation. The observation that immune gene expression is elevated while macrophage markers show only modest increases is consistent with the flow cytometry and parabiosis data, suggesting non-hematopoietic cell contributions to immune gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Single-cell RNA-sequencing of day 3 injured sciatic nerve (16,204 cells, median 2,507 genes/cell) identifies over 20 cell clusters including innate immune cells (42.22%), lymphocytes (1.73%), three mesenchymal progenitor cell (MES) subpopulations (18.49% total), and three Schwann cell clusters (17.48%). MES clusters are identified as perineural (pMES), endoneurial (eMES), and differentiating (dMES) based on marker gene expression, with eMES being neural crest-derived.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C66 are well-supported by comprehensive scRNA-seq analysis with appropriate quality metrics and cell type identification based on established markers (Figure 5). The percentages are reported with standard errors, and the identification of MES subpopulations is supported by differential marker expression and pathway analysis. The neural crest origin of eMES is supported by citations to relevant literature. The data quality and analysis appear rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Three Schwann cell clusters (SC1-3, representing 17.48% of cells) are identified in the injured nerve, with SC1 containing proliferating cells (Mki67+) expressing Ncam1, Chl1, and other markers, and SC3 expressing high levels of Ngfr/p75, Nrcam, and Gdnf. These clusters show distinct transcription regulator profiles and are enriched for pathways related to axon guidance and integrin cell surface interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 are supported by scRNA-seq gene expression analysis and pathway enrichment (Figure 5 and supplements). The identification of proliferating cells is based on Mki67 expression, and the marker genes for each cluster are clearly documented. The pathway analysis provides functional context for the different Schwann cell subpopulations. The data are consistent and well-presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Cells associated with nerve vasculature comprise 14.2% of cells in the injured nerve, including three endothelial cell clusters (EC1-3, 9.92%) expressing Pecam/CD31, two pericyte clusters (PC1-2, 4.2%) expressing Pdgfrb and Rgs5, and a small cluster of chondrocyte-like cells (0.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by scRNA-seq analysis with clear marker gene identification (Figure 5 and supplements). The percentages are reported with standard errors, and the cell type assignments are based on well-established markers. The data are consistent with expected cell types in injured nerve tissue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Multiple cell types in the injured nerve express neurotrophic and axon growth-promoting molecules. MES and fibroblasts express various growth factors and ECM molecules (Igf1, Ntn1, Dcn, Sparc, etc.), Schwann cells express CNTF family ligands (Crlf1, Clcf1) and axon guidance molecules (Gdnf, Reln, semaphorins), and myeloid cells express Spp1 and Grn, indicating that multiple cell types contribute to creating a regeneration-permissive environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C89 are supported by comprehensive scRNA-seq gene expression analysis (Figure 5\u2014figure supplement 1B). The identification of specific growth factors and guidance molecules is well-documented, and the functional implications are supported by citations to relevant literature. The conclusion that multiple cell types contribute to the regenerative environment is well-justified by the breadth of expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Non-hematopoietic cells, particularly MES and fibroblasts, show high immune gene activity and express chemokines (Ccl2, Ccl7, Ccl9, Ccl11), cytokines (Mif, Il33, Csf1), and complement components, suggesting they play a major role in shaping the inflammatory milieu. In contrast, repair Schwann cells exhibit low immune gene activity. MES also express WNT pathway antagonists (Wif1, Sfrp1-5), potentially contributing to wound healing and fibrosis regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 are supported by scRNA-seq gene expression analysis (Figure 5\u2014figure supplement 6). The differential immune gene expression between MES/fibroblasts and Schwann cells is clearly documented. The functional implications regarding WNT signaling are supported by citation to relevant literature on cardiac injury. The data support the conclusion that non-hematopoietic cells contribute significantly to nerve inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The mononuclear phagocyte system (MPS) in the injured nerve forms a connected continuum of seven clusters (Mo, Mac1-5, MoDC) expressing Itgam/CD11b and the myeloid transcription factor PU.1 (Spi1). These clusters show overlapping yet distinct expression of canonical markers (F4/80, Iba1, Cd68, Cx3cr1) and often co-express markers traditionally associated with M1-like and M2-like cells, indicating that simple M1/M2 classification is inadequate for describing the complex physiological states of macrophage subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C106 are well-supported by comprehensive scRNA-seq analysis (Figures 5-6 and supplements). The identification of a continuum of myeloid cell states is supported by UMAP visualization and marker gene expression. The observation that individual subpopulations co-express M1 and M2 markers is an important finding that challenges traditional classification schemes. The data are robust and the conclusion is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Detailed characterization of myeloid subpopulations reveals Mac4 cells expressing high levels of Trem2, Arg1, Pf4, and Stab1; a small Mac5 cluster (239 cells) with dividing stem-like cells; Mac2 cells expressing high MHCII genes; and MoDC expressing MHCII genes, Itgax/CD11c, and Cd209a. Few plasmacytoid DCs and conventional DCs are detected. The granulocyte cluster is small (314 cells) and mainly comprises neutrophils with few eosinophils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C119 are supported by detailed scRNA-seq gene expression analysis and marker identification (Figure 6 and supplements). The characterization of each subpopulation is based on well-established markers, and the identification of proliferating cells is confirmed by Mki67 expression. The presence of blood-borne proliferating cells is independently validated by parabiosis experiments showing tdTom+F4/80+Ki67+ cells. The data are comprehensive and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Slingshot pseudo-time trajectory analysis reveals a bifurcated differentiation trajectory in which blood-borne monocytes first give rise to Mac3, which then differentiates into Mac1, Mac2, or Mac4 cells, with Mac2 cells further differentiating into MoDC. This analysis is in good agreement with flow cytometry data on immune cell abundance and identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by Slingshot trajectory analysis (Figure 6\u2014figure supplement 3) and are consistent with flow cytometry data. The predicted differentiation trajectories are biologically plausible and consistent with known monocyte-to-macrophage differentiation pathways. However, trajectory inference is inherently computational and represents predicted rather than directly observed differentiation paths. The agreement with flow cytometry data strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Flow cytometry analysis of Ly6C surface expression reveals dynamic changes in monocyte/macrophage maturation following SNC. In naive nerve, most cells are Ly6C- (70%), but at day 1 post-SNC, the distribution shifts toward Ly6Chi cells (50%), indicating classical activation. By day 3, the distribution is Ly6Chi (28%), Ly6Cint (47%), and Ly6C- (25%), and by day 7, the majority are Ly6C- (65%), indicating resolution of inflammation and return to homeostatic levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C131 are well-supported by flow cytometry data (Figure 6H-M) and are consistent with scRNA-seq Ly6c2 expression data (Figure 6G). The temporal dynamics show a clear progression from pro-inflammatory to anti-inflammatory states. The data are quantitative with appropriate statistical analysis and demonstrate the biphasic nature of nerve inflammation. The conclusion is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C136"
+    ],
+    "result": "The Ly6C distribution in DRG monocytes/macrophages shows an opposite pattern to that in the nerve. In naive DRGs, 43% of Mo/Mac are Ly6Chi, and following SNC, the distribution shifts to predominantly Ly6C- cells (75% at day 1, 53% at day 3, 52% at day 7), indicating that DRGs do not undergo the same pro-inflammatory to anti-inflammatory transition observed in the nerve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 and C136 are supported by flow cytometry data (Figure 6\u2014figure supplement 4). The opposite pattern of Ly6C distribution in DRGs compared to nerve is clearly documented and represents an important distinction between these two inflammatory compartments. The data are consistent with the overall finding that DRG inflammation is qualitatively different from nerve inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Macrophage subpopulations show distinct spatial distributions in the injured nerve. Arg1-YFP reporter mice reveal that Arg1+ macrophages (including Mac4 cells) are preferentially localized to the nerve crush site at day 3 and largely absent from the distal nerve stump, while F4/80+ and CD68+ macrophages are more uniformly distributed throughout the injury site and distal nerve stump where Wallerian degeneration occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C144 are supported by scRNA-seq data showing differential Arg1 expression (Figure 6N) and Arg1-YFP reporter mouse imaging (Figure 6O-Q, Figure 6\u2014figure supplement 5). The spatial segregation of Arg1+ and F4/80+ macrophages is clearly documented and suggests functional specialization. The data demonstrate the existence of distinct immune compartments within the injured nerve, which is an important finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "KEGG pathway analysis reveals distinct functional profiles for macrophage subpopulations. Monocytes are enriched for cytokine signaling and leukocyte trans-endothelial migration; Mac3 for chemokine signaling and complement cascades; Mac2 for Leishmaniasis and Tuberculosis pathways; and Mac4 for negative regulation of immune processes and cholesterol metabolism. Mac4 cells express high levels of genes regulating reverse cholesterol transport, cholesterol storage, and cholesterol ester metabolism, suggesting they are cholesterol-laden cells engaged in efferocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C152 are supported by pathway analysis and gene expression data (Figure 6\u2014figure supplement 1 and 6). The enrichment of cholesterol metabolism genes in Mac4 is particularly well-documented, with specific genes identified for each step of cholesterol handling. The comparison with naive nerve macrophages strengthens the conclusion that these are injury-induced phenotypes. The inference that Mac4 cells are engaged in efferocytosis is reasonable given the cholesterol metabolism signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Repair Schwann cells and myeloid cells employ different mechanisms for myelin phagocytosis. Schwann cell clusters SC1 and SC3 show differential expression of Axl and Mertk receptors, while myeloid cells express very low levels of these receptors but strongly express alternative myelin-binding receptors (Lrp1, Pirb, Cd300lf) and scavenger receptors (Msr1, Cd36, Cd68), including high levels of opsonic receptors (Fcgr1, Fcgr3, Fcgr4, Fcer1g).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 are supported by scRNA-seq gene expression analysis (Figure 7\u2014figure supplement 1) and citations to relevant literature on myelin phagocytosis mechanisms. The differential expression of phagocytosis receptors between Schwann cells and myeloid cells is clearly documented. The comparison with naive nerve macrophages shows that these receptors are upregulated following injury. The data support the conclusion of distinct phagocytosis mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Comprehensive analysis of efferocytosis machinery reveals that apoptotic cells display 'eat me' signals (phosphatidylserine, calreticulin) while healthy cells display 'don't eat me' signals (CD47/SIRP\u03b1). Multiple cell types in the injured nerve express bridging molecules (C1q components, annexins, pentraxin, thrombospondin, galectin-3, Gas6, Mfge8, Apoe), while myeloid cells, particularly Mac4, express high levels of engulfment receptors (Lrp1, Trem2, Dap12, C1qr, C3ar1, integrins, CD14, scavenger receptors). These molecules are either absent or expressed at much lower levels in naive nerve macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C170 are supported by comprehensive scRNA-seq gene expression analysis (Figure 7B-C, Figure 7\u2014figure supplement 2) and citations to relevant literature on efferocytosis mechanisms. The expression of bridging molecules by multiple cell types and enrichment of engulfment receptors in Mac4 is well-documented. The comparison with naive nerve macrophages using published datasets strengthens the conclusion that this is an injury-induced phenotype. The data provide strong molecular evidence for efferocytosis capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Direct evidence for efferocytosis in the injured nerve comes from parabiosis experiments showing that CD45.1+tdTom+CD45.2- cells (representing CD45.1+ phagocytes that have engulfed tdTom+ apoptotic leukocytes) are readily detected in the injured nerve of WT CD45.1 parabionts. Flow cytometry reveals increased apoptotic cells at days 3 and 7 post-SNC, and Mo/Mac have a greater capacity for efferocytosis than MoDC, suggesting they remove the bulk of dying leukocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C175 are supported by elegant parabiosis experiments with appropriate controls (Figure 7D-M, Figure 7\u2014figure supplement 3). The experimental logic is sound: CD45.1+tdTom+CD45.2- cells can only arise from CD45.1+ cells engulfing tdTom+ cells. The absence of such cells in single tdTom mice confirms specificity. The quantification shows that Mo/Mac are the primary efferocytic cells. This provides direct functional evidence for efferocytosis in the injured nerve.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "GM-CSF receptor subunits (Csf2ra and Csf2rb) are abundantly expressed by myeloid cells in the injured nerve but not in axotomized DRGs. In Csf2-/- mice, the number of endoneurial macrophages in naive nerve is comparable to WT, but at day 3 post-SNC, Csf2-/- mice show significantly fewer Ly6C- cells and significantly more Ly6Chi cells compared to WT mice, indicating delayed monocyte/macrophage maturation and inflammation resolution. This delay is specific to the Mo/Mac population, as MoDC show comparable Ly6C expression between WT and Csf2-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C185 are supported by scRNA-seq data showing Csf2ra/Csf2rb expression (Figure 8B-C), bulk RNA-seq of DRGs (Figure 4K-L), and flow cytometry analysis of Csf2-/- mice (Figure 8D-I). The data clearly show that GM-CSF signaling is important for Mo/Mac maturation in the injured nerve. The specificity to Mo/Mac (not MoDC) is well-documented. The genotyping of Csf2-/- mice is confirmed (Figure 8\u2014figure supplement 1). The data are robust and support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Functional analysis of conditioning-lesion-induced axon regeneration reveals that in WT mice, a conditioning lesion to the sciatic nerve significantly enhances dorsal column axon regeneration (traced axons grow close to the spinal cord injury site vs. 600 \u00b1 80 \u03bcm gap without conditioning). However, in Csf2-/- mice, the conditioning lesion effect is abolished (720 \u00b1 120 \u03bcm gap without conditioning vs. no significant enhancement with conditioning), demonstrating that Csf2 is required for conditioning-lesion-induced central axon regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C190 are supported by quantitative axon tracing experiments (Figure 8J-K) with appropriate sample sizes (n \u2265 8 per group) and statistical analysis. The loss of conditioning-lesion effect in Csf2-/- mice is clearly demonstrated. The experimental design includes appropriate controls (WT and Csf2-/- mice with and without conditioning lesion). The data provide strong functional evidence for the importance of GM-CSF signaling in conditioning-lesion-induced regeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "In vitro neurite outgrowth assays show no Csf2-dependent differences in total axon length or longest axon in DRG neuron cultures from naive mice. Both WT and Csf2-/- cultures show significantly increased neurite outgrowth when DRGs are prepared from mice subjected to a conditioning lesion 3 days prior. This indicates that the reduced axon regeneration in Csf2-/- mice in vivo is not due to loss of conditioning-lesion-induced activation of neuron-intrinsic growth programs, but rather due to cell non-autonomous, extrinsic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C197 are supported by neurite outgrowth assays (Figure 8L-M) with appropriate sample sizes and statistical analysis. The data clearly show that conditioning-lesion-induced activation of intrinsic growth programs is intact in Csf2-/- neurons, ruling out a cell-autonomous neuronal defect. This is an important control that strengthens the conclusion that GM-CSF acts through extrinsic mechanisms, likely by regulating the inflammatory environment in the nerve. The logic is sound and the data support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The study demonstrates that sciatic nerve crush injury triggers distinct inflammatory responses in the nerve and DRGs, with granulocytes and Ly6Chi monocytes infiltrating the nerve first, followed by Ly6C- macrophages. Single-cell RNA-sequencing identifies five macrophage subpopulations with distinct molecular profiles and spatial distributions. Macrophages in the injured nerve engage in efferocytosis of apoptotic leukocytes, and GM-CSF signaling is required for proper inflammation resolution and conditioning-lesion-induced central axon regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 represent the main conclusions of the study and are well-supported by the comprehensive experimental data including flow cytometry, parabiosis, scRNA-seq, reporter mice, and functional regeneration assays. The integration of multiple experimental approaches provides strong support for these conclusions. The study makes important contributions to understanding nerve injury-induced inflammation and its role in regeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The study builds on established knowledge that conditioning lesions enhance dorsal column axon regeneration, that PNS injury triggers sterile inflammation in the nerve and DRGs, that the innate immune system is important for regeneration, and that recent scRNA-seq studies have described gene expression in injured peripheral nervous tissue. The authors identify a gap in the literature: a comparative analysis of immune cell profiles in injured nerve versus axotomized DRGs has not been carried out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 accurately represent prior work through appropriate citations and correctly identify the gap in knowledge that the current study addresses. The citations are to relevant primary literature, and the characterization of the gap is accurate. This provides appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C198",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "The study's main findings are summarized: compression injury triggers massive infiltration of blood-borne immune cells into the nerve; DRGs show upregulation of immune genes but limited infiltration; DRG resident macrophages undergo morphological changes; the nerve contains proliferating myeloid cells and spatially distinct macrophage subpopulations; apoptotic cells accumulate and are cleared by efferocytosis; GM-CSF deficiency delays inflammation resolution and abolishes conditioning-lesion-induced regeneration; and perturbed inflammation resolution blocks neurorepair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C211 represent summary statements of the main findings and are well-supported by the comprehensive experimental data presented throughout the manuscript. These conclusions integrate multiple lines of evidence and represent the key contributions of the study.",
+    "result_type": "MAJOR"
+  }
+]

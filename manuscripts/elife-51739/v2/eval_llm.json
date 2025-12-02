@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors establish the rationale for male contraceptive development by citing the unmet contraceptive need (214 million women, 89 million unintended pregnancies, 48 million abortions annually) and noting that no effective, reversible male contraceptive has been developed since the condom, with major barriers being lack of validated targets and absence of high-throughput screening systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C13 provide context from cited literature (Guttmacher Institute, 2017) establishing the public health need and technical barriers. These are appropriately cited background claims that frame the study's motivation, though they represent prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors justify their phenotypic screening approach by describing the unique challenges of targeting spermatozoa (non-dividing, specialized cells produced at ~100 million/day) and noting that phenotypic approaches are increasingly successful in first-in-class drug discovery, particularly given limited understanding of sperm biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 establish biological rationale through cited literature (Samplaski et al., 2019; Lishko and Mannowetz, 2018; Swinney and Anthony, 2011; Moffat et al., 2017). These are well-supported background claims from established knowledge and prior work that justify the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors developed a fully-automated robotic screening platform that sequentially measures sperm motility (via time-lapse microscopy with automated tracking of >200 cells/well in ~30 min) and acrosome reaction (via flow cytometry in ~45 min), achieving ~75 min total processing time per 384-well plate. The platform uses non-capacitated sperm pooled from 3-5 donors at ~10,000 cells/well with 0.0625% DMSO tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C24-C28, C58-C75 describe comprehensive technical specifications with measured parameters (processing times, cell numbers, concentrations). The methodology is well-documented with appropriate controls (Pristimerin for motility, A23187 for AR) and validated computational approaches (Trackpy algorithm). The platform design is internally consistent and technically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C33"
+    ],
+    "result": "The platform demonstrates good technical performance with kinetics showing good agreement with clinical CASA systems (C29), tolerance to DMSO concentrations used (0.0625-0.1%, C30), minimal motility decrease (~10%) after four plates (C31), and high assay quality (Z'-factor 0.4-0.8, C33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C33 are supported by comparative data (Figure 1\u2014figure supplement 1C) and quality metrics. The Z'-factor range of 0.4-0.8 indicates acceptable to excellent assay quality. The Bland-Altman comparison with clinical CASA validates the tracking approach. These validation experiments appropriately demonstrate platform robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C32",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors screened the ReFRAME library containing 11,968 compounds (nearly all approved drugs or those in clinical development) at ~6 \u03bcM concentration, with dose-response confirmation using 8-point curves starting at 10 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C32, C76-C77 describe the screening campaign with appropriate citation (Janes et al., 2018). The library composition and screening concentration are clearly stated. The choice of ReFRAME for drug repurposing is well-justified, though the single screening concentration (~6 \u03bcM) may miss compounds with different potency ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C45"
+    ],
+    "result": "The motility screen identified 63 primary hits (>15% reduction, 0.5% hit rate), of which 29 were confirmed by dose-response (46% confirmation rate) with EC50 values as low as 0.05 \u03bcM and effect sizes of 15-100%. The hit rate is described as typical for cell-based assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C36-C39, C45 report screening outcomes with quantitative metrics. The 46% confirmation rate is reasonable for phenotypic screens. However, the authors note that many confirmed hits were unsuitable for progression (toxic compounds, antibiotics, chemotherapeutics), suggesting the effective hit rate for developable compounds is lower than reported. The comparison to 'typical' cell-based assays (C45) lacks specific citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Disulfiram was confirmed as a hit with 70% maximum reduction at 10 \u03bcM. The compound is an approved drug for alcohol dependency and has previously been shown to inhibit sperm motility (Lal et al., 2016), with reported targets including PHGDH and NLP4, though relevance to sperm function is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C46-C49 describe Disulfiram with appropriate citations. The authors appropriately note that while Disulfiram validates the platform (known sperm motility inhibitor), it is unlikely developable as a contraceptive due to side effects with alcohol. The acknowledgment of unclear target relevance to sperm function is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C50"
+    ],
+    "result": "KF-4939, a putative PAF inhibitor, was identified as a potent hit with 100% maximum reduction and EC50 = 0.49 \u03bcM. PAF has been used to improve sperm function in infertility treatments (Roudebush et al., 2004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C50 describe KF-4939 with quantitative potency data and appropriate citation. The observation that a PAF inhibitor reduces motility while PAF improves fertility is biologically plausible. However, KF-4939 is described as a 'putative' PAF inhibitor, suggesting target validation is incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Multiple thiol-containing compounds were potent hits: bismuth ethanedithiol (98% reduction, EC50 = 2.5 \u03bcM) and Ticlatone (96% reduction, EC50 = 4.4 \u03bcM), suggesting free cysteines in unidentified protein(s) may play a critical role in motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 report dose-response data for thiol-containing compounds and infer a mechanistic hypothesis. The inference (C53) is appropriately cautious ('may play a critical role') and is reasonable given the pattern across multiple thiol-reactive compounds. However, this remains a hypothesis requiring validation through target identification studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Resquimod (R848), a TLR7/8 ligand recently shown to reduce X-chromosome bearing mouse sperm motility by suppressing ATP production (Umehara et al., 2019), was identified as a hit, demonstrating the platform's potential to uncover new aspects of sperm biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe identification of Resquimod with appropriate citation. The detection of a compound with known effects on sperm validates the platform's ability to identify biologically relevant hits. However, the inference that this 'demonstrates potential to uncover new aspects of sperm biology' (C56) is overstated\u2014this is validation of known biology rather than discovery of new biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Washout experiments with Disulfiram (10 \u03bcM, 20 min treatment) showed only small recovery of motility after washing, performed on three separate days with different donor pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C78-C80 describe washout experiments with appropriate replication (3 days, different donors). The finding of limited reversibility is important for contraceptive development. However, the manuscript lacks quantitative data on the degree of recovery, and Figure 2\u2014figure supplement 1 shows considerable variability between donor pools, suggesting the conclusion may be donor-dependent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C43",
+      "C44"
+    ],
+    "result": "The AR screen identified 14 primary hits, of which 9 showed dose-dependent effects (EC50 as low as 0.4 \u03bcM), but none were true positives after orthogonal triaging to eliminate assay interference compounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C43-C44 report AR screening results with appropriate acknowledgment of false positives. The complete failure to identify true AR hits despite good assay robustness (Z'-factor) highlights the challenge of fluorescence-based assays with compound libraries. The authors appropriately implemented orthogonal validation (plate reader, flow cytometry without stains, microscopy), demonstrating rigorous triaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "A large number of compounds had significant positive effects on sperm motility, potentially representing target agonists or starting points for treating low sperm motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 describes an observation from Figure 2A but lacks quantification ('large number'), statistical analysis, or confirmation experiments. While potentially interesting for fertility applications, this remains an unvalidated observation. The claim that these 'may be target agonists' is speculative without further characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "The screen identified several compounds that potently inhibit sperm motility, representing either novel drug candidates or routes to target identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C9 is a summary statement that is partially supported by the specific hit data (C36-C41, C51-C52). However, the characterization as 'novel drug candidates' is premature given that many hits were unsuitable for progression (toxic, antibiotics, chemotherapeutics) and the most potent hits (KF-4939, thiol-containing compounds) require significant additional validation. The platform successfully identified hits, but their development potential remains uncertain.",
+    "result_type": "MAJOR"
+  }
+]

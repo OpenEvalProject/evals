@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "scRNA-Seq analysis of 1521 homeostatic neuromast cells identified seven major cell types including differentiated hair cells (cluster 1), young hair cells (cluster 2), proliferating hair cell progenitors (cluster 4), amplifying support cells (clusters 3, 10), central support cells (clusters 7, 8, 9, 14), and mantle cells (clusters 5, 6). These clusters were validated by in situ hybridization of marker genes showing distinct spatial localization patterns within neuromasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scRNA-Seq clustering analysis (C20-C25) is well-supported by computational methods and validated by in situ hybridization experiments (C26-C29, C36, C39). Cell cycle gene expression patterns (C41-C44) provide additional support for distinguishing proliferating populations. The integration of computational clustering with spatial validation provides strong converging evidence for the identified cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Proliferating support cells were spatially compartmentalized: cluster 3 cells represent amplifying support cells adjacent to mantle cells in D/V poles (6.5% proliferation rate), while cluster 4 cells are central support cells that differentiate into hair cells. A/P pole cells and central cells are relatively quiescent during homeostasis (0-1% proliferation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial compartmentalization of proliferating cells is supported by BrdU labeling data (C47-C48), regression analysis of cell cycle genes (C45-C46), and in situ hybridization of spatial markers (C50). The integration of scRNA-Seq clustering with prior lineage tracing data strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Two distinct cell lineages were identified: an amplifying lineage (clusters 5, 6, 12, 11, 10, 3) expressing sox2/sox21a/sox3 and showing low ribosomal gene expression in quiescent states, and a differentiating hair cell lineage (clusters 7, 9, 8, 14, 4) with increased ribosome synthesis upon activation. Mantle and support cells constitute the prosensory domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lineage assignments are supported by hierarchical clustering analysis (C53-C54), gene expression patterns (C51, C58-C59), and validated by prior lineage tracing experiments (C55-C56). The ribosomal gene expression patterns (C58-C60) provide additional molecular evidence consistent with quiescent versus activated stem cell states described in other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Pseudotime analysis ordered cells along a developmental trajectory from central support cells (clusters 7, 9, 8, 14) expressing progenitor markers (slc1a3a/glasta, lfng, ebf3a, gata2b, prox1a) through proliferating progenitors (cluster 4) expressing atoh1a to young (cluster 2) and mature hair cells (cluster 1), with progressive downregulation of support cell genes and upregulation of hair cell-specific genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pseudotime trajectory is supported by PAGA analysis (C4), marker gene expression patterns (C62-C64, C67, C69-C70), time-lapse imaging showing prox1a downregulation during differentiation (C65), and GO term analysis of downregulated genes (C71-C72). The convergence of computational trajectory inference with experimental validation provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Loss of fgf3, which is expressed exclusively in central support cells (clusters 7, 8, 9) and downregulated after hair cell death, leads to significantly increased proliferation during both homeostasis and regeneration, with amplifying divisions no longer restricted to D/V poles. Similar phenotypes were observed with fgfr1a/fgfr2 double mutants and dn:fgfr1a expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The role of fgf3 in inhibiting proliferation is supported by scRNA-Seq localization data (C76), fgf3 knock-in reporter validation (C77), BrdU proliferation assays in mutants (C78, C82), and genetic validation with receptor mutants (C79-C81). The spatial redistribution of proliferation in mutants (C82) provides additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C116",
+      "C117"
+    ],
+    "result": "scRNA-Seq analysis of fgf3 mutants revealed that fgf3 inhibits proliferation by suppressing Wnt signaling, likely via the Wnt inhibitor sost. In fgf3-/- neuromasts, sost is downregulated, the Wnt target gene wnt10a is upregulated, and Wnt inhibition by dkk1 rescues the increased proliferation phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanism is supported by differential gene expression analysis (C86, C117), in situ validation of sost downregulation (C87-C88), upregulation of Wnt target genes (C89), and genetic epistasis experiments showing dkk1 rescues the fgf3 mutant phenotype (C90). The convergence of expression data with functional rescue experiments provides strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Epistasis experiments demonstrate that Notch and Fgf signaling act largely in parallel to inhibit Wnt signaling and proliferation. Notch pathway genes are unaffected in fgf3-/- mutants, and NICD activation inhibits proliferation in both wildtype and fgf3-/- backgrounds, though Notch may play a minor role in maintaining fgf3 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The parallel pathway model is supported by in situ hybridization showing no effect of fgf3 loss on Notch pathway genes (C92), slight downregulation of fgf3 after Notch inhibition (C93-C94), and crucially, NICD overexpression experiments showing Notch can inhibit proliferation independently of Fgf3 (C95-C97). The epistasis experiments provide strong evidence for parallel rather than linear pathway architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors propose that neuromasts contain both active stem cells (amplifying cells in D/V poles that self-renew continuously) and quiescent stem cells (A/P compartment cells and mantle cells), with cell fate determined by location and signals rather than predetermined lineages. Support cells can convert to mantle cells when mantle cells are ablated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stem cell model is supported by PAGA connectivity analysis showing transitions between lineages (C100), proliferation patterns (C47-C49, C102-C103), and citations to prior lineage tracing studies (C104-C105). However, the quiescent stem cell designation for A/P cells (C103) is more speculative as it requires long-term lineage tracing validation that is acknowledged as future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Support cells express genes characteristic of stem cells in other organs including slc1a3a/glasta and prominin1a/b (neural stem cell markers), hopx and alpl (intestinal/hair follicle stem cell markers), and fabp7/Blbp and isl1 (neural and cardiac stem cell markers), suggesting conserved stem cell programs across tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conservation of stem cell markers is supported by scRNA-Seq expression data (C110-C111) and multiple citations to prior research establishing these genes as stem cell markers in other systems (C109, C112-C113). However, the functional significance of this expression pattern in neuromasts requires experimental validation beyond expression correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C106",
+      "C107"
+    ],
+    "result": "Ribosomal protein gene expression analysis revealed that mantle cells, A/P cells, and central support cells show low ribosome synthesis characteristic of quiescent stem cells, while activated/dividing cells show increased ribosomal gene expression, consistent with stem cell activation patterns in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ribosomal gene expression patterns (C58-C59) are well-documented in the scRNA-Seq data and the interpretation is supported by multiple citations to prior research on quiescent stem cells in other systems (C57, C106-C107). The inference that low ribosome synthesis indicates quiescence (C60) is reasonable but correlative rather than causative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The inhibitory effect of Fgf signaling on proliferation appears evolutionarily conserved, as Wnt signaling induces proliferation in mammalian hair cell progenitors, Fgf inhibits proliferation in chicken utricle and basilar papilla, and Fgf2/Fgf20 inhibit support cell proliferation in mammalian cultures. Sostdc1 may be the relevant Wnt inhibitor in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evolutionary conservation is supported by multiple citations to prior research in mammals and birds (C118, C122-C123), database evidence for Sostdc1 expression in mammalian ear (C119), and the authors' data in zebrafish. However, the specific mechanism via Sostdc1 in mammals (C119) requires experimental validation. The speculation about alternative mechanisms via Sprouty2 (C120-C121) is appropriately tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "While fgf3's main role appears to be regulating proliferation, it may also maintain hair cell progenitors in an undifferentiated state, though this effect is subtle as only limited increases in hair cell numbers are observed and scRNA-Seq did not reveal obvious cell fate regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim is appropriately presented as speculation (C125) based on analogy to developing zebrafish ear and mouse cochlea studies (C126-C127). The authors acknowledge the effect would be subtle (C128) and that their scRNA-Seq analysis did not identify clear candidates for fate regulation. This represents a reasonable hypothesis for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors propose that in mammals, short-term inhibition of Notch and/or Fgf pathways may be more effective for functional regeneration than prolonged treatments, based on observations that both pathways are reactivated before regeneration is complete in zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is presented as speculation (C131) for mammalian therapy based on zebrafish observations. While the parallel inhibition of Wnt by both pathways is well-supported in zebrafish (C130), the translation to optimal mammalian treatment strategies requires experimental validation. The temporal dynamics argument is logical but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background context establishing that hair cell loss causes deafness in mammals but regenerates in non-mammalian vertebrates, the zebrafish lateral line is a valid model system with evolutionarily conserved hair cell structure and function, and prior work identified two major support cell lineages (amplifying and differentiating) with spatial compartmentalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by extensive citations to prior literature (C1-C2, C6-C15) and the authors' own prior work (C16-C19). This establishes the scientific context and rationale for the current study. All claims are appropriately referenced and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1725 @@
+{
+  "submission": {
+    "id": "8750afde-eeea-4f29-9925-7cf3370bd128",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:20:45.143367Z",
+    "updated_at": "2025-12-02T18:20:45.143367Z"
+  },
+  "content": [
+    {
+      "id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "submission_id": "8750afde-eeea-4f29-9925-7cf3370bd128",
+      "content_type": "manuscript",
+      "content_text": "# Eco-evolutionary dynamics of nested Darwinian populations and the emergence of community-level heredity\n\n## Authors\n\n- Guilhem Doulcier<sup>1</sup> ([ORCID: 0000-0003-3720-9089](https://orcid.org/0000-0003-3720-9089)) \u2020\n- Amaury Lambert<sup>3</sup> ([ORCID: 0000-0002-7248-9955](https://orcid.org/0000-0002-7248-9955))\n- Silvia De Monte<sup>2</sup> ([ORCID: 0000-0001-7953-5494](https://orcid.org/0000-0001-7953-5494))\n- Paul B Rainey<sup>1</sup> ([ORCID: 0000-0003-0879-5795](https://orcid.org/0000-0003-0879-5795))\n\n### Affiliations\n\n1. Laboratoire de G\u00e9n\u00e9tique de l'Evolution, Chimie Biologie et Innovation, Universit\u00e9 PSL Paris France\n2. Institut de Biologie de l\u2019\u00c9cole Normale Sup\u00e9rieure (IBENS), \u00c9cole Normale Sup\u00e9rieure, Universit\u00e9 PSL Paris France\n3. Laboratoire de Probabilit\u00e9s, Statistique et Mod\u00e9lisation (LPSM), Sorbonne Universit\u00e9, CNRS Paris France\n4. Center for Interdisciplinary Research in Biology (CIRB), Coll\u00e8ge de France, Universit\u00e9 PSL, CNRS, INSERM Paris France\n5. Department of Evolutionary Theory, Max Planck Institute for Evolutionary Biology Pl\u00f6n Germany\n6. Department of Microbial Population Biology, Max Planck Institute for Evolutionary Biology Pl\u00f6n Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nInteractions among microbial cells can generate new chemistries and functions, but exploitation requires establishment of communities that reliably recapitulate community-level phenotypes. Using mechanistic mathematical models, we show how simple manipulations to population structure can exogenously impose Darwinian-like properties on communities. Such scaffolding causes communities to participate directly in the process of evolution by natural selection and drives the evolution of cell-level interactions to the point where, despite underlying stochasticity, derived communities give rise to offspring communities that faithfully re-establish parental phenotype. The mechanism is akin to a developmental process (developmental correction) that arises from density-dependent interactions among cells. Knowledge of ecological factors affecting evolution of developmental correction has implications for understanding the evolutionary origin of major egalitarian transitions, symbioses, and for top-down engineering of microbial communities.\n\n## Introduction\n\nThirty years ago, in an article arguing the importance of the \u2018superorganism\u2019, Wilson and Sober expressed surprise that biologists had not recognised that communities \u2014 in the laboratory \u2014 \u2018could be treated as entities with heritable variation and selected accordingly\u2019 (Wilson and Sober, 1989). That they might be treated as such, stemmed from recognition that the eukaryotic cell is a tight-knit community of two once free-living microbes (Margulis, 1970), but also from observations in nature of social insect colonies (Wilson, 1985), cellular slime molds (Bonner, 1982; Buss, 1982), and especially of phoretic insect communities (Wilson and Knollenberg, 1987).\n\nPhoretic insect communities comprise a focal organism \u2014 often an insect such as a beetle \u2014 that moves between patchily distributed ephemeral resources carrying with it a myriad of associated organisms, including mites, nematodes and microbes. Communities associated with each insect differ by virtue of the composite members, with the conceivable possibility that some associations may harm the carrier insect, while others may bring benefit. Given that the role of dispersal is loosely analogous to a community-level reproduction event, Wilson and Sober argued that selection at the level of insect communities was likely to trump within-community selection leading to communities \u2018becoming organised into an elaborate mutualistic network that protects the insect from its natural enemies, gathers food, and so on\u2019.\n\nIf this might happen in nature, then why might this not be realised even more potently in the laboratory? Indeed, the logic of Darwinism says it should. Provided there exists heritable variance in fitness at the level of communities, then communities will participate as units (in their own right) in the process of evolution by natural selection (Lewontin, 1970; Godfrey-Smith, 2009). In nature, the necessary conditions are likely rare (Goodnight and Stevens, 1997), but ecological circumstances can sometimes conspire to ensure that variation among communities is discrete, that communities replicate and that offspring communities show some resemblance to parental communities. Phoretic insect communities are a plausible case in point. In the laboratory, however, the experimenter can readily construct conditions that ensure communities (or any collective of cells) are units of selection (Johnson and Boerlijst, 2002; Day et al., 2011; Xie and Shou, 2018; Xie et al., 2019). A critical requirement is a birth-death process operating over a time scale longer than the doubling time of individual cells (Hammerschmidt et al., 2014; Rainey et al., 2017; Black et al., 2020).\n\nEmpirical support for the prediction that selection really can shape communities was provided by Swenson and colleagues who performed two studies in which artificial selection was imposed on microbial communities from soil (Swenson et al., 2000a; Swenson et al., 2000b). In the first, they selected communities that affected plant growth. In the second, they selected communities for ability to degrade the environmental pollutant 3-chloroaniline. In both instances, communities at extreme values of community function were repeatedly propagated. In both studies, a significant response was measured at the level of the community.\n\nAlthough the finding was a surprise (Goodnight, 2000), it is consistent with expectations that communities of entities \u2014 no matter their identity \u2014 will participate in the process of evolution by natural selection provided communities are discrete, they replicate, and that offspring communities resemble parental communities (Godfrey-Smith, 2009). Discreteness is conferred by simply compartmentalising communities via their placement in independent vessels. Replication is achieved by taking a sample of the selected communities with transfer to a new vessel. Heredity, however, is less tangible, especially in the Swenson experiments, where the selected communities were pooled before redistribution into fresh vessels. Nonetheless, intuition says that heredity becomes established through interactions (Wilson and Sober, 1989; Goodnight, 2000). Understanding the mechanistic bases of community-level heredity and its emergence motivates our study.\n\nWe begin by posing a thought experiment realisable via ever improving capacity to manipulate small volumes of liquid (Baraban et al., 2011; Sackmann et al., 2014; Cottinet et al., 2016). Consider a millifluidic device that controls the composition of emulsions. Consider thousands of microlitre-sized droplets each harbouring communities comprised of two types of microbes that differ solely in the colour of a fluorescent protein: one type encodes a red fluorescent protein and the other a blue fluorescent protein. Interest is in the evolution of communities that are of the colour purple (an equal ratio of red-to-blue cells). Within each droplet, red and blue microbes replicate with growth rate and interaction rates being subject to evolutionary change. In the mean time, the experimenter, via lasers installed on the device, has determined the precise colour of each droplet and a priori decided that half of the droplets with composition furthest from an equal ratio of red-to-blue will be eliminated, whilst the fraction whose colour is closest to purple will be allowed to replicate. Replication involves a dilution step during which an aliquot of cells are sampled and nutrients replenished. A further round of growth then ensues along with a further round of droplet-level selection. The protocol continues thereafter with selection taking place at the level of communities via a birth-death process. In essence the schema, outlined in Figure 1 and inherent in the work of Swenson and colleagues, involves exogenous imposition of ecological conditions sufficient to cause droplets to function as units of selection. The concept, elaborated in detail elsewhere, is referred to as \u2018ecological scaffolding\u2019 (Black et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53433/elife-53433-fig1-v2.jpg)\n\n**Figure 1.:** Collectives (large circles) follow a birth-death process (grey) with non-overlapping generations. Collectives are composed of particles (small spheres) that also follow a birth-death process (growth, represented by thick green arrows). Offspring collectives are founded by sampling particles from parent collectives (dilution, represented by thin green arrows, first and third rows). Survival of collectives depends on colour. Collectives that contain too many blue (second row) or red (fourth row) particles are marked for extinction. The number of collectives is kept constant. Mutation affects particle traits (see main text for details).\n\nUnder this scaffolded-regime, communities within droplets are endowed with Darwinian-like properties (we use this term to convey the fact that removal of the scaffold leads, at least initially, to complete loss of community-level individuality). Collective-level variation is discretised by virtue of the bounds provided by the immiscibility of oil and water (communities are thus confined to droplets). Additionally, the device ensures that droplets engage in a birth-death process: droplets furthest from the collective-level trait are extinguished, whereas those closest to the colour purple are diluted and split, thus effecting collective-level reproduction. Not determined by the device however is the relationship between parent and offspring droplets. Because the trait of the parent community depends on properties of the cellular constituents, there is \u2014 in the absence of interactions between red and blue cells \u2014 little chance that purple-coloured communities will reliably give rise to purple-coloured offspring. This is in part due to the stochastic nature of the dilution phase (a droplet with an equal ratio of red to blue is unlikely to give rise to offspring droplets founded with the same equal ratio of types) but also to within-droplet selection favouring fast growing types. Purple-coloured droplets can be maintained, as envisioned by the \u2018stochastic corrector\u2019 model (Maynard Smith and Szathmary, 1995; Grey et al., 1995; Johnston and Jones, 2015), provided only those communities with the correct colour are propagated. However, within-droplet selection favours rapidly growing cells resulting in successive reduction of the number of viable droplets.\n\nHere, we show that when cellular interactions are also allowed to evolve, selection imposed at the collective level, leads to evolution of a developmental-like process, which ensures that offspring communities resemble parental communities, irrespective of the initial phenotype at the moment of birth. We illustrate the evolutionary process by means of stochastic simulations for nested populations of cells (particles) and communities (collectives) undergoing a death-birth process. In order to generalise our findings we derive a deterministic approximation, which we then use to show how selection on community phenotype drives the evolution of ecological interactions that are the basis of community-level heredity.\n\n## Results\n\n### A nested model of collective evolution\n\nAs described above and depicted in Figure 1, we consider a nested model in which particles are discretised into a population of collectives. Each collective is comprised of two kinds of self-replicating particle (red and blue) that together determine collective colour. Colour is important because it is the phenotype upon which collectives succeed or fail. Collectives that are too far from an optimal colour face extinction, whereas those within acceptable bounds persist with the possibility of reproduction. Birth-death at the level of collectives affects the eco-evolutionary dynamics of particles as particle-level traits that give rise to unfit collectives are eliminated.\n\nWe firstly present numerical simulations where particles undergo a stochastic birth-death process (Champagnat et al., 2006; Doebeli et al., 2017) and collectives are selected based on colour. The details of the model are described in Appendix 1, but we introduce the main assumptions and underlying principles here. Each particle of type $i\\in{0,1}$ is characterised by four traits (hereafter particle traits): colour ($c_{i}$, red or blue), net maximum growth rate $r_{i}$, and two competition parameters ($a_{i}^{intra}$ and $a_{i}^{inter}$). At any particular instant particles either reproduce or die. Particles of type i reproduce with a constant birth rate $r_{i}$ and die as a consequence of competition. The rate of death is density-dependent such that each particle of type increases the death rate of $i$-type particles by $r_{i}\u2062a_{j}^{intra}$ if they share the same colour ($c_{j}=c_{i}$), or by $r_{i}\u2062a_{j}^{inter}$ when colours are different ($c_{j}\\neqc_{i}$). All transition rates can be found in Appendix 1, paragraph 'particle-level ecology'. Competition rates are referred to as \u2018interaction\u2019 traits or parameters. We expand on more general types of interaction \u2014 from exploitative to mutualistic \u2014 in the Discussion and in Appendix 3.\n\nMutations are introduced at the level of particles. Mutation affects either particle maximum growth rate ($r$) or the inter-colour competition parameter ($a^{inter}$) by a small random quantity. In the spirit of adaptive dynamics (Geritz et al., 1998), the particle type carrying the new set of traits is referred to as a mutant, and the existing type is designated the resident. Within every collective and at any time, there are four populations composed of resident and mutant types of the two colours. Mutations are assumed to be rare. In order to accelerate numerical simulations, one mutant individual is introduced every time one population of a given colour goes extinct in one of the collectives. The newly added type has the the same colour as the extinct type.\n\nCollectives also undergo a birth-death process. The number of collectives\u00a0$D$\u00a0is constant and collective generations are discrete and non-overlapping. Each collective generation begins at time $t=0$ with offspring collectives containing $B$ founding particles. Particles replicate, interact and evolve according to the particle traits. After duration $T$, collectives attain \u2018adult\u2019 stage, and a fixed proportion of collectives $\u03c1$ is marked for extinction. This allows the possibility of selection on collectives based on their properties (the collective phenotype), which is derived from the composing particles. Our focus is collective colour, which is defined as the proportion $\u03d5$ of red particles.\n\nInitially, collectives contain red and blue particles in uniformly distributed ratios. Collectives are subject to evolution under two contrasting regimes: one neutral and the other selective. Under the neutral regime, the pool of collectives marked for extinction is sampled at random, whereas under the selective regime, collectives marked for extinction are those whose adult colour departs most from an arbitrarily fixed optimal colour $\u03d5^$. Extinguished collectives are replaced by offspring from uniformly sampled extant collectives (Figure 1). All other collectives are replaced by their own offspring. Reproduction involves uniformly sampling $B$ particles from the parent collective. Particles from one collective never mix with particles from any other. This establishes an unambiguous parent-offspring relationship (De Monte and Rainey, 2014). The adult colour of offspring collectives depends on the founding frequencies of particles (whose variance is negatively related to bottleneck size $B$), and on ensuing particle-level population dynamics.\n\n### Selection on collectives drives the evolution of particle traits\n\nIn the absence of collective-level selection (neutral regime), collectives converge to a monochromatic phenotype (Figure 2A). Once collectives are composed of either all-red or all-blue particles, the contrasting colour cannot be rescued (colour change by mutation or migration is not possible). The distribution of collective colour becomes biased toward faster-growing particle types, with selection driving a gradual increase in particle growth rate (Figure 2C). The inter-colour competition trait (Figure 2E) is irrelevant once collectives become monochromatic (evolution is then governed by drift).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53433/elife-53433-fig2-v2.jpg)\n\n**Figure 2.:** A population of $D$\u00a0=\u00a01000\u00a0D\u00a0collectives was allowed to evolve for $M$ =\u00a010,000\u00a0generations under the stochastic birth-death model described in the main text (see Appendix 1 for details on the algorithm used for the numerical simulations). Initially, each collective was composed of $B=15$ particles of two types: red ($r_{0}=6,a_{0}^{intra}=0.8/K,a_{0}^{inter}=0.15/K,c_{0}=red$) and blue ($r_{1}=4,a_{1}^{intra}=0.3/K,a_{1}^{inter}=0.15/K,c_{1}=blue$), with $K$\u00a0=\u00a01500. The proportions at generation 0 were randomly drawn from a uniform distribution. At the beginning of every successive collective generation, each offspring collective was seeded with founding particles sampled from its parent. Particles were then grown for a duration of $T$\u00a0=\u00a01. When the adult stage was attained, 200 collectives ($\u03c1=20%$) were extinguished, allowing opportunity for extant collectives to reproduce. Collectives were marked for extinction either uniformly at random (neutral regime, panels A, C, E, as well as Appendix 1\u2014figures 1A and 4A), or based on departure of the adult colour from the optimal purple colour ($\u03d5^=0.5$) (selective regime, panels B, D, F, as well as Appendix 1\u2014figures 1B and 4B). Panels A and B, respectively, show how the distribution of the collective phenotype changes in the absence and presence of selection on collective colour. The first 30 collective generations (before the grey line) are magnified in order to make apparent early rapid changes. In the absence of collective-level selection purple collectives are lost in fewer than 10 generations leaving only red collectives (A) whereas purple collectives are maintained in the selective regime (B). Panels C-F illustrate time-resolved variation in the distribution of underlying particle traits. A diversity of traits is maintained in the population because every lineage harbours two sets of traits for every colour (see Appendix 1). Selection for purple-coloured collectives drives evolutionary increase in particle growth rate (D) compared to the neutral regime (C). In the neutral regime, inter-colour evolution of competition traits is driven by drift (E), whereas with collective-level selection density-dependent interaction rates between particles of different colours rapidly achieve evolutionarily stable values, with one colour loosing its density-dependence on the other (F).\n\nThe dynamic is very different once selection is imposed at the level of collectives. By rewarding collectives closest to the colour purple (a fixed $\u03d5^=0.5$ ratio of red to blue particles), it is possible to prevent fixation of either colour (Figure 2B). Starting, as above, from collectives containing red and blue particles in uniformly distributed ratios, mean collective colour shifts toward red. The time scale is, as in the neutral case, a consequence of the faster initial growth rate of red particles. For a few tens of generations, the population of collectives remains strongly biased towards red. The optimal phenotype is maintained by selection for the least worse collective colour precisely as envisaged by the stochastic corrector model (Maynard Smith and Szathmary, 1995; Appendix 1\u2014figure 5). Subsequently, however, the trend reverses and mean collective colour progressively approaches purple. From generation 1000, variance in the distribution of colour decreases, as a consequence of improvement in the ability of purple-parent collectives to give rise to offspring collectives that at adult age resemble parental types. This is associated with escalating particle growth rate (Figure 2D) and a saturating increase in between-colour competition (Figure 2F). The latter reflects directional selection that moves the average phenotype in the population of collectives towards the optimal colour $\u03d5^$ (reached by generation 7000).\n\nBy affecting particle traits, selection on colour also modifies dynamics within collectives. Figure 3 shows variation of colour within a single collective growth phase at generation 3 and generation 9000. Prior to selection shaping particle traits, both red and blue particle types follow approximately exponential growth (Figure 3C). The resulting adult collective colour is thus biased towards the faster-growing red type (Figure 3A). In contrast, at generation 9000 (Figure 3B), both particle types reach a saturating steady state that ensures that adult colour is purple. Initial departures from a 1:1 ratio \u2014 caused by the stochasticity of collective reproduction and/or particle growth dynamics \u2014 are compensated for during the growth phase (Figure 3D). Compensation is a consequence of the evolution of inter-colour competition traits (Figure 2F). Population expansion is in turn dependent upon earlier increases in particle growth rate (Figure 2D). Moreover, selection favours competition trait values for which blue types have no effect on red types: $a^{i\u2062n\u2062t\u2062e\u2062r}$ of blue types is close to zero by generation 5000 (Figure 2F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53433/elife-53433-fig3-v2.jpg)\n\n**Figure 3.:** A sample of 300 (from a total of 1000) collectives were taken from each of generations 3 (A,C) and 9000 (B,D) in the evolutionary trajectory of Figure 2. The dynamic of particles was simulated through a single collective generation ($0\\leqt\\leqT=1$), based on the particle traits of each collective. Each grey line denotes a single collective. The frequency distribution of adult collective colour (the fraction of red particles at time $T$), is represented in the panel to the right. The grey area indicates the fraction $\u03c1$ of collectives whose adult colour is furthest from $\u03d5^=0.5$, that will be eliminated in the following collective generation. Single orange lines indicate collectives whose growth dynamic \u2014 number of individual particles \u2014 is shown in C and D, respectively. Dotted lines show the deterministic approximation of the particle numbers during growth (Appendix 2 Equation 1). Initial trait values result in exponential growth of particles (C), leading to a systematic bias in collective colour towards fast growing types (A). Derived trait values after selection yield a saturating growth toward an equilibrium (B) leading to the re-establishment of the purple colour by the end of the generation, despite initial departure (A). This is associated to the transition from a skewed distribution of collective colour, where almost all collectives are equally bad, to a narrow distribution centered on the target colour.\n\nKey features of the evolutionary trajectory discussed so far are representative of replicate realisations of the stochastic individual-based nested model. In the section \u2018Variability of the derived particle traits\u2019 of Appendix 1 we show that in repeated simulations, the average adult collective colour always falls within a few percentage of the target colour. Moreover, collective-level selection applies more stringently to interaction parameters than to growth rates, with the latter showing a broader distribution of derived values. These conclusions also hold when the target colour $\u03d5^$ is different from 0.5, with broader variation from one realisation to the other and slower convergence to the target as colour ratios become more extreme (see Appendix 1, paragraph \u2018Different target colours\u2019).\n\nAbility of offspring collectives to correct departures from the optimal colour during the course of growth is akin to a developmental, or canalising process: irrespective of the phenotype of the newborn (which will likely be different to that of the adult) the child \u2014 as it grows to adulthood \u2014 develops a phenotype that closely resembles that of the parent. Evidence of this apparent canalising process can be seen upon removal of collective-level selection (Figure 4). Collectives founded by particles with ancestral traits become composed of a single (red or blue) colour in less than 10 generations (Figure 4A). In contrast, derived collectives are comprised of particles whose traits ensure that collectives continue to express phenotypes narrowly distributed around the optimal (purple) phenotype (as long as there is no mutation [Figure 4B]). Even when mutation is allowed to drive within- and between-collective dynamics, stability of phenoytpe holds for more than 200 generations (Appendix 1\u2014figure 6).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53433/elife-53433-fig4-v2.jpg)\n\n**Figure 4.:** Comparison of the dynamics of the colour distribution after removing selection (neutral regime). The population of 1000 collectives is initially composed of collectives with a colour distribution identical to that at generation 10,000 in Figure 2B. Particle traits are: (A) as in generation 1 of Figure 2; (B) derived after 10,000 generations of collective-level selection for purple. In both instances, particle mutation was turned off in order to focus on ecological dynamics, otherwise parameters are the same as in Figure 2A. Appendix 1\u2014figure 6 shows the outcome with particle mutation turned on. The first 10 collective generations are magnified in order to make apparent the initial rapid changes. The particle traits derived after evolution are such that the majority of collectives maintains a composition close to the optimum $\u03d5^$ even when the selective pressure is removed. This feature is instead rapidly lost in populations of collectives with the same initial colour, but with particle traits not tuned by evolution.\n\n### From particle ecology to collective phenotype\n\nTo understand the mechanistic basis of the canalising process, particle traits must be linked to the evolutionary emergence of collective-level inheritance, which we define as the capacity of collectives to re-establish the parental collective colour. Figure 5 shows the relationship between the initial colour of collectives at the moment of birth (the moment immediately following dilution, $t=0$\u00a0[the newborn colour]), and collective colour after a single particle growth cycle (the moment immediately preceding dilution, $t=T$\u00a0[the adult colour]). Figure 5A shows this relationship at generation 3 while Figure 5B shows this relationship at generation 9000.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53433/elife-53433-fig5-v2.jpg)\n\n**Figure 5.:** The adult colour of collectives as a function of their newborn colour is displayed for collectives of uniformly distributed initial colour. Stochastic simulations are realized by using particle traits representative of: (A) generation 3 and (B) generation 9000 (as in Figure 3). Dots indicate the mean adult colour from 50 simulations and its standard deviation. The orange line depicts the growth function $G$ for the corresponding deterministic approximation (see main text and Appendix 2). The dashed line traces the discrete-time deterministic dynamics of the collective colour, starting from $\u03d5=\\frac{1}{B}$, and across cycles of growth and noise-less dilution. For ancestral particle traits (A), collective colour converges towards the red monochromatic fixed point. After selection for collective colour (B), the growth function is such that the optimum colour ($\u03d5^$) is reliably produced within a single generation for virtually the whole range of possible founding colour ratios. The latter mechanism ensures efficient correction of alea occurring at birth and during development.\n\nAt generation 3, the proportion of red particles increases (within a collective generation), irrespective of the initial proportion. This is because red particles grow faster than blue and the primary determinant of particle success is growth rate (interactions are negligible in exponential growth). Thus, the only way that purple collectives can be maintained is if the collective phenotype is sufficiently noisy, to ensure that some collectives happen by chance to be purple, due to, for example, stochastic effects at dilution. Even if offspring collectives do not resemble their parents, purple colour is maintained via strong purifying selection that purges collectives that are either too red or too blue. The mechanism is stochastic correction (Maynard Smith and Szathmary, 1995; Grey et al., 1995; Johnston and Jones, 2015).\n\nThis is in marked contrast to the situation at generation 9000. After a single growth cycle, the proportion of red particles increases when the initial proportion is below, and decreases when it is above, the optimal proportion 0.5. Thus, at generation 9000, irrespective of initial conditions, the adult colour of any given collective will be closer to $\u03d5^=0.5$ than it was on founding. Accordingly, extreme purifying selection is no longer required to maintain the parent-offspring relationship. Indeed, offspring collectives return to the parent phenotype even when the phenotype at birth departs significantly from the parent (adult) phenotype. \u2018\u2018Correction\u2019\u2019 stems from the ecological dynamics of the particles and resembles a developmental process. Hereafter we refer to this correction process as the developmental corrector.\n\nThe relationship between newborn and adult colour of collectives shown in Figure 5 can be used to follow the fate of collectives over several cycles of growth and reproduction, provided the stochastic effects associated with the dilution phase are momentarily ignored. The iteration using particle trait values from generation 3 is shown by the dotted line in Figure 5A (the adult colour of a collective is the newborn colour for the next cycle, following a 'staircase' geometric procedure). Because red particles grow faster than blue, it takes just six collective generations for red particles to fix within collectives. Conversely, after particle trait evolution (Figure 5B), the same staircase approach applied to newborn collectives of any colour shows rapid convergence to the colour purple (0.5) irrespective of the starting point. The difference in the relationship between initial and final colour at generation 3 and 9000 is evidence of the emergence of a mechanism for developmental correction.\n\nIn order to systematically explore the possible newborn-to-adult colour map and to understand how it changes through the evolution of particle traits, we use a deterministic approximation (orange line in Figure 5). This approximation is denoted $G$ or growth function (Appendix 2, Definition 2) and stems from an ordinary differential equation model often referred to as the competitive Lotka-Volterra system (Appendix 2, Equation 1). This model is the limit for vanishing noise of the stochastic particle ecology, and provides a good approximation of the simulations (Dotted lines in Figure 3C\u2013D). The growth function $G$ captures the outcome of the ecological dynamics (i.e. the fraction of red particles) after founding populations are allowed to grow for a finite time interval $T$. We note similarity between the $G$ function and the recently proposed \u2018community-function landscape\u2019 (Xie and Shou, 2018). The shape of $G$ depends on the value of particle traits $\\theta$ (growth rates $r_{0}$ and $r_{1}$, and competition parameters $a_{00}=a_{0}^{intra}$, $a_{10}=a_{0}^{inter}$, $a_{01}=a_{1}^{inter}$, $a_{11}=a_{1}^{intra}$), but also on the bottleneck size at dilution $B$ and the collective generation duration $T$. The fixed points of $G$ (i.e. $\u03d5$ such that $G\u2062(\u03d5)=\u03d5$) are of particular interest: in the deterministic model, these represent colours that are left unchanged during a generation. Such a fixed point is stable if the colours of collectives starting in its neighbourhood all converge to it ($\u03d5=1$ in Figure 5A, $\u03d5=0.5$ in Figure 5B), and unstable otherwise ($\u03d5=0$ in Figure 5A, $\u03d5=0$ and $\u03d5=1$ in Figure 5B).\n\nUnder collective-level selection for colour, $T$ and $B$ are constant and particle traits evolve so that $G$ eventually has a stable fixed point, corresponding to the target colour $\u03d5^$. Progressive change in shape of the $G$ function across collective generations in a simulated lineage (Figure 2B) is illustrated in Figure 6. Note that these changes are continuous: small mutations in particle traits reflect as small changes in the shape of $G$.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/53433/elife-53433-fig6-v2.jpg)\n\n**Figure 6.:** function associated with the resident types for a single lineage of collectives from the simulation of Figure 2B, plotted every 20 collective generations from 0 to 9000. The result of iterations of $G$ gradually changes from fixation of the fast growing particle (Figure 5A) to convergence toward the colour purple (Figure 5B).\n\nThe evolutionary trajectory of Figure 2B can now be understood in terms of the progressive evolution of particle traits (see Appendix 2 for a detailed description). At the beginning, particles compete mostly during exponential phase, so that adult colour is biased towards the fast-growing type. Initial improvement in transmission of colour from parent to offspring arises as exponential growth rates $r_{i}$ of the particles align. Correspondingly, the $G$ function approaches linearity. A successive increase in maximal growth rate separates particle and collective time scales, allowing particles to experience density-dependent interactions. Eventually, such interactions evolve towards a regime where the $G$ function is nonlinear and fluctuations are readily compensated, thus developmental correction ensures a reliable colour inheritance.\n\nThe $G$ function, which allows characterisation of particle ecology, can now be used as a guide to optimise the \u2018life cycle\u2019 of growth and dilution that acts as a scaffold for the evolutionary process. In a typical experiment of community-level evolution, collective generation duration $T$ and bottleneck size $B$ are fixed. Some choices of these collective-level parameters are however likely to lead to collective phenotypes that are so far from the optimum that collective lineages go extinct. For instance, if in the first-generation competitive exclusion occurs rapidly, then distinguishing collectives based on collective colour may be impossible. Intuition suggests that the closer the fixed point of the $G$ function is to the target colour, the more efficient collective-level selection will be, and the faster the evolutionary dynamic. It is thus possible to use the distance between the fixed point of $G$ and the target composition $\u03d5^$ as a proxy for the probability that collective lineages will go extinct before attaining the desired colour. Below, we examine how the position of the fixed point of $G$ changes as a function of collective generation duration $T$ and bottleneck size $B$.\n\n### Effect of collective generation duration and bottleneck size\n\nThe growth function $G$ is readily computed from the particle traits and collective parameters even though it has in general no analytic expression (but see Appendix 2 for limit cases of exponential and saturating particle growth). There are four possible qualitative shapes of $G$, that differ in the position and stability of the fixed points (illustrated in Appendix 2\u2014figure 3-1 to 3-4).\n\nThe qualitative dependence of $G$ and its fixed points on collective-level parameters varies with the underpinning particle ecology, making it easier for some communities to be starting points for the successful evolution of inheritance. Particle traits can be classified in four broad classes, based of the nature of the corresponding ecological equilibrium. For each of these classes, and when red particles grow faster than blue $r_{0}>r_{1}$, the fixed points of $G$ are illustrated in Appendix 2\u2014figure 3-A to 3-D as a function of the collective-level parameters $B$ and $T$. Figure 7 refers to the situation where inter-colour interaction traits are smaller than intra-colour interaction traits. Here, particle populations converge in the long term to a coexistence equilibrium, where collective colour is $\u03d5^{*}=\\frac{a_{11}-a_{01}}{a_{11}-a_{01}+a_{00}-a_{10}}$ (in general, different from the optimum). This equilibrium can be approached within a single collective generation if $T$ and $B$ are large (top right corner). On the other hand, when $T$ and $B$ are small (red region), the only stable fixed point invovles collectives composed solely of fast-growing particles. This corresponds to cases where individual and collective time scales (quantified by $r^{-1}$ and $T$, respectively) are insufficiently separated, or newborn size is too small, so that particle demography is essentially exponential and interactions cannot provide sufficient correction. For rapid evolution of collective colour, the most favourable starting position is one where the fixed point is closest to the optimal colour (for $\u03d5^=0.5$ this occurs for intermediate collective generation duration and bottleneck size for the trait values in Figure 7). Knowledge of the exact values requires, however, some preliminary measure of the ecological dynamics. Even in the absence of such information, the diagram in Figure 7 can be used to optimise experimental design by revealing intrinsic trade-offs. A decrease in generation time, necessary for practical reasons, may for instance, be compensated by an increase in bottleneck size, without affecting the average collective phenotype.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/53433/elife-53433-fig7-v2.jpg)\n\n**Figure 7.:** Stable fixed point of $G$ as a function of collective-level parameters.Classification of the qualitative shape of the growth function and dependence on collective parameters B (bottleneck size) and T (growth phase duration). Considered here are particle traits that allow coexistence ($a_{01}<a_{11}$ and $a_{10}<a_{00}$, $r_{0}>r_{1}$, see Appendix 2\u2014figure 3 for the other possible parameter regions). The black line represents the limit of the region of stability of the fixed point of G, separating the two qualitatively different scenarios illustrated in the inset (see Appendix 2, Proposition 4 for its analytic derivation): for short collective generations and small bottleneck size, the faster growing red type competitively excludes the blue type over multiple collective generations. In order for particle types to coexist over the long term, growth rate and the initial number of particles must both be large enough for density-dependent effects to manifest at the time that selection is applied.\n\nEven when collective-level parameters are optimised so that the attractor of the $G$ function is initially close to the target colour, collective-level selection will keep acting on the particle traits, and affect phenotypic variability within the population of collectives. As stability of the fixed point increases, so to does fidelity of phenotype transmission from parent to offspring collectives. Once collective-level processes are set as to minimise the probability of collective extinction, the main obstacles to evolving higher inheritance come from constrains acting on particle traits, which may limit the range of attainable $G$ functions. Trade-offs on particle ecology may prevent the $G$ function to attain an internal fixed point. We discuss two examples on constrained evolution in the following paragraph.\n\n### Constrained trajectories\n\nThus far, we have considered evolution within a four-dimensional parameter space defined by maximum growth rates and inter-colour competition parameters. In real systems, however, constrains and trade-offs may limit the range of achievable variations in particle traits. For instance, even though faster\u00a0growing particles will always experience positive selection, cell replication rate cannot increase boundlessly. Here, we consider two instances of constrained evolution, where only a subset of particle traits are allowed to mutate.\n\nFirst, we consider the case where competition parameters are vanishingly small, so that $G$ has no internal fixed point. Under such conditions, particle growth rates evolve to be identical (Figure 8A). In the absence of interactions, this is the only available solution to maintain collectives with an equal number of red and blue type particles. Under these circumstances, $G$ converges to the identity function. In the deterministic approximation, collective composition remains constant in time, but stochastic fluctuations that cause colour to deviate from the optimum are amplified across collective generations. These deviations are nonetheless corrected in the collective population by propagating only those collectives whose colour is closest to the optimum. Such stochastic correction (Maynard Smith and Szathmary, 1995), however, has a high risk of failure if selection is strong and collective population size is small.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/53433/elife-53433-fig8-v2.jpg)\n\n**Figure 8.:** Dynamics through time of resident particle traits (black dots, whose size measures their abundance in the collective population) along simulated evolutionary trajectories of 300 generations, when particle-level traits are constrained. For both panels $D=1000$, $\u03d5^=0.5,\u03c1=20%$, $B=15$, and $T=1$. The trajectory of the average resident traits is shown in white. The heatmap represents the value of $G\u2062(0.5)$ as a function of the evolvable traits, and the white dotted line indicates where collective colour is optimum. (A) Particle growth rates evolve and particles do not compete ($a^{inter}=a^{i\u2062n\u2062t\u2062r\u2062a}=0$). The evolutionary dynamics leads to alignment of growth rates ($r_{0}=r_{1}$). (B) Inter-colour competition traits evolve and particle growth rates are constant ($r_{0}=r_{1}=25$). The evolutionary dynamics first converge toward the optimality line. In a second step, asymmetric competition evolves: $a_{1}^{inter}\u21920$ and $a_{0}^{inter}\u2192a_{0}^{intra}-a_{1}^{intra}$. This results in a flatter $G$ function around the fixed point, providing a faster convergence to optimum colour across collective generations (Appendix 2\u2014figure 6). Similar results are obtained for non-identical, but sufficiently high, growth rates.\n\nSecond, we consider the case when mutations only affect the two inter-type competition parameters, while growth rates are held constant (to sufficiently high values, so that particles experience density-dependent effects in the growth phase). The evolutionary trajectory can be visualised in the plane of competition parameters $(a_{01},a_{10})$. Figure 8B shows the result of a stochastic simulation superimposed to the value of $G\u2062(0.5)$. Independent of the initial values of the interaction parameters, evolution draws the system to the manifold associated with the optimal proportion $\u03d5^$ (white dashed line). Evolution within this manifold is neutral in the deterministic approximation, but the presence of stochastic fluctuations drives further improvement of the fitness landscape. Correction is indeed more efficient and the distribution of collective phenotypic diversity narrower when the gradient of $G$ in the fixed point is smaller. The condition on particle traits for the latter to vanish only depends on the carrying capacities of the two particle types, and corresponds to the type with smallest carrying capacity having zero interaction rate (see Appendix 2). A similar outcome is observed when, along an evolutionary trajectory, growth rates no\u00a0longer influence adult colour (Figure 2). Developmental correction thus selects for maximal asymmetry in interactions, whereby one particle type drives the ecological dynamics of the other type, but is itself only affected by its own type (this is fully elaborated in Appendix 2).\n\n## Discussion\n\nIn nature, communities rarely ever qualify as units of selection in the traditional sense (Lewontin, 1970; Godfrey-Smith, 2009), because communities in nature rarely manifest heritable variance in fitness. In the laboratory, however, experimenters can exogenously impose (scaffold) Darwinian-like properties on communities such that they have no choice, but to become units of selection (Wilson and Sober, 1989; Xie et al., 2019; Black et al., 2020). This typically involves placement of communities in some kind of container (pot, test-tube, flask, droplet, etc.) so they are bounded and variation at the community level is thus discrete. Communities are then allowed time for individual members to replicate and interact. At the end of the 'growth' period, community function is assessed based on pre-determined criteria. The experimenter then effects replication of successful communities while discarding those that under-perform. Replication typically involves transferring a sample of individuals from a successful community to a new container replete with a fresh supply of nutrients.\n\nExperimental and theoretical studies indicate that artificial selection on microbial communities results in rapid functional improvement (Swenson et al., 2000a; Swenson et al., 2000b; Goodnight, 2000; Wade, 2016; Xie et al., 2019). This is not unexpected given that experimental manipulations ensure that communities engage directly in the process of evolution by (artificial) selection as units in their own right. However, for such effects to manifest there must exist a mechanism of community-level inheritance.\n\nConsideration of both the effectiveness of artificial selection and the problem of heredity has led to recognition that the answer likely lies in interactions (Wilson and Sober, 1989; Swenson et al., 2000a; Swenson et al., 2000b; Goodnight, 2000; Rainey et al., 2017). The intuition stems from the fact that in the absence of interactions, communities selected to reproduce because of their beneficial phenotype will likely fail to produce offspring communities with similar functionality. If so, then these communities will be eliminated at the next round. Consider, however, an optimal community in which interactions emerge among individuals that increase the chance that offspring communities resemble the parental type. Such an offspring community will then likely avoid extinction at the next round: selection at the level of communities is thus expected to favour the evolution of interactions because inheritance of phenotype is now the primary determinant of the success (at the community level). Indeed, simulations of multi-species assemblages have shown that evolution of interaction rates not only improves diversity-dependent fitness, but also increases collective \u2018heritability\u2019, defined as the capacity of randomly seeded offspring communities to reach the same dynamical state as their parents (Ikegami and Hashimoto, 2002; Penn, 2003). Further studies have stressed the role of the extracellular environment and of specific interaction networks, pointing out that microscopic constrains can affect the capacity of communities to participate in evolutionary dynamics at the higher level (Williams and Lenton, 2007; Xie and Shou, 2018; Xie et al., 2019).\n\nHere, inspired by advances in millifluidics, we have developed a minimal mechanistic model containing essential ingredients of multi-scale evolution and within-community competition. We considered collectives composed of two types of particles (red and blue) that interact by density-dependent competition. By explicitly modelling demographic processes at two levels of organisation, we have obtained mechanistic understanding of how selection on collective character affects evolution of composing particle traits. Between-collective selection fuels changes in particle-level traits that feedback to affect collective phenotype. Selection at the level of communities thus drives the evolution of interactions among particles to the point where derived communities, despite stochastic effects associated with sampling at the moment of birth, give rise to offspring communities that reliably recapitulate the parental community phenotype. Such is the basis of community-level inheritance. Significantly, it has arisen from the simplest of ingredients and marks an important initial step in the endogenisation of Darwinian properties: properties externally imposed stand to become endogenous features of the evolving system (Black et al., 2020).\n\nThe mechanism by which particles interact to establish community phenotype is reminiscent of a development process. We have refered to this as the \u2018developmental corrector\u2019. In essence, it is akin to canalisation, a central feature of development in complex living systems (Buss, 1987), and the basis of inheritance (Griesemer, 2002). Developmental correction solves the problem of implementing specific protocols for mitigating non-heritable variations in community function (Xie et al., 2019).\n\nDevelopmental correction can be viewed as an evolutionary refinement of the stochastic corrector mechanism (Maynard Smith and Szathmary, 1995; Grey et al., 1995; Johnston and Jones, 2015). Both stochastic and developmental correctors solve the problem of producing enough well-formed collectives at each successive generation to prevent community-level extinction. The stochastic corrector mechanism relies on a low-fidelity reproduction process coupled to high population sizes. Deviations from successful collective states are corrected by purging collectives that depart significantly from the optimal collective phenotype. However, in the absence of strong collective-level selection the optimal community phenotype is rapidly lost. In contrast, the developmental corrector mechanism ensures that the optimal community phenotype is maintained without need for hard selection. Regardless of perturbations introduced by demography or low initial particle number, most collectives reliably reach a successful adult state. In our simulations, we show that community phenotype is maintained even in the absence of community-level selection, although ultimately mutational processes affecting particle dynamics result in eventual loss of the developmental corrector mechanism.\n\nAn operationally relevant question concerns the conditions (the initial state of the population, the nature of the scaffold and of particle-level interactions) for selection on a collective character to result in evolution of developmental correction. While we did not detail the probability of collective lineage extinction, it is possible that collectives become monochromatic before evolution has had time to act on particle traits. In such cases, which are more likely if particle-level traits are far from the region of coexistence, and if time-scales of particle and collective generations are not well separated, then collective-level evolution will grind to a halt. In all other cases, provided there are no other evolutionary constraints, selection will eventually lead the system toward regions of particle trait-space where the collective phenotype becomes reliably re-established. The efficiency of this selective process and its transient behaviour depend on collective-level parameters that control growth and reproduction.\n\nFrom our individual-based simulations and ensuing deterministic approximation, it is clear that once density-dependent interactions govern the adult state, then collective-level selection for colour is promptly effected. This happens provided the intra-collective ecology lasts long enough for nonlinear effects to curb particle growth. When this is not the case, for example when the bottleneck at birth is small, or collective-level generation time is too short, evolution of developmental correction will be impeded. The latter favours rapidly growing particles (Abreu et al., 2019) and offers little possibility for the evolution of developmental correction. When the ecological attractor within collectives leads to the extinction of one of the two types, long collective-level generation times are incompatible with the maintenance of diversity (van Vliet and Doebeli, 2019). However, in our model, particle-level evolution changes the nature of the attractor from extinction of one of two types to stable coexistence, and concomitantly particle and collective time-scales become separated. Even before developmental correction becomes established, evolution can transiently rely on stochastic correction to ensure the maintenance of particle co-existence.\n\nThere are two aspects to heredity: resemblance \u2014 the extent to which reproduction and development maintain the average offspring phenotype \u2014 and fidelity (or determination) \u2014 a measure of phenotypic variance (Jacquard, 1983; Bourrat, 2017). In our model, resemblance is established once density-dependent interactions counter the bias toward fast replicating particles: when the\u00a0$G$ function has an internal fixed point in $\u03d5^$, systematic drift of average collective colour is prevented. The increase in resemblance is associated with progressive divergence of particle and collective demographic time scales. As a consequence, the collective phenotype is placed under the control of particle traits rather than demographic stochasticity. On a longer time scale, fidelity improves by subsequent changes in interaction parameters under the constraint that they do not affect average adult colour. The variance of the phenotype around the optimum is reduced by increasing canalisation (flattening of the $G$ function). This is best achieved by a strong asymmetry in the competition traits, whereby one type has a logistic, uncoupled, dynamic, and the second type adjusts its growth to the former\u2019s density. Interestingly, it is always the type with the lower carrying capacity, regardless of its relative growth rate, that acts as the driver.\n\nThe relationship between parameters on very long time scales, when the adult colour is essentially dependent on interaction rates, depends critically on the space of possible values particle traits can assume. For instance, our analysis took into account only competitive intractions between colours. Extension of the deterministic approximation to cases when ecological interactions between colours are exploitative or mutualistic indicates that selection for collective coulour can drive changes in the very nature of the interactions so as to make them progress towards less and less reciprocally harmful coexistence (for full elaboration see Appendix 3).\n\nOur goal has been to produce a simple, tractable scenario for studying the effects of artificial selection on collectives, which while theoretical, is firmly connected to plausible biological experiments. The model could be extended in multiple ways in order to analyse the effects of additional factors, including impact of non-overlapping generations and variation in the timing of reproduction (which would introduce an element of bet-hedging), of migration and mixing between collectives (which could be akin to gamete production and zygote formation), and inclusion of more than two kinds of particle types. More complex selective regimes can also be envisaged, such as those that reward collectives based on absolute population size of particle types, which would allow less abstract collective functions to be considered. However, regardless of these refinements, we suspect that our core conclusion will stand firm: collective-level selection favours particle dynamics that improve collective-level heredity. The ability to reliably re-establish successful adult states of past-generations from simpler and potentially noisy initial conditions is adaptive at the collective level.\n\nThe mechanism of developmental correction is broadly relevant and extends beyond cells and communities to particles of any kind that happen to be nested within higher-level self-replicating structures. As such, the mechanism of developmental correction may be relevant to the early stages in each of the major (egalitarian) evolutionary transitions in individuality (Queller, 1997; Maynard Smith and Szathmary, 1995), where maintenance of particle types in optimal proportions was likely an essential requirement. For example, it is hard to see how protocells cells evolved from lower level components (Takeuchi and Hogeweg, 2009; Baum and Vetsigian, 2017), chromosomes from genes (Smith and Szathm\u00e1ry, 1993), and the eukaryotic cell from independent bacterial entities (Martin and M\u00fcller, 1998) without some kind of self-correcting mechanism acting at the collective level.\n\nBeyond these fundamental considerations, the mechanism of developmental correction and the ecological factors underpinning its evolution have important implications for top-down engineering of microbial communities for discovery of new chemistries, new functions, and even new organisms. The minimal recipe involves partitioning communities into discrete packages, provision of a period of time for cell growth, selective criteria that lead to purging of sub-optimal collectives and reproduction of optimal collectives to establish the next generation of collectives. These manipulations are readily achieved using millifluidic devices that can be engineered to operate in a Turing-like manner allowing artificial selection on community-level traits across thousands of independent communities. As mentioned above, critical tuneable parameters beyond number of communities, mode of selection and population size, are duration of collective generation time and bottleneck size at the moment of birth.\n\nThe extent to which the conclusions based on our simple abstract model are generally applicable to the evolution of more complex associations, such as symbioses leading to new forms of life, will require future exploration of a broader range of particle-level ecologies. Possibilities to make community dynamics more realistic by complexifying mathematical descriptions of particle-level processes are plentiful (Williams and Lenton, 2007; Zomorrodi and Segr\u00e8, 2016). Of particular interest for the evolution of efficient developmental correction are cases when community ecology has multiple attractors (Penn and Harvey, 2004), is highly sensitive to initial conditions (Swenson et al., 2000b), or presents finite-effect mutations sustaining \u2018eco-evolutionary tunnelling\u2019 (Kotil and Vetsigian, 2018). Besides enlarging the spectrum of possible within-collective interactions, future relevant extensions might explore the role of physical coupling among particles and of horizontal transmission between collectives (van Vliet and Doebeli, 2019) in enhancing or hampering efficient inheritance of collective-level characters.\n\n## Methods\n\nMethods are described in Appendix 1, 2 and 3, interspersed with more technical descriptions of the results presented in the main text.\n",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "3425eecf-c82c-400a-bc43-f856941369ed",
+      "submission_id": "8750afde-eeea-4f29-9925-7cf3370bd128",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wenying Shou, Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53433.sa1](https://doi.org/10.7554/eLife.53433.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nDoulcier et al. tackled multi-level community selection: selection at the level of individual cells for fast growth and at the level of whole communities for a desired community property. The authors showed that when selecting communities based on species ratios, the growth rates and the inter-species competition effects can evolve such that a desired species ratio (here 1:1) can be achieved. This work contributes to a growing interest in using multi-level selection to achieve desired community properties.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Eco-evolutionary dynamics of nested Darwinian populations and the emergence of community-level heredity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Wenying Shou as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity:); Sara Mitri (Reviewer #2); Alvaro Sanchez (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nDoulcier et al. tackled multi-level community selection: selection at the level of individual cells for fast growth and at the level of whole communities for a desired community property. The authors showed that when selecting communities based on species ratios, the growth rates and the inter-species competition effects can evolve such that a desired species ratio (here 1:1) can be achieved. The evolved mechanism is rather intuitive: species Blue grows faster than species Red, but species Blue is subject to competitive inhibition by species Red. This allows the species ratio to be 1:1. Consistent with intuition, when possibilities for competition coefficients are eliminated, growth rates of the two species evolved to be equal. When basal grow rates were not allowed to evolve, asymmetric competition arose to achieve equal post-competition growth rates. All three reviewers are positive about this work.\n\nEssential revisions:\n\n1) Allowing ecological interactions to evolve to be positive.\n\n2) Statistics of simulation repeats.\n\n3) What happens if selecting for uneven ratios when noise is present?\n\n4) What does \"rapidly\" really mean?\n\nTo help you revise, the original reviews are attached.\n\nReviewer 1:\n\n1) Define \"interactions\".\n\n2) \"Developmental correction\" is a biologist's way of saying \"steady-state species ratio\" or \"attractor/fixed point\". There are multiple ways of achieving steady-state species ratios. The authors had limited species interactions to competition (non-positive coefficients). If they allow interactions to change signs, then commensal or mutually beneficial interactions can arise to stabilize strain ratios. \"Developmental correction thus selects for maximal asymmetry in interactions\" may no longer hold for positive interactions. This needs to be checked.\n\nReviewer #2:\n\nIn this manuscript, the authors set out to explore whether it's possible to select for phenotypes at the community level, that arise in spite of competition between community members at the individual level. Using a computational model, they show that this is indeed possible, but relies on communities being properly enclosed and only passing on their individuals to their own offspring communities. They also analyse the strategy allowing for the evolution of community phenotypes. They show that community members evolve individual phenotypes that allow them to robustly converge to the community property under selection, independently of the initial community state. They posit that a similar mechanism might explain major evolutionary transitions, allowing lower level entities to be selected as whole entities.\n\nOverall, we like the manuscript. It makes, in our opinion, a major contribution in understanding how competition between individual community members can be overcome \u2013 or even used \u2013 to allow for selection of the community phenotype. The idea that selection can favor individual-level parameters that have a functional form that increases resemblance between parent and offspring and robustness to initial conditions is very interesting and overcomes some of the issues with community selection observed in previous studies (Xie et al). The authors also nicely show that once this strategy has evolved, it is ecologically stable, and they explore how the evolutionary trajectory depends on starting conditions.\n\nWe have some general thoughts that we think are worth discussing further in the manuscript.\n\nFirst, what we find was missing were statistics on what happens on different runs of the simulation. As far as we could tell, all data shown is based on individual \"example\" runs. The authors claim that these are general, but there is no data to support that. Please add statistics on the repeatability of the results. A related point: is the outcome always qualitatively similar? Specifically that a) the faster grower becomes less competitive with respect to growth rate, and b) that the emerging population regulation consists of the slower grower suppressing the faster grower while c) the faster grower does not affect the slower. It was not clear to us why, and we believe this is important to understanding the conclusion of the paper.\n\nSecond, we believe the authors could elaborate more on the specificity of their system and how their findings depend on them. It is not clear to what extent the same result would be observed in a different system that (1) has more than 2 types, (2) where selection acts on total abundance rather than ratios of two colors, (3) where the selective regime is different (the authors say \"A non-exhaustive exploration of other selection rules indicates that the qualitative results of the model are robust to changes in the selective regime, as long as collectives with an optimal colour are favoured and the collective population does not go extinct.\" It would be worth expanding on this in the supplement); and finally, (4) where the phenotype being selected for is not intermediate. Would this work equally well if the phenotype selected is almost blue or almost red? In short, under what general conditions do you expect to see the same?\n\nFrom the ecological literature, it is known that coexistence between two competing types requires some limiting force for the strongest grower (e.g. predator). Is that simply what you are selecting for? It may be good to make a link to this literature.\n\nWe are also unsure about the parallels made to developmental processes and think this would merit some clarification. Does one see this strategy where a slower-growing type limits the growth of a faster-growing one? Or are the authors hypothesizing that this might explain how smooth developmental processes occur?\n\nFinally, Figure 2 is lacking in visual clarity (color scheme). The selection method should also be better explained in the main text.\n\nPlease note that we did not work through all the math nor run the code.\n\nReviewer #3:\n\nI very much enjoyed this paper. I do not have any significant concerns.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for re-submitting your article \"Eco-evolutionary dynamics of nested Darwinian populations and the emergence of community-level heredity\" for consideration by eLife. Your article has been re-reviewed by two of the three original reviewers, and the evaluation has been overseen by a Reviewing Editor and Patricia Wittkopp as the Senior Editor.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nThe only thing that we believe is still missing is a paragraph in the Discussion on the generality of these findings. We understand that adding more than 2 types, trying different selection regimes or selecting on total abundance is beyond the scope of the current manuscript, but we still believe these questions may remain for a reader of the paper, so it is worth bringing them up in the Discussion as future directions.\n",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0a2efda5-c9c2-45d4-b1f4-b436c8566775",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C1",
+      "claim": "Wilson and Sober expressed surprise that biologists had not recognised that communities in the laboratory could be treated as entities with heritable variation and selected accordingly.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty years ago, in an article arguing the importance of the 'superorganism', Wilson and Sober expressed surprise that biologists had not recognised that communities \u2014 in the laboratory \u2014 'could be treated as entities with heritable variation and selected accordingly' (Wilson and Sober, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wilson and Sober, 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "bdbccc28-45df-4c11-aac5-e465f5acfa6d",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C2",
+      "claim": "The eukaryotic cell is a tight-knit community of two once free-living microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "That they might be treated as such, stemmed from recognition that the eukaryotic cell is a tight-knit community of two once free-living microbes (Margulis, 1970)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Margulis, 1970.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "daba34be-933c-465d-8f14-46b96f219e82",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C3",
+      "claim": "Phoretic insect communities comprise a focal organism that moves between patchily distributed ephemeral resources carrying with it a myriad of associated organisms, including mites, nematodes and microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "Phoretic insect communities comprise a focal organism \u2014 often an insect such as a beetle \u2014 that moves between patchily distributed ephemeral resources carrying with it a myriad of associated organisms, including mites, nematodes and microbes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statement about phoretic insect communities based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "ab8b9550-b3b0-4a8a-af3f-cb6bcc2a705a",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C4",
+      "claim": "Communities associated with each insect differ by virtue of the composite members, with the conceivable possibility that some associations may harm the carrier insect, while others may bring benefit.",
+      "claim_type": "EXPLICIT",
+      "source": "Communities associated with each insect differ by virtue of the composite members, with the conceivable possibility that some associations may harm the carrier insect, while others may bring benefit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential effects of different community compositions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "8f4f1195-4fb2-4aa8-9b29-cfc76d364f4a",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C5",
+      "claim": "Selection at the level of insect communities was likely to trump within-community selection leading to communities becoming organised into an elaborate mutualistic network.",
+      "claim_type": "EXPLICIT",
+      "source": "Wilson and Sober argued that selection at the level of insect communities was likely to trump within-community selection leading to communities 'becoming organised into an elaborate mutualistic network that protects the insect from its natural enemies, gathers food, and so on'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument made by Wilson and Sober, cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "1b4009bd-bc97-4706-a918-6ea64e4e4e0e",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C6",
+      "claim": "Provided there exists heritable variance in fitness at the level of communities, then communities will participate as units in the process of evolution by natural selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Provided there exists heritable variance in fitness at the level of communities, then communities will participate as units (in their own right) in the process of evolution by natural selection (Lewontin, 1970; Godfrey-Smith, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lewontin, 1970 and Godfrey-Smith, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "f162dc2e-0073-45d5-a3bc-3c32f8c85524",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C7",
+      "claim": "In nature, the necessary conditions for communities to participate as units of selection are likely rare.",
+      "claim_type": "EXPLICIT",
+      "source": "In nature, the necessary conditions are likely rare (Goodnight and Stevens, 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Goodnight and Stevens, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "a79964ab-5d7a-4a1c-8d17-6c3301978618",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C8",
+      "claim": "A critical requirement for communities to be units of selection is a birth-death process operating over a time scale longer than the doubling time of individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A critical requirement is a birth-death process operating over a time scale longer than the doubling time of individual cells (Hammerschmidt et al., 2014; Rainey et al., 2017; Black et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hammerschmidt et al., 2014; Rainey et al., 2017; Black et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "df635249-b65f-40ab-a8af-9d9ecc1a2b47",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C9",
+      "claim": "Swenson and colleagues performed two studies in which artificial selection was imposed on microbial communities from soil.",
+      "claim_type": "EXPLICIT",
+      "source": "Empirical support for the prediction that selection really can shape communities was provided by Swenson and colleagues who performed two studies in which artificial selection was imposed on microbial communities from soil (Swenson et al., 2000a; Swenson et al., 2000b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Swenson et al., 2000a and Swenson et al., 2000b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "03da8e56-a5d7-47ee-a8f5-c47d16234666",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C10",
+      "claim": "In the first Swenson study, they selected communities that affected plant growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first, they selected communities that affected plant growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from the cited Swenson study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "144d0ac1-1973-4925-938f-3f0fdf71dc6f",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C11",
+      "claim": "In the second Swenson study, they selected communities for ability to degrade the environmental pollutant 3-chloroaniline.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second, they selected communities for ability to degrade the environmental pollutant 3-chloroaniline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from the cited Swenson study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "8c9b2423-e8ed-402f-be36-95d98831aafb",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C12",
+      "claim": "In both Swenson studies, a significant response was measured at the level of the community.",
+      "claim_type": "EXPLICIT",
+      "source": "In both studies, a significant response was measured at the level of the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the cited Swenson studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "f3d9cc6a-56bb-4ad0-a264-1650c1a57dcb",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C13",
+      "claim": "The finding from Swenson studies was a surprise.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the finding was a surprise (Goodnight, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Goodnight, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "9caca0c4-688b-46a1-b774-78b31793bd3e",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C14",
+      "claim": "Communities of entities will participate in the process of evolution by natural selection provided communities are discrete, they replicate, and that offspring communities resemble parental communities.",
+      "claim_type": "EXPLICIT",
+      "source": "it is consistent with expectations that communities of entities \u2014 no matter their identity \u2014 will participate in the process of evolution by natural selection provided communities are discrete, they replicate, and that offspring communities resemble parental communities (Godfrey-Smith, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Godfrey-Smith, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "7e05d0cc-740c-48d7-89ec-6210c8a500e4",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C15",
+      "claim": "Heredity becomes established through interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, intuition says that heredity becomes established through interactions (Wilson and Sober, 1989; Goodnight, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wilson and Sober, 1989 and Goodnight, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "ce66a268-616a-4a08-8d4d-30c3385cfb8a",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C16",
+      "claim": "Simple manipulations to population structure can exogenously impose Darwinian-like properties on communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mechanistic mathematical models, we show how simple manipulations to population structure can exogenously impose Darwinian-like properties on communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the mathematical models presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "43ee7d72-bdd0-4922-897b-bb1b749c0852",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C17",
+      "claim": "Scaffolding causes communities to participate directly in the process of evolution by natural selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Such scaffolding causes communities to participate directly in the process of evolution by natural selection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mathematical models presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "570d96f5-a3f7-4704-a4e1-59dd3677529b",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C18",
+      "claim": "Scaffolding drives the evolution of cell-level interactions to the point where derived communities give rise to offspring communities that faithfully re-establish parental phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Such scaffolding causes communities to participate directly in the process of evolution by natural selection and drives the evolution of cell-level interactions to the point where, despite underlying stochasticity, derived communities give rise to offspring communities that faithfully re-establish parental phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the mathematical models and simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "8f05868f-4f38-4fe4-8673-19e83a09fbdf",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C19",
+      "claim": "The mechanism of developmental correction arises from density-dependent interactions among cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism is akin to a developmental process (developmental correction) that arises from density-dependent interactions among cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation derived from the mathematical models in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "fb42a97b-208b-4e31-acd4-59bec180d501",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C20",
+      "claim": "In the absence of collective-level selection, collectives converge to a monochromatic phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of collective-level selection (neutral regime), collectives converge to a monochromatic phenotype (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "cfa3a1ce-ac71-4e57-93e4-d4cedd96bd72",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C21",
+      "claim": "Once collectives are composed of either all-red or all-blue particles, the contrasting colour cannot be rescued.",
+      "claim_type": "EXPLICIT",
+      "source": "Once collectives are composed of either all-red or all-blue particles, the contrasting colour cannot be rescued (colour change by mutation or migration is not possible).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the model assumptions where mutation does not change color.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "94fe561e-a117-40be-8564-68b72a5a6118",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C22",
+      "claim": "The distribution of collective colour becomes biased toward faster-growing particle types in the neutral regime.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of collective colour becomes biased toward faster-growing particle types, with selection driving a gradual increase in particle growth rate (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "3d7cb858-8a0c-43dd-ad7a-2405cd083bd8",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C23",
+      "claim": "Selection imposed at the collective level leads to evolution of a developmental-like process that ensures offspring communities resemble parental communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that when cellular interactions are also allowed to evolve, selection imposed at the collective level, leads to evolution of a developmental-like process, which ensures that offspring communities resemble parental communities, irrespective of the initial phenotype at the moment of birth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the mathematical models and simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "6bb7c3bd-1fa4-4d37-beb9-8f27aded4008",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C25",
+      "claim": "Starting from collectives containing red and blue particles in uniformly distributed ratios, mean collective colour shifts toward red.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting, as above, from collectives containing red and blue particles in uniformly distributed ratios, mean collective colour shifts toward red.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "ec2011fd-071f-406f-a58b-fb743acb6c61",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C26",
+      "claim": "The time scale of the shift toward red is a consequence of the faster initial growth rate of red particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The time scale is, as in the neutral case, a consequence of the faster initial growth rate of red particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model parameters and simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "aebbb4b7-0325-484f-9b65-940836df5211",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C27",
+      "claim": "For a few tens of generations, the population of collectives remains strongly biased towards red.",
+      "claim_type": "EXPLICIT",
+      "source": "For a few tens of generations, the population of collectives remains strongly biased towards red.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "4b6e86c2-8c35-4c39-a70c-2463f526f35a",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C28",
+      "claim": "The optimal phenotype is maintained by selection for the least worse collective colour precisely as envisaged by the stochastic corrector model.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal phenotype is maintained by selection for the least worse collective colour precisely as envisaged by the stochastic corrector model (Maynard Smith and Szathmary, 1995; Appendix 1\u2014figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results and comparison to the stochastic corrector model from the literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "d2971a9c-b159-4e73-a300-fd31d26c5579",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C29",
+      "claim": "The trend reverses and mean collective colour progressively approaches purple after a few tens of generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, however, the trend reverses and mean collective colour progressively approaches purple.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "b4a0ad03-72f8-4738-95b5-50053c1424c9",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C30",
+      "claim": "From generation 1000, variance in the distribution of colour decreases as a consequence of improvement in the ability of purple-parent collectives to give rise to offspring collectives that at adult age resemble parental types.",
+      "claim_type": "EXPLICIT",
+      "source": "From generation 1000, variance in the distribution of colour decreases, as a consequence of improvement in the ability of purple-parent collectives to give rise to offspring collectives that at adult age resemble parental types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results with an inferred causal explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "c0dcc398-de9d-46ad-85d9-52f5aab21445",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C31",
+      "claim": "The decrease in variance is associated with escalating particle growth rate and a saturating increase in between-colour competition.",
+      "claim_type": "EXPLICIT",
+      "source": "This is associated with escalating particle growth rate (Figure 2D) and a saturating increase in between-colour competition (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figures 2D and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "9d5d6aa2-9c73-4b7d-ab9a-d1e09a8d2d99",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C33",
+      "claim": "Prior to selection shaping particle traits, both red and blue particle types follow approximately exponential growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to selection shaping particle traits, both red and blue particle types follow approximately exponential growth (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "484bd0c9-248b-43f3-a65b-27abdacd9ca9",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C34",
+      "claim": "The resulting adult collective colour is biased towards the faster-growing red type when particle types follow exponential growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting adult collective colour is thus biased towards the faster-growing red type (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "d809388a-b1a9-4e97-8052-ed583c916b65",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C35",
+      "claim": "At generation 9000, both particle types reach a saturating steady state that ensures that adult colour is purple.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at generation 9000 (Figure 3B), both particle types reach a saturating steady state that ensures that adult colour is purple.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "4c95fe80-0abe-47b5-be32-9b0daa083d5e",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C36",
+      "claim": "Initial departures from a 1:1 ratio are compensated for during the growth phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial departures from a 1:1 ratio \u2014 caused by the stochasticity of collective reproduction and/or particle growth dynamics \u2014 are compensated for during the growth phase (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "f55a0ba9-28b4-4eb9-8edc-12019d760ec6",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C37",
+      "claim": "Compensation is a consequence of the evolution of inter-colour competition traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Compensation is a consequence of the evolution of inter-colour competition traits (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the simulation results about the mechanism of compensation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "dce4f28c-2290-478a-99d2-b78a9f8bbcd6",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C38",
+      "claim": "Population expansion is dependent upon earlier increases in particle growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Population expansion is in turn dependent upon earlier increases in particle growth rate (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the simulation results about the relationship between growth rate and population expansion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "f2a8120a-48a7-464d-8a16-2e004614740a",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C40",
+      "claim": "In repeated simulations, the average adult collective colour always falls within a few percentage of the target colour.",
+      "claim_type": "EXPLICIT",
+      "source": "In the section 'Variability of the derived particle traits' of Appendix 1 we show that in repeated simulations, the average adult collective colour always falls within a few percentage of the target colour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by additional simulation results presented in the Appendix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "4d004993-983a-45a5-a64f-2728ce4f9cd9",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C41",
+      "claim": "Collective-level selection applies more stringently to interaction parameters than to growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, collective-level selection applies more stringently to interaction parameters than to growth rates, with the latter showing a broader distribution of derived values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "342efc42-e310-4370-8f58-e0483b956808",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C42",
+      "claim": "Collectives founded by particles with ancestral traits become composed of a single colour in less than 10 generations when collective-level selection is removed.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectives founded by particles with ancestral traits become composed of a single (red or blue) colour in less than 10 generations (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "f180df9e-86f6-410e-8818-9c695da1fa36",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C43",
+      "claim": "Derived collectives are comprised of particles whose traits ensure that collectives continue to express phenotypes narrowly distributed around the optimal phenotype when selection is removed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, derived collectives are comprised of particles whose traits ensure that collectives continue to express phenotypes narrowly distributed around the optimal (purple) phenotype (as long as there is no mutation [Figure 4B]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "f65848b0-27ac-4019-b954-c68943f0324f",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C44",
+      "claim": "Stability of phenotype holds for more than 200 generations even when mutation is allowed to drive within- and between-collective dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when mutation is allowed to drive within- and between-collective dynamics, stability of phenoytpe holds for more than 200 generations (Appendix 1\u2014figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Appendix 1\u2014figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "f002d2a2-562e-4728-b82d-5b6a0071dd50",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C45",
+      "claim": "At generation 3, the proportion of red particles increases within a collective generation, irrespective of the initial proportion.",
+      "claim_type": "EXPLICIT",
+      "source": "At generation 3, the proportion of red particles increases (within a collective generation), irrespective of the initial proportion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "77193710-45bf-4103-a2c9-522430949907",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C46",
+      "claim": "The increase in red particles at generation 3 is because red particles grow faster than blue and the primary determinant of particle success is growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because red particles grow faster than blue and the primary determinant of particle success is growth rate (interactions are negligible in exponential growth).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model parameters and simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "04d0d0ba-a1f9-40e1-b807-6c935724103b",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C47",
+      "claim": "The only way that purple collectives can be maintained at generation 3 is if the collective phenotype is sufficiently noisy to ensure that some collectives happen by chance to be purple.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the only way that purple collectives can be maintained is if the collective phenotype is sufficiently noisy, to ensure that some collectives happen by chance to be purple, due to, for example, stochastic effects at dilution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results about the mechanism of maintaining purple collectives.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "037f7948-d17b-4e57-9b6a-f8356dd5a261",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C48",
+      "claim": "At generation 9000, the proportion of red particles increases when the initial proportion is below, and decreases when it is above, the optimal proportion 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "After a single growth cycle, the proportion of red particles increases when the initial proportion is below, and decreases when it is above, the optimal proportion 0.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "826ca1b6-c1d7-4b7b-8dce-4e93039bfa72",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C51",
+      "claim": "Offspring collectives return to the parent phenotype even when the phenotype at birth departs significantly from the parent adult phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, offspring collectives return to the parent phenotype even when the phenotype at birth departs significantly from the parent (adult) phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "61dac02e-b0a0-4ff4-988e-3e9ea40064bb",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C52",
+      "claim": "Correction stems from the ecological dynamics of the particles and resembles a developmental process.",
+      "claim_type": "EXPLICIT",
+      "source": "''Correction'' stems from the ecological dynamics of the particles and resembles a developmental process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results about the mechanism of correction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "0042be16-f327-463a-9a0c-1a112727cb0b",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C53",
+      "claim": "Using particle trait values from generation 3, it takes just six collective generations for red particles to fix within collectives.",
+      "claim_type": "EXPLICIT",
+      "source": "Because red particles grow faster than blue, it takes just six collective generations for red particles to fix within collectives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the deterministic approximation applied to generation 3 trait values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "fe952669-36c2-4380-944d-b344310a4dd4",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C54",
+      "claim": "After particle trait evolution, the staircase approach applied to newborn collectives of any colour shows rapid convergence to the colour purple irrespective of the starting point.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, after particle trait evolution (Figure 5B), the same staircase approach applied to newborn collectives of any colour shows rapid convergence to the colour purple (0.5) irrespective of the starting point.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the deterministic approximation applied to generation 9000 trait values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "0a811741-5ca7-489a-92b9-b011f4503150",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C55",
+      "claim": "The difference in the relationship between initial and final colour at generation 3 and 9000 is evidence of the emergence of a mechanism for developmental correction.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in the relationship between initial and final colour at generation 3 and 9000 is evidence of the emergence of a mechanism for developmental correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the comparison of simulation results at different generations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "cdf44910-ded8-4841-8b19-3b3a1089fb60",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C59",
+      "claim": "At the beginning of evolution, particles compete mostly during exponential phase, so that adult colour is biased towards the fast-growing type.",
+      "claim_type": "EXPLICIT",
+      "source": "At the beginning, particles compete mostly during exponential phase, so that adult colour is biased towards the fast-growing type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model dynamics at early generations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "a3933237-1148-43dd-a559-2326af1363cc",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C61",
+      "claim": "A successive increase in maximal growth rate separates particle and collective time scales, allowing particles to experience density-dependent interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "A successive increase in maximal growth rate separates particle and collective time scales, allowing particles to experience density-dependent interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results about the mechanism of time scale separation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "ab24b9ac-fad5-4979-bcfd-06954fc4ba91",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C67",
+      "claim": "A decrease in generation time may be compensated by an increase in bottleneck size without affecting the average collective phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "A decrease in generation time, necessary for practical reasons, may for instance, be compensated by an increase in bottleneck size, without affecting the average collective phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the deterministic approximation analysis about trade-offs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "f3f73b44-2b6d-406e-bd6a-cd8a51bb4177",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C69",
+      "claim": "The increase in resemblance is associated with progressive divergence of particle and collective demographic time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in resemblance is associated with progressive divergence of particle and collective demographic time scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results about the relationship between resemblance and time scales.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "b7b2b16f-fdac-42a0-b890-9d6ae4204031",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C70",
+      "claim": "The collective phenotype is placed under the control of particle traits rather than demographic stochasticity as a consequence of time scale divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the collective phenotype is placed under the control of particle traits rather than demographic stochasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model dynamics about the control of phenotype.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "44dc6943-793f-4283-95a8-6dc714acbf30",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C71",
+      "claim": "Fidelity improves by subsequent changes in interaction parameters under the constraint that they do not affect average adult colour.",
+      "claim_type": "EXPLICIT",
+      "source": "On a longer time scale, fidelity improves by subsequent changes in interaction parameters under the constraint that they do not affect average adult colour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results about the evolution of fidelity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "30a1a432-779b-4bc3-90fb-d2e7426898f2",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C73",
+      "claim": "Canalisation is best achieved by a strong asymmetry in the competition traits, whereby one type has a logistic, uncoupled, dynamic, and the second type adjusts its growth to the former's density.",
+      "claim_type": "EXPLICIT",
+      "source": "This is best achieved by a strong asymmetry in the competition traits, whereby one type has a logistic, uncoupled, dynamic, and the second type adjusts its growth to the former's density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model dynamics about the optimal strategy for canalisation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "b6b9c5d3-9214-433b-95bf-edba415d32c3",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C74",
+      "claim": "It is always the type with the lower carrying capacity, regardless of its relative growth rate, that acts as the driver.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it is always the type with the lower carrying capacity, regardless of its relative growth rate, that acts as the driver.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "b935c4d9-3852-41bb-be3a-aa2438eb2a6b",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C76",
+      "claim": "In the absence of interactions, alignment of growth rates is the only available solution to maintain collectives with an equal number of red and blue type particles.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of interactions, this is the only available solution to maintain collectives with an equal number of red and blue type particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model dynamics when interactions are absent.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "0ee70745-9d01-4a91-acbe-a580438c1873",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C80",
+      "claim": "Developmental correction selects for maximal asymmetry in interactions, whereby one particle type drives the ecological dynamics of the other type, but is itself only affected by its own type.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental correction thus selects for maximal asymmetry in interactions, whereby one particle type drives the ecological dynamics of the other type, but is itself only affected by its own type (this is fully elaborated in Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model dynamics about the evolutionary outcome.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "2d1aa8a0-365f-415f-8493-d4d0ce31ff19",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C81",
+      "claim": "Experimenters can exogenously impose (scaffold) Darwinian-like properties on communities such that they have no choice but to become units of selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In the laboratory, however, experimenters can exogenously impose (scaffold) Darwinian-like properties on communities such that they have no choice, but to become units of selection (Wilson and Sober, 1989; Xie et al., 2019; Black et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wilson and Sober, 1989; Xie et al., 2019; Black et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "f3eaf1aa-702e-4ceb-8758-fec341f23bdb",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C82",
+      "claim": "Experimental and theoretical studies indicate that artificial selection on microbial communities results in rapid functional improvement.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental and theoretical studies indicate that artificial selection on microbial communities results in rapid functional improvement (Swenson et al., 2000a; Swenson et al., 2000b; Goodnight, 2000; Wade, 2016; Xie et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "d8c558c5-ff42-4f57-af7b-1c5d871461c8",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C83",
+      "claim": "The answer to the problem of heredity likely lies in interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consideration of both the effectiveness of artificial selection and the problem of heredity has led to recognition that the answer likely lies in interactions (Wilson and Sober, 1989; Swenson et al., 2000a; Swenson et al., 2000b; Goodnight, 2000; Rainey et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "4c3ea9de-edee-4acf-bd4b-cb4609e6881a",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C84",
+      "claim": "Simulations of multi-species assemblages have shown that evolution of interaction rates not only improves diversity-dependent fitness, but also increases collective 'heritability'.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, simulations of multi-species assemblages have shown that evolution of interaction rates not only improves diversity-dependent fitness, but also increases collective 'heritability', defined as the capacity of randomly seeded offspring communities to reach the same dynamical state as their parents (Ikegami and Hashimoto, 2002; Penn, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ikegami and Hashimoto, 2002 and Penn, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "6fcc1c3d-eeef-468e-a71b-90056d3d8e10",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C85",
+      "claim": "Further studies have stressed the role of the extracellular environment and of specific interaction networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies have stressed the role of the extracellular environment and of specific interaction networks, pointing out that microscopic constrains can affect the capacity of communities to participate in evolutionary dynamics at the higher level (Williams and Lenton, 2007; Xie and Shou, 2018; Xie et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Williams and Lenton, 2007; Xie and Shou, 2018; Xie et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "db34eecb-c211-4450-b750-52fe24d99f2c",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C86",
+      "claim": "Between-collective selection fuels changes in particle-level traits that feedback to affect collective phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Between-collective selection fuels changes in particle-level traits that feedback to affect collective phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mathematical models presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "18d7477a-ccc3-494d-962d-f57533f7b588",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C87",
+      "claim": "Selection at the level of communities drives the evolution of interactions among particles to the point where derived communities give rise to offspring communities that reliably recapitulate the parental community phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection at the level of communities thus drives the evolution of interactions among particles to the point where derived communities, despite stochastic effects associated with sampling at the moment of birth, give rise to offspring communities that reliably recapitulate the parental community phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the mathematical models and simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "8c390b52-40e3-4cc3-881f-703000e4b765",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C88",
+      "claim": "The mechanism of developmental correction marks an important initial step in the endogenisation of Darwinian properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, it has arisen from the simplest of ingredients and marks an important initial step in the endogenisation of Darwinian properties: properties externally imposed stand to become endogenous features of the evolving system (Black et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings with a citation to Black et al., 2020.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "9e84747e-fae3-4c58-9b5e-96c4a0f556df",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C89",
+      "claim": "Developmental correction is akin to canalisation, a central feature of development in complex living systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism by which particles interact to establish community phenotype is reminiscent of a development process. We have refered to this as the 'developmental corrector'. In essence, it is akin to canalisation, a central feature of development in complex living systems (Buss, 1987), and the basis of inheritance (Griesemer, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings with citations to Buss, 1987 and Griesemer, 2002.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "ac965d28-eeba-4a69-89e4-dba1ab857663",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C90",
+      "claim": "Developmental correction can be viewed as an evolutionary refinement of the stochastic corrector mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental correction can be viewed as an evolutionary refinement of the stochastic corrector mechanism (Maynard Smith and Szathmary, 1995; Grey et al., 1995; Johnston and Jones, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings with citations to the stochastic corrector literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "f3b6b2e3-d90e-4240-b9bd-f135dbd15532",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C91",
+      "claim": "Both stochastic and developmental correctors solve the problem of producing enough well-formed collectives at each successive generation to prevent community-level extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Both stochastic and developmental correctors solve the problem of producing enough well-formed collectives at each successive generation to prevent community-level extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the two mechanisms based on the model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "c8b638b8-2093-47fb-b0eb-2c8e50e77b8a",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C92",
+      "claim": "The stochastic corrector mechanism relies on a low-fidelity reproduction process coupled to high population sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "The stochastic corrector mechanism relies on a low-fidelity reproduction process coupled to high population sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the stochastic corrector mechanism from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "fe6fcb49-a4e8-4391-af35-696909c9c7a7",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C93",
+      "claim": "In the absence of strong collective-level selection the optimal community phenotype is rapidly lost under the stochastic corrector mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the absence of strong collective-level selection the optimal community phenotype is rapidly lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "2eed2137-d286-4313-ad28-23a0cfb90d27",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C94",
+      "claim": "The developmental corrector mechanism ensures that the optimal community phenotype is maintained without need for hard selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the developmental corrector mechanism ensures that the optimal community phenotype is maintained without need for hard selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "07da7dda-fed2-4704-9918-86936d0e370c",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C95",
+      "claim": "Regardless of perturbations introduced by demography or low initial particle number, most collectives reliably reach a successful adult state under the developmental corrector mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of perturbations introduced by demography or low initial particle number, most collectives reliably reach a successful adult state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "12e11009-91a4-4460-9c69-0f8a6b9fca12",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C96",
+      "claim": "Community phenotype is maintained even in the absence of community-level selection under the developmental corrector mechanism, although ultimately mutational processes affecting particle dynamics result in eventual loss of the developmental corrector mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, we show that community phenotype is maintained even in the absence of community-level selection, although ultimately mutational processes affecting particle dynamics result in eventual loss of the developmental corrector mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "c9fa79d0-f8e4-4815-aafd-cb1a7299798c",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C97",
+      "claim": "Once density-dependent interactions govern the adult state, collective-level selection for colour is promptly effected.",
+      "claim_type": "EXPLICIT",
+      "source": "From our individual-based simulations and ensuing deterministic approximation, it is clear that once density-dependent interactions govern the adult state, then collective-level selection for colour is promptly effected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results and deterministic approximation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "b63994a4-f88b-47f4-b8e7-a4c1a3565d1e",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C98",
+      "claim": "When the bottleneck at birth is small or collective-level generation time is too short, evolution of developmental correction will be impeded.",
+      "claim_type": "EXPLICIT",
+      "source": "When this is not the case, for example when the bottleneck at birth is small, or collective-level generation time is too short, evolution of developmental correction will be impeded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the deterministic approximation analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "bc0ac7cf-74de-44ec-985b-9c9bb9811958",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C99",
+      "claim": "When the ecological attractor within collectives leads to the extinction of one of the two types, long collective-level generation times are incompatible with the maintenance of diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "When the ecological attractor within collectives leads to the extinction of one of the two types, long collective-level generation times are incompatible with the maintenance of diversity (van Vliet and Doebeli, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to van Vliet and Doebeli, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "e5e5f9ce-dd94-4078-a15c-4e37cf1b0ade",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C100",
+      "claim": "Particle-level evolution changes the nature of the attractor from extinction of one of two types to stable coexistence.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in our model, particle-level evolution changes the nature of the attractor from extinction of one of two types to stable coexistence, and concomitantly particle and collective time-scales become separated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "3165748b-1b11-450b-a56d-e7841d5edec7",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C101",
+      "claim": "Even before developmental correction becomes established, evolution can transiently rely on stochastic correction to ensure the maintenance of particle co-existence.",
+      "claim_type": "EXPLICIT",
+      "source": "Even before developmental correction becomes established, evolution can transiently rely on stochastic correction to ensure the maintenance of particle co-existence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results about the evolutionary trajectory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "5795a2ed-37ac-4afc-a84c-72d7eef9cdf2",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C104",
+      "claim": "Extension of the deterministic approximation to cases when ecological interactions between colours are exploitative or mutualistic indicates that selection for collective colour can drive changes in the very nature of the interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, our analysis took into account only competitive intractions between colours. Extension of the deterministic approximation to cases when ecological interactions between colours are exploitative or mutualistic indicates that selection for collective coulour can drive changes in the very nature of the interactions so as to make them progress towards less and less reciprocally harmful coexistence (for full elaboration see Appendix 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the extended deterministic approximation analysis in Appendix 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "76c82642-0793-4d3f-ac83-ced135dfa060",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C105",
+      "claim": "The mechanism of developmental correction is broadly relevant and extends beyond cells and communities to particles of any kind that happen to be nested within higher-level self-replicating structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism of developmental correction is broadly relevant and extends beyond cells and communities to particles of any kind that happen to be nested within higher-level self-replicating structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the generality of the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "984572f1-f357-471e-8298-957df03aa120",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C106",
+      "claim": "The mechanism of developmental correction may be relevant to the early stages in each of the major egalitarian evolutionary transitions in individuality.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the mechanism of developmental correction may be relevant to the early stages in each of the major (egalitarian) evolutionary transitions in individuality (Queller, 1997; Maynard Smith and Szathmary, 1995), where maintenance of particle types in optimal proportions was likely an essential requirement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the relevance of the mechanism with citations to the literature on evolutionary transitions.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "9effdd47-5de1-44cd-a53a-f59d70e92528",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C107",
+      "claim": "The mechanism of developmental correction and the ecological factors underpinning its evolution have important implications for top-down engineering of microbial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond these fundamental considerations, the mechanism of developmental correction and the ecological factors underpinning its evolution have important implications for top-down engineering of microbial communities for discovery of new chemistries, new functions, and even new organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the practical implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "1188f8cf-9245-4e10-80c9-929daef24c15",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C108",
+      "claim": "The minimal recipe for engineering microbial communities involves partitioning communities into discrete packages, provision of a period of time for cell growth, selective criteria that lead to purging of sub-optimal collectives and reproduction of optimal collectives.",
+      "claim_type": "EXPLICIT",
+      "source": "The minimal recipe involves partitioning communities into discrete packages, provision of a period of time for cell growth, selective criteria that lead to purging of sub-optimal collectives and reproduction of optimal collectives to establish the next generation of collectives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental protocol based on the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "5623d60c-66cc-46bb-9bf9-ae44aa5ab54e",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "claim_id": "C109",
+      "claim": "Critical tuneable parameters beyond number of communities, mode of selection and population size, are duration of collective generation time and bottleneck size at the moment of birth.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, critical tuneable parameters beyond number of communities, mode of selection and population size, are duration of collective generation time and bottleneck size at the moment of birth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model analysis about important experimental parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5f700ea7-ca3d-40d0-b941-465a787ef022",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate through mechanistic mathematical models that simple manipulations to population structure (ecological scaffolding) can exogenously impose Darwinian-like properties on communities, causing them to participate directly in evolution by natural selection. This scaffolding drives the evolution of density-dependent cell-level interactions to the point where derived communities reliably re-establish parental phenotypes despite stochastic effects, through a mechanism termed 'developmental correction'.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19, C23, C86-C87 collectively present the core finding supported by both stochastic simulations and deterministic approximations shown in Figures 2-6. The mathematical models explicitly demonstrate the emergence of developmental correction through density-dependent interactions, with clear evidence of phenotype maintenance across generations. The mechanism is well-characterized both computationally and theoretically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "c9ca096e-40ce-459a-83c8-5476d6af96e6",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Under neutral selection (no collective-level selection), collectives rapidly converge to monochromatic phenotypes biased toward faster-growing particle types. In contrast, under selective pressure for purple collectives, the system initially shows bias toward red (faster-growing) particles but subsequently reverses, with mean collective color progressively approaching purple and variance decreasing after generation 1000 due to improved parent-offspring resemblance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22, C25-C31 are directly supported by simulation data shown in Figure 2A-F. The neutral regime shows clear convergence to monochromatic states, while the selective regime demonstrates the evolutionary trajectory from initial bias through stochastic correction to developmental correction. The temporal dynamics and associated changes in particle traits (growth rates and competition parameters) are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "bc1f2a0e-905a-48b6-8f93-e133081f71fa",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Selection on collective color fundamentally alters within-collective particle dynamics. At generation 3, both particle types follow exponential growth resulting in adult color biased toward faster-growing red types. By generation 9000, both particle types reach saturating steady states ensuring purple adult color, with initial departures from 1:1 ratios compensated during growth through evolved inter-color competition traits and increased particle growth rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 are strongly supported by Figure 3A-D showing contrasting dynamics at different evolutionary time points. The transition from exponential to saturating growth is clearly demonstrated, with the deterministic approximation (dotted lines in Figure 3C-D) matching simulation results. The mechanistic explanation linking compensation to evolved competition traits is well-supported by Figure 2F.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "4d7365ef-be7b-4607-88e5-f76d79f860b9",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The relationship between newborn and adult collective color reveals the emergence of developmental correction. At generation 3, red particle proportion always increases regardless of initial conditions, requiring stochastic correction to maintain purple collectives. By generation 9000, the system exhibits true developmental correction where adult color converges to 0.5 from any starting point within a single generation, with offspring reliably returning to parental phenotype despite initial departures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C55 are comprehensively supported by Figure 5A-B showing the growth function G at different evolutionary stages. The staircase analysis clearly demonstrates fixation at generation 3 versus convergence to purple at generation 9000. The mechanistic distinction between stochastic and developmental correction is well-established through both simulation data and deterministic approximation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "80a80cc9-8812-46b4-b31b-e6ce2baf3ebb",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The evolved developmental correction mechanism is robust and reproducible. In repeated simulations, average adult collective color consistently falls within a few percentage points of the target, with collective-level selection applying more stringently to interaction parameters than growth rates. Collectives with derived traits maintain optimal phenotypes even after removal of selection for over 200 generations, while ancestral traits lead to monochromatic fixation in under 10 generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by data in Appendix 1 (referenced in text) and Figure 4A-B. The contrast between ancestral and derived traits upon removal of selection provides strong evidence for the robustness of evolved developmental correction. The differential selection pressure on interaction versus growth parameters is an important observation about the evolutionary trajectory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "546db73b-b348-49bf-96ba-731d99228354",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Developmental correction represents an evolutionary refinement of the stochastic corrector mechanism. Both solve the problem of maintaining well-formed collectives across generations, but stochastic correction relies on low-fidelity reproduction with high population sizes and strong purifying selection, rapidly losing optimal phenotype without selection. Developmental correction maintains optimal phenotype without hard selection, with most collectives reliably reaching successful adult states regardless of perturbations, though mutational processes eventually erode the mechanism in the absence of selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C47, C89-C96 provide a well-supported comparison between mechanisms. The stochastic corrector behavior is demonstrated at early generations (Figure 5A, Appendix 1-figure 5), while developmental correction is shown at later generations (Figure 5B). Figure 4 demonstrates maintenance of phenotype after selection removal. The theoretical framework connecting to prior work (Maynard Smith and Szathmary, 1995) is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "566d6ec4-792f-40a6-a4b8-0fbdd472be9c",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The evolution of developmental correction proceeds through separation of particle and collective time scales. Initially, particles compete during exponential phase with adult color biased toward fast-growing types. Successive increases in maximal growth rate separate time scales, allowing density-dependent interactions to evolve. Fidelity improves through asymmetric competition traits where one type (always the one with lower carrying capacity) has logistic uncoupled dynamics while the other adjusts its growth accordingly, placing collective phenotype under control of particle traits rather than demographic stochasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C61, C69-C71, C73-C74, C80 describe the mechanistic basis of developmental correction evolution, supported by Figures 2-3 showing temporal changes in traits and dynamics, and Figure 8B showing evolution toward asymmetric interactions. The deterministic approximation analysis in Appendix 2 provides theoretical support for the time scale separation and asymmetry arguments. The claim about carrying capacity determining the driver type (C74) is stated as an observation from model analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "e6605380-bdb1-4a08-8929-ce9e5d966b57",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The deterministic approximation reveals critical parameter dependencies for developmental correction evolution. Once density-dependent interactions govern adult state, collective-level selection for color is promptly effected. However, small bottleneck size or short collective generation time impedes evolution of developmental correction. Trade-offs exist where decreased generation time can be compensated by increased bottleneck size without affecting average collective phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67, C97-C98 are supported by the deterministic approximation analysis and Figure 7 showing the parameter space where different dynamics occur. The identification of critical parameters (bottleneck size B and generation time T) is well-grounded in the mathematical framework. The trade-off analysis provides practical guidance for experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "4eed43a6-9cdb-49bd-b0ab-7247b8b6f327",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Under constrained evolution scenarios, the system finds alternative solutions. When interactions are absent, alignment of growth rates is the only solution to maintain equal particle numbers, but this provides no correction of stochastic fluctuations. In the full model, particle-level evolution changes the ecological attractor from extinction to stable coexistence while separating time scales, with evolution transiently relying on stochastic correction before developmental correction becomes established.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76, C100-C101 are supported by Figure 8A showing growth rate alignment when interactions are constrained, and by the simulation results showing the evolutionary trajectory. The observation that the attractor changes from competitive exclusion to coexistence (C100) is demonstrated in Figures 2-3. The transient use of stochastic correction (C101) is a reasonable inference from the evolutionary dynamics shown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "ae8c5121-511d-4b26-8c2f-8edcd9a14093",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Extension of the deterministic approximation to exploitative or mutualistic interactions indicates that selection for collective color can drive changes in the very nature of interactions, making them progress toward less reciprocally harmful coexistence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C104 is supported by analysis in Appendix 3 (referenced in text). While the main results focus on competitive interactions, this extension demonstrates generality of the framework. The claim is appropriately qualified as an extension of the deterministic approximation rather than full simulation results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "7b445c41-23c5-49cd-811b-34f45b7445a3",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Historical and theoretical context establishes that while communities can theoretically participate in evolution by natural selection if they possess heritable variance in fitness, such conditions are rare in nature but achievable in laboratory settings. Prior work by Swenson and colleagues demonstrated that artificial selection on microbial communities produces significant responses at the community level, though the mechanistic basis of community-level heredity through interactions remained to be fully elucidated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 provide background context supported by appropriate citations to the literature (Wilson and Sober 1989, Margulis 1970, Lewontin 1970, Godfrey-Smith 2009, Swenson et al. 2000a/b, etc.). These are primarily literature review claims that set up the motivation for the current study. The citations appear appropriate and the characterization of prior work is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "17b0b804-415a-4e24-ade8-9088b4d9a19c",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior experimental and theoretical work has established that experimenters can exogenously impose Darwinian-like properties on communities through ecological scaffolding, resulting in rapid functional improvement under artificial selection. Previous studies have recognized that interactions are key to community-level heredity, with simulations showing that evolution of interaction rates improves both diversity-dependent fitness and collective heritability, though microscopic constraints can affect community-level evolutionary capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 summarize relevant prior work with appropriate citations (Wilson and Sober 1989, Xie et al. 2019, Black et al. 2020, Swenson et al. 2000a/b, Ikegami and Hashimoto 2002, Penn 2003, Williams and Lenton 2007, Xie and Shou 2018). These claims provide important context for the current study's contribution and are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "c7b4a40d-17ba-4393-b38b-5504be0c0654",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "When the ecological attractor within collectives leads to extinction of one of two types, long collective-level generation times are incompatible with maintenance of diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 is supported by citation to van Vliet and Doebeli 2019. This is a literature-based claim that provides context for understanding the parameter constraints in the current model. The citation appears appropriate for this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    },
+    {
+      "id": "6001a534-af91-47ba-8a32-871cc783cfd4",
+      "content_id": "fad8fa38-2b84-4995-b045-fb3f292a3062",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that developmental correction is broadly relevant to nested self-replicating structures and may be relevant to major egalitarian evolutionary transitions where maintenance of particle types in optimal proportions was essential. They suggest implications for top-down engineering of microbial communities, with critical tunable parameters being collective generation time and bottleneck size at birth, beyond standard parameters like population size and selection mode.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C105-C109 are primarily speculative statements about broader implications and future applications. While C108-C109 reasonably summarize the experimental protocol and parameter insights from the model, C105-C107 make broad claims about relevance to evolutionary transitions and engineering applications without direct empirical support. These are reasonable extrapolations from the findings but remain speculative regarding actual applicability to major transitions or practical engineering.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:20:45.143367Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ce66a268-616a-4a08-8d4d-30c3385cfb8a",
+      "result_id": "5f700ea7-ca3d-40d0-b941-465a787ef022"
+    },
+    {
+      "claim_id": "43ee7d72-bdd0-4922-897b-bb1b749c0852",
+      "result_id": "5f700ea7-ca3d-40d0-b941-465a787ef022"
+    },
+    {
+      "claim_id": "570d96f5-a3f7-4704-a4e1-59dd3677529b",
+      "result_id": "5f700ea7-ca3d-40d0-b941-465a787ef022"
+    },
+    {
+      "claim_id": "8f05868f-4f38-4fe4-8673-19e83a09fbdf",
+      "result_id": "5f700ea7-ca3d-40d0-b941-465a787ef022"
+    },
+    {
+      "claim_id": "3d7cb858-8a0c-43dd-ad7a-2405cd083bd8",
+      "result_id": "5f700ea7-ca3d-40d0-b941-465a787ef022"
+    },
+    {
+      "claim_id": "db34eecb-c211-4450-b750-52fe24d99f2c",
+      "result_id": "5f700ea7-ca3d-40d0-b941-465a787ef022"
+    },
+    {
+      "claim_id": "18d7477a-ccc3-494d-962d-f57533f7b588",
+      "result_id": "5f700ea7-ca3d-40d0-b941-465a787ef022"
+    },
+    {
+      "claim_id": "fb42a97b-208b-4e31-acd4-59bec180d501",
+      "result_id": "c9ca096e-40ce-459a-83c8-5476d6af96e6"
+    },
+    {
+      "claim_id": "cfa3a1ce-ac71-4e57-93e4-d4cedd96bd72",
+      "result_id": "c9ca096e-40ce-459a-83c8-5476d6af96e6"
+    },
+    {
+      "claim_id": "94fe561e-a117-40be-8564-68b72a5a6118",
+      "result_id": "c9ca096e-40ce-459a-83c8-5476d6af96e6"
+    },
+    {
+      "claim_id": "6bb7c3bd-1fa4-4d37-beb9-8f27aded4008",
+      "result_id": "c9ca096e-40ce-459a-83c8-5476d6af96e6"
+    },
+    {
+      "claim_id": "ec2011fd-071f-406f-a58b-fb743acb6c61",
+      "result_id": "c9ca096e-40ce-459a-83c8-5476d6af96e6"
+    },
+    {
+      "claim_id": "aebbb4b7-0325-484f-9b65-940836df5211",
+      "result_id": "c9ca096e-40ce-459a-83c8-5476d6af96e6"
+    },
+    {
+      "claim_id": "d2971a9c-b159-4e73-a300-fd31d26c5579",
+      "result_id": "c9ca096e-40ce-459a-83c8-5476d6af96e6"
+    },
+    {
+      "claim_id": "b4a0ad03-72f8-4738-95b5-50053c1424c9",
+      "result_id": "c9ca096e-40ce-459a-83c8-5476d6af96e6"
+    },
+    {
+      "claim_id": "c0dcc398-de9d-46ad-85d9-52f5aab21445",
+      "result_id": "c9ca096e-40ce-459a-83c8-5476d6af96e6"
+    },
+    {
+      "claim_id": "9d5d6aa2-9c73-4b7d-ab9a-d1e09a8d2d99",
+      "result_id": "bc1f2a0e-905a-48b6-8f93-e133081f71fa"
+    },
+    {
+      "claim_id": "484bd0c9-248b-43f3-a65b-27abdacd9ca9",
+      "result_id": "bc1f2a0e-905a-48b6-8f93-e133081f71fa"
+    },
+    {
+      "claim_id": "d809388a-b1a9-4e97-8052-ed583c916b65",
+      "result_id": "bc1f2a0e-905a-48b6-8f93-e133081f71fa"
+    },
+    {
+      "claim_id": "4c95fe80-0abe-47b5-be32-9b0daa083d5e",
+      "result_id": "bc1f2a0e-905a-48b6-8f93-e133081f71fa"
+    },
+    {
+      "claim_id": "f55a0ba9-28b4-4eb9-8edc-12019d760ec6",
+      "result_id": "bc1f2a0e-905a-48b6-8f93-e133081f71fa"
+    },
+    {
+      "claim_id": "dce4f28c-2290-478a-99d2-b78a9f8bbcd6",
+      "result_id": "bc1f2a0e-905a-48b6-8f93-e133081f71fa"
+    },
+    {
+      "claim_id": "f002d2a2-562e-4728-b82d-5b6a0071dd50",
+      "result_id": "4d7365ef-be7b-4607-88e5-f76d79f860b9"
+    },
+    {
+      "claim_id": "77193710-45bf-4103-a2c9-522430949907",
+      "result_id": "4d7365ef-be7b-4607-88e5-f76d79f860b9"
+    },
+    {
+      "claim_id": "04d0d0ba-a1f9-40e1-b807-6c935724103b",
+      "result_id": "4d7365ef-be7b-4607-88e5-f76d79f860b9"
+    },
+    {
+      "claim_id": "037f7948-d17b-4e57-9b6a-f8356dd5a261",
+      "result_id": "4d7365ef-be7b-4607-88e5-f76d79f860b9"
+    },
+    {
+      "claim_id": "826ca1b6-c1d7-4b7b-8dce-4e93039bfa72",
+      "result_id": "4d7365ef-be7b-4607-88e5-f76d79f860b9"
+    },
+    {
+      "claim_id": "61dac02e-b0a0-4ff4-988e-3e9ea40064bb",
+      "result_id": "4d7365ef-be7b-4607-88e5-f76d79f860b9"
+    },
+    {
+      "claim_id": "0042be16-f327-463a-9a0c-1a112727cb0b",
+      "result_id": "4d7365ef-be7b-4607-88e5-f76d79f860b9"
+    },
+    {
+      "claim_id": "fe952669-36c2-4380-944d-b344310a4dd4",
+      "result_id": "4d7365ef-be7b-4607-88e5-f76d79f860b9"
+    },
+    {
+      "claim_id": "0a811741-5ca7-489a-92b9-b011f4503150",
+      "result_id": "4d7365ef-be7b-4607-88e5-f76d79f860b9"
+    },
+    {
+      "claim_id": "f2a8120a-48a7-464d-8a16-2e004614740a",
+      "result_id": "80a80cc9-8812-46b4-b31b-e6ce2baf3ebb"
+    },
+    {
+      "claim_id": "4d004993-983a-45a5-a64f-2728ce4f9cd9",
+      "result_id": "80a80cc9-8812-46b4-b31b-e6ce2baf3ebb"
+    },
+    {
+      "claim_id": "342efc42-e310-4370-8f58-e0483b956808",
+      "result_id": "80a80cc9-8812-46b4-b31b-e6ce2baf3ebb"
+    },
+    {
+      "claim_id": "f180df9e-86f6-410e-8818-9c695da1fa36",
+      "result_id": "80a80cc9-8812-46b4-b31b-e6ce2baf3ebb"
+    },
+    {
+      "claim_id": "f65848b0-27ac-4019-b954-c68943f0324f",
+      "result_id": "80a80cc9-8812-46b4-b31b-e6ce2baf3ebb"
+    },
+    {
+      "claim_id": "4b6e86c2-8c35-4c39-a70c-2463f526f35a",
+      "result_id": "546db73b-b348-49bf-96ba-731d99228354"
+    },
+    {
+      "claim_id": "04d0d0ba-a1f9-40e1-b807-6c935724103b",
+      "result_id": "546db73b-b348-49bf-96ba-731d99228354"
+    },
+    {
+      "claim_id": "9e84747e-fae3-4c58-9b5e-96c4a0f556df",
+      "result_id": "546db73b-b348-49bf-96ba-731d99228354"
+    },
+    {
+      "claim_id": "ac965d28-eeba-4a69-89e4-dba1ab857663",
+      "result_id": "546db73b-b348-49bf-96ba-731d99228354"
+    },
+    {
+      "claim_id": "f3b6b2e3-d90e-4240-b9bd-f135dbd15532",
+      "result_id": "546db73b-b348-49bf-96ba-731d99228354"
+    },
+    {
+      "claim_id": "c8b638b8-2093-47fb-b0eb-2c8e50e77b8a",
+      "result_id": "546db73b-b348-49bf-96ba-731d99228354"
+    },
+    {
+      "claim_id": "fe6fcb49-a4e8-4391-af35-696909c9c7a7",
+      "result_id": "546db73b-b348-49bf-96ba-731d99228354"
+    },
+    {
+      "claim_id": "2eed2137-d286-4313-ad28-23a0cfb90d27",
+      "result_id": "546db73b-b348-49bf-96ba-731d99228354"
+    },
+    {
+      "claim_id": "07da7dda-fed2-4704-9918-86936d0e370c",
+      "result_id": "546db73b-b348-49bf-96ba-731d99228354"
+    },
+    {
+      "claim_id": "12e11009-91a4-4460-9c69-0f8a6b9fca12",
+      "result_id": "546db73b-b348-49bf-96ba-731d99228354"
+    },
+    {
+      "claim_id": "cdf44910-ded8-4841-8b19-3b3a1089fb60",
+      "result_id": "566d6ec4-792f-40a6-a4b8-0fbdd472be9c"
+    },
+    {
+      "claim_id": "a3933237-1148-43dd-a559-2326af1363cc",
+      "result_id": "566d6ec4-792f-40a6-a4b8-0fbdd472be9c"
+    },
+    {
+      "claim_id": "f3f73b44-2b6d-406e-bd6a-cd8a51bb4177",
+      "result_id": "566d6ec4-792f-40a6-a4b8-0fbdd472be9c"
+    },
+    {
+      "claim_id": "b7b2b16f-fdac-42a0-b890-9d6ae4204031",
+      "result_id": "566d6ec4-792f-40a6-a4b8-0fbdd472be9c"
+    },
+    {
+      "claim_id": "44dc6943-793f-4283-95a8-6dc714acbf30",
+      "result_id": "566d6ec4-792f-40a6-a4b8-0fbdd472be9c"
+    },
+    {
+      "claim_id": "30a1a432-779b-4bc3-90fb-d2e7426898f2",
+      "result_id": "566d6ec4-792f-40a6-a4b8-0fbdd472be9c"
+    },
+    {
+      "claim_id": "b6b9c5d3-9214-433b-95bf-edba415d32c3",
+      "result_id": "566d6ec4-792f-40a6-a4b8-0fbdd472be9c"
+    },
+    {
+      "claim_id": "0ee70745-9d01-4a91-acbe-a580438c1873",
+      "result_id": "566d6ec4-792f-40a6-a4b8-0fbdd472be9c"
+    },
+    {
+      "claim_id": "ab24b9ac-fad5-4979-bcfd-06954fc4ba91",
+      "result_id": "e6605380-bdb1-4a08-8929-ce9e5d966b57"
+    },
+    {
+      "claim_id": "c9fa79d0-f8e4-4815-aafd-cb1a7299798c",
+      "result_id": "e6605380-bdb1-4a08-8929-ce9e5d966b57"
+    },
+    {
+      "claim_id": "b63994a4-f88b-47f4-b8e7-a4c1a3565d1e",
+      "result_id": "e6605380-bdb1-4a08-8929-ce9e5d966b57"
+    },
+    {
+      "claim_id": "b935c4d9-3852-41bb-be3a-aa2438eb2a6b",
+      "result_id": "4eed43a6-9cdb-49bd-b0ab-7247b8b6f327"
+    },
+    {
+      "claim_id": "e5e5f9ce-dd94-4078-a15c-4e37cf1b0ade",
+      "result_id": "4eed43a6-9cdb-49bd-b0ab-7247b8b6f327"
+    },
+    {
+      "claim_id": "3165748b-1b11-450b-a56d-e7841d5edec7",
+      "result_id": "4eed43a6-9cdb-49bd-b0ab-7247b8b6f327"
+    },
+    {
+      "claim_id": "5795a2ed-37ac-4afc-a84c-72d7eef9cdf2",
+      "result_id": "ae8c5121-511d-4b26-8c2f-8edcd9a14093"
+    },
+    {
+      "claim_id": "0a2efda5-c9c2-45d4-b1f4-b436c8566775",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "bdbccc28-45df-4c11-aac5-e465f5acfa6d",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "daba34be-933c-465d-8f14-46b96f219e82",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "ab8b9550-b3b0-4a8a-af3f-cb6bcc2a705a",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "8f4f1195-4fb2-4aa8-9b29-cfc76d364f4a",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "1b4009bd-bc97-4706-a918-6ea64e4e4e0e",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "f162dc2e-0073-45d5-a3bc-3c32f8c85524",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "a79964ab-5d7a-4a1c-8d17-6c3301978618",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "df635249-b65f-40ab-a8af-9d9ecc1a2b47",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "03da8e56-a5d7-47ee-a8f5-c47d16234666",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "144d0ac1-1973-4925-938f-3f0fdf71dc6f",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "8c9b2423-e8ed-402f-be36-95d98831aafb",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "f3d9cc6a-56bb-4ad0-a264-1650c1a57dcb",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "9caca0c4-688b-46a1-b774-78b31793bd3e",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "7e05d0cc-740c-48d7-89ec-6210c8a500e4",
+      "result_id": "7b445c41-23c5-49cd-811b-34f45b7445a3"
+    },
+    {
+      "claim_id": "2d1aa8a0-365f-415f-8493-d4d0ce31ff19",
+      "result_id": "17b0b804-415a-4e24-ade8-9088b4d9a19c"
+    },
+    {
+      "claim_id": "f3eaf1aa-702e-4ceb-8758-fec341f23bdb",
+      "result_id": "17b0b804-415a-4e24-ade8-9088b4d9a19c"
+    },
+    {
+      "claim_id": "d8c558c5-ff42-4f57-af7b-1c5d871461c8",
+      "result_id": "17b0b804-415a-4e24-ade8-9088b4d9a19c"
+    },
+    {
+      "claim_id": "4c3ea9de-edee-4acf-bd4b-cb4609e6881a",
+      "result_id": "17b0b804-415a-4e24-ade8-9088b4d9a19c"
+    },
+    {
+      "claim_id": "6fcc1c3d-eeef-468e-a71b-90056d3d8e10",
+      "result_id": "17b0b804-415a-4e24-ade8-9088b4d9a19c"
+    },
+    {
+      "claim_id": "bc0ac7cf-74de-44ec-985b-9c9bb9811958",
+      "result_id": "c7b4a40d-17ba-4393-b38b-5504be0c0654"
+    },
+    {
+      "claim_id": "76c82642-0793-4d3f-ac83-ced135dfa060",
+      "result_id": "6001a534-af91-47ba-8a32-871cc783cfd4"
+    },
+    {
+      "claim_id": "984572f1-f357-471e-8298-957df03aa120",
+      "result_id": "6001a534-af91-47ba-8a32-871cc783cfd4"
+    },
+    {
+      "claim_id": "9effdd47-5de1-44cd-a53a-f59d70e92528",
+      "result_id": "6001a534-af91-47ba-8a32-871cc783cfd4"
+    },
+    {
+      "claim_id": "1188f8cf-9245-4e10-80c9-929daef24c15",
+      "result_id": "6001a534-af91-47ba-8a32-871cc783cfd4"
+    },
+    {
+      "claim_id": "5623d60c-66cc-46bb-9bf9-ae44aa5ab54e",
+      "result_id": "6001a534-af91-47ba-8a32-871cc783cfd4"
+    }
+  ],
+  "comparisons": []
+}

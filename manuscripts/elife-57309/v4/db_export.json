@@ -1,0 +1,2719 @@
+{
+  "submission": {
+    "id": "16217cd5-0b0a-4f52-98f7-d9db3aa94db8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:13:52.456326Z",
+    "updated_at": "2025-12-02T16:13:52.456326Z"
+  },
+  "content": [
+    {
+      "id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "submission_id": "16217cd5-0b0a-4f52-98f7-d9db3aa94db8",
+      "content_type": "manuscript",
+      "content_text": "# SARS-CoV-2 (COVID-19) by the numbers\n\n## Authors\n\n- Yinon M Bar-On<sup>1</sup> ([ORCID: 0000-0001-8477-609X](https://orcid.org/0000-0001-8477-609X))\n- Avi Flamholz<sup>2</sup> ([ORCID: 0000-0002-9278-5479](https://orcid.org/0000-0002-9278-5479))\n- Rob Phillips<sup>3</sup> ([ORCID: 0000-0003-3082-2809](https://orcid.org/0000-0003-3082-2809))\n- Ron Milo<sup>1</sup> ([ORCID: 0000-0003-1641-2299](https://orcid.org/0000-0003-1641-2299)) \u2020\n\n### Affiliations\n\n1. Department of Plant and Environmental Sciences, Weizmann Institute of Science Rehovot Israel\n2. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States\n3. Department of Physics, Department of Applied Physics, and the Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States\n4. Chan Zuckerberg Biohub San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe COVID-19 pandemic is a harsh reminder of the fact that, whether in a single human host or a wave of infection across continents, viral dynamics is often a story about the numbers. In this article we provide a one-stop, curated graphical source for the key numbers (based mostly on the peer-reviewed literature) about the SARS-CoV-2 virus that is responsible for the pandemic. The discussion is framed around two broad themes: i) the biology of the virus itself; ii) the characteristics of the infection of a single human host.\n\n## Introduction\n\nThe COVID-19 pandemic has made brutally clear the need for further research into many aspects of viruses. In this article we compile data about the basic properties of the SARS-CoV-2 virus, and about how it interacts with the body (Figure 1). We also discuss a number of questions about the virus, and perform 'back-of-the-envelope' calculations to show the insights that can be gained from knowing some key numbers and using quantitative reasoning. It is important to note that much uncertainty remains, and while 'back-of-the-envelope' calculations can improve our intuition through sanity checks, they cannot replace detailed epidemiological analysis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57309/elife-57309-fig1-v4.jpg)\n\n**Figure 1.:** Graphic showing what we know about the basic properties of the SARS-CoV-2 virus, such as its size and genome, and about how it interacts with the body. These topics are discussed further in the text, which also includes sources for all the values listed. This article will be updated as new data become available, and the latest version is available at: bit.ly/2WOeN64. A larger version of this figure (which was created with Biorender) is available as Supplementary file\u00a01.\n\n## Eight questions about SARS-CoV-2\n\n### 1. How long does it take a single infected person to yield one million infected people?\n\nIf everybody continued to behave as usual, how long would it take the pandemic to spread from one person to a million infected victims? The basic reproduction number, R0, suggests each infection directly generates 2\u20134 more infections in the absence of countermeasures like physical distancing. Once a person is infected, it takes a period of time known as the 'latent period' before they are able to transmit the virus. The current best-estimate of the median latent time is \u22483 days followed by \u22484 days of close to maximal infectiousness (Li et al., 2020a; He et al., 2020). The exact durations vary among people, and some are infectious for much longer. Using R0\u22484, the number of cases will quadruple every \u22487 days or double every \u22483 days. 1000-fold growth (going from one case to 103) requires 10 doublings since 210 \u2248 103; 3 days\u00a0\u00d7\u00a010 doublings = 30 days, or about one month. So we expect \u22481000x growth in one month, a\u00a0million-fold (106) in two months, and a billion fold (109) in three months. Even though this calculation is highly simplified, ignoring the effects of 'super-spreaders', herd-immunity and incomplete testing, it emphasizes the fact that viruses can spread at a bewildering pace when no countermeasures are taken. This illustrates why it is crucial to limit the spread of the virus by physical distancing measures. For fuller discussion of the meaning of R0, the latent and infectious periods, as well as various caveats, see the section on 'Definitions and measurement methods' below.\n\n### 2. What is the effect of physical distancing?\n\nA highly simplified quantitative example helps clarify the need for physical distancing. Suppose that you are infected and you encounter 50 people over the course of a day of working, commuting, socializing and running errands. To make the numbers round, let's further suppose that you have a 2% chance of transmitting the virus in each of these encounters, so that you are likely to infect one new person each day. If you are infectious for 4 days, then you will infect four others on average, which is on the high end of the R0 values for SARS-CoV-2 in the absence of physical distancing. If you instead see five people each day (preferably fewer) because of physical distancing, then you will infect 0.1 people per day, or 0.4 people before you become less infectious. The desired effect of physical distancing is to make each current infection produce\u00a0<1 new infections. An effective reproduction number (Re) smaller than one will ensure the number of infections eventually dwindles. It is critically important to quickly achieve Re\u00a0<\u00a01, which is substantially more achievable than pushing Re to near zero through public health measures.\n\n### 3. Why was the initial quarantine period two weeks?\n\nThe period of time from infection to symptoms is termed the incubation period. The median SARS-CoV-2 incubation period is estimated to be roughly 5 days (Lauer et al., 2020). Yet there is much person-to-person variation. Approximately 99% of those showing symptoms will show them before day 14, which explains the two week confinement period. Importantly, this analysis neglects infected people who never show symptoms. Since asymptomatic people are not usually tested, it is still not clear how many such cases there are or how long asymptomatic people remain infectious for.\n\n### 4. How do N95 masks block SARS-CoV-2?\n\nN95 masks are designed to remove more than 95% of all particles that are at least 0.3 microns (\u00b5m) in diameter. In fact, measurements of the particle filtration efficiency of N95 masks show that they are capable of filtering \u224899.8% of particles with a diameter of \u22480.1 \u03bcm (Rengasamy et al., 2017). SARS-CoV-2 is an enveloped virus \u22480.1 \u03bcm in diameter, so N95 masks are capable of filtering most free virions, but they do more than that. How so? Viruses are often transmitted through respiratory droplets produced by coughing and sneezing. Respiratory droplets are usually divided into two size bins, large droplets (>5 \u03bcm in diameter) that fall rapidly to the ground and are thus transmitted only over short distances, and small droplets (\u22645 \u03bcm in diameter). Small droplets can evaporate into 'droplet nuclei', remain suspended in air for significant periods of time and could be inhaled. Some viruses, such as measles, can be transmitted by droplet nuclei (Tellier et al., 2019). Larger droplets are also known to transmit viruses, usually by settling onto surfaces that are touched and transported by hands onto mucosal membranes such as the eyes, nose and mouth (CDC, 2020). The characteristic diameter of large droplets produced by sneezing is\u00a0~100 \u03bcm (Han et al., 2013), while the diameter of droplet nuclei produced by coughing is on the order of\u00a0~1 \u03bcm (Yang et al., 2007). At present, it is unclear whether surfaces or air are the dominant mode of SARS-CoV-2 transmission, but N95 masks should provide some protection against both (Jefferson et al., 2009; Leung et al., 2020).\n\n### 5. How similar is SARS-CoV-2 to the common cold and flu viruses?\n\nSARS-CoV-2 is a beta-coronavirus whose genome is a single \u224830 kb strand of RNA. The flu is caused by an entirely different family of RNA viruses called influenza viruses. Flu viruses have smaller genomes (\u224814 kb) encoded in eight distinct strands of RNA, and they infect human cells in a different manner than coronaviruses. The 'common cold' is caused by a variety of viruses, including some coronaviruses and rhinoviruses. Cold-causing coronaviruses (e.g. OC43 and 229E strains) are quite similar to SARS-CoV-2 in genome length (within 10%) and gene content, but different from SARS-CoV-2 in sequence (\u224850% nucleotide identity) and infection severity. One interesting facet of coronaviruses is that they have the largest genomes of any known RNA viruses (\u224830 kb). These large genomes led researchers to suspect the presence of a 'proofreading mechanism' to reduce the mutation rate and stabilize the genome. Indeed, coronaviruses have a proofreading exonuclease called ExoN, which explains their low mutation rates (~10\u20136 per site per cycle) in comparison to influenza (\u22483\u00a0\u00d7\u00a010\u20135 per site per cycle; Sanju\u00e1n et al., 2010). This relatively low mutation rate will be of interest for future studies predicting the speed with which coronaviruses can evade our immunization efforts.\n\n### 6. How much is known about the SARS-CoV-2 genome and proteome?\n\nSARS-CoV-2 has a single-stranded positive-sense RNA genome that codes for 10 genes ultimately producing 26 proteins according to an NCBI annotation (NC_045512). How is it that 10 genes code for\u00a0>20 proteins? One long gene, orf1ab, encodes a polyprotein that is cleaved into 16 proteins by proteases that are themselves part of the polyprotein. In addition to proteases, the polyprotein encodes an RNA polymerase and associated factors to copy the genome, a proofreading exonuclease, and several other non-structural proteins. The remaining genes predominantly code for structural components of the virus: i) the spike protein which binds the cognate receptor on a human or animal cell; ii) a nucleoprotein that packages the genome; iii) two membrane-bound proteins. Though much current work is centered on understanding the role of 'accessory' proteins in the viral life cycle, we estimate that it is currently possible to ascribe clear biochemical or structural functions to only about half of SARS-CoV-2 gene products.\n\n### 7. What can we learn from the mutation rate of the virus?\n\nStudying viral evolution, researchers commonly use two measures describing the rate of genomic change. The first is the evolutionary rate, which is defined as the average number of substitutions that become fixed per year in strains of the virus, given in units of mutations per site per year. The second is the mutation rate, which is the number of substitutions per site per replication cycle. How can we relate these two values? Consider a single site at the end of a year. The only measurement of a mutation rate in a \u03b2-coronavirus suggests that this site will accumulate\u00a0~10\u20136 mutations in each round of replication. Each replication cycle takes\u00a0~10 hr, and so there are 103 cycles/year. Multiplying the mutation rate by the number of replications, assuming neutrality and neglecting the effects of evolutionary selection, we arrive at 10\u20133 mutations per site per year, consistent with the evolutionary rate inferred from sequenced coronavirus genomes. As our estimate is consistent with the measured rate, we infer that the virus undergoes near-continuous replication in the wild, constantly generating new mutations that accumulate over the course of the year. Using our knowledge of the mutation rate, we can also draw inferences about single infections. For example, since the mutation rate is\u00a0~10\u20136 mutations/site/cycle and an mL of sputum might contain upwards of 107 viral RNAs, we infer that every site is mutated more than once in such samples.\n\n### 8. How stable and infectious is the virion on surfaces?\n\nTo understand how SARS-CoV-2 can be transmitted, it is vitally important to characterize the stability of infectious virions on different types of surfaces like cardboard, plastics, and various metals. This is a very active area of current research. However, there are significant caveats associated with viral stability measurements. The measured stability depends on the quantity measured, for example, one can measure either infectious virions or viral RNA copies. The number of infectious virions is typically much lower than inferred from measurements of the viral genome (Woelfel et al., 2020). SARS-CoV-2 RNA has been detected on various surfaces several weeks after they were last touched (Moriarty et al., 2020), but infectiousness appears to degrade more quickly than RNA. When researchers measured the stability of infectious virions on surfaces, the numbers depended greatly on the type of surface and the medium carrying the virus, with the stability on plastic being much greater than on copper or steel, for example. Viral stability is also known to depend strongly on temperature and humidity (Chin et al., 2020). Therefore calculating the probability of human infection from exposure to contaminated surfaces is a complex task for which sufficient data is not yet available. As such, caution and protective measures should be taken. To gain some intuition for the importance of surface transmission, we consider an undiagnosed infectious person who touches surfaces tens of times during their infectious period. Prior to lockdown, these public surfaces will subsequently be touched by hundreds of other people. From the basic reproduction number R0\u00a0\u2248\u00a02\u20134 we can infer that not everyone touching those surfaces will be infected. More detailed bounds on the risk of infection from touching surfaces urgently awaits study.\n\n## Definitions and measurement methods\n\n### What are the meanings of R0, 'latent period' and 'infectious period'?\n\nThe basic reproduction number, R0, estimates the average number of new infections directly generated by a single infectious person. The 0 subscript connotes that this refers to early stages of an epidemic, when everyone in the region is susceptible (that is, there is no immunity) and no countermeasures have been taken. As geography and culture affect how many people we encounter daily, how much we touch them and share food with them, estimates of R0 can vary between locales. Moreover, because R0 is defined in the absence of countermeasures and immunity, we are usually only able to assess the effective R (Re). At the beginning of an epidemic, before any countermeasures, Re \u2248 R0. Several days pass before a newly-infected person becomes infectious themselves. This 'latent period' is typically followed by several days of infectivity called the 'infectious period'.\n\nIt is important to understand that reported values for all these parameters are population averages inferred from epidemiological models fit to counts of infected, symptomatic, and dying patients. Because testing is always incomplete and model fitting is imperfect, and data will vary between different locations, there is substantial uncertainty associated with reported values. Moreover, these median or average best-fit values do not describe person-to-person variation. For example, viral RNA was detectable in patients with moderate symptoms for more than one week after the onset of symptoms, and more than two weeks in patients with severe symptoms (ECDC, 2020). Though detectable RNA is not the same as active virus, this evidence calls for caution in using uncertain, average parameters to describe a pandemic. Why have detailed distributions of these parameters across people not been published? Direct measurement of latent and infectious periods at the individual level is extremely challenging, as accurately identifying the precise time of infection is usually very difficult.\n\n### What is the difference between measurements of viral RNA and infectious viruses?\n\nDiagnosis and quantification of viruses utilizes several different methodologies. One common approach is to quantify the amount of viral RNA in an environmental (e.g., surface) or clinical (e.g., sputum) sample via quantitative reverse-transcription polymerase chain reaction (RT-qPCR). This method measures the number of copies of viral RNA in a sample. The presence of viral RNA does not necessarily imply the presence of infectious virions. Virions could be defective (e.g., by mutation) or might have been deactivated by environmental conditions. To assess the concentration of infectious viruses, researchers typically measure the '50% tissue-culture infectious dose' (TCID50). Measuring TCID50 involves infecting replicate cultures of susceptible cells with dilutions of the virus and noting the dilution at which half the replicate dishes become infected. Viral counts reported by TCID50 tend to be much lower than RT-qPCR measurements, which could be one reason why studies relying on RNA measurements (Moriarty et al., 2020) report the persistence of viral RNA on surfaces for much longer times than studies relying on TCID50 (van Doremalen et al., 2020). It is important to keep this caveat in mind when interpreting data about viral loads, for example a report measuring viral RNA in patient stool samples for several days after recovery (Wu et al., 2020a). Nevertheless, for many viruses even a small dose of virions can lead to infection. For the common cold, for example,\u00a0~0.1 TCID50 are sufficient to infect half of the people exposed (Couch et al., 1966).\n\n### What is the difference between the case fatality rate and the infection fatality rate?\n\nGlobal statistics on new infections and fatalities are pouring in from many countries, providing somewhat different views on the severity and progression of the pandemic. Assessing the severity of the pandemic is critical for policy making and thus much effort has been put into quantifying key measures of its progression. The most common measure for the severity of a disease is the fatality rate. One commonly reported measure is the case fatality rate (CFR), which is the proportion of fatalities out of total diagnosed cases. The CFR reported in different countries varies significantly, from 1% to about 15%. Several key factors affect the CFR. First, demographic parameters and practices associated with increased or decreased risk differ greatly across societies. For example, the prevalence of smoking, the average age of the population, and the capacity of the healthcare system. Indeed, the majority of people dying from SARS-CoV-2 have a preexisting condition such as cardiovascular disease or smoking (The Novel Coronavirus Pneumonia Emergency Response Epidemiology Team, 2020). There is also potential for bias in estimating the CFR. For example, a tendency to identify more severe cases (selection bias) will tend to overestimate the CFR. On the other hand, there is usually a delay between the onset of symptoms and death, which can lead to an underestimate of the CFR early in the progression of an epidemic. We report the uncorrected CFR values, and thus these caveats should be borne in mind. Even when correcting for these factors, the CFR does not give a complete picture as many cases with mild or no symptoms are not tested. Thus, the CFR will tend to overestimate the rate of fatalities per infected person, termed the infection fatality rate (IFR). Estimating the total number of infected people is usually accomplished by testing a random sample for anti-viral antibodies, whose presence indicates that the patient was previously infected. At the time of writing, such assays are not widely available, and so researchers resort to surrogate datasets generated by testing of foreign citizens returning home from infected countries (Verity et al., 2020; Nishiura et al., 2020), large-scale semi-random testing in countries such as Iceland, near complete testing of passengers on the Diamond Princess ship (Russell et al., 2020), or epidemiological models estimating the number of undocumented cases (Li et al., 2020a; Mizumoto et al., 2020). These methods have their own caveats and uncertainties associated with them, and it is not entirely clear how representative they are but they do provide a first glimpse of the true severity of the disease.\n\n### What is the burst size and the replication time of the virus?\n\nTwo important characteristics of the viral life cycle are the time it takes them to produce new infectious progeny, and the number of progeny each infected cell produces. The yield of new virions per infected cell is more clearly defined in lytic viruses, such as those infecting bacteria (bacteriophages), as viruses replicate within the cell and subsequently lyse the cell to release a 'burst' of progeny. This measure is usually termed 'burst size'. SARS-CoV-2 does not release its progeny by lysing the cell, but rather by continuous budding (Park et al., 2020b). Even though there is no 'burst', we can still estimate the average number of virions produced by a single infected cell. Measuring the time to complete a replication cycle or the burst size in vivo is very challenging, and thus researchers usually resort to measuring these values in tissue-culture. There are various ways to estimate these quantities, but a common and simple one is using 'one-step' growth dynamics. The key principle of this method is to ensure that only a single replication cycle occurs. This is typically achieved by infecting the cells with a large number of virions, such that every cell gets infected, thus leaving no opportunity for secondary infections.\n\nAssuming entry of the virus to the cells is rapid (we estimate 10 min for SARS-CoV-2), the time it takes to produce progeny can be estimated by quantifying the lag between inoculation and the appearance of new intracellular virions, also known as the 'eclipse period'. This eclipse period does not account for the time it takes to release new virions from the cell. The time from cell entry until the appearance of the first extracellular viruses, known as the 'latent period' (not to be confused with the epidemiological latent period; see glossary in Box 1), estimates the duration of the full replication cycle. The burst size can be estimated by waiting until virion production saturates, and then dividing the total virion yield by the number of cells infected. While both the time to complete a replication cycle and the burst size may vary significantly in an animal host due to factors including the type of cell infected or the action of the immune system, these numbers provide us with an approximate quantitative view of the viral life-cycle at the cellular level.\n\n### Are people usually diagnosed before or after they are contagious?\n\nOur personal experience with infectious diseases leaves us with the intuition that we are contagious when we have symptoms. For the seasonal flu, for example, most transmissions indeed occur after a person has developed symptoms (Ip et al., 2017). For SARS-CoV-2, in contrast, it is common to be contagious before symptoms. The SARS-CoV-2 incubation period is about 5 days, while peak infectiousness begins two days before symptoms reveal themselves. As a result, a large fraction of infections occur pre-symptomatically, that is, without the infectious person realizing they have the disease (Ferretti et al., 2020; He et al., 2020). With testing capacity under strain, diagnosis typically occurs \u22485 days after symptom onset, or \u224810 days after infection. By that time, most people have already passed peak infectiousness. In order to effectively slow the growth of the pandemic, it is important to detect infections as early as possible and quarantine those who test positive. In the case of SARS-CoV-2 this means detection before symptoms because there is strong evidence of significant pre-symptomatic transmission. Finally, the situation is further complicated by a large fraction of asymptomatic cases, that is cases in which the infected person never develops noticeable symptoms. This fraction is more than half of children and young adults (Davies et al., 2020). Leading modeling efforts assume that asymptomatic infections are anywhere between 10\u201380% as contagious as symptomatic ones (Ferretti et al., 2020; Davies et al., 2020). This wide range reflects a crucial gap in our understanding of SARS-CoV-2 transmission: great uncertainty about the magnitude of asymptomatic transmission.\n\n## Sources of the numbers in Figure 1\n\nNote that for about 10 out of 45 parameters, the literature values are from other coronaviruses. We await corresponding measurements for SARS-CoV-2.\n\n### Size and content\n\nDiameter. (Figure 3 in Zhu et al., 2020): \"Electron micrographs of negative-stained 2019-nCoV particles were generally spherical with some pleomorphism. Diameter varied from about 60 to 140 nm.\"\n\nVolume. Using diameter and assuming the virus is a sphere.\n\nMass. Using the volume and a density of\u00a0~1 g per mL.\n\nNumber of spike trimers. (Neuman et al., 2011): \"Our model predicts \u223c90 spikes per particle.\"\n\nLength of spike trimers. (Zhu et al., 2020): \"Virus particles had quite distinctive spikes, about 9 to 12 nm, and gave virions the appearance of a solar corona.\"\n\nReceptor binding affinity (Kd). Walls et al., 2020 reports Kd of \u22481 nM for the binding domain using biolayer interferometry with kon of \u22481.5\u00a0\u00d7\u00a0105 M\u20131 s\u20131 and koff of \u22481.6\u00a0\u00d7\u00a010\u20134 s\u20131 (Table 1). Wrapp et al., 2020 reports Kd of \u224815 nM for the spike (Figure 3) and \u224835 nM for the binding domain (Figure 4) using surface plasmon resonance with kon of \u22481.9\u00a0\u00d7\u00a0105 M\u20131 s\u20131 and koff of \u22482.8\u00a0\u00d7\u00a010\u20133 s\u20131 for the spike, and kon of \u22481.4\u00a0\u00d7\u00a0105 M\u20131 s\u20131 and koff of \u22484.7\u00a0\u00d7\u00a010\u20133 s\u20131 for the binding domain. Lan et al., 2020 reports Kd of \u22485 nM for the binding domain (Extended Data Figure 4) using surface plasmon resonance with kon of \u22481.4\u00a0\u00d7\u00a0106 M\u20131 s\u20131 and koff of \u22486.5\u00a0\u00d7\u00a010\u20133 s\u20131. Shang et al., 2020 reports Kd of \u224840 nM for the binding domain (Extended Data Figure 6) using surface plasmon resonance with kon of \u22481.8\u00a0\u00d7\u00a0106 M\u20131 s\u20131 and koff of \u22487.8\u00a0\u00d7\u00a010\u20133 s\u20131. The main disagreement between the studies seems to be on the koff.\n\nMembrane (M; 222 aa). (Neuman et al., 2011): \"Using the M spacing data for each virus (Figure 6C), this would give \u223c1100 M2 molecules per average SARS-CoV, MHV and FCoV particle.\"\n\nEnvelope (E; 75 aa). (Godet et al., 1992): \"Based on the estimated molar ratio and assuming that coronavirions bear 100 (J Gen Virol 63: 241\u2013245) to 200 spikes, each composed of 3 s molecules (Virus Research 20:107\u2013120) it can be inferred that approximately 15\u201330 copies of ORF4 protein are incorporated into TGEV virions (Purdue strain).\"\n\nNucleoprotein (364 aa). (Neuman et al., 2011): \"Estimated ratios of M to N protein in purified coronaviruses range from about 3M:1N (Cavanagh, 1983; Escors et al., 2001) to 1M:1N (Hogue and Brian, 1986; Liu and Inglis, 1991), giving 730\u20132200 N molecules per virion.\"\n\n### Genome\n\nType. (ViralZone) +ssRNA \"Monopartite, linear ssRNA(+) genome\"\n\nGenome length. The initial isolate of SARS-CoV-2 from Wuhan, China has a 29903 nt \u2248 30 kb ssRNA genome (NCBI MN908947.3), which is typical of a coronavirus (Smith and Denison, 2012).\n\n(Wu et al., 2020b): \"SARS-CoV-2 genome has 10 open reading frames (Figure 2A)\". (Wu et al., 2020c): \"The 2019-nCoV genome was annotated to possess 14 ORFs encoding 27 proteins\". Coronavirus genomes contain several 'accessory proteins' that are not essential for replication and are not always expressed. The 'nonstructural proteins' are expressed as a polyprotein which is proteolytically cleaved into \u224810 proteins. As transcription start and protease cleavage sites are not trivial to identify bioinformatically, there is some uncertainty about the exact number of transcriptional units and proteins expressed by SARS-CoV-2.\n\nNumber of proteins. (Wu et al., 2020b): \"By aligning with the amino acid sequence of SARS PP1ab and analyzing the characteristics of restriction cleavage sites recognized by 3CLpro and PLpro, we speculated 14 specific proteolytic sites of 3CLpro and PLpro in SARS-CoV-2 PP1ab (Figure 2B). PLpro cleaves three sites at 181\u2013182, 818\u2013819, and 2763\u20132764 at the N-terminus and 3CLpro cuts at the other 11 sites at the C-terminus, and forming 15 non-structural proteins.\"\n\nEvolution rate. (Koyama et al., 2020): \"Mutation rates estimated for SARS, MERS, and OC43 show a large range, covering a span of 0.27 to 2.38 substitutions\u00a0\u00d7\u00a010\u20133/site/ year (see references 10\u201316).\" Recent unpublished evidence also suggests this rate is of the same order of magnitude in SARS-CoV-2\u00a0().\n\nMutation rate. (Sanju\u00e1n et al., 2010): \"Murine hepatitis virus \u2026 Therefore, the corrected estimate of the mutation rate is \u03bcs/n/c = 1.9x10\u20136 / 0.55 = 3.5 x 10\u20136.\"\n\nGenome similarity. For all species except pangolin, genomes were downloaded from NCBI and aligned to the SARS-CoV-2 reference (MN908947) with EMBOSS Stretcher (EMBL-EBI server). Reported values are percent nucleotide sequence identity. Genomes used: bat coronavirus RaTG13 (MN996532.1; 96% id); SARS-CoV-1 (NC_004718.3; 80% id); MERS (NC_019843.3; 55% id); human cold coronavirus strains OC43 (NC_006213.1; 53% id) and 229E (NC_002645.1; 50% id). For pangolin: \u2018\"PangolinCoV is 91.02% and 90.55% identical to SARS-CoV-2 and BatCoV RaTG13, respectively, at the whole genome level\" (Zhang et al., 2020).\n\n### Replication timescales\n\nVirion entry into cell\u00a0(for\u00a0SARS-CoV-1). (Schneider et al., 2012): \"Previous experiments had revealed that virus is internalized within 15 min\". (Ng et al., 2003): \"Within the first 10 min, some virus particles were internalized into vacuoles (arrow) that were just below the plasma membrane surface (Fig. 2, arrows). [\u2026] The observation at 15 min postinfection (p.i.), did not differ much from 10 min p.i. (Fig. 4a)\".\n\nEclipse period. (Schneider et al., 2012): \"SARS-CoV replication cycle from adsorption to release of infectious progeny takes about 7 to 8 hr (data not shown)\"; Figure 4 of Harcourt et al., 2020 shows virions are released after 12\u201336 hr but because this is multi-step growth this represents an upper bound for the replication cycle.\n\nBurst size. (Hirano et al., 1976): \"The average per-cell yield of active virus was estimated to be about 6\u20137 \u00d7 102 plaque-forming units.\" This data is for MHV, so more research is needed to verify these values for SARS-CoV-2.\n\n### Host cells\n\nType. (Shieh et al., 2005): \"Immunohistochemical and in situ hybridization assays demonstrated evidence of SARS-associated coronavirus (SARS-CoV) infection in various respiratory epithelial cells, predominantly type II pneumocytes, and in alveolar macrophages in the lung\". (Walls et al., 2020): \"SARS-CoV-2 uses ACE2 to enter target cells\". (Rockx et al., 2020): \"In SARS-CoV-2-infected macaques, virus was excreted from nose and throat in absence of clinical signs, and detected in type I and II pneumocytes in foci of diffuse alveolar damage and mucous glands of the nasal cavity [\u2026] In the upper respiratory tract, there was focal five or locally extensive SARS-CoV-2 antigen expression in epithelial cells of mucous glands in the nasal cavity (septum or concha) of all four macaques, without any associated histological lesions (fig. 2I).\"\n\nType I and Type II pneumocyte and alveolar macrophage cell number. Values taken from table 4 in Crapo et al., 1982, and table 5 in Stone et al., 1992.\n\nEpithelial cells in mucous gland cell number and volume. The value for the surface area of the nasal cavity is taken from ICRP, 1975; the value for the mucous gland density is taken from Tos and Mogensen, 1976; Tos and Morgensen, 1977; the value for the mucous gland volume is taken from Widdicombe, 2019; and the value for the mucous cell volume is taken from Ordo\u00f1ez et al., 2001\u00a0and\u00a0Mercer et al., 1994. We divide the mucous gland volume by the mucous cell volume to arrive at the total number of mucous cells in a mucous gland. We multiply the surface density of mucous glands by the surface area of the nasal cavity to arrive at the total number of mucous glands, and then multiply the total number of mucous glands by the number of mucous cells per mucous gland.\n\nType II pneumocyte volume. (Fehrenbach et al., 1995): \"Morphometry revealed that although inter-individual variation due to some oedematous swelling was present, the cells were in a normal size range as indicated by an estimated mean volume of 763\u00a0\u00b1\u00a064 \u03bcm3.\"\n\nAlveolar macrophage volume. (Crapo et al., 1982): \"Alveolar macrophages were found to be the largest cell in the populations studied, having a mean volume of 2,491 \u03bcm3.\"\n\n### Concentration\n\nNasopharynx, throat, stool, and sputum. We took the maximal viral load for each patient in nasopharyngeal swabs, throat swabs, stool or in sputum (figure 2 in W\u00f6lfel et al., 2020; figure 1 in Kim et al., 2020; Pan et al., 2020).\n\n### Antibody response \u2013 seroconversion\n\nSeroconversion time (time period until a specific antibody becomes detectable in the blood). (Zhao et al., 2020): \"The seroconversion sequentially appeared for Ab, IgM and then IgG, with a median time of 11, 12 and 14 days, respectively\". (To et al., 2020): \"For 16 patients with serum samples available 14 days or longer after symptom onset, rates of seropositivity were 94% for anti-NP IgG (n\u00a0=\u00a015), 88% for anti-NP IgM (n\u00a0=\u00a014), 100% for anti-RBD IgG (n\u00a0=\u00a016), and 94% for anti-RBD IgM (n\u00a0=\u00a015)\".\n\nMaintenance of antibody response to virus. (Wu et al., 2007): \"Among 176 patients who had had severe acute respiratory syndrome (SARS), SARS-specific antibodies were maintained for an average of 2 years, and significant reduction of immunoglobulin G\u2013positive percentage and titers occurred in the third year\".\n\n### Virus environmental stability\n\nHalf-life on surfaces. (van Doremalen et al., 2020): We use half-live values reported\u00a0in Supplementary Table 1. Chin et al., 2020: We use short-term half-lives reported in the Appendix. Pastorino et al., 2020: We use the slopes of data poitns from the first two hours can calculate the short-term half-life from them. More studies are urgently needed to clarify the implications of virion stability on the probability of infection from aerosols or surfaces.\n\nRNA stability on surfaces (Moriarty et al., 2020): \"SARS-CoV-2 RNA was identified on a variety of surfaces in cabins of both symptomatic and asymptomatic infected passengers up to 17 days after cabins were vacated on the Diamond Princess but before disinfection procedures had been conducted (Takuya Yamagishi, National Institute of Infectious Diseases, personal communication, 2020).\u201d\n\n### 'Characteristic' infection progression in a single patient\n\nBasic reproductive number, R0. (Li et al., 2020a): \"Our median estimate of the effective reproductive number, Re \u2013 equivalent to the basic reproductive number (R0) at the beginning of the epidemic \u2013 is 2.38 (95% CI: 2.04\u20132.77)\". (Park et al., 2020a): \"Our estimated R0 from the pooled distribution has a median of 2.9 (95% CI: 2.1\u20134.5)\".\n\nLatent period (from infection to being able to transmit). (Li et al., 2020a): \"In addition, the median estimates for the latent and infectious periods are approximately 3.69 and 3.48 days, respectively\"; see also table 1 in this paper. (He et al., 2020): We use the time it takes infectiousness to reach half its peak, which happens two days before symptom onset based on Figure 1C. As symptoms arise after five days (see 'Incubation period' below), this implies a three-day latent period.\n\nIncubation period (from infection to symptoms). (Lauer et al., 2020): \"The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days), and 97.5% of those who develop symptoms will do so within 11.5 days (CI, 8.2 to 15.6 days) of infection. These estimates imply that, under conservative assumptions, 101 out of every 10 000 cases (99th percentile, 482) will develop symptoms after 14 days of active monitoring or quarantine\". (Li et al., 2020b): \"The mean incubation period was 5.2 days (95% confidence interval [CI], 4.1 to 7.0), with the 95th percentile of the distribution at 12.5 days\".\n\nInfectious period. (Li et al., 2020a): \"the median estimates for the latent and infectious periods are approximately 3.69 and 3.48 days, respectively\"; see also table 1 in this paper. (He et al., 2020): We quantify the interval over which infectiousness is at least half its maximal value (the interval of half-maximal infectiousness) from the infectiousness profile in Figure 1C.\n\nDisease duration. (WHO, 2020): \"Using available preliminary data, the median time from onset to clinical recovery for mild cases is approximately 2 weeks and is 3\u20136 weeks for patients with severe or critical disease\".\n\nTime until diagnosis. (Xu et al., 2020): We used data on cases with known symptom onset and case confirmation dates and calculated the median time delay between these two dates.\n\nCase fatality rate. (ECDC, 2020) - We use data from all countries with more than 50 death cases and calculate the uncorrected raw Case Fatality Rate for each country. The range represents the lowest and highest rates observed using ECDC data up to 14 April 2020.\n\nInfection fatality rate. We rely on three independent approaches that estimate the IFR. The first relies on data about people who were extensively tested as a result of being repatriated. (Verity et al., 2020): \"We obtain an overall IFR estimate for China of 0.66% (0.39%,1.33%)\u201d. (Ferguson et al., 2020): \"The IFR estimates from Verity et al. have been adjusted to account for a non-uniform attack rate giving an overall IFR of 0.9% (95% credible interval 0.4\u20131.4%)\". (Nishiura et al., 2020): \"The infection fatality risk (IFR) \u2013 the actual risk of death among all infected individuals \u2013 is therefore 0.3% to 0.6%\".\n\nThe second approach relies on data gathered from the Diamond Princess ship, where all passengers were tested. (Russell et al., 2020): \"We estimated that the all-age cIFR on the Diamond Princess was 1.3% (95% confidence interval (CI): 0.38\u20133.6)\".\n\nThe third approach relies on epidemiological modeling of case time-series from China. (Mizumoto et al., 2020): \"We also found that most recent crude infection fatality ratio (IFR) and time-delay adjusted IFR is estimated to be 0.04% (95% CrI: 0.03\u20130.06%) and 0.12% (95%CrI: 0.08\u20130.17%)\". Combining these three methods, and taking into account the reliability of each report, we estimate a crude range of \u22480.3\u20131.3% for the IFR.\n",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "ad373b6c-0397-4818-b8a7-b872854a77cd",
+      "submission_id": "16217cd5-0b0a-4f52-98f7-d9db3aa94db8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael B Eisen, HHMI, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57309.sa1](https://doi.org/10.7554/eLife.57309.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nComments from reviewer #1:\n\nThis article summarizes a lot of knowledge on corona viruses into a digestible format.\n\nI have one major comment - on the first page, the values marked with an asterisk (derived from SARS-CoV-1, TGEV or MHV coronaviruses data) need to be more clearly indicated. I would suggest not using the asterisk at all and putting which virus the knowledge derives from each time. It will be visually less appealing, but I think appropriate - especially for the Maintenance of antibody response: \u22482-3 years* - statistic as it could be incredibly misleading.\n\nA few minor comments -\n\n- In graphic: the role of TMPRSS2 in priming the spike might be mentioned alongside ACE2 in the first graphic:\n\nhttps://www.sciencedirect.com/science/article/pii/S0092867420302294\n\n- On the first page - eclipse period and replication cycle are not the same, as defined later, so it is confusing on the first page why the eclipse period in parenthesis is stated as equal to replication cycle. This language could be more precisely and consistently defined throughout.\n\n- In question 6 the terminology of polyprotein and polypeptide are intermingled. It probably makes sense for it to stay polyprotein as a polypeptide is any protein.\n\n-In question 7 it\u2019s a little confusing that there are two measures of the rate of mutation and one of these is the mutation rate.\n\n-Glossary - Maybe Virion and other virus specific terms should be defined if this is intended for a general audience.\n\n-In more on section, Q3: Virions and not viruses may be more appropriate \u2018Even though there is no \u201cburst\u201d, we can still estimate the average number of viruses a single infected cell will produce\u2019.\n\n- For a scientific review, question 4, \u201cHow can an N95 mask block SARS-CoV-2?\u201d should have referenced NIOSH criteria / requirement to be considered a specific filtration quality of a mask. N95 does not simply mean it removes 95% of all particles that are at least 0.3 \u03bcm. Looking at the technical specifications will explain why N95 masks may work (and may not be the best, but good enough). There are other ratings that are involved when discussion focused on particle types and sizes -- including ASTM Level, BFE (Bacterial Filtration Efficiency), PFE (Particle Filtration Efficiency), VFE (Viral Filtration Efficiency). At least 1 report from National Institute for Occupational Safety and Health (Rengasamy et al., 2017: https://doi.org/10.1080/15459624.2016.1225157) studied how these ratings were determined based on the specified methods. Experimentally determined PFE rating (at 0.1 \u03bcm) for the N95 masks that were used were ~99.8%.\n\n- I was surprised there were no numbers on the inflammatory response or the causes of death (heart failure, etc:see Zhou et al. 2020. The Lancet 395:1054\u20131062). Perhaps this data is not yet firm enough yet.\n\nOverall this is a visually appealing and timely summary.\n\nJames Fraser - UCSF\n\nComments from reviewer #2:\n\nThe manuscript by Bar-On et al. will be an extremely useful visual source of information for researchers and the general scientific audience on the numbers pertinent to the current SARS-CoV-2 pandemic. Overall, the graphic is clear and the back-of-the-envelope calculations are useful and support or add to existing published data. The manuscript has been careful to include that many of the numbers are still being updated or are unknown at this time until more experiments are done, but this collation of sources and data will be a useful launchpad for researchers studying the virus as well as educators and a more general audience. Due to the urgent dissemination of this information during the current crisis, I have only suggested just a few short edits that will add clarity for readers in the text. As is, I think the manuscript is well supported by the citations listed, will be interesting and appropriate for the eLife readership and I support its publication.\n\nSome brief editing notes that will add clarity for readers:\n\n- In the first panel (blue headers), please make it more clear which statistics given reference only studies done on other viruses including SARS-CoV-1, TGEV, or MHV. Currently this is an asterisk with small note in the blue panel, but since this applies to the entire large figure, please make this more obvious by making the text larger or drawing attention to it in some way. Also, use consistent viral name references to provide clarity to the readers (SARS is written in top \u201cGenome\u201d panel, then in asterisk SARS-CoV-1 is used. It may be useful to include both the full name and commonly used name.\n\nIn the \u201cWhat can we learn from the mutation rate of the virus?\u201d section \u2013 sentence \u201cFor example, with a concentration of \u2026\u201d I don\u2019t think this calculation is helpful. You say that in a single mL of sputum (implying one human sample) that every possible base-pair mutation would be represented. While this calculation is correct for 1mL at that concentration of RNA, it\u2019s highly unlikely/impossible that a single patient would be infected with many strains of the same virus and I don\u2019t think it makes any specific point here. Even changing the language to not suggest a human sample would be better, unless there is a source suggesting this could be the case.\n\nIn the \u201cHow stable and infectious is the virion on surfaces?\u201d section. The last sentence current reads \u201cFrom the basic reproductive number R 0 \u22482-4 we can infer an upper bound on the risk of infection from touching a surface recently touched by an infected person.\u201d But then do not provide a calculation or any additional information and the paragraph ends. Delete this sentence or include the additional calculations/information.\n\nXavier Darzacq\n\nComments from reviewer #3:\n\n- Regarding paragraph 2 - Worth clarifying that this needs to be modified for households of more than 1 person.\n\n- Regarding paragraph 5 - Worth making this statement a bit more tentative or adding a ref or explanation for the claim.\n\nRegarding the sentence that starts \"Multiplying the mutation rate . . .\"\n\n- Please consider adding something along the following lines: \"assuming no fitness effects for the virus.\"\n\n- I was also confused by how we know the evolutionary rate \u2013 by assuming a date of introduction arrived at independently from the sequence data?\n\n- Regarding the sentence that starts \"Multiplying the mutation rate . . .\"\n\nAdd \u201con average\u201d.\n",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e10b4269-cb18-4fc0-a7d5-523956215d29",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C1",
+      "claim": "The basic reproduction number (R0) for SARS-CoV-2 suggests each infection directly generates 2\u20134 more infections in the absence of countermeasures like physical distancing.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic reproduction number, R0, suggests each infection directly generates 2\u20134 more infections in the absence of countermeasures like physical distancing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by epidemiological data and modeling presented in the manuscript, as well as citations to peer-reviewed literature (Li et al., 2020a; He et al., 2020).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "aaa4a242-7b2a-4dd6-8089-4df3ff1ea6ee",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C2",
+      "claim": "The current best-estimate of the median latent time for SARS-CoV-2 is approximately 3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The current best-estimate of the median latent time is \u22483 days followed by \u22484 days of close to maximal infectiousness (Li et al., 2020a; He et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to peer-reviewed studies (Li et al., 2020a; He et al., 2020) that measured latent periods.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "4ab1992a-2421-483d-bc0f-92d708684dbf",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C3",
+      "claim": "After the latent period, there are approximately 4 days of close to maximal infectiousness for SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The current best-estimate of the median latent time is \u22483 days followed by \u22484 days of close to maximal infectiousness (Li et al., 2020a; He et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to peer-reviewed studies (Li et al., 2020a; He et al., 2020) that characterized the infectious period.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "067e3197-11b7-40e8-914f-6cb61cbd5aeb",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C4",
+      "claim": "Using R0\u22484, the number of SARS-CoV-2 cases will quadruple every approximately 7 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Using R0\u22484, the number of cases will quadruple every \u22487 days or double every \u22483 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical inference based on the R0 value and the generation time of the virus.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "c8cbb9d1-22cb-45f6-8a03-718f1be9049b",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C5",
+      "claim": "Using R0\u22484, the number of SARS-CoV-2 cases will double every approximately 3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Using R0\u22484, the number of cases will quadruple every \u22487 days or double every \u22483 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical inference based on the R0 value and the generation time of the virus.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "1c15bb55-c66d-4694-8db7-897e3f24bdbf",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C6",
+      "claim": "1000-fold growth of SARS-CoV-2 cases (from one case to 10\u00b3) requires 10 doublings and takes approximately 30 days or about one month.",
+      "claim_type": "EXPLICIT",
+      "source": "1000-fold growth (going from one case to 103) requires 10 doublings since 210 \u2248 103; 3 days \u00d7 10 doublings = 30 days, or about one month.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical calculation based on the doubling time.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "2bb563bb-a609-46ff-a16d-bdb36c5b6713",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C7",
+      "claim": "SARS-CoV-2 can achieve approximately 1000-fold growth in one month, a million-fold (10\u2076) in two months, and a billion-fold (10\u2079) in three months without countermeasures.",
+      "claim_type": "EXPLICIT",
+      "source": "So we expect \u22481000x growth in one month, a million-fold (106) in two months, and a billion fold (109) in three months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical extrapolation based on the calculated doubling time and R0 value.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "78a8c12d-1829-4426-9536-4828826732a6",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C8",
+      "claim": "An effective reproduction number (Re) smaller than one will ensure the number of SARS-CoV-2 infections eventually dwindles.",
+      "claim_type": "EXPLICIT",
+      "source": "An effective reproduction number (Re) smaller than one will ensure the number of infections eventually dwindles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established epidemiological knowledge about disease transmission dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "a88d0760-49b8-4816-8ae8-3954c523ad7a",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C9",
+      "claim": "The median SARS-CoV-2 incubation period is estimated to be roughly 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The median SARS-CoV-2 incubation period is estimated to be roughly 5 days (Lauer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Lauer et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "fe5db286-fc69-4d3b-97c8-f9b1419cb926",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C10",
+      "claim": "Approximately 99% of those showing SARS-CoV-2 symptoms will show them before day 14.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 99% of those showing symptoms will show them before day 14, which explains the two week confinement period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the incubation period data cited from Lauer et al., 2020.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "5296b7bf-c1a7-4304-9e39-bba716b95d9e",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C11",
+      "claim": "N95 masks are designed to remove more than 95% of all particles that are at least 0.3 microns (\u00b5m) in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "N95 masks are designed to remove more than 95% of all particles that are at least 0.3 microns (\u00b5m) in diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about N95 mask specifications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "07ad691f-9434-402d-8ee3-485a54d94658",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C12",
+      "claim": "Measurements of the particle filtration efficiency of N95 masks show that they are capable of filtering approximately 99.8% of particles with a diameter of approximately 0.1 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, measurements of the particle filtration efficiency of N95 masks show that they are capable of filtering \u224899.8% of particles with a diameter of \u22480.1 \u03bcm (Rengasamy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Rengasamy et al., 2017) that measured mask filtration efficiency.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "3b0090a5-9683-4b4f-992b-71318c70835f",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C13",
+      "claim": "SARS-CoV-2 is an enveloped virus approximately 0.1 \u03bcm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 is an enveloped virus \u22480.1 \u03bcm in diameter, so N95 masks are capable of filtering most free virions, but they do more than that.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data presented in the manuscript about viral dimensions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "a9c8c290-2bfd-4e9c-b226-d6790eed0fff",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C14",
+      "claim": "The characteristic diameter of large respiratory droplets produced by sneezing is approximately 100 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The characteristic diameter of large droplets produced by sneezing is ~100 \u03bcm (Han et al., 2013), while the diameter of droplet nuclei produced by coughing is on the order of ~1 \u03bcm (Yang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to peer-reviewed studies (Han et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "d2d9b9db-f9f0-403b-8362-6061dda68cf5",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C15",
+      "claim": "The diameter of droplet nuclei produced by coughing is on the order of approximately 1 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The characteristic diameter of large droplets produced by sneezing is ~100 \u03bcm (Han et al., 2013), while the diameter of droplet nuclei produced by coughing is on the order of ~1 \u03bcm (Yang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to peer-reviewed studies (Yang et al., 2007).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "2cb9d76b-7296-4a71-865e-2856135031a3",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C16",
+      "claim": "N95 masks should provide some protection against both surface and airborne transmission of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, it is unclear whether surfaces or air are the dominant mode of SARS-CoV-2 transmission, but N95 masks should provide some protection against both (Jefferson et al., 2009; Leung et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to peer-reviewed studies (Jefferson et al., 2009; Leung et al., 2020) and inference from mask filtration properties.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "3f9fe009-c4a1-4e39-9406-2ca37d1fe3bd",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C17",
+      "claim": "SARS-CoV-2 is a beta-coronavirus whose genome is a single approximately 30 kb strand of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 is a beta-coronavirus whose genome is a single \u224830 kb strand of RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic data presented in the manuscript and established knowledge about coronavirus classification.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "9a0d7332-55cd-4a70-b13d-edcd258bf433",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C18",
+      "claim": "Flu viruses have smaller genomes (approximately 14 kb) encoded in eight distinct strands of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Flu viruses have smaller genomes (\u224814 kb) encoded in eight distinct strands of RNA, and they infect human cells in a different manner than coronaviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about influenza virus structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "ab00f46b-b356-4f22-89bf-dd7c368b2b9f",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C19",
+      "claim": "Flu viruses infect human cells in a different manner than coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Flu viruses have smaller genomes (\u224814 kb) encoded in eight distinct strands of RNA, and they infect human cells in a different manner than coronaviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about viral infection mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "54224af0-8bd3-4e3d-8987-347b80e69063",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C20",
+      "claim": "Cold-causing coronaviruses (e.g. OC43 and 229E strains) are quite similar to SARS-CoV-2 in genome length (within 10%).",
+      "claim_type": "EXPLICIT",
+      "source": "Cold-causing coronaviruses (e.g. OC43 and 229E strains) are quite similar to SARS-CoV-2 in genome length (within 10%) and gene content, but different from SARS-CoV-2 in sequence (\u224850% nucleotide identity) and infection severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic comparison data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "528a1372-e1c8-45b5-9950-f474cee3eedc",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C21",
+      "claim": "Cold-causing coronaviruses (e.g. OC43 and 229E strains) are quite similar to SARS-CoV-2 in gene content.",
+      "claim_type": "EXPLICIT",
+      "source": "Cold-causing coronaviruses (e.g. OC43 and 229E strains) are quite similar to SARS-CoV-2 in genome length (within 10%) and gene content, but different from SARS-CoV-2 in sequence (\u224850% nucleotide identity) and infection severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic comparison data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "6033c74a-f3bf-45e7-abbe-72a7be6a3e82",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C22",
+      "claim": "Cold-causing coronaviruses (e.g. OC43 and 229E strains) are different from SARS-CoV-2 in sequence (approximately 50% nucleotide identity).",
+      "claim_type": "EXPLICIT",
+      "source": "Cold-causing coronaviruses (e.g. OC43 and 229E strains) are quite similar to SARS-CoV-2 in genome length (within 10%) and gene content, but different from SARS-CoV-2 in sequence (\u224850% nucleotide identity) and infection severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic comparison data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "1aebe26e-d064-4c26-86cb-3e235a513f3c",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C23",
+      "claim": "Cold-causing coronaviruses (e.g. OC43 and 229E strains) are different from SARS-CoV-2 in infection severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cold-causing coronaviruses (e.g. OC43 and 229E strains) are quite similar to SARS-CoV-2 in genome length (within 10%) and gene content, but different from SARS-CoV-2 in sequence (\u224850% nucleotide identity) and infection severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about disease severity differences between common cold and COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "c9f84962-b1f7-466f-ad5e-99eb8d924325",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C24",
+      "claim": "Coronaviruses have the largest genomes of any known RNA viruses (approximately 30 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "One interesting facet of coronaviruses is that they have the largest genomes of any known RNA viruses (\u224830 kb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about RNA virus genome sizes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "41344412-9fb8-46d3-b3be-6294e48bf097",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C25",
+      "claim": "Coronaviruses have a proofreading exonuclease called ExoN.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, coronaviruses have a proofreading exonuclease called ExoN, which explains their low mutation rates (~10\u20136 per site per cycle) in comparison to influenza (\u22483 \u00d7 10\u20135 per site per cycle; Sanju\u00e1n et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge about coronavirus molecular biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "b83beb3c-aa1c-450c-91b5-2e0347693249",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C26",
+      "claim": "Coronaviruses have low mutation rates (~10\u207b\u2076 per site per cycle) in comparison to influenza (\u22483 \u00d7 10\u207b\u2075 per site per cycle).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, coronaviruses have a proofreading exonuclease called ExoN, which explains their low mutation rates (~10\u20136 per site per cycle) in comparison to influenza (\u22483 \u00d7 10\u20135 per site per cycle; Sanju\u00e1n et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Sanju\u00e1n et al., 2010) that measured mutation rates.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "65318d24-424c-48e1-8117-837e045dc546",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C27",
+      "claim": "SARS-CoV-2 has a single-stranded positive-sense RNA genome that codes for 10 genes ultimately producing 26 proteins according to an NCBI annotation.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 has a single-stranded positive-sense RNA genome that codes for 10 genes ultimately producing 26 proteins according to an NCBI annotation (NC_045512).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic annotation data from NCBI.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "0e93db6e-ca22-4f93-b9b8-fab268adf7d1",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C28",
+      "claim": "One long SARS-CoV-2 gene, orf1ab, encodes a polyprotein that is cleaved into 16 proteins by proteases that are themselves part of the polyprotein.",
+      "claim_type": "EXPLICIT",
+      "source": "One long gene, orf1ab, encodes a polyprotein that is cleaved into 16 proteins by proteases that are themselves part of the polyprotein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic and proteomic data about SARS-CoV-2.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "0c35484d-cbcf-42c2-af4e-de1c4b8a1262",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C29",
+      "claim": "It is currently possible to ascribe clear biochemical or structural functions to only about half of SARS-CoV-2 gene products.",
+      "claim_type": "EXPLICIT",
+      "source": "Though much current work is centered on understanding the role of 'accessory' proteins in the viral life cycle, we estimate that it is currently possible to ascribe clear biochemical or structural functions to only about half of SARS-CoV-2 gene products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current state of knowledge about SARS-CoV-2 proteins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "a0c868ce-4ccb-4ef4-aead-7592f83647dc",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C30",
+      "claim": "The evolutionary rate is defined as the average number of substitutions that become fixed per year in strains of the virus, given in units of mutations per site per year.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is the evolutionary rate, which is defined as the average number of substitutions that become fixed per year in strains of the virus, given in units of mutations per site per year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established knowledge in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "4c8fc680-5bd8-4ad2-b3de-3c6ed5b2bda6",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C31",
+      "claim": "The mutation rate is the number of substitutions per site per replication cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The second is the mutation rate, which is the number of substitutions per site per replication cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established knowledge in virology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "2b0e29c0-d893-4a06-9fcf-1aaf36fe4568",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C32",
+      "claim": "A single site in a \u03b2-coronavirus genome will accumulate approximately 10\u207b\u2076 mutations in each round of replication.",
+      "claim_type": "EXPLICIT",
+      "source": "The only measurement of a mutation rate in a \u03b2-coronavirus suggests that this site will accumulate ~10\u20136 mutations in each round of replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mutation rate measurements in \u03b2-coronaviruses.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "ae771238-53c7-4785-aaf2-ede5314e7275",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C33",
+      "claim": "Each coronavirus replication cycle takes approximately 10 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Each replication cycle takes ~10 hr, and so there are 103 cycles/year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data about coronavirus replication kinetics presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "10781b5b-87ca-4dc0-80d6-f41dc99916bb",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C34",
+      "claim": "There are approximately 10\u00b3 coronavirus replication cycles per year.",
+      "claim_type": "EXPLICIT",
+      "source": "Each replication cycle takes ~10 hr, and so there are 103 cycles/year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical calculation based on the replication cycle duration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "40c0c506-2a75-43df-ae75-e400a2429144",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C35",
+      "claim": "The virus undergoes near-continuous replication in the wild, constantly generating new mutations that accumulate over the course of the year.",
+      "claim_type": "EXPLICIT",
+      "source": "As our estimate is consistent with the measured rate, we infer that the virus undergoes near-continuous replication in the wild, constantly generating new mutations that accumulate over the course of the year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the consistency between calculated and measured evolutionary rates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "8c0d6017-7b44-4536-8efb-9660c5ca85c3",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C36",
+      "claim": "Since the mutation rate is approximately 10\u207b\u2076 mutations/site/cycle and an mL of sputum might contain upwards of 10\u2077 viral RNAs, every site is mutated more than once in such samples.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, since the mutation rate is ~10\u20136 mutations/site/cycle and an mL of sputum might contain upwards of 107 viral RNAs, we infer that every site is mutated more than once in such samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical inference based on mutation rate and viral load data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "1cc41620-6326-4a81-a32a-7d6637482d75",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C37",
+      "claim": "The number of infectious SARS-CoV-2 virions is typically much lower than inferred from measurements of the viral genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of infectious virions is typically much lower than inferred from measurements of the viral genome (Woelfel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Woelfel et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "c9cbabef-6895-4951-ba13-112068698194",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C38",
+      "claim": "SARS-CoV-2 RNA has been detected on various surfaces several weeks after they were last touched.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 RNA has been detected on various surfaces several weeks after they were last touched (Moriarty et al., 2020), but infectiousness appears to degrade more quickly than RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study (Moriarty et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "a9799b00-3b38-4250-abc7-065579024b66",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C39",
+      "claim": "SARS-CoV-2 infectiousness appears to degrade more quickly than RNA on surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 RNA has been detected on various surfaces several weeks after they were last touched (Moriarty et al., 2020), but infectiousness appears to degrade more quickly than RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing RNA detection and infectivity measurements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "fe43e1a0-4fd2-4e18-bb90-6aa35d71b0bb",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C40",
+      "claim": "The stability of infectious SARS-CoV-2 virions on plastic is much greater than on copper or steel.",
+      "claim_type": "EXPLICIT",
+      "source": "When researchers measured the stability of infectious virions on surfaces, the numbers depended greatly on the type of surface and the medium carrying the virus, with the stability on plastic being much greater than on copper or steel, for example.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data from viral stability studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "6467366c-f065-49ac-9a9b-0a8b6ecb4e9b",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C41",
+      "claim": "Viral stability is known to depend strongly on temperature and humidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral stability is also known to depend strongly on temperature and humidity (Chin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Chin et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "bc2edcd3-e6e9-473d-b7a3-3ec33dbe4fc6",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C42",
+      "claim": "The basic reproduction number R0 estimates the average number of new infections directly generated by a single infectious person.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic reproduction number, R0, estimates the average number of new infections directly generated by a single infectious person.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established epidemiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "91559463-c0ab-4e98-8c3b-9b938dc84432",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C43",
+      "claim": "The 0 subscript in R0 connotes that this refers to early stages of an epidemic, when everyone in the region is susceptible and no countermeasures have been taken.",
+      "claim_type": "EXPLICIT",
+      "source": "The 0 subscript connotes that this refers to early stages of an epidemic, when everyone in the region is susceptible (that is, there is no immunity) and no countermeasures have been taken.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established epidemiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "b2115266-3052-4607-a601-a7f1f30d53d8",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C44",
+      "claim": "Estimates of R0 can vary between locales because geography and culture affect how many people we encounter daily, how much we touch them and share food with them.",
+      "claim_type": "EXPLICIT",
+      "source": "As geography and culture affect how many people we encounter daily, how much we touch them and share food with them, estimates of R0 can vary between locales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on epidemiological knowledge about factors affecting disease transmission.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "3ee54f4d-07a7-464f-9b68-366bfd5ac999",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C45",
+      "claim": "Several days pass before a newly-infected person becomes infectious themselves, a period called the 'latent period'.",
+      "claim_type": "EXPLICIT",
+      "source": "Several days pass before a newly-infected person becomes infectious themselves. This 'latent period' is typically followed by several days of infectivity called the 'infectious period'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established epidemiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "b4196322-ab7c-4225-9b28-e5921308f069",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C46",
+      "claim": "The latent period is typically followed by several days of infectivity called the 'infectious period'.",
+      "claim_type": "EXPLICIT",
+      "source": "Several days pass before a newly-infected person becomes infectious themselves. This 'latent period' is typically followed by several days of infectivity called the 'infectious period'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established epidemiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "522477b4-a4b6-49ab-afa4-b1dd35605762",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C47",
+      "claim": "Viral RNA was detectable in patients with moderate SARS-CoV-2 symptoms for more than one week after the onset of symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, viral RNA was detectable in patients with moderate symptoms for more than one week after the onset of symptoms, and more than two weeks in patients with severe symptoms (ECDC, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to ECDC data (ECDC, 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "0a89b120-fc4d-44af-a68b-78c8cd142743",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C48",
+      "claim": "Viral RNA was detectable in patients with severe SARS-CoV-2 symptoms for more than two weeks after the onset of symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, viral RNA was detectable in patients with moderate symptoms for more than one week after the onset of symptoms, and more than two weeks in patients with severe symptoms (ECDC, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to ECDC data (ECDC, 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "6bf7fb41-c8d5-4318-b399-833fd99cd5c6",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C49",
+      "claim": "Direct measurement of latent and infectious periods at the individual level is extremely challenging, as accurately identifying the precise time of infection is usually very difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct measurement of latent and infectious periods at the individual level is extremely challenging, as accurately identifying the precise time of infection is usually very difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge about the practical challenges of epidemiological measurements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "8ddc8011-abbd-4bd8-b6ea-67d36a9dd11e",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C50",
+      "claim": "Quantitative reverse-transcription polymerase chain reaction (RT-qPCR) measures the number of copies of viral RNA in a sample.",
+      "claim_type": "EXPLICIT",
+      "source": "One common approach is to quantify the amount of viral RNA in an environmental (e.g., surface) or clinical (e.g., sputum) sample via quantitative reverse-transcription polymerase chain reaction (RT-qPCR). This method measures the number of copies of viral RNA in a sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about RT-qPCR methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "d9001a5d-7f1c-4286-b5ea-2db6d71e1e92",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C51",
+      "claim": "The presence of viral RNA does not necessarily imply the presence of infectious virions.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of viral RNA does not necessarily imply the presence of infectious virions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the difference between RNA detection and infectivity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "07affc01-cfa6-49e5-be86-e0ced9c88230",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C52",
+      "claim": "Measuring TCID50 involves infecting replicate cultures of susceptible cells with dilutions of the virus and noting the dilution at which half the replicate dishes become infected.",
+      "claim_type": "EXPLICIT",
+      "source": "Measuring TCID50 involves infecting replicate cultures of susceptible cells with dilutions of the virus and noting the dilution at which half the replicate dishes become infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the TCID50 methodology based on established virological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "cad0d7ea-e608-451a-b4f6-94464e348abc",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C53",
+      "claim": "Viral counts reported by TCID50 tend to be much lower than RT-qPCR measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral counts reported by TCID50 tend to be much lower than RT-qPCR measurements, which could be one reason why studies relying on RNA measurements (Moriarty et al., 2020) report the persistence of viral RNA on surfaces for much longer times than studies relying on TCID50 (van Doremalen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing different measurement methodologies and their results from cited studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "dbc6338c-8c01-4c22-8594-1ec40e161f38",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C54",
+      "claim": "For the common cold, approximately 0.1 TCID50 are sufficient to infect half of the people exposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, for many viruses even a small dose of virions can lead to infection. For the common cold, for example, ~0.1 TCID50 are sufficient to infect half of the people exposed (Couch et al., 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Couch et al., 1966).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "d95668ef-3257-4c56-9928-834d9ff5d49c",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C55",
+      "claim": "The case fatality rate (CFR) is the proportion of fatalities out of total diagnosed cases.",
+      "claim_type": "EXPLICIT",
+      "source": "One commonly reported measure is the case fatality rate (CFR), which is the proportion of fatalities out of total diagnosed cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established epidemiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "9c478ea8-4900-4b33-ba62-8b0a56835352",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C56",
+      "claim": "The CFR reported in different countries varies significantly, from 1% to about 15%.",
+      "claim_type": "EXPLICIT",
+      "source": "The CFR reported in different countries varies significantly, from 1% to about 15%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on epidemiological data from different countries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "c9fb2948-e7c9-4c02-a32a-d02215aa9bf7",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C57",
+      "claim": "The majority of people dying from SARS-CoV-2 have a preexisting condition such as cardiovascular disease or smoking.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the prevalence of smoking, the average age of the population, and the capacity of the healthcare system. Indeed, the majority of people dying from SARS-CoV-2 have a preexisting condition such as cardiovascular disease or smoking (The Novel Coronavirus Pneumonia Emergency Response Epidemiology Team, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an epidemiological report (The Novel Coronavirus Pneumonia Emergency Response Epidemiology Team, 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "d4aa39cf-506f-4517-8f4f-ee3d41aa7203",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C58",
+      "claim": "The CFR will tend to overestimate the rate of fatalities per infected person because many cases with mild or no symptoms are not tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when correcting for these factors, the CFR does not give a complete picture as many cases with mild or no symptoms are not tested. Thus, the CFR will tend to overestimate the rate of fatalities per infected person, termed the infection fatality rate (IFR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on epidemiological knowledge about testing biases.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "476875b2-19db-4935-a1d4-83322a93616d",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C59",
+      "claim": "The infection fatality rate (IFR) is the rate of fatalities per infected person.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the CFR will tend to overestimate the rate of fatalities per infected person, termed the infection fatality rate (IFR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established epidemiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "3847ab75-67c6-43ea-a436-fa05899adc2e",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C60",
+      "claim": "SARS-CoV-2 does not release its progeny by lysing the cell, but rather by continuous budding.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 does not release its progeny by lysing the cell, but rather by continuous budding (Park et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Park et al., 2020b).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "5e1380cd-eac7-4fb8-8d65-41d6dd731706",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C61",
+      "claim": "The eclipse period is the lag between inoculation and the appearance of new intracellular virions.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming entry of the virus to the cells is rapid (we estimate 10 min for SARS-CoV-2), the time it takes to produce progeny can be estimated by quantifying the lag between inoculation and the appearance of new intracellular virions, also known as the 'eclipse period'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established virological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "e204e152-ae8f-4b73-854b-464820fe6d3d",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C62",
+      "claim": "The latent period (in virology) is the time from cell entry until the appearance of the first extracellular viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The time from cell entry until the appearance of the first extracellular viruses, known as the 'latent period' (not to be confused with the epidemiological latent period; see glossary in Box 1), estimates the duration of the full replication cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established virological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "0cc11878-f760-4366-ad15-f876e10da876",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C63",
+      "claim": "For the seasonal flu, most transmissions occur after a person has developed symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "For the seasonal flu, for example, most transmissions indeed occur after a person has developed symptoms (Ip et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Ip et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "3854d3af-f7c1-440f-8c90-98d8e350c8ec",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C64",
+      "claim": "For SARS-CoV-2, it is common to be contagious before symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "For SARS-CoV-2, in contrast, it is common to be contagious before symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data about SARS-CoV-2 transmission dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "23cdd568-973e-480f-b70e-3cf6cf2856b6",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C65",
+      "claim": "The SARS-CoV-2 incubation period is about 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The SARS-CoV-2 incubation period is about 5 days, while peak infectiousness begins two days before symptoms reveal themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by epidemiological data cited earlier in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "27fd50b2-f280-49de-92a9-1c70d701dc8a",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C66",
+      "claim": "Peak SARS-CoV-2 infectiousness begins two days before symptoms reveal themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "The SARS-CoV-2 incubation period is about 5 days, while peak infectiousness begins two days before symptoms reveal themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by epidemiological data about SARS-CoV-2 transmission.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "c909e142-bdf3-4207-9e45-449f51a6c6b3",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C67",
+      "claim": "A large fraction of SARS-CoV-2 infections occur pre-symptomatically.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, a large fraction of infections occur pre-symptomatically, that is, without the infectious person realizing they have the disease (Ferretti et al., 2020; He et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to peer-reviewed studies (Ferretti et al., 2020; He et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "58ffad3c-bc94-45be-ae8d-c1c4eccc8b41",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C68",
+      "claim": "Diagnosis of SARS-CoV-2 typically occurs approximately 5 days after symptom onset, or approximately 10 days after infection.",
+      "claim_type": "EXPLICIT",
+      "source": "With testing capacity under strain, diagnosis typically occurs \u22485 days after symptom onset, or \u224810 days after infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data about testing timelines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "82e39f87-810c-4f62-9087-0dba6831a1ea",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C69",
+      "claim": "By the time of diagnosis, most SARS-CoV-2 infected people have already passed peak infectiousness.",
+      "claim_type": "EXPLICIT",
+      "source": "By that time, most people have already passed peak infectiousness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the timing of peak infectiousness and diagnosis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "1f2a269a-0651-43cd-9aca-52ade7c9f4b6",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C70",
+      "claim": "There is strong evidence of significant pre-symptomatic transmission of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of SARS-CoV-2 this means detection before symptoms because there is strong evidence of significant pre-symptomatic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by epidemiological data cited in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "172fb158-8634-498d-a5f7-1253c3ca17b4",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C71",
+      "claim": "A large fraction of SARS-CoV-2 cases are asymptomatic, meaning the infected person never develops noticeable symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the situation is further complicated by a large fraction of asymptomatic cases, that is cases in which the infected person never develops noticeable symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on epidemiological observations of SARS-CoV-2 infections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "5d806106-f0f8-4f4b-84c3-17a718e579c5",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C72",
+      "claim": "More than half of children and young adults with SARS-CoV-2 are asymptomatic.",
+      "claim_type": "EXPLICIT",
+      "source": "This fraction is more than half of children and young adults (Davies et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Davies et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "81125d21-27d1-4aa6-9e35-abde0b87c962",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C73",
+      "claim": "Leading modeling efforts assume that asymptomatic SARS-CoV-2 infections are anywhere between 10\u201380% as contagious as symptomatic ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Leading modeling efforts assume that asymptomatic infections are anywhere between 10\u201380% as contagious as symptomatic ones (Ferretti et al., 2020; Davies et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to modeling studies (Ferretti et al., 2020; Davies et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "1a92a630-93f5-4717-97e7-a210cb582741",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C74",
+      "claim": "The diameter of SARS-CoV-2 varies from about 60 to 140 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Diameter. (Figure 3 in Zhu et al., 2020): \"Electron micrographs of negative-stained 2019-nCoV particles were generally spherical with some pleomorphism. Diameter varied from about 60 to 140 nm.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to electron microscopy data (Zhu et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "102a624f-ecd2-4008-b1b2-e9a2ec5dde8d",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C75",
+      "claim": "SARS-CoV-2 particles are generally spherical with some pleomorphism.",
+      "claim_type": "EXPLICIT",
+      "source": "Diameter. (Figure 3 in Zhu et al., 2020): \"Electron micrographs of negative-stained 2019-nCoV particles were generally spherical with some pleomorphism. Diameter varied from about 60 to 140 nm.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to electron microscopy data (Zhu et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "0ec9ffd8-75e5-41df-adc3-4f00919afb19",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C76",
+      "claim": "SARS-CoV-2 has approximately 90 spike trimers per particle.",
+      "claim_type": "EXPLICIT",
+      "source": "Number of spike trimers. (Neuman et al., 2011): \"Our model predicts \u223c90 spikes per particle.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a modeling study (Neuman et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "24b165f8-d2d6-4091-b67e-558813dbc2a3",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C77",
+      "claim": "SARS-CoV-2 spike trimers are about 9 to 12 nm in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Length of spike trimers. (Zhu et al., 2020): \"Virus particles had quite distinctive spikes, about 9 to 12 nm, and gave virions the appearance of a solar corona.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to electron microscopy data (Zhu et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "8dc26995-5c02-4df7-ba8f-5a7812f46cf9",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C78",
+      "claim": "Walls et al., 2020 reports a receptor binding affinity (Kd) of approximately 1 nM for the SARS-CoV-2 binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptor binding affinity (Kd). Walls et al., 2020 reports Kd of \u22481 nM for the binding domain using biolayer interferometry with kon of \u22481.5 \u00d7 105 M\u20131 s\u20131 and koff of \u22481.6 \u00d7 10\u20134 s\u20131 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Walls et al., 2020) with specific binding kinetics data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "18e81a65-a6ef-443c-af4b-610e2f425af8",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C79",
+      "claim": "Wrapp et al., 2020 reports a receptor binding affinity (Kd) of approximately 15 nM for the SARS-CoV-2 spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Wrapp et al., 2020 reports Kd of \u224815 nM for the spike (Figure 3) and \u224835 nM for the binding domain (Figure 4) using surface plasmon resonance with kon of \u22481.9 \u00d7 105 M\u20131 s\u20131 and koff of \u22482.8 \u00d7 10\u20133 s\u20131 for the spike, and kon of \u22481.4 \u00d7 105 M\u20131 s\u20131 and koff of \u22484.7 \u00d7 10\u20133 s\u20131 for the binding domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Wrapp et al., 2020) with specific binding kinetics data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "7010a0b0-4148-483c-a492-57f06348c628",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C80",
+      "claim": "Wrapp et al., 2020 reports a receptor binding affinity (Kd) of approximately 35 nM for the SARS-CoV-2 binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Wrapp et al., 2020 reports Kd of \u224815 nM for the spike (Figure 3) and \u224835 nM for the binding domain (Figure 4) using surface plasmon resonance with kon of \u22481.9 \u00d7 105 M\u20131 s\u20131 and koff of \u22482.8 \u00d7 10\u20133 s\u20131 for the spike, and kon of \u22481.4 \u00d7 105 M\u20131 s\u20131 and koff of \u22484.7 \u00d7 10\u20133 s\u20131 for the binding domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Wrapp et al., 2020) with specific binding kinetics data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "1f6d5237-e56b-4da7-a5d3-4457dc4fc5e6",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C81",
+      "claim": "Lan et al., 2020 reports a receptor binding affinity (Kd) of approximately 5 nM for the SARS-CoV-2 binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Lan et al., 2020 reports Kd of \u22485 nM for the binding domain (Extended Data Figure 4) using surface plasmon resonance with kon of \u22481.4 \u00d7 106 M\u20131 s\u20131 and koff of \u22486.5 \u00d7 10\u20133 s\u20131.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Lan et al., 2020) with specific binding kinetics data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "6fe37eb2-5914-4b78-8b92-504f422a6e6f",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C82",
+      "claim": "Shang et al., 2020 reports a receptor binding affinity (Kd) of approximately 40 nM for the SARS-CoV-2 binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Shang et al., 2020 reports Kd of \u224840 nM for the binding domain (Extended Data Figure 6) using surface plasmon resonance with kon of \u22481.8 \u00d7 106 M\u20131 s\u20131 and koff of \u22487.8 \u00d7 10\u20133 s\u20131.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Shang et al., 2020) with specific binding kinetics data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "b622c17e-99a5-4c45-9643-8ff941d37d03",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C83",
+      "claim": "The main disagreement between receptor binding affinity studies seems to be on the koff (dissociation rate constant).",
+      "claim_type": "EXPLICIT",
+      "source": "The main disagreement between the studies seems to be on the koff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing the kinetic parameters reported in multiple studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "4d4816f8-7a2d-49f1-9fec-d01adaccd7fb",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C84",
+      "claim": "An average SARS-CoV particle contains approximately 1100 M2 (membrane protein) molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane (M; 222 aa). (Neuman et al., 2011): \"Using the M spacing data for each virus (Figure 6C), this would give \u223c1100 M2 molecules per average SARS-CoV, MHV and FCoV particle.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a structural study (Neuman et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "7a1ddc4f-b737-4c4f-8547-ef38d0d3a269",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C85",
+      "claim": "Approximately 15\u201330 copies of envelope protein are incorporated into TGEV virions.",
+      "claim_type": "EXPLICIT",
+      "source": "Envelope (E; 75 aa). (Godet et al., 1992): \"Based on the estimated molar ratio and assuming that coronavirions bear 100 (J Gen Virol 63: 241\u2013245) to 200 spikes, each composed of 3 s molecules (Virus Research 20:107\u2013120) it can be inferred that approximately 15\u201330 copies of ORF4 protein are incorporated into TGEV virions (Purdue strain).\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study on TGEV coronavirus (Godet et al., 1992).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "584137c1-5fc8-47fa-987c-8a2b23fc4592",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C86",
+      "claim": "Estimated ratios of M to N protein in purified coronaviruses range from about 3M:1N to 1M:1N, giving 730\u20132200 N molecules per virion.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleoprotein (364 aa). (Neuman et al., 2011): \"Estimated ratios of M to N protein in purified coronaviruses range from about 3M:1N (Cavanagh, 1983; Escors et al., 2001) to 1M:1N (Hogue and Brian, 1986; Liu and Inglis, 1991), giving 730\u20132200 N molecules per virion.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review (Neuman et al., 2011) that cites multiple earlier studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "00ad84eb-ca10-44fe-90f5-82dd5df834fc",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C87",
+      "claim": "The initial isolate of SARS-CoV-2 from Wuhan, China has a 29903 nt \u2248 30 kb ssRNA genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome length. The initial isolate of SARS-CoV-2 from Wuhan, China has a 29903 nt \u2248 30 kb ssRNA genome (NCBI MN908947.3), which is typical of a coronavirus (Smith and Denison, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genomic sequence data from NCBI and a citation to a review (Smith and Denison, 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "17ac42a9-be4b-4ba8-9ede-48c8d185257f",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C88",
+      "claim": "A 29903 nt \u2248 30 kb ssRNA genome is typical of a coronavirus.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome length. The initial isolate of SARS-CoV-2 from Wuhan, China has a 29903 nt \u2248 30 kb ssRNA genome (NCBI MN908947.3), which is typical of a coronavirus (Smith and Denison, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review (Smith and Denison, 2012) about coronavirus genomes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "99aa3986-4f38-44b3-a64b-60ca43a3d2d2",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C89",
+      "claim": "SARS-CoV-2 genome has 10 open reading frames.",
+      "claim_type": "EXPLICIT",
+      "source": "(Wu et al., 2020b): \"SARS-CoV-2 genome has 10 open reading frames (Figure 2A)\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a genomic analysis study (Wu et al., 2020b).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "afd7bbe7-df43-4cd1-9c04-eea6f0740d7d",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C90",
+      "claim": "Mutation rates estimated for SARS, MERS, and OC43 show a large range, covering a span of 0.27 to 2.38 substitutions \u00d7 10\u207b\u00b3/site/year.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolution rate. (Koyama et al., 2020): \"Mutation rates estimated for SARS, MERS, and OC43 show a large range, covering a span of 0.27 to 2.38 substitutions \u00d7 10\u20133/site/ year (see references 10\u201316).\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review (Koyama et al., 2020) that summarizes multiple studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "dc5cab58-ee5f-4263-bca5-6623aa7e4214",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C91",
+      "claim": "The corrected estimate of the mutation rate for murine hepatitis virus is 3.5 \u00d7 10\u207b\u2076 per site per cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation rate. (Sanju\u00e1n et al., 2010): \"Murine hepatitis virus \u2026 Therefore, the corrected estimate of the mutation rate is \u03bcs/n/c = 1.9x10\u20136 / 0.55 = 3.5 x 10\u20136.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a peer-reviewed study (Sanju\u00e1n et al., 2010) that measured mutation rates.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "bfe81332-b9ff-4233-a740-90cdd0b71619",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C92",
+      "claim": "Bat coronavirus RaTG13 has 96% nucleotide sequence identity to SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomes used: bat coronavirus RaTG13 (MN996532.1; 96% id); SARS-CoV-1 (NC_004718.3; 80% id); MERS (NC_019843.3; 55% id); human cold coronavirus strains OC43 (NC_006213.1; 53% id) and 229E (NC_002645.1; 50% id).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genomic sequence alignment data from NCBI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "e24bc0bb-aae8-4edc-ac93-549bfaa5d70a",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C93",
+      "claim": "SARS-CoV-1 has 80% nucleotide sequence identity to SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomes used: bat coronavirus RaTG13 (MN996532.1; 96% id); SARS-CoV-1 (NC_004718.3; 80% id); MERS (NC_019843.3; 55% id); human cold coronavirus strains OC43 (NC_006213.1; 53% id) and 229E (NC_002645.1; 50% id).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genomic sequence alignment data from NCBI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "c25ed952-3258-4ee5-bf35-db2729a8366a",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C94",
+      "claim": "MERS has 55% nucleotide sequence identity to SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomes used: bat coronavirus RaTG13 (MN996532.1; 96% id); SARS-CoV-1 (NC_004718.3; 80% id); MERS (NC_019843.3; 55% id); human cold coronavirus strains OC43 (NC_006213.1; 53% id) and 229E (NC_002645.1; 50% id).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genomic sequence alignment data from NCBI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "812a6e00-a60b-4c35-a0ba-8e61a44e0807",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C95",
+      "claim": "Human cold coronavirus strain OC43 has 53% nucleotide sequence identity to SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomes used: bat coronavirus RaTG13 (MN996532.1; 96% id); SARS-CoV-1 (NC_004718.3; 80% id); MERS (NC_019843.3; 55% id); human cold coronavirus strains OC43 (NC_006213.1; 53% id) and 229E (NC_002645.1; 50% id).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genomic sequence alignment data from NCBI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "691138a2-ee4a-4b38-ad26-2465624c1fcf",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C96",
+      "claim": "Human cold coronavirus strain 229E has 50% nucleotide sequence identity to SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomes used: bat coronavirus RaTG13 (MN996532.1; 96% id); SARS-CoV-1 (NC_004718.3; 80% id); MERS (NC_019843.3; 55% id); human cold coronavirus strains OC43 (NC_006213.1; 53% id) and 229E (NC_002645.1; 50% id).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genomic sequence alignment data from NCBI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "0eb94118-416e-4f64-a32c-0bb11c186ac3",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C97",
+      "claim": "PangolinCoV is 91.02% identical to SARS-CoV-2 at the whole genome level.",
+      "claim_type": "EXPLICIT",
+      "source": "For pangolin: '\"PangolinCoV is 91.02% and 90.55% identical to SARS-CoV-2 and BatCoV RaTG13, respectively, at the whole genome level\" (Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a genomic analysis study (Zhang et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "9fffab41-cb18-401d-ace3-f29ea39966ee",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C98",
+      "claim": "PangolinCoV is 90.55% identical to BatCoV RaTG13 at the whole genome level.",
+      "claim_type": "EXPLICIT",
+      "source": "For pangolin: '\"PangolinCoV is 91.02% and 90.55% identical to SARS-CoV-2 and BatCoV RaTG13, respectively, at the whole genome level\" (Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a genomic analysis study (Zhang et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "465910d4-6274-4ae0-854c-82649a69acf9",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C99",
+      "claim": "SARS-CoV-1 virus is internalized within 15 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Virion entry into cell (for SARS-CoV-1). (Schneider et al., 2012): \"Previous experiments had revealed that virus is internalized within 15 min\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study on SARS-CoV-1 (Schneider et al., 2012).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "871af6a5-2352-4a64-8fdf-ae3660150fa5",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C100",
+      "claim": "Within the first 10 minutes of SARS-CoV-1 infection, some virus particles are internalized into vacuoles just below the plasma membrane surface.",
+      "claim_type": "EXPLICIT",
+      "source": "(Ng et al., 2003): \"Within the first 10 min, some virus particles were internalized into vacuoles (arrow) that were just below the plasma membrane surface (Fig. 2, arrows). [\u2026] The observation at 15 min postinfection (p.i.), did not differ much from 10 min p.i. (Fig. 4a)\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a microscopy study (Ng et al., 2003).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "736ceed2-eb64-4619-b468-3ac009073858",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C101",
+      "claim": "SARS-CoV replication cycle from adsorption to release of infectious progeny takes about 7 to 8 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Eclipse period. (Schneider et al., 2012): \"SARS-CoV replication cycle from adsorption to release of infectious progeny takes about 7 to 8 hr (data not shown)\";",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study on SARS-CoV (Schneider et al., 2012).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "1e6e086d-e57f-4452-b247-02f9bd6581cd",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C102",
+      "claim": "The average per-cell yield of active MHV virus was estimated to be about 6\u20137 \u00d7 10\u00b2 plaque-forming units.",
+      "claim_type": "EXPLICIT",
+      "source": "Burst size. (Hirano et al., 1976): \"The average per-cell yield of active virus was estimated to be about 6\u20137 \u00d7 102 plaque-forming units.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study on MHV coronavirus (Hirano et al., 1976).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "f0be712b-ef2b-45d5-a97a-3d5b13dcf4be",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C103",
+      "claim": "SARS-CoV-2 infects various respiratory epithelial cells, predominantly type II pneumocytes, and alveolar macrophages in the lung.",
+      "claim_type": "EXPLICIT",
+      "source": "Type. (Shieh et al., 2005): \"Immunohistochemical and in situ hybridization assays demonstrated evidence of SARS-associated coronavirus (SARS-CoV) infection in various respiratory epithelial cells, predominantly type II pneumocytes, and in alveolar macrophages in the lung\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a histopathology study (Shieh et al., 2005).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "6734696c-08a1-4983-8b63-fe51683a992c",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C104",
+      "claim": "SARS-CoV-2 uses ACE2 to enter target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "(Walls et al., 2020): \"SARS-CoV-2 uses ACE2 to enter target cells\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a molecular biology study (Walls et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "6807eebc-e99a-4888-ac2e-fa426ff28491",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C105",
+      "claim": "In SARS-CoV-2-infected macaques, virus was detected in type I and II pneumocytes in foci of diffuse alveolar damage and mucous glands of the nasal cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "(Rockx et al., 2020): \"In SARS-CoV-2-infected macaques, virus was excreted from nose and throat in absence of clinical signs, and detected in type I and II pneumocytes in foci of diffuse alveolar damage and mucous glands of the nasal cavity [\u2026] In the upper respiratory tract, there was focal five or locally extensive SARS-CoV-2 antigen expression in epithelial cells of mucous glands in the nasal cavity (septum or concha) of all four macaques, without any associated histological lesions (fig. 2I).\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an animal model study (Rockx et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "c899d0c1-bc41-43ba-98d4-96dd66d7b4c5",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C106",
+      "claim": "In SARS-CoV-2-infected macaques, virus was excreted from nose and throat in absence of clinical signs.",
+      "claim_type": "EXPLICIT",
+      "source": "(Rockx et al., 2020): \"In SARS-CoV-2-infected macaques, virus was excreted from nose and throat in absence of clinical signs, and detected in type I and II pneumocytes in foci of diffuse alveolar damage and mucous glands of the nasal cavity [\u2026] In the upper respiratory tract, there was focal five or locally extensive SARS-CoV-2 antigen expression in epithelial cells of mucous glands in the nasal cavity (septum or concha) of all four macaques, without any associated histological lesions (fig. 2I).\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an animal model study (Rockx et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "f90e0c3f-1706-4f5d-ad98-e797b6324c1f",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C107",
+      "claim": "Type II pneumocytes have an estimated mean volume of 763 \u00b1 64 \u03bcm\u00b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Type II pneumocyte volume. (Fehrenbach et al., 1995): \"Morphometry revealed that although inter-individual variation due to some oedematous swelling was present, the cells were in a normal size range as indicated by an estimated mean volume of 763 \u00b1 64 \u03bcm3.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a morphometry study (Fehrenbach et al., 1995).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "ba462d07-7c1f-4770-92af-ab1e6b983df3",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C108",
+      "claim": "Alveolar macrophages have a mean volume of 2,491 \u03bcm\u00b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Alveolar macrophage volume. (Crapo et al., 1982): \"Alveolar macrophages were found to be the largest cell in the populations studied, having a mean volume of 2,491 \u03bcm3.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a morphometry study (Crapo et al., 1982).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "134b84dc-bee7-44f0-b79d-7b7cc01f45f0",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C109",
+      "claim": "Alveolar macrophages are the largest cell in the lung cell populations studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Alveolar macrophage volume. (Crapo et al., 1982): \"Alveolar macrophages were found to be the largest cell in the populations studied, having a mean volume of 2,491 \u03bcm3.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a morphometry study (Crapo et al., 1982).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "843f2003-5d2a-48f3-88b3-0fe79ae69c0c",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C110",
+      "claim": "The seroconversion for SARS-CoV-2 antibodies sequentially appeared for Ab, IgM and then IgG, with a median time of 11, 12 and 14 days, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Seroconversion time (time period until a specific antibody becomes detectable in the blood). (Zhao et al., 2020): \"The seroconversion sequentially appeared for Ab, IgM and then IgG, with a median time of 11, 12 and 14 days, respectively\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a serological study (Zhao et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "b0a3db84-bf45-42b9-b553-4d1b6fa3ef28",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C111",
+      "claim": "For 16 patients with serum samples available 14 days or longer after symptom onset, rates of seropositivity were 94% for anti-NP IgG, 88% for anti-NP IgM, 100% for anti-RBD IgG, and 94% for anti-RBD IgM.",
+      "claim_type": "EXPLICIT",
+      "source": "(To et al., 2020): \"For 16 patients with serum samples available 14 days or longer after symptom onset, rates of seropositivity were 94% for anti-NP IgG (n = 15), 88% for anti-NP IgM (n = 14), 100% for anti-RBD IgG (n = 16), and 94% for anti-RBD IgM (n = 15)\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a serological study (To et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "cfd76940-714e-4a84-95b8-08c5b2bd8215",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C112",
+      "claim": "Among 176 patients who had SARS, SARS-specific antibodies were maintained for an average of 2 years, and significant reduction of immunoglobulin G\u2013positive percentage and titers occurred in the third year.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintenance of antibody response to virus. (Wu et al., 2007): \"Among 176 patients who had had severe acute respiratory syndrome (SARS), SARS-specific antibodies were maintained for an average of 2 years, and significant reduction of immunoglobulin G\u2013positive percentage and titers occurred in the third year\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a longitudinal serological study (Wu et al., 2007).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "e86088f7-79a1-4524-aaf1-b4fddaef2a9e",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C113",
+      "claim": "SARS-CoV-2 RNA was identified on a variety of surfaces in cabins of both symptomatic and asymptomatic infected passengers up to 17 days after cabins were vacated on the Diamond Princess but before disinfection procedures had been conducted.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA stability on surfaces (Moriarty et al., 2020): \"SARS-CoV-2 RNA was identified on a variety of surfaces in cabins of both symptomatic and asymptomatic infected passengers up to 17 days after cabins were vacated on the Diamond Princess but before disinfection procedures had been conducted (Takuya Yamagishi, National Institute of Infectious Diseases, personal communication, 2020).\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a report (Moriarty et al., 2020) that includes personal communication data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "abc8cf93-58eb-4ef1-95dd-49eebf8eb682",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C114",
+      "claim": "The median estimate of the effective reproductive number (Re) for SARS-CoV-2 is 2.38 (95% CI: 2.04\u20132.77).",
+      "claim_type": "EXPLICIT",
+      "source": "Basic reproductive number, R0. (Li et al., 2020a): \"Our median estimate of the effective reproductive number, Re \u2013 equivalent to the basic reproductive number (R0) at the beginning of the epidemic \u2013 is 2.38 (95% CI: 2.04\u20132.77)\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an epidemiological modeling study (Li et al., 2020a).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "940d7485-e66e-4c3a-a3fd-2af5049fbb5c",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C115",
+      "claim": "The estimated R0 from the pooled distribution has a median of 2.9 (95% CI: 2.1\u20134.5).",
+      "claim_type": "EXPLICIT",
+      "source": "(Park et al., 2020a): \"Our estimated R0 from the pooled distribution has a median of 2.9 (95% CI: 2.1\u20134.5)\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an epidemiological modeling study (Park et al., 2020a).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "a8c485ce-3b65-4cd5-bc98-9f9f32bda2e4",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C116",
+      "claim": "The median estimates for the latent and infectious periods of SARS-CoV-2 are approximately 3.69 and 3.48 days, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Latent period (from infection to being able to transmit). (Li et al., 2020a): \"In addition, the median estimates for the latent and infectious periods are approximately 3.69 and 3.48 days, respectively\"; see also table 1 in this paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an epidemiological modeling study (Li et al., 2020a).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "9228f4f6-45a2-49ac-ac1a-248dc210c2ce",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C117",
+      "claim": "The median incubation period for SARS-CoV-2 was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days).",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation period (from infection to symptoms). (Lauer et al., 2020): \"The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days), and 97.5% of those who develop symptoms will do so within 11.5 days (CI, 8.2 to 15.6 days) of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an epidemiological study (Lauer et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "e68b8acb-501b-4d97-a794-b8fb159219d1",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C118",
+      "claim": "97.5% of those who develop SARS-CoV-2 symptoms will do so within 11.5 days (CI, 8.2 to 15.6 days) of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "(Lauer et al., 2020): \"The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days), and 97.5% of those who develop symptoms will do so within 11.5 days (CI, 8.2 to 15.6 days) of infection. These estimates imply that, under conservative assumptions, 101 out of every 10 000 cases (99th percentile, 482) will develop symptoms after 14 days of active monitoring or quarantine\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an epidemiological study (Lauer et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "ebab88a0-dbe0-47f0-acf7-ed130d3e32ce",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C119",
+      "claim": "Under conservative assumptions, 101 out of every 10,000 SARS-CoV-2 cases (99th percentile, 482) will develop symptoms after 14 days of active monitoring or quarantine.",
+      "claim_type": "EXPLICIT",
+      "source": "These estimates imply that, under conservative assumptions, 101 out of every 10 000 cases (99th percentile, 482) will develop symptoms after 14 days of active monitoring or quarantine\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the incubation period distribution from Lauer et al., 2020.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "1d9ae1f8-bf01-4dac-b305-577d101bab74",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C120",
+      "claim": "The mean incubation period for SARS-CoV-2 was 5.2 days (95% confidence interval [CI], 4.1 to 7.0), with the 95th percentile of the distribution at 12.5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "(Li et al., 2020b): \"The mean incubation period was 5.2 days (95% confidence interval [CI], 4.1 to 7.0), with the 95th percentile of the distribution at 12.5 days\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an epidemiological study (Li et al., 2020b).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "fd2829ef-b091-4927-b855-ddcb1633e306",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C121",
+      "claim": "The median time from onset to clinical recovery for mild COVID-19 cases is approximately 2 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Disease duration. (WHO, 2020): \"Using available preliminary data, the median time from onset to clinical recovery for mild cases is approximately 2 weeks and is 3\u20136 weeks for patients with severe or critical disease\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO data (WHO, 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "51c47698-deb1-44b5-aba3-3c828e9f5bc6",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C122",
+      "claim": "The median time from onset to clinical recovery for patients with severe or critical COVID-19 disease is 3\u20136 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Disease duration. (WHO, 2020): \"Using available preliminary data, the median time from onset to clinical recovery for mild cases is approximately 2 weeks and is 3\u20136 weeks for patients with severe or critical disease\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO data (WHO, 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "b5527c8b-6b61-4c43-a9f7-b024e2466f10",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C123",
+      "claim": "The overall IFR estimate for China is 0.66% (0.39%, 1.33%).",
+      "claim_type": "EXPLICIT",
+      "source": "Infection fatality rate. We rely on three independent approaches that estimate the IFR. The first relies on data about people who were extensively tested as a result of being repatriated. (Verity et al., 2020): \"We obtain an overall IFR estimate for China of 0.66% (0.39%,1.33%)\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an epidemiological modeling study (Verity et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "af452047-4a0a-40fa-8e8f-c552b45a9682",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C124",
+      "claim": "The IFR estimates from Verity et al. have been adjusted to account for a non-uniform attack rate giving an overall IFR of 0.9% (95% credible interval 0.4\u20131.4%).",
+      "claim_type": "EXPLICIT",
+      "source": "(Ferguson et al., 2020): \"The IFR estimates from Verity et al. have been adjusted to account for a non-uniform attack rate giving an overall IFR of 0.9% (95% credible interval 0.4\u20131.4%)\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an epidemiological modeling study (Ferguson et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "82755dda-733e-4d1b-9a43-5e3b4cd5de56",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C125",
+      "claim": "The infection fatality risk (IFR) is 0.3% to 0.6% based on repatriation data.",
+      "claim_type": "EXPLICIT",
+      "source": "(Nishiura et al., 2020): \"The infection fatality risk (IFR) \u2013 the actual risk of death among all infected individuals \u2013 is therefore 0.3% to 0.6%\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an epidemiological study (Nishiura et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "9abf97b8-65e8-4df0-87d0-e75e6c6e7e8c",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C126",
+      "claim": "The all-age cIFR on the Diamond Princess was estimated to be 1.3% (95% confidence interval (CI): 0.38\u20133.6).",
+      "claim_type": "EXPLICIT",
+      "source": "The second approach relies on data gathered from the Diamond Princess ship, where all passengers were tested. (Russell et al., 2020): \"We estimated that the all-age cIFR on the Diamond Princess was 1.3% (95% confidence interval (CI): 0.38\u20133.6)\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an epidemiological study (Russell et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "d04eb178-a6eb-4565-8c24-b186a46dfd3c",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C127",
+      "claim": "The most recent crude infection fatality ratio (IFR) is estimated to be 0.04% (95% CrI: 0.03\u20130.06%) and time-delay adjusted IFR is estimated to be 0.12% (95%CrI: 0.08\u20130.17%).",
+      "claim_type": "EXPLICIT",
+      "source": "The third approach relies on epidemiological modeling of case time-series from China. (Mizumoto et al., 2020): \"We also found that most recent crude infection fatality ratio (IFR) and time-delay adjusted IFR is estimated to be 0.04% (95% CrI: 0.03\u20130.06%) and 0.12% (95%CrI: 0.08\u20130.17%)\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an epidemiological modeling study (Mizumoto et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "10f4d386-0208-412d-b335-4e4b29009419",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C128",
+      "claim": "The crude estimated range for the infection fatality rate (IFR) of SARS-CoV-2 is approximately 0.3\u20131.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining these three methods, and taking into account the reliability of each report, we estimate a crude range of \u22480.3\u20131.3% for the IFR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on combining multiple IFR estimates from different studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "ff7455ab-6910-4691-9280-ade2540dbd31",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "claim_id": "C136",
+      "claim": "SARS-CoV-2 is primed by TMPRSS2.",
+      "claim_type": "EXPLICIT",
+      "source": "primed by TMPRSS2",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "319af0e5-f7ce-460f-b99f-4ac232762723",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 exhibits exponential growth dynamics with R0\u22482-4, leading to case doubling every ~3 days and 1000-fold growth in approximately one month without countermeasures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 present a mathematically consistent model of viral spread based on established R0 values (C1) and generation time (C2-C3). The calculations for doubling time (C4-C5) and exponential growth projections (C6-C7) follow logically from these parameters and are supported by cited epidemiological studies (Li et al., 2020a; He et al., 2020).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "6245e923-f4b4-4b20-a7da-fe980d636504",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An effective reproduction number (Re) below 1 will cause SARS-CoV-2 infections to decline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C8 represents fundamental epidemiological knowledge that is well-established and mathematically sound. When each infection generates fewer than one new infection on average, the epidemic necessarily declines.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "dc444b70-d013-4fd2-aa70-01eae0e31a72",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The SARS-CoV-2 incubation period has a median of approximately 5 days, with 97.5% of symptomatic cases developing symptoms within 11.5 days and approximately 99% within 14 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 and C117-C120 are well-supported by multiple peer-reviewed epidemiological studies (Lauer et al., 2020; Li et al., 2020b) with consistent estimates across different datasets. The 14-day quarantine period (C10) is justified by the incubation period distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "cb882a60-642b-48f0-8234-1f764e904bfd",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "N95 masks can filter SARS-CoV-2 virions and respiratory droplets, providing protection against both surface and airborne transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C16 are supported by established mask specifications (C11), empirical filtration data (C12), viral size measurements (C13), and respiratory droplet characterization (C14-C15). The inference about protection (C16) is reasonable given the filtration efficiency exceeds viral and droplet sizes, though the manuscript acknowledges uncertainty about dominant transmission modes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "96357402-052f-404a-a6fc-f92a05798910",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 is a beta-coronavirus with a ~30 kb RNA genome, distinct from influenza viruses but similar in genome structure to common cold coronaviruses while differing in sequence identity (~50%) and disease severity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23 are supported by genomic data and established virological knowledge. The comparisons to influenza (C18-C19) and cold-causing coronaviruses (C20-C23) are based on genomic analyses presented in the manuscript and are consistent with known viral taxonomy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "b401990b-b5a4-4805-b062-1b7f9bcf095e",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Coronaviruses have the largest RNA viral genomes (~30 kb) and possess a proofreading exonuclease (ExoN) that results in lower mutation rates (~10\u207b\u2076 per site per cycle) compared to influenza (~3\u00d710\u207b\u2075).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by established virological knowledge (C24-C25) and peer-reviewed mutation rate measurements (C26, Sanju\u00e1n et al., 2010). The mechanistic link between proofreading and low mutation rate is well-established in coronavirus biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "6daf9301-9fee-4acc-90cb-ed76e858db63",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 has 10 genes producing 26 proteins, including a polyprotein (orf1ab) cleaved into 16 proteins, with clear biochemical functions assigned to only about half of the gene products.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by NCBI genomic annotations and established coronavirus biology. Claim C29 represents an honest assessment of current knowledge limitations, which is appropriate for a review article.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "fa041413-af0a-4521-b0e5-d7d8abc121a6",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The evolutionary rate of SARS-CoV-2 (~10\u207b\u00b3 mutations/site/year) is consistent with the mutation rate (~10\u207b\u2076 per cycle) multiplied by replication cycles per year (~10\u00b3), indicating near-continuous replication in the wild.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C36 present a coherent quantitative framework linking mutation rate, replication kinetics, and evolutionary rate. The calculation (C32-C34) is mathematically sound, and the inference about continuous replication (C35) is reasonable given the consistency between predicted and observed rates. Claim C36 provides a useful quantitative insight about mutational diversity in clinical samples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "fefc0b5b-d345-4dfd-a9f6-2874b5059ee7",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 RNA persists on surfaces longer than infectious virions, with stability varying by surface type, temperature, and humidity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 are supported by multiple peer-reviewed studies (Woelfel et al., 2020; Moriarty et al., 2020; Chin et al., 2020). The distinction between RNA detection and infectivity (C37, C39) is an important methodological point well-supported by the cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "7e4bcf4d-20b0-4c87-98cc-d02077e29586",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "R0 estimates the average number of new infections from a single case in a fully susceptible population without countermeasures, and varies by locale due to cultural and geographic factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 provide standard epidemiological definitions that are well-established in the field. These are foundational concepts necessary for interpreting the quantitative results presented elsewhere in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "d5859163-fd46-4eee-bf2c-331167574ccd",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Viral RNA is detectable for >1 week in moderate cases and >2 weeks in severe cases, though direct measurement of latent and infectious periods at the individual level is extremely challenging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by ECDC data, while C49 provides important context about measurement challenges. This appropriately acknowledges limitations in epidemiological parameter estimation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "520ea827-b100-45c5-9772-d32045b444bc",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "RT-qPCR measures viral RNA copies but not necessarily infectious virions, while TCID50 measures infectivity and typically yields lower counts than RT-qPCR, though even small doses (~0.1 TCID50) can cause infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 accurately describe established virological methods and their limitations. The comparison between RT-qPCR and TCID50 (C53) is supported by cited studies, and the infectivity data for common cold (C54) provides useful context, though direct SARS-CoV-2 data would strengthen this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "349abef3-333f-4968-b59a-2c806906ee5d",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The case fatality rate (CFR) varies from 1-15% across countries and tends to overestimate the true infection fatality rate (IFR) due to underascertainment of mild and asymptomatic cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 provide standard epidemiological definitions and acknowledge important biases in CFR estimation. The variation in CFR (C56) is supported by epidemiological data, and the distinction between CFR and IFR (C58-C59) is conceptually sound and important for interpreting mortality statistics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "9196baa4-fa2c-45e1-bf5d-61911cf83dd2",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 releases progeny by continuous budding rather than cell lysis, with the eclipse period measuring time to intracellular virion appearance and the latent period measuring time to extracellular virus release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 is supported by Park et al., 2020b, while C61-C62 provide standard virological definitions. These concepts are important for understanding viral replication kinetics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "b732223b-1469-4f41-b89f-08acd4da9853",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Unlike seasonal flu, SARS-CoV-2 transmission commonly occurs pre-symptomatically, with peak infectiousness beginning ~2 days before symptom onset and diagnosis typically occurring after peak infectiousness has passed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C70 are well-supported by multiple peer-reviewed studies (Ip et al., 2017; Ferretti et al., 2020; He et al., 2020). The contrast with influenza (C63-C64) and the timing of peak infectiousness relative to symptoms (C65-C66) and diagnosis (C68-C69) represent critical findings for public health interventions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "b1b1e1d2-2c3c-498a-bb64-6ea4b835a8c0",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A large fraction of SARS-CoV-2 cases are asymptomatic (>50% in children and young adults), with modeling studies assuming asymptomatic infections are 10-80% as contagious as symptomatic ones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is supported by epidemiological observations, and C72 is supported by Davies et al., 2020. However, the wide range in C73 (10-80%) reflects substantial uncertainty about asymptomatic transmission, which the manuscript appropriately acknowledges as a \"crucial gap in our understanding.\" This uncertainty limits confidence in epidemic projections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "f9a87f34-6768-4757-9a2d-93653d998557",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 virions are generally spherical with diameters of 60-140 nm, containing ~90 spike trimers of 9-12 nm length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 are supported by electron microscopy data (Zhu et al., 2020) and structural modeling (Neuman et al., 2011). These structural parameters are important for understanding viral entry and immune recognition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "9385bc41-ea59-4a47-b446-82235d44346d",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Receptor binding affinity (Kd) measurements for SARS-CoV-2 spike/RBD to ACE2 range from ~1-40 nM across different studies, with the main disagreement in dissociation rate constants (koff).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 report binding affinity data from multiple peer-reviewed studies using different methods (biolayer interferometry, surface plasmon resonance). The variation in reported values (C83) is appropriately acknowledged, and the identification of koff as the main source of disagreement is a useful observation, though the biological significance of this variation could be better addressed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "315bd011-6134-4b4a-9f8f-3ec18d9e1103",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Coronavirus virions contain approximately 1100 membrane protein dimers, 15-30 envelope proteins, and 730-2200 nucleoproteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84 and C86 are supported by Neuman et al., 2011, while C85 is from a TGEV coronavirus study (Godet et al., 1992). The use of data from related coronaviruses is reasonable given structural conservation, though SARS-CoV-2-specific measurements would be preferable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "a7b3efcb-cf1a-4fc8-8d3a-1c24ed0c8eba",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 has a ~30 kb single-stranded positive-sense RNA genome with 10 open reading frames, which is typical for coronaviruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 are supported by NCBI genomic data and peer-reviewed genomic analyses (Wu et al., 2020b; Smith and Denison, 2012). These are well-established genomic characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "2d801e8c-ce01-470b-a1d8-29ec37eb250f",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Evolutionary rates for SARS, MERS, and OC43 range from 0.27-2.38\u00d710\u207b\u00b3 substitutions/site/year, with a measured mutation rate of 3.5\u00d710\u207b\u2076 per site per cycle for murine hepatitis virus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 are supported by peer-reviewed studies (Koyama et al., 2020; Sanju\u00e1n et al., 2010). These provide important context for understanding SARS-CoV-2 evolution, though the manuscript appropriately notes that C91 is from a related coronavirus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "33f5f262-ef98-40e4-92ac-014f49713ab0",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 shows varying degrees of genomic similarity to related viruses: 96% to bat coronavirus RaTG13, 91% to pangolin CoV, 80% to SARS-CoV-1, and 50-55% to common cold coronaviruses and MERS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C98 are supported by genomic sequence alignments from NCBI and peer-reviewed studies (Zhang et al., 2020). These phylogenetic relationships are important for understanding viral origins and evolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "95ba2f5b-d86b-46d5-8431-c9930a01efa2",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "SARS-CoV-1 is internalized within 10-15 minutes, with a complete replication cycle taking 7-8 hours from adsorption to progeny release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C101 are supported by peer-reviewed studies on SARS-CoV-1 (Schneider et al., 2012; Ng et al., 2003). While these are SARS-CoV-1 data rather than SARS-CoV-2, the manuscript appropriately indicates this, and the values likely provide reasonable estimates given viral similarity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "be9b014c-643c-41de-b1de-425a364d1b88",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The burst size for MHV coronavirus is approximately 600-700 plaque-forming units per cell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C102 is supported by Hirano et al., 1976, though this is MHV data rather than SARS-CoV-2. The manuscript appropriately notes that \"more research is needed to verify these values for SARS-CoV-2.\"",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "1d24d4bc-e3bd-4d1f-92a1-ffd6514765e4",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 infects type I and II pneumocytes, alveolar macrophages, and mucous gland epithelial cells via ACE2 receptor binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C106 are supported by histopathology studies (Shieh et al., 2005), molecular biology studies (Walls et al., 2020), and animal model data (Rockx et al., 2020). The identification of target cell types is important for understanding disease pathogenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "6c5d0fb3-4a4f-4260-931a-ae78b4dcd093",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Type II pneumocytes have a mean volume of ~763 \u03bcm\u00b3, while alveolar macrophages are larger at ~2,491 \u03bcm\u00b3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C109 are supported by morphometry studies (Fehrenbach et al., 1995; Crapo et al., 1982). These cellular parameters provide context for understanding viral replication capacity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "8c6866a9-dd15-44fc-bd07-400831f89040",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 antibody seroconversion occurs with median times of 11-14 days for different antibody types, with high seropositivity rates (88-100%) by day 14 after symptom onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C111 are supported by serological studies (Zhao et al., 2020; To et al., 2020). These data are important for understanding immune response kinetics and interpreting serological tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "07d2d7fe-3575-4929-9a7d-669763bd6f1a",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "SARS-specific antibodies were maintained for an average of 2 years in SARS patients, with significant reduction in the third year.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C112 is supported by Wu et al., 2007 longitudinal study of SARS-CoV-1 patients. While this is SARS-CoV-1 data, it provides relevant context for understanding potential antibody durability for SARS-CoV-2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "6d3f63cc-98d0-4fe6-832d-b8bcfb37f2cb",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 RNA was detected on Diamond Princess cabin surfaces up to 17 days after vacating but before disinfection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C113 is supported by Moriarty et al., 2020, though the manuscript appropriately notes this is RNA detection, not necessarily infectious virus. This finding has important implications for environmental contamination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "b5ed68dc-0bd7-45c4-9d1d-6f576707c402",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R30",
+      "result_category": "llm",
+      "result": "Estimates of R0 for SARS-CoV-2 range from 2.38 (95% CI: 2.04-2.77) to 2.9 (95% CI: 2.1-4.5) from different modeling studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C115 are supported by peer-reviewed epidemiological modeling studies (Li et al., 2020a; Park et al., 2020a). The range of estimates reflects uncertainty in early epidemic data and different modeling approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "38cb6f3f-7c0d-49b1-aa5e-6e72d1c43133",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R31",
+      "result_category": "llm",
+      "result": "Median estimates for latent and infectious periods are approximately 3.69 and 3.48 days, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C116 is supported by Li et al., 2020a epidemiological modeling. These parameters are critical for understanding transmission dynamics and designing interventions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "85e712f4-e030-4c14-b2f5-39a6fa69ec14",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R32",
+      "result_category": "llm",
+      "result": "Median time to clinical recovery is ~2 weeks for mild cases and 3-6 weeks for severe/critical cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C121-C122 are supported by WHO data. These recovery timelines are important for healthcare planning and understanding disease burden.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "e84850cb-99f2-4812-9ebe-1ba39ddbf489",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R33",
+      "result_category": "llm",
+      "result": "Infection fatality rate (IFR) estimates range from 0.3-1.3% based on multiple approaches including repatriation data, Diamond Princess cohort, and epidemiological modeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C123-C128 synthesize IFR estimates from multiple peer-reviewed studies using different methodologies (Verity et al., 2020; Ferguson et al., 2020; Nishiura et al., 2020; Russell et al., 2020; Mizumoto et al., 2020). The range reflects genuine uncertainty and methodological differences. The manuscript appropriately acknowledges this is a \"crude range\" and notes important caveats about age-stratification and population differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    },
+    {
+      "id": "10746241-e43d-4d8b-9b88-dbc61678282c",
+      "content_id": "4adfd5df-d95f-481d-8e19-308132c0ca17",
+      "result_id": "R34",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 spike protein is primed by TMPRSS2 protease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C136 is supported by established knowledge about coronavirus entry mechanisms and is shown in Figure 1. TMPRSS2 priming is a well-documented step in SARS-CoV-2 cell entry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:13:52.456326Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e10b4269-cb18-4fc0-a7d5-523956215d29",
+      "result_id": "319af0e5-f7ce-460f-b99f-4ac232762723"
+    },
+    {
+      "claim_id": "aaa4a242-7b2a-4dd6-8089-4df3ff1ea6ee",
+      "result_id": "319af0e5-f7ce-460f-b99f-4ac232762723"
+    },
+    {
+      "claim_id": "4ab1992a-2421-483d-bc0f-92d708684dbf",
+      "result_id": "319af0e5-f7ce-460f-b99f-4ac232762723"
+    },
+    {
+      "claim_id": "067e3197-11b7-40e8-914f-6cb61cbd5aeb",
+      "result_id": "319af0e5-f7ce-460f-b99f-4ac232762723"
+    },
+    {
+      "claim_id": "c8cbb9d1-22cb-45f6-8a03-718f1be9049b",
+      "result_id": "319af0e5-f7ce-460f-b99f-4ac232762723"
+    },
+    {
+      "claim_id": "1c15bb55-c66d-4694-8db7-897e3f24bdbf",
+      "result_id": "319af0e5-f7ce-460f-b99f-4ac232762723"
+    },
+    {
+      "claim_id": "2bb563bb-a609-46ff-a16d-bdb36c5b6713",
+      "result_id": "319af0e5-f7ce-460f-b99f-4ac232762723"
+    },
+    {
+      "claim_id": "78a8c12d-1829-4426-9536-4828826732a6",
+      "result_id": "6245e923-f4b4-4b20-a7da-fe980d636504"
+    },
+    {
+      "claim_id": "a88d0760-49b8-4816-8ae8-3954c523ad7a",
+      "result_id": "dc444b70-d013-4fd2-aa70-01eae0e31a72"
+    },
+    {
+      "claim_id": "fe5db286-fc69-4d3b-97c8-f9b1419cb926",
+      "result_id": "dc444b70-d013-4fd2-aa70-01eae0e31a72"
+    },
+    {
+      "claim_id": "9228f4f6-45a2-49ac-ac1a-248dc210c2ce",
+      "result_id": "dc444b70-d013-4fd2-aa70-01eae0e31a72"
+    },
+    {
+      "claim_id": "e68b8acb-501b-4d97-a794-b8fb159219d1",
+      "result_id": "dc444b70-d013-4fd2-aa70-01eae0e31a72"
+    },
+    {
+      "claim_id": "ebab88a0-dbe0-47f0-acf7-ed130d3e32ce",
+      "result_id": "dc444b70-d013-4fd2-aa70-01eae0e31a72"
+    },
+    {
+      "claim_id": "1d9ae1f8-bf01-4dac-b305-577d101bab74",
+      "result_id": "dc444b70-d013-4fd2-aa70-01eae0e31a72"
+    },
+    {
+      "claim_id": "5296b7bf-c1a7-4304-9e39-bba716b95d9e",
+      "result_id": "cb882a60-642b-48f0-8234-1f764e904bfd"
+    },
+    {
+      "claim_id": "07ad691f-9434-402d-8ee3-485a54d94658",
+      "result_id": "cb882a60-642b-48f0-8234-1f764e904bfd"
+    },
+    {
+      "claim_id": "3b0090a5-9683-4b4f-992b-71318c70835f",
+      "result_id": "cb882a60-642b-48f0-8234-1f764e904bfd"
+    },
+    {
+      "claim_id": "a9c8c290-2bfd-4e9c-b226-d6790eed0fff",
+      "result_id": "cb882a60-642b-48f0-8234-1f764e904bfd"
+    },
+    {
+      "claim_id": "d2d9b9db-f9f0-403b-8362-6061dda68cf5",
+      "result_id": "cb882a60-642b-48f0-8234-1f764e904bfd"
+    },
+    {
+      "claim_id": "2cb9d76b-7296-4a71-865e-2856135031a3",
+      "result_id": "cb882a60-642b-48f0-8234-1f764e904bfd"
+    },
+    {
+      "claim_id": "3f9fe009-c4a1-4e39-9406-2ca37d1fe3bd",
+      "result_id": "96357402-052f-404a-a6fc-f92a05798910"
+    },
+    {
+      "claim_id": "9a0d7332-55cd-4a70-b13d-edcd258bf433",
+      "result_id": "96357402-052f-404a-a6fc-f92a05798910"
+    },
+    {
+      "claim_id": "ab00f46b-b356-4f22-89bf-dd7c368b2b9f",
+      "result_id": "96357402-052f-404a-a6fc-f92a05798910"
+    },
+    {
+      "claim_id": "54224af0-8bd3-4e3d-8987-347b80e69063",
+      "result_id": "96357402-052f-404a-a6fc-f92a05798910"
+    },
+    {
+      "claim_id": "528a1372-e1c8-45b5-9950-f474cee3eedc",
+      "result_id": "96357402-052f-404a-a6fc-f92a05798910"
+    },
+    {
+      "claim_id": "6033c74a-f3bf-45e7-abbe-72a7be6a3e82",
+      "result_id": "96357402-052f-404a-a6fc-f92a05798910"
+    },
+    {
+      "claim_id": "1aebe26e-d064-4c26-86cb-3e235a513f3c",
+      "result_id": "96357402-052f-404a-a6fc-f92a05798910"
+    },
+    {
+      "claim_id": "c9f84962-b1f7-466f-ad5e-99eb8d924325",
+      "result_id": "b401990b-b5a4-4805-b062-1b7f9bcf095e"
+    },
+    {
+      "claim_id": "41344412-9fb8-46d3-b3be-6294e48bf097",
+      "result_id": "b401990b-b5a4-4805-b062-1b7f9bcf095e"
+    },
+    {
+      "claim_id": "b83beb3c-aa1c-450c-91b5-2e0347693249",
+      "result_id": "b401990b-b5a4-4805-b062-1b7f9bcf095e"
+    },
+    {
+      "claim_id": "65318d24-424c-48e1-8117-837e045dc546",
+      "result_id": "6daf9301-9fee-4acc-90cb-ed76e858db63"
+    },
+    {
+      "claim_id": "0e93db6e-ca22-4f93-b9b8-fab268adf7d1",
+      "result_id": "6daf9301-9fee-4acc-90cb-ed76e858db63"
+    },
+    {
+      "claim_id": "0c35484d-cbcf-42c2-af4e-de1c4b8a1262",
+      "result_id": "6daf9301-9fee-4acc-90cb-ed76e858db63"
+    },
+    {
+      "claim_id": "a0c868ce-4ccb-4ef4-aead-7592f83647dc",
+      "result_id": "fa041413-af0a-4521-b0e5-d7d8abc121a6"
+    },
+    {
+      "claim_id": "4c8fc680-5bd8-4ad2-b3de-3c6ed5b2bda6",
+      "result_id": "fa041413-af0a-4521-b0e5-d7d8abc121a6"
+    },
+    {
+      "claim_id": "2b0e29c0-d893-4a06-9fcf-1aaf36fe4568",
+      "result_id": "fa041413-af0a-4521-b0e5-d7d8abc121a6"
+    },
+    {
+      "claim_id": "ae771238-53c7-4785-aaf2-ede5314e7275",
+      "result_id": "fa041413-af0a-4521-b0e5-d7d8abc121a6"
+    },
+    {
+      "claim_id": "10781b5b-87ca-4dc0-80d6-f41dc99916bb",
+      "result_id": "fa041413-af0a-4521-b0e5-d7d8abc121a6"
+    },
+    {
+      "claim_id": "40c0c506-2a75-43df-ae75-e400a2429144",
+      "result_id": "fa041413-af0a-4521-b0e5-d7d8abc121a6"
+    },
+    {
+      "claim_id": "8c0d6017-7b44-4536-8efb-9660c5ca85c3",
+      "result_id": "fa041413-af0a-4521-b0e5-d7d8abc121a6"
+    },
+    {
+      "claim_id": "1cc41620-6326-4a81-a32a-7d6637482d75",
+      "result_id": "fefc0b5b-d345-4dfd-a9f6-2874b5059ee7"
+    },
+    {
+      "claim_id": "c9cbabef-6895-4951-ba13-112068698194",
+      "result_id": "fefc0b5b-d345-4dfd-a9f6-2874b5059ee7"
+    },
+    {
+      "claim_id": "a9799b00-3b38-4250-abc7-065579024b66",
+      "result_id": "fefc0b5b-d345-4dfd-a9f6-2874b5059ee7"
+    },
+    {
+      "claim_id": "fe43e1a0-4fd2-4e18-bb90-6aa35d71b0bb",
+      "result_id": "fefc0b5b-d345-4dfd-a9f6-2874b5059ee7"
+    },
+    {
+      "claim_id": "6467366c-f065-49ac-9a9b-0a8b6ecb4e9b",
+      "result_id": "fefc0b5b-d345-4dfd-a9f6-2874b5059ee7"
+    },
+    {
+      "claim_id": "bc2edcd3-e6e9-473d-b7a3-3ec33dbe4fc6",
+      "result_id": "7e4bcf4d-20b0-4c87-98cc-d02077e29586"
+    },
+    {
+      "claim_id": "91559463-c0ab-4e98-8c3b-9b938dc84432",
+      "result_id": "7e4bcf4d-20b0-4c87-98cc-d02077e29586"
+    },
+    {
+      "claim_id": "b2115266-3052-4607-a601-a7f1f30d53d8",
+      "result_id": "7e4bcf4d-20b0-4c87-98cc-d02077e29586"
+    },
+    {
+      "claim_id": "3ee54f4d-07a7-464f-9b68-366bfd5ac999",
+      "result_id": "7e4bcf4d-20b0-4c87-98cc-d02077e29586"
+    },
+    {
+      "claim_id": "b4196322-ab7c-4225-9b28-e5921308f069",
+      "result_id": "7e4bcf4d-20b0-4c87-98cc-d02077e29586"
+    },
+    {
+      "claim_id": "522477b4-a4b6-49ab-afa4-b1dd35605762",
+      "result_id": "d5859163-fd46-4eee-bf2c-331167574ccd"
+    },
+    {
+      "claim_id": "0a89b120-fc4d-44af-a68b-78c8cd142743",
+      "result_id": "d5859163-fd46-4eee-bf2c-331167574ccd"
+    },
+    {
+      "claim_id": "6bf7fb41-c8d5-4318-b399-833fd99cd5c6",
+      "result_id": "d5859163-fd46-4eee-bf2c-331167574ccd"
+    },
+    {
+      "claim_id": "8ddc8011-abbd-4bd8-b6ea-67d36a9dd11e",
+      "result_id": "520ea827-b100-45c5-9772-d32045b444bc"
+    },
+    {
+      "claim_id": "d9001a5d-7f1c-4286-b5ea-2db6d71e1e92",
+      "result_id": "520ea827-b100-45c5-9772-d32045b444bc"
+    },
+    {
+      "claim_id": "07affc01-cfa6-49e5-be86-e0ced9c88230",
+      "result_id": "520ea827-b100-45c5-9772-d32045b444bc"
+    },
+    {
+      "claim_id": "cad0d7ea-e608-451a-b4f6-94464e348abc",
+      "result_id": "520ea827-b100-45c5-9772-d32045b444bc"
+    },
+    {
+      "claim_id": "dbc6338c-8c01-4c22-8594-1ec40e161f38",
+      "result_id": "520ea827-b100-45c5-9772-d32045b444bc"
+    },
+    {
+      "claim_id": "d95668ef-3257-4c56-9928-834d9ff5d49c",
+      "result_id": "349abef3-333f-4968-b59a-2c806906ee5d"
+    },
+    {
+      "claim_id": "9c478ea8-4900-4b33-ba62-8b0a56835352",
+      "result_id": "349abef3-333f-4968-b59a-2c806906ee5d"
+    },
+    {
+      "claim_id": "c9fb2948-e7c9-4c02-a32a-d02215aa9bf7",
+      "result_id": "349abef3-333f-4968-b59a-2c806906ee5d"
+    },
+    {
+      "claim_id": "d4aa39cf-506f-4517-8f4f-ee3d41aa7203",
+      "result_id": "349abef3-333f-4968-b59a-2c806906ee5d"
+    },
+    {
+      "claim_id": "476875b2-19db-4935-a1d4-83322a93616d",
+      "result_id": "349abef3-333f-4968-b59a-2c806906ee5d"
+    },
+    {
+      "claim_id": "3847ab75-67c6-43ea-a436-fa05899adc2e",
+      "result_id": "9196baa4-fa2c-45e1-bf5d-61911cf83dd2"
+    },
+    {
+      "claim_id": "5e1380cd-eac7-4fb8-8d65-41d6dd731706",
+      "result_id": "9196baa4-fa2c-45e1-bf5d-61911cf83dd2"
+    },
+    {
+      "claim_id": "e204e152-ae8f-4b73-854b-464820fe6d3d",
+      "result_id": "9196baa4-fa2c-45e1-bf5d-61911cf83dd2"
+    },
+    {
+      "claim_id": "0cc11878-f760-4366-ad15-f876e10da876",
+      "result_id": "b732223b-1469-4f41-b89f-08acd4da9853"
+    },
+    {
+      "claim_id": "3854d3af-f7c1-440f-8c90-98d8e350c8ec",
+      "result_id": "b732223b-1469-4f41-b89f-08acd4da9853"
+    },
+    {
+      "claim_id": "23cdd568-973e-480f-b70e-3cf6cf2856b6",
+      "result_id": "b732223b-1469-4f41-b89f-08acd4da9853"
+    },
+    {
+      "claim_id": "27fd50b2-f280-49de-92a9-1c70d701dc8a",
+      "result_id": "b732223b-1469-4f41-b89f-08acd4da9853"
+    },
+    {
+      "claim_id": "c909e142-bdf3-4207-9e45-449f51a6c6b3",
+      "result_id": "b732223b-1469-4f41-b89f-08acd4da9853"
+    },
+    {
+      "claim_id": "58ffad3c-bc94-45be-ae8d-c1c4eccc8b41",
+      "result_id": "b732223b-1469-4f41-b89f-08acd4da9853"
+    },
+    {
+      "claim_id": "82e39f87-810c-4f62-9087-0dba6831a1ea",
+      "result_id": "b732223b-1469-4f41-b89f-08acd4da9853"
+    },
+    {
+      "claim_id": "1f2a269a-0651-43cd-9aca-52ade7c9f4b6",
+      "result_id": "b732223b-1469-4f41-b89f-08acd4da9853"
+    },
+    {
+      "claim_id": "172fb158-8634-498d-a5f7-1253c3ca17b4",
+      "result_id": "b1b1e1d2-2c3c-498a-bb64-6ea4b835a8c0"
+    },
+    {
+      "claim_id": "5d806106-f0f8-4f4b-84c3-17a718e579c5",
+      "result_id": "b1b1e1d2-2c3c-498a-bb64-6ea4b835a8c0"
+    },
+    {
+      "claim_id": "81125d21-27d1-4aa6-9e35-abde0b87c962",
+      "result_id": "b1b1e1d2-2c3c-498a-bb64-6ea4b835a8c0"
+    },
+    {
+      "claim_id": "1a92a630-93f5-4717-97e7-a210cb582741",
+      "result_id": "f9a87f34-6768-4757-9a2d-93653d998557"
+    },
+    {
+      "claim_id": "102a624f-ecd2-4008-b1b2-e9a2ec5dde8d",
+      "result_id": "f9a87f34-6768-4757-9a2d-93653d998557"
+    },
+    {
+      "claim_id": "0ec9ffd8-75e5-41df-adc3-4f00919afb19",
+      "result_id": "f9a87f34-6768-4757-9a2d-93653d998557"
+    },
+    {
+      "claim_id": "24b165f8-d2d6-4091-b67e-558813dbc2a3",
+      "result_id": "f9a87f34-6768-4757-9a2d-93653d998557"
+    },
+    {
+      "claim_id": "8dc26995-5c02-4df7-ba8f-5a7812f46cf9",
+      "result_id": "9385bc41-ea59-4a47-b446-82235d44346d"
+    },
+    {
+      "claim_id": "18e81a65-a6ef-443c-af4b-610e2f425af8",
+      "result_id": "9385bc41-ea59-4a47-b446-82235d44346d"
+    },
+    {
+      "claim_id": "7010a0b0-4148-483c-a492-57f06348c628",
+      "result_id": "9385bc41-ea59-4a47-b446-82235d44346d"
+    },
+    {
+      "claim_id": "1f6d5237-e56b-4da7-a5d3-4457dc4fc5e6",
+      "result_id": "9385bc41-ea59-4a47-b446-82235d44346d"
+    },
+    {
+      "claim_id": "6fe37eb2-5914-4b78-8b92-504f422a6e6f",
+      "result_id": "9385bc41-ea59-4a47-b446-82235d44346d"
+    },
+    {
+      "claim_id": "b622c17e-99a5-4c45-9643-8ff941d37d03",
+      "result_id": "9385bc41-ea59-4a47-b446-82235d44346d"
+    },
+    {
+      "claim_id": "4d4816f8-7a2d-49f1-9fec-d01adaccd7fb",
+      "result_id": "315bd011-6134-4b4a-9f8f-3ec18d9e1103"
+    },
+    {
+      "claim_id": "7a1ddc4f-b737-4c4f-8547-ef38d0d3a269",
+      "result_id": "315bd011-6134-4b4a-9f8f-3ec18d9e1103"
+    },
+    {
+      "claim_id": "584137c1-5fc8-47fa-987c-8a2b23fc4592",
+      "result_id": "315bd011-6134-4b4a-9f8f-3ec18d9e1103"
+    },
+    {
+      "claim_id": "00ad84eb-ca10-44fe-90f5-82dd5df834fc",
+      "result_id": "a7b3efcb-cf1a-4fc8-8d3a-1c24ed0c8eba"
+    },
+    {
+      "claim_id": "17ac42a9-be4b-4ba8-9ede-48c8d185257f",
+      "result_id": "a7b3efcb-cf1a-4fc8-8d3a-1c24ed0c8eba"
+    },
+    {
+      "claim_id": "99aa3986-4f38-44b3-a64b-60ca43a3d2d2",
+      "result_id": "a7b3efcb-cf1a-4fc8-8d3a-1c24ed0c8eba"
+    },
+    {
+      "claim_id": "afd7bbe7-df43-4cd1-9c04-eea6f0740d7d",
+      "result_id": "2d801e8c-ce01-470b-a1d8-29ec37eb250f"
+    },
+    {
+      "claim_id": "dc5cab58-ee5f-4263-bca5-6623aa7e4214",
+      "result_id": "2d801e8c-ce01-470b-a1d8-29ec37eb250f"
+    },
+    {
+      "claim_id": "bfe81332-b9ff-4233-a740-90cdd0b71619",
+      "result_id": "33f5f262-ef98-40e4-92ac-014f49713ab0"
+    },
+    {
+      "claim_id": "e24bc0bb-aae8-4edc-ac93-549bfaa5d70a",
+      "result_id": "33f5f262-ef98-40e4-92ac-014f49713ab0"
+    },
+    {
+      "claim_id": "c25ed952-3258-4ee5-bf35-db2729a8366a",
+      "result_id": "33f5f262-ef98-40e4-92ac-014f49713ab0"
+    },
+    {
+      "claim_id": "812a6e00-a60b-4c35-a0ba-8e61a44e0807",
+      "result_id": "33f5f262-ef98-40e4-92ac-014f49713ab0"
+    },
+    {
+      "claim_id": "691138a2-ee4a-4b38-ad26-2465624c1fcf",
+      "result_id": "33f5f262-ef98-40e4-92ac-014f49713ab0"
+    },
+    {
+      "claim_id": "0eb94118-416e-4f64-a32c-0bb11c186ac3",
+      "result_id": "33f5f262-ef98-40e4-92ac-014f49713ab0"
+    },
+    {
+      "claim_id": "9fffab41-cb18-401d-ace3-f29ea39966ee",
+      "result_id": "33f5f262-ef98-40e4-92ac-014f49713ab0"
+    },
+    {
+      "claim_id": "465910d4-6274-4ae0-854c-82649a69acf9",
+      "result_id": "95ba2f5b-d86b-46d5-8431-c9930a01efa2"
+    },
+    {
+      "claim_id": "871af6a5-2352-4a64-8fdf-ae3660150fa5",
+      "result_id": "95ba2f5b-d86b-46d5-8431-c9930a01efa2"
+    },
+    {
+      "claim_id": "736ceed2-eb64-4619-b468-3ac009073858",
+      "result_id": "95ba2f5b-d86b-46d5-8431-c9930a01efa2"
+    },
+    {
+      "claim_id": "1e6e086d-e57f-4452-b247-02f9bd6581cd",
+      "result_id": "be9b014c-643c-41de-b1de-425a364d1b88"
+    },
+    {
+      "claim_id": "f0be712b-ef2b-45d5-a97a-3d5b13dcf4be",
+      "result_id": "1d24d4bc-e3bd-4d1f-92a1-ffd6514765e4"
+    },
+    {
+      "claim_id": "6734696c-08a1-4983-8b63-fe51683a992c",
+      "result_id": "1d24d4bc-e3bd-4d1f-92a1-ffd6514765e4"
+    },
+    {
+      "claim_id": "6807eebc-e99a-4888-ac2e-fa426ff28491",
+      "result_id": "1d24d4bc-e3bd-4d1f-92a1-ffd6514765e4"
+    },
+    {
+      "claim_id": "c899d0c1-bc41-43ba-98d4-96dd66d7b4c5",
+      "result_id": "1d24d4bc-e3bd-4d1f-92a1-ffd6514765e4"
+    },
+    {
+      "claim_id": "f90e0c3f-1706-4f5d-ad98-e797b6324c1f",
+      "result_id": "6c5d0fb3-4a4f-4260-931a-ae78b4dcd093"
+    },
+    {
+      "claim_id": "ba462d07-7c1f-4770-92af-ab1e6b983df3",
+      "result_id": "6c5d0fb3-4a4f-4260-931a-ae78b4dcd093"
+    },
+    {
+      "claim_id": "134b84dc-bee7-44f0-b79d-7b7cc01f45f0",
+      "result_id": "6c5d0fb3-4a4f-4260-931a-ae78b4dcd093"
+    },
+    {
+      "claim_id": "843f2003-5d2a-48f3-88b3-0fe79ae69c0c",
+      "result_id": "8c6866a9-dd15-44fc-bd07-400831f89040"
+    },
+    {
+      "claim_id": "b0a3db84-bf45-42b9-b553-4d1b6fa3ef28",
+      "result_id": "8c6866a9-dd15-44fc-bd07-400831f89040"
+    },
+    {
+      "claim_id": "cfd76940-714e-4a84-95b8-08c5b2bd8215",
+      "result_id": "07d2d7fe-3575-4929-9a7d-669763bd6f1a"
+    },
+    {
+      "claim_id": "e86088f7-79a1-4524-aaf1-b4fddaef2a9e",
+      "result_id": "6d3f63cc-98d0-4fe6-832d-b8bcfb37f2cb"
+    },
+    {
+      "claim_id": "abc8cf93-58eb-4ef1-95dd-49eebf8eb682",
+      "result_id": "b5ed68dc-0bd7-45c4-9d1d-6f576707c402"
+    },
+    {
+      "claim_id": "940d7485-e66e-4c3a-a3fd-2af5049fbb5c",
+      "result_id": "b5ed68dc-0bd7-45c4-9d1d-6f576707c402"
+    },
+    {
+      "claim_id": "a8c485ce-3b65-4cd5-bc98-9f9f32bda2e4",
+      "result_id": "38cb6f3f-7c0d-49b1-aa5e-6e72d1c43133"
+    },
+    {
+      "claim_id": "fd2829ef-b091-4927-b855-ddcb1633e306",
+      "result_id": "85e712f4-e030-4c14-b2f5-39a6fa69ec14"
+    },
+    {
+      "claim_id": "51c47698-deb1-44b5-aba3-3c828e9f5bc6",
+      "result_id": "85e712f4-e030-4c14-b2f5-39a6fa69ec14"
+    },
+    {
+      "claim_id": "b5527c8b-6b61-4c43-a9f7-b024e2466f10",
+      "result_id": "e84850cb-99f2-4812-9ebe-1ba39ddbf489"
+    },
+    {
+      "claim_id": "af452047-4a0a-40fa-8e8f-c552b45a9682",
+      "result_id": "e84850cb-99f2-4812-9ebe-1ba39ddbf489"
+    },
+    {
+      "claim_id": "82755dda-733e-4d1b-9a43-5e3b4cd5de56",
+      "result_id": "e84850cb-99f2-4812-9ebe-1ba39ddbf489"
+    },
+    {
+      "claim_id": "9abf97b8-65e8-4df0-87d0-e75e6c6e7e8c",
+      "result_id": "e84850cb-99f2-4812-9ebe-1ba39ddbf489"
+    },
+    {
+      "claim_id": "d04eb178-a6eb-4565-8c24-b186a46dfd3c",
+      "result_id": "e84850cb-99f2-4812-9ebe-1ba39ddbf489"
+    },
+    {
+      "claim_id": "10f4d386-0208-412d-b335-4e4b29009419",
+      "result_id": "e84850cb-99f2-4812-9ebe-1ba39ddbf489"
+    },
+    {
+      "claim_id": "ff7455ab-6910-4691-9280-ade2540dbd31",
+      "result_id": "10746241-e43d-4d8b-9b88-dbc61678282c"
+    }
+  ],
+  "comparisons": []
+}

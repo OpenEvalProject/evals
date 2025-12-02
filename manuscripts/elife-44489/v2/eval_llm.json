@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The Ndc80 complex exhibits auto-inhibition mediated by the Spc24/Spc25 dimer. Removal of Spc24/Spc25 (Broccoli construct) increases microtubule residence time from 2.9\u00b10.3s to 5.6\u00b10.7s. Adding free Spc24/Spc25 in trans reduces Broccoli residence time back to 3.3\u00b10.4s, demonstrating that Spc24/Spc25 can inhibit microtubule binding independently of the tetramerization domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 provide direct experimental evidence with statistical analysis showing that Spc24/Spc25 inhibits microtubule binding. The residence time measurements are internally consistent and include appropriate controls. Claims C39-C42 draw reasonable inferences from the data showing that free Spc24/Spc25 can inhibit both Broccoli and Ndc80-MIND complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C7",
+      "C78"
+    ],
+    "result": "MIND enhances Ndc80 microtubule binding by relieving auto-inhibition. Adding MIND increases Ndc80 residence time from 2.9\u00b10.3s to 9.8\u00b11.1s. This enhancement is abolished by excess free Spc24/Spc25, including a mutant unable to bind MIND, indicating direct interaction with Ndc80 rather than MIND displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 provide clear experimental evidence with appropriate controls demonstrating MIND's effect and the mechanism of inhibition. The use of a MIND-binding-deficient Spc24/Spc25 mutant (C36) is a critical control that supports the interpretation in C37. Claims C7 and C78 are well-supported conclusions from the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Electrostatic interactions between conserved acidic residues on Spc25 and the Ndc80 complex contribute to auto-inhibition. A charge-reversal mutant (Spc24/Spc25-7K) fails to inhibit Broccoli microtubule binding (residence time 6.9\u00b10.6s vs 5.6\u00b10.7s, p=0.16), unlike wild-type Spc24/Spc25 (3.3\u00b10.4s, p=0.006).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 provide sequence conservation data and functional evidence for the role of electrostatic interactions. The statistical analysis clearly shows loss of inhibitory function in the charge-reversal mutant. However, the authors note they could not purify full-length Ndc80 with the 7K mutations, which slightly limits the interpretation but does not invalidate the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C2",
+      "C3",
+      "C77"
+    ],
+    "result": "The Ndc80 complex dynamically fluctuates between tightly bent and open conformations. Bulk FRET shows efficiency of 0.29, intermediate between positive (0.53) and negative (0.10) controls. Single-molecule FRET reveals 25% high-FRET values with switching rates of kclosing=0.23\u00b10.024 s\u207b\u00b9 and kopening=0.96\u00b10.094 s\u207b\u00b9. Tight bending leads to auto-inhibition that decreases microtubule affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 present comprehensive FRET data from both bulk and single-molecule measurements with appropriate controls. The dynamic fluctuations are well-documented with quantitative kinetic analysis. The high-FRET population is eliminated by excess Spc24/Spc25 (C59), confirming the bent state involves intra-complex interactions. Claims C2, C3, and C77 are well-supported conclusions from this data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C5",
+      "C6",
+      "C96"
+    ],
+    "result": "The loop region (\u0394490-510) is required for tight bending of the Ndc80 complex. Loop deletion reduces high-FRET values from 25% to 5.6% and increases microtubule residence time from 2.1\u00b10.3s to 3.1\u00b10.3s, demonstrating that loop-mediated flexibility directly influences microtubule binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 provide clear experimental evidence linking loop deletion to reduced bending and enhanced microtubule binding. The FRET and residence time data are internally consistent and support the conclusion that the loop enables tight bending. Claims C5, C6, and C96 are well-supported by this data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C4"
+    ],
+    "result": "Microtubule binding selects for straightened Ndc80 conformations. Microtubule-bound complexes show only 6.2% high-FRET values compared to 25% for free complexes. Using a four-state equilibrium model, the tightly bent conformation has sixfold lower affinity for microtubules than the open conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 provide FRET measurements of microtubule-bound complexes and apply a thermodynamic model to estimate relative affinities. The model assumptions are reasonable and clearly stated. The data directly support claim C4 that microtubule binding selects for straightened forms. However, the sixfold difference relies on model assumptions that could be tested further.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C9"
+    ],
+    "result": "MIND binding inhibits tight bending of the Ndc80 complex. In the presence of excess MIND, 33% of Ndc80 complexes form co-complexes showing only 4.9% high-FRET values, compared to 29% for Ndc80 alone. This stabilizes Ndc80 in a straightened form for higher affinity microtubule binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 use three-color TIRF microscopy to distinguish Ndc80-MIND co-complexes from Ndc80 alone, providing direct evidence that MIND prevents tight bending. The control showing 29% high-FRET for Ndc80 without MIND in the same field validates the comparison. Claim C9 is a well-supported conclusion integrating this data with the residence time measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "MIND may enhance microtubule binding beyond simply relieving auto-inhibition. The Ndc80-MIND co-complex has approximately twofold higher residence time than Broccoli (which lacks Spc24/Spc25 and is not auto-inhibited), suggesting MIND might propagate molecular reorganization through the coiled coil.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91 make an interesting observation comparing Ndc80-MIND to Broccoli residence times, but the interpretation is speculative. The comparison assumes Broccoli is a valid model for non-auto-inhibited Ndc80, but structural differences between the dimer and tetramer could affect microtubule binding independently of auto-inhibition. Additional experiments would be needed to test the proposed allosteric mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Additional flexibility sites beyond the loop region must exist within the Ndc80 complex. Simple hinging at the loop (located 20nm from Ndc80/Nuf2 and 40nm from Spc24/Spc25) cannot bring the ends close enough to explain high FRET. Additional hinging at the junction between calponin homology domains and the coiled coil might be sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 present a logical geometric argument based on known structural dimensions and FRET distances. The inference that additional flexibility sites must exist (C100) is well-reasoned. Claim C101 cites structural evidence for flexibility at the CH domain junction. However, claim C102 is somewhat speculative as the authors do not directly test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C103"
+    ],
+    "result": "Tight bending of the Ndc80 complex might be required for proper regulation of kinetochore-microtubule attachments in vivo. This interpretation integrates current findings with prior observations that loop deletions and loop-proximal mutations cause temperature-sensitive growth and biorientation defects, which are suppressed by mutations on the opposite side of the loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C83 and C103 cite prior in vivo studies showing phenotypes associated with loop mutations. Claim C84 proposes these observations have a unified mechanistic basis in tight bending regulation. While this is a reasonable hypothesis that integrates the current in vitro findings with prior in vivo data, it remains speculative without direct in vivo testing of the bending mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C108",
+      "C109"
+    ],
+    "result": "Auto-inhibition might prevent premature microtubule binding before kinetochore assembly or ensure stepwise kinetochore assembly through sequential relief of auto-inhibition. This could prevent Ndc80 from recruiting Dam1 until bound to kinetochore-anchored MIND.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105 and C108-C109 propose physiological roles for auto-inhibition but are entirely speculative. While these are plausible hypotheses consistent with the in vitro data and general principles of kinetochore assembly (C106-C107), they lack direct experimental support. These represent interesting directions for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "If some kinetochore-anchored Ndc80 complexes can adopt the tightly bent state, their conformation might be sensitive to kinetochore tension, potentially contributing to mechanosensory feedback mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 is purely speculative and conditional ('if...then...might'). While it proposes an interesting potential role for conformational changes in mechanosensing, there is no experimental evidence presented to support this hypothesis. This represents a direction for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C43",
+      "C44",
+      "C45",
+      "C49",
+      "C50",
+      "C51",
+      "C61",
+      "C62",
+      "C63",
+      "C71",
+      "C72",
+      "C73",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C92",
+      "C93",
+      "C94",
+      "C97",
+      "C98",
+      "C106",
+      "C107",
+      "C110"
+    ],
+    "result": "Background information and context from prior literature about Ndc80 structure, function, regulation, and interactions with MIND and microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C10-C27, C43-C45, C49-C51, C61-C63, C71-C73, C85-C88, C92-C94, C97-C98, C106-C107, C110) provide established background knowledge supported by appropriate citations to prior work. They accurately represent the state of the field and provide necessary context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C89"
+    ],
+    "result": "Speculative mechanistic proposals about Ndc80 conformational dynamics and MIND function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8 and C89 are explicitly speculative interpretations ('we suggest', 'could') that extend beyond the direct experimental evidence. While consistent with the data, they represent hypotheses rather than demonstrated conclusions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Purified human VPS34 complexes I and II are monodisperse with stoichiometries consistent with 1:1:1:1 ratios of their respective subunits, as determined by SEC-MALS analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C52 are directly supported by SEC-MALS data in Figure 1A showing measured masses (370 kDa for complex I, 384 kDa for complex II) that closely match theoretical masses (363 kDa and 386 kDa respectively). The experimental approach is appropriate for determining complex stoichiometry and molecular mass in solution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Human complex I exhibits significantly higher lipid kinase activity than complex II on membranes with unsaturated lipids, showing a 7-fold higher initial rate on DO base lipids and maintaining higher activity even on membranes containing sphingomyelin and cholesterol. This difference correlates with stronger membrane binding by complex I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are well-supported by GUV activity assays (Figure 1C) and flotation assays (Figure 1D). The quantitative measurements show consistent differences between complexes, and the correlation between binding and activity strengthens the interpretation. However, the flotation assay quantification could be more rigorous with densitometry analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Lipid unsaturation dramatically activates both VPS34 complexes I and II, with activity observed only on membranes containing dioleoyl (DO) lipids but not on fully saturated stearoyl-oleoyl (SO) lipids. Membrane curvature can partially compensate for lipid saturation, as smaller vesicles with mixed SO/DO lipids show activity that correlates with curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by systematic GUV assays (Figures 2C-H) examining different lipid saturation levels and Z-stack analysis correlating curvature with activity. The experimental design appropriately isolates the variable of lipid saturation while controlling other factors. The correlation analysis in C60-C61 provides quantitative support for the curvature compensation mechanism proposed in C62.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C109"
+    ],
+    "result": "The saturation status of the substrate PI dramatically affects VPS34 complex I activity, with DOPI being the best substrate, followed by mixed chain PI and SAPI, while the more saturated DSPI shows greatly reduced activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, and C109 are supported by GUV assays in Figure 3B showing clear differences in activity with different PI species. The finding that changing saturation of just one acyl chain has dramatic effects is surprising and well-documented. However, the mechanism by which substrate lipid saturation affects activity is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Membrane lipid packing has little effect on PX domain binding to PI(3)P, as demonstrated by similar binding to PI(3)P in both DO and SO lipid backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 are supported by control experiments in Figure 3C showing that the PX reporter domain binds similarly to PI(3)P regardless of background lipid saturation. This important control demonstrates that the observed effects of lipid packing on VPS34 activity are not artifacts of the detection method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Increasing negative membrane charge through elevated PS concentration activates VPS34 alone and both complexes I and II. Complex II shows a higher preference for negative charge than complex I, as evidenced by equalized activities on membranes with 25% PS compared to complex I's dominance on 10% PS membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by systematic GUV assays (Figures 4C-G) comparing activities at different PS concentrations. The differential response of the two complexes to PS is well-documented. The inference in C71 about complex II's higher preference for negative charge is reasonable based on the convergence of activities at high PS, though direct binding measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "HDX-MS analysis of complex I on membranes reveals protection in the BATS domain (residues 478-492), Beclin 1 regions (CC2, CC2/BARA linker, and AF1), and VPS34 kinase domain (k\u03b11-k\u03b12 helices), delineating a putative membrane-binding surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by HDX-MS data in Figure 5 with 87% sequence coverage. The identification of protected regions is data-driven, and mapping onto structural models (C76) provides a reasonable interpretation. However, HDX protection can result from either direct membrane interaction or conformational changes, which is acknowledged but not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "HDX-MS analysis of complex II reveals membrane-induced protection in Beclin 1 (CC2/BARA linker, AF1, and additionally HL and AF2 regions) and VPS34 C-terminal helix, suggesting that complexes I and II assume similar but distinct orientations on membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by HDX-MS data in Figure 6. The identification of additional protected regions in complex II (HL and AF2) compared to complex I is well-documented. The inference in C83 about distinct orientations is reasonable given the differential protection patterns, though direct structural evidence would be needed for definitive confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "The ALPS motif within the BATS domain is essential for complex I activity on membranes. Deletion of ALPS eliminates activity on DO base lipids and results in lower activity than VPS34 alone on high PS membranes, suggesting that non-catalytic subunits partially inhibit basal VPS34 activity in the absence of the ALPS motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by mutagenesis and activity assays in Figures 7B-C. The complete loss of activity with \u0394ALPS deletion on DO base lipids is clear. The surprising finding that complex I \u0394ALPS has lower activity than VPS34 alone (C89-C90) is well-documented and leads to a reasonable inference about inhibition, though the molecular mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The BATS domain can act as an autonomous membrane-interacting module that activates VPS34 activity. Fusion of BATS to UVRAG increases complex II activity 7-fold (full-length UVRAG) or 11-fold (truncated UVRAG), with both variants exceeding complex I activity, demonstrating that the BATS domain activates through increased membrane binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 are supported by activity assays in Figure 7D showing dramatic increases in complex II activity upon BATS fusion. The differential effects with full-length vs. truncated UVRAG (C93) suggest orientation effects. The inference that BATS acts autonomously (C97) is well-supported by the gain-of-function experiments, and consistency with prior binding studies (C95) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The Beclin 1 BARA domain contributes differentially to complexes I and II. Complex I activity depends primarily on the BATS domain with minor contributions from AF1 and no significant role for AF2 or HL. In contrast, complex II activity critically depends on all three BARA motifs (AF1, AF2, and HL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by systematic mutagenesis studies in Figures 8B-D. The differential requirements for BARA domain motifs between the two complexes are clearly demonstrated. The inferences in C101-C102 about relative dependencies are well-justified by the data, though the molecular basis for these differences requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Phosphoinositides PI(4)P and PI(4,5)P2 have modest effects on VPS34 complex activities. Complex I is activated ~1.8-fold by PI(4)P and ~1.2-fold by PI(4,5)P2, while complex II is modestly activated by PI(4)P (~1.7-fold) but unaffected by PI(4,5)P2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by GUV assays in Figures 9D-G. The quantitative measurements show consistent but modest effects compared to the dramatic effects of lipid unsaturation, charge, and curvature. The differential response to PI(4,5)P2 between complexes is clearly demonstrated, though the biological significance of these modest effects in vitro is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C166"
+    ],
+    "result": "Three physicochemical membrane parameters\u2014lipid unsaturation (of both substrate and background lipids), negative charge, and membrane curvature\u2014are critical for activation of both VPS34 complexes I and II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching result synthesizes findings from multiple experimental approaches (claims C3-C5 from abstract, C166 from discussion). The systematic examination of each parameter with appropriate controls and quantitative measurements throughout the manuscript (Figures 2-4) provides strong support. This represents the central finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C168"
+    ],
+    "result": "Structural determinants enable differential membrane binding and activity of complexes I and II. The BATS domain makes complex I more active than complex II, while the Beclin1 BARA domain contributes to both complexes but with membrane-interacting loops being critical for complex II and having only a minor role for complex I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result integrates findings from HDX-MS (Figures 5-6) and mutagenesis studies (Figures 7-8). Claims C6-C8 and C168 are well-supported by converging lines of evidence. The differential roles of shared and unique structural elements in determining complex-specific activities represent a key mechanistic insight, though some molecular details remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C115",
+      "C117",
+      "C118"
+    ],
+    "result": "The potent effects of lipid unsaturation on VPS34 complexes, combined with compartment-specific lipid compositions, suggest an important mechanism for modulating VPS34 activity on different cellular organelles. The preference for high curvature and lipid unsaturation may contribute to the lack of activity at the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112, C115, C117, and C118 represent speculative interpretations of the in vitro findings. While C112 is a reasonable inference from the data showing VPS34 alone is inactive on DO base lipids while complexes are active, and C117 is supported by experimental data, claims C115 and C118 are speculations about cellular function that lack direct experimental validation in the manuscript. The in vitro findings are compelling but extrapolation to cellular contexts requires additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Human complex I is considerably more active than complex II on DO base lipids, contrasting with yeast VPS34 complexes where complex II was more active. This difference likely arises from extensive sequence differences between human and yeast Atg14, particularly in the BATS region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C133 is supported by experimental data (Figure 1C) and comparison to prior work (Rostislavleva et al., 2015). The speculation in C134 about sequence differences is reasonable given the known structural divergence, though direct experimental validation of this hypothesis is not provided. The contrast with yeast complexes highlights species-specific differences in VPS34 regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The activity differences between complexes I and II reflect lower membrane affinity of complex II, which may be compensated in cells by binding partners like Rab5. Activities equalize on membranes with increased PS, consistent with prior reports of identical activities on 50% PS/50% PI membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137 and C139-C140 are supported by experimental data (Figures 1C-D, 4G) and consistent with prior work (Brier et al., 2019). The speculation in C138 about Rab5 compensation is reasonable but lacks direct experimental support in this manuscript. The convergence of activities at high PS provides important mechanistic insight into how membrane properties differentially affect the two complexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The ATG14L subunit has complex effects on VPS34 activity: it is intrinsically inhibitory but this is overcome by BATS-mediated membrane binding. ATG14L enhances VPS34 kinase domain membrane association and alters Beclin 1 interactions such that AF1 has a role in both complexes while AF2 and HL are important only for complex II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C146 integrate findings from multiple experiments (Figures 5-8). The inference about intrinsic inhibition (C141) is supported by the \u0394ALPS data, and the analogy to H-Ras-PI3K\u03b1 (C142) provides conceptual support. Claims C143-C145 are reasonable inferences from HDX-MS and mutagenesis data, while C146 is directly supported by Figure 8. The model is internally consistent though some mechanistic details remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C113",
+      "C114"
+    ],
+    "result": "The importance of lipid unsaturation for VPS34 activity is supported by cellular observations: 40-85% of PI exists as SAPI in mammalian cells, depletion of enzymes incorporating PUFAs decreases PI(3)P content in C. elegans, stearoyl-CoA desaturase is important for autophagy, and autophagic membranes in yeast contain ~60% lipids with two unsaturated acyl chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 cite prior literature to provide biological context for the in vitro findings. These are well-established observations from other studies that support the physiological relevance of the authors' findings about lipid unsaturation. However, these claims represent prior work rather than new findings from this manuscript.",
+    "result_type": "MINOR"
+  }
+]

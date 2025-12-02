@@ -1,0 +1,991 @@
+{
+  "submission": {
+    "id": "50a2abec-719e-4f4f-bcf5-6f904a24d22f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:49:37.398179Z",
+    "updated_at": "2025-12-02T18:49:37.398179Z"
+  },
+  "content": [
+    {
+      "id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "submission_id": "50a2abec-719e-4f4f-bcf5-6f904a24d22f",
+      "content_type": "manuscript",
+      "content_text": "# A mechanism for hunchback promoters to readout morphogenetic positional information in less than a minute\n\n## Authors\n\n- Jonathan Desponds<sup>1</sup> ([ORCID: 0000-0001-7112-3217](https://orcid.org/0000-0001-7112-3217))\n- Massimo Vergassola<sup>1</sup> ([ORCID: 0000-0002-7212-8244](https://orcid.org/0000-0002-7212-8244)) \u2020\n- Aleksandra M Walczak<sup>2</sup> ([ORCID: 0000-0002-2686-5702](https://orcid.org/0000-0002-2686-5702))\n\n### Affiliations\n\n1. Physics Department, University of California, San Diego La Jolla United States\n2. Laboratoire de Physique, Ecole Normale Sup\u00e9rieure, PSL Research University, CNRS, Sorbonne Universit\u00e9 Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell fate decisions in the fly embryo are rapid: hunchback genes decide in minutes whether nuclei follow the anterior/posterior developmental blueprint by reading out positional information in the Bicoid morphogen. This developmental system is a prototype of regulatory decision processes that combine speed and accuracy. Traditional arguments based on fixed-time sampling of Bicoid concentration indicate that an accurate readout is impossible within the experimental times. This raises the general issue of how speed-accuracy tradeoffs are achieved. Here, we compare fixed-time to on-the-fly decisions, based on comparing the likelihoods of anterior/posterior locations. We found that these more efficient schemes complete reliable cell fate decisions within the short embryological timescales. We discuss the influence of promoter architectures on decision times and error rates, present concrete examples that rapidly readout the morphogen, and predictions for new experiments. Lastly, we suggest a simple mechanism for RNA production and degradation that approximates the log-likelihood function.\n\n## Introduction\n\nFrom development to chemotaxis and immune response, living organisms make precise decisions based on limited information cues and intrinsically noisy molecular processes, such as the readout of ligand concentrations by specialized genes or receptors (Houchmandzadeh et al., 2002; Perry et al., 2012; Takeda et al., 2012; Marcelletti and Katz, 1992; Bowsher and Swain, 2014). Selective pressure in biological decision-making is often strong, for reasons that range from predator evasion to growth maximization or fast immune clearance. In development, early embryogenesis of insects and amphibians unfolds outside of the mother, which arguably imposes selective pressure for speed to limit the risks of predation and infection by parasitoids (O'Farrell, 2015). In Drosophila embryos, the first 13 cycles of DNA replication and mitosis occur without cytokinesis, resulting in a multinucleated syncytium containing about 6000 nuclei (O'Farrell et al., 2004). Speed is witnessed both by the rapid and synchronous cleavage divisions observed over the cycles, and the successive fast decisions on the choice of differentiation blueprints, which are made in less than 3 min (Lucas et al., 2018).\n\nIn the early fly embryo, the map of the future body structures is set by the segmentation gene hierarchy (N\u00fcsslein-Volhard et al., 1984; Houchmandzadeh et al., 2002; Jaeger, 2011). The definition of the positional map starts by the emergence of two (anterior and posterior) regions of distinct hunchback (hb) expression, which are driven by the readout of the maternal Bicoid (Bcd) morphogen gradient (Houchmandzadeh et al., 2002, Figure 1a). hunchback spatial profiles are sharp and the variance in hunchback expression of nuclei at similar positions along the AP axis is small (Desponds et al., 2016; Lucas et al., 2018). Taken together, these observations imply that the short-time readout is accurate and has a low error. Accuracy ensures spatial resolution and the correct positioning of future organs and body structures, while low errors ensure reproducibility and homogeneity among spatially close nuclei. The amount of positional information available at the transcriptional locus is close to the minimal amount necessary to achieve the required precision (Gregor et al., 2007b; Porcher et al., 2010; Garcia et al., 2013; Petkova et al., 2019). Furthermore, part of the morphogenetic information is not accessible for reading by downstream mechanisms (Tikhonov et al., 2015), as information is channeled and lost through subsequent cascades of gene activity. In spite of that, by the end of nuclear cycle 14 the positional information encoded in the gap gene readouts is sufficient to correctly predict the position of each nucleus within 2% of the egg length (Petkova et al., 2019). Adding to the time constraints, mitosis resets the binding of transcription factors (TF) during the phase of synchronous divisions (Lucas et al., 2018), suggesting that the decision about the nuclei\u2019s position is made by using information accessible within one nuclear cycle. Experiments additionally show that during the nuclear cycles 10\u201313 the positional information encoded by the Bicoid gradient is read out by hunchback promoters precisely and within 3 min (Lucas et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49758/elife-49758-fig1-v2.jpg)\n\n**Figure 1.:** (a) The early Drosophila embryo and the Bicoid morphogen gradient. The cartoon shows a projection on one plane of the embryo at nuclear cycles 10\u201313, when nuclei (red dots) have migrated to the surface of the embryo (O'Farrell, 2015). The activity of the hunchback gene decreases along the Anterior-Posterior (AP) axis. The green dots represent active transcription loci. The average concentration L(x) of maternal Bicoid decreases exponentially along the AP axis by about a factor five from the anterior (left) to the posterior (right) ends. Between the blue lines lies the boundary region. Its width \u03b4x is 2% of the egg length. hunchback activity decreases along the AP axis and undergoes a sharp drop around the boundary region. The half-maximum Bcd concentration position in WT embryos is shifted by about 5% of the egg-length toward the anterior with respect to the mid-embryo position (Struhl et al., 1992). We consider this hunchback half maximum expression as a reference point when describing the AP axis of the embryo. The hunchback readout defines the cell fate decision whether each nucleus will follow an anterior or the posterior gene expression program. (b) A typical promoter structure contains six binding sites for Bicoid molecules present at concentration L. $k=6$ indicates that the gene is active only when all binding sites are occupied, defining an all-or-nothing promoter architecture. Other forms and details of the promoter structure will be discussed in Figure 2 and Figure 3. (c) The average number of nuclei making a mistake in the decision process as a function of the egg length position at cycle 11. For a fixed-time decision process completed within $T=270$ seconds (and $k=6$, that\u00a0is, all-or-nothing activation scheme), a large number of nuclei make the wrong decision (full blue bars). $T=270$ seconds is the duration of the interphase of nuclear cycle 11 (Tran et al., 2018). For nuclei located in the boundary region either answer is correct so that we leave these bars unfilled. Most errors happen close to the boundary, as intuitively expected. See Appendix 1 for a detailed description of how the error is computed for the fixed-time decision strategy. (d) The time needed to reach the standard error probability of 32% (Gregor et al., 2007a) for the same process as in panel c (see also the subsection 'How many nuclei make a mistake?\u2019) as a function of egg length position. Decisions are easy away from the center but the time required for an accurate decision soars close to the boundary up to 50 min \u2013 much longer than the embryological times. Parameters for panels (c) and (d) are six binding sites that bind and unbind Bicoid without cooperaivity and a diffusion limited on rate per site $\\mu_{max}\u2062L=0.124\u2062s^{-1}$, and an unbinding rate per site $\u03bd_{1}=0.0154\u2062s^{-1}$ that lead to half activation in the boundary region.\n\nEffective speed-accuracy tradeoffs are not specific to developmental processes, but are shared by a large number of sensing processes (Rinberg et al., 2006; Heitz and Schall, 2012; Chittka et al., 2009). This generality has triggered interest in quantitative limits and mechanisms for accuracy. Berg and Purcell derived the seminal tradeoff between integration time and readout accuracy for a receptor evaluating the concentration of a ligand (Berg and Purcell, 1977) based on its average binding occupancy. Later studies showed that this limit takes more complex forms when rebinding events of detached ligands (Bialek and Setayeshgar, 2005; Kaizu et al., 2014) or spatial gradients (Endres and Wingreen, 2008) are accounted for. The accuracy of the averaging method in Berg and Purcell, 1977 can be improved by computing the maximum likelihood estimate of the time series of receptor occupancy for a given model (Endres and Wingreen, 2009; Mora and Wingreen, 2010). However, none of these approaches can result in a precise anterior-posterior (AP) decision for the hunchback promoter in the short time of the early nuclear cycles, which has led to the conclusion that there is not enough time to apply the fixed-time Berg-Purcell strategy with the desired accuracy (Gregor et al., 2007a). Additional mechanisms to increase precision (including internuclear diffusion) do yield a speed-up (Erdmann et al., 2009; Aquino et al., 2016), yet they are not sufficient to meet the 3-min challenge. The issue of the embryological speed-accuracy tradeoff remains open.\n\nThe approaches described above are fixed-time strategies of decision-making, that\u00a0is, they assume that decisions are made at a pre-defined deterministic time T that is set long enough to achieve the desired level of error and accuracy. As a matter of fact, fixing the decision time is not optimal because the amount of available information depends on the specific statistical realization of the noisy signal that is being sensed. The time of decision should vary accordingly and therefore depend on the realization. This intuition was formalized by A. Wald by his Sequential Probability Ratio Test (SPRT) (Wald, 1945a). SPRT achieves optimality in the sense that it ensures the fastest decision strategy for a given level of expected error. The adaption of the method to biological sensing posits that the cell discriminates between two hypothetical concentrations by accumulating information through binding events, and by computing on the fly the ratio of the likelihoods (or appropriate proxies) for the two concentrations to be discriminated (Siggia and Vergassola, 2013). When the ratio \u2018strongly\u2019 favors one of the two hypotheses, a decision is triggered. The strength of the evidence required for decision-making depends on the desired level of error. For a given level of precision, the average decision time can be substantially shorter than for traditional averaging algorithms (Siggia and Vergassola, 2013). SPRT has also been proposed as an efficient model of decision-making in the fields of social interactions and neuroscience (Gold and Shadlen, 2007; Marshall et al., 2009) and its connections with non-equilibrium thermodynamics are discussed in Rold\u00e1n et al., 2015.\n\nWald\u2019s approach is particularly appealing for biological concentration readouts since many of them, including the anterior-posterior decision faced by the hunchback promoter, appear to be binary decisions. Our first goal here is to specifically consider the paradigmatic example of the hunchback promoter and elucidate the degree of speed-up that can be achieved by decisions on the fly. Second, we investigate specific implementations of the decision strategy in the form of possible hunchback promoter architectures. We specifically ask how cooperative TF binding affects the sensing limits. Our results have implications beyond fly development and are generally relevant to regulatory processes. We identify promoter architectures that, by approximating Wald\u2019s strategy, do satisfy several key experimental constraints and reach the experimentally observed level of accuracy of hunchback expression within the (apparently) very stringent time limits of the early nuclear cycles.\n\n## Results\n\n### Methodological setup\n\n#### The decision process of the anterior vs posterior hunchback expression\n\nThe problem faced by nuclei in their decision of anterior vs posterior developmental fate is sketched in Figure 1a. By decision we mean that nuclei commit to a cell fate through a process that is mainly irreversible leading to one of two classes of cell states that correspond to either the anterior or the posterior regions of the embryo, based on positional information acquired through gene activity. We limit our investigation of promoter architectures to the six experimentally identified Bicoid-binding sites (Figure 1b). We do not consider the known Hunchback-binding sites because before nuclear cycle 13 there is little time to produce sufficient concentrations of zygotic proteins for a significant feedback effect and the measured maternal hunchback profile has not been shown to alter anterior-posterior decision-making. Following the observation that Bcd readout is the leading factor in nuclei fate determination (Ochoa-Espinosa et al., 2009), we also neglect the role of other maternal gradients, for\u00a0example Caudal, Zelda or Capicua (Jim\u00e9nez et al., 2000; Sokolowski et al., 2012; Tran et al., 2018; Lucas et al., 2018), since the readout of these morphogens can only contribute additional information and decrease the decision time. We focus on the proximal promoter since no active enhancers have been identified for the hunchback locus in nuclear cycles 11\u201313 (Perry et al., 2011). Our results can be generalized to enhancers (Hannon et al., 2017), the addition of which only further improves the speed-accuracy efficacy, as we explicitly show for a simple model of Bicoid activated enhancers in the section \u2019Joint dynamics of Bicoid enhancer and promoter\u2019. Since our goal is to show that accurate decisions can be made rapidly, we focus on the worst case decision-making scenario: the positional information (Wolpert et al., 2015) is gathered through a readout of the Bicoid concentration only, and the decision is assumed to be made independently in each nucleus. Having additional information available and/or coupling among nuclei can only strengthen our conclusion.\n\nThe profile of the average concentration of the maternal morphogen Bicoid $L\u2062(x)$ is well represented by an exponential function that decreases from the anterior toward the posterior of the embryo\u2009: $L\u2062(x)=L_{0}\u2062e^{-5\u2062(x-x_{0})/100}$, where x is the position along the anterior-posterior axis measured in terms of percentage egg-length (EL), and x0 is the position of half maximum hb expression corresponding to L0 Bcd concentration. The decay length $\\lambda=5$ corresponds to 20% EL (Gregor et al., 2007a). Nuclei convert the graded Bicoid gradient into a sharp border of hunchback expression (Figure 1a), with high and low expressions of the hunchback promoter at the left and the right of the border respectively (Driever and N\u00fcsslein-Volhard, 1988; Struhl et al., 1992; Crauk and Dostatni, 2005; Gregor et al., 2007b; Houchmandzadeh et al., 2002; Porcher et al., 2010; Garcia et al., 2013; Lucas et al., 2013; Tran et al., 2018; Lucas et al., 2018). We define the border region of width \u03b4x symmetrically around x0 by the dashed lines in Figure 1a. \u03b4x is related to the positional resolution (Erdmann et al., 2009; Tran et al., 2018) of the anterior-posterior decision: it is the minimal distance measured in percentages of egg-length between two nuclei\u2019s positions, at which the nuclei can distinguish the Bcd concentrations. Although this value is not known exactly, a lower bound is estimated as $\\delta_{x}\u223c2%$ EL (Gregor et al., 2007a), which corresponds to the width of one nucleus.\n\nWe denote the Bcd concentration at the anterior (respectively posterior) boundary of the border region by L1 (respectively L2) (see Figure 1a). At each position x, nuclei compare the probability that the local concentration $L\u2062(x)$ is greater than L1 (anterior) or smaller than L2 (posterior). By using current best estimates of the parameters (see Appendix 1), a classic fixed-time-decision integration process and an integration time of 270 s (the duration of the interphase in nuclear cycle 11 [Tran et al., 2018]), we compute in Figure 1c the probability of error per nucleus for each position in the embryo (see Appendix 2 for details). As expected, errors occur overwhelmingly in the vicinity of the border region, where the decision is the hardest (Figure 1c). For nuclei located within the border region, both anterior and posterior decisions are correct since the nuclei lie close to both regions. It follows that, although the error rate can formally be computed in this region, the errors do not describe positional resolution mistakes and do not contribute to the total error (white zone in Figure 1c).\n\nIn view of Figure 1c and to simplify further analysis we shall focus on the boundaries of the border region\u2009: each nucleus discriminates between hypothesis 1 \u2013 the Bcd concentration is $L=L_{1}$, and hypothesis 2 \u2013 the Bcd concentration is $L=L_{2}$. To achieve a positional resolution of $\\delta_{x}=2%$ EL, nuclei need to be able to discriminate between differences in Bcd concentrations on the order of 10%. In addition to the variation in Bcd concentration estimates that are due to biological precision, concentration estimated using many trials follows a statistical distribution. The central limit theorem suggests that this distribution is approximately Gaussian. This assumption means that the probability that the Bcd concentration estimate deviates from the actual concentration by more than the prescribed 10% positional resolution is 32% (see the subsection 'How many nuclei make a mistake?\u2019 for variations on the value and arguments on the error rate). In Figure 1d, we show that the time required under a fixed-time-decision strategy for a promoter with six binding sites to estimate the Bcd concentration within the 32% Gaussian error rate (Gregor et al., 2007a) close to the boundary is much longer than 270 s, $\u224340$ minutes (see Appendix 2 for details of the calculation). The activation rule for the promoter architecture in the figure is that all binding sites need to be bound for transcription initiation.\n\n#### Identifying fast decision promoter architectures\n\n##### The promoter model\n\nWe model the hb promoter as six Bcd binding sites (Schr\u00f6der et al., 1988; Driever et al., 1989; Struhl et al., 1989; Ochoa-Espinosa et al., 2005) that determine the activity of the gene (Figure 2a). Bcd molecules bind to and unbind from each of the $i=1,\u2026,6$ sites with rates \u03bci and \u03bdi, which are allowed to be different for each site. For simplicity, the gene can only take two states\u2009: either it is silenced (OFF) and mRNA is not produced, or the gene is activated (ON) and mRNA is produced at full speed. While models that involve different levels of polymerase loading are biologically relevant and interesting, the simplified model allows us to gain more intuition and follows the worst-case scenario logic that we discussed in the previous subsection \u2019The decision process of the anterior vs posterior hunchback expression\u2019. The same remark applies for the wide variety of promoter architectures considered in previous works (Estrada et al., 2016; Tran et al., 2018). In particular, we assume that only the number of sites that are bound matters for gene activation (and not the specific identity of the sites). Such architectures are again a subset of the range of architectures considered in Estrada et al., 2016; Tran et al., 2018.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49758/elife-49758-fig2-v2.jpg)\n\n**Figure 2.:** (a). Using six Bicoid binding sites, the promoter decides between two hypothetical Bcd concentrations $L=L_{1}$ and $L=L_{2}$, given the actual (unknown) concentration L in the nucleus. The number of occupied Bicoid sites fluctuates with time (b) and we assume the gene is expressed (c) when the number of occupied Bicoid binding sites on the promoter is $\\geqk$ (green dashed line, here $k=2$). The gene activity defines a non-Markovian telegraph process. The ratio of the likelihoods that the time trace of this telegraph process is generated by $L=L_{1}$\u00a0vs\u00a0$L=L_{2}$ is the log-likelihood ratio used for decision-making (d). The log-likelihood ratio undergoes random excursions until it reaches one of the two decision boundaries (K, \u2212K). In d. the actual concentration is $L=L_{1}$ and the log-likelihood ratio hits the upper barrier and makes the right decision. When $L=L_{2}$, less Bicoid-binding sites are occupied (e) and the gene is less likely to be expressed (f), resulting in a negative drift in the log-likelihood ratio, which directs the random walk to the lower boundary \u2212K and the $L=L_{2}$ decision (g). We consider that all six binding sites bind Bicoid independently and are identical with binding rate per site $\\mu_{max}\u2062L=0.07\u2062s^{-1}$ and unbinding rate per site $\u03bd_{1}=0.08\u2062s^{-1}$, $e=0.2$, $k=2$, $L=L_{1}=5.88\u2062\\mu\u2062m^{-3}$ for panels (b, c, d) and $L=L_{2}=5.32\u2062\\mu\u2062m^{-3}$ (e, f, g).\n\nThe dynamics of our model is a Markov chain with seven states with probability Pi corresponding to the number of sites occupied: from all sites unoccupied (probability P0) to all six sites bound by Bcd molecules (probability P6). The minimum number k of bound Bicoid sites required to activate the gene divides this chain into the two disjoint and complementary subsets of active states ($P_{ON}=\\sum_{i=k}^{6}P_{i}$, for which the gene is activated) and inactive states ($P_{OFF}=\\sum_{i=0}^{k-1}P_{i}$, for which the gene is silenced) as illustrated in Figure 2b and d.\n\nAs Bicoid ligands bind and unbind the promoter (Figure 2b), the gene is successively activated and silenced (Figure 2c). This binding/unbinding dynamics results in a series of OFF and ON activation times that constitute all the information about the Bcd concentration available to downstream processes to make a decision. We note that the idea of translating the statistics of binding-unbinding times into a decision remains the same as in the Berg-Purcell approach, where only the activation times are translated into a decision (and not the deactivation times). The promoter architecture determines the relationship between Bcd concentration and the statistics of the ON-OFF activation time series, which makes it a key feature of the positional information decision process. Following (Siggia and Vergassola, 2013), we model the decision process as a Sequential Probability Ratio Test (SPRT) based on the time series of gene activation. At each point in time, SPRT computes the likelihood P of the observed time series under both hypotheses $P\u2062(L_{1})$ and $P\u2062(L_{2})$ and takes their ratio\u2009: $R\u2062(t)=P\u2062(L_{1})/P\u2062(L_{2})$. The logarithm of $R\u2062(t)$ undergoes stochastic changes until it reaches one of the two decision threshold boundaries K or \u2212K (symmetric boundaries are used here for simplicity) (Figure 2d). The decision threshold boundaries K are set by the error rate e for making the wrong decision between the hypothetical concentrations\u2009: $K=log\u2061((1-e)/e)$ (see Siggia and Vergassola, 2013 and Appendix 3). The choice of K or e depends on the level of reproducibility desired for the decision process. We set $K\u22430.75$, corresponding to the widely used error rate $e\u22430.32$ of being more than one standard deviation away from the mean of the estimate for the concentration assumed to be unbiased in a Gaussian model (see the subsection \u2019The decision process of the anterior vs posterior hunchback expression\u2019). The statistics of the fluctuations in likelihood space are controlled by the values of the Bcd concentrations: when Bcd concentration is low, small numbers of Bicoid ligands bind to the promoter (Figure 2e) and the hb gene spends little time in the active expression state (Figure 2f), which leads to a negative drift in the process and favors the lower one of the two possible concentrations (Figure 2g).\n\n##### Mean decision time: connecting drift-diffusion and Wald\u2019s approaches\n\nIn this section, we develop new methods to determine the statistics of gene switches between the OFF and ON expression states. Namely, by relating Wald\u2019s approach (Wald, 1945a) with drift-diffusion, we establish the equality between the drift and diffusion coefficients in decision making space for difficult decision problems, that\u00a0is, when the discrimination is hard, we elucidate the reason underlying the equality. That allows us to effectively determine long-term properties of the likelihood log-ratio and compute mean decision times for complex architectures.\n\nA gene architecture consists of N binding sites and is represented by N\u00a0+\u00a01 Markov states corresponding to the number of bound TF, and the rates at which they bind or unbind (Figure 3a). For a given architecture, the dynamics of binding/unbinding events and the rules for activation define the two probability distributions $P_{OFF}\u2062(t,L)$ and $P_{ON}\u2062(s,L)$ for the duration of the OFF and ON times, respectively (Figure 3b). The two series are denoted ${t_{i}}_{1\\leqi\\leqJ^{+}}$ and ${s_{j}}_{1\\leqj\\leqJ^{-}}$, where $J^{+}$ and $J^{-}$ are the number of switching events in time t from OFF to ON and vice versa. For those cases where the two concentrations L1 and L2 are close and the discrimination problem is difficult (which is the case of the Drosophila embryo), an accurate decision requires sampling over many activation and deactivation events to achieve discrimination. The logarithm of the ratio $R\u2062(t)$ can then be approximated by a drift\u2013diffusion equation: $d\u2062log\u2061R\u2062(t)/d\u2062t=V+\\sqrt{2\u2062D}\u2062\u03b7$, where V is the constant drift, that\u00a0is, the bias in favor of one of the two hypotheses, D is the diffusion constant and $\u03b7$ a standard Gaussian white noise with zero mean and delta-correlated in time (Wald, 1945a; Siggia and Vergassola, 2013). The decision time for the case of symmetric boundaries $K=-K_{-}=K_{+}$, is given by the mean first-passage time for this biased random walk in the log-likelihood space (Redner, 2001; Siggia and Vergassola, 2013):\n\n$$\n\u27e8T\u27e9=\\frac{K\u2062tanh\u2061(V\u2062K/2\u2062D)}{V}.\n$$\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49758/elife-49758-fig3-v2.jpg)\n\n**Figure 3.:** (a) The dynamics of the six Bcd binding site promoter is represented by a seven state Markov chain where the state number indicates the number of occupied Bicoid-binding sites. The boxes indicate the states in which the gene is expressed for the 2-or-more activation rule (red box and red in panels b-d) where the gene is active when 2-or-more TF are bound and the 4-or-more activation rule (blue box and blue in panels b-d) where the gene is active when 4-or-more TF are bound. (b) The dynamics of TF binding translates into bursting and inactive periods of gene activity. The OFF and ON time distributions are different for the two hypothetical concentrations (blue boxes for $k=4$ and red boxes for $k=2$). The Kullback-Leibler divergence between the distributions for the two hypothetical concentrations ($D_{K\u2062L}$) sets the decision time and is related to the difference in the area below the two distributions. For the $k=4$ activation rule, the OFF time distributions are similar for the two hypothetical concentrations but the ON times distributions are very different. The ON times are more informative for the $k=4$ activation rule than the $k=2$ activation rule (c) The drift V of the log-likelihood ratio characterizes the deterministic bias in the decision process. The differences in (b) translate into larger drift for $k=4$ for the same binding/unbinding dynamics. (d) The distribution of decision times (calculated as the first-passage time of the log-likelihood random walk) decays exponentially for long times. Higher drift leads to on average faster decisions than for the $k=4$ activation rule (mean decision times are shown in dashed lines). For all panels the six binding sites are independent and identical with $L=L_{1}=5.88\u2062\\mu\u2062m^{-3}$, $L_{2}=5.32\u2062\\mu\u2062m^{-3}$, $e=0.1$, $\\mu_{max}\u2062L=0.14\u2062s^{-1}$ and $\u03bd=0.08\u2062s^{-1}$ for all binding sites.\n\nNote that in this approximation all the details of the promoter architecture are subsumed into the specific forms of the drift V and the diffusion D.\n\nDrift. We assume for simplicity that the time series of OFF and ON times are independent variables (when this assumption is relaxed, see Appendix 8). This assumption is in particular always true when gene activation only depends on the number of bound Bicoid molecules. Under these assumptions, we can apply Wald\u2019s equality (Wald, 1945b; Durrett, 2010) to the log-likelihood ratio, $log\u2061R\u2062(t)$. Wald considered the sum of a random number M of independent and identically distributed (i.i.d.) variables. The equality that he derived states that if M is independent of the outcome of variables with higher indices $(X_{i})_{i>M}$ (i.e. M is a stopping time), then the average of the sum is the product $\u27e8M\u27e9\u2062\u27e8X_{i}\u27e9$.\n\nWald\u2019s equality applies to our likelihood sum ($\\sum_{i}^{M}log\u2061R_{i}$ of the likelihoods, where M is the number of ON and OFF times before a given (large) time t). We conclude the drift of the log-likelihood ratio, $log\u2061R\u2062(t)$, is inversely proportional to $(\\tau_{ON}+\\tau_{OFF})$, where $\\tau_{ON}$ is the mean of the distribution of ON times $P_{ON}\u2062(t,L)$ and $\\tau_{OFF}$ is the mean of the distribution of OFF times $P_{OFF}\u2062(s,L)$. The term $(\\tau_{ON}+\\tau_{OFF})$ determines the average speed at which the system completes an activation/deactivation cycle, while the average $\u27e8log\u2061R_{i}\u27e9$ describes how much deterministic bias the system acquires on average per activation/deactivation cycle. The latter can be re-expressed in terms of the Kullback-Leibler divergence $D_{K\u2062L}(f||g)=\\int_{0}^{\u221e}dt^{\u2032}f(t^{\u2032})log(f(t^{\u2032})/g(t^{\u2032}))$ between the distributions of the OFF and ON times calculated for the actual concentration L and each one of the two hypotheses, L1 and L2\u2009:\n\n$$\nV=\\frac{1}{(\\tau_{ON}+\\tau_{OFF})}[D_{KL}(P_{OFF}(.,L)||P_{OFF}(.,L_{2}))\u2212D_{KL}(P_{OFF}(.,L)||P_{OFF}(.,L_{1}))+D_{KL}(P_{ON}(.,L)||P_{ON}(.,L_{2}))\u2212D_{KL}(P_{ON}(.,L)||P_{ON}(.,L_{1}))].\n$$\n\nEquation 2 quantifies the intuition that the drift favors the hypothetical concentration with the time distribution which is the closest to that of the real concentration L (Figure 3b).\n\nDiffusivity\u2009: Why it is more involved to calculate and how we circumvent it. While the drift has the closed simple form in Equation 2, the diffusion term is not immediately expressed as an integral. The qualitative reason is as follows. Computing the likelihood of the two hypotheses requires computing a sum where the addends are stochastic (ratios of likelihoods) and the number of terms is also stochastic (the number of switching events). These two random variables are correlated: if the number of switching events is large, then the times are short and the likelihood is probably higher for large concentrations. While the drift is linear in the above sum (so that the average of the sum can be treated as shown above), the diffusivity depends on the square of the sum. The diffusivity involves then the correlation of times and ratios (Carballo-Pacheco et al., 2019), which is harder to obtain as it depends a priori on the details of the binding site model (see the subsection \u2019Equality between drift and diffusivity\u2019 and the subsection \u2019When are correlations between the times of events leading to decision important?\u2019 of Appendix 3 for details).\n\nWe circumvent the calculation of the diffusivity by noting that the same methods used to derive Equation (1) also yield the probability of first absorption at one of the two boundaries, say +K (see the subsection \u2019Equality between drift and diffusivity\u2019 of Appendix 3):\n\n$$\n\u03a0_{K}=\\frac{e^{VK/D}}{1+e^{\\frac{KV}{D}}}.\n$$\n\nBy imposing $\u03a0_{K}=1-e$, we obtain $V\u2062K/D=log\u2061((1-e)/e)$ and the comparison with the expression of $K=log\u2061((1-e)/e)$ leads to the equality $D=V$.\n\nThe above equality is expected to hold for difficult decisions only. Indeed, drift-diffusion is based on the continuity of the log-likelihood process and Wald\u2019s arguments assume the absence of substantial jumps in the log-likelihood over a cycle. In other words, the two approaches overlap if the hypotheses to be discriminated are close. For very distinct hypotheses (easy discrimination problems), the two approaches may differ from the actual discrete process of decision and among themselves. We expect then that $V=D$ holds only for hypotheses that are close enough, which is verified by explicit examples (see the subsection \u2019Equality between drift and diffusivity\u2019 of Appendix 3). The Appendix subsection also verifies $V=D$ by expanding the general expression of V and D for close hypotheses. The origin of the equality is discussed below.\n\nUsing $V=D$, we can reduce the general formula Equation (1) to\n\n$$\n\u27e8T\u27e9=\\frac{K\u2062tanh\u2061(K/2)}{V}=\\frac{K}{V}\u2062(1-2\u2062e),\n$$\n\nwhich is formula 4.8 in Wald, 1945a and it is the expression that we shall be using (unless stated otherwise) in the remainder of the paper.\n\nThe additional consequence of the equality $V=D$ is that the argument $V\u2062K/2\u2062D$ of the hyperbolic tangent in Equation (1) is $\u2243K/2=ln\u2061(\\sqrt{(1-e)/e})$. It follows that for any problem where the error $e\u226a1$, the argument of the hyperbolic tangent is large and the decision time is weakly dependent on deviations to $V=D$ that occur when the two hypotheses differ substantially. A concrete illustration is provided in the subsection \u2019The first passage time to decision\u2019 of Appendix 3.\n\nSingle binding site example. As an example of the above equations, we consider the simplest possible architecture with a single binding site ($N=1$), where the gene activation and de-activation processes are Markovian. In this case, the de-activation rate \u03bd is independent of TF concentration and the activation rate is exponentially distributed $P_{OFF}\u2062(L,t)=k\u2062L\u2062e^{k\u2062L\u2062t}$. We can explicitly calculate the drift $V=\u03bd\u2062k\u2062L/(\u03bd+k\u2062L)\u2062(log\u2061(L_{1}/L_{2})+(L_{2}-L_{1})/L)$ (Equation 2) and expand it for $L_{2}=L$ and $L_{1}=L+\\delta\u2062L$, at leading order in $\\delta\u2062L$. Inserting the resulting expression into Equation 4, we conclude that\n\n$$\n\u27e8T\u27e9=\\frac{\u03bd+kL}{\u03bdkL}\\frac{2KL^{2}}{\\deltaL^{2}}tanh\u2061(\\frac{K}{2}),\n$$\n\ndecreases with increasing relative TF concentration difference $\\delta\u2062L/L$ and gives a very good approximation of the complete formula (see Appendix 3\u2014figure 2a\u2013c with different values of $\\delta\u2062L/L$).\n\nEquations 2 and 4 greatly reduce the complexity of evaluating the performance of architectures, especially when the number of binding sites is large. Alternatively, computing the correlation of times and log-likelihoods would be increasingly demanding as the size of the gene architecture transfer matrices increase. As an illustration, Figure 3 compares the performance of different activation strategies\u2009: the 2-or-more rule ($k=2$), which requires at least two Bcd-binding sites to be occupied for hb promoter activation (Figure 3a\u2013d in blue), and the 4-or-more rule ($k=4$) (Figure 3a\u2013d in red) for fixed binding and unbinding parameters. Figure 3c shows that stronger drifts lead to faster decisions. The full decision time probability distribution is computed from the explicit formula for its Laplace transform (Siggia and Vergassola, 2013, Figure 3d). With the rates chosen for Figure 3, the $k=4$ rule leads to an ON time distribution that varies strongly with the concentration, making it easier to discriminate between similar concentrations: it results in a stronger average drift that leads to a faster decision than $k=2$ (Figure 3d).\n\nWhat is the origin of the $V=D$\u00a0equality? The special feature of the SPRT random process is that it pertains to a log-likelihood. This is at the core of the $V=D$ equality that we found above. First, note that the equality is dimensionally correct because log-likelihoods have no physical dimensions so that both V and D have units of $t\u2062i\u2062m\u2062e^{-1}$. Second, and more important, log-likelihoods are built by Bayesian updating, which constrains their possible variations. In particular, given the current likelihoods $P_{1}\u2062(t)=\u03a0_{j}\u2062P_{ON}\u2062(t_{j},L_{1})\u2062P_{OFF}\u2062(s_{j},L_{1})$ and $P_{2}\u2062(t)=\u03a0_{j}\u2062P_{ON}\u2062(t_{j},L_{2})\u2062P_{OFF}\u2062(s_{j},L_{2})$ at time t for the two concentrations L1 and L2 and the respective probabilities $Q_{1}\u2062(t)=P_{1}/(P_{1}+P_{2})$ and $Q_{2}\u2062(t)=1-Q_{1}$ of the two hypotheses, it must be true that the expected values after a certain time $\u0394\u2062t$ remain the same if the expectation is taken with respect to the current $P_{i}\u2062(t)$ (see, e.g. Reddy et al., 2016). In formulae, this implies that the average variation of the probability $Q_{2}$ over a given time $\u0394\u2062t$ that is\n\n$$\n\u27e8\u0394Q_{2}\u27e9=Q_{1}\u27e8\u0394Q_{2}\u27e9_{1}+Q_{2}\u27e8\u0394Q_{2}\u27e9_{2},\n$$\n\nshould vanish (see the subsection 'Equality between drift and diffusivity\u2019 of Appendix 3 for a derivation). Here, $\u27e8\u0394\u2062Q_{2}\u27e9_{1}$ is the expected variation of $Q_{2}$ under the assumption that hypothesis 1 is true and $\u27e8\u0394\u2062Q_{2}\u27e9_{2}$ is the same quantity but under the assumption that hypothesis 2 is true. We notice now that $Q_{2}\u2062(t)=\\frac{1}{1+e^{\u2112\u2062(t)}}$, where $\u2112=log\u2061R$ is the log-likelihood, and that the drift-diffusion of the log-likelihood implies that $\u27e8\u0394\u2062\u2112\u27e9_{1}=V\u2062\u0394\u2062t$, $\u27e8\u0394\u2062\u2112\u27e9_{2}=-V\u2062\u0394\u2062t$ and $\u27e8(\u0394\u2062\u2112-\u27e8\u0394\u2062\u2112\u27e9_{1})^{2}\u27e9_{1}=\u27e8(\u0394\u2062\u2112-\u27e8\u0394\u2062\u2112\u27e9_{2})^{2}\u27e9_{2}=2\u2062D\u2062\u0394\u2062t$. By using that $d\u2062Q_{2}/d\u2062\u2112=-Q_{1}\u2062Q_{2}$ and $d^{2}\u2062Q_{2}/d\u2062\u2112^{2}=-Q_{1}\u2062Q_{2}\u2062(Q_{2}-Q_{1})$, we finally obtain that\n\n$$\n\u27e8\u0394Q_{2}\u27e9=Q_{1}Q_{2}(Q_{2}\u2212Q_{1})\u0394t[V\u2212D],\n$$\n\nand imposing $\u27e8\u0394\u2062Q_{2}\u27e9=0$ yields the equality $V=D$. Note that the above derivation holds only for close hypotheses, otherwise the velocity and the diffusivity under the two hypotheses do not coincide.\n\n##### Additional embryological constraints on promoter architectures\n\nIn addition to the requirements imposed by their performance in the decision process (green dashed line in Figure 4a), promoter architectures are constrained by experimental observations and properties that limit the space of viable promoter candidates for the fly embryo. A discussion about their possible function and their relation to downstream decoding processes is deferred to the final section.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49758/elife-49758-fig4-v2.jpg)\n\n**Figure 4.:** (a) Mean decision time for discriminating between two concentrations with $|L_{2}-L_{1}|=0.1\u2062L$ and $e=0.32$. Results shown for the fastest decision-making architectures for different activation rules and steepness constraints. For a given activation rule (k), we optimize over all values of ON rates $\\mu_{i}$ and OFF rates $\u03bd_{i}$ (see Figure 3a) within the diffusion limit ($0.124\u2062s^{-1}$ per site), constraining the steepness H and probability of nuclei to be active at the boundary (see the paragraph \u2019Additional embryological constraints on promoter architectures\u2019). The green lines denotes the interphase duration of nuclear cycle 11 and even for the strongest constraints ($H>5$) we identify architectures that make an accurate decision within this time limit. (b) The unbinding rates (blue) and binding rates (red) of the fastest decision-making architectures with $H>5$ \u2013 all these regulatory systems require cooperativity in TF binding to the promoter-binding sites. The dashed line on the ON rates plots shows the upper bound set by the diffusion limit. (c) Histogram of the probability distribution of the time spent in different Bcd-binding site occupancy states for the fastest decision-making architecture for $k=3$ and no constraints on the slope (blue), $H>4$ (red) and $H>5$ (black). (d) Probability distribution of the time spent bound to th DNA by Bicoid molecules for the fastest decision-making architecture with $H>5$ and $k=2$. Our prediction is compared to the exponential distribution with parameters fit by Mir et al., 2017, for the specific binding at the boundary. While the distributions are close, our simulated distribution is not exponential, as expected for the 6-binding site architecture. The non-exponential behavior in the experimental curve is likely masked by the convolution with non-specific binding. We use the boundary region concentration $L=5.6\u2062\\mu\u2062m^{-3}$ (see panel b, $k=2$ for rates).\n\nFirst, we require that the average probability for a nucleus to be active in the boundary region is equal to 0.5, as it is experimentally observed (Lucas et al., 2013; Figure 1a). This requirement mainly impacts and constrains the ratio between binding rates $\\mu_{i}$ and unbinding rates $\u03bd_{i}$.\n\nSecond, there is no experimental evidence for active search mechanisms of Bicoid molecules for its targets. It follows that, even in the best case scenario of a Bcd ligand in the vicinity of the promoter always binding to the target, the binding rate is equal to the diffusion limited arrival rate $\\mu_{max}\u2062L\u22430.124\u2062s^{-1}$ (Appendix 1). As a result, the binding rates $\\mu_{i}$ are limited by diffusion arrivals and the number of available binding sites: $\\mu_{i}\\leq\\mu_{max}\u2062(7-i)$ (black dashed line in Figure 4b), where L is the concentration of Bicoid. This sets the timescale for binding events. In Appendix 1, we explore the different measured values and estimates of parameters defining the diffusion limit $\\mu_{max}\u2062L$ and their influence on the decision time (see Appendix 1\u2014table 1 for all the predictions).\n\nThird, as shown in Figure 1, the hunchback response is sharp, as quantified by fitting a Hill function to the expression level vs position along the egg length. Specifically, the hunchback expression (in arbitrary units) $f_{hb}$ is well approximated as a function of the Bicoid concentration $L\u2062(x)$ by the Hill function $f_{hb}\u2062(x)\u2243L\u2062(x)^{H}/(L\u2062(x)^{H}+L_{0}^{H})$, where $L_{0}$ is the Bcd concentration at the half-maximum hb expression point and H is the Hill coefficient (Figure 1a). Experimentally, the measured Hill coefficient for mRNA expression from the WT hb promoter is $H\u223c7-8$(Lucas et al., 2018; Tran et al., 2018). Recent work (Tran et al., 2018) suggests that these high values might not be achieved by Bicoid-binding sites only. Given current parameter estimates and an equilibrium binding model, (Tran et al., 2018) shows that a Hill coefficient of 7 is not achievable within the duration of an early nuclear cycle ($\u22435$ min). That points at the contribution of other mechanisms to pattern steepness. Given these reasons (and the fact that we limit ourselves only to a model with six equilibrium Bcd-binding sites only), we shall explore the space of possible equilibrium promoter architectures limiting the steepness of our profiles to Hill coefficients $H\u223c4-5$.\n\n##### Numerical procedure for identifying fast decision-making architectures\n\nUsing Equations 2 and 4, we explore possible hb promoter architectures and activation rules to find the ones that minimize the time required for an accurate decision, given the constraints listed in the paragraph \u2018Additional embryological constraints on promoter architectures\u2019. We optimize over all possible binding rates $(\\mu_{i})_{1\\leqi\\leq6}$ (\u03bc1 is the binding rate of the first Bcd ligand and $\\mu_{6}$ the binding rate of the last Bcd ligand when 5 Bcd ligands are already bound to the promoter), and the unbinding rates $(\u03bd_{i})_{1\\leqi\\leq6}$ (\u03bd1 is the unbinding rate of a single Bcd ligand bound to the promoter and $\u03bd_{6}$ is the unbinding rate of all Bcd ligands when all six Bcd-binding sites are occupied). We also explore different activation rules by varying the minimal number of Bcd ligands k required for activation in the k-or-more activation rule (Estrada et al., 2016; Tran et al., 2018). We use the most recent estimates of biological constants for the hb promoter and Bcd diffusion (see Appendix 1) and set the error rate at the border to 32% (Gregor et al., 2007b; Petkova et al., 2019). Reasons for this choice were given in the subsection \u2018The decision process of the anterior vs posterior hunchback expression\u2019 and will be revisited in the subsection \u2018How many nuclei make a mistake?\u2019, where we shall introduce some embryological considerations on the number of nuclei involved in the decision process and determine the error probability accordingly. The optimization procedure that minimized the average decision time for different values of k and H is implemented using a mixed strategy of multiple random starting points and steepest gradient descent (Figure 4a).\n\n### Logic and properties of the identified fast decision architectures\n\nThe main conclusion we reach using the methodology presented in the 'Methodological setup' section is that there exist promoter architectures that reach the required precision within a few minutes and satisfy all the additional embryological constraints that were discussed previously (Figure 4a). The fastest promoters (blue crosses in Figure 4a) reach a decision within the time of nuclear cycle 11 (green line in Figure 4a) for a wide range of activation rules. Even imposing steep readouts ($H>4$) allows us to identify relatively fast promoters, although imposing the nuclear cycle time limit, pushes the activation rule to smaller k. Interestingly, we find that the fastest architectures identified perform well over a range of high enough concentrations (Appendix 4\u2014figure 1). The optimal architectures differ mainly by the distribution of their unbinding rates (Figure 4b). We shall now discuss their properties, namely the binding times of Bicoid molecules to the DNA binding sites, and the dependence of the promoter activity on various features, such as activation rules and the number of binding sites in detail. Together, these results elucidate the logic underlying the process of fast decision-making.\n\n#### How many nuclei make a mistake?\n\nThe precision of a stochastic readout process is defined by two parameters: the resolution of the readout $\\delta\u2062x$, and the probability of error, which sets the reproducibility of the readout. In Figure 4, we have used the statistical Gaussian error level (32%) to obtain our results. However, the error level sets a crucial quantity for a developing organism and it is important to connect it with the embryological process, namely how many nuclei across the embryo will fail to properly decide (whether they are positioned in the anterior or in the posterior part of the embryo). To make this connection, we compute this number for a given average decision time t and we integrate the error probability along the AP axis to obtain the error per nucleus $e_{s}$. The expected number of nuclei that fail to correctly identify their position is given by $\u27e8n_{error}\u27e9=e_{s}\u20622^{c-1}$, where c is the nuclear cycle and we have neglected the loss due to yolk nuclei remaining in the bulk and arresting their divisions after cycle 10 (Foe and Alberts, 1983). Assuming a 270 s readout time \u2013 the total interphase time of nuclear cycle 11 (Tran et al., 2018) \u2013 for the fastest architecture identified above and an error rate of 32%, we find that $\u27e8n_{error}\u27e9\u22430.3$, that is an essentially fail-proof mechanism. This number can be compared with\u00a0>30 nuclei in the embryo that make an error in a $\u27e8T\u27e9=270s$ read-out in a Berg-Purcell-like fixed-time scheme (integrated blue area in Figure 1c).\n\nConversely, for a given architecture, reducing the error level increases drastically the mean first-passage time to decision: the mean time for decision as a function of the error rate for the fastest architecture identified with $H>5$ and $k=1$ is shown in Appendix 2\u2014figure 1. The decision can be made in about a minute for $e=32%$ but requires on average 10 min for $e=10%$ (Appendix 2\u2014figure 1). Note that, because the mean first-passage depends simply on the inverse of the drift per cycle (Equation 4), the relative performance of two architectures is the same for any error rate so that the fastest architectures identified in Figure 4a are valid for all error levels.\n\nJust like for the fixed-time strategy (Figure 1c and d), nuclei located in the mid-embryo region are more likely to make mistakes and take longer on average to trigger a decision (Appendix 4\u2014figure 2).\n\n#### Residence times among the various states\n\nAs shown in Tran et al., 2018, high Hill coefficients in the hunchback response are associated with frequent visits of the extreme expression states where available binding sites are either all empty (state 0), or all occupied (state 6). Figure 4c provides a concrete illustration by showing the distribution of residence times for the promoter architectures that yield the fastest decision times for $k=3$ and no constraints (blue bars), $H>4$ (red bars) and $H>5$ (black bars). When there are no constraints on the slope of the hunchback response, the most frequently occupied states are close to the ON-OFF transition (2 and 3 occupied\u00a0binding sites in Figure 4c) to allow for fast back and forth between the active and inactive states of the gene and thereby gather information more rapidly by reducing $\\tau_{ON}+\\tau_{OFF}$ (see formulae 2 and 4).\n\nWe notice that for higher Hill coefficients, the system transits quickly through the central states (in particular states with 3 and 4 occupied Bcd sites, Figure 4 red and black bars). As expected for high Hill coefficients, such dynamics requires high cooperativity. Cooperativity helps the recruitment of extra transcription factors once one or two of them are already bound and thus speeds up the transitioning through the states with 2, 3 and 4 occupied binding sites. An even higher level of cooperativity is required to make TF DNA binding more stable when 5 or 6 of them are bound, reducing the OFF rates $\u03bd_{5}$ or $\u03bd_{6}$ (Figure 4b).\n\n#### The (short) binding times of Bicoid on DNA\n\nThe distribution of times spent bound to DNA of individual Bicoid molecules is shown in Figure 4d obtained from Monte Carlo simulations using rates from the fastest architecture with $H>5$ and $k=2$. We find an exponential decay, an average bound time of about 7.1 s and a median around 0.5 s. Our median-time-bound prediction is of the same order of magnitude as the observed bound times seen in recent experiments by Mir et al., 2017; Mir et al., 2018, who found short (mean \u223c0.629 s and median \u223c0.436 s based on exponential fits), yet quite distinguishable from background, bound times to DNA. These results were considered surprising because it seemed unclear how such short binding events could be consistent with the processing of ON and OFF gene switching events. Our results show that such short binding times may actually be instrumental in achieving the tradeoff between accuracy and speed, and rationalize how longer activation events are still achieved despite the fast binding and unbinding. High cooperativity architectures lead to non-exponential bound times to DNA (Figure 4d) for which the typical bound time (median) is short but the tail of the distribution includes slower dynamics that can explain longer activation events (the mean is much larger than the median). This result suggests that cells can use the bursty nature of promoter architectures to better discriminate between TF concentrations.\n\nIn Mir et al., 2017, the raw distribution comprises both non-specific and specific binding and cannot be directly compared to simulation results. Instead, we use the largest of the two exponents fit for the boundary region (Mir et al., 2017), which should correspond to specific binding. The agreement between the distributions in Figure 4d is overall good, and we ascribe discrepancies to the fact that (Mir et al., 2017) fit two exponential distributions assuming the observed times were the convolution of exponential specific and non-specific binding times. Yet the true specific binding time distribution is likely not exponential, e.g. due to the effect of binding sites having different binding affinities. We show in Appendix 5\u2014figure 1 that the two distributions are very similar and hard to distinguish once they are mixed with the non-specific part of the distribution.\n\n#### Activation rules\n\nIn the parameter range of the early fly embryo, the fastest decision-making architectures share the one-or-more ($k=1$) activation rule\u2009: the promoter switches rapidly between the ON and OFF expression states and the extra binding sites are used for increasing the size of the target rather than building a more complex signal. Architectures with $k=2$ and $k=3$ activation rules can make decisions in less than 270 s and satisfy all the required biological constraints. Generally speaking, our analysis predicts that fast decisions require a small number of Bicoid-binding sites (less than three) to be occupied for the gene to be active. The advantage of the $k=2$ or $k=3$ activation rules is that the ON and OFF times are on average longer than for $k=1$, which makes the downstream processing of the readout easier. We do not find any architecture satisfying all the conditions for the $k=4,5,6$ activation rules, although we cannot exclude there could be some architectures outside of the subset that we managed to sample, especially for the $k=4$ activation rules where we did identify some promoter structures that are close to the time constraint.\n\nActivation rules with higher k can give higher information per cycle for the ON rate, yet they do not seem to lead to faster decisions because of the much longer duration of the cycles. To gain insight on how the tradeoff between fast cycles and information affects the efficiency of activation rules, we consider architectures with only two binding sites, which lend to analytical understanding (Figure 5a and b). Both of these considered architectures are out of equilibrium and require energy consumption (as opposed to the two equilibrium architectures of Figure 5c and d).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49758/elife-49758-fig5-v2.jpg)\n\n**Figure 5.:** We compare promoters of different complexity: the all-or-nothing $k=2$ out-of-equilibrium model (a), the 1-or-more $k=1$ out-of-equilibrium model (b), the two binding site all-or-nothing $k=2$ equilibrium model (c) and the one binding site equilibrium model (d). (e) Comparison of the mean decision time between $k=2$ (a) and $k=1$ (b) activation schemes for the two binding site out-of-equilibrium models as a function of the unbinding rate \u03bd and binding rate \u03bc1. The binding rate \u03bc2 is fixed to $\\mu_{2}=\\mu_{1}/2$. The fastest decision-making solution associates the second binding with slower variables to maximize V. Along the line $L\u2062\\mu_{1}=\u03bd$ the activation rules $k=1$ and $k=2$ perform at the same speed. $e=10%$. (f) Comparison of the mean decision time for equilibrium architectures with one (d) and two (c) equilibrium TF-binding sites. $\\mu_{1},\\mu_{2},\u03bd_{1}$ are optimized at fixed $\u03bd_{2}$, $e=5%$. We set a maximum value of $5\u2062\\mu\u2062m^{3}\u2062s^{-1}$ for \u03bc1 and \u03bc2, corresponding to the diffusion limited arrival at the binding site. For \u03bd1, the maximum value of 5 s\u22121 corresponds to the inverse minimum time required to read the presence of a ligand, or to differentiate it from unspecific binding of other proteins. Additional binding sites are beneficial at high ligand concentrations and for small unbinding rates. In the blue region, the fastest mean decision time for a fixed accuracy assuming equilibrium binding, comes from a two binding site architecture with a non-zero first unbinding rate. In the white region, one of the binding rates \u21920 (see inset), which reduces to a one binding site model. $e=5%$. (g) Weaker binding sites can lead to faster decision times within a range of parameters (gray stripe). We consider the $k=1$ activation scheme with two binding sites (b). For fixed L (x axis), \u03bd (y axis) and $\\mu_{1}=0.2\u2062\\mu\u2062m^{3}\u2062s^{-1}$, we optimize over \u03bc2 while setting $\\mu_{2}<\\mu_{1}$ (context of diffusion limited first and second bindings). The gray regions corresponds to parameters for which the optimal second unbinding rate $\\mu_{2}^{*}<\\mu_{1}$ and the second binding is weak. In the white region $\\mu_{2}^{*}=\\mu_{1}$. For all panels $L_{2}=L$, $L_{1}=0.95\u2062L$, $e=0.05$.\n\n##### When is 1-or-more faster than all-or-nothing activation?\n\nA first model has the promoter consisting of two binding sites with the all-or-nothing rule $k=2$ (Figure 5a). We consider the mathematically simpler, although biologically more demanding, situation where TFs cannot unbind independently from the intermediate states \u2013 once one TF binds, all the binding sites need to be occupied before the promoter is freed by the unbinding with rate \u03bd of the entire complex of TFs. This situation can be formulated in terms of a non-equilibrium cycle model, depicted for two binding sites in Figure 5a. The activation time is a convolution of the exponential distributions $P_{OFF}\u2062(t,L)=\\frac{\\mu_{1}\u2062\\mu_{2}\u2062L}{\\mu_{2}-\\mu_{1}}\u2062(e^{-\\mu_{1}\u2062L\u2062t}-e^{-\\mu_{2}\u2062L\u2062t})$. In the simple case, when the two binding rates are similar ($\\mu_{1}\u2243\\mu_{2}$), the OFF times follow a Gamma distribution and the drift and diffusion can be computed analytically (see Appendix 4). When the two binding rates are not similar the drift and diffusion must be obtained by numerical integration (see Appendix 4).\n\nIn the first model described above (Figure 5a), deactivation times are independent of the concentration and do not contribute to the information gained per cycle and, as a result, to $V/(\\tau_{ON}+\\tau_{OFF})$. To explore the effect of deactivation time statistics on decision times, we consider a cycle model where the gene is activated by the binding of the first TF (the 1-or-more $k=1$ rule) and deactivation occurs by complete unbinding of the TFs complex (Figure 5b). The resulting activation times are exponentially distributed and contribute to drift and diffusion as in the simple two state promoter model (Figure 5d). The deactivation times are a convolution of the concentration-dependent second binding and the concentration-independent unbinding of the complex and their probability distribution is $P_{ON}\u2062(t,L)=\\frac{\u03bd\u2062\\mu_{2}\u2062L}{\u03bd-\\mu_{2}\u2062L}\u2062(e^{-\\mu_{2}\u2062L\u2062t}-e^{-\u03bd\u2062t})$. Drift and diffusion can be obtained analytically (Appendix 4). The concentration-dependent deactivation times prove informative for reducing the mean decision time at low TF concentrations but increase the decision time at high TF concentrations compared to the simplest irreversible binding model. In the limit of unbinding times of the complex ($1/\u03bd$) much larger than the second binding time ($1/\\mu_{2}\u2062L$), no information is gained from deactivation times. In the limit of $\\mu_{1}\u2062L/\u03bd\u2192\u221e$, the $k=1$ model reduces to a one binding site exponential model and the two architectures (Figure 5b and d) have the same asymptotic performance.\n\nWithin the irreversible schemes of Figure 5a and Figure 5b, the average time of one activation/deactivation cycle is the same for the all-or-nothing $k=2$ and 1-or-more $k=1$ activation schemes. The difference in the schemes comes from the information gained in the drift term $V/(\\tau_{ON}+\\tau_{OFF})$, which begs the question\u2009: is it more efficient to deconvolve the second binding event from the first one within the all-or-nothing $k=2$ activation scheme, or from the deactivation event in the $k=1$ activation scheme?\n\nIn general, the convolution of two concentration-dependent events is less informative than two equivalent independent events, and more informative than a single binding event. For small concentrations L, activation events are much longer than deactivation events. In the $k=1$ scheme, OFF times are dominated by the concentration-dependent step $\\mu_{2}\u2062L$ and the two activation events can be read independently. This regime of parameters favors the $k=1$ rule (Figure 5e). However, when the concentration L is very large the two binding events happen very fast and for $\\mu_{2}\u2062L\u226b\u03bd$, in the $k=1$ scheme, it is hard to disentangle the binding and the unbinding events. The information gained in the second binding event goes to 0 as $L\u2192\u221e$ and the one-or-more $k=1$ activation scheme (Figure 5b) effectively becomes equivalent to a single binding site promoter (Figure 5d), making the all-or-nothing $k=2$ activation (Figure 5a) scheme more informative (Figure 5e). The fastest decision time architecture systematically convolves the second binding event with the slowest of the other reactions (Figure 5e), with the transition between the two activation schemes when the other reactions have exactly equal rates ($\\mu_{1}\u2062L=\u03bd$ line in Figure 5e) (see Appendix 6 for a derivation).\n\n#### How the number of binding sites affects decisions\n\nThe above results have been obtained with six binding sites. Motivated by the possibility of building synthetic promoters (Park et al., 2019) or the existence of yet undiscovered binding sites, we investigate here the role of the number of binding sites. Our results suggest that the main effect of additional binding sites in the fly embryo is to increase the size of the target (and possibly to allow for higher cooperativity and Hill coefficients). To better understand the influence of the number of binding sites on performance at the diffusion limit, we compare a model with one binding site (Figure 5d) to a reversible model with two binding sites where the gene is activated only when both binding sites are bound (all-or-nothing $k=2$, Figure 5c). Just like for the six binding site architectures, we describe this two binding site reversible model by using the transition matrix of the $N+1$ Markov chain and calculate the total activation time $P_{OFF}\u2062(t,L)$.\n\nFor fixed values of the real concentration L, the two hypothetical concentrations L1 and L2, the error e and the second off-rate $\u03bd_{2}$, we optimize the remaining parameters \u03bc1, \u03bc2 and \u03bd1 for the shortest average decision time.\n\nFor high gene deactivation rates $\u03bd_{2}$, the fastest decision time is achieved by a promoter with one binding site (Figure 5f): once one ligand has bound, the promoter never goes back to being completely unbound ($\u03bd_{1}^{*}$=0 in Figure 5c) but toggles between one and two bound TF (Figure 5d with $\u03bd=\u03bd_{2}$ and $\\mu=\\mu_{2}$). For lower values of gene deactivation rates $\u03bd_{2}$, there is a sharp transition to a minimal $\u27e8T\u27e9$ solution using both binding sites. In the all-or-nothing activation scheme that is used here, the distribution of deactivation times is ligand independent and the concentration is measured only through the distribution of activation times, which is the convolution of the distributions of times spent in the 0 and 1 states before activation in the two state. For very small deactivation $\u03bd_{2}$ rates, it is more informative to 'measure\u2019 the ligand concentration by accumulating two binding events every time the gene has to go through the slow step of deactivating (Figure 5c). However, for large deactivation rates little time is 'lost\u2019 in the uninformative expressing state and there is no need to try and deconvolve the binding events but rather use direct independent activation/deactivation statistics from a single binding site promoter (Figure 5d, see Appendix 7 for a more detailed calculation).\n\n#### The role of weak binding sites\n\nAn important observation about the strength of the binding sites that emerge from our search is that the binding rates are often below the diffusion limit $\\mu_{max}\u2062L_{0}\u22430.124\u2062s^{-1}$ (see black dashed line in Figure 4b)\u2009: some of the ligands reach the receptor, they could potentially bind but the decision time decreases if they do not. In other words, binding sites are 'weak\u2019 and, since this is also a feature of many experimental promoters (Gertz et al., 2009), the purpose of this section is to investigate the rationale for this observation by using the models described in Figure 5.\n\nNaively, it would seem that increasing the binding rate can only increase the quality of the readout. This statement is only true in certain parameter regimes, and weaker binding sites can be advantageous for a fast and precise readout. To provide concrete examples, we fix the deactivation rate \u03bd and the first binding rate \u03bc1 in the 1-or-more irreversible binding model of Figure 5b and we look for the unbinding rate $\\mu_{2}^{*}$ that leads to the fastest decision. We consider a situation where the two binding sites are not interchangeable and binding must happen in a specific order. In this case, the diffusion limit states that $\\mu_{2}\\leq\\mu_{1}$ if the first binding is strong and happens at the diffusion limit. We optimize the mean decision time for $0\\leq\\mu_{2}\\leq\\mu_{1}$ (see Appendix 9\u2014figure 1 for an example) and find a range of parameters where the fastest-decision value $\\mu_{2}^{*}<\\mu_{1}$ is not as fast as parameter range allows (Figure 5g). We note that this weaker binding site that results in fast decision times can only exist within a promoter structure that features cooperativity. In this specific case, the first binding site needs to be occupied for the second one to be available. If the two binding sites are independent, then the diffusion limit is $\\mu_{2}\\leq\\mu_{1}$ and the fastest $\u27e8T\u27e9$ solution always has the fastest possible binding rates.\n\n### Predictions for Bicoid-binding sites mutants\n\nIn addition to results for wild type embryos, our approach also yields predictions that could be tested experimentally by using synthetic hb promoters with a variable numbers of Bicoid-binding sites (Figure 6a). For any of the fast decision-making architectures identified and activation rules chosen, we can compute the effects of reducing the number of binding sites. Specifically, our predictions for the $k=3$ activation rule and $H>4$ in Figure 6b can be compared to FISH or fluorescent live imaging measurements of the fraction of active loci at a given position along the anterior-posterior axis. Bcd-binding site mutants of the WT promoter have been measured by immunostaining in cycle 14 (Park et al., 2019), although mRNA experiments in earlier cell cycles of well characterized mutants are needed to provide for a more quantitative comparison.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49758/elife-49758-fig6-v2.jpg)\n\n**Figure 6.:** (a) We consider experiments involving mutant Drosophilae where a copy of a subgroup of the Bicoid-binding sites of the hunchback promoter is inserted into the genome along with a reporter gene to measure its activity. (b) The prediction for the activation profile across the embryo for wild type and mutants for the fastest decision time architecture for $H>4$ and $k=3$. (c) The gene activation profile for several architectures for $H>4$ and $k=3$ (full lines) and $k=2$ (dashed lines) that results in mean decision times < 3 minutes. Groups of profiles gather in two distinct clusters. (d) Fraction of genes that are active on average at the $h\u2062b$ expression boundary using the minimal $\u27e8T\u27e9$ architecture identified for $H>4$ and $k=3$ as a function of the number of binding sites in the hb promoter. Predictions for the six-binding site cases coincide because having half the nuclei active at the boundary is a requirement in the search for valid architectures. (e) Predicted displacement of the boundary region defined as the site of half hunchback expression in terms of egg length as a function of the number of binding sites. The architectures shown result in the fastest decisions for $H>4$ and $k=2$ and $k=3$. Error bar width is the standard deviation of the various architectures that are close to minimal $\u27e8T\u27e9$. For all panels, $L\u2062(x)$ has an exponentially decreasing profile with decay length one fifth of total egg length with $L_{0}=5.6\u2062\\mu\u2062m^{-3}$ at the boundary. Parameters are given in Appendix 10.\n\nAn important consideration for the comparison to experimental data is that there is a priori no reason for the hb promoter to have an optimal architecture. We do find indeed many architectures that satisfy all the experimental constraints and are not the fastest decision-making but 'good enough\u2019 hb promoters. A relevant question then is whether or not similarity in performance is associated with similarity in the microscopic architecture. This point is addressed in Figure 6c, where we compare the fraction of active loci along the AP axis using several constraint-conforming architectures for $H>4$ and the $k=2$ and $k=3$ activation rules. The plot shows that solutions corresponding to the same activation rule are clustered together and quite distinguishable from the rest. This result suggests that the precise values of the binding and unbinding constants are not important for satisfying the constraints, that many solutions are possible, and that FISH or MS2 imaging experiments can be used to distinguish between different activation rules. The fraction of active loci in the boundary region is an even simpler variable that can differentiate between different activation rules (Figure 6d). Lastly, we make a prediction for the displacement of the anterior-posterior boundary in mutants, showing that a reduced numbers of Bcd sites results in a strong anterior displacement of the hb expression border compared to six binding sites, regardless of the activation rule (Figure 6e). Error bars in Figure 6e, that correspond to different close-to-fastest architectures, confirm that these share similar properties and different activation rules are distinguishable.\n\n### Joint dynamics of Bicoid enhancer and promoter\n\nThe Bicoid transcription factor has been shown to target more than a thousand enhancer loci in the Drosophila embryo with a wide concentration range of sensitivities (Driever and N\u00fcsslein-Volhard, 1988; Struhl et al., 1989; Hannon et al., 2017). Enhancers are of special interest because they can be located far away from the promoter (Ribeiro et al., 2010; Krivega and Dean, 2012) and perform a statistically independent sample of the concentration that is later combined with that of the promoter. Evidence suggests that promoter-based conformational changes can be stable over long times (Fukaya et al., 2016), which mimics information storage during a process of signal integration. To explore these effects, we consider a simple model of enhancer dynamics where a Bicoid-specific enhancer switches between two states ON and OFF independently of the promoter dynamics. We assume a simple rule for the gene activity: the gene is transcribed when both the promoter and the enhancer are ON. As an example, we consider an enhancer made of one binding site so that the ON rate $e_{ON}$ of the enhancer is limited by the diffusion rate $\\mu_{max}\u2062L$. As an example, we perform a parameter search for the promoter activation rule $k=2$ (see Appendix 12), while still assuming that about half the nuclei are active at the boundary and a required Hill coefficient greater than 4, looking for architectures yielding the shortest decision time for an error rate of 32% for the 10% relative concentration difference discrimination problem. We find that the enhancer improves the performance of the readout, reducing the time to decision by about $\u22436%$. We find that adding extra binding sites to the promoter increases the computing power of the enhancer-promoter system and can reduce the time to decision to about 60% of the performance of the best architectures without enhancers.\n\n### Estimating the log-likelihood function with RNA concentrations\n\nTo illustrate how a biochemical network can approximate the calculation of the log-likelihood, we consider the case of the fastest architecture identified in the paragraph \u2019Numerical procedure for identifying fast decision-making architectures\u2019 with $k=1$ and $H>4$. In Figure 7a, we show the contributions of the OFF times (blue) and the ON times (red) to the log-likelihood for this architecture. We notice that the behavior of the log-likelihood contributions at long times is simply linear in time with a positive rate for ON times and a negative rate for OFF times. Conversely, short ON times contribute negatively to the log-likelihood while short OFF times contribute positively to the log-likelihood (Figure 7a). This observation suggests a simple model of RNA production with delay to approximate the computation of the log-likelihood. We consider a model of RNA production with five parameters (Figure 7b, details of the model are given in Appendix 11). We assume that when the promoter is in the ON state, polymerase is loaded and RNA is transcribed at a constant rate $r_{ON}$ while when the promoter is in the OFF state, RNA is produced at a lower basal rate $r_{b}$. In order to approximate the linear behavior of the log-likelihood function at long times we suggest the existence of an enzyme actively degrading hunchback RNA (Chanfreau, 2017) and include in our model of RNA production the delay $d_{ON}$ and inertia $d_{OFF}$ associated with promoter dynamics and polymerase loading. RNA levels fluctuate and trigger decisions when the concentration $[RNA]$ is greater than a threshold $c_{1}\u2062(t)$ (anterior decision) or lower than a threshold $c_{2}\u2062(t)$ (posterior decision). Since many forms of switch have already been presented in the literature (Goldbeter and Koshland, 1981; Tyson et al., 2003; Ozbudak et al., 2004; Siggia and Vergassola, 2013; Sandefur et al., 2013), we shall concentrate on the log-likelihood calculation and refer to previous references for the implementation of a decision when reaching a threshold.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/49758/elife-49758-fig7-v2.jpg)\n\n**Figure 7.:** (a) The log-likelihood of different times spent ON (red) and OFF (blue) for the fastest architecture identified with $k=1$, $H>4$ assuming $L=L_{1}$. The log-likelihood varies linearly with time for long times. (b) The hunchback promoter switches from ON to OFF and from OFF to ON according to the time distributions determined by its gene architecture and activation rule. When ON, after a delay $d_{ON}$ associated with the formation of a cluster or hub (Cho et al., 2016b; Cho et al., 2016a; Mir et al., 2018), RNA is being produced at rate $r_{ON}$. When OFF, after a delay $d_{OFF}$, the gene switches to basal rate $r_{b}$. Hunchback RNA is being degraded actively by an enzyme at rate $r_{OFF}$. The RNA is in excess for this reaction. (c) The model of RNA production with delay that yields an error of less than 32% in less than 3 min produces a profile of RNA production with high Hill coefficient $\u22435.2$ (red lines, renormalized RNA profile) that is higher than the Hill coefficient of renormalized gene activity $H\u22434$ (blue line). Parameters for promoter activity are those of the fastest architecture identified with $k=1$ and $H>4$, parameters for RNA production are $d_{ON}=0.047\u2062s$, $d_{OFF}=1.6s$, $r_{b}=0.2s^{-1}$s-1, $r_{OFF}=0.5s^{-1}$s-1, $r_{ON}=0.805s^{-1}$s-1.\n\nWe look for parameters that satisfy both a high speed and high accuracy requirement for a decision between two points located 2% egg lengths apart across the mid-embryo boundary. For the fastest architecture identified with $k=1$ and $H>4$, we identify parameters that satisfy $e<32%$ and a mean decision time $T<3$ min (see Appendix 11\u2014figure 1). We check that this model produces a profile of RNA that is consistent with the observed high Hill coefficient (Figure 7c). Interestingly, we find that for this particular set of parameters the RNA profile Hill coefficient is increased by the delayed transcription dynamics and the active degradation from $\u22434$ (blue line in Figure 7c) up to $\u22435.2$ (red line in Figure 7c, details of the calculation are given in Appendix 11). This result could shed new light on the fundamental limits to Hill coefficients in the context of cooperative TF binding (Estrada et al., 2016; Tran et al., 2018) and provide a possible mechanism to explain how mRNA profiles can reach higher steepness than the corresponding TF activities do. We also looked for parameter sets that approximate the log-likelihood for the optimal architecture identified for $k=2$ and $H>4$ and find several candidates that fall close to the requirement of speed and accuracy (Appendix 11\u2014figure 1). Together these results show that implementing the log-likelihood using a molecular circuit with a hb promoter is possible. They do not show this is what is happening in the embryo itself.\n\n## Discussion\n\nThe issue of precision in the Bicoid readout by the hunchback promoter has a long history (N\u00fcsslein-Volhard and Wieschaus, 1980; Tautz, 1988). Recent interest was sparked by the argument that the amount of information at the hunchback locus available during one nuclear cycle is too small for the observed 2% EL distance between neighboring nuclei that are able to make reproducible distinct decisions (Gregor et al., 2007b). By using updated estimates of the biophysical parameters (Porcher et al., 2010; Tran et al., 2018), and the Berg-Purcell error estimation, we confirm that establishing a boundary with 2% variability between neighbouring nuclei would take at least about 13.4 min \u2013 roughly the non-transient expression time in nuclear cycle 14 (Lucas et al., 2018; Tran et al., 2018) (Appendix 1). This holds for a single Bicoid-binding site. An intuitive way to achieve a speed up is to increase the number of binding sites: multiple occupancy time traces are thereby made available, which provides a priori more information on the Bicoid concentration.\n\nPossible advantages of multiple sites are not so easy to exploit, though. First, the various sites are close and their respective bindings are correlated (Kaizu et al., 2014), so that their respective occupancy time traces are not independent. That reduces the gain in the amount of information. Second, if the activation of gene expression requires the joint binding of multiple sites, the transition to the active configuration takes time. The overall process may therefore be slowed down with respect to a single binding site model, in spite of the additional information. Third, and most importantly, information is conveyed downstream via the expression level of the gene, which is again a single time trace. This channeling of the multiple sites\u2019 occupancy traces into the single time trace of gene expression makes gene activation a real information bottleneck for concentration readout. All these factors can combine and even lead to an increase in the decision time. To wit, an all-or-nothing equilibrium activation model with six identical binding sites functioning at the diffusion limit and no cooperativity takes about 38 min to achieve the same above accuracy. In sum, the binding site kinetics and the gene activation rules are essential to harness the potential advantage of multiple binding sites.\n\nOur work addresses the question of which multisite promoters architecture minimize the effects of the activation bottleneck. Specifically, we have shown that decision schemes based on continuous updating and variable decision times significantly improve speed while maintaining the desired high readout accuracy. This should be contrasted to previously considered fixed-time integration strategies. In the case of the hunchback promoter in the fly embryo, the continuous update schemes achieve the 2% EL positional resolution in less than 1 min, always outperforming fixed-time integration strategies for the same promoter architecture (see Appendix 1\u2014table 1). While 1 min is even beyond what is required for the fly embryo, this margin in speed allows to accommodate additional constraints, viz. steep spatial boundary and biophysical constraints on kinetic parameters. Our approach ultimately yields many promoter architectures that are consistent with experimental observables in fly embryos, and results in decision times that are compatible with a precise readout even for the fast nuclear cycle 11 (Lucas et al., 2018; Tran et al., 2018).\n\nSeveral arguments have been brought forward to suggest that the duration of a nuclear cycle is the limiting time period for the readout of Bicoid concentration gradient. The first one concerns the reset of gene activation and transcription factor binding during mitosis. In that sense, any information that was stored in the form of Bicoid already bound to the gene is lost. The second argument is that the hunchback response integrated over a single nuclear cycle is already extremely precise. However, none of these imply that the hunchback decision is made at a fixed-time (corresponding to mitosis) so that strategies involving variable decision times are quite legitimate and consistent with all the known phenomenology.\n\nWe have performed our calculations in a worst-case scenario. First, we did not consider averaging of the readout between neighbouring nuclei. While both protein (Gregor et al., 2007a) and mRNA concentrations (Little et al., 2013) are definitely averaged, and it has been shown theoretically that averaging can both increase and decrease (Erdmann et al., 2009) readout variability between nuclei, we do not take advantage of this option. The fact that we achieve less than 3 min in nuclear cycle 11, demonstrates that averaging is a priori dispensable. Second, we demand that the hunchback promoter results in a readout that gives the positional resolution observed in nuclear cycle 14, in the time that the hunchback expression profile is established in nuclear cycle 11. The reason for this choice is twofold. On the one hand, we meant to show that such a task is possible, making feasible also less constrained set-ups. On the other hand, the hunchback expression border established in nuclear cycle 11 does not move significantly in later nuclear cycles in the WT embryo, suggesting that the positional resolution in nuclear cycle 11 is already sufficient to reach the precision of later nuclear cycles. The positional resolution that can be observed in nuclear cycle 11 at the gene expression level is $\u223c10%$ EL (Tran et al., 2018), but this is also due to smaller nuclear density.\n\nTwo main factors generally affect the efficiency of decisions: how information is transmitted and how available information is decoded and exploited. Decoding depends on the representation of available information. Our calculations have considered the issue of how to convey information across the bottleneck of gene activation, under the constraint of a given Hill coefficient. The latter is our empirical way of taking into account the constraints imposed by the decoding process. High Hill coefficients are a very convenient way to package and represent positional information: decoding reduces to the detection of a sharp transition, an edge in the limit of very high coefficients. The interpretation of the Hill coefficient as a decoding constraint is consistent with our results that an increase in the coefficient slows down the decision time. The resulting picture is that promoter architecture results from a balance between the constraints imposed by a quick and accurate readout and those stemming from the ease of its decoding. The very possibility of a balance is allowed by the main conclusion demonstrated here that promoter structures can go significantly below the time limit imposed by the duration of the early nuclear cycles. That leaves room for accommodating other features without jeopardising the readout timescale. While the constraint of a fixed Hill coefficient is an effective way to take into account constraints on decoding, it will be of interest to explore in future work if and how one can go beyond this empirical approach. That will require developing a joint description for transmission and decoding via an explicit modeling of the mechanisms downstream of the activation bottleneck.\n\nRecent work has shed light on the role of out of equilibrium architectures on steepness of response (Estrada et al., 2016) and gradient establishment (Tran et al., 2018; Park et al., 2019). Here, we showed that equilibrium architectures perform very well and achieve short decision times, and that out of equilibrium architectures do not seem to significantly improve the performance of promoters, except for making some switches from gene states a bit faster. Non-equilibrium effect can, however, increase the Hill coefficient of the response without adding extra binding sites, which is useful for the downstream readout of positional information that we formulated above as decoding.\n\nWe also showed how short bound times of Bicoid molecules to the DNA (Mir et al., 2017; Mir et al., 2018) are translated into accurate and fast decisions. Our fast decision-making architectures also display short DNA-bound times. However, the constraint of high cooperativity means that the distribution of bound times to the DNA is non-exponential and the rare long binding times that occur during the bursty binding process are exploited during the read-out. The combination of high cooperativity and high temporal variance due to bursty dynamics is a possible recipe for an accurate readout.\n\nAt the technical level, we developed new methods for the mean decision time of complex gene architectures within the framework of variable time decision-making (SPRT). This allowed us to establish the equality $V=D$ between drift and diffusion of the log-likelihood between two close hypotheses. Its underlying reason is the martingale property that the conditional expectation of probabilities for two hypotheses, given all prior history, is equal to their present value. The methodology developed here will be useful for the broad range of decision processes where SPRT is relevant, including neuroscience (Gold and Shadlen, 2007; Bitzer et al., 2014) and synthetic biology (O'Brien and Murugan, 2019; Pittayakanchit et al., 2018).\n\nWe made predictions about how promoter architectures with different activation schemes can be compared in synthetic embryos with different numbers of Bcd binding sites. Furthermore, experiments that change the composition of the syncytial medium would influence the diffusion constant and assay the assumption of diffusion-limited activation. Our model predicts that these changes would result in modifications of hunchback activation profiles: higher or lower diffusion rates slide the hunchback profile towards the anterior or the posterior end of the embryo, respectively, similarly to an increase or a decrease of the number of Bicoid binding sites. Any of the above experiments would greatly advance our understanding of the molecular control of spatial patterning in Drosophila embryo and, more generally, of regulatory processes.\n\nFinally, we showed how a simple model of RNA production with delay and active degradation could easily approximate the seemingly complex log-likelihood calculation. The specific implementation that we described is tentative and aimed at simplicity, yet it illustrates several points, namely that the log-likelihood can be approximated by preserving a high Hill coefficients, observed characteristics of transcription dynamics and ensuring speed-accuracy limits. Future experiments could identify candidates for the enzyme responsible for the active degradation of RNA, or image the formation and dissolution of clusters using super-resolution imaging methods. This mechanism is also very close to the multifactor clusters (Mir et al., 2018) observed recently in early Drosophila in conjunction with active transcription sites. We suggest this mechanism as an example of implementation of the log-likelihood calculation, but note that the added complexity of the computation could happen at different levels of the expression machinery, including upstream of promoter activation through enhancer dynamics and chromatin arrangement.\n",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "741d4216-eb99-48b8-bfa2-48599d54eeee",
+      "submission_id": "50a2abec-719e-4f4f-bcf5-6f904a24d22f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael B Eisen, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.49758.sa1](https://doi.org/10.7554/eLife.49758.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper tackles an interesting and neglected question in developmental gene regulation \u2013 the speed at which regulatory decisions in development must be made \u2013 using mathematical models of promoters active in the early Drosophila embryo. The math in the paper will likely be a challenge for many readers to follow, but the questions, principles and inferences made should stimulate the many experimentalists working in this field to incorporate this thinking into their future genetic dissections and analyses of promoters and enhancers in developmental systems.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"hunchback promoters can readout morphogenetic positional information in less than a minute\" for consideration by eLife. Your article has been reviewed by Michael Eisen as the Senior Editor and Reviewing Editor, and two reviewers. The reviewers have opted to remain anonymous.\n\nWe are incredibly sorry for the delay in the reviews. It was unusually difficult to find reviewers and there were then additional delays. The consensus of the reviewers is that this is a thought-provoking manuscript; it uses theory to explore an important question \u2013 how developmental decisions can be made within the time-constraints imposed by development. However, the reviewers feel that the manuscript does not yet succeed in providing the kind of connection between theory and underlying biology required to reach the broad readership of eLife. They also found it difficult to evaluate the details of the manuscript without having this broader context. We hope that this major concern can be addressed in a revised manuscript. The comments of the reviewers are appended below.\n\nReviewer #1:\n\nThe manuscript \"hunchback promoters can readout morphogenetic positional information in less than a minute\" was interesting to read and definitely thought provoking. The authors develop a theoretical framework for the analysis of the time-dependent readout of the positional information contained in morphogen profiles, which is based on a statistical method for making optimal decisions while steadily accumulating information (the \"Sequential Probability Ratio Test\" developed by Wald).\n\nThe presentation is generally quite clear (assuming a good background in information theory and/or statistical physics). However, even after reading the entire manuscript, I was left with one crucial question/concern that I would need to be clarified before I can give a recommendation on this manuscript:\n\nAccording to my current understanding, the presented statistical formalism is basically a theory for optimal decision making, but the notion of a \"decision\" in the context of interpreting a morphogen profile is left somewhat vague. The formalism takes as the information input for the decision the full statistics of the time series of transcription factor binding and unbinding events, and this information is processed by the transcription machinery into a time series of the binary variable gene ON/OFF. Up to that point, the logic seems pretty clear to me. However, then the theoretical framework seems to assume that the system can \"compute\" its output, i.e. whether hunchback settles into the high or the low state in a given nucleus, based on the time-dependent log-likelihood ratio, as presented in the manuscript. How should the system (\"the promoter\") do this? A priori, the output of the gene is just proportional to the fraction of time that the transcriptional machinery is in the ON state, since that determines the total mRNA and protein levels. I realize that in the real system there will be nonlinear effects, e.g. a direct or indirect feedback of hunchback on its own expression, which make the system behavior more complex, but I currently do not see how the system should do the seemingly complex computation required to obtain the log-likelihood ratio, which involves the statistics of the time series, not just the integral over it. Also, these nonlinear effects are not included in the model, so the authors do not seem to need them for the logic of their argument. Can the authors fully spell out their rationale regarding this point?\n\nIn my mind it is crucial for the significance of this work that the above point is made crystal clear in the manuscript (it may well be that it has indeed been explained, but that I somehow missed it). Without clarifying this point, the message of the manuscript would be reduced to a more abstract and theoretical statement like \"hunchback promoters could potentially readout morphogenetic positional information in less than a minute, if they had sufficient computational ability\". This statement would still be interesting, but I think then the paper would be better suited for a more specialized journal.\n\nReviewer #2:\n\nIn this paper Desponds and colleagues study the tradeoff between speed and accuracy of the anterior-posterior nuclei fate determination in the early fly embryo. They use hunchback regulation by the transcription factor bicoid as a case-study and using theoretical methods they study the capability of the system to decide between anterior and posterior fate sufficiently fast and with low error. They focus on bicoid binding up to 6 binding sites in the hb promoter and consider that the gene is active (ON) when a minimum number, k, binding sites are occupied. The time-evolution of ON and OFF times is then used to determine the bicoid concentration and subsequently the location of an individual nucleus within the embryo. The authors conclude that a fixed-time decision strategy would require longer times to reach this decision than that available during nuclear cycles prior to NC 14, but a variable-time strategy can do the task. Additionally, they describe how under their framework various activation rules, rates and number of binding sites influence this capability.\n\nThis work adds to a small but growing body of literature that addresses an important aspect of transcriptional regulation: time constraints during development. However, the reviewers were concerned that this work may not be accessible to a broad, biologically centered readership, namely because the text lacks a clear thread connecting the theoretical rationale to the underlying biology. The work focuses on a putative decision between high and low hunchback expression at the hunchback promoter, but does not include nor hypothesize a conceivable mechanism by which this strategy may be implemented, beyond continuing to follow the time-evolution of the system. There are also numerous contradictory statements regarding the nature of this decision throughout the text, making it difficult to discern the authors' intent. In addition, this approach applies to promoters that contain an array of binding sites for a single TF and no attempt is made to connect it to regulatory mechanisms that are more typical inside the embryo (e.g. enhancer regulation). Finally, although the Results section does a good job of contextualizing this work within recent results of other studies, there are important statements lacking references. We feel that these general concerns should be addressed before further consideration.\n",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a6cd5a82-7691-4cc3-95cc-8ff40ea1617e",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C1",
+      "claim": "Hunchback genes decide in minutes whether nuclei follow the anterior/posterior developmental blueprint by reading out positional information in the Bicoid morphogen.",
+      "claim_type": "EXPLICIT",
+      "source": "hunchback genes decide in minutes whether nuclei follow the anterior/posterior developmental blueprint by reading out positional information in the Bicoid morphogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a key feature of the developmental system being studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "87d49411-c983-4500-88e1-4ca47df3ac01",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C2",
+      "claim": "Traditional arguments based on fixed-time sampling of Bicoid concentration indicate that an accurate readout is impossible within the experimental times.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional arguments based on fixed-time sampling of Bicoid concentration indicate that an accurate readout is impossible within the experimental times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by calculations shown in Figure 1c and 1d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "1ab0b177-24ea-40ba-89ec-0e034f8074e9",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C3",
+      "claim": "On-the-fly decision schemes based on comparing likelihoods of anterior/posterior locations complete reliable cell fate decisions within short embryological timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these more efficient schemes complete reliable cell fate decisions within the short embryological timescales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the paper, supported by mathematical modeling and simulations shown in Figures 2-4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "c71d5837-6285-4589-bbf2-fcf3e5320d91",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C4",
+      "claim": "The first 13 cycles of DNA replication and mitosis in Drosophila embryos occur without cytokinesis, resulting in a multinucleated syncytium containing about 6000 nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila embryos, the first 13 cycles of DNA replication and mitosis occur without cytokinesis, resulting in a multinucleated syncytium containing about 6000 nuclei (O'Farrell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information with a citation to O'Farrell et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "a3b3f995-2561-45c2-8b16-b54f5cd9c622",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C5",
+      "claim": "Cell fate decisions in the fly embryo are made in less than 3 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "the successive fast decisions on the choice of differentiation blueprints, which are made in less than 3 min (Lucas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Lucas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "6cddabec-dc6e-44c5-95da-9f6b52e5ef1b",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C6",
+      "claim": "The map of future body structures in the early fly embryo is set by the segmentation gene hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "In the early fly embryo, the map of the future body structures is set by the segmentation gene hierarchy (N\u00fcsslein-Volhard et al., 1984; Houchmandzadeh et al., 2002; Jaeger, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to multiple sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "ed1dce27-3ab4-4d68-9d4b-631890daea91",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C7",
+      "claim": "The definition of the positional map starts by the emergence of two (anterior and posterior) regions of distinct hunchback expression, driven by the readout of the maternal Bicoid morphogen gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "The definition of the positional map starts by the emergence of two (anterior and posterior) regions of distinct hunchback (hb) expression, which are driven by the readout of the maternal Bicoid (Bcd) morphogen gradient (Houchmandzadeh et al., 2002, Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with a citation and reference to Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "72e97f74-82af-4876-bc08-6e2835b33b99",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C8",
+      "claim": "Hunchback spatial profiles are sharp and the variance in hunchback expression of nuclei at similar positions along the AP axis is small.",
+      "claim_type": "EXPLICIT",
+      "source": "hunchback spatial profiles are sharp and the variance in hunchback expression of nuclei at similar positions along the AP axis is small (Desponds et al., 2016; Lucas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to supporting studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "aeaa8dae-a9b2-4966-848f-c743c02bb6c2",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C9",
+      "claim": "The amount of positional information available at the transcriptional locus is close to the minimal amount necessary to achieve the required precision.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of positional information available at the transcriptional locus is close to the minimal amount necessary to achieve the required precision (Gregor et al., 2007b; Porcher et al., 2010; Garcia et al., 2013; Petkova et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to multiple supporting studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "c96a2247-1203-4cee-873c-7779135274d2",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C10",
+      "claim": "Part of the morphogenetic information is not accessible for reading by downstream mechanisms as information is channeled and lost through subsequent cascades of gene activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, part of the morphogenetic information is not accessible for reading by downstream mechanisms (Tikhonov et al., 2015), as information is channeled and lost through subsequent cascades of gene activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Tikhonov et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "bfffaae3-d987-418d-ba3f-33d62ea2c172",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C11",
+      "claim": "By the end of nuclear cycle 14, the positional information encoded in the gap gene readouts is sufficient to correctly predict the position of each nucleus within 2% of the egg length.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of that, by the end of nuclear cycle 14 the positional information encoded in the gap gene readouts is sufficient to correctly predict the position of each nucleus within 2% of the egg length (Petkova et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Petkova et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "869e1c18-a885-4a97-be97-722e4aa52ba8",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C12",
+      "claim": "Mitosis resets the binding of transcription factors during the phase of synchronous divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding to the time constraints, mitosis resets the binding of transcription factors (TF) during the phase of synchronous divisions (Lucas et al., 2018), suggesting that the decision about the nuclei's position is made by using information accessible within one nuclear cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Lucas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "8bb7dd19-3da2-4e79-9fa0-9f48723aa629",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C13",
+      "claim": "During nuclear cycles 10-13, the positional information encoded by the Bicoid gradient is read out by hunchback promoters precisely and within 3 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments additionally show that during the nuclear cycles 10\u201313 the positional information encoded by the Bicoid gradient is read out by hunchback promoters precisely and within 3 min (Lucas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Lucas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "939e0dc8-a7cf-4c46-a17b-3d2c675ab61e",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C14",
+      "claim": "The average concentration of maternal Bicoid decreases exponentially along the AP axis by about a factor of five from the anterior to the posterior ends.",
+      "claim_type": "EXPLICIT",
+      "source": "The average concentration L(x) of maternal Bicoid decreases exponentially along the AP axis by about a factor five from the anterior (left) to the posterior (right) ends.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1a.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "3853ec9d-f829-427a-b218-2dfc5dd34fb1",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C15",
+      "claim": "The boundary region width is 2% of the egg length.",
+      "claim_type": "EXPLICIT",
+      "source": "Between the blue lines lies the boundary region. Its width \u03b4x is 2% of the egg length.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "23fa26ba-09b0-4b6d-a157-31e7fac6e253",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C16",
+      "claim": "The half-maximum Bcd concentration position in WT embryos is shifted by about 5% of the egg-length toward the anterior with respect to the mid-embryo position.",
+      "claim_type": "EXPLICIT",
+      "source": "The half-maximum Bcd concentration position in WT embryos is shifted by about 5% of the egg-length toward the anterior with respect to the mid-embryo position (Struhl et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Struhl et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "eb531a6a-62e7-4ff0-8426-95c9f3201a37",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C17",
+      "claim": "Berg and Purcell derived the seminal tradeoff between integration time and readout accuracy for a receptor evaluating the concentration of a ligand based on its average binding occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Berg and Purcell derived the seminal tradeoff between integration time and readout accuracy for a receptor evaluating the concentration of a ligand (Berg and Purcell, 1977) based on its average binding occupancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Berg and Purcell, 1977.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "399e49a9-6e5b-45d1-96df-606a0fc66f3b",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C18",
+      "claim": "The Berg-Purcell strategy cannot result in a precise anterior-posterior decision for the hunchback promoter in the short time of the early nuclear cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "However, none of these approaches can result in a precise anterior-posterior (AP) decision for the hunchback promoter in the short time of the early nuclear cycles, which has led to the conclusion that there is not enough time to apply the fixed-time Berg-Purcell strategy with the desired accuracy (Gregor et al., 2007a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Gregor et al., 2007a.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "09974ada-72e0-45ed-9f04-913ae8285839",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C20",
+      "claim": "The time needed to reach the standard error probability of 32% for a fixed-time decision process soars close to the boundary up to 50 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Decisions are easy away from the center but the time required for an accurate decision soars close to the boundary up to 50 min \u2013 much longer than the embryological times.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "4a2c22af-47c2-4272-902e-15aef41b355a",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C25",
+      "claim": "The hunchback promoter contains six experimentally identified Bicoid-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We limit our investigation of promoter architectures to the six experimentally identified Bicoid-binding sites (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1b.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "9133ed98-413b-466e-a1d7-655e7795c109",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C26",
+      "claim": "Before nuclear cycle 13, there is little time to produce sufficient concentrations of zygotic proteins for a significant feedback effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not consider the known Hunchback-binding sites because before nuclear cycle 13 there is little time to produce sufficient concentrations of zygotic proteins for a significant feedback effect and the measured maternal hunchback profile has not been shown to alter anterior-posterior decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as justification for excluding Hunchback-binding sites from the model.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "fe37d0cb-57a8-490b-a93f-20bbfdff4a0a",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C27",
+      "claim": "Bcd readout is the leading factor in nuclei fate determination.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the observation that Bcd readout is the leading factor in nuclei fate determination (Ochoa-Espinosa et al., 2009), we also neglect the role of other maternal gradients, for example Caudal, Zelda or Capicua (Jim\u00e9nez et al., 2000; Sokolowski et al., 2012; Tran et al., 2018; Lucas et al., 2018), since the readout of these morphogens can only contribute additional information and decrease the decision time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to supporting studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "4e6e144a-35d1-4bc6-82ff-dc61f9a7c8ae",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C28",
+      "claim": "No active enhancers have been identified for the hunchback locus in nuclear cycles 11-13.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus on the proximal promoter since no active enhancers have been identified for the hunchback locus in nuclear cycles 11\u201313 (Perry et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Perry et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "777a5a08-cdb8-4fe9-9f45-9f53693ea857",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C29",
+      "claim": "Nuclei convert the graded Bicoid gradient into a sharp border of hunchback expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclei convert the graded Bicoid gradient into a sharp border of hunchback expression (Figure 1a), with high and low expressions of the hunchback promoter at the left and the right of the border respectively (Driever and N\u00fcsslein-Volhard, 1988; Struhl et al., 1992; Crauk and Dostatni, 2005; Gregor et al., 2007b; Houchmandzadeh et al., 2002; Porcher et al., 2010; Garcia et al., 2013; Lucas et al., 2013; Tran et al., 2018; Lucas et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with multiple citations and reference to Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "5f68f59a-ebca-4ba3-a217-20ce83ec72cb",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C36",
+      "claim": "There exist promoter architectures that reach the required precision within a few minutes and satisfy all the additional embryological constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "The main conclusion we reach using the methodology presented in the 'Methodological setup' section is that there exist promoter architectures that reach the required precision within a few minutes and satisfy all the additional embryological constraints that were discussed previously (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main finding stated in the text and shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "9c559024-972e-409b-85a6-0af48f1155b2",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C37",
+      "claim": "The fastest promoters reach a decision within the time of nuclear cycle 11 for a wide range of activation rules.",
+      "claim_type": "EXPLICIT",
+      "source": "The fastest promoters (blue crosses in Figure 4a) reach a decision within the time of nuclear cycle 11 (green line in Figure 4a) for a wide range of activation rules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "860bc84f-6b11-4960-84db-d9838bd46dc6",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C41",
+      "claim": "High Hill coefficients in the hunchback response are associated with frequent visits of the extreme expression states where available binding sites are either all empty or all occupied.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Tran et al., 2018, high Hill coefficients in the hunchback response are associated with frequent visits of the extreme expression states where available binding sites are either all empty (state 0), or all occupied (state 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Tran et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "a7c264ea-11f1-4b27-a865-1dd56a3783b1",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C42",
+      "claim": "The median bound time to DNA for Bicoid molecules is approximately 0.5 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "We find an exponential decay, an average bound time of about 7.1 s and a median around 0.5 s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from simulations and stated in the text, with reference to Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "9b45b5ac-07c5-46f2-93e8-7457808e408e",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C43",
+      "claim": "Mir et al. found short (mean approximately 0.629 s and median approximately 0.436 s) bound times of Bicoid to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our median-time-bound prediction is of the same order of magnitude as the observed bound times seen in recent experiments by Mir et al., 2017; Mir et al., 2018, who found short (mean \u223c0.629 s and median \u223c0.436 s based on exponential fits), yet quite distinguishable from background, bound times to DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Mir et al., 2017 and Mir et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "84eda8c7-7836-4b7b-8597-8767df457145",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C44",
+      "claim": "Short binding times may be instrumental in achieving the tradeoff between accuracy and speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that such short binding times may actually be instrumental in achieving the tradeoff between accuracy and speed, and rationalize how longer activation events are still achieved despite the fast binding and unbinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "1af513f6-36c6-4691-b305-b2a67a75bb58",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C45",
+      "claim": "High cooperativity architectures lead to non-exponential bound times to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "High cooperativity architectures lead to non-exponential bound times to DNA (Figure 4d) for which the typical bound time (median) is short but the tail of the distribution includes slower dynamics that can explain longer activation events (the mean is much larger than the median).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "2a171ef8-bfa4-4a89-b0a2-5b3704de48dd",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C48",
+      "claim": "Fast decisions require a small number of Bicoid-binding sites (less than three) to be occupied for the gene to be active.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally speaking, our analysis predicts that fast decisions require a small number of Bicoid-binding sites (less than three) to be occupied for the gene to be active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction from the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "0ad1d5f4-2e06-414e-80ac-37b6f1264cab",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C51",
+      "claim": "Adding extra binding sites to the promoter increases the computing power of the enhancer-promoter system and can reduce the time to decision to about 60% of the performance of the best architectures without enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that adding extra binding sites to the promoter increases the computing power of the enhancer-promoter system and can reduce the time to decision to about 60% of the performance of the best architectures without enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the enhancer-promoter model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "7e8c9c46-d462-4311-9beb-cfe45f01cfe0",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C54",
+      "claim": "Promoter structures can go significantly below the time limit imposed by the duration of the early nuclear cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "The very possibility of a balance is allowed by the main conclusion demonstrated here that promoter structures can go significantly below the time limit imposed by the duration of the early nuclear cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main conclusion of the work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "6dddc668-2462-4352-9ef8-357a2f8f8336",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C55",
+      "claim": "Equilibrium architectures perform very well and achieve short decision times.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we showed that equilibrium architectures perform very well and achieve short decision times, and that out of equilibrium architectures do not seem to significantly improve the performance of promoters, except for making some switches from gene states a bit faster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "2f8a5e00-6550-478f-9b7e-4deb5889dca2",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C56",
+      "claim": "Non-equilibrium effects can increase the Hill coefficient of the response without adding extra binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-equilibrium effect can, however, increase the Hill coefficient of the response without adding extra binding sites, which is useful for the downstream readout of positional information that we formulated above as decoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about non-equilibrium effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "687876ca-e98e-47ad-b3b2-222cce158007",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C57",
+      "claim": "Fast decision-making architectures display short DNA-bound times.",
+      "claim_type": "EXPLICIT",
+      "source": "Our fast decision-making architectures also display short DNA-bound times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the identified architectures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "929b5644-f458-48fd-8be8-77b6b1d26a18",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C58",
+      "claim": "The constraint of high cooperativity means that the distribution of bound times to the DNA is non-exponential.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the constraint of high cooperativity means that the distribution of bound times to the DNA is non-exponential and the rare long binding times that occur during the bursty binding process are exploited during the read-out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the modeling results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "29eec910-fae7-4a31-a6ef-8c2064bedbdd",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C59",
+      "claim": "The combination of high cooperativity and high temporal variance due to bursty dynamics is a possible recipe for an accurate readout.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of high cooperativity and high temporal variance due to bursty dynamics is a possible recipe for an accurate readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "770ea292-9490-4d4e-97a3-dca4f429a227",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C60",
+      "claim": "The equality V=D has its underlying reason in the martingale property that the conditional expectation of probabilities for two hypotheses, given all prior history, is equal to their present value.",
+      "claim_type": "EXPLICIT",
+      "source": "Its underlying reason is the martingale property that the conditional expectation of probabilities for two hypotheses, given all prior history, is equal to their present value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the mathematical explanation for the V=D equality.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "fdc0ee81-6be8-462a-a10b-e2691648b0f0",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C61",
+      "claim": "Higher or lower diffusion rates would slide the hunchback profile towards the anterior or the posterior end of the embryo, respectively, similarly to an increase or a decrease of the number of Bicoid binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that these changes would result in modifications of hunchback activation profiles: higher or lower diffusion rates slide the hunchback profile towards the anterior or the posterior end of the embryo, respectively, similarly to an increase or a decrease of the number of Bicoid binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "f88d498c-b059-44be-870e-3e0e8a74d680",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C62",
+      "claim": "A reduced number of Bcd sites results in a strong anterior displacement of the hb expression border compared to six binding sites, regardless of the activation rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we make a prediction for the displacement of the anterior-posterior boundary in mutants, showing that a reduced numbers of Bcd sites results in a strong anterior displacement of the hb expression border compared to six binding sites, regardless of the activation rule (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a prediction and shown in Figure 6e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "02fa893f-4106-4ec5-ae0f-11cb9e437cad",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "claim_id": "C63",
+      "claim": "Continuous update schemes achieve the 2% EL positional resolution in less than 1 minute.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the hunchback promoter in the fly embryo, the continuous update schemes achieve the 2% EL positional resolution in less than 1 min, always outperforming fixed-time integration strategies for the same promoter architecture (see Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d27ea946-ba10-46df-bf65-4bcb03013e50",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Fixed-time decision strategies based on Berg-Purcell averaging cannot achieve accurate anterior-posterior decisions within the short timescales of early nuclear cycles. The authors show through calculations that fixed-time sampling would require approximately 50 minutes near the boundary region to reach standard error levels, far exceeding the ~3 minute experimental timeframe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C18, and C20 collectively demonstrate through mathematical modeling (Figure 1c-d) that traditional fixed-time concentration sampling strategies are incompatible with observed embryological timescales. The calculations are based on established Berg-Purcell theory and show quantitative agreement that decision times would exceed 50 minutes near the boundary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "e8cac42a-56fd-4d8c-a5ac-eab9f9f6a088",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "On-the-fly decision schemes using Sequential Probability Ratio Test (SPRT) achieve accurate positional decisions in less than 1 minute, well within nuclear cycle 11 duration. The authors identify promoter architectures that satisfy all embryological constraints and reach required precision within a few minutes for a wide range of activation rules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C36, C37, and C63 are strongly supported by the mathematical modeling framework and optimization results shown in Figures 2-4. The methodology derives from established SPRT theory, and the authors demonstrate through systematic parameter exploration that multiple promoter architectures can achieve sub-3-minute decision times while satisfying biological constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "e878f4e1-f472-45b5-836c-e83136869dc4",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Fast decision-making architectures display short median DNA-bound times (~0.5s) with non-exponential distributions due to high cooperativity. These short binding times are instrumental in achieving speed-accuracy tradeoffs, with rare long binding events in the distribution tail enabling longer activation periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45, C57-C58 are supported by Monte Carlo simulations (Figure 4d) showing agreement with experimental measurements from Mir et al. The non-exponential distribution with short median but longer mean bound times provides a mechanistic explanation for how rapid binding/unbinding can coexist with sustained activation events through cooperative binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "cd52d78d-ef79-48f1-9a4b-e30754aaf384",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Fast decisions require a small number of Bicoid-binding sites (less than three) to be occupied for gene activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by the optimization analysis shown in Figure 4a, which systematically explores different activation rules (k values). The results demonstrate that k=1, 2, or 3 activation rules achieve the fastest decision times while satisfying biological constraints, with higher k values failing to meet time requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "1d001cd1-6516-4e94-8e4d-77a8d8aba616",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The equality V=D between drift and diffusion coefficients in decision-making space arises from the martingale property of conditional expectations for likelihood ratios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 is supported by mathematical derivation in the text showing that Bayesian updating constrains likelihood variations such that expected changes in probability must vanish, leading to V=D. This is verified through explicit examples in the appendices and represents a novel theoretical contribution to SPRT methodology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "7131fa4c-a62b-4b61-99a1-152b0532d07f",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model predicts that changes in diffusion rates or number of Bicoid-binding sites will shift the hunchback expression boundary along the anterior-posterior axis. Reduced numbers of binding sites cause strong anterior displacement of the expression border.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C62 are supported by model predictions shown in Figure 6e with quantified boundary displacements. These predictions follow logically from the model structure and provide testable hypotheses, though they remain unvalidated experimentally in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "6e927a1c-e71a-4111-a988-16744b8e7a19",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Adding extra binding sites through enhancers increases computing power and can reduce decision time to about 60% of the performance of best architectures without enhancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by the enhancer-promoter model analysis described in the text. The ~6% improvement for single enhancer and ~40% improvement with additional promoter sites are quantified results from the model, though the enhancer model itself is simplified and may not capture full biological complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "d626dc03-4163-44f6-86f7-684f23752220",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Equilibrium promoter architectures perform very well and achieve short decision times, while non-equilibrium architectures do not significantly improve performance except for increasing Hill coefficients without adding binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by comparative analysis of equilibrium vs. non-equilibrium architectures throughout the results. The finding that equilibrium architectures suffice for fast decisions is demonstrated through the optimization results in Figure 4, while the Hill coefficient effect of non-equilibrium dynamics is noted as a secondary benefit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "7ae88d96-dc5a-48c4-a819-6034a2b401ad",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The combination of high cooperativity and high temporal variance due to bursty dynamics is a possible recipe for accurate readout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by the integration of results showing that optimal architectures display both high cooperativity (Figure 4b) and bursty dynamics (Figure 4c-d). The mechanistic connection between these features and accurate readout is demonstrated through the drift-diffusion analysis and residence time distributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "77e703da-489f-43a1-8840-cd1951fe2f9d",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "High Hill coefficients in the hunchback response are associated with frequent visits of extreme expression states where binding sites are either all empty or all occupied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by citation to Tran et al. 2018 and illustrated in Figure 4c showing residence time distributions. The architectures with higher Hill coefficient constraints (H>5) show increased occupancy of extreme states (0 and 6 bound sites) compared to unconstrained architectures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "b4808a8a-360f-4c47-98a4-c57ec1e9d816",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Hunchback genes make anterior-posterior developmental decisions in less than 3 minutes by reading out Bicoid morphogen positional information during nuclear cycles 10-13.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5, and C13 are supported by citations to Lucas et al. 2018 and represent established experimental observations that motivate the theoretical work. These claims provide the empirical foundation and time constraint that the modeling work addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "1ee0217e-56c6-4a85-a42c-151364d98fe9",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The Drosophila early embryo developmental system involves a syncytium of ~6000 nuclei that read out the Bicoid gradient to establish sharp hunchback expression boundaries defining anterior-posterior regions, with positional information near the minimum required for observed precision and subject to information loss through gene cascades.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C12 establish the biological context through citations to established literature (O'Farrell et al., N\u00fcsslein-Volhard et al., Houchmandzadeh et al., Gregor et al., Petkova et al., Lucas et al.). These background claims are well-supported by the cited literature and provide essential context for the modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "0564d2f5-8869-435a-aa4a-babb35b59fe3",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Bicoid concentration decreases exponentially along the AP axis by a factor of five, with a boundary region width of 2% egg length where nuclei convert the graded gradient into sharp hunchback expression through six experimentally identified binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16, C25, and C29 describe the model system parameters based on experimental measurements and are supported by citations and Figure 1a. These quantitative parameters are well-established in the literature and form the basis for the modeling framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "7a94760b-8d42-4981-ac69-7ba924c7942e",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Berg and Purcell derived the seminal tradeoff between integration time and readout accuracy for concentration sensing based on average receptor binding occupancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 accurately describes the Berg-Purcell 1977 work and is properly cited. This historical context is correctly presented and relevant to understanding why alternative decision strategies are needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    },
+    {
+      "id": "f3adf7a1-88f9-4a64-a63e-cbf2700eeeba",
+      "content_id": "49a4591b-d936-42aa-a90a-70721f3cb5a3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The model focuses on Bicoid readout through six binding sites in the proximal promoter, excluding Hunchback feedback, other maternal gradients, and enhancers based on timing constraints and experimental evidence that Bicoid is the leading factor in fate determination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 describe modeling assumptions that are justified by citations to Perry et al. 2011 and Ochoa-Espinosa et al. 2009. The rationale for these simplifications is reasonable given the goal of demonstrating sufficiency of Bicoid readout alone, though the exclusions represent limitations of the model scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:37.398179Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "87d49411-c983-4500-88e1-4ca47df3ac01",
+      "result_id": "d27ea946-ba10-46df-bf65-4bcb03013e50"
+    },
+    {
+      "claim_id": "399e49a9-6e5b-45d1-96df-606a0fc66f3b",
+      "result_id": "d27ea946-ba10-46df-bf65-4bcb03013e50"
+    },
+    {
+      "claim_id": "09974ada-72e0-45ed-9f04-913ae8285839",
+      "result_id": "d27ea946-ba10-46df-bf65-4bcb03013e50"
+    },
+    {
+      "claim_id": "1ab0b177-24ea-40ba-89ec-0e034f8074e9",
+      "result_id": "e8cac42a-56fd-4d8c-a5ac-eab9f9f6a088"
+    },
+    {
+      "claim_id": "5f68f59a-ebca-4ba3-a217-20ce83ec72cb",
+      "result_id": "e8cac42a-56fd-4d8c-a5ac-eab9f9f6a088"
+    },
+    {
+      "claim_id": "9c559024-972e-409b-85a6-0af48f1155b2",
+      "result_id": "e8cac42a-56fd-4d8c-a5ac-eab9f9f6a088"
+    },
+    {
+      "claim_id": "02fa893f-4106-4ec5-ae0f-11cb9e437cad",
+      "result_id": "e8cac42a-56fd-4d8c-a5ac-eab9f9f6a088"
+    },
+    {
+      "claim_id": "a7c264ea-11f1-4b27-a865-1dd56a3783b1",
+      "result_id": "e878f4e1-f472-45b5-836c-e83136869dc4"
+    },
+    {
+      "claim_id": "9b45b5ac-07c5-46f2-93e8-7457808e408e",
+      "result_id": "e878f4e1-f472-45b5-836c-e83136869dc4"
+    },
+    {
+      "claim_id": "84eda8c7-7836-4b7b-8597-8767df457145",
+      "result_id": "e878f4e1-f472-45b5-836c-e83136869dc4"
+    },
+    {
+      "claim_id": "1af513f6-36c6-4691-b305-b2a67a75bb58",
+      "result_id": "e878f4e1-f472-45b5-836c-e83136869dc4"
+    },
+    {
+      "claim_id": "687876ca-e98e-47ad-b3b2-222cce158007",
+      "result_id": "e878f4e1-f472-45b5-836c-e83136869dc4"
+    },
+    {
+      "claim_id": "929b5644-f458-48fd-8be8-77b6b1d26a18",
+      "result_id": "e878f4e1-f472-45b5-836c-e83136869dc4"
+    },
+    {
+      "claim_id": "2a171ef8-bfa4-4a89-b0a2-5b3704de48dd",
+      "result_id": "cd52d78d-ef79-48f1-9a4b-e30754aaf384"
+    },
+    {
+      "claim_id": "770ea292-9490-4d4e-97a3-dca4f429a227",
+      "result_id": "1d001cd1-6516-4e94-8e4d-77a8d8aba616"
+    },
+    {
+      "claim_id": "fdc0ee81-6be8-462a-a10b-e2691648b0f0",
+      "result_id": "7131fa4c-a62b-4b61-99a1-152b0532d07f"
+    },
+    {
+      "claim_id": "f88d498c-b059-44be-870e-3e0e8a74d680",
+      "result_id": "7131fa4c-a62b-4b61-99a1-152b0532d07f"
+    },
+    {
+      "claim_id": "0ad1d5f4-2e06-414e-80ac-37b6f1264cab",
+      "result_id": "6e927a1c-e71a-4111-a988-16744b8e7a19"
+    },
+    {
+      "claim_id": "7e8c9c46-d462-4311-9beb-cfe45f01cfe0",
+      "result_id": "d626dc03-4163-44f6-86f7-684f23752220"
+    },
+    {
+      "claim_id": "6dddc668-2462-4352-9ef8-357a2f8f8336",
+      "result_id": "d626dc03-4163-44f6-86f7-684f23752220"
+    },
+    {
+      "claim_id": "2f8a5e00-6550-478f-9b7e-4deb5889dca2",
+      "result_id": "d626dc03-4163-44f6-86f7-684f23752220"
+    },
+    {
+      "claim_id": "29eec910-fae7-4a31-a6ef-8c2064bedbdd",
+      "result_id": "7ae88d96-dc5a-48c4-a819-6034a2b401ad"
+    },
+    {
+      "claim_id": "860bc84f-6b11-4960-84db-d9838bd46dc6",
+      "result_id": "77e703da-489f-43a1-8840-cd1951fe2f9d"
+    },
+    {
+      "claim_id": "a6cd5a82-7691-4cc3-95cc-8ff40ea1617e",
+      "result_id": "b4808a8a-360f-4c47-98a4-c57ec1e9d816"
+    },
+    {
+      "claim_id": "a3b3f995-2561-45c2-8b16-b54f5cd9c622",
+      "result_id": "b4808a8a-360f-4c47-98a4-c57ec1e9d816"
+    },
+    {
+      "claim_id": "8bb7dd19-3da2-4e79-9fa0-9f48723aa629",
+      "result_id": "b4808a8a-360f-4c47-98a4-c57ec1e9d816"
+    },
+    {
+      "claim_id": "c71d5837-6285-4589-bbf2-fcf3e5320d91",
+      "result_id": "1ee0217e-56c6-4a85-a42c-151364d98fe9"
+    },
+    {
+      "claim_id": "6cddabec-dc6e-44c5-95da-9f6b52e5ef1b",
+      "result_id": "1ee0217e-56c6-4a85-a42c-151364d98fe9"
+    },
+    {
+      "claim_id": "ed1dce27-3ab4-4d68-9d4b-631890daea91",
+      "result_id": "1ee0217e-56c6-4a85-a42c-151364d98fe9"
+    },
+    {
+      "claim_id": "72e97f74-82af-4876-bc08-6e2835b33b99",
+      "result_id": "1ee0217e-56c6-4a85-a42c-151364d98fe9"
+    },
+    {
+      "claim_id": "aeaa8dae-a9b2-4966-848f-c743c02bb6c2",
+      "result_id": "1ee0217e-56c6-4a85-a42c-151364d98fe9"
+    },
+    {
+      "claim_id": "c96a2247-1203-4cee-873c-7779135274d2",
+      "result_id": "1ee0217e-56c6-4a85-a42c-151364d98fe9"
+    },
+    {
+      "claim_id": "bfffaae3-d987-418d-ba3f-33d62ea2c172",
+      "result_id": "1ee0217e-56c6-4a85-a42c-151364d98fe9"
+    },
+    {
+      "claim_id": "869e1c18-a885-4a97-be97-722e4aa52ba8",
+      "result_id": "1ee0217e-56c6-4a85-a42c-151364d98fe9"
+    },
+    {
+      "claim_id": "939e0dc8-a7cf-4c46-a17b-3d2c675ab61e",
+      "result_id": "0564d2f5-8869-435a-aa4a-babb35b59fe3"
+    },
+    {
+      "claim_id": "3853ec9d-f829-427a-b218-2dfc5dd34fb1",
+      "result_id": "0564d2f5-8869-435a-aa4a-babb35b59fe3"
+    },
+    {
+      "claim_id": "23fa26ba-09b0-4b6d-a157-31e7fac6e253",
+      "result_id": "0564d2f5-8869-435a-aa4a-babb35b59fe3"
+    },
+    {
+      "claim_id": "4a2c22af-47c2-4272-902e-15aef41b355a",
+      "result_id": "0564d2f5-8869-435a-aa4a-babb35b59fe3"
+    },
+    {
+      "claim_id": "777a5a08-cdb8-4fe9-9f45-9f53693ea857",
+      "result_id": "0564d2f5-8869-435a-aa4a-babb35b59fe3"
+    },
+    {
+      "claim_id": "eb531a6a-62e7-4ff0-8426-95c9f3201a37",
+      "result_id": "7a94760b-8d42-4981-ac69-7ba924c7942e"
+    },
+    {
+      "claim_id": "9133ed98-413b-466e-a1d7-655e7795c109",
+      "result_id": "f3adf7a1-88f9-4a64-a63e-cbf2700eeeba"
+    },
+    {
+      "claim_id": "fe37d0cb-57a8-490b-a93f-20bbfdff4a0a",
+      "result_id": "f3adf7a1-88f9-4a64-a63e-cbf2700eeeba"
+    },
+    {
+      "claim_id": "4e6e144a-35d1-4bc6-82ff-dc61f9a7c8ae",
+      "result_id": "f3adf7a1-88f9-4a64-a63e-cbf2700eeeba"
+    }
+  ],
+  "comparisons": []
+}

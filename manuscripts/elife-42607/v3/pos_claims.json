@@ -1,0 +1,1913 @@
+[
+  {
+    "query": "A key goal of model-based cognitive neuroscience is to estimate the trial-by-trial fluctuations of cognitive model parameters in order to link these fluctuations to brain signals.",
+    "matched_segment": "A key goal of model-based cognitive neuroscience is to estimate the trial-by-trial fluctuations of cognitive model parameters in order to link these fluctuations to brain signals.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 23
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 202
+    },
+    "len": 179
+  },
+  {
+    "query": "However, previously developed methods are limited by being difficult to implement, time-consuming, or model-specific.",
+    "matched_segment": "However, previously developed methods are limited by being difficult to implement, time-consuming, or model-specific.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 203
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 320
+    },
+    "len": 117
+  },
+  {
+    "query": "Here, we propose an easy, efficient and general approach to estimating trial-wise changes in parameters: Leave-One-Trial-Out (LOTO).",
+    "matched_segment": "Here, we propose an easy, efficient and general approach to estimating trial-wise changes in parameters: Leave-One-Trial-Out (LOTO).",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 321
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 453
+    },
+    "len": 132
+  },
+  {
+    "query": "The rationale behind LOTO is that the difference between parameter estimates for the complete dataset and for the dataset with one omitted trial reflects the parameter value in the omitted trial.",
+    "matched_segment": "The rationale behind LOTO is that the difference between parameter estimates for the complete dataset and for the dataset with one omitted trial reflects the parameter value in the omitted trial.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 454
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 649
+    },
+    "len": 195
+  },
+  {
+    "query": "We show that LOTO is superior to estimating parameter values from single trials and compare it to previously proposed approaches.",
+    "matched_segment": "We show that LOTO is superior to estimating parameter values from single trials and compare it to previously proposed approaches.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 650
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 779
+    },
+    "len": 129
+  },
+  {
+    "query": "Furthermore, the method makes it possible to distinguish true variability in a parameter from noise and from other sources of variability.",
+    "matched_segment": "Furthermore, the method makes it possible to distinguish true variability in a parameter from noise and from other sources of variability.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 780
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 918
+    },
+    "len": 138
+  },
+  {
+    "query": "Model-based cognitive neuroscience attempts to link mathematical models of cognitive processes to neural data in order to advance our knowledge of the mind and brain (Forstmann et al., 2011).",
+    "matched_segment": "Model-based cognitive neuroscience attempts to link mathematical models of cognitive processes to neural data in order to advance our knowledge of the mind and brain (Forstmann et al., 2011).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 191
+    },
+    "len": 191
+  },
+  {
+    "query": "A particularly promising but challenging approach in this regard is to derive trial-specific values for parameters of cognitive models and to relate these values to trial-specific brain data, which offers insights into cognitive and neural principles at a highly detailed level of analysis (Gluth and Rieskamp, 2017; van Maanen et al., 2011; Turner et al., 2017; Wiecki et al., 2013).",
+    "matched_segment": "A particularly promising but challenging approach in this regard is to derive trial-specific values for parameters of cognitive models and to relate these values to trial-specific brain data, which offers insights into cognitive and neural principles at a highly detailed level of analysis (Gluth and Rieskamp, 2017; van Maanen et al., 2011; Turner et al., 2017; Wiecki et al., 2013).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 192
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 576
+    },
+    "len": 384
+  },
+  {
+    "query": "Primarily, the difficulty in linking momentary fluctuations in cognitive states to neural measures lies in specifying the variability in the cognitive model.",
+    "matched_segment": "Primarily, the difficulty in linking momentary fluctuations in cognitive states to neural measures lies in specifying the variability in the cognitive model.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 157
+    },
+    "len": 157
+  },
+  {
+    "query": "Often, cognitive models specify the distribution from which this variability is assumed to originate (e.g., a normal distribution), but remain silent about its direction and extent in single trials.",
+    "matched_segment": "Often, cognitive models specify the distribution from which this variability is assumed to originate (e.g., a normal distribution), but remain silent about its direction and extent in single trials.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 158
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 356
+    },
+    "len": 198
+  },
+  {
+    "query": "Previous attempts to capture parameter variability have often been specific to a single model.",
+    "matched_segment": "Previous attempts to capture parameter variability have often been specific to a single model.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 357
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 451
+    },
+    "len": 94
+  },
+  {
+    "query": "For example, van Maanen et al. (2011) derived maximum likelihood estimates for two single-trial parameters of the Linear Ballistic Accumulator (LBA) model (Brown and Heathcote, 2008).",
+    "matched_segment": "For example, van Maanen et al. (2011) derived maximum likelihood estimates for two single-trial parameters of the Linear Ballistic Accumulator (LBA) model (Brown and Heathcote, 2008).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 452
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 635
+    },
+    "len": 183
+  },
+  {
+    "query": "The LBA belongs to the class of sequential sampling models of decision making, which assume that decisions arise from an evidence-accumulation process that continues until a threshold has been reached, indicating that the required amount of evidence for a decision has been gathered.",
+    "matched_segment": "The LBA belongs to the class of sequential sampling models of decision making, which assume that decisions arise from an evidence-accumulation process that continues until a threshold has been reached, indicating that the required amount of evidence for a decision has been gathered.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 740
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 1023
+    },
+    "len": 283
+  },
+  {
+    "query": "Three critical parameters of the LBA are the rate of evidence accumulation (drift rate), the amount of evidence required to reach a decision (decision threshold), and the point from which the accumulation begins (start point).",
+    "matched_segment": "Three critical parameters of the LBA are the rate of evidence accumulation (drift rate), the amount of evidence required to reach a decision (decision threshold), and the point from which the accumulation begins (start point).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 1024
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 1250
+    },
+    "len": 226
+  },
+  {
+    "query": "Importantly, sequential sampling models such as LBA predict accuracy rates and the shape of response times (RT) distributions conjointly.",
+    "matched_segment": "Importantly, sequential sampling models such as LBA predict accuracy rates and the shape of response times (RT) distributions conjointly.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 1251
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 1388
+    },
+    "len": 137
+  },
+  {
+    "query": "Wiecki et al. (2013) introduced a hierarchical Bayesian modeling tool for another sequential sampling model, the Diffusion Decision Model (DDM) (Ratcliff, 1978).",
+    "matched_segment": "Wiecki et al. (2013) introduced a hierarchical Bayesian modeling tool for another sequential sampling model, the Diffusion Decision Model (DDM) (Ratcliff, 1978).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 1389
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 1550
+    },
+    "len": 161
+  },
+  {
+    "query": "Their tool allows the regresssion of single-trial parameters of the DDM onto trial-by-trial neural measures such as electroencephalography (EEG) or event-related functional magnetic resonance imaging (fMRI) recordings (similar regression-based approaches were proposed by Hawkins et al. (2017) and by Nunez et al. (2017)).",
+    "matched_segment": "Their tool allows the regresssion of single-trial parameters of the DDM onto trial-by-trial neural measures such as electroencephalography (EEG) or event-related functional magnetic resonance imaging (fMRI) recordings (similar regression-based approaches were proposed by Hawkins et al. (2017) and by Nunez et al. (2017)).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 1551
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 1873
+    },
+    "len": 322
+  },
+  {
+    "query": "Turner and colleagues proposed a related method, whose rationale is to model behavioral and neuroimaging data jointly under a common (hierarchical Bayesian) umbrella (Palestro et al., 2018; Turner et al., 2013; Turner et al., 2015).",
+    "matched_segment": "Turner and colleagues proposed a related method, whose rationale is to model behavioral and neuroimaging data jointly under a common (hierarchical Bayesian) umbrella (Palestro et al., 2018; Turner et al., 2013; Turner et al., 2015).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 1874
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 2106
+    },
+    "len": 232
+  },
+  {
+    "query": "Although the approach was again tested within the DDM framework, it may be generalized to any other cognitive model.",
+    "matched_segment": "Although the approach was again tested within the DDM framework, it may be generalized to any other cognitive model.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 2107
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 2223
+    },
+    "len": 116
+  },
+  {
+    "query": "As we have argued before, however, the complexity of this approach might discourage many cognitive neuroscientists from applying it (Gluth and Rieskamp, 2017).",
+    "matched_segment": "As we have argued before, however, the complexity of this approach might discourage many cognitive neuroscientists from applying it (Gluth and Rieskamp, 2017).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 2224
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 2383
+    },
+    "len": 159
+  },
+  {
+    "query": "We recently proposed a comparatively simple and very general approach to capture trial-by-trial variability in cognitive model parameters (Gluth and Rieskamp, 2017).",
+    "matched_segment": "We recently proposed a comparatively simple and very general approach to capture trial-by-trial variability in cognitive model parameters (Gluth and Rieskamp, 2017).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 165
+    },
+    "len": 165
+  },
+  {
+    "query": "Again, the approach is based on Bayesian principles: it specifies the posterior probability of a parameter value in a specific trial, using the 'average' parameter value across all trials and the behavior in the specific trial as the prior and likelihood, respectively.",
+    "matched_segment": "Again, the approach is based on Bayesian principles: it specifies the posterior probability of a parameter value in a specific trial, using the 'average' parameter value across all trials and the behavior in the specific trial as the prior and likelihood, respectively.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 166
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 435
+    },
+    "len": 269
+  },
+  {
+    "query": "While this approach is both general and comparatively simple, it can require high amounts of computation time, in particular when one seeks to estimate variability in more than one parameter simultaneously.",
+    "matched_segment": "While this approach is both general and comparatively simple, it can require high amounts of computation time, in particular when one seeks to estimate variability in more than one parameter simultaneously.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1057
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1263
+    },
+    "len": 206
+  },
+  {
+    "query": "In the current work, we propose a novel approach to capturing trial-by-trial variability in cognitive model parameters that tries to overcome the shortcomings of specificity, complexity, and inefficiency: Leave-One-Trial-Out (LOTO).",
+    "matched_segment": "In the current work, we propose a novel approach to capturing trial-by-trial variability in cognitive model parameters that tries to overcome the shortcomings of specificity, complexity, and inefficiency: Leave-One-Trial-Out (LOTO).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 232
+    },
+    "len": 232
+  },
+  {
+    "query": "Briefly, the idea of LOTO is that the difference in the parameter estimates that are based on all trials vs. those that are based on all trials except a single trial provides a reflection of the 'true' parameter value in the left-out trial.",
+    "matched_segment": "Briefly, the idea of LOTO is that the difference in the parameter estimates that are based on all trials vs. those that are based on all trials except a single trial provides a reflection of the 'true' parameter value in the left-out trial.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 233
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 473
+    },
+    "len": 240
+  },
+  {
+    "query": "In general, it should be obvious that LOTO does not provide single-trial parameter estimates in an absolute sense. Rather, the method provides information about the direction and (relative) amount of deviation of single-trial parameter values from the average.",
+    "matched_segment": "In general, it should be obvious that LOTO does not provide single-trial parameter estimates in an absolute sense. Rather, the method provides information about the direction and (relative) amount of deviation of single-trial parameter values from the average.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[3]",
+      "char_offset": 411
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[3]",
+      "char_offset": 671
+    },
+    "len": 260
+  },
+  {
+    "query": "Equation 3 also reveals a general property of LOTO, namely that the change in LOTO is inversely related to the number of trials: naturally, the influence of a single trial on the estimation of a parameter decreases as the number of trials increases.",
+    "matched_segment": "Equation 3 also reveals a general property of LOTO, namely that the change in LOTO is inversely related to the number of trials: naturally, the influence of a single trial on the estimation of a parameter decreases as the number of trials increases.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[3]",
+      "char_offset": 328
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[3]",
+      "char_offset": 577
+    },
+    "len": 249
+  },
+  {
+    "query": "As can be seen in the left panel of Figure 1A, the Fisher information of the Bernoulli distribution indicates that observations are more informative about the underlying parameter at the extremes.",
+    "matched_segment": "As can be seen in the left panel of Figure 1A, the Fisher information of the Bernoulli distribution indicates that observations are more informative about the underlying parameter at the extremes.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[5]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[5]",
+      "char_offset": 196
+    },
+    "len": 196
+  },
+  {
+    "query": "As predicted by the Fisher information, the correlation is higher when \u03b8 is close to 0 or close to 1.",
+    "matched_segment": "As predicted by the Fisher information, the correlation is higher when \u03b8 is close to 0 or close to 1.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[5]",
+      "char_offset": 798
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[5]",
+      "char_offset": 899
+    },
+    "len": 101
+  },
+  {
+    "query": "Fortunately, the performance can be improved by assuming that \u03b8 does not change from trial to trial but remains constant over a certain number of trials, which we denote m. The larger m, the more different values LOTO can take (and at the same time, our confidence in the estimate of \u03b8 increases).",
+    "matched_segment": "Fortunately, the performance can be improved by assuming that \u03b8 does not change from trial to trial but remains constant over a certain number of trials, which we denote m. The larger m, the more different values LOTO can take (and at the same time, our confidence in the estimate of \u03b8 increases).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[6]",
+      "char_offset": 344
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[6]",
+      "char_offset": 641
+    },
+    "len": 297
+  },
+  {
+    "query": "Figure 1B illustrates the increases in Fisher information and LOTO's performance as m increases.",
+    "matched_segment": "Figure 1B illustrates the increases in Fisher information and LOTO's performance as m increases.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[7]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[7]",
+      "char_offset": 96
+    },
+    "len": 96
+  },
+  {
+    "query": "Thus, it might be more promising to track fluctuations over multiple trials (e.g., short blocks or sessions) than to try to capture parameter values in each and every trial.",
+    "matched_segment": "Thus, it might be more promising to track fluctuations over multiple trials (e.g., short blocks or sessions) than to try to capture parameter values in each and every trial.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[7]",
+      "char_offset": 274
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[7]",
+      "char_offset": 447
+    },
+    "len": 173
+  },
+  {
+    "query": "We see that LOTO can be applied to the Bernoulli and binomial distributions, but it should be (again) noted that LOTO is not particularly helpful in these cases. This is because LOTO will not provide us with any novel information over and above what is already known from the observations.",
+    "matched_segment": "We see that LOTO can be applied to the Bernoulli and binomial distributions, but it should be (again) noted that LOTO is not particularly helpful in these cases. This is because LOTO will not provide us with any novel information over and above what is already known from the observations.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[8]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[8]",
+      "char_offset": 289
+    },
+    "len": 289
+  },
+  {
+    "query": "In principle, there are two ways to make LOTO (and any other method for tracking trial-by-trial variability in parameters) more useful. First, one could introduce variations in the task, with these variations being directly linked to the predictions of the cognitive model. Second, one could apply cognitive models that predict a 'richer' set of data (e.g., sequential sampling models that predict accuracy rates and RT distributions conjointly; see above).",
+    "matched_segment": "In principle, there are two ways to make LOTO (and any other method for tracking trial-by-trial variability in parameters) more useful. First, one could introduce variations in the task, with these variations being directly linked to the predictions of the cognitive model. Second, one could apply cognitive models that predict a 'richer' set of data (e.g., sequential sampling models that predict accuracy rates and RT distributions conjointly; see above).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[8]",
+      "char_offset": 460
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[8]",
+      "char_offset": 917
+    },
+    "len": 457
+  },
+  {
+    "query": "Importantly, we see that in contrast to the derivatives of the binomial distribution, the derivatives of the HD model depend on features of the task, namely on the amount and delay of the delayed option (i.e., xj and dj) and on the amount of the immediate option (i.e., xi), which is hidden in pi.",
+    "matched_segment": "Importantly, we see that in contrast to the derivatives of the binomial distribution, the derivatives of the HD model depend on features of the task, namely on the amount and delay of the delayed option (i.e., xj and dj) and on the amount of the immediate option (i.e., xi), which is hidden in pi.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[4]",
+      "char_offset": 69
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[4]",
+      "char_offset": 366
+    },
+    "len": 297
+  },
+  {
+    "query": "Thus, by setting the derivatives in Equation 8a and Equation 8b to 0 to obtain the MLEs, parameter \u03bat will take the highest possible value (i.e., \u03bat = 1) whenever the immediate option is chosen and the lowest possible value (i.e., \u03bat = 0) whenever the delayed option is chosen.",
+    "matched_segment": "Thus, by setting the derivatives in Equation 8a and Equation 8b to 0 to obtain the MLEs, parameter \u03bat will take the highest possible value (i.e., \u03bat = 1) whenever the immediate option is chosen and the lowest possible value (i.e., \u03bat = 0) whenever the delayed option is chosen.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[4]",
+      "char_offset": 604
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[4]",
+      "char_offset": 881
+    },
+    "len": 277
+  },
+  {
+    "query": "Critically, however, this caveat disappears as soon as each option (i and j) is chosen at least once.",
+    "matched_segment": "Critically, however, this caveat disappears as soon as each option (i and j) is chosen at least once.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[5]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[5]",
+      "char_offset": 101
+    },
+    "len": 101
+  },
+  {
+    "query": "As explicated above, these two MLEs will depend on the task features in the n/n\u20131 trials as long as both choice options (e.g., immediate, delayed) have been chosen at least once in the n/n\u20131 trials (so that we get non-extreme estimates of \u03ba from the n/n\u20131 trials).",
+    "matched_segment": "As explicated above, these two MLEs will depend on the task features in the n/n\u20131 trials as long as both choice options (e.g., immediate, delayed) have been chosen at least once in the n/n\u20131 trials (so that we get non-extreme estimates of \u03ba from the n/n\u20131 trials).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[6]",
+      "char_offset": 223
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[6]",
+      "char_offset": 487
+    },
+    "len": 264
+  },
+  {
+    "query": "Here, we show that LOTO but not single-trial fitting of parameter \u03ba of the HD model is able to extract additional information about the true \u03bat, over and above what is already provided by the observations.",
+    "matched_segment": "Here, we show that LOTO but not single-trial fitting of parameter \u03ba of the HD model is able to extract additional information about the true \u03bat, over and above what is already provided by the observations.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[7]",
+      "char_offset": 443
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[7]",
+      "char_offset": 648
+    },
+    "len": 205
+  },
+  {
+    "query": "As can be seen in Figure 3, the estimates of LOTO (left panel) but not of single-trial fitting (right panel) are correlated with the true \u03bat after accounting for the observations (i.e., whether the immediate or the delayed option was chosen).",
+    "matched_segment": "As can be seen in Figure 3, the estimates of LOTO (left panel) but not of single-trial fitting (right panel) are correlated with the true \u03bat after accounting for the observations (i.e., whether the immediate or the delayed option was chosen).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[7]",
+      "char_offset": 910
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[7]",
+      "char_offset": 1152
+    },
+    "len": 242
+  },
+  {
+    "query": "In other words, the positive correlation between \u03bat and the single-trial estimates (dashed magenta line) can be attributed entirely to the fact that higher values of \u03bat lead to more choices of the immediate option, but the positive correlation between \u03bat and the LOTO estimates is further driven by how expectable or surprising a decision is (given the trial features xi,t, xj,t, and dj,t).",
+    "matched_segment": "In other words, the positive correlation between \u03bat and the single-trial estimates (dashed magenta line) can be attributed entirely to the fact that higher values of \u03bat lead to more choices of the immediate option, but the positive correlation between \u03bat and the LOTO estimates is further driven by how expectable or surprising a decision is (given the trial features xi,t, xj,t, and dj,t).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[7]",
+      "char_offset": 1153
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[7]",
+      "char_offset": 1543
+    },
+    "len": 390
+  },
+  {
+    "query": "Using LOTO to recover trial-specific parameter values of models that predict only binary outcomes, such as choices or accuracy rates, is possible but somewhat limited.",
+    "matched_segment": "Using LOTO to recover trial-specific parameter values of models that predict only binary outcomes, such as choices or accuracy rates, is possible but somewhat limited.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[1]",
+      "char_offset": 167
+    },
+    "len": 167
+  },
+  {
+    "query": "This can be seen when looking at the left panel of Figure 3, which suggests that LOTO's estimates are always higher when the immediate option was chosen.",
+    "matched_segment": "This can be seen when looking at the left panel of Figure 3, which suggests that LOTO's estimates are always higher when the immediate option was chosen.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[1]",
+      "char_offset": 168
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[1]",
+      "char_offset": 321
+    },
+    "len": 153
+  },
+  {
+    "query": "However, this strict choice-dependent separation might not be plausible; for example, it could very well be that the delayed option is chosen in a trial in which this option offered a very high reward xj with a very low delay dj, even though the actual discount factor in that trial (i.e., \u03bat) was higher than on average. To overcome this limitation, we suggest that the model is extended so that it can take RT data into account.",
+    "matched_segment": "However, this strict choice-dependent separation might not be plausible; for example, it could very well be that the delayed option is chosen in a trial in which this option offered a very high reward xj with a very low delay dj, even though the actual discount factor in that trial (i.e., \u03bat) was higher than on average. To overcome this limitation, we suggest that the model is extended so that it can take RT data into account.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[1]",
+      "char_offset": 741
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[1]",
+      "char_offset": 1171
+    },
+    "len": 430
+  },
+  {
+    "query": "For HD-LBA, the correlation is much improved, and LOTO's estimates do not strictly separate choices of the immediate and delayed options anymore. The improved performance of LOTO is confirmed when comparing the correlations of all 30 simulated participants (Figure 4C; immediate chosen: t(29) = 10.79, p < .001, Cohen's d = 1.97, Bayes Factor in favor of the alternative hypothesis BF10 > 1,000; delayed chosen: t(29) = 8.79, p < .001, d = 1.61, BF10 > 1,000).",
+    "matched_segment": "For HD-LBA, the correlation is much improved, and LOTO's estimates do not strictly separate choices of the immediate and delayed options anymore. The improved performance of LOTO is confirmed when comparing the correlations of all 30 simulated participants (Figure 4C; immediate chosen: t(29) = 10.79, p < .001, Cohen's d = 1.97, Bayes Factor in favor of the alternative hypothesis BF10 > 1,000; delayed chosen: t(29) = 8.79, p < .001, d = 1.61, BF10 > 1,000).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[2]",
+      "char_offset": 1178
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[2]",
+      "char_offset": 1638
+    },
+    "len": 460
+  },
+  {
+    "query": "Notably, the single-trial fitting method applied to the HD-LBA model is also able to capture some variability over and above the information that is already contained in the decisions (Figure 4). This is because RT (and the interplay between RT and decisions) add further information about \u03bat that can be picked up by single-trial fitting.",
+    "matched_segment": "Notably, the single-trial fitting method applied to the HD-LBA model is also able to capture some variability over and above the information that is already contained in the decisions (Figure 4). This is because RT (and the interplay between RT and decisions) add further information about \u03bat that can be picked up by single-trial fitting.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[3]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[3]",
+      "char_offset": 339
+    },
+    "len": 339
+  },
+  {
+    "query": "Nonetheless, applying LOTO to HD-LBA yields significantly better recovery of the trial-wise parameter values (Figure 4C; immediate chosen: t(29) = 7.24, p < .001, d = 1.32, BF10 > 1,000; delayed chosen: t(29) = 7.71, p < .001, d = 1.41, BF10 > 1,000).",
+    "matched_segment": "Nonetheless, applying LOTO to HD-LBA yields significantly better recovery of the trial-wise parameter values (Figure 4C; immediate chosen: t(29) = 7.24, p < .001, d = 1.32, BF10 > 1,000; delayed chosen: t(29) = 7.71, p < .001, d = 1.41, BF10 > 1,000).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[3]",
+      "char_offset": 340
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[3]",
+      "char_offset": 591
+    },
+    "len": 251
+  },
+  {
+    "query": "Taken together, recovering trial-by-trial changes in a parameter of a cognitive model with LOTO (but also with other techniques) is much more efficient when the model is able to predict a rich set of single-trial observations, such as RT (and possibly even continuous ratings of choice confidence as in Pleskac and Busemeyer, 2010) in addition to choices or accuracy rates.",
+    "matched_segment": "Taken together, recovering trial-by-trial changes in a parameter of a cognitive model with LOTO (but also with other techniques) is much more efficient when the model is able to predict a rich set of single-trial observations, such as RT (and possibly even continuous ratings of choice confidence as in Pleskac and Busemeyer, 2010) in addition to choices or accuracy rates.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[3]",
+      "char_offset": 592
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[3]",
+      "char_offset": 965
+    },
+    "len": 373
+  },
+  {
+    "query": "As we have argued before, however, this assumption does not have to be correct \u2014 not even when the overt behavior appears to be stochastic (Gluth and Rieskamp, 2017).",
+    "matched_segment": "As we have argued before, however, this assumption does not have to be correct \u2014 not even when the overt behavior appears to be stochastic (Gluth and Rieskamp, 2017).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[1]",
+      "char_offset": 135
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[1]",
+      "char_offset": 302
+    },
+    "len": 167
+  },
+  {
+    "query": "It could be that stochasticity is induced by random fluctuations that are not accounted for by the cognitive model (e.g., randomness in motor execution).",
+    "matched_segment": "It could be that stochasticity is induced by random fluctuations that are not accounted for by the cognitive model (e.g., randomness in motor execution).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[1]",
+      "char_offset": 303
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[1]",
+      "char_offset": 456
+    },
+    "len": 153
+  },
+  {
+    "query": "When assuming variability in a specific parameter, the risk is that such unsystematic variability is taken up by LOTO even in the absence of any systematic variability in the parameter.",
+    "matched_segment": "When assuming variability in a specific parameter, the risk is that such unsystematic variability is taken up by LOTO even in the absence of any systematic variability in the parameter.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[1]",
+      "char_offset": 457
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[1]",
+      "char_offset": 642
+    },
+    "len": 185
+  },
+  {
+    "query": "To test for the presence of systematic trial-by-trial variability, we propose a non-parametric and simulation-based approach that exploits the improvement in model fit by LOTO: if a model is fitted to n\u20131 trials, the fit statistic (e.g., the deviance) will improve for two reasons: i) the statistic for the left-out trial is excluded; and ii) the parameter estimate is adjusted so that it optimally fits the n\u20131 dataset.",
+    "matched_segment": "To test for the presence of systematic trial-by-trial variability, we propose a non-parametric and simulation-based approach that exploits the improvement in model fit by LOTO: if a model is fitted to n\u20131 trials, the fit statistic (e.g., the deviance) will improve for two reasons: i) the statistic for the left-out trial is excluded; and ii) the parameter estimate is adjusted so that it optimally fits the n\u20131 dataset.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[2]",
+      "char_offset": 420
+    },
+    "len": 420
+  },
+  {
+    "query": "The rationale of our proposed approach is that the improvement in fit that is attributable to the second reason (i.e., the adjustment) will be lower when there is no systematic trial-by-trial variability in the parameter of interest compared to when there is systematic variability.",
+    "matched_segment": "The rationale of our proposed approach is that the improvement in fit that is attributable to the second reason (i.e., the adjustment) will be lower when there is no systematic trial-by-trial variability in the parameter of interest compared to when there is systematic variability.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[2]",
+      "char_offset": 421
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[2]",
+      "char_offset": 703
+    },
+    "len": 282
+  },
+  {
+    "query": "However, the continuous vertical lines, which show the results for the simulations with true variability of increasing amount (from blue to red), indicate significantly higher improvements in fit when variability is actually present \u2014 except for the lowest level of variability (the dashed black line indicates the 95% threshold).",
+    "matched_segment": "However, the continuous vertical lines, which show the results for the simulations with true variability of increasing amount (from blue to red), indicate significantly higher improvements in fit when variability is actually present \u2014 except for the lowest level of variability (the dashed black line indicates the 95% threshold).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[5]",
+      "char_offset": 734
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[5]",
+      "char_offset": 1065
+    },
+    "len": 331
+  },
+  {
+    "query": "As can be seen in Figure 5B, the improvement in goodness-of-fit when trying to explain variability in \u03b2 by modeling variability in \u03ba using LOTO does not exceed the improvement under the null hypothesis, and there is no systematic relationship with the amount of variability in \u03b2.",
+    "matched_segment": "As can be seen in Figure 5B, the improvement in goodness-of-fit when trying to explain variability in \u03b2 by modeling variability in \u03ba using LOTO does not exceed the improvement under the null hypothesis, and there is no systematic relationship with the amount of variability in \u03b2.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[6]",
+      "char_offset": 638
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[6]",
+      "char_offset": 917
+    },
+    "len": 279
+  },
+  {
+    "query": "Thus, we can conclude that finding a significantly higher improvement in fit in our data compared to simulated data under the null hypothesis cannot be due to a misattribution of variability in \u03b2 to variability in \u03ba.",
+    "matched_segment": "Thus, we can conclude that finding a significantly higher improvement in fit in our data compared to simulated data under the null hypothesis cannot be due to a misattribution of variability in \u03b2 to variability in \u03ba.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[6]",
+      "char_offset": 918
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[6]",
+      "char_offset": 1134
+    },
+    "len": 216
+  },
+  {
+    "query": "Variability in behavior (and neural activity) may derive not only from variability in model parameters but also from the processes used to infer the input and output signals of a computation (Drugowitsch et al., 2016; Findling et al., 2018; Loomes et al., 2002; Polan\u00eda et al., 2019).",
+    "matched_segment": "Variability in behavior (and neural activity) may derive not only from variability in model parameters but also from the processes used to infer the input and output signals of a computation (Drugowitsch et al., 2016; Findling et al., 2018; Loomes et al., 2002; Polan\u00eda et al., 2019).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[7]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[7]",
+      "char_offset": 284
+    },
+    "len": 284
+  },
+  {
+    "query": "As can be seen in Figure 5\u2014figure supplement 1, LOTO does not misattribute variability in amounts, but for 3 out of 10 simulations of delay-based variability and for 4 of 10 simulations of utility-based variability, a misattribution could not be ruled out.",
+    "matched_segment": "As can be seen in Figure 5\u2014figure supplement 1, LOTO does not misattribute variability in amounts, but for 3 out of 10 simulations of delay-based variability and for 4 of 10 simulations of utility-based variability, a misattribution could not be ruled out.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[8]",
+      "char_offset": 465
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[8]",
+      "char_offset": 722
+    },
+    "len": 257
+  },
+  {
+    "query": "How can the separability of the discount factor \u03ba from the input and output variables x, d, and u be improved? We reasoned that changing the intertemporal choice task by increasing the number of options should help: whereas the discount factor can be assumed to be stable across options (and to vary only from trial to trial), the variability in the input and output variables can be assumed to differ between options (i.e., they are drawn from independent distributions for each option).",
+    "matched_segment": "How can the separability of the discount factor \u03ba from the input and output variables x, d, and u be improved? We reasoned that changing the intertemporal choice task by increasing the number of options should help: whereas the discount factor can be assumed to be stable across options (and to vary only from trial to trial), the variability in the input and output variables can be assumed to differ between options (i.e., they are drawn from independent distributions for each option).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[9]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[9]",
+      "char_offset": 488
+    },
+    "len": 488
+  },
+  {
+    "query": "As predicted, a significant improvement in model fit over and above the improvement under the null hypothesis of no variability was only found for \u03ba but not for any of the input or output variables (Figure 5\u2014figure supplement 2).",
+    "matched_segment": "As predicted, a significant improvement in model fit over and above the improvement under the null hypothesis of no variability was only found for \u03ba but not for any of the input or output variables (Figure 5\u2014figure supplement 2).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[9]",
+      "char_offset": 797
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[9]",
+      "char_offset": 1027
+    },
+    "len": 230
+  },
+  {
+    "query": "In conclusion, LOTO might be an efficient tool to dissociate parameter variability from variability in the input and output signals of computational processes, assuming an appropriate experimental design and careful simulations.",
+    "matched_segment": "In conclusion, LOTO might be an efficient tool to dissociate parameter variability from variability in the input and output signals of computational processes, assuming an appropriate experimental design and careful simulations.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[9]",
+      "char_offset": 1028
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[9]",
+      "char_offset": 1256
+    },
+    "len": 228
+  },
+  {
+    "query": "An advantageous feature of LOTO is that the duration of applying the method is almost independent of the number of parameters for which trial-by-trial variability is inferred.",
+    "matched_segment": "An advantageous feature of LOTO is that the duration of applying the method is almost independent of the number of parameters for which trial-by-trial variability is inferred.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[1]",
+      "char_offset": 175
+    },
+    "len": 175
+  },
+  {
+    "query": "First, we used the non-parametric test from the previous section to check for the presence of systematic variability. In doing this, we simulated 1,000 sets of 30 participants under the null hypothesis and tested whether the simulation with true variability in \u03ba and b provides a significantly improved deviance than those simulations. This was confirmed as only 19 of the 1,000 simulations under the null hypothesis provided a better fit.",
+    "matched_segment": "First, we used the non-parametric test from the previous section to check for the presence of systematic variability. In doing this, we simulated 1,000 sets of 30 participants under the null hypothesis and tested whether the simulation with true variability in \u03ba and b provides a significantly improved deviance than those simulations. This was confirmed as only 19 of the 1,000 simulations under the null hypothesis provided a better fit.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[2]",
+      "char_offset": 439
+    },
+    "len": 439
+  },
+  {
+    "query": "As shown in the upper left panel of Figure 6A, LOTO is still capable of recovering the variability in parameter \u03ba from trial to trial for both types of decisions (i.e., immediate and delayed).",
+    "matched_segment": "As shown in the upper left panel of Figure 6A, LOTO is still capable of recovering the variability in parameter \u03ba from trial to trial for both types of decisions (i.e., immediate and delayed).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[3]",
+      "char_offset": 133
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[3]",
+      "char_offset": 325
+    },
+    "len": 192
+  },
+  {
+    "query": "Similarly, LOTO captures the variability in parameter b (lower right panel).",
+    "matched_segment": "Similarly, LOTO captures the variability in parameter b (lower right panel).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[3]",
+      "char_offset": 326
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[3]",
+      "char_offset": 402
+    },
+    "len": 76
+  },
+  {
+    "query": "When the immediate option was chosen, the correlations are negative; when the delayed option was chosen, the correlations are positive.",
+    "matched_segment": "When the immediate option was chosen, the correlations are negative; when the delayed option was chosen, the correlations are positive.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[3]",
+      "char_offset": 807
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[3]",
+      "char_offset": 942
+    },
+    "len": 135
+  },
+  {
+    "query": "Importantly, these results indicate that the observations (i.e., choices and RT) could explain away the undesired correlations while not affecting the desired correlations.",
+    "matched_segment": "Importantly, these results indicate that the observations (i.e., choices and RT) could explain away the undesired correlations while not affecting the desired correlations.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[4]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[4]",
+      "char_offset": 172
+    },
+    "len": 172
+  },
+  {
+    "query": "The standardized regression coefficient (averaged across simulated participants) for LOTO's estimate of \u03bat when explaining variance in true \u03bat was indeed significantly positive with a very high effect size (t(29) = 28.48, p < .001, d = 5.20, BF10 > 1,000).",
+    "matched_segment": "The standardized regression coefficient (averaged across simulated participants) for LOTO's estimate of \u03bat when explaining variance in true \u03bat was indeed significantly positive with a very high effect size (t(29) = 28.48, p < .001, d = 5.20, BF10 > 1,000).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[4]",
+      "char_offset": 416
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[4]",
+      "char_offset": 672
+    },
+    "len": 256
+  },
+  {
+    "query": "The coefficient for the 'wrong' estimate of bt when explaining variance in \u03bat also reached significance, but the effect was much weaker (t(29) = 3.01, p = .005, d = 0.55, BF10 = 7.74).",
+    "matched_segment": "The coefficient for the 'wrong' estimate of bt when explaining variance in \u03bat also reached significance, but the effect was much weaker (t(29) = 3.01, p = .005, d = 0.55, BF10 = 7.74).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[4]",
+      "char_offset": 673
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[4]",
+      "char_offset": 857
+    },
+    "len": 184
+  },
+  {
+    "query": "With respect to explaining variance in true bt, only LOTO's estimate of the 'correct' estimate of bt was significant and strong (t(29) = 30.40, p < .001, d = 5.55, BF10 > 1,000), whereas the effect for the 'wrong' estimate of \u03bat did not reach significance (t(29) = \u22121.93, p = .063, d = \u22120.45, BF10 = 0.99).",
+    "matched_segment": "With respect to explaining variance in true bt, only LOTO's estimate of the 'correct' estimate of bt was significant and strong (t(29) = 30.40, p < .001, d = 5.55, BF10 > 1,000), whereas the effect for the 'wrong' estimate of \u03bat did not reach significance (t(29) = \u22121.93, p = .063, d = \u22120.45, BF10 = 0.99).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[4]",
+      "char_offset": 858
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[4]",
+      "char_offset": 1164
+    },
+    "len": 306
+  },
+  {
+    "query": "Taken together, LOTO makes it possible to infer trial-by-trial variability in more than one parameter within the same model, revealing information over and above that provided by the observations.",
+    "matched_segment": "Taken together, LOTO makes it possible to infer trial-by-trial variability in more than one parameter within the same model, revealing information over and above that provided by the observations.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[5]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[5]",
+      "char_offset": 196
+    },
+    "len": 196
+  },
+  {
+    "query": "At the same time, LOTO's misattributions of variability to other parameters are largely explained away by the observations.",
+    "matched_segment": "At the same time, LOTO's misattributions of variability to other parameters are largely explained away by the observations.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[5]",
+      "char_offset": 197
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[6]/p[5]",
+      "char_offset": 320
+    },
+    "len": 123
+  },
+  {
+    "query": "Trial numbers in neuroimaging studies are often low. fMRI studies are particularly limited because scanning hours are expensive, and because the low temporal resolution of fMRI requires long inter-trial intervals in the case of event-related fMRI (which is most suitable for trial-by-trial analyses).",
+    "matched_segment": "Trial numbers in neuroimaging studies are often low. fMRI studies are particularly limited because scanning hours are expensive, and because the low temporal resolution of fMRI requires long inter-trial intervals in the case of event-related fMRI (which is most suitable for trial-by-trial analyses).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
+      "char_offset": 300
+    },
+    "len": 300
+  },
+  {
+    "query": "As shown in Figure 7A, the average extent of the correlations between the true parameter values and the respective estimates of LOTO are largely unaffected by the number of trials.",
+    "matched_segment": "As shown in Figure 7A, the average extent of the correlations between the true parameter values and the respective estimates of LOTO are largely unaffected by the number of trials.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
+      "char_offset": 527
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
+      "char_offset": 707
+    },
+    "len": 180
+  },
+  {
+    "query": "The recovery performance is slightly reduced for the threshold parameter b of the HD-LBA model in the case of 20 trials.",
+    "matched_segment": "The recovery performance is slightly reduced for the threshold parameter b of the HD-LBA model in the case of 20 trials.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
+      "char_offset": 708
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
+      "char_offset": 828
+    },
+    "len": 120
+  },
+  {
+    "query": "Note, however, that the variance of the correlations decreases as the number of trials increases.",
+    "matched_segment": "Note, however, that the variance of the correlations decreases as the number of trials increases.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
+      "char_offset": 829
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
+      "char_offset": 926
+    },
+    "len": 97
+  },
+  {
+    "query": "Therefore, LOTO still benefits from increasing the number of trials in terms of achieving higher statistical power, as we show in 'Results: Section X'.",
+    "matched_segment": "Therefore, LOTO still benefits from increasing the number of trials in terms of achieving higher statistical power, as we show in 'Results: Section X'.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
+      "char_offset": 927
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
+      "char_offset": 1078
+    },
+    "len": 151
+  },
+  {
+    "query": "If the number of trials is very high, then the improvement in model fit that results from a change in the parameter value might become smaller than the default tolerance criterion set by the minimization algorithm.",
+    "matched_segment": "If the number of trials is very high, then the improvement in model fit that results from a change in the parameter value might become smaller than the default tolerance criterion set by the minimization algorithm.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[2]",
+      "char_offset": 177
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[2]",
+      "char_offset": 391
+    },
+    "len": 214
+  },
+  {
+    "query": "In the case of 1,600 trials, the tolerance criterion matters: if the default criterion is used, the LOTO estimates exhibit discrete jumps, that is, the same parameter value is estimated for trials with relatively similar observations, because a more fine-graded estimation does not improve the fit beyond the default tolerance criterion.",
+    "matched_segment": "In the case of 1,600 trials, the tolerance criterion matters: if the default criterion is used, the LOTO estimates exhibit discrete jumps, that is, the same parameter value is estimated for trials with relatively similar observations, because a more fine-graded estimation does not improve the fit beyond the default tolerance criterion.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[2]",
+      "char_offset": 862
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[2]",
+      "char_offset": 1199
+    },
+    "len": 337
+  },
+  {
+    "query": "In the case of 160 trials, the correlations obtained using the strict and the default tolerance criterion are not significantly different (t(29) = 1.27, p = .213, d = 0.23, BF10 = 0.40).",
+    "matched_segment": "In the case of 160 trials, the correlations obtained using the strict and the default tolerance criterion are not significantly different (t(29) = 1.27, p = .213, d = 0.23, BF10 = 0.40).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[3]",
+      "char_offset": 308
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[3]",
+      "char_offset": 494
+    },
+    "len": 186
+  },
+  {
+    "query": "In the case of 1,600 trials, there is a significant difference (t(29) = 4.59, p < .001, d = 0.84, BF10 = 323.03), but the difference is small in absolute terms (i.e., on average the correlation is reduced by only .003).",
+    "matched_segment": "In the case of 1,600 trials, there is a significant difference (t(29) = 4.59, p < .001, d = 0.84, BF10 = 323.03), but the difference is small in absolute terms (i.e., on average the correlation is reduced by only .003).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[3]",
+      "char_offset": 495
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[3]",
+      "char_offset": 714
+    },
+    "len": 219
+  },
+  {
+    "query": "In general, we recommend checking the potential impact of the tolerance criterion on LOTO's performance by running simulations, in particular when LOTO is applied to a task with many trials (i.e., \u2265 1,000).",
+    "matched_segment": "In general, we recommend checking the potential impact of the tolerance criterion on LOTO's performance by running simulations, in particular when LOTO is applied to a task with many trials (i.e., \u2265 1,000).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[3]",
+      "char_offset": 715
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[3]",
+      "char_offset": 921
+    },
+    "len": 206
+  },
+  {
+    "query": "In contrast to some other methods for inferring trial-by-trial variability in model parameters (van Maanen et al., 2011; Turner et al., 2015), LOTO does not require the assumption that parameters are drawn from specific distributions.",
+    "matched_segment": "In contrast to some other methods for inferring trial-by-trial variability in model parameters (van Maanen et al., 2011; Turner et al., 2015), LOTO does not require the assumption that parameters are drawn from specific distributions.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[1]",
+      "char_offset": 234
+    },
+    "len": 234
+  },
+  {
+    "query": "The distributions of the true parameter values are markedly different, whereas the distributions of LOTO estimates are very similar.",
+    "matched_segment": "The distributions of the true parameter values are markedly different, whereas the distributions of LOTO estimates are very similar.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[2]",
+      "char_offset": 233
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[2]",
+      "char_offset": 365
+    },
+    "len": 132
+  },
+  {
+    "query": "Generally speaking, the distribution of LOTO estimates is mostly invariant to the distribution of the underlying parameters but depends much more on how the parameter values map onto the observations via the model and its likelihood function.",
+    "matched_segment": "Generally speaking, the distribution of LOTO estimates is mostly invariant to the distribution of the underlying parameters but depends much more on how the parameter values map onto the observations via the model and its likelihood function.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[2]",
+      "char_offset": 718
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[2]",
+      "char_offset": 960
+    },
+    "len": 242
+  },
+  {
+    "query": "Again, the distributions of LOTO estimates appear to be invariant to the shape of the underlying parameter distributions.",
+    "matched_segment": "Again, the distributions of LOTO estimates appear to be invariant to the shape of the underlying parameter distributions.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[3]",
+      "char_offset": 474
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[3]",
+      "char_offset": 595
+    },
+    "len": 121
+  },
+  {
+    "query": "Importantly, our simulations of the HD-LBA model also suggest that the performance of LOTO (in terms of the correlation between true parameter values and LOTO estimates) does not seem to depend much on the distribution of the underlying parameter values.",
+    "matched_segment": "Importantly, our simulations of the HD-LBA model also suggest that the performance of LOTO (in terms of the correlation between true parameter values and LOTO estimates) does not seem to depend much on the distribution of the underlying parameter values.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[3]",
+      "char_offset": 886
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[3]",
+      "char_offset": 1140
+    },
+    "len": 254
+  },
+  {
+    "query": "Hence, we conclude that LOTO cannot be used to infer the shape of the underlying parameter distribution.",
+    "matched_segment": "Hence, we conclude that LOTO cannot be used to infer the shape of the underlying parameter distribution.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[3]",
+      "char_offset": 1141
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[3]",
+      "char_offset": 1245
+    },
+    "len": 104
+  },
+  {
+    "query": "Despite this limitation, LOTO is highly efficient in detecting significant relationships between cognitive model parameters and neural data, regardless of the underlying parameter distribution.",
+    "matched_segment": "Despite this limitation, LOTO is highly efficient in detecting significant relationships between cognitive model parameters and neural data, regardless of the underlying parameter distribution.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[3]",
+      "char_offset": 1246
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[8]/p[3]",
+      "char_offset": 1439
+    },
+    "len": 193
+  },
+  {
+    "query": "From the example correlations, we see that LOTO and GR17 yield very similar results. This is to be expected because the two approaches employ similar principles.",
+    "matched_segment": "From the example correlations, we see that LOTO and GR17 yield very similar results. This is to be expected because the two approaches employ similar principles.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[2]",
+      "char_offset": 243
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[2]",
+      "char_offset": 404
+    },
+    "len": 161
+  },
+  {
+    "query": "However, the comparison across multiple simulations reveals that LOTO performs significantly better than GR17 for both parameters (drift rate: t(19) = 3.76, p = .001, d = 0.84, BF10 = 28.75; start point: t(19) = 4.86, p < .001, d = 1.09, BF10 = 259.17).",
+    "matched_segment": "However, the comparison across multiple simulations reveals that LOTO performs significantly better than GR17 for both parameters (drift rate: t(19) = 3.76, p = .001, d = 0.84, BF10 = 28.75; start point: t(19) = 4.86, p < .001, d = 1.09, BF10 = 259.17).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[2]",
+      "char_offset": 733
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[2]",
+      "char_offset": 986
+    },
+    "len": 253
+  },
+  {
+    "query": "The reason for this is that the performance of GR17 depends on the step size with which the range of possible parameter values is scanned, and we were forced to choose an immediate step size to avoid excessive computation times.",
+    "matched_segment": "The reason for this is that the performance of GR17 depends on the step size with which the range of possible parameter values is scanned, and we were forced to choose an immediate step size to avoid excessive computation times.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[2]",
+      "char_offset": 987
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[2]",
+      "char_offset": 1215
+    },
+    "len": 228
+  },
+  {
+    "query": "In other words, the advantage of LOTO over GR17 is its higher processing speed, which is particularly relevant when modeling variability in multiple parameters.",
+    "matched_segment": "In other words, the advantage of LOTO over GR17 is its higher processing speed, which is particularly relevant when modeling variability in multiple parameters.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[2]",
+      "char_offset": 1442
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[2]",
+      "char_offset": 1602
+    },
+    "len": 160
+  },
+  {
+    "query": "The 'single-trial fitting' approach yields acceptable results for the drift rate, but is still outperformed by LOTO (t(19) = 19.72, p < .001, d = 4.41, BF10 > 1,000).",
+    "matched_segment": "The 'single-trial fitting' approach yields acceptable results for the drift rate, but is still outperformed by LOTO (t(19) = 19.72, p < .001, d = 4.41, BF10 > 1,000).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[3]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[3]",
+      "char_offset": 166
+    },
+    "len": 166
+  },
+  {
+    "query": "More dramatically, the method fails completely with respect to recovering the start point values.",
+    "matched_segment": "More dramatically, the method fails completely with respect to recovering the start point values.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[3]",
+      "char_offset": 167
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[3]",
+      "char_offset": 264
+    },
+    "len": 97
+  },
+  {
+    "query": "Finally, the STLBA method performs worse than LOTO with respect to the drift rate (t(19) = 52.60, p < .001, d = 11.76, BF10 > 1,000) but better with respect to the start point (t(19) = \u221230.08, p < .001, d = \u22126.73, BF10 > 1,000).",
+    "matched_segment": "Finally, the STLBA method performs worse than LOTO with respect to the drift rate (t(19) = 52.60, p < .001, d = 11.76, BF10 > 1,000) but better with respect to the start point (t(19) = \u221230.08, p < .001, d = \u22126.73, BF10 > 1,000).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[4]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[4]",
+      "char_offset": 228
+    },
+    "len": 228
+  },
+  {
+    "query": "Overall, LOTO appears to provide comparatively good, and in fact mostly superior, results when compared to alternative approaches for capturing trial-by-trial variability in cognitive model parameters.",
+    "matched_segment": "Overall, LOTO appears to provide comparatively good, and in fact mostly superior, results when compared to alternative approaches for capturing trial-by-trial variability in cognitive model parameters.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[4]",
+      "char_offset": 824
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[4]",
+      "char_offset": 1025
+    },
+    "len": 201
+  },
+  {
+    "query": "First of all, all three methods provided significant relationships with the true model parameters and with the neural data (all p < .001, all BF10 > 1,000).",
+    "matched_segment": "First of all, all three methods provided significant relationships with the true model parameters and with the neural data (all p < .001, all BF10 > 1,000).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[6]",
+      "char_offset": 279
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[6]",
+      "char_offset": 435
+    },
+    "len": 156
+  },
+  {
+    "query": "Expectedly, the correlations illustrate that the Bayesian modeling and the joint modeling approach yielded similar estimates. Averaged over the simulated participants, however, the joint modeling approach outperformed (non-joint) Bayesian modeling with respect to both \u03bat (t(29) = 3.61, p = .001, d = 0.66, BF10 = 21.96) and F(\u03ba)t (t(29) = 4.32, p < .001, d = 0.79, BF10 = 131.84).",
+    "matched_segment": "Expectedly, the correlations illustrate that the Bayesian modeling and the joint modeling approach yielded similar estimates. Averaged over the simulated participants, however, the joint modeling approach outperformed (non-joint) Bayesian modeling with respect to both \u03bat (t(29) = 3.61, p = .001, d = 0.66, BF10 = 21.96) and F(\u03ba)t (t(29) = 4.32, p < .001, d = 0.79, BF10 = 131.84).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[6]",
+      "char_offset": 436
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[6]",
+      "char_offset": 817
+    },
+    "len": 381
+  },
+  {
+    "query": "Remarkably, LOTO outperformed Bayesian modeling (t(29) = 2.82, p = .009, d = 0.51, BF10 = 6.07) as well as the joint modeling approach (t(29) = 2.51, p = .018, d = 0.46, BF10 = 3.33) with respect to \u03bat.",
+    "matched_segment": "Remarkably, LOTO outperformed Bayesian modeling (t(29) = 2.82, p = .009, d = 0.51, BF10 = 6.07) as well as the joint modeling approach (t(29) = 2.51, p = .018, d = 0.46, BF10 = 3.33) with respect to \u03bat.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[6]",
+      "char_offset": 818
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[6]",
+      "char_offset": 1020
+    },
+    "len": 202
+  },
+  {
+    "query": "With respect to the neural signal F(\u03ba)t, however, LOTO yielded similar correlations compared to Bayesian modeling (t(29) = \u22120.62, p = .540, d = \u22120.11, BF10 = 0.26) and was outperformed by the joint modeling approach (t(29) = \u22123.03, p = .005, d = \u22120.55, BF10 = 13.78).",
+    "matched_segment": "With respect to the neural signal F(\u03ba)t, however, LOTO yielded similar correlations compared to Bayesian modeling (t(29) = \u22120.62, p = .540, d = \u22120.11, BF10 = 0.26) and was outperformed by the joint modeling approach (t(29) = \u22123.03, p = .005, d = \u22120.55, BF10 = 13.78).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[6]",
+      "char_offset": 1021
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[6]",
+      "char_offset": 1288
+    },
+    "len": 267
+  },
+  {
+    "query": "Taking flexibility and difficulty of implementation into account, LOTO appears to offer an expedient alternative to joint modeling (see also 'Discussion').",
+    "matched_segment": "Taking flexibility and difficulty of implementation into account, LOTO appears to offer an expedient alternative to joint modeling (see also 'Discussion').",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[6]",
+      "char_offset": 1508
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[6]",
+      "char_offset": 1663
+    },
+    "len": 155
+  },
+  {
+    "query": "The ultimate goal of LOTO (and related approaches) is to establish a link between the inferred trial-by-trial variability in parameters of cognitive models and the brain activity measured with tools such as fMRI or EEG.",
+    "matched_segment": "The ultimate goal of LOTO (and related approaches) is to establish a link between the inferred trial-by-trial variability in parameters of cognitive models and the brain activity measured with tools such as fMRI or EEG.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[1]",
+      "char_offset": 219
+    },
+    "len": 219
+  },
+  {
+    "query": "Therefore, the question of whether LOTO is an appropriate tool for a given experiment with a specific design (including task, number of trials, number of participants etc.), cognitive model, and parameter(s) of interest should be answered by testing whether LOTO can be expected to recover the (truly existing) correlation between a neural signal and a parameter.",
+    "matched_segment": "Therefore, the question of whether LOTO is an appropriate tool for a given experiment with a specific design (including task, number of trials, number of participants etc.), cognitive model, and parameter(s) of interest should be answered by testing whether LOTO can be expected to recover the (truly existing) correlation between a neural signal and a parameter.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[1]",
+      "char_offset": 220
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[1]",
+      "char_offset": 583
+    },
+    "len": 363
+  },
+  {
+    "query": "We emphasize here that these requirements are not unique to LOTO. Any approach for investigating the neural correlates of trial-by-trial parameter variability should be accompanied by such analyses of statistical power (i.e., sensitivity) and false-positive rates (i.e., specificity).",
+    "matched_segment": "We emphasize here that these requirements are not unique to LOTO. Any approach for investigating the neural correlates of trial-by-trial parameter variability should be accompanied by such analyses of statistical power (i.e., sensitivity) and false-positive rates (i.e., specificity).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[1]",
+      "char_offset": 849
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[1]",
+      "char_offset": 1133
+    },
+    "len": 284
+  },
+  {
+    "query": "According to these results, LOTO achieves a statistical power (or sensitivity) of 67% for parameter \u03ba and of 76% for parameter b, values that are slightly below the threshold of 80% that is usually deemed acceptable.",
+    "matched_segment": "According to these results, LOTO achieves a statistical power (or sensitivity) of 67% for parameter \u03ba and of 76% for parameter b, values that are slightly below the threshold of 80% that is usually deemed acceptable.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[3]",
+      "char_offset": 227
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[3]",
+      "char_offset": 443
+    },
+    "len": 216
+  },
+  {
+    "query": "On the other hand, the false-positive rate (or specificity) of LOTO is good, with values lying just slightly above the 5% error rate.",
+    "matched_segment": "On the other hand, the false-positive rate (or specificity) of LOTO is good, with values lying just slightly above the 5% error rate.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[3]",
+      "char_offset": 444
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[3]",
+      "char_offset": 577
+    },
+    "len": 133
+  },
+  {
+    "query": "This means that the small misattribution of parameter variability seen in 'Results: Section VI' does not carry over much to a misattribution of the neural signal.",
+    "matched_segment": "This means that the small misattribution of parameter variability seen in 'Results: Section VI' does not carry over much to a misattribution of the neural signal.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[3]",
+      "char_offset": 578
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[3]",
+      "char_offset": 740
+    },
+    "len": 162
+  },
+  {
+    "query": "In Figure 10B, we repeated the analysis for a sample size that is increased by two-thirds (i.e., 50 instead of 30 simulated participants). Expectedly, the statistical power of LOTO improves and lies within acceptable ranges.",
+    "matched_segment": "In Figure 10B, we repeated the analysis for a sample size that is increased by two-thirds (i.e., 50 instead of 30 simulated participants). Expectedly, the statistical power of LOTO improves and lies within acceptable ranges.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[3]",
+      "char_offset": 741
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[3]",
+      "char_offset": 965
+    },
+    "len": 224
+  },
+  {
+    "query": "Figure 10C depicts the results when the number of participants is kept to 30 but the number of trials is increased by two-thirds (i.e., 267 instead of 160 trials). The improvement in statistical power is comparable to that resulting from the increased sample size.",
+    "matched_segment": "Figure 10C depicts the results when the number of participants is kept to 30 but the number of trials is increased by two-thirds (i.e., 267 instead of 160 trials). The improvement in statistical power is comparable to that resulting from the increased sample size.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[3]",
+      "char_offset": 1043
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[3]",
+      "char_offset": 1307
+    },
+    "len": 264
+  },
+  {
+    "query": "Accordingly, one would conclude from these analyses that investigating the neural basis of trial-by-trial variability in parameters \u03ba and b of the HD-LBA model might require testing more than 30 participants or testing more than 160 trials per participant, whatever is more suitable in a given context (e.g., adding trials might be difficult for event-related fMRI designs that require long inter-trial intervals but less problematic for EEG designs).",
+    "matched_segment": "Accordingly, one would conclude from these analyses that investigating the neural basis of trial-by-trial variability in parameters \u03ba and b of the HD-LBA model might require testing more than 30 participants or testing more than 160 trials per participant, whatever is more suitable in a given context (e.g., adding trials might be difficult for event-related fMRI designs that require long inter-trial intervals but less problematic for EEG designs).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[3]",
+      "char_offset": 1308
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[10]/p[3]",
+      "char_offset": 1759
+    },
+    "len": 451
+  },
+  {
+    "query": "The dataset is taken from a previously published fMRI study (Gluth et al., 2015), in which participants were asked to make preferential choices from memory. More specifically, participants first encoded associations between food snacks and screen positions and then decided between pairs of food snacks while seeing only the snacks' screen positions (Figure 11A).",
+    "matched_segment": "The dataset is taken from a previously published fMRI study (Gluth et al., 2015), in which participants were asked to make preferential choices from memory. More specifically, participants first encoded associations between food snacks and screen positions and then decided between pairs of food snacks while seeing only the snacks' screen positions (Figure 11A).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[1]",
+      "char_offset": 154
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[1]",
+      "char_offset": 517
+    },
+    "len": 363
+  },
+  {
+    "query": "Participants had either one or five seconds in which to retrieve the item\u2013location associations and to deliberate upon the preferred snack option.",
+    "matched_segment": "Participants had either one or five seconds in which to retrieve the item\u2013location associations and to deliberate upon the preferred snack option.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[1]",
+      "char_offset": 518
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[1]",
+      "char_offset": 664
+    },
+    "len": 146
+  },
+  {
+    "query": "Choice behavior was modeled using an unbounded sequential sampling model that predicted more accurate decisions (i.e., decisions that are more consistent with evaluations of the food snacks in a separate task) with more deliberation time (details on the model and the fMRI analyses are provided in 'Materials and methods'; see also Figure 3 in Gluth et al. (2015)).",
+    "matched_segment": "Choice behavior was modeled using an unbounded sequential sampling model that predicted more accurate decisions (i.e., decisions that are more consistent with evaluations of the food snacks in a separate task) with more deliberation time (details on the model and the fMRI analyses are provided in 'Materials and methods'; see also Figure 3 in Gluth et al. (2015)).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[2]",
+      "char_offset": 365
+    },
+    "len": 365
+  },
+  {
+    "query": "Importantly, the model estimates the average memory performance of a participant, that is, the probability of accurately remembering a snack when making decisions.",
+    "matched_segment": "Importantly, the model estimates the average memory performance of a participant, that is, the probability of accurately remembering a snack when making decisions.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[2]",
+      "char_offset": 366
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[2]",
+      "char_offset": 529
+    },
+    "len": 163
+  },
+  {
+    "query": "Notably, LOTO takes advantage of the fact that each snack is a choice option in multiple (i.e., three) choice trials (see 'Results: Section II').",
+    "matched_segment": "Notably, LOTO takes advantage of the fact that each snack is a choice option in multiple (i.e., three) choice trials (see 'Results: Section II').",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[2]",
+      "char_offset": 923
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[2]",
+      "char_offset": 1068
+    },
+    "len": 145
+  },
+  {
+    "query": "Ultimately, LOTO's item-specific estimate of memory performance is applied to the fMRI analysis of the encoding phase. In other words, a model-based analysis of the well-established difference in subsequent memory effect (Paller and Wagner, 2002) is conducted with the prediction that variations in memory performance should be positively correlated with activation of the hippocampus (as has been found in our original publication).",
+    "matched_segment": "Ultimately, LOTO's item-specific estimate of memory performance is applied to the fMRI analysis of the encoding phase. In other words, a model-based analysis of the well-established difference in subsequent memory effect (Paller and Wagner, 2002) is conducted with the prediction that variations in memory performance should be positively correlated with activation of the hippocampus (as has been found in our original publication).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[2]",
+      "char_offset": 1069
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[2]",
+      "char_offset": 1502
+    },
+    "len": 433
+  },
+  {
+    "query": "As can be seen in Figure 12A, the LOTO-based estimate of memory explained variance in cued recall performance over and above the other predictor variables (t(29) = 7.44, p < .001, d = 1.36, BF10 > 1,000).",
+    "matched_segment": "As can be seen in Figure 12A, the LOTO-based estimate of memory explained variance in cued recall performance over and above the other predictor variables (t(29) = 7.44, p < .001, d = 1.36, BF10 > 1,000).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[3]",
+      "char_offset": 752
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[3]",
+      "char_offset": 956
+    },
+    "len": 204
+  },
+  {
+    "query": "Indeed, the improvement in the real data was much larger than in any of the datasets generated under the null hypothesis (Figure 12B).",
+    "matched_segment": "Indeed, the improvement in the real data was much larger than in any of the datasets generated under the null hypothesis (Figure 12B).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[3]",
+      "char_offset": 1279
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[3]",
+      "char_offset": 1413
+    },
+    "len": 134
+  },
+  {
+    "query": "As can be seen in Figure 12\u2014figure supplement 1, LOTO does not appear to misattribute variability in \u03c3 to the memory-related parameters.",
+    "matched_segment": "As can be seen in Figure 12\u2014figure supplement 1, LOTO does not appear to misattribute variability in \u03c3 to the memory-related parameters.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[3]",
+      "char_offset": 2048
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[3]",
+      "char_offset": 2185
+    },
+    "len": 137
+  },
+  {
+    "query": "As can be seen in Figure 12C, this analysis revealed fMRI signals in bilateral hippocampus (MNI coordinates of peak voxel in left hippocampus: x = \u221218, y = \u221210, z = \u221212; right hippocampus: 38,\u201312, \u221226) that surpassed the statistical threshold corrected for multiple comparisons (left: Z = 3.73; p = .033; right: Z = 4.46, p = .002).",
+    "matched_segment": "As can be seen in Figure 12C, this analysis revealed fMRI signals in bilateral hippocampus (MNI coordinates of peak voxel in left hippocampus: x = \u221218, y = \u221210, z = \u221212; right hippocampus: 38,\u201312, \u221226) that surpassed the statistical threshold corrected for multiple comparisons (left: Z = 3.73; p = .033; right: Z = 4.46, p = .002).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[4]",
+      "char_offset": 625
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[4]",
+      "char_offset": 957
+    },
+    "len": 332
+  },
+  {
+    "query": "These effects are in line with those reported in the original publication, which were based on the GR2017 method and also showed a significant relationship between item-specific memory strength and hippocampal activation.",
+    "matched_segment": "These effects are in line with those reported in the original publication, which were based on the GR2017 method and also showed a significant relationship between item-specific memory strength and hippocampal activation.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[4]",
+      "char_offset": 958
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[4]",
+      "char_offset": 1179
+    },
+    "len": 221
+  },
+  {
+    "query": "The average signals in these ROIs were significantly related to the LOTO-based PM (left: t(29) = 2.93, p = .007, d = 0.53, BF10 = 6.42; right: t(29) = 4.36, p < .001, d = 0.80, BF10 = 182.52).",
+    "matched_segment": "The average signals in these ROIs were significantly related to the LOTO-based PM (left: t(29) = 2.93, p = .007, d = 0.53, BF10 = 6.42; right: t(29) = 4.36, p < .001, d = 0.80, BF10 = 182.52).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[5]",
+      "char_offset": 213
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[5]",
+      "char_offset": 405
+    },
+    "len": 192
+  },
+  {
+    "query": "Taken together, these findings demonstrate that we were able to reproduce the analysis of a model-based subsequent memory effect reported by Gluth et al. (2015) using LOTO.",
+    "matched_segment": "Taken together, these findings demonstrate that we were able to reproduce the analysis of a model-based subsequent memory effect reported by Gluth et al. (2015) using LOTO.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[5]",
+      "char_offset": 406
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[11]/p[5]",
+      "char_offset": 578
+    },
+    "len": 172
+  },
+  {
+    "query": "In this work, we introduce LOTO, a simple yet efficient technique to capture trial-by-trial measures of parameters of cognitive models so that these measures can be related to neural or physiological data.",
+    "matched_segment": "In this work, we introduce LOTO, a simple yet efficient technique to capture trial-by-trial measures of parameters of cognitive models so that these measures can be related to neural or physiological data.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 205
+    },
+    "len": 205
+  },
+  {
+    "query": "The core principle is to infer single-trial values from the difference in the parameter estimates when fitting a model with all trials vs. a model with one trial being left out.",
+    "matched_segment": "The core principle is to infer single-trial values from the difference in the parameter estimates when fitting a model with all trials vs. a model with one trial being left out.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 206
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 383
+    },
+    "len": 177
+  },
+  {
+    "query": "The application of LOTO is simple: first, the full set of parameters of a model is estimated for all n trials; then, the parameters of interest are estimated again n times with each trial being left out once, while the remaining parameters are fixed to their all-trial estimates.",
+    "matched_segment": "The application of LOTO is simple: first, the full set of parameters of a model is estimated for all n trials; then, the parameters of interest are estimated again n times with each trial being left out once, while the remaining parameters are fixed to their all-trial estimates.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 384
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 663
+    },
+    "len": 279
+  },
+  {
+    "query": "In addition to its simplicity, LOTO is also comparatively fast: if fitting a model once to all trials takes u time units, then LOTO's runtime will be u \u00d7 n at most (in fact, it can be expected to be even faster because not all parameters are estimated again).",
+    "matched_segment": "In addition to its simplicity, LOTO is also comparatively fast: if fitting a model once to all trials takes u time units, then LOTO's runtime will be u \u00d7 n at most (in fact, it can be expected to be even faster because not all parameters are estimated again).",
+    "start": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 664
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 923
+    },
+    "len": 259
+  },
+  {
+    "query": "And in contrast to the GR2017 approach, the LOTO runtime will not increase (much) if variability in more than one parameter is estimated.",
+    "matched_segment": "And in contrast to the GR2017 approach, the LOTO runtime will not increase (much) if variability in more than one parameter is estimated.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 924
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 1061
+    },
+    "len": 137
+  },
+  {
+    "query": "Compared to related methods, LOTO appears to provide mostly comparable or even superior results.",
+    "matched_segment": "Compared to related methods, LOTO appears to provide mostly comparable or even superior results.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 1062
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 1158
+    },
+    "len": 96
+  },
+  {
+    "query": "Finally, it is a very general approach for capturing variability in parameters. In principle, it can be applied to any cognitive model, although we stress the importance of testing the feasibility of LOTO for each model and study design anew.",
+    "matched_segment": "Finally, it is a very general approach for capturing variability in parameters. In principle, it can be applied to any cognitive model, although we stress the importance of testing the feasibility of LOTO for each model and study design anew.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 1159
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p",
+      "char_offset": 1401
+    },
+    "len": 242
+  },
+  {
+    "query": "Notably, Steps 1 and 2 of this recipe are to be performed before conducting the experiment. Therefore, LOTO is not suitable for post-hoc analyses of data that have already been acquired with different study goals in mind.",
+    "matched_segment": "Notably, Steps 1 and 2 of this recipe are to be performed before conducting the experiment. Therefore, LOTO is not suitable for post-hoc analyses of data that have already been acquired with different study goals in mind.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[1]",
+      "char_offset": 488
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[1]",
+      "char_offset": 709
+    },
+    "len": 221
+  },
+  {
+    "query": "Of note, the test for the presence of variability ('Results: Section V'; Steps 2b and 3) and the power analyses ('Results: Section X'; Step 2c) are very time-consuming because they require the simulation of a large number (e.g., 1,000) of entire experiments and the application of LOTO to the resulting data.",
+    "matched_segment": "Of note, the test for the presence of variability ('Results: Section V'; Steps 2b and 3) and the power analyses ('Results: Section X'; Step 2c) are very time-consuming because they require the simulation of a large number (e.g., 1,000) of entire experiments and the application of LOTO to the resulting data.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 308
+    },
+    "len": 308
+  },
+  {
+    "query": "For example, for the first power analysis reported in 'Results: Section X', we ran 1,000 simulations of 30 participants with 160 trials each, meaning that the HD-LBA model had to be estimated ~5 million times.",
+    "matched_segment": "For example, for the first power analysis reported in 'Results: Section X', we ran 1,000 simulations of 30 participants with 160 trials each, meaning that the HD-LBA model had to be estimated ~5 million times.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 309
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 518
+    },
+    "len": 209
+  },
+  {
+    "query": "Note, however, that other approaches such as GR17 or hierarchical Bayesian modeling can be much more time-consuming than LOTO, so that even the simplest simulation-based power analyses would become infeasible using these approaches.",
+    "matched_segment": "Note, however, that other approaches such as GR17 or hierarchical Bayesian modeling can be much more time-consuming than LOTO, so that even the simplest simulation-based power analyses would become infeasible using these approaches.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 757
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 989
+    },
+    "len": 232
+  },
+  {
+    "query": "The idea of leaving one data point out, also termed the 'jackknife' principle, is not new. In fact, the approach was proposed by statisticians in the 1950s (Quenouille, 1956; Tukey, 1958) as a way to estimate the variance and bias of estimators when dealing with small samples.",
+    "matched_segment": "The idea of leaving one data point out, also termed the 'jackknife' principle, is not new. In fact, the approach was proposed by statisticians in the 1950s (Quenouille, 1956; Tukey, 1958) as a way to estimate the variance and bias of estimators when dealing with small samples.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p",
+      "char_offset": 277
+    },
+    "len": 277
+  },
+  {
+    "query": "From a technical point of view, LOTO bears obvious similarities to statistical methods such as (Bayesian) leave-one-out cross-validation, which is employed in classification-based analyses (Bishop, 2006), Bayesian model evaluation (Vehtari et al., 2017), or the leave-one-subject-out approach, which is used to circumvent the non-independence error in statistical analyses of fMRI data (Esterman et al., 2010).",
+    "matched_segment": "From a technical point of view, LOTO bears obvious similarities to statistical methods such as (Bayesian) leave-one-out cross-validation, which is employed in classification-based analyses (Bishop, 2006), Bayesian model evaluation (Vehtari et al., 2017), or the leave-one-subject-out approach, which is used to circumvent the non-independence error in statistical analyses of fMRI data (Esterman et al., 2010).",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p",
+      "char_offset": 278
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p",
+      "char_offset": 688
+    },
+    "len": 410
+  },
+  {
+    "query": "Notably, the jackknife principle has also been adopted for inferring trial-specific onset latencies of ERPs (Miller et al., 1998; Stahl and Gibbons, 2004) and for quantifying trial-specific functional connectivity between different brain regions (Richter et al., 2015).",
+    "matched_segment": "Notably, the jackknife principle has also been adopted for inferring trial-specific onset latencies of ERPs (Miller et al., 1998; Stahl and Gibbons, 2004) and for quantifying trial-specific functional connectivity between different brain regions (Richter et al., 2015).",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p",
+      "char_offset": 689
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p",
+      "char_offset": 958
+    },
+    "len": 269
+  },
+  {
+    "query": "Thus, a combination of LOTO for inferring variability in cognitive model parameters with the same principle used for identifying trial-specific brain activation patterns could be a promising approach for future research in model-based cognitive neuroscience (e.g., Benwell et al., 2018).",
+    "matched_segment": "Thus, a combination of LOTO for inferring variability in cognitive model parameters with the same principle used for identifying trial-specific brain activation patterns could be a promising approach for future research in model-based cognitive neuroscience (e.g., Benwell et al., 2018).",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p",
+      "char_offset": 959
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p",
+      "char_offset": 1246
+    },
+    "len": 287
+  },
+  {
+    "query": "In other words, LOTO is a 'two-stage approach' to model-based cognitive neuroscience, in which the modeling of behavior precedes the analysis of brain data (as exemplified in 'Results: Section XI').",
+    "matched_segment": "In other words, LOTO is a 'two-stage approach' to model-based cognitive neuroscience, in which the modeling of behavior precedes the analysis of brain data (as exemplified in 'Results: Section XI').",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[3]/p",
+      "char_offset": 669
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[3]/p",
+      "char_offset": 867
+    },
+    "len": 198
+  },
+  {
+    "query": "This approach misses out on the advantage of reciprocity exhibited by the joint modeling approach (Turner et al., 2015).",
+    "matched_segment": "This approach misses out on the advantage of reciprocity exhibited by the joint modeling approach (Turner et al., 2015).",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[3]/p",
+      "char_offset": 868
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[3]/p",
+      "char_offset": 988
+    },
+    "len": 120
+  },
+  {
+    "query": "However, LOTO's strength lies in its ease, speed and generality of application.",
+    "matched_segment": "However, LOTO's strength lies in its ease, speed and generality of application.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[3]/p",
+      "char_offset": 989
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[3]/p",
+      "char_offset": 1068
+    },
+    "len": 79
+  },
+  {
+    "query": "Moreover, it retains the flexibility of the two-stage approach with respect to identifying the neural correlates of trial-by-trial parameters: it does not require an a priori hypothesis of which brain region or EEG component might be related to variability in a model parameter. Instead, the variability estimate captured by LOTO can simply be plugged into, for instance, a GLM-based fMRI whole-brain analysis (Gluth and Rieskamp, 2017; O'Doherty et al., 2007; see also Figure 12C).",
+    "matched_segment": "Moreover, it retains the flexibility of the two-stage approach with respect to identifying the neural correlates of trial-by-trial parameters: it does not require an a priori hypothesis of which brain region or EEG component might be related to variability in a model parameter. Instead, the variability estimate captured by LOTO can simply be plugged into, for instance, a GLM-based fMRI whole-brain analysis (Gluth and Rieskamp, 2017; O'Doherty et al., 2007; see also Figure 12C).",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[3]/p",
+      "char_offset": 1069
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[3]/p",
+      "char_offset": 1551
+    },
+    "len": 482
+  },
+  {
+    "query": "Notably, LOTO also retains the flexibility of testing different functional relationships between brain and behavior (e.g., linear, quadratic, exponential) and thus lends itself to exploring different linking functions for subsequent, confirmatory studies.",
+    "matched_segment": "Notably, LOTO also retains the flexibility of testing different functional relationships between brain and behavior (e.g., linear, quadratic, exponential) and thus lends itself to exploring different linking functions for subsequent, confirmatory studies.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[3]/p",
+      "char_offset": 1552
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[3]/p",
+      "char_offset": 1807
+    },
+    "len": 255
+  },
+  {
+    "query": "Today, neuroimaging and psychophysiological techniques such as fMRI, EEG and eye-tracking allow us to shed light on the process of single actions.",
+    "matched_segment": "Today, neuroimaging and psychophysiological techniques such as fMRI, EEG and eye-tracking allow us to shed light on the process of single actions.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[4]/p",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[4]/p",
+      "char_offset": 146
+    },
+    "len": 146
+  },
+  {
+    "query": "However, the development of cognitive models has only partially kept up with these advances because the central tenet of cognitive modeling is still the identification of invariant features of behavior by averaging over repeated observations.",
+    "matched_segment": "However, the development of cognitive models has only partially kept up with these advances because the central tenet of cognitive modeling is still the identification of invariant features of behavior by averaging over repeated observations.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[4]/p",
+      "char_offset": 147
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[4]/p",
+      "char_offset": 389
+    },
+    "len": 242
+  },
+  {
+    "query": "LOTO has the potential to fill this gap, in particular because it will not be restricted to a handful of specific models or to a handful of experts in the field who are highly proficient in computational modeling.",
+    "matched_segment": "LOTO has the potential to fill this gap, in particular because it will not be restricted to a handful of specific models or to a handful of experts in the field who are highly proficient in computational modeling.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[4]/p",
+      "char_offset": 390
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[4]/p",
+      "char_offset": 603
+    },
+    "len": 213
+  }
+]

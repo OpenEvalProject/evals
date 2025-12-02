@@ -1,0 +1,2120 @@
+{
+  "submission": {
+    "id": "f82281b3-4a03-40ef-b544-202ff8936662",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:43:45.473207Z",
+    "updated_at": "2025-12-02T06:43:45.473207Z"
+  },
+  "content": [
+    {
+      "id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "submission_id": "f82281b3-4a03-40ef-b544-202ff8936662",
+      "content_type": "manuscript",
+      "content_text": "# Dopamine maintains network synchrony via direct modulation of gap junctions in the crustacean cardiac ganglion\n\n## Authors\n\n- Brian J Lane<sup>1</sup> ([ORCID: 0000-0003-3416-2377](https://orcid.org/0000-0003-3416-2377))\n- Daniel R Kick<sup>1</sup> ([ORCID: 0000-0002-9002-1862](https://orcid.org/0000-0002-9002-1862))\n- David K Wilson<sup>1</sup>\n- Satish S Nair<sup>2</sup> ([ORCID: 0000-0002-1489-7029](https://orcid.org/0000-0002-1489-7029))\n- David J Schulz<sup>1</sup> ([ORCID: 0000-0003-4532-5362](https://orcid.org/0000-0003-4532-5362)) \u2020\n\n### Affiliations\n\n1. Division of Biological Sciences University of Missouri Columbia United States\n2. Department of Electrical Engineering and Computer Science University of Missouri Columbia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Large Cell (LC) motor neurons of the crab cardiac ganglion have variable membrane conductance magnitudes even within the same individual, yet produce identical synchronized activity in the intact network. In a previous study we blocked a subset of K+ conductances across LCs, resulting in loss of synchronous activity (Lane et al., 2016). In this study, we hypothesized that this same variability of conductances makes LCs vulnerable to desynchronization during neuromodulation. We exposed the LCs to serotonin (5HT) and dopamine (DA) while recording simultaneously from multiple LCs. Both amines had distinct excitatory effects on LC output, but only 5HT caused desynchronized output. We further determined that DA rapidly increased gap junctional conductance. Co-application of both amines induced 5HT-like output, but waveforms remained synchronized. Furthermore, DA prevented desynchronization induced by the K+ channel blocker tetraethylammonium (TEA), suggesting that dopaminergic modulation of electrical coupling plays a protective role in maintaining network synchrony.\n\n## Introduction\n\nNeural networks must be capable of producing output that is robust and reliable, yet also flexible enough to meet changing environmental demands. One mechanism of providing flexibility to network activity is neuromodulation, which reconfigures network output by altering a subset of cellular and synaptic conductances (Harris-Warrick, 2011; Bargmann, 2012; Daur et al., 2016). However, many networks achieve stable output by a variety of solutions; intrinsic membrane conductances and synaptic strengths can be highly variable yet still produce nearly identical physiological activity (Ball et al., 2010; Calabrese et al., 2011; Marder, 2011; Ransdell et al., 2013a). This raises a fundamental question about neuromodulation, highlighted in a recent review by Marder et al. (2014), as to whether modulation of networks with variable underlying parameters can produce predictable and reliable results. These authors demonstrate computationally that modulation of neurons with similar outputs arising from variable underlying conductances can cause anywhere from relatively small to fairly substantial differences in output (Marder et al., 2014). Therefore, the response of any neural network to modulation is likely state-dependent (Goldman et al., 2001; Nadim et al., 2008; Gutierrez et al., 2013; Williams et al., 2013; Marder et al., 2014), and potentially unpredictable as a result of these varying underlying conductances (Marder et al., 2014). In some cases neuromodulation can expand the parameter space in which a given activity feature is maintained (Grashow et al., 2009), potentially leading to protective effects of modulation that ensure robust network output (St\u00e4dele et al., 2015). Yet these questions have never been addressed in a network that relies on synchronous activity for appropriate physiological output.\n\nThe crustacean cardiac ganglion (CG) is a central pattern generator network that produces rhythmic bursts with precisely synchronized activity across all five Large Cell (LC) motor neurons (Lane et al., 2016; Figure 1). Despite virtually identical output across LCs within a given network, constituent LCs are variable in many ionic conductances, including A-type K+ (IA), high-threshold K+ (IHTK), and voltage-dependent Ca2+ (ICa) (Ransdell et al., 2013a; Ransdell et al., 2013b; Lane et al., 2016). When subsets of K+ conductances are blocked in LCs of a network, synchrony is disrupted, although ultimately is restored by a combination of compensatory changes in membrane conductance and electrical synaptic strength (Lane et al., 2016). The CG is modulated by many substances, including neuropeptides and the biogenic amines serotonin and dopamine\u00a0(DA) (Cooke, 2002; Cruz-Berm\u00fadez and Marder, 2007) that are known to target the same K+ conductances that lead to desynchronization when altered (Kloppenburg et al., 1999; Peck et al., 2001; Johnson et al., 2003; Gruhn et al., 2005). Therefore, one potentially detrimental impact of neuromodulation altering membrane conductance is a resulting loss of LC synchrony. Given that hormonal modulators in the hemolymph will bathe LCs uniformly, this study addresses whether the CG is tuned to maintain stable synchrony during neuromodulation or if altering a subset of cellular conductances with neuromodulation will desynchronize network activity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39368/elife-39368-fig1-v3.jpg)\n\n**Figure 1.:** (A) Intracellular electrodes recorded simultaneously from LC3 and either LC4 or LC5. Extracellular recordings were taken from a petroleum jelly well on the CG trunk (solid line). For experiments which applied modulators or TEA exclusively to anterior LCs, the extracellular recording was taken from a single large well allowing anterior LCs to be exposed to the perfusate while protecting the remainder of the ganglion (dashed line). (B) Representative control activity showing the rhythmic synchronized bursting of LCs, with small cell (SC) pacemaker and Large Cell (LC) motor neuron spikes labeled on the extracellular trace (Scale bars\u00a0=\u00a010 mV, recording length\u00a0=\u00a014 s).\n\nWe hypothesized that neuromodulation will desynchronize LC activity owing to the variable conductances across LCs. We tested this hypothesis by exposing the CG to two amine modulators, serotonin (5HT) and DA, and measuring the effects of the modulators on excitability and synchrony individually and when co-applied. We found that\u00a0serotonergic modulation desynchronizes LC voltage waveforms, and in most networks elicited a distinct mode of output characterized by prolonged pacemaker bursts which drive two distinct LC bursts before the cycle was reset. In contrast, DA had an overall excitatory effect on LCs, but neither desynchronized LC activity nor elicited the two LC bursts per pacemaker cycle seen in 5HT. When co-applied, DA prevented the 5HT-induced desynchronization without preventing the characteristic 5HT output with two bursts per pacemaker cycle. Even with IHTK reduced by TEA application \u2013 a known perturbation that leads to substantial loss of synchrony across LCs (Lane et al., 2016) \u2013 co-application of DA with TEA prevented desynchronization. Our results suggest that DA preserves network synchrony by directly targeting and increasing electrical synaptic conductance. Thus, DA may function to maintain robust synchrony in the cardiac network while still being permissive to plasticity of output caused by other modulators.\n\n## Results\n\n### 5HT and DA have distinct excitatory effects when applied to the entire network\n\nBoth 5HT (10\u22126M) and DA (10\u22125M) are excitatory when applied to the entire CG of C. borealis (Cruz-Berm\u00fadez and Marder, 2007), and our results recapitulate this same effect (Figure 2). 5HT significantly increased pacemaker burst duration, and in 6 out of 8 experiments switched the network to a distinct output consisting of a single prolonged pacemaker burst driving two different and distinct LC bursts that we term \u2018double-bursting\u2019 (Figure 2A). Because this represents a distinct mode of firing from control, direct comparisons of LC burst characteristics between these two modes of firing did not seem appropriate. Therefore, changes in network output in 5HT were quantified by analysis of phase relationships among SCs and LCs derived from extracellular recordings (Figure 2B, N\u00a0=\u00a08). 5HT significantly altered the SC off phase (p=0.007, paired t-test), leading to prolonged pacemaker bursting. Because double-bursting is a distinct output from the control rhythm, direct comparisons are more difficult to make for LCs. However, in comparing the first LC burst in preparations that transitioned to double-bursting in 5HT (Figure 2B; LCDB), there was a significant phase advance in both the LC on (p<0.001, paired t-test) and LC off (p<0.001, paired t-test) relationships relative to control. Phase relationships were not tested for single-bursting preparations in 5HT, as sample size was only two for this output type. However, the phase relationships of the single-bursting preparations are shown in Figure 2B (LCSB).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39368/elife-39368-fig2-v3.jpg)\n\n**Figure 2.:** (A) Effects of 10\u22126M 5HT on the cardiac network. For each condition (Control and 5HT) the top two traces are intracellular recordings from two different LCs in the same network (LC3 and LC4) and the bottom trace is a simultaneous extracellular recording from the CG trunk. These recordings are taken from the same preparation before and after exposure to 5HT. In this case, the preparation exhibited \u2018double-bursting\u2019 output in 5HT, whereby two LC bursts are generated from continuous input from SC pacemaker cells. Note how the LC membrane potential does not return to baseline between two bursts of one full pacemaker cycle (designated by a \u03a8 in the 5HT intracellular recording). (B) Phase relationships of SCs and LCs in 5HT. Phase relationships for double-bursting (LCDB, N\u00a0=\u00a06) and single-bursting (LCSB, N\u00a0=\u00a02) LCs are shown separately for the 5HT condition. Bars represent mean\u00a0\u00b1SD. Inset shows how extracellular traces were used to quantify the phase parameters for the SC pacemakers and double-bursts (LCB1, LCB2) in 5HT preparations. Significant differences (p<0.01, paired t-tests) relative to control are denoted with the presence of distinct symbols for SC off (*), LC on (\u03d5), and LC off (\u2021). These were analyzed only for the double-bursting preparations, where statistical power was sufficient. Although double-bursting is a distinct form of output unique to the 5HT condition, we compared the LC on and LC off for the first LC burst to demonstrate a significant phase advance of the initial LC bursting in this condition. (C) Effects of 10\u22125M DA on the cardiac network. Recordings as in panel A. (D) Phase relationships of SCs and LCs in DA (N\u00a0=\u00a08). DA does not initiate a distinct double-bursting output in LCs, and there were no significant changes in phase relationships in DA. Inset shows how extracellular traces were used to quantify the phase parameters for the SC pacemakers and single LC bursts in DA preparations.\n\nDA also increased network excitability, but in distinct ways from 5HT (Figure 2C). DA never induced double-bursting, but significantly increased the number of LC spikes per burst (8.850\u00a0\u00b1\u00a03.978 in control; 11.225\u00a0\u00b1\u00a05.337 in DA; p<0.05), LC spike frequency (8.854\u00a0\u00b1\u00a04.878 in control; 11.268\u00a0\u00b1\u00a07.434 in DA; p<0.05), LC burst duration (0.715\u00a0\u00b1\u00a00.280 in control; 0.806\u00a0\u00b1\u00a00.281 in DA; p<0.05), and LC duty cycle (0.164\u00a0\u00b1\u00a00.0744 in control, 0.211\u00a0\u00b1\u00a00.0411 in DA; p<0.05, paired t-tests, N\u00a0=\u00a08). There were no significant changes in phase relationships in DA relative to control (Figure 2D).\n\nWhen applied focally to the anterior LCs at these same concentrations, our results demonstrate that both amines have direct excitatory effects on LCs. 5HT applied only to the anterior LCs never resulted in double-bursting, demonstrating that this output requires 5HT modulation of SC pacemakers. Because focal application of 5HT generated single-bursting output, we could compare burst statistics relative to control. Focal application of 5HT increased the number of spikes per burst (5.850\u00a0\u00b1\u00a02.72 in control; 10.85\u00a0\u00b1\u00a02.96 in 5HT; p<0.01, N\u00a0=\u00a06), the spike frequency within each burst (6.24\u00a0\u00b1\u00a03.18 Hz in control; 11.53\u00a0\u00b1\u00a03.39 Hz in 5HT; p<0.01, N\u00a0=\u00a06), burst duration (0.642\u00a0\u00b1\u00a00.367 s in control; 0.739\u00a0\u00b1\u00a00.411 s in 5HT; p<0.05, N\u00a0=\u00a06), LC duty cycle (0.183\u00a0\u00b1\u00a00.059 in control; 0.232\u00a0\u00b1\u00a00.063 in 5HT; p<0.01, N\u00a0=\u00a06) and decreased the LC interburst interval (3.15\u00a0\u00b1\u00a00.68 in control; 2.761\u00a0\u00b1\u00a00.658 in 5HT; p<0.01, N\u00a0=\u00a06). DA also directly affected LC output, significantly increasing the number of spikes per burst (4.45\u00a0\u00b1\u00a03.42 in control and 10.20\u00a0\u00b1\u00a06.41 in DA; p<0.05, N\u00a0=\u00a08) and spike frequency within each burst (5.85\u00a0\u00b1\u00a04.95 in control and 10.38\u00a0\u00b1\u00a010.16 in DA; p<0.05, N\u00a0=\u00a08). Although pacemaker cells were not directly modulated, modest effects on pacemaker bursting were sometimes evident along with the onset of increased LC excitability. This is presumably an indirect effect due to strong electrotonic feedback from LCs, which influences pacemaker activity and can modify the timing of pacemaker bursts in the CG (Berlind, 1989; Garc\u00eda-Crescioni and Miller, 2011).\n\n### 5HT desynchronizes burst waveforms but DA does not\n\nThe degree of synchrony in burst waveforms was quantified as described previously (Lane et al., 2016, see Materials and methods). Briefly, we performed a cross-correlation on the digitized voltage waveforms of each burst from two intracellular recordings. The coefficient of determination (R2) was then used to quantify how accurately the voltage of one cell predicts the voltage of the other. This provides a baseline measure of synchrony for each burst and allowed us to track relative changes.\n\nAt the onset of serotonergic modulation (10\u22126M), there was an acute reduction in synchrony as measured by R2. Figure 3A illustrates typical acute effects of 5HT application. Differences in voltage waveforms appear between LC3 and LC5 after 5HT perfusion. R2 values for every burst during a single experiment are plotted in Figure 3B to visualize the typical time course of changes in synchrony. Synchrony reliably reached a minimum within several minutes (mean\u00a0=\u00a09.1 min) before stabilizing and showing a slow, modest recovery of synchrony. For statistical analysis in Figure 3C, R2 values from 10 consecutive bursts were averaged at three time points: Control (5 min prior to modulation), acute 5HT modulation (sampled at the point of maximum desynchronization), and again after 30 min of exposure to 5HT (N\u00a0=\u00a08 preparations). Synchrony significantly changed as a result of 5HT exposure (p<0.001, RM ANOVA), resulting in a decrease of synchrony in acute 5HT (R2\u00a0=\u00a00.967\u00a0\u00b1\u00a00.012 control, 0.893\u00a0\u00b1\u00a00.081 acute 5HT; p<0.01, Tukey test). There then was a significant increase in synchrony between acute 5HT and 30 min of continuous 5HT perfusion (0.927\u00a0\u00b1\u00a00.066; p<0.01, Tukey test). but synchrony in 30 min of 5HT was still significantly below baseline (p<0.05, Tukey test). During 5HT-induced double-bursting, the first and second of the two bursts typically displayed distinct waveform synchrony values. The R2 values for both the first and second bursts were lower than control, but which of the two bursts in the cycle had lower R2 values varied across preparations.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39368/elife-39368-fig3-v3.jpg)\n\n**Figure 3.:** (A) Representative traces show that LCs with virtually identical control activity produce different burst waveforms after application of 5HT. Double-bursting occurred 6 of 8 preparations in 5HT. Dashed lines designate points between which were used for calculation of R2 values (see Materials and methods). In 5HT double-bursting preparations, each LC burst waveform was treated as distinct for measurements of R2 (i.e. R21, R22). Scale bars\u00a0=\u00a010 mV and 1 s. (B) Waveform synchrony (R2) was calculated for every burst across a full experiment, and a scatterplot shows the synchrony of bursts for 10 min of control activity followed by 30 min of continuous perfusion of 5HT in one example preparation. An acute loss of synchrony accompanies the onset of modulation. (C) R2 was averaged for 10 consecutive bursts at each of 3 time points: control (5 min prior to perfusion), Acute (at the point R2 reached a minimum), and after 30 min of modulation. A one-way Repeated Measures ANOVA indicated that there was a significant effect of 5HT across groups (p<0.001, N\u00a0=\u00a08). Post-hoc testing revealed a significant decrease in R2 from control to acute 5HT (p<0.01, Tukey test), and a significant increase between acute and 30 min (p<0.01, Tukey test). Synchrony was not restored to control levels after 30 min (p<0.05, Tukey test). N\u00a0=\u00a08 preparations. (D) Representative traces show that excitability and network output are affected by DA, but LCs remain synchronized. Dashed lines designate points between which were used for calculation of R2 values. Scale bars\u00a0=\u00a010 mV and 1 s. (E) R2 was calculated for every burst across a full experiment. Scatterplot shows 10 min of control activity followed by 30 min in DA for a representative preparation. R2 values are largely unaffected by changes in activity caused by DA. (F) R2 was averaged for 10 consecutive bursts at each of 3 time points: control (5 min prior to perfusion), Acute (9.1 min), and after 30 min of DA. There were no significant effects of DA on synchrony indicated as a result of one-way Repeated Measures ANOVA (p=0.784, N\u00a0=\u00a08).\n\nIn stark contrast, burst waveforms for LCs in DA remained completely and strikingly synchronized (Figure 3D). The scatterplot in Figure 3E shows R2 for each burst in one preparation during a full 30 min of DA perfusion. There were no changes in synchrony during any DA perfusion experiment (Figure 3E and F; p=0.784, RM ANOVA, N\u00a0=\u00a08). The acute data point was sampled at 9.1 min to match the mean time point used for sampling in 5HT.\n\n### DA, but not 5HT, modulates coupling conductance\n\nWe hypothesized that modulation of electrical coupling may be responsible for the different effects of 5HT and DA on LC synchrony. One possibility is that modulation with 5HT does not increase the strength of electrical coupling sufficiently to prevent differential effects on cell excitability from resulting in desynchronization. DA may increase coupling strength enough to ensure synchrony.\n\nAs an indicator of the strength of electrical coupling, we measured the coupling coefficient (see Materials and methods) between LC3 and LC5 at control and after 15 min of modulation. Coupling coefficients were not significantly different between control (0.043\u00a0\u00b1\u00a00.035) and 15 min modulation in 5HT (0.037\u00a0\u00b1\u00a00.042) (Figure 4A; N\u00a0=\u00a08). In contrast, DA increased coupling coefficient by 41% (0.035\u00a0\u00b1\u00a00.030 in control; 0.049\u00a0\u00b1\u00a00.043 in DA) (p<0.05, paired t-test, N\u00a0=\u00a06; Figure 4A). Input resistance was not significantly changed in either 5HT (3.62\u00a0\u00b1\u00a04.40 M\u03a9 in control; 3.78\u00a0\u00b1\u00a04.11 M\u03a9 in 5HT) or DA (3.85\u00a0\u00b1\u00a02.34 M\u03a9 in control; 3.33\u00a0\u00b1\u00a01.77 M\u03a9 in DA) (Figure 4A). These results suggest that an increase in coupling coefficient in DA may be the result of a direct increase of coupling conductance in the presence of DA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39368/elife-39368-fig4-v3.jpg)\n\n**Figure 4.:** (A)\u00a0Coupling Coefficients measured in the intact network for LC3-LC4 or LC3-LC5 were not significantly changed by 5HT. Mean coupling coefficient increased by 41% in DA (p<0.01, paired t-test). There were no effects of 5HT or DA on cell input resistance. Sample sizes noted in each bar. (B) A reduced preparation where LC4 and LC5 somata were physically isolated from the network by thread ligature was used to test the direct effect of 5HT and DA on coupling conductance. Representative traces of current injections in these isolated pairs of cells that were used to calculate coupling conductance are shown before and after DA exposure (left) and 5HT exposure (right). Traces in black show voltage responses of LC4 (top) and LC5 (middle) to a \u22128 nA hyperpolarizing current injection into LC5 (bottom). Overlaid traces show the voltage response to the same current injection after DA (left, blue) and 5HT (right, maroon). Control traces in the 5HT recordings are difficult to see due to near complete overlap when 5HT and Control recordings were superimposed. (C) Coupling conductance between LC4 and LC5 was unchanged by 5HT, and increased by DA. Top row in C shows coupling conductance in both directions (i.e. LC4 to LC5, and LC5 to LC4) for N\u00a0=\u00a05 preparations before and after modulation. These data are then separated by directionality. Coupling Conductance was significantly increased in DA in both directions (p<0.05 for each, mean increase 149%, N\u00a0=\u00a05).\n\nWhile the coupling coefficient is a useful description of the functional coupling relationship, it does not identify the electrophysiological mechanism, that\u00a0is a change in membrane resistance or a change in coupling conductance. LC3 is coupled to LC4 and LC5 in the ganglionic trunk distal to the somata. This electrotonic distance prevents accurate calculation of coupling conductance using somatic recordings on different branches of the ganglion. The branch containing LC4 and LC5 can be isolated from the network by thread ligature creating the ideal conditions for measuring the coupling conductance between these somata (Figure 4B). With two electrodes in each cell, we used hyperpolarizing current injections to determine the gap junctional resistance in both directions independent of membrane resistance (see Materials and methods). 5HT had no apparent effect on coupling conductance when measured from LC4 to LC5 (0.490\u00a0\u00b1\u00a00.179 \u03bcS in control; 0.503\u00a0\u00b1\u00a00.186 in 5HT; p=0.329, paired t-test), or from LC5 to LC4 (0.487\u00a0\u00b1\u00a00.186\u03bcS in control, 0.516\u00a0\u00b1\u00a00.211\u03bcS in 5HT; p=0.367, paired t-test). DA significantly increased coupling conductance both from LC4 to LC5 (0.455\u00a0\u00b1\u00a00.368\u03bcS in control, 0.818\u00a0\u00b1\u00a00.552 in DA; p<0.05, paired t-test) and from LC5 to LC4 (0.585\u00a0\u00b1\u00a00.435\u03bcS in control, 1.294\u00a0\u00b1\u00a00.702\u03bcS in DA; p<0.05, paired t-test) measured after 15 min of DA exposure (Figure 4C).\n\n### Co-application of DA and 5HT prevents desynchronization and induces double bursting\n\nOur previous work demonstrated that a compensatory increase in electrical coupling among LCs rescued synchrony after treatment with the channel blocker TEA (Lane et al., 2016). The relatively rapid and large increase in electrical coupling between LCs upon exposure to DA led us to hypothesize that co-modulation with DA might prevent desynchronization caused by other modulators. We tested the ability of DA to maintain network synchrony during co-modulation with 5HT using the same perfusion and recording protocol as above, by co-applying DA (10\u22125 M) and 5HT (10\u22126 M).\n\nIndividual preparations treated with DA\u00a0+\u00a05HT sometimes showed a small increase or transient decrease in synchrony, which occurred over the same time scale as seen in preparations exposed to 5HT alone. However, across the full set of preparations (N\u00a0=\u00a08) there was no significant change in synchrony when DA and 5HT were co-applied (p=0.334, RM ANOVA). 5 out of 8 preparations transitioned to the double-bursting mode seen in 5HT alone (Figures 2A and 5A). However, this time the double-bursting pattern displayed highly synchronized waveforms (Figure 5A). The scatterplot in Figure 5B shows R2 for all bursts across a full experiment, in this case revealing a slight increase in synchrony from baseline after the onset of co-modulation. The minimum R2 in 5HT alone occurred an average of 9.1 min after 5HT perfusion began (Figure 3C). Because we did not observe a decrease in R2 after perfusion of DA\u00a0+\u00a05 HT, we performed the R2 analysis for the \u2018acute\u2019 time point 9.1 min after modulator perfusion began in order to best align with the acute time point for 5HT alone. Overall, there was no significant difference in synchrony detected across groups (p=0.334, RM ANOVA, N\u00a0=\u00a08).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39368/elife-39368-fig5-v3.jpg)\n\n**Figure 5.:** (A) Representative traces show LCs maintain synchronized voltage waveforms during co-application of DA and 5HT. 5 out of 8 preparations transitioned to double-bursting, and network output shows increased number of spikes per burst, spike frequency in each burst, burst duration and LC duty cycle. Scale bars\u00a0=\u00a010 mV and 1 s. (B) R2 was calculated for every burst across a full experiment. Scatterplot shows this for 10 min of control activity followed by 30 min of perfusion with both modulators. (C) R2 was averaged for 10 consecutive bursts at each of 3 time points: control (5 min prior to perfusion), Acute, and after 30 min of modulation. There were no significant effects on synchrony detected across groups via one-way Repeated Measures ANOVA (p=0.334, N\u00a0=\u00a08). (D) Phase relationships of SCs and LCs in DA\u00a0+\u00a05 HT. Phase relationships for double-bursting (LCDB, N\u00a0=\u00a05) and single-bursting (LCSB, N\u00a0=\u00a03) LCs are shown separately. Bars represent mean\u00a0\u00b1SD. Significant differences (p<0.01, paired t-tests) relative to control are denoted with the presence of distinct symbols for SC off (*) and LC on (\u03d5). These were analyzed only for the double-bursting preparations, where statistical power was sufficient. Although double-bursting is a distinct form of output unique to the 5HT condition, we compared the LC on and LC off for the first LC burst to demonstrate a significant phase advance of the initial LC bursting in this condition.\n\nOverall, DA\u00a0+\u00a05 HT co-modulation elicited changes in network output that were similar to those in 5HT alone. Changes in phase relationships mirrored those seen in 5HT, including significant changes in SC off (p<0.001, paired t-test), and LC on (p=0.011, paired t-test) phase characteristics (Figure 5D).\n\n### DA prevents TEA-induced desynchronization\n\nWe hypothesize that DA may prevent desynchronization against a variety of perturbations by modulating electrical coupling strength. Our previous study showed that exposing the anterior LCs to the K+ channel blocker TEA produces a substantial loss of LC synchrony as well as a large increase in the number of spikes per burst and spike frequency (Lane et al., 2016). For reference, the inset in Figure 6A (acute TEA, no DA) includes representative traces of this TEA-induced desynchronization.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/39368/elife-39368-fig6-v3.jpg)\n\n**Figure 6.:** (A)\u00a0Representative traces for a single preparation in control, DA alone, and DA\u00a0+\u00a0TEA. Traces in the box at the far right illustrate acute desynchronization in TEA in the absence of DA (separate preparation). Scale bars\u00a0=\u00a010 mV and 1 s. (B) R2 was calculated for every burst across a full experiment. Scatterplot shows throughout 10 min of control activity followed by 5 min of DA exposure, followed by 30 min in DA and TEA for a single preparation. (C) R2 was averaged for 10 consecutive bursts at each of 4 time points: control (5 min prior to perfusion), after 5 min in DA, at the mean time point for desynchronization in TEA observed previously (Lane et al., 2016), and after 30 min exposure to the DA+TEA solution. No significant differences were detected across groups via one-way Repeated Measures ANOVA (p=0.456, N\u00a0=\u00a08).\n\nIf DA can act broadly to maintain synchrony, then we hypothesized that DA should prevent desynchronization in TEA. To test this, a barrier of petroleum jelly was built to protect the posterior (pacemaking) end of the ganglion from the perfusate while leaving anterior LCs exposed (see Figure 1A). The anterior LCs were pre-incubated with DA for 5 min, and then the perfusion switched to saline containing both DA and TEA. The preparations pre-incubated in DA for 5 min did not show any loss of synchrony as a result of TEA (Figure 6B and C). Sample traces (Figure 6A) include four time points to show R2 at control (0.950\u00a0\u00b1\u00a00.0149), 5 min DA (0.958\u00a0\u00b1\u00a00.010), acute exposure to DA\u00a0+\u00a0TEA (0.953\u00a0\u00b1\u00a00.011), and 30 min exposure to DA\u00a0+\u00a0TEA (0.968\u00a0\u00b1\u00a00.008). Excitability increased after 5 min with the addition of DA, similar to the increased excitability found after 15 min of DA in previous experiments (Figure 2D). After the addition of TEA at 5 min, there was a further increase in the number of spikes per burst (7.89\u00a0\u00b1\u00a05.34 in DA and 16.39\u00a0\u00b1\u00a07.65 in DA\u00a0+\u00a0TEA; p<0.01), spike frequency (8.25\u00a0\u00b1\u00a07.95 in DA and 15.19\u00a0\u00b1\u00a08.06 in DA\u00a0+\u00a0TEA; p<0.01), and cycle period (3.34\u00a0\u00b1\u00a00.77 in DA and 3.97\u00a0\u00b1\u00a01.06 in DA\u00a0+\u00a0TEA; p<0.01). In our previous publication (Lane et al., 2016), we observed a substantial and significant decrease in R2 with acute TEA application that occurred an average of 7.5 min after TEA application. In the presence of DA, however, TEA did not cause any detectable change in R2 across groups (p=0.456, RM ANOVA, N\u00a0=\u00a08). In order to best align our analysis in the present study with the known effects of TEA (Lane et al., 2016), we performed the \u2018Acute\u2019 R2 analysis 7.5 min after TEA perfusion began.\n\n## Discussion\n\nNeuromodulation represents a critical mechanism underlying circuit plasticity: by targeting subsets of ionic and synaptic conductances, modulators can reconfigure networks based on environmental feedback to produce entirely distinct circuit outputs leading to behaviorally relevant output that is adapted to the conditions at large (Harris-Warrick, 2011; Nadim and Bucher, 2014). However, a more recent appreciation of the inherent variability in underlying conductances of individual neurons, even within the same network of the same individual, poses a potential complication for the role of modulation in modifying circuit output. That is, how is reliable neuromodulation (and robust output) achieved when a common modulator targets variable neurons (Grashow et al., 2009; Marder et al., 2014)? Our study sheds some light on this potential conundrum by revealing complementary roles of the co-modulators 5HT and DA in changing circuit output yet ensuring some features of inherent circuit stability. Specifically, co-application of both modulators leads to a modification of circuit output similar to the effects of 5HT alone, but preserves the synchrony among individual neurons likely through the direct actions of DA on electrical coupling.\n\n### Effects of DA and 5HT on crustacean motor neurons\n\nBoth 5HT and DA have been extensively studied in crustacean motor neurons, particularly those of the crustacean stomatogastric ganglion (STG). Generally, these studies have examined the effects of each modulator in isolation, while studies of the combined effects of multiple modulators are rare. In particular, 5HT is known to reduce the conductance of both transient and persistent components of a calcium-dependent K+ current (IKCa) in STG cells, an effect that is mimicked by the application of tetraethylammonium [TEA] (Kiehn and Harris-Warrick, 1992a). In addition, 5HT enhances a slow voltage-dependent Ca2+ current (ICa) in STG cells (Kiehn and Harris-Warrick, 1992b; Zhang and Harris-Warrick, 1995). These same IKCa and ICa currents are known to be present in LCs of the cardiac network, and demonstrated to vary over a wide range of conductance magnitudes (Ransdell et al., 2012; Ransdell et al., 2013a; Ransdell et al., 2013b). Furthermore, treatment of LCs with TEA results in an increase in excitability and a loss of network synchrony amongst LCs (Ransdell et al., 2013a; Lane et al., 2016). In addition, 5HT has only been reported to have very weak or no effect at all on electrical coupling in STG neurons (Johnson and Harris-Warrick, 1990). These known features of serotonergic modulation in other crustacean motor neurons are therefore quite consistent with our data in this study. Specifically, 5HT causes an increase in excitability of LCs, as well as causes network desynchronization. We suggest that 5HT modulation has distinct effects on each LC within a ganglion due to the underlying variability of K+ and Ca2+ currents in each cell, and yet because 5HT has no effect on coupling this results in distinct hyperexcitable outputs from each cell that manifests as loss of synchronous activity.\n\nDA has distinct and widespread effects on STG cells, both in terms of output and subcellular targets. DA is known to target the transient potassium current IA (Kloppenburg et al., 1999; Zhang et al., 2010) as well as IH, INaP, and ICa in STG cells (Harris-Warrick and Johnson, 2010). The influence of DA on each conductance type is dependent on cell type (Harris-Warrick and Johnson, 2010; Zhang et al., 2010) as well as the concentration and application time course of the modulator (Rodgers et al., 2011; Rodgers et al., 2013). Furthermore, DA has been shown to both increase and decrease electrical coupling among STG cells in a cell-type-specific manner (Johnson et al., 1993). While IH is not present in crab cardiac LCs, IA, INaP, and ICa have all been identified and shown to vary over a wide range of conductance magnitudes in these cells (Ransdell et al., 2012; Ransdell et al., 2013a). Pharmacological blockade of IA in LCs also has been shown also to induce hyperexcitability and loss of synchrony in cardiac network output (Ransdell et al., 2012). Therefore, our prediction was that we should see similar loss of synchrony with DA application in this study. This was clearly not the case \u2013 while our data demonstrate an increase in excitability of LCs exposed to DA, they never experience any decrease in synchrony. It was only when we determined that DA also directly increases electrical coupling that we could propose a mechanism for the maintenance of synchrony despite the targeting of variable underlying conductances across LCs in DA. Namely, that DA\u2019s influence on coupling prevents desynchronization and is effectively protective against the potentially variable impacts of modulation across LCs within the network. Although the network effects of individual modulators have typically been examined in isolation, this provided a context in which to interpret the combined effects of multiple modulators. This hypothesis was tested by co-applying DA and 5HT and by co-applying DA and TEA. The fact that neither of these conditions resulted in loss of synchrony is consistent with the hypothesis of a protective effect of increased coupling via DA in the cardiac network.\n\n### Co-application of DA and 5HT has additive complementary effects on network output\n\nWhile we directly tested whether DA is able to preserve network synchrony in the face of divergent effects on variable LCs within a ganglion through co-application with both TEA and 5HT, we had no prediction as to what the combined influence of 5HT and DA would be on the cardiac network output overall. It is well established that individual biogenic amine modulators have distinct effects on both the CG (Miller et al., 1984; Berlind, 1998; Berlind, 2001; Cruz-Berm\u00fadez and Marder, 2007) and the STG (Flamm and Harris-Warrick, 1986a; Flamm and Harris-Warrick, 1986b). So much so that distinct output modes can be attributed to DA, 5HT, and octopamine individually (Flamm and Harris-Warrick, 1986a), and is thought to underlie some of the diversity of circuit reorganization and outputs that has been demonstrated in these networks previously. Furthermore, few co-modulation experiments have been performed that specifically determine whether modulator effects will enhance, occlude, or have distinct effects from one another. Therefore, we did not anticipate that DA and 5HT would have largely complementary, and perhaps even synergistic effects on the ganglion. Our data demonstrate when these modulators were co-applied, the network output took on the hallmarks of 5HT modulation \u2013 including double-bursting of the LCs, enhanced excitability, and changes in spike frequency and bursting output \u2013 yet were protected from the loss of synchronous activity that accompanies 5HT-only application. These results suggest that DA and 5HT in these cells have distinct signaling pathways, subcellular targets, and ultimately result in a more linear combination of modulator effects than occlusion or saturation (Li et al., 2018). It remains to be seen whether DA interacts in this fashion with other modulators, including neuropeptides (Miller and Sullivan, 1981; Cruz-Berm\u00fadez and Marder, 2007). However, our results indicate that DA acts to ensure robust activity through the coordinated, synchronous action of all 5 LC motor neurons.\n\nOnly three pairs of axons provide extrinsic innervation of the CG \u2013 one pair is dopaminergic, the others are cholinergic and GABAergic (Delgado et al., 2000; Cooke, 2002). The dopaminergic fibers have many synaptic connections on anterior LCs, their neuropil (in the vicinity of the sites of electrical coupling), and the posterior of the ganglion near the pacemaker cells (Fort et al., 2004). This projection pattern is well situated to provide a potential means for direct delivery of DA to the CG over the immediate time scales of neuromodulator release, in addition to hormonal exposure to DA, through fibers that are rapidly responsive to physiologically relevant stimuli (Maynard, 1953; Guirguis and Wilkens, 1995; Jury and Watson, 2000; Fort et al., 2004). This would potentially allow for feedback transmitted through dopaminergic fibers to rapidly \u2018prime\u2019 the network for subsequent modulation delivered hormonally, thus preventing desynchronization as a result.\n\n### Conclusion: Neuromodulation, Electrical Coupling, and Robustness of Network Output\n\nWhile neuromodulation is largely a phenomenon associated with network plasticity and changes in network output, a more recent appreciation of the additional role of neuromodulation in network robustness has begun to emerge. It has been proposed that the somewhat diffuse and often opposing actions of modulators on different components of the same circuit may act to stabilize the modulated state of networks, and preventing \u2018overmodulation\u2019 that could render a network non-functional or pathological (Harris-Warrick and Johnson, 2010; Marder, 2012). For example, 5HT increases the set of intrinsic and synaptic current magnitude combinations that can give rise to specific behaviors such as bursting in a half center oscillator (Grashow et al., 2009), ensuring a larger parameter space over which appropriate output can be generated in the context of multiple modulation and hence increasing robustness of output. More recently it has been shown that neuromodulation can compensate for temperature-induced loss of motor pattern output in the STG (St\u00e4dele et al., 2015), thus acting in a neuroprotective manner. Electrical coupling itself, as well as modulation of coupling interactions, also play a role in circuit robustness, allowing for distributed network solutions to maximize output consistency under different conditions or with variable underlying physiology of network constituents (Kepler et al., 1990; Gutierrez and Marder, 2013; Marder et al., 2017).\n\nModulation of coupling via DA may have convergent effects on such robustness across different taxa, as modulation of electrical synapses by DA is known to be involved in many circuits and species. DA directly modulates gap junctional conductance and network activity in horizontal cells (Piccolino et al., 1984; He et al., 2000), AII amacrine cells (Kothmann et al., 2009), and rod cells (Jin et al., 2015) of the retina. DA modulation of coupling conductance is also involved in sensorimotor function during copulation in C. elegans (Correa et al., 2015). Furthermore DA has been shown capable of modulating the electrical component of the mixed electrical-chemical synapses of auditory afferents onto the fish Mauthner cell (Pereda et al., 1992; Cachope et al., 2007; Cachope and Pereda, 2012). While electrical coupling is known to support synchronized activity in many systems, and DA is known to modulate such coupling across taxa, to our knowledge this is the first study that directly implicates the neuromodulation of gap junctional conductance in directly counteracting desynchronizing perturbations to enhance network robustness. Furthermore, DA can do so in this system and maintain the ability of other modulators, in this case 5HT, to alter output in an independent fashion that is protected from potentially detrimental or destabilizing alterations to coordinated network activity. This expands the understanding of how neuromodulators can interact to ensure appropriate flexibility in circuits to respond to changes in sensory feedback and produce appropriate context-specific output, but ensure that overall robustness of the network is maintained within an acceptable parameter space.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>5HT</td>\n      <td>Sigma</td>\n      <td>H7752</td>\n      <td>10^\u22126M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DA</td>\n      <td>Acros Organics</td>\n      <td>122000100</td>\n      <td>10^\u22125M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TEA</td>\n      <td>Acros Organics</td>\n      <td>150901000</td>\n      <td>10^\u22125M</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phaseburst</td>\n      <td>http://stg.rutgers.edu/Resources.html</td>\n      <td></td>\n      <td>Spike2 analysis script, provided by Dr. Dirk Bucher, New Jersey Institute of Technology</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nAdult male Jonah crabs, Cancer borealis, were purchased and shipped overnight from The Fresh Lobster Company (Gloucester, MA). Crabs were maintained in artificial seawater at 12\u00b0C until used. Crabs were anesthetized by keeping them on ice for 30 min prior to dissection. The complete cardiac ganglion was dissected from the animal and pinned out in a Sylgard-lined petri dish in chilled physiological saline (440 mM NaCl, 26 mM MgCl2, 13 mM CaCl2, 11 mM KCl, and 10 mM HEPES, pH 7.4\u20137.5, 12\u00b0C). Chemicals were obtained from Fisher Scientific unless otherwise noted.\n\n### Electrophysiology\n\nThe CG network is comprised of 9 cells: 4 Small Cell (SC) pacemaker interneurons which give excitatory input to 5 Large Cell (LC) motor neurons. Stainless steel pin electrodes were connected to differential AC Amplifier (A-M Systems model 1700) for extracellular recording. One pin was placed inside a petroleum jelly well built around the ganglionic trunk and the other placed in the bath outside the well (Figure 1A). The ganglionic trunk contains axons from all 9 cells, and thus serves to monitor the spiking output of the entire network. During normal activity, LCs produce consistent levels of rhythmic output and pairs of LCs show nearly identical voltage waveforms. LC and pacemaker spikes are easily distinguishable by their relative amplitudes, and by intracellular potential changes in the LCs (Figure 1B).\n\nLC somata are easily visible within the nerve and can be individually desheathed for intracellular sharp electrode recordings. Intracellular sharp electrodes containing 3M KCl (8\u201325 M\u03a9) were used to simultaneously monitor the voltage activity in the somata of two anterior LCs. All paired intracellular recordings were from LC3 and either LC4 or LC5. Amplifiers from Axon Instruments were used (AxoClamp 900A, MultiClamp 700B, AxoClamp 2B). Current clamp protocols were created and run using Clampex 10.3 software (Molecular Devices). Electrical coupling in the intact network was measured by hyperpolarizing current injection (1\u20136 nA) when LCs reached resting membrane potential between bursts. Cells were injected one at a time while measuring voltage changes in both cells. Coupling coefficients were calculated as the ratio: (\u0394Vcoupled cell / \u0394V Injected Cell). For both amines, the coupling coefficient at control was compared to the measured value after 15 min of modulation. Changes in coupling coefficient could ultimately be influenced by two fundamentally different mechanisms: altered conductance of the non-junctional membrane, or modification of gap junctional conductance. LC3 and LC5 are coupled to one another and the rest of the network distal to the site of our recordings, making calculation of coupling conductance between these two cells problematic. Our reduced preparation of the thread ligatured LC4/LC5 branch provides an electrotonically compact two-cell preparation in which we could calculate coupling conductance. To calculate electrical coupling conductance, we followed methods outlined by Bennett 1966. Briefly, it assumes two compartments and applies the equation (expressed as in Haas et al., 2011):\n\n$$\nR_{c}=\\frac{R_{in,1}*R_{in,2}-R_{(12)}^{2}}{R_{(12)}}\n$$\n\nwhere Rc represents the coupling resistance, Rin,1 represents the apparent input resistance of Cell 1, Rin,2 represents the apparent input resistance of Cell 2, and R12 represents the transfer resistance from Cell one to Cell 2. Coupling conductance is then the inverse of coupling resistance Gc\u00a0=\u00a01/Rc. Apparent input resistance and transfer resistance were calculated from alternately injecting hyperpolarizing current steps (\u22122 to \u22128 nA) into LC4 and LC5.\n\n### Modulator application\n\nSerotonin (5HT; Sigma), dopamine (DA; Acros Organics), and tetraethylammonium (TEA; Acros Organics) were maintained as concentrated stock solutions and diluted to final concentrations in physiological saline. Whenever present, concentrations were as follows: 10\u22126 M 5HT, 10\u22125 M DA, 25 mM TEA. All perfusions occurred at a rate of approximately 2 ml/min. Solutions were pre-chilled to maintain a constant temperature of 12\u00b0C in the dish.\n\nLC variability can be exploited by applying the K+ channel blocker TEA exclusively to anterior LCs to desynchronize their activity (Lane et al., 2016). To test whether neuromodulation could desynchronize LC activity, we considered perfusion of neuromodulators over the entire network to be a more biologically relevant challenge to test synchrony. There is no reason to suspect any biological conditions in which only the anterior LCs would be exposed to modulators. In vivo, the entire CG is exposed to both serotonin (5HT) and dopamine (DA) as hormonal modulators released from the pericardial organ or other neurohormonal sites (Cooke, 1966; Fort et al., 2004; Maynard and Welsh, 1959). In addition, a pair of extrinsic dopaminergic fibers innervates the CG from the thoracic ganglion and forms abundant synaptic contacts in both the anterior and posterior regions of the ganglion which provides a rapid and direct route for dopaminergic modulation (Cooke, 2002; Fort et al., 2004). Baseline activity was measured during a sham perfusion of physiological saline before the source of the perfusion was switched to saline containing neuromodulators and/or channel blockers. Simultaneous intracellular recordings monitored somatic burst potentials from multiple anterior LCs, and an extracellular well on the ganglionic trunk monitored activity of the entire network.\n\nIn some experiments, a petroleum jelly well was used to protect the posterior end of the ganglion from the perfusate to selectively expose the anterior LCs to 5HT, DA, or DA\u00a0+\u00a0TEA (Figure 1A). For experiments in which TEA was applied only to the anterior portion of the network, whole-network modulation was achieved by adding DA to the posterior end of the ganglion by pipette at the same time the DA perfusion began.\n\n### Data analysis\n\nRecordings were analyzed using Clampfit 10.3 (Molecular Devices) and Spike 2.9 (CED, Cambridge, UK) software. Statistical analyses were performed using SigmaPlot 11.0. All data are expressed as mean\u00a0\u00b1SD unless otherwise stated.\n\nChanges in LC burst characteristics, coupling coefficients, and coupling conductance were analyzed with paired t-tests after normality testing with Shapiro-Wilk tests. All comparisons for measures of network output between control and modulation are after 15 min of modulation. Each burst characteristic quantified was averaged for 10 consecutive cycles.\n\nPhase data were generated using the \u2018phaseburst\u2019 analysis script in Spike 2 (D. Bucher; available at http://stg.rutgers.edu/Resources.html). Each cycle was considered to begin with the start of a pacemaker burst and end at the start of the next pacemaker burst. The \u2018On\u2019 phase for each LC burst was then calculated as: the delay time between the start of the cycle and the start of the LC burst, divided by the full cycle period. Similarly, the \u2018Off\u2019 phase for each burst (pacemaker and LC) was calculated as: the delay time between the start of the cycle and the end of the burst, divided by the full cycle period. For each individual preparation, phasing data from 10 consecutive cycles were averaged at control, and again after 15 min of modulation. Changes in phase characteristics (SC off, LC on, and LC off) were confirmed to be of normal distribution via Shapiro-Wilk tests, and subsequently analyzed with paired t-tests.\n\nR-values (and thus R2) as measures of synchrony were obtained by Pearson correlation tests as described previously (Lane et al., 2016; Ransdell et al., 2013a). Boundaries were set around the intracellular burst waveforms for cross-correlation (R2) analysis using Spike 2 Version 9 (Cambridge Electronic Design) as follows: Pacemaker spikes begin before LC spikes, produce extracellular spikes of much smaller amplitude, and cause visible EPSPs in LCs that drive LC burst potentials. Thus, the time stamp of the first extracellular pacemaker spike in each burst reliably marked the beginning of the intracellular burst waveform used for cross-correlation, and also marked the resting membrane potential immediately before the beginning of the LC burst waveform. The intracellular burst waveform was considered to end upon return to resting membrane potential.\n\nHowever, when 5HT caused 2 LC bursts per pacemaker cycle (i.e \u2018double-bursting\u2019), it was necessary to modify this procedure slightly because LCs did not return to resting membrane potential between the first and second burst of the cycle (Figure 2A). The beginning of the first\u00a0LC burst and the end of the second\u00a0LC burst could still be marked as described above. We measured the delay time required to reach resting membrane potential after the last spike of the second\u00a0LC burst. We then applied this time increment to establish a comparable end-point for the first\u00a0LC burst. We next measured the amount of time between the first\u00a0pacemaker spike of the cycle and the first\u00a0spike of the first\u00a0LC burst. This time increment was used to set a comparable beginning time point for the second\u00a0LC burst for cross-correlation. Analysis of waveform synchrony where more than two experimental groups or time points were compared was performed with one-way Repeated Measures ANOVA (RM ANOVA) after data were confirmed to be of normal distribution by Shapiro-Wilk tests. If a significant ANOVA effect was detected, pairwise testing was done with post-hoc Tukey tests.\n\nThe sample sizes to compare waveform synchrony were calculated with power analyses based on data reported in two previous studies with highly similar experimental manipulations of exposure of LCs to compounds that cause loss of synchrony, which yielded target sample size of N\u00a0=\u00a06\u20138 to yield a power\u00a0\u22650.8. Sample sizes for changes in network output following modulator exposure were based on similar data in our previous work (Ransdell et al., 2012), and yielded target sample sizes of N\u00a0=\u00a05\u20136 to achieve a power\u00a0\u22650.8. Power analyses were conducted based on the use of paired t-tests to analyze the data. All sample sizes used in our studies are reported in Figure Legends and/or in the Results section when significance values are reported.\n",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "78de4c1c-af06-4583-80f4-02123599d0e9",
+      "submission_id": "f82281b3-4a03-40ef-b544-202ff8936662",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University United States\n\nReviewers:\n- Ronald L Calabrese, Emory University United States\n- Dawn Blitz, Miami University United States\n\n## Review text\n\nDOI: [10.7554/eLife.39368.011](https://doi.org/10.7554/eLife.39368.011)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Dopamine maintains network synchrony via direct modulation of gap junctions in the crustacean cardiac ganglion\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Ronald L Calabrese as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Carlos D Aizenman (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, the authors investigate Large Cell motor neurons of the crab (C. borealis) cardiac ganglion, which are known to have variable membrane conductance magnitudes even within the same individual, yet produce identical synchronized activity in the intact network. In their previous study (Lane et al., 2016) they blocked a subset of K+ conductances across the Large Cells, resulting in acute loss of synchronous activity. Here they tested the hypothesis that this same variability of conductances could make LCs vulnerable to desynchronization during neuromodulation. They compared the exposure of the Large Cells to serotonin (5HT) and dopamine (DA) while recording simultaneously from two Large Cells and extracellularly from the motor network. Both amines had distinct excitatory effects on Large Cell output, but only 5HT caused desynchronized output. They show that DA rapidly increased gap junctional conductance and that co-application of both amines induced 5HT-like output, but waveforms remained synchronized. DA also prevented desynchronization induced by the K+ channel blocker tetraethylammonium (TEA). These results suggest that modulation of electrical coupling by DA plays a protective role in maintaining network synchrony to make this key feature of the system more robust to the modulation of excitability by other substances.\n\nThe writing is generally clear and necessary data is presented. This is a significant advance because it shows that the neuromodulation of electrical coupling directly counteracts desynchronizing perturbations to enhance network robustness, similar to the previous study where homeostatic regulation of electrical coupling restores synchrony after pharmacological perturbation. It should be of wide interest.\n\nEssential revisions:\n\n1) There was a general concern that how the analysis of double bursts was performed is not clear. Bursts and period need to be clearly defined. Please refer to the comments of reviewer 1 and 3.\n\n2) The statistical analysis needs to be better justified and explained. Please see the comments of reviewer 3.\n\nReviewer #1\n\n1) The authors do not do a good job explaining how burst characteristics are measured (the synchrony measure is a bit better explained), which caused this reviewer to be confused especially when 'double bursting' occurs.\n\nThe authors state \"Intracellular burst waveforms were considered to begin with the 1st EPSP from pacemaker activity and ended upon return to resting membrane potential.\" These points of beginning and end are not indicated on any of the intracellular traces making the reviewer struggle. Moreover, they clearly are not used to determine bursts in this study because as far as I can see each part of the 'double burst' is considered and individual burst in the synchrony analyses. How were burst determined during double bursting for synchrony analyses? Mark the bursts on the intracellular traces.\n\nNext the authors must indicate explicitly how burst characteristics were determined from the extracellular traces. What is a burst and how is it determined during single and double bursting? Mark beginning and end times on extracellular traces. What is a cycle when measuring during double bursting? Clearly it is not a pacemaker cycle, which from a physiological point of view is a heartbeat cycle.\n\nExplicitly define what a cycle is when measuring during single and then double bursting. I suspect it is start (first spike) of burst to start of burst and represents a motor pattern cycle not necessarily a pacemaker cycle. During double bursting are there not two different cycles (and thus two different periods) going on simultaneously, one between the two 'bursts' of a given double burst and one from the beginning of the second 'burst' of a double burst to the beginning of the first 'burst' of the next double burst? Are these two different periods different? One is an intrinsic motor neuron period and one a pacemaker period? What happens when a prep that should be double bursting in 5HT does not? Doesn't this throw composite data off and make a hash?\n\nPlease define a burst and a cycle and mark the definitions clearly on the traces.\n\nWhen I look at the extracellular traces I see a number of different spike sizes in each 'burst'. Which of the different spikes are used in measuring burst duration and spike number and spike frequency. Please mark all counted spikes on the traces. Again, what happens when a prep that should be double bursting in 5HT does not? Doesn't this throw composite data off (e.g., for spike number) and make a hash?\n\nReviewer #3:\n\n1) Please explain \"doublets\". For those not familiar with this system, it is not clear that there are 2 bursts per cycle, as the intracellular recordings are bursting in time with the extracellular recording. But there are very small pacemaker spikes in the extracellular recording? Please describe. It would be useful to mark the duration of the pacemaker burst (do we see this as PSPs in the LC neurons?). Also, please describe the \"two distinct bursts\". Perhaps it would help to include an inset of an expanded time scale of the bursts to highlight their distinctions and their timing relative to the pacemaker activity.\n\n2) It is not clear to me why paired t-test and signed rank tests were used for all statistical analyses in this study. For many of them, there are more than two groups to be compared, why were multiple paired tests performed instead of an ANOVA followed by post-hoc pairwise comparisons? For example (subsection \u201c5HT Desynchronizes Burst Waveforms but DA Does Not\u201d), why not use an ANOVA test to compare control, acute, and 30 minutes of exposure? Other examples include the synchrony between 0, 10, and 30 minutes of modulator application (Figure 3), and the comparison of control, DA, and DA+TEA at two time points (subsection \u201cDA Prevents TEA Induced Desynchronization\u201d; Figure 5).\n",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e6157cb0-fec1-4136-bcb2-771bf452ca91",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C1",
+      "claim": "The Large Cell (LC) motor neurons of the crab cardiac ganglion have variable membrane conductance magnitudes even within the same individual.",
+      "claim_type": "EXPLICIT",
+      "source": "The Large Cell (LC) motor neurons of the crab cardiac ganglion have variable membrane conductance magnitudes even within the same individual, yet produce identical synchronized activity in the intact network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations to previous work (Lane et al., 2016; Ransdell et al., 2013a; Ransdell et al., 2013b) mentioned in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "6df91e8a-908c-420a-8eac-e9ba10b9dbf1",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C2",
+      "claim": "LC motor neurons produce identical synchronized activity in the intact network despite variable conductances.",
+      "claim_type": "EXPLICIT",
+      "source": "The Large Cell (LC) motor neurons of the crab cardiac ganglion have variable membrane conductance magnitudes even within the same individual, yet produce identical synchronized activity in the intact network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated throughout the manuscript with data showing synchronized bursting in control conditions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "8d676e84-c43a-4db2-b161-5788b9fdd119",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C3",
+      "claim": "Blocking a subset of K+ conductances across LCs results in loss of synchronous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study we blocked a subset of K+ conductances across LCs, resulting in loss of synchronous activity (Lane et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lane et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "3309dd51-1772-4aa1-9436-e841880cc552",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C4",
+      "claim": "Both serotonin (5HT) and dopamine (DA) have distinct excitatory effects on LC output.",
+      "claim_type": "EXPLICIT",
+      "source": "Both amines had distinct excitatory effects on LC output, but only 5HT caused desynchronized output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing increased excitability measures for both modulators presented in Figure 2 and the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "bbfdc5be-db47-4512-8621-aa57d1d4ca92",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C5",
+      "claim": "Only 5HT caused desynchronized output among the two amines tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Both amines had distinct excitatory effects on LC output, but only 5HT caused desynchronized output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by R\u00b2 measurements shown in Figure 3 demonstrating loss of synchrony in 5HT but not DA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "9d612d98-b7dd-44a9-99ba-04384b88c4c4",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C6",
+      "claim": "DA rapidly increased gap junctional conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "We further determined that DA rapidly increased gap junctional conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by direct measurements of coupling conductance shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "ea2204ff-4f50-40e9-8244-665e41d619ce",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C7",
+      "claim": "Co-application of DA and 5HT induced 5HT-like output but waveforms remained synchronized.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-application of both amines induced 5HT-like output, but waveforms remained synchronized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by data in Figure 5 showing double-bursting (5HT-like) with maintained high R\u00b2 values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "ad785df5-2aac-4e13-9026-9329742f9e55",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C8",
+      "claim": "DA prevented desynchronization induced by the K+ channel blocker tetraethylammonium (TEA).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DA prevented desynchronization induced by the K+ channel blocker tetraethylammonium (TEA), suggesting that dopaminergic modulation of electrical coupling plays a protective role in maintaining network synchrony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 6 showing maintained synchrony when DA is co-applied with TEA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "0eebcd4d-393a-4fcb-aacb-9ab886ddde0c",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C9",
+      "claim": "Dopaminergic modulation of electrical coupling plays a protective role in maintaining network synchrony.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DA prevented desynchronization induced by the K+ channel blocker tetraethylammonium (TEA), suggesting that dopaminergic modulation of electrical coupling plays a protective role in maintaining network synchrony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental findings that DA increases coupling and prevents desynchronization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "33aa7ce4-51ba-4cdf-8f27-445d5d7c68af",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C10",
+      "claim": "Neuromodulation reconfigures network output by altering a subset of cellular and synaptic conductances.",
+      "claim_type": "EXPLICIT",
+      "source": "One mechanism of providing flexibility to network activity is neuromodulation, which reconfigures network output by altering a subset of cellular and synaptic conductances (Harris-Warrick, 2011; Bargmann, 2012; Daur et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "16d11d53-1c2e-4137-ad48-5c26254e0a20",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C11",
+      "claim": "Many networks achieve stable output through variable solutions where intrinsic membrane conductances and synaptic strengths can be highly variable yet still produce nearly identical physiological activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many networks achieve stable output by a variety of solutions; intrinsic membrane conductances and synaptic strengths can be highly variable yet still produce nearly identical physiological activity (Ball et al., 2010; Calabrese et al., 2011; Marder, 2011; Ransdell et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "ec20dbca-4e40-4a6e-9aba-9fae1c2ec2fa",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C12",
+      "claim": "The crustacean cardiac ganglion (CG) is a central pattern generator network that produces rhythmic bursts with precisely synchronized activity across all five Large Cell (LC) motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The crustacean cardiac ganglion (CG) is a central pattern generator network that produces rhythmic bursts with precisely synchronized activity across all five Large Cell (LC) motor neurons (Lane et al., 2016; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and demonstrated in Figure 1B showing synchronized bursting.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "0561150b-7dc4-48d4-a9e3-3f53d4eeaf50",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C13",
+      "claim": "Constituent LCs are variable in many ionic conductances, including A-type K+ (IA), high-threshold K+ (IHTK), and voltage-dependent Ca2+ (ICa).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite virtually identical output across LCs within a given network, constituent LCs are variable in many ionic conductances, including A-type K+ (IA), high-threshold K+ (IHTK), and voltage-dependent Ca2+ (ICa) (Ransdell et al., 2013a; Ransdell et al., 2013b; Lane et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "ce672450-edbe-4243-93a2-859c6378178e",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C14",
+      "claim": "When subsets of K+ conductances are blocked in LCs of a network, synchrony is disrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "When subsets of K+ conductances are blocked in LCs of a network, synchrony is disrupted, although ultimately is restored by a combination of compensatory changes in membrane conductance and electrical synaptic strength (Lane et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lane et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "5a8e26d0-b24c-40e0-b578-000ee98e79f0",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C15",
+      "claim": "Synchrony is ultimately restored after K+ conductance blockade by a combination of compensatory changes in membrane conductance and electrical synaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "When subsets of K+ conductances are blocked in LCs of a network, synchrony is disrupted, although ultimately is restored by a combination of compensatory changes in membrane conductance and electrical synaptic strength (Lane et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lane et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "e41b2a99-0098-42bf-aad7-07c87c4168cb",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C16",
+      "claim": "The CG is modulated by many substances, including neuropeptides and the biogenic amines serotonin and dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "The CG is modulated by many substances, including neuropeptides and the biogenic amines serotonin and dopamine (DA) (Cooke, 2002; Cruz-Berm\u00fadez and Marder, 2007) that are known to target the same K+ conductances that lead to desynchronization when altered (Kloppenburg et al., 1999; Peck et al., 2001; Johnson et al., 2003; Gruhn et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "af0a8110-d2be-4370-93be-4566f5f4c954",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C17",
+      "claim": "Serotonin and dopamine are known to target the same K+ conductances that lead to desynchronization when altered.",
+      "claim_type": "EXPLICIT",
+      "source": "The CG is modulated by many substances, including neuropeptides and the biogenic amines serotonin and dopamine (DA) (Cooke, 2002; Cruz-Berm\u00fadez and Marder, 2007) that are known to target the same K+ conductances that lead to desynchronization when altered (Kloppenburg et al., 1999; Peck et al., 2001; Johnson et al., 2003; Gruhn et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "4b657521-8a84-4b26-a361-6278fe1e831c",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C18",
+      "claim": "5HT (10\u22126M) is excitatory when applied to the entire CG of C. borealis.",
+      "claim_type": "EXPLICIT",
+      "source": "Both 5HT (10\u22126M) and DA (10\u22125M) are excitatory when applied to the entire CG of C. borealis (Cruz-Berm\u00fadez and Marder, 2007), and our results recapitulate this same effect (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and confirmed by data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "4f00a206-af87-461c-8f9f-c1511eac831d",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C19",
+      "claim": "DA (10\u22125M) is excitatory when applied to the entire CG of C. borealis.",
+      "claim_type": "EXPLICIT",
+      "source": "Both 5HT (10\u22126M) and DA (10\u22125M) are excitatory when applied to the entire CG of C. borealis (Cruz-Berm\u00fadez and Marder, 2007), and our results recapitulate this same effect (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and confirmed by data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "749edd0c-484a-4149-a08c-9c0462a54f2f",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C20",
+      "claim": "5HT significantly increased pacemaker burst duration.",
+      "claim_type": "EXPLICIT",
+      "source": "5HT significantly increased pacemaker burst duration, and in 6 out of 8 experiments switched the network to a distinct output consisting of a single prolonged pacemaker burst driving two different and distinct LC bursts that we term 'double-bursting' (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by data in Figure 2A and B showing increased SC off phase.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "4ba4ebf8-d4de-4155-bb09-0507e4aeeeac",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C21",
+      "claim": "In 6 out of 8 experiments, 5HT switched the network to a distinct output consisting of a single prolonged pacemaker burst driving two different and distinct LC bursts termed 'double-bursting'.",
+      "claim_type": "EXPLICIT",
+      "source": "5HT significantly increased pacemaker burst duration, and in 6 out of 8 experiments switched the network to a distinct output consisting of a single prolonged pacemaker burst driving two different and distinct LC bursts that we term 'double-bursting' (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "027bbbd5-3124-4ffc-be5b-099412197e69",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C22",
+      "claim": "5HT significantly altered the SC off phase (p=0.007).",
+      "claim_type": "EXPLICIT",
+      "source": "5HT significantly altered the SC off phase (p=0.007, paired t-test), leading to prolonged pacemaker bursting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "c01d490b-3f5a-4d8c-8373-c3d80c2bdf89",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C23",
+      "claim": "In double-bursting preparations, there was a significant phase advance in both the LC on (p<0.001) and LC off (p<0.001) relationships relative to control in 5HT.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in comparing the first LC burst in preparations that transitioned to double-bursting in 5HT (Figure 2B; LCDB), there was a significant phase advance in both the LC on (p<0.001, paired t-test) and LC off (p<0.001, paired t-test) relationships relative to control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "30232b55-29d4-4f82-ba44-c51aa2a9a0f4",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C24",
+      "claim": "DA significantly increased the number of LC spikes per burst (8.850 \u00b1 3.978 in control; 11.225 \u00b1 5.337 in DA; p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "DA never induced double-bursting, but significantly increased the number of LC spikes per burst (8.850 \u00b1 3.978 in control; 11.225 \u00b1 5.337 in DA; p<0.05), LC spike frequency (8.854 \u00b1 4.878 in control; 11.268 \u00b1 7.434 in DA; p<0.05), LC burst duration (0.715 \u00b1 0.280 in control; 0.806 \u00b1 0.281 in DA; p<0.05), and LC duty cycle (0.164 \u00b1 0.0744 in control, 0.211 \u00b1 0.0411 in DA; p<0.05, paired t-tests, N = 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "9224d024-9328-4cdc-af07-234569b1cbe2",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C25",
+      "claim": "DA significantly increased LC spike frequency (8.854 \u00b1 4.878 in control; 11.268 \u00b1 7.434 in DA; p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "DA never induced double-bursting, but significantly increased the number of LC spikes per burst (8.850 \u00b1 3.978 in control; 11.225 \u00b1 5.337 in DA; p<0.05), LC spike frequency (8.854 \u00b1 4.878 in control; 11.268 \u00b1 7.434 in DA; p<0.05), LC burst duration (0.715 \u00b1 0.280 in control; 0.806 \u00b1 0.281 in DA; p<0.05), and LC duty cycle (0.164 \u00b1 0.0744 in control, 0.211 \u00b1 0.0411 in DA; p<0.05, paired t-tests, N = 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "d4f64b9d-2981-4d09-a6ce-c947b629bcae",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C26",
+      "claim": "DA significantly increased LC burst duration (0.715 \u00b1 0.280 in control; 0.806 \u00b1 0.281 in DA; p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "DA never induced double-bursting, but significantly increased the number of LC spikes per burst (8.850 \u00b1 3.978 in control; 11.225 \u00b1 5.337 in DA; p<0.05), LC spike frequency (8.854 \u00b1 4.878 in control; 11.268 \u00b1 7.434 in DA; p<0.05), LC burst duration (0.715 \u00b1 0.280 in control; 0.806 \u00b1 0.281 in DA; p<0.05), and LC duty cycle (0.164 \u00b1 0.0744 in control, 0.211 \u00b1 0.0411 in DA; p<0.05, paired t-tests, N = 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "fa682d7e-f104-42b8-8bb3-5db90a05c29f",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C27",
+      "claim": "DA significantly increased LC duty cycle (0.164 \u00b1 0.0744 in control, 0.211 \u00b1 0.0411 in DA; p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "DA never induced double-bursting, but significantly increased the number of LC spikes per burst (8.850 \u00b1 3.978 in control; 11.225 \u00b1 5.337 in DA; p<0.05), LC spike frequency (8.854 \u00b1 4.878 in control; 11.268 \u00b1 7.434 in DA; p<0.05), LC burst duration (0.715 \u00b1 0.280 in control; 0.806 \u00b1 0.281 in DA; p<0.05), and LC duty cycle (0.164 \u00b1 0.0744 in control, 0.211 \u00b1 0.0411 in DA; p<0.05, paired t-tests, N = 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "32779c38-27af-4ff2-a881-983b5a13ef79",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C28",
+      "claim": "DA never induced double-bursting.",
+      "claim_type": "EXPLICIT",
+      "source": "DA never induced double-bursting, but significantly increased the number of LC spikes per burst (8.850 \u00b1 3.978 in control; 11.225 \u00b1 5.337 in DA; p<0.05), LC spike frequency (8.854 \u00b1 4.878 in control; 11.268 \u00b1 7.434 in DA; p<0.05), LC burst duration (0.715 \u00b1 0.280 in control; 0.806 \u00b1 0.281 in DA; p<0.05), and LC duty cycle (0.164 \u00b1 0.0744 in control, 0.211 \u00b1 0.0411 in DA; p<0.05, paired t-tests, N = 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data across N=8 preparations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "6b3f4fc7-40de-498e-8370-4f4bc7829ce4",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C29",
+      "claim": "There were no significant changes in phase relationships in DA relative to control.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant changes in phase relationships in DA relative to control (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "51b5f296-75c2-492f-8221-649847d5cedc",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C30",
+      "claim": "Both 5HT and DA have direct excitatory effects on LCs when applied focally to the anterior LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied focally to the anterior LCs at these same concentrations, our results demonstrate that both amines have direct excitatory effects on LCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data showing increased burst characteristics with focal application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "d646f8e2-acd0-48d9-a30c-12a86a8dff0f",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C31",
+      "claim": "Focal application of 5HT to anterior LCs never resulted in double-bursting.",
+      "claim_type": "EXPLICIT",
+      "source": "5HT applied only to the anterior LCs never resulted in double-bursting, demonstrating that this output requires 5HT modulation of SC pacemakers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "5f0d813f-1563-4fd0-b768-d718aaa8f428",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C32",
+      "claim": "Double-bursting output requires 5HT modulation of SC pacemakers.",
+      "claim_type": "EXPLICIT",
+      "source": "5HT applied only to the anterior LCs never resulted in double-bursting, demonstrating that this output requires 5HT modulation of SC pacemakers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that focal application to LCs alone does not produce double-bursting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "029d77d4-81b7-4ce0-86ed-a320d0af0cc8",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C33",
+      "claim": "Focal application of 5HT increased the number of spikes per burst (5.850 \u00b1 2.72 in control; 10.85 \u00b1 2.96 in 5HT; p<0.01, N = 6).",
+      "claim_type": "EXPLICIT",
+      "source": "Focal application of 5HT increased the number of spikes per burst (5.850 \u00b1 2.72 in control; 10.85 \u00b1 2.96 in 5HT; p<0.01, N = 6), the spike frequency within each burst (6.24 \u00b1 3.18 Hz in control; 11.53 \u00b1 3.39 Hz in 5HT; p<0.01, N = 6), burst duration (0.642 \u00b1 0.367 s in control; 0.739 \u00b1 0.411 s in 5HT; p<0.05, N = 6), LC duty cycle (0.183 \u00b1 0.059 in control; 0.232 \u00b1 0.063 in 5HT; p<0.01, N = 6) and decreased the LC interburst interval (3.15 \u00b1 0.68 in control; 2.761 \u00b1 0.658 in 5HT; p<0.01, N = 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "e143af6f-ee2c-47e8-a333-283b85876bc5",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C34",
+      "claim": "Focal application of 5HT increased the spike frequency within each burst (6.24 \u00b1 3.18 Hz in control; 11.53 \u00b1 3.39 Hz in 5HT; p<0.01, N = 6).",
+      "claim_type": "EXPLICIT",
+      "source": "Focal application of 5HT increased the number of spikes per burst (5.850 \u00b1 2.72 in control; 10.85 \u00b1 2.96 in 5HT; p<0.01, N = 6), the spike frequency within each burst (6.24 \u00b1 3.18 Hz in control; 11.53 \u00b1 3.39 Hz in 5HT; p<0.01, N = 6), burst duration (0.642 \u00b1 0.367 s in control; 0.739 \u00b1 0.411 s in 5HT; p<0.05, N = 6), LC duty cycle (0.183 \u00b1 0.059 in control; 0.232 \u00b1 0.063 in 5HT; p<0.01, N = 6) and decreased the LC interburst interval (3.15 \u00b1 0.68 in control; 2.761 \u00b1 0.658 in 5HT; p<0.01, N = 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "f70cdbcc-1cd1-4428-939e-b62771686b8f",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C35",
+      "claim": "Focal application of 5HT increased burst duration (0.642 \u00b1 0.367 s in control; 0.739 \u00b1 0.411 s in 5HT; p<0.05, N = 6).",
+      "claim_type": "EXPLICIT",
+      "source": "Focal application of 5HT increased the number of spikes per burst (5.850 \u00b1 2.72 in control; 10.85 \u00b1 2.96 in 5HT; p<0.01, N = 6), the spike frequency within each burst (6.24 \u00b1 3.18 Hz in control; 11.53 \u00b1 3.39 Hz in 5HT; p<0.01, N = 6), burst duration (0.642 \u00b1 0.367 s in control; 0.739 \u00b1 0.411 s in 5HT; p<0.05, N = 6), LC duty cycle (0.183 \u00b1 0.059 in control; 0.232 \u00b1 0.063 in 5HT; p<0.01, N = 6) and decreased the LC interburst interval (3.15 \u00b1 0.68 in control; 2.761 \u00b1 0.658 in 5HT; p<0.01, N = 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "37f67aa1-1f43-4246-a87b-40f440eacb3d",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C36",
+      "claim": "Focal application of 5HT increased LC duty cycle (0.183 \u00b1 0.059 in control; 0.232 \u00b1 0.063 in 5HT; p<0.01, N = 6).",
+      "claim_type": "EXPLICIT",
+      "source": "Focal application of 5HT increased the number of spikes per burst (5.850 \u00b1 2.72 in control; 10.85 \u00b1 2.96 in 5HT; p<0.01, N = 6), the spike frequency within each burst (6.24 \u00b1 3.18 Hz in control; 11.53 \u00b1 3.39 Hz in 5HT; p<0.01, N = 6), burst duration (0.642 \u00b1 0.367 s in control; 0.739 \u00b1 0.411 s in 5HT; p<0.05, N = 6), LC duty cycle (0.183 \u00b1 0.059 in control; 0.232 \u00b1 0.063 in 5HT; p<0.01, N = 6) and decreased the LC interburst interval (3.15 \u00b1 0.68 in control; 2.761 \u00b1 0.658 in 5HT; p<0.01, N = 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "7907f8d8-e2f6-409b-9899-d9708d95a11c",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C37",
+      "claim": "Focal application of 5HT decreased the LC interburst interval (3.15 \u00b1 0.68 in control; 2.761 \u00b1 0.658 in 5HT; p<0.01, N = 6).",
+      "claim_type": "EXPLICIT",
+      "source": "Focal application of 5HT increased the number of spikes per burst (5.850 \u00b1 2.72 in control; 10.85 \u00b1 2.96 in 5HT; p<0.01, N = 6), the spike frequency within each burst (6.24 \u00b1 3.18 Hz in control; 11.53 \u00b1 3.39 Hz in 5HT; p<0.01, N = 6), burst duration (0.642 \u00b1 0.367 s in control; 0.739 \u00b1 0.411 s in 5HT; p<0.05, N = 6), LC duty cycle (0.183 \u00b1 0.059 in control; 0.232 \u00b1 0.063 in 5HT; p<0.01, N = 6) and decreased the LC interburst interval (3.15 \u00b1 0.68 in control; 2.761 \u00b1 0.658 in 5HT; p<0.01, N = 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "027974ee-f43b-4456-b4bc-214b806eadb2",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C38",
+      "claim": "Focal DA application significantly increased the number of spikes per burst (4.45 \u00b1 3.42 in control and 10.20 \u00b1 6.41 in DA; p<0.05, N = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "DA also directly affected LC output, significantly increasing the number of spikes per burst (4.45 \u00b1 3.42 in control and 10.20 \u00b1 6.41 in DA; p<0.05, N = 8) and spike frequency within each burst (5.85 \u00b1 4.95 in control and 10.38 \u00b1 10.16 in DA; p<0.05, N = 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "8592d7fd-6b65-44a5-8736-63d591ae100c",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C39",
+      "claim": "Focal DA application significantly increased spike frequency within each burst (5.85 \u00b1 4.95 in control and 10.38 \u00b1 10.16 in DA; p<0.05, N = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "DA also directly affected LC output, significantly increasing the number of spikes per burst (4.45 \u00b1 3.42 in control and 10.20 \u00b1 6.41 in DA; p<0.05, N = 8) and spike frequency within each burst (5.85 \u00b1 4.95 in control and 10.38 \u00b1 10.16 in DA; p<0.05, N = 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "22a36923-38dd-4efc-a025-01505cc0574b",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C40",
+      "claim": "At the onset of serotonergic modulation (10\u22126M), there was an acute reduction in synchrony as measured by R2.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of serotonergic modulation (10\u22126M), there was an acute reduction in synchrony as measured by R2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by data in Figure 3 showing decreased R\u00b2 values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "57e0a81e-8ca9-405f-81bc-54dd374dd4f9",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C41",
+      "claim": "Synchrony reliably reached a minimum within several minutes (mean = 9.1 min) before stabilizing and showing a slow, modest recovery of synchrony in 5HT.",
+      "claim_type": "EXPLICIT",
+      "source": "Synchrony reliably reached a minimum within several minutes (mean = 9.1 min) before stabilizing and showing a slow, modest recovery of synchrony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the time course data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "d46a489a-3dd1-45f3-8717-fdc4338b9a7e",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C42",
+      "claim": "Synchrony significantly changed as a result of 5HT exposure (p<0.001, RM ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "Synchrony significantly changed as a result of 5HT exposure (p<0.001, RM ANOVA), resulting in a decrease of synchrony in acute 5HT (R2 = 0.967 \u00b1 0.012 control, 0.893 \u00b1 0.081 acute 5HT; p<0.01, Tukey test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "e73d94df-e508-4946-87bf-d28b32a21a17",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C43",
+      "claim": "There was a significant decrease of synchrony in acute 5HT (R2 = 0.967 \u00b1 0.012 control, 0.893 \u00b1 0.081 acute 5HT; p<0.01, Tukey test).",
+      "claim_type": "EXPLICIT",
+      "source": "Synchrony significantly changed as a result of 5HT exposure (p<0.001, RM ANOVA), resulting in a decrease of synchrony in acute 5HT (R2 = 0.967 \u00b1 0.012 control, 0.893 \u00b1 0.081 acute 5HT; p<0.01, Tukey test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "00ef24f5-ff3b-4ecb-ba20-aaa95e1531e7",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C44",
+      "claim": "There was a significant increase in synchrony between acute 5HT and 30 min of continuous 5HT perfusion (0.927 \u00b1 0.066; p<0.01, Tukey test).",
+      "claim_type": "EXPLICIT",
+      "source": "There then was a significant increase in synchrony between acute 5HT and 30 min of continuous 5HT perfusion (0.927 \u00b1 0.066; p<0.01, Tukey test). but synchrony in 30 min of 5HT was still significantly below baseline (p<0.05, Tukey test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "61337cb5-dcea-4a78-90c7-d36109620ced",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C45",
+      "claim": "Synchrony in 30 min of 5HT was still significantly below baseline (p<0.05, Tukey test).",
+      "claim_type": "EXPLICIT",
+      "source": "There then was a significant increase in synchrony between acute 5HT and 30 min of continuous 5HT perfusion (0.927 \u00b1 0.066; p<0.01, Tukey test). but synchrony in 30 min of 5HT was still significantly below baseline (p<0.05, Tukey test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "85a53ff0-333a-4476-af1e-76b59c17fa7f",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C46",
+      "claim": "Burst waveforms for LCs in DA remained completely and strikingly synchronized.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, burst waveforms for LCs in DA remained completely and strikingly synchronized (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by data in Figure 3D-F showing maintained high R\u00b2 values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "a380eed2-a26c-4f94-91e2-674638e6fdd7",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C47",
+      "claim": "There were no changes in synchrony during any DA perfusion experiment (p=0.784, RM ANOVA, N = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "There were no changes in synchrony during any DA perfusion experiment (Figure 3E and F; p=0.784, RM ANOVA, N = 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "508dab38-74f2-43fc-8e53-5a6a8b3f8797",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C48",
+      "claim": "Coupling coefficients were not significantly different between control (0.043 \u00b1 0.035) and 15 min modulation in 5HT (0.037 \u00b1 0.042) (N = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "Coupling coefficients were not significantly different between control (0.043 \u00b1 0.035) and 15 min modulation in 5HT (0.037 \u00b1 0.042) (Figure 4A; N = 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "2564a2fd-f361-417d-85cd-e510f67ade8f",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C49",
+      "claim": "DA increased coupling coefficient by 41% (0.035 \u00b1 0.030 in control; 0.049 \u00b1 0.043 in DA) (p<0.05, paired t-test, N = 6).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, DA increased coupling coefficient by 41% (0.035 \u00b1 0.030 in control; 0.049 \u00b1 0.043 in DA) (p<0.05, paired t-test, N = 6; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "6b3ae7dd-56de-465d-ab37-0345db316188",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C50",
+      "claim": "Input resistance was not significantly changed in either 5HT (3.62 \u00b1 4.40 M\u03a9 in control; 3.78 \u00b1 4.11 M\u03a9 in 5HT) or DA (3.85 \u00b1 2.34 M\u03a9 in control; 3.33 \u00b1 1.77 M\u03a9 in DA).",
+      "claim_type": "EXPLICIT",
+      "source": "Input resistance was not significantly changed in either 5HT (3.62 \u00b1 4.40 M\u03a9 in control; 3.78 \u00b1 4.11 M\u03a9 in 5HT) or DA (3.85 \u00b1 2.34 M\u03a9 in control; 3.33 \u00b1 1.77 M\u03a9 in DA) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "899492ec-7395-450f-80f2-2d408a03d8d1",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C51",
+      "claim": "An increase in coupling coefficient in DA may be the result of a direct increase of coupling conductance in the presence of DA.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that an increase in coupling coefficient in DA may be the result of a direct increase of coupling conductance in the presence of DA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that coupling coefficient increased without changes in input resistance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "9a3489fd-0e63-41f8-a6cc-ccf2cd22e72b",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C52",
+      "claim": "5HT had no apparent effect on coupling conductance when measured from LC4 to LC5 (0.490 \u00b1 0.179 \u03bcS in control; 0.503 \u00b1 0.186 in 5HT; p=0.329, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "5HT had no apparent effect on coupling conductance when measured from LC4 to LC5 (0.490 \u00b1 0.179 \u03bcS in control; 0.503 \u00b1 0.186 in 5HT; p=0.329, paired t-test), or from LC5 to LC4 (0.487 \u00b1 0.186\u03bcS in control, 0.516 \u00b1 0.211\u03bcS in 5HT; p=0.367, paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "27ab85aa-91c3-4b50-ba8f-20c66d8e1610",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C53",
+      "claim": "5HT had no apparent effect on coupling conductance when measured from LC5 to LC4 (0.487 \u00b1 0.186\u03bcS in control, 0.516 \u00b1 0.211\u03bcS in 5HT; p=0.367, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "5HT had no apparent effect on coupling conductance when measured from LC4 to LC5 (0.490 \u00b1 0.179 \u03bcS in control; 0.503 \u00b1 0.186 in 5HT; p=0.329, paired t-test), or from LC5 to LC4 (0.487 \u00b1 0.186\u03bcS in control, 0.516 \u00b1 0.211\u03bcS in 5HT; p=0.367, paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "7f703e14-e0e5-4215-ac10-c983862fa96f",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C54",
+      "claim": "DA significantly increased coupling conductance from LC4 to LC5 (0.455 \u00b1 0.368\u03bcS in control, 0.818 \u00b1 0.552 in DA; p<0.05, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "DA significantly increased coupling conductance both from LC4 to LC5 (0.455 \u00b1 0.368\u03bcS in control, 0.818 \u00b1 0.552 in DA; p<0.05, paired t-test) and from LC5 to LC4 (0.585 \u00b1 0.435\u03bcS in control, 1.294 \u00b1 0.702\u03bcS in DA; p<0.05, paired t-test) measured after 15 min of DA exposure (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "f91199d3-784b-4446-ba82-9ae5143da99d",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C55",
+      "claim": "DA significantly increased coupling conductance from LC5 to LC4 (0.585 \u00b1 0.435\u03bcS in control, 1.294 \u00b1 0.702\u03bcS in DA; p<0.05, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "DA significantly increased coupling conductance both from LC4 to LC5 (0.455 \u00b1 0.368\u03bcS in control, 0.818 \u00b1 0.552 in DA; p<0.05, paired t-test) and from LC5 to LC4 (0.585 \u00b1 0.435\u03bcS in control, 1.294 \u00b1 0.702\u03bcS in DA; p<0.05, paired t-test) measured after 15 min of DA exposure (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "2c9785c5-4933-4edb-8511-393f8d7dcf41",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C56",
+      "claim": "A compensatory increase in electrical coupling among LCs rescued synchrony after treatment with the channel blocker TEA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work demonstrated that a compensatory increase in electrical coupling among LCs rescued synchrony after treatment with the channel blocker TEA (Lane et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lane et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "e9707e73-a03c-43a2-a6e7-788008f6fbd8",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C57",
+      "claim": "Individual preparations treated with DA + 5HT sometimes showed a small increase or transient decrease in synchrony, which occurred over the same time scale as seen in preparations exposed to 5HT alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual preparations treated with DA + 5HT sometimes showed a small increase or transient decrease in synchrony, which occurred over the same time scale as seen in preparations exposed to 5HT alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "a24da685-d3f2-43a6-bff4-324794e57a95",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C58",
+      "claim": "Across the full set of preparations (N = 8) there was no significant change in synchrony when DA and 5HT were co-applied (p=0.334, RM ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "However, across the full set of preparations (N = 8) there was no significant change in synchrony when DA and 5HT were co-applied (p=0.334, RM ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "6fcb9f54-8c53-4bed-980c-f6e1cb695035",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C59",
+      "claim": "5 out of 8 preparations transitioned to the double-bursting mode when DA and 5HT were co-applied.",
+      "claim_type": "EXPLICIT",
+      "source": "5 out of 8 preparations transitioned to the double-bursting mode seen in 5HT alone (Figures 2A and 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "3d713d2e-20f5-428c-acd2-67258f3687da",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C60",
+      "claim": "The double-bursting pattern in DA + 5HT displayed highly synchronized waveforms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this time the double-bursting pattern displayed highly synchronized waveforms (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by data in Figure 5A showing synchronized waveforms during double-bursting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "b68de4c2-a023-44bc-bc6b-a3db500e5d72",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C61",
+      "claim": "DA + 5HT co-modulation elicited changes in network output that were similar to those in 5HT alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, DA + 5 HT co-modulation elicited changes in network output that were similar to those in 5HT alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of phase relationships and double-bursting occurrence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "8eb84673-4fb6-42a3-9a73-93299cc4f26c",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C62",
+      "claim": "Changes in phase relationships in DA + 5HT mirrored those seen in 5HT, including significant changes in SC off (p<0.001, paired t-test), and LC on (p=0.011, paired t-test) phase characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in phase relationships mirrored those seen in 5HT, including significant changes in SC off (p<0.001, paired t-test), and LC on (p=0.011, paired t-test) phase characteristics (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "3dfa6da7-a0e3-4443-83b6-96ed9206c4a4",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C63",
+      "claim": "Exposing the anterior LCs to the K+ channel blocker TEA produces a substantial loss of LC synchrony as well as a large increase in the number of spikes per burst and spike frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous study showed that exposing the anterior LCs to the K+ channel blocker TEA produces a substantial loss of LC synchrony as well as a large increase in the number of spikes per burst and spike frequency (Lane et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lane et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "490a3959-8154-40e3-91da-89d3f4269ba5",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C64",
+      "claim": "Preparations pre-incubated in DA for 5 min did not show any loss of synchrony as a result of TEA.",
+      "claim_type": "EXPLICIT",
+      "source": "The preparations pre-incubated in DA for 5 min did not show any loss of synchrony as a result of TEA (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by data in Figure 6B and C showing maintained R\u00b2 values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "095db513-4a0b-40b7-9e88-cd97819c5ba2",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C65",
+      "claim": "After the addition of TEA at 5 min in DA, there was a further increase in the number of spikes per burst (7.89 \u00b1 5.34 in DA and 16.39 \u00b1 7.65 in DA + TEA; p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "After the addition of TEA at 5 min, there was a further increase in the number of spikes per burst (7.89 \u00b1 5.34 in DA and 16.39 \u00b1 7.65 in DA + TEA; p<0.01), spike frequency (8.25 \u00b1 7.95 in DA and 15.19 \u00b1 8.06 in DA + TEA; p<0.01), and cycle period (3.34 \u00b1 0.77 in DA and 3.97 \u00b1 1.06 in DA + TEA; p<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "e8173873-45bb-4239-8787-ce6b6fae65c4",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C66",
+      "claim": "After the addition of TEA at 5 min in DA, there was a further increase in spike frequency (8.25 \u00b1 7.95 in DA and 15.19 \u00b1 8.06 in DA + TEA; p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "After the addition of TEA at 5 min, there was a further increase in the number of spikes per burst (7.89 \u00b1 5.34 in DA and 16.39 \u00b1 7.65 in DA + TEA; p<0.01), spike frequency (8.25 \u00b1 7.95 in DA and 15.19 \u00b1 8.06 in DA + TEA; p<0.01), and cycle period (3.34 \u00b1 0.77 in DA and 3.97 \u00b1 1.06 in DA + TEA; p<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "b21889e8-68fc-4d0e-a164-670263d3dc30",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C67",
+      "claim": "After the addition of TEA at 5 min in DA, there was a further increase in cycle period (3.34 \u00b1 0.77 in DA and 3.97 \u00b1 1.06 in DA + TEA; p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "After the addition of TEA at 5 min, there was a further increase in the number of spikes per burst (7.89 \u00b1 5.34 in DA and 16.39 \u00b1 7.65 in DA + TEA; p<0.01), spike frequency (8.25 \u00b1 7.95 in DA and 15.19 \u00b1 8.06 in DA + TEA; p<0.01), and cycle period (3.34 \u00b1 0.77 in DA and 3.97 \u00b1 1.06 in DA + TEA; p<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "550bf391-b7a7-4b25-8913-eda1abd4c0e8",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C68",
+      "claim": "In the presence of DA, TEA did not cause any detectable change in R2 across groups (p=0.456, RM ANOVA, N = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of DA, however, TEA did not cause any detectable change in R2 across groups (p=0.456, RM ANOVA, N = 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "004c485d-c664-4a11-8c12-5ac9381ab3a9",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C69",
+      "claim": "5HT is known to reduce the conductance of both transient and persistent components of a calcium-dependent K+ current (IKCa) in STG cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, 5HT is known to reduce the conductance of both transient and persistent components of a calcium-dependent K+ current (IKCa) in STG cells, an effect that is mimicked by the application of tetraethylammonium [TEA] (Kiehn and Harris-Warrick, 1992a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kiehn and Harris-Warrick, 1992a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "cac320f8-8d5b-469d-bffa-3efba9c6b875",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C70",
+      "claim": "The effect of 5HT on IKCa is mimicked by the application of tetraethylammonium [TEA].",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, 5HT is known to reduce the conductance of both transient and persistent components of a calcium-dependent K+ current (IKCa) in STG cells, an effect that is mimicked by the application of tetraethylammonium [TEA] (Kiehn and Harris-Warrick, 1992a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kiehn and Harris-Warrick, 1992a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "b14ada55-a828-4bd8-9919-202371dd4a3d",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C71",
+      "claim": "5HT enhances a slow voltage-dependent Ca2+ current (ICa) in STG cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 5HT enhances a slow voltage-dependent Ca2+ current (ICa) in STG cells (Kiehn and Harris-Warrick, 1992b; Zhang and Harris-Warrick, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kiehn and Harris-Warrick, 1992b and Zhang and Harris-Warrick, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "59028bec-11a0-47c2-b73b-5f91fcadf8b8",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C72",
+      "claim": "IKCa and ICa currents are present in LCs of the cardiac network and vary over a wide range of conductance magnitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "These same IKCa and ICa currents are known to be present in LCs of the cardiac network, and demonstrated to vary over a wide range of conductance magnitudes (Ransdell et al., 2012; Ransdell et al., 2013a; Ransdell et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ransdell et al., 2012, 2013a, and 2013b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "1629e09b-c76f-4aa4-bb04-fbc3684a2075",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C73",
+      "claim": "Treatment of LCs with TEA results in an increase in excitability and a loss of network synchrony amongst LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, treatment of LCs with TEA results in an increase in excitability and a loss of network synchrony amongst LCs (Ransdell et al., 2013a; Lane et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ransdell et al., 2013a and Lane et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "14f1c9c5-06d4-4d27-a18d-697eecf41feb",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C74",
+      "claim": "5HT has only been reported to have very weak or no effect at all on electrical coupling in STG neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 5HT has only been reported to have very weak or no effect at all on electrical coupling in STG neurons (Johnson and Harris-Warrick, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Johnson and Harris-Warrick, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "69cd1f79-e7ea-4207-aeb7-6caf8d1301ab",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C75",
+      "claim": "5HT modulation has distinct effects on each LC within a ganglion due to the underlying variability of K+ and Ca2+ currents in each cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, 5HT causes an increase in excitability of LCs, as well as causes network desynchronization. We suggest that 5HT modulation has distinct effects on each LC within a ganglion due to the underlying variability of K+ and Ca2+ currents in each cell, and yet because 5HT has no effect on coupling this results in distinct hyperexcitable outputs from each cell that manifests as loss of synchronous activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental findings and known properties of 5HT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "d0be5bbe-6f73-4e19-a8e4-cfd7f78cd1b8",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C76",
+      "claim": "Because 5HT has no effect on coupling, this results in distinct hyperexcitable outputs from each cell that manifests as loss of synchronous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that 5HT modulation has distinct effects on each LC within a ganglion due to the underlying variability of K+ and Ca2+ currents in each cell, and yet because 5HT has no effect on coupling this results in distinct hyperexcitable outputs from each cell that manifests as loss of synchronous activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "a9745e5d-6280-46da-b921-00d85e9de913",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C77",
+      "claim": "DA is known to target the transient potassium current IA in STG cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DA is known to target the transient potassium current IA (Kloppenburg et al., 1999; Zhang et al., 2010) as well as IH, INaP, and ICa in STG cells (Harris-Warrick and Johnson, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kloppenburg et al., 1999 and Zhang et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "4f8187f9-8a47-4a40-a53c-c5c712a4880a",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C78",
+      "claim": "DA targets IH, INaP, and ICa in STG cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DA is known to target the transient potassium current IA (Kloppenburg et al., 1999; Zhang et al., 2010) as well as IH, INaP, and ICa in STG cells (Harris-Warrick and Johnson, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Harris-Warrick and Johnson, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "d8a936dd-c266-4ce1-b0de-f8d1382d9316",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C79",
+      "claim": "The influence of DA on each conductance type is dependent on cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "The influence of DA on each conductance type is dependent on cell type (Harris-Warrick and Johnson, 2010; Zhang et al., 2010) as well as the concentration and application time course of the modulator (Rodgers et al., 2011; Rodgers et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Harris-Warrick and Johnson, 2010 and Zhang et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "dfdf3bf5-9731-4577-bc4c-a4f7de5b60e7",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C80",
+      "claim": "The influence of DA on each conductance type is dependent on the concentration and application time course of the modulator.",
+      "claim_type": "EXPLICIT",
+      "source": "The influence of DA on each conductance type is dependent on cell type (Harris-Warrick and Johnson, 2010; Zhang et al., 2010) as well as the concentration and application time course of the modulator (Rodgers et al., 2011; Rodgers et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rodgers et al., 2011 and Rodgers et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "c4373a42-7a94-45fa-a7e9-28cf8c6d9f8f",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C81",
+      "claim": "DA has been shown to both increase and decrease electrical coupling among STG cells in a cell-type-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DA has been shown to both increase and decrease electrical coupling among STG cells in a cell-type-specific manner (Johnson et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Johnson et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "0dcd93f5-765c-4984-8a17-9c32ebd7f47a",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C82",
+      "claim": "IH is not present in crab cardiac LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "While IH is not present in crab cardiac LCs, IA, INaP, and ICa have all been identified and shown to vary over a wide range of conductance magnitudes in these cells (Ransdell et al., 2012; Ransdell et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the cardiac LCs.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "a389826a-3329-438c-9385-7d2e9d8fa44c",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C83",
+      "claim": "IA, INaP, and ICa have all been identified and shown to vary over a wide range of conductance magnitudes in cardiac LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "While IH is not present in crab cardiac LCs, IA, INaP, and ICa have all been identified and shown to vary over a wide range of conductance magnitudes in these cells (Ransdell et al., 2012; Ransdell et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ransdell et al., 2012 and 2013a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "a5b21d76-b8be-4ebf-a7a8-6064b5ca4304",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C84",
+      "claim": "Pharmacological blockade of IA in LCs induces hyperexcitability and loss of synchrony in cardiac network output.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological blockade of IA in LCs also has been shown also to induce hyperexcitability and loss of synchrony in cardiac network output (Ransdell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ransdell et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "6292cb1a-8e72-4879-9637-fbde6699003c",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C85",
+      "claim": "DA's influence on coupling prevents desynchronization and is effectively protective against the potentially variable impacts of modulation across LCs within the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, that DA's influence on coupling prevents desynchronization and is effectively protective against the potentially variable impacts of modulation across LCs within the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "d72bed06-7687-43bd-b9f7-9f337b913961",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C86",
+      "claim": "Individual biogenic amine modulators have distinct effects on both the CG and the STG.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that individual biogenic amine modulators have distinct effects on both the CG (Miller et al., 1984; Berlind, 1998; Berlind, 2001; Cruz-Berm\u00fadez and Marder, 2007) and the STG (Flamm and Harris-Warrick, 1986a; Flamm and Harris-Warrick, 1986b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "f7da3f04-50c3-4836-afc9-c7a3c41261a2",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C87",
+      "claim": "Distinct output modes can be attributed to DA, 5HT, and octopamine individually.",
+      "claim_type": "EXPLICIT",
+      "source": "So much so that distinct output modes can be attributed to DA, 5HT, and octopamine individually (Flamm and Harris-Warrick, 1986a), and is thought to underlie some of the diversity of circuit reorganization and outputs that has been demonstrated in these networks previously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Flamm and Harris-Warrick, 1986a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "62c3bcad-c4bb-4fe5-9caa-cae2f72206ed",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C88",
+      "claim": "DA and 5HT in these cells have distinct signaling pathways, subcellular targets, and ultimately result in a more linear combination of modulator effects than occlusion or saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that DA and 5HT in these cells have distinct signaling pathways, subcellular targets, and ultimately result in a more linear combination of modulator effects than occlusion or saturation (Li et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental findings and supported by citation to Li et al., 2018.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "b3f4bcd4-3501-443a-839d-4c0db7d8cdf3",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C89",
+      "claim": "DA acts to ensure robust activity through the coordinated, synchronous action of all 5 LC motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results indicate that DA acts to ensure robust activity through the coordinated, synchronous action of all 5 LC motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "c144c6cd-b605-4532-a34f-895f7c54681b",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C90",
+      "claim": "Only three pairs of axons provide extrinsic innervation of the CG \u2013 one pair is dopaminergic, the others are cholinergic and GABAergic.",
+      "claim_type": "EXPLICIT",
+      "source": "Only three pairs of axons provide extrinsic innervation of the CG \u2013 one pair is dopaminergic, the others are cholinergic and GABAergic (Delgado et al., 2000; Cooke, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Delgado et al., 2000 and Cooke, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "1d162218-b9e7-4e4d-abcd-d394ed1e3b51",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C91",
+      "claim": "The dopaminergic fibers have many synaptic connections on anterior LCs, their neuropil (in the vicinity of the sites of electrical coupling), and the posterior of the ganglion near the pacemaker cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The dopaminergic fibers have many synaptic connections on anterior LCs, their neuropil (in the vicinity of the sites of electrical coupling), and the posterior of the ganglion near the pacemaker cells (Fort et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fort et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "5429cab8-8d63-433f-b8ec-077960a6b9ed",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C92",
+      "claim": "Dopaminergic fibers are rapidly responsive to physiologically relevant stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This projection pattern is well situated to provide a potential means for direct delivery of DA to the CG over the immediate time scales of neuromodulator release, in addition to hormonal exposure to DA, through fibers that are rapidly responsive to physiologically relevant stimuli (Maynard, 1953; Guirguis and Wilkens, 1995; Jury and Watson, 2000; Fort et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "79bf359f-a2e3-4260-b840-a910fbae81bc",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C93",
+      "claim": "Feedback transmitted through dopaminergic fibers could rapidly 'prime' the network for subsequent modulation delivered hormonally, thus preventing desynchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "This would potentially allow for feedback transmitted through dopaminergic fibers to rapidly 'prime' the network for subsequent modulation delivered hormonally, thus preventing desynchronization as a result.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the anatomical and functional properties described.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "ccda2fdc-7618-4bd8-9d7b-87703f6fab26",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C94",
+      "claim": "The diffuse and often opposing actions of modulators on different components of the same circuit may act to stabilize the modulated state of networks, and preventing 'overmodulation' that could render a network non-functional or pathological.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that the somewhat diffuse and often opposing actions of modulators on different components of the same circuit may act to stabilize the modulated state of networks, and preventing 'overmodulation' that could render a network non-functional or pathological (Harris-Warrick and Johnson, 2010; Marder, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Harris-Warrick and Johnson, 2010 and Marder, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "05f1213a-15cf-4935-a1eb-c7644d07c7b8",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C95",
+      "claim": "5HT increases the set of intrinsic and synaptic current magnitude combinations that can give rise to specific behaviors such as bursting in a half center oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 5HT increases the set of intrinsic and synaptic current magnitude combinations that can give rise to specific behaviors such as bursting in a half center oscillator (Grashow et al., 2009), ensuring a larger parameter space over which appropriate output can be generated in the context of multiple modulation and hence increasing robustness of output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Grashow et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "fd9a9364-fc89-4fee-bbc7-a6d408634ffb",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C96",
+      "claim": "Neuromodulation can compensate for temperature-induced loss of motor pattern output in the STG.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently it has been shown that neuromodulation can compensate for temperature-induced loss of motor pattern output in the STG (St\u00e4dele et al., 2015), thus acting in a neuroprotective manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to St\u00e4dele et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "1bcf4a88-a41a-43d4-b10a-82002d59afa3",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C97",
+      "claim": "Electrical coupling and modulation of coupling interactions play a role in circuit robustness, allowing for distributed network solutions to maximize output consistency under different conditions or with variable underlying physiology of network constituents.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical coupling itself, as well as modulation of coupling interactions, also play a role in circuit robustness, allowing for distributed network solutions to maximize output consistency under different conditions or with variable underlying physiology of network constituents (Kepler et al., 1990; Gutierrez and Marder, 2013; Marder et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kepler et al., 1990, Gutierrez and Marder, 2013, and Marder et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "ce1cbbfc-0025-48f8-818b-0b983b255696",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C98",
+      "claim": "DA directly modulates gap junctional conductance and network activity in horizontal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DA directly modulates gap junctional conductance and network activity in horizontal cells (Piccolino et al., 1984; He et al., 2000), AII amacrine cells (Kothmann et al., 2009), and rod cells (Jin et al., 2015) of the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Piccolino et al., 1984 and He et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "c7a6cd84-53c9-4beb-8cd1-35325cd84220",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C99",
+      "claim": "DA directly modulates gap junctional conductance and network activity in AII amacrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DA directly modulates gap junctional conductance and network activity in horizontal cells (Piccolino et al., 1984; He et al., 2000), AII amacrine cells (Kothmann et al., 2009), and rod cells (Jin et al., 2015) of the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kothmann et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "08e43281-4099-46eb-9c4b-83f4528c16e9",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C100",
+      "claim": "DA directly modulates gap junctional conductance and network activity in rod cells of the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "DA directly modulates gap junctional conductance and network activity in horizontal cells (Piccolino et al., 1984; He et al., 2000), AII amacrine cells (Kothmann et al., 2009), and rod cells (Jin et al., 2015) of the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jin et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "92f4ff4b-f7e4-435c-97c9-4ee47e3364ee",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C101",
+      "claim": "DA modulation of coupling conductance is involved in sensorimotor function during copulation in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "DA modulation of coupling conductance is also involved in sensorimotor function during copulation in C. elegans (Correa et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Correa et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "8fe484fb-deca-460d-b2fa-e9a21f54eee5",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C102",
+      "claim": "DA has been shown capable of modulating the electrical component of the mixed electrical-chemical synapses of auditory afferents onto the fish Mauthner cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore DA has been shown capable of modulating the electrical component of the mixed electrical-chemical synapses of auditory afferents onto the fish Mauthner cell (Pereda et al., 1992; Cachope et al., 2007; Cachope and Pereda, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pereda et al., 1992, Cachope et al., 2007, and Cachope and Pereda, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "0eb5826b-0cbf-4ecc-85e1-d37cc1bc8578",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C103",
+      "claim": "This is the first study that directly implicates the neuromodulation of gap junctional conductance in directly counteracting desynchronizing perturbations to enhance network robustness.",
+      "claim_type": "EXPLICIT",
+      "source": "While electrical coupling is known to support synchronized activity in many systems, and DA is known to modulate such coupling across taxa, to our knowledge this is the first study that directly implicates the neuromodulation of gap junctional conductance in directly counteracting desynchronizing perturbations to enhance network robustness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the current study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "53fce09a-2391-4351-ad82-95e633d5349e",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C104",
+      "claim": "DA can maintain the ability of other modulators, in this case 5HT, to alter output in an independent fashion that is protected from potentially detrimental or destabilizing alterations to coordinated network activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DA can do so in this system and maintain the ability of other modulators, in this case 5HT, to alter output in an independent fashion that is protected from potentially detrimental or destabilizing alterations to coordinated network activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "3660c2a1-1985-40de-884c-8bc5f677d9bd",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C105",
+      "claim": "Adult male Jonah crabs, Cancer borealis, were purchased from The Fresh Lobster Company (Gloucester, MA).",
+      "claim_type": "EXPLICIT",
+      "source": "Adult male Jonah crabs, Cancer borealis, were purchased and shipped overnight from The Fresh Lobster Company (Gloucester, MA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "7cb6686e-1723-453d-8e95-9d090068db0e",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C106",
+      "claim": "The CG network is comprised of 9 cells: 4 Small Cell (SC) pacemaker interneurons which give excitatory input to 5 Large Cell (LC) motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The CG network is comprised of 9 cells: 4 Small Cell (SC) pacemaker interneurons which give excitatory input to 5 Large Cell (LC) motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the CG network structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "185d66be-bcdb-4e99-87f7-308b4e9b5e43",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C107",
+      "claim": "During normal activity, LCs produce consistent levels of rhythmic output and pairs of LCs show nearly identical voltage waveforms.",
+      "claim_type": "EXPLICIT",
+      "source": "During normal activity, LCs produce consistent levels of rhythmic output and pairs of LCs show nearly identical voltage waveforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about normal LC activity.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "b2625a9a-a361-48ff-aa40-efc878cdb0b9",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "claim_id": "C108",
+      "claim": "LC and pacemaker spikes are easily distinguishable by their relative amplitudes, and by intracellular potential changes in the LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "LC and pacemaker spikes are easily distinguishable by their relative amplitudes, and by intracellular potential changes in the LCs (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "039ea144-0021-4549-a6ab-a5c9321cf7e8",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Serotonin (5HT) and dopamine (DA) have distinct excitatory effects on the cardiac ganglion network. 5HT significantly increases pacemaker burst duration and induces 'double-bursting' in 6/8 preparations, while DA increases LC excitability without inducing double-bursting or changing phase relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C29 provide comprehensive statistical evidence with appropriate sample sizes (N=8) and paired t-tests showing distinct effects of 5HT and DA on network output. The data demonstrate significant changes in multiple burst parameters with p<0.05, and the double-bursting phenomenon is well-documented in Figure 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "7bf76408-c3a2-4d2c-a68a-063a2b754572",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "5HT causes acute desynchronization of LC burst waveforms (measured by R\u00b2), with synchrony reaching a minimum at ~9.1 minutes and showing partial recovery by 30 minutes, while DA maintains complete synchrony throughout the experiment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C47 are supported by rigorous statistical analysis using RM ANOVA and post-hoc Tukey tests (N=8). The R\u00b2 measurements provide quantitative evidence of desynchronization in 5HT (p<0.001) but not DA (p=0.784), with clear visual support in Figure 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "0fe6079c-7b9f-4525-a22b-b336051e5ca0",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DA increases electrical coupling conductance between LCs by 41-149% without changing input resistance, while 5HT has no effect on coupling conductance. This suggests DA directly modulates gap junctional conductance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C55 are well-supported by direct measurements using appropriate electrophysiological methods (Bennett 1966 approach). The coupling coefficient and conductance measurements show statistically significant increases with DA (p<0.05) but not 5HT, with adequate sample sizes (N=5-8) and paired t-tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "ff51c378-7b08-4062-8864-505002f4e17d",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Co-application of DA and 5HT produces 5HT-like output changes (including double-bursting in 5/8 preparations) but maintains synchronized waveforms, with no significant change in R\u00b2 across the experiment (p=0.334, RM ANOVA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C57-C62 demonstrate that DA prevents 5HT-induced desynchronization while permitting 5HT's effects on network output. The statistical analysis is appropriate (RM ANOVA, N=8) and phase relationship changes mirror 5HT alone, supporting the complementary action of these modulators.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "dca272a2-a37f-458e-929d-fa7a2693ad1f",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pre-incubation with DA prevents TEA-induced desynchronization while still allowing TEA's excitatory effects. DA+TEA shows no significant change in R\u00b2 (p=0.456, RM ANOVA) despite increased excitability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C63-C68 provide strong evidence that DA's effect on coupling is protective against desynchronizing perturbations. The experimental design appropriately tests the hypothesis using prior work (Lane et al., 2016) as reference, with adequate statistical power (N=8) and appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "f22a1f00-0668-4a3a-9263-47c4835c3a2a",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Dopaminergic modulation of electrical coupling plays a protective role in maintaining network synchrony, representing the first direct demonstration that neuromodulation of gap junctions counteracts desynchronizing perturbations while permitting other modulators to alter output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C85, C89, C103-C104 represent the major interpretive conclusions supported by the experimental findings. The protective role of DA is demonstrated across multiple perturbations (5HT, TEA), and the novelty claim appears justified based on the literature review provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "237cd95a-e402-4021-a30f-0529bdccd205",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Focal application of 5HT and DA to anterior LCs demonstrates direct excitatory effects on LCs. Focal 5HT never produces double-bursting, indicating this output requires 5HT modulation of SC pacemakers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C39 provide important mechanistic insight with appropriate focal application experiments (N=6-8). The statistical analyses (paired t-tests) show significant increases in multiple burst parameters, and the absence of double-bursting with focal LC application supports the inference about pacemaker involvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "c56a4427-b5c5-41a7-a603-f0cd2c0eff89",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "LC motor neurons have variable membrane conductances (IA, IHTK, ICa) yet produce identical synchronized activity in the intact cardiac ganglion network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C12-C13 establish the biological context supported by prior work (Lane et al., 2016; Ransdell et al., 2013a,b) and demonstrated in control conditions throughout this study. This foundational observation motivates the experimental questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "cbe68f68-2ffb-4967-8db8-7359aee3d62f",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "5HT reduces IKCa and enhances ICa in STG/cardiac neurons (effects mimicked by TEA), with no effect on electrical coupling. This leads to distinct hyperexcitable outputs from variable LCs that manifest as desynchronization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C76 synthesize prior literature with current findings to explain the mechanism of 5HT-induced desynchronization. The interpretation is well-supported by citations and consistent with the experimental observations, though the mechanistic details rely on prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "2f3fe337-0159-4a0b-a467-352ad706929f",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DA targets multiple conductances (IA, IH, INaP, ICa) in a cell-type and concentration-dependent manner, and modulates electrical coupling in STG cells. In cardiac LCs, IA, INaP, and ICa vary widely, and IA blockade causes desynchronization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C84 establish the known effects of DA from prior literature, providing context for interpreting the current results. The citations are appropriate and the knowledge claims are well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "3c263b0d-0ad8-45be-bfe3-886ec5bfc90f",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Individual biogenic amines have distinct effects on crustacean ganglia, with distinct output modes attributable to each modulator. DA and 5HT likely have distinct signaling pathways resulting in linear combination of effects rather than occlusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 are supported by prior literature and the co-application experiments showing additive effects. The interpretation of distinct signaling pathways is reasonable given the maintained synchrony with complementary output changes, though direct pathway evidence is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "8e6a61a5-ef16-4877-a0b6-fc92a98a1569",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The CG receives dopaminergic innervation with synaptic connections on LCs and pacemakers, positioned to deliver DA rapidly in response to physiological stimuli, potentially 'priming' the network to prevent desynchronization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C92 are well-supported by anatomical studies (citations provided). However, C93 is speculative about the 'priming' function, though it is a reasonable hypothesis based on the anatomy and functional data. The speculation is appropriately qualified in the text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "0b182c86-d026-4328-a0d5-63f8b9869d49",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Neuromodulation can stabilize networks and prevent overmodulation, expand parameter space for appropriate output, compensate for temperature effects, and electrical coupling contributes to circuit robustness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C97 summarize established concepts from prior literature (appropriate citations provided) that contextualize the current findings within broader principles of neuromodulation and network robustness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "f83d6461-9e65-4228-b1be-2fd2ac0a5480",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "DA modulates gap junctional conductance across multiple systems including retinal cells (horizontal, AII amacrine, rod cells), C. elegans sensorimotor circuits, and fish Mauthner cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C102 establish that DA modulation of electrical coupling is a conserved mechanism across taxa, supported by appropriate citations. This contextualizes the novelty of the current findings regarding the protective function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "2a531f7b-f6be-48eb-a397-5c18c0fb10b6",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Blocking K+ conductances in LCs disrupts synchrony, which is ultimately restored by compensatory changes in membrane conductance and electrical synaptic strength (from prior work Lane et al., 2016).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C14-C15, C56 accurately cite prior work that establishes the vulnerability of the network to K+ channel blockade and the compensatory mechanisms. This provides important context for the current TEA experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "a949dc89-ef02-4164-9823-2d3b2e853d11",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Neuromodulation reconfigures networks by altering conductances, yet networks can achieve stable output through variable solutions. The CG is modulated by substances including 5HT and DA that target K+ conductances known to affect synchrony.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C16-C17 establish general principles and specific background about the CG system, well-supported by appropriate citations. These provide the conceptual framework for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    },
+    {
+      "id": "66cc981d-e8fc-4d17-b35f-b86054bd5aa8",
+      "content_id": "004787a6-15e0-433b-8412-2fe1b069d1bc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Methodological details: Adult male Cancer borealis crabs were used; the CG contains 4 SC pacemakers and 5 LC motor neurons; LCs produce synchronized rhythmic output with distinguishable spike characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C108 provide essential methodological and anatomical information. These are straightforward factual statements about the experimental system, well-established and demonstrated in Figure 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:43:45.473207Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3309dd51-1772-4aa1-9436-e841880cc552",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "bbfdc5be-db47-4512-8621-aa57d1d4ca92",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "4b657521-8a84-4b26-a361-6278fe1e831c",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "4f00a206-af87-461c-8f9f-c1511eac831d",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "749edd0c-484a-4149-a08c-9c0462a54f2f",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "4ba4ebf8-d4de-4155-bb09-0507e4aeeeac",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "027bbbd5-3124-4ffc-be5b-099412197e69",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "c01d490b-3f5a-4d8c-8373-c3d80c2bdf89",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "30232b55-29d4-4f82-ba44-c51aa2a9a0f4",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "9224d024-9328-4cdc-af07-234569b1cbe2",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "d4f64b9d-2981-4d09-a6ce-c947b629bcae",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "fa682d7e-f104-42b8-8bb3-5db90a05c29f",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "32779c38-27af-4ff2-a881-983b5a13ef79",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "6b3f4fc7-40de-498e-8370-4f4bc7829ce4",
+      "result_id": "039ea144-0021-4549-a6ab-a5c9321cf7e8"
+    },
+    {
+      "claim_id": "22a36923-38dd-4efc-a025-01505cc0574b",
+      "result_id": "7bf76408-c3a2-4d2c-a68a-063a2b754572"
+    },
+    {
+      "claim_id": "57e0a81e-8ca9-405f-81bc-54dd374dd4f9",
+      "result_id": "7bf76408-c3a2-4d2c-a68a-063a2b754572"
+    },
+    {
+      "claim_id": "d46a489a-3dd1-45f3-8717-fdc4338b9a7e",
+      "result_id": "7bf76408-c3a2-4d2c-a68a-063a2b754572"
+    },
+    {
+      "claim_id": "e73d94df-e508-4946-87bf-d28b32a21a17",
+      "result_id": "7bf76408-c3a2-4d2c-a68a-063a2b754572"
+    },
+    {
+      "claim_id": "00ef24f5-ff3b-4ecb-ba20-aaa95e1531e7",
+      "result_id": "7bf76408-c3a2-4d2c-a68a-063a2b754572"
+    },
+    {
+      "claim_id": "61337cb5-dcea-4a78-90c7-d36109620ced",
+      "result_id": "7bf76408-c3a2-4d2c-a68a-063a2b754572"
+    },
+    {
+      "claim_id": "85a53ff0-333a-4476-af1e-76b59c17fa7f",
+      "result_id": "7bf76408-c3a2-4d2c-a68a-063a2b754572"
+    },
+    {
+      "claim_id": "a380eed2-a26c-4f94-91e2-674638e6fdd7",
+      "result_id": "7bf76408-c3a2-4d2c-a68a-063a2b754572"
+    },
+    {
+      "claim_id": "508dab38-74f2-43fc-8e53-5a6a8b3f8797",
+      "result_id": "0fe6079c-7b9f-4525-a22b-b336051e5ca0"
+    },
+    {
+      "claim_id": "2564a2fd-f361-417d-85cd-e510f67ade8f",
+      "result_id": "0fe6079c-7b9f-4525-a22b-b336051e5ca0"
+    },
+    {
+      "claim_id": "6b3ae7dd-56de-465d-ab37-0345db316188",
+      "result_id": "0fe6079c-7b9f-4525-a22b-b336051e5ca0"
+    },
+    {
+      "claim_id": "899492ec-7395-450f-80f2-2d408a03d8d1",
+      "result_id": "0fe6079c-7b9f-4525-a22b-b336051e5ca0"
+    },
+    {
+      "claim_id": "9a3489fd-0e63-41f8-a6cc-ccf2cd22e72b",
+      "result_id": "0fe6079c-7b9f-4525-a22b-b336051e5ca0"
+    },
+    {
+      "claim_id": "27ab85aa-91c3-4b50-ba8f-20c66d8e1610",
+      "result_id": "0fe6079c-7b9f-4525-a22b-b336051e5ca0"
+    },
+    {
+      "claim_id": "7f703e14-e0e5-4215-ac10-c983862fa96f",
+      "result_id": "0fe6079c-7b9f-4525-a22b-b336051e5ca0"
+    },
+    {
+      "claim_id": "f91199d3-784b-4446-ba82-9ae5143da99d",
+      "result_id": "0fe6079c-7b9f-4525-a22b-b336051e5ca0"
+    },
+    {
+      "claim_id": "ea2204ff-4f50-40e9-8244-665e41d619ce",
+      "result_id": "ff51c378-7b08-4062-8864-505002f4e17d"
+    },
+    {
+      "claim_id": "e9707e73-a03c-43a2-a6e7-788008f6fbd8",
+      "result_id": "ff51c378-7b08-4062-8864-505002f4e17d"
+    },
+    {
+      "claim_id": "a24da685-d3f2-43a6-bff4-324794e57a95",
+      "result_id": "ff51c378-7b08-4062-8864-505002f4e17d"
+    },
+    {
+      "claim_id": "6fcb9f54-8c53-4bed-980c-f6e1cb695035",
+      "result_id": "ff51c378-7b08-4062-8864-505002f4e17d"
+    },
+    {
+      "claim_id": "3d713d2e-20f5-428c-acd2-67258f3687da",
+      "result_id": "ff51c378-7b08-4062-8864-505002f4e17d"
+    },
+    {
+      "claim_id": "b68de4c2-a023-44bc-bc6b-a3db500e5d72",
+      "result_id": "ff51c378-7b08-4062-8864-505002f4e17d"
+    },
+    {
+      "claim_id": "8eb84673-4fb6-42a3-9a73-93299cc4f26c",
+      "result_id": "ff51c378-7b08-4062-8864-505002f4e17d"
+    },
+    {
+      "claim_id": "ad785df5-2aac-4e13-9026-9329742f9e55",
+      "result_id": "dca272a2-a37f-458e-929d-fa7a2693ad1f"
+    },
+    {
+      "claim_id": "3dfa6da7-a0e3-4443-83b6-96ed9206c4a4",
+      "result_id": "dca272a2-a37f-458e-929d-fa7a2693ad1f"
+    },
+    {
+      "claim_id": "490a3959-8154-40e3-91da-89d3f4269ba5",
+      "result_id": "dca272a2-a37f-458e-929d-fa7a2693ad1f"
+    },
+    {
+      "claim_id": "095db513-4a0b-40b7-9e88-cd97819c5ba2",
+      "result_id": "dca272a2-a37f-458e-929d-fa7a2693ad1f"
+    },
+    {
+      "claim_id": "e8173873-45bb-4239-8787-ce6b6fae65c4",
+      "result_id": "dca272a2-a37f-458e-929d-fa7a2693ad1f"
+    },
+    {
+      "claim_id": "b21889e8-68fc-4d0e-a164-670263d3dc30",
+      "result_id": "dca272a2-a37f-458e-929d-fa7a2693ad1f"
+    },
+    {
+      "claim_id": "550bf391-b7a7-4b25-8913-eda1abd4c0e8",
+      "result_id": "dca272a2-a37f-458e-929d-fa7a2693ad1f"
+    },
+    {
+      "claim_id": "0eebcd4d-393a-4fcb-aacb-9ab886ddde0c",
+      "result_id": "f22a1f00-0668-4a3a-9263-47c4835c3a2a"
+    },
+    {
+      "claim_id": "6292cb1a-8e72-4879-9637-fbde6699003c",
+      "result_id": "f22a1f00-0668-4a3a-9263-47c4835c3a2a"
+    },
+    {
+      "claim_id": "b3f4bcd4-3501-443a-839d-4c0db7d8cdf3",
+      "result_id": "f22a1f00-0668-4a3a-9263-47c4835c3a2a"
+    },
+    {
+      "claim_id": "0eb5826b-0cbf-4ecc-85e1-d37cc1bc8578",
+      "result_id": "f22a1f00-0668-4a3a-9263-47c4835c3a2a"
+    },
+    {
+      "claim_id": "53fce09a-2391-4351-ad82-95e633d5349e",
+      "result_id": "f22a1f00-0668-4a3a-9263-47c4835c3a2a"
+    },
+    {
+      "claim_id": "51b5f296-75c2-492f-8221-649847d5cedc",
+      "result_id": "237cd95a-e402-4021-a30f-0529bdccd205"
+    },
+    {
+      "claim_id": "d646f8e2-acd0-48d9-a30c-12a86a8dff0f",
+      "result_id": "237cd95a-e402-4021-a30f-0529bdccd205"
+    },
+    {
+      "claim_id": "5f0d813f-1563-4fd0-b768-d718aaa8f428",
+      "result_id": "237cd95a-e402-4021-a30f-0529bdccd205"
+    },
+    {
+      "claim_id": "029d77d4-81b7-4ce0-86ed-a320d0af0cc8",
+      "result_id": "237cd95a-e402-4021-a30f-0529bdccd205"
+    },
+    {
+      "claim_id": "e143af6f-ee2c-47e8-a333-283b85876bc5",
+      "result_id": "237cd95a-e402-4021-a30f-0529bdccd205"
+    },
+    {
+      "claim_id": "f70cdbcc-1cd1-4428-939e-b62771686b8f",
+      "result_id": "237cd95a-e402-4021-a30f-0529bdccd205"
+    },
+    {
+      "claim_id": "37f67aa1-1f43-4246-a87b-40f440eacb3d",
+      "result_id": "237cd95a-e402-4021-a30f-0529bdccd205"
+    },
+    {
+      "claim_id": "7907f8d8-e2f6-409b-9899-d9708d95a11c",
+      "result_id": "237cd95a-e402-4021-a30f-0529bdccd205"
+    },
+    {
+      "claim_id": "027974ee-f43b-4456-b4bc-214b806eadb2",
+      "result_id": "237cd95a-e402-4021-a30f-0529bdccd205"
+    },
+    {
+      "claim_id": "8592d7fd-6b65-44a5-8736-63d591ae100c",
+      "result_id": "237cd95a-e402-4021-a30f-0529bdccd205"
+    },
+    {
+      "claim_id": "e6157cb0-fec1-4136-bcb2-771bf452ca91",
+      "result_id": "c56a4427-b5c5-41a7-a603-f0cd2c0eff89"
+    },
+    {
+      "claim_id": "6df91e8a-908c-420a-8eac-e9ba10b9dbf1",
+      "result_id": "c56a4427-b5c5-41a7-a603-f0cd2c0eff89"
+    },
+    {
+      "claim_id": "ec20dbca-4e40-4a6e-9aba-9fae1c2ec2fa",
+      "result_id": "c56a4427-b5c5-41a7-a603-f0cd2c0eff89"
+    },
+    {
+      "claim_id": "0561150b-7dc4-48d4-a9e3-3f53d4eeaf50",
+      "result_id": "c56a4427-b5c5-41a7-a603-f0cd2c0eff89"
+    },
+    {
+      "claim_id": "004c485d-c664-4a11-8c12-5ac9381ab3a9",
+      "result_id": "cbe68f68-2ffb-4967-8db8-7359aee3d62f"
+    },
+    {
+      "claim_id": "cac320f8-8d5b-469d-bffa-3efba9c6b875",
+      "result_id": "cbe68f68-2ffb-4967-8db8-7359aee3d62f"
+    },
+    {
+      "claim_id": "b14ada55-a828-4bd8-9919-202371dd4a3d",
+      "result_id": "cbe68f68-2ffb-4967-8db8-7359aee3d62f"
+    },
+    {
+      "claim_id": "59028bec-11a0-47c2-b73b-5f91fcadf8b8",
+      "result_id": "cbe68f68-2ffb-4967-8db8-7359aee3d62f"
+    },
+    {
+      "claim_id": "1629e09b-c76f-4aa4-bb04-fbc3684a2075",
+      "result_id": "cbe68f68-2ffb-4967-8db8-7359aee3d62f"
+    },
+    {
+      "claim_id": "14f1c9c5-06d4-4d27-a18d-697eecf41feb",
+      "result_id": "cbe68f68-2ffb-4967-8db8-7359aee3d62f"
+    },
+    {
+      "claim_id": "69cd1f79-e7ea-4207-aeb7-6caf8d1301ab",
+      "result_id": "cbe68f68-2ffb-4967-8db8-7359aee3d62f"
+    },
+    {
+      "claim_id": "d0be5bbe-6f73-4e19-a8e4-cfd7f78cd1b8",
+      "result_id": "cbe68f68-2ffb-4967-8db8-7359aee3d62f"
+    },
+    {
+      "claim_id": "a9745e5d-6280-46da-b921-00d85e9de913",
+      "result_id": "2f3fe337-0159-4a0b-a467-352ad706929f"
+    },
+    {
+      "claim_id": "4f8187f9-8a47-4a40-a53c-c5c712a4880a",
+      "result_id": "2f3fe337-0159-4a0b-a467-352ad706929f"
+    },
+    {
+      "claim_id": "d8a936dd-c266-4ce1-b0de-f8d1382d9316",
+      "result_id": "2f3fe337-0159-4a0b-a467-352ad706929f"
+    },
+    {
+      "claim_id": "dfdf3bf5-9731-4577-bc4c-a4f7de5b60e7",
+      "result_id": "2f3fe337-0159-4a0b-a467-352ad706929f"
+    },
+    {
+      "claim_id": "c4373a42-7a94-45fa-a7e9-28cf8c6d9f8f",
+      "result_id": "2f3fe337-0159-4a0b-a467-352ad706929f"
+    },
+    {
+      "claim_id": "0dcd93f5-765c-4984-8a17-9c32ebd7f47a",
+      "result_id": "2f3fe337-0159-4a0b-a467-352ad706929f"
+    },
+    {
+      "claim_id": "a389826a-3329-438c-9385-7d2e9d8fa44c",
+      "result_id": "2f3fe337-0159-4a0b-a467-352ad706929f"
+    },
+    {
+      "claim_id": "a5b21d76-b8be-4ebf-a7a8-6064b5ca4304",
+      "result_id": "2f3fe337-0159-4a0b-a467-352ad706929f"
+    },
+    {
+      "claim_id": "d72bed06-7687-43bd-b9f7-9f337b913961",
+      "result_id": "3c263b0d-0ad8-45be-bfe3-886ec5bfc90f"
+    },
+    {
+      "claim_id": "f7da3f04-50c3-4836-afc9-c7a3c41261a2",
+      "result_id": "3c263b0d-0ad8-45be-bfe3-886ec5bfc90f"
+    },
+    {
+      "claim_id": "62c3bcad-c4bb-4fe5-9caa-cae2f72206ed",
+      "result_id": "3c263b0d-0ad8-45be-bfe3-886ec5bfc90f"
+    },
+    {
+      "claim_id": "c144c6cd-b605-4532-a34f-895f7c54681b",
+      "result_id": "8e6a61a5-ef16-4877-a0b6-fc92a98a1569"
+    },
+    {
+      "claim_id": "1d162218-b9e7-4e4d-abcd-d394ed1e3b51",
+      "result_id": "8e6a61a5-ef16-4877-a0b6-fc92a98a1569"
+    },
+    {
+      "claim_id": "5429cab8-8d63-433f-b8ec-077960a6b9ed",
+      "result_id": "8e6a61a5-ef16-4877-a0b6-fc92a98a1569"
+    },
+    {
+      "claim_id": "79bf359f-a2e3-4260-b840-a910fbae81bc",
+      "result_id": "8e6a61a5-ef16-4877-a0b6-fc92a98a1569"
+    },
+    {
+      "claim_id": "ccda2fdc-7618-4bd8-9d7b-87703f6fab26",
+      "result_id": "0b182c86-d026-4328-a0d5-63f8b9869d49"
+    },
+    {
+      "claim_id": "05f1213a-15cf-4935-a1eb-c7644d07c7b8",
+      "result_id": "0b182c86-d026-4328-a0d5-63f8b9869d49"
+    },
+    {
+      "claim_id": "fd9a9364-fc89-4fee-bbc7-a6d408634ffb",
+      "result_id": "0b182c86-d026-4328-a0d5-63f8b9869d49"
+    },
+    {
+      "claim_id": "1bcf4a88-a41a-43d4-b10a-82002d59afa3",
+      "result_id": "0b182c86-d026-4328-a0d5-63f8b9869d49"
+    },
+    {
+      "claim_id": "ce1cbbfc-0025-48f8-818b-0b983b255696",
+      "result_id": "f83d6461-9e65-4228-b1be-2fd2ac0a5480"
+    },
+    {
+      "claim_id": "c7a6cd84-53c9-4beb-8cd1-35325cd84220",
+      "result_id": "f83d6461-9e65-4228-b1be-2fd2ac0a5480"
+    },
+    {
+      "claim_id": "08e43281-4099-46eb-9c4b-83f4528c16e9",
+      "result_id": "f83d6461-9e65-4228-b1be-2fd2ac0a5480"
+    },
+    {
+      "claim_id": "92f4ff4b-f7e4-435c-97c9-4ee47e3364ee",
+      "result_id": "f83d6461-9e65-4228-b1be-2fd2ac0a5480"
+    },
+    {
+      "claim_id": "8fe484fb-deca-460d-b2fa-e9a21f54eee5",
+      "result_id": "f83d6461-9e65-4228-b1be-2fd2ac0a5480"
+    },
+    {
+      "claim_id": "8d676e84-c43a-4db2-b161-5788b9fdd119",
+      "result_id": "2a531f7b-f6be-48eb-a397-5c18c0fb10b6"
+    },
+    {
+      "claim_id": "ce672450-edbe-4243-93a2-859c6378178e",
+      "result_id": "2a531f7b-f6be-48eb-a397-5c18c0fb10b6"
+    },
+    {
+      "claim_id": "5a8e26d0-b24c-40e0-b578-000ee98e79f0",
+      "result_id": "2a531f7b-f6be-48eb-a397-5c18c0fb10b6"
+    },
+    {
+      "claim_id": "2c9785c5-4933-4edb-8511-393f8d7dcf41",
+      "result_id": "2a531f7b-f6be-48eb-a397-5c18c0fb10b6"
+    },
+    {
+      "claim_id": "33aa7ce4-51ba-4cdf-8f27-445d5d7c68af",
+      "result_id": "a949dc89-ef02-4164-9823-2d3b2e853d11"
+    },
+    {
+      "claim_id": "16d11d53-1c2e-4137-ad48-5c26254e0a20",
+      "result_id": "a949dc89-ef02-4164-9823-2d3b2e853d11"
+    },
+    {
+      "claim_id": "e41b2a99-0098-42bf-aad7-07c87c4168cb",
+      "result_id": "a949dc89-ef02-4164-9823-2d3b2e853d11"
+    },
+    {
+      "claim_id": "af0a8110-d2be-4370-93be-4566f5f4c954",
+      "result_id": "a949dc89-ef02-4164-9823-2d3b2e853d11"
+    },
+    {
+      "claim_id": "3660c2a1-1985-40de-884c-8bc5f677d9bd",
+      "result_id": "66cc981d-e8fc-4d17-b35f-b86054bd5aa8"
+    },
+    {
+      "claim_id": "7cb6686e-1723-453d-8e95-9d090068db0e",
+      "result_id": "66cc981d-e8fc-4d17-b35f-b86054bd5aa8"
+    },
+    {
+      "claim_id": "185d66be-bcdb-4e99-87f7-308b4e9b5e43",
+      "result_id": "66cc981d-e8fc-4d17-b35f-b86054bd5aa8"
+    },
+    {
+      "claim_id": "b2625a9a-a361-48ff-aa40-efc878cdb0b9",
+      "result_id": "66cc981d-e8fc-4d17-b35f-b86054bd5aa8"
+    }
+  ],
+  "comparisons": []
+}

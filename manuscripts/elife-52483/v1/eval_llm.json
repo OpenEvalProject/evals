@@ -1,0 +1,429 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10"
+    ],
+    "result": "Supraphysiological MYC levels are oncogenic and drive pathogenesis in most human malignancies, activating virtually all hallmarks of cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, and C10 establish the oncogenic role of MYC as foundational knowledge supported by well-established citations (Dang 2012; Hanahan and Weinberg 2011). This represents accepted background information rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Two competing models exist for MYC function: the traditional E-box-specific transcription factor model versus the global amplifier model where MYC increases output at all active promoters with gain proportional to promoter activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C11, C12, and C13 describe the two competing hypotheses being tested in this study. These are well-supported by citations and represent the conceptual framework motivating the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Omics studies have failed to resolve MYC's essential role in transcription because statistical parameters, models, and computational algorithms determine their outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 provide critical assessment of prior omics approaches with appropriate citations. This justifies the orthogonal synthetic biology approach taken in this study, though the critique itself could benefit from more specific examples of how parameter choices affect conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "MYC rapidly increases total cellular RNA, with statistically significant increases at 10 and 14 hours following tamoxifen treatment in MYC-ER cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by experimental data in Figure 1\u2014figure supplement 1 showing time-dependent RNA increases. Claims C73-C75 provide appropriate context about rRNA composition and MYC's known effects on ribosomal genes. The statistical significance is stated but p-values should be more clearly reported in the figure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "MYC dose-dependently increases reporter output at minimal promoters with or without E-boxes, with non-linear amplification that increases when promoters are activated by GR/DEX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C18-C21 are supported by experimental data in Figures 1B-C showing linear MYC protein expression with plasmid dose and non-linear reporter amplification. The ~15-fold increase with DEX+MYC (C19) and the interpretation supporting the amplifier model (C20) are well-documented. The non-linearity (C21) is a key observation supporting the amplifier hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Driving minimal promoters with exogenous transcription factors (GR or PR) makes expression more MYC-responsive, with amplifier gain increasing as promoter activation increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C80-C82 demonstrate that MYC amplification scales with promoter activity, supported by data in Figure 1\u2014figure supplement 3. The weaker amplification with PR versus GR (C81-C82) is explained by the non-linear transfer function. This is a key prediction of the amplifier model and is experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The MYC-MAX dimerization inhibitor 10058-F4 dramatically impairs MYC amplification and abolishes DEX-dependent GREtkLuc activation, indicating that GREtk-promoter activation depends on MYC-MAX dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by experimental data comparing Figures 1C and 1D. The unexpected finding that F4 abolishes even basal GR activation (C23) is particularly important, though the mechanism requires further investigation. The interpretation (C24) is reasonable but could represent either direct or indirect MYC requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "E-boxes provide only modest (~1.5-fold) enhancement of MYC binding and activity, as predicted from the <100-fold difference in MYC-MAX binding affinity between best and worst 8-mer sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 combine binding affinity data from Guo et al. 2014 (C25) with a calculation (C26) and experimental validation (C27) showing exactly the predicted 1.5-fold enhancement. The quantitative agreement between prediction and experiment (Figure 2B vs C) strongly supports the model that E-boxes modestly boost rather than determine MYC activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "At low MYC levels, MAX-MAX dimers prevail and may bind E-boxes more specifically but less avidly than MYC-MAX, with MAX-MAX possessing intrinsic repressor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by citations to Conacci-Sorrell et al. 2014 and Guo et al. 2014. This provides mechanistic context for why E-box reporters show lower expression at low MYC levels (Figure 2C), though direct experimental validation in this system would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "MYC box mutations differentially affect amplification: MBII mutations attenuate activity, while MBIII and MBIV mutations dramatically boost amplifier gain, with MBIII/IV over-amplification attenuated by co-mutation of MBI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C30-C33 are supported by systematic mutagenesis data in Figure 3. The differential effects of MB mutations reveal functional specialization, with MBIII appearing to limit over-amplification. The genetic interactions (C33) suggest coordinated regulation among MBs. This is a major mechanistic finding about MYC function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "MBIII mutations deliver higher reporter output despite reduced protein levels, revealing an inverse relationship between MYC abundance and activity consistent with coupled transactivation and turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C34-C36 are supported by data in Figures 3E, 3I, and 3J showing that hyperactive MBIII mutants have lower protein levels. The inverse correlation (C35) and interpretation linking activity to turnover (C36) are well-supported by multiple citations. This uncoupling of protein level and activity is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "MYC increases reporter RNA levels and mutations do not discriminate between E-box and non-E-box promoters, confirming effects occur at the transcriptional level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by RT-qPCR data in Figure 4C showing RNA-level effects. This confirms that amplification is transcriptional rather than post-transcriptional. However, the background RNA issue with empty vector (C86) complicates quantitative interpretation of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "MYC amplifies GAL4/VP16-driven transcription through non-redundant mechanisms, with MBIII mutations dramatically increasing gain and MBI co-mutation reducing MBIII hyperactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by data in Figures 5C-E showing MYC amplification of a completely synthetic transcription system. The synergy (C40) and MB mutation effects parallel those with GR, supporting generality of the amplifier mechanism. This is critical evidence that MYC is a general amplifier rather than having specific synergy with particular factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In chromosomally integrated reporters, MYC and GAL4/VP16 cooperate to drive expression, with E-boxes providing modest enhancement, and amplification resilient to single MB mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by microscopy data in Figure 6B-D showing that the amplifier mechanism operates on integrated chromatin templates. The requirement for both MYC and activator (C45-C46) and modest E-box effect (C47) parallel transfection results. This demonstrates the amplifier model applies to physiologically relevant chromatin contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "MYC-EGFP binding at integrated promoters is enhanced by GAL4/VP16 expression and MYC induction, with E-boxes providing modest enhancement, paralleling the effects on transcriptional output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by ChIP-PCR data in Figure 7A showing that MYC binding correlates with transcriptional activation. The dramatic enhancement with both GAL4/VP16 and induced MYC (C54) supports the model that MYC is recruited to active promoters. This provides direct molecular evidence for the amplifier mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "At the endogenous EZH2 promoter, wild-type MYC and MBIII mutant increase expression, while MBII mutation increases binding but decreases activity, and MBIII mutation may decrease binding despite increasing activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by RT-qPCR and ChIP data in Figures 7B and 7D. The uncoupling of binding and activity for MBII (C57) and especially MBIII (C58) is striking and suggests MYC cycles on and off promoters during transcription. However, the MBIII binding decrease is stated tentatively and would benefit from more replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Kinetic modeling indicates MYC activates at least two steps in the transcription cycle, acting either as an accelerator after the CLS at multiple locations or as a facilitator of accelerators at the CLS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C60-C66 are supported by kinetic competition assays in Figure 8A-F and modeling in Appendix 1. The supra-linear increase in Amax with invariant EC50 (C60-C61) supports multi-step activation. The two possible mechanisms (C63-C64) are both consistent with the data. This represents sophisticated kinetic analysis providing mechanistic insight into MYC action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "F4 acts at two sites as either a competitive decelerator or as an inhibitor of MYC/MYCN activation of GRE, with the second option predicting MYCN also activates GRE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68 are based on quadratic fitting of EC50/Amax vs F4 data (Figure 8\u2014figure supplement 1). While the two-site interpretation is reasonable, the prediction that MYCN activates GRE (C68) is untested. The kinetic interpretation is sophisticated but would benefit from direct experimental validation of the proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "MB mutations that uncouple binding from activity support MYC acting as a facilitator of accelerators, largely independent of binding affinity, predicting MYC facilitates binding of other transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 integrate MB mutation data with kinetic modeling to propose MYC acts as a facilitator. The uncoupling of binding and activity (especially for MBIII) supports this model. However, the prediction that MYC facilitates other factor binding (C71) requires direct experimental testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The most straightforward interpretation is that MYC is a general amplifier acting preferentially on highly expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 represents the main conclusion integrating all experimental results. The evidence from minimal promoters, synthetic activators, E-box effects, chromosomal integration, and kinetic modeling collectively support this interpretation. This is the central finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "MYC transactivation and turnover are coupled, with MBIII mutations causing hyperactivity and reduced promoter binding, MBI mutations stabilizing protein, and degradation potentially driving the transcription cycle forward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85, C99-C103 integrate protein stability data with activity measurements to propose coupled activation and degradation. The inverse relationship between activity and protein levels (Figure 3J) and the effects of MBI/MBIII co-mutations support this model. Citations to Hopfield provide theoretical framework for energy-dependent proofreading.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "MYC's broad interactions with gene regulatory components enable it to accelerate multiple steps in the transcription cycle through kinetic synergy, with multiple MYC segments cooperating to enforce higher output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 provide mechanistic framework for understanding MYC amplification through kinetic synergy. The resilience to single MB mutations (C94-C95) but sensitivity to multiple mutations (C96) supports distributed function. This integrates biochemical knowledge with the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Each MYC box associates with characteristic protein sets functioning at different stages of chromatin opening and the transcription cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 represent established biochemical knowledge about MB function, providing context for the mutagenesis results. While well-supported by literature, this is background information rather than a novel finding from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Minimal promoters devoid of positive cis-elements depend on MYC to supply transcription complexes, reducing possible sites of MYC action and simplifying mechanistic interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 justify the experimental design using minimal promoters. This is a strength of the study as it isolates MYC function from confounding genomic influences. The rationale is sound and the approach is appropriate for testing the amplifier hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Under the experimental conditions, MYC acts predominantly as a facilitator of accelerators at or after the CLS, compatible with both pause-release and initiation models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 represent the kinetic interpretation of the competition assays. The internal consistency of the kinetic model (C108) supports the conclusion that MYC acts as a facilitator (C109). The compatibility with both early and late models (C110) is appropriately cautious, though more direct mechanistic studies would be valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "U2OS cells lack endogenous GR and GRE activity depends on exogenous glucocorticoids, while the MYC-EGFP fusion protein is fully functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 establish key properties of the experimental system with appropriate citations. The lack of endogenous GR (C76-C77) ensures clean interpretation of exogenous GR effects. The functionality of MYC-EGFP (C78) validates its use as a proxy for wild-type MYC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "MBIII mutation enhances MYC amplification of PR-B, with enhancement attenuated by MBI co-mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by data in Figure 1\u2014figure supplement 3B-C showing that MB mutation effects generalize across different nuclear receptors. This strengthens the conclusion that MBIII limits amplification across multiple contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Background RNA from empty vector likely represents random transcription through the plasmid backbone, a recognized problem for quantifying plasmid-encoded mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 acknowledges a technical limitation in the RT-qPCR experiments with appropriate citations. This is an honest assessment of experimental constraints, though it somewhat limits the quantitative interpretation of RNA-level data in Figure 4C.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "U2OS cells lack Gal4 and VP16 orthologs and cannot drive Gal4 UAS reporters without exogenous GAL4/VP16, which shows saturation and squelching at high doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 establish properties of the GAL4/VP16 system. The absence of human orthologs (C87-C88) ensures specificity. The saturation and squelching effects (C89-C90) are expected behaviors that don't compromise the main conclusions about MYC amplification.",
+    "result_type": "MINOR"
+  }
+]

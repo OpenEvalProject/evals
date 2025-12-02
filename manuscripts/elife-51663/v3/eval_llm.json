@@ -1,0 +1,436 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C51"
+    ],
+    "result": "The TCR repertoire of iNKT cells is highly diverse and varies according to anatomical location. Flow cytometry and RNAseq analyses demonstrate that iNKT cells from lymph nodes (LNs) show decreased V\u03b28.1/8.2 usage and increased usage of other V\u03b2 chains compared to thymus or spleen. The majority (>96%) of TRAV sequences correspond to the canonical V\u03b114-J\u03b118 rearrangement, while TRBV usage differs significantly between tissues, with tissue-specific TRBV-TRBJ pairing patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C30-C43, and C51 are well-supported by multiple complementary experimental approaches including flow cytometry (C30-C32, Figure 1A) and RNAseq data (C37-C43, Figures 1B-C). The data consistently show tissue-specific differences in TCR repertoire across multiple tissues and experimental replicates. The adoptive transfer experiments (C34-C35) provide additional functional validation that the tissue environment shapes TCR usage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "CDR3\u03b2 sequences in iNKT cells are highly polyclonal without tissue-specific conserved motifs, but show differential clonal expansion across tissues. iNKT cells from iLN and mLN exhibit higher clonal sizes compared to spleen and thymus, with CDR3\u03b2 sequences appearing only once representing ~65% in spleen/thymus versus ~50% in mLN and ~40% in iLN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are supported by comprehensive RNAseq analyses (Figures 1D-G, Figure 1\u2014figure supplement 3). The lack of tissue-specific CDR3\u03b2 motifs (C44-C45) is demonstrated through sequence analysis and physicochemical property comparisons. The differential clonal expansion (C46-C50) is quantified through clonotype frequency distributions and cumulative frequency curves, providing robust statistical evidence for tissue-specific differences in clonal size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C59",
+      "C60",
+      "C66",
+      "C67"
+    ],
+    "result": "Within peripheral tissues, iNKT cell recent thymic emigrants (RTE) exhibit a different TCR repertoire than mature resident cells, suggesting post-thymic shaping of the iNKT cell population. RTE show lower percentages of V\u03b27+ cells compared to mature resident iNKT cells across multiple peripheral tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C59-C60, C66-C67 are supported by experiments using Rag2GFP reporter mice (Figure 2A-B) and CCR7+PD-1- precursor markers (Figure 2\u2014figure supplement 1C). The consistent increase in V\u03b27+ cells in mature versus RTE populations across multiple tissues provides strong evidence for peripheral repertoire shaping. However, the mechanistic basis for this shaping (C67) remains inferential and would benefit from additional functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "iNKT cells from lymph nodes show distinct basal activation and proliferation compared to spleen and thymus. LN iNKT cells exhibit upregulation of activation markers (Nur77, ICOS, CD25, CCR8), higher Ki-67 expression, and increased EdU incorporation, with ~200-400 differentially expressed genes including those related to T cell activation and proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C68-C82 are well-supported by multiple complementary approaches: RNAseq transcriptome analysis (C68-C75, Figure 3A-B), Nur77GFP reporter mice (C78, Figure 3C), flow cytometry for activation markers (C79, Figure 3C), and proliferation assays using Ki-67 and EdU incorporation (C80-C81, Figures 3D-F). Gene ontology enrichment analysis (C74, Figure 3\u2014figure supplement 1) provides additional statistical support. The convergence of multiple independent methods strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Proliferating iNKT cells show a biased TCRV\u03b2 repertoire with enrichment of V\u03b27 and decreased V\u03b28.1/8.2 usage compared to non-proliferating cells. This bias in proliferation contributes to shaping the local iNKT cell TCR repertoire in lymph nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by EdU incorporation experiments analyzing TCRV\u03b2 usage in proliferating versus non-proliferating cells (Figure 3G, Figure 3\u2014figure supplement 1C) and RNAseq analysis comparing abundant versus low-copy CDR3\u03b2 sequences (C84, Figure 3H). The data directly link proliferation to TCR repertoire changes, though the causal relationship (C85) is inferential and could be strengthened with additional mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96"
+    ],
+    "result": "The anatomical location shapes the basal activation, proliferation, and TCR repertoire of all iNKT cell subsets (NKT1, NKT2, NKT17). Expression of activation markers (Ki-67, Nur77, ICOS, CD25) is consistently higher in LN-derived cells across all subsets, and TCRV\u03b2 usage varies by tissue within individual subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 are supported by subset-specific flow cytometry analyses (Figures 4B-C). The data demonstrate that tissue-specific effects on activation and TCR repertoire are independent of subset identity, as the same patterns are observed across NKT1, NKT2, and NKT17 populations. This strengthens the conclusion that tissue environment, rather than subset composition, drives these differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C98",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The distinct TCR repertoire of iNKT cells from various tissues results in differential lipid-antigen recognition. iNKT cells from iLN, mLN, and SI-LP contain clear populations that do not bind \u03b1GlcCer or OCH, while most cells in thymus, spleen, liver, and lung bind these antigens. TCRV\u03b2 usage strongly correlates with antigen binding capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C98, C101-C104 are supported by CD1d-tetramer binding experiments with multiple lipid antigens (Figures 5A-D, Figure 5\u2014figure supplement 1). The strong correlation (r>0.75) between V\u03b28+ frequency and antigen binding (C103, Figure 5D) provides quantitative evidence linking TCR repertoire to functional antigen recognition. The use of multiple lipid antigens and tissues strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The iNKT cell TCR repertoire is shaped by age, with the percentage of V\u03b28.1/8.2+ iNKT cells decreasing over time in LNs while other V\u03b2 usage increases. These age-related changes correlate with decreased capacity to bind \u03b1GlcCer-loaded tetramers, and are more prominent in adult mice (6w vs 11w) than younger animals (2w vs 6w).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C106-C113 are supported by longitudinal flow cytometry analyses comparing mice at 2, 6, and 11 weeks of age (Figure 5E-F). The correlation between age-related TCR repertoire changes and antigen binding capacity (C111, Figure 5F) strengthens the functional significance of these observations. However, the study is limited to 11 weeks and does not address longer-term aging effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C123",
+      "C124"
+    ],
+    "result": "The iNKT cell TCR repertoire changes following immunization with lipid antigens (OCH or \u03b1GalCer). Three days post-immunization, strong proliferation occurs with ~80% of Ki-67hi cells expressing V\u03b28.1/8.2, resulting in global changes in TCRV\u03b2 usage. These repertoire changes persist even after proliferation ceases and the population contracts (day 13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C114-C121, C123-C124 are supported by time-course experiments following OCH or \u03b1GalCer administration (Figures 6A-D, Figure 6\u2014figure supplement 1). The data demonstrate both acute proliferative responses and persistent repertoire changes. The observation that repertoire changes persist after proliferation has ceased (C119, C124) is particularly important, though the long-term stability beyond 13 days is not addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The iNKT cell TCR repertoire is shaped by environmental changes, specifically modifications in the intestinal microbiota. Antibiotic treatment results in increased frequency of iNKT cells in mLN and iLN, with significant increases in V\u03b28.1/8.2+ cells in gut-draining mLN. Germ-free mice also show altered TCRV\u03b2 usage compared to SPF mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C126-C130 are supported by experiments comparing antibiotic-treated versus control mice and germ-free versus SPF mice (Figures 6E-F, Figure 6\u2014figure supplement 3). The observation that changes differ between antibiotic-treated and germ-free mice (C129) is appropriately attributed to incomplete bacterial depletion and altered surviving populations. However, the specific bacterial species or metabolites responsible for these effects are not identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C145",
+      "C146"
+    ],
+    "result": "The TCR repertoire and phenotype of human iNKT cells are distinct for cells found in different anatomical sites (blood vs tonsils). Tonsils contain ~10-fold lower frequencies of iNKT cells than blood but show higher frequencies of CD4+ cells (72.4% vs 46.6%), CD69+ cells, and atypical iNKT cells (V\u03b124- or V\u03b211-), with V\u03b124-V\u03b211+ cells representing up to 10% in tonsils versus 0-3% in blood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134, C139-C142, C145-C146 are supported by flow cytometry analyses of human blood and tonsil samples from 10 donors (Figure 7). The consistent differences across multiple donors strengthen these conclusions. However, the study is limited to two tissue types and does not address other human peripheral tissues. The functional significance of atypical iNKT cells in tonsils requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C143",
+      "C144",
+      "C153",
+      "C156",
+      "C171",
+      "C172"
+    ],
+    "result": "Post-thymic modification of the TCR repertoire underpins the distinct antigen specificity for iNKT cells in peripheral tissues. Local signals shape the TCR repertoire and specificity of the iNKT cell population after their arrival to tissues, and exposure to immunizations, infections, or environmental changes can impact the host's iNKT cell TCR repertoire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C143-C144, C153, C156, C171-C172 represent the major conclusions synthesizing multiple experimental findings. These are well-supported by the convergence of evidence from RTE/mature cell comparisons (C5-C6), differential antigen recognition (C4, C98-C104), immunization studies (C10, C114-C124), and microbiota experiments (C12, C126-C130). The model of post-thymic shaping is consistent with all experimental observations, though direct mechanistic proof of causality would require additional perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Adoptively transferred iNKT cells recapitulate the TCRV\u03b2 usage of endogenous iNKT cells in their new tissue location. Twelve days after transfer, donor cells in LNs show decreased V\u03b28.1/8.2 usage compared to cells in spleen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by adoptive transfer experiments (Figure 1\u2014figure supplement 1C). This experiment provides important functional evidence that tissue environment, rather than selective homing, drives TCR repertoire differences. However, the study uses enriched iNKT cells from spleen and thymus, which may not fully represent the diversity of the endogenous population. Longer time points would strengthen conclusions about stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "After antigen stimulation (both in vitro and in vivo), V\u03b27+ iNKT cells show reduced secretion of cytokines (IL-4 and IFN-\u03b3) compared to V\u03b28.1/8.2+ or V\u03b2other+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is supported by intracellular cytokine staining experiments following \u03b1GalCer stimulation (Figure 6\u2014figure supplement 2). The data show consistent differences across both in vitro and in vivo conditions. However, the functional significance of these differences and whether they contribute to differential immune outcomes requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background claims establishing the importance of iNKT cells in tissue homeostasis, their recognition of diverse lipid antigens, contribution to immune responses, tissue-specific phenotypes, and known variability in TCR usage. These claims also establish precedents for post-thymic TCR repertoire shaping in conventional T cells and Tregs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C29 are background knowledge claims supported by citations to previous literature. These establish the scientific context and rationale for the current study. The citations appear appropriate and accurately represent prior work, though independent verification of each cited claim is beyond the scope of this evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C61",
+      "C72",
+      "C76",
+      "C86",
+      "C97",
+      "C105",
+      "C125",
+      "C135",
+      "C136",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C154",
+      "C155",
+      "C157",
+      "C158",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Additional background claims from prior literature establishing: mechanisms of peripheral TCR repertoire shaping in conventional T cells, properties of Rag2GFP and Nur77GFP reporter systems, iNKT cell precursor markers, CD1d-TCR signaling requirements, tissue-specific programming of immune cells, and associations between iNKT cell TCR repertoire changes and autoimmune diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C56-C57, C61, C72, C76, C86, C97, C105, C125, C135-C136, C148-C152, C154-C155, C157-C158, C164-C169 are background knowledge claims supported by appropriate citations. These establish methodological foundations and broader biological context. The citations appear accurate based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C58",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Characterization of iNKT RTE populations using Rag2GFP reporter mice shows small GFP+ populations in all analyzed tissues, with higher GFP expression in thymic RTE. CCR7+PD1-Qa2low and Rag2GFP+ populations don't fully overlap, with Rag2GFP+ cells enriched for but not exclusively CCR7+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C58, C62-C65 are supported by flow cytometry characterization of reporter mice (Figure 2A, Figure 2\u2014figure supplement 1A-B). These provide important methodological validation for using these markers to identify RTE and precursor populations. The observation that the two marker systems don't fully overlap (C63-C65) is appropriately noted and important for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "In C57BL/6 mice, NKT1 cells represent the majority of iNKT cells in thymus, spleen, mLN and iLN, with significant proportions of NKT2s and NKT17s also detected in LNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by flow cytometry analysis of iNKT cell subsets (Figure 4A). This provides important context for interpreting tissue-specific differences and demonstrates that subset composition alone cannot explain the observed TCR repertoire differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Significant differences in TCRV\u03b2 usage associated with tissue of residency were detected when iNKT cells were subdivided based on CD4 and/or NK1.1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by flow cytometry analysis (Figure 4\u2014figure supplement 1). This provides additional evidence that tissue-specific TCR repertoire differences are independent of traditional iNKT cell subset classifications based on CD4/NK1.1 expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "iNKT cells did not bind \u03b2GlcCer or \u03b2GalCer tetramers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is stated as a negative result from tetramer binding experiments. While the data are not shown, this is appropriately reported as it establishes the specificity of the observed binding to \u03b1GlcCer and OCH.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "The majority of CD1d-tet-PBS57+V\u03b124+ human iNKT cells express TCRV\u03b211 in both blood and tonsils, and the majority of CD1d-tet-PBS57+V\u03b211+ cells express V\u03b124.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 are supported by flow cytometry analysis of human samples (implied from Figure 7 context). These establish the baseline canonical TCR usage in human iNKT cells, providing context for identifying atypical populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C147"
+    ],
+    "result": "The vast majority of studies related to human iNKT cells are focused on cells isolated from blood that may not fully recapitulate the phenotype and specificity of iNKT cells residing in peripheral tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C147 is an inference about the implications of the findings. This is a reasonable conclusion given the demonstrated differences between blood and tonsil iNKT cells, though it represents an interpretation rather than a direct experimental result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Discussion claims proposing that iNKT cells from lymphoid tissues share similar transcriptional programs (~200-400 differentially expressed genes) compared to adipose tissue iNKT cells (thousands of genes), suggesting shared developmental programs with tissue-specific phenotypic shaping. Speculation that local lipid antigens and other signals (cytokines, hormones) contribute to shaping tissue-resident iNKT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C163 represent interpretations and speculation in the Discussion. C159-C160 are supported by comparison of the current RNAseq data to published work on adipose tissue iNKT cells. C161 is a reasonable inference from the activation gene expression data. C162-C163 are appropriately framed as speculation about mechanisms that require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C170"
+    ],
+    "result": "The local tissue-specific regulation of iNKT cell immunity may have important implications for the development and progression of autoimmune and inflammatory processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C170 is an inference about the broader implications of the findings. This is a reasonable conclusion given the established roles of iNKT cells in autoimmunity (supported by C166-C169) and the demonstrated tissue-specific differences in TCR repertoire and antigen recognition.",
+    "result_type": "MINOR"
+  }
+]

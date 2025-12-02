@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The myelin-based cross-species registration successfully aligns cortical areas across macaque, chimpanzee, and human brains, with good alignment of posterior areas like V1 and MT+ complex, though prefrontal cortex shows less distinctive alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 collectively demonstrate that the myelin-based registration method achieves good alignment of key cortical landmarks across species, particularly in posterior regions. Visual evidence from Figure 2 and quantitative spatial correlation maps (Appendix 2) support these observations. The acknowledged limitation in prefrontal cortex is consistent with the lower myelin contrast in that region (C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C61",
+      "C62"
+    ],
+    "result": "For the middle longitudinal fasciculus (MDLF), cortical expansion and relocation alone can predict the human tract termination pattern, with high Dice coefficients and extension ratios near 1.0, indicating no additional tract extension beyond what is explained by cortical reorganization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 and C61-C62 provide converging evidence from tract maps (Figure 4A), quantitative metrics (Figure 5A,B), and correlation maps (Figure 4B,C) that MDLF projections in humans can be well-predicted by applying the myelin-based registration to macaque and chimpanzee data. The high Dice coefficients and extension ratios near 1.0 quantitatively support the conclusion that cortical relocation is sufficient to explain MDLF differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C63",
+      "C64",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "For SLF3 and IFO, posterior tract projections can be largely modeled by cortical expansion and relocation, with tract extension playing only a minor role in explaining species differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C63-C64, and C74-C76 demonstrate through tract overlays, correlation maps, and Dice coefficients that SLF3 and IFO follow an evolutionary scenario where cortical relocation is the primary driver of differences. The quantitative metrics (Figure 5A,B) show relatively high Dice coefficients and extension ratios close to 1.0, supporting this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C70",
+      "C71"
+    ],
+    "result": "The inferior longitudinal fasciculus (ILF) shows moderate tract extension beyond what is predicted by cortical relocation, with elevated extension ratios and more extended posterior projections than predicted by myelin registration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C70-C71 provide evidence from tract overlays (Figure 4A), extension ratios, and consistency with prior literature that ILF has undergone some tract extension. The elevated extension ratio and visual mismatch between predicted and actual tract maps support this conclusion, though the effect is less pronounced than for AF.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C53",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The arcuate fasciculus (AF) shows the most dramatic tract extension into new cortical territory, particularly in temporal lobe, with the lowest Dice coefficients and highest extension ratios, indicating that cortical relocation alone cannot explain AF connectivity differences across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47, C53, and C65-C67 provide extensive converging evidence from tract maps (Figures 3-4), correlation maps showing extremely low values in temporal lobe (Figure 4B,C), and quantitative metrics (Figure 5A,B) that AF underwent evolutionary modifications beyond cortical relocation. The statistical analysis (C22, C46) and connectivity fingerprints (C50-C51) further support this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Connectivity fingerprint analysis reveals that inferior parietal lobe connectivity can be well-predicted by myelin-based registration, while temporal lobe connectivity shows strong mismatches, particularly for AF, indicating different evolutionary mechanisms in these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by connectivity fingerprint data (Figure 5C) showing high similarity between actual and predicted profiles in inferior parietal lobe but strong mismatches in temporal regions. This provides independent validation of the tract-specific findings and demonstrates the utility of the connectivity fingerprint approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Statistical analysis reveals highly significant main effects of tract type and significant species-by-tract interactions on extension ratios, with AF showing the most pronounced species differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C29 provide statistical validation through two-way ANOVA showing highly significant tract effects (p<0.001) and interaction effects (p<0.001) in both hemispheres. The statistical framework appropriately tests the hypothesis that different tracts show different patterns of evolutionary change, with proper reporting of F-statistics and p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C90",
+      "C91"
+    ],
+    "result": "The study successfully dissociates two types of cortical reorganization: cortical relocation due to expansion versus tract extension into new territories, providing a framework for analyzing structural reorganization across primate brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C90-C91 summarize the main conceptual contribution of the study. The framework is validated through multiple tracts showing different patterns (MDLF/SLF3/IFO following relocation model vs. AF showing extension), supported by both qualitative and quantitative evidence throughout the results section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "T1w/T2w myelin maps provide a valid basis for cross-species registration, correlating well with cortical myelinization and allowing identification of homologous areas across species, though they are sensitive to features beyond myelin alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 and C78-C81 establish the methodological foundation through citations to validation studies (Glasser et al., 2014; Glasser and Van Essen, 2011; Lutti et al., 2014). The authors appropriately acknowledge that T1w/T2w maps are not pure myelin measures but demonstrate their utility for cross-species comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The tract maps generated for human and macaque resemble previous studies, chimpanzee SLF3 and AF match prior reports, and several chimpanzee tracts (MDLF, ILF, IFO) are reported for the first time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 validate the tractography methods through comparison with established literature (Mars et al., 2018c; Schmahmann and Pandya, 2009; Hecht et al., 2015; Rilling et al., 2008) and document novel contributions for chimpanzee data. This provides confidence in the technical quality of the tract reconstructions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The AF findings are consistent with previous literature but the current approach enables formal testing and quantification of the hypothesis in the context of cortical reorganization across three species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 appropriately positions the work relative to prior studies (Ardesch et al., 2019; Eichert et al., 2019; Rilling et al., 2008) while highlighting the novel contribution of the quantitative framework. The claim is supported by the methodological advances demonstrated throughout the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "MSM is an established tool for human surface registration that can be extended to cross-species research, and surface-based approaches are useful for comparative neuroscience across multiple modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C82-C84 are well-supported by citations to prior work (Abdollahi et al., 2014; Garcia et al., 2018; Glasser et al., 2016; Burt et al., 2018; Blazquez Freches et al., 2020; Huntenburg et al., 2018) and demonstrate the methodological context and broader applicability of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study has limitations including poor myelin contrast in frontal cortex and spatial resolution constraints, but the method can be generalized to other modalities such as NODDI and resting-state fMRI that may provide better contrast in these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 appropriately acknowledge limitations (poor frontal registration, spatial resolution) while proposing reasonable extensions. The limitations are consistent with observations in the results (C17), and the proposed extensions are supported by relevant citations (Zhang et al., 2012; Vincent et al., 2007).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The cross-species registration was performed in two stages: first using ROI-based alignment of motor cortex, MT+ complex, and medial wall, then whole-hemisphere myelin map alignment initialized with the ROI registration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 describe the methodological approach clearly and are consistent with the registration results shown in Figure 2. The two-stage approach is appropriate for handling the large distortions involved in cross-species alignment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Tractography was performed for five tracts (MDLF, ILF, SLF3, IFO, AF) using seed, waypoint, and exclusion masks based on established protocols from previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 describe standard tractography methods with appropriate citations to established protocols (de Groot et al., 2013; Mars et al., 2018c; Eichert et al., 2019; Bryant et al., 2018). This ensures reproducibility and comparability with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Human data were acquired from 20 subjects on a 3T scanner with appropriate ethical approval and informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 provide standard methodological details about human data acquisition and ethical compliance. The sample size (n=20) is reasonable for neuroimaging studies, and ethical procedures are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Chimpanzee data were obtained from the National Chimpanzee Brain Resource with appropriate ethical approvals, including 29 subjects for myelin maps and 5 subjects for DW-MRI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 document the source, ethical approval, and sample sizes for chimpanzee data. The use of archived data from before 2015 regulations is appropriately noted. Sample sizes are adequate for the analyses performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Macaque data included ex vivo DW-MRI from 5 subjects and in vivo myelin maps from 5 separate subjects, with appropriate ethical approvals and data quality sufficient for pooling despite different scanning parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 document macaque data sources and acknowledge the limitation that DW-MRI and myelin data come from different subjects (C107). The assertion that data quality allows pooling (C106) is reasonable given the ex vivo nature and prior validation in cited studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The temporal lobe is a primate-specific adaptation that evolved through expansion of visual areas, contains regions for higher-level visual and social processing, and shows evidence of expansion and relocation in great apes and humans, with changes in white matter connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 establish the background context through appropriate citations to prior literature. These claims summarize established knowledge about temporal lobe evolution and provide the scientific rationale for the current study. All claims are supported by relevant citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Previous work has documented expansion and relocation of temporo-parietal areas and changes in connectivity of various association tracts including AF, SLF3, MDLF, and IFO, with some tracts implicated in language functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 appropriately contextualize the current findings within prior literature through relevant citations. These claims establish what was known before the current study and how the present work builds on and extends previous findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Extension of a tract into new cortical territories alters the connectivity fingerprint of innervated areas, profoundly changing their computational capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 presents an important conceptual point supported by citation to Mars et al., 2018b. This claim provides the theoretical framework for why distinguishing tract extension from cortical relocation matters functionally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "ILF extensions could be related to increased cortical territory for processing social information such as social networks and faces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 is explicitly speculative (\"could be related\") and while supported by relevant citations (Noonan et al., 2018; Sallet et al., 2011), it represents a hypothesis rather than a demonstrated finding. The claim appropriately acknowledges its speculative nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Parietal SLF3 projections are most prominent in humans and have been linked to social learning capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by citation to Hecht et al., 2013 and provides context for interpreting the SLF3 findings. However, the current study shows that SLF3 differences can be explained by cortical relocation (C74), which provides a different perspective on the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Future work will expand this approach to different modalities and more species, which is becoming increasingly possible due to availability of multi-species datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 appropriately discuss future directions and are supported by citations to emerging resources (Heuer et al., 2019; Milham et al., 2018). These are reasonable projections based on current trends in the field.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Hox gene expression dynamics during GT development show that 5' HoxA and HoxD genes are expressed at all stages examined (E12.5-E18.5), with Hoxd13 transcripts detected as early as E10.5 in the cloaca region. Hoxd13 expression increases significantly between E10.5 and E12.5, remains constant until E13.5, then decreases significantly through E18.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are well-supported by RNA-seq and RT-qPCR data with appropriate statistical analyses (p-values reported). The temporal expression profile is internally consistent across multiple measurement approaches and developmental stages, providing strong evidence for the dynamic regulation of Hoxd13 during GT development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Chromatin accessibility and histone modifications at the HoxD locus change dramatically during GT development. At E10.5, all Hoxd genes are accessible with moderate H3K27ac signals. By E13.5, the cluster separates into two distinct epigenetic domains with Hoxd1-Hoxd10 becoming inactive (H3K27me3-marked) while Hoxd11-Evx2 remains active (H3K27ac-marked, ATAC-accessible). At E17.5, H3K27me3 begins spreading over the entire cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 are supported by ATAC-seq and ChIP-seq data across three developmental stages. The bimodal chromatin organization at E13.5 is consistent with previous observations in limb buds (C14), and the progressive spread of repressive marks correlates with decreased transcription. Multiple biological replicates appear to have been used based on methods descriptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "4C-seq analysis reveals dynamic chromatin interactions between Hoxd13 and the C-DOM regulatory landscape during GT development. In transcriptionally inactive cells (mESC, forebrain), constitutive contacts with islands II and V are maintained. Upon transcriptional activation (E10.5-E13.5), additional contacts with enhancers Prox and GT2 emerge. As development progresses to E17.5, enhancer-specific contacts are lost while constitutive CTCF-associated contacts remain, returning to an inactive chromatin configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C37 are supported by extensive 4C-seq data using multiple viewpoints (Hoxd13, GT2, island V) across developmental stages. The correlation between contact frequencies and transcript levels (C32) strengthens the interpretation. The distinction between constitutive and transcription-dependent contacts is consistently observed across multiple experiments and viewpoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Island V contains a CTCF binding site that is constitutively contacted regardless of transcriptional status. CTCF is known to facilitate enhancer-promoter contacts through DNA looping, though this function is not always necessary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by ChIP-seq data (C38) and citations to established literature (C39, C40). The constitutive nature of island V contacts is demonstrated by 4C-seq data across multiple conditions. The caveats about CTCF function (C40) are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "ATAC-seq analysis of C-DOM accessibility shows that at E10.5 CR, several sites including GT2 are accessible while Prox is not. At E13.5, when C-DOM is fully active, multiple enhancers including Prox and GT2 show ATAC-seq peaks. By E17.5, these peaks are lost, correlating with decreased Hoxd transcript levels and chromatin interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by ATAC-seq data across three developmental stages. The temporal dynamics of chromatin accessibility correlate well with transcription levels and 4C-seq interaction data, providing convergent evidence. The identification of previously characterized enhancers (C41) validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Deletion analysis of C-DOM sub-regions reveals differential requirements for Hoxd13 regulation. Del(rel1-rel5) reduces Hoxd13 by 47%, Del(rel5-SB) by 76%, and Del(IV-SB) by 38%, with other Hoxd genes less affected. Unexpectedly, Del(SB-Atf2) causes slight upregulation of Hoxd13. These results indicate that multiple non-overlapping C-DOM regions are required for proper Hoxd13 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 are supported by RT-qPCR data with appropriate statistical analyses (p-values reported) and n\u22653 biological replicates. The differential effects on Hoxd13 versus other Hoxd genes are consistently observed across deletions. The unexpected upregulation in Del(SB-Atf2) (C51) is appropriately noted and statistically significant, though mechanistic interpretation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Deletion of the Prox enhancer (Del(Prox)) causes a 36% decrease in Hoxd13 expression without affecting spatial expression patterns or causing major changes in C-DOM chromatin architecture. This indicates Prox acts as a classical enhancer contributing quantitatively to transcription without organizing the broader regulatory landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 are well-supported by multiple complementary approaches: RT-qPCR (C56), WISH (C57), ATAC-seq (C59), and 4C-seq (C60). The conclusion that Prox acts independently (C61) is justified by the lack of architectural changes despite significant transcriptional effects. Statistical significance is properly reported (p=0.006).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Transgenic enhancer assays of the rel5-SB region identify multiple GT-active sequences with distinct spatial specificities. IIIE shows dorsal GT activity, IVE shows ventral activity, E1 shows weak activity, while VE and E2 show no activity. GT2 shows strong activity throughout the GT. This reveals regulatory complexity with both complementary and overlapping enhancer activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 are supported by transgenic lacZ reporter assays with multiple independent transgenic embryos per construct (numbers reported in Figure 5C). The spatial specificity differences (C64) are clearly documented. The identification of island V/VE as containing the only strong CTCF site in this region (C67) is supported by ChIP-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Individual deletions of GT2, IV, IIIE, V, or inversion of V show no significant effects on Hoxd13 transcript levels or spatial patterns, despite these sequences showing enhancer activity in transgenic assays. ATAC-seq and 4C-seq analyses confirm no major changes in C-DOM chromatin organization after these deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by RT-qPCR, WISH, ATAC-seq, and 4C-seq data with n\u22653 biological replicates. The lack of effect is surprising given transgenic activities but is consistently observed across multiple independent alleles and assays. Statistical analyses confirm non-significance. This represents a robust negative result that challenges conventional enhancer models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Although Del(GT2) shows no effect at E12.5 GT, analysis at the earlier E10.5 CR stage reveals a 27% decrease in Hoxd13 expression (p=0.0152), suggesting GT2 may function specifically prior to GT formation when it is already accessible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by ATAC-seq showing GT2 accessibility at E10.5 (C76) and RT-qPCR with n=6 biological replicates showing statistically significant decrease (C77). The inference about stage-specific function (C78) is reasonable given the data, though additional time points would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "CTCF binding analysis reveals island V contains the only strongly occupied CTCF site in the ~550 kb region between Evx2 and island II, with a major site oriented toward the cluster. Multiple CTCF sites are present in the centromeric C-DOM and at the 5' end of HoxD cluster. Del(V) eliminates CTCF binding while Inv(V) maintains binding despite orientation reversal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are supported by ChIP-seq and CUT&RUN data across wildtype and mutant alleles. The identification of island V as the sole CTCF site in this large region (C81) is clearly demonstrated. The maintenance of CTCF binding after inversion (C85) is important for interpreting subsequent functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Deletion or inversion of island V and its CTCF site has minimal effects on C-DOM chromatin accessibility and organization. Del(V) shows virtually identical 4C-seq profiles to wildtype, with only slight reduction in island IV-Hoxd13 contacts. This indicates island V and its CTCF site have marginal importance for maintaining global C-DOM chromatin structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by ATAC-seq and 4C-seq data using multiple viewpoints (Hoxd13, island IV). The conclusion of marginal importance (C91) is justified by the minimal changes observed despite complete loss of CTCF binding. This represents a well-controlled test of CTCF function with appropriate negative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Inversion of island V's CTCF site causes reallocation of chromatin interactions consistent with the loop extrusion model: contacts between island V and Hoxd13 decrease while contacts with centromeric CTCF sites (now convergently oriented) increase. However, these changes do not significantly affect Hoxd13 transcription, indicating minimal functional impact despite architectural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by 4C-seq data using multiple viewpoints (Hoxd13, island V, island IV) and quantification of interaction directionality. The observation that CTCF orientation affects interaction patterns (C95-C96) supports the loop extrusion model, while the lack of transcriptional effect (C98) is confirmed by RT-qPCR data from C71. This represents strong evidence for architectural changes without functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "HOX13 proteins bind extensively throughout C-DOM in both E10.5 CR and E13.5 GT, with binding correlating with chromatin accessibility and Hoxd13 transcript levels. At E10.5, HOX13 binds GT1, GT2, and Prox, with Prox showing HOX13 binding before becoming accessible, suggesting a potential pioneer effect. Binding increases and expands to additional sites (islands II, III, Lnpk intron) at E13.5 when C-DOM is fully active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C110 are supported by CUT&RUN data at two developmental stages compared with ATAC-seq data. The correlation between HOX13 binding, accessibility, and transcription (C110) is well-documented. The observation of HOX13 binding at Prox before accessibility (C106) is intriguing but appropriately presented as suggestive rather than definitive. The use of HOXA13 antibody to detect both HOXA13 and HOXD13 is justified by previous work (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The C-DOM regulatory landscape shows a pre-formed chromatin architecture at E10.5 CR (before GT emergence) that includes both constitutive CTCF-associated contacts and transcription-dependent enhancer contacts. The TAD appears to be activated coordinately, with all specific contacts appearing within the same developmental window, suggesting C-DOM functions as a global regulatory unit rather than a collection of independent enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C119 integrate multiple datasets to propose a model of coordinated TAD activation. While the pre-formed architecture at E10.5 is well-supported by 4C-seq data (C118), the interpretation that this predates and is necessary for GT development (C119) is explicitly noted as speculative and not demonstrated. The concept of coordinated activation (C117) is an inference from temporal correlation rather than direct demonstration of coordination mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The highest C-DOM interaction frequencies occur at E12.5-E13.5, correlating with peak Hoxd13 transcription, H3K27ac enrichment, and HOX13 binding. After E13.5, contacts decrease in parallel with transcription, returning to a constitutive CTCF-associated framework by E17.5. The global decrease in expression reflects selective transcriptional switch-off in differentiating cell types, with strong Hoxd13 expression maintained in corpus cavernosum anlagen at E17.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 are well-supported by correlation of multiple datasets (4C-seq, RNA-seq, ChIP-seq, CUT&RUN). The interpretation of cell-type-specific expression changes (C123-C125) is based on inference from previous ISH studies rather than new data, but is appropriately cited. The analogy to digit cartilage differentiation (C125) and baculum formation (C126) provides biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Changes in regulatory landscape architecture associated with transcriptional activity are a pervasive developmental feature. When transcription is switched off, the TAD returns to an inactive configuration, which may help prevent ectopic Hoxd13 production. This is functionally important because HOX13 proteins are potent dominant negatives whose ectopic expression must be prevented for proper development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 are supported by the 4C-seq data showing return to inactive configuration. The functional importance of preventing ectopic expression (C130-C132) is supported by citations to previous studies. However, the specific claim that rapid return to inactive conformation serves this function (C130) is speculative, though biologically plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Deletion of the most centromeric C-DOM region (Del(SB-Atf2)) unexpectedly causes slight but significant Hoxd13 upregulation. This could result from removal of sequences that sequester Hoxd13 from more potent enhancers, or from global reorganization due to TAD boundary deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C133 is supported by RT-qPCR data showing statistically significant upregulation. However, the mechanistic explanations (C134-C135) are explicitly speculative. The authors appropriately note they did not pursue this further, leaving the mechanism unresolved. Additional experiments would be needed to distinguish between proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The lack of effect from single enhancer deletions (except Prox) contrasts with effects of larger deletions and echoes previous studies. Prox appears to act independently as a classical enhancer, while other elements may be functionally redundant, subject to compensatory mechanisms, or function at developmental stages not examined. The experimental approach may lack resolution to detect subtle effects in cell subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C136 appropriately contextualizes results with previous literature. The distinction between Prox (C137-C138) and other enhancers is well-supported by data. However, the explanations for lack of effects (C139-C144) are all speculative possibilities rather than tested hypotheses. The authors appropriately present these as potential explanations requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Phase-separation-induced condensates of transcriptional machinery at enhancers could explain regulatory outcomes. HOX13 proteins contain long stretches of monotonic amino acids (poly-Ala, Poly-Glu, Poly-Ser) that could promote condensate formation, potentially using the TAD as a scaffold to form a 'super-condensate'. Natural variations in these repeats affect HOX13 function, though effects on regulatory structure have not been evaluated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C147 about phase separation and HOX13 protein composition are supported by citations to established literature. However, the proposal that HOX13 proteins form super-condensates using the TAD as scaffold (C148) is explicitly speculative. While the observation about natural repeat variations affecting function (C149) is cited, the connection to condensate formation remains untested (C150).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "HOX13 binding involves most but not all ATAC-accessible sequences in C-DOM. At the Prox enhancer, robust HOX13 binding is detected before an ATAC-seq peak appears, supporting the idea that HOX13 may display pioneer activity in some contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C151 is supported by comparison of CUT&RUN and ATAC-seq datasets. The observation of HOX13 binding before accessibility at Prox (C152) is clearly demonstrated in the data and appropriately cited to literature on pioneer factors. However, the authors appropriately present this as suggestive ('may display') rather than definitive proof of pioneer activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The CTCF site in island V was initially hypothesized to facilitate enhancer-Hoxd13 proximity through looping. However, inversion of this site has marginal effects on global chromatin architecture and no effect on transcription, suggesting the CTCF site does not play a major role in securing enhancer-promoter interactions. The slight reallocation of interactions observed is consistent with loop extrusion but functionally inconsequential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 are well-supported by 4C-seq and RT-qPCR data from Inv(V) and Del(V) alleles. The initial hypothesis (C154) and its refutation by experimental data (C155-C157) represent a clear test of CTCF function. The caveat about potentially missing temporal or cellular resolution (C158) is appropriately speculative but does not undermine the main conclusion.",
+    "result_type": "MAJOR"
+  }
+]

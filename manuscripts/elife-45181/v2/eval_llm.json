@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C37",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Single-cell RNA sequencing identified major neural crest-derived cell types including melanophores, xanthophores, iridophores, and multipotent pigment cell progenitors. Progenitor cells expressed pigment cell transcription factors and neural crest markers but not pigment synthesis genes, and were marked by genes associated with proliferation and migration. Embryonic and adult cell populations showed largely overlapping transcriptomic states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are well-supported by scRNA-seq data, UMAP visualization (Figure 2), and gene expression analysis (Figure 2\u2014figure supplement 3). The identification of cell types is based on established marker genes and unsupervised clustering. Claims C37, C51-C53 provide additional context about progenitor populations and developmental relationships, supported by both current data and citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Euthyroid and hypothyroid fish showed topologically equivalent developmental trajectories for pigment cells, with no depletion of progenitor populations in hypothyroid fish. However, hypothyroid fish exhibited a strong bias toward earlier pseudotime states across all pigment cell lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by pseudotemporal trajectory analysis (Figure 4D-E) and cell type proportion analysis (Figure 4C). The data demonstrate that TH does not alter lineage topology or progenitor abundance but does affect progression through differentiation, with statistical support (Wilcoxon tests, p<0.0001 for all lineages).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C76",
+      "C77"
+    ],
+    "result": "Melanophores from euthyroid fish showed higher expression of terminal differentiation genes (tfap2a, tyrp1b) and were more heavily melanized and stellate compared to hypothyroid melanophores, which were variably melanized and dendritic. Quantitative analysis confirmed euthyroid melanophores contained ~1.7x more melanin than hypothyroid melanophores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C76-C77 are well-supported by differential gene expression analysis (Figure 5A), imaging (Figure 5B), and quantitative melanin measurements (Figure 5C) with appropriate statistical controls (F1,2710=271.2, p<0.0001). The morphological observations are consistent with prior developmental studies (citations provided).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C79",
+      "C80",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Multiple lines of evidence indicate TH promotes melanophore terminal differentiation: euthyroid melanophores showed higher binucleation rates (~70% vs ~25%), greater lysosomal content, larger cell size, and some exhibited senescence-associated \u03b2-galactosidase activity. Binucleation increased with developmental stage in euthyroid fish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22, C79-C80, C84-C86 are supported by multiple complementary assays including binucleation quantification (Figure 5D-E, \u03c7\u00b2=230.3, p<0.0001), Lysotracker fluorescence (Figure 5\u2014figure supplement 1C, p<0.01), FSC-A measurements (p<0.001), and SA-\u03b2-gal staining (Figure 5\u2014figure supplement 1A). However, C18 notes the inability to reliably score SA-\u03b2-gal staining across conditions, which is a limitation. C20 appropriately acknowledges caveats about FSC-A interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C30",
+      "C91",
+      "C92"
+    ],
+    "result": "Xanthophores showed fewer TH-dependent genes than melanophores (3.6% vs 9%), with prominent differential expression of carotenoid pathway genes. HPLC confirmed carotenoids were present in euthyroid but not hypothyroid xanthophores. The gene scarb1 was expressed more highly in euthyroid xanthophores (q=1.1E-10), and exogenous TH rescued both scarb1 expression and carotenoid deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26, C29-C30, C91-C92 are well-supported by differential gene expression analysis (Figure 6A-C), HPLC data (Figure 6D), and TH rescue experiments (Figure 6F, Figure 6\u2014figure supplement 3C). The statistical significance is strong (q=1.1E-10 for scarb1; p=1.5E-15 for carotenoid pathway signature). The developmental context (C23) is supported by prior work (McMenamin et al., 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The gene scarb1 encodes a high-density lipoprotein receptor required for carotenoid deposition but not xanthophore persistence in zebrafish. Zebrafish scarb1 mutants had a 105 bp in-frame deletion and lacked mature interstripe xanthophores while maintaining normal patterning and unpigmented xanthophores. TH treatment rescued scarb1 expression within ~1 day and carotenoid autofluorescence within ~2 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C97-C99 are supported by mutant analysis (Figure 6\u2014figure supplement 3A-B), protein alignment data, and TH rescue experiments (Figure 6\u2014figure supplement 3C). The functional requirement for scarb1 in carotenoid accumulation is established in other species (citations provided) and confirmed here in zebrafish through loss-of-function analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Larval (5 dpf) and adult xanthophores use different pigmentation mechanisms: scarb1 mutants had normal larval xanthophores but lacked adult pigmentation, while mutants lacking larval pigmentation have normal adult xanthophores. Carotenoids were undetectable in 5 dpf larvae, and carotenoid genes were expressed at lower levels in embryonic/early larval xanthophores. In contrast, pteridine pathway genes and pteridine autofluorescence were similar across stages and TH conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36, C100-C104 are supported by developmental stage comparisons using imaging (Figure 6\u2014figure supplement 4A, D), HPLC analysis (Figure 6\u2014figure supplement 4B), and gene expression signature scores (Figure 6\u2014figure supplement 4C). The data demonstrate a clear developmental transition in pigmentation mechanisms, with pteridines dominant in larvae and carotenoids in adults. The csf1ra mutant control (C102) appropriately validates the HPLC approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "All three zebrafish thyroid hormone receptors (thraa, thrab, thrb) are expressed in melanophores and xanthophores, but single mutants had normal pigmentation. However, TR mutations rescued pigment cell defects in hypothyroid fish: thrab mutation partially rescued xanthophore carotenoid deposition and more fully rescued melanophore numbers, while triple TR mutation fully rescued xanthophore maturation to wild-type levels in the absence of TH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42, C105-C111 are supported by RT-PCR (Figure 7\u2014figure supplement 1A), imaging of TR mutants (Figure 7A, B), cell counts (Figure 7C, D), and HPLC analysis (Figure 7\u2014figure supplement 1F). The rescue experiments demonstrate that unliganded TRs repress pigment cell maturation. Statistical analysis shows significant differences (p<0.05, Tukey HSD). However, C42 notes the absence of precocious pigmentation in euthyroid thrab mutants, suggesting additional regulatory factors are required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48"
+    ],
+    "result": "The authors propose a model where TH promotes melanophore terminal differentiation and proliferative cessation, preventing population expansion. In hypothyroid fish, retention of an immature state allows continued melanophore proliferation. For xanthophores, TH mediates a transition from pteridine-dependent to carotenoid-dependent pigmentation. Unliganded TRs repress maturation programs when TH is low, similar to mechanisms in amphibian metamorphosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46, C48 represent interpretive models integrating multiple experimental findings. The models are well-supported by the collective evidence from gene expression, cellular phenotypes, proliferation data, pigment analysis, and TR mutant rescues. However, these are inferences rather than direct demonstrations. C48 is appropriately speculative about TR mechanisms, drawing parallels to amphibian metamorphosis (citations provided).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Melanophore and xanthophore populations contain subclusters with distinct transcriptional states. Subclusters with lower UMI counts (mel 2, xan 1) showed reduced transcriptional/translational activity, expressed fewer unique genes, and exhibited gene expression patterns consistent with more advanced differentiation states (mel 2) or undifferentiated cryptic states (xan 1). These subclusters were differentially distributed along pseudotime trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 are supported by UMI count analysis, gene expression signature scores (Figure 3\u2014figure supplement 1A-B), differential expression analysis (Figure 3\u2014figure supplement 1D), and pseudotime distribution (Figure 3\u2014figure supplement 1E). The interpretation that reduced RNA content indicates G0 states is supported by citations (Coller et al., 2006; Darzynkiewicz et al., 1980). The analysis appropriately distinguishes between cell damage (mitochondrial fraction) and biological state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Transcripts per cell declined in melanophores but not iridophores during maturation. Cell-cycle gene expression was significantly higher in iridophores than melanophores at terminal pseudotime (p<0.0002), consistent with iridophores continuing to proliferate after differentiation while melanophores cease division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by analysis of UMI counts and cell-cycle signature scores over pseudotime (Figure 3\u2014figure supplement 5B) with appropriate statistical testing (Wilcoxon, p<0.0002). The findings are consistent with prior work on proliferation differences between these cell types (citations provided: Budi et al., 2011; McMenamin et al., 2014; Spiewak et al., 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Stromal cells of the hypodermis and iridophores regulate melanophore and xanthophore numbers during adult pigment pattern formation. The current study observed striking differences in iridophore maturation depending on TH status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by citations to prior work (Lang et al., 2009; Frohnh\u00f6fer et al., 2013; Patterson and Parichy, 2013). Claim C50 is supported by observations in the scRNA-seq data and pseudotime analysis, though specific quantitative data for iridophore maturation differences are not detailed in the main text. This represents an observation that could warrant further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C75",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The findings have potential clinical relevance as human melanoma is associated with hypothyroidism and TH pathway mutations. Prior work showed TH can promote melanoblast differentiation ex vivo. Cellular senescence markers (SA-\u03b2-gal, lysosomes) and multinucleation are associated with aging cells and have been observed in human nevus melanocytes and teleost melanoma models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C75, C87-C90 are supported by citations to clinical and experimental literature. These claims provide context for the biological significance of the findings but represent prior knowledge rather than new results from this study. The citations appear appropriate for the statements made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Thyroid hormone regulates diverse developmental events and has opposite effects on zebrafish pigment cells: limiting melanophore expansion while increasing xanthophore numbers. Fish lacking TH have approximately twice the normal melanophore number and lack visible xanthophores. TH promotes maturation of both cell types through distinct mechanisms\u2014driving terminal differentiation in melanophores and carotenoid accumulation in xanthophores. TH receptors primarily repress maturation programs when TH is limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 represent the core findings and are well-supported by the comprehensive data presented throughout the manuscript. C1 is general knowledge. C2 and C7 are supported by imaging (Figure 1A) and prior work (McMenamin et al., 2014). C3-C6 are supported by the extensive experimental evidence detailed in other result groups. These claims effectively summarize the major conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Xanthophores did not exhibit SA-\u03b2-gal staining ex vivo. Lysotracker dye specifically labeled lysosomes but not melanosomes in melanophores, despite some similarities between these organelles. Carotenoids are localized to lipid droplets, which were observed in euthyroid but not hypothyroid xanthophores by Oil-red-O staining and transmission electron microscopy (electron-dense carotenoid vesicles).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83, C93-C96 are supported by appropriate experimental methods: SA-\u03b2-gal staining (Figure 5\u2014figure supplement 1A), Lysotracker imaging (Figure 5\u2014figure supplement 1B), Oil-red-O staining (Figure 6\u2014figure supplement 2A), and TEM (Figure 6\u2014figure supplement 2B). The distinction between melanosomes and lysosomes (C82-C83) is appropriately supported by citation (Raposo et al., 2007). These are technical validation claims supporting the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The introduction establishes that TH coordinates post-embryonic development through incompletely characterized mechanisms, driving diverse outcomes in amphibian metamorphosis and zebrafish development. Neural crest cells are a key vertebrate innovation that disperse throughout the body to form diverse derivatives, and differences in their patterning underlie vertebrate diversification. Mechanisms coordinating developmental signals across cell types and organ systems remain poorly defined but are fundamentally important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 represent established background knowledge supported by appropriate citations. These claims provide context for the study but do not represent new findings. The statements accurately reflect current understanding of TH function, neural crest biology, and developmental coordination as supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Supporting context from prior work and interpretations: Loss of TRs allows survival of congenitally hypothyroid mice. Melanoblasts from peripheral-nerve progenitors are proliferative during pattern formation but cease dividing upon differentiation. In the presence of TH, melanophores show multiple maturation markers. Xanthophore color can depend on pteridines, carotenoids, or both. TH regulates carotenoid genes and deposition but not pteridine genes. Cryptic xanthophores appear poised to re-differentiate, explaining fewer TH-dependent genes compared to melanophores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C55, C57-C59 are supported by citations to prior work. Claims C56, C60-C61 are summary statements integrating data from this study. Claims C62-C63 represent interpretations based on the observation of fewer TH-dependent genes in xanthophores (3.6% vs 9% in melanophores) and their developmental history. These interpretations are reasonable given the data but represent inferences rather than direct demonstrations.",
+    "result_type": "MINOR"
+  }
+]

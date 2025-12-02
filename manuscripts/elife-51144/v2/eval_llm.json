@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C48",
+      "C99",
+      "C101",
+      "C131"
+    ],
+    "result": "Multiple ganglion cell types in macaque retina show selectivity for approaching motion. Parasol, smooth monostratified, and broad thorny cells exhibited significantly larger spike responses to approaching versus receding texture stimuli, while this selectivity was weaker or absent in other cell types including large bistratified cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C22, C99 provide direct physiological evidence from spike recordings showing statistically significant approach selectivity (p<7.8\u00d710\u207b\u00b3) in multiple cell types. The cell-type specificity (C20, C21, C101, C131) is well-documented across Figures 1 and 6, demonstrating this is not a universal property but restricted to specific ganglion cell classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Approach selectivity in parasol and smooth monostratified cells persists across a wide range of spatial scales and increases with increasing texture scale (decreasing spatial frequency).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by systematic testing across four distinct spatial frequency ranges (C24: p<2.4\u00d710\u207b\u2074 for parasol, p<7.8\u00d710\u207b\u00b3 for smooth monostratified cells). Figure 1D demonstrates the scale-dependence quantitatively, confirming the mechanisms operate broadly across spatial scales relevant to natural vision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C49"
+    ],
+    "result": "Computational modeling demonstrates that nonlinear bipolar cell output contributes to approach selectivity. Linear subunit models failed to predict approach selectivity, while nonlinear subunit models incorporating bipolar cell output rectification successfully predicted the observed bias for approaching motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modeling approach (C34-C43) is well-grounded in direct physiological measurements of bipolar cell properties. The critical comparison between linear (C44: p>0.4, no selectivity) and nonlinear models (C45: significant selectivity at all expansion rates) shown in Figure 3 provides strong computational evidence that bipolar cell nonlinearities are sufficient to generate approach selectivity for texture stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "Simple decoding models demonstrate that downstream circuits can accurately detect approaching motion from parasol cell outputs. Both linear and quadratic decoders achieved high discriminability (Jensen-Shannon distance \u22650.28) even with single ganglion cell pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by systematic modeling shown in Figure 4D-E. The high performance with minimal cell numbers (C57) and the Jensen-Shannon distance metrics (C54) provide quantitative evidence that retinal outputs contain sufficient information for approach detection. However, this is a computational prediction rather than direct demonstration in downstream circuits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C75"
+    ],
+    "result": "Electrical coupling between bipolar cells contributes to approach selectivity for annulus stimuli. The coupled subunit model predicted approach selectivity to annuli while nonlinear subunit models without coupling did not, and this prediction was confirmed by physiological recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The divergent predictions of nonlinear (C61: no selectivity) versus coupled models (C62: selectivity present) for annuli provide a critical test. Claims C65-C68 demonstrate that coupling effects cannot be replicated by simply enlarging receptive fields. The agreement between coupled model predictions and physiological data (C70-C75, Figure 6) strongly supports the role of electrical coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Parasol cells show pronounced approach selectivity to annulus stimuli. On parasol cells responded much more strongly to approaching bright annuli (85.4\u00b110.9 vs 7.1\u00b14.3 spikes/s, p=8.3\u00d710\u207b\u2076), and Off parasol cells to approaching dark annuli (148.7\u00b112.8 vs 55.2\u00b19.4 spikes/s, p=2.1\u00d710\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 provide strong quantitative evidence with large effect sizes and highly significant p-values from adequate sample sizes (n=26 On cells, n=24 Off cells). The cell-type specificity (C73-C74) is well-documented, showing approach selectivity persisted in parasol and On smooth monostratified cells but not in Off smooth monostratified or broad thorny cells for annuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C100"
+    ],
+    "result": "Approach selectivity arises from coordinated excitatory and inhibitory synaptic inputs. Excitatory currents were larger for approaching motion matching the cell's preferred contrast polarity, while inhibitory currents showed the opposite pattern, amplifying the approach bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Voltage-clamp recordings (C76-C81) provide direct mechanistic evidence. The complementary patterns of excitation (C77: approaching > receding for preferred contrast, p=4.4\u00d710\u207b\u2074 for On, p=1.3\u00d710\u207b\u2074 for Off) and inhibition (C81: receding > approaching) shown in Figure 7 strongly support the claim that both circuit elements contribute to and amplify approach selectivity (C82-C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C125"
+    ],
+    "result": "Crossover inhibition enhances approach selectivity through both presynaptic and postsynaptic mechanisms. Pharmacological blockade of crossover inhibition increased excitatory currents to receding motion and reduced approach selectivity, indicating crossover inhibition is preferentially recruited by receding motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pharmacological manipulation (C88-C89) is well-validated. The differential effects on approaching versus receding motion (C91-C92) and the significant reduction in approach selectivity (C93: p=1.6\u00d710\u207b\u00b2, n=6 cells) provide strong evidence. The persistence of approach bias after blockade (C97-C98) indicates multiple mechanisms contribute, with crossover inhibition amplifying but not solely responsible for the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C7",
+      "C17",
+      "C18",
+      "C47",
+      "C140"
+    ],
+    "result": "Approach motion detection begins in the retina rather than originating exclusively in cortex or thalamus as previously thought. This represents an initial computational step in a hierarchical processing stream for detecting approaching objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The demonstration of approach selectivity in retinal ganglion cells (multiple results above) directly challenges the prevailing view (C17, C47) that this computation originates in thalamus or cortex. However, C140 appropriately frames this as an initial step rather than complete approach detection, acknowledging limitations like inability to distinguish self-motion from object motion (C139).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Canonical linear-nonlinear receptive field models fail to predict approach selectivity. These models accurately predict responses to simple stimuli but fail for stimuli with spatiotemporal correlations due to unmodeled circuit nonlinearities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 establish that canonical models work for simple stimuli (supported by Figure 5\u2014figure supplement 1 and citations). The failure for approach motion (C108, Figures 5-6) and spatiotemporal correlations (C106) is well-documented. The explanation (C107) that retinal circuits contain nonlinearities not captured by these models is supported by extensive literature and the modeling results in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Multiple sources of nonlinearity in retinal circuits contribute to feature extraction. Principal nonlinearities arise from bipolar cell glutamate release, electrical coupling, inhibitory amacrine cells, and dendritic interactions within ganglion cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a well-established framework supported by extensive citations (C109-C112) and consistent with the current study's findings. Claims C113-C116 about functional roles are supported by cited literature. This provides important context for interpreting the specific mechanisms identified in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Crossover inhibition is a conserved circuit motif across vertebrate species. This mechanism has been identified in fish, salamanders, guinea pigs, rodents, rabbits, and primates, contributing to diverse visual functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 are well-supported by citations to studies across multiple species. This establishes crossover inhibition as a fundamental and evolutionarily conserved retinal circuit mechanism, providing important context for its role in approach selectivity demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Electrical coupling between bipolar cells enhances responses to spatiotemporally correlated stimuli and contributes to motion selectivity. The effects vary with motion type, with potentiation during approaching motion but not receding motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 are supported by citations to previous work. The motion-type specificity (C128) is demonstrated in Figure 5 and Appendix 1 of this study. The evolutionary speculation (C129) is appropriately tentative and supported by relevant citations, though it remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Approach selectivity is more widespread in primate retina compared to rodents, possibly reflecting distinct ethological demands. In rodents, only Off Alpha cells show approach selectivity, while in primates it appears in multiple cell types with both On and Off responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The species difference is documented (C130-C131 supported by data and citations), but the ethological explanations (C132-C136) are speculative. While the hypotheses about predator detection in mice (C133) and arboreal habitats in primates (C135-C136) are plausible and supported by citations, they lack direct experimental support and represent post-hoc evolutionary interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The retinal approach selectivity described here differs from looming-sensitive neurons in higher brain regions and represents an initial processing step. The circuit creates ambiguities between direction and contrast that likely require additional retinal pathways to resolve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The distinction from looming neurons (C137-C139) is clearly articulated and supported by cited differences in response properties (C138). The characterization as an initial step (C140) is appropriate given the demonstrated limitations. The identification of direction-contrast ambiguities (C141) follows logically from the data, though the proposed resolution mechanisms (C142-C143) are speculative and appropriately identified as requiring future work (C144).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Experiments were performed on five ganglion cell types in ex vivo macaque retina using established identification methods and appropriate experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methods are clearly described with appropriate citations (C15, C145). The tissue source (C146), ethical approval (C147), and experimental conditions (C148-C149) are properly documented. The cell identification approach combining morphology, physiology, and anatomy (C15) is standard and well-validated for these cell types.",
+    "result_type": "MINOR"
+  }
+]

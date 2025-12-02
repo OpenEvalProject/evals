@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C39",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C118",
+      "C119"
+    ],
+    "result": "Treatment of E. coli with alkylating agents MMS and MNNG leads to significant increases in specific RNA modifications, particularly m1A and m3C, while other modifications like m6A and m1G remain unchanged or show minimal increases. LC-MS analysis demonstrates 10- to 200-fold increases in m1A and m3C levels, and MNNG specifically causes >10-fold increase in m6G levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C39, C59, C60 are directly supported by LC-MS data in Figure 1 showing quantitative increases in specific modifications. The chemical specificity (C50, C51, C61, C62, C63) is supported by citations to established chemistry literature. The measured m6A/A ratio of 0.6% (C53) validates the LC-MS methodology against the expected 0.3% (C52). The differential reactivity patterns between MMS and MNNG (C118, C119) are consistent with their known SN2 vs SN1 mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C120"
+    ],
+    "result": "m1A modification in mRNA reduces the rate of peptide bond formation by approximately 250-fold (from 58 s\u207b\u00b9 to 0.15 s\u207b\u00b9) and decreases the reaction endpoint by ~10-fold in a reconstituted in vitro translation system, demonstrating that m1A is highly detrimental to tRNA selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40, C64, C65, C66, C120 are directly supported by quantitative kinetic data shown in Figure 2C from well-controlled in vitro peptidyl transfer assays. The experimental design appropriately compares modified and unmodified mRNA under identical conditions. The magnitude of the effect (three orders of magnitude) and the reduction in endpoint are clearly documented with replicate measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "m1A modification causes such severe distortion of the codon-anticodon helix that paromomycin, which normally rescues near-cognate tRNA incorporation, has no effect on peptide bond formation rates or endpoints. This indicates m1A prevents base pairing altogether and causes all aa-tRNAs to be recognized as non-cognate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C75, C76, C77, C122 are supported by experimental data in Figure 3 showing no paromomycin effect on m1A-containing reactions. The inference that m1A causes severe distortion (C78, C79, C123) is well-justified by comparison to the known mechanism of paromomycin action (C69-C72) and the aa-tRNA reactivity survey data in Figure 4 (C80, C81, C82, C124). The logic connecting lack of paromomycin rescue to non-cognate recognition is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89",
+      "C90",
+      "C125"
+    ],
+    "result": "Alkylating agents robustly activate the tmRNA system in E. coli, as evidenced by 2- to 3-fold increases in His6-tagging levels, accompanied by activation of adaptive (Ada) and SOS (RecA) responses. This activation occurs at concentrations that do not significantly affect cellular viability and is enhanced in protease-deficient strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C44, C83, C125 are directly supported by Western blot data in Figure 5A-B showing increased His-tagging. The accompanying stress responses (C84, C85) are documented in the same figure. The viability data (C86) from Figure 5\u2014figure supplement 1A-B validates that the observed effects are not due to cell death. The protease-deficient strain data (C89, C90) from Figure 5\u2014figure supplement 2 confirms that observed His-tagging underestimates true tmRNA activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C126",
+      "C127"
+    ],
+    "result": "tmRNA activation by alkylating agents is predominantly due to direct RNA damage rather than truncated transcripts from DNA damage, as demonstrated by rifampicin pretreatment experiments showing only 10-20% reduction in His-tagging for MMS/MNNG but ~2-fold reduction for ciprofloxacin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C94 are supported by experimental data in Figure 5C showing differential effects of rifampicin pretreatment on different damaging agents. The inference that tmRNA activation is primarily due to RNA damage (C93, C96, C127) is well-justified by the experimental design: rifampicin blocks new transcription, so persistent tmRNA activation must result from damage to existing mRNA. The ciprofloxacin control (C94) appropriately demonstrates that DNA damage-induced truncated transcripts do activate tmRNA but are blocked by rifampicin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "In cell-free translation systems, MMS-treated mRNA shows reduced full-length product and significantly activates tmRNA tagging, demonstrating that damaged mRNA directly causes ribosome stalling and tmRNA recruitment in the absence of transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C99, C100 are directly supported by experimental data in Figure 6C showing both reduced full-length product (35S-labeling and FLAG Western blot) and increased His-tagging (His Western blot) with MMS-treated mRNA. The inference about stalling (C98) is reasonable given the reduced full-length product. This experiment provides strong support for the model by eliminating transcription-related confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "m1A-modified mRNA accumulates to higher levels in \u0394ssrA cells compared to wild-type cells following MMS treatment, as detected by m6A immunoblotting after base treatment to convert m1A to m6A, suggesting tmRNA facilitates degradation of damaged mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C105 are supported by immunoblotting data in Figure 6\u2014figure supplement 1B showing increased signal in the mRNA size range after base treatment in \u0394ssrA cells. The inference that tmRNA facilitates mRNA degradation (C106) is reasonable given the established role of tmRNA in recruiting RNase R (C102). However, the indirect detection method (m1A\u2192m6A conversion) and inability to purify bacterial mRNA introduce some uncertainty about the specificity of the signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C135"
+    ],
+    "result": "E. coli strains lacking functional tmRNA (\u0394ssrA) exhibit delayed recovery (~1.5 hr lag) after treatment with alkylating agents compared to wild-type cells, without differences in cell death, indicating that trans-translation is important for rapid recovery from alkylation stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C108, C135 are directly supported by growth curve data in Figure 7 showing delayed recovery in \u0394ssrA strains. The viability data (C109) from Figure 5\u2014figure supplement 1C-D appropriately controls for differential cell death. The inference that the lag reflects inability to rescue stalled ribosomes (C110, C111) is well-justified by the totality of evidence showing tmRNA activation and ribosome stalling on damaged mRNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C6",
+      "C43",
+      "C46",
+      "C48",
+      "C67"
+    ],
+    "result": "The authors propose that translation is exceptionally sensitive to chemical changes in mRNA, that alkylation stress causes widespread ribosome stalling necessitating rescue pathways, and that bacteria have evolved to monitor mRNA chemical integrity through trans-translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While C1 is stated as a hypothesis, the collective experimental evidence from in vitro translation (showing 250-fold reduction in peptide bond formation), in vivo tmRNA activation, and delayed recovery in \u0394ssrA strains provides strong support for the overall model (C4, C43, C46). The broader conclusions about bacterial monitoring of mRNA integrity (C6, C48) are well-justified inferences from the data, though they represent interpretive claims rather than direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The manuscript establishes background knowledge about aminoglycoside effects on tRNA selection, including that paromomycin allows near-cognate but not non-cognate tRNA incorporation, and that 8-oxoG is recognized as a simple mismatch based on paromomycin rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are well-established facts about ribosome decoding and aminoglycoside mechanisms, supported by appropriate citations to the literature. Claims C73-C74 reference the authors' previous work on 8-oxoG, which provides important context for interpreting the m1A results. This background is accurately presented and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The introduction establishes relevant background about RNA susceptibility to damage, the importance of Watson-Crick base pairing in translation, previous work on m1A and m6G modifications, and the hypothesis that m1A exists primarily as a damage adduct rather than a regulatory modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C24 represent background knowledge and literature review appropriately supported by citations. The characterization of m1A as primarily a damage adduct (C15, C16, C21, C22) is well-supported by cited literature and the lack of identified methyltransferases. The chemical properties of m1A (C18, C19, C20) are established facts. This background appropriately frames the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The manuscript provides comprehensive background on eukaryotic and bacterial ribosome rescue mechanisms, including the eukaryotic RQC pathway and the bacterial tmRNA system, noting that whether tmRNA responds to chemical RNA damage was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C36 accurately describe established mechanisms of ribosome rescue in eukaryotes and bacteria, appropriately supported by citations. The identification of the knowledge gap (C37, C38) appropriately motivates the current study. This background is accurately presented and provides essential context for understanding the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C87",
+      "C88",
+      "C91",
+      "C101",
+      "C102",
+      "C103",
+      "C107",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The discussion contextualizes findings within existing knowledge about mRNA modifications, tmRNA function, protease degradation of tagged proteins, alternative rescue factors, and technical limitations of studying bacterial mRNA, while noting that the response to alkylation is likely general and that alternative rescue factors probably enable eventual recovery in \u0394ssrA cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent appropriate contextualization of the findings (C112-C117), discussion of technical considerations (C128-C133), and reasonable inferences about mechanisms (C87, C88, C91, C101-C103, C107, C134, C136-C139). The discussion appropriately addresses limitations (inability to definitively prove mRNA vs rRNA/tRNA damage) while providing logical arguments for why mRNA is the primary target. The inference about alternative rescue factors (C139) is well-justified by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "An aa-tRNA reactivity survey demonstrates that unmodified GAA codon shows dipeptide formation only with cognate Glu-tRNAGlu, while m1A-containing codon shows no significant dipeptide formation with any aa-tRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C81 are directly supported by experimental data shown in Figure 4. The survey appropriately tests all 20 aa-tRNAs and provides clear evidence that m1A prevents productive interactions with any tRNA. This result strongly supports the conclusion that m1A completely disrupts base pairing.",
+    "result_type": "MAJOR"
+  }
+]

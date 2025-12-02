@@ -1,0 +1,188 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C23",
+      "C47"
+    ],
+    "result": "The minimal MinE peptide (residues 13-31) alone does not facilitate pattern formation, but pattern formation can be rescued by modularly adding either dimerization domains or membrane-targeting sequences (MTS, residues 2-12) to this minimal peptide. This demonstrates that dimerization and membrane binding independently facilitate pattern formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C19, and C23 provide converging experimental evidence from Figure 2 showing that the minimal peptide alone fails to form patterns, but adding either dimerization domains (Fos, Jun, GCN-4) or MTS rescues pattern formation. The experimental design (C47) is clearly described and the results are reproducible across different constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C39",
+      "C40"
+    ],
+    "result": "Patterns formed by minimal MinE peptides with added functional modules differ qualitatively from wild-type patterns: dimerized peptides produce larger wavelengths and less coherent patterns, MTS-containing peptides produce traveling waves with wavelengths orders of magnitude larger than native systems, and combined MTS+dimerization produces quasi-stationary patterns with outcome dependent on initial conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 and C39-C40 describe consistent experimental observations from Figure 2 comparing engineered constructs to wild-type. The characterization of pattern differences (wavelength, coherence, stability) is qualitative but well-documented through microscopy images and videos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C34",
+      "C35",
+      "C43",
+      "C44"
+    ],
+    "result": "Theoretical analysis using an extended reaction-diffusion model reveals two independent cycling pathways for pattern formation: recruitment-driven cytosolic cycling (enhanced by dimerization increasing MinE recruitment to MinD) and membrane recombination (enabled by persistent MinE membrane binding). The phase diagram shows both increased MinE recruitment and slower MinE detachment can rescue pattern formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C43-C44 are supported by linear stability analysis shown in Figure 3a and consistent with experimental observations. The theoretical framework (C34-C35) builds on established prior work and provides mechanistic explanations for the experimental results. The model predictions align with experimental pattern formation rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C41",
+      "C42",
+      "C50"
+    ],
+    "result": "In vivo, Min-pattern formation is driven by cytosolic cycling of MinE rather than membrane recombination, because the membrane-recombination mechanism favors short-axis (side-to-side) oscillations while cytosolic cycling enables long-axis (pole-to-pole) oscillations required for correct cell division in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C41 are supported by numerical simulations (Figure 3b) and linear stability analysis (Figure 3\u2014figure supplement 4). The biological conclusion (C29) logically follows from the requirement for pole-to-pole oscillations (C42) and the differential geometry-sensing capabilities of the two mechanisms. Claim C50 provides additional theoretical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Multiple pattern-forming mechanisms with different characteristics (e.g., geometry sensing) can coexist in one reaction network, demonstrating that classification based solely on reaction network topology misses crucial aspects of pattern formation important for biological function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 represent well-supported general conclusions drawn from the combined experimental and theoretical results. The coexistence of two mechanistically distinct pathways (cytosolic cycling vs. membrane recombination) with different functional properties is demonstrated throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C45"
+    ],
+    "result": "The minimal MinE-MinD interaction motif (19 amino acids) can be added as a peptide tag to host proteins, and functional modules need not be provided by native protein sequences but can be substituted with foreign sequences (e.g., synthetic dimerization domains).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C45 are supported by experimental demonstration with superfolder-GFP (Figure 2\u2014figure supplement 2) and successful use of heterologous dimerization domains (Fos, Jun, GCN-4). This demonstrates modularity and transferability of the functional motifs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C52"
+    ],
+    "result": "There is a critical MinE-to-MinD concentration ratio (approximately 1/20 for MinE(1-31) mutant) above which no patterns occur, though the mathematical model predicts pattern formation extends to lower MinE concentrations than observed experimentally (lower bound at E/D ratio ~1/100 in experiments).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by experimental titration data (Figure 2\u2014figure supplement 2). Claim C52 acknowledges a quantitative discrepancy between model and experiment, which is appropriately noted as a limitation. The qualitative agreement is demonstrated while quantitative differences are transparent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C46",
+      "C48",
+      "C49"
+    ],
+    "result": "Background information on the MinDE system: it consists of two proteins and a membrane, has been reconstituted in vitro, functions in cell division positioning, and MinE (88 amino acids) exhibits four functional features including ATPase stimulation, membrane binding (MTS at positions 2-12), dimerization, and conformational switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14, C46, C48-C49 provide established background knowledge supported by appropriate citations to prior literature. These are well-accepted facts about the Min system that provide necessary context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C34",
+      "C55"
+    ],
+    "result": "Prior theoretical and experimental work has established that protein patterns form by reaction-diffusion mechanisms, MinE cycling is key for Min oscillations, and pattern formation driven by membrane-bound protein antagonism generically leads to short-axis selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28, C34, and C55 appropriately cite and summarize relevant prior work that provides theoretical foundation for the current study. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Supported lipid bilayers (SLBs) were prepared from DOPC and DOPG in a 2:1 ratio using standard methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 describes a standard experimental method that is adequately detailed in the Materials and methods section. This is routine methodology for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Starting from a minimal MinE-MinD interaction motif, pattern formation can be obtained by adding either dimerization or membrane-binding motifs, with underlying pathways being recruitment-driven cytosolic cycling and membrane-bound MinE recombination that differ in their in vivo phenomenology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 represent the main findings stated in the abstract and are comprehensively supported by the experimental results (Figure 2) and theoretical analysis (Figure 3) presented throughout the manuscript. These summary claims accurately reflect the detailed results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Membrane-bound MinE can bind to another MinD on the membrane without cycling through the cytoplasm, a process termed membrane recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 describes the membrane recombination mechanism that is a logical inference from the experimental observations with MTS-containing constructs and is incorporated into the theoretical model. This mechanism is well-supported by the combined experimental and theoretical evidence.",
+    "result_type": "MINOR"
+  }
+]

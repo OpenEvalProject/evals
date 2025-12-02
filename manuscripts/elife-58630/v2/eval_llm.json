@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C18"
+    ],
+    "result": "DIAMonDS is a novel system comprising time-lapse imaging by CCD flatbed scanner and Sapphire software that automatically detects developmental transitions (pupariation, eclosion, death) in individual Drosophila by distinguishing static and dynamic phases, with capacity for 288-1152 flies per scanner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C14, and C18 collectively describe the core design and functionality of DIAMonDS. The system's principle of detecting phase transitions through image subtraction (C13) is well-demonstrated in Figure 1, and the throughput capacity (C14) is explicitly stated and validated through multiple experiments. The automated detection capability (C2, C18) is supported by extensive validation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C45"
+    ],
+    "result": "DIAMonDS achieved 74-85% accuracy for pupariation/eclosion detection and ~92% accuracy for death detection within \u00b110 frames compared to manual visual handling, with accuracy improving to 94.7% for eclosion when using clean microplates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C21-C23, and C45 provide quantitative validation of DIAMonDS accuracy. The validation is rigorous, comparing automated detection to manual scoring on identical images (Figure 2C-D, Figure 2\u2014figure supplement 2-3). The improvement with cleaner plates (C23) demonstrates understanding of system limitations. Statistical correlations (R=0.86-0.99) support the accuracy claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C59"
+    ],
+    "result": "Sapphire uses fully convolutional networks trained on augmented datasets (71,200 adult images from 178 annotations; 183,900 larval images from 1,839 annotations) with a CF method superior to threshold-based detection for identifying phase transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 provide specific details about training data that are verifiable from the methods section. C59 demonstrates empirical comparison of CF vs TH methods (Figure 2\u2014figure supplement 3), showing CF's superiority. The data augmentation approach is standard practice and the sample sizes appear adequate for the segmentation task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "DIAMonDS revealed sexual dimorphism in Drosophila development: females eclosed 4 hours earlier than males on average, with no sex difference in pupariation timing, indicating the dimorphism reflects differential pupal duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 present a coherent biological finding supported by data in Figure 2E-G. The 4-hour difference (C24) is corroborated by prior literature (Bainbridge and Bownes, 1981). The lack of difference in pupariation timing (C25) combined with earlier eclosion (C24) logically supports the conclusion about pupal duration (C26). Statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "DIAMonDS successfully detected pupariation delays in larvae with impaired serotonergic neuron activity (R29H01-GAL4>UAS-TeTxLC) across different starting larval ages (L2, early L3, late L3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 demonstrates DIAMonDS can detect genetic perturbations affecting development. Figure 3A shows clear, statistically significant delays across all tested ages. The genetic manipulation is well-established (cited to Shimada-Niwa and Niwa, 2014), and the robustness across different starting ages validates the system's reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C61"
+    ],
+    "result": "Sugar concentration dose-dependently delayed pupariation and eclosion but pupal duration remained constant, suggesting larval dietary intake does not influence pupal stage duration, consistent with historical observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 and C61 present a clear dose-response relationship shown in Figure 3B-F with appropriate statistical testing. The constant pupal duration (C32) despite variable larval duration is a novel observation at this resolution. The consistency with Northrop's 1917 findings (C33) strengthens the conclusion, though C34 appropriately frames this as speculative regarding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "DIAMonDS death detection showed high correlation (R=0.9913) with manual scoring, no positional bias across microplate locations, and maintained reasonable accuracy even for hypoactive decapitated flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 validate DIAMonDS for death detection. The high correlation (C35, Figure 4A-D) and lack of positional effects (C36, Figure 4E) demonstrate technical robustness. Testing with decapitated flies (C37) appropriately probes system limits, showing slightly reduced but still acceptable performance. The validation approach is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "DIAMonDS detected sexual dimorphism in starvation resistance, dose-dependent DDT toxicity with high sensitivity, and paraquat resistance in mth1 mutants at lower concentrations than previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 demonstrate DIAMonDS utility for stress/drug resistance assays. Sexual dimorphism in starvation (C38, Figure 5A-B) and dose-response to DDT (C39, Figure 5C-D) show appropriate sensitivity. Detection of mth1 resistance at lower paraquat concentrations than Lin et al. 1998 (C41) demonstrates improved sensitivity over traditional methods. All findings have appropriate statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "DIAMonDS-measured lifespans for w1118 flies were consistent with published reports, and no significant correlations were found between developmental stage durations and adult lifespan in individual flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 validates DIAMonDS lifespan measurements against literature (Figure 6C, multiple citations). C43 presents correlation analyses (Figure 6D-I) showing independence of developmental stages and lifespan. The lack of correlation is appropriately tested statistically and represents a novel finding enabled by individual tracking. Sample sizes (59 females, 75 males) are adequate for correlation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "DIAMonDS showed minimal positional effects across different plate positions, though well size affected developmental timing with 48-well and 24-well formats showing slightly accelerated development compared to 96-well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 (Figure 2\u2014figure supplement 4) demonstrates spatial uniformity, important for high-throughput applications. C28 (Figure 2\u2014figure supplement 5) reveals a well-size effect on development timing, appropriately characterized as statistically significant but biologically modest. This represents an important technical consideration for experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Frequent plate replacement (every 2-3 days) improved viability for Oregon-R and Canton-S strains, though larger well sizes did not rescue viability and may harm aged flies; further optimization is needed for broad strain applicability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C64-C66 honestly address system limitations. Figure 6\u2014figure supplement 1 shows strain-specific challenges with Oregon-R and Canton-S. The finding that larger wells don't help (C64) and may harm survival is counterintuitive but data-supported. The acknowledgment that frequent replacement is labor-intensive (C65) and that optimization is needed (C66) demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "All DIAMonDS experiments were conducted in controlled environmental chambers without external illumination to maintain stable temperature, as illumination caused temperature variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 describe critical methodological controls. Figure 1\u2014figure supplement 1 demonstrates temperature instability with external illumination and stability without it. This is essential for reliable developmental timing measurements and shows appropriate attention to environmental confounders. The decision is data-driven and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Methodological optimization determined that L1 larvae (not embryos) in 100 \u00b5L media (not 150 \u00b5L) provided optimal survival, and DIAMonDS successfully tracked larval feeding (static), wandering (dynamic, 12-24h), pupal (static, ~100h), and adult (dynamic) phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 describe data-driven optimization (Figure 2\u2014figure supplement 1) showing embryos and 150 \u00b5L media increased lethality. Claims C54-C57 characterize observed behavioral phases with specific durations. These represent important methodological details that enable reproducibility and demonstrate the system captures expected Drosophila biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "DIAMonDS has limitations including unsuitability for circadian rhythm studies due to repeated light exposure, potential adverse effects of confined well space, inappropriateness for volatile substances, reduced reliability with dirty lids, and strain-specific challenges possibly due to genetic or metabolic differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 honestly acknowledge system limitations. These are logical inferences (C46-C48) or observation-based (C49, C58). The speculation about strain differences (C50) is appropriately tentative. This transparent discussion of limitations is scientifically appropriate and helps users understand when DIAMonDS is and isn't suitable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "DIAMonDS substantially improves upon manual counting methods by eliminating long acquisition/analysis times, enabling simultaneous multi-scanner operation, facilitating high-throughput analysis, and being functional for both preliminary and large-scale screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 summarize DIAMonDS advantages over traditional methods. These conclusions are supported by the demonstrated throughput (C3, C14), accuracy (C4-C5, C45), and successful application across multiple experimental paradigms. The 74-92% accuracy (C69) is sufficient for screening while Sapphire output can guide manual refinement (C70) for publication-quality data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Traditional methods for measuring Drosophila developmental timing relied on manual counting at 2-24 hour intervals or labor-intensive video analysis, which are impractical for high-throughput screening and cannot track multiple phenotypes in individual flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 establish the scientific context and motivation for DIAMonDS. C6-C7 state established Drosophila biology. C8 accurately describes prior methods with appropriate citations. C9 and C11 are reasonable inferences about limitations of manual and video methods. This context appropriately justifies the need for the developed system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C15",
+      "C62"
+    ],
+    "result": "The 384-well format is limited to short-term adult survival assays (\u22642 weeks) due to small well size preventing normal development, while 96-well plates are suitable for long-term measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C62 describe appropriate use cases for different microplate formats based on biological constraints. This is a logical inference from well dimensions and Drosophila biology, validated through the successful application of each format in appropriate contexts (384-well for stress assays in Figures 4-5, 96-well for development in Figures 2-3).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Film contamination may reduce accuracy over time, but detection could be improved by reducing image acquisition noise, enhancing machine learning training, and optimizing experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is a reasonable inference supported by the improved accuracy with clean plates (C23). Claims C71-C73 are appropriate suggestions for future improvement. C23's data showing 94.7% vs 84.2% accuracy with clean plates directly supports C58. The suggestions (C71-C73) are logical extensions though speculative about magnitude of improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C51",
+      "C74",
+      "C75"
+    ],
+    "result": "DIAMonDS could potentially be extended to other small animals, circadian rhythm studies using infrared imaging, and larger wells to reduce confinement effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51, C74-C75 are speculative about future applications and improvements. While the underlying principles (detecting static/dynamic transitions) could apply to other organisms (C51), no data support this. Infrared imaging (C74) and larger wells (C75) are reasonable suggestions but untested. These represent future directions rather than demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C33",
+      "C60",
+      "C63"
+    ],
+    "result": "Prior studies reported that dietary supplementation affects pre-adult development without changing pupal duration (Northrop 1917), high-sugar diets cause diabetes-like phenotypes in Drosophila larvae (Musselman 2011), and mth mutants show extended lifespan and stress resistance (Lin 1998).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C60, C63 accurately cite prior literature to provide context for current findings. C33 supports the sugar experiment interpretation, C60 provides rationale for the sugar experiments, and C63 justifies the mth mutant experiments. These citations appear accurate based on the references provided and appropriately contextualize the DIAMonDS results.",
+    "result_type": "MINOR"
+  }
+]

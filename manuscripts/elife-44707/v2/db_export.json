@@ -1,0 +1,1594 @@
+{
+  "submission": {
+    "id": "fb3281d9-d81d-4e55-a5cd-fd0dc1751e75",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:17:44.028294Z",
+    "updated_at": "2025-12-02T10:17:44.028294Z"
+  },
+  "content": [
+    {
+      "id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "submission_id": "fb3281d9-d81d-4e55-a5cd-fd0dc1751e75",
+      "content_type": "manuscript",
+      "content_text": "# Structure of the gene therapy vector, adeno-associated virus with its cell receptor, AAVR\n\n## Authors\n\n- Nancy L Meyer<sup>1</sup> ([ORCID: 0000-0002-6836-6688](https://orcid.org/0000-0002-6836-6688))\n- Guiqing Hu<sup>2</sup>\n- Omar Davulcu<sup>1</sup>\n- Qing Xie<sup>1</sup>\n- Alex J Noble<sup>2</sup> ([ORCID: 0000-0001-8634-2279](https://orcid.org/0000-0001-8634-2279))\n- Craig Yoshioka<sup>3</sup> ([ORCID: 0000-0002-0251-7316](https://orcid.org/0000-0002-0251-7316))\n- Drew S Gingerich<sup>3</sup>\n- Andrew Trzynka<sup>1</sup>\n- Larry David<sup>1</sup>\n- Scott M Stagg<sup>2</sup>\n- Michael Stewart Chapman<sup>1</sup> ([ORCID: 0000-0001-8525-8585](https://orcid.org/0000-0001-8525-8585)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biology Oregon Health and Science University Portland United States\n2. Institute Molecular Biophysics Florida State University Tallahassee United States\n3. OHSU Center for Spatial Systems Biomedicine Portland United States\n4. Department of Chemistry and Biochemistry Florida State University Tallahassee United States\n5. Department of Biochemistry University of Missouri Columbia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAdeno-associated virus (AAV) vectors are preeminent in emerging clinical gene therapies. Generalizing beyond the most tractable genetic diseases will require modulation of cell specificity and immune neutralization. Interactions of AAV with its cellular receptor, AAVR, are key to understanding cell-entry and trafficking with the rigor needed to engineer tissue-specific vectors. Cryo-electron tomography shows ordered binding of part of the flexible receptor to the viral surface, with distal domains in multiple conformations. Regions of the virus and receptor in close physical proximity can be identified by cross-linking/mass spectrometry. Cryo-electron microscopy with a two-domain receptor fragment reveals the interactions at 2.4 \u00c5 resolution. AAVR binds between AAV\u2019s spikes on a plateau that is conserved, except in one clade whose structure is AAVR-incompatible. AAVR\u2019s footprint overlaps the epitopes of several neutralizing antibodies, prompting a re-evaluation of neutralization mechanisms. The structure provides a roadmap for experimental probing and manipulation of viral-receptor interactions.\n\n## Introduction\n\nThe human parvovirus, AAV, has a 60-subunit protein capsid shell containing a single-stranded DNA genome (Xie et al., 2002; Chapman and Agbandje-Mckenna, 2006). Recombinant AAV is used as a cellular delivery vehicle in emerging clinical applications of gene therapy: Luxturna is the first in vivo gene therapy approved for clinical treatment in the US, with demonstrated efficacy combatting a retinal dystrophy that leads to loss of vision (Russell et al., 2017). AAV\u2019s interactions on cell entry are of fundamental virological interest and provide a foundation for engineering more efficient and cell-specific delivery vectors needed to treat an array of diseases (Kotterman and Schaffer, 2014).\n\nInfection starts with AAV\u2019s attachment to serotype-specific glycan \u2018primary\u2019 receptors, followed by co-receptor-mediated endocytotic entry. AAV2, the type species studied here, like several other AAVs, attaches to heparan sulfate proteoglycan (HSPG) (Summerford and Samulski, 1998; Kern et al., 2003; Opie et al., 2003; Huang et al., 2014). Recently, through genome-wide screening for genes essential to transduction, the cellular protein AAVR was implicated as the key receptor for entry of a panel of AAV serotypes into representative cell types and, in vivo, in mice (Pillay et al., 2016). AAVR is a membrane protein whose glycosylation is not essential for binding or cell-transduction by AAV (Pillay et al., 2016; Pillay et al., 2017). From N- to C-terminus, it comprises (Figure 1) a signal peptide, a MANEC domain, five immunoglobulin-like PKD domains (PKD1-5) (Ibraghimov-Beskrovnaya et al., 2000), a transmembrane region and a small cytoplasmic domain. Over-expression of \u2018mini-AAVR\u2019 (PKD domains 1\u20133, but lacking MANEC) can support transduction in an AAVR knock-out, while AAV-binding and transduction inhibition are both achieved with a fusion of maltose binding protein and the five PKD domains (MBP-PKD1-5) (Pillay et al., 2016). Thus, structural studies of an AAV complex were begun with this soluble construct. Intriguingly, in concurrent studies, it emerged that PKD domain 2 (PKD2) was most critical for AAV2\u2019s interactions, in contrast to PKD1 for AAV5 (Pillay et al., 2017). Here, cryo-ET, together with single particle cryo-EM and cross-linking analysis, reveal that AAVR binds tightly to the AAV2 viral surface through well-defined interactions with PKD2; PKD1 is more loosely associated, and the membrane-proximal domains (PKD3-5), distal from the virus surface, have varied/flexible conformation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44707/elife-44707-fig1-v2.jpg)\n\n**Figure 1.:** Domain acronyms: SP - signal peptide; MANEC - motif at the N-terminus with eight cysteines; PKD - polycystic kidney disease; TM \u2013 transmembrane\u00a0helix; C-tail \u2013 cytoplasmic, C-terminal tail; MBP \u2013 maltose-binding protein (fusion). Numbers refer to the first or last amino acids of native AAVR used in the construct.\n\n## Results\n\n### Strategic plan\n\nA central objective was to visualize, at the highest resolutions possible, the structure of AAV complexed with the cellular receptor, AAVR, which is essential for entry of most AAVs. AAVR is an integral membrane protein whose interactions with AAV are mediated through its ectodomain regions (Pillay et al., 2016). AAVR would be expressed heterologously for preparation of soluble complexes. Even omitting the transmembrane and cytoplasmic C-terminal regions, constructs would be multi-domain, a potential source of conformational heterogeneity. It was also not known whether receptor-binding would conform to the icosahedral symmetry of the virus, particularly because the capsid subunits are not identical. Most capsid proteins are viral protein (VP) 3, but alternative splicing leads to about 10% fractions of two N-terminally extended variants, VP1 and VP2 (Berns, 1996). The unique regions of VP1 and VP2 have not been resolved in crystal structures (Xie et al., 2002). If key to AAVR interactions, it was not known to which subset of the otherwise indistinguishable 60 subunits AAVR would be bound, and whether they would be in the same locations on every virion. Such a large potentially heterogeneous complex was not a good candidate for crystallographic analysis, and, could pose challenges for electron microscopy (EM).\n\nThe prospects for EM at near atomic resolution throughout the entire receptor seemed low, so diverse approaches were planned for hybrid-methods structure determination. Biomolecular EM is limited by the electron dose usable for imaging before excessive radiation damage of the sample, even when mitigated at cryogenic temperatures (cryo-EM) (Chen et al., 2008). The primary data in EM are 2D projection images of 3D samples, from which 3D maps are reconstructed by one of two approaches (Thompson et al., 2016): In electron tomography (ET), a series of images is collected as the sample is tilted, so that a 3D map can be computed as in CT (medical) scanning. 3D information is obtained for each particle on the sample grid, but spreading the acceptable low dose of electrons over 100\u00a0+\u00a0images limits the resolution achievable. In more common single-particle analysis (SPA), each of many particles is imaged just once with all the available electron dose. 3D maps, of potentially higher resolution, are reconstructed from many particles providing that they share sufficiently identical conformation and that the orientation of each can be determined from a single 2D image.\n\nIn strategizing how best to image AAV2-AAVR complexes, there were multiple considerations. If and where the receptor conformed to the symmetry of AAV, high-resolution cryo-EM might be possible, through SPA, enhanced by application of icosahedral symmetry. Should there be heterogeneity in the location within the capsid of receptor-bound AAV2 subunits, or in the conformation of any receptor domains that are not interacting directly with the virus, then cryo-ET might be more appropriate. Sub-tomogram reconstruction would facilitate classification (in 3D) of the many potential configurations, before signal averaging. Resolutions possible with cryo-ET are lower than cryo-EM, and generally insufficient to recognize individual domains. Atomic modeling is usually only possible for cryo-EM, and sometimes only possible for cryo-ET with additional constraints coming from other biophysical characterizations. A hybrid approach was planned, identifying regions of the virus and receptor primary structures that are in close proximity, through chemical cross-linking, proteolysis and tandem mass spectrometry. The known crystal structure of AAV2 could be overlaid on the EM reconstruction by alignment of point group symmetry. A homology model of the receptor could then be docked approximately, by fitting the low-resolution cryo-ET density while satisfying distance constraints from the cross-linking. Between the resolution regimes of conventional cryo-EM and cryo-ET lay the emerging approach of SPA combined with computational sub-volume extraction (Ilca et al., 2015). All three approaches were pursued in parallel, because, at the start, the extent of hetereogeneity in virus-receptor complexes and the imaging resolutions achievable were uncharacterized.\n\nHeterogeneity from inter-domain receptor flexibility might also be addressable through biochemical elimination of domains not essential to AAV-binding. Our emerging cross-linking results, together with biochemical and genetic characterizations (Pillay et al., 2017), indicated which AAVR domains were most important. This allowed a divide-and-conquer strategy, high resolution coming from minimal constructs, with context and relevance to the native receptor coming from lower resolution studies with larger receptor constructs. Thus, redundant tracks were pursued, testing different combinations of domains to find the complexes most suitable for high resolution structure, then validating by comparison to lower resolution reconstructions with near-native receptor constructs.\n\n### Cryo-electron tomography of AAV2 complexed with a PKD1-5 fusion protein\n\nStructural studies started with the MBP-PKD1-5 construct, known to contain the AAV-binding elements (Pillay et al., 2016). However, single-particle reconstruction of the AAV complex showed only virus density: AAVR density would be weakened on application of the viral 60-fold symmetry, if only a fraction of binding sites were occupied. Up to three bound AAVRs were seen in raw tomograms (Figure 2A), but their unpredictable distribution over the viral surface confounded automatic inter-particle alignment: AAVR was again washed out in the whole-virus sub-tomogram average at\u00a0~10 \u00c5 resolution. AAVR density was seen in a reconstruction made by manually marking their locations in tomograms, then averaging only occupied sites on the virus using known icosahedral symmetry operators. From eight tilt series, 2602 of the 60 sites in 1321 particles (3.3%) were occupied, averaging 1.97 receptors/virion. Multivariate data analysis (MDA) and ascendant classification yielded 20 classes, four commensurate with AAVR\u2019s size. Modest numbers of particles per class (~150) limited resolution to\u00a0~30 \u00c5. The four classes indicated a single binding interface near spikes surrounding the threefold axes, with more varied conformation of distal AAVR domains that were less constrained by viral interactions (Figure 2B,C; Figure 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44707/elife-44707-fig2-v2.jpg)\n\n**Figure 2.:** (A) A slice of a raw tomogram of a complex between AAV2 and the MBP-PKD1-5 fusion construct highlighted with arrows. (B) Four of the sub-tomogram classes (Figure 3) that result from aligning occupied sites, overlaid on the crystal structure of AAV2 (Xie et al., 2002) with selected symmetry axes numbered. AAVR binds near the threefold spikes with varied configuration of viral-distal domains. (C) Domain-sized ellipsoids are modeled into the highest-population tomographic class at\u00a0~30 \u00c5 resolution. (D) AAV2 sites (red) that can be cross-linked to PKD1 or the PKD1/2 hinge. (E) The sub-volume classified single particle reconstruction of the MBP-PKD1-5 fusion complex shows one domain (purple), ordered and bound on the shoulder and plateau between spikes surrounding each threefold. (F) The icosahedrally-averaged single particle reconstruction of a complex with PKD1-2 shows binding at a larger fraction of the same site and its symmetry-equivalents. (G) Rotated to a tangential view, the PKD density (red) is traceable as an immunoglobulin domain; (H) Resolution of 2.4 \u00c5 is sufficient to model side chains specific to the PKD2 sequence.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44707/elife-44707-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013D) Class averages, oriented like the overall symmetry-averaged reconstruction (G), correspond to classes 1 through 4 of EMDB depositions EMD-0621 through EMD-0624,\u00a0respectively.\u00a0They show AAVR anchored at the same location on AAV, near three spikes surrounding symmetry axes on the AAV surface, but with distal PKD domains in different orientations; (E and F) Tangential and top-down magnifications of the boxed region of classes (A \u2013 D) superimposed, highlighting variation in domain conformations; (H\u2013L) Additional classes for which viral-distal PKD domains are unseen, presumably due to disorder from inter-domain flexibility.\n\n### Single-particle cryo-EM and subvolume extraction for AAV2 complexed with a PKD1-5 fusion protein\n\nHigher resolution was attempted, switching from tomography to single particle analysis (SPA), with classification of smaller sub-volumes local to each threefold axis (Ilca et al., 2015). Receptor-bound sites could be distinguished from unoccupied, with a single domain of AAVR bound tightly to AAV, at the location seen by tomography, but now at\u00a0~10 \u00c5 resolution (Figure 2E). Discrete conformations of other domains were not resolved by classification, so shorter AAVR constructs were used henceforth to reduce heterogeneity.\n\n### Single-particle cryo-EM for AAV2 complexed with a PKD1-2 construct\n\nDeletion mutants and binding studies (Dudek et al., 2018) were implicating PKD domains 1\u20132 as most critical. Size exclusion chromatography revealed gradual oligomerization of several AAVR constructs (Figure 4), so AAV was adhered to carbon-coated EM grids (O'Donnell et al., 2009), then freshly fractionated His6-tagged PKD1-2 was added. The smaller PKD1-2 construct yielded AAV2 complexes that were found empirically (see below) to have more saturated binding at symmetry-equivalent sites. One can speculate that the absence of PKD3-5, and of the MBP fusion domain, reduced the potential for steric conflict between AAVR molecules bound to adjacent sites on the viral surface. It is also possible, with the propensity of AAVR to oligomerize (Figure 4), and perhaps to thereby cross-link AAV2 particles, that the picking of well-separated particles from images of complexes formed in free solution, might have biased our earlier reconstructions towards low-occupancy particles. Aggregation and biased sampling would be minimized with the new approach of adhering AAV2 to the EM grid before adding AAVR, and this perhaps also contributed to the higher binding saturation that was obtained.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44707/elife-44707-fig4-v2.jpg)\n\n**Figure 4.:** PKD1, PKD2, and PKD1-2 were run on a Superdex 75 column and MBP-PKD1-5 on Superdex 200, and are compared to standards, in red. MBP-PKD1-5 revealed hexamers predominating over tetramers and dimers, which are also seen in PKD1-2 along with larger oligomers. Monomers were only seen with PKD1 and PKD2 (along with larger species). Separated fractions of PKD1-2 re-equilibrated over a month at 4\u00b0C, inspiring EM sample preparation by first adhering AAV to a thin carbon film on the EM grid (O'Donnell et al., 2009) prior to addition of a freshly-prepared chromatographic fraction of an AAVR construct.\n\nThe more highly\u00a0saturated binding allowed single particle processing with icosahedral symmetry, yielding a reconstruction with an FSC0.143 of 2.4 \u00c5 (Figure 5). A single domain was revealed, fully consistent with the tomography and SPA of the PKD1-5 complex, but now resolving the backbone trace and most side chains (Figure 2F\u2013H), allowing assignment of the tightly-bound domain as PKD2. Conservative atomic refinement, constraining receptor and virus B-factors to be equal, gives a lower\u00a0bound PKD2 occupancy of 0.48. When B-factors are refined, they account for the expected higher disorder in the receptor ligand (\u27e8BAAV2\u27e9=15.2 \u00c5\u00b2; \u27e8BAAVR\u27e9=27.7 \u00c5\u00b2), and occupancy refines to 0.59. If one speculates that AAV2 particles, adhered to an EM grid, rest on three spikes, then binding of PKD1-2 would be occluded at minimally 9 of 60 (15%) symmetry-equivalent sites. The occupancy of 0.59 therefore corresponds to binding at 70% of remaining available sites. The empirical stoichiometry of approximately two AAVR constructs per three AAV2 subunits provides evidence that the binding of the shortened PKD1-2 construct at adjacent sites on the virus is not completely excluded. At the end of atomic refinement, the model map correlation coefficient is 0.88 after optimization of a low-pass filter applied to the atomic density, giving a d1/2 = 2.3 \u00c5 that is close to the FSC0.143 = 2.39 \u00c5 (Figure 5) and is indicative of the effective resolution (Chapman et al., 2013).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44707/elife-44707-fig5-v2.jpg)\n\n### Cross-linking studies\n\nCross-linking, with sites identified through mass spectrometry (MS), validated the PKD2 atomic model and improved the approximate placement of PKD1 relative to the tomographic density. The 13.4 \u00c5 distance between AAVR-Lys93 N\u03b6 and AAV2-Lys556 in the PKD1-2 complex (that was not cross-linked in the EM sample) is consistent with an MS experiment in which AAVDJ was cross-linked using CBDPS (14 \u00c5 spacer) to an AAVR construct missing only the transmembrane and C-terminal tail (Table 1). A homology model of PKD1, anchored by the high-resolution PKD2 structure, can be adjusted to satisfy simultaneously 3 of 4 CBDPS cross-links between AAV2 and MBP-PKD1-5, and to explain diffuse (disordered) EM density above each 2-fold axis that is suggestive of multiple/asymmetric configurations (Table 1; Figure 2C,D). Extending C-terminally from the high-resolution PKD2 structure, PKD domains 3\u20135 could be fit into the low-resolution sub-tomograms, projecting away from AAV in a variety of conformations (Figure 2C, Figure 3).\n\n**Table 1.**\n Structural analysis of virus-receptor complexes cross-linked with CBDPS at sites identified by tandem mass spectrometry following proteolytic digestion and affinity purification of cross-linked peptides.The spacer length of CBDPS is 14 \u00c5. Distances are measured from models based on electron microscopy of complexes that were not cross-linked. Thus, the distances do not reflect any chemical constraint imposed by the cross-linker on conformation, or any remodeling of the protein structure.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Virus</th>\n      <th>Residue</th>\n      <th>AAVR construct</th>\n      <th>Residue</th>\n      <th>Location</th>\n      <th>Distance</th>\n      <th>Measured from:</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>AAVDJ</td>\n      <td>K556</td>\n      <td>Full ecto-protein</td>\n      <td>K404</td>\n      <td>PKD2 (N-terminal)</td>\n      <td>13.4 \u00c5</td>\n      <td>PKD2 modeled into high resolution EM of AAV2-PKD1/2</td>\n    </tr>\n    <tr>\n      <td>AAV2</td>\n      <td>K490</td>\n      <td>MBP-PKD1-5</td>\n      <td>K399</td>\n      <td>PKD1/2 linker</td>\n      <td>9.9 \u00c5</td>\n      <td>PKD1 homology model, anchored to PKD2 in above EM</td>\n    </tr>\n    <tr>\n      <td>AAV2</td>\n      <td>T560</td>\n      <td>MBP-PKD1-5</td>\n      <td>K399</td>\n      <td>PKD1/2 linker</td>\n      <td>17.8 \u00c5</td>\n      <td>As above</td>\n    </tr>\n    <tr>\n      <td>AAV2</td>\n      <td>K556</td>\n      <td>MBP-PKD1-5</td>\n      <td>K338</td>\n      <td>PKD1</td>\n      <td>13.8 \u00c5</td>\n      <td>As above</td>\n    </tr>\n    <tr>\n      <td>AAV2</td>\n      <td>T450</td>\n      <td>MBP-PKD1-5</td>\n      <td>K399</td>\n      <td>PKD1/2 linker</td>\n      <td>27.7 \u00c5</td>\n      <td>As above</td>\n    </tr>\n    <tr>\n      <td>AAV2</td>\n      <td>K556</td>\n      <td>MBP-PKD1-5</td>\n      <td>K597</td>\n      <td>PKD3/4 linker</td>\n      <td></td>\n      <td>Not attempted</td>\n    </tr>\n  </tbody>\n</table>\n\n### Structure at the AAV2-PKD2 binding interface\n\nOn receptor-binding, AAV2 undergoes only limited conformational change. At variable region (VR)-I, residues 263\u2013266 are displaced 2.1\u20133.9 \u00c5 (C\u03b1) and become more disordered through conflict with AAVR residues 123\u2013125. The high-resolution structure shows no evidence of longer range conformational change. (A caveat should be noted, that, even if there is little change in the static or average structure of the major capsid protein, it has been reported that capsid stability decreases when DNA content is increased (Horowitz et al., 2013). This may be relevant because the virus-like particles, VLPs, do not have the same nucleic acid content as wild-type virus or vectors.) The footprint of PKD2 on AAV2 straddles the plateau that extends radially from each threefold axis, beyond two adjacent spikes (Figure 6). PKD2\u2019s N-terminus is near the twofold. The domain body passes along the plateau, below the nearest spike, and its C-terminus rises towards the shoulder of the next-nearest spike (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/44707/elife-44707-fig6-v2.jpg)\n\n**Figure 6.:** (A) The surface of AAV can be divided into 60 equivalent triangular asymmetric units bounded by a 5-fold and two 3-fold symmetry axes, and containing parts of several subunits together adding to one. In panels A-E, the viral surface is colored blue-to-red by distance from the virus center. (B-E) Overlaid on an asymmetric unit are outlined the footprints of AAVR-PKD2 (black; Table 2) and neutralizing monoclonal antibodies: A20 (B; white), C37B (C; purple), D3 (D; orange) and C24B (E; yellow) (Wobus et al., 2000; McCraw et al., 2012; Gurda et al., 2013). (Residues are labeled in the supplement.) (F) The sites of \u2018dead zone\u2019 transduction-abrogated mutations are outlined in pink (Lochrie et al., 2006). (G) The AAVR footprint is outlined over a projection colored by sequence identity (among presumptive AAVR-binding serotypes) from conserved blue (>90% identity) to variable red (<50% identity).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44707/elife-44707-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The surface of AAV can be divided into 60 equivalent triangular regions bounded by a 5-fold (pentagon), two 3-fold symmetry axes (triangles) and a diad (oval). The region contains parts of several subunits that together add to one. The projected surface is colored blue-to-red by distance from the virus center, with the footprints outlined of AAVR-PKD2 (black) and neutralizing monoclonal antibodies: A20 (white), C37B (purple), D3 (orange) and C24B (yellow) (Wobus et al., 2000; McCraw et al., 2012; Gurda et al., 2013).\n\n**Table 2.**\n Amino acids at the AAV2-AAVR interface.Residues of AAVR are listed if any non-hydrogen atom is within 4.5 \u00c5 of any non-hydrogen AAV2 atom, et vice versa.\u00a0This criterion corresponds approximately to the distance expected between methyl groups that are in van der Waals contact, and is intermediate between that of hydrogen-bonding and solvent exclusion. However, to assess the potential for specific interactions, readers are encouraged to inspect the deposited coordinates and maps (PDBid 6NZ0/EMD-0553).\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"12\">AAVR residues close to AAV2:</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Arg406</td>\n      <td>Ser413</td>\n      <td>Ile419</td>\n      <td>Thr423</td>\n      <td>Ser425</td>\n      <td>Thr426</td>\n      <td>Val427</td>\n      <td>Asp429</td>\n      <td>Ser431</td>\n      <td>Gln432</td>\n      <td>Ser433</td>\n      <td>Thr434</td>\n    </tr>\n    <tr>\n      <td>Asp435</td>\n      <td>Asp436</td>\n      <td>Asp437</td>\n      <td>Lys438</td>\n      <td>Ile439</td>\n      <td>Tyr442</td>\n      <td>Glu458</td>\n      <td>Asp459</td>\n      <td>Ile462</td>\n      <td>Lys464</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"12\">AAV2 residues close to AAVR:</td>\n    </tr>\n    <tr>\n      <td>Gln263</td>\n      <td>Ser264</td>\n      <td>Gly265</td>\n      <td>Ala266</td>\n      <td>Ser267</td>\n      <td>Asn268</td>\n      <td>His271</td>\n      <td>Asn382</td>\n      <td>Gly383</td>\n      <td>Ser384</td>\n      <td>Gln385</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Arg471</td>\n      <td>Trp502</td>\n      <td>Thr503</td>\n      <td>Asp528</td>\n      <td>Asp529</td>\n      <td>Gln589</td>\n      <td>Lys706</td>\n      <td>Val708</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Comparison of the AAVR binding site to those of neutralizing antibodies\n\nComparison of the receptor-binding site with neutralizing epitopes is of both fundamental and applied interest. Fundamentally, it could be informative on the mechanisms by which antibodies reduce infectivity, a topic on which there is some experimental data, but speculation continues (Wobus et al., 2000; Harbison et al., 2012; Gurda et al., 2013). In application of AAV vectors for gene therapy, neutralization and/or clearance, and even tissue retargeting in the presence of neutralizing antibodies (NAbs) are practical challenges in the safety and efficacy of treatments in development (Manno et al., 2006; Wang et al., 2010; Corden et al., 2017; Fitzpatrick et al., 2018). This is not just an issue with immune-sensitization of patients when multi-dose treatment regimens are envisioned, but\u00a0~60% of the population are seropositive to various AAV serotypes, due to natural exposure (Calcedo et al., 2009; Boutin et al., 2010).\n\nThe epitope of the best characterized neutralizing monoclonal antibody (MAb) A20 (McCraw et al., 2012) overlaps with the AAVR footprint, and suggests that entry or trafficking might be blocked even without inhibition of (glycan-mediated) cell attachment (Wobus et al., 2000) (Figure 6B). Overlap is seen for the other AAV2-neutralizing monoclonal antibodies (MAbs; Figure 6C\u2013E). Clashes with PKD2 or adjacent domains are predicted when the PKD2-AAV2 footprint is overlaid on MAb complexes of AAV1/6 (Gurda et al., 2013; Tseng and Agbandje-McKenna, 2014). Neutralization is not as well predicted by receptor-epitope overlap for AAV5 and AAV8, but it is premature to imply different neutralization mechanisms: (a) Lower resolution structures of other MAb complexes, (Gurda et al., 2013; Tseng and Agbandje-McKenna, 2014), and inaccuracies in using AAV2 to predict the exact PKD2 footprints of other serotypes, limit assessment of overlap; (b) From AAV5, we know that interactions with additional PKD domains can be important (Pillay et al., 2017), likely extending the footprint beyond that seen in the AAV2 structure; and (c) Antibody-receptor conflict might not be limited to the visualized footprint of PKD2, but could, in principle, occur between other domains, even distal from the viral surface, noting that AAVR and many neutralizing antibodies are anchored by binding sites in the same general vicinity around the threefold axes. In summary, it is plausible that the neutralization mechanism of AAV antibodies might commonly be steric blocking of AAVR interactions, although other mechanisms are likely also at work.\n\n### Conservation of the AAVR binding site\n\nImportance of the PKD2 footprint to AAV is evidenced in the striking correspondence to a \u2018dead-zone\u2019, where substitution mutations abrogate transduction (Figure 6F) (Lochrie et al., 2006). Excluding the AAV4 clade, which, alone, does not bind AAVR, sequence is less variable than on other antibody-accessible surfaces, suggesting a greater evolutionary/functional cost to immune-escape mutation (Figure 6G). Sequence-variable regions (VR) were previously defined by differences between the AAV2 and AAV4 structures (Govindasamy et al., 2006). VR-I and III are at the core of the AAVR footprint. Together with the fivefold proximal VRII, sequence variability is actually markedly less than in VR IV-IX, specifically among the AAVR-binding serotypes that exclude the AAV4 clade (Figure 7). Structural conservation of the PKD2 footprint does not extend to AAV4 and AAVrh32.33 which differ at the two principal contact points, VR-I and III (Figure 8). Superimposition on the AAV2-AAVR complex shows binding-incompatibility of the AAV4 clade, due to sequence insertion and deletion in the two loops, explaining the recent finding that AAV4, alone among representative extant and ancestral primate AAVs, uses a different receptor (Dudek et al., 2018).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/44707/elife-44707-fig7-v2.jpg)\n\n**Figure 7.:** Representative sequences were aligned using Clustal (Chenna et al., 2003). Boxes highlight the regions designated as variable when the atomic structure of AAV4 was compared to AAV2 (Govindasamy et al., 2006). For VR IV through IX, sequence diversity extends through all strains. However, variability in VR I through III arises primarily through divergence of the AAV4 clade from others. VR-I and VR-III constitute the surface loops with most intimate interactions between AAV2 and AAVR. Among AAVs that use AAVR, that\u00a0is\u00a0excluding the AAV4 clade, variability is not elevated in VR-I and VR-III compared to other surface regions.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/44707/elife-44707-fig8-v2.jpg)\n\n**Figure 8.:** (A) Boxed areas show contact points between PKD2 of AAVR (green) and two adjacent subunits of AAV2 (red). (B) Boxed volume \u2018a\u2019, now with AAV serotypes 3b, 5, 6, 8, 9, and DJ superimposed (translucent, yellow to brown) (Lerch et al., 2010; Walters et al., 2004; Xie et al., 2011; Nam et al., 2007; DiMattia et al., 2012; Xie et al., 2017), all of which can accommodate AAVR. (C) The same volume \u2018a\u2019, superimposing AAV4 (dark blue) and AAVrh32.33 (light blue) (Govindasamy et al., 2006; Mikals et al., 2014) that have a loop insertion in variable region VRIII of the sequence that would clash with AAVR. (D and E) EM density for the AAV2 complex in boxed volume \u2018b\u2019, contrasting the complementarity with AAVR for AAV2 (D, red) with poor complementarity (E), due to a deletion (variable region VRI of the sequence), in the superimposed crystal structures of AAV4 (dark blue) and AAVrh32.33 (light blue).\n\n### Juxtaposition of the AAVR receptor-binding site with glycan attachment sites\n\nAAV\u2019s attachment to cells is mediated through extracellular glycans, bound at sites characterized for several serotypes through structure, or implied from mutations affecting attachment or cell entry (Figure 9) (Huang et al., 2014). AAVR is glycosylated at Asn472 and Asn487, but these sites face away from the virus in our structure, and their glycosylation is not required for viral entry (Pillay et al., 2017), so it is non-AAVR glycans that mediate attachment. When our structure is superimposed on those of AAV-glycan complexes, AAVR conflicts with heparan sulfate analogs at the site shared by AAV2 and AAVDJ (O'Donnell et al., 2009; Xie et al., 2017; Xie et al., 2013). Arg585 and Arg587 (AAV2 numbering) interact electrostatically either with glycan sulfates or AAVR Asp459. There is some overlap between AAVR and AAV1/6-bound sialic acid (Huang et al., 2016), but none with sucrose octasulfate bound to AAV3B at Arg594 (Lerch and Chapman, 2012). The viral symmetry would allow some sites on AAV to remain glycan-attached, while others become AAVR-bound. The inter-domain flexibility that complicated structure determination might be key, in vivo, allowing cell-distal domains of AAVR to be bound at open sites on AAV.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/44707/elife-44707-fig9-v2.jpg)\n\n**Figure 9.:** Panels show the surface topologies of different AAV serotypes, projected as in Figure 6, colored, blue to red, with increasing distance from the virus center. The contact footprint of AAVR on AAV2 overlaid is outlined in black. Outlined in color are amino acids that contact glycan analogs in structures of complexes (AAV1-sialic acid [Huang et al., 2016], AAV2-heparin [O'Donnell et al., 2009], AAV3B with sucrose octasulfate [Lerch and Chapman, 2012], AAV-DJ with sucrose octasulfate [Xie et al., 2013] or fondaparinux [Xie et al., 2017]) or that have been implicated by mutagenesis in cell attachment and/or uptake (AAV4 [Shen et al., 2013], AAV5 [Afione et al., 2015] and AAV9 [Bell et al., 2012]).\n\n## Discussion\n\n### Hybrid methods\n\nThis investigation establishes EM as a centerpiece in the structure determination of flexible molecules, using hybrid-approach divide-and-conquer strategies. Resolution was limited in complexes with PKD1-5 constructs because of: (a) heterogeneity in domain orientations of a hinged receptor; (b) occupancy reduced by conflicts, not between PKD2 domains themselves at neighboring symmetry-related viral sites, but downstream domains (PKD3-5); and likely (c) oligomerization of larger receptor constructs, which, when well separated-particles are selected from EM images, biases processing toward virions with lower receptor occupancy. Redundancy in approaches allowed the project to advance beyond limitations that came into perspective only in retrospect.\n\nThe tomographic reconstruction at\u00a0~30 \u00c5 resolution lacked the detail needed to determine which receptor domains were virus-proximal. Cross-linking/mass spectrometry (x-MS) identified contact regions in primary sequence, determining overall receptor orientation. It allowed crude modeling of the tomographic density through the addition of x-MS distance constraints. Ambiguities remained, because, with allowance for protein flexibility, cross-linking to symmetry-related subunits was possible. Absent symmetry, the combination of cryo-ET and x-MS would have allowed unambiguous domain-level pseudo-atomic modeling. Furthermore, with hindsight of the high-resolution structure, distance constraints could have been applied more stringently, because cross-links were formed with little adaptation of protein structure. This work provides an affirmation that low resolution electron microscopy and x-MS can be a powerful combination, even with flexible molecules.\n\nHigh resolution came using a small receptor fragment, but it is the low-resolution EM and x-MS that establishes the biological relevance of the construct. Concordance of the PKD2 structure at 2.4 \u00c5 resolution with the\u00a0~10 \u00c5 view of PKD2 from SPA/sub-volume extraction and the\u00a0~30 \u00c5 cryo-ET, both from complexes with the entire PKD1-5, argues that the atomic interactions revealed at 2.4 \u00c5 are not an artifact of using a truncated PKD1-2 receptor, as does consistency of the atomic model with distances expected from x-MS with the five-domain construct or a near-complete receptor ecto-domain.\n\n### Antibody interference with AAVR-binding\n\nOne surprise from our structure might be the overlap between the PKD2 footprint and epitopes for some of the AAV-neutralizing monoclonal antibodies, given prior statements about particular antibodies not impacting receptor-binding (eg. Gurda et al., 2012). While our findings contradict some prior conclusions, they are actually consistent with much of the underlying data. Confusion has resulted from the lack of distinction in the historical literature between the attachment of AAV to cells and its entry. This distinction would not have been important to the current discussion should the initial interactions with extracellular glycans, termed \u2018primary receptors\u2019, still be considered the pivotal step in cell entry. However, it is now known that they impact transduction much less than the AAVR protein (Pillay et al., 2016) which has more of the properties of a classical entry receptor. From the virus\u2019 perspective, the glycans should not be considered as receptors, but as cell-attachment factors whose interactions may not be highly specific (Zhang et al., 2013; Pillay et al., 2016). Past discussions of neutralization mechanisms have included measurements of (glycan-dominated) cell-binding which tell us whether neutralization might be pre- or post-attachment, but not about interference with entry receptors, or whether neutralization is post-entry (Harbison et al., 2012; Gurda et al., 2012; Gurda et al., 2013; Pillay et al., 2016).\n\nOf three neutralizing anti-AAV monoclonals whose mechanisms have been investigated, two (A20 and ADK8) were deemed to be post-entry (Wobus et al., 2000; Gurda et al., 2012). It might have appeared counter-intuitive that we now find overlap of the AAVR-binding site with neutralizing epitopes, but not with the current understanding of AAV entry. While glycans dominate surface attachment, AAVR is needed in endosomal trafficking of AAV from the cell surface toward the nucleus for productive infection/transduction (Pillay et al., 2016). More care will be needed to differentiate potential steps of antibody inhibition. We now know that glycan attachment and endosomal churning can yield positive immunofluorescence indicating internalization, even though we know, from knock-outs, that that AAVR is needed for productive transduction (Pillay et al., 2016). Not only do we need to distinguish extracellular attachment and cellular internalization, but we need to differentiate virions that undergo receptor-mediated trafficking and endosomal escape, from unproductive virions that get no further than the endosome. To reiterate in other words, future analyses should reflect our new understanding that the glycans, until recently considered primary receptors, are more properly considered as attachment factors, and that productive entry (from the endosome into the cytoplasm) depends on interactions with different protein receptors, like AAVR. The current work shows that binding of some of the most neutralizing MAbs interferes with these interactions. However, we note that diversity in antibody-binding sites has previously been noted, and that a variety of neutralization mechanisms, not just inhibition of AAVR binding, will likely be in play for different antibodies (Gurda et al., 2013).\n\n### Future prospects\n\nThe structure of the AAV-receptor complex opens new chapters both in realizing the potential for gene therapy to treat an array of genetic diseases, and, it is hoped, in fundamental virology. The structure provides a roadmap that will support experimental perturbation of the interactions, a step toward rational modulation of cell targeting and neutralization escape (Asokan et al., 2012). Relevant to engineering vectors to escape immune neutralization from pre-existing NAbs, the current work highlights the overlap/juxtaposition of epitopes to be targeted, with the binding site for AAVR, the integrity of which is needed for productive infection/transduction. This work will be a key foundation for attempts to modulate immune interactions without collateral disruption of cell entry. More ambitious would be attempts to improve the efficiency or specificity of vectors by adding functionality to the AAVR-binding site. However, the drive for clinical impact will be strong motivation for gain-of-function studies at an unprecedented level, so this work opens the door to AAV becoming a particularly valued structure-function model for the fundamentals of viral-host interactions.\n\n### Note added in proof\n\nDuring review, a structure showing AAVR's PKD2 bound to AAV2 at 2.8 \u00c5 resolution became available (Zhang et al., 2019).\u00a0Mostly the structures validate each other. However, while Zhang et al. (2019) found the sites to be non-overlapping, we find overlap between the binding site of AAVR and neutralizing monoclonal antibody A20 (McCraw et al., 2012), and with\u00a0analogs of heparan sulfate (Xie et al., 2013; Xie et al., 2017).\u00a0(Our residue numbering starts from the N-terminus of wild-type AAVR and corresponds if 260 is added to the PKD2 model of Zhang et al., 2019.)\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21(DE3) E. coli</td>\n      <td>ThermoFisher</td>\n      <td>ThermoFisher: C601003</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>NEB Express E.\u00a0coli</td>\n      <td>New England Biolabs</td>\n      <td>NEB: C2523I</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera frugiperda)</td>\n      <td>Sf9</td>\n      <td>Gibco</td>\n      <td>Gibco: 11496015</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET-11a</td>\n      <td>Novagen</td>\n      <td>EMD Milli-pore: 69436\u20133</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMAL-c5X</td>\n      <td>New England Biolabs</td>\n      <td>NEB: N8108S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Cleavable ICAT Reagent Kit for Protein Labeling</td>\n      <td>SCIEX</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Bac-to-Bac Baculovirus Expression System</td>\n      <td>ThermoFisher (Invitrogen)</td>\n      <td>ThermoFisher: 10359016</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MBPTrap HP column</td>\n      <td>GE</td>\n      <td>GE: 28918778</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>HiTrap Chelating HP column</td>\n      <td>GE</td>\n      <td>GE: 17040801</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Superdex 75/200 column</td>\n      <td>GE</td>\n      <td>GE: GE17-5174-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Leginon</td>\n      <td>Suloway et al., 2005 doi:\u00a010.1016/j.jsb.2005.03.010</td>\n      <td>RRID:SCR_016731</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Protomo</td>\n      <td>Winkler, 2007 doi: 10.1016/j.jsb.2006.07.014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TOMOCTF</td>\n      <td>Fern\u00e1ndez et al., 2006 doi: 10.1016/j.jsb.2006.07.014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Dynamo</td>\n      <td>Casta\u00f1o-D\u00edez et al., 2012 doi: 10.1107/52059798317003369</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Relion 3.0</td>\n      <td>Scheres, 2012\u00a0doi:\u00a010.1016/j.jsb.2012.09.006</td>\n      <td>RRID:SCR_016274</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>Motioncor2 1.1.0</td>\n      <td>Zheng et al., 2017\u00a0doi:\u00a010.1038/nmeth.4193</td>\n      <td>RRID:SCR_016499</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gctf 1.06</td>\n      <td>Zhang, 2016\u00a0doi:\u00a010.1016/j/jsb.2015.11.003</td>\n      <td>RRID:SCR_016500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Localized reconstruction</td>\n      <td>Ilca et al., 2015 doi: 10.1038/ncomms9843</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>StavroX</td>\n      <td>G\u00f6tze et al., 2012\u00a0doi:\u00a010.1007/s13361-011-0261-2</td>\n      <td>RRID:SCR_014957</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>Brown et al., 2015\u00a0doi:\u00a010.1017/S1399004714021683</td>\n      <td>RRID:SCR_014222</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MapMan</td>\n      <td></td>\n      <td>RRID:SCR_003543</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>EMAN</td>\n      <td></td>\n      <td>RRID:SCR_016867</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RSRef</td>\n      <td>Chapman et al., 2013 doi: 10.1016/j.jsb.2013.01.003</td>\n      <td>RRID:SCR_017211</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Roadmap</td>\n      <td>Chapman, 1993 doi: 10.1002/pro.5560020318</td>\n      <td>RRID:SCR_017207</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Rivem</td>\n      <td>Xiao and Rossmann, 2007 doi: 10.1016/j.jsb.2006.10.013</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Modeller 9.2</td>\n      <td>Eswar et al., 2006 doi: 10.1007/978-1-60327-058-8_8</td>\n      <td>RRID:SCR_008395</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Chimera</td>\n      <td></td>\n      <td>RRID:SCR_002959</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software,\u00a0algorithm</td>\n      <td>Pymol</td>\n      <td></td>\n      <td>RRID:SCR_000305</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Virus and receptor preparation\n\nAAV2 virus like particles (VLPs) were expressed in Sf9 cells using Invitrogen\u2019s Bac-to-Bac expression system (Urabe et al., 2002). Empty capsids were purified using three rounds of CsCl density gradient ultracentrifugation, followed by heparin affinity chromatography, eluting with NaCl. Capsids were then dialyzed in 25 mM HEPES, 50 mM MgCl2, 150 mM NaCl, pH 7.4. PKD domains 1\u20135 of AAVR were expressed in BL21(DE3) E. coli using the pMAL expression system (New England Biolabs). This construct (MBP-PKD1-5) comprised a maltose-binding protein (MBP) tag fused N-terminally to the PKD domains. cDNA coding for AAVR PKD domains 1\u20135 was cloned into the pMAL-c5X expression vector and expression was carried out in NEB Express E. coli cells (New England Biolabs). Fusion protein was purified chromatographically using an MBPTrap HP column followed by a HiTrap Chelating HP column (GE) charged with Co2+. AAVR constructs comprising PKD1-2 were expressed with an N-terminal 6x-histidine tag from the pET-11a vector (Novagen) and were purified by immobilized Co2+ affinity followed by size exclusion chromatography (Superdex 75/200, GE).\n\n### Cryo-tomography\n\nMBP-PKD1-5 and AAV2 VLP were incubated briefly together at a molar ratio of 54:1\u00a0(AAVR:AAV2-subunit). Quantifoil R1.2/1.3 grids (Electron Microscopy Sciences) were glow discharged at 15 mA for 25 s (Pelco easiGLOW), prior to 2-min incubation with 2.5 \u03bcl of complex, subsequent wicking, and addition of 4.5 \u03bcl of complex before blotting and plunge-freezing using a Vitrobot Mark IV (FEI). Cryo-ET tilt series were acquired on an FEI Titan Krios (FEI, Hillsboro, OR) and recorded with Leginon software (Suloway et al., 2009) on a DE-20 direct detector (Direct Electron, San Diego, CA). An exposure magnification of 18,000 was used with a nominal pixel size of 2.03 \u00c5. Total dose was 50 e\u2013/\u00c5\u00b2 per tilt series. The tilt scheme involved rotation from \u221245\u00b0 to 60\u00b0 in 3\u00b0 steps, and the dose was fractionated across seven frames at each step. Defocus values were set to range from 9 \u03bcm to 11 \u03bcm. Fractionated frame images at each tilt angle were motion-corrected using an open-source python script (DE_process_frames.py) provided by Direct Electron. Tilt series were then aligned using Protomo software within Appion (Winkler and Taylor, 2006; Lander et al., 2009; Noble and Stagg, 2015). CTF estimation and correction were performed using TOMOCTF (Fern\u00e1ndez et al., 2006) and tomograms reconstructed with Tomo3D WBP (Agulleiro and Fernandez, 2015). The averaged power spectrum of 1024\u00b2 pixel regions was calculated and average defocus values were re-estimated for the eight tilt series, using TOMOCTF, yielding a new range of 9.7\u201311.5 \u00b5m. Phase-flipped CTF correction was then applied using stripes of 1000 \u00c5, followed by dose compensation using parameters output by Appion-Protomo. In total, eight 3D tomographic maps were then reconstructed from the above image stacks using Tomo3D.\n\nFor subtomogram picking, a 50 \u00c5 low-pass filtered map of uncomplexed AAVDJ (EMD6470) (Xie et al., 2017) was used. MolMatch was used to calculate a constrained correlation coefficient map (F\u00f6rster et al., 2010), and an in-house automated template picking program was used to pick a total of 1321 AAV-2 particles. Picked subtomograms were extracted in Dynamo (Casta\u00f1o-D\u00edez et al., 2012) prior to alignment. The reference was the AAVDJ map, low pass filtered at 60 \u00c5 resolution to avoid model bias. A coarse search with fourfold binning was followed by a finer (0.5\u00b0) refinement with twofold binning and with icosahedral symmetry imposed. Aligned capsid subvolumes were rotated into a standard reference frame defined by icosahedral axes, then symmetry-expanded to generate 60 redundant copies. When viral particles are overlaid, a fraction, classed by manual inspection, had receptor, usually one, bound near a given threefold. Sub-volumes containing one of the three spikes surrounding the symmetry axis, about a third containing receptor, were classified and averaged using the I3 package (Hu et al., 2011; Winkler et al., 2009; Winkler and Taylor, 1999).\n\n### Single-particle cryo-EM\n\nThe MBP-PKD1-5 complex for cryo-EM was prepared as for cryo-ET. Data were acquired on a Titan Krios using Leginon (Suloway et al., 2005) on a DE-20 detector. Magnification was 29,000, pixel size was 1.256 \u00c5, and defocus range was set to -1.5 to -3.0 \u03bcm. Total dose was\u00a0~69 e-/\u00c52 per image. 2D and 3D classification in Relion 1.4 (Scheres, 2012) culled the number of selected particles to 36208, and 3D auto-refinement resulted in a final unmasked map at an overall resolution of 4.2 \u00c5. Subsequent localized classification of individual threefold spikes allowed reconstruction of those spikes at which receptor density was present (Ilca et al., 2015).\n\nFor the PKD1-2 complex, grids coated with ultrathin carbon over lacey carbon (Ted Pella Cat No 01824) were glow discharged at 25 mA for 25 s (Pelco easiGLOW). 4 \u03bcl of AAV2 (1.7 \u03bcM VP subunits) was added to the grid, followed by 4 \u03bcl of PKD1-2 (16.7 \u03bcM) in buffer HN (25 mM HEPES, 150mM NaCl, pH 7.4), with blotting between and after (Whatman Cat No 1001\u2013110). 4 \u03bcl of HN buffer was added to the grid before final blotting and plunge-freezing. Single-particle data with PKD1-2 were collected on a Titan Krios with a Falcon three direct detector (FEI) using EPU software (FEI). Pixel size was 1.049 \u00c5 and each movie contained 160 frames with a total dose of 25 e-/\u00c52/movie. Defocus ranged from -0.8 \u03bcm to -2.0 \u03bcm. A total of 2329 movies were motion corrected using MotionCor2 1.1.0 (Zheng et al., 2017) and initial CTF estimation of non-dose-weighted images was done using Gctf 1.06 (Zhang, 2016). Processing continued within RELION 3.0: 34,450 particles were initially picked with AutoPicker using a 3D AAV2 reference filtered to 20 \u00c5 with 15\u00b0 sampling. Three rounds of 2D classification (resampled to\u00a0~2.1 \u00c5/pixel) followed by two subsequent rounds of 3D classification (K\u00a0=\u00a02) culled the number of particles to 33,555. Initial 3D auto-refinements, unmasked then masked, imposed icosahedral symmetry (I1). Two further rounds of CTF refinement followed by auto-refinements preceded an additional 3D alignment-free classification (K\u00a0=\u00a02) which resulted in a dataset of 21,373 particles. Final masked 3D auto-refinement imposing I1 symmetry resulted in a map of 2.39 \u00c5 resolution (FSC gold standard [Zivanov et al., 2018]). Further details are presented in Table 3.\n\n**Table 3.**\n Cryo-EM AAV2-PKD1-2 data collection and processing statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Data collection:</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Magnification</td>\n      <td>75,000 x</td>\n    </tr>\n    <tr>\n      <td>Voltage</td>\n      <td>300 kV</td>\n    </tr>\n    <tr>\n      <td>Electron exposure</td>\n      <td>25 e\u00af/\u00c5\u00b2</td>\n    </tr>\n    <tr>\n      <td>Defocus range</td>\n      <td>\u22120.8 to \u22122.0 \u03bcm</td>\n    </tr>\n    <tr>\n      <td>Pixel size</td>\n      <td>1.049 \u00c5</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Data processing:</td>\n    </tr>\n    <tr>\n      <td>Motion correction</td>\n      <td>Motioncor2 1.1.0</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Anisotropic magnification correction:</td>\n    </tr>\n    <tr>\n      <td>Distortion angle</td>\n      <td>3.2\u00b0</td>\n    </tr>\n    <tr>\n      <td>Percent distortion</td>\n      <td>1.10%</td>\n    </tr>\n    <tr>\n      <td>CTF estimation</td>\n      <td>Gctf 1.06</td>\n    </tr>\n    <tr>\n      <td>Resolution range</td>\n      <td>30 to 3 \u00c5</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td>I1</td>\n    </tr>\n    <tr>\n      <td>Initial particle images</td>\n      <td>34,450</td>\n    </tr>\n    <tr>\n      <td>Final particle images</td>\n      <td>21,373</td>\n    </tr>\n    <tr>\n      <td>Map resolution</td>\n      <td>2.39 \u00c5</td>\n    </tr>\n    <tr>\n      <td>FSC threshold</td>\n      <td>0.143</td>\n    </tr>\n  </tbody>\n</table>\n\n### Modeling of PKD2\n\nOne PKD domain could be traced readily in the reconstruction. Superimposition of a canonical seven-stranded immunoglobulin-like domain gave an unambiguous orientation with the N-terminal end closer to the viral twofold and the C-terminal end proceeding toward the threefold axis. Homology modeling (Eswar et al., 2006) provided a starting point for model-building with Coot (Brown et al., 2015), iterated with the refinement of the model and imaging parameters using RSRef (Chapman et al., 2013). The latter started with rigid fitting of the receptor domain, and progressed through refinement of the EM magnification, EM envelope, effective resolution, receptor occupancy and B-factor relative to virus, searches for best-fitting library side-chain rotamers (Lovell et al., 2000) and all-atom torsion angle flexible fitting. Flexible fitting incorporated: (a) full stereochemical restraints using RSRef-CNS; (b) a supplementary flat-bottomed potential to restrain (\u03c6, \u03c8) backbone dihedrals to the favored areas of a Ramachandran plot; and (c) constrained icosahedral symmetry (Chapman et al., 2013; Br\u00fcnger et al., 1998). In early iterations, simulated annealing (5,000K) had some advantage, but later, gradient descent (L-BFGS [Nocedal, 1980]) optimization was more effective. Atomic B-factors were refined using a restraint such that the root mean-square deviation between bonded atoms (RMSDB) for the receptor complex was less than in the crystal structure of AAV2 (1.44 \u00c5\u00b2) (Xie et al., 2002). The first round of modeling and refinement used the unsharpened map which had an effective resolution of d1/2 = 3.7 \u00c5, as determined by refining the resolution of a fifth-order Butterworth filter applied to density from the atomic model when fit to the map (Chapman et al., 2013). The real-space correlation coefficient (CC) of this intermediate model was 0.84 when using all map grid points within 2 \u00c5 of atoms. A second round of modeling and refinement followed sharpening of the reconstruction using the automated procedure in Relion (B\u00a0=\u00a0\u221280.4 \u00c5\u00b2). For the start of round 2, the B-factors were reset to 15 \u00c5\u00b2, then the same steps were followed, except that solvent and ion atoms were added to AAVR residues 405\u2013499 and AAV 237\u2013735. The final model had a real-space correlation of CC\u00a0=\u00a00.88 vs. the sharpened map. Following restrained B-factor refinement, RMSDB\u00a0=\u00a01.24 \u00c5\u00b2 with mean AAV2 and AAVR B-factors of 15.2 and 27.7 \u00c5\u00b2 respectively. The effective resolution refined to d1/2 = 2.3 \u00c5 and the model envelope correction to 0.0, in excellent agreement with the FSC0.143 = 2.4 \u00c5 (Chapman et al., 2013).\n\nBiological analysis of the virus-receptor complex was aided by overlaying the contact footprints for PKD2 (on AAV2), epitopes and mutational sites of relevant footprints on projected surfaces of AAV structures. Graphical integration of sequence conservation (Figure 6d) was performed using Roadmap (Chapman, 1993), while other surface projections (Figure 6 and Figure 9) were calculated using Rivem (Xiao and Rossmann, 2007).\n\n### Mass spectrometry\n\nAAV2 capsids were cross-linked to MBP-PKD1-5 with a CID-cleavable, biotinylated cross-linker, cyanurbiotindimercaptopropionylsuccinimide (CBDPS-H8/D8; Creative Molecules, Inc, Cat No 014S). AAV2 and MBP-PKD1-5 (1:54 molar ratio,\u00a0AAVR:AAV2-subunit) were incubated together for 1 hr at room temperature (RT) to form complexes. CBDPS-H8/D8 cross-linker was added in 84-fold molar excess relative to MBP-PKD1-5 and incubated 30 min at room temperature (RT). (The mixture of AAV2 and MBP-PKD1-5 was in a buffer of 45 mM HEPES, 20 mM MgCl2, 70 mM NaCl2 at pH 7.4. After addition of cross-linker, the buffer at pH 7.4 contained 43 mM HEPES, 19 mM MgCl2, 67 mM NaCl2, 0.04% DMSO, pH 7.4.) Crosslinking was quenched by addition of 500 mM Tris, pH 7.4 (yielding 25 mM Tris) and samples were lyophilized and stored at \u221220\u00b0C. Cross-linked capsid-AAVR complexes were denatured (to increase the subsequent proteolytic digestion) through incubation for 30 min at 70\u00b0C in 50 \u03bcl 6 M urea, 25 mM Tris, pH 8.0. Dithiothreitol (DTT) was added to 10 mM final concentration and incubated an additional 30 min at 80\u00b0C. Iodoacetamide (IAA) was added to a final concentration of 10 mM and incubation continued for 30 more min at RT in the dark. After dilution to 3 M urea, 40 \u03bcl 0.1 \u03bcg/\u03bcl LysC/Tryp (Trypsin/Lys-C Mix, Mass Spec Grade, Promega Cat No V5071) was added and incubated another 4 hr at RT, followed by addition of Glu-C digest buffer (25 mM Tris, pH 7.4) and 40 \u03bcl 0.1 \u03bcg/\u03bcl Glu-C (Glu-C, Sequencing Grade, Promega Cat No V1651) and final incubation at 37\u00b0C for 16 hr. The digest reaction was quenched with formic acid.\n\nPeptides from digested AAV2-MBP-PKD1-5 complex were affinity purified to enrich in peptides containing the biotinylated CBDPS cross-linker. Affinity purification was performed using reagents and hardware provided in a Cleavable ICAT Reagent Kit for Protein Labeling (monoplex version) using the manufacturer\u2019s recommended protocol (Sciex). Briefly, peptides were first purified using cation exchange chromatography to remove unbound cross-linker. Then biotinylated peptides were purified using an avidin column, dried by vacuum centrifugation, dissolved in 20 \u00b5l of 5% formic acid and analyzed by liquid chromatography/mass spectrometry. Samples were injected onto an Acclaim PepMap 100 \u03bcm x 2 cm NanoViper C18, 5 \u03bcm trap (Thermo Fisher Scientific), at 5 \u00b5l/min for 10 min in mobile phase A containing water, 0.1% formic acid, then switched on-line to a PepMap RSLC C18, 2 \u03bcm, 75 \u03bcm x 25 cm EasySpray column (Thermo Fisher Scientific). Peptides were then eluted using a 7.5\u201330% mobile phase B (acetonitrile, 0.1% formic acid) gradient over 90 min at a 300 nl/min flow rate. Data-dependent tandem mass spectrometry analysis was performed using an Orbitrap Fusion instrument fitted with an EasySpray source (Thermo Fisher Scientific). Survey scans (m/z\u00a0=\u00a0400\u20131500) and MS2 scans (m/z\u00a0=\u00a0100\u20131800) were performed in the Orbitrap mass analyzer at a resolution\u00a0=\u00a0120,000, and 30,000, respectively, following higher energy collision dissociation (HCD) using a collision energy of 35 following quadrupole isolation at a 1.6 m/z isolation width. Peptides of charge states 3\u20137 were selected with signal intensities over 5 \u00d7 104 and having a targeted inclusion mass difference of 8.05 to select peptides containing the mass shifted CBDPS cross-linkers. The method also used dynamic exclusion with 30 s duration and mass tolerance of 10 ppm. Cross-linked peptides were identified (Figure 10) using StavroX software (version 3.6.0.1) (G\u00f6tze et al., 2012) using cross-linker masses of 509.0974 and 517.1476 for the (H8) and (D8) forms of the CBDPS cross-linker respectively, and mass precision tolerances of 2 and 5 ppm for precursors and fragment ions, respectively.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/44707/elife-44707-fig10-v2.jpg)\n\n**Figure 10.:** Fragmentation spectra of peptides cross-linked at (A) AAVDJ K556:AAVR K93, (B) AAV2 K490:AAVR K88, (C) AAV2 T560:AAVR K88, (D) AAV2 K556:AAVR K27, (E) AAV2 T450:AAVR K88, and (F) AAV2 K556:AAVR K286. Peaks corresponding to y and b fragments are colored blue and red, respectively. Resulting fragment ions shown in the insets.\n",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "d2d696a2-9a20-4118-9c98-e88a91464b2d",
+      "submission_id": "fb3281d9-d81d-4e55-a5cd-fd0dc1751e75",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sriram Subramaniam, University of British Columbia Canada\n\nReviewers:\n- Bernard Heymann, NIAMS/NIH United States\n- Xiao Xiao, University of North Carolina at Chapel Hill United States\n- Peter Tattersall\n\n## Review text\n\nDOI: [10.7554/eLife.44707.030](https://doi.org/10.7554/eLife.44707.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Structure of the gene therapy vector, adeno-associated virus with its cell receptor, AAVR\" for consideration by eLife.. Your article has now been reviewed by three peer reviewers, and the evaluation has been overseen by Sriram Subramaniam as Reviewing Editor and Cynthia Wolberger as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Bernard Heymann (Reviewer #1); Xiao Xiao (Reviewer #2); Peter Tattersall (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll reviewers of the manuscript agree that it represents a major contribution to our understanding of the AAV attachment and entry processes, which are central to its successful use and further exploitation as a gene therapy vector. The reviewers mostly had minor concerns, summarized below. These points need to be addressed before the manuscript can be accepted for publication in eLife.\n\nThe most significant concern bears on the accessibility of the manuscript to a general audience. The paper is a little hard to read and understand if approached in the order presented. It is difficult to follow the logic of the combination of methodologies and interaction partners used, without first reading the Experimental Design section that starts off the Materials and methods. It would make more sense, to insert this section at the beginning of the Results section and to provide some additional explanation that would be accessible to a general audience. In addition, the implications for the role of antibodies in competing for receptor binding should be explained more explicitly. Readers would also benefit from subheadings that highlight the scientific points in different sections.\n\nThe following additional points should be addressed:\n\n1) A simple bar diagram of the constructs, as presented in the Pillay et al., references cited might be helpful. The exact start and finish amino acids, within the full-length AAVR molecule, should be included to allow others to repeat and extend these important studies.\n\n2) Figures 1 and 2 have several small images that could use some labels.\n\n3) In Figure 2, specify which colors correspond to which classes. The classes in panels A-D should also be colored accordingly.\n\n4) Figure 3B is very complicated. Is there a clearer way to show it? In Figure 3D it is impossible to see the color under the hashed footprint.\n\n5) Figure 4 labeling is rather confusing because the black boxes correspondent to the VRI and VRIII regions, but it is not explicitly labeled. This may leave the readers guessing to the identity of the regions shown. Using I and II as labels also may be confusing because readers may believe the boxes correspond to VRI and VRII. Figure 4B and C are also somewhat confusing because the area shown is VRIII but is called region \"I\" in the legend. Unless region \"I\" refers to the black box in Figure 4A labeled with \"I\", the authors may want to figure out a better labeling scheme so it does not confuse the readers.\n\n6) Please show FSC curves and provide masked and unmasked FSC curves for the 2.4 \u00c5 map.\n\n7) \"Materials and methods are available as supplementary materials at the Science website\" \u2013 erroneous insertion should be corrected.\n\n8) Please rewrite this sentence in the Discussion to make its meaning clearer and more specific: \"Semantics, outdated by recent advances, sow confusion.\"\n\n9) Figure 1A legend: \"AAV\" \u2013 is this AAV2?\n\n10) \"shorter AAVR constructs were used henceforth\" \u2013 see comment above about the need for diagram.\n\n11) Please explain how \"near-saturated binding\" was established? What is the stoichiometry at this level of binding? Can the extent of the particle surface involved in adherence to the grid be estimated, and would this be expected to be unavailable for even small AAVR sub-species binding?\n\n12) Results, fifth paragraph: While the high resolution structure may show no evidence of longer range conformational change, one should recognize the caveat that these particles are VLPs, devoid of the genome and N-terminal extensions of the basic structural protein unit. There is significant evidence that these components affect the conformational flexibility of the parvovirus capsid versus virion, i.e. stiffness at the 2-fold, ability to extrude the VP N-termini through the 5-fold channel, etc.\n\n13) Results, sixth paragraph: steric blocking of AAVR binding by neutralizing antibody might not be the only clashes likely at the 3-fold. Although the beautiful AAVR PKD2 footprints in Figure 3 would appear to allow binding at all three positions at the 3-fold, how likely is it that three full-length AAVR ectodomains could be accommodated here?\n\n14) Subsection \u201cMass spectrometry\u201d, first paragraph: what were the buffer conditions used?\n",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a79f1de8-b2b3-4c00-b6ee-9bc5d5f35e7b",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C1",
+      "claim": "AAV vectors are preeminent in emerging clinical gene therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Adeno-associated virus (AAV) vectors are preeminent in emerging clinical gene therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract that reflects established knowledge in the field of gene therapy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "b9157c27-3195-4479-9c1e-4519198def2c",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C2",
+      "claim": "Generalizing beyond the most tractable genetic diseases will require modulation of cell specificity and immune neutralization.",
+      "claim_type": "EXPLICIT",
+      "source": "Generalizing beyond the most tractable genetic diseases will require modulation of cell specificity and immune neutralization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about requirements for future applications, based on inference from current limitations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "066882b8-2c8a-41f4-af61-2fbcf61689c2",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C3",
+      "claim": "Interactions of AAV with its cellular receptor, AAVR, are key to understanding cell-entry and trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions of AAV with its cellular receptor, AAVR, are key to understanding cell-entry and trafficking with the rigor needed to engineer tissue-specific vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about viral entry mechanisms and is a premise for the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "77e71930-fc74-45ad-a5f4-6394a24c7991",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C4",
+      "claim": "Cryo-electron tomography shows ordered binding of part of the flexible receptor to the viral surface, with distal domains in multiple conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-electron tomography shows ordered binding of part of the flexible receptor to the viral surface, with distal domains in multiple conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the cryo-ET experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "cbfc9364-a189-44ad-9533-720f23ece5a7",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C5",
+      "claim": "Regions of the virus and receptor in close physical proximity can be identified by cross-linking/mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Regions of the virus and receptor in close physical proximity can be identified by cross-linking/mass spectrometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cross-linking/mass spectrometry experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "6d9aef7e-1a0f-4d0c-8104-857a6e0f4166",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C6",
+      "claim": "Cryo-electron microscopy with a two-domain receptor fragment reveals the interactions at 2.4 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-electron microscopy with a two-domain receptor fragment reveals the interactions at 2.4 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the cryo-EM data and resolution measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "64626f6b-d4ca-473c-8dc0-2ff267a43e0e",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C7",
+      "claim": "AAVR binds between AAV's spikes on a plateau that is conserved, except in one clade whose structure is AAVR-incompatible.",
+      "claim_type": "EXPLICIT",
+      "source": "AAVR binds between AAV's spikes on a plateau that is conserved, except in one clade whose structure is AAVR-incompatible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data from cryo-EM and sequence conservation analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "b535cda6-bd0f-4552-98df-2d97d27ab9c0",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C8",
+      "claim": "AAVR's footprint overlaps the epitopes of several neutralizing antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "AAVR's footprint overlaps the epitopes of several neutralizing antibodies, prompting a re-evaluation of neutralization mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "20b9bbd2-78b6-4284-98fd-8a08597ea404",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C9",
+      "claim": "AAV has a 60-subunit protein capsid shell containing a single-stranded DNA genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The human parvovirus, AAV, has a 60-subunit protein capsid shell containing a single-stranded DNA genome (Xie et al., 2002; Chapman and Agbandje-Mckenna, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "34f46a20-0cf2-4eb2-9ebf-66947007eb40",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C10",
+      "claim": "Luxturna is the first in vivo gene therapy approved for clinical treatment in the US.",
+      "claim_type": "EXPLICIT",
+      "source": "Luxturna is the first in vivo gene therapy approved for clinical treatment in the US, with demonstrated efficacy combatting a retinal dystrophy that leads to loss of vision (Russell et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a published report and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "03b8bc56-df8d-40cd-8623-171f3227db0a",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C11",
+      "claim": "AAV2 attaches to heparan sulfate proteoglycan (HSPG).",
+      "claim_type": "EXPLICIT",
+      "source": "AAV2, the type species studied here, like several other AAVs, attaches to heparan sulfate proteoglycan (HSPG) (Summerford and Samulski, 1998; Kern et al., 2003; Opie et al., 2003; Huang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "b4b7bb64-741b-4fa9-8614-8ab3b8351ebb",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C12",
+      "claim": "AAVR was implicated as the key receptor for entry of a panel of AAV serotypes through genome-wide screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, through genome-wide screening for genes essential to transduction, the cellular protein AAVR was implicated as the key receptor for entry of a panel of AAV serotypes into representative cell types and, in vivo, in mice (Pillay et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "dffc8e6f-79e2-46e3-b5f8-35290a817c39",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C13",
+      "claim": "AAVR is a membrane protein whose glycosylation is not essential for binding or cell-transduction by AAV.",
+      "claim_type": "EXPLICIT",
+      "source": "AAVR is a membrane protein whose glycosylation is not essential for binding or cell-transduction by AAV (Pillay et al., 2016; Pillay et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "7230c02f-575a-4912-8af7-86df7eeb8da8",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C14",
+      "claim": "AAVR comprises a signal peptide, a MANEC domain, five immunoglobulin-like PKD domains (PKD1-5), a transmembrane region and a small cytoplasmic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "From N- to C-terminus, it comprises (Figure 1) a signal peptide, a MANEC domain, five immunoglobulin-like PKD domains (PKD1-5) (Ibraghimov-Beskrovnaya et al., 2000), a transmembrane region and a small cytoplasmic domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and reference to Figure 1 showing the domain structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "04e5c47e-1b09-4616-b05b-9b131b7f1cb0",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C15",
+      "claim": "Over-expression of 'mini-AAVR' (PKD domains 1\u20133, but lacking MANEC) can support transduction in an AAVR knock-out.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-expression of 'mini-AAVR' (PKD domains 1\u20133, but lacking MANEC) can support transduction in an AAVR knock-out, while AAV-binding and transduction inhibition are both achieved with a fusion of maltose binding protein and the five PKD domains (MBP-PKD1-5) (Pillay et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "efe7a286-437a-4555-8b51-3b76ff50d60f",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C16",
+      "claim": "PKD domain 2 (PKD2) was most critical for AAV2's interactions, in contrast to PKD1 for AAV5.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, in concurrent studies, it emerged that PKD domain 2 (PKD2) was most critical for AAV2's interactions, in contrast to PKD1 for AAV5 (Pillay et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a concurrent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "9f581346-2e5f-4e75-9e5a-7ecddee01844",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C17",
+      "claim": "AAVR binds tightly to the AAV2 viral surface through well-defined interactions with PKD2.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, cryo-ET, together with single particle cryo-EM and cross-linking analysis, reveal that AAVR binds tightly to the AAV2 viral surface through well-defined interactions with PKD2; PKD1 is more loosely associated, and the membrane-proximal domains (PKD3-5), distal from the virus surface, have varied/flexible conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data from cryo-ET, cryo-EM, and cross-linking presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "d320610c-a9a5-4671-ac10-3840056f6205",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C18",
+      "claim": "PKD1 is more loosely associated with AAV2 than PKD2.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, cryo-ET, together with single particle cryo-EM and cross-linking analysis, reveal that AAVR binds tightly to the AAV2 viral surface through well-defined interactions with PKD2; PKD1 is more loosely associated, and the membrane-proximal domains (PKD3-5), distal from the virus surface, have varied/flexible conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data from cryo-ET, cryo-EM, and cross-linking presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "16c3a43c-5e51-4d19-965c-81345291decf",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C19",
+      "claim": "The membrane-proximal domains (PKD3-5) of AAVR, distal from the virus surface, have varied/flexible conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, cryo-ET, together with single particle cryo-EM and cross-linking analysis, reveal that AAVR binds tightly to the AAV2 viral surface through well-defined interactions with PKD2; PKD1 is more loosely associated, and the membrane-proximal domains (PKD3-5), distal from the virus surface, have varied/flexible conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data from cryo-ET showing multiple conformations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "06c79a42-7ce7-4973-bbea-708abb09fcd4",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C20",
+      "claim": "Most capsid proteins are viral protein (VP) 3, but alternative splicing leads to about 10% fractions of two N-terminally extended variants, VP1 and VP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Most capsid proteins are viral protein (VP) 3, but alternative splicing leads to about 10% fractions of two N-terminally extended variants, VP1 and VP2 (Berns, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work and represents established knowledge about AAV capsid composition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "1e1a41df-db6a-4dd4-9852-980cb7350baf",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C21",
+      "claim": "The unique regions of VP1 and VP2 have not been resolved in crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The unique regions of VP1 and VP2 have not been resolved in crystal structures (Xie et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a prior crystallographic study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "f7c91e2a-81fe-4a99-a708-6ec33caf268c",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C22",
+      "claim": "From eight tilt series, 2602 of the 60 sites in 1321 particles (3.3%) were occupied, averaging 1.97 receptors/virion.",
+      "claim_type": "EXPLICIT",
+      "source": "From eight tilt series, 2602 of the 60 sites in 1321 particles (3.3%) were occupied, averaging 1.97 receptors/virion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by quantitative analysis of the cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "046d355b-a665-4038-8345-0033b4413bb1",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C23",
+      "claim": "Multivariate data analysis (MDA) and ascendant classification yielded 20 classes, four commensurate with AAVR's size.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariate data analysis (MDA) and ascendant classification yielded 20 classes, four commensurate with AAVR's size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the computational analysis of cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "9b881f2e-f687-451a-b5d8-f3373b6979df",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C24",
+      "claim": "The four classes indicated a single binding interface near spikes surrounding the threefold axes, with more varied conformation of distal AAVR domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The four classes indicated a single binding interface near spikes surrounding the threefold axes, with more varied conformation of distal AAVR domains that were less constrained by viral interactions (Figure 2B,C; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-ET classification results shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "13528c4a-dd35-497f-b1b2-568df85ca4cf",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C25",
+      "claim": "Higher resolution was attempted by switching from tomography to single particle analysis (SPA), with classification of smaller sub-volumes local to each threefold axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher resolution was attempted, switching from tomography to single particle analysis (SPA), with classification of smaller sub-volumes local to each threefold axis (Ilca et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach taken, supported by citation to the method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "26dc0bba-ca24-4b0f-a226-d383767dfd19",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C26",
+      "claim": "Receptor-bound sites could be distinguished from unoccupied, with a single domain of AAVR bound tightly to AAV at ~10 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptor-bound sites could be distinguished from unoccupied, with a single domain of AAVR bound tightly to AAV, at the location seen by tomography, but now at ~10 \u00c5 resolution (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the single particle analysis data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "74fd2e2e-5bcb-4314-9e31-92d3bb4cf3c2",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C27",
+      "claim": "Size exclusion chromatography revealed gradual oligomerization of several AAVR constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Size exclusion chromatography revealed gradual oligomerization of several AAVR constructs (Figure 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the chromatography data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "9133ed3c-c11d-4973-83f2-f905c36cb17d",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C28",
+      "claim": "The PKD1-2 construct yielded AAV2 complexes with more saturated binding at symmetry-equivalent sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The smaller PKD1-2 construct yielded AAV2 complexes that were found empirically (see below) to have more saturated binding at symmetry-equivalent sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the empirical observations from the cryo-EM experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "ee03a033-018f-49d3-a515-3cb5c3b17626",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C29",
+      "claim": "The more highly saturated binding allowed single particle processing with icosahedral symmetry, yielding a reconstruction with an FSC0.143 of 2.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The more highly saturated binding allowed single particle processing with icosahedral symmetry, yielding a reconstruction with an FSC0.143 of 2.4 \u00c5 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the cryo-EM data and resolution measurements shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "a23792fa-729d-4a07-926a-659c991bfc39",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C30",
+      "claim": "A single domain was revealed as PKD2 at 2.4 \u00c5 resolution, allowing assignment of the tightly-bound domain.",
+      "claim_type": "EXPLICIT",
+      "source": "A single domain was revealed, fully consistent with the tomography and SPA of the PKD1-5 complex, but now resolving the backbone trace and most side chains (Figure 2F\u2013H), allowing assignment of the tightly-bound domain as PKD2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the high-resolution cryo-EM data shown in Figure 2F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "c908e135-fd42-4f52-8bfa-c3f2321bc4e6",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C31",
+      "claim": "Conservative atomic refinement gives a lower bound PKD2 occupancy of 0.48.",
+      "claim_type": "EXPLICIT",
+      "source": "Conservative atomic refinement, constraining receptor and virus B-factors to be equal, gives a lower bound PKD2 occupancy of 0.48.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the atomic refinement calculations performed on the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "f2cc060a-f47f-4d66-b5ce-d64ea9e59e3f",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C32",
+      "claim": "When B-factors are refined, occupancy refines to 0.59.",
+      "claim_type": "EXPLICIT",
+      "source": "When B-factors are refined, they account for the expected higher disorder in the receptor ligand (\u27e8BAAV2\u27e9=15.2 \u00c5\u00b2; \u27e8BAAVR\u27e9=27.7 \u00c5\u00b2), and occupancy refines to 0.59.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the refined atomic model calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "5de43ae1-1de3-41fd-b71b-e78672ac8258",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C33",
+      "claim": "The occupancy of 0.59 corresponds to binding at 70% of remaining available sites.",
+      "claim_type": "EXPLICIT",
+      "source": "If one speculates that AAV2 particles, adhered to an EM grid, rest on three spikes, then binding of PKD1-2 would be occluded at minimally 9 of 60 (15%) symmetry-equivalent sites. The occupancy of 0.59 therefore corresponds to binding at 70% of remaining available sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from the occupancy data and geometric considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "fbbdaf04-d784-48dc-bab1-9892b1ae3057",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C34",
+      "claim": "The empirical stoichiometry of approximately two AAVR constructs per three AAV2 subunits provides evidence that binding at adjacent sites is not completely excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "The empirical stoichiometry of approximately two AAVR constructs per three AAV2 subunits provides evidence that the binding of the shortened PKD1-2 construct at adjacent sites on the virus is not completely excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the stoichiometry data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "558fb5a7-232f-4bf5-a6ca-d8fe9df80b35",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C35",
+      "claim": "The 13.4 \u00c5 distance between AAVR-Lys93 N\u03b6 and AAV2-Lys556 in the PKD1-2 complex is consistent with a cross-linking experiment using CBDPS (14 \u00c5 spacer).",
+      "claim_type": "EXPLICIT",
+      "source": "The 13.4 \u00c5 distance between AAVR-Lys93 N\u03b6 and AAV2-Lys556 in the PKD1-2 complex (that was not cross-linked in the EM sample) is consistent with an MS experiment in which AAVDJ was cross-linked using CBDPS (14 \u00c5 spacer) to an AAVR construct missing only the transmembrane and C-terminal tail (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of the structural model with cross-linking/mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "bd2b6cc7-445a-4234-8dab-64aacbca51d5",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C36",
+      "claim": "A homology model of PKD1 can be adjusted to satisfy simultaneously 3 of 4 CBDPS cross-links between AAV2 and MBP-PKD1-5.",
+      "claim_type": "EXPLICIT",
+      "source": "A homology model of PKD1, anchored by the high-resolution PKD2 structure, can be adjusted to satisfy simultaneously 3 of 4 CBDPS cross-links between AAV2 and MBP-PKD1-5, and to explain diffuse (disordered) EM density above each 2-fold axis that is suggestive of multiple/asymmetric configurations (Table 1; Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling that integrates cross-linking data with EM density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "e7dcf590-166f-4457-af2a-7a5a2b888b82",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C37",
+      "claim": "On receptor-binding, AAV2 undergoes only limited conformational change.",
+      "claim_type": "EXPLICIT",
+      "source": "On receptor-binding, AAV2 undergoes only limited conformational change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of the AAV2 structure with and without receptor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "3ac15664-e691-41dc-a5dc-0ac30ea275a7",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C38",
+      "claim": "At variable region (VR)-I, residues 263\u2013266 are displaced 2.1\u20133.9 \u00c5 (C\u03b1) and become more disordered through conflict with AAVR residues 123\u2013125.",
+      "claim_type": "EXPLICIT",
+      "source": "At variable region (VR)-I, residues 263\u2013266 are displaced 2.1\u20133.9 \u00c5 (C\u03b1) and become more disordered through conflict with AAVR residues 123\u2013125.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison of AAV2 with and without receptor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "57ae96df-435b-4484-9a14-26b35f141ae8",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C39",
+      "claim": "The high-resolution structure shows no evidence of longer range conformational change in AAV2 upon receptor binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The high-resolution structure shows no evidence of longer range conformational change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of the high-resolution cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "d8ede64d-0e63-4905-af79-9cd4693ec648",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C40",
+      "claim": "The footprint of PKD2 on AAV2 straddles the plateau that extends radially from each threefold axis, beyond two adjacent spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "The footprint of PKD2 on AAV2 straddles the plateau that extends radially from each threefold axis, beyond two adjacent spikes (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the structural data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "83db4241-c895-41b3-ba63-0b5b43853dee",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C41",
+      "claim": "PKD2's N-terminus is near the twofold axis.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2's N-terminus is near the twofold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "cf943718-68a7-4aaf-b884-543dcee14bb1",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C42",
+      "claim": "The epitope of the neutralizing monoclonal antibody A20 overlaps with the AAVR footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "The epitope of the best characterized neutralizing monoclonal antibody (MAb) A20 (McCraw et al., 2012) overlaps with the AAVR footprint, and suggests that entry or trafficking might be blocked even without inhibition of (glycan-mediated) cell attachment (Wobus et al., 2000) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 6B and cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "b39529bf-4dc0-4c6f-b987-fea6d23cd4c2",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C43",
+      "claim": "Overlap is seen between AAVR footprint and epitopes for other AAV2-neutralizing monoclonal antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlap is seen for the other AAV2-neutralizing monoclonal antibodies (MAbs; Figure 6C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparisons shown in Figure 6C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "47f458f3-840c-419c-8dd8-2f3cddcc4115",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C44",
+      "claim": "Clashes with PKD2 or adjacent domains are predicted when the PKD2-AAV2 footprint is overlaid on MAb complexes of AAV1/6.",
+      "claim_type": "EXPLICIT",
+      "source": "Clashes with PKD2 or adjacent domains are predicted when the PKD2-AAV2 footprint is overlaid on MAb complexes of AAV1/6 (Gurda et al., 2013; Tseng and Agbandje-McKenna, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural modeling and comparison with cited structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "63fe259f-08fe-40f2-9e16-cd4f00c5eb79",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C45",
+      "claim": "It is plausible that the neutralization mechanism of AAV antibodies might commonly be steric blocking of AAVR interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, it is plausible that the neutralization mechanism of AAV antibodies might commonly be steric blocking of AAVR interactions, although other mechanisms are likely also at work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the structural overlap data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "e7ff1a25-4dbb-4939-8347-c87138cd700a",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C46",
+      "claim": "The PKD2 footprint corresponds to a 'dead-zone' where substitution mutations abrogate transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Importance of the PKD2 footprint to AAV is evidenced in the striking correspondence to a 'dead-zone', where substitution mutations abrogate transduction (Figure 6F) (Lochrie et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison with published mutagenesis data cited and shown in Figure 6F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "f502f822-f512-49db-b88f-1ef5ae8903b9",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C47",
+      "claim": "Excluding the AAV4 clade, sequence is less variable in the AAVR binding site than on other antibody-accessible surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Excluding the AAV4 clade, which, alone, does not bind AAVR, sequence is less variable than on other antibody-accessible surfaces, suggesting a greater evolutionary/functional cost to immune-escape mutation (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence conservation analysis shown in Figure 6G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "9f8f598f-e922-4da5-9bd9-9e427b3f55ab",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C48",
+      "claim": "VR-I and III are at the core of the AAVR footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "VR-I and III are at the core of the AAVR footprint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data showing the binding interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "274de950-d042-4d3d-8a19-ab77a0bdd54d",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C49",
+      "claim": "Sequence variability in VR I-III is markedly less than in VR IV-IX among AAVR-binding serotypes that exclude the AAV4 clade.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the fivefold proximal VRII, sequence variability is actually markedly less than in VR IV-IX, specifically among the AAVR-binding serotypes that exclude the AAV4 clade (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "b22c1712-f3e2-4193-bbdf-13da4578d258",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C50",
+      "claim": "Structural conservation of the PKD2 footprint does not extend to AAV4 and AAVrh32.33.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural conservation of the PKD2 footprint does not extend to AAV4 and AAVrh32.33 which differ at the two principal contact points, VR-I and III (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "22a8c3c0-09b9-4942-b4ff-2265bb4cfd9d",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C51",
+      "claim": "Superimposition on the AAV2-AAVR complex shows binding-incompatibility of the AAV4 clade due to sequence insertion and deletion in two loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Superimposition on the AAV2-AAVR complex shows binding-incompatibility of the AAV4 clade, due to sequence insertion and deletion in the two loops, explaining the recent finding that AAV4, alone among representative extant and ancestral primate AAVs, uses a different receptor (Dudek et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural modeling and cited experimental findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "fd42b586-e69c-444c-942b-14de9003b668",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C52",
+      "claim": "When the AAV2-AAVR structure is superimposed on AAV-glycan complexes, AAVR conflicts with heparan sulfate analogs at the site shared by AAV2 and AAVDJ.",
+      "claim_type": "EXPLICIT",
+      "source": "When our structure is superimposed on those of AAV-glycan complexes, AAVR conflicts with heparan sulfate analogs at the site shared by AAV2 and AAVDJ (O'Donnell et al., 2009; Xie et al., 2017; Xie et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural superimposition with cited glycan complex structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "f14c7a30-80a8-43d1-a80c-7bbbe8e6bf95",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C53",
+      "claim": "Arg585 and Arg587 (AAV2 numbering) interact electrostatically either with glycan sulfates or AAVR Asp459.",
+      "claim_type": "EXPLICIT",
+      "source": "Arg585 and Arg587 (AAV2 numbering) interact electrostatically either with glycan sulfates or AAVR Asp459.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis of the binding interface.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "4a1d51ea-a229-4546-8fb6-edbba1b11a1d",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C54",
+      "claim": "There is some overlap between AAVR and AAV1/6-bound sialic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "There is some overlap between AAVR and AAV1/6-bound sialic acid (Huang et al., 2016), but none with sucrose octasulfate bound to AAV3B at Arg594 (Lerch and Chapman, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison with cited glycan complex structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "41a5f1b9-a669-4ca0-935a-589de55c74ca",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C55",
+      "claim": "The viral symmetry would allow some sites on AAV to remain glycan-attached while others become AAVR-bound.",
+      "claim_type": "EXPLICIT",
+      "source": "The viral symmetry would allow some sites on AAV to remain glycan-attached, while others become AAVR-bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data and icosahedral symmetry.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "76c90089-f527-47fa-a9c1-d1ca6374e4c6",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C56",
+      "claim": "Inter-domain flexibility that complicated structure determination might be key in vivo, allowing cell-distal domains of AAVR to be bound at open sites on AAV.",
+      "claim_type": "EXPLICIT",
+      "source": "The inter-domain flexibility that complicated structure determination might be key, in vivo, allowing cell-distal domains of AAVR to be bound at open sites on AAV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance of the observed flexibility.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "9d3ca75e-192a-4143-b8d3-b0f0830d1893",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C57",
+      "claim": "This investigation establishes EM as a centerpiece in the structure determination of flexible molecules using hybrid-approach divide-and-conquer strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "This investigation establishes EM as a centerpiece in the structure determination of flexible molecules, using hybrid-approach divide-and-conquer strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the methodological approach and results of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "34d66856-d169-4971-8e2a-e5d62fdcefb8",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C58",
+      "claim": "Resolution was limited in complexes with PKD1-5 constructs because of heterogeneity in domain orientations, reduced occupancy, and oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Resolution was limited in complexes with PKD1-5 constructs because of: (a) heterogeneity in domain orientations of a hinged receptor; (b) occupancy reduced by conflicts, not between PKD2 domains themselves at neighboring symmetry-related viral sites, but downstream domains (PKD3-5); and likely (c) oligomerization of larger receptor constructs, which, when well separated-particles are selected from EM images, biases processing toward virions with lower receptor occupancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations and data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "8f96af57-84ee-4114-8388-a1d9d98b1a33",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C59",
+      "claim": "The combination of cryo-ET and cross-linking/mass spectrometry can be a powerful combination for flexible molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "This work provides an affirmation that low resolution electron microscopy and x-MS can be a powerful combination, even with flexible molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the successful application of these methods in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "7ce6f5e3-cf74-4f7a-a340-9ad9897c063f",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C60",
+      "claim": "Concordance of the PKD2 structure at different resolutions argues that the atomic interactions revealed at 2.4 \u00c5 are not an artifact of using a truncated PKD1-2 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Concordance of the PKD2 structure at 2.4 \u00c5 resolution with the ~10 \u00c5 view of PKD2 from SPA/sub-volume extraction and the ~30 \u00c5 cryo-ET, both from complexes with the entire PKD1-5, argues that the atomic interactions revealed at 2.4 \u00c5 are not an artifact of using a truncated PKD1-2 receptor, as does consistency of the atomic model with distances expected from x-MS with the five-domain construct or a near-complete receptor ecto-domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the consistency of results across different methods and constructs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "681b7dec-6932-4369-924e-6b22ad443946",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C61",
+      "claim": "The overlap between the PKD2 footprint and epitopes for some AAV-neutralizing monoclonal antibodies contradicts some prior conclusions about antibodies not impacting receptor-binding.",
+      "claim_type": "EXPLICIT",
+      "source": "One surprise from our structure might be the overlap between the PKD2 footprint and epitopes for some of the AAV-neutralizing monoclonal antibodies, given prior statements about particular antibodies not impacting receptor-binding (eg. Gurda et al., 2012). While our findings contradict some prior conclusions, they are actually consistent with much of the underlying data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the current structural findings with prior published work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "f2f06468-61c1-4722-8392-beca7c4bca40",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C62",
+      "claim": "Confusion has resulted from the lack of distinction in the historical literature between the attachment of AAV to cells and its entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Confusion has resulted from the lack of distinction in the historical literature between the attachment of AAV to cells and its entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the state of the literature based on analysis of prior studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "906d2b42-c2c7-4ac8-91e3-5cf1c441b07f",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C63",
+      "claim": "Glycans should not be considered as receptors from the virus' perspective, but as cell-attachment factors whose interactions may not be highly specific.",
+      "claim_type": "EXPLICIT",
+      "source": "From the virus' perspective, the glycans should not be considered as receptors, but as cell-attachment factors whose interactions may not be highly specific (Zhang et al., 2013; Pillay et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the current findings and cited studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "20a1e69b-c3d0-40bb-af07-0ea49623d90e",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C64",
+      "claim": "AAVR is needed in endosomal trafficking of AAV from the cell surface toward the nucleus for productive infection/transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "While glycans dominate surface attachment, AAVR is needed in endosomal trafficking of AAV from the cell surface toward the nucleus for productive infection/transduction (Pillay et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "f124a2c6-085f-4636-b3f9-e49e4dcc23d8",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C65",
+      "claim": "Future analyses should reflect that glycans are attachment factors and that productive entry depends on interactions with protein receptors like AAVR.",
+      "claim_type": "EXPLICIT",
+      "source": "To reiterate in other words, future analyses should reflect our new understanding that the glycans, until recently considered primary receptors, are more properly considered as attachment factors, and that productive entry (from the endosome into the cytoplasm) depends on interactions with different protein receptors, like AAVR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the current findings and interpretation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "b9bee9a7-c1bc-4dca-b4b4-0d51f8fa447a",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C66",
+      "claim": "Binding of some of the most neutralizing MAbs interferes with AAVR interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The current work shows that binding of some of the most neutralizing MAbs interferes with these interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural overlap data showing epitope-footprint overlap.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "a7926024-7c9c-4a91-aaf5-2e1b4e3b3427",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C67",
+      "claim": "A variety of neutralization mechanisms, not just inhibition of AAVR binding, will likely be in play for different antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that diversity in antibody-binding sites has previously been noted, and that a variety of neutralization mechanisms, not just inhibition of AAVR binding, will likely be in play for different antibodies (Gurda et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on prior observations and the current findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "3fe31d4a-04e3-4dd2-8216-6158c041ee2c",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C68",
+      "claim": "The structure provides a roadmap that will support experimental perturbation of the interactions toward rational modulation of cell targeting and neutralization escape.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure provides a roadmap that will support experimental perturbation of the interactions, a step toward rational modulation of cell targeting and neutralization escape (Asokan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about the potential applications of the structure.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "a66bc4e6-74e4-4c1c-841d-a7eddd1c5e20",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C69",
+      "claim": "The current work highlights the overlap/juxtaposition of epitopes with the binding site for AAVR, relevant to engineering vectors to escape immune neutralization.",
+      "claim_type": "EXPLICIT",
+      "source": "Relevant to engineering vectors to escape immune neutralization from pre-existing NAbs, the current work highlights the overlap/juxtaposition of epitopes to be targeted, with the binding site for AAVR, the integrity of which is needed for productive infection/transduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the implications of the structural findings for vector engineering.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "6a716bd8-723c-4314-91ff-3df63cdbf605",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C70",
+      "claim": "This work will be a key foundation for attempts to modulate immune interactions without collateral disruption of cell entry.",
+      "claim_type": "EXPLICIT",
+      "source": "This work will be a key foundation for attempts to modulate immune interactions without collateral disruption of cell entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about the potential impact of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "e12eaeff-d3fe-4ac6-955d-d08f1ebdf0da",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C71",
+      "claim": "AAV2 virus like particles (VLPs) were expressed in Sf9 cells using Invitrogen's Bac-to-Bac expression system.",
+      "claim_type": "EXPLICIT",
+      "source": "AAV2 virus like particles (VLPs) were expressed in Sf9 cells using Invitrogen's Bac-to-Bac expression system (Urabe et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "7b3a48a6-88b0-4a71-9d7b-8c421180b0b9",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C72",
+      "claim": "Empty capsids were purified using three rounds of CsCl density gradient ultracentrifugation, followed by heparin affinity chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "Empty capsids were purified using three rounds of CsCl density gradient ultracentrifugation, followed by heparin affinity chromatography, eluting with NaCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental purification method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "5a146588-3087-409c-abed-89499e5833fb",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C73",
+      "claim": "PKD domains 1\u20135 of AAVR were expressed in BL21(DE3) E. coli using the pMAL expression system.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD domains 1\u20135 of AAVR were expressed in BL21(DE3) E. coli using the pMAL expression system (New England Biolabs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental expression method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "35eb99a5-8310-485f-94d0-9bf7d7b854a9",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C74",
+      "claim": "During review, a structure showing AAVR's PKD2 bound to AAV2 at 2.8 \u00c5 resolution became available.",
+      "claim_type": "EXPLICIT",
+      "source": "During review, a structure showing AAVR's PKD2 bound to AAV2 at 2.8 \u00c5 resolution became available (Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a concurrent publication, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "783ac91e-1d49-4322-b628-0ca59b96b7aa",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C75",
+      "claim": "The structures from this study and Zhang et al. (2019) mostly validate each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Mostly the structures validate each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with the concurrent publication.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "b6da1d8e-f5f2-458e-acd1-8980b90ca717",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "claim_id": "C76",
+      "claim": "While Zhang et al. (2019) found the sites to be non-overlapping, this study finds overlap between the binding site of AAVR and neutralizing monoclonal antibody A20.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while Zhang et al. (2019) found the sites to be non-overlapping, we find overlap between the binding site of AAVR and neutralizing monoclonal antibody A20 (McCraw et al., 2012), and with analogs of heparan sulfate (Xie et al., 2013; Xie et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of findings between this study and the concurrent publication.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "47bf3ca1-aa94-4e58-8827-1eaa945f518b",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cryo-electron tomography of AAV2 complexed with MBP-PKD1-5 reveals that AAVR binds to AAV2 with PKD2 tightly bound to the viral surface near threefold axes, PKD1 more loosely associated, and PKD3-5 domains exhibiting flexible conformations. From 1321 particles analyzed, an average of 1.97 receptors per virion were observed, with classification yielding four major classes showing varied distal domain conformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C17-C19, C22-C24 are well-supported by the cryo-ET experimental data, including quantitative particle analysis, multivariate classification, and visual evidence in Figures 2-3. The structural observations are internally consistent and supported by multiple independent measurements including occupancy calculations and classification results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "bdb10e11-fdd9-4d15-ad8b-3cc5a41eed9a",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single particle analysis with sub-volume extraction of AAV2-MBP-PKD1-5 complexes achieved ~10 \u00c5 resolution, revealing a single AAVR domain tightly bound to AAV2 at the same location identified by tomography, with receptor-bound sites distinguishable from unoccupied sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are supported by the methodological approach and data shown in Figure 2E. The resolution improvement from ~30 \u00c5 (tomography) to ~10 \u00c5 (SPA) is reasonable and the consistency with tomography results validates the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "5886fa45-e6c4-44fb-a269-1cad75874cf1",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "High-resolution cryo-EM of AAV2 complexed with PKD1-2 achieved 2.4 \u00c5 resolution (FSC0.143), revealing PKD2 as the tightly-bound domain with backbone and side-chain detail. Atomic refinement yielded PKD2 occupancy of 0.48-0.59, corresponding to ~70% of available sites, with stoichiometry of approximately 2 AAVR per 3 AAV2 subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C28-C34 are strongly supported by the cryo-EM data in Figures 2F-H and 5, with appropriate resolution metrics (FSC curves), atomic refinement statistics, and occupancy calculations. The B-factor refinement and occupancy analysis are methodologically sound, though the speculation about grid-occluded sites (C33) introduces some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "edd330d3-0eb7-4c5e-9deb-1180726d286f",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cross-linking mass spectrometry with CBDPS identified regions of AAV2 and AAVR in close proximity. The 13.4 \u00c5 distance between AAVR-Lys93 and AAV2-Lys556 is consistent with the 14 \u00c5 CBDPS spacer. A homology model of PKD1 satisfies 3 of 4 cross-links and explains diffuse EM density suggesting multiple PKD1 configurations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C35-C36 are supported by the cross-linking/MS data in Table 1 and Figure 10, with distances measured from the EM structure consistent with cross-linker spacer length. The satisfaction of 3 of 4 cross-links is reasonable, though the failure to satisfy one cross-link (C36) and the reliance on homology modeling introduces some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "7d00d902-fa6b-41c6-b1f6-073ded1dc50f",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Upon AAVR binding, AAV2 undergoes only limited conformational change, with residues 263-266 in variable region I displaced 2.1-3.9 \u00c5 and becoming more disordered due to conflict with AAVR residues 123-125. No evidence of longer-range conformational changes was observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by structural comparison of AAV2 with and without receptor. The localized conformational changes are well-characterized with specific displacement measurements, and the absence of long-range changes is appropriately stated as negative evidence from the high-resolution structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "7fa85483-cfd0-4538-b0de-0e352e93a3a3",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PKD2 binds to AAV2 on a conserved plateau between spikes surrounding threefold axes, with the N-terminus near the twofold axis. Variable regions VR-I and VR-III are at the core of the AAVR footprint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C40-C41, C48 are directly supported by the structural data in Figure 6 and Table 2, showing the detailed binding interface. The conservation analysis (C7) is supported by sequence data in Figures 6G and 7.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "551ad3f1-0736-4da6-acc1-f57f29103582",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The AAVR footprint overlaps with epitopes of several neutralizing monoclonal antibodies including A20, C37B, D3, and C24B. Structural modeling predicts clashes between PKD2 and antibodies bound to AAV1/6. This suggests that steric blocking of AAVR interactions may be a common neutralization mechanism, though other mechanisms likely also contribute.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C42-C45, C66 are supported by structural comparisons in Figure 6B-E with cited antibody structures. The overlap analysis is direct and well-documented. However, the mechanistic interpretation (C45) is appropriately qualified as 'plausible' and speculative, acknowledging other potential mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "6a2e90d1-5c5c-4882-8bc1-af7363210881",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The PKD2 footprint corresponds to a 'dead-zone' where substitution mutations abrogate transduction. Excluding the AAV4 clade, sequence variability in the AAVR binding site (VR-I to VR-III) is markedly less than in VR-IV to VR-IX and less than other antibody-accessible surfaces, suggesting evolutionary constraint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47, C49 are supported by comparison with published mutagenesis data (Figure 6F) and sequence conservation analysis (Figures 6G and 7). The correlation between the binding site and the mutational 'dead-zone' is striking and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "a4b75a73-98e8-4dae-807d-8c18ec0a1d9e",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The PKD2 footprint is not structurally conserved in AAV4 and AAVrh32.33, which differ at contact points VR-I and VR-III. Superimposition shows binding incompatibility due to sequence insertions and deletions in these loops, explaining why AAV4 uses a different receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are supported by structural comparison in Figure 8 and are consistent with cited experimental findings (Dudek et al., 2018) showing AAV4 uses a different receptor. The structural basis for incompatibility is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "a6f1f665-5507-4fc0-98e8-3b51df04f9ea",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Structural superimposition shows AAVR conflicts with heparan sulfate analogs at sites shared by AAV2 and AAVDJ, with Arg585/Arg587 interacting electrostatically with either glycan sulfates or AAVR Asp459. Some overlap exists with AAV1/6-bound sialic acid. The viral icosahedral symmetry could allow simultaneous glycan attachment and AAVR binding at different sites, with inter-domain flexibility potentially enabling cell-distal AAVR domains to bind at open sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by structural superimposition with cited glycan complex structures. However, C55-C56 are speculative inferences about functional implications. The speculation is reasonable given the structural data and symmetry considerations, but lacks direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "352ee0d4-0226-4531-837b-1c6952b69c42",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Size exclusion chromatography revealed oligomerization of AAVR constructs. Resolution was limited in PKD1-5 complexes due to heterogeneity in domain orientations, reduced occupancy from conflicts between downstream domains (PKD3-5) rather than PKD2 itself, and likely oligomerization bias toward lower-occupancy particles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 is directly supported by chromatography data in Figure 4. Claim C58 represents a reasonable inference from experimental observations explaining resolution limitations, though the oligomerization bias mechanism is somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "de1bb0a0-74df-468f-b5e1-a4d336f04eb6",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "This investigation establishes EM as central to structure determination of flexible molecules using hybrid divide-and-conquer strategies. The combination of cryo-ET and cross-linking/mass spectrometry is affirmed as powerful for flexible molecules. Concordance of PKD2 structure across different resolutions and methods argues against artifacts from using truncated constructs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C59-C60 are methodological conclusions well-supported by the successful application of multiple complementary techniques. The consistency across methods (cryo-ET at ~30 \u00c5, SPA at ~10 \u00c5, high-resolution cryo-EM at 2.4 \u00c5, and cross-linking) provides strong validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "47069873-826e-47c9-92d5-9cb060976922",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The overlap between PKD2 footprint and neutralizing antibody epitopes contradicts some prior conclusions but is consistent with underlying data. Historical confusion resulted from not distinguishing cell attachment from entry. Glycans should be considered attachment factors rather than receptors, while AAVR is needed for endosomal trafficking. A variety of neutralization mechanisms likely operate for different antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65, C67 represent a re-interpretation of prior literature in light of new structural findings. The reinterpretation is well-reasoned and supported by comparison with cited studies (C61, C64), though some aspects are speculative (C65, C67). The distinction between attachment and entry is an important conceptual clarification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "f061d2c4-4bd1-4136-96bf-d9de1004494a",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Generalizing AAV gene therapy beyond tractable diseases will require modulating cell specificity and immune neutralization. The structure provides a roadmap for experimental perturbation toward rational modulation of cell targeting and neutralization escape. The work highlights overlap between epitopes and the AAVR binding site, providing foundation for modulating immune interactions without disrupting cell entry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C2, C68-C70 are forward-looking statements about potential applications. While the structural foundation is solid, these claims are speculative about future work and applications. No experimental validation of engineering approaches is provided in the current manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "6282c0ce-b9eb-40fb-a7c8-1791b160ec7e",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "A concurrent structure of AAVR PKD2 bound to AAV2 at 2.8 \u00c5 resolution (Zhang et al., 2019) mostly validates this study's findings. However, while Zhang et al. found non-overlapping sites, this study finds overlap between AAVR binding site and neutralizing antibody A20 epitope and heparan sulfate analogs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 represent comparison with concurrent work. The general validation (C75) is supported, while the specific disagreement about overlap (C76) is documented with appropriate citations. The discrepancy is clearly stated and represents a legitimate scientific difference in interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "a1884903-48dd-4bdc-beb7-5e8e027866b3",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "AAV2 VLPs were expressed in Sf9 cells using the Bac-to-Bac system and purified by CsCl gradient ultracentrifugation and heparin affinity chromatography. AAVR PKD1-5 was expressed in E. coli using the pMAL system and purified by affinity chromatography.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 describe standard experimental methods that are well-documented in the Materials and Methods section with appropriate citations. These are routine procedures for the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "710f73da-8bf3-4d93-9424-88f39a136fac",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims establish that AAV vectors are preeminent in gene therapy, AAV has a 60-subunit capsid with ssDNA genome, Luxturna is the first approved in vivo gene therapy in the US, AAV2 attaches to HSPG, AAVR was identified as key receptor through genome-wide screening, AAVR comprises specific domains, and PKD2 is most critical for AAV2 interactions while PKD1 is critical for AAV5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C16, C20-C21 are background knowledge claims supported by appropriate citations to prior literature. These establish the context and rationale for the current study and are well-documented in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    },
+    {
+      "id": "4b7004fc-642f-4d20-8439-318a0c934497",
+      "content_id": "3a2025fd-183e-4d67-80c9-8edd96b36d8b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Interactions of AAV with AAVR are key to understanding cell-entry and trafficking with the rigor needed to engineer tissue-specific vectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is a premise statement that is well-supported by established knowledge about viral entry mechanisms and provides clear rationale for the structural study. This is a reasonable inference from prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:17:44.028294Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "77e71930-fc74-45ad-a5f4-6394a24c7991",
+      "result_id": "47bf3ca1-aa94-4e58-8827-1eaa945f518b"
+    },
+    {
+      "claim_id": "9f581346-2e5f-4e75-9e5a-7ecddee01844",
+      "result_id": "47bf3ca1-aa94-4e58-8827-1eaa945f518b"
+    },
+    {
+      "claim_id": "d320610c-a9a5-4671-ac10-3840056f6205",
+      "result_id": "47bf3ca1-aa94-4e58-8827-1eaa945f518b"
+    },
+    {
+      "claim_id": "16c3a43c-5e51-4d19-965c-81345291decf",
+      "result_id": "47bf3ca1-aa94-4e58-8827-1eaa945f518b"
+    },
+    {
+      "claim_id": "f7c91e2a-81fe-4a99-a708-6ec33caf268c",
+      "result_id": "47bf3ca1-aa94-4e58-8827-1eaa945f518b"
+    },
+    {
+      "claim_id": "046d355b-a665-4038-8345-0033b4413bb1",
+      "result_id": "47bf3ca1-aa94-4e58-8827-1eaa945f518b"
+    },
+    {
+      "claim_id": "9b881f2e-f687-451a-b5d8-f3373b6979df",
+      "result_id": "47bf3ca1-aa94-4e58-8827-1eaa945f518b"
+    },
+    {
+      "claim_id": "13528c4a-dd35-497f-b1b2-568df85ca4cf",
+      "result_id": "bdb10e11-fdd9-4d15-ad8b-3cc5a41eed9a"
+    },
+    {
+      "claim_id": "26dc0bba-ca24-4b0f-a226-d383767dfd19",
+      "result_id": "bdb10e11-fdd9-4d15-ad8b-3cc5a41eed9a"
+    },
+    {
+      "claim_id": "6d9aef7e-1a0f-4d0c-8104-857a6e0f4166",
+      "result_id": "5886fa45-e6c4-44fb-a269-1cad75874cf1"
+    },
+    {
+      "claim_id": "9133ed3c-c11d-4973-83f2-f905c36cb17d",
+      "result_id": "5886fa45-e6c4-44fb-a269-1cad75874cf1"
+    },
+    {
+      "claim_id": "ee03a033-018f-49d3-a515-3cb5c3b17626",
+      "result_id": "5886fa45-e6c4-44fb-a269-1cad75874cf1"
+    },
+    {
+      "claim_id": "a23792fa-729d-4a07-926a-659c991bfc39",
+      "result_id": "5886fa45-e6c4-44fb-a269-1cad75874cf1"
+    },
+    {
+      "claim_id": "c908e135-fd42-4f52-8bfa-c3f2321bc4e6",
+      "result_id": "5886fa45-e6c4-44fb-a269-1cad75874cf1"
+    },
+    {
+      "claim_id": "f2cc060a-f47f-4d66-b5ce-d64ea9e59e3f",
+      "result_id": "5886fa45-e6c4-44fb-a269-1cad75874cf1"
+    },
+    {
+      "claim_id": "5de43ae1-1de3-41fd-b71b-e78672ac8258",
+      "result_id": "5886fa45-e6c4-44fb-a269-1cad75874cf1"
+    },
+    {
+      "claim_id": "fbbdaf04-d784-48dc-bab1-9892b1ae3057",
+      "result_id": "5886fa45-e6c4-44fb-a269-1cad75874cf1"
+    },
+    {
+      "claim_id": "cbfc9364-a189-44ad-9533-720f23ece5a7",
+      "result_id": "edd330d3-0eb7-4c5e-9deb-1180726d286f"
+    },
+    {
+      "claim_id": "558fb5a7-232f-4bf5-a6ca-d8fe9df80b35",
+      "result_id": "edd330d3-0eb7-4c5e-9deb-1180726d286f"
+    },
+    {
+      "claim_id": "bd2b6cc7-445a-4234-8dab-64aacbca51d5",
+      "result_id": "edd330d3-0eb7-4c5e-9deb-1180726d286f"
+    },
+    {
+      "claim_id": "e7dcf590-166f-4457-af2a-7a5a2b888b82",
+      "result_id": "7d00d902-fa6b-41c6-b1f6-073ded1dc50f"
+    },
+    {
+      "claim_id": "3ac15664-e691-41dc-a5dc-0ac30ea275a7",
+      "result_id": "7d00d902-fa6b-41c6-b1f6-073ded1dc50f"
+    },
+    {
+      "claim_id": "57ae96df-435b-4484-9a14-26b35f141ae8",
+      "result_id": "7d00d902-fa6b-41c6-b1f6-073ded1dc50f"
+    },
+    {
+      "claim_id": "64626f6b-d4ca-473c-8dc0-2ff267a43e0e",
+      "result_id": "7fa85483-cfd0-4538-b0de-0e352e93a3a3"
+    },
+    {
+      "claim_id": "d8ede64d-0e63-4905-af79-9cd4693ec648",
+      "result_id": "7fa85483-cfd0-4538-b0de-0e352e93a3a3"
+    },
+    {
+      "claim_id": "83db4241-c895-41b3-ba63-0b5b43853dee",
+      "result_id": "7fa85483-cfd0-4538-b0de-0e352e93a3a3"
+    },
+    {
+      "claim_id": "9f8f598f-e922-4da5-9bd9-9e427b3f55ab",
+      "result_id": "7fa85483-cfd0-4538-b0de-0e352e93a3a3"
+    },
+    {
+      "claim_id": "b535cda6-bd0f-4552-98df-2d97d27ab9c0",
+      "result_id": "551ad3f1-0736-4da6-acc1-f57f29103582"
+    },
+    {
+      "claim_id": "cf943718-68a7-4aaf-b884-543dcee14bb1",
+      "result_id": "551ad3f1-0736-4da6-acc1-f57f29103582"
+    },
+    {
+      "claim_id": "b39529bf-4dc0-4c6f-b987-fea6d23cd4c2",
+      "result_id": "551ad3f1-0736-4da6-acc1-f57f29103582"
+    },
+    {
+      "claim_id": "47f458f3-840c-419c-8dd8-2f3cddcc4115",
+      "result_id": "551ad3f1-0736-4da6-acc1-f57f29103582"
+    },
+    {
+      "claim_id": "63fe259f-08fe-40f2-9e16-cd4f00c5eb79",
+      "result_id": "551ad3f1-0736-4da6-acc1-f57f29103582"
+    },
+    {
+      "claim_id": "b9bee9a7-c1bc-4dca-b4b4-0d51f8fa447a",
+      "result_id": "551ad3f1-0736-4da6-acc1-f57f29103582"
+    },
+    {
+      "claim_id": "e7ff1a25-4dbb-4939-8347-c87138cd700a",
+      "result_id": "6a2e90d1-5c5c-4882-8bc1-af7363210881"
+    },
+    {
+      "claim_id": "f502f822-f512-49db-b88f-1ef5ae8903b9",
+      "result_id": "6a2e90d1-5c5c-4882-8bc1-af7363210881"
+    },
+    {
+      "claim_id": "274de950-d042-4d3d-8a19-ab77a0bdd54d",
+      "result_id": "6a2e90d1-5c5c-4882-8bc1-af7363210881"
+    },
+    {
+      "claim_id": "b22c1712-f3e2-4193-bbdf-13da4578d258",
+      "result_id": "a4b75a73-98e8-4dae-807d-8c18ec0a1d9e"
+    },
+    {
+      "claim_id": "22a8c3c0-09b9-4942-b4ff-2265bb4cfd9d",
+      "result_id": "a4b75a73-98e8-4dae-807d-8c18ec0a1d9e"
+    },
+    {
+      "claim_id": "fd42b586-e69c-444c-942b-14de9003b668",
+      "result_id": "a6f1f665-5507-4fc0-98e8-3b51df04f9ea"
+    },
+    {
+      "claim_id": "f14c7a30-80a8-43d1-a80c-7bbbe8e6bf95",
+      "result_id": "a6f1f665-5507-4fc0-98e8-3b51df04f9ea"
+    },
+    {
+      "claim_id": "4a1d51ea-a229-4546-8fb6-edbba1b11a1d",
+      "result_id": "a6f1f665-5507-4fc0-98e8-3b51df04f9ea"
+    },
+    {
+      "claim_id": "41a5f1b9-a669-4ca0-935a-589de55c74ca",
+      "result_id": "a6f1f665-5507-4fc0-98e8-3b51df04f9ea"
+    },
+    {
+      "claim_id": "76c90089-f527-47fa-a9c1-d1ca6374e4c6",
+      "result_id": "a6f1f665-5507-4fc0-98e8-3b51df04f9ea"
+    },
+    {
+      "claim_id": "74fd2e2e-5bcb-4314-9e31-92d3bb4cf3c2",
+      "result_id": "352ee0d4-0226-4531-837b-1c6952b69c42"
+    },
+    {
+      "claim_id": "34d66856-d169-4971-8e2a-e5d62fdcefb8",
+      "result_id": "352ee0d4-0226-4531-837b-1c6952b69c42"
+    },
+    {
+      "claim_id": "9d3ca75e-192a-4143-b8d3-b0f0830d1893",
+      "result_id": "de1bb0a0-74df-468f-b5e1-a4d336f04eb6"
+    },
+    {
+      "claim_id": "8f96af57-84ee-4114-8388-a1d9d98b1a33",
+      "result_id": "de1bb0a0-74df-468f-b5e1-a4d336f04eb6"
+    },
+    {
+      "claim_id": "7ce6f5e3-cf74-4f7a-a340-9ad9897c063f",
+      "result_id": "de1bb0a0-74df-468f-b5e1-a4d336f04eb6"
+    },
+    {
+      "claim_id": "681b7dec-6932-4369-924e-6b22ad443946",
+      "result_id": "47069873-826e-47c9-92d5-9cb060976922"
+    },
+    {
+      "claim_id": "f2f06468-61c1-4722-8392-beca7c4bca40",
+      "result_id": "47069873-826e-47c9-92d5-9cb060976922"
+    },
+    {
+      "claim_id": "906d2b42-c2c7-4ac8-91e3-5cf1c441b07f",
+      "result_id": "47069873-826e-47c9-92d5-9cb060976922"
+    },
+    {
+      "claim_id": "20a1e69b-c3d0-40bb-af07-0ea49623d90e",
+      "result_id": "47069873-826e-47c9-92d5-9cb060976922"
+    },
+    {
+      "claim_id": "f124a2c6-085f-4636-b3f9-e49e4dcc23d8",
+      "result_id": "47069873-826e-47c9-92d5-9cb060976922"
+    },
+    {
+      "claim_id": "a7926024-7c9c-4a91-aaf5-2e1b4e3b3427",
+      "result_id": "47069873-826e-47c9-92d5-9cb060976922"
+    },
+    {
+      "claim_id": "b9157c27-3195-4479-9c1e-4519198def2c",
+      "result_id": "f061d2c4-4bd1-4136-96bf-d9de1004494a"
+    },
+    {
+      "claim_id": "3fe31d4a-04e3-4dd2-8216-6158c041ee2c",
+      "result_id": "f061d2c4-4bd1-4136-96bf-d9de1004494a"
+    },
+    {
+      "claim_id": "a66bc4e6-74e4-4c1c-841d-a7eddd1c5e20",
+      "result_id": "f061d2c4-4bd1-4136-96bf-d9de1004494a"
+    },
+    {
+      "claim_id": "6a716bd8-723c-4314-91ff-3df63cdbf605",
+      "result_id": "f061d2c4-4bd1-4136-96bf-d9de1004494a"
+    },
+    {
+      "claim_id": "35eb99a5-8310-485f-94d0-9bf7d7b854a9",
+      "result_id": "6282c0ce-b9eb-40fb-a7c8-1791b160ec7e"
+    },
+    {
+      "claim_id": "783ac91e-1d49-4322-b628-0ca59b96b7aa",
+      "result_id": "6282c0ce-b9eb-40fb-a7c8-1791b160ec7e"
+    },
+    {
+      "claim_id": "b6da1d8e-f5f2-458e-acd1-8980b90ca717",
+      "result_id": "6282c0ce-b9eb-40fb-a7c8-1791b160ec7e"
+    },
+    {
+      "claim_id": "e12eaeff-d3fe-4ac6-955d-d08f1ebdf0da",
+      "result_id": "a1884903-48dd-4bdc-beb7-5e8e027866b3"
+    },
+    {
+      "claim_id": "7b3a48a6-88b0-4a71-9d7b-8c421180b0b9",
+      "result_id": "a1884903-48dd-4bdc-beb7-5e8e027866b3"
+    },
+    {
+      "claim_id": "5a146588-3087-409c-abed-89499e5833fb",
+      "result_id": "a1884903-48dd-4bdc-beb7-5e8e027866b3"
+    },
+    {
+      "claim_id": "a79f1de8-b2b3-4c00-b6ee-9bc5d5f35e7b",
+      "result_id": "710f73da-8bf3-4d93-9424-88f39a136fac"
+    },
+    {
+      "claim_id": "20b9bbd2-78b6-4284-98fd-8a08597ea404",
+      "result_id": "710f73da-8bf3-4d93-9424-88f39a136fac"
+    },
+    {
+      "claim_id": "34f46a20-0cf2-4eb2-9ebf-66947007eb40",
+      "result_id": "710f73da-8bf3-4d93-9424-88f39a136fac"
+    },
+    {
+      "claim_id": "03b8bc56-df8d-40cd-8623-171f3227db0a",
+      "result_id": "710f73da-8bf3-4d93-9424-88f39a136fac"
+    },
+    {
+      "claim_id": "b4b7bb64-741b-4fa9-8614-8ab3b8351ebb",
+      "result_id": "710f73da-8bf3-4d93-9424-88f39a136fac"
+    },
+    {
+      "claim_id": "dffc8e6f-79e2-46e3-b5f8-35290a817c39",
+      "result_id": "710f73da-8bf3-4d93-9424-88f39a136fac"
+    },
+    {
+      "claim_id": "7230c02f-575a-4912-8af7-86df7eeb8da8",
+      "result_id": "710f73da-8bf3-4d93-9424-88f39a136fac"
+    },
+    {
+      "claim_id": "04e5c47e-1b09-4616-b05b-9b131b7f1cb0",
+      "result_id": "710f73da-8bf3-4d93-9424-88f39a136fac"
+    },
+    {
+      "claim_id": "efe7a286-437a-4555-8b51-3b76ff50d60f",
+      "result_id": "710f73da-8bf3-4d93-9424-88f39a136fac"
+    },
+    {
+      "claim_id": "06c79a42-7ce7-4973-bbea-708abb09fcd4",
+      "result_id": "710f73da-8bf3-4d93-9424-88f39a136fac"
+    },
+    {
+      "claim_id": "1e1a41df-db6a-4dd4-9852-980cb7350baf",
+      "result_id": "710f73da-8bf3-4d93-9424-88f39a136fac"
+    },
+    {
+      "claim_id": "066882b8-2c8a-41f4-af61-2fbcf61689c2",
+      "result_id": "4b7004fc-642f-4d20-8439-318a0c934497"
+    }
+  ],
+  "comparisons": []
+}

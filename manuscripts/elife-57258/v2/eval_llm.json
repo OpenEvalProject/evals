@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C21",
+      "C22",
+      "C48",
+      "C49",
+      "C52",
+      "C44"
+    ],
+    "result": "The authors developed PAWS, a software platform that automatically quantifies seven behavioral features from high-speed (2000 fps) video of mouse paw movements. The features include maximum paw height, velocities, distance traveled, and shaking/guarding behaviors, computed in pre-peak and post-peak time windows relative to the initial paw height peak (t*).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18, C21, C22, C48, C49, C52, and C44 describe the PAWS methodology comprehensively. The software is documented as open-source (C44), the recording parameters are specified (C18), and the computational methods for feature extraction are detailed (C48, C49, C52). The approach is demonstrated with data in Figures 2 and 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C47"
+    ],
+    "result": "Automated paw tracking across seven mouse strains revealed stereotyped paw trajectory patterns: simple up-down C-shaped movements typify responses to innocuous stimuli, while elaborate sinusoidal patterns typify responses to noxious stimuli. These patterns were consistent across genetically diverse strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C20, C35-C37, C39, C40, and C47 are supported by visual data in Figure 2 showing distinct trajectory patterns for different stimulus types across multiple strains. The qualitative observations are consistent and well-documented, though the 129S1 strain shows an exception (C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The seven automatically measured behavioral features statistically separate innocuous from noxious stimuli and distinguish noxious intensity levels. Ordinal logistic regression combines these features into a univariate pain scale that successfully separates touch from pain and distinguishes low from high pain intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 and C55-C64 are well-supported by statistical analyses shown in Figure 4. The data demonstrate significant separation between stimulus types using both individual features and the combined univariate scale. Statistical tests are reported (Wilcoxon matched-pairs signed-rank test), and feature importance is quantified. Post-peak features show slightly better performance than pre-peak features (C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C68",
+      "C69"
+    ],
+    "result": "Cross-validation demonstrates that the PAWS univariate pain scale achieves 83.5% accuracy in classifying painful vs. non-painful stimuli when leaving out individual mice, and 81.3% accuracy when generalizing to novel mouse strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C68, and C69 are supported by rigorous cross-validation analyses shown in Figure 5. The leave-one-out (LOO) cross-validation by individual and by strain provides appropriate statistical validation. Confidence intervals are reported, strengthening the evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C93",
+      "C94"
+    ],
+    "result": "PAWS identified the SJL mouse strain as an outlier displaying hypersensitivity to mechanical stimuli, responding to innocuous dynamic brush as if it were a noxious pinprick. This phenotype was not apparent using traditional paw withdrawal frequency measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C72-C75, C93, and C94 are supported by data in Figure 6 showing that SJL mice have atypical responses that reduce prediction accuracy. Traditional scoring (Figure 6A) did not reveal this phenotype, while PAWS detected it (Figure 6B). Statistical comparison confirms reduced prediction accuracy for SJL (p=0.003, C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C99",
+      "C100"
+    ],
+    "result": "Chemogenetic activation of pain-responsive neurons in the basolateral amygdala (BLA) increased post-peak behavioral features (shaking/guarding) in response to heavy pinprick stimuli, demonstrating that PAWS can detect centrally-mediated pain hypersensitivity without peripheral sensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27, C76-C81, C99, and C100 are supported by experimental data in Figure 7. The TRAP2 methodology is established (C76), and the results show selective enhancement of post-peak features with CNO activation (C78-C80). The specificity for heavy pinprick (C100) is consistent with prior characterization of these neurons (C101). Controls with Cre-negative animals are mentioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C82",
+      "C83"
+    ],
+    "result": "The pre-peak vs. post-peak temporal division (at t*) has biological relevance: pre-peak behavior reflects reflexive rapid withdrawal, while post-peak behavior reflects lingering paw-attending behaviors requiring conscious perception. Chemogenetic manipulation selectively enhanced post-peak features, supporting this functional distinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 and C82-C83 propose a biological interpretation of the t* division. While the chemogenetic data (C82) provide some support by showing selective enhancement of post-peak features, the interpretation that pre-peak is purely reflexive and post-peak requires conscious perception (C50-C51) is not directly tested. The claim that post-peak features reflect 'aversiveness' (C83) is explicitly speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "PAWS did not detect increased pain responses following Complete Freund's Adjuvant (CFA)-induced inflammation. The authors conclude that PAWS may not be suitable for detecting pain hypersensitivity in peripheral manipulations causing heavy, swollen limbs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by negative results shown in Figure 4\u2014figure supplement 3. The authors appropriately acknowledge this limitation and provide a mechanistic explanation (swollen limbs preventing normal paw movements). This represents an important boundary condition for the method's applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C46",
+      "C53",
+      "C54"
+    ],
+    "result": "Traditional paw withdrawal frequency measurements showed high variability across seven mouse strains, while PAWS measurements were interspersed without clear strain separation, suggesting phenotypic similarity in acute mechanical pain responses despite genetic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C46, C53, and C54 are supported by data in Figures 1 and 4. The contrast between variable withdrawal frequencies (Figure 1B) and consistent PAWS features across strains (Figure 4) is clearly demonstrated. However, the interpretation of 'phenotypic similarity' (C54) is somewhat at odds with the identification of the outlier SJL strain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "SLEAP deep learning-based tracking was trained on ~9.5% of video frames and produced paw trajectory patterns resembling those from ProAnalyst. PAWS is compatible with tracking data from either tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by comparative data shown in Figure 2 (panels C'-F' for SLEAP vs. A-B' for ProAnalyst). The training efficiency (9.5% of frames) is specified, and visual comparison shows similar trajectory patterns. Software compatibility is stated and reasonable given both produce x,y coordinate data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The nature of the paw withdrawal response is a more reliable indicator of pain state than the frequency of paw withdrawals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is an inference supported by the comparison between Figures 1 and 2, showing that withdrawal frequencies vary greatly across strains while trajectory patterns are more consistent for given stimuli. The SJL strain data (Figure 6) further supports this by showing traditional scoring missed a hypersensitivity phenotype that PAWS detected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "SJL mice are known to be aggressive and have a retinal degeneration mutation causing poor eyesight. The observed pain hypersensitivity may reflect a heightened startle response rather than true pain hypersensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C96 are supported by citations and the authors' observations of fighting. However, claim C97 is explicitly speculative. The alternative explanation (startle vs. pain) is plausible but untested. Additional experiments (e.g., testing with visual cues, comparing to other blind strains) would be needed to distinguish these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "BLA nociceptive neurons respond only to strongly noxious stimuli under normal conditions, but engage with formerly innocuous stimuli after peripheral nerve damage, suggesting circuit plasticity redirects touch information into the BLA pain ensemble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are supported by citations to prior work by the authors (Corder et al., 2019) and other literature on spinal gate mechanisms (C103). These claims provide context for interpreting the chemogenetic results but represent prior findings rather than new results from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C14"
+    ],
+    "result": "Objective and automatic pain measurement in mice remains challenging. Traditional manual scoring of paw withdrawal suffers from low throughput, potential human error, and inability to determine if paw movement is motivated by pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C9, and C14 establish the motivation for the study. These are reasonable characterizations of the field supported by general knowledge and the authors' reasoning. The limitations of traditional approaches are well-recognized in the pain research community.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Pinprick stimuli activate nociceptors and consistently evoke painful responses, whereas von Frey hair filaments are more variable depending on force applied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by citation to the authors' prior work (Abdus-Saboor et al., 2019). This justifies the methodological choice to use pinprick rather than von Frey hairs in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The PAWS platform is compatible with existing laboratory setups (requiring only addition of a high-speed camera) and should aid in robust pain measurement to improve translation of basic science findings to clinical outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C108 are forward-looking statements about practical applicability and impact. While the compatibility claim (C105) is reasonable given the use of standard behavioral assays, the predictions about adoption (C106) and impact (C108) are speculative. The CFA results (C65-C67) actually suggest important limitations that may affect adoption.",
+    "result_type": "MINOR"
+  }
+]

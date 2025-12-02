@@ -1,0 +1,2107 @@
+{
+  "submission": {
+    "id": "1f96adb6-d41b-492d-a3bd-9d93ed5328d3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:15:16.283996Z",
+    "updated_at": "2025-12-02T15:15:16.283996Z"
+  },
+  "content": [
+    {
+      "id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "submission_id": "1f96adb6-d41b-492d-a3bd-9d93ed5328d3",
+      "content_type": "manuscript",
+      "content_text": "# Repression of viral gene expression and replication by the unfolded protein response effector XBP1u\n\n## Authors\n\n- Florian Hinte<sup>1</sup> ([ORCID: 0000-0003-0820-7041](https://orcid.org/0000-0003-0820-7041))\n- Eelco van Anken<sup>2</sup> ([ORCID: 0000-0001-9529-2701](https://orcid.org/0000-0001-9529-2701))\n- Boaz Tirosh<sup>4</sup> ([ORCID: 0000-0001-8067-6577](https://orcid.org/0000-0001-8067-6577))\n- Wolfram Brune<sup>1</sup> ([ORCID: 0000-0002-6078-5255](https://orcid.org/0000-0002-6078-5255)) \u2020\n\n### Affiliations\n\n1. Heinrich Pette Institute, Leibniz Institute for Experimental Virology Hamburg Germany\n2. Division of Genetics and Cell Biology, San Raffaele Scientific Institute Milan Italy\n3. Universit\u00e0 Vita-Salute San Raffaele Milan Italy\n4. Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University Jerusalem Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe unfolded protein response (UPR) is a cellular homeostatic circuit regulating protein synthesis and processing in the ER by three ER-to-nucleus signaling pathways. One pathway is triggered by the inositol-requiring enzyme 1 (IRE1), which splices the X-box binding protein 1 (Xbp1) mRNA, thereby enabling expression of XBP1s. Another UPR pathway activates the activating transcription factor 6 (ATF6). Here we show that murine cytomegalovirus (MCMV), a prototypic \u03b2-herpesvirus, harnesses the UPR to regulate its own life cycle. MCMV activates the IRE1-XBP1 pathway early post infection to relieve repression by XBP1u, the product of the unspliced Xbp1 mRNA. XBP1u inhibits viral gene expression and replication by blocking the activation of the viral major immediate-early promoter by XBP1s and ATF6. These findings reveal a redundant function of XBP1s and ATF6 as activators of the viral life cycle, and an unexpected role of XBP1u as a potent repressor of both XBP1s and ATF6-mediated activation.\n\n## Introduction\n\nThe endoplasmic reticulum (ER) is responsible for synthesis, posttranslational modification, and folding of a substantial portion of cellular proteins. When protein synthesis is increased or ER function is compromised, the folding capacity of the ER may get out of balance, leading to an accumulation of unfolded or misfolded proteins in the ER. To alleviate ER stress and restore homeostasis, the cell activates three ER-to-nucleus signaling pathways, collectively called the unfolded protein response (UPR), which lead to a reduced protein synthesis and an increased expression of folding chaperones and ER-associated degradation (ERAD) factors (Walter and Ron, 2011). Subsequently, ER folding capacity increases and terminally misfolded protein species are exported from the ER and targeted for proteasomal degradation (Christianson and Ye, 2014).\n\nIn mammalian cells, the UPR comprises three main signaling pathways named after the initiating ER stress sensors: PERK (PKR-like ER kinase), ATF6 (activating transcription factor 6), and IRE1 (inositol-requiring enzyme 1) (Walter and Ron, 2011). Upon activation by ER stress, PERK phosphorylates the translation initiation factor eIF2\u03b1, which leads to a massive attenuation of protein synthesis and an immediate reduction of the protein load in the secretory system. However, phosphorylated eIF2\u03b1 selectively supports the translation of selected cellular proteins such as the transcription factor ATF4, which activates a negative feedback loop resulting in dephosphorylation of eIF2\u03b1 (Novoa et al., 2001).\n\nUpon activation by ER stress, ATF6 travels to the Golgi, where it undergoes intramembrane proteolysis. This process liberates its cytosolic N-terminus, the basic leucine zipper (bZIP) transcription factor ATF6(N), and enables it to travel to the nucleus, where it activates the transcription of chaperone genes as well as of the gene encoding XBP1 (Lee et al., 2002).\n\nThe third sensor, IRE1 (also known as ER-to-nucleus signaling 1, ERN1), is an ER transmembrane protein kinase that oligomerizes upon accumulation of unfolded proteins in the ER lumen. Oligomerization and auto-transphosphorylation activate the RNase function of IRE1, which mediates an unconventional splicing of the XBP1 mRNA in the cytosol (Calfon et al., 2002; Lee et al., 2002; Yoshida et al., 2001). Removal of the 26-nt intron from the XBP1 mRNA leads to a frame shift and expression of transcription factor XBP1s, comprising an N-terminal basic leucine zipper (bZIP) domain followed by a C-terminal transcription activation domain. By contrast, the unspliced XBP1 mRNA encodes XBP1u, which lacks the transcription activation domain but contains in its C-terminal part a hydrophobic patch and a translational pausing region required for the recruitment of its own mRNA to the ER membrane (Kanda et al., 2016; Yanagitani et al., 2011). XBP1u is rapidly degraded and has a short half-life (Tirosh et al., 2006). It can interact with XBP1s and ATF6(N) and target them for proteasomal degradation. Therefore, XBP1u is thought to\u00a0act as a negative regulator involved in fine-tuning the UPR (Tirosh et al., 2006; Yoshida et al., 2006; Yoshida et al., 2009). Moreover, XBP1u affects autophagy by interacting with transcription factor FOXO1 (Zhao et al., 2013). Apart from mediating XBP1 mRNA splicing, IRE1 can also cleave ER-associated mRNA molecules that contain a specific recognition motif (Moore and Hollien, 2015). This process, which leads to mRNA degradation, is called regulated IRE1-dependent mRNA decay (RIDD). However, the importance of RIDD in different cellular processes such as lipid metabolism, antigen presentation, and apoptosis remains incompletely understood (Maurel et al., 2014).\n\nDuring viral replication large quantities of viral proteins must be synthesized. Folding, maturation, and posttranslational modification of secreted and transmembrane proteins take place in the ER and require a plethora of chaperones, foldases, and glycosylating enzymes. While properly folded proteins are transported to the Golgi, unfolded or misfolded proteins are retained in the ER and exported to the cytosol for proteasomal degradation via the ERAD pathway (Smith et al., 2011). However, the high levels of viral envelope glycoproteins that are being synthesized particularly during the late phase of the viral life cycle can overwhelm the folding and processing capacity of the ER and cause accumulation of unfolded and misfolded proteins in the ER (Zhang and Wang, 2012).\n\nCytomegaloviruses (CMVs) are prototypic members of the \u03b2 subfamily of the Herpesviridae. Their large double-stranded DNA genomes contain at least 165 protein-coding ORFs (Dolan et al., 2004) end encode an even larger number of polypeptides (Stern-Ginossar et al., 2012). Through millions of years of co-evolution with their respective hosts, the CMVs have acquired the ability to moderate immune recognition and modulate cellular stress responses to their own benefit (Alwine, 2008; Mocarski, 2002). Considering the important role of the UPR in controlling cell fitness, it is hardly surprising that the CMVs have evolved means to modify the UPR. For instance, human and murine CMV (HCMV and MCMV) induce PERK activation, but limit eIF2\u03b1 phosphorylation. By doing this the CMVs prevent a global protein synthesis shutoff but allow eIF2\u03b1 phosphorylation-dependent activation of transcription factor ATF4 (Isler et al., 2005; Qian et al., 2012). The CMVs also increase expression of the ER chaperone BiP to facilitate protein folding and virion assembly (Buchkovich et al., 2008; Buchkovich et al., 2010; Qian et al., 2012), and HCMV uses PERK to induce lipogenesis by activating the cleavage of sterol regulatory element binding protein 1 (Yu et al., 2013). We have previously shown that both, MCMV and HCMV, downregulate IRE1 levels and inhibit IRE1 signaling at late times post infection. This downregulation is mediated by the viral proteins M50 and UL50, respectively (Stahl et al., 2013). However, a real-time transcriptional profiling study has revealed that cellular ER stress response transcripts are upregulated as early 5\u20136 hr after MCMV infection (Marcinowski et al., 2012).\n\nHere, we show that MCMV transiently activates the IRE1-XBP1 pathway at early times post infection to relieve repression of viral gene expression and replication by XBP1u. When IRE1-mediated XBP1 mRNA splicing is inhibited, XBP1u blocks the activation of the viral major immediate-early promoter (MIEP) by XBP1s and ATF6(N). Thus, MCMV exploits UPR signaling to boost the activity of its most important promoter. Moreover, these findings reveal a redundant function of XBP1s and ATF6 as activators of viral gene expression and replication, and an unexpected role of XBP1u as a potent repressor of both XBP1s and ATF6-mediated activation.\n\n## Results\n\n### Early activation of IRE1-XBP1 signaling promotes MCMV replication\n\nPrevious studies have shown that MCMV inhibits IRE1-XBP1 signaling at late times (\u226524 hr) post infection (Qian et al., 2012; Stahl et al., 2013). However, cellular ER stress response transcripts were shown to be upregulated at 5\u20136 hr after MCMV infection (Marcinowski et al., 2012), suggesting that UPR signaling is activated at early times post infection. Thus, we decided to analyze whether MCMV activates the IRE1-XPB1 signaling pathway within the first few hours after infection. To do this, we infected mouse embryonic fibroblasts (MEFs) with MCMV and quantified spliced and unspliced XBP1 transcripts by qRT-PCR. We detected a short and transient increase of XBP1 splicing between 5 and 7 hr post infection (hpi) (Figure 1A). This increase was massively reduced when cells were infected with UV-inactivated MCMV (Figure 1A), suggesting that XBP1 splicing was not caused by viral attachment and entry into cells but required viral gene expression. The transient activation of the IRE1-XBP1 pathway was confirmed by immunoblot detection of phosphorylated IRE1 and XBP1s (Figure 1B). MCMV-induced XBP1 splicing was suppressed by cycloheximide (CHX, a translation inhibitor), but not by phosphonoacetic acid (PAA), an inhibitor of viral DNA replication and late gene expression (Figure 1C). These results suggested that the transient activation of the IRE1-XBP1 pathway is caused by viral proteins expressed at immediate-early or early times post infection.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51804/elife-51804-fig1-v2.jpg)\n\n**Figure 1.:** (A) MEFs were infected with MCMV-GFP or UV-inactivated MCMV-GFP (MOI 4). Cells were harvested at the indicated times, total RNA was extracted, and Xbp1s and Xbp1u transcripts were quantified by qPCR. Changes in the Xbp1s/Xbp1u ratio relative to uninfected cells are plotted as bar diagram (means\u00a0\u00b1\u00a0SEM of 3 biological replicates). (B) Immunoblot analysis of MEFs infected with MCMV-GFP. Endogenous IRE1, phosphorylated IRE1, and XBP1s were detected using specific antibodies. *, unspecific band. The immunoblot is representative of 2 independent experiments. (C) MEFs were infected with MCMV-GFP as described above and treated with vector, CHX (50 \u03bcg/ml) or PAA (250 ng/ml). Changes in the Xbp1s/Xbp1u ratio were determined as described above. Data provided in Figure 1\u2014source data 1.\n\nTo determine whether IRE1 signaling is important for the MCMV life cycle, we used IRE1-deficient (Ern1-/-) cells expressing IRE1-GFP under tight control of a tetracycline-inducible promoter (TetON-IRE1-GFP cells, Figure 2A) for analyses of viral replication. IRE1-GFP expression was induced with different concentrations of doxycycline, and cells were infected at low or high multiplicity of infection (MOI) for multi-step and single-step growth curves, respectively (Figure 2B and C). In both types of replication analysis, MCMV replicated to low titers when IRE1 expression was induced with very low or very high doxycycline concentrations. High MCMV titers (~106 infectious units per ml), comparable to those obtained in wildtype (WT) MEFs, were attained only upon moderate induction of IRE1-GFP with 5 to 10 nM doxycycline (Figure 2B and C). We observed that IRE1-GFP induction with high doxycycline concentrations resulted in a significantly decreased cell viability (Figure 2D), suggesting that IRE1 overexpression is detrimental to cell viability. This is consistent with the previously reported cytotoxicity of IRE1 overexpression (Han et al., 2009). To formally exclude the possibility that strong activation of the TetON transactivator alone impairs MCMV replication, we infected TetON-expressing cells with MCMV and analyzed viral replication in the presence of different doxycycline concentrations. As expected, MCMV replication was not affected by different doxycycline concentration (Figure 2\u2014figure supplement 1). Thus, we concluded that IRE1 is necessary for efficient replication of MCMV, but needs to be carefully regulated as too high expression levels are detrimental for cell viability and viral replication.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51804/elife-51804-fig2-v2.jpg)\n\n**Figure 2.:** (A) Immunoblot analysis of IRE1-deficient (Ern1-/-) MEFs expressing IRE1-GFP (TetON-IRE1-GFP) in a doxycycline (dox)-inducible manner. Cells were treated with different dox concentrations for 24 hr. IRE1-GFP expression was detected with GFP or IRE1-specific antibodies. Endogenous IRE1 levels in WT MEFs were detected only with the IRE1-specific antibody. The immunoblot is representative of 3 independent experiments. (B) Multistep MCMV replication kinetics on TetON-IRE1-GFP MEFs induced with different dox concentrations. 24 hr after induction, cells were infected with MCMV-GFP (MOI 0.1). Virus titers in the supernatants were determined by titration and are shown as means\u00a0\u00b1\u00a0SEM of 3 biological replicates. (C) Single step MCMV replication kinetics on TetON-IRE1-GFP MEFs induced with dox as above, infected with MCMV-GFP (MOI 3) and are shown as means\u00a0\u00b1\u00a0SEM of 3 biological replicates. (D) Cell viability of TetON-IRE1-GFP MEFs treated with different dox concentrations. Cell viability was measured after 3 and 5 days of dox treatment and is shown as relative viability compared to untreated cells (means\u00a0\u00b1\u00a0SEM of 6 biological replicates). Data provided in Figure 2\u2014source data 1. Additional data provided in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51804/elife-51804-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Multistep MCMV replication kinetics on TetON-Ern1-/- MEFs induced with different doxycycline concentrations. 24 hr after induction, cells were infected with MCMV-GFP (MOI 0.1). Virus titers in the supernatants were determined by titration and are shown as means\u00a0\u00b1\u00a0SEM of 3 biological replicates. (B) Multistep MCMV replication kinetics on WT MEFs transduced with a TetON-expressing lentiviral vector. 24 hr after doxycycline treatment, cells were infected with MCMV-GFP (MOI 0.1). Virus titers in the supernatants were determined as above. Data provided in Figure 2\u2014source data 1.\n\n### IRE1, but not XBP1 or TRAF2, is required for efficient MCMV gene expression and replication\n\nActivated IRE1 can splice Xbp1 mRNA (Calfon et al., 2002; Lee et al., 2002; Yoshida et al., 2001) and can also recruit TRAF2 to activate ASK1 (Urano et al., 2000). To test which IRE1-dependent signaling pathway is required for efficient MCMV replication, we used CRISPR/Cas9-mediated gene editing to generate knockout (ko) MEFs for Ern1 (the gene encoding IRE1), Xbp1, and Traf2. For each gene knockout, two independent cell clones were generated with different guide RNAs. The absence of the respective gene products was verified by immunoblot analysis (Figure 3A). Then, the cell clones were used to assess MCMV replication. In Ern1 ko MEFs, viral replication (Figure 3B) and viral gene transcription (Figure 3\u2014figure supplement 1) were massively reduced as compared to WT MEFs (Figure 3B), similar to the reduction seen in IRE1-GFP cells without doxycycline induction (Figure 2B). By contrast, MCMV replication was virtually unimpaired in the absence of Xbp1 (Figure 3B) or Traf2 (Figure 3C). We also analyzed the expression of a viral immediate-early (IE1), an early (M57), and a late protein (gB) at different times after high-MOI infection. Compared to WT MEFs, the expression of all three proteins was reduced in Ern1 ko MEFs (Figure 3D), but not in Xbp1 or Traf2 ko MEFs (Figure 3E and F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51804/elife-51804-fig3-v2.jpg)\n\n**Figure 3.:** (A) Immunoblot analysis of IRE1, XBP1, and TRAF2-deficient (Ern1, Xbp1, and Traf2 ko) cell lines. Two ko clones were generated for each gene by CRISPR/Cas9 gene editing using different gRNAs. Cells were treated for 4 hr with Thapsigargin (Tg) to induce Xbp1 mRNA splicing and to increase XBP1 expression. (B,C) Multistep MCMV replication kinetics in Ern1, Xbp1 and Traf2 ko cells, respectively. Cells were infected with MCMV-GFP (MOI 0.1). Virus titers in the supernatants were determined by titration and are shown as means\u00a0\u00b1\u00a0SEM of 3 biological replicates. (D\u2013F) Immunoblot analysis of viral protein expression kinetics in Ern1, Xbp1 and Traf2 ko cells, respectively. Cells were infected with MCMV-GFP (MOI 3) and harvested at different times post infection. Expression levels of the viral immediate-early 1 (IE1) protein, the major DNA binding protein (M57; an early protein), and glycoprotein B (gB; a late protein) were detected with specific antibodies, \u03b2-Actin served as loading control. Immunoblots are representative of 2 independent experiments. Data provided in Figure 3\u2014source data 1. Additional data provided in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51804/elife-51804-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013D) WT and Ern1 ko MEFs were infected with MCMV-GFP (MOI 0.1). Cells were harvested at the indicated times, total RNA was extracted, and IE1 (M123), E1 (M112), M37, and gB (M55) transcripts were quantified by qRT-PCR. Transcript levels were normalized to Ern1 ko cells at day one post infection (means\u00a0\u00b1\u00a0SEM of 3 biological replicates). Data provided in Figure 3\u2014source data 1.\n\nNext, we tested whether the RNase activity of IRE1 is required for efficient MCMV replication. To do this, WT IRE1 or an \u2018RNase-dead\u2019 IRE1-K907A mutant (Tirasophon et al., 2000) was expressed in Ern1 ko MEFs by retroviral transduction. Expression of WT and mutant IRE1 and the ability to splice Xbp1 was verified by immunoblot analysis (Figure 4A). While expression of WT IRE1 restored MCMV replication to high titers, expression of IRE1-K907A did not increase MCMV titers (Figure 4B), indicating that the IRE1 RNase activity is necessary for efficient MCMV replication.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51804/elife-51804-fig4-v2.jpg)\n\n**Figure 4.:** (A) Immunoblot analysis of IRE1-deficient cells (Ern1 ko c1) transduced with retroviral vectors expressing WT IRE1 or IRE1-K907A (RNase-dead). Cells were treated for 4 hr with Thapsigargin (Tg) to induce Xbp1 mRNA splicing and to increase XBP1 expression. IRE1 and XBP1 protein expression was detected by immunoblot (representative of 2 independent experiments). (B) Multistep MCMV replication kinetics in Ern1 ko cells complemented with WT IRE1 or IRE1-K907A, respectively. Cells were infected with MCMV-GFP (MOI 0.1). Virus titers in the supernatants were determined by titration and are shown as means\u00a0\u00b1\u00a0SEM of 3 biological replicates. Data provided in Figure 4\u2014source data 1.\n\n### XBP1u inhibits MCMV replication\n\nOur observations that the RNase activity of IRE1 is required for efficient MCMV replication, but XBP1 is not, allowed two possible explanations: (i) MCMV replication could benefit from RIDD, another RNase-dependent function of IRE1. However, this possibility is difficult to verify as selective inactivation of RIDD is complicated. (ii) Alternatively, MCMV replication could be inhibited by XBP1u, the product of the unspliced Xbp1 mRNA, since Ern1 ko cells differ from other cells in that they express only XBP1u (Figure 3A). To test the latter option, we used two experimental approaches. First, we knocked out Ire1 in Xbp1-deficient cells (Figure 5A). As shown in Figure 5B, MCMV replicated to similar titers in Xbp1 ko and Xbp1/Ern1 double-knockout (dko) cells, indicating that the loss of IRE1 is not detrimental for MCMV replication when XBP1 is absent. Next, we used retroviral transduction to restore XBP1 expression in Xbp1-/- cells. The retroviral vectors expressed the WT Xbp1 transcript (which can be spliced by IRE1), a truncated Xbp1 transcript encoding only the DNA-binding domain (XBP1stop), or an 'unspliceable' Xbp1 transcript. Upon treatment with thapsigargin, these cells expressed XBP1s, XBP1stop, or XBP1u, respectively (Figure 5C). Whereas re-introduction of WT XBP1 had no detrimental effect, MCMV replication was severely impaired upon expression of the unspliceable Xbp1 transcript (Figure 5D), indicating that Xbp1u reduces viral replication. A similar inhibitory effect was observed when the truncated XBP1 protein was expressed (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51804/elife-51804-fig5-v2.jpg)\n\n**Figure 5.:** (A) Xbp1-/- MEFs were used to knock out the IRE1-encoding Ern1 gene by CRISPR/Cas9 gene editing. Two double ko (dko) cell clones were generated with different gRNAs. IRE1 and XBP1 protein expression in the two dko clones and control cells was detected by immunoblot analysis. Cells were treated for 4 hr with Thapsigargin (Tg) to induce Xbp1 mRNA splicing and to increase XBP1 expression. (B) Multistep MCMV replication kinetics in Xbp1-/- and Xbp1/Ern1 dko MEFs. Cells were infected with MCMV-GFP (MOI 0.1). Virus titers in the supernatants were determined by titration and are shown as means\u00a0\u00b1\u00a0SEM of 3 biological replicates. (C) Immunoblot analysis of Xbp1-/- MEF transduced with retroviral vectors expressing a WT (spliceable) Xbp1 transcript, an unspliceable Xbp1 transcript, or a truncated (Xbp1stop) transcript. Cells were treated with Tg as described in A. (D) Multistep MCMV replication kinetics in cells shown in C. Infection and titration was done as in B. Immunoblots are representative of 2 independent experiments. Data provided in Figure 5\u2014source data 1.\n\n### Loss of XBP1 and ATF6 impairs MCMV replication\n\nXBP1u is thought to function as a negative regulator to XBP1s (Tirosh et al., 2006; Yoshida et al., 2006). However, the inhibition of MCMV replication by XBP1u cannot be explained solely by a repressive effect on XBP1s as a complete loss of XBP1 is not detrimental to MCMV replication in vitro (Figure 3B) and has only a modest effect on viral replication in vivo (Drori et al., 2014). Thus, we hypothesized that XBP1u might impair MCMV replication by repressing the activity of additional transcription factors besides XBP1s. For several reasons ATF6 appeared to be a likely target of XBP1u: (i) Like XBP1s, ATF6 is a bZIP transcription factor activated by ER stress (Yoshida et al., 1998); (ii) XBP1s and ATF6 are known to synergize in the activation of numerous ER stress response genes (Lee et al., 2002); and (iii) XBP1u can interact with ATF6 and inhibit its activity (Yoshida et al., 2009). Therefore, we tested whether the loss of both, XBP1 and ATF6, was detrimental for MCMV replication. First, we analyzed MEFs from Atf6-/- mice and found that MCMV gene expression and replication were not impaired (Figure 6A and B). When we knocked out Xbp1 in Atf6-/- cells by CRISPR/Cas9 gene editing (Figure 6C), MCMV replication was substantially reduced in Atf6/Xbp1 dko cells (Figure 6D), suggesting that ATF6 and XBP1s have overlapping or redundant functions and that at least one of them is necessary for efficient MCMV replication.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/51804/elife-51804-fig6-v2.jpg)\n\n**Figure 6.:** (A) Immunoblot analysis of viral gene expression of Atf6+/+ and Atf6-/- cells infected with MCMV-GFP (MOI 3). At the indicated times cells were lysed and stained for the immediate-early one protein (IE1), the major DNA binding protein (M57; early gene) and glycoprotein B (gB; late gene) by immunoblot. \u03b2-Actin served as loading control. (B) Multistep replication kinetics. Atf6+/+ and Atf6-/- cells were infected with MCMV-GFP (MOI of 0.1). Virus titers in the supernatants were determined by titration and are shown as means\u00a0\u00b1\u00a0SEM of 3 biological replicates. (C) Knockout of Xbp1 in Atf6-/- cells using CRISPR/Cas9 gene editing. Two single cell clones generated by two individual gRNAs (c1 and c2) were analyzed for XBP1s and XBP1u expression by immunoblot. 4 hr prior to harvesting, cells were stimulated with thapsigargin (Tg) to enhance XBP1 expression. The parental Atf6-/- cells are shown as control. (D) Multistep replication kinetics of Atf6/Xbp1 dko cells (clone c2). MCMV infection and titration was done as described in B. Immunoblots are representative of 2 independent experiments. Data provided in Figure 6\u2014source data 1.\n\n### XBP1s and ATF6-mediated activation of the MCMV major immediate-early promoter (MIEP) is repressed by XBP1u\n\nThe MCMV MIEP has a key role in viral gene expression as it drives the expression of the viral IE1 and IE3 proteins. IE3 is the major transactivator protein that activates early and late gene expression (Lacaze et al., 2011). Thus we interrogated whether XBP1s and ATF6 can activate the MCMV MIEP. First, we searched for ACGT motifs within the MCMV MIEP. ACGT is a minimal consensus sequence contained within XBP1s and ATF6 binding motifs (Kanemoto et al., 2005; Wang et al., 2000). Five ACGT motifs were identified within the MCMV MIEP (Figure 7A). To analyze the function of these putative transcription factor binding sites, we inserted the WT MIEP and six mutant versions (Supplementary file 1) into the luciferase reporter plasmid pGL3-Basic. In the mutant MIEPs, one or all five ACGT motifs were changed to CTAG. Using a luciferase reporter assay, we measured MIEP activity in WT, Ern1 ko and Xbp1 ko fibroblasts. As shown in Figure 7B, MIEP activity was strongly reduced in Ern1 ko cells but was not significantly altered in Xbp1 ko cells. This result is consistent with the MCMV replication defect observed in Ern1, but not Xbp1 ko cells (Figure 3B). MIEP activity was not reduced in Xbp1/Ern1 dko cells compared to the parental Xbp1 ko cell (Figure 7C), but was significantly reduced in Atf6/Xbp1 dko cells compared to the parental Atf6-/- cells (Figure 7D). Again, the MIEP activities were consistent with the results of the viral replication kinetics (Figures 5B and 6D). Thus, we concluded that activation of the MCMV MIEP correlated with viral replication in the same cells. We also found that the activity of the MIEP had a substantially reduced activity when all 5 ACGT motifs were mutated (Figure 7B\u2013D).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/51804/elife-51804-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic representation of the MCMV major immediate-early promoter (MIEP) with TATA box and 5 ACGT motifs. (B) WT MEFs, Ern1 ko and Xbp1 ko cells were transfected with a firefly luciferase vector containing either the WT MIEP or a MIEP with five mutated ACGT motifs (all-mut). Renilla luciferase was expressed by co-transfection and used for normalization. Relative luciferase activities (firefly: renilla)\u00a0\u00b1\u00a0SEM of at least three biological replicates are shown. ***, p<0.001; ns, not significant, p>0.05. (C) Xbp1-/- and Xbp1/Ern1 dko cells were transfected as in B and the relative luciferase activity was determined. (D) Atf6-/- and Atf6/Xbp1 dko cells were transfected as in B and the relative luciferase activity was determined. (E) Xbp1-/-\u00a0MEFs were co-transfected with firefly and renilla luciferase vectors as in B. Expression vectors for XBP1s, XBP1u, ATF6(N), or empty vector (EV) were co-transfected. Relative luciferase activities (firefly: renilla)\u00a0\u00b1\u00a0SEM of 3 biological replicates are shown. (F) Atf6-/- cells were transfected as in E and the relative luciferase activity was determined. (G) Atf6/Xbp1 dko cells were transfected as in E and the relative luciferase activity was determined. Data provided in Figure 7\u2014source data 1.\n\nNext, we tested whether XBP1s and ATF6(N), the active form of ATF6, can activate the MCMV MIEP and whether XBP1u can repress it. To assess the contribution of endogenous levels of the TFs, Xbp1 ko, Atf6-/-, and Xbp1/Atf6 dko cells were used. In Xbp1 ko cells, MIEP activity was slightly increased by expression of XBP1s, but substantially reduced by XBP1u. XBP1u also antagonized XBP1s in a dose-dependent manner (Figure 7E). A similar result was obtained in Atf6-/- cells: MIEP activity was slightly increased by expression of ATF6(N), but substantially reduced by XBP1u. XBP1u also antagonized ATF6(N) in a dose-dependent manner (Figure 7F). In Atf6/Xbp1 dko cell, expression of either XBP1s or ATF6(N) was sufficient to increase MIEP activity substantially. XBP1u alone did not reduce MIEP activity in these cells, but it antagonized the activity of ATF6(N) expressed by transfection (Figure 7G). Taken together, these results suggest that both, XBP1s and ATF6(N), can activate the MCMV MIEP in a largely redundant fashion, and that XBP1u represses the activity of both, XBP1s and ATF6(N).\n\n### Motif 4 is necessary and sufficient for MIEP activation by XBP1s and ATF6(N)\n\nAs a first step to determine, which of the five ACGT motifs function as XBP1s and/or ATF6(N) binding sites for promoter activation, we measured the binding of these TFs to portions of the MIEP by using a DNA-protein interaction ELISA (DPI-ELISA, [Brand et al., 2010; Underwood et al., 2013]). Microtiter plates were coated with double-stranded oligonucleotides encoding three copies (27 nucleotides each) of a putative binding motif with adjacent sequences on either side (Supplementary file 2). A known XBP1 binding motif of the ERdj4 promoter (Kanemoto et al., 2005) served as positive control and a sequence of the SV40 origin of replication as negative control. The oligonucleotides were incubated with HA-tagged XBP1s, XBP1u, or ATF6(N) (Figure 8A), and DNA binding was quantified by ELISA. Mutated TFs lacking the DNA-binding domain (\u0394DBD) served as negative controls. In this DPI-ELISA, XBP1s and XBP1u showed the strongest interaction with motifs 3 and 4, whereas ATF6(N) interacted with motifs 2 and 4 (Figure 8B).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/51804/elife-51804-fig8-v2.jpg)\n\n**Figure 8.:** (A) HEK 293A cells were transfected with expression vectors encoding HA-tagged WT or mutant XBP1 and ATF6(N) transcription factors. Nuclear extracts were obtained, and transcription factor expression was verified by immunoblot analysis (representative of 2 independent experiments). (B) Microtiter plates coated with dsDNA oligonucleotides containing XBP1 core binding motifs from the MCMV major immediate-early promoter, the ERdj4 promoter (positive control) or an unrelated sequence from the SV40 origin of replication (negative control). Wells were incubated with nuclear extracts 1 to 6 shown in A, and transcription factor binding was measured by DPI-ELISA, and values were normalized to extract 1 (empty vector). Means\u00a0\u00b1\u00a0SEM of 3 biological replicates are shown. Significance was determined for all values above the cut-off (1.25). **, p<0.01; ***, p<0.001. Data provided in Figure 8\u2014source data 1.\n\nNext, we used the luciferase reporter assay to test which of the five motifs was required for MIEP activation by XBP1s and ATF6(N). We used five mutant MIEPs having one of the ACGT motifs changed to CTAG. These reporter plasmids were transfected into Atf6/Xbp1 dko cells, together with expression plasmids for XBP1s, XBP1u, and ATF6(N). As shown in Figure 9A, XBP1s or ATF6(N) expression increased the activity of all MIEP constructs except MIEP-4-mut and MIEP-all-mut, indicating that ACGT motif 4 is necessary for MIEP activation by XBP1s and ATF6(N).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/51804/elife-51804-fig9-v2.jpg)\n\n**Figure 9.:** (A) Atf6/Xbp1 dko MEFs cells were transfected with a firefly luciferase vector containing either the WT major immediate-early promotor (MIEP) or a MIEP with one or all ACGT motifs mutated. Expression vectors for XBP1s, XBP1u, ATF6(N), or empty vector (EV) were co-transfected. Renilla luciferase was expressed by co-transfection and used for normalization. Relative luciferase activities (firefly: renilla)\u00a0\u00b1\u00a0SEM of 3 biological replicates are shown. ***, p<0.001; all other differences were not significant (p>0.05). (B) Atf6/Xbp1 dko MEF cells were transfected and analyzed as in A. In addition, a MIEP vector with all ACGT motifs mutated except motif 4 (4-only) was included. (C) Multistep MCMV replication kinetics in WT MEF cells. Cells were infected with MCMV-GFP or MCMV-GFP-4-mut (MOI 0.1), respectively. Virus titers in the supernatants were determined by titration and are shown as means\u00a0\u00b1\u00a0SEM of 3 biological replicates. Data provided in Figure 9\u2014source data 1.\n\nWe tested then whether motif 4 was also sufficient for MIEP activation by XBP1s and ATF6(N). Motif 4 was restored in MIEP-all-mut to generate a MIEP containing only ACGT motif 4 (MIEP-4-only, Supplementary file 1). Indeed, MIEP-4-only was inducible by XBP1s and ATF6(N) (Figure 9B), suggesting that motif 4 is sufficient to confer MIEP responsiveness to XBP1s and ATF6. To determine whether motif 4 is also of crucial importance for MCMV replication, we mutated motif four within the MCMV genome. The resulting virus, MCMV-GFP-4-mut, was compared to the parental MCMV-GFP virus in a multi-step replication kinetic analysis (Figure 9C). Indeed, viral replication was massively reduced when motif 4 within the MIEP was mutated. This result confirmed that the XBP1 and ATF6(N) target motif identified in DNA-binding and luciferase reporter assays is required for efficient replication of the virus.\n\nTaken together, the results of this study show that MCMV transiently activates the IRE1-XBP1 signaling pathway in the early phase of infection in order to relieve XBP1u-mediated repression of viral gene expression and replication. The MCMV major immediate-early promoter requires XBP1s or ATF6(N) binding to motif 4 for full activation, and XBP1u prevents promoter activity by both TFs. Thus, XBP1u acts as a key repressor of two UPR pathways, the IRE1-XBP1 and the ATF6 pathways, which have overlapping and redundant functions.\n\n## Discussion\n\nThis study shows how MCMV harnesses UPR signaling to regulate its own life cycle. The viral MIEP, the key promotor of the lytic replication cycle, contains five ACGT motifs, of which motif 4 is most important for MIEP activation by XBP1s or ATF6(N) (Figure 9). The fact that MIEP activity and viral replication are virtually unaffected in the absence of either XBP1 or ATF6 but are massively reduced in the absence of both, strongly suggests that the two UPR TFs have redundant roles in the activation of the MIEP. The most important finding, however, is the dominant role of XBP1u as a repressor of viral gene expression and replication. When IRE1 is absent or its RNase activity is blocked, XBP1u dominates and prevents MIEP activation by XBP1s and ATF6(N). Thus, the transient activation of IRE1 during the early phase of MCMV infection serves the virus by increasing XBP1s and decreasing XBP1u expression, thereby relieving XPB1u-mediated repression. At present, the MCMV protein(s) responsible for the early activation of IRE1 remains unknown. Most of the viral envelope glycoproteins are expressed at late times post infection (i.e., starting 12 hpi) and are thus unlikely to be responsible. However, it is conceivable that certain early glycoproteins are particularly potent stress inducers, either by binding and sequestering BiP (Bakunts et al., 2017; Vitale et al., 2019) or by inducing ER calcium release. Possible candidates for the latter include the MCMV homolog of the HCMV UL37x1 protein (Sharon-Friling et al., 2006) or the viral G protein-coupled receptors, which can activate phospholipase C and the inositol trisphosphate receptor (Boeck and Spencer, 2017; Sherrill et al., 2009).\n\nHow exactly XBP1u antagonizes XBP1s and ATF6(N)-mediated promoter activation, remains to be determined. Two possible mechanisms may be involved: XBP1u could interact with XBP1s and ATF6(N) and target them for proteasomal degradation as previously reported (Yoshida et al., 2006; Yoshida et al., 2009). Additionally, XBP1u could bind directly to DNA and inhibit promoter activation by XBP1s and ATF6(N). Indeed, we show that XBP1u is fully capable of binding to the same DNA sequences that XBP1s binds to (Figure 8). Moreover, a truncated XBP1 protein, XBP1stop, which lacks the C-terminal destabilizing domain of XBP1u, had a similar repressive effect as XBP1u (Figure 5D) indicating that destabilization is not required for repression.\n\nEver since its discovery, the importance of XBP1u has been the subject of controversy. In yeast, the unspliced mRNA of HAC1, the yeast homolog of XBP1, is posttranscriptionally silenced, and a protein product of the unspliced HAC1 mRNA has not been detected (R\u00fcegsegger et al., 2001). In mammalian cells, the XBP1u protein is readily detectable, but XBP1u has a short half-life (Navon et al., 2010; Tirosh et al., 2006). This has led to the conclusion that XBP1u is of minor importance and its function restricted to fine-tuning of the UPR (Byrd and Brewer, 2012). Hence, many review articles on the UPR barely mention XBP1u. On the other hand, XBP1u has been shown to dimerize with XBP1s and ATF6(N) and destabilize them (Yoshida et al., 2006; Yoshida et al., 2009), suggesting a more important regulatory role. However, the physiological relevance of these findings has been called into question by some scientists because the findings were made in cells overexpressing XBP1u. The results of our study show that XBP1u plays a very important role as a repressor of XBP1s and ATF6(N)-mediated activation of the MCMV MIEP, which results in a massively (up to 100-fold) reduced production of progeny virus (Figures 2, 3B and 5D). In IRE1-deficient cells, the Xbp1 transcript is expressed from its endogenous promoter, not from a strong heterologous promoter. Thus, the observed effects cannot be dismissed as overexpression artifacts. Moreover, the fact that MCMV replication is massively reduced in Ern1 ko cells (Figures 2 and 3B), but not in Ern1/Xbp1 dko cells (Figure 5B), demonstrates that XBP1u expression rather than the absence of RIDD is responsible for the observed effect. Hence, the data of our study suggest that XBP1u plays an unexpectedly important role as a repressor, at least under the conditions of viral infection. Whether XBP1u can repress expression of cellular genes in a similar fashion is an important question that needs to be answered in future studies.\n\nXBP1 binding sites have also been identified in immediate-early gene promoters of the \u03b3-herpesviruses Epstein-Barr virus, Kaposi's sarcoma-associated herpesvirus, and murine gammaherpesvirus 68 (MHV-68), suggesting a potential role for XBP1s in transactivating these promoters during reactivation from latency (Bhende et al., 2007; Matar et al., 2014; Sun and Thorley-Lawson, 2007; Wilson et al., 2007; Yu et al., 2007). However, one study demonstrated that XBP1 was not required for MHV-68 reactivation in B cells (Matar et al., 2014). The authors of the study speculated that the apparent independence of MHV-68 reactivation from XBP1 expression in B cells might reflect redundancy among CREB/ATF family TFs. In light of our data showing a redundancy of XBP1s and ATF6(N) in the activation of the MCMV MIEP, this conjecture may well be correct. Conversely, it would be interesting to know whether XBP1 and ATF6 also regulate MCMV reactivation from latency. Unfortunately, this obvious question is difficult to address as there is no manageable cell culture system for MCMV latency and reactivation. Nonetheless, it appears likely that \u03b2 and \u03b3-herpesviruses harness UPR TFs in a similar fashion to regulate their life cycle.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>GS1783</td>\n      <td>PMID:16526409</td>\n      <td></td>\n      <td>BAC host for recombineering</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (murid herpesvirus 1)</td>\n      <td>MCMV-GFP</td>\n      <td>PMID:11209080</td>\n      <td></td>\n      <td>BAC-derived MCMV (Smith strain) expressing GFP</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK 293A</td>\n      <td>Invitrogen</td>\n      <td>R705\u201007; RRID:CVCL_6910</td>\n      <td>Transformed human embryonic kidney cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK 293T</td>\n      <td>ATCC</td>\n      <td>CL-11268</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>Phoenix</td>\n      <td>ATCC</td>\n      <td>CRL-3213; RRID:SCR_003163</td>\n      <td>Packaging cell line for retrovirus production</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>WT MEF</td>\n      <td>PMID:19364921</td>\n      <td></td>\n      <td>SV40 TAg immortalized MEF</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>10.1</td>\n      <td>PMID:1752433</td>\n      <td></td>\n      <td>spontaneously immortalized BALB/c MEF</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Ern1-/- MEF</td>\n      <td>PMID:11780124</td>\n      <td></td>\n      <td>IRE1-deficient MEF</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>TetON-Ern1-/-</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Ern1-/- MEFs expressing rtTA (TetON)</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>TetON-IRE1-GFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>TetON-Ern1-/- cells, inducible expression of IRE1-GFP</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Xbp1-/- MEF</td>\n      <td>PMID:10652269</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Ern1 ko MEF</td>\n      <td>This paper</td>\n      <td></td>\n      <td>WT MEF, Ern1 knocked out by CRISPR/Cas9</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Xbp1 ko MEF</td>\n      <td>This paper</td>\n      <td></td>\n      <td>WT MEF, Xbp1 knocked out by CRISPR/Cas9</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Traf2 ko MEF</td>\n      <td>This paper</td>\n      <td></td>\n      <td>WT MEF, Traf2 knocked out by CRISPR/Cas9</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Atf6-/- MEF (LT)</td>\n      <td>This paper PMID:17765679</td>\n      <td></td>\n      <td>SV40 TAg immortalized MEF</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Atf6+/+ MEF (LT)</td>\n      <td>This paper PMID:17765679</td>\n      <td></td>\n      <td>SV40 TAg immortalized MEF</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Atf6/Xbp1 dko</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Atf6-/- MEF, Xbp1 knocked out by CRISPR/Cas9</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMSCVhygro, pMSCVpuro</td>\n      <td>Clontech</td>\n      <td></td>\n      <td>Retroviral vector plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGL3-Basic</td>\n      <td>Promega</td>\n      <td>E1751</td>\n      <td>Firefly luciferase reporter plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGL4.73</td>\n      <td>Promega</td>\n      <td>E6911</td>\n      <td>Renilla luciferase control plasmid</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-HA (mouse monoclonal)</td>\n      <td>Covance</td>\n      <td>MMS-101P; RRID:AB_291259</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-IRE1 (rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>Cat# 3294; RRID:AB_823545</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-pIRE1 (rabbit polyclonal)</td>\n      <td>Novus Biologicals</td>\n      <td>NB100-2323; RRID:AB_10145203</td>\n      <td>WB (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-XBP1 (rabbit polyclonal)</td>\n      <td>Santa Cruz</td>\n      <td>sc-7160; RRID:AB_794171</td>\n      <td>WB (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-TRAF2 (rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>Cat# 4724; RRID:AB_2209845</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-IE1 (Chroma101, mouse)</td>\n      <td>Stipan Jonjic (Univ.of Rijeka)</td>\n      <td></td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-M57 (mouse)</td>\n      <td>Stipan Jonjic (Univ.of Rijeka)</td>\n      <td></td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-gB (M55.01, mouse)</td>\n      <td>Stipan Jonjic (Univ.of Rijeka)</td>\n      <td></td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GFP (mouse monoclonal)</td>\n      <td>Roche</td>\n      <td>Cat# 11814460001; RRID:AB_390913</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-\u03b2-Actin (mouse monoclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>A2228; RRID:AB_476697</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GenJet</td>\n      <td>SignaGen Laboratories</td>\n      <td>SL100489-MEF</td>\n      <td>Transfection reagent</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Polyethylenimine (PEI)</td>\n      <td>Sigma-Aldrich</td>\n      <td>764604</td>\n      <td>Transfection reagent</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CellTiter-Glo Luminescent Cell Viability Assay</td>\n      <td>Promega</td>\n      <td>G7570</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dual-Luciferase Reporter Assay System</td>\n      <td>Promega</td>\n      <td>E1910</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cells and viruses\n\nThe following immortalized fibroblast lines were used: wildtype MEFs (Manzl et al., 2009), 10.1 cells (Harvey and Levine, 1991), Ern1-/- MEFs (Calfon et al., 2002), and Xbp1-/- MEFs (Reimold et al., 2000). Primary Atf6+/+ and Atf6-/- MEFs (Wu et al., 2007) were kindly provided by D. Thomas Rutkowski (University of Iowa, USA). They were immortalized by transduction with a retroviral vector encoding SV40 large T antigen (pBABE-zeo largeTcDNA, Addgene). The Atf6+/+ vs. Atf6-/- state was verified by PCR as described (Wu et al., 2007). TetON-MEFs were obtained by transduction of wiltype MEFs with a lentiviral vector encoding the TetON transactivator (pLIX-402, Addgene). TetON-Ern1-/- cells were generated in a similar fashion. TetON-IRE1-GFP MEFs were obtained by reconstituting TetON-Ern1-/- MEFs with GFP-tagged murine IRE1 under control of a \u2018tight\u2019 Tet-responsive element (Clontech) essentially as described (Bakunts et al., 2017; Cohen et al., 2017). The GFP tag was introduced into the juxtamembrane cytosolic linker domain of IRE1, where such tagging had been shown before to not interfere with function of human IRE1 (Li et al., 2010). All cells were grown under standard conditions in Dulbecco\u00b4s modified Eagle\u00b4s medium supplemented with 10% fetal calf serum or 10% fetal calf serum tetracycline-free, 100 IU/ml penicillin and 100 \u00b5g/ml streptomycin (Sigma). All cells were tested regularly for mycoplasma contamination and were found to be negative.\n\nMCMV-GFP (Brune et al., 2001) was propagated and titrated on 10.1 fibroblasts. Viral titers were determined by using the median tissue culture infective dose (TCID50) method. Virus was inactivated by 254-nm-wavelength UV irradiation with 1 J/cm2 for 30 s using a UV cross-linker (HL-2000 HybriLinker; UVP).\n\n### Mutagenesis of the MCMV MIEP\n\nThe recombinant MCMV carrying an ACGT-to-CTAG mutation of MIEP motif 4 was constructed by BAC (bacterial artificial chromosome) recombineering using the en passant mutagenesis protocol (Tischer et al., 2010). A kanamycin resistant gene was PCR-amplified using primers MIEP_4_mut fwd (5\u2019-GGTACTTTCCCATAGCTGATTAATGGGAAAGTACCGTTCTCGAGCCAATACCTAGCAATGGGAAGTGAAAGGGCAGtagggataacagggtaatcgattt-3\u2019) and MIEP_4-mut rev (5\u2019-GGGGAAAACCGGGGCGGTGTTACGTTTTGGCTGCCCTTTCACTTCCCATTGCTAGGTATTGGCTCGAGAACGGTACTgccagtgttacaaccaattaacc-3\u2019). The linear PCR product was used for homologous recombination in Escherichia coli strain GS1783 containing the MCMV-GFP BAC. The kanamycin resistance cassette was used for positive selection in the first recombination step and removed in the second step (Tischer et al., 2010). The MCMV-GFP-4-mut BAC was examined by restriction fragment analysis and sequencing of the mutated region. Mutant and control viruses were reconstituted by BAC transfection of mouse fibroblast using GenJet transfection reagent (SignaGen).\n\n### Plasmids and transfection\n\nXBP1-wt and XBP1-unsplicable cDNAs (Tirosh et al., 2006) were cloned in pcDNA3. The XBP1-wt vector was used to generate by PCR an XBP1stop mutant consisting of only the N-terminal domain of XBP1. The XBP1s cDNA was generated by isolating RNA from MEFs stimulated with tunicamycin (Sigma), reverse transcription, and PCR amplification. To generate XBP1-unsplicable and XBP1-spliced plasmids lacking the DNA-binding domain (\u0394DBD), the complete DBD was replaced by an alternative NLS sequence as previously described (Zhou et al., 2011). Transcripts of XBP1 proteins were HA-tagged by PCR amplification and subcloned in pMSCVpuro (Clonetech), a retroviral vector plasmid. Similarly, mIRE1-wt was PCR-amplified (without a myc tag) from pcDNA3-mIRE1-3xmyc (Stahl et al., 2013) and subcloned in pMSCVhygro (Clontech) using BglII and HpaI sites. The K907A mutation was introduced by QuikChange site-directed mutagenesis (Stratagene). Transient transfection was done using GenJet (SignaGen) or polyethylenimine (Sigma).\n\n### Retroviral transduction and CRISPR/Cas9 gene editing\n\nRetrovirus production using the Phoenix packaging cell line and transduction of target cells was done as described (Swift et al., 2001). Cells transduced with MSCVpuro and MSCVhygro vectors were selected with 1.5 \u00b5g/ml puromycin (Sigma) or 50 \u00b5g/ml hygromycin B (Roth), respectively.\n\nGuide RNAs (Supplementary file 3) for genes of interest were designed using the online tool E-CRISP (http://www.e-crisp.org/E-CRISP/designcrispr.html) and inserted into the lentiviral vector pSicoR-CRISPR-puroR (kindly provided by R. J. Lebbink, University Medical Center Utrecht, Netherlands). Lentiviruses were produced in 293 T cells using standard third-generation packaging vectors as described (van Diemen et al., 2016). Lentiviruses were used to transduce MEFs in the presence of polybrene (5 \u00b5g/ml). Cells were selected with 1.5 \u00b5g/ml puromycin and single cell clones were obtained by limiting dilution.\n\n### Immunoblot analysis\n\nWhole cell lysates were obtained by lysing cells in RIPA buffer supplemented with a cOmplete, Mini protease inhibitor cocktail (Roche). XBP1s, XBP1u, and ATF6(N) were extracted from cells treated with thapsigargin (Sigma) using a nuclear extraction protocol (Stahl et al., 2013). Insoluble material was removed by centrifugation. Protein concentrations were measured using a BCA assay (Thermo\u00a0Fisher\u00a0Scientific). Equal protein amounts were boiled in sample buffer and subjected to SDS-PAGE and semi-dry blotting onto nitrocellulose membranes. For immunodetection, antibodies against the following epitopes were used: HA (16B12, Covance), \u03b2-actin (AC-74, Sigma), XBP1 (M-186, Santa Cruz), IRE1 (14C10, Cell Signaling), pIRE1 (NB100-2323, Novus Biologicals), TRAF2 (Cell Signaling), and GFP (Roche). Antibodies against MCMV IE1 (CROMA101), M57, and M55/gB (SN1.07) were provided by Stipan Jonjic (University of Rijeka, Croatia). Secondary antibodies coupled to horseradish peroxidase (HRP) were purchased from Dako.\n\n### RNA isolation and quantitative PCR\n\nTotal RNA was isolated from MEFs using an innuPREP RNA Mini Kit (Analytik-Jena). Reverse transcription and cDNA synthesis was carried out with 2 \u00b5g RNA using 200 U RevertAid H Minus Reverse Transcriptase, 100 pmol Oligo(dT)18, and 20 U RNase inhibitor (Thermo Fisher Scientific). Quantitative real-time PCR reactions employing SYBR Green were run in a 7900HT Fast Real-Time PCR System (Applied Biosystems). The following primers were used: 5\u2032-GAGTCCGCAGCAGGTG-3\u2032 and 5\u2032-GTGTCAGAGTCCATGGGA-3\u2032 for Xbp1s, 5\u2032-GTGTCAGAGTCCATGGGA-3\u2032 and 5\u2032-GTGTCAGAGTCCATGGGA-3\u2032 for Xbp1u, and 5\u2032-CCCACTCTTCCACCTTCGATG-3\u2032 and 5\u2032-GTCCACCACCCTGTTGCTGTAG-3\u2032 for Gapdh. Primers for the amplification of IE1 (M123), E1 (M112), gB (M55), and M37 transcripts have been described previously (Chapa et al., 2013; Chapa et al., 2014). Reactions were performed under the following conditions: 45 cycles of 3 s at 95\u00b0C and 30 s at 60\u00b0C. Three replicates were analyzed for each condition, and the relative amounts of mRNAs were calculated from the comparative threshold cycle (Ct) values by using Gapdh as reference.\n\n### Replication kinetics\n\nCells were seeded in 6-well plates and infected by an MOI of 3 or 0.1 for single or multi-step replication kinetics, respectively. Six hpi the medium was exchanged to remove the inoculum. Supernatant samples were harvested at different times post infection, and viral titers were determined on 10.1 fibroblasts using the TCID50 method.\n\n### MIE promotor activity assay\n\nThe firefly luciferase reporter vector pGL3-Basic, the renilla luciferase control vector pGL4.73, and the Dual-Glo Luciferase assay system were purchased from Promega. WT and mutant versions of the MCMV MIE promotor (Supplementary file 1) were synthesized by Integrated DNA Technologies and cloned in pGL3-Basic. Cells were transfect in 6-well dishes using GenJet with pGL3-MIEP (0.5 \u00b5g), pGL4.73 (0.05 \u00b5g) and transcription factor expression plasmids. The total amount of DNA was kept constant at 3 \u00b5g by filling up with empty pcDNA3 vector. On the following day, the medium was exchanged and cells were incubated for another 24 hr. Cells were harvested in lysis buffer and luciferase activity was measured using a Dual-Glo Luciferase assay and a luminescence plate reader (FLUOstar-Omega, BMG Labtech). Firefly and Renilla luciferase activities were evaluated for each sample. At least three biological replicates were used for each condition.\n\n### DNA-Protein interaction ELISA (DPI-ELISA)\n\nThe DPI-ELISA was performed essentially as described in detail elsewhere (Brand et al., 2010; Underwood et al., 2013). Terminally biotinylated dsDNA oligonucleotides containing 3 copies of putative TF binding sites (Supplementary file 2) were purchased from Eurofins. Oligonucleotides were adsorbed to streptavidin-coated 96-well microtiter plates and incubated with nuclear extracts (10 \u00b5g protein) from transfected HEK 293A cells expressing the HA-tagged XBP1 or ATF6(N) proteins. Nuclear extracts were obtained as described (Stahl et al., 2013). TF binding to DNA was quantified by ELISA using an anti-HA antibody, an HRP-coupled secondary antibody, and an ABTS substrate (Roche). Absorbance at 405 nm wavelength was measured using a FLUOstar-Omega plate reader. At least three biological replicates were used for each condition.\n\n### Cell viability assay\n\nTetON-IRE1-GFP cells were seeded in 96-well plates at a density of 1000 cells per well. Cells were treated with 0, 10 or 25 nM doxycycline at the time of seeding. Medium was replenished 1 and 3 days after seeding. Cell viability was determined on day 3 and day 5 by measuring intracellular ATP levels with a Cell Titer-Glo Luminescent Cell Viability Assay kit (Promega) and a FLUOstar Omega luminometer (BMG Labtech). The values were normalized to non-stimulated cells.\n\n### Statistical analysis\n\nAll statistical analyses were performed with GraphPad Prism 5.0 software. One-way ANOVA followed by Bonferroni\u00b4s post hoc test was used for the analysis of the luciferase reporter assays, the cell viability assay, and the DPI-ELISA.\n",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "d58457d1-3579-4fb9-b216-40dc3042acca",
+      "submission_id": "1f96adb6-d41b-492d-a3bd-9d93ed5328d3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karla Kirkegaard, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51804.sa1](https://doi.org/10.7554/eLife.51804.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study is focused on an understudied aspect of virus-host interactions, the effects of UPR pathways on lytic herpesvirus replication. Importantly, very little is known about XBP1u effects on any virus, and the discovery of a repressive function for XBP1u provides a tidy explanation for IRE1 activation observed during early lytic replication. The study makes good use of CRISPR technology to knock out various components of the UPR pathway to identify genetic determinants of these responses. It is a well-investigated example of how a virus can both take advantage of a cellular pathway and subsequently repress it during a single infectious cycle.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Repression of viral gene expression and replication by the unfolded protein response effector XBP1u\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Karla Kirkegaard as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Hiderou Yoshida (Reviewer #2); Craig McCormick (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe endoplasmic reticulum (ER) is an organelle where secretory and membrane proteins are synthesized and folded with the assistance of ER chaperones. When synthesis of secretory or membrane proteins is increased and overwhelms the capacity of the ER, unfolded proteins are accumulated in the ER (ER stress), resulting in ER stress-induced cell death. To cope with ER stress, eukaryotic cells activates a cytoprotective mechanism called the ER stress response (also called the unfolded protein response (UPR)) in order to augment the capacity of the ER. In mammalian cells, the UPR consists of three response pathways, that is, the ATF6, IRE1 and PERK pathways. Each pathway is regulated by a specific sensor and a transcription factor. For instance, pATF6(P) and pATF6(N) are a sensor and a transcription factor for the ATF6 pathway, while IRE1 and pXBP1(S) are those for the IRE1 pathway. Mammalian XBP1 gene encodes two proteins, that is, pXBP1(U) and pXBP1(S). In normal growth conditions, pXBP1(U) protein is translated from unspliced XBP1 mRNA, whereas upon ER stress, activated IRE1 converts unspliced XBP1 mRNA into spliced mRNA, from which pXBP1(S) is translated. pXBP1(S) is an active transcription factor that induces transcription of ER-related genes, while pXBP1(U) has several functions, including transcriptional suppression against pXBP1(S) and pATF6(N), and anchoring unspliced mRNA to ER membrane.\n\nDuring viral replication, a number of viral proteins are synthesized and activate the UPR to support the synthesis of their proteins. On the other hand, the system of the ER-associated degradation (ERAD) augmented by the IRE1 pathway degrades viral proteins and the PERK pathway attenuates translation of viral proteins. Thus, the UPR is beneficial as well as harmful to virus, and in some cases virus modulate the UPR of host cells to ensure propagation of their offspring.\n\nIt has been revealed that cytomegalovirus (CMV) modulates the mammalian UPR. It limits translational repression of their proteins by the PERK pathway, and enhances folding of their proteins through induced expression of ER chaperones by the ATF6 pathway. Interestingly, the authors previously revealed that the UPR is activated during the early phase of viral replication, while CMV reduces expression of IRE1 by their proteins (M50 and UL50) during the late phase of the replication.\n\nIn this manuscript, the authors examined the mechanism and the biological significance of the transient activation of the UPR in the early phase of CMV replication. They found that moderate activation of RNase activity of IRE1 is beneficial to replication. Interestingly, they showed that pXBP1(U) can suppress replication, while pATF6(N) and pXBP1(S) are beneficial for replication by upregulating transcription of the viral major immediate-early promoter (MIEP) genes through the Motif 4 enhancer element. From these observations, the authors concluded that CMV harnesses the UPR to regulate its own life cycle by activating the IRE1-XBP1 pathway during the early post infection to relieve repression by pXBP1(U). Their findings are important not only for viral research but also for the research of the UPR, since they revealed the redundant function of pXBP1(S) and pATF6(N) as activators of the viral life cycle, and an unexpected role of pXBP1(U) as a potent repressor of both pXBP1(S) and pATF6(N)-mediated activation.\n\nThat the product of an unspliced version of a cellular message is subverted by a virus is extremely interesting, and this work is well-executed. However, the timing of this is obviously of great interest, and the reviewers' major requests were explications of that timing for all the relevant players.\n\nEssential revisions:\n\n1) All reviewers had questions about the timing of the experiments. Examples of individual reviewer comments to this effect are below. What is needed is no less than the abundance of each of the relevant molecules as a function of time throughout the viral infection. At least, filling out the tests at the time points requested by the reviewers below is needed to clarify all the moving parts in this complex system.\n\na) The main comment addresses the kinetics of the effects of IRE1 activation. Figure 1 shows XBP1u mRNA gets spliced at 6-7 hours after infection with a rapid decline of XBP1u splicing from 8-24 hours. However, all subsequent experiments on the effects of XBP1u were examined between 1 and 9 days after infection. Thus, it is unclear whether early effects were studied.\n\nb) Figure 2. It is puzzling that viral replication is the same in the absence (0nM dox) or high abundance (25nM dox) of IRE1. In contrast, intermediate abundances of IRE1 stimulate viral replication. Is cell viability, and consequently viral replication, affected at 25nM dox? Alternatively, are late effects, i.e. inhibition of IRE1, already monitored after 5 days? The late glycoprotein B is already observed at 2 days after infection (Figure 3D-F).\n\nc) Figure 3. The effect of IRE1 ko on viral replication is very clear; IRE1 deficiency drops multiround replication by several logs. The diminished viral protein accumulation on the western blots in Figure 3D is quite subtle by comparison, but understandable because it is a high MOI single-cycle infection rather than low MOI multiround. Essentially, it is difficult to draw a strong conclusion from these western blots, and they certainly could use more support in the form of RT-qPCR for viral transcripts (which would not be limited to available antibodies, and could be used in concert with multi-round infection, as in Figure 3B.)\n\nd) Some conclusions are not adequately supported by the data. For example, while the authors provide evidence for transient IRE1 activation during MCMV infection via an RT-qPCR assay that measures XBP1 mRNA splicing, they do not corroborate this data with more direct evidence of IRE1 activation via immunoblotting for IRE1 phosphorylation or XBP1s protein accumulation, which is standard practice in the UPR field. Moreover, they do not investigate whether MCMV infection (in either low MOI or high MOI infections) affects the levels or activation of IRE1, XBP1, or any other UPR component. In this regard, application of the RT-qPCR assay for XBP1 splicing to an MCMV infection time course would be quite informative.\n\ne) It remains unclear whether MCMV infection causes alterations in the levels or activation of any of the cellular UPR machinery like IRE1, XBP1s or ATF6. At the least, this RT-qPCR data should be accompanied by western blots that show clear accumulation of XBP1s protein, so the authors can confidently conclude that IRE1 is indeed being activated and having the anticipated effect on XBP1s protein accumulation. The authors should directly demonstrate IRE1 activation in response to infection using conventional western blotting techniques, looking for IRE1 phosphorylation and impeded electrophoretic mobility, or accumulation of XBP1u or XBP1s proteins.\n\n2) In Figure 2, it remains formally possible that higher doses of dox in Figure 2 negatively impact MCMV replication in an IRE1-independent manner. Importantly, this experiment lacks an empty vector control that would clarify this matter.\n\n3) The data are remarkably consistent between biological replicates. Are these true biological replicates performed at different times, or cells infected in parallel with the same virus stocks on the same day? Some clarity on this point, and a look at the primary data, would be illuminating.\n\n4) This study would be significantly strengthened by identification of a viral factor responsible for IRE1 activation; this may be beyond the scope of the current study, but the reader would benefit from understanding approaches to identify such a factor among MCMV early gene products.\n",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a4747813-8787-47c1-b832-28ed0476c50d",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C1",
+      "claim": "MCMV activates the IRE1-XBP1 pathway early post infection to relieve repression by XBP1u.",
+      "claim_type": "EXPLICIT",
+      "source": "MCMV activates the IRE1-XBP1 pathway early post infection to relieve repression by XBP1u, the product of the unspliced Xbp1 mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data showing transient XBP1 splicing between 5-7 hours post infection (Figure 1A) and replication defects in IRE1-deficient cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "7d453585-35dc-44fd-aee4-56426e276e4b",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C2",
+      "claim": "XBP1u inhibits viral gene expression and replication by blocking the activation of the viral major immediate-early promoter by XBP1s and ATF6.",
+      "claim_type": "EXPLICIT",
+      "source": "XBP1u inhibits viral gene expression and replication by blocking the activation of the viral major immediate-early promoter by XBP1s and ATF6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by luciferase reporter assays showing XBP1u represses MIEP activity (Figure 7E-G) and viral replication data showing impaired replication when unspliceable XBP1 is expressed (Figure 5D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "a01d1f8d-d0a5-429e-9ca3-81fca4dd195f",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C3",
+      "claim": "XBP1s and ATF6 have redundant functions as activators of the viral life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal a redundant function of XBP1s and ATF6 as activators of the viral life cycle, and an unexpected role of XBP1u as a potent repressor of both XBP1s and ATF6-mediated activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that loss of either XBP1 or ATF6 alone does not impair MCMV replication (Figures 3B, 6B), but loss of both substantially reduces replication (Figure 6D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "07ecf6c4-e12d-4c27-95c1-52782d76ffdd",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C4",
+      "claim": "MCMV infection causes a transient increase of XBP1 splicing between 5 and 7 hours post infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected a short and transient increase of XBP1 splicing between 5 and 7 hr post infection (hpi) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by qRT-PCR data quantifying spliced and unspliced XBP1 transcripts shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "14ff1287-4111-42ab-a6fe-c5d83acdee66",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C5",
+      "claim": "XBP1 splicing during MCMV infection is massively reduced when cells are infected with UV-inactivated MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase was massively reduced when cells were infected with UV-inactivated MCMV (Figure 1A), suggesting that XBP1 splicing was not caused by viral attachment and entry into cells but required viral gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing active and UV-inactivated MCMV shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "52cde2e6-f152-4995-8888-1d459c08e051",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C6",
+      "claim": "XBP1 splicing during MCMV infection requires viral gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase was massively reduced when cells were infected with UV-inactivated MCMV (Figure 1A), suggesting that XBP1 splicing was not caused by viral attachment and entry into cells but required viral gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on the observation that UV-inactivated virus (which cannot express genes) does not induce XBP1 splicing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "78451e86-79ab-424c-bff9-94cc06b9e9ff",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C7",
+      "claim": "MCMV-induced XBP1 splicing is suppressed by cycloheximide.",
+      "claim_type": "EXPLICIT",
+      "source": "MCMV-induced XBP1 splicing was suppressed by cycloheximide (CHX, a translation inhibitor), but not by phosphonoacetic acid (PAA), an inhibitor of viral DNA replication and late gene expression (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C comparing CHX and PAA treatment effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "b3cd07a9-e0df-4026-937c-ed839492c2fd",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C8",
+      "claim": "MCMV-induced XBP1 splicing is not suppressed by phosphonoacetic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "MCMV-induced XBP1 splicing was suppressed by cycloheximide (CHX, a translation inhibitor), but not by phosphonoacetic acid (PAA), an inhibitor of viral DNA replication and late gene expression (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "e654eee3-d749-455b-a2ed-1e9d94c0ace2",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C9",
+      "claim": "The transient activation of the IRE1-XBP1 pathway is caused by viral proteins expressed at immediate-early or early times post infection.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that the transient activation of the IRE1-XBP1 pathway is caused by viral proteins expressed at immediate-early or early times post infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on the observation that CHX (which blocks translation) suppresses XBP1 splicing, while PAA (which blocks late gene expression) does not.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "0c756a8e-f649-4a37-ae9f-31c7b6612fca",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C10",
+      "claim": "IRE1 is necessary for efficient replication of MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we concluded that IRE1 is necessary for efficient replication of MCMV, but needs to be carefully regulated as too high expression levels are detrimental for cell viability and viral replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by replication kinetics data showing reduced MCMV titers in IRE1-deficient cells and cells with very low or very high IRE1 expression (Figures 2B, 2C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "c129922c-0a50-48bc-a8ad-817d78b6f3db",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C11",
+      "claim": "Too high IRE1 expression levels are detrimental for cell viability and viral replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we concluded that IRE1 is necessary for efficient replication of MCMV, but needs to be carefully regulated as too high expression levels are detrimental for cell viability and viral replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell viability data (Figure 2D) and replication kinetics showing reduced viral titers at high doxycycline concentrations (Figures 2B, 2C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "4511a163-241a-4f31-a4bc-7dcb9baf8ff4",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C12",
+      "claim": "IRE1 overexpression is cytotoxic.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the previously reported cytotoxicity of IRE1 overexpression (Han et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by Han et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "5b440906-ac03-48b0-85e0-a341746f73e0",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C13",
+      "claim": "In Ern1 ko MEFs, viral replication and viral gene transcription were massively reduced compared to WT MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In Ern1 ko MEFs, viral replication (Figure 3B) and viral gene transcription (Figure 3\u2014figure supplement 1) were massively reduced as compared to WT MEFs (Figure 3B)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by replication kinetics data (Figure 3B) and transcript quantification data (Figure 3\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "a59f79bc-fe34-4759-8592-f27b9926be34",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C14",
+      "claim": "MCMV replication is virtually unimpaired in the absence of Xbp1.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, MCMV replication was virtually unimpaired in the absence of Xbp1 (Figure 3B) or Traf2 (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by replication kinetics data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "8dd5b0ff-732a-4d6d-8da7-34d32417c283",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C15",
+      "claim": "MCMV replication is virtually unimpaired in the absence of Traf2.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, MCMV replication was virtually unimpaired in the absence of Xbp1 (Figure 3B) or Traf2 (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by replication kinetics data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "f7c3336d-3ea1-43fc-9a43-e8d2b3ccf17d",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C16",
+      "claim": "The expression of viral immediate-early, early, and late proteins is reduced in Ern1 ko MEFs compared to WT MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to WT MEFs, the expression of all three proteins was reduced in Ern1 ko MEFs (Figure 3D), but not in Xbp1 or Traf2 ko MEFs (Figure 3E and F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot analysis data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "3c11753d-8e22-4670-b695-c63d3ae4083f",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C17",
+      "claim": "The expression of viral immediate-early, early, and late proteins is not reduced in Xbp1 ko MEFs compared to WT MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to WT MEFs, the expression of all three proteins was reduced in Ern1 ko MEFs (Figure 3D), but not in Xbp1 or Traf2 ko MEFs (Figure 3E and F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot analysis data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "b8a39200-92e5-498f-9a37-d3b73a66b704",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C18",
+      "claim": "The expression of viral immediate-early, early, and late proteins is not reduced in Traf2 ko MEFs compared to WT MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to WT MEFs, the expression of all three proteins was reduced in Ern1 ko MEFs (Figure 3D), but not in Xbp1 or Traf2 ko MEFs (Figure 3E and F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot analysis data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "8cf867d4-bb94-4af7-bc82-ca6c3007b46a",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C19",
+      "claim": "The RNase activity of IRE1 is necessary for efficient MCMV replication.",
+      "claim_type": "EXPLICIT",
+      "source": "While expression of WT IRE1 restored MCMV replication to high titers, expression of IRE1-K907A did not increase MCMV titers (Figure 4B), indicating that the IRE1 RNase activity is necessary for efficient MCMV replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by replication kinetics data comparing WT IRE1 and RNase-dead IRE1-K907A mutant (Figure 4B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "ef0f41dc-705d-429a-8356-35137ee6ffdd",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C20",
+      "claim": "MCMV replication is severely impaired upon expression of unspliceable Xbp1 transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas re-introduction of WT XBP1 had no detrimental effect, MCMV replication was severely impaired upon expression of the unspliceable Xbp1 transcript (Figure 5D), indicating that Xbp1u reduces viral replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by replication kinetics data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "5b5245a7-4e10-41ba-bad8-9825811efc0f",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C21",
+      "claim": "XBP1u reduces viral replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas re-introduction of WT XBP1 had no detrimental effect, MCMV replication was severely impaired upon expression of the unspliceable Xbp1 transcript (Figure 5D), indicating that Xbp1u reduces viral replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on the observation that expression of unspliceable XBP1 (which produces only XBP1u) impairs viral replication.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "89993f49-4c27-4696-a19d-b1531f6afa65",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C22",
+      "claim": "A similar inhibitory effect on MCMV replication was observed when the truncated XBP1 protein was expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar inhibitory effect was observed when the truncated XBP1 protein was expressed (Figure 5D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by replication kinetics data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "5a910de5-c745-4b2e-8e13-6d02f7002b15",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C23",
+      "claim": "MCMV replicated to similar titers in Xbp1 ko and Xbp1/Ern1 double-knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5B, MCMV replicated to similar titers in Xbp1 ko and Xbp1/Ern1 double-knockout (dko) cells, indicating that the loss of IRE1 is not detrimental for MCMV replication when XBP1 is absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by replication kinetics data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "fea8f2f1-1376-405f-8af7-ea67487f3fb3",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C24",
+      "claim": "The loss of IRE1 is not detrimental for MCMV replication when XBP1 is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5B, MCMV replicated to similar titers in Xbp1 ko and Xbp1/Ern1 double-knockout (dko) cells, indicating that the loss of IRE1 is not detrimental for MCMV replication when XBP1 is absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on the observation that Xbp1 ko and Xbp1/Ern1 dko cells support similar levels of viral replication.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "465d9e2b-41a6-415e-9f90-0ffbd57097e9",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C25",
+      "claim": "MCMV gene expression and replication were not impaired in Atf6-/- MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we analyzed MEFs from Atf6-/- mice and found that MCMV gene expression and replication were not impaired (Figure 6A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot analysis (Figure 6A) and replication kinetics data (Figure 6B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "860217ba-91ab-4fae-b1bb-94a3a9e11d80",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C26",
+      "claim": "MCMV replication was substantially reduced in Atf6/Xbp1 dko cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When we knocked out Xbp1 in Atf6-/- cells by CRISPR/Cas9 gene editing (Figure 6C), MCMV replication was substantially reduced in Atf6/Xbp1 dko cells (Figure 6D), suggesting that ATF6 and XBP1s have overlapping or redundant functions and that at least one of them is necessary for efficient MCMV replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by replication kinetics data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "e2dc8237-bee4-4e1a-bcdb-b8941ecf9f41",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C27",
+      "claim": "ATF6 and XBP1s have overlapping or redundant functions and at least one of them is necessary for efficient MCMV replication.",
+      "claim_type": "EXPLICIT",
+      "source": "When we knocked out Xbp1 in Atf6-/- cells by CRISPR/Cas9 gene editing (Figure 6C), MCMV replication was substantially reduced in Atf6/Xbp1 dko cells (Figure 6D), suggesting that ATF6 and XBP1s have overlapping or redundant functions and that at least one of them is necessary for efficient MCMV replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on the observation that loss of either factor alone does not impair replication, but loss of both does.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "8e65154c-9f4d-452b-ba63-4c3d7f51e345",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C28",
+      "claim": "The MCMV MIEP contains five ACGT motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Five ACGT motifs were identified within the MCMV MIEP (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "e8904244-1c3d-4787-aa12-e2ef662c7dc2",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C29",
+      "claim": "MIEP activity was strongly reduced in Ern1 ko cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 7B, MIEP activity was strongly reduced in Ern1 ko cells but was not significantly altered in Xbp1 ko cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "8f4d5b7f-8846-4ba8-b050-74cf32859ede",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C30",
+      "claim": "MIEP activity was not significantly altered in Xbp1 ko cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 7B, MIEP activity was strongly reduced in Ern1 ko cells but was not significantly altered in Xbp1 ko cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "b3addf6e-c4a2-4376-9e1b-445047375c3f",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C31",
+      "claim": "MIEP activity was not reduced in Xbp1/Ern1 dko cells compared to the parental Xbp1 ko cell.",
+      "claim_type": "EXPLICIT",
+      "source": "MIEP activity was not reduced in Xbp1/Ern1 dko cells compared to the parental Xbp1 ko cell (Figure 7C), but was significantly reduced in Atf6/Xbp1 dko cells compared to the parental Atf6-/- cells (Figure 7D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "242c9524-c7d8-4856-bf71-2663168007bd",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C32",
+      "claim": "MIEP activity was significantly reduced in Atf6/Xbp1 dko cells compared to the parental Atf6-/- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MIEP activity was not reduced in Xbp1/Ern1 dko cells compared to the parental Xbp1 ko cell (Figure 7C), but was significantly reduced in Atf6/Xbp1 dko cells compared to the parental Atf6-/- cells (Figure 7D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "4a6851ba-c519-4c42-98fa-e632ef6426ba",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C33",
+      "claim": "Activation of the MCMV MIEP correlated with viral replication in the same cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we concluded that activation of the MCMV MIEP correlated with viral replication in the same cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on comparing MIEP activity data (Figure 7) with viral replication data (Figures 5B and 6D).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "640f4623-de16-4d88-80f0-fc99c7c926e7",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C34",
+      "claim": "The activity of the MIEP had a substantially reduced activity when all 5 ACGT motifs were mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the activity of the MIEP had a substantially reduced activity when all 5 ACGT motifs were mutated (Figure 7B\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figures 7B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "6e8c4b5e-2493-4bcf-b2df-80cf2c4bf286",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C35",
+      "claim": "MIEP activity was slightly increased by expression of XBP1s in Xbp1 ko cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In Xbp1 ko cells, MIEP activity was slightly increased by expression of XBP1s, but substantially reduced by XBP1u.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "2a0c6007-787d-4813-9c29-79ca6eb11a90",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C36",
+      "claim": "MIEP activity was substantially reduced by XBP1u in Xbp1 ko cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In Xbp1 ko cells, MIEP activity was slightly increased by expression of XBP1s, but substantially reduced by XBP1u.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "2439fb46-6549-4ee4-8cfd-09336fbbd730",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C37",
+      "claim": "XBP1u antagonized XBP1s in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "XBP1u also antagonized XBP1s in a dose-dependent manner (Figure 7E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "c4b5d3b8-46db-4968-8938-027a6c7e7ca2",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C38",
+      "claim": "MIEP activity was slightly increased by expression of ATF6(N) in Atf6-/- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar result was obtained in Atf6-/- cells: MIEP activity was slightly increased by expression of ATF6(N), but substantially reduced by XBP1u.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "912839e7-27b5-40d6-b70e-338045dca643",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C39",
+      "claim": "MIEP activity was substantially reduced by XBP1u in Atf6-/- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar result was obtained in Atf6-/- cells: MIEP activity was slightly increased by expression of ATF6(N), but substantially reduced by XBP1u.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "5b62f948-bb6e-4f24-b2a1-f58fb591260e",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C40",
+      "claim": "XBP1u antagonized ATF6(N) in a dose-dependent manner in Atf6-/- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "XBP1u also antagonized ATF6(N) in a dose-dependent manner (Figure 7F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "9189208a-9c78-4e2f-bdf8-617b1df3b931",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C41",
+      "claim": "Expression of either XBP1s or ATF6(N) was sufficient to increase MIEP activity substantially in Atf6/Xbp1 dko cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In Atf6/Xbp1 dko cell, expression of either XBP1s or ATF6(N) was sufficient to increase MIEP activity substantially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "691ffc72-ff63-49f8-a9cb-aac6665de8c2",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C42",
+      "claim": "XBP1u alone did not reduce MIEP activity in Atf6/Xbp1 dko cells.",
+      "claim_type": "EXPLICIT",
+      "source": "XBP1u alone did not reduce MIEP activity in these cells, but it antagonized the activity of ATF6(N) expressed by transfection (Figure 7G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "23250cce-7717-49b4-b2b4-d0c29ac4bb27",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C43",
+      "claim": "XBP1u antagonized the activity of ATF6(N) expressed by transfection in Atf6/Xbp1 dko cells.",
+      "claim_type": "EXPLICIT",
+      "source": "XBP1u alone did not reduce MIEP activity in these cells, but it antagonized the activity of ATF6(N) expressed by transfection (Figure 7G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "f5f112cb-b45e-4496-80ba-4e2509718002",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C44",
+      "claim": "Both XBP1s and ATF6(N) can activate the MCMV MIEP in a largely redundant fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that both, XBP1s and ATF6(N), can activate the MCMV MIEP in a largely redundant fashion, and that XBP1u represses the activity of both, XBP1s and ATF6(N).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on luciferase reporter assay data showing that either XBP1s or ATF6(N) can activate the MIEP (Figure 7).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "666abe71-dea3-42b2-920c-97a990b64415",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C45",
+      "claim": "XBP1u represses the activity of both XBP1s and ATF6(N).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that both, XBP1s and ATF6(N), can activate the MCMV MIEP in a largely redundant fashion, and that XBP1u represses the activity of both, XBP1s and ATF6(N).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on luciferase reporter assay data showing XBP1u antagonizes both XBP1s and ATF6(N) (Figures 7E-G).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "b81159e0-684f-4f96-96a3-a6fa343d6342",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C46",
+      "claim": "XBP1s and XBP1u showed the strongest interaction with motifs 3 and 4 in DPI-ELISA.",
+      "claim_type": "EXPLICIT",
+      "source": "In this DPI-ELISA, XBP1s and XBP1u showed the strongest interaction with motifs 3 and 4, whereas ATF6(N) interacted with motifs 2 and 4 (Figure 8B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by DPI-ELISA data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "bf85393a-6566-447e-bf31-53dbdedcca2f",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C47",
+      "claim": "ATF6(N) interacted with motifs 2 and 4 in DPI-ELISA.",
+      "claim_type": "EXPLICIT",
+      "source": "In this DPI-ELISA, XBP1s and XBP1u showed the strongest interaction with motifs 3 and 4, whereas ATF6(N) interacted with motifs 2 and 4 (Figure 8B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by DPI-ELISA data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "5a5430de-c51d-46a7-bb0b-0c0c995a527a",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C48",
+      "claim": "ACGT motif 4 is necessary for MIEP activation by XBP1s and ATF6(N).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 9A, XBP1s or ATF6(N) expression increased the activity of all MIEP constructs except MIEP-4-mut and MIEP-all-mut, indicating that ACGT motif 4 is necessary for MIEP activation by XBP1s and ATF6(N).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "460d2c56-a949-427b-9407-aadeaa642e54",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C49",
+      "claim": "Motif 4 is sufficient to confer MIEP responsiveness to XBP1s and ATF6.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, MIEP-4-only was inducible by XBP1s and ATF6(N) (Figure 9B), suggesting that motif 4 is sufficient to confer MIEP responsiveness to XBP1s and ATF6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data showing that a MIEP with only motif 4 intact can be activated by XBP1s and ATF6(N) (Figure 9B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "91b6375a-4e1a-40b7-94d3-e066f206a377",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C50",
+      "claim": "Viral replication was massively reduced when motif 4 within the MIEP was mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, viral replication was massively reduced when motif 4 within the MIEP was mutated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by replication kinetics data comparing MCMV-GFP and MCMV-GFP-4-mut (Figure 9C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "3e1420a6-a729-4550-82b0-7d8e1a323b3f",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C51",
+      "claim": "The XBP1 and ATF6(N) target motif identified in DNA-binding and luciferase reporter assays is required for efficient replication of the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "This result confirmed that the XBP1 and ATF6(N) target motif identified in DNA-binding and luciferase reporter assays is required for efficient replication of the virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on the observation that mutation of motif 4 reduces both MIEP activity in reporter assays and viral replication.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "d6e64164-91df-4e2b-864d-771bd732ae1f",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C52",
+      "claim": "MCMV transiently activates the IRE1-XBP1 signaling pathway in the early phase of infection in order to relieve XBP1u-mediated repression of viral gene expression and replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the results of this study show that MCMV transiently activates the IRE1-XBP1 signaling pathway in the early phase of infection in order to relieve XBP1u-mediated repression of viral gene expression and replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on multiple experimental findings including XBP1 splicing kinetics, replication defects in IRE1-deficient cells, and XBP1u repression of MIEP activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "c6a219d2-7022-469d-b3ad-964357ec204d",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C53",
+      "claim": "The MCMV major immediate-early promoter requires XBP1s or ATF6(N) binding to motif 4 for full activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The MCMV major immediate-early promoter requires XBP1s or ATF6(N) binding to motif 4 for full activation, and XBP1u prevents promoter activity by both TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assays (Figures 7, 9) and DPI-ELISA data (Figure 8).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "3c9f71f1-c777-41c3-ad10-49c5ccdb05b3",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C54",
+      "claim": "XBP1u prevents MIEP promoter activity by both XBP1s and ATF6(N).",
+      "claim_type": "EXPLICIT",
+      "source": "The MCMV major immediate-early promoter requires XBP1s or ATF6(N) binding to motif 4 for full activation, and XBP1u prevents promoter activity by both TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data showing XBP1u represses MIEP activation by both XBP1s and ATF6(N) (Figures 7E-G).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "268e3d0b-f644-415f-bd4d-374d61711cab",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C55",
+      "claim": "XBP1u acts as a key repressor of two UPR pathways, the IRE1-XBP1 and the ATF6 pathways, which have overlapping and redundant functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, XBP1u acts as a key repressor of two UPR pathways, the IRE1-XBP1 and the ATF6 pathways, which have overlapping and redundant functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on data showing XBP1u represses both XBP1s and ATF6(N) activity, and that these two factors have redundant functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "0929d51b-29b5-4bf1-b9f0-c5d258a7fa96",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C56",
+      "claim": "The unfolded protein response (UPR) is a cellular homeostatic circuit regulating protein synthesis and processing in the ER by three ER-to-nucleus signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The unfolded protein response (UPR) is a cellular homeostatic circuit regulating protein synthesis and processing in the ER by three ER-to-nucleus signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the UPR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "5c0a3859-d383-4943-81d1-9020ad6492cc",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C57",
+      "claim": "One UPR pathway is triggered by the inositol-requiring enzyme 1 (IRE1), which splices the X-box binding protein 1 (Xbp1) mRNA, thereby enabling expression of XBP1s.",
+      "claim_type": "EXPLICIT",
+      "source": "One pathway is triggered by the inositol-requiring enzyme 1 (IRE1), which splices the X-box binding protein 1 (Xbp1) mRNA, thereby enabling expression of XBP1s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the IRE1-XBP1 pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "cfb0e59e-25bf-45cc-a7c2-3159ea6c591a",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C58",
+      "claim": "Another UPR pathway activates the activating transcription factor 6 (ATF6).",
+      "claim_type": "EXPLICIT",
+      "source": "Another UPR pathway activates the activating transcription factor 6 (ATF6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the ATF6 pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "06db620b-d719-4384-821d-c2076a4ca177",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C59",
+      "claim": "When protein synthesis is increased or ER function is compromised, the folding capacity of the ER may get out of balance, leading to an accumulation of unfolded or misfolded proteins in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "When protein synthesis is increased or ER function is compromised, the folding capacity of the ER may get out of balance, leading to an accumulation of unfolded or misfolded proteins in the ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about ER stress.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "74300151-e408-4d24-baa4-7eec5ced5425",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C60",
+      "claim": "The UPR leads to a reduced protein synthesis and an increased expression of folding chaperones and ER-associated degradation (ERAD) factors.",
+      "claim_type": "EXPLICIT",
+      "source": "To alleviate ER stress and restore homeostasis, the cell activates three ER-to-nucleus signaling pathways, collectively called the unfolded protein response (UPR), which lead to a reduced protein synthesis and an increased expression of folding chaperones and ER-associated degradation (ERAD) factors (Walter and Ron, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Walter and Ron, 2011.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "7ed7ea86-932a-4ac3-b569-5b8dc742904f",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C61",
+      "claim": "In mammalian cells, the UPR comprises three main signaling pathways named after the initiating ER stress sensors: PERK, ATF6, and IRE1.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells, the UPR comprises three main signaling pathways named after the initiating ER stress sensors: PERK (PKR-like ER kinase), ATF6 (activating transcription factor 6), and IRE1 (inositol-requiring enzyme 1) (Walter and Ron, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Walter and Ron, 2011.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "e8efacc0-0109-4085-9b4e-dfa2617bbc52",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C62",
+      "claim": "Upon activation by ER stress, PERK phosphorylates the translation initiation factor eIF2\u03b1, which leads to a massive attenuation of protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon activation by ER stress, PERK phosphorylates the translation initiation factor eIF2\u03b1, which leads to a massive attenuation of protein synthesis and an immediate reduction of the protein load in the secretory system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the PERK pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "02c3efb4-a596-4096-be5d-184b54df3b91",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C63",
+      "claim": "Phosphorylated eIF2\u03b1 selectively supports the translation of selected cellular proteins such as the transcription factor ATF4.",
+      "claim_type": "EXPLICIT",
+      "source": "However, phosphorylated eIF2\u03b1 selectively supports the translation of selected cellular proteins such as the transcription factor ATF4, which activates a negative feedback loop resulting in dephosphorylation of eIF2\u03b1 (Novoa et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Novoa et al., 2001.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "26f78de9-b811-4c74-8ec8-52401b3329ae",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C64",
+      "claim": "Upon activation by ER stress, ATF6 travels to the Golgi, where it undergoes intramembrane proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon activation by ER stress, ATF6 travels to the Golgi, where it undergoes intramembrane proteolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about ATF6 processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "48c11716-65e4-4948-b150-38c707b397fd",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C65",
+      "claim": "Intramembrane proteolysis of ATF6 liberates its cytosolic N-terminus, the basic leucine zipper (bZIP) transcription factor ATF6(N), and enables it to travel to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "This process liberates its cytosolic N-terminus, the basic leucine zipper (bZIP) transcription factor ATF6(N), and enables it to travel to the nucleus, where it activates the transcription of chaperone genes as well as of the gene encoding XBP1 (Lee et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Lee et al., 2002.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "ad3e2fed-7d37-4461-aad3-2dec7bfa44ee",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C66",
+      "claim": "IRE1 is an ER transmembrane protein kinase that oligomerizes upon accumulation of unfolded proteins in the ER lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "The third sensor, IRE1 (also known as ER-to-nucleus signaling 1, ERN1), is an ER transmembrane protein kinase that oligomerizes upon accumulation of unfolded proteins in the ER lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about IRE1 activation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "73952f93-0cdf-4ae2-b43c-64be900f53c4",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C67",
+      "claim": "Oligomerization and auto-transphosphorylation activate the RNase function of IRE1, which mediates an unconventional splicing of the XBP1 mRNA in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Oligomerization and auto-transphosphorylation activate the RNase function of IRE1, which mediates an unconventional splicing of the XBP1 mRNA in the cytosol (Calfon et al., 2002; Lee et al., 2002; Yoshida et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations to Calfon et al., 2002; Lee et al., 2002; Yoshida et al., 2001.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "ae3486d9-f2a4-476c-bea1-093266cb3837",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C68",
+      "claim": "Removal of the 26-nt intron from the XBP1 mRNA leads to a frame shift and expression of transcription factor XBP1s.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of the 26-nt intron from the XBP1 mRNA leads to a frame shift and expression of transcription factor XBP1s, comprising an N-terminal basic leucine zipper (bZIP) domain followed by a C-terminal transcription activation domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about XBP1 mRNA splicing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "812f8a54-6ad4-4e45-92d8-d066d7104562",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C69",
+      "claim": "The unspliced XBP1 mRNA encodes XBP1u, which lacks the transcription activation domain but contains in its C-terminal part a hydrophobic patch and a translational pausing region.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the unspliced XBP1 mRNA encodes XBP1u, which lacks the transcription activation domain but contains in its C-terminal part a hydrophobic patch and a translational pausing region required for the recruitment of its own mRNA to the ER membrane (Kanda et al., 2016; Yanagitani et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations to Kanda et al., 2016; Yanagitani et al., 2011.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "8dfe0c0b-90ad-45a8-bf62-b1cc0285f491",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C70",
+      "claim": "XBP1u is rapidly degraded and has a short half-life.",
+      "claim_type": "EXPLICIT",
+      "source": "XBP1u is rapidly degraded and has a short half-life (Tirosh et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Tirosh et al., 2006.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "5f7fb1b5-a90b-4ae9-b86b-e99de0c4fbcb",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C71",
+      "claim": "XBP1u can interact with XBP1s and ATF6(N) and target them for proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "It can interact with XBP1s and ATF6(N) and target them for proteasomal degradation. Therefore, XBP1u is thought to act as a negative regulator involved in fine-tuning the UPR (Tirosh et al., 2006; Yoshida et al., 2006; Yoshida et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations to Tirosh et al., 2006; Yoshida et al., 2006; Yoshida et al., 2009.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "a838e9e4-9d14-415b-9ae3-49edac220210",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C72",
+      "claim": "XBP1u is thought to act as a negative regulator involved in fine-tuning the UPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, XBP1u is thought to act as a negative regulator involved in fine-tuning the UPR (Tirosh et al., 2006; Yoshida et al., 2006; Yoshida et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations to Tirosh et al., 2006; Yoshida et al., 2006; Yoshida et al., 2009.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "aa20aee7-7f94-4285-b653-84bb30f72dcb",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C73",
+      "claim": "XBP1u affects autophagy by interacting with transcription factor FOXO1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, XBP1u affects autophagy by interacting with transcription factor FOXO1 (Zhao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Zhao et al., 2013.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "c41970df-f22d-4ddb-b2fc-cb85946b80db",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C74",
+      "claim": "IRE1 can cleave ER-associated mRNA molecules that contain a specific recognition motif through a process called regulated IRE1-dependent mRNA decay (RIDD).",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from mediating XBP1 mRNA splicing, IRE1 can also cleave ER-associated mRNA molecules that contain a specific recognition motif (Moore and Hollien, 2015). This process, which leads to mRNA degradation, is called regulated IRE1-dependent mRNA decay (RIDD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Moore and Hollien, 2015.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "42c4520f-185c-4f9d-9e02-6a2a89b80f80",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C75",
+      "claim": "The importance of RIDD in different cellular processes such as lipid metabolism, antigen presentation, and apoptosis remains incompletely understood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the importance of RIDD in different cellular processes such as lipid metabolism, antigen presentation, and apoptosis remains incompletely understood (Maurel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of scientific knowledge supported by citation to Maurel et al., 2014.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "1fd66a58-12d6-4634-aeb4-d443d9def985",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C76",
+      "claim": "During viral replication large quantities of viral proteins must be synthesized.",
+      "claim_type": "EXPLICIT",
+      "source": "During viral replication large quantities of viral proteins must be synthesized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general scientific knowledge about viral replication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "1bcc807e-43d7-4cc6-8d8e-0aacf749e1d5",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C77",
+      "claim": "Folding, maturation, and posttranslational modification of secreted and transmembrane proteins take place in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Folding, maturation, and posttranslational modification of secreted and transmembrane proteins take place in the ER and require a plethora of chaperones, foldases, and glycosylating enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about ER function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "25dae9e3-50bd-4a83-a24c-3521e979c83e",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C78",
+      "claim": "Properly folded proteins are transported to the Golgi, while unfolded or misfolded proteins are retained in the ER and exported to the cytosol for proteasomal degradation via the ERAD pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "While properly folded proteins are transported to the Golgi, unfolded or misfolded proteins are retained in the ER and exported to the cytosol for proteasomal degradation via the ERAD pathway (Smith et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Smith et al., 2011.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "3c3648e5-1df4-4801-93b0-3b0bdea7d142",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C79",
+      "claim": "High levels of viral envelope glycoproteins synthesized during the late phase of the viral life cycle can overwhelm the folding and processing capacity of the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the high levels of viral envelope glycoproteins that are being synthesized particularly during the late phase of the viral life cycle can overwhelm the folding and processing capacity of the ER and cause accumulation of unfolded and misfolded proteins in the ER (Zhang and Wang, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Zhang and Wang, 2012.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "fe2cba74-3011-4fc4-9484-2b4fef46e409",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C80",
+      "claim": "Cytomegaloviruses (CMVs) are prototypic members of the \u03b2 subfamily of the Herpesviridae.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytomegaloviruses (CMVs) are prototypic members of the \u03b2 subfamily of the Herpesviridae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about CMV classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "b46cf1eb-398a-4aa5-be3f-0bd3c126d390",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C81",
+      "claim": "CMV genomes contain at least 165 protein-coding ORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Their large double-stranded DNA genomes contain at least 165 protein-coding ORFs (Dolan et al., 2004) end encode an even larger number of polypeptides (Stern-Ginossar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations to Dolan et al., 2004 and Stern-Ginossar et al., 2012.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "9b86f3d1-08e6-4efd-8ea6-7f05d2d578cd",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C82",
+      "claim": "CMVs have acquired the ability to moderate immune recognition and modulate cellular stress responses through millions of years of co-evolution with their hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Through millions of years of co-evolution with their respective hosts, the CMVs have acquired the ability to moderate immune recognition and modulate cellular stress responses to their own benefit (Alwine, 2008; Mocarski, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations to Alwine, 2008 and Mocarski, 2002.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "ccc45008-f62c-4da0-9c7d-8394cbb194af",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C83",
+      "claim": "HCMV and MCMV induce PERK activation, but limit eIF2\u03b1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, human and murine CMV (HCMV and MCMV) induce PERK activation, but limit eIF2\u03b1 phosphorylation. By doing this the CMVs prevent a global protein synthesis shutoff but allow eIF2\u03b1 phosphorylation-dependent activation of transcription factor ATF4 (Isler et al., 2005; Qian et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations to Isler et al., 2005 and Qian et al., 2012.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "f9506e4b-ccd3-402c-a5e4-13a712c08c23",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C84",
+      "claim": "CMVs increase expression of the ER chaperone BiP to facilitate protein folding and virion assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The CMVs also increase expression of the ER chaperone BiP to facilitate protein folding and virion assembly (Buchkovich et al., 2008; Buchkovich et al., 2010; Qian et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations to Buchkovich et al., 2008; Buchkovich et al., 2010; Qian et al., 2012.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "d759e8f1-2279-4414-83ca-3e43f433029d",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C85",
+      "claim": "HCMV uses PERK to induce lipogenesis by activating the cleavage of sterol regulatory element binding protein 1.",
+      "claim_type": "EXPLICIT",
+      "source": "and HCMV uses PERK to induce lipogenesis by activating the cleavage of sterol regulatory element binding protein 1 (Yu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Yu et al., 2013.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "516bd202-efb5-49a3-b3fc-b5c811c07af2",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C86",
+      "claim": "Both MCMV and HCMV downregulate IRE1 levels and inhibit IRE1 signaling at late times post infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that both, MCMV and HCMV, downregulate IRE1 levels and inhibit IRE1 signaling at late times post infection. This downregulation is mediated by the viral proteins M50 and UL50, respectively (Stahl et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is prior work by the authors supported by citation to Stahl et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "b2dca800-76b7-49d4-94b0-cd6407a0559f",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C87",
+      "claim": "Cellular ER stress response transcripts are upregulated as early 5\u20136 hr after MCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a real-time transcriptional profiling study has revealed that cellular ER stress response transcripts are upregulated as early 5\u20136 hr after MCMV infection (Marcinowski et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Marcinowski et al., 2012.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "955e6b68-1e2e-447a-b5a8-3204deefa1bd",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C88",
+      "claim": "MCMV inhibits IRE1-XBP1 signaling at late times (\u226524 hr) post infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that MCMV inhibits IRE1-XBP1 signaling at late times (\u226524 hr) post infection (Qian et al., 2012; Stahl et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations to Qian et al., 2012 and Stahl et al., 2013.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "3c9cf1c8-6478-4fa8-a4f4-3b2dfcb0ce5a",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C89",
+      "claim": "XBP1u could interact with XBP1s and ATF6(N) and target them for proteasomal degradation as a mechanism to antagonize these transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Two possible mechanisms may be involved: XBP1u could interact with XBP1s and ATF6(N) and target them for proteasomal degradation as previously reported (Yoshida et al., 2006; Yoshida et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a possible mechanism based on prior literature supported by citations to Yoshida et al., 2006 and Yoshida et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "868d4f6e-3dea-49e2-9b89-e0f23fff0145",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C90",
+      "claim": "XBP1u could bind directly to DNA and inhibit promoter activation by XBP1s and ATF6(N).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, XBP1u could bind directly to DNA and inhibit promoter activation by XBP1s and ATF6(N). Indeed, we show that XBP1u is fully capable of binding to the same DNA sequences that XBP1s binds to (Figure 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a possible mechanism supported by DPI-ELISA data showing XBP1u DNA binding (Figure 8).",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "200a5039-5c0a-47d1-a1b0-9cc691ae413d",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C91",
+      "claim": "A truncated XBP1 protein, XBP1stop, which lacks the C-terminal destabilizing domain of XBP1u, had a similar repressive effect as XBP1u.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a truncated XBP1 protein, XBP1stop, which lacks the C-terminal destabilizing domain of XBP1u, had a similar repressive effect as XBP1u (Figure 5D) indicating that destabilization is not required for repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by replication kinetics data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "eaae69d3-f662-469b-80a8-fe6520ddc7fe",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C92",
+      "claim": "Destabilization is not required for XBP1u-mediated repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a truncated XBP1 protein, XBP1stop, which lacks the C-terminal destabilizing domain of XBP1u, had a similar repressive effect as XBP1u (Figure 5D) indicating that destabilization is not required for repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on the observation that XBP1stop, which lacks the destabilizing domain, still represses viral replication.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "1975e513-9598-43de-9354-e2c7a28c5d5f",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C93",
+      "claim": "In yeast, the unspliced mRNA of HAC1, the yeast homolog of XBP1, is posttranscriptionally silenced, and a protein product of the unspliced HAC1 mRNA has not been detected.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, the unspliced mRNA of HAC1, the yeast homolog of XBP1, is posttranscriptionally silenced, and a protein product of the unspliced HAC1 mRNA has not been detected (R\u00fcegsegger et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to R\u00fcegsegger et al., 2001.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "7d2c9643-bc9a-44a7-95b9-2f81f5a85cdf",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C94",
+      "claim": "In mammalian cells, the XBP1u protein is readily detectable.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells, the XBP1u protein is readily detectable, but XBP1u has a short half-life (Navon et al., 2010; Tirosh et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations to Navon et al., 2010 and Tirosh et al., 2006.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "9b20844a-64a9-4eb7-a8fc-d87626a35f41",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C95",
+      "claim": "The short half-life of XBP1u has led to the conclusion that XBP1u is of minor importance and its function restricted to fine-tuning of the UPR.",
+      "claim_type": "EXPLICIT",
+      "source": "This has led to the conclusion that XBP1u is of minor importance and its function restricted to fine-tuning of the UPR (Byrd and Brewer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about scientific interpretation supported by citation to Byrd and Brewer, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "5d41af8e-5406-4024-b9ef-bbd2f979cb00",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C96",
+      "claim": "XBP1u has been shown to dimerize with XBP1s and ATF6(N) and destabilize them.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, XBP1u has been shown to dimerize with XBP1s and ATF6(N) and destabilize them (Yoshida et al., 2006; Yoshida et al., 2009), suggesting a more important regulatory role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations to Yoshida et al., 2006 and Yoshida et al., 2009.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "aef14a5f-5322-49fe-a167-aee7900eefa1",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C97",
+      "claim": "The physiological relevance of XBP1u destabilizing XBP1s and ATF6(N) has been called into question because the findings were made in cells overexpressing XBP1u.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the physiological relevance of these findings has been called into question by some scientists because the findings were made in cells overexpressing XBP1u.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about scientific debate and interpretation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "b5d94075-b026-4290-ab83-83b8e3574b73",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C98",
+      "claim": "XBP1u plays a very important role as a repressor of XBP1s and ATF6(N)-mediated activation of the MCMV MIEP, which results in a massively (up to 100-fold) reduced production of progeny virus.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of our study show that XBP1u plays a very important role as a repressor of XBP1s and ATF6(N)-mediated activation of the MCMV MIEP, which results in a massively (up to 100-fold) reduced production of progeny virus (Figures 2, 3B and 5D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on multiple experimental findings shown in Figures 2, 3B, and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "cadb1937-db52-4728-a9f2-88bd9cb04c17",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C99",
+      "claim": "In IRE1-deficient cells, the Xbp1 transcript is expressed from its endogenous promoter, not from a strong heterologous promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "In IRE1-deficient cells, the Xbp1 transcript is expressed from its endogenous promoter, not from a strong heterologous promoter. Thus, the observed effects cannot be dismissed as overexpression artifacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental design used in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "b71fd8f8-b264-4caa-a4ce-968f446d696e",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C100",
+      "claim": "The observed effects of XBP1u cannot be dismissed as overexpression artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In IRE1-deficient cells, the Xbp1 transcript is expressed from its endogenous promoter, not from a strong heterologous promoter. Thus, the observed effects cannot be dismissed as overexpression artifacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on the experimental design where XBP1u is expressed from the endogenous promoter.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "00735259-62e1-4137-9797-6a8231238006",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C101",
+      "claim": "XBP1u expression rather than the absence of RIDD is responsible for the reduced MCMV replication in Ern1 ko cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the fact that MCMV replication is massively reduced in Ern1 ko cells (Figures 2 and 3B), but not in Ern1/Xbp1 dko cells (Figure 5B), demonstrates that XBP1u expression rather than the absence of RIDD is responsible for the observed effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on comparing replication data in Ern1 ko cells versus Ern1/Xbp1 dko cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "37442c6a-e9de-4e91-91d2-faf55506bec2",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C102",
+      "claim": "XBP1u plays an unexpectedly important role as a repressor, at least under the conditions of viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the data of our study suggest that XBP1u plays an unexpectedly important role as a repressor, at least under the conditions of viral infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "2b3b6a2e-80b1-478d-bc82-a7c0afd525ef",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C103",
+      "claim": "Whether XBP1u can repress expression of cellular genes in a similar fashion is an important question that needs to be answered in future studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether XBP1u can repress expression of cellular genes in a similar fashion is an important question that needs to be answered in future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "419537d3-04cc-41b4-8739-ada4c296a98f",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C104",
+      "claim": "XBP1 binding sites have been identified in immediate-early gene promoters of the \u03b3-herpesviruses Epstein-Barr virus, Kaposi's sarcoma-associated herpesvirus, and murine gammaherpesvirus 68 (MHV-68).",
+      "claim_type": "EXPLICIT",
+      "source": "XBP1 binding sites have also been identified in immediate-early gene promoters of the \u03b3-herpesviruses Epstein-Barr virus, Kaposi's sarcoma-associated herpesvirus, and murine gammaherpesvirus 68 (MHV-68), suggesting a potential role for XBP1s in transactivating these promoters during reactivation from latency (Bhende et al., 2007; Matar et al., 2014; Sun and Thorley-Lawson, 2007; Wilson et al., 2007; Yu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations to Bhende et al., 2007; Matar et al., 2014; Sun and Thorley-Lawson, 2007; Wilson et al., 2007; Yu et al., 2007.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "0998e7cd-b171-4832-8249-ec43d6e25c1a",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C105",
+      "claim": "XBP1 was not required for MHV-68 reactivation in B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one study demonstrated that XBP1 was not required for MHV-68 reactivation in B cells (Matar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Matar et al., 2014.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "59f4b32f-fc4e-4536-999c-a815917973e5",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C106",
+      "claim": "The apparent independence of MHV-68 reactivation from XBP1 expression in B cells might reflect redundancy among CREB/ATF family transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors of the study speculated that the apparent independence of MHV-68 reactivation from XBP1 expression in B cells might reflect redundancy among CREB/ATF family TFs. In light of our data showing a redundancy of XBP1s and ATF6(N) in the activation of the MCMV MIEP, this conjecture may well be correct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on prior literature and the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "2c532e78-14db-4675-b9cf-b7b3bf0988cd",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "claim_id": "C107",
+      "claim": "It appears likely that \u03b2 and \u03b3-herpesviruses harness UPR TFs in a similar fashion to regulate their life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, it appears likely that \u03b2 and \u03b3-herpesviruses harness UPR TFs in a similar fashion to regulate their life cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings of the current study and prior literature on \u03b3-herpesviruses.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "acc3e3f9-f04d-40ee-bce2-d92037339bb3",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MCMV infection induces transient XBP1 splicing between 5-7 hours post-infection, which requires viral gene expression and is mediated by immediate-early or early viral proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C9 provide converging evidence from qRT-PCR (C4), UV-inactivation experiments (C5-C6), and drug inhibition studies (C7-C9) demonstrating transient early XBP1 splicing dependent on viral protein expression. The data are internally consistent and appropriately controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "d603f82e-3723-4213-bd55-1338fa6c7e6d",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "IRE1 and its RNase activity are necessary for efficient MCMV replication, but IRE1 expression must be carefully regulated as overexpression is cytotoxic and impairs viral replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 and C19 are supported by dose-response replication kinetics (Figures 2B-C), viability data (Figure 2D), and complementation with RNase-dead mutant (Figure 4B). The biphasic dose-response relationship is well-documented and the RNase requirement is directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "f2fe0b61-89d2-4ae7-adb5-c9ef4293adee",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "IRE1 deficiency, but not XBP1 or TRAF2 deficiency, severely impairs MCMV replication and viral gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 are supported by replication kinetics (Figures 3B-C), transcript quantification (Figure 3\u2014supplement 1), and immunoblot analysis (Figures 3D-F) across multiple knockout cell lines. The differential requirement for IRE1 versus XBP1/TRAF2 is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "7612fbec-14a0-408e-b908-066d400031c3",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "XBP1u inhibits MCMV replication, and this repressive effect does not require the C-terminal destabilizing domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 and C91-C92 are supported by replication kinetics comparing WT, unspliceable, and truncated XBP1 constructs (Figure 5D). The observation that XBP1stop (lacking the destabilizing domain) has similar repressive effects as full-length XBP1u provides mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "693b9428-d36d-4692-a213-ccb79aa4541c",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Loss of IRE1 is not detrimental for MCMV replication when XBP1 is absent, demonstrating that XBP1u expression rather than absence of RIDD is responsible for replication defects in IRE1-deficient cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 and C101 are supported by comparing replication in Xbp1 ko versus Xbp1/Ern1 dko cells (Figure 5B). This genetic epistasis experiment effectively distinguishes between XBP1u-mediated repression and loss of RIDD function, providing strong mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "ff87fe32-2b8f-4084-bac3-6edea1d414d1",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "XBP1s and ATF6 have redundant functions in promoting MCMV replication, with at least one required for efficient viral replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 and C3 are supported by replication kinetics showing that single knockouts (Figures 6A-B) have minimal effects while the double knockout (Figure 6D) substantially reduces replication. This genetic redundancy is a key finding demonstrating overlapping functions of two UPR pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "4776488f-8a84-42ca-8f06-4a5e302276ed",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The MCMV MIEP contains five ACGT motifs and shows reduced activity in Ern1 ko and Atf6/Xbp1 dko cells but not in single knockouts, correlating with viral replication patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 are supported by sequence analysis (Figure 7A) and luciferase reporter assays across multiple cell lines (Figures 7B-D). The correlation between MIEP activity and viral replication strengthens the mechanistic link between UPR transcription factors and viral gene expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "18d08e28-3c86-48d1-9d34-f9375151dbe9",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "XBP1u represses MIEP activation by both XBP1s and ATF6(N) in a dose-dependent manner, while either XBP1s or ATF6(N) alone can activate the MIEP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C45, C2, and C54 are supported by comprehensive luciferase reporter assays in multiple knockout backgrounds (Figures 7E-G). The dose-dependent antagonism and redundant activation by XBP1s/ATF6(N) are well-documented. This is a central mechanistic finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "fe6e14d2-366c-43ef-8505-0902f7d44811",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "XBP1s, XBP1u, and ATF6(N) bind directly to specific ACGT motifs in the MIEP, with XBP1u capable of binding the same sequences as XBP1s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 and C90 are supported by DPI-ELISA data (Figure 8B) showing differential binding preferences. The demonstration that XBP1u binds DNA directly supports a competitive inhibition mechanism, though the relative binding affinities and functional consequences require further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "b3f81fe9-2575-4cbc-942d-1213d8d5dbdd",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ACGT motif 4 is both necessary and sufficient for MIEP activation by XBP1s and ATF6(N), and is required for efficient viral replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 and C53 are supported by systematic mutagenesis in luciferase assays (Figures 9A-B) and viral replication with mutant virus (Figure 9C). The convergence of reporter assay and viral replication data provides strong validation that motif 4 is functionally critical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "2f4fa14a-9c4a-4ded-bf91-420cc911dd5c",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MCMV transiently activates the IRE1-XBP1 pathway early in infection to relieve XBP1u-mediated repression, with XBP1u acting as a key repressor of both IRE1-XBP1 and ATF6 pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C52, C55, C98, and C102 represent the integrated conclusions of the study, supported by the collective evidence from temporal XBP1 splicing, genetic epistasis experiments, promoter activity assays, and viral replication kinetics. The model is internally consistent and well-supported by multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "b0ebb96e-984c-4c5a-9a79-f8928ab65a62",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "XBP1u could interact with XBP1s and ATF6(N) and target them for proteasomal degradation as a mechanism of repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C89 is presented as a possible mechanism based on prior literature but is not directly tested in this study. While the authors cite previous work showing such interactions, they do not provide experimental evidence (e.g., co-immunoprecipitation, proteasome inhibitor experiments) to confirm this mechanism operates in their system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "fbad3eec-331a-4073-a490-83128ca74ea8",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The observed effects of XBP1u cannot be dismissed as overexpression artifacts because XBP1 is expressed from its endogenous promoter in IRE1-deficient cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C100 address an important methodological concern. The use of endogenous XBP1 expression in knockout cells (rather than ectopic overexpression) strengthens the physiological relevance of the findings and addresses potential criticisms of prior work in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "085447b2-7e74-4e02-b7e1-67d9ea6e2bc1",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Whether XBP1u can repress cellular gene expression in a similar fashion requires future investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C103 explicitly identifies a gap in knowledge and proposes future work. This is appropriately presented as speculation and does not claim to be supported by the current data. It represents an important direction for follow-up studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "82b492e3-8a89-4d1e-b95c-9e6589f9245d",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "XBP1 binding sites exist in \u03b3-herpesvirus promoters, and the redundancy observed with MCMV may explain why XBP1 was not required for MHV-68 reactivation, suggesting \u03b2- and \u03b3-herpesviruses may use UPR transcription factors similarly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C104-C107 are based on prior literature and speculation. While the authors appropriately cite relevant work and draw reasonable parallels, these claims about other viruses are not directly tested in this study. The speculation is reasonable but requires experimental validation in those viral systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "0138a9d5-dc0b-4345-9baf-eedfba43d786",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "IRE1 overexpression is cytotoxic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 is supported by citation to prior work (Han et al., 2009) and is consistent with the viability data presented in Figure 2D. This represents established background knowledge that contextualizes the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    },
+    {
+      "id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0",
+      "content_id": "22f9a5c1-b497-4d2b-8a1a-0734713e1666",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background information on UPR pathways, CMV biology, and prior work on CMV-UPR interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C97 represent established scientific knowledge and prior work, appropriately cited and used to contextualize the current study. These provide necessary background but are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:15:16.283996Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "07ecf6c4-e12d-4c27-95c1-52782d76ffdd",
+      "result_id": "acc3e3f9-f04d-40ee-bce2-d92037339bb3"
+    },
+    {
+      "claim_id": "14ff1287-4111-42ab-a6fe-c5d83acdee66",
+      "result_id": "acc3e3f9-f04d-40ee-bce2-d92037339bb3"
+    },
+    {
+      "claim_id": "52cde2e6-f152-4995-8888-1d459c08e051",
+      "result_id": "acc3e3f9-f04d-40ee-bce2-d92037339bb3"
+    },
+    {
+      "claim_id": "78451e86-79ab-424c-bff9-94cc06b9e9ff",
+      "result_id": "acc3e3f9-f04d-40ee-bce2-d92037339bb3"
+    },
+    {
+      "claim_id": "b3cd07a9-e0df-4026-937c-ed839492c2fd",
+      "result_id": "acc3e3f9-f04d-40ee-bce2-d92037339bb3"
+    },
+    {
+      "claim_id": "e654eee3-d749-455b-a2ed-1e9d94c0ace2",
+      "result_id": "acc3e3f9-f04d-40ee-bce2-d92037339bb3"
+    },
+    {
+      "claim_id": "0c756a8e-f649-4a37-ae9f-31c7b6612fca",
+      "result_id": "d603f82e-3723-4213-bd55-1338fa6c7e6d"
+    },
+    {
+      "claim_id": "c129922c-0a50-48bc-a8ad-817d78b6f3db",
+      "result_id": "d603f82e-3723-4213-bd55-1338fa6c7e6d"
+    },
+    {
+      "claim_id": "8cf867d4-bb94-4af7-bc82-ca6c3007b46a",
+      "result_id": "d603f82e-3723-4213-bd55-1338fa6c7e6d"
+    },
+    {
+      "claim_id": "5b440906-ac03-48b0-85e0-a341746f73e0",
+      "result_id": "f2fe0b61-89d2-4ae7-adb5-c9ef4293adee"
+    },
+    {
+      "claim_id": "a59f79bc-fe34-4759-8592-f27b9926be34",
+      "result_id": "f2fe0b61-89d2-4ae7-adb5-c9ef4293adee"
+    },
+    {
+      "claim_id": "8dd5b0ff-732a-4d6d-8da7-34d32417c283",
+      "result_id": "f2fe0b61-89d2-4ae7-adb5-c9ef4293adee"
+    },
+    {
+      "claim_id": "f7c3336d-3ea1-43fc-9a43-e8d2b3ccf17d",
+      "result_id": "f2fe0b61-89d2-4ae7-adb5-c9ef4293adee"
+    },
+    {
+      "claim_id": "3c11753d-8e22-4670-b695-c63d3ae4083f",
+      "result_id": "f2fe0b61-89d2-4ae7-adb5-c9ef4293adee"
+    },
+    {
+      "claim_id": "b8a39200-92e5-498f-9a37-d3b73a66b704",
+      "result_id": "f2fe0b61-89d2-4ae7-adb5-c9ef4293adee"
+    },
+    {
+      "claim_id": "ef0f41dc-705d-429a-8356-35137ee6ffdd",
+      "result_id": "7612fbec-14a0-408e-b908-066d400031c3"
+    },
+    {
+      "claim_id": "5b5245a7-4e10-41ba-bad8-9825811efc0f",
+      "result_id": "7612fbec-14a0-408e-b908-066d400031c3"
+    },
+    {
+      "claim_id": "89993f49-4c27-4696-a19d-b1531f6afa65",
+      "result_id": "7612fbec-14a0-408e-b908-066d400031c3"
+    },
+    {
+      "claim_id": "200a5039-5c0a-47d1-a1b0-9cc691ae413d",
+      "result_id": "7612fbec-14a0-408e-b908-066d400031c3"
+    },
+    {
+      "claim_id": "eaae69d3-f662-469b-80a8-fe6520ddc7fe",
+      "result_id": "7612fbec-14a0-408e-b908-066d400031c3"
+    },
+    {
+      "claim_id": "5a910de5-c745-4b2e-8e13-6d02f7002b15",
+      "result_id": "693b9428-d36d-4692-a213-ccb79aa4541c"
+    },
+    {
+      "claim_id": "fea8f2f1-1376-405f-8af7-ea67487f3fb3",
+      "result_id": "693b9428-d36d-4692-a213-ccb79aa4541c"
+    },
+    {
+      "claim_id": "00735259-62e1-4137-9797-6a8231238006",
+      "result_id": "693b9428-d36d-4692-a213-ccb79aa4541c"
+    },
+    {
+      "claim_id": "465d9e2b-41a6-415e-9f90-0ffbd57097e9",
+      "result_id": "ff87fe32-2b8f-4084-bac3-6edea1d414d1"
+    },
+    {
+      "claim_id": "860217ba-91ab-4fae-b1bb-94a3a9e11d80",
+      "result_id": "ff87fe32-2b8f-4084-bac3-6edea1d414d1"
+    },
+    {
+      "claim_id": "e2dc8237-bee4-4e1a-bcdb-b8941ecf9f41",
+      "result_id": "ff87fe32-2b8f-4084-bac3-6edea1d414d1"
+    },
+    {
+      "claim_id": "a01d1f8d-d0a5-429e-9ca3-81fca4dd195f",
+      "result_id": "ff87fe32-2b8f-4084-bac3-6edea1d414d1"
+    },
+    {
+      "claim_id": "8e65154c-9f4d-452b-ba63-4c3d7f51e345",
+      "result_id": "4776488f-8a84-42ca-8f06-4a5e302276ed"
+    },
+    {
+      "claim_id": "e8904244-1c3d-4787-aa12-e2ef662c7dc2",
+      "result_id": "4776488f-8a84-42ca-8f06-4a5e302276ed"
+    },
+    {
+      "claim_id": "8f4d5b7f-8846-4ba8-b050-74cf32859ede",
+      "result_id": "4776488f-8a84-42ca-8f06-4a5e302276ed"
+    },
+    {
+      "claim_id": "b3addf6e-c4a2-4376-9e1b-445047375c3f",
+      "result_id": "4776488f-8a84-42ca-8f06-4a5e302276ed"
+    },
+    {
+      "claim_id": "242c9524-c7d8-4856-bf71-2663168007bd",
+      "result_id": "4776488f-8a84-42ca-8f06-4a5e302276ed"
+    },
+    {
+      "claim_id": "4a6851ba-c519-4c42-98fa-e632ef6426ba",
+      "result_id": "4776488f-8a84-42ca-8f06-4a5e302276ed"
+    },
+    {
+      "claim_id": "640f4623-de16-4d88-80f0-fc99c7c926e7",
+      "result_id": "4776488f-8a84-42ca-8f06-4a5e302276ed"
+    },
+    {
+      "claim_id": "6e8c4b5e-2493-4bcf-b2df-80cf2c4bf286",
+      "result_id": "18d08e28-3c86-48d1-9d34-f9375151dbe9"
+    },
+    {
+      "claim_id": "2a0c6007-787d-4813-9c29-79ca6eb11a90",
+      "result_id": "18d08e28-3c86-48d1-9d34-f9375151dbe9"
+    },
+    {
+      "claim_id": "2439fb46-6549-4ee4-8cfd-09336fbbd730",
+      "result_id": "18d08e28-3c86-48d1-9d34-f9375151dbe9"
+    },
+    {
+      "claim_id": "c4b5d3b8-46db-4968-8938-027a6c7e7ca2",
+      "result_id": "18d08e28-3c86-48d1-9d34-f9375151dbe9"
+    },
+    {
+      "claim_id": "912839e7-27b5-40d6-b70e-338045dca643",
+      "result_id": "18d08e28-3c86-48d1-9d34-f9375151dbe9"
+    },
+    {
+      "claim_id": "5b62f948-bb6e-4f24-b2a1-f58fb591260e",
+      "result_id": "18d08e28-3c86-48d1-9d34-f9375151dbe9"
+    },
+    {
+      "claim_id": "9189208a-9c78-4e2f-bdf8-617b1df3b931",
+      "result_id": "18d08e28-3c86-48d1-9d34-f9375151dbe9"
+    },
+    {
+      "claim_id": "691ffc72-ff63-49f8-a9cb-aac6665de8c2",
+      "result_id": "18d08e28-3c86-48d1-9d34-f9375151dbe9"
+    },
+    {
+      "claim_id": "23250cce-7717-49b4-b2b4-d0c29ac4bb27",
+      "result_id": "18d08e28-3c86-48d1-9d34-f9375151dbe9"
+    },
+    {
+      "claim_id": "f5f112cb-b45e-4496-80ba-4e2509718002",
+      "result_id": "18d08e28-3c86-48d1-9d34-f9375151dbe9"
+    },
+    {
+      "claim_id": "666abe71-dea3-42b2-920c-97a990b64415",
+      "result_id": "18d08e28-3c86-48d1-9d34-f9375151dbe9"
+    },
+    {
+      "claim_id": "7d453585-35dc-44fd-aee4-56426e276e4b",
+      "result_id": "18d08e28-3c86-48d1-9d34-f9375151dbe9"
+    },
+    {
+      "claim_id": "3c9f71f1-c777-41c3-ad10-49c5ccdb05b3",
+      "result_id": "18d08e28-3c86-48d1-9d34-f9375151dbe9"
+    },
+    {
+      "claim_id": "b81159e0-684f-4f96-96a3-a6fa343d6342",
+      "result_id": "fe6e14d2-366c-43ef-8505-0902f7d44811"
+    },
+    {
+      "claim_id": "bf85393a-6566-447e-bf31-53dbdedcca2f",
+      "result_id": "fe6e14d2-366c-43ef-8505-0902f7d44811"
+    },
+    {
+      "claim_id": "868d4f6e-3dea-49e2-9b89-e0f23fff0145",
+      "result_id": "fe6e14d2-366c-43ef-8505-0902f7d44811"
+    },
+    {
+      "claim_id": "5a5430de-c51d-46a7-bb0b-0c0c995a527a",
+      "result_id": "b3f81fe9-2575-4cbc-942d-1213d8d5dbdd"
+    },
+    {
+      "claim_id": "460d2c56-a949-427b-9407-aadeaa642e54",
+      "result_id": "b3f81fe9-2575-4cbc-942d-1213d8d5dbdd"
+    },
+    {
+      "claim_id": "91b6375a-4e1a-40b7-94d3-e066f206a377",
+      "result_id": "b3f81fe9-2575-4cbc-942d-1213d8d5dbdd"
+    },
+    {
+      "claim_id": "3e1420a6-a729-4550-82b0-7d8e1a323b3f",
+      "result_id": "b3f81fe9-2575-4cbc-942d-1213d8d5dbdd"
+    },
+    {
+      "claim_id": "c6a219d2-7022-469d-b3ad-964357ec204d",
+      "result_id": "b3f81fe9-2575-4cbc-942d-1213d8d5dbdd"
+    },
+    {
+      "claim_id": "a4747813-8787-47c1-b832-28ed0476c50d",
+      "result_id": "2f4fa14a-9c4a-4ded-bf91-420cc911dd5c"
+    },
+    {
+      "claim_id": "d6e64164-91df-4e2b-864d-771bd732ae1f",
+      "result_id": "2f4fa14a-9c4a-4ded-bf91-420cc911dd5c"
+    },
+    {
+      "claim_id": "268e3d0b-f644-415f-bd4d-374d61711cab",
+      "result_id": "2f4fa14a-9c4a-4ded-bf91-420cc911dd5c"
+    },
+    {
+      "claim_id": "b5d94075-b026-4290-ab83-83b8e3574b73",
+      "result_id": "2f4fa14a-9c4a-4ded-bf91-420cc911dd5c"
+    },
+    {
+      "claim_id": "37442c6a-e9de-4e91-91d2-faf55506bec2",
+      "result_id": "2f4fa14a-9c4a-4ded-bf91-420cc911dd5c"
+    },
+    {
+      "claim_id": "3c9cf1c8-6478-4fa8-a4f4-3b2dfcb0ce5a",
+      "result_id": "b0ebb96e-984c-4c5a-9a79-f8928ab65a62"
+    },
+    {
+      "claim_id": "cadb1937-db52-4728-a9f2-88bd9cb04c17",
+      "result_id": "fbad3eec-331a-4073-a490-83128ca74ea8"
+    },
+    {
+      "claim_id": "b71fd8f8-b264-4caa-a4ce-968f446d696e",
+      "result_id": "fbad3eec-331a-4073-a490-83128ca74ea8"
+    },
+    {
+      "claim_id": "2b3b6a2e-80b1-478d-bc82-a7c0afd525ef",
+      "result_id": "085447b2-7e74-4e02-b7e1-67d9ea6e2bc1"
+    },
+    {
+      "claim_id": "419537d3-04cc-41b4-8739-ada4c296a98f",
+      "result_id": "82b492e3-8a89-4d1e-b95c-9e6589f9245d"
+    },
+    {
+      "claim_id": "0998e7cd-b171-4832-8249-ec43d6e25c1a",
+      "result_id": "82b492e3-8a89-4d1e-b95c-9e6589f9245d"
+    },
+    {
+      "claim_id": "59f4b32f-fc4e-4536-999c-a815917973e5",
+      "result_id": "82b492e3-8a89-4d1e-b95c-9e6589f9245d"
+    },
+    {
+      "claim_id": "2c532e78-14db-4675-b9cf-b7b3bf0988cd",
+      "result_id": "82b492e3-8a89-4d1e-b95c-9e6589f9245d"
+    },
+    {
+      "claim_id": "4511a163-241a-4f31-a4bc-7dcb9baf8ff4",
+      "result_id": "0138a9d5-dc0b-4345-9baf-eedfba43d786"
+    },
+    {
+      "claim_id": "0929d51b-29b5-4bf1-b9f0-c5d258a7fa96",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "5c0a3859-d383-4943-81d1-9020ad6492cc",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "cfb0e59e-25bf-45cc-a7c2-3159ea6c591a",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "06db620b-d719-4384-821d-c2076a4ca177",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "74300151-e408-4d24-baa4-7eec5ced5425",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "7ed7ea86-932a-4ac3-b569-5b8dc742904f",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "e8efacc0-0109-4085-9b4e-dfa2617bbc52",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "02c3efb4-a596-4096-be5d-184b54df3b91",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "26f78de9-b811-4c74-8ec8-52401b3329ae",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "48c11716-65e4-4948-b150-38c707b397fd",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "ad3e2fed-7d37-4461-aad3-2dec7bfa44ee",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "73952f93-0cdf-4ae2-b43c-64be900f53c4",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "ae3486d9-f2a4-476c-bea1-093266cb3837",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "812f8a54-6ad4-4e45-92d8-d066d7104562",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "8dfe0c0b-90ad-45a8-bf62-b1cc0285f491",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "5f7fb1b5-a90b-4ae9-b86b-e99de0c4fbcb",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "a838e9e4-9d14-415b-9ae3-49edac220210",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "aa20aee7-7f94-4285-b653-84bb30f72dcb",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "c41970df-f22d-4ddb-b2fc-cb85946b80db",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "42c4520f-185c-4f9d-9e02-6a2a89b80f80",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "1fd66a58-12d6-4634-aeb4-d443d9def985",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "1bcc807e-43d7-4cc6-8d8e-0aacf749e1d5",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "25dae9e3-50bd-4a83-a24c-3521e979c83e",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "3c3648e5-1df4-4801-93b0-3b0bdea7d142",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "fe2cba74-3011-4fc4-9484-2b4fef46e409",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "b46cf1eb-398a-4aa5-be3f-0bd3c126d390",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "9b86f3d1-08e6-4efd-8ea6-7f05d2d578cd",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "ccc45008-f62c-4da0-9c7d-8394cbb194af",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "f9506e4b-ccd3-402c-a5e4-13a712c08c23",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "d759e8f1-2279-4414-83ca-3e43f433029d",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "516bd202-efb5-49a3-b3fc-b5c811c07af2",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "b2dca800-76b7-49d4-94b0-cd6407a0559f",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "955e6b68-1e2e-447a-b5a8-3204deefa1bd",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "1975e513-9598-43de-9354-e2c7a28c5d5f",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "7d2c9643-bc9a-44a7-95b9-2f81f5a85cdf",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "9b20844a-64a9-4eb7-a8fc-d87626a35f41",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "5d41af8e-5406-4024-b9ef-bbd2f979cb00",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    },
+    {
+      "claim_id": "aef14a5f-5322-49fe-a167-aee7900eefa1",
+      "result_id": "64d2d0bb-686e-40d5-a7d3-1608606aa7c0"
+    }
+  ],
+  "comparisons": []
+}

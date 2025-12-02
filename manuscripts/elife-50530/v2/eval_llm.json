@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C36",
+      "C45",
+      "C79",
+      "C80",
+      "C83"
+    ],
+    "result": "The authors developed iRICC, a method for identifying RNA-RNA interactions at nucleotide resolution, which successfully identified 171 HSUR2 binding sites in 110 target mRNAs. Mutational analyses validated that iRICC accurately determines functional RNA-RNA interaction sequences in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C33, C36, C45, C79, C80, and C83 collectively demonstrate that iRICC is a validated method. The method identified specific binding sites (C33, C45, C80), relies on psoralen crosslinking and RT stalling (C79), and was confirmed by mutational analyses (C36, C83). The experimental validation shown in Figures 4 and 5 provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C34",
+      "C35",
+      "C89"
+    ],
+    "result": "HSUR2 does not use a seed region for target recognition but instead employs different regions and variable base-pairing arrangements to interact with different target mRNAs, similar to cellular Sm-class RNAs like U1, U2, and U7 snRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C34, C35, and C89 are supported by data in Figure 2C, Supplementary file 2, and Figures 1C-D showing that HSUR2 uses different regions for different targets without a consistent seed region. The comparison to cellular snRNAs provides biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C59",
+      "C60"
+    ],
+    "result": "Base-pairing between HSUR2 and target mRNAs is required for HSUR2-mediated mRNA repression, and these interactions are mediated by the sequences identified by iRICC. Mutations disrupting base-pairing abolish repression, while compensatory mutations restore it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, C61, and C62 are strongly supported by mutational analyses in Figures 4 and Figure 4\u2014figure supplement 1. The systematic disruption and restoration of base-pairing with corresponding effects on repression provides compelling evidence for the requirement of base-pairing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C94",
+      "C103"
+    ],
+    "result": "The stability of the HSUR2-mRNA interaction, rather than any specific base-pairing arrangement, dictates HSUR2-mediated mRNA repression. HSUR2 can repress targets through different base-pairing arrangements as long as similar binding stability is maintained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, C94, and C103 are supported by experiments in Figure 5 showing that mutant reporters with alternative base-pairing arrangements but similar binding energies are repressed as efficiently as wild-type reporters. This demonstrates that thermodynamic stability, not specific sequence arrangements, determines repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C37",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C75"
+    ],
+    "result": "The arrangement of base pairs between HSUR2 and target mRNAs determines whether the miR-16 binding site is available, thereby dictating differential miR-16 recruitment and its requirement for mRNA repression. When the miR-16BS is engaged in base-pairing with the target, repression is miR-16-independent; when free, repression requires miR-16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C37, C65-C70, and C75 are strongly supported by experiments in Figure 6 using LNA inhibitors. The data show that miR-16 is required for some targets (PACS1, STK4, MGA, CD69) but not others (TP53RK, YTHDC1), correlating with whether the miR-16BS is engaged in base-pairing. The ability to switch miR-16 dependence by altering base-pairing (C71-C74) provides compelling mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "iRICC identified HSUR2 target mRNAs with high reproducibility (R=0.91-0.94) across biological replicates. GO-term enrichment analysis revealed that HSUR2 regulates genes involved in apoptosis and cell cycle progression, including previously identified targets and new pro-apoptotic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by the experimental data. High reproducibility (C38) is stated with correlation coefficients. GO-term analysis (C39) is shown in Figure 2\u2014figure supplement 1D. Target identification (C40) is supported by Supplementary file 1 and validated by HSUR2 knockdown experiments (C41, Figure 1\u2014figure supplement 1B).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47"
+    ],
+    "result": "iRICC identifies crosslinking sites through reverse transcriptase stalling at psoralen-crosslinked residues, resulting in steep drops of aligned reads. Psoralen preferentially crosslinks juxtaposed pyrimidines, which were found within 10 nucleotides of the identified crosslinking sites in ~89% of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C43, C44, C46, and C47 describe the technical basis of iRICC. The mechanism is supported by data in Figures 1C-D and Figure 1\u2014figure supplement 2, with citations supporting psoralen chemistry (C46). The presence of pyrimidines near crosslinking sites (C47, Figure 1\u2014figure supplement 2E) validates the predicted base-pairing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "HSUR2 binding sites are enriched in 3'UTRs (~67%) with preference for positions proximal to stop codons, with substantial fractions in coding sequences (~26%), stop codons (~6%), and 5'UTRs (~2%). Most target mRNAs (~58%) contain one HSUR2 binding site, with some containing up to five sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 describe the distribution of HSUR2 binding sites and are supported by data in Figure 2A-B and Figure 2\u2014figure supplement 1A. The quantitative distributions are clearly presented and consistent with the stated percentages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Luciferase reporter assays validated iRICC-identified binding sites. HSUR2 repressed all six tested reporters containing identified binding sites but not control reporters. Repression required miR-142-3p binding, as a mutant HSUR2 unable to bind miR-142-3p showed no repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by luciferase assays in Figure 3B. The negative controls (C55) and positive results with wild-type HSUR2 (C56) combined with loss of repression with HSUR2\u0394142-3p mutant (C57) demonstrate that repression occurs through HSUR2-mediated miRNA recruitment (C58).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Existing psoralen-based proximity ligation methods for identifying RNA-RNA interactions rely on chimeric read identification but cannot distinguish in vivo from in vitro interactions because they require reversal of crosslinks before library preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 describe limitations of existing methods and are supported by citations (C76, C77) and logical inference (C78). This provides context for why iRICC was developed, though the claim about inability to distinguish in vivo from in vitro interactions is an inference rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Psoralen derivatives preferentially crosslink adjacent opposite pyrimidine bases in double-stranded regions, which predicts that GC-rich interactions will be under-represented in iRICC datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by citations. Claim C82 is a logical prediction based on psoralen chemistry. However, this limitation is acknowledged but not experimentally validated in the manuscript. The prediction is reasonable but remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Gene set enrichment analysis of iRICC-identified targets showed HSUR2 regulates genes involved in processes relevant to viral infection. However, only three mRNAs overlap with previously identified RICC-seq targets, suggesting both methods underestimate the total number of HSUR2 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C85 are supported by GO-term analysis (Figure 2\u2014figure supplement 1D) and comparison with prior work. The limited overlap (C85) is acknowledged and attributed to methodological differences, which is a reasonable interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C87"
+    ],
+    "result": "HSUR2 binding site distribution on mRNAs is reminiscent of miRNA binding patterns, with enrichment in 3'UTRs where most miRNA binding sites occur, consistent with HSUR2's function as a miRNA adaptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C87 compare HSUR2 to miRNAs and are supported by citations and data in Figure 2A-B. The comparison is appropriate given HSUR2's function as a miRNA adaptor (C86).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Multiple HSUR2 molecules may cooperatively repress specific target mRNAs, similar to miRNAs, based on the observation that some targets contain up to five binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 is a speculation based on the presence of multiple binding sites (C53) and comparison to miRNA behavior. While the hypothesis is reasonable and supported by citations about miRNA cooperativity, no direct experimental evidence for HSUR2 cooperativity is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C93"
+    ],
+    "result": "The mechanism by which HSUR2 specifically recognizes binding sites in target mRNAs remains unknown. Sequence complementarity appears necessary but not sufficient, and additional cis- and trans-acting factors may assist HSUR2 in target recognition, similar to cellular snRNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C89, and C93 acknowledge knowledge gaps and propose hypotheses. C88 and C89 are supported by the data showing lack of a seed region. C93 is a reasonable speculation based on analogy to cellular snRNPs (C90-C92), but remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "HSUR2's flexible base-pairing may provide evolutionary advantages over seed-based systems by allowing regulation of diverse transcripts with a single ncRNA, potentially minimizing viral genome investment compared to expressing multiple miRNAs like other herpesviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C99 present speculative evolutionary advantages of HSUR2's binding properties. While the 'crescent wrench' analogy (C98) is creative and the comparison to other herpesviruses (C97) is cited, these remain hypotheses without direct experimental support. The speculation is reasonable but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "HSUR2's binding flexibility may allow HSUR2-mediated regulation to withstand target sequence evolution better than seed-based systems, making it difficult for the host to escape viral regulation through point mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C102 about seed-based system sensitivity are supported by citations. C103 is supported by data in Figure 5. However, C104's speculation about evolutionary robustness, while logical, is not experimentally tested. No evolution experiments or sequence variation analyses are presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The mechanism by which miR-142-3p contributes to repression is unknown. Since miR-142-3p is tissue-specific to hematopoietic cells, HSUR2 may not function in non-hematopoietic tissues, potentially defining HVS latent infection tropism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 acknowledges a knowledge gap. C106 is supported by citation. C107 is speculation about tissue tropism based on miR-142-3p expression patterns. While logical, this hypothesis is not tested experimentally. No data on HSUR2 function in different tissue types is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "miR-16-dependent HSUR2 targets encode apoptosis-related proteins. Since miR-16 abundance is cell cycle-regulated and highest in G0-arrested cells, HSUR2 may efficiently repress specific transcripts in a cell cycle-dependent manner, allowing HVS to regulate key genes when infected cells attempt G0 arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 is supported by GO-term analysis and citation. C109 and C110 are supported by citations about miR-16 biology. However, C111-C113 are speculations about cell cycle-dependent regulation without experimental validation. No cell cycle experiments or miR-16 abundance measurements in the context of HSUR2 function are provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background information establishing that HSUR2 is a viral miRNA adaptor that inhibits apoptosis by recruiting miR-142-3p and miR-16 to target mRNAs, but with unknown target recognition mechanisms and unclear differential miR-16 usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 provide background context from prior work (primarily Gorbea et al., 2017) and identify knowledge gaps that motivate the current study. These are supported by citations and establish the rationale for developing iRICC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background on RNA-RNA interactions: Most guide RNAs use seed sequences for target recognition, but Sm-class RNAs can use different subregions and flexible base-pairing arrangements. This flexibility makes it difficult to predict HSUR2 binding sites computationally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 provide background on RNA biology and are supported by citations. C32 is an inference that motivates the need for an experimental approach (iRICC) rather than computational prediction. This reasoning is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background on splicing: Base-pairing between snRNAs and splice sites is essential for splicing, but cis-acting signals and trans-acting factors like SR proteins are also required for specificity, resulting in the regulatory potential manifested by alternative splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 provide background on splicing mechanisms and are supported by multiple citations. This context is used to draw analogies to potential HSUR2 regulation mechanisms.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C127"
+    ],
+    "result": "Alanine scanning mutagenesis of Dbp5 generated 481 mutants, of which 456 were viable and 25 were lethal. Lethal mutations mapped to conserved motifs critical for RNA-binding, ATP-binding, ATP hydrolysis, and binding to NPC regulators Gle1 and Nup159.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C25-C29, and C127 collectively describe the mutagenesis approach and characterization of lethal mutations. The data are consistent with known DBP structure-function relationships (C26, supported by citation), and specific examples (Q119A, DEAD motif mutations, Gle1/Nup159 binding residues) are provided with appropriate citations. The functional importance of conserved motifs is supported by growth data (C127).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Dbp5 contains an N-terminal Xpo1-dependent nuclear export signal (NES). The L12A mutation disrupts this NES, causing nuclear accumulation of Dbp5. The NES sequence (residues surrounding L12 and L15) is sufficient to drive nuclear export when fused to a reporter, and this activity is abolished by L12A substitution and blocked by Leptomycin B treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C43 provide converging evidence for an N-terminal NES in Dbp5. The localization data (C32-C33, C37), sequence analysis (C39), reporter assays (C40-C41), and LMB sensitivity (C42) all support the conclusion (C43). The observation that GFP tagging causes temperature-sensitive phenotypes in the L12A mutant (C34-C36) is appropriately controlled by testing untagged integrated alleles (C35, C37-C38), demonstrating that nuclear localization is not an artifact of GFP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Dbp5 shuttles between nucleus and cytoplasm through both NES-dependent and NES-independent mechanisms. Anchor-away experiments show that Dbp5\u0394NES retains cytoplasmic access (58-63% of starting nuclear levels after 2-4 min), and Dbp5 export is Xpo1-dependent as shown by LMB treatment. Two distinct nuclear populations exist: one dynamic and Xpo1-dependent, and one stably associated with the nucleolus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C54 describe anchor-away experiments with peroxisomal and histone anchors, plus LMB treatment. The data show that Dbp5\u0394NES still shuttles (C46-C48), indicating NES-independent export (C52). LMB treatment blocks export (C49-C51), confirming Xpo1 dependence. The identification of nucleolar and dynamic populations (C53-C54) is supported by co-localization with Nop1. The quantitative data (C47, C50) support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The R423A mutation in motif VI of Dbp5 impairs nuclear import efficiency. The mutant fails to accumulate in the nucleus during ethanol stress, shows delayed nuclear accumulation in anchor-away assays with histone anchor, but retains cytoplasmic dynamics. The region surrounding R423 resembles an NLS sequence but is not sufficient for import when tested in isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C68 describe the identification and characterization of the R423A import mutant. The ethanol stress assay (C55-C58), anchor-away experiments with histone and peroxisomal anchors (C65-C67), and sequence analysis (C63-C64) provide converging evidence for altered import (C68). The observation that GFP tagging causes temperature-sensitive phenotypes (C59-C60) is appropriately controlled. The inference that import is defective (C62) is reasonable given Xpo1-dependent export (C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "SGA screening of dbp5-L12A identified only 12 genetic interactions, with no enrichment for mRNP export, NPC, or translation machinery components. This supports the conclusion that nuclear accumulation of Dbp5 is not detrimental to mRNP export, translation, or cellular fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 describe the SGA screen results for dbp5-L12A. The small number of interactions (C69-C70), lack of GO term enrichment (C71), and absence of interactions with mRNP export/NPC/translation components (C72) support the conclusion (C73). This is consistent with the lack of growth defects and mRNA export defects in the integrated untagged dbp5-L12A strain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "SGA screening of dbp5-R423A identified 176 genetic interactions, including components of NPCs and mRNA/ncRNA export pathways. In vitro ATPase assays show that Dbp5R423A has normal basal activity but reduced RNA-stimulated activity (47-52% of wild-type). The genetic interactions and conditional phenotypes suggest that Dbp5R423A activity can be limiting when combined with other perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 describe the SGA screen and biochemical characterization of dbp5-R423A. The genetic interactions (C74-C75) are consistent with a prior screen (citation in C74). The ATPase data (C79-C81) provide a mechanistic explanation for the genetic interactions and conditional phenotypes (C76, C82). The location of R423 in motif VI (C78) is consistent with altered enzymatic activity. The threshold model (C77) is supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C73",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Dbp5 nuclear shuttling is not essential for mRNP export. The data support the RNPase model in which Dbp5 encounters mRNPs at the cytoplasmic face of NPCs, rather than the scaffold model in which Dbp5 travels with mRNPs from nucleus to cytoplasm. The nuclear role of Dbp5 may be more critical for other RNA processing and ncRNA export events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C73, C130-C132 represent the major conclusion about Dbp5 function in mRNP export. This is supported by: (1) lack of mRNA export defects in dbp5-L12A (nuclear-biased) and dbp5-R423A (import-defective) strains using integrated untagged alleles; (2) minimal genetic interactions in dbp5-L12A SGA screen; (3) insensitivity of mRNP export to changes in Dbp5 localization and shuttling. The conclusion favoring the RNPase model (C131) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "SGA screens identified genetic interactions with factors involved in rRNA and tRNA processing/export. However, no rRNA processing or export defects were detected in dbp5-L12A or dbp5-R423A mutants by northern blotting, FISH, or reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 describe the investigation of ncRNA export. The genetic interactions (C84) and prior work (C83, C85) motivated the investigation, but no rRNA defects were observed (C86). This negative result is clearly stated and appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The dbp5-R423A mutant shows tRNA processing/export defects. Northern blotting shows accumulation of intron-containing tRNA intermediates for tRNAIleUAU (2.3\u00b10.2 fold at 37\u00b0C) and tRNATyrGUA (1.7\u00b10.4 fold at 37\u00b0C). FISH shows increased nuclear tRNAIleUAU in dbp5-R423A at 37\u00b0C, comparable to the mex67-5 mutant. No poly(A)-RNA export defects were observed under these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C97 describe tRNA processing/export defects in dbp5-R423A. The northern blotting data (C88-C92) show temperature-dependent accumulation of intron-containing intermediates for two different tRNAs. The FISH data (C95) confirm nuclear accumulation. The comparison to mex67-5 (C97) provides context. The absence of mRNA export defects (C96) is an important control. The conclusion (C93) is supported by the data and the known requirement for cytoplasmic splicing (C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The dbp5-L12A/R423A double mutant shows mRNP export defects at 25\u00b0C and 37\u00b0C, and strong temperature-dependent growth defects, but similar tRNA processing defects to dbp5-R423A alone. This indicates that depleting cytoplasmic Dbp5 in the context of R423A alters mRNP export but does not further impact tRNA processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 describe the double mutant analysis. The phenotypic data (C99-C100) show that combining L12A with R423A causes mRNP export defects (C101), but the tRNA processing defect is not worsened (C102-C103). This differential effect on mRNA vs. tRNA export (C103) supports distinct mechanisms and compartments for these activities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Dbp5, Gle1, Nup159, and Mex67 all show tRNA processing defects at 25\u00b0C and 37\u00b0C. The defects occur under conditions where mRNP export is not severely perturbed (25\u00b0C), indicating roles in tRNA export independent of mRNP export blocks. Gle1 and Nup159 influence tRNA export through mechanisms beyond altering Dbp5 nuclear access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 describe the analysis of Dbp5 regulators and Mex67 in tRNA export. The northern blotting data (C106-C107) show tRNA processing defects in multiple mutants at both temperatures. The conclusion (C108) is supported by the data and citation (C108). The localization data (C109) show that Dbp5 nuclear levels are not consistently altered in these mutants, supporting the inference (C110) that Gle1/Nup159 function goes beyond regulating Dbp5 localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Nuclear Dbp5 supports re-export of mature tRNAs following nutrient stress. During amino acid starvation, tRNATyrGUA accumulates in the nucleus of wild-type, dbp5-L12A, and dbp5-R423A strains. Upon re-feeding, nuclear tRNA levels return to baseline in wild-type (15\u00b18%) and dbp5-L12A (31\u00b15%) by 10 minutes, but remain elevated in dbp5-R423A (74\u00b19%). The genetic interaction with msn5\u0394 supports this role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 describe the tRNA re-export assay. The FISH data (C113-C116) show that tRNA import is normal (C113-C114) but re-export is delayed in dbp5-R423A (C116). The genetic interaction with msn5\u0394 (C112), a known tRNA re-export factor (C111), supports the conclusion (C117). The modest defect in dbp5-L12A (C115, C118) suggests that efficient shuttling via the NES is also important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Dbp5 physically interacts with tRNAs. RIP-qPCR shows enrichment of unspliced and spliced tRNAIleUAU with PrA-Dbp5 compared to untagged control. PrA-Dbp5L12A shows significantly increased binding to unspliced tRNAIleUAU, while PrA-Dbp5R423A shows reduced but not statistically significant binding. The mitochondrial mRNA COX1 was not detected above background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 describe RIP-qPCR experiments demonstrating physical interaction between Dbp5 and tRNAs. The enrichment data (C119-C121) show that Dbp5 binds tRNAs, and the binding patterns parallel the localization and export defects (C122). The negative control (C123) demonstrates specificity. The conclusion (C124) is supported by the physical interaction data combined with the export defects and localization changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C129"
+    ],
+    "result": "The mutant collection represents a resource for studying Dbp5 and DBPs in general. Other DBPs contain N-terminal NES sequences. GFP tagging modified mutant phenotypes, causing temperature-sensitive growth and poly(A)-RNA accumulation at 37\u00b0C for both GFP-dbp5-L12A and GFP-dbp5-R423A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126, C129 describe the utility and limitations of the mutant collection. The statement about the resource (C125) is reasonable given the comprehensive mutagenesis. The observation about other DBPs (C126) is supported by citations. The GFP tagging effect (C129) is clearly documented and appropriately controlled by testing untagged integrated alleles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Export of pre-ribosomal subunits largely occurs through Xpo1, and the Xpo1-dependent NES in Dbp5 could provide a mode for Dbp5 to act as an export receptor. However, the lack of rRNA export phenotypes in dbp5-L12A and dbp5-R423A is consistent with prior work suggesting that Dbp5 activity in rRNA export occurs at the cytoplasmic face of NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 discuss the implications of the NES discovery for rRNA export. The statement about Xpo1 and rRNA export (C133) is supported by citation. The interpretation (C134) reconciles the lack of observed rRNA defects with prior work (citation) and is a reasonable inference given that both mutants retain access to the nuclear envelope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "tRNA export defects are most apparent under conditions of high temperature growth or nutrient stress due to demands on the tRNA export machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C135 is explicitly labeled as speculation in the evidence_type field. While this is a reasonable hypothesis to explain why defects are most apparent under stress conditions, it is not directly tested and represents speculation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C87",
+      "C136",
+      "C137"
+    ],
+    "result": "Background and context claims about Dbp5, DEAD-box proteins, RNA biology, and prior work on Dbp5 functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C24, C87, C136-C137 provide background information and context from prior work. These are appropriately supported by citations or represent established knowledge. They provide the foundation for the current study but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

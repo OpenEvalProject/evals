@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C23",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors demonstrate through mechanistic mathematical models that simple manipulations to population structure (ecological scaffolding) can exogenously impose Darwinian-like properties on communities, causing them to participate directly in evolution by natural selection. This scaffolding drives the evolution of density-dependent cell-level interactions to the point where derived communities reliably re-establish parental phenotypes despite stochastic effects, through a mechanism termed 'developmental correction'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19, C23, C86-C87 collectively present the core finding supported by both stochastic simulations and deterministic approximations shown in Figures 2-6. The mathematical models explicitly demonstrate the emergence of developmental correction through density-dependent interactions, with clear evidence of phenotype maintenance across generations. The mechanism is well-characterized both computationally and theoretically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Under neutral selection (no collective-level selection), collectives rapidly converge to monochromatic phenotypes biased toward faster-growing particle types. In contrast, under selective pressure for purple collectives, the system initially shows bias toward red (faster-growing) particles but subsequently reverses, with mean collective color progressively approaching purple and variance decreasing after generation 1000 due to improved parent-offspring resemblance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C25-C31 are directly supported by simulation data shown in Figure 2A-F. The neutral regime shows clear convergence to monochromatic states, while the selective regime demonstrates the evolutionary trajectory from initial bias through stochastic correction to developmental correction. The temporal dynamics and associated changes in particle traits (growth rates and competition parameters) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Selection on collective color fundamentally alters within-collective particle dynamics. At generation 3, both particle types follow exponential growth resulting in adult color biased toward faster-growing red types. By generation 9000, both particle types reach saturating steady states ensuring purple adult color, with initial departures from 1:1 ratios compensated during growth through evolved inter-color competition traits and increased particle growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are strongly supported by Figure 3A-D showing contrasting dynamics at different evolutionary time points. The transition from exponential to saturating growth is clearly demonstrated, with the deterministic approximation (dotted lines in Figure 3C-D) matching simulation results. The mechanistic explanation linking compensation to evolved competition traits is well-supported by Figure 2F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The relationship between newborn and adult collective color reveals the emergence of developmental correction. At generation 3, red particle proportion always increases regardless of initial conditions, requiring stochastic correction to maintain purple collectives. By generation 9000, the system exhibits true developmental correction where adult color converges to 0.5 from any starting point within a single generation, with offspring reliably returning to parental phenotype despite initial departures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 are comprehensively supported by Figure 5A-B showing the growth function G at different evolutionary stages. The staircase analysis clearly demonstrates fixation at generation 3 versus convergence to purple at generation 9000. The mechanistic distinction between stochastic and developmental correction is well-established through both simulation data and deterministic approximation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The evolved developmental correction mechanism is robust and reproducible. In repeated simulations, average adult collective color consistently falls within a few percentage points of the target, with collective-level selection applying more stringently to interaction parameters than growth rates. Collectives with derived traits maintain optimal phenotypes even after removal of selection for over 200 generations, while ancestral traits lead to monochromatic fixation in under 10 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by data in Appendix 1 (referenced in text) and Figure 4A-B. The contrast between ancestral and derived traits upon removal of selection provides strong evidence for the robustness of evolved developmental correction. The differential selection pressure on interaction versus growth parameters is an important observation about the evolutionary trajectory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C47",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Developmental correction represents an evolutionary refinement of the stochastic corrector mechanism. Both solve the problem of maintaining well-formed collectives across generations, but stochastic correction relies on low-fidelity reproduction with high population sizes and strong purifying selection, rapidly losing optimal phenotype without selection. Developmental correction maintains optimal phenotype without hard selection, with most collectives reliably reaching successful adult states regardless of perturbations, though mutational processes eventually erode the mechanism in the absence of selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C47, C89-C96 provide a well-supported comparison between mechanisms. The stochastic corrector behavior is demonstrated at early generations (Figure 5A, Appendix 1-figure 5), while developmental correction is shown at later generations (Figure 5B). Figure 4 demonstrates maintenance of phenotype after selection removal. The theoretical framework connecting to prior work (Maynard Smith and Szathmary, 1995) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C80"
+    ],
+    "result": "The evolution of developmental correction proceeds through separation of particle and collective time scales. Initially, particles compete during exponential phase with adult color biased toward fast-growing types. Successive increases in maximal growth rate separate time scales, allowing density-dependent interactions to evolve. Fidelity improves through asymmetric competition traits where one type (always the one with lower carrying capacity) has logistic uncoupled dynamics while the other adjusts its growth accordingly, placing collective phenotype under control of particle traits rather than demographic stochasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C61, C69-C71, C73-C74, C80 describe the mechanistic basis of developmental correction evolution, supported by Figures 2-3 showing temporal changes in traits and dynamics, and Figure 8B showing evolution toward asymmetric interactions. The deterministic approximation analysis in Appendix 2 provides theoretical support for the time scale separation and asymmetry arguments. The claim about carrying capacity determining the driver type (C74) is stated as an observation from model analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C97",
+      "C98"
+    ],
+    "result": "The deterministic approximation reveals critical parameter dependencies for developmental correction evolution. Once density-dependent interactions govern adult state, collective-level selection for color is promptly effected. However, small bottleneck size or short collective generation time impedes evolution of developmental correction. Trade-offs exist where decreased generation time can be compensated by increased bottleneck size without affecting average collective phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C97-C98 are supported by the deterministic approximation analysis and Figure 7 showing the parameter space where different dynamics occur. The identification of critical parameters (bottleneck size B and generation time T) is well-grounded in the mathematical framework. The trade-off analysis provides practical guidance for experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C100",
+      "C101"
+    ],
+    "result": "Under constrained evolution scenarios, the system finds alternative solutions. When interactions are absent, alignment of growth rates is the only solution to maintain equal particle numbers, but this provides no correction of stochastic fluctuations. In the full model, particle-level evolution changes the ecological attractor from extinction to stable coexistence while separating time scales, with evolution transiently relying on stochastic correction before developmental correction becomes established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C100-C101 are supported by Figure 8A showing growth rate alignment when interactions are constrained, and by the simulation results showing the evolutionary trajectory. The observation that the attractor changes from competitive exclusion to coexistence (C100) is demonstrated in Figures 2-3. The transient use of stochastic correction (C101) is a reasonable inference from the evolutionary dynamics shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Extension of the deterministic approximation to exploitative or mutualistic interactions indicates that selection for collective color can drive changes in the very nature of interactions, making them progress toward less reciprocally harmful coexistence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by analysis in Appendix 3 (referenced in text). While the main results focus on competitive interactions, this extension demonstrates generality of the framework. The claim is appropriately qualified as an extension of the deterministic approximation rather than full simulation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Historical and theoretical context establishes that while communities can theoretically participate in evolution by natural selection if they possess heritable variance in fitness, such conditions are rare in nature but achievable in laboratory settings. Prior work by Swenson and colleagues demonstrated that artificial selection on microbial communities produces significant responses at the community level, though the mechanistic basis of community-level heredity through interactions remained to be fully elucidated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 provide background context supported by appropriate citations to the literature (Wilson and Sober 1989, Margulis 1970, Lewontin 1970, Godfrey-Smith 2009, Swenson et al. 2000a/b, etc.). These are primarily literature review claims that set up the motivation for the current study. The citations appear appropriate and the characterization of prior work is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Prior experimental and theoretical work has established that experimenters can exogenously impose Darwinian-like properties on communities through ecological scaffolding, resulting in rapid functional improvement under artificial selection. Previous studies have recognized that interactions are key to community-level heredity, with simulations showing that evolution of interaction rates improves both diversity-dependent fitness and collective heritability, though microscopic constraints can affect community-level evolutionary capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 summarize relevant prior work with appropriate citations (Wilson and Sober 1989, Xie et al. 2019, Black et al. 2020, Swenson et al. 2000a/b, Ikegami and Hashimoto 2002, Penn 2003, Williams and Lenton 2007, Xie and Shou 2018). These claims provide important context for the current study's contribution and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "When the ecological attractor within collectives leads to extinction of one of two types, long collective-level generation times are incompatible with maintenance of diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by citation to van Vliet and Doebeli 2019. This is a literature-based claim that provides context for understanding the parameter constraints in the current model. The citation appears appropriate for this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors propose that developmental correction is broadly relevant to nested self-replicating structures and may be relevant to major egalitarian evolutionary transitions where maintenance of particle types in optimal proportions was essential. They suggest implications for top-down engineering of microbial communities, with critical tunable parameters being collective generation time and bottleneck size at birth, beyond standard parameters like population size and selection mode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C109 are primarily speculative statements about broader implications and future applications. While C108-C109 reasonably summarize the experimental protocol and parameter insights from the model, C105-C107 make broad claims about relevance to evolutionary transitions and engineering applications without direct empirical support. These are reasonable extrapolations from the findings but remain speculative regarding actual applicability to major transitions or practical engineering.",
+    "result_type": "MINOR"
+  }
+]

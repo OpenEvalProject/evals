@@ -1,0 +1,1605 @@
+{
+  "submission": {
+    "id": "9f7412f6-813c-47a3-8910-38ffba2b4911",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:34:29.219632Z",
+    "updated_at": "2025-12-02T12:34:29.219632Z"
+  },
+  "content": [
+    {
+      "id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "submission_id": "9f7412f6-813c-47a3-8910-38ffba2b4911",
+      "content_type": "manuscript",
+      "content_text": "# In vivo functional diversity of midbrain dopamine neurons within identified axonal projections\n\n## Authors\n\n- Navid Farassat<sup>1</sup>\n- Kau\u00ea Machado Costa<sup>1</sup> ([ORCID: 0000-0002-5562-6495](https://orcid.org/0000-0002-5562-6495))\n- Strahinja Stojanovic<sup>1</sup>\n- Stefan Albert<sup>2</sup>\n- Lora Kovacheva<sup>1</sup>\n- Josef Shin<sup>1</sup>\n- Richard Egger<sup>1</sup>\n- Mahalakshmi Somayaji<sup>1</sup>\n- Sevil Duvarci<sup>1</sup>\n- Gaby Schneider<sup>2</sup>\n- Jochen Roeper<sup>1</sup> ([ORCID: 0000-0003-2145-8742](https://orcid.org/0000-0003-2145-8742)) \u2020\n\n### Affiliations\n\n1. Institute for Neurophysiology Goethe University Frankfurt Germany\n2. Institute for Mathematics Goethe University Frankfurt Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nFunctional diversity of midbrain dopamine (DA) neurons ranges across multiple scales, from differences in intrinsic properties and connectivity to selective task engagement in behaving animals. Distinct in vitro biophysical features of DA neurons have been associated with different axonal projection targets. However, it is unknown how this translates to different firing patterns of projection-defined DA subpopulations in the intact brain. We combined retrograde tracing with single-unit recording and labelling in mouse brain to create an in vivo functional topography of the midbrain DA system. We identified differences in burst firing among DA neurons projecting to dorsolateral striatum. Bursting also differentiated DA neurons in the medial substantia nigra (SN) projecting either to dorsal or ventral striatum. We found differences in mean firing rates and pause durations among ventral tegmental area (VTA) DA neurons projecting to lateral or medial shell of nucleus accumbens. Our data establishes a high-resolution functional in vivo landscape of midbrain DA neurons.\n\n## Introduction\n\nThe functional properties and the emerging diversity of the midbrain dopamine (DA) system have been extensively studied across many different biological scales (Schultz, 2015; Watabe-Uchida et al., 2017). These differences range from the single-cell level, including diverging gene expression profiles (Kramer et al., 2018; Nichterwitz et al., 2016; Poulin et al., 2018; Saunders et al., 2018a; Tiklov\u00e1 et al., 2019), cellular and biophysical properties (Evans et al., 2017; Lammel et al., 2008; Tarfa et al., 2017), as well as neurotransmitter co-release (Chuhma et al., 2018; Kim et al., 2015b; Tritsch et al., 2012; Zhang et al., 2015), up to different neural circuit affiliations (Beier et al., 2019; Beier et al., 2015; Lammel et al., 2012; Lerner et al., 2015; Menegas et al., 2015; Ogawa et al., 2014; Tian et al., 2016; Watabe-Uchida et al., 2012) and selective task engagement of DA subpopulations in awake behaving rodents (Dautan et al., 2016; de Jong et al., 2019; Duvarci et al., 2018; Gunaydin et al., 2014; Howe and Dombeck, 2016; Keiflin et al., 2019; Lammel et al., 2012; Matthews et al., 2016; Menegas et al., 2018; Menegas et al., 2017; Parker et al., 2016; Patriarchi et al., 2018; Saunders et al., 2018b; Vander Weele et al., 2018; Yang et al., 2018) and non-human primates (Kim et al., 2015a; Matsumoto and Hikosaka, 2009; Matsumoto and Takada, 2013; Ogasawara et al., 2018). Moreover, additional methods complementing classical single unit recordings, including voltammetric and fluorometric measurements of DA release (Dreyer et al., 2016; Hamid et al., 2016; Howe et al., 2013; Kishida et al., 2016; Lippert et al., 2019; Patriarchi et al., 2018) and in vivo calcium imaging of DA axons in distinct striatal areas (Howe and Dombeck, 2016) further support the notion of a multi-layered diversity of the DA system at work (Berke, 2018).\n\nRather than a single global computation, the midbrain DA system has therefore emerged as a parallel processor carrying out multiple functions (Haber, 2014; Kegeles et al., 2010). Support for this concept that distinct DA neuron subtypes carry out different computational processes arose from the mapping of their in vitro cellular properties in combination with retrograde tracing. This showed that projection-identified groups of DA neurons, including those that project to specific subregions of the striatum, have marked differences in intrinsic biophysical properties and input-output relationships (Lammel et al., 2008; Tarfa et al., 2017). However, this idea is somewhat challenged by virally-mediated single DA neuron labelling studies that depicted the extensive arborisation of individual axons often across distinct striatal territories (Aransay et al., 2015; Matsuda et al., 2009).\n\nDistinct DA subpopulations are also differentially affected by pathological processes driving major brain disorders such as Parkinson disease (PD) (Obeso et al., 2017), schizophrenia (McCutcheon et al., 2019) or drug abuse (L\u00fcscher, 2016). In PD, a ventrolateral SN DA population is most severely affected (Damier et al., 1999; Fu et al., 2016; Gibb and Lees, 1991; Kordower et al., 2013), which might be indicative for an innate and/or acquired differential vulnerability towards alpha-synuclein aggregation-mediated neurodegeneration (Surmeier et al., 2017). In schizophrenia, PET-studies in patients strongly suggested an early and selective dysregulation of a DA subpopulation projecting to associative, dorsomedial striatal regions (Kegeles et al., 2010; McCutcheon et al., 2019), but cellular substrates have remained elusive. In models of drug addiction, a hierarchical sequence of DA release in different striatal territories has been identified (Willuhn et al., 2012). In depression models, based on chronic social defeat, selective hyperactivity in mesolimbic-projecting DA subpopulations has been identified as a causal factor in depression-like behaviors using projection-selective optogenetic interventions (Cao et al., 2010; Chaudhury et al., 2013; Tye et al., 2013).\n\nTherefore, there is increasing evidence that the classic triadic decomposition of the midbrain DA system (Bj\u00f6rklund and Dunnett, 2007) into a dorsal mesostriatal, ventral mesolimbic, and cortical prefrontal arm might not be sufficiently granular to capture the functional and pathophysiological diversity of DA neurons. For example, the characteristic high-frequency \u2018burst\u2019 discharge of midbrain DA neurons in vivo is most commonly associated with positive reward prediction error signaling (Cohen et al., 2012; Eshel et al., 2015; Schultz, 2015) (Stauffer et al., 2016; Steinberg et al., 2013), but there is increasing evidence that \u2013 depending on the DA subtype \u2013 burst discharge plays also a role for other functions, including action control (da Silva et al., 2018; Jin and Costa, 2010) and the signaling of salience, novelty, anticipated fear or non-reward prediction errors, even in cells located in the same anatomical region (Kim et al., 2015a; Matsumoto and Hikosaka, 2009; Menegas et al., 2018; Schiemann et al., 2012). Nevertheless, the rapidly progressing dissection of DA controlled neuronal circuits using optogenetic and molecular tracing methods suggests this diversity in behavioral functions is matched to specific anatomical substrates (Beier et al., 2019; Beier et al., 2015; Lammel et al., 2012; Lerner et al., 2015; Menegas et al., 2015; Ogawa et al., 2014; Tian et al., 2016; Watabe-Uchida et al., 2012).\n\nIn order to help closing the current resolution gap between anatomy and physiology, it is therefore crucial to study the functional properties of DA neurons with identified axonal projections in the intact brain to better understand how intrinsic cellular differences and network affiliations jointly compute functional output. Accordingly, we carried out a systematic comparison of baseline in vivo electrical properties of anatomically and immunohistochemically verified midbrain DA neurons with identified axonal projections. Given our previous finding that even the innocuous labelling of DA neurons with GFP can affect their in vivo properties (Schiemann et al., 2012), we also aimed to carefully establish and control an experimental protocol for retrograde tracing that enabled us to register genuine differences of in vivo activity among DA neurons.\n\nWith this approach, we found a number of surprising results. First, we identified an unanticipated functional diversity among SN DA neurons, even among those sharing the same projections, targeting the dorsolateral striatum. However, this diversity followed a clear medial-to-lateral topography. Moreover, DA neurons with distinct axonal projections but overlapping distributions in the midbrain displayed different electrical properties regarding bursting, pausing, and even baseline mean frequencies. Only some of these identified in vivo differences were predicted based on previous studies of diverging intrinsic in vitro properties between distinct DA subpopulations (e.g. rebound delays and pausing) (Evans et al., 2017; Lammel et al., 2008; Tarfa et al., 2017), while other features, like differences in mean firing rates were surprising and indicated that certain neuronal network properties might override intrinsic differences in excitability. Overall, our study provides a refined functional in vivo landscape of the midbrain DA system embedded in an anatomical context of identified axonal projections.\n\n## Results\n\n### Retrograde tracing with highly-diluted (0.002%) fluorogold preserves in vivo electrophysiological properties of nigrostriatal dopamine neurons\n\nOur aim was to characterize the electrophysiological in vivo properties of midbrain DA neurons with defined axonal projections in adult male C57Bl/6N mice. We noticed that the application of a conventional retrograde tracing protocol (2% fluorogold (FG); 500 nl; 50 nl/min; Liu et al., 2003) in the dorsal striatum (DS; bregma: 0.86 mm, lateral: 2.0 mm, ventral: 2.8 mm) resulted in structural damage of nigrostriatal axons already one week after infusion (Figure 1A, column one, FG-0, note reduced TH expression). In contrast, we observed no apparent structural damage using a ten-fold FG-dilution (0.2%, Figure 1A, FG-1, 2nd column from left), but surprisingly failed to detect any stable in vivo spontaneously active DA neurons in the substantia nigra (SN), again one week after infusion (N\u00a0=\u00a03;~10 tracts per animal, intra-nigral speed of electrode advancement 60 \u00b5m/min; coverage 4\u20135 mm Z-depth from skull, data not shown). However, in control animals using the same number of tracts and electrode parameters, we routinely detected between 3\u20136 SN DA neurons per animal (N\u00a0=\u00a012, data not shown).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig1-v2.jpg)\n\n**Figure 1.:** (A) Confocal images of a dilution series of Fluorogold/ACSF injections.\u00a0(Top panel, 1st row) merged images of injections sites (4x magnification) in dorsal striatum with TH in green and FG in blue. (2nd and 3rd row) 10x images of retrogradely traced neurons (FG black in the 2nd row and blue in the 3rd row) in the midbrain (TH green) at bregma \u22123.16 mm (10x magnification). (Bottom panel) Images of retrogradely traced SN DA neurons at higher magnification (60x; FG black in the 1st row and blue in the 3rd row, TH green). Note that 0.002% FG constitutes the lowest detectable concentration. (B) Use of FG-Antibody facilitates identification of FG-labelled neurons after 0.002% FG/ACSF infusion. Note the increased detectability in comparison to the intrinsic FG signal after 0.002% infusion of FG (Figure 1A, column four).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Detection method of intrinsic FG signals.\u00a0The left image shows the TH-mask (TH in green), the right image shows the FG-channel (FG in black), the TH-mask is overlaid on both images in magenta, the four intensity histograms depict the background and single neuron FG-intensity distributions with a dotted line at the threshold of labelling detection. Threshold for detection was set to Thr\u00a0=\u00a0mean background intensity + 2*SD of the mean background. TH-negative nuclei were subtracted from the background. (B) Detection method of immune-FG-signal. The left image shows the TH-mask (TH in green), the middle image shows the FG-channel (FG in black), the intensity histogram displays the FG-intensity distribution of the TH-free background, the right image shows the thresholded FG-channel, the TH-mask is overlaid on all images in magenta. Here, threshold for detection was set to Thr\u00a0=\u00a0mean background intensity + 10*SD of the mean background.\n\nThus, we carried out a systematic dilution series to define a working concentration of FG, which would still result in substantial coverage of retrogradely labelled nigrostriatal DA neurons but at the same time maintain their stable in vivo electrophysiological properties, similar to those observed in control animals. With this strategy, we identified 0.002% FG (FG-3) to be the lowest concentration where a significant proportion (ca. 20\u201330%) of SN DA neurons displayed detectable tracer levels based on intrinsic FG fluorescence (Figure 1A, FG-3, column four; Figure 1\u2014figure supplement 1A, signal to noise 3:1). This rate of detection was further improved by using a FG-antibody (see Materials and methods) combined with a fluorescently-labelled secondary antibody (Figure 1B). The FG-antibody generated very low background in the ventral midbrain (contralateral side) resulting in an improved signal-to-noise ratio (see Figure 1\u2014figure supplement 1B; Signal to noise 10:1). Detailed inspection of the cellular distribution of FG-immunoreactivity within DA neurons revealed selective immunostaining in cytoplasmic vesicles, most likely to be lysosomes (Wessendorf, 1991).\n\nNext, we probed for the in vivo electrophysiological properties of FG-3 retrogradely labelled nigrostriatal DA neurons, one week after infusion, in comparison to those from control animals (Figure 2). All in vivo recorded neurons reported in this study were juxtacellularly labelled with neurobiotin to define their neurochemical nature (i.e. tyrosine hydroxylase (TH)-immunopositive\u00a0=\u00a0dopaminergic) and cellular position in the midbrain with the identification of their respective axonal projection targets, indicated by the FG signal in the labelled neuron. For a sensitive comparison between FG-3-labelled and control DA neurons, we focused on those in the lateral substantia nigra (lSN), given that they are the most vulnerable to cellular damage among midbrain DA neurons (Surmeier et al., 2017). Figure 2 compares the spontaneous in vivo activity of a DA lSN neuron in a control animal (panels B1-B4) with one from a FG-3-labelled DA lSN neuron of a traced mouse (panels C1-C4). Panel C4 displays the neurobiotin and FG-signal demonstrating that this DA lSN neuron projected to the dorsolateral striatum (DLS; bregma: 0.86 mm, lateral: 2.2 mm, ventral: 2.6 mm) and - similarly to the control neuron (panel B4) - was located in the lSN at bregma \u22123.08 mm. Note that discharge frequencies and patterns as well as the single action potential waveforms are very similar between the control (panel B1-B3) and the FG-3-labelled DA neuron (panel C1-C3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Experimental design for FG-labelled DA dataset.\u00a0Control DA neurons were recorded in untreated mice (only \u2018Day 7\u2019). (B1, C1) spontaneous in vivo extracellular single-unit activities of a representative control DA lSN neuron (B) and a representative FG-labelled DLS-projecting DA lSN neuron (C), shown as 10 s of original recording traces (scale bar: 0.2 mV, 1 s). (B2, C2) 30 s raster plots (scale bar: 1 s). (B3, C3) ISI-distributions. Inset, averaged AP waveform showing biphasic extracellular action potentials in high resolution (scale bar: 0.2 mV, 1 ms). (B4, C4) Confocal images of extracellularly recorded and juxtacellularly labelled neurons, the location of the neurons in the lSN at bregma \u22123.08 mm is shown in the bottom right image. Note the similarities in mean frequency, regularity, firing pattern, AP waveform and anatomical location.\n\nFigure 3 summarizes the electrophysiological group data of retrogradely labelled DA lSN neurons compared to DA controls in the same regions. The completely overlapping cellular positions of these two groups are depicted in Figure 3A. The inset shows the representative FG-injection site in the DLS. In line with the examples shown in Figure 2, quantitative analysis of firing frequency (means\u00a0\u00b1\u00a0SEMs; control: 3.51\u00a0\u00b1\u00a00.41 Hz, FG: 3.51\u00a0\u00b1\u00a00.4 Hz; panel 3B), regularity (CV; control: 62.92 \u00b1 7.55%, FG: 58.84 \u00b1 7.29%; panel 3B) and quantitative descriptors of ISI-distribution patterns (kurtosis (control: 4.1\u00a0\u00b1\u00a00.73, FG: 3.69\u00a0\u00b1\u00a00.69), skewness (control: 0.98\u00a0\u00b1\u00a00.18, FG: 0.88\u00a0\u00b1\u00a00.16) and a firing pattern categorization based on a theoretical model called GLO (see Materials\u00a0and\u00a0methods), panel 3B) did not reveal any significant differences between the two populations. In addition, AP waveforms (AP duration (control: 2.04\u00a0\u00b1\u00a00.06 ms, FG: 1.94\u00a0\u00b1\u00a00.08 ms), relative AP trough (control: \u22120.63\u00a0\u00b1\u00a00.02, FG: \u22120.55\u00a0\u00b1\u00a00.04); panel 3C), burst and pause properties were also unaffected (SFB (control: 11.93 \u00b1 4.18%, FG: 9.42 \u00b1 3.57%), SFB contingency (% of neurons\u00a0>\u00a05% SFB; control: 37.5%, FG: 40%), bursts per minute (control: 7.67\u00a0\u00b1\u00a02.8, FG: 6.28\u00a0\u00b1\u00a02.24), intraburst-frequency (control: 21.37\u00a0\u00b1\u00a05.74 Hz, FG: 18.94\u00a0\u00b1\u00a01.72 Hz); panels 3E and 3F; pauses per minute (control: 0.93\u00a0\u00b1\u00a00.88, FG: 2.05\u00a0\u00b1\u00a01.26), pause duration (control: 0.88\u00a0\u00b1\u00a00.25 s, FG: 0.7\u00a0\u00b1\u00a00.13 s); panel 3D; see Figure 3\u2014figure supplement 1 for additional variables and their regional distributions). In summary, retrograde tracing with 1000-fold diluted FG did not perturb any in vivo electrophysiological property of DA lSN neurons. We assumed that less vulnerable DA populations residing in the medial SN and VTA are also likely to be unaffected by our FG labelling protocol. This in turn enabled us to compare authentic electrophysiological properties of DA midbrain subpopulations with defined axonal projections.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig3-v2.jpg)\n\n**Figure 3.:** (A) Anatomical mapping of all extracellularly recorded and juxtacellularly labelled neurons (projected to bregma \u22123.16 mm; control in black, FG-labelled in green).\u00a0Note the anatomical overlap of recorded DA populations in the lSN. Inset, FG-injection site in DLS (FG in blue, TH in green). (B\u2013F) Scatter dot-plots (line at median) showing no significant differences in firing frequency (Hz), coefficient of variation (%), kurtosis and skewness of the ISI-distributions, GLO-based firing pattern (all B), normalized AP waveform, AP duration (ms), relative AP trough (all C), pauses per minute, pause duration (s) (both D), SFB (%), SFB contingency (% of neurons > and < 5% SFB) (both E), bursts per minute, intraburst-frequency (Hz) (both F).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A1\u2013P1) Scatter dot-plots (line at median) and bar graphs showing no significant differences in various parameters of firing.\u00a0(A2\u2013P2) Feature maps of respective parameters.\n\n### Dorsal and ventral striatal-projecting DA neurons intermix in the medial substantia nigra\n\nBased on our previous work (Lammel et al., 2008) that demonstrated axonal-projection-related differences in in vitro electrophysiological properties of midbrain DA neurons, we selectively traced axonal target areas in the dorsolateral (DLS; bregma: 0.86 mm, lateral: 2.2 mm, ventral: 2.6 mm) and dorsomedial striatum (DMS; bregma: 0.74 mm, lateral: 1.4 mm, ventral: 2.6 mm) as well as in the lateral (lNAcc; bregma: 0.86 mm, lateral: 1.75 mm, ventral: 4.5 mm) and medial shell (mNAcc; bregma: 1.54 mm, lateral: 0.7 mm, ventral: 4.25 mm) of the nucleus accumbens (Figure 4A1\u2013D1; n\u00a0=\u00a03 animals each). One week after infusion, we mapped the respective striatal infusion sites (Figure 4\u2014figure supplement 3) and the cellular distributions of TH+ (i.e. dopaminergic) neurons characterized by these four different projections (Figure 4A2\u2013D2). The overall topographic patterns of cellular distributions (see Figure 4\u2014figure supplement 1) was in accordance with those from previous work using retrobeads (Lammel et al., 2008) or retrograde viral tracers (Lerner et al., 2015). We also combined the tracing with additional calbindin immunohistochemistry, which confirmed the well-known calbindin-TH coexpression pattern but did not facilitate differentiating between different axonal projections (Figure 4\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig4-v2.jpg)\n\n**Figure 4.:** (A1\u2013D1) Injection sites for fluorescent tracing experiments injecting FG into the DLS (A1; bregma +0.86 mm), DMS (B1; bregma +0.74 mm), lNAcc (C1; bregma +0.86 mm), mNacc (D1; bregma +1.54 mm).\u00a0(Left images) merged TH-(green) and FG-(blue) signals. (Right images) FG mono. (A2\u2013D2) locations of retrogradely traced DA neurons (accumulated from n\u00a0=\u00a03 animals) at a rostral (\u22123.16 mm) and a caudal (\u22123.64 mm) midbrain section, shown as colored heat maps. DLS-projecting DA neurons (A2) are shown in green, DMS-projecting DA neurons (B2) in cyan, lNAcc-projecting DA neurons (C2) in magenta, mNAcc-projecting DA neurons (D2) in orange. The border between lSN and mSN is indicated with a yellow dotted line. Note that DLS-projecting DA neurons are located throughout the mediolateral extent of the SN (A2) and that the mSN is a substantial midbrain source area for three mayor projection-defined systems (A2\u2013C2). (E1) Local cell population matrix (%, average of three animals). Note that the lSN, PBP, PN and IF are populated mainly by one projection-defined population each (lSN - DLS, PBP - lNAcc, PN and IF - mNAcc). However, the mSN is a region of overlap of DLS-, DMS- and lNAcc- projecting DA neurons. (F1) Projection population matrix (%, average of three animals). Note that the DLS receives dopaminergic input from both SN source areas (lSN and mSN). On the other side, DMS mainly receives input from the mSN, lNAcc from PBP, mNAcc from PN. (E2) Shared sources and distinct targets. The mSN is a region of overlap of three different projection target-defined systems (DLS, DMS and lNAcc). The VTA harbors both the mNAcc and lNAcc projection system. (F2) Distinct sources and shared target. The DLS receives dopaminergic input from two distinct midbrain source areas (lSN and mSN).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Serial reconstruction of retrogradely traced DA neurons across the caudorostral extent of the midbrain reveals anatomical position of DA neurons projecting to DLS (green), DMS (cyan), lNAcc (magenta) and mNAcc (orange), shown as colored heat maps from rostral (bregma \u22122.80 mm) to caudal (bregma \u22124.16 mm).\u00a0Note the high degree of overlap in the mSN. (B) Absolute distribution of retrogradely labelled DA neurons between the different caudorostral levels for each projection-defined system (numbers of neurons accumulated from three animals for each group), shown as stacked bar graphs with color-coding for distinct midbrain source areas. (C) Cumulative numbers of retrogradely labelled neurons (n\u00a0=\u00a03 animals) in distinct midbrain areas for each projection-defined DA system, shown as bar graphs. (D) Cumulative numbers of retrogradely traced populations in a distinct midbrain area (average of 3 animals\u00a0\u00b1\u00a0SEM). Note the heterogeneous population in the mSN in contrast to more homogene populations in lSN, PBP, PN and IF. Data is given as mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Confocal 20x images of retrogradely FG-traced midbrain DA neurons (injection site: lNAcc) costained for TH (green), FG (white) and CB (red).\u00a0Note the intermingling of CB-positive and CB-negative neurons in the VTA and mSN. (B) Higher magnification (60x, 2.5 zoom) confocal images of retrogradely traced DA neurons (same section as in (A)) costained for TH (green), FG (white) and CB (red). Note the variety of TH-, FG- and CB-costaining: The circumflex (^) shows a TH- and FG-positve but CB-negative neuron. The circle (\u00b0) displays a TH-positive but FG- and CB-negative neurons. The number sign (#) presents a TH- and CB-positive but FG-negative neuron. Finally, the star (*) represents a TH-, FG- and CB-positive neuron. (C) Accumulated numbers of retrogradely FG-labelled and CB-positive DA neurons (n\u00a0=\u00a03 animals) for each projection-defined DA system through the caudorostral axis, shown as stacked bar graphs with color-coding for distinct midbrain source areas. Note the gradient of CB-expression: from low to high: DLS-DMS-lNAcc-mNAcc. Also, note the gradient on the caudorostral axis. Most CB-expressing neurons are located in the intermediate midbrain (bregma \u22123.52,\u20133.4, \u22123.28 mm). CB-expression levels decrease at more caudal and more rostral midbrain areas. (D) Comparison of CB-expression levels of different projection-defined DA systems. (Top graph) Accumulated numbers of retrogradely FG-labelled CB-positive DA neurons for distinct color-coded midbrain areas. (Bottom graph) Percentages of CB-positive FG-labelled DA neurons out of all FG-labelled DA neurons in distinct color-coded midbrain areas. Note that CB-expression levels for DMS- and lNAcc-projecting neurons are different overall, but similar in the mSN.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A\u2013D) Monochromatic (FG) images of infusion sites for DLS (A), DMS (B), lNAcc (C) and mNAcc (D), given as five examples, each outlining detectable FG with overlay of corresponding stereotactic maps.\u00a0Red crosses indicate respective target coordinates for stereotactically-guided infusion. Scale bar\u00a0=\u00a01 mm.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A\u2013C) Frequency (Hz), SFB (%) and CV (%) of individual neurons plotted against isoflurane concentrations during respective recordings.\u00a0Note the absence of significant correlations between functional neuronal properties and isoflurane concentrations. (D\u2013F) Scatter dot-plots (line at median) comparing mean frequency, spikes fired in bursts and coefficient of variation between distinct projection-defined mSN/VTA DA neurons recorded under isoflurane anesthesia and pharmacologically identified mSN/VTA DA neurons recorded in awake, behaving animals in the homecage (dataset from Duvarci et al., 2018). (G\u2013H) Cortical LFP recordings during low (breathing rate\u00a0>2 Hz) (G) and deep (breathing rate 1\u20132 Hz) (H) anesthesia (G1, H1 \u2013 one minute; G2, H2 \u2013 5 s).\n\nOur data revealed a high complexity within the medial SN, where DA cell bodies of three distinct, equally prevalent axonal projections intermingled (mSN;~30% DLS,~40% DMS,~30% lNAcc). By contrast, in the two neighboring regions, the lSN and the lateral VTA (parabrachial pigmented nucleus (PBP), paranigral nucleus (PN)), only one axonal projection was dominant (~70% DLS-projecting DA neurons in the lSN;~60% lNAcc in the PBP,~70% mNAcc in the PN). These tracing results implied that just obtaining precise information on the cellular localization (SOURCE) of recorded DA neurons via juxtacellular labelling, in particular in the mSN, would be insufficient to capture the in vivo functional diversity of the DA system.\n\nWe then asked whether DA neurons from the same midbrain area (SOURCE) but with distinct axonal projections (TARGETS) displayed different in vivo electrophysiological properties (Figure 4E2 \u2013 shared SOURCE and distinct TARGETS). We also compared DA neurons in the mSN with those in the lSN (SOURCES) that both projected to the same TARGET region, the dorsolateral striatum (Figure 4F2). Indeed, only the dorsolateral striatum, in contrast to dorsomedial and ventral striatum, received two equally prominent axonal projections from the mSN and the lSN (Figure 4F2).\n\nIn order to quantify the potential degree of overlap between neighboring axonal projections of the DA system, we carried out double-labelling retrograde tracing experiments combining fluorogold and red bead infusions at distinct striatal sites. In accordance to our previous study (Lammel et al., 2008), we found only a small percentage, varying between 4\u201314%, of double-labelled DA neurons (Figure 5B). This enabled us to meaningfully compare the in vivo physiological properties of largely parallel, non-overlapping DA projections. These recordings were carried out under well-controlled isoflurane anesthesia, which was continuously titrated to result in a spontaneous breathing rate between 1\u20132 Hz. This approach was very stable across animals (>70% of animals, the isoflurane concentration was 1.2% in 100% O2, flow rate 350 ml/min) and the small variations in isoflurane concentrations in the range between 1\u20132% did not correlate with differences in firing frequencies or patterns in any of the studied DA projections (see Figure 4\u2014figure supplement 4A\u2013C). Moreover, during anesthesia, under the conditions stated above, oscillatory cortical activity, observed under lighter isoflurane anesthesia, was largely suppressed (see see Figure 4\u2014figure supplement 4G and H). In addition, we found that firing frequencies and patterns of mSN/VTA were comparable to those in corresponding DA neurons recorded previously in freely moving, awake mice in the homecage (for detailed comparison, see Figure 4\u2014figure supplement 4D\u2013F). In essence, these controls enabled us to reliably identify meaningful, different functional in vivo properties between largely parallel and distinct DA projections.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig5-v2.jpg)\n\n**Figure 5.:** (A) Infusion sites in green nissl counterstained 100 \u03bcm sections of double retrograde tracing experiments using fluorogold (blue) for mNAcc (A1), lNAcc (A2) and DMS (A3) and red fluorescently labelled latex beads (red) for lNAcc (A1) and DLS (A2 and A3).\u00a0Arrowheads indicate the respective infusion sites. (B) Distribution of single-labelled and double-labelled DA neurons for each double tracing experiment (single-labelled in grey, double-labelled in magenta). Numbers indicate accumulated total numbers of neurons counted (first row, N\u00a0=\u00a03 per group), as well as those in caudal sections (\u22123.64 mm from bregma; second row), intermediate sections (\u22123.28 mm from bregma; third row) and rostral sections (\u22123.08 mm from bregma; fourth row). (C) Confocal images of TH-positive (green) cells in the m-SN labelled with fluorogold (blue) for lNAcc neurons and red beads (red) for DLS neurons. (C1) Example of two neighboring single-labelled neurons. (C2) Example of a double labelled neuron.\n\n### Low in vivo burstiness in medial compared to lateral DLS-projecting SN DA neurons\n\nWe recorded, labelled and identified DLS-projecting DA neurons in the mSN as well as in the lSN. Figure 6 compares the electrophysiological properties of two DLS-projecting DA neurons localized in the lSN (Figure 6A1\u2013A4, C) and mSN (Figure 6B1\u2013B4, C), respectively. The original 10 s sample recording traces, the 30 s raster plots and the two ISI histograms indicate that the depicted DLS-lSN DA neuron discharged in a highly bursty pattern, which was completely absent in the regularly discharging DLS-mSN DA neuron. Importantly, while about 40% of DLS-projecting DA neurons in the lSN (n\u00a0=\u00a06 of 15) displayed this type of robust bursting (SFB\u00a0>5%) throughout the recording period, none of the identified DLS-projecting DA neurons located in the mSN (n\u00a0=\u00a00 of 9) fired in this bursty manner (Figure 6D). Comparison of the cumulative probability distributions of burstiness (percentage of spikes fired in bursts; SFB%) between the two DLS-projecting SN DA populations confirmed their differences in firing pattern. In contrast, detailed analysis of other electrophysiological parameters between the two DLS-projecting SN DA neurons detected no further differences (see Figure 6\u2014figure supplement 1). We then identified the best subset of electrophysiological parameters in a linear discriminant analysis (LDA) using half of the data from the two DLS-projecting SN DA populations. Using the variables burstiness (SFB), relative AP trough and precision of spiking (log(\u03c32)), we could accurately classify the remaining DLS-projecting SN DA neurons into a lateral and medial group with a predictive power of 79.2% (p<0.05). When using the entire data set to train the linear classifier, almost all (92.6%) of DLS-projecting SN DA neurons were classified correctly (Figure 6E). In summary, our data demonstrated that SN DA neurons projecting to the DLS possess distinct bursting properties in vivo depending on where they are located within the SN. We therefore identified a topographically organized (i.e. medial vs lateral) in vivo diversity among SN DA neurons sharing the same axonal projections to dorsolateral striatum.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig6-v2.jpg)\n\n**Figure 6.:** (A1, B1) Spontaneous in vivo extracellular single-unit activities of a representative DLS-projecting DA neuron located in the lSN (A1) and a representative DLS-projecting DA neuron located in the mSN (B1), shown as 10 s of original recording traces (scale bar: 0.2 mV, 1 s).\u00a0Note the differences in burstiness. (A2, B2) 30 s raster plots (scale bar: 1 s). (A3, B3) ISI-distributions. Note the presence of ISIs below 80 ms and 160 ms indicating bursts in A3 in contrast to B3. Inset, averaged AP waveform showing biphasic extracellular action potentials in high resolution (scale bar: 0.2 mV, 1 ms). (A4, B4) Confocal images of retrogradely traced, extracellularly recorded and juxtacellularly labelled DA neurons, the location of the neurons is displayed in the bottom right images. (C) Anatomical mapping of all extracellularly recorded and juxtacellularly labelled neurons (projected to bregma \u22123.16 mm; DLS-lSN in green, DLS-mSN in red). Inset, FG-injection site in DLS (FG in blue, TH in green). (D) Cumulative SFB distribution histograms (dotted line at SFB\u00a0=\u00a05% threshold) and bar graphs of SFB contingencies (% of neurons > and < 5% SFB) showing significant differences in burstiness. Note that no DLS-projecting DA neurons located in the mSN displayed a SFB above 5%. (E) Linear discriminant analysis of DLS-projecting DA neurons located either in the mSN or lSN. (Right Picture) Mapping of correctly- vs incorrectly-classified DLS-projecting DA neurons located in mSN or lSN.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A1\u2013P1) Scatter dot-plots (line at median) and bar graphs showing significant differences selectively in SFB contingency (% of >and < 5%). (A2\u2013P2) Feature maps of respective parameters.\n\n### Functional segregation of in vivo electrophysiological properties along distinct axonal projections of DA neurons in the medial substantia nigra\n\nAs described above (Figure 4), retrograde tracing revealed that the mSN harbors equal proportions of DA neurons projecting to dorsolateral, dorsomedial or ventral striatum (i.e. lateral shell of nucleus accumbens). We asked whether DA mSN neurons with distinct axonal projections also display systematic functional differences in vivo. We first compared the in vivo electrophysiology of mSN DA neurons projecting to DLS (n\u00a0=\u00a09) with those projecting to DMS (n\u00a0=\u00a09). Here, we found no differences between any parameters of these two mSN DA populations projecting to different territories of the dorsal striatum (Figure 7\u2014figure supplement 1). Accordingly, the linear discriminant analysis (LDA) based on the best set of parameters (CV, SFB, skewness of the ISI-distribution, pauses per minute, the mean oscillation period (GLO) and the relative AP trough) did not perform above chance (50.9%) in discriminating DLS- from DMS-projecting DA neurons in the medial SN. We conclude that DA neurons localized in the medial SN (SOURCE) and projecting to different dorsal striatal areas (DMS/DLS, TARGETS) did not show significant differences in their in vivo electrophysiological baseline properties. Consequently, they were pooled (DS) for functional comparison with ventral projecting mSN DA neurons.\n\nFigure 7 compares the electrophysiological properties of two DA neurons in the mSN, projecting either to dorsal striatum (DS) or ventral striatum (i.e. lateral shell of nucleus accumbens, lNAcc). The 10 s recording traces, 30 s raster plots and the two ISI histograms show obvious functional differences (panels 7A and 7B). Apart from mean frequencies and AP waveforms, which were similar, most electrophysiological parameters describing the patterns of discharge including bursts (Figure 7D) but also pauses (Figure 7E), as well as the shapes of the ISI-distributions (Kurtosis, Skewness; Figure 7F) were significantly different between dorsal (n\u00a0=\u00a018) and ventral (n\u00a0=\u00a014) striatum projecting mSN DA neurons (Figure 7\u2014figure supplement 2). The linear discriminant analysis (LDA) based on the best set of parameters (skewness of the ISI-distribution, AP duration, relative AP trough and the precision of spiking (log(\u03c32)) showed a strong trend to classify mSN DA neurons into dorsal or ventral striatum projecting cells with a predictive power of 70.8%, when using half of the data set for training (p<0.07). When the entire data set was used, 84.4% of mSN DA neurons were classified correctly (Figure 7G). Furthermore, a functional comparison of lateral shell NAcc-projecting (TARGET) DA neurons localized in the mSN compared to those positioned in the VTA (SOURCES), the classical location of mesolimbic DA neurons, revealed no significant differences (see Figure 7\u2014figure supplement 3) between the groups, violating the VTA/SN anatomical boundary. Therefore, lateral shell NAcc-projecting DA neurons from both mSN and VTA were pooled for further comparisons.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig7-v2.jpg)\n\n**Figure 7.:** (A1, B1) Spontaneous in vivo extracellular single-unit activities of a representative DS-projecting DA neuron located in the mSN (A1) and a representative lNAcc-projecting DA neuron located in the mSN (B1), shown as 10 s of original recording traces (scale bar: 0.2 mV, 1 s). Note the differences in bursting. (A2, B2) 30 s raster plots (scale bar: 1 s). (A3, B3) ISI-distributions. Note the presence of ISIs below 80 ms and 160 ms indicating bursts in B3 in contrast to A3. Inset, averaged AP waveform showing biphasic extracellular action potentials in high resolution (scale bar: 0.2 mV, 1 ms). (A4, B4) Confocal images of retrogradely traced, extracellularly recorded and juxtacellularly labelled DA neurons, the location of the neurons is displayed in the bottom right images. (C) Anatomical mapping of all retrogradely traced, extracellularly recorded and juxtacellularly labelled neurons (projected to bregma \u22123.16 mm; DS-lSN in blue, lNAcc-mSN in magenta). Inset, FG-injection sites in DMS, DLS and lNAcc (FG in blue, TH in green). (D) Cumulative SFB distribution histograms (dotted line at SFB\u00a0=\u00a05% threshold) and bar graphs of SFB contingencies (% of neurons > and < 5% SFB) showing significant differences in burstiness. (E) Cumulative distribution histograms and bar graphs of pauses per minute showing significant differences. (F) Scatter dot-plots showing significant differences in kurtosis and skewness of the ISI-distributions. (G) Linear discriminant analysis of DA mSN neurons projecting either to DLS/DMS or lNAcc. 70.8% of neurons were classified correctly based on skewness of the ISI-distribution, AP duration, repolarization speed and the precision of spiking (log(\u03c32)) when randomly bisecting the data 1000 times. When the whole data set was used, 84.4% of neurons were classified correctly. (Right Picture) Mapping of correctly- vs incorrectly-classified DA mSN neurons projecting to DS or lNAcc.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Anatomical mapping of all extracellularly recorded and juxtacellularly labelled neurons (projected to bregma \u22123.16 mm; DLS in red, DMS in cyan).\u00a0Inset, FG-injection sites in the DLS and DMS (FG in blue, TH in green). (B\u2013F) Scatter dot-plots and bar graphs (line at median) showing no significant differences in firing frequency (Hz), coefficient of variation (%), kurtosis and skewness of the ISI-distributions, GLO-based firing pattern (all B), normalized AP waveform, AP duration (ms), relative AP trough (all C), pauses per minute, pause duration (s) (both D), SFB (%), SFB contingency (% of neurons > and < 5% SFB) (both E), bursts per minute, intraburst-frequency (Hz) (both F).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A1\u2013P1) Scatter dot-plots (line at median) and bar graphs showing significant differences in kurtosis, skewness, SFB (%), SFB contingency (% of >and < 5%), bursts per minute, pauses per minute.\u00a0(A2\u2013P2) Feature maps of respective parameters.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A) Anatomical mapping of all extracellularly recorded and juxtacellularly labelled neurons (projected to bregma \u22123.16 mm; mSN in magenta, VTA in brown).\u00a0Inset, FG-injection site in the DLS (FG in blue, TH in green). (B\u2013F) Scatter dot-plots (line at median) and bar graphs showing no significant differences in firing frequency(Hz), coefficient of variation (%), kurtosis and skewness of the ISI-distributions, GLO-based firing pattern (all B), normalized AP waveform, AP duration (ms), relative AP trough (all C), pauses per minute, pause duration (s) (both D), SFB (%), SFB contingency (% of neurons > and < 5% SFB) (both E), bursts per minute, intraburst-frequency (Hz) (both F).\n\n### DA neurons projecting to medial or lateral shell of the nucleus accumbens display distinct in vivo mean firing rates\n\nWe next asked whether distinct ventral striatal-projecting populations (i.e. lateral shell NAcc vs medial shell NAcc-projecting neurons) also show functional differences in vivo, given that these two populations displayed very distinct electrophysiological properties in vitro (Lammel et al., 2008). Figure 8 compares the electrophysiological properties of two DA neurons in the VTA, projecting either to lateral shell (lNAcc) or medial shell (mNAcc) of nucleus accumbens. The 10 s recording traces, 30 s raster plots and the two ISI histograms display selective differences in mean discharge frequency and the duration of pauses only (Figure 8A and B), which are also evident at the population level (Figure 8D). In contrast, all other functional in vivo properties \u2013 including analyzed AP waveform parameters - did not differ between the two populations (see Figure 8\u2014figure supplement 1). In light of the previous in vitro data, where medial shell NAcc-projecting DA neurons showed higher firing rates compared to lateral shell NAcc DA neurons, our in vivo results are surprising. In contrast, the longer in vivo pauses observed in medial shell NAcc projecting VTA DA neurons are in line with their very long in vitro post-inhibition rebound delays. Note that none of the subsets of variables used for linear discriminant analysis showed a segregation of these two mesolimbic DA populations above chance level.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig8-v2.jpg)\n\n**Figure 8.:** (A1, B1) Spontaneous in vivo extracellular single-unit activities of a representative lNAcc-projecting DA neuron located in the mSN (A1) and a representative mNAcc-projecting DA neuron located in the VTA (B1), shown as 10 s of original recording traces (scale bar: 0.2 mV, 1 s).\u00a0Note the differences in firing frequency. (A2, B2) 30 s raster plots (scale bar: 1 s). Blue lines indicate pauses. Note the differences in pause duration. (A3, B3) ISI-distributions. Note the differences in overall shape and maximal ISIs. Inset, averaged AP waveform showing biphasic extracellular action potentials in high resolution (scale bar: 0.2 mV, 1 ms). (A4, B4) Confocal images of retrogradely traced, extracellularly recorded and juxtacellularly labelled DA neurons, the location of the neurons is displayed in the bottom right images. (C) Anatomical mapping of all extracellularly recorded and juxtacellularly labelled neurons (projected to bregma \u22123.16 mm; lNAcc in magenta, mNAcc in orange). Insert, FG-injection sites in lNAcc and mNAcc (FG in blue, TH in green). (D) Scatter dot-plots (line at median) showing significant differences in firing frequency (Hz) and pause duration (s).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A1\u2013P1) Scatter dot-plots (line at median) and bar graphs showing significant differences in firing frequency (Hz) and pause duration (s) (A2\u2013P2) Feature maps of respective parameters.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) (Top panel) FG-injection sites (0.002%, 2 \u00d7 1 \u03bcl, 50 nl/min) in PrL (bregma: 1.98 mm, lateral: 0.3 mm, ventral: 1.5 mm) and IL (bregma: 1.98 mm, lateral: 0.3 mm, ventral:2.1 mm) nucleus.\u00a0(bottom panel) Retrogradely FG-labelled neurons in VTA and SN (B) Anatomical mapping of all extracellularly recorded and juxtacellularly labelled neurons in mPFC-traced mice (open red circle: TH+/FG+, open blue circle: TH+/FG-, filled blue circle: TH-) (C1\u2013C4) In vivo extracellular activity of the single mPFC-projecting midbrain DA neuron recorded, shown as 10 s of original recording traces (C1; scale bar: 0.2 mV, 1 s) and 30 s raster plots (C2; scale bar: 1 s). (C3) ISI-distributions. Inset, averaged AP waveform showing biphasic extracellular action potential in high resolution (scale bar: 0.2 mV, 1 ms). (C4) Confocal images of extracellularly recorded and juxtacellularly labelled neuron, the location of the neuron at bregma \u22123.28 mm is shown in the bottom right image.\n\nFinally, we attempted to apply our approach to DA neurons projecting to medial prefrontal cortex (mPFC). While we succeeded in labelling and anatomically mapping this sparse DA subpopulation with our FG-3-protocol, the success rate of identifying and labelling spontaneously active mPFC-projecting DA neurons was not sufficient (ca. 10%) to carry out a systematic study (Figure 8\u2014figure supplement 2; 1 of 10 recorded and labelled VTA neurons was identified to be dopaminergic and projecting to mPFC). As our method depends on spontaneous in vivo activity, prefrontal-projecting DA neuron might have to be targeted in awake animals.\n\n## Discussion\n\nOur study refines the functional in vivo topography of midbrain DA neurons in several ways. We provide the first detailed description and anatomical mapping of axon projection-specific functional DA phenotypes in vivo. Importantly, all n\u00a0=\u00a0102 DA neurons in this study were labelled and immunohistochemically identified, thus avoiding the uncertainties of \u2018putative\u2019 DA populations. Moreover, our study controlled for functional perturbations by retrograde labelling itself, based on our high-dilution fluorogold protocol. In comparison to our previous work characterizing the in vitro properties of DA neurons with distinct axonal projections (Lammel et al., 2008), we found a number of unexpected results in vivo. We did not anticipate the large degree of functional diversity regarding burst firing among those SN DA neurons projecting to dorsolateral striatum. Furthermore, we were surprised to find in vivo bursting of DA neurons in the medial SN to be exclusively associated with cells projecting to lateral shell of nucleus accumbens. Finally, the difference in mean firing rates between slower-discharging DA neurons projecting to medial shell and faster-firing DA neurons projecting to lateral shell of nucleus accumbens was unexpected given their respective intrinsic excitabilities. Overall, our findings provide a refined functional definition of distinct DA projections in the intact brain.\n\nOur study has a number of limitations. Importantly, all in vivo electrophysiological data were recorded under isoflurane anesthesia. Therefore, we cannot directly draw conclusions about behaviorally relevant activity patterns in DA subpopulations but rather identify differences in in vivo baseline excitability. We have previously shown that some of these differences are associated with altered behaviour, as in the case of burst firing in the medial SN and novelty-induced locomotion (Schiemann et al., 2012). In addition, we also showed that differences in in vivo firing rates between VTA DA neurons identified under isoflurane anesthesia in a mouse model of cognitive impairment (Krabbe et al., 2015), were recapitulated in awake behaving animals (Duvarci et al., 2018). However, the task-related differences in firing were only revealed in awake behaving animals (Duvarci et al., 2018). A second limitation is that we tried but did not succeed in getting more than an anecdotal data set of medial prefrontal projecting DA neurons. The unique mismatch between the extent of retrograde labelling and the difficulty of identifying and recording mesocortical DA neurons in vivo indicated that this DA subpopulation might either be particularly vulnerable to our labelling protocol or mostly silent under isoflurane anesthesia. The latter possibility is not unlikely given the evidence for orexinergic modulation of mesocortical DA neurons (Del Cid-Pellitero and Garz\u00f3n, 2014). Furthermore, our study focused on rostral striatal areas not covering the caudal \u2018tail\u2019 region, which is a projection area of DA neurons located in the SN pars lateralis. This DA projection has been shown to be involved in the computing of aversive stimuli and stable visual memories in rodents and non-human primates (Kim et al., 2017; Kim et al., 2015a; Matsumoto and Hikosaka, 2009; Menegas et al., 2018; Menegas et al., 2015).\n\nOur study has a number of specific implications for future work. Given that labelling of DA subpopulations \u2013 for identification and/or optogenetic manipulation \u2013 has become an essential tool, we believe it is crucial to control whether the labelling itself will change functional properties of the targeted neurons in vivo. In addition to the effect of conventional concentrations of fluorogold, we have previously shown that virally-mediated GFP-expression in SN DA neurons leads to robust changes in their intrinsic firing pattern (Schiemann et al., 2012). We currently do not know how general these perturbations of in vivo activity of DA neurons are, regarding the type of label, its concentration and post-injection timing.\n\nAnother notable result of our study is the large difference in burstiness between dorsolateral striatum projecting DA neurons in the medial compared to the lateral SN. While the underlying mechanisms need to be resolved, our findings are in line with a previous study from the Khaliq lab that found differences in in vitro excitability, including T-type calcium channel mediated rebound excitability, between calbindin-positive and calbindin-negative SN DA neurons (Evans et al., 2017). Also, Lerner and colleagues demonstrated larger HCN-currents in DLS-projecting SN DA neurons compared to DMS-projecting SN DA neurons, which might further enhance rebound excitability and possibly in vivo bursting (Lerner et al., 2015). In addition to the functional implications for nigrostriatal signaling, the enhanced burst excitability might also be of pathophysiological relevance. An influential hypothesis regarding the differential vulnerability between distinct DA subpopulations in Parkinson disease proposes that different degrees of activity-dependent calcium loading might play a crucial role for selective neurodegeneration (Surmeier et al., 2017). Given that the lateral SN is the most vulnerable DA region in PD (Damier et al., 1999; Gibb and Lees, 1991), we believe that the high in vivo burstiness of lateral SN DA neurons might be an attractive new target for protective intervention.\n\nIn contrast, we were surprised to find that mSN DA neurons projecting to dorsal striatum virtually showed no in vivo burst firing. This implies that K-ATP channel dependent burst mechanisms, which we previously identified to be selective for the medial SN (Schiemann et al., 2012), might be operative in lateral shell-projecting rather than dorsal striatum-projecting DA neurons in this region. The mechanism for this region-specific absence of bursting are currently unknown but might be highly relevant given that selective dysregulation in DA projections to dorsomedial striatum has been associated with schizophrenia (Kegeles et al., 2010; McCutcheon et al., 2019). While cue- and reward-triggered burst discharge has been well characterized, the function of on-going burst \u2018states\u2019 is less clear in the DA system. However, we and others have recently shown that DA neurons become phase-locked to prefrontal 4 Hz rhythms during working memory tasks, which might also result in rhythmic bursting (Duvarci et al., 2018; Fujisawa and Buzs\u00e1ki, 2011).\n\nFinally, our study gives further support to the idea that mesolimbic DA neurons projecting to medial versus lateral shell of accumbens constitute two parallel pathways. Recent studies highlighted the differential functional roles of these DA projections, as well as their distinct circuit affiliations (de Jong et al., 2019; Lammel et al., 2012; Yang et al., 2018). Our firing frequency data suggest that these two DA projections operate at different baseline excitation/inhibition (E/I) setpoints in vivo. In particular, medial shell projecting DA neurons, which displayed high intrinsic excitability associated with sustained high frequency firing in vitro (Lammel et al., 2008), discharged in vivo at a lower rate, which might be indicative for a higher degree of tonic net inhibition. Based on the systematic firing differences between these two mesolimbic DA subpopulations, that intermingle mainly within the VTA, it will crucial for future work in awake animals to disentangle them.\n\nIn summary, we have provided a refined source-target functional in vivo topography of midbrain DA neurons (Figure 9), which we believe will facilitate our understanding of dopamine neuron diversity in health and disease.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/48408/elife-48408-fig9-v2.jpg)\n\n**Figure 9.:** (A) Diagram of the organization of distinct midbrain DA subtypes defined by their source-target topography.\u00a0Single midbrain source areas and striatal target areas are colored individually (midbrain: lSN red, mSN yellow, PBP brown, PN light green; striatum: DLS green, DMS cyan, lNAcc magenta, mNAcc orange). Distinct subtypes are illustrated with a circle in the midbrain source area and an arrow to the projection target area. (B) Comparisons of in vivo activities of distinct source-target topography defined DA subtypes.\n\n## Materials and methods\n\n### Mice\n\nMale C57Bl6/N mice (Charles River Laboratories; RRID: IMSR_CRL:027) were used for the study. Mice were between 11\u201316 weeks old, group-housed and maintained on a 12 hr light-dark cycle. All experiments and procedures involving mice were approved by the German Regierungspr\u00e4sidium Darmstadt (V54-19c20/15-F40/28). In total, 108 mice were used for this study. Of these 108 mice, five mice were used for the FG dilution series (Figure 1), 12 were used for the mapping and anatomical quantification of projection-defined DA neuron subtypes (Figure 4), 12 were used for double-tracing experiments (Figure 5). For recording experiments, 79 mice were used. 12 of these for recordings in control mice, 17 for recordings in mice infused with FG in DLS, seven for recordings in DMS-infused mice, 18 for recordings in lNAcc-infused mice, 15 for recordings in mNAcc-infused mice and seven for recordings in mPFC-infused mice.\n\n### Retrograde tracing\n\nMice were anesthetized using isoflurane (AbbVie, North Chicago, USA; induction 3.5%, maintenance 0.8\u20131.4% in O2, 0.35 l/min) and placed in a stereotaxic frame (Kopf, Tujunga, CA, USA). Eye cream (Vidisic, Dr Mann Pharma, Berlin, Germany) was applied on the eyes to prevent dehydration of the cornea. Lidocaine gel (Astra Zeneca, Wedel, Germany) was used as a local analgesic at the incision site. Rectal temperature (33\u201336\u00b0C), and respiration (1\u20132 Hz) were constantly monitored. Craniotomies were performed using a stereotaxic drill (0.75 mm diameter) to target the dorsal striatum (DS; bregma: 0.86 mm, lateral: 2.0 mm, ventral: 2.8 mm), dorsolateral striatum (DLS; bregma: 0.86 mm, lateral: 2.2 mm, ventral: 2.6 mm), dorsomedial striatum (DMS; bregma: 0.74 mm, lateral: 1.4 mm, ventral: 2.6 mm), nucleus accumbens (NAcc) lateral shell (lNAcc; bregma: 0.86 mm, lateral: 1.75 mm, ventral: 4.5 mm), NAcc medial shell (mNAcc; bregma: 1.54 mm, lateral: 0.7 mm, ventral: 4.25 mm) and medial prefrontal cortex (mPFC; prelimbic nucleus (PrL; bregma: 1.98 mm, lateral: 0.3 mm, ventral: 1.5 mm) and infralimbic nucleus (IL; bregma: 1.98 mm, lateral: 0.3 mm, ventral: 2.1 mm)). Coordinates were corrected according to Lammel et al. (2008).\n\nFluorogold (FG, Fluorochrome, Denver, USA) dissolved in artificial cerebrospinal fluid (2%, 0.2%, 0.02%, 0.002%, 0.0002%, 500 nl for DS-infusions, 1500 nl for NAcc-infusions, 2 \u00d7 1000 nl for mPFC-infusions, flow rate of 50 nl/min) and/or red beads (RB, Lumaflor, Naples, Florida, USA; 200 nl, flow rate of 100 nl/min) dissolved and diluted (1:10) in artificial cerebrospinal fluid were infused either uni- or bilaterally into the target area using a micro-pump (UMP3-1, WPI, Berlin, Germany, 10 \u03bcl nanofil syringe, 33-gauge steel needle). Post- infusion, mice were given Carprofen (Pfizer, Berlin, Germany, 4 mg/kg) subcutaneously into the nape. After a 1 week recovery period, animals were either anesthetized with Pentobarbital (Merial GmbH, 1.6 g/kg) and transcardially perfused with fixative (4% paraformaldehyde, 15% picric acid in phosphate-buffered saline, pH 7.4) for histological analysis, or used for in vivo extracellular recordings. The perfused brains were stored in paraformaldehyde overnight and changed to a 10% sucrose/0.05% NaN3 solution for long-term storage.\n\n### In vivo electrophysiology\n\nIn vivo extracellular single-unit activities of SN and VTA neurons were recorded in untreated (Control) or post-infused (FG) mice with similar procedures as used in other studies from our lab (Schiemann et al., 2012). Briefly, mice were again anesthetized (isoflurane; induction 3.5%, maintenance 1\u20132% (>70% of recordings at 1.2%) in 0.35 l/min O2) and placed into a stereotactic frame. The craniotomies were performed as described above to target the lateral SN (bregma: \u22123.08 mm, lateral: 1.4 mm, ventral: 3.5\u20134.5 mm), medial SN (bregma: \u22123.08 mm, lateral: 0.9 mm, ventral: 4.2\u20135.0 mm), VTA (bregma: \u22123.08 mm, lateral: 0.75 mm, ventral: 4.0\u20135.0 mm). Borosilicate glass electrodes (10\u201325 M\u03a9; Harvard Apparatus, Holliston, MA, USA) were made using a horizontal puller (DMZ-Universal Puller, Zeitz, Germany) and filled with 0.5 M NaCl, 10 mM HEPES (pH 7.4) and 1.5% neurobiotin (Vector Laboratories, Burlingame, CA, USA). A micromanipulator (SM-6; Luigs and Neumann, Ratingen, Germany) was used to lower the electrodes to the recording site. The single-unit activity of each neuron was recorded for at least 10 min at a sampling rate of 12.5 kHz (for firing pattern analyses), and then for another one minute at a sampling rate of 20 kHz (for the fine analysis of AP waveforms). Signals were amplified 1000x (ELC-03M; NPI electronics, Tamm, Germany), notch- and bandpass-filtered 0.3\u20135000 Hz (single-pole, 6 dB/octave, DPA-2FS, NPI electronics) and recorded on a computer with an EPC-10 A/D converter (Heka, Lambrecht, Germany). Simultaneously, the signals were displayed on an analog oscilloscope and an audio monitor (HAMEG Instruments CombiScope HM1508; AUDIS-03/12M NPI electronics). Midbrain DA neurons were initially identified by their broad biphasic AP (>1.2 ms duration) and slow frequency (1\u20138 Hz) (Grace and Bunney, 1984; Ungless et al., 2004). AP duration was determined as the interval between the start of initial upward component and the minimum of following downward component.\n\n### Juxtacellular labelling of single neurons\n\nIn order to identify the anatomical location and neurochemical identity of the recorded neurons, they were labelled post-recording with neurobiotin using the juxtacellular in vivo labelling technique (Pinault, 1996). Microiontophoretic currents were applied (1\u201310 nA positive current, 200 ms on/off pulse, ELC-03M, NPI Electronics) via the recording electrode in parallel to the monitoring of single-unit activity. Labelling was considered successful when the firing pattern of the neuron was modulated during current injection (i.e., increased activity during on-pulse and absence of activity in the off-pulse) and the process was stable for at least 20 s followed by the recovery of spontaneous activity. This procedure allowed for the exact mapping of the recorded DA neuron within the SN and VTA subnuclei (Franklin and Paxinos, 2008) using custom written scripts in Matlab 2016a (MathWorks, Natick, MA, USA; RRID: SCR_001622), combined with neurochemical identification using TH immunostaining.\n\n### Cortical LFPs\n\nFor control of general brain state during anesthesia at different isoflurane levels, we recorded LFPs from three animals in the visual cortex with the same electrodes as those used for in vivo electrophysiology (described above). Signals were amplified 1000x (ELC-03M; NPI electronics, Tamm, Germany), notch- and bandpass-filtered 0.1\u20131000 Hz (single-pole, 6 dB/octave, DPA-2FS, NPI electronics) and recorded on a computer with an EPC-10 A/D converter (Heka, Lambrecht, Germany). Breathing rates were monitored. To test the depth of anesthesia, a mild nociceptive stimulus was applied by poking a hindpaw with tweezers at the end of each recording period.\n\n### Immunohistochemistry\n\nFollowing in vivo recordings, the animals were transcardially perfused as described previously. Fixed brains were sectioned into 60 \u00b5m (midbrain) or 100 \u00b5m (forebrain) coronal sections using a vibrating microtome (VT1000S, Leica). Sections were rinsed in PBS and then incubated (in blocking solution (0.2 M PBS with 10% horse serum, 0.5% Triton X-100, 0.2% BSA). Afterwards, sections were incubated in in carrier solution (room temperature, overnight) with the following primary antibodies: polyclonal guinea pig anti-tyrosine hydroxylase (TH; 1:1000; Synaptic Systems; RRID: AB_2619897), monoclonal mouse anti-TH (1:1000; Millipore; RRID: AB_827536), polyclonal rabbit anti-TH (1:1000; Synaptic Systems; RRID: AB_2619896), polyclonal rabbit anti-FG (1:1000, Fluorochrome; RRID: AB_2314408), monoclonal mouse anti-calbindin (CB; 1:1000; Swant; RRID: AB_10000347). In sequence, sections were again washed in PBS and incubated (room temperature, overnight) with the following secondary antibodies: goat anti-guinea pig 488 (RRID: AB_142018), goat anti-guinea pig 647 (RRID: AB_2535867), goat anti-rabbit 568 (RRID: AB_143157), goat anti-rabbit 488 (RRID: AB_143165), goat anti-mouse 647 (RRID: AB_2535804), goat anti-mouse 488 (RRID: AB_2534069) (all 1:750; Life Technologies). For striatal or prefrontal sections, anti-FG antibody and subsequent secondary antibody were not used. Streptavidin AlexaFluor-568 and Streptavidin AlexaFluor-488 (both 1:1000; Invitrogen) were used for identifying neurobiotin-filled cells. Sections were then rinsed in PBS and mounted on slides with fluorescent mounting medium (Vectashield, Vector Laboratories).\n\n### Confocal analysis and FG detection\n\nMultilabeling fluorescent immunostainings of recorded, juxtacellularly filled and retrogradely traced neurons were analyzed using a laser-scanning microscope (Nikon Eclipse90i, Nikon GmbH). NIS-Elements C program (Nikon software; RRID: SCR_014329) was used to acquire and export images. Low magnification images of the forebrain injection sites were acquired with a 4x objective. Overview images of the midbrain were acquired with 10x or 20x objectives. High magnification images of traced and juxtacellularly labelled neurons were acquired with a 60x oil immersion objective. For FG-labelling detection, confocal settings differed between neurons that did not undergo FG immunohistochemistry (intrinsic FG signal) and neurons that did undergo FG immunohistochemistry. Identical confocal settings were chosen within each group. For semiquantitative analysis of both intrisic and immuno-FG signals in the soma of juxtacellularly labelled SN and VTA DA neurons, we determined the mean intrinsic FG signal intensities of TH-negative background regions and TH-positive regions-of-interests in the midbrain using ImageJ software (http://rsbweb.nih.gov/ij/; RRID: SCR_003070). TH-negative nuclei were subtracted from the background. For intrinsic FG signals, a neuron was identified as FG- labelled if FG signals in the ROI were higher than the mean background intensity + 2*SD of the mean background. For immuno-FG signals, neurons were identified as FG-positive if there were\u00a0>5 FG-positive marks after thresholding images at mean background + 10*SD of the mean background. Also,>95% of retrogradely FG-3-labelled neurons in both the SN and the VTA were TH-positive that\u00a0is dopaminergic (99.23% of DLS-projecting midbrain neurons, 99.19% of DMS-projecting midbrain neurons, 98.57% of lNAcc-projecting neurons, 96.34% of mNAcc-projecting neurons).\n\n### Mapping of FG injection sites\n\nFor identification of local FG infusion sites, forebrain sections were analyzed. Sections with the highest intensity FG signal for each mouse were identified, selected for analysis and defined according to their distance relative to bregma and neuroanatomical landmarks using Franklin and Paxinos (2008). Fluorogold infusion sites were visually identified and marked. Overlays from distinct animals are shown on corresponding stereotactic maps (Franklin and Paxinos, 2008).\n\n### Mapping and anatomical quantification of projection-defined DA neuron subtypes\n\nIn order to map projection-defined DA subtypes in the midbrain, three animals in each group (DMS, DLS, lNAcc, mNAcc) were infused with FG and processed after a 1 week survival period. After TH-, FG- and Calbindin-immunohistochemistry was performed, 10x and 20x z-stack images of 60 \u03bcm midbrain sections were acquired and every 2nd image was used for analyses. To illustrate the anatomical segregation of different projection-defined subtypes, images from 10x z-stack images were flattened into single maximum intensity projections using Image J. Sections were defined according to their distance relative to bregma and neuroanatomical landmarks using (Franklin and Paxinos, 2008). Sections at the same bregma were aligned using ImageJ FIJI (RRID: SCR_002285) and merged. Image brightness was adjusted relative to maximum peak, the background was subtracted (rolling ball radius\u00a0=\u00a010), a Gaussian blur filter was employed (sigma\u00a0=\u00a05), and a colored heat map was created using ImageJ plugin by Samuel P\u00e9an (http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:heatmap histogram:start). The heat map image was then overlaid on the corresponding stereotactic map figures (Franklin and Paxinos, 2008).\n\nFor the quantification of projection-defined DA neuronal cell populations, 20x z-stack images of 60 \u03bcm thick midbrain sections were taken. FG-positive, FG- and TH-copositive and FG-, TH- and CB-copositive neurons were counted manually with ImageJ cell counter by Kurt De Vos (https://imagej.nih.gov/ij/plugins/cell-counter.html). For quantification, either absolute accumulated numbers of neurons (n\u00a0=\u00a03 animals) were presented or the average percentage of neurons either located in a distinct midbrain area or projecting to a distinct target area.\n\n### Double tracing experiments\n\nDouble tracing experiments were carried out with FG and RB as described above. Three animals in each group (mNAcc and lNAcc, lNAcc and DLS, DLS and DMS) were infused and sacrificed after a 1 week survival period. After performing immunohistochemistry, 20X z-stack confocal images were taken. Cell counting was performed in the region of highest overlap, that\u00a0is for lNAcc/mNAcc, cells were counted in the VTA, for lNAcc/DLS cells were counted in the mSN and for DLS/DMS, cells were counted in the mSN. We quantified cells in caudal sections (\u22123,64 mm), intermediate sections (\u22123.28 mm) and rostral sections (\u22123.08 mm).\n\n### Statistical analysis\n\n#### Spike train analyses\n\nSpike timestamps were extracted by thresholding above noise levels with IGORPRO 6.02 (WaveMetrics, Lake Oswego, OR, USA; RRID: SCR_000325). Firing pattern properties such as mean frequency, coefficient of variation (CV) and bursting measures were analyzed using custom scripts in Matlab (R2016b). In order to estimate burstiness and intra-burst properties, we used the burst detection methods described in\u00a0Grace and Bunney (1984). Only cells with estimated bursts were included for the intraburst-statistics. For intraburst-frequency analysis, the average of mean intraburst-frequencies of all bursts in a spiketrain were calculated. Pauses were detected using a custom version of the Tukey outlier identification algorithm (Tukey, 1977). This method relies on setting a non-parametric pause threshold that is adjusted to each cell but applied across the entire spike train. The pause threshold pthr is the 75% quantile q3 of the ISI distribution, added to a factor w (set as three in this study) multiplied by the interquartile range: pthr=q3+3*(q3\u2212q1). Also, pauses after bursts are excluded as they putatively could be of non-synaptic origin.\n\nFor analysis of general firing patterns, autocorrelation histograms (ACH) were plotted using custom Matlab scripts. As described before (Schiemann et al., 2012), we used established criteria for classification of in vivo firing patterns based on visual inspection of autocorrelograms: single spike-oscillatory (\u2018Pacemaker\u2019;\u22653 equidistant peaks with decreasing amplitudes), single spike-irregular (\u2018irregular\u2019;<3 peaks, increasing from zero approximating a steady state), bursty-irregular (\u2018irregularly bursty\u2019; narrow peak with steep increase at short ISIs) and bursty-oscillatory (\u2018regularly bursty\u2019; narrow peak reflecting fast intraburst ISIs followed by clear trough and repetitive broader peaks).\n\nFor a quantitative description of firing patterns, we fitted a stochastic model called Gaussian Locking to a free Oscillator (GLO;\u00a0Bingmer et al., 2011; Schiemann et al., 2012) to the spike trains. The GLO mainly includes the four parameters mean period and variability of oscillation, burst size and precision of spike locking to the oscillation (\u03c32). In order to fit the GLO, we first applied a multiple filter test for rate stationarity (Messer et al., 2017) to identify the longest sections with approximately constant firing rate. The GLO was then used to classify this longest stationary phase into single spike oscillatory, irregular single spike, etc. The GLO analysis was performed using the statistical analysis package R (www.r-project.org; RRID: SCR_001905).\n\nFor AP duration analysis, high-resolution recordings of at least 10 APs were aligned, averaged and the interval between the start of the initial upward component and the minimum of the following downward component was measured using IGORPRO. In order to analyze the relative AP trough, aligned and averaged APs of single neurons were normalized to peak amplitude\u00a0=\u00a01 mV and the trough was measured using IGORPRO.\n\nNumerical data is represented as scatter plots with a line on the median. Categorical data is represented as stacked bar graphs. To investigate the assumption of normal distribution, we performed the single-sample Kolmogorov-Smirnov test. Because, in general, the normality assumption was rejected, comparisons were performed with the nonparametric Mann\u2013Whitney-Test. Categorical parameters such as GLO-based firing pattern and SFB contingency were analyzed with the Chi-squared test. Statistical significance level was set to p<0.05. All data values are presented as means\u00a0\u00b1\u00a0SEM. Statistical tests were made using GraphPad Prism 6 (GraphPad Software, San Diego, CA, USA; RRID: SCR_002798).\n\n### Linear discriminant analysis\n\nWe applied linear discriminant analysis (LDA) to determine whether different projection-defined DA neuron subpopulations could be reliably discriminated based on their firing patterns alone. In a multidimensional data set with two or more specified groups, the LDA finds the direction that optimally separates the groups. In order to identify the set of variables contributing to this discrimination, we used the following cross validation technique: For every possible subset Sj of the set of all variables (i.e., the four GLO parameters, the mean spike frequency, the CV, the SFB, the skewness and kurtosis of the interspike intervals, the burst rate, the number of estimated pauses, the AP duration and the relative AP through), we performed the following analysis: we used 1000 random divisions of the data in two equally sized groups A and B. For every division, we performed LDA on A and predicted the group affiliations of B, and vice versa. The mean percentage of correct predictions in A and B, averaged across all 1000 random divisions, is called the predictive power of the model with variable set Sj and denoted by Mj. The maximal predictive power is then given by maxj Mj and the corresponding subset Sj is called the best subset.\n\nIn order to investigate statistical significance of the maximal predictive power, we used a permutation test, performing the same analysis with 1000 randomly permuted data sets, in which the two groups were assigned randomly. Statistical significance was then assessed by deriving the percentage of these analyses of permuted data sets \u2013 as specified in the results \u2013 which yielded a maximal predictive power as large as or larger than the observed. In case of statistical significance, we also give the percentage of correct categorizations for the respective subset Sj when performing LDA on the whole data set.\n",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "6a12866a-bdf9-4f10-84bf-fc81b67b9a7e",
+      "submission_id": "9f7412f6-813c-47a3-8910-38ffba2b4911",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Olivier J Manzoni, Aix-Marseille University, INSERM, INMED France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.48408.034](https://doi.org/10.7554/eLife.48408.034)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"in vivo functional diversity of midbrain dopamine neurons within identified axonal projections\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gary Westbrook as the Senior Editor. The reviewers have opted to remain anonymous. The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe study by Farrasat et al., represents an advance in understanding dopamine neuron physiology by providing a detailed in vivo topography of dopamine neuron firing activity according to projection specificity. These results provide a connection between what is already known about differences in the in vitro features with in vivo activity according to projection target. A major accomplishment was to retrogradely label the recorded neurons without affecting their in vivo firing activity. The data are of high quality and the presentation is clear. This is a well-executed study and an important step in our understanding of diversity among dopamine neuron subpopulations in the intact brain.\n\nThe reviewers have raised several important comments that must be addressed. The major comments of the reviewers are summarized and restated in the essential revisions.\n\nEssential revisions:\n\n1) Dopamine neurons have widespread axonal projection (see Matsuda et al., 2009) that can cover extremely large striatal area (both medial and lateral). Less is known of the DA neurons projecting to the NAc and whether a single neuron can innervate both the core and the shell. Previous literature indicates that these DA neurons form significantly smaller axonal arbors (Aransay et al., 2015). Furthermore, these authors and others have distinguished DA cells projecting to medial and lateral NAc shell (de Jong et al., 2019). It is important that the authors clearly show that their DA subtype classification (based on 'single' projection sites) is real and not overlapping (in their projection sites). The reviewers propose addressing this question with for example, retrograde tracing experiments combining fluorogold and Ctb injections in their various striatal targets.\n\n2) Comparing in vivo firing activity of neurons requires the careful control of cortical brain state activity. The lack of stability of isoflurane anaesthesia makes the comparison of neuronal activity across animals even more daunting. While the authors are not asked to redo all their recordings with the addition of an ECoG, evidences must be presented showing that the neuronal activity of DA neurons (irrespective of their projection site) is not affected when the isoflurane concentration is changing from high (deep anaesthesia) to low (lighter anaesthesia). This can easily be done by the authors. It would clarify a key concern and be a great addition to the paper.\n\n3) It would be more helpful to evaluate the injection sites if given a sense of the variability in injection spread and location for each target site. An atlas collecting all injection spreads and locations will increase confidence in the injection target regions being separate and would be a great resource to researchers in the field.\n\n4) While burst firing in dopamine neurons is typically associated with a stimulus, the current data report \"ongoing\" burst firing (both periodic and irregular). How do the authors interpret this activity? It would be helpful to discuss instances where this type of activity has been reported in studies of dopamine neurons recorded in awake behaving animals or to provide ideas/predictions involving circuit properties that may contribute to this spiking behavior (intrinsic properties contribute, but SNc neurons do not typically burst in the absence of synaptic input).\n\nReviewer #1:\n\nThe study by Farrasat et al., represents an advance in understanding dopamine neuron physiology by providing a detailed in vivo topography of dopamine neuron firing activity according to projection specificity. This provides a connection between what is already known about differences in in vitro features with in vivo activity according to projection target. A major accomplishment of this study was to retrogradely label the recorded neurons without affecting their in vivo firing activity. This was accomplished by using a 10-fold lower concentration of fluorogold that the authors convincingly demonstrate does not affect the in vivo firing activity of the dopamine neuron. Of interest is also the use of the Linear Discriminate Analysis, which provides for predictive power of the firing activity to predict projection target.\n\nOnly one moderate concern should be addressed. It would be more helpful to evaluate the injection sites if given a sense of the variability in injection spread and location for each target site. An atlas collecting all injection spreads and locations will increase confidence in the injection target regions being separate.\n\nReviewer #2:\n\nThe paper submitted by Farassat et al., described the in vivo electrophysiological properties of subclasses of dopaminergic (DA) neurons identified based on their position in the substantia nigra (SN) or their projection site to the striatum (i.e. DLS vs. DMS) and the nucleus accumbens (i.e. shell vs. core). This kind of work is labour intensive and technically challenging for multiple reasons: 1/ all the DA neurons included in this work were neurochemically identified through in vivo juxtacellular labelling combined with post-hoc immuno-detection for the tyrosine hydroxylase; 2/ the authors further identify subclasses of dopaminergic neurons based on their site of projection through the retrograde transport of fluorogold. The results are interesting and provide additional evidence that dopaminergic neurons are functionally diverse. That being said, the electrophysiological differences described by the authors between distinct target-projecting DA neurons are subtle (i.e. minor change in firing rate or bursting) and not always present (no differences between DLS vs. DMS projecting DA neurons in medial SN). Overall, the manuscript is sound and the work of good-quality; the only downside being that the results highlight only minor (or in some cases even no differences) between DA neurons with distinct axonal projections.\n\n1) Within one 'source' (i.e. the medial SN), the authors identify distinct 'targets' DA projecting neurons (i.e. projecting to the DMS, the DLS, or the NAcc). This is achieved using a fluorogold retrograde approach but only one target can be tested at any time. This projection-based classification is then used as a criterion for electrophysiological comparison between distinct DA neurons subclasses but this approach does not allow to identify neurons with multiple projection site, for example: DMS and DLS. This has important consequences since the authors might be comparing 'presumably' distinct population of DA neurons that in fact belong to the same cluster of neurons. It seems important here to better characterize whether or not DA neurons have multiple projection targets.\n\n2) Another consequence of this 'single' target retrograde strategy is that the electrical activity of subclasses of DA neurons are recorded in different subject, yet compared as if they were recorded from the same animal in similar condition. Unfortunately, the level of isoflurane anaesthesia can vary a lot from one animal to another, which mean that the cortical activity will change from animal to another and this will impact onto the firing properties of DA neurons (both on the level of bursting and firing rate). Considering this important aspect and the fact that the authors did not record the cortical activity, how confident can we be that the different electrical properties of DA neurons recorded in different mice are not artificially caused by extrinsic factors such as brain state, or variability across animals? It seems important to clarify this point.\n\nReviewer #3:\n\nThis manuscript by Farassat et al. presents a comprehensive analysis of midbrain dopamine neuron functional diversity performed in the in vivo mouse preparation. The authors combine retrograde fluorogold labeling with juxtacellular recordings to compare firing patterns in dopamine neuron subpopulations categorized according to their major projection patterns. Comparing dopamine neurons within and between midbrain regions (i.e. medial vs. lateral SNc DA neurons), they find that burst firing cells are present in all SNc (lateral and medial) and VTA subregions examined. Interestingly, however, dorsal striatum projecting cells located in the medial substantia nigra do not burst. Additionally, medial NAc projecting cells fire tonically at lower rates than lateral NAc projecting neurons. Overall, these data further support the idea that dopamine neurons are diverse in their firing patterns and presumably in their function.\n\nThis is a well-executed study. The data are of high quality and the presentation is clear. The authors should be commended for performing and including their careful control experiments testing the effects of different concentrations of fluorogold on electrophysiological properties. In addition, the anatomical identification of cells and description of source and targets is valuable and important. Unlike the authors' past heterogeneity study in brain slices (Lammel et al., 2008), the firing patterns reported in this study likely result from a mixture of intrinsic properties as well as activity of the surrounding circuit. This is important because the recordings here were all made in anaesthetized mice which may complicate the interpretation of the data. Despite this caveat, however, I believe that this study is an important step in our understanding of diversity among dopamine neuron subpopulations in the intact brain.\n\n1) Burst firing in dopamine neurons is typically associated with a stimulus (e.g. unexpected reward, aversive stimulus, etc.). Here, however, the authors report burst firing (both periodic and irregular) that seems to be ongoing. How do the authors interpret this activity? It would be helpful to discuss instances where this type of activity has been reported in studies of dopamine neurons recorded in awake behaving animals or to provide ideas/predictions involving circuit properties that may contribute to this spiking behavior (intrinsic properties contribute, but SNc neurons do not typically burst in the absence of synaptic input).\n",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6db4160f-10d7-4c56-81ca-14790b34997a",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C1",
+      "claim": "Functional diversity of midbrain dopamine (DA) neurons ranges across multiple scales, from differences in intrinsic properties and connectivity to selective task engagement in behaving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional diversity of midbrain dopamine (DA) neurons ranges across multiple scales, from differences in intrinsic properties and connectivity to selective task engagement in behaving animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature establishing this diversity across multiple biological scales.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "f918210e-ee92-4f6e-b622-025c7cc0bd5d",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C2",
+      "claim": "Distinct in vitro biophysical features of DA neurons have been associated with different axonal projection targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct in vitro biophysical features of DA neurons have been associated with different axonal projection targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references established findings from prior in vitro studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "5ad558cf-d177-4551-80f9-caab5e1ee394",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C3",
+      "claim": "Differences in burst firing exist among DA neurons projecting to dorsolateral striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified differences in burst firing among DA neurons projecting to dorsolateral striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "5ca850c0-6982-4031-b23e-37128ee74506",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C4",
+      "claim": "Bursting differentiated DA neurons in the medial substantia nigra (SN) projecting either to dorsal or ventral striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Bursting also differentiated DA neurons in the medial substantia nigra (SN) projecting either to dorsal or ventral striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data comparing different projection-defined populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "155c818e-5596-4c66-9c9f-5d226fcb9f4e",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C5",
+      "claim": "Differences in mean firing rates exist among ventral tegmental area (VTA) DA neurons projecting to lateral or medial shell of nucleus accumbens.",
+      "claim_type": "EXPLICIT",
+      "source": "We found differences in mean firing rates and pause durations among ventral tegmental area (VTA) DA neurons projecting to lateral or medial shell of nucleus accumbens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data comparing VTA DA neuron populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "641f4319-e6f6-4915-b0bb-747ec4282867",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C6",
+      "claim": "Differences in pause durations exist among ventral tegmental area (VTA) DA neurons projecting to lateral or medial shell of nucleus accumbens.",
+      "claim_type": "EXPLICIT",
+      "source": "We found differences in mean firing rates and pause durations among ventral tegmental area (VTA) DA neurons projecting to lateral or medial shell of nucleus accumbens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "8b57d308-ed29-4c60-b18a-2c3c71347749",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C7",
+      "claim": "The midbrain dopamine system has emerged as a parallel processor carrying out multiple functions rather than a single global computation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than a single global computation, the midbrain DA system has therefore emerged as a parallel processor carrying out multiple functions (Haber, 2014; Kegeles et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "b1c7d418-bcd6-45d3-85e2-c4380e19e823",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C8",
+      "claim": "Projection-identified groups of DA neurons have marked differences in intrinsic biophysical properties and input-output relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that projection-identified groups of DA neurons, including those that project to specific subregions of the striatum, have marked differences in intrinsic biophysical properties and input-output relationships (Lammel et al., 2008; Tarfa et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior in vitro studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "e5cb8b81-ed54-4d4c-881e-0284e5d01ec8",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C9",
+      "claim": "Individual DA axons show extensive arborisation often across distinct striatal territories.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this idea is somewhat challenged by virally-mediated single DA neuron labelling studies that depicted the extensive arborisation of individual axons often across distinct striatal territories (Aransay et al., 2015; Matsuda et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior viral tracing studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "cc5ac5e0-b558-40f3-bb24-d65c0fbb30de",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C10",
+      "claim": "A ventrolateral SN DA population is most severely affected in Parkinson disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In PD, a ventrolateral SN DA population is most severely affected (Damier et al., 1999; Fu et al., 2016; Gibb and Lees, 1991; Kordower et al., 2013), which might be indicative for an innate and/or acquired differential vulnerability towards alpha-synuclein aggregation-mediated neurodegeneration (Surmeier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior clinical and pathological studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "cabb4486-0b94-4bc2-ad30-894e1a332e93",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C11",
+      "claim": "In schizophrenia, PET-studies in patients strongly suggested an early and selective dysregulation of a DA subpopulation projecting to associative, dorsomedial striatal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In schizophrenia, PET-studies in patients strongly suggested an early and selective dysregulation of a DA subpopulation projecting to associative, dorsomedial striatal regions (Kegeles et al., 2010; McCutcheon et al., 2019), but cellular substrates have remained elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to PET imaging studies in schizophrenia patients.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "de55cc3c-bff5-4119-b56f-6ad3888ebe91",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C12",
+      "claim": "A hierarchical sequence of DA release in different striatal territories has been identified in models of drug addiction.",
+      "claim_type": "EXPLICIT",
+      "source": "In models of drug addiction, a hierarchical sequence of DA release in different striatal territories has been identified (Willuhn et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work on drug addiction models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "8c15255f-7b07-4472-ad96-1f1bbb286c8d",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C13",
+      "claim": "Selective hyperactivity in mesolimbic-projecting DA subpopulations has been identified as a causal factor in depression-like behaviors in depression models based on chronic social defeat.",
+      "claim_type": "EXPLICIT",
+      "source": "In depression models, based on chronic social defeat, selective hyperactivity in mesolimbic-projecting DA subpopulations has been identified as a causal factor in depression-like behaviors using projection-selective optogenetic interventions (Cao et al., 2010; Chaudhury et al., 2013; Tye et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior optogenetic studies in depression models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "75ec8724-0a59-4ce9-b6fd-a68e443b684c",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C14",
+      "claim": "Application of conventional retrograde tracing protocol (2% fluorogold; 500 nl; 50 nl/min) in the dorsal striatum resulted in structural damage of nigrostriatal axons one week after infusion.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that the application of a conventional retrograde tracing protocol (2% fluorogold (FG); 500 nl; 50 nl/min; Liu et al., 2003) in the dorsal striatum (DS; bregma: 0.86 mm, lateral: 2.0 mm, ventral: 2.8 mm) resulted in structural damage of nigrostriatal axons already one week after infusion (Figure 1A, column one, FG-0, note reduced TH expression).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations and imaging data showing reduced TH expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "5dbcf6af-7f4c-4cfb-9555-fdcbe08f9671",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C15",
+      "claim": "No apparent structural damage was observed using a ten-fold FG-dilution (0.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed no apparent structural damage using a ten-fold FG-dilution (0.2%, Figure 1A, FG-1, 2nd column from left), but surprisingly failed to detect any stable in vivo spontaneously active DA neurons in the substantia nigra (SN), again one week after infusion (N = 3;~10 tracts per animal, intra-nigral speed of electrode advancement 60 \u00b5m/min; coverage 4\u20135 mm Z-depth from skull, data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations and imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "f7f277a6-970a-4fb2-877e-1e516b4bea3e",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C16",
+      "claim": "0.2% FG infusion resulted in failure to detect any stable in vivo spontaneously active DA neurons in the substantia nigra one week after infusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed no apparent structural damage using a ten-fold FG-dilution (0.2%, Figure 1A, FG-1, 2nd column from left), but surprisingly failed to detect any stable in vivo spontaneously active DA neurons in the substantia nigra (SN), again one week after infusion (N = 3;~10 tracts per animal, intra-nigral speed of electrode advancement 60 \u00b5m/min; coverage 4\u20135 mm Z-depth from skull, data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "65c3c75e-96f9-4091-9edf-5c9fa6dc0bd3",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C17",
+      "claim": "0.002% FG constitutes the lowest detectable concentration for retrograde labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "With this strategy, we identified 0.002% FG (FG-3) to be the lowest concentration where a significant proportion (ca. 20\u201330%) of SN DA neurons displayed detectable tracer levels based on intrinsic FG fluorescence (Figure 1A, FG-3, column four; Figure 1\u2014figure supplement 1A, signal to noise 3:1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from the dilution series and imaging analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "cdbd9ee1-9ab6-4937-8e50-1d331ea21e8a",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C18",
+      "claim": "Approximately 20-30% of SN DA neurons displayed detectable tracer levels at 0.002% FG concentration based on intrinsic FG fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "With this strategy, we identified 0.002% FG (FG-3) to be the lowest concentration where a significant proportion (ca. 20\u201330%) of SN DA neurons displayed detectable tracer levels based on intrinsic FG fluorescence (Figure 1A, FG-3, column four; Figure 1\u2014figure supplement 1A, signal to noise 3:1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "33aeeb8c-588b-4795-903a-00c1b5351ce3",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C19",
+      "claim": "The rate of detection of FG-labeled neurons was improved by using a FG-antibody combined with a fluorescently-labelled secondary antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "This rate of detection was further improved by using a FG-antibody (see Materials and methods) combined with a fluorescently-labelled secondary antibody (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental comparison of detection methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "9f0be5fc-19f1-4f8b-a1d0-55e50c105a07",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C20",
+      "claim": "FG-immunoreactivity within DA neurons showed selective immunostaining in cytoplasmic vesicles, most likely to be lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed inspection of the cellular distribution of FG-immunoreactivity within DA neurons revealed selective immunostaining in cytoplasmic vesicles, most likely to be lysosomes (Wessendorf, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on microscopic observations and supported by citation to prior work on FG localization.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "63f58114-c6dd-48d1-8591-a962cbd67522",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C21",
+      "claim": "Retrograde tracing with 1000-fold diluted FG (0.002%) did not perturb any in vivo electrophysiological property of DA lSN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, retrograde tracing with 1000-fold diluted FG did not perturb any in vivo electrophysiological property of DA lSN neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comprehensive comparison of electrophysiological parameters between control and FG-labeled neurons showing no significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "65d3426c-b661-4a02-9da6-88cc70a5f0b0",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C22",
+      "claim": "There were no significant differences in firing frequency between control DA lSN neurons and FG-3-labelled DA lSN neurons (control: 3.51 \u00b1 0.41 Hz, FG: 3.51 \u00b1 0.4 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the examples shown in Figure 2, quantitative analysis of firing frequency (means \u00b1 SEMs; control: 3.51 \u00b1 0.41 Hz, FG: 3.51 \u00b1 0.4 Hz; panel 3B), regularity (CV; control: 62.92 \u00b1 7.55%, FG: 58.84 \u00b1 7.29%; panel 3B) and quantitative descriptors of ISI-distribution patterns (kurtosis (control: 4.1 \u00b1 0.73, FG: 3.69 \u00b1 0.69), skewness (control: 0.98 \u00b1 0.18, FG: 0.88 \u00b1 0.16) and a firing pattern categorization based on a theoretical model called GLO (see Materials and methods), panel 3B) did not reveal any significant differences between the two populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "b691407d-53d0-4138-bc52-a184b98bf9f5",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C23",
+      "claim": "The overall topographic patterns of cellular distributions of retrogradely traced DA neurons was in accordance with those from previous work using retrobeads or retrograde viral tracers.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall topographic patterns of cellular distributions (see Figure 4\u2014figure supplement 1) was in accordance with those from previous work using retrobeads (Lammel et al., 2008) or retrograde viral tracers (Lerner et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of current anatomical mapping data with cited prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "61d3979c-e095-4082-b791-358fe4785147",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C24",
+      "claim": "The medial SN is a region where DA cell bodies of three distinct, equally prevalent axonal projections intermingle (approximately 30% DLS, 40% DMS, 30% lNAcc).",
+      "claim_type": "EXPLICIT",
+      "source": "Our data revealed a high complexity within the medial SN, where DA cell bodies of three distinct, equally prevalent axonal projections intermingled (mSN;~30% DLS,~40% DMS,~30% lNAcc).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of retrograde tracing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "2c68d10b-57a4-4642-bb31-f68ebb5aeae6",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C25",
+      "claim": "In the lSN, approximately 70% of DA neurons project to DLS.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the two neighboring regions, the lSN and the lateral VTA (parabrachial pigmented nucleus (PBP), paranigral nucleus (PN)), only one axonal projection was dominant (~70% DLS-projecting DA neurons in the lSN;~60% lNAcc in the PBP,~70% mNAcc in the PN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of retrograde tracing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "5aba3c03-ee9f-4e2e-901d-4827a5a5335e",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C26",
+      "claim": "In the PBP, approximately 60% of DA neurons project to lNAcc.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the two neighboring regions, the lSN and the lateral VTA (parabrachial pigmented nucleus (PBP), paranigral nucleus (PN)), only one axonal projection was dominant (~70% DLS-projecting DA neurons in the lSN;~60% lNAcc in the PBP,~70% mNAcc in the PN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of retrograde tracing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "f746184a-dee7-436a-a1bd-1d34d986b186",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C27",
+      "claim": "In the PN, approximately 70% of DA neurons project to mNAcc.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the two neighboring regions, the lSN and the lateral VTA (parabrachial pigmented nucleus (PBP), paranigral nucleus (PN)), only one axonal projection was dominant (~70% DLS-projecting DA neurons in the lSN;~60% lNAcc in the PBP,~70% mNAcc in the PN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of retrograde tracing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "81c44476-8fb8-47d1-a5e7-43b044e85e9e",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C28",
+      "claim": "Only the dorsolateral striatum receives two equally prominent axonal projections from the mSN and the lSN, in contrast to dorsomedial and ventral striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, only the dorsolateral striatum, in contrast to dorsomedial and ventral striatum, received two equally prominent axonal projections from the mSN and the lSN (Figure 4F2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical tracing data showing dual sources for DLS projections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "725b5964-0623-4c07-918b-ec6f5b50bbea",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C29",
+      "claim": "Double-labelling retrograde tracing experiments found only a small percentage (4-14%) of double-labelled DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance to our previous study (Lammel et al., 2008), we found only a small percentage, varying between 4\u201314%, of double-labelled DA neurons (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of double-tracing experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "0b5cb59a-ec46-4cc1-b41a-521e86ec7bae",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C30",
+      "claim": "Small variations in isoflurane concentrations in the range between 1-2% did not correlate with differences in firing frequencies or patterns in any of the studied DA projections.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach was very stable across animals (>70% of animals, the isoflurane concentration was 1.2% in 100% O2, flow rate 350 ml/min) and the small variations in isoflurane concentrations in the range between 1\u20132% did not correlate with differences in firing frequencies or patterns in any of the studied DA projections (see Figure 4\u2014figure supplement 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis of anesthesia depth and neuronal activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "baebfe4a-1b7a-46d0-b736-81e075129b9e",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C31",
+      "claim": "During anesthesia under the stated conditions, oscillatory cortical activity observed under lighter isoflurane anesthesia was largely suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, during anesthesia, under the conditions stated above, oscillatory cortical activity, observed under lighter isoflurane anesthesia, was largely suppressed (see see Figure 4\u2014figure supplement 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LFP recordings at different anesthesia depths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "65a31d82-1cf5-490e-b85e-53a21b0ca8c1",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C32",
+      "claim": "Firing frequencies and patterns of mSN/VTA DA neurons under anesthesia were comparable to those in corresponding DA neurons recorded previously in freely moving, awake mice in the homecage.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that firing frequencies and patterns of mSN/VTA were comparable to those in corresponding DA neurons recorded previously in freely moving, awake mice in the homecage (for detailed comparison, see Figure 4\u2014figure supplement 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison with previously published data from awake recordings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "bc408ab1-011d-4650-a194-31b13a63d220",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C33",
+      "claim": "About 40% of DLS-projecting DA neurons in the lSN (6 of 15) displayed robust bursting (SFB >5%) throughout the recording period.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, while about 40% of DLS-projecting DA neurons in the lSN (n = 6 of 15) displayed this type of robust bursting (SFB >5%) throughout the recording period, none of the identified DLS-projecting DA neurons located in the mSN (n = 0 of 9) fired in this bursty manner (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of burst firing in recorded neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "da5162c9-80b8-4aed-8495-04180e980f55",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C34",
+      "claim": "None of the identified DLS-projecting DA neurons located in the mSN (0 of 9) displayed robust bursting (SFB >5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, while about 40% of DLS-projecting DA neurons in the lSN (n = 6 of 15) displayed this type of robust bursting (SFB >5%) throughout the recording period, none of the identified DLS-projecting DA neurons located in the mSN (n = 0 of 9) fired in this bursty manner (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of burst firing showing complete absence in mSN.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "4f6192c1-66a2-4f66-9ed9-5982c3a8b0da",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C35",
+      "claim": "Using the variables burstiness (SFB), relative AP trough and precision of spiking (log(\u03c32)), DLS-projecting SN DA neurons could be accurately classified into lateral and medial groups with a predictive power of 79.2% (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Using the variables burstiness (SFB), relative AP trough and precision of spiking (log(\u03c32)), we could accurately classify the remaining DLS-projecting SN DA neurons into a lateral and medial group with a predictive power of 79.2% (p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by linear discriminant analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "b5a82200-e295-4453-8318-d5a1c449bc87",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C36",
+      "claim": "When using the entire data set to train the linear classifier, almost all (92.6%) of DLS-projecting SN DA neurons were classified correctly into lateral and medial groups.",
+      "claim_type": "EXPLICIT",
+      "source": "When using the entire data set to train the linear classifier, almost all (92.6%) of DLS-projecting SN DA neurons were classified correctly (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by linear discriminant analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "b09441ea-f42b-4c46-bdc6-b3892926773a",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C37",
+      "claim": "No differences were found between any parameters of mSN DA populations projecting to DLS versus DMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found no differences between any parameters of these two mSN DA populations projecting to different territories of the dorsal striatum (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical comparison of electrophysiological parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "34682092-d0b9-4756-b8f9-b65a2f05591d",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C38",
+      "claim": "Linear discriminant analysis based on the best set of parameters did not perform above chance (50.9%) in discriminating DLS- from DMS-projecting DA neurons in the medial SN.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the linear discriminant analysis (LDA) based on the best set of parameters (CV, SFB, skewness of the ISI-distribution, pauses per minute, the mean oscillation period (GLO) and the relative AP trough) did not perform above chance (50.9%) in discriminating DLS- from DMS-projecting DA neurons in the medial SN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by linear discriminant analysis showing no discrimination ability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "04c028d0-f431-4531-acd4-37bb8498c318",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C39",
+      "claim": "Most electrophysiological parameters describing the patterns of discharge including bursts and pauses, as well as the shapes of the ISI-distributions (Kurtosis, Skewness) were significantly different between dorsal (n = 18) and ventral (n = 14) striatum projecting mSN DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from mean frequencies and AP waveforms, which were similar, most electrophysiological parameters describing the patterns of discharge including bursts (Figure 7D) but also pauses (Figure 7E), as well as the shapes of the ISI-distributions (Kurtosis, Skewness; Figure 7F) were significantly different between dorsal (n = 18) and ventral (n = 14) striatum projecting mSN DA neurons (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical comparison of multiple electrophysiological parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "8ddfe6fd-ea65-4a0e-ab18-22ae6c50e715",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C40",
+      "claim": "Linear discriminant analysis based on skewness of the ISI-distribution, AP duration, relative AP trough and the precision of spiking (log(\u03c32)) showed a strong trend to classify mSN DA neurons into dorsal or ventral striatum projecting cells with a predictive power of 70.8% (p<0.07).",
+      "claim_type": "EXPLICIT",
+      "source": "The linear discriminant analysis (LDA) based on the best set of parameters (skewness of the ISI-distribution, AP duration, relative AP trough and the precision of spiking (log(\u03c32)) showed a strong trend to classify mSN DA neurons into dorsal or ventral striatum projecting cells with a predictive power of 70.8%, when using half of the data set for training (p<0.07).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by linear discriminant analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "ae71ef8d-76ac-4daf-ad35-926a5af7fef3",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C41",
+      "claim": "When the entire data set was used for LDA, 84.4% of mSN DA neurons were classified correctly into dorsal or ventral striatum projecting groups.",
+      "claim_type": "EXPLICIT",
+      "source": "When the entire data set was used, 84.4% of mSN DA neurons were classified correctly (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by linear discriminant analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "8e148155-fa7e-4da5-9fe3-4492dbad349f",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C42",
+      "claim": "No significant differences were found between lateral shell NAcc-projecting DA neurons localized in the mSN compared to those positioned in the VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a functional comparison of lateral shell NAcc-projecting (TARGET) DA neurons localized in the mSN compared to those positioned in the VTA (SOURCES), the classical location of mesolimbic DA neurons, revealed no significant differences (see Figure 7\u2014figure supplement 3) between the groups, violating the VTA/SN anatomical boundary.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical comparison of electrophysiological parameters between mSN and VTA neurons with the same projection target.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "35f11593-cc37-46e3-825f-376e6ea94421",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C43",
+      "claim": "VTA DA neurons projecting to lateral shell of nucleus accumbens have higher mean firing rates than those projecting to medial shell.",
+      "claim_type": "EXPLICIT",
+      "source": "We next asked whether distinct ventral striatal-projecting populations (i.e. lateral shell NAcc vs medial shell NAcc-projecting neurons) also show functional differences in vivo, given that these two populations displayed very distinct electrophysiological properties in vitro (Lammel et al., 2008). Figure 8 compares the electrophysiological properties of two DA neurons in the VTA, projecting either to lateral shell (lNAcc) or medial shell (mNAcc) of nucleus accumbens. The 10 s recording traces, 30 s raster plots and the two ISI histograms display selective differences in mean discharge frequency and the duration of pauses only (Figure 8A and B), which are also evident at the population level (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing firing rates between the two populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "faa940f3-8be3-47a6-9085-176e0e2b285a",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C44",
+      "claim": "VTA DA neurons projecting to medial shell of nucleus accumbens have longer pause durations than those projecting to lateral shell.",
+      "claim_type": "EXPLICIT",
+      "source": "The 10 s recording traces, 30 s raster plots and the two ISI histograms display selective differences in mean discharge frequency and the duration of pauses only (Figure 8A and B), which are also evident at the population level (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing pause durations between the two populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "36ec4f6f-9e91-44fc-af47-97667d62cf37",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C45",
+      "claim": "All other functional in vivo properties did not differ between lNAcc- and mNAcc-projecting VTA DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, all other functional in vivo properties \u2013 including analyzed AP waveform parameters - did not differ between the two populations (see Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical comparison showing no differences in other parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "d2c66a75-950f-45a1-aeef-d9f58e4013a6",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C46",
+      "claim": "The in vivo results showing higher firing rates in lateral shell NAcc-projecting DA neurons compared to medial shell NAcc DA neurons are surprising in light of previous in vitro data.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of the previous in vitro data, where medial shell NAcc-projecting DA neurons showed higher firing rates compared to lateral shell NAcc DA neurons, our in vivo results are surprising.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents an interpretation comparing current in vivo findings with prior in vitro studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "350beb27-ccce-4d9f-9640-f70c919be980",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C47",
+      "claim": "The longer in vivo pauses observed in medial shell NAcc projecting VTA DA neurons are in line with their very long in vitro post-inhibition rebound delays.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the longer in vivo pauses observed in medial shell NAcc projecting VTA DA neurons are in line with their very long in vitro post-inhibition rebound delays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents an interpretation connecting in vivo pause data with prior in vitro findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "c4c62a62-8b4b-4dd8-8af3-280fac5b3cb3",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C48",
+      "claim": "None of the subsets of variables used for linear discriminant analysis showed a segregation of lNAcc- and mNAcc-projecting mesolimbic DA populations above chance level.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that none of the subsets of variables used for linear discriminant analysis showed a segregation of these two mesolimbic DA populations above chance level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by linear discriminant analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "0e2c3cfb-0a99-483e-9441-c0e349bc4065",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C49",
+      "claim": "The success rate of identifying and labelling spontaneously active mPFC-projecting DA neurons was not sufficient (ca. 10%) to carry out a systematic study.",
+      "claim_type": "EXPLICIT",
+      "source": "While we succeeded in labelling and anatomically mapping this sparse DA subpopulation with our FG-3-protocol, the success rate of identifying and labelling spontaneously active mPFC-projecting DA neurons was not sufficient (ca. 10%) to carry out a systematic study (Figure 8\u2014figure supplement 2; 1 of 10 recorded and labelled VTA neurons was identified to be dopaminergic and projecting to mPFC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental recording data showing low success rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "a61503f0-ff17-4ee4-8e5d-9031f9aec906",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C50",
+      "claim": "All n = 102 DA neurons in this study were labelled and immunohistochemically identified, thus avoiding the uncertainties of 'putative' DA populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all n = 102 DA neurons in this study were labelled and immunohistochemically identified, thus avoiding the uncertainties of 'putative' DA populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a methodological feature of the study supported by the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "8087f9b3-6328-4104-a6a2-e043e7d4a982",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C51",
+      "claim": "The study controlled for functional perturbations by retrograde labelling itself, based on the high-dilution fluorogold protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our study controlled for functional perturbations by retrograde labelling itself, based on our high-dilution fluorogold protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a methodological feature validated by comparison with control neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "b84657f0-49ae-44a6-b2f4-489c03d384fa",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C52",
+      "claim": "The large degree of functional diversity regarding burst firing among SN DA neurons projecting to dorsolateral striatum was not anticipated.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not anticipate the large degree of functional diversity regarding burst firing among those SN DA neurons projecting to dorsolateral striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents an interpretation of the unexpected nature of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "9c1b0bca-9a71-4d56-b10e-a38875b29b1e",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C53",
+      "claim": "In vivo bursting of DA neurons in the medial SN was exclusively associated with cells projecting to lateral shell of nucleus accumbens.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we were surprised to find in vivo bursting of DA neurons in the medial SN to be exclusively associated with cells projecting to lateral shell of nucleus accumbens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing bursting only in lNAcc-projecting mSN neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "9b7daad5-8ce6-4491-a006-ea45fabaa047",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C54",
+      "claim": "The difference in mean firing rates between slower-discharging DA neurons projecting to medial shell and faster-firing DA neurons projecting to lateral shell of nucleus accumbens was unexpected given their respective intrinsic excitabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the difference in mean firing rates between slower-discharging DA neurons projecting to medial shell and faster-firing DA neurons projecting to lateral shell of nucleus accumbens was unexpected given their respective intrinsic excitabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents an interpretation comparing in vivo findings with prior in vitro data on intrinsic excitability.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "a9dcf1b1-b1c0-4fd5-9a4a-6816652fda0d",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C55",
+      "claim": "All in vivo electrophysiological data were recorded under isoflurane anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all in vivo electrophysiological data were recorded under isoflurane anesthesia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological constraint of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "94a10e0a-5752-405b-9cc5-92a24b797c36",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C56",
+      "claim": "The study cannot directly draw conclusions about behaviorally relevant activity patterns in DA subpopulations but rather identifies differences in in vivo baseline excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we cannot directly draw conclusions about behaviorally relevant activity patterns in DA subpopulations but rather identify differences in in vivo baseline excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents an acknowledgment of the study's limitations due to anesthesia.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "915ec764-5f7b-4c3e-b64b-e71b1f6e85cd",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C57",
+      "claim": "Differences in in vivo firing rates between VTA DA neurons identified under isoflurane anesthesia in a mouse model of cognitive impairment were recapitulated in awake behaving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also showed that differences in in vivo firing rates between VTA DA neurons identified under isoflurane anesthesia in a mouse model of cognitive impairment (Krabbe et al., 2015), were recapitulated in awake behaving animals (Duvarci et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies comparing anesthetized and awake recordings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "6b006de6-a556-48a4-ad98-81ff3eca5481",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C58",
+      "claim": "Task-related differences in firing were only revealed in awake behaving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the task-related differences in firing were only revealed in awake behaving animals (Duvarci et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work in awake animals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "3a317dee-b246-4eec-98cb-06c49f5cde4f",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C59",
+      "claim": "The mesocortical DA subpopulation might either be particularly vulnerable to the labelling protocol or mostly silent under isoflurane anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "The unique mismatch between the extent of retrograde labelling and the difficulty of identifying and recording mesocortical DA neurons in vivo indicated that this DA subpopulation might either be particularly vulnerable to our labelling protocol or mostly silent under isoflurane anesthesia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents speculation about the reasons for low recording success of mPFC-projecting neurons.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "50fcbb98-e46e-485f-bb6d-185227cfe4ea",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C60",
+      "claim": "Mesocortical DA neurons being mostly silent under isoflurane anesthesia is not unlikely given the evidence for orexinergic modulation of mesocortical DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter possibility is not unlikely given the evidence for orexinergic modulation of mesocortical DA neurons (Del Cid-Pellitero and Garz\u00f3n, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This speculation is supported by citation to prior work on orexinergic modulation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "d39435f9-a30f-47ed-91d3-763b239ce48e",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C61",
+      "claim": "The study focused on rostral striatal areas not covering the caudal 'tail' region, which is a projection area of DA neurons located in the SN pars lateralis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our study focused on rostral striatal areas not covering the caudal 'tail' region, which is a projection area of DA neurons located in the SN pars lateralis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation in the anatomical coverage of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "d0faf7a1-05ff-4455-9e35-d9138cb006ca",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C62",
+      "claim": "The DA projection to the caudal 'tail' region has been shown to be involved in the computing of aversive stimuli and stable visual memories in rodents and non-human primates.",
+      "claim_type": "EXPLICIT",
+      "source": "This DA projection has been shown to be involved in the computing of aversive stimuli and stable visual memories in rodents and non-human primates (Kim et al., 2017; Kim et al., 2015a; Matsumoto and Hikosaka, 2009; Menegas et al., 2018; Menegas et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "6afd3aaf-b6b2-4b29-822d-ef4bba0e3964",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C63",
+      "claim": "It is crucial to control whether labelling itself will change functional properties of targeted neurons in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that labelling of DA subpopulations \u2013 for identification and/or optogenetic manipulation \u2013 has become an essential tool, we believe it is crucial to control whether the labelling itself will change functional properties of the targeted neurons in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a methodological recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "c6ce10e1-2a41-4207-a6e1-b955624ba58c",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C64",
+      "claim": "Virally-mediated GFP-expression in SN DA neurons leads to robust changes in their intrinsic firing pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the effect of conventional concentrations of fluorogold, we have previously shown that virally-mediated GFP-expression in SN DA neurons leads to robust changes in their intrinsic firing pattern (Schiemann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work from the authors' lab.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "ac98cd1b-7bc6-477e-a136-9c53db1b0c9d",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C65",
+      "claim": "The findings are in line with a previous study that found differences in in vitro excitability, including T-type calcium channel mediated rebound excitability, between calbindin-positive and calbindin-negative SN DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While the underlying mechanisms need to be resolved, our findings are in line with a previous study from the Khaliq lab that found differences in in vitro excitability, including T-type calcium channel mediated rebound excitability, between calbindin-positive and calbindin-negative SN DA neurons (Evans et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects current findings with prior in vitro work through citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "9b587395-8b1c-49b0-a363-89420ef2bf97",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C66",
+      "claim": "DLS-projecting SN DA neurons have larger HCN-currents compared to DMS-projecting SN DA neurons, which might enhance rebound excitability and possibly in vivo bursting.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, Lerner and colleagues demonstrated larger HCN-currents in DLS-projecting SN DA neurons compared to DMS-projecting SN DA neurons, which might further enhance rebound excitability and possibly in vivo bursting (Lerner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work and includes speculation about functional implications.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "d77c3080-dc28-4f65-936e-8bb87283de87",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C67",
+      "claim": "Different degrees of activity-dependent calcium loading might play a crucial role for selective neurodegeneration in Parkinson disease.",
+      "claim_type": "EXPLICIT",
+      "source": "An influential hypothesis regarding the differential vulnerability between distinct DA subpopulations in Parkinson disease proposes that different degrees of activity-dependent calcium loading might play a crucial role for selective neurodegeneration (Surmeier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a hypothesis in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "57612f72-f98f-443c-b183-f3d3c3608187",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C68",
+      "claim": "The high in vivo burstiness of lateral SN DA neurons might be an attractive new target for protective intervention in Parkinson disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the lateral SN is the most vulnerable DA region in PD (Damier et al., 1999; Gibb and Lees, 1991), we believe that the high in vivo burstiness of lateral SN DA neurons might be an attractive new target for protective intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents speculation about therapeutic implications based on the study's findings and prior knowledge.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "723f6b8f-9207-47ca-b914-720d50931336",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C69",
+      "claim": "K-ATP channel dependent burst mechanisms might be operative in lateral shell-projecting rather than dorsal striatum-projecting DA neurons in the medial SN.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that K-ATP channel dependent burst mechanisms, which we previously identified to be selective for the medial SN (Schiemann et al., 2012), might be operative in lateral shell-projecting rather than dorsal striatum-projecting DA neurons in this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents inference based on current findings and prior work on burst mechanisms.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "608cd18a-15d3-4630-9bfa-8a3920fc02fc",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C70",
+      "claim": "Selective dysregulation in DA projections to dorsomedial striatum has been associated with schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism for this region-specific absence of bursting are currently unknown but might be highly relevant given that selective dysregulation in DA projections to dorsomedial striatum has been associated with schizophrenia (Kegeles et al., 2010; McCutcheon et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior clinical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "a228335f-5aa5-43d2-bbe0-239a71f81550",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C71",
+      "claim": "DA neurons become phase-locked to prefrontal 4 Hz rhythms during working memory tasks, which might result in rhythmic bursting.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we and others have recently shown that DA neurons become phase-locked to prefrontal 4 Hz rhythms during working memory tasks, which might also result in rhythmic bursting (Duvarci et al., 2018; Fujisawa and Buzs\u00e1ki, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies on DA neuron activity during behavior.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "85b21993-97eb-409f-b58c-0840c9c7d190",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C72",
+      "claim": "Mesolimbic DA neurons projecting to medial versus lateral shell of accumbens constitute two parallel pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our study gives further support to the idea that mesolimbic DA neurons projecting to medial versus lateral shell of accumbens constitute two parallel pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents an interpretation of the study's findings in the context of DA system organization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "c0c1573a-8909-411a-81de-f37b5f3704ca",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C73",
+      "claim": "Recent studies highlighted the differential functional roles of medial versus lateral shell NAcc DA projections, as well as their distinct circuit affiliations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies highlighted the differential functional roles of these DA projections, as well as their distinct circuit affiliations (de Jong et al., 2019; Lammel et al., 2012; Yang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "ae1b94b1-cb2f-46fe-9bbc-2da9b591595b",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C74",
+      "claim": "The firing frequency data suggest that medial and lateral shell projecting DA neurons operate at different baseline excitation/inhibition (E/I) setpoints in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our firing frequency data suggest that these two DA projections operate at different baseline excitation/inhibition (E/I) setpoints in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents an interpretation of the firing rate differences observed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "f3b0479b-9874-455c-82aa-a7897973cc60",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C75",
+      "claim": "Medial shell projecting DA neurons, which displayed high intrinsic excitability in vitro, discharged in vivo at a lower rate, which might be indicative for a higher degree of tonic net inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, medial shell projecting DA neurons, which displayed high intrinsic excitability associated with sustained high frequency firing in vitro (Lammel et al., 2008), discharged in vivo at a lower rate, which might be indicative for a higher degree of tonic net inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents an interpretation connecting in vivo and in vitro findings with speculation about network inhibition.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "fdac31f9-ce1a-4154-89e5-78a31abc84e7",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C76",
+      "claim": ">95% of retrogradely FG-3-labelled neurons in both the SN and the VTA were TH-positive (dopaminergic).",
+      "claim_type": "EXPLICIT",
+      "source": "Also,>95% of retrogradely FG-3-labelled neurons in both the SN and the VTA were TH-positive that is dopaminergic (99.23% of DLS-projecting midbrain neurons, 99.19% of DMS-projecting midbrain neurons, 98.57% of lNAcc-projecting neurons, 96.34% of mNAcc-projecting neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative immunohistochemical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "7425d0ca-2cc0-435d-b11e-e433fb7521a4",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C77",
+      "claim": "99.23% of DLS-projecting midbrain neurons were TH-positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Also,>95% of retrogradely FG-3-labelled neurons in both the SN and the VTA were TH-positive that is dopaminergic (99.23% of DLS-projecting midbrain neurons, 99.19% of DMS-projecting midbrain neurons, 98.57% of lNAcc-projecting neurons, 96.34% of mNAcc-projecting neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative immunohistochemical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "73cf4ffe-224c-496b-83c4-546965f84d9a",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C78",
+      "claim": "99.19% of DMS-projecting midbrain neurons were TH-positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Also,>95% of retrogradely FG-3-labelled neurons in both the SN and the VTA were TH-positive that is dopaminergic (99.23% of DLS-projecting midbrain neurons, 99.19% of DMS-projecting midbrain neurons, 98.57% of lNAcc-projecting neurons, 96.34% of mNAcc-projecting neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative immunohistochemical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "b0c8d82a-f9d5-499b-80f3-6b69b3ad2878",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C79",
+      "claim": "98.57% of lNAcc-projecting neurons were TH-positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Also,>95% of retrogradely FG-3-labelled neurons in both the SN and the VTA were TH-positive that is dopaminergic (99.23% of DLS-projecting midbrain neurons, 99.19% of DMS-projecting midbrain neurons, 98.57% of lNAcc-projecting neurons, 96.34% of mNAcc-projecting neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative immunohistochemical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "69663209-52ec-41d2-b52c-94d7527309b6",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C80",
+      "claim": "96.34% of mNAcc-projecting neurons were TH-positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Also,>95% of retrogradely FG-3-labelled neurons in both the SN and the VTA were TH-positive that is dopaminergic (99.23% of DLS-projecting midbrain neurons, 99.19% of DMS-projecting midbrain neurons, 98.57% of lNAcc-projecting neurons, 96.34% of mNAcc-projecting neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative immunohistochemical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "bb032c06-dfd7-4518-b41f-1553e1acc148",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "claim_id": "C81",
+      "claim": "Midbrain DA neurons were initially identified by their broad biphasic AP (>1.2 ms duration) and slow frequency (1-8 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Midbrain DA neurons were initially identified by their broad biphasic AP (>1.2 ms duration) and slow frequency (1\u20138 Hz) (Grace and Bunney, 1984; Ungless et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrophysiological criteria used for initial identification, supported by citations to established methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "877bf3a4-4b85-4fff-9253-07f76b8d02a1",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A highly diluted fluorogold (0.002%) retrograde tracing protocol was developed that preserves in vivo electrophysiological properties of dopamine neurons while enabling sufficient labeling for identification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C22 collectively demonstrate that conventional FG concentrations cause structural damage (C14), intermediate dilutions prevent recording (C16), but 0.002% FG enables both labeling (C17-C18) and preserves all electrophysiological properties (C21-C22). The systematic dilution series, immunohistochemical validation, and comprehensive electrophysiological comparisons provide strong converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "14bfe6f8-b22c-4c6d-85c8-329273d82240",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Anatomical mapping revealed that the medial SN contains intermingled DA neurons with three distinct projection targets (DLS, DMS, lNAcc), while lateral SN and VTA regions show dominant single projections, with minimal overlap between projection systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C29 provide comprehensive anatomical characterization showing agreement with prior studies (C23), quantitative distribution data (C24-C27), unique dual innervation of DLS (C28), and low double-labeling rates (C29). The convergent anatomical and double-tracing data strongly support the organizational complexity described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "43c5b4e7-dc78-42f8-8004-bd172d001cc3",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DLS-projecting DA neurons in lateral SN show robust bursting (40% with SFB >5%), while those in medial SN show no bursting, with populations distinguishable by linear discriminant analysis at 79.2% predictive power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 demonstrate a clear functional dichotomy in burst firing between lSN and mSN neurons projecting to the same target (DLS). The quantitative burst analysis (C33-C34) and successful classification by LDA (C35-C36) provide strong statistical support for this topographic functional diversity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "cde06fee-a8bd-49c0-95bc-69a901a84b02",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Medial SN DA neurons projecting to DLS versus DMS showed no electrophysiological differences, with linear discriminant analysis performing at chance level (50.9%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 demonstrate absence of functional differences between DLS- and DMS-projecting mSN neurons through comprehensive parameter comparison and failed classification. The negative result is well-supported by statistical analysis showing no discrimination ability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "ef58f505-3f09-41d8-916a-9a724502efb5",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Medial SN DA neurons projecting to dorsal versus ventral striatum showed significant differences in burst and pause patterns, with 70.8% predictive classification power, and no differences between mSN and VTA neurons projecting to lateral NAcc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C41 show differences in firing patterns between dorsal and ventral striatum-projecting mSN neurons, but the LDA shows only a trend (p<0.07, C40), not reaching conventional significance. While 84.4% classification on full dataset (C41) is high, this may reflect overfitting. The result requires validation with larger sample sizes or independent datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "29ae5295-b988-49fd-8e08-b50b2c02cb65",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "VTA DA neurons projecting to lateral shell NAcc have higher firing rates and shorter pause durations than those projecting to medial shell NAcc, with no other functional differences and no successful LDA classification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 demonstrate selective differences in firing rate and pause duration between lNAcc- and mNAcc-projecting neurons, supported by population-level data. Claims C46-C47 appropriately contextualize these findings relative to prior in vitro work. The failure of LDA (C48) is consistent with only two parameters differing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "a93713f3-6ba3-405d-8a35-69a1af0865b3",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Isoflurane anesthesia conditions were well-controlled and validated, with firing properties comparable to awake recordings and no correlation between anesthesia depth variations and neuronal activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 provide multiple lines of validation for the anesthesia protocol: lack of correlation with firing properties (C30), suppression of oscillatory activity (C31), and comparison with prior awake recordings (C32). These controls strengthen confidence in the physiological relevance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "a62a0bf3-a1e3-482f-88a4-ed0c053c6085",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "All recorded neurons were immunohistochemically verified as dopaminergic (>95% TH-positive across all projection groups), avoiding uncertainties of putative identification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 and C76-C80 establish rigorous methodological standards with quantitative verification showing 96-99% of retrogradely labeled neurons were TH-positive across all projection groups. This provides strong validation of cell type identification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "2ab22fba-bb24-43da-bb98-9e7a722b8b09",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mesocortical DA neurons could not be systematically studied due to low recording success rate (~10%), possibly due to vulnerability to labeling or silence under anesthesia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C59-C60 acknowledge a limitation of the study with quantitative data (10% success rate, C49) and provide plausible mechanistic explanations supported by citation to orexinergic modulation (C60). The transparent reporting of this limitation is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "dfc62201-910b-40a8-9699-19cb53b84427",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "All recordings were performed under anesthesia, limiting direct conclusions about behaviorally relevant activity but identifying baseline excitability differences that have been validated in some cases by awake recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 appropriately acknowledge the major limitation of anesthetized recordings (C55-C56) while providing evidence that some findings translate to awake conditions (C57) though task-related differences require awake recordings (C58). This represents a balanced assessment of the study's scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "87ad0f27-01a5-4073-9c39-ed4bfaaf6d38",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work has established functional diversity of DA neurons across multiple scales, projection-specific biophysical properties, and differential involvement in neurological and psychiatric disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C13 summarize established knowledge from prior literature with appropriate citations. These claims provide context for the current study and are well-supported by the cited references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "e69025e7-3425-406e-9894-b9e7a7613be0",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study did not cover the caudal striatal 'tail' region, which receives DA projections from SN pars lateralis and is involved in aversive stimuli and visual memory processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 acknowledge an anatomical limitation of the study and cite relevant prior work on the functional importance of the excluded region. This represents appropriate transparency about study scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "fb9b7e05-4af1-467a-a1a9-c1c49860243b",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Labeling methods themselves can alter neuronal properties, as demonstrated previously with viral GFP expression and conventional fluorogold concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 highlight an important methodological consideration supported by prior work from the authors' lab (C64). This provides rationale for the careful validation performed in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "decb40c3-ea45-4659-84b8-7d3b6774fe1b",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The observed burst firing differences may relate to calcium channel properties, HCN currents, and K-ATP channels, with potential implications for Parkinson's disease vulnerability and schizophrenia pathophysiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C71 provide mechanistic speculation and discuss pathophysiological implications, appropriately supported by citations to relevant literature. However, these remain speculative connections (C66, C68, C69, C71) requiring direct experimental validation. The claims appropriately use conditional language ('might be', 'may relate').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    },
+    {
+      "id": "c3e32797-9a81-49b9-bfe1-c8a4346d5bd6",
+      "content_id": "2ffa57de-7aeb-49b1-b2b3-016c6a815c16",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Medial and lateral shell NAcc-projecting DA neurons constitute parallel pathways operating at different baseline excitation/inhibition setpoints, with firing rate differences suggesting differential tonic inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C75 provide interpretation of the firing rate differences (C43-C44) in terms of network properties and E/I balance. While the interpretation is plausible and supported by citations to recent functional studies (C73), the inference about tonic inhibition (C75) remains speculative without direct measurement of synaptic inputs or network activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:29.219632Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "75ec8724-0a59-4ce9-b6fd-a68e443b684c",
+      "result_id": "877bf3a4-4b85-4fff-9253-07f76b8d02a1"
+    },
+    {
+      "claim_id": "5dbcf6af-7f4c-4cfb-9555-fdcbe08f9671",
+      "result_id": "877bf3a4-4b85-4fff-9253-07f76b8d02a1"
+    },
+    {
+      "claim_id": "f7f277a6-970a-4fb2-877e-1e516b4bea3e",
+      "result_id": "877bf3a4-4b85-4fff-9253-07f76b8d02a1"
+    },
+    {
+      "claim_id": "65c3c75e-96f9-4091-9edf-5c9fa6dc0bd3",
+      "result_id": "877bf3a4-4b85-4fff-9253-07f76b8d02a1"
+    },
+    {
+      "claim_id": "cdbd9ee1-9ab6-4937-8e50-1d331ea21e8a",
+      "result_id": "877bf3a4-4b85-4fff-9253-07f76b8d02a1"
+    },
+    {
+      "claim_id": "33aeeb8c-588b-4795-903a-00c1b5351ce3",
+      "result_id": "877bf3a4-4b85-4fff-9253-07f76b8d02a1"
+    },
+    {
+      "claim_id": "9f0be5fc-19f1-4f8b-a1d0-55e50c105a07",
+      "result_id": "877bf3a4-4b85-4fff-9253-07f76b8d02a1"
+    },
+    {
+      "claim_id": "63f58114-c6dd-48d1-8591-a962cbd67522",
+      "result_id": "877bf3a4-4b85-4fff-9253-07f76b8d02a1"
+    },
+    {
+      "claim_id": "65d3426c-b661-4a02-9da6-88cc70a5f0b0",
+      "result_id": "877bf3a4-4b85-4fff-9253-07f76b8d02a1"
+    },
+    {
+      "claim_id": "b691407d-53d0-4138-bc52-a184b98bf9f5",
+      "result_id": "14bfe6f8-b22c-4c6d-85c8-329273d82240"
+    },
+    {
+      "claim_id": "61d3979c-e095-4082-b791-358fe4785147",
+      "result_id": "14bfe6f8-b22c-4c6d-85c8-329273d82240"
+    },
+    {
+      "claim_id": "2c68d10b-57a4-4642-bb31-f68ebb5aeae6",
+      "result_id": "14bfe6f8-b22c-4c6d-85c8-329273d82240"
+    },
+    {
+      "claim_id": "5aba3c03-ee9f-4e2e-901d-4827a5a5335e",
+      "result_id": "14bfe6f8-b22c-4c6d-85c8-329273d82240"
+    },
+    {
+      "claim_id": "f746184a-dee7-436a-a1bd-1d34d986b186",
+      "result_id": "14bfe6f8-b22c-4c6d-85c8-329273d82240"
+    },
+    {
+      "claim_id": "81c44476-8fb8-47d1-a5e7-43b044e85e9e",
+      "result_id": "14bfe6f8-b22c-4c6d-85c8-329273d82240"
+    },
+    {
+      "claim_id": "725b5964-0623-4c07-918b-ec6f5b50bbea",
+      "result_id": "14bfe6f8-b22c-4c6d-85c8-329273d82240"
+    },
+    {
+      "claim_id": "bc408ab1-011d-4650-a194-31b13a63d220",
+      "result_id": "43c5b4e7-dc78-42f8-8004-bd172d001cc3"
+    },
+    {
+      "claim_id": "da5162c9-80b8-4aed-8495-04180e980f55",
+      "result_id": "43c5b4e7-dc78-42f8-8004-bd172d001cc3"
+    },
+    {
+      "claim_id": "4f6192c1-66a2-4f66-9ed9-5982c3a8b0da",
+      "result_id": "43c5b4e7-dc78-42f8-8004-bd172d001cc3"
+    },
+    {
+      "claim_id": "b5a82200-e295-4453-8318-d5a1c449bc87",
+      "result_id": "43c5b4e7-dc78-42f8-8004-bd172d001cc3"
+    },
+    {
+      "claim_id": "b09441ea-f42b-4c46-bdc6-b3892926773a",
+      "result_id": "cde06fee-a8bd-49c0-95bc-69a901a84b02"
+    },
+    {
+      "claim_id": "34682092-d0b9-4756-b8f9-b65a2f05591d",
+      "result_id": "cde06fee-a8bd-49c0-95bc-69a901a84b02"
+    },
+    {
+      "claim_id": "04c028d0-f431-4531-acd4-37bb8498c318",
+      "result_id": "ef58f505-3f09-41d8-916a-9a724502efb5"
+    },
+    {
+      "claim_id": "8ddfe6fd-ea65-4a0e-ab18-22ae6c50e715",
+      "result_id": "ef58f505-3f09-41d8-916a-9a724502efb5"
+    },
+    {
+      "claim_id": "ae71ef8d-76ac-4daf-ad35-926a5af7fef3",
+      "result_id": "ef58f505-3f09-41d8-916a-9a724502efb5"
+    },
+    {
+      "claim_id": "8e148155-fa7e-4da5-9fe3-4492dbad349f",
+      "result_id": "ef58f505-3f09-41d8-916a-9a724502efb5"
+    },
+    {
+      "claim_id": "35f11593-cc37-46e3-825f-376e6ea94421",
+      "result_id": "29ae5295-b988-49fd-8e08-b50b2c02cb65"
+    },
+    {
+      "claim_id": "faa940f3-8be3-47a6-9085-176e0e2b285a",
+      "result_id": "29ae5295-b988-49fd-8e08-b50b2c02cb65"
+    },
+    {
+      "claim_id": "36ec4f6f-9e91-44fc-af47-97667d62cf37",
+      "result_id": "29ae5295-b988-49fd-8e08-b50b2c02cb65"
+    },
+    {
+      "claim_id": "d2c66a75-950f-45a1-aeef-d9f58e4013a6",
+      "result_id": "29ae5295-b988-49fd-8e08-b50b2c02cb65"
+    },
+    {
+      "claim_id": "350beb27-ccce-4d9f-9640-f70c919be980",
+      "result_id": "29ae5295-b988-49fd-8e08-b50b2c02cb65"
+    },
+    {
+      "claim_id": "c4c62a62-8b4b-4dd8-8af3-280fac5b3cb3",
+      "result_id": "29ae5295-b988-49fd-8e08-b50b2c02cb65"
+    },
+    {
+      "claim_id": "0b5cb59a-ec46-4cc1-b41a-521e86ec7bae",
+      "result_id": "a93713f3-6ba3-405d-8a35-69a1af0865b3"
+    },
+    {
+      "claim_id": "baebfe4a-1b7a-46d0-b736-81e075129b9e",
+      "result_id": "a93713f3-6ba3-405d-8a35-69a1af0865b3"
+    },
+    {
+      "claim_id": "65a31d82-1cf5-490e-b85e-53a21b0ca8c1",
+      "result_id": "a93713f3-6ba3-405d-8a35-69a1af0865b3"
+    },
+    {
+      "claim_id": "a61503f0-ff17-4ee4-8e5d-9031f9aec906",
+      "result_id": "a62a0bf3-a1e3-482f-88a4-ed0c053c6085"
+    },
+    {
+      "claim_id": "8087f9b3-6328-4104-a6a2-e043e7d4a982",
+      "result_id": "a62a0bf3-a1e3-482f-88a4-ed0c053c6085"
+    },
+    {
+      "claim_id": "fdac31f9-ce1a-4154-89e5-78a31abc84e7",
+      "result_id": "a62a0bf3-a1e3-482f-88a4-ed0c053c6085"
+    },
+    {
+      "claim_id": "7425d0ca-2cc0-435d-b11e-e433fb7521a4",
+      "result_id": "a62a0bf3-a1e3-482f-88a4-ed0c053c6085"
+    },
+    {
+      "claim_id": "73cf4ffe-224c-496b-83c4-546965f84d9a",
+      "result_id": "a62a0bf3-a1e3-482f-88a4-ed0c053c6085"
+    },
+    {
+      "claim_id": "b0c8d82a-f9d5-499b-80f3-6b69b3ad2878",
+      "result_id": "a62a0bf3-a1e3-482f-88a4-ed0c053c6085"
+    },
+    {
+      "claim_id": "69663209-52ec-41d2-b52c-94d7527309b6",
+      "result_id": "a62a0bf3-a1e3-482f-88a4-ed0c053c6085"
+    },
+    {
+      "claim_id": "0e2c3cfb-0a99-483e-9441-c0e349bc4065",
+      "result_id": "2ab22fba-bb24-43da-bb98-9e7a722b8b09"
+    },
+    {
+      "claim_id": "3a317dee-b246-4eec-98cb-06c49f5cde4f",
+      "result_id": "2ab22fba-bb24-43da-bb98-9e7a722b8b09"
+    },
+    {
+      "claim_id": "50fcbb98-e46e-485f-bb6d-185227cfe4ea",
+      "result_id": "2ab22fba-bb24-43da-bb98-9e7a722b8b09"
+    },
+    {
+      "claim_id": "a9dcf1b1-b1c0-4fd5-9a4a-6816652fda0d",
+      "result_id": "dfc62201-910b-40a8-9699-19cb53b84427"
+    },
+    {
+      "claim_id": "94a10e0a-5752-405b-9cc5-92a24b797c36",
+      "result_id": "dfc62201-910b-40a8-9699-19cb53b84427"
+    },
+    {
+      "claim_id": "915ec764-5f7b-4c3e-b64b-e71b1f6e85cd",
+      "result_id": "dfc62201-910b-40a8-9699-19cb53b84427"
+    },
+    {
+      "claim_id": "6b006de6-a556-48a4-ad98-81ff3eca5481",
+      "result_id": "dfc62201-910b-40a8-9699-19cb53b84427"
+    },
+    {
+      "claim_id": "6db4160f-10d7-4c56-81ca-14790b34997a",
+      "result_id": "87ad0f27-01a5-4073-9c39-ed4bfaaf6d38"
+    },
+    {
+      "claim_id": "f918210e-ee92-4f6e-b622-025c7cc0bd5d",
+      "result_id": "87ad0f27-01a5-4073-9c39-ed4bfaaf6d38"
+    },
+    {
+      "claim_id": "8b57d308-ed29-4c60-b18a-2c3c71347749",
+      "result_id": "87ad0f27-01a5-4073-9c39-ed4bfaaf6d38"
+    },
+    {
+      "claim_id": "b1c7d418-bcd6-45d3-85e2-c4380e19e823",
+      "result_id": "87ad0f27-01a5-4073-9c39-ed4bfaaf6d38"
+    },
+    {
+      "claim_id": "e5cb8b81-ed54-4d4c-881e-0284e5d01ec8",
+      "result_id": "87ad0f27-01a5-4073-9c39-ed4bfaaf6d38"
+    },
+    {
+      "claim_id": "cc5ac5e0-b558-40f3-bb24-d65c0fbb30de",
+      "result_id": "87ad0f27-01a5-4073-9c39-ed4bfaaf6d38"
+    },
+    {
+      "claim_id": "cabb4486-0b94-4bc2-ad30-894e1a332e93",
+      "result_id": "87ad0f27-01a5-4073-9c39-ed4bfaaf6d38"
+    },
+    {
+      "claim_id": "de55cc3c-bff5-4119-b56f-6ad3888ebe91",
+      "result_id": "87ad0f27-01a5-4073-9c39-ed4bfaaf6d38"
+    },
+    {
+      "claim_id": "8c15255f-7b07-4472-ad96-1f1bbb286c8d",
+      "result_id": "87ad0f27-01a5-4073-9c39-ed4bfaaf6d38"
+    },
+    {
+      "claim_id": "d39435f9-a30f-47ed-91d3-763b239ce48e",
+      "result_id": "e69025e7-3425-406e-9894-b9e7a7613be0"
+    },
+    {
+      "claim_id": "d0faf7a1-05ff-4455-9e35-d9138cb006ca",
+      "result_id": "e69025e7-3425-406e-9894-b9e7a7613be0"
+    },
+    {
+      "claim_id": "6afd3aaf-b6b2-4b29-822d-ef4bba0e3964",
+      "result_id": "fb9b7e05-4af1-467a-a1a9-c1c49860243b"
+    },
+    {
+      "claim_id": "c6ce10e1-2a41-4207-a6e1-b955624ba58c",
+      "result_id": "fb9b7e05-4af1-467a-a1a9-c1c49860243b"
+    },
+    {
+      "claim_id": "ac98cd1b-7bc6-477e-a136-9c53db1b0c9d",
+      "result_id": "decb40c3-ea45-4659-84b8-7d3b6774fe1b"
+    },
+    {
+      "claim_id": "9b587395-8b1c-49b0-a363-89420ef2bf97",
+      "result_id": "decb40c3-ea45-4659-84b8-7d3b6774fe1b"
+    },
+    {
+      "claim_id": "d77c3080-dc28-4f65-936e-8bb87283de87",
+      "result_id": "decb40c3-ea45-4659-84b8-7d3b6774fe1b"
+    },
+    {
+      "claim_id": "57612f72-f98f-443c-b183-f3d3c3608187",
+      "result_id": "decb40c3-ea45-4659-84b8-7d3b6774fe1b"
+    },
+    {
+      "claim_id": "723f6b8f-9207-47ca-b914-720d50931336",
+      "result_id": "decb40c3-ea45-4659-84b8-7d3b6774fe1b"
+    },
+    {
+      "claim_id": "608cd18a-15d3-4630-9bfa-8a3920fc02fc",
+      "result_id": "decb40c3-ea45-4659-84b8-7d3b6774fe1b"
+    },
+    {
+      "claim_id": "a228335f-5aa5-43d2-bbe0-239a71f81550",
+      "result_id": "decb40c3-ea45-4659-84b8-7d3b6774fe1b"
+    },
+    {
+      "claim_id": "85b21993-97eb-409f-b58c-0840c9c7d190",
+      "result_id": "c3e32797-9a81-49b9-bfe1-c8a4346d5bd6"
+    },
+    {
+      "claim_id": "c0c1573a-8909-411a-81de-f37b5f3704ca",
+      "result_id": "c3e32797-9a81-49b9-bfe1-c8a4346d5bd6"
+    },
+    {
+      "claim_id": "ae1b94b1-cb2f-46fe-9bbc-2da9b591595b",
+      "result_id": "c3e32797-9a81-49b9-bfe1-c8a4346d5bd6"
+    },
+    {
+      "claim_id": "f3b0479b-9874-455c-82aa-a7897973cc60",
+      "result_id": "c3e32797-9a81-49b9-bfe1-c8a4346d5bd6"
+    }
+  ],
+  "comparisons": []
+}

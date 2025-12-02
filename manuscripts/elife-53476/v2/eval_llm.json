@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C50",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors established a calibrated deep mutational scanning selection system for DHFR in E. coli with DHFR abundance at ~10% of endogenous levels. Selection coefficients from this system correlate linearly with growth rates and in vitro enzymatic velocity over approximately 3 orders of magnitude, with high reproducibility (R\u00b2 = 0.70 between replicates, median standard deviation = 0.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 describe the experimental system design and validation. The calibration data (C10-C12) demonstrate that selection coefficients quantitatively report on DHFR activity. The reproducibility metrics (C61-C63) show acceptable technical quality. The system design (C8-C9, C50) is clearly described and validated through multiple independent measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C60"
+    ],
+    "result": "Deep mutational scanning in the absence of Lon revealed that 23.3% (736/3161) of all single point mutations in DHFR are advantageous, with advantageous mutations widely distributed across 127 of 159 positions. Wild-type DHFR ranked only 1203rd, and top variants (W47L, L24V) showed growth rate increases of 40% and 76% respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13-C15 present consistent quantitative findings from the -Lon deep mutational scanning experiment. The widespread distribution of advantageous mutations is directly shown in the data (C15). Individual validation of top mutants (C60) confirms the deep sequencing results. The findings are internally consistent and well-supported by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C56"
+    ],
+    "result": "The selection strain, like most B-type E. coli expression strains, is naturally deficient in Lon protease due to an IS186 insertion in the lon promoter. Lon is a major protein quality control protease that degrades poorly folded proteins and had previously been implicated in degrading unstable DHFR variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16-C19, C56 establish the genetic and functional context for Lon deficiency. These are well-supported by multiple citations to prior work (C16-C19) and represent established knowledge about E. coli strain genetics (C1, C56). The prior work on Lon and DHFR (C18-C19) provides important context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Reintroducing Lon expression largely suppressed advantageous mutations: the number of advantageous mutations decreased from 737 to 384, their mean selection coefficient decreased from 0.47 to 0.37, and wild-type DHFR's rank improved by 341 positions to 864th. The median rank of wild-type residues across all positions improved from 8th to 5th.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C23 present consistent quantitative comparisons between \u00b1Lon conditions from replicate deep mutational scanning experiments. The multiple metrics (count, mean coefficient, WT rank, per-position WT rank) all consistently show Lon suppresses advantageous mutations. The +Lon experiment had comparable quality to -Lon (reproducibility data provided).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "K-means clustering analysis revealed that Lon reintroduction dramatically altered the mutational landscape: Beneficial positions decreased from 28 (17.6%) to 10, with only three surface-exposed positions (E48, T68, D127) remaining Beneficial in both conditions. Simultaneously, Restricted positions increased from 42 to 67.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 describe results from K-means clustering analysis that categorizes positions by mutational response. The clustering methodology is described in Methods. The quantitative changes are consistent with the overall shift in the mutational landscape (C20-C23). The identification of specific positions (C26) provides structural insight into Lon-insensitive mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Structural analysis of \u0394selection coefficients (difference between +Lon and -Lon) revealed that Lon has broad impact throughout DHFR but imposes particularly strong constraints in the protein core. The mean \u0394selection coefficient was -0.71 for 65 buried positions (<20% SASA) compared to -0.27 for 79 exposed positions, with mutations at hydrophobic positions enriched for negative \u0394selection coefficients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 present structural analysis correlating Lon sensitivity with burial and hydrophobicity. The quantitative differences between buried and exposed positions (C29-C30) are substantial and consistent with Lon targeting destabilized proteins. The conclusion (C31) appropriately summarizes the structural pattern. The SASA calculations are described in Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Characterization of 24 selected advantageous mutants revealed that they have higher cytosolic DHFR activity in -Lon lysates. At 20 \u00b5M DHF, 16 mutants had velocities equal to or up to 3-fold higher than wild-type, while 8 had velocities up to 2-fold lower. Mutant abundance varied from near wild-type to 20-fold higher in -Lon conditions, and decreased for most mutants when Lon was present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 describe in vitro and lysate characterization of selected mutants. The lysate activity measurements (C32) confirm the selection results. The velocity measurements (C33-C34) show that increased activity alone cannot explain all advantageous mutations. The abundance measurements (C35-C36) demonstrate Lon's effect on protein levels. Multiple independent measurements support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C42"
+    ],
+    "result": "Thermal denaturation measurements revealed that many advantageous mutations considerably destabilized DHFR. The \u0394selection coefficients correlate with Tm values (except for active site mutations), and when comparing mutations at the same position, changes in \u0394selection coefficients correlate with changes in Tm. These data indicate that widespread changes in the mutational landscape can be explained by a penalty for destabilizing mutations from Lon expression, leading to extensive activity-stability tradeoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C42 present stability measurements and their correlation with Lon sensitivity. The Tm measurements (C37) directly demonstrate destabilization. The correlations (C38-C39) mechanistically link destabilization to Lon sensitivity. The conclusion (C42) appropriately integrates stability, activity, and selection data. The exception for active site mutations (C38) is appropriately noted and consistent with their different mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Spatial analysis revealed that in -Lon conditions, mutational responses are arranged in shells around the hydride transfer site, with the proportion of advantageous mutations increasing with distance. In +Lon selection, this pattern persists but is superimposed with pressure against destabilizing mutations such that no Beneficial positions remain in the protein core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe spatial patterns in the mutational landscape relative to the catalytic site. The shell-like arrangement (C43-C44) is shown in Figure 5 and consistent with functional constraints radiating from the active site. The absence of core Beneficial positions in +Lon (C45) is consistent with the burial analysis (C29-C31) and demonstrates how two constraints (catalytic function and stability) combine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "While Lon expression increases both the relative rank of wild-type DHFR and similarity to bacterial DHFR orthologues, substantial differences remain: 384 advantageous mutants still rank better than wild-type even with Lon present, and amino acid preferences in the two selection experiments (\u00b1Lon) are more similar to each other than either is to preferences from bacterial DHFR orthologues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 compare the experimental results to evolutionary sequences. The profile similarity analysis (C47, C49) is described in Methods. The persistence of many advantageous mutations even with Lon (C48) is directly observed. These findings appropriately acknowledge that the experimental system does not fully recapitulate natural selection, setting up the Discussion's consideration of why experimental and evolutionary landscapes differ.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors discuss that endogenous DHFR is expected to be buffered from mutational impacts: increasing DHFR activity/abundance several-fold above wild-type does not increase fitness, reducing abundance below 30% is required for growth impact, chromosomal DHFR selection showed no strong effects without trimethoprim, and chromosomal DHFR expression is modulated by feedback mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 present context from prior work explaining why the experimental landscape differs from evolution. These are supported by appropriate citations (C52-C55) and represent reasonable inferences about buffering (C51). This contextualizes why advantageous mutations in the engineered system may not be advantageous in nature. The logic is sound and appropriately caveated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "DHFR is an essential enzyme in folate metabolism that reduces dihydrofolate to tetrahydrofolate and progresses through multiple conformational states during catalysis. Prior work suggested DHFR is impacted by cellular constraints such as protein quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 provide established background on DHFR function and prior work. C5 is basic biochemical knowledge. C6 is supported by citations and illustrated in supplementary figures. C7 cites prior work that motivated the current study. These provide appropriate scientific context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Product release is rate limiting for wild-type DHFR at neutral pH, and a hyperactive DHFR mutant with 7-fold increased kcat has been previously characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 cite prior work to provide mechanistic context for how destabilizing mutations might increase activity by promoting conformational dynamics. These are appropriately cited and provide plausible mechanistic explanation for the subset of destabilizing mutations with increased kcat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Prior work has shown that chaperones like GroEL in bacteria and Hsp90 in eukaryotes impact mutation effects, with Hsp90 buffering deleterious mutations. Lon inactivation has been shown to increase antibiotic resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 cite prior work on other proteostasis components and Lon's role in antibiotic resistance. These are appropriately cited and provide broader context for the findings. The comparison to chaperones (C57-C58) helps frame Lon's opposite role in constraining rather than buffering mutations.",
+    "result_type": "MINOR"
+  }
+]

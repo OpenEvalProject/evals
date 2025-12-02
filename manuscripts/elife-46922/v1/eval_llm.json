@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C46",
+      "C47"
+    ],
+    "result": "The CEPH/Utah dataset comprises 33 three-generation families with 603 individuals sequenced to ~30X depth, after removing 10 samples following quality control. These pedigrees have considerably more offspring (median=8, range 4-16) than prior studies, with birth dates spanning up to 27 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C46-C47 provide consistent descriptions of the dataset structure and sequencing depth. The data are directly stated and corroborated by supplementary files and figures. The quality control procedure using peddy is standard and appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C102",
+      "C103"
+    ],
+    "result": "4,671 germline de novo mutations were identified in 70 second-generation individuals, of which ~92% were SNVs. The false positive rate was estimated at 4.5% by re-sequencing eight parents to 60X depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C102-C103 describe DNM identification with validation by transmission to third generation and re-sequencing. The false positive rate estimation (9/202 = 4.5%) is based on direct observation in high-coverage data and is appropriately calculated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C97",
+      "C98"
+    ],
+    "result": "The median germline mutation rates were 1.10\u00d710\u207b\u2078 per bp per generation for SNVs and 9.29\u00d710\u207b\u00b9\u2070 for indels, corresponding to ~70.1 SNVs and ~5.9 indels per genome at average parental ages of 29.1 (paternal) and 26.0 (maternal) years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C97-C98 present mutation rate calculations based on callable genome fractions (median 2.58 Gbp) and observed DNM counts. The rates are consistent with prior studies (cited) and the extrapolation to per-genome counts uses standard methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C96"
+    ],
+    "result": "Parent-of-origin was determined for a median of 98.5% of second-generation DNMs using haplotype sharing and read tracing, revealing a 3.96:1 paternal-to-maternal ratio (79.8% paternal). The two phasing methods showed 98.8% concordance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C96 describe phasing methodology and results. The high phasing rate is enabled by three-generation structure, and the concordance between methods validates the approach. The paternal bias is consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Significant parental age effects were observed: 1.44 additional DNMs per year of paternal age (95% CI: 1.12-1.77, p<2e-16) and 0.38 additional DNMs per year of maternal age (95% CI: 0.21-0.55, p=1.24e-5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 report Poisson regression results with appropriate confidence intervals and highly significant p-values. The effect sizes are consistent with prior studies and the statistical approach is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Maternal mutations showed enrichment of C>T transitions in non-CpG context (p=7.65e-6) and paternal mutations showed enrichment of T>G transversions (p=4.93e-3). No significant differences in mutational spectra were found between children of older versus younger parents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 describe mutation spectrum differences by parent-of-origin using chi-squared tests. The findings replicate prior observations (C18), and the lack of age-related spectrum differences (C19) is appropriately qualified as potentially underpowered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "24,975 de novo mutations were detected in 350 third-generation individuals. Parent-of-origin was determined for 5,336 (21%) using read tracing, with 78.7% assigned to fathers. The overall paternal age effect was 1.72 DNMs per year (95% CI: 1.58-1.85, p<2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 describe third-generation DNM identification and phasing. The lower phasing rate (21% vs 98.5% in generation 2) is expected without grandparental haplotype information. The paternal age effect is consistent with second-generation findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Paternal age effects varied significantly across families, ranging from 0.19 to 3.24 additional DNMs per year. A family-aware regression model significantly improved fit over models ignoring family membership (p=9.36e-10), and the interaction between paternal age and family was significant (p=0.043), suggesting substantial inter-family variability potentially involving genetic and environmental factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26, C62-C64 demonstrate inter-family variability using appropriate statistical models (Poisson regression with interaction terms) and ANOVA comparisons. The wide confidence intervals for some families (noted in C24) are acknowledged. The interpretation (C64) appropriately qualifies findings as suggestive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "720 germline mosaic mutations at 303 unique sites were identified, representing ~3.1% of third-generation DNMs. These mutations arose during or after primordial germ cell specification (PGCS) and were sex-balanced (47.7% paternal), suggesting they occurred irrespective of parental sex biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C65-C68 describe post-PGCS mosaic mutations shared between siblings. The identification strategy (shared DNMs absent from parents) is sound, visual validation was performed, and the sex-balance supports the interpretation of post-PGCS timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Germline mosaic DNMs showed significantly different mutation spectra compared to single-gamete germline DNMs, with enrichments of CpG>TpG and C>A mutations and depletion of T>C mutations. The CpG>TpG enrichment may relate to spontaneous deamination of methylated cytosine during dynamic DNA methylation reprogramming in gametogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35, C73-C75 describe mutation spectrum differences with statistical support. The mechanistic interpretation (C34-C35, C75) linking CpG>TpG enrichment to methylation dynamics is appropriately speculative and supported by citations to mouse gametogenesis studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The number of shared germline mosaic DNMs does not increase with paternal age (p=0.647), but the proportion of mosaic DNMs significantly decreases with paternal age (p=1.61e-5). Neither mosaic fraction nor count was significantly associated with number of siblings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 describe age effects on mosaic mutations with appropriate statistical tests. The findings are consistent with expectations that early mutations comprise larger fractions in younger fathers. The control for sibling number addresses a potential confounding factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "475 gonosomal DNMs were identified, representing ~9% of candidate second-generation germline mutations. These post-zygotic mutations were sex-balanced (52% paternal) and showed no parental age effects, consistent with arising after fertilization. Approximately 6% of high-confidence candidates (allele balance \u22650.2) were gonosomal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45, C77-C80 describe gonosomal mutation identification using incomplete linkage patterns. The sex-balance and lack of age effects support post-zygotic timing. The methodology is validated by visual inspection, though limitations are acknowledged (C92-C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "A substantial fraction of germline DNM datasets may comprise post-zygotic mutations. The gonosomal count may be underestimated due to heterozygosity requirements, and mosaicism may extend beyond blood to other somatic tissues. The study was likely underpowered to detect maternal age effects on gonosomal DNMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 appropriately discuss limitations and implications. The acknowledgment of potential underestimation (C92) and tissue sampling limitations (C93) demonstrates appropriate scientific caution. The power limitation (C95) is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The missed heterozygote rate was estimated at 0.4% by identifying third-generation DNMs with grandparental support. This is likely a slight underestimate due to six unsequenced grandparents in five families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 describe estimation of false negative rate using grandparental genotypes. The calculation (100/25,075) is straightforward and the acknowledgment of potential underestimation due to missing data is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The CEPH/Utah pedigree structure enables haplotype sharing through three generations for parent-of-origin determination. These families have historically contributed to human genetics through the Human Genome Project, HapMap, and 1000 Genomes Project.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 describe the utility and historical importance of CEPH/Utah families. The statements are well-supported by citations and accurately represent the role of these families in genomics research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "DNMs are important sources of genetic disease. Pedigree-based sequencing studies have produced mutation rate estimates ~2-fold lower than phylogenetic estimates and demonstrated age effects attributable to mitotic divisions, damage accumulation, and epigenetic reprogramming. Prior studies suggested inter-family variability but were limited by small family sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 provide appropriate background context supported by citations. The summary of prior work accurately represents the field and motivates the current study's focus on large pedigrees.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Germline mosaicism has broad implications for disease recurrence risk estimation. Approximately 3% of germline DNMs originated as mosaics, corroborating recent reports that substantial fractions of germline DNMs may be recurrent within families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 discuss clinical implications of mosaic mutations. The ~3% estimate is well-supported by data (C29, C71) and consistent with prior studies (C72). The clinical relevance (C70) is appropriately emphasized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C81"
+    ],
+    "result": "Recurrent DNMs can manifest from gonosomal mosaicism. Prior work in cattle estimated even higher fractions of mosaic DNMs occurring during early cell divisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C81 provide comparative context from other species. The statements are appropriately supported by citations and help contextualize the human findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Large multi-generational pedigrees are powerful for studying de novo mutation. The observed variability likely understates true worldwide variability, as CEPH/Utah families are relatively homogeneous. Potential sources of variability include genetic modifiers, environmental factors, and puberty timing, though mechanisms remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 appropriately discuss study implications and limitations. The speculation about broader variability (C83, C85) and potential mechanisms (C86-C88) is appropriately qualified. The acknowledgment of remaining mysteries (C90) is scientifically honest.",
+    "result_type": "MINOR"
+  }
+]

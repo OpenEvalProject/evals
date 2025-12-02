@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Cue2 is identified as the conserved endonuclease responsible for NGD through a reverse genetic screen, and its SMR domain contains conserved residues (D348, H350, R402) critical for endonucleolytic cleavage activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of Cue2 through the overexpression screen (C28, C29) is well-supported by flow cytometry and northern blot data. The domain structure analysis (C30-C32, C35-C36) is supported by homology modeling and sequence alignments. Mutagenesis experiments (C37-C39, C41-C42) and deletion of CUE2 abolishing decay intermediates (C40) provide strong functional evidence. The convergence of genetic, structural, and biochemical data robustly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Ribosome profiling reveals that Cue2 cleaves mRNA precisely in the A site of the colliding ribosome, positioned 30 nucleotides upstream of the stalled lead ribosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ribosome profiling data (C59-C67) provides high-resolution evidence for the precise cleavage site. The 16 nt RPFs appear exactly 30 nts upstream of the 21 nt RPFs marking the stalled ribosome (C65-C66), and these 16 nt RPFs are dramatically reduced in cue2\u0394 strains (C67). The spatial relationship between different RPF sizes and their interpretation as different ribosome states is well-supported by citations to previous work and is consistent with cryo-EM structures (C63-C64). This result is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C89"
+    ],
+    "result": "NGD primarily proceeds via Xrn1-mediated exonucleolytic decay, with Cue2-mediated endonucleolytic decay constituting a secondary pathway under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Northern blot data clearly shows that XRN1 deletion greatly restores NGD-CGA reporter mRNA levels (C44), while CUE2 deletion alone has minimal effect (C43). SKI2 deletion also has little effect (C45), indicating the exosome is not the primary pathway. The inference that Xrn1 mediates the majority of decay (C46) is well-supported by these data. This hierarchy of decay pathways is convincingly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C69",
+      "C70",
+      "C78",
+      "C79",
+      "C80",
+      "C90"
+    ],
+    "result": "The Cue2-dependent endonucleolytic pathway becomes a major contributor to NGD in cells lacking Slh1, which normally prevents accumulation of colliding ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support this result: northern blots show increased endonucleolytic cleavage fragments in slh1\u0394 backgrounds (C47-C49), deletion of CUE2 in slh1\u0394 backgrounds eliminates these fragments and restores full-length mRNA (C51), and ribosome profiling shows dramatic accumulation of 16 nt RPFs in slh1\u0394 dom34\u0394 ski2\u0394 that are lost upon CUE2 deletion (C69-C70). The increased ribosome occupancy in slh1\u0394 strains (C78-C79) provides a mechanistic explanation. The data converge to support the model that Slh1 negatively regulates Cue2 substrate formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In vitro reconstitution experiments demonstrate that the SMR domain of Cue2 is sufficient to cleave mRNA within colliding ribosomes, with cleavage sites matching those observed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro cleavage assays show that addition of wild-type Cue2-SMR causes substantial loss of trisomes (C72), while the R402A mutant has reduced activity (C73). RNA-seq of the in vitro cleavage products shows striking accumulation of 3' fragment ends that precisely match the in vivo cleavage sites (C75), and these are absent in the R402A mutant and no-enzyme controls (C76). The concordance between in vivo and in vitro data (C77) strongly supports the conclusion that Cue2-SMR is sufficient for cleavage activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Endonucleolytic cleavage events associated with NGD depend on the E3 ligase Hel2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Ribosome profiling data shows complete loss of 16 nt RPFs in hel2\u0394 backgrounds (C71), consistent with previous work. This result is well-supported by the data presented and citations to prior studies, though it represents confirmation of previous findings rather than a novel discovery in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Prematurely polyadenylated mRNAs are endogenous targets for Cue2-mediated cleavage, with Cue2-dependent 16 nt RPFs enriched at sites upstream of premature polyadenylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ribosome profiling data shows substantial enrichment of Cue2-dependent 16 nt RPFs in prematurely polyadenylated mRNAs (C82), with 21/55 genes showing substantial reduction in 16 nt RPFs upon CUE2 deletion (C83). For specific targets RNA14 and YAP1, the 16 nt RPFs are positioned precisely upstream of known premature polyadenylation sites (C84). While the functional significance is somewhat speculative (C85), the data clearly demonstrate that these mRNAs are Cue2 substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The NGD-CGA and NGD-AAA reporters exhibit robust decreases in GFP/RFP ratios compared to the OPT control, with corresponding decreases in mRNA levels and nascent peptide degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Flow cytometry data clearly shows threefold and twofold decreases for NGD-CGA and NGD-AAA reporters respectively (C24-C25). Northern blots confirm mRNA level changes and show stabilization of 5' decay fragments in ski2\u0394 (C26). Western blots demonstrate nascent peptide degradation (C27). These data validate the reporter system used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Different sizes of ribosome-protected fragments (16, 21, and 28 nt RPFs) correspond to distinct ribosome states: 16 nt RPFs indicate ribosomes at truncated mRNA ends, 21 nt RPFs represent classical/decoding ribosomes, and 28 nt RPFs represent rotated/pre-translocation ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretations of RPF sizes are well-supported by citations to previous work establishing these relationships (C53-C57). The use of ski2\u0394 backgrounds to stabilize truncated mRNAs (C58) is also supported by prior studies. This represents established methodology rather than a novel finding, but is critical for interpreting the ribosome profiling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The ubiquitin-binding domains of Cue2 may recognize Hel2-ubiquitinated sites on collided ribosomes to recruit the SMR domain, and may also regulate endonuclease activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are explicitly speculative (C86-C88) and lack direct experimental evidence. While the domain structure of Cue2 and the dependence on Hel2 are established, the specific mechanism of recruitment and regulation through ubiquitin-binding domains is not tested. This represents a reasonable hypothesis but requires further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Under conditions of cellular stress with overwhelming ribosome collisions, Cue2-mediated endonucleolytic processing may play an increased role, and the conservation of Cue2 suggests fundamental biological importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The speculation about stress conditions (C91) is not directly tested in this study. While previous genetic screens show sensitivity of cue2\u0394 strains to ribosome-targeted compounds (C92), this is correlative. The inference about conservation (C93) is reasonable but not rigorously demonstrated. These represent plausible hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Slh1 and Dom34 may represent distinct ribosome rescue pathways targeting different substrates, with Slh1 acting on intact mRNAs and Dom34 on truncated mRNAs, and Cue2-mediated cleavage providing an alternative pathway for ribosome dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the ribosome profiling data shows increased occupancy in slh1\u0394 strains (C95) and increased Cue2 cleavage (C96), the proposed distinct specificities of Slh1 and Dom34 (C97-C98) are largely speculative. The role of Cue2 in providing an alternative dissociation pathway (C99) is inferred but not directly demonstrated. The model of two distinct rescue pathways (C101) is plausible but requires additional experimental validation.",
+    "result_type": "MINOR"
+  }
+]

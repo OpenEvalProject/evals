@@ -1,0 +1,473 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "IVF has low success rates (~30% in 2015) and high costs (>$10,000 per cycle), with many patients requiring multiple cycles to achieve pregnancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide context from cited sources (CDC 2015, Birenbaum-Carmeli 2004, Toner 2002) establishing the clinical problem motivating this work. These are background claims appropriately supported by citations to established data sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Embryo selection is critical for IVF success but current methods are subjective, practice-dependent, and difficult to automate due to morphological complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 establish the clinical need and technical challenge through multiple citations. These background claims appropriately frame the problem that the study addresses, supported by prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C67"
+    ],
+    "result": "Most fertility centers lack time-lapse imaging hardware, limiting access to advanced embryo assessment technologies primarily to resource-rich settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C42, and C67 establish the practical motivation for static image-based approaches through citations (Dolinko et al. 2017, Wahl et al. 2018, Hosny and Aerts 2019). This contextualizes why the authors' approach using single timepoint images has broader applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A CNN was developed using transfer learning from ImageNet (1.4M images) and trained on 2440 embryo images at 113 hpi from 543 patients at MGH, with specific image processing and annotation protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C45-C54 describe the methodology comprehensively including data source, sample sizes, imaging specifications, preprocessing steps, and annotation procedures. The methods are clearly documented with appropriate detail for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study employed a hierarchical 5-class categorization system for training (Classes 1-5) that maps to a 2-class inference system (non-blastocysts vs. blastocysts) based on MGH clinical criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C121 clearly describe the classification scheme with biological rationale. The hierarchical approach is well-justified (C120) as balancing clinical relevance with network training requirements. The class definitions are specific and clinically grounded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "A genetic algorithm with population size 100 was used to optimize 5\u00d71 weight vectors for rank-ordering embryos, using selection, crossover (20% probability), and mutation until convergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 and C127-C130 describe the genetic algorithm methodology with specific parameters. The approach is clearly documented, though the rationale for specific parameter choices (e.g., 20% breeding probability) is not provided. The final weights are explicitly stated (C60).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "The CNN achieved 90.97% accuracy (AUC: 0.96) in differentiating blastocysts from non-blastocysts on 742 embryos at 113 hpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 reports strong binary classification performance with both accuracy and AUC metrics on a substantial test set (n=742). The performance is supported by Figure 2\u2014figure supplement 1 showing the confusion matrix. This establishes that the network learned meaningful morphological features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "For blastocyst selection, the CNNg algorithm achieved 98.96% accuracy for SET (similar to embryologists: 96.91%) and 100% for DET (better than embryologists: 98.76%, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 report the CNNg performance with appropriate statistical comparisons to 5 embryologists across 97 patient cohorts. The DET superiority is statistically significant while SET performance is comparable. However, the small difference in DET (100% vs 98.76%) may have limited clinical significance despite statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "For highest quality blastocyst selection, the CNNg achieved 89.69% accuracy for SET (similar to embryologists: 90.31%) and 97.94% for DET (better than embryologists: 96.91%, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 show the algorithm performs comparably to embryologists for the more challenging task of selecting highest quality blastocysts. The statistical comparisons are appropriate with confidence intervals provided. The marginal improvement in DET, while significant, represents a small absolute difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The CNNg algorithm achieved 59.1% accuracy in predicting implantation outcomes for fresh transfers, compared to 44.1% clinical success rate at MGH and reported rates as low as 34% in general practice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C25 reports 59.1% accuracy but this is based on only 44 embryos with known outcomes from 97 selected (C24). The comparison to clinical rates (C26: 44.1%, C27: 34%) is problematic because: (1) small sample size, (2) selection bias (algorithm-selected embryos vs. all transfers), (3) different denominators (algorithm accuracy vs. clinical success rate). The improvement is suggestive but not definitively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C102",
+      "C103"
+    ],
+    "result": "Including frozen transfers, the CNNg achieved 61.2% accuracy compared to 48.5% clinical success rate at MGH, with 4/5 subsequently transferred frozen embryos implanting successfully.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C29 and C102-C103 extend the analysis to include frozen transfers, but the same methodological concerns apply. The additional data (C102: 4/5 successful) is encouraging but represents very small numbers. Claim C104 acknowledges the limitation that only algorithm-selected embryos were evaluated, creating selection bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C66"
+    ],
+    "result": "A CNN trained as a binary classifier achieved 82.76% accuracy (AUC: 0.771, p<0.05) in predicting implantation potential from morphology alone in a pilot study of 29 embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C33 report pilot results on a very small dataset (n=29). While the AUC is significant (p<0.05), the wide confidence intervals (CI: 0.579-0.906 for AUC, 64.23%-94.15% for accuracy) and small sample size limit confidence. The threshold analysis (C32-C33) shows some predictive value but is exploratory. This pilot provides preliminary evidence requiring validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C14"
+    ],
+    "result": "The CNN achieved 75.25% accuracy in predicting implantation of euploid embryos, significantly outperforming 15 embryologists from 5 centers (67.35%, p<0.05) on 97 euploid embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C14 report the key finding that CNN outperforms expert embryologists on the challenging task of differentiating euploid embryos by implantation potential. The multi-center embryologist comparison (n=15 from 5 centers) strengthens the result. Statistical significance is established with appropriate testing (one-sample t-test). This represents a clinically meaningful advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "CNN misclassifications of euploid embryos occurred primarily at low confidence scores (95% between 0.51-0.63, average 0.57), with scores near 0.5 indicating lower confidence and scores near 0 or 1 indicating higher confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C95-C97 provide important characterization of model uncertainty. The concentration of errors near the decision boundary (0.5) is expected and indicates appropriate calibration. This analysis supports the clinical utility of the confidence scores for decision-making.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C76"
+    ],
+    "result": "High-confidence CNN predictions showed strong agreement with outcomes: 91% of embryos with scores \u22650.80 implanted, 81% with scores >0.66 implanted, and 78% with scores <0.33 failed to implant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 and C76 demonstrate that the CNN's continuous scores correlate well with actual implantation outcomes, particularly at the extremes. This threshold analysis supports clinical utility by identifying high and low probability embryos. The results are supported by Figure 3\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C105",
+      "C106"
+    ],
+    "result": "The implantation prediction network was trained on 281 embryo images with known outcomes and evaluated by 15 embryologists from 5 centers on 97 euploid embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 and C105-C106 describe the training and evaluation setup for the implantation prediction task. The sample sizes are modest but reasonable for this challenging task. The multi-center embryologist evaluation strengthens the comparison. The non-overlapping train/test split is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The CNNg algorithm and embryologists selected different embryos of similar quality from cohorts, suggesting potentially different transfer outcomes despite comparable selection accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 acknowledge an important limitation: similar accuracy doesn't mean identical selections. This is a thoughtful observation that the algorithm may use different features than embryologists. Claim C94's inference that comparable performance indicates adequate training is reasonable but the clinical impact of different selections remains unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Prior deep learning approaches in IVF either classified morphology without outcome evaluation or used time-lapse imaging; the IVY study was flawed due to treating non-transferred embryos as negative cases (~90% of dataset).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide critical assessment of prior work (Khosravi et al. 2019, Tran et al. 2019). The criticism of the IVY study is valid\u2014treating non-transferred embryos as negative outcomes introduces severe label noise and class imbalance. This contextualizes the novelty of the current approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C89"
+    ],
+    "result": "The CNN architecture enables automated pixel-level feature learning without human-specified parameters, representing a novel approach using static images trained on a large dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 and C89 describe the technical novelty: end-to-end learning from pixels rather than hand-crafted features, and use of static images rather than time-lapse. These are valid distinctions from prior work, though transfer learning from ImageNet is standard practice in medical imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The AI system is designed as an assistive tool that ranks embryos without discarding any, thus not negatively affecting cumulative pregnancy rates while potentially improving per-cycle success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 describe the intended clinical use model. The design choice not to discard embryos (C69) is appropriate given model uncertainty. Claim C70's assertion about not affecting cumulative rates is logical. Claim C71's suggestion of improved pregnancy rates is speculative (appropriately qualified with 'may').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C77",
+      "C13",
+      "C90"
+    ],
+    "result": "The study demonstrates CNN potential for embryo selection with 90% accuracy in selecting highest quality embryos and superior performance on euploid embryos, but randomized controlled trials are required before clinical adoption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C13, and C90 appropriately summarize the findings and limitations. The call for RCTs (C77) is essential\u2014retrospective performance doesn't guarantee prospective clinical benefit. The 90% accuracy claim (C13) appears to refer to highest quality blastocyst selection for SET (89.69% per C20), representing slight imprecision in the abstract.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C98",
+      "C99"
+    ],
+    "result": "Limited availability of diverse outcome data constrains development of more complex networks; the current network focused only on morphology due to data scarcity but could potentially incorporate additional timepoints and patient-specific information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 and C98-C99 acknowledge data limitations and discuss future directions. The observation that data requirements scale with task complexity (C85) is well-established in machine learning. The focus on morphology alone (C99) is a limitation, and the suggestion of incorporating additional data (C98) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C104"
+    ],
+    "result": "The retrospective study design limits evaluation because not all embryos are transferred, preventing assessment of all algorithm-selected embryos and introducing potential selection bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 and C104 appropriately acknowledge key limitations of retrospective analysis. The inability to evaluate all selected embryos (C101) and the restriction to algorithm-selected embryos in outcome analysis (C104) are important caveats that limit conclusions about clinical impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Deep learning can outperform embryologists in embryo selection tasks, and embryologists can improve their selection of embryos with highest implantation potential by applying CNN suggestions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by citations to prior work and current results. Claim C88's suggestion that embryologists can improve by using CNN is a reasonable inference from the demonstrated superior performance, though this has not been directly tested in a clinical workflow.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C64",
+      "C65"
+    ],
+    "result": "Blastocyst transfers are associated with better implantation rates and reduced embryo transfer numbers; embryos reach cleavage stage at 2-3 days and blastocyst stage at 5-7 days post-fertilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C64-C65 provide standard background on embryo development and transfer practices, appropriately cited (De Croo et al. 2019) or based on established knowledge. These contextual claims are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "PGS-verified euploid embryos have higher success probability but are expensive; they don't guarantee implantation, and no prior system could differentiate euploid blastocysts by implantation capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 establish the clinical context for PGS (cited to Drazba et al. 2014). Claims C73-C75 explain why morphological assessment of euploids remains important and challenging. Claim C74's assertion of novelty is based on the authors' literature knowledge and appears reasonable given the specificity of the task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "ASRM guidelines recommend SET for high-prognosis patients <37 years and DET for patients >37 years or younger low-prognosis patients; high-quality blastocysts are defined as >3CC grade at MGH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 accurately cite ASRM guidelines that inform the SET/DET evaluation framework. Claim C63 defines the study-specific criteria for high-quality blastocysts based on MGH's freezing criteria. These definitions are appropriate and clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Image preprocessing removed timestamps/identifiers; out-of-focus images were included; only completely non-discernable embryos were excluded; data augmentation used random rotations/flips; testing was fully automated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 and C122-C124 describe preprocessing and quality control procedures. The inclusion of out-of-focus images (C108) increases robustness. Removal of timestamps (C107) prevents the network from learning spurious correlations. The fully automated testing (C123-C124) is important for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Patient cohorts for evaluation required \u22652 2PN embryos and \u22651 embryo reaching blastocyst stage by 113 hpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 define the inclusion criteria for the test set. These criteria ensure that cohorts have meaningful selection decisions (multiple embryos) and at least one viable option (\u22651 blastocyst). The criteria are reasonable but do introduce selection bias toward better-prognosis patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Implantation is defined as blastocyst attachment to endometrium and was clinically verified by ultrasound ~6 weeks post-transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 define the outcome measure using standard clinical definitions and verification methods. The 6-week ultrasound timepoint is appropriate for confirming implantation. This is a standard and appropriate outcome definition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Networks measuring embryo implantation potential and rank-ordering embryos have utility in virtually all fertility centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is a reasonable inference given that standard microscopy is universally available (unlike time-lapse systems per C8, C42). The utility claim is logical but somewhat overstated\u2014actual clinical utility depends on prospective validation and integration into clinical workflows.",
+    "result_type": "MINOR"
+  }
+]

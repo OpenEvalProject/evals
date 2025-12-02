@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C11",
+      "C55",
+      "C102"
+    ],
+    "result": "Optogenetic theta frequency stimulation (oTFS) at 5 Hz induces NMDAR-dependent LTP at Schaffer collateral synapses when complex spike bursts (CSBs) are triggered in postsynaptic CA1 neurons. EPSCaT amplitude and potency, as well as EPSC amplitude in reporter neurons, were significantly increased 30 min after oTFS (p=0.0008 and p=0.0025 for EPSCaT measures; p=0.012 for EPSCs, n=20). Both LTP induction and CSBs were blocked by the NMDAR antagonist APV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide converging evidence from multiple measurements (spine calcium imaging, electrophysiology) with appropriate statistical analysis and sample sizes. The requirement for CSBs is demonstrated, and the NMDAR-dependence is confirmed pharmacologically. The experimental design includes proper controls (APV blockade, experiments without CSBs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C14",
+      "C15",
+      "C31",
+      "C32",
+      "C75"
+    ],
+    "result": "When oTFS failed to elicit CSBs in CA1 neurons, a weak form of presynaptic depression occurred, characterized by significantly reduced release probability (PCa). This destabilizing effect was contingent on 5 Hz presynaptic activation and was followed by increased spine elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims demonstrate a clear distinction between successful and unsuccessful LTP induction based on CSB occurrence. Statistical evidence shows reduced PCa when CSBs were absent, and control experiments (no stimulation, test pulses only) confirm the specificity of the 5 Hz stimulation effect. The link to spine elimination is supported by longitudinal imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C63",
+      "C64"
+    ],
+    "result": "oTFS-induced LTP is primarily mediated by postsynaptic mechanisms, as evidenced by increased EPSCaT potency without significant changes in release probability (PCa). This contrasts with LTD, which primarily affects presynaptic release probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of change in PCa during LTP, combined with increased potency, provides strong evidence for postsynaptic mechanisms. The comparison with LTD (from prior work) strengthens the interpretation. However, the inference about AMPA receptor insertion is based on established mechanisms rather than direct measurement in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C65"
+    ],
+    "result": "LTP induction triggered structural plasticity: spine head volume of potentiated spines increased by 21\u00b16% over 30 min, with nearest neighbors showing a smaller increase (15\u00b13%). No volume changes occurred in more distant spines (2\u00b13%), in control conditions without oTFS, or when NMDAR was blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural measurements are quantitative with error estimates and appropriate controls (no stimulation, APV blockade, failed LTP induction). The spatial gradient of volume changes (stimulated > neighbors > distant) is well-documented. The time course (no immediate change, increase over 30 min) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C66"
+    ],
+    "result": "Twenty-four hours after LTP induction, both spine head volume and EPSCaT potency returned to baseline levels, with no significant changes in EPSCaT probability. Thus, no permanent changes in measurable synaptic strength persisted beyond the acute effects on day 0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 24-hour follow-up measurements clearly demonstrate return to baseline for both structural (volume) and functional (EPSCaT potency) measures. Statistical analysis confirms no significant differences from baseline. This is a key finding that motivates the investigation of synaptic lifetime as an alternative memory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C67"
+    ],
+    "result": "Despite returning to baseline strength by 24 hours, LTP-induced spines showed dramatically increased survival over 7 days (only 9% lost vs 27% control). Nearest neighbors also showed increased survival (15% lost), while more distant spines (>5 \u00b5m) showed decreased survival (40% lost), suggesting a center-surround pattern of stability modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The longitudinal imaging data over 7 days provides strong evidence for LTP-induced stabilization. The spatial pattern (stabilization of stimulated and near neighbors, destabilization of distant spines) is clearly demonstrated. The control turnover rate (27%) is consistent with prior literature. Sample sizes are adequate (11 potentiated spines from 14 total).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "The spread of plasticity effects to neighboring spines is consistent with diffusion of biochemical signaling molecules (e.g., activated RhoA and Cdc42) from stimulated spines. This creates a center-surround function stabilizing immediate neighbors (<5 \u00b5m) while destabilizing more distant spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial pattern of effects (volume changes and survival) on neighboring spines is well-documented. The interpretation invoking diffusible factors is reasonable and supported by cited literature, though the specific molecules are not directly measured in this study. The center-surround pattern is clearly demonstrated in the 7-day survival data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C98"
+    ],
+    "result": "Optogenetic low-frequency stimulation (oLFS, 900 APs at 1 Hz) induced LTD at Schaffer collateral synapses, with 70% of experiments showing successful depression (>10% reduction in EPSCaT amplitude). Forty-five percent of LTD spines disappeared between days 1 and 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The LTD induction protocol and success criteria are clearly defined. The 45% elimination rate is consistent with prior work from the same group. The 70% success rate provides adequate sample size for subsequent experiments. This establishes the baseline for sequential plasticity experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C107"
+    ],
+    "result": "When LTP was successfully induced 24 hours after LTD (64% success rate), only 12% of spines disappeared over the next 7 days, indicating rescue from elimination. Without successful LTP (43% disappeared), the oTFS protocol itself had no effect on survival of previously depressed synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequential plasticity experiment (LTD\u2192LTP) clearly demonstrates that successful LTP induction is necessary and sufficient to rescue doomed synapses. The control group (oTFS without LTP) shows no rescue effect, confirming specificity. Sample sizes are adequate (18/28 successful LTP after LTD).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C108"
+    ],
+    "result": "When oLFS was applied 24 hours after LTP, only 33% of previously potentiated synapses showed LTD (vs 70% in naive cultures). This resistance to depression was not explained by increased postsynaptic spiking during oLFS or by elevated initial synaptic strength, pointing to a synapse-specific memory of past potentiation that cannot be detected by standard measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dramatic reduction in LTD success rate after prior LTP (33% vs 70%) is well-documented. Alternative explanations (postsynaptic spiking, initial strength) are systematically ruled out with appropriate statistical tests. The inference of a hidden memory trace is reasonable given the data, though the molecular mechanism remains unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C109",
+      "C110"
+    ],
+    "result": "In the rare cases where LTD was successfully induced after LTP (33% of attempts), 50% of spines disappeared by day 7, similar to LTD-only conditions. When LTD induction failed (more typical), only 8% disappeared. Synaptic strength on day 0 or day 1 did not predict survival, indicating that the most recent plasticity event determines synaptic lifetime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequential plasticity data (LTP\u2192LTD) demonstrates that successful LTD can override prior LTP stabilization. The statistical analysis ruling out initial strength as a predictor is appropriate. The conclusion that the last plasticity event dominates is well-supported, though sample sizes for successful LTP\u2192LTD are small (n=6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C56",
+      "C57"
+    ],
+    "result": "LTP and spine stabilization can be induced at 5 Hz (theta frequency) with synchronized input, making this a physiologically relevant protocol. This is considered the equivalent of STDP protocols but using synchronized synaptic input rather than artificial current injection, consistent with in vivo observations of dendritic calcium spikes during place cell formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 5 Hz stimulation frequency is physiologically relevant for rodent hippocampus. The comparison to STDP is reasonable, and the connection to in vivo place cell formation is supported by cited recent studies. However, the direct equivalence to STDP is an interpretation rather than a demonstrated fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Synchronized synaptic input triggers dendritic calcium spikes (complex spike bursts), which are highly predictive of successful LTP induction at individual synapses. These events involve voltage-dependent NMDARs and VDCCs and can be identified electrophysiologically as bursts of sodium spikes on a broader calcium-mediated depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between CSB occurrence and LTP success is clearly demonstrated in the data. The biophysical description of CSBs is based on well-established literature. The predictive value of CSBs for LTP is a key finding that links cellular mechanisms to synaptic outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "EPSCaTs provide a measure of synaptic strength that depends on AMPA receptor activity and is sensitive to both presynaptic (release probability) and postsynaptic (potency) changes. However, EPSCaT amplitudes are not linearly related to somatic EPSCs due to variable AMPA/NMDA ratios, spine geometry, and potential SK channel activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims about EPSCaTs are well-supported by cited literature and the authors' own data. The limitations and caveats are appropriately acknowledged. The advantage over glutamate uncaging (sensitivity to presynaptic changes) is a valid point. This establishes the validity of the measurement approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C73",
+      "C74",
+      "C84",
+      "C86",
+      "C97"
+    ],
+    "result": "The findings support the theoretical concept that information could be stored in network topology (synaptic connectivity) rather than analog synaptic strength. Synaptic pruning is not random but determined by the last plasticity-inducing activity pattern, with the local environment being as important as individual synapse history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data on transient strength changes coupled with long-lasting survival effects strongly support the topology-based memory hypothesis. The demonstration that the last plasticity event dominates is clear. However, this remains a theoretical interpretation of the data rather than a direct demonstration of information storage. The connection to in vivo learning is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The differential effects of oTFS with and without CSBs can be explained by distinct signaling mechanisms: autocrine glutamate signaling causes presynaptic depression without postsynaptic spikes, while retrograde NO signaling increases release probability when postsynaptic neurons spike. This implements a Hebbian rule at the level of long-term stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic interpretation is based on cited literature (Padamsey et al., 2017) and is consistent with the observed data (presynaptic depression without CSBs, no depression with CSBs). However, the specific signaling molecules (glutamate, NO) are not directly measured in this study. The Hebbian interpretation is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C83"
+    ],
+    "result": "More distant spines (5-10 \u00b5m) showed no volume increase and decreased lifetime after LTP, confirming prior 3-day studies. LTD-induced destabilization has an even larger lateral spread (>10 \u00b5m) than LTP-induced stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial extent of destabilization for distant spines is clearly demonstrated. The comparison with prior work (De Roo et al., 2008) provides validation. The reference to LTD spread is from the authors' prior work. This establishes the spatial specificity of plasticity effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In organotypic cultures, the latency between LTD induction and spine loss was several days, though this could be shorter in vivo given more intense synaptic competition. The experimental approach complements in vivo studies by allowing controlled activity patterns at identified synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observed latency is clearly documented in the data. The speculation about shorter latency in vivo is reasonable but unproven. The methodological advantage over in vivo studies (controlled activity patterns) is valid. This contextualizes the findings within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C85",
+      "C90",
+      "C91"
+    ],
+    "result": "The mechanisms underlying LTP-induced tenacity likely involve multiple factors including trans-synaptic proteins (Neuroligin-1, SynCAM-1, PSD-95), astrocyte ensheathment, and potentially distributed network effects like recurrent reactivation. This may limit the uniformity of synaptic inputs in dendritic sections and affect network dynamics in ways not captured by randomly connected network simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The molecular mechanisms are largely speculative, based on literature about factors known to affect synaptic stability rather than direct measurements in this study. The implications for network dynamics are interesting but highly speculative. The claim about impossibility of pruning near potentiated spines is not directly tested. More experimental work would be needed to support these mechanistic claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The experimental methods involved hippocampal slice cultures from P4-5 male Wistar rats, with rAAV2/7-mediated ChR2 expression in CA3 at DIV 3, single-cell electroporation of CA1 neurons with GCaMP6s/mCerulean at DIV 18, and experiments at DIV 21-25. Recordings were performed at 25\u00b0C with defined ACSF compositions and quality control criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methods are clearly described with appropriate detail. The use of male rats only is a limitation not discussed. The age of cultures (DIV 21-25) is appropriate for synaptic maturation. Quality control criteria (access resistance drift <20%) are reasonable. The methods appear reproducible based on the description.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study addresses a fundamental question in neuroscience: whether information is stored in graded synaptic strength (prevailing theory) or in synaptic connectivity. Prior work showed that pathway-level LTP persists for days, but individual spine volume fluctuates dramatically, casting doubt on analog strength storage. The response of once-potentiated synapses to subsequent LFS was previously unpredictable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent the state of the field and the motivation for the study. The tension between pathway-level stability and spine-level fluctuations is well-documented in cited literature. The knowledge gap regarding sequential plasticity is clearly identified. This provides appropriate context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C106"
+    ],
+    "result": "Prior work showed that LTD effects outlast the actual depression: spines show no lasting volume reduction but have reduced life expectancy. Similar sequences (transient LTD followed by delayed elimination) occur at cerebellar parallel fiber synapses. LTD and LTP differentially affect synaptic lifetime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior work from the authors and others. The comparison across brain regions (hippocampus and cerebellum) strengthens the generality of the findings. This provides important context for interpreting the current results on sequential plasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "EPSCs showed considerably lower trial-to-trial variability (no failures) compared to EPSCaTs, as EPSCs integrate activity from many synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a straightforward observation about the difference between single-synapse and population measurements. The explanation (integration over many synapses) is correct. This justifies the use of both measurement types in the study.",
+    "result_type": "MINOR"
+  }
+]

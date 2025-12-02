@@ -1,0 +1,1647 @@
+{
+  "submission": {
+    "id": "c0b42340-f89d-4fa4-ad70-2546ced26412",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:30:08.703089Z",
+    "updated_at": "2025-12-02T20:30:08.703089Z"
+  },
+  "content": [
+    {
+      "id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "submission_id": "c0b42340-f89d-4fa4-ad70-2546ced26412",
+      "content_type": "manuscript",
+      "content_text": "# DMT alters cortical travelling waves\n\n## Authors\n\n- Andrea Alamia<sup>1</sup> ([ORCID: 0000-0001-9826-2161](https://orcid.org/0000-0001-9826-2161)) \u2020\n- Christopher Timmermann<sup>2</sup> ([ORCID: 0000-0002-2281-377X](https://orcid.org/0000-0002-2281-377X)) \u2020\n- David J Nutt<sup>3</sup>\n- Rufin VanRullen<sup>1</sup> ([ORCID: 0000-0002-3611-7716](https://orcid.org/0000-0002-3611-7716))\n- Robin L Carhart-Harris<sup>3</sup>\n\n### Affiliations\n\n1. Cerco, CNRS Universit\u00e9 de Toulouse Toulouse France\n2. Computational, Cognitive and Clinical Neuroscience Laboratory (C3NL), Faculty of Medicine, Imperial College London United Kingdom\n3. Centre for Psychedelic Research, Division of Psychiatry, Department of Brain Sciences, Imperial College London London United Kingdom\n4. Artificial and Natural Intelligence Toulouse Institute (ANITI) Toulouse France\n\n\u2020 Corresponding author\n\n## Abstract\n\nPsychedelic drugs are potent modulators of conscious states and therefore powerful tools for investigating their neurobiology. N,N, Dimethyltryptamine (DMT) can rapidly induce an extremely immersive state of consciousness characterized by vivid and elaborate visual imagery. Here, we investigated the electrophysiological correlates of the DMT-induced altered state from a pool of participants receiving DMT and (separately) placebo (saline) while instructed to keep their eyes closed. Consistent with our hypotheses, results revealed a spatio-temporal pattern of cortical activation (i.e. travelling waves) similar to that elicited by visual stimulation. Moreover, the typical top-down alpha-band rhythms of closed-eyes rest were significantly decreased, while the bottom-up forward wave was significantly increased. These results support a recent model proposing that psychedelics reduce the \u2018precision-weighting of priors\u2019, thus altering the balance of top-down versus bottom-up information passing. The robust hypothesis-confirming nature of these findings imply the discovery of an important mechanistic principle underpinning psychedelic-induced altered states.\n\n## Introduction\n\nN,N, Dimethyltryptamine (DMT) is a mixed serotonin receptor agonist that occurs endogenously in several organisms (Christian et al., 1977; Nichols, 2016) including humans (Smythies et al., 1979), albeit in trace concentrations. DMT, which is a classic psychedelic drug, is also taken exogenously by humans to alter the quality of their consciousness. For example, synthesized compound is smoked or injected but it has also been used more traditionally in ceremonial contexts (e.g. in Amerindian rituals). When ingested orally, DMT is metabolized in the gastrointestinal (GI) system before reaching the brain. Its consumption has most traditionally occurred via drinking \u2018Ayahuasca\u2019, a brew composed of plant-based DMT and \u03b2 \u2013carbolines (monoamine oxidize inhibitors), which inhibit the GI breakdown of the DMT (Buckholtz and Boggan, 1977). Modern scientific research has mostly focused on intravenously injected DMT. Administered in this way, DMT\u2019s subjective effects have a rapid onset, reaching peak intensity after about 2\u20135 min and subsiding thereafter, with negligible effects felt after about 30 min (Strassman, 2001; Strassman, 1995a; Timmermann et al., 2019).\n\nPrevious electrophysiological studies investigating changes in spontaneous (resting state) brain function elicited by ayahuasca have reported consistent broadband decreases in oscillatory power (Riba et al., 2002; Timmermann et al., 2019), while others have noted that the most marked decreases occur in \u03b1-band oscillations (8\u201312 Hz) (Schenberg et al., 2015). Alpha decreases correlated inversely with the intensity of ayahuasca-induced visual hallucinations (Valle et al., 2016) and are arguably the most reliable neurophysiological signature of the psychedelic state identified to-date (Muthukumaraswamy et al., 2013) \u2013 with increased signal diversity or entropy being another particularly reliable biomarker (Schartner et al., 2017). In the first EEG study of the effects of pure DMT on on-going brain activity, marked decrease in the \u03b1 and \u03b2 (13\u201330 Hz) band power was observed as well as increase in signal diversity (Timmermann et al., 2019). Increase in lower frequency band power (\u03b4\u00a0=\u00a00.5\u20134 Hz and \u03b8\u00a0=\u00a04\u20137 Hz) also became evident when the signal was decomposed into its oscillatory component. Decreased alpha power and increased signal diversity correlated most strongly with DMT\u2019s subjective effects \u2013 consolidating the view that these are principal signatures of the DMT state, if not the psychedelic state more broadly.\n\nFocusing attention onto normal brain function, outside of the context of psychoactive drugs, electrophysiological recordings in cortical regions reveal distinct spatio-temporal dynamics during visual perception, which differ considerably from those observed during closed-eyes restfulness. It is possible to describe these dynamics as oscillatory \u2018travelling waves\u2019, i.e. fronts of rhythmic activity which propagate across regions in the cortical visual hierarchy (Lozano-Soldevilla and VanRullen, 2019; Muller et al., 2014; Sato et al., 2012). Recent results showed that travelling waves can spread from occipital to frontal regions during visual perception, reflecting the forward bottom-up flow of information from lower to higher regions. Conversely, top-down propagation from higher to lower regions appears to predominate during quiet restfulness (Alamia and VanRullen, 2019; Halgren et al., 2019; Pang et al., 2020).\n\nTaken together these results compel us to ask how travelling waves may be affected by DMT, particularly given their association with predictive coding (Alamia and VanRullen, 2019; Friston, 2019) and a recent predictive coding inspired hypothesis on the action of psychedelics (\u2018REBUS\u2019) \u2013 which posits decreased top-down processing and increased bottom-up signal passing under these compounds (Carhart-Harris and Friston, 2019). Moreover, DMT lends itself particularly well to the testing of this hypothesis as its visual effects are so pronounced. Given that visual perception is associated with an increasing in forward travelling waves and eyes-closed visual imagery under DMT can feel as if one is \u2018seeing with eyes shut\u2019 (de Araujo et al., 2012) \u2013 does a consistent increase in forward travelling waves under DMT account for this phenomenon?\n\nHere we sought to address these questions by quantifying the amount and direction of travelling waves in a sample of healthy participants who received DMT intravenously, during eyes-closed conditions. We hypothesized that DMT acts by disrupting the normal physiological balance between top-down and bottom-up information flow, in favour of the latter (Carhart-Harris and Friston, 2019). Moreover, we ask: does this effect correlate with the vivid \u2018visionary\u2019 component of the DMT experience? Providing evidence in favour of this hypothesis would indicate that forward travelling waves do play a crucial role in conscious visual experience, irrespective of the presence of actual photic stimulation.\n\n## Results\n\n### Quantifying travelling waves\n\nAs demonstrated by both theoretical and experimental evidence (Nunez, 2000; Nunez and Srinivasan, 2014; Nunez and Srinivasan, 2009), in most systems, including the human brain, travelling waves occur in groups (or packets) over some range of spatial wavelengths having multiple spatial and temporal frequencies. Given any configurations of electrodes, only parts of these packets can be successfully detected, i.e. waves shorter than the spatial extent of the array, and waves longer than twice the electrode separation distance (Nyquist criterion in space). In scalp recordings, the shorter waves may be mostly removed by volume conduction. As a consequence, waves recorded directly from the cortex emphasize shorter waves than the scalp recorded waves. Specifically, in the case of small cortical arrays, the overlap between cortical and scalp data may be minimal, and the estimated wave properties (including propagation direction) may differ. Additionally, it is important to consider that when waves are travelling in multiple directions at nearly the same time in \u2018closed\u2019 systems (e.g. the cortical/white matter), waves either damp out or interfere with each other to form standing waves (e.g. alpha waves travelling both forward and backward). It is reasonable to assume that the behaviour of these properties will relate to global brain and mind states, and be sensitive to state-altering psychoactive drugs (Nunez, 2000; Nunez and Srinivasan, 2014; Nunez and Srinivasan, 2009).\n\nPractically, we measure the waves\u2019 amount and direction with a method devised in our previous studies (Alamia and VanRullen, 2019; Pang et al., 2020). We slide a one-second time-window over the EEG signals (with 0.5 s overlap). For each time-window, we generate a 2D map (time/electrodes) by stacking the signals from five central mid-line electrodes (Oz to FCz, see Figure 1). For each map, we then compute a 2D-FFT, in which the upper- and lower-left quadrant represent the power of forward (FW) and backward (BW) travelling waves, respectively (since the 2D-FFT is symmetrical around the origin, the lower- and upper-right quadrants contain the same information). From both quadrants we extracted the maximum values, representing the raw amount of FW and BW waves in that time-window. Next, we performed the same procedure after having shuffled the electrodes\u2019 order, thereby disrupting spatial information (including the waves\u2019 directionality) while retaining the same overall spectral power. In other words, the surrogate measures reflect the amount of waves expected solely due to the temporal fluctuations of the signal. After having computed the maximum values for the FW and BW waves of the surrogate 2D-FFT spectra one hundred times (and averaging the 100 values), we compute the net amount of FW and BW waves in decibel (dB), by applying the following formula:\n\n$$\nWdB=10*log_{10}\u2061\\frac{W}{Wss}\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59784/elife-59784-fig1-v3.jpg)\n\n**Figure 1.:** From each 1 s EEG epoch we extract a 2D-map, obtained by stacking signals from five midline electrodes. For each map we compute a 2D-FFT in which the maximum values in the upper- and lower-left quadrants represent respectively the amount of forward (FW \u2013 in blue) and backward (BW \u2013 in red) waves. For each map, we also compute surrogate values by shuffling the electrodes\u2019 order 100 times, so as to retain temporal fluctuations while disrupting the spatial structure of the signals (including any travelling waves). Eventually, we compute the wave strength in decibel (dB) by combining the real and the surrogate values.\n\nwhere W represents the maximum value extracted for each quadrant (i.e. forward FW or backward BW), and Wss the respective surrogate value. Importantly, this value \u2013\u00a0expressed in decibel \u2013\u00a0represents the net amount of waves against the null distribution. In other words, it is informative to compare this value to zero, to assess the significance of waves. On the other hand, a direct comparison between FW and BW waves in each time-bin is not readily interpretable, as it is possible to simultaneously record waves propagating in both directions\u2014as observed during visual stimulation epochs (see below). In addition, it\u2019s important to note that our waves\u2019 analysis focuses on the sensor level, as source projections presents a number of important limitations, such as impairing long-range connections, as well as smearing of signals due to scalp interference (Alexander et al., 2019; Freeman and Barrie, 2000; Nunez, 1974).\n\n### Does DMT influence travelling waves?\n\nAfter defining our measure of the waves\u2019 amount and direction, we investigated whether the intake of DMT alters the cortical pattern of travelling waves. Participants underwent two sessions in which they were injected with either placebo or DMT (see Materials\u00a0and\u00a0methods for details). Importantly, during all of the experiments, participants rested in a semi-supine position, with their eyes closed. EEG recordings were collected 5 min prior to drug administration and up to 20 min after. The left column of Figure 2A shows the amount of BW and FW waves in the 5 min preceding and following drug injection (either placebo or DMT). Consistent with previous observations on independent data (Alamia and VanRullen, 2019), during quiet closed-eyes restfulness a significant amount of BW waves spread from higher to lower regions (as confirmed by a Bayesian t-test against zero for both DMT and Placebo conditions, BFs10\u00a0>>100, error\u00a0<0.01%, 95% Credible Intervals (CI) DMT: [0.221, 0.637], Placebo: [0.273, 0.666]), whereas no significant waves propagate in the opposite FW direction (Bayesian t-test against zero: BFs10\u00a0<0.15, error\u00a0<0.01%; 95% CI DMT: [\u22120.424, 0.088], Placebo: [\u22120.372, 0.110]). However, after DMT injection, the cortical pattern changed drastically: the amount of BW waves decreased (but remaining significantly above zero\u00a0\u2013 BFs10\u00a0=\u00a012.6, 95% CI: [0.057, 0.322]), whereas the amount of FW waves increased significantly above zero (BF10\u00a0=\u00a05.4 95% CI: [0.027, 0.336]). These results, obtained by comparing the amount of waves before and after injection (pre-post factor) of Placebo or DMT (drug factor), were confirmed by two Bayesian ANOVA performed separately on BW and FW waves (all factors including interactions reported BFs10\u00a0>>100, error\u00a0<2%), and were not confounded by differences in dosage (see Materials\u00a0and\u00a0methods and Figure 2\u2014figure supplement 1). A power analysis comparing DMT and Placebo conditions after infusion for both FW and BW direction revealed values above 90% (FW case: \u03bcDMT=0.19, \u03bcPLACEBO =\u00a0-0.20 and \u03c3\u00a0=\u00a00.29 yields to power equals to 0.9168; BW case: \u03bcDMT =\u00a00.18, \u03bcPLACEBO =\u00a00.51 and \u03c3\u00a0=\u00a00.25 gives power equals to 0.9205; in both cases, we considered a type I error rate of 5%).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59784/elife-59784-fig2-v3.jpg)\n\n**Figure 2.:** (A)\u00a0In the left panels the net amount of FW (blue, upper panel) and BW (red, lower panel) waves is represented pre- and post-DMT infusion. While BW waves are always present, FW waves only rise significantly above zero after DMT injection, despite participants having closed eyes. Asterisks denote values significantly different than zero, or between conditions. The panels to the right describe the minute-by-minute changes in the net amount of waves. Asterisks denote FDR-corrected p-values for amount of waves significantly different than zero. (B) Comparison between the waves\u2019 temporal evolution after DMT injection (left panel) and with or without visual stimulation (right panel, from a different experiment in which participants, with open eyes, either watched a visual stimulus or a blank screen\u00a0Pang et al., 2020). Remarkably, the waves\u2019 temporal profiles are very similar in the two conditions, for both FW and BW. (C) Comparison between changes in absolute power (as extracted from the 2D-FFT, that\u00a0is FW and BW in Figure 1) due to DMT, placebo and visual stimulation. Remarkably, true photic visual stimulation and eyes-closed DMT induce comparably large reductions in absolute power. In fact, the effect with DMT appears to be even more pronounced (formal contrast not appropriate). Note that in the previous panels the changes in the net amount of waves were reported in dB, and occurred irrespective of the global power changes measured in panel C.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59784/elife-59784-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Each line represents a different subject, whereas mean\u00a0\u00b1\u00a0standard deviations are represented for each dosage, pre/post infusion for BW (red) and FW (blue) waves. Irrespective of the dosage, the amount of BW waves decreased after DMT infusion, whereas FW waves increased consistently for each subject.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59784/elife-59784-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The difference in the pre-post DMT infusion observed along the sagittal line of electrodes (i.e. the one chosen for the first analysis, as reported in Figure 2A of the manuscript) is replicated considering another series of electrodes running from occipital to frontal regions between hemisphere, specifically from electrode P4 to F3 in the FW direction (diag1, Bayesian t-test BF\u00a0=\u00a04.059, error\u00a0=\u00a00.002%), and from P3 to F4 (diag2, Bayesian t-test BF\u00a0=\u00a04.848, error\u00a0=\u00a00.0001%). Interestingly, DMT induces a similar increase in FW waves, but less of a decrease in the BW direction (diag1 BW: BF\u00a0=\u00a01.948, error\u00a0=\u00a00.006%; diag1 BW: BF\u00a0=\u00a01.567, error\u00a0=\u00a00.002%). We also investigated a coronal line of electrodes, revealing waves travelling in a leftward and rightward direction above chance level (i.e. larger than 0 dB), but in-line with our hypothesis this pattern was not altered by DMT infusion (for both leftward and rightward waves BF\u00a0<0.4, error\u00a0~0.02%). The bottom panel shows changes in absolute power (as extracted from the 2D-FFT, i.e. FW and BW in Figure 1) in each lines of electrodes. Due to DMT, we observed overall a large reduction in absolute power, in-line with previous results.\n\nIn order to explore different propagation axes than the midline, we ran the same analysis on one array of electrodes running from posterior right to anterior left regions, and one from posterior left to anterior right ones: in both cases we obtained similar results as for the midline electrodes, i.e. an increase and a decrease of FW and BW waves, respectively, following DMT infusion (see Figure 2\u2014figure supplement 2). This suggests that the dominant natural propagation spread of travelling waves is along the axis that connects the furthest posterior and frontal recording channels. As a control, we additionally demonstrated that waves propagating from leftward to rightward regions (and vice versa), were not affected by DMT (see Figure 2\u2014figure supplement 2). Besides, in-line with previous work on travelling waves (Alexander et al., 2013; Alexander et al., 2006), an additional analysis based on relative phases of the alpha band-pass signals over all channels, confirmed the same results, with DMT indeed disrupting the typical top-down propagation of alpha-band waves. Furthermore, we ran a more temporally precise analysis, on a minute-by-minute scale, testing the amount of FW and BW waves in the two conditions, as shown in the right panels of Figure 2A. in-line with previous studies (Strassman, 1995a; Strassman, 1994; Timmermann et al., 2019), the changes in cortical dynamics appeared rapidly after intravenous DMT injection, and began to fade after about 10 min. Confirming our previous analysis, we observed an increase in FW waves (asterisks in the upper-right panel of Figure 2A show FDR-corrected significant p-values when testing against zero) and a decrease in BW waves, which, nonetheless, remained above zero (all FDR-corrected p-values<0.05). To our initial surprise, the dynamics elicited by DMT injection were remarkably reminiscent of those observed in another study, in which healthy participants alternated visual stimulation with periods of blank screen, without any drug manipulation (Pang et al., 2020). Although a direct comparison is not statistically possible (because the two studies involved distinct subject groups and different EEG recording setups), we indirectly investigated the similarities between these two scenarios.\n\n### Comparison with perceptual stimulation\n\nWe recently showed that FW travelling waves increase during visual stimulation, whereas BW waves decrease, in-line with their putative functional role in information transmission (Pang et al., 2020). In Figure 2B, for the sake of comparison, we contrast the cortical dynamics induced by DMT (left panel) with the results of our previous study (right panel Pang et al., 2020), in which participants perceived a visual stimulus (label \u2018ON\u2019) or stared at a dark screen (label \u2018OFF\u2019). Remarkably, mutatis mutandis, both FW and BW waves share a similar profile across the two conditions, increasing and decreasing respectively following DMT injection or visual stimulation. If we consider the absolute (maximum) power values derived from the 2D-FFT of each map (i.e. before estimating the surrogates and the waves\u2019 net amount in decibel) as an estimate of spectral power, we can read the results reported in Figure 2C as an overall decrease in oscillatory power following DMT injection, more specifically in the frequency band with the highest power values (i.e. alpha band, but see next paragraph) (Muthukumaraswamy et al., 2013; Riba et al., 2002; Schenberg et al., 2015; Timmermann et al., 2019). Such decrease in oscillatory power is also matched by a similar decrease induced by visual stimulation (all Bayesian t-test BFs10\u00a0>>100). These results demonstrate that, despite participants having their eyes-closed throughout, DMT produces spatio-temporal dynamics similar to those elicited by true visual stimulation. These results therefore shed light on the neural mechanisms involved in DMT-induced visionary phenomena.\n\n### Does DMT influence the frequency of travelling waves?\n\nPrevious studies showed that DMT alters specific frequency bands (e.g. alpha-band Schenberg et al., 2015), mostly by decreasing overall oscillatory power (Riba et al., 2002; Timmermann et al., 2019). Here, we investigated whether DMT influences not only the waves\u2019 direction but also their frequency spectrum. We compared the frequencies of the maximum peaks extracted from the 2D-FFT (see Figure 1) before and after DMT or Placebo injection. Before infusion, both FW and BW waves had a strong alpha-range oscillatory rhythm (Figure 3A, labeled \u2018PRE\u2019). Remarkably, following DMT injection, the waves\u2019 spectrum changed drastically, with a significant reduction in the alpha-band, coupled with an increase in the delta and theta bands, for both FW (\u03b4-band: BF10\u00a0=\u00a0391.16, \u03b8-band: BF10\u00a0=\u00a019.23, \u03b1-band: BF10\u00a0=\u00a016.04, \u03b2-band: BF10\u00a0=\u00a00.64; all errors\u00a0<\u00a00.001%) and BW waves (\u03b4-band: BF10\u00a0=\u00a082.56, \u03b8-band: BF10\u00a0=\u00a030.58, \u03b1-band: BF10\u00a0=\u00a0549.54, \u03b2-band: BF10\u00a0=\u00a01.43; all errors\u00a0<\u00a00.005%). This result corroborates a previous analysis performed on EEG recordings from the same dataset (Timmermann et al., 2019) as well as independent data pertaining to O-Phosphoryl-4-hydroxy-N,N-DMT (psilocybin), a related compound (Muthukumaraswamy et al., 2013). Moreover, we investigated how DMT influences the amount of waves at each frequency.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59784/elife-59784-fig3-v3.jpg)\n\n**Figure 3.:** (A)\u00a0Left and right panels show the waves\u2019 frequencies computed from the maximum value from each quadrant in the 2D-FFT map for FW and BW waves, pre- and post-infusion. The histogram reflects the average between participants of the number of 1 s time-windows having a wave peak at the corresponding frequency. Notably, DMT significantly reduces \u03b1 and \u03b2 band oscillations, while enhancing \u03b4 and \u03b8. Asterisks denote significant differences between DMT and Placebo conditions. (B) The upper panels show the amount of waves computed at each frequency of the 2D-FFT (i.e. not considering the maximum power per quadrant as in (A), but considering it for each frequency), for FW and BW waves, pre- and post-infusion. As shown in previous analysis, DMT induces an overall decrease of spectral power, especially in the alpha band BW waves, with the notable exception of an increase in FW waves in the alpha range.\n\nAs shown in Figure 3B, and in agreement with previous analyses, DMT induces an overall reduction in the amount of waves at each frequency, specifically in the alpha-band BW waves, but with the notable exception in the FW alpha band, in which DMT induces an increase in the waves\u2019 direction.\n\n### What\u2019s the relationship between FW and BW waves?\n\nFrom the left panel of Figure 2B, it seems that during the first minutes after DMT injection, both FW and BW waves are simultaneously present in the brain. In an attempt to understand the overall relationship between FW and BW waves, we focused on the minutes when both BW and FW waves were significantly larger than 0 (minutes 2 to 5 after DMT injection, see Figure 2A). On these data we performed a moment-by-moment correlation between their respective net amount (as measured in decibel \u2013 see Figure 1). We found a clear and significant negative relationship (Bayesian t-test against zero, pre-DMT BF10\u00a0=\u00a0393.1, error\u00a0<0.0001%, 95% CI: [\u22120.448,\u20130.212]; Post-DMT BF10\u00a0=\u00a0381.9, error\u00a0<0.0001%, 95% CI: [\u22120.479,\u20130.226]), very consistent across participants and irrespective of DMT injection (difference between pre- and post-, Bayesian t-test BF10\u00a0=\u00a00.225; error<0.02% Figure 4, first panel). This result demonstrates that, in general, FW waves tend to be weaker whenever BW waves are stronger, and vice\u00a0versa. In other words, FW and BW remain present after drug injection, sum to a consistent total amount, and remain inversely related; it is only the ratio of contribution from each that changes after DMT (i.e. less BW, more FW waves).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59784/elife-59784-fig4-v3.jpg)\n\n**Figure 4.:** There is a negative correlation between the net amount of FW and BW waves, which is not influenced by the ingestion of DMT (left panel). The middle and the right panel show the relationship for a typical subject pre- and post-DMT injection.\n\n### Is there a correlation between waves and subjective reports?\n\nWe investigated whether changes in travelling waves under DMT correlated with the subjective effects of the drug. Specifically, for 20 min after DMT injection participants provided an intensity rating every minute and, when subjective effects faded, participants filled various questionnaires that addressed different aspects of the experience (see Timmermann et al., 2019 for details). First, we found a robust correlation between minute-by-minute intensity rates and the amplitude of the waves, as shown in the first panel of Figure 5. This result reveals that the developing intensity of the drug\u2019s subjective effects and changes in the amplitude of waves correlate positively (FW) or negatively (BW) across time, both peaking a few minutes after drug injection. Second, treating each time point independently, we again correlated intensity ratings with the amount of each wave type, across subjects. The middle panel of Figure 5 shows a clear trend for the correlation coefficients over time. Despite the limited number of data-points (n\u00a0=\u00a012), the correlation coefficients reach high values (~0.4), implying that, around the moment where the drug had its maximal effect (2\u20135 min after injection), those subjects who reported the most intense effects were also those who had the strongest travelling waves in the FW direction, and the weakest waves in the BW direction. Finally, we correlated the amount of FW and BW waves with ratings focused specifically on visual imagery: remarkably, ratings of all of the relevant questionnaire items correlated strongly with the increased amount of FW waves under DMT. As the same relationship was not apparent for the BW waves, this consolidates the view that visionary experiences under DMT correspond to higher amounts of FW waves in particular. Taken together with previous results from visual stimulation experiments independent of DMT (Pang et al., 2020), these data strongly support the principle that cortical travelling waves (and increased FW waves in particular) correlate with the conscious visual experiences, whether induced exogenously (via direct visual stimulation) or endogenously (visionary or hallucinatory experiences).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59784/elife-59784-fig5-v3.jpg)\n\n**Figure 5.:** The first panel shows the correlation between intensity rate and waves amplitude across time-points. Each dot represents a one-minute time-bin from DMT injection, the x-axis reflects the average intensity rating across subjects, and the y-axis indicates the average strength of BW or FW waves across subjects (both correlations p<0.0001). The middle panel shows the correlation coefficients across participants, obtained by correlating the intensity ratings and the waves\u2019 amount separately for each time point. Solid lines show when the amount of waves is significantly larger than zero (always for BW waves, few minutes after DMT injections for FW waves \u2013 see Figure 2A). However, given the limited statistical power (N\u00a0=\u00a012), and proper correction for multiple testing, correlations did not reach significance at any time point. The last panel shows the correlation coefficients between the visual imagery specific ratings provided at the end of the experiment (i.e. Visual Analogue Scale, see methods) and the net amount of waves (measured when both BW and FW were significantly different than zero, i.e. from minutes 2 to 5): for all 20 items in the questionnaire there was a positive trend between the amount of FW waves and the intensity of visual imagery, as confirmed by a Bayesian t-test against zero (BF for FW waves\u00a0>>\u00a0100). We did not observe this effect in the BW waves (BF\u00a0=\u00a00.41).\n\n## Discussion\n\nIn this study we investigated the effects of the classic serotonergic psychedelic drug DMT on cortical spatio-temporal dynamics typically described as travelling waves (Muller et al., 2018). We analysed EEG signals recorded from 13 participants who kept their eyes closed while receiving drug. Results revealed that, compared with consistent eyes-closed conditions under placebo, eyes-closed DMT is associated with striking changes in cortical dynamics, which are remarkably similar to those observed during actual eyes-open visual stimulation (Alamia and VanRullen, 2019; Pang et al., 2020). Specifically, we observed a reduction in BW waves, and increase in FW ones, as well as an overall decrease in \u03b1 band (8\u201312 Hz) oscillatory frequencies (Timmermann et al., 2019). Moreover, increases in the amount of FW waves correlated positively with real-time ratings of the subjective intensity of the drug experience as well as post-hoc ratings of visual imagery, suggesting a clear relationship between travelling waves and a distinct and novel type of conscious experience.\n\n### Relation to previous findings\n\nInitiated by the discovery of mescaline, and catalysed by the discovery of LSD, Western medicine has explored the scientific value and therapeutic potential of psychedelic compounds for over a century (Carhart-Harris, 2018; Schoen, 1964; Strassman, 1995b). DMT has been evoking particular interest in recent decades, with new studies into its basic pharmacology (Dean et al., 2019), endogenous function (Barker et al., 2012) and effects on cortical activity in rats (Artigas et al., 2016; Riga et al., 2014) and humans (Daumann et al., 2010; de Araujo et al., 2012; Valle et al., 2016). There has been a surprising dearth of resting-state human neuroimaging studies involving pure DMT (Palhano-Fontes et al., 2015; Timmermann et al., 2019) which, given its profound and basic effects on conscious awareness, could be viewed as a scientific oversight.\n\nPrevious work involving ayahuasca and BOLD fMRI found increased visual cortex BOLD signal under the drug vs placebo while participants engaged in an eyes-closed imagery task \u2013 a result that was interpreted as consistent with the \u2018visionary\u2019 effects of ayahuasca (de Araujo et al., 2012). Despite some initial debate (Bartolomeo, 2008), it is now generally accepted that occipital cortex becomes activated during visual imagery (Fulford et al., 2018; Pearson, 2019). Placing these findings into the context of previous work demonstrating increased FW travelling waves during direct visual perception (Alamia and VanRullen, 2019; Pang et al., 2020), our present findings of increased FW waves under DMT correlating with visionary experiences lend significant support to the notion that DMT/ayahuasca\u00a0\u2013 and perhaps other psychedelics\u00a0\u2013 engage the visual apparatus in a fashion that is consistent with actual exogenously driven visual perception. Future work could extend this principle to other apparently endogenous generated visionary experiences such as dream visions and other hallucinatory states. We would hypothesize a consistent favouring of FW waves during these states. If consistent mechanisms were also found to underpin hallucinatory experiences in other sensory modalities \u2013 such as the auditory one, a basic principle underlying sensory hallucinations might be established.\n\n### Pharmacological considerations\n\nAs a classic serotonergic psychedelic drug, DMT\u2019s signature psychological effects are likely mediated by stimulation of the serotonin 2A (5-HT2A) receptor subtype. As with all other classic psychedelics (Nichols, 2016) the 5-HT2A receptor has been found to be essential for the full signature psychological and brain effects of Ayahuasca (Valle et al., 2016). In addition to its role in mediating altered perceptual experiences under psychedelics, the 5-HT2A receptor has also been linked to visual hallucinations in neurological disorders, with a 5-HT2A receptor inverse agonist having been licensed for hallucinations and delusions in Parkinson\u2019s disease with additional evidence for its efficacy in reducing consistent symptoms in Alzheimer\u2019s disease (Ballard et al., 2018). Until recently, a systems level mechanistic account of the role of 5-HT2A receptor agonism in visionary or hallucinatory experiences has, however, been lacking.\n\n### Predictive coding and psychedelics\n\nThere is a wealth of evidence that Bayesian or predictive mechanisms play a fundamental role in cognitive and perceptual processing (den Ouden et al., 2012; Kok and De Lange, 2015) and our understanding of the functional architecture underlying such processing is continually being updated (Alamia and VanRullen, 2019; Friston, 2018). According to predictive coding (Huang and Rao, 2011), the brain strives to be a model of its environment. More specifically, based on the assumption that the cortex is a hierarchical system \u2013 message passing from higher cortical levels is proposed to encode predictions about the activity of lower levels. This mechanism is interrupted when predictions are contradicted by the lower-level activity (\u2018prediction error\u2019) \u2013 in which case, information passes up the cortical hierarchy where it can update predictions. Predictive coding has recently served as a guiding framework for explaining the psychological and functional brain effects of psychedelic compounds (Carhart-Harris and Friston, 2019; Pink-Hashkes et al., 2017). According to one model (Carhart-Harris and Friston, 2019), psychedelics decrease the precision- weighting of top-down priors, thereby liberating bottom-up information flow. Various aspects of the multi-level action of psychedelics are consistent with this model, such as the induction of asynchronous neuronal discharge rates in cortical layer 5 (Celada et al., 2008), reduced alpha oscillations (Carhart-Harris et al., 2016; Muthukumaraswamy et al., 2013) increased signal complexity (Schartner et al., 2017; Timmermann et al., 2019) and the breakdown of large-scale intrinsic networks (Carhart-Harris et al., 2016).\n\nRecent empirically supported modelling work has lent support to assumptions that top-down predictions and bottom-up prediction-errors are encoded in the direction of propagating cortical travelling waves (Alamia and VanRullen, 2019). Specifically, these simulations demonstrated that a minimal predictive coding model implementing biologically plausible constraints (i.e. temporal delays in the communication between regions and time constants) generates alpha-band travelling waves, which propagate from frontal to occipital regions and vice versa, depending on the \u2018cognitive states\u2019 of the model (input-driven vs. prior-driven), as confirmed by EEG data in healthy participants (in that case, processing visual stimuli vs. closed-eyes resting state).\n\nThe view that predictive coding could be the underlying principle explaining both the propagation of alpha-band travelling waves and the neural changes induced by psychedelics opened-up a tantalizing opportunity for testing assumptions both about the nature of travelling waves and how they should be modulated by psychedelics (Carhart-Harris and Friston, 2019). Although we are restricted to speculation by the lack of direct experimental manipulation of top-down and bottom-up sensory inputs, our prior assumptions were so emphatically endorsed by the data, including how propagation-shifts related to subjective experience, that, in-line with prior hypotheses and motivations for the analyses, we were persuaded to infer about both the functional relevance of cortical travelling waves and brain action of psychedelics. Additional studies manipulating bottom-up and top-down analysis of sensory inputs with alternative perceptual designs will be required to confirm the relation between predictive coding, alpha-band oscillatory travelling waves and psychedelics states. Moreover, future studies can now be envisioned to examine how these assumptions translate to other phenomena such as non-drug induced visionary and hallucinatory states.\n\n### Conclusion\n\nThe present analyses were applied to the first EEG data on the effects of DMT on human resting- state brain activity. In-line with a specific prior hypothesis, clear evidence was found of a shift in cortical travelling waves away from the normal basal predominance of backward waves and towards the predominance of forward waves \u2013 remarkably similar to what has been observed during eyes-open visual stimulation. Moreover, the increases in forward waves correlated positively with both the general intensity of DMT\u2019s subjective effects, as well as its more specific effects on eyes-closed visual imagery. These findings have specific and broad implications: for the brain mechanisms underlying the DMT/psychedelic state as well as conscious visual perception more fundamentally.\n\n## Materials and methods\n\n### Participants and experimental procedure\n\nIn this study we analysed a dataset presented in a previous publication (Timmermann et al., 2019), to address a very different scientific question using another analytical approach. Consequently, the information reported in this and the next paragraphs overlaps with the previous study (to which we refer the reader for additional details). Thirteen participants took part in this study (six females, age 34.4\u00a0\u00b1\u00a09.1 SD), sample size was chosen based on prior EEG and MEG studies and effect sizes with similar compounds. All participants provided written informed consent, and the study was approved by the National Research Ethics (NRES) Committee London \u2013 Brent and the Health Research Authority. The study was conducted in-line with the Declaration of Helsinki and the National Health Service Research Governance Framework.\n\nParticipants were carefully screened before joining the experiments. A medical doctor conducted physical examination, electrocardiogram, blood pressure and routine blood tests. A successful psychiatric interview was necessary to join the experiment. Other exclusion criteria were (1) under 18 years of age, (2) having no previous experience with psychedelic drugs, (3) history of diagnosed psychiatric illnesses, (4) excessive use of alcohol (more than 40 units per week). The day before the experiment a urine and pregnancy test (when applicable) were performed, together with a breathalyzer test.\n\nParticipants attended two sessions, in the first one, they received placebo, while DMT was administered in the second session. We employed a fixed-order, single blind design considering that psychedelics have been shown to induce lasting psychological changes (Maclean et al., 2011), which could have led to confounding effects on the following session if DMT had been administered in the first session. Additionally, we aimed at ensuring familiarity with the research environment and the study team before providing the psychedelics compound. Given the lack of human data with DMT, progressively increasing doses were provided to different participants (four different doses were used: 7, 14, 18 and 20 mg, to 3, 4, 1, and 5 successive participants, respectively). EEG signals were recorded before and up to 20 min after drug delivery. Participants rested in a semi-supine position with their eyes closed during the duration of the whole experiment. The eyes-closed instruction was confirmed by visual inspection of the participants during dosing. At each minute, participants provided an intensity rating, while blood samples were taken at given time-points (the same for placebo and DMT conditions) via a cannula inserted in the participants\u2019 arm. One day after the DMT session, participants reported their subjective experience completing an interview composed of several questionnaires (see Timmermann et al., 2019\u00a0for details). In this study we focused on the Visual Analogue Scale values.\n\n### EEG preprocessing\n\nEEG signals were recorded using a 32-channels Brainproduct EEG system sampling at 1000 Hz. A high-pass filter at 0.1 Hz and an anti-aliasing low-pass filter at 450 Hz were applied before applying a band-pass filter at 1\u201345 Hz. Epochs with artifacts were manually removed upon visual inspection. Independent-component analysis (ICA) was performed and components corresponding to eye-movement and cardiac-related artifacts were removed from the EEG signal. The data were re-referenced to the average of all electrodes. All the preprocessing was carried out using the Fieldtrip toolbox (Oostenveld et al., 2011), while the following analysis were run using custom scripts in MATLAB.\n\n### Waves quantification\n\nWe epoched the preprocessed EEG signals in 1 s windows, sliding with a step of 500 ms (see Figure 1). For each time-window, we then arranged a 2D time-electrode map composed of five electrodes (i.e. Oz, POz, Pz, Cz, FCz). From each map we computed the 2D Fast Fourier Transform (2DFFT\u00a0\u2013 Figure 1), from which we extracted the maximum value in the upper and lower quadrants, representing respectively the power of forward (FW) and backward (BW) waves. We also performed the same procedure 100 times after having randomised the electrodes\u2019 order: the surrogate 2D-FFT spectrum has the same temporal frequency content overall, but the spatial information is disrupted, and the information about the wave directionality is lost. In such a manner we obtained the null or surrogate measures, namely FWss and BWss, whose values are the average over the 100 repetitions (see Figure 1). Eventually, we computed the actual amount of waves in decibel (dB), considering the log-ratio between the actual and the surrogate values:\n\n$$\nFWdb=\u00a010\u2217log_{10}\u2061\\frac{FW}{FWss}\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0BWdb=\u00a010\u2217log_{10}\u2061\\frac{BW}{BWss}\n$$\n\nIt is worth noting that this value represents the amount of significant waves against the null distribution, that is against the hypothesis of having no FW or BW waves.\n\n### Statistical analysis\n\nAll the analyses regarding the EEG signals were performed in MATLAB. Bayesian analyses were run in JASP (Team, 2018). We ran separate Bayesian ANOVA for FW and BW conditions, and we considered as factors the time of injection (pre-post, see Figure 2A) and drug condition (DMT vs Placebo). Subjects were considered to account for random factors. Regarding the minute-by-minute analysis (Figure 2A, right panels), we performed a t-test at each time-bin against zero, and we corrected all the p-values according to the False Discovery Rate (Benjamini and Yekutieli, 2005). All data and code to perform the analysis are available at https://osf.io/wujgp/.\n",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "77405a42-cc22-4d30-89ad-c7d3b9b92056",
+      "submission_id": "c0b42340-f89d-4fa4-ad70-2546ced26412",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Virginie van Wassenhove, CEA, DRF/I2BM, NeuroSpin; INSERM, U992, Cognitive Neuroimaging Unit France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59784.sa1](https://doi.org/10.7554/eLife.59784.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this study, Alamia and colleagues describe the effect of N,N, Dimethyltryptamine DMT on the resting-state dynamics of \u03b1 traveling waves. DMT is a serotonergic psychedelic drug that elicits vivid hallucinations. The authors tested whether DMT provoke a relative change in strength of forward- and backward- \u03b1 traveling waves recorded with non-invasive electroencephalography. Specifically, the hypothesis was that traveling waves under DMT may show features of visual perception in the absence of photic stimulation. Indeed, following DMT consumption and during eyes-closed resting state, the authors report an increase of forward-traveling waves, an \u03b1 power increase (comparable to photic stimulation) and of low-frequency components in the low-range spectrum. The implication of traveling waves are discussed in relation to predictive coding.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"DMT alters cortical travelling waves\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Timothy Behrens as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: David Murray Alexander (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nAlamia and colleagues describe the effect of N,N, Dimethyltryptamine DMT on human resting-state dynamics recorded with non-invasive EEG. DMT is a serotonergic psychedelic drug that elicits vivid hallucinations. The authors propose that DMT provokes a relative change in strength of forward- and backward- \u03b1 [~10 Hz] traveling waves, indicative of bottom-up and top-down propagations of information. In three main analyses of EEG recordings following the administration of DMT, the authors report an increase of forward-traveling waves, \u03b1 power (comparable to photic stimulation) and low-frequency components in the low-range spectrum.\n\nRevisions for this paper:\n\nI highlight three main issues that need to be addressed in a revised paper.\n\n1) All three reviewers highlight specific points re. the limitations of the current analysis (e.g. a prior choice of electrodes) and the choice for quantifications of the traveling waves. The authors should clarify their rationale underlying their analytical choices. As suggested by reviewer 3, a section dedicated to \"Quantifying travelling waves\" may be helpful.\n\n2) All three reviewers raised substantial concerns about the interpretability of scalp level recordings in relation to the generators of the signals as well as the inference that can be made on the traveling pattern. Reviewer 1 raised concerns about the full spectral changes that can be seen and reviewer 3 suggested the possibility of interference patterns.\n\n3) Reviewers 1 and 2 consider the predictive coding hypothesis a far-stretched inference of current results, and thus needs to be refined.\n\nReviewer #1:\n\nIn this study, Alamia and colleagues describe the effect of N,N, Dimethyltryptamine DMT on the resting-state dynamics of \u03b1 traveling waves. DMT is a serotonergic psychedelic drug that elicits vivid hallucinations. The authors herein propose that DMT provokes a relative change in strength of forward- and backward- \u03b1 traveling waves recorded with non-invasive EEG. The authors hypothesized that traveling waves under DMT may show features of visual perception, namely an increase of forward going (occipital to frontal) traveling waves during eyes-closed resting-state thus independently of photic inputs. With three main analyses, the authors observe that following DMT, forward-traveling waves increase, \u03b1 power increase (comparable to photic stimulation) and an overall increase of low-frequency components in the low-range spectrum.\n\nI have several major concerns regarding the reliability of the analysis and subsequent interpretations. One is that while the authors quantified traveling waves, they also report a radical change in the overall spectral fingerprinting of the EEG (Figure 3) and clearly showing that \u03b1 is largely suppressed following DMT thus largely diminishing the reliability and pertinence of focusing on \u03b1 traveling wave while low-frequency are largely boosted. Second, the authors report consistent inverse relationships between FW and BW waves, which may simply result from moving dipoles that generate the signals; in light of this, the inverse relation in Figure 5 between FW/BW is not surprising. Finally, would a simpler measure of decrease in \u03b1 power and increase of low spectral power reveal similar correlations to behavior?\n\nReviewer #2:\n\nThe authors present a sensor level analysis of traveling waves in the EEG, during dosage with DMT or saline. The work is a strong contribution to the study of cortical traveling waves (TWs) due to the pharmacological manipulation, which helps our understanding of the causal role of TWs. This contribution is bolstered by being able to draw parallels with the effects of visual stimulation (or not) during rest, reported in a contemporaneous manuscript. The manuscript will be of general interest to readers of eLife. The manuscript is crisply written.\n\nThe conclusions follow from the analysis.\n\nConcerns:\n\n1) The quantitative methods to analyse TWs are rather week, being focussed on direction of travel along the anterior-posterior axis. While these methods are sufficient to support the main conclusions, more could be teased from the experiment by following recent developments in TW quantification.\n\nFor example, using peak tracing along the lines of Massimini et al., 2004, would enable the detailed paths of the waves to be traced over the whole recording array, and velocity to be estimated.\n\nMethods exist to estimate the spatial frequency of the waves on the scalp, as well as the proportion of traveling vs. standing waves (Alexander et al., 2016). Likewise, other directional components of the wave trajectory can be assessed by using PCA to create a spatial basis for the waves (Alexander et al., 2006, 2009, 2013).\n\nIt seems possible that important features of the data have been missed by limiting the analysis to electrodes FCz to Oz. For example, what if DMT influence and visual stimulation share a common primary direction, as is found, but DMT waves are more left posterior to right anterior and visual stimulation is more right posterior to left anterior (or vice versa)?\n\n2) The sections on predictive coding are only tenuously supported by the data. In particular, I can see no discussion on how directional differences in the \u03b1 band may be significant in this regard. What about situations where anterior-posterior differences are found in the \u03b4 band (Alexander et al., 2006; 2009)? Or if directional results were in another band? Because of the lack of specificity to this discussion, and the lack of explicit tests of this theoretical framework, I suggest these concepts be given a more appropriate weighting (less).\n\n3) An obvious objection to the analysis is that it is sensor level. The authors need to address their reasons for doing this e.g. that source projections destroy real long-range correlations as well as blurring by the scalp and other tissues. See Nunez, 1974; Nunez et al., 1997; Freeman et al., 2000; 2003 and Alexander et al., 2019, for a summary of these issues.\n\nReviewer #3:\n\nThis study of the effects of the drug DMT on the direction and occurrence of EEG traveling waves seems generally plausible to me, although some important aspects are not discussed. I don't have major criticisms. However, as one who has studied EEG traveling and standing waves for many years, I worry that those unfamiliar with EEG wave phenomena may misinterpret some of these results given their partial dependence on the specific experimental methods employed. While I have not read previous papers by these authors that may fill in some of the important gaps, I list below some ideas that any reader interested in EEG waves and their neuro-scientific interpretation must be aware of. A summary paragraph in the section \"Quantifying travelling waves\" is recommended concerning the following basic concepts that must be understood if the results are to be interpreted correctly.\n\n1) In all but the simplest systems, traveling waves occur in groups (packets) over some range of spatial wavelengths (multiple spatial frequencies, k). This is to be expected in brains, based on both theory and experiment (see Nunez and Srinivasan, 2006; 2014; Nunez, 2000).\n\n2) Any experimental electrode array will be sensitive to only parts of these wave packets, e.g. only waves shorter than the spatial extent of the array and waves longer than twice the electrode separation distance (Nyquist criterion in space) can be resolved. In scalp recordings, the shorter waves may be mostly removed by volume conduction.\n\n3) As a consequence of #2, waves recorded directly from the cortex (as indicated in several recent studies) will emphasize shorter waves than the scalp recorded waves. In the case of small cortical arrays, the ECoG overlap with scalp data may be minimal. Thus, the different estimated wave properties (including propagation direction) need not agree.\n\n4) When waves are traveling in multiple directions at nearly the same time in \"closed\" systems (e.g., the cortical/white matter), there are only two possible results. Either the waves must damp out or they combine (interfere) to form standing waves (e.g. \u03b1 waves traveling both forward and backward). One expects that the actual behavior depends on brain state, including the influence of drugs (see Nunez and Srinivasan, 2006; 2014; Nunez, 2000).\n",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "91b0837d-e6b5-42a1-9831-84d697b9b069",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C1",
+      "claim": "N,N, Dimethyltryptamine (DMT) can rapidly induce an extremely immersive state of consciousness characterized by vivid and elaborate visual imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "N,N, Dimethyltryptamine (DMT) can rapidly induce an extremely immersive state of consciousness characterized by vivid and elaborate visual imagery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general characterization of DMT's effects, drawing from established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "4483e712-85f5-42ff-b38f-cc73f1fe4b39",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C2",
+      "claim": "DMT induces a spatio-temporal pattern of cortical activation (i.e. travelling waves) similar to that elicited by visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypotheses, results revealed a spatio-temporal pattern of cortical activation (i.e. travelling waves) similar to that elicited by visual stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental EEG data comparing DMT and visual stimulation conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "1c4dad8e-b3ee-4a4d-929c-f3aaab9ba516",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C3",
+      "claim": "DMT significantly decreases typical top-down alpha-band rhythms of closed-eyes rest.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the typical top-down alpha-band rhythms of closed-eyes rest were significantly decreased, while the bottom-up forward wave was significantly increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EEG measurements showing changes in alpha-band activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "ac45a859-f22f-40f3-9cc0-9629b0f7bd57",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C4",
+      "claim": "DMT significantly increases bottom-up forward waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the typical top-down alpha-band rhythms of closed-eyes rest were significantly decreased, while the bottom-up forward wave was significantly increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EEG measurements showing changes in forward wave amplitude.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "cef61a01-7cc2-4ded-8707-5e3de178623a",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C5",
+      "claim": "Psychedelics reduce the 'precision-weighting of priors', thus altering the balance of top-down versus bottom-up information passing.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support a recent model proposing that psychedelics reduce the 'precision-weighting of priors', thus altering the balance of top-down versus bottom-up information passing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical model supported by the experimental findings and references to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "be7de817-f38f-4779-9952-28f8a4a53c2c",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C6",
+      "claim": "DMT occurs endogenously in several organisms including humans, albeit in trace concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "N,N, Dimethyltryptamine (DMT) is a mixed serotonin receptor agonist that occurs endogenously in several organisms (Christian et al., 1977; Nichols, 2016) including humans (Smythies et al., 1979), albeit in trace concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "a9cbaea1-5337-4c11-b8e0-b48daae884a8",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C7",
+      "claim": "When administered intravenously, DMT's subjective effects have a rapid onset, reaching peak intensity after about 2\u20135 min and subsiding thereafter, with negligible effects felt after about 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Administered in this way, DMT's subjective effects have a rapid onset, reaching peak intensity after about 2\u20135 min and subsiding thereafter, with negligible effects felt after about 30 min (Strassman, 2001; Strassman, 1995a; Timmermann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on DMT pharmacokinetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "81ad2e33-2aa9-47f7-a6db-0cd63b85b0f7",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C8",
+      "claim": "Previous electrophysiological studies investigating changes in spontaneous brain function elicited by ayahuasca have reported consistent broadband decreases in oscillatory power.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous electrophysiological studies investigating changes in spontaneous (resting state) brain function elicited by ayahuasca have reported consistent broadband decreases in oscillatory power (Riba et al., 2002; Timmermann et al., 2019), while others have noted that the most marked decreases occur in \u03b1-band oscillations (8\u201312 Hz) (Schenberg et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous electrophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "f625078c-633f-4251-aac2-62d1f5d37125",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C9",
+      "claim": "The most marked decreases in oscillatory power under ayahuasca occur in \u03b1-band oscillations (8\u201312 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous electrophysiological studies investigating changes in spontaneous (resting state) brain function elicited by ayahuasca have reported consistent broadband decreases in oscillatory power (Riba et al., 2002; Timmermann et al., 2019), while others have noted that the most marked decreases occur in \u03b1-band oscillations (8\u201312 Hz) (Schenberg et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "1e3713e6-7cf2-400e-82f4-13b4058df1eb",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C10",
+      "claim": "Alpha decreases correlated inversely with the intensity of ayahuasca-induced visual hallucinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Alpha decreases correlated inversely with the intensity of ayahuasca-induced visual hallucinations (Valle et al., 2016) and are arguably the most reliable neurophysiological signature of the psychedelic state identified to-date (Muthukumaraswamy et al., 2013) \u2013 with increased signal diversity or entropy being another particularly reliable biomarker (Schartner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a specific study showing correlation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "b1f1cec7-01f4-4b0b-a1ae-ce3fce13c447",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C11",
+      "claim": "Alpha decreases are arguably the most reliable neurophysiological signature of the psychedelic state identified to-date.",
+      "claim_type": "EXPLICIT",
+      "source": "Alpha decreases correlated inversely with the intensity of ayahuasca-induced visual hallucinations (Valle et al., 2016) and are arguably the most reliable neurophysiological signature of the psychedelic state identified to-date (Muthukumaraswamy et al., 2013) \u2013 with increased signal diversity or entropy being another particularly reliable biomarker (Schartner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and represents an inference from multiple studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "59d405cc-5168-448f-95b8-8640570dce0a",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C12",
+      "claim": "Increased signal diversity or entropy is a particularly reliable biomarker of the psychedelic state.",
+      "claim_type": "EXPLICIT",
+      "source": "Alpha decreases correlated inversely with the intensity of ayahuasca-induced visual hallucinations (Valle et al., 2016) and are arguably the most reliable neurophysiological signature of the psychedelic state identified to-date (Muthukumaraswamy et al., 2013) \u2013 with increased signal diversity or entropy being another particularly reliable biomarker (Schartner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "e112f8d8-79fa-43de-b739-07ad3477eeb6",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C13",
+      "claim": "In the first EEG study of the effects of pure DMT on on-going brain activity, marked decrease in the \u03b1 and \u03b2 (13\u201330 Hz) band power was observed as well as increase in signal diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first EEG study of the effects of pure DMT on on-going brain activity, marked decrease in the \u03b1 and \u03b2 (13\u201330 Hz) band power was observed as well as increase in signal diversity (Timmermann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "420a87e7-a535-42a4-96fc-14da7f4b21e1",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C14",
+      "claim": "Increase in lower frequency band power (\u03b4 = 0.5\u20134 Hz and \u03b8 = 4\u20137 Hz) became evident when the signal was decomposed into its oscillatory component under DMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Increase in lower frequency band power (\u03b4 = 0.5\u20134 Hz and \u03b8 = 4\u20137 Hz) also became evident when the signal was decomposed into its oscillatory component.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a specific study (Timmermann et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "2fa13233-9d1f-44d1-845d-5019d07152cc",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C15",
+      "claim": "Decreased alpha power and increased signal diversity correlated most strongly with DMT's subjective effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreased alpha power and increased signal diversity correlated most strongly with DMT's subjective effects \u2013 consolidating the view that these are principal signatures of the DMT state, if not the psychedelic state more broadly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a specific study (Timmermann et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "9e6c501e-1f9c-45b9-84fd-62e163f30916",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C16",
+      "claim": "Electrophysiological recordings in cortical regions reveal distinct spatio-temporal dynamics during visual perception, which differ considerably from those observed during closed-eyes restfulness.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing attention onto normal brain function, outside of the context of psychoactive drugs, electrophysiological recordings in cortical regions reveal distinct spatio-temporal dynamics during visual perception, which differ considerably from those observed during closed-eyes restfulness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "0a46bbcc-f2d2-4239-9e71-c7a6faea36b0",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C17",
+      "claim": "These dynamics can be described as oscillatory 'travelling waves', i.e. fronts of rhythmic activity which propagate across regions in the cortical visual hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible to describe these dynamics as oscillatory 'travelling waves', i.e. fronts of rhythmic activity which propagate across regions in the cortical visual hierarchy (Lozano-Soldevilla and VanRullen, 2019; Muller et al., 2014; Sato et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "e9502792-948b-48d4-9279-2d9baa555af3",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C18",
+      "claim": "Travelling waves can spread from occipital to frontal regions during visual perception, reflecting the forward bottom-up flow of information from lower to higher regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent results showed that travelling waves can spread from occipital to frontal regions during visual perception, reflecting the forward bottom-up flow of information from lower to higher regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "cadab5a5-0d3a-4b0f-b4ea-02fb23dc5b45",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C19",
+      "claim": "Top-down propagation from higher to lower regions appears to predominate during quiet restfulness.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, top-down propagation from higher to lower regions appears to predominate during quiet restfulness (Alamia and VanRullen, 2019; Halgren et al., 2019; Pang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "b5dd56a6-5896-4528-b361-0c4608be23cb",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C20",
+      "claim": "During quiet closed-eyes restfulness a significant amount of backward waves spread from higher to lower regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous observations on independent data (Alamia and VanRullen, 2019), during quiet closed-eyes restfulness a significant amount of BW waves spread from higher to lower regions (as confirmed by a Bayesian t-test against zero for both DMT and Placebo conditions, BFs10 >>100, error <0.01%, 95% Credible Intervals (CI) DMT: [0.221, 0.637], Placebo: [0.273, 0.666])",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from the current study and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "5b960280-e58a-4193-b36d-253c69f8633c",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C21",
+      "claim": "During quiet closed-eyes restfulness no significant waves propagate in the forward direction.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas no significant waves propagate in the opposite FW direction (Bayesian t-test against zero: BFs10 <0.15, error <0.01%; 95% CI DMT: [\u22120.424, 0.088], Placebo: [\u22120.372, 0.110]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "4cd88eff-4398-4992-a910-72d792130a6d",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C22",
+      "claim": "After DMT injection, the amount of backward waves decreased but remained significantly above zero.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after DMT injection, the cortical pattern changed drastically: the amount of BW waves decreased (but remaining significantly above zero \u2013 BFs10 = 12.6, 95% CI: [0.057, 0.322])",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "b623cc0d-946d-4b99-83cd-9229d38309f4",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C23",
+      "claim": "After DMT injection, the amount of forward waves increased significantly above zero.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the amount of FW waves increased significantly above zero (BF10 = 5.4 95% CI: [0.027, 0.336]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "be622efd-4cef-4cd1-a584-ad9008db3542",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C24",
+      "claim": "The changes in travelling waves after DMT injection were not confounded by differences in dosage.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, obtained by comparing the amount of waves before and after injection (pre-post factor) of Placebo or DMT (drug factor), were confirmed by two Bayesian ANOVA performed separately on BW and FW waves (all factors including interactions reported BFs10 >>100, error <2%), and were not confounded by differences in dosage (see Materials and methods and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "fd494fdb-7bec-4604-b3a1-ae62cfd7b6c5",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C25",
+      "claim": "Power analysis comparing DMT and Placebo conditions after infusion for both forward and backward direction revealed values above 90%.",
+      "claim_type": "EXPLICIT",
+      "source": "A power analysis comparing DMT and Placebo conditions after infusion for both FW and BW direction revealed values above 90% (FW case: \u03bcDMT=0.19, \u03bcPLACEBO = -0.20 and \u03c3 = 0.29 yields to power equals to 0.9168; BW case: \u03bcDMT = 0.18, \u03bcPLACEBO = 0.51 and \u03c3 = 0.25 gives power equals to 0.9205; in both cases, we considered a type I error rate of 5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical power analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "fc87cf21-052a-4563-b1f9-3b20f314764c",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C26",
+      "claim": "The changes in cortical dynamics appeared rapidly after intravenous DMT injection, and began to fade after about 10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "in-line with previous studies (Strassman, 1995a; Strassman, 1994; Timmermann et al., 2019), the changes in cortical dynamics appeared rapidly after intravenous DMT injection, and began to fade after about 10 min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from the current study and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "91633c42-82ee-4bf9-9619-b500cfabe4e7",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C27",
+      "claim": "Forward travelling waves increase during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently showed that FW travelling waves increase during visual stimulation, whereas BW waves decrease, in-line with their putative functional role in information transmission (Pang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "59fe29fc-2a1a-4c20-b176-52747e5ffdab",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C28",
+      "claim": "Backward waves decrease during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently showed that FW travelling waves increase during visual stimulation, whereas BW waves decrease, in-line with their putative functional role in information transmission (Pang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "8e86b954-ea1e-4ae6-bfd5-20fc02f78863",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C29",
+      "claim": "Both forward and backward waves share a similar profile across DMT injection and visual stimulation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, mutatis mutandis, both FW and BW waves share a similar profile across the two conditions, increasing and decreasing respectively following DMT injection or visual stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of data from the current study and previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "24ea87e7-90cd-4638-930b-4bdaea763194",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C30",
+      "claim": "DMT produces an overall decrease in oscillatory power, specifically in the frequency band with the highest power values (i.e. alpha band).",
+      "claim_type": "EXPLICIT",
+      "source": "If we consider the absolute (maximum) power values derived from the 2D-FFT of each map (i.e. before estimating the surrogates and the waves' net amount in decibel) as an estimate of spectral power, we can read the results reported in Figure 2C as an overall decrease in oscillatory power following DMT injection, more specifically in the frequency band with the highest power values (i.e. alpha band, but see next paragraph) (Muthukumaraswamy et al., 2013; Riba et al., 2002; Schenberg et al., 2015; Timmermann et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "78caab5c-f8ee-480f-b9a8-aa1ac35ae20e",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C31",
+      "claim": "The decrease in oscillatory power induced by DMT is matched by a similar decrease induced by visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such decrease in oscillatory power is also matched by a similar decrease induced by visual stimulation (all Bayesian t-test BFs10 >>100).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data comparing DMT and visual stimulation conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "bb0dd2fe-148c-4d1f-8b3a-a8005f87ead3",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C32",
+      "claim": "Despite participants having their eyes-closed throughout, DMT produces spatio-temporal dynamics similar to those elicited by true visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that, despite participants having their eyes-closed throughout, DMT produces spatio-temporal dynamics similar to those elicited by true visual stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "89455431-281c-4c33-954a-f96e49cb195d",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C33",
+      "claim": "Before DMT infusion, both forward and backward waves had a strong alpha-range oscillatory rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "Before infusion, both FW and BW waves had a strong alpha-range oscillatory rhythm (Figure 3A, labeled 'PRE').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "5442a11d-0a35-4859-a325-0b4904bc8c8e",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C34",
+      "claim": "Following DMT injection, the waves' spectrum changed drastically, with a significant reduction in the alpha-band, coupled with an increase in the delta and theta bands, for both forward and backward waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, following DMT injection, the waves' spectrum changed drastically, with a significant reduction in the alpha-band, coupled with an increase in the delta and theta bands, for both FW (\u03b4-band: BF10 = 391.16, \u03b8-band: BF10 = 19.23, \u03b1-band: BF10 = 16.04, \u03b2-band: BF10 = 0.64; all errors < 0.001%) and BW waves (\u03b4-band: BF10 = 82.56, \u03b8-band: BF10 = 30.58, \u03b1-band: BF10 = 549.54, \u03b2-band: BF10 = 1.43; all errors < 0.005%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "9e0b49a1-f732-4772-b736-46840182bd57",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C35",
+      "claim": "DMT induces an overall reduction in the amount of waves at each frequency, specifically in the alpha-band backward waves, but with the notable exception in the forward alpha band, in which DMT induces an increase in the waves' direction.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3B, and in agreement with previous analyses, DMT induces an overall reduction in the amount of waves at each frequency, specifically in the alpha-band BW waves, but with the notable exception in the FW alpha band, in which DMT induces an increase in the waves' direction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "ffb7adb6-c662-4562-9393-499e1084a25a",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C37",
+      "claim": "Forward waves tend to be weaker whenever backward waves are stronger, and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "This result demonstrates that, in general, FW waves tend to be weaker whenever BW waves are stronger, and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the negative correlation found in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "47494feb-4640-4e67-b3e2-a773ab713dc9",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C38",
+      "claim": "Forward and backward waves remain present after drug injection, sum to a consistent total amount, and remain inversely related; it is only the ratio of contribution from each that changes after DMT.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, FW and BW remain present after drug injection, sum to a consistent total amount, and remain inversely related; it is only the ratio of contribution from each that changes after DMT (i.e. less BW, more FW waves).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data on wave correlations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "2cad1ed3-f7af-4ed3-a461-7f9137cbc4c2",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C39",
+      "claim": "There is a robust correlation between minute-by-minute intensity rates and the amplitude of the waves.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found a robust correlation between minute-by-minute intensity rates and the amplitude of the waves, as shown in the first panel of Figure 5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "eeb94749-751e-4f19-8fc6-89787f0fd9ee",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C40",
+      "claim": "The developing intensity of the drug's subjective effects and changes in the amplitude of waves correlate positively (forward waves) or negatively (backward waves) across time, both peaking a few minutes after drug injection.",
+      "claim_type": "EXPLICIT",
+      "source": "This result reveals that the developing intensity of the drug's subjective effects and changes in the amplitude of waves correlate positively (FW) or negatively (BW) across time, both peaking a few minutes after drug injection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "6112aa2e-2b25-449a-9ecb-e3c814a4d4cc",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C41",
+      "claim": "Around the moment where the drug had its maximal effect (2\u20135 min after injection), those subjects who reported the most intense effects were also those who had the strongest travelling waves in the forward direction, and the weakest waves in the backward direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the limited number of data-points (n = 12), the correlation coefficients reach high values (~0.4), implying that, around the moment where the drug had its maximal effect (2\u20135 min after injection), those subjects who reported the most intense effects were also those who had the strongest travelling waves in the FW direction, and the weakest waves in the BW direction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data on correlations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "3e8e2cd1-e7e2-4d4b-814c-2445581f5a96",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C42",
+      "claim": "Ratings of all of the relevant questionnaire items correlated strongly with the increased amount of forward waves under DMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we correlated the amount of FW and BW waves with ratings focused specifically on visual imagery: remarkably, ratings of all of the relevant questionnaire items correlated strongly with the increased amount of FW waves under DMT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "7b62b1ec-6075-4796-9c99-eeb3fb5162dd",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C43",
+      "claim": "The same relationship between visual imagery ratings and waves was not apparent for the backward waves.",
+      "claim_type": "EXPLICIT",
+      "source": "As the same relationship was not apparent for the BW waves, this consolidates the view that visionary experiences under DMT correspond to higher amounts of FW waves in particular.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "a3ae400c-b4b7-4cca-9f62-bdc2b28f74b8",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C44",
+      "claim": "Cortical travelling waves (and increased forward waves in particular) correlate with the conscious visual experiences, whether induced exogenously (via direct visual stimulation) or endogenously (visionary or hallucinatory experiences).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with previous results from visual stimulation experiments independent of DMT (Pang et al., 2020), these data strongly support the principle that cortical travelling waves (and increased FW waves in particular) correlate with the conscious visual experiences, whether induced exogenously (via direct visual stimulation) or endogenously (visionary or hallucinatory experiences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference combining current experimental data with previous research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "dcb2c043-a58a-47c7-a26e-679483ae9750",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C45",
+      "claim": "Compared with consistent eyes-closed conditions under placebo, eyes-closed DMT is associated with striking changes in cortical dynamics, which are remarkably similar to those observed during actual eyes-open visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Results revealed that, compared with consistent eyes-closed conditions under placebo, eyes-closed DMT is associated with striking changes in cortical dynamics, which are remarkably similar to those observed during actual eyes-open visual stimulation (Alamia and VanRullen, 2019; Pang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "2af534c0-e9ae-4813-a241-135443949483",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C46",
+      "claim": "Under DMT, we observed a reduction in backward waves, and increase in forward ones, as well as an overall decrease in \u03b1 band (8\u201312 Hz) oscillatory frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we observed a reduction in BW waves, and increase in FW ones, as well as an overall decrease in \u03b1 band (8\u201312 Hz) oscillatory frequencies (Timmermann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "7e049097-d33d-4e62-9e21-6fee63f4f58e",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C47",
+      "claim": "Increases in the amount of forward waves correlated positively with real-time ratings of the subjective intensity of the drug experience as well as post-hoc ratings of visual imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, increases in the amount of FW waves correlated positively with real-time ratings of the subjective intensity of the drug experience as well as post-hoc ratings of visual imagery, suggesting a clear relationship between travelling waves and a distinct and novel type of conscious experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "d8a2004c-88b9-4939-bae8-bdabda322025",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C48",
+      "claim": "Previous work involving ayahuasca and BOLD fMRI found increased visual cortex BOLD signal under the drug vs placebo while participants engaged in an eyes-closed imagery task.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work involving ayahuasca and BOLD fMRI found increased visual cortex BOLD signal under the drug vs placebo while participants engaged in an eyes-closed imagery task \u2013 a result that was interpreted as consistent with the 'visionary' effects of ayahuasca (de Araujo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "34c38b98-7a01-442f-af19-8dc4e815df36",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C49",
+      "claim": "It is now generally accepted that occipital cortex becomes activated during visual imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite some initial debate (Bartolomeo, 2008), it is now generally accepted that occipital cortex becomes activated during visual imagery (Fulford et al., 2018; Pearson, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent research and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "6e4afa75-b41b-4c19-9c10-234fd6dc5242",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C50",
+      "claim": "DMT/ayahuasca \u2013 and perhaps other psychedelics \u2013 engage the visual apparatus in a fashion that is consistent with actual exogenously driven visual perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Placing these findings into the context of previous work demonstrating increased FW travelling waves during direct visual perception (Alamia and VanRullen, 2019; Pang et al., 2020), our present findings of increased FW waves under DMT correlating with visionary experiences lend significant support to the notion that DMT/ayahuasca \u2013 and perhaps other psychedelics \u2013 engage the visual apparatus in a fashion that is consistent with actual exogenously driven visual perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference combining current findings with previous research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "6957321c-fcd1-4a46-94cd-ff02f16c0a22",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C51",
+      "claim": "As a classic serotonergic psychedelic drug, DMT's signature psychological effects are likely mediated by stimulation of the serotonin 2A (5-HT2A) receptor subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "As a classic serotonergic psychedelic drug, DMT's signature psychological effects are likely mediated by stimulation of the serotonin 2A (5-HT2A) receptor subtype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about psychedelic pharmacology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "340e4335-7f9c-4c52-9e77-e1210591c842",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C52",
+      "claim": "The 5-HT2A receptor has been found to be essential for the full signature psychological and brain effects of Ayahuasca.",
+      "claim_type": "EXPLICIT",
+      "source": "As with all other classic psychedelics (Nichols, 2016) the 5-HT2A receptor has been found to be essential for the full signature psychological and brain effects of Ayahuasca (Valle et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "50151d52-effb-4bc2-b266-31b6e8d4b057",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C53",
+      "claim": "The 5-HT2A receptor has been linked to visual hallucinations in neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its role in mediating altered perceptual experiences under psychedelics, the 5-HT2A receptor has also been linked to visual hallucinations in neurological disorders, with a 5-HT2A receptor inverse agonist having been licensed for hallucinations and delusions in Parkinson's disease with additional evidence for its efficacy in reducing consistent symptoms in Alzheimer's disease (Ballard et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "c7a2ba59-4053-406d-8b94-7e80b5331c15",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C54",
+      "claim": "There is a wealth of evidence that Bayesian or predictive mechanisms play a fundamental role in cognitive and perceptual processing.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a wealth of evidence that Bayesian or predictive mechanisms play a fundamental role in cognitive and perceptual processing (den Ouden et al., 2012; Kok and De Lange, 2015) and our understanding of the functional architecture underlying such processing is continually being updated (Alamia and VanRullen, 2019; Friston, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "ddcb22a4-71b2-4868-b57e-0244c18238e1",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C55",
+      "claim": "According to predictive coding, the brain strives to be a model of its environment.",
+      "claim_type": "EXPLICIT",
+      "source": "According to predictive coding (Huang and Rao, 2011), the brain strives to be a model of its environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical principle supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "306eea0d-c9e4-431f-99d2-36faae237219",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C56",
+      "claim": "Based on the assumption that the cortex is a hierarchical system, message passing from higher cortical levels is proposed to encode predictions about the activity of lower levels.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, based on the assumption that the cortex is a hierarchical system \u2013 message passing from higher cortical levels is proposed to encode predictions about the activity of lower levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical principle of predictive coding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "f94f02bd-9ff9-4e9a-be0d-b843ac14b358",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C57",
+      "claim": "When predictions are contradicted by the lower-level activity ('prediction error'), information passes up the cortical hierarchy where it can update predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism is interrupted when predictions are contradicted by the lower-level activity ('prediction error') \u2013 in which case, information passes up the cortical hierarchy where it can update predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical principle of predictive coding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "baa0a5b8-d1a3-44a6-9bf7-f5008f2412cd",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C58",
+      "claim": "Predictive coding has recently served as a guiding framework for explaining the psychological and functional brain effects of psychedelic compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictive coding has recently served as a guiding framework for explaining the psychological and functional brain effects of psychedelic compounds (Carhart-Harris and Friston, 2019; Pink-Hashkes et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "334dc99e-6c0a-4f54-8e63-c546a2020e49",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C59",
+      "claim": "According to one model, psychedelics decrease the precision-weighting of top-down priors, thereby liberating bottom-up information flow.",
+      "claim_type": "EXPLICIT",
+      "source": "According to one model (Carhart-Harris and Friston, 2019), psychedelics decrease the precision- weighting of top-down priors, thereby liberating bottom-up information flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical model supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "663bbaa7-6d78-4762-8706-65f59981b54f",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C60",
+      "claim": "Various aspects of the multi-level action of psychedelics are consistent with the model that psychedelics decrease the precision-weighting of top-down priors, such as the induction of asynchronous neuronal discharge rates in cortical layer 5, reduced alpha oscillations, increased signal complexity, and the breakdown of large-scale intrinsic networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Various aspects of the multi-level action of psychedelics are consistent with this model, such as the induction of asynchronous neuronal discharge rates in cortical layer 5 (Celada et al., 2008), reduced alpha oscillations (Carhart-Harris et al., 2016; Muthukumaraswamy et al., 2013) increased signal complexity (Schartner et al., 2017; Timmermann et al., 2019) and the breakdown of large-scale intrinsic networks (Carhart-Harris et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "8532ca52-d1e9-4840-974e-e1a1ac4f80a5",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C61",
+      "claim": "Recent empirically supported modelling work has lent support to assumptions that top-down predictions and bottom-up prediction-errors are encoded in the direction of propagating cortical travelling waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent empirically supported modelling work has lent support to assumptions that top-down predictions and bottom-up prediction-errors are encoded in the direction of propagating cortical travelling waves (Alamia and VanRullen, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "376e5fc0-23c8-4b81-a2d5-7e53f1f2b6bd",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C62",
+      "claim": "A minimal predictive coding model implementing biologically plausible constraints generates alpha-band travelling waves, which propagate from frontal to occipital regions and vice versa, depending on the 'cognitive states' of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, these simulations demonstrated that a minimal predictive coding model implementing biologically plausible constraints (i.e. temporal delays in the communication between regions and time constants) generates alpha-band travelling waves, which propagate from frontal to occipital regions and vice versa, depending on the 'cognitive states' of the model (input-driven vs. prior-driven), as confirmed by EEG data in healthy participants (in that case, processing visual stimuli vs. closed-eyes resting state).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous modeling and empirical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "ef4ed7ac-1fa7-4738-a5b8-72fd51452790",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C63",
+      "claim": "Thirteen participants took part in this study (six females, age 34.4 \u00b1 9.1 SD).",
+      "claim_type": "EXPLICIT",
+      "source": "Thirteen participants took part in this study (six females, age 34.4 \u00b1 9.1 SD), sample size was chosen based on prior EEG and MEG studies and effect sizes with similar compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "fab5b663-de91-4949-917d-3533a23728f8",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C64",
+      "claim": "Sample size was chosen based on prior EEG and MEG studies and effect sizes with similar compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirteen participants took part in this study (six females, age 34.4 \u00b1 9.1 SD), sample size was chosen based on prior EEG and MEG studies and effect sizes with similar compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision based on previous research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "01791117-30dc-48be-8c06-3eb34e2b6b60",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C65",
+      "claim": "Participants attended two sessions, in the first one, they received placebo, while DMT was administered in the second session.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants attended two sessions, in the first one, they received placebo, while DMT was administered in the second session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "c7e79d94-0672-4b53-b02c-dba90f1b057b",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C66",
+      "claim": "A fixed-order, single blind design was employed considering that psychedelics have been shown to induce lasting psychological changes, which could have led to confounding effects on the following session if DMT had been administered in the first session.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed a fixed-order, single blind design considering that psychedelics have been shown to induce lasting psychological changes (Maclean et al., 2011), which could have led to confounding effects on the following session if DMT had been administered in the first session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision based on previous research and inference about potential confounds.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "79e32d45-5ec3-487f-8a08-ee9663cb2b3a",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C67",
+      "claim": "Progressively increasing doses of DMT were provided to different participants (four different doses were used: 7, 14, 18 and 20 mg, to 3, 4, 1, and 5 successive participants, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Given the lack of human data with DMT, progressively increasing doses were provided to different participants (four different doses were used: 7, 14, 18 and 20 mg, to 3, 4, 1, and 5 successive participants, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dosing protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "9c995ee1-100a-471e-9d7b-ee216ff59c80",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C68",
+      "claim": "Participants rested in a semi-supine position with their eyes closed during the duration of the whole experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants rested in a semi-supine position with their eyes closed during the duration of the whole experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "28874287-e1fa-42f0-9d2f-87d903f419f5",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C69",
+      "claim": "At each minute, participants provided an intensity rating.",
+      "claim_type": "EXPLICIT",
+      "source": "At each minute, participants provided an intensity rating, while blood samples were taken at given time-points (the same for placebo and DMT conditions) via a cannula inserted in the participants' arm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "f46ef9db-2728-4e1e-aea6-ac4bbfa7abb7",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C70",
+      "claim": "One day after the DMT session, participants reported their subjective experience completing an interview composed of several questionnaires.",
+      "claim_type": "EXPLICIT",
+      "source": "One day after the DMT session, participants reported their subjective experience completing an interview composed of several questionnaires (see Timmermann et al., 2019 for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "b47b59bf-202d-4e5b-8edf-1c975f566f5c",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C71",
+      "claim": "In this study we focused on the Visual Analogue Scale values.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study we focused on the Visual Analogue Scale values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of which subjective measures were analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "43033481-72d3-4dba-9b70-c37a134002a3",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C72",
+      "claim": "EEG signals were recorded using a 32-channels Brainproduct EEG system sampling at 1000 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "EEG signals were recorded using a 32-channels Brainproduct EEG system sampling at 1000 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the recording equipment and parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "a550de17-9f1c-43b3-b376-3cf6dd46d35f",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C73",
+      "claim": "The dominant natural propagation spread of travelling waves is along the axis that connects the furthest posterior and frontal recording channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the dominant natural propagation spread of travelling waves is along the axis that connects the furthest posterior and frontal recording channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis of different electrode arrays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "3edb2032-0d59-4b03-8c9d-63e55dad1b3d",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C74",
+      "claim": "Waves propagating from leftward to rightward regions (and vice versa), were not affected by DMT.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, we additionally demonstrated that waves propagating from leftward to rightward regions (and vice versa), were not affected by DMT (see Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "f288681d-77ce-47a5-b167-7bfb7a16aee3",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C75",
+      "claim": "An additional analysis based on relative phases of the alpha band-pass signals over all channels confirmed that DMT disrupts the typical top-down propagation of alpha-band waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, in-line with previous work on travelling waves (Alexander et al., 2013; Alexander et al., 2006), an additional analysis based on relative phases of the alpha band-pass signals over all channels, confirmed the same results, with DMT indeed disrupting the typical top-down propagation of alpha-band waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by additional analysis and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "7e9bbf92-5431-4456-bdb3-6575c71d6e46",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C76",
+      "claim": "DMT induces an overall decrease of spectral power, especially in the alpha band backward waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to DMT, we observed overall a large reduction in absolute power, in-line with previous results.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "68cd4fa9-65e4-494c-9a62-09cb97b7bdab",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C77",
+      "claim": "In travelling wave systems, waves occur in groups (or packets) over some range of spatial wavelengths having multiple spatial and temporal frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated by both theoretical and experimental evidence (Nunez, 2000; Nunez and Srinivasan, 2014; Nunez and Srinivasan, 2009), in most systems, including the human brain, travelling waves occur in groups (or packets) over some range of spatial wavelengths having multiple spatial and temporal frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "fa3b1e80-db79-43f9-a437-bf67fba25c1d",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C78",
+      "claim": "Given any configurations of electrodes, only parts of wave packets can be successfully detected, i.e. waves shorter than the spatial extent of the array, and waves longer than twice the electrode separation distance (Nyquist criterion in space).",
+      "claim_type": "EXPLICIT",
+      "source": "Given any configurations of electrodes, only parts of these packets can be successfully detected, i.e. waves shorter than the spatial extent of the array, and waves longer than twice the electrode separation distance (Nyquist criterion in space).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established principles of signal processing and measurement.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "026f8929-8150-46a2-aab4-fe0d4e245a83",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C79",
+      "claim": "In scalp recordings, the shorter waves may be mostly removed by volume conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "In scalp recordings, the shorter waves may be mostly removed by volume conduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about EEG recording limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "7c2f9ac4-4c83-451d-a305-52f2b192b53b",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C80",
+      "claim": "Waves recorded directly from the cortex emphasize shorter waves than the scalp recorded waves.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, waves recorded directly from the cortex emphasize shorter waves than the scalp recorded waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about differences between cortical and scalp recordings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "bdca6325-b03e-4b5e-9351-48c9ea93cf85",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C81",
+      "claim": "In the case of small cortical arrays, the overlap between cortical and scalp data may be minimal, and the estimated wave properties (including propagation direction) may differ.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in the case of small cortical arrays, the overlap between cortical and scalp data may be minimal, and the estimated wave properties (including propagation direction) may differ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about measurement differences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "eb485228-7f9f-4f2f-ae3b-e5f9b928004c",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C82",
+      "claim": "When waves are travelling in multiple directions at nearly the same time in 'closed' systems (e.g. the cortical/white matter), waves either damp out or interfere with each other to form standing waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, it is important to consider that when waves are travelling in multiple directions at nearly the same time in 'closed' systems (e.g. the cortical/white matter), waves either damp out or interfere with each other to form standing waves (e.g. alpha waves travelling both forward and backward).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about wave physics and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "51a5cd50-c37c-4333-962d-acd7cbbe9ffa",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C83",
+      "claim": "It is reasonable to assume that the behaviour of wave properties will relate to global brain and mind states, and be sensitive to state-altering psychoactive drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is reasonable to assume that the behaviour of these properties will relate to global brain and mind states, and be sensitive to state-altering psychoactive drugs (Nunez, 2000; Nunez and Srinivasan, 2014; Nunez and Srinivasan, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical assumption supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "5b54424a-3742-4de5-8963-0fa3cc2a98d7",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "claim_id": "C84",
+      "claim": "The waves' analysis focuses on the sensor level, as source projections present a number of important limitations, such as impairing long-range connections, as well as smearing of signals due to scalp interference.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it's important to note that our waves' analysis focuses on the sensor level, as source projections presents a number of important limitations, such as impairing long-range connections, as well as smearing of signals due to scalp interference (Alexander et al., 2019; Freeman and Barrie, 2000; Nunez, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cfb0848f-acfb-4047-9dd1-3b8bad1eea16",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DMT administration during eyes-closed rest induces a shift in cortical travelling waves from predominantly backward (top-down) to increased forward (bottom-up) waves, similar to patterns observed during eyes-open visual stimulation. Specifically, backward waves decreased while forward waves increased significantly above zero after DMT injection, with changes appearing rapidly and fading after ~10 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 provide converging statistical evidence (Bayesian t-tests with BF10 values, credible intervals, power analysis >90%, ANOVA confirmation) demonstrating the shift in wave directionality. The experimental design includes appropriate placebo controls (C20-C21), dosage analysis (C24), and temporal resolution (C26). The comparison to visual stimulation (C2, C45) is supported by data though involves different subject groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "8747483d-8775-4154-8a49-36282a574e1d",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DMT altered the frequency spectrum of travelling waves, with significant reductions in alpha-band oscillations coupled with increases in delta and theta bands for both forward and backward waves. An overall decrease in spectral power was observed, particularly in alpha-band backward waves, with a notable exception of increased forward waves in the alpha range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 provide detailed statistical support with Bayesian factors for multiple frequency bands (delta, theta, alpha, beta) showing consistent spectral changes. The findings align with prior work on DMT effects (C13-C15, C46) and are supported by experimental data in Figure 3. The exception noted in C35 regarding forward alpha waves adds nuance to the overall power decrease.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "78e192ff-55a1-41ad-8224-c6ef5b7d10fd",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Increases in forward travelling waves correlated positively with both real-time intensity ratings and post-hoc visual imagery ratings, while backward waves showed negative or no correlation with these subjective measures. The strongest correlations occurred 2-5 minutes post-injection when drug effects peaked.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 demonstrate convergent correlational evidence linking wave dynamics to subjective experience. However, C41 acknowledges limited statistical power (n=12) and notes correlations did not reach significance at individual time points after multiple testing correction. Despite this limitation, the consistency across multiple measures (real-time ratings, visual imagery questionnaires) and the specificity to forward waves (C42-C43) provide reasonable support for the relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "e3f59763-aad0-49bc-9b67-88a3384101ee",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Eyes-closed DMT produces spatio-temporal dynamics remarkably similar to those elicited by eyes-open visual stimulation, including comparable profiles of forward and backward wave changes and similar decreases in oscillatory power. This suggests DMT engages the visual apparatus in a manner consistent with exogenously driven visual perception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While claims C29-C32 present compelling visual similarities in wave profiles and power changes between DMT and visual stimulation conditions, the comparison involves different subject groups and experimental setups, precluding direct statistical comparison (acknowledged in text). Claims C44 and C50 make broad inferences about visual processing mechanisms that extend beyond what the correlational data can definitively establish. The similarity is suggestive but requires additional experimental validation with within-subject designs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "8fc379a6-0ecc-4f87-9d15-48c04f816195",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Forward and backward waves show a consistent inverse relationship (negative correlation) that is maintained both before and after DMT injection. The total amount of waves remains consistent; only the ratio between forward and backward contributions changes after DMT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by correlation analysis showing significant negative relationships (Bayesian t-test BF10 values >380) that persist across conditions. The finding that this inverse relationship is unaffected by DMT (BF10=0.225 for pre-post difference) while the ratio changes provides insight into the mechanism of DMT's effects on cortical dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "53843626-bd18-44cd-8ad9-e41ea1b9469d",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The observed effects of DMT on travelling waves support predictive coding models proposing that psychedelics decrease precision-weighting of top-down priors, thereby altering the balance toward bottom-up information flow. Recent modeling work suggests travelling wave direction encodes top-down predictions versus bottom-up prediction errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C62 establish the theoretical framework of predictive coding and its application to psychedelics, supported by appropriate citations. However, C5 and the connection to the current data represents an inference rather than direct demonstration. The study does not manipulate top-down/bottom-up processing independently or test specific predictions of the predictive coding model. The consistency with the model is suggestive but does not constitute definitive evidence for the underlying mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "e75ea4ee-2d02-4426-bcdb-270ac05827e9",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Control analyses confirmed that the dominant propagation of travelling waves occurs along the posterior-frontal axis, with leftward-rightward waves unaffected by DMT. Additional phase-based analysis confirmed DMT disrupts typical top-down alpha-band wave propagation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 provide important methodological validation. C74 demonstrates specificity of DMT effects to the posterior-frontal axis (supported by Figure 2\u2014figure supplement 2), while C75 confirms findings using an alternative analytical approach based on relative phases, consistent with prior work. These controls strengthen confidence in the primary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "34c2113b-4383-4fbd-be45-da4d3390c76f",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study employed 13 participants in a fixed-order, single-blind design with placebo followed by DMT (7-20 mg doses), with eyes-closed EEG recording and minute-by-minute intensity ratings plus post-session questionnaires.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "While claims C63-C72 accurately describe the methodology, the experimental design has significant limitations. The fixed-order design (C65-C66) introduces potential order effects and practice effects that cannot be distinguished from drug effects. The single-blind design leaves open the possibility of experimenter bias. The justification for fixed-order (C66) regarding lasting psychological changes actually argues against the design, as it means the placebo condition may be contaminated by expectations. The varying doses (C67) without randomization further complicate interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "565c3666-66d9-4d26-8ad6-93ba28cdba73",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Travelling waves occur in packets with multiple spatial and temporal frequencies, with detection limited by electrode configuration and recording method. The analysis focused on sensor-level data due to limitations of source projection methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C84 provide appropriate theoretical and methodological context for interpreting travelling wave measurements, supported by citations to established work (Nunez et al.). The acknowledgment of measurement limitations (C78-C81) and the justification for sensor-level analysis (C84) demonstrate appropriate methodological awareness. These are important caveats for interpreting the spatial specificity of findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "bd5c98e3-e9cb-4303-8ce8-bd69f828622e",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DMT is an endogenous mixed serotonin receptor agonist that, when administered intravenously, rapidly induces an immersive altered state characterized by vivid visual imagery, with effects peaking at 2-5 minutes and subsiding by 30 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6, and C7 provide established background information about DMT supported by appropriate citations to prior research. These claims accurately characterize DMT's pharmacology and phenomenology based on existing literature and are not contested findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "560fdf5f-a162-480b-a7c3-d1379a59e20c",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior research has established that psychedelics, including ayahuasca and DMT, consistently decrease alpha-band oscillatory power, with alpha decreases correlating with visual hallucination intensity and representing a reliable neurophysiological signature of the psychedelic state alongside increased signal diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C15 accurately summarize prior electrophysiological research on psychedelics with appropriate citations. These claims establish the context for the current study and are supported by the cited literature. The characterization of alpha decreases as a reliable biomarker (C11) is appropriately qualified as 'arguably' and supported by multiple independent studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "867f66e1-16d0-4fe4-9f61-0b07062fdd02",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "During normal brain function, cortical travelling waves show distinct patterns: forward waves (occipital to frontal) predominate during visual perception reflecting bottom-up information flow, while backward waves (frontal to occipital) predominate during eyes-closed rest reflecting top-down processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 and C27-C28 establish the baseline understanding of travelling waves in normal perception and rest states, supported by appropriate citations to recent research. This provides the essential context for interpreting DMT's effects. The characterization is consistent with established neuroscience knowledge and recent empirical findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    },
+    {
+      "id": "f2bbd4ff-1203-4195-9780-d88637ff3e99",
+      "content_id": "6d3bc586-48bd-474c-ac0c-173f58e807f6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous research has shown that psychedelics including ayahuasca increase visual cortex activity during eyes-closed imagery tasks, occipital cortex activation during visual imagery is now generally accepted, and psychedelic effects are mediated by 5-HT2A receptor stimulation which is also implicated in visual hallucinations in neurological disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 and C51-C53 provide relevant background on visual cortex activation, visual imagery, and pharmacological mechanisms, all supported by appropriate citations. These claims establish important context linking psychedelic phenomenology to neural mechanisms and are consistent with established literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:30:08.703089Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4483e712-85f5-42ff-b38f-cc73f1fe4b39",
+      "result_id": "cfb0848f-acfb-4047-9dd1-3b8bad1eea16"
+    },
+    {
+      "claim_id": "1c4dad8e-b3ee-4a4d-929c-f3aaab9ba516",
+      "result_id": "cfb0848f-acfb-4047-9dd1-3b8bad1eea16"
+    },
+    {
+      "claim_id": "ac45a859-f22f-40f3-9cc0-9629b0f7bd57",
+      "result_id": "cfb0848f-acfb-4047-9dd1-3b8bad1eea16"
+    },
+    {
+      "claim_id": "b5dd56a6-5896-4528-b361-0c4608be23cb",
+      "result_id": "cfb0848f-acfb-4047-9dd1-3b8bad1eea16"
+    },
+    {
+      "claim_id": "5b960280-e58a-4193-b36d-253c69f8633c",
+      "result_id": "cfb0848f-acfb-4047-9dd1-3b8bad1eea16"
+    },
+    {
+      "claim_id": "4cd88eff-4398-4992-a910-72d792130a6d",
+      "result_id": "cfb0848f-acfb-4047-9dd1-3b8bad1eea16"
+    },
+    {
+      "claim_id": "b623cc0d-946d-4b99-83cd-9229d38309f4",
+      "result_id": "cfb0848f-acfb-4047-9dd1-3b8bad1eea16"
+    },
+    {
+      "claim_id": "be622efd-4cef-4cd1-a584-ad9008db3542",
+      "result_id": "cfb0848f-acfb-4047-9dd1-3b8bad1eea16"
+    },
+    {
+      "claim_id": "fd494fdb-7bec-4604-b3a1-ae62cfd7b6c5",
+      "result_id": "cfb0848f-acfb-4047-9dd1-3b8bad1eea16"
+    },
+    {
+      "claim_id": "fc87cf21-052a-4563-b1f9-3b20f314764c",
+      "result_id": "cfb0848f-acfb-4047-9dd1-3b8bad1eea16"
+    },
+    {
+      "claim_id": "dcb2c043-a58a-47c7-a26e-679483ae9750",
+      "result_id": "cfb0848f-acfb-4047-9dd1-3b8bad1eea16"
+    },
+    {
+      "claim_id": "2af534c0-e9ae-4813-a241-135443949483",
+      "result_id": "cfb0848f-acfb-4047-9dd1-3b8bad1eea16"
+    },
+    {
+      "claim_id": "89455431-281c-4c33-954a-f96e49cb195d",
+      "result_id": "8747483d-8775-4154-8a49-36282a574e1d"
+    },
+    {
+      "claim_id": "5442a11d-0a35-4859-a325-0b4904bc8c8e",
+      "result_id": "8747483d-8775-4154-8a49-36282a574e1d"
+    },
+    {
+      "claim_id": "9e0b49a1-f732-4772-b736-46840182bd57",
+      "result_id": "8747483d-8775-4154-8a49-36282a574e1d"
+    },
+    {
+      "claim_id": "2af534c0-e9ae-4813-a241-135443949483",
+      "result_id": "8747483d-8775-4154-8a49-36282a574e1d"
+    },
+    {
+      "claim_id": "7e9bbf92-5431-4456-bdb3-6575c71d6e46",
+      "result_id": "8747483d-8775-4154-8a49-36282a574e1d"
+    },
+    {
+      "claim_id": "2cad1ed3-f7af-4ed3-a461-7f9137cbc4c2",
+      "result_id": "78e192ff-55a1-41ad-8224-c6ef5b7d10fd"
+    },
+    {
+      "claim_id": "eeb94749-751e-4f19-8fc6-89787f0fd9ee",
+      "result_id": "78e192ff-55a1-41ad-8224-c6ef5b7d10fd"
+    },
+    {
+      "claim_id": "6112aa2e-2b25-449a-9ecb-e3c814a4d4cc",
+      "result_id": "78e192ff-55a1-41ad-8224-c6ef5b7d10fd"
+    },
+    {
+      "claim_id": "3e8e2cd1-e7e2-4d4b-814c-2445581f5a96",
+      "result_id": "78e192ff-55a1-41ad-8224-c6ef5b7d10fd"
+    },
+    {
+      "claim_id": "7b62b1ec-6075-4796-9c99-eeb3fb5162dd",
+      "result_id": "78e192ff-55a1-41ad-8224-c6ef5b7d10fd"
+    },
+    {
+      "claim_id": "7e049097-d33d-4e62-9e21-6fee63f4f58e",
+      "result_id": "78e192ff-55a1-41ad-8224-c6ef5b7d10fd"
+    },
+    {
+      "claim_id": "8e86b954-ea1e-4ae6-bfd5-20fc02f78863",
+      "result_id": "e3f59763-aad0-49bc-9b67-88a3384101ee"
+    },
+    {
+      "claim_id": "24ea87e7-90cd-4638-930b-4bdaea763194",
+      "result_id": "e3f59763-aad0-49bc-9b67-88a3384101ee"
+    },
+    {
+      "claim_id": "78caab5c-f8ee-480f-b9a8-aa1ac35ae20e",
+      "result_id": "e3f59763-aad0-49bc-9b67-88a3384101ee"
+    },
+    {
+      "claim_id": "bb0dd2fe-148c-4d1f-8b3a-a8005f87ead3",
+      "result_id": "e3f59763-aad0-49bc-9b67-88a3384101ee"
+    },
+    {
+      "claim_id": "a3ae400c-b4b7-4cca-9f62-bdc2b28f74b8",
+      "result_id": "e3f59763-aad0-49bc-9b67-88a3384101ee"
+    },
+    {
+      "claim_id": "6e4afa75-b41b-4c19-9c10-234fd6dc5242",
+      "result_id": "e3f59763-aad0-49bc-9b67-88a3384101ee"
+    },
+    {
+      "claim_id": "ffb7adb6-c662-4562-9393-499e1084a25a",
+      "result_id": "8fc379a6-0ecc-4f87-9d15-48c04f816195"
+    },
+    {
+      "claim_id": "47494feb-4640-4e67-b3e2-a773ab713dc9",
+      "result_id": "8fc379a6-0ecc-4f87-9d15-48c04f816195"
+    },
+    {
+      "claim_id": "cef61a01-7cc2-4ded-8707-5e3de178623a",
+      "result_id": "53843626-bd18-44cd-8ad9-e41ea1b9469d"
+    },
+    {
+      "claim_id": "c7a2ba59-4053-406d-8b94-7e80b5331c15",
+      "result_id": "53843626-bd18-44cd-8ad9-e41ea1b9469d"
+    },
+    {
+      "claim_id": "ddcb22a4-71b2-4868-b57e-0244c18238e1",
+      "result_id": "53843626-bd18-44cd-8ad9-e41ea1b9469d"
+    },
+    {
+      "claim_id": "306eea0d-c9e4-431f-99d2-36faae237219",
+      "result_id": "53843626-bd18-44cd-8ad9-e41ea1b9469d"
+    },
+    {
+      "claim_id": "f94f02bd-9ff9-4e9a-be0d-b843ac14b358",
+      "result_id": "53843626-bd18-44cd-8ad9-e41ea1b9469d"
+    },
+    {
+      "claim_id": "baa0a5b8-d1a3-44a6-9bf7-f5008f2412cd",
+      "result_id": "53843626-bd18-44cd-8ad9-e41ea1b9469d"
+    },
+    {
+      "claim_id": "334dc99e-6c0a-4f54-8e63-c546a2020e49",
+      "result_id": "53843626-bd18-44cd-8ad9-e41ea1b9469d"
+    },
+    {
+      "claim_id": "663bbaa7-6d78-4762-8706-65f59981b54f",
+      "result_id": "53843626-bd18-44cd-8ad9-e41ea1b9469d"
+    },
+    {
+      "claim_id": "8532ca52-d1e9-4840-974e-e1a1ac4f80a5",
+      "result_id": "53843626-bd18-44cd-8ad9-e41ea1b9469d"
+    },
+    {
+      "claim_id": "376e5fc0-23c8-4b81-a2d5-7e53f1f2b6bd",
+      "result_id": "53843626-bd18-44cd-8ad9-e41ea1b9469d"
+    },
+    {
+      "claim_id": "a550de17-9f1c-43b3-b376-3cf6dd46d35f",
+      "result_id": "e75ea4ee-2d02-4426-bcdb-270ac05827e9"
+    },
+    {
+      "claim_id": "3edb2032-0d59-4b03-8c9d-63e55dad1b3d",
+      "result_id": "e75ea4ee-2d02-4426-bcdb-270ac05827e9"
+    },
+    {
+      "claim_id": "f288681d-77ce-47a5-b167-7bfb7a16aee3",
+      "result_id": "e75ea4ee-2d02-4426-bcdb-270ac05827e9"
+    },
+    {
+      "claim_id": "ef4ed7ac-1fa7-4738-a5b8-72fd51452790",
+      "result_id": "34c2113b-4383-4fbd-be45-da4d3390c76f"
+    },
+    {
+      "claim_id": "fab5b663-de91-4949-917d-3533a23728f8",
+      "result_id": "34c2113b-4383-4fbd-be45-da4d3390c76f"
+    },
+    {
+      "claim_id": "01791117-30dc-48be-8c06-3eb34e2b6b60",
+      "result_id": "34c2113b-4383-4fbd-be45-da4d3390c76f"
+    },
+    {
+      "claim_id": "c7e79d94-0672-4b53-b02c-dba90f1b057b",
+      "result_id": "34c2113b-4383-4fbd-be45-da4d3390c76f"
+    },
+    {
+      "claim_id": "79e32d45-5ec3-487f-8a08-ee9663cb2b3a",
+      "result_id": "34c2113b-4383-4fbd-be45-da4d3390c76f"
+    },
+    {
+      "claim_id": "9c995ee1-100a-471e-9d7b-ee216ff59c80",
+      "result_id": "34c2113b-4383-4fbd-be45-da4d3390c76f"
+    },
+    {
+      "claim_id": "28874287-e1fa-42f0-9d2f-87d903f419f5",
+      "result_id": "34c2113b-4383-4fbd-be45-da4d3390c76f"
+    },
+    {
+      "claim_id": "f46ef9db-2728-4e1e-aea6-ac4bbfa7abb7",
+      "result_id": "34c2113b-4383-4fbd-be45-da4d3390c76f"
+    },
+    {
+      "claim_id": "b47b59bf-202d-4e5b-8edf-1c975f566f5c",
+      "result_id": "34c2113b-4383-4fbd-be45-da4d3390c76f"
+    },
+    {
+      "claim_id": "43033481-72d3-4dba-9b70-c37a134002a3",
+      "result_id": "34c2113b-4383-4fbd-be45-da4d3390c76f"
+    },
+    {
+      "claim_id": "68cd4fa9-65e4-494c-9a62-09cb97b7bdab",
+      "result_id": "565c3666-66d9-4d26-8ad6-93ba28cdba73"
+    },
+    {
+      "claim_id": "fa3b1e80-db79-43f9-a437-bf67fba25c1d",
+      "result_id": "565c3666-66d9-4d26-8ad6-93ba28cdba73"
+    },
+    {
+      "claim_id": "026f8929-8150-46a2-aab4-fe0d4e245a83",
+      "result_id": "565c3666-66d9-4d26-8ad6-93ba28cdba73"
+    },
+    {
+      "claim_id": "7c2f9ac4-4c83-451d-a305-52f2b192b53b",
+      "result_id": "565c3666-66d9-4d26-8ad6-93ba28cdba73"
+    },
+    {
+      "claim_id": "bdca6325-b03e-4b5e-9351-48c9ea93cf85",
+      "result_id": "565c3666-66d9-4d26-8ad6-93ba28cdba73"
+    },
+    {
+      "claim_id": "eb485228-7f9f-4f2f-ae3b-e5f9b928004c",
+      "result_id": "565c3666-66d9-4d26-8ad6-93ba28cdba73"
+    },
+    {
+      "claim_id": "51a5cd50-c37c-4333-962d-acd7cbbe9ffa",
+      "result_id": "565c3666-66d9-4d26-8ad6-93ba28cdba73"
+    },
+    {
+      "claim_id": "5b54424a-3742-4de5-8963-0fa3cc2a98d7",
+      "result_id": "565c3666-66d9-4d26-8ad6-93ba28cdba73"
+    },
+    {
+      "claim_id": "91b0837d-e6b5-42a1-9831-84d697b9b069",
+      "result_id": "bd5c98e3-e9cb-4303-8ce8-bd69f828622e"
+    },
+    {
+      "claim_id": "be7de817-f38f-4779-9952-28f8a4a53c2c",
+      "result_id": "bd5c98e3-e9cb-4303-8ce8-bd69f828622e"
+    },
+    {
+      "claim_id": "a9cbaea1-5337-4c11-b8e0-b48daae884a8",
+      "result_id": "bd5c98e3-e9cb-4303-8ce8-bd69f828622e"
+    },
+    {
+      "claim_id": "81ad2e33-2aa9-47f7-a6db-0cd63b85b0f7",
+      "result_id": "560fdf5f-a162-480b-a7c3-d1379a59e20c"
+    },
+    {
+      "claim_id": "f625078c-633f-4251-aac2-62d1f5d37125",
+      "result_id": "560fdf5f-a162-480b-a7c3-d1379a59e20c"
+    },
+    {
+      "claim_id": "1e3713e6-7cf2-400e-82f4-13b4058df1eb",
+      "result_id": "560fdf5f-a162-480b-a7c3-d1379a59e20c"
+    },
+    {
+      "claim_id": "b1f1cec7-01f4-4b0b-a1ae-ce3fce13c447",
+      "result_id": "560fdf5f-a162-480b-a7c3-d1379a59e20c"
+    },
+    {
+      "claim_id": "59d405cc-5168-448f-95b8-8640570dce0a",
+      "result_id": "560fdf5f-a162-480b-a7c3-d1379a59e20c"
+    },
+    {
+      "claim_id": "e112f8d8-79fa-43de-b739-07ad3477eeb6",
+      "result_id": "560fdf5f-a162-480b-a7c3-d1379a59e20c"
+    },
+    {
+      "claim_id": "420a87e7-a535-42a4-96fc-14da7f4b21e1",
+      "result_id": "560fdf5f-a162-480b-a7c3-d1379a59e20c"
+    },
+    {
+      "claim_id": "2fa13233-9d1f-44d1-845d-5019d07152cc",
+      "result_id": "560fdf5f-a162-480b-a7c3-d1379a59e20c"
+    },
+    {
+      "claim_id": "9e6c501e-1f9c-45b9-84fd-62e163f30916",
+      "result_id": "867f66e1-16d0-4fe4-9f61-0b07062fdd02"
+    },
+    {
+      "claim_id": "0a46bbcc-f2d2-4239-9e71-c7a6faea36b0",
+      "result_id": "867f66e1-16d0-4fe4-9f61-0b07062fdd02"
+    },
+    {
+      "claim_id": "e9502792-948b-48d4-9279-2d9baa555af3",
+      "result_id": "867f66e1-16d0-4fe4-9f61-0b07062fdd02"
+    },
+    {
+      "claim_id": "cadab5a5-0d3a-4b0f-b4ea-02fb23dc5b45",
+      "result_id": "867f66e1-16d0-4fe4-9f61-0b07062fdd02"
+    },
+    {
+      "claim_id": "91633c42-82ee-4bf9-9619-b500cfabe4e7",
+      "result_id": "867f66e1-16d0-4fe4-9f61-0b07062fdd02"
+    },
+    {
+      "claim_id": "59fe29fc-2a1a-4c20-b176-52747e5ffdab",
+      "result_id": "867f66e1-16d0-4fe4-9f61-0b07062fdd02"
+    },
+    {
+      "claim_id": "d8a2004c-88b9-4939-bae8-bdabda322025",
+      "result_id": "f2bbd4ff-1203-4195-9780-d88637ff3e99"
+    },
+    {
+      "claim_id": "34c38b98-7a01-442f-af19-8dc4e815df36",
+      "result_id": "f2bbd4ff-1203-4195-9780-d88637ff3e99"
+    },
+    {
+      "claim_id": "6957321c-fcd1-4a46-94cd-ff02f16c0a22",
+      "result_id": "f2bbd4ff-1203-4195-9780-d88637ff3e99"
+    },
+    {
+      "claim_id": "340e4335-7f9c-4c52-9e77-e1210591c842",
+      "result_id": "f2bbd4ff-1203-4195-9780-d88637ff3e99"
+    },
+    {
+      "claim_id": "50151d52-effb-4bc2-b266-31b6e8d4b057",
+      "result_id": "f2bbd4ff-1203-4195-9780-d88637ff3e99"
+    }
+  ],
+  "comparisons": []
+}

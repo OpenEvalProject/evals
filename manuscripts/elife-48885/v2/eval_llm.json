@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C40"
+    ],
+    "result": "Mixed colonies of A. baylyi and E. coli develop intricate flower-like patterns on soft agar that are absent in pure cultures of either species. Time-lapse imaging reveals that colonies remain circular for ~8 hours before developing undulations that form cusps and branches, which subsequently merge as the colony expands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C27-C32 provide consistent experimental observations with visual evidence (Figures 1a-b, 2a-b) showing pattern formation in mixed cultures. Claims C33-C34, C37 demonstrate proper negative controls showing no patterns in pure cultures, establishing that pattern formation requires inter-species interaction. The temporal dynamics are well-documented through time-lapse imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "E. coli accumulates at the colony periphery due to its higher growth rate (1.53\u00b10.11 h\u207b\u00b9) compared to A. baylyi (1.13\u00b10.01 h\u207b\u00b9), forming a band around the expanding colony. Regions with higher E. coli density expand more slowly, creating interface curvature with strong anti-correlation between E. coli density and both expansion speed (\u03c1=-0.67) and curvature (\u03c1=-0.43).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide quantitative growth rate measurements with appropriate replication (n=3) and error estimates. Claims C44-C45, C47-C49 present quantitative correlation analysis with Pearson coefficients and visual support (Figure 2c-d). The mechanistic link between E. coli density, friction, and front propagation is well-established through multiple converging lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C19",
+      "C53",
+      "C54",
+      "C55",
+      "C104",
+      "C103"
+    ],
+    "result": "Pattern formation is robust across a range of initial A:E ratios (1:100 to 1:1) but absent at high ratios (10:1, 100:1) where E. coli is eliminated. T6SS-mediated killing does not play a major role in pattern formation, as T6SS\u207b mutants produce similar patterns to wild-type strains, with the only difference being E. coli persistence in the inoculum center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C56-C61 systematically test different initial ratios with appropriate controls (Figure 3a-d). Claims C19, C53-C55, C62, C103-C104 demonstrate through genetic knockout experiments that T6SS is not required for pattern formation. The growth rate measurements for T6SS\u207b mutants (1.09\u00b10.01 h\u207b\u00b9, n=3) show no significant difference from wild-type, supporting the conclusion. Multiple replicates (n=3) strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C64",
+      "C65",
+      "C66",
+      "C63",
+      "C94"
+    ],
+    "result": "A. baylyi motility is essential for pattern formation. Genetic impairment of twitching motility through pilTU deletion completely eliminates patterns in mixed colonies, and the high motility of A. baylyi is the primary driver of colony expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C64-C66 provide clear genetic evidence through pilTU\u207b mutant experiments (Figure 3e) showing complete loss of pattern formation. Claims C63, C94 are supported by comparative expansion rates between pure and mixed colonies. The experimental design appropriately tests the necessity of motility for the observed phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C123",
+      "C124"
+    ],
+    "result": "Flower-like patterns also emerge in mixtures of motile and non-motile A. baylyi strains, confirming that motility differences are key to pattern formation. However, these patterns are less pronounced, possibly due to more similar physical parameters between the two A. baylyi strains compared to A. baylyi and E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 provide additional experimental validation of the motility-difference mechanism using same-species controls. Claims C69, C123-C124 offer reasonable speculation about why patterns are less robust, though this remains somewhat uncertain. The result strengthens the mechanistic interpretation but the explanation for reduced robustness is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Agar concentration critically affects pattern formation by modulating cell motility and friction. Experiments varying agar concentration (0.5-1%) and initial E. coli density demonstrate that patterns require intermediate friction conditions, with predictions from the phase-field model fully validated by experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C86-C88 provide systematic experimental variation of agar concentration with clear phenotypic outcomes (Figure 5f). Claims C83-C85 show corresponding model predictions that match experimental observations. Claim C89 states full validation, which is supported by the qualitative agreement between model and experiment across multiple conditions. The convergence of modeling and experimental results is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "A discrete interface model demonstrates that the colony boundary is unstable to perturbations due to a positive feedback loop: regions with lower E. coli density expand faster, stretching the interface and further reducing local density, while concave regions accumulate E. coli and move slower, eventually forming cusps. However, this model fails to capture sustained pattern formation because it neglects E. coli growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 describe the discrete interface model results with clear mechanistic explanation supported by simulations (Figure 4b-c, Videos 3-4). Claim C75 appropriately identifies a key limitation of the model. The linear stability analysis (C70) provides theoretical support. The model successfully explains branch formation and merging but its limitation is clearly acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C23"
+    ],
+    "result": "A phase-field model incorporating growth, mechanical stress from A. baylyi motility, and friction from E. coli successfully reproduces flower-like patterns in mixed colonies while showing no patterns in pure cultures. The model demonstrates that growth and motility differences are sufficient to explain the observed patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 describe phase-field model results that qualitatively match experimental observations (Figure 5b-d). The model shows appropriate behavior for pure cultures (no patterns) and mixed cultures (flower-like patterns). Claim C23 is supported by the model's ability to reproduce experimental patterns using only growth and motility differences as inputs. The model provides mechanistic insight into the pattern-forming instability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C107",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Pattern formation arises from mechanical interactions between species, requiring three key factors: motility of one species, hitchhiking of the non-motile species, and sufficient friction from the non-motile strain. The mechanism involves interplay between outward pressure from A. baylyi growth/motility and friction from sessile E. coli adhering to agar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C107 synthesize experimental and modeling evidence for the mechanical mechanism. Claims C117-C122 systematically identify necessary conditions through genetic manipulations and parameter variations. The convergence of multiple experimental approaches (T6SS\u207b, pilTU\u207b, agar concentration, density ratios) and two mathematical models provides strong support for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C115",
+      "C116"
+    ],
+    "result": "The highly-motile A. baylyi accelerates the spread of slow-moving E. coli through a hitchhiking mechanism, where E. coli cells 'surf' along the expanding colony boundary, allowing them to spread farther than they could alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 summarize key findings supported by expansion rate measurements (Figure 1d) and imaging data. Claims C115-C116 describe the hitchhiking mechanism, which is directly observed in time-lapse imaging and supported by the observation that E. coli reaches the colony periphery despite low motility. Video 6 provides additional visual evidence of E. coli transport by A. baylyi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C35",
+      "C36"
+    ],
+    "result": "Mixed colonies expand at intermediate speeds between pure A. baylyi (fast) and pure E. coli (slow) colonies, with expansion speed remaining relatively constant once colonies begin expanding. Pure E. coli colonies show minimal expansion after 16 hours, while pure A. baylyi colonies reach the plate edge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C35-C36 are supported by quantitative measurements shown in Figure 1d with appropriate controls. The intermediate expansion speed of mixed colonies is consistent with the proposed mechanical model where E. coli provides friction that slows A. baylyi-driven expansion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Colony expansion is mediated by cells physically pushing each other, as colonies do not expand until reaching near-confluent monolayer density. Before this point, motility causes cell rearrangement, but after reaching confluence, growth combined with motility pushes the boundary outward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by observations in Figure 1\u2014figure supplement 2 showing the transition from low to high cell density before expansion begins. This provides mechanistic insight into how motility translates to colony expansion through physical contact forces.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The mechanism of pattern formation in this multi-species system differs from single-species bacterial colonies. While single-species patterns typically arise from nutrient limitation and chemotaxis, the present study uses rich LB media where single-species colonies show no patterns, indicating a distinct mechanical mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 draws appropriate distinctions from prior work (C98-C101) based on experimental conditions and observations. The use of rich media and absence of patterns in single-species controls supports the conclusion that the mechanism differs from nutrient-limited chemotaxis-driven patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Noticeable killing of E. coli by T6SS+ A. baylyi was not observed after a short initial period, possibly due to protection by an extracellular matrix, as suggested by recent studies showing matrix-mediated protection from T6SS attacks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 is supported by video observations (Video 2), but claim C106 is speculative. While the speculation is supported by citations to relevant studies, no direct evidence for extracellular matrix involvement is provided in this work. The mechanism of E. coli survival remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C24",
+      "C126",
+      "C131",
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The pattern formation mechanism may be broadly generalizable to other multi-species colonies and natural habitats, with potential implications for pathogenic microbe transmission. The related pathogen Acinetobacter baumannii shares key characteristics (twitching motility, hospital co-occurrence with E. coli) that could enable similar dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24, C126, C131 are speculative about broader applicability, though reasonably grounded in the generality of the mechanism. Claims C125, C127-C130 provide context about A. baumannii with appropriate citations, but no direct experimental evidence tests whether similar patterns occur in other systems or with A. baumannii. The speculation is reasonable but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background context on microbial communities, biofilms, and bacterial interactions establishes that while biochemical and mechanical interactions in single-species colonies have been studied, multi-species dynamics driven by mechanical forces have received less attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide appropriate background context supported by citations to establish the knowledge gap. These claims accurately represent prior work and motivate the current study's focus on mechanical interactions in multi-species colonies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C25",
+      "C26",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Experimental system description: A. baylyi is a gram-negative bacterium with twitching motility and T6SS killing capability, while the E. coli strain used is nearly non-motile on soft agar. Strains were fluorescently labeled and genetic mutants (T6SS\u207b, pilTU\u207b) were constructed for mechanistic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C25-C26, C132-C137 describe the experimental system with appropriate citations for strain characteristics and clear documentation of genetic modifications. The methods are sufficiently detailed for the experimental design, though full reproducibility would require the referenced appendices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C93",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Discussion context on bacterial motility and hitchhiking: Motility enables bacterial dispersal but carries metabolic costs, leading some bacteria to hitchhike on more motile species. Examples include bacteria on zooplankton, staphylococci on P. aeruginosa, and transport by swarming P. vortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C93, C108-C114 provide appropriate discussion context with citations to establish that hitchhiking is a known ecological strategy. This contextualizes the current findings within the broader literature on bacterial dispersal mechanisms.",
+    "result_type": "MINOR"
+  }
+]

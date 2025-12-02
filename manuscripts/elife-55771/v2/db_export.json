@@ -1,0 +1,2090 @@
+{
+  "submission": {
+    "id": "53e7b17d-967b-40c9-8940-04cab62e6ff8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:49:09.930767Z",
+    "updated_at": "2025-12-02T16:49:09.930767Z"
+  },
+  "content": [
+    {
+      "id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "submission_id": "53e7b17d-967b-40c9-8940-04cab62e6ff8",
+      "content_type": "manuscript",
+      "content_text": "# Yap-lin28a axis targets let7-Wnt pathway to restore progenitors for initiating regeneration\n\n## Authors\n\n- Zhian Ye<sup>1</sup>\n- Zhongwu Su<sup>2</sup>\n- Siyu Xie<sup>1</sup>\n- Yuye Liu<sup>1</sup>\n- Yongqiang Wang<sup>1</sup>\n- Xi Xu<sup>1</sup>\n- Yiqing Zheng<sup>2</sup> \u2020\n- Meng Zhao<sup>3</sup> \u2020\n- Linjia Jiang<sup>1</sup> ([ORCID: 0000-0001-8854-2610](https://orcid.org/0000-0001-8854-2610)) \u2020\n\n### Affiliations\n\n1. Guangdong Provincial Key Laboratory of Malignant Tumor Epigenetics and Gene Regulation, Sun Yat-Sen Memorial Hospital, Sun Yat-Sen University Guangzhou China\n2. Department of Otolaryngology, Sun Yat-Sen Memorial Hospital, Sun Yat-Sen University Guangzhou China\n3. Key Laboratory of Stem Cells and Tissue Engineering, Zhongshan School of Medicine, Sun Yat-Sen University, Ministry of Education Guangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe sox2 expressing (sox2+) progenitors in adult mammalian inner ear lose the capacity to regenerate while progenitors in the zebrafish lateral line are able to proliferate and regenerate damaged HCs throughout lifetime. To mimic the HC damage in mammals, we have established a zebrafish severe injury model to eliminate both progenitors and HCs. The atoh1a expressing (atoh1a+) HC precursors were the main population that survived post severe injury, and gained sox2 expression to initiate progenitor regeneration. In response to severe injury, yap was activated to upregulate lin28a transcription. Severe-injury-induced progenitor regeneration was disabled in lin28a or yap mutants. In contrary, overexpression of lin28a initiated the recovery of sox2+ progenitors. Mechanistically, microRNA let7 acted downstream of lin28a to activate Wnt pathway for promoting regeneration. Our findings that lin28a is necessary and sufficient to regenerate the exhausted sox2+ progenitors shed light on restoration of progenitors to initiate HC regeneration in mammals.\n\n## Introduction\n\nThe auditory epithelium is a delicate structure located in the cochlea that is composed of sensory hair cells (HCs) and nonsensory support cells (SCs). During early development of mouse cochlea, the transcription factor sox2 is required to determine the prosensory region that mainly contains progenitors (Julian et al., 2013; Kiernan et al., 2005; Dabdoub et al., 2008). From E12.5 to E14.5 sox2+ progenitors exit cell cycle and differentiate into auditory HCs and SCs. Basic helix-loop-helix (bHLH) transcription factor atoh1 acts as the cardinal gene initiating auditory HC differentiation since atoh1 deficiency causes complete loss of cochlear HCs (Bermingham et al., 1999). A subset of post-mitotic progenitors start to express high levels of atoh1 and downregulate sox2 expression to differentiate into the HC precursors (Dabdoub et al., 2008; Zhong et al., 2019; Cai and Groves, 2015; Zhang et al., 2017). Afterwards, their terminal differentiation toward mature HCs is promoted by the upregulation of atoh1 target genes, such as pou4f3 (Cai et al., 2015). In the meanwhile, differentiating HCs secret Notch ligands to activate Notch pathway, which inhibits atoh1 expression in neighboring cells and forces them to adopt the SC fate (Abdolazimi et al., 2016; Costa et al., 2017; Lanford et al., 1999).\n\nThe zebrafish lateral line is a mechanosensory organ composed of a series of neuromasts distributed on the body surface for detecting water flow. The lateral line HCs share similarities with their counterparts in mammalian inner ear in morphology, function and developmental pathways (Whitfield, 2002; Nicolson, 2005). Each neuromast contains sensory HCs in the center surrounded by SCs and mantle cells (MCs). Aminoglycoside antibiotics, such as neomycin, ablates mature HCs and initiates robust mitotic regeneration that is characterized with SC division and differentiation (Harris et al., 2003; Jiang et al., 2014; Williams and Holder, 2000; Ma et al., 2008; Romero-Carvajal et al., 2015). The powerful capacity to regenerate HCs sustains after multiple rounds of damage, and retains throughout lifetime (Cruz et al., 2015; Pinto-Teixeira et al., 2015). Even after severe loss of the tissue integrity, the residual SCs have high potential to recover the neuromast by acting plastic to generate all three cell types (Viader-Llargu\u00e9s et al., 2018). Like in inner ear, atoh1a is expressed in HC precursors but not mature HCs in neuromast while sox2 is expressed in a part of SCs and MCs (Ma et al., 2008; Lush et al., 2019). Sox2+ SCs behave as progenitors to proliferate and differentiate through activation of canonical Wnt pathway during regeneration (Hern\u00e1ndez et al., 2007; Jacques et al., 2014). However, it is unknown how regeneration is initiated when sox2+ progenitors are absent.\n\nMammalian sensory HCs are vulnerable to damages caused by antibiotics, chemotherapeutical drugs and noise, which results in various hearing and balance diseases (Cox et al., 2014). Until now, the principal method used to initiate auditory HC regeneration in mammalian inner ear is to induce the transdifferentiation of SCs into HCs by upregulating atoh1 expression. For example, many studies tried to overexpress atoh1 in SCs with adenovirus, or used Notch inhibitor to increase atoh1 expression (Atkinson et al., 2018; Mizutari et al., 2013; Izumikawa et al., 2005; Yang et al., 2012). However, because the efficiency of HC induction is very low and SCs are lost due to transdifferentiation, very limited progress toward hearing recovery has been achieved (Cox et al., 2014; Zheng and Zuo, 2017; Chen et al., 2019). New strategies of restoring sox2+ progenitors to initiate mitotic regeneration would be more promising to realize functional regeneration in mammalian adult inner ear. Unfortunately, very little is known whether and how sox2+ progenitors can be restored in sensory epithelium.\n\nHere in the zebrafish lateral line, we found that exhausted sox2+ progenitors were able to restore quickly for initiating HC regeneration in severe injury. Atoh1a+ HC precursors were the main population that survived post severe injury and dedifferentiated into sox2+ progenitors through yap-lin28a pathway.\n\n## Results\n\n### Exhausted sox2+ progenitors were quickly recovered by intensive proliferation post severe injury\n\nIt is well documented that Notch signaling pathway negatively regulates the differentiation of SCs into HCs (Ma et al., 2008; Haddon et al., 1998). Using the \u03b3-secretase inhibitor LY411575 to inhibit Notch pathway from 3-day-post-fertilization (dpf) to 5dpf, we found that SCs were exhausted by persistent differentiation into HCs (Figure 1\u2014figure supplement 1). Neomycin was used to ablate mature HCs following LY treatment (LY+neo), which leads to the severe injury with both HCs and SCs being ablated. Sox2 marks the proliferative progenitors that produce both SCs and HCs in homeostatic and regenerative neuromasts (Hern\u00e1ndez et al., 2007). We analyzed sox2+ cells in neo- and LY+neo-treated neuromast by immunostaining with anti-sox2 antibody. While the distribution of sox2+ cells moved to the center post neo compared with normal larvae, the number was not changed. But sox2+ cell number was dramatically decreased after LY or LY+neo (Figure 1A\u2013B). Surprisingly, sox2+ progenitors were able to recover quickly post LY+neo. A few sox2+ progenitors appeared early at 6 hr, with increased sox2+ progenitors being regenerated afterwards and recovered to normal level by 48 hr. In Figure 1A, ET4+ HCs appeared at 48 hr post LY+neo, suggesting that HC regeneration happened after the recovery of sox2+ progenitors.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig1-v2.jpg)\n\n**Figure 1.:** (A, B) ET4;ET20 larvae were treated with neomycin, LY411575 (3dpf-5dpf), or neomycin following LY (LY+neo), and collected at indicated time points post neomycin treatment for sox2 immunostaining. The number of sox2+ progenitors was not affected post neo, while it was significantly decreased in LY and LY+neo-0h. The sox2+ progenitors were regenerated post LY+neo and recovered to normal level at 48 hr post LY+neo. (C, D) The sox2:GFP reporter was treated with LY from 3dpf to 5dpf to exhaust GFP+ progenitors. GFP+ progenitors cannot be regenerated when resting in normal medium for 2 days post LY treatment (LY+rest). In contrast, sox2+ progenitors were quickly recovered to normal level at 2-day post LY+neo. Scale bar equals 10 \u03bcm. All groups are compared with 5dpf unless indicated.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** ET4;ET20 larvae were treated with 2 \u03bcM LY from 3dpf to 5dpf followed by neomycin, and the number of HCs, SCs and MCs were counted before and right after neo treatment. Results showed that HCs were increased while SCs were decreased post LY, indicating that LY induced differentiation of SCs into HCs. Numbers of HCs, SCs and MCs were all significantly decreased post LY+neo compared with 5dpf normal larvae. Scale bar equals 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Larvae treated with neo or LY+neo were incorporated with EdU for different time points and counted for numbers of differentiating cells (EdU+ET4+ cells, HC+), proliferative SCs (EdU+ET4-ET20- cells, SC+), and proliferative MCs (EdU+ET20+ cells, MC+). We calculated EdU incorporation per hour by dividing EdU+ cell number with incorporation time. Results showed that differentiation rate (HC+ in B) in LY+neo was decreased compared with neo, while proliferative rates of SCs (SC+ in C) and MCs (MC+ in D) were significantly increased. Scale bar equals 10 \u03bcm.\n\nIn addition to sox2 antibody staining, we also used sox2-2a-GFP knock-in reporter (sox2:GFP) (Shin et al., 2014) to observe the recovery of sox2+ progenitors. GFP-positive cells in neuromast, which were mostly co-labeled by sox2 antibody, were significantly decreased in LY, and recovered to normal level at 48 hr post LY+neo. In contrast, the exhausted sox2+ progenitors were not recovered without severe injury (Figure 1C\u2013D). These results indicate that sox2+ progenitors in the zebrafish lateral line have high potential to regenerate themselves when exhausted by severe injury.\n\nDuring regeneration, three types of cell divisions can be\u00a0detected by combining EdU staining with GFP expression in ET4;ET20 (Romero-Carvajal et al., 2015). First, EdU is incorporated in differentiating cells when one HC precursor divides into two HCs (ET4+EdU+, or HC+). The second type is SC proliferation in which one SC divides into two SCs (ET4-ET20-EdU+, or SC+). The third type is mantle cell (MC) proliferation in which one MC divides into two MCs (ET20+EdU+, or MC+). Our results showed that proliferation in SCs or MCs post severe injury is highly increased compared with neo-induced normal injury, while HC differentiation is decreased (Figure 1\u2014figure supplement 2). By time lapse, we recorded 12 times of MC or SC divisions in one neuromast from 24 hr to 40 hr post LY+neo, but none of them was differentiation (Video 1). These results indicate that intensive proliferation is necessary to accomplish regeneration post severe injury.\n\n![Video 1.](https://cdn.elifesciences.org/articles/55771/elife-55771-video1.mp4.jpg)\n\n**Video 1.:** Results showed the intensive cell divisions (CDs) during severe-injury-induced regeneration. Scale bar equals 10 \u03bcm.\n\n### Activated yap upregulated lin28a expression in atoh1a+ HC precursors upon severe injury\n\nWe next investigated the mechanism involved in progenitor recovery. Previously, we have collected samples of regenerating neuromasts for RNA-Seq analysis (Jiang et al., 2014) and identified that\u00a0lin28a was transiently upregulated post neomycin treatment (Figure 2\u2014figure supplement 1A). By in situ hybridization, we verified that lin28a was not expressed in the developing lateral line primordium or neuromast (Figure 2A). Neomycin treatment and other types of HC injuries, including heavy metal (copper sulfate) or chemotherapeutic drug (cisplatin), induced sporadic lin28a expression (Figure 2\u2014figure supplement 1B). Interestingly, LY+neo induced much higher expression of lin28a compared with neo alone (Figure 2B). Since LY+neo induced more cell death than neo as illustrated by ablation of s100t expressing HCs, we tested whether lin28a induction is proportional to the injury size. We used laser ablation to manipulate the number of injured cells in LY-treated neuromast. Low level of lin28a was induced when five HCs were ablated while higher level of lin28a was observed when sixteen HCs were ablated. Furthermore, we found that the ablation of SCs could also induce lin28a expression (Figure 2\u2014figure supplement 1C\u2013D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig2-v2.jpg)\n\n**Figure 2.:** (A) Lin28a was not expressed in the developing lateral line primordium or neuromast. (B) Treatment with Notch inhibitor LY411575 from 3dpf to 5dpf increased expression atoh1a and s100t. More lin28a expression was observed in LY+neo-1h compared with neo-1h. No lin28a was detected at 5 hr post LY+neo or neo. (C) The number of atoh1a-transcribed cells detected by in situ were higher at 1 hr post LY+neo compared with LY. (D) Double fluorescent in situ showed that lin28a was co-expressed with atoh1a post neo or LY+neo. (E) Induction of lin28a post injury was increased when atoh1a was overexpressed in hs:atoh1a. (F) Lin28a expression was completely blocked when atoh1a was inhibited in hs:notch1a. (G) Western blot results showed that LY+neo induced higher yap expression compared with neo alone. (H) Motifs of yap and tead1 (co-transcriptional factor of yap) binding sites were predicted near lin28a transcriptional start site. CHIP-PCR results verified that yap directly binds the predicted motif. (I and J) Inhibition of yap using verteporfin or yap mutant blocked lin28a induction post LY+neo. Scale bar equals 10 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) RNA-Seq analysis using neomycin-treated neuromast cells revealed that lin28a was highly induced at 1 hr post neo while lin28b expression wa s not changed. (B) lin28a was induced at 1 hr post treatments with neomycin, cisplatin and copper. (C) LY-treated larvae were subjected for laser scan to ablate HCs at the indicated locations (white circles). Expression levels of lin28a was proportional to the injured cell number manipulated by laser ablation. (D) Laser was targeted at the circles for ablating indicated number of HCs or SCs. The corresponding neuromast was performed for lin28a in situ, and the results showed that either HC damage or SC damage could induce lin28a expression. Scale bar equals 10 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Wnt inhibition with hs:dkk1 has no effect on lin28a induction post neo treatment. (B) Expression levels of lin28a, yap, taz and Hippo pathway genes, such as lats1 and mob1, were detected by western blot at various time points post LY+neo. Results showed that yap was increased at 1 hr post LY+neo. Levels of lats1 and phosphorylated mob1 were not changed at 1 hr, suggesting yap is activated independent of canonical Hippo pathway. (C) Specificity of yap antibody was tested with 32hpf sibling and yap mutants. (D\u2013E) Larvae treated with neo or LY+neo were immonstained with yap antibody. Results showed that nuclear localized yap was increased in LY+neo compared with neo. (F) LY+neo induced yap expression in sibling but not yap mutants. (G) Yap activation post LY+neo was inhibited when atoh1a is inhibited with hs:notch1a, suggesting that yap is activated in atoh1a+ HC precursors. (H) Classic yap target genes cyr61 and ctgfa were upregulated post LY+neo, which is partially blocked by verteporfin. (I) Transcripts of yap and mst2 were highly induced post LY+neo, which was blocked by verteporfin. Scale bar equals 10 \u03bcm.\n\nAtoh1a is a master gene for HC specification and labels mostly HC precursors including differentiating HCs and young HCs (Cai and Groves, 2015; Lush et al., 2019). We noticed that atoh1a+HC\u00a0precursors were the main population that survived post LY+neo (Figure 2C). Using double fluorescent in situ, it was verified that lin28a was induced in atoh1a+ HC precursors in both neo- and LY+neo-treated neuromasts (Figure 2D). We further assessed the effect of atoh1a expression on lin28a induction. We used hs:atoh1a to induce atoh1a expression after heat shock and found that neo-induced lin28a was increased (Figure 2E). In contrast, lin28a induction post LY+neo was completely blocked when atoh1a expression was inhibited in hs:notch1a (Figure 2F). All these results indicate that lin28a was induced in atoh1a+ HC precursors post injury.\n\nWe further analyzed the upstream pathway that induce lin28a post injury. It\u2019s documented that Wnt activation regulates lin28a expression (Yao et al., 2016), so we first examined whether Wnt activation acts upstream to induce lin28a expression post injury. We used hs:dkk1 to inhibit Wnt activation and found that lin28a induction post injury was not affected (Figure 2\u2014figure supplement 2A). Because Hippo pathway critically regulates regeneration of many tissues (Gregorieff et al., 2015; Gregorieff and Wrana, 2017; Moya and Halder, 2016), we therefore tested the expression of yap and taz, two cardinal mediators of Hippo pathway. We found the protein levels of yap was up-regulated at 1 hr post LY+neo while taz was increased until 5 hr (Figure 2G and Figure 2\u2014figure supplement 2B). By immunostaining, more yap was also dectected in LY+neo-treated neuromast cells compared with neo. Yap expression was inhibited when atoh1a is inhibited with hs:notch1a, which suggests that yap is activated in atoh1a+ HC precursors (Figure 2\u2014figure supplement 2D\u2013G). Expressions of the classic yap target genes, such as cyr61 and ctgfa, and the Hippo pathway genes, such as yap and mst2, were dramatically increased post LY+neo (Figure 2\u2014figure supplement 2H\u2013I), which was blocked with verteporfin (an inhibitor of yap-mediated transcription by blocking yap-tead1 interaction).\n\nInteresting we found a conserved yap binding motif located at 100 bp downstream of lin28a transcription start site, where a tead1 binding motif is located nearby. We used CHIP-PCR to verify that yap directly binds to this region of lin28a promoter post severe injury (Figure 2H). In addition, LY+neo-induced lin28a expression was blocked in verteporfin or in yap mutant (Figure 2I\u2013J). Taken together, we found that yap is highly activated by severe injury and directly binds lin28a promoter to initiate its transcription in atoh1a+ HC precursors.\n\n### Yap-lin28a pathway is necessary and sufficient to promote progenitor recovery\n\nTo determine whether lin28a is required for HC regeneration, we generated a lin28a mutant allele (lin28a^psi37, referred to as lin28a-) that harbors a deletion of five nucleotides and causes a premature stop codon within the cold shock domain (Figure 3\u2014figure supplement 1). We found that lin28a deficiency had no effect on HC or SC number in homeostasis, nor did it affect exhaustion of sox2+ progenitors post LY or LY+neo (Figure 3\u2014figure supplement 2). Since LY+neo treatment substantially enhanced lin28a expression, we examined whether lin28a deficiency affected LY+neo-induced regeneration. We found that the regenerated HC number was decreased by lin28a deficiency (Figure 3A). In addition, the number of regenerated SCs (Figure 3A) and the proliferative SCs (Figure 3B) were both significantly decreased. The EdU-positive SC cells that were located in each quadrant with no polarization in sibling post LY+neo were almost cleared in lin28a mutant (Figure 3C\u2013D). In contrast, the EdU-positive SC number post neo is not affected by lin28a deficiency (Figure 3E), indicating that lin28a is not required for neo-induced regeneration.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig3-v2.jpg)\n\n**Figure 3.:** (A) The number of SCs and total cells were counted at 48 hr post LY+neo and were significantly decreased in lin28a mutant compared with sibling. (B\u2013E) The ET4;ET20 larvae were incorporated with EdU post neo or LY+neo treatment. Three populations labeled with ET4+EdU+ (HC+), ET20+EdU+ (MC+) or ET4-ET20-EdU+ (SC+) were counted and recorded with location information. The proliferative SCs post LY+neo were significantly decreased in lin28a mutant compared with sibling (B and C), while not changed in neo-induced regeneration (E). (D) EdU plots show the positions of EdU+ nuclei of 18 neuromasts superimposed on the same plane, and rose diagrams document the angular positions of SC+. The results show that the proliferative SCs are evenly distributed in each quadrant with no polarization post LY+neo. (F) LY+neo-induced Edu incorporation was significantly reduced in yap mutant. (G)\u00a0The\u00a0hs:lin28a larvae were heat-shocked and pre-treated with 10 \u03bcM verteporfin before adding neomycin. Samples were collected at 14 hr post LY+neo for EdU+ cell counting. Proliferation (SC+) is significantly decreased post LY+neo in verteporfin, which could be rescued by overexpression of lin28a with hs:lin28a. (H, I) The numbers of regenerated sox2+ progenitors (sox2) and proliferative progenitors (sox2EdU) post LY+neo were both reced in lin28a mutant. Scale bar equals 10 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Diagram shows four exons of lin28a and the position of CIRPSR that was used for creating lin28a mutant. (B\u2013C) Deletion of five nucleotides in the lin28a mutant allele damages the restriction enzyme site of Hpy188I and leads to a truncated protein by creating a premature stop codon in lin28a mRNA. (D) F1 embryos were genotyped for lin28a mutation by PCR followed by Hyp188I digestion. (E) Transcribed lin28a mRNA level was decreased in lin28a-/- post LY+neo, probably because the mutant form of lin28a mRNA is unstable and degraded.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** We compared numbers of ET4+ HCs and sox2+ progenitors in 5dpf sibling and lin28a-/- and found that they were not changed in lin28-/-\u00a0in homeostasis (A), LY (B) and LY+neo (C). Scale bar equals 10 \u03bcm.\n\nWe also observed that yap deficiency induced similar phenotype with lin28a mutant. Yap mutation or inhibition with verteporfin caused proliferative deficiency post LY+neo, but has no effect on SC proliferation post neo (Figure 3F\u2013G and data not shown). We have generated a transgenic line in which heat shock promoter is used to drive lin28a expression. Proliferative deficiency in verterporfin was rescued by hs:lin28a (Figure 3G), indicating that lin28a acts downstream of yap to promote SC proliferation. We next examined whether lin28a is required for recovery of sox2+ progenitors post LY+neo. The number of proliferative and regenerated progenitors at 12 hr post injury were significantly reduced in lin28a mutant (Figure 3H\u2013I).\n\nWe found that the HC number was not changed in hs:lin28a, indicating that lin28a has no effect on HC development (Figure 4\u2014figure supplement 1). We next examined whether lin28a overexpression is sufficient to promote progenitor proliferation. The number of proliferative SCs was significantly increased when lin28a is overexpressed in both homeostatic and neo-treated neuromast, whereas HC differentiation was not changed (Figure 4A\u2013B). The proliferative SCs are localized in dorsal and ventral poles of neuromast in homeostasis and neo-induced regeneration (Ma et al., 2008; Romero-Carvajal et al., 2015; Wibowo et al., 2011). The location of proliferative SCs still remain polarized in hs:lin28a (Figure 4C\u2013D). We further examined whether lin28a overexpression is sufficient to induce sox2+ progenitors, and observed higher number of proliferative progenitors in hs:lin28a post LY (Figure 4E\u2013F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013D) ET4;ET20;hs:lin28a larvae were incorporated with BrdU for 24 hr following heat-shock and/or neomycin treatment. (A, B) Overexpression of lin28a increased number of proliferative SCs (SC+) in both untreated and neomycin conditions. (C, D) BrdU plots and rose diagrams indicate that locations of SC+ still remain dorsally and ventrally polarized in hs:lin28a. (E, F) OverexpressUion of lin28a is sufficient to partially restore the exhausted sox2+ progenitors post LY. Scale bar equals 10 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The ET4;ET20;hs:lin28a larvae were heat-shocked at 3dpf or 5dpf and collected after 24 hr for HC and MC counting. Results showed that numbers of HCs and MCs were not significantly changed by overexpression of lin28a at 3dpf (A) and 5dpf (B and C).\n\n### Atoh1a+ HC precursors gained sox2 expression through Yap-lin28a pathway\n\nOur data indicate that lin28a is induced in atoh1a+ HC precursors post injury, but lin28a functions to recover sox2+ progenitors during regeneration. To address this paradox, we hypothesized that HC precursors gained sox2 expression to initiate regeneration post severe injury. We co-labeled the\u00a0expressions of atoh1a mRNA and sox2 protein and found that the number of atoh1a+sox2+ cells in LY+neo was significantly increased compared with neo (Figure 5A\u2013B). In addition, we used atoh1a:TdTomato reporter to test whether atoh1a+ cells expressed sox2 post severe injury. The atoh1a:TdTomato reporter labeled partially ET4-positive HCs (Figue 5C, ctrl) and also a few cells that are ET4 negative and sox2 negative which are likely HC precursors (Figure 5C, yellow arrows in LY). Very few Tomato+ cells express sox2 in normal or LY-treated larvae. However, significantly more Tomato+ cells turned on sox2 expression at 12 hr and 48 hr post LY+neo and become Tomato+sox2+ cells (Figure 5D). We further used time-lapse microscopy to trace atoh1a:TdTomato cells and found that the Tomato+ cells became HCs in both neo and LY+neo (blue dots in Figure 5\u2014figure supplement 1A\u2013B, Video 2 and S3). However, it\u2019s only in LY+neo-induced severe injury that Tomato+ cells became sox2-positive cells\u00a0labeled by sox2:GFP (white dots in Figure 5\u2014figure supplement 1B and Video 3). We traced the Tomato+ cells for their fate becoming HCs, SCs or MCs (Figure 5\u2014figure supplement 1C\u2013D), and the results showed that significantly higher ratio of SCs were labeled by Tomato post LY+neo. More importantly many Tomato+ MCs were labeled post LY+neo, but none was detected in normal or neo-treated larvae, suggesting that atoh1a+sox2+ cells gained more potential to produce MCs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013B) Larvae were stained with sox2 antibody and atoh1a RNA probe at 6 hr post neo or LY+neo treatment. The number of atoh1a+sox2+ cells was significantly increased in LY+neo group. (C\u2013D) The atoh1a:TdTomato larvae were used to trace atoh1a+ HC precursors in ctrl, LY or LY+neo. Results showed that Tomato+ cells labeled partial ET4+ HCs and ET4-sox2- HC precursors (yellow arrows). However, many atoh1a+ cells start to express sox2 from 12 hr post LY+neo and their numbers were significantly increased compared with normal larvae. The arrowheads in (C) pointed the atoh1a+sox2+ cells at 48 hr post LY+neo. (E) The atoh1a:TdTomato;hs:lin28a larvae was treated with LY+neo and verteporfin and collected for immunostaining with sox2 antibody. The cell number of Tomato+sox2+ is decreased in verteporfin and overexpression of lin28a could rescue the phenotype. (F\u2013G) The LY-treated hs:lin28a larvae were heat-shocked to overexpress lin28a. Samples were collected for staining with sox2 antibody and atoh1a RNA probe. The number of atoh1a+sox2+ cells was significantly increased in hs:lin28a group, indicating that lin28a is sufficient to express sox2 in atoh1a+ HC precursors. Scale bar equals 10 \u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) The Neo-treated atoh1a:TdTomato;brn3c:GFP larvae was imaged for time lapse. Results showed that one Tomato+ cell turned into two HCs with membrane-bound GFP post neo (blue dots). (B) The LY+neo-treated atoh1a:TdTomato;sox2:GFP larvae was imaged for time lapse. The blue dots indicate that one Tomato+ cell divided and turned into two sox2:GFP-negative HCs post LY+neo. The white dots indicate that two Tomato+ cells divided and became four sox2:GFP-positive cells post LY+neo. (C and D) The atoh1a:TdTomato;ET4;ET20 larvae were collected at 48 hr post neo or LY+neo. Tomato expressing HCs, SCs and MCs were separately divided by total numbers of each to calculate Tomato+ ratios. The results showed that significantly more Tomato+ SCs were detected post LY+neo compared with neo. In addition, many Tomato+ MCs were detected post LY+neo, but none was detected in 5dpf and neo.\n\n![Video 2.](https://cdn.elifesciences.org/articles/55771/elife-55771-video2.mp4.jpg)\n\n**Video 2.:** Result showed that one Tomato+ cell divided and turned into two GFP+hair cells post neo. Scale bar equals 10 \u03bcm.\n\n![Video 3.](https://cdn.elifesciences.org/articles/55771/elife-55771-video3.mp4.jpg)\n\n**Video 3.:** One Tomato+ cell (blue dot) divided and turned into two HCs that are GFP negative in the center. The other two Tomato+ cells (white dots) divided and converted into four sox2+ progenitors. Scale bar equals 10 \u03bcm.\n\nWe further tested whether HC precursors gained sox2 expression through Yap-lin28a pathway. The\u00a0Yap inhibitor verteporfin decreased Tomato+sox2+ cell number post severe injury, which was rescued by overexpression of lin28a (Figure 5E). Significantly higher number of atoh1a+sox2+ cells were induced in LY-treated hs:lin28a (Figure 5F\u2013G).\n\n### MicroRNA let7 acts downstream of lin28a to activate wnt pathway for promoting regeneration\n\nLin28a has been described to regulate progenitor proliferation in developing inner ear by inhibiting let7 microRNA processing (Golden et al., 2015). To interrogate the function of let7 microRNA in regenerating lateral line, we have created hs:let7 transgenic line. Similar with lin28a mutant, hs:let7 showed the defect of SC proliferation post LY+neo (Figure 6A). We further found that overexpression of let7 inhibited hs:lin28a-induced proliferation (Figure 6B), indicating that let7 acts downstream of lin28a to promote regeneration.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig6-v2.jpg)\n\n**Figure 6.:** (A) We created hs:let7 transgenic line and found that it recapitulates the phenotype of lin28a-/- by decreasing proliferative SCs post LY+neo. (B) The induction of EdU+ proliferative cells was blocked by hs:let7, indicating that let7 microRNA acts downstream of lin28a to induce proliferation. (C) In situ hybridization results showed that expression of Wnt pathway genes, such as wnt10a and mycn, were increased in hs:lin28a. The activation of Wnt pathway genes in hs:lin28a were blocked when let7 was overexpressed, indicating that let7 acts downstream of lin28a to inhibit Wnt pathway. (D) Expressions of Wnt pathway genes, such as mycn, wnt10a and ccnd1 (cyclind1), were highly induced at 1 hr post LY+neo in sibling, but were not detected in lin28a-/-. (E) Inhibition of Wnt pathway with hs:dkk1 decreased lin28a-induced EdU+ proliferative cells, indicating that Wnt activation acts downstream of lin28a to induce regeneration.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** In situ results show that expression of her4 and dkk2, Notch pathway genes, and fgf3, a Fgf pathway gene, were not affected in hs:lin28a post neo.\n\nLin28a has no effect on Notch and Fgf pathways as her4, a Notch pathway gene, and fgf3, a Fgf pathway gene were not changed in hs:lin28a (Figure 6\u2014figure supplement 1). We then tested whether Wnt pathway acts downstream of lin28a/let7 to promote proliferation. Overexpression of lin28a was sufficient to upregulate Wnt pathway genes wnt10a and mycn, which was inhibited by overexpression of let7 (Figure 6C). Activation of Wnt pathway genes at 1 hr post LY+neo were blocked in lin28a mutant (Figure 6D). We further tested the function of Wnt pathway and found that lin28a-induced proliferation were inhibited by hs:dkk1 in which Wnt activation is blocked (Figure 6E). To summarize, we found that lin28a activates Wnt pathway through let7 for promoting regeneration.\n\n## Discussion\n\n### The zebrafish lateral line provides a valuable model for studying the mechanism underpinning progenitor regeneration\n\nProgenitors that divide and differentiate to generate HCs in embryonic development are absent in adult mammalian inner ear, which leads to the regeneration failure post injury. In this study, we simulated the situation of progenitor absence in the zebrafish lateral line through persistent conversion of sox2+ progenitors into HCs with Notch inhibitor LY411575. By adding neomycin post LY treatment to ablate HCs, we created a severe injury model in which both HCs and progenitors were eliminated. In big contrast to mammalian inner ear, progenitors in the lateral line were able to quickly restore themselves post severe injury, with HCs being regenerated afterwards. This model provides a valuable tool to elucidate the mechanisms underpinning progenitor recovery for initiating HC regeneration.\n\nHere, we found that yap-lin28a-let7-Wnt axis is essential to promote progenitor regeneration. Lin28a is not only necessary but also sufficient to induce progenitor recovery. Our findings elucidate the underlying mechanism of progenitor regeneration, and open a novel avenue of restoring progenitors to enhance mammalian HC regeneration.\n\nIn contrast to the situation of severe injury, our data showed that yap inhibition or lin28a deficiency has no effect on progenitor proliferation post neo (Figure 3E and data not shown). Wnt pathway, which acts downstream of lin28a, is required to induce progenitor proliferation. We found that Wnt pathway was highly activated immediately post severe injury, but was not activated at 1 hr post neo. Since the number of sox2+ progenitors were not reduced post neo, it seems not necessary to activate Wnt for producing more progenitors. Therefore, our results identified that Yap-lin28a pathway functions specifically in severe-injury induced regeneration for promoting progenitor recovery\u00a0(Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/55771/elife-55771-fig7-v2.jpg)\n\n**Figure 7.:** (A) It\u2019s known that sox2+ progenitors that are preserved post neo-induced HC injury divide and differentiate to regenerate HCs. To simulate the situation in mammalian inner ear where the progenitors are absent, we created a severe injury model by exhausting sox2+ progenitors with Notch inhibitor and ablating mature HCs with neomycin. We found that the exhausted sox2+ progenitors in severe injury have high potential to restore themselves within 48 hr, with HCs being regenerated afterwards. The atoh1a+ HC precursors, the main population that survived post severe injury, were converted into proliferative progenitors to initiate regeneration through yap-lin28a pathway. (B) Yap is activated in atoh1a+ HC precursors post severe injury and binds directly to lin28a promoter for initiating its transcription. Lin28a activates Wnt pathway through microRNA let7 to promote regenerative proliferation.\n\n### The upstream signal that activates yap post injury\n\nPrevious studies have described yap as an important regulator in mediating regeneration (Gregorieff and Wrana, 2017; Moya and Halder, 2016), but the downstream mechanism is unclear. Here, in this paper, we prove that severe injury activated yap directly binds lin28a promoter for transcriptional initiation. Lin28a acts downstream of yap to regulate progenitor regeneration.\n\nThe mechanism of yap activation post severe injury remains elusive. It\u00a0is hypothesized that either injured cells secrete diffusible molecules leading to widespread yap activation, or the damage of cell junction adjacent to the injury site activates yap (Moya and Halder, 2016). We observed lin28a induction after laser ablation of HCs in the restricted areas. Our results showed that the lin28a-expressing cells were very close to the damaged HCs (Figure 2\u2014figure supplement 1C), suggesting that the damage of cell junction might lead to yap-lin28a activation. In addition, we have noticed that not only HC injury but also the ablation of SCs was able to induce lin28a (Figure 2\u2014figure supplement 1D), indicating that the injury of either HCs or SCs triggers yap-lin28a activation. Since cell-junction-associated protein amotl2a has been reported restricting yap activity in the zebrafish lateral line primordium (Agarwala et al., 2015), it is possible that the loss of amotl2a post HC injury might result in yap activation. This assumption requires further investigation.\n\n### The\u00a0cellular\u00a0mechanism mediated\u00a0by Yap-lin28a\u00a0pathway\u00a0that regulates progenitor regeneration\n\nIt was reported that lin28b-let7 functions to enhance progenitor proliferation during embryonic inner ear development (Golden et al., 2015), but the downstream pathway is still unknown. Our data showed that lin28a-let7 functions to promote progenitor proliferation during regeneration, which is consistent with the previous finding that lin28a regulates retinal regeneration through let7 (Ramachandran et al., 2010). Our results indicate that Wnt pathway acts downstream of lin28a-let7 for promoting progenitor regeneration. Hippo and Wnt pathway genes, such as yap1, wnt10a, mycn, cyclind1, were highly induced by Yap-lin28a post severe injury. During early development the lateral line primordium that migrates from head to tail deposits neuromasts in the trunk. Hippo and Wnt pathway genes, which are highly expressed in the leading edge of the migrating primordium containing mostly the undifferentiated mesenchymal-like progenitors (Aman and Piotrowski, 2008; Kozlovskaja-Gumbrien\u0117 et al., 2017), get silenced when the leading progenitors differentiate into SCs and HCs (Jiang et al., 2014; Kozlovskaja-Gumbrien\u0117 et al., 2017). However, the severe-injury-treated neuromast displayed the expression patterns of leading progenitors in early developing primordium, which suggests that lin28a reprograms the differentiated cells into the stem/progenitor cells at early developmental stage.\n\nAlthough resident stem/progenitor cells are required for homeostasis and regeneration in most tissues, emerging evidence implies that differentiated cells are able to reprogram to stem/progenitor cells upon tissue damage to initiate regeneration (Lin et al., 2018; Tetteh et al., 2015). For example, atoh1+ secretory cells in intestine are capable to dedifferentiate into lgr5+ stem cells in irradiation-induced severe injury (Tetteh et al., 2016; Tomic et al., 2018). In colon, atoh1+ secretory progenitors reprogram to lgr5+ stem cells and form the entire crypts post injury while contributed minimally to other lineages in homeostasis (Castillo-Azofeifa et al., 2019). Since it\u2019s well-known that lin28a, together with Oct4, Sox2 and Nanog, can reprogram somatic cells to induced pluripotent stem cells (iPSC) in mouse and human (Yu et al., 2007; Moss and Tang, 2003; Zhang et al., 2016), it may be involved in tissue regeneration through dedifferentiation. Our results showed that atoh1a+ HC precursors were converted into sox2 expressing cells through Yap-lin28a pathway (Figure 5), suggesting that lin28a may reprogram HC precursors into sox2+ progenitors. Further lineage-tracing analyses using cre/loxP system is necessary to verify whether HC precursors are dedifferentiated into sox2+ progenitors post severe injury.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Et(krt4:EGFP)sqet20ET</td>\n      <td>Parinov et al., 2004</td>\n      <td>sqET20; RRID:ZFIN_ZDB-ALT-070628-20</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Et(krt4:EGFP)sqet4ET</td>\n      <td>Parinov et al., 2004</td>\n      <td>sgET4; RRID:ZFIN_ZDB-GENO-110323-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(atoh1a: TdTomato)nns8</td>\n      <td>Wada et al., 2010</td>\n      <td>nns8; RRID:ZFIN_ZDB-GENO-120530-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>sox2-2a-sfGFPstl84</td>\n      <td>Shin et al., 2014</td>\n      <td>stl84; RRID:ZFIN_ZDB-GENO-150721-11</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(brn3c:GAP43-GFP) s356t</td>\n      <td>Xiao et al., 2005</td>\n      <td>S356t; RRID:ZFIN_ZDB-GENO-200218-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(hsp70l:dkk1-GFP)w32</td>\n      <td>Stoick-Cooper et al. (2007)</td>\n      <td>W32; RRID:ZFIN_ZDB-ALT-070403-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(hsp70l:myc-notch1a;cryaa:Cerulean)fb12</td>\n      <td>Zhao et al. (2014)</td>\n      <td>fb12; RRID:ZFIN_ZDB-ALT-140522-5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(hsp70:atoh1a)x20</td>\n      <td>Millimaki et al. (2010)</td>\n      <td>X20; RRID:ZFIN_ZDB-GENO-110315-10</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>yapmw48</td>\n      <td>Miesfeld et al., 2015</td>\n      <td>Ms48; RRID:ZFIN_ZDB-ALT-160122-5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(hsp70:lin28a-P2Amcherry;cmlc:GFP)psi30</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Details in Fish strain information</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(hsp70:let7-P2AGFP;cryaa:Venus)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Details in Fish strain information</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>lin28apsi37</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Details in Fish strain information</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-sox2 (Rabbit, polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# Ab97959; RRID:AB_2341193</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-yap (Rabbit, polyclonal)</td>\n      <td>CST</td>\n      <td>Cat# 4912, RRID:AB_2218911</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-taz (Rabbit, polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# Ab84927; RRID:AB_1925489</td>\n      <td>IF (1:200), WB (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GFP (Mouse, monoclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat# A11120; RRID:AB_221568</td>\n      <td>IF(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-yap (Mouse, monoclonal)</td>\n      <td>Santa Cruz</td>\n      <td>Cat# sc-271134; RRID:AB_10612397</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-lin28a (Rabbit, polyclonal)</td>\n      <td>CST</td>\n      <td>Cat# 3978; RRID:AB_2297060</td>\n      <td>WB (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-lats (Rabbit, monoclonal)</td>\n      <td>CST</td>\n      <td>Cat# 3477; RRID:AB_2133513</td>\n      <td>WB (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-p-mob1 (Rabbit, monoclonal)</td>\n      <td>CST</td>\n      <td>Cat# 8699; RRID:AB_11139998</td>\n      <td>WB (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b2-actin (Mouse, monoclonal)</td>\n      <td>Sigma</td>\n      <td>Cat# A1978; RRID:AB_476692</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-digoxingenin POD (sheep, polyclonal)</td>\n      <td>Roche</td>\n      <td>11207733910; RRID:AB_514500</td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-fluorescein POD(sheep, polyclonal)</td>\n      <td>Roche</td>\n      <td>11426346910; RRID:AB_840257</td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EdU</td>\n      <td>Carbosynth</td>\n      <td>NE08701</td>\n      <td>3.3 mM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>LY411575</td>\n      <td>Santa Cruz</td>\n      <td>sc-364529</td>\n      <td>2 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Neomycin sulfate</td>\n      <td>Sigma</td>\n      <td>N6386</td>\n      <td>300 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor-594 Azide</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>N6386</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Verteporfin</td>\n      <td>Selleckchem</td>\n      <td>S1786</td>\n      <td>5 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Copper sulfate</td>\n      <td>Sigma</td>\n      <td>451657</td>\n      <td>50 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>cisplatin</td>\n      <td>Sigma</td>\n      <td>33342</td>\n      <td>500 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TSA-Cyanine 3 Reagent</td>\n      <td>PerkinElmer</td>\n      <td>SAT704A001EA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\ufeffCommercial assay or kit</td>\n      <td>TSA-FITC Reagent</td>\n      <td>PerkinElmer</td>\n      <td>SAT704A001EA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>dynabeads</td>\n      <td>Invitrogen</td>\n      <td>10015D</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Fish strains\n\nTg(sqET20;sgET4) (Parinov et al., 2004), Tg(atoh1a:TdTomato)nns8(Wada et al., 2010), sox2-2a-sfGFPstl84 (Shin et al., 2014), Tg(brn3c:GAP43-GFP)s356t or brn3c:GFP(Xiao et al., 2005), Tg(hsp70l:dkk1-GFP)w32 or hs:dkk1 (Stoick-Cooper et al., 2007), Tg(hsp70l:myc-notch1a;cryaa:Cerulean)fb12 or hs:notch1a (Zhao et al., 2014), Tg(hsp70:atoh1a)x20 or hs:atoh1a (Millimaki et al., 2010), yapmw48 (Miesfeld et al., 2015) were used. To generate Tg(hsp70:lin28a-P2Amcherry;cmlc:GFP)psi30 or hs:lin28a line, the lin28a coding sequence was cloned into the Gateway destination vector containing the hsp70 promoter. To generate Tg(hsp70:let7-P2AGFP;cryaa:Venus) or hs:let7 line, the expression cassette of pri-let-7a and pri-let-7f in UI4-GFP-SIBR backbone (Ramachandran et al., 2010) was subcloned into the Gateway destination vector containing the hsp70 promoter. To create lin28apsi37 mutant or lin28a-/-, 50 pg Cas9 protein (PNA Bio) and 50 pg sgRNA (GAGGGTTTTCGCAGTCTGA) were injected per embryo. F0 founders were screened by genotyping F1 embryos with PCR (F: TGTTTGACATCTCTGCAGAGC, R:CACCGATCTCCTTTTGACCG) followed by Hpy188I digestion. The yap mw69 mutant was genotyped with PCR primers (F:AGTCATGGATCCGAACCAGCACAA, R:TGCAATCGGCCTTTATTTTCCTGC) followed by HinfI digestion.\n\n### Pharmacological inhibitors and heat-shock experiments\n\nThe \u03b3-secretase inhibitor LY411575 (Santa Cruz sc-364529) was added to larvae at 2 \u03bcM from 3dpf to 5dpf. The inhibitor of yap-tead1 complext verteporfin (Selleckchem S1786)was added to larvae at 5 \u03bcM. Larvae at 5dpf were heat-shocked at 39\u00b0C for 30 min and sometimes heat-shock is repeated to maintain the target gene expression. hs:lin28a or hs:let7 larvae were sorted by GFP in heart or Venus in eye at 3dpf. hs:notch1a were sorted by Cerulean fluorescence in eye at 3dpf. And hs:dkk1 larvae were sorted by GFP after heat-shock. hs:atoh1a were genotyped by primers GCAGCCTGACAGGACTTTTC and GCTGCTCTTCCTGAAGTTGG.\n\n#### Regeneration experiments, EdU incorporation\n\nTo ablate HCs, larvae at 5dpf were treated with 300 \u03bcM neomycin (Fisher Scientific) for 30 min, 500 \u03bcM cisplatin (Sigma Aldrich, 33342) for 2 hr, or 50 \u03bcM CuSO4 (Sigma Aldrich, 451657) for 2 hr. To ablate both SCs and HCs to induce severe injury, we added 2 \u03bcM LY411575 from 3dpf to 5dpf and then treated with neomycin. Afterwards, larvae were first rinsed three times in fresh 0.5x E2 medium, and incubated in fresh medium. EdU (Carbosynth, NE08701, diluted in 3.3 mM with E2 medium containing 1% DMSO) was used to label larvae for the indicated time at 28.5\u00b0C before collecting for staining. Incorporated EdU was stained with Azide-594 (Invitrogen, N6386). The numbers and relative positions of EdU-positive cells in neuromast were analyzed as described in Romero-Carvajal et al., 2015.\n\n#### In situ hybridization\n\nThe following probes were used: atoh1a, her4.1, fgf3, wnt10a (Jiang et al., 2014), yap1, mst2(Kozlovskaja-Gumbrien\u0117 et al., 2017), mycn, ccnd1(Yamaguchi et al., 2005), s100t(Venero\u00a0Galanternik et al., 2015), dkk2 (Wada et al., 2013). lin28a was cloned with primers (F: CATTACCATCCCGTGAAGAGGGTCCTGGTTCTG and R: CCAATTCTACCCGTGTGCAACAACACACTCAGC) and subcloned into pPR-T4P for probe synthesis. In situ hybridization was performed as described in Jiang et al. (2014). Digoxigenin-labeled atoh1a probe and fluorescein-labeled lin28a probe were used for double fluorescent in situ. We first incubated the larvae with atoh1a probe followed by anti-digoxingenin POD antibody and colorized with TSA-FITC substrate. Then samples were incubated with lin28a probe followed by anti-fluorescein POD antibody and colorized with TSA-Cyanine 3 substrate.\n\n#### Immunostaining and live imaging\n\nAntibodies against sox2 (Abcam, Ab97959), yap (Cell Signaling Technology, 4912), taz (Abcam, Ab84927), GFP (Invitrogen, A11120) were used for immunostaining as described in Kozlovskaja-Gumbrien\u0117 et al. (2017). Images were acquired on a Zeiss LSM780 or LSM800 confocal microscope using an Apochromat 40 \u00d7 1.1 NA objective. For time-lapse imaging larvae at 5dpf were anesthetized with tricaine and mounted in 1.2% low melting point agarose on glass bottom dishes.\n\n#### Western blot and CHIP experiments\n\nAbout 30 larvae at 5dpf were lysed with 150 \u03bcl SDS buffer (63 mM Tris-HCl PH6.8, 10% glycerol, 100 mM DTT, 3.5% SDS) to extract protein for western blot. The primary antibodies used are yap (Santa Cruz, sc-271134), lin28a (CST, 3978), taz (Abcam, Ab84927), lats1 (CST, 3477), p-mob1 (CST 8699), \u03b2-actin (Sigma, A1978). CHIP experiments were performed as described in zfin (https://wiki.zfin.org/display/prot/Chromatin+Immunoprecipitation+%28ChIP%29+Protocol+using+Dynabeads). Antibody against yap (Santa Cruz, sc-271134) and dynabeads (Invitrogen, 10015D) were used to immunoprecipitate yap-bound nuclear DNA. PCR was performed with primers F:GATAATGATTGCATCACGTGAC and R:CATGCAGGATTCTTGGATGC to detect the region surrounding transcription start site of lin28a.\n\n#### Laser ablation\n\nLarvae at 5dpf were mounted in agarose and numbered individually for laser ablation. Laser ablation was performed with a Chameleon Ultra II laser tuned to 800 nm. Regions of 2 \u03bcm diameter were bleached for 30 cycles in ZEN. Illumination power was adjusted as necessary to ensure that destruction of the targeted regions occurred but limited to only targeted areas. This could range anywhere from 40 mW to 400 mW and varied from sample to sample. Imaging was performed with an LD C-Apochromat 40 \u00d7 1.1 NA objective, with 0.5 \u03bcm pixel spacing and 1.6\u03bcs dwell time with 512 \u00d7 512 pixels. The numbered larvae were then recovered and fixed in 4% PFA for testing in situ individually.\n\n#### Yap expression analysis\n\nIndividual nuclei, labeled with DAPI, were automatically identified by finding local maxima on a Lorentzian of Gaussian filtered image. The area around identified points was automatically quantified in the yap channel. A yap-positive and yap-negative cell were manually selected from the vicinity of each neuromast, and only cells having intensity above the positive were counted as yap-nuclear-positive. All processings were done in ImageJ, and customized macros and plugins can be found at https://github.com/jouyun/smc-macros/blob/master/2DSpotFinder.ijm.\n\n#### Cell counting and data analysis\n\nGFP in ET20 was used to label MC while GFP in ET4 was used to label HC. The SC number was counted by DAPI stained cells with no ET4;ET20 expression. About 3\u20134 neuromasts from 4 to 6 fish were used for cell counting. The polarization analysis was performed as in Romero-Carvajal et al., 2015, and the enrichment in dorsal-ventral poles was calculated by Binomial analysis. All data are presented as the mean\u00a0\u00b1\u00a0s.e.m. Statistical analyses were performed using Student\u2019s t-test for experiments with two groups. One-way ANOVA was used for more than two groups. * indicates p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "05bebc3d-8fc3-4628-8ad6-28ad0490bb41",
+      "submission_id": "53e7b17d-967b-40c9-8940-04cab62e6ff8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tanya T Whitfield, University of Sheffield United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55771.sa1](https://doi.org/10.7554/eLife.55771.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper examines regeneration following hair cell damage in the developing zebrafish lateral line, a tractable model system for hearing loss. The authors use genetic and pharmacological approaches to demonstrate a role for a key signalling pathway in the recovery of lateral line hair cells following chemically-induced injury.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Yap-lin28a axis reprograms committed hair cells to progenitors for initiating regeneration\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Shawn Burgess (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe manuscript tackles the interesting topic of hair cell regeneration in the lateral line of the zebrafish, using an injury model to examine the role of a yap-lin28a pathway in regenerating cells. The reviewers have pointed out several strengths of the study, but also raise a number of concerns. It was felt that there would be significant additional work necessary to meet these concerns, and that some of the conclusions were overstated. The reviewers have a number of specific suggestions, and we hope these will be useful to you in moving the work forward. The full reviews are appended below.\n\nReviewer #1:\n\nThis study uses a novel injury model to deplete both hair cells and surrounding supporting cells in the larval zebrafish lateral line, allowing the researchers to more closely mimic the mature mammalian inner ear, which does not contain viable progenitor cells. The experiments overall are sound, and the team makes elegant use of several heat shock lines to temporally regulate gene expression during damage and regeneration. The primary findings are that the lateral line is capable of regeneration after a severe injury, and that this regeneration is dependent on the yap-lin28-let7-Wnt pathway, while this pathway is not required for regeneration if supporting cells are still intact. This finding is novel and exciting, as the authors have identified a pathway that is necessary for regeneration in the absence of progenitor cells.\n\n1) The findings are clearly supported by the data, although I have a reservation about the conclusion that \"yap directly binds lin28a promoter for transcriptional initiation.\" The authors convincingly show that yap can bind the lin28a promoter, and that lin28a is sufficient to induce regeneration, but not that yap binding of the lin28a promoter is necessary for the regenerative response.\n\n2) My other concern is the conclusion that sox2+/atoh1a+ cells present after LY+neo treatment truly represent dedifferentiated cells. The images in Figure 5E show that a brn3c- cell expressing the atoh1a reporter dTomato can divide to produce two hair cells, even without a severe injury. These data suggest that atoh1a can label a subset of progenitor cells in the lateral line, even if these cells are sox2-. I agree that their LY+neo injury model increases the number of sox2+/atoh1a+ cells, but I am not fully convinced that these cells are dedifferentiated hair cells; they may be an intermediate progenitor cell or hair cell precursor. Similarly, I am not convinced that the cells expressing weak tubulin label in Figure 6 are dedifferentiated cells; these could be newly born hair cells, since EdU is retained following cell division. I do not think additional experiments are necessary, but rather suggest toning down the conclusions.\n\nReviewer #2:\n\nThis manuscript reports work done in zebrafish aimed at further clarifying the mechanism underlying hair-cell regeneration.\n\nThe authors report that atoh1a+ committed hair cells de-differentiate into sox2+ progenitors upon injury, which initiates regeneration through a yap-lin28a-let7-Wnt pathway. They claim that their findings \"shed light on restoration of progenitors by dedifferentiation to initiate HC regeneration in mammals.\"\n\nI do not share their persuasion, however.\n\nTheir data does not demonstrate hair-cell de-differentiation because atoh1a+ cells can be hair-cell progenitors that are constantly normally produced in neuromasts, or cells whose atoh1a expression is transitory and may not stabilise to eventually become progenitors or hair cells.\n\nTherefore, I cannot support the publication of this work.\n\nThe authors claim that in a developing neuromast, atoh1a marks committed sensory hair cells. Yet, there is published data showing that this is not the case, as some non-sensory supporting cells express atoh1a.\n\nTheir sentence \"powerful capacity to regenerate HCs sustains after multiple rounds of damage\u2026\" references Cruz et al., 2015. This in one of two concurrent papers showing regeneration after multiple rounds of hair-cell ablation. The second is Pinto-Teixeira et al., 2015, which should be cited as well.\n\nThey state that the above papers \"indicates that a population of stem/progenitor cell pool exists to self-renew and regenerate.\" However, there is ample evidence that the entire supporting cell population is able to convert to a stem cell-like is necessary. In other words, a stem cell population as a persistent cellular state has not been demonstrated.\n\n\"Sox2 marks the proliferative progenitors that produce both SCs and HCs in homeostatic and regenerative NMs (21).\"\n\nThis is true, but only because sox2 is expressed by nearly every non-sensory cell. Because sensory cells are postmitotic, their conclusion is obvious.\n\n\"These results indicate that sox2+ progenitors in neuromast have high potential to restore themselves when exhausted by severe injury.\"\n\nAgain, true and obvious because sox2 is expressed by nearly every non-sensory cell.\n\n\"These results indicate that intensive proliferation is necessary to facilitate regeneration post severe injury.\"\n\nThis has been shown by no less than 10 previous papers already.\n\nNuclear localized yap was inhibited when atoh1a is inhibited with hs:notch1a, which suggests that yap is activated in atoh1a+ committed HCs.\n\nThis is puzzling because hair cells are postmitotic. In addition, is nuclear localization of yap takes place in atoh1a+ cells and activated Notch blocks the production of these cells, it is only obvious that the authors will see no nuclear localized yap.\n\n\"Taken together, we found that yap is highly activated by severe injury and binds directly to lin28a promoter to initiate its transcription in atoh1a+ committed HCs.\"\n\nI could not find direct evidence that yap binds lin28a promoter. It would help me if the authors pointing the data supporting the claim.\n\n\"We found that the regenerated HC number was decreased by lin28a deficiency (Figure 3A).\"\n\nWhat I see is that the entire neuromast was nearly half the size. Reduced hair-cell numbers may be an indirect consequence of lower proliferation, cellular extrusion or increased cell death.\n\n\"The proliferative SCs are localized in dorsal and ventral poles of neuromast in homeostasis and neo-induced regeneration\"\n\nThey reference Romero-Carvajal et al., 2015. Yet, earlier reports of the patterns of supporting-cell proliferation are: Ma et al., 2008, and Wibowo et al., 2011.\n\n\"The atoh1a:dTomato reporter labeled a part of but not all ET4 positive mature HCs in normal condition, indicating that the reporter is very mosaic (Figure 5C, ctrl).\"\n\nAn alternative interpretation, supported by findings of Wibowo et al., 2011, is that atoh1a:dTomato is expressed by supporting cells that may not advance to the hair-cell progenitor or hair-cell fates.\n\n\"However, more than half of the dTomato+ cells turned on sox2 expression at 12h and 48h post LY+neo and become dTomato+sox2+ cells (Figure 5D), suggesting that atoh1a+ cells were converted to sox2+ progenitors upon severe injury.\"\n\nAgain, because sox2 is expressed by nearly every non-sensory cell, it is not surprising that some cells will co-express atoh1a and sox2.\n\n\"However, it's only in LY+neo-induced severe injury that dTomato+ cells converted to sox2+ cells labeled by sox2:GFP (white dots in Figure 5F and Video 3), which confirms the dedifferentiation of atoh1a+ cells into sox2+ progenitors.\u201d\n\nThis statement is not supported by evidence presented in the manuscript.\n\nReviewer #3:\n\nYe et al. have submitted a manuscript that describes the interplay between the expression of sox2, lin28a, and atoh1a in the context of a zebrafish regenerating lateral line neuromast. The authors show that under normal conditions, lin28a plays at best a minor role in regeneration, it is induced in a small number of cells but a genetic knockout of lin28a does not have a measurable effect on lateral line hair cell regeneration after ablation with neomycin. In contrast, when notch signaling is inhibited, lateral inhibition from hair cells is blocked and you see supernumerary hair cells at the expense of supporting cells, which are the normal source of new hair cells after ablation. Under these conditions, the authors show atoh1 positive cells will induce lin28a and revert to a more support cell-like identity. This phenomenon is mediated via yap signaling and downstream of lin28a let7 is blocked, triggering Wnt signaling. When the support cells are depleted by notch inhibition, now a lin28a KO has a significant negative effect on hair cell regeneration. In general this is a very carefully done set of experiments that identifies an interesting gene pathway that would be difficult to recognize under typical conditions used to study regeneration. I have one significant additional experiment I would like to see.\n\n1) The hypothesis and the evidence point to lin28a triggering down-regulation of atoh1a and a return to a support cell fate. It should therefore be true that in the earlier developing larvae, if you induced lin28a expression ectopically, you should be able to inhibit natural differentiation of hair cells. Part of the model presented is that lin28a dedifferentiated cells contribute to new supporting cell populations too. Is it possible that the lin28a cells can only go \"backwards\" far enough to divide but not far enough to become support cells again? Under those circumstances the new support cells could come from the mantle cells which have been shown to be capable of fully regenerating all cell types in the neuromast. If it is really complete dedifferentiation, there should be more supporting cells in these larvae and not cells that are neither HC nor SC. It would be interesting if there could be lineage tracing of \"dedifferentiated\" atoh1+ cells. Can they actually become supporting cells?\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Yap-lin28a axis targets let7-Wnt pathway to restore progenitors for initiating regeneration\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kathryn Cheah as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Shawn Burgess (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Please aim to submit the revised version within two months, but we are happy to extend this timeframe if needed, given the current situation which may restrict experimental work time.\n\nSummary:\n\nIn the present study, Zhian Ye and colleagues took advantage of the zebrafish lateral line to further dissect the mechanisms enabling the mechanosensory organs of some vertebrates to regenerated while other, including the mammalian inner ear cannot. The zebrafish lateral line presents two major advantages for this study: (i) the mechanosensory organs can almost entirely regenerate and (ii) severe damages can be perform suing chemical inhibitor treatments. Here the authors show that:\n\n1) Sox2 positive progenitors can largely regenerate after being fully illuminated in so-called severe injury after a combination of treatment with a Notch inhibitor (to promote the differentiation of support cells into hair cells) and an antibiotic (to damage the hair cells).\n\n2) The regenerating sox2-positive cells derive from atoh1a-positive, committed hair cells.\n\n3) The Hippo signaling pathway effector yap is upregulated upon severe injury, is required for regeneration of sox2-positive cells and induces the expression of lin28a.\n\n4) Lin28a is necessary and sufficient to induce the regeneration of sox2-positive progenitors.\n\n5) Progenitor regeneration results from a yap1-Lin28a-Let7-sox2-Wnt axis.\n\nEssential revisions:\n\n1) Improve the Western blots to strengthen the data here. At the moment, the immunostainings are not clear, and the increase in yap1 is not clear on the Western blot. Indicate Molecular Weight on the blot.\n\n2) Confirm the specificity of your antibodies by checking on yap1 mutants.\n\n3) Confirm the specificity of the verteporfin inhibitor by comparing to the phenotype of yap1 mutants.\n\n4) Please attend to all the listed minor revisions and, where possible, to any other major revisions, such as citation of additional studies in the Introduction (or provide a rebuttal of these points).\n\nThe full reviews are appended below for your information, in particular, please refer to the detailed comments from reviewer 2.\n\nReviewer #2:\n\nThe study reveals an interesting, new mechanism driving neuromast regeneration upon severe injury. While I think the study is potentially interesting for eLife readership, I feel some parts are not as solid as others, in particular the part on the role of yap1. Please see my specific comments below.\n\n1) The Introduction is short and miss to refer to some important studies that have been published on similar questions including, for example, work from the Lopez-Shier lab (PintoTeixeira et al., 2015, ViaderLlargues et al., 2018, for example)\n\n2) Using hs:notch1a to block Atoh1a function is not ideal. The authors should use atoh1a mutants which are available or Morpholino which have been published.\n\n3) The authors should demonstrate the specificity of the yap1 and taz antibodies they are using by showing the absence of signal in respective mutants (available). These controls should be shown both for western-blot and immunostaining.\n\n4) On the western-blot in Figure 2\u2014figure supplement 2B, taz seems to be much more upregulated than yap1. Why do the authors then focus exclusively on yap1?\n\n5) The yap signal and the difference between control and treated in Figure 4C and 4E are not convincing.\n\n6) \"The induction of yap and mst2 was blocked by verteporfin, an inhibitor of yap-mediated transcription by blocking yap-tead1 interaction\": why are the expression of yap and mst2 blocked upon inhibition of yap-mediated transcription? Has it previously been shown that yap and mst2 are transcriptional targets of yap? The authors should look at classical yap/taz transcriptional targets.\n\n7) Several yap and taz zebrafish mutants have been published. The authors should perform experiments in these mutants instead of \u2013 or in addition to \u2013 verteporfin experiments.\n\n8) \"We used CHIP-PCR to verify that yap binds to a region 100bp downstream of lin28a transcription start site\". How did the author choose this region?\n\n9) Figure 3A: does the Y-axis indicate EdU cell number (as indicated on the figure) or absolute numbers of HS, SC and MC (as the text suggests)?\n\n10) \"The EdU positive SC cells that were located in each quadrant with no polarization in sibling post LY+neo were almost cleared in lin28a mutant (Figure 3C-D)\": The link to polarization all the sudden here is not clear.\n\n11) Figure 3F: the authors should use yap mutants in addition to Verteporfin treatment.\n",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "81744342-645f-4fad-8437-8bc1e1c86ff4",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C1",
+      "claim": "Sox2 expressing (sox2+) progenitors in adult mammalian inner ear lose the capacity to regenerate.",
+      "claim_type": "EXPLICIT",
+      "source": "The sox2 expressing (sox2+) progenitors in adult mammalian inner ear lose the capacity to regenerate while progenitors in the zebrafish lateral line are able to proliferate and regenerate damaged HCs throughout lifetime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established context for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "7b9517a2-d11f-4de9-8336-6106f1d47949",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C2",
+      "claim": "Progenitors in the zebrafish lateral line are able to proliferate and regenerate damaged HCs throughout lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "The sox2 expressing (sox2+) progenitors in adult mammalian inner ear lose the capacity to regenerate while progenitors in the zebrafish lateral line are able to proliferate and regenerate damaged HCs throughout lifetime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established context, supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "a14f8e27-9236-47bb-8984-14c0682bab32",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C3",
+      "claim": "Atoh1a expressing (atoh1a+) HC precursors were the main population that survived post severe injury.",
+      "claim_type": "EXPLICIT",
+      "source": "The atoh1a expressing (atoh1a+) HC precursors were the main population that survived post severe injury, and gained sox2 expression to initiate progenitor regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 2C showing atoh1a+ cells surviving post LY+neo treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "98ec8384-ff3d-40ba-83d1-bed9216dd4ed",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C4",
+      "claim": "Atoh1a+ HC precursors gained sox2 expression to initiate progenitor regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "The atoh1a expressing (atoh1a+) HC precursors were the main population that survived post severe injury, and gained sox2 expression to initiate progenitor regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figures 5A-D showing increased atoh1a+sox2+ cells post severe injury.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "9ad614e9-ede4-4a6d-b6ff-19b8e2aa23d8",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C5",
+      "claim": "Yap was activated to upregulate lin28a transcription in response to severe injury.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to severe injury, yap was activated to upregulate lin28a transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by western blot data in Figure 2G and CHIP-PCR data in Figure 2H showing yap binds lin28a promoter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "db66a7da-f26f-4710-88ca-c633e3fcf1f3",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C6",
+      "claim": "Severe-injury-induced progenitor regeneration was disabled in lin28a mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe-injury-induced progenitor regeneration was disabled in lin28a or yap mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 3 showing reduced proliferation and progenitor recovery in lin28a mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "ec80c75a-a858-41e7-aac7-5c4814510df4",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C7",
+      "claim": "Severe-injury-induced progenitor regeneration was disabled in yap mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe-injury-induced progenitor regeneration was disabled in lin28a or yap mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 3F showing reduced proliferation in yap mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "542b2245-dfd6-4a26-8324-b00ea214ef3b",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C8",
+      "claim": "Overexpression of lin28a initiated the recovery of sox2+ progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrary, overexpression of lin28a initiated the recovery of sox2+ progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figures 4E-F showing increased sox2+ progenitors in hs:lin28a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "39608cbd-df8c-490d-8628-b2b35c5c39d6",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C9",
+      "claim": "MicroRNA let7 acted downstream of lin28a to activate Wnt pathway for promoting regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, microRNA let7 acted downstream of lin28a to activate Wnt pathway for promoting regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 6 showing let7 overexpression blocks lin28a-induced proliferation and Wnt activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "c033c94c-46c6-481e-b3d4-e9708a9876cb",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C10",
+      "claim": "During early development of mouse cochlea, the transcription factor sox2 is required to determine the prosensory region that mainly contains progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "During early development of mouse cochlea, the transcription factor sox2 is required to determine the prosensory region that mainly contains progenitors (Julian et al., 2013; Kiernan et al., 2005; Dabdoub et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by three citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "f237813c-c4fa-4dce-8924-0b51908a514a",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C11",
+      "claim": "From E12.5 to E14.5 sox2+ progenitors exit cell cycle and differentiate into auditory HCs and SCs.",
+      "claim_type": "EXPLICIT",
+      "source": "From E12.5 to E14.5 sox2+ progenitors exit cell cycle and differentiate into auditory HCs and SCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about mouse cochlear development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "a979a8ad-0eed-40b8-b59a-e23e6d6f8d14",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C12",
+      "claim": "Atoh1 deficiency causes complete loss of cochlear HCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Basic helix-loop-helix (bHLH) transcription factor atoh1 acts as the cardinal gene initiating auditory HC differentiation since atoh1 deficiency causes complete loss of cochlear HCs (Bermingham et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bermingham et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "5bd8c668-54da-4ef9-9951-c7434bbf8b19",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C13",
+      "claim": "A subset of post-mitotic progenitors start to express high levels of atoh1 and downregulate sox2 expression to differentiate into the HC precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of post-mitotic progenitors start to express high levels of atoh1 and downregulate sox2 expression to differentiate into the HC precursors (Dabdoub et al., 2008; Zhong et al., 2019; Cai and Groves, 2015; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by four citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "66f77c22-09fc-4943-9fba-7197e4971d2b",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C14",
+      "claim": "Terminal differentiation toward mature HCs is promoted by the upregulation of atoh1 target genes, such as pou4f3.",
+      "claim_type": "EXPLICIT",
+      "source": "Afterwards, their terminal differentiation toward mature HCs is promoted by the upregulation of atoh1 target genes, such as pou4f3 (Cai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cai et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "4a9fd9ef-308d-48e4-a4f6-8c075db6e94a",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C15",
+      "claim": "Differentiating HCs secret Notch ligands to activate Notch pathway, which inhibits atoh1 expression in neighboring cells and forces them to adopt the SC fate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the meanwhile, differentiating HCs secret Notch ligands to activate Notch pathway, which inhibits atoh1 expression in neighboring cells and forces them to adopt the SC fate (Abdolazimi et al., 2016; Costa et al., 2017; Lanford et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by three citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "eede8d42-f635-4d93-a506-99f6ce549051",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C16",
+      "claim": "The zebrafish lateral line is a mechanosensory organ composed of a series of neuromasts distributed on the body surface for detecting water flow.",
+      "claim_type": "EXPLICIT",
+      "source": "The zebrafish lateral line is a mechanosensory organ composed of a series of neuromasts distributed on the body surface for detecting water flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about zebrafish lateral line anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "1d9486dd-8a40-4e70-9bba-74aa833ed9f5",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C17",
+      "claim": "The lateral line HCs share similarities with their counterparts in mammalian inner ear in morphology, function and developmental pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The lateral line HCs share similarities with their counterparts in mammalian inner ear in morphology, function and developmental pathways (Whitfield, 2002; Nicolson, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by two citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "1dd9e4e8-abec-4867-8db7-425eedbb636f",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C18",
+      "claim": "Each neuromast contains sensory HCs in the center surrounded by SCs and mantle cells (MCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Each neuromast contains sensory HCs in the center surrounded by SCs and mantle cells (MCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about neuromast structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "f679cd81-f830-4a9b-9b91-afea412bf867",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C19",
+      "claim": "Aminoglycoside antibiotics, such as neomycin, ablates mature HCs and initiates robust mitotic regeneration that is characterized with SC division and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Aminoglycoside antibiotics, such as neomycin, ablates mature HCs and initiates robust mitotic regeneration that is characterized with SC division and differentiation (Harris et al., 2003; Jiang et al., 2014; Williams and Holder, 2000; Ma et al., 2008; Romero-Carvajal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by five citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "deab399a-e3a2-4ce5-b9bd-c6d6bdb17835",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C20",
+      "claim": "The powerful capacity to regenerate HCs sustains after multiple rounds of damage, and retains throughout lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "The powerful capacity to regenerate HCs sustains after multiple rounds of damage, and retains throughout lifetime (Cruz et al., 2015; Pinto-Teixeira et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by two citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "5d13b15f-7d7b-4c1f-b9ec-79a128a66f19",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C21",
+      "claim": "After severe loss of the tissue integrity, the residual SCs have high potential to recover the neuromast by acting plastic to generate all three cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Even after severe loss of the tissue integrity, the residual SCs have high potential to recover the neuromast by acting plastic to generate all three cell types (Viader-Llargu\u00e9s et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Viader-Llargu\u00e9s et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "38a19bbc-dab0-4b82-ade2-ccb854405269",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C22",
+      "claim": "Atoh1a is expressed in HC precursors but not mature HCs in neuromast.",
+      "claim_type": "EXPLICIT",
+      "source": "Like in inner ear, atoh1a is expressed in HC precursors but not mature HCs in neuromast while sox2 is expressed in a part of SCs and MCs (Ma et al., 2008; Lush et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by two citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "3740d6fa-e6f8-49fb-9f51-98d5a92b1b40",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C23",
+      "claim": "Sox2 is expressed in a part of SCs and MCs in neuromast.",
+      "claim_type": "EXPLICIT",
+      "source": "Like in inner ear, atoh1a is expressed in HC precursors but not mature HCs in neuromast while sox2 is expressed in a part of SCs and MCs (Ma et al., 2008; Lush et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by two citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "94eedbab-d110-49ef-a795-74f0b31b0917",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C24",
+      "claim": "Sox2+ SCs behave as progenitors to proliferate and differentiate through activation of canonical Wnt pathway during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox2+ SCs behave as progenitors to proliferate and differentiate through activation of canonical Wnt pathway during regeneration (Hern\u00e1ndez et al., 2007; Jacques et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by two citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "aa9917c7-2031-4362-8502-b73e9325056f",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C25",
+      "claim": "Mammalian sensory HCs are vulnerable to damages caused by antibiotics, chemotherapeutical drugs and noise, which results in various hearing and balance diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian sensory HCs are vulnerable to damages caused by antibiotics, chemotherapeutical drugs and noise, which results in various hearing and balance diseases (Cox et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cox et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "43b37b03-50ab-4162-b44b-9778b3267b0c",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C26",
+      "claim": "The principal method used to initiate auditory HC regeneration in mammalian inner ear is to induce the transdifferentiation of SCs into HCs by upregulating atoh1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Until now, the principal method used to initiate auditory HC regeneration in mammalian inner ear is to induce the transdifferentiation of SCs into HCs by upregulating atoh1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about current approaches to HC regeneration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "07571d89-0b6c-40c9-b1e4-5520592159aa",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C27",
+      "claim": "Many studies tried to overexpress atoh1 in SCs with adenovirus, or used Notch inhibitor to increase atoh1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, many studies tried to overexpress atoh1 in SCs with adenovirus, or used Notch inhibitor to increase atoh1 expression (Atkinson et al., 2018; Mizutari et al., 2013; Izumikawa et al., 2005; Yang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by four citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "c4e00448-e40a-44f8-b137-bf16b716aa2f",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C28",
+      "claim": "The efficiency of HC induction is very low and SCs are lost due to transdifferentiation, resulting in very limited progress toward hearing recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because the efficiency of HC induction is very low and SCs are lost due to transdifferentiation, very limited progress toward hearing recovery has been achieved (Cox et al., 2014; Zheng and Zuo, 2017; Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by three citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "c2ce0780-95e0-4cb6-86e1-43f5bfd27926",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C29",
+      "claim": "Using the \u03b3-secretase inhibitor LY411575 to inhibit Notch pathway from 3-day-post-fertilization (dpf) to 5dpf, SCs were exhausted by persistent differentiation into HCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the \u03b3-secretase inhibitor LY411575 to inhibit Notch pathway from 3-day-post-fertilization (dpf) to 5dpf, we found that SCs were exhausted by persistent differentiation into HCs (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "8e1d4c23-ec05-4141-8ead-9e45e423cd39",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C30",
+      "claim": "The number of sox2+ cells was not changed post neomycin treatment alone.",
+      "claim_type": "EXPLICIT",
+      "source": "While the distribution of sox2+ cells moved to the center post neo compared with normal larvae, the number was not changed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by data in Figure 1A-B showing no significant change in sox2+ cell number post neo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "ace15390-bab8-4647-a537-413dd4cfe89d",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C31",
+      "claim": "Sox2+ cell number was dramatically decreased after LY or LY+neo treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "But sox2+ cell number was dramatically decreased after LY or LY+neo (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by data in Figure 1A-B showing significant reduction in sox2+ cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "cea89a3f-e301-4028-9289-824a9a1d0f66",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C32",
+      "claim": "Sox2+ progenitors were able to recover quickly post LY+neo, with a few appearing at 6 hr and recovering to normal level by 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, sox2+ progenitors were able to recover quickly post LY+neo. A few sox2+ progenitors appeared early at 6 hr, with increased sox2+ progenitors being regenerated afterwards and recovered to normal level by 48 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by data in Figure 1A-B showing time course of sox2+ progenitor recovery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "dc34ba24-8c83-4028-beb7-a4cf6a5efd96",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C33",
+      "claim": "ET4+ HCs appeared at 48 hr post LY+neo, suggesting that HC regeneration happened after the recovery of sox2+ progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 1A, ET4+ HCs appeared at 48 hr post LY+neo, suggesting that HC regeneration happened after the recovery of sox2+ progenitors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the temporal sequence of events observed in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "e55e78fc-54d3-4704-9d13-d26013b84d8f",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C34",
+      "claim": "The exhausted sox2+ progenitors were not recovered without severe injury (LY+rest condition).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the exhausted sox2+ progenitors were not recovered without severe injury (Figure 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by data in Figure 1C-D comparing LY+rest with LY+neo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "d5bce1fa-c8e2-4b88-becd-214421bf4fe8",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C35",
+      "claim": "Proliferation in SCs or MCs post severe injury is highly increased compared with neo-induced normal injury, while HC differentiation is decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that proliferation in SCs or MCs post severe injury is highly increased compared with neo-induced normal injury, while HC differentiation is decreased (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by EdU incorporation data in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "a19bcd2c-3ed5-4032-b982-baf8b9930ecd",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C36",
+      "claim": "Twelve times of MC or SC divisions were recorded in one neuromast from 24 hr to 40 hr post LY+neo, but none of them was differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "By time lapse, we recorded 12 times of MC or SC divisions in one neuromast from 24 hr to 40 hr post LY+neo, but none of them was differentiation (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by time-lapse imaging data in Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "b7ad047f-82b6-41b6-8670-3cdc0de12a27",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C37",
+      "claim": "Lin28a was transiently upregulated post neomycin treatment according to RNA-Seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we have collected samples of regenerating neuromasts for RNA-Seq analysis (Jiang et al., 2014) and identified that lin28a was transiently upregulated post neomycin treatment (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by RNA-Seq data in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "62335ecd-7799-46c1-8834-7d558ec3344d",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C38",
+      "claim": "Lin28a was not expressed in the developing lateral line primordium or neuromast.",
+      "claim_type": "EXPLICIT",
+      "source": "By in situ hybridization, we verified that lin28a was not expressed in the developing lateral line primordium or neuromast (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by in situ hybridization data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "1e7f1cae-d677-48fd-9a8d-715f81619922",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C39",
+      "claim": "Neomycin treatment and other types of HC injuries, including heavy metal (copper sulfate) or chemotherapeutic drug (cisplatin), induced sporadic lin28a expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Neomycin treatment and other types of HC injuries, including heavy metal (copper sulfate) or chemotherapeutic drug (cisplatin), induced sporadic lin28a expression (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by in situ hybridization data in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "d78087a2-1cd7-49fa-839c-fb7460020675",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C40",
+      "claim": "LY+neo induced much higher expression of lin28a compared with neo alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, LY+neo induced much higher expression of lin28a compared with neo alone (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by in situ hybridization data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "4d6c3832-cc99-42ec-aadd-30f3f64566df",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C41",
+      "claim": "Lin28a induction is proportional to the injury size.",
+      "claim_type": "EXPLICIT",
+      "source": "Since LY+neo induced more cell death than neo as illustrated by ablation of s100t expressing HCs, we tested whether lin28a induction is proportional to the injury size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is tested by laser ablation experiments shown in Figure 2\u2014figure supplement 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "4189f4e3-9e89-461d-9f8e-552f340ab079",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C42",
+      "claim": "Low level of lin28a was induced when five HCs were ablated while higher level of lin28a was observed when sixteen HCs were ablated.",
+      "claim_type": "EXPLICIT",
+      "source": "We used laser ablation to manipulate the number of injured cells in LY-treated neuromast. Low level of lin28a was induced when five HCs were ablated while higher level of lin28a was observed when sixteen HCs were ablated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by laser ablation data in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "cc66b299-3c9a-440f-be5b-51051ee9f6a3",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C43",
+      "claim": "The ablation of SCs could also induce lin28a expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that the ablation of SCs could also induce lin28a expression (Figure 2\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by laser ablation data in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "484f723b-083a-4b54-b9c2-9b6b2b960c14",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C44",
+      "claim": "The number of atoh1a-transcribed cells detected by in situ were higher at 1 hr post LY+neo compared with LY.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that atoh1a+HC precursors were the main population that survived post LY+neo (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by in situ hybridization data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "4f411e4b-3747-4cfa-8a02-c97f630273a6",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C45",
+      "claim": "Lin28a was co-expressed with atoh1a post neo or LY+neo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using double fluorescent in situ, it was verified that lin28a was induced in atoh1a+ HC precursors in both neo- and LY+neo-treated neuromasts (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by double fluorescent in situ data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "9b0422d1-1071-4bee-b778-95afc0191220",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C46",
+      "claim": "Neo-induced lin28a was increased when atoh1a was overexpressed in hs:atoh1a.",
+      "claim_type": "EXPLICIT",
+      "source": "We used hs:atoh1a to induce atoh1a expression after heat shock and found that neo-induced lin28a was increased (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by in situ hybridization data in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "22230fbf-1f40-4942-bc34-e692d830169e",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C47",
+      "claim": "Lin28a induction post LY+neo was completely blocked when atoh1a expression was inhibited in hs:notch1a.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, lin28a induction post LY+neo was completely blocked when atoh1a expression was inhibited in hs:notch1a (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by in situ hybridization data in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "8885389e-5e0e-4d97-84f4-97208011573b",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C48",
+      "claim": "Wnt activation does not act upstream to induce lin28a expression post injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We used hs:dkk1 to inhibit Wnt activation and found that lin28a induction post injury was not affected (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by in situ hybridization data in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "16c69436-882e-4101-be21-f9a727431081",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C49",
+      "claim": "The protein levels of yap was up-regulated at 1 hr post LY+neo while taz was increased until 5 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the protein levels of yap was up-regulated at 1 hr post LY+neo while taz was increased until 5 hr (Figure 2G and Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by western blot data in Figure 2G and Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "5d7287ec-162e-4ab2-adf3-8789e0a7c242",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C50",
+      "claim": "More yap was detected in LY+neo-treated neuromast cells compared with neo by immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "By immunostaining, more yap was also dectected in LY+neo-treated neuromast cells compared with neo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by immunostaining data in Figure 2\u2014figure supplement 2D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "39385286-70f7-4cc7-a5e3-03586606a17c",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C51",
+      "claim": "Yap expression was inhibited when atoh1a is inhibited with hs:notch1a, suggesting that yap is activated in atoh1a+ HC precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Yap expression was inhibited when atoh1a is inhibited with hs:notch1a, which suggests that yap is activated in atoh1a+ HC precursors (Figure 2\u2014figure supplement 2D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by immunostaining data in Figure 2\u2014figure supplement 2G, with inference about cell type.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "d51f8e9a-d1bc-47a7-863c-2a1fda4d06b8",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C52",
+      "claim": "Expressions of the classic yap target genes, such as cyr61 and ctgfa, and the Hippo pathway genes, such as yap and mst2, were dramatically increased post LY+neo.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressions of the classic yap target genes, such as cyr61 and ctgfa, and the Hippo pathway genes, such as yap and mst2, were dramatically increased post LY+neo (Figure 2\u2014figure supplement 2H\u2013I), which was blocked with verteporfin (an inhibitor of yap-mediated transcription by blocking yap-tead1 interaction).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by qPCR data in Figure 2\u2014figure supplement 2H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "7ecaec9b-581f-49f2-ab22-b3e2437ea794",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C53",
+      "claim": "A conserved yap binding motif is located at 100 bp downstream of lin28a transcription start site, where a tead1 binding motif is located nearby.",
+      "claim_type": "EXPLICIT",
+      "source": "Interesting we found a conserved yap binding motif located at 100 bp downstream of lin28a transcription start site, where a tead1 binding motif is located nearby.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from bioinformatic analysis shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "3a09cc9b-e29e-473a-b75c-77bfe3d9cadd",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C54",
+      "claim": "Yap directly binds to the predicted region of lin28a promoter post severe injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We used CHIP-PCR to verify that yap directly binds to this region of lin28a promoter post severe injury (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by CHIP-PCR data in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "dd32b9cf-bac9-4a2c-8f55-b303a3cc0dce",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C55",
+      "claim": "LY+neo-induced lin28a expression was blocked in verteporfin or in yap mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, LY+neo-induced lin28a expression was blocked in verteporfin or in yap mutant (Figure 2I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by in situ hybridization data in Figure 2I-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "218bc4a7-4fb4-47e5-b14e-db6723c4b7c3",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C56",
+      "claim": "Lin28a deficiency had no effect on HC or SC number in homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that lin28a deficiency had no effect on HC or SC number in homeostasis, nor did it affect exhaustion of sox2+ progenitors post LY or LY+neo (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by cell counting data in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "48f7a537-88f7-4b04-908b-b3064312dc05",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C57",
+      "claim": "Lin28a deficiency did not affect exhaustion of sox2+ progenitors post LY or LY+neo.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that lin28a deficiency had no effect on HC or SC number in homeostasis, nor did it affect exhaustion of sox2+ progenitors post LY or LY+neo (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by cell counting data in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "b1f351de-5faf-445a-8c8e-fc8721708479",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C58",
+      "claim": "The regenerated HC number was decreased by lin28a deficiency post LY+neo.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the regenerated HC number was decreased by lin28a deficiency (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by cell counting data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "feb35a9d-7584-4950-ada2-5a47df4d8d95",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C59",
+      "claim": "The number of regenerated SCs and the proliferative SCs were both significantly decreased in lin28a mutant post LY+neo.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the number of regenerated SCs (Figure 3A) and the proliferative SCs (Figure 3B) were both significantly decreased.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by cell counting and EdU incorporation data in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "40252506-a63d-4154-98fc-a05a092c6856",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C60",
+      "claim": "The EdU-positive SC cells that were located in each quadrant with no polarization in sibling post LY+neo were almost cleared in lin28a mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The EdU-positive SC cells that were located in each quadrant with no polarization in sibling post LY+neo were almost cleared in lin28a mutant (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by EdU incorporation and spatial analysis data in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "ef78b8c5-0fb0-48c7-ae95-ea2ad114cf30",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C61",
+      "claim": "The EdU-positive SC number post neo is not affected by lin28a deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the EdU-positive SC number post neo is not affected by lin28a deficiency (Figure 3E), indicating that lin28a is not required for neo-induced regeneration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by EdU incorporation data in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "fa6c0010-36b7-434a-825a-44ca8d914734",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C62",
+      "claim": "Yap deficiency or inhibition with verteporfin caused proliferative deficiency post LY+neo, but has no effect on SC proliferation post neo.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that yap deficiency induced similar phenotype with lin28a mutant. Yap mutation or inhibition with verteporfin caused proliferative deficiency post LY+neo, but has no effect on SC proliferation post neo (Figure 3F\u2013G and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by EdU incorporation data in Figure 3F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "10c7570a-fde9-4c23-bf93-387596ee611a",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C63",
+      "claim": "Proliferative deficiency in verterporfin was rescued by hs:lin28a, indicating that lin28a acts downstream of yap to promote SC proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Proliferative deficiency in verterporfin was rescued by hs:lin28a (Figure 3G), indicating that lin28a acts downstream of yap to promote SC proliferation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by EdU incorporation data in Figure 3G, with inference about pathway relationship.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "1f4255a9-d08d-401f-8185-82c1443e53ff",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C64",
+      "claim": "The number of proliferative and regenerated progenitors at 12 hr post injury were significantly reduced in lin28a mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We next examined whether lin28a is required for recovery of sox2+ progenitors post LY+neo. The number of proliferative and regenerated progenitors at 12 hr post injury were significantly reduced in lin28a mutant (Figure 3H\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by immunostaining and EdU incorporation data in Figure 3H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "3e587ad4-1eac-462b-9f38-c49af513b1bd",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C65",
+      "claim": "The HC number was not changed in hs:lin28a, indicating that lin28a has no effect on HC development.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the HC number was not changed in hs:lin28a, indicating that lin28a has no effect on HC development (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by cell counting data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "41e62ac0-da94-4bb2-a553-2b16a1b9c53d",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C66",
+      "claim": "The number of proliferative SCs was significantly increased when lin28a is overexpressed in both homeostatic and neo-treated neuromast, whereas HC differentiation was not changed.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of proliferative SCs was significantly increased when lin28a is overexpressed in both homeostatic and neo-treated neuromast, whereas HC differentiation was not changed (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by BrdU incorporation data in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "70d9ad7b-bae0-4bf4-b083-56b683650eb0",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C67",
+      "claim": "The location of proliferative SCs still remain polarized in hs:lin28a.",
+      "claim_type": "EXPLICIT",
+      "source": "The proliferative SCs are localized in dorsal and ventral poles of neuromast in homeostasis and neo-induced regeneration (Ma et al., 2008; Romero-Carvajal et al., 2015; Wibowo et al., 2011). The location of proliferative SCs still remain polarized in hs:lin28a (Figure 4C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by spatial analysis data in Figure 4C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "60907d58-4a57-468a-8f4a-b0b11947f4db",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C68",
+      "claim": "Lin28a overexpression is sufficient to induce higher number of proliferative progenitors post LY.",
+      "claim_type": "EXPLICIT",
+      "source": "We further examined whether lin28a overexpression is sufficient to induce sox2+ progenitors, and observed higher number of proliferative progenitors in hs:lin28a post LY (Figure 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by immunostaining and EdU incorporation data in Figure 4E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "f7a27fc4-4183-429e-89a2-c74ea9185442",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C69",
+      "claim": "The number of atoh1a+sox2+ cells in LY+neo was significantly increased compared with neo.",
+      "claim_type": "EXPLICIT",
+      "source": "We co-labeled the expressions of atoh1a mRNA and sox2 protein and found that the number of atoh1a+sox2+ cells in LY+neo was significantly increased compared with neo (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by double labeling data in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "02075a2e-1aae-42f0-bc1c-d81c9de7e63c",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C70",
+      "claim": "Very few Tomato+ cells express sox2 in normal or LY-treated larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "The atoh1a:TdTomato reporter labeled partially ET4-positive HCs (Figue 5C, ctrl) and also a few cells that are ET4 negative and sox2 negative which are likely HC precursors (Figure 5C, yellow arrows in LY). Very few Tomato+ cells express sox2 in normal or LY-treated larvae.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by reporter imaging data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "dbcf35d7-4649-49d1-9a0d-5337f639a5cd",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C71",
+      "claim": "Significantly more Tomato+ cells turned on sox2 expression at 12 hr and 48 hr post LY+neo and become Tomato+sox2+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, significantly more Tomato+ cells turned on sox2 expression at 12 hr and 48 hr post LY+neo and become Tomato+sox2+ cells (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by reporter imaging data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "f7f37275-07f3-4910-9a10-ae6b11b28605",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C72",
+      "claim": "Tomato+ cells became HCs in both neo and LY+neo.",
+      "claim_type": "EXPLICIT",
+      "source": "We further used time-lapse microscopy to trace atoh1a:TdTomato cells and found that the Tomato+ cells became HCs in both neo and LY+neo (blue dots in Figure 5\u2014figure supplement 1A\u2013B, Video 2 and S3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by time-lapse imaging data in Figure 5\u2014figure supplement 1A-B and Videos 2-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "0cd1036f-8d33-4b93-9fbf-d39232c2565d",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C73",
+      "claim": "It's only in LY+neo-induced severe injury that Tomato+ cells became sox2-positive cells labeled by sox2:GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it's only in LY+neo-induced severe injury that Tomato+ cells became sox2-positive cells labeled by sox2:GFP (white dots in Figure 5\u2014figure supplement 1B and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by time-lapse imaging data in Figure 5\u2014figure supplement 1B and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "3616f8c6-6611-4c28-8b59-16c92c888a84",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C74",
+      "claim": "Significantly higher ratio of SCs were labeled by Tomato post LY+neo compared with neo.",
+      "claim_type": "EXPLICIT",
+      "source": "We traced the Tomato+ cells for their fate becoming HCs, SCs or MCs (Figure 5\u2014figure supplement 1C\u2013D), and the results showed that significantly higher ratio of SCs were labeled by Tomato post LY+neo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by lineage tracing data in Figure 5\u2014figure supplement 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "aedfb485-21fa-4aae-a7bf-54ac2c4ff156",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C75",
+      "claim": "Many Tomato+ MCs were labeled post LY+neo, but none was detected in normal or neo-treated larvae, suggesting that atoh1a+sox2+ cells gained more potential to produce MCs.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly many Tomato+ MCs were labeled post LY+neo, but none was detected in normal or neo-treated larvae, suggesting that atoh1a+sox2+ cells gained more potential to produce MCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by lineage tracing data in Figure 5\u2014figure supplement 1C-D, with inference about cell potential.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "1602eaa3-be2c-4a59-b13f-91bfe6e68653",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C76",
+      "claim": "The Yap inhibitor verteporfin decreased Tomato+sox2+ cell number post severe injury, which was rescued by overexpression of lin28a.",
+      "claim_type": "EXPLICIT",
+      "source": "We further tested whether HC precursors gained sox2 expression through Yap-lin28a pathway. The Yap inhibitor verteporfin decreased Tomato+sox2+ cell number post severe injury, which was rescued by overexpression of lin28a (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by reporter imaging data in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "a4c4fef4-b333-49f7-9572-a38f57141d38",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C77",
+      "claim": "Significantly higher number of atoh1a+sox2+ cells were induced in LY-treated hs:lin28a.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly higher number of atoh1a+sox2+ cells were induced in LY-treated hs:lin28a (Figure 5F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by double labeling data in Figure 5F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "77dd6458-7c4a-4287-a546-216c6ba40595",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C78",
+      "claim": "hs:let7 showed the defect of SC proliferation post LY+neo, similar to lin28a mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar with lin28a mutant, hs:let7 showed the defect of SC proliferation post LY+neo (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by EdU incorporation data in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "fdc1cc15-feac-43f0-94d8-320d10421f84",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C79",
+      "claim": "Overexpression of let7 inhibited hs:lin28a-induced proliferation, indicating that let7 acts downstream of lin28a to promote regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that overexpression of let7 inhibited hs:lin28a-induced proliferation (Figure 6B), indicating that let7 acts downstream of lin28a to promote regeneration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by EdU incorporation data in Figure 6B, with inference about pathway relationship.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "d6366d89-96cf-4fc3-8c15-b2c056138c69",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C80",
+      "claim": "Lin28a has no effect on Notch and Fgf pathways as her4, a Notch pathway gene, and fgf3, a Fgf pathway gene were not changed in hs:lin28a.",
+      "claim_type": "EXPLICIT",
+      "source": "Lin28a has no effect on Notch and Fgf pathways as her4, a Notch pathway gene, and fgf3, a Fgf pathway gene were not changed in hs:lin28a (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by in situ hybridization data in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "cb34d26f-2cbf-4f7e-a59a-1a07036ab5b8",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C81",
+      "claim": "Overexpression of lin28a was sufficient to upregulate Wnt pathway genes wnt10a and mycn, which was inhibited by overexpression of let7.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of lin28a was sufficient to upregulate Wnt pathway genes wnt10a and mycn, which was inhibited by overexpression of let7 (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by in situ hybridization data in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "e406070a-19f4-47d6-b984-da37f7b8fbe3",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C82",
+      "claim": "Activation of Wnt pathway genes at 1 hr post LY+neo were blocked in lin28a mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of Wnt pathway genes at 1 hr post LY+neo were blocked in lin28a mutant (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by in situ hybridization data in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "b7791234-c30b-48d0-9d2e-07029ca603c6",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C83",
+      "claim": "Lin28a-induced proliferation were inhibited by hs:dkk1 in which Wnt activation is blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "We further tested the function of Wnt pathway and found that lin28a-induced proliferation were inhibited by hs:dkk1 in which Wnt activation is blocked (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by EdU incorporation data in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "8ea809f9-8d06-41ac-907b-52b552cc76f3",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C84",
+      "claim": "Yap-lin28a pathway functions specifically in severe-injury induced regeneration for promoting progenitor recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our results identified that Yap-lin28a pathway functions specifically in severe-injury induced regeneration for promoting progenitor recovery (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary conclusion based on multiple experimental findings showing differential effects in severe vs. normal injury.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "344c963c-b11e-44e8-a69b-dcfbc67f10c0",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C85",
+      "claim": "Wnt pathway was highly activated immediately post severe injury, but was not activated at 1 hr post neo.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Wnt pathway was highly activated immediately post severe injury, but was not activated at 1 hr post neo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by in situ hybridization data in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "8335dde0-c327-4f5d-acd2-ffb67eab86bd",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C86",
+      "claim": "Lin28a, together with Oct4, Sox2 and Nanog, can reprogram somatic cells to induced pluripotent stem cells (iPSC) in mouse and human.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it's well-known that lin28a, together with Oct4, Sox2 and Nanog, can reprogram somatic cells to induced pluripotent stem cells (iPSC) in mouse and human (Yu et al., 2007; Moss and Tang, 2003; Zhang et al., 2016), it may be involved in tissue regeneration through dedifferentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by three citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "f999c24d-ba25-4590-a3ad-85d91ef5b564",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C87",
+      "claim": "Lin28a may reprogram HC precursors into sox2+ progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that atoh1a+ HC precursors were converted into sox2 expressing cells through Yap-lin28a pathway (Figure 5), suggesting that lin28a may reprogram HC precursors into sox2+ progenitors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the data in Figure 5.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "d4924b96-e5e2-4063-9bdf-f801b15c194b",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C88",
+      "claim": "Atoh1+ secretory cells in intestine are capable to dedifferentiate into lgr5+ stem cells in irradiation-induced severe injury.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, atoh1+ secretory cells in intestine are capable to dedifferentiate into lgr5+ stem cells in irradiation-induced severe injury (Tetteh et al., 2016; Tomic et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by two citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "6d2ca4f0-25aa-4fe3-85c5-1673bd94a002",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C89",
+      "claim": "In colon, atoh1+ secretory progenitors reprogram to lgr5+ stem cells and form the entire crypts post injury while contributed minimally to other lineages in homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In colon, atoh1+ secretory progenitors reprogram to lgr5+ stem cells and form the entire crypts post injury while contributed minimally to other lineages in homeostasis (Castillo-Azofeifa et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Castillo-Azofeifa et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "45d6e005-0208-43e2-b720-c89e12cba198",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C90",
+      "claim": "The severe-injury-treated neuromast displayed the expression patterns of leading progenitors in early developing primordium.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the severe-injury-treated neuromast displayed the expression patterns of leading progenitors in early developing primordium, which suggests that lin28a reprograms the differentiated cells into the stem/progenitor cells at early developmental stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on gene expression patterns observed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "b49b89ce-b2e5-4dc6-accd-4309c6b5ec94",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C91",
+      "claim": "Lin28a reprograms the differentiated cells into the stem/progenitor cells at early developmental stage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the severe-injury-treated neuromast displayed the expression patterns of leading progenitors in early developing primordium, which suggests that lin28a reprograms the differentiated cells into the stem/progenitor cells at early developmental stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on gene expression patterns.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "465947cb-dbfc-4534-b7e8-7734c9d092e3",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C92",
+      "claim": "The damage of cell junction adjacent to the injury site might activate yap.",
+      "claim_type": "EXPLICIT",
+      "source": "It is hypothesized that either injured cells secrete diffusible molecules leading to widespread yap activation, or the damage of cell junction adjacent to the injury site activates yap (Moya and Halder, 2016). We observed lin28a induction after laser ablation of HCs in the restricted areas. Our results showed that the lin28a-expressing cells were very close to the damaged HCs (Figure 2\u2014figure supplement 1C), suggesting that the damage of cell junction might lead to yap-lin28a activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation based on spatial proximity of lin28a-expressing cells to damaged HCs.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "b6c90d7d-0bdf-487b-a36f-d46f370c1f9a",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C93",
+      "claim": "The loss of amotl2a post HC injury might result in yap activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since cell-junction-associated protein amotl2a has been reported restricting yap activity in the zebrafish lateral line primordium (Agarwala et al., 2015), it is possible that the loss of amotl2a post HC injury might result in yap activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on previous findings about amotl2a function.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "aa81aa8a-5b08-4103-9ffd-bf30249abd10",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C94",
+      "claim": "Lin28b-let7 functions to enhance progenitor proliferation during embryonic inner ear development.",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that lin28b-let7 functions to enhance progenitor proliferation during embryonic inner ear development (Golden et al., 2015), but the downstream pathway is still unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Golden et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "5859f344-c9c1-46c6-b43c-5f084895fe9e",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C95",
+      "claim": "Lin28a regulates retinal regeneration through let7.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data showed that lin28a-let7 functions to promote progenitor proliferation during regeneration, which is consistent with the previous finding that lin28a regulates retinal regeneration through let7 (Ramachandran et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ramachandran et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "3c48a520-042f-4d9a-8ecb-efe3e4908d76",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C96",
+      "claim": "Hippo pathway critically regulates regeneration of many tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Hippo pathway critically regulates regeneration of many tissues (Gregorieff et al., 2015; Gregorieff and Wrana, 2017; Moya and Halder, 2016), we therefore tested the expression of yap and taz, two cardinal mediators of Hippo pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by three citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "47a3e2d5-d9dd-4c28-9114-caf4a256c033",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C97",
+      "claim": "Yap has been described as an important regulator in mediating regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have described yap as an important regulator in mediating regeneration (Gregorieff and Wrana, 2017; Moya and Halder, 2016), but the downstream mechanism is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by two citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "1491b8cd-a212-4d0b-8705-ff450d63e7f9",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C98",
+      "claim": "The lin28a mutant allele (lin28a^psi37) harbors a deletion of five nucleotides and causes a premature stop codon within the cold shock domain.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether lin28a is required for HC regeneration, we generated a lin28a mutant allele (lin28a^psi37, referred to as lin28a-) that harbors a deletion of five nucleotides and causes a premature stop codon within the cold shock domain (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the generation and characterization of the lin28a mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "b71a6827-4265-4e4d-a63b-dfbcf0e68fb6",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C99",
+      "claim": "HCs were increased while SCs were decreased post LY treatment, indicating that LY induced differentiation of SCs into HCs.",
+      "claim_type": "EXPLICIT",
+      "source": "ET4;ET20 larvae were treated with 2 \u03bcM LY from 3dpf to 5dpf followed by neomycin, and the number of HCs, SCs and MCs were counted before and right after neo treatment. Results showed that HCs were increased while SCs were decreased post LY, indicating that LY induced differentiation of SCs into HCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by cell counting data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "2eaadb41-db37-4a42-9aae-239af3e8d2fc",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C100",
+      "claim": "Numbers of HCs, SCs and MCs were all significantly decreased post LY+neo compared with 5dpf normal larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Numbers of HCs, SCs and MCs were all significantly decreased post LY+neo compared with 5dpf normal larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by cell counting data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "e02f9d04-7e36-4c2d-9df2-2cb8e0bd4bc0",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C101",
+      "claim": "Differentiation rate in LY+neo was decreased compared with neo.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that differentiation rate (HC+ in B) in LY+neo was decreased compared with neo, while proliferative rates of SCs (SC+ in C) and MCs (MC+ in D) were significantly increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by EdU incorporation data in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "fb502663-35ed-4de1-9ab0-14b52ab79173",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C102",
+      "claim": "Proliferative rates of SCs and MCs were significantly increased in LY+neo compared with neo.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that differentiation rate (HC+ in B) in LY+neo was decreased compared with neo, while proliferative rates of SCs (SC+ in C) and MCs (MC+ in D) were significantly increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by EdU incorporation data in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "b06f6b70-55bc-4dd4-9b3d-d70172ae8c6a",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C103",
+      "claim": "GFP-positive cells in neuromast were mostly co-labeled by sox2 antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to sox2 antibody staining, we also used sox2-2a-GFP knock-in reporter (sox2:GFP) (Shin et al., 2014) to observe the recovery of sox2+ progenitors. GFP-positive cells in neuromast, which were mostly co-labeled by sox2 antibody, were significantly decreased in LY, and recovered to normal level at 48 hr post LY+neo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This validates the sox2:GFP reporter by showing co-labeling with sox2 antibody.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "4bb7dd6e-d9e9-4a4b-83e1-9d1fdc1a8fc0",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C104",
+      "claim": "Levels of lats1 and phosphorylated mob1 were not changed at 1 hr post LY+neo, suggesting yap is activated independent of canonical Hippo pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of lats1 and phosphorylated mob1 were not changed at 1 hr, suggesting yap is activated independent of canonical Hippo pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on western blot data in Figure 2\u2014figure supplement 2B showing no change in Hippo pathway components.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "66594490-9cdf-4dfb-adb5-737bb9304699",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C105",
+      "claim": "The proliferative SCs are evenly distributed in each quadrant with no polarization post LY+neo.",
+      "claim_type": "EXPLICIT",
+      "source": "EdU plots show the positions of EdU+ nuclei of 18 neuromasts superimposed on the same plane, and rose diagrams document the angular positions of SC+. The results show that the proliferative SCs are evenly distributed in each quadrant with no polarization post LY+neo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by spatial analysis data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "851619c0-ea79-4e04-a733-26b0f2855cf8",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "claim_id": "C106",
+      "claim": "The proliferative SCs are localized in dorsal and ventral poles of neuromast in homeostasis and neo-induced regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "The proliferative SCs are localized in dorsal and ventral poles of neuromast in homeostasis and neo-induced regeneration (Ma et al., 2008; Romero-Carvajal et al., 2015; Wibowo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by three citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c3e46155-57b4-4622-a61b-3435848fb725",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A severe injury model (LY+neo) was established in zebrafish lateral line that exhausts both sox2+ progenitors and HCs. Sox2+ progenitors were dramatically reduced immediately after LY or LY+neo treatment but recovered to normal levels by 48 hr post LY+neo, while no recovery occurred without severe injury (LY+rest).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 provide converging evidence from multiple experimental approaches (cell counting, immunostaining, reporter lines) showing that the LY+neo treatment successfully creates a severe injury model and that sox2+ progenitors can recover specifically after severe injury. The temporal dynamics are well-documented with multiple time points.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "67245ae4-ee6d-4069-b0a1-1bf8a53f60ca",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Post severe injury, proliferation of SCs and MCs is highly increased compared to normal injury (neo alone), while HC differentiation is decreased. Proliferative SCs are evenly distributed without polarization post LY+neo, unlike the dorsal-ventral polarization seen in normal conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C36, C101, C102, and C105 are supported by EdU incorporation data and time-lapse imaging showing differential proliferation patterns and spatial distribution. The quantitative data in Figure 1\u2014figure supplement 2 and spatial analysis in Figure 3D provide strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "4d81fb4a-bf6a-4e87-b0b6-f568743b08cd",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Lin28a is not expressed during normal development but is induced by various types of HC injury. LY+neo induces much higher lin28a expression than neo alone, and lin28a induction is proportional to injury size, as demonstrated by laser ablation experiments targeting different numbers of HCs or SCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 are well-supported by RNA-Seq data, in situ hybridization, and laser ablation experiments. The dose-response relationship between injury size and lin28a expression (C41-C43) provides strong evidence for injury-dependent induction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "54b5b5b6-5a3f-4dad-95e9-0bb9f21c4e29",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Atoh1a+ HC precursors are the main population that survives post severe injury and express lin28a. Lin28a expression in these cells is dependent on atoh1a, as demonstrated by gain-of-function (hs:atoh1a) and loss-of-function (hs:notch1a) experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C44-C47 are supported by in situ hybridization showing co-expression of lin28a and atoh1a, and genetic manipulation experiments demonstrating that atoh1a is necessary and sufficient for lin28a induction. The data in Figures 2C-F provide strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "69d5233f-d00c-4c83-9375-5f5de2451327",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Yap is activated post severe injury in atoh1a+ HC precursors and directly binds to the lin28a promoter to upregulate its transcription. Yap activation occurs independently of the canonical Hippo pathway, as lats1 and phosphorylated mob1 levels were unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C49-C55, and C104 are supported by western blot, immunostaining, CHIP-PCR, and genetic/pharmacological inhibition experiments. The direct binding of yap to the lin28a promoter (C54) and the rescue experiments with verteporfin and yap mutants provide strong mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "a4b4937b-119f-4074-9cbe-ff5f8f81ca2b",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Lin28a is specifically required for severe-injury-induced regeneration but not for normal injury (neo) regeneration or homeostasis. Lin28a mutants show reduced HC and SC regeneration, decreased proliferation, and impaired sox2+ progenitor recovery post LY+neo, but normal regeneration post neo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C56-C61, C64, and C98 are supported by comprehensive analysis of the lin28a mutant phenotype using cell counting, EdU incorporation, and spatial analysis. The specificity for severe injury (C61) is particularly well-demonstrated by comparing neo vs. LY+neo conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "7919178b-b545-4e8c-83c7-f70f4c346e6e",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Yap is necessary for severe-injury-induced progenitor regeneration, and lin28a acts downstream of yap. Yap deficiency or inhibition with verteporfin causes proliferative deficiency post LY+neo but not post neo, and this deficiency can be rescued by lin28a overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C62, and C63 are supported by genetic and pharmacological experiments showing that yap and lin28a function in the same pathway. The rescue experiment (C63) provides strong evidence for the epistatic relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "0f9f53e1-7904-48da-9813-32133572c99d",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Overexpression of lin28a is sufficient to increase proliferative SCs in both homeostatic and neo-treated neuromasts without affecting HC differentiation or development. Lin28a overexpression can also partially restore exhausted sox2+ progenitors post LY treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C65-C68 are supported by BrdU/EdU incorporation and immunostaining data from hs:lin28a transgenic fish. The sufficiency of lin28a for progenitor recovery (C68) and the lack of effect on HC development (C65) are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "9c90ed26-feb5-43dc-8de3-12e10594501d",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Atoh1a+ HC precursors gain sox2 expression through the Yap-lin28a pathway post severe injury. Time-lapse imaging and lineage tracing show that atoh1a:TdTomato+ cells become sox2+ cells specifically after LY+neo, and these cells gain increased potential to produce SCs and MCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C69-C77 are supported by double labeling, reporter imaging, time-lapse microscopy, and lineage tracing experiments. The specificity for severe injury (C73) and the rescue by lin28a overexpression (C76) provide strong evidence for the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "6cf1d8e8-170b-42c7-9979-9f10668112d4",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MicroRNA let7 acts downstream of lin28a to activate the Wnt pathway for promoting regeneration. Overexpression of let7 blocks lin28a-induced proliferation and Wnt activation, while lin28a overexpression upregulates Wnt pathway genes. Lin28a has no effect on Notch or Fgf pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C78-C83 are supported by genetic manipulation experiments using hs:let7, hs:lin28a, and hs:dkk1 transgenic lines, combined with in situ hybridization and EdU incorporation assays. The epistatic relationships are well-established through rescue and inhibition experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "782f0c45-7ce4-4127-ad2f-20c2d91855fa",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Yap-lin28a pathway functions specifically in severe-injury-induced regeneration for promoting progenitor recovery. Wnt pathway is highly activated immediately post severe injury but not at 1 hr post neo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84 and C85 represent summary conclusions supported by the collective evidence from multiple experiments showing differential effects in severe vs. normal injury conditions. The specificity is demonstrated across multiple assays and genetic manipulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "e4715b29-da6d-43b0-9c44-10408a072d52",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Wnt activation does not act upstream to induce lin28a expression post injury, as demonstrated by hs:dkk1 experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by in situ hybridization data showing that Wnt inhibition with hs:dkk1 does not affect lin28a induction post injury, establishing that Wnt acts downstream rather than upstream of lin28a.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "c73fd064-f065-4b83-ab99-294e34ef0f9f",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Lin28a may reprogram HC precursors into sox2+ progenitors, as the severe-injury-treated neuromast displays expression patterns of leading progenitors in early developing primordium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87, C90, and C91 are explicitly speculative interpretations (marked as SPECULATION in evidence_type). While the gene expression patterns are observed, the authors acknowledge that further lineage-tracing analyses using cre/loxP system are necessary to verify dedifferentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "c9240aed-2950-4b13-a35f-41f4c173a98f",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The damage of cell junctions adjacent to the injury site might activate yap, possibly through loss of amotl2a, a cell-junction-associated protein that restricts yap activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92 and C93 are speculative hypotheses based on spatial proximity observations and prior literature. The authors explicitly state these are possibilities that require further investigation, and no direct experimental evidence is provided for the proposed mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background context on mammalian and zebrafish HC development, regeneration capacity, and current therapeutic approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C10-C28 represent established knowledge from the literature, supported by multiple citations. These provide the scientific context and rationale for the study but are not novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "4348e17d-8cee-4466-9e21-dc890f7d473b",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work on lin28a, yap, and cellular reprogramming in various systems, including iPSC generation, retinal regeneration, intestinal regeneration, and inner ear development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86, C88-C89, C94-C97, and C106 represent established findings from prior studies, supported by citations. These provide context for interpreting the current findings but are not novel results from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    },
+    {
+      "id": "3f54d1de-e04c-448f-ab74-64e97ff6db0a",
+      "content_id": "4fd778b9-a559-41af-8bbf-768f92f89da9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The sox2:GFP reporter is validated by showing that GFP-positive cells in neuromast are mostly co-labeled by sox2 antibody.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C103 is supported by co-labeling experiments validating the reporter line. This is a methodological validation that supports the use of this tool in subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:49:09.930767Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c2ce0780-95e0-4cb6-86e1-43f5bfd27926",
+      "result_id": "c3e46155-57b4-4622-a61b-3435848fb725"
+    },
+    {
+      "claim_id": "8e1d4c23-ec05-4141-8ead-9e45e423cd39",
+      "result_id": "c3e46155-57b4-4622-a61b-3435848fb725"
+    },
+    {
+      "claim_id": "ace15390-bab8-4647-a537-413dd4cfe89d",
+      "result_id": "c3e46155-57b4-4622-a61b-3435848fb725"
+    },
+    {
+      "claim_id": "cea89a3f-e301-4028-9289-824a9a1d0f66",
+      "result_id": "c3e46155-57b4-4622-a61b-3435848fb725"
+    },
+    {
+      "claim_id": "dc34ba24-8c83-4028-beb7-a4cf6a5efd96",
+      "result_id": "c3e46155-57b4-4622-a61b-3435848fb725"
+    },
+    {
+      "claim_id": "e55e78fc-54d3-4704-9d13-d26013b84d8f",
+      "result_id": "c3e46155-57b4-4622-a61b-3435848fb725"
+    },
+    {
+      "claim_id": "b71a6827-4265-4e4d-a63b-dfbcf0e68fb6",
+      "result_id": "c3e46155-57b4-4622-a61b-3435848fb725"
+    },
+    {
+      "claim_id": "2eaadb41-db37-4a42-9aae-239af3e8d2fc",
+      "result_id": "c3e46155-57b4-4622-a61b-3435848fb725"
+    },
+    {
+      "claim_id": "d5bce1fa-c8e2-4b88-becd-214421bf4fe8",
+      "result_id": "67245ae4-ee6d-4069-b0a1-1bf8a53f60ca"
+    },
+    {
+      "claim_id": "a19bcd2c-3ed5-4032-b982-baf8b9930ecd",
+      "result_id": "67245ae4-ee6d-4069-b0a1-1bf8a53f60ca"
+    },
+    {
+      "claim_id": "e02f9d04-7e36-4c2d-9df2-2cb8e0bd4bc0",
+      "result_id": "67245ae4-ee6d-4069-b0a1-1bf8a53f60ca"
+    },
+    {
+      "claim_id": "fb502663-35ed-4de1-9ab0-14b52ab79173",
+      "result_id": "67245ae4-ee6d-4069-b0a1-1bf8a53f60ca"
+    },
+    {
+      "claim_id": "66594490-9cdf-4dfb-adb5-737bb9304699",
+      "result_id": "67245ae4-ee6d-4069-b0a1-1bf8a53f60ca"
+    },
+    {
+      "claim_id": "b7ad047f-82b6-41b6-8670-3cdc0de12a27",
+      "result_id": "4d81fb4a-bf6a-4e87-b0b6-f568743b08cd"
+    },
+    {
+      "claim_id": "62335ecd-7799-46c1-8834-7d558ec3344d",
+      "result_id": "4d81fb4a-bf6a-4e87-b0b6-f568743b08cd"
+    },
+    {
+      "claim_id": "1e7f1cae-d677-48fd-9a8d-715f81619922",
+      "result_id": "4d81fb4a-bf6a-4e87-b0b6-f568743b08cd"
+    },
+    {
+      "claim_id": "d78087a2-1cd7-49fa-839c-fb7460020675",
+      "result_id": "4d81fb4a-bf6a-4e87-b0b6-f568743b08cd"
+    },
+    {
+      "claim_id": "4d6c3832-cc99-42ec-aadd-30f3f64566df",
+      "result_id": "4d81fb4a-bf6a-4e87-b0b6-f568743b08cd"
+    },
+    {
+      "claim_id": "4189f4e3-9e89-461d-9f8e-552f340ab079",
+      "result_id": "4d81fb4a-bf6a-4e87-b0b6-f568743b08cd"
+    },
+    {
+      "claim_id": "cc66b299-3c9a-440f-be5b-51051ee9f6a3",
+      "result_id": "4d81fb4a-bf6a-4e87-b0b6-f568743b08cd"
+    },
+    {
+      "claim_id": "a14f8e27-9236-47bb-8984-14c0682bab32",
+      "result_id": "54b5b5b6-5a3f-4dad-95e9-0bb9f21c4e29"
+    },
+    {
+      "claim_id": "484f723b-083a-4b54-b9c2-9b6b2b960c14",
+      "result_id": "54b5b5b6-5a3f-4dad-95e9-0bb9f21c4e29"
+    },
+    {
+      "claim_id": "4f411e4b-3747-4cfa-8a02-c97f630273a6",
+      "result_id": "54b5b5b6-5a3f-4dad-95e9-0bb9f21c4e29"
+    },
+    {
+      "claim_id": "9b0422d1-1071-4bee-b778-95afc0191220",
+      "result_id": "54b5b5b6-5a3f-4dad-95e9-0bb9f21c4e29"
+    },
+    {
+      "claim_id": "22230fbf-1f40-4942-bc34-e692d830169e",
+      "result_id": "54b5b5b6-5a3f-4dad-95e9-0bb9f21c4e29"
+    },
+    {
+      "claim_id": "9ad614e9-ede4-4a6d-b6ff-19b8e2aa23d8",
+      "result_id": "69d5233f-d00c-4c83-9375-5f5de2451327"
+    },
+    {
+      "claim_id": "16c69436-882e-4101-be21-f9a727431081",
+      "result_id": "69d5233f-d00c-4c83-9375-5f5de2451327"
+    },
+    {
+      "claim_id": "5d7287ec-162e-4ab2-adf3-8789e0a7c242",
+      "result_id": "69d5233f-d00c-4c83-9375-5f5de2451327"
+    },
+    {
+      "claim_id": "39385286-70f7-4cc7-a5e3-03586606a17c",
+      "result_id": "69d5233f-d00c-4c83-9375-5f5de2451327"
+    },
+    {
+      "claim_id": "d51f8e9a-d1bc-47a7-863c-2a1fda4d06b8",
+      "result_id": "69d5233f-d00c-4c83-9375-5f5de2451327"
+    },
+    {
+      "claim_id": "7ecaec9b-581f-49f2-ab22-b3e2437ea794",
+      "result_id": "69d5233f-d00c-4c83-9375-5f5de2451327"
+    },
+    {
+      "claim_id": "3a09cc9b-e29e-473a-b75c-77bfe3d9cadd",
+      "result_id": "69d5233f-d00c-4c83-9375-5f5de2451327"
+    },
+    {
+      "claim_id": "dd32b9cf-bac9-4a2c-8f55-b303a3cc0dce",
+      "result_id": "69d5233f-d00c-4c83-9375-5f5de2451327"
+    },
+    {
+      "claim_id": "4bb7dd6e-d9e9-4a4b-83e1-9d1fdc1a8fc0",
+      "result_id": "69d5233f-d00c-4c83-9375-5f5de2451327"
+    },
+    {
+      "claim_id": "db66a7da-f26f-4710-88ca-c633e3fcf1f3",
+      "result_id": "a4b4937b-119f-4074-9cbe-ff5f8f81ca2b"
+    },
+    {
+      "claim_id": "218bc4a7-4fb4-47e5-b14e-db6723c4b7c3",
+      "result_id": "a4b4937b-119f-4074-9cbe-ff5f8f81ca2b"
+    },
+    {
+      "claim_id": "48f7a537-88f7-4b04-908b-b3064312dc05",
+      "result_id": "a4b4937b-119f-4074-9cbe-ff5f8f81ca2b"
+    },
+    {
+      "claim_id": "b1f351de-5faf-445a-8c8e-fc8721708479",
+      "result_id": "a4b4937b-119f-4074-9cbe-ff5f8f81ca2b"
+    },
+    {
+      "claim_id": "feb35a9d-7584-4950-ada2-5a47df4d8d95",
+      "result_id": "a4b4937b-119f-4074-9cbe-ff5f8f81ca2b"
+    },
+    {
+      "claim_id": "40252506-a63d-4154-98fc-a05a092c6856",
+      "result_id": "a4b4937b-119f-4074-9cbe-ff5f8f81ca2b"
+    },
+    {
+      "claim_id": "ef78b8c5-0fb0-48c7-ae95-ea2ad114cf30",
+      "result_id": "a4b4937b-119f-4074-9cbe-ff5f8f81ca2b"
+    },
+    {
+      "claim_id": "1f4255a9-d08d-401f-8185-82c1443e53ff",
+      "result_id": "a4b4937b-119f-4074-9cbe-ff5f8f81ca2b"
+    },
+    {
+      "claim_id": "1491b8cd-a212-4d0b-8705-ff450d63e7f9",
+      "result_id": "a4b4937b-119f-4074-9cbe-ff5f8f81ca2b"
+    },
+    {
+      "claim_id": "ec80c75a-a858-41e7-aac7-5c4814510df4",
+      "result_id": "7919178b-b545-4e8c-83c7-f70f4c346e6e"
+    },
+    {
+      "claim_id": "fa6c0010-36b7-434a-825a-44ca8d914734",
+      "result_id": "7919178b-b545-4e8c-83c7-f70f4c346e6e"
+    },
+    {
+      "claim_id": "10c7570a-fde9-4c23-bf93-387596ee611a",
+      "result_id": "7919178b-b545-4e8c-83c7-f70f4c346e6e"
+    },
+    {
+      "claim_id": "542b2245-dfd6-4a26-8324-b00ea214ef3b",
+      "result_id": "0f9f53e1-7904-48da-9813-32133572c99d"
+    },
+    {
+      "claim_id": "3e587ad4-1eac-462b-9f38-c49af513b1bd",
+      "result_id": "0f9f53e1-7904-48da-9813-32133572c99d"
+    },
+    {
+      "claim_id": "41e62ac0-da94-4bb2-a553-2b16a1b9c53d",
+      "result_id": "0f9f53e1-7904-48da-9813-32133572c99d"
+    },
+    {
+      "claim_id": "70d9ad7b-bae0-4bf4-b083-56b683650eb0",
+      "result_id": "0f9f53e1-7904-48da-9813-32133572c99d"
+    },
+    {
+      "claim_id": "60907d58-4a57-468a-8f4a-b0b11947f4db",
+      "result_id": "0f9f53e1-7904-48da-9813-32133572c99d"
+    },
+    {
+      "claim_id": "98ec8384-ff3d-40ba-83d1-bed9216dd4ed",
+      "result_id": "9c90ed26-feb5-43dc-8de3-12e10594501d"
+    },
+    {
+      "claim_id": "f7a27fc4-4183-429e-89a2-c74ea9185442",
+      "result_id": "9c90ed26-feb5-43dc-8de3-12e10594501d"
+    },
+    {
+      "claim_id": "02075a2e-1aae-42f0-bc1c-d81c9de7e63c",
+      "result_id": "9c90ed26-feb5-43dc-8de3-12e10594501d"
+    },
+    {
+      "claim_id": "dbcf35d7-4649-49d1-9a0d-5337f639a5cd",
+      "result_id": "9c90ed26-feb5-43dc-8de3-12e10594501d"
+    },
+    {
+      "claim_id": "f7f37275-07f3-4910-9a10-ae6b11b28605",
+      "result_id": "9c90ed26-feb5-43dc-8de3-12e10594501d"
+    },
+    {
+      "claim_id": "0cd1036f-8d33-4b93-9fbf-d39232c2565d",
+      "result_id": "9c90ed26-feb5-43dc-8de3-12e10594501d"
+    },
+    {
+      "claim_id": "3616f8c6-6611-4c28-8b59-16c92c888a84",
+      "result_id": "9c90ed26-feb5-43dc-8de3-12e10594501d"
+    },
+    {
+      "claim_id": "aedfb485-21fa-4aae-a7bf-54ac2c4ff156",
+      "result_id": "9c90ed26-feb5-43dc-8de3-12e10594501d"
+    },
+    {
+      "claim_id": "1602eaa3-be2c-4a59-b13f-91bfe6e68653",
+      "result_id": "9c90ed26-feb5-43dc-8de3-12e10594501d"
+    },
+    {
+      "claim_id": "a4c4fef4-b333-49f7-9572-a38f57141d38",
+      "result_id": "9c90ed26-feb5-43dc-8de3-12e10594501d"
+    },
+    {
+      "claim_id": "39608cbd-df8c-490d-8628-b2b35c5c39d6",
+      "result_id": "6cf1d8e8-170b-42c7-9979-9f10668112d4"
+    },
+    {
+      "claim_id": "77dd6458-7c4a-4287-a546-216c6ba40595",
+      "result_id": "6cf1d8e8-170b-42c7-9979-9f10668112d4"
+    },
+    {
+      "claim_id": "fdc1cc15-feac-43f0-94d8-320d10421f84",
+      "result_id": "6cf1d8e8-170b-42c7-9979-9f10668112d4"
+    },
+    {
+      "claim_id": "d6366d89-96cf-4fc3-8c15-b2c056138c69",
+      "result_id": "6cf1d8e8-170b-42c7-9979-9f10668112d4"
+    },
+    {
+      "claim_id": "cb34d26f-2cbf-4f7e-a59a-1a07036ab5b8",
+      "result_id": "6cf1d8e8-170b-42c7-9979-9f10668112d4"
+    },
+    {
+      "claim_id": "e406070a-19f4-47d6-b984-da37f7b8fbe3",
+      "result_id": "6cf1d8e8-170b-42c7-9979-9f10668112d4"
+    },
+    {
+      "claim_id": "b7791234-c30b-48d0-9d2e-07029ca603c6",
+      "result_id": "6cf1d8e8-170b-42c7-9979-9f10668112d4"
+    },
+    {
+      "claim_id": "8ea809f9-8d06-41ac-907b-52b552cc76f3",
+      "result_id": "782f0c45-7ce4-4127-ad2f-20c2d91855fa"
+    },
+    {
+      "claim_id": "344c963c-b11e-44e8-a69b-dcfbc67f10c0",
+      "result_id": "782f0c45-7ce4-4127-ad2f-20c2d91855fa"
+    },
+    {
+      "claim_id": "8885389e-5e0e-4d97-84f4-97208011573b",
+      "result_id": "e4715b29-da6d-43b0-9c44-10408a072d52"
+    },
+    {
+      "claim_id": "f999c24d-ba25-4590-a3ad-85d91ef5b564",
+      "result_id": "c73fd064-f065-4b83-ab99-294e34ef0f9f"
+    },
+    {
+      "claim_id": "45d6e005-0208-43e2-b720-c89e12cba198",
+      "result_id": "c73fd064-f065-4b83-ab99-294e34ef0f9f"
+    },
+    {
+      "claim_id": "b49b89ce-b2e5-4dc6-accd-4309c6b5ec94",
+      "result_id": "c73fd064-f065-4b83-ab99-294e34ef0f9f"
+    },
+    {
+      "claim_id": "465947cb-dbfc-4534-b7e8-7734c9d092e3",
+      "result_id": "c9240aed-2950-4b13-a35f-41f4c173a98f"
+    },
+    {
+      "claim_id": "b6c90d7d-0bdf-487b-a36f-d46f370c1f9a",
+      "result_id": "c9240aed-2950-4b13-a35f-41f4c173a98f"
+    },
+    {
+      "claim_id": "81744342-645f-4fad-8437-8bc1e1c86ff4",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "7b9517a2-d11f-4de9-8336-6106f1d47949",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "c033c94c-46c6-481e-b3d4-e9708a9876cb",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "f237813c-c4fa-4dce-8924-0b51908a514a",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "a979a8ad-0eed-40b8-b59a-e23e6d6f8d14",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "5bd8c668-54da-4ef9-9951-c7434bbf8b19",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "66f77c22-09fc-4943-9fba-7197e4971d2b",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "4a9fd9ef-308d-48e4-a4f6-8c075db6e94a",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "eede8d42-f635-4d93-a506-99f6ce549051",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "1d9486dd-8a40-4e70-9bba-74aa833ed9f5",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "1dd9e4e8-abec-4867-8db7-425eedbb636f",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "f679cd81-f830-4a9b-9b91-afea412bf867",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "deab399a-e3a2-4ce5-b9bd-c6d6bdb17835",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "5d13b15f-7d7b-4c1f-b9ec-79a128a66f19",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "38a19bbc-dab0-4b82-ade2-ccb854405269",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "3740d6fa-e6f8-49fb-9f51-98d5a92b1b40",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "94eedbab-d110-49ef-a795-74f0b31b0917",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "aa9917c7-2031-4362-8502-b73e9325056f",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "43b37b03-50ab-4162-b44b-9778b3267b0c",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "07571d89-0b6c-40c9-b1e4-5520592159aa",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "c4e00448-e40a-44f8-b137-bf16b716aa2f",
+      "result_id": "324081b3-7a68-42a4-9b6f-2c2c0d8865bf"
+    },
+    {
+      "claim_id": "8335dde0-c327-4f5d-acd2-ffb67eab86bd",
+      "result_id": "4348e17d-8cee-4466-9e21-dc890f7d473b"
+    },
+    {
+      "claim_id": "d4924b96-e5e2-4063-9bdf-f801b15c194b",
+      "result_id": "4348e17d-8cee-4466-9e21-dc890f7d473b"
+    },
+    {
+      "claim_id": "6d2ca4f0-25aa-4fe3-85c5-1673bd94a002",
+      "result_id": "4348e17d-8cee-4466-9e21-dc890f7d473b"
+    },
+    {
+      "claim_id": "aa81aa8a-5b08-4103-9ffd-bf30249abd10",
+      "result_id": "4348e17d-8cee-4466-9e21-dc890f7d473b"
+    },
+    {
+      "claim_id": "5859f344-c9c1-46c6-b43c-5f084895fe9e",
+      "result_id": "4348e17d-8cee-4466-9e21-dc890f7d473b"
+    },
+    {
+      "claim_id": "3c48a520-042f-4d9a-8ecb-efe3e4908d76",
+      "result_id": "4348e17d-8cee-4466-9e21-dc890f7d473b"
+    },
+    {
+      "claim_id": "47a3e2d5-d9dd-4c28-9114-caf4a256c033",
+      "result_id": "4348e17d-8cee-4466-9e21-dc890f7d473b"
+    },
+    {
+      "claim_id": "851619c0-ea79-4e04-a733-26b0f2855cf8",
+      "result_id": "4348e17d-8cee-4466-9e21-dc890f7d473b"
+    },
+    {
+      "claim_id": "b06f6b70-55bc-4dd4-9b3d-d70172ae8c6a",
+      "result_id": "3f54d1de-e04c-448f-ab74-64e97ff6db0a"
+    }
+  ],
+  "comparisons": []
+}

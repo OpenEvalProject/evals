@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors developed a pipeline to identify lncRNAs with neuronal function during MEF-to-iN cell reprogramming. They found that 58% of changed transcripts were non-coding (with two-thirds being novel lncRNAs), identified 287 significantly changed lncRNAs, and nominated 35 candidates with strong neuronal association based on expression patterns, chromatin association, and co-expression with neuronal genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 collectively describe a systematic pipeline with clear statistical thresholds (RPKM >1, fold change >2, p<0.05) and multiple validation approaches including histone H3 RIP-seq, developmental expression patterns, and GO term enrichment. The pipeline is well-documented with specific filtering criteria and qRT-PCR validation of candidates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors overlapped 28 human syntenic lncRNA loci with a CNV morbidity map from 29,085 ASD/ID patients and 19,584 controls, identifying seven focal CNVs affecting five lncRNA loci. Five of seven CNVs were validated by custom CGH array.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 describe a systematic approach to identify disease-associated lncRNAs using established CNV databases and validation by CGH. The large patient cohort (n=29,085 patients, n=19,584 controls) and experimental validation of 5/7 CNVs provide strong support for the genetic associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The lncRNA locus NR_033883 (lnc-ZFP238) is disrupted by focal CNVs in two distinct ASD/ID patients and is located proximal to ZFP238, a key target of Ascl1 during neuronal reprogramming with known roles in neuronal differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 identify a specific lncRNA candidate with genetic disruptions in patients and establish biological plausibility through its proximity to a functionally relevant coding gene. The evidence includes CGH validation and citations to published studies on ZFP238 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The locus harboring human FLJ42709 (lnc-NR2F1) is focally deleted in patients and is adjacent to NR2F1, a transcription factor involved in neurogenesis. RNA-seq analysis shows the lncRNA is transcribed divergently from NR2F1, and CGH analysis confirmed that patient 9900850 has a deletion disrupting only lnc-NR2F1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 establish that lnc-NR2F1 is genetically disrupted in patients and provide evidence that it is transcriptionally independent from the nearby coding gene NR2F1. The CGH validation showing disruption of only the lncRNA locus is particularly strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Patient CMS12200 harbors a paternally inherited balanced translocation t(5;12) that disrupts only lnc-NR2F1 (affecting long isoforms 1 and 2 but potentially sparing short isoform 3). The patient presents with developmental delay, speech delay, and other neurodevelopmental symptoms. FISH and whole genome sequencing precisely mapped the breakpoints, and no other deleterious mutations associated with autism or intellectual disability were found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 provide comprehensive genetic and clinical characterization of a key patient. The use of multiple orthogonal methods (karyotyping, FISH, whole genome sequencing, Sanger sequencing) to precisely map the breakpoint and rule out other pathogenic variants strongly supports the conclusion that lnc-NR2F1 disruption is the likely causal variant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Lnc-NR2F1 shows both syntenic and sequence conservation between human and mouse, with highly conserved exons and microhomology regions containing conserved sequence motifs across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 demonstrate evolutionary conservation of lnc-NR2F1, which is unusual for lncRNAs and suggests functional importance. The evidence includes sequence alignment data and motif analysis across multiple species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Mouse lnc-Nr2f1 is induced early during MEF-to-iN conversion, shows region-specific expression in developing brain (caudolateral cortex and ganglionic eminences at E13.5), and localizes to both nucleus and cytoplasm with enrichment in chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 characterize the spatiotemporal expression and subcellular localization of lnc-Nr2f1 using multiple complementary methods (qRT-PCR, in situ hybridization, RNA-FISH, cellular fractionation, histone H3 RIP). The convergent evidence from different techniques supports the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Co-expression of lnc-Nr2f1 with Ascl1 during MEF-to-iN reprogramming increased the proportion of TauEGFP+ cells with neurites by ~50% at day 7. RNA-seq revealed 343 significantly changed genes (311 up, 32 down), enriched for neuronal functions including neuron projection, axonogenesis, and plasma membrane-related terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 demonstrate a functional role for lnc-Nr2f1 in neuronal maturation using morphological quantification and transcriptional profiling. The statistical thresholds are clearly defined (RPKM >1, FDR p<0.001), and the predominance of upregulated genes suggests a role in transcriptional activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In mES-to-iN conversion with Ngn2, lnc-Nr2f1 overexpression significantly increased neurite length without changing neuron number, while Nr2f1 overexpression reduced neuron number. RNA-seq showed lnc-Nr2f1 induced genes involved in axon guidance and neuronal projection development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 demonstrate isoform-specific and gene-specific functional differences between lnc-Nr2f1 and Nr2f1, supporting independent functions. The morphological phenotypes are quantified and supported by transcriptional profiling with appropriate statistical thresholds (FDR p<0.10, fold change >1.5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Lnc-Nr2f1 knockout in mES-iN cells resulted in 348 differentially expressed genes that could be rescued by lnc-Nr2f1 overexpression. KO led to downregulation of neuronal genes (Sema6d, Neurod2, Bdnf, Dcx, Nlgn3) and upregulation of non-neuronal genes. The rescued genes significantly overlap with curated autism risk genes (p=0.0012).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 provide strong loss-of-function evidence with rescue experiments demonstrating specificity. The statistical significance of overlap with autism genes and the GO term enrichment patterns support a role in neuronal development. The rescue experiment is critical for ruling out off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Nr2f1 knockout did not affect lnc-Nr2f1 expression or neuronal morphology (neurite length/number) in mES-iN cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 demonstrate functional independence of lnc-Nr2f1 from Nr2f1 using CRISPR knockout. The lack of phenotype in Nr2f1 KO contrasts with the lnc-Nr2f1 KO phenotype, supporting distinct functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "ChIRP-seq in day 4 mES-iN identified 14,975 lnc-Nr2f1 binding peaks (1,092 high confidence), which associated with 1,534 genes enriched for neuronal GO terms. Binding sites co-localized with enhancers, H3K27ac, and H3K4me3 marks, and were enriched for bHLH transcription factor motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 map genome-wide lnc-Nr2f1 occupancy using ChIRP-seq with appropriate controls (RNase treatment, even/odd probe sets). The enrichment for active chromatin marks and neuronal transcription factor motifs supports a role in transcriptional regulation of neuronal genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "LncNr2f1 ChIRP-seq peaks showed low but significant direct overlap with Ngn2 (3.2%) and Ascl1 (13.2%) ChIP-seq peaks, but substantial gene-level overlap (37.9% with Ngn2, 67.3% with Ascl1). 177 genes were both bound by lnc-Nr2f1 and differentially expressed upon lnc-Nr2f1 overexpression (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 integrate ChIRP-seq with transcriptional profiling and compare with bHLH factor binding. The low peak overlap but high gene-level overlap suggests coordinate regulation at nearby but non-overlapping sites. The statistical significance of overlap between bound and regulated genes supports direct transcriptional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Human lnc-NR2F1 isoforms show differential functional activity: long isoform 2 promotes neuronal maturation (similar to mouse), isoform 1 inhibits maturation, and short isoform 3 has no effect. ChIRP-seq revealed ~10-fold more genomic occupancy for long vs. short isoforms (4,404 vs. 415 peaks), with limited peak overlap between isoforms. Isoform 3 regulated the fewest genes (9 total) compared to isoforms 1 (1,561) and 2 (186).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 demonstrate isoform-specific functions using both morphological assays and genome-wide occupancy mapping. The differential ChIRP-seq peak numbers and limited overlap support domain-specific chromatin binding. The correlation between genomic occupancy and transcriptional effects strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "High-confidence ChIRP peaks for the long isoform-specific domain (913 peaks) were enriched in exonic, intronic, enhancer, and promoter regions, and associated with 1,361 genes enriched for neuronal GO terms. These genes significantly overlapped with mouse lnc-Nr2f1 targets (207 genes, p<0.0001) and autism risk genes (114 genes, p<0.0001). Peaks were enriched for bHLH motifs (Ascl1, NeuroD1, Olig2, Atoh1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 characterize the long isoform-specific chromatin binding in human cells, showing conservation with mouse and disease relevance. The statistical significance of overlaps with mouse targets and autism genes, combined with enrichment for neuronal transcription factor motifs, supports functional conservation and disease relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Previous case reports describe chromosomal aberrations encompassing the lnc-NR2F1 locus in patients with neurodevelopmental deficits. The minimal deleted region across patients is ~230 kb, encompassing NR2F1 and lnc-NR2F1. Common phenotypes include developmental delay, facial dysmorphism, hearing loss, hypotonia, and ophthalmological abnormalities, though phenotypic heterogeneity exists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 synthesize published case reports to establish a minimal deleted region and common phenotypes. However, C88 is speculative about causes of phenotypic heterogeneity. The synthesis of prior literature is accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors propose that haploinsufficiency of lnc-NR2F1 may be the primary cause of the syndrome in patient CMS12200 and related cases, given it is the only disrupted gene. The phenotype may be transmitted in a Mendelian manner (father has same translocation with milder symptoms), though additional factors may influence severity. The authors acknowledge that larger sample sizes are needed for conclusive evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C92 are largely speculative (C89, C92) or acknowledge limitations (C90). While C91 presents data on inheritance, the inference of Mendelian transmission is tentative. The authors appropriately acknowledge the need for additional cases, making this hypothesis-generating rather than conclusive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Multiple lines of evidence demonstrate that lnc-NR2F1 acts in trans independently of Nr2f1: gain/loss-of-function studies show chromatin localization and gene regulation, the KO phenotype can be rescued by lnc-Nr2f1 overexpression, lnc-Nr2f1 overexpression doesn't affect Nr2f1 expression, and ChIRP-seq shows no binding at the Nr2f1 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 synthesize multiple experimental approaches to demonstrate functional independence from the nearby coding gene. The convergent evidence from rescue experiments, expression analysis, and ChIRP-seq strongly supports trans-acting function independent of Nr2f1 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "A t(5:12) chromosomal translocation in a family with neurodevelopmental symptoms specifically disrupts lnc-NR2F1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 summarizes the key genetic finding that is supported by detailed characterization in claims C24-C33. The precision mapping by multiple methods and exclusion of other pathogenic variants support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Lnc-NR2F1 is evolutionarily conserved, functionally enhances neuronal maturation, and directly occupies and regulates neuronal genes including autism-associated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 summarize the major functional findings that are supported by conservation analysis (C34-C35), functional assays (C41-C47), ChIRP-seq (C57-C78), and overlap with autism genes (C54, C77). These represent the core conclusions of the functional characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors provide background context on iN cell reprogramming as a model system, the non-coding genome as a source of disease variation, the gap in understanding genetic causes of ASD/ID, and the emerging role of lncRNAs in biology and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C106 represent background knowledge and literature review that establish the rationale for the study. These are supported by appropriate citations to published work and represent accurate characterizations of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Integrating human genetics and functional testing in neuronal lineage induction is a promising approach for discovering candidate lncRNAs involved in neurodevelopmental diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 represents a methodological conclusion supported by the successful identification and characterization of lnc-NR2F1 using this integrated approach. The study demonstrates proof-of-principle for this strategy.",
+    "result_type": "MAJOR"
+  }
+]

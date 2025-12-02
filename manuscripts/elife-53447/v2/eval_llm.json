@@ -1,0 +1,469 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C34"
+    ],
+    "result": "The manuscript establishes background knowledge about TOP2 function and ETO mechanism. TOP2 is an evolutionarily conserved enzyme that generates reversible DSBs to resolve topological stress during transcription, replication, and mitosis. TOP2ccs are normally rapidly reversible but can be stabilized by TOP2 poisons like ETO, which stabilizes both TOP2A and TOP2B isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C14, and C34 represent well-established background knowledge about TOP2 function and ETO mechanism, supported by citations to prior work and general knowledge in the field. These claims provide necessary context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript reviews prior understanding of TOP2cc removal mechanisms. Cells are thought to remove TOP2ccs primarily through proteasomal degradation followed by TDP2-mediated hydrolysis and DSB repair. A robust DDR is elicited only after TOP2ccs are converted to protein-free DSB ends, suggesting that protein-shielded DSBs can evade detection. Alternative mechanisms include TDP2-mediated proteasome-independent resolution and MRE11-mediated endonucleolytic cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17-C23 summarize prior understanding of TOP2cc processing mechanisms, all supported by citations to published work. These claims establish the conceptual framework that the current study challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C33"
+    ],
+    "result": "Prior work has shown that trapped TOP2ccs are intrinsically reversible upon ETO washout, and that proteasome inhibition can enhance the number of rapidly reversible TOP2ccs and suppress DDR signaling in response to ETO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 and C33 cite prior work demonstrating TOP2cc reversibility and the effects of proteasome inhibition on DDR signaling. These observations form the foundation for the current study's investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Proteasome inhibitor pre-treatment specifically suppresses the ETO-induced \u03b3-H2AX response in primary B-cells. Treatment with 50 \u00b5M ETO for 2 hr elicited a strong \u03b3-H2AX response, which was almost completely abolished by pre-incubation with various proteasome inhibitors (MG132, BTZ, EPN, or IXA). This suppression was specific to ETO, as proteasome inhibitors did not affect the \u03b3-H2AX response to ionizing radiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are well-supported by western blot and immunofluorescence data (Figure 1B, 1C) showing specific suppression of ETO-induced \u03b3-H2AX by proteasome inhibitors but not IR-induced \u03b3-H2AX. The specificity control strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Proteasome inhibition promotes accumulation of reversible TOP2ccs. ICE assay data show that TOP2ccs are readily detected on DNA in the presence of ETO and diminish rapidly after washout. Pre-treatment with BTZ markedly enhanced TOP2cc accumulation, and these TOP2ccs also dissociated rapidly after washout, suggesting that proteasome inhibition preserves TOP2cc integrity and enables reversal upon drug removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by ICE assay data (Figure 1D) showing enhanced TOP2cc accumulation with BTZ pre-treatment and rapid dissociation after washout. The inference about preserved TOP2cc integrity is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Proteasome activity remains suppressed for several hours after inhibitor washout. YFP-degron reporter assays and p53 stabilization experiments demonstrate that proteasome inhibition persists for hours after drug removal, with BTZ being more potent than MG132. This persistent inhibition explains why TOP2ccs reverse rapidly after washout rather than being degraded, and prevents delayed DDR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 are supported by FACS data (Figure 1E) and western blot data (Figure 1F, 1G) demonstrating persistent proteasome inhibition after washout. The inference that this explains TOP2cc reversal is logical and well-supported by the absence of delayed \u03b3-H2AX induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The timing of proteasome inhibitor treatment relative to ETO is critical. While prior studies showed that proteasome inhibitors synergize with ETO to mediate cell killing, the current study demonstrates that BTZ pre-treatment or co-treatment suppresses DDR signaling, whereas post-treatment does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by western blot data (Figure 1G) showing differential effects of pre-, co-, and post-treatment with BTZ. This reconciles the apparent contradiction with prior literature and is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "END-seq analysis reveals that proteasome inhibition does not prevent TOP2 from cleaving DNA but maintains DSBs in a protein-linked form. END-seq detects only DSBs (not SSBs) and can distinguish TOP2ccs from protein-free DSBs. BTZ pre-treatment did not dramatically affect the number or location of TOP2-mediated DSBs, but these DSBs elicited only a weak \u03b3-H2AX response, indicating they remain protein-linked and concealed from DDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by END-seq data (Figure 2A-C, Figure 2\u2014figure supplement 1) showing similar numbers of TOP2-mediated DSBs with and without BTZ, but reduced \u03b3-H2AX response. The methodology is well-established by prior citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Proteasome inhibition dramatically accelerates resolution of TOP2-mediated DSBs after ETO washout. BTZ pre-treatment substantially reduced the persistence of TOP2-mediated DSBs, with only 4% remaining at 2 hr post-washout compared to 17% in ETO-only treated cells. Immediately after washout, only 15% of initial DSBs remained in BTZ pre-treated cells versus 30% in ETO-only cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are strongly supported by END-seq data (Figure 2A, 2D, 2E) showing faster resolution and reduced persistence of TOP2-mediated DSBs with BTZ pre-treatment. The quantitative measurements are reproducible across replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Proteasome inhibition increases the fraction of reversible TOP2ccs. Using differential END-seq processing (ExoT alone vs. ExoVII+ExoT), the study quantified that 76% of TOP2-mediated DSBs reversed immediately after washout in ETO-only cells, while 90% reversed in BTZ pre-treated cells, demonstrating that proteasome suppression enhances TOP2cc self-reversal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by END-seq data (Figure 2F) using a validated methodology to distinguish protein-linked from protein-free DSBs. The quantitative increase in reversible TOP2ccs with BTZ is clear and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The timing of proteasome inhibition determines its impact on TOP2-mediated DSB resolution. Both BTZ pre-treatment and co-treatment significantly reduced the number and persistence of TOP2-mediated DSBs after 2 hr washout, while post-treatment slightly increased both parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by END-seq data (Figure 2G, 2H) showing differential effects based on timing of proteasome inhibitor administration. This confirms the importance of timing observed in the \u03b3-H2AX experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Proteasome inhibition suppresses DNA end-resection at TOP2-mediated DSBs. END-seq revealed clear 5' to 3' end-resection at TOP2-mediated DSBs after ETO treatment, which increased over time. BTZ pre-treatment dramatically reduced both the number of resected breaks (2.5-fold decrease) and the extent of resection. Resected breaks were more persistent than non-resected breaks, suggesting that longer-persisting DSBs are more likely to undergo error-prone repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 are supported by END-seq data (Figure 3A-D) showing resection signals and their quantification. The correlation between resection and persistence is well-documented. The inference about error-prone repair is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Proteasome inhibitor pre-treatment completely protects cells from ETO-induced chromosomal aberrations. A short pulse of ETO induced ~14 aberrations per cell in WT B-cells, primarily dicentric fusions and chromosome breaks. Pre-treatment with MG132 or BTZ reduced aberrations to less than one per cell, while post-treatment had no protective effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are strongly supported by metaphase spread analysis (Figure 4A, 4B) showing dramatic reduction in chromosomal aberrations with pre-treatment but not post-treatment. This is a key finding demonstrating the functional consequence of proteasome inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "ETO induces complex chromosomal fusions resembling chromothripsis, which are completely prevented by proteasome inhibitor pre-treatment. SKY analysis revealed that ETO-induced fusions were extensive and complex, involving fragments from three or more chromosomes. MG132 pre-treatment completely protected cells from all types of chromosomal fusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by SKY analysis data (Figure 4C, 4D) showing complex multi-chromosome fusions with ETO alone and complete protection with MG132 pre-treatment. The chromothripsis-like pattern is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Proteasome inhibitor pre-treatment preserves cellular proliferative capacity and viability after ETO treatment. Pre-treatment with MG132 mitigated ETO-induced cell cycle arrest (measured by EdU incorporation) and significantly reduced cytotoxicity, while post-treatment had no protective effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by EdU incorporation data (Figure 4E) and CellTiter-Glo viability assays (Figure 4F). The functional consequences of preventing genome instability are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Proteasome inhibition, but not loss of ATM or H2AX, protects against ETO-induced genome instability. ATM-/- and H2AX-/- mutants accumulated somewhat higher levels of chromosomal aberrations than WT after ETO treatment, but proteasome inhibitor pre-treatment almost completely abolished damage in all genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by metaphase spread analysis in ATM-/- and H2AX-/- cells (Figure 5A). This demonstrates that proteasome inhibition acts independently of canonical DDR signaling pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Multiple DNA repair pathways contribute to error-prone repair of ETO-induced DSBs. Loss of Lig4, BRCA1, BRCA2, or Pol\u03b8 failed to mitigate ETO-induced chromosomal aberrations, but MG132 pre-treatment protected cells in all genetic backgrounds. This indicates that neither classical NHEJ, HR, nor alternative end-joining is strictly required for generating aberrations, and that multiple repair mechanisms contribute to mis-repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 are supported by metaphase spread analysis in multiple repair-deficient backgrounds (Figure 5B, 5C, Figure 5\u2014figure supplement 1). The lack of clear dependency on any single pathway is well-documented, though the inference about multiple pathways is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Proteasome inhibition also protects against TOP1 poison-induced genome instability. MG132 pre-treatment largely suppressed chromosomal aberrations induced by camptothecin (CPT), a TOP1 poison, similar to its effects with ETO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by metaphase spread analysis with CPT treatment (Figure 5D) and citations to prior work. This extends the findings beyond TOP2 to TOP1, suggesting a general mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "RNF4 facilitates proteasomal degradation of TOP2ccs and is epistatic with the proteasome. ETO produced a weakened \u03b3-H2AX response in RNF4-/- MEFs compared to WT. BTZ pre-treatment suppressed the ETO-induced \u03b3-H2AX response in WT but not in RNF4-/- cells, suggesting RNF4 acts upstream of proteasomal degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 are supported by western blot data in RNF4-/- cells (Figure 6A) and citations to prior work. The epistasis analysis is well-designed and supports the proposed pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "RNF4 is critical for proteasome-mediated processing of TOP2ccs into protein-free DSBs. END-seq analysis showed a 6-fold reduction in protein-free DSBs in RNF4-/- B-cells compared to WT, while total TOP2-mediated DNA cleavage was similar between genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are strongly supported by END-seq data in RNF4-/- cells (Figure 6B) showing selective reduction in protein-free DSBs but not total TOP2-mediated cleavage. This directly demonstrates RNF4's role in TOP2cc processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Loss of RNF4 reduces ETO cytotoxicity and genotoxicity. RNF4-/- cells were significantly more viable and retained higher colony formation capacity after ETO treatment compared to WT. RNF4-/- B-cells accumulated 60% fewer chromosomal aberrations after ETO treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by viability assays (Figure 6C), colony formation assays (Figure 6D), and metaphase spread analysis (Figure 6E) in RNF4-/- cells. The functional consequences of RNF4 loss are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "RNF4 is not the only mechanism for proteasome recruitment to TOP2ccs. Pre-treating RNF4-/- B-cells with BTZ further reduced chromosomal aberrations, suggesting additional ubiquitin ligases are functionally redundant to RNF4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are supported by metaphase spread analysis showing BTZ can further reduce aberrations in RNF4-/- cells (Figure 6E). The inference about additional ligases is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The central finding: Proteasome-mediated repair of TOP2cc is highly error-prone, while preventing proteasomal degradation allows error-free TOP2cc reversal. Pre-treating B-cells with proteasome inhibitors prevented TOP2cc processing, suppressed DDR, completely protected cells from genome instability, and preserved viability. When degradation was suppressed, TOP2 uncoupled itself from DNA in an error-free manner. In contrast, once TOP2ccs were proteolytically processed, the resulting protein-free DSBs were repaired in a highly error-prone manner by multiple DSB repair pathways (NHEJ and HR), resulting in toxic chromosomal aberrations and cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10, C28-C32 represent the main conclusions of the study, supported by multiple complementary datasets including ICE assays, END-seq, metaphase spreads, SKY analysis, and viability assays. The evidence is comprehensive and internally consistent across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Summary model of TOP2cc processing pathways. The study proposes that once ETO-stabilized TOP2ccs are proteolytically processed, the resulting protein-free DSBs engage multiple repair pathways, but many remain unrepaired or mis-repaired, destabilizing the genome. By preventing proteasome-mediated unmasking, error-prone repair is not engaged, facilitating TOP2cc reversal through completion of the catalytic cycle and preserving genome integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are summary statements integrating all the experimental findings. They are well-supported by the comprehensive dataset including END-seq, metaphase spreads, and viability assays presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C27",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Clinical implications: timing of proteasome inhibitor administration matters. While prior studies showed proteasome inhibitors potentiate TOP2 poison cytotoxicity, this study demonstrates that timing is critical. Pre-treatment or co-treatment improves genome stability, while post-treatment does not, presumably because proteasomal degradation is extremely fast. The study suggests caution is needed when scheduling therapeutic regimens combining these drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C122-C126 are supported by the timing experiments (Figures 1G, 2G-H, 4B) and citations to prior clinical literature. The clinical recommendation is appropriately cautious given the data, though C125 includes speculation about mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "TOP2-mediated DSBs undergo extensive end-resection, which is suppressed by proteasome inhibition. The study suggests MRE11 may not recognize unprocessed TOP2, though this remains speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C128 are supported by END-seq data (Figure 3), but C129 is explicitly speculative. The mechanism by which protein-linked DSBs evade MRE11 recognition is not directly tested and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "Methodological insight: \u03b3-H2AX is only a reliable marker for proteolytically degraded TOP2ccs, while END-seq can distinguish intact TOP2ccs, partially proteolyzed TOP2ccs, and fully processed protein-free DSBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 are supported by the differential detection of TOP2-mediated DSBs by END-seq versus \u03b3-H2AX throughout the study. This is an important methodological insight for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "RNF4 plays a critical role in recruiting the proteasome to degrade TOP2ccs, and its loss affords significant protection from ETO genotoxicity. However, RNF4 deletion is not as effective as chemical proteasome inhibition, indicating likely existence of additional functionally redundant ubiquitin ligases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 are supported by data in RNF4-/- cells (Figure 6). C135 is speculative but reasonable given the incomplete protection in RNF4-/- cells compared to chemical inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "Speculative clinical implications: RNF4 could potentially be used as a biomarker to predict effectiveness of topoisomerase poison-based chemotherapy, and its de-regulation may represent a mechanism for tumor resistance by favoring TOP2cc reversal over degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C137 are explicitly speculative and not directly tested in the manuscript. While the data support RNF4's role in TOP2cc processing, the clinical applications require further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C35"
+    ],
+    "result": "Background on cellular consequences of TOP2cc accumulation and experimental design. TOP2 DNA-protein complexes stall replication and transcription, generating stress and DNA breaks. Short-term cytokine treatment ensures B-cells remain in G1 where only TOP2B is expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by citations to prior work. C35 is supported by citation and describes the experimental design to isolate TOP2B effects.",
+    "result_type": "MINOR"
+  }
+]

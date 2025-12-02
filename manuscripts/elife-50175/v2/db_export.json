@@ -1,0 +1,2172 @@
+{
+  "submission": {
+    "id": "a740b7aa-1c21-4bc6-ae93-7613163b7b60",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:13:41.389668Z",
+    "updated_at": "2025-12-02T12:13:41.389668Z"
+  },
+  "content": [
+    {
+      "id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "submission_id": "a740b7aa-1c21-4bc6-ae93-7613163b7b60",
+      "content_type": "manuscript",
+      "content_text": "# Ligand recognition and gating mechanism through three ligand-binding sites of human TRPM2 channel\n\n## Authors\n\n- Yihe Huang<sup>1</sup>\n- Becca Roth<sup>1</sup>\n- Wei L\u00fc<sup>1</sup> ([ORCID: 0000-0002-3009-1025](https://orcid.org/0000-0002-3009-1025)) \u2020\n- Juan Du<sup>1</sup> ([ORCID: 0000-0003-1467-1203](https://orcid.org/0000-0003-1467-1203)) \u2020\n\n### Affiliations\n\n1. Van Andel Institute Grand Rapids United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTRPM2 is critically involved in diverse physiological processes including core temperature sensing, apoptosis, and immune response. TRPM2\u2019s activation by Ca2+ and ADP ribose (ADPR), an NAD+-metabolite produced under oxidative stress and neurodegenerative conditions, suggests a role in neurological disorders. We provide a central concept between triple-site ligand binding and the channel gating of human TRPM2. We show consecutive structural rearrangements and channel activation of TRPM2 induced by binding of ADPR in two indispensable locations, and the binding of Ca2+ in the transmembrane domain. The 8-Br-cADPR\u2014an antagonist of cADPR\u2014binds only to the MHR1/2 domain and inhibits TRPM2 by stabilizing the channel in an apo-like conformation. We conclude that MHR1/2 acts as a orthostatic ligand-binding site for TRPM2. The NUDT9-H domain binds to a second ADPR to assist channel activation in vertebrates, but not necessary in invertebrates. Our work provides insights into the gating mechanism of human TRPM2 and its pharmacology.\n\n## Introduction\n\nADP ribose (ADPR) and its derivatives, which are products of NAD+ metabolism, play essential roles in neurotoxicity and cellular signaling under many physiological and pathological conditions (Ernst et al., 2013; Gasser et al., 2006; Guse, 2015; Kolisek et al., 2005; Nikiforov et al., 2015). In neurodegenerative diseases, the progressive accumulation of poly-ADPR and free ADPR results from poly(adenosine 5\u2019-diphosphate-ribose) polymerase-1 activation, and contributes to neurotoxicity and neuronal death (Kam et al., 2018). Intracellular ADPR targets and activates the nonselective, calcium-permeable TRPM2 channel in the presence of Ca2+. ADPR acts on one hand as a secondary messenger that contributes to insulin secretion, redox, and temperature sensation, but on the other hand, its accumulation results in intracellular calcium overload and eventually apoptosis (Hara et al., 2002; Hecquet et al., 2014; Song et al., 2016; Tan and McNaughton, 2016; Togashi et al., 2006; Uchida et al., 2011; Wehage et al., 2002). TRPM2 is thus considered to be a key contributor in brain injury via a glutamate-independent pathway in neurodegenerative conditions or after stroke, and it has important functions in obesity, diabetes, bipolar disorder, and Alzheimer\u2019s disease (Aminzadeh et al., 2018; Jang et al., 2015; Sita et al., 2018; Uchida and Tominaga, 2014; Zhang et al., 2012).\n\nBelonging to the transient receptor potential melastatin family (TRPM), TRPM2 shares a characteristic MHR1-4 domain, a transmembrane domain (TMD), and a coiled-coil domain with the other family members. It is unique due to owning a characteristic C-terminal NUDT9-H domain, which has been considered a classic binding site for ADPR and its derivatives (Fliegert et al., 2017; Perraud et al., 2001), but the presence of the ADPR binding site has not been directly observed. Recently, our group defined a novel ADPR binding site in the MHR1/2 domain that is essential for the activation of the zebrafish TRPM2 (drTRPM2) channel (Huang et al., 2018). It remains unclear whether the MHR1/2 domain is a universal binding site across all species; whether the NUDT9-H domain has a second ADPR binding site; and what the functional role of the NUDT9-H domain is. Beyond the agonist ADPR, TRPM2 also responds to a variety of ADPR orthologues including the agonist cyclic ADPR (cADPR) (Kolisek et al., 2005; Yu et al., 2019), which is produced during acute kidney injury (Kolisek et al., 2005; Togashi et al., 2006), and the antagonist 8-bromo-cyclic ADP-ribose (8-Br-cADPR), which decreases ischemia-reperfusion injury when used in treatment (Eraslan et al., 2019). Interestingly, 8-Br-cADPR is an antagonist for cADPR but does not inhibit ADPR-evoked currents (Kolisek et al., 2005). Despite extensive studies (Baszczy\u0148ski et al., 2019; Eraslan et al., 2019; Fliegert et al., 2018; Fourgeaud et al., 2019; Kolisek et al., 2005; K\u00fchn et al., 2019; Moreau et al., 2013; T\u00f3th and Csan\u00e1dy, 2010), there is limited knowledge about the TRPM2 drug binding sites and how drugs manipulate channel function.\n\nHuman TRPM2 (hsTRPM2) has several functional properties different from those of drTRPM2 and invertebrate TRPM2, including temperature sensitivity and desensitization rate (Nam Tran et al., 2018; Iordanov et al., 2019). A recent publication suggested that hsTRPM2 does not bind ADPR in the MHR1/2 domain and that its activation is rather driven by ADPR binding in the NUDT9-H domain (Wang et al., 2018). However, this suggestion was based on a cryo-electron microscopy (cryo-EM) structure of hsTRPM2 in the presence of ADPR and Ca2+ at 6.4 \u00c5, a resolution that cannot clarify whether ADPR is present in either the MHR1/2 or the NUDT9-H domain. Moreover, the assignment of the functional states of the structures in this paper is not clear because there is a lack of side-chain densities in the ADPR/Ca2+-bound structure and because the transmembrane domain (TMD) in the apo structure is barely visible.\n\nTo understand the mechanism underlying agonist and antagonist recognition, and gating mechanism of human TRPM2, we used single-particle cryo-EM to determine four full-length hsTRPM2 structures: in the apo state in the presence of EDTA (EDTA-hsTRPM2); in a non-activated state in complex with the agonist ADPR (ADPR-hsTRPM2); in a pre-open or an inactive state in the presence of ADPR/Ca2+ (ADPR/Ca2+-hsTRPM2); and in an inhibited state with the cADPR antagonist 8-Br-cADPR in the presence of Ca2+ (8-Br-cADPR/Ca2+-hsTRPM2), at 3.3, 4.4, 3.7, and 3.7 \u00c5, respectively (Figure 1\u2014figure supplements 1 and 2).\n\n## Results\n\n### Structure determination of hsTRPM2\n\nIn our four hsTRPM2 structures, the densities for nearly the entire intracellular domain are well-defined, including the NUDT9-H domain and the \u03b21-\u03b22 loop of the MHR1 domain (Figure 1a\u2013d, Figure 1\u2014figure supplement 3), which were poorly defined or unresolved in the drTRPM2 structures (Huang et al., 2018). In both ADPR-bound structures, ADPR densities were observed in two different sites on each subunit, one (ADPR1) in the cleft of the MHR1/2 domain and a second (ADPR2) in the cleft of the NUDT9-H domain (Figure 1b,c,f,g; Figure 1\u2014figure supplement 4). In contrast, we found a ring-shaped 8-Br-cADPR density only in the cleft of the MHR1/2 domain of the 8-Br-cADRP/Ca2+-hsTRPM2 structure (Figure 1d,h; Figure 1\u2014figure supplement 4). In addition, Ca2+ density was visible in the ADPR/Ca2+- and 8-Br-cADPR/Ca2+-hsTRPM2 maps (Figure 1g,h), in the same location as in the hsTRPM4, Ficedula albicollis\u00a0TRPM8\u00a0(faTRPM8), drTRPM2, and Nematostella vectensis TRPM2 (nvTRPM2) structures (Autzen et al., 2018; Huang et al., 2018; Yin et al., 2019a; Zhang et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig1-v2.jpg)\n\n**Figure 1.:** The three-dimensional reconstructions of (a) EDTA-hsTRPM2, (b) ADPR-hsTRPM2, (c) ADPR/Ca2+-hsTRPM2, and (d) 8-Br-cADPR/Ca2+-hsTRPM2. The unsharpened reconstructions are shown as transparent envelopes. One subunit is highlighted. (e\u2013h) Atomic models of the corresponding reconstructions in panels a-d. The NUDT9-H domains are shown in solid surface, the MHR1/2 domains are shown in transparent surface, and the rest of the proteins are shown in cartoon representation. Ca2+, ADPR1, ADPR2, and 8-Br-cADPR are shown in purple, green, blue, and orange spheres, respectively. The center-of-mass (COM) of the MHR1/2 domain of one subunit in each structure is shown as a circle filled with white. The dimensions of the proteins and the difference between COMs along the pore axis are labeled.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Representative electron micrograph; 2D class averages; the gold-standard Fourier shell correlation (FSC) curves for the electron microscopy map; the FSC curves between the atomic model and the final electron microscopy map; and angular distribution of refined particles for EDTA-hsTRPM2 (a\u2013d), ADPR-hsTRPM2 (e\u2013h), ADPR/Ca2+-hsTRPM2 (i\u2013l), and 8-Br-cADPR/Ca2+-hsTRPM2 (m\u2013p).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a\u2013d) Local resolution estimation of EDTA-hsTRPM2 (a), ADPR-hsTRPM2 (b), ADPR/Ca2+-hsTRPM2 (c), and 8-Br-cADPR/Ca2+-hsTRPM2 (d). The map is color-coded according to local resolution estimation. The unsharpened reconstructions are shown as transparent envelopes. (e\u2013h) Representative densities of EDTA-hsTRPM2 (e), ADPR-hsTRPM2 (f), ADPR/Ca2+-hsTRPM2 (g), and 8-Br-cADPR/Ca2+-hsTRPM2 (h).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) The 2D chemical structures of ADPR and 8-Br-cADPR. (b) The densities for ADPR and 8-Br-cADPR in the full map, half map 1 and half map 2 of ADPR-hsTRPM2, ADPR/Ca2+-hsTRPM2 and 8-Br-cADPR/Ca2+-hsTRPM2.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** The atomic models of EDTA-hsTRPM2 (a), ADPR/Ca2+-hsTRPM2 (b), EDTA-drTRPM2 (c), ADPR/Ca2+-drTRPM2 (d), and Ca2+-nvTRPM2 (e). The NUDT9-H domains are shown as a solid surface; the MHR1/2 domains are shown as transparent surfaces; and the rest of the proteins are shown in cartoon representation. The Ca2+, ADPR1, ADPR2, and 8-Br-cADPR are shown in purple, green, blue, and orange spheres, respectively. The center-of-mass (COM) of the MHR1/2 domain of one subunit in each structure is shown as a circle filled with white. The dimensions of the proteins, as well as the difference between COMs along pore axis are labeled. The invisible NUDT9-H domains in Ca2+-nvTRPM2 (e) are shown in cartoon representation with a dashed outline.\n\nWhile the majority of the TMD is also well-defined in the four hsTRPM2 structures (Figure 1\u2014figure supplement 3e\u2013h), less well resolved are the extracellular half of the pore-lining helix S6, the pore helix/loop, and the extracellular loops, similar to those in the TRPM8 structures (Yin et al., 2019a; Yin et al., 2018). Nevertheless, we were able to trace the protein backbone in the S6 helix. We speculate that the poorly defined pore region is caused, at least partially, by \u03b2-mercaptoethanol, which is essential for stabilizing the protein during purification but may reduce the conserved disulfide bond formed by C996 and C1008 in the extracellular loops that is important for channel function (Jang et al., 2019; Mei et al., 2006; Mittal et al., 2017; Mittal et al., 2015). That bond is a key interaction that stabilizes the integrity of the pore region in the drTRPM2 structure (Huang et al., 2018).\n\n### Overall architecture and structural comparison\n\nThe hsTRPM2 structures share a four-layer arrangement with drTRPM2 (Huang et al., 2018; Yin et al., 2019b), having a TMD, MHR3/4, and a ligand-sensing layer that includes the MHR1/2 and NUDT9-H domains, from top to bottom. However, their overall shapes differ, primarily because the NUDT9-H domain is positioned differently. In the EDTA-hsTRPM2 structure (Figure 1e, Figure 1\u2014figure supplement 5a), the NUDT9-H domain is clamped between cognate and adjacent MHR1/2 domains, forming both intra- and intersubunit interfaces, while only the intrasubunit interface exists in the EDTA-drTRPM2 structure (Figure 1\u2014figure supplement 5c). As a consequence, the NUDT9-H domain forms a compact structure interacting with the adjacent MHR1/2 domain in hsTRPM2, whereas it hangs freely in the drTRPM2 on the bottom of the protein. Moreover, the NUDT9-H domain is completely invisible in the nvTRPM2 structure (Figure 1\u2014figure supplement 5e), despite high resolution of the rest of the protein (Zhang et al., 2018). Such an incrementally tighter coupling between the NUDT9-H domain and the rest of the protein, from invertebrate TRPM2 to human TRPM2, is in line with previous reports that the NUDT9-H domain plays an important role in channel gating of hsTRPM2 and drTRPM2, but does not affect the channel gating of nvTRPM2 (Fliegert et al., 2017; K\u00fchn and L\u00fcckhoff, 2004; Wehage et al., 2002; Yu et al., 2017).\n\nRelative to the apo state (Figure 1e), the binding of ADPR to hsTRPM2 yielded a markedly elevated MHR1/2 layer and a contracted NUDT9-H layer, with the NUDT9-H domain swinging toward the pore axis (Figure 1f\u2013g). ADPR molecules were identified, with ADPR1 in the MHR1/2 domain and ADPR2 in the NUDT9-H domain (Figure 2a,c\u2013f). Despite a long-existing consensus view that the NUDT9-H domain binds ADPR, this is the first time that the ADPR density has been visualized in this location (Figure 2d). In addition, the clearly defined ADPR1 in the MHR1/2 domain is consistent with the one observed in the drTRPM2 structure (Figure 1\u2014figure supplement 5b,d) (Huang et al., 2018). Given that key residues in the MHR1/2 site are conserved across species (Figure 2\u2014figure supplement 1) and that the invertebrate nvTRPM2 responds to ADPR independent of their NUDT9-H domains (K\u00fchn et al., 2016), our data strongly supports the concept that that the ligand-binding site in MHR1/2 is conserved throughout all species.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig2-v2.jpg)\n\n**Figure 2.:** The structures of the ADPR/Ca2+-hsTRPM2 (a) and 8-Br-cADPR/Ca2+-hsTRPM2 (b), with the locations of the ADPR1, ADPR2, and 8-Br-cADPR binding sites boxed. (c\u2013d) Shapes of the ADPR1 (c) and ADPR2 (d) binding sites (outlined by red dashes). ADPR1 and ADPR2 are shown as sticks. (e\u2013g) The ligand binding sites for ADPR1 (e), ADPR2 (f), and 8-Br-cADPR (g). The ligands, and key residues involved in ligand binding are shown as sticks. Superimposition of the human TRPM2 (protein in red and ADPR in green) with the zebrafish TRPM2 (white) shows that the ADPR1 sites are conserved in both organisms (e). Superimposition of the EDTA-hsTRPM2 with 8-Br-cADPR/Ca2+-hsTRPM2 shows that binding of 8-Br-cADPR barely induces conformational change of the ADPR1 binding site. The bromine atom is shown as transparent sphere.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The TRPM2 sequences are from Homo sapiens (hsTRPM2), Gallus gallus (ggTRPM2), Branchiostoma floridae (bfTRPM2), Danio rerio (drTRPM2), Nematostella vectensis (nvTRPM2), and Salpingoeca rosetta (srTRPM2). The secondary structure prediction for hsTRPM2 was made using the JPred online server (Drozdetskiy et al., 2015). The sequences were aligned using Clustal Omega (Sievers et al., 2011).\n\nIn contrast to ADPR binding, the binding of 8-Br-cADPR did not produce obvious changes in the overall shape of the protein relative to the apo state, in agreement with the view that a competitive antagonist inhibits the protein by stabilizing it in an apo-like state (Figure 1a,d,e,h; Figure 2b,g). Similar mechanism has been observed for human P2 \u00d7 3 receptor, in which the competitive antagonists TNP-ATP and A-317491 stabilize the apo/resting state (Mansoor et al., 2016). Surprisingly, in our 8-Br-cADPR/Ca2+-hsTRPM2 structure, the 8-Br-cADPR molecule is observed only in the cleft of MHR1/2 domain (Figure 2b), but not in the NUDT9-H domain as previously proposed (Eraslan et al., 2019; Kolisek et al., 2005). This observation further supports the idea that the MHR1/2 domain is a key ligand-binding site not only for the agonist ADPR but also for the antagonist 8-Br-cADPR of cADPR.\n\n### Ligand-binding sites\n\nThe presence of both ADPR and Ca2+ initiates a rapid opening of hsTRPM2, which permits the flow of cations through the ion-conducting pore (Csan\u00e1dy and T\u00f6rocsik, 2009; McHugh et al., 2003; Perraud et al., 2001; Starkus et al., 2007). Contrary to the consensus view that the NUDT9-H domain is the only binding site for ADPR and its derivatives, we found that the MHR1/2 domain binds both ADPR and 8-Br-cADPR, whereas NUDT9-H is only accessible to ADPR. Although both sites bind ADPR, the shapes of the two binding sites are distinct, which means that access is limited to ligands of a certain molecular geometry (Figure 2a,c,d).\n\nThe binding site in the bi-lobed MHR1/2 cleft is relatively deep, small, and circular. Therefore, ADPR1 is bent into a compact U shape to adapt to the MHR1/2 site (Figure 2c), similar to the finding in the drTRPM2 structure (Figure 2e) (Huang et al., 2018). ADPR1 is clamped between Y295 and the loop connecting the \u03b25 strand \u03b13 helix (\u03b25-\u03b13 loop), with the terminal adenine and terminal ribose moieties close to each other (Figure 2e). Two phosphate groups interact with R358 and the N-terminus of the \u03b17 helix, while the ribose moiety of the adenosine group coordinates with R302.\n\nIn contrast, the cleft in the NUDT9-H domain is wider, embraced by its cap and core regions on each side and the central \u03b2 sheet on the bottom, allowing ADPR2 to nestle in an extended shape with the terminal adenine and terminal ribose moieties far apart (Figure 2d). The adenine moiety of ADPR2 stacks between Y1485 and D1431, while the \u03b1-phosphate group interacts with R1433 (Figure 2f). The \u03b2-phosphate group and the terminal ribose group are less well defined, presumably due to lack of interaction with the protein. ADPR2 in such an extended shape has been observed in other high-resolution structures such as the human protein ADP-ribosylargenine hydrolase (Rack et al., 2018).\n\nThe 8-Br-cADPR shares a similar shape with the U-shaped ADPR1 by connecting the terminal adenine and terminal ribose moieties, but it differs from the extended shape of ADPR2, thus fitting only into the MHR1/2 site (Figure 2b). While the residues interacting with 8-Br-cADPR, including Y295 and residues in the \u03b25-\u03b13 loop, are mostly the same as those interacting with ADPR1, a small displacement of the side chain of Y295 was observed due to the extra bromine atom of 8-Br-cADPR (Figure 2g).\n\nTo ground of our interpretations of the dual ADPR binding sites in the ligand-sensing domain of TRPM2 in the context of physiological function, we generated mutants of key residues involved in ADPR binding on both sites and we conducted inside-out patch-clamp experiments. Based on several lines of evidence, we concluded that MHR1/2 represents an orthosteric binding site in TRPM2 across all species. First, several mutants of the key residues in the binding site in the MHR1/2 domain either markedly decreased or abolished channel activation in response to ADPR/Ca2+, which is caused by either altered affinity of ADPR to the MHR1/2 site, or altered allosteric transition from ligand binding to channel opening, or a combination of both (Figure 3a\u2013c). These results indicate that the MHR1/2 binding site is crucial for channel gating of hsTRPM2, which agrees with previous functional studies on hsTRPM2 and drTRPM2 (Huang et al., 2018; Kashio et al., 2012; Luo et al., 2018). Second, key residues responsible for ligand binding in the MHR1/2 site are highly conserved across species from invertebrates to mammals, whereas those in the NUDT9-H site are less conserved (Figure 3d, Figure 2\u2014figure supplement 1). Third, ADPR-evoked channel activation of invertebrate nvTRPM2 is independent of its NUDT9-H domain, because truncation of that domain does not affect channel function (Iordanov et al., 2019; K\u00fchn et al., 2016).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig3-v2.jpg)\n\n**Figure 3.:** (a) Statistics of current amplitudes and cell numbers of inside-out patches pulled from HEK293 cells transfected with wild-type hsTPRM2, alanine mutants of key residues in the ADPR1 and ADPR2 sites, and a NUDT9-H-truncated construct, \u2206NUDT9-H. Control experiments were carried out using non-transfected HEK293 cells. Mutants showing significantly smaller currents than the wild-type hsTRPM2 are labeled with asterisks (****: p<0.0001). Data represent the mean\u00a0\u00b1\u00a0s. e. m. and numbers on the top of each column indicated the number of patches that recorded. Values from individual experiments are shown as filled circles. (b) Representative current in an inside-out patch pulled from HEK293 cell transfected with wild-type hsTRPM2 cDNA. (c) Surface expression profiles of hsTRPM2 constructs used in (b), detected by in-gel GFP fluorescence. Most of the mutants showed expression comparable to that of the wild-type hsTRPM2; the \u2206NUDT9-H showed weaker but recognizable expression at lower molecular weight due to truncation of the NUDT9-H domain. (d) Sequence alignment of the ADPR1 and ADPR2 binding sites (hs\u00a0=\u00a0Homo sapiens; dr\u00a0=\u00a0Danio rerio; nv\u00a0=\u00a0Nematostella vectensis). Key residues for ligand binding are in bold.\n\nThe next question is whether the NUDT9-H site acts as an allosteric binding site or as a second orthosteric binding site. Our electrophysiology data (Figure 3a), as well as previous reports by other labs (Fliegert et al., 2017; Yu et al., 2017), showed that mutations of the key residues in the NUDT9-H site markedly affected the channel function of hsTRPM2, indicating that this binding site is indispensable for hsTRPM2 activation. We suggest that the binding of ADPR to the NUDT9-H site assists channel opening in hsTRPM2, which will be discussed in the next section.\n\n### Principles of agonist and antagonist actions in channel gating\n\nThe coexistence of three ligand-binding sites\u2014a Ca2+ binding site in the TMD and two ADPR binding sites in the ligand-sensing layer consisting of the MHR1/2 and NUDT9-H domains\u2014endows hsTRPM2 a complicated gating mechanism. The ADPR- and ADPR/Ca2+-hsTRPM2 structures differ only in the S1-S4 domain, suggesting that the conformational changes induced by Ca2+ binding is restricted in the TMD and Ca2+ binding facilitates the channel opening, which agrees with published structures of drTRPM2 and hsTRPM4 (Autzen et al., 2018; Huang et al., 2018). Therefore, the intracellular domain is solely manipulated by the ligands binding in the MHR1/2 and NUDT9-H sites.\n\nTo understand their relationship with channel gating, we first compared the ligand-sensing layer of the three ligand-bound hsTRPM2 structures with the apo state structure. Despite a different relative positioning between the NUDT9-H and the MHR1/2 domains, the hsTRPM2 showed a rearrangement of the ligand-sensing layer upon binding of ADPR similar to that of drTRPM2 (Figure 4\u2014figure supplement 1a\u2013c) (Huang et al., 2018). These conserved movements include a pendulum swing of the NUDT9-H domain toward pore axis, along with a contraction and clockwise rotation of the entire NUDT9-H layer, and an upward shift and an outward rotation of the MHR1/2 domain. By contrast, binding of 8-Br-cADPR did not result in an obvious conformational change of these two domains (Figure 4\u2014figure supplement 1a,d).\n\nTo explore the actions of agonists and antagonists, we compared the MHR1/2 domain and the NUDT9-H domain of hsTRPM2 in the absence or presence of ligands. ADPR binding into the cleft of MHR1/2 led to a clamshell closure similar to that observed in the drTRPM2 structures (Figure 4a, Figure 4\u2014figure supplement 1e\u2013f). Binding of ADPR into the cleft of the NUDT9-H induced a rigid-body rotation of the core region toward the cap region, resulting in a bi-lobed domain closure (Figure 4b, Figure 4\u2014figure supplement 1h\u2013i). This is the first time that such a motion upon ligand binding has been observed for the NUDT9-H domain, which is likely conserved in its analog \u2013 the mitochondrial ADP-ribose pyrophosphatase, NUDT9 (Shen et al., 2003).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig4-v2.jpg)\n\n**Figure 4.:** Comparison of (a) the MHR1/2 domains and (b) the NUDT9-H domains of EDTA-hsTRPM2 (blue) and ADPR/Ca2+-hsTRPM2 (red) by superimposition of the MHR1 domains or the cap regions. Domain closure was observed in the MHR1/2 and NUDT9-H domains upon ADPR binding. (c) In the apo resting state, the intersubunit interface (resting interface) is formed by the MHR1 domain and the adjacent core region of the NUDT9-H domain. The rectangle is enlarged in the lower image. (d) Upon binding of ADPR, the intersubmit interface (activation interface) is reorganized and is formed by the MHR2 domain and the adjacent core region. The two adjacent subunits are colored in dark or light colors. Key elements involved in intersubunit interfaces are labeled. (e) Binding of 8-Br-cADPR to the MHR1/2 domain does not result in domain rearrangement of the ligand-sensing layer relative to the apo state shown in panel c.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a\u2013d) Conformational changes of NUDT9-H domain and MHR1/2 domain upon ADPR or 8-Br-cADPR binding for EDTA-hsTRPM2 (a, blue), ADPR-hsTRPM2 (b, yellow), ADPR/Ca2+-hsTRPM2 (c, red), and 8-Br-cADPR-hsTRPM2/Ca2+-hsTRPM2 (d, green). The lower rotations are viewed from the intracellular side. The distances between the center of mass of the NUDT9-H domain and the MHR1/2 domain, and the angles between the center of mass of the NUDT9-H domain and the CTD coiled-coil pole along the pore axis, were measured and are indicated. (e\u2013g) Comparisons of the MHR1/2 domain by superimposition of the MHR1 domains; colors show the structures from panels a-d that are being compared. ADPR1 binding produces an obvious MHR1/2 domain closure (e, f), and 8-Br-cADPR stabilizes MHR1/2 in an apo-like conformation (g). (h\u2013j) Comparison of the NUDT9-H domain by superimposition of the cap regions, showing that ADPR2 binding produces noticeable domain closure; colors as for panels (e-g).\n\nIn contrast, the binding of 8-Br-cADPR barely produced any conformational changes (Figure 4\u2014figure supplement 1g,j). Despite the fact that 8-Br-cADPR mimics U-shaped ADPR, the extra bromide atom is obstructed by Y295 (Figure 2g), preventing 8-Br-cADPR from going as deep as ADPR into the MHR1/2 cleft. As a result, the phosphate groups of 8-Br-cADPR block helix \u03b17 from approaching, thus precluding clamshell closure (Figure 4\u2014figure supplement 1g). This supports the concept that 8-Br-cADPR acts as an antagonist for cADPR in hsTRPM2, which inhibits the channel by occupying and keeping the MHR1/2 clamshell in an open conformation and stabilizing hsTRPM2 in an apo/resting-like state. Such action of an antagonist has been reported for other ion channels (Mansoor et al., 2016).\n\nOn the basis of structural comparison among the hsTPRM2 structures and the previously published functional studies on invertebrate TRPM2 (Iordanov et al., 2019; K\u00fchn et al., 2016), we suggest that the MHR1/2 clamshell closure is the major driving force of channel opening by initiating motion in the intracellular domain which is transduced to the TMD, eventually causing channel opening in cooperation with Ca2+. This raises a key question of why it is necessary to have a second ADPR molecule binding in NUDT9-H for channel activation.\n\nTo address this question, we inspected into the ligand-sensing domain upon binding of ADPR and found a striking interface rearrangement between NUDT9-H and the adjacent MHR1/2 domain (Figure 4c\u2013d). In the absence of ADPR, their interface is made of extensive interactions between the core region of NUDT9-H and MHR1 (Figure 4c). Upon binding of ADPR, their interface in the apo resting state is disrupted, and a new interface is created in the activation state between the core region and MHR2 (Figure 4d). Accordingly, we call the interface between MHR1/2 and NUDT9-H a resting interface in the apo state and an activation interface in the ADPR-bound state. Because the core region of the NUDT9-H domain rotates toward the cap region upon binding of ADPR2, we suggest that the ADPR2 may play a role in disrupting the resting interface by pulling the core region away from the adjacent MHR1 domain, which in turn promotes the clamshell closure of MHR1/2 upon binding of ADPR1\u2014a motion that requires flexibility of NUDT9-H that moves along with MHR2, thus assisting channel activation. The binding of 8-Br-cADPR (Figure 4e) did not produce any domain rearrangement relative to the apo state (Figure 4c).\n\n### Channel activation and inhibition\n\nThe conformational change of the ligand-sensing layer upon binding of ADPR is transduced to the TMD through MHR3/4, whose motion is conserved between hsTRPM2 (Figure 5\u2014figure supplement 1) and drTRPM2 (Huang et al., 2018). To determine the functional states of the four hsTRPM2 structures, we looked at into their pore regions and compared their TMDs (Figure 5a\u2013g). By comparing the distances between the C\u03b1 of adjacent pore-restricting residues\u2014N1049 and Q1053\u2014with those in drTRPM2 (Huang et al., 2018), all four showed an occluded pore, including the ADPR/Ca2+-hsTRPM2 structure (Figure 5c). The EDTA-hsTRPM2 and the 8-Br-cADPR/Ca2+-hsTRPM2 structures (Figure 5a,d) were nearly identical, and they clearly represented an apo-resting state and an antagonist-bound inhibited closed state, respectively. In contrast, binding of ADPR caused large conformational changes throughout the protein relative to the apo state. Within the TMD specifically, although the pore domain showed little change, the S1-S4 domain underwent a remarkable clockwise rotation around the pore axis (Figure 5e,f). The subtle difference between the S1-S4 domains in ADPR- and ADPR/Ca2+-hsTRPM2 was caused by the binding of Ca2+ (Figure 5g). The Ca2+ is coordinated by E843, Q846, N869, D872 and E1073, which are conserved among all the Ca2+-sensitive TRPM channels (Figure 5h) (Autzen et al., 2018; Huang et al., 2018; Yamaguchi et al., 2019; Yin et al., 2019a). Because ADPR alone cannot active the TRPM2 channel in the absence of Ca2+ (McHugh et al., 2003; Sumoza-Toledo and Penner, 2011), we designated the ADPR-hsTRPM2 structure as a ADPR-bound non-activated state.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig5-v2.jpg)\n\n**Figure 5.:** The gates of (a) EDTA-hsTRPM2, (b) ADPR-hsTRPM2, (c) ADPR/Ca2+-hsTRPM2, and (d) 8-Br-cADPR/Ca2+-hsTRPM2, viewed from the intracellular side. The distances between the C\u03b1 atoms of adjacent N1049 and the distances between the C\u03b1 atoms of adjacent Q1053 are indicated. (e\u2013g) Comparison of the TMDs of EDTA-hsTRPM2 and ADPR-hsTRPM2 (e), EDTA-hsTRPM2 and ADPR/Ca2+-hsTRPM2 (f), and ADPR-hsTRPM2 and ADPR/Ca2+-hsTRPM2 (g) by superimposition of their pore domain of the tetramer. While the pore-lining S6 and S5 are well aligned, a clockwise rotation of the S1-S4 domain and TRP helix is observed from EDTA-hsTRPM2 and ADPR/Ca2+-hsTRPM2. (h) Calcium binding sites in the ADPR/Ca2+-hsTRPM2 structure. (i) The relative positioning between the S4-S5 linker and the TRP helix in ADPR/Ca2+-hsTRPM2, viewed parallel to the membrane. The dashed arrow illustrates the proposed movement of the S4-S5 linker from one side to the other of the TRP helix, which is required for channel opening upon binding of ADPR/Ca2+ that is observed in drTRPM2 (Huang et al., 2018). (j) Comparison of the S4-S5 linkers in ADPR/Ca2+-hsTRPM2 (red) and ADPR/Ca2+-drTRPM2 (black), viewed from the intracellular side. The two structures are superimposed using the TRP helix.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a\u2013b) The interfaces between the MHR3/4 domains and the transmembrane domain layer, and between the MHR3/4 domains and the MHR1/2 layer, in EDTA-hsTRPM2 (a) and ADPR/Ca2+-hsTRPM2 (b). (c) Superimposition of the MHR3/4 domain layer of EDTA-hsTRPM2 and ADPR/Ca2+-hsTRPM2, by aligning the CTD coiled-coil poles (residues 1144 to 1165), showing a counterclockwise upward rotation of MHR3/4 domain upon binding of ADPR and Ca2+. ADPR1 is shown as green spheres and ADPR2 is shown as blue spheres.\n\nThe ADPR/Ca2+-hsTRPM2 structure is closed, unlike the ADPR/Ca2+-drTRPM2 structure, which has a wide, open pore. A key element of the TRPM2 channel opening is the flipping of the S4-S5 linker from one side of the TRP helix to the other as a result of the synergetic actions of ADPR and Ca2+, which is derived from our two drTRPM2 structures (Huang et al., 2018). Indeed, the S4-S5 linkers in the ADPR/Ca2+-hsTRPM2 structure (Figure 5i,j) are un-flipped, indicating that the TMD conformation represents either a pre-open or an inactive state. We favor the former, because the structure of ADPR/Ca2+-hsTRPM2 is nearly identical with the non-activated ADPR-hsTRPM2. Moreover, the recently published two-fold symmetric drTRPM2 adopts a hybrid of alternating non-flipped and flipped conformation of the S4-S5 linkers in TMD (Yin et al., 2019b), the former of which represents an intermediate state after ligand binding but prior to channel opening, which is similar to the TMD conformation of in our ADPR/Ca2+-bound hsTRPM2 structure. This further supports that the ADPR/Ca2+-bound hsTRPM2 structure represents a pre-open state.\n\nWe have noted that the published hsTRPM2 structure in the presence of Ca2+ and ADPR at 6.4 \u00c5 overall resolution was reported as an open state (Wang et al., 2018). However, that interpretation is questionable, not only because most of the transmembrane domain was poorly defined in the cryo-EM map but also because the S4-S5 linker in the ADPR/Ca2+-bound structure was clearly on the same side as in the apo resting structure (Wang et al., 2018).\n\n## Discussion\n\nA central concept of the relationship between ligand binding and channel gating in TRPM2 arises on the basis of our hsTRPM2 and drTRPM2 structures, in which the functional state of the channel correlated with the conformation of the MHR1/2 domain; that is, the channel is in a ligand-free, apo (resting) state or an antagonist-bound inhibited state when MHR1/2 is open, and the channel is in an agonist-bound active state when the MHR1/2 is closed (Figure 6). The channel opening also requires the binding of Ca2+ in the TMD and a second ADPR molecule in the NUDT9-H domain. Unlike the consensus view of the NUDT9-H domain acting as the primary binding site for ADPR and its analogs, our data suggest that MHR1/2 represents an orthosteric binding site in TRPM2 across species, with key interaction residues conserved from invertebrates to mammals. TRPM2 is one example in which activation of the channel requires the synergetic binding of two ligands in three distinct sites.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig6-v2.jpg)\n\n**Figure 6.:** (a\u2013c) Conformational changes of hsTRPM2 among antagonist-bound (a), apo-resting (b), and agonist-bound (c) structures, focusing on the three ligand-binding sites. (a) 8-Br-cADPR binds only to the cleft of the MHR1/2 domain but not to the NUDT9-H domain. It inhibits the channel by stabilizing the MHR1/2 domain in an apo-like conformation. The Ca2+ binding causes a tilting of the nearby S3 in the TMD, which is suggested to facilitate channel opening in the presence of agonist ADPR (Csan\u00e1dy and T\u00f6rocsik, 2009; McHugh et al., 2003; Starkus et al., 2007). However, Ca2+ alone is not sufficient to open the channel. (c) Conformational changes of hsTRPM2 upon binding of Ca2+ and ADPR in triple binding sites with Ca2+ bound nearby S3, the U-shaped ADPR1 (green) in the cleft of MHR1/2 domain, and the extended ADPR2 (blue) in the cleft of NUDT9-H domain. Binding of ADPR1 and ADPR2 induces bi-lobed domain closure of the MHR1/2 domain and the NUDT9-H domain, respectively. The MHR1/2 domain shows a counterclockwise rotation and the NUDT9-H domain swings toward the pore center. As a result, the resting interface is disrupted, and an activation interface is created between adjacent subunits. The movements induced by ADPR in the MHR1/2 domain and NUDT9-H domain are shown by arrows.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50175/elife-50175-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a\u2013b) Superimposition of NUDT9 enzyme (PDB: 1QVJ, cyan) and NUDT9-H domain in EDTA-hsTRPM2 (a, blue) and ADPR/Ca2+-hsTRPM2 (b, red) by aligning the cap regions. The ribose-5-phosphate (R5P) in the NUDT9 is shown as cyan spheres and the ADPR2 in the ADPR/Ca2+-hsTRPM2 is shown as blue spheres.\n\nWhat then is the function of the characteristic NUDT9-H domain? It is indispensable for vertebrate TRPM2 channel activation, including human and zebrafish, but it is not required in invertebrates nvTRPM2 (K\u00fchn et al., 2016). Comparison among the available TRPM2 structures reveals different interactions between NUDT9-H and MHR1/2 in human versus invertebrate TRPM2, which seemingly correlates with the functional importance of the NUDT9-H domain. In the nvTRPM2, the NUDT9-H domain likely lacks any interface with the rest of the protein, because it is completely invisible in the structure, despite the rest of the protein being well resolved (Zhang et al., 2018). By contrast, the drTRPM2 has a visible but poorly defined NUDT9-H domain with a single major interface between the cognate MHR1/2 and NUDT9-H domains (Huang et al., 2018). Lastly, the hsTRPM2 has a well-defined NUDT9-H domain that has two major interfaces with the rest of protein, one with the cognate MHR1/2 and the other with the adjacent MHR1/2 domain. Such an incrementally tighter interaction between the NUDT9-H domain and the rest of protein is in harmony with the fact that the NUDT9-H domain gained more function along the evolution from invertebrates to mammals, such as temperature sensing, redox sensing, and channel gating, to endow TRPM2 with a polymodal nature. In parallel, the NUDT9-H domain has lost the ability to hydrolyze ADPR into AMP and ribose-5-phosphate, a function that exists only in invertebrate TRPM2 and NUDT9 (Iordanov et al., 2016; Iordanov et al., 2019; T\u00f3th et al., 2014). A comparison between NUDT9-H in hsTRPM2 and NUDT9 (Shen et al., 2003) shows a wider opening of the cleft in NUDT9 (Figure 6\u2014figure supplement 1), which is likely related to the fact that the core region in hsTRPM2 is restricted by the adjacent MHR1/2, whereas NUDT9 lacks such a restriction. Such a restriction for the NUDT9-H domain is also missing in invertebrate TRPM2 such as nvTRPM2, perhaps giving rise to a similar cleft opening as in NUDT9 and thus preserved enzymatic activity (Iordanov et al., 2019; K\u00fchn et al., 2016).\n\nIn summary, our human TRPM2 structures defined two distinctive ADPR binding sites, one in the MHR1/2 domain and one in the NUDT9-H domain. These structures demonstrate how incorporation of three different ligand binding sites, including the Ca2+ site in the TMD, regulates channel function. Our work provides a clear structural explanation for ligand recognition, pharmacology, and the gating mechanism of the polymodal TRPM2 channel.\n\n## Materials and methods\n\n### Construct description, Expression and purification of full-length human TRPM2\n\nThe full-length human TRPM2 gene (UniProtKB - O94759) was synthesized by Bio Basic and subcloned into a pEG BacMam vector with a twin-Strep tag, His8 tag, enhanced green fluorescent protein (eGFP), and a thrombin cleavage site at the N terminus of the gene (Goehring et al., 2014; Haley et al., 2019). Plasmid DNA for the hsTRPM2 construct was transformed into DH5alpha competent cells, expanded into a large-scale bacterial culture, and isolated using EndoFree Plasmid kits (Qiagen). Purified plasmid DNA was mixed with PEI 25K (Polysciences) in a 3:1 ratio of PEI to DNA (w/w) and incubated at room temperature for 30 min. The PEI\u2013DNA mixture was added to a suspension culture of HEK293 cells (ATCC Cat# CRL-11268, tested negative for mycoplasma contamination) at a density of 2.5\u20133.0 \u00d7 106/mL for protein expression. After 12\u201324 hr post-transfection at 37\u00b0C, sodium butyrate (10 mM) was added to the suspension and the temperature was adjusted to 30\u00b0C to boost the protein expression. Seventy-two hours after transfection, HEK293 cells were harvested and washed with cold TBS buffer (150 mM NaCl, 20 mM Tris HCl, pH 8.0).\n\nHarvested cells were lysed for 1 hr in 10 mM Tris-HCl pH 8.0 buffer containing a protease inhibitor cocktail (1 mM phenylmethylsulfonyl fluoride (PMSF), 2 mM pepstatin, 0.8 \u00b5M aprotinin, and 2 \u00b5g/ml leupeptin). After 1 hr of incubation, Tris-HCl pH 8.0 and NaCl were added to final concentrations of 20 mM and 150 mM, respectively. Lysed cells were incubated on ice for an additional 20 min. Cell debris and unlysed cells were removed by centrifugation at 2000 x g for 10 min. Ultracentrifugation was used to collect the membranes, using a 45 Ti rotor at 186,000 x g for 1 hr at 4\u00b0C (Beckman Coulter). The collected membranes were homogenized using a Dounce homogenizer in TBS buffer containing a protease inhibitor cocktail and 2 mM 2-mercaptoethanol. Solubilization of the membrane was performed by using 10 mM glyco-diosgenin (Anatrace) for 1 hr at 4\u00b0C before ultracentrifugation for 30 min at 186,000 x g. The supernatant was transferred out of centrifuge tubes and incubated with Talon resin (Clontech) for 2 hr. Talon resin was washed with six bed volumes of TBS buffer containing 0.2 mM glyco-diosgenin, 10 mM imidazole, and 2 mM 2-mercaptoethanol. The protein was eluted with TBS buffer containing 0.2 mM glyco-diosgenin, 250 mM imidazole, and 2 mM 2-mercaptoethanol. The protein eluate was collected, concentrated, and loaded onto a Superose 6 column (GE Healthcare) using TBS buffer containing 0.2 mM glyco-diosgenin and 5 mM 2-mercaptoethanol. The peak fractions were combined and concentrated to 6.0\u20137.0 mg/mL using a 100 kDa concentrator (Millipore).\n\n### Electron microscopy sample preparation and data acquisition\n\nQuantifoil holey carbon grids (Au 1.2/1.3 \u00b5m size/hole space, 300 mesh) were glow-discharged for 30 s before preparation. Purified and concentrated hsTRPM2 protein was incubated with either 1 mM EDTA; 1 mM ADPR (Sigma-Aldrich); 1 mM ADPR (Sigma-Aldrich) plus 1 mM CaCl2; or 1 mM 8-Br-cADPR (Santa Cruz Biotechnology) plus 1 mM CaCl2. After incubation, 2.5 \u00b5l of protein sample was added to the carbon face of the grids and blotted for 2 s with a 5 s waiting time. The grids were plunge-frozen into liquid ethane and then cooled by liquid nitrogen using a Vitrobot Mark III held at 18\u00b0C and 100% humidity.\n\nImages were obtained using an FEI Titan Krios electron microscope operating at 300 kV with a nominal magnification of 130,000. Images were recorded by a Gatan K2 Summit direct electron detector, which operated in super-resolution counting mode and with a binned pixel size of 1.074 \u00c5. Each image was dose-fractionated to 40 frames, with a total exposure time of 8 s and 0.2 s per frame. The dose rate was 6.76 e\u2013\u00c5\u20132 s\u20131 for each image. Images were recorded using an automated acquisition program (SerialEM) (Mastronarde, 2005). Nominal defocus values varied between \u22121.3 to \u22121.9 \u00b5m.\n\n### Electron microscopy data processing\n\nUsing MotionCor2 (Zheng et al., 2017), images were motion-corrected, summed, and 2 \u00d7 2 binned in Fourier space. Defocus values were estimated using Gctf (Zhang, 2016). Particles were then picked using Gautomatch (http://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch/) and subjected to an initial reference-free 2D classification using RELION (Scheres, 2012). Nine representative 2D class averages were selected to use as templates for automated particle-picking for the entire data set using Gautomatch. The auto-picked particles were then visually checked in order to remove false positives. Several rounds of 2D classification were performed to further clean up the selected particles using RELION (Scheres, 2012). The initial reconstruction was obtained using cryoSPARC (Punjani et al., 2017). The particles were then placed into ten classes using the 3D classification function in RELION (Scheres, 2012), with the initial reconstruction low-pass-filtered to 50 \u00c5 as a reference model. Particles from classes showing high-resolution features were combined and refined with C4 symmetry using RELION (Scheres, 2012) (Figure 1\u2014figure supplement 1). The final resolutions reported in Table 1 are based on the gold standard Fourier shell correlation 0.143 criteria. A soft mask (6.4 \u00c5 extended from the reconstruction with an additional 6.4 \u00c5 cosine soft edge, low-pass-filtered to 15 \u00c5) was applied to the two half maps in order to calculate the Fourier shell correlation plot. Local resolutions were estimated using Bsoft (Heymann, 2018).\n\n**Table 1.**\n Statistics of 3D reconstruction and model refinement.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Data collection/processing</th>\n      <th>EDTA-hsTRPM2</th>\n      <th>ADPR-hsTRPM2</th>\n      <th>ADPR/Ca2+-hsTRPM2</th>\n      <th>8-Br-cADPR/Ca2+-hsTRPM2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Microscope</td>\n      <td>Titan Krios (FEI)</td>\n      <td>Titan Krios (FEI)</td>\n      <td>Titan Krios (FEI)</td>\n      <td>Titan Krios (FEI)</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n      <td>300</td>\n      <td>300</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u00b5M)</td>\n      <td>1.0\u20132.5</td>\n      <td>1.0\u20132.5</td>\n      <td>1.0\u20132.5</td>\n      <td>1.0\u20132.5</td>\n    </tr>\n    <tr>\n      <td>Exposure time (s)</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Dose rate (e-/\u00c52/s)</td>\n      <td>6.8</td>\n      <td>6.8</td>\n      <td>6.8</td>\n      <td>6.8</td>\n    </tr>\n    <tr>\n      <td>Number of frames</td>\n      <td>40</td>\n      <td>40</td>\n      <td>40</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.076</td>\n      <td>1.076</td>\n      <td>1.076</td>\n      <td>1.076</td>\n    </tr>\n    <tr>\n      <td>Particles picked</td>\n      <td>783,885</td>\n      <td>537,671</td>\n      <td>2,342,060</td>\n      <td>1,822,211</td>\n    </tr>\n    <tr>\n      <td>Particles 2D</td>\n      <td>415,415</td>\n      <td>346,032</td>\n      <td>759,700</td>\n      <td>729,269</td>\n    </tr>\n    <tr>\n      <td>Particles refined</td>\n      <td>161,360</td>\n      <td>117,350</td>\n      <td>287,184</td>\n      <td>102,259</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>3.3</td>\n      <td>4.4</td>\n      <td>3.7</td>\n      <td>3.7</td>\n    </tr>\n    <tr>\n      <td>FSC threshold</td>\n      <td>0.143</td>\n      <td>0.143</td>\n      <td>0.143</td>\n      <td>0.143</td>\n    </tr>\n    <tr>\n      <td>Resolution range (\u00c5)</td>\n      <td>322.2\u20133.3</td>\n      <td>322.2\u20134.4</td>\n      <td>322.2\u20133.7</td>\n      <td>322.2\u20133.7</td>\n    </tr>\n    <tr>\n      <td>Model statistics</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Number of atoms</td>\n      <td>37816</td>\n      <td>37308</td>\n      <td>37408</td>\n      <td>38492</td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>37816</td>\n      <td>37020</td>\n      <td>37116</td>\n      <td>38344</td>\n    </tr>\n    <tr>\n      <td>Ligand</td>\n      <td>0</td>\n      <td>288</td>\n      <td>292</td>\n      <td>148</td>\n    </tr>\n    <tr>\n      <td>r.m.s. deviations</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond length (\u00c5)</td>\n      <td>0.007</td>\n      <td>0.008</td>\n      <td>0.009</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>Bond angle (\u00b0)</td>\n      <td>0.907</td>\n      <td>1.015</td>\n      <td>1.051</td>\n      <td>0.941</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>92.18</td>\n      <td>91.59</td>\n      <td>91.53</td>\n      <td>94.33</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>7.59</td>\n      <td>8.02</td>\n      <td>8.08</td>\n      <td>5.44</td>\n    </tr>\n    <tr>\n      <td>Disallowed (%)</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Rotamer outlier (%)</td>\n      <td>0.35</td>\n      <td>1.40</td>\n      <td>1.38</td>\n      <td>1.13</td>\n    </tr>\n  </tbody>\n</table>\n\n### Model building and structural determination\n\nModels for human TRPM2 were built in Coot using the zebrafish TRPM2 structure as a reference (RCSB Protein Data Bank (PDB) ID: 6DRK and 6DRJ) (Huang et al., 2018). The initial models were then subjected to real space refinement using phenix.real_space_refine (Afonine et al., 2012) with secondary-structure restraints. The refined model was further manually examined and adjusted in Coot (Emsley et al., 2010). For validation of the refined structure, Fourier shell correlation curves were applied to calculate the difference between the final model and electron microscopy map by PHENIX comprehensive validation (cryo-EM) (Afonine et al., 2018). The geometries of the atomic models were evaluated using MolProbity (Williams et al., 2018) in PHENIX suite (Adams et al., 2010). All figures were prepared using UCSF Chimera (Pettersen et al., 2004) and ChimeraX (Goddard et al., 2018) and PyMOL (https://pymol.org).\n\n### Electrophysiology\n\nHEK293 cells were transfected using Lipofectamine 2000 (Thermo Fisher) according to the manufacturer\u2019s protocol. Transfected cells were plated in a 24-well plate and incubated at 37\u00b0C. The surface expression of WT human TRPM2 and mutants were evaluated by Pierce cell surface protein isolation kit (Thermo Fisher) according to the manufacturer\u2019s protocol, except that the protein was eluted by TBS buffer supplemented with 50 mM Dithiothreitol (DTT) and detected by in-gel fluorescence. Currents from inside-out patches were recorded 12\u201324 hr post transfection and the recordings were performed by using a HEKA EPC-10 amplifier set to room temperature with a holding potential of +60 mV. The patch pipettes used for these experiments were filled with internal solution that consisted of 150 mM NaCl, 3 mM KCl, and 10 mM HEPES (pH 7.4, adjusted with NaOH). The bath solution was the same as the internal solution. A bath solution with 0.1 mM ADPR and 1 mM CaCl2 was used to activate the hsTPRM2 channel expressed in HEK293 cells. To change the solution, a two-barrel theta-glass pipette controlled manually was used. Data was acquired at 10 kHz using Patchmaster software (HEKA) and for display purposes, data was digitally filtered at 100 Hz and down sampled by a factor of 10. Statistical analysis was done by GraphPad Prism (GraphPad Software), data was reported as mean\u00a0\u00b1\u00a0s. e. m. and analyzed using an unpaired t - test.\n\n### Data availability\n\nThe cryo-EM density map and coordinates of the hs TRPM2 apo state, the ADPR-bound state, the ADPR/Ca2+-bound state, and the 8-Br-cADPR/Ca2+-bound state have been deposited in the Electron Microscopy Data Bank (EMDB) under accession numbers EMD-20478, EMD-20479, EMD-20480 and EMD-20482 and in the Research Collaboratory for Structural Bioinformatics Protein Data Bank under accession codes 6PUO, 6PUR, 6PUS and 6PUU.\n",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "767786eb-ddec-4b0b-9475-b0c1a8522a8d",
+      "submission_id": "a740b7aa-1c21-4bc6-ae93-7613163b7b60",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leon D Islas, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- Leon D Islas, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\n## Review text\n\nDOI: [10.7554/eLife.50175.028](https://doi.org/10.7554/eLife.50175.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Ligand recognition and gating mechanism through three ligand-binding sites of human TRPM2 channel\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Leon D Islas as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Olga Boudker as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers find that the present manuscript contains great quality data and that it is an important contribution. However they also find that in its present form, some of the conclusions are not supported by the presentation and that some results are over interpreted an overhyped. The authors use phrases like: \"unprecedented and extremely complicated\", which should be avoided. A more balanced presentation is required as well as attention to the main points below.\n\nEssential revisions:\n\n1) The reviewers find that the main conclusions about the roles of the two ADPR sites are not well substantiated. In particular no experiments regarding the open probabilities reached in the presence of one or two binding sites is presented. Also, the main conclusion of the paper that the ADPR1 site (MHR1/2) is the main site and the ADPR2 site (NUDH9H) is the secondary site stems from the fact that the inhibitor 8-Br-cADPR binds to the ADPR1 site, not the ADPR2 site. The authors indicate that 8-Br-cADPR acts as a competitive inhibitor. However, the authors failed to note that the Penner group showed that 8-Br-cADPR only inhibits cADPR, not ADPR (Kolisek, 2005). On the contrary, the Penner group found that co-application of ADPR and 8-Br-cADPR appeared to enhance the response of ADPR to some degree. Furthermore, cADPR is a very weak partial agonist, as its potency and efficacy are significantly lower than those of ADPR (> 50-fold). Therefore, the authors need to perform the similar experiment of co-application of 8-Br-cADPR and ADPR to see if there is any dose-dependent inhibition of 8-Br-cADPR. The authors need to do a better job of siting previous literature, especially functional studies, within context.\n\n2) At the end of the first paragraph of the subsection \u201cChannel activation and inhibition\u201d, assignment of the state of the ADPR-bound structure as partially-activated state is inappropriate, as the pore is closed. \"Partially activated\" implies that it is partially open so that ion can permeate through the channel. \"Pre-open state\" is more appropriate for the ADPR-bound structure.\n\n3) In the second paragraph of the subsection \u201cChannel activation and inhibition\u201d, assignment of the ADPR/Ca2+ bound structure as a pre-open state might be fine, but the authors' reasoning that \"because ADPR-bound state is partially activated the ADPR/Ca2+ structure is pre-open\" is not appropriate.\n\n4) The authors reveal a second ADPR binding site in the NUDT9-H domain of hsTRPM2. In contrast, ADPR binding was not observed in the NUDT9-H domain of the ADPR/Ca2+-drTRPM2 structure in their previous study. Does the local conformation of the NUDT9-H in drTRPM2 differ from the corresponding ADPR2 site in the ADPR/Ca2+-hsTRPM2 structure? How would structural comparisons suggest the differential binding of ADPR in the NUDT9-H domain between the two species? In general, an in depth comparison of the present structures with previous structures from other organisms is need in order to better present the different conformations seen in the H. sapiens structures.\n\n5) The current cryo-EM density figures (Figure 1\u2014figure supplement 3E-H) for the ligands are too small. Also, half-maps for all the ligands are not provided, including ADPR1, ADPR2, and 8-Br-cADPR. Cryo-EM density for these ligands as well as their half-maps should be shown in a separate supplementary figure.\n\n6) For the model-map FSC figures (Figure 1\u2014figure supplement 2), FSC curves calculated between each half-map and the model should be provided as well.\n\n7) The authors perform 3d reconstructions with C4 symmetry imposed. Have authors performed asymmetric (C1) reconstruction to ensure that all the reconstructions assume strict C4 symmetry?\n\n8) Regarding the electrophysiological experiments with the presumed binding site mutants, reduction of the ionic current magnitude is hard to interpret. Is the affinity being affected or is the allosteric transition (s) leading to opening? Is the reduction of current observed in some mutants due to a shift of the dose response or are the channels completely irresponsive to ADPR? A dose response or at least the response to more than one concentration of ADPR should be obtained in order to provide a less ambiguous interpretation of these data. If these data cannot be obtained in reasonable time, at least the conclusion that these residues directly affect binding should be toned down and other different possibilities for the effects should be discussed.\n\n9) Authors should provide their cryo-EM maps as well as coordinates.\n",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "baae3e3b-5a70-4daa-9fb7-5b1ac3beb3ce",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C1",
+      "claim": "TRPM2 is critically involved in diverse physiological processes including core temperature sensing, apoptosis, and immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPM2 is critically involved in diverse physiological processes including core temperature sensing, apoptosis, and immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that draws from established scientific knowledge about TRPM2 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "0556b65f-ad15-4961-a9f5-3d82f4c3038b",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C2",
+      "claim": "TRPM2's activation by Ca2+ and ADP ribose (ADPR), an NAD+-metabolite produced under oxidative stress and neurodegenerative conditions, suggests a role in neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPM2's activation by Ca2+ and ADP ribose (ADPR), an NAD+-metabolite produced under oxidative stress and neurodegenerative conditions, suggests a role in neurological disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement speculates about TRPM2's role in neurological disorders based on its activation mechanism and the conditions under which ADPR is produced.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "2e5b5d55-4c3f-4a6f-bbee-d219947d3580",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C3",
+      "claim": "Consecutive structural rearrangements and channel activation of TRPM2 are induced by binding of ADPR in two indispensable locations, and the binding of Ca2+ in the transmembrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We show consecutive structural rearrangements and channel activation of TRPM2 induced by binding of ADPR in two indispensable locations, and the binding of Ca2+ in the transmembrane domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the structural data presented in the manuscript, including cryo-EM structures showing ADPR binding sites and Ca2+ binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "d8c42daf-6ae8-4f93-960d-3fa09d13081a",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C4",
+      "claim": "8-Br-cADPR\u2014an antagonist of cADPR\u2014binds only to the MHR1/2 domain and inhibits TRPM2 by stabilizing the channel in an apo-like conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The 8-Br-cADPR\u2014an antagonist of cADPR\u2014binds only to the MHR1/2 domain and inhibits TRPM2 by stabilizing the channel in an apo-like conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data showing 8-Br-cADPR density only in the MHR1/2 domain and structural comparison showing apo-like conformation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "6c94faf6-7615-494e-b42d-5ca634402ea7",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C5",
+      "claim": "MHR1/2 acts as an orthostatic ligand-binding site for TRPM2.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that MHR1/2 acts as a orthostatic ligand-binding site for TRPM2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from structural data showing ligand binding in MHR1/2 and functional studies showing its importance for channel activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "0439f6d0-287d-4af7-82fd-624ae640d17c",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C6",
+      "claim": "The NUDT9-H domain binds to a second ADPR to assist channel activation in vertebrates, but not necessary in invertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The NUDT9-H domain binds to a second ADPR to assist channel activation in vertebrates, but not necessary in invertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data showing ADPR2 in the NUDT9-H domain and functional studies on invertebrate TRPM2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "3d78f0ba-2272-4a74-af55-16878a2b4453",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C7",
+      "claim": "ADP ribose (ADPR) and its derivatives, which are products of NAD+ metabolism, play essential roles in neurotoxicity and cellular signaling under many physiological and pathological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "ADP ribose (ADPR) and its derivatives, which are products of NAD+ metabolism, play essential roles in neurotoxicity and cellular signaling under many physiological and pathological conditions (Ernst et al., 2013; Gasser et al., 2006; Guse, 2015; Kolisek et al., 2005; Nikiforov et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "5244fe28-6422-497c-af40-a1c361e3682b",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C8",
+      "claim": "In neurodegenerative diseases, the progressive accumulation of poly-ADPR and free ADPR results from poly(adenosine 5'-diphosphate-ribose) polymerase-1 activation, and contributes to neurotoxicity and neuronal death.",
+      "claim_type": "EXPLICIT",
+      "source": "In neurodegenerative diseases, the progressive accumulation of poly-ADPR and free ADPR results from poly(adenosine 5'-diphosphate-ribose) polymerase-1 activation, and contributes to neurotoxicity and neuronal death (Kam et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "90e9ebcc-1855-4670-9777-448d30d1876b",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C9",
+      "claim": "Intracellular ADPR targets and activates the nonselective, calcium-permeable TRPM2 channel in the presence of Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular ADPR targets and activates the nonselective, calcium-permeable TRPM2 channel in the presence of Ca2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TRPM2 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "ce09dfce-fa43-4ca8-9442-67bd5c62482d",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C10",
+      "claim": "ADPR acts on one hand as a secondary messenger that contributes to insulin secretion, redox, and temperature sensation, but on the other hand, its accumulation results in intracellular calcium overload and eventually apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "ADPR acts on one hand as a secondary messenger that contributes to insulin secretion, redox, and temperature sensation, but on the other hand, its accumulation results in intracellular calcium overload and eventually apoptosis (Hara et al., 2002; Hecquet et al., 2014; Song et al., 2016; Tan and McNaughton, 2016; Togashi et al., 2006; Uchida et al., 2011; Wehage et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "7a9bc6ce-3d5e-4140-8a69-27dcb428ca40",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C11",
+      "claim": "TRPM2 is considered to be a key contributor in brain injury via a glutamate-independent pathway in neurodegenerative conditions or after stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPM2 is thus considered to be a key contributor in brain injury via a glutamate-independent pathway in neurodegenerative conditions or after stroke, and it has important functions in obesity, diabetes, bipolar disorder, and Alzheimer's disease (Aminzadeh et al., 2018; Jang et al., 2015; Sita et al., 2018; Uchida and Tominaga, 2014; Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "e8388003-40de-4705-9e99-56a40162577e",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C12",
+      "claim": "TRPM2 has important functions in obesity, diabetes, bipolar disorder, and Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPM2 is thus considered to be a key contributor in brain injury via a glutamate-independent pathway in neurodegenerative conditions or after stroke, and it has important functions in obesity, diabetes, bipolar disorder, and Alzheimer's disease (Aminzadeh et al., 2018; Jang et al., 2015; Sita et al., 2018; Uchida and Tominaga, 2014; Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "70563ef7-5528-45b7-8609-94aa1d63f1d0",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C13",
+      "claim": "TRPM2 shares a characteristic MHR1-4 domain, a transmembrane domain (TMD), and a coiled-coil domain with the other family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Belonging to the transient receptor potential melastatin family (TRPM), TRPM2 shares a characteristic MHR1-4 domain, a transmembrane domain (TMD), and a coiled-coil domain with the other family members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TRPM family structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "bfc0fd8f-0d4c-43fd-a43b-51cd8f667167",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C14",
+      "claim": "TRPM2 is unique due to owning a characteristic C-terminal NUDT9-H domain, which has been considered a classic binding site for ADPR and its derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unique due to owning a characteristic C-terminal NUDT9-H domain, which has been considered a classic binding site for ADPR and its derivatives (Fliegert et al., 2017; Perraud et al., 2001), but the presence of the ADPR binding site has not been directly observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research, but notes that direct observation was lacking.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "9036f722-6cc1-4e1e-b047-68432c13da6a",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C15",
+      "claim": "The presence of the ADPR binding site in the NUDT9-H domain has not been directly observed.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unique due to owning a characteristic C-terminal NUDT9-H domain, which has been considered a classic binding site for ADPR and its derivatives (Fliegert et al., 2017; Perraud et al., 2001), but the presence of the ADPR binding site has not been directly observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "457ea55e-40a4-49fa-a09b-b1af2be2c519",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C16",
+      "claim": "A novel ADPR binding site in the MHR1/2 domain is essential for the activation of the zebrafish TRPM2 (drTRPM2) channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, our group defined a novel ADPR binding site in the MHR1/2 domain that is essential for the activation of the zebrafish TRPM2 (drTRPM2) channel (Huang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "d8bb9a57-b0f1-4bf0-b04e-a0fa10782d2f",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C17",
+      "claim": "TRPM2 responds to a variety of ADPR orthologues including the agonist cyclic ADPR (cADPR).",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the agonist ADPR, TRPM2 also responds to a variety of ADPR orthologues including the agonist cyclic ADPR (cADPR) (Kolisek et al., 2005; Yu et al., 2019), which is produced during acute kidney injury (Kolisek et al., 2005; Togashi et al., 2006), and the antagonist 8-bromo-cyclic ADP-ribose (8-Br-cADPR), which decreases ischemia-reperfusion injury when used in treatment (Eraslan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "058d6c10-b2e6-4202-bc7f-926098a6382d",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C18",
+      "claim": "Cyclic ADPR (cADPR) is produced during acute kidney injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the agonist ADPR, TRPM2 also responds to a variety of ADPR orthologues including the agonist cyclic ADPR (cADPR) (Kolisek et al., 2005; Yu et al., 2019), which is produced during acute kidney injury (Kolisek et al., 2005; Togashi et al., 2006), and the antagonist 8-bromo-cyclic ADP-ribose (8-Br-cADPR), which decreases ischemia-reperfusion injury when used in treatment (Eraslan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "5659a517-e196-422c-94bb-e8304d9afb4b",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C19",
+      "claim": "8-Br-cADPR decreases ischemia-reperfusion injury when used in treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the agonist ADPR, TRPM2 also responds to a variety of ADPR orthologues including the agonist cyclic ADPR (cADPR) (Kolisek et al., 2005; Yu et al., 2019), which is produced during acute kidney injury (Kolisek et al., 2005; Togashi et al., 2006), and the antagonist 8-bromo-cyclic ADP-ribose (8-Br-cADPR), which decreases ischemia-reperfusion injury when used in treatment (Eraslan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "81e7d850-dabc-4563-ae06-d1553ebd2aae",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C20",
+      "claim": "8-Br-cADPR is an antagonist for cADPR but does not inhibit ADPR-evoked currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 8-Br-cADPR is an antagonist for cADPR but does not inhibit ADPR-evoked currents (Kolisek et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "d8b63b0e-d6ab-4852-9e04-e1eeb38b96c7",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C21",
+      "claim": "Human TRPM2 (hsTRPM2) has several functional properties different from those of drTRPM2 and invertebrate TRPM2, including temperature sensitivity and desensitization rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Human TRPM2 (hsTRPM2) has several functional properties different from those of drTRPM2 and invertebrate TRPM2, including temperature sensitivity and desensitization rate (Nam Tran et al., 2018; Iordanov et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "92d46462-6a12-4496-b647-3f1693e9a41b",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C22",
+      "claim": "A recent publication suggested that hsTRPM2 does not bind ADPR in the MHR1/2 domain and that its activation is rather driven by ADPR binding in the NUDT9-H domain.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent publication suggested that hsTRPM2 does not bind ADPR in the MHR1/2 domain and that its activation is rather driven by ADPR binding in the NUDT9-H domain (Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research, which the authors then dispute.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "8e168d46-e77f-42ef-9b56-af7e9634a90a",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C23",
+      "claim": "The suggestion that hsTRPM2 activation is driven by ADPR binding in the NUDT9-H domain was based on a cryo-electron microscopy (cryo-EM) structure of hsTRPM2 in the presence of ADPR and Ca2+ at 6.4 \u00c5, a resolution that cannot clarify whether ADPR is present in either the MHR1/2 or the NUDT9-H domain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this suggestion was based on a cryo-electron microscopy (cryo-EM) structure of hsTRPM2 in the presence of ADPR and Ca2+ at 6.4 \u00c5, a resolution that cannot clarify whether ADPR is present in either the MHR1/2 or the NUDT9-H domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of previous work based on knowledge of structural biology resolution limits.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "7f55cb91-188b-49e2-83ee-1386687622ee",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C24",
+      "claim": "Four full-length hsTRPM2 structures were determined: in the apo state in the presence of EDTA (EDTA-hsTRPM2); in a non-activated state in complex with the agonist ADPR (ADPR-hsTRPM2); in a pre-open or an inactive state in the presence of ADPR/Ca2+ (ADPR/Ca2+-hsTRPM2); and in an inhibited state with the cADPR antagonist 8-Br-cADPR in the presence of Ca2+ (8-Br-cADPR/Ca2+-hsTRPM2), at 3.3, 4.4, 3.7, and 3.7 \u00c5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the mechanism underlying agonist and antagonist recognition, and gating mechanism of human TRPM2, we used single-particle cryo-EM to determine four full-length hsTRPM2 structures: in the apo state in the presence of EDTA (EDTA-hsTRPM2); in a non-activated state in complex with the agonist ADPR (ADPR-hsTRPM2); in a pre-open or an inactive state in the presence of ADPR/Ca2+ (ADPR/Ca2+-hsTRPM2); and in an inhibited state with the cADPR antagonist 8-Br-cADPR in the presence of Ca2+ (8-Br-cADPR/Ca2+-hsTRPM2), at 3.3, 4.4, 3.7, and 3.7 \u00c5, respectively (Figure 1\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the structural data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "fe74a3d6-42ba-4ef1-aff6-426f4e95453b",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C25",
+      "claim": "In the four hsTRPM2 structures, the densities for nearly the entire intracellular domain are well-defined, including the NUDT9-H domain and the \u03b21-\u03b22 loop of the MHR1 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In our four hsTRPM2 structures, the densities for nearly the entire intracellular domain are well-defined, including the NUDT9-H domain and the \u03b21-\u03b22 loop of the MHR1 domain (Figure 1a\u2013d, Figure 1\u2014figure supplement 3), which were poorly defined or unresolved in the drTRPM2 structures (Huang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the structural data and comparison with previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "6d907c51-7ca0-4d99-8a28-057b60533bfa",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C26",
+      "claim": "The NUDT9-H domain and the \u03b21-\u03b22 loop of the MHR1 domain were poorly defined or unresolved in the drTRPM2 structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In our four hsTRPM2 structures, the densities for nearly the entire intracellular domain are well-defined, including the NUDT9-H domain and the \u03b21-\u03b22 loop of the MHR1 domain (Figure 1a\u2013d, Figure 1\u2014figure supplement 3), which were poorly defined or unresolved in the drTRPM2 structures (Huang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "453347f7-d258-4ad4-9522-5101fdc42e68",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C27",
+      "claim": "In both ADPR-bound structures, ADPR densities were observed in two different sites on each subunit, one (ADPR1) in the cleft of the MHR1/2 domain and a second (ADPR2) in the cleft of the NUDT9-H domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In both ADPR-bound structures, ADPR densities were observed in two different sites on each subunit, one (ADPR1) in the cleft of the MHR1/2 domain and a second (ADPR2) in the cleft of the NUDT9-H domain (Figure 1b,c,f,g; Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the structural data showing ADPR densities in the cryo-EM maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "c43229ee-457a-4f0a-8489-724523c3645a",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C28",
+      "claim": "A ring-shaped 8-Br-cADPR density was found only in the cleft of the MHR1/2 domain of the 8-Br-cADRP/Ca2+-hsTRPM2 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found a ring-shaped 8-Br-cADPR density only in the cleft of the MHR1/2 domain of the 8-Br-cADRP/Ca2+-hsTRPM2 structure (Figure 1d,h; Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the structural data showing 8-Br-cADPR density in the cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "317c87ff-cbb0-427f-a0d5-a5178b4038cf",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C29",
+      "claim": "Ca2+ density was visible in the ADPR/Ca2+- and 8-Br-cADPR/Ca2+-hsTRPM2 maps, in the same location as in the hsTRPM4, Ficedula albicollis TRPM8 (faTRPM8), drTRPM2, and Nematostella vectensis TRPM2 (nvTRPM2) structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Ca2+ density was visible in the ADPR/Ca2+- and 8-Br-cADPR/Ca2+-hsTRPM2 maps (Figure 1g,h), in the same location as in the hsTRPM4, Ficedula albicollis TRPM8 (faTRPM8), drTRPM2, and Nematostella vectensis TRPM2 (nvTRPM2) structures (Autzen et al., 2018; Huang et al., 2018; Yin et al., 2019a; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the structural data and comparison with previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "ac89cd04-9b60-4273-b6e9-cba79a583844",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C30",
+      "claim": "The hsTRPM2 structures share a four-layer arrangement with drTRPM2, having a TMD, MHR3/4, and a ligand-sensing layer that includes the MHR1/2 and NUDT9-H domains, from top to bottom.",
+      "claim_type": "EXPLICIT",
+      "source": "The hsTRPM2 structures share a four-layer arrangement with drTRPM2 (Huang et al., 2018; Yin et al., 2019b), having a TMD, MHR3/4, and a ligand-sensing layer that includes the MHR1/2 and NUDT9-H domains, from top to bottom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural comparison with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "b8d7ad0d-9113-46c2-bc2a-e950cb3f598a",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C31",
+      "claim": "The overall shapes of hsTRPM2 and drTRPM2 differ, primarily because the NUDT9-H domain is positioned differently.",
+      "claim_type": "EXPLICIT",
+      "source": "However, their overall shapes differ, primarily because the NUDT9-H domain is positioned differently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "31458a56-e5a0-4deb-bac5-1d61da6dbf2c",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C32",
+      "claim": "In the EDTA-hsTRPM2 structure, the NUDT9-H domain is clamped between cognate and adjacent MHR1/2 domains, forming both intra- and intersubunit interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "In the EDTA-hsTRPM2 structure (Figure 1e, Figure 1\u2014figure supplement 5a), the NUDT9-H domain is clamped between cognate and adjacent MHR1/2 domains, forming both intra- and intersubunit interfaces, while only the intrasubunit interface exists in the EDTA-drTRPM2 structure (Figure 1\u2014figure supplement 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural data and comparison with drTRPM2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "73f3ed2d-3c1d-4ad1-bd51-173e6de75f54",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C33",
+      "claim": "Only the intrasubunit interface exists in the EDTA-drTRPM2 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In the EDTA-hsTRPM2 structure (Figure 1e, Figure 1\u2014figure supplement 5a), the NUDT9-H domain is clamped between cognate and adjacent MHR1/2 domains, forming both intra- and intersubunit interfaces, while only the intrasubunit interface exists in the EDTA-drTRPM2 structure (Figure 1\u2014figure supplement 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "78ffb58e-7d7b-45d1-b151-2ad03c10d4fb",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C34",
+      "claim": "The NUDT9-H domain forms a compact structure interacting with the adjacent MHR1/2 domain in hsTRPM2, whereas it hangs freely in the drTRPM2 on the bottom of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the NUDT9-H domain forms a compact structure interacting with the adjacent MHR1/2 domain in hsTRPM2, whereas it hangs freely in the drTRPM2 on the bottom of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the structural comparison between hsTRPM2 and drTRPM2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "08fafbfe-310a-46fb-8c1a-1ad2d66da646",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C35",
+      "claim": "The NUDT9-H domain is completely invisible in the nvTRPM2 structure, despite high resolution of the rest of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the NUDT9-H domain is completely invisible in the nvTRPM2 structure (Figure 1\u2014figure supplement 5e), despite high resolution of the rest of the protein (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "cbee462b-e62d-4090-b2e3-5580fb876649",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C36",
+      "claim": "An incrementally tighter coupling between the NUDT9-H domain and the rest of the protein, from invertebrate TRPM2 to human TRPM2, is in line with previous reports that the NUDT9-H domain plays an important role in channel gating of hsTRPM2 and drTRPM2, but does not affect the channel gating of nvTRPM2.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an incrementally tighter coupling between the NUDT9-H domain and the rest of the protein, from invertebrate TRPM2 to human TRPM2, is in line with previous reports that the NUDT9-H domain plays an important role in channel gating of hsTRPM2 and drTRPM2, but does not affect the channel gating of nvTRPM2 (Fliegert et al., 2017; K\u00fchn and L\u00fcckhoff, 2004; Wehage et al., 2002; Yu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural observations and citations to previous functional studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "3f28278b-0a33-489f-ac36-5a6d72c25e1a",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C37",
+      "claim": "Relative to the apo state, the binding of ADPR to hsTRPM2 yielded a markedly elevated MHR1/2 layer and a contracted NUDT9-H layer, with the NUDT9-H domain swinging toward the pore axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to the apo state (Figure 1e), the binding of ADPR to hsTRPM2 yielded a markedly elevated MHR1/2 layer and a contracted NUDT9-H layer, with the NUDT9-H domain swinging toward the pore axis (Figure 1f\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison between apo and ADPR-bound states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "11670ac5-2afa-47d9-8fa9-10b5a8aa7c09",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C38",
+      "claim": "This is the first time that the ADPR density has been visualized in the NUDT9-H domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a long-existing consensus view that the NUDT9-H domain binds ADPR, this is the first time that the ADPR density has been visualized in this location (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the novelty of the structural observation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "c1220051-f3ca-4a82-9b03-51303e91c8a3",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C39",
+      "claim": "The clearly defined ADPR1 in the MHR1/2 domain is consistent with the one observed in the drTRPM2 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the clearly defined ADPR1 in the MHR1/2 domain is consistent with the one observed in the drTRPM2 structure (Figure 1\u2014figure supplement 5b,d) (Huang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "bb8591e9-8108-4d0f-aa61-48ebda6a29d4",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C40",
+      "claim": "Key residues in the MHR1/2 site are conserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that key residues in the MHR1/2 site are conserved across species (Figure 2\u2014figure supplement 1) and that the invertebrate nvTRPM2 responds to ADPR independent of their NUDT9-H domains (K\u00fchn et al., 2016), our data strongly supports the concept that that the ligand-binding site in MHR1/2 is conserved throughout all species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "c3643131-981d-4a34-a0d5-fc6af2b994f6",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C41",
+      "claim": "The invertebrate nvTRPM2 responds to ADPR independent of their NUDT9-H domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that key residues in the MHR1/2 site are conserved across species (Figure 2\u2014figure supplement 1) and that the invertebrate nvTRPM2 responds to ADPR independent of their NUDT9-H domains (K\u00fchn et al., 2016), our data strongly supports the concept that that the ligand-binding site in MHR1/2 is conserved throughout all species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "013ad15d-0bbc-4375-814d-ebbf0bbb0176",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C42",
+      "claim": "The ligand-binding site in MHR1/2 is conserved throughout all species.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that key residues in the MHR1/2 site are conserved across species (Figure 2\u2014figure supplement 1) and that the invertebrate nvTRPM2 responds to ADPR independent of their NUDT9-H domains (K\u00fchn et al., 2016), our data strongly supports the concept that that the ligand-binding site in MHR1/2 is conserved throughout all species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from sequence conservation and functional data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "e213fa73-edc6-4cc2-9f78-13ab7ea50386",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C43",
+      "claim": "The binding of 8-Br-cADPR did not produce obvious changes in the overall shape of the protein relative to the apo state.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to ADPR binding, the binding of 8-Br-cADPR did not produce obvious changes in the overall shape of the protein relative to the apo state, in agreement with the view that a competitive antagonist inhibits the protein by stabilizing it in an apo-like state (Figure 1a,d,e,h; Figure 2b,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "6a54f550-1412-4867-9d4b-33fa70b9b0e3",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C44",
+      "claim": "A competitive antagonist inhibits the protein by stabilizing it in an apo-like state.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to ADPR binding, the binding of 8-Br-cADPR did not produce obvious changes in the overall shape of the protein relative to the apo state, in agreement with the view that a competitive antagonist inhibits the protein by stabilizing it in an apo-like state (Figure 1a,d,e,h; Figure 2b,g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle of competitive antagonism applied to the structural observations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "5cbab060-d1db-4f99-b67c-47c44a46fa08",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C45",
+      "claim": "Similar mechanism has been observed for human P2 \u00d7 3 receptor, in which the competitive antagonists TNP-ATP and A-317491 stabilize the apo/resting state.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar mechanism has been observed for human P2 \u00d7 3 receptor, in which the competitive antagonists TNP-ATP and A-317491 stabilize the apo/resting state (Mansoor et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research on a different receptor.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "a300783c-448a-43a8-9a53-1b1c440c5708",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C46",
+      "claim": "In the 8-Br-cADPR/Ca2+-hsTRPM2 structure, the 8-Br-cADPR molecule is observed only in the cleft of MHR1/2 domain, but not in the NUDT9-H domain as previously proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in our 8-Br-cADPR/Ca2+-hsTRPM2 structure, the 8-Br-cADPR molecule is observed only in the cleft of MHR1/2 domain (Figure 2b), but not in the NUDT9-H domain as previously proposed (Eraslan et al., 2019; Kolisek et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural data and contrasts with previous proposals.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "93244152-60dd-4f05-8c57-261a3cd36c29",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C47",
+      "claim": "The MHR1/2 domain is a key ligand-binding site not only for the agonist ADPR but also for the antagonist 8-Br-cADPR of cADPR.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation further supports the idea that the MHR1/2 domain is a key ligand-binding site not only for the agonist ADPR but also for the antagonist 8-Br-cADPR of cADPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the structural observation of 8-Br-cADPR binding only in MHR1/2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "beacc3aa-66c8-4fcb-94e0-fe557dcc1366",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C48",
+      "claim": "The presence of both ADPR and Ca2+ initiates a rapid opening of hsTRPM2, which permits the flow of cations through the ion-conducting pore.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of both ADPR and Ca2+ initiates a rapid opening of hsTRPM2, which permits the flow of cations through the ion-conducting pore (Csan\u00e1dy and T\u00f6rocsik, 2009; McHugh et al., 2003; Perraud et al., 2001; Starkus et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "25a1963b-564a-4052-a401-8e21d4fdd71c",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C49",
+      "claim": "The MHR1/2 domain binds both ADPR and 8-Br-cADPR, whereas NUDT9-H is only accessible to ADPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to the consensus view that the NUDT9-H domain is the only binding site for ADPR and its derivatives, we found that the MHR1/2 domain binds both ADPR and 8-Br-cADPR, whereas NUDT9-H is only accessible to ADPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the structural data showing ligand densities in different domains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "1b588793-03c2-4110-95af-8f4fee7166e4",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C50",
+      "claim": "The shapes of the two binding sites are distinct, which means that access is limited to ligands of a certain molecular geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both sites bind ADPR, the shapes of the two binding sites are distinct, which means that access is limited to ligands of a certain molecular geometry (Figure 2a,c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the structural observation of different binding site shapes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "42c2a7be-183e-4b0c-8902-ebf83d382afc",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C51",
+      "claim": "The binding site in the bi-lobed MHR1/2 cleft is relatively deep, small, and circular.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding site in the bi-lobed MHR1/2 cleft is relatively deep, small, and circular.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structural features of the binding site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "7725f983-e7d0-4c39-92da-9ac67b12388a",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C52",
+      "claim": "ADPR1 is bent into a compact U shape to adapt to the MHR1/2 site.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, ADPR1 is bent into a compact U shape to adapt to the MHR1/2 site (Figure 2c), similar to the finding in the drTRPM2 structure (Figure 2e) (Huang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural data and comparison with drTRPM2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "d6515a70-10d0-4f95-a20f-2309b1cd290c",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C53",
+      "claim": "ADPR1 is clamped between Y295 and the loop connecting the \u03b25 strand \u03b13 helix (\u03b25-\u03b13 loop), with the terminal adenine and terminal ribose moieties close to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "ADPR1 is clamped between Y295 and the loop connecting the \u03b25 strand \u03b13 helix (\u03b25-\u03b13 loop), with the terminal adenine and terminal ribose moieties close to each other (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural data showing specific interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "8923a218-3813-432a-abb2-e5165fda2c0a",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C54",
+      "claim": "Two phosphate groups interact with R358 and the N-terminus of the \u03b17 helix, while the ribose moiety of the adenosine group coordinates with R302.",
+      "claim_type": "EXPLICIT",
+      "source": "Two phosphate groups interact with R358 and the N-terminus of the \u03b17 helix, while the ribose moiety of the adenosine group coordinates with R302.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural data showing specific interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "466af571-ca62-482f-a1fb-81d63382207a",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C55",
+      "claim": "The cleft in the NUDT9-H domain is wider, embraced by its cap and core regions on each side and the central \u03b2 sheet on the bottom, allowing ADPR2 to nestle in an extended shape with the terminal adenine and terminal ribose moieties far apart.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the cleft in the NUDT9-H domain is wider, embraced by its cap and core regions on each side and the central \u03b2 sheet on the bottom, allowing ADPR2 to nestle in an extended shape with the terminal adenine and terminal ribose moieties far apart (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural data describing the binding site geometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "e3be5b55-693f-4775-a91b-d8be9087922e",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C56",
+      "claim": "The adenine moiety of ADPR2 stacks between Y1485 and D1431, while the \u03b1-phosphate group interacts with R1433.",
+      "claim_type": "EXPLICIT",
+      "source": "The adenine moiety of ADPR2 stacks between Y1485 and D1431, while the \u03b1-phosphate group interacts with R1433 (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural data showing specific interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "a2280637-096a-4e18-836b-3099a2dc4280",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C57",
+      "claim": "The \u03b2-phosphate group and the terminal ribose group are less well defined, presumably due to lack of interaction with the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-phosphate group and the terminal ribose group are less well defined, presumably due to lack of interaction with the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the quality of the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "7c1f2dab-f420-439d-9059-61a455fed4b1",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C58",
+      "claim": "ADPR2 in such an extended shape has been observed in other high-resolution structures such as the human protein ADP-ribosylargenine hydrolase.",
+      "claim_type": "EXPLICIT",
+      "source": "ADPR2 in such an extended shape has been observed in other high-resolution structures such as the human protein ADP-ribosylargenine hydrolase (Rack et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "9f1ef18c-2cfe-4991-ad3e-aa1856d97728",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C59",
+      "claim": "8-Br-cADPR shares a similar shape with the U-shaped ADPR1 by connecting the terminal adenine and terminal ribose moieties, but it differs from the extended shape of ADPR2, thus fitting only into the MHR1/2 site.",
+      "claim_type": "EXPLICIT",
+      "source": "The 8-Br-cADPR shares a similar shape with the U-shaped ADPR1 by connecting the terminal adenine and terminal ribose moieties, but it differs from the extended shape of ADPR2, thus fitting only into the MHR1/2 site (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the structural comparison of ligand shapes and binding sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "56582c2e-a6cb-4b0c-a73c-8a050c341bc0",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C60",
+      "claim": "The residues interacting with 8-Br-cADPR, including Y295 and residues in the \u03b25-\u03b13 loop, are mostly the same as those interacting with ADPR1.",
+      "claim_type": "EXPLICIT",
+      "source": "While the residues interacting with 8-Br-cADPR, including Y295 and residues in the \u03b25-\u03b13 loop, are mostly the same as those interacting with ADPR1, a small displacement of the side chain of Y295 was observed due to the extra bromine atom of 8-Br-cADPR (Figure 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "17034699-e704-45e3-aaa3-7166791484b4",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C61",
+      "claim": "A small displacement of the side chain of Y295 was observed due to the extra bromine atom of 8-Br-cADPR.",
+      "claim_type": "EXPLICIT",
+      "source": "While the residues interacting with 8-Br-cADPR, including Y295 and residues in the \u03b25-\u03b13 loop, are mostly the same as those interacting with ADPR1, a small displacement of the side chain of Y295 was observed due to the extra bromine atom of 8-Br-cADPR (Figure 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "0fdedf33-d184-442e-a107-73c48f68e3e7",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C62",
+      "claim": "MHR1/2 represents an orthosteric binding site in TRPM2 across all species.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on several lines of evidence, we concluded that MHR1/2 represents an orthosteric binding site in TRPM2 across all species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple lines of evidence including structural, functional, and sequence conservation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "34f29e48-46d0-4dc3-8620-e532d0727855",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C63",
+      "claim": "Several mutants of the key residues in the binding site in the MHR1/2 domain either markedly decreased or abolished channel activation in response to ADPR/Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "First, several mutants of the key residues in the binding site in the MHR1/2 domain either markedly decreased or abolished channel activation in response to ADPR/Ca2+, which is caused by either altered affinity of ADPR to the MHR1/2 site, or altered allosteric transition from ligand binding to channel opening, or a combination of both (Figure 3a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "98037a57-2796-43b2-8e5b-8265801e681e",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C64",
+      "claim": "The MHR1/2 binding site is crucial for channel gating of hsTRPM2.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the MHR1/2 binding site is crucial for channel gating of hsTRPM2, which agrees with previous functional studies on hsTRPM2 and drTRPM2 (Huang et al., 2018; Kashio et al., 2012; Luo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by functional data and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "659f18f0-b8ec-486a-b5cf-ffebd2ae896e",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C65",
+      "claim": "Key residues responsible for ligand binding in the MHR1/2 site are highly conserved across species from invertebrates to mammals, whereas those in the NUDT9-H site are less conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, key residues responsible for ligand binding in the MHR1/2 site are highly conserved across species from invertebrates to mammals, whereas those in the NUDT9-H site are less conserved (Figure 3d, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "6eada7ef-35ea-4b80-8a5e-39a4a3c70fa1",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C66",
+      "claim": "ADPR-evoked channel activation of invertebrate nvTRPM2 is independent of its NUDT9-H domain, because truncation of that domain does not affect channel function.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, ADPR-evoked channel activation of invertebrate nvTRPM2 is independent of its NUDT9-H domain, because truncation of that domain does not affect channel function (Iordanov et al., 2019; K\u00fchn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "7fdf55b8-448f-41df-8f8d-d11181a57e0b",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C67",
+      "claim": "Mutations of the key residues in the NUDT9-H site markedly affected the channel function of hsTRPM2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our electrophysiology data (Figure 3a), as well as previous reports by other labs (Fliegert et al., 2017; Yu et al., 2017), showed that mutations of the key residues in the NUDT9-H site markedly affected the channel function of hsTRPM2, indicating that this binding site is indispensable for hsTRPM2 activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "28b59f3b-310f-4581-967f-255d02ee0e0c",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C68",
+      "claim": "The NUDT9-H binding site is indispensable for hsTRPM2 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our electrophysiology data (Figure 3a), as well as previous reports by other labs (Fliegert et al., 2017; Yu et al., 2017), showed that mutations of the key residues in the NUDT9-H site markedly affected the channel function of hsTRPM2, indicating that this binding site is indispensable for hsTRPM2 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional data showing that mutations affect channel function.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "a13ee321-f9e8-48ff-8ce7-0d1de1273fd2",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C69",
+      "claim": "The binding of ADPR to the NUDT9-H site assists channel opening in hsTRPM2.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that the binding of ADPR to the NUDT9-H site assists channel opening in hsTRPM2, which will be discussed in the next section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on the structural and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "376883db-8fd3-4c33-94ae-a2c6dc1c93c6",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C70",
+      "claim": "The ADPR- and ADPR/Ca2+-hsTRPM2 structures differ only in the S1-S4 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The ADPR- and ADPR/Ca2+-hsTRPM2 structures differ only in the S1-S4 domain, suggesting that the conformational changes induced by Ca2+ binding is restricted in the TMD and Ca2+ binding facilitates the channel opening, which agrees with published structures of drTRPM2 and hsTRPM4 (Autzen et al., 2018; Huang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "23321ba7-40cf-4942-97a3-6a0aff20491f",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C71",
+      "claim": "The conformational changes induced by Ca2+ binding is restricted in the TMD and Ca2+ binding facilitates the channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "The ADPR- and ADPR/Ca2+-hsTRPM2 structures differ only in the S1-S4 domain, suggesting that the conformational changes induced by Ca2+ binding is restricted in the TMD and Ca2+ binding facilitates the channel opening, which agrees with published structures of drTRPM2 and hsTRPM4 (Autzen et al., 2018; Huang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural comparison and agrees with previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "e8010d18-e5ad-439f-8e71-1f59397aa6f5",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C72",
+      "claim": "The intracellular domain is solely manipulated by the ligands binding in the MHR1/2 and NUDT9-H sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the intracellular domain is solely manipulated by the ligands binding in the MHR1/2 and NUDT9-H sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Ca2+ effects are restricted to the TMD.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "24c2ab59-9b97-4461-ab12-80fe283c4cf0",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C73",
+      "claim": "Despite a different relative positioning between the NUDT9-H and the MHR1/2 domains, the hsTRPM2 showed a rearrangement of the ligand-sensing layer upon binding of ADPR similar to that of drTRPM2.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a different relative positioning between the NUDT9-H and the MHR1/2 domains, the hsTRPM2 showed a rearrangement of the ligand-sensing layer upon binding of ADPR similar to that of drTRPM2 (Figure 4\u2014figure supplement 1a\u2013c) (Huang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison with drTRPM2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "8b347698-3660-410e-adb4-174450aa9ed8",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C74",
+      "claim": "These conserved movements include a pendulum swing of the NUDT9-H domain toward pore axis, along with a contraction and clockwise rotation of the entire NUDT9-H layer, and an upward shift and an outward rotation of the MHR1/2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "These conserved movements include a pendulum swing of the NUDT9-H domain toward pore axis, along with a contraction and clockwise rotation of the entire NUDT9-H layer, and an upward shift and an outward rotation of the MHR1/2 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "feb031d2-7a10-45ac-9040-89b57eec177c",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C75",
+      "claim": "Binding of 8-Br-cADPR did not result in an obvious conformational change of these two domains.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, binding of 8-Br-cADPR did not result in an obvious conformational change of these two domains (Figure 4\u2014figure supplement 1a,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "5d0c556a-503e-4175-a8b9-662f423c6c9f",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C76",
+      "claim": "ADPR binding into the cleft of MHR1/2 led to a clamshell closure similar to that observed in the drTRPM2 structures.",
+      "claim_type": "EXPLICIT",
+      "source": "ADPR binding into the cleft of MHR1/2 led to a clamshell closure similar to that observed in the drTRPM2 structures (Figure 4a, Figure 4\u2014figure supplement 1e\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison with drTRPM2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "b2587aaa-b10d-46e9-b278-65c17f036c8a",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C77",
+      "claim": "Binding of ADPR into the cleft of the NUDT9-H induced a rigid-body rotation of the core region toward the cap region, resulting in a bi-lobed domain closure.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of ADPR into the cleft of the NUDT9-H induced a rigid-body rotation of the core region toward the cap region, resulting in a bi-lobed domain closure (Figure 4b, Figure 4\u2014figure supplement 1h\u2013i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "2cc59f49-f606-4783-8578-2c75c74c8a63",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C78",
+      "claim": "This is the first time that such a motion upon ligand binding has been observed for the NUDT9-H domain.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first time that such a motion upon ligand binding has been observed for the NUDT9-H domain, which is likely conserved in its analog \u2013 the mitochondrial ADP-ribose pyrophosphatase, NUDT9 (Shen et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the observation and speculation about conservation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "196cc71f-2fb4-454b-bb61-2ae5fa288361",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C79",
+      "claim": "The binding of 8-Br-cADPR barely produced any conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the binding of 8-Br-cADPR barely produced any conformational changes (Figure 4\u2014figure supplement 1g,j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "1f4eb422-154e-40ab-9514-193d728b8023",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C80",
+      "claim": "The extra bromide atom is obstructed by Y295, preventing 8-Br-cADPR from going as deep as ADPR into the MHR1/2 cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that 8-Br-cADPR mimics U-shaped ADPR, the extra bromide atom is obstructed by Y295 (Figure 2g), preventing 8-Br-cADPR from going as deep as ADPR into the MHR1/2 cleft.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural data showing the position of 8-Br-cADPR and Y295.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "7b0aa8bb-2085-449a-83fb-961f49f91137",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C81",
+      "claim": "The phosphate groups of 8-Br-cADPR block helix \u03b17 from approaching, thus precluding clamshell closure.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the phosphate groups of 8-Br-cADPR block helix \u03b17 from approaching, thus precluding clamshell closure (Figure 4\u2014figure supplement 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "d021d002-d3a9-447c-ab42-ef8bdd314f34",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C82",
+      "claim": "8-Br-cADPR acts as an antagonist for cADPR in hsTRPM2, which inhibits the channel by occupying and keeping the MHR1/2 clamshell in an open conformation and stabilizing hsTRPM2 in an apo/resting-like state.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the concept that 8-Br-cADPR acts as an antagonist for cADPR in hsTRPM2, which inhibits the channel by occupying and keeping the MHR1/2 clamshell in an open conformation and stabilizing hsTRPM2 in an apo/resting-like state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "ced10473-50bd-4de5-b404-05c59158f11e",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C83",
+      "claim": "Such action of an antagonist has been reported for other ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Such action of an antagonist has been reported for other ion channels (Mansoor et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "762af678-5b4c-4682-a61d-1e9d7e5018c3",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C84",
+      "claim": "The MHR1/2 clamshell closure is the major driving force of channel opening by initiating motion in the intracellular domain which is transduced to the TMD, eventually causing channel opening in cooperation with Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of structural comparison among the hsTPRM2 structures and the previously published functional studies on invertebrate TRPM2 (Iordanov et al., 2019; K\u00fchn et al., 2016), we suggest that the MHR1/2 clamshell closure is the major driving force of channel opening by initiating motion in the intracellular domain which is transduced to the TMD, eventually causing channel opening in cooperation with Ca2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on structural comparison and previous functional studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "6fc7bd95-0aa4-46cf-81c6-143f4cd2c2bb",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C85",
+      "claim": "In the absence of ADPR, the interface between NUDT9-H and MHR1/2 is made of extensive interactions between the core region of NUDT9-H and MHR1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ADPR, their interface is made of extensive interactions between the core region of NUDT9-H and MHR1 (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "e1551794-305c-4e8f-841b-c42253bfbdcc",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C86",
+      "claim": "Upon binding of ADPR, the interface in the apo resting state is disrupted, and a new interface is created in the activation state between the core region and MHR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon binding of ADPR, their interface in the apo resting state is disrupted, and a new interface is created in the activation state between the core region and MHR2 (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "a4c33467-64e4-48b8-ac86-704a989898fa",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C87",
+      "claim": "The ADPR2 may play a role in disrupting the resting interface by pulling the core region away from the adjacent MHR1 domain, which in turn promotes the clamshell closure of MHR1/2 upon binding of ADPR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the core region of the NUDT9-H domain rotates toward the cap region upon binding of ADPR2, we suggest that the ADPR2 may play a role in disrupting the resting interface by pulling the core region away from the adjacent MHR1 domain, which in turn promotes the clamshell closure of MHR1/2 upon binding of ADPR1\u2014a motion that requires flexibility of NUDT9-H that moves along with MHR2, thus assisting channel activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "89777c6e-aada-4f48-abed-be65264ff9c8",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C88",
+      "claim": "The conformational change of the ligand-sensing layer upon binding of ADPR is transduced to the TMD through MHR3/4, whose motion is conserved between hsTRPM2 and drTRPM2.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational change of the ligand-sensing layer upon binding of ADPR is transduced to the TMD through MHR3/4, whose motion is conserved between hsTRPM2 (Figure 5\u2014figure supplement 1) and drTRPM2 (Huang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "9dd6cc1d-e86b-4e7c-9b51-6441da49a753",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C89",
+      "claim": "All four hsTRPM2 structures showed an occluded pore, including the ADPR/Ca2+-hsTRPM2 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the distances between the C\u03b1 of adjacent pore-restricting residues\u2014N1049 and Q1053\u2014with those in drTRPM2 (Huang et al., 2018), all four showed an occluded pore, including the ADPR/Ca2+-hsTRPM2 structure (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural measurements and comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "6034693e-36d4-43b2-90cc-570e70302c04",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C90",
+      "claim": "The EDTA-hsTRPM2 and the 8-Br-cADPR/Ca2+-hsTRPM2 structures were nearly identical, and they clearly represented an apo-resting state and an antagonist-bound inhibited closed state, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The EDTA-hsTRPM2 and the 8-Br-cADPR/Ca2+-hsTRPM2 structures (Figure 5a,d) were nearly identical, and they clearly represented an apo-resting state and an antagonist-bound inhibited closed state, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "8d2f4ae2-3e12-414a-ba67-4f1d30765dfd",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C91",
+      "claim": "Binding of ADPR caused large conformational changes throughout the protein relative to the apo state.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, binding of ADPR caused large conformational changes throughout the protein relative to the apo state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "731f421d-fe09-4404-be65-83eb6f1c687c",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C92",
+      "claim": "Within the TMD specifically, although the pore domain showed little change, the S1-S4 domain underwent a remarkable clockwise rotation around the pore axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the TMD specifically, although the pore domain showed little change, the S1-S4 domain underwent a remarkable clockwise rotation around the pore axis (Figure 5e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "12c74a6b-1b21-4548-9266-948d2766b2d4",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C93",
+      "claim": "The subtle difference between the S1-S4 domains in ADPR- and ADPR/Ca2+-hsTRPM2 was caused by the binding of Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "The subtle difference between the S1-S4 domains in ADPR- and ADPR/Ca2+-hsTRPM2 was caused by the binding of Ca2+ (Figure 5g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "bd5f61d0-6cd7-4bb6-a50f-dc028944feda",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C94",
+      "claim": "The Ca2+ is coordinated by E843, Q846, N869, D872 and E1073, which are conserved among all the Ca2+-sensitive TRPM channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ca2+ is coordinated by E843, Q846, N869, D872 and E1073, which are conserved among all the Ca2+-sensitive TRPM channels (Figure 5h) (Autzen et al., 2018; Huang et al., 2018; Yamaguchi et al., 2019; Yin et al., 2019a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural data and citations to previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "5553e445-e113-47ec-905e-61362360760c",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C95",
+      "claim": "ADPR alone cannot active the TRPM2 channel in the absence of Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Because ADPR alone cannot active the TRPM2 channel in the absence of Ca2+ (McHugh et al., 2003; Sumoza-Toledo and Penner, 2011), we designated the ADPR-hsTRPM2 structure as a ADPR-bound non-activated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "a562bd9e-d95a-4249-be7d-c8e9a45b273b",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C96",
+      "claim": "The ADPR-hsTRPM2 structure is designated as a ADPR-bound non-activated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Because ADPR alone cannot active the TRPM2 channel in the absence of Ca2+ (McHugh et al., 2003; Sumoza-Toledo and Penner, 2011), we designated the ADPR-hsTRPM2 structure as a ADPR-bound non-activated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a designation based on functional knowledge and structural observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "42a0ed7d-6c07-4a04-aec3-d982ab4c4856",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C97",
+      "claim": "The ADPR/Ca2+-hsTRPM2 structure is closed, unlike the ADPR/Ca2+-drTRPM2 structure, which has a wide, open pore.",
+      "claim_type": "EXPLICIT",
+      "source": "The ADPR/Ca2+-hsTRPM2 structure is closed, unlike the ADPR/Ca2+-drTRPM2 structure, which has a wide, open pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "47b38709-9e8c-4cc8-bc99-31a5ce331ed2",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C98",
+      "claim": "A key element of the TRPM2 channel opening is the flipping of the S4-S5 linker from one side of the TRP helix to the other as a result of the synergetic actions of ADPR and Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "A key element of the TRPM2 channel opening is the flipping of the S4-S5 linker from one side of the TRP helix to the other as a result of the synergetic actions of ADPR and Ca2+, which is derived from our two drTRPM2 structures (Huang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "62e6ae55-2fe4-439c-9475-7637f9cb074a",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C99",
+      "claim": "The S4-S5 linkers in the ADPR/Ca2+-hsTRPM2 structure are un-flipped, indicating that the TMD conformation represents either a pre-open or an inactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the S4-S5 linkers in the ADPR/Ca2+-hsTRPM2 structure (Figure 5i,j) are un-flipped, indicating that the TMD conformation represents either a pre-open or an inactive state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "17d87c76-67e9-44d5-aca3-79e48d24efe4",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C100",
+      "claim": "The ADPR/Ca2+-hsTRPM2 structure represents a pre-open state.",
+      "claim_type": "EXPLICIT",
+      "source": "We favor the former, because the structure of ADPR/Ca2+-hsTRPM2 is nearly identical with the non-activated ADPR-hsTRPM2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a favored interpretation based on structural similarity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "64812baf-9a22-4ab1-9a26-c57d4cddf043",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C101",
+      "claim": "The recently published two-fold symmetric drTRPM2 adopts a hybrid of alternating non-flipped and flipped conformation of the S4-S5 linkers in TMD, the former of which represents an intermediate state after ligand binding but prior to channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the recently published two-fold symmetric drTRPM2 adopts a hybrid of alternating non-flipped and flipped conformation of the S4-S5 linkers in TMD (Yin et al., 2019b), the former of which represents an intermediate state after ligand binding but prior to channel opening, which is similar to the TMD conformation of in our ADPR/Ca2+-bound hsTRPM2 structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "66e183ff-6be4-48bf-bfe7-ef0a60f738bf",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C102",
+      "claim": "The published hsTRPM2 structure in the presence of Ca2+ and ADPR at 6.4 \u00c5 overall resolution was reported as an open state, but this interpretation is questionable.",
+      "claim_type": "EXPLICIT",
+      "source": "We have noted that the published hsTRPM2 structure in the presence of Ca2+ and ADPR at 6.4 \u00c5 overall resolution was reported as an open state (Wang et al., 2018). However, that interpretation is questionable, not only because most of the transmembrane domain was poorly defined in the cryo-EM map but also because the S4-S5 linker in the ADPR/Ca2+-bound structure was clearly on the same side as in the apo resting structure (Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of previous work based on structural analysis.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "1786ea3b-db49-4481-b37d-f93f63275426",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C103",
+      "claim": "The functional state of the channel correlated with the conformation of the MHR1/2 domain; that is, the channel is in a ligand-free, apo (resting) state or an antagonist-bound inhibited state when MHR1/2 is open, and the channel is in an agonist-bound active state when the MHR1/2 is closed.",
+      "claim_type": "EXPLICIT",
+      "source": "A central concept of the relationship between ligand binding and channel gating in TRPM2 arises on the basis of our hsTRPM2 and drTRPM2 structures, in which the functional state of the channel correlated with the conformation of the MHR1/2 domain; that is, the channel is in a ligand-free, apo (resting) state or an antagonist-bound inhibited state when MHR1/2 is open, and the channel is in an agonist-bound active state when the MHR1/2 is closed (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a central concept derived from the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "36e258f3-a022-4b99-9030-35697f6ea7f6",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C104",
+      "claim": "The channel opening also requires the binding of Ca2+ in the TMD and a second ADPR molecule in the NUDT9-H domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The channel opening also requires the binding of Ca2+ in the TMD and a second ADPR molecule in the NUDT9-H domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the structural and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "f8208b5f-d748-47b6-97a9-99085c7e0cb7",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C105",
+      "claim": "TRPM2 is one example in which activation of the channel requires the synergetic binding of two ligands in three distinct sites.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPM2 is one example in which activation of the channel requires the synergetic binding of two ligands in three distinct sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "fe240927-36a0-4d1c-986d-9f956afd2535",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C106",
+      "claim": "In the nvTRPM2, the NUDT9-H domain likely lacks any interface with the rest of the protein, because it is completely invisible in the structure, despite the rest of the protein being well resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "In the nvTRPM2, the NUDT9-H domain likely lacks any interface with the rest of the protein, because it is completely invisible in the structure, despite the rest of the protein being well resolved (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observation and citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "fdef318b-a8f5-4423-8a26-94f4c78bd320",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C107",
+      "claim": "The drTRPM2 has a visible but poorly defined NUDT9-H domain with a single major interface between the cognate MHR1/2 and NUDT9-H domains.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the drTRPM2 has a visible but poorly defined NUDT9-H domain with a single major interface between the cognate MHR1/2 and NUDT9-H domains (Huang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "97ba912e-a85a-4806-973b-eec6cbe7809b",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C108",
+      "claim": "The hsTRPM2 has a well-defined NUDT9-H domain that has two major interfaces with the rest of protein, one with the cognate MHR1/2 and the other with the adjacent MHR1/2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the hsTRPM2 has a well-defined NUDT9-H domain that has two major interfaces with the rest of protein, one with the cognate MHR1/2 and the other with the adjacent MHR1/2 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "4fb65a7e-aeb3-42db-9f2e-c571016970ae",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C109",
+      "claim": "An incrementally tighter interaction between the NUDT9-H domain and the rest of protein is in harmony with the fact that the NUDT9-H domain gained more function along the evolution from invertebrates to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an incrementally tighter interaction between the NUDT9-H domain and the rest of protein is in harmony with the fact that the NUDT9-H domain gained more function along the evolution from invertebrates to mammals, such as temperature sensing, redox sensing, and channel gating, to endow TRPM2 with a polymodal nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting structural observations with evolutionary functional changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "5e681ab0-9714-4c6e-aba5-c9349f7f3d65",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C110",
+      "claim": "The NUDT9-H domain has lost the ability to hydrolyze ADPR into AMP and ribose-5-phosphate, a function that exists only in invertebrate TRPM2 and NUDT9.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, the NUDT9-H domain has lost the ability to hydrolyze ADPR into AMP and ribose-5-phosphate, a function that exists only in invertebrate TRPM2 and NUDT9 (Iordanov et al., 2016; Iordanov et al., 2019; T\u00f3th et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "fdc6eb35-fcf3-49e2-8f72-fb7960ba40f5",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C111",
+      "claim": "A comparison between NUDT9-H in hsTRPM2 and NUDT9 shows a wider opening of the cleft in NUDT9.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison between NUDT9-H in hsTRPM2 and NUDT9 (Shen et al., 2003) shows a wider opening of the cleft in NUDT9 (Figure 6\u2014figure supplement 1), which is likely related to the fact that the core region in hsTRPM2 is restricted by the adjacent MHR1/2, whereas NUDT9 lacks such a restriction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural comparison and inference.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "59c31d59-a3c1-4d4e-8fe1-2fe48987cb3c",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C112",
+      "claim": "Such a restriction for the NUDT9-H domain is also missing in invertebrate TRPM2 such as nvTRPM2, perhaps giving rise to a similar cleft opening as in NUDT9 and thus preserved enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a restriction for the NUDT9-H domain is also missing in invertebrate TRPM2 such as nvTRPM2, perhaps giving rise to a similar cleft opening as in NUDT9 and thus preserved enzymatic activity (Iordanov et al., 2019; K\u00fchn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on structural comparison and functional knowledge.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "ef232a68-313b-4d3e-a62f-70d721194081",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C113",
+      "claim": "The human TRPM2 structures defined two distinctive ADPR binding sites, one in the MHR1/2 domain and one in the NUDT9-H domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our human TRPM2 structures defined two distinctive ADPR binding sites, one in the MHR1/2 domain and one in the NUDT9-H domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the structural findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "b6be6fbd-cd33-41c1-b416-e3632a02c396",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "claim_id": "C114",
+      "claim": "These structures demonstrate how incorporation of three different ligand binding sites, including the Ca2+ site in the TMD, regulates channel function.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures demonstrate how incorporation of three different ligand binding sites, including the Ca2+ site in the TMD, regulates channel function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the mechanistic insights from the structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "888b5d13-bc9f-4dce-a3d3-049f3fc4f103",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Four cryo-EM structures of human TRPM2 were determined at 3.3-3.7 \u00c5 resolution, revealing ADPR binding in both the MHR1/2 and NUDT9-H domains, and 8-Br-cADPR binding only in the MHR1/2 domain. This is the first direct visualization of ADPR in the NUDT9-H domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 describe the structural determination with appropriate resolutions and ligand densities visible in the cryo-EM maps. C38-C39 establish novelty and consistency with prior zebrafish structures. The structural data, including figures showing electron density maps, directly support these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "5df4ae71-e9f3-4295-82f7-f4d19e90c0a5",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ADPR binds to two distinct sites with different geometries: a U-shaped conformation in the compact MHR1/2 cleft and an extended conformation in the wider NUDT9-H cleft. 8-Br-cADPR shares the U-shape and binds only to MHR1/2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C56 and C59 describe detailed structural features of the two binding sites with specific residue interactions visible in the cryo-EM structures. The geometric constraints explaining ligand selectivity are well-supported by the structural data shown in Figure 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "cc5a4992-5a75-4628-a311-9b5a87f08823",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MHR1/2 represents a conserved orthosteric binding site across all TRPM2 species. Mutations of key MHR1/2 residues markedly decreased or abolished channel activation, and these residues are highly conserved from invertebrates to mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are supported by electrophysiology data (Figure 3a-c) showing functional effects of mutations, sequence alignment data showing conservation (Figure 2\u2014figure supplement 1), and functional studies on invertebrate TRPM2 (C66). The convergence of structural, functional, and evolutionary evidence strongly supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "c8366605-2d29-4ad4-a7b7-7475df9f900b",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The NUDT9-H domain binds a second ADPR molecule that assists channel activation in vertebrates. Mutations in the NUDT9-H site markedly affected hsTRPM2 function, but this domain is not necessary for invertebrate TRPM2 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by electrophysiology data and citations to previous studies. C66 provides contrasting evidence from invertebrates. C87 proposes a mechanism based on structural observations of interface rearrangement. The functional importance is well-established, though the precise mechanistic role involves some inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "dfae0192-903a-4575-9ff4-f25f2406e5f3",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "8-Br-cADPR acts as an antagonist by binding only to the MHR1/2 domain and stabilizing the channel in an apo-like conformation without inducing domain closure. The bromine atom prevents deep insertion and blocks the conformational changes required for activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C75, C79 show lack of conformational change supported by structural comparisons. C80-C81 explain the mechanism through steric hindrance by the bromine atom. C82 synthesizes these observations into a coherent antagonist mechanism. The structural data in Figures 2g and 4 directly support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "c509465c-6624-4983-96a4-08eaa902a58d",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ca2+ binding induces conformational changes restricted to the S1-S4 domain of the TMD, while the intracellular domain is manipulated solely by ADPR binding to MHR1/2 and NUDT9-H sites. Conformational changes are transduced through MHR3/4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70 and C92-C93 are supported by structural comparisons showing differences only in the S1-S4 domain between ADPR and ADPR/Ca2+ structures. C88 describes the transduction pathway. The structural data and comparison with previous TRPM2 and TRPM4 structures support these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "341629d9-a098-4917-b099-4c467dac89f9",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ADPR binding induces clamshell closure of both the MHR1/2 and NUDT9-H domains, disrupting the resting interface between NUDT9-H and MHR1 and creating a new activation interface with MHR2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 describe domain closures supported by structural comparisons in Figure 4. C85-C86 describe interface rearrangement supported by structural data. C87 proposes a mechanistic role for ADPR2, which is a reasonable inference from the structural observations but involves some speculation about the sequential events.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "843c89c5-7d8e-4ebf-84e5-1ff60d2d6507",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "All four hsTRPM2 structures show occluded pores. The ADPR/Ca2+-hsTRPM2 structure represents a pre-open state with un-flipped S4-S5 linkers, unlike the open drTRPM2 structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 are supported by pore measurements in Figure 5. C96-C97 establish the non-activated and closed states based on structural and functional knowledge. C99-C100 interpret the ADPR/Ca2+ structure as pre-open based on S4-S5 linker conformation and similarity to the ADPR-only structure, supported by comparison with recent drTRPM2 structures (C101).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "f6448fff-6f25-4546-963e-008fda31c39e",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Channel gating correlates with MHR1/2 conformation: open MHR1/2 corresponds to resting/inhibited states, while closed MHR1/2 corresponds to active states. Full activation requires synergistic binding of ADPR at two sites and Ca2+ at a third site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C105 synthesize the structural and functional observations into a central mechanistic concept. C113-C114 summarize the findings. This conclusion is well-supported by the convergence of structural data showing conformational states, functional data showing requirements for activation, and the novel observation of three distinct ligand binding sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "e87b87d9-f870-4867-b9d3-1202c1c96323",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The NUDT9-H domain shows incrementally tighter coupling to the rest of the protein from invertebrates to mammals, correlating with its functional importance. In hsTRPM2, it forms both intra- and intersubunit interfaces; in drTRPM2, only intrasubunit; in nvTRPM2, it is invisible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 and C106-C108 describe structural observations across species supported by the current structures and citations to previous work. C109 connects these structural differences to functional evolution, which is a reasonable inference supported by functional studies showing the NUDT9-H domain is important in vertebrates but not invertebrates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "e8b6b578-c876-4f57-aead-a0fab5166fef",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A previous hsTRPM2 structure at 6.4 \u00c5 resolution was reported as open, but this interpretation is questionable due to poor TMD definition and the S4-S5 linker being on the same side as in the apo structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 and C102 critically evaluate prior work by Wang et al. (2018). The criticism is justified based on resolution limitations (C23) and structural analysis of the S4-S5 linker position (C102). This represents appropriate scientific critique supported by structural reasoning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "14af5ff9-d8a9-4d98-8e01-be2b2e579b33",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "hsTRPM2 shares a four-layer arrangement with drTRPM2 but differs in overall shape due to NUDT9-H positioning. ADPR binding causes conserved movements including NUDT9-H swing toward the pore axis, layer contraction/rotation, and MHR1/2 elevation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 describe overall architecture supported by structural comparison. C37, C73-C74, and C91 describe conformational changes upon ADPR binding supported by structural comparisons in Figures 1 and 4. The conservation of movements despite different starting positions is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "ec276fec-e474-44a5-bfce-4f98b39779fa",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Ca2+ is coordinated by conserved residues (E843, Q846, N869, D872, E1073) in the same location as other Ca2+-sensitive TRPM channels. ADPR alone cannot activate TRPM2 without Ca2+. S4-S5 linker flipping is a key element of channel opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 is supported by structural data and comparison with other TRPM structures. C95 is supported by citations to functional studies. C98 is supported by citation to previous drTRPM2 structures. These are well-established observations that provide context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "ee239b22-cb34-454d-b004-4fb6f6b49ad5",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The NUDT9-H domain has lost enzymatic activity to hydrolyze ADPR in vertebrates, which exists only in invertebrate TRPM2 and NUDT9. This correlates with structural differences in cleft opening between NUDT9-H and NUDT9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C110 is supported by citations to previous functional studies. C111 describes structural comparison with NUDT9 showing wider cleft opening. C112 speculates about the relationship between structure and function in invertebrates, which is reasonable but involves speculation. The loss of enzymatic activity is well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "801f32b1-985e-46f6-af9e-5875f69bb6a7",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background information on TRPM2 function, ADPR metabolism, and previous structural studies establishes the context and motivation for the current work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C21 provide background information supported by citations to previous literature. C14-C15 establish the gap in knowledge (lack of direct observation of ADPR in NUDT9-H) that this study addresses. C16 cites the authors' previous work on drTRPM2. This background is appropriately cited and contextualizes the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    },
+    {
+      "id": "bbaf8fad-cee6-488f-936f-ac0e803eac72",
+      "content_id": "1e0911fb-1a0d-492a-9999-39838d4ddda4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "ADPR and Ca2+ together initiate rapid channel opening. MHR1/2 clamshell closure is suggested as the major driving force for channel opening, initiating motion transduced to the TMD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C48 is supported by citations to functional studies. However, C84 is explicitly stated as a suggestion based on structural comparison and functional studies. While the structural observations support this model, the claim that MHR1/2 closure is the \"major driving force\" involves significant inference about causality and temporal sequence that cannot be definitively established from static structures alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:41.389668Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7f55cb91-188b-49e2-83ee-1386687622ee",
+      "result_id": "888b5d13-bc9f-4dce-a3d3-049f3fc4f103"
+    },
+    {
+      "claim_id": "fe74a3d6-42ba-4ef1-aff6-426f4e95453b",
+      "result_id": "888b5d13-bc9f-4dce-a3d3-049f3fc4f103"
+    },
+    {
+      "claim_id": "453347f7-d258-4ad4-9522-5101fdc42e68",
+      "result_id": "888b5d13-bc9f-4dce-a3d3-049f3fc4f103"
+    },
+    {
+      "claim_id": "c43229ee-457a-4f0a-8489-724523c3645a",
+      "result_id": "888b5d13-bc9f-4dce-a3d3-049f3fc4f103"
+    },
+    {
+      "claim_id": "317c87ff-cbb0-427f-a0d5-a5178b4038cf",
+      "result_id": "888b5d13-bc9f-4dce-a3d3-049f3fc4f103"
+    },
+    {
+      "claim_id": "11670ac5-2afa-47d9-8fa9-10b5a8aa7c09",
+      "result_id": "888b5d13-bc9f-4dce-a3d3-049f3fc4f103"
+    },
+    {
+      "claim_id": "c1220051-f3ca-4a82-9b03-51303e91c8a3",
+      "result_id": "888b5d13-bc9f-4dce-a3d3-049f3fc4f103"
+    },
+    {
+      "claim_id": "2e5b5d55-4c3f-4a6f-bbee-d219947d3580",
+      "result_id": "5df4ae71-e9f3-4295-82f7-f4d19e90c0a5"
+    },
+    {
+      "claim_id": "453347f7-d258-4ad4-9522-5101fdc42e68",
+      "result_id": "5df4ae71-e9f3-4295-82f7-f4d19e90c0a5"
+    },
+    {
+      "claim_id": "25a1963b-564a-4052-a401-8e21d4fdd71c",
+      "result_id": "5df4ae71-e9f3-4295-82f7-f4d19e90c0a5"
+    },
+    {
+      "claim_id": "1b588793-03c2-4110-95af-8f4fee7166e4",
+      "result_id": "5df4ae71-e9f3-4295-82f7-f4d19e90c0a5"
+    },
+    {
+      "claim_id": "42c2a7be-183e-4b0c-8902-ebf83d382afc",
+      "result_id": "5df4ae71-e9f3-4295-82f7-f4d19e90c0a5"
+    },
+    {
+      "claim_id": "7725f983-e7d0-4c39-92da-9ac67b12388a",
+      "result_id": "5df4ae71-e9f3-4295-82f7-f4d19e90c0a5"
+    },
+    {
+      "claim_id": "d6515a70-10d0-4f95-a20f-2309b1cd290c",
+      "result_id": "5df4ae71-e9f3-4295-82f7-f4d19e90c0a5"
+    },
+    {
+      "claim_id": "8923a218-3813-432a-abb2-e5165fda2c0a",
+      "result_id": "5df4ae71-e9f3-4295-82f7-f4d19e90c0a5"
+    },
+    {
+      "claim_id": "466af571-ca62-482f-a1fb-81d63382207a",
+      "result_id": "5df4ae71-e9f3-4295-82f7-f4d19e90c0a5"
+    },
+    {
+      "claim_id": "e3be5b55-693f-4775-a91b-d8be9087922e",
+      "result_id": "5df4ae71-e9f3-4295-82f7-f4d19e90c0a5"
+    },
+    {
+      "claim_id": "9f1ef18c-2cfe-4991-ad3e-aa1856d97728",
+      "result_id": "5df4ae71-e9f3-4295-82f7-f4d19e90c0a5"
+    },
+    {
+      "claim_id": "6c94faf6-7615-494e-b42d-5ca634402ea7",
+      "result_id": "cc5a4992-5a75-4628-a311-9b5a87f08823"
+    },
+    {
+      "claim_id": "bb8591e9-8108-4d0f-aa61-48ebda6a29d4",
+      "result_id": "cc5a4992-5a75-4628-a311-9b5a87f08823"
+    },
+    {
+      "claim_id": "013ad15d-0bbc-4375-814d-ebbf0bbb0176",
+      "result_id": "cc5a4992-5a75-4628-a311-9b5a87f08823"
+    },
+    {
+      "claim_id": "0fdedf33-d184-442e-a107-73c48f68e3e7",
+      "result_id": "cc5a4992-5a75-4628-a311-9b5a87f08823"
+    },
+    {
+      "claim_id": "34f29e48-46d0-4dc3-8620-e532d0727855",
+      "result_id": "cc5a4992-5a75-4628-a311-9b5a87f08823"
+    },
+    {
+      "claim_id": "98037a57-2796-43b2-8e5b-8265801e681e",
+      "result_id": "cc5a4992-5a75-4628-a311-9b5a87f08823"
+    },
+    {
+      "claim_id": "659f18f0-b8ec-486a-b5cf-ffebd2ae896e",
+      "result_id": "cc5a4992-5a75-4628-a311-9b5a87f08823"
+    },
+    {
+      "claim_id": "0439f6d0-287d-4af7-82fd-624ae640d17c",
+      "result_id": "c8366605-2d29-4ad4-a7b7-7475df9f900b"
+    },
+    {
+      "claim_id": "7fdf55b8-448f-41df-8f8d-d11181a57e0b",
+      "result_id": "c8366605-2d29-4ad4-a7b7-7475df9f900b"
+    },
+    {
+      "claim_id": "28b59f3b-310f-4581-967f-255d02ee0e0c",
+      "result_id": "c8366605-2d29-4ad4-a7b7-7475df9f900b"
+    },
+    {
+      "claim_id": "a13ee321-f9e8-48ff-8ce7-0d1de1273fd2",
+      "result_id": "c8366605-2d29-4ad4-a7b7-7475df9f900b"
+    },
+    {
+      "claim_id": "a4c33467-64e4-48b8-ac86-704a989898fa",
+      "result_id": "c8366605-2d29-4ad4-a7b7-7475df9f900b"
+    },
+    {
+      "claim_id": "d8c42daf-6ae8-4f93-960d-3fa09d13081a",
+      "result_id": "dfae0192-903a-4575-9ff4-f25f2406e5f3"
+    },
+    {
+      "claim_id": "c43229ee-457a-4f0a-8489-724523c3645a",
+      "result_id": "dfae0192-903a-4575-9ff4-f25f2406e5f3"
+    },
+    {
+      "claim_id": "e213fa73-edc6-4cc2-9f78-13ab7ea50386",
+      "result_id": "dfae0192-903a-4575-9ff4-f25f2406e5f3"
+    },
+    {
+      "claim_id": "a300783c-448a-43a8-9a53-1b1c440c5708",
+      "result_id": "dfae0192-903a-4575-9ff4-f25f2406e5f3"
+    },
+    {
+      "claim_id": "93244152-60dd-4f05-8c57-261a3cd36c29",
+      "result_id": "dfae0192-903a-4575-9ff4-f25f2406e5f3"
+    },
+    {
+      "claim_id": "feb031d2-7a10-45ac-9040-89b57eec177c",
+      "result_id": "dfae0192-903a-4575-9ff4-f25f2406e5f3"
+    },
+    {
+      "claim_id": "196cc71f-2fb4-454b-bb61-2ae5fa288361",
+      "result_id": "dfae0192-903a-4575-9ff4-f25f2406e5f3"
+    },
+    {
+      "claim_id": "1f4eb422-154e-40ab-9514-193d728b8023",
+      "result_id": "dfae0192-903a-4575-9ff4-f25f2406e5f3"
+    },
+    {
+      "claim_id": "7b0aa8bb-2085-449a-83fb-961f49f91137",
+      "result_id": "dfae0192-903a-4575-9ff4-f25f2406e5f3"
+    },
+    {
+      "claim_id": "d021d002-d3a9-447c-ab42-ef8bdd314f34",
+      "result_id": "dfae0192-903a-4575-9ff4-f25f2406e5f3"
+    },
+    {
+      "claim_id": "376883db-8fd3-4c33-94ae-a2c6dc1c93c6",
+      "result_id": "c509465c-6624-4983-96a4-08eaa902a58d"
+    },
+    {
+      "claim_id": "23321ba7-40cf-4942-97a3-6a0aff20491f",
+      "result_id": "c509465c-6624-4983-96a4-08eaa902a58d"
+    },
+    {
+      "claim_id": "e8010d18-e5ad-439f-8e71-1f59397aa6f5",
+      "result_id": "c509465c-6624-4983-96a4-08eaa902a58d"
+    },
+    {
+      "claim_id": "89777c6e-aada-4f48-abed-be65264ff9c8",
+      "result_id": "c509465c-6624-4983-96a4-08eaa902a58d"
+    },
+    {
+      "claim_id": "731f421d-fe09-4404-be65-83eb6f1c687c",
+      "result_id": "c509465c-6624-4983-96a4-08eaa902a58d"
+    },
+    {
+      "claim_id": "12c74a6b-1b21-4548-9266-948d2766b2d4",
+      "result_id": "c509465c-6624-4983-96a4-08eaa902a58d"
+    },
+    {
+      "claim_id": "5d0c556a-503e-4175-a8b9-662f423c6c9f",
+      "result_id": "341629d9-a098-4917-b099-4c467dac89f9"
+    },
+    {
+      "claim_id": "b2587aaa-b10d-46e9-b278-65c17f036c8a",
+      "result_id": "341629d9-a098-4917-b099-4c467dac89f9"
+    },
+    {
+      "claim_id": "6fc7bd95-0aa4-46cf-81c6-143f4cd2c2bb",
+      "result_id": "341629d9-a098-4917-b099-4c467dac89f9"
+    },
+    {
+      "claim_id": "e1551794-305c-4e8f-841b-c42253bfbdcc",
+      "result_id": "341629d9-a098-4917-b099-4c467dac89f9"
+    },
+    {
+      "claim_id": "a4c33467-64e4-48b8-ac86-704a989898fa",
+      "result_id": "341629d9-a098-4917-b099-4c467dac89f9"
+    },
+    {
+      "claim_id": "9dd6cc1d-e86b-4e7c-9b51-6441da49a753",
+      "result_id": "843c89c5-7d8e-4ebf-84e5-1ff60d2d6507"
+    },
+    {
+      "claim_id": "6034693e-36d4-43b2-90cc-570e70302c04",
+      "result_id": "843c89c5-7d8e-4ebf-84e5-1ff60d2d6507"
+    },
+    {
+      "claim_id": "a562bd9e-d95a-4249-be7d-c8e9a45b273b",
+      "result_id": "843c89c5-7d8e-4ebf-84e5-1ff60d2d6507"
+    },
+    {
+      "claim_id": "42a0ed7d-6c07-4a04-aec3-d982ab4c4856",
+      "result_id": "843c89c5-7d8e-4ebf-84e5-1ff60d2d6507"
+    },
+    {
+      "claim_id": "62e6ae55-2fe4-439c-9475-7637f9cb074a",
+      "result_id": "843c89c5-7d8e-4ebf-84e5-1ff60d2d6507"
+    },
+    {
+      "claim_id": "17d87c76-67e9-44d5-aca3-79e48d24efe4",
+      "result_id": "843c89c5-7d8e-4ebf-84e5-1ff60d2d6507"
+    },
+    {
+      "claim_id": "1786ea3b-db49-4481-b37d-f93f63275426",
+      "result_id": "f6448fff-6f25-4546-963e-008fda31c39e"
+    },
+    {
+      "claim_id": "36e258f3-a022-4b99-9030-35697f6ea7f6",
+      "result_id": "f6448fff-6f25-4546-963e-008fda31c39e"
+    },
+    {
+      "claim_id": "f8208b5f-d748-47b6-97a9-99085c7e0cb7",
+      "result_id": "f6448fff-6f25-4546-963e-008fda31c39e"
+    },
+    {
+      "claim_id": "ef232a68-313b-4d3e-a62f-70d721194081",
+      "result_id": "f6448fff-6f25-4546-963e-008fda31c39e"
+    },
+    {
+      "claim_id": "b6be6fbd-cd33-41c1-b416-e3632a02c396",
+      "result_id": "f6448fff-6f25-4546-963e-008fda31c39e"
+    },
+    {
+      "claim_id": "31458a56-e5a0-4deb-bac5-1d61da6dbf2c",
+      "result_id": "e87b87d9-f870-4867-b9d3-1202c1c96323"
+    },
+    {
+      "claim_id": "78ffb58e-7d7b-45d1-b151-2ad03c10d4fb",
+      "result_id": "e87b87d9-f870-4867-b9d3-1202c1c96323"
+    },
+    {
+      "claim_id": "08fafbfe-310a-46fb-8c1a-1ad2d66da646",
+      "result_id": "e87b87d9-f870-4867-b9d3-1202c1c96323"
+    },
+    {
+      "claim_id": "cbee462b-e62d-4090-b2e3-5580fb876649",
+      "result_id": "e87b87d9-f870-4867-b9d3-1202c1c96323"
+    },
+    {
+      "claim_id": "fe240927-36a0-4d1c-986d-9f956afd2535",
+      "result_id": "e87b87d9-f870-4867-b9d3-1202c1c96323"
+    },
+    {
+      "claim_id": "fdef318b-a8f5-4423-8a26-94f4c78bd320",
+      "result_id": "e87b87d9-f870-4867-b9d3-1202c1c96323"
+    },
+    {
+      "claim_id": "97ba912e-a85a-4806-973b-eec6cbe7809b",
+      "result_id": "e87b87d9-f870-4867-b9d3-1202c1c96323"
+    },
+    {
+      "claim_id": "4fb65a7e-aeb3-42db-9f2e-c571016970ae",
+      "result_id": "e87b87d9-f870-4867-b9d3-1202c1c96323"
+    },
+    {
+      "claim_id": "92d46462-6a12-4496-b647-3f1693e9a41b",
+      "result_id": "e8b6b578-c876-4f57-aead-a0fab5166fef"
+    },
+    {
+      "claim_id": "8e168d46-e77f-42ef-9b56-af7e9634a90a",
+      "result_id": "e8b6b578-c876-4f57-aead-a0fab5166fef"
+    },
+    {
+      "claim_id": "66e183ff-6be4-48bf-bfe7-ef0a60f738bf",
+      "result_id": "e8b6b578-c876-4f57-aead-a0fab5166fef"
+    },
+    {
+      "claim_id": "ac89cd04-9b60-4273-b6e9-cba79a583844",
+      "result_id": "14af5ff9-d8a9-4d98-8e01-be2b2e579b33"
+    },
+    {
+      "claim_id": "b8d7ad0d-9113-46c2-bc2a-e950cb3f598a",
+      "result_id": "14af5ff9-d8a9-4d98-8e01-be2b2e579b33"
+    },
+    {
+      "claim_id": "3f28278b-0a33-489f-ac36-5a6d72c25e1a",
+      "result_id": "14af5ff9-d8a9-4d98-8e01-be2b2e579b33"
+    },
+    {
+      "claim_id": "24c2ab59-9b97-4461-ab12-80fe283c4cf0",
+      "result_id": "14af5ff9-d8a9-4d98-8e01-be2b2e579b33"
+    },
+    {
+      "claim_id": "8b347698-3660-410e-adb4-174450aa9ed8",
+      "result_id": "14af5ff9-d8a9-4d98-8e01-be2b2e579b33"
+    },
+    {
+      "claim_id": "8d2f4ae2-3e12-414a-ba67-4f1d30765dfd",
+      "result_id": "14af5ff9-d8a9-4d98-8e01-be2b2e579b33"
+    },
+    {
+      "claim_id": "bd5f61d0-6cd7-4bb6-a50f-dc028944feda",
+      "result_id": "ec276fec-e474-44a5-bfce-4f98b39779fa"
+    },
+    {
+      "claim_id": "5553e445-e113-47ec-905e-61362360760c",
+      "result_id": "ec276fec-e474-44a5-bfce-4f98b39779fa"
+    },
+    {
+      "claim_id": "47b38709-9e8c-4cc8-bc99-31a5ce331ed2",
+      "result_id": "ec276fec-e474-44a5-bfce-4f98b39779fa"
+    },
+    {
+      "claim_id": "5e681ab0-9714-4c6e-aba5-c9349f7f3d65",
+      "result_id": "ee239b22-cb34-454d-b004-4fb6f6b49ad5"
+    },
+    {
+      "claim_id": "fdc6eb35-fcf3-49e2-8f72-fb7960ba40f5",
+      "result_id": "ee239b22-cb34-454d-b004-4fb6f6b49ad5"
+    },
+    {
+      "claim_id": "59c31d59-a3c1-4d4e-8fe1-2fe48987cb3c",
+      "result_id": "ee239b22-cb34-454d-b004-4fb6f6b49ad5"
+    },
+    {
+      "claim_id": "baae3e3b-5a70-4daa-9fb7-5b1ac3beb3ce",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "0556b65f-ad15-4961-a9f5-3d82f4c3038b",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "3d78f0ba-2272-4a74-af55-16878a2b4453",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "5244fe28-6422-497c-af40-a1c361e3682b",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "90e9ebcc-1855-4670-9777-448d30d1876b",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "ce09dfce-fa43-4ca8-9442-67bd5c62482d",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "7a9bc6ce-3d5e-4140-8a69-27dcb428ca40",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "e8388003-40de-4705-9e99-56a40162577e",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "70563ef7-5528-45b7-8609-94aa1d63f1d0",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "bfc0fd8f-0d4c-43fd-a43b-51cd8f667167",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "9036f722-6cc1-4e1e-b047-68432c13da6a",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "457ea55e-40a4-49fa-a09b-b1af2be2c519",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "d8bb9a57-b0f1-4bf0-b04e-a0fa10782d2f",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "058d6c10-b2e6-4202-bc7f-926098a6382d",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "5659a517-e196-422c-94bb-e8304d9afb4b",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "81e7d850-dabc-4563-ae06-d1553ebd2aae",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "d8b63b0e-d6ab-4852-9e04-e1eeb38b96c7",
+      "result_id": "801f32b1-985e-46f6-af9e-5875f69bb6a7"
+    },
+    {
+      "claim_id": "beacc3aa-66c8-4fcb-94e0-fe557dcc1366",
+      "result_id": "bbaf8fad-cee6-488f-936f-ac0e803eac72"
+    },
+    {
+      "claim_id": "762af678-5b4c-4682-a61d-1e9d7e5018c3",
+      "result_id": "bbaf8fad-cee6-488f-936f-ac0e803eac72"
+    }
+  ],
+  "comparisons": []
+}

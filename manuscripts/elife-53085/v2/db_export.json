@@ -1,0 +1,1786 @@
+{
+  "submission": {
+    "id": "b4cc99af-ebab-40ec-b454-53e2a81253d3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:23:54.447419Z",
+    "updated_at": "2025-12-02T16:23:54.447419Z"
+  },
+  "content": [
+    {
+      "id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "submission_id": "b4cc99af-ebab-40ec-b454-53e2a81253d3",
+      "content_type": "manuscript",
+      "content_text": "# Chloride channels regulate differentiation and barrier functions of the mammalian airway\n\n## Authors\n\n- Mu He<sup>1</sup> ([ORCID: 0000-0002-3812-6165](https://orcid.org/0000-0002-3812-6165)) \u2020\n- Bing Wu<sup>2</sup>\n- Wenlei Ye<sup>1</sup> ([ORCID: 0000-0002-4694-1493](https://orcid.org/0000-0002-4694-1493))\n- Daniel D Le<sup>2</sup>\n- Adriane W Sinclair<sup>3</sup>\n- Valeria Padovano<sup>5</sup> ([ORCID: 0000-0002-0142-3385](https://orcid.org/0000-0002-0142-3385))\n- Yuzhang Chen<sup>6</sup>\n- Ke-Xin Li<sup>1</sup> ([ORCID: 0000-0003-3879-294X](https://orcid.org/0000-0003-3879-294X))\n- Rene Sit<sup>2</sup>\n- Michelle Tan<sup>2</sup>\n- Michael J Caplan<sup>5</sup>\n- Norma Neff<sup>2</sup>\n- Yuh Nung Jan<sup>1</sup> ([ORCID: 0000-0003-1367-6299](https://orcid.org/0000-0003-1367-6299))\n- Spyros Darmanis<sup>2</sup> \u2020\n- Lily Yeh Jan<sup>1</sup> ([ORCID: 0000-0003-3938-8498](https://orcid.org/0000-0003-3938-8498)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, University of California, San Francisco San Francisco United States\n2. Chan Zuckerberg Biohub San Francisco United States\n3. Department of Urology, University of California, San Francisco San Francisco United States\n4. Division of Pediatric Urology, University of California, San Francisco, Benioff Children's Hospital San Francisco United States\n5. Department of Cellular and Molecular Physiology, Yale University School of Medicine New Heaven United States\n6. Department of Anesthesia and Perioperative Care, University of California, San Francisco San Francisco United States\n7. Department of Biochemistry and Biophysics, University of California, San Francisco San Francisco United States\n8. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe conducting airway forms a protective mucosal barrier and is the primary target of airway disorders. The molecular events required for the formation and function of the airway mucosal barrier, as well as the mechanisms by which barrier dysfunction leads to early onset airway diseases, remain unclear. In this study, we systematically characterized the developmental landscape of the mouse airway using single-cell RNA sequencing and identified remarkably conserved cellular programs operating during human fetal development. We demonstrated that in mouse, genetic inactivation of chloride channel Ano1/Tmem16a compromises airway barrier function, results in early signs of inflammation, and alters the airway cellular landscape by depleting epithelial progenitors. Mouse Ano1-/-mutants exhibited mucus obstruction and abnormal mucociliary clearance that resemble the airway defects associated with cystic fibrosis. The data reveal critical and non-redundant roles for Ano1 in organogenesis, and show that chloride channels are essential for mammalian airway formation and function.\n\n## Introduction\n\nThe highly conserved respiratory system of air breathing animals represents a major interface between internal organs and the outer environment. In the course of a typical human lifespan, approximately 200 to 400 million liters of air are conducted via the respiratory system (Ganesan et al., 2013; Rackley and Stripp, 2012). While airway function has been adapted for organismal physiology and aging (Sharma and Goodwin, 2006), it remains vulnerable to deleterious genetic and environmental factors. Cystic fibrosis (CF), which primarily targets the respiratory system, is one of the most common recessively inherited disorder caused by the deficient CFTR gene that encodes a chloride channel (Stoltz et al., 2015). The main features of CF airway diseases include mucus obstruction and repetitive infections and inflammation, which often lead to severe airway remodeling and respiratory failure (Regamey et al., 2011). It has been reported that CF symptoms emerge as early as the fetal stage, indicating that alterations of airway development can have a profound impact on the respiratory function later in life (Gosden and Gosden, 1984; Larson and Cohen, 2005; Regamey et al., 2011; Verhaeghe et al., 2007).\n\nMouse mutants that lack Cftr do not exhibit airway defects similar to those found in cystic fibrosis patients (Lavelle et al., 2016; McCarron et al., 2018). This led to the hypothesis that chloride channels may play species-specific roles and that other chloride channels, such as calcium-activated chloride channel (CaCC), may compensate for the lack of Cftr in mice (Clarke et al., 1994). Ano1, also known as Tmem16a, is a CaCC in the Anoctamin/TMEM16 family. Ano1 regulates intracellular chloride homeostasis (He et al., 2017) and is required for survival (Lek et al., 2016; Rock et al., 2008), and mouse mutants that lack Ano1 exhibit abnormal trachea morphology (Rock et al., 2008; Rock et al., 2009). Given its function as a chloride channel in the airway, ANO1 is a candidate drug target in the modulation and management of CF (Amaral and Beekman, 2020). Despite many efforts to identify agonists and activators for the chloride channel ANO1, the physiological role for ANO1 in the airway development and regeneration remain unclear.\n\nTo systematically and unbiasedly characterize the cellular processes important for airway development, as well as to define cellular origins of disease phenotypes that depend on chloride channels, we used single-cell RNA sequencing technology (scRNAseq) to profile mouse embryonic and neonatal trachea as well as human fetal trachea. We uncovered conserved cell types implicated in monogenic and complex-trait airway diseases and defined cell states associated with epithelial cell differentiation. In parallel, we analyzed the developmental landscape of the mouse trachea in the absence of Ano1. Loss of Ano1 compromises airway barrier function, results in early signs of inflammation, and alters the airway cellular landscape by depleting epithelial progenitors. The data reveal critical and non-redundant roles for Ano1 in organogenesis, and show that chloride channels are essential for mammalian airway formation and function. Because Ano1 and CFTR are expressed in orthologous cell types of mouse and human airway epithelium, respectively, our work provides a tractable animal model for understanding the roles of chloride channels in human airway development and pathogenesis.\n\n## Results\n\n### Inactivation of Ano1 chloride channel compromises airway functions\n\nMucus accumulation, a hallmark of many chronic airway diseases, has been previously reported in the newborn airway of Ano1-/- knockout mice (Rock et al., 2009). To explore the cellular origin of mucus obstruction, we first determined whether removal of Ano1 led to any alternation in mucus producing cells in a Ano1-/- knockout mouse line (Rock et al., 2008). Using fluorescently labeled Jacalin, a plant-based lectin that recognizes airway glycoproteins and mucin components (Ostedgaard et al., 2017), as well as antibody against SCGB1A1, a low-molecular-weight protein enriched in airway secretory cells, we observed a massive expansion of the secretory cell population in Ano1-/- knockout airway at postnatal day 0 (P0) (Figure 1A; Figure 1\u2014figure supplement 1A). In addition, Jacalin-positive mucus substance was observed in Ano1-/- knockout airway lumen (Figure 1A). At P3 and P5, Periodic Acid\u2013Schiff stain (PAS) and Alcian Blue staining of airway histological sections consistently demonstrated strong mucus obstruction of the respiratory tract and alveolar simplification in Ano1-/- neonatal lung (Figure 1B; Figure 1\u2014figure supplement 1B,C,D,E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig1-v2.jpg)\n\n**Figure 1.:** (A) Jacalin-Alexa488 (green) labeling of glycoprotein-producing cells and mucin components in wild-type and Ano1-/- mutant trachea at P0. Inset I shows the tracheal lumen; mucosubstances were apparent in the mutant trachea lumen. Inset II shows glycoprotein-producing cells. Scale bar corresponds to 50 \u03bc\u200bm. n\u00a0=\u00a04 for each genotype examined. (B) PAS and Alcian blue staining of airway and mucus in wild-type and Ano1-/- mutant trachea at P3. Yellow arrowheads indicate mucus accumulation in the mutants. Scale bar corresponds to 100 \u03bcm. n\u00a0=\u00a04 for each genotype examined. See Figure 1\u2014figure supplement 1 for additional analysis for pulmonary defects associated with Ano1-/- mutants. (C) Differential interference contrast (DIC) images of flat-mounted trachea, flow path lines, and velocity magnitude of ciliary flow generated by wild-type and \u200b Ano1-/- mutant trachea samples at P2. Flow directions are indicated by arrows in red. X represents the medial-lateral axis, while Y represents the anterior-posterior axis. (D) Velocities of ciliary flow at P2. Wild-type trachea showed directional flow at 0.90\u00a0\u00b1\u00a00.22 \u03bc\u200bm/s from the distal to the proximal trachea (Figure 1\u2014video 1). Mutants showed minimal and sometimes reversed flow at a lower speed of 0.42\u00a0\u00b1\u00a00.18 \u03bc\u200bm/s (Figure 1\u2014video 2). n\u00a0=\u00a03 for each genotype. p values are indicated (multiple t-test). Error bars represent standard deviation (S.D). (E) Quantification of SCGB1A1+\u200b \u200bsecretory cells and Centrin-GFP+\u200b \u200bciliated cells of wild-type and Ano1-/- mutant trachea samples at P3. n\u00a0=\u00a05 for each genotype. p-value (unpaired t-test) are indicated. Error bars represent S.D. (F) Ratio of ciliated cells over secretory cells at P3. n\u00a0=\u00a05 for each genotype. p value is indicated (unpaired two-tailed t-test). Box and whisker plot shows 10\u201390 percentile. (G) TEM images of wild-type and \u200b Ano1-/- mutant tracheal epithelial cells. Mutant secretory cells show reduced microvilli (Miv) and abnormal intracellular organizations, including dilated ER lumen (ER) and accumulation of vesicles (V). Scale bars indicate 2.5 \u200b\u03bc\u200bm. n\u00a0=\u00a03 for each genotype.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Upper panel: SCGB1A1 (magenta) labeling of secretory cells in wild-type and Ano1-/- mutant trachea at P0. Cell membrane was marked by E-cad (green). Lower panel: Centrin-GFP labeling of ciliated cells in wild-type and Ano1-/- mutant trachea at P0. Cell membrane was marked by E-cad (magenta). Scale bar corresponds to 40 \u03bcm. n\u00a0=\u00a03 for each genotype examined. (B) Histology sections of wild-type and Ano1-/- mutant lung tissues at postnatal day 3. Samples were stained with Periodic acid\u2013Schiff stain and Alcian blue. Insets highlight alveolar compartments. Mutants exhibit simplified airway and mucus obstruction in distal airways (yellow arrowheads). Scale bar corresponds to 100 \u200b\u03bc\u200bm. n\u00a0=\u00a04 for each genotype examined. (C) Quantification of alveolar space of P3 wild-type and Ano1-/- mutant lung tissues. n\u00a0=\u00a04 for each genotype examined and three to four lung lobes from each sample was analyzed. p-value (unpaired t-test) are indicated. Error bars represent S.D. (D) Histology sections of wild-type and Ano1-/- mutant lung tissues at postnatal day 5. Samples were stained with Periodic acid\u2013Schiff stain and Alcian blue. Insets highlight alveolar compartments. Mutants exhibit simplified airway and mucus obstruction in proximal cartilaginous airway (yellow arrowhead). Scale bar corresponds to 100 \u200b\u03bc\u200bm. n\u00a0=\u00a02 for each genotype examined. (E) Quantification of alveolar space of P5 wild-type and Ano1-/- mutant lung tissues. n\u00a0=\u00a02 for each genotype examined and three to four lung lobes from each sample was analyzed. p-value (unpaired t-test) are indicated. Error bars represent S.D.\n\nWe next assessed tissue-level mucociliary clearance by characterizing the flow dynamics of fluorescent beads generated by airway motile cilia. We dissected wild-type and Ano1-/- mutant trachea at P2 to P3 and spliced the trachea open along the dorsal smooth muscles to expose the airway lumen. We then placed individual trachea sample in imaging media with fluorescent beads and visualized the movement of beads via confocal live imaging. At P2, wild-type trachea showed directional flow at 0.90\u00a0\u00b1\u00a00.22 \u03bcm/s from the distal to the proximal trachea (Figure 1\u2014video 1). In contrast, Ano1 mutants showed minimal and sometimes reversed flow at 0.42\u00a0\u00b1\u00a00.18 \u03bcm/s (Figure 1C,D; Figure 1\u2014video 2), significantly slower than the velocity observed in littermate controls.\n\nWe next quantified the secretory cells and ciliated cells, presented as a percentage of the total airway luminal cells, by using conventional cell type markers. Immunostaining of SCGB1A1 showed a significant increase in the number of secretory cells in the mutant airway compared to wild-type (Figure 1E,F; Figure 1\u2014figure supplement 1A). To assess the number of ciliated cells, we crossed Ano1+/- heterozygous animals to a reporter mouse line Arl13b-mCherry/Centrin-2-GFP and generated Ano1-/- homozygous mutants that express the fluorescent reporters. Based on the expression of Centrin2-GFP, the numbers for ciliated cells were unaffected in Ano1-/- mutant airway compared to littermate wild-type (Figure 1E; Figure 1\u2014figure supplement 1A). Transmission electron microscopy (TEM) analysis revealed subcellular defects in mutant neonatal epithelial cells, including short microvilli, dilated ER lumen and accumulation of large amorphous vesicles (Figure 1G).\n\n### A cellular atlas of the developing airway in mice and humans\n\nTo comprehensively characterize the cellular origins of these complex airway defects, we carried out scRNAseq of mouse trachea to establish an atlas of 16,000 wild-type cells from embryonic day 15 (E15), E16, P1, and P4 (Figure 2A,B; Figure 2\u2014figure supplement 1A,B). In parallel, we analyzed a matching number of transcriptomes from Ano1 mutant tracheal cells captured at E16, P1 and P4. Our wild-type single-cell embryonic and neonatal atlas largely agrees with previously published atlases of the adult airway in the expression of marker genes for major epithelial cell types (Figure 2B; Figure 2\u2014figure supplement 1C;\u00a0Montoro et al., 2018; Plasschaert et al., 2018). In addition, our data include previously uncharacterized fibroblasts, vascular cells, chondrocytes, airway smooth muscle cells, immune cells, and neuronal cell types (Figure 2B; Figure 2\u2014figure supplement 1D,E,F; Figure 2\u2014source data 1). We also profiled approximately 9600 human fetal trachea cells at gestation weeks 21 and 23 (GW21 and GW23) (Figure 2C). This allowed us to identify orthologous cell types and cell states defined by molecular markers similar to those we observed in the mouse airway, and to uncover cell types specific to the human airway, such as cell types associated with the submucosal glands in humans (Figure 2D,E). Taken together, we observed that major cell types of the developing airway and molecular markers associated with each cell type are highly conserved between mice and humans (Figure 2E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cartoons of the mammalian trachea anatomy. (B) Four developmental stages are included in this study: embryonic day 15 (E15), E16, postnatal day 1 (P1), and P4. Heat map illustrating the average expression levels of marker genes for each cell cluster identified at E15, E16, P1 and P4. Gene expression has been normalized, log-transformed, and z-score transformed. The proportion of cell types and cell states at different developmental stages are shown in Figure 2\u2014figure supplement 1. A list for differentially expressed genes for all cell types is included in Figure 2\u2014source data 1. (C) Heat map showing the average expression levels of cell identity marker genes for all cell types identified in human fetal trachea of gestation week (GW) 21\u201323. Gene expression has been normalized, log-transformed, and z-score transformed. (D) Dot plot depicting expression patterns of mouse and human orthologous cell types and states identified from this study. The size of the dot encodes the percentage of cells expressing the gene, while the color encodes the mean of expression level which has been normalized, log-transformed, and z-score transformed. Cell type legends for (B\u2013D) Basl: basal cells; BaslSE: basal_surface epithelium; BaslSMG: basal_submucosal glands; Cil: ciliated cells; CilSec: cilia-secretory hybrid cells; Sec: secretory cells; SecSMG: secretory cells_submucosal gland; Hybrid: cilia-scretory hybrid cells; CyEp: cycling epithelium; EpECM: epithelium_ECM+\u200b \u200b; MyoEp: myoepithelium; Schw: Schwann cell precursors; Nec: neuronal cells; Imm: immune cells; VaEn: vascular endothelium; LyEn: lymphatic endothelium; ASM: airway smooth muscles: Chon: chondrocytes; MeP: mesenchymal progenitors; Fib: fibroblasts; CyFi: cycling fibroblasts; Pro: progenitor (human). (E) Summary of cell types and marker genes reflecting similarity and distinction between mouse embryonic and neonatal trachea and human fetal trachea.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0A summary of cell numbers, gating of fluorescence-activated cell sorting (FACS, performed for E15 and P4 samples), median number of unique molecular identifiers (nUMI), and median number of genes (nGene) for each sample in the wild-type mouse trachea atlas presented in Figure 2. (B) Vertical bar graphs showing the proportion of cell types and states from each time point for each tracheal cell type and states colored by developmental stages. The overall representation of stromal cells from our atlas is consistent with those previously published lung atlas (Xie et al., 2018; Guo et al., 2019; Zepp et al., 2017) and reflects the diversity of cell types and states present in the developing airway. (C) The cellular composition of all cell types identified at E15 and P4. FACS was performed for cells from ShhCre/R26mTmG\u200b mice before RNA-sequencing to distinguish cells of the Shh-expressing lung endoderm lineage (green) from the rest non-endoderm lineages (red). In agreement with the established lineage relationships of the airway endoderm, GFP+ cells derived from \u200bShh\u200b+ endoderm consistently expressed the epithelial marker Epcam. These \u200bEpcam\u200b+ cells were annotated as 1) basal cells, 2) ciliated cells, 3) secretory cells, and 4) cilia-secretory hybrid cells. RFP+ cells derived from non-Shh expressing lineages consisted of a large collection of mesenchymal cells, muscle cells, endothelial cells, immune cells, Schwann cells, and neuronal cells. Legends for cell types and cell states are shared in B and C D Doublet scores for all cells. Each dot represents a cell. Colors indicate cell clusters. (E) Expressions of thyroid markers \u200bTg\u200b and \u200bPax8\u200b projected onto \u200btSNE\u200b shown in Figure 2B. (F) Expressions of erythrocyte markers \u200bAlas2\u200b and \u200bHba-a2 \u200bprojected onto \u200bt\u200bSNE shown in Figure 2B. Our dataset comprises a collection of diverse mesenchymal cell types, many of which have not been characterized at single-cell resolution. Vascular smooth muscle cells and pericytes are identified based on the expression of \u200bNotch3\u200b and \u200bRgs5\u200b, whereas airway smooth muscle cells express higher levels of \u200bMyh11\u200b and A\u200bcta2.\u200b Endothelial cells express \u200bPecam1\u200b and can be further grouped into lymphatic endothelial cells based on the expression of \u200bLyve1\u200b and \u200bThy1\u200b, and vascular endothelial cells based on the expression of \u200bCd34\u200b. We identified two immune cell clusters, including a population of \u200bFcerig+\u200b/\u200bCd3g+ \u200bT cells and a population of \u200bCx3cr1\u200b+\u200b/\u200bC1qa+\u200b monocytes. Our dataset includes a cluster of \u200bWnt2+ \u200bmesenchymal cells which persist across all time points included in this study. These cells are marked by \u200bPi16\u200b, \u200bCd34,\u200b and \u200bLy6a\u200b (\u200bSca-1\u200b), similar to the molecular signatures of adipose progenitor-like cells. Because \u200b Wnt2+ lineages can serve as cardiopulmonary progenitors and define a mesenchymal alveolar niche important for self-renew and repair in the lung, we annotated this \u200bWnt2\u200b+\u200b/\u200bCd34+\u200b/\u200b \u200bLy6a+ \u200b\u200bcluster as mesenchymal progenitors, which may generate the reservoirs of mesenchymal cell types during development and tissue repair.\n\n### The developmental landscape of the mouse airway epithelial cells\n\nThe temporal dimension of our data allowed us to examine the molecular programs operating during mammalian airway differentiation. In wild-type mice, coordinated differentiation programs of luminal cell types, including ciliated and secretory cells, were initiated between E15 and E16 (Figure 3A). Spdef and Creb3l1, two transcription factors that promote the secretory cell fate (Chen et al., 2009; Gregorieff et al., 2009) and Foxj1, a transcription factor essential for the motile ciliated cell formation (You et al., 2004; Yu et al., 2008), were upregulated at E16 compared to E15 (Figure 3B). Conversely, the number of cycling cells, reflected by a calculated cell cycle score, was diminished as differentiated cells began to emerge (Figure 3C; Figure 3\u2014source data 1). At E15, the broad presence of Trp63 but low level of Krt5, and the marked expression of Id2, Id3, Wnt7b, and Cldn6 indicate that undifferentiated cells dominate the Epcam+ epithelium (Figure 3D). When luminal cells begin to emerge at E16, Trp63+ basal cells switch to a different expression program, consisting of Krt5, Krt15, Aqp3, and Aqp4, which may play important roles in the epithelial barrier function (Kreda et al., 2001;\u00a0Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0\u200bHorizontal bar graphs showing the cellular composition of mouse tracheal epithelial cells from different developmental and neonatal time points. (B) Violin plots showing the expression of Trp63, Spdef, Creb3l1, and Foxj1 in epithelial cells at different developmental time points. Gene expression has been normalized and log-transformed. (C) scGPS showing cell-cycle gene expression in epithelial cells at different time points. scGPS (single-cell Geneset Percentile Score) is an expression enrichment analysis that utilizes sets of genes underlying certain biological and pathological processes to infer functional profiles for each cell. The cell cycle gene list can be found in Figure 3\u2014source data 1. (D) Heat maps showing transcriptional profiles of tracheal basal, ciliated, and secretory cells across different developmental time points, with age compositions of corresponding cell states showed in horizontal bar plots. Gene expression has been normalized, log-transformed, and z-score transformed. Cell clusters are not predefined by developmental time-points. (E) Pathways enriched in immature and mature secretory cells revealed by gene ontology analysis. Selected top terms for biological process are shown. (F) Pathways enriched in immature and mature ciliated cells revealed by gene ontology analysis. Selected top terms for biological process are shown.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0Expression of \u200bFoxn4,\u200b \u200bShisa8\u200b, \u200bMcidas,\u200b and\u200b Foxj1 \u200bin early E16 and late E16 tracheal cells detected by RNA FISH. Nuclei are stained by DAPI (white). Scale bar indicates 20 \u03bcm. (B) Quantification of \u200bShisa8\u200b+ \u200b/\u200bFoxj1+ \u200bcells and \u200bMcidas+/Foxj1+ \u200bcells in early (8am dissection) and late (10pm dissection) E16 trachea in the wild-type. Three littermates for each stage were included in analysis. P-value (unpaired t-test) are indicated. Error bars represent S.D. n\u00a0=\u00a03 for each genotype. (C) A heat map showing state-specific marker genes of ciliated cells at human fetal stage 21\u201323 GW. Gene expression has been normalized, log-transformed, and z-score transformed. (D) RNA FISH validation of \u200bFOXN4\u200b expression, co-localized with a subset of FOXJ1+ \u200b cells, in human fetal trachea at 15 GW. Scale bars indicate 20 \u03bc\u200bm.\n\nAt E16, in addition to Spdef and Creb3l1, the immature secretory program showed a pronounced expression of Cited1, a transcription cofactor that activates TGF-\u03b2 and BMP signals (Plisov et al., 2005). Conversely, the neonatal secretory program was distinguished by elevated expression of Gp2 and Tff2, which are important mucosal proteins and markers for goblets cells found in the adult airway (Hase et al., 2009; Montoro et al., 2018; Nikolaidis et al., 2006; Wills-Karp et al., 2012), as well as Sftpd, which encodes a surfactant protein and is involved in the innate immune program (Brandt et al., 2008; Mackay et al., 2016;\u00a0Figure 3D). The immature and mature secretory cell transcriptomes exhibited non-overlapping gene modules characteristic of distinct biological functions. The immature secretory program includes gene modules required for protein folding and trafficking, which are critical for the secretory pathway (Trombetta and Parodi, 2003), while the mature secretory program features processes involved in the regulation of cell division (Figure 3E).\n\nCiliated cells, which form motile cilia, are essential for mucus clearance. In our dataset, both embryonic and postnatal ciliated cells expressed Foxj1 (Figure 3D). Immature ciliated cells, which are predominantly present during embryogenesis, were characterized by Foxn4, Ccna1, Ccno, Mcidas, as well as by uncharacterized markers, such as Shisa8, which is an auxiliary subunit for the AMPA receptor and a member of the CKAMP glutamate receptor family required for synaptic transmission (Farrow et al., 2015). The immature ciliated program includes pathways involved in protein synthesis (Figure 3F). RNA FISH (fluorescent in-situ hybridization) analysis of Mcidas and Shisa8 showed colocalizations with Foxn4 and Foxj1 in E16 wild-type trachea (Figure 3\u2014figure supplement 1A,B). In contrast, postnatal mature ciliated cells upregulate Sntn, which encodes a phosphatidylserine binding protein localizing to the tip of motile cilia (Kubo et al., 2008), and express various membrane receptors, such as Cdhr3 and Ldlrad1, which are involved in rhinovirus infection (Basnet et al., 2019;\u00a0Figure 3D). Overall, the mature ciliated program highlights molecular pathways that are involved in axoneme assembly, apical junction organization, as well as cilia movement and motility (Figure 3F). An enrichment of these distinct gene modules reflects a structural and functional maturation of postnatal ciliated cells. The majority of these ciliated cell markers are conserved between mice and humans (Figure 3\u2014figure supplement 1C,D).\n\n### Identification of a cilia-secretory hybrid cell state in the neonatal airway\n\nIn the postnatal mouse dataset, we identified a population of epithelial cells expressing two gene modules, the ciliated-cell module and the secretory-cell one (Figure 4A). Using neonatal tracheal samples, we validated the presence of a cilia-secretory hybrid cell type by FISH analysis of Foxj1, Gp2 and Prr18, a novel ciliated cell marker (Figure 4B). Based on immunofluorescence staining, these hybrid cells expressed FOXJ1 and a secretory cell marker SCGB1A1 (Figure 4C;\u00a0Rawlins et al., 2009; Zhang et al., 1997). Transmission electron microscopy (TEM) revealed that a subset of luminal cells exhibit both characteristic cilia axoneme and intracellular vesicles, indicating that hybrid cells indeed possess two sets of machineries required for motility and secretion, respectively (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Violin plots showing the expression levels of ciliated cell markers \u200bFoxj1\u200b, \u200bPrr18,\u200b \u200band Cdhr3\u200b, as well as secretory cell markers \u200bCreb3l1,\u200b \u200bSpdef,\u200b and \u200bGp2\u200b in three cell clusters: ciliated cells, secretory cells, and cilia-secretory hybrids. Gene expression has been normalized and log-transformed. (B) RNA FISH analysis of Foxj1\u200b (magenta), \u200bGp2\u200b (blue), and \u200bPrr18\u200b (yellow) mRNA in P3 wild-type trachea. Hybrid cells expressing all three markers are indicated by dashed circles. Foxj1+ \u200b \u200b Prr18+ \u200bciliated cells are indicated by arrowheads. Gp2+ secretory cells are indicated by arrows. Nuclei are marked by DAPI (grey). Scale bar indicates 20 \u200b\u03bc\u200bm. (C) Fluorescent immunostaining of FOXJ1 (red) and SCGB1A1 (red) in P3 wild-type trachea. Hybrid cells expressing both markers are indicated by dashed circles. FOXJ1+ \u200bciliated cells are indicated by arrowheads. SCGB1A1+ \u200bsecretory cells are indicated by arrows. Cell membranes are marked by E-cadherin (grey). Scale bar indicates 20 \u200b\u03bc\u200bm. (D) Transmission electron microscopy (TEM) images of P0 tracheal epithelial cells. Intracellular vesicles are indicated by arrows in yellow. Motile cilia are indicated by arrowheads in blue. Scale bar corresponds to 2 \u200b\u03bc\u200bm. (E) scGPS of disease-associated genes curated from the Online Mendelian Inheritance in Man (OMIM) database. Each dot represents a cell. Colors indicate cell clusters. Full lists of genes used are in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0Upper panel: Immunostaining of acetylated-\u200b\u03b1 \u200btubulin (red), which labels motile cilia of ciliated cells, shows abundant ciliated cells with motile cilia in Pofut-/- mutants compared to littermate controls. Cell membrane is marked by E-cad (green). Lower panel: RNA FISH analysis shows mRNAs of \u200bFoxj1\u200b (red) and \u200bGp2 (green)\u200b double positive cells, highlighted by dashed circle, were present in both genotypes. Note that Pofut-/- mutants lack cells that are only \u200bGp2+ \u200b. Scale bar indicates 20 \u03bcm. (B) Foxj1CreERT2-GFP mice were crossed to Rosa26mT/mG mice for lineage tracing of Foxj1+ cells. Tamoxifen was injected into pregnant females at E14 to E15 to induce Foxj1-CRE expression. Trachea samples from Foxj1-CRE positive pups with mTomato expression and mGFP were examined at P1. (C) Cytoplasmic expression of SCGB1A1 (magenta) labels secretory cells, and mGFP (green) labels Foxj1+ lineage. Because mTomato fluorescence signal was quenched after PFA and methanol fixation, we use E-cadherin to label cell membrane in the red channel and was pseudo-colored in grey. Hybrid cells expressing both markers are indicated by dashed circles. mGFP+ green \u200bciliated cells are indicated by arrowheads. SCGB1A1+\u200b \u200bsecretory cells are indicated by arrows. Scale bar indicates 20 \u03bc\u200b\u200bm. A quantification of mGFP+ green ciliated cells and mGFP+; SCGB1A1+ double positive yellow hybrid cells in P1 trachea (n\u00a0=\u00a03) was included. Error bars represent S.D. (D) Dot plot depicting expression patterns of genes implicated in the disease severity of COPD and CF. The size of the dot encodes the percentage of cells expressing the gene, while the color encodes the mean of expression level which has been normalized, log-transformed, and z-score transformed.\n\nTo probe the developmental origin of these cilia-secretory hybrid cells, we assessed their presence in a mouse mutant lacking Pofut1, which encodes an enzyme required for Notch ligand processing (Stahl et al., 2008). Because the Notch pathway is essential for cell fate decision in the airway, Pofut1mutants fail to produce secretory cells and contain predominantly ciliated cells in the trachea (Tsao et al., 2009). Compared to littermate controls, abundant ciliated cells with motile cilia, marked by acetylated-\u03b1 tubulin, were present in Pofut1-/- newborn mutants. Pofut1-/-\u00a0mutants lacked secretory cells that are only expressing Gp2, but exhibited double positive Foxj1- and Gp2-expressing hybrid cells, indicating that hybrid cells are derived from a ciliated cell linage (Figure 4\u2014figure supplement 1A). To further examine whether hybrid cells originate from a ciliated cell lineage, we performed an in vivo lineage-tracing approach. We crossed an inducible line Foxj1-CreERT2:GFP to the ROSAmT/mG reporter line to trace Foxj1+ lineages at the onset of airway differentiation. Because endogenous GFP flourescence signal of Foxj1-CRE/ERT2-GFP was very weak, we traced cells derived from the Foxj1+ lineage based on the expression of membrane-bound GFP. About 50% of Foxj1Cre labeled mGFP+ cells at this stage expressed cytoplasmic SCGB1A1 at P0 to P1, suggesting that a major proportion of the neonatal hybrid cells are likely derived from a ciliated cell lineage (Figure 4\u2014figure supplement 1B,C).\n\n### Mapping monogenic and complex trait disease-associated genes to cell types of the airway\n\nWe next evaluated various cell types from which complex airway disorders may arise. We examined the expression landscape of genetic risk loci associated with chronic obstructive pulmonary disease (COPD) and pulmonary fibrosis (Sakornsakolpat et al., 2019), as well as modifier loci associated with CF (Corvol et al., 2015;\u00a0Figure 4\u2014figure supplement 1D). Many of the airway disease associated genes are expressed by cells of the airway epithelium, including modifier loci for CF severity, such as Muc20 and Ehf, as well as risk genes shared between COPD and pulmonary fibrosis, such as Fam13a and Dsp. Overall, risk genes implicated in these airway diseases are expressed in various cell types, and our dataset enables mapping of each disease mediator to its contributing cellular source.\n\nUsing scGPS (single-cell Geneset Percentile Score), an expression enrichment analysis that utilizes sets of genes underlying certain biological and pathological processes to infer functional profiles for each cell, we assessed whether the function of specific cell types can be inferred from the expression patterns of genes whose loss-of-function results in airway pathophysiology. Using genes curated by OMIM, we first assessed enrichment patterns for genes implicated in mucus and goblet cell hyperplasia (Figure 4E; Figure 4\u2014source data 1), which are typically present in inflammation and infection and are classic symptoms for COPD and CF. Scores for mucosal hyperplasia are higher in cilia-secretory hybrid cluster, and are also elevated in T cells, endothelial cells, and vascular smooth muscles (Figure 4E). Similar enrichment profiles are observed for asthma associated genes, indicating shared cellular drivers for goblet cell hyperplasia and asthma (Figure 4E). Primary ciliary dyskinesia (PCD) is a monogenic disorder associated with impaired motile cilia function. Patients of PCD show persistent rhinitis and chronic respiratory tract infections, but are often initially diagnosed as asthma or bronchiectasis (Lucas et al., 2014; Shapiro et al., 2018). The PCD scores are higher overall for ciliated cells and cilia-secretory hybrid cells, confirming that ciliated cells are primary targets for PCD. The results of our scGPS analysis provide functional validation of our cell type annotation, and help disambiguate cell-type involvement in the manifestation of monogenic and complex-trait diseases. Interestingly, the cilia-secretory hybrid cells show prominent enrichment scores in multiple airway conditions (Figure 4E), indicating a critical role of this hybrid cell state in airway function and pathogenesis.\n\n### Immune profiles of the mucosal barrier in wild-type and Ano1 KO mutants\n\nAfter the neonates transition from amniotic fluid to air breathing, their airway epithelial cells are in direct contact with the external environment and form the front line of innate host defense by producing a diverse arsenal of antimicrobial molecules and cytokines (Ganesan et al., 2013; Vareille et al., 2011). Our analysis revealed the specific cellular source and temporal expression patterns of a set of immune modulators important for mucosal barrier function and airway immunity (Figure 5A). Based on their functional profiles, these epithelial-derived molecules can be divided into two major groups. The first group consists of secreted peptides involved in the recognition of inhaled pathogens and mucin components (Figure 5A). The second group includes cytokines and signaling molecules implicated in mucosal inflammatory responses (Figure 5A). These molecules include Cxcl15 (Chen et al., 2001), Cxcl17 (Burkhardt et al., 2014), and Ccl28 (Hieshima et al., 2003), which are chemokines involved in mucosal barrier function, Nfkbia and Nfkbiz, which are inhibitors for the NF-\u03bab pathway serving as pivotal mediators of inflammatory responses (Liu et al., 2017; Zhang et al., 2017), as well as Ptgs2, Ptges and Ptgds, which are required for the biosynthesis of prostaglandin, a potent agent in the generation of the inflammatory response (Ricciotti and FitzGerald, 2011).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig5-v2.jpg)\n\n**Figure 5.:** (A) Dot plot showing the expression of mucosal barrier regulators and immune mediators. Legends for cell types are indicated. The size of the dot encodes the percentage of cells expressing the gene, while the color encodes the mean of expression level which has been normalized, log-transformed, and z-score transformed. (B) Dot plot showing the temporal expression of airway barrier genes. The size of the dot encodes the percentage of cells expressing the gene, while the color encodes the mean expression level after normalization, log-transformation, and z-score transformation. cyEp: Cyling epithelium, Basl: Basal cells, trEp: Transitonal epithelium, Sec: Secretory cells, Cil: Ciliated cells, Hybrid: Cilia-Secretory hybrid cells, Imm_1: Fcer1g+/Cd3g+ immune cells, Imm_2: Cx3cr1+/C1qa+ immune cells, Others: all other cell types and states (C)\u00a0Expression of selected airway barrier genes altered in Ano1-/- mutant epithelial cells at P4. The size of the dot encodes the percentage of cells expressing the gene, while the color encodes the mean of expression level which has been normalized, log-transformed, and z-score transformed. Cell type legends for \u200bA and B \u200bare shown in the figure. (D) Violin plots showing the expression levels of \u200bSaa3,\u200b \u200bCcl6\u200b, and \u200bClec4n i\u200bn the \u200bFcer1g+\u200b \u200bresident immune cells. Gene expression has been normalized and log-transformed.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Volcano plot showing distinct expression profiles for mucosal barrier genes in wild-type and Ano1-/- mutant secretory cells at P4. Labeled genes are differentially expressed. (B) Dot plot showing the expression of mucosal barrier regulators and immune mediators at E16 airway of wild-type and Ano1-/- mutant embryos. Legends for cell types are indicated. The size of the dot encodes the percentage of cells expressing the gene, while the color encodes the mean of expression level which has been normalized, log-transformed, and z-score transformed.\n\nIn wild-type mice, we noticed an upregulation of Retnla, Itln1, and Chil4 in the newborn airway epithelium (Figure 5B; Figure 5\u2014figure supplement 1A). Both Retnla and Chil4 are mediators of the Th2 inflammatory response, and they promote the formation of healthy barrier microbiota (Harris et al., 2019; Nair et al., 2009; Nair et al., 2005; Pesce et al., 2009). Significant downregulation of these markers was observed in all Ano1-/- mutant luminal cells (Figure 5C; Figure 5\u2014figure supplement 1A). Conversely, mutant epithelial cells expressed high levels of Cxcl17 and Ccl20 (Figure 5C), two potent chemotactic factors for lung macrophages (Burkhardt et al., 2014; Schutyser et al., 2003). Mutant epithelial cells significantly downregulated NF-\u03baB inhibitors Nfkbia and Nkfbiz (Figure 5B,C; Figure 5\u2014figure supplement 1A), indicating that the NF-\u03baB signaling may be abnormally regulated in the absence of Ano1. Consistent with the abnormal expression patterns of barrier defense genes, Ano1-/- mutant immune cells upregulated a set of immune modulators, including Saa3, that are expressed during inflammation (Eklund et al., 2012;\u00a0Figure 5D). The expression levels of these barrier defense genes were comparable between wild-type and Ano1-/- mutant airway during developmental at E16 (Figure 5\u2014figure supplement 1B).\n\n### Removal of Ano1 shifts basal progenitors toward differentiation into the secretory lineage\n\nSecretory cells are one of the major cellular sources of mucin components and antimicrobial peptides in newborns. Ano1-/- mutants displayed an expansion of the secretory cell population across all time points we analyzed, from E16 to P1 and P4 (Figure 6\u2014figure supplement 1A). Our data suggest an early requirement for Ano1 expression during airway differentiation. Ano1 mRNA can be detected as early as E12 in the respiratory epithelium (Rock et al., 2008). Using RNA FISH analysis and scRNAseq, we confirmed Ano1 expression in undifferentiated mouse airway epithelium as well as in differentiated secretory cells (Figure 6A,B). Similarly, CFTR mRNA was broadly distributed in the mouse airway at E15 as well as in human fetal airway epithelium at GW15 (Figure 6A,B,C) and expressed in secretory cells associated with the surface epithelium and submucosal glands at GW21-23 (Figure 6C,D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig6-v2.jpg)\n\n**Figure 6.:** (A) \u200bExpression of \u200bShh,\u200b \u200bCftr,\u200b and \u200bAno1 \u200bin E15 trachea examined by FISH.\u200b Shh \u200bmarks tracheal epithelial cells. Nuclei are stained by DAPI (white). Scale bar indicates 20 \u200b\u03bc\u200bm. (B) Expression of \u200bCftr\u200b and \u200bAno1\u200b in tracheal epithelial cells at different time points, with a cell type breakdown for E15 and E16. Expressions of Cftr\u200b and \u200bAno1\u200b in neonatal tracheal epithelial cells are shown in Figure 6\u2014figure supplement 1. (C) Expression of \u200bCFTR\u200b and \u200bANO1 \u200bin human fetal trachea of GW 15 by FISH. Two areas (I: surface epithelium/SE; II: submucosal glands/SMG) of the fetal tracheal epithelium are enlarged. Nuclei are stained by DAPI (blue). Scale bar indicates 50 \u200b\u03bc\u200bm. (D) Immunofluorescence staining of \u200bTP63\u200b (green) and \u200bFOXJ1\u200b (magenta) in human fetal tracheal sample at GW 15. SE and SMG are shown. Ciliated cells are only present in the surface epithelial cell layer. Epithelial cells are marked by E-cad in white. Nuclei are stained by DAPI (blue). Scale bar indicates 50 \u200b\u03bc\u200bm.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A)\u00a0\u200bCellular composition for tracheal epithelial cells of wild-type littermates and Ano1-/- mutants from different time points. (B) scGPS showing cell-cycle gene expression in every epithelial cell state at E16 in wild-type and Ano1-/- mutant embryos. scGPS (single-cell Geneset Percentile Score) is an expression enrichment analysis that utilizes sets of genes underlying certain biological and pathological processes to infer functional profiles for each cell. Adjusted p-values for the comparison within each cell type (unpaired two-tailed wilcoxon-test between wild-type and mutant) are indicated. (C) Immunofluorescent staining of KRT13 (magenta) in wild-type and \u200b Ano1-/- trachea at P3. Scale bar represents 100 \u03bcm. (D)\u00a0Immunofluorescent staining of KRT13 (green) in adult \u200bShhCre; Ano1flox/- a\u200bnd\u200b ShhCre; Ano1flox/flox conditional knockouts. n\u00a0=\u00a04 were analyzed. Scale bar indicates 50\u200b \u03bc\u200bm.\n\nTo understand the mechanism of Ano1-dependent secretory cell differentiation, we analyzed cell states of different epithelial populations from E16. At this stage, secretory cells include a basal-to-secretory transition state and an immature secretory state, both of which are characterized by high expression of Krt4 (Figure 7A). Pseudotemporal analysis indicates that these two populations represent transitioning stages on the trajectory of basal cells differentiating into mature secretory cells (Figure 7B). The more committed secretory cells express high levels of mature secretory markers, such as Muc5b, Creb3l1 and Gp2, as well as enzymes involved in mucin glycosylation, such as Galnt6 and B3gnt6 (Figure 7A). Compared to wild-type mice, the percentage of cells from the Krt4+ immature secretory state markedly increased in Ano1-/- mutants (Figure 7C). We confirmed the expansion of these Krt4+ immature secretory cells in neonatal mutant trachea via KRT13 immunofluorescent staining, given that Krt13 is paired with Krt4 in airway epithelial cells (He et al., 2015; Montoro et al., 2018;\u00a0Figure 6\u2014figure supplement 1C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig7-v2.jpg)\n\n**Figure 7.:** (A) Dot plot depicting expression of marker genes of cell types and states identified from E16 tracheal epithelial cells. Markers for Basal_Sostdc1 and secretory cells are highlighted in blue box. The size of the dot encodes the percentage of cells expressing the gene, while the color encodes the mean of expression level that has been normalized, log-transformed, and z-score transformed. Both wild-type and \u200b Ano1-/- mutants are included for this analysis. Cil: ciliated cells; Sec: Secretory cells; Sec_Krt4: Krt4+ \u200bimmature secretory cells; Basl_Sec: basal-to-secretory transition state; Basl: basal cells; Basl_Sostdc1: \u200bSostdc1+ basal cells; Cy_Sec: cycling secretory cells; Cy_Basl: cycling basal cells. (B) Upper panel:\u200b Krt4\u200b expression in all basal and secretory cell states at E16. Expression values have been normalized and log-transformed. Lower panel: pseudotime trajectory of these cell states. Color codes for different cell states are indicated. (C) Cellular composition of tracheal epithelial cells from wild-type and Ano1-/- mutants at E16. (D) Expression of \u200bSostdc1\u200b, \u200bCcl20\u200b, and \u200bFoxj1\u200b in wild-type and \u200b Ano1-/- mutant trachea samples at E16 detected by FISH. \u200bSostdc1\u200b single channel images are shown in black and white. Dashed squares indicate Sostdc1+ Ccl20+ \u200b \u200bdouble-positive cells. Scale bar indicates 40 \u03bc\u200bm. (E) Concentration of \u200bSostdc1\u200b RNA probes from wild-type and \u200b Ano1-/- mutant trachea samples at E16. n\u00a0=\u00a03 for each genotype. p-Value (unpaired two-tail t-test) are indicated. Error bars represent S.D. (F) Expression level of \u200bSostdc1\u200b in wild-type and \u200b Ano1-/- mutants at E16 in different basal cell states. Each dot represents a cell. Expression values have been normalized and log-transformed. Colored circles indicate mean expression values. Colored vertical lines cover the range of one standard deviation above or below the mean. Adjusted p-values for the comparison within each cell type (unpaired two-tailed wilcoxon-test between wild-type and mutant) are indicated. (G) Distal tracheal epithelial cells exhibit mucous metaplasia in adult \u200bShhCre; Ano1flox/- \u200band ShhCre; Ano1flox/flox conditional knockouts at P25. Ciliated cells are marked by Centrin (magenta). Secretory cells are marked by SCGB1A1 (blue). n\u00a0=\u00a03 for each genotype. Scale bar indicates 50 \u200b\u03bc\u200bm. (H) Ratio of ciliated cells over secretory cells in regenerating adult trachea. Injection scheme of Tamoxifen and application of Polidocanol were indicated. Ano1flox/flox, Krt5CreERT2; Ano1flox/+ and Krt5CreERT2; Ano1flox/flox were included in this analysis. Both proximal and distal trachea were included in the analysis. n\u00a0=\u00a03 for each genotype. \u200bP-value (Ordinary one-way ANOVA Tukey test and multiple comparisons) are indicated. Box and whisker plot shows 10\u201390 percentile. (I) Model of Ano1-mediated epithelial cell differentiation of the embryonic trachea.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (\u200bA)\u00a0Postnatal expression of \u200b\u200bAno1\u200b and Cftr in mouse tracheal epithelial cells, with a cell type breakdown for P1 and P4. (B) Expression of \u200bShh (red)\u200b and Ano1 (green) \u200bin P20 trachea examined by fluorescent RNA in situ analysis.\u200b Shh \u200bmarks tracheal epithelial cells. Nuclei are stained by DAPI (blue). Scale bar indicates 20 \u03bc\u200bm. (C) Expression of Ano1 in different cell types from cultured uninjured mouse tracheal epithelial cells (MTEC). Data obtained from https://singlecell.broadinstitute.org/single_cell/study/SCP64/a-single-cell-atlas-of-the-airway-epithelium-reveals-the-cftr-rich-pulmonary-ionocyte#study-visualize (D) Expression of Ano1 in different cell types from adult mouse tracheal epithelial cells at homeostatic state. Data obtained from https://singlecell.broadinstitute.org/single_cell/study/SCP163/airway-epithelium#study-visualize (E) Expression of Ano1 in different cell types from adult human airway epithelial cells at homeostatic state. Data obtained from https://asthma.cellgeni.sanger.ac.uk/.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53085/elife-53085-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A)\u00a0A heat map showing state-specific marker genes of ciliated cells at E16. Gene expression has been normalized, log-transformed, and z-score transformed. Both wild-type and Ano1-/- mutant cells are included. (B) Single-cell velocity estimates for individual E16 tracheal epithelial cells. Arrows show the extrapolated states projected onto the \u200bt\u200bSNE plot for both wild-type and Ano1-/- mutant cells. (C) Phase portraits and fits of the equilibrium slope for Foxn4 and Shisa8 at E16. For each gene, the first column shows spliced-unspliced phase portrait with the equilibrium slope fit shown by the line. The second column represents the magnitude of the residuals. The third column shows the expression for the spliced molecules. (D) Phase portraits and fits of the equilibrium slope for Cdhr3 and Cfap53 at E16.\n\nWe identified a basal cell state marked by Ccl20, Smoc2, Krt14, as well as Sostdc1, a BMP and WNT pathway antagonist (Kassai et al., 2005; N\u00e4rhi et al., 2012;\u00a0Figure 7A). Because Sostdc1, Smoc2, and Krt14 are expressed in various epithelial progenitor cells, we reasoned that this Sostdc1-expressing basal state represents a progenitor pool that gives rise to luminal cells during development and upon injury. In Ano1-/- mutants, the percentage of Sostdc1+ basal cells was reduced (Figure 7C) and Sostdc1 expression was significantly downregulated (Figure 7D,E,F). Changes associated with cell states were unlikely caused by altered cell proliferation, because cell cycle scores were comparable between wild-type and Ano1-/- mutants for basal and secretory cell states identified at E16 (Figure 6\u2014figure supplement 1B).\n\nTo test whether the depletion of progenitor cells causes the expansion of the secretory population, and whether the inhibitory effect of Ano1 on secretory cell differentiation is cell-autonomous, we generated two conditional Ano1 KO mouse lines. First, we used Shhcre, which is expressed in all Shh-expressing endodermal cells during embryogenesis (Swarr and Morrisey, 2015), and found that embryonic removal of Ano1 from the airway endoderm resulted in mucus cell hyperplasia and an expansion of Krt13+ immature secretory cells (Figure 7G; Figure 6\u2014figure supplement 1D). Low levels of Ano1 mRNA expression are observed in basal progenitor cells in both mouse and human adult airway epithelial cells (Figure 7\u2014figure supplement 1). Next, to determine whether Ano1 plays a role in airway epithelium regeneration, we generated a basal cell-specific Ano1 conditional knockout mouse line by crossing Ano1f/f with inducible Krt5CreERT2, which is activated upon intraperitoneal injection of tamoxifen and expressed in Krt5+ airway progenitor cells (Van Keymeulen et al., 2011). In a polidocanol induced airway injury model (Liu et al., 2006), removal of Ano1 from 3 week-old mice similarly resulted in a differentiation bias toward the secretory lineage during the regeneration phase (Figure 7H).\n\nIn contrast to the paradigm of airway cell fate specification, in which Notch signaling regulates the balance between ciliated cells and secretory cells, we did not observe a significant change in the percentage of ciliated cells in the absence of Ano1. The transcriptome profiles of ciliated cells are comparable between wild-type and Ano1-/- mutants (Figure 7\u2014figure supplement 2A). Additionally, mRNA velocity analysis suggested that both genotypes exhibited the same developmental trajectory for ciliated cells at E16 (Figure 7\u2014figure supplement 2B), in which Foxn4+ and Shisa8+ precursor states transition into more mature Cdhr3+ and Cfap53+ states (Figure 7\u2014figure supplement 2C,D).\n\nOverall, the percentage, transcriptome profiles, and developmental trajectory of ciliated cells are comparable between wild-type control and Ano1 mutants. Based on the aforementioned changes in the cellular composition and molecular profiles between wild-type and Ano1 mutant tracheal epithelial cells, we propose that Ano1-mediated chloride homeostasis maintains a Sostdc1-expressing progenitor pool within the epithelial basal cells, loss of which results in secretory hyperplasia at least partially due to an accumulation of intermediate secretory cells with elevated levels of Krt4 and Krt13 (Figure 7I). Lineage specification of ciliated cells, on the other hand, appears unaffected in the absence of Ano1.\n\n## Discussion\n\nDeviations from the normal developmental process can be detrimental to airway function in youth and may have long-lasting effects later in life. In this study, we present a high-quality single-cell atlas of the developing airway with a rich repertoire of cell types, including epithelial cells, a large collection of mesenchymal cells, immune cells, endothelial cells, and neuronal cells that can be further divided into more fine-grained and novel cell states associated with distinct developmental stages and functional profiles, reflecting the structural and physiological complexity of the conducting airway. Importantly, all cell types identified in the mouse trachea have corresponding orthologous cell types in humans, indicating that the two species employ conserved gene regulatory programs to build the large airway during embryogenesis.\n\nOur assessment of enrichment patterns for selected airway disease genes using scGPS confirmed that most monogenic disease genes implicated in PCD are specifically expressed in ciliated cells. In contrast, susceptibility loci for COPD are expressed in both epithelial and stromal cell types, consistent with the pleiotropic presentations of complex-trait airway disease. The enrichment profiles generated by scGPS thus provide a framework for studying cell-type-specific contributions in the pathogenesis of complex respiratory diseases.\n\nSpanning four developmental time points, our dataset uncovers milestones of trachea development from the onset of differentiation, through cell fate determination during embryogenesis, and into the air breathing transition at birth. Compared to the homeostatic and regeneration phases in adults, the developing trachea exhibits both quantitative and qualitative differences in several key aspects of its transcriptional landscape. First, embryonic tracheal tissue expresses high levels of cell cycle markers and shows a higher percentage of progenitor cells, including the double positive Sostdc1- and Smoc2-expressing basal progenitor cells located within the epithelium. Second, we identified gene modules for different cell states that may account for stage-dependent functional profiles. For example, a conserved precursor state for ciliated cells is marked by Foxn4 and the novel marker Shisa8. Foxn4 is required to promote motile cilia formation in Xenopus epidermis (Campbell et al., 2016), and its expression is very transient during frog embryogenesis (Briggs et al., 2018). Our data indicate that Foxn4 expression peaks transiently at E16 in the mouse trachea as ciliated cells begin to emerge, supporting a central role of Foxn4 in promoting motile ciliogenesis in mammals. Third, we uncovered two critical transcriptional events for the establishment of the mucosal barrier. During embryogenesis, epithelial cells upregulate multiciliated gene modules and secretory gene modules to initiate a massive differentiation process between E15 and E16. After the animals are born and start breathing, tracheal epithelial cells upregulate a set of mucosal cytokines, antibacterial effectors, and Th2 immune response genes that are critical for the maturation of barrier function.\n\nIn the neonatal airway, we identified a cilia-secretory hybrid cell state that exhibits the combined molecular profiles of both ciliated and secretory cells. Our data indicate that this neonatal cell state is likely derived from a ciliated cell lineage. The hybrid state appears to be very rare during the adult homeostatic state and cannot be induced by chemically-triggered airway regeneration (Rawlins et al., 2007). In contrast, a cluster of cilia-secretory hybrid cells are found in the human inflammatory airway, indicating that neonatal airway may share similar immune status to the inflamed adult airway (Ordovas-Montanes et al., 2018; Turner et al., 2011; Tyner et al., 2006; Vieira Braga et al., 2019). In both neonatal mouse airway and asthma patients, hybrid cells are linked to the ciliated cell lineage. Supporting this notion, trans-differentiation of ciliated cells into goblet cells can be induced by IL-13, a major cytokine involved in allergy and inflammatory response (Turner et al., 2011; Tyner et al., 2006). While the in vivo functional attributes of this cell state have yet to be defined, the emergence of these hybrid cells may reflect a cellular plasticity in response to inflammation, which has been observed in the first moments of neonatal life (Kollmann et al., 2017; Saluzzo et al., 2017; Torow et al., 2017). This hybrid cell state may also play a role in fine tuning the balance between efficient mucociliary clearance and mucus production.\n\nUsing this atlas as a comprehensive and unbiased framework, and combining it with mouse genetic analysis, we identified the cellular origins of mucus cell hyperplasia and early onset barrier defects caused by loss of Ano1. First, Ano1 in the undifferentiated epithelial cells plays an essential role in maintaining airway progenitors by limiting the differentiation of basal cells into the secretory lineage. Such activity of Ano1 may be sufficient to account for the severe mucus cell hyperplasia observed in Ano1-/- mutants. Second, persistent expression of Ano1 in differentiated airway epithelial cells controls the normal status of the neonatal mucosal immunity. A shift in the expression of antimicrobial genes and proinflammatory modules in Ano1 mutants indicates that these mutants may be more prone to infection and inflammation, which result in secondary pulmonary dysplasia (Davidson and Berkelhamer, 2017; Shahzad et al., 2016). Intracellular chloride, regulated by chloride channels, has been implicated in vesicle trafficking and plays a role in regulating plasma membrane dynamics (Bradbury et al., 1992; He et al., 2017; Stauber and Jentsch, 2013). While the specific actions of Ano1 in basal cell differentiation and barrier functions require further investigation, it is possible that Ano1 mediated-chloride homeostasis underlie both aspects of Ano1 in airway development and physiology.\n\nInactivation of CFTR in humans and Ano1 in mice, respectively, lead to congenital abnormalities of the airway, raising the possibility that perhaps intracellular chloride homeostasis, modulated by these two chloride channels, represents a conserved component for mammalian airway development. Because the pathogenesis and clinical presentations of CF in humans are extraordinarily complex, and the mucosal immunities vary among species, animal models for airway disease can only recapitulate limited aspects of human symptoms. Despite these challenges, our study provides a conceptual foundation for the ontology of mammalian trachea, and demonstrates the presence of conserved cell types and gene modules present in the mouse and human conducting airway. Notwithstanding the challenge in reconciling the discrepancies in mouse and human CF pathogenesis, our tractable mouse model allows for discoveries of airway cell types that require chloride channels for proper differentiation and functions that are relevant to early onset airway diseases.\n\n## Materials and methods\n\n### Mice\n\nThe Ano1 null allele, Ano1tm1Jrr, and Tmem16a conditional allele, Ano1tm12Jrr, have been described previously (Rock et al., 2008). Breeding colonies were maintained in a mixed genetic background by outcrossing C57BL/6J Ano1tm1Jrr and C57BL/6J Ano1tm1Jrr males to FVB females, which were obtained from JAX. For lineage tracing, Shhtm1(EGFP/cre)Cjt/J (Harfe et al., 2004) and Gt(ROSA)26Sortm4(ACTB-tdTomato-EGFP)Luo/J (Muzumdar et al., 2007), Krt5tm1.1(cre/ERT2)Blh (Van Keymeulen et al., 2011), and Foxj1tm1.1(cre/ERT2/GFP)Htg/J (Muthusamy et al., 2014) were obtained from JAX. Arl13b-mCherry/Centrin-GFP reporter mice Tg(CAG-Arl13b/mCherry)1Kv and Tg(CAG-EGFP/CETN2)3-4Jgg/KvandJ (Bangs et al., 2015) were obtained from Sloan Kettering Institute. Mice were housed in an animal facility and maintained in a temperature-controlled and light-controlled environment with an alternating 12 hr light/dark cycle. A maximum of five mice were housed per cage. All protocols have been approved by the University of California San Francisco Institutional Animal Care and Use Committee.\n\n### Isolation of mouse trachea cells\n\nTo obtain embryonic tracheal cells for scRNA-seq, pregnant female mice were sacrificed via CO2 asphyxia at desired stages and embryos were collected. Neonatal mice were sacrificed by decapitation. Tracheas were collected and washed with ice cold DMEM/F12 1:1 (Gibco, 25200056) to remove residual blood. For single-cell dissociation of embryonic trachea, samples were dissociated with 0.25% Trypsin-EGTA and 0.1 mg/mL DNaseI in DMEM/F12 at 37\u00b0C for 15 min. For neonatal trachea, samples were incubated with a combination of 1 mg/mL elastase (Worthington, LS006363) and 2.5 mg/mL dispase II (Roche, 4942078001) in DMEM/F12 0.1 mg/mL DNaseI for 15 min, and then 0.125% Trypsin-EGTA for 15 min at 37\u00b0C. Digest reaction was terminated by an addition of 10% bovine calf serum. Dissociated single-cell solution was centrifuged at 300 g for 5 min at 4\u00b0C. Cell pellets were resuspended with cold DMEM/F12 with 5% bovine calf serum and passed through a 35 \u00b5m filter into a collection tube. Single cells were counted with a Neubauer chamber and cell viability was assessed with trypan blue staining. Using this protocol, we consistently obtained\u00a0>90% viable cells. Cells expressing GFP and RFP dissociated from mT/mG samples were separated collected via Fluorescence Activated Cell Sorting (FACS) using an SH800S (Sony) sorters. Post-sorting, the cells were collected in cold DMEM/F12 media and immediately proceeded to library preparation.\n\n### Isolation of human fetal tracheal cells\n\nHuman fetal trachea samples were obtained and used in accordance with the guidelines for the care and use of animals and human subjects at University of California, San Francisco. Given that deidentified fetal tissue were involved, this study does not involve human subjects as defined by the federal regulations summarized in 45 CFR 46.102(f) and does not require IRB oversight. Details for approval is included in the accompanying GDS certification letter from the UCSF Ethics and Compliance and the Human Research Protection Program with study ID number 16\u201319909. First and early second trimester human fetal trachea were collected without patient identifiers after elective termination of pregnancy with approval from the Committee on Human Research at UCSF (IRB#12\u201308813). Fetal age was estimated using heel-toe length (Drey et al., 2005). Fetal age was calculated from time of fertilization, fetal age, and not from last menstrual period. Fetal trachea samples were collected at room temperature during surgery and analysis (1\u20132 hr) before stored at 4\u00b0C. For dissociation, tissue pieces were rinsed in ice cold PBS and incubated in a combination of 200 \u03bcg/ml Liberase (Liberase TL Research Grade, Roche, 05401020001) and 0.1 mg/mL DNaseI in DMEM/F12 for 30 min. Digest reaction was terminated by addition of 10% bovine calf serum, followed by an additional step to remove red blood cells via RBC Lysis buffer (ThermoFisher). Following steps were identical to the one used for mouse single cell collection.\n\n### Single-cell RNA sequencing\n\nSingle cells were encapsulated into emulsion droplets using the Chromium Controller (10x Genomics). scRNA-seq libraries were constructed using Chromium Single Cell 3\u2019 reagent kits v2 (mouse samples) or v3 (human samples) according to the manufacturer\u2019s protocol. About 3000 to 7000 cells were targeted in each channel. Reverse transcription and library preparation were performed on a C1000 Touch Thermal cycler with 96-Deep Well Reaction Module (Bio-Rad). Amplified cDNA and final libraries were evaluated on Agilent tapestation system (Agilent Technologies). Libraries were sequenced with 26 (v2) or 28 (v3) bases for Read1, eight bases for Index1, and 98 bases (v2) or 91 bases (v3) for Read2 on the Novaseq 6000 Sequencing System (Illumina) to over 80% saturation level.\n\n### Annotations of cell types and cell states in the mouse airway\n\nTo define cell types, we analyzed all cells sampled from trachea of wild-type mice across ages by performing principal component analysis on the most variable genes between cells, followed by nearest-neighbor graph-based clustering (code available through https://github.com/czbiohub/BingWu_DarmanisGroup_TracheaDevTmem16a;\u00a0Wu, 2020; copy archived at https://github.com/elifesciences-publications/BingWu_DarmanisGroup_TracheaDevTmem16a). We then generated a list of gene expression markers for each cluster using a Wilcoxon Rank Sum test Based on gene expression of known markers, we then assign cell-type annotations to each cluster. To define the developmental dynamics of epithelial cell types, each epithelial cell type that is composed of multiple clusters, or cell states, are displayed in separate heatmaps. Within each heatmap, the cells are grouped by their original cluster identity and annotated with their cell states based on the differentially expressed genes without using developmental stage information. Genes shown in the heat maps are selected sets of differentially expressed genes of each cluster compared to the rest of the cells in the same cell type. The same lists of differentially expressed genes were uploaded to the STRING database search portal (https://string-db.org/) to perform gene ontology analysis.\n\n### Antibodies and immunostaining\n\nAntibodies for immunofluorescence staining were mouse anti-FOXJ1 (1:500, 2A5, ThermoFisher, 14-9965-82), rabbit anti-TRP63/P63 (1:500, proteintech, 12143\u20131-AP), SCGB1A1/CC10 (1:200, B6, Santa Cruz, sc-390313), rabbit anti-KRT13 (1:500, proteintech, 10164\u20132-AP), mouse anti-acetylated \u03b1-tubulin (1:2,000; 6\u201311B-1; Sigma-Aldrich T6793), rat anti-E-cadherin (1:1,000; ECCD-2; Thermo Fisher Scientific), rabbit anti-DCLK1 (1:500, ThermoFisher, PA5-20908), anti-GFP (1:1000, Aves lab, AB_2307313), Alexa Fluor 488-, 594- and 633-conjugated secondary antibodies (Invitrogen), and Fluorescein labeled Jacalin (1:500, Vector Laboratories, FL-1151). For protein immunostaining, cells or tissue sections were fixed with 4% paraformaldehyde (PFA) for 20 min at room temperature or \u221220C\u00b0 methanol for 10 min on ice. After fixation, the samples were washed and blocked with IF buffer (1\u00a0\u00d7\u00a0PBS with 1% heat-inactivated goat/donkey serum and 0.3% Triton X-100). Primary antibodies were added and incubated for 1 hr at room temperature or overnight at 4\u00b0C. After washing with IF buffer, secondary antibodies and DAPI were added at 1:1000 dilution for 1 hr at room temperature. Samples were washed with 1\u00a0\u00d7\u00a0PBS and mounted with Fluoromount-G (SouthernBiotech). Washing and staining were performed with IF buffer (1\u00a0\u00d7\u00a0PBS with 5% serum and 0.2% triton) at room temperature. Samples were then imaged using a Leica TCS SP8 confocal microscope with the 40\u00a0\u00d7\u00a0and 63\u00a0\u00d7\u00a0HC PL Apo oil CS2 objective.\n\n### Transmission electron microscopy\n\nFor transmission electron microscope, embryonic and newborn tracheas were dissected in cold PBS and fixed with 2% paraformaldehyde and 2.5% glutaraldehyde in 0.1 M sodium cacodylate buffer. After buffer rinses, samples were postfixed in 1% OsO4 at room temperature for 4 hr followed by dehydrating in an ethanol series. Samples were stained with osmium tetroxide and embedded for thin sectioning in EPON. Sections of 70\u2013100 nm were examined on a JEOL transmission electron microscope and photographed at primary magnifications of 4000\u201330,000X.\n\n### Foxj1CreERT2 lineage tracing\n\nTamoxifen (5 mg/ml; 100 \u00b5l per animal) via intraperitoneal injection was administered one time on E14.5 in Rosa26mT/mG females crossed with Foxj1CreERT2:GFP carrier males. Trachea from Foxj1CreERT2:GFP carrier newborns were collected at P0 to P1. Before fixation, we isolated trachea samples under a fluorescent dissection scope and only processed those with both Tomato and GFP signals. Samples were fixed with 4% paraformaldehyde (PFA) for 20 min at room temperature followed by \u221220C\u00b0 methanol for 10 min on ice. After fixation and whole-mount staining, samples were flat mounted on 35 mm No 1.5 MatTek dishes (luminal side facing the coverlslip) and imaged en-face. For staining, mGFP signal was used to indicate Foxj1+ lineage. mTomato signal was quenched after a sequential fixation by PFA and methanol, so we used E-cad antibody to label cell membrane in the RFP channel and pseudo-colored it in grey in the image panel. A mouse monoclonal antibody for SCGB1A1 (Santa Cruz, sc-390313) was used to label secretory cells in the far-red channel. Whole-mount airway samples were imaged with a Leica TCS SP8 confocal microscope with the 40\u00a0\u00d7\u00a0HC PL Apo oil CS2 objective.\n\n### Polidocanol-induced airway regeneration\n\nTamoxifen (20 mg/ml; 500 ul per animal) via intraperitoneal injection was administered three times on days 1, 3 and 5 in Ano1f/f; mT/mG, Ano1f/+; Krt5CreERT2;mT/mG, and Ano1f/f; Krt5CreERT2;mT/mG mice at P25. A week after the last injection, mice were anaesthetized and one dose of 10 \u03bcl 2% polidocanol was administered via a pipet to the larynx to induce airway luminal cell injury. Non-surgical intratracheal instillation was modified based on previous protocol (Rayamajhi et al., 2011). Trachea samples were collected a week following injury for fixation and immunofluorescence.\n\n### Histology\n\nNewborn trachea and lung were fixed by formalin, dehydrated, and embedded in paraffin. Standard Periodic acid\u2013Schiff (PAS) staining for airway mucus was formed at Mouse Pathology Core at the University of California, San Francisco.\n\n### Cilia flow analysis\n\nFor imaging of ciliary flows, tracheas from neonatal animals were dissected in ice-cold Dulbecco's Modified Eagle Medium: Nutrient Mixture F-12 (ThermoFisher, DMEM/F12), and sliced open along the proximal-distal axis prior to imaging. Each trachea was mounted onto 35 mm cell imaging dishes, luminal side facing the coverglass, (MatTek) with a solution of fluorescent beads (Carboxylate-modified Microspheres 0.4 \u03bcm size; Invitrogen, 1:250 to 1:500) in 500 ml DMEM/F12 media. Tissue samples with 500 \u03bcl imaging media were placed on the microscope for 2 to 3 min to equilibrate to 37\u00b0C prior to imaging. Imaging was performed in an environmental chamber with 5% CO2 at 37\u00b0C and acquired using a Leica TCS SP8 confocal microscope with a10x HCX PL Apo dry CS objective. Flow was imaged at 1 f/s for 300 s. Flow pathlines were generated using Flowtrace (Gilpin et al., 2017) (http://www.wgilpin.com/flowtrace_docs/). Particle Image Velocimetry (PIV) fields were generated using PIVLab (https://www.mathworks.com/matlabcentral/fileexchange/27659-pivlab-particle-image-velocimetry-piv-tool) for MATLAB. We used the FFT window deformation PIV algorithm with three passes consisting of 128 \u00d7 128, 64 \u00d7 64, 32 \u00d7 32 interrogation areas to determine the velocity vectors. Velocity vectors were filtered around a Gaussian Distribution (within 0.8 standard deviation) around no movement to remove incorrect pairings and extraneous movements. All parameters were held constant across all analyses to reduce systematic errors due to inconsistent discretization.\n\n### mRNAs fluorescent in situ hybridization (FISH)\n\nIn situ hybridization for mouse Ano1, Shh, Cftr, Foxj1, Foxn4, Gp2, Prr18, Shisa8, Mcidas1, Sostdc1, Ccl20, and human ANO1, CFTR, FOXJ1, and FOXN4 were performed using the RNAscope kit (Advanced Cell Diagnostics) according to the manufacturer\u2019s instructions.\n\n### Statistical analysis\n\nMethods for statistical analysis and numbers of samples measured in this study are specified in the figure legends. The error bars indicate the SD.\n\n### Data analysis\n\nSequences generated by the NovaSeq were de-multiplexed and aligned to the mm10.1.2.0 genome using CellRanger (10x Genomics) with default parameters. Subsequent filtering, variable gene selection, reduction of dimensionality, clustering, and differential expression analysis with Wilcoxon rank sum tests were performed using the Seurat package (version 2.3) in R.\n\n### scGPS (single-cell Geneset percentile scoring)\n\nThe geneset percentile score for each cell was calculated as the mean of cell-wise percent rank for all genes in a certain module. For instance, a given module consists of the number of m genes, an scGPS= $\\frac{1}{m}\\sumi=1mPercentRank_{i}$, in which $PercentRank_{i}$ is the rank of the log-normalized expression level of $gene_{i}$ in this cell compared to $gene_{i}$ expression in all cells in the dataset. Equal values of $gene_{i}$ expression are assigned the lowest rank. Each ranking is scaled to [0,1]. An scGPS of p can be interpreted as the mean expression of the selected genes is p percentile for the given cell. Implementation in R can be found in https://github.com/czbiohub/BingWu_DarmanisGroup_TracheaDevTmem16a\u00a0(Wu, 2020).\n\n### Velocyto analysis of ciliated cell dynamics\n\nRNA velocity was estimated by following velocyto.py documentation. Spliced and unspliced transcript counts were derived from Cellranger\u2019s outputs and with \u2018run10x\u2019 default settings through velocyto.py command-line interface. Cell type annotations were determined as described in Figure 7 with Seurat in R. Scripts to reproduce the results for E16 epithelial cell dynamics including the transition trajectory of ciliated cells are available at https://github.com/czbiohub/BingWu_DarmanisGroup_TracheaDevTmem16a\u00a0(Wu, 2020).\n",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "afb6d51c-08f9-4ba9-9224-21e3ba1b1124",
+      "submission_id": "b4cc99af-ebab-40ec-b454-53e2a81253d3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward E Morrisey, University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53085.sa1](https://doi.org/10.7554/eLife.53085.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for sending your article entitled \"Chloride channels regulate differentiation and barrier functions of the mammalian airway\" for peer review at eLife. Your article is being evaluated by Edward Morrisey as the Senior Editor, a Reviewing Editor, and three reviewers.\n\nGiven the list of essential revisions, including new experiments, the editors and reviewers invite you to respond within the next two weeks with an action plan and timetable for the completion of the additional work. We plan to share your responses with the reviewers and then issue a binding recommendation.\n\nWe ask that you address both the technical limitations raised by the reviewers (i.e. lack of methodological details, additional details on the morphological defects in Tmem16 null lungs etc.), and how you will provide additional data on the relationships between your described hybrid cells, ciliated, and secretory cells of the airways.\n\nReviewer #1:\n\nIn this paper the authors investigate the role of the chloride channel Ano1/Tmem16a in airway development and provide a survey of the cell types in the developing mouse and human tracheas using a scRNAseq and computational approaches. They report broad effects of Tmem16a deficiency, ranging from mucus hyperplasia to alveolar simplification. Their survey describes not previously reported hybrid cilia-secretory cells as well as novel immune and mesenchymal cells. They conclude that Tmem16a has non-redundant functions in the airway epithelium and that human and mice have conserved gene regulatory programs of airway differentiation.\n\nThe paper has an impressive amount of data and use of resources. However, the analysis of the data and integration into a coherent picture is overall quite superficial. Much of the data presented and the methodologies are barely described and the information is diluted, making it difficult to conclude about how the chloride channel orchestrate the changes observed or any potential link with CF.\n\n1) The authors report in Figure 1A, B that Tmem16a-/- knockout results in mucus obstruction of the respiratory tract and alveolar simplification in neonatal mutants. What is provided is poorly documented and insufficient. The PAS staining is of poorly quality to demonstrate mucus obstruction; the goblet cell metaplasia needs to be further documented by Alcian Blue and Muc5a stainings. The region depicted by the square (I 2B WT), looks rather a blood vessel and is very different from the airway shown I 2B in the mutant lung. Moreover, from the picture provided in Figure 1B there is no convincing evidence of alveolar simplification in mutant, which should be shown by morphometrical analysis. It is unclear whether the authors mean to report a defect in sacculation at P1. The alveolar phenotype should be confirmed at P4 or later, since alveolar formation initiates at around P3. How do the authors explain this phenotype? Is Tmem16a expressed in the alveolar compartment?\n\n2) What is the significance of the reversed mucociliary flow (0.42 \u00b1 0.18 \u03bcm/s) in Tmem16a mutants and how could this be mechanistically explained and associated with the phenotype?\n\n3) There is insufficient information about how the parameters depicted in Figure 2 were analyzed and displayed. For example, in Figure 2B the heatmap shows average expression of marker genes for each cluster identified at E15, E16, P1 and P4. However, there is no indication of how gene expression at the ages indicated are displayed. Methods and result sections are vague and uninformative. Same for the human samples in Figure 2C.\n\n4) There is no lineage study or other evidence to support the authors' statement that the hybrid ciliated-secretory cells derive from ciliated cells. There are no definitive follow up experiments to determine whether these cells represent a transient state and whether they originate from secretory or ciliated cells. As described, the analysis of Pofut1-/- in Figure 4\u2014figure supplement 1 neither convincingly demonstrate the existence of these hybrids cells, nor identify their origin. The Arl13b-mCheery/Centrin-GFP reporter mice are mentioned in the Materials and methods section but data are not shown or discussed.\n\n5) Spdef and Creb3l1 are not involved in the specification of embryonic (E16) secretory cells. In fact, Spdef expression is reported to initiate later in the developing lung and postnatally. Moreover, Spdef is not associated with induction of secretory (Club). In fact, Spdef inhibits Club cell differentiation and induces the goblet cell program (Park et al., 2007).\n\n6) It is not clear what the authors mean by \"By demonstrating the similarities in airway defects as well as in expression patterns of Tmem16a and CFTR in mouse and human airway epithelium, respectively, our work provides an entry point for understanding the developmental aspects of airway barrier pathogenesis\". In spite of the focus on chloride channels and comparisons with CFTR, at the end it unclear what Tmem16a is really doing in these cells.\n\nReviewer #2:\n\nThe manuscript \"Chloride channels regulate differentiation and barrier functions of the mammalian airway\" by Mu He et al. reports the role of Tmem16a/Ano1 in maintaining airway barrier function. The deletion of Tmem16a in mouse was shown to result in mucus obstruction and defective mucociliary clearance during development. Through transcriptional analyses, the authors characterized the developmental landscape of airways in both mouse and human and showed that Tmem16a has a role in regulating inflammation and epithelial progenitor cell differentiation. Collectively, the authors conclude that chloride channels are essential for mammalian airway formation and function.\n\nWhile roles for Tmem16a in lung trachea development have been reported previously, a role for Tmem16a in airway epithelial development has not been reported. In addition, the authors identified remarkably conserved cellular programs operating during human fetal lung development. Therefore, the observations in the manuscript have novelty and are interesting. There are however several comments that I have listed below that I feel can improve the manuscript.\n\n1) Figure 1A showed that Tmem16a null mutant mice had increased mucus secretion. Are the levels of submucosal glands and goblet cells increased in the mutant?\n\n2) Figure 1E showed increased number of SCGB1A1+ cells in Tmem16a null mutants. It is unclear whether Tmem16a impacts cell proliferation. Does Tmem16a deletion increase SCGB1A1+ cell proliferation?\n\n3) Figure 6A, B showed Tmem16a expression in E15 mouse lung epithelium. It is unclear whether Tmem16a is expressed in postnatal lung epithelium during both homeostasis and Polidocanol-induced airway regeneration.\n\n4) Figure 4C showed that Tmem16a null mutant epithelial cells significantly downregulated NF-\u03baB inhibitors Nfkbia and Nkfbiz. It is unclear whether decreased Nfkbia and Nkfbiz globally impacts NF-\u03baB signaling. Does Tmem16a deletion increase NF-\u03baB nuclear activity in lung epithelial cells?\n\n5) Tmem16a null mutants displayed an expansion of immature secretory cell populations. I wonder if this phenotype was caused directly by the loss of Tmem16a or indirectly via increased inflammation. Does reduced inflammation recue the phenotype observe in the Tmem16a null mutant?\n\n6) Figure 6H showed that deletion of Tmem16a in adult Krt5+ cells resulted in decreased ratio of ciliated cells versus secretory cells during Polidocanol-induced airway regeneration. Do the Krt5-creERT2, Tmem16a fl/fl mice exhibit similar phenotypes as those observed in Tmem16a null mutants, such as mucus obstruction and increased inflammation?\n\n7) Figure 6G showed that deletion of Tmem16a in mouse epithelium led to mucous metaplasia and biased differentiation toward secretory cells during postnatal life. It's interesting that prior studies have indicated that Tmem16a overexpression led to mucous hyperplasia and blocking Tmem16a suppressed mucin secretion in the lung secretory epithelial cell (Huang et al., 2012). These studies suggest that both loss- and gain-of-expression of Tmem16a in lung epithelial cells could cause mucous hyperplasia. It is unclear about the reasons underlying these contradictory findings. The rationale and discussion are needed to clarify these findings.\n\nReviewer #3:\n\nIn this manuscript, He et al., studied the role of chloride channel Ano1/Tmem16a in airway development and its role in barrier function. The authors used Tmem16 knockout mouse model and claim that inactivation of Tmem16 results in alveolar simplification and obstruction of the respiratory tract due to mucus accumulation in neonatal mutants. To characterize the cellular origins of airway defects, the authors performed single-cell RNA sequencing of mouse trachea on wild-type and Tmem16a mutant cells from embryonic tissues. Further the authors profiled human fetal tracheal cells at gestation weeks 21 and 23 (GW21 and GW23) to identify orthologous cell types and cell states defined by similar molecular markers between the mouse airway and the human airway. Based on this data, the authors claim to have identified a novel cilia-secretory hybrid sell state using Foxj1, Gp2 and Prr18 as markers. Additionally, they state that these hybrid cells are likely derived from a ciliated cell lineage and play a critical role in airway function and pathogenesis including Asthma, COPD, and PCD. Finally, using scRNAseq the authors claim that loss Tmem16a results in secretory cell hyperplasia and Tmem16a inhibits basal progenitor differentiation towards the secretory lineage.\n\nOverall, the authors used scRNA-sequencing to understand the development of airway epithelium and to study the role of Tmem16 in this process. However, the data presented here is incoherent and lacks clear message. The data provided in the current manuscript is of poor quality and does not add much to the knowledge in this area. It appears to me that the authors put together two unrelated pieces (scRNA-seq and Tmem16). The authors point to a hybrid cell state that's representative of both ciliated and secretory cells. As pointed in the later section, the numbers and proportions of these intermediates is unclear, and the validation data presented here is not convincing. Similarly, the authors talked about genes enriched in CF, COPD, asthma and COPD but there is no direct correlation to any of the phenotypes described here.\n\nEssential revisions:\n\n1) Tmem16 mutant characterization: In Figure 1, the authors present data from Tmem16 mutant airway tissue characterization. The authors compared the muco-ciliary clearance between the wild-type and Tmem16a-/- knockout mouse line without describing any experimental details. In Figure 1A, the authors used Jacalin-488 staining. However, it is unclear why the authors chose to use Jacalin as this is not a commonly used marker for airway cell types. From the images, it appears that it marks all luminal cells of the airway epithelium. Co-staining with secretory and ciliated cell markers would help. In Figure 1B, PAS staining does not look convincing \u2013 a better representative image can be included. Further, authors talked about defects in mucociliary clearance (Figure 2C) by assessing the flow dynamics of fluorescent beads in Tmem16a-/- mouse without describing the tracheal abnormalities in Tmem16a-/- knockout mouse? What are the anatomical and structural differences between wild-type trachea to Tmem16a-/- knockout? Previous studies have shown that the tracheal cartilage rings are abnormal in the mutants. So, is it possible that the MCT defects observed here are due to abnormalities in tissue structure? And also, some of the phenotypes shown here have been already described elsewhere. The authors failed to cite the previous studies in this section.\n\n2) Correlation between Tmem16 expression and function: In the current study authors used embryonic and neonatal mouse tissue and studied the role of Tmem16a in formation and function of the airway mucosal barrier without clearly characterizing the Tmem16a expression pattern at different developmental stages. Authors state that Tmem16a is expressed in undifferentiated mouse epithelium as well as in differentiated secretory cells at E15 (Figure 6A-B). However, In the Figure 2E authors shows their single cell RNA-seq identify Ano1/Tmem16a is specific to the mouse secretory cells. Does that mean later in development or in neonates only secretory cells express Ano1/Tmem16a? if so, at which developmental stage Ano1/Tmem16a expression is specified to the secretory cells?\n\n3) scRNA-seq data and hybrid cell state: The authors performed single-cell RNA sequencing of mouse trachea from wild-type embryonic day 15 (E15), E16, P1, and P4 and Tmem16a mutant trachea of E16, P1, and P4 to characterize the cellular origins of these complex airway defects. However, they did not show as to how does the comparative data look like? What are the major transcriptomic differences between the wild-type and Tmem16 mutant trachea? How does the cellular landscape look like on tSNE/UMAP? Further, they assign the percent distribution of each cell population based on scRNA-seq data (Figure 2\u2014figure supplement 1B). Does that represent the actual distribution of these cell populations in mouse trachea? Did authors account for any artifacts associated with tissue dissociation and sampling? Immunofluorescence data from Figure 3F and G indicates that the hybrid population accounts for about 1/3 of total luminal cells. Looking at the immunostaining images, it appears that there is an overlap in the localization of SCGB1A1 and FOXJ1. One would not expect this as they are localized in different compartments.\n\n4) Hybrid cell state origin and markers: In Figure 3, the authors talked about identifying a novel cilia-secretory hybrid cell state using Gp2 and Prr18 as markers. what are the different cell types express these markers? Are these markers only expressed by hybrid cell but no other cell types? In Figure 5I, the schematic indicates that the hybrid cell state originates from ciliated cells. It is unclear on what basis the authors claim that this hybrid cells state originates from ciliated cells. No experimental evidence is provided for this claim.\n\n5) In Figure 3I authors show the enrichment of cilia-secretory hybrid cells state in multiple airway diseases (COPD, Asthma and PCD) and stated a critical role of this novel cell state in airway function and pathogenesis. However, it is important to establish the presence of this population in disease states in situ to make such claims.\n\n6) There is no clear link between Figure 1, Figure 2, and Figure 3. What is the link between Tmem16a to the mapping monogenic and complex trait disease-associated cell types of the airway? Is there a relationship between Tmem16a mutation and to the cilia-secretory hybrid cell state? Are there any changes in the number of cells cilia-secretory hybrid cell state in Tmem16a mutants?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Chloride channels regulate differentiation and barrier functions of the mammalian airway\" for further consideration by eLife. Your revised article has been evaluated by Edward Morrisey (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nAs reviewer 3 points out, the data utilizing the Foxj1-creERT2:GFP crossed to the mTmG reporter does not allow for accurate inducible lineage tracing given the two different GFP readouts. Please amend your manuscript to either remove this data or revise the conclusions to more accurately describe these results including the hybrid cell state.\n\nReviewer #3:\n\nThe authors addressed all the comments. However, I have one comment that needs to be clarified.\n\nIn the lineage tracing data, I was a little confused to see that the GFP signal appears in cytoplasm. Looking at the methods section, I noticed that the authors used Foxj1-CreER:GFP crossed with ROSA mT/mG. The use of double reporters (GFP and mGFP) driven by same promoter is not appropriate for cell lineage tracing. In addition, none of the cells show membrane localization of GFP in these images. Therefore, it is difficult to determine if hybrid cells originated from ciliated cells.\n\nThroughout the manuscript (except Materials and methods section) and the response letter, the authors have not mentioned regarding the use of GFP and mGFP in the same mouse line. Previous studies used FoxJ1-CRE (not creER) and did not find any lineage labeled secretory cells (Pardo et al., 2013). Therefore, I suggest the authors either remove this data and the claims about hybrid cell state or clarify with appropriate mouse models/data.\n",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "03e0d7fa-7abd-46fe-a296-896a934db223",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C1",
+      "claim": "Cystic fibrosis is one of the most common recessively inherited disorders caused by the deficient CFTR gene that encodes a chloride channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Cystic fibrosis (CF), which primarily targets the respiratory system, is one of the most common recessively inherited disorder caused by the deficient CFTR gene that encodes a chloride channel (Stoltz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stoltz et al., 2015, which provides external scholarly support for this statement.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "828d9255-bdb5-45b1-abee-5519ab9c2691",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C2",
+      "claim": "The main features of CF airway diseases include mucus obstruction and repetitive infections and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "The main features of CF airway diseases include mucus obstruction and repetitive infections and inflammation, which often lead to severe airway remodeling and respiratory failure (Regamey et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Regamey et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "d271600a-4ae7-4ea1-9671-f604c0f06535",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C3",
+      "claim": "CF symptoms emerge as early as the fetal stage.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that CF symptoms emerge as early as the fetal stage, indicating that alterations of airway development can have a profound impact on the respiratory function later in life (Gosden and Gosden, 1984; Larson and Cohen, 2005; Regamey et al., 2011; Verhaeghe et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations (Gosden and Gosden, 1984; Larson and Cohen, 2005; Regamey et al., 2011; Verhaeghe et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "38a1475a-e820-4686-bb57-76707885d003",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C4",
+      "claim": "Mouse mutants that lack Cftr do not exhibit airway defects similar to those found in cystic fibrosis patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse mutants that lack Cftr do not exhibit airway defects similar to those found in cystic fibrosis patients (Lavelle et al., 2016; McCarron et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lavelle et al., 2016 and McCarron et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "73b5a49e-3448-4c8a-8bc6-fbc219e632b3",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C5",
+      "claim": "Other chloride channels, such as calcium-activated chloride channel (CaCC), may compensate for the lack of Cftr in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This led to the hypothesis that chloride channels may play species-specific roles and that other chloride channels, such as calcium-activated chloride channel (CaCC), may compensate for the lack of Cftr in mice (Clarke et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is presented as a hypothesis and is supported by a citation to Clarke et al., 1994.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "e99cc24e-0b5a-483b-a6bb-b519950c3877",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C6",
+      "claim": "Ano1, also known as Tmem16a, is a CaCC in the Anoctamin/TMEM16 family.",
+      "claim_type": "EXPLICIT",
+      "source": "Ano1, also known as Tmem16a, is a CaCC in the Anoctamin/TMEM16 family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about Ano1/Tmem16a that is part of established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "72e00b99-c3d4-4718-8b71-7e6a5659f14f",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C7",
+      "claim": "Ano1 regulates intracellular chloride homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ano1 regulates intracellular chloride homeostasis (He et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to He et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "5c03be1a-9504-42f7-ab55-c31aa10f1485",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C8",
+      "claim": "Ano1 is required for survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Ano1 regulates intracellular chloride homeostasis (He et al., 2017) and is required for survival (Lek et al., 2016; Rock et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lek et al., 2016 and Rock et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "c25abac7-82f7-4633-840e-ff40d4fc6d47",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C9",
+      "claim": "Mouse mutants that lack Ano1 exhibit abnormal trachea morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "mouse mutants that lack Ano1 exhibit abnormal trachea morphology (Rock et al., 2008; Rock et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Rock et al., 2008 and Rock et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "9ca1be4b-e038-4f00-ab12-05e6fa40f632",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C10",
+      "claim": "ANO1 is a candidate drug target in the modulation and management of CF.",
+      "claim_type": "EXPLICIT",
+      "source": "Given its function as a chloride channel in the airway, ANO1 is a candidate drug target in the modulation and management of CF (Amaral and Beekman, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Amaral and Beekman, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "dd951ffb-3c73-42d0-8354-38b8515c9579",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C11",
+      "claim": "A massive expansion of the secretory cell population was observed in Ano1-/- knockout airway at postnatal day 0 (P0).",
+      "claim_type": "EXPLICIT",
+      "source": "Using fluorescently labeled Jacalin, a plant-based lectin that recognizes airway glycoproteins and mucin components (Ostedgaard et al., 2017), as well as antibody against SCGB1A1, a low-molecular-weight protein enriched in airway secretory cells, we observed a massive expansion of the secretory cell population in Ano1-/- knockout airway at postnatal day 0 (P0) (Figure 1A; Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A and Figure 1\u2014figure supplement 1A, using fluorescently labeled Jacalin and SCGB1A1 antibody staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "6b6eae2b-167c-42b1-98d3-8b1772fd6561",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C12",
+      "claim": "Jacalin-positive mucus substance was observed in Ano1-/- knockout airway lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Jacalin-positive mucus substance was observed in Ano1-/- knockout airway lumen (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "8a9c3709-4194-4302-a0ad-7503cfc61cdd",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C13",
+      "claim": "At P3 and P5, PAS and Alcian Blue staining demonstrated strong mucus obstruction of the respiratory tract and alveolar simplification in Ano1-/- neonatal lung.",
+      "claim_type": "EXPLICIT",
+      "source": "At P3 and P5, Periodic Acid\u2013Schiff stain (PAS) and Alcian Blue staining of airway histological sections consistently demonstrated strong mucus obstruction of the respiratory tract and alveolar simplification in Ano1-/- neonatal lung (Figure 1B; Figure 1\u2014figure supplement 1B,C,D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1B,C,D,E using PAS and Alcian Blue staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "3831ede0-fde2-47ad-8456-dcdf77423df1",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C14",
+      "claim": "Wild-type trachea at P2 showed directional flow at 0.90 \u00b1 0.22 \u03bcm/s from the distal to the proximal trachea.",
+      "claim_type": "EXPLICIT",
+      "source": "At P2, wild-type trachea showed directional flow at 0.90 \u00b1 0.22 \u03bcm/s from the distal to the proximal trachea (Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental measurements shown in Figure 1C,D and Figure 1\u2014video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "facd74f5-2051-48a4-81fd-01ae22536d6f",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C15",
+      "claim": "Ano1 mutants showed minimal and sometimes reversed flow at 0.42 \u00b1 0.18 \u03bcm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Ano1 mutants showed minimal and sometimes reversed flow at 0.42 \u00b1 0.18 \u03bcm/s (Figure 1C,D; Figure 1\u2014video 2), significantly slower than the velocity observed in littermate controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental measurements shown in Figure 1C,D and Figure 1\u2014video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "4301935c-28a5-4671-b89d-268731802d73",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C16",
+      "claim": "There was a significant increase in the number of secretory cells in the mutant airway compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining of SCGB1A1 showed a significant increase in the number of secretory cells in the mutant airway compared to wild-type (Figure 1E,F; Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E,F and Figure 1\u2014figure supplement 1A using SCGB1A1 immunostaining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "0f6e7a75-e948-4d75-8e41-b05d9d066519",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C17",
+      "claim": "The numbers for ciliated cells were unaffected in Ano1-/- mutant airway compared to littermate wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the expression of Centrin2-GFP, the numbers for ciliated cells were unaffected in Ano1-/- mutant airway compared to littermate wild-type (Figure 1E; Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E and Figure 1\u2014figure supplement 1A using Centrin2-GFP expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "66322476-a9de-447c-8ebe-6801c109487c",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C18",
+      "claim": "TEM analysis revealed subcellular defects in mutant neonatal epithelial cells, including short microvilli, dilated ER lumen and accumulation of large amorphous vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission electron microscopy (TEM) analysis revealed subcellular defects in mutant neonatal epithelial cells, including short microvilli, dilated ER lumen and accumulation of large amorphous vesicles (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TEM data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "5aebf5f5-e8c9-4f83-bb17-f1c9c2dde8f6",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C19",
+      "claim": "The wild-type single-cell embryonic and neonatal atlas largely agrees with previously published atlases of the adult airway in the expression of marker genes for major epithelial cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Our wild-type single-cell embryonic and neonatal atlas largely agrees with previously published atlases of the adult airway in the expression of marker genes for major epithelial cell types (Figure 2B; Figure 2\u2014figure supplement 1C; Montoro et al., 2018; Plasschaert et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison with published data (Montoro et al., 2018; Plasschaert et al., 2018) and shown in Figure 2B and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "32d21819-0ed3-4d76-8e30-73f582861370",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C20",
+      "claim": "Major cell types of the developing airway and molecular markers associated with each cell type are highly conserved between mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we observed that major cell types of the developing airway and molecular markers associated with each cell type are highly conserved between mice and humans (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparative analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "851712c7-25f4-40da-a632-acfa06749928",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C21",
+      "claim": "Coordinated differentiation programs of luminal cell types, including ciliated and secretory cells, were initiated between E15 and E16 in wild-type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type mice, coordinated differentiation programs of luminal cell types, including ciliated and secretory cells, were initiated between E15 and E16 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "989eb57e-ef8b-4b0e-82cb-9395f4c91dc1",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C22",
+      "claim": "Spdef and Creb3l1, two transcription factors that promote the secretory cell fate, and Foxj1, a transcription factor essential for the motile ciliated cell formation, were upregulated at E16 compared to E15.",
+      "claim_type": "EXPLICIT",
+      "source": "Spdef and Creb3l1, two transcription factors that promote the secretory cell fate (Chen et al., 2009; Gregorieff et al., 2009) and Foxj1, a transcription factor essential for the motile ciliated cell formation (You et al., 2004; Yu et al., 2008), were upregulated at E16 compared to E15 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3B and citations to Chen et al., 2009; Gregorieff et al., 2009; You et al., 2004; Yu et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "4ffc1481-abc0-4d6a-b61a-54598db28ae7",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C23",
+      "claim": "The number of cycling cells was diminished as differentiated cells began to emerge.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the number of cycling cells, reflected by a calculated cell cycle score, was diminished as differentiated cells began to emerge (Figure 3C; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3C and Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "0fcf86e7-69ac-4f3c-95b1-e9899201a2dd",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C24",
+      "claim": "At E15, the broad presence of Trp63 but low level of Krt5, and the marked expression of Id2, Id3, Wnt7b, and Cldn6 indicate that undifferentiated cells dominate the Epcam+ epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "At E15, the broad presence of Trp63 but low level of Krt5, and the marked expression of Id2, Id3, Wnt7b, and Cldn6 indicate that undifferentiated cells dominate the Epcam+ epithelium (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from gene expression patterns shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "efd0b652-dbdb-4a29-ab36-f40b596e036e",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C25",
+      "claim": "When luminal cells begin to emerge at E16, Trp63+ basal cells switch to a different expression program, consisting of Krt5, Krt15, Aqp3, and Aqp4.",
+      "claim_type": "EXPLICIT",
+      "source": "When luminal cells begin to emerge at E16, Trp63+ basal cells switch to a different expression program, consisting of Krt5, Krt15, Aqp3, and Aqp4, which may play important roles in the epithelial barrier function (Kreda et al., 2001; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3D and a citation to Kreda et al., 2001.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "67b13146-d4c7-4f4c-b05e-ebb699288f1f",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C26",
+      "claim": "The immature secretory program showed a pronounced expression of Cited1, a transcription cofactor that activates TGF-\u03b2 and BMP signals.",
+      "claim_type": "EXPLICIT",
+      "source": "At E16, in addition to Spdef and Creb3l1, the immature secretory program showed a pronounced expression of Cited1, a transcription cofactor that activates TGF-\u03b2 and BMP signals (Plisov et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data and a citation to Plisov et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "0c1e1fc9-427e-4c84-af3c-defc678978b2",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C27",
+      "claim": "The neonatal secretory program was distinguished by elevated expression of Gp2 and Tff2, which are important mucosal proteins and markers for goblets cells found in the adult airway.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the neonatal secretory program was distinguished by elevated expression of Gp2 and Tff2, which are important mucosal proteins and markers for goblets cells found in the adult airway (Hase et al., 2009; Montoro et al., 2018; Nikolaidis et al., 2006; Wills-Karp et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data and citations to Hase et al., 2009; Montoro et al., 2018; Nikolaidis et al., 2006; Wills-Karp et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "93f926e2-a8fb-4301-938d-14ded337ec01",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C28",
+      "claim": "The neonatal secretory program includes expression of Sftpd, which encodes a surfactant protein and is involved in the innate immune program.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as Sftpd, which encodes a surfactant protein and is involved in the innate immune program (Brandt et al., 2008; Mackay et al., 2016; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3D and citations to Brandt et al., 2008 and Mackay et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "6d627ad6-0ac8-41be-b880-eab7616569f8",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C29",
+      "claim": "The immature secretory program includes gene modules required for protein folding and trafficking, which are critical for the secretory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The immature secretory program includes gene modules required for protein folding and trafficking, which are critical for the secretory pathway (Trombetta and Parodi, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene ontology analysis (Figure 3E) and a citation to Trombetta and Parodi, 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "14347bb0-b911-4494-a81c-c66e83634242",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C30",
+      "claim": "The mature secretory program features processes involved in the regulation of cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "while the mature secretory program features processes involved in the regulation of cell division (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "74da5a73-45dc-4ed3-b719-56a1ad53133c",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C31",
+      "claim": "Both embryonic and postnatal ciliated cells expressed Foxj1.",
+      "claim_type": "EXPLICIT",
+      "source": "In our dataset, both embryonic and postnatal ciliated cells expressed Foxj1 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "8139bf2e-f855-4990-a5dc-adf30d193eac",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C32",
+      "claim": "Immature ciliated cells were characterized by Foxn4, Ccna1, Ccno, Mcidas, as well as by Shisa8.",
+      "claim_type": "EXPLICIT",
+      "source": "Immature ciliated cells, which are predominantly present during embryogenesis, were characterized by Foxn4, Ccna1, Ccno, Mcidas, as well as by uncharacterized markers, such as Shisa8, which is an auxiliary subunit for the AMPA receptor and a member of the CKAMP glutamate receptor family required for synaptic transmission (Farrow et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data and a citation to Farrow et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "f279f4ac-efa1-4a5f-8ad8-6d75ac26398f",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C33",
+      "claim": "The immature ciliated program includes pathways involved in protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The immature ciliated program includes pathways involved in protein synthesis (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "9c4de6c8-5670-41ed-8965-da227e665172",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C34",
+      "claim": "RNA FISH analysis of Mcidas and Shisa8 showed colocalizations with Foxn4 and Foxj1 in E16 wild-type trachea.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA FISH (fluorescent in-situ hybridization) analysis of Mcidas and Shisa8 showed colocalizations with Foxn4 and Foxj1 in E16 wild-type trachea (Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA FISH data shown in Figure 3\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "07a13dd7-6c4a-4907-aec9-9d99a567ef33",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C35",
+      "claim": "Postnatal mature ciliated cells upregulate Sntn, which encodes a phosphatidylserine binding protein localizing to the tip of motile cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, postnatal mature ciliated cells upregulate Sntn, which encodes a phosphatidylserine binding protein localizing to the tip of motile cilia (Kubo et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data and a citation to Kubo et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "5b932293-b6ba-47b9-a0e4-1bbd8680ebcb",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C36",
+      "claim": "Postnatal mature ciliated cells express various membrane receptors, such as Cdhr3 and Ldlrad1, which are involved in rhinovirus infection.",
+      "claim_type": "EXPLICIT",
+      "source": "and express various membrane receptors, such as Cdhr3 and Ldlrad1, which are involved in rhinovirus infection (Basnet et al., 2019; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3D and a citation to Basnet et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "356b5e5d-6652-4736-b299-b178cdcb60a6",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C37",
+      "claim": "The mature ciliated program highlights molecular pathways that are involved in axoneme assembly, apical junction organization, as well as cilia movement and motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the mature ciliated program highlights molecular pathways that are involved in axoneme assembly, apical junction organization, as well as cilia movement and motility (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "0f39b145-b1d5-4416-9765-6ff65228147e",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C38",
+      "claim": "A population of epithelial cells expressing both the ciliated-cell module and the secretory-cell module was identified in the postnatal mouse dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "In the postnatal mouse dataset, we identified a population of epithelial cells expressing two gene modules, the ciliated-cell module and the secretory-cell one (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "d1d8d2f1-2d3f-460a-8133-d95c99505b49",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C39",
+      "claim": "The presence of a cilia-secretory hybrid cell type was validated by FISH analysis of Foxj1, Gp2 and Prr18 in neonatal tracheal samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Using neonatal tracheal samples, we validated the presence of a cilia-secretory hybrid cell type by FISH analysis of Foxj1, Gp2 and Prr18, a novel ciliated cell marker (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FISH data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "12e0e927-e536-4716-ac80-9ed4dc160350",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C40",
+      "claim": "Based on immunofluorescence staining, hybrid cells expressed FOXJ1 and a secretory cell marker SCGB1A1.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on immunofluorescence staining, these hybrid cells expressed FOXJ1 and a secretory cell marker SCGB1A1 (Figure 4C; Rawlins et al., 2009; Zhang et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 4C and citations to Rawlins et al., 2009 and Zhang et al., 1997.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "4aed0cce-b149-42ff-b605-01d6a2176492",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C41",
+      "claim": "TEM revealed that a subset of luminal cells exhibit both characteristic cilia axoneme and intracellular vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission electron microscopy (TEM) revealed that a subset of luminal cells exhibit both characteristic cilia axoneme and intracellular vesicles, indicating that hybrid cells indeed possess two sets of machineries required for motility and secretion, respectively (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TEM data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "b12c2e31-d136-4331-964c-fa12824b3ee9",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C42",
+      "claim": "Pofut1-/- mutants lacked secretory cells that are only expressing Gp2, but exhibited double positive Foxj1- and Gp2-expressing hybrid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Pofut1-/- mutants lacked secretory cells that are only expressing Gp2, but exhibited double positive Foxj1- and Gp2-expressing hybrid cells, indicating that hybrid cells are derived from a ciliated cell linage (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "a13f552b-6cd6-4ef2-9da6-e09d2cc211db",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C43",
+      "claim": "About 50% of Foxj1Cre labeled mGFP+ cells at P0 to P1 expressed cytoplasmic SCGB1A1.",
+      "claim_type": "EXPLICIT",
+      "source": "About 50% of Foxj1Cre labeled mGFP+ cells at this stage expressed cytoplasmic SCGB1A1 at P0 to P1, suggesting that a major proportion of the neonatal hybrid cells are likely derived from a ciliated cell lineage (Figure 4\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by lineage tracing data shown in Figure 4\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "040d5b3b-a751-4c72-912e-401403ef34ac",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C44",
+      "claim": "Many of the airway disease associated genes are expressed by cells of the airway epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the airway disease associated genes are expressed by cells of the airway epithelium, including modifier loci for CF severity, such as Muc20 and Ehf, as well as risk genes shared between COPD and pulmonary fibrosis, such as Fam13a and Dsp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by expression analysis shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "b23a4758-2e66-4d22-aca7-88eb8e51ddf9",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C45",
+      "claim": "Scores for mucosal hyperplasia are higher in cilia-secretory hybrid cluster, and are also elevated in T cells, endothelial cells, and vascular smooth muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Scores for mucosal hyperplasia are higher in cilia-secretory hybrid cluster, and are also elevated in T cells, endothelial cells, and vascular smooth muscles (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scGPS analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "60a7be3b-f2b0-4700-9429-920393f50a75",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C46",
+      "claim": "The PCD scores are higher overall for ciliated cells and cilia-secretory hybrid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The PCD scores are higher overall for ciliated cells and cilia-secretory hybrid cells, confirming that ciliated cells are primary targets for PCD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scGPS analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "368ee9fe-a047-415e-9372-6def56bf89ee",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C47",
+      "claim": "The cilia-secretory hybrid cells show prominent enrichment scores in multiple airway conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the cilia-secretory hybrid cells show prominent enrichment scores in multiple airway conditions (Figure 4E), indicating a critical role of this hybrid cell state in airway function and pathogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scGPS analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "e04f6b94-92de-4c2f-bf3c-6464125a29ae",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C48",
+      "claim": "Mutant epithelial cells significantly downregulated Retnla, Itln1, and Chil4.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant downregulation of these markers was observed in all Ano1-/- mutant luminal cells (Figure 5C; Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5C and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "6113e786-3846-48e1-a7c4-e8e4e556332d",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C49",
+      "claim": "Mutant epithelial cells expressed high levels of Cxcl17 and Ccl20.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, mutant epithelial cells expressed high levels of Cxcl17 and Ccl20 (Figure 5C), two potent chemotactic factors for lung macrophages (Burkhardt et al., 2014; Schutyser et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5C and citations to Burkhardt et al., 2014 and Schutyser et al., 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "5dac3e03-2156-42ab-87e5-8e0690b60734",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C50",
+      "claim": "Mutant epithelial cells significantly downregulated NF-\u03baB inhibitors Nfkbia and Nkfbiz.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant epithelial cells significantly downregulated NF-\u03baB inhibitors Nfkbia and Nkfbiz (Figure 5B,C; Figure 5\u2014figure supplement 1A), indicating that the NF-\u03baB signaling may be abnormally regulated in the absence of Ano1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5B,C and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "d857c1af-7151-400e-8b16-4b43978cb384",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C51",
+      "claim": "Ano1-/- mutant immune cells upregulated a set of immune modulators, including Saa3.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the abnormal expression patterns of barrier defense genes, Ano1-/- mutant immune cells upregulated a set of immune modulators, including Saa3, that are expressed during inflammation (Eklund et al., 2012; Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5D and a citation to Eklund et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "f9d62191-e106-494e-b3d7-71e08a73b8d1",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C52",
+      "claim": "Ano1-/- mutants displayed an expansion of the secretory cell population across all time points analyzed, from E16 to P1 and P4.",
+      "claim_type": "EXPLICIT",
+      "source": "Ano1-/- mutants displayed an expansion of the secretory cell population across all time points we analyzed, from E16 to P1 and P4 (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "74188078-7657-4709-803d-51f986d465e7",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C53",
+      "claim": "Ano1 mRNA can be detected as early as E12 in the respiratory epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Ano1 mRNA can be detected as early as E12 in the respiratory epithelium (Rock et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rock et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "c949a05c-7677-4319-891a-1ebbd84b4f87",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C54",
+      "claim": "Using RNA FISH analysis and scRNAseq, Ano1 expression was confirmed in undifferentiated mouse airway epithelium as well as in differentiated secretory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using RNA FISH analysis and scRNAseq, we confirmed Ano1 expression in undifferentiated mouse airway epithelium as well as in differentiated secretory cells (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA FISH and scRNAseq data shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "920f125a-47f2-4286-aa85-b6be6b2f4b20",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C55",
+      "claim": "CFTR mRNA was broadly distributed in the mouse airway at E15 as well as in human fetal airway epithelium at GW15.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, CFTR mRNA was broadly distributed in the mouse airway at E15 as well as in human fetal airway epithelium at GW15 (Figure 6A,B,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6A,B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "06ea481a-ced0-4083-891a-ec0c4e7e41f8",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C56",
+      "claim": "CFTR was expressed in secretory cells associated with the surface epithelium and submucosal glands at GW21-23.",
+      "claim_type": "EXPLICIT",
+      "source": "and expressed in secretory cells associated with the surface epithelium and submucosal glands at GW21-23 (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "2352b564-7d96-4169-9c4f-be9f60cf8905",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C57",
+      "claim": "The percentage of cells from the Krt4+ immature secretory state markedly increased in Ano1-/- mutants compared to wild-type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to wild-type mice, the percentage of cells from the Krt4+ immature secretory state markedly increased in Ano1-/- mutants (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "7bea4b8a-b75f-4a46-a7c6-51ba8e5a3ef8",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C58",
+      "claim": "The expansion of Krt4+ immature secretory cells in neonatal mutant trachea was confirmed via KRT13 immunofluorescent staining.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the expansion of these Krt4+ immature secretory cells in neonatal mutant trachea via KRT13 immunofluorescent staining, given that Krt13 is paired with Krt4 in airway epithelial cells (He et al., 2015; Montoro et al., 2018; Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 6\u2014figure supplement 1C and citations to He et al., 2015 and Montoro et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "d34ee85b-f50f-4020-8e8b-b625309cbaea",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C59",
+      "claim": "In Ano1-/- mutants, the percentage of Sostdc1+ basal cells was reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "In Ano1-/- mutants, the percentage of Sostdc1+ basal cells was reduced (Figure 7C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "1f6f6bf7-74a8-4ffb-927f-88339c655470",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C60",
+      "claim": "Sostdc1 expression was significantly downregulated in Ano1-/- mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "and Sostdc1 expression was significantly downregulated (Figure 7D,E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7D,E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "10f4aa66-cef1-420c-a8d1-4b53b61c9d5f",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C61",
+      "claim": "Cell cycle scores were comparable between wild-type and Ano1-/- mutants for basal and secretory cell states identified at E16.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes associated with cell states were unlikely caused by altered cell proliferation, because cell cycle scores were comparable between wild-type and Ano1-/- mutants for basal and secretory cell states identified at E16 (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "6df1771c-3cbc-435f-9a9a-9bd0ae66d0f3",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C62",
+      "claim": "Embryonic removal of Ano1 from the airway endoderm resulted in mucus cell hyperplasia and an expansion of Krt13+ immature secretory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "we used Shhcre, which is expressed in all Shh-expressing endodermal cells during embryogenesis (Swarr and Morrisey, 2015), and found that embryonic removal of Ano1 from the airway endoderm resulted in mucus cell hyperplasia and an expansion of Krt13+ immature secretory cells (Figure 7G; Figure 6\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7G and Figure 6\u2014figure supplement 1D, and a citation to Swarr and Morrisey, 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "37021142-2d0d-48ce-8911-7ca01b179f5a",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C63",
+      "claim": "Removal of Ano1 from basal progenitor cells resulted in a differentiation bias toward the secretory lineage during the regeneration phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In a polidocanol induced airway injury model (Liu et al., 2006), removal of Ano1 from 3 week-old mice similarly resulted in a differentiation bias toward the secretory lineage during the regeneration phase (Figure 7H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7H and a citation to Liu et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "3482e779-33ed-4234-bf6d-e35f06a33669",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C64",
+      "claim": "The percentage, transcriptome profiles, and developmental trajectory of ciliated cells are comparable between wild-type control and Ano1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the percentage, transcriptome profiles, and developmental trajectory of ciliated cells are comparable between wild-type control and Ano1 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 7\u2014figure supplement 2A,B,C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "f31216fb-95ec-4c64-839f-46a909e6f7fc",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C65",
+      "claim": "Ano1-mediated chloride homeostasis maintains a Sostdc1-expressing progenitor pool within the epithelial basal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the aforementioned changes in the cellular composition and molecular profiles between wild-type and Ano1 mutant tracheal epithelial cells, we propose that Ano1-mediated chloride homeostasis maintains a Sostdc1-expressing progenitor pool within the epithelial basal cells, loss of which results in secretory hyperplasia at least partially due to an accumulation of intermediate secretory cells with elevated levels of Krt4 and Krt13 (Figure 7I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "b331e2e2-35a9-4f18-ae44-19f4de7ed473",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C66",
+      "claim": "Lineage specification of ciliated cells appears unaffected in the absence of Ano1.",
+      "claim_type": "EXPLICIT",
+      "source": "Lineage specification of ciliated cells, on the other hand, appears unaffected in the absence of Ano1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the observation that ciliated cell development is comparable between wild-type and mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "86dec431-f3d4-4da8-a2de-e3e618abed4b",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C67",
+      "claim": "All cell types identified in the mouse trachea have corresponding orthologous cell types in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all cell types identified in the mouse trachea have corresponding orthologous cell types in humans, indicating that the two species employ conserved gene regulatory programs to build the large airway during embryogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparative analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "bbfc3d05-401d-4bb4-941b-ba4226e9b9c5",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C68",
+      "claim": "Most monogenic disease genes implicated in PCD are specifically expressed in ciliated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our assessment of enrichment patterns for selected airway disease genes using scGPS confirmed that most monogenic disease genes implicated in PCD are specifically expressed in ciliated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scGPS analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "5292a521-d86e-4ada-bbd5-9ccb0888376b",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C69",
+      "claim": "Susceptibility loci for COPD are expressed in both epithelial and stromal cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, susceptibility loci for COPD are expressed in both epithelial and stromal cell types, consistent with the pleiotropic presentations of complex-trait airway disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by expression analysis shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "2310e339-1a57-4b56-991b-58166cdd7065",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C70",
+      "claim": "Foxn4 is required to promote motile cilia formation in Xenopus epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Foxn4 is required to promote motile cilia formation in Xenopus epidermis (Campbell et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Campbell et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "06f23dcb-b13d-48a0-b706-0e791232e77e",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C71",
+      "claim": "Foxn4 expression is very transient during frog embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "and its expression is very transient during frog embryogenesis (Briggs et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Briggs et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "f05f9e34-aadf-4d44-bc42-bb18501d782f",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C72",
+      "claim": "Foxn4 expression peaks transiently at E16 in the mouse trachea as ciliated cells begin to emerge.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that Foxn4 expression peaks transiently at E16 in the mouse trachea as ciliated cells begin to emerge, supporting a central role of Foxn4 in promoting motile ciliogenesis in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 3\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "90928f0b-4b43-48f2-b144-3811c21ef799",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C73",
+      "claim": "During embryogenesis, epithelial cells upregulate multiciliated gene modules and secretory gene modules to initiate a massive differentiation process between E15 and E16.",
+      "claim_type": "EXPLICIT",
+      "source": "During embryogenesis, epithelial cells upregulate multiciliated gene modules and secretory gene modules to initiate a massive differentiation process between E15 and E16.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "f7137973-f117-42c4-b9a1-e686a59eed0d",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C74",
+      "claim": "After the animals are born and start breathing, tracheal epithelial cells upregulate a set of mucosal cytokines, antibacterial effectors, and Th2 immune response genes that are critical for the maturation of barrier function.",
+      "claim_type": "EXPLICIT",
+      "source": "After the animals are born and start breathing, tracheal epithelial cells upregulate a set of mucosal cytokines, antibacterial effectors, and Th2 immune response genes that are critical for the maturation of barrier function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "b2462f18-9eb5-43b4-90f2-c82ee74894c1",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C75",
+      "claim": "The neonatal hybrid cell state is likely derived from a ciliated cell lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that this neonatal cell state is likely derived from a ciliated cell lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by lineage tracing data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "97af51a5-187d-4e58-a2bf-a4cc3d71c573",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C76",
+      "claim": "The hybrid state appears to be very rare during the adult homeostatic state and cannot be induced by chemically-triggered airway regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "The hybrid state appears to be very rare during the adult homeostatic state and cannot be induced by chemically-triggered airway regeneration (Rawlins et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rawlins et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "0912f742-d406-4f6e-87cd-8ed712b8864e",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C77",
+      "claim": "A cluster of cilia-secretory hybrid cells are found in the human inflammatory airway.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a cluster of cilia-secretory hybrid cells are found in the human inflammatory airway, indicating that neonatal airway may share similar immune status to the inflamed adult airway (Ordovas-Montanes et al., 2018; Turner et al., 2011; Tyner et al., 2006; Vieira Braga et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ordovas-Montanes et al., 2018; Turner et al., 2011; Tyner et al., 2006; Vieira Braga et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "e5aa0735-3dbf-4b1c-a7f4-0fba4ffa2c0d",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C78",
+      "claim": "Trans-differentiation of ciliated cells into goblet cells can be induced by IL-13.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this notion, trans-differentiation of ciliated cells into goblet cells can be induced by IL-13, a major cytokine involved in allergy and inflammatory response (Turner et al., 2011; Tyner et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Turner et al., 2011 and Tyner et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "4dac2f3e-0f02-4eb4-a007-dd7312a8d5f6",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C79",
+      "claim": "Ano1 in the undifferentiated epithelial cells plays an essential role in maintaining airway progenitors by limiting the differentiation of basal cells into the secretory lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "First, Ano1 in the undifferentiated epithelial cells plays an essential role in maintaining airway progenitors by limiting the differentiation of basal cells into the secretory lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "0d1ee11e-6f94-4440-959e-40386d30b2a4",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C80",
+      "claim": "Persistent expression of Ano1 in differentiated airway epithelial cells controls the normal status of the neonatal mucosal immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, persistent expression of Ano1 in differentiated airway epithelial cells controls the normal status of the neonatal mucosal immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "a67c00d3-8642-406a-b722-0ba77087958b",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C81",
+      "claim": "A shift in the expression of antimicrobial genes and proinflammatory modules in Ano1 mutants indicates that these mutants may be more prone to infection and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "A shift in the expression of antimicrobial genes and proinflammatory modules in Ano1 mutants indicates that these mutants may be more prone to infection and inflammation, which result in secondary pulmonary dysplasia (Davidson and Berkelhamer, 2017; Shahzad et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from gene expression data and supported by citations to Davidson and Berkelhamer, 2017 and Shahzad et al., 2016.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "70a668af-fb2c-4899-aadc-c734d0573540",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C82",
+      "claim": "Intracellular chloride, regulated by chloride channels, has been implicated in vesicle trafficking and plays a role in regulating plasma membrane dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular chloride, regulated by chloride channels, has been implicated in vesicle trafficking and plays a role in regulating plasma membrane dynamics (Bradbury et al., 1992; He et al., 2017; Stauber and Jentsch, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bradbury et al., 1992; He et al., 2017; Stauber and Jentsch, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "902a1619-3fa1-45da-8c1f-dd49091eb8fe",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C83",
+      "claim": "Inactivation of CFTR in humans and Ano1 in mice, respectively, lead to congenital abnormalities of the airway.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of CFTR in humans and Ano1 in mice, respectively, lead to congenital abnormalities of the airway, raising the possibility that perhaps intracellular chloride homeostasis, modulated by these two chloride channels, represents a conserved component for mammalian airway development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the data presented in the study and represents a conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "49aa72b4-8dd4-4b6d-9846-d2a65c9d33f8",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "claim_id": "C84",
+      "claim": "Ano1 and CFTR are expressed in orthologous cell types of mouse and human airway epithelium, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Ano1 and CFTR are expressed in orthologous cell types of mouse and human airway epithelium, respectively, our work provides a tractable animal model for understanding the roles of chloride channels in human airway development and pathogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the comparative expression data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "50b41269-9145-43e8-be08-1ddcd12c8beb",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cystic fibrosis (CF) is a common recessively inherited disorder caused by deficient CFTR gene encoding a chloride channel, characterized by mucus obstruction, repetitive infections and inflammation, with symptoms emerging as early as the fetal stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are well-supported by multiple citations to established literature (Stoltz et al., 2015; Regamey et al., 2011; Gosden and Gosden, 1984; Larson and Cohen, 2005; Verhaeghe et al., 2007). These are background claims establishing the context for the study and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "3d21da1f-5f03-4d24-996e-87d4db075f44",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mouse Cftr mutants do not exhibit CF-like airway defects, leading to the hypothesis that other chloride channels such as CaCC may compensate for Cftr loss in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 are supported by citations (Lavelle et al., 2016; McCarron et al., 2018; Clarke et al., 1994). This establishes the rationale for studying Ano1 as a compensatory chloride channel in mice and provides important context for the species-specific differences in CF pathology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "c514748b-5c96-44e2-a782-fb4c7a3793ce",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ano1/Tmem16a is a calcium-activated chloride channel that regulates intracellular chloride homeostasis, is required for survival, and when absent leads to abnormal trachea morphology; ANO1 is a candidate drug target for CF management.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 are supported by appropriate citations (He et al., 2017; Lek et al., 2016; Rock et al., 2008, 2009; Amaral and Beekman, 2020). These establish the known functions of Ano1 and provide rationale for the current study. The claims are appropriately attributed to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "8ce622da-50ba-4cae-bc6e-5dd0c2955ad9",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ano1-/- knockout mice exhibit massive expansion of secretory cells, mucus accumulation in airway lumen, strong mucus obstruction at P3 and P5, and subcellular defects including short microvilli, dilated ER lumen, and vesicle accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13, C16, and C18 are supported by multiple experimental approaches including Jacalin labeling, SCGB1A1 immunostaining, PAS/Alcian Blue staining, and TEM analysis (Figures 1A-B, 1E-F, 1G). The data consistently demonstrate secretory cell hyperplasia and mucus obstruction across multiple time points and methods. Sample sizes (n=4-5) are adequate for these phenotypic observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "99a97d60-23f7-4bcd-9a0c-0af7c955757b",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Wild-type trachea at P2 showed directional mucociliary flow at 0.90 \u00b1 0.22 \u03bcm/s, while Ano1 mutants showed significantly reduced and sometimes reversed flow at 0.42 \u00b1 0.18 \u03bcm/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 are supported by quantitative flow analysis with appropriate sample size (n=3) and statistical testing (multiple t-test). The measurements show a significant functional defect in mucociliary clearance in mutants. The methodology using fluorescent beads and confocal imaging is appropriate for assessing ciliary flow dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "b63738cd-b9e3-4c3d-b898-42a79269c212",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The number of ciliated cells was unaffected in Ano1-/- mutant airway compared to wild-type controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 is supported by Centrin2-GFP expression analysis (Figure 1E, Figure 1\u2014figure supplement 1A) with adequate sample size (n=5). This is an important negative result showing that the phenotype is specific to secretory cells rather than a general defect in epithelial differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "e6105ca7-35e9-4095-8936-f09adc9958fa",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The mouse single-cell atlas agrees with published adult airway atlases, and major cell types and molecular markers of the developing airway are highly conserved between mice and humans, with all mouse tracheal cell types having corresponding human orthologs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 and C67 are supported by comparative analysis with published data (Montoro et al., 2018; Plasschaert et al., 2018) and cross-species comparison shown in Figure 2. The conservation of cell types and markers between species validates the mouse model for studying human airway development and provides important context for translational relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "a04827a6-a567-48c0-9a5e-cb98663d402a",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Coordinated differentiation of luminal cell types (ciliated and secretory) was initiated between E15 and E16, with upregulation of key transcription factors (Spdef, Creb3l1, Foxj1) and downregulation of cell cycle markers as differentiation progressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 and C73 are supported by scRNA-seq data (Figure 3A-C) with appropriate citations for transcription factor functions (Chen et al., 2009; Gregorieff et al., 2009; You et al., 2004; Yu et al., 2008). The temporal analysis across multiple developmental stages provides strong evidence for the coordinated differentiation program.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "0b61094a-3527-4c02-9af4-b420bcaf6384",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "At E15, undifferentiated cells dominate the Epcam+ epithelium based on gene expression patterns (Trp63+, Krt5low, Id2+, Id3+, Wnt7b+, Cldn6+); at E16, Trp63+ basal cells switch to a different expression program (Krt5+, Krt15+, Aqp3+, Aqp4+) associated with barrier function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are supported by gene expression data (Figure 3D) with appropriate citation for barrier function (Kreda et al., 2001). The inference about undifferentiated cells dominating at E15 is reasonable based on the marker expression patterns, though this is an interpretation rather than direct measurement of differentiation state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "cbd6cf3f-4752-4777-bab0-f229d45599e0",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Immature secretory cells express Cited1, Spdef, and Creb3l1 with gene modules for protein folding and trafficking, while mature secretory cells express Gp2, Tff2, and Sftpd with gene modules for cell division regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 are supported by scRNA-seq data (Figure 3D-E) with appropriate citations for gene functions (Plisov et al., 2005; Hase et al., 2009; Montoro et al., 2018; Nikolaidis et al., 2006; Wills-Karp et al., 2012; Brandt et al., 2008; Mackay et al., 2016; Trombetta and Parodi, 2003). Gene ontology analysis appropriately identifies functional differences between immature and mature states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "9c734640-8f62-4a97-8fa0-5e1250acbde0",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ciliated cells express Foxj1 across developmental stages; immature ciliated cells are characterized by Foxn4, Ccna1, Ccno, Mcidas, and Shisa8 with protein synthesis pathways; Foxn4 expression peaks transiently at E16 supporting its role in mammalian motile ciliogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 and C70-C72 are supported by scRNA-seq data (Figure 3D, 3F), RNA FISH validation (Figure 3\u2014figure supplement 1A,B), and appropriate citations (Farrow et al., 2015; Campbell et al., 2016; Briggs et al., 2018). The identification of Foxn4 as a transient marker of immature ciliated cells is novel and well-validated by multiple approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "285cb219-e485-484c-aa83-cd7ba55598c8",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mature ciliated cells upregulate Sntn, express membrane receptors (Cdhr3, Ldlrad1) involved in rhinovirus infection, and show enrichment of pathways for axoneme assembly, apical junction organization, and cilia motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 are supported by scRNA-seq data (Figure 3D, 3F) with appropriate citations (Kubo et al., 2008; Basnet et al., 2019). Gene ontology analysis appropriately identifies functional pathways associated with mature ciliated cell function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "f077c707-9a8a-425b-b71b-c970be714fb1",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A cilia-secretory hybrid cell population expressing both ciliated and secretory markers was identified in postnatal mouse airway and validated by multiple methods; lineage tracing indicates this hybrid state is likely derived from ciliated cell lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 and C75 are supported by multiple complementary approaches: scRNA-seq (Figure 4A), RNA FISH (Figure 4B), immunofluorescence (Figure 4C), TEM (Figure 4D), Pofut1 mutant analysis (Figure 4\u2014figure supplement 1A), and Foxj1-lineage tracing (Figure 4\u2014figure supplement 1B,C). The convergence of evidence from multiple methods strongly supports the existence and ciliated origin of this hybrid cell state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "0a5a54af-848d-41da-a316-27f1fe8e4462",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Disease-associated genes map to specific airway cell types: PCD genes are specifically expressed in ciliated cells, COPD genes are expressed in both epithelial and stromal cells, and cilia-secretory hybrid cells show prominent enrichment for multiple airway disease genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 and C68-C69 are supported by scGPS analysis (Figure 4E, Figure 4\u2014figure supplement 1D) using curated disease gene sets from OMIM and GWAS studies. The analysis appropriately maps disease genes to cell types and provides functional validation of cell type annotations. The finding that hybrid cells are enriched for disease genes is novel and significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "21b0ce62-6dc0-4ddc-9a22-3e3bb8bef309",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Ano1-/- mutant epithelial cells show altered immune profiles including downregulation of Th2 mediators (Retnla, Itln1, Chil4) and NF-\u03baB inhibitors (Nfkbia, Nfkbiz), upregulation of chemokines (Cxcl17, Ccl20), and upregulation of inflammatory markers (Saa3) in immune cells, indicating compromised barrier function and increased susceptibility to infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51, C74, C80-C81 are supported by scRNA-seq data (Figure 5B-D, Figure 5\u2014figure supplement 1A) with appropriate citations for gene functions (Burkhardt et al., 2014; Schutyser et al., 2003; Eklund et al., 2012; Davidson and Berkelhamer, 2017; Shahzad et al., 2016). The comprehensive analysis of immune-related gene expression changes provides strong evidence for barrier dysfunction. However, the inference about increased susceptibility to infection is speculative and would require functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "6f0334a0-81fc-4889-acfd-24eb9ff2bccd",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Ano1-/- mutants show expansion of secretory cells across all developmental stages (E16-P4); Ano1 is expressed in undifferentiated epithelium and secretory cells in mice; CFTR shows similar expression patterns in mouse and human fetal airway; Ano1 and CFTR are expressed in orthologous cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 and C84 are supported by scRNA-seq data (Figure 6\u2014figure supplement 1A), RNA FISH (Figure 6A,C), and comparative analysis (Figure 6B-D) with appropriate citation (Rock et al., 2008). The parallel expression patterns of Ano1 in mice and CFTR in humans support the translational relevance of the mouse model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "bfdaf3de-6181-469d-9624-c4a5453080fb",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Ano1-/- mutants show increased Krt4+ immature secretory cells and decreased Sostdc1+ basal cells at E16, with significantly reduced Sostdc1 expression; these changes are not due to altered cell proliferation as cell cycle scores are comparable between genotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 are supported by scRNA-seq data (Figure 7C), immunofluorescence validation (Figure 6\u2014figure supplement 1C), RNA FISH (Figure 7D-F), and cell cycle analysis (Figure 6\u2014figure supplement 1B) with appropriate citations (He et al., 2015; Montoro et al., 2018). The exclusion of proliferation as a confounding factor strengthens the interpretation that Ano1 affects cell fate decisions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "fd05c3aa-49c2-4269-9ed7-eebc51916ab4",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Embryonic removal of Ano1 from airway endoderm using Shhcre results in mucus cell hyperplasia and expansion of Krt13+ immature secretory cells; removal from basal progenitors using Krt5CreERT2 in an injury model results in differentiation bias toward secretory lineage during regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 are supported by conditional knockout experiments (Figure 7G-H, Figure 6\u2014figure supplement 1D) with appropriate citations (Swarr and Morrisey, 2015; Liu et al., 2006). The use of two different Cre drivers (Shhcre for endoderm, Krt5CreERT2 for basal cells) and two different contexts (development and regeneration) provides strong evidence for cell-autonomous effects of Ano1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "563167e3-ca51-452b-9c3c-759a09bc0ded",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The percentage, transcriptome profiles, and developmental trajectory of ciliated cells are comparable between wild-type and Ano1 mutants, indicating that ciliated cell lineage specification is unaffected by Ano1 loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64 and C66 are supported by scRNA-seq analysis and RNA velocity analysis (Figure 7\u2014figure supplement 2A-D). This is an important negative result showing specificity of the Ano1 phenotype to secretory lineage. The use of RNA velocity to assess developmental trajectories is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "37b3a552-d05f-40e8-8dea-cd95c903d4f1",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Ano1-mediated chloride homeostasis maintains a Sostdc1-expressing progenitor pool within epithelial basal cells; loss of Ano1 results in secretory hyperplasia due to accumulation of Krt4+/Krt13+ intermediate secretory cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65 and C79 represent the authors' mechanistic model based on the collective data presented. The model is well-supported by the observed changes in cell state composition (C57-C60), conditional knockout experiments (C62-C63), and exclusion of proliferation effects (C61). However, this is an inferred mechanism rather than directly demonstrated causality. Additional experiments manipulating Sostdc1 or chloride homeostasis would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "ab6ee21e-dab1-4487-8814-36806bdd5bdd",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The cilia-secretory hybrid state is rare in adult homeostasis and cannot be induced by chemical regeneration, but is found in human inflammatory airway; trans-differentiation of ciliated to goblet cells can be induced by IL-13.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 are supported by appropriate citations (Rawlins et al., 2007; Ordovas-Montanes et al., 2018; Turner et al., 2011; Tyner et al., 2006; Vieira Braga et al., 2019). These claims provide important context for the functional significance of the hybrid cell state, though they rely entirely on prior literature rather than new data from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    },
+    {
+      "id": "8aa9b2e8-79de-4487-bb25-d0b220722596",
+      "content_id": "e7172240-c8ad-460c-a1d1-d26bfdd1bac0",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Intracellular chloride regulated by chloride channels is implicated in vesicle trafficking and plasma membrane dynamics; inactivation of CFTR in humans and Ano1 in mice lead to congenital airway abnormalities, suggesting intracellular chloride homeostasis is a conserved component of mammalian airway development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 is supported by citations (Bradbury et al., 1992; He et al., 2017; Stauber and Jentsch, 2013). Claim C83 is an inference based on the parallel phenotypes observed. While the parallel expression patterns (C84) and phenotypes support this hypothesis, the mechanistic link between chloride homeostasis and the observed developmental defects is not directly demonstrated. The claim that this represents a 'conserved component' is speculative and would require functional studies in human systems or rescue experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:23:54.447419Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "03e0d7fa-7abd-46fe-a296-896a934db223",
+      "result_id": "50b41269-9145-43e8-be08-1ddcd12c8beb"
+    },
+    {
+      "claim_id": "828d9255-bdb5-45b1-abee-5519ab9c2691",
+      "result_id": "50b41269-9145-43e8-be08-1ddcd12c8beb"
+    },
+    {
+      "claim_id": "d271600a-4ae7-4ea1-9671-f604c0f06535",
+      "result_id": "50b41269-9145-43e8-be08-1ddcd12c8beb"
+    },
+    {
+      "claim_id": "38a1475a-e820-4686-bb57-76707885d003",
+      "result_id": "3d21da1f-5f03-4d24-996e-87d4db075f44"
+    },
+    {
+      "claim_id": "73b5a49e-3448-4c8a-8bc6-fbc219e632b3",
+      "result_id": "3d21da1f-5f03-4d24-996e-87d4db075f44"
+    },
+    {
+      "claim_id": "e99cc24e-0b5a-483b-a6bb-b519950c3877",
+      "result_id": "c514748b-5c96-44e2-a782-fb4c7a3793ce"
+    },
+    {
+      "claim_id": "72e00b99-c3d4-4718-8b71-7e6a5659f14f",
+      "result_id": "c514748b-5c96-44e2-a782-fb4c7a3793ce"
+    },
+    {
+      "claim_id": "5c03be1a-9504-42f7-ab55-c31aa10f1485",
+      "result_id": "c514748b-5c96-44e2-a782-fb4c7a3793ce"
+    },
+    {
+      "claim_id": "c25abac7-82f7-4633-840e-ff40d4fc6d47",
+      "result_id": "c514748b-5c96-44e2-a782-fb4c7a3793ce"
+    },
+    {
+      "claim_id": "9ca1be4b-e038-4f00-ab12-05e6fa40f632",
+      "result_id": "c514748b-5c96-44e2-a782-fb4c7a3793ce"
+    },
+    {
+      "claim_id": "dd951ffb-3c73-42d0-8354-38b8515c9579",
+      "result_id": "8ce622da-50ba-4cae-bc6e-5dd0c2955ad9"
+    },
+    {
+      "claim_id": "6b6eae2b-167c-42b1-98d3-8b1772fd6561",
+      "result_id": "8ce622da-50ba-4cae-bc6e-5dd0c2955ad9"
+    },
+    {
+      "claim_id": "8a9c3709-4194-4302-a0ad-7503cfc61cdd",
+      "result_id": "8ce622da-50ba-4cae-bc6e-5dd0c2955ad9"
+    },
+    {
+      "claim_id": "4301935c-28a5-4671-b89d-268731802d73",
+      "result_id": "8ce622da-50ba-4cae-bc6e-5dd0c2955ad9"
+    },
+    {
+      "claim_id": "66322476-a9de-447c-8ebe-6801c109487c",
+      "result_id": "8ce622da-50ba-4cae-bc6e-5dd0c2955ad9"
+    },
+    {
+      "claim_id": "3831ede0-fde2-47ad-8456-dcdf77423df1",
+      "result_id": "99a97d60-23f7-4bcd-9a0c-0af7c955757b"
+    },
+    {
+      "claim_id": "facd74f5-2051-48a4-81fd-01ae22536d6f",
+      "result_id": "99a97d60-23f7-4bcd-9a0c-0af7c955757b"
+    },
+    {
+      "claim_id": "0f6e7a75-e948-4d75-8e41-b05d9d066519",
+      "result_id": "b63738cd-b9e3-4c3d-b898-42a79269c212"
+    },
+    {
+      "claim_id": "5aebf5f5-e8c9-4f83-bb17-f1c9c2dde8f6",
+      "result_id": "e6105ca7-35e9-4095-8936-f09adc9958fa"
+    },
+    {
+      "claim_id": "32d21819-0ed3-4d76-8e30-73f582861370",
+      "result_id": "e6105ca7-35e9-4095-8936-f09adc9958fa"
+    },
+    {
+      "claim_id": "86dec431-f3d4-4da8-a2de-e3e618abed4b",
+      "result_id": "e6105ca7-35e9-4095-8936-f09adc9958fa"
+    },
+    {
+      "claim_id": "851712c7-25f4-40da-a632-acfa06749928",
+      "result_id": "a04827a6-a567-48c0-9a5e-cb98663d402a"
+    },
+    {
+      "claim_id": "989eb57e-ef8b-4b0e-82cb-9395f4c91dc1",
+      "result_id": "a04827a6-a567-48c0-9a5e-cb98663d402a"
+    },
+    {
+      "claim_id": "4ffc1481-abc0-4d6a-b61a-54598db28ae7",
+      "result_id": "a04827a6-a567-48c0-9a5e-cb98663d402a"
+    },
+    {
+      "claim_id": "90928f0b-4b43-48f2-b144-3811c21ef799",
+      "result_id": "a04827a6-a567-48c0-9a5e-cb98663d402a"
+    },
+    {
+      "claim_id": "0fcf86e7-69ac-4f3c-95b1-e9899201a2dd",
+      "result_id": "0b61094a-3527-4c02-9af4-b420bcaf6384"
+    },
+    {
+      "claim_id": "efd0b652-dbdb-4a29-ab36-f40b596e036e",
+      "result_id": "0b61094a-3527-4c02-9af4-b420bcaf6384"
+    },
+    {
+      "claim_id": "67b13146-d4c7-4f4c-b05e-ebb699288f1f",
+      "result_id": "cbd6cf3f-4752-4777-bab0-f229d45599e0"
+    },
+    {
+      "claim_id": "0c1e1fc9-427e-4c84-af3c-defc678978b2",
+      "result_id": "cbd6cf3f-4752-4777-bab0-f229d45599e0"
+    },
+    {
+      "claim_id": "93f926e2-a8fb-4301-938d-14ded337ec01",
+      "result_id": "cbd6cf3f-4752-4777-bab0-f229d45599e0"
+    },
+    {
+      "claim_id": "6d627ad6-0ac8-41be-b880-eab7616569f8",
+      "result_id": "cbd6cf3f-4752-4777-bab0-f229d45599e0"
+    },
+    {
+      "claim_id": "14347bb0-b911-4494-a81c-c66e83634242",
+      "result_id": "cbd6cf3f-4752-4777-bab0-f229d45599e0"
+    },
+    {
+      "claim_id": "74da5a73-45dc-4ed3-b719-56a1ad53133c",
+      "result_id": "9c734640-8f62-4a97-8fa0-5e1250acbde0"
+    },
+    {
+      "claim_id": "8139bf2e-f855-4990-a5dc-adf30d193eac",
+      "result_id": "9c734640-8f62-4a97-8fa0-5e1250acbde0"
+    },
+    {
+      "claim_id": "f279f4ac-efa1-4a5f-8ad8-6d75ac26398f",
+      "result_id": "9c734640-8f62-4a97-8fa0-5e1250acbde0"
+    },
+    {
+      "claim_id": "9c4de6c8-5670-41ed-8965-da227e665172",
+      "result_id": "9c734640-8f62-4a97-8fa0-5e1250acbde0"
+    },
+    {
+      "claim_id": "2310e339-1a57-4b56-991b-58166cdd7065",
+      "result_id": "9c734640-8f62-4a97-8fa0-5e1250acbde0"
+    },
+    {
+      "claim_id": "06f23dcb-b13d-48a0-b706-0e791232e77e",
+      "result_id": "9c734640-8f62-4a97-8fa0-5e1250acbde0"
+    },
+    {
+      "claim_id": "f05f9e34-aadf-4d44-bc42-bb18501d782f",
+      "result_id": "9c734640-8f62-4a97-8fa0-5e1250acbde0"
+    },
+    {
+      "claim_id": "07a13dd7-6c4a-4907-aec9-9d99a567ef33",
+      "result_id": "285cb219-e485-484c-aa83-cd7ba55598c8"
+    },
+    {
+      "claim_id": "5b932293-b6ba-47b9-a0e4-1bbd8680ebcb",
+      "result_id": "285cb219-e485-484c-aa83-cd7ba55598c8"
+    },
+    {
+      "claim_id": "356b5e5d-6652-4736-b299-b178cdcb60a6",
+      "result_id": "285cb219-e485-484c-aa83-cd7ba55598c8"
+    },
+    {
+      "claim_id": "0f39b145-b1d5-4416-9765-6ff65228147e",
+      "result_id": "f077c707-9a8a-425b-b71b-c970be714fb1"
+    },
+    {
+      "claim_id": "d1d8d2f1-2d3f-460a-8133-d95c99505b49",
+      "result_id": "f077c707-9a8a-425b-b71b-c970be714fb1"
+    },
+    {
+      "claim_id": "12e0e927-e536-4716-ac80-9ed4dc160350",
+      "result_id": "f077c707-9a8a-425b-b71b-c970be714fb1"
+    },
+    {
+      "claim_id": "4aed0cce-b149-42ff-b605-01d6a2176492",
+      "result_id": "f077c707-9a8a-425b-b71b-c970be714fb1"
+    },
+    {
+      "claim_id": "b12c2e31-d136-4331-964c-fa12824b3ee9",
+      "result_id": "f077c707-9a8a-425b-b71b-c970be714fb1"
+    },
+    {
+      "claim_id": "a13f552b-6cd6-4ef2-9da6-e09d2cc211db",
+      "result_id": "f077c707-9a8a-425b-b71b-c970be714fb1"
+    },
+    {
+      "claim_id": "b2462f18-9eb5-43b4-90f2-c82ee74894c1",
+      "result_id": "f077c707-9a8a-425b-b71b-c970be714fb1"
+    },
+    {
+      "claim_id": "040d5b3b-a751-4c72-912e-401403ef34ac",
+      "result_id": "0a5a54af-848d-41da-a316-27f1fe8e4462"
+    },
+    {
+      "claim_id": "b23a4758-2e66-4d22-aca7-88eb8e51ddf9",
+      "result_id": "0a5a54af-848d-41da-a316-27f1fe8e4462"
+    },
+    {
+      "claim_id": "60a7be3b-f2b0-4700-9429-920393f50a75",
+      "result_id": "0a5a54af-848d-41da-a316-27f1fe8e4462"
+    },
+    {
+      "claim_id": "368ee9fe-a047-415e-9372-6def56bf89ee",
+      "result_id": "0a5a54af-848d-41da-a316-27f1fe8e4462"
+    },
+    {
+      "claim_id": "bbfc3d05-401d-4bb4-941b-ba4226e9b9c5",
+      "result_id": "0a5a54af-848d-41da-a316-27f1fe8e4462"
+    },
+    {
+      "claim_id": "5292a521-d86e-4ada-bbd5-9ccb0888376b",
+      "result_id": "0a5a54af-848d-41da-a316-27f1fe8e4462"
+    },
+    {
+      "claim_id": "e04f6b94-92de-4c2f-bf3c-6464125a29ae",
+      "result_id": "21b0ce62-6dc0-4ddc-9a22-3e3bb8bef309"
+    },
+    {
+      "claim_id": "6113e786-3846-48e1-a7c4-e8e4e556332d",
+      "result_id": "21b0ce62-6dc0-4ddc-9a22-3e3bb8bef309"
+    },
+    {
+      "claim_id": "5dac3e03-2156-42ab-87e5-8e0690b60734",
+      "result_id": "21b0ce62-6dc0-4ddc-9a22-3e3bb8bef309"
+    },
+    {
+      "claim_id": "d857c1af-7151-400e-8b16-4b43978cb384",
+      "result_id": "21b0ce62-6dc0-4ddc-9a22-3e3bb8bef309"
+    },
+    {
+      "claim_id": "f7137973-f117-42c4-b9a1-e686a59eed0d",
+      "result_id": "21b0ce62-6dc0-4ddc-9a22-3e3bb8bef309"
+    },
+    {
+      "claim_id": "0d1ee11e-6f94-4440-959e-40386d30b2a4",
+      "result_id": "21b0ce62-6dc0-4ddc-9a22-3e3bb8bef309"
+    },
+    {
+      "claim_id": "a67c00d3-8642-406a-b722-0ba77087958b",
+      "result_id": "21b0ce62-6dc0-4ddc-9a22-3e3bb8bef309"
+    },
+    {
+      "claim_id": "f9d62191-e106-494e-b3d7-71e08a73b8d1",
+      "result_id": "6f0334a0-81fc-4889-acfd-24eb9ff2bccd"
+    },
+    {
+      "claim_id": "74188078-7657-4709-803d-51f986d465e7",
+      "result_id": "6f0334a0-81fc-4889-acfd-24eb9ff2bccd"
+    },
+    {
+      "claim_id": "c949a05c-7677-4319-891a-1ebbd84b4f87",
+      "result_id": "6f0334a0-81fc-4889-acfd-24eb9ff2bccd"
+    },
+    {
+      "claim_id": "920f125a-47f2-4286-aa85-b6be6b2f4b20",
+      "result_id": "6f0334a0-81fc-4889-acfd-24eb9ff2bccd"
+    },
+    {
+      "claim_id": "06ea481a-ced0-4083-891a-ec0c4e7e41f8",
+      "result_id": "6f0334a0-81fc-4889-acfd-24eb9ff2bccd"
+    },
+    {
+      "claim_id": "49aa72b4-8dd4-4b6d-9846-d2a65c9d33f8",
+      "result_id": "6f0334a0-81fc-4889-acfd-24eb9ff2bccd"
+    },
+    {
+      "claim_id": "2352b564-7d96-4169-9c4f-be9f60cf8905",
+      "result_id": "bfdaf3de-6181-469d-9624-c4a5453080fb"
+    },
+    {
+      "claim_id": "7bea4b8a-b75f-4a46-a7c6-51ba8e5a3ef8",
+      "result_id": "bfdaf3de-6181-469d-9624-c4a5453080fb"
+    },
+    {
+      "claim_id": "d34ee85b-f50f-4020-8e8b-b625309cbaea",
+      "result_id": "bfdaf3de-6181-469d-9624-c4a5453080fb"
+    },
+    {
+      "claim_id": "1f6f6bf7-74a8-4ffb-927f-88339c655470",
+      "result_id": "bfdaf3de-6181-469d-9624-c4a5453080fb"
+    },
+    {
+      "claim_id": "10f4aa66-cef1-420c-a8d1-4b53b61c9d5f",
+      "result_id": "bfdaf3de-6181-469d-9624-c4a5453080fb"
+    },
+    {
+      "claim_id": "6df1771c-3cbc-435f-9a9a-9bd0ae66d0f3",
+      "result_id": "fd05c3aa-49c2-4269-9ed7-eebc51916ab4"
+    },
+    {
+      "claim_id": "37021142-2d0d-48ce-8911-7ca01b179f5a",
+      "result_id": "fd05c3aa-49c2-4269-9ed7-eebc51916ab4"
+    },
+    {
+      "claim_id": "3482e779-33ed-4234-bf6d-e35f06a33669",
+      "result_id": "563167e3-ca51-452b-9c3c-759a09bc0ded"
+    },
+    {
+      "claim_id": "b331e2e2-35a9-4f18-ae44-19f4de7ed473",
+      "result_id": "563167e3-ca51-452b-9c3c-759a09bc0ded"
+    },
+    {
+      "claim_id": "f31216fb-95ec-4c64-839f-46a909e6f7fc",
+      "result_id": "37b3a552-d05f-40e8-8dea-cd95c903d4f1"
+    },
+    {
+      "claim_id": "4dac2f3e-0f02-4eb4-a007-dd7312a8d5f6",
+      "result_id": "37b3a552-d05f-40e8-8dea-cd95c903d4f1"
+    },
+    {
+      "claim_id": "97af51a5-187d-4e58-a2bf-a4cc3d71c573",
+      "result_id": "ab6ee21e-dab1-4487-8814-36806bdd5bdd"
+    },
+    {
+      "claim_id": "0912f742-d406-4f6e-87cd-8ed712b8864e",
+      "result_id": "ab6ee21e-dab1-4487-8814-36806bdd5bdd"
+    },
+    {
+      "claim_id": "e5aa0735-3dbf-4b1c-a7f4-0fba4ffa2c0d",
+      "result_id": "ab6ee21e-dab1-4487-8814-36806bdd5bdd"
+    },
+    {
+      "claim_id": "70a668af-fb2c-4899-aadc-c734d0573540",
+      "result_id": "8aa9b2e8-79de-4487-bb25-d0b220722596"
+    },
+    {
+      "claim_id": "902a1619-3fa1-45da-8c1f-dd49091eb8fe",
+      "result_id": "8aa9b2e8-79de-4487-bb25-d0b220722596"
+    }
+  ],
+  "comparisons": []
+}

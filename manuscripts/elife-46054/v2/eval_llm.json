@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "PLK4 phosphorylates STIL at a conserved site S428 to promote CPAP binding. S428 is highly conserved, matches the PLK4 consensus motif, and is positioned near the CPAP binding region. Phosphorylation at S428 increases STIL-CPAP binding >7-fold in cells and ~2.5-fold in vitro, as demonstrated by co-immunoprecipitation and GST pull-down assays with a phospho-specific antibody confirming S428 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C66 provide converging evidence from multiple experimental approaches (mass spectrometry identification, sequence conservation analysis, co-IP in cells, in vitro binding assays, and phospho-specific antibody validation) that collectively demonstrate PLK4 phosphorylates STIL S428 to enhance CPAP binding. The quantitative measurements and appropriate controls (S428A mutant, kinase-dead PLK4, ATP dependence) support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The phospho-dependent STIL-CPAP interaction is conserved in Drosophila. DmPLK4 phosphorylates Ana2 (STIL homolog) at S38 (equivalent to human S428), and this phosphorylation promotes >6-fold increase in Ana2 binding to DmSas4 (CPAP homolog) in S2 cells, demonstrating evolutionary conservation of this regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C67-C72 demonstrate conservation through experiments in Drosophila S2 cells showing that phosphorylation of the homologous site (S38 in Ana2) similarly enhances binding to the CPAP ortholog. The quantitative co-IP data and appropriate mutant controls (S38A) provide strong evidence. However, C69 notes a prior conflicting report, which the authors address by proposing PLK4 abundance as an explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Phosphorylation of STIL S428 is required for efficient centriole duplication. STIL S428A and PRP mutants (which impair CPAP binding) only partially rescue centriole duplication defects (61% and similar levels respectively), while WT STIL provides near-complete rescue. Genetic epistasis analysis shows S428 phosphorylation and the PRP motif function in the same pathway, distinct from the SAS6-binding STAN motif pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C84 present a comprehensive RNAi-replacement experiment with appropriate controls and multiple mutants. The genetic interaction data (combining S428A or PRP with S1116A prevents rescue, while S428A+PRP shows no additive effect) logically support the pathway model. The partial rescue phenotype is consistent with the biochemical binding data, and controls show S428A doesn't affect PLK4 activation (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Stable incorporation of STIL into centrioles requires binding to both CPAP and SAS6. Preventing S428 phosphorylation reduces STIL localization by 28%, S1116 mutation reduces it ~2-fold, but combining both mutations reduces localization by 80%, suggesting additive contributions from both binding interactions. The S428A and PRP mutations show non-additive effects, consistent with functioning in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 use quantitative immunofluorescence to measure centrosomal STIL levels with various mutants. The additive effect of S428A+S1116A mutations and non-additive effect of S428A+PRP mutations are internally consistent with the proposed model. The measurements appear to have appropriate replication (n\u22653 experiments, \u226540 cells per experiment based on methods).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Phosphorylation of STIL at S428 and S1116 (STAN motif) are independent events. PLK4 can phosphorylate either site without requiring prior phosphorylation of the other, as shown by immunoblot analysis with phospho-specific antibodies and mutational analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 demonstrate independence of the two phosphorylation events through reciprocal mutant analysis using phospho-specific antibodies. The data are straightforward and internally consistent, showing that mutation of one site doesn't prevent phosphorylation of the other. This addresses a potential mechanistic question about the order of phosphorylation events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "CPAP binding stabilizes STIL incorporation at the procentriole. FRAP experiments show WT STIL has 38% recovery, while S428A and PRP mutants show increased recovery (57% and 58% respectively), indicating reduced stable incorporation when CPAP binding is impaired. S1116A mutation shows even higher recovery (71%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 use FRAP to assess protein dynamics, providing direct evidence for the functional consequence of the STIL-CPAP interaction. The recovery percentages are quantified with appropriate sample sizes (n=16-26 events) and show statistically significant differences. The interpretation that increased recovery reflects reduced stable incorporation is reasonable for FRAP data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "STIL binding stabilizes CPAP incorporation at the centrosome. FRAP shows CPAP has 51% recovery normally, but 96% recovery when STIL is depleted. Mutations disrupting STIL-CPAP interaction (S428A, PRP) increase CPAP recovery to ~67-69%, while S1116A (affecting SAS6 binding) does not, indicating the STIL-CPAP interaction specifically stabilizes CPAP at the procentriole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C110 provide reciprocal FRAP evidence showing STIL stabilizes CPAP. The experimental design with multiple mutants and controls is rigorous. The authors appropriately acknowledge they cannot distinguish which CPAP pools are dynamic (C104-C105) and propose STIL may recruit additional stabilizing factors (C109). The data support the conclusion while recognizing interpretive limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The STIL-CPAP interaction facilitates stable centrosomal integration of CPAP but doesn't control CPAP recruitment levels. CPAP TCP domain mutants (F1229A, E1235K) that reduce STIL binding partially rescue centriole duplication and show increased CPAP turnover (76% and 67% recovery vs 51% WT) without altering CPAP or STIL abundance at centrosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 present a complementary RNAi-replacement experiment examining CPAP mutants. The FRAP and localization data are internally consistent, showing that disrupting the interaction affects stability but not recruitment. The distinction between stability and abundance is important and well-supported by the combination of FRAP and quantitative IF measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "STIL depletion reduces centrosomal CPAP levels by ~30%, but CPAP levels remain similar across WT and mutant STIL transgenes that disrupt CPAP binding. This suggests CPAP localizes to parent centrioles independently of STIL, while procentriole CPAP requires STIL for stable binding, and STIL's role in CPAP recruitment is largely independent of direct STIL-CPAP interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 address an apparent discrepancy between CPAP recruitment and stability. The data showing modest CPAP reduction upon STIL depletion but no difference between STIL mutants support a model where STIL has multiple roles. The interpretation is reasonable but somewhat speculative (C121-C122 are implicit models). The conclusion (C124) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "STIL S428 phosphorylation is required for CPAP recruitment to de novo centrioles. In acentriolar cells, S428A and PRP mutants form STIL/PLK4 foci comparable to WT but fail to recruit CPAP (>90% reduction) while recruiting SAS6 normally, leading to failure of de novo centriole assembly. S1116A mutants form few STIL/PLK4 foci, failing at an earlier stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C134 use de novo centriole assembly to specifically examine procentriole formation without confounding effects from parent centrioles. The experimental design elegantly addresses the multiple CPAP pools issue. The data clearly show S428A/PRP mutants recruit SAS6 but not CPAP, directly demonstrating the sequential requirement for these interactions. The quantification and appropriate controls support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The authors propose a two-region phosphorylation model: PLK4 phosphorylates STIL at the STAN motif (including S1116) to promote SAS6 binding and cartwheel assembly, and at S428 to promote CPAP binding via the PRP motif, thereby linking the cartwheel to centriole wall microtubules. This model integrates the current findings with prior work on STAN motif phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 and C135-C136 present the central model of the paper. The model is well-supported by the collective experimental evidence: (1) S428 phosphorylation enhances CPAP binding, (2) STAN phosphorylation enhances SAS6 binding (prior work), (3) both are required for centriole duplication, (4) they function in separate pathways (genetic epistasis), and (5) de novo assembly shows sequential requirements. The model is consistent with structural data cited (C137-C138).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "PLK4 kinase activity selectively enhances STIL binding to specific partners. Active PLK4 increases STIL binding to SAS6 and CPAP but not to RTTN or CEP85, demonstrating specificity in PLK4-regulated STIL interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 establish the initial observation that motivated the study. The co-IP experiments with kinase-active vs kinase-dead PLK4 provide clear evidence for selective regulation. The inclusion of negative controls (RTTN, CEP85) strengthens the conclusion about specificity. This is a straightforward and well-controlled experiment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The S428A mutation does not affect STIL's ability to bind to or stimulate PLK4 kinase activity, ruling out defective PLK4 activation as the cause of centriole duplication failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 addresses an important alternative explanation. The co-IP and PLK4 autophosphorylation data (Figure 3\u2014figure supplement 2A) demonstrate that S428A STIL can still activate PLK4, indicating the centriole duplication defect is not due to impaired PLK4 function. This control is essential for interpreting the phenotypic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C145",
+      "C146"
+    ],
+    "result": "STIL S428 phosphorylation is required for CPAP recruitment to de novo centrioles but not for bulk CPAP recruitment to centrosomes during canonical duplication. The authors propose this discrepancy may reflect distinct requirements between de novo and canonical assembly, or technical limitations in distinguishing CPAP pools at centrosomes. Nevertheless, the STIL-CPAP interaction enables stable integration of both proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C146 address an apparent inconsistency between the de novo and canonical duplication results. While C141 is supported by the de novo data and C142 by the centrosomal localization measurements, the explanations (C143, C145) are speculative. The authors appropriately acknowledge this uncertainty and propose reasonable hypotheses, but additional experiments would be needed to resolve the discrepancy definitively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The authors propose two non-mutually exclusive mechanisms for how S428 phosphorylation enhances CPAP binding: (1) creating an extended binding interface with conserved TCP domain residues, or (2) inducing a conformational change that unmasks the PRP motif. Supporting evidence includes sequence conservation around S428 and mobility shift data from Drosophila Ana2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C151 present mechanistic hypotheses that are reasonable but speculative. C148-C149 cite structural and sequence data supporting the extended interface model, while C151 cites Drosophila data suggesting conformational change. However, these are proposed mechanisms without direct experimental testing in this study. The hypotheses are plausible and well-reasoned but require future structural or biophysical studies for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The introduction provides established background on centriole biology, including centriole functions, duplication timing, the core duplication machinery (PLK4, CEP192, CPAP, STIL, SAS6), PLK4's central regulatory role, and known PLK4-regulated interactions. This contextualizes the current study within the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C51 present background knowledge and prior work, appropriately supported by citations to established literature. These claims provide necessary context but are not novel findings of this study. The citations appear appropriate for the claims made, and the background accurately represents the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The proposed model is consistent with super-resolution imaging showing STIL's C-terminal STAN motif near the cartwheel hub and N-terminal PRP motif near CPAP at the cartwheel periphery. Mutations affecting STIL-CPAP interaction cause microcephaly in humans, highlighting clinical relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 connect the current findings to prior structural studies and clinical genetics. The super-resolution data (C137-C138) from Gartenmann et al. provide independent spatial validation of the model. The microcephaly mutations (C139-C140) establish disease relevance. These claims appropriately integrate the current work with broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "C. elegans SAS-5/STIL lacks an obvious PRP motif but binds SAS-4/CPAP through a disordered region, and the TCP domain is required for SAS-4 incorporation. SAS-5 may switch between binding microtubules and SAS-4, suggesting potential regulatory mechanisms in worms that differ from flies and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C156 discuss evolutionary variation in the STIL-CPAP interaction mechanism. The claims are appropriately supported by citations to C. elegans studies. This discussion acknowledges that while the phospho-regulation is conserved in flies and humans, the molecular details may differ in worms, which is an important caveat for the generality of the findings.",
+    "result_type": "MINOR"
+  }
+]

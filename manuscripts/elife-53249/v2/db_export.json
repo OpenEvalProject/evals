@@ -1,0 +1,2053 @@
+{
+  "submission": {
+    "id": "f2472ed1-5e04-43cf-8f15-173985fb54e7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:32:06.329383Z",
+    "updated_at": "2025-12-02T18:32:06.329383Z"
+  },
+  "content": [
+    {
+      "id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "submission_id": "f2472ed1-5e04-43cf-8f15-173985fb54e7",
+      "content_type": "manuscript",
+      "content_text": "# Large-scale language analysis of peer review reports\n\n## Authors\n\n- Ivan Buljan<sup>1</sup> ([ORCID: 0000-0002-8719-7277](https://orcid.org/0000-0002-8719-7277)) \u2020\n- Daniel Garcia-Costa<sup>2</sup> ([ORCID: 0000-0002-8939-8451](https://orcid.org/0000-0002-8939-8451))\n- Francisco Grimaldo<sup>2</sup> ([ORCID: 0000-0002-1357-7170](https://orcid.org/0000-0002-1357-7170))\n- Flaminio Squazzoni<sup>3</sup> ([ORCID: 0000-0002-6503-6077](https://orcid.org/0000-0002-6503-6077))\n- Ana Maru\u0161i\u0107<sup>1</sup> ([ORCID: 0000-0001-6272-0917](https://orcid.org/0000-0001-6272-0917))\n\n### Affiliations\n\n1. Department of Research in Biomedicine and Health, University of Split School of Medicine Split Croatia\n2. Department d'Inform\u00e0tica, University of Valencia Burjassot-Val\u00e8ncia Spain\n3. Department of Social and Political Sciences, University of Milan Milan Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nPeer review is often criticized for being flawed, subjective and biased, but research into peer review has been hindered by a lack of access to peer review reports. Here we report the results of a study in which text-analysis software was used to determine the linguistic characteristics of 472,449 peer review reports. A range of characteristics (including analytical tone, authenticity, clout, three measures of sentiment, and morality) were studied as a function of reviewer recommendation, area of research, type of peer review and reviewer gender. We found that reviewer recommendation had the biggest impact on the linguistic characteristics of reports, and that area of research, type of peer review and reviewer gender had little or no impact. The lack of influence of research area, type of review or reviewer gender on the linguistic characteristics is a sign of the robustness of peer review.\n\n## Introduction\n\nMost journals rely on peer review to ensure that the papers they publish are of a certain quality, but there are concerns that peer review suffers from a number of shortcomings (Grimaldo et al., 2018; Fyfe et al., 2020). These include gender bias, and other less obvious forms of bias, such as more favourable reviews for articles with positive findings, articles by authors from prestigious institutions, or articles by authors from the same country as the reviewer (Haffar et al., 2019; Lee et al., 2013; Resnik and Elmore, 2016).\n\nAnalysing the linguistic characteristics of written texts, speeches, and audio-visual materials is well established in the humanities and psychology (Pennebaker, 2017). A recent example of this is the use of machine learning by Garg et al. to track gender and ethnic stereotypes in the United States over the past 100 years (Garg et al., 2018). Similar techniques have been used to analyse scientific articles, with an early study showing that scientific writing is a complex process that is sensitive to formal and informal standards, context-specific canons and subjective factors (Hartley et al., 2003). Later studies found that fraudulent scientific papers seem to be less readable than non-fraudulent papers (Markowitz and Hancock, 2016), and that papers in economics written by women are better written than equivalent papers by men (and that this gap increases during the peer review process; Hengel, 2018). There is clearly scope for these techniques to be used to study other aspects of the research and publishing process.\n\nTo date most research on the linguistic characteristics of peer review has focused on comparisons between different types of peer review, and it has been shown that open peer review (in which peer review reports and/or the names of reviewers are made public) leads to longer reports and a more positive emotional tone compared to confidential peer review (Bravo et al., 2019; Bornmann et al., 2012). Similar techniques have been used to explore possible gender bias in the peer review of grant applications, but a consensus has not been reached yet (Marsh et al., 2011; Magua et al., 2017). To date, however, these techniques have not been applied to the peer review process at a large scale, largely because most journals strictly limit access to peer review reports.\n\nHere we report the results of a linguistic analysis of 472,449 peer review reports from the PEERE database (Squazzoni et al., 2017). The reports came from 61\u00a0journals published by Elsevier in four broad areas of research: health and medical sciences (22 journals); life sciences (5); physical sciences (30); social sciences and economics (4). For each review we had data on the following: i) the recommendation made by the reviewer (accept [n\u00a0=\u00a026,387, 5.6%]; minor revisions required [134,858, 28.5%]; major revisions required [161,696, 34.2%]; reject [n\u00a0=\u00a0149,508, 31.7%]); ii) the broad area of research; iii) the type of peer review used by the journal (single-blind [n\u00a0=\u00a0411,727, 87.1%] or double-blind [n\u00a0=\u00a060,722, 12.9%]); and the gender of the reviewer (75.9% were male; 24.1% were female).\n\n## Results\n\nWe used various linguistic tools to examine the peer review reports in our sample (see Methods for more details). Linguistic Inquiry and Word Count (LIWC) text-analysis software was used to perform word counts and to return scores of between 0% and 100% for \u2018analytical tone\u2019, \u2018clout\u2019 and \u2018authenticity\u2019 (Pennebaker et al., 2015). Three different approaches were used to perform sentiment analysis: i) LIWC returns a score between 0% and 100% for \u2018emotional tone\u2019 (with more positive emotions leading to higher scores); ii) the SentimentR package returns a majority of scores between \u20131 (negative sentiment) and +1 (positive sentiment), with an\u00a0extremely low number of results outside that range (0.03% in our sample); iii) the Stanford CoreNLP returns a score between 0 (negative sentiment) to +4 (positive sentiment). We also used LIWC to analyse the reports in terms of five foundations of morality (Graham et al., 2009).\n\n### Length of report\n\nFor all combinations of area of research, type of peer review and reviewer gender, reports recommending accept were shortest, followed by reports recommending minor revisions, reject, and major revisions (Figure 1). Reports written by reviewers for social sciences\u00a0and\u00a0economics journals were significantly longer than those written by reviewers for medical journals; men also tended to write longer reports than women; however, the type of peer review (i.e., single- vs. double-blind) did not have any influence on the length of reports (see Table 2 in Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53249/elife-53249-fig1-v2.jpg)\n\n**Figure 1.:** Word count (mean and 95% confidence interval; LIWC analysis) of peer review reports in four broad areas of research for double-blind review (top) and single-blind review (bottom), and for female reviewers (left) and male reviewers (right). Reports recommending accept (red) were consistently the shortest, and reports recommending major revisions (green) were consistently the longest. See Supplementary file 1 for summary data and mixed model linear regression coefficients and residuals. HMS: health and medical sciences; LS: life sciences; PS: physical sciences; SS&E: social sciences and economics.\n\n### Analytical tone, clout and authenticity\n\nLIWC returned high scores (typically between 85.0 and 91.0) for analytical tone, and low scores (typically between 18.0 and 25.0) for authenticity, for the peer review reports in our sample (Figure 2A,C; Figure 2\u2014figure supplement 1A,C). High authenticity of a text is defined as the use of more personal words (I-words), present tense words, and relativity words, and fewer non-personal words and modal words (Pennebaker et al., 2015). Low authenticity and high analytical tone are characteristic of texts describing medical research (Kara\u010di\u0107 et al., 2019; Glonti et al., 2017). There was some variation with reviewer recommendation in the scores returned for clout, with accept having the highest scores for clout, followed by minor revisions, major revisions and reject (Figure 2B; Figure 2\u2014figure supplement 1B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53249/elife-53249-fig2-v2.jpg)\n\n**Figure 2.:** Scores returned by LIWC (mean percentages and 95% confidence interval) for analytical tone (A), clout (B) and authenticity (C) for peer review reports in four broad areas of research for female reviewers (left) and male reviewers (right) using single-blind review. Reports recommending accept (red) consistently had the most clout, and reports recommending reject (purple) consistently had the least clout. See Supplementary files 2\u20134 for summary data, mixed model linear regression coefficients and residuals, and examples of reports with high and low scores for analytical tone, clout and authenticity. HMS: health and medical sciences; LS: life sciences; PS: physical sciences; SS&E: social sciences and economics.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53249/elife-53249-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Scores returned by LIWC (mean percentages and 95% confidence interval) for analytical tone (A), clout (B) and authenticity (C) for peer review reports in four broad areas of research for female reviewers (left) and male reviewers (right) using double-blind review.\n\nWhen reviewers recommended major revisions, the text of the report was more analytical. The analytical tone was higher when reviewers were women and for single-blind peer review, but we did not find any effect of the area of research (see Table 4 in Supplementary file 2).\n\nClout levels varied with area of research, with the highest levels in social sciences and economics journals (see Table 7 in Supplementary file 3). When reviewers recommended rejection, the text showed low levels of clout, as it\u00a0did when reviewers were men and when the journal useded single-blind peer review (see Table 7 in Supplementary file 3).\n\nThe text of reports in social sciences and economics journals had the highest levels of authenticity. Authenticity was prevalent also when reviewers recommended rejection. There was no significant variation in terms of authenticity per reviewer gender or type of peer review (see Table 10 in Supplementary file 4).\n\n### Sentiment analysis\n\nThe three approaches were used to perform sentiment analysis on our sample \u2013 LIWC, SentimentR and the Stanford CoreNLP \u2013 produced similar results. Reports recommending accept had the highest scores, indicating higher sentiment, followed by reports recommending minor revisions, major revisions and reject (Figure 3; Figure 3\u2014figure supplement 1). Furthermore, reports for social sciences and economics journals had the highest levels of sentiment, as did reviews written by women. We did not find any association between sentiment and the type of peer review (see\u00a0Table 13\u00a0in\u00a0Supplementary file 5,\u00a0Table\u00a016 in\u00a0Supplementary file 6 and\u00a0Table\u00a019\u00a0in\u00a0Supplementary file 7).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53249/elife-53249-fig3-v2.jpg)\n\n**Figure 3.:** Scores for sentiment analysis returned by LIWC (A; mean percentage and 95% confidence interval, CI), SentimentR (B; mean score and 95% CI), and Stanford CoreNLP (C; mean score and 95% CI) for peer review reports in four broad areas of research for female reviewers (left) and male reviewers (right) using single-blind review. See Supplementary files 5\u20137 for summary data, mixed model linear regression coefficients and residuals, and examples of reports with high and low scores for sentiment according to LIWC, SentimentR and Stanford CoreNLP analysis.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53249/elife-53249-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Scores for sentiment analysis returned by LIWC (A; mean percentage and 95% confidence interval, CI), SentimentR (B; mean score and 95% CI),\u00a0and Stanford CoreNLP (C; mean score and 95% CI) for peer review reports in four broad areas of research for female reviewers (left) and male reviewers (right) using double-blind review.\n\n### Moral foundations\n\nLIWC was also used to explore the morality of the reports in our sample (Graham et al., 2009). The differences between peer review recommendations were statistically significant. Reports recommending acceptance had the highest scores for general morality, followed by reports recommending minor revisions, major revisions and reject (Figure 4). Regarding the research area, we found a lowest proportion of words related to morality in the social sciences and economics, when reviewers were men, and when single-blind peer review was used (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53249/elife-53249-fig4-v2.jpg)\n\n**Figure 4.:** Scores returned by LIWC (mean percentage on a log scale) for general morality in peer review reports in four broad areas of research for double-blind review (top) and single-blind review (bottom), and for female reviewers (left) and male reviewers (right). Reports recommending accept (red) consistently had the highest scores. See Supplementary file 8 for lists of the ten most frequent words found in peer review reports for general morality and the five moral foundation variables. HMS: health and medical sciences; LS: life sciences; PS: physical sciences; SS&E: social sciences and economics.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53249/elife-53249-fig4-figsupp1-v2.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53249/elife-53249-fig4-figsupp2-v2.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53249/elife-53249-fig4-figsupp3-v2.jpg)\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53249/elife-53249-fig4-figsupp4-v2.jpg)\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/53249/elife-53249-fig4-figsupp5-v2.jpg)\n\nWe also explored five foundations of morality \u2013 care/harm, fairness/cheating, loyalty/betrayal, authority/subversion, and sanctity/degradation \u2013 but no clear patterns emerged (Figure 4\u2014figure supplements 1\u20135). See the Methods section for more details, and Supplementary file 8 for lists of the ten most common phrases from the LIWC Moral Foundation dictionary. In general, the prevalence of these words was minimal, with average scores lower than 1%. Moreover, these words tended to be part of common phrases and thus did not speak to the moral content of the reviews. This suggests that a combination of qualitative and quantitative methods, including machine learning tools, will be required to explore the moral aspects of peer review.\n\n## Conclusion\n\nOur study suggests that the reviewer recommendation has the biggest influence on the linguistic characteristics (and length) of peer review reports, which is consistent with previous, case-based research (Casnici et al., 2017). It is probable that whenever reviewers\u00a0recommend revision, they write a longer report in order to justify their requests and/or to suggest changes to improve the manuscript (which they do not have to do when they recommend to accept or reject). In our study, in the case of the two more negative recommendations (reject and major revisions), the reports were shorter, and language was less emotional and more analytical. We found that the type of peer review \u2013 single-blind or double-blind \u2013 had no significant influence on the reports, contrary to previous reports on smaller samples (Bravo et al., 2019; van Rooyen et al., 1999). Likewise, area of research had no significant influence on the reports in the sample, and neither did reviewer gender, which is consistent with a previous smaller study (Bravo et al., 2019). The lack of influence exerted by the area of research, the type of peer review or the reviewer gender on the linguistic characteristics of the reports is a sign of the robustness of peer review.\n\nThe results of our study should be considered in the light of certain limitations. Most of the journals were in the health and medical sciences and the physical sciences, and most used single-blind peer review. However, the size, depth and uniqueness of our dataset helped us provide a more comprehensive analysis of peer review reports than previous studies, which were often limited to small samples and incomplete data (van den Besselaar et al., 2018; Sizo et al., 2019; Falk Delgado et al., 2019). Future research would also benefit from baseline data against which results could be compared, although our results match the preliminary results from a study at a single biomedical journal (Glonti et al., 2017), and from knowing more about the referees (such as their status or expertise). Finally, we did not examine the actual content of the manuscripts under review, so we could not determine how reliable reviewers were in their assessments. Combining language analyses of peer review reports with estimates of peer review reliability for the same manuscripts (via inter-reviewer ratings) could provide new insights into the peer review process.\n\n## Methods\n\n### The PEERE dataset\n\nPEERE is a collaboration between publishers and researchers (Squazzoni et al., 2020), and the PEERE dataset contains 583,365 peer review reports from 61 journal published by Elsevier, with data on reviewer recommendation, area of research (health and medical sciences; life sciences; physical sciences; social sciences and economics), type of peer review (single blind or double blind), and reviewer gender for each report. Most of the reports (N\u00a0=\u00a0481,961) are for original research papers, with the rest (N\u00a0=\u00a0101,404) being for opinion pieces, editorials and letters to the editor. The database was first filtered to exclude reviews that included reference to manuscript revisions, resulting in 583,365 reports. We eliminated 110,636 due to the impossibility to determine reviewer gender, and 260 because we did not have data on the recommendation. Our analysis was performed on a total number of 472,449 peer review reports.\n\n### Gender determination\n\nTo determine reviewer gender, we followed a standard disambiguation algorithm that has already been validated on a dataset of scientists extracted from the Web of Science database covering a similar publication time window (Santamar\u00eda and Mihaljevi\u0107, 2018). Gender was assigned following a multi-stage gender inference procedure consisting of three steps. First, we performed a preliminary gender determination using, when available, gender salutation (i.e., Mr, Mrs, Ms...). Secondly, we queried the Python package gender-guesser about the extracted first names and country of origin, if any. Gender-guesser has demonstrated to achieve the lowest misclassification rate and introduce the smallest gender bias (Paltridge, 2017). Lastly, we queried the best performer gender inference service, Gender API (https://gender-api.com/), and used the returned gender whenever we found a minimum of 62 samples with, at least, 57% accuracy, which follows the optimal values found in benchmark 2 of the previous research (Santamar\u00eda and Mihaljevi\u0107, 2018). This threshold for the obtained confidence parameters was suitable to ensure that the rate of misclassified names did not exceed 5% (Santamar\u00eda and Mihaljevi\u0107, 2018). This allowed us to determine the gender of 81.1% of reviewers, among which 75.9% were male and 24.1% female. With regards to the three possible gender sources, 6.3% of genders came from scientist salutation, 77.2% from gender-guesser, and 16.5% from the Gender API. The remaining 18.9% of reviewers were assigned an unknown gender. This level of gender determination is consistent with the non-classification rate for names of scientists in previous research (Santamar\u00eda and Mihaljevi\u0107, 2018).\n\n### Analytical tone, authenticity and clout\n\nWe used a version of the Linguistic Inquiry and Word Count (LIWC) text-analysis software with standardized scores (http://liwc.wpengine.com/) to analyze the peer review reports in our sample. LIWC measures the percentage of words related to three psychological features (so scores range from 0 to 100): \u2018analytical tone\u2019; \u2018clout\u2019; and \"authenticity. A high score for analytical tone indicates a report with a logical and hierarchical style of writing. Clout reveals personal sensitivity towards social status, confidence or leadership: a low score for clout is associated with insecurities and a less confident and more tentative tone (Kacewicz et al., 2014). A high score for authenticity indicates a report written in a style that is honest and humble, whereas a low score indicates a style that is deceptive and superficial (Pennebaker et al., 2015). The words people use also reflect how authentic or personal they sound. People who are authentic tend to use more I-words (e.g. I, me, mine), present-tense verbs, and relativity words (e.g. near, new) and fewer she-he words (e.g. his, her) and discrepancies (e.g. should, could) (Pennebaker et al., 2015).\n\n### Sentiment analysis\n\nWe used three different methodological approaches to assess sentiment. (i) LIWC measures \u2018emotional tone\u2019, which indicates writing dominated by either positive or negative emotions by counting number of words from a pre-specified dictionary. (ii) The SentimentR package (Rinker, 2019) classifies the proportion of words related to sentiment in the text, similarly to the \u2018emotional tone\u2019 scores in LIWC but using a different vocabulary. The SentimentR score is the valence of words related with the specific sentiment, majority of scores (99.97%) ranging from \u22121 (negative sentiment) +1 (positive sentiment). (iii) Stanford CoreNLP is a deep language analysis program that uses machine learning to determine the emotional valence of the text (Socher et al., 2013), and score ranges from 0 (negative sentiment) to +4 (positive sentiment). Examples of characteristic text variables from the peer review reports analysed with these approaches are given in Supplementary files 5\u20137.\n\n### Moral foundations\n\nWe used LIWC and Moral Foundations Theory (https://moralfoundations.org/other-materials/) to analyse the reports in our sample according to five moral foundations: care/harm (also known as care-virtue/care-vice); fairness/cheating (or fairness-virtue/fairness-vice); loyalty/betrayal (or loyalty-virtue/loyalty-vice); authority/subversion (authority virtue/authority-vice); and sanctity/degradation (or sanctity-virtue/sanctity-vice).\n\n### Statistical methods\n\nData were analysed using the R programming language, version 3.6.3. (R Development Core Team, 2017). To test the interaction effects and compare different peer review characteristics, we conducted a mixed model linear analysis on each variable (analytical tone, authenticity, clout; the measures of sentiment; and the measures of morality) with reviewer recommendation, area of research, type of peer review (single- or double-blind) and reviewer gender as fixed factors (predictors) and the journal, word count and article type as the random factor. This was to control across-journal interactions, number of words and article type.\n",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "4eceef1c-fdaa-47e2-a2b8-e2cd769d6744",
+      "submission_id": "f2472ed1-5e04-43cf-8f15-173985fb54e7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, eLife United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53249.sa1](https://doi.org/10.7554/eLife.53249.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Meta research: Large-scale language analysis of peer review reports reveals lack of moral bias\" to eLife for consideration as a Feature Article. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by the eLife Features Editor. One of the reviewers was Erin Hengel; the other two reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper presents an explorative study of the linguistic content of a very large set (roughly 500,000) of peer review reports. To our knowledge, this is the first paper addressing such a large data set on peer review and the potential biases often experienced by scholars of all fields. This is highly valuable to academic research as a whole. However, we do not believe the evidence warrants the authors' conclusion that peer review lacks moral bias (see below), and we suggest that the authors revise their paper to focus exclusively on the LIWC indicators (and conduct further research into moral bias, informed by the comments from referee #2 at the end of this email, with a view to writing a second manuscript for future submission). There are also a number of other issues that need to be addressed in a revised manuscript.\n\nEssential revisions:\n\n1. Reducing the emphasis on moral bias in the present manuscript will involve deleting the last 10 rows of table 1 (and similarly for tables 2, 3 and 4), and making changes to the text. The title also needs to be changed, but Figure 1 does not need to be changed.\n\n2. The authors should analyze the data they have for word length, analytical thinking, clout, authenticity, emotional tone and morality in general in greater detail through regression analyses and/or multilevel models.\n\nHere is what referee #1 said on this topic: I am concerned that the explorative approach misses a lot of underlying information. By comparing means of groups, the in-group variance is overlooked. Some of the observed effects might be large enough to hold some sort of universal \"truth\", but for other cases, substantial effects might still exist within groups. My suggestion would be to rethink the design into one that allows for multidimensionality. One approach could be regression analysis, which would require a more strict type of test-design though. Another approach could be to build reviewer-profiles based on their characteristics. E.g. reviews with a high degree of clout and negative emotion, and low analytical thinking could be one type. Where is this type found? What characterizes it? Additionally, this would allow the authors to include information about the reviewer, e.g. are they always negative? This might also solve the baseline problem, as this would be a classification issue rather than a measurement issue.\n\nHere is what referee #3 said on this topic: All the analyses are descriptive ANOVAs and the like (bivariate). Given the supposed quality of the data, I'd recommend they explore multilevel models. Then they can fix out differences by fields, journals, etc so we get a more clear sense of what's going on.\n\n3. Please include a fuller description of your dataset and describe how representative/biased the sampling is by field and type of journal.\n\n4. Please provide more information on what the LIWC measures and how it is calculated? It would be especially helpful if you showed several LIWC scores together with sample texts (preferably from your own database) to illustrate how well it analyses text. This can be shown in an appendix. If you can't show text from your own database due to privacy concerns, feel free to show passages from this report. (Alternatively, you could take a few reports from, say, the BMJ which makes referee reports publicly available for published papers.)\n\n5. What are baseline effects? What kind of changes should we expect? E.g. when arguing that the language is cold and analytical, what is this comparable to? I would expect most scientific writing to be mostly in this category, and it should not be a surprise - I hope. It would be very useful for the reader to have some type of comparison.\n\n6. Does the analysis allow for the fact that different subject areas will have different LIWC scores? The largest sample of reports comes from the physical sciences, which use single-blind review the most. Reports from this field are also shorter, slightly more analytic and display less Clout and Authenticity. I think your results are picking up this selection bias instead of representing actual differences between the two review processes.\n\nPlease discuss.\n\n7. Please add a section on the limitations of your study. For example, there is no discussion of sample bias and representation really.\n\nAlso, LIWC is full of issues and problems (NLP has come a ways since LIWC arrived on the scene): do you use the standardized version of LIWC constructs with high cronbach alphas, or the raw versions with poor cronbach alphas?\n\nDoes the analysis distinguish between original research content and other forms of content (eg, editorials, opinion pieces, book reviews etc)?\n",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "500ad4ed-f1f6-4a07-b72b-e8de703528ef",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C1",
+      "claim": "The study analyzed 472,449 peer review reports using text-analysis software to determine linguistic characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report the results of a study in which text-analysis software was used to determine the linguistic characteristics of 472,449 peer review reports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the sample size and methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "dc7b06f2-33ae-46af-88ef-f60d5612e55b",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C2",
+      "claim": "Reviewer recommendation had the biggest impact on the linguistic characteristics of reports.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that reviewer recommendation had the biggest impact on the linguistic characteristics of reports, and that area of research, type of peer review and reviewer gender had little or no impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data analysis throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "c8ec9a57-691e-4a84-b5ce-6c4a9e625281",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C3",
+      "claim": "Area of research had little or no impact on the linguistic characteristics of peer review reports.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that reviewer recommendation had the biggest impact on the linguistic characteristics of reports, and that area of research, type of peer review and reviewer gender had little or no impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is explicitly stated in the abstract and supported by statistical analysis in the results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "15841110-1fa4-41b3-b69d-25e74c9fa05d",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C4",
+      "claim": "Type of peer review had little or no impact on the linguistic characteristics of peer review reports.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that reviewer recommendation had the biggest impact on the linguistic characteristics of reports, and that area of research, type of peer review and reviewer gender had little or no impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "0e202433-bd6b-4293-b3b3-862e22709a2f",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C5",
+      "claim": "Reviewer gender had little or no impact on the linguistic characteristics of peer review reports.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that reviewer recommendation had the biggest impact on the linguistic characteristics of reports, and that area of research, type of peer review and reviewer gender had little or no impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is explicitly stated in the abstract and supported by statistical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "3ed582f2-5dc3-452c-8c0f-8eafb593e5df",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C6",
+      "claim": "The lack of influence of research area, type of review or reviewer gender on the linguistic characteristics is a sign of the robustness of peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of influence of research area, type of review or reviewer gender on the linguistic characteristics is a sign of the robustness of peer review.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion drawn from the data findings, stated in both the abstract and conclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "40a86343-7df2-4cc0-93d6-1a875e7f061b",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C7",
+      "claim": "Peer review is often criticized for being flawed, subjective and biased.",
+      "claim_type": "EXPLICIT",
+      "source": "Peer review is often criticized for being flawed, subjective and biased, but research into peer review has been hindered by a lack of access to peer review reports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the state of peer review, drawing on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "93afb045-f467-4c50-bd43-fdbbf8132ea9",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C8",
+      "claim": "Research into peer review has been hindered by a lack of access to peer review reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Peer review is often criticized for being flawed, subjective and biased, but research into peer review has been hindered by a lack of access to peer review reports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects a known challenge in peer review research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "a9331a7d-0174-4c0f-9167-6d1e1fd94f18",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C9",
+      "claim": "Most journals rely on peer review to ensure that the papers they publish are of a certain quality.",
+      "claim_type": "EXPLICIT",
+      "source": "Most journals rely on peer review to ensure that the papers they publish are of a certain quality, but there are concerns that peer review suffers from a number of shortcomings (Grimaldo et al., 2018; Fyfe et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about journal practices, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "cbea926e-fb83-4e03-89d8-38b039301a3b",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C10",
+      "claim": "There are concerns that peer review suffers from a number of shortcomings.",
+      "claim_type": "EXPLICIT",
+      "source": "Most journals rely on peer review to ensure that the papers they publish are of a certain quality, but there are concerns that peer review suffers from a number of shortcomings (Grimaldo et al., 2018; Fyfe et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "67f20205-0bcc-4f9d-a4ec-6bedf701f528",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C11",
+      "claim": "Peer review shortcomings include gender bias and other less obvious forms of bias.",
+      "claim_type": "EXPLICIT",
+      "source": "These include gender bias, and other less obvious forms of bias, such as more favourable reviews for articles with positive findings, articles by authors from prestigious institutions, or articles by authors from the same country as the reviewer (Haffar et al., 2019; Lee et al., 2013; Resnik and Elmore, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "7eda9363-cd54-457c-ac16-a933c6983d99",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C12",
+      "claim": "Analysing the linguistic characteristics of written texts, speeches, and audio-visual materials is well established in the humanities and psychology.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysing the linguistic characteristics of written texts, speeches, and audio-visual materials is well established in the humanities and psychology (Pennebaker, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to established work in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "f97fc5ec-2685-4c03-8047-ffbc425e90bf",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C13",
+      "claim": "Machine learning has been used by Garg et al. to track gender and ethnic stereotypes in the United States over the past 100 years.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent example of this is the use of machine learning by Garg et al. to track gender and ethnic stereotypes in the United States over the past 100 years (Garg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "c59a9eee-495d-4893-8f2c-abe8adab6d2c",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C14",
+      "claim": "Scientific writing is a complex process that is sensitive to formal and informal standards, context-specific canons and subjective factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar techniques have been used to analyse scientific articles, with an early study showing that scientific writing is a complex process that is sensitive to formal and informal standards, context-specific canons and subjective factors (Hartley et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "d4986b4d-64b2-4d09-88dc-808f3142b30f",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C15",
+      "claim": "Fraudulent scientific papers seem to be less readable than non-fraudulent papers.",
+      "claim_type": "EXPLICIT",
+      "source": "Later studies found that fraudulent scientific papers seem to be less readable than non-fraudulent papers (Markowitz and Hancock, 2016), and that papers in economics written by women are better written than equivalent papers by men (and that this gap increases during the peer review process; Hengel, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "b36abc05-2386-47c5-a7b2-cfc54f48b382",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C16",
+      "claim": "Papers in economics written by women are better written than equivalent papers by men.",
+      "claim_type": "EXPLICIT",
+      "source": "Later studies found that fraudulent scientific papers seem to be less readable than non-fraudulent papers (Markowitz and Hancock, 2016), and that papers in economics written by women are better written than equivalent papers by men (and that this gap increases during the peer review process; Hengel, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "9471a71b-a354-4921-8a2d-4680bcbc225f",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C17",
+      "claim": "The gap in writing quality between papers by women and men in economics increases during the peer review process.",
+      "claim_type": "EXPLICIT",
+      "source": "Later studies found that fraudulent scientific papers seem to be less readable than non-fraudulent papers (Markowitz and Hancock, 2016), and that papers in economics written by women are better written than equivalent papers by men (and that this gap increases during the peer review process; Hengel, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "56106734-9542-47d0-b81c-00f274891d3c",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C18",
+      "claim": "Open peer review leads to longer reports compared to confidential peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "To date most research on the linguistic characteristics of peer review has focused on comparisons between different types of peer review, and it has been shown that open peer review (in which peer review reports and/or the names of reviewers are made public) leads to longer reports and a more positive emotional tone compared to confidential peer review (Bravo et al., 2019; Bornmann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "830df514-fe90-411e-af5c-bde0e6e7893e",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C19",
+      "claim": "Open peer review leads to a more positive emotional tone compared to confidential peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "To date most research on the linguistic characteristics of peer review has focused on comparisons between different types of peer review, and it has been shown that open peer review (in which peer review reports and/or the names of reviewers are made public) leads to longer reports and a more positive emotional tone compared to confidential peer review (Bravo et al., 2019; Bornmann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "0993e4dc-00eb-4ee0-9663-3211b2821c09",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C20",
+      "claim": "Similar techniques have been used to explore possible gender bias in the peer review of grant applications, but a consensus has not been reached yet.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar techniques have been used to explore possible gender bias in the peer review of grant applications, but a consensus has not been reached yet (Marsh et al., 2011; Magua et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "38d34c57-481a-41b7-9f36-2ac74750337c",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C21",
+      "claim": "Linguistic analysis techniques have not been applied to the peer review process at a large scale, largely because most journals strictly limit access to peer review reports.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, however, these techniques have not been applied to the peer review process at a large scale, largely because most journals strictly limit access to peer review reports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the state of the field and provides context for the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "ad829528-bfae-4076-b766-3a05ff1e1cbf",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C22",
+      "claim": "The PEERE database contains peer review reports from 61 journals published by Elsevier.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report the results of a linguistic analysis of 472,449 peer review reports from the PEERE database (Squazzoni et al., 2017). The reports came from 61 journals published by Elsevier in four broad areas of research: health and medical sciences (22 journals); life sciences (5); physical sciences (30); social sciences and economics (4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data source used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "e592758a-c2f8-4b58-9260-06ca2dc103d7",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C23",
+      "claim": "The reports came from four broad areas of research: health and medical sciences (22 journals); life sciences (5); physical sciences (30); social sciences and economics (4).",
+      "claim_type": "EXPLICIT",
+      "source": "The reports came from 61 journals published by Elsevier in four broad areas of research: health and medical sciences (22 journals); life sciences (5); physical sciences (30); social sciences and economics (4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "4ecde09c-b76b-436b-90a9-b7bdc55b4484",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C24",
+      "claim": "5.6% of reviews recommended accept.",
+      "claim_type": "EXPLICIT",
+      "source": "For each review we had data on the following: i) the recommendation made by the reviewer (accept [n = 26,387, 5.6%]; minor revisions required [134,858, 28.5%]; major revisions required [161,696, 34.2%]; reject [n = 149,508, 31.7%]);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "6b6e3679-fd75-4e6d-9467-9d3de90ed48d",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C25",
+      "claim": "28.5% of reviews recommended minor revisions.",
+      "claim_type": "EXPLICIT",
+      "source": "For each review we had data on the following: i) the recommendation made by the reviewer (accept [n = 26,387, 5.6%]; minor revisions required [134,858, 28.5%]; major revisions required [161,696, 34.2%]; reject [n = 149,508, 31.7%]);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "16dcc026-01af-4033-bf7a-3ae1ec7e8880",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C26",
+      "claim": "34.2% of reviews recommended major revisions.",
+      "claim_type": "EXPLICIT",
+      "source": "For each review we had data on the following: i) the recommendation made by the reviewer (accept [n = 26,387, 5.6%]; minor revisions required [134,858, 28.5%]; major revisions required [161,696, 34.2%]; reject [n = 149,508, 31.7%]);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "f7c1f438-cb6e-424b-bc1d-0c88f029ef5b",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C27",
+      "claim": "31.7% of reviews recommended reject.",
+      "claim_type": "EXPLICIT",
+      "source": "For each review we had data on the following: i) the recommendation made by the reviewer (accept [n = 26,387, 5.6%]; minor revisions required [134,858, 28.5%]; major revisions required [161,696, 34.2%]; reject [n = 149,508, 31.7%]);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "9a3602db-fa65-486f-ab5e-04554cafce3b",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C28",
+      "claim": "87.1% of reports used single-blind peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "iii) the type of peer review used by the journal (single-blind [n = 411,727, 87.1%] or double-blind [n = 60,722, 12.9%]);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "148263c5-08d5-47e7-88eb-1e9ee39096c0",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C29",
+      "claim": "12.9% of reports used double-blind peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "iii) the type of peer review used by the journal (single-blind [n = 411,727, 87.1%] or double-blind [n = 60,722, 12.9%]);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "09afa29a-a916-4d14-ac19-f2ba78ebe453",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C30",
+      "claim": "75.9% of reviewers were male.",
+      "claim_type": "EXPLICIT",
+      "source": "and the gender of the reviewer (75.9% were male; 24.1% were female).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "06a285db-f389-4b47-a06e-ad435cecbcee",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C31",
+      "claim": "24.1% of reviewers were female.",
+      "claim_type": "EXPLICIT",
+      "source": "and the gender of the reviewer (75.9% were male; 24.1% were female).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "e5fe94ff-0b77-44ab-af52-9b6154392131",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C32",
+      "claim": "LIWC text-analysis software returns scores between 0% and 100% for analytical tone, clout and authenticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Linguistic Inquiry and Word Count (LIWC) text-analysis software was used to perform word counts and to return scores of between 0% and 100% for 'analytical tone', 'clout' and 'authenticity' (Pennebaker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology and scoring system used in the study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "d2e78e9f-dc7d-48f8-bd28-2b80eae03567",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C33",
+      "claim": "LIWC returns a score between 0% and 100% for emotional tone, with more positive emotions leading to higher scores.",
+      "claim_type": "EXPLICIT",
+      "source": "i) LIWC returns a score between 0% and 100% for 'emotional tone' (with more positive emotions leading to higher scores);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology and scoring system used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "444d0f1c-1583-478c-97aa-d3d6ee441331",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C34",
+      "claim": "The SentimentR package returns a majority of scores between \u20131 (negative sentiment) and +1 (positive sentiment).",
+      "claim_type": "EXPLICIT",
+      "source": "ii) the SentimentR package returns a majority of scores between \u20131 (negative sentiment) and +1 (positive sentiment), with an extremely low number of results outside that range (0.03% in our sample);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology and scoring system used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "5533250f-12b5-48d2-b91d-09f35eda1244",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C35",
+      "claim": "0.03% of SentimentR scores in the sample were outside the range of -1 to +1.",
+      "claim_type": "EXPLICIT",
+      "source": "ii) the SentimentR package returns a majority of scores between \u20131 (negative sentiment) and +1 (positive sentiment), with an extremely low number of results outside that range (0.03% in our sample);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "3c901e14-25a0-4f00-8b51-6253d3631302",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C36",
+      "claim": "The Stanford CoreNLP returns a score between 0 (negative sentiment) to +4 (positive sentiment).",
+      "claim_type": "EXPLICIT",
+      "source": "iii) the Stanford CoreNLP returns a score between 0 (negative sentiment) to +4 (positive sentiment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology and scoring system used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "2424c911-5548-4d1b-b45a-5d0c0aa4abb4",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C37",
+      "claim": "For all combinations of area of research, type of peer review and reviewer gender, reports recommending accept were shortest.",
+      "claim_type": "EXPLICIT",
+      "source": "For all combinations of area of research, type of peer review and reviewer gender, reports recommending accept were shortest, followed by reports recommending minor revisions, reject, and major revisions (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "9dc48d63-cad8-41cc-8711-8d37cfce3365",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C38",
+      "claim": "Reports recommending major revisions were the longest for all combinations of area of research, type of peer review and reviewer gender.",
+      "claim_type": "EXPLICIT",
+      "source": "For all combinations of area of research, type of peer review and reviewer gender, reports recommending accept were shortest, followed by reports recommending minor revisions, reject, and major revisions (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "25e5080a-0110-40cf-a5db-c91d3cd04b04",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C39",
+      "claim": "Reports written by reviewers for social sciences and economics journals were significantly longer than those written by reviewers for medical journals.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports written by reviewers for social sciences and economics journals were significantly longer than those written by reviewers for medical journals; men also tended to write longer reports than women; however, the type of peer review (i.e., single- vs. double-blind) did not have any influence on the length of reports (see Table 2 in Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the text and supported by supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "0a2a3c0b-bc13-4c9d-bf9e-7f0e9aa45021",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C40",
+      "claim": "Men tended to write longer reports than women.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports written by reviewers for social sciences and economics journals were significantly longer than those written by reviewers for medical journals; men also tended to write longer reports than women; however, the type of peer review (i.e., single- vs. double-blind) did not have any influence on the length of reports (see Table 2 in Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the text and supported by supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "70581f67-d42e-4443-8fae-7995e223b039",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C41",
+      "claim": "The type of peer review (single- vs. double-blind) did not have any influence on the length of reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports written by reviewers for social sciences and economics journals were significantly longer than those written by reviewers for medical journals; men also tended to write longer reports than women; however, the type of peer review (i.e., single- vs. double-blind) did not have any influence on the length of reports (see Table 2 in Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the text and supported by supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "c034fc1e-0a5f-4c65-ad22-25020a0224ee",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C42",
+      "claim": "LIWC returned high scores (typically between 85.0 and 91.0) for analytical tone for the peer review reports in the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "LIWC returned high scores (typically between 85.0 and 91.0) for analytical tone, and low scores (typically between 18.0 and 25.0) for authenticity, for the peer review reports in our sample (Figure 2A,C; Figure 2\u2014figure supplement 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "6cd182a0-9725-4f0d-9199-683e337189aa",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C43",
+      "claim": "LIWC returned low scores (typically between 18.0 and 25.0) for authenticity for the peer review reports in the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "LIWC returned high scores (typically between 85.0 and 91.0) for analytical tone, and low scores (typically between 18.0 and 25.0) for authenticity, for the peer review reports in our sample (Figure 2A,C; Figure 2\u2014figure supplement 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "0a700016-548c-4ed4-83b8-0051582ae608",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C44",
+      "claim": "High authenticity of a text is defined as the use of more personal words (I-words), present tense words, and relativity words, and fewer non-personal words and modal words.",
+      "claim_type": "EXPLICIT",
+      "source": "High authenticity of a text is defined as the use of more personal words (I-words), present tense words, and relativity words, and fewer non-personal words and modal words (Pennebaker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition from the cited methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "42ed07b7-40b5-4bf6-be89-725314a3e329",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C45",
+      "claim": "Low authenticity and high analytical tone are characteristic of texts describing medical research.",
+      "claim_type": "EXPLICIT",
+      "source": "Low authenticity and high analytical tone are characteristic of texts describing medical research (Kara\u010di\u0107 et al., 2019; Glonti et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "1993c480-9e0c-4481-8f7a-c7c74c271b3c",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C46",
+      "claim": "Reports recommending accept had the highest scores for clout, followed by minor revisions, major revisions and reject.",
+      "claim_type": "EXPLICIT",
+      "source": "There was some variation with reviewer recommendation in the scores returned for clout, with accept having the highest scores for clout, followed by minor revisions, major revisions and reject (Figure 2B; Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "7721b97c-4d3f-4c6c-9638-569b1006b4b9",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C47",
+      "claim": "When reviewers recommended major revisions, the text of the report was more analytical.",
+      "claim_type": "EXPLICIT",
+      "source": "When reviewers recommended major revisions, the text of the report was more analytical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "83b25a79-f9ce-47ca-832a-e974c1ca5fd9",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C48",
+      "claim": "The analytical tone was higher when reviewers were women.",
+      "claim_type": "EXPLICIT",
+      "source": "The analytical tone was higher when reviewers were women and for single-blind peer review, but we did not find any effect of the area of research (see Table 4 in Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the text and supported by supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "c953773e-01c6-4f97-966e-ca93e0e244a0",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C49",
+      "claim": "The analytical tone was higher for single-blind peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "The analytical tone was higher when reviewers were women and for single-blind peer review, but we did not find any effect of the area of research (see Table 4 in Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the text and supported by supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "843b5096-a9e1-4226-b28a-6328d2d9f16d",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C50",
+      "claim": "Area of research did not have any effect on analytical tone.",
+      "claim_type": "EXPLICIT",
+      "source": "The analytical tone was higher when reviewers were women and for single-blind peer review, but we did not find any effect of the area of research (see Table 4 in Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the text and supported by supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "0efaac6c-230c-4301-aca1-ba47c0aa23ea",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C51",
+      "claim": "Clout levels varied with area of research, with the highest levels in social sciences and economics journals.",
+      "claim_type": "EXPLICIT",
+      "source": "Clout levels varied with area of research, with the highest levels in social sciences and economics journals (see Table 7 in Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the text and supported by supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "736d832e-c3c1-435b-8807-a5caced7e0d9",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C52",
+      "claim": "When reviewers recommended rejection, the text showed low levels of clout.",
+      "claim_type": "EXPLICIT",
+      "source": "When reviewers recommended rejection, the text showed low levels of clout, as it did when reviewers were men and when the journal useded single-blind peer review (see Table 7 in Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the text and supported by supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "8b3d7fd3-e3ea-4be8-9ed9-f195f22f578e",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C53",
+      "claim": "Reports by male reviewers showed low levels of clout.",
+      "claim_type": "EXPLICIT",
+      "source": "When reviewers recommended rejection, the text showed low levels of clout, as it did when reviewers were men and when the journal useded single-blind peer review (see Table 7 in Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the text and supported by supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "5d0e4a3f-ad72-4e23-bb97-cdc8dc219f0b",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C54",
+      "claim": "Reports from journals using single-blind peer review showed low levels of clout.",
+      "claim_type": "EXPLICIT",
+      "source": "When reviewers recommended rejection, the text showed low levels of clout, as it did when reviewers were men and when the journal useded single-blind peer review (see Table 7 in Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the text and supported by supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "2ffbc13a-3c4a-4615-bd3d-d5c91f6061b6",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C55",
+      "claim": "The text of reports in social sciences and economics journals had the highest levels of authenticity.",
+      "claim_type": "EXPLICIT",
+      "source": "The text of reports in social sciences and economics journals had the highest levels of authenticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "b09b1231-cfd0-44b4-bd10-99e8f1662621",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C56",
+      "claim": "Authenticity was prevalent when reviewers recommended rejection.",
+      "claim_type": "EXPLICIT",
+      "source": "Authenticity was prevalent also when reviewers recommended rejection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "db4e169b-77d5-49d8-bf14-d20432df1540",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C57",
+      "claim": "There was no significant variation in authenticity per reviewer gender or type of peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant variation in terms of authenticity per reviewer gender or type of peer review (see Table 10 in Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the text and supported by supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "a07ca9eb-a714-456e-9434-533456b3fda4",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C58",
+      "claim": "The three approaches used to perform sentiment analysis (LIWC, SentimentR and Stanford CoreNLP) produced similar results.",
+      "claim_type": "EXPLICIT",
+      "source": "The three approaches were used to perform sentiment analysis on our sample \u2013 LIWC, SentimentR and the Stanford CoreNLP \u2013 produced similar results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing the three methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "a1c2018f-fa87-4b70-8f61-ed47e2b33936",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C59",
+      "claim": "Reports recommending accept had the highest sentiment scores, followed by reports recommending minor revisions, major revisions and reject.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports recommending accept had the highest scores, indicating higher sentiment, followed by reports recommending minor revisions, major revisions and reject (Figure 3; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "c7aebe00-2bc8-4d5b-a0a4-f0a9d7247943",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C60",
+      "claim": "Reports for social sciences and economics journals had the highest levels of sentiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, reports for social sciences and economics journals had the highest levels of sentiment, as did reviews written by women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "e672f92c-a813-4676-ae5d-55f3d845bb52",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C61",
+      "claim": "Reviews written by women had the highest levels of sentiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, reports for social sciences and economics journals had the highest levels of sentiment, as did reviews written by women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "0fa20e67-d0c1-4a91-a8c2-936ae818318d",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C62",
+      "claim": "There was no association between sentiment and the type of peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find any association between sentiment and the type of peer review (see Table 13 in Supplementary file 5, Table 16 in Supplementary file 6 and Table 19 in Supplementary file 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the text and supported by supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "00b491d6-dee9-4ee5-95e2-e51751c09107",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C63",
+      "claim": "Reports recommending acceptance had the highest scores for general morality, followed by reports recommending minor revisions, major revisions and reject.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports recommending acceptance had the highest scores for general morality, followed by reports recommending minor revisions, major revisions and reject (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "8503a3db-e56f-466a-8ed4-828f87b9824b",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C64",
+      "claim": "The lowest proportion of words related to morality was found in social sciences and economics.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the research area, we found a lowest proportion of words related to morality in the social sciences and economics, when reviewers were men, and when single-blind peer review was used (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "032825c4-b612-46c3-9233-c454c2859f82",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C65",
+      "claim": "The lowest proportion of words related to morality was found when reviewers were men.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the research area, we found a lowest proportion of words related to morality in the social sciences and economics, when reviewers were men, and when single-blind peer review was used (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "a4873bc5-1adc-4001-9363-6c0bd681d196",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C66",
+      "claim": "The lowest proportion of words related to morality was found when single-blind peer review was used.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the research area, we found a lowest proportion of words related to morality in the social sciences and economics, when reviewers were men, and when single-blind peer review was used (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "f45a18a8-1e3a-42b7-a66c-401ba4a85170",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C67",
+      "claim": "No clear patterns emerged for the five foundations of morality (care/harm, fairness/cheating, loyalty/betrayal, authority/subversion, and sanctity/degradation).",
+      "claim_type": "EXPLICIT",
+      "source": "We also explored five foundations of morality \u2013 care/harm, fairness/cheating, loyalty/betrayal, authority/subversion, and sanctity/degradation \u2013 but no clear patterns emerged (Figure 4\u2014figure supplements 1\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "35d004b6-0282-472a-b7c0-9e2c2c3feefa",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C68",
+      "claim": "The prevalence of words related to the five moral foundations was minimal, with average scores lower than 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the prevalence of these words was minimal, with average scores lower than 1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "4af1f27d-78b8-458b-96f9-c29b13c3e64e",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C69",
+      "claim": "Words from the moral foundations dictionary tended to be part of common phrases and thus did not speak to the moral content of the reviews.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these words tended to be part of common phrases and thus did not speak to the moral content of the reviews.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "6ec76bd2-214e-48a2-b705-7936c1b577f1",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C70",
+      "claim": "A combination of qualitative and quantitative methods, including machine learning tools, will be required to explore the moral aspects of peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that a combination of qualitative and quantitative methods, including machine learning tools, will be required to explore the moral aspects of peer review.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "2b3c2c46-5fd2-4636-a71b-f160cef3beca",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C71",
+      "claim": "The reviewer recommendation has the biggest influence on the linguistic characteristics (and length) of peer review reports, which is consistent with previous, case-based research.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggests that the reviewer recommendation has the biggest influence on the linguistic characteristics (and length) of peer review reports, which is consistent with previous, case-based research (Casnici et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study, supported by data and citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "60e40310-d5c4-446c-b131-2d3a80114d15",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C72",
+      "claim": "Whenever reviewers recommend revision, they write a longer report in order to justify their requests and/or to suggest changes to improve the manuscript.",
+      "claim_type": "EXPLICIT",
+      "source": "It is probable that whenever reviewers recommend revision, they write a longer report in order to justify their requests and/or to suggest changes to improve the manuscript (which they do not have to do when they recommend to accept or reject).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "e3f4e7a5-ce60-49e6-8139-9149ee654348",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C73",
+      "claim": "In the case of the two more negative recommendations (reject and major revisions), the reports were shorter, and language was less emotional and more analytical.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, in the case of the two more negative recommendations (reject and major revisions), the reports were shorter, and language was less emotional and more analytical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "5c1627af-e8e0-469d-b7a4-34f24110e4e9",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C74",
+      "claim": "The type of peer review (single-blind or double-blind) had no significant influence on the reports, contrary to previous reports on smaller samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the type of peer review \u2013 single-blind or double-blind \u2013 had no significant influence on the reports, contrary to previous reports on smaller samples (Bravo et al., 2019; van Rooyen et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study that contradicts previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "f054a783-6ea1-400e-8ab9-75d88ecf1a21",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C75",
+      "claim": "Area of research had no significant influence on the reports in the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, area of research had no significant influence on the reports in the sample, and neither did reviewer gender, which is consistent with a previous smaller study (Bravo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study, supported by citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "b86f5af9-d51f-4f18-811e-fb3e49536081",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C76",
+      "claim": "Reviewer gender had no significant influence on the reports in the sample, which is consistent with a previous smaller study.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, area of research had no significant influence on the reports in the sample, and neither did reviewer gender, which is consistent with a previous smaller study (Bravo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study, supported by citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "c310fd53-284e-456c-afe0-4984a4dfd9ab",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C77",
+      "claim": "Most of the journals in the study were in the health and medical sciences and the physical sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the journals were in the health and medical sciences and the physical sciences, and most used single-blind peer review.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "905fd0aa-6968-4faf-8296-7918ae9d248b",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C78",
+      "claim": "Most journals in the study used single-blind peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the journals were in the health and medical sciences and the physical sciences, and most used single-blind peer review.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "4554a7f2-6736-43d4-a22a-653ae4d98343",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C79",
+      "claim": "The size, depth and uniqueness of the dataset helped provide a more comprehensive analysis of peer review reports than previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the size, depth and uniqueness of our dataset helped us provide a more comprehensive analysis of peer review reports than previous studies, which were often limited to small samples and incomplete data (van den Besselaar et al., 2018; Sizo et al., 2019; Falk Delgado et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the study's contribution, supported by citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "a548037e-43ad-47e3-a365-17659f9c40ed",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C80",
+      "claim": "Previous studies on peer review were often limited to small samples and incomplete data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the size, depth and uniqueness of our dataset helped us provide a more comprehensive analysis of peer review reports than previous studies, which were often limited to small samples and incomplete data (van den Besselaar et al., 2018; Sizo et al., 2019; Falk Delgado et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "0a5500ed-572c-43cb-9ec8-80ac696b1fbb",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C81",
+      "claim": "Future research would benefit from baseline data against which results could be compared.",
+      "claim_type": "EXPLICIT",
+      "source": "Future research would also benefit from baseline data against which results could be compared, although our results match the preliminary results from a study at a single biomedical journal (Glonti et al., 2017), and from knowing more about the referees (such as their status or expertise).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "d404fc55-64b1-40de-b0aa-517bf6d316b0",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C82",
+      "claim": "The results of this study match the preliminary results from a study at a single biomedical journal.",
+      "claim_type": "EXPLICIT",
+      "source": "Future research would also benefit from baseline data against which results could be compared, although our results match the preliminary results from a study at a single biomedical journal (Glonti et al., 2017), and from knowing more about the referees (such as their status or expertise).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "453f2955-9566-4f74-8741-bc65d0106261",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C83",
+      "claim": "The study did not examine the actual content of the manuscripts under review.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we did not examine the actual content of the manuscripts under review, so we could not determine how reliable reviewers were in their assessments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "07e3f8f5-5647-49a2-a9e7-8494c6be149d",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C84",
+      "claim": "The study could not determine how reliable reviewers were in their assessments.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we did not examine the actual content of the manuscripts under review, so we could not determine how reliable reviewers were in their assessments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "c506db03-9d5d-4de4-bed9-e82d04e3e47c",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C85",
+      "claim": "Combining language analyses of peer review reports with estimates of peer review reliability for the same manuscripts could provide new insights into the peer review process.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining language analyses of peer review reports with estimates of peer review reliability for the same manuscripts (via inter-reviewer ratings) could provide new insights into the peer review process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "51309d2a-6bf9-4887-9415-fc0c1ea211cf",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C86",
+      "claim": "The PEERE dataset contains 583,365 peer review reports from 61 journals published by Elsevier.",
+      "claim_type": "EXPLICIT",
+      "source": "PEERE is a collaboration between publishers and researchers (Squazzoni et al., 2020), and the PEERE dataset contains 583,365 peer review reports from 61 journal published by Elsevier, with data on reviewer recommendation, area of research (health and medical sciences; life sciences; physical sciences; social sciences and economics), type of peer review (single blind or double blind), and reviewer gender for each report.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "faae3401-2032-4939-b6d1-c6594404269e",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C87",
+      "claim": "Most of the reports (N = 481,961) are for original research papers.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the reports (N = 481,961) are for original research papers, with the rest (N = 101,404) being for opinion pieces, editorials and letters to the editor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic about the dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "a0e5c164-2d35-45c3-b8f5-d2e4f38e0a04",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C88",
+      "claim": "101,404 reports were for opinion pieces, editorials and letters to the editor.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the reports (N = 481,961) are for original research papers, with the rest (N = 101,404) being for opinion pieces, editorials and letters to the editor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic about the dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "17d2401a-299c-49f0-831d-d3c6d2a9d59a",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C89",
+      "claim": "The database was first filtered to exclude reviews that included reference to manuscript revisions, resulting in 583,365 reports.",
+      "claim_type": "EXPLICIT",
+      "source": "The database was first filtered to exclude reviews that included reference to manuscript revisions, resulting in 583,365 reports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data filtering process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "e0365c7b-0d3c-4a9b-b971-642d1e98848d",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C90",
+      "claim": "110,636 reports were eliminated due to the impossibility to determine reviewer gender.",
+      "claim_type": "EXPLICIT",
+      "source": "We eliminated 110,636 due to the impossibility to determine reviewer gender, and 260 because we did not have data on the recommendation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data filtering process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "62f48d60-8dd0-43ef-9de9-94334219fd95",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C91",
+      "claim": "260 reports were eliminated because data on the recommendation was not available.",
+      "claim_type": "EXPLICIT",
+      "source": "We eliminated 110,636 due to the impossibility to determine reviewer gender, and 260 because we did not have data on the recommendation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data filtering process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "051d73bb-1399-4ad8-8566-a6a0d69a8efa",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C92",
+      "claim": "The analysis was performed on a total of 472,449 peer review reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis was performed on a total number of 472,449 peer review reports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final sample size for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "81e692bc-09d3-42ff-9b9a-e45b5874ac99",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C93",
+      "claim": "The gender determination method allowed determination of the gender of 81.1% of reviewers.",
+      "claim_type": "EXPLICIT",
+      "source": "This allowed us to determine the gender of 81.1% of reviewers, among which 75.9% were male and 24.1% female.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the effectiveness of the gender determination method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "6f74aa84-e112-4098-bb99-c6057ed5d833",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C94",
+      "claim": "6.3% of genders came from scientist salutation.",
+      "claim_type": "EXPLICIT",
+      "source": "With regards to the three possible gender sources, 6.3% of genders came from scientist salutation, 77.2% from gender-guesser, and 16.5% from the Gender API.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sources of gender determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "69b3993d-47a2-421a-9bef-7ed47ab9e9f2",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C95",
+      "claim": "77.2% of genders came from gender-guesser.",
+      "claim_type": "EXPLICIT",
+      "source": "With regards to the three possible gender sources, 6.3% of genders came from scientist salutation, 77.2% from gender-guesser, and 16.5% from the Gender API.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sources of gender determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "f999d704-6840-4986-9404-e2f29176ca13",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C96",
+      "claim": "16.5% of genders came from the Gender API.",
+      "claim_type": "EXPLICIT",
+      "source": "With regards to the three possible gender sources, 6.3% of genders came from scientist salutation, 77.2% from gender-guesser, and 16.5% from the Gender API.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sources of gender determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "05886214-a5c6-4185-b620-b4621051eae6",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C97",
+      "claim": "18.9% of reviewers were assigned an unknown gender.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 18.9% of reviewers were assigned an unknown gender.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the limitation of the gender determination method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "c7bca81b-91f7-49d1-9d5d-28d8c0e0007d",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C98",
+      "claim": "This level of gender determination is consistent with the non-classification rate for names of scientists in previous research.",
+      "claim_type": "EXPLICIT",
+      "source": "This level of gender determination is consistent with the non-classification rate for names of scientists in previous research (Santamar\u00eda and Mihaljevi\u0107, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "915148aa-0bc4-47d6-86af-686cd10b62a8",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C99",
+      "claim": "A high score for analytical tone indicates a report with a logical and hierarchical style of writing.",
+      "claim_type": "EXPLICIT",
+      "source": "A high score for analytical tone indicates a report with a logical and hierarchical style of writing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition from the LIWC methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "651c1567-a636-40e8-a6a1-586e3f3435c6",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C100",
+      "claim": "A low score for clout is associated with insecurities and a less confident and more tentative tone.",
+      "claim_type": "EXPLICIT",
+      "source": "Clout reveals personal sensitivity towards social status, confidence or leadership: a low score for clout is associated with insecurities and a less confident and more tentative tone (Kacewicz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition from the cited methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "7e587ffd-8f70-40de-b6f7-9e73520823e3",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C101",
+      "claim": "A high score for authenticity indicates a report written in a style that is honest and humble.",
+      "claim_type": "EXPLICIT",
+      "source": "A high score for authenticity indicates a report written in a style that is honest and humble, whereas a low score indicates a style that is deceptive and superficial (Pennebaker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition from the cited methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "0a5034f1-e278-4491-8e27-dfed022c8e70",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C102",
+      "claim": "A low score for authenticity indicates a style that is deceptive and superficial.",
+      "claim_type": "EXPLICIT",
+      "source": "A high score for authenticity indicates a report written in a style that is honest and humble, whereas a low score indicates a style that is deceptive and superficial (Pennebaker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition from the cited methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "6baf7d8f-47a2-47d8-9609-59f6857af417",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C103",
+      "claim": "People who are authentic tend to use more I-words, present-tense verbs, and relativity words and fewer she-he words and discrepancies.",
+      "claim_type": "EXPLICIT",
+      "source": "People who are authentic tend to use more I-words (e.g. I, me, mine), present-tense verbs, and relativity words (e.g. near, new) and fewer she-he words (e.g. his, her) and discrepancies (e.g. should, could) (Pennebaker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition from the cited methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "77c12df0-f9e3-42ac-ad61-5c6420ac664b",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C104",
+      "claim": "LIWC measures emotional tone by counting number of words from a pre-specified dictionary.",
+      "claim_type": "EXPLICIT",
+      "source": "(i) LIWC measures 'emotional tone', which indicates writing dominated by either positive or negative emotions by counting number of words from a pre-specified dictionary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the LIWC methodology for sentiment analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "7990b681-7e06-434d-b691-92ceb65927fa",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C105",
+      "claim": "The SentimentR package classifies the proportion of words related to sentiment in the text using a different vocabulary than LIWC.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) The SentimentR package (Rinker, 2019) classifies the proportion of words related to sentiment in the text, similarly to the 'emotional tone' scores in LIWC but using a different vocabulary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the SentimentR methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "259adafb-6a60-4efc-9b86-5f89a7cb54c3",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C106",
+      "claim": "Stanford CoreNLP is a deep language analysis program that uses machine learning to determine the emotional valence of the text.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) Stanford CoreNLP is a deep language analysis program that uses machine learning to determine the emotional valence of the text (Socher et al., 2013), and score ranges from 0 (negative sentiment) to +4 (positive sentiment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the Stanford CoreNLP methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "6ad3413d-da1a-4247-a75c-340040b2259e",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C107",
+      "claim": "A mixed model linear analysis was conducted on each variable with reviewer recommendation, area of research, type of peer review and reviewer gender as fixed factors.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the interaction effects and compare different peer review characteristics, we conducted a mixed model linear analysis on each variable (analytical tone, authenticity, clout; the measures of sentiment; and the measures of morality) with reviewer recommendation, area of research, type of peer review (single- or double-blind) and reviewer gender as fixed factors (predictors) and the journal, word count and article type as the random factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "54421dd5-ae84-472f-8d55-acb3d25ab291",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C108",
+      "claim": "The journal, word count and article type were used as random factors in the mixed model linear analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the interaction effects and compare different peer review characteristics, we conducted a mixed model linear analysis on each variable (analytical tone, authenticity, clout; the measures of sentiment; and the measures of morality) with reviewer recommendation, area of research, type of peer review (single- or double-blind) and reviewer gender as fixed factors (predictors) and the journal, word count and article type as the random factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "a55453ff-1590-4e8a-ac3f-c75f969d2a38",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "claim_id": "C109",
+      "claim": "The random factors were used to control across-journal interactions, number of words and article type.",
+      "claim_type": "EXPLICIT",
+      "source": "This was to control across-journal interactions, number of words and article type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the purpose of using random factors in the statistical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2cd95caa-5f07-4554-83c1-745d2d5aa344",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 472,449 peer review reports from the PEERE database covering 61 Elsevier journals across four research areas. The dataset included information on reviewer recommendations (5.6% accept, 28.5% minor revisions, 34.2% major revisions, 31.7% reject), type of peer review (87.1% single-blind, 12.9% double-blind), and reviewer gender (75.9% male, 24.1% female).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C22-C31, and C86-C92 provide comprehensive descriptive statistics about the dataset composition and filtering process. The sample size, distribution of recommendations, peer review types, and gender proportions are clearly documented with specific numbers that are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "9c935902-fb0b-4399-a587-6b867b361a51",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Gender determination was achieved for 81.1% of reviewers using a multi-stage approach combining salutation (6.3%), gender-guesser (77.2%), and Gender API (16.5%). The remaining 18.9% were assigned unknown gender, consistent with non-classification rates in previous research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C98 describe the gender determination methodology with specific percentages that sum correctly. The validation against previous research (C98) provides external support for the approach, though the method's accuracy depends on the cited benchmarks which are not independently verified here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "35a2bd95-e54c-46f4-b10d-de2e8a2e0e6a",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Report length varied systematically by reviewer recommendation, with accept reports being shortest, followed by minor revisions, reject, and major revisions (longest). Social sciences reports were significantly longer than medical reports, men wrote longer reports than women, but peer review type (single- vs. double-blind) had no influence on length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 are supported by Figure 1 and supplementary data showing consistent patterns across all combinations of variables. The mixed model analysis appropriately controls for confounders (journal, word count, article type as random factors per C107-C109), strengthening the conclusions about which factors influence report length.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "4b93db83-d1f3-4194-a1ff-13daafb52f47",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Peer review reports showed high analytical tone (85.0-91.0) and low authenticity (18.0-25.0), characteristic of medical research writing. Analytical tone was higher for major revision recommendations, female reviewers, and single-blind review, but did not vary by research area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C50 are supported by Figure 2 and supplementary data. The definitions (C44) are properly cited, and the findings align with expectations for scientific writing (C45). However, the claim that area of research had no effect (C50) appears to contradict the overall conclusion (C3) and requires careful interpretation of effect sizes versus statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "51d94044-0505-45d9-a883-dfbb7bce2399",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Clout scores varied by reviewer recommendation (accept highest, reject lowest) and research area (highest in social sciences and economics). Reports recommending rejection, by male reviewers, and using single-blind review showed lower clout levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C51-C54 are supported by Figure 2B and supplementary data. The pattern is consistent across variables, though the finding that research area affects clout (C51) appears to contradict the main conclusion that area has little impact (C3), suggesting clout may be an exception or effect sizes are small.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "842945f7-0fdd-4b84-b865-7d90135f9230",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Authenticity was highest in social sciences and economics reports and when reviewers recommended rejection. No significant variation was found by reviewer gender or type of peer review.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by supplementary data (Table 10). The finding that research area affects authenticity (C55) again appears inconsistent with the main conclusion (C3) that area has little impact, suggesting either small effect sizes or that authenticity is an exception to the general pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "e6d77413-d422-4e73-9c9f-7cccc1ac13f7",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Three sentiment analysis methods (LIWC, SentimentR, Stanford CoreNLP) produced similar results showing accept recommendations had highest sentiment, followed by minor revisions, major revisions, and reject. Social sciences reports and those by female reviewers had higher sentiment, with no association with peer review type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 are supported by Figure 3 and supplementary data. The convergence of three independent methods (C58) strengthens confidence in the sentiment findings. However, the finding that research area (C60) and gender (C61) affect sentiment appears to contradict the main conclusions (C3, C5) about minimal impact of these variables.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "2aebc2df-904b-4b0a-98a9-b3c2350640d8",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "General morality scores were highest for accept recommendations, followed by minor revisions, major revisions, and reject. The lowest proportion of morality-related words was found in social sciences and economics, for male reviewers, and in single-blind review.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 are supported by Figure 4 showing consistent patterns. However, the findings that research area (C64), gender (C65), and review type (C66) all influence morality scores directly contradict the main conclusions (C3, C4, C5) that these variables have little or no impact on linguistic characteristics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "c2a5e4ed-92f9-4862-9398-3ed39a383467",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Analysis of five moral foundations (care/harm, fairness/cheating, loyalty/betrayal, authority/subversion, sanctity/degradation) revealed no clear patterns, with minimal prevalence (<1%) and words appearing in common phrases rather than reflecting moral content. This suggests qualitative and machine learning methods are needed to explore moral aspects of peer review.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 are supported by supplementary figures and acknowledge the limitations of dictionary-based approaches for detecting moral content. The recommendation for future methods (C70) is appropriate given the negative findings, though this represents a limitation rather than a positive result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "beed2730-355b-407f-8061-df5803f70d49",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Reviewer recommendation had the biggest influence on linguistic characteristics and report length. Reviewers likely write longer reports when recommending revisions to justify requests and suggest improvements. For negative recommendations (reject and major revisions), reports were shorter with less emotional and more analytical language.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C71-C73 represent the primary conclusion supported by consistent patterns across all linguistic measures. The interpretation (C72) is reasonable speculation based on the data. This finding is consistent with previous research (C71 cites Casnici et al., 2017), strengthening confidence in the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "ce4db0fd-1cb7-4564-9244-bb813957d390",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Area of research, type of peer review (single- vs. double-blind), and reviewer gender had little or no significant influence on peer review reports. This lack of influence is interpreted as a sign of the robustness of peer review, contradicting some previous smaller studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C3-C6 and C74-C76 represent the main conclusion but are contradicted by multiple specific findings showing that research area affects report length (C39), clout (C51), authenticity (C55), sentiment (C60), and morality (C64); gender affects report length (C40), analytical tone (C48), sentiment (C61), and morality (C65); and review type affects analytical tone (C49) and morality (C66). The conclusion appears to conflate statistical significance with practical significance or may reflect small effect sizes that are nonetheless statistically significant. The interpretation as 'robustness' (C6) is not well justified given the contradictory evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "c94ae7b0-5c36-464f-b367-a5b2bc234e53",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The dataset was dominated by health/medical sciences and physical sciences journals using single-blind review. Despite this limitation, the size, depth, and uniqueness of the dataset provided more comprehensive analysis than previous studies limited by small samples and incomplete data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 acknowledge dataset limitations while arguing for its value. The comparison to previous studies (C80) is supported by citations. However, the imbalance in research areas and review types (C77-C78) may limit generalizability of conclusions about these variables having 'no impact.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "54bf84c5-2d0a-4602-a665-b7e537b572b3",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Study limitations include lack of baseline data for comparison (though results match one biomedical journal study), no examination of manuscript content, and inability to assess reviewer reliability. Future research combining language analysis with inter-reviewer reliability estimates could provide new insights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 appropriately acknowledge limitations and suggest future directions. The validation against one previous study (C82) provides some external support but is limited. The recommendations for future work (C81, C85) are reasonable given the acknowledged limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study employed LIWC for analytical tone, clout, authenticity, and emotional tone (0-100% scales), SentimentR (-1 to +1 scale), and Stanford CoreNLP (0-4 scale) for sentiment analysis. Definitions and scoring systems are based on established methodologies with proper citations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 and C99-C106 describe the methodological tools with appropriate citations. The definitions are clearly stated and properly attributed. The use of three independent sentiment analysis methods (C58) provides methodological triangulation, though the manuscript does not report inter-method correlations to quantify agreement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    },
+    {
+      "id": "b519dc59-8c7e-45c4-b523-682c45a07bc2",
+      "content_id": "a2031df9-3cbc-4923-8872-4ec89e72880e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Mixed model linear analysis was conducted with reviewer recommendation, research area, peer review type, and reviewer gender as fixed factors, and journal, word count, and article type as random factors to control for confounding variables.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C109 describe appropriate statistical methodology for the hierarchical data structure. Using random effects for journal, word count, and article type (C108-C109) properly accounts for clustering and confounding. However, the manuscript does not report model diagnostics, effect sizes, or correction for multiple testing across numerous linguistic variables.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:06.329383Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "500ad4ed-f1f6-4a07-b72b-e8de703528ef",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "ad829528-bfae-4076-b766-3a05ff1e1cbf",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "e592758a-c2f8-4b58-9260-06ca2dc103d7",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "4ecde09c-b76b-436b-90a9-b7bdc55b4484",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "6b6e3679-fd75-4e6d-9467-9d3de90ed48d",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "16dcc026-01af-4033-bf7a-3ae1ec7e8880",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "f7c1f438-cb6e-424b-bc1d-0c88f029ef5b",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "9a3602db-fa65-486f-ab5e-04554cafce3b",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "148263c5-08d5-47e7-88eb-1e9ee39096c0",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "09afa29a-a916-4d14-ac19-f2ba78ebe453",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "06a285db-f389-4b47-a06e-ad435cecbcee",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "51309d2a-6bf9-4887-9415-fc0c1ea211cf",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "faae3401-2032-4939-b6d1-c6594404269e",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "a0e5c164-2d35-45c3-b8f5-d2e4f38e0a04",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "17d2401a-299c-49f0-831d-d3c6d2a9d59a",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "e0365c7b-0d3c-4a9b-b971-642d1e98848d",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "62f48d60-8dd0-43ef-9de9-94334219fd95",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "051d73bb-1399-4ad8-8566-a6a0d69a8efa",
+      "result_id": "2cd95caa-5f07-4554-83c1-745d2d5aa344"
+    },
+    {
+      "claim_id": "81e692bc-09d3-42ff-9b9a-e45b5874ac99",
+      "result_id": "9c935902-fb0b-4399-a587-6b867b361a51"
+    },
+    {
+      "claim_id": "6f74aa84-e112-4098-bb99-c6057ed5d833",
+      "result_id": "9c935902-fb0b-4399-a587-6b867b361a51"
+    },
+    {
+      "claim_id": "69b3993d-47a2-421a-9bef-7ed47ab9e9f2",
+      "result_id": "9c935902-fb0b-4399-a587-6b867b361a51"
+    },
+    {
+      "claim_id": "f999d704-6840-4986-9404-e2f29176ca13",
+      "result_id": "9c935902-fb0b-4399-a587-6b867b361a51"
+    },
+    {
+      "claim_id": "05886214-a5c6-4185-b620-b4621051eae6",
+      "result_id": "9c935902-fb0b-4399-a587-6b867b361a51"
+    },
+    {
+      "claim_id": "c7bca81b-91f7-49d1-9d5d-28d8c0e0007d",
+      "result_id": "9c935902-fb0b-4399-a587-6b867b361a51"
+    },
+    {
+      "claim_id": "2424c911-5548-4d1b-b45a-5d0c0aa4abb4",
+      "result_id": "35a2bd95-e54c-46f4-b10d-de2e8a2e0e6a"
+    },
+    {
+      "claim_id": "9dc48d63-cad8-41cc-8711-8d37cfce3365",
+      "result_id": "35a2bd95-e54c-46f4-b10d-de2e8a2e0e6a"
+    },
+    {
+      "claim_id": "25e5080a-0110-40cf-a5db-c91d3cd04b04",
+      "result_id": "35a2bd95-e54c-46f4-b10d-de2e8a2e0e6a"
+    },
+    {
+      "claim_id": "0a2a3c0b-bc13-4c9d-bf9e-7f0e9aa45021",
+      "result_id": "35a2bd95-e54c-46f4-b10d-de2e8a2e0e6a"
+    },
+    {
+      "claim_id": "70581f67-d42e-4443-8fae-7995e223b039",
+      "result_id": "35a2bd95-e54c-46f4-b10d-de2e8a2e0e6a"
+    },
+    {
+      "claim_id": "c034fc1e-0a5f-4c65-ad22-25020a0224ee",
+      "result_id": "4b93db83-d1f3-4194-a1ff-13daafb52f47"
+    },
+    {
+      "claim_id": "6cd182a0-9725-4f0d-9199-683e337189aa",
+      "result_id": "4b93db83-d1f3-4194-a1ff-13daafb52f47"
+    },
+    {
+      "claim_id": "0a700016-548c-4ed4-83b8-0051582ae608",
+      "result_id": "4b93db83-d1f3-4194-a1ff-13daafb52f47"
+    },
+    {
+      "claim_id": "42ed07b7-40b5-4bf6-be89-725314a3e329",
+      "result_id": "4b93db83-d1f3-4194-a1ff-13daafb52f47"
+    },
+    {
+      "claim_id": "7721b97c-4d3f-4c6c-9638-569b1006b4b9",
+      "result_id": "4b93db83-d1f3-4194-a1ff-13daafb52f47"
+    },
+    {
+      "claim_id": "83b25a79-f9ce-47ca-832a-e974c1ca5fd9",
+      "result_id": "4b93db83-d1f3-4194-a1ff-13daafb52f47"
+    },
+    {
+      "claim_id": "c953773e-01c6-4f97-966e-ca93e0e244a0",
+      "result_id": "4b93db83-d1f3-4194-a1ff-13daafb52f47"
+    },
+    {
+      "claim_id": "843b5096-a9e1-4226-b28a-6328d2d9f16d",
+      "result_id": "4b93db83-d1f3-4194-a1ff-13daafb52f47"
+    },
+    {
+      "claim_id": "1993c480-9e0c-4481-8f7a-c7c74c271b3c",
+      "result_id": "51d94044-0505-45d9-a883-dfbb7bce2399"
+    },
+    {
+      "claim_id": "0efaac6c-230c-4301-aca1-ba47c0aa23ea",
+      "result_id": "51d94044-0505-45d9-a883-dfbb7bce2399"
+    },
+    {
+      "claim_id": "736d832e-c3c1-435b-8807-a5caced7e0d9",
+      "result_id": "51d94044-0505-45d9-a883-dfbb7bce2399"
+    },
+    {
+      "claim_id": "8b3d7fd3-e3ea-4be8-9ed9-f195f22f578e",
+      "result_id": "51d94044-0505-45d9-a883-dfbb7bce2399"
+    },
+    {
+      "claim_id": "5d0e4a3f-ad72-4e23-bb97-cdc8dc219f0b",
+      "result_id": "51d94044-0505-45d9-a883-dfbb7bce2399"
+    },
+    {
+      "claim_id": "2ffbc13a-3c4a-4615-bd3d-d5c91f6061b6",
+      "result_id": "842945f7-0fdd-4b84-b865-7d90135f9230"
+    },
+    {
+      "claim_id": "b09b1231-cfd0-44b4-bd10-99e8f1662621",
+      "result_id": "842945f7-0fdd-4b84-b865-7d90135f9230"
+    },
+    {
+      "claim_id": "db4e169b-77d5-49d8-bf14-d20432df1540",
+      "result_id": "842945f7-0fdd-4b84-b865-7d90135f9230"
+    },
+    {
+      "claim_id": "a07ca9eb-a714-456e-9434-533456b3fda4",
+      "result_id": "e6d77413-d422-4e73-9c9f-7cccc1ac13f7"
+    },
+    {
+      "claim_id": "a1c2018f-fa87-4b70-8f61-ed47e2b33936",
+      "result_id": "e6d77413-d422-4e73-9c9f-7cccc1ac13f7"
+    },
+    {
+      "claim_id": "c7aebe00-2bc8-4d5b-a0a4-f0a9d7247943",
+      "result_id": "e6d77413-d422-4e73-9c9f-7cccc1ac13f7"
+    },
+    {
+      "claim_id": "e672f92c-a813-4676-ae5d-55f3d845bb52",
+      "result_id": "e6d77413-d422-4e73-9c9f-7cccc1ac13f7"
+    },
+    {
+      "claim_id": "0fa20e67-d0c1-4a91-a8c2-936ae818318d",
+      "result_id": "e6d77413-d422-4e73-9c9f-7cccc1ac13f7"
+    },
+    {
+      "claim_id": "00b491d6-dee9-4ee5-95e2-e51751c09107",
+      "result_id": "2aebc2df-904b-4b0a-98a9-b3c2350640d8"
+    },
+    {
+      "claim_id": "8503a3db-e56f-466a-8ed4-828f87b9824b",
+      "result_id": "2aebc2df-904b-4b0a-98a9-b3c2350640d8"
+    },
+    {
+      "claim_id": "032825c4-b612-46c3-9233-c454c2859f82",
+      "result_id": "2aebc2df-904b-4b0a-98a9-b3c2350640d8"
+    },
+    {
+      "claim_id": "a4873bc5-1adc-4001-9363-6c0bd681d196",
+      "result_id": "2aebc2df-904b-4b0a-98a9-b3c2350640d8"
+    },
+    {
+      "claim_id": "f45a18a8-1e3a-42b7-a66c-401ba4a85170",
+      "result_id": "c2a5e4ed-92f9-4862-9398-3ed39a383467"
+    },
+    {
+      "claim_id": "35d004b6-0282-472a-b7c0-9e2c2c3feefa",
+      "result_id": "c2a5e4ed-92f9-4862-9398-3ed39a383467"
+    },
+    {
+      "claim_id": "4af1f27d-78b8-458b-96f9-c29b13c3e64e",
+      "result_id": "c2a5e4ed-92f9-4862-9398-3ed39a383467"
+    },
+    {
+      "claim_id": "6ec76bd2-214e-48a2-b705-7936c1b577f1",
+      "result_id": "c2a5e4ed-92f9-4862-9398-3ed39a383467"
+    },
+    {
+      "claim_id": "dc7b06f2-33ae-46af-88ef-f60d5612e55b",
+      "result_id": "beed2730-355b-407f-8061-df5803f70d49"
+    },
+    {
+      "claim_id": "2b3c2c46-5fd2-4636-a71b-f160cef3beca",
+      "result_id": "beed2730-355b-407f-8061-df5803f70d49"
+    },
+    {
+      "claim_id": "60e40310-d5c4-446c-b131-2d3a80114d15",
+      "result_id": "beed2730-355b-407f-8061-df5803f70d49"
+    },
+    {
+      "claim_id": "e3f4e7a5-ce60-49e6-8139-9149ee654348",
+      "result_id": "beed2730-355b-407f-8061-df5803f70d49"
+    },
+    {
+      "claim_id": "c8ec9a57-691e-4a84-b5ce-6c4a9e625281",
+      "result_id": "ce4db0fd-1cb7-4564-9244-bb813957d390"
+    },
+    {
+      "claim_id": "15841110-1fa4-41b3-b69d-25e74c9fa05d",
+      "result_id": "ce4db0fd-1cb7-4564-9244-bb813957d390"
+    },
+    {
+      "claim_id": "0e202433-bd6b-4293-b3b3-862e22709a2f",
+      "result_id": "ce4db0fd-1cb7-4564-9244-bb813957d390"
+    },
+    {
+      "claim_id": "3ed582f2-5dc3-452c-8c0f-8eafb593e5df",
+      "result_id": "ce4db0fd-1cb7-4564-9244-bb813957d390"
+    },
+    {
+      "claim_id": "5c1627af-e8e0-469d-b7a4-34f24110e4e9",
+      "result_id": "ce4db0fd-1cb7-4564-9244-bb813957d390"
+    },
+    {
+      "claim_id": "f054a783-6ea1-400e-8ab9-75d88ecf1a21",
+      "result_id": "ce4db0fd-1cb7-4564-9244-bb813957d390"
+    },
+    {
+      "claim_id": "b86f5af9-d51f-4f18-811e-fb3e49536081",
+      "result_id": "ce4db0fd-1cb7-4564-9244-bb813957d390"
+    },
+    {
+      "claim_id": "c310fd53-284e-456c-afe0-4984a4dfd9ab",
+      "result_id": "c94ae7b0-5c36-464f-b367-a5b2bc234e53"
+    },
+    {
+      "claim_id": "905fd0aa-6968-4faf-8296-7918ae9d248b",
+      "result_id": "c94ae7b0-5c36-464f-b367-a5b2bc234e53"
+    },
+    {
+      "claim_id": "4554a7f2-6736-43d4-a22a-653ae4d98343",
+      "result_id": "c94ae7b0-5c36-464f-b367-a5b2bc234e53"
+    },
+    {
+      "claim_id": "a548037e-43ad-47e3-a365-17659f9c40ed",
+      "result_id": "c94ae7b0-5c36-464f-b367-a5b2bc234e53"
+    },
+    {
+      "claim_id": "0a5500ed-572c-43cb-9ec8-80ac696b1fbb",
+      "result_id": "54bf84c5-2d0a-4602-a665-b7e537b572b3"
+    },
+    {
+      "claim_id": "d404fc55-64b1-40de-b0aa-517bf6d316b0",
+      "result_id": "54bf84c5-2d0a-4602-a665-b7e537b572b3"
+    },
+    {
+      "claim_id": "453f2955-9566-4f74-8741-bc65d0106261",
+      "result_id": "54bf84c5-2d0a-4602-a665-b7e537b572b3"
+    },
+    {
+      "claim_id": "07e3f8f5-5647-49a2-a9e7-8494c6be149d",
+      "result_id": "54bf84c5-2d0a-4602-a665-b7e537b572b3"
+    },
+    {
+      "claim_id": "c506db03-9d5d-4de4-bed9-e82d04e3e47c",
+      "result_id": "54bf84c5-2d0a-4602-a665-b7e537b572b3"
+    },
+    {
+      "claim_id": "e5fe94ff-0b77-44ab-af52-9b6154392131",
+      "result_id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e"
+    },
+    {
+      "claim_id": "d2e78e9f-dc7d-48f8-bd28-2b80eae03567",
+      "result_id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e"
+    },
+    {
+      "claim_id": "444d0f1c-1583-478c-97aa-d3d6ee441331",
+      "result_id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e"
+    },
+    {
+      "claim_id": "5533250f-12b5-48d2-b91d-09f35eda1244",
+      "result_id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e"
+    },
+    {
+      "claim_id": "3c901e14-25a0-4f00-8b51-6253d3631302",
+      "result_id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e"
+    },
+    {
+      "claim_id": "915148aa-0bc4-47d6-86af-686cd10b62a8",
+      "result_id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e"
+    },
+    {
+      "claim_id": "651c1567-a636-40e8-a6a1-586e3f3435c6",
+      "result_id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e"
+    },
+    {
+      "claim_id": "7e587ffd-8f70-40de-b6f7-9e73520823e3",
+      "result_id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e"
+    },
+    {
+      "claim_id": "0a5034f1-e278-4491-8e27-dfed022c8e70",
+      "result_id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e"
+    },
+    {
+      "claim_id": "6baf7d8f-47a2-47d8-9609-59f6857af417",
+      "result_id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e"
+    },
+    {
+      "claim_id": "77c12df0-f9e3-42ac-ad61-5c6420ac664b",
+      "result_id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e"
+    },
+    {
+      "claim_id": "7990b681-7e06-434d-b691-92ceb65927fa",
+      "result_id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e"
+    },
+    {
+      "claim_id": "259adafb-6a60-4efc-9b86-5f89a7cb54c3",
+      "result_id": "25c4bbae-943e-410c-95d4-97fd80f5ab2e"
+    },
+    {
+      "claim_id": "6ad3413d-da1a-4247-a75c-340040b2259e",
+      "result_id": "b519dc59-8c7e-45c4-b523-682c45a07bc2"
+    },
+    {
+      "claim_id": "54421dd5-ae84-472f-8d55-acb3d25ab291",
+      "result_id": "b519dc59-8c7e-45c4-b523-682c45a07bc2"
+    },
+    {
+      "claim_id": "a55453ff-1590-4e8a-ac3f-c75f969d2a38",
+      "result_id": "b519dc59-8c7e-45c4-b523-682c45a07bc2"
+    }
+  ],
+  "comparisons": []
+}

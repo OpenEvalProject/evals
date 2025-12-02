@@ -1,0 +1,1755 @@
+{
+  "submission": {
+    "id": "d6817606-d547-49e4-8fad-6d6f0c699822",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:31:57.818127Z",
+    "updated_at": "2025-12-02T18:31:57.818127Z"
+  },
+  "content": [
+    {
+      "id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "submission_id": "d6817606-d547-49e4-8fad-6d6f0c699822",
+      "content_type": "manuscript",
+      "content_text": "# Structures reveal gatekeeping of the mitochondrial Ca2+ uniporter by MICU1-MICU2\n\n## Authors\n\n- Chongyuan Wang<sup>1</sup>\n- Agata Jacewicz<sup>1</sup>\n- Bryce D Delgado<sup>1</sup>\n- Rozbeh Baradaran<sup>1</sup>\n- Stephen Barstow Long<sup>1</sup> ([ORCID: 0000-0002-8144-1398](https://orcid.org/0000-0002-8144-1398)) \u2020\n\n### Affiliations\n\n1. Structural Biology Program, Memorial Sloan Kettering Cancer Center New York United States\n2. Graduate Program in Biochemistry and Structural Biology, Cell and Developmental Biology, and Molecular Biology, Weill Cornell Medicine Graduate School of Medical Sciences New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mitochondrial calcium uniporter is a Ca2+-gated ion channel complex that controls mitochondrial Ca2+ entry and regulates cell metabolism. MCU and EMRE form the channel while Ca2+-dependent regulation is conferred by MICU1 and MICU2 through an enigmatic process. We present a cryo-EM structure of an MCU-EMRE-MICU1-MICU2 holocomplex comprising MCU and EMRE subunits from the beetle Tribolium castaneum in complex with a human MICU1-MICU2 heterodimer at 3.3 \u00c5 resolution. With analogy to how neuronal channels are blocked by protein toxins, a uniporter interaction domain on MICU1 binds to a channel receptor site comprising MCU and EMRE subunits to inhibit ion flow under resting Ca2+ conditions. A Ca2+-bound structure of MICU1-MICU2 at 3.1 \u00c5 resolution indicates how Ca2+-dependent changes enable dynamic response to cytosolic Ca2+ signals.\n\n## Introduction\n\nThe mitochondrial calcium uniporter is a highly selective multi-subunit Ca2+ channel of the inner mitochondrial membrane that serves as the major conduit for uptake of Ca2+ by mitochondria and controls ATP production in response to cytosolic Ca2+ signals (Gunter and Pfeiffer, 1990; Kamer and Mootha, 2015; Pan et al., 2013; Pathak and Trebak, 2018). The uniporter is one of the most selective Ca2+ channels known and it is only activated once cytosolic Ca2+ levels reach a threshold (of approximately 0.4\u20133 \u03bcM) (Csord\u00e1s et al., 2013; Kirichok et al., 2004; Liu et al., 2016; Mallilankaraman et al., 2012b; Payne et al., 2017). These properties, Ca2+ selectivity and block of ion permeation under resting conditions, are fundamentally important for preventing mitochondrial Ca2+ overload and for maintaining the electromotive force used for ATP production because potassium and other cations outnumber Ca2+ by more than one million to one in the cytosol. The protein MCU constitutes the pore of the uniporter through which Ca2+ ions flow and EMRE, a small transmembrane protein that associates with MCU, is necessary for Ca2+ uptake in metazoan organisms (Baughman et al., 2011; Chaudhuri et al., 2013; De Stefani et al., 2011; Kov\u00e1cs-Bogd\u00e1n et al., 2014; Sancak et al., 2013). Ca2+-dependent control is conferred by proteins that are unique to the uniporter \u2212 heterodimers of MICU1-MICU2 in most cells and of MICU1-MICU3 in neurons (Ashrafi et al., 2019; Kamer et al., 2017; Kamer and Mootha, 2014; Patron et al., 2014; Patron et al., 2019; Payne et al., 2017; Perocchi et al., 2010; Plovanich et al., 2013). The activity of the uniporter is further tuned by interactions with MCUR1 (Chaudhuri et al., 2016; Mallilankaraman et al., 2012a; Vais et al., 2015) and the MCU-like protein MCUb (Raffaello et al., 2013). The molecular mechanism by which the MICU1-MICU2 and MICU1-MICU3 heterodimers regulate the channel is a matter of intense study (Csord\u00e1s et al., 2013; Hoffman et al., 2013; Kamer et al., 2017; Kamer and Mootha, 2014; Kamer et al., 2018; Paillard et al., 2018; Patron et al., 2014; Patron et al., 2019; Payne et al., 2017; Perocchi et al., 2010; Phillips et al., 2019; Plovanich et al., 2013). Multiple models for this regulation have been proposed but issues as fundamental as the stoichiometry between the heterodimers and the channel remain unclear.\n\nStudies have resolved that MICU1-MICU2 heterodimers reside in the intermembrane space (IMS) where they regulate the uniporter by responding to [Ca2+]IMS\u00a0(Kamer and Mootha, 2014; Patron et al., 2014; Plovanich et al., 2013). [Ca2+]IMS, which closely follows the cytosolic Ca2+ concentration due to the permeability of the outer mitochondrial membrane, is sensed by EF-hand motifs in each protein. At the\u00a0~100 nM resting level of [Ca2+]cytosol, MICU1-MICU2 and MICU1-MICU3 heterodimers prevent ion conduction through the channel, and they permit it when Ca2+ levels rise (Csord\u00e1s et al., 2013; Kamer et al., 2017; Kamer and Mootha, 2014; Liu et al., 2016; Mallilankaraman et al., 2012b; Paillard et al., 2017; Patron et al., 2014; Patron et al., 2019; Payne et al., 2017; Phillips et al., 2019). While structures of MICU1-3 and MCU-EMRE components have been determined (Kamer et al., 2019; Park et al., 2020; Wang et al., 2020; Wang et al., 2014; Wang et al., 2019; Wu et al., 2019; Xing et al., 2019), it is unclear how MICU proteins interact with the channel and the mechanism by which they confer Ca2+-dependent control to the channel is enigmatic. Further it is not known why MICU1, in particular, is necessary among MICU1-3 for regulating the channel (Kamer and Mootha, 2014; Patron et al., 2014; Patron et al., 2019; Payne et al., 2017; Xing et al., 2019). Here, we present a 3.3 \u00c5 resolution cryo-EM structure of the MCU-EMRE-MICU1-MICU2 assembly, hereafter referred to as the holocomplex, under resting [Ca2+] conditions. Together with functional data and a structure of a Ca2+-bound MICU1-MICU2 complex, the work reveals a molecular basis for Ca2+-dependent control of the uniporter and the unique role of MICU1 in this process.\n\n## Results\n\n### Structure determination of the MCU-EMRE-MICU1-MICU2 holocomplex\n\nThe ability of human MICU1 to bind MCU channels from lower-eukaryote organisms (Phillips et al., 2019) and our ability to obtain high-resolution structures of the metazoan MCU-EMRE channel complex from the red flour beetle, Tribolium castaneum, (TcMCU-EMRE) (Wang et al., 2020) motivated us to pursue a cryo-EM structure of TcMCU-EMRE in complex with human MICU1-MICU2. The amino acids facing the IMS, where MICU1-MICU2 resides, are identical between human and beetle MCU/EMRE and adopt analogous conformations in structures of the human and beetle channels (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2).\n\nA holocomplex sample that was suitable for structure determination required meticulous formulation. An MCU-EMRE subcomplex was prepared by coexpressing TcMCU and TcEMRE in mammalian cells, purifying the TcMCU-EMRE assembly, and reconstituting it into lipid nanodiscs that include the mitochondrial lipid cardiolipin. Cardiolipin was included because we recently identified that this lipid is important for the function of the uniporter (Wang et al., 2020). We previously observed that a symmetry mismatch between the fourfold symmetric IMS surface of the channel and the asymmetric N-terminal domain (NTDs) in metazoan MCU channels can be a hindrance for high-resolution cryo-EM studies (Baradaran et al., 2018; Wang et al., 2020). Because the NTD is dispensable for mitochondrial Ca2+ uptake (Baradaran et al., 2018; Oxenoid et al., 2016; Wang et al., 2020; Wang et al., 2019), we removed this domain for high-resolution structural studies. We have recently shown that the TcMCU and TcEMRE constructs used for structural analysis (TcMCU\u0394NTD and TcEMRE coexpressed) catalytze Ca2+ uptake into human mitochondria (Wang et al., 2020).\n\nIn cells, a disulfide bond formed between flexible C-terminal regions of MICU1 and MICU2 helps stabilize the heterodimer (Kamer et al., 2019; Patron et al., 2014; Petrungaro et al., 2015). To mimic this condition and discourage the previously\u00a0observed\u00a0tendency of purified MICU1 and MICU2 to form homo-oligomers at the high protein concentrations needed for structural studies (Kamer et al., 2019; Patron et al., 2014; Wang et al., 2014; Wu et al., 2019; Xing et al., 2019), we\u00a0expressed\u00a0MICU1 and MICU2 as a single polypeptide with a linker connecting the two subunits. A further motivation for this approach was the expectation that a MICU1-MICU2 concatemer would facilitate interpretation of the cryo-EM data, as the sample might otherwise contain mixtures of homo- and heterodimers that could be difficult to distinguish computationally. By combining the purified MICU1-MICU2 and MCU-EMRE-nanodisc assemblies we obtained a monodisperse holocomplex sample that was used for cryo-EM analysis (Figure 1\u2014figure supplement 3).\n\nCryo-EM data were collected using a low (<1 nM) concentration of Ca2+ in order to investigate the resting state of the holocomplex. From a large dataset containing approximately 17 million particle images, single particle analysis indicated that most channels were associated with one MICU1-MICU2 heterodimer (Figure 1A, Figure 1\u2014figure supplement 4A). Images containing one MICU1-MICU2 heterodimer per channel yielded a 3D reconstruction of the holocomplex at 3.3 \u00c5 resolution (Figure 1, Figure 1\u2014figure supplement 4,\u00a0Figure 1\u2014figure supplement 5). Two MICU1-MICU2 complexes were observed in approximately 2% of channel assemblies (Figure 1A, Figure 1\u2014figure supplement 4A, as assessed from 2D class averages of side views). This subset of data yielded a\u00a0~\u00a010 \u00c5 resolution 3D reconstruction (Figure 1\u2014figure supplement 4C). In it, one MICU1-MICU2 heterodimer associates with the MCU/EMRE channel in the same manner as in the high-resolution structure. Density for the second MICU1-MICU2 heterodimer is considerably weaker and positioned to the side, next to the channel, where it might interact with the lipid nanodisc. This 3D reconstruction and the\u00a02D class averages, which display blurring of the second heterodimer (Figure 1\u2014figure supplement 4A), indicate that the second one does not have a discrete binding location. Except where noted, the discussion that follows pertains to the high-resolution structure of the holocomplex that contains one MICU1-MICU2 heterodimer. The cryo-EM density of this structure is well defined, especially within the TMD and MICU1 regions, which have the highest local resolution (~3.0 \u00c5, Figure 1\u2014figure supplement 5C). The constructed atomic model has good stereochemistry and excellent agreement with the cryo-EM density (Figure 1\u2014figure supplement 5, and\u00a0Table 1).\n\n**Table 1.**\n Data collection, refinement, and validation statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Holocomplex at low [Ca2+] PDB: 6XQN EMDB: EMD-22290</th>\n      <th>Ca2+-bound MICU1-MICU2 PDB: 6XQO EMDB: EMD-22291</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection and processing</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Microscope</td>\n      <td>FEI Titan Krios (at MSKCC)</td>\n      <td>FEI Titan Krios (at MSKCC)</td>\n    </tr>\n    <tr>\n      <td>Camera</td>\n      <td>Gatan K3</td>\n      <td>Gatan K3</td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td>22,500\u00d7</td>\n      <td>22,500\u00d7</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Electron exposure (e\u2013/\u00c52)</td>\n      <td>71</td>\n      <td>71</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>\u22121.0 ~ \u22123.0</td>\n      <td>\u22120.8 ~ \u22122.3</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.064 (0.532)*</td>\n      <td>1.064 (0.532)*</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>RELION 3.0, cryoSPARC v2</td>\n      <td>RELION 3.0, cryoSPARC v2</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td>C1</td>\n      <td>C1</td>\n    </tr>\n    <tr>\n      <td>Initial particle images (no.)</td>\n      <td>17,440,131</td>\n      <td>4,397,598</td>\n    </tr>\n    <tr>\n      <td>Final particle images (no.)</td>\n      <td>350,160</td>\n      <td>115,687</td>\n    </tr>\n    <tr>\n      <td>Overall map resolution (\u00c5) FSC threshold 0.143</td>\n      <td>3.3</td>\n      <td>3.1</td>\n    </tr>\n    <tr>\n      <td>Local map resolution range (\u00c5)</td>\n      <td>3.0\u20135.0</td>\n      <td>2.8\u20135.0</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Phenix 1.13 real-space-refine</td>\n      <td>Phenix 1.13 real-space-refine</td>\n    </tr>\n    <tr>\n      <td>Initial model used (PDB code)</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Model resolution (\u00c5) FSC threshold 0.5</td>\n      <td>3.6</td>\n      <td>3.5</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B factor (\u00c52)</td>\n      <td>\u221277</td>\n      <td>\u221238</td>\n    </tr>\n    <tr>\n      <td>Model composition</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Non-hydrogen atoms</td>\n      <td>9433</td>\n      <td>4225</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>1290</td>\n      <td>566</td>\n    </tr>\n    <tr>\n      <td>Ligands</td>\n      <td>1 (Calcium ion)</td>\n      <td>4 (Calcium ions)</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>B factors (\u00c52)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>124.29</td>\n      <td>88.3</td>\n    </tr>\n    <tr>\n      <td>Ligand</td>\n      <td>70.1</td>\n      <td>94.9</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.006</td>\n      <td>0.004</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.027</td>\n      <td>0.569</td>\n    </tr>\n    <tr>\n      <td>Validation</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MolProbity score</td>\n      <td>1.85</td>\n      <td>2.25</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>7.13</td>\n      <td>10.75</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>97.45</td>\n      <td>95.65</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>2.55</td>\n      <td>4.35</td>\n    </tr>\n    <tr>\n      <td>Disallowed (%)</td>\n      <td>0.0</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>*Super-resolution pixel size.</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-v3.jpg)\n\n**Figure 1.:** (A) 2D class averages showing side-views of complexes with one or two MICU1-MICU2 heterodimers associated (top and bottom panels, respectively). (B\u2013E) Cryo-EM reconstruction of the holocomplex, shown in orthogonal views. Densities are colored accordingly: MCU (yellow), EMRE (orange), MICU1 (green), MICU2 (blue), and nanodisc (semitransparent gray). Numbers in (E) represent the locations of EMRE subunits. The location of where EMRE 4 would be expected to bind is indicated by parentheses (D\u2013E).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The amino acid sequences of transmembrane regions of T. castaneum, C. europaea, D. discoideum, C. elegans, D. rerio (Zebrafish) and human MCUs are aligned and colored according to the ClustalW convention (NCBI Reference Sequence: XP_008192975.1\u00a0(T. castaneum), UniProt accession numbers: W2SDE2, Q54LT0, Q21121, Q08BI9 and Q8NE86, respectively). Secondary structures are indicated with cylinders representing \u03b1-helices, and residues facing the intermembrane space are indicated with a red line. Residues involved in MICU1-binding are highlighted with red triangles. (B) The amino acid sequences of T. castaneum, C. elegans, D. rerio (Zebrafish) and human EMREs are aligned and colored in the same manner (UniProt accession numbers: D6X268_TRICA, Q9U3I4, A0A0J9YJ98 and Q9H4I9, respectively). Secondary structures are indicated with bars representing \u03b1-helices, solid lines representing structured loop regions, and dashed lines representing disordered regions. The acidic C-terminal tails of EMRE proteins are highlighted with a red line. Leu 92 is noted with a red triangle.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Superposition of TcMCU-EMRE from the holocomplex (gold), TcMCU-EMRE without MICU1-MICU2 (cyan), and human MCU-EMRE (yellow, PDB: 6O58) is shown from the perspective of the IMS. MCU and EMRE are shown as cartoons. Residues involved in MICU1 binding are labeled and depicted as sticks (RMSD between these for human and beetle MCU/EMRE is 1.5 \u00c5 for C\u03b1 atoms).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Size exclusion chromatography (SEC) profile of the purified holocomplex. Peak fractions between the dashed lines were collected for cryo-EM analysis. (B) SDS-PAGE analysis of the SEC fractions (Coomassie stained). Protein components are labeled. (C) Portion of a representative micrograph (defocus of \u22122.5 \u03bcm). Automatically picked particles are circled in green.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Representative 2D class averages ranked in order of class distribution (highest to lowest occupancy from upper left to lower right). Asterisks denote a second MICU1-MICU2 complex in certain classes. (B) Flowchart of cryo-EM data processing and 3D reconstruction. (C) Cryo-EM map (semitransparent representation,\u00a0~10 \u00c5 resolution) from the\u00a0~2% of particles that contain two MICU1-MICU2 heterodimers per channel assembly. The atomic structure of the holocomplex containing one MICU1-MICU2 heterodimer is shown in cartoon representation for comparison.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) FSC curves of the final 3D reconstruction. The half-map (black) and map-to-model (orange) FSC curves are shown (dotted lines indicate 0.143 and 0.5 levels and corresponding resolutions). (B) Euler angle distribution plot of the final 3D reconstruction. (C) Local resolution estimation (calculated with Resmap). The unsharpened map is colored as indicated. Middle and right panels are slices through the map. (D\u2013E). EM densities for indicated regions of the atomic model.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-figsupp6-v3.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Local densities (transparent surface representations) of the four EF-hand domains are shown in the context of the atomic model (cartoon and sticks). Densities for Ca2+ ions are absent and the Ca2+-binding residues (asterisks) have poorly defined density.\n\n### Overall structure of the holocomplex\n\nMICU1 and MICU2 associate as a heterodimer and bind to the surface of the channel at the IMS entrance of its pore (Figure 2). Interactions with the channel are mediated solely by MICU1; MICU2 makes no visible contacts with MCU or EMRE. As in cryo-EM and X-ray structures of fungal MCU and metazoan MCU-EMRE channel complexes without MICU1-MICU2 (Baradaran et al., 2018; Fan et al., 2018; Nguyen et al., 2018; Wang et al., 2020; Wang et al., 2019; Yoo et al., 2018), the pore comprises a single ion conduction pathway through the TMD that is surrounded by four MCU subunits. EMRE subunits, located at the periphery of the TMD, consist of a single transmembrane helix flanked by short N- and C-terminal disordered regions. The conformation of the pore is indistinguishable from that observed in a cryo-EM structure of TcMCU-EMRE without MICU1-MICU2 (Figure 2C, Figure 2\u2014figure supplement 1; Wang et al., 2020), which suggests that unlike gating conformational changes in many other ion channels, control by MICU1-MICU2 is not accomplished through motions of pore-lining helices.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig2-v3.jpg)\n\n**Figure 2.:** (A and B) Cartoon representations of the holocomplex, colored as in Figure 1, and shown with semitransparent surfaces. Gray bars represent approximate boundaries of the hydrophobic core of the membrane. A\u00a0Ca2+ion\u00a0in the E ring is drawn as a purple sphere. The pore (semitransparent gray surface) is depicted as the minimal radial distance from its center to the nearest van der Waals protein contact. (C) Pore dimensions in structures of TcMCU-EMRE with and without MICU1-MICU2 (red and blue, respectively). A dashed line indicates the radius of a hydrated Ca2+ ion.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Superposition of the structures of TcMCU-EMRE from the holocomplex (gold) and TcMCU-EMRE without MICU1-MICU2 (cyan) are shown in three orthogonal views. Ca2+ is depicted as a purple sphere. EMRE subunits are labeled 1 to 4. The RMSD for C\u03b1 atoms is 0.24 \u00c5 between the structures.\n\nThe structure of the holocomplex provides the most well-defined density to date for the ion-selectivity filter, which is formed by a fourfold assembly of the WDXXEP signature sequences of MCU subunits (Figure 1\u2014figure supplement 5E). The \u2018D\u2019 and \u2018E\u2019 residues of this motif (Asp 261 and Glu 264) form two rings of acidic amino acids that line the pore of the channel and can coordinate Ca2+ through water-mediated (\u2018D\u2019 ring) or direct interactions (\u2018E\u2019 ring) (Baradaran et al., 2018; Fan et al., 2018; Nguyen et al., 2018; Wang et al., 2020; Wang et al., 2019; Yoo et al., 2018). Strong density that we assign as Ca2+ on the basis of its coordination and analogy to other structures of MCU is present within the \u2018E\u2019 ring (Figure 1\u2014figure supplement 5E). Its presence under conditions of\u00a0<1 nM Ca2+ identifies this site as the high-affinity (Kd\u00a0\u22642 nM) Ca2+ binding site previously postulated from electrical recordings made from mitoplasts that is thought to contribute to the channel\u2019s high selectivity for Ca2+\u00a0(Kirichok et al., 2004). MICU1-MICU2 binding does not displace Ca2+ from this site. The \u2018D\u2019 ring is directly coordinated by MICU1, and possibly because of this and/or the low concentration of Ca2+ in the sample, density for Ca2+ is not observed in this site. Aside from coordination of the \u2018D\u2019 ring, the ion conduction pathway is indistinguishable from the unliganded conformation\u00a0(Figure 2\u2014figure supplement 1; Figure 2C).\n\nThree EMRE subunits are observed at the periphery of the TMD (EMRE 1\u20133). Density for a fourth, like that observed in structures without MICU1-MICU2 (Wang et al., 2020; Wang et al., 2019), is conspicuously absent (Figure 1D and E). MICU1 interacts with only EMRE 1, which has the most well-defined density (Figure 1B\u2013D, Figure 1\u2014figure supplement 5D). EMRE 2 and 3 adopt the same conformation as EMRE 1, which is the same as the one observed without MICU1-MICU2, in which each EMRE transmembrane helix is positioned approximately 45 \u00b0 from the membrane normal and interacts with TM1 of an adjacent MCU subunit (Figure 2A\u2013B, Figure 2\u2014figure supplement 1; Wang et al., 2020). MICU1-MICU2 is positioned\u00a0~15 \u00c5 above where EMRE 4 would be located (Figure 1D,E). It is possible that interactions between EMRE 4 and MICU1-MICU2, perhaps involving the disordered acidic C-terminal tail of EMRE (Figure 1\u2014figure supplement 1B), may destabilize binding of this subunit. In support of this hypothesis, nanodisc density is wider in the vicinity of where EMRE 4 would be positioned (Figure 1D), which suggests that it may be present within the nanodisc but displaced from the surface of MCU.\n\n### A uniporter interaction domain and its receptor site\n\nMICU1 contains three domains (Wang et al., 2014): an N-lobe and a C-lobe, which contain its Ca2+-binding sites, and an N-terminal domain, which we name the uniporter interaction domain (UID) (Figure 3A). The UID mediates all observed interactions with the channel. The\u00a0UID comprises three \u03b1-helices (\u03b11, \u03b12, \u03b13) and a small \u03b2-sheet formed by strands \u03b21, \u03b22 and \u03b23 (Figure 3A). Residues on \u03b11 and \u03b12 and a tight turn connecting these helices at Pro 124 directly contact the IMS surface of the channel (Figure 3D,F\u2013G).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-v3.jpg)\n\n**Figure 3.:** (A) Domain architecture of MICU1. Cartoon representation colored according to subdomains. Spheres indicate the C\u03b1 positions of amino acids that would bind Ca2+ in EF-hands EF1 and EF4. (B) The UID-receptor interface. A semitransparent surface-cartoon rendition of MCU and EMRE is shown, viewed from the IMS. An outline marks the boundaries of the interface of the UID with the channel. \u03b11 and \u03b12 of the UID are depicted as green ribbons. (C) Close up view of the receptor site, with residues that interact\u00a0with the UID drawn as sticks. (D) Cryo-EM density and interactions at the IMS mouth of the pore. The interface region between MICU1 and the D ring is shown (MICU1, green; MCU, yellow), with density depicted as a semitransparent surface. Dashed lines indicate hydrogen bonds. (E) Mutagenesis of the UID and the effect on mitochondrial Ca2+ uptake. The indicated mutants of human MICU1, made in the background of disrupted EF-hand domains (EF), were transiently expressed in MICU1 knockout cells and uptake was quantified relative to wild type (WT) MICU1 and disrupted EF-hand (EF) controls. Western blots demonstrate expression. \u2018-ve\u2019 indicates untransfected cells. (mean\u00a0\u00b1s.d., independent experiments: n\u00a0=\u00a06 for WT and EF controls, and n\u00a0=\u00a03 for the remainder. Student\u2019s t-Test p-values for mutants relative to the EF construct, calculated using the two-tailed distribution with unequal variance method, are listed). (F and G) Views showing UID-receptor site interactions (sticks). MICU1 residues are in italics.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Comparison of the UID of MICU1 (green) to corresponding regions of MICU2 and MICU3 from of X-ray structures (PDB: 6EAZ and 6AGJ). A box highlights differences with \u03b11 of MICU1. (B) Sequence alignment of various UIDs and with corresponding regions of MICU2 and MICU3. Residues that interact with the channel are denoted with triangles; Lys 126 as a star.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) A view of holocomplex parallel to the membrane. MCU and EMRE are shown as cartoon representations and colored in gold and orange, respectively. The MICU1-MICU2 heterodimer is shown as a molecular surface and colored according to electrostatic potential (light gray regions are neutral; red, \u22124 kT e\u22121; blue, +4 kT e\u22121). A hypothetical model of the acidic C-terminal tail of EMRE1 is drawn as a red line and docked on a positive-charged surface on MICU1 (dashed oval). For clarity, the matrix domains of MCU are omitted. Mitochondrial inner membrane is depicted as transparent gray bar. (B) The same perspective as (A) with MICU1 and MICU2 depicted as cartoons in transparent surfaces. Basic amino acids that constitute the positive-charged surface highlighted in (A) are drawn as sticks and labeled. (C) Sequence alignment showing conservation of the basic region among of MICU1 proteins. The residues indicated in (B) are marked by black stars. This region is conserved among metazoan species (from C.\u00a0elegans to human) but not with A. thaliana and D. discoideum, which lack EMRE homologs.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The amino acid sequences of human, M. musculus, D. rerio, T. castaneum, C. elegans, A. thaliana, and D. discoideum MICU1 proteins are aligned and coloured according to the ClustalW convention (UniProt accession numbers: Q9BPX6, Q8VCX5, A4IG32, D6WJK2, Q95PZ2, Q9SZ45 and Q54JS1, respectively). Secondary structures are indicated with cylinders representing \u03b1-helices, arrows representing beta sheets, solid gray lines representing structured loops, and dashed gray lines representing disordered regions.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-figsupp4-v3.jpg)\n\n**Figure 3\u2014figure supplement 4.:** A portion of the holocomplex is shown from the side. MCU, EMRE, MICU1 and MICU2 are shown as cartoons in transparent surfaces and colored in gold, orange, green and blue, respectively. Ca2+ in the \u2018E\u2019 ring of the selectivity filter is depicted as a purple sphere. MICU1-Lys 126 and MICU1-Arg 129 are shown as gray sticks. A portion of the mitochondrial inner membrane is depicted as transparent gray bar. Basic residues of MICU1 that have been proposed on the basis of previous studies to interact with MCU are drawn as red sticks\u00a0(Paillard et al., 2018,\u00a0Phillips et al., 2019). Amino acids that coordinate these are drawn as green sticks, with hydrogen bonds indicated by dashed lines. Although the proposed residues don\u2019t interact with MCU or EMRE, one can imagine how their mutation could disrupt the structure of the UID and its binding to the channel. MICU1-Arg 119 and MICU1-Arg 154, which were proposed to interact with MCU-Asp 261 on the basis of one study (Phillips et al., 2019), contribute to stabilization of the UID but do not coordinate MCU or EMRE directly. MICU1-Arg 440 and MICU1-Arg 443, which were proposed to interact with MCU on the basis of another study (Paillard et al., 2018). These residues are located within the C-lobe of MICU1, approximately 25 \u00c5 from the pore, where they form hydrogen bonds with MICU1-Glu 311 from the N-lobe; their mutation would be expected to destabilize the overall structure of MICU1.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-figsupp5-v3.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Representative mitochondrial Ca2+ uptake experiments for digitonin-permeabilized MICU1 knockout cells expressing various human MICU1 constructs as indicated. \u2018WT\u2019 indicates wild type MICU1, \u2018EF\u2019 indicates MICU1 with disrupted EF-hands. The other indicated mutations were made on the background of the EF-hand mutant. Fluorescence data are normalized to the value at 100 s, where fluorescence readings are within\u00a0\u00b15% for all curves. (B\u2013G) Close up views of the 100 to 135 s time window showing the region used to determine slope. (H) Western blot analysis using a Rho-1D4 antibody, showing MICU1 protein expression levels. \u2018-ve\u2019 represents untransfected cells; \u2018ND\u2019 is a construct for which uptake was not studied; an asterisk represents a western control (MCU labeled with a 1D4 tag) that was included with molecular weight standards in the first lane.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-figsupp6-v3.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (A\u2013B) Depictions of Nav1.2 alone (B) and with bound \u03bc-conotoxin KIIIA (A) (PDB:6J8E), showing the transmembrane and extracellular regions, viewed from the extracellular side above the selectivity filter. The Nav1.2 channel is colored gold and \u03bc-conotoxin KIIIA is green; both are shown as cartoon representations. The pore (a semitransparent gray surface) is depicted as the minimal radial distance from its center to the nearest van der Waals protein contact. Lys 7 and Arg 10 residues of \u03bc-conotoxin KIIIA (green sticks) coordinate two of four similarly positioned acidic amino acids at the mouth of the selectivity filter (red sticks). (C) Pore dimensions of Nav1.2 with and without \u03bc-conotoxin KIIIA (red and blue, respectively). A dashed line indicates the radius of a hydrated Na+ ion. The distance along the pore (y-axis) is relative to a point at the lower end of the selectivity filter.\n\nThe binding of the UID identifies a receptor for MICU1 on the surface of the channel (Figure 3B and C). The receptor is relatively flat and spans three MCU subunits and one EMRE subunit. The amino acids comprising it (MCU residues: Trp 255B, Tyr 258A&B, Ser 259B, Asp 261A,B&D, and Ile 262A&B, and EMRE residue Leu 92, Figure 3C) are conserved among metazoan channels and are identical between human and beetle channels (Figure 1\u2014figure supplement 1A\u2013B, Figure 1\u2014figure supplement 2). Apart from the absence of EMRE 4, the conformation of the receptor site is indistinguishable from the unliganded conformations of both beetle and human MCU-EMRE complexes (Figure 1\u2014figure supplement 2; Wang et al., 2020; Wang et al., 2019).\n\nThe \u03b11 helix, which is the N-terminal end of the ordered region of MICU1, is positioned horizontally on the receptor, where it contacts one\u00a0EMRE subunit\u00a0(EMRE\u00a01) and two MCU subunits through a collection of van der Waals interactions and hydrogen bonds (Figure 3B,F\u2013G). The interacting residues on \u03b11 (Phe 106, Arg 107, Lys 110, Val 111, Tyr 114, Arg 117, and Tyr 121) are identical in beetle MICU1 and conserved among animals (Figure 3\u2014figure supplement 1B).\n\nA hydrophobic interaction between Phe 106 of \u03b11 and the IMS end of EMRE\u2019s transmembrane helix at Leu 92, which is also highly conserved (Figure 1\u2014figure supplement 1B), comprises the only contact observed between MICU1 and EMRE (Figure 3G). Although not visible in the density, MICU1 and EMRE may also interact electrostatically \u2013 an acidic C-terminal region of EMRE and a basic region preceding \u03b11, which are disordered, have been implicated in binding (Hoffman et al., 2013; Tsai et al., 2016) and would be in close proximity. A nearby conserved basic surface of MICU1 may be another point of contact for the acidic tail of EMRE (Figure 3\u2014figure supplement 2).\n\nThe mouth of the pore is coordinated by Lys 126 and Arg 129 from \u03b12, and Ser 122 of the \u03b11-\u03b12 turn through a network of hydrogen bonds that involves three of the four MCU-Asp 261 residues of the \u2018D\u2019 ring (Figure 3D,F). This confirms the previous hypothesis that the \u2018D\u2019 ring is involved in MICU1 binding (Paillard et al., 2018; Phillips et al., 2019). The MICU1 residues participating in the hydrogen-bonding network (Tyr 114, Ser 122, Asp 125, Lys 126, Arg 129, and Asp 169) are conserved (Figure 3\u2014figure supplement 3), but none were previously predicted to mediate interactions with the channel (Figure 3\u2014figure supplement 4).\n\nTo assess the function of the interacting residues and to gauge their importance and relevance for control of the full-length human MCU-EMRE channel, we evaluated mitochondrial Ca2+ uptake when wild type and mutant MICU1 proteins were expressed in human MICU1 knockout cells. As expected, robust mitochondrial Ca2+ uptake was observed when wild type MICU1 was expressed and uptake was suppressed by mutations within the Ca2+-binding EF-hands of MICU1 that cause it to constitutively inhibit the channel (Figure 3E, Figure 3\u2014figure supplement 5; Kamer and Mootha, 2014). Residues that were observed to interact with MCU or EMRE relieve this inhibition when mutated to alanine. This includes not only Lys 126 and Arg 129 of\u00a0MICU1\u00a0that interact with the \u2018D\u2019 ring but also amino acids that interact with MCU and EMRE at a distance from the pore (e.g. Phe 106, Arg 117, and Tyr 121). Lys 126 seems particularly crucial \u2013 a single K126A mutation essentially eliminates inhibition by MICU1. These studies verify the structurally observed interaction and indicate its importance for control of the full-length human channel.\n\nThe regions of the UID that interact with the channel are absent in MICU2 or MICU3 (Figure 3\u2014figure supplement 1). The \u03b11 helix, the conserved Pro 124 in the bend between \u03b11 and \u03b12, and residues that interact with the \u2018D\u2019 ring are unique to MICU1. This explains why MICU1 is distinct from MICU2 and MICU3 in its ability to interact with MCU/EMRE, and it explains the observation that MICU2 and MICU3 have non-redundant roles in comparison to MICU1 in the regulation of the channel (Kamer and Mootha, 2014; Patron et al., 2014; Patron et al., 2019; Payne et al., 2017; Xing et al., 2019).\n\nThe interaction with the pore is reminiscent of the interaction between \u03bc-conotoxin KIIIA, a small pore-blocking peptide toxin found in the venom of a cone snail, with the extracellular surface of the neuronal Nav1.2 channel (Pan et al., 2019; Zhang et al., 2007; Figure 3\u2014figure supplement 6). A short \u03b1-helical region of the toxin lies horizontally at the entrance of the pore\u00a0of\u00a0Nav1.2, in\u00a0a\u00a0similar manner\u00a0to the binding of the \u03b12 helix of MICU1 with the uniporter. As in the UID-uniporter interface, an arginine and a lysine residue that are separated by one turn of the toxin\u2019s \u03b1-helix coordinate acidic amino acids at the entrance of the selectivity filter (Figure 3D and Figure 3\u2014figure supplement 6). The binding of the toxin is slightly off-center such that two of four analogous acidic amino acids are coordinated and the pore is not completely occluded \u2013 nevertheless this toxin blocks approximately 90% of Na+ current though the channel (Zhang et al., 2007; Figure 3\u2014figure supplement 6). The UID interacts with three of the four \u2018D\u2019-ring amino acids at the mouth of the uniporter\u2019s pore and the occlusion of the pore is more extensive than observed for Nav1.2 by \u03bc-conotoxin KIIIA (Figure 2,\u00a0Figure 3,\u00a0Figure 3\u2014figure supplement 6). The structure of the holocomplex and its similarity to a pore-blocking toxin complex indicate that MICU1 binding inhibits the flow of Ca2+ ions by both obstructing the IMS entrance of the pore and by shielding the negative charge of the \u2018D\u2019 ring through coordination with basic amino acids.\n\n### MICU1-MICU2 and Ca2+-induced changes\n\nThe MICU1-MICU2 portion of the holocomplex is roughly parallelogram shaped, with overall dimensions of approximately 70 \u00d7 65\u00a0\u00d7\u00a035 \u00c5, under resting conditions in which its EF-hand domains are in Ca2+-free apo states (Figure 4A). One of its large relatively-flat surfaces faces and curves slightly toward the membrane due to a slight bend between MICU1 and MICU2 (Figure 2A). The heterodimer has pseudo twofold symmetry and two analogous interfaces between the subunits (Figure 4A, Figure 4\u2014figure supplement 1A\u2013F). Hydrophobic amino acids predominate the interfaces, with MICU1-Met 229, MICU1-Phe 383, MICU2-Met 183, and MICU2-Met 337 making analogous and particularly extensive contacts within them (Figure 4\u2014figure supplement 1A\u2013C). The interfacial residues are conserved in MICU3 (Figure 4\u2014figure supplement 2), which suggests that the neuron-specific MICU1-MICU3 heterodimer has a similar arrangement. As would be expected under resting [Ca2+] conditions, all four Ca2+-binding EF-hand motifs of the MICU1-MICU2 heterodimer (\u2018EF1\u2019 and \u2018EF4\u2019 of both subunits) are in the apo state and the heterodimer is superimposable with a previous apo structure of MICU1-MICU2 alone (Park et al., 2020; Figure 1\u2014figure supplement 6, Figure 4\u2014figure supplement 3A).\n\nFrom biochemical analysis of the purified protein, and in acoord with a previous report that MICU1-MICU2 has an affinity for cardiolipin (Kamer et al., 2017), we found that the heterodimer associates with lipid membranes and lipid nanodiscs that\u00a0contain cardiolipin (Figure 4\u2014figure supplement 4, Figure 4F). This association is independent of Ca2+ - both Ca2+-free and Ca2+-bound heterodimers bind to liposomes. To investigate the conformational change in MICU1-MICU2 upon Ca2+ binding, we determined a cryo-EM structure of Ca2+-bound MICU1-MICU2 in complex with a lipid nanodisc containing cardiolipin at 3.1 \u00c5 resolution (Figure 4F,\u00a0Figure 4\u2014figure supplement 5,\u00a0Figure 4\u2014figure supplement 6,\u00a0and\u00a0Table 1).\u00a0The side of the heterodimer that associates with the nanodisc is the same as the one that faces the channel (Figures 1A and 4F). The structure reveals a substantial conformational change upon Ca2+ binding that makes the heterodimer more compact and markedly more bent between MICU1 and MICU2 (Figure 4A\u2013D). Ca2+ dependent rearrangements of the EF-hand motifs that involve their helix turn helix elements produce this bend (Figure 4C\u2013D, Figure 4\u2014figure supplement 1).\u00a0Ca2+ binding also induces a rotation of the UID relative to MICU1 (Figure 4E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-v3.jpg)\n\n**Figure 4.:** (A) Cartoon representation of the apo MICU1-MICU2\u00a0heterodimer. Gray spheres denote EF-hand residues. (B) Overall structure of Ca2+-bound MICU1-MICU2. Red spheres indicate bound Ca2+ ions. (C\u2013D) Bend between MICU1 and MICU2 induced by Ca2+ binding (C, apo; D, Ca2+-bound). Overall structures are shown from the side with semitransparent molecular surfaces. (E) Superposition of apo (gray) and Ca2+-bound (green) MICU1 highlighting a\u00a0rotation of the UID upon Ca2+ binding. (F) Cryo-EM density depicting the Ca2+-bound MICU1-MICU2 complex associated with a lipid nanodisc.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A and B) Interfaces between MICU1 and MICU2 in the Ca2+-free heterodimer. Depictions are for the interface between MICU1-EF1 and MICU2-EF3 (A) and for the interface between MICU1-EF3 and MICU2-EF1 (B). Residues within the interfaces are shown as sticks. Spheres represent C\u03b1 locations of amino acids within EF-hands that would coordinate Ca2+. (C) Superposition of the interfaces from (A\u2013B), with amino acids at their centers labeled. (D\u2013F) MICU1-MICU2 interfaces in the Ca2+ bound complex, depicted as for (A\u2013C). Ca2+ ions are shown as red spheres. (G \u2013 J) Coordination of Ca2+ ions in the Ca2+-bound MICU1-MICU2 structure. The four EF-hand domains are shown as cartoons with amino acids that coordinate Ca2+ as sticks. Ca2+ ions are shown as purple spheres, with Ca2+-oxygen interactions depicted as dashed lines.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Sequence alignment of MICU2 orthologs. The amino acid sequences of human, mouse (M. musculus), zebrafish (D. rerio), T. castaneum, and C. elegans MICU2 are aligned and coloured according to the ClustalW convention (UniProt accession numbers: Q8IYU8, Q8CD10, Q1LCY6, D6WQH5 and D7SFN6, respectively). Secondary structures are indicated with cylinders representing \u03b1-helices, arrows representing beta sheets, solid gray lines representing structured loops and dashed gray representing disordered loops. All the structural elements (N-lobe, Central helix and C-lobe) and 4 EF-hand motifs are highlighted. Residues involved in MICU1-binding and calcium-binding are highlighted with red dots and red diamonds, respectively. (B) Sequence alignment of human MICU1, MICU2 and MICU3. The secondary structure elements of human MICU1 are above the alignment. MICU2 residues that are involved in binding to MICU1 are conserved in MICU3 (red diamonds).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Superposition of the MICU1-MICU2 heterodimer from the holocomplex (apo; green and blue) with an X-ray structure of an isolated apo MICU1-MICU2 heterodimer (gray, PDB: 6LE5). The RMSD is 0.8 \u00c5 for C\u03b1 atoms. Two orthogonal views are shown. (B) Superposition of the Ca2+-bound conformation of the MICU1-MICU2 heterodimer from our cryo-EM analysis (green and blue) with a Ca2+-bound X-ray structure of a MICU2-MICU2 homodimer (gray, PDB: 6IIH, C\u03b1 RMSD\u00a0=\u00a02.3 \u00c5). Ca2+ ions are drawn as purple spheres.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Following ultracentrifugation of purified MICU1-MICU2 in the presence or absence of liposomes, and with and without Ca2+, pellets were resuspended and analyzed by Coomassie-stained SDS-PAGE. MICU1-MICU2 pellets with liposomes but remains in the supernatant when liposomes are not present (buffer). GFP is used as a control that does not associate with liposomes. Refer to Methods for details.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-figsupp5-v3.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) Flowchart of data processing and 3D reconstruction.\u00a0(B) Representative 2D class averages. An asterisk denotes a class containing two MICU1-MICU2 assemblies (representing\u00a0~3%\u00a0of particles).\u00a0(C) A 2D projection of a dimer of MICU1-MICU2 heterodimers from the cryo-EM map of the human holocomplex under high [Ca2+] conditions (EMD-21643). The channel (MCU/EMRE) densities were removed for the projection. MICU2:MICU2 interfaces mediate a dimerization of MICU1-MICU2 heterodimers in that structure (Fan et al., 2020). The projection resembles the 2D class from (B) with two MICU1-MICU2 heterodimers (asterisk), which suggests, but does not prove, that a MICU2:MICU2 interface mediates the dimerization of MICU1-MICU2 heterodimers in a fraction of our cryo-EM data.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-figsupp6-v3.jpg)\n\n**Figure 4\u2014figure supplement 6.:** (A) FSC curves of the final 3D reconstruction. The half-map (black) and map-to-model (orange) FSC curves are shown (dotted lines indicate 0.143 and 0.5 levels and corresponding resolutions). (B) Euler angle distribution plot of the final 3D reconstruction. (C) Local resolution estimation (calculated with Resmap). The unsharpened map is colored as indicated. Two views are shown. (D). EM densities for indicated regions of the atomic model. Calcium ions are depicted as green spheres.\n\nWe sought to understand how Ca2+-dependent conformational changes in MICU1-MICU2 might confer Ca2+-dependent control to the channel (Figure 5). Superimposing the Ca2+-bound MICU1-MICU2 structure on the UID in the resting holocomplex reveals that the Ca2+-induced conformational changes in the heterodimer would place hydrophilic regions of MICU2 within the membrane, which would be highly unfavorable thermodynamically (Figure 5, middle). Rather than inserting into the membrane, we hypothesize that the bending motion of MICU1-MICU2 acts like a lever against the membrane to pry MICU1 from the mouth of the pore when [Ca2+]IMS is elevated. Additionally, the Ca2+-dependent conformational changes within MICU1 cause a rotation of the UID that could disfavor binding to the channel (Figure 4E). The conformational changes would dislodge the UID from the blocking conformation, which would allow Ca2+ ions to permeate though the channel while [Ca2+]IMS remains elevated. A dislodged Ca2+-bound MICU1-MICU2 complex would be free to bind to the surface of the inner mitochondrial membrane, with which it would associate due to its inherent affintity for membranes, and it may remain proximal the channel as a result of electrostatic interactions with the acidic tail of EMRE (Figure 5, right) (Wang et al., 2019). When resting [Ca2+]IMS is restored, a MICU1-MICU2 complex, again devoid of its Ca2+ ligands, would resume the blocking configuration (Figure 5, left, Figure 5\u2014figure supplement 1). This mechanism of MICU1-MICU2 control is compatible with the observed dimerization of human MCU-EMRE channels that is due to association of their NTDs \u2013 there is sufficient room for MICU1-MICU2 complexes to associate with both channels of the dimer and to control Ca2+ influx through their pores (Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig5-v3.jpg)\n\n**Figure 5.:** Left, structure of the holocomplex under resting [Ca2+]IMS\u00a0conditions. MCU and EMRE are depicted with cylindrical helices; MICU1 and MICU2 are represented as semitransparent surfaces, with \u03b11 and \u03b12 helices of the UID as ribbons. The lipid membrane (gray) is based upon an atomistic model (Figure 5\u2014figure supplement 1)\u00a0. The UID blocks the pore (gray tube). Following elevation of [Ca2+]IMS, Ca2+ binding causes the MICU1-MICU2 heterodimer to bend (the Ca2+-bound MICU1-MICU2 structure is depicted with the channel in the center and right panels). The center panel indicates that bending would dislodge the UID from its receptor site in order to avoid thermodynamically unfavorable interactions of MICU2 with the membrane (\u2018X\u2019). The dislodged Ca2+-bound MICU1-MICU2 heterodimer would no longer block the pore, thereby allowing Ca2+ permeation through the channel, and it would be free to interact with the membrane (right). Upon the return of resting [Ca2+], the heterodimer would resume its blocking conformation (left). One MICU1-MICU2 heterodimer is depicted and only one can bind to the receptor on the channel at a time but multiple MICU1-MICU2 heterodimers may be associated with the channel. A brown line depicts a hypothetical interaction of the acidic C-terminus of EMRE with MICU1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The holocomplex was modeled into a DPPC (1,2-dipalmitoyl-sn-glycero-3-phosphocholine) lipid bilayer, using CHARMM-GUI (http://www.charmm-gui.org/). MCU, EMRE, MICU1 and MICU2 are shown as cartoons. DPPC molecules are shown as transparent sticks.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The complex was modeled based on holocomplex and the dimeric human MCU-EMRE complex (PDB:6O58). MCU, EMRE, MICU1 and MICU2 are shown as cartoons with transparent molecular surfaces and colored gold, orange, green and blue, respectively. A curved mitochondrial inner membrane is depicted as a transparent gray arc. Dimerization of channels is due to the NTDs of human MCU. As shown, MICU1-MICU2 regulatory complexes could bind to both channels of the dimer without sterically interfering.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig5-figsupp3-v3.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A\u2013B) Low [Ca2+] structures. (A) TcMCU-EMRE-MICU1-MICU2\u00a0holocomplex\u00a0structure reported here. (B) Holocomplex containing human MCU, EMRE, MICU1, and MICU2 subunits (PDB # GWDN). An ordered loop of MICU1 (amino acids 258\u2013274) is indicated, as are the C-helices of MICU1 and MICU2, which are also ordered in that structure. (C) Structure of a holocomplex comprising human MCU, EMRE, MICU1, and MICU2 that\u00a0was\u00a0determined at high (2 mM) [Ca2+] (PDB # GWDO). A dimer of channels present in the cryo-EM sample is formed by interactions between the NTDs. For each channel, a Ca2+-bound MICU1-MICU2 regulatory complex is located adjacent to the pore and no longer occludes it.\n\n## Discussion\n\nWith analogy to classical toxin-channel interactions (MacKinnon and Miller, 1988), the structure of the holocomplex indicates that MICU1-MICU2 prevents mitochondrial Ca2+ overload under resting conditions (Liu et al., 2016) and confers Ca2+-dependent control by a pore-blocking mechanism. Operating like a regulatable toxin, resting levels of Ca2+ permit the blocking conformation while elevated levels disrupt it. A single MICU1-MICU2 heterodimer appears capable of conferring these properties for the simple reason that the receptor site on the channel can accommodate only one UID. However, more than one MICU1-MICU2 heterodimer may be tethered to the channel at any given time, as is indicated by the cryo-EM analysis. Nucleation of more than one heterodimer in the vicinity of the channel would increase the local concentration of MICU1-MICU2 and facilitate a rapid response following restoration of resting cytosolic Ca2+ levels. While MICU1-MICU2 visibly interacts with only one EMRE subunit, the displacement of an EMRE subunit (EMRE 4) from the TMD might serve as an additional mechanism to control ion flow since the expression of EMRE is necessary for Ca2+ uptake by mitochondria (Liu et al., 2016; Sancak et al., 2013; Tsai et al., 2016). Additionally, the displacement of an EMRE subunit suggests that the number of EMRE subunits associated with an MCU tetramer can vary, as has been inferred from a recent study (Payne et al., 2020).\n\nDuring the preparation of this manuscript, cryo-EM structures of a holocomplex comprising human MCU, EMRE, MICU1 and MICU2 subunits in resting and activated [Ca2+] conditions were reported (Fan et al., 2020). The conclusions of that work are congruous with the present study and validate the proposed mechanism of Ca2+-dependent regulation of the uniporter by MICU1-MICU2. Unlike ours, which used lipid nanodiscs, the structures were determined using detergent-solubilized protein, but the absence of a lipid membrane-like environment does not seem to have dramatically influenced the binding of the MICU1-MICU2 regulatory complex to the channel under resting Ca2+ conditions (Figure 5\u2014figure supplement 3). Interestingly, an additional interaction with the \u2018D\u2019-ring at the mouth of the pore, involving a loop region of MICU1 (amino acids 258\u2013274) that is disordered in our structure, was observed (Figure 5\u2014figure supplement 3). Weak density for this loop in our structure and its disorder in X-ray structures of isolated MICU1 proteins are indications of its flexibility (Wang et al., 2014). A structure of an intact holocomplex at elevated levels of [Ca2+], which was included in the recent work, indicates that the Ca2+-bound MICU1-MICU2 regulatory complex binds adjacent to the pore in essentially the same manner that we propose (Figure 5, right, and Figure 5\u2014figure supplement 3). The similarities of these studies, which used different experimental conditions, different protein constructs, and MCU-EMRE channels from different species, support a unified understanding of the mechanism of gatekeeping by MICU1-MICU2.\n\n### Conclusion\n\nThis work reveals a mechanism for Ca2+-dependent control of the mitochondrial calcium uniporter by the MICU1-MICU2 regulatory complex. The mechanism is distinct from the conformational changes that underlie gating, the process by which ion channels permit or prevent ion condution, in many other ion channels \u2013 these often involve changes in the dimensions of their ion conduction pores due to motions of transmembrane \u03b1-helices that line these pores, as was first exemplified by structural studies of potassium channels (MacKinnon, 2003). Our current understanding of how changes in [Ca2+]IMS regulate the uniporter comes from the integration of insights from the present work and the large body of preceeding studies. The MICU1-MICU2 complex exists as a heterodimer that is located in the IMS. Under resting cytosolic [Ca2+] conditions, when the concentration of Ca2+ is less than\u00a0~0.2 \u03bcM, Ca2+-binding EF-hand domains within MICU1 and MICU2 are devoid of Ca2+ and the heterodimer adopts a Ca2+-free conformation that is relatively flat. An inherent affinity of MICU1-MICU2 for lipid membranes and an affinity for a flexible acidic region on the IMS portion of EMRE increase the local concentration of the heterodimer near the MCU/EMRE channel. MCU channels that have multiple EMRE subunits associated with them would tend to have more MICU1-MICU2 complexes nearby, as was inferred from a recent study (Payne et al., 2020). At these\u00a0low resting concentrations of Ca2+, a domain that is specific to MICU1, the uniporter interaction domain (UID), binds to a receptor site at the mouth of the channel\u2019s pore and blocks it, with analogy to how protein toxins from venomous organisms block neuronal cation channels. In this blocking conformation, the UID inhibits ion permeation that could otherwise dissipate the mitochondrial electromotive force. Although MICU2 interacts extensively with MICU1, it does not appear to contact the channel directly. When the Ca2+ concentration in the IMS becomes elevated, the binding of Ca2+ to the EF-hand domains within MICU1 and MICU2 induce conformational changes in the MICU1-MICU2 complex that bend it and cause the UID to rotate. These conformational changes relieve blockage of the pore and thereby permit Ca2+ ions to permeate through the channel while [Ca2+]IMS remains elevated. These processes are reversed upon the restoration of resting [Ca2+]IMS levels. MICU1-MICU2 heterodimers, and by analogy MICU1-MICU3 heterodimers in neurons, thus confer Ca2+-dependent gating to the uniporter by operating like endogenous pore-blocking toxins, the binding of which is governed by Ca2+-dependent conformational changes within them. This mechanism represents one of the ways that the mitochondrial Ca2+ uniporter, an unusual and intricate ion channel complex, responds to physiological signals to regulate mitochondrial respiration and other cellular processes.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Tribolium castaneum)</td>\n      <td>TcMCU</td>\n      <td>IDT Inc</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Tribolium castaneum)</td>\n      <td>TcEMRE</td>\n      <td>IDT Inc</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>HsMICU1</td>\n      <td>IDT Inc Genewiz, Inc.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>HsMCIU2</td>\n      <td>IDT Inc</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>Expi293F</td>\n      <td>Sigma</td>\n      <td>A14527</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK-293T-MICU1-KO</td>\n      <td>Kamer and Mootha, 2014</td>\n      <td>DOI: 10.1002/embr.201337946</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>850757</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (sodium salt)</td>\n      <td>Avanti Polar Lipids</td>\n      <td>840457</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>1',3'-bis[1,2-dioleoyl-sn-glycero-3-phospho]-glycerol (sodium salt)</td>\n      <td>Avanti Polar Lipids</td>\n      <td>710335</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Polyethylenimine, Linear, MW 25000, Transfection Grade (PEI 25K)</td>\n      <td>Polysciences, Inc</td>\n      <td>23966\u20131</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium Butyrate</td>\n      <td>Sigma</td>\n      <td>8451440100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>n-Dodecyl-\u03b2-D-maltopyranoside</td>\n      <td>Anatrace</td>\n      <td>O310S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>(2\u03b1,3\u03b2,5\u03b1,15\u03b2,25R)\u22122,15-dihydroxyspirostan-3-yl O-\u03b2 -D-glucopyranosyl-(1\u21923)-O-\u03b2-D-galactopyranosyl-(1\u21922)-O-[\u03b2-D-xylopyranosyl-(1\u21924)-\u03b2-D-galactopyranoside</td>\n      <td>Cayman Chemical Company</td>\n      <td>14952</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Membrane Scaffold Protein 1D1</td>\n      <td>Sigma</td>\n      <td>M6574</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>5-Methyl-2-oxo-4-imidazo lidinehexanoic acid</td>\n      <td>Sigma</td>\n      <td>D1411</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lipofectamine 3000 Transfection Reagent</td>\n      <td>Thermo Fisher</td>\n      <td>L3000008</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Calcium Green\u22125N, Hexapotassium Salt</td>\n      <td>Thermo Fisher</td>\n      <td>C3737</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCor2</td>\n      <td>Zheng et al., 2017</td>\n      <td>RRID:SCR_016499</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CtfFind 4.1.10</td>\n      <td>Rohou and Grigorieff, 2015</td>\n      <td>RRID:SCR_016731</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION 3.0</td>\n      <td>Zivanov et al., 2018</td>\n      <td>http://www2.mrc-lmb. cam.ac.uk/relion RRID:SCR_016274</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SerialEM</td>\n      <td>Glover, 2004</td>\n      <td>RRID:SCR_017293</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cryoSPARC v2</td>\n      <td>Structura Biotechnology</td>\n      <td>https://cryosparc.com/ RRID:SCR_016501</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>Adams et al., 2010</td>\n      <td>https://www.phenix-online.org/ RRID:SCR_014224</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>COOT</td>\n      <td>Emsley et al., 2010</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/ RRID:SCR_014222</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL</td>\n      <td>Schr\u00f6dinger, 2020</td>\n      <td>https://pymol.org/2/ RRID:SCR_000305</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>Pettersen et al., 2004</td>\n      <td>https://www.cgl.ucsf.edu/chimera RRID:SCR_004097</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 7</td>\n      <td>GraphPad Software</td>\n      <td>https://cryosparc.com/ RRID:SCR_016501</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Hole</td>\n      <td>Smart et al., 1996</td>\n      <td>http://www.holeprogram.org</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF ChimeraX</td>\n      <td>Goddardnet al. 2018</td>\n      <td>https://www.cgl.ucsf.edu/chimerax/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>QUANTIFOIL R1.2/1.3 holey carbon grids</td>\n      <td>Quantifoil</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>FEI Vitrobot Mark IV</td>\n      <td>FEI Thermo Fisher</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Holocomplex preparation\n\nTribolium castaneum MCU (TcMCU; UniProt accession: TcasGA2_TC013837) and Tribolium castaneum EMRE (TcEMRE; UniProt accession: TcasGA2_TC012057) were selected as candidates for structural and functional studies from among\u00a0~30 metazoan MCU orthologs that were evaluated using fluorescence-detection size-exclusion chromatography (FSEC) screening technique using HEK-293 cells (Goehring et al., 2014; Wang et al., 2020) (cells obtained from and validated by Invitrogen, tested negative for mycoplasma). cDNA encoding TcMCU (residues 174\u2013359, with a C-terminal Strep II tag) and TcEMRE (residues 29\u201390) genes were chemically synthesized (IDT Inc), each cloned into a mammalian cell expression vector\u00a0(Goehring et al., 2014) to encode proteins with an N-terminal Venus tag and an intervening PreScission protease cleavage site. The plasmids were co-transfected into Expi293 cells (obtained from and validated by Invitrogen,\u00a0tested negative for mycoplasma) using PEI25k reagents (Polysciences, Inc) for transient expression. Briefly, 0.4 mg TcMCU plasmid, 0.6 mg TcEMRE plasmid and 3 mg PEI25k were mixed with 100 ml OptiMEM media (Invitrogen), incubated at room temperature for 20 min, and combined with approximately 3 \u00d7 109 Expi293 cells in 1 L of Expi293 media (Invitrogen). After incubation of the cells at 37\u00b0 C for 16 hr with shaking (125 rpm), 10 mM sodium butyrate (Sigma-Aldrich) was added, and the cells were cultured at 30\u00b0 C for an additional 48 hr before harvest.\n\nThe pellet from 1 L of cell culture was resuspended in 100 ml lysis buffer (40 mM HEPES pH 7.5 200 mM NaCl, 0.15 mg/ml DNase I, 1.5 \u03bcg/ml Leupeptin, 1.5 \u03bcg/ml Pepstatin A, 1 mM AEBSF, 1 mM Benzamidine, 1 mM PMSF and 1:500 dilution of Aprotinin), and then solubilized by adding n-Dodecyl-\u03b2-D-Maltopyranoside (DDM, Anatrace) to a final concentration of 1% while stirring at 4\u00b0C for 1 hr. Solubilized proteins were separated from the insoluble fraction by centrifugation at 60,000 g for 1 hr and the supernatant was filtered through a 0.22 \u03bcm polystyrene membrane (Millipore). 2 ml GFP nanobody resin was added and the sample was rocked at 4\u00b0C for 1 hr\u00a0(Kirchhofer et al., 2010). The beads were washed with 100 ml of 20 mM HEPES pH7.5, 200 mM NaCl and 1 mM digitonin, eluted by adding PreScission protease (0.1 mg, 3 hr at 4\u00b0C, supplemented with 1 mM DTT), and further purified by size-exclusion chromatography (Superose 6 Increase, 10/300 GL column, GE Healthcare) equilibrated with 20 mM HEPES pH 7.5, 150 mM NaCl and 1 mM digitonin. The peak fractions were pooled, concentrated to OD280\u00a0~1.0 (100 kDa cutoff;~0.5 ml), mixed with 0.2 ml lipid/DDM mixture (17 mM DDM, 10 mM lipids: POPE (Avanti) : POPG (Avanti) : cardiolipin (18:1, Avanti) with a 2:2:1 wt ratio) and 0.25 ml nanodisc scaffold protein (MSP1D1, Sigma, 5 mg/ml, in buffer containing 20 mM Tris-HCl, pH 7.4, 100 mM NaCl, 0.5 mM EDTA and 5 mM sodium cholate). After 1 hr incubation at 4\u00b0C,~300 mg wet Bio-Beads SM2 (Bio-Rad) were added and the sample was rotated at 4\u00b0C for\u00a0~16 hr to remove detergent. To remove excess EMRE and empty nanodiscs, the sample was further purified by Strep-Tactin Sepharose (Qiagen). Briefly, the nanodisc sample was bound to 0.3 ml Strep-Tactin Sepharose with rotation at 4\u00b0C for 30 min, washed with 10 ml buffer (20 mM HEPES pH 7.5, 150 mM NaCl), and eluted with 2 ml buffer (20 mM HEPES pH 7.5, 150 mM NaCl and 5 mM d-Desthiobiotin).\n\nMICU1 and MICU2 were expressed as a\u00a0single polypeptide with a linker connecting the two proteins. The construct consists of human MICU1 (residues 94\u2013476) connected to human MICU2 (residues 51\u2013434). Unstructured regions of the polypeptide and a Ser-Asn peptide comprise a 44 amino acid linker between the structured regions of MICU1 and MICU2 (spanning\u00a0~32 \u00c5 in the structure). The expression construct was obtained in a stepwise manner. cDNA for human MICU1 (encoding residues 94\u2013476) was amplified from a normal human brain cDNA library (BioChain, Inc) and ligated into the XhoI and EcoRI sites of an expression plasmid\u00a0(Goehring et al., 2014) to contain an N-terminal Venus tag and PreScission protease cleavage site (Venus-PreScission-MICU1). cDNA encoding human MICU2 (amino acids 51\u2013434) was amplified in the same manner and inserted into that plasmid, using MfeI/EcoRI and SalI restriction sites, to yield the final expression plasmid (Venus-PreScission-MICU1-MICU2). The expression and purification of MICU1-MICU2 followed a similar procedure to that for MCU and EMRE. The pellet from 0.3 L of cell culture (prepared using the same growth conditions as described above) was resuspended in 20 ml lysis buffer, DDM was added to a final concentration of 1%, and the sample was agitated at 4\u00b0C for 1 hr. The sample was clarified by centrifugation (60,000 g for 1 hr, 4\u00b0C) and the supernatant was filtered through a 0.22 \u03bcm polystyrene membrane (Millipore). 2 ml GFP nanobody resin was added and the sample was rocked at 4\u00b0C for 1 hr. The beads were washed with 100 ml buffer (20 mM HEPES pH 7.5, 500 mM NaCl and 1 mM DDM), the MICU1-MICU2 protein was eluted using 0.1 mg PreScission protease (16 hr, 4\u00b0C, supplemented with 1 mM DTT), and the sample was further purified by SEC (Superose 6 Increase, 10/300 GL) in 20 mM HEPES pH 7.5, 150 mM NaCl, 5 mM EDTA, 5 mM EGTA and 1 mM DDM. The peak fractions corresponding to the MICU1-MICU2 protein were pooled and concentrated to 1 mg/ml (Vivaspin 2, 100 kDa cutoff). To remove DDM,~300 mg wet Bio-Beads SM2 (Bio-Rad) were added and the sample was rotated (4\u00b0C, 3 hr). Purified MICU1-MICU2 protein was then combined with the purified with MCU-EMRE-nanodisc sample (using a molar ratio of 2 MICU1-MICU2 : one channel, 4\u00b0C, 30 min.) and the complex was purified by SEC (Superose 6 Increase, 10/300 GL column, GE Healthcare) in 20 mM HEPES pH 7.5, 150 mM NaCl, 5 mM EGTA. The peak fractions were collected, concentrated to 1 mg/ml (Vivaspin 2, 100 kDa cutoff), and used immediately for cryo-EM grid preparation. From the Maxchelator software\u00a0(Schoenmakers et al., 1992), and assuming a typical trace concentration of Ca2+ in buffer components (~2\u20135 \u03bcM), we estimate [Ca2+]free\u00a0~100 pM in the sample.\n\n### Preparation of Ca2+-bound MICU1-MICU2 bound to nanodiscs\n\nTo form empty nanodiscs, 0.2 ml of a lipid/DDM mixture (17 mM DDM, 10 mM lipids: POPE: POPG: cardiolipin [18:1] with a 2:2:1 wt ratio) was combined with 0.25 ml nanodisc scaffold protein (MSP1D1, Sigma, 5 mg/ml). After 1 hr incubation on ice, 0.4 ml buffer (20 mM HEPES pH 7.5, 150 mM NaCl) and\u00a0~200 mg wet Bio-Beads SM2 (Bio-Rad) were added, the sample was rotated at 4\u00b0C for\u00a0~16 hr to remove detergent, and then it was purified by size-exclusion chromatography (Superose 6 Increase, 10/300 GL column, GE Healthcare; equilibrated with 20 mM HEPES pH 7.5, 150 mM NaCl). The peak fractions were pooled, combined with purified MICU1-MICU2 protein (using a molar ratio of 1 MICU1-MICU2 : 1.5 nanodisc scaffold protein; 4\u00b0C, 30 min.), and the complex was purified by size-exclusion chromatography (Superose 6 Increase, 10/300 GL column, GE Healthcare; equilibrated with 20 mM HEPES pH 7.5, 150 mM NaCl). The peak fractions were collected, concentrated to 0.5 mg/ml (Vivaspin 2, 100 kDa cutoff), CaCl2 was added to a final concentration of 1 mM, and the sample was used for cryo-EM grid preparation.\n\n### EM sample preparation and data acquisition\n\nFor all samples, 4 \u03bcl of purified protein was applied to glow-discharged (10 s) Quantifoil R 1.2/1.3 grids (Au 400; Electron Microscopy Sciences) and plunge-frozen in liquid nitrogen-cooled liquid ethane, using a Vitrobot Mark IV (FEI) operated at 4\u00b0C with a blotting time of 2\u20133 s (blot force 0) with 100% humidity. Grids were clipped and loaded into a 300 keV Titan Krios microscope (FEI) equipped with a Gatan K3 direct electron detector. Micrographs were collected in super-resolution mode (pixel size of 0.532 \u00c5) with a nominal defocus range of \u22121.0 to \u22123.0 \u03bcm. The dose rate was 20 electrons/pixel/s. Images were recorded for 4 s with 0.1 s subframes (40 total frames), corresponding to a total dose of 71 electrons per \u00c52.\n\n### Image processing and model building\n\nFor the holocomplex, 21,115 movie stacks were gain-corrected, twofold binned (using a pixel size of 1.1 \u00c5), motion corrected, and dose weighted using MotionCor2 (Zheng et al., 2017). Contrast transfer function (CTF) estimates were performed in CTFFIND4 using non-dose weighted micrographs (Rohou and Grigorieff, 2015). 19,972 micrographs with CtfMaxResolution values better than 4 \u00c5 were selected for further processing. 17,440,131 particles were picked automatically and extracted (using a binned pixel size of 4.4 \u00c5) using RELION 3.0 (Zivanov et al., 2018). These particles were then imported into cryoSPARC v.2 (Punjani et al., 2017). The particles were cleaned-up by one round of Ab initio reconstruction and two rounds of heterogeneous refinement. 2,388,041 particles from the best classes were selected and subjected to non-uniform refinement in cryoSPARC v.2, which yielded a reconstruction at\u00a0~9.4 \u00c5 overall resolution. The refined particles were then centered and re-extracted in RELION 3.0 with a pixel size of 2.2 \u00c5, imported into cryoSPARC v.2 for another two rounds of heterogeneous refinement. 761,813 particles from the best classes were chosen and used for non-uniform refinement in cryoSPARC v.2, which yielded a reconstruction at\u00a0~4.4 \u00c5 overall resolution. The refined particles were centered and re-extracted in RELION 3.0 with a pixel size of 1.1 \u00c5, and imported into cryoSPARC v.2 for another two rounds of heterogeneous refinement. 510,869 particles from the best class were subjected into non-uniform refinement in cryoSPARC v.2, and this yielded a reconstruction at 3.9 \u00c5 overall resolution. One round of Bayesian polishing in Relion 3.0 improved the resolution to 3.6 \u00c5. After local CTF refinement in cryoSPARC v.2 and another round of Bayesian polishing in RELION 3.0, the particles were further classified by heterogeneous refinement in cryoSPARC v.2 and 3D classification (focused classification on the TMD) in RELION 3.0. 350,160 particles from the classes with a more well-defined TMD region were chosen and subjected to 3D auto refinement in RELION 3.0. Postprocessing in RELION 3.0 (using a calibrated pixel size of 1.064 \u00c5) yielded the final reconstruction at 3.3 \u00c5. All resolution estimates are based on gold-standard Fourier shell correlation (FSC) calculations. Estimation of the local resolution of the map was performed using Resmap (Kucukelbir et al., 2014).\n\nFor the structure of MICU1-MICU2 bound to nanodiscs and in 1 mM Ca2+, 4675 movie stacks were gain-corrected, twofold binned (using a pixel size of 1.064 \u00c5), motion corrected, and dose weighted using MotionCor2 (Zheng et al., 2017). Contrast transfer function (CTF) estimates were performed in CTFFIND4 using non-dose weighted micrographs (Rohou and Grigorieff, 2015). 4280 micrographs with CtfMaxResolution values better than 5 \u00c5 were selected for further processing. Particles were picked using Gaussian blob or 2D template-based autopicking and extracted (3,957,711 or 4,397,598 particles, respectively, with a binned pixel size of 2.128 \u00c5) using RELION 3.0 (Zivanov et al., 2018). The two sets of particles were then imported into cryoSPARC v.2 to do processing separately (Punjani et al., 2017). For the particles from Gaussian autopicking, the particles were cleaned-up by one round of Ab initio reconstruction and three rounds of heterogeneous refinement (using seven classes), and 135,522 particles from the best classes were selected and subjected to non-uniform refinement in cryoSPARC v.2, which yielded a reconstruction at\u00a0~4.3 \u00c5 overall resolution. For the particles picked using 2D templates, particles were cleaned-up by three rounds of heterogeneous refinement and 152,512 particles from the best classes were selected and subjected to non-uniform refinement in cryoSPARC v.2, which yielded a reconstruction at\u00a0~4.3 \u00c5 overall resolution. The two sets of particles were then merged, centered and re-extracted in RELION 3.0 with a pixel size of 1.064 \u00c5, and duplicate particles or particles with CtfMaxResolution values worse than 4 \u00c5 were removed. The resulting 181,934 particles were imported into cryoSPARC v.2 for additional rounds of heterogeneous refinement. 142,055 particles from the best classes were chosen and used for non-uniform refinement in cryoSPARC v.2, which yielded a reconstruction at\u00a0~3.7 \u00c5 overall resolution. One round of Bayesian polishing in Relion 3.0 improved the resolution to 3.5 \u00c5. After another round of Bayesian polishing in RELION 3.0, followed by CTF refinements (global and local) and several rounds of heterogeneous refinement in cryoSPARC v.2 (139,974 particles were selected), the resolution was improved to 3.2 \u00c5. The selected particles were subjected to additional Bayesian polishing in RELION 3.0, followed by CTF refinement (global and local) and heterogeneous refinement in cryoSPARC v.2 (yielding 115,687 particles), which yielded the final reconstruction at 3.1 \u00c5 resolution. All resolution estimates are based on gold-standard Fourier shell correlation (FSC) calculations. Estimation of the local resolution of the map was performed using Resmap (Kucukelbir et al., 2014).\n\nThe atomic model of the holocomplex was manually built and refined in real space using the COOT software (Emsley et al., 2010). A cryo-EM structure of TcMCU-EMRE (Wang et al., 2020) and X-ray structures of MICU1 and MICU2 (Kamer et al., 2019; Wang et al., 2014) were used as starting points. Further real-space refinement was carried out in PHENIX (Adams et al., 2010), to yield the final model\u00a0(Table 1). Structural figures were prepared with Pymol (pymol.org) (Schr\u00f6dinger, 2020), Chimera (Pettersen et al., 2004), ChimeraX (Goddard et al., 2018), and HOLE (Smart et al., 1996).\n\n### Mitochondrial Ca2+ uptake experiments\n\ncDNA encoding full-length wild type human MICU1 was amplified from a normal human brain cDNA library (BioChain, Inc), whereas an EF-hand mutant MICU1 gene with mutations abolishing Ca2+ binding (D231A, E244K, D421A, E432K) was chemically synthesized (Genewiz, Inc). Both genes were sub-cloned into the XhoI and EcoRI sites of a mammalian expression vector that includes a C-terminal Rho-1D4 antibody tag\u00a0(Baradaran et al., 2018; Molday and MacKenzie, 1983). Mutations F106A, R117A, Y121A, K126A and R129A were generated by PCR using mutagenic primers on the background of the EF-hand mutant and verified by sequencing. MICU1 knockout cells, derived from human HEK-293T cells and generously provided by V. Mootha (Kamer and Mootha, 2014) (authenticated using mitochondrial Ca2+ uptake assays (Figure 3\u2014figure supplement 5); tested negative for mycoplasma), were grown in DMEM media (Invitrogen). 3 \u03bcg of each plasmid was transfected into\u00a0~1.5\u00d7106 of these cells using Lipofectamine 3000 (Invitrogen), and the cells were grown for an additional 24 hr at 37\u00b0C before use.\n\nThe mitochondrial Ca2+ uptake assay using these cells was performed as described (Baradaran et al., 2018), with slight modifications. Briefly, after addition of 1 \u03bcM Calcium Green-5N (Life Technologies) and 0.05 mM digitonin, 20 \u03bcM CaCl2 (from a\u00a04 mM stock in water) was added at the 100 s time point to initiate mitochondrial Ca2+ uptake. The data plotted in Figure 3E were obtained from Ca2+ uptake curves (e.g. Figure 3\u2014figure supplement 5) in the following manner. A rate of Ca2+ uptake (uptake_rate) was defined as the slope of a linear fit of the Ca2+ uptake curve between 111 and 135 s. Relative uptake was then defined as: (uptake_rateUID-mutant \u2013 uptake_rateEF-hand-mutant) / (uptake_rateWT \u2013 uptake_rateEF-hand-mutant), where \u2018WT\u2019 represents wild type MICU1, \u2018EF-hand-mutant\u2019 represents MICU1 bearing the EF-hand mutations, and \u2018UID-mutant\u2019 represents a given mutation of the UID on the background of the EF-hand-mutant. From this equation, a relative uptake of 1 indicates a mitochondrial Ca2+ uptake rate equivalent to that observed for wild type MICU1 and a relative uptake of 0 indicates a mitochondrial Ca2+ uptake rate equivalent to that observed for the EF-hand-mutant.\n\n### Assessing the association of MICU1-MICU2 with liposomes\n\nTo prepare liposomes, 5 mg of dried lipids (POPE: POPG: cardiolipin [18:1] with a 2:2:1 wt ratio) was mixed with 1 ml reconstitution buffer (20 mM HEPES pH 7.5, 150 mM NaCl) and the sample was sonicated until homogeneous (~2 min). 20 \u03bcl of purified MICU1-MICU2 protein (0.5 mg/ml) was added to 80 \u03bcl of liposomes or 80 \u03bcl of reconstitution buffer, each supplemented with a final concentration of 1 mM CaCl2 or with\u00a01 mM EGTA and 1 mM EDTA. As a negative control, 20 \u03bcg of purified green fluorescent protein was combined with liposomes or buffer in the same manner. After incubation for 30 min at 4\u00b0C, the samples were centrifuged at 140,000 g (30 min at 4\u00b0C). The supernatants were removed and the pellets were resuspended for SDS-PAGE analysis (by resuspending the pellets in 40 \u03bcl reconstitution buffer, adding 40 \u03bcl SDS-PAGE loading buffer containing 100 mM DTT, and analyzing 20 \u03bcl by Coomassie-stained SDS-PAGE).\n\n### Materials availability\n\nCorrespondence and requests for materials should be addressed to SBL (Longs@mskcc.org).\n",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "ab5e978e-66b1-4451-8f4b-da3624a41e97",
+      "submission_id": "d6817606-d547-49e4-8fad-6d6f0c699822",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kenton J Swartz, National Institute of Neurological Disorders and Stroke, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59991.sa1](https://doi.org/10.7554/eLife.59991.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript reports cryo-EM structures of the mitochondrial calcium uniporter (MCU) in complex with the auxiliary subunit EMRE and the MICU1/MICU2 regulatory heterodimer. The authors also present structures of Ca2+-bound MICU1/MICU2 interacting with nanodiscs. Together, these structures provide remarkable insight into the mechanism by which the MICU1/MICU2 heterodimer gates the pore, occluding the mouth of the pore and preventing flux under resting (low) calcium conditions. The authors draw an analogy to pore-blocking toxins of potassium and sodium channels that inhibit by physically occluding the ion permeation pathways of these channels. The authors suggest a mechanism by which a conformational change in MICU1/MICU2 upon Ca2+ binding disrupts the binding to the MCU pore, displacing it to the membrane to support ion conduction. This is a very strong and impressive manuscript. The analysis of the structures is rigorous and well-supported by the literature and the transport data in the manuscript. The work is of high quality, expands and strongly enhances the results for human holocomplex recently published in Nature (Fan et al., 2020). The manuscript itself is clearly written and we think it should be published as soon as possible.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structures reveal gatekeeping of the mitochondrial Ca2+ uniporter by MICU1-MICU2\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Kenton Swartz as the Reviewing Editor and Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Alexander Sobolevsky (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis manuscript from Stephen Long's lab presents structures of the mitochondrial calcium uniporter (MCU) in complex with the auxiliary subunit EMRE and the MICU1/MICU2 regulatory heterodimer. The authors also present structures of Ca2+-bound MICU1/MICU2 interacting with nanodiscs. Together, these structures provide insight into the mechanism by which the MICU1/MICU2 heterodimer gates the pore, occluding the mouth of the pore and preventing flux under resting (low) calcium conditions. The authors draw an analogy to sodium channel inhibition by the pore-binding conotoxin KIIIA. The authors suggest a mechanism by which a conformational change in MICU1/MICU2 upon Ca2+ binding disrupts the binding to the MCU pore, displacing it to the membrane. This is a very strong and impressive manuscript. The analysis of the structures is rigorous and well-supported by the literature and the transport data in the manuscript. The work is of high quality, expands and strongly enhances the results for human holocomplex recently published in Nature (Fan et al., 2020). The manuscript itself is clearly written and we think it should be published as soon as possible.\n\nEssential revisions:\n\n1) The manuscript did not comment on the function of the beetle MCU(\u03b4 NTD)-EMRE channel core and whether it showed MICU1-dependent Ca2+ regulation. Would it be possible to show that the construct used was actually functional?\n\n2) The MICU1-MICU2 concatemer consists of human MICU1 (residues 94-476) connected to MICU2 (residues 51-434) by a 44 amino acid linker between the structured regions of MICU1 and MICU2. Considerable portions of both MICU1 and MICU2 were removed from the construct and an artificial linker was introduced to connect MICU1 and MICU2. Do the authors have data showing that this concatemer actually functions like the native MICU1-MICU2 heterodimer.\n\n3) The authors suggested that the more bent MICU1-MICU2-Ca2+ acts like a lever against the membrane to pry MICU1 from the mouth of the pore. However, Figure 5 (right panel) also indicates that the MICU1-MICU2 dimer would need to rotate 180 degrees to unblock the channel. Please consider revising Figure 5 and also Figure 5\u2014figure supplement 3. Another point regarding the lever mechanism. If MCU-EMRE resides in a curved membrane as indicated by the structure of the channel dimer (Figure 5\u2014figure supplement 3), the bent MICU1-MICU2-Ca2+ may not be able to force MICU1 out of the mouth of the pore. Alternative/additional discussion should be added to address this possibility.\n\n4) In high calcium conditions, MICU1-MICU2 heterodimers form dimers through MICU2-MICU2 interface as part of the recently published O-shaped uniplex (Fan et al., 2020). Is this dimer of heterodimers formation observed (may be in a small subset of particles) for the calcium-bound MICU1-MICU2 heterodimer in the present study?\n\n5) Is it possible to map the second MICU1-MICU2 heterodimer binding site on the MCU-EMRE-MICU1-MICU2 holocomplex observed in 2% of channel assemblies? Even at low resolution, it might be interesting to analyze this second binding interface. Would this interface be the same/different/overlap with the putative interface between MICU1 and MCU-EMRE in the O-shaped uniplex? Depending on the answer, it might be possible to speculate about the physiological relevance of this interface.\n",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b0c48115-ab48-44a9-8f87-5a47a9e5ecdb",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C1",
+      "claim": "The mitochondrial calcium uniporter is a Ca2+-gated ion channel complex that controls mitochondrial Ca2+ entry and regulates cell metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "The mitochondrial calcium uniporter is a Ca2+-gated ion channel complex that controls mitochondrial Ca2+ entry and regulates cell metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that is supported by established scientific knowledge and citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "209bb0ea-aa0b-4ab9-aa8b-a9b6b70f8eb4",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C2",
+      "claim": "MCU and EMRE form the channel of the mitochondrial calcium uniporter.",
+      "claim_type": "EXPLICIT",
+      "source": "MCU and EMRE form the channel while Ca2+-dependent regulation is conferred by MICU1 and MICU2 through an enigmatic process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the introduction (Baughman et al., 2011; Chaudhuri et al., 2013; De Stefani et al., 2011; Kov\u00e1cs-Bogd\u00e1n et al., 2014; Sancak et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "64d292f5-d5dc-43e0-a060-5a38b6a6895d",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C3",
+      "claim": "Ca2+-dependent regulation of the uniporter is conferred by MICU1 and MICU2.",
+      "claim_type": "EXPLICIT",
+      "source": "MCU and EMRE form the channel while Ca2+-dependent regulation is conferred by MICU1 and MICU2 through an enigmatic process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations throughout the manuscript (Csord\u00e1s et al., 2013; Kamer et al., 2017; Kamer and Mootha, 2014; Patron et al., 2014; Patron et al., 2019; Payne et al., 2017; Perocchi et al., 2010; Plovanich et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "5ca18be1-7910-4632-8274-9029b6b0a99a",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C4",
+      "claim": "A cryo-EM structure of an MCU-EMRE-MICU1-MICU2 holocomplex was determined at 3.3 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We present a cryo-EM structure of an MCU-EMRE-MICU1-MICU2 holocomplex comprising MCU and EMRE subunits from the beetle Tribolium castaneum in complex with a human MICU1-MICU2 heterodimer at 3.3 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the structural data presented in the manuscript, including Figure 1 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "8a76b836-8a34-4928-a564-861a63050c13",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C5",
+      "claim": "A uniporter interaction domain on MICU1 binds to a channel receptor site comprising MCU and EMRE subunits to inhibit ion flow under resting Ca2+ conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "With analogy to how neuronal channels are blocked by protein toxins, a uniporter interaction domain on MICU1 binds to a channel receptor site comprising MCU and EMRE subunits to inhibit ion flow under resting Ca2+ conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data presented in Figures 2 and 3, and functional data in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "2e185bd7-e32d-4963-a133-92a9265d1312",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C6",
+      "claim": "A Ca2+-bound structure of MICU1-MICU2 was determined at 3.1 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "A Ca2+-bound structure of MICU1-MICU2 at 3.1 \u00c5 resolution indicates how Ca2+-dependent changes enable dynamic response to cytosolic Ca2+ signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data presented in Figure 4 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "8c135d8a-1734-40a2-87e0-17e1f14bb8fb",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C7",
+      "claim": "The uniporter is one of the most selective Ca2+ channels known.",
+      "claim_type": "EXPLICIT",
+      "source": "The uniporter is one of the most selective Ca2+ channels known and it is only activated once cytosolic Ca2+ levels reach a threshold (of approximately 0.4\u20133 \u03bcM) (Csord\u00e1s et al., 2013; Kirichok et al., 2004; Liu et al., 2016; Mallilankaraman et al., 2012b; Payne et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "224f9a92-9cb2-4ca9-9216-770f09a91217",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C8",
+      "claim": "The uniporter is only activated once cytosolic Ca2+ levels reach a threshold of approximately 0.4\u20133 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The uniporter is one of the most selective Ca2+ channels known and it is only activated once cytosolic Ca2+ levels reach a threshold (of approximately 0.4\u20133 \u03bcM) (Csord\u00e1s et al., 2013; Kirichok et al., 2004; Liu et al., 2016; Mallilankaraman et al., 2012b; Payne et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "9d474b63-738c-4bd6-84af-1d224ef89b57",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C9",
+      "claim": "MCU constitutes the pore of the uniporter through which Ca2+ ions flow.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein MCU constitutes the pore of the uniporter through which Ca2+ ions flow and EMRE, a small transmembrane protein that associates with MCU, is necessary for Ca2+ uptake in metazoan organisms (Baughman et al., 2011; Chaudhuri et al., 2013; De Stefani et al., 2011; Kov\u00e1cs-Bogd\u00e1n et al., 2014; Sancak et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "73baf0a0-df64-44ea-8909-fc6269dbef4e",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C10",
+      "claim": "EMRE is necessary for Ca2+ uptake in metazoan organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein MCU constitutes the pore of the uniporter through which Ca2+ ions flow and EMRE, a small transmembrane protein that associates with MCU, is necessary for Ca2+ uptake in metazoan organisms (Baughman et al., 2011; Chaudhuri et al., 2013; De Stefani et al., 2011; Kov\u00e1cs-Bogd\u00e1n et al., 2014; Sancak et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "3570b04d-5b7c-4b52-8d47-b12026085a1d",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C11",
+      "claim": "MICU1-MICU2 heterodimers reside in the intermembrane space (IMS).",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have resolved that MICU1-MICU2 heterodimers reside in the intermembrane space (IMS) where they regulate the uniporter by responding to [Ca2+]IMS (Kamer and Mootha, 2014; Patron et al., 2014; Plovanich et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "3717d9b4-e1c3-4193-9391-4f27944ba9ac",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C12",
+      "claim": "MICU1-MICU2 heterodimers regulate the uniporter by responding to [Ca2+]IMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have resolved that MICU1-MICU2 heterodimers reside in the intermembrane space (IMS) where they regulate the uniporter by responding to [Ca2+]IMS (Kamer and Mootha, 2014; Patron et al., 2014; Plovanich et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "c697f2c8-98ab-4e02-82fc-d459a674d924",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C13",
+      "claim": "[Ca2+]IMS closely follows the cytosolic Ca2+ concentration due to the permeability of the outer mitochondrial membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "[Ca2+]IMS, which closely follows the cytosolic Ca2+ concentration due to the permeability of the outer mitochondrial membrane, is sensed by EF-hand motifs in each protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about mitochondrial membrane permeability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "84b459e0-1a89-470e-8280-3b1a8afbf28b",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C14",
+      "claim": "[Ca2+]IMS is sensed by EF-hand motifs in MICU1 and MICU2.",
+      "claim_type": "EXPLICIT",
+      "source": "[Ca2+]IMS, which closely follows the cytosolic Ca2+ concentration due to the permeability of the outer mitochondrial membrane, is sensed by EF-hand motifs in each protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data showing EF-hand domains in MICU1 and MICU2 (Figure 4).",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "88f61ff2-de88-4694-8eaf-b34ec7b4b2b5",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C15",
+      "claim": "At resting cytosolic [Ca2+] (~100 nM), MICU1-MICU2 and MICU1-MICU3 heterodimers prevent ion conduction through the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "At the ~100 nM resting level of [Ca2+]cytosol, MICU1-MICU2 and MICU1-MICU3 heterodimers prevent ion conduction through the channel, and they permit it when Ca2+ levels rise (Csord\u00e1s et al., 2013; Kamer et al., 2017; Kamer and Mootha, 2014; Liu et al., 2016; Mallilankaraman et al., 2012b; Paillard et al., 2017; Patron et al., 2014; Patron et al., 2019; Payne et al., 2017; Phillips et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "17bbf8dd-350b-4904-a15b-1ce8ded847df",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C16",
+      "claim": "MICU1-MICU2 and MICU1-MICU3 heterodimers permit ion conduction when Ca2+ levels rise.",
+      "claim_type": "EXPLICIT",
+      "source": "At the ~100 nM resting level of [Ca2+]cytosol, MICU1-MICU2 and MICU1-MICU3 heterodimers prevent ion conduction through the channel, and they permit it when Ca2+ levels rise (Csord\u00e1s et al., 2013; Kamer et al., 2017; Kamer and Mootha, 2014; Liu et al., 2016; Mallilankaraman et al., 2012b; Paillard et al., 2017; Patron et al., 2014; Patron et al., 2019; Payne et al., 2017; Phillips et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "7785019d-a204-4d72-ba25-c2a5916a828e",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C17",
+      "claim": "The amino acids facing the IMS are identical between human and beetle MCU/EMRE.",
+      "claim_type": "EXPLICIT",
+      "source": "The amino acids facing the IMS, where MICU1-MICU2 resides, are identical between human and beetle MCU/EMRE and adopt analogous conformations in structures of the human and beetle channels (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 1\u2014figure supplement 1 and structural comparison in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "ded8365a-7555-49c7-aa37-077b45b5d429",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C18",
+      "claim": "Cardiolipin is important for the function of the uniporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiolipin was included because we recently identified that this lipid is important for the function of the uniporter (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "1b6f54d7-2b2f-4028-ab51-6d357ecea42e",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C19",
+      "claim": "The NTD of metazoan MCU is dispensable for mitochondrial Ca2+ uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the NTD is dispensable for mitochondrial Ca2+ uptake (Baradaran et al., 2018; Oxenoid et al., 2016; Wang et al., 2020; Wang et al., 2019), we removed this domain for high-resolution structural studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "7be848cd-2111-48cf-8d0f-b83b7d1a07bd",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C20",
+      "claim": "TcMCU\u0394NTD and TcEMRE coexpressed catalyze Ca2+ uptake into human mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently shown that the TcMCU and TcEMRE constructs used for structural analysis (TcMCU\u0394NTD and TcEMRE coexpressed) catalytze Ca2+ uptake into human mitochondria (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "b4c6f9ad-48c3-4c37-bbd6-3b0c692a95cd",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C21",
+      "claim": "A disulfide bond formed between flexible C-terminal regions of MICU1 and MICU2 helps stabilize the heterodimer in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, a disulfide bond formed between flexible C-terminal regions of MICU1 and MICU2 helps stabilize the heterodimer (Kamer et al., 2019; Patron et al., 2014; Petrungaro et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "8582629f-d2e7-4c56-8fda-a68743568dc1",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C22",
+      "claim": "Most channels were associated with one MICU1-MICU2 heterodimer in the cryo-EM data.",
+      "claim_type": "EXPLICIT",
+      "source": "From a large dataset containing approximately 17 million particle images, single particle analysis indicated that most channels were associated with one MICU1-MICU2 heterodimer (Figure 1A, Figure 1\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-EM data analysis shown in Figure 1A and Figure 1\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "f5e678fb-4c66-41cb-b0f1-c36498e15367",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C23",
+      "claim": "Two MICU1-MICU2 complexes were observed in approximately 2% of channel assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "Two MICU1-MICU2 complexes were observed in approximately 2% of channel assemblies (Figure 1A, Figure 1\u2014figure supplement 4A, as assessed from 2D class averages of side views).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cryo-EM data analysis shown in Figure 1A and Figure 1\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "e5026ee3-29ea-47e1-92ec-8746f2fbcbe7",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C24",
+      "claim": "MICU1 and MICU2 associate as a heterodimer and bind to the surface of the channel at the IMS entrance of its pore.",
+      "claim_type": "EXPLICIT",
+      "source": "MICU1 and MICU2 associate as a heterodimer and bind to the surface of the channel at the IMS entrance of its pore (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "1e75071d-53a5-4ca2-8dc4-1b0490cb6e00",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C25",
+      "claim": "Interactions with the channel are mediated solely by MICU1; MICU2 makes no visible contacts with MCU or EMRE.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions with the channel are mediated solely by MICU1; MICU2 makes no visible contacts with MCU or EMRE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "a7ec2982-ae25-4964-aa3f-40d85bb2a1f3",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C26",
+      "claim": "The conformation of the pore is indistinguishable from that observed in a cryo-EM structure of TcMCU-EMRE without MICU1-MICU2.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformation of the pore is indistinguishable from that observed in a cryo-EM structure of TcMCU-EMRE without MICU1-MICU2 (Figure 2C, Figure 2\u2014figure supplement 1; Wang et al., 2020), which suggests that unlike gating conformational changes in many other ion channels, control by MICU1-MICU2 is not accomplished through motions of pore-lining helices.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 2C and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "460d441f-b7b2-4916-a934-8beb0afe71b9",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C27",
+      "claim": "Control by MICU1-MICU2 is not accomplished through motions of pore-lining helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformation of the pore is indistinguishable from that observed in a cryo-EM structure of TcMCU-EMRE without MICU1-MICU2 (Figure 2C, Figure 2\u2014figure supplement 1; Wang et al., 2020), which suggests that unlike gating conformational changes in many other ion channels, control by MICU1-MICU2 is not accomplished through motions of pore-lining helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural comparison showing no change in pore conformation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "2609dcf4-fd54-43f2-8bcd-a100c7897db7",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C28",
+      "claim": "The ion-selectivity filter is formed by a fourfold assembly of the WDXXEP signature sequences of MCU subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the holocomplex provides the most well-defined density to date for the ion-selectivity filter, which is formed by a fourfold assembly of the WDXXEP signature sequences of MCU subunits (Figure 1\u2014figure supplement 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 1\u2014figure supplement 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "9e0d0a78-3b58-43b2-986c-0bfc7c9263d7",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C29",
+      "claim": "The 'D' and 'E' residues of the WDXXEP motif (Asp 261 and Glu 264) form two rings of acidic amino acids that line the pore of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'D' and 'E' residues of this motif (Asp 261 and Glu 264) form two rings of acidic amino acids that line the pore of the channel and can coordinate Ca2+ through water-mediated ('D' ring) or direct interactions ('E' ring) (Baradaran et al., 2018; Fan et al., 2018; Nguyen et al., 2018; Wang et al., 2020; Wang et al., 2019; Yoo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations and structural data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "2a8da261-d587-463e-8f72-e3c4558ffd76",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C30",
+      "claim": "Strong density assigned as Ca2+ is present within the 'E' ring under conditions of <1 nM Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong density that we assign as Ca2+ on the basis of its coordination and analogy to other structures of MCU is present within the 'E' ring (Figure 1\u2014figure supplement 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 1\u2014figure supplement 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "e7bddd9d-8686-453b-9438-f896099c7a22",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C31",
+      "claim": "The Ca2+ site in the 'E' ring is the high-affinity (Kd \u22642 nM) Ca2+ binding site previously postulated from electrical recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Its presence under conditions of <1 nM Ca2+ identifies this site as the high-affinity (Kd \u22642 nM) Ca2+ binding site previously postulated from electrical recordings made from mitoplasts that is thought to contribute to the channel's high selectivity for Ca2+ (Kirichok et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observation and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "eb6cabc5-9660-48cd-b791-b936d9bf968e",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C32",
+      "claim": "MICU1-MICU2 binding does not displace Ca2+ from the 'E' ring site.",
+      "claim_type": "EXPLICIT",
+      "source": "MICU1-MICU2 binding does not displace Ca2+ from this site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data showing Ca2+ present in the 'E' ring in the holocomplex structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "fc2ff53c-661e-4431-be0b-023a9768007a",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C33",
+      "claim": "Three EMRE subunits are observed at the periphery of the TMD (EMRE 1\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "Three EMRE subunits are observed at the periphery of the TMD (EMRE 1\u20133).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "4c52af86-c7aa-48ef-a9e3-531fcc804400",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C34",
+      "claim": "Density for a fourth EMRE subunit is conspicuously absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Density for a fourth, like that observed in structures without MICU1-MICU2 (Wang et al., 2020; Wang et al., 2019), is conspicuously absent (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "98bd9dcf-4cd1-4783-97af-337a47187c79",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C35",
+      "claim": "MICU1 interacts with only EMRE 1, which has the most well-defined density.",
+      "claim_type": "EXPLICIT",
+      "source": "MICU1 interacts with only EMRE 1, which has the most well-defined density (Figure 1B\u2013D, Figure 1\u2014figure supplement 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 1B\u2013D and Figure 1\u2014figure supplement 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "fba5d39e-9e89-4f8f-93f8-8462a51e73e5",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C36",
+      "claim": "MICU1 contains three domains: an N-lobe, a C-lobe, and an N-terminal domain (UID).",
+      "claim_type": "EXPLICIT",
+      "source": "MICU1 contains three domains (Wang et al., 2014): an N-lobe and a C-lobe, which contain its Ca2+-binding sites, and an N-terminal domain, which we name the uniporter interaction domain (UID) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 3A and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "7e697828-1ec7-45d5-a503-08fdc12a99c0",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C37",
+      "claim": "The UID mediates all observed interactions with the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The UID mediates all observed interactions with the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "5fbc3840-4998-41e3-8ea3-9d4677493fa0",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C38",
+      "claim": "The UID comprises three \u03b1-helices (\u03b11, \u03b12, \u03b13) and a small \u03b2-sheet formed by strands \u03b21, \u03b22 and \u03b23.",
+      "claim_type": "EXPLICIT",
+      "source": "The UID comprises three \u03b1-helices (\u03b11, \u03b12, \u03b13) and a small \u03b2-sheet formed by strands \u03b21, \u03b22 and \u03b23 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "5d2513ef-c164-41ba-9e62-8c48ede46273",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C39",
+      "claim": "Residues on \u03b11 and \u03b12 and a tight turn connecting these helices at Pro 124 directly contact the IMS surface of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues on \u03b11 and \u03b12 and a tight turn connecting these helices at Pro 124 directly contact the IMS surface of the channel (Figure 3D,F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 3D, F, and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "2ac755dc-0928-43e8-a4d1-f769acb89697",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C40",
+      "claim": "The receptor site for MICU1 on the channel is relatively flat and spans three MCU subunits and one EMRE subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The receptor is relatively flat and spans three MCU subunits and one EMRE subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "34c4160b-5917-45b9-ab12-4b1f23f126d2",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C41",
+      "claim": "The amino acids comprising the receptor site are conserved among metazoan channels and are identical between human and beetle channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The amino acids comprising it (MCU residues: Trp 255B, Tyr 258A&B, Ser 259B, Asp 261A,B&D, and Ile 262A&B, and EMRE residue Leu 92, Figure 3C) are conserved among metazoan channels and are identical between human and beetle channels (Figure 1\u2014figure supplement 1A\u2013B, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 1\u2014figure supplement 1A\u2013B and structural comparison in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "6adacf62-e813-402f-8a02-957047105524",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C42",
+      "claim": "The conformation of the receptor site is indistinguishable from the unliganded conformations of both beetle and human MCU-EMRE complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from the absence of EMRE 4, the conformation of the receptor site is indistinguishable from the unliganded conformations of both beetle and human MCU-EMRE complexes (Figure 1\u2014figure supplement 2; Wang et al., 2020; Wang et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "8da27aa2-3262-4563-bebd-c65ad335561f",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C43",
+      "claim": "The interacting residues on \u03b11 (Phe 106, Arg 107, Lys 110, Val 111, Tyr 114, Arg 117, and Tyr 121) are identical in beetle MICU1 and conserved among animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The interacting residues on \u03b11 (Phe 106, Arg 107, Lys 110, Val 111, Tyr 114, Arg 117, and Tyr 121) are identical in beetle MICU1 and conserved among animals (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "51c4c676-ffc6-413f-a353-77ca027a3f7f",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C44",
+      "claim": "A hydrophobic interaction between Phe 106 of \u03b11 and Leu 92 of EMRE comprises the only contact observed between MICU1 and EMRE.",
+      "claim_type": "EXPLICIT",
+      "source": "A hydrophobic interaction between Phe 106 of \u03b11 and the IMS end of EMRE's transmembrane helix at Leu 92, which is also highly conserved (Figure 1\u2014figure supplement 1B), comprises the only contact observed between MICU1 and EMRE (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "c3b432eb-2c00-465a-9389-f7a2b3310f14",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C45",
+      "claim": "The mouth of the pore is coordinated by Lys 126 and Arg 129 from \u03b12, and Ser 122 of the \u03b11-\u03b12 turn through a network of hydrogen bonds that involves three of the four MCU-Asp 261 residues of the 'D' ring.",
+      "claim_type": "EXPLICIT",
+      "source": "The mouth of the pore is coordinated by Lys 126 and Arg 129 from \u03b12, and Ser 122 of the \u03b11-\u03b12 turn through a network of hydrogen bonds that involves three of the four MCU-Asp 261 residues of the 'D' ring (Figure 3D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 3D and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "34f35fb1-66f8-420d-8635-afd96e2edfee",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C46",
+      "claim": "The 'D' ring is involved in MICU1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms the previous hypothesis that the 'D' ring is involved in MICU1 binding (Paillard et al., 2018; Phillips et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data and citations to previous hypotheses.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "be973ec6-429e-4293-8cd0-f7746a4c57fe",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C47",
+      "claim": "The MICU1 residues participating in the hydrogen-bonding network (Tyr 114, Ser 122, Asp 125, Lys 126, Arg 129, and Asp 169) are conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "The MICU1 residues participating in the hydrogen-bonding network (Tyr 114, Ser 122, Asp 125, Lys 126, Arg 129, and Asp 169) are conserved (Figure 3\u2014figure supplement 3), but none were previously predicted to mediate interactions with the channel (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "52f840ea-2a6a-4238-b300-5ecbc18f8511",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C48",
+      "claim": "Robust mitochondrial Ca2+ uptake was observed when wild type MICU1 was expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, robust mitochondrial Ca2+ uptake was observed when wild type MICU1 was expressed and uptake was suppressed by mutations within the Ca2+-binding EF-hands of MICU1 that cause it to constitutively inhibit the channel (Figure 3E, Figure 3\u2014figure supplement 5; Kamer and Mootha, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the functional data shown in Figure 3E and Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "b55bec43-be2b-466f-a02d-109682c20e63",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C49",
+      "claim": "Uptake was suppressed by mutations within the Ca2+-binding EF-hands of MICU1 that cause it to constitutively inhibit the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, robust mitochondrial Ca2+ uptake was observed when wild type MICU1 was expressed and uptake was suppressed by mutations within the Ca2+-binding EF-hands of MICU1 that cause it to constitutively inhibit the channel (Figure 3E, Figure 3\u2014figure supplement 5; Kamer and Mootha, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the functional data shown in Figure 3E and Figure 3\u2014figure supplement 5, and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "8c5d3aef-d341-44da-b93c-ef15f5d1a854",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C50",
+      "claim": "Residues that interact with MCU or EMRE relieve inhibition when mutated to alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues that were observed to interact with MCU or EMRE relieve this inhibition when mutated to alanine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the functional data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "7bdf7a4f-32cd-4953-9028-0837f1c9fc17",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C51",
+      "claim": "A single K126A mutation essentially eliminates inhibition by MICU1.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys 126 seems particularly crucial \u2013 a single K126A mutation essentially eliminates inhibition by MICU1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the functional data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "497e9867-0452-4edd-8f73-f7574664a81a",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C52",
+      "claim": "The regions of the UID that interact with the channel are absent in MICU2 or MICU3.",
+      "claim_type": "EXPLICIT",
+      "source": "The regions of the UID that interact with the channel are absent in MICU2 or MICU3 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "e1f8feab-7057-4d2b-9e27-38018c741f81",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C53",
+      "claim": "The \u03b11 helix, the conserved Pro 124 in the bend between \u03b11 and \u03b12, and residues that interact with the 'D' ring are unique to MICU1.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b11 helix, the conserved Pro 124 in the bend between \u03b11 and \u03b12, and residues that interact with the 'D' ring are unique to MICU1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural and sequence comparison data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "070f5dbe-aeae-4cb9-80f7-3526827a401d",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C54",
+      "claim": "The uniqueness of the UID to MICU1 explains why MICU1 is distinct from MICU2 and MICU3 in its ability to interact with MCU/EMRE.",
+      "claim_type": "EXPLICIT",
+      "source": "This explains why MICU1 is distinct from MICU2 and MICU3 in its ability to interact with MCU/EMRE, and it explains the observation that MICU2 and MICU3 have non-redundant roles in comparison to MICU1 in the regulation of the channel (Kamer and Mootha, 2014; Patron et al., 2014; Patron et al., 2019; Payne et al., 2017; Xing et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "43793c67-e9b6-4f3d-8495-c346c3b462dd",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C55",
+      "claim": "The interaction with the pore is reminiscent of the interaction between \u03bc-conotoxin KIIIA and the Nav1.2 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction with the pore is reminiscent of the interaction between \u03bc-conotoxin KIIIA, a small pore-blocking peptide toxin found in the venom of a cone snail, with the extracellular surface of the neuronal Nav1.2 channel (Pan et al., 2019; Zhang et al., 2007; Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an analogy drawn from structural comparison shown in Figure 3\u2014figure supplement 6 and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "e70bf596-2c90-4bb5-9633-e5b1b3cf346e",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C56",
+      "claim": "A short \u03b1-helical region of \u03bc-conotoxin KIIIA lies horizontally at the entrance of the pore of Nav1.2, in a similar manner to the binding of the \u03b12 helix of MICU1 with the uniporter.",
+      "claim_type": "EXPLICIT",
+      "source": "A short \u03b1-helical region of the toxin lies horizontally at the entrance of the pore of Nav1.2, in a similar manner to the binding of the \u03b12 helix of MICU1 with the uniporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analogy drawn from structural comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "d786f490-e0b9-4ea3-9793-d7ac2dc16886",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C57",
+      "claim": "An arginine and a lysine residue separated by one turn of the toxin's \u03b1-helix coordinate acidic amino acids at the entrance of the selectivity filter in Nav1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the UID-uniporter interface, an arginine and a lysine residue that are separated by one turn of the toxin's \u03b1-helix coordinate acidic amino acids at the entrance of the selectivity filter (Figure 3D and Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 3D and Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "c432927a-1234-4285-b968-72ef999192ec",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C58",
+      "claim": "\u03bc-conotoxin KIIIA blocks approximately 90% of Na+ current though the Nav1.2 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of the toxin is slightly off-center such that two of four analogous acidic amino acids are coordinated and the pore is not completely occluded \u2013 nevertheless this toxin blocks approximately 90% of Na+ current though the channel (Zhang et al., 2007; Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and structural data shown in Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "447271c3-1938-40d5-8b54-8c34435c1d60",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C59",
+      "claim": "The UID interacts with three of the four 'D'-ring amino acids at the mouth of the uniporter's pore.",
+      "claim_type": "EXPLICIT",
+      "source": "The UID interacts with three of the four 'D'-ring amino acids at the mouth of the uniporter's pore and the occlusion of the pore is more extensive than observed for Nav1.2 by \u03bc-conotoxin KIIIA (Figure 2, Figure 3, Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figures 2, 3, and Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "e8fa7b98-8ab0-4b11-9629-465746193038",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C60",
+      "claim": "The occlusion of the pore by the UID is more extensive than observed for Nav1.2 by \u03bc-conotoxin KIIIA.",
+      "claim_type": "EXPLICIT",
+      "source": "The UID interacts with three of the four 'D'-ring amino acids at the mouth of the uniporter's pore and the occlusion of the pore is more extensive than observed for Nav1.2 by \u03bc-conotoxin KIIIA (Figure 2, Figure 3, Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figures 2, 3, and Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "5a9b71c5-ca55-40c9-b062-d4bd3ce0adaa",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C61",
+      "claim": "MICU1 binding inhibits the flow of Ca2+ ions by both obstructing the IMS entrance of the pore and by shielding the negative charge of the 'D' ring through coordination with basic amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the holocomplex and its similarity to a pore-blocking toxin complex indicate that MICU1 binding inhibits the flow of Ca2+ ions by both obstructing the IMS entrance of the pore and by shielding the negative charge of the 'D' ring through coordination with basic amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and analogy to toxin-channel interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "871ed2b7-0b45-4213-83ad-ad9476105910",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C62",
+      "claim": "The MICU1-MICU2 portion of the holocomplex is roughly parallelogram shaped, with overall dimensions of approximately 70 \u00d7 65 \u00d7 35 \u00c5, under resting conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The MICU1-MICU2 portion of the holocomplex is roughly parallelogram shaped, with overall dimensions of approximately 70 \u00d7 65 \u00d7 35 \u00c5, under resting conditions in which its EF-hand domains are in Ca2+-free apo states (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "5040e678-70cd-48b7-babe-94850207a605",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C63",
+      "claim": "One of the large relatively-flat surfaces of MICU1-MICU2 faces and curves slightly toward the membrane due to a slight bend between MICU1 and MICU2.",
+      "claim_type": "EXPLICIT",
+      "source": "One of its large relatively-flat surfaces faces and curves slightly toward the membrane due to a slight bend between MICU1 and MICU2 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "badb1da3-d3f8-4a04-a6a8-8fe8b8a75be9",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C64",
+      "claim": "The MICU1-MICU2 heterodimer has pseudo twofold symmetry and two analogous interfaces between the subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The heterodimer has pseudo twofold symmetry and two analogous interfaces between the subunits (Figure 4A, Figure 4\u2014figure supplement 1A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 4A and Figure 4\u2014figure supplement 1A\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "86f5ad37-30af-4835-bedb-96b71662c847",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C65",
+      "claim": "Hydrophobic amino acids predominate the interfaces between MICU1 and MICU2.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydrophobic amino acids predominate the interfaces, with MICU1-Met 229, MICU1-Phe 383, MICU2-Met 183, and MICU2-Met 337 making analogous and particularly extensive contacts within them (Figure 4\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 4\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "68ec4ce5-3442-4f7a-b992-ef129da8bc09",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C66",
+      "claim": "The interfacial residues between MICU1 and MICU2 are conserved in MICU3.",
+      "claim_type": "EXPLICIT",
+      "source": "The interfacial residues are conserved in MICU3 (Figure 4\u2014figure supplement 2), which suggests that the neuron-specific MICU1-MICU3 heterodimer has a similar arrangement.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "015f064d-e6c3-4140-9bf6-e49e595401c8",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C67",
+      "claim": "All four Ca2+-binding EF-hand motifs of the MICU1-MICU2 heterodimer are in the apo state under resting [Ca2+] conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As would be expected under resting [Ca2+] conditions, all four Ca2+-binding EF-hand motifs of the MICU1-MICU2 heterodimer ('EF1' and 'EF4' of both subunits) are in the apo state and the heterodimer is superimposable with a previous apo structure of MICU1-MICU2 alone (Park et al., 2020; Figure 1\u2014figure supplement 6, Figure 4\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 1\u2014figure supplement 6 and Figure 4\u2014figure supplement 3A, and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "3f8828de-c7c2-48ee-b303-be4c3e3a7ad4",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C68",
+      "claim": "MICU1-MICU2 has an affinity for cardiolipin.",
+      "claim_type": "EXPLICIT",
+      "source": "From biochemical analysis of the purified protein, and in acoord with a previous report that MICU1-MICU2 has an affinity for cardiolipin (Kamer et al., 2017), we found that the heterodimer associates with lipid membranes and lipid nanodiscs that contain cardiolipin (Figure 4\u2014figure supplement 4, Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by biochemical data shown in Figure 4\u2014figure supplement 4 and Figure 4F, and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "f72b56b0-c989-4a40-acec-58e005730f08",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C69",
+      "claim": "The association of MICU1-MICU2 with lipid membranes is independent of Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "This association is independent of Ca2+ - both Ca2+-free and Ca2+-bound heterodimers bind to liposomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by biochemical data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "098ca795-d618-4a4c-8366-3a71fa3d5dca",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C70",
+      "claim": "Ca2+ binding makes the MICU1-MICU2 heterodimer more compact and markedly more bent between MICU1 and MICU2.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure reveals a substantial conformational change upon Ca2+ binding that makes the heterodimer more compact and markedly more bent between MICU1 and MICU2 (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 4A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "2932019f-f767-49ba-a155-cedfebaf47e0",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C71",
+      "claim": "Ca2+ dependent rearrangements of the EF-hand motifs produce the bend in MICU1-MICU2.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+ dependent rearrangements of the EF-hand motifs that involve their helix turn helix elements produce this bend (Figure 4C\u2013D, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 4C\u2013D and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "3f15a223-d763-4e7f-902a-59f43f74c631",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C72",
+      "claim": "Ca2+ binding induces a rotation of the UID relative to MICU1.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+ binding also induces a rotation of the UID relative to MICU1 (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "3fa28c6e-a872-42b7-b9f5-a8a2098a9357",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C73",
+      "claim": "The side of the MICU1-MICU2 heterodimer that associates with the nanodisc is the same as the one that faces the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The side of the heterodimer that associates with the nanodisc is the same as the one that faces the channel (Figures 1A and 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figures 1A and 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "62a7f0fc-551e-4766-b9a3-7367cee7ce35",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C74",
+      "claim": "The bending motion of MICU1-MICU2 acts like a lever against the membrane to pry MICU1 from the mouth of the pore when [Ca2+]IMS is elevated.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than inserting into the membrane, we hypothesize that the bending motion of MICU1-MICU2 acts like a lever against the membrane to pry MICU1 from the mouth of the pore when [Ca2+]IMS is elevated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the structural data and thermodynamic considerations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "fb27cf2f-2e55-4818-8599-594ac089974a",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C75",
+      "claim": "The Ca2+-dependent conformational changes within MICU1 cause a rotation of the UID that could disfavor binding to the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the Ca2+-dependent conformational changes within MICU1 cause a rotation of the UID that could disfavor binding to the channel (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "f537370a-b58d-4e99-acfa-be2f4398873b",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C76",
+      "claim": "The conformational changes would dislodge the UID from the blocking conformation, allowing Ca2+ ions to permeate though the channel while [Ca2+]IMS remains elevated.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational changes would dislodge the UID from the blocking conformation, which would allow Ca2+ ions to permeate though the channel while [Ca2+]IMS remains elevated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and the proposed mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "18b68700-0322-406e-a7fb-9bf191573cb8",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C78",
+      "claim": "When resting [Ca2+]IMS is restored, a MICU1-MICU2 complex, again devoid of its Ca2+ ligands, would resume the blocking configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "When resting [Ca2+]IMS is restored, a MICU1-MICU2 complex, again devoid of its Ca2+ ligands, would resume the blocking configuration (Figure 5, left, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the proposed mechanism and structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "9f6289bf-90ce-4a09-ae42-6af46ce15450",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C79",
+      "claim": "The mechanism of MICU1-MICU2 control is compatible with the observed dimerization of human MCU-EMRE channels due to association of their NTDs.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism of MICU1-MICU2 control is compatible with the observed dimerization of human MCU-EMRE channels that is due to association of their NTDs \u2013 there is sufficient room for MICU1-MICU2 complexes to associate with both channels of the dimer and to control Ca2+ influx through their pores (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural modeling shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "ca655abb-a971-4cef-b14c-6a2440f31e81",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C80",
+      "claim": "During the preparation of this manuscript, cryo-EM structures of a holocomplex comprising human MCU, EMRE, MICU1 and MICU2 subunits in resting and activated [Ca2+] conditions were reported.",
+      "claim_type": "EXPLICIT",
+      "source": "During the preparation of this manuscript, cryo-EM structures of a holocomplex comprising human MCU, EMRE, MICU1 and MICU2 subunits in resting and activated [Ca2+] conditions were reported (Fan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about concurrent work, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "e1eed3e1-a332-4720-b54c-962aa0833f1c",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C81",
+      "claim": "The conclusions of the concurrent work are congruous with the present study and validate the proposed mechanism of Ca2+-dependent regulation of the uniporter by MICU1-MICU2.",
+      "claim_type": "EXPLICIT",
+      "source": "The conclusions of that work are congruous with the present study and validate the proposed mechanism of Ca2+-dependent regulation of the uniporter by MICU1-MICU2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with concurrent work, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "dfa17832-37e7-4fb0-ae4c-445cdff9b379",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C82",
+      "claim": "An additional interaction with the 'D'-ring at the mouth of the pore, involving a loop region of MICU1 (amino acids 258\u2013274), was observed in the concurrent work.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, an additional interaction with the 'D'-ring at the mouth of the pore, involving a loop region of MICU1 (amino acids 258\u2013274) that is disordered in our structure, was observed (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison with concurrent work, supported by Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "74965e95-2e7a-449b-8dc7-749ec644011c",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C83",
+      "claim": "A structure of an intact holocomplex at elevated levels of [Ca2+] indicates that the Ca2+-bound MICU1-MICU2 regulatory complex binds adjacent to the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "A structure of an intact holocomplex at elevated levels of [Ca2+], which was included in the recent work, indicates that the Ca2+-bound MICU1-MICU2 regulatory complex binds adjacent to the pore in essentially the same manner that we propose (Figure 5, right, and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison with concurrent work, supported by Figure 5 and Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "1d5bcb2b-8f14-41f5-bf97-5dca28d4ede0",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C84",
+      "claim": "The mechanism of Ca2+-dependent control of the mitochondrial calcium uniporter by MICU1-MICU2 is distinct from conformational changes that underlie gating in many other ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This work reveals a mechanism for Ca2+-dependent control of the mitochondrial calcium uniporter by the MICU1-MICU2 regulatory complex. The mechanism is distinct from the conformational changes that underlie gating, the process by which ion channels permit or prevent ion condution, in many other ion channels \u2013 these often involve changes in the dimensions of their ion conduction pores due to motions of transmembrane \u03b1-helices that line these pores, as was first exemplified by structural studies of potassium channels (MacKinnon, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural data and comparison with other ion channels, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "7ac3f486-8199-4ddc-af72-c0bc1f445add",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C85",
+      "claim": "MICU1-MICU2 heterodimers operate like endogenous pore-blocking toxins, the binding of which is governed by Ca2+-dependent conformational changes within them.",
+      "claim_type": "EXPLICIT",
+      "source": "MICU1-MICU2 heterodimers, and by analogy MICU1-MICU3 heterodimers in neurons, thus confer Ca2+-dependent gating to the uniporter by operating like endogenous pore-blocking toxins, the binding of which is governed by Ca2+-dependent conformational changes within them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural data and analogy to toxin-channel interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "e598282c-8345-43a5-aad1-a2a4890796a3",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C86",
+      "claim": "A single MICU1-MICU2 heterodimer appears capable of conferring Ca2+-dependent control properties to the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "A single MICU1-MICU2 heterodimer appears capable of conferring these properties for the simple reason that the receptor site on the channel can accommodate only one UID.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data showing the receptor site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "c1e85878-3b5e-4bae-81b6-02fcc03235e0",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C87",
+      "claim": "More than one MICU1-MICU2 heterodimer may be tethered to the channel at any given time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more than one MICU1-MICU2 heterodimer may be tethered to the channel at any given time, as is indicated by the cryo-EM analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cryo-EM data showing a small fraction of particles with two MICU1-MICU2 heterodimers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "777af30c-044b-4fd9-83e6-26e1fcf1a244",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C88",
+      "claim": "Nucleation of more than one heterodimer in the vicinity of the channel would increase the local concentration of MICU1-MICU2 and facilitate a rapid response following restoration of resting cytosolic Ca2+ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleation of more than one heterodimer in the vicinity of the channel would increase the local concentration of MICU1-MICU2 and facilitate a rapid response following restoration of resting cytosolic Ca2+ levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "1c62b980-e7d0-4043-a917-edc3225fef5e",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C89",
+      "claim": "The displacement of an EMRE subunit (EMRE 4) from the TMD might serve as an additional mechanism to control ion flow.",
+      "claim_type": "EXPLICIT",
+      "source": "While MICU1-MICU2 visibly interacts with only one EMRE subunit, the displacement of an EMRE subunit (EMRE 4) from the TMD might serve as an additional mechanism to control ion flow since the expression of EMRE is necessary for Ca2+ uptake by mitochondria (Liu et al., 2016; Sancak et al., 2013; Tsai et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the structural observation and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "1164cfd2-1928-48f3-a757-c08484eddb87",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "claim_id": "C90",
+      "claim": "The displacement of an EMRE subunit suggests that the number of EMRE subunits associated with an MCU tetramer can vary.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the displacement of an EMRE subunit suggests that the number of EMRE subunits associated with an MCU tetramer can vary, as has been inferred from a recent study (Payne et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observation and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2c5a0297-0613-47d9-91cf-2315654cb61c",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A cryo-EM structure of the MCU-EMRE-MICU1-MICU2 holocomplex was determined at 3.3 \u00c5 resolution under resting Ca2+ conditions. The structure reveals that MICU1-MICU2 heterodimers bind to the IMS surface of the channel, with MICU1 mediating all interactions while MICU2 makes no visible contacts. The pore conformation is unchanged from structures without MICU1-MICU2, and three EMRE subunits are observed with a fourth conspicuously absent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C17, C22-C35 collectively describe the structural determination and key architectural features of the holocomplex. The 3.3 \u00c5 resolution structure (C4, Table 1) is well-documented with extensive cryo-EM data processing (Figure 1, Figure 1\u2014figure supplements 4-5). The structural observations regarding MICU1-MICU2 binding (C24-C25), pore conformation (C26-C27), and EMRE stoichiometry (C33-C35) are directly supported by the density maps and structural comparisons shown in Figures 1-2 and supplements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "45a42307-cf06-49c7-a733-177eb9f73ad0",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The uniporter interaction domain (UID) of MICU1 mediates all interactions with the MCU-EMRE channel through a receptor site spanning three MCU subunits and one EMRE subunit. The UID comprises three \u03b1-helices and a small \u03b2-sheet, with residues on \u03b11 and \u03b12 directly contacting the IMS surface of the channel. The receptor site amino acids are conserved among metazoan channels and identical between human and beetle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C47 describe the structural basis of MICU1-channel interaction. The UID structure and its interactions are well-defined in the 3.3 \u00c5 cryo-EM map (Figure 3A-G, Figure 1\u2014figure supplement 5D). The receptor site composition (C40-C42) and conservation (C41, C43, C47) are supported by sequence alignments (Figure 1\u2014figure supplement 1, Figure 3\u2014figure supplement 1B, Figure 3\u2014figure supplement 3) and structural comparisons (Figure 1\u2014figure supplement 2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "27b7f5a2-4efb-4c6f-bef3-f49083e852a6",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Functional validation demonstrates that mutations in UID residues that interact with MCU or EMRE relieve channel inhibition by MICU1. Wild-type MICU1 enables robust Ca2+ uptake, while EF-hand mutations cause constitutive inhibition. Alanine mutations of interacting residues, particularly K126A, essentially eliminate MICU1-mediated inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 describe functional validation experiments. The mitochondrial Ca2+ uptake assays (Figure 3E, Figure 3\u2014figure supplement 5) directly test the functional importance of structurally observed interactions. The data show clear differences between wild-type, EF-hand mutant, and UID mutants, with statistical analysis (p-values provided in Figure 3E). The K126A mutation shows particularly strong effects (C51), consistent with its structural role coordinating the D-ring (C45).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "e45bab83-c570-403d-b686-7eac3a90ee7a",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The UID regions that interact with the channel are unique to MICU1 and absent in MICU2 or MICU3. This structural uniqueness explains why MICU1 is distinct from MICU2 and MICU3 in its ability to interact with MCU/EMRE and why these proteins have non-redundant roles in channel regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 explain the functional specificity of MICU1. The structural comparison (Figure 3\u2014figure supplement 1) clearly shows that the \u03b11 helix, Pro 124, and D-ring interacting residues are unique to MICU1 (C52-C53). This structural observation provides a molecular explanation for previously reported functional differences (C54, supported by multiple citations). The logic connecting structure to function is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "1ae89eda-aa1c-47df-8f9b-3c45cfde5bc9",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The UID-channel interaction is analogous to pore-blocking toxins, particularly \u03bc-conotoxin KIIIA binding to Nav1.2. Like the toxin, the UID's \u03b12 helix lies horizontally at the pore entrance with arginine and lysine residues coordinating acidic amino acids at the selectivity filter. The UID occludes the pore more extensively than the toxin, inhibiting Ca2+ flow by both physical obstruction and charge shielding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C61 draw an analogy to toxin-channel interactions. The structural comparison (Figure 3\u2014figure supplement 6) shows clear similarities in binding mode between the UID and \u03bc-conotoxin KIIIA (C55-C57). The toxin's ~90% block of Nav1.2 (C58) is well-documented by citation. The UID's more extensive occlusion (C59-C60) is supported by structural data (Figures 2-3). The proposed dual mechanism of inhibition (C61) is a reasonable inference from the structural observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "d20f09bf-efc5-410e-a31a-45ef6667daa0",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A Ca2+-bound structure of MICU1-MICU2 was determined at 3.1 \u00c5 resolution. Under resting conditions, the heterodimer is parallelogram-shaped (~70 \u00d7 65 \u00d7 35 \u00c5) with pseudo-twofold symmetry and two analogous hydrophobic interfaces. All four EF-hand motifs are in the apo state, and the structure is superimposable with previous apo structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C62-C67 describe the Ca2+-bound MICU1-MICU2 structure. The 3.1 \u00c5 resolution is documented in Table 1 and Figure 4\u2014figure supplement 6. The structural features (C62-C65) are clearly shown in Figure 4A and Figure 4\u2014figure supplement 1. The apo state of EF-hands (C67) is supported by Figure 1\u2014figure supplement 6 and comparison with previous structures (Park et al., 2020). The conservation in MICU3 (C66) is supported by sequence alignment (Figure 4\u2014figure supplement 2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "fee7876d-a176-4283-b119-f9423b6d1372",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MICU1-MICU2 associates with cardiolipin-containing membranes independently of Ca2+. Ca2+ binding induces substantial conformational changes: the heterodimer becomes more compact and markedly more bent between MICU1 and MICU2 due to EF-hand rearrangements, and the UID rotates relative to MICU1. The membrane-facing surface is the same as the channel-facing surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73 describe lipid binding and Ca2+-induced conformational changes. The cardiolipin binding is demonstrated biochemically (Figure 4\u2014figure supplement 4, C68-C69) and supported by prior work (Kamer et al., 2017). The Ca2+-induced conformational changes (C70-C72) are directly visualized by comparing apo and Ca2+-bound structures (Figure 4A-E). The membrane-facing surface orientation (C73) is shown in Figures 1A and 4F. All claims are well-supported by structural and biochemical data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "a6fe6bdd-90b9-4144-98dd-5e95ef1acdff",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A mechanism for Ca2+-dependent regulation is proposed: Ca2+ binding causes MICU1-MICU2 to bend, acting like a lever against the membrane to dislodge the UID from the pore. The UID rotation upon Ca2+ binding disfavors channel binding. These conformational changes allow Ca2+ permeation while [Ca2+]IMS remains elevated, and the blocking configuration resumes when resting [Ca2+]IMS is restored.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C76, C78 propose a mechanistic model. While the structural observations (bending, UID rotation) are well-supported (C70-C72), the proposed lever mechanism (C74) is explicitly stated as a hypothesis based on thermodynamic considerations. The model is plausible and consistent with the structural data, but lacks direct experimental validation of the dynamic process. The concurrent work (C80-C83) provides some support, but direct observation of the transition or kinetic measurements would strengthen the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "0527627e-27c0-4af0-9856-94089ea02a40",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The proposed MICU1-MICU2 control mechanism is compatible with the observed dimerization of human MCU-EMRE channels through NTD association, with sufficient space for MICU1-MICU2 complexes to associate with both channels of the dimer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 addresses compatibility with channel dimerization. The structural modeling (Figure 5\u2014figure supplement 2) demonstrates that MICU1-MICU2 can bind to both channels in a dimer without steric clashes. This is a straightforward structural inference based on the holocomplex structure and known NTD-mediated dimerization. The modeling is reasonable and the conclusion is well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "df26c131-38b3-4a0b-ba67-4f58820f951f",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Concurrent work reported cryo-EM structures of a human MCU-EMRE-MICU1-MICU2 holocomplex in resting and activated Ca2+ conditions. The conclusions are congruous with the present study and validate the proposed mechanism. An additional MICU1 loop interaction with the D-ring was observed, and the Ca2+-bound MICU1-MICU2 binds adjacent to the pore as proposed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 compare with concurrent work (Fan et al., 2020). The comparison is well-documented with structural overlays (Figure 5\u2014figure supplement 3). The congruence between studies (C81) strengthens confidence in both. The additional loop interaction (C82) is noted as disordered in the current structure, which is reasonable given flexibility. The Ca2+-bound structure from the concurrent work (C83) supports the proposed mechanism. This is appropriate contextualization of concurrent findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "71da976e-5838-49bc-b623-52370b047a6b",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The mechanism of Ca2+-dependent control by MICU1-MICU2 is distinct from conformational gating in many other ion channels. MICU1-MICU2 heterodimers operate like endogenous pore-blocking toxins, with binding governed by Ca2+-dependent conformational changes within the regulatory complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 present the conceptual framework. The distinction from typical gating mechanisms (C84) is supported by the observation that pore conformation is unchanged (C26-C27) and by comparison with other channels (MacKinnon, 2003 citation). The toxin analogy (C85) is well-supported by structural comparisons (C55-C61) and the demonstrated Ca2+-dependent conformational changes (C70-C72). This is a well-justified conceptual conclusion from the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "52d54380-abe7-4111-8d76-cca7e394fafd",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A single MICU1-MICU2 heterodimer appears capable of conferring Ca2+-dependent control because the receptor site accommodates only one UID. However, more than one heterodimer may be tethered to the channel, which would increase local concentration and facilitate rapid response upon restoration of resting Ca2+ levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 address stoichiometry. The observation that the receptor accommodates one UID (C86) is directly supported by the structure (C40). The presence of ~2% of particles with two MICU1-MICU2 heterodimers (C87) is documented in the cryo-EM analysis (C23, Figure 1A, Figure 1\u2014figure supplement 4A). The hypothesis about increased local concentration (C88) is a reasonable inference, though speculative. The claims are appropriately qualified and supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "e82fe48c-a9ba-4d9a-812f-b18a5e2e3ff1",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The displacement of EMRE 4 from the TMD might serve as an additional mechanism to control ion flow, since EMRE expression is necessary for Ca2+ uptake. This displacement suggests that the number of EMRE subunits associated with an MCU tetramer can vary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C90 propose an additional regulatory mechanism. The observation of EMRE 4 displacement is well-documented (C34). However, the functional significance (C89) is speculative, qualified by 'might serve.' While EMRE is necessary for uptake (supported by citations), whether variable EMRE stoichiometry directly regulates activity requires experimental validation. The inference about variable stoichiometry (C90) is supported by a recent study (Payne et al., 2020), but the mechanistic role remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    },
+    {
+      "id": "4f7edd8f-5789-46cf-89d3-a1f405b29626",
+      "content_id": "1ba127f3-897f-4c46-8d4a-bd86942fd050",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establish that the mitochondrial calcium uniporter is a Ca2+-gated channel complex where MCU and EMRE form the channel, MICU1-MICU2 confer Ca2+-dependent regulation, and the channel is highly selective with activation at ~0.4-3 \u03bcM Ca2+. MICU1-MICU2 heterodimers reside in the IMS and prevent ion conduction at resting Ca2+ (~100 nM) while permitting it when Ca2+ levels rise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C7-C16, C18-C21 provide background context. These are well-established facts supported by extensive citations throughout the manuscript. The claims accurately represent prior knowledge about the uniporter system, including protein composition, localization, selectivity, and regulatory properties. The citations are appropriate and the statements are consistent with the literature. These provide necessary context for interpreting the new structural findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:31:57.818127Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5ca18be1-7910-4632-8274-9029b6b0a99a",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "7785019d-a204-4d72-ba25-c2a5916a828e",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "8582629f-d2e7-4c56-8fda-a68743568dc1",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "f5e678fb-4c66-41cb-b0f1-c36498e15367",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "e5026ee3-29ea-47e1-92ec-8746f2fbcbe7",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "1e75071d-53a5-4ca2-8dc4-1b0490cb6e00",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "a7ec2982-ae25-4964-aa3f-40d85bb2a1f3",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "460d441f-b7b2-4916-a934-8beb0afe71b9",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "2609dcf4-fd54-43f2-8bcd-a100c7897db7",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "9e0d0a78-3b58-43b2-986c-0bfc7c9263d7",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "2a8da261-d587-463e-8f72-e3c4558ffd76",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "e7bddd9d-8686-453b-9438-f896099c7a22",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "eb6cabc5-9660-48cd-b791-b936d9bf968e",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "fc2ff53c-661e-4431-be0b-023a9768007a",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "4c52af86-c7aa-48ef-a9e3-531fcc804400",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "98bd9dcf-4cd1-4783-97af-337a47187c79",
+      "result_id": "2c5a0297-0613-47d9-91cf-2315654cb61c"
+    },
+    {
+      "claim_id": "fba5d39e-9e89-4f8f-93f8-8462a51e73e5",
+      "result_id": "45a42307-cf06-49c7-a733-177eb9f73ad0"
+    },
+    {
+      "claim_id": "7e697828-1ec7-45d5-a503-08fdc12a99c0",
+      "result_id": "45a42307-cf06-49c7-a733-177eb9f73ad0"
+    },
+    {
+      "claim_id": "5fbc3840-4998-41e3-8ea3-9d4677493fa0",
+      "result_id": "45a42307-cf06-49c7-a733-177eb9f73ad0"
+    },
+    {
+      "claim_id": "5d2513ef-c164-41ba-9e62-8c48ede46273",
+      "result_id": "45a42307-cf06-49c7-a733-177eb9f73ad0"
+    },
+    {
+      "claim_id": "2ac755dc-0928-43e8-a4d1-f769acb89697",
+      "result_id": "45a42307-cf06-49c7-a733-177eb9f73ad0"
+    },
+    {
+      "claim_id": "34c4160b-5917-45b9-ab12-4b1f23f126d2",
+      "result_id": "45a42307-cf06-49c7-a733-177eb9f73ad0"
+    },
+    {
+      "claim_id": "6adacf62-e813-402f-8a02-957047105524",
+      "result_id": "45a42307-cf06-49c7-a733-177eb9f73ad0"
+    },
+    {
+      "claim_id": "8da27aa2-3262-4563-bebd-c65ad335561f",
+      "result_id": "45a42307-cf06-49c7-a733-177eb9f73ad0"
+    },
+    {
+      "claim_id": "51c4c676-ffc6-413f-a353-77ca027a3f7f",
+      "result_id": "45a42307-cf06-49c7-a733-177eb9f73ad0"
+    },
+    {
+      "claim_id": "c3b432eb-2c00-465a-9389-f7a2b3310f14",
+      "result_id": "45a42307-cf06-49c7-a733-177eb9f73ad0"
+    },
+    {
+      "claim_id": "34f35fb1-66f8-420d-8635-afd96e2edfee",
+      "result_id": "45a42307-cf06-49c7-a733-177eb9f73ad0"
+    },
+    {
+      "claim_id": "be973ec6-429e-4293-8cd0-f7746a4c57fe",
+      "result_id": "45a42307-cf06-49c7-a733-177eb9f73ad0"
+    },
+    {
+      "claim_id": "52f840ea-2a6a-4238-b300-5ecbc18f8511",
+      "result_id": "27b7f5a2-4efb-4c6f-bef3-f49083e852a6"
+    },
+    {
+      "claim_id": "b55bec43-be2b-466f-a02d-109682c20e63",
+      "result_id": "27b7f5a2-4efb-4c6f-bef3-f49083e852a6"
+    },
+    {
+      "claim_id": "8c5d3aef-d341-44da-b93c-ef15f5d1a854",
+      "result_id": "27b7f5a2-4efb-4c6f-bef3-f49083e852a6"
+    },
+    {
+      "claim_id": "7bdf7a4f-32cd-4953-9028-0837f1c9fc17",
+      "result_id": "27b7f5a2-4efb-4c6f-bef3-f49083e852a6"
+    },
+    {
+      "claim_id": "497e9867-0452-4edd-8f73-f7574664a81a",
+      "result_id": "e45bab83-c570-403d-b686-7eac3a90ee7a"
+    },
+    {
+      "claim_id": "e1f8feab-7057-4d2b-9e27-38018c741f81",
+      "result_id": "e45bab83-c570-403d-b686-7eac3a90ee7a"
+    },
+    {
+      "claim_id": "070f5dbe-aeae-4cb9-80f7-3526827a401d",
+      "result_id": "e45bab83-c570-403d-b686-7eac3a90ee7a"
+    },
+    {
+      "claim_id": "43793c67-e9b6-4f3d-8495-c346c3b462dd",
+      "result_id": "1ae89eda-aa1c-47df-8f9b-3c45cfde5bc9"
+    },
+    {
+      "claim_id": "e70bf596-2c90-4bb5-9633-e5b1b3cf346e",
+      "result_id": "1ae89eda-aa1c-47df-8f9b-3c45cfde5bc9"
+    },
+    {
+      "claim_id": "d786f490-e0b9-4ea3-9793-d7ac2dc16886",
+      "result_id": "1ae89eda-aa1c-47df-8f9b-3c45cfde5bc9"
+    },
+    {
+      "claim_id": "c432927a-1234-4285-b968-72ef999192ec",
+      "result_id": "1ae89eda-aa1c-47df-8f9b-3c45cfde5bc9"
+    },
+    {
+      "claim_id": "447271c3-1938-40d5-8b54-8c34435c1d60",
+      "result_id": "1ae89eda-aa1c-47df-8f9b-3c45cfde5bc9"
+    },
+    {
+      "claim_id": "e8fa7b98-8ab0-4b11-9629-465746193038",
+      "result_id": "1ae89eda-aa1c-47df-8f9b-3c45cfde5bc9"
+    },
+    {
+      "claim_id": "5a9b71c5-ca55-40c9-b062-d4bd3ce0adaa",
+      "result_id": "1ae89eda-aa1c-47df-8f9b-3c45cfde5bc9"
+    },
+    {
+      "claim_id": "2e185bd7-e32d-4963-a133-92a9265d1312",
+      "result_id": "d20f09bf-efc5-410e-a31a-45ef6667daa0"
+    },
+    {
+      "claim_id": "871ed2b7-0b45-4213-83ad-ad9476105910",
+      "result_id": "d20f09bf-efc5-410e-a31a-45ef6667daa0"
+    },
+    {
+      "claim_id": "5040e678-70cd-48b7-babe-94850207a605",
+      "result_id": "d20f09bf-efc5-410e-a31a-45ef6667daa0"
+    },
+    {
+      "claim_id": "badb1da3-d3f8-4a04-a6a8-8fe8b8a75be9",
+      "result_id": "d20f09bf-efc5-410e-a31a-45ef6667daa0"
+    },
+    {
+      "claim_id": "86f5ad37-30af-4835-bedb-96b71662c847",
+      "result_id": "d20f09bf-efc5-410e-a31a-45ef6667daa0"
+    },
+    {
+      "claim_id": "68ec4ce5-3442-4f7a-b992-ef129da8bc09",
+      "result_id": "d20f09bf-efc5-410e-a31a-45ef6667daa0"
+    },
+    {
+      "claim_id": "015f064d-e6c3-4140-9bf6-e49e595401c8",
+      "result_id": "d20f09bf-efc5-410e-a31a-45ef6667daa0"
+    },
+    {
+      "claim_id": "3f8828de-c7c2-48ee-b303-be4c3e3a7ad4",
+      "result_id": "fee7876d-a176-4283-b119-f9423b6d1372"
+    },
+    {
+      "claim_id": "f72b56b0-c989-4a40-acec-58e005730f08",
+      "result_id": "fee7876d-a176-4283-b119-f9423b6d1372"
+    },
+    {
+      "claim_id": "098ca795-d618-4a4c-8366-3a71fa3d5dca",
+      "result_id": "fee7876d-a176-4283-b119-f9423b6d1372"
+    },
+    {
+      "claim_id": "2932019f-f767-49ba-a155-cedfebaf47e0",
+      "result_id": "fee7876d-a176-4283-b119-f9423b6d1372"
+    },
+    {
+      "claim_id": "3f15a223-d763-4e7f-902a-59f43f74c631",
+      "result_id": "fee7876d-a176-4283-b119-f9423b6d1372"
+    },
+    {
+      "claim_id": "3fa28c6e-a872-42b7-b9f5-a8a2098a9357",
+      "result_id": "fee7876d-a176-4283-b119-f9423b6d1372"
+    },
+    {
+      "claim_id": "62a7f0fc-551e-4766-b9a3-7367cee7ce35",
+      "result_id": "a6fe6bdd-90b9-4144-98dd-5e95ef1acdff"
+    },
+    {
+      "claim_id": "fb27cf2f-2e55-4818-8599-594ac089974a",
+      "result_id": "a6fe6bdd-90b9-4144-98dd-5e95ef1acdff"
+    },
+    {
+      "claim_id": "f537370a-b58d-4e99-acfa-be2f4398873b",
+      "result_id": "a6fe6bdd-90b9-4144-98dd-5e95ef1acdff"
+    },
+    {
+      "claim_id": "18b68700-0322-406e-a7fb-9bf191573cb8",
+      "result_id": "a6fe6bdd-90b9-4144-98dd-5e95ef1acdff"
+    },
+    {
+      "claim_id": "9f6289bf-90ce-4a09-ae42-6af46ce15450",
+      "result_id": "0527627e-27c0-4af0-9856-94089ea02a40"
+    },
+    {
+      "claim_id": "ca655abb-a971-4cef-b14c-6a2440f31e81",
+      "result_id": "df26c131-38b3-4a0b-ba67-4f58820f951f"
+    },
+    {
+      "claim_id": "e1eed3e1-a332-4720-b54c-962aa0833f1c",
+      "result_id": "df26c131-38b3-4a0b-ba67-4f58820f951f"
+    },
+    {
+      "claim_id": "dfa17832-37e7-4fb0-ae4c-445cdff9b379",
+      "result_id": "df26c131-38b3-4a0b-ba67-4f58820f951f"
+    },
+    {
+      "claim_id": "74965e95-2e7a-449b-8dc7-749ec644011c",
+      "result_id": "df26c131-38b3-4a0b-ba67-4f58820f951f"
+    },
+    {
+      "claim_id": "1d5bcb2b-8f14-41f5-bf97-5dca28d4ede0",
+      "result_id": "71da976e-5838-49bc-b623-52370b047a6b"
+    },
+    {
+      "claim_id": "7ac3f486-8199-4ddc-af72-c0bc1f445add",
+      "result_id": "71da976e-5838-49bc-b623-52370b047a6b"
+    },
+    {
+      "claim_id": "e598282c-8345-43a5-aad1-a2a4890796a3",
+      "result_id": "52d54380-abe7-4111-8d76-cca7e394fafd"
+    },
+    {
+      "claim_id": "c1e85878-3b5e-4bae-81b6-02fcc03235e0",
+      "result_id": "52d54380-abe7-4111-8d76-cca7e394fafd"
+    },
+    {
+      "claim_id": "777af30c-044b-4fd9-83e6-26e1fcf1a244",
+      "result_id": "52d54380-abe7-4111-8d76-cca7e394fafd"
+    },
+    {
+      "claim_id": "1c62b980-e7d0-4043-a917-edc3225fef5e",
+      "result_id": "e82fe48c-a9ba-4d9a-812f-b18a5e2e3ff1"
+    },
+    {
+      "claim_id": "1164cfd2-1928-48f3-a757-c08484eddb87",
+      "result_id": "e82fe48c-a9ba-4d9a-812f-b18a5e2e3ff1"
+    },
+    {
+      "claim_id": "b0c48115-ab48-44a9-8f87-5a47a9e5ecdb",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "209bb0ea-aa0b-4ab9-aa8b-a9b6b70f8eb4",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "64d292f5-d5dc-43e0-a060-5a38b6a6895d",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "8c135d8a-1734-40a2-87e0-17e1f14bb8fb",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "224f9a92-9cb2-4ca9-9216-770f09a91217",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "9d474b63-738c-4bd6-84af-1d224ef89b57",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "73baf0a0-df64-44ea-8909-fc6269dbef4e",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "3570b04d-5b7c-4b52-8d47-b12026085a1d",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "3717d9b4-e1c3-4193-9391-4f27944ba9ac",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "c697f2c8-98ab-4e02-82fc-d459a674d924",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "84b459e0-1a89-470e-8280-3b1a8afbf28b",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "88f61ff2-de88-4694-8eaf-b34ec7b4b2b5",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "17bbf8dd-350b-4904-a15b-1ce8ded847df",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "ded8365a-7555-49c7-aa37-077b45b5d429",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "1b6f54d7-2b2f-4028-ab51-6d357ecea42e",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "7be848cd-2111-48cf-8d0f-b83b7d1a07bd",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    },
+    {
+      "claim_id": "b4c6f9ad-48c3-4c37-bbd6-3b0c692a95cd",
+      "result_id": "4f7edd8f-5789-46cf-89d3-a1f405b29626"
+    }
+  ],
+  "comparisons": []
+}

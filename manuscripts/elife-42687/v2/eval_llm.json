@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C11",
+      "C22",
+      "C23",
+      "C44",
+      "C67"
+    ],
+    "result": "The ZBB2 atlas comprises whole-brain expression patterns for 264 transgenic lines, including 65 Cre lines and 158 Gal4 lines, more than doubling the number in the original atlas. The authors generated more than 100 new enhancer trap lines expressing Cre or Gal4, retained 52 new Cre lines with restricted brain expression at 6 dpf, and incorporated 45 additional Gal4 lines and 20 scans from other laboratories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9, C11, C22, C23, C44, and C67 collectively provide consistent quantitative data on the composition of ZBB2. The numbers are explicitly stated and internally consistent (52 new + 13 previous Cre lines = 65 total; multiple sources of Gal4 lines sum to 158). The manuscript provides detailed methodology for line generation, imaging, and registration (C13-C17, C86-C90), supporting the validity of the atlas construction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C101",
+      "C104"
+    ],
+    "result": "An online version of ZBB2 was developed and can be accessed at zbbrowser.com. The online version includes key features such as 3D spatial search, prediction of intersectional expression, multiple projection views, neuroanatomical information, user data upload capability, and an integrated virtual reality viewer. X3DOM libraries were used for rapid volume rendering with adjustable resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C43, C101, and C104 describe the development and features of the online ZBB2 interface. The manuscript provides technical details about implementation (C42, C101) and lists specific features (C40). The URL is provided and the code is made available on GitHub (C104), supporting reproducibility. The technical approach using X3DOM is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "New Cre lines were generated through enhancer trap screening using a construct containing a neuronal-restrictive silencing element and tol2 transposon arms. A total of 361 adult fish were screened (286 with REx2-SCP1:BGi-Cre-2a-Cer, 75 with REx2-SCP1:BGi-Cre), with offspring screened using the \u03b2actin:Switch reporter. Lines were maintained for multiple generations to isolate single heritable transgenes, with approximately 20% of injected fish yielding retained lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 and C74-C80 provide detailed methodology for Cre line generation with specific numbers of fish screened, screening procedures, and success rates. The approach is well-documented with appropriate citations (C13, C14, C16, C74, C76). The observation that ~10% of injected animals transmitted multiple patterns (C77) and the 20% retention rate (C80) are consistent with enhancer trap methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "45 additional Gal4 lines with robust brain expression accompanied by non-neural expression were imaged, and 20 high-resolution brain scans from the Dorsky and Baier laboratories were aligned to ZBB2. Gal4 expression was visualized using UAS:Kaede and registered using vglut2a:DsRed co-imaging. The development of UTR.zb3 has mitigated issues with non-neuronal Gal4 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe the incorporation of additional Gal4 lines into ZBB2. Specific numbers are provided (C18, C21) and the methodology for visualization and registration is detailed (C20). The rationale for including lines with non-neural expression is explained by referencing UTR.zb3 (C19), which is appropriately cited. The multi-channel registration approach for external data (C21) is described with citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "A new method was developed to efficiently map enhancer trap integration sites using biotinylated oligonucleotides to capture flanking genomic DNA for sequencing. Integration sites were recovered for 55 enhancer trap lines. Combined with 56 transgenic lines using defined promoters, 171 of the 264 lines in ZBB2 have molecular genetic information on cell-type identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C91-C95 describe the integration site mapping methodology and results. The new method is detailed (C25, C91-C94) with specific technical parameters. The validation through PCR genotyping of four lines (C95) supports the reliability of the approach. The numbers are internally consistent: 55 mapped enhancer traps + 56 defined promoter lines + 60 unmapped enhancer traps = 171 with genomic information out of 264 total lines (C27).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors estimated ~92,000 neurons in the six dpf zebrafish brain through manual counting of fluorescently labeled neurons. Cre lines showed median coverage of 6% of cell body volume (~5,500 neurons per line), with 96% of cellular volume labeled by at least one Cre line. Gal4 lines showed more restricted expression with median coverage of 1% (~900 neurons per line), collectively labeling 91% of cell body volume. Specific brain regions with limited coverage were identified for both line types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 and C96-C100 provide quantitative analysis of transgene expression coverage. The neuron counting methodology is detailed (C98-C100) with appropriate sample sizes (N=3 for neuron counts, N=9 for total cell counts). The coverage calculations are based on defined 20\u00d720\u00d720 \u03bcm bins (C97). The exclusion of y457-Cre from coverage analysis is justified (C96). The data are presented with ranges and medians, and specific under-represented regions are identified (C32, C35), demonstrating thorough analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Intersectional expression patterns observed in triple transgenic larvae closely matched predicted intersects based on co-registered brain scans, labeling small clusters of neurons. However, intersectional expression in individual larvae was generally more restricted than predicted, possibly due to UAS transgene silencing or the stronger 14xUAS-E1b promoter. The authors recommend experimental verification of predicted overlapping expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C64-C66 describe validation of intersectional targeting with appropriate caveats. The manuscript provides experimental evidence through triple transgenic crosses (C36) and references Figure 5. The observation that actual expression is more restricted than predicted (C37) is explained by known biological phenomena (C38, C64). The recommendation for experimental verification (C66) appropriately acknowledges limitations related to biological variability (C65) and technical factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Brains were imaged using confocal microscopy at 1\u00d71\u00d72 \u03bcm resolution in two stacks per brain. Image registration was performed using ANTs with accuracy of approximately one cell diameter (8 \u03bcm). Images were processed by averaging 3-10 registered scans per line, normalizing intensity, downsampling to 8-bit, and manually defining thresholds to distinguish cellular expression from background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 provide detailed imaging and processing methodology. The imaging parameters are specific (C86), the registration approach is well-documented with appropriate citations (C87, C88), and the processing steps are clearly described (C89, C90). The registration accuracy of ~8 \u03bcm (C88) is reasonable given the biological variability in zebrafish brains and is supported by cited prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Leaky Cre expression recombines lox sites transmitted through the same gamete, necessitating outcrossing to \u03b2actin:Switch for line maintenance. Approximately 25% of embryos from et-Cre;\u03b2actin:Switch crosses showed ubiquitous RFP expression and were discarded. To minimize UAS reporter silencing, lines were maintained with a broadly expressed Gal4 transgene, selecting only the brightest 20% of fluorescent embryos each generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 describe breeding strategies with appropriate citations for known phenomena (C81, C83). The observation of ~25% ubiquitous expression (C82) is consistent with Mendelian genetics for germline recombination. The strategy to minimize silencing (C84, C85) is reasonable and the 20% selection rate (C85) is quantified. These are standard practices in transgenic zebrafish maintenance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Very few transgenic lines strongly express reporters in single cell types within spatially restricted domains. Intersectional genetic strategies using multiple activators (such as Gal4/UAS and Cre/lox systems) have been developed to address this limitation. The first version of ZBB provided co-aligned images of >100 lines but only included 9 Cre lines, limiting intersectional targeting opportunities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 establish the rationale for the study by describing the problem (C4) and existing solutions (C5, C6) with appropriate citations. The limitations of the first ZBB version (C7, C8) are clearly stated and provide justification for developing ZBB2. These claims accurately represent prior work and the motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C45",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors anticipate that ZBB2 labels almost all cellular regions within the brain and will facilitate reproducible targeting of neuronal subsets for circuit-mapping studies. They expect the lines will also facilitate structural mapping of the zebrafish brain and drive exploration of structure/function relations in the vertebrate brain. The new lines are freely available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C45, C68, and C69 make forward-looking statements about the utility and impact of ZBB2. While C10 is partially supported by the coverage data (C31, C34 showing 96% and 91% coverage), the claims about facilitating circuit-mapping (C10, C68) and structural mapping (C45) are anticipatory. The statement about driving exploration of structure/function relations (C69) is speculative. The availability of lines (C68) is factual and supported by C102.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors discuss alternative approaches to generating transgenic lines, including Drosophila split systems, CRISPR/TALEN-based targeted insertions, and BAC transgenesis. They justify their enhancer trap approach as high-throughput and compatible with existing Gal4 lines, while acknowledging that alternative methods have different throughput levels and trade-offs regarding expression strength, cell-type information, and potential disruption of endogenous genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C58 provide a balanced discussion of alternative methodologies with appropriate citations. The comparison of approaches (C46-C47, C51-C53, C57-C58) accurately characterizes throughput levels. The discussion of limitations (C54-C56) is reasonable and appropriately caveated. The rationale for choosing enhancer trap screening (C51) is well-justified in the context of the study's goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors discuss limitations of the Cre system, including that insufficient expression may lead to mosaic reporter expression, while high levels can be toxic. They explain that enhancer trap Cre lines tend to have broader expression than Gal4 lines because Cre expression in progenitor cells labels all offspring and switch reporters remain active after transient Cre expression, whereas Gal4 must be continually expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 discuss known limitations and characteristics of the Cre system with appropriate citations (C59, C60). The explanation for broader Cre expression (C61-C63) is biologically sound and consistent with the observed data (C29, C33 showing 6% vs 1% median coverage). The mechanistic explanations (C62, C63) are reasonable inferences based on the biology of the systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Zebrafish were maintained on a Tubingen long fin strain background and raised at 28\u00b0C on a 14/10 hr light/dark cycle. Experiments were conducted at 6 days post-fertilization, before sex differentiation. Experimental procedures were approved by the NICHD animal care and use committee.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 provide standard husbandry and ethical information. The details are specific and appropriate for the experimental design. The developmental stage (6 dpf, C72) is justified as commonly used for behavioral and circuit-mapping studies (C12). Ethical approval is documented (C73).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Most enhancer trap lines are available from the Zebrafish International Resource Center (ZIRC), with others available from the authors upon request. Registered individual confocal brain scans can be downloaded from Dryad.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102 and C103 describe resource availability with specific repositories and URLs provided. This supports reproducibility and community access to the resource. The data deposition in Dryad (C103) follows best practices for data sharing.",
+    "result_type": "MINOR"
+  }
+]

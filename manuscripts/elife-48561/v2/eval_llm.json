@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Ascl1 is transcribed in both quiescent and proliferating hippocampal RGLs at similar levels, but Ascl1 protein is only detectable in proliferating RGLs, indicating post-transcriptional regulation of Ascl1 protein expression in quiescent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging evidence from multiple complementary methods (GFP reporter, immunolabeling, RNA in situ hybridization) showing that Ascl1 mRNA is present in both quiescent and active RGLs at comparable levels, while protein is only detected in active cells. Claim C6 appropriately infers post-transcriptional regulation. The data are internally consistent and use appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "BMP4 treatment induces quiescence in cultured hippocampal NSCs without affecting Ascl1 mRNA levels but strongly reduces Ascl1 protein through proteasome-dependent degradation that is independent of Huwe1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 establish an in vitro model system and demonstrate that BMP4-induced quiescence involves post-transcriptional regulation of Ascl1. Multiple lines of evidence (RNA-seq, QPCR, immunofluorescence, Western blot, proteasome inhibition, Huwe1 mutant analysis) support the conclusion. The Huwe1-independence (C13) is important for distinguishing this mechanism from previously described pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Id4 is strongly induced in quiescent NSCs at the protein level, shows inverse correlation with Ascl1 protein expression, sequesters the Ascl1 dimerization partner E47, and reduces Ascl1 protein half-life from 194 to 31 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 provide a mechanistic explanation for Ascl1 protein regulation. The data include RNA-seq, protein quantification, co-IP, competition-binding assays, and half-life measurements. The inverse correlation (C16), E47 sequestration (C17-C18), and reduced half-life (C19) are consistent with the proposed mechanism. The competition-binding assay (C18) provides particularly strong evidence for the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "In vivo analysis shows that Id4 is expressed in 89.6% of hippocampal RGLs, with high levels in quiescent cells and low levels in proliferating cells, while Id1, Id2, and Id3 show distinct expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 characterize the in vivo expression patterns of Id proteins in hippocampal RGLs. The quantitative immunofluorescence data are clear and show that Id4 has the most appropriate expression pattern to regulate quiescence. The differential expression of Id proteins (C22-C24) provides important context for understanding their specific roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Overexpression of Id4 in proliferating NSCs reduces Ascl1 protein levels without affecting mRNA, decreases proliferation, and maintains stem cell identity, with Id4 being the most effective among Id proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 demonstrate the sufficiency of Id4 to induce quiescence-like features. The data include QPCR, immunofluorescence, and proliferation assays. The maintenance of stem cell markers (C27) rules out differentiation as an explanation. The comparison with other Id proteins (C28) strengthens the specificity of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "siRNA knockdown of Id proteins in quiescent NSCs did not significantly affect Ascl1 protein levels, but Id4 knockdown increased Id1 and Id3 protein levels without affecting their mRNA, suggesting compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 reveal functional redundancy and compensation among Id proteins. The lack of effect on Ascl1 (C29) despite effective knockdown is explained by compensatory upregulation of other Id proteins (C30). This is an important negative result that highlights the complexity of the system and the need for genetic deletion studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Overexpression of E47 in BMP-treated quiescent NSCs increases Ascl1 protein levels without affecting mRNA and partially reverts cell cycle arrest, with strong correlation between Ascl1 levels and proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 provide functional validation of the E47-Id4-Ascl1 axis by showing that titrating Id proteins with excess E47 stabilizes Ascl1 and promotes proliferation. The approach is clever and the correlation between Ascl1 and proliferation (C32) strengthens the mechanistic link. However, E47 overexpression may have additional effects beyond Id titration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Id4 overexpression regulates 1,629 genes, representing 44.2% of BMP4-regulated genes, with strong downregulation of Ascl1 target genes including cell cycle regulators and canonical Ascl1 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 demonstrate that Id4 is a major mediator of the BMP4-induced quiescence program. The RNA-seq data show substantial overlap between Id4 and BMP4 effects (C34) and specific downregulation of known Ascl1 targets (C35). The identification of specific cell cycle genes provides mechanistic insight into how Id4 promotes quiescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Conditional deletion of Id4 in adult hippocampal RGLs increases Ascl1 protein expression and RGL proliferation acutely (5 days) and persistently (30 days), with compensatory upregulation of Id1 and Id3, without depleting the RGL pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 provide strong in vivo genetic evidence for Id4's role in maintaining quiescence. The dose-dependent effect (heterozygotes show no phenotype; C36, C38) and correlation between Ascl1 and Ki67 (C39) support causality. The persistent but attenuated phenotype at 30 days (C40) and compensatory Id upregulation (C42) explain the incomplete penetrance. The lack of RGL depletion (C41) is important for ruling out exhaustion. The observation that Id3+Ascl1+ cells also express Id4 (C43) supports functional redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Id4's role in maintaining adult hippocampal RGL quiescence contrasts with its role in promoting proliferation of embryonic neural progenitors, reflecting the different functions of bHLH proteins in embryonic versus adult contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 provide important context by comparing the function of Id4 in different developmental stages. The contrast is well-supported by citations to previous work (C44) and logical reasoning about the different roles of proneural bHLH proteins in embryonic differentiation versus adult stem cell activation (C45-C48). This is a conceptually important result that explains the apparent paradox.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Id4 promotes degradation of Ascl1 in RGLs through a post-transcriptional mechanism, which may explain why single-cell transcriptomics did not identify Ascl1 as differentially expressed between quiescent and active stem cells, similar to post-transcriptional control in other stem cell systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 synthesize the main findings and place them in broader context. The explanation for why scRNA-seq missed Ascl1 (C50) is logical given the data. The comparison to satellite stem cells (C51) shows this is not an isolated phenomenon. These are appropriate interpretive claims supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Id proteins sequester E proteins away from Ascl1, and high levels of Ids result in monomeric Ascl1 that cannot bind DNA, explaining the downregulation of Ascl1 target genes upon Id4 overexpression or BMP treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 describe the established mechanism of Id protein action and apply it to the current findings. The claims are well-supported by citations (C52) and established knowledge of bHLH protein function (C55). The logic connecting E protein sequestration to loss of Ascl1 DNA binding (C54-C55) is sound and consistent with the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "BMP-induced degradation of Ascl1 occurs through E47 sequestration by Id proteins, resulting in unstable monomeric Ascl1, as demonstrated by reduced Ascl1 half-life in quiescent cells and rescue by E47 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 integrate previous findings from other cell types (C56-C57) with the current data (C58-C60) to propose a unified mechanism. The half-life data (C58) and E47 rescue experiments (C60) provide strong support. The mechanism is consistent with previous work in lung carcinoma cells (C57), strengthening the generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Id4 contributes substantially to the BMP-induced quiescence program, with Id4 overexpression inducing many BMP4-regulated genes and suppressing cell cycle regulators including Ascl1 targets, though loss of Id4 also increases other Id proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 synthesize the transcriptomic and genetic data to assess Id4's contribution to the quiescence program. The RNA-seq overlap analysis (C62-C63) and gene ontology results (C64) support the conclusion. The observation of compensatory Id upregulation (C61) is important for interpreting the genetic results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Id4 may maintain Ascl1 transcription by blocking Id1-3 interactions with Hes proteins, preventing Hes stabilization and constant repression of Ascl1, as supported by reduced Ascl1 transcription in Id4cKO mice and Id4's known ability to inhibit other Id proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C69 propose an additional mechanism by which Id4 might regulate Ascl1 at the transcriptional level. While the logic is sound and supported by citations (C65, C67-C68) and the observation of reduced Ascl1 mRNA in Id4cKO mice (C69), the evidence is indirect. The finding that Ascl1 is transcribed in quiescent RGLs (C66) argues against strong Hes-mediated repression. This mechanism remains speculative and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Id4's function in hippocampal RGLs differs from Id1 and Id3 in the V-SVZ and from Id1 in hippocampal RGLs, with Id4 expression restricted to quiescent RGLs while Id1 is found in proliferating cells and is not required for suppressing Ascl1 or proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 distinguish Id4's function from other Id proteins in different contexts. The comparison with V-SVZ (C70) is supported by citations. The differential expression patterns (C71) and analysis of Smad4cKO mice (C73) provide evidence that Id1 does not play the same role as Id4 in hippocampal RGLs. The inference about Id3 (C74) is logical based on its expression pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The incomplete penetrance of the Id4cKO phenotype suggests compensatory mechanisms, potentially involving Id3 or increased Hes-mediated repression of Ascl1 transcription, as evidenced by reduced Ascl1 mRNA in Id4cKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 address the important question of why Id4 deletion doesn't activate all quiescent RGLs. The observations of incomplete penetrance (C75), Id3 upregulation (C76), and reduced Ascl1 transcription (C78) support the compensation hypothesis. However, C77 is more speculative about the mechanism. The claims appropriately acknowledge uncertainty while providing plausible explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Huwe1 degrades Ascl1 in proliferating RGLs and is expressed in quiescent RGLs, where it might compensate for Id4 loss by eliminating excess Ascl1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 cite previous work and propose a potential compensatory mechanism. The claims are appropriately cautious (\"might\") and are consistent with the observation that Huwe1 is not responsible for Ascl1 degradation in BMP-treated cells (C13) but could still play a role in Id4cKO mice. This is a reasonable speculation based on established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Id4 expression in RGLs is regulated by multiple pathways beyond BMP-Smad4 and Notch-RBPJk, as evidenced by persistent Id4 expression in RGLs lacking both Smad4 and RBPJk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 address the regulation of Id4 expression. The data from double mutant mice (C84) provide strong evidence that additional pathways regulate Id4. The distinction from Id1 regulation (C82) and the persistence despite loss of Notch signaling (C83) are important observations. The claims appropriately cite previous work and current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Id4 is one of the most differentially expressed genes between quiescent and active stem cells, and its downregulation is crucial for RGLs to produce sufficient Ascl1 protein to exit quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 synthesize the expression data and functional studies to emphasize Id4's importance. The claim about differential expression (C85) is supported by citations and current data. The inference about the importance of Id4 downregulation (C86) is logical given the inverse relationship between Id4 and Ascl1 and the role of Ascl1 in activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Ascl1 is essential for hippocampal stem cell activation and its stabilization by Huwe1 inactivation causes over-proliferation, but Huwe1 inactivation alone is insufficient to activate quiescent stem cells, indicating additional quiescence-maintaining mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 cite previous work to establish the importance of Ascl1 regulation and provide context for the current findings. The observation that Huwe1 inactivation is insufficient (C89) motivates the search for additional mechanisms like Id4. These are appropriate citations that frame the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Id proteins contain an HLH domain but lack a DNA binding domain, allowing them to sequester E proteins and prevent bHLH transcription factors like Ascl1 from binding DNA, leading to proteasomal degradation of monomeric Ascl1, with Id3 and Id4 enriched in quiescent hippocampal NSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 provide essential background on Id protein structure and function, supported by appropriate citations. The description of the mechanism (C90-C92) is well-established. The observation that Id3 and Id4 are enriched in quiescent cells (C94) provides the rationale for investigating their role in quiescence. These are appropriate background claims.",
+    "result_type": "MINOR"
+  }
+]

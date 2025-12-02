@@ -1,0 +1,763 @@
+{
+  "submission": {
+    "id": "0fd62a21-88b7-471b-a16b-bf29aa39d625",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:34:15.517147Z",
+    "updated_at": "2025-12-02T16:34:15.517147Z"
+  },
+  "content": [
+    {
+      "id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "submission_id": "0fd62a21-88b7-471b-a16b-bf29aa39d625",
+      "content_type": "manuscript",
+      "content_text": "# Shape selection and mis-assembly in viral capsid formation by elastic frustration\n\n## Authors\n\n- Carlos I Mendoza<sup>1</sup> ([ORCID: 0000-0001-9769-240X](https://orcid.org/0000-0001-9769-240X)) \u2020\n- David Reguera<sup>2</sup> ([ORCID: 0000-0001-6395-6112](https://orcid.org/0000-0001-6395-6112))\n\n### Affiliations\n\n1. Instituto de Investigaciones en Materiales, Universidad Nacional Aut\u00f3noma de M\u00e9xico M\u00e9xico Mexico\n2. Departament de F\u00edsica de la Mat\u00e8ria Condensada, Universitat de Barcelona Barcelona Spain\n3. Universitat de Barcelona Institute of Complex Systems (UBICS), Universitat de Barcelona Barcelona Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe successful assembly of a closed protein shell (or capsid) is a key step in the replication of viruses and in the production of artificial viral cages for bio/nanotechnological applications. During self-assembly, the favorable binding energy competes with the energetic cost of the growing edge and the elastic stresses generated due to the curvature of the capsid. As a result, incomplete structures such as open caps, cylindrical or ribbon-shaped shells may emerge, preventing the successful replication of viruses. Using elasticity theory and coarse-grained simulations, we analyze the conditions required for these processes to occur and their significance for empty virus self-assembly. We find that the outcome of the assembly can be recast into a universal phase diagram showing that viruses with high mechanical resistance cannot be self-assembled directly as spherical structures. The results of our study justify the need of a maturation step and suggest promising routes to hinder viral infections by inducing mis-assembly.\n\n## Introduction\n\nViruses are fascinating biological and nanoscale systems (Douglas and Young, 2006; Wen and Steinmetz, 2016). In the simplest cases, these tiny pathogens are formed by a chain of RNA or DNA encased in a protein shell, also known as capsid, made from multiple copies of a single protein (Flint et al., 2004). Despite this apparent simplicity, viruses are able to perform many complex functions which are essential in their replication cycle. One of the most amazing one is their ability to self-assemble with an unparalleled efficiency and precision.\n\nIn vivo, the capsid of most viruses assembles from its basic building blocks, which could be individual capsid proteins, dimers, trimers or capsomers (i.e. clusters of five or six proteins, which constitute the structural and morphological units of the shell). The resulting structure has a precise architecture, which in most cases is spherical with icosahedral symmetry (Roos et al., 2010). Several viruses assemble their capsid before packaging the genetic material. In addition, the proteins of many viruses have the ability to self-assemble in vitro, even in the absence of genetic material, forming empty capsids.\n\nThe mechanisms of viral assembly have been the subject of recent and interesting investigations (Hagan and Chandler, 2006; Elrad and Hagan, 2008; Nguyen et al., 2009; Johnston et al., 2010; Perlmutter and Hagan, 2015; Hagan and Zandi, 2016). The assembly of a curved empty shell with a well-defined geometry and precise arrangement of the building blocks is a non-trivial process that resembles 2D crystallization on a curved space (Meng et al., 2014; G\u00f3mez et al., 2015). It also shares similarities with the formation of other related structures such as colloidosomes (Meng et al., 2014; Dinsmore et al., 2002; Manoharan et al., 2003), carboxysomes (Perlmutter et al., 2016; Garcia-Alles et al., 2017) or clathrin-coated pits (Mashl and Bruinsma, 1998; Kohyama et al., 2003; Giani et al., 2016). Capsid formation occurs via a nucleation process driven by the favorable binding energy between capsid proteins (Zandi et al., 2006). At the right assembly conditions, thermal fluctuations induce the formation of small partial shells that tend to redissolve unless they reach a minimum critical size. Beyond this size, the shell grows by the progressive binding of subunits. As growth continues, the energy penalty of the naturally curved structure, due to the inescapable presence of the rim and the accumulation of elastic energy, can be larger than the favorable binding energy. This generates a natural self-limiting mechanism for the formation of partial shells of a finite size that do not grow until closing (Grason, 2016). In fact, there are in vitro experimental evidences of apparently stable partial capsids (Law-Hine et al., 2016), that seems to contradict the instability of intermediates that follows from Classical Nucleation Theory (CNT) (Zandi et al., 2006).\n\nRecently, there has been a lot of interest in geometric frustration and crystal growth on spherical templates (Zandi et al., 2004; Luque et al., 2012; Meng et al., 2014; G\u00f3mez et al., 2015; Grason, 2016; Azadi and Grason, 2016; Paquay et al., 2017; Li et al., 2018; Panahandeh et al., 2018). Most previous works have focused either on templated growth on the surface of a sphere (Zandi et al., 2004; Luque et al., 2012; Meng et al., 2014; G\u00f3mez et al., 2015; Grason, 2016; Li et al., 2018; Panahandeh et al., 2018) or on analyzing the optimal shape of the resulting shell from pure elastic considerations (Paquay et al., 2017; Lidmar et al., 2003; Schneider and Gompper, 2007; Morozov and Bruinsma, 2010; Castelnovo, 2017), ignoring the importance of the delicate interplay of other ingredients such as the line tension, the chemical potential or the preferred curvature on their global stability and their process of formation.\n\nHere, we analyze the conditions and mechanisms leading to mis-assembly of empty viral capsids by elastic frustration, taking into account all these ingredients. We find that the outcome of the assembly depends on three scaled parameters that can be properly tuned to trigger the formation of non-spherical and open shells. Theoretical predictions obtained with the use of Classical Nucleation Theory including elastic contributions are confirmed qualitatively using Brownian Dynamics simulations of a simple coarse-grained model. The results of this work help to better understand viral assembly and might have important implications in: envisaging novel routes to stop viral infections by interfering with their proper assembly; determining the optimal conditions for the assembly of protein cages with the desired geometry and properties for nanotechnological applications (Douglas and Young, 2006); and justifying the potential presence of seemingly stable intermediates that have been observed in recent experiments (Law-Hine et al., 2016).\n\n## Results\n\n### Self-assembly of a curved elastic shell\n\nThe continuous description of the assembly of empty spherical viral capsids is based on Classical Nucleation Theory (CNT) (Zandi et al., 2006). In its standard version, the free energy of formation of a partial shell of area $S$ is seen as the competition of an energy gain driving the assembly, and a rim energy penalty, due to the missing contacts at the edge of the shell. Due to the curvature of the shell and the existence of a preferred angle of interaction between capsid proteins there is another ingredient that has to be considered in the energetics of capsid formation: the elastic energy. Accordingly, the free energy of formation of a partial capsid of area $S$ can be modeled as\n\n$$\n\u0394\u2062G=-S\u2062\\frac{\u0394\u2062\\mu}{a_{1}}+\u039b\u2062l\u2062(S)+G_{e}.\n$$\n\nThe first term represents the gain in free energy associated with the chemical potential difference $\u0394\u2062\\mu$ between subunits in solution and in the capsid, being $a_{1}$ the area per subunit. (With this definition, a positive $\u0394\u2062\\mu$ is required to promote assembly). The second term is the total line energy of the rim, given by the product of the line tension $\u039b$ times its length $l\u2062(S)$. Finally, the third term $G_{e}=G_{s}+G_{b}$ is the elastic energy associated with the in-plane stress, $G_{s}$, and the bending, $G_{b}$, energies introduced by the curvature of the shell. Both elastic terms will be modeled using continuum elasticity theory. For the bending energy we will use the generalization of Helfrich\u2019s model for systems with non-zero spontaneous curvature introduced recently by Castelnovo (2017) (see the Appendix). For the in-plane elastic energy, we will use results from continuum elasticity theory for small deformations of thin plates, building up on recent work on the formation and growth of crystal domains of different shapes on curved surfaces (Lidmar et al., 2003; Meng et al., 2014; Seung and Nelson, 1988; Morozov and Bruinsma, 2010; Grason, 2016; Paquay et al., 2017; K\u00f6hler et al., 2016; Schneider and Gompper, 2007; Majidi and Fearing, 2008; Castelnovo, 2017). Both stretching and bending terms depend on the particular structure of the growing shell. Four different cases will be analyzed: hexagonally-ordered spherical cap without defects; spherical cap with one or many defects; ribbon and cylinder (see Figure 1). The reason to consider these particular structures is that they represent the most advantageous shapes to release the unfavorable elastic energy. In addition, cylindrical shells also appear frequently as outcome of in vitro assembly experiments. However, it is important to stress that the considered structures do not form a complete set of deformations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52525/elife-52525-fig1-v2.jpg)\n\n**Figure 1.:** (a) A hexagonally-ordered spherical cap of radius $R$ and geodesic radius $\u03c1_{0}$ without defects; (b) a spherical cap with a single disclination at the center (as shown) or multiple disclinations; (c) a rectangular ribbon with length $L$ and width $W$, that it is called belt when the length becomes $L=2\u2062\\pi\u2062R$; and (d) a cylindrical patch with size $L$, that eventually becomes a cylinder of radius $R$.\u00a0In the bending-dominated regime, $R=R_{0}$.\n\nThe relative importance of stretching versus bending contributions is controlled by a single dimensionless parameter: the F\u00f6ppl-von K\u00e1rman number (FvK) defined here as $\\gamma\u2261YR_{0}^{2}/\u03ba$, where $Y$ is the two-dimensional Young\u2019s modulus, $R_{0}$ is the spontaneous radius of curvature and $\u03ba$ is the bending modulus. Most previous studies have focused on the elastic energy and growth of crystals on top of a spherical template of fixed radius $R$. This case resembles the bending-dominated regime discussed below.\n\n### Bending-dominated regime\n\nIn the limit $\\gamma=Y\u2062R_{0}^{2}/\u03ba\u226a1$, the bending energy dominates over the stretching energy and thus, all structures will adopt their spontaneous curvature, $R=R_{0}$. The situation will be similar to the growth of a crystal on a template of fixed curvature. In the bending-dominated regime, the free energy of formation of all these structures, when properly scaled by the characteristic elastic energy $4\u2062\\pi\u2062R_{0}^{2}\u2062Y$, only depends on two parameters: the scaled chemical potential $\u0394\u2062\\mu~\u2261\u0394\u2062\\mu/(Y\u2062a_{1})$ and the scaled line tension $\\lambda\u2261\u039b/(R_{0}\u2062Y)$. Thus, it is possible to compare them and determine the most stable structure for a given set of conditions. The comparison is performed for different shapes having the same area $S$ , that\u00a0is having the same number of subunits.\n\nThe scaled free energy of formation of a hexagonally-ordered spherical cap of radius $R_{0}$ without defects made of a circular patch of radius $\u03c1_{0}$ (see Figure 1a) is\n\n$$\n\u0394\u2062g_{c\u2062a\u2062p}=-\\frac{\u0394\u2062\\mu~}{4}\u2062x^{2}+\\frac{\\lambda}{2}\u2062x+\\frac{1}{1536}\u2062x^{6}\n$$\n\nwhere $x\u2261\u03c1_{0}/R_{0}$ is the scaled patch size, and the third term is the in-plane elastic energy of a circular domain on a curved spherical surface (Schneider and Gompper, 2007; Meng et al., 2014; Morozov and Bruinsma, 2010). (Equation 2\u00a0is an approximation strictly valid for small circular patches with an aperture angle\u00a0$\\theta\u226a\\pi$, since it is assumed that the perimeter of the shell is approximately the same as that of a circular disk, and a flat metric has been used to compute the in-plane elastic energy. However, we have found that a more accurate evaluation of the second and third terms in this equation [Li et al., 2018] does not alter significantly the main results.)\n\nThe stretching energy stored in the spherical shell grows fast with the area of the patch, and can be partially released by two different mechanisms: by the introduction of pentagonal defects (see Figure 1b), or by growing anisotropically forming curved ribbon-like crystalline domains (see Figure 1c).\n\nThe free energy of formation for a spherical cap with one defect is (Morozov and Bruinsma, 2010; Castelnovo, 2017)\n\n$$\n\u0394\u2062g_{d_{1}}=\u0394\u2062g_{c\u2062a\u2062p}+\\frac{x^{2}}{1152}\u2062(1-\\frac{3}{2}\u2062x^{2}),\n$$\n\nwhere the last term is the stretching energy due to a pentagonal disclination at the center of the cap.\u00a0(The energy of an incomplete cap with one defect placed at an arbitrary location is calculated in\u00a0Li et al., 2018. It is found that the Gaussian curvature attracts the disclination to the center of the cap while the defect self-energy pushes it towards the boundary. The net result is that the minimum energy corresponds to the defect located off the center of the cap. However, we have numerically verified that this approximation introduces only a very small error in our calculations for the scaled energy. This means that not noticeable effect is observed when the exact expression with the off-center defect is considered.) Such mechanism is energetically favorable only if the second term of Equation 3 is negative, that\u00a0is, if $x\\geq\\sqrt{2/3}$.\n\nFor larger shells, the elastic strain is further released by the introduction of additional disclinations. The free energy of formation of a spherical shell with n\u00a05-fold disclinations is (Grason, 2012; Grason, 2016; Castelnovo, 2017)\n\n$$\n\u0394\u2062g_{d_{n}}=\u0394\u2062g_{c\u2062a\u2062p}+g_{s_{1}}+g_{s_{2}}\n$$\n\nwhere $g_{s_{1}}$ is the self-energy of the isolated disclinations, and $g_{s_{2}}$ is their pairwise interaction, whose specific expressions are provided in the Appendix. When more than one defect appears, the minimum of the free energy typically occurs for a closed shell.\n\nAn alternative mechanism to alleviate stretching is the anisotropic growth of the originally spherical cap to adopt the shape of a defect-free rectangular curved stripe or ribbon. The free energy of formation of a ribbon of scaled length $l\u2261L/R_{0}$, width $w\u2261W/R_{0}$, and area $s=l\u2062w=\\pi\u2062x^{2}$ growing on the surface of a sphere of radius $R_{0}$ is (Schneider and Gompper, 2007; Majidi and Fearing, 2008)\n\n$$\n\u0394\u2062g_{r\u2062i\u2062b}=-\\frac{\u0394\u2062\\mu~}{4}\u2062x^{2}+\\frac{\\lambda}{2}\u2062\\frac{x^{2}}{w}+\\frac{\\lambda}{2\u2062\\pi}\u2062w+\\frac{9}{20480}\u2062x^{2}\u2062w^{4}.\n$$\n\nUnlike the spherical cap, as the area of the patch increases, the ribbon grows longitudinally without limitation at a nearly fixed optimal width up to the point where $l=2\u2062\\pi$, where it forms a closed belt with energy\n\n$$\n\u0394\u2062g_{b\u2062e\u2062l\u2062t}=-\\frac{\u0394\u2062\\mu~}{4}\u2062x^{2}+\\lambda+\\frac{9}{327680}\u2062x^{10}.\n$$\n\nThe ribbon-like structure with the lowest energy is always a closed belt rather than the open ribbon, so we will focus our comparison with this structure.\n\nFinally, an alternative to the curved belt could be a cylinder with one principal radius of curvature infinitely large and the other $R_{0}$ (see Figure 1d). The cylinder has the advantage of not having any in-plane stretching cost, but it has a bending energy penalty that prevents its formation in the bending-dominated limit (see the Appendix).\n\nFigure 2 shows a comparison of the energy landscape for the different structures for fixed values of $\u0394\u2062\\mu~$ and $\\lambda$. The competition between the bulk energy gain, the line tension penalty and the stretching and bending costs will give rise, at the proper conditions, to a barrier that has to be overcome for triggering the formation of these structures. The height of this nucleation barrier and its location, corresponding to the critical cluster size, are mostly controlled by the bulk and line energy contributions, since the critical size typically occurs at small values of x. In terms of shell nucleation, the barrier for the formation of a spherical cap is always the smallest, since the line energy of a circular edge is always smaller than for a rectangular stripe of the same area. Accordingly, the initial embryo of all these structures will be a small spherical cap (Paquay et al., 2017). Neglecting the elastic terms, the critical size for the formation of a spherical shell will be $x^{*}\u2248\\lambda/\u0394\u2062\\mu~$, corresponding to a barrier height for nucleation of $\u0394\u2062g_{c\u2062a\u2062p}^{*}\u2248\\lambda^{2}/(4\u2062\u0394\u2062\\mu~)$. But rather than on the critical cluster for shell formation, we will be mostly interested in what is the most stable final structure for a given set of conditions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52525/elife-52525-fig2-v2.jpg)\n\n**Figure 2.:** Free energy of formation $\u0394\u2062g$ versus the radius of the patch x in the bending-dominated regime for a defectless spherical shell (blue line), a spherical shell with defects (green), and a ribbon/belt (orange) for $\\lambda=0.0001$ and $\u0394\u2062\\mu~=0.001$. The optimal structure is the one with the minimum energy, which is the belt in this case. The dashed line represents the unfrustrated decrease of energy expected by the classical nucleation picture for the defectless spherical cap in the absence of elastic stresses. The inset zooms the nucleation barrier located at small patch sizes.\n\nSince the free energies of formation only depend on $\\lambda$ and $\u0394\u2062\\mu~$ we can draw a universal phase diagram describing what is the structure (i.e. cap with or without defects, ribbon, or belt) with the lowest free energy in its stable size in terms of these two parameters. The term universal is intended to mean that the phase diagram is independent of the details of the capsomer-capsomer interactions such as range, preferred angle between capsomeres, bending rigidity, etc, as we corroborate with a coarse-grained simulation in the next section. Figure 3a shows the phase diagram in the bending-dominated limit, corresponding to $\\gamma=0$. As can be seen, belts are the most stable structure at low line tension $\\lambda$ and chemical potential differences $\u0394\u2062\\mu~$. Closed shells with disclinations are the preferred structure for large values of $\u0394\u2062\\mu~$ or $\\lambda$. The frontier between the belt zone and the cap with disclinations is approximately independent of $\\lambda$ and located at $\u0394\u2062\\mu~\u22430.0020$. Additionally, a small triangular region where the most stable structure is a frustrated cap with only one disclination is also apparent. As shown in the Appendix, a stable defectless cap only appears as metastable structure, since it has always a larger energy than a belt, and it is thus non competitive as stable structure, even though it may have lower energies as intermediate in the assembly process.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52525/elife-52525-fig3-v2.jpg)\n\n**Figure 3.:** Phase diagrams of the most stable structures in terms of the scaled chemical potential $\u0394\u2062\\mu~$ and the scaled line tension $\\lambda$ for different values of the FvK number: a) $\\gamma=0$, corresponding to the bending-dominated regime, (b) $\\gamma=80$, (c) $\\gamma=200$, and d) $\\gamma=250$. Three possible equilibrium regions are present: belts (i.e. closed ribbons, in orange), frustrated capsids with one defect (red), closed shells with defects (green), and cylinders (purple). Additionally, a region corresponding to a metastable spherical cap without defects (blue) is shown only in (a). In the white region, the equilibrium state corresponds to disaggregated individual capsomers.\n\n### General case of arbitrary FvK number\n\nMost small viral shells form without any underlying spherical template fixing their curvature. Therefore, it is very interesting to analyze shell formation at arbitrary FvK number, beyond the bending-dominated limit, and without the aid of an auxiliar template. In this general case, we have to consider the bending energy and the fact that the radius of the structures, $R$, may deviate from the spontaneous one, $R_{0}$, since it would be now dictated by the competition between stretching, bending, and rim energies. Using the expressions for the bending energy of a sphere and a cylinder of radius $R$ (see the Appendix), the free energy of formation of all structures analyzed in the previous section can be derived. Explicitly, the free energy of formation of a defectless spherical cap of radius $R$ becomes\n\n$$\n\u0394\u2062g_{c\u2062a\u2062p}\u2062(\\gamma)=-\\frac{\u0394\u2062\\mu~}{4}\u2062x^{2}+\\frac{\\lambda}{2}\u2062x+\\frac{1}{1536}\u2062\\frac{x^{6}}{r^{4}}+\\frac{1}{4\u2062\\gamma}\u2062x^{2}\u2062(\\frac{1}{r}-1)^{2},\n$$\n\nwhere $r\u2261R/R_{0}$, and the optimal radius of the shell is given by\n\n$$\nr^{2}\u2062(r-1)-\\frac{\\gamma}{192}\u2062x^{4}=0.\n$$\n\nDeviations from the spontaneous radius (i.e $r=1$) are only expected for large domain sizes or large FvK numbers.\n\nAs the domain size increases, it becomes more favorable to release the elastic stress by the introduction of one or many 5-fold disclinations. The free energy of formation of a spherical shell with one central defect is\n\n$$\n\u0394\u2062g_{d_{1}}\u2062(\\gamma)=\u0394\u2062g_{c\u2062a\u2062p}\u2062(\\gamma)+\\frac{x^{2}}{1152}\u2062(1-\\frac{3}{2}\u2062\\frac{x^{2}}{r^{2}}),\n$$\n\nwhich becomes favorable over the defectless case when $x/r\\geq\\sqrt{2/3}$. The formation energy of a spherical shell with $n$-defects is\n\n$$\n\u0394\u2062g_{d_{n}}\u2062(\\gamma)=\u0394\u2062g_{c\u2062a\u2062p}\u2062(\\gamma)+g_{s_{1}}\u2062(r)+g_{s_{2}}\n$$\n\nwhere the specific expressions for $g_{s_{1}}\u2062(r)$ and $g_{s_{2}}$ are written in the Appendix. Finally, the free energies of a closed belt and a cylinder (which are the ribbon-like and cylindrical-patch-like structures with the lowest energy) are\n\n$$\n\u0394\u2062g_{b\u2062e\u2062l\u2062t}\u2062(\\gamma)=-\\frac{\u0394\u2062\\mu~}{4}\u2062x^{2}+\\lambda\u2062r+\\frac{9}{327680}\u2062\\frac{x^{10}}{r^{8}}+\\frac{1}{4\u2062\\gamma}\u2062x^{2}\u2062(\\frac{1}{r}-1)^{2},\n$$\n\nand\n\n$$\n\u0394\u2062g_{c\u2062y\u2062l}\u2062(\\gamma)=-\\frac{\u0394\u2062\\mu~}{4}\u2062x^{2}+\\lambda\u2062r+\\frac{1}{8\u2062\\gamma}\u2062x^{2}\u2062(1+(\\frac{1}{r}-1)^{2}),\n$$\n\nrespectively.\n\nRemarkably, the free energy of formation of all these structures only depends on three scaled parameters: the chemical potential $\u0394\u2062\\mu~$, the line tension $\\lambda$, and the FvK number $\\gamma$. Thus, it is possible to compare them and draw a universal phase diagram for the most stable structure in terms of these three parameters, to contrast with the scenario for the bending-dominated limit. Figure 3 shows phase diagrams for different values of the FvK number, showing the structure with the lowest free energy as a function of the normalized line tension $\\lambda$ and chemical potential $\u0394\u2062\\mu~$. For small values of FvK, that\u00a0is $\\gamma\u2272100$, the phase diagram is essentially the same as in the bending-dominated case. As the FvK number increases, the region where belts are formed occupy a larger domain, while the region with closed caps with disclinations reduces its size. However, the most relevant change is the appearance of a zone at $\u0394\u2062\\mu~>1/(2\u2062\\gamma)$, where the cylinder is the optimal structure. This region progressively invades the other structures as the FvK number is increased. Roughly for $\\gamma\u2243250$ only cylinders and belts are expected to be stable structures. This is a very important result since it shows that spherical capsids cannot be self-assembled directly as stable structures at large FvK numbers.\n\nThe reason why cylinders dominate at large FvK numbers, corresponding to the regime where stretching dominates over bending, is because they have the advantage of not having any stretching energy cost (i.e. a flat sheet of hexamers can be bent into a cylinder without any stretching). A cylindrical structure having a radius equal to the spontaneous radius $R_{0}$, that\u00a0is $r=1$, will minimize the bending penalty and will have a free energy of formation, according to Equation 12, that decreases unboundedly with size when $\u0394\u2062\\mu~>1/(2\u2062\\gamma)$. In other words, once the formation of a cylinder becomes more favorable than free capsomers, it will continue growing without limit decreasing indefinitely its free energy of formation without paying any stretching cost, thus overcoming the energetic gain of any finite sized structure. This will be the case when $\u0394\u2062\\mu~>1/(2\u2062\\gamma)$. The larger the $\\gamma$ (FvK), the smaller the $\u0394\u2062\\mu~$ required for this to occur and therefore, regions where finite sized structures where preferred start to be devoured by the region where cylinders dominate (purple regions in Figure 3). Making use of the definition of the scaled variables, the condition for the appearance of the cylindrical phase can be recast as $\u0394\\mu\\geqa_{1}\u03ba/(2R_{0}^{2})$. In other words, cylinders appear more easily (smaller $\u0394\u2062\\mu$ required) for larger values of $R_{0}$, in agreement with previous results by Castelnovo (2017) predicting that cylinders should dominate for small spontaneous curvatures (large $R_{0}$).\n\n### Simulation\n\nA minimal coarse-grained model has been recently proposed to analyze the assembly of empty viral shells (Aznar and Reguera, 2016; Aznar et al., 2018) and other protein cages (Garcia-Alles et al., 2017). The model can successfully reproduce the assembly of the lowest spherical shell structures using capsomers, that\u00a0is, pentamers and hexamers, as basic assembly units. Capsomers are coarse-grained at low resolution as effective spheres and their interaction is modelled using three contributions capturing the essential ingredients (see Materials\u00a0and\u00a0methods): a Mie-like potential describing the attraction driving the assembly and the excluded volume interaction between a pair of capsomers; an angular term accounting for the preferred orientation of the interaction between proteins; and a torsion term, included to distinguish the inner and outer surfaces of the capsomers, and to favor the formation of closed shells. The model has been implemented in a Brownian Dynamics simulation as described in Materials\u00a0and\u00a0methods.\n\nOne of the advantages of this simple model is that the parameters of the interaction can be related to the elastic constants (Aznar and Reguera, 2016) (see Materials\u00a0and\u00a0methods). In terms of these, the three relevant parameters controlling the assembly become $\\gamma\u2261\\frac{Y\u2062R_{0}^{2}}{\u03ba}=\\frac{4\u2062n\u2062m\u2062\\alpha^{2}}{9\u2062cos^{2}\u2061\u03bd}$, $\\lambda\u2261\\frac{\u039b}{Y\u2062R_{0}}=\\frac{2\u2062cos\u2061\u03bd}{n\u2062m}$, and $\u0394\u2062\\mu~\u2261\\frac{\u0394\u2062\\mu}{a_{1}\u2062Y}=\\frac{2\u2062\\sqrt{3}}{\\pi\u2062n\u2062m}\u2062\\frac{\u0394\u2062\\mu}{\u03f5_{0}}=\\frac{2\u2062\\sqrt{3}}{\\pi\u2062n\u2062m}\u2062\\frac{k_{B}\u2062T\u2062ln\u2061c_{1}/c^{*}}{\u03f5_{0}}.$\n\nThus, by changing the parameters of the model (mainly the exponents $n$ and $m$ controlling the range of the interaction, the preferred angle of interaction between capsomers $\u03bd$, the local bending rigitidy $\\alpha$, and the concentration $c_{1}$ which controls the effective chemical potential $\u0394\u2062\\mu$) we can explore the universality and the different scenarios of assembly discussed in the previous section.\n\nFigure 4 shows the results of simulations using different sets of parameters represented in scaled units and contrasted with the theoretical phase diagram for $\\gamma=80$. For $\\lambda=0.00084$, that\u00a0is a relatively large line tension, at low concentration of capsomers, the seed dissolves and no nucleation or growth occurs. As the capsomer concentration is progressively increased, a metastable defectless shell and a closed spherical shell with typically 12 defects form, as expected by the theory. At very high concentrations, nucleation occurs simultaneously at many sites, and the final outcome of the simulation are many fragments of spherical capsids that cannot grow any further due to the depletion of free capsomers in solution. That would correspond to kinetic trapping, which is an interesting alternative mechanism to prevent the correct capsid assembly, that will be analyzed in a future work. For $\\lambda=0.000585$, as the concentration is increased we obtained the expected sequence of: seed disolution; formation of a stable cap with a single 5-fold defect in a very narrow range of concentrations; and the formation of closed caps with many defects. Finally for $\\lambda=0.000372$, that\u00a0is a relatively small line tension, as the capsomer concentration is increased we go from no assembly, to the formation of ribbon-like stripes, to the growth of spherical shells with many defects. As naively expected, as $\\lambda$ increases, higher scaled chemical potentials are needed to nucleate the structures. Finally, by increasing the parameter $\\alpha$, the bending rigidity is reduced and assembly at higher FvK can be analyzed. The results of the simulations show that as the FvK number is increased, the formation of spherical shells is overriden by the formation of cylindrical bodies, as shown in Figure 4c, that also competes with other elongated structures such as spherocylinders or even conical shapes (see Appendix 1\u2014figure 3). Remarkably, simulations that have been performed for widely different values of the interaction parameters, when properly scaled, all fall into the predicted picture. Therefore, the simulation results nicely confirm almost quantitatively the universality of the fate of the assembly and the potential scenarios discussed in the theory. A precise quantitative comparison between the theory and the simulations has not been performed, since they are done at slightly different conditions. While theory assumes a reservoir of capsomers, the simulations are done at fixed total number of subunits. This implies that, as the assembly proceeds, the concentration of the remaining free particles, and consequently the chemical potential, decreases. For this reason, we have not intended to reproduce with precision the borders of the phase diagram using the simulations. The fact that the chemical potential is not strictly constant in the simulations due to the depletion of free subunits may cause quantitative discrepancies when comparing with theory, but does not alter the relative stability of the different shapes analyzed.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52525/elife-52525-fig4-v2.jpg)\n\n**Figure 4.:** (a) Phase diagram of the most stable structure in terms of the scaled chemical potential $\u0394\u2062\\mu~$ and the scaled line tension $\\lambda$ for $\\gamma=80$. Snapshots of the final outcome of the simulation for different initial capsomer concentrations for: b) $\\lambda=0.00037$, obtained with $\u03bd=1.45$ and a $m=36$, $n=18$ potential. By increasing the concentration of capsomers one goes from a dissassembled state to the formation of a ribbon to a spherical shell with defects. (The ribbon and spherical shell are not closed in the snapshots due to the limited number of capsomers and finite simulation time). (c) $\\lambda=0.000525$, obtained with $\u03bd=1.38$ and a $m=36$, $n=18$ potential. As concentration increases, one goes from a shell with one defect to a complete shell with many defects. By increasing the FvK number to $\\gamma=1280$ (by setting $\\alpha=0.4$), the simulations clearly forms cylindrical tubes. (d) $\\lambda=0.00084$, obtained with $\u03bd=1.45$ and a $m=24$, $n=12$ potential. In this case, the sequence is: disagreggated, metastable defectless shell, and closed spherical shell with many defects (a partial shell is shown). The simulation results agree qualitatively with the predictions from the theoretical phase diagram.\n\n## Discussion\n\nWe have provided a comprehensive analysis of non-templated assembly of curved elastic shells, taking into account all relevant ingredients (i.e. chemical potential, line tension, spontaneous curvature, and elastic contributions) and the potential formation of non-spherical shapes. The importance of accounting for all these ingredients becomes evident, for instance, in the study of the stability of the defectless spherical cap, which turns out to be always metastable, its global stability hindered by the introduction of defects (at high line tensions) or the formation of ribbons (at low line tensions). Our analysis also shows that the outcome of the assembly not only depends on elastic considerations, but also on the assembly conditions, represented here by the scaled chemical potential. Hence, either belts or closed spherical shells or cylinders may be obtained as the most stable structure for fixed interaction parameters, depending on the concentration of assembly units. When assembly takes place at conditions near the vicinity of a phase boundary, a mixture of the two phases, or a structure resulting from their combination (e.g. a spherocylinder) may form. This may justify the observation of coexisting tubes and spherical capsids in the in vitro assembly of viruses such as SV40 (Kanesashi et al., 2003).\n\nAlthough, for the sake of simplicity, our theoretical analysis has been performed using the continuous and small curvature approximations, we have verified that releasing these approximations does not alter significantly the results. The exact expression of the perimeter of the growing edge (Zandi et al., 2006; G\u00f3mez et al., 2015) influences the height and location of the nucleation barrier, but has a minor impact on the properties of the final stable structure. The accurate evaluation of the in-plane elastic cost of defects taking into account their spatial distribution\u00a0(Li et al., 2018), modifies the energies of the growing shell, but does not modify significantly the stability of the final structure.\n\nSimulations of a coarse-grained model made using widely different values for the parameters and interaction range confirm that the outcome of the assembly only depends on three scaled parameters: the scaled chemical potential $\u0394\u2062\\mu~$, line tension $\\lambda$, and FvK number $\\gamma$. Thus, the assembly phase diagram is universal, and different protein shells, interaction potentials and coarse-grained models can be recast into a unifying picture of assembly, that could guide the efficient production of artificial viral cages. For instance, our analysis indicates that relatively long-range interactions are desirable to increase the line tension, decrease the FvK number and facilitate the assembly of closed spherical shells. In fact, spherical shells with icosahedral symmetry and triangulation number T\u00a0>\u00a07 could be successfully assembled in simulations without any template or scaffolding protein, provided that the line tension and FvK number are adequate. Alternatively, chemical or physical modifications that increase the FvK number or reduce the line tension or the effective concentration may become a potential therapeutic target to prevent viral replication by inducing the formation of open, and presumably non-infective, cylindrical or belt-like structures. Experimentally, the chemical potential can be tuned by the total protein concentration or by the addition of crowding agents. The line tension (which depends on the strength of the binding interaction), could be modified by the temperature, the pH and the salt concentration. The bending rigidity and spontaneous radius of curvature are also presumably controlled by pH and the presence, concentration and nature of ions or auxiliary proteins in solution. Further experimental and theoretical investigations are required to make a precise quantitative connection between the physical parameters controlling the assembly and experiments.\n\nTriggering the formation of closed spherical shells with an incorrect radius, triangulation number (Caspar and Klug, 1962), or arrangement of proteins could also be an alternative to interfere with the assembly of the right viral capsid. But in our study, we have focused on mechanisms interferring with the closing of the shell by elastic frustration, rather than classifying the specific radius and triangulation number of the resulting spherical structure. In addition, we do not consider the situation in which the capsomers interact with cargo. Such interactions are crucial for viruses that co-assemble with their genetic material or a cargo, but this is beyond the scope of the present study.\n\nA very important conclusion of our analysis is that spherical capsids cannot be self-assembled directly as stable structures at large FvK numbers. This may explain why some viruses that require high mechanical resistance, for instance many dsDNA bacteriophages such as lambda, HK97 and P22, first assemble a relatively soft spherical procapsid before suffering a maturation transition (Roos et al., 2012; Johnson, 2010) that flattens out their faces, which is a clear signature of a high FvK number (Lidmar et al., 2003). The results of our work indicate that a one-step assembly of a spherical shell with the high elastic resistance and Fvk number of the final structure is not viable. Table 1 compares the estimated elastic properties of different empty capsids of real viruses. The table clearly shows that viruses like CCMV or SV40 that assemble easily in vitro as spherical shells, have estimated values of the scaled line tension and FvK in the region where these structures are expected to be stable outcomes of the assembly. Contrarily, the high FvK number of the mature bacteriophage lambda will prevent its direct assembly. However, its procapsid, which is the first structure that is assembled, has a larger scaled line tension and smaller FvK that would facilitate a successful assembly. (The FvK number of lambda procapsid listed in Table 1 is probably overestimated, given its noticeable spherical shell. In addition, we have found in our simulations that even though the theoretical threshold for the disappearance of spherical shells as stable structures is around $\\gamma=250$, in practice larger FvK numbers are typically required to obtain cylindrical structures since the nucleation barrier for their formation is larger than for the metastable spherical shell).\n\n**Table 1.**\n Estimates of the main geometric and elastic properties of different non-enveloped empty viral capsids.The Young\u2019s modulus $E$ has been evaluated from AFM nanoindentation experiments (Mateu, 2012; Michel et al., 2006; Ivanovska et al., 2007; Sae-Ueng et al., 2014) and, for SV40, from the experimental spring constant (van Rosmalen et al., 2018) using the standard thin shell formula $k=2.25\u2062E\u2062h^{2}/R$\u00a0(Ivanovska et al., 2004). The 2D Young\u2019s Modulus was calculated as $Y=E\u2062h$; the effective diameter of the capsomers as (Santolaria, 2011) $\\sigma=R/\\sqrt{\\frac{5\u2062\\sqrt{3}}{\\pi}}\u2062(T+\\frac{1}{\\sqrt{3}}\u2062c\u2062o\u2062t\u2062(\\frac{\\pi}{5})-1)$, where $T$ is the triangulation number; the line tension as (Luque et al., 2012) $\\lambda=\\frac{2\u2062\u03f5_{0}}{\\sqrt{3}\u2062\\sigma}$ considering a typical binding energy $\u03f5_{0}\u224810\u2062k_{B}\u2062T$; and the FvK number as $\\gamma=12(1\u2212\u03bd_{p}^{2})(R/h)^{2}$, with $\u03bd_{p}=0.3$\u00a0(Buenemann and Lenz, 2008).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Virus</th>\n      <th>T-number</th>\n      <th>Diameter\u00a0(nm)</th>\n      <th>Thickness h (nm)</th>\n      <th>E (Gpa)</th>\n      <th>Y\u00a0(N/m)</th>\n      <th>\u03c3\u00a0(nm)</th>\n      <th>Scaled line tension \u03bb</th>\n      <th>F\u00f6ppl-von Karman \u03b3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CCMV</td>\n      <td>3</td>\n      <td>28</td>\n      <td>3.8</td>\n      <td>0.14</td>\n      <td>0.53</td>\n      <td>5.9</td>\n      <td>0.00107</td>\n      <td>148</td>\n    </tr>\n    <tr>\n      <td>\u03bb Procapsid</td>\n      <td>7</td>\n      <td>50</td>\n      <td>4.0</td>\n      <td>0.16</td>\n      <td>0.64</td>\n      <td>6.8</td>\n      <td>0.000436</td>\n      <td>427</td>\n    </tr>\n    <tr>\n      <td>\u03bb Capsid</td>\n      <td>7</td>\n      <td>63</td>\n      <td>1.8</td>\n      <td>1.0</td>\n      <td>1.8</td>\n      <td>8.6</td>\n      <td>0.0000976</td>\n      <td>3344</td>\n    </tr>\n    <tr>\n      <td>SV40</td>\n      <td>7</td>\n      <td>45</td>\n      <td>6.0</td>\n      <td>0.033</td>\n      <td>0.2</td>\n      <td>6.1</td>\n      <td>0.00174</td>\n      <td>152</td>\n    </tr>\n  </tbody>\n</table>\n\nIn summary, we have seen that the fate of the assembly is controlled by a universal phase diagram in terms of three scaled parameters: line tension, chemical potential and FvK number. The phase diagrams shed light on the physics controlling the assembly of curved shells, and could guide assembly experiments to achieve either an efficient assembly of artificial viral shells of desired geometry and mechanical properties or, alternatively, to envisage the conditions needed to impede viral infections by arresting viral assembly or inducing missasembly into a non-infective structure.\n\n## Materials and methods\n\n### Coarse-grained model and simulation details\n\nThe simulation model, introduced in Aznar and Reguera (2016); Aznar et al. (2018), is coarse-grained at the level of capsomers which are represented as effective spheres of two different diameters: $\\sigma_{h}$ and $\\sigma_{p}$, reflecting the fact that hexamers and pentamers are made of a different number of proteins (six and five, respectively). The interaction between capsomers, $V=V_{L\u2062J}\u22c5V_{a}\u22c5V_{t\u2062o\u2062r}$, is modeled using three contributions: a Mie-like, an angular, and a torsion potential. The Mie-like potential\n\n$$\nV_{L\u2062J}\u2062(\ud835\udc2b_{i\u2062j})=\u03f5_{i\u2062j}\u2062\\frac{n}{m-n}\u2062[(\\frac{\\sigma_{i\u2062j}}{r})^{m}-\\frac{m}{n}\u2062(\\frac{\\sigma_{i\u2062j}}{r})^{n}],\n$$\n\ndescribes the binding and the excluded volume interaction between a pair of capsomers in terms of their relative distance, $r_{ij}$ is the equilibrium distance corresponding to the minimum of the potential, r is the distance between capsomers centers, $\u03f5_{ij}$ is the binding energy between capsomers, and m and n represent the power of the repulsive and attractive interaction terms, respectively, which set the range of the interaction potential. The angular contribution is given by\n\n$$\nV_{a}\u2062(\ud835\udc2b_{i\u2062j},\ud835\udec0_{i},\ud835\udec0_{j})=exp\u2061(-\\frac{(\\theta_{i\u2062j}-\u03bd)^{2}}{2\u2062\\alpha^{2}})\u2062exp\u2061(-\\frac{(\\theta_{j\u2062i}-\u03bd)^{2}}{2\u2062\\alpha^{2}}),\n$$\n\nwhere $\\theta_{i\u2062j}$ is the angle between the vector $\u03a9_{i}$, describing the spatial orientation of the capsomer, and the unit vector $\ud835\udc2b_{i\u2062j}$. The parameter $\u03bd$ is the preferred angle of interaction between proteins of different capsomers, and the parameter $\\alpha$ controls the local bending stiffness, that\u00a0is, the energy cost required to bend two capsomers out of their preferred angle of interaction. The torsion term is given by\n\n$$\nV_{t\u2062o\u2062r}\u2062(\ud835\udec0_{i},\ud835\udec0_{j})=exp\u2061(-k_{t}\u2062\\frac{(1-cos\u2061\u03be)}{2}),\n$$\n\nwhere $k_{t}$ is the torsion constant and $\u03be$ is the angle between the planes defined by the unit vector $\ud835\udc2b_{i\u2062j}$ and both orientation vectors.\n\nThe elastic properties of a shell can be related to the main parameters of the interaction. In particular the Young\u2019s modulus is approximately given by $Y=\\frac{2\u2062n\u2062m}{\\sqrt{3}}\u2062\\frac{\u03f5_{0}}{\\sigma^{2}},$ the bending rigidity is $\u03ba=\\frac{3\u2062\\sqrt{3}}{8}\u2062\\frac{\u03f5_{0}}{\\alpha^{2}},$ and the preferred radius of curvature is $R_{0}=-\\frac{\\sigma}{2\u2062cos\u2061\u03bd}.$ The line tension of a partially formed cap can be approximated by Luque et al. (2012) $\\lambda=\\frac{2\u2062\u03f5_{0}}{\\sqrt{3}\u2062\\sigma},$ and the chemical potential difference that controls the assembly is given by $\u0394\u2062\\mu=k_{B}\u2062T\u2062ln\u2061(c_{1}/c^{*}),$ where $c_{1}$ is the concentration of free capsomers and $c^{*}$ is the critical concentration (Zandi et al., 2006).\n\nThe model has been implemented in a Brownian Dynamics simulation code using a simple stochastic Euler\u2019s integration algorithm, as described in Aznar et al. (2018). Simulations were made with only one type of capsomers. We worked using reduced units in terms of the diameter of the basic building blocks $\\sigma$, their diffusion coefficient $D$, and the binding energy $\u03f5_{0}$. In these reduced units, the parameters used in the simulation are: torsion constant $k_{t}=1.5$, reduced temperature $T=0.1$, corresponding to a binding energy between capsomers of $10\u2062k_{B}\u2062T$, representing the typical order of magnitude of the strength of interactions between viral capsid proteins.\n\nSince, in all cases, the critical nucleus is a partial spherical cap, all simulations were started using a small spherical cap of 19 units with the spontaneous curvature as initial seed. The remaining capsomers up to a total of $N=200-400$ were initially placed randomly inside a cubic box with periodic boundary conditions. The simulations run for a total of 2\u00a0\u00d7\u00a0109 steps and the final structures were analyzed. To verify the universality of the phase diagram, we performed an extensive set of simulations with different interaction parameters. More specifically, the interaction range was varied from $m=12,n=6$ to $m=48,n=24$; the spontaneous angle in the range $1.24<\u03bd<1.45$; the bending stiffness in the range $0.05<\\alpha<0.4$; and the concentration of capsomers was varied from $\u03c1=0.005$ to $\u03c1=0.05$.\n",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "3fbecd52-ee09-4c68-bac6-d4df06db4cdf",
+      "submission_id": "0fd62a21-88b7-471b-a16b-bf29aa39d625",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pierre Sens, Institut Curie, PSL Research University, CNRS France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52525.sa1](https://doi.org/10.7554/eLife.52525.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study reports a theoretical analysis of the mechanical factors influencing the self-assembly (and mis-assembly) of protein subunits into viral capsids. This subject has been studied for a long time, but the present paper offers new insight regarding the importance of contribution from the protein line tension and preferred curvature. The main result of the study is (i) a universal phase diagram, which shows that viruses with high mechanical resistance cannot be self-assembled directly as spherical structures, and (ii) the ensuing suggestion of the need of a maturation step to stiffen the capsid after assembly. Inducing mis-assembly could be a promising route to hinder viral infections.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Triggering mis-assembly in viral capsid formation by elastic frustration\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper combines a theoretical and a numerical study of the dependence of the self-assembly or mis-assembly process of viral capsids on parameters such as the chemical potential difference of protein subunits in and out of the capsid, the line tension, and the stretching and bending energies of the planar assembly, characterized by the Foppl-von Karman number. The main result of the study is (i) an universal phase diagram, which shows that viruses with high mechanical resistance cannot be self-assembled directly as spherical structures, and (ii) which justifies the need of a maturation step to stiffen the capsid after assemble. The authors suggest that this might be a promising route to hinder viral infections by inducing mis-assembly.\n\nThe reviewers found your study of the self-assembly (and mis-assembly) of protein subunits into capsids to be interesting and potentially important. Although the subject of viral capsid assembly has been studied for a long time, investigating the effect of the line tension, chemical potential and the preferred curvature of the protein assembly is a welcome addition to the existing literature.\n\nThe reviewers nevertheless have quite a few comments and questions, some of which are major points that should be addressed before a final decision can be made on the suitability of this submission of publication at eLife.\n\nEssential revisions:\n\nThe reviewers nevertheless have some questions, some of which are major points that should be addressed before a final decision can be made on the suitability of this submission of publication at eLife.\n\n1) The title of the paper focusses on mis-assembly, while most of the text discusses focus on assembly rather than mis-assembly. You should consider modifying the title to account for this.\n\n2) Several important references are not cited. It is important to compare and contrast the results of the current study in some detail with earlier investigations. These include:\n\nDefect in curved crystal:\n\n\u2013 Azadi and Grason Phys. Rev. E 2016\n\nMechanisms of virus assembly:\n\n\u2013 M.F. Hagan and D. Chandler, Biophys. J. 91, 42 (2006);\n\n\u2013 O.M. Elrad, M.F. Hagan, Nano letters 8, 3850 (2008);\n\n\u2013 H. Nguyen et al., J. Am. Chem. Soc. 131, 2606 (2009);\n\n\u2013 I.G. Johnston et al., J. Phys. Condens. Matter 22, 104101 (2010);\n\n\u2013 J.D. Perlmutter, M.F. Hagan, Ann. Rev. Phys. Chem. 66, 217 (2015).\n\nFormation of clathrin-coated pits:\n\n\u2013 R.J. Mashl et al., Biophys. J. 74, 2862 (1998);\n\n\u2013 T. Kohyama et al., Phys. Rev. E 68, 061905 (2003);\n\n\u2013 M. Giani et al., Biophys. J. 111, 222 (2016).\n\n3) A table of numerical values is provided (Table 1). There are some questions about how the Young's modulus E is evaluated. In some references provided, in some of the references, E is not mentioned directly so the authors might have estimated it indirectly. Could the procedure for this evaluation be explained?\n\n4) In order to determine the lowest energy sate, shape with similar number of subunits should be compared. Here, a rescaled size x is used, the definition of which appear to depend upon the shape considered. Hence a given x does not correspond to the same number of subunit for different shape. This should be corrected, and energies of shape with the same number of subunit should be compared.\n\n5) The analytical results are based on a thermodynamic approach where the chemical potential is fixed, which implies a reservoir of particle. It is not clear how this compares with the numerical simulations. Is the chemical potential fixed during the assembly process in the simulations? This point should be made clear, and if the two approaches are based on different thermodynamic assumptions, how meaningfully can they be compared?\n\n6) How does one relate the number of capsomers on the spherical surface, which is controlled by the chemical potential difference, and the number of particles. In the simulation, do we access the number of particles or the number of capsomers?\n\n7) Regarding the bending-dominated regime, it seems a bit strange to rescale the chemical potential and line tension with the Youngs modulus, since this regime should contain the case where the Foppl-von Karman number (and the two-dimensional Young modulus Y) vanish, which implies that tilde(\u0394\u00b5) and \u03bb diverge. What is the optimal structure in this regime, where one does not expect differences been defect-free caps and caps with defects? This regime is not apparent in Figure 3A.\n\n8) For the spherical cap with defect, how is the spatial distribution of the defect should be discussed? Does the energy used to compare with other shapes correspond to the lowest energy when defect localisation is optimised? This should be discussed in some details, since defect distribution is clearly an important factor influencing the energy of the cap.\n\n9) The authors state that spherical capsids cannot self-assemble at large FvK. This statement is probably correct for strictly spherical capsids. However, aggregates could form as planar patches, then bend and form disclinations at sufficient size and line tension \u2013 see references on formation of clathrin-coated pits. Such structures are not accounted for in the analytical theory. Do they show up in the simulations, and if not, why not? Here again, the distribution of defect is a crucial factor that should be discussed.\n\n10) Figure 3: Similar phase diagrams have been calculated by Schneider and Gompper. In their calculation, also structures consisting of several caps or several belts have been predicted. Are these structures relevant here as well? This should be discussed.\n\n11) In the high concentration regimes \"\u2026 many fragments of spherical capsids that cannot grow any further.\u2026\". Why can't they merge, rearrange their internal structure, and thereby reduce line-tension energy?\n\n12) In the general case of non zero FvK numbers, the spontaneous radius of curvature plays an important role in the model, and this is discussed thoroughly by the authors. However, in the phase diagram, it seems that its discussion has been dismissed, or maybe its value has been fixed? In any case, some clarification on how the phase diagram depend on the value of spontaneous curvature is required. For example, it has been shown the reference by Castelnovo in 2017 that for small enough spontaneous curvature, cylinders should dominate. It is not clear how it compares to the many cases discussed here.\n\n13) It is not clear why cylinders should dominate for large FvK numbers and large rescaled spontaneous curvature. Could the author elaborate on this point?\n\n14) The authors should make more effort to recast their results in terms of experimentally useful quantities, so that it becomes apparent how to experimentally explore the phase diagram.\n\nIt is proposed that chemical or physical factors that increase the FvK number or reduce the line tension or the effective concentration are potential targets to prevent viral replication. It would be quite insightful to provide a more quantitative and practical version of this statement. Regarding the chemical potential, this statement could be turned into a capsid protein concentration at which viral assembly is expected to fail, given particular values of the other parameters. How does this concentration relates to expected concentration in cells? Regarding the mechanical parameter, in which range can they be expected to vary under the action of which factor, and would this be enough in practice to prevent capsid formation? You should provide more precise statement regarding how mis-assembly could be induced to hinder viral infections.\n",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "db3adcfe-409f-4e64-9890-7e88da7c3fdf",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C1",
+      "claim": "The successful assembly of a closed protein shell (or capsid) is a key step in the replication of viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The successful assembly of a closed protein shell (or capsid) is a key step in the replication of viruses and in the production of artificial viral cages for bio/nanotechnological applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "5ca231b5-02d2-484b-a862-b0dd2f684c0b",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C2",
+      "claim": "During self-assembly, the favorable binding energy competes with the energetic cost of the growing edge and the elastic stresses generated due to the curvature of the capsid.",
+      "claim_type": "EXPLICIT",
+      "source": "During self-assembly, the favorable binding energy competes with the energetic cost of the growing edge and the elastic stresses generated due to the curvature of the capsid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical framework used in the study, based on established physical principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "82c7c692-bc94-4068-9c33-998c293a99d3",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C3",
+      "claim": "Incomplete structures such as open caps, cylindrical or ribbon-shaped shells may emerge during viral capsid assembly, preventing the successful replication of viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, incomplete structures such as open caps, cylindrical or ribbon-shaped shells may emerge, preventing the successful replication of viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "4e9ed3ae-f163-4e8f-858d-d21403054ef3",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C4",
+      "claim": "Viruses with high mechanical resistance cannot be self-assembled directly as spherical structures.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the outcome of the assembly can be recast into a universal phase diagram showing that viruses with high mechanical resistance cannot be self-assembled directly as spherical structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the theoretical analysis and simulations presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "31e74d1e-fd6e-464a-ac58-8f09606df9bc",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C5",
+      "claim": "The results justify the need of a maturation step in viral assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of our study justify the need of a maturation step and suggest promising routes to hinder viral infections by inducing mis-assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the theoretical and simulation results presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "0f90932e-97c2-4ba0-a62f-8dc34295a1d7",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C6",
+      "claim": "In the simplest cases, viruses are formed by a chain of RNA or DNA encased in a protein shell made from multiple copies of a single protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simplest cases, these tiny pathogens are formed by a chain of RNA or DNA encased in a protein shell, also known as capsid, made from multiple copies of a single protein (Flint et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "a0f3e91e-88b4-44af-865e-5f4c91506ca9",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C7",
+      "claim": "The capsid of most viruses assembles from basic building blocks, which could be individual capsid proteins, dimers, trimers or capsomers.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, the capsid of most viruses assembles from its basic building blocks, which could be individual capsid proteins, dimers, trimers or capsomers (i.e. clusters of five or six proteins, which constitute the structural and morphological units of the shell).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about viral assembly.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "02d499d4-f263-4653-bcd2-3c2a8de48147",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C8",
+      "claim": "The resulting viral capsid structure has a precise architecture, which in most cases is spherical with icosahedral symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting structure has a precise architecture, which in most cases is spherical with icosahedral symmetry (Roos et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "bbe56c14-5de3-4444-9408-44a2203d7e43",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C9",
+      "claim": "Several viruses assemble their capsid before packaging the genetic material.",
+      "claim_type": "EXPLICIT",
+      "source": "Several viruses assemble their capsid before packaging the genetic material.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about viral assembly mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "e677a55d-0add-4d31-b4c4-649019b8f3c2",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C10",
+      "claim": "The proteins of many viruses have the ability to self-assemble in vitro, even in the absence of genetic material, forming empty capsids.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the proteins of many viruses have the ability to self-assemble in vitro, even in the absence of genetic material, forming empty capsids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about viral protein behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "de656d87-093c-4d45-ba17-5bf9c145a663",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C11",
+      "claim": "The assembly of a curved empty shell resembles 2D crystallization on a curved space.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembly of a curved empty shell with a well-defined geometry and precise arrangement of the building blocks is a non-trivial process that resembles 2D crystallization on a curved space (Meng et al., 2014; G\u00f3mez et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "29ea955a-729b-4728-b3f5-5a8dd01dba69",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C12",
+      "claim": "Capsid formation occurs via a nucleation process driven by the favorable binding energy between capsid proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Capsid formation occurs via a nucleation process driven by the favorable binding energy between capsid proteins (Zandi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "af16b4a8-19ab-4433-a8fb-2acca730f870",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C13",
+      "claim": "At the right assembly conditions, thermal fluctuations induce the formation of small partial shells that tend to redissolve unless they reach a minimum critical size.",
+      "claim_type": "EXPLICIT",
+      "source": "At the right assembly conditions, thermal fluctuations induce the formation of small partial shells that tend to redissolve unless they reach a minimum critical size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the nucleation mechanism based on established theory.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "4ebb5fe6-c1e6-4407-9148-03702d9294bb",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C14",
+      "claim": "The energy penalty of the naturally curved structure can be larger than the favorable binding energy, generating a natural self-limiting mechanism for the formation of partial shells.",
+      "claim_type": "EXPLICIT",
+      "source": "As growth continues, the energy penalty of the naturally curved structure, due to the inescapable presence of the rim and the accumulation of elastic energy, can be larger than the favorable binding energy. This generates a natural self-limiting mechanism for the formation of partial shells of a finite size that do not grow until closing (Grason, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents a theoretical inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "10c5cc59-34de-4808-8019-29bec04bf105",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C15",
+      "claim": "There are in vitro experimental evidences of apparently stable partial capsids.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, there are in vitro experimental evidences of apparently stable partial capsids (Law-Hine et al., 2016), that seems to contradict the instability of intermediates that follows from Classical Nucleation Theory (CNT) (Zandi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "1349d37c-0a5c-4955-acc7-899ebf24889f",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C19",
+      "claim": "The stretching energy stored in the spherical shell can be partially released by the introduction of pentagonal defects or by growing anisotropically forming curved ribbon-like crystalline domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The stretching energy stored in the spherical shell grows fast with the area of the patch, and can be partially released by two different mechanisms: by the introduction of pentagonal defects (see Figure 1b), or by growing anisotropically forming curved ribbon-like crystalline domains (see Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical prediction supported by the model and illustrated in figures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "6a97e7b4-df83-464d-9a0c-c454fa613dfd",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C23",
+      "claim": "A stable defectless cap only appears as metastable structure, since it has always a larger energy than a belt.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the Appendix, a stable defectless cap only appears as metastable structure, since it has always a larger energy than a belt, and it is thus non competitive as stable structure, even though it may have lower energies as intermediate in the assembly process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result from the energy comparison analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "3be3023a-705a-4fb5-be1b-f4e4feaf5528",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C24",
+      "claim": "As the FvK number increases, the region where belts are formed occupy a larger domain, while the region with closed caps with disclinations reduces its size.",
+      "claim_type": "EXPLICIT",
+      "source": "As the FvK number increases, the region where belts are formed occupy a larger domain, while the region with closed caps with disclinations reduces its size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the phase diagrams shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "1172a79b-0f0f-40fa-b909-0096cb07a062",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C27",
+      "claim": "Cylinders dominate at large FvK numbers because they have the advantage of not having any stretching energy cost.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason why cylinders dominate at large FvK numbers, corresponding to the regime where stretching dominates over bending, is because they have the advantage of not having any stretching energy cost (i.e. a flat sheet of hexamers can be bent into a cylinder without any stretching).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation based on the elastic theory used in the model.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "33dc1895-b950-4334-b0a7-fe3da2d5d3bd",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C29",
+      "claim": "The coarse-grained model can successfully reproduce the assembly of the lowest spherical shell structures using capsomers.",
+      "claim_type": "EXPLICIT",
+      "source": "The model can successfully reproduce the assembly of the lowest spherical shell structures using capsomers, that is, pentamers and hexamers, as basic assembly units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability of the simulation model used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "7d3aee4c-808c-4a55-ba1d-de77f1268050",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C30",
+      "claim": "The parameters of the interaction in the coarse-grained model can be related to the elastic constants.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the advantages of this simple model is that the parameters of the interaction can be related to the elastic constants (Aznar and Reguera, 2016) (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and described in the methods.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "c2bcf063-0331-4bc5-9893-fbd6b3adabfc",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C31",
+      "claim": "Simulation results confirm almost quantitatively the universality of the fate of the assembly and the potential scenarios discussed in the theory.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the simulation results nicely confirm almost quantitatively the universality of the fate of the assembly and the potential scenarios discussed in the theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing simulation results with theoretical predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "5081f088-1377-4cce-9018-96da2c936353",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C32",
+      "claim": "As the FvK number is increased, the formation of spherical shells is overriden by the formation of cylindrical bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the simulations show that as the FvK number is increased, the formation of spherical shells is overriden by the formation of cylindrical bodies, as shown in Figure 4c, that also competes with other elongated structures such as spherocylinders or even conical shapes (see Appendix 1\u2014figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the simulation results presented in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "1b83f2fc-2ce9-4e2a-b7cd-ba7d3cab5957",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C33",
+      "claim": "The outcome of the assembly not only depends on elastic considerations, but also on the assembly conditions, represented by the scaled chemical potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis also shows that the outcome of the assembly not only depends on elastic considerations, but also on the assembly conditions, represented here by the scaled chemical potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "4b0f2e95-0f71-40c3-9697-abcc2f49c651",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C34",
+      "claim": "The coexistence of tubes and spherical capsids in the in vitro assembly of viruses such as SV40 may be justified by assembly occurring near the vicinity of a phase boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "When assembly takes place at conditions near the vicinity of a phase boundary, a mixture of the two phases, or a structure resulting from their combination (e.g. a spherocylinder) may form. This may justify the observation of coexisting tubes and spherical capsids in the in vitro assembly of viruses such as SV40 (Kanesashi et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the theoretical results to experimental observations cited in the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "ca16c3c8-9526-4e96-a028-63ef2f04e93d",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C35",
+      "claim": "Relatively long-range interactions are desirable to increase the line tension, decrease the FvK number and facilitate the assembly of closed spherical shells.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, our analysis indicates that relatively long-range interactions are desirable to increase the line tension, decrease the FvK number and facilitate the assembly of closed spherical shells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical implication derived from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "b50da841-6cd7-4878-959e-24d2ece546e0",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C36",
+      "claim": "Spherical shells with icosahedral symmetry and triangulation number T > 7 could be successfully assembled in simulations without any template or scaffolding protein, provided that the line tension and FvK number are adequate.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, spherical shells with icosahedral symmetry and triangulation number T > 7 could be successfully assembled in simulations without any template or scaffolding protein, provided that the line tension and FvK number are adequate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the simulations performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "769aacd6-aa13-4326-aa53-48c054142d8a",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C37",
+      "claim": "Chemical or physical modifications that increase the FvK number or reduce the line tension or the effective concentration may become a potential therapeutic target to prevent viral replication by inducing the formation of open, and presumably non-infective, cylindrical or belt-like structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, chemical or physical modifications that increase the FvK number or reduce the line tension or the effective concentration may become a potential therapeutic target to prevent viral replication by inducing the formation of open, and presumably non-infective, cylindrical or belt-like structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative application of the theoretical findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "81639085-26fd-4c01-8505-991d79416d86",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C38",
+      "claim": "Some viruses that require high mechanical resistance first assemble a relatively soft spherical procapsid before suffering a maturation transition.",
+      "claim_type": "EXPLICIT",
+      "source": "This may explain why some viruses that require high mechanical resistance, for instance many dsDNA bacteriophages such as lambda, HK97 and P22, first assemble a relatively soft spherical procapsid before suffering a maturation transition (Roos et al., 2012; Johnson, 2010) that flattens out their faces, which is a clear signature of a high FvK number (Lidmar et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature and used to explain the theoretical findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "41778666-c968-419a-81ff-3a95b7b741f3",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C39",
+      "claim": "A one-step assembly of a spherical shell with the high elastic resistance and FvK number of the final structure is not viable.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of our work indicate that a one-step assembly of a spherical shell with the high elastic resistance and Fvk number of the final structure is not viable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "ce000ff8-082e-46c2-91e9-8fc687bf5883",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C40",
+      "claim": "Viruses like CCMV or SV40 that assemble easily in vitro as spherical shells have estimated values of the scaled line tension and FvK in the region where these structures are expected to be stable outcomes of the assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The table clearly shows that viruses like CCMV or SV40 that assemble easily in vitro as spherical shells, have estimated values of the scaled line tension and FvK in the region where these structures are expected to be stable outcomes of the assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the data presented in Table 1 and comparison with the phase diagrams.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "8ffb2538-894b-48db-a795-d2ffd8406b9d",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C41",
+      "claim": "The high FvK number of the mature bacteriophage lambda will prevent its direct assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrarily, the high FvK number of the mature bacteriophage lambda will prevent its direct assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data in Table 1 and the theoretical phase diagrams.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "bb92b171-d889-4742-971d-4a157cd211c2",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C42",
+      "claim": "The lambda procapsid has a larger scaled line tension and smaller FvK that would facilitate a successful assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, its procapsid, which is the first structure that is assembled, has a larger scaled line tension and smaller FvK that would facilitate a successful assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the data in Table 1 and comparison with the phase diagrams.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "7c1df40d-4ad9-49ce-ac4c-f73431b12fac",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C44",
+      "claim": "The chemical potential can be tuned experimentally by the total protein concentration or by the addition of crowding agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimentally, the chemical potential can be tuned by the total protein concentration or by the addition of crowding agents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about experimental control of assembly conditions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "92a36197-d5c5-47b9-a758-ac208bcc3c5a",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C45",
+      "claim": "The line tension could be modified by the temperature, the pH and the salt concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The line tension (which depends on the strength of the binding interaction), could be modified by the temperature, the pH and the salt concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about experimental control of assembly conditions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "8989d0e8-95f2-4a9f-a758-8813f2e2077d",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C46",
+      "claim": "The bending rigidity and spontaneous radius of curvature are presumably controlled by pH and the presence, concentration and nature of ions or auxiliary proteins in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The bending rigidity and spontaneous radius of curvature are also presumably controlled by pH and the presence, concentration and nature of ions or auxiliary proteins in solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about experimental control based on general knowledge.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "2ffd7037-da9c-428b-9fc0-324ce77ed24f",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "claim_id": "C47",
+      "claim": "The fate of the assembly is controlled by a universal phase diagram in terms of three scaled parameters: line tension, chemical potential and FvK number.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have seen that the fate of the assembly is controlled by a universal phase diagram in terms of three scaled parameters: line tension, chemical potential and FvK number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the theoretical and simulation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1b298bcb-9550-4a4c-9ea6-13b869415384",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors develop a theoretical framework showing that viral capsid assembly outcomes depend on three scaled parameters (line tension, chemical potential, and FvK number) and that elastic frustration can lead to incomplete structures. They demonstrate that viruses with high mechanical resistance cannot be directly assembled as spherical structures, justifying the need for maturation steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The theoretical analysis (C2, C14, C19, C23, C24, C27) is internally consistent and based on established elasticity theory. The phase diagrams (C24, C47) systematically show how different structures emerge under different parameter regimes. The key conclusion about high FvK preventing direct spherical assembly (C4, C39) follows logically from the energetic analysis showing cylinders dominate at high FvK (C27). The framework is comprehensive and mathematically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "38d67907-5c15-4366-82b0-9832d38b2c42",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors validate their theoretical predictions using coarse-grained Brownian dynamics simulations, demonstrating that the model can reproduce assembly of spherical shells and confirming the transition from spherical to cylindrical structures at high FvK numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The simulation results (C31, C32) qualitatively confirm the theoretical phase diagrams across widely different parameter values. The ability to relate simulation parameters to elastic constants (C30) provides a rigorous connection between theory and simulation. Figure 4 shows clear agreement between predicted and observed structures. The authors appropriately note quantitative discrepancies due to fixed particle number vs. constant chemical potential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "b2e9ccac-6231-44d9-aa53-1603682e5a05",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors apply their framework to real viruses, showing that CCMV and SV40 have parameters consistent with successful spherical assembly, while mature bacteriophage lambda has high FvK preventing direct assembly, but its procapsid has favorable parameters for initial assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Table 1 provides estimated elastic parameters for real viruses based on experimental measurements from the literature (C38, C40, C41, C42). The comparison with phase diagrams is logical and the conclusions about assembly viability are consistent with known biological behavior (e.g., lambda requiring maturation). However, the authors acknowledge uncertainty in some estimates (e.g., lambda procapsid FvK may be overestimated).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "72959850-6526-4124-9030-3bb99d8cfe76",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors propose practical applications including explaining coexistence of tubes and spherical capsids in SV40 assembly, suggesting design principles for artificial viral cages, and identifying potential therapeutic targets to induce viral mis-assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the explanation for SV40 coexistence (C34) is plausible and supported by the phase diagram framework, it remains speculative without direct experimental validation. The design principles (C35) and therapeutic applications (C37) are reasonable extrapolations from the theory but require experimental verification. These represent promising hypotheses rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "43aaefb2-5250-46f2-bdcd-d97fb94d62e4",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors describe how assembly parameters can be experimentally controlled through concentration, temperature, pH, salt concentration, and presence of ions or auxiliary proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C44, C45, C46) represent established knowledge about experimental control of protein assembly conditions, appropriately cited and applied to the context of the study. The connections between experimental variables and theoretical parameters are reasonable, though C46 is noted as presumptive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    },
+    {
+      "id": "eb1bdd50-d0f6-4662-89c7-20a2bb9fee26",
+      "content_id": "0366898d-9d80-4076-831f-f9cca4ef3465",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors provide background on viral capsid structure, assembly mechanisms, and prior work on geometric frustration and nucleation theory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims establish the scientific context and are appropriately supported by citations to established literature (C6, C8, C11, C12, C15). The background accurately represents current understanding of viral assembly and provides necessary foundation for the study. C15 appropriately notes experimental evidence for stable partial capsids that motivated the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:34:15.517147Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5ca231b5-02d2-484b-a862-b0dd2f684c0b",
+      "result_id": "1b298bcb-9550-4a4c-9ea6-13b869415384"
+    },
+    {
+      "claim_id": "82c7c692-bc94-4068-9c33-998c293a99d3",
+      "result_id": "1b298bcb-9550-4a4c-9ea6-13b869415384"
+    },
+    {
+      "claim_id": "4e9ed3ae-f163-4e8f-858d-d21403054ef3",
+      "result_id": "1b298bcb-9550-4a4c-9ea6-13b869415384"
+    },
+    {
+      "claim_id": "31e74d1e-fd6e-464a-ac58-8f09606df9bc",
+      "result_id": "1b298bcb-9550-4a4c-9ea6-13b869415384"
+    },
+    {
+      "claim_id": "4ebb5fe6-c1e6-4407-9148-03702d9294bb",
+      "result_id": "1b298bcb-9550-4a4c-9ea6-13b869415384"
+    },
+    {
+      "claim_id": "1349d37c-0a5c-4955-acc7-899ebf24889f",
+      "result_id": "1b298bcb-9550-4a4c-9ea6-13b869415384"
+    },
+    {
+      "claim_id": "6a97e7b4-df83-464d-9a0c-c454fa613dfd",
+      "result_id": "1b298bcb-9550-4a4c-9ea6-13b869415384"
+    },
+    {
+      "claim_id": "3be3023a-705a-4fb5-be1b-f4e4feaf5528",
+      "result_id": "1b298bcb-9550-4a4c-9ea6-13b869415384"
+    },
+    {
+      "claim_id": "1172a79b-0f0f-40fa-b909-0096cb07a062",
+      "result_id": "1b298bcb-9550-4a4c-9ea6-13b869415384"
+    },
+    {
+      "claim_id": "1b83f2fc-2ce9-4e2a-b7cd-ba7d3cab5957",
+      "result_id": "1b298bcb-9550-4a4c-9ea6-13b869415384"
+    },
+    {
+      "claim_id": "41778666-c968-419a-81ff-3a95b7b741f3",
+      "result_id": "1b298bcb-9550-4a4c-9ea6-13b869415384"
+    },
+    {
+      "claim_id": "2ffd7037-da9c-428b-9fc0-324ce77ed24f",
+      "result_id": "1b298bcb-9550-4a4c-9ea6-13b869415384"
+    },
+    {
+      "claim_id": "33dc1895-b950-4334-b0a7-fe3da2d5d3bd",
+      "result_id": "38d67907-5c15-4366-82b0-9832d38b2c42"
+    },
+    {
+      "claim_id": "7d3aee4c-808c-4a55-ba1d-de77f1268050",
+      "result_id": "38d67907-5c15-4366-82b0-9832d38b2c42"
+    },
+    {
+      "claim_id": "c2bcf063-0331-4bc5-9893-fbd6b3adabfc",
+      "result_id": "38d67907-5c15-4366-82b0-9832d38b2c42"
+    },
+    {
+      "claim_id": "5081f088-1377-4cce-9018-96da2c936353",
+      "result_id": "38d67907-5c15-4366-82b0-9832d38b2c42"
+    },
+    {
+      "claim_id": "b50da841-6cd7-4878-959e-24d2ece546e0",
+      "result_id": "38d67907-5c15-4366-82b0-9832d38b2c42"
+    },
+    {
+      "claim_id": "81639085-26fd-4c01-8505-991d79416d86",
+      "result_id": "b2e9ccac-6231-44d9-aa53-1603682e5a05"
+    },
+    {
+      "claim_id": "ce000ff8-082e-46c2-91e9-8fc687bf5883",
+      "result_id": "b2e9ccac-6231-44d9-aa53-1603682e5a05"
+    },
+    {
+      "claim_id": "8ffb2538-894b-48db-a795-d2ffd8406b9d",
+      "result_id": "b2e9ccac-6231-44d9-aa53-1603682e5a05"
+    },
+    {
+      "claim_id": "bb92b171-d889-4742-971d-4a157cd211c2",
+      "result_id": "b2e9ccac-6231-44d9-aa53-1603682e5a05"
+    },
+    {
+      "claim_id": "4b0f2e95-0f71-40c3-9697-abcc2f49c651",
+      "result_id": "72959850-6526-4124-9030-3bb99d8cfe76"
+    },
+    {
+      "claim_id": "ca16c3c8-9526-4e96-a028-63ef2f04e93d",
+      "result_id": "72959850-6526-4124-9030-3bb99d8cfe76"
+    },
+    {
+      "claim_id": "769aacd6-aa13-4326-aa53-48c054142d8a",
+      "result_id": "72959850-6526-4124-9030-3bb99d8cfe76"
+    },
+    {
+      "claim_id": "7c1df40d-4ad9-49ce-ac4c-f73431b12fac",
+      "result_id": "43aaefb2-5250-46f2-bdcd-d97fb94d62e4"
+    },
+    {
+      "claim_id": "92a36197-d5c5-47b9-a758-ac208bcc3c5a",
+      "result_id": "43aaefb2-5250-46f2-bdcd-d97fb94d62e4"
+    },
+    {
+      "claim_id": "8989d0e8-95f2-4a9f-a758-8813f2e2077d",
+      "result_id": "43aaefb2-5250-46f2-bdcd-d97fb94d62e4"
+    },
+    {
+      "claim_id": "db3adcfe-409f-4e64-9890-7e88da7c3fdf",
+      "result_id": "eb1bdd50-d0f6-4662-89c7-20a2bb9fee26"
+    },
+    {
+      "claim_id": "0f90932e-97c2-4ba0-a62f-8dc34295a1d7",
+      "result_id": "eb1bdd50-d0f6-4662-89c7-20a2bb9fee26"
+    },
+    {
+      "claim_id": "a0f3e91e-88b4-44af-865e-5f4c91506ca9",
+      "result_id": "eb1bdd50-d0f6-4662-89c7-20a2bb9fee26"
+    },
+    {
+      "claim_id": "02d499d4-f263-4653-bcd2-3c2a8de48147",
+      "result_id": "eb1bdd50-d0f6-4662-89c7-20a2bb9fee26"
+    },
+    {
+      "claim_id": "bbe56c14-5de3-4444-9408-44a2203d7e43",
+      "result_id": "eb1bdd50-d0f6-4662-89c7-20a2bb9fee26"
+    },
+    {
+      "claim_id": "e677a55d-0add-4d31-b4c4-649019b8f3c2",
+      "result_id": "eb1bdd50-d0f6-4662-89c7-20a2bb9fee26"
+    },
+    {
+      "claim_id": "de656d87-093c-4d45-ba17-5bf9c145a663",
+      "result_id": "eb1bdd50-d0f6-4662-89c7-20a2bb9fee26"
+    },
+    {
+      "claim_id": "29ea955a-729b-4728-b3f5-5a8dd01dba69",
+      "result_id": "eb1bdd50-d0f6-4662-89c7-20a2bb9fee26"
+    },
+    {
+      "claim_id": "af16b4a8-19ab-4433-a8fb-2acca730f870",
+      "result_id": "eb1bdd50-d0f6-4662-89c7-20a2bb9fee26"
+    },
+    {
+      "claim_id": "10c5cc59-34de-4808-8019-29bec04bf105",
+      "result_id": "eb1bdd50-d0f6-4662-89c7-20a2bb9fee26"
+    }
+  ],
+  "comparisons": []
+}

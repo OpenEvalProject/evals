@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C33",
+      "C34"
+    ],
+    "result": "LCA9 is caused by mutations in NMNAT1 and is characterized by selective retinal degeneration without systemic involvement. Despite ubiquitous NMNAT1 expression, patients exhibit only retinal pathology, suggesting particular vulnerability of retinal cells to NMNAT1 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C10, C33-C34 establish the clinical and genetic basis of LCA9 through citations to prior literature and clinical observations. The selective retinal phenotype despite ubiquitous expression is well-documented in multiple cited studies, providing strong support for this established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C80"
+    ],
+    "result": "Widespread NMNAT1 deletion in adult mice causes selective photoreceptor degeneration with progressive loss of ONL cells, retinal thinning, and complete loss of visual function by 33 days post-deletion. Metabolite analysis shows increased NMN but only mild, non-significant NAD+ decrease at 25 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27, C35-C49, C80 are supported by comprehensive histological, functional (ERG), and metabolomic data from conditional knockout mice. The temporal progression is well-documented with multiple time points, quantitative measurements, and appropriate statistical analyses (two-way ANOVA with reported F and p values). The selective vulnerability of photoreceptors is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C81",
+      "C82"
+    ],
+    "result": "Cell-type specific deletion of NMNAT1 in rods (Rho-Cre) or cones (OPN1LW-Cre) demonstrates that NMNAT1 is required cell-autonomously within photoreceptors for their survival and function. Rod-specific deletion causes severe ONL thinning and loss of scotopic responses, while cone-specific deletion causes complete loss of photopic b-wave despite minimal histological changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28, C55-C61, C81-C82 are strongly supported by cell-type specific Cre-lox experiments with appropriate controls. The rod-specific phenotype is robust with both histological and functional deficits. The cone-specific functional deficit (complete loss of photopic b-wave) despite minimal histological changes is well-documented, though the interpretation that this demonstrates cone-autonomous requirement is reasonable given the low cone percentage in mice. Statistical analyses are appropriate (two-way ANOVA with reported values).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C83",
+      "C95"
+    ],
+    "result": "AAV-mediated gene replacement of NMNAT1 in photoreceptors using AAV8(Y733F) with hGRK1 promoter partially rescues visual function in NMNAT1-deficient mice, with significant improvement in scotopic a-wave but not b-waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C62-C66, C83, C95 are supported by AAV transduction experiments showing photoreceptor-specific expression and ERG measurements demonstrating significant improvement in scotopic a-wave (p<0.05). However, the rescue is partial and limited to a subset of photoreceptors, which appropriately tempers the conclusion. The lack of significant b-wave improvement is acknowledged. Statistical analysis is appropriate (two-way ANOVA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "NMNAT3 is dispensable for retinal function, as NMNAT3 knockout mice show no ERG defects, suggesting NMNAT1 is the functionally dominant isoform in retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by ERG analysis of NMNAT3 KO mice showing no functional deficits (appropriate statistical analysis with reported F and p values showing no significant differences). The inference that NMNAT1 is the dominant isoform is reasonable given the contrasting phenotypes, though this is comparative rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C68",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Loss of NMNAT1 activates SARM1 in photoreceptors, as evidenced by increased NMN levels and elevated cADPR (a biomarker of SARM1 NADase activity) in NMNAT1 cKO retinas. Significant NAD+ loss occurs by 29-32 days in a SARM1-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30, C68, C70-C72 are supported by metabolite analysis using LC-MSMS showing increased NMN (C37, C68), increased cADPR in SARM1-dependent manner (C71), and SARM1-dependent NAD+ loss at later timepoints (C70). The use of cADPR as a SARM1 activity biomarker is well-established in cited literature. Statistical analyses are appropriate (one-way ANOVA with Holm-Bonferroni correction, reported F and p values).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C96",
+      "C97"
+    ],
+    "result": "SARM1 is necessary for photoreceptor cell death induced by NMNAT1 loss, as NMNAT1/SARM1 double knockout mice show complete rescue of photoreceptor survival, retinal structure, and visual function. This demonstrates that the essential function of NMNAT1 in photoreceptors is to inhibit SARM1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C31, C73-C78, C96-C97 are strongly supported by comprehensive rescue experiments in NMNAT1 cKO:SARM1 KO mice showing preservation of ONL structure (histology with quantification), cell counts, and complete rescue of ERG responses (scotopic and photopic). Statistical analyses are appropriate (two-way ANOVA, Mann-Whitney U test with reported values). The conclusion that NMNAT1's essential function is SARM1 inhibition is well-supported by the genetic epistasis experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C32",
+      "C79",
+      "C109",
+      "C114",
+      "C115"
+    ],
+    "result": "SARM1 is proposed as a therapeutic candidate for LCA9 and potentially other retinopathies, based on the rescue of photoreceptor degeneration in SARM1 knockout mice and the potential druggability of SARM1 as an enzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C32, C79, C109, C114-C115 are speculative therapeutic proposals based on the genetic rescue data. While the genetic evidence for SARM1's role is strong, translation to therapeutic intervention requires additional validation. No pharmacological SARM1 inhibition data is presented in this study. The druggability claim relies on citations to other work. This represents a reasonable hypothesis for future work but is not directly demonstrated here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C117",
+      "C118"
+    ],
+    "result": "Loss of NMNAT1 in photoreceptors triggers SARM1-dependent cell death through a mechanism analogous to NMNAT2/SARM1-dependent axon degeneration, defining a common degenerative pathway. SARM1 is activated by loss of any non-redundant NMNAT enzyme, with NMN potentially serving as the activating signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85, C98-C107, C117-C118 synthesize the current findings with prior axon degeneration literature. The analogy between NMNAT1/photoreceptors and NMNAT2/axons is well-supported by parallel genetic epistasis experiments (both systems show SARM1-dependent degeneration that is rescued by SARM1 deletion). The mechanistic model is supported by metabolite data (NMN increase) and established literature on SARM1 activation. The claim of a 'common mechanism' is justified by the experimental parallels, though some aspects (e.g., NMN as direct activator) remain hypothetical based on cited work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C50",
+      "C51",
+      "C67",
+      "C69",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Background and context from prior literature on NMNAT enzymes, retinal NAD+ metabolism, SARM1 function, and related retinal diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C26, C50-C51, C67, C69, C87-C93, C108, C110-C113 represent established knowledge from cited literature. These are appropriately cited and provide necessary context. As these are not novel findings from this study, they are evaluated based on appropriate citation rather than new experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C94",
+      "C116"
+    ],
+    "result": "This work extends understanding of retinal degeneration mechanisms and SARM1's role in human disease, demonstrates the utility of mechanistic dissection in retinal neurodegeneration, and suggests LCA9 as a reasonable target for AAV gene therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C94, C116 represent interpretive conclusions about the significance and implications of the work. These are reasonable inferences supported by the experimental findings, though they contain speculative elements about future applications and broader significance. The claim about extending understanding (C86) is justified by the novel NMNAT1-SARM1 connection in photoreceptors.",
+    "result_type": "MINOR"
+  }
+]

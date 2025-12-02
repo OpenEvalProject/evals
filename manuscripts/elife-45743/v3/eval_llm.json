@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C22",
+      "C23",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors developed a spike-triggered clustering algorithm for estimating subunit model parameters as a maximum likelihood procedure. The method generalizes spike-triggered averaging and optimizes a simple LNLN cascade model without assumptions about spatio-temporal properties of subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18, C22-C23, C31-C35 collectively describe the methodological development and validation. The method is derived from maximum likelihood principles (C16), takes the form of spike-triggered clustering (C17), and is validated through simulations (C35). The model structure (C31-C33) and intuition (C34) are clearly described and supported by Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In OFF parasol RGCs, estimated subunits partition the receptive field hierarchically into 4-6 compact, spatially localized regions that tile the receptive field with minimal overlap. These subunits likely represent aggregated bipolar cell inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C20-C21, C36-C40, C46-C52 are supported by extensive experimental data in Figures 2 and simulations in Figure 1\u2014figure supplement 1. The hierarchical partitioning (C37-C38), spatial compactness (C46-C47), tiling properties (C48-C49), and optimal number of subunits (C40) are all quantitatively demonstrated. The interpretation as aggregated bipolar inputs (C4, C21, C50-C52) is reasonable given the stimulus resolution and simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "ON parasol cells show weaker spatial nonlinearities than OFF parasol cells, with 48% optimally fit by 1-2 subunits, though 52% show improvement with multiple subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by experimental data comparing ON and OFF parasol cells. The quantitative differences in optimal subunit numbers (C41-C42) and the inference that ON cells have spatial nonlinearities (C44) based on improved fits with multiple subunits (C43) are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Estimated subunits are larger and fewer than expected from known bipolar cell properties at the recorded eccentricities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by comparison with cited literature (Jacoby et al., 2000; Schwartz and Rieke, 2011; Tsukamoto and Omi, 2015) and explained by the coarse stimulus resolution used, as demonstrated in simulations (Figure 1\u2014figure supplement 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "A novel locally normalized L1 (LNL1) regularization method enables accurate subunit estimation with limited data (high resolution or short duration), producing spatially localized subunits with fewer spurious pixels and better prediction accuracy than standard L1 regularization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 are well-supported by experimental data in Figure 3. The problems with limited data (C53-C54), the effectiveness of both L1 and LNL1 regularization (C55, C59), and the superior performance of LNL1 (C57-C58, C60-C62) are all demonstrated quantitatively. The claim that the prior doesn't introduce significant biases (C56) is supported by matching subunit locations with unregularized estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Joint estimation of subunits across neighboring OFF parasol cells reveals shared subunits and produces a more parsimonious population model, reducing the total number of subunits needed while maintaining or improving prediction accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C63-C73 are supported by experimental data in Figure 4. The observation of closely-spaced subunits between cells (C65-C66), their interpretation as shared subunits (C67), and the quantitative demonstration of parsimony (C68-C72) are all well-documented. The biological expectation (C63-C64) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A novel null stimulus methodology reveals that RGCs respond substantially to stimuli orthogonal to their linear receptive field, with OFF parasol cells showing stronger responses than ON parasol cells, demonstrating nonlinear spatial integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by experimental data in Figure 5. The construction of null stimuli (C74-C75), the substantial and reproducible responses (C76), the inference of nonlinearity (C77), and the difference between ON and OFF cells (C78) are all clearly demonstrated and consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C25",
+      "C27",
+      "C28",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The subunit model substantially outperforms linear models in predicting responses to null stimuli, with prediction accuracy saturating at 4-6 subunits. OFF parasol cells show stronger nonlinearities than ON parasol cells, and null stimuli more efficiently expose these nonlinearities than white noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C25, C27-C28, C79-C85 are strongly supported by experimental data in Figures 5 and 6. The failure of linear models (C80, C82), progressive improvement with subunits (C81, C83), saturation at 4-6 subunits (C83), and superior efficiency of null stimuli (C84-C85) are all quantitatively demonstrated across three retinas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C26",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The subunit model accurately predicts responses to natural images with simulated fixational eye movements, with spatial nonlinearities contributing more to responses during inter-saccadic periods than immediately after saccades. Some firing events remain unexplained, suggesting additional mechanisms may be needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C26, C86-C94 are supported by experimental data in Figure 7. The progressive improvement with subunits (C87), differential effects for saccades vs. jitter (C90), and the explanation based on stimulus statistics (C91-C92) are well-documented. The acknowledgment of limitations (C88) and speculation about additional mechanisms (C89) are appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The spike-triggered clustering method successfully generalizes to V1 simple and complex cells, revealing subunits with expected spatiotemporal structure, hierarchical organization, and translational properties consistent with known V1 physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C95-C100 are supported by experimental data in Figure 8. The oriented spatiotemporal structure (C95), hierarchical organization (C96), differences between simple and complex cells (C97), translational structure (C98), and consistency with prior hypotheses (C99) are all demonstrated. The generalization claim (C30, C100) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "In simulated conditions, spike-triggered clustering produces more consistent and accurate estimates of subunit spatial structure than spike-triggered non-negative matrix factorization (SNMF), with SNMF often producing mixtures of underlying subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 are supported by simulation data in Figure 9. The comparison is fair (same conditions, no regularization, correct number of subunits), and the differences in accuracy and consistency are clearly demonstrated. However, the authors appropriately note that initialization and regularization choices could affect both methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Compared to convolutional models, spike-triggered clustering is less data-efficient but achieves superior performance with typical experimental data durations by capturing deviations from purely convolutional structure in both RGCs and V1 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 are supported by experimental data in Figures 10 and 10\u2014figure supplement 1. The efficiency-accuracy tradeoff (C104-C105), similar spatial layouts (C106), and superior performance with sufficient data (C107) are demonstrated for both retinal and V1 data. The observations about power spectra (C108) and alternative nonlinearities (C109-C110) provide additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C19"
+    ],
+    "result": "Subunit computations are a common motif in sensory systems, but no widely accepted general tools exist for inferring their structure. Existing methods like spike-triggered averaging are limited to linear models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C15, C19 establish the scientific context and motivation. These are well-supported by citations to established literature and represent accurate characterizations of the field. The gap in methodology (C15) provides clear motivation for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "The model structure permits incorporation of prior information such as spatial locality in cases of limited data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by the demonstration in Figure 3 that regularization can be successfully incorporated into the estimation procedure through proximal operators, improving performance with limited data.",
+    "result_type": "MINOR"
+  }
+]

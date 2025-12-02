@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "AANAT1 is expressed in astrocytes and specific neuronal subpopulations throughout the adult Drosophila brain. Immunohistochemistry with a validated antibody shows AANAT1 in astrocyte cytoplasm and neuronal nuclei, with all AANAT1-positive glia confirmed as astrocytes except a subset in optic lobes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (IHC with validated antibody, cell-type specific markers, genetic controls) consistently demonstrate AANAT1 expression patterns. The antibody specificity is confirmed by absence of signal in AANAT1-null mutants (C26). Co-labeling experiments with astrocyte-specific markers (C32) and morphological analysis (C34) provide converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "AANAT1 is expressed in approximately 25% of serotonergic neurons but is absent from dopaminergic and octopaminergic neurons. AANAT1 is also present in subpopulations of glutamatergic, GABAergic, and cholinergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Quantitative co-labeling experiments with neurotransmitter-specific markers provide clear evidence (C36-C39). The findings are corroborated by independent single-cell RNA sequencing data (C40). The systematic examination of multiple neurotransmitter systems strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The AANAT1lo mutation is a hypomorphic allele that reduces AANAT1 protein to 8-13% of control levels, with complete loss from astrocytes but residual expression in some neurons. Western blotting detects only the shorter AANAT1 isoform in brain extracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent methods (western blotting, IHC, quantification) consistently demonstrate the hypomorphic nature of AANAT1lo. The cell-type specific loss pattern (complete in astrocytes, partial in neurons) is clearly documented with appropriate controls. The characterization is thorough and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C64",
+      "C65"
+    ],
+    "result": "AANAT1 limits the accumulation of serotonin and dopamine in the brain specifically upon sleep deprivation. Under baseline conditions, monoamine levels are normal in AANAT1lo mutants, but after 12 hours of sleep deprivation, serotonin and dopamine levels are robustly increased compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "HPLC-MS measurements provide quantitative evidence with appropriate statistical analysis (C58). The specificity for sleep deprivation conditions (C57 vs C58) and lack of effect on octopamine (C59) strengthen the conclusions. Controls demonstrate that sleep deprivation itself doesn't alter monoamine or AANAT1 levels in wild-type flies (C60-C61), ruling out confounding effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C22",
+      "C23",
+      "C69",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79"
+    ],
+    "result": "AANAT1 functions specifically in astrocytes, not neurons, to limit recovery sleep following sleep deprivation. Cell-type specific RNAi knockdown shows that astrocytic AANAT1 depletion increases recovery sleep and phenocopies AANAT1lo mutants, while neuronal knockdown has no effect on recovery sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of two independent RNAi lines targeting different sequences provides strong evidence against off-target effects. The cell-type specificity is clearly demonstrated with appropriate Gal4 drivers and controls. The phenocopy of AANAT1lo mutants by astrocyte-specific knockdown (C78-C79) provides compelling support. Baseline sleep remains normal (C76), demonstrating specificity for homeostatic sleep regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Astrocyte-selective AANAT1 knockdown leads to increased brain serotonin and dopamine levels after sleep deprivation in most samples, though this did not reach statistical significance. Together with AANAT1lo data, this suggests astrocytes employ AANAT1 to limit monoamine accumulation upon sleep deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the trend is consistent with the AANAT1lo data, the lack of statistical significance (C83) weakens this specific result. The authors acknowledge potential outliers and suggest AANAT1 may affect only a subset of brain monoamines. The conclusion (C84) is reasonable as an inference from combined data but requires additional validation for the astrocyte-specific component.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "AANAT1 levels in astrocytes show dynamic regulation during the dark period, peaking at ZT15 and declining to undetectable levels by ZT21, then re-establishing at lights-on (ZT24).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Time-course immunohistochemistry with quantification provides clear evidence of temporal regulation (C89-C91). The dramatic changes in protein levels suggest active regulation relevant to sleep-wake cycles. The methodology is appropriate and the pattern is consistent across samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C113",
+      "C114"
+    ],
+    "result": "Neuronal AANAT1 may function to limit sleep consolidation at night, as one RNAi line (but not the other) showed increased nighttime sleep with longer bout duration and fewer bouts when driven in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The discrepancy between the two RNAi lines (C72, C114) raises concerns about off-target effects or line-specific artifacts. The effect was not observed in AANAT1lo mutants, further questioning whether this represents true AANAT1 function. Additional validation is required before concluding neuronal AANAT1 regulates baseline sleep consolidation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Both loss-of-function and overexpression of AANAT1 in astrocytes increase recovery sleep following deprivation, indicating that regulated astrocytic AANAT1 levels are critical for sleep homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bidirectional effect (both loss and gain of function producing similar phenotypes) strongly supports the importance of precise AANAT1 regulation (C81). This is a common pattern for enzymes requiring tight regulation. The data provide compelling evidence for dosage sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "AANAT1 functions in mature astrocytes rather than playing a developmental role. AANAT1 expression in astrocytes increases gradually during pupal development (48-96 hr APF), and adult-specific knockdown using the TARGET system increases recovery sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of effect on astrocyte numbers (C85) argues against a developmental role. The temporal expression pattern during development (C120-C121) and adult-specific knockdown results (C122) together support a function in mature astrocytes. However, the TARGET experiment shows increased recovery sleep compared to only one control, which is a minor weakness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Sleep deprivation does not alter levels of Ebony, another monoamine catabolic enzyme expressed in astrocytes, in either AANAT1lo mutants or sleep-deprived wild-type flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot analysis with appropriate controls demonstrates specificity of the AANAT1 effect. This control experiment strengthens the conclusion that changes in monoamine levels are specifically due to AANAT1 rather than general alterations in astrocyte metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "AANAT1 is absent from astrocytes infiltrating the neuropils of key sleep centers (mushroom body, ellipsoid body, fan-shaped body), suggesting it acts elsewhere in the brain to regulate sleep homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Systematic examination of known sleep centers with IHC provides clear negative evidence (C94). The inference that AANAT1 acts elsewhere (C95) is reasonable given this distribution pattern, though the actual site of action remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Cells that produce and release monoamines do not necessarily contribute to their catabolism via AANAT1. Non-monoaminergic neurons (glutamatergic, GABAergic, cholinergic) expressing AANAT1 could contribute to monoamine bioavailability regulation along with astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The absence of AANAT1 from dopaminergic and octopaminergic neurons (C44) challenges conventional assumptions about monoamine metabolism. The presence in non-monoaminergic neurons (C45) suggests a more distributed system for monoamine regulation. The logic is sound based on the expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Drosophila astrocytes lack monoamine-synthesizing enzymes based on gene expression studies and RNA sequencing databases, suggesting monoamines inactivated by AANAT1 in astrocytes are imported via an unidentified transporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference is logical based on the absence of biosynthetic enzymes in expression databases (C108). The conclusion about transporter-mediated uptake (C109) is reasonable, though the transporter remains unidentified. This represents an important gap for future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C42",
+      "C43"
+    ],
+    "result": "Background and context: Sleep features are conserved across species, monoamines regulate sleep from humans to insects, glia metabolize monoamines and regulate sleep, but the role of glia in monoaminergic sleep control was unknown. AANAT1lo mutants were previously reported to have normal baseline sleep but increased recovery sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and are well-supported by appropriate citations to the literature. They accurately represent prior knowledge and identify the gap addressed by this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Discussion of mechanisms: In Drosophila, serotonin promotes sleep while dopamine promotes waking. AANAT1 could act in astrocytes to limit accumulation of sleep-promoting serotonin or to restrict dopaminergic signaling from wake-promoting neurons that are upstream of homeostatic sleep circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are reasonable speculations based on the data and established knowledge (C97-C98), but remain mechanistic hypotheses requiring further testing. The dual increase in both serotonin and dopamine (C99) complicates interpretation. The proposed mechanisms (C100, C103) are plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Drosophila astrocytes express multiple monoamine-related proteins (Ebony enzyme, octopamine/tyramine receptors) and have ramified processes near synapses, positioning them well to regulate monoamine bioavailability. Sleep deprivation may alter astrocyte-neuron contacts, potentially affecting monoamine uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression of monoamine-related proteins is supported by appropriate citations (C105-C106). The morphological basis for astrocyte function (C110) is well-established. The speculation about structural changes (C111-C112) is appropriately tentative and based on cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Comparative biology: Loss of the related enzyme aanat2 in zebrafish decreases baseline sleep, potentially due to loss of melatonin synthesis. The appropriate balance and cellular context of AANAT activity is critical for sleep regulation across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to zebrafish (C115-C116) is appropriately cited and highlights evolutionary conservation with important differences. The general conclusion about AANAT regulation (C117) is well-supported by the combined findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Translational implications: Astrocytes in rodents express monoamine transporters and receptors for dopamine and serotonin, raising the possibility that mammalian astrocytes might also participate in sleep regulation involving monoaminergic signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression of monoamine-related proteins in mammalian astrocytes is well-documented by citations (C118). The speculation about mammalian sleep regulation (C119) is appropriately tentative and represents a reasonable hypothesis for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C24",
+      "C104"
+    ],
+    "result": "Overall conclusions: AANAT1 and astrocytes play a crucial role in regulating monoamine bioavailability and homeostatic sleep, with astrocytes specifically engaged to catabolize monoamines whose levels are elevated by sleep deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary conclusions are well-supported by the combined experimental evidence from expression studies, genetic manipulations, monoamine measurements, and sleep behavior analyses. The conclusions appropriately reflect the strength of the data.",
+    "result_type": "MAJOR"
+  }
+]

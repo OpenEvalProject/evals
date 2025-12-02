@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48"
+    ],
+    "result": "CRM1 and SET-Nup214 selectively co-localize at HOXA and HOXB cluster regions in LOUCY cells (a T-ALL cell line expressing SET-Nup214 fusion), but not in K562 or HL60 cells. CRM1 signal is enriched at Nup214 peaks, suggesting SET-Nup214 is preferentially targeted to a subset of CRM1 binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 are well-supported by ChIP-seq data shown in Figures 1-2, validated with two different CRM1 antibodies (C42). The aggregation plot analysis (C44-C45) demonstrates asymmetric enrichment consistent with SET-Nup214 being recruited to pre-bound CRM1. The cell-type specificity strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C64",
+      "C65"
+    ],
+    "result": "CRM1 inhibitor KPT-330 causes degradation of both CRM1 and SET-Nup214, leading to disappearance of SET-Nup214 nuclear dots and depletion of CRM1/SET-Nup214 binding at HOX clusters. Similar effects are observed with leptomycin B (LMB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C54-C55, C64-C65 are supported by immunoblotting (Figure 3A), immunofluorescence (Figure 3\u2014supplement 1C), and ChIP-seq/ChIP-qPCR data (Figures 2, 3\u2014supplement 4). The convergent evidence from two different CRM1 inhibitors with distinct mechanisms strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "HOX gene expression in LOUCY cells is more sensitive to KPT-330 treatment than in K562 cells. Knockdown of SET-Nup214 reduces HOX gene expression but does not affect CRM1 binding to HOX regions, indicating CRM1 functions as a recruiter of SET-Nup214.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by qPCR data (Figure 3B-C) and knockdown experiments (Figure 3\u2014supplement 3). The differential sensitivity between cell lines correlates with SET-Nup214 expression. The knockdown experiment (C59-C61) provides critical evidence for the recruitment order, though the conclusion would be strengthened by rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C62",
+      "C63"
+    ],
+    "result": "The CRM1/Ran-GTP/NES protein complex is important for recruitment and stabilization of SET-Nup214 to HOX clusters, as demonstrated by effects of both KPT-330 and LMB, which have different mechanisms of CRM1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by experimental data with both inhibitors (C62-C65) and cited literature showing higher affinity of the complex for Nup214. However, the identity of the NES-containing protein(s) in the complex remains unknown, which is acknowledged by the authors. This limits mechanistic understanding but doesn't invalidate the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Active RNA Pol II (S2P and S5P forms) accumulates at HOXA and HOXB clusters in LOUCY and K562 cells, with LOUCY showing greater sensitivity to KPT-330 treatment. This indicates that CRM1 together with SET-Nup214 creates a specific environment for robust HOX gene activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 are supported by ChIP-qPCR and ChIP-seq data (Figure 4). The correlation between CRM1/SET-Nup214 binding, active Pol II, and sensitivity to CRM1 inhibition is consistent across multiple HOX genes. The genome-wide analysis (C78) strengthens the specificity of the effect. However, the mechanistic link between SET and Pol II activation could be more directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In OCI-AML3 cells expressing NPM1c, both NPM1c and CRM1 accumulate at HOXA and HOXB clusters. Treatment with KPT-330 reduces CRM1 (but not NPM1c) protein levels, yet causes significant reduction of both proteins bound to chromatin and decreases active Pol II at HOX clusters, demonstrating NPM1c and CRM1 co-accumulate to activate HOX genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C97 are supported by ChIP-seq (Figure 5B), aggregation plots (C90), immunoblotting (Figure 5\u2014supplement 1A), ChIP-qPCR (Figure 5D-E), and Pol II ChIP (Figure 5\u2014supplement 2). The moderate enrichment of NPM1c around CRM1 sites (C90-C91) suggests NPM1c has both CRM1-dependent and independent binding, which is a reasonable interpretation. The convergent evidence supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In mouse ES cells with FLAG-tagged endogenous CRM1, NPM1c (but not wild-type NPM1) robustly accumulates at all four Hox cluster regions, demonstrating that NPM1c is targeted to HOX clusters in a NES-CRM1 interaction-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by ChIP-seq data from CRISPR-tagged ES cells (Figures 6D, 7B). The differential binding between NPM1 and NPM1c (C101) provides strong evidence for NES-dependent recruitment. The use of endogenously tagged CRM1 validates that the binding is not an artifact of overexpression. This is a well-controlled experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "NPM1c could not activate Hox genes in ES cells despite binding to all four Hox clusters, possibly due to different chromatin structure or epigenetic status compared to OCI-AML3 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C103 is stated as supported by data (not shown), which cannot be evaluated. Claim C104 is speculation to explain the observation. While the speculation is reasonable, the lack of presented data and mechanistic investigation makes this result uncertain. This represents an important limitation that requires future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C7",
+      "C38",
+      "C39",
+      "C105",
+      "C115"
+    ],
+    "result": "CRM1 acts as a platform on HOX cluster regions to recruit leukemogenic proteins (SET-Nup214 via nucleoporin-CRM1 interaction, NPM1c via NES-CRM1 interaction) to induce aberrant HOX gene expression in leukemia cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions of the study (C2, C38, C39, C105, C115) and mechanistic interpretations (C6, C7). They are well-supported by the collective experimental evidence from multiple cell lines, techniques, and perturbations. However, the mechanism of initial CRM1 recruitment to chromatin remains unknown (acknowledged in C113), and causality is inferred rather than definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C87"
+    ],
+    "result": "Ectopic interaction between nucleoporins/NES-proteins and CRM1 on genomic DNA triggers abnormal gene regulation, with NPM1c likely binding chromatin-bound CRM1 via its NES similar to nucleoporin fusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is an inference from experimental results that is well-supported by the data. Claim C87 is labeled as speculation but is strongly supported by the NPM1c binding data in ES cells (C101-C102) and OCI-AML3 cells (C88-C97), along with prior knowledge about NES-CRM1 interactions. The speculation is well-founded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C52",
+      "C53"
+    ],
+    "result": "SET-Nup214 functions similarly to Nup98HoxA9 in HOX gene activation, forming nuclear dots that colocalize with CRM1 in LOUCY cells but not in K562 or HL60 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C52-C53 are supported by immunofluorescence data (Figure 3\u2014supplement 1) and comparison to prior work. Claim C5 is supported by the KPT-330 sensitivity data. The parallel between SET-Nup214 and Nup98HoxA9 is well-established through multiple lines of evidence, though direct mechanistic comparison would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "CRM1 binding to HOX clusters differs between cell types: all four Hox clusters in mouse ES cells versus only HOXA and HOXB in OCI-AML3 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by ChIP-seq data from previous work (C98, cited) and current work (C99, Figure 5B). This cell-type specificity is important for understanding context-dependent CRM1 function, though the mechanism underlying this difference is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "NPM1c directly contributes to HOX gene activation by binding to HOX cluster regions, consistent with recent findings that NPM1c directly causes upregulation of HOX genes for maintenance of a stem cell-like state, though the mechanism remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is supported by the ChIP-seq data from this study. Claims C106-C108 cite and discuss prior work (Brunetti et al., 2018). The current study provides the missing mechanistic link (chromatin binding) for how NPM1c directly activates HOX genes, which is a significant advance. However, the downstream mechanism of activation remains unclear (C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C110",
+      "C111"
+    ],
+    "result": "Chromatin-bound CRM1 could be a therapeutic target in leukemia with CRM1-dependent HOX gene expression, potentially offering advantages over strategies targeting nuclear export that affect normal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 is speculation about therapeutic implications. While the data show CRM1 inhibitors affect HOX gene expression in leukemia cells, no therapeutic efficacy data or selectivity studies are presented. Claims C110-C111 correctly describe current approaches and their limitations. The therapeutic speculation is reasonable but requires substantial additional work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work established that CRM1 accumulates at Hox cluster regions to recruit Nup98HoxA9, resulting in robust activation of Hox genes, and that CRM1 is the molecule that recruits Nup98-fusion proteins onto HOX cluster regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize prior work by the authors and others (C1, C15, C16, C20 cite Oka et al., 2016 and other papers). Claim C21 is an inference from prior data. These provide essential context for the current study and are appropriately cited. The current work extends these findings to other leukemogenic proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background knowledge about nucleoporin fusions, HOX genes, and NPM1c in leukemia, including their prevalence, functions, and association with aberrant HOX gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C8-C14, C22-C23, C25-C31) represent established knowledge appropriately cited from the literature. They provide necessary background for understanding the significance of the current findings. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Background information about NPM1 and SET multifunctional roles, including involvement in various cellular processes and prior observations of defects in NPM1c-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C32-C37, C67-C73) represent established knowledge appropriately cited from the literature. They provide context for understanding the proteins studied. Claim C37 appropriately notes uncertainty about the relevance of cytoplasmic translocation defects to pathogenesis, which motivates the current study's focus on nuclear function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C81",
+      "C82"
+    ],
+    "result": "Background information about CRM1 as a major nuclear export factor and its interactions with nucleoporins during nuclear transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C18-C19, C81-C82) represent well-established knowledge appropriately cited from the literature. They provide essential background for understanding CRM1's canonical function and how the current findings represent a non-canonical role in gene regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Prior work showed SET-Nup214 binds promoter regions of HOXA9 and HOXA10 and forms nuclear dots colocalizing with CRM1, but genome-wide binding patterns were unknown and only examined by ChIP-qPCR at limited regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C116-C120) accurately describe prior work and its limitations, providing justification for the current genome-wide ChIP-seq analysis. The citations are appropriate and the characterization of prior work's limitations is fair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Prior work suggested CALM-AF10 (another NES-containing fusion) could be recruited to CRM1 at HOXA9/HOXA10, and showed NPM1c-expressing leukemia is associated with robust HOX gene activation that is sensitive to NES abrogation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C84-C86) cite prior work that motivated the current investigation of NPM1c. The citations are appropriate and provide important context for why NPM1c was investigated as a potential CRM1-recruited protein.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Speculation that Nup98- and Nup214-fusions may share a common pathogenic mechanism of recruitment to HOX cluster regions via chromatin-bound CRM1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is labeled as speculation based on inference from cited results. This speculation is well-founded given the prior evidence and directly motivated the current experimental investigation, which confirmed the hypothesis for SET-Nup214.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "BMI1 is overexpressed in various cancers including hematopoietic malignancies and is associated with poor prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is established knowledge appropriately cited. It provides context for the observation that CRM1/SET-Nup214 also accumulates at the BMI1 locus (C46), suggesting broader implications beyond HOX genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Acknowledgment that how and why CRM1 accumulates at HOX cluster regions remains unknown, and that chromatin-bound CRM1 may have other physiological roles in normal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 appropriately acknowledge limitations and unknowns in the current understanding. This honest assessment of what remains to be discovered is important for contextualizing the findings and identifying future research directions.",
+    "result_type": "MINOR"
+  }
+]

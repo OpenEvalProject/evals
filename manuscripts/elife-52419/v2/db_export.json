@@ -1,0 +1,1719 @@
+{
+  "submission": {
+    "id": "9e219476-0b56-4710-bd97-4fde3b120564",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:47:49.429283Z",
+    "updated_at": "2025-12-02T14:47:49.429283Z"
+  },
+  "content": [
+    {
+      "id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "submission_id": "9e219476-0b56-4710-bd97-4fde3b120564",
+      "content_type": "manuscript",
+      "content_text": "# Sound exposure dynamically induces dopamine synthesis in cholinergic LOC efferents for feedback to auditory nerve fibers\n\n## Authors\n\n- Jingjing Sherry Wu<sup>1</sup> ([ORCID: 0000-0001-9625-1661](https://orcid.org/0000-0001-9625-1661))\n- Eunyoung Yi<sup>4</sup>\n- Marco Manca<sup>2</sup>\n- Hamad Javaid<sup>2</sup>\n- Amanda M Lauer<sup>2</sup> ([ORCID: 0000-0003-4184-7374](https://orcid.org/0000-0003-4184-7374))\n- Elisabeth Glowatzki<sup>1</sup> ([ORCID: 0000-0003-3135-658X](https://orcid.org/0000-0003-3135-658X)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience The Johns Hopkins University School of Medicine Baltimore United States\n2. The Center for Sensory Biology The Johns Hopkins University School of Medicine Baltimore United States\n3. The Center for Hearing and Balance The Johns Hopkins University School of Medicine Baltimore United States\n4. College of Pharmacy and Natural Medicine Research Institute, Mokpo National University Muan-gun Republic of Korea\n5. Department of Otolaryngology-Head and Neck Surgery The Johns Hopkins University School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLateral olivocochlear (LOC) efferent neurons modulate auditory nerve fiber (ANF) activity using a large repertoire of neurotransmitters, including dopamine (DA) and acetylcholine (ACh). Little is known about how individual neurotransmitter systems are differentially utilized in response to the ever-changing acoustic environment. Here we present quantitative evidence in rodents that the dopaminergic LOC input to ANFs is dynamically regulated according to the animal\u2019s recent acoustic experience. Sound exposure upregulates tyrosine hydroxylase, an enzyme responsible for dopamine synthesis, in cholinergic LOC intrinsic neurons, suggesting that individual LOC neurons might at times co-release ACh and DA. We further demonstrate that dopamine down-regulates ANF firing rates by reducing both the hair cell release rate and the size of synaptic events. Collectively, our results suggest that LOC intrinsic neurons can undergo on-demand neurotransmitter re-specification to re-calibrate ANF activity, adjust the gain at hair cell/ANF synapses, and possibly to protect these synapses from noise damage.\n\n## Introduction\n\nIn our daily lives, we are routinely exposed to a constantly changing acoustic environment, for example while walking from the office to the cafeteria or from home to our commute. Changes in the acoustic scene require rapid analysis of relevant acoustic information and adjustment of sound input gain. The auditory efferent system is critical for top-down modulation of sensory flow. Sound information is collected by cochlear hair cells in the inner ear and transmitted to the brain via auditory nerve fibers (ANFs). The olivocochlear (OC) system is the final and mandatory step for direct modulation of hair cell and ANF activity in the peripheral hearing organ, the cochlea.\n\nIn rodents, one subset of OC neurons, the lateral olivocochlear (LOC) neurons, originate in and around the lateral superior olive (LSO) in the brainstem and send axons that synapse onto the unmyelinated dendrites of ANFs underneath the inner hair cells (IHCs) (Figure 1A; Warr and Guinan, 1979). These synapses are strategically located before the spike initiation zone on the myelinated peripheral ANF axons (Hossain et al., 2005), allowing them to directly modulate the hair cell transmitted postsynaptic activity in the ANFs and thereby affect firing rates and neural coding in the auditory nerve.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Line drawing illustrating the postulated LOC acoustic reflex (Guinan, 2011). The inner hair cell (IHC) transmits the sound signal via auditory nerve fibers (ANFs) and via the posteroventral subdivision of the cochlear nucleus (PVCN) to the lateral olivocochlear (LOC) neurons in and around the lateral superior olive (LSO) (Thompson and Thompson, 1991). LOC efferents signal back to the cochlea to the ANFs endings directly under the IHCs. The tonotopic frequency map (from low to high) found in the cochlea, is also present in multiple auditory brainstem nuclei (shown in color gradient). Other nuclei within the superior olivary complex: medial superior olive (MSO) and medial nucleus of the trapezoid body (MNTB). (B) Illustration summarizing the current understanding of the anatomy and neurochemistry of LOC intrinsic and shell neurons in mice (modified from Warr et al., 1997). LOC intrinsic neurons reside within the LSO, whereas LOC shell neurons are located on the outskirts of the LSO. Intrinsic neuron axons cover a short distance along the inner spiral bundle (ISB) and form dense bouton terminals. Shell neuron axons usually bifurcate and cover an extensive distance along the cochlear spiral with en passant swellings. In mice, LOC intrinsic neurons have been shown to be cholinergic (Maison et al., 2003), while a separate group of LOC shell neurons has been shown to be dopaminergic (Darrow et al., 2006b). The higher density of intrinsic neurons in the high frequency region of the LSO is based on studies in guinea pig and rat (Kaiser et al., 2011; Radtke-Schuller et al., 2015; Warr et al., 1997).\n\nLOC neurons utilize a diverse cohort of neurotransmitters and neuromodulators, including \u03b3-aminobutyric acid (GABA), calcitonin gene-related peptide (CGRP), opioid peptides, acetylcholine (ACh) and dopamine (DA) (Ciuman, 2010; Darrow et al., 2006b; Eybalin, 1993; Reijntjes and Pyott, 2016; Sewell, 2011; Vetter et al., 1991). However, even for the better investigated cholinergic and dopaminergic LOC pathways, there is only limited and sometimes contradictory knowledge available regarding their function and little is known about the underlying mechanisms for modulating afferent activity (Arnold et al., 1998; d'Aldin et al., 1995; Felix and Ehrenberger, 1992; Garrett et al., 2011; Maison et al., 2012; Maison et al., 2010; Niu and Canlon, 2006; Nouvian et al., 2015; Oestreicher et al., 1997; Ruel et al., 2001; Sun and Salvi, 2001).\n\nLOC neurons have been divided into two subgroups, based on morphological criteria (Figure 1A and B; Brown, 1987; Vetter and Mugnaini, 1992; Warr et al., 1997). In mice, the somata of LOC \u2018shell\u2019 neurons are located in the periolivary regions around the LSO. Their axons usually bifurcate upon entering the organ of Corti and travel extensively along the cochlear spiral, forming sparse terminals along the way. The somata of LOC \u2018intrinsic\u2019 neurons reside within the LSO. When reaching the cochlea, their axons usually turn in one direction, and form a patch with a high density of bouton terminals along the cochlear coil. The majority of LOC intrinsic neurons are cholinergic (Maison et al., 2003; Safieddine and Eybalin, 1992; Figure 1B). In mice, it is believed that dopaminergic LOC neurons form a separate neurochemical group and are mainly shell neurons (Darrow et al., 2006b; Figure 1B). However, in guinea pig, dopaminergic neurons overlap with cholinergic LOC intrinsic neurons (Safieddine et al., 1997). Several studies have perfused transmitters into the cochlea and recorded ANF activity in vivo. These studies suggest that ACh can increase and dopamine can decrease ANF firing rates (Arnold et al., 1998; d'Aldin et al., 1995; Felix and Ehrenberger, 1992; Nouvian et al., 2015; Oestreicher et al., 1997; Ruel et al., 2001; Ruel et al., 2006). It has been proposed that individual neurotransmitters differentially modulate the \u2018set point\u2019 of ANFs in one or the other direction and contribute to generating a continuum of spontaneous activities (Ciuman, 2010; Le Prell et al., 2003; Nouvian et al., 2015).\n\nSeveral pieces of indirect evidence suggest that LOC neurons respond to sound (Adams, 1995; Drescher et al., 1983; Eybalin et al., 1987; Thompson and Thompson, 1991). It has been proposed that they form a three-neuron feedback loop (Figure 1A), namely the \u2018LOC acoustic reflex\u2019 (Guinan, 2011). In particular, dopaminergic LOC neurons have been shown to change their innervation density after sound conditioning in guinea pig, which is thought to provide protection against ANF damage induced by noise exposure (Niu and Canlon, 2002). Additionally, mice deficient for specific dopamine receptors were found to be more vulnerable to noise exposure compared to wildtype mice, again suggesting a protective effect (Maison et al., 2012). Thus, the dopaminergic LOC efferents, which are the focus of the study here, provide an interesting candidate for investigating sound environment-dependent modulation of peripheral inputs to the auditory pathway. Such regulatory feedback may be important for better detection of signals in background noise, and additionally may protect synapses from excitotoxicity as a result of excessive noise exposure.\n\nHere we present compelling quantitative evidence that tyrosine hydroxylase (TH), an essential enzyme for the synthesis of dopamine, hence a marker for dopaminergic fibers, is dynamically regulated according to the animal\u2019s recent history of sound exposure. The assumption is that upregulation of TH results in increased dopamine synthesis and release. In response to sound exposure, TH is upregulated specifically in central and peripheral components of cholinergic LOC intrinsic neurons in a frequency and sound level-dependent manner. These results imply that the same LOC neurons at times may co-release ACh and DA onto ANFs, most likely resulting in complex changes at multiple sites of the IHC afferent synapses that influence firing rates and dynamic range of ANFs. Electrophysiological data show that DA reduces ANF firing rate by two mechanisms: 1) by reducing the presynaptic release rate, and 2) by reducing the EPSC amplitude\u00a0and\u00a0area, thereby most likely reducing the percentage of EPSPs that activate APs. Taken together, these data suggest that LOC neurons can dynamically adjust their dopamine release to change the gain at hair cell/ANF synapses.\n\n## Results\n\n### TH+ LOC efferent bouton endings appear in patches at seemingly random locations along the cochlear frequency axis\n\nTo investigate the extent of dopaminergic efferent inputs to the cochlea, dopaminergic LOC fibers were labeled in whole-mount preparations of C57BL/6J mouse cochleas by immunostaining against tyrosine hydroxylase (TH), an enzyme essential for the synthesis of dopamine. As described in previous publications, three types of TH+ neurons were found in the cochlea: sympathetic fibers (Hozawa et al., 1989; Spoendlin and Tachtensteiger, 1967; Terayama et al., 1966), apical type II afferent neurons (Vyas et al., 2017) and a subset of LOC efferent fibers in the inner spiral bundle (ISB) below the IHCs (Darrow et al., 2006b; Figures 2 and 3). Curiously, consistent with previous descriptions in CBA/CaJ mice (Darrow et al., 2006b), TH+ LOC efferent bouton terminals were not homogeneously distributed in the ISB along the cochlear spiral, but appeared in distinct patches (Figure 2A,B), here called \u2018terminal regions\u2019. Besides TH+ fibers with bouton terminals, TH+ fiber bundles with no obvious terminal varicosities, except for occasional en passant swellings, were present throughout the cochlear spiral. These fiber bundles were best identified in-between the terminal regions, here called \u2018spiral regions\u2019 (Figure 2C). This pattern of alternating terminal and spiral regions is established during postnatal development, between postnatal weeks 1 and 3 (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig2-v2.jpg)\n\n**Figure 2.:** (A) TH immunostaining in a one-month-old cochlear whole mount preparation (left: apical half; right: basal half).\u00a0Bundles of TH+ LOC efferent fibers (LOC fibers) run underneath the IHCs along the whole cochlear spiral, either with only a few swellings in \u2018spiral regions\u2019, or in patches with many bouton endings in \u2018terminal regions\u2019, as marked by yellow circles. TH also labels type II auditory nerve fibers (Type II ANFs) and sympathetic fibers (SFs). (B and C) Representative higher magnification images of a \u2018terminal region\u2019 and of a \u2018spiral region\u2019 in a 3-week-old cochlea. IHCs and dopaminergic LOC fibers are immunolabeled with Myosin VIIa and TH antibodies respectively. (D) Line plots along cochlear coil for six 1\u20133 months old cochleas indicating TH+ efferent terminal regions (upper line) and spiral regions (lower line). Line plot for the representative cochlea shown in (A) is colored green. The average line plot for\u00a0the six cochleas is shown in red at the bottom. The upper x-axis represents the linear distance along the cochlear spiral (with 0% at the apex and 100% at the base). The lower x-axis relates cochlear spiral location to ANF characteristic frequency. See also Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The mature TH+ LOC fiber innervation pattern was established between postnatal weeks 1\u20133. In one-week-old cochleas, TH+ fibers were found in the ISB throughout the whole cochlear spiral, but no terminal regions were observed (A\u00a0and\u00a0B) (n\u00a0=\u00a03 cochleas, two mice). At two weeks, around the onset of hearing (Song et al., 2006), terminal regions could be observed occasionally, mostly in the base (C) (n\u00a0=\u00a03 cochleas, two mice). At three weeks, the innervation pattern included terminal and spiral regions, similar to 1\u20133 month-old young adult cochleas (n\u00a0=\u00a03 cochleas, three mice, data not shown). (A) An apical cochlear segment from a one-week-old C57BL/6J wildtype mouse immunolabled against TH, demonstrating TH+ LOC fiber bundles at the ISB region. TH immunostaining also labeled type II fibers (arrows) and sympathetic fibers (SF). (B) A higher magnification image of an apical region from the same mouse as in (A), demonstrating the TH+ LOC fibers running underneath the IHCs. One IHC is outlined with dotted lines. (C) A basal cochlear segment from a two-week-old C57BL/6J wildtype mouse immunolabeled with TH. A TH+ terminal region is identified with a bracket.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig3-v2.jpg)\n\n**Figure 3.:** (A) A segment of the cochlea epithelium from a ChatiresCre; Ai3 mouse that labels cholinergic LOC efferents.\u00a0Reporter protein EYFP is detected by an antibody against GFP. Cholinergic LOC fibers are found along the inner spiral bundle (ISB), under and around the IHCs. Cholinergic medial olivocochlear (MOCs) efferent fibers are found in the ISB and in the outer hair cell region. Co-labeling with TH immunostaining shows two patches of TH+ terminals (brackets) that overlap with a subset of the cholinergic terminals. TH also labels sympathetic fibers (SF). (B) Co-immunolabeling of TH and VAChT in the ISB of a wildtype mouse cochlea. A subset of VAChT-positive terminals are co-labeled with TH. (C) Two TH+ fibers with the characteristic morphology of LOC intrinsic neurons are shown in the cochlea of a 7-week-old old Th2a-CreER; Ai9 mouse with tamoxifen injection between 3\u20136 weeks of age (see Materials and methods). (D) Reconstruction of three sparsely labeled TH+ LOC neurons that show intrinsic neuron characteristics (axons in black; terminals in red). Two of the reconstructed fibers are shown in (C). The third one is from a different cochlea. See also Figure 3\u2014figure supplements 1 and 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** ChAT immunolabeling confirms the cholinergic identity of LOC neurons genetically labeled in ChatiresCre; Ai3 mice (A\u2013C) (n\u00a0=\u00a04 LSOs, three mice). Immunolabeling against TH (yellow arrowhead) labeled a small number of cholinergic LOC intrinsic neurons, as confirmed by co-labeling with ChAT antibody or ChatiresCre; Ai3 mice (D) (n\u00a0=\u00a041 LSOs, 23 mice). The previously described TH+, ChAT- shell neurons (Darrow et al., 2006b) are also observed (red arrow) (D) (n\u00a0=\u00a041 LSOs, 23 mice). (A\u2013C) A brainstem slice from a P30 ChatiresCre; Ai3 mouse is immunolabeled against ChAT, demonstrating that LOC neurons labeled by the mouse line (a GFP antibody recognizes the reporter protein EYFP) are positive for ChAT. Note a small fraction of ChAT-immunopositive LOC neurons (magenta) were not labeled in ChatiresCre; Ai3 mouse (green) (arrow indicates one example), possibly due to different thresholds of reporter line and immunolabeling. (D) The same brainstem slice as in (A\u2013C) is immunolabeled with TH, demonstrating the presence of a TH+/ChAT+ LOC intrinsic neuron (arrowhead) and a few of the previously described TH+/ChAT- LOC shell neurons (arrow) (Darrow et al., 2006a).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Consistent with the previously reported TH+, ChAT- LOC shell neurons (Darrow et al., 2006b), LOC fibers with a typical shell-neuron morphology can be observed in sparsely labeled Th2A-CreER; Ai9 mouse cochleas (A) (n\u00a0=\u00a04, three mice). In addition, TH immunolabeling revealed another type of TH+ fiber, which travels around the IHC region in a meandering fashion (B) (n\u00a0=\u00a06 fibers, five mice). This type of fibers is not co-labeled by ChatiresCre; Ai3 mice (B) (n\u00a0=\u00a05 fibers, four mice). (A) Reconstruction of two LOC fibers labeled in a 7-week-old Th2A-CreER; Ai9 cochlea, both with a shell neuron-like morphology. The entry points into the organ of Corti for these two fibers are indicated with red arrowheads. One IHC is illustrated in navy blue for size comparison. (B) A cochlear segment of a P30 ChatiresCre; Ai3 mouse is immunolabeled with TH, demonstrating the peculiar meandering fiber path. This fiber is TH+ ChAT-; it does not overlap with the cholinergic fibers labeled by the mouse line.\n\nThe tonotopic frequency map along the mouse cochlear spiral ranges from\u00a0~3 kHz in the apex to\u00a0~75 kHz in the base (M\u00fcller et al., 2005). To investigate whether the distribution of TH+ terminal regions follows any systematic pattern, TH+ terminal and spiral regions were mapped along the cochlear coil in 1\u20133 month-old mice (n\u00a0=\u00a06 cochleas, six mice) and compared using \u2018line plots\u2019 (Figure 2D). In these line plots, upper lines represent terminal regions and lower lines spiral regions. The apical cochlear tip was set at 0%, and the basal tip at 100% of cochlear length. Below the linear axis representing the cochlear length, as reference, a logarithmic map of ANF characteristic frequency is plotted, based on M\u00fcller et al. (2005). As reflected in the average line plot of all six cochleas (Figure 2D, bottom), terminal regions covered the base of the cochlea (80\u2013100% of cochlear length) with a higher probability than the 0\u201380% of cochlear length. Otherwise, terminal patches seemed to appear randomly, with no systematic pattern regarding location or length of individual patches.\n\n### TH+ terminal regions are formed by a subset of cholinergic LOC intrinsic neurons that also express TH\n\nCholinergic and dopaminergic LOC fibers with bouton endings have different cochlear innervation patterns: dopaminergic bouton terminals appear in patches, whereas cholinergic bouton endings cover the entire cochlear spiral (Maison et al., 2003), suggesting that dopaminergic and cholinergic fibers either constitute two separate systems, or that dopaminergic fibers with bouton terminals represent a subset of cholinergic fibers. The appearance of individual TH+ terminal regions is reminiscent of the cochlear innervation by individual cholinergic LOC intrinsic neurons (Warr and Boche, 2003; Figure 1B). Therefore, experiments were performed to test if cholinergic and dopaminergic LOC fibers overlap. TH immunostaining was performed on cochlear tissue with genetically labeled cholinergic LOC efferents. Choline acetyltransferase (ChAT) is one of the enzymes necessary for the synthesis of acetylcholine. In the knock-in ChatiresCre mouse crossed to the Cre-dependent reporter line Ai3, the fluorescent marker EYFP is expressed in cholinergic neurons, including the cholinergic LOC intrinsic neurons, as confirmed by co-immunolabeling with an antibody against ChAT in the LSO (Figure 3\u2014figure supplement 1A\u2013C). TH immunostaining in ChatiresCre; Ai3 cochleas showed the typical dopaminergic LOC innervation pattern, with distinct terminal regions. In this preparation, TH+ terminals clearly constitute a subset of the cholinergic terminals (n\u00a0=\u00a06 cochleas, five mice) (Figure 3A; two brackets point to TH+ terminal regions amongst cholinergic terminals). Co-immunostaining of TH with the vesicular acetylcholine transporter (VAChT) (n\u00a0=\u00a06 cochleas, six mice) (Figure 3B) further confirmed the cholinergic identity of TH+ bouton terminals.\n\nTo determine if the morphology of individual TH+ LOC neurons is consistent with that of cholinergic LOC intrinsic neurons, a knock-in Th2A-CreER mouse (Abraira et al., 2017) crossed with the Cre-dependent reporter line Ai9 was used to sparsely label TH+ neurons by the administration of a low dose of tamoxifen (Feil et al., 2009). The morphology of individual TH+ fibers compares well with the known morphology of cholinergic intrinsic neurons: their axons travel some distance in one direction along the inner spiral bundle under the IHCs before forming a patch of dense bouton endings (Brown, 1987; Vetter and Mugnaini, 1992; Warr et al., 1997) (n\u00a0=\u00a08 fibers in seven cochleas, six mice) (Figure 3C\u2013D). Consistently, in brainstem sections of ChatiresCre; Ai3 mice, TH labeled a subset of cholinergic LOC intrinsic neurons (Figure 3\u2014figure supplement 1D and Figure 5C).\n\nBesides TH+/ChAT+ LOC intrinsic neurons, TH+/ChAT- LOC shell neurons were also observed around the LSO (Darrow et al., 2006b; Figure 3\u2014figure supplement 1D), and LOC fibers with a shell neuron morphology (bifurcating axons with\u00a0diffuse\u00a0and sparse terminals) were found in sparsely labeled Th2A-CreER; Ai9 mice in the cochlea (Figure 3\u2014figure supplement 2A). Additionally, TH+/ChAT- fibers of an unreported morphology were observed in the cochlea (Figure 3\u2014figure supplement 2B). Nonetheless, neither\u00a0of\u00a0these TH+/ChAT-fibers form terminals that cluster into discrete patches of dense bouton endings. Therefore, they were not further investigated in this study.\n\nTogether, these data suggest that TH+ bouton endings in terminal regions are formed by TH-expressing cholinergic LOC intrinsic neurons.\n\n### Sound exposure increases the percentage of cochlear spiral covered with TH+ terminal regions\n\nResults described so far (Figures 2 and 3) were based on cochleas harvested from mice that were raised in an institutional vivarium with a highly variable and generally noisy sound environment (Lauer et al., 2009; Figure 4\u2014figure supplement 1A). Previous studies in guinea pig have shown that sound conditioning induces an increase in TH+ fibers in the IHC region of the cochlea (Niu and Canlon, 2002). The highly variable TH+ LOC efferent innervation patterns across the genetically homogenous WT mice therefore could result from differences in the acoustic experience of individual animals. Thus, we hypothesized that the distribution of TH+ terminal patches in individual cochleas is dynamically regulated by sound.\n\nTo test this hypothesis, mice were raised in a \u2018low noise\u2019 vivarium with lower ambient sound levels (Figure 4\u2014figure supplement 1A; Lauer et al., 2009), and their cochleas were immunostained for TH at the age of 8 weeks. Line plots show the coverage of TH+ terminal and spiral regions in an example cochlea (Figure 4A, control) and for the average of 22 cochleas (11 mice) (Figure 4B, control). In contrast to mice raised in the institutional vivarium (Figure 2D), cochleas from mice raised in the \u2018low noise\u2019 vivarium showed only a few or no terminal regions in the apical half (no terminal patches\u00a0<\u00a030 kHz for n\u00a0=\u00a019/22 cochleas). Most of the identified terminal regions were concentrated in the most basal, high frequency region of the cochlea.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig4-v2.jpg)\n\n**Figure 4.:** (A) Line plots indicate TH+ terminal regions (upper lines) versus TH+ spiral regions in a representative control mouse raised in a \u2018low noise\u2019 vivarium (gray) and in a mouse that was exposed to a 12 kHz-centered one-octave noise band at 110 dB SPL for 2 hr (red). Immunolabeling for TH was performed 7\u201310 days after sound exposure. Left (L) and right (R) cochleas are shown. The upper x-axis (shown in B) represents the linear distance along the cochlear spiral (with 0% at the apex and 100% at the base). The lower x-axis relates cochlear spiral location to ANF characteristic frequency. (B) A plot showing the averaged probability for a cochlear region to be covered by TH+ terminals at the cochlear frequencies plotted on the x-axis for control (gray, n\u00a0=\u00a022 cochleas, 11 mice) and sound exposed mice (red, n\u00a0=\u00a020 cochleas, 11 mice). Blue region marks the frequency range of the noise band. For the 7.5\u201375.5% of the cochlear length from the apex (~6\u201340 kHz), sound exposed mice are significantly more likely to have TH+ bouton endings compared to control. For the 90\u2013100% of the cochlear length from the apex (~60\u201375 kHz), sound exposed mice are significantly less likely to have TH+ bouton endings compared to control. Repeated measures binary logistic regression using generalized estimating equations (GEE); ***p<0.001, **p<0.01. Data for individual cochleas are provided in Figure 4\u2014source data 1. (C) Sound exposed mice (n\u00a0=\u00a021 cochleas, 11 mice) showed on average 31% more cochlear coverage by TH+ terminal regions compared to their littermate control mice (n\u00a0=\u00a022 cochleas, 11 mice). Linear mixed model with sound exposure as the fixed effect and repeated measures from two ears of the same mouse; ***p<0.0005. See also Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** To compare the sound level between the institutional vivarium and a \u2018low noise\u2019 satellite vivarium, 5 min recordings were performed using a sound level meter and an ultrasound microphone (A-B).\u00a0To assess the effects of two different sound exposure protocols on hearing, ABR thresholds were measured before and after sound exposure. For both protocols, a 12 kHz-centered one-octave noise band was applied. In contrast to the 2 hr 110 dB SPL protocol, which caused an irreversible ABR threshold shift (C-E), the 5 \u00d7 12 hr 90 dB SPL protocol showed a partially reversible ABR threshold shift (F-J). (A) Sound level recorded using a sound level meter in the two vivariums. Data are plotted as mean\u00a0\u00b1\u00a0SD. (B) Frequency analysis of ultrasound microphone recordings in the two vivariums, FFT size: 2048, Window: Hamming. Data are plotted as mean\u00a0\u00b1\u00a0SD. (C\u2013E) ABR thresholds for mice exposed to the 2 hr 110 dB SPL protocol (red) and for their control littermates (navy), at pre-exposure, 1 week post-exposure and 3 weeks post-exposure time points. Note that sound exposure caused an irreversible ABR threshold elevation. Double arrows indicate that the actual threshold is higher than the highest sound intensity presented. Data are plotted as mean\u00a0\u00b1\u00a0SEM. (F\u2013H) ABR thresholds for mice exposed to the 5 \u00d7 12 hr 90 dB SPL protocol (magenta) and for their control littermates (blue), at pre-exposure, 1 week post-exposure and 3 weeks post-exposure time points. Data are plotted as mean\u00a0\u00b1\u00a0SEM. (I\u2013J) ABR threshold shifts at 1 week post-exposure and 3 weeks post-exposure for mice exposed to 5 \u00d7 12 hr 90 dB SPL protocol (magenta) and for their control littermates (blue). Data are plotted as mean\u00a0\u00b1\u00a0SEM. Two-tailed independent t-tests between control and exposed group on original data or on rank-transformed data for each tone, ***p<0.001, **p<0.01, *p<0.05, n.s. not significant.\n\nTo test if sound exposure increases the coverage of TH+ LOC terminal regions along the cochlear coil, mice raised in the \u2018low noise\u2019 vivarium were exposed to a 12 kHz-centered one-octave noise band at 110 dB SPL for 2 hr at the age of 7 weeks (see Materials and methods). The effects of this sound exposure protocol on hearing were evaluated with auditory brainstem responses (ABRs) measured on a separate set of animals. This sound exposure paradigm resulted in irreversible ABR threshold shifts to levels\u00a0>\u00a085 dB SPL on average for the tested frequency range (clicks and 8\u201332 kHz tones) (Figure 4\u2014figure supplement 1B). 7\u201310 days after noise exposure, cochleas were immunostained for TH (n\u00a0=\u00a020 cochleas, 11 mice). The delay of at least one week after noise exposure for immunostaining was chosen to allow adequate time after noise exposure for the synthesis, transport, and accumulation of TH proteins in the axonal terminals of LOC neurons, to a level that can be detected by immunostaining in the cochlear epithelium. Compared to control, after sound exposure, the apical half of the cochlear coil at and above the frequency range of the noise band showed a significantly increased likelihood to be covered by TH+ terminal regions (Figure 4A,B, exposed). Interestingly, there was a paradoxical significant decrease in the number of terminal patches in the basal part of the cochlea, at frequencies\u00a0>\u00a060 kHz (Figure 4B, Figure 4\u2014source data 1). Nevertheless, the total percentage of cochlear spiral covered by TH+ terminal regions increased significantly, about 5-fold, in sound exposed mice compared to control littermates (median\u00a0\u00b1\u00a0IQR, control: 0.1\u00a0\u00b1\u00a00.06, exposed: 0.47\u00a0\u00b1\u00a00.27) (Figure 4C).\n\n### Sound exposure increases the number of TH+ cholinergic intrinsic neurons in the LSO\n\nThough multiple potential mechanisms could account for increased cochlear coverage of TH+ terminal regions after sound exposure, the most straightforward explanation is an increase in the fraction of cholinergic LOC intrinsic neurons that express TH. To test this hypothesis, parallel to analyzing the effects of sound exposure in the periphery (Figure 4), the number of TH+ LOC neurons in the LSO was quantified in brainstem sections from the same set of mice. Compared to control littermates, the number of TH+ LOC intrinsic neurons in sound exposed mice increased significantly, about 5-fold (median\u00a0\u00b1\u00a0IQR per LSO, control: 11\u00a0\u00b1\u00a07, exposed: 47\u00a0\u00b1\u00a035) (Figure 5A,B and D). This 5-fold change is remarkably comparable to the increase in the percentage of cochlear spiral covered by TH+ terminal regions, suggesting that the LOC neurons that became TH+ due to sound exposure, covered additional length along the ISB in the cochlea.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig5-v2.jpg)\n\n**Figure 5.:** (A and B) Representative images of TH immunolabeled 50 \u03bcm brain slices of the LSO region from a control (A) and a sound exposed mouse (B, 2 hr exposure).\u00a0Sound exposure occurred at 7 weeks of age, and immunolabeling at 8 weeks. Each number identifies a TH+ LOC intrinsic neuron. (C) A representative brain slice of the LSO region from a sound exposed mouse (2 hr exposure) expressing tdTomato (Ai9) driven by ChatiresCre to label cholinergic LOC intrinsic neurons (red). Co-labeling with TH immunostaining (green) demonstrates that TH expression is found in existing cholinergic LOC intrinsic neurons. (D) Box plots demonstrating the number of TH+ LOC intrinsic neurons identified within LSO from either side of the brain, in control versus sound exposed mice for three sets of experiments. For both, 2 hr 110 dB SPL exposure (red) (control: n\u00a0=\u00a022 LSOs, 11 mice, exposed: n\u00a0=\u00a022 LSOs, 11 mice) and 5 \u00d7 12 hr 90 dB SPL exposure (orange) (control: n\u00a0=\u00a014 LSOs, 8 mice, exposed: n\u00a0=\u00a016 LSOs, 8 mice), the exposed groups have significantly larger numbers of TH+ LOC neurons than control groups, when examined one week from the beginning of the exposure (2 hr 110 dB SPL exposure, control: 11\u00a0\u00b1\u00a07, exposed: 47\u00a0\u00b1\u00a035) (5 \u00d7 12 hr exposure, control: 15\u00a0\u00b1\u00a011, exposed: 31\u00a0\u00b1\u00a046). In contrast, when examined three weeks from the beginning of the 5 \u00d7 12 hr 90 dB SPL exposure (yellow) (control: n\u00a0=\u00a012 LSOs, 6 mice, exposed: n\u00a0=\u00a012 LSOs, 6 mice), the number of TH+ LOC neurons is not significantly different between exposed and control groups (5 \u00d7 12 hr exposure w/long wait, control: 15\u00a0\u00b1\u00a011, exposed: 19\u00a0\u00b1\u00a09). Linear mixed model with sound exposure as the fixed effect and a random intercept for each mouse to account for the correlation among two measurements from the same mouse, ***p<0.0005; *p<0.05; n.s. not significant p>0.05. Presented data indicate median\u00a0\u00b1IQR per LSO. (E). Modified schematic drawing demonstrating the hypothesis that after sound exposure, a subset of cholinergic LOC intrinsic neurons will become dopaminergic and cholinergic. (F). An apical cochlear segment of a Th2A-CreER; Ai3 mouse raised in the institutional vivarium. Tamoxifen was administrated between 1\u20133 weeks. The mouse was sacrificed at the age of 1 month. Comparing mouse line labeling (top, a GFP antibody recognizes the EYFP reporter protein) and TH immunostaining (middle) suggests that some of the LOC efferent terminals that expressed Th at the time of tamoxifen injection did not express Th anymore at 1 month. See also Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** To test whether the sound-induced TH expression in cholinergic LOC efferent fibers could affect the cholinergic phenotype of these neurons, sound-exposed cochleas were immunolabeled for TH and ChAT.\u00a0At 1 week post-exposure, TH+ LOC efferent terminals were still positive for ChAT (n\u00a0=\u00a01 cochlea) (A\u2013D). To demonstrate the dynamic expression of TH in a variable acoustic environment, Th2A-CreER; Ai3 mice raised in the institutional vivarium were administrated with tamoxifen at various time points. TH-expression in LOC neurons around the time of tamoxifen administration was compared with the TH immunolabeling at the time of tissue harvest. While the TH expression in LOC neurons that innervate the apical region of the cochlea is more dynamic (shown in Results,\u00a0E), in the basal cochlea, TH expression is more stable, as shown here (E\u2013G) (n\u00a0=\u00a05 cochleas, 5 mice). (A\u2013D). A segment of the ISB region from an 8-week-old ChatiresCre; Ai9 mouse that have been exposed to the 2 hr 110 dB SPL protocol. TH immunostaining revealed that TH+ LOC efferent terminals are both co-labeled for ChAT by the mouse line (left) and by ChAT immunolabeling (right). This result suggests that sound exposure induces TH expression in existing cholinergic LOC efferent terminals, and that these terminals remain cholinergic during TH expression. (E\u2013G) A basal cochlear segment of a 6-week-old Th2A-CreER; Ai3 mouse raised in the institutional vivarium. Tamoxifen was administrated at 3 weeks. The mouse was sacrificed at 6 weeks. Comparing TH immunolabeling and mouse line labeling (a GFP antibody recognizes the EYFP reporter protein) suggests that a large subset of LOC efferent terminals that expressed Th at 3 weeks continue to express Th at 6 weeks in the base.\n\nSecondly, to verify that after sound exposure TH was in fact upregulated in cholinergic LOC intrinsic neurons, a subset of sound exposure experiments was performed on mice with genetically labeled cholinergic neurons (ChatiresCre; Ai9 mice). Sound exposure did not impact the number of cholinergic LOC intrinsic neurons. The median number of genetically labeled ChAT+ LOC neurons was not significantly different after sound exposure (422, n\u00a0=\u00a06 cochleas, 3 mice) compared to control littermates (433, n\u00a0=\u00a08 cochleas, 4 mice) (Mann-Whitney U test, p=0.491). After sound exposure, immunolabeled TH+ neurons represented a subset (16 \u00b1 4%) of the cholinergic LOC neurons. Again, similar to the whole dataset (Figure 5A,B,D), the percentage of TH+ cholinergic LOC neurons in sound exposed mice was\u00a0~5 times higher compared to control (16 \u00b1 4% versus 3 \u00b1 1%) (Welch t-test, p<0.0005) (n\u00a0=\u00a06 LSOs, 3 mice; Figure 5C). In comparison, after sound exposure, no obvious change was observed in the number of TH+/ChAT- LOC shell neurons (not quantified).\n\nTo test if TH expression affects the cholinergic identity of LOC terminals, after sound exposure, we immunostained for ChAT, in a ChatiresCre; Ai9 mouse. Most TH+ bouton terminals were positive for ChAT, both by genetic labeling (which indicates their original identity) and immunolabeling (which represents expression at the time of tissue harvesting), suggesting that when TH expression is upregulated, the cholinergic phenotype of existing ChAT+ LOC neurons was maintained, for at least 7\u201310 days after sound exposure (Figure 5\u2014figure supplement 1A\u2013B).\n\nIn summary, sound exposure induces the expression of TH in previously TH- cholinergic LOC intrinsic neurons. The schematic of cochlear innervation by subtypes of LOC fibers has been modified to reflect these results (Figure 5E).\n\n### The number of TH+ LOC intrinsic neurons in the LSO is dynamically regulated by sound\n\nTo test whether TH expression in cholinergic LOC intrinsic neurons can be dynamically regulated by sound, a less damaging, and partially reversible sound exposure protocol was applied. 7-week-old mice were exposed to a 12 kHz-centered one-octave noise band at 90 dB SPL for 12 hr each day for 5 consecutive days. One week after starting sound exposure, ABRs showed significant threshold shifts to\u00a0~53 dB SPL for clicks and 55\u201390 dB SPL for 12\u201332 kHz tones (no significant change at 8 kHz) (Figure 4\u2014figure supplement 1C). Three weeks after starting sound exposure, the ABR threshold shift had reversed completely for clicks and 12\u201316 kHz tones, and partially for 24 and 32 kHz tones (Figure 4\u2014figure supplement 1C).\n\nAt one week after the sound exposure protocol had been initiated, the number of TH+ LOC intrinsic neurons increased significantly in sound exposed mice compared to control littermates by about 2-fold (median\u00a0\u00b1IQR, control: 15\u00a0\u00b1\u00a011, exposed: 31\u00a0\u00b1\u00a046) (Figure 5D). This is about half of the increase that was found earlier with the more damaging sound exposure paradigm. Interestingly, two weeks later (three weeks after initiating the sound exposure protocol), the number of TH+ LOC intrinsic neurons in sound exposed mice had returned to levels that were not significantly different from those of control littermates (median\u00a0\u00b1IQR, control: 15\u00a0\u00b1\u00a011, exposed: 19\u00a0\u00b1\u00a09) (Figure 5D). These results suggest that TH expression is dynamically regulated according to the animal\u2019s acoustic experience.\n\nTo demonstrate dynamic expression of TH within individual LOC intrinsic neurons over time, mouse genetic tools were used in combination with the variable acoustic environment in the institutional vivarium. Tamoxifen administration induces reporter protein (EYFP) expression in TH+ LOC neurons in Th2A-CreER; Ai3 mice, providing permanent labeling of LOC neurons that express TH around the time of tamoxifen administration. On the other hand, TH immunostaining, performed 1\u20133 weeks after tamoxifen injection will label TH-expressing LOC neurons at the time of tissue harvesting. Because of the highly variable acoustic environment in the institutional vivarium, it is expected that different sets of LOC intrinsic neurons express TH at different times. Indeed, we observed some LOC bouton terminals that were labeled for TH genetically, but not by immunostaining (n\u00a0=\u00a04 cochleas, 3 mice) (Figure 5F), suggesting that these terminals expressed TH around the time of tamoxifen injection, but no longer at the time of tissue harvesting. However, genetic labeling and TH immunolabeling often overlapped at the base, even when the times of tamoxifen injection and tissue harvesting were several weeks apart (Figure 5\u2014figure supplement 1C), suggesting that the TH+ LOC intrinsic neurons that innervate the basal region of the cochlea have a more stable TH expression. These results suggest that the dynamic expression of TH can be found in a \u2018common\u2019 acoustic environment for laboratory mice.\n\n### Dopamine modulates auditory nerve fiber activity at the IHC afferent synapse by two distinct mechanisms\n\nPreviously, the effects of DA on ANF activity have been investigated with in vivo extracellular ANF recordings from guinea pig by perfusion of artificial perilymph containing DA into the inner ear (Oestreicher et al., 1997; Ruel et al., 2001). These studies suggest that DA reduces spontaneous and sound-evoked ANF activity. To investigate how DA modulates ANF activity at the cellular level, patch clamp recordings were performed at the bouton endings of ANFs directly underneath the IHCs in acutely excised rat apical cochlear coils (Glowatzki and Fuchs, 2002; Grant et al., 2010). Such recordings monitor synaptic activity at individual glutamatergic hair cell ribbon synapses, representing all the peripheral input an ANF receives. For better success rates of these technically challenging recordings, rats were used instead of mice. Recordings were performed at an age range (15\u201331 postnatal days), when properties of subgroups of ANFs with low to high spontaneous rates have mostly developed (Taberner and Liberman, 2005; Wu et al., 2016).\n\n#### Dopamine reduces the firing rate in ANF endings\n\nIn a first step, to monitor spike rates, extracellular loose patch recordings were performed from afferent bouton endings (Wu et al., 2016). Spike rates were analyzed before, during DA application (1 mM; 3\u20135 min), and after wash. A separate set of control experiments was performed, where the control solution was applied instead of DA. Qualitatively similar to in vivo studies, spikes rates in ANFs were significantly reduced by 39% on average in DA (n\u00a0=\u00a022, Figure 6A, C and D), whereas no significant change occurred when switching to control solution (n\u00a0=\u00a023, Figure 6B and D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig6-v2.jpg)\n\n**Figure 6.:** (A) A representative loose-patch extracellular recording demonstrates that DA (dopamine, 1 mM) reduced the firing rate of the ANF.\u00a0(B) Profile plots for individual recordings of control experiments (n\u00a0=\u00a023). Box plots are shown to the right of individual data. Switching from extracellular solution to Control solution, which contains 0.1% sodium ascorbate, the antioxidant used in DA solution, did not cause any significant change in firing rate. Friedman test, n.s. not significant. (C) Profile plots for individual recordings with DA application (n\u00a0=\u00a022). Box plots are shown to the right of individual data. DA significantly reduced the firing rate. Friedman test followed by Dunn's multiple comparisons test, **p<0.01. Note that one fiber with a high spontaneous rate (~90 spikes/s) was omitted from the individual profile plots for better visualization of other fibers, but is included for statistical analysis. (D) Box plots of the percentage of change in firing rate during the application of Control solution (B) or DA (C). Two-tailed independent t-test, **p<0.01. (E) A representative current clamp recording demonstrates that DA (1 mM) reduces the rate of synaptic events and decreases the percentage of EPSPs (arrowhead) that activate APs (arrow). (F) A representative voltage clamp recording demonstrates that DA (2 mM) application reduced the rate and amplitude of EPSCs. (G\u2013H) Profile plots showing changes in the (G) EPSC amplitude and (H) EPSC area during DA application for 6 voltage clamp recordings. Mean\u00a0\u00b1\u00a0SD (red squares) is shown to the right of individual data (open black circles). In order to utilize all available data points, two-tailed paired t-tests were performed separately between \u2018before\u2019 and \u2018DA\u2019 group (n\u00a0=\u00a06) and between \u2018DA\u2019 and \u2018after\u2019 group (n\u00a0=\u00a05), *p<0.05, **p<0.01. (I) Profile plot of synaptic rate for individual fibers before (before), during (DA) and after (after) dopamine application for 6 current clamp recordings (filled circles; both APs and EPSPs were counted) and 7 voltage clamp recordings (open circles). Box plots are shown to the right of individual data. One extreme outlier was excluded from this analysis. One-way repeated-measure ANOVA on rank transformed data, followed by post hoc pairwise comparison with a Bonferroni adjustment, **p<0.01. See also Figure 6\u2014figure supplement 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A\u2013D) Profile plots for changes in spike rate (A), percentage of APs in all events (APs + EPSPs) (B), membrane potential (C), and AP threshold (D), before (before), during (DA, 1 mM) and after DA application (after) for 3 current clamp ANF recordings. Two fibers (black) showed a reversible reduction in spike rate and AP/(AP+EPSP) ratio during DA application, without any change in membrane potential or AP threshold. The third fiber showed a different behavior (gray). Statistical test was not performed due to the small sample size. (E\u2013G) Violin plots and box plots depicting the change in the distributions of (E) EPSC amplitude, (F) EPSC area and (G) EPSC half-width during DA application for the example trace shown in Figure 6F. (H) Profile plots showing no significant change in the EPSC half-width during DA application for 6 voltage clamp recordings. Mean\u00a0\u00b1\u00a0SD (red squares) is shown to the right of individual data (open black circles). In order to utilize all available data points, two-tailed paired t-tests were performed separately between \u2018before\u2019 and \u2018DA\u2019 group (n\u00a0=\u00a06) and between \u2018DA\u2019 and \u2018after\u2019 group (n\u00a0=\u00a05), n.s. not significant.\n\n#### Dopamine reduces the EPSC amplitude, and thereby most likely reduces the percentage of EPSPs that activate an AP\n\nIn only three of many attempted current clamp recordings, could EPSPs and APs be distinguished based on their size and waveform and where event numbers were large enough for analysis (Figure 6E; AP: arrow; EPSP: arrowhead). Although too small a dataset for providing solid proof, current clamp results for three ANFs are reported here, as they are instructive for suggesting a possible mechanism. At the IHC afferent synapse, it can be assumed that individual APs are activated by individual supra-threshold EPSPs (Rutherford et al., 2012). In the three current clamp recordings, in DA, the rate of APs decreased (ANF #1: by 97%; ANF #2: by 70%; ANF #3: by 59%; Figure 6\u2014figure supplement 1A). Interestingly, in two of these recordings, the percentage of APs relative to the number of all events (EPSPs + APs) decreased in DA (ANF #1: from 84% to 50% in DA; ANF #2: from 53% to 13% in DA) (Figure 6E; Figure 6\u2014figure supplement 1B); in other words, in DA, EPSPs were less effective in activating APs. In these two recordings, ANF membrane potentials and AP thresholds remained unchanged during DA application (Figure 6\u2014figure supplement 1C,D). The reduced efficiency for activating APs in DA could be due to a reduction in EPSP amplitude/charge. To test this hypothesis, the effect of DA on EPSC waveform was investigated in voltage clamp recordings. EPSCs showed a wide range of amplitudes ranging up to 80-fold in individual recordings, due to a specialized release mechanism that has been reported earlier at IHC ribbon synapses (Chapochnikov et al., 2014; Glowatzki and Fuchs, 2002; Grant et al., 2010; Li et al., 2009; Figure 6F). Analysis of the exemplary recording in Figure 6F is reported in Figure 6\u2014figure supplement 1E\u2013G. Figure 6G,H, and Figure 6\u2014figure supplement 1H summarize results for all voltage clamp recordings (n\u00a0=\u00a06). In DA, EPSC amplitude and EPSC area (charge) were significantly and reversibly reduced, by\u00a0~19 \u00b1 14% and by 19 \u00b1 9% (mean\u00a0\u00b1\u00a0SD), respectively (Figure 6G\u2013H), whereas EPSC half-width remained unchanged (Figure 6\u2014figure supplement 1G\u2013H). These data suggest that it is the reduced EPSP amplitude/charge that results in less effective activation of APs in DA. The combined reduction of EPSC amplitude and area, as well as the stable half-width in DA, makes it unlikely that the underlying mechanism for reducing the EPSC amplitude is based solely on presynaptic desynchronization of release events within individual EPSCs (Chapochnikov et al., 2014; Grant et al., 2010). Further experiments are needed to separate if the effect of DA on EPSC amplitude/area occurs presynaptically, in the IHC, and/or postsynaptically, in the ANF ending.\n\n#### Dopamine reduces the rate of release at the IHC afferent synapse\n\nBesides reducing EPSC size, DA additionally decreased the rate of release at the IHC afferent synapse. To demonstrate this effect, data from current clamp and voltage clamp experiments were pooled. For current clamp recordings, APs and EPSPs, were both included as representing release events. DA application (1\u20132 mM) irreversibly reduced the rate of events by about half (median\u00a0\u00b1IQR, control: 11.5\u00a0\u00b1\u00a013.3 spikes/s, DA: 6.4\u00a0\u00b1\u00a010.0 spikes/s, wash: 6.9\u00a0\u00b1\u00a014.4 spikes/s; n\u00a0=\u00a013) (Figure 6E,F,I). This effect of DA on release rate was irreversible, whereas the effects on EPSC amplitude and area were reversible, suggesting that DA operates via two different mechanisms that both contribute to reducing the ANF firing rate.\n\nIn summary, the electrophysiological data show that DA reduces ANF firing via two mechanisms, one of which acts presynaptically and affects the release rate.\n\n## Discussion\n\n### Sound exposure dynamically regulates TH expression in LOC intrinsic neurons\n\nThis study provides several lines of evidence that sound exposure regulates TH expression in LOC intrinsic neurons in a level-dependent and dynamic manner. Mice raised in a \u2018low noise\u2019 vivarium showed significantly less TH+ LOC terminals in the cochlea compared to mice raised in the noisier institutional facility (Figure 4). Damaging sound exposure increased the number of TH+ LOC neurons about 5-fold, and a less damaging sound exposure protocol caused a smaller increase (~2 fold) in TH+ LOC neurons (Figure 5D). In addition, 3 weeks after the less damaging sound exposure, the ABR thresholds of the exposed mice partially returned to control levels, along with the number of TH+ LOC neurons. In Th2a-CreER; Ai3 mice, a comparison of reporter\u00a0protein expression and antibody labeling showed that individual neurons expressed different levels of TH at different points in time (Figure 5E).\n\nConsistent with these results, previous studies have shown that dopamine metabolites increased in the rat cochlea after sound exposure proportionally to sound intensity (Gil-Loyzaga et al., 1993). In addition, an increase in TH immunoreactivity was observed in the guinea pig cochlea after non-damaging sound conditioning (Niu et al., 2004; Niu and Canlon, 2002). However, in contrast to what we observed, studies in guinea pig showed that damaging sound exposure down-regulated TH immunoreactivity in both cochlea and brainstem. This discrepancy might be due to species differences or to the use of anesthesia during the damaging sound exposure, but not during the conditioning sound exposure by Niu and Canlon, whereas sound exposures in the study here were performed on awake animals. Suppressive effects of anesthesia on efferent function have been demonstrated at least for MOC neurons (Chambers et al., 2012).\n\nFor both, mice raised in the institutional and in the \u2018low noise\u2019 vivarium, TH+ terminal regions covered more prominently the base where high frequency sounds are represented (Figure 2D, Figure 4B, control). This is most likely due to a larger number of TH+ LOC intrinsic neurons projecting to the base, rather than due to an increase in the length of the terminal bouton patches formed by individual LOC intrinsic neurons that innervate the base of the cochlea. Reconstructions of single LOC intrinsic neuron axons do not show any systematic variation in the length of the terminal arbor along the cochlear spiral (Warr et al., 1997; Warr and Boche, 2003). Similarly, dopaminergic LOC neurons in the guinea pig cochlea preferentially innervate the high frequency region (Mulders and Robertson, 2004). However, sound level measurements both in the \u2018low noise\u2019 and in the institutional vivarium did not report high sound levels in the high frequency range (Figure 4\u2014figure supplement 1A). One possibility is that TH expression in LOC neurons in the high frequency range is activated by mouse ultrasonic vocalizations (Lahvis et al., 2011). Another possibility is that LOC neurons are denser in the medial, high-frequency processing LSO limb (Kaiser et al., 2011; Radtke-Schuller et al., 2015), which could result in a higher probability of TH+ LOC efferent terminals to appear in the base. Notably, after damaging noise exposure, a paradoxical decrease of innervation by TH+ terminal in the basal cochlear coil was observed (Figure 4B). This could be due to noise-induced damage to ANF terminals and subsequent loss of efferent innervation.\n\n### Mechanisms underlying dopaminergic modulation of ANF activity\n\nIn the excised rat cochlea in vitro, dopamine reduces the firing rate of ANFs on average by\u00a0~40%. These data are qualitatively similar to previous results reporting reduced ANF firing when dopamine was perfused into the guinea pig inner ear in vivo (Oestreicher et al., 1997; Ruel et al., 2001). The study here describes two mechanisms by which dopamine reduces ANF firing rate: (1) by a reduction in the synaptic event rate and (2) by a reduction in EPSC amplitude and area. (1) The reduction in event rate suggests a presynaptic mechanism; hair cell release is affected by dopamine. Such a presynaptic downregulation of afferent activity provides an unexpected but highly effective potential strategy for avoiding glutamate-induced excitotoxic effects on afferent endings in response to sound exposure (Kujawa and Liberman, 2009; Le Prell et al., 2003; Nouvian et al., 2015). IHC release could be affected if DA were to act in a paracrine fashion by diffusing and binding to hypothetical dopamine receptors on the IHCs. Direct protein-protein interaction between dopamine D1A receptor and components of the vesicular exocytosis machinery, including otoferlin, have been demonstrated (Selvakumar et al., 2017), suggesting that dopamine receptors could potentially directly influence the release process. However, dopamine receptor expression has not been found in mouse or rat IHCs (Inoue et al., 2006; Maison et al., 2012), though they have been described in fish hair cells (Drescher et al., 2010; Perelmuter et al., 2019; Toro et al., 2015). An alternative mechanism of affecting IHC release rate could be through a dopamine receptor-dependent release of retrograde messengers from ANFs. (2) The reduction in EPSC amplitude and area by dopamine highly likely reduces the EPSP amplitude/area and thereby a lower percentage of EPSPs may activate APs. The effect on EPSC amplitude/area could originate pre- and/or postsynaptically, for example by reducing the quantal size or influencing glutamate receptor function.\n\nAdditionally, dopamine could affect the excitability of ANFs by modulating multiple ion channels in afferent dendrites. For example, studies on guinea pigs and rats suggested that DA could affect ANF firing by decreasing sodium currents (Oestreicher et al., 1997; Vald\u00e9s-Baizabal et al., 2015). Finally, besides dopamine receptors on the ANFs, the LOC efferent terminals may contain D2 receptors (Inoue et al., 2006; Maison et al., 2012). Dopamine acting on D2 auto-receptors at the LOC efferent terminals may alter the release of dopamine and other LOC efferent neurotransmitters, further complicating the effects of dopamine. Future studies are needed to dissect the different mechanisms responsible for reducing ANF firing rates by dopamine released from LOC efferent fibers.\n\n### Orchestra of ACh and DA effects on ANFs\n\nIn CBA/CaJ mice, dopaminergic LOC neurons were mainly identified as non-cholinergic shell neurons, located just outside of the boundaries of the LSO, suggesting that dopaminergic and cholinergic LOC neurons exist as separate groups (Darrow et al., 2006b). The study here also reports non-cholinergic dopaminergic shell neurons in C57BL/6J mice. Surprisingly, TH expression is additionally found in a small percentage of cholinergic intrinsic neurons in the LSO. Cholinergic bouton endings of LOC fibers are found all along the cochlea, however, in \u2018patches\u2019 these endings co-express TH. Even more TH+ cholinergic patches can be found after sound exposure. The co-expression of TH and ChAT suggests that potentially both ACh and DA are being released from the same neurons. These results drastically change our thinking about how LOC intrinsic neurons may modulate spike rates of individual ANFs.\n\nIn vivo experiments in the guinea pig showed that cochlear perfusion of ACh increases and DA decreases ANF firing rate (Arnold et al., 1998; d'Aldin et al., 1995; Felix and Ehrenberger, 1992; Garrett et al., 2011; Nouvian et al., 2015; Oestreicher et al., 1997; Ruel et al., 2001). The study here supports that DA decreases ANF firing rates, however, there are no consistent in vitro data available yet for effects of ACh or ACh/DA combined on ANF activity. Assuming that the two neurotransmitter systems act in divergent ways, it has been hypothesized that the LOC efferent system sets the sensitivity of the ANFs by manipulating a \u2018set point\u2019 (Nouvian et al., 2015; Ruel et al., 2006). The current study extends our understanding of how this might work. With the ability to actively adjust its relative dopaminergic versus cholinergic output, the LOC system may be able to fine-tune ANF activity in response to the sound environment. Thus, we hypothesize that cholinergic outputs dominate in a low noise environment and provide a basal level of positive modulation of ANF activity as cholinergic innervation is found all along the cochlear coil, independent of the sound environment; in animals raised in quiet as well as after sound exposure. In response to sound exposure, DA is released additionally from cholinergic terminals in a frequency-dependent manner, to tune down ANF activity and adjust their sensitivity, and, in the case of damaging sound exposure, to possibly prevent excitotoxic effects on ANF dendrites.\n\nThe dynamic changes occurring in the neurochemical profile of the LOC efferent system based on the sound environment could explain the puzzling contradictory results of several classic LOC lesion studies. The immediate effect of such lesions could either result in an enhancement (Darrow et al., 2007) or in depression (Le Prell et al., 2005) of ensemble ANF activity, which is probably due to differences in the output profile of LOC efferents at the time of the experiments. Chronic LOC lesioning reduced the basal positive tone provided by LOC efferents resulting in an overall decreased ANF spontaneous activity (Liberman, 1990). Finally, when 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP) was used to disrupt dopaminergic LOC innervation in guinea pig, spontaneous ANF activity was also reduced (Le Prell et al., 2014). This result could be explained by MPTP also targeting dopaminergic/cholinergic LOC neurons, and thereby reducing the cholinergic excitatory input onto ANFs.\n\n### Activity-dependent plasticity in multi-transmitter neurons\n\nThe existence of multi-transmitter neurons has been increasingly recognized in the central nervous system, including the combinations of GABA/ACh, GABA/Glutamate, GABA/DA, DA/Glutamate (Granger et al., 2017; Hnasko and Edwards, 2012; Tritsch et al., 2016). The use of multiple neurotransmitters expands the range of synaptic coding that individual neurons can provide. LOC fibers in the auditory pathway now add DA/ACh to this increasing repertoire of transmitter combinations. Here, sensory stimulation modulates dopamine release from otherwise cholinergic efferent fibers. This process adds an additional layer of complexity to the behavior of these multi-transmitter LOC neurons, as the co-existence of the transmitter systems are stimulus and time-dependent.\n\nNeurotransmitter switching has been reported in several brain areas of the adult nervous system, however, in most instances, it was artificially induced or occurred in a diseased state (Spitzer, 2015; Spitzer, 2017). The first example of adult neuron neurotransmitter switching in response to sensory stimuli has been reported in the paraventricular and periventricular nucleus of the hypothalamus, where neurons switch their neurotransmitter from somatostatin to dopamine (TH+) after exposure to extended photoperiods (Dulcis et al., 2013; Meng et al., 2018). The current study provides another example of sensory induced changes in neurotransmitter identity. However, here instead of a complete pre- and postsynaptic switch from one neurotransmitter system to another, the LOC efferent terminals that gain TH expression seem to retain their cholinergic identity (Figure 5\u2014figure supplement 1A) and postsynaptic dopamine receptors seem to be expressed constantly on most ANF endings (Maison et al., 2012). This arrangement allows the ANFs to respond immediately whenever DA is released. Therefore, rather than switching, LOC fibers operate with gain and loss of an additional neurotransmitter. Nevertheless, it remains to be investigated whether the expression of dopamine receptors will increase when dopamine release from the LOC fibers is chronically elevated. Such a mechanism has been observed in the midshipman fish inner ear, where seasonal changes of dopamine receptor expression on hair cells provide the main regulator for dopaminergic modulation of ANF activities (Perelmuter et al., 2019). Future studies are needed to further elucidate the complex feedback modulation of the first synapse in the auditory pathway.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain (M. musculus)</td>\n      <td>C57BL/6J WT</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock #: 000664 RRID:IMSR_JAX:000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (Rattus norvegicus domestica)</td>\n      <td>Sprague Dawley rat</td>\n      <td>Charles River</td>\n      <td>RGD Cat# 734476 RRID:RGD_734476</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>ChATiresCre</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock #: 028861 RRID:IMSR_JAX:028861</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Th2A-CreER</td>\n      <td>PMID: 28041852</td>\n      <td>MGI: 98735</td>\n      <td>Dr. David Ginty (Harvard Medical School)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Ai3 (B6.Cg-Gt(ROSA)26Sortm3(CAG-EYFP)Hze/J)</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock #: 007903 RRID:IMSR_JAX:007903</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Ai9 (B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J)</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock #: 007909 RRID:IMSR_JAX:007909</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Polyclonal rabbit anti-TH</td>\n      <td>Millipore</td>\n      <td>Cat# 657012\u201315 UG, RRID:AB_566341</td>\n      <td>1:500 \u2013 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Polyclonal goat anti-GFP</td>\n      <td>Sicgen</td>\n      <td>Cat# AB0020-200; RRID:AB_2333099</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Polyclonal goat anti-ChAT</td>\n      <td>Millipore</td>\n      <td>Cat# AB144P RRID:AB_2079751</td>\n      <td>1:20 \u2013 1:50</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Polyclonal guinea pig anti-VAChT</td>\n      <td>Millipore</td>\n      <td>Cat# AB1588, RRID:AB_11214110</td>\n      <td>1:500 \u2013 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Polyclonal goat anti-mCherry</td>\n      <td>Sicgen</td>\n      <td>Cat# AB0040-200; RRID:AB_2333092</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal mouse anti-Myosin VIIa</td>\n      <td>DSHB</td>\n      <td>Cat# MYO7A 138\u20131, RRID:AB_2282417</td>\n      <td>1:200 - 1:500</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dopamine Hydrochloride</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# H8502</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium L-Ascorbate</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# A7631</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tetrodotoxin</td>\n      <td>Tocris</td>\n      <td>Cat# 1078/1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tetrodotoxin Citrate</td>\n      <td>Tocris</td>\n      <td>Cat# 1069/1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tamoxifen</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# T5648</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Corn Oil</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# C8267</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ZEN Blue/Black</td>\n      <td>Zeiss</td>\n      <td>RRID:SCR_013672</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>NIH</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ plugin: Measure_line</td>\n      <td>Mass Eye and Ear</td>\n      <td></td>\n      <td>https://research.meei.harvard.edu/Otopathology/3dmodels/other_tools.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>http://fiji.sc</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>MathWorks</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Photoshop CS6</td>\n      <td>Adobe</td>\n      <td>RRID:SCR_014199</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Illustrator CS6</td>\n      <td>Adobe</td>\n      <td>RRID:SCR_014198</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R Project for Statistical Computing</td>\n      <td>Open Source</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RStudio</td>\n      <td>Open Source</td>\n      <td>RRID:SCR_000432</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SPSS Statistics 25</td>\n      <td>IBM</td>\n      <td>RRID:SCR_002865</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SigmaPlot</td>\n      <td>Systat Software Inc</td>\n      <td>RRID:SCR_003210</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Origin 9.1</td>\n      <td>OriginLab</td>\n      <td>RRID:SCR_014212</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MiniAnalysis</td>\n      <td>Synaptosoft</td>\n      <td>RRID:SCR_014441</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STATA</td>\n      <td>StataCorp</td>\n      <td>RRID:SCR_012763</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pClamp 9.2 - Clampex</td>\n      <td>Molecular Devices</td>\n      <td>RRID:SCR_011323</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pClamp 9.2 -Clampfit</td>\n      <td>Molecular Devices</td>\n      <td>RRID:SCR_011323</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BatSound Touch Lite</td>\n      <td>Pettersson Elektronik</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Audition CC 2018</td>\n      <td>Adobe</td>\n      <td>RRID:SCR_015796</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice and rats\n\nAll the experiments were performed on mice except for electrophysiological recordings that were performed on rats. Mice (WT strain C57BL/6J, Jackson Laboratory) and Rats (Sprague Dawley, Charles River Laboratories) of either sex were used in the experiments indiscriminately. For initial experiments (Figures 2 and 3), mice were raised in the institutional vivarium. For sound exposure experiments (Figures 4 and 5), mice were raised in a \u2018low-noise\u2019 satellite vivarium. Rats were raised in the institutional vivarium (Figure 6).\n\n### Transgenic mouse models\n\nGeneration and genotyping of Cre driver lines ChatiresCre (Rossi et al., 2011), Th2A-CreER (Abraira et al., 2017) and Cre-dependent reporter mouse lines (Ai3 and Ai9, Allen Brain Institute) (Madisen et al., 2010) have been previously described. The tamoxifen injection procedure for the inducible Cre-loxP system when using the Th2A-CreER mouse line is described below. All transgenic mouse lines were either obtained on pure C57BL/6J background or bred in-house for at least nine generations with C57BL/6J WT mice before breeding for sound exposure experiments.\n\n### Cochlear whole-mount immunofluorescence\n\nCochleas of one-week to three-month-old mice were harvested, perfused through the round and oval windows with 4% paraformaldehyde (Electron Microscopy Sciences), rinsed in phosphate buffered saline (PBS) and fixed for\u00a0~1 hr at room temperature (RT). Cochleas were carefully microdissected in PBS. Due to the presence of bones in cochleas from older mice, some partially dissected cochleas were decalcified in 0.2 M ethylenediaminetetracetic acid (EDTA) in PBS for 1\u20132 days before further processing. To achieve better penetration of primary antibodies, a fast freeze/thaw step in 30% sucrose was included occasionally. Whole-mount cochlear preparations were first incubated at RT in a blocking and permeabilizing buffer (PBS with 10% normal donkey serum, 0.5% Triton X-100) for 1\u20132 hr. Preparations were then incubated in primary antibody diluted in PBS containing 5% normal donkey serum, 0.25% Triton X-100% and 0.01% NaN3 for\u00a0~42 hr at RT. Samples were rinsed three times with PBS before incubation with the appropriate secondary antibody diluted 1:1000\u20132000 in PBS containing 5% normal donkey serum, 0.25% Triton X-100 at RT for 2 hr. Preparations were again rinsed three times in PBS before mounting on glass slides in FluorSave mounting medium (Calbiochem). All incubations and rinses were performed on a rocking table at RT. See Key Resources Table for a list of primary antibodies used in this study.\n\n### Mapping of terminal region locations along the cochlear coil\n\nThe locations of \u2018terminal regions\u2019 with TH+ bouton endings were mapped along the cochlear coil using the Measure_line ImageJ plugin (Massachusetts Eye and Ear Infirmary) by reconstructing the whole cochlear spiral from dissected pieces of cochlear coils. The logarithmic axis representing ANF characteristic frequency (f) was constructed using the formula d (%)=100 \u2013 (156.5 + 82.5\u00a0\u00d7\u00a0log(f)), based on M\u00fcller et al. (2005). For cochleas shown in Figure 2, the terminal regions were identified by examining the reconstructed whole cochlea image made from tiles of confocal images taken with a 40x objective. For sound exposure experiments, terminal regions were identified by examining panorama confocal images of individual cochlear pieces taken with a 10x objective lens. In initial trials, the terminal regions were identified by using a higher magnification objective lens while viewing at the microscope and marking the location on the images taken with the 10x objective lens. Both methods gave comparable results.\n\n### Brainstem sectioning and immunostaining\n\nMice were given an overdose of 50 mg/ml sodium pentobarbital and perfused transcardially with PBS followed by 4% paraformaldehyde. The brain tissue was then removed from the skull bones and post-fixed in 4% paraformaldehyde overnight at 4\u00b0C. The caudal portion of the brain tissue was trimmed off to allow it to sit flat on its coronal plane and placed in a well coated with petroleum jelly. 5 ml of gel albumin mixed with 0.4 ml of 5% glutaraldehyde and 1 ml of 37% paraformaldehyde was placed into the well containing the brain tissue and allowed to harden for 30 s. The brain was mounted on the vibrating microtome (Vibratome 1000 Plus) with superglue and sectioned in the coronal plane into 50 \u00b5m slices. The brain slices were first incubated at RT in a blocking and permeabilizing buffer (PBS with 10% normal donkey serum, 0.5% Triton X-100) for 1\u20132 hr. The brain slices were then incubated with primary antibodies diluted in PBS containing 5% normal donkey serum, 0.25% Triton X-100 for two days in a cold-room at 4\u00b0C on a shaker. After washing with PBS, the brain slices were incubated with secondary antibodies diluted in PBS containing 5% normal donkey serum, 0.25% Triton X-100 for 1\u20132 hr at RT on a shaker. The brain slices were then washed again with PBS, before mounting on glass slides in Fluoromount-G mounting medium (SouthernBiotech).\n\n### Quantifying the number of TH+ LSO intrinsic neurons\n\nTH+ LOC intrinsic neurons were quantified by visual inspection of confocal stacks of each brainstem slice. As a test, we circled all the TH+ LOC intrinsic neurons found on two adjacent brainstem slices. Overlaying the images from two consecutive brainstem slices showed non-overlapping neurons, suggesting that it is unlikely to count one TH+ LOC intrinsic neuron twice on consecutive brainstem slices. Therefore, a simple summation of the numbers found on each brainstem slice is appropriate for quantifying the total number of TH+ LOC intrinsic neurons.\n\n### Image acquisition\n\nFluorescence images were acquired using a LSM 700 confocal microscope (Zeiss) with a Fluar 10x/0.50 M27 objective, a LCI Plan-Neofluar 25x/0.8 Imm Korr DIC M27 objective and a Fluar 40x/1.30 Oil M27 objective using the ZEN black 2011 software. The pinhole was set at one airy unit. The size of optical sections was determined by stepping at half the distance of the theoretical z-axis resolution (the Nyquist sampling frequency). Images were acquired in a 1024\u00a0\u00d7\u00a01024 raster. Images are presented as maximum intensity projections through a subset of the collected optical stacks. Some images were processed in ImageJ or Fiji without deconvolution, filtering, or gamma correction.\n\n### Tamoxifen injections\n\nTamoxifen freebase (Sigma-Aldrich) was prepared in corn oil (Sigma-Aldrich) at 10 mg/ml and sonicated at RT for 0.5\u20131 hr until no precipitations were visible. This solution was stored at 4\u00b0C for 5\u20137 days protected from light. Tamoxifen solution was administrated intraperitoneally (i.p.) or through gavage for a total amount of 0.2\u20132 mg for each injection. To achieve sparse labeling of TH-expressing neurons, a single dose of 0.2\u20130.5 mg tamoxifen was administrated.\n\n### Sound exposure\n\nOctave-band noise was generated with digital-to-analog converters and gated with electronic switches (Tucker-Davis Technologies). Stimulus levels were controlled by programmable attenuators (Tucker-Davis Technologies) and an audio amplifier (Crown Audio). Stimulus waveforms were transduced by two overhead high-frequency speakers (Pyramid). The overhead location of the speaker minimized the effects of head orientation on sound energy propagating to the tympanic membrane. Speakers were calibrated with the same microphone and software used for the auditory brainstem response measurements (see below). Additional checks on the sound levels were performed using a sound level meter fitted with a \u00bd\u201d free field microphone (Larson-Davis) just prior to each sound exposure.\n\nDuring the presentation of noise, mice were placed inside a mesh cage with food pellets and water gel ad libitum. The cage was situated on top of a rotating platform making counter-clock or clockwise rotations 30 s/step to make sure even exposure to the sound field. Each step was 1.8 degrees and happened abruptly. Sound levels at test frequencies varied by no more than 10 dB within the listening area. The whole platform was isolated from extraneous environmental sounds by a sound-attenuation chamber. The inner walls of the chamber were lined with anechoic foam (Sonex). For most of the trials, control littermates were placed inside a mesh cage on top of a simultaneously rotating platform with the same built outside of the sound-attenuation chamber and exposed to ambient noise levels in the procedure room during the sound exposure session. For two trials, control littermates were either placed in the shared housing cage outside the sound-attenuation chamber or placed on the rotating platform inside the sound-attenuation chamber during daytime without noise exposure.\n\nMice were exposed to a 1-octave band noise centered at 12 kHz. The 2 hr 110 dB SPL exposure began with an initial moderate level for 15 s, followed by an interim level for 15 s to finally reach the maximum level of\u00a0~110 dB SPL. The maximum sound exposure level was maintained for 2 hr. The exposure was performed during the daylight cycle at the vivarium. A less damaging sound exposure used a 1-octave band noise centered at 12 kHz at\u00a0~90 dB SPL. The exposure lasted 12 hr each session. All of the mice were exposed five consecutive nights (approximately 9 PM \u2013 9 AM), except for one that was exposed for three consecutive nights, though the whole dataset was collectively referred to as 5 \u00d7 12 hr 90 dB SPL exposure.\n\nFor sound exposure and control experiments, both wild-type and transgenic mice were bred on a pure C57BL/6J background and were raised in a low-noise satellite vivarium. The sound exposure started at 7\u20138 weeks of age. Mice were sacrificed 7\u201310 days after the beginning of the sound exposure. Cochlear and brainstem samples were harvested for immunostaining experiments. Mice used in the sound exposure or control experiments were not used in any previous procedures or sound exposures.\n\n### Vivarium sound level measurements\n\nSound levels in the \u2018low noise\u2019 vivarium and the large-capacity institutional vivarium were recorded using a data-logging sound level meter with 1/3 octave band measurement capabilities and \u00bd\u201d free field microphone (Larson-Davis). Ultrasound range was measured in each room using a M500-384 USB Ultrasound Microphone (Pettersson Elektronik) linked to a laptop running the BatSound Touch Lite software. 5 min recordings were made simultaneously with the sound level meter and the ultrasound microphone. Such recordings were made on 4\u20135 days at slightly different locations inside each vivarium, where the mice were housed. All the recordings were made during daytime. Frequency analysis of the recorded sound was performed using Adobe Audition CC2018 (Adobe).\n\n### Auditory brainstem response measurements\n\nRecording procedures were similar to those previously described (Lauer and May, 2011; Lina and Lauer, 2013; McGuire et al., 2015). Mice were anesthetized with 100 mg/kg ketamine and 20 mg/kg xylazine through intraperitoneal injection and placed on an electronically controlled heating pad inside a small sound-attenuating chamber 30 cm away from a Fostex speaker in front of the animal. Auditory brainstem responses (ABRs) were differentially recorded from the scalp using subcutaneous platinum needle electrodes (G.R.A.S.) placed over the left bulla and at the vertex of the skull, with a ground electrode inserted into the leg muscle. Responses were amplified 300,000 times (ISO-80, World Precision Instruments) and bandpass filtered from 300 to 3,000 Hz (Krohn-Hite). Auditory stimuli were generated at a 200 kHz sampling rate, attenuated to control presentation levels (Tucker-Davis Technologies, PA5), and amplified (Parasound) before being passed to a calibrated free-field speaker (Fostex). Stimulus protocols were implemented on programmable real-time processors (Tucker-Davis Technologies, RX6) using a custom MATLAB program (Ngan and May, 2001). Responses were averaged over 300 stimulus presentations. Stimuli were clicks and 5 ms tone pips at 8, 12 16, 24, 32 kHz with a rise/fall time of 0.5 ms played at a rate of 20 or 30 repetitions/s. Stimuli were calibrated with a \u00bc\u2033 Bruel and Kjaer microphone placed at the location normally occupied by the mouse's head during testing using a custom MATLAB (Mathworks) based program.\n\nThresholds and suprathreshold responses were measured by presenting a descending series of stimulus levels beginning with \u221210 dB of the maximum possible output of the speaker and continuing in 5- or 10 dB steps until no response could be discerned from the noise. Threshold was defined as the sound level at which the peak-to-peak ABR amplitude (any wave) was two standard deviations above the average level of a 5 ms window of baseline noise collected at the end of a 30 ms recording epoch. Responses to clicks were measured first to ensure an optimal signal-to-noise ratio and the presence of at least four distinct peaks. Responses to tones were measured in a pseudorandom order.\n\n### Electrophysiology\n\nRecordings were performed on acutely excised cochlear preparations from Sprague Dawley rats (Charles River Laboratories) at room temperature (22\u201325\u00b0C). Recording pipettes were fabricated from 1 mm borosilicate glass (WPI). Pipettes were pulled with a multistep horizontal puller (Sutter), coated with Sylgard (Dow Corning) and fire polished. Drug application was mediated by whole-bath perfusion or a gravity-driven flow pipette (100-\u00b5m-diameter opening) placed near the row of IHCs and connected with a VC-6 channel valve controller (Warner Instrument).\n\n### ANF recordings\n\nPostnatal day (P) 15\u201331 SD rats were used for ANF recordings. Loose-patch extracellular and whole-cell patch clamp recordings in current and voltage clamp on the dendritic endings of ANFs were performed as described before (Grant et al., 2010; Wu et al., 2016). Pipette resistances were 9\u201315 M\u03a9 for ANF recordings. ANF recordings were acquired using pCLAMP 9.2\u00a0or\u00a0pCLAMP\u00a010.2 software (Molecular Devices) in conjunction with a Multiclamp 700A or Multiclamp 700B amplifier (Molecular Devices). The signal was low pass filtered at 10 kHz and digitized at 50 kHz with a Digidata 1322A (Molecular Devices).\n\nExtracellular solutions for ANF recordings contained (in mM): 5.8 KCl, 144 NaCl, 0.9 MgCl2, 1.3 CaCl2, 0.7 NaH2PO4, 5.6 glucose, 10 HEPES, pH 7.4 (NaOH), 300 mOsm. In a subset of ANF voltage-clamp recordings, K+ concentration is elevated to 15 mM in substitution of Na+ to increase presynaptic release. Pipette solution for extracellular loose-patch recordings contained the extracellular solution. Pipette solutions for whole-cell ANF recordings contained (in mM): 20 KCl; 110 K-methanesulfonate; 5 MgCl2; 0.1 CaCl2; 5 EGTA; 5 HEPES; 5 Na2ATP; 0.3 Na2GTP; 5 Na2 phoshocreatine; pH 7.2 (KOH), 290 mOsm or 135 KCl, 3.5 MgCl2, 0.1 CaCl2, 5 EGTA, 5 HEPES, 0\u20134 Na2ATP, 0\u20130.2 Na2GTP, pH 7.2 (KOH), 290 mOsm.\n\nFor ANF current clamp recordings, bridge balance and pipette capacitance neutralization were performed. For ANF voltage clamp recordings, holding potentials were between \u221299 and \u221284 mV. All recordings that had a leak current\u00a0<350 pA, except for one recording that had a leak current up to 450 pA. Both current and voltage clamp recordings were corrected posterior for measured liquid junction potentials: 4 mV for potassium-based solution and by 9 mV for methanesulfonate-based solution. Series resistance Rs was not compensated for in voltage clamp recordings.\n\n### Drugs\n\nDA solutions were prepared daily from dopamine hydrochloride powder (Sigma) and protected from light during the experiments. 1 mM DA was used in ANF loose-patch extracellular and current-clamp recordings, 1\u20132 mM DA was used in ANF voltage-clamp recordings. 0.01\u20130.1% (w/v) sodium ascorbate was supplemented in the DA solution as an antioxidative agent, except for two ANF recordings. For control experiments, DA but not sodium ascorbate was omitted in the Control solution. In a subset of voltage-clamp recordings, 1\u20132 \u00b5M TTX (Tocris) was present to block APs.\n\n### Timeline of drug application and analysis of firing and release rates\n\n30\u201360 s are typically needed for a drug to wash into the tissue, and this was the minimal wait time before analyzing dopamine effects. For cochlear afferent recordings, the rate of EPSC/EPSP and AP fluctuates in a power-law fashion throughout the recording, even in control condition, as described in Wu et al.\u00a0(2016). Therefore, it is essential, to record for long enough in control, in DA, and after washout, to be able to separate random fluctuations from drug effects. This is why at least 30 s of recording were analyzed before, in and after DA.\n\nTo study the effects of DA, segments of recordings were selected for analysis. For extracellular loose-patch recordings of ANFs, 2 min before DA application, 2 min before the end of DA application, and 2 min after 2 min of washout, were taken as the \u2018before\u2019, \u2018DA\u2019 and \u2018after\u2019 time windows, respectively. The control experiments were performed and analyzed in the same way. The total application time for DA or Control solution was 3\u20135 min.\n\nFor whole-cell recordings of ANFs, 30 s to 2 min of recording before DA application was selected for \u2018before\u2019, 1 or 2 min of recording after at least 30 s of DA application was selected for \u2018DA\u2019, 30 s to 2 min of recording after at least 1.5 min of wash-out was selected for \u2018after\u2019. The total application time of DA varied between 1.5\u20136 min.\n\n### Synaptic event detection and graphing\n\nEvents in extracellular loose-patch and whole-cell current clamp recordings were detected using a routine in MiniAnalysis and subsequently accepted by eye. In current clamp, each peak detected was identified as an event for quantification of synaptic frequency. AP and EPSP were identified by their amplitude distribution. AP threshold was detected by several methods. The first method found the point of maximum slope of the first derivative of the rising phase of the AP using a customized MATLAB routine (Wu and Chan, 2019). For most of the APs in the ANF dendrite recordings, this method could successfully identify the AP threshold. In case this method failed to locate the AP threshold, a second method that found the maximum curvature point on the rising phase of the AP was used. If the second method still could not identify the AP threshold, the AP analysis routine in the MiniAnalysis (Synaptosoft) was used.\n\nEvents in ANF voltage clamp recordings were detected by threshold search event detection method of Clampfit (Molecular Devices), following a manual adjustment of baseline current. The end of an event was defined as the current that came back to the pre-set value from the baseline. Therefore, an event could contain several closely spaced peaks.\n\nData were plotted using Excel 2016 (Microsoft), Origin 9.1 (OriginLab), RStudio, MATLAB (MathWorks), and Illustrator (Adobe). For representative traces, the data points were reduced by decimation to a 5 or 10 kHz sampling rate.\n\n### Statistics\n\nStatistical analyses were performed with SPSS Statistics 25 (IBM), STATA (StataCorp) or R studio (R Core Team). Graphical representation of the quantification is defined in Figure Legend, with the definition of n and information about the statistical tests, unless otherwise states in the Result. Error bars can be either standard deviation (SD) or standard error of the mean (SEM), as specified in Figure Legend. Statistical significance is defined as: n.s. (not significant) p>0.05, *p<0.05, **p<0.01, ***p<0.001. For the quantification of the TH+ terminals and TH+ LOC neurons, the researchers that performed the majority of the analysis were blinded to the experimental condition during data quantification.\n",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "988ba419-c5df-4a22-b0b3-f579ffa83c52",
+      "submission_id": "9e219476-0b56-4710-bd97-4fde3b120564",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Catherine Emily Carr, University of Maryland United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52419.sa1](https://doi.org/10.7554/eLife.52419.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nEfferents project to the inner ear, and serve a crucial role in gain control and filtering of behaviorally relevant sound signals. There are two types of olivocochlear efferents, with most previous research focused on the medial olivocochlear neurons that synapse onto outer hair cells. Much less is known about the function of lateral olivocochlear neurons. Their synapses are strategically located on auditory nerve endings, directly where they contact hair cells, allowing them to affect firing rates and neural coding at the first synapse in the auditory pathway. Indirect evidence suggests that lateral olivocochlear neurons respond to sound and form a three-neuron feedback loop, the 'LOC acoustic reflex'. This paper shows that sound exposure induces dopamine synthesis in the LOC neurons and suggests dopaminergic modulation of auditory nerve fibers is both activity-dependent and dynamic. The authors also provide support for the hypothesis that cholinergic and dopaminergic transmitter systems act together.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Sound exposure dynamically induces dopamine synthesis in cholinergic LOC efferents for feedback to auditory nerve fibers\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Andrew King as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michael Evans (Reviewer #1); Charles Liberman (Reviewer #2); J. Christopher Holt (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study provides new insights into the plasticity of the lateral olivocochlear efferent system, using a combination of reporter mice, immunohistochemistry and in vitro electrophysiology. The authors use tyrosine hydroxylase levels as a proxy for dopamine synthesis in olivocochlear neurons to provide strong support for the presence of dopamine within some cholinergic lateral cochlear efferent nerve fibers. These two neurotransmitters had been previously shown to have opposing effects on auditory nerve fiber responses, and their co-existence in the same nerve fibers could provide an up or down regulation of auditory nerve responses. The authors further show that this transmitter expression appears to be modulated by sound exposure history. Thus, the same neurons can use either acetylcholine or dopamine to either excite or inhibit the responses of their target neurons. The authors then supplement the morphological data with electrophysiological recordings in the rat cochlea from the bouton endings of auditory afferents on inner hair cells before and after the exogenous application of dopamine. In this preparation, they show that dopamine, when applied exogenously, likely acts on both presynaptic and postsynaptic targets to reduce both quantal rate and size.\n\nEssential revisions:\n\nReviewers were concerned about the plotting and quantification of TH+ terminals along the cochlear spiral. The frequency axes in Figures 2 and 4 are linear with frequency, but cochlear frequency mapping transforms linear distance into log frequency along the mouse spiral. Thus, plots like Figure 4A and 4B are distorted, since the 19 kHz region is at the middle of the cochlear spiral. Please also consider that the frequency axis may be wrong, if the observers noted terminal locations in linear distance and then plotted them along a linear frequency axis with appropriate lowest and highest frequency values. The plot in Figure 4C may be inaccurate in its estimation of the \"% of the cochlea with TH+ terminals\". We suggest that you address these points, and add details to your Materials and methods.\n",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "791799f9-ad9d-4340-966b-052914d34d7a",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C1",
+      "claim": "Lateral olivocochlear (LOC) efferent neurons modulate auditory nerve fiber (ANF) activity using dopamine (DA) and acetylcholine (ACh).",
+      "claim_type": "EXPLICIT",
+      "source": "Lateral olivocochlear (LOC) efferent neurons modulate auditory nerve fiber (ANF) activity using a large repertoire of neurotransmitters, including dopamine (DA) and acetylcholine (ACh).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known fact about LOC neurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "43f80a0e-3ec5-49f6-a794-c82f9d636cb5",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C2",
+      "claim": "Sound exposure upregulates tyrosine hydroxylase in cholinergic LOC intrinsic neurons in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present quantitative evidence in rodents that the dopaminergic LOC input to ANFs is dynamically regulated according to the animal's recent acoustic experience. Sound exposure upregulates tyrosine hydroxylase, an enzyme responsible for dopamine synthesis, in cholinergic LOC intrinsic neurons, suggesting that individual LOC neurons might at times co-release ACh and DA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding presented in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "fc88a52f-e1a1-4276-8c58-8d7fe2a59ec0",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C3",
+      "claim": "Individual LOC neurons might at times co-release ACh and DA.",
+      "claim_type": "EXPLICIT",
+      "source": "Sound exposure upregulates tyrosine hydroxylase, an enzyme responsible for dopamine synthesis, in cholinergic LOC intrinsic neurons, suggesting that individual LOC neurons might at times co-release ACh and DA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that TH is upregulated in cholinergic neurons.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "184603ee-ec16-4533-9be2-2f822e6a587e",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C4",
+      "claim": "Dopamine down-regulates ANF firing rates by reducing both the hair cell release rate and the size of synaptic events.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that dopamine down-regulates ANF firing rates by reducing both the hair cell release rate and the size of synaptic events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by electrophysiological recordings presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "92e99c22-d548-4ecd-9dc9-a4d6fdc52a7f",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C5",
+      "claim": "LOC intrinsic neurons can undergo on-demand neurotransmitter re-specification to re-calibrate ANF activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our results suggest that LOC intrinsic neurons can undergo on-demand neurotransmitter re-specification to re-calibrate ANF activity, adjust the gain at hair cell/ANF synapses, and possibly to protect these synapses from noise damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "aea0983a-b4d1-4886-b636-15ca35817bb4",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C6",
+      "claim": "LOC neurons synapse onto the unmyelinated dendrites of ANFs underneath the inner hair cells in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, one subset of OC neurons, the lateral olivocochlear (LOC) neurons, originate in and around the lateral superior olive (LSO) in the brainstem and send axons that synapse onto the unmyelinated dendrites of ANFs underneath the inner hair cells (IHCs) (Figure 1A; Warr and Guinan, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Warr and Guinan, 1979.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "7f37fc75-6785-42c8-b409-e335822070b8",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C7",
+      "claim": "LOC synapses are strategically located before the spike initiation zone on the myelinated peripheral ANF axons.",
+      "claim_type": "EXPLICIT",
+      "source": "These synapses are strategically located before the spike initiation zone on the myelinated peripheral ANF axons (Hossain et al., 2005), allowing them to directly modulate the hair cell transmitted postsynaptic activity in the ANFs and thereby affect firing rates and neural coding in the auditory nerve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hossain et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "308cb32b-d536-4a88-927f-445cb84a2b10",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C8",
+      "claim": "LOC neurons utilize a diverse cohort of neurotransmitters including GABA, CGRP, opioid peptides, ACh and DA.",
+      "claim_type": "EXPLICIT",
+      "source": "LOC neurons utilize a diverse cohort of neurotransmitters and neuromodulators, including \u03b3-aminobutyric acid (GABA), calcitonin gene-related peptide (CGRP), opioid peptides, acetylcholine (ACh) and dopamine (DA) (Ciuman, 2010; Darrow et al., 2006b; Eybalin, 1993; Reijntjes and Pyott, 2016; Sewell, 2011; Vetter et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "9c4a4ca6-d37c-4683-af57-27319a2252b3",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C9",
+      "claim": "The majority of LOC intrinsic neurons are cholinergic in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of LOC intrinsic neurons are cholinergic (Maison et al., 2003; Safieddine and Eybalin, 1992; Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Maison et al., 2003 and Safieddine and Eybalin, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "3b91a46f-41c5-4d4a-b58b-eb07fc89c228",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C10",
+      "claim": "In mice, dopaminergic LOC neurons form a separate neurochemical group and are mainly shell neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, it is believed that dopaminergic LOC neurons form a separate neurochemical group and are mainly shell neurons (Darrow et al., 2006b; Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Darrow et al., 2006b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "9e8a7ea6-4fe8-4615-a504-9fe194d7cc3a",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C11",
+      "claim": "In guinea pig, dopaminergic neurons overlap with cholinergic LOC intrinsic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in guinea pig, dopaminergic neurons overlap with cholinergic LOC intrinsic neurons (Safieddine et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Safieddine et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "259d75b1-daff-4c4c-9e8c-848cfd2a9eae",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C12",
+      "claim": "ACh can increase ANF firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies suggest that ACh can increase and dopamine can decrease ANF firing rates (Arnold et al., 1998; d'Aldin et al., 1995; Felix and Ehrenberger, 1992; Nouvian et al., 2015; Oestreicher et al., 1997; Ruel et al., 2001; Ruel et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "5e119e28-2d45-4bfa-b586-0fab68d8291b",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C13",
+      "claim": "Dopamine can decrease ANF firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies suggest that ACh can increase and dopamine can decrease ANF firing rates (Arnold et al., 1998; d'Aldin et al., 1995; Felix and Ehrenberger, 1992; Nouvian et al., 2015; Oestreicher et al., 1997; Ruel et al., 2001; Ruel et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "fd6bee9e-bac6-489d-ba05-2db21ac392c1",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C14",
+      "claim": "Dopaminergic LOC neurons change their innervation density after sound conditioning in guinea pig.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, dopaminergic LOC neurons have been shown to change their innervation density after sound conditioning in guinea pig, which is thought to provide protection against ANF damage induced by noise exposure (Niu and Canlon, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Niu and Canlon, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "1f2ad9c3-8eef-4d15-aa5b-16fbb9875922",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C15",
+      "claim": "Mice deficient for specific dopamine receptors were found to be more vulnerable to noise exposure compared to wildtype mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, mice deficient for specific dopamine receptors were found to be more vulnerable to noise exposure compared to wildtype mice, again suggesting a protective effect (Maison et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Maison et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "f16dc73c-fe88-43e3-8a9d-1feaee65fa81",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C16",
+      "claim": "TH+ LOC efferent bouton terminals appear in distinct patches along the cochlear spiral.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, consistent with previous descriptions in CBA/CaJ mice (Darrow et al., 2006b), TH+ LOC efferent bouton terminals were not homogeneously distributed in the ISB along the cochlear spiral, but appeared in distinct patches (Figure 2A,B), here called 'terminal regions'.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in immunostaining data shown in Figure 2 and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "1db6fea6-c403-483c-9b19-7c5fbf2cd80b",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C17",
+      "claim": "The pattern of alternating terminal and spiral regions is established during postnatal development, between postnatal weeks 1 and 3.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of alternating terminal and spiral regions is established during postnatal development, between postnatal weeks 1 and 3 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by developmental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "e9753b4b-4f78-4269-b2a4-355638d57344",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C18",
+      "claim": "Terminal regions covered the base of the cochlea (80\u2013100% of cochlear length) with a higher probability than the 0\u201380% of cochlear length.",
+      "claim_type": "EXPLICIT",
+      "source": "As reflected in the average line plot of all six cochleas (Figure 2D, bottom), terminal regions covered the base of the cochlea (80\u2013100% of cochlear length) with a higher probability than the 0\u201380% of cochlear length.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the line plot data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "0ecddd87-9027-430d-a193-7d24ccb3c852",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C19",
+      "claim": "TH+ terminals clearly constitute a subset of the cholinergic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "TH immunostaining in ChatiresCre; Ai3 cochleas showed the typical dopaminergic LOC innervation pattern, with distinct terminal regions. In this preparation, TH+ terminals clearly constitute a subset of the cholinergic terminals (n = 6 cochleas, five mice) (Figure 3A; two brackets point to TH+ terminal regions amongst cholinergic terminals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by co-labeling experiments shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "645c4578-c23f-42b5-bd0c-8e044176bb2f",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C20",
+      "claim": "Co-immunostaining of TH with VAChT confirmed the cholinergic identity of TH+ bouton terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-immunostaining of TH with the vesicular acetylcholine transporter (VAChT) (n = 6 cochleas, six mice) (Figure 3B) further confirmed the cholinergic identity of TH+ bouton terminals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by co-immunostaining data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "cf35cd74-2b35-45b7-8068-a529122c9c88",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C21",
+      "claim": "The morphology of individual TH+ fibers is consistent with that of cholinergic LOC intrinsic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if the morphology of individual TH+ LOC neurons is consistent with that of cholinergic LOC intrinsic neurons, a knock-in Th2A-CreER mouse (Abraira et al., 2017) crossed with the Cre-dependent reporter line Ai9 was used to sparsely label TH+ neurons by the administration of a low dose of tamoxifen (Feil et al., 2009). The morphology of individual TH+ fibers compares well with the known morphology of cholinergic intrinsic neurons: their axons travel some distance in one direction along the inner spiral bundle under the IHCs before forming a patch of dense bouton endings (Brown, 1987; Vetter and Mugnaini, 1992; Warr et al., 1997) (n = 8 fibers in seven cochleas, six mice) (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by sparse labeling experiments shown in Figure 3C-D and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "c141e801-b1af-42cb-9366-43c57a3e4ec6",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C22",
+      "claim": "TH labeled a subset of cholinergic LOC intrinsic neurons in brainstem sections of ChatiresCre; Ai3 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, in brainstem sections of ChatiresCre; Ai3 mice, TH labeled a subset of cholinergic LOC intrinsic neurons (Figure 3\u2014figure supplement 1D and Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunostaining data shown in Figure 3\u2014figure supplement 1D and Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "1ab6f0e2-a16c-42f2-b9d7-e2db65d83940",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C23",
+      "claim": "TH+ bouton endings in terminal regions are formed by TH-expressing cholinergic LOC intrinsic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that TH+ bouton endings in terminal regions are formed by TH-expressing cholinergic LOC intrinsic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the morphological and immunostaining data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "fba69baa-c97f-4a62-b9a7-4357e0ddbe90",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C24",
+      "claim": "Cochleas from mice raised in the 'low noise' vivarium showed only a few or no terminal regions in the apical half.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to mice raised in the institutional vivarium (Figure 2D), cochleas from mice raised in the 'low noise' vivarium showed only a few or no terminal regions in the apical half (no terminal patches < 30 kHz for n = 19/22 cochleas).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by line plot data comparing control mice in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "15eb191a-caf4-4fc9-99d5-93a358ee7add",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C25",
+      "claim": "After sound exposure, the apical half of the cochlear coil at and above the frequency range of the noise band showed a significantly increased likelihood to be covered by TH+ terminal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control, after sound exposure, the apical half of the cochlear coil at and above the frequency range of the noise band showed a significantly increased likelihood to be covered by TH+ terminal regions (Figure 4A,B, exposed).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by line plot data in Figure 4A,B comparing control and exposed mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "c2fe688b-fc49-4679-87fa-129fd19b1500",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C26",
+      "claim": "There was a paradoxical significant decrease in the number of terminal patches in the basal part of the cochlea, at frequencies > 60 kHz after damaging noise exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there was a paradoxical significant decrease in the number of terminal patches in the basal part of the cochlea, at frequencies > 60 kHz (Figure 4B, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the line plot data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "5fd1d39e-68b8-403b-84ee-453f65486932",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C27",
+      "claim": "The total percentage of cochlear spiral covered by TH+ terminal regions increased significantly, about 5-fold, in sound exposed mice compared to control littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the total percentage of cochlear spiral covered by TH+ terminal regions increased significantly, about 5-fold, in sound exposed mice compared to control littermates (median \u00b1 IQR, control: 0.1 \u00b1 0.06, exposed: 0.47 \u00b1 0.27) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "62704114-5e29-4a62-94c0-aa6781b7fab5",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C28",
+      "claim": "The number of TH+ LOC intrinsic neurons in sound exposed mice increased significantly, about 5-fold compared to control littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control littermates, the number of TH+ LOC intrinsic neurons in sound exposed mice increased significantly, about 5-fold (median \u00b1 IQR per LSO, control: 11 \u00b1 7, exposed: 47 \u00b1 35) (Figure 5A,B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative data shown in Figure 5A,B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "f70e0ab8-80a5-4775-a5fd-e4b30a7924c1",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C29",
+      "claim": "The 5-fold change in TH+ LOC neurons is remarkably comparable to the increase in the percentage of cochlear spiral covered by TH+ terminal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This 5-fold change is remarkably comparable to the increase in the percentage of cochlear spiral covered by TH+ terminal regions, suggesting that the LOC neurons that became TH+ due to sound exposure, covered additional length along the ISB in the cochlea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing the quantitative data from cochlea and brainstem.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "ac6df7f7-ead3-4736-ac8a-e585a78de41d",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C30",
+      "claim": "After sound exposure, TH expression is found in existing cholinergic LOC intrinsic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify that after sound exposure TH was in fact upregulated in cholinergic LOC intrinsic neurons, a subset of sound exposure experiments was performed on mice with genetically labeled cholinergic neurons (ChatiresCre; Ai9 mice). Sound exposure did not impact the number of cholinergic LOC intrinsic neurons. The median number of genetically labeled ChAT+ LOC neurons was not significantly different after sound exposure (422, n = 6 cochleas, 3 mice) compared to control littermates (433, n = 8 cochleas, 4 mice) (Mann-Whitney U test, p=0.491). After sound exposure, immunolabeled TH+ neurons represented a subset (16 \u00b1 4%) of the cholinergic LOC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments using ChatiresCre; Ai9 mice showing that TH is upregulated in existing cholinergic neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "36939883-7b7c-48cd-a8cc-9aba30dddb07",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C31",
+      "claim": "The percentage of TH+ cholinergic LOC neurons in sound exposed mice was ~5 times higher compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, similar to the whole dataset (Figure 5A,B,D), the percentage of TH+ cholinergic LOC neurons in sound exposed mice was ~5 times higher compared to control (16 \u00b1 4% versus 3 \u00b1 1%) (Welch t-test, p<0.0005) (n = 6 LSOs, 3 mice; Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative data from ChatiresCre; Ai9 mice shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "b79df191-068f-439c-944b-04f5277f6e7b",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C32",
+      "claim": "When TH expression is upregulated, the cholinergic phenotype of existing ChAT+ LOC neurons was maintained, for at least 7\u201310 days after sound exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if TH expression affects the cholinergic identity of LOC terminals, after sound exposure, we immunostained for ChAT, in a ChatiresCre; Ai9 mouse. Most TH+ bouton terminals were positive for ChAT, both by genetic labeling (which indicates their original identity) and immunolabeling (which represents expression at the time of tissue harvesting), suggesting that when TH expression is upregulated, the cholinergic phenotype of existing ChAT+ LOC neurons was maintained, for at least 7\u201310 days after sound exposure (Figure 5\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by co-labeling experiments shown in Figure 5\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "e4e7d161-13d1-4590-a31d-6f6e6f1d0760",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C33",
+      "claim": "Sound exposure induces the expression of TH in previously TH- cholinergic LOC intrinsic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, sound exposure induces the expression of TH in previously TH- cholinergic LOC intrinsic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing increased TH in cholinergic neurons after sound exposure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "54167ae8-d13d-43fd-ba2b-a68a27635bcf",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C34",
+      "claim": "One week after the 5 \u00d7 12 hr 90 dB SPL sound exposure protocol, the number of TH+ LOC intrinsic neurons increased significantly in sound exposed mice compared to control littermates by about 2-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "At one week after the sound exposure protocol had been initiated, the number of TH+ LOC intrinsic neurons increased significantly in sound exposed mice compared to control littermates by about 2-fold (median \u00b1IQR, control: 15 \u00b1 11, exposed: 31 \u00b1 46) (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "8f45c8c0-5aca-42d8-b48e-1b41bb4336bb",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C35",
+      "claim": "Three weeks after initiating the 5 \u00d7 12 hr 90 dB SPL sound exposure protocol, the number of TH+ LOC intrinsic neurons in sound exposed mice had returned to levels that were not significantly different from those of control littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, two weeks later (three weeks after initiating the sound exposure protocol), the number of TH+ LOC intrinsic neurons in sound exposed mice had returned to levels that were not significantly different from those of control littermates (median \u00b1IQR, control: 15 \u00b1 11, exposed: 19 \u00b1 9) (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "b46a7b04-fce1-4f93-b505-b55d06cf8a27",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C36",
+      "claim": "TH expression is dynamically regulated according to the animal's acoustic experience.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that TH expression is dynamically regulated according to the animal's acoustic experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the reversibility of TH expression changes after sound exposure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "731166fc-2755-4788-b3bb-8e2453111ad2",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C37",
+      "claim": "Some LOC bouton terminals expressed TH around the time of tamoxifen injection, but no longer at the time of tissue harvesting.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed some LOC bouton terminals that were labeled for TH genetically, but not by immunostaining (n = 4 cochleas, 3 mice) (Figure 5F), suggesting that these terminals expressed TH around the time of tamoxifen injection, but no longer at the time of tissue harvesting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by genetic labeling experiments shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "20992974-a827-424f-879c-f0f43b899878",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C38",
+      "claim": "The TH+ LOC intrinsic neurons that innervate the basal region of the cochlea have a more stable TH expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, genetic labeling and TH immunolabeling often overlapped at the base, even when the times of tamoxifen injection and tissue harvesting were several weeks apart (Figure 5\u2014figure supplement 1C), suggesting that the TH+ LOC intrinsic neurons that innervate the basal region of the cochlea have a more stable TH expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by genetic labeling experiments shown in Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "1884adaa-e5bd-45cf-89ff-13a3761c60aa",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C39",
+      "claim": "The dynamic expression of TH can be found in a 'common' acoustic environment for laboratory mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the dynamic expression of TH can be found in a 'common' acoustic environment for laboratory mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the genetic labeling experiments in the institutional vivarium.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "0be9cf0c-2188-4034-9c16-06e634c3ce48",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C40",
+      "claim": "Spike rates in ANFs were significantly reduced by 39% on average in DA.",
+      "claim_type": "EXPLICIT",
+      "source": "Qualitatively similar to in vivo studies, spikes rates in ANFs were significantly reduced by 39% on average in DA (n = 22, Figure 6A, C and D), whereas no significant change occurred when switching to control solution (n = 23, Figure 6B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by loose-patch extracellular recording data shown in Figure 6A,C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "9b2baa4b-21e9-4829-bd56-99fffde87491",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C41",
+      "claim": "DA reduces the rate of synaptic events and decreases the percentage of EPSPs that activate APs.",
+      "claim_type": "EXPLICIT",
+      "source": "A representative current clamp recording demonstrates that DA (1 mM) reduces the rate of synaptic events and decreases the percentage of EPSPs (arrowhead) that activate APs (arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by current clamp recording data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "10e020df-c90a-499a-92c6-171b7f505b24",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C42",
+      "claim": "In DA, EPSC amplitude and EPSC area (charge) were significantly and reversibly reduced, by ~19 \u00b1 14% and by 19 \u00b1 9% (mean \u00b1 SD), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In DA, EPSC amplitude and EPSC area (charge) were significantly and reversibly reduced, by ~19 \u00b1 14% and by 19 \u00b1 9% (mean \u00b1 SD), respectively (Figure 6G\u2013H), whereas EPSC half-width remained unchanged (Figure 6\u2014figure supplement 1G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by voltage clamp recording data shown in Figure 6G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "68230770-9836-49a7-b151-0ead9c2684dc",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C43",
+      "claim": "EPSC half-width remained unchanged in DA.",
+      "claim_type": "EXPLICIT",
+      "source": "In DA, EPSC amplitude and EPSC area (charge) were significantly and reversibly reduced, by ~19 \u00b1 14% and by 19 \u00b1 9% (mean \u00b1 SD), respectively (Figure 6G\u2013H), whereas EPSC half-width remained unchanged (Figure 6\u2014figure supplement 1G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by voltage clamp recording data shown in Figure 6\u2014figure supplement 1G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "bbcec074-6e25-41de-bbc8-16c33ce199f2",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C44",
+      "claim": "The reduced EPSP amplitude/charge results in less effective activation of APs in DA.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that it is the reduced EPSP amplitude/charge that results in less effective activation of APs in DA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the voltage clamp data showing reduced EPSC amplitude and area.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "bf6a2fe0-70b6-4c54-89cc-f801c36d663d",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C45",
+      "claim": "DA application irreversibly reduced the rate of events by about half.",
+      "claim_type": "EXPLICIT",
+      "source": "DA application (1\u20132 mM) irreversibly reduced the rate of events by about half (median \u00b1IQR, control: 11.5 \u00b1 13.3 spikes/s, DA: 6.4 \u00b1 10.0 spikes/s, wash: 6.9 \u00b1 14.4 spikes/s; n = 13) (Figure 6E,F,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pooled data from current clamp and voltage clamp recordings shown in Figure 6I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "cdc0993f-988d-44ec-bd71-304b256926bf",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C46",
+      "claim": "The effect of DA on release rate was irreversible, whereas the effects on EPSC amplitude and area were reversible.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect of DA on release rate was irreversible, whereas the effects on EPSC amplitude and area were reversible, suggesting that DA operates via two different mechanisms that both contribute to reducing the ANF firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the reversibility of different DA effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "4658e318-7c5e-4134-b4bc-a53a61982b8a",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C47",
+      "claim": "DA reduces ANF firing via two mechanisms, one of which acts presynaptically and affects the release rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the electrophysiological data show that DA reduces ANF firing via two mechanisms, one of which acts presynaptically and affects the release rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the electrophysiological data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "c7e74f72-3d3d-4987-a4a5-ff5a49d29e78",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C48",
+      "claim": "Sound exposure regulates TH expression in LOC intrinsic neurons in a level-dependent and dynamic manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This study provides several lines of evidence that sound exposure regulates TH expression in LOC intrinsic neurons in a level-dependent and dynamic manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from multiple experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "4137665d-6901-43f5-89c4-776ed1c21866",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C49",
+      "claim": "Mice raised in a 'low noise' vivarium showed significantly less TH+ LOC terminals in the cochlea compared to mice raised in the noisier institutional facility.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice raised in a 'low noise' vivarium showed significantly less TH+ LOC terminals in the cochlea compared to mice raised in the noisier institutional facility (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing data from mice in different acoustic environments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "2d2c20f7-6a13-47f0-8de8-77797498289e",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C50",
+      "claim": "Damaging sound exposure increased the number of TH+ LOC neurons about 5-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Damaging sound exposure increased the number of TH+ LOC neurons about 5-fold, and a less damaging sound exposure protocol caused a smaller increase (~2 fold) in TH+ LOC neurons (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "7a5adb1e-7bb7-400a-8c67-1347588e53da",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C51",
+      "claim": "A less damaging sound exposure protocol caused a smaller increase (~2 fold) in TH+ LOC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Damaging sound exposure increased the number of TH+ LOC neurons about 5-fold, and a less damaging sound exposure protocol caused a smaller increase (~2 fold) in TH+ LOC neurons (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "d656bbe7-ba46-456a-ba63-139eda568296",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C52",
+      "claim": "3 weeks after the less damaging sound exposure, the ABR thresholds of the exposed mice partially returned to control levels, along with the number of TH+ LOC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 3 weeks after the less damaging sound exposure, the ABR thresholds of the exposed mice partially returned to control levels, along with the number of TH+ LOC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparing ABR and TH+ neuron count data at different time points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "a43465d9-70d4-4cf2-9cc1-31491e4064c8",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C53",
+      "claim": "Individual neurons expressed different levels of TH at different points in time in Th2a-CreER; Ai3 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In Th2a-CreER; Ai3 mice, a comparison of reporter protein expression and antibody labeling showed that individual neurons expressed different levels of TH at different points in time (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by genetic labeling experiments shown in Figure 5E (should be 5F based on the text).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "edb4225a-aceb-49c1-a40d-4fda43296331",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C54",
+      "claim": "Dopamine metabolites increased in the rat cochlea after sound exposure proportionally to sound intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, previous studies have shown that dopamine metabolites increased in the rat cochlea after sound exposure proportionally to sound intensity (Gil-Loyzaga et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gil-Loyzaga et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "c67efcd1-c398-4ca5-9b23-dd3b774f7b97",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C55",
+      "claim": "An increase in TH immunoreactivity was observed in the guinea pig cochlea after non-damaging sound conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, an increase in TH immunoreactivity was observed in the guinea pig cochlea after non-damaging sound conditioning (Niu et al., 2004; Niu and Canlon, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Niu et al., 2004 and Niu and Canlon, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "df9e94ca-d77d-4d4f-96a5-5cdfaf98cebc",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C56",
+      "claim": "Studies in guinea pig showed that damaging sound exposure down-regulated TH immunoreactivity in both cochlea and brainstem.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to what we observed, studies in guinea pig showed that damaging sound exposure down-regulated TH immunoreactivity in both cochlea and brainstem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous literature findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "f5f268ce-37c2-48a3-9e69-d8b59898e2ca",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C57",
+      "claim": "Dopaminergic LOC neurons in the guinea pig cochlea preferentially innervate the high frequency region.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, dopaminergic LOC neurons in the guinea pig cochlea preferentially innervate the high frequency region (Mulders and Robertson, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mulders and Robertson, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "01a8e994-06a4-4f0d-bf3e-47a4c06f57dd",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C58",
+      "claim": "After damaging noise exposure, a paradoxical decrease of innervation by TH+ terminal in the basal cochlear coil could be due to noise-induced damage to ANF terminals and subsequent loss of efferent innervation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, after damaging noise exposure, a paradoxical decrease of innervation by TH+ terminal in the basal cochlear coil was observed (Figure 4B). This could be due to noise-induced damage to ANF terminals and subsequent loss of efferent innervation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative explanation for the observed data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "1b56890c-81a3-4cde-a72e-856ef4996c8e",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C59",
+      "claim": "In the excised rat cochlea in vitro, dopamine reduces the firing rate of ANFs on average by ~40%.",
+      "claim_type": "EXPLICIT",
+      "source": "In the excised rat cochlea in vitro, dopamine reduces the firing rate of ANFs on average by ~40%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the electrophysiological findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "2030d09a-35f3-4e24-89d1-737c84aadda9",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C60",
+      "claim": "These data are qualitatively similar to previous results reporting reduced ANF firing when dopamine was perfused into the guinea pig inner ear in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are qualitatively similar to previous results reporting reduced ANF firing when dopamine was perfused into the guinea pig inner ear in vivo (Oestreicher et al., 1997; Ruel et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous literature supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "be628cda-38e3-477b-a37c-160e2aaff320",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C61",
+      "claim": "Dopamine reduces ANF firing rate by a reduction in the synaptic event rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The study here describes two mechanisms by which dopamine reduces ANF firing rate: (1) by a reduction in the synaptic event rate and (2) by a reduction in EPSC amplitude and area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the electrophysiological findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "4cbeea49-3829-48a5-ac1d-7ba36d800913",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C62",
+      "claim": "Dopamine reduces ANF firing rate by a reduction in EPSC amplitude and area.",
+      "claim_type": "EXPLICIT",
+      "source": "The study here describes two mechanisms by which dopamine reduces ANF firing rate: (1) by a reduction in the synaptic event rate and (2) by a reduction in EPSC amplitude and area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the electrophysiological findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "ef16862e-96c5-4625-a213-ae58c3f809e9",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C63",
+      "claim": "The reduction in event rate suggests a presynaptic mechanism; hair cell release is affected by dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) The reduction in event rate suggests a presynaptic mechanism; hair cell release is affected by dopamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the electrophysiological data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "6548520c-e032-41dc-9dc6-4f1cd46ea804",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C64",
+      "claim": "Such a presynaptic downregulation of afferent activity provides an unexpected but highly effective potential strategy for avoiding glutamate-induced excitotoxic effects on afferent endings in response to sound exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a presynaptic downregulation of afferent activity provides an unexpected but highly effective potential strategy for avoiding glutamate-induced excitotoxic effects on afferent endings in response to sound exposure (Kujawa and Liberman, 2009; Le Prell et al., 2003; Nouvian et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "325fad55-4220-4266-8a6a-730ad6963024",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C65",
+      "claim": "Dopamine receptor expression has not been found in mouse or rat IHCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, dopamine receptor expression has not been found in mouse or rat IHCs (Inoue et al., 2006; Maison et al., 2012), though they have been described in fish hair cells (Drescher et al., 2010; Perelmuter et al., 2019; Toro et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "ec941323-1aa1-4cd4-b14f-500fc3d4d6a0",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C66",
+      "claim": "The reduction in EPSC amplitude and area by dopamine highly likely reduces the EPSP amplitude/area and thereby a lower percentage of EPSPs may activate APs.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) The reduction in EPSC amplitude and area by dopamine highly likely reduces the EPSP amplitude/area and thereby a lower percentage of EPSPs may activate APs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the electrophysiological data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "592dd111-b76d-4b60-a84d-9840c2faf35a",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C67",
+      "claim": "Studies on guinea pigs and rats suggested that DA could affect ANF firing by decreasing sodium currents.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, studies on guinea pigs and rats suggested that DA could affect ANF firing by decreasing sodium currents (Oestreicher et al., 1997; Vald\u00e9s-Baizabal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "97eb36b2-d42e-43b6-b389-c68020814226",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C68",
+      "claim": "The LOC efferent terminals may contain D2 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, besides dopamine receptors on the ANFs, the LOC efferent terminals may contain D2 receptors (Inoue et al., 2006; Maison et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "54e0b3a2-53e7-40a8-bdbd-892800c992d0",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C69",
+      "claim": "In CBA/CaJ mice, dopaminergic LOC neurons were mainly identified as non-cholinergic shell neurons, located just outside of the boundaries of the LSO.",
+      "claim_type": "EXPLICIT",
+      "source": "In CBA/CaJ mice, dopaminergic LOC neurons were mainly identified as non-cholinergic shell neurons, located just outside of the boundaries of the LSO, suggesting that dopaminergic and cholinergic LOC neurons exist as separate groups (Darrow et al., 2006b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Darrow et al., 2006b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "c1e8ed5f-39c6-415c-b8f2-63614f1cd88c",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C70",
+      "claim": "TH expression is additionally found in a small percentage of cholinergic intrinsic neurons in the LSO in C57BL/6J mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, TH expression is additionally found in a small percentage of cholinergic intrinsic neurons in the LSO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "deca7c03-9b3a-4b75-a228-e5a7f4b176a1",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C71",
+      "claim": "The co-expression of TH and ChAT suggests that potentially both ACh and DA are being released from the same neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-expression of TH and ChAT suggests that potentially both ACh and DA are being released from the same neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the co-expression data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "6e7fb6da-6dad-4d3c-8f1b-58ee61d32d52",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C72",
+      "claim": "In vivo experiments in the guinea pig showed that cochlear perfusion of ACh increases ANF firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo experiments in the guinea pig showed that cochlear perfusion of ACh increases and DA decreases ANF firing rate (Arnold et al., 1998; d'Aldin et al., 1995; Felix and Ehrenberger, 1992; Garrett et al., 2011; Nouvian et al., 2015; Oestreicher et al., 1997; Ruel et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "3ec60054-7201-4ded-84a1-dd75dc4a427a",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C73",
+      "claim": "With the ability to actively adjust its relative dopaminergic versus cholinergic output, the LOC system may be able to fine-tune ANF activity in response to the sound environment.",
+      "claim_type": "EXPLICIT",
+      "source": "With the ability to actively adjust its relative dopaminergic versus cholinergic output, the LOC system may be able to fine-tune ANF activity in response to the sound environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "e1111967-d22f-4019-a610-c8374093af57",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C74",
+      "claim": "Cholinergic outputs dominate in a low noise environment and provide a basal level of positive modulation of ANF activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we hypothesize that cholinergic outputs dominate in a low noise environment and provide a basal level of positive modulation of ANF activity as cholinergic innervation is found all along the cochlear coil, independent of the sound environment; in animals raised in quiet as well as after sound exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "36c37a33-a839-48aa-8ef4-c4ded688b794",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C75",
+      "claim": "In response to sound exposure, DA is released additionally from cholinergic terminals in a frequency-dependent manner, to tune down ANF activity and adjust their sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to sound exposure, DA is released additionally from cholinergic terminals in a frequency-dependent manner, to tune down ANF activity and adjust their sensitivity, and, in the case of damaging sound exposure, to possibly prevent excitotoxic effects on ANF dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "2452e427-0ba8-4f45-88e7-f1b5951548ab",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C76",
+      "claim": "The immediate effect of LOC lesions could either result in an enhancement or in depression of ensemble ANF activity, which is probably due to differences in the output profile of LOC efferents at the time of the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The immediate effect of such lesions could either result in an enhancement (Darrow et al., 2007) or in depression (Le Prell et al., 2005) of ensemble ANF activity, which is probably due to differences in the output profile of LOC efferents at the time of the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of contradictory literature findings supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "af60fb55-bd98-4193-8b88-e7c42fc5a3c6",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C77",
+      "claim": "Chronic LOC lesioning reduced the basal positive tone provided by LOC efferents resulting in an overall decreased ANF spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic LOC lesioning reduced the basal positive tone provided by LOC efferents resulting in an overall decreased ANF spontaneous activity (Liberman, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Liberman, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "de9bf557-5f49-4211-bb19-87b60b7e7acb",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C78",
+      "claim": "When MPTP was used to disrupt dopaminergic LOC innervation in guinea pig, spontaneous ANF activity was also reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, when 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP) was used to disrupt dopaminergic LOC innervation in guinea pig, spontaneous ANF activity was also reduced (Le Prell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Le Prell et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "00c40f84-c99e-4dcf-b19d-8098cf08cee3",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C79",
+      "claim": "MPTP targeting dopaminergic LOC neurons could be explained by MPTP also targeting dopaminergic/cholinergic LOC neurons, and thereby reducing the cholinergic excitatory input onto ANFs.",
+      "claim_type": "EXPLICIT",
+      "source": "This result could be explained by MPTP also targeting dopaminergic/cholinergic LOC neurons, and thereby reducing the cholinergic excitatory input onto ANFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of previous literature findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "88444083-f59d-4d7a-b57c-5137282ad631",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C80",
+      "claim": "The first example of adult neuron neurotransmitter switching in response to sensory stimuli has been reported in the paraventricular and periventricular nucleus of the hypothalamus, where neurons switch their neurotransmitter from somatostatin to dopamine (TH+) after exposure to extended photoperiods.",
+      "claim_type": "EXPLICIT",
+      "source": "The first example of adult neuron neurotransmitter switching in response to sensory stimuli has been reported in the paraventricular and periventricular nucleus of the hypothalamus, where neurons switch their neurotransmitter from somatostatin to dopamine (TH+) after exposure to extended photoperiods (Dulcis et al., 2013; Meng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Dulcis et al., 2013 and Meng et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "8eb2b122-0847-49c2-a861-0586cc9bb723",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C81",
+      "claim": "The current study provides another example of sensory induced changes in neurotransmitter identity.",
+      "claim_type": "EXPLICIT",
+      "source": "The current study provides another example of sensory induced changes in neurotransmitter identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "7da53336-1f59-46c9-8f9c-5af67b6fc66f",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C82",
+      "claim": "LOC fibers operate with gain and loss of an additional neurotransmitter rather than complete switching.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, rather than switching, LOC fibers operate with gain and loss of an additional neurotransmitter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that cholinergic identity is maintained when TH is upregulated.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "904e22dd-a62e-473a-8244-098e46a033a4",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C83",
+      "claim": "Postsynaptic dopamine receptors seem to be expressed constantly on most ANF endings.",
+      "claim_type": "EXPLICIT",
+      "source": "However, here instead of a complete pre- and postsynaptic switch from one neurotransmitter system to another, the LOC efferent terminals that gain TH expression seem to retain their cholinergic identity (Figure 5\u2014figure supplement 1A) and postsynaptic dopamine receptors seem to be expressed constantly on most ANF endings (Maison et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Maison et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "1c821d3d-0e43-4db0-b617-843a210a5103",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C84",
+      "claim": "This arrangement allows the ANFs to respond immediately whenever DA is released.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement allows the ANFs to respond immediately whenever DA is released.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that dopamine receptors are constitutively expressed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "e2ae83cf-6f7b-4450-a2bf-b50e6328db02",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "claim_id": "C85",
+      "claim": "In the midshipman fish inner ear, seasonal changes of dopamine receptor expression on hair cells provide the main regulator for dopaminergic modulation of ANF activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a mechanism has been observed in the midshipman fish inner ear, where seasonal changes of dopamine receptor expression on hair cells provide the main regulator for dopaminergic modulation of ANF activities (Perelmuter et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Perelmuter et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7386df9d-4d43-4747-998a-21db13e2b846",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TH+ LOC efferent bouton terminals appear in distinct patches ('terminal regions') along the cochlear spiral, with a pattern established during postnatal development (weeks 1-3) and preferential coverage of the basal (high-frequency) region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are well-supported by immunostaining data in Figures 2 and 2\u2014figure supplement 1, showing the patchy distribution pattern, developmental timeline, and tonotopic bias. The observations are consistent with prior literature (Darrow et al., 2006b) and include appropriate quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "1f4036cf-8484-4cd8-905a-bcc15354b3f0",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TH+ bouton terminals in the cochlea are formed by cholinergic LOC intrinsic neurons that co-express tyrosine hydroxylase, as demonstrated by co-labeling with cholinergic markers (ChAT, VAChT) and morphological analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 are strongly supported by multiple complementary approaches shown in Figure 3: genetic labeling (ChatiresCre; Ai3), co-immunostaining with VAChT, sparse labeling showing intrinsic neuron morphology (Th2A-CreER; Ai9), and brainstem confirmation. The convergent evidence from peripheral and central labeling provides robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "441e5e10-55ed-4f03-8bb7-afdf96b89645",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sound exposure (2 hr at 110 dB SPL) dramatically increases TH+ terminal region coverage in the cochlea, with a ~5-fold increase in total coverage, frequency-specific upregulation in the apical half matching the noise band, but paradoxical decrease in the basal region (>60 kHz).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are supported by quantitative line plot analysis in Figure 4, comparing mice raised in low-noise versus institutional vivariums and control versus sound-exposed mice. Statistical analysis (GEE, linear mixed model) demonstrates significant changes. However, the paradoxical basal decrease (C26) lacks mechanistic explanation and warrants further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "ab7c6c76-844c-453a-a770-bd9b9cf06e2b",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sound exposure induces TH expression in previously TH-negative cholinergic LOC intrinsic neurons in the brainstem, with a ~5-fold increase in TH+ neuron number that matches the cochlear terminal region increase, while maintaining cholinergic identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 are well-supported by brainstem quantification (Figure 5A-D) and genetic labeling experiments (ChatiresCre; Ai9) showing TH upregulation in existing cholinergic neurons without change in total cholinergic neuron number. The maintenance of cholinergic phenotype (C32) is demonstrated by co-labeling at 7-10 days post-exposure (Figure 5\u2014figure supplement 1A-B).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "af53d409-4123-4a82-a9fb-cdd13bf761f2",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TH expression in LOC intrinsic neurons is dynamically regulated by sound in a level-dependent manner: less damaging exposure (5\u00d712 hr at 90 dB SPL) causes smaller increases (~2-fold) that reverse within 3 weeks, correlating with partial ABR threshold recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36, C48-C52 are supported by comparing two sound exposure protocols with different intensities and durations (Figure 5D, Figure 4\u2014figure supplement 1). The reversibility of TH upregulation parallels ABR threshold recovery, suggesting dynamic regulation. The comparison between low-noise and institutional vivarium environments (C49) provides additional support for acoustic experience-dependent regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "c69a3436-e038-48f0-85d3-639ed84ab9a6",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Individual LOC neurons dynamically express TH at different time points, as demonstrated by temporal mismatch between genetic labeling and immunostaining, with more stable expression in basal-projecting neurons and dynamic expression in apical-projecting neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39, C53 are supported by genetic fate-mapping experiments using Th2A-CreER; Ai3 mice (Figure 5F, Figure 5\u2014figure supplement 1C), showing terminals labeled genetically but not by immunostaining (indicating past TH expression) versus persistent co-labeling in the base. This provides direct evidence for temporal dynamics of TH expression in individual neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "d31cb16c-be69-4c56-93f4-c5797cd654ed",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Dopamine reduces auditory nerve fiber (ANF) firing rates by approximately 39-40% in vitro, as measured by loose-patch extracellular recordings from rat cochlear preparations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C59 are supported by electrophysiological data in Figure 6A-D, with appropriate controls showing no effect of vehicle solution. The sample size (n=22 for DA, n=23 for control) is adequate, and statistical analysis (Friedman test) demonstrates significance. Results are qualitatively consistent with prior in vivo studies (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "fab62377-434f-40bd-8405-518ecfc44139",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dopamine reduces EPSC amplitude and area by ~19% (reversibly) without changing half-width, likely reducing EPSP amplitude/charge and thereby decreasing the percentage of EPSPs that trigger action potentials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44, C66 are supported by voltage clamp recordings (Figure 6E-H, Figure 6\u2014figure supplement 1). The reversibility of the effect and unchanged half-width argue against simple desynchronization. However, the sample size for current clamp recordings distinguishing EPSPs from APs is very small (n=3), limiting confidence in the mechanistic interpretation (C41, C44).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "a14f8baa-9b07-4432-9922-5d716fa48d77",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Dopamine reduces ANF firing through two distinct mechanisms: (1) irreversible reduction in synaptic event rate by ~50% (presynaptic), and (2) reversible reduction in EPSC amplitude/area by ~19% (pre- and/or postsynaptic).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47, C61-C63 are supported by pooled analysis from current and voltage clamp recordings (Figure 6I). The differential reversibility of the two effects suggests distinct mechanisms. However, the presynaptic interpretation (C63) is inferential, as dopamine receptors have not been found on rodent IHCs (C65), and alternative mechanisms (retrograde messengers) are not tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "89d4d002-84fc-4b34-8be3-0dc44731af62",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sound exposure induces co-expression of TH in cholinergic LOC intrinsic neurons, suggesting potential co-release of ACh and DA from the same neurons, enabling dynamic adjustment of the dopaminergic/cholinergic output ratio to fine-tune ANF activity in response to acoustic environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C2, C70 are well-supported by data showing TH upregulation in cholinergic neurons. However, claims C3, C5, C71, C73-C75, C82 regarding co-release and functional consequences are largely speculative. While co-expression of synthetic enzymes (TH and ChAT) is demonstrated, actual co-release of both transmitters is not directly shown. The functional model of dynamic output adjustment is a reasonable hypothesis but requires validation through direct measurement of transmitter release and receptor activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "df800932-ec1a-44b6-81b4-9e9f5c8fcfef",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior studies in guinea pig and rat show that sound exposure affects dopaminergic systems in the cochlea, though with some contradictory findings regarding the direction of change after damaging versus conditioning sound exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 accurately cite and summarize prior literature. The authors appropriately note the discrepancy between their findings (upregulation after damaging noise) and some guinea pig studies showing downregulation, suggesting potential species differences or methodological factors (anesthesia).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "010fa804-1125-49e1-a6a5-ab60ba1ea606",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The presynaptic reduction in release rate by dopamine may provide a protective mechanism against glutamate-induced excitotoxicity during sound exposure, though the paradoxical decrease in basal TH+ terminals after damaging noise may reflect noise-induced damage to ANF terminals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64 and C58 are speculative interpretations. While the protective hypothesis (C64) is plausible and supported by citations to excitotoxicity literature, it is not directly tested. The explanation for the paradoxical basal decrease (C58) is also speculative and requires validation through assessment of ANF terminal integrity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "b40fd9f4-c096-450d-bfd1-8c74931bee3b",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The dynamic neurochemical profile of LOC efferents may explain contradictory results from prior LOC lesion studies, where effects on ANF activity varied depending on the LOC output profile at the time of lesioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C79 provide a reasonable reinterpretation of prior contradictory literature in light of the current findings. However, this remains speculative without direct testing. The explanation for MPTP effects (C78-C79) assumes the drug targets dopaminergic/cholinergic neurons, which is plausible but not demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "7938d1a4-6300-4f20-bd82-b50877741845",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study provides an example of sensory-induced neurotransmitter plasticity in adult neurons, distinct from complete neurotransmitter switching, where LOC neurons gain/lose dopaminergic capacity while maintaining cholinergic identity and constitutive postsynaptic dopamine receptor expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 appropriately contextualize the findings within the neurotransmitter plasticity literature. Claims C83-C84 regarding constitutive dopamine receptor expression are supported by citation (Maison et al., 2012). The distinction from complete switching (C82) is supported by data showing maintained cholinergic identity (C32). However, the functional implications (C84) are inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "185c9f3e-ac25-4f41-ba6f-bd54b6fae4c6",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background information on LOC neuron anatomy, neurochemistry, and function, including their synaptic location, neurotransmitter diversity, and prior evidence for sound-dependent plasticity and protective effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C15 accurately summarize established knowledge about LOC neurons, appropriately supported by citations. These provide necessary context for the study but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    },
+    {
+      "id": "e5f83dd9-0109-4354-9749-90e8ade1795c",
+      "content_id": "1063a269-c92b-468b-8280-ef33ea89e92f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior literature on dopamine and acetylcholine effects on ANF activity, dopamine receptor expression and localization, and species differences in LOC neurochemistry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C65, C67-C69, C72 accurately cite and summarize relevant prior literature on neurotransmitter effects and receptor expression. These provide important context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:47:49.429283Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f16dc73c-fe88-43e3-8a9d-1feaee65fa81",
+      "result_id": "7386df9d-4d43-4747-998a-21db13e2b846"
+    },
+    {
+      "claim_id": "1db6fea6-c403-483c-9b19-7c5fbf2cd80b",
+      "result_id": "7386df9d-4d43-4747-998a-21db13e2b846"
+    },
+    {
+      "claim_id": "e9753b4b-4f78-4269-b2a4-355638d57344",
+      "result_id": "7386df9d-4d43-4747-998a-21db13e2b846"
+    },
+    {
+      "claim_id": "0ecddd87-9027-430d-a193-7d24ccb3c852",
+      "result_id": "1f4036cf-8484-4cd8-905a-bcc15354b3f0"
+    },
+    {
+      "claim_id": "645c4578-c23f-42b5-bd0c-8e044176bb2f",
+      "result_id": "1f4036cf-8484-4cd8-905a-bcc15354b3f0"
+    },
+    {
+      "claim_id": "cf35cd74-2b35-45b7-8068-a529122c9c88",
+      "result_id": "1f4036cf-8484-4cd8-905a-bcc15354b3f0"
+    },
+    {
+      "claim_id": "c141e801-b1af-42cb-9366-43c57a3e4ec6",
+      "result_id": "1f4036cf-8484-4cd8-905a-bcc15354b3f0"
+    },
+    {
+      "claim_id": "1ab6f0e2-a16c-42f2-b9d7-e2db65d83940",
+      "result_id": "1f4036cf-8484-4cd8-905a-bcc15354b3f0"
+    },
+    {
+      "claim_id": "fba69baa-c97f-4a62-b9a7-4357e0ddbe90",
+      "result_id": "441e5e10-55ed-4f03-8bb7-afdf96b89645"
+    },
+    {
+      "claim_id": "15eb191a-caf4-4fc9-99d5-93a358ee7add",
+      "result_id": "441e5e10-55ed-4f03-8bb7-afdf96b89645"
+    },
+    {
+      "claim_id": "c2fe688b-fc49-4679-87fa-129fd19b1500",
+      "result_id": "441e5e10-55ed-4f03-8bb7-afdf96b89645"
+    },
+    {
+      "claim_id": "5fd1d39e-68b8-403b-84ee-453f65486932",
+      "result_id": "441e5e10-55ed-4f03-8bb7-afdf96b89645"
+    },
+    {
+      "claim_id": "62704114-5e29-4a62-94c0-aa6781b7fab5",
+      "result_id": "ab7c6c76-844c-453a-a770-bd9b9cf06e2b"
+    },
+    {
+      "claim_id": "f70e0ab8-80a5-4775-a5fd-e4b30a7924c1",
+      "result_id": "ab7c6c76-844c-453a-a770-bd9b9cf06e2b"
+    },
+    {
+      "claim_id": "ac6df7f7-ead3-4736-ac8a-e585a78de41d",
+      "result_id": "ab7c6c76-844c-453a-a770-bd9b9cf06e2b"
+    },
+    {
+      "claim_id": "36939883-7b7c-48cd-a8cc-9aba30dddb07",
+      "result_id": "ab7c6c76-844c-453a-a770-bd9b9cf06e2b"
+    },
+    {
+      "claim_id": "b79df191-068f-439c-944b-04f5277f6e7b",
+      "result_id": "ab7c6c76-844c-453a-a770-bd9b9cf06e2b"
+    },
+    {
+      "claim_id": "e4e7d161-13d1-4590-a31d-6f6e6f1d0760",
+      "result_id": "ab7c6c76-844c-453a-a770-bd9b9cf06e2b"
+    },
+    {
+      "claim_id": "54167ae8-d13d-43fd-ba2b-a68a27635bcf",
+      "result_id": "af53d409-4123-4a82-a9fb-cdd13bf761f2"
+    },
+    {
+      "claim_id": "8f45c8c0-5aca-42d8-b48e-1b41bb4336bb",
+      "result_id": "af53d409-4123-4a82-a9fb-cdd13bf761f2"
+    },
+    {
+      "claim_id": "b46a7b04-fce1-4f93-b505-b55d06cf8a27",
+      "result_id": "af53d409-4123-4a82-a9fb-cdd13bf761f2"
+    },
+    {
+      "claim_id": "c7e74f72-3d3d-4987-a4a5-ff5a49d29e78",
+      "result_id": "af53d409-4123-4a82-a9fb-cdd13bf761f2"
+    },
+    {
+      "claim_id": "4137665d-6901-43f5-89c4-776ed1c21866",
+      "result_id": "af53d409-4123-4a82-a9fb-cdd13bf761f2"
+    },
+    {
+      "claim_id": "2d2c20f7-6a13-47f0-8de8-77797498289e",
+      "result_id": "af53d409-4123-4a82-a9fb-cdd13bf761f2"
+    },
+    {
+      "claim_id": "7a5adb1e-7bb7-400a-8c67-1347588e53da",
+      "result_id": "af53d409-4123-4a82-a9fb-cdd13bf761f2"
+    },
+    {
+      "claim_id": "d656bbe7-ba46-456a-ba63-139eda568296",
+      "result_id": "af53d409-4123-4a82-a9fb-cdd13bf761f2"
+    },
+    {
+      "claim_id": "731166fc-2755-4788-b3bb-8e2453111ad2",
+      "result_id": "c69a3436-e038-48f0-85d3-639ed84ab9a6"
+    },
+    {
+      "claim_id": "20992974-a827-424f-879c-f0f43b899878",
+      "result_id": "c69a3436-e038-48f0-85d3-639ed84ab9a6"
+    },
+    {
+      "claim_id": "1884adaa-e5bd-45cf-89ff-13a3761c60aa",
+      "result_id": "c69a3436-e038-48f0-85d3-639ed84ab9a6"
+    },
+    {
+      "claim_id": "a43465d9-70d4-4cf2-9cc1-31491e4064c8",
+      "result_id": "c69a3436-e038-48f0-85d3-639ed84ab9a6"
+    },
+    {
+      "claim_id": "0be9cf0c-2188-4034-9c16-06e634c3ce48",
+      "result_id": "d31cb16c-be69-4c56-93f4-c5797cd654ed"
+    },
+    {
+      "claim_id": "1b56890c-81a3-4cde-a72e-856ef4996c8e",
+      "result_id": "d31cb16c-be69-4c56-93f4-c5797cd654ed"
+    },
+    {
+      "claim_id": "9b2baa4b-21e9-4829-bd56-99fffde87491",
+      "result_id": "fab62377-434f-40bd-8405-518ecfc44139"
+    },
+    {
+      "claim_id": "10e020df-c90a-499a-92c6-171b7f505b24",
+      "result_id": "fab62377-434f-40bd-8405-518ecfc44139"
+    },
+    {
+      "claim_id": "68230770-9836-49a7-b151-0ead9c2684dc",
+      "result_id": "fab62377-434f-40bd-8405-518ecfc44139"
+    },
+    {
+      "claim_id": "bbcec074-6e25-41de-bbc8-16c33ce199f2",
+      "result_id": "fab62377-434f-40bd-8405-518ecfc44139"
+    },
+    {
+      "claim_id": "ec941323-1aa1-4cd4-b14f-500fc3d4d6a0",
+      "result_id": "fab62377-434f-40bd-8405-518ecfc44139"
+    },
+    {
+      "claim_id": "bf6a2fe0-70b6-4c54-89cc-f801c36d663d",
+      "result_id": "a14f8baa-9b07-4432-9922-5d716fa48d77"
+    },
+    {
+      "claim_id": "cdc0993f-988d-44ec-bd71-304b256926bf",
+      "result_id": "a14f8baa-9b07-4432-9922-5d716fa48d77"
+    },
+    {
+      "claim_id": "4658e318-7c5e-4134-b4bc-a53a61982b8a",
+      "result_id": "a14f8baa-9b07-4432-9922-5d716fa48d77"
+    },
+    {
+      "claim_id": "be628cda-38e3-477b-a37c-160e2aaff320",
+      "result_id": "a14f8baa-9b07-4432-9922-5d716fa48d77"
+    },
+    {
+      "claim_id": "4cbeea49-3829-48a5-ac1d-7ba36d800913",
+      "result_id": "a14f8baa-9b07-4432-9922-5d716fa48d77"
+    },
+    {
+      "claim_id": "ef16862e-96c5-4625-a213-ae58c3f809e9",
+      "result_id": "a14f8baa-9b07-4432-9922-5d716fa48d77"
+    },
+    {
+      "claim_id": "43f80a0e-3ec5-49f6-a794-c82f9d636cb5",
+      "result_id": "89d4d002-84fc-4b34-8be3-0dc44731af62"
+    },
+    {
+      "claim_id": "fc88a52f-e1a1-4276-8c58-8d7fe2a59ec0",
+      "result_id": "89d4d002-84fc-4b34-8be3-0dc44731af62"
+    },
+    {
+      "claim_id": "92e99c22-d548-4ecd-9dc9-a4d6fdc52a7f",
+      "result_id": "89d4d002-84fc-4b34-8be3-0dc44731af62"
+    },
+    {
+      "claim_id": "c1e8ed5f-39c6-415c-b8f2-63614f1cd88c",
+      "result_id": "89d4d002-84fc-4b34-8be3-0dc44731af62"
+    },
+    {
+      "claim_id": "deca7c03-9b3a-4b75-a228-e5a7f4b176a1",
+      "result_id": "89d4d002-84fc-4b34-8be3-0dc44731af62"
+    },
+    {
+      "claim_id": "3ec60054-7201-4ded-84a1-dd75dc4a427a",
+      "result_id": "89d4d002-84fc-4b34-8be3-0dc44731af62"
+    },
+    {
+      "claim_id": "e1111967-d22f-4019-a610-c8374093af57",
+      "result_id": "89d4d002-84fc-4b34-8be3-0dc44731af62"
+    },
+    {
+      "claim_id": "36c37a33-a839-48aa-8ef4-c4ded688b794",
+      "result_id": "89d4d002-84fc-4b34-8be3-0dc44731af62"
+    },
+    {
+      "claim_id": "7da53336-1f59-46c9-8f9c-5af67b6fc66f",
+      "result_id": "89d4d002-84fc-4b34-8be3-0dc44731af62"
+    },
+    {
+      "claim_id": "edb4225a-aceb-49c1-a40d-4fda43296331",
+      "result_id": "df800932-ec1a-44b6-81b4-9e9f5c8fcfef"
+    },
+    {
+      "claim_id": "c67efcd1-c398-4ca5-9b23-dd3b774f7b97",
+      "result_id": "df800932-ec1a-44b6-81b4-9e9f5c8fcfef"
+    },
+    {
+      "claim_id": "df9e94ca-d77d-4d4f-96a5-5cdfaf98cebc",
+      "result_id": "df800932-ec1a-44b6-81b4-9e9f5c8fcfef"
+    },
+    {
+      "claim_id": "f5f268ce-37c2-48a3-9e69-d8b59898e2ca",
+      "result_id": "df800932-ec1a-44b6-81b4-9e9f5c8fcfef"
+    },
+    {
+      "claim_id": "6548520c-e032-41dc-9dc6-4f1cd46ea804",
+      "result_id": "010fa804-1125-49e1-a6a5-ab60ba1ea606"
+    },
+    {
+      "claim_id": "01a8e994-06a4-4f0d-bf3e-47a4c06f57dd",
+      "result_id": "010fa804-1125-49e1-a6a5-ab60ba1ea606"
+    },
+    {
+      "claim_id": "2452e427-0ba8-4f45-88e7-f1b5951548ab",
+      "result_id": "b40fd9f4-c096-450d-bfd1-8c74931bee3b"
+    },
+    {
+      "claim_id": "af60fb55-bd98-4193-8b88-e7c42fc5a3c6",
+      "result_id": "b40fd9f4-c096-450d-bfd1-8c74931bee3b"
+    },
+    {
+      "claim_id": "de9bf557-5f49-4211-bb19-87b60b7e7acb",
+      "result_id": "b40fd9f4-c096-450d-bfd1-8c74931bee3b"
+    },
+    {
+      "claim_id": "00c40f84-c99e-4dcf-b19d-8098cf08cee3",
+      "result_id": "b40fd9f4-c096-450d-bfd1-8c74931bee3b"
+    },
+    {
+      "claim_id": "88444083-f59d-4d7a-b57c-5137282ad631",
+      "result_id": "7938d1a4-6300-4f20-bd82-b50877741845"
+    },
+    {
+      "claim_id": "8eb2b122-0847-49c2-a861-0586cc9bb723",
+      "result_id": "7938d1a4-6300-4f20-bd82-b50877741845"
+    },
+    {
+      "claim_id": "7da53336-1f59-46c9-8f9c-5af67b6fc66f",
+      "result_id": "7938d1a4-6300-4f20-bd82-b50877741845"
+    },
+    {
+      "claim_id": "904e22dd-a62e-473a-8244-098e46a033a4",
+      "result_id": "7938d1a4-6300-4f20-bd82-b50877741845"
+    },
+    {
+      "claim_id": "1c821d3d-0e43-4db0-b617-843a210a5103",
+      "result_id": "7938d1a4-6300-4f20-bd82-b50877741845"
+    },
+    {
+      "claim_id": "e2ae83cf-6f7b-4450-a2bf-b50e6328db02",
+      "result_id": "7938d1a4-6300-4f20-bd82-b50877741845"
+    },
+    {
+      "claim_id": "791799f9-ad9d-4340-966b-052914d34d7a",
+      "result_id": "185c9f3e-ac25-4f41-ba6f-bd54b6fae4c6"
+    },
+    {
+      "claim_id": "aea0983a-b4d1-4886-b636-15ca35817bb4",
+      "result_id": "185c9f3e-ac25-4f41-ba6f-bd54b6fae4c6"
+    },
+    {
+      "claim_id": "7f37fc75-6785-42c8-b409-e335822070b8",
+      "result_id": "185c9f3e-ac25-4f41-ba6f-bd54b6fae4c6"
+    },
+    {
+      "claim_id": "308cb32b-d536-4a88-927f-445cb84a2b10",
+      "result_id": "185c9f3e-ac25-4f41-ba6f-bd54b6fae4c6"
+    },
+    {
+      "claim_id": "9c4a4ca6-d37c-4683-af57-27319a2252b3",
+      "result_id": "185c9f3e-ac25-4f41-ba6f-bd54b6fae4c6"
+    },
+    {
+      "claim_id": "3b91a46f-41c5-4d4a-b58b-eb07fc89c228",
+      "result_id": "185c9f3e-ac25-4f41-ba6f-bd54b6fae4c6"
+    },
+    {
+      "claim_id": "9e8a7ea6-4fe8-4615-a504-9fe194d7cc3a",
+      "result_id": "185c9f3e-ac25-4f41-ba6f-bd54b6fae4c6"
+    },
+    {
+      "claim_id": "259d75b1-daff-4c4c-9e8c-848cfd2a9eae",
+      "result_id": "185c9f3e-ac25-4f41-ba6f-bd54b6fae4c6"
+    },
+    {
+      "claim_id": "5e119e28-2d45-4bfa-b586-0fab68d8291b",
+      "result_id": "185c9f3e-ac25-4f41-ba6f-bd54b6fae4c6"
+    },
+    {
+      "claim_id": "fd6bee9e-bac6-489d-ba05-2db21ac392c1",
+      "result_id": "185c9f3e-ac25-4f41-ba6f-bd54b6fae4c6"
+    },
+    {
+      "claim_id": "1f2ad9c3-8eef-4d15-aa5b-16fbb9875922",
+      "result_id": "185c9f3e-ac25-4f41-ba6f-bd54b6fae4c6"
+    },
+    {
+      "claim_id": "2030d09a-35f3-4e24-89d1-737c84aadda9",
+      "result_id": "e5f83dd9-0109-4354-9749-90e8ade1795c"
+    },
+    {
+      "claim_id": "325fad55-4220-4266-8a6a-730ad6963024",
+      "result_id": "e5f83dd9-0109-4354-9749-90e8ade1795c"
+    },
+    {
+      "claim_id": "592dd111-b76d-4b60-a84d-9840c2faf35a",
+      "result_id": "e5f83dd9-0109-4354-9749-90e8ade1795c"
+    },
+    {
+      "claim_id": "97eb36b2-d42e-43b6-b389-c68020814226",
+      "result_id": "e5f83dd9-0109-4354-9749-90e8ade1795c"
+    },
+    {
+      "claim_id": "54e0b3a2-53e7-40a8-bdbd-892800c992d0",
+      "result_id": "e5f83dd9-0109-4354-9749-90e8ade1795c"
+    },
+    {
+      "claim_id": "6e7fb6da-6dad-4d3c-8f1b-58ee61d32d52",
+      "result_id": "e5f83dd9-0109-4354-9749-90e8ade1795c"
+    }
+  ],
+  "comparisons": []
+}

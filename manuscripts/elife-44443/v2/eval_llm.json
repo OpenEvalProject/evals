@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A robust 'positive-negative' spectrum of behavioral and demographic variates can be identified using only structural brain features. Component 6 shows strong associations across 48 behavioral measures and all structural modalities, with spatial patterns including orbitofrontal cortex, temporal pole, lingual gyrus, putamen, and white matter tracts connecting subcortical and prefrontal areas. This structural mode closely resembles the 'positive-negative' behavioral spectrum previously identified using functional MRI data from the same HCP cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C16, C20-C27 collectively demonstrate that structural brain features strongly associate with behavioral/demographic variates in a pattern resembling the functional 'positive-negative' mode. The multi-modal Linked-ICA analysis (N=448) identified component 6 with significant correlations to 48 behavioral measures across all structural modalities (VBM 22%, MD 23%, MO 20%, FA 15%, CT 7%, JD 6%, PA 4%), with appropriate statistical corrections (FDR q<2.2\u00d710\u207b\u2074). The spatial patterns and behavioral associations are well-documented with supporting figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C60"
+    ],
+    "result": "The structural mode (component 6) and the functional 'positive-negative' mode from Smith et al. (2015) are significantly correlated (r=0.46, p<10\u207b\u2075). Of the 60 functional-behavioral relationships identified in the functional mode, 22 behavioral measures are also associated with the structural mode, with no significant difference in correlation values between functional and structural analyses at these intersecting measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C60 demonstrate significant overlap between structural and functional modes using appropriate statistical methods (permutation testing with N=421 overlapping subjects). The correlation of r=0.46 (r\u00b2=0.21) is moderate and statistically significant. The replication of 60 functional-behavioral relationships and identification of 22 overlapping measures with comparable correlation strengths provides strong evidence for the relationship between structural and functional modes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "When the structural mode is regressed from the functional mode, 73% of the 60 functional-behavioral associations are removed, leaving only 16 significant relationships involving measures such as handedness, education, tobacco use, list sorting, delay discount, and intelligence. This demonstrates that many associations previously attributed to functional connectivity are already present at the structural level, though not all functional associations can be explained by structural differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C68-C70 describe residualization analysis results showing that structural variation accounts for most (73%) but not all functional-behavioral associations. The mean correlation decrease of 0.078 (p<0.01) and specific remaining associations are clearly reported. This bidirectional finding (structural explains functional, but not completely) is appropriately interpreted as evidence for both overlap and specialization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Combined structural-functional Linked-ICA analysis recovered the positive-negative mode (component 16, r=0.89 with structural component 6, p<10\u207b\u2075), with functional data contributing only 0.0012% to the mode while structural features maintained similar contributions as in structural-only analyses. This suggests that structure alone can explain the positive-negative behavioral mode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 demonstrate that when functional and structural data are analyzed together, the positive-negative mode is recovered with negligible functional contribution (0.0012%). The high correlation (r=0.89) between this combined mode and the original structural mode, along with maintained structural feature contributions, provides strong evidence that structural features dominate this behavioral mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C79"
+    ],
+    "result": "Causal analysis revealed significant structure-to-function causation, with the likelihood of structural mode causally influencing functional mode being >20 times higher than reverse causation (likelihood ratio ~0.04, p<0.0025). This was replicated in an independent HCP1200 sample (likelihood ratio ~0.09, p<0.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56, C79 report causal analysis results using the Hyvarinen and Smith (2013) method. While the statistical results are clearly stated and replicated, the authors themselves acknowledge that 'hidden causation' from unobserved processes cannot be excluded. The causal interpretation is further complicated by the fact that structural data necessarily enters functional analysis pipelines through co-registration, creating a methodological confound. The replication strengthens the finding, but the fundamental limitations of causal inference from observational cross-sectional data remain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Reverse residualization analysis (regressing functional from structural mode) leaves only 7 of 48 structural associations significant, suggesting segregation of structural and functional specializations toward different behavioral measures, with intelligence more related to brain function and antisocial/relational task measures more strongly related to brain structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 describe the reverse residualization analysis showing asymmetric relationships between structural and functional modes. The reduction from 48 to 7 significant associations when functional variation is removed from structural mode, compared to 16 remaining when structural is removed from functional, suggests differential specialization. However, the interpretation of specific behavioral measures (intelligence vs. antisocial behavior) is based on which measures survive residualization and should be considered preliminary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Multiple additional components (1, 2, 7, 20, 24, 25, 29, 55, 89) show significant brain-behavior associations, primarily relating to demographic variables such as gender, age, height, weight, body mass, and hematocrit, with spatial patterns in regions including temporal lobes, cingulate gyrus, insular cortex, putamen, thalamus, cerebellum, and brainstem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C41 describe additional components with significant brain-behavior correlations beyond the main positive-negative mode. These findings are clearly reported with specific anatomical locations and behavioral associations. The associations with basic demographic variables (gender, body size measures) are biologically plausible and consistent with known brain-body relationships. Statistical significance is established through the same rigorous FDR and Bonferroni corrections applied to all components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Multi-modal structural brain data analysis using Linked-ICA resulted in 100 component collections, with post-hoc correlation analyses identifying 155 significant brain-behavior correlations (FDR corrected q<2.2\u00d710\u207b\u2074) summarized by 30 components showing at least one significant relationship to behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 report the primary analytical results with clear statistical thresholds. The Linked-ICA decomposition into 100 components is justified by sample size (N=448) and prior literature. The identification of 155 significant correlations across 30 components using appropriate multiple comparison corrections (FDR and Bonferroni) is methodologically sound. The dimensionality choice is further validated by robustness analyses at different model orders (C42).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C67"
+    ],
+    "result": "Robustness analyses demonstrate that component 6 is recovered at different dimensionalities (90 and 110) with high correlation (r~0.9), that excluding Jacobian determinants leaves brain-behavior associations essentially unaltered, and that morphometric differences alone do not fully account for the positive-negative structural mode, confirming that structural features relating to the behavioral mode are not uniquely driven by morphometric differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C67 describe robustness analyses that strengthen the main findings. The replication of component 6 across different model orders with r~0.9 demonstrates stability. The analysis excluding JD features and the isolated JD analysis together show that the positive-negative mode is not solely driven by morphometric differences, though the isolated JD analysis showing no fully corrected significant associations suggests morphometric information may contribute at uncorrected thresholds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C57",
+      "C58"
+    ],
+    "result": "The spatial organization of component 6 includes regions relevant to working memory and word processing (putamen, lingual gyrus), and structural connections between subcortical-prefrontal areas and orbitofrontal cortex-temporal poles that could explain links to complex functions such as emotional support and life satisfaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C57-C58 provide neuroanatomical interpretation of component 6 spatial patterns. The involvement of putamen and lingual gyrus in working memory and language is supported by citations (Mechelli et al., 2000; Arsalidou et al., 2013). The interpretation linking orbitofrontal cortex and temporal pole connections to emotional support and life satisfaction is more speculative but reasonable given known functional neuroanatomy. The spatial patterns are clearly visualized in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The structural mode relates to findings from Finn et al. (2015) by identifying fluid intelligence measures and augments the functional 'positive-negative' spectrum with additional working memory, language, relational task, ASR and DSM measures. White matter structure variations could contribute to functional connectivity changes in the Default Mode Network, though there is no clear spatial overlap between structural and cortical functional extents, suggesting integrated analyses should increase sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C61-C65 compare current findings to prior functional MRI studies. The overlap with Finn et al. (2015) and extension of Smith et al. (2015) findings are supported by the data. The speculation about white matter contributions to DMN functional connectivity (C63) is reasonable given the strong DWI weighting in component 6, though it remains speculative. The lack of spatial overlap (C64) is clearly stated, and the suggestion for integrated analyses (C65) is a logical inference from the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The findings raise questions about whether functional connectivity measures are biased by individual structural differences that become visible in cross-subject analyses. Structural variations enter as mediating factors in functional analysis pipelines through co-registration, while there is no reverse influence of functional variations on structural measures. Future work should focus on robustifying functional MRI analysis regarding cross-subject structural variations through advanced alignment procedures or structure-invariant functional measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C71-C74, C80-C83 discuss methodological implications and limitations. The observation that structural data enters functional pipelines as a mediator (C80) is factually correct and important. The asymmetry between structural and functional analysis pipelines (C81) is accurately described. The acknowledgment of potential non-linear relationships (C74) and the call for improved methods (C82) are appropriate. These interpretations are cautious and well-reasoned, though some (C66, C83) are necessarily speculative about future implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The study uses data from the Human Connectome Project N=500 release containing healthy young adults including twins and non-twin siblings, with each subject participating in structural, diffusion, and functional MRI recordings plus over 300 behavioral/demographic tests. After excluding subjects with abnormalities, N=448 subjects were analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 describe the study sample and data sources. The use of HCP N=500 data is clearly stated with appropriate citations. The sample characteristics (healthy young adults, family structure) and exclusion criteria are documented. The final sample size of N=448 from initial N=500 represents reasonable quality control, though specific exclusion criteria are not detailed in the main text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The study employed Linked-ICA (extension of Bayesian ICA with shared mixing matrix) for 100-dimensional factorization, used Permutation Analysis of Linear Models (PALM) with 10\u2076 permutations to account for family structure, and applied both FDR correction (q<2.2\u00d710\u207b\u2074) and Bonferroni correction (q<1.4\u00d710\u207b\u2076) for multiple comparisons at p<0.05 significance threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 describe the analytical methods with appropriate detail and citations. The use of Linked-ICA is well-justified for multi-modal integration. The choice of 100 dimensions is supported by prior literature and sample size considerations. The use of PALM to account for family structure is appropriate and important given the twin/sibling composition of HCP. The application of both FDR and Bonferroni corrections is conservative and appropriate for the multiple testing burden.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Historical and contemporary context: The first quantitative approach relating skull measures to behavior dates to the 19th century, while technical advances now allow accurate brain structure and function quantification. Recent functional connectivity studies have shown that patterns can identify individuals, predict fluid intelligence, and describe modes of variation relating to lifestyle, happiness, and well-being.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 provide historical and contemporary context with appropriate citations. The historical claim about 19th century phrenology (C2) is supported by Simpson (2005) and Fodor (1983). The claims about modern neuroimaging capabilities (C3) and recent functional connectivity findings (C4-C6) are all supported by appropriate citations to Finn et al. (2015) and Smith et al. (2015). These are accurate representations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "The authors hypothesized that different brain structural features should reflect relationships with long-term demographic variables, and that behavioral variations can be explained by more general brain structure variations than isolated single feature variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 state the study's hypotheses, which are clearly articulated and testable. These hypotheses are reasonable given the long-term stability of structural features compared to functional measures, and they motivate the multi-modal analytical approach. The hypotheses are subsequently tested and supported by the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Linked ICA increases statistical power through evidence integration across features and has been shown to identify correlated patterns of structural and diffusion variation related to behavioral/demographic measures. The study benefits from analyzing ~500 healthy young adults, which reduces pathology- and age-related variance and increases power to detect associations due to normal cross-sectional variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 justify the methodological approach and sample characteristics. The claims about Linked-ICA's power (C9-C10) are supported by appropriate citations. The rationale for using healthy young adults (C11-C12) is sound: restricting age and health status reduces confounding variance and increases power for detecting individual differences, though it also limits generalizability to other age groups and clinical populations.",
+    "result_type": "MINOR"
+  }
+]

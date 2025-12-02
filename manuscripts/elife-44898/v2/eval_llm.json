@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C24",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C65",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Synchrotron-based X-ray micro-CT was optimized for whole-organism imaging of zebrafish at ~1 micron voxel resolution. Beam energies (13.8 keV for larvae, 16.2 keV for juveniles) and sample-to-scintillator distance (30 mm) were systematically optimized using analytical models and empirical testing to maximize contrast-to-noise ratio and achieve histology-like edge enhancement through phase contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23-C24, C48-C53, C113-C131 collectively describe a systematic optimization of imaging parameters with both theoretical modeling (C117-C118) and empirical validation (C124-C130). The energy optimization used established physical models (C113-C116) and the phase contrast optimization was validated with quantitative line profile analysis (C130). The final parameters (C119, C121, C131) are justified by the optimization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C159",
+      "C160"
+    ],
+    "result": "Synchrotron micro-CT achieves dramatically faster acquisition times compared to commercial systems: monochromatic acquisitions take ~20 min (~36-fold faster than commercial sources), while pink-beam acquisitions take ~20 s (~2,000-fold faster). Monochromatic acquisitions provide superior image quality as measured by signal-to-noise ratio and pixel intensity profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 provide quantitative comparisons of acquisition speed and image quality with reference to supporting data (Figure 1\u2014figure supplement 3). The speed improvements are substantial and well-documented. Claim C28 adds that samples are stable over repeated imaging. The throughput advantage is a key technical achievement enabling the proposed applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C70",
+      "C77",
+      "C88"
+    ],
+    "result": "Histotomography achieves isotropic resolution of 0.74-1.43 \u03bcm, superior to traditional histology's ~5 \u03bcm z-axis resolution. This resolution is sufficient to distinguish neighboring cells, resolve nuclear morphologies, and measure sarcomere spacing (2.16 \u00b1 0.55 \u03bcm, n=293), which agrees with published values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 provide quantitative resolution measurements validated against known biological structures (sarcomere spacing) with good agreement to literature values (C30 cites Burghardt et al., 2016; Dou et al., 2008). Claims C70, C77, C88 describe functional capabilities enabled by this resolution. The biological validation (C30) provides strong evidence that the stated resolution is achieved in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C31",
+      "C44",
+      "C47",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94"
+    ],
+    "result": "Automated computational methods enable segmentation of brain nuclei and assignment to brain regions, as well as quantification of cell shapes and volumes for different cell types. A supervised random forest classifier achieved ~90% F1 score for automated nucleus detection compared to manual annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C44, C61-C62, C82-C91, C93-C94 describe a complete computational pipeline with quantitative validation. The ~90% F1 score (C44) demonstrates good agreement between automated and manual detection. The methods are described in sufficient detail (C61-C62, C90-C91) and validated against manual annotation (C89, C94). Cell type discrimination is supported by quantitative morphological measurements (C83-C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C4"
+    ],
+    "result": "Quantitative analysis of brain nuclei across five wild-type larval zebrafish revealed substantial individual phenotypic variation. The average brain contained 75,413 \u00b1 8,547 nuclei, and heat-maps of cell densities showed obvious differences between siblings, with fish 1 and 2 exhibiting lower cell density correlating with larger brain volumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C34-C35 provide quantitative measurements of cell counts and density patterns across multiple individuals (n=5). The correlation between cell density and brain volume (C35) is supported by reference to Tables 2-3. Claim C36 offers a reasonable speculation about developmental stage. This demonstrates the method's capability to detect biological variation, though the sample size is small for drawing broad conclusions about normal variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Histotomography successfully detected all known histopathological features in the huli hutu mutant, including nuclear fragmentation (karyorrhexis), nuclear atypia, tissue degeneration, and absence of the pneumatic duct\u2014a structure that cannot be reliably assessed by traditional histology due to its small size and tortuous shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C74-C76 demonstrate the method's capability for histopathological analysis. The detection of known features in the huli hutu mutant (C31, C74) validates the approach against established phenotypes. The ability to assess the pneumatic duct (C76) demonstrates an advantage over traditional histology. However, this is a single mutant example, and broader validation across diverse pathologies would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Histotomography enables comprehensive 3D analysis of complex, convoluted structures across multiple tissue planes without physical sectioning. The isotropic resolution allows dynamic reslicing in any orientation, enabling complete cross-sectional analysis of structures like the gut, gills, and vessels that would be impractical with traditional histology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21, C77-C81 describe key advantages of the 3D isotropic imaging approach. The ability to reslice in any plane (C77-C78) and analyze convoluted structures (C79) is well-demonstrated with specific examples (C80-C81). Claim C79's assertion of being 'unprecedented' is strong but reasonable given the combination of resolution, field-of-view, and 3D capability. The examples provided (Figures 4-5) support these capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C45",
+      "C46"
+    ],
+    "result": "Quantitative measurements of cell morphology show that RBCs, motor neurons, and brain nuclei have distinct shapes and volumes. Mean elongation was 1.9, 1.3, and 1.1, and mean volume was 99, 102, and 13 \u03bcm\u00b3 for RBCs, motor neurons, and brain nuclei, respectively. The distribution of cell nuclei corresponded well with transmission electron microscopy data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C45-C46 provide quantitative morphological measurements for different cell types with clear differences. The validation against TEM data (C43, citing Hildebrand et al., 2017) provides independent confirmation of the cell detection accuracy. The measurements are consistent with known cell morphologies and provide objective, quantitative phenotyping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C105",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Throughput estimates suggest that screening 10,000 zebrafish mutants in replicate would require ~20 years with monochromatic imaging or <1 year with optimized pink-beam imaging. This throughput is relevant for disease modeling given that 70% of human protein-coding genes have zebrafish orthologues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37, C110-C112 provide detailed throughput calculations based on specific assumptions (5 min setup, 10 replicates, 3 scans per fish, 100 scanning days/year, multiplexing 5 larvae). However, these are theoretical estimates that have not been validated in practice. The assumptions may be optimistic (e.g., 100% uptime, no failed samples, perfect multiplexing). Claim C111 acknowledges potential for improvement but also uncertainty. The relevance to human disease (C38) is well-established but doesn't validate the throughput claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Sample preparation involves fixation, PTA staining (0.3% for 24 hr), ethanol dehydration, and plastic embedding in Kapton tubing, taking 5 days total. Zebrafish were maintained under standard conditions and staged according to Kimmel et al. (1995).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57, C147-C157 provide detailed, reproducible protocols for animal husbandry and sample preparation. The methods are standard and well-cited (C54, C56, C149). The 5-day preparation time (C57) is clearly stated. These are straightforward methodological claims that are adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Data sharing is facilitated through ViewTool, an open-access web-based viewer at http://3D.fish, and data repositories including the Zebrafish Lifespan Atlas and Dryad Digital Repository. ViewTool uses client-side JavaScript and requires no download, though bandwidth limitations restrict display to every fourth slice by default.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C132-C138, C143-C146 describe the data sharing infrastructure and software tools. The web-based viewer (C58, C143) and data repositories (C144-C145) are verifiable resources. The technical implementation details (C138) and limitations (C137) are clearly stated. This represents good open science practice, though the bandwidth limitation (C137) may affect data utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Traditional histology has been used for over a century to visualize tissue architecture but has significant limitations including tissue loss from sectioning, ~5 \u03bcm slice thickness limiting z-axis resolution, incomplete sampling, and impracticality for large-scale whole-organism studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 provide context about traditional histology with appropriate citations (C6, C8, C9). These are well-established limitations of histology that are widely recognized in the field. The claims accurately characterize both the strengths and weaknesses of the comparison method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Existing micro-CT approaches have limitations: commercial systems use low-flux polychromatic sources limiting resolution and throughput; larger samples lack adequate contrast/resolution (~10 \u03bcm\u00b3) for histology; nano-CT has insufficient field-of-view for mm-scale samples despite higher resolution (~100 nm\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 accurately characterize the state of the field with appropriate citations (C13-C18). These claims establish the gap that the current work addresses\u2014the need for imaging that combines cellular resolution with whole-organism field-of-view. The characterization of existing methods' limitations is fair and well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C100",
+      "C107"
+    ],
+    "result": "Fluorescence-based imaging methods like light sheet microscopy are ideal for in vivo studies and resolve sub-micron features, but depend on sample transparency, require dissection/slicing for opaque samples, are compromised by melanin pigmentation, and are poorly suited for large-scale screens requiring pan-cellular phenotyping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C100, C107 provide a fair comparison to fluorescence methods with appropriate citations (C39, C107). The limitations described (transparency requirement, pigmentation issues, molecular specificity) are well-established. This provides appropriate context for when histotomography would be preferred over optical methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C101",
+      "C102",
+      "C108"
+    ],
+    "result": "Serial block-face scanning electron microscopy achieves nanometer-scale resolution and has been used to reconstruct entire brains, but requires ~3 months of continuous imaging for a single cubic mm at 20 nm\u00b3 resolution, making it intractable for large-scale studies of specimens larger than ~1 mm\u00b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C101-C102, C108 accurately characterize electron microscopy approaches with appropriate citations (C41-C42). The throughput limitation (C42) is well-documented. This provides fair context for the trade-offs between resolution and throughput, positioning histotomography in the middle ground.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C99",
+      "C104"
+    ],
+    "result": "Current limitations and future directions include: plastic embedding adds sample stability for re-acquisition; field-of-view needs to increase beyond ~2.7 mm for mature zebrafish; resolution needs improvement to ~0.5 \u03bcm to detect mitotic chromosomes (~1 \u03bcm diameter); and detailed 3D atlases are needed for comprehensive computational phenotyping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C99, C104 honestly acknowledge current limitations and identify clear paths for improvement. The technical requirements are reasonable (C67-C68) and the need for atlases (C104) is a recognized challenge in the field. This demonstrates appropriate scientific caution about the method's current capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C103",
+      "C106"
+    ],
+    "result": "Histotomography approaches the ideal of comprehensive quantitative phenotyping for mm-to-cm scale organisms, with potential applications including cross-species analyses, integration with fluorescence imaging, tissue-specific staining, virtual reality visualization, and enriching mouse phenome projects. Comprehensive phenotyping requires imaging multiple specimens at multiple ages to establish normal variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C73, C95-C98, C103, C106 describe potential applications and future directions. While the technical capabilities demonstrated (C69-C70) support these possibilities, most applications (C71-C73, C96-C98, C106) are speculative and have not been demonstrated. Claim C95 correctly identifies that establishing normal variation requires extensive data collection, which has not yet been done. These are reasonable projections but remain to be validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C20",
+      "C22"
+    ],
+    "result": "Zebrafish was chosen as the model organism because juveniles (<3 mm diameter) are the largest established vertebrate model that fits in the field-of-view. Histotomographic images enable objective and reproducible quantitative analysis of cell volume, shape, and texture across organisms and tissue types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C22 provide clear rationale for model organism selection and describe the analytical capabilities. The size constraint (C20) is a practical consideration well-explained. The quantitative capabilities (C22) are demonstrated throughout the results. These are straightforward claims well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Brain region segmentation was performed using Elastix 4.8 with affine registration followed by landmark-based thin-plate spline registration. Manual landmarks were marked on corresponding anatomical regions, and manual segmentation used ITK-SNAP 3.4. The ViBE-Z atlas was used as reference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 describe the registration and segmentation methods with specific software versions and appropriate citations (C141-C142). The two-stage registration approach (C139) is standard practice. The methods are described in sufficient detail for reproduction. These are straightforward methodological claims.",
+    "result_type": "MINOR"
+  }
+]

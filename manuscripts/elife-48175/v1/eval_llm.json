@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Adequate control conditions are essential in experimental designs measuring outcomes over time. Control groups must account for confounding factors like habituation, time passage, blinding, and sham interventions, and should be matched to experimental groups in design and statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C47-C49 collectively establish well-accepted principles of experimental design. These are supported by established scientific knowledge (C1, C47-C49) and empirical evidence from cited literature (C2). The recommendations are standard practice in rigorous experimental research.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C50"
+    ],
+    "result": "Statistical significance of correlations in separate groups does not indicate that the correlations differ between groups. Direct statistical comparison between groups is required to make such inferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C50 are well-supported by simulated data in Figure 1A demonstrating the problem, citation to appropriate statistical methods (Monte Carlo simulations), and established statistical principles. This addresses a common inferential error in comparative studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C51",
+      "C52"
+    ],
+    "result": "Inflating the units of analysis by combining within-subject and between-subject measurements artificially increases degrees of freedom, lowering critical thresholds for significance and violating independence assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C51-C52 provide a concrete numerical example demonstrating how combining pre/post measures across subjects inflates df from 8 to 18 and reduces critical R from 0.63 to 0.44. The claims are grounded in established statistical knowledge about degrees of freedom and independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Mixed-effects linear models can address the issue of inflated units of analysis by properly modeling within-subject and between-subject variability, though they require advanced statistical understanding and can be easily misused.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are supported by citations to relevant literature (Boisgontier and Cheval, 2016; Matuschek et al., 2017) and established statistical knowledge. The claims appropriately balance the benefits and limitations of this approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Spurious correlations can arise from outliers or from pooling data from distinct subgroups. The Pearson correlation coefficient artificially increases as outliers or subgroups become more distant from the main population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are directly supported by simulated data presented in Figure 2, which systematically demonstrates how single outliers (panels A-C) and subgroup clustering (panels D-F) inflate correlation coefficients. The visual evidence clearly illustrates the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Robust correlation methods (bootstrapping, winsorizing, skipped correlations) are less sensitive to outliers than parametric methods because they account for data structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by citations to appropriate statistical literature (Salibian-Barrera and Zamar, 2002; Wilcox, 2016). These represent established statistical methods for addressing violations of parametric assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Small sample sizes lead to detection of only large effects, overestimation of effect sizes, and high uncertainty. Simulations show false-positive correlations range from |0.5-0.75| with N=15 versus |0.2-0.25| with N=100.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C19-C21 are supported by citation to Button et al. (2013), simulation data from the authors' code repository, and established statistical principles about power. The specific numerical ranges from simulations provide concrete evidence of the magnitude of overestimation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Small sample sizes increase likelihood of deviations from normality, make it difficult to test normality assumptions, and can produce extreme outliers leading to spurious correlations in regression analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by citation to Ghasemi and Zahediasl (2012) and logical inference connecting small samples to distributional problems and outliers. The connection to spurious correlations (C24) appropriately references earlier discussion in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Circular analysis (double-dipping) retrospectively selects data features to characterize dependent variables, recruiting noise to inflate statistical outcomes. This can produce significant effects observable in pure noise through regression to the mean and other artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are well-supported by multiple citations to foundational literature on circular analysis (Kriegeskorte et al., 2009, 2010; Holmes, 2009). The neuronal firing example (C28) provides a concrete illustration of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Circular analysis can be avoided by defining analysis criteria in advance independently of the data, or by using separate datasets/data partitions for parameter specification versus hypothesis testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 provide methodologically sound solutions to circular analysis based on established statistical principles. The recommendations follow logically from the definition of the problem and represent standard practices for avoiding bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C33",
+      "C34"
+    ],
+    "result": "Flexibility in data analysis (switched outcomes, added covariates, post-hoc exclusions) increases the probability of obtaining significant p-values. This is evident when communities compute the same variable differently across papers or when clinical trials switch outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C33-C34 are supported by multiple citations (Wicherts et al., 2016; Simmons et al., 2011; Carp, 2012; Francis, 2013; Altman et al., 2017; Goldacre et al., 2019) and established statistical knowledge about multiple testing. The examples provide concrete evidence of the problem.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Pre-registration can occur after initial results are known but before replication. Researchers should transparently distinguish pre-planned versus exploratory analyses, and exploratory analyses are acceptable if reported transparently and used as basis for pre-specified replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 represent reasonable recommendations for research practice supported by citation to Curran-Everett and Milgrom (2013) and established knowledge about pre-registration. The nuanced position on exploratory analysis is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C59"
+    ],
+    "result": "Multiple comparisons in exploratory analysis increase the probability of false positives. In a 2\u00d73\u00d73 design, the probability of finding at least one significant effect is 30% even when no effect exists, and larger numbers of factors enable more tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C59 are supported by citation to Cramer et al. (2016) providing the specific 30% false positive rate, and established statistical knowledge about family-wise error rates. The numerical example provides concrete evidence of the magnitude of the problem.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Bennett et al. identified significant active voxels in a dead Atlantic Salmon during a mentalizing task without multiple comparison correction, but applying standard corrections eliminated all active voxels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by citation to Bennett et al. (2009). This famous example effectively demonstrates the consequences of failing to correct for multiple comparisons in neuroimaging data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "When conducting exploratory analyses with large variable sets, interpreting results without multiple comparison correction is unacceptable without justification. However, not all correction methods are equally well-accepted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 represent reasonable recommendations supported by citation to Eklund et al. (2016) regarding variability in correction methods. The position appropriately balances the need for correction with recognition that methodology matters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C62"
+    ],
+    "result": "Non-significant p-values do not distinguish between true absence of effect versus insensitivity of data. Non-significant effects could represent true null results, underpowered genuine effects, or ambiguous effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C62 are supported by citation to Altman and Bland (1995) and established statistical knowledge about interpretation of non-significant results. This addresses a fundamental and common misinterpretation in frequentist statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Non-significant effects with small magnitude in large samples are unlikely to be meaningful, while those with moderate effect sizes may warrant further research. Alternative statistical approaches (Bayesian statistics, equivalence tests) or a priori power analyses can better distinguish insufficient evidence from evidence supporting the null.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by citations to Fethney (2010), Dienes (2014), and Lakens (2017). The recommendations provide practical guidance for interpreting non-significant results and represent established alternative approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C67"
+    ],
+    "result": "Correlation does not imply causation. The significant correlation (r=0.79, p<0.001) between chocolate consumption and Nobel laureates incorrectly suggested causation. Correlated occurrences may reflect direct/reverse causation, common causes, or coincidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C67 are supported by citation to Maurage et al. (2013) providing a memorable example, and established scientific knowledge about correlation versus causation. This addresses perhaps the most fundamental inferential error in statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Causal language should only be used when variables are precisely manipulated, with caution about confounders. Causal language should be avoided when evidence is correlational.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 represent appropriate recommendations based on inference about best practices for scientific communication. These follow logically from the distinction between correlation and causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "No single p-value reveals the plausibility, presence, truth, or importance of an effect. Banning p-values does not necessarily prevent incorrect inferences, and when applied responsibly, p-values can aid scientific communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by citations to recent literature on the p-value debate (Fricker et al., 2019; Kmetz, 2019; Krueger and Heck, 2019; Lakens, 2019; Calin-Jageman and Cumming, 2019). The position represents a balanced perspective on current statistical controversies.",
+    "result_type": "MINOR"
+  }
+]

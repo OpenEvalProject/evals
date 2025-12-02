@@ -1,0 +1,1453 @@
+{
+  "submission": {
+    "id": "56a96bd2-3f7f-4224-bc74-cc7a372c93f6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:43:45.861824Z",
+    "updated_at": "2025-12-02T11:43:45.861824Z"
+  },
+  "content": [
+    {
+      "id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "submission_id": "56a96bd2-3f7f-4224-bc74-cc7a372c93f6",
+      "content_type": "manuscript",
+      "content_text": "# Spatiotemporal control of mitotic exit during anaphase by an aurora B-Cdk1 crosstalk\n\n## Authors\n\n- Olga Afonso<sup>1</sup>\n- Colleen M Castellani<sup>3</sup>\n- Liam P Cheeseman<sup>1</sup>\n- Jorge G Ferreira<sup>1</sup>\n- Bernardo Orr<sup>1</sup>\n- Luisa T Ferreira<sup>1</sup>\n- James J Chambers<sup>5</sup>\n- Eurico Morais-de-S\u00e1<sup>2</sup>\n- Thomas J Maresca<sup>3</sup> ([ORCID: 0000-0003-2214-8674](https://orcid.org/0000-0003-2214-8674))\n- Helder Maiato<sup>1</sup> ([ORCID: 0000-0002-6200-9997](https://orcid.org/0000-0002-6200-9997)) \u2020\n\n### Affiliations\n\n1. Chromosome Instability & Dynamics Group, i3S - Instituto de Investiga\u00e7\u00e3o e Inova\u00e7\u00e3o em Sa\u00fade Universidade do Porto Porto Portugal\n2. Instituto de Biologia Molecular e Celular Universidade do Porto Porto Portugal\n3. Biology Department University of Massachusetts Amherst United States\n4. Cell Division Group, Experimental Biology Unit, Department of Biomedicine, Faculdade de Medicina Universidade do Porto Porto Portugal\n5. Institute for Applied Life Sciences University of Massachusetts Amherst United States\n6. Epithelial Polarity & Cell Division Group, i3S - Instituto de Investiga\u00e7\u00e3o e Inova\u00e7\u00e3o em Sa\u00fade Universidade do Porto Porto Portugal\n7. Molecular and Cellular Biology Graduate Program University of Massachusetts Amherst United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAccording to the prevailing \u2018clock\u2019 model, chromosome decondensation and nuclear envelope reformation when cells exit mitosis are byproducts of Cdk1 inactivation at the metaphase-anaphase transition, controlled by the spindle assembly checkpoint. However, mitotic exit was recently shown to be a function of chromosome separation during anaphase, assisted by a midzone Aurora B phosphorylation gradient - the \u2018ruler\u2019 model. Here we found that Cdk1 remains active during anaphase due to ongoing APC/CCdc20- and APC/CCdh1-mediated degradation of B-type Cyclins in Drosophila and human cells. Failure to degrade B-type Cyclins during anaphase prevented mitotic exit in a Cdk1-dependent manner. Cyclin B1-Cdk1 localized at the spindle midzone in an Aurora B-dependent manner, with incompletely separated chromosomes showing the highest Cdk1 activity. Slowing down anaphase chromosome motion delayed Cyclin B1 degradation and mitotic exit in an Aurora B-dependent manner. Thus, a crosstalk between molecular \u2018rulers\u2019 and \u2018clocks\u2019 licenses mitotic exit only after proper chromosome separation.\n\n## Introduction\n\nThe decision to enter and exit mitosis is critical for genome stability and the control of tissue homeostasis, perturbation of which has been linked to cancer (Evan and Vousden, 2001; Hanahan and Weinberg, 2011). While the key universal principles that drive eukaryotic cells into mitosis are well established (Domingo-Sananes et al., 2011; Lindqvist et al., 2009; Rieder, 2011), the mechanistic framework that determines mitotic exit remains ill-defined. The prevailing \u2018clock\u2019 model conceives that mitotic exit results from APC/CCdc20-mediated Cyclin B1 degradation when cells enter anaphase, under control of the spindle assembly checkpoint (SAC) (Musacchio, 2015). This allows the dephosphorylation of Cdk1 substrates by PP1/PP2A phosphatases, setting the time for chromosome decondensation and nuclear envelope reformation (NER) (Wurzenberger and Gerlich, 2011), two hallmarks of mitotic exit. This model is supported by the observation that inhibition of PP1/PP2A or expression of non-degradable Cyclin B1 (and B3 in Drosophila) mutants arrested cells in anaphase (Afonso et al., 2014; Parry and O'Farrell, 2001; Schmitz et al., 2010; Sigrist et al., 1995; Vagnarelli et al., 2011; Wheatley et al., 1997; Wolf et al., 2006). However, because Cyclin B1 is normally degraded during metaphase (Clute and Pines, 1999; Huang and Raff, 1999), the data from non-degradable Cyclin B1 expression could be interpreted as a spurious gain of function due to the artificially high levels of Cyclin B1 that preserve Cdk1 activity during anaphase. Whether Cyclin B1-Cdk1 normally plays a role in the control of anaphase duration and mitotic exit remains unknown.\n\nWe have recently uncovered a spatial control mechanism that operates after SAC satisfaction to delay chromosome decondensation and normal NER in response to incompletely separated chromosomes during anaphase in Drosophila and human cells (Afonso et al., 2014). The central player in this mechanism is a constitutive midzone-based Aurora B phosphorylation gradient that was proposed to monitor the position of chromosomes along the spindle axis during anaphase (Afonso et al., 2014; Maiato et al., 2015). Thus, according to this model, mitotic exit in metazoans, as defined as the irreversible transition into G1 after chromosome decondensation and NER, cannot simply be explained by a \u2018clock\u2019 that starts ticking at the metaphase-anaphase transition, but must also respond to spatial cues as cells progress through anaphase. The main conceptual implication of this \u2018ruler\u2019 model is that mitotic exit is determined during anaphase, and not at the metaphase-anaphase transition under SAC control. In this case, a molecular \u2018ruler\u2019 that prevents precocious chromosome decondensation and NER would allow that all separated sister chromatids end up in two individualized daughter nuclei during a normal mitosis. Moreover, it provides an opportunity for the correction and reintegration of lagging chromosomes that may arise due to deficient interchromosomal compaction in anaphase (Fonseca et al., 2019) or erroneous kinetochore-microtubule attachments that are \u2018invisible\u2019 to the SAC (e.g. merotelic attachments) (Gregan et al., 2011). Interestingly, Aurora B association with the spindle midzone depends on the kinesin-6/Mklp2/Subito (Cesario et al., 2006; Gruneberg et al., 2004) and is negatively regulated by Cdk1 (H\u00fcmmer and Mayer, 2009). Thus, the establishment of a midzone-based Aurora B \u2018ruler\u2019 in anaphase is determined by the sudden drop of Cdk1 activity (the \u2018clock\u2019) at the metaphase-anaphase transition. In the present work, we investigate whether and how molecular \u2018rulers\u2019 also regulate the \u2018clocks\u2019 during anaphase to coordinate mitotic exit in space and time in metazoans.\n\n## Results\n\n### Cyclin B1 continues to be degraded during anaphase and its disappearance is a strong predictor of mitotic exit in metazoans\n\nTo investigate a possible role of Cdk1 during anaphase, we started by monitoring Cyclin B1-GFP by spinning-disc confocal microscopy in live Drosophila and human cells in culture. Mild induction of Cyclin B1-GFP expression in S2 cells reproduced the localization of endogenous Cyclin B1 in the cytoplasm, mitotic spindle, kinetochores and centrosomes (Bentley et al., 2007; Clute and Pines, 1999; Huang and Raff, 1999; Pines and Hunter, 1991), without altering normal anaphase duration or increasing chromosome missegregation (Figure 1a, Figure 1\u2014figure supplement 1a,a\u2019 and Figure 1\u2014figure supplement 2a\u2013c). In agreement with previous reports (Clute and Pines, 1999; Huang and Raff, 1999), cytoplasmic Cyclin B1-GFP levels decreased abruptly at the metaphase-anaphase transition (Figure 1a,c). However, in contrast to what has been observed in Drosophila embryos (Huang and Raff, 1999), the centrosomal pool of Cyclin B1 in S2 cells was the most resistant to degradation and persisted well after anaphase onset, becoming undetectable only\u00a0~1 min before DNA decondensation (Figure 1a,c, Figure 1\u2014figure supplement 1a,a\u2019 and Figure 1\u2014figure supplement 2a,d,e and Video 1). Indeed, complete Cyclin B1 disappearance from centrosomes during anaphase strongly correlated with mitotic exit (Figure 1\u2014figure supplement 2f).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig1-v2.jpg)\n\n**Figure 1.:** (a) Drosophila S2 cell from nuclear envelope breakdown to NER showing the different pools of Cyclin B1 in the mitotic apparatus. Scale bar is 5 \u03bcm. (b) Two neighbor HeLa cells (* indicates a cell that is slightly delayed relative to its neighbor; compare relative Cyclin B1 levels between neighbors as they exit mitosis) expressing exogenous H2B-mRFP and showing continuous degradation of endogenous Cyclin B1-Venus during anaphase. Scale bar is 5 \u03bcm. (c) Cyclin B1 degradation profile in Drosophila S2 cells (n\u00a0=\u00a04 cells) and in HeLa cells with endogenously tagged Cyclin B1-Venus (n\u00a0=\u00a03 cells). Fluorescence intensity values were normalized to 20 min before anaphase onset (A.O.). (d) Time-lapse images of dividing Drosophila follicle cells expressing endogenously tagged Cyclin B1-GFP and His2Av-mRFP. Scale bar is 5 \u03bcm. (e) Quantification of Cyclin B1-GFP fluorescence intensity in the cytoplasm (n\u00a0=\u00a08 cells, five ovaries). Fluorescence intensity values were normalized to 8 min before A.O. (f) Time-lapse images of a metaphase II oocyte expressing Cyclin B1-mCherry and stained with SiR-DNA undergoing anaphase II after parthenogenic activation. Inset is 1.5x magnification of separating chromosomes. (f\u2019) Images of transmission light microscopy showing the same oocyte prior to and after imaging. Note the presence of the first and second polar bodies. Scale bar is 20 \u03bcm. (g) Quantification of Cyclin B1-mCherry fluorescence intensity in the cytoplasm (n\u00a0=\u00a020 oocytes, two independent experiments). Fluorescence intensity values were normalized to 6 min before anaphase onset. The LUT \u2018fire\u2019 is used to highlight Cyclin B1 localization in the different systems. Time in all panels is in min:sec.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Images of fixed Drosophila S2 cells co-stained for endogenous Cyclin B1 and \u03b1-tubulin. (a\u2019) Highlight of Cyclin B1 levels with the LUT \u2018fire\u2019. Note the global decrease in endogenous Cyclin B1 levels from metaphase (1) to anaphase (2) (compare cytoplasmic pools). Nevertheless, early anaphase cells maintain a centrosome-associated pool of Cyclin B1 (white arrows in the magnifications). (b) Fixed Drosophila S2 cell co-stained for endogenous Cyclin B1 and \u03b1-tubulin and induced to exit mitosis through Cdk1 inhibition 10 min before fixation. (b\u2019) Highlight of Cyclin B1 and \u03b1-tubulin staining with the LUT \u2018fire\u2019. Co-localization of endogenous Cyclin B1 and microtubules can be observed in cells exiting mitosis. Scale bar is 5 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Control Drosophila S2 cell stably expressing Cyclin B1-GFP/mCherry-\u03b1-tubulin and stained with SiR-DNA to follow mitotic chromosomes. Cyclin B1-GFP localization and degradation on centrosomes during anaphase is highlighted. Scale bar is 5 \u03bcm. Time is in min:sec. (b) Comparison of anaphase duration between Drosophila S2 cells expressing Cyclin B1-GFP/mCherry-\u03b1-tubulin, the same cells with SiR-DNA or cells expressing H2B-GFP/mCherry-\u03b1-tubulin. Differences between experiments are not significant, as tested with a nonparametric Mann-Whitney test. (c) Frequency of Drosophila S2 cells with lagging chromosomes in the same samples as in (b). In both (b) and (c) SiR-DNA had no impact on anaphase progression or chromosome segregation fidelity. (d) Quantification of Cyclin B1-GFP fluorescence intensity at centrosomes (n\u00a0=\u00a06 cells). Fluorescence intensity values were normalized to metaphase (\u221220 min). A.O.\u00a0=\u00a0Anaphase onset. (e) Quantification of the time from A.O. to Cyclin B1-GFP disappearance from centrosomes and respective anaphase duration (anaphase onset to DNA decondensation) (n\u00a0=\u00a09 cells). (f) Correlation between Cyclin B1-GFP disappearance from centrosomes and anaphase duration (p=0.0011). A parametric Pearson correlation was computed for this analysis.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) and (b) Representative examples of a control and Mklp2-depleted hTERT-RPE1 cells expressing endogenous Cyclin B1-Venus and co-stained with SiR-DNA. Cyclin B1-Venus localization and levels are highlighted with the LUT \u2018fire\u2019, showing detectable levels of Cyclin B1 during anaphase. Time is in min:sec (c) Degradation profile of Cyclin B1-Venus in control (n\u00a0=\u00a014 cells) and Mklp2 siRNA (n\u00a0=\u00a025 cells, pooled from two independent experiments). Anaphase onset\u00a0=\u00a00 min. (d) Calculated Cyclin B1-Venus half-life (0\u20134.5 min after anaphase onset). Statistical significance was tested with a nonparametric Mann-Whitney test. (e) and (f) Aurora B staining in control and Mklp2-depleted hTERT-RPE1 cells from the same experiment shown in the live imaging in (b). Mklp2 siRNA shows a strong impairment of Aurora B translocation from chromosomes to the spindle midzone. Scale bars are 5 \u03bcm.\n\n![Video 1.](https://cdn.elifesciences.org/articles/47646/elife-47646-video1.mp4.jpg)\n\n**Video 1.:** Mitotic progression from nuclear envelope breakdown to nuclear envelope reformation in a Drosophila S2 cell expressing Cyclin B1-GFP (green) and mCherry-\u03b1-tubulin (magenta). Cyclin B1 becomes undetectable at the anaphase-telophase transition, just before mCherry-\u03b1-tubulin exclusion from the nucleus. Time is min:sec.\n\nTo extend the significance of these observations, we monitored endogenously tagged Cyclin B1-Venus levels in human HeLa and hTERT-RPE1 cells (Collin et al., 2013) throughout mitosis and found that it also continues to be degraded during anaphase (Figure 1b,c and Figure 1\u2014figure supplement 3a,c and Videos 2 and 3). The physiological relevance of these findings was confirmed in primary adult Drosophila follicular epithelium cells (ex vivo) expressing endogenously tagged Cyclin B1-GFP (Figure 1d,e and Video 4), and after injection of Cyclin B1-mCherry mRNA in mouse oocytes undergoing meiosis II, when chromosomal division is similar to mitosis (Figure 1f,f\u2019, g). Thus, Cyclin B1 continues to be degraded during anaphase in Drosophila, mouse and human cells, including primary tissues, and its disappearance is a strong predictor of mitotic exit.\n\n![Video 2.](https://cdn.elifesciences.org/articles/47646/elife-47646-video2.mp4.jpg)\n\n**Video 2.:** Mitotic progression in two slightly asynchronous HeLa cells expressing endogenous Cyclin B1 tagged with Venus (green) and exogenous H2B-mRFP (magenta). Cyclin B1 becomes undetectable at the anaphase-telophase transition, just before DNA decondensation. Time is min:sec.\n\n![Video 3.](https://cdn.elifesciences.org/articles/47646/elife-47646-video3.mp4.jpg)\n\n**Video 3.:** Mitotic progression of two slightly asynchronous hTERT-RPE1 cells expressing endogenous Cyclin B1 tagged with Venus (green) and SiR-DNA (magenta). Cyclin B1 becomes undetectable at the anaphase-telophase transition, just before DNA decondensation. Time is min:sec.\n\n![Video 4.](https://cdn.elifesciences.org/articles/47646/elife-47646-video4.mp4.jpg)\n\n**Video 4.:** Mitotic progression of dividing follicle cells expressing endogenous Cyclin B1 tagged with GFP (green) and His2Av-mRFP (magenta). Note a pool of cytoplasmic Cyclin B1 that remains detectable until around 4 min after anaphase onset. Time is in min:sec.\n\n### Degradation of B-type Cyclins and Cdk1 inactivation during anaphase are rate limiting for mitotic exit\n\nTo investigate the functional relevance of an anaphase Cyclin B1 pool we acutely inhibited Cdk1 activity at anaphase onset with RO-3306 (Vassilev et al., 2006) and found that it accelerated NER in S2 cells (Figure 2a\u2013d). In contrast, expression of non-degradable Cyclin B1 or Cyclin B3 prevented normal spindle elongation and induced an extensive delay in anaphase, in agreement with previous works (Afonso et al., 2014; Parry and O'Farrell, 2001; Potapova et al., 2006; Sigrist et al., 1995; Wolf et al., 2006). While this delay was dependent on Cdk1 activity (Figure 2\u2014figure supplement 1a\u2013e), expression of non-degradable B-type Cyclins does not reflect a physiological role for their degradation in mitotic exit. As so, we also investigated the effect of inhibiting proteasome-mediated degradation of wild-type B-type Cyclins, including endogenously tagged versions, by adding MG132 just before or at anaphase onset in Drosophila and human cells, respectively. Under these conditions, cells remained in an anaphase-like state for several hours with separated sister chromatids and detectable Cyclin B1, often reverting to a metaphase-like state (Figure 3a,d,e, Figure 4a,d,e, Figure 6a,b,f and Videos 5 and 6). This \u2018mitotic reversal\u2019 is reminiscent of the one observed in cells treated with MG132 in metaphase after addition and subsequent washout of a Cdk1 inhibitor (Potapova et al., 2006).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig2-v2.jpg)\n\n**Figure 2.:** (a) and (b) Control and Cdk1-inhibited Drosophila S2 cells at anaphase onset (A.O.) stably expressing Lamin B-GFP/mCherry-\u03b1-tubulin. Scale bars are 5 \u03bcm. Time is in min:sec. Panels on the right side show the corresponding collapsed kymographs. Dashed lines indicate the moment of NER. (c) and (d) Quantification of anaphase duration (control n=16 cells; Cdk1i n=15 cells) and half-spindle elongation velocity (control n=16 cells; Cdk1i, n=13 cells), respectively, in the conditions shown in (a) and (b). Statistical significance was tested with an unpaired t-test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Control Drosophila S2 cell stably expressing H2B-GFP/mCherry-\u03b1-tubulin transiently expressing \u0394CycB1-GFP, showing the expected anaphase arrest. (b) The same experimental set-up was used for Cdk1 inhibition at anaphase onset (A.O.). Cyclin B1-GFP localization and H2B-GFP are highlighted in inverted grayscale. Note the centrosomal pool (magenta dashed circles) that remains during the anaphase arrest and the midzone localization of Cyclin B1-GFP after Cdk1 inhibition (magenta arrowheads). (c) Drosophila S2 cell stably expressing H2B-GFP/mCherry-\u03b1-tubulin transiently expressing \u0394CycB3-GFP where a strong anaphase arrest can be observed. Time is in min:sec. Scale bars are 5 \u03bcm. (e) and (f) Normalized pole-to-pole distance and half-spindle elongation velocity in WT (n=8 cells), \u0394CycB1 (n=9 cells) and \u0394CycB3 (n=4 cells), showing impaired spindle elongation after expression of non-degradable Cyclin B1 or Cyclin B3. Statistical significance of (e) and (f) was tested with a t-test and a nonparametric Mann-Whitney test, respectively.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig3-v2.jpg)\n\n**Figure 3.:** (a) Representative Drosophila S2 cell stably expressing Cyclin B1-GFP/mCherry-\u03b1-tubulin and stained with SiR-DNA to follow mitotic chromosomes, showing a strong anaphase arrest after treatment with MG132 (20 \u03bcM). Importantly, cells entered anaphase with Cyclin B1 levels compared to untreated control cells, despite the presence of MG132. (b) and (c) Drosophila S2 cells arrested in anaphase with MG132, and treated with Aurora B inhibitor (Binucleine-2) or Cdk1 inhibitor (RO3306), respectively, 30\u201360 min after the anaphase arrest. In (a), (b) and (c) a half-spindle region is highlighted with the LUT \u2018fire\u2019 to reveal Cyclin B1-GFP fluorescence during the anaphase arrest. Scale bars in all panels are 5 \u03bcm. Time in all panels is in h:min. (d) Timeline of the experiments shown in (a), (b) and (c) with quantification of total anaphase duration. A.O.\u00a0=\u00a0Anaphase onset. Gray color represents the time from MG132 addition to anaphase onset in cases where cells entered anaphase in the presence of MG132. Green color represents the time spent in anaphase until Aurora B or Cdk1 inhibition and purple color represents the time spent in anaphase in the presence of MG132 or MG312+Aurora B inhibition or MG132+Cdk1 inhibition. (e) Cyclin B1-GFP degradation profile in untreated (n\u00a0=\u00a012 cells) and MG132-treated cells arrested in anaphase (n\u00a0=\u00a06 cells). A.O.\u00a0=\u00a0Anaphase onset.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig4-v2.jpg)\n\n**Figure 4.:** (a) Representative U2OS cell stably expressing H2B-GFP/mCherry-\u03b1-tubulin treated with MG132 at anaphase onset (time 00:00). The cell became arrested in anaphase, after full chromosome separation and formation of a spindle midzone. Typically, two new spindles assembled around individual chromatids that erratically attempted to establish new \u2018metaphase\u2019 plates. (b) and (c) Anaphase arrested U2OS cells obtained by the addition of MG132 were treated with the Aurora B inhibitor (ZM447439) or Cdk1 inhibitor (RO3306), respectively, 30\u201360 min after anaphase arrest. Time in all panels is in h:min. Scale bars are 5 \u03bcm. (d) Timeline of the experiments shown in (a), (b) and (c). A.O.\u00a0=\u00a0Anaphase onset. Gray color represents the time from MG132 addition to anaphase onset, green color represents the time spent in anaphase until Aurora B or Cdk1 inhibition and purple color represents the time spent in anaphase in the presence of MG132 or MG312+Aurora B inhibition or MG132+Cdk1 inhibition. (e) Quantification of total anaphase duration in MG132, MG132+Aurora B inhibition and MG132+Cdk1 inhibition in Drosophila S2 cells and human U2OS cells. Note that for MG132 and MG132+Aurora B inhibition anaphase duration corresponds to the total duration of the movie as most cells do not exit mitosis until the end of acquisition. Statistical significance was tested with a nonparametric Mann-Whitney test.\n\n![Video 5.](https://cdn.elifesciences.org/articles/47646/elife-47646-video5.mp4.jpg)\n\n**Video 5.:** Drosophila S2 cell stably expressing Cyclin B1-GFP/mCherry-\u03b1-tubulin (white/green) and treated with SiR-DNA (magenta) to label mitotic chromosomes. The cell becomes arrested in anaphase for several hours with detectable levels of Cyclin B1 at centrosomes. Time is h:min.\n\n![Video 6.](https://cdn.elifesciences.org/articles/47646/elife-47646-video6.mp4.jpg)\n\n**Video 6.:** Human U2OS cell stably expressing H2B-GFP/mCherry-\u03b1-tubulin (magenta/green) treated with MG132 at anaphase onset. Proteasome inhibition induced a strong anaphase arrest for several hours. Time is h:min.\n\nTo evaluate the roles of Cdk1 and Aurora B in mitotic exit, we acutely inhibited either Cdk1 or Aurora B activity in MG132-treated anaphase-like cells. After Aurora B inhibition with Binucleine-2 (Smurnyy et al., 2010) or ZM447439 (Ditchfield et al., 2003) in Drosophila and human cells, respectively, they also remained in an anaphase-like state for several hours and often reverted into a metaphase-like state, but mitotic exit was resumed significantly earlier than MG132-treated controls (Figure 3b,d, Figure 4b,d,e and Videos 7 and 8). In contrast, Cdk1 inhibition immediately triggered chromosome decondensation and mitotic exit (Figure 3c,d, Figure 4c\u2013e and Videos 9 and 10). Thus, Aurora B inhibition is clearly not sufficient to drive cells out of mitosis if Cyclin B1 degradation is prevented, whereas Cdk1 activity during anaphase is rate-limiting for mitotic exit in metazoans.\n\n![Video 7.](https://cdn.elifesciences.org/articles/47646/elife-47646-video7.mp4.jpg)\n\n**Video 7.:** Representative Drosophila S2 cell stably expressing Cyclin B1-GFP/mCherry-\u03b1-tubulin (white/green) and treated with SiR-DNA (magenta) to label mitotic chromosomes. The Aurora B inhibitor was added 35 min after anaphase onset, however the cell remained arrested in anaphase for several hours. Time is h:min.\n\n![Video 8.](https://cdn.elifesciences.org/articles/47646/elife-47646-video8.mp4.jpg)\n\n**Video 8.:** Human U2OS cell stably expressing H2B-GFP/mCherry-\u03b1-tubulin (magenta/green) treated with MG132 at anaphase onset. The Aurora B inhibitor was added 40 min after anaphase onset. Similarly to the results in Drosophila S2 cells, U2OS cells remained arrested in anaphase for several hours after Aurora B inhibition. Time is h:min.\n\n![Video 9.](https://cdn.elifesciences.org/articles/47646/elife-47646-video9.mp4.jpg)\n\n**Video 9.:** Representative Drosophila S2 cell stably expressing Cyclin B1-GFP/mCherry-\u03b1-tubulin (white/green) and treated with SiR-DNA (magenta) to label mitotic chromosomes. The Cdk1 inhibitor was added 50 min after anaphase onset, inducing an almost immediate mitotic exit. Time is h:min.\n\n![Video 10.](https://cdn.elifesciences.org/articles/47646/elife-47646-video10.mp4.jpg)\n\n**Video 10.:** Human U2OS cell stably expressing H2B-GFP/mCherry-\u03b1-tubulin (magenta/green) treated with MG132 at anaphase onset. The Cdk1 inhibitor was added 90 min after anaphase onset and induced immediate mitotic exit. Time is h:min.\n\n### Cyclin B1 degradation during anaphase is mediated by APC/CCdc20 and APC/CCdh1\n\nAPC/CCdc20 is thought to regulate the metaphase-anaphase transition by targeting Cyclin B1 for degradation through recognition of a D-box (Glotzer et al., 1991), under control of the SAC (Clute and Pines, 1999). This would then promote APC/C binding to Cdh1 (APC/CCdh1), which recognizes substrates with either a D- or a KEN-box (Lindon, 2008). However, recent Cryo-electron microscopy studies have established a paradigm of multivalent APC/C-substrate interaction involving two or more degrons, with Cdc20 and Cdh1 having almost identical KEN and D-box receptor sites (da Fonseca et al., 2011; Zhang et al., 2016). Sequence analysis of Drosophila Cyclin B1 revealed a KEN box at position 248, which we mutated to AAN (Figure 5a\u2013d). When expressed in S2 cells the KEN-Cyclin B1-GFP mutant was more slowly degraded specifically during anaphase, delaying mitotic exit (Figure 5a,b,d,f,g). In agreement, APC/CCdh1 depletion in Drosophila and human cells was previously shown to cause an accumulation of Cyclin B1 (Ma et al., 2012; Meghini et al., 2016). To directly test whether APC/CCdh1 mediates Cyclin B1 degradation during anaphase we performed RNAi against the Drosophila Cdh1 orthologue Fizzy-related (Fzr). As in the case of the KEN-box mutant, Fzr RNAi significantly delayed Cyclin B1 degradation during anaphase, postponing mitotic exit (Figure 5e\u2013j). Lastly, we combined our KEN-box mutant with acute APC/C inhibition at anaphase onset with the D-box competitor Apcin\u00a0(Sackton et al., 2014)\u00a0and found a synergistic effect (Figure 5\u2014figure supplement 1a\u2013d). This result suggests the presence of multiple recognition sites that mediate Cyclin B1 degradation through both APC/CCdc20 and APC/CCdh1 during anaphase.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig5-v2.jpg)\n\n**Figure 5.:** (a) and (b) Drosophila S2 cells stably expressing WT Cyclin B1 or a KEN-box mutant version co-expressing mCherry-\u03b1-tubulin. (c) Sequence alignment showing the conservation of the Drosophila Cyclin B1 KEN-box with mammalian Cyclin B2, but not Cyclin B1. (d) Degradation profile of Cyclin B1-GFP quantified by measuring the GFP fluorescence intensity at centrosomes in control (n\u00a0=\u00a06 cells) and KEN-box mutant cells (n\u00a0=\u00a010 cells). Note that KEN-box Cyclin B1 degradation is only affected during anaphase. Anaphase onset\u00a0=\u00a00 min. (e) Drosophila S2 cell depleted of Fzr and expressing WT CyclinB1-GFP/mCherry-\u03b1-tubulin. Cyclin B1-GFP signal is highlighted with the LUT \u2018fire\u2019 and dashed white circles highlight the frame before Cyclin B1 signal disappearance from centrosomes. Scale bars are 5 \u03bcm. Time in all panels is in min:sec. (f) Quantification of Cyclin B1 half-life (0\u20134.5 min after anaphase onset) duration in control\u00a0(n=11 cells), KEN-box mutant (n=12 cells) and Fzr-depleted cells (n=11 cells, pooled from 3\u00a0independent experiments) and (g) anaphase duration in control (n\u00a0=\u00a011 cells), KEN-box mutant (n\u00a0=\u00a016 cells) and Fzr-depleted cells (n\u00a0=\u00a012 cells, pooled from three independent experiments). Statistically significant differences for anaphase duration and CyclinB1 half-life were tested with an unpaired t-test and a nonparametric Mann-Whitney test, respectively. (h) Degradation profile of Cyclin B1-GFP quantified by measuring the GFP fluorescence intensity at centrosomes in control (n\u00a0=\u00a012 cells), KEN-box mutant cells (n\u00a0=\u00a014 cells) and Fzr-depleted cells (n\u00a0=\u00a012 cells). Anaphase onset\u00a0=\u00a00 min. (i) and (j) Images of anaphase Drosophila S2 cells after Fzr RNAi, fixed and co-stained with Cenp-C and \u03b1-tubulin. Note that amongst apparently normal anaphase cells (i), anaphase-like cells with clearly separated sister chromatids attached to two half-spindles could also be identified (j). Scale bars are 5 \u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) and (b) Drosophila S2 cells stably expressing WT Cyclin B1 or a KEN-box mutant version and co-expressing mCherry-\u03b1-tubulin with Apcin addition at anaphase onset. Cyclin B1-GFP localization is highlighted with the LUT \u2018fire\u2019 and dashed white circles highlight the frame before Cyclin B1 signal disappearance from centrosomes. Scale bars are 5 \u03bcm. Time is in min:sec. (c) Degradation profile of Cyclin B1-GFP quantified by measuring fluorescence intensity at centrosomes in control (n\u00a0=\u00a011 cells), control with Apcin (n\u00a0=\u00a07 cells), KEN-box mutant cells (n\u00a0=\u00a012 cells) and KEN-box mutant with Apcin (n\u00a0=\u00a06 cells). (d) Calculated Cyclin B1-GFP half-life (0\u20136.5 min after anaphase onset) in the same conditions as in (c). Statistical significance was tested with a nonparametric Mann-Whitney test.\n\nAlthough human Cyclin B1 (but not human Cyclin B2) lacks a canonical KEN-box, its recognition by APC/CCdh1 might involve a D-box or other motifs, whose inactivation compromises Cyclin B1 degradation in anaphase (Clijsters et al., 2014; Lindon, 2008; Matsusaka et al., 2014). To investigate whether Cyclin B1 degradation during anaphase is mediated by the APC/C in human cells, we inhibited its activity specifically at anaphase onset with Apcin and/or pro-TAME, a more selective APC/CCdc20 inhibitor (Sackton et al., 2014; Zeng et al., 2010; Zhang et al., 2016) in hTERT-RPE1 cells expressing endogenously tagged Cyclin B1-Venus. Only the simultaneous addition of both drugs at anaphase onset blocked the continuous degradation of Cyclin B1 during anaphase and prevented mitotic exit for several hours, similar to proteasome inhibition (Figure 6a\u2013f). Although relative inefficiency of these inhibitors cannot be ruled out, it is conceivable that additive interactions of Cdc20/Cdh1 and Cyclin B1 degrons are required for efficient Cyclin B1 ubiquitination and subsequent degradation by the proteasome. Taken together, these results suggest that Drosophila and human Cyclin B1 degradation during anaphase is mediated through the D-box and KEN-box (when present), and can be carried out either by APC/CCdc20 or APC/CCdh1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig6-v2.jpg)\n\n**Figure 6.:** (a) Control hTERT-RPE1 cell expressing endogenous Cyclin B1-Venus and co-stained with SiR-DNA to visualize mitotic chromosomes. (b) MG132 addition just before or at anaphase onset (time 00:00), caused an anaphase arrest with detectable Cyclin B1 levels and condensed chromosomes. The arrest was sustained up to 6 hr (time window of acquisition). (c) pro-TAME addition at anaphase onset (time 00:00) showed no visible effect during anaphase. (d) Apcin addition at anaphase onset (time 00:00) induced a slight delay in DNA decondensation. (e) APC/C inhibition with a cocktail of pro-TAME and Apcin at anaphase onset (time 00:00) caused a strong anaphase delay (during the time window of acquisition \u2013 5 hr). Cyclin B1 localization is highlighted with LUT \u2018fire\u2019. Scale bars are 5 \u03bcm. Time is in h:min. (f) Quantification of Cyclin B1-Venus (normalized to anaphase onset) in control (n\u00a0=\u00a07 cells), MG132 (n\u00a0=\u00a04 cells), pro-TAME (n\u00a0=\u00a07 cells), Apcin (n\u00a0=\u00a06 cells) and pro-TAME+Apcin (n\u00a0=\u00a04 cells).\n\n### Drosophila Cyclin B1 localizes at the spindle midzone in an Aurora B-dependent manner\n\nTo investigate the precise localization of Cyclin B1 during anaphase we took advantage of the extremely flat morphology of Drosophila S2 cells growing on concanavalin-coated coverslips. This allowed us to detect a faint pool of Cyclin B1-GFP associated with the spindle midzone and midbody during a normal mitosis and cytokinesis, respectively (Figure 7a,a\u2019, b), as reported previously in Drosophila germ cells (Mathieu et al., 2013). Detection of the midzone pool of endogenous or ectopically expressed Cyclin B1 was enhanced by abrupt Cdk1 inactivation during metaphase, causing cells to prematurely enter anaphase with high Cyclin B1 levels (Figure 7c,e; see also Figure 1\u2014figure supplement 1b,b\u2019). Under these conditions, Cyclin B1 co-localized with Aurora B at the spindle midzone (Figure 7\u2014figure supplement 1a\u2013c). This localization depended on Subito/kinesin-6-mediated midzone targeting and activity of Aurora B (Figure 7b,d,e), but was independent of Polo kinase activity (Figure 7g and Figure 7\u2014figure supplement 2). While we were unable to localize endogenously tagged Cyclin B1-Venus at the spindle midzone in human anaphase cells due to the poor signal/noise at this stage, direct localization of human Cdk1-GFP in live human HeLa cells revealed a clear spindle localization at the metaphase-anaphase transition, with a subsequent enrichment in the central spindle region between separating sister chromosomes throughout anaphase, and midbody during cytokinesis (Figure 7\u2014figure supplement 3a,b). In agreement, Cdk1 was recently found enriched on isolated midbodies from human cells (Capalbo et al., 2019). These results suggest that Cyclin B1-Cdk1 is spatially regulated by Aurora B activity at the spindle midzone, at least in Drosophila cells.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig7-v2.jpg)\n\n**Figure 7.:** (a) Control Drosophila S2 cell stably expressing Cyclin B1-GFP/mCherry-\u03b1-tubulin showing a faint pool of Cyclin B1-GFP at the spindle midzone/midbody. (a\u2019) Collapsed kymograph of the cell in a where Cyclin B1-GFP can be visualized at the spindle midzone/midbody. (b) Snapshot of a live Drosophila S2 cell expressing Cyclin B1-GFP/mCherry-\u03b1-tubulin where a midbody pool of Cyclin B1-GFP can be detected before completion of cytokinesis. (c) Drosophila S2 cell treated with Cdk1 inhibitor during metaphase. Cyclin B1 is not fully degraded and becomes visibly associated with midzone microtubules as cells are forced to exit mitosis. (d) Cdk1 inhibition at metaphase in a Drosophila S2 cell expressing Cyclin B1-GFP/mCherry-\u03b1-tubulin after Subito/Mklp2 depletion by RNAi. The Cyclin B1 midzone localization is no longer detectable. (e) Quantification of Cyclin B1-GFP fluorescence intensity measured at the spindle midzone (identified by the mCherry-\u03b1-tubulin signal) in untreated (n\u00a0=\u00a011 cells), Cdk1 inhibited cells (n\u00a0=\u00a010 cells) and Cdk1 inhibition after Subito/Mklp2 depletion (n\u00a0=\u00a012 cells, pooled from two independent experiments). (f) Drosophila S2 cells treated with Cdk1 inhibitor during metaphase and Aurora B inhibitor 4 min after Cdk1 inhibition. For all conditions, Cyclin B1-GFP signal is highlighted with the LUT \u2018fire\u2019. Scale bar is 5 \u03bcm. (g) Quantification of Cyclin B1-GFP fluorescence intensity measured at the spindle midzone in Cdk1 inhibited cells (n\u00a0=\u00a010 cells), Cdk1 + Aurora B inhibition (n\u00a0=\u00a011 cells) and Cdk1 + Polo inhibition (n\u00a0=\u00a010 cells).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a) Untreated control Drosophila S2 cell or (b) treated with Cdk1 inhibitor in metaphase and expressing GFP-Aurora B/Cyclin B1-mCherry, showing a clear co-localization between both signals upon Cdk1 inhibition. Scale bars are 5 \u03bcm. Time is in min:sec. (c) Quantification of GFP-Aurora B and Cyclin B1-mCherry fluorescence signals at the spindle midzone after Cdk1 inhibition in metaphase (n\u00a0=\u00a07 cells).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Drosophila S2 cells treated with Cdk1 inhibitor during metaphase and Polo inhibitor 4 min after Cdk1 inhibition. Note that the microtubule localization of Cyclin B1 is not lost after Polo inhibition. Cyclin B1-GFP signal is highlighted with the LUT \u2018fire\u2019. Scale bars are 5 \u03bcm. Time is in min:sec.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (a) Sum projection of a 3D data set from a human HeLa cell transiently expressing hCdk1-GFP as cells enter and progress through anaphase and cytokinesis. Spindle and central spindle enrichment is highlighted with the LUT \u2018fire\u2019. Microtubules were visualized with SiR-tubulin. Scale bar is 10 \u03bcm. Time is in min:sec. (b) Snapshot from a live human HeLa cell transiently expressing hCdk1-GFP (green), with microtubules visualized with SiR-tubulin (magenta), showing enrichment at the midbody (arrowhead). Scale bar is 10 \u03bcm. Zoomed region highlights hCdk1-GFP localization at the midbody (arrowhead). Scale bar in the zoomed images is 5 \u03bcm.\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig7-figsupp4-v2.jpg)\n\n**Figure 7\u2014figure supplement 4.:** (a) Control Drosophila S2 cell stably expressing GFP-Aurora B/mCherry-\u03b1-tubulin. (b) Drosophila S2 cell overexpressing GFP-Aurora B where a delay in anaphase progression could be observed. (c) Cdk1 inhibition in a Drosophila S2 cell arrested in anaphase due to GFP-Aurora B overexpression. The cell exited mitosis immediately after drug addition. Scale bars are 5 \u03bcm. Time in all panels is in min:sec. (d) and (e) Quantification of the time of GFP-Aurora B recovery at the spindle midzone and anaphase duration, respectively, in control (n\u00a0=\u00a012 cells) and GFP-Aurora B overexpressing cells (treated with 1 mM CuSO4) (n\u00a0=\u00a019 cells). In both (d) and (e) statistical significance was tested with a nonparametric Mann-Whitney test. (f) Positive correlation (p<0.0001) between the time of Aurora B recovery at the spindle midzone and anaphase duration in control (n\u00a0=\u00a012 cells) and Aurora B overexpression (n\u00a0=\u00a016 cells). A nonparametric Spearman correlation was computed for this analysis.\n\n### Aurora B association with the spindle midzone controls mitotic exit by regulating Cdk1 activity during anaphase\n\nWe have previously found that Aurora B inhibition at anaphase onset abolished the cellular capacity to delay mitotic exit in response to incomplete chromosome separation during anaphase in both Drosophila and human cells (Afonso et al., 2014). Here we sought to investigate whether elevating Aurora B protein levels and presumably its activity impacts mitotic exit. For this purpose we overexpressed Aurora B in Drosophila S2 cells and found that this delayed its own transition to the spindle midzone and extended anaphase duration (Figure 7\u2014figure supplement 4a,b,d,e). Moreover, we found that Aurora B association with the spindle midzone is a strong predictor of anaphase duration, with several cells overexpressing Aurora B extending anaphase for more than 15 min (Figure 7\u2014figure supplement 4c,e,f). Interestingly, this anaphase delay depended on Cdk1 activity (Figure 7\u2014figure supplement 4c), suggesting that Aurora B association with the spindle midzone is able to delay mitotic exit by regulating Cdk1 activity during anaphase. To test this, we monitored Cyclin B1-GFP/Venus degradation after Subito/Mklp2/kinesin-6 RNAi in Drosophila S2 and human hTERT-RPE1 cells. This caused a short, but significant delay in Cyclin B1-GFP/Venus degradation during anaphase, increasing Cyclin B1 half-life and often delaying mitotic exit (Figure 8a\u2013e; see also Figure 1\u2014figure supplement 3a\u2013f). Overall, these data support a model in which the establishment of an anaphase Aurora B phosphorylation gradient concentrates Cyclin B1 and consequently Cdk1 activity at the spindle midzone.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig8-v2.jpg)\n\n**Figure 8.:** (a) and (b) Control and Subito/Mklp2-depleted Drosophila S2 cells stably expressing Cyclin B1-GFP/mCherry-\u03b1-tubulin. Cyclin B1-GFP localization is highlighted with the LUT \u2018fire\u2019 and dashed white circles highlight the frame before Cyclin B1 signal disappearance from centrosomes. Scale bars are 5 \u03bcm. Time is in min:sec. (c) Degradation profile of Cyclin B1-GFP quantified by measuring fluorescence intensity at centrosomes in control (n\u00a0=\u00a011 cells) and Subito/Mklp2-depleted S2 cells (n\u00a0=\u00a013 cells, pooled from three independent experiments). (d) and (e) Calculated Cyclin B1-GFP half-life (0\u20134.5 min after anaphase onset) and quantified anaphase duration, respectively, in the same control and Subito/Mklp2-depleted S2 cells as in (c). Statistical significance was tested with a nonparametric Mann-Whitney test and an unpaired t-test for data in (d) and (e), respectively.\n\n### Incompletely separated chromosomes positioned near the spindle midzone show the highest Cdk1 activity during anaphase\n\nTo directly assess the spatiotemporal properties of Cdk1 activity throughout the cell cycle we next employed Fluorescence Lifetime Imaging Microscopy (FLIM) of an established Fluorescence Resonance Energy Transfer (FRET)-based biosensor for Cyclin B1-Cdk1 activity (Gavet and Pines, 2010) that was targeted to chromatin in Drosophila S2 cells by fusing it to the C-terminus of human histone H2B. The reporter was modified to make it amenable to FLIM by replacing the donor (mCerulean) with mTurquoise2, which exhibits a mono-exponential lifetime, and acceptor (YPet) with mVenus. The FRET pairs flank the auto-phosphorylation site of human Cyclin B1 and the Polo Box Domain (PBD) of Polo-like kinase one such that it undergoes a conformational change when it is phosphorylated by Cdk1 that yields increased FRET in mitosis and decreased FRET in interphase. Importantly, the biosensor was shown to be highly specific for Cyclin B1-Cdk1 and non-responsive to activities of the midzone-enriched kinases Aurora B and Plk1 (Gavet and Pines, 2010). A non-phosphorylatable chromatin-targeted control with alanine substitutions in the substrate sequence was used to confirm that measured changes in donor lifetime and FRET efficiency were due specifically to phosphorylation rather than non-specific changes in conformation between interphase and mitosis. There was not a statistically significant difference in any of the measured donor lifetime parameters (average lifetime, short lifetime, % short lifetime, % long lifetime) between the non-phosphorylatable control sensor in interphase and mitosis or between the non-phosphorylatable control sensor (interphase and mitosis) and the phosphorylatable sensor in interphase (Figure 9\u2014source data 1). Importantly, there were statistically significant differences between the lifetime parameters of the chromatin-targeted phosphorylatable reporter in mitosis versus interphase, most notably the mean donor lifetime decreased from 3.43 ns +\u00a0/-\u00a00.12 ns (mean +\u00a0/-\u00a0S.D.) in interphase to 3.15 ns +\u00a0/-\u00a00.28 ns in mitosis (includes prophase, prometaphase, and metaphase cells) (Figure 9a, Figure 9\u2014source data 1). The measured decrease in donor lifetime of the sensor on mitotic chromatin is indicative of increased FRET during mitosis. Accordingly, there was a statistically significant increase in the FRET efficiency (E) of the phosphorylatable sensor in mitosis (11.78% +\u00a0/-\u00a07.89%) relative to interphase (4.12% +\u00a0/-\u00a03.25%), which was statistically indistinguishable (p>0.05) from the non-phosphorylatable reporter in either interphase or mitosis (Figure 9a, Figure 9\u2014source data 2). Thus, the chromatin bound reporter specifically reports on elevated Cyclin B1-Cdk1 activity in mitosis relative to interphase.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig9-v2.jpg)\n\n**Figure 9.:** (a) The chromatin targeted reporter exhibits a longer lifetime and lower FRET efficiency in interphase versus prometaphase. The sensor on lagging chromosomes in the vicinity of the midzone MTs, demarcated by the dashed lines, exhibits higher FRET efficiency and shorter donor lifetime than the reporter on the segregated DNA. The activity gradient is no longer evident in the presence of 10 \u03bcM RO-3306. (b) Quantification of donor lifetimes for segregated versus lagging chromatin in untreated and RO-3306-treated cells (N\u00a0=\u00a014 cells for each condition). (c) Quantification of FRET efficiencies for segregated versus lagging chromatin in untreated and RO-3306-treated cells (N\u00a0=\u00a014 cells for each condition). Error bars are SEM. Scale bars are 5 \u03bcm. Color wedges indicate 0.6 ns (blue) \u2013 3.8 ns (red) for donor lifetimes and 0% (blue) to 55% (red) for FRET E. Two-tailed P-values from a Student\u2019s t-test are reported. n.s. is not significant (p>0.05).\n\nNext, we performed FLIM-FRET imaging of the phosphorylatable chromatin-associated reporter in S2 cells with spontaneous lagging chromosomes to measure the spatial properties of CyclinB1-Cdk1 activity during anaphase. Remarkably, there was a statistically significant reduction in the donor lifetime (2.61 ns +\u00a0/-\u00a00.43 ns) for the sensor on lagging chromosomes in the vicinity of the spindle midzone compared to the donor lifetime (3.16 ns +\u00a0/-\u00a00.20 ns) on the segregated chromosomes (Figure 9a,b). This corresponds to\u00a0~3 fold increase in the FRET E of the sensor on lagging chromosomes (27.0% +\u00a0/-\u00a012.0%) relative to the FRET E of the reporter on segregated DNA (11.7% +\u00a0/-\u00a05.5%) (Figure 9a,c). The FLIM-FRET data support the conclusion that there is a gradient of CyclinB1-Cdk1 activity in the vicinity of the midzone during anaphase that locally phosphorylates chromatin bound substrates on incompletely separated chromosomes. We argue that this activity gradient, which is reminiscent of a previously visualized midzone-based gradient of Aurora B kinase activity (Afonso et al., 2014; Fuller et al., 2008), specifically reports on midzone-proximal Cyclin B1-Cdk1 activity rather than that of other midzone-enriched kinases since the sensor is insensitive to inhibition of Aurora B or Plk1 activities (Gavet and Pines, 2010) and the activity gradient was no longer evident on lagging chromosomes/chromatin following addition of the Cdk1 inhibitor RO-3306 (Figure 9A\u2013C).\n\n### Experimental reduction of anaphase chromosome motion delays Cyclin B1 degradation and mitotic exit in an Aurora B-dependent manner\n\nAurora B has been shown to mediate Cyclin B1 phosphorylation in Drosophila germline and human mitotic cells (Kettenbach et al., 2011; Mathieu et al., 2013). As so, we investigated whether Aurora B activity is required for Cyclin B1 degradation during anaphase and consequently mitotic exit in both Drosophila and human cells. First, we monitored Cyclin B1-GFP/Venus levels after acute inhibition of Aurora B activity at anaphase onset by treating S2 and hTERT-RPE1 cells with Binucleine-2 or ZM447439, respectively. We found that inhibition of Aurora B activity did not accelerate Cyclin B1 degradation during anaphase (Figure 10\u2014figure supplement 1a,b). Likewise, acute PP1/PP2A phosphatase inhibition with okadaic acid at anaphase onset did not interfere with normal Cyclin B1 degradation during anaphase (Figure 10\u2014figure supplement 1c). These results are consistent with our previous experiments, which showed that Aurora B inhibition at anaphase onset did not accelerate mitotic exit in both Drosophila and human cells (Afonso et al., 2014). In addition, these data indicate that PP1/PP2A phosphatase activity is not required to regulate Cyclin B1 degradation, namely its centrosomal-associated pool, during anaphase.\n\nIn light of the results obtained with our chromosome-targeted Cdk1 FRET sensor, we decided to investigate whether Cyclin B1 degradation during anaphase is a function of chromosome separation. To do so, we slowed down chromosome separation by allowing S2 cells to enter anaphase after a short exposure (less than 15 min) to 10 nM taxol or after depletion of the kinesin-13 KLP10A by RNAi (Afonso et al., 2014; Rogers et al., 2004). We found that, under both conditions, Cyclin B1-GFP degradation during anaphase was significantly delayed (Figure 10a\u2013c,e\u2013g), consistent with the previously reported delay in mitotic exit (Afonso et al., 2014). To test whether the observed delay in Cyclin B1 degradation during anaphase was dependent on Aurora B activity, we acutely inhibited Aurora B with Binucleine-2 specifically at anaphase onset in taxol-treated cells. We found that Aurora B inhibition fully restored normal Cyclin B1 degradation in cells with slower chromosome separation (Figure 10d,f,g). Importantly, the short exposure of cells to 10 nM taxol did not prevent normal Aurora B accumulation at the spindle midzone (Figure 10\u2014figure supplement 2a\u2013c). Overall, these data link chromosome separation to Aurora B-mediated control of Cyclin B1 degradation during anaphase that ultimately licenses mitotic exit.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig10-v2.jpg)\n\n**Figure 10.:** (a) Control S2 cell stably expressing Cyclin B1-GFP/mCherry-\u03b1-tubulin. (b) KLP10A depleted S2 cell stably expressing Cyclin B1-GFP/mCherry-\u03b1-tubulin. (c) and (d) Examples of S2 cells treated with 10 nM Taxol during metaphase, where Binucleine-2 was added at anaphase onset in the condition shown in (d). For all conditions Cyclin B1 localization is highlighted with LUT \u2018fire\u2019 and dashed white circles highlight the frame before Cyclin B1 signal disappearance. Scale bar is 5 \u03bcm. Time is in min:sec. (e) Half-spindle elongation velocity in control (n\u00a0=\u00a011 cells), KLP10A (n\u00a0=\u00a013 cells, pooled from three independent experiments), 10 nM Taxol (n\u00a0=\u00a09 cells) and 10 nM Taxol + Binucleine-2 addition at anaphase onset (n\u00a0=\u00a04 cells). Note the strong impairment of anaphase chromosome separation in all conditions. (f) and (g) Cyclin B1-GFP degradation profile and calculated Cyclin B1-GFP half-life in control (n=11 cells), KLP10A (n=15 cells, pooled from 3 independent experiments), 10 nM Taxol (n=9 cells) and 10 nM Taxol + Binucleine-2 addition at anaphase onset (n=4 cells).\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig10-figsupp1-v2.jpg)\n\n**Figure 10\u2014figure supplement 1.:** (a) Quantification of Cyclin B1-GFP fluorescence intensity at centrosomes in Drosophila S2 without treatment (n\u00a0=\u00a012 cells) or after Aurora B inhibition at anaphase onset (n\u00a0=\u00a06 cells). (b) Quantification of total endogenously tagged Cyclin B1-Venus in hTERT-RPE1 cells without treatment (n\u00a0=\u00a04 cells) and after Aurora B inhibition at anaphase onset (n\u00a0=\u00a09 cells). (c) Degradation profile of Cyclin B1-GFP measured by quantification of fluorescence intensity at centrosomes after PP1/PP2A inhibition at A.O. with okadaic acid (n\u00a0=\u00a04 cells).\n\n![Figure 10\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig10-figsupp2-v2.jpg)\n\n**Figure 10\u2014figure supplement 2.:** (a) and (b) Representative examples of a control and a 10 nM Taxol treated cell stably expressing GFP-Aurora B/mCherry-\u03b1-tubulin. Scale bar is 5 \u03bcm. Time is in min:sec. (c) Quantification of the time of Aurora B recovery at the midzone in cells (n=10 cells) with or without 10 nM Taxol\u00a0(n=12 cells).\n\n## Discussion\n\nTaken together, our work reveals that degradation of B-type Cyclins specifically during anaphase is rate-limiting for mitotic exit among animals that diverged more than 900 million years ago. Most importantly, we show that Cdk1 activity during anaphase is a function of chromosome separation and is spatially regulated by Aurora B localization and activity at the spindle midzone. In concert with previous work (Afonso et al., 2014), our findings unveil an unexpected crosstalk between molecular \u2018rulers\u2019 (Aurora B) and \u2018clocks\u2019 (B-type Cyclins-Cdk1) that ensures that cells only exit mitosis after proper chromosome separation during anaphase, consistent with the previously proposed chromosome separation checkpoint hypothesis (Afonso et al., 2014; Maiato et al., 2015). An Aurora B-dependent spatial control mechanism regulating normal NER in human cells has been recently confirmed (Liu et al., 2018). However, nuclear envelope defects associated with incomplete chromosome separation during anaphase (namely, anaphase lagging chromosomes due to mitotic errors) were proposed as an inevitable pathological condition. The present work provides yet additional evidence for a molecular network operating during anaphase that promotes chromosome segregation fidelity by controlling mitotic exit in space and time (Figure 11). According to this model, APC/CCdc20 mediates the initial degradation of Cyclin B1 during metaphase under SAC control. The consequent decrease in Cdk1 activity as cells enter anaphase targets Aurora B to the spindle midzone (via Subito/Mklp2/kinesin-6); Aurora B at the spindle midzone (counteracted by PP1/PP2A phosphatases on chromatin [Vagnarelli et al., 2011]) establishes a phosphorylation gradient that locally delays APC/CCdc20- and APC/CCdh1-mediated degradation of residual Cyclin B1 (and possibly B3) at the spindle midzone, at least in Drosophila cells. Localization experiments in human cells suggest that Cdk1 itself might be enriched at the spindle midzone. Consequently, as chromosomes separate and move away from the spindle midzone, Cdk1 activity decreases, allowing the PP1/PP2A-mediated dephosphorylation of Cdk1 and Aurora B substrates (e.g. Lamin B and Condensin I) necessary for mitotic exit. This model is consistent with the recent demonstration that Cdk1 inactivation promotes the recruitment of PP1 phosphatase to chromosomes to locally oppose Aurora B phosphorylation (Qian et al., 2015) and recent findings in budding yeast demonstrating equivalent phosphorylation and dephosphorylation events during mitotic exit (Touati et al., 2018). It is also consistent with a premature Greatwall inactivation and PP2A:B55 reactivation that would be predicted after acute Cdk1 inactivation during anaphase (Cundell et al., 2013; Cundell et al., 2016). Most important, this model provides an explanation for the coordinated action of two unrelated protein kinases that likely regulate multiple substrates required for mitotic exit (Afonso et al., 2017; Kettenbach et al., 2011; Petrone et al., 2016).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/47646/elife-47646-fig11-v2.jpg)\n\n**Figure 11.:** APC/CCdc20 mediates the initial degradation of Cyclin B1 as chromosome align at the spindle equator and cells enter anaphase under SAC control. The consequent decrease in Cdk1 activity as cells enter anaphase targets Aurora B to the spindle midzone (via Subito/Mklp2/kinesin-6); Aurora B at the spindle midzone (counteracted by PP1/PP2A phosphatases on chromatin) establishes a phosphorylation gradient that locally delays APC/CCdc20- and APC/CCdh1-mediated degradation of residual Cyclin B1, and possibly Cdk1, at the spindle midzone. Consequently, as chromosomes separate and move away from the spindle midzone, Cdk1 activity decreases, allowing the PP1/PP2A-mediated dephosphorylation of Cdk1 and Aurora B substrates (e.g. Lamin B and Condensin I) necessary for mitotic exit.\n\nPrevious landmark work has carefully monitored the kinetics of Cyclin B1 degradation in living human HeLa and rat kangaroo Ptk1 cells during mitosis, and concluded that Cyclin B1 was degraded by the end of metaphase, becoming essentially undetectable as cells entered anaphase (Clute and Pines, 1999). However, we noticed that, consistent with our findings, a small pool of Cyclin B1 continued to be degraded during anaphase in Ptk1 cells (Clute and Pines, 1999). Subsequent work investigating cellular response to anti-mitotic drugs has also shown that human DLD-1 cells undergoing normal mitosis entered anaphase with as much as 32% of Cyclin B1 compared to metaphase levels (Gascoigne and Taylor, 2008), suggesting that human cells enter anaphase with significant Cdk1 activity. Indeed, quantitative analysis with a FRET biosensor in human HeLa cells also revealed residual Cdk1 activity during anaphase (Gavet and Pines, 2010). However, the significance of persistent Cdk1 activity for the control of anaphase duration and mitotic exit was not investigated in these original studies. Previous works also clearly demonstrated that forcing Cdk1 activity during anaphase through expression of non-degradable Cyclin B1 (and Cyclin B3 in Drosophila) prevents chromosome decondensation and NER (Parry and O'Farrell, 2001; Wheatley et al., 1997; Wolf et al., 2006). However, while these works suggested the existence of different Cyclin B1 thresholds that regulate distinct mitotic transitions, expression of non-degradable Cyclin B1 could be interpreted as an artificial gain of function that preserves Cdk1 activity during anaphase. For example, it was shown that expression of non-degradable Cyclin B1 during anaphase \u2018reactivates\u2019 the SAC, inhibiting APC/CCdc20 (Clijsters et al., 2014; Rattani et al., 2014; V\u00e1zquez-Novelle et al., 2014). Our work demonstrates in five different experimental systems, from flies to humans, including primary tissues, that Cdk1 activity persists during anaphase and is rate-limiting for the control of mitotic exit. Failure to degrade B-type Cyclins during anaphase blocked cells in an anaphase-like state with separated sister chromatids that remained condensed for several hours, whereas complete Cdk1 inactivation in anaphase triggered chromosome decondensation and NER. Importantly, if a positive feedback loop imposed by phosphatases was sufficient to drive mitotic exit simply by reverting the effect of Cdk1 phosphorylation prior to anaphase, cells would exit mitosis regardless of the remaining pool of B-type Cyclins that sustains Cdk1 activity during anaphase. The main conceptual implication of these findings is that, contrary to what was previously assumed, mitotic exit is determined during anaphase and not at the metaphase-anaphase transition under SAC control.\n\nOur model also implies that persistent Cyclin B1-Cdk1 in anaphase is spatially regulated by a midzone Aurora B gradient. Indeed, we were able to identify a residual pool of Cyclin B1-Cdk1 enriched at the spindle midzone and midbody and showed that this localization was dependent on Aurora B activity and localization at the spindle midzone. Interestingly, human Cyclin B2 (which contains a recognizable KEN box), as well as Cdk1, were identified at the midbody and Cdk1 inactivation during late mitosis was required for the timely completion of cytokinesis in human cells (Capalbo et al., 2019; Mathieu et al., 2013). Thus, it is possible that in human cells, Cdk1 activity during anaphase is regulated not only by Cyclin B1, but also by Cyclin B2. Importantly, this model predicted the existence of a midzone-centered Cdk1 activity gradient during anaphase, which we confirmed experimentally by targeting a FRET reporter of Cdk1 activity to chromosomes.\n\nFinally, our experiments indicate that Aurora B activity regulates Cyclin B1 homeostasis and consequently anaphase duration in the presence of incompletely separated chromosomes. One possibility is that direct Cyclin B1 phosphorylation by Aurora B (Kettenbach et al., 2011; Mathieu et al., 2013) spatially regulates Cyclin B1 degradation during anaphase, mediated by both APC/CCdc20 and APC/CCdh1. Another non-mutually exclusive possibility is that Aurora B indirectly controls Cyclin B1 during anaphase by regulating APC/CCdc20 and/or APC/CCdh1 activity, as recently shown for Cdk1 (Fujimitsu et al., 2016; Zhang et al., 2016). Future work will be necessary to test these hypotheses.\n\nIn conclusion, we uncovered an unexpected level of regulation at the end of mitosis in metazoans and reconciled what were thought to be antagonistic models of mitotic exit relying either on molecular \u2018clocks\u2019 or on \u2018rulers\u2019. These findings have profound implications to our fundamental understanding of how tissue homeostasis is regulated, perturbation of which is a hallmark of human cancers.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Drosophila)</td>\n      <td>CycB1-GFP</td>\n      <td>Buszczak et al., 2007</td>\n      <td></td>\n      <td>genotype: w; P{PTT-GC}ycBCC01846; P{His2Av-mRFP}/+</td>\n    </tr>\n    <tr>\n      <td>Biological sample (mice)</td>\n      <td>Oocytes from CD-1 mice</td>\n      <td>Charles River Laboratories</td>\n      <td>RRID:MGI:5652464</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Drosophila)</td>\n      <td>S2-U</td>\n      <td>Gohta Goshima</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Drosophila)</td>\n      <td>S2 H2B-GFP/mCherry-\u03b1-tubulin</td>\n      <td>Afonso et al., 2014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Drosophila)</td>\n      <td>S2 Lamin B-GFP/mCherry-\u03b1-tubulin</td>\n      <td>Afonso et al., 2014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Drosophila)</td>\n      <td>S2 KEN-Cyclin B1-GFP/mCherry-\u03b1-tubulin</td>\n      <td>This work</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Drosophila)</td>\n      <td>S2 GFP-Aurora B/WT-Cyclin B1-mCherry</td>\n      <td>This work</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>HeLa Cyclin B1-venus</td>\n      <td>Jonathon Pines</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>U2OS</td>\n      <td>Afonso et al., 2014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>hTERT-RPE1 Cyclin B1-venus</td>\n      <td>Jonathon Pines</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Plasmid for mRNA synthesis (mouse)</td>\n      <td>Cyclin B1-mCherry</td>\n      <td>Pasternak et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Drosophila)</td>\n      <td>pMT-GFP-Aurora B</td>\n      <td>Afonso et al., 2014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Drosophila)</td>\n      <td>non-degradable Cyclin B1-GFP</td>\n      <td>Afonso et al., 2014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Drosophila)</td>\n      <td>WT Cyclin B1-GFP</td>\n      <td>Mathieu et al., 2013</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Drosophila)</td>\n      <td>KEN Cyclin B1-GFP</td>\n      <td>This work</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti Drosophila Cyclin B1</td>\n      <td>James Wakefield</td>\n      <td></td>\n      <td>1:2500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse monoclonal anti Human Aurora B</td>\n      <td>Aim1, BD Biosciences</td>\n      <td>RRID:AB_2227708</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti Drosophila Cenp C</td>\n      <td>Claudio Sunkel</td>\n      <td></td>\n      <td>1:10000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse monoclonal anti-\u03b1-tubulin (B-512 clone)</td>\n      <td>Sigma</td>\n      <td></td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa-Fluor secondary antibodies</td>\n      <td>Thermo Fisher</td>\n      <td></td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>site-directed mutagenesis kit</td>\n      <td>Agilent</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RO3306</td>\n      <td>Sigma</td>\n      <td></td>\n      <td>10 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Binucleine-2</td>\n      <td>Sigma</td>\n      <td></td>\n      <td>40 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ZM447439</td>\n      <td>Tocris Bioscience</td>\n      <td></td>\n      <td>4\u20135 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MG132</td>\n      <td>Merck</td>\n      <td></td>\n      <td>20 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Apcin</td>\n      <td>Tocris Bioscience</td>\n      <td></td>\n      <td>200 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>pro-TAME</td>\n      <td>Boston Biochem</td>\n      <td></td>\n      <td>6.3 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SiR-DNA</td>\n      <td>Spirochrome</td>\n      <td></td>\n      <td>50 nM (Human cells) and 80 nM (Drosophila)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sir-TUB</td>\n      <td>Spirochrome</td>\n      <td></td>\n      <td>20 nM</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism V8</td>\n      <td>Graphpad</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>ImageJ/Fiji</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab</td>\n      <td>The MathWorks</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nDrosophila S2 cells were cultured in Schneider medium supplemented with 10% FBS and grown at 25\u00b0C. For live imaging cells were plated 2\u20133 hr before imaging in MatTek dishes (MatTek Corporation) pre-coated with 0.25 mg/ml concanavalin A. Human U2OS and HeLa cells were cultured in DMEM supplemented with 10% FBS and grown in a 5% CO2 atmosphere at 37\u00b0C. hTERT-RPE1 cells were grown in DMEM/F12 medium supplemented with 10% FBS. For all human cell lines, culture medium was changed to L-15 supplemented with 10% FBS 4\u20135 hr before live imaging. All cell lines used were free from mycoplasma contaminations as inferred by routine tests in a certified laboratory.\n\n### Drug treatments\n\nFor acute inhibition of Cdk1 in S2 and U2OS cells the Cdk1 inhibitor RO3306 (Sigma) was added in metaphase or at anaphase onset, depending on the experimental set-up, at final concentration of 10 \u03bcM. Binucleine-2 (Sigma) was used to acutely inhibit Aurora B activity in Drosophila S2 cells at a final concentration of 40 \u03bcM in all experiments. BI2536 (Axon MedChem) was used in Drosophila cells at a final concentration of 100 nM. To reduce anaphase poleward chromosome segregation velocity, Drosophila S2 cells were incubated with 10 nM taxol (Sigma) prior to live imaging. For the live MG132 (Calbiochem) assay in Drosophila S2 cells, metaphase cells grown in the absence of the drug were selected in a multipoint set-up and MG132 was added after the first round of acquisition (5 min), at a final concentration of 20 \u03bcM. Cells that entered anaphase in a time window between 30\u00a0and\u00a060 min after drug addition became arrested in anaphase, while the remaining cells became arrested in metaphase. MG132 addition at anaphase onset had no effect on the anaphase-telophase transition, likely due to a slower uptake of the drug in S2 cells. For the MG132 assay in U2OS and hTERT-RPE1 cells, MG132 was added 1\u20132 min before or at anaphase onset also at a final concentration of 20 \u03bcM. Drug addition 1\u20132 min after anaphase onset in U2OS or hTERT-RPE1 cells had no effect on anaphase duration. APC/C inhibition at anaphase onset on hTERT-RPE1 cells was achieved with a combination of both pro-TAME (Boston Biochem) and Apcin (Tocris Bioscience) used at final concentrations of 6.3 \u03bcM and 200 \u03bcM, respectively, as previously reported (Sackton et al., 2014). Similarly to MG132 treatment, APC/C inhibition 1\u20132 min after anaphase onset, or individual treatment with each drug showed a mild or no effect. APC/C inhibition in Drosophila cells was achieved by addition of Apcin at anaphase onset at a final concentration of 200 \u03bcM. ZM447439 (Tocris Bioscience) was used at 4 \u03bcM to inhibit Aurora B in U2OS cells and 5 \u03bcM for Aurora B inhibition at anaphase onset on hTERT-RPE1 cells. SiR-DNA (Spirochrome) was used at a final concentration of 80 nM in Drosophila S2 cells and 50 nM in hTERT-RPE1 cells and incubated 30\u201360 min prior to imaging. SiR-Tubulin (Spirochrome) was used at a final concentration of 20 nM and incubated 30\u201360 min prior to imaging.\n\n### Immunofluorescence microscopy\n\nDrosophila S2 cells were grown in coverslips previously pre-coated with 0.25 mg/ml concanavalin A. hTERT-RPE1 control and Mklp2-depleted cells were plated on glass coverslips. Cells were fixed with 4% PFA for 10 min, permeabilized with 0.3% Triton diluted in PBS for 10 min and washed 3 \u00d7 5 min with PBS-Tween. Primary antibodies used were mouse anti-\u03b1-tubulin (1:2000; B-512 clone, Sigma); rabbit anti-Cyclin B1 (gift from James Wakefield, University of Exeter); mouse anti-Aurora B (1:500, Aim1, BD Biosciences) and rabbit anti-Cenp C (gift from Claudio Sunkel, i3S, University of Porto, Portugal). Corresponding Alexa-Fluor secondary antibodies were used at 1:2000. Fixed images from Figure 1\u2014figure supplement 1 were obtained on an inverted Zeiss 780 confocal microscope with a 63x oil immersion objective. Fixed images from Figure 1\u2014figure supplement 3e and f were obtained on an AxioImager Z1 with a 63x, plan oil differential interference contrast objective lens, 1.4 NA (from Carl Zeiss), equipped with a charge-coupled device (CCD) camera (ORCA-R2; Hamamatsu Photonics). Forced mitotic exit was achieved by a 10 min incubation with 10 \u03bcM RO3306 before fixation.\n\n### Constructs\n\nThe pMT-GFP-Aurora B and the non-degradable Cyclin B1-GFP were described previously (Afonso et al., 2014). The non-degradable Cyclin B3 construct was a gift from Christian F. Lehner (University of Zurich, Switzerland). The KEN-box mutant was generated in the pMT-Cyclin B1-GFP plasmid using a site-directed mutagenesis kit (Agilent), following the manufacturer's instructions. The following primers were used for mutagenesis: Fw: 5\u2019-ggacattgatgccaatgacgcggcgaacctggtactggtctcc-3\u2019 and Rv 5\u2019- ggagaccagtaccaggttcgccgcgtcattggcatcaatgtcc-3\u2019. To make the chromatin targeted FLIM-FRET sensor, DNA encoding the polo box domain (PBD) of polo like kinase 1 (Plk1), a 15 amino acid linker domain, and 16 amino acid recognition sequence containing the CyclinB1-Cdk1 auto-phosphorylation sites from human CyclinB1 was amplified by PCR from a previously generated CyclinB1-Cdk1 FRET sensor (Gavet and Pines, 2010), Addgene plasmid #2327) with a 5\u2019 SpeI site and 3\u2019 NotI site. The resulting PCR product was inserted by Gibson cloning between mTurquoise2 (FRET donor) and mVenus (FRET acceptor) in a pMT/V5 His-B vector backbone (Invitrogen) containing the CENP-C promotor inserted between the first XbaI site and the KpnI site and the human histone H2B gene inserted at the KpnI site downstream of the CENP-C promoter. The mTurquoise2 gene was positioned after the human histone H2B gene between KpnI and SpeI, while the mVenus gene with a stop codon was inserted between the NotI and SacII sites. To generate the non-phosphorylatable chromatin-targeted FRET sensor, the same construct was generated but using Addgene plasmid #2328 (Gavet and Pines, 2010) in which the codons for the phospho-serine residues were replaced with codons for alanines. The resulting constructs are well-suited for FLIM analysis due to the fact that mTurquoise2 exhibits a mono-exponential decay in its lifetime.\n\n### Cell lines, transfections, and RNAi\n\nThe H2B-GFP/mCherry-\u03b1-tubulin and Lamin B-GFP/mCherry-\u03b1-tubulin stable cell lines have been previously described (Afonso et al., 2014). The WT-Cyclin B1-GFP/mCherry-\u03b1-tubulin, KEN-Cyclin B1-GFP/mCherry-\u03b1-tubulin and GFP-Aurora B/WT-Cyclin B1-mCherry stable cell lines were established using Effectene (Qiagen) according to the manufacturer's instructions. For visualization of WT-Cyclin B1-GFP, WT-Cyclin B1\u2013mCherry and GFP-Aurora B signals 250 \u03bcM of CuSO4 was added to the medium overnight (8\u201312 hr) to induce expression from a metallothionein promoter. With this copper concentration, we obtained a mild expression of the constructs without any detectable impact on mitotic progression. Aurora B overexpression was achieved by adding 1 mM of CuSO4 instead of 250 \u03bcM for the same incubation period. The chromatin-targeted CyclinB1-Cdk1 FRET reporter was co-transfected with TagRFP-T-\u03b1-tubulin and selected with Blasticidin and then Hygromycin (Life Technologies). Some FLIM data were acquired from transiently transfected cells prior to selection and from stable cell lines that had been incubated overnight with 500 \u03bcM CuSO4, which still induced moderate expression even with the CENP-C promoter in place. The HeLa and hTERT-RPE1 Cyclin B1-Venus cell lines (Collin et al., 2013) were a kind gift from Jonathon Pines (Institute of Cancer Research, UK). The H2B-mRFP expression construct for human cells was obtained from Addgene (#26001), transfected to 293 T cells to produce viruses and infect HeLa Cyclin B1-Venus expressing cells to generate a stable cell line. The human Cdk1-GFP construct was obtained from Origene (#RG200495) and transiently transfected into HeLa cells using Lipofectamin 2000 (Invitrogen) following the manufacturer's instructions. The H2B-GFP/mCherry-\u03b1-tubulin U2OS cell line, the KLP10A and the Subito/Mklp2 RNAi in Drosophila S2 cells were previously described (Afonso et al., 2014). Fzr RNAi in Drosophila S2 cells was achieved after two rounds of RNAi treatment for a total of 7 days. The following primers were used for dsRNA synthesis: 5\u2019-taatacgactcactatagggcaccggataatcaatacttggc-3\u2019 and 5\u2019-taatacgactcactatagggattcagaacggacttgttctcc-3\u2019. Mklp2 depletion in hTERT-RPE1 cells was achieved 72 hr after transfection of siRNA oligonucleotides using Lipofectamine RNAiMAX (Invitrogen) following the manufacturer's instructions. The oligonucleotide sequence used was: 5\u2019- AACGAACUGCUUUAUGACCUA-3\u2019.\n\n### Time-lapse microscopy\n\nLive imaging data in Figure 2 and Figure 2\u2014figure supplement 1 were obtained from a spinning disc confocal system (Andor Technology, South Windsor, CT) equipped with an electron multiplying CCD iXonEM+ camera and a Yokogawa CSU-22 U (Yokogawa Electric, Tokyo) unit based on an Olympus IX81 inverted microscope (Melville, NY). Two laser lines (488 and 561 nm) were used for near simultaneous excitation of GFP and mCherry/mRFP and the system was driven by Andor IQ software. Time-lapse image stacks of 0.8 \u03bcm steps were collected every 30 s, with a Plan- APO 100x/1.4 NA oil objective, with the exception of the experiments in Figure 2\u2014figure supplement 1 where image stacks were obtained every 60 s. Live imaging data in all other figures, except the FLIM experiments, were acquired in a temperature-controlled Nikon TE2000 or a Ti microscope, both equipped with a Yokogawa CSU-X1 spinning-disc head, imaged on an Andor iXon+ DU-897E EM-CCD. Excitation comprises three lasers (488 nm, 561 nm and 647 nm) that were shuttered by an acousto-optic tunable filter (TE2000) or electronically (Ti). Sample position was controlled via a SCAN-IM Marzhauser stage and a Physik Instrumente 541.ZSL piezo (TE2000) or via a Prior Scientific ProScan stage (Ti). Imaging of Drosophila S2 cells was performed with a 100x Plan-Apo DIC CFI Nikon objective in all experiments. Imaging of human cells and the Drosophila follicular epithelium was done with an oil-immersion 60 \u00d7 1.4 NA Plan-Apo DIC CFI (Nikon, VC series). Imaging of the mouse oocytes was performed either with a 60 \u00d7 1.27 NA CFI Plan-Apo IR water-immersion objective (Nikon) or a 40 \u00d7 1.30 NA Plan-Fluor oil-immersion objective (Nikon). Images were acquired with a 1 \u00b5m z-stack and 30 s time-lapse interval for all live imaging experiments in Drosophila S2 cells, Drosophila follicular epithelium and human cells. Mouse oocytes were acquired with a 4 \u00b5m z-stack and a 2 min time interval. Data from Figures 3 and 6 were obtained with a 5 min time interval and data from Figure 4 were obtained with a 1 min time interval. A temperature-controlled chamber was set up to 25\u00b0C for Drosophila live imaging or to 37\u00b0C for live imaging of human cells and mouse oocytes.\n\n### Live-cell FLIM-FRET\n\nCells were imaged on a Nikon TiE A1R Spectral Detector Confocal with time-correlated FLIM at the UMass Amherst Institute for Applied Life Science Light Microscopy Facility using the 1.45 NA 100x oil immersion objective lens (Nikon). Time-correlated single photon counting (TCSPC) was conducted using two HPM-100\u201340 detectors (Becker and Hickl) and a 50 mHz pulsed 445 nm laser (BDL-445-SMN). Cells were identified by eye under wide-field fluorescence on the RFP channel. To collect FLIM data, the 445 nm pulsed diode laser (Becker and Hickl) was set to 50% laser power, and 40\u201350 million photons were detected per scan. NIS-Elements (Nikon) was used to control the microscope hardware, SPCM64 (Becker and Hickl) was used for FLIM acquisition, and SPCImage (Becker and Hickl) was used for FLIM analysis.\n\n### FLIM analysis\n\nFLIM analysis was conducted in SPCImage software to determine values for the fluorescence lifetime ($\\tau_{FRET}$), the short lifetime, % short lifetime, % long lifetime, and FRET efficiency (E). FRET efficiency can be calculated using the equation:\n\n$$\nE=1-\\frac{\\tau_{FRET}}{\\tau_{D}}\\times100%\n$$\n\nWhere $\\tau_{D}$ is the lifetime of the donor under non FRET conditions, which was measured to be 3573.2 picoseconds in Drosophila S2 cells expressing mTurquoise2 in the absence of any acceptor under the same conditions used in the experiments. This value was fixed for the long lifetime when conducting 2-exponential fits in SPCImage to yield $\\tau_{FRET}$ - the lifetime of the donor under possible FRET conditions. Fitting the data with a 2-exponential decay also provides values for the short lifetime, % short lifetime (indicative of the % of sensor engaged in FRET), and % long lifetime (indicative of the % of sensor not engage in FRET). Decay matrices were generated to display color images of either fluorescence lifetimes or FRET efficiencies. For quantifying lagging and segregated chromatin, the donor lifetime and FRET efficiencies were quantified by drawing an ROI around chromatin in the vicinity of the midzone for lagging chromatin and compared to the average of the lifetime and FRET efficiencies of the two masses of segregated chromosomes. To assess the contribution of Cdk1, cells were imaged between 5-40 min following the addition of 10 \u03bcM RO-3306 (Santa Cruz Biotechnology).\n\n### Drosophila strains and egg chamber preparation\n\nFlies homozygous for the eGFP protein trap insertion into CycB1 loci (CC01846\u00a0[Buszczak et al., 2007]) and expressing His2Av-mRFP (genotype: w; P{PTT-GC}CycBCC01846; P{His2Av-mRFP}/+) were generated to image Cyclin B1 expression at endogenous levels while monitoring mitotic progression. Drosophila egg chambers were dissected and mounted in the gas-permeable oil 10S VOLTALEF (VWR chemicals) for live imaging.\n\n### In vitro culture and micro-injection of mouse oocytes\n\nAll mice were maintained in a specific pathogen-free environment according to the Portuguese animal welfare authority (Direc\u00e7\u00e3o Geral de Alimenta\u00e7\u00e3o e Veterin\u00e1ria) regulations and the guidelines of the Instituto de Investiga\u00e7\u00e3o e Inova\u00e7\u00e3o em Sa\u00fade animal facility. Oocytes were isolated from ovaries of 7\u201310 week old CD-1 mice, cultured in M2 medium under mineral oil and matured to metaphase II in vitro for 16 hr at 37\u00b0C. Oocytes were then microinjected with mRNA encoding Cyclin B1-mCherry (Pasternak et al., 2016) using an electric-assisted microinjection system (FitzHarris et al., 2018). A function generator (GW Instek AFG-2005) was used to produce electrical current instead of an intracellular electrometer. Oocytes were then transferred to M2 medium supplemented with SiR-DNA (500 nM, Spirochrome) and allowed to express the mRNA for 4\u20136 hr. Oocytes were then induced parthenogenically by rinsing into calcium-free M2 medium with 10 mM strontium chloride, and imaged. mRNA in vitro transcription pGEMHE-CyclinB1-mCherry (Pasternak et al., 2016) was a kind gift from Melina Schuh (Max-Planck Institute for Biophysical Chemistry). The plasmid was linearised, and capped mRNA was synthesized using the T7 ARCA mRNA kit (New England Biolabs) according to the user\u2019s manual and resuspended in water. The final concentration of mRNA in the injection needle was 400 ng/\u00b5l.\n\n### Definition of mitotic exit\n\nMitotic exit was defined either by the moment of NER or chromosome decondensation. When a nuclear envelope marker was present (ex: Lamin B in Figure 2) mitotic exit was defined as the first frame of appearance of Lamin B in the nascent nucleus. In experiments where cells expressed mCherry-\u03b1-tubulin, NER was determined based on the first frame where soluble mCherry-\u03b1-tubulin was excluded from the main nucleus. In those cases where mCherry-\u03b1-tubulin was not present, SiR-DNA was used instead and visual inspection of DNA decondensation was used to define mitotic exit.\n\n### Quantification of Cyclin B1 decay during anaphase\n\nImage processing and quantification was performed using Fiji. Data from Drosophila S2 in Figures 3e and 5d and h, 8 c, 10 f and Figure 1\u2014figure supplement 2d, Cyclin B1 were measured with a constant circular ROI around the centrosomes. This resulted in more robust measurements, which were less prone to fluorescence fluctuations in the cytoplasm. This was essential to detect differences in the Cyclin B1 decay in the different conditions tested. Exceptionally, and to compare Cyclin B1 levels in Drosophila and human cells, in Figure 1c total Cyclin B1-GFP fluorescence intensity was measured using an ROI defined by the limits of the cell. Cyclin B1 levels from Figure 7e,g and Figure 7\u2014figure supplement 1 were measured with a constant rectangular ROI defined by the size of the metaphase plate before cells entered anaphase. This size and position was maintained to measure the intensity of Cyclin B1 that localized at the spindle midzone in control cells and after Cdk1 addition. Note that with the same ROI in Figure 7\u2014figure supplement 1c both Cyclin B1 and Aurora B intensities were measured. Data from human cells from Figures 1c and 6f and Figure 1\u2014figure supplement 3, total Cyclin B1 were measured with an ROI defined by the limits of the cell. In both cases, the ROI was used to manually track the centrosome/midzone/cell over time. Images were maximum intensity projected and background was measured for all time points with the same ROI used for Cyclin B1 measurements in a region outside the cell. The background levels were subtracted from the absolute intensity values. In the Drosophila follicular epithelium Cyclin B1 levels were measured in sum-intensity Z projections, using a circular ROI that was manually tracked in an homogeneous cytoplasmic region (free of accumulated Cyclin B1 at microtubules or centrosomes) of dividing cells. Background was measured with the equivalent ROI in G1 phase cells (identified by undetectable Cyclin B1-GFP expression) within the same egg chamber, and subtracted to dividing cells to establish the baseline background value. In mouse oocytes, Cyclin B1 was measured using a ROI placed manually into the center of the oocyte, background levels were measured in a ROI outside the cell and used for subtraction from the mean cytoplasmic intensity. Images were sum-intensity Z projected.\n\n### Calculation of Cyclin B1 half-life\n\nThe half-life of Cyclin B1-GFP or Cyclin B1-Venus was calculated based on the formula\n\n$$\nt*\\frac{ln2}{ln\u2061(\\frac{n(t)}{n(0)})}\n$$\n\nwhere t is the time interval, n(0) is the background subtracted Cyclin B1-GFP fluorescent intensity at anaphase onset and n(t) is the background subtracted Cyclin B1-GFP fluorescent intensity at time 4.5 min or 6.5 min after anaphase onset, as indicated in the figure legends.\n\n### Statistical analysis\n\nNormality of the samples was determined with a D\u2019Agostino and Pearson test. Statistical analysis for two-sample comparison, with normal or non-normal distribution, was performed with a t-test or Mann-Whitney test, respectively. P value was considered extremely significant if p<0.0001 or p<0.001, respectively, very significant if 0.001\u00a0< P < 0.01 and significant if 0.01\u00a0< P < 0.05. In all plots error bars represent standard deviation, unless indicated otherwise. All statistical analysis was performed with GraphPad Prism V8 (GraphPad Software, Inc), except the calculation of P-values in the FLIM experiments, which used the PlotsOfDifferences web app (Goedhart, 2019).\n\n### Sample size and replicates\n\nThe sample size was not statistically determined. Whenever possible a minimum of n\u00a0=\u00a010 was analyzed, however, in cases where the data obtained were highly consistent an n\u00a0<\u00a010 was considered. For RNAi-mediated depletion experiments at least two independent RNAi experiments were prepared and imaged. Statistical differences between independent RNAi experiments were analyzed, and whenever sample size was not large enough cells from independent experiments were pulled all together and statistical analysis was performed on the entire population. For drug addition experiments each cell was considered an independent experiment and a minimum of 4 or more cells were imaged for each condition.\n\n### Code availability\n\nMatlab based custom routines were used for the generation of kymographs. The Source Code File is provided as supplementary information.\n\n### Data availability\n\nAll data generated or analyzed during this study are included in this published article (and its supplementary information files).\n",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "635676c0-7d41-4fbd-bc8e-ba41855233b0",
+      "submission_id": "56a96bd2-3f7f-4224-bc74-cc7a372c93f6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon Pines, Institute of Cancer Research Research United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.47646.051](https://doi.org/10.7554/eLife.47646.051)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mitotic exit is controlled during anaphase by an Aurora B-Cyclin B1/Cdk1 crosstalk\" for consideration by eLife. Your article has been reviewed by Anna Akhmanova as the Senior Editor, a Reviewing Editor, and two reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAfonso et al., present evidence for a mitotic exit network in Drosophila S2 cells regulated by crosstalk between Aurora B and Cyclin B-Cdk1 in anaphase. They show that low levels of cyclin B persist in early anaphase and that cyclin B continues to be degraded during anaphase, most likely by APC/C-Cdh1. The timing of chromosome decondensation and nuclear envelope reformation correlate with the disappearance of cyclin B1 from centrosomes and preventing cyclin B degradation in anaphase using the proteasome inhibitor MG132 arrests cells in early anaphase and delays NER and chromosome decondensation. This arrest depends on Cdk1 activity. They further show that a small amount of cyclin B1-GFP is present on the spindle midzone in anaphase in S2 cells, colocalizing with Aurora B and depending on Subito/Mklp2. In Drosophila, cyclin B1 is a substrate of Aurora B (Mathieu et al., 2013), and Afonso et al. show that the degradation of a phosphomimetic (5E) mutant of cyclin B1 is delayed, and increases anaphase duration. A non-phosphorylatable (5A) cyclin B mutant is degraded faster in anaphase. The authors propose that the initial degradation of cyclin B1 in metaphase drives Aurora B to the spindle midzone via Subito/Mklp2. Subsequently, Aurora B at the spindle midzone establishes a phosphorylation gradient that spatially restricts cyclin B1 localization and delays its degradation via APC/C cdh1.\n\nThis is an interesting model but the reviewers had several major concerns over the generality of the model \u2013 notably whether it was Drosophila-specific \u2013 and that some of the key experiments did not directly test the model that cyclin B1 degradation is responsive to physiological perturbation of mitotic exit conditions.\n\nEssential revisions:\n\n1) The authors should show that AurB inhibition delays Cyclin B degradation in Drosophila S2 cells and in endogenously tagged human cells.\n\n2) The authors should show that endogenous Cyclin B localises to the midzone; moreover, there is no evidence provided that spindle midzone localization of cyclin B requires Aurora B (protein or activity). Subito depletion also affects localization of Polo at the midzone (Cesario et al., 2006), so cyclin B localization might as well depend on this kinase, or simply depend on Subito and not on Aurora B.\n\n3) Since none of the Aurora B sites in Drosophila cyclin B1 are conserved in human cyclin B1 (Mathieu et al., 2013) the authors should analyse the effects of human AurB phospho-mutants.\n\nOther points:\n\n1) The way the Aurora B and Subito experiments are presented and interpreted are confusing. The model proposed in Figure 10 predicts that a lack of Aurora B at the spindle midzone would accelerate cyclin B degradation due to the absence of a phosphorylation gradient that spatially restricts cyclin B1 on the spindle midzone. However, in Figure 8, and Figure 7\u2014figure supplement 1, cyclin B1 degradation is delayed when Aurora B is not on the midzone, and anaphase duration prolonged. This could be due to the fact that after Subito knock-down, Aurora B is retained much longer on the chromatin (Figure 1\u2013figure supplement 3f), similar to what happens after Aurora B overexpression (Figure 7\u2014figure supplement 1). Having Aurora B (and cyclin B/cdk1) at the midzone allows the formation of a phosphorylation gradient (due to counteracting activities of PP2A/PP1). Movement of chromosomes away from the heart of the gradient would allow exit. When Aurora B (and cyclin B? \u2013 this is unclear) is retained on the chromatin, this spatial separation is obviously not possible. Moreover, it might also explain why degradation of cyclin B at centrosomes is delayed under these conditions as more Aurora B is in closer proximity of these structures. Related to this: does cyclin B colocalize with Aurora B on the chromatin after Subito depletion? Where do the cyclin B 5E and 5A mutants localize (apart from the centrosomes)? Potential localization on chromatin is masked by the H2B-GFP.\n\n2) It looks as if depletion of Mklp2 affects cyclin B localization on the mitotic spindle before anaphase. Is this consistent? If so, doesn't this impact the cyclin B-GFP intensity measurements?\n\n3) The lack of effect of acute PP1/PP2A inhibition on cyclin B1 degradation (Figure 9G) is difficult to reconcile with a model in which a phosphorylation gradient concentrates cyclin B/cdk1 activity at the spindle midzone (Figure 10), and with the observation that a cyclin B 5E mutant is more stable and delaying mitotic exit (Figure 9C,D). The latter would suggest that cyclin B needs to be dephosphorylated for timely degradation.\n\n4) All referees had concerns with Figure 4:\n\nWhat is happening to the spindle and chromosomes after MG132 addition and subsequent Cdk1 inhibition in U2OS cells. It looks as if cytokinesis (abscission unclear) is taking place and that in these daughter cells the half spindle (00:10) is forming a new 'metaphase' spindle over time on which the separated sisters try to align (01:00 and 01:30). After Cdk1 inhibition, both spindles undergo an aberrant anaphase/exit. Can this phenotype be regarded as a delay in anaphase, or should it be considered as a reversion into prometaphase? In S2 cells, the anaphase delay is much more clear, because cytokinesis does not appear to take place and the two half spindles rejoin after Cdk1 inhibition.\n\nIf cells only enter anaphase when Cdk1 activity has fallen below the required threshold to maintain metaphase, then how can cells arrested in anaphase by MG132 return to a metaphase-like state? Presumably this state results from blocking degradation events (cyclin B or other targets) normally contributing to disassembly of the spindle poles during anaphase. (And it implies that the central spindle \u2013 in contrast \u2013 disassembles under these conditions). Without further justification of the 'metaphase' label (e.g. restoration of Cdk activity), it should be avoided.\n\nProteasomal inhibition in anaphase blocks mitotic exit. The authors interpret these results in an \"anaphase arrest\" This is true as far as cohesion cleavage is concerned. However, the spindle appears to reform and from a cytoskeletal and cell cycle control perspective it looks more as if the cells were simply being pushed back into a mitotic state. This experiment shows that if Cdk1 activity is maintained above a threshold mitotic exit is blocked, most likely because phosphatases fail to reactivate. The particular experimental set up (i.e. adding a proteasome inhibitor following anaphase onset) is novel; however, the results are not particularly surprising, given for example the results shown by Potapova et al. that even reactivation of Cdk1 in late telophase reactivates the mitotic state. The movies and images do not really support the notion of accelerated mitotic exit by AurB inhibition. Likewise, in the legend for Figure 4C the authors state: Note that for MG132 and MG132+Aurora B inhibition anaphase duration corresponds to the total duration of the movie as most cells do not exit mitosis until the end of the acquisition. I am not sure how in this case accelerated mitotic exit following AurB inhibition can be supported by the data? Also, it is not clear what the grey, green, purple colour code means.\n\n5) The videos are not referred to in the text.\n\n6) Degradation analyses of cyclin B1 usually show that cells enter anaphase with some protein remaining (in contrast to some figures in the original Clute & Pines 1999 study, which is cited to justify the statement at bottom of p8 that cyclin B1 is 'undetectable' at anaphase entry). The thresholding of anaphase entry underpins the phenomenon of mitotic slippage and has been explored at length in more recent literature that is not cited in this study. For example, a study from Stephen Taylor's lab (Gascoigne, 2009) measured a Cyclin B1-GFP threshold for anaphase corresponding to 32% of metaphase levels.\n\n7) The phrase 'mitotic exit' needs to be used more carefully. It is conventionally used to describe the collective events that occur after anaphase onset and the authors sometimes use the phrase in this sense but in some places they use it to describe the point at which cells have completed these events (e.g. subsection \u201cCyclin B1 continues to be degraded during anaphase and its disappearance is a strong predictor of mitotic exit in metazoans\u201d 'complete Cyclin B1 disappearance from centrosomes during anaphase strongly correlated with mitotic exit').\n\n8) No mention is made of the likely presence of cyclin B3 in anaphase cells. B3 is degraded later than B1, and could contribute to Cdk1-dependent delay in mitotic exit.\n\n9) Figure 5 shows a very small effect of FZR depletion on cyclin B1 degradation at anaphase (especially in (f)) suggesting that Cdh1 may only play a minor role. The authors argue that prolonged Cdc20 activity can compensate for lack of Cdh1 under these conditions, by targeting cyclin B1 through its D-box (whereas Cdh1 targets it through KEN). These arguments do not properly reflect the latest thinking on patterns of APC/C-degron recognition. Cryo-EM structures published over the recent years have established a paradigm of multivalent APC/C-substrate interaction through two or more degrons and Cdc20 and Cdh1 have almost identical KEN and D-box receptor sites. It would be safer to conclude that Drosophila Cyclin B1 degradation in anaphase is mediated through both KEN and D-box, and can be carried out by either Cdc20 or Cdh1. This could be tested by the combination of KEN-mt/APCin.\n\nThe authors should note that APCin cannot be expected to inhibit a KEN-box dependent event, since it is a D-box competitor, so the discussions at top of p6 and middle p10 are incorrect \u2013 the additive effect of APCin and proTAME on anaphase arrest does not support a role for Cdh1 in anaphase cyclin B1 degradation. It supports that additive interactions of Cdc20/Cdh1 and substrate degrons are required for efficient ubiquitination of substrates.\n\n10) Effects on cyclin B1-GFP degradation look very small in regular degradation plots, and are more convincingly presented as half-life measurements (e.g. Figure 8E, Figure 1\u2014figure supplement 3D). The degradation curve for OA treatment (Figure 9E) also appears to show a very small difference in rate between treated and untreated cells; these data should likewise be presented as half life measurements to provide same level of proof as in other figures.\n\n11) As far as I am aware, 'anaphase arrest' (Figure 5J) has never been described as a consequence of FZR depletion in mammalian cells. Could additional markers be used to show that this is really an anaphase arrest (as opposed to death in anaphase)?\n\n12) To my knowledge Cdk1 inhibition after anaphase onset has not been analysed before and it makes sense that this causes a faster reformation of the NE. This can be explained by the Cundell et al., papers due to premature Greatwall inactivation and PP2A:B55 reactivation. These papers should be cited here.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Spatiotemporal control of mitotic exit during anaphase by an Aurora B-Cdk1 crosstalk\" for further consideration at eLife. Your revised article has been favorably evaluated by Anna Akhmanova (Senior Editor) and Jonathon Pines as Reviewing Editor.\n\nThe revised paper has addressed the substantive criticisms of the reviewers but before publication you will need to modify the text to take account of the following points, and in particular to tone down your conclusions for human cells:\n\n1) Subsection \u201cCyclin B1 degradation during anaphase is mediated by APC/CCdh1: Glotzer et al., 1991 is not the correct reference for Cyclin B1 degradation under the control of the SAC. The correct reference is Clute and Pines, 1999.\n\n2) Subsection \u201cCyclin B1 degradation during anaphase is mediated by APC/CCdh1: The caveat to the APCin/TAME experiment is that both inhibitors might be needed because they are relatively inefficient, not that Cdc20 and Cdh1 are additive in anaphase.\n\n3) Subsection \u201cCyclin B1-Cdk1 localization and activity during anaphase are spatially 224 regulated by Aurora B at the spindle midzone\u201d: The caveat to Figure 7 is that the presence of Cdk1 does not imply the presence of Cyclin B1.\n\n4) Discussion section: APC/C-Cdc20 degrades Cyclin B1 in metaphase not at the meta-and transition.\n\n5) Discussion section: You have not shown that human Cyclin B1 persists at the spindle midzone, just Cdk1.\n",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f666f29e-ceb9-4764-a63f-825e7223cda3",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C1",
+      "claim": "Cyclin B1 continues to be degraded during anaphase in Drosophila S2 cells",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous reports (Clute and Pines, 1999; Huang and Raff, 1999), cytoplasmic Cyclin B1-GFP levels decreased abruptly at the metaphase-anaphase transition (Figure 1a,c). However, in contrast to what has been observed in Drosophila embryos (Huang and Raff, 1999), the centrosomal pool of Cyclin B1 in S2 cells was the most resistant to degradation and persisted well after anaphase onset, becoming undetectable only ~1 min before DNA decondensation (Figure 1a,c, Figure 1\u2014figure supplement 1a,a' and Figure 1\u2014figure supplement 2a,d,e and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live imaging data showing Cyclin B1-GFP levels during anaphase in S2 cells (Figure 1a,c) and quantification showing persistence of centrosomal Cyclin B1 until ~1 min before DNA decondensation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "d9f1ce9d-40fd-4443-a0b1-aa2bbe2f3009",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C2",
+      "claim": "Complete Cyclin B1 disappearance from centrosomes during anaphase strongly correlates with mitotic exit in Drosophila S2 cells",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, complete Cyclin B1 disappearance from centrosomes during anaphase strongly correlated with mitotic exit (Figure 1\u2014figure supplement 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 1\u2014figure supplement 2f demonstrating statistical relationship between Cyclin B1 disappearance and anaphase duration",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "0abd9248-92e7-408a-a1a0-5c9b9b78912f",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C3",
+      "claim": "Cyclin B1 continues to be degraded during anaphase in human HeLa and hTERT-RPE1 cells",
+      "claim_type": "EXPLICIT",
+      "source": "To extend the significance of these observations, we monitored endogenously tagged Cyclin B1-Venus levels in human HeLa and hTERT-RPE1 cells (Collin et al., 2013) throughout mitosis and found that it also continues to be degraded during anaphase (Figure 1b,c and Figure 1\u2014figure supplement 3a,c and Videos 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live imaging data of endogenously tagged Cyclin B1-Venus in human cells showing continued degradation during anaphase",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "3fdd6ff2-2aa3-4e09-9397-a9d41d1616df",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C4",
+      "claim": "Cyclin B1 continues to be degraded during anaphase in primary adult Drosophila follicular epithelium cells",
+      "claim_type": "EXPLICIT",
+      "source": "The physiological relevance of these findings was confirmed in primary adult Drosophila follicular epithelium cells (ex vivo) expressing endogenously tagged Cyclin B1-GFP (Figure 1d,e and Video 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live imaging data from primary Drosophila follicular epithelium cells showing Cyclin B1-GFP degradation during anaphase",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "6e6ed83b-1edd-414c-b5e2-1591c6683cdf",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C5",
+      "claim": "Cyclin B1 continues to be degraded during meiosis II in mouse oocytes",
+      "claim_type": "EXPLICIT",
+      "source": "and after injection of Cyclin B1-mCherry mRNA in mouse oocytes undergoing meiosis II, when chromosomal division is similar to mitosis (Figure 1f,f', g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live imaging data from mouse oocytes injected with Cyclin B1-mCherry mRNA showing degradation during meiosis II",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "0960cab6-be3e-4c87-9549-15f613a28874",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C6",
+      "claim": "Cyclin B1 disappearance is a strong predictor of mitotic exit in metazoans",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Cyclin B1 continues to be degraded during anaphase in Drosophila, mouse and human cells, including primary tissues, and its disappearance is a strong predictor of mitotic exit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on correlation data from multiple species and cell types showing relationship between Cyclin B1 disappearance and mitotic exit timing",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "9e79609c-8082-41e7-b794-4d169c35810e",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C7",
+      "claim": "Acute Cdk1 inhibition at anaphase onset accelerates nuclear envelope reformation in Drosophila S2 cells",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the functional relevance of an anaphase Cyclin B1 pool we acutely inhibited Cdk1 activity at anaphase onset with RO-3306 (Vassilev et al., 2006) and found that it accelerated NER in S2 cells (Figure 2a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing reduced anaphase duration after RO-3306 treatment at anaphase onset (Figure 2a-d)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "e6e8bab7-a46e-4e7c-bafb-e48a942a5000",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C8",
+      "claim": "Expression of non-degradable Cyclin B1 prevents normal spindle elongation and induces an extensive delay in anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, expression of non-degradable Cyclin B1 or Cyclin B3 prevented normal spindle elongation and induced an extensive delay in anaphase, in agreement with previous works (Afonso et al., 2014; Parry and O'Farrell, 2001; Potapova et al., 2006; Sigrist et al., 1995; Wolf et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citations to previous studies showing anaphase delays with non-degradable Cyclin B expression",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "90e66c65-fc26-4a11-a922-b397e9214be7",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C9",
+      "claim": "The anaphase delay caused by non-degradable B-type Cyclins is dependent on Cdk1 activity",
+      "claim_type": "EXPLICIT",
+      "source": "While this delay was dependent on Cdk1 activity (Figure 2\u2014figure supplement 1a\u2013e)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing that Cdk1 inhibition rescues the anaphase delay caused by non-degradable Cyclin B expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "8122f1eb-33dc-4d45-9b19-34619c49fb24",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C10",
+      "claim": "Proteasome inhibition with MG132 at anaphase onset causes cells to remain in an anaphase-like state for several hours with separated sister chromatids",
+      "claim_type": "EXPLICIT",
+      "source": "As so, we also investigated the effect of inhibiting proteasome-mediated degradation of wild-type B-type Cyclins, including endogenously tagged versions, by adding MG132 just before or at anaphase onset in Drosophila and human cells, respectively. Under these conditions, cells remained in an anaphase-like state for several hours with separated sister chromatids and detectable Cyclin B1, often reverting to a metaphase-like state (Figure 3a,d,e, Figure 4a,d,e, Figure 6a,b,f and Videos 5 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live imaging data showing prolonged anaphase arrest with detectable Cyclin B1 after MG132 treatment in both Drosophila and human cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "38f93f19-7548-42c1-b549-b602bc6faec4",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C11",
+      "claim": "Aurora B inhibition in MG132-treated anaphase cells is not sufficient to drive cells out of mitosis",
+      "claim_type": "EXPLICIT",
+      "source": "After Aurora B inhibition with Binucleine-2 (Smurnyy et al., 2010) or ZM447439 (Ditchfield et al., 2003) in Drosophila and human cells, respectively, they also remained in an anaphase-like state for several hours and often reverted into a metaphase-like state, but mitotic exit was resumed significantly earlier than MG132-treated controls (Figure 3b,d, Figure 4b,d,e and Videos 7 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing that Aurora B inhibition in MG132-arrested cells does not immediately trigger mitotic exit, though it occurs earlier than controls",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "aa7941f2-b9f1-42bc-9f61-7d7f082da09d",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C12",
+      "claim": "Cdk1 inhibition immediately triggers chromosome decondensation and mitotic exit in MG132-treated anaphase cells",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Cdk1 inhibition immediately triggered chromosome decondensation and mitotic exit (Figure 3c,d, Figure 4c\u2013e and Videos 9 and 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing rapid mitotic exit after Cdk1 inhibition in MG132-arrested anaphase cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "f4bcdd22-dbf1-48a7-b902-e7e829a03ea5",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C13",
+      "claim": "Cdk1 activity during anaphase is rate-limiting for mitotic exit in metazoans",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Aurora B inhibition is clearly not sufficient to drive cells out of mitosis if Cyclin B1 degradation is prevented, whereas Cdk1 activity during anaphase is rate-limiting for mitotic exit in metazoans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental results showing that Cdk1 inhibition, but not Aurora B inhibition, immediately triggers mitotic exit in MG132-arrested cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "1857add3-9b97-4284-a949-16a8d28109c6",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C14",
+      "claim": "Drosophila Cyclin B1 contains a KEN box at position 248",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence analysis of Drosophila Cyclin B1 revealed a KEN box at position 248, which we mutated to AAN (Figure 5a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence analysis and mutagenesis experiments shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "26d7e289-8e07-4ac5-989a-6ad24f4e0649",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C15",
+      "claim": "The KEN-box mutant of Cyclin B1 is more slowly degraded specifically during anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in S2 cells the KEN-Cyclin B1-GFP mutant was more slowly degraded specifically during anaphase, delaying mitotic exit (Figure 5a,b,d,f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data showing increased Cyclin B1 half-life and delayed anaphase in KEN-box mutant expressing cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "4e613d8d-136b-4c3a-be7c-49cc12187310",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C16",
+      "claim": "APC/CCdh1 depletion causes an accumulation of Cyclin B1 in Drosophila and human cells",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, APC/CCdh1 depletion in Drosophila and human cells was previously shown to cause an accumulation of Cyclin B1 (Ma et al., 2012; Meghini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies demonstrating Cyclin B1 accumulation after Cdh1 depletion",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "cf8140ee-96e9-4542-8c06-805b389d05e6",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C17",
+      "claim": "Fzr RNAi significantly delays Cyclin B1 degradation during anaphase and postpones mitotic exit",
+      "claim_type": "EXPLICIT",
+      "source": "To directly test whether APC/CCdh1 mediates Cyclin B1 degradation during anaphase we performed RNAi against the Drosophila Cdh1 orthologue Fizzy-related (Fzr). As in the case of the KEN-box mutant, Fzr RNAi significantly delayed Cyclin B1 degradation during anaphase, postponing mitotic exit (Figure 5e\u2013j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing increased Cyclin B1 half-life and delayed anaphase after Fzr depletion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "9bb65314-89a1-43f3-910f-78f50681bef4",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C18",
+      "claim": "Combining KEN-box mutation with Apcin treatment at anaphase onset has a synergistic effect on Cyclin B1 degradation",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we combined our KEN-box mutant with acute APC/C inhibition at anaphase onset with the D-box competitor Apcin (Sackton et al., 2014) and found a synergistic effect (Figure 5\u2014figure supplement 1a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing additive effects on Cyclin B1 half-life when combining KEN-box mutation with Apcin treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "94511373-a316-4211-90f0-be44352cedfc",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C19",
+      "claim": "Multiple recognition sites mediate Cyclin B1 degradation through both APC/CCdc20 and APC/CCdh1 during anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests the presence of multiple recognition sites that mediate Cyclin B1 degradation through both APC/CCdc20 and APC/CCdh1 during anaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on synergistic effects observed when combining KEN-box mutation with D-box inhibition",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "22c2d946-3118-434e-a76e-40c8ce940511",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C20",
+      "claim": "Simultaneous addition of pro-TAME and Apcin at anaphase onset blocks continuous degradation of Cyclin B1 during anaphase in human cells",
+      "claim_type": "EXPLICIT",
+      "source": "Only the simultaneous addition of both drugs at anaphase onset blocked the continuous degradation of Cyclin B1 during anaphase and prevented mitotic exit for several hours, similar to proteasome inhibition (Figure 6a\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing that combined APC/C inhibition with pro-TAME and Apcin prevents Cyclin B1 degradation and mitotic exit",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "42abb7b2-ecdd-4a3e-8eba-3ebc3ef42005",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C21",
+      "claim": "Drosophila and human Cyclin B1 degradation during anaphase is mediated through the D-box and KEN-box (when present) by APC/CCdc20 or APC/CCdh1",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that Drosophila and human Cyclin B1 degradation during anaphase is mediated through the D-box and KEN-box (when present), and can be carried out either by APC/CCdc20 or APC/CCdh1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on multiple experimental results including KEN-box mutation, Fzr depletion, and APC/C inhibitor studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "099fc1a5-5c3c-4648-b525-6497bb00194d",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C22",
+      "claim": "Cyclin B1-GFP localizes at the spindle midzone and midbody during normal mitosis and cytokinesis in Drosophila S2 cells",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the precise localization of Cyclin B1 during anaphase we took advantage of the extremely flat morphology of Drosophila S2 cells growing on concanavalin-coated coverslips. This allowed us to detect a faint pool of Cyclin B1-GFP associated with the spindle midzone and midbody during a normal mitosis and cytokinesis, respectively (Figure 7a,a', b), as reported previously in Drosophila germ cells (Mathieu et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live imaging data showing Cyclin B1-GFP localization at the spindle midzone/midbody, consistent with previous reports",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "047667c5-7fbe-4b3c-a7cb-c670c1514160",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C23",
+      "claim": "Cyclin B1 co-localizes with Aurora B at the spindle midzone after Cdk1 inactivation during metaphase",
+      "claim_type": "EXPLICIT",
+      "source": "Detection of the midzone pool of endogenous or ectopically expressed Cyclin B1 was enhanced by abrupt Cdk1 inactivation during metaphase, causing cells to prematurely enter anaphase with high Cyclin B1 levels (Figure 7c,e; see also Figure 1\u2014figure supplement 1b,b'). Under these conditions, Cyclin B1 co-localized with Aurora B at the spindle midzone (Figure 7\u2014figure supplement 1a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data showing co-localization of Cyclin B1 and Aurora B at the midzone after Cdk1 inhibition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "449b440c-bc7b-494c-bdc4-7dd377d3d79a",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C24",
+      "claim": "Cyclin B1 localization at the spindle midzone depends on Subito/kinesin-6-mediated midzone targeting and Aurora B activity",
+      "claim_type": "EXPLICIT",
+      "source": "This localization depended on Subito/kinesin-6-mediated midzone targeting and activity of Aurora B (Figure 7b,d,e), but was independent of Polo kinase activity (Figure 7g and Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing loss of Cyclin B1 midzone localization after Subito depletion or Aurora B inhibition, but not after Polo inhibition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "8a870ffd-4f5d-4c8a-ac43-a6966bbf51ae",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C25",
+      "claim": "Human Cdk1-GFP localizes to the spindle at the metaphase-anaphase transition and enriches in the central spindle region throughout anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "While we were unable to localize endogenously tagged Cyclin B1-Venus at the spindle midzone in human anaphase cells due to the poor signal/noise at this stage, direct localization of human Cdk1-GFP in live human HeLa cells revealed a clear spindle localization at the metaphase-anaphase transition, with a subsequent enrichment in the central spindle region between separating sister chromosomes throughout anaphase, and midbody during cytokinesis (Figure 7\u2014figure supplement 3a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live imaging data showing Cdk1-GFP localization patterns during anaphase in human cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "36ff897d-ecd5-4737-8884-a89b433c1e8b",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C26",
+      "claim": "Cdk1 is enriched on isolated midbodies from human cells",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, Cdk1 was recently found enriched on isolated midbodies from human cells (Capalbo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a recent study identifying Cdk1 on isolated midbodies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "297aece2-b899-4c3f-b95e-4b3808890d22",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C27",
+      "claim": "Cyclin B1-Cdk1 is spatially regulated by Aurora B activity at the spindle midzone in Drosophila cells",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Cyclin B1-Cdk1 is spatially regulated by Aurora B activity at the spindle midzone, at least in Drosophila cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental data showing Aurora B-dependent localization of Cyclin B1 at the midzone",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "b0589662-84d0-4f85-8a37-c530964d9125",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C28",
+      "claim": "Aurora B overexpression delays its own transition to the spindle midzone and extends anaphase duration",
+      "claim_type": "EXPLICIT",
+      "source": "For this purpose we overexpressed Aurora B in Drosophila S2 cells and found that this delayed its own transition to the spindle midzone and extended anaphase duration (Figure 7\u2014figure supplement 4a,b,d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing delayed Aurora B midzone localization and increased anaphase duration after Aurora B overexpression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "767094fe-1a6e-4baf-a757-1e162906f757",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C29",
+      "claim": "Aurora B association with the spindle midzone is a strong predictor of anaphase duration",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that Aurora B association with the spindle midzone is a strong predictor of anaphase duration, with several cells overexpressing Aurora B extending anaphase for more than 15 min (Figure 7\u2014figure supplement 4c,e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis showing strong relationship between Aurora B midzone localization timing and anaphase duration",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "db3fc189-c665-47f4-9afa-6e4159c2176e",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C30",
+      "claim": "The anaphase delay caused by Aurora B overexpression depends on Cdk1 activity",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this anaphase delay depended on Cdk1 activity (Figure 7\u2014figure supplement 4c), suggesting that Aurora B association with the spindle midzone is able to delay mitotic exit by regulating Cdk1 activity during anaphase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing that Cdk1 inhibition rescues the anaphase delay caused by Aurora B overexpression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "83f8839a-5321-4ee7-b478-a1e9036de771",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C31",
+      "claim": "Subito/Mklp2/kinesin-6 RNAi causes a delay in Cyclin B1 degradation during anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we monitored Cyclin B1-GFP/Venus degradation after Subito/Mklp2/kinesin-6 RNAi in Drosophila S2 and human hTERT-RPE1 cells. This caused a short, but significant delay in Cyclin B1-GFP/Venus degradation during anaphase, increasing Cyclin B1 half-life and often delaying mitotic exit (Figure 8a\u2013e; see also Figure 1\u2014figure supplement 3a\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data showing increased Cyclin B1 half-life and delayed anaphase after Subito/Mklp2 depletion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "5703208d-b9a8-4ae5-9d7d-64cb297df643",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C32",
+      "claim": "The chromatin-targeted FRET biosensor specifically reports on elevated Cyclin B1-Cdk1 activity in mitosis relative to interphase",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there were statistically significant differences between the lifetime parameters of the chromatin-targeted phosphorylatable reporter in mitosis versus interphase, most notably the mean donor lifetime decreased from 3.43 ns + /- 0.12 ns (mean + /- S.D.) in interphase to 3.15 ns + /- 0.28 ns in mitosis (includes prophase, prometaphase, and metaphase cells) (Figure 9a, Figure 9\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FLIM-FRET measurements showing statistically significant differences in donor lifetime and FRET efficiency between interphase and mitosis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "df0ae6c6-12d7-48f0-a2e5-9c42fd41e847",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C33",
+      "claim": "The FRET biosensor is non-responsive to activities of Aurora B and Plk1",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the biosensor was shown to be highly specific for Cyclin B1-Cdk1 and non-responsive to activities of the midzone-enriched kinases Aurora B and Plk1 (Gavet and Pines, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous characterization of the biosensor specificity",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "9ad257c6-8a80-41c1-86b8-99f5cc01b7bb",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C34",
+      "claim": "Lagging chromosomes in the vicinity of the spindle midzone exhibit higher Cdk1 activity than segregated chromosomes during anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, there was a statistically significant reduction in the donor lifetime (2.61 ns + /- 0.43 ns) for the sensor on lagging chromosomes in the vicinity of the spindle midzone compared to the donor lifetime (3.16 ns + /- 0.20 ns) on the segregated chromosomes (Figure 9a,b). This corresponds to ~3 fold increase in the FRET E of the sensor on lagging chromosomes (27.0% + /- 12.0%) relative to the FRET E of the reporter on segregated DNA (11.7% + /- 5.5%) (Figure 9a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FLIM-FRET measurements showing statistically significant differences in donor lifetime and FRET efficiency between lagging and segregated chromosomes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "ec5edca1-978d-463c-88bc-e53ad890a5f7",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C35",
+      "claim": "There is a gradient of Cyclin B1-Cdk1 activity in the vicinity of the midzone during anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "The FLIM-FRET data support the conclusion that there is a gradient of CyclinB1-Cdk1 activity in the vicinity of the midzone during anaphase that locally phosphorylates chromatin bound substrates on incompletely separated chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on FLIM-FRET measurements showing higher Cdk1 activity on lagging chromosomes near the midzone",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "6f12e75a-fd31-4db6-81a8-4171483d9882",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C36",
+      "claim": "The Cdk1 activity gradient on lagging chromosomes is abolished by RO-3306 treatment",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that this activity gradient, which is reminiscent of a previously visualized midzone-based gradient of Aurora B kinase activity (Afonso et al., 2014; Fuller et al., 2008), specifically reports on midzone-proximal Cyclin B1-Cdk1 activity rather than that of other midzone-enriched kinases since the sensor is insensitive to inhibition of Aurora B or Plk1 activities (Gavet and Pines, 2010) and the activity gradient was no longer evident on lagging chromosomes/chromatin following addition of the Cdk1 inhibitor RO-3306 (Figure 9A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FLIM-FRET data showing loss of activity gradient after Cdk1 inhibition, combined with previous characterization of biosensor specificity",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "9ba09e1d-1760-427c-939c-562ae0f37dd5",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C37",
+      "claim": "Aurora B mediates Cyclin B1 phosphorylation in Drosophila germline and human mitotic cells",
+      "claim_type": "EXPLICIT",
+      "source": "Aurora B has been shown to mediate Cyclin B1 phosphorylation in Drosophila germline and human mitotic cells (Kettenbach et al., 2011; Mathieu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies demonstrating Aurora B-mediated Cyclin B1 phosphorylation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "0cb0900e-5bbe-4cd5-b70d-82187d72fc6c",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C38",
+      "claim": "Inhibition of Aurora B activity at anaphase onset does not accelerate Cyclin B1 degradation during anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "First, we monitored Cyclin B1-GFP/Venus levels after acute inhibition of Aurora B activity at anaphase onset by treating S2 and hTERT-RPE1 cells with Binucleine-2 or ZM447439, respectively. We found that inhibition of Aurora B activity did not accelerate Cyclin B1 degradation during anaphase (Figure 10\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data showing no change in Cyclin B1 degradation kinetics after Aurora B inhibition at anaphase onset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "ffe24f2f-0289-4bfe-ae10-17e4c166c2e8",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C39",
+      "claim": "PP1/PP2A phosphatase activity is not required to regulate Cyclin B1 degradation during anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, acute PP1/PP2A phosphatase inhibition with okadaic acid at anaphase onset did not interfere with normal Cyclin B1 degradation during anaphase (Figure 10\u2014figure supplement 1c). These results are consistent with our previous experiments, which showed that Aurora B inhibition at anaphase onset did not accelerate mitotic exit in both Drosophila and human cells (Afonso et al., 2014). In addition, these data indicate that PP1/PP2A phosphatase activity is not required to regulate Cyclin B1 degradation, namely its centrosomal-associated pool, during anaphase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing no effect of okadaic acid on Cyclin B1 degradation kinetics during anaphase",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "658e3e99-98ff-42e4-8f45-225d521dbb43",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C40",
+      "claim": "Slowing down chromosome separation with taxol delays Cyclin B1 degradation during anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, we slowed down chromosome separation by allowing S2 cells to enter anaphase after a short exposure (less than 15 min) to 10 nM taxol or after depletion of the kinesin-13 KLP10A by RNAi (Afonso et al., 2014; Rogers et al., 2004). We found that, under both conditions, Cyclin B1-GFP degradation during anaphase was significantly delayed (Figure 10a\u2013c,e\u2013g), consistent with the previously reported delay in mitotic exit (Afonso et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data showing increased Cyclin B1 half-life after taxol treatment or KLP10A depletion",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "3b8fd6ab-e777-44ed-88cb-725494ad07c0",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C41",
+      "claim": "The delay in Cyclin B1 degradation caused by slowed chromosome separation is dependent on Aurora B activity",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the observed delay in Cyclin B1 degradation during anaphase was dependent on Aurora B activity, we acutely inhibited Aurora B with Binucleine-2 specifically at anaphase onset in taxol-treated cells. We found that Aurora B inhibition fully restored normal Cyclin B1 degradation in cells with slower chromosome separation (Figure 10d,f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing that Aurora B inhibition rescues the Cyclin B1 degradation delay in taxol-treated cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "b668fe1d-e583-466b-88d7-cba063615591",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C42",
+      "claim": "Short exposure to 10 nM taxol does not prevent normal Aurora B accumulation at the spindle midzone",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the short exposure of cells to 10 nM taxol did not prevent normal Aurora B accumulation at the spindle midzone (Figure 10\u2014figure supplement 2a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data showing normal Aurora B midzone localization in taxol-treated cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "ba44aaea-e46a-4ebb-a16e-2759a1f435c5",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C43",
+      "claim": "Chromosome separation is linked to Aurora B-mediated control of Cyclin B1 degradation during anaphase that licenses mitotic exit",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data link chromosome separation to Aurora B-mediated control of Cyclin B1 degradation during anaphase that ultimately licenses mitotic exit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental results showing that slowing chromosome separation delays Cyclin B1 degradation in an Aurora B-dependent manner",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "c924ef1f-0915-449a-9ba0-843a2dd68340",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C44",
+      "claim": "Degradation of B-type Cyclins specifically during anaphase is rate-limiting for mitotic exit in animals that diverged more than 900 million years ago",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our work reveals that degradation of B-type Cyclins specifically during anaphase is rate-limiting for mitotic exit among animals that diverged more than 900 million years ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental data from Drosophila, mouse, and human cells showing conserved role of Cyclin B degradation during anaphase",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "23d2ef30-d744-4b71-a69c-520e140cebfb",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C45",
+      "claim": "Cdk1 activity during anaphase is a function of chromosome separation and is spatially regulated by Aurora B localization and activity at the spindle midzone",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, we show that Cdk1 activity during anaphase is a function of chromosome separation and is spatially regulated by Aurora B localization and activity at the spindle midzone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on multiple experimental results including FLIM-FRET measurements, Aurora B dependency experiments, and chromosome separation manipulation studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "80788e75-8f64-476c-ab68-a29e80f14c9d",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C46",
+      "claim": "A crosstalk between molecular 'rulers' (Aurora B) and 'clocks' (B-type Cyclins-Cdk1) ensures that cells only exit mitosis after proper chromosome separation during anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "In concert with previous work (Afonso et al., 2014), our findings unveil an unexpected crosstalk between molecular 'rulers' (Aurora B) and 'clocks' (B-type Cyclins-Cdk1) that ensures that cells only exit mitosis after proper chromosome separation during anaphase, consistent with the previously proposed chromosome separation checkpoint hypothesis (Afonso et al., 2014; Maiato et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on integration of current experimental findings with previous work on Aurora B-mediated spatial control",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "50f98d7a-475f-4976-ba88-994081ecd2d5",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C47",
+      "claim": "APC/CCdc20 mediates the initial degradation of Cyclin B1 during metaphase under SAC control",
+      "claim_type": "EXPLICIT",
+      "source": "According to this model, APC/CCdc20 mediates the initial degradation of Cyclin B1 during metaphase under SAC control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental results and integration with established knowledge about SAC control of APC/CCdc20",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "d693b61d-4b2d-41dc-9949-5e9ca6794c2a",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C48",
+      "claim": "The decrease in Cdk1 activity as cells enter anaphase targets Aurora B to the spindle midzone via Subito/Mklp2/kinesin-6",
+      "claim_type": "EXPLICIT",
+      "source": "The consequent decrease in Cdk1 activity as cells enter anaphase targets Aurora B to the spindle midzone (via Subito/Mklp2/kinesin-6)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental results showing Aurora B midzone localization depends on Subito/Mklp2 and is negatively regulated by Cdk1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "0179a28a-da0d-46cf-a2ca-28c5cefbbbd3",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C49",
+      "claim": "Aurora B at the spindle midzone establishes a phosphorylation gradient that locally delays APC/CCdc20- and APC/CCdh1-mediated degradation of residual Cyclin B1 at the spindle midzone",
+      "claim_type": "EXPLICIT",
+      "source": "Aurora B at the spindle midzone (counteracted by PP1/PP2A phosphatases on chromatin [Vagnarelli et al., 2011]) establishes a phosphorylation gradient that locally delays APC/CCdc20- and APC/CCdh1-mediated degradation of residual Cyclin B1 (and possibly B3) at the spindle midzone, at least in Drosophila cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental results showing Aurora B-dependent delay in Cyclin B1 degradation and localization at the midzone",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "eec6e1e7-a9b6-47da-a3a7-ec41a38b5c6d",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C50",
+      "claim": "As chromosomes separate and move away from the spindle midzone, Cdk1 activity decreases, allowing PP1/PP2A-mediated dephosphorylation of Cdk1 and Aurora B substrates necessary for mitotic exit",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, as chromosomes separate and move away from the spindle midzone, Cdk1 activity decreases, allowing the PP1/PP2A-mediated dephosphorylation of Cdk1 and Aurora B substrates (e.g. Lamin B and Condensin I) necessary for mitotic exit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on FLIM-FRET data showing Cdk1 activity gradient and experimental results linking chromosome position to Cyclin B1 degradation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "22820af9-69da-4c0e-8c71-d0caece0ad64",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C51",
+      "claim": "Cdk1 inactivation promotes the recruitment of PP1 phosphatase to chromosomes to locally oppose Aurora B phosphorylation",
+      "claim_type": "EXPLICIT",
+      "source": "This model is consistent with the recent demonstration that Cdk1 inactivation promotes the recruitment of PP1 phosphatase to chromosomes to locally oppose Aurora B phosphorylation (Qian et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a recent study demonstrating PP1 recruitment after Cdk1 inactivation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "ba8ecbd0-c6a6-426e-b84d-cb80fcc4bc1a",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C52",
+      "claim": "The model is consistent with equivalent phosphorylation and dephosphorylation events during mitotic exit in budding yeast",
+      "claim_type": "EXPLICIT",
+      "source": "and recent findings in budding yeast demonstrating equivalent phosphorylation and dephosphorylation events during mitotic exit (Touati et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to recent findings in yeast showing similar regulatory mechanisms",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "db0e0e6f-3337-44ea-9dc7-157191f5ca9e",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C53",
+      "claim": "The model is consistent with premature Greatwall inactivation and PP2A:B55 reactivation predicted after acute Cdk1 inactivation during anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "It is also consistent with a premature Greatwall inactivation and PP2A:B55 reactivation that would be predicted after acute Cdk1 inactivation during anaphase (Cundell et al., 2013; Cundell et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on integration with previous work on Greatwall-PP2A:B55 regulation by Cdk1",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "b00e3fe5-c3ef-48b9-aa4e-7fcd8b2523b4",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C54",
+      "claim": "Cyclin B1 was degraded by the end of metaphase in human HeLa and rat kangaroo Ptk1 cells",
+      "claim_type": "EXPLICIT",
+      "source": "Previous landmark work has carefully monitored the kinetics of Cyclin B1 degradation in living human HeLa and rat kangaroo Ptk1 cells during mitosis, and concluded that Cyclin B1 was degraded by the end of metaphase, becoming essentially undetectable as cells entered anaphase (Clute and Pines, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study on Cyclin B1 degradation kinetics",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "961807df-8fdf-48fa-bf55-cfa3870a1980",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C55",
+      "claim": "A small pool of Cyclin B1 continued to be degraded during anaphase in Ptk1 cells",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noticed that, consistent with our findings, a small pool of Cyclin B1 continued to be degraded during anaphase in Ptk1 cells (Clute and Pines, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on re-interpretation of data from a previous study",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "c7aed9b7-9ef2-4a87-acf4-59253668d06b",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C56",
+      "claim": "Human DLD-1 cells undergoing normal mitosis entered anaphase with as much as 32% of Cyclin B1 compared to metaphase levels",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent work investigating cellular response to anti-mitotic drugs has also shown that human DLD-1 cells undergoing normal mitosis entered anaphase with as much as 32% of Cyclin B1 compared to metaphase levels (Gascoigne and Taylor, 2008), suggesting that human cells enter anaphase with significant Cdk1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a study showing substantial Cyclin B1 levels at anaphase onset",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "a179980b-7ed9-4a87-8545-83b710227f16",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C57",
+      "claim": "Quantitative analysis with a FRET biosensor in human HeLa cells revealed residual Cdk1 activity during anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, quantitative analysis with a FRET biosensor in human HeLa cells also revealed residual Cdk1 activity during anaphase (Gavet and Pines, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a study using FRET biosensor to measure Cdk1 activity",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "5037c5a6-1ab2-447b-94b6-0a09ac4e965a",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C58",
+      "claim": "Expression of non-degradable Cyclin B1 during anaphase 'reactivates' the SAC, inhibiting APC/CCdc20",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it was shown that expression of non-degradable Cyclin B1 during anaphase 'reactivates' the SAC, inhibiting APC/CCdc20 (Clijsters et al., 2014; Rattani et al., 2014; V\u00e1zquez-Novelle et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies showing SAC reactivation by non-degradable Cyclin B1",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "fbd6628c-d4fd-4927-a952-8fbe46aaa1fc",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C59",
+      "claim": "Human Cyclin B2 contains a recognizable KEN box",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, human Cyclin B2 (which contains a recognizable KEN box), as well as Cdk1, were identified at the midbody",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on sequence analysis and previous characterization of human Cyclin B2",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "35f21634-8cf1-43de-af3a-bce9649847b1",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C60",
+      "claim": "Cdk1 inactivation during late mitosis is required for the timely completion of cytokinesis in human cells",
+      "claim_type": "EXPLICIT",
+      "source": "and Cdk1 inactivation during late mitosis was required for the timely completion of cytokinesis in human cells (Capalbo et al., 2019; Mathieu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies showing requirement for Cdk1 inactivation during cytokinesis",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "bb5dfdbe-9d85-4b7c-a9a1-d1c6729cefdf",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C61",
+      "claim": "In human cells, Cdk1 activity during anaphase may be regulated not only by Cyclin B1, but also by Cyclin B2",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is possible that in human cells, Cdk1 activity during anaphase is regulated not only by Cyclin B1, but also by Cyclin B2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on the presence of Cyclin B2 at the midbody and its KEN box",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "ba1404e6-fab9-4672-a5b8-10773f50750f",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C62",
+      "claim": "Direct Cyclin B1 phosphorylation by Aurora B may spatially regulate Cyclin B1 degradation during anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that direct Cyclin B1 phosphorylation by Aurora B (Kettenbach et al., 2011; Mathieu et al., 2013) spatially regulates Cyclin B1 degradation during anaphase, mediated by both APC/CCdc20 and APC/CCdh1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on known Aurora B phosphorylation of Cyclin B1 and experimental results showing Aurora B-dependent regulation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "1bf5ee15-c6fb-4d65-90fd-9eb3b69ed952",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C63",
+      "claim": "Aurora B may indirectly control Cyclin B1 during anaphase by regulating APC/CCdc20 and/or APC/CCdh1 activity",
+      "claim_type": "EXPLICIT",
+      "source": "Another non-mutually exclusive possibility is that Aurora B indirectly controls Cyclin B1 during anaphase by regulating APC/CCdc20 and/or APC/CCdh1 activity, as recently shown for Cdk1 (Fujimitsu et al., 2016; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on recent findings showing Cdk1 regulation of APC/C activity",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "88072db4-4e75-436d-87df-fb079e291503",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C64",
+      "claim": "Mitotic exit is determined during anaphase and not at the metaphase-anaphase transition under SAC control",
+      "claim_type": "EXPLICIT",
+      "source": "The main conceptual implication of these findings is that, contrary to what was previously assumed, mitotic exit is determined during anaphase and not at the metaphase-anaphase transition under SAC control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental results showing that Cdk1 activity during anaphase is rate-limiting for mitotic exit",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "19ba2139-0d6b-49f4-9577-26701d5e79c9",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C65",
+      "claim": "Mild induction of Cyclin B1-GFP expression in S2 cells reproduces the localization of endogenous Cyclin B1",
+      "claim_type": "EXPLICIT",
+      "source": "Mild induction of Cyclin B1-GFP expression in S2 cells reproduced the localization of endogenous Cyclin B1 in the cytoplasm, mitotic spindle, kinetochores and centrosomes (Bentley et al., 2007; Clute and Pines, 1999; Huang and Raff, 1999; Pines and Hunter, 1991), without altering normal anaphase duration or increasing chromosome missegregation (Figure 1a, Figure 1\u2014figure supplement 1a,a' and Figure 1\u2014figure supplement 2a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data and quantification showing normal mitotic progression in cells expressing Cyclin B1-GFP, consistent with previous reports",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "179efdef-4a25-4095-898b-e741cf415f07",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C66",
+      "claim": "Aurora B association with the spindle midzone depends on kinesin-6/Mklp2/Subito",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Aurora B association with the spindle midzone depends on the kinesin-6/Mklp2/Subito (Cesario et al., 2006; Gruneberg et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies demonstrating kinesin-6 dependency of Aurora B midzone localization",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "035a7a07-7f42-4d43-b518-b40de9c13dc5",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C67",
+      "claim": "Aurora B association with the spindle midzone is negatively regulated by Cdk1",
+      "claim_type": "EXPLICIT",
+      "source": "and is negatively regulated by Cdk1 (H\u00fcmmer and Mayer, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a previous study showing Cdk1-mediated negative regulation of Aurora B midzone localization",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "6e242648-3b21-49f8-a8b4-73cf90a830c7",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C68",
+      "claim": "The establishment of a midzone-based Aurora B 'ruler' in anaphase is determined by the sudden drop of Cdk1 activity at the metaphase-anaphase transition",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the establishment of a midzone-based Aurora B 'ruler' in anaphase is determined by the sudden drop of Cdk1 activity (the 'clock') at the metaphase-anaphase transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the negative regulation of Aurora B midzone localization by Cdk1",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "0893cff6-d974-46a8-8e76-fda60acd29bf",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C69",
+      "claim": "An Aurora B-dependent spatial control mechanism regulates normal nuclear envelope reformation in human cells",
+      "claim_type": "EXPLICIT",
+      "source": "An Aurora B-dependent spatial control mechanism regulating normal NER in human cells has been recently confirmed (Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a recent study confirming Aurora B-dependent spatial control of NER",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "90ea7c6c-db9c-4c55-8625-8f455f7058bd",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C70",
+      "claim": "Nuclear envelope defects associated with incomplete chromosome separation during anaphase were proposed as an inevitable pathological condition",
+      "claim_type": "EXPLICIT",
+      "source": "However, nuclear envelope defects associated with incomplete chromosome separation during anaphase (namely, anaphase lagging chromosomes due to mitotic errors) were proposed as an inevitable pathological condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to interpretation from a previous study",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "065990ae-fe67-4dfc-8a84-8e46548dce2b",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "claim_id": "C71",
+      "claim": "A molecular network operates during anaphase that promotes chromosome segregation fidelity by controlling mitotic exit in space and time",
+      "claim_type": "EXPLICIT",
+      "source": "The present work provides yet additional evidence for a molecular network operating during anaphase that promotes chromosome segregation fidelity by controlling mitotic exit in space and time (Figure 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on integration of all experimental findings presented in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "22851eab-be52-4460-ae4f-5e6f2829097b",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cyclin B1 continues to be degraded during anaphase across multiple metazoan species (Drosophila S2 cells, human HeLa and hTERT-RPE1 cells, primary Drosophila follicular epithelium, and mouse oocytes undergoing meiosis II), and its complete disappearance strongly correlates with mitotic exit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide direct experimental evidence from live imaging across multiple species and cell types showing continued Cyclin B1 degradation during anaphase. C2 provides correlation analysis linking Cyclin B1 disappearance to mitotic exit timing. The convergence of data from diverse experimental systems (cultured cells, primary tissues, meiosis) strongly supports this conserved phenomenon.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "0a2f1b1a-0845-4e3a-9a20-f61adcaaa008",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cdk1 activity during anaphase is rate-limiting for mitotic exit in metazoans. Acute Cdk1 inhibition at anaphase onset accelerates mitotic exit, while preventing Cyclin B degradation (via MG132) arrests cells in anaphase. Cdk1 inhibition, but not Aurora B inhibition, immediately triggers mitotic exit in MG132-arrested cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C13 provide complementary experimental evidence using pharmacological manipulation (Cdk1 inhibition accelerates exit; proteasome inhibition prevents exit) and rescue experiments (Cdk1 but not Aurora B inhibition rescues MG132 arrest). The differential effects of Cdk1 vs Aurora B inhibition in MG132-arrested cells (C11-C13) provide strong evidence for Cdk1 as the rate-limiting factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "774d3154-5a4e-41f8-9c4c-85c8e3bf41e9",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cyclin B1 degradation during anaphase is mediated by both APC/CCdc20 and APC/CCdh1 through recognition of D-box and KEN-box (when present) degrons. KEN-box mutation or Fzr/Cdh1 depletion delays Cyclin B1 degradation specifically during anaphase, and combined inhibition of both APC/C co-activators is required to fully block degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 provide convergent evidence from sequence analysis (C14), mutagenesis (C15, C18), RNAi depletion (C17), and pharmacological inhibition (C18, C20) demonstrating that multiple degrons and both APC/C co-activators contribute to Cyclin B1 degradation during anaphase. The synergistic effects (C18) and requirement for dual inhibition (C20) support the involvement of multiple recognition mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "de733f43-3450-471c-9bba-97bd442341c1",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cyclin B1-Cdk1 localizes to the spindle midzone during anaphase in an Aurora B-dependent manner. In Drosophila cells, Cyclin B1 co-localizes with Aurora B at the midzone, and this localization depends on Subito/kinesin-6 and Aurora B activity. In human cells, Cdk1-GFP shows enrichment at the central spindle and midbody.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 provide imaging evidence for midzone localization of Cyclin B1/Cdk1 (C22, C23, C25) and functional evidence that this localization depends on Aurora B activity and kinesin-6-mediated transport (C24). The co-localization with Aurora B (C23) and confirmation in human cells (C25, C26) support spatial regulation of Cdk1 activity at the midzone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "11c47581-22b1-45e2-9f17-56d40b1d2118",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Aurora B association with the spindle midzone controls anaphase duration by regulating Cdk1 activity. Aurora B overexpression delays its midzone localization and extends anaphase in a Cdk1-dependent manner. Depletion of Subito/Mklp2/kinesin-6 delays Cyclin B1 degradation and mitotic exit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 provide evidence linking Aurora B midzone localization to anaphase timing through Cdk1 regulation. The correlation between Aurora B midzone timing and anaphase duration (C29), Cdk1-dependence of Aurora B overexpression effects (C30), and delayed Cyclin B1 degradation after kinesin-6 depletion (C31) support a regulatory pathway from Aurora B to Cdk1 activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "ec9cf733-7bc3-4459-9b88-fa4ebc3ee3e8",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A spatial gradient of Cyclin B1-Cdk1 activity exists during anaphase, with lagging chromosomes near the spindle midzone exhibiting approximately 3-fold higher Cdk1 activity than segregated chromosomes. This gradient is abolished by Cdk1 inhibition and is specifically reported by a Cyclin B1-Cdk1 FRET biosensor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 provide quantitative FLIM-FRET measurements demonstrating a spatial Cdk1 activity gradient during anaphase. The biosensor validation (C32, C33), statistically significant differences between lagging and segregated chromosomes (C34), and abolishment by Cdk1 inhibition (C36) provide strong evidence for a midzone-centered Cdk1 activity gradient. The specificity of the biosensor for Cdk1 (C33) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "4a666615-36cd-49c6-9c22-b44b699a6670",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Chromosome separation is linked to Aurora B-mediated control of Cyclin B1 degradation during anaphase. Slowing chromosome separation (via taxol or KLP10A depletion) delays Cyclin B1 degradation in an Aurora B-dependent manner, while Aurora B or PP1/PP2A inhibition at anaphase onset does not accelerate Cyclin B1 degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 provide evidence that Aurora B regulates Cyclin B1 degradation as a function of chromosome position. The lack of effect of Aurora B inhibition at anaphase onset (C38, C39) combined with Aurora B-dependent delay when chromosome separation is slowed (C40, C41) supports a model where Aurora B activity at the midzone locally stabilizes Cyclin B1 near incompletely separated chromosomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "6329b400-b43c-4f31-8eac-ddbd56bceeda",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A crosstalk between molecular 'rulers' (Aurora B) and 'clocks' (B-type Cyclins-Cdk1) ensures that cells only exit mitosis after proper chromosome separation during anaphase. This mechanism is conserved among animals that diverged more than 900 million years ago, and mitotic exit is determined during anaphase rather than at the metaphase-anaphase transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46, C64, and C71 represent the major conceptual conclusions integrating all experimental findings. The conservation across species (C44), spatial regulation by Aurora B (C45), and coordination between spatial and temporal control (C46) are well-supported by the experimental data from C1-C43. The paradigm shift regarding timing of mitotic exit determination (C64) is supported by the functional experiments showing Cdk1 activity during anaphase is rate-limiting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "8d76093c-e97b-47b4-aad4-f52012445bf2",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose a mechanistic model where APC/CCdc20 initiates Cyclin B1 degradation at metaphase, decreased Cdk1 activity targets Aurora B to the midzone via kinesin-6, Aurora B establishes a phosphorylation gradient that locally delays Cyclin B1 degradation, and as chromosomes separate, Cdk1 activity decreases allowing PP1/PP2A-mediated dephosphorylation of substrates necessary for mitotic exit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C53 present an integrated mechanistic model supported by the experimental data and consistent with previous literature (C51-C53). Each component of the model is supported by specific experimental findings: APC/C-mediated degradation (C14-C21), Aurora B midzone targeting (C22-C31), spatial Cdk1 gradient (C32-C36), and chromosome position-dependent regulation (C37-C43). The model provides a coherent framework integrating all major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "cc8279a1-1308-488a-9923-ec7b1203b4b1",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Previous studies have shown that Cyclin B1 continues to be degraded during anaphase in various cell types, though this was not always emphasized. A small pool of Cyclin B1 continued to be degraded during anaphase in Ptk1 cells, human DLD-1 cells entered anaphase with 32% of Cyclin B1, and FRET biosensor analysis revealed residual Cdk1 activity during anaphase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 provide context from prior literature showing that evidence for anaphase Cyclin B1 degradation existed but was not fully appreciated. These are well-supported by citations to previous studies (C54, C56, C57) and reinterpretation of published data (C55). This contextualizes the current findings within the existing literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "ce311f7a-4c12-4c72-b619-250ee0bd89d2",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In human cells, Cdk1 activity during anaphase may be regulated by both Cyclin B1 and Cyclin B2. Human Cyclin B2 contains a KEN box and localizes to the midbody, and Cdk1 inactivation is required for timely cytokinesis completion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 discuss the potential role of Cyclin B2 in human cells. C58-C60 are supported by citations to previous studies, while C61 is presented as speculation based on Cyclin B2's KEN box and midbody localization. The speculation is reasonable given the supporting evidence, though direct experimental validation in the current study is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "699e4f25-c3d5-4815-b8e7-1b711cbe6d89",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose two non-mutually exclusive mechanisms by which Aurora B may regulate Cyclin B1 during anaphase: direct phosphorylation of Cyclin B1 by Aurora B, or indirect control through regulation of APC/CCdc20 and/or APC/CCdh1 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C63 present speculative mechanisms for how Aurora B regulates Cyclin B1 degradation. While both are supported by citations to previous work showing Aurora B phosphorylates Cyclin B1 (C62) and Cdk1 regulates APC/C (C63), the current study does not directly test these mechanisms. These represent reasonable hypotheses for future investigation rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "2d823a8c-1f17-4a95-8643-ed6db675a125",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mild induction of Cyclin B1-GFP expression in S2 cells reproduces endogenous Cyclin B1 localization without altering normal anaphase duration or increasing chromosome missegregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 validates the experimental system by showing that the Cyclin B1-GFP reporter behaves like endogenous protein. This is supported by imaging data and quantification showing normal mitotic progression, which is essential for interpreting all subsequent experiments using this reporter.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    },
+    {
+      "id": "2e86c220-ff0a-488b-a415-0175fb3c512d",
+      "content_id": "f587888d-6c5c-4db5-b776-712a4cf29671",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Aurora B association with the spindle midzone depends on kinesin-6/Mklp2/Subito and is negatively regulated by Cdk1. The establishment of the midzone-based Aurora B 'ruler' is determined by the drop in Cdk1 activity at the metaphase-anaphase transition. An Aurora B-dependent spatial control mechanism regulating nuclear envelope reformation has been confirmed in human cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 are supported by citations to previous studies establishing the regulatory relationships between Cdk1, kinesin-6, and Aurora B midzone localization (C66-C68). C69 cites recent confirmation of Aurora B-dependent NER control in human cells. These provide important context from prior work that supports the current model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:43:45.861824Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f666f29e-ceb9-4764-a63f-825e7223cda3",
+      "result_id": "22851eab-be52-4460-ae4f-5e6f2829097b"
+    },
+    {
+      "claim_id": "d9f1ce9d-40fd-4443-a0b1-aa2bbe2f3009",
+      "result_id": "22851eab-be52-4460-ae4f-5e6f2829097b"
+    },
+    {
+      "claim_id": "0abd9248-92e7-408a-a1a0-5c9b9b78912f",
+      "result_id": "22851eab-be52-4460-ae4f-5e6f2829097b"
+    },
+    {
+      "claim_id": "3fdd6ff2-2aa3-4e09-9397-a9d41d1616df",
+      "result_id": "22851eab-be52-4460-ae4f-5e6f2829097b"
+    },
+    {
+      "claim_id": "6e6ed83b-1edd-414c-b5e2-1591c6683cdf",
+      "result_id": "22851eab-be52-4460-ae4f-5e6f2829097b"
+    },
+    {
+      "claim_id": "0960cab6-be3e-4c87-9549-15f613a28874",
+      "result_id": "22851eab-be52-4460-ae4f-5e6f2829097b"
+    },
+    {
+      "claim_id": "9e79609c-8082-41e7-b794-4d169c35810e",
+      "result_id": "0a2f1b1a-0845-4e3a-9a20-f61adcaaa008"
+    },
+    {
+      "claim_id": "e6e8bab7-a46e-4e7c-bafb-e48a942a5000",
+      "result_id": "0a2f1b1a-0845-4e3a-9a20-f61adcaaa008"
+    },
+    {
+      "claim_id": "90e66c65-fc26-4a11-a922-b397e9214be7",
+      "result_id": "0a2f1b1a-0845-4e3a-9a20-f61adcaaa008"
+    },
+    {
+      "claim_id": "8122f1eb-33dc-4d45-9b19-34619c49fb24",
+      "result_id": "0a2f1b1a-0845-4e3a-9a20-f61adcaaa008"
+    },
+    {
+      "claim_id": "38f93f19-7548-42c1-b549-b602bc6faec4",
+      "result_id": "0a2f1b1a-0845-4e3a-9a20-f61adcaaa008"
+    },
+    {
+      "claim_id": "aa7941f2-b9f1-42bc-9f61-7d7f082da09d",
+      "result_id": "0a2f1b1a-0845-4e3a-9a20-f61adcaaa008"
+    },
+    {
+      "claim_id": "f4bcdd22-dbf1-48a7-b902-e7e829a03ea5",
+      "result_id": "0a2f1b1a-0845-4e3a-9a20-f61adcaaa008"
+    },
+    {
+      "claim_id": "1857add3-9b97-4284-a949-16a8d28109c6",
+      "result_id": "774d3154-5a4e-41f8-9c4c-85c8e3bf41e9"
+    },
+    {
+      "claim_id": "26d7e289-8e07-4ac5-989a-6ad24f4e0649",
+      "result_id": "774d3154-5a4e-41f8-9c4c-85c8e3bf41e9"
+    },
+    {
+      "claim_id": "4e613d8d-136b-4c3a-be7c-49cc12187310",
+      "result_id": "774d3154-5a4e-41f8-9c4c-85c8e3bf41e9"
+    },
+    {
+      "claim_id": "cf8140ee-96e9-4542-8c06-805b389d05e6",
+      "result_id": "774d3154-5a4e-41f8-9c4c-85c8e3bf41e9"
+    },
+    {
+      "claim_id": "9bb65314-89a1-43f3-910f-78f50681bef4",
+      "result_id": "774d3154-5a4e-41f8-9c4c-85c8e3bf41e9"
+    },
+    {
+      "claim_id": "94511373-a316-4211-90f0-be44352cedfc",
+      "result_id": "774d3154-5a4e-41f8-9c4c-85c8e3bf41e9"
+    },
+    {
+      "claim_id": "22c2d946-3118-434e-a76e-40c8ce940511",
+      "result_id": "774d3154-5a4e-41f8-9c4c-85c8e3bf41e9"
+    },
+    {
+      "claim_id": "42abb7b2-ecdd-4a3e-8eba-3ebc3ef42005",
+      "result_id": "774d3154-5a4e-41f8-9c4c-85c8e3bf41e9"
+    },
+    {
+      "claim_id": "099fc1a5-5c3c-4648-b525-6497bb00194d",
+      "result_id": "de733f43-3450-471c-9bba-97bd442341c1"
+    },
+    {
+      "claim_id": "047667c5-7fbe-4b3c-a7cb-c670c1514160",
+      "result_id": "de733f43-3450-471c-9bba-97bd442341c1"
+    },
+    {
+      "claim_id": "449b440c-bc7b-494c-bdc4-7dd377d3d79a",
+      "result_id": "de733f43-3450-471c-9bba-97bd442341c1"
+    },
+    {
+      "claim_id": "8a870ffd-4f5d-4c8a-ac43-a6966bbf51ae",
+      "result_id": "de733f43-3450-471c-9bba-97bd442341c1"
+    },
+    {
+      "claim_id": "36ff897d-ecd5-4737-8884-a89b433c1e8b",
+      "result_id": "de733f43-3450-471c-9bba-97bd442341c1"
+    },
+    {
+      "claim_id": "297aece2-b899-4c3f-b95e-4b3808890d22",
+      "result_id": "de733f43-3450-471c-9bba-97bd442341c1"
+    },
+    {
+      "claim_id": "b0589662-84d0-4f85-8a37-c530964d9125",
+      "result_id": "11c47581-22b1-45e2-9f17-56d40b1d2118"
+    },
+    {
+      "claim_id": "767094fe-1a6e-4baf-a757-1e162906f757",
+      "result_id": "11c47581-22b1-45e2-9f17-56d40b1d2118"
+    },
+    {
+      "claim_id": "db3fc189-c665-47f4-9afa-6e4159c2176e",
+      "result_id": "11c47581-22b1-45e2-9f17-56d40b1d2118"
+    },
+    {
+      "claim_id": "83f8839a-5321-4ee7-b478-a1e9036de771",
+      "result_id": "11c47581-22b1-45e2-9f17-56d40b1d2118"
+    },
+    {
+      "claim_id": "5703208d-b9a8-4ae5-9d7d-64cb297df643",
+      "result_id": "ec9cf733-7bc3-4459-9b88-fa4ebc3ee3e8"
+    },
+    {
+      "claim_id": "df0ae6c6-12d7-48f0-a2e5-9c42fd41e847",
+      "result_id": "ec9cf733-7bc3-4459-9b88-fa4ebc3ee3e8"
+    },
+    {
+      "claim_id": "9ad257c6-8a80-41c1-86b8-99f5cc01b7bb",
+      "result_id": "ec9cf733-7bc3-4459-9b88-fa4ebc3ee3e8"
+    },
+    {
+      "claim_id": "ec5edca1-978d-463c-88bc-e53ad890a5f7",
+      "result_id": "ec9cf733-7bc3-4459-9b88-fa4ebc3ee3e8"
+    },
+    {
+      "claim_id": "6f12e75a-fd31-4db6-81a8-4171483d9882",
+      "result_id": "ec9cf733-7bc3-4459-9b88-fa4ebc3ee3e8"
+    },
+    {
+      "claim_id": "9ba09e1d-1760-427c-939c-562ae0f37dd5",
+      "result_id": "4a666615-36cd-49c6-9c22-b44b699a6670"
+    },
+    {
+      "claim_id": "0cb0900e-5bbe-4cd5-b70d-82187d72fc6c",
+      "result_id": "4a666615-36cd-49c6-9c22-b44b699a6670"
+    },
+    {
+      "claim_id": "ffe24f2f-0289-4bfe-ae10-17e4c166c2e8",
+      "result_id": "4a666615-36cd-49c6-9c22-b44b699a6670"
+    },
+    {
+      "claim_id": "658e3e99-98ff-42e4-8f45-225d521dbb43",
+      "result_id": "4a666615-36cd-49c6-9c22-b44b699a6670"
+    },
+    {
+      "claim_id": "3b8fd6ab-e777-44ed-88cb-725494ad07c0",
+      "result_id": "4a666615-36cd-49c6-9c22-b44b699a6670"
+    },
+    {
+      "claim_id": "b668fe1d-e583-466b-88d7-cba063615591",
+      "result_id": "4a666615-36cd-49c6-9c22-b44b699a6670"
+    },
+    {
+      "claim_id": "ba44aaea-e46a-4ebb-a16e-2759a1f435c5",
+      "result_id": "4a666615-36cd-49c6-9c22-b44b699a6670"
+    },
+    {
+      "claim_id": "c924ef1f-0915-449a-9ba0-843a2dd68340",
+      "result_id": "6329b400-b43c-4f31-8eac-ddbd56bceeda"
+    },
+    {
+      "claim_id": "23d2ef30-d744-4b71-a69c-520e140cebfb",
+      "result_id": "6329b400-b43c-4f31-8eac-ddbd56bceeda"
+    },
+    {
+      "claim_id": "80788e75-8f64-476c-ab68-a29e80f14c9d",
+      "result_id": "6329b400-b43c-4f31-8eac-ddbd56bceeda"
+    },
+    {
+      "claim_id": "88072db4-4e75-436d-87df-fb079e291503",
+      "result_id": "6329b400-b43c-4f31-8eac-ddbd56bceeda"
+    },
+    {
+      "claim_id": "065990ae-fe67-4dfc-8a84-8e46548dce2b",
+      "result_id": "6329b400-b43c-4f31-8eac-ddbd56bceeda"
+    },
+    {
+      "claim_id": "50f98d7a-475f-4976-ba88-994081ecd2d5",
+      "result_id": "8d76093c-e97b-47b4-aad4-f52012445bf2"
+    },
+    {
+      "claim_id": "d693b61d-4b2d-41dc-9949-5e9ca6794c2a",
+      "result_id": "8d76093c-e97b-47b4-aad4-f52012445bf2"
+    },
+    {
+      "claim_id": "0179a28a-da0d-46cf-a2ca-28c5cefbbbd3",
+      "result_id": "8d76093c-e97b-47b4-aad4-f52012445bf2"
+    },
+    {
+      "claim_id": "eec6e1e7-a9b6-47da-a3a7-ec41a38b5c6d",
+      "result_id": "8d76093c-e97b-47b4-aad4-f52012445bf2"
+    },
+    {
+      "claim_id": "22820af9-69da-4c0e-8c71-d0caece0ad64",
+      "result_id": "8d76093c-e97b-47b4-aad4-f52012445bf2"
+    },
+    {
+      "claim_id": "ba8ecbd0-c6a6-426e-b84d-cb80fcc4bc1a",
+      "result_id": "8d76093c-e97b-47b4-aad4-f52012445bf2"
+    },
+    {
+      "claim_id": "db0e0e6f-3337-44ea-9dc7-157191f5ca9e",
+      "result_id": "8d76093c-e97b-47b4-aad4-f52012445bf2"
+    },
+    {
+      "claim_id": "b00e3fe5-c3ef-48b9-aa4e-7fcd8b2523b4",
+      "result_id": "cc8279a1-1308-488a-9923-ec7b1203b4b1"
+    },
+    {
+      "claim_id": "961807df-8fdf-48fa-bf55-cfa3870a1980",
+      "result_id": "cc8279a1-1308-488a-9923-ec7b1203b4b1"
+    },
+    {
+      "claim_id": "c7aed9b7-9ef2-4a87-acf4-59253668d06b",
+      "result_id": "cc8279a1-1308-488a-9923-ec7b1203b4b1"
+    },
+    {
+      "claim_id": "a179980b-7ed9-4a87-8545-83b710227f16",
+      "result_id": "cc8279a1-1308-488a-9923-ec7b1203b4b1"
+    },
+    {
+      "claim_id": "5037c5a6-1ab2-447b-94b6-0a09ac4e965a",
+      "result_id": "ce311f7a-4c12-4c72-b619-250ee0bd89d2"
+    },
+    {
+      "claim_id": "fbd6628c-d4fd-4927-a952-8fbe46aaa1fc",
+      "result_id": "ce311f7a-4c12-4c72-b619-250ee0bd89d2"
+    },
+    {
+      "claim_id": "35f21634-8cf1-43de-af3a-bce9649847b1",
+      "result_id": "ce311f7a-4c12-4c72-b619-250ee0bd89d2"
+    },
+    {
+      "claim_id": "bb5dfdbe-9d85-4b7c-a9a1-d1c6729cefdf",
+      "result_id": "ce311f7a-4c12-4c72-b619-250ee0bd89d2"
+    },
+    {
+      "claim_id": "ba1404e6-fab9-4672-a5b8-10773f50750f",
+      "result_id": "699e4f25-c3d5-4815-b8e7-1b711cbe6d89"
+    },
+    {
+      "claim_id": "1bf5ee15-c6fb-4d65-90fd-9eb3b69ed952",
+      "result_id": "699e4f25-c3d5-4815-b8e7-1b711cbe6d89"
+    },
+    {
+      "claim_id": "19ba2139-0d6b-49f4-9577-26701d5e79c9",
+      "result_id": "2d823a8c-1f17-4a95-8643-ed6db675a125"
+    },
+    {
+      "claim_id": "179efdef-4a25-4095-898b-e741cf415f07",
+      "result_id": "2e86c220-ff0a-488b-a415-0175fb3c512d"
+    },
+    {
+      "claim_id": "035a7a07-7f42-4d43-b518-b40de9c13dc5",
+      "result_id": "2e86c220-ff0a-488b-a415-0175fb3c512d"
+    },
+    {
+      "claim_id": "6e242648-3b21-49f8-a8b4-73cf90a830c7",
+      "result_id": "2e86c220-ff0a-488b-a415-0175fb3c512d"
+    },
+    {
+      "claim_id": "0893cff6-d974-46a8-8e76-fda60acd29bf",
+      "result_id": "2e86c220-ff0a-488b-a415-0175fb3c512d"
+    },
+    {
+      "claim_id": "90ea7c6c-db9c-4c55-8625-8f455f7058bd",
+      "result_id": "2e86c220-ff0a-488b-a415-0175fb3c512d"
+    }
+  ],
+  "comparisons": []
+}

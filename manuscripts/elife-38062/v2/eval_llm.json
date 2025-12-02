@@ -1,0 +1,436 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Hair cell stimulation causes Ca2+ influx into both cytoplasm and mitochondria, with mitochondrial Ca2+ exhibiting slower kinetics (delayed rise, slower decay, longer rise time: 13\u00b10.9s vs 8.9\u00b10.7s) and greater integrated area (11\u00b11.3 vs 5.6\u00b10.7) and peak response (1.5\u00b10.06 vs 1.3\u00b10.04) compared to cytoplasmic Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 provide converging experimental evidence from dual calcium imaging (cytoRGECO and mitoGCaMP) with waterjet stimulation. The quantitative measurements of rise time, integrated area, and peak response are statistically significant and internally consistent, demonstrating distinct mitochondrial vs cytoplasmic Ca2+ dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Sputnik mutants (cadherin23 mutants) with MET-inactive hair cells show significantly reduced mitochondrial membrane potential compared to WT/Het siblings (JC-1 ratio: 0.05\u00b10.07 vs 0.25\u00b10.24, p<0.01), indicating that mitochondrial activity is reduced in the absence of MET.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 establish the genetic model (sputnik mutants lack functional MET) and demonstrate reduced mitochondrial polarization via JC-1 staining with appropriate statistical testing. The inference that reduced JC-1 ratio indicates depolarization is well-established for this dye.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "mitoTimer fluorescence ratio (red:green) increases significantly during hair cell maturation from 3dpf to 5dpf (1.03\u00b10.05 to 7.58\u00b11.2, p<0.001), corresponding with functional maturation and increased MET activity, suggesting that mitochondrial activity increases with cumulative hair cell activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 establish mitoTimer as a reporter tool and demonstrate developmental changes that correlate with functional maturation. The statistical significance is strong (p<0.001) and the temporal correlation with neuromast maturation supports the interpretation, though the claim remains correlative rather than causative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Older hair cells (Hoechst-positive after 24hr) have higher mitoTimer ratios (1.71\u00b10.52) compared to younger cells (Hoechst-negative: 0.80\u00b10.45, p<0.001), indicating that cells with increased mitoTimer ratios are older and have been capable of MET activity for longer periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 use Hoechst labeling as an age marker to distinguish older from younger hair cells within the same neuromast. The significant difference in mitoTimer ratios between these populations supports the interpretation that mitoTimer reflects both age and cumulative activity history.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Blocking MET activity either genetically (sputnik mutants: 66.3% reduction) or pharmacologically (benzamil: 43.4% reduction) significantly decreases mitoTimer fluorescence ratio compared to controls (p<0.001), while hair cell turnover remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 demonstrate that reduced MET activity leads to decreased mitoTimer ratios through two independent methods (genetic and pharmacological). The control experiment (C46) showing unchanged hair cell turnover rules out the alternative explanation that reduced ratios simply reflect younger cell populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C83"
+    ],
+    "result": "Mitochondrial or protein turnover increases when MET activity is reduced, as demonstrated by faster loss of photoconverted mitoEos red fluorescence in sputnik mutants (75.5% decrease) compared to wildtype (38.9% decrease) at 16hr post-photoconversion (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C83 use photoconversion experiments to estimate turnover rates. The significant difference between mutants and wildtype supports increased turnover with reduced MET activity. However, the authors acknowledge this provides only an estimate of turnover, and the method cannot distinguish between mitochondrial turnover vs protein turnover.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Sustained mechanical stimulation via orbital rotation for 24hr significantly increased mitoTimer ratios in WT/Het fish (128\u00b147% vs 100\u00b134%, p<0.05) but not in sputnik mutants. The effect was specific to older, Hoechst-positive cells (1.70\u00b10.47 vs 1.36\u00b10.37, p<0.001) but not younger cells, suggesting that already-active hair cells are most affected by increased stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 demonstrate activity-dependent changes in mitoTimer through mechanical stimulation. The lack of effect in sputnik mutants (C50) and the specificity for older cells (C51-C52) strengthen the interpretation that MET activity drives the observed changes. The statistical analysis is appropriate with multiple comparisons controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Orbital shaking for 24hr significantly increased CellROX fluorescence (oxidation marker) in WT/Het fish (217\u00b1124% vs 100\u00b123%, p<0.001) but not in sputnik mutants, demonstrating that cumulative mitochondrial activity and hair cell oxidation are influenced by long-term changes in MET activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 provide independent validation of activity-dependent oxidative changes using CellROX dye. The parallel results with mitoTimer strengthen the interpretation that MET activity influences cumulative oxidative state. The lack of effect in mutants supports MET-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "JC-1 labeling did not reveal persistent changes in mitochondrial polarity after 24hr of orbital shaking (0.58\u00b10.11 vs 0.52\u00b10.12, p=0.32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 demonstrates that acute mitochondrial membrane potential does not show persistent changes after sustained stimulation, contrasting with the cumulative indicators (mitoTimer, CellROX). This negative result is important for distinguishing acute vs cumulative mitochondrial responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Acute mitochondrial membrane potential (measured by JC-1) just prior to neomycin exposure does not differ between cells that subsequently live or die (0.13\u00b10.14 vs 0.12\u00b10.11, p=0.60), indicating that acute mitochondrial activity does not predict susceptibility to neomycin-induced death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 provide important negative results showing that instantaneous mitochondrial state does not predict cell fate. The experimental design is appropriate (baseline measurement before treatment) and the statistical analysis is sound. This sets up the contrast with cumulative indicators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Cumulative mitochondrial activity (mitoTimer ratio) predicts neomycin susceptibility: surviving cells have lower baseline ratios (0.77\u00b10.37) than dying cells (1.30\u00b10.34, p<0.001), with 85% probability that a surviving cell has lower ratio than a dying cell. Classification by red:green ratio provides sensitivity 0.78, specificity 0.70, and diagnostic odds ratio 8.63.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 demonstrate strong predictive value of cumulative mitochondrial activity for cell fate. The statistical analysis is rigorous, including probability calculations and diagnostic metrics. The diagnostic odds ratio of 8.63 indicates strong predictive power, though not perfect discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Older hair cells (Hoechst+) are more sensitive to 50\u00b5M neomycin than younger cells. Among survivors of neomycin treatment, cells with higher baseline mitoTimer ratios were preferentially lost in both age groups, indicating that cumulative mitochondrial activity history predicts vulnerability to neomycin, with older, historically MET-active cells being most susceptible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 integrate age and activity to explain differential susceptibility. The experimental design using Hoechst labeling to mark age combined with mitoTimer measurements is elegant. The finding that surviving cells have lower mitoTimer ratios than controls in both age groups (C67) supports the interpretation that cumulative activity, not just age, determines susceptibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The larger integrated area and slower rise time of mitochondrial Ca2+ signals compared to cytoplasmic signals are consistent with mitochondria acting as Ca2+ buffers to mediate Ca2+ homeostasis, a role previously postulated for mammalian hair cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 provide a mechanistic interpretation of the Ca2+ kinetics data (C26-C30) supported by comparison to mammalian studies. The inference is reasonable given the kinetic differences observed, though direct manipulation of mitochondrial Ca2+ buffering would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Previous studies in other systems (myoblasts, Drosophila, muscle) have established that mitoTimer red fluorescence shifts occur with increased mitochondrial ROS production, aging, and oxidative stress, and that DsRed fluorescent protein formation is mediated by oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 accurately summarize prior literature establishing mitoTimer as a reporter of oxidative stress and aging. These citations provide important context for interpreting the mitoTimer results in hair cells, though they represent prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Despite mitochondrial membrane potential being an important driver of mitochondrial import, the decreased mitochondrial polarity observed in sputnik mutants (C82) does not correspond with the decreased mitoTimer ratio, arguing against increased import as the explanation for reduced red:green ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 address an alternative interpretation of the mitoTimer data. The observation that decreased membrane potential in mutants does not lead to increased red:green ratio (as would be predicted if import were the primary driver) helps rule out this mechanism, though the logic is somewhat indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors hypothesize that accumulation of mitochondrial stress from normal hair cell activity over time underlies differential susceptibility, such that older cells are less capable of overcoming acute mitochondrial insult and more likely to succumb to neomycin-induced damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92, C95-C96 present the authors' mechanistic hypothesis integrating their findings. While the hypothesis is consistent with the data presented, it remains speculative (as indicated by evidence_type including SPECULATION). The correlative nature of the mitoTimer-susceptibility relationship does not establish causation, and alternative mechanisms (C97-C99) are also discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "An alternative hypothesis is that cells with lower mitoTimer ratios may be less susceptible because they have more active mitochondrial repair or regeneration, as MET activity is associated with decreased mitochondrial turnover (based on mitoEos data).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99 present an alternative mechanistic interpretation. While the mitoEos turnover data (C47-C48) support the premise that MET activity affects turnover, the connection to susceptibility remains speculative. The authors appropriately present this as an alternative to their primary hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Although orbital shaking increases mitoTimer ratios, it does not alter dose-dependent hair cell loss after neomycin exposure, demonstrating that mitochondrial changes induced by orbital shaking are not sufficient to alter susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 present an important negative result attempting to causally link increased mitoTimer with increased susceptibility. The failure to observe increased susceptibility after orbital shaking (despite increased mitoTimer) suggests the relationship is more complex than simple causation, though the authors note potential confounding factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The findings are consistent with studies in mammalian cochlear hair cells showing that outer hair cells are more vulnerable than inner hair cells, high frequency cells more sensitive than low frequency cells, and that disparities in metabolic and oxidative stress underlie differential susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 appropriately contextualize the zebrafish findings within the mammalian literature. The citations support the stated patterns of differential susceptibility in the cochlea, and the authors' findings provide a potential mechanistic explanation applicable to mammalian systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Hair cell vulnerability to ROS may increase with age due to age-related decreases in ROS-regulating mechanisms including SOD2 and SIRT3 expression in mammalian hair cells. SIRT3 activity delays age-related hearing loss and protects against noise and aminoglycoside damage. Overexpression of mitochondrially-targeted catalase attenuated hair cell loss in aging mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 accurately summarize relevant literature on age-related changes in antioxidant defenses and their impact on hair cell susceptibility. These citations provide important context linking the authors' findings on cumulative mitochondrial activity to age-related hearing loss, though they represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Mitochondrial impairment has been identified in multiple types of cochlear damage, and mutations in mitochondrial genes cause syndromic and non-syndromic deafness. The A1555G mutation in MTRNR1 dramatically predisposes patients to aminoglycoside-induced hearing loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 accurately cite established connections between mitochondrial dysfunction and hearing loss in humans. The A1555G mutation example is particularly relevant given the study's focus on aminoglycoside toxicity. These claims provide clinical context for the mechanistic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background claims establishing that neurons are energy-demanding and vulnerable to mitochondrial dysfunction, with some subpopulations more vulnerable due to high activity and oxidative stress. Age is a risk factor for neurodegenerative diseases, potentially due to accumulation of ROS-induced oxidative damage from mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide well-established background from the neuroscience literature, appropriately cited. These claims set up the conceptual framework for studying activity-dependent mitochondrial stress in hair cells. C9 is somewhat speculative but clearly framed as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establishing that auditory hair cell loss occurs in characteristic patterns (frequency-dependent, outer>inner cells), with unclear causes potentially involving metabolism, ROS, or Ca2+ handling. Dying hair cells exhibit swollen mitochondria and generate ROS in response to ototoxins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 provide well-established background on hair cell susceptibility patterns and mitochondrial involvement in ototoxicity, appropriately cited. These claims establish the biological context and rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims establishing zebrafish lateral line hair cells as a model system: they share similarities with inner ear hair cells, show conservation with human deafness genes, are susceptible to ototoxins, and older cells are more susceptible to aminoglycosides. Unlike cochlear cells, they lack frequency selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 appropriately establish the zebrafish lateral line as a valid model system for studying hair cell biology and ototoxicity. The citations support the stated similarities and differences with mammalian systems. C21 correctly identifies the experimental advantages of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Background claims from prior zebrafish studies establishing that mitochondria are the source of ROS during neomycin-induced hair cell death following mitochondrial Ca2+ elevation, and that blocking mitochondrial Ca2+ uptake or ROS generation provides protection. Previous studies noted selective and asynchronous hair cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 and C89-C91 accurately summarize prior work (particularly Esterberg et al. 2016) establishing mitochondrial involvement in aminoglycoside toxicity. These claims provide important context for the current study's focus on cumulative mitochondrial activity as a predictor of susceptibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Background claims on mitochondrial ROS production: ROS is generated at complexes I and III during normal metabolism, producing superoxide that converts to hydrogen peroxide. Mitochondrial Ca2+ signaling can stimulate OXPHOS and electron flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 provide accurate background on mitochondrial ROS production mechanisms, appropriately cited. This background is essential for interpreting how MET-induced Ca2+ influx might lead to increased oxidative stress over time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Background claims on mitochondrial dynamics: mitophagy occurs as quality control, increased OXPHOS associates with elongated morphology, mitochondrial activity and dynamics reciprocally regulate each other, and reduced mitophagy has been observed with increased ROS in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 provide relevant background on mitochondrial dynamics and turnover, appropriately cited. This context is important for interpreting the mitoTimer and mitoEos results, particularly the unexpected finding of increased turnover with reduced MET activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Discussion claims connecting findings to age-related hearing loss: cumulative mitochondrial stress may compromise responses to acute damage over time. Mitochondrial stress has been proposed for age-related hearing loss. Altered mitophagy and dynamics in aging affect OXPHOS and ROS. Lateral line hair cells (10-day lifespan) could provide insights into age-related processes in a shorter timeframe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 appropriately discuss implications of the findings for understanding age-related hearing loss. C115 is somewhat speculative but clearly framed as possibility. C118 makes a valid point about the experimental advantages of the zebrafish system for aging studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C71",
+      "C88"
+    ],
+    "result": "Discussion claims noting future research directions: mitochondrial Ca2+ buffering could be investigated through manipulation experiments, and there is heterogeneity in hair cell synaptic responses to stimulation that should be considered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C88 appropriately identify limitations and future directions. C71 suggests important follow-up experiments to test the Ca2+ buffering hypothesis. C88 cites relevant work on hair cell heterogeneity that could influence interpretation of the results.",
+    "result_type": "MINOR"
+  }
+]

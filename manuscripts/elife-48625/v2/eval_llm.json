@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C46",
+      "C47",
+      "C98"
+    ],
+    "result": "NORAD localizes predominantly to the cytoplasm in HCT116 cells under baseline conditions. Using a comprehensive panel of 11 RNA FISH probes spanning the entire NORAD transcript and subcellular fractionation with qRT-PCR, the authors demonstrate that 80-90% of NORAD is cytoplasmic, with 10 of 11 probes showing consistent cytoplasmic punctate localization (one probe targeting an Alu repeat showed nonspecific nuclear signal).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 provide strong experimental evidence using multiple orthogonal approaches (RNA FISH with 11 probes and subcellular fractionation). The use of NORAD-/- cells as negative controls (C37, C38) validates specificity. The findings are consistent with prior studies (C47) and represent a systematic examination (C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "NORAD does not detectably redistribute to the nucleus upon DNA damage. RNA FISH and subcellular fractionation after treatment with doxorubicin or camptothecin show NORAD remains predominantly cytoplasmic. A modest increase in nuclear NORAD at 12 hours post-treatment is attributed to transcriptional induction, as it is abolished by actinomycin D co-treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide direct experimental evidence using RNA FISH and fractionation. The actinomycin D experiment (C45) elegantly demonstrates that the modest nuclear increase reflects new transcription rather than redistribution. This directly contradicts prior claims from Munschauer et al., 2018 (C32) and is supported by appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors speculate that the disparate nuclear localization pattern reported by Munschauer et al. (2018) using a commercially-available RNA FISH probe set most likely represented a non-specific signal. This interpretation is based on their comprehensive analysis showing cytoplasmic localization and the fact that both studies used the same cell line (HCT116).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the authors' data (C5, C36-C42, C46) strongly support cytoplasmic localization, the claim that the Munschauer et al. results represent non-specific signal (C48) is speculative. The authors did not directly test the commercial probe set used by Munschauer et al., nor do they provide definitive evidence of what caused the discrepancy. Alternative explanations (e.g., methodological differences, probe design) are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Reanalysis of published RAP-MS data identifies PUM1, PUM2, and RBMX as significantly-enriched NORAD-interacting partners. The authors used a combined three-search-engine algorithm to reanalyze data from Munschauer et al. (2018), finding that PUM proteins were indeed enriched in NORAD pull-downs, though they were not originally reported as top hits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by reanalysis shown in Figure 3\u2014figure supplement 1. The reanalysis methodology is described (combined algorithm with three search engines), and the finding reconciles the apparent discrepancy between CLIP-seq data (C49) and the original RAP-MS report (C50). The interpretation regarding methodological bias (C51-C52) is reasonable given the 4-thiouridine pulse-labeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors generated a series of mutant NORAD constructs to test the functional importance of PUM and RBMX binding sites. Constructs include PREmut (18 PRE mutations), 5' deletion (lacking RBMX binding site), ND4 fragment (conserved PUM binding region), and 5' fragment (RBMX binding site). These were integrated into the AAVS1 locus and expressed at near-physiologic levels after CRISPRi-mediated knockdown of endogenous NORAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68 describe a well-designed genetic complementation system. The constructs are rationally designed based on known binding sites (C60-C64), integrated into a safe harbor locus (C65), and expression levels are carefully controlled and measured (C67-C68). The experimental design is appropriate for testing functional requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C92"
+    ],
+    "result": "UV crosslinking and RNA immunoprecipitation experiments demonstrate that PREmut and 5' fragment constructs lack PUM1/2 binding but retain RBMX binding, while 5' deletion and ND4 constructs retain PUM binding but lack RBMX binding. All constructs maintain predominantly cytoplasmic localization. RBMX binding to the 5' end of NORAD is confirmed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 provide direct biochemical validation of the mutant constructs using RIP with appropriate controls (IgG, GAPDH). The binding patterns match the design expectations and are shown in Figure 4A. RNA FISH confirms cytoplasmic localization of all constructs (C74), which is important for interpreting functional results. Western blot confirmation of RBMX binding (C92) is consistent with prior reports.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C91",
+      "C97",
+      "C99"
+    ],
+    "result": "PUM binding is required for maintenance of genomic stability by NORAD, while RBMX binding is dispensable. DNA FISH for chromosomes 7 and 20 shows that wild-type NORAD and the 5' deletion construct (lacking RBMX binding) fully suppress aneuploidy after endogenous NORAD knockdown, while PREmut (lacking PUM binding) fails to rescue. The minimal ND4 fragment (containing PUM sites) shows strong rescue activity, while the 5' fragment (RBMX binding site) has no activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C84 provide compelling genetic evidence using DNA FISH aneuploidy assays. Key controls are appropriate: no genomic instability from construct overexpression (C75-C76), expected phenotype from NORAD knockdown (C77-C78), and full rescue by wild-type NORAD (C79). The differential rescue by constructs with/without PUM vs RBMX binding sites directly tests the hypothesis. Statistical analysis is reported (chi-square tests with significance levels). The conclusion (C91, C97, C99) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Analysis of chromosomal segregation defects in anaphase cells confirms that PUM binding, but not RBMX binding, is required for NORAD function. Full-length NORAD and the 5' deletion construct suppress mitotic errors after NORAD knockdown, while PREmut does not. The ND4 fragment shows significant rescue activity, while the 5' fragment does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 provide independent validation of the aneuploidy results using a different phenotypic assay (mitotic errors). The results are consistent across both assays (aneuploidy and chromosome segregation defects), strengthening the conclusion. The assay was previously used by both the authors (C85) and Munschauer et al. (C86), allowing direct comparison. Sample sizes are appropriate (100 anaphase cells per sample).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "RBMX is not an essential co-factor for NORAD expression or localization. CRISPRi-mediated depletion of RBMX results in increased NORAD expression (further augmented by doxorubicin), which the authors speculate may be an indirect effect of DNA damage accumulation. RBMX knockdown does not alter NORAD's predominantly cytoplasmic localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C95 are supported by experimental data (qRT-PCR and subcellular fractionation shown in Figure 6A-B). The interpretation that increased NORAD is an indirect effect (C94) is appropriately labeled as speculation and is reasonable given RBMX's role in DNA damage response. The conclusion (C96) is supported by the data, though the increase in NORAD upon RBMX depletion suggests some regulatory relationship, even if not essential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background claims establishing prior knowledge about NORAD as a conserved lncRNA required for genome stability that acts as a negative regulator of PUMILIO proteins in the cytoplasm. Loss of NORAD or PUM hyperactivity results in genome instability. NORAD contains 18 conserved PREs and can bind a large fraction of cellular PUM1/2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C21) represent established knowledge from prior work, primarily Lee et al. 2016, Kopp et al. 2019, and Tichon et al. 2016. They are appropriately cited and provide necessary context for the current study. These are not new findings from this manuscript but rather background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background claims about the alternative RBMX-based mechanism proposed by Munschauer et al. (2018). Proteomic analysis identified RBMX as a NORAD interactor, and experiments suggested NORAD:RBMX interaction facilitates assembly of a nuclear RNP complex. PUM and RBMX bind different sites on NORAD and function in distinct subcellular compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C4, C22-C28) accurately represent prior work from Munschauer et al. 2018 and provide context for the current study's investigation. The authors appropriately note that the requirement for RBMX binding had not been established (C27), which motivates their experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background describing the discrepancy in NORAD localization between initial studies (Lee et al. 2016, Tichon et al. 2016) reporting cytoplasmic localization and Munschauer et al. (2018) reporting nuclear/cytoplasmic distribution with DNA damage-induced nuclear redistribution. Both studies used HCT116 cells, ruling out cell-type differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C29-C35) accurately describe the conflicting prior reports that motivated the current study's comprehensive localization analysis. The observation that both studies used the same cell line (C33-C34) is an important point that strengthens the rationale for the investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Background establishing that while genetic epistasis experiments implicated PUM1/2 in NORAD function, direct testing of whether PUM1/2 binding is required had not been performed. Similarly, a requirement for RBMX binding had not been established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C56-C58) accurately identify gaps in prior knowledge that the current study addresses. The distinction between genetic epistasis (showing PUM involvement) and direct binding requirements is appropriate and motivates the mutant construct experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Summary claims that the results define and clarify NORAD's molecular mechanism of action and direct future investigation toward the NORAD:PUM axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These concluding statements (C100-C101) are reasonable interpretations of the study's findings. The work does clarify the mechanism by establishing PUM binding as essential and RBMX binding as dispensable (supporting C100), and logically directs future work toward the NORAD:PUM axis (C101).",
+    "result_type": "MINOR"
+  }
+]

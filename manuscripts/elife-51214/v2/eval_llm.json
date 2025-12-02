@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "MEG/EEG are the only noninvasive methods to study electrical neural activity in humans with millisecond resolution and provide biomarkers of healthy and abnormal brain dynamics, but relating these macroscopic signals to underlying cellular- and circuit-level generators is a major limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6, and C7 establish the capabilities of MEG/EEG based on established knowledge in the field. Claims C2 and C8 identify the interpretability limitation, which is well-recognized in the neuroscience community. These claims are mutually consistent and supported by established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C9",
+      "C10",
+      "C11",
+      "C16",
+      "C47",
+      "C71",
+      "C79"
+    ],
+    "result": "HNN is a neural modeling software tool with a graphical user interface that enables researchers and clinicians without coding experience to interpret the neural origins of MEG/EEG by simulating primary current dipoles from a canonical neocortical circuit model with biophysically realistic neurons, producing output in the same units (Am) as source-localized data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C9-C11, C16, C47, C71, and C79 consistently describe HNN's design, features, and capabilities. The biophysical basis (C10) is supported by multiple citations. The key innovation of the GUI (C16) and the matching units between model and data (C11, C28) are clearly documented features that enable the stated goal of accessibility to non-experts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C49",
+      "C52",
+      "C53",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "HNN's underlying model has been successfully applied in prior publications to interpret sensory evoked responses and oscillations in alpha, beta, and gamma bands, leading to novel predictions about beta oscillations that were subsequently validated with laminar recordings in mice and monkeys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 document prior applications supported by multiple citations. Claims C49, C60, C62, and C63 describe a specific example where HNN generated a novel prediction about beta oscillations that was later validated experimentally (Sherman et al., 2016). The tactile evoked response example (C52, C53, C55) demonstrates successful reproduction of experimental data. This represents a complete cycle of hypothesis generation and experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C29",
+      "C48",
+      "C50",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "HNN is designed as a hypothesis development and testing tool to produce circuit-level predictions that can be tested with invasive recordings or other imaging modalities, providing a framework for translational neuroscience research, particularly for implementing disease-specific genetic mutations from animal models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C74, and C75 describe HNN's intended purpose as a hypothesis testing tool, supported by the validation example in C49/C63. Claims C29 and C48 clarify the current scope (single region). Claims C50, C76, and C77 discuss translational potential, though C77 is speculative about future applications. The core claim about hypothesis testing is well-supported by design features and prior validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C130"
+    ],
+    "result": "HNN simulates primary currents (Jp) that generate MEG/EEG signals based on established electromagnetic biophysics, calculating current dipoles from intracellular current flow in pyramidal neuron dendrites oriented normal to the cortical mantle, producing output in ampere-meters (Am) that matches source-localized data units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26 describe the biophysical basis of MEG/EEG generation, supported by multiple citations to established work. Claims C27, C28, and C130 describe how HNN implements this biophysics to produce output in matching units (Am). The mathematical formulation (C127-C130) is clearly described and based on established cable theory and electromagnetic principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "HNN's template model represents a canonical neocortical circuit with conserved features across cortical areas and species, including a 3-layered structure with pyramidal neurons and interneurons in a 3:1 ratio, which is minimally sufficient to account for generation of evoked responses and brain rhythms measured with EEG/MEG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 describe the canonical circuit structure based on established neuroscience knowledge (C32). The design assumption (C33) that conserved features are sufficient is supported by prior successful applications (C12, C93). Claims C34-C40 provide specific architectural details. The justification for excluding granular layer cells (C35-C37) is based on biophysical principles (C36). Claims C91-C93 articulate the design philosophy and its success.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C95",
+      "C96"
+    ],
+    "result": "HNN models layer-specific exogenous inputs as proximal drive (lemniscal thalamus to basal/oblique dendrites) and distal drive (higher-order cortex/non-lemniscal thalamus to distal dendrites), with the timing and strength of these drives being the critical parameters for simulating ERPs, as confirmed by sensitivity analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 describe the two types of exogenous drive based on known anatomy. Claim C44 documents the parameter tuning approach used in model development. Claims C45-C46 and C95 establish that drive timing and strength are critical parameters, supported by sensitivity analysis in supplementary materials. Claim C96 describes the optimization tool based on these insights. The approach is methodologically sound and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "HNN simulations predict that alpha rhythms emerge from ~10 Hz bursts of proximal and distal drive arriving in anti-phase, while beta events emerge when these drives arrive simultaneously with strong distal input, creating downward current flow; these predictions were validated with laminar recordings in mice and monkeys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 establishes the literature basis for alpha mechanisms. Claims C57-C59 describe specific model predictions about alpha and beta generation mechanisms developed through parameter tuning (C61). Claims C60 and C62 specify the novel prediction about beta events. Claim C63 documents experimental validation in multiple species. This represents a complete hypothesis-testing cycle with cross-species validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "HNN was applied to study PING-mediated gamma oscillations (30-80 Hz), which emerge through excitatory-inhibitory cell interactions with the period determined by GABAA decay time constants (~25 ms), bounding oscillations to ~40 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 describe the established PING mechanism for gamma oscillations, supported by citations (C64, C65). Claim C68 documents HNN's application to distinguish PING-mediated gamma from other mechanisms. The biophysical basis is well-established in the literature, and HNN's implementation follows known principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "HNN includes an optimization procedure that sequentially optimizes exogenous drive parameters to minimize RMSE between model and data, using the COBYLA algorithm with temporal weighting based on input timing, improving RMSE from 30.53 to 15.54 in the suprathreshold evoked response example.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 describe the optimization method's design and implementation. The stepwise approach (C131, C132) is justified by the assumption that drive parameters are critical (C132) and temporal causality (C133). The specific example (C69, C70) demonstrates quantitative improvement. The choice of COBYLA algorithm (C134, C135) is justified by comparative performance. The method is well-documented with concrete results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "HNN's model, goals, and capabilities are unique among EEG/MEG modeling software (LFPy, DCM, TVB) because it provides a user-friendly GUI to a biophysically detailed model that enables cellular-level interpretation and one-to-one data comparison, whereas other tools use reduced neural mass representations or require coding expertise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C87 provide factual descriptions of other software tools (LFPy, DCM, TVB) and their differences from HNN. Claims C88-C90 discuss the tradeoffs between model complexity and tractability. The comparative analysis is fair and acknowledges both advantages (C87) and limitations of different approaches. The uniqueness claim (C78) is supported by the specific differences documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "HNN was used to test hypotheses about tACS-induced modulation of synaptic dynamics by comparing pre- and post-tACS EEG signals, and future expansions will include direct simulation of NIBS-induced fields coupled to modeled neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 describes a demonstrated application shown in Figure 5. Claims C105 and C106 describe planned future expansions that are clearly labeled as speculative. The current application is supported by data, while future directions are appropriately qualified as plans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Future expansions of HNN include simulating LFPs and sensor-level signals, optimizing additional parameters, converting to NetPyNe for multi-area modeling, and integrating with MNE software for source localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94, C97, C99, C101, C102, and C103 describe planned future developments that are clearly speculative. Claim C98 documents current availability on high-performance computing platforms. While the plans are reasonable and well-motivated, they represent intentions rather than completed work. The current capabilities (C98) are supported, but future expansions cannot be evaluated as results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "HNN is distributed online at hnn.brown.edu with installation options for multiple operating systems, implemented in NEURON with Python and MPI parallelization, using neuron morphologies adapted from Bush and Sejnowski (1993) with scaling for human neurons, and synaptic connectivity based on rodent somatosensory cortex studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 provide factual information about distribution and implementation. Claims C112-C113 document the source of neuron morphologies with proper citation. Claim C115 describes the scaling factor applied for human neurons, supported by citations. Claims C116-C125 describe the biophysical and network implementation details. Claims C127-C129 describe the dipole calculation method. All implementation details are clearly documented with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C51"
+    ],
+    "result": "The complexity of the original model and code hindered community use, and HNN's construction is unique compared to other EEG/MEG modeling software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 is an inference about barriers to adoption of the prior version, which motivated development of the GUI (C16). Claim C51 asserts uniqueness, which is elaborated and supported in the Discussion section (C78-C90). Both claims are reasonable inferences supported by the comparative analysis and the design choices made in HNN.",
+    "result_type": "MINOR"
+  }
+]

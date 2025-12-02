@@ -1,0 +1,182 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Ectopic DNMT3B expression in an inducible mouse model leads to widespread CpG island hypermethylation across multiple tissues. TCGA analysis shows DNMT3B upregulation in nearly every tumor type, though only a fraction of tumors within each type overexpress it. In the mouse model, 4,839 differentially methylated CGIs were detected across intestine, liver, and kidney with tissue-specific and shared targets, without gross phenotypic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide converging evidence from TCGA data analysis (C1-C2), RRBS profiling of multiple tissues (C3-C5, C9), histological examination (C10), and reproducibility analysis (C11-C13). The statistical thresholds are clearly defined (FDR q-value <0.05, methylation increase \u22650.2) and multiple biological and technical replicates support reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "H3K36me3-enriched regions gained DNA methylation upon Dnmt3b overexpression despite already high baseline methylation levels. Statistical analysis showed 152/4,260 regions in kidney and 222/9,824 regions in liver with significant additional methylation gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by RRBS analysis with appropriate statistical testing (paired t-test, P-value <0.05, difference \u22650.2%). The finding is consistent with known DNMT3B recruitment via the PWWP domain to H3K36me3-marked regions, supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Ectopic DNMT3B preferentially targets promoters of silent or lowly expressed genes. Analysis of hematopoietic lineage cells showed more hypermethylated CGIs in stem/progenitor cells than differentiated T cells, with DMRs consistently enriched at promoters of the most lowly expressed genes across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are supported by FACS-sorted blood cell analysis with RRBS profiling and correlation with gene expression data. The lineage progression analysis (HSC\u2192MPP\u2192CLP\u2192CD4+/CD8+) provides strong evidence for the relationship between gene expression state and methylation susceptibility. Statistical thresholds are appropriate (q-value <0.05, methylation gain >0.3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "H3K4me3 protects CGIs from aberrant DNA methylation while H3K27me3-marked regions are susceptible. DMRs showed significantly lower H3K4me3 and higher H3K27me3 levels compared to non-DMRs. A random forest classifier achieved 96.7% recall at 5% FDR, with H3K4me3, DNase, and control methylation as the most important features. H3K27me3 was depleted at DMRs after Dnmt3b induction while H3K4me3 remained unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 are supported by comprehensive ChIP-seq analysis integrated with RRBS data. The machine learning approach (C20-C21) provides quantitative validation of feature importance with proper cross-validation. The temporal ChIP-seq data (C23) directly demonstrates H3K27me3 depletion concurrent with methylation gain. Statistical significance is reported for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Time-course analysis in MEFs reveals rapid CGI hypermethylation within one day of Dnmt3b induction, with continued increase at seven days. H3K4me3-marked promoters remained protected (0-1% methylated), while H3K27me3-only and bivalent promoters were rapidly methylated (29% and 9% at day 1, 96% and 62% at day 7, respectively). Gene expression status strongly predicted susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by controlled MEF experiments with two time points and appropriate statistical thresholds. The stratification by chromatin state and expression level provides mechanistic insight. The rapid kinetics (day 1 vs day 7) are clearly documented with quantitative data for each chromatin state category.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C58",
+      "C59"
+    ],
+    "result": "DNA methylation induced by ectopic DNMT3B can transiently co-exist with H3K27me3-modified histones, though H3K27me3 is progressively lost as DNA methylation increases. ChIP-BS-seq showed widespread methylation gain at H3K27me3-containing chromatin at day 1 that increased by day 7, concurrent with H3K27me3 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C58-C59 are supported by ChIP-BS-seq data that directly measures both DNA methylation and H3K27me3 on the same molecules. The time-course design (control, 1d, 7d) allows temporal resolution of the transition from H3K27me3 to DNA methylation. This addresses a key mechanistic question about the relationship between these modifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Ectopic DNMT3B overexpression in MEFs for 7 days resulted in minimal transcriptional changes, with only 39 genes downregulated and 13 upregulated (adjusted P-value <0.05, fold change >2). The most upregulated gene was the oncogene Rab6b (4-fold increase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by RNA-seq analysis with appropriate statistical thresholds. The minimal transcriptional impact is consistent with targeting of already silent genes. However, the biological significance of Rab6b upregulation and its relationship to methylation changes is not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "H3K27me3 and PRC2 are not required for CGI hypermethylation in the ectopic DNMT3B model. Despite ~10-fold reduction in H3K27me3 levels by Eed knockdown, both shRNA lines showed widespread CGI hypermethylation at similar levels to control MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C37 are based on Eed knockdown experiments, but the interpretation is complicated by incomplete H3K27me3 depletion (~10-fold reduction but not complete elimination). One shRNA showed reduced targeting (n=4,510 vs 5,943 CGIs), suggesting partial dependence. The claim of complete independence is overstated given residual H3K27me3 and differential effects between shRNAs. The authors acknowledge this limitation but still conclude independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Ultra-deep bisulfite sequencing of the Uncx locus reveals distributive DNMT3B activity with intermediate methylation levels across the cell population rather than discrete subpopulations. Median methylation increased from 0.02 to 0.08 (1d) to 0.18 (7d). Individual CpG sites showed variable susceptibility (2-54% methylation), with five consecutive CpGs (#22-26) remaining hypomethylated, likely due to transcription factor binding sites. Low pairwise correlation between neighboring CpGs (max 0.37) indicates focal, non-processive activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 are supported by ultra-deep amplicon sequencing (450,000-650,000 reads) providing single-molecule resolution. The epiallele analysis (C41-C42) quantitatively demonstrates heterogeneity. The motif analysis (C45) provides mechanistic explanation for protected CpGs. The correlation analysis (C46) directly tests processivity. This is a technically rigorous analysis addressing the mechanism of methylation spreading.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The ectopic DNMT3B system shares some features with cancer methylation but does not fully recapitulate the cancer methylome. While 84% of orthologous CLL CGIs are methylated in the ectopic system, the overlap significance is low due to the high proportion of targets (81% bivalent, 93% H3K27me3-only in mouse vs 12% and 21% in CLL). The ectopic system shows global methylation increase at all genomic regions, unlike cancer which shows CGI hypermethylation with global hypomethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 are supported by comparative analysis with TCGA data and published cancer datasets. The quantitative comparison (C50-C52) clearly shows the limitations of the model. The 100bp tile analysis (C53-C54) demonstrates the key difference in global methylation patterns. The authors appropriately acknowledge that high DNMT3B expression may not reflect the cancer mechanism, making this an honest assessment of model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "DNMT3B preferentially targets CGIs near silent gene promoters enriched for H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is a summary conclusion supported by the comprehensive analysis across multiple tissues and cell types (C14-C31). This integrates findings from gene expression analysis, chromatin state profiling, and temporal dynamics to establish the general targeting principle.",
+    "result_type": "MAJOR"
+  }
+]

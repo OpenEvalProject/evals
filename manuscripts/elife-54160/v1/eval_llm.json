@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript provides background on the clinical burden of invasive fungal infections, particularly cryptococcosis, and the limitations of current antifungal treatments. Claims cite published literature to establish that invasive fungal infections cause 1.6 million deaths annually with mortality rates up to 90%, that there are only four classes of antifungals targeting the fungal cell envelope, and that cryptococcosis causes 220,000 infections and 180,000 deaths annually. The claims also describe treatment challenges including unavailability of 5-FC in 78% of countries and reduced survival rates when fluconazole is used alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C2, C10-C19) are well-supported by citations to published literature and represent established knowledge in the field. The claims provide appropriate context for the study's rationale and are consistent with the scientific consensus on fungal infection epidemiology and treatment challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The manuscript establishes foundational concepts about drug interactions and antifungal mechanisms. Fluconazole is described as fungistatic (inhibiting growth rather than killing cells), synergistic interactions are defined as combined effects greater than the sum of individual activities, and examples are provided including the synergy between Amphotericin B and 5-FC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These definitional and mechanistic claims (C3, C20-C22, C80-C82) are well-supported by citations to established literature and represent accepted knowledge in antifungal pharmacology. The definitions are standard and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript describes the prevalence and consequences of polypharmacy in HIV/AIDS patients, stating that 56% experience polypharmacy, which doubles the risk of antiviral therapy nonadherence to 49% and increases mortality by 68% in HIV+ and 99% in HIV- patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C23-C26) about polypharmacy are supported by citations to published literature (Siefried et al., 2018; Lohman et al., 2018; Cantudo-Cuenca et al., 2014) and provide important clinical context for why identifying drug interactions is relevant to the target patient population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C27"
+    ],
+    "result": "The O2M method uses synergy prediction mutants (CNAG_00573\u0394 encoding NADH dehydrogenase, CNAG_03664\u0394 encoding NIC1 nickel transporter, and CNAG_03917\u0394 encoding a Nup75 homolog) to screen for molecules that interact with fluconazole. The screen identified 313 putative FLZ synergistic molecules, though cnag_03664\u0394 was excluded due to slow growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C91-C95 describe the O2M methodology and are supported by experimental data and citations. The gene annotations are properly referenced, and the methodological decision to exclude cnag_03664\u0394 is justified by observed phenotype. The identification of 313 molecules is supported by experimental screening data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C29",
+      "C90",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The O2M screen predicted that 16% of the library would interact with FLZ, and validation identified 40 synergistic and 19 antagonistic molecules. Of molecules predicted to synergize, 31% were correctly identified, and overall 46% of predicted interactions were validated as truly interacting (synergistic or antagonistic). The remaining 70 molecules represented false positives. Synergy and antagonism are defined by standard FICI criteria (\u22640.5 for synergy, \u22654 for antagonism).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C28-C29, C90, C96-C98 describe the screening results and validation rates. These are supported by experimental data from checkerboard assays shown in Figure 2. The definitions of synergy and antagonism are appropriately cited to established methods. The 31% and 46% validation rates indicate reasonable predictive performance for a high-throughput screen, though the false positive rate is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "The manuscript reports that 75% of structurally similar molecules tested acted synergistically with FLZ, demonstrating that structural similarity can predict additional synergistic combinations prior to elucidating mechanism of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by experimental data from checkerboard assays testing structurally similar molecules (Figure 3). The 75% success rate (6 of 8 molecules tested) provides strong evidence for structure-based prediction, though the sample size is relatively small. The conclusion that structure can predict synergy is reasonable but would benefit from larger validation sets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Five FLZ-synergizing molecules (sertraline HCl, clomipramine HCl, benzalkonium chloride, berbamine HCl, and dicyclomine HCl) synergistically inhibited growth of most C. neoformans strains and fungal species tested, while nafcillin sodium was antagonistic with FLZ in most strains/species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by experimental data from checkerboard assays across multiple strains and species shown in Figure 4. The broad-spectrum activity of these combinations across different fungal species and strains (including clinical isolates) strengthens the therapeutic potential of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Nafcillin, a common penicillinase-resistant penicillin antibiotic, antagonized FLZ activity in all 7 FLZ-resistant C. neoformans strains tested. Other beta-lactams including oxacillin, methicillin, cefazolin, and cefonicid also antagonize FLZ, while vancomycin and linezolid do not interact with FLZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are supported by experimental data from checkerboard assays (Figure 5M and supplementary data). The pattern of antagonism among beta-lactams is consistent and clinically important. The testing against FLZ-resistant strains strengthens the findings. The lack of interaction with vancomycin and linezolid provides useful negative controls and alternative treatment options.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C76",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The manuscript proposes a mechanism for nafcillin-FLZ antagonism based on nafcillin's known induction of cytochrome P450 enzymes in humans. Since FLZ inhibits the fungal cytochrome P450 enzyme 14\u03b1-demethylase, the authors hypothesize nafcillin may induce this enzyme in C. neoformans. Supporting this, high-dose nafcillin treatment increased ergosterol levels, and nafcillin synergized with amphotericin B (which targets ergosterol). Nafcillin also antagonized ketoconazole, another ergosterol synthesis inhibitor. The clinical relevance is supported by an autopsy study showing 10 of 16 cryptococcosis deaths involved patients receiving penicillins or cephalosporins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50, C69-C73, C76, C86-C89 present a mechanistic hypothesis supported by multiple lines of evidence: (1) nafcillin's known P450 induction in humans (cited), (2) experimental data showing increased ergosterol with nafcillin treatment (Figure 5O), (3) synergy with amphotericin B (which targets ergosterol), and (4) antagonism with ketoconazole (another ergosterol synthesis inhibitor). The hypothesis (C76) is reasonable and testable, though direct evidence of P450 induction in fungi is not provided. The clinical data (C73) adds important real-world context, though causality cannot be established from an observational autopsy study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Dicyclomine is an FDA-approved anticholinergic drug that targets a GPCR encoded by CHRM1 in humans. C. neoformans lacks a CHRM1 ortholog but has many GPCRs. A deletion library screen found that 44% of dicyclomine-resistant mutants were involved in transport and trafficking, suggesting these processes relate to dicyclomine's mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by citations for dicyclomine's approved use and target (C51-C52), genomic inference for lack of CHRM1 ortholog (C53), and experimental data from the resistance screen (C54, Figure 6A). The enrichment of transport/trafficking genes among resistant mutants provides a reasonable starting point for mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C78",
+      "C79"
+    ],
+    "result": "The manuscript proposes that dicyclomine + FLZ combination increases cell permeability and disrupts nutrient transporter function. Dicyclomine alone permeabilizes cells at high doses, but low concentrations of dicyclomine + FLZ cause greater than additive increases in permeability. The authors hypothesize this phenocopies the effect of simultaneously inhibiting Golgi trafficking and blocking ergosterol synthesis (as shown in S. cerevisiae), leading to mislocalization of plasma membrane transporters. Supporting this, cells treated with dicyclomine + FLZ showed resistance to toxic amino acid analogs, suggesting decreased amino acid transporter function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C78-C79 are supported by experimental data from propidium iodide internalization assays (Figure 6C-H) and toxic amino acid resistance assays (Figure 6I-L). The hypothesis (C78) is based on published work in S. cerevisiae and is reasonable, though the evidence for transporter mislocalization is indirect (inferred from resistance to toxic amino acids rather than direct localization studies). The greater-than-additive increase in permeability (C56) supports synergistic mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The dicyclomine + FLZ combination is fungicidal. After 9 hours, cells treated with synergistic combinations and FLZ doses \u22651/3 MIC exhibited increased cell death. After 24 hours, all synergistic combinations showed nearly 100% cell death. Even the lowest dose combination had significantly more cell death than single agents after 9 and 24 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C83-C85 are supported by experimental data from fungicidal assays using BCECF-AM staining (Figure 6M and Figure 6\u2014figure supplement 2). The time-course data showing progressive cell death is consistent with the proposed mechanism of membrane permeabilization and nutrient transporter disruption. The conversion from fungistatic (FLZ alone) to fungicidal (combination) is clinically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Dicyclomine was synergistic with FLZ against all FLZ-resistant strains and species tested, including C. neoformans and C. auris. The dicyclomine + ketoconazole combination was also synergistic (average FICI 0.313).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by experimental data from checkerboard assays on resistant strains (Figure 4\u2014figure supplement 2 and source data). The activity against FLZ-resistant strains is particularly important for clinical translation, as it suggests the combination could overcome resistance mechanisms. The synergy with ketoconazole (C59) suggests the mechanism may extend to other azole antifungals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C74",
+      "C75"
+    ],
+    "result": "Dicyclomine is orally bioavailable and crosses the blood-brain barrier, making it promising for fungal meningitis treatment. In mice, dicyclomine serum concentrations at 18 hours post-injection (0.2-0.6 \u00b5g/mL) are lower than the antifungal MIC, yet dicyclomine still improves survival when combined with FLZ even at these low doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C74-C75 are supported by citations for pharmacokinetic properties (C60-C61, C74) and in vivo efficacy data (C75, Figure 7). The observation that efficacy is achieved at concentrations below the in vitro MIC is important and suggests the combination may be effective at clinically achievable doses. However, the pharmacokinetic data cited (C74) is from a different study and dosing regimen, which introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C9"
+    ],
+    "result": "In a murine model of cryptococcal meningitis, treatment began 8 days post-inoculation when 100% of mice had liver dissemination and 40% had brain dissemination. Dicyclomine alone did not affect survival compared to PBS, but dicyclomine + FLZ significantly improved survival over FLZ alone in a dose-dependent manner, approximately doubling the time-to-endpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C62-C65 are supported by experimental data from the murine infection model (Figure 7 and Figure 7\u2014figure supplement 1). The dissemination data (C62-C63) establishes that treatment began at a clinically relevant disease stage. The survival benefit (C65, C9) is statistically significant (p=0.0036) and dose-dependent, supporting therapeutic potential. However, the study used time-to-endpoint (reaching 80% initial mass) rather than mortality as the endpoint, and fungal burden data during treatment are not provided, which limits interpretation of the mechanism in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The manuscript discusses that O2M's synergy prediction genes tend to identify synergizers with functionally related mechanisms of action. Sertraline, one of the known synergizers used to identify prediction genes, inhibits phospholipase activity in S. cerevisiae, which inhibits vesicle formation. Of the 59 FLZ-interacting molecules identified, 10 have been previously described in various fungi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by inference from current and prior work (C66), citation for sertraline's mechanism (C67), and comparison with published literature (C68). The observation about mechanistic relationships (C66) is reasonable but somewhat speculative, as it's based on limited examples. The comparison with prior literature (C68) provides useful context for novelty assessment.",
+    "result_type": "MINOR"
+  }
+]

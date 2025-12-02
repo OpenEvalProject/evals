@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6"
+    ],
+    "result": "Sens protein expression in the Drosophila wing disc is organized into stripes bordering the DV boundary, which refine into a periodic pattern of S-fated cells through Notch-mediated lateral inhibition involving cell-autonomous positive feedback and mutual inhibition between neighboring cells. This periodic pattern generates the highly ordered sensory bristle pattern along the adult wing margin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 describe the spatial organization and developmental outcome of Sens expression, supported by imaging data in Figures 1A-B. Claims C5-C6 describe the mechanistic basis (lateral inhibition with feedback loops) supported by prior literature and illustrated in Figure 1C. Together these claims establish the biological context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C107"
+    ],
+    "result": "Fluorescently tagged sens transgenes (sfGFP-sens and mCherry-sens) inserted at genomic location 22A3 fully rescue sens mutant phenotypes and allow quantification of Sens protein at the single-cell level. FCS measurements establish that 1 RFU corresponds to approximately 10 nM or ~138 Sens molecules per cell, with maximum levels not exceeding 250 nM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 and C107 describe the construction, validation, and calibration of the fluorescent reporter system. The rescue data (Figure 1\u2014figure supplement 1), FCS measurements (Figure 1G), and conversion factor validation (Figure 1\u2014figure supplement 3) provide strong experimental support for the quantitative framework used throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Wing disc cells display a broad range of Sens protein molecule numbers with significant intracellular differences between sfGFP-Sens and mCherry-Sens despite equal average output from both alleles. These differences arise from two independent noise sources: stochastic gene expression and measurement noise, with the latter quantified using a tandem-tagged construct showing negligible FRET.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 establish the experimental observation of protein noise and the methodology for separating gene expression noise from measurement noise. The data in Figures 2A-B and the tandem-tag control (Figure 2\u2014figure supplement 1) provide strong support for decomposing total noise into its constituent sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The Fano factor for Sens expression displays a complex relationship to protein output, with a minor peak in cells containing fewer than 200 molecules. A stochastic gene expression model with constitutively active promoter produces a constant Fano factor that somewhat resembles the experimental profile for cells with more than 200 Sens molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 describe the empirical Fano factor profile (Figure 2C) and initial modeling attempts. The constitutive promoter model provides a baseline that partially explains the data at higher protein levels, setting up the need for more complex models to explain the peak at low expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Loss of miR-9a repression increases Sens protein levels 1.8-fold uniformly across all cells and increases the Fano factor approximately two-fold across the entire range of Sens output, consistent with stochastic birth-death processes. However, loss of miR-9a also strongly enhances the Fano factor peak in cells with \u2264300 molecules, an effect not predicted by birth-death processes alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 describe the miR-9a perturbation experiment (Figure 4B-D) which serves dual purposes: validating the birth-death noise model and revealing additional complexity. The uniform increase in Fano factor supports the birth-death model (C34), while the enhanced peak (C35-C36) indicates additional noise sources, motivating the transcriptional bursting model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Systematic variation of transcriptional parameters in the stochastic model reveals that varying the promoter activation parameter kon produces a Fano factor peak at low protein output matching experimental observations, while varying initiation (Sm) or inactivation (koff) parameters does not. This suggests sens transcription at the DV boundary is regulated by modulating promoter burst frequency via kon, supported by independent smFISH analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 describe computational modeling results (Figure 3D-F) that identify kon variation as the mechanism most consistent with experimental data. The independent validation by smFISH (C41, cited from Bakker et al., 2020) strengthens this conclusion, though the modeling relies on parameter fitting and assumptions about which parameters vary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Mathematical modeling indicates that Sens protein noise arises from two distinct sources: transcriptional bursting kinetics (generating a Fano factor peak at low burst frequency) and mRNA/protein birth-death processes (generating constant amplitude fluctuations). As promoter activation becomes more frequent, the system approximates a constitutively active promoter where birth-death processes dominate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 synthesize the modeling results into a mechanistic framework explaining the complex Fano factor profile. The two-source model is well-supported by the parameter sweep simulations (Figure 3) and the miR-9a perturbation experiments (Figure 4), providing a coherent explanation for the observed noise characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The sens transgene inserted at genomic location 57F5 rescues mutant phenotypes comparably to 22A3 and produces a similar expression pattern, but with 30-35% higher median output that is uniform across all expressing cells. Critically, the Fano factor peak from 57F5 is greatly increased in amplitude and width compared to 22A3, but both relax to the same constant Fano factor at high Sens output, suggesting 57F5 affects transcriptional bursting but not birth-death processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 describe the genomic position effect (Figure 5). The rescue data, expression patterns, and quantitative measurements of both protein levels and noise are well-documented. The interpretation that 57F5 affects bursting but not birth-death processes (C52) is supported by the convergence to identical constant Fano factors at high expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The sens insertion sites differ in their TAD organization: 22A3 is in the middle of a large TAD (~50 kb from insulators) while 57F5 is in a small TAD (~1 kb from its 3' insulator). In Drosophila, homologous chromosomes are extensively paired in somatic cells, and insulators can associate in trans to facilitate enhancer regulation of promoters on other chromosomes (transvection), a phenomenon observed across multiple species including humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 establish the genomic context using published Hi-C and ChIP-seq data (Figure 6\u2014figure supplement 1) and cite established literature on chromosome pairing and transvection. These claims provide the mechanistic hypothesis for why genomic location affects noise, though they are primarily descriptive and rely on prior knowledge rather than new experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "When sens alleles are paired at 57F5 (57F5/57F5), mCherry-Sens shows a broader, bimodal distribution compared to the unimodal distribution at 22A3/22A3. However, when alleles are unpaired (57F5/22A3), the distribution and Fano factor resemble 22A3/22A3, not 57F5/57F5. This demonstrates that sens alleles regulate each other in trans when located at 57F5 but not at 22A3, and that enhanced noise in 57F5/57F5 cells is due to trans regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 describe the critical experiment distinguishing cis from trans regulation (Figure 6A-B). The unpaired allele control (57F5/22A3) is essential and provides strong evidence for trans regulation. The logic is sound: if the effect were cis, 57F5/22A3 would resemble 57F5/57F5, but it resembles 22A3/22A3 instead, supporting trans regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Modeling shows that a small increase in transcription burst size can capture the effect of changing sens location from 22A3 to 57F5 on the Fano factor, suggesting trans regulation might alter burst size. The complex noise profile at 57F5 might be a signature of multi-state transcription, a phenomenon observed for other genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 and C82-C84 propose a mechanistic explanation for trans regulation effects through modeling (Figure 6C). While the model can reproduce the qualitative features, the claims are speculative (C64, C83 use \"might\"). The modeling provides a plausible hypothesis but lacks direct experimental validation of burst size changes or multi-state transcription at 57F5 versus 22A3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Cells undergoing lateral inhibition at the center of Sens-expressing stripes contain 500-1000 molecules. For 57F5, high-noise cells are located throughout the stripe including the center, while for 22A3, high-noise cells are at the edges. The frequency of ectopic bristles is ten-fold higher in 57F5/57F5 adults (one error in three wings) compared to 22A3/22A3, and unpaired alleles (57F5/22A3) show frequencies similar to 22A3/22A3, demonstrating that pairing at 57F5 causes greater pattern disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 connect the molecular noise measurements to developmental outcomes (Figure 7B, D). The spatial mapping of high-noise cells (C66-C67) and the quantification of bristle patterning errors (C68-C71) provide strong evidence linking enhanced noise to pattern disorder. The unpaired allele control (C70) is critical for establishing causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Loss of miR-9a repression, which increases Sens protein levels 80-85% uniformly, does not increase patterning errors in adult wings. This contrasts with the 57F5/57F5 condition where only 35% higher protein levels but greatly enhanced noise causes ten-fold more errors. The results suggest pattern disorder is driven by Sens protein noise rather than protein levels, consistent with lateral inhibition's ability to buffer against uniform changes in expression while remaining sensitive to stochastic fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 and C95-C98 describe the critical dissociation between protein level and noise effects (Figure 7E). The comparison is compelling: miR-9a mutants have higher protein levels than 57F5/57F5 but lower error rates, supporting the conclusion that noise, not level, drives disorder. The mechanistic explanation invoking lateral inhibition's properties (C96-C97) is supported by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "For the 19.2 kb sens transgene, intrinsic noise from birth-death processes and transcriptional bursting is insufficient to disorder the adult pattern. However, when sens is subject to trans regulation between paired alleles at 57F5, protein noise is greatly enhanced and sufficient to disorder the pattern. Trans interaction between paired homologs is thus an unanticipated source of noise that might be a natural means to modulate gene expression noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 synthesize the main findings into the paper's central conclusion. The evidence from 22A3 (low noise, ordered pattern) versus 57F5/57F5 (high noise, disordered pattern) versus 57F5/22A3 (low noise, ordered pattern) strongly supports C74-C76. Claim C77 is speculative but reasonable given the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Noise levels differ between 22A3 and 57F5 only in the 300-800 Sens molecule regime, suggesting these cells are at a developmental decision point between E and S fates, an order of magnitude less than the 8,000-10,000 molecules in terminal S-fated cells. This low copy number regime is where stochastic fluctuations have the largest impact, yet producing large numbers would be metabolically costly. The system optimizes by regulating kon (burst frequency) rather than burst size, as supported by smFISH data showing constant burst size but variable frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 provide mechanistic interpretation of why the system operates at relatively low protein copy numbers and how it optimizes noise control. The observations about the critical expression regime (C85-C87) are data-driven. The optimization argument (C88-C89, C91-C92) is logical and supported by modeling. The smFISH validation (C93) from Bakker et al. 2020 strengthens the kon regulation model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "During lateral inhibition, high intrinsic fluctuations in Sens distort cell-to-cell transmission and reception of inhibitory signals. If fluctuations are large enough to trigger positive feedback between proneural factors, cells become resistant to lateral inhibition, resulting in cells that spontaneously adopt S fates out of order.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C101 propose a mechanistic explanation for how noise causes patterning errors (illustrated in Figure 7F). While the model is plausible and consistent with known lateral inhibition mechanisms, these claims are interpretive (C99 states \"simplest interpretation\") and speculative (C100-C101 use conditional language). Direct experimental validation of the proposed mechanism is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Allelic pairing has been observed across multiple organisms and often precedes trans regulatory interactions such as X-inactivation. Trans allelic interactions appear to be a pervasive feature of the Drosophila genome, though pairing is not necessarily indicative of trans regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 provide literature context for the trans regulation findings. These are well-supported by the cited references and establish that the phenomenon observed is part of a broader biological pattern. However, these are review-type claims rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Stochastic transcriptional fluctuations have been harnessed in bet-hedging systems in bacteria and confer phenotypes like HIV latency and drug resistance in mammalian cells. In development, variability affects cell-fate switches relying on absolute thresholds, though some systems buffer against stochasticity through relative changes or intercellular signaling. This study shows that lateral inhibition-based patterning can buffer against tissue-scale protein changes but is sensitive to stochastic fluctuations in protein copy numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 place the findings in broader biological context. Claims C102-C105 are well-supported by cited literature. Claim C106 is the paper's main conclusion, strongly supported by the experimental data showing that uniform protein level changes (miR-9a mutant) don't cause disorder while enhanced noise (57F5/57F5) does.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The Fano factor in the constant regime for Sens is approximately 20 molecules, corresponding to a translation burst size of approximately 9 molecules per mRNA. When miR-9a binding sites are deleted, the protein synthesis rate increases from ~0.5 to ~1 proteins/mRNA/min, consistent with the observed 1.8-fold increase in protein output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 describe parameter estimation from experimental data (Figure 4D and calculations in Methods). The logic connecting Fano factor to burst size through established theory is sound, and the consistency between the miR-9a effect on protein levels and the calculated synthesis rate change provides internal validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Single-molecule FISH analysis confirmed that sens alleles positioned at the same locus (22A3 or 57F5) are physically co-localized in nuclei, while alleles at heterologous loci are not co-localized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 provides direct evidence for physical pairing of homologous alleles, which is essential for the trans regulation hypothesis. The smFISH data from Bakker et al. 2020 directly validates this key assumption underlying the interpretation of the 57F5/22A3 control experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Chemosensory bristles are periodically positioned (approximately every fifth cell) near the adult wing margin, while mechanosensory bristles form a continuous row selected 8-10 hours later. Chemosensory bristles are more frequently specified in 57F5 wings compared to 22A3. The increased pattern disorder is not due to disruption of genes in the 57F5 TAD (none are neurogenic) or genetic background differences (parental stocks show identical bristle frequencies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 provide additional characterization of the patterning phenotype and important controls. The temporal separation of chemosensory and mechanosensory bristle selection (C115) helps interpret which developmental stage is affected. The controls ruling out TAD disruption (C117) and genetic background (C118) strengthen the conclusion that the effect is specifically due to trans regulation at 57F5.",
+    "result_type": "MINOR"
+  }
+]

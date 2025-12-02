@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "High-quality genome assemblies were generated for three bioluminescent beetle species (P. pyralis, A. lateralis, and I. luminosus) using diverse sequencing technologies and assembly approaches. The assemblies show comparable completeness to model beetle genomes, with detailed characterization of genomic features including linkage groups, mitochondrial genomes, repeat content, and telomeric sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C54 collectively describe comprehensive genome sequencing and assembly efforts with appropriate quality metrics (BUSCO scores, N50 values, orthology analysis). The methods are well-documented with multiple sequencing technologies, and quality assessments demonstrate assemblies comparable to established reference genomes. The data presented in Figure 2 supports the assembly quality claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "P. pyralis exhibits unusually high DNA methylation levels (~20% mCG in genic regions), at least twice that of other holometabolous insects, with conserved DNA methyltransferases (DNMT1 and DNMT3) present across all three study species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by whole genome bisulfite sequencing data (Figure 2D) showing quantitative methylation levels, phylogenetic analysis confirming DNMT conservation, and comparative analysis with published insect methylation data. The inference that most firefly lineages possess mCG is reasonable given the conservation of DNMTs and CpG[O/E] patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The P. pyralis X-chromosome (LG3a, 22.2 Mbp) was identified through coverage analysis and gene content, showing homology with the T. castaneum X-chromosome with conservation over >200 million years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by multiple lines of evidence: XO male coverage patterns, enrichment of T. castaneum X-chromosome homologs on LG3a, and concordance between assembly size (22.2 Mbp) and flow cytometry estimates (~26 Mbp). The inference of long-term conservation is supported by phylogenetic dating and comparative genomic analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "P. pyralis bioluminescence genes Luc1 and LST are located on separate linkage groups, contrary to the hypothesis that they would be co-localized for coordinated expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is directly supported by genomic mapping data shown in Figure 2A. This finding contradicts the authors' initial hypothesis but is clearly demonstrated by the Hi-C scaffolding results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Two luciferase paralogs (Luc1 and Luc2) were identified in both firefly species with distinct, conserved expression patterns: Luc1 is exclusively expressed in adult and larval lanterns, while Luc2 is expressed in eggs, ovaries, and other non-lantern tissues, suggesting subfunctionalization following gene duplication prior to the Lampyrinae-Luciolinae divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C69 are well-supported by RNA-Seq expression data (Figure 3C), gene annotation, and consistency with previously published studies. The expression patterns are clearly demonstrated across multiple tissues and life stages in both species, supporting the evolutionary model of subfunctionalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Firefly luciferases evolved from ancestral peroxisomal fatty acyl-CoA synthetases (PACS) through tandem gene duplication and neofunctionalization. Luc1 is genomically clustered with related PACS/ACS genes and MGST genes in both firefly species. Prior to the Lampyrinae-Luciolinae split (~100 Mya), the ancestral luciferase (AncLuc) duplicated via long-range duplication, with subsequent subfunctionalization producing Luc1 (in place) and Luc2 (relocated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 are supported by genomic synteny analysis (Figure 3D), phylogenetic analysis (Figure 3C), gene structure conservation, and expression data. The evolutionary model is well-reasoned based on genomic location, orthology relationships, and temporal constraints from phylogenetic dating. The synteny patterns clearly show clustering of related genes at the Luc1 locus but not at Luc2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "A single luciferase (IlumLuc) was identified in I. luminosus with identical exon structure to firefly luciferases but longer introns. IlumLuc belongs to an Elateridae-specific clade (Clade D) and is not orthologous to the firefly Luc1 locus, with a different I. luminosus scaffold (9654) showing orthology to the firefly Luc1 locus, supporting independent origins of firefly and click beetle luciferases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are supported by gene annotation, RNA-Seq expression data (Figure 3C), gene structure analysis, phylogenetic analysis, and detailed synteny analysis (Figure 3D). The lack of orthology between IlumLuc and firefly Luc1 loci is demonstrated through absence of conserved syntenic relationships with Clade A/B/C genes, while a different scaffold shows the expected orthologous relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Multiple independent lines of evidence support at least two independent gains of bioluminescence in beetles: ancestral state reconstruction identifies separate origins in click beetles and in the common ancestor of fireflies/phengodids/rhagophthalmids; molecular adaptation analysis shows 35% of sites in the ancestral click beetle luciferase branch under positive selection (dN/dS = 3.98), indicating neofunctionalization from a non-luminous Clade D PACS gene after Agrypninae divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 are strongly supported by convergent evidence from ancestral state reconstruction (Figure 4A), molecular adaptation analysis using aBSREL (Figure 4B), synteny analysis, and phylogenetic constraints. The positive selection signal on the same branch as luciferase activity gain provides compelling evidence for neofunctionalization. The integration of multiple analytical approaches strengthens the conclusion of independent origins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Comparative transcriptomic analysis identified conserved lantern-enriched enzymes in both firefly species, including luciferase, LST (absent in I. luminosus), adenylate kinase, cystathionine gamma-lyase, and ASKSA with peroxisomal targeting signals. The conservation of expression patterns suggests the enzymatic physiology of photocytes was established in the Lampyrinae-Luciolinae ancestor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C107 are supported by RNA-Seq differential expression analysis (Figure 5) and orthology analysis. The identification of LST in both fireflies but not I. luminosus supports independent evolution. The functional inferences about enzyme roles (C99, C100, C102, C104) are reasonable based on known biochemistry and enrichment patterns, though some represent speculation (C105) about regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Expression analysis of non-enzyme genes identified lysosomal genes enriched in firefly lanterns, suggesting 'differentiated zone granules' may be lysosomes. An opsin (Rh7) was found highly expressed in A. lateralis but not P. pyralis lanterns, suggesting potential light perception function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C110 are based on expression data but represent speculative interpretations. The lysosomal hypothesis (C108) lacks direct experimental validation of organelle identity. The Rh7 light perception hypothesis (C110) is based on analogy to Drosophila but requires functional validation. These are reasonable hypotheses requiring follow-up work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Lucibufagins were detected in P. pyralis adults and larvae but absent from A. lateralis and I. luminosus, rejecting lucibufagins as ancestral firefly defense compounds and suggesting they are a derived trait of Lampyrinae subfamily.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C122 are supported by LC-HRAM-MS data (Figure 6B) showing clear presence/absence patterns across species and life stages. The inference that lucibufagins are Lampyrinae-specific (C121-C122) is supported by the data and literature (C119), though the alternative hypothesis of loss in A. lateralis (C118) cannot be definitively excluded without broader taxonomic sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C131",
+      "C132"
+    ],
+    "result": "P. pyralis shows a unique expansion of the CYP303 cytochrome P450 family (11 genes plus 2 pseudogenes) via tandem duplication, while 94/97 other insect genomes and both A. lateralis and I. luminosus contain only a single CYP303 gene. This expansion is proposed as a candidate for lucibufagin biosynthesis, though alternative roles in pheromone production are possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 are well-supported by phylogenetic analysis (Figure 6C), comparative genomics with OrthoDB, and genomic location data (Figure 6D). The correlation with lucibufagin presence is compelling, though the proposed biosynthetic role (C131) remains speculative without functional validation. The authors appropriately acknowledge alternative hypotheses (C132).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C138",
+      "C139",
+      "C140",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Metagenomic analysis revealed diverse symbionts including the first complete Entomoplasma genome (E. luminosus subsp. pyralis, 1.29 Mbp) prevalent in P. pyralis, Tenericutes sequences in A. lateralis suggesting mollicute symbionts, Proteobacterial sequences in A. lateralis, and limited symbionts in I. luminosus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C146 are supported by metagenomic assembly, taxonomic annotation, and read coverage analysis. The E. luminosus genome assembly is well-documented (C138-C140). The inferences about symbiont presence in A. lateralis (C143) and absence in I. luminosus (C146) are reasonable based on sequence abundance and coverage patterns, though functional roles remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Two novel orthomyxoviridae-like ssRNA viruses (PpyrOMLV1/2) were discovered in P. pyralis showing high prevalence, multi-generational transovarial transmission, and endogenous viral elements (EVEs), representing the first firefly viruses, second report of Orthomyxoviridae transgenerational transfer, and second report of Orthomyxoviridae EVEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C153 are supported by RNA-Seq data analysis, laboratory transmission observations, and genomic EVE identification. The novelty claims (C151-C153) are appropriately supported by citations to prior work establishing the rarity of these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C111",
+      "C112",
+      "C119",
+      "C120",
+      "C128",
+      "C129",
+      "C130",
+      "C160",
+      "C161",
+      "C162",
+      "C164",
+      "C165"
+    ],
+    "result": "Background and context claims about firefly biology, bioluminescence biochemistry, taxonomic diversity, prior research, and related beetle families, establishing the scientific foundation and motivation for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 and related background claims are appropriately supported by citations to established literature and represent accurate summaries of prior knowledge. These provide essential context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study design involved sequencing two firefly species (P. pyralis and A. lateralis) that diverged over 100 million years ago and a click beetle (I. luminosus) with near-identical bioluminescent biochemistry but anatomically distinct light organs, with analyses supporting independent gains of bioluminescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 and C17-C20 accurately describe the study design rationale and anatomical observations (Figure 1B). The divergence time (C3) is supported by phylogenetic dating. The main conclusion (C6) is supported by the comprehensive analyses described in other result groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C163"
+    ],
+    "result": "Discussion of broader evolutionary implications: the independent origins provide a model system for studying parallel enzyme evolution; gene duplication at luciferase loci suggests promiscuous enzymatic activities as raw material for adaptation; specialized bioluminescence subtraits likely arose after luciferase specialization; luciferin may have predated luciferase neofunctionalization; early firefly bioluminescence may have evolved as an aposematic response to predators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C155-C163 represent interpretive discussion and speculation about evolutionary processes. While C156 is reasonably supported by observed gene duplication patterns, claims about evolutionary sequence (C157), ancestral luciferin presence (C158), symbiont contributions (C159), and early bioluminescence function (C163) are speculative hypotheses requiring additional evidence.",
+    "result_type": "MINOR"
+  }
+]

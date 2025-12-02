@@ -1,0 +1,1788 @@
+{
+  "submission": {
+    "id": "5726ea0b-279d-4a2d-9af2-af9f6359e2c4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:47:20.447066Z",
+    "updated_at": "2025-12-02T19:47:20.447066Z"
+  },
+  "content": [
+    {
+      "id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "submission_id": "5726ea0b-279d-4a2d-9af2-af9f6359e2c4",
+      "content_type": "manuscript",
+      "content_text": "# Direct reprogramming of human smooth muscle and vascular endothelial cells reveals defects associated with aging and Hutchinson-Gilford progeria syndrome\n\n## Authors\n\n- Simone Bersini<sup>1</sup> ([ORCID: 0000-0003-4620-3500](https://orcid.org/0000-0003-4620-3500))\n- Roberta Schulte<sup>1</sup> ([ORCID: 0000-0003-3886-4800](https://orcid.org/0000-0003-3886-4800))\n- Ling Huang<sup>3</sup>\n- Hannah Tsai<sup>1</sup>\n- Martin W Hetzer<sup>1</sup> ([ORCID: 0000-0002-2111-992X](https://orcid.org/0000-0002-2111-992X)) \u2020\n\n### Affiliations\n\n1. Molecular and Cell Biology Laboratory, The Salk Institute for Biological Studies La Jolla United States\n2. Paul F. Glenn Center for Biology of Aging Research at The Salk Institute La Jolla United States\n3. The Razavi Newman Integrative Genomics and Bioinformatics Core (IGC), The Salk Institute for Biological Studies La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nVascular dysfunctions are a common feature of multiple age-related diseases. However, modeling healthy and pathological aging of the human vasculature represents an unresolved experimental challenge. Here, we generated induced vascular endothelial cells (iVECs) and smooth muscle cells (iSMCs) by direct reprogramming of healthy human fibroblasts from donors of different ages and Hutchinson-Gilford Progeria Syndrome (HGPS) patients. iVECs induced from old donors revealed upregulation of GSTM1 and PALD1, genes linked to oxidative stress, inflammation and endothelial junction stability, as vascular aging markers. A functional assay performed on PALD1 KD VECs demonstrated a recovery in vascular permeability. We found that iSMCs from HGPS donors overexpressed bone morphogenetic protein (BMP)\u22124, which plays a key role in both vascular calcification and endothelial barrier damage observed in HGPS. Strikingly, BMP4 concentrations are higher in serum from HGPS vs. age-matched mice. Furthermore, targeting BMP4 with blocking antibody recovered the functionality of the vascular barrier in vitro, hence representing a potential future therapeutic strategy to limit cardiovascular dysfunction in HGPS. These results show that iVECs and iSMCs retain disease-related signatures, allowing modeling of vascular aging and HGPS in vitro.\n\n## Introduction\n\nPhysiological and pathological aging represent a major risk factor for the onset of cardiovascular diseases, the leading cause of death worldwide (Benjamin et al., 2019). The in vitro generation of human vascular cells (e.g. smooth muscle cells (SMCs), vascular endothelial cells (VECs)) represents a promising approach to regenerate compromised vascular beds (Leeper et al., 2010), as well as to model specific features of vascular dysfunction (e.g. blood brain barrier damage) (Vatine et al., 2019). Among the available strategies, direct reprogramming of skin fibroblasts into functional cells was previously reported for blood progenitor cells (Szabo et al., 2010), SMCs (van Tuyn et al., 2005) and VECs (Han et al., 2014; Morita et al., 2015). Direct reprogramming of cells from skin biopsies offers a critical advantage compared to other approaches such as the differentiation of induced pluripotent stem (iPS) cells. Indeed, although iPS cells have significantly contributed to the discovery of novel disease mechanisms (Park et al., 2019) as well as to the pre-clinical screening of promising drug candidates (Zhang et al., 2019), the differentiation process of iPS cells requires a mandatory transit through an embryonic-like state which was reported to reset the aging profile of the cells of origin (Mertens et al., 2015). Conversely, direct reprogramming from skin fibroblasts was shown to maintain the cellular signature of aging and to highlight critical factors of human aging in neurons (Mertens et al., 2015).\n\nPrevious studies reported that single or combined expression of specific transcription factors were able to directly reprogram skin fibroblasts into SMCs (Long et al., 2008) or VECs (Chen et al., 2019), which then expressed cell identity genes and were able to integrate within the mouse vasculature following subcutaneous or intramuscular implantation (Han et al., 2014; Morita et al., 2015). Strikingly, it was demonstrated that ETV2 alone, which is a master regulator of VEC development and early vasculogenesis (Qiu and Hirschi, 2019), was sufficient to in vitro reprogram human skin fibroblasts into functional VECs (Morita et al., 2015). Similarly, the induced expression of myocardin (MYOCD) was able to strongly induce both smooth and cardiac muscle genes in human foreskin fibroblasts and mesenchymal stem cells (van Tuyn et al., 2005).\n\nSince directly reprogrammed cells, but not iPS cells, preserve the aging signature of the donor (Mertens et al., 2015) and can be largely expanded from an easily obtained skin biopsy compared to other rare cell sources (e.g. blood-derived endothelial progenitor cells) (Mathur et al., 2019), we hypothesized that these cells could represent an effective tool to study cardiovascular aging and disease. In particular, Hutchinson-Gilford Progeria Syndrome (HGPS) is a rare age-related disease induced by mutation in the Lamin A/C gene (Prokocimer et al., 2013). This mutation not only alters the architecture of the nuclear envelope but also impacts the genome organization and gene expression leading to severe cardiovascular damage (e.g. atherosclerosis, vascular calcification), which is responsible for the premature death of patients at an average age of 14 years. In this scenario, the generation of directly reprogrammed vascular cells from HGPS patients would represent an invaluable tool to develop potential new therapies counteracting HGPS vascular degeneration, with the broad possibility to translate them for the treatment of vascular dysfunctions during physiological aging. Hence, the aim of this study was to generate, characterize, validate and use directly reprogrammed vascular cells, both induced VECs (i.e. iVECs) and induced SMCs (i.e. iSMC), to identify gene expression and functional differences between young and old individuals, as well as between healthy and HGPS donors. Our group has a strong expertise in the molecular and transcriptional characterization of human skin fibroblasts, which we recently combined with a machine learning approach to predict the biological aging of human donors (Fleischer et al., 2018). Based on these premises, here we combined RNAseq and functional studies of vascular permeability in 3D microscale models which allowed us to identify potential new biomarkers of vascular aging and to explore the pathological cross-talk between SMCs and VECs in HGPS patients.\n\n## Results\n\n### iSMCs and iVECs express cell-identity markers and form 3D vascular structures in vitro\n\nDirect reprogramming of skin fibroblasts into tissue-specific cells (e.g. neurons, vascular cells, blood cells) is a relatively new research field which can potentially affect both tissue engineering applications and in vitro disease modeling. Recently, several attempts have been made to generate reprogrammed vascular cells (Han et al., 2014; van Tuyn et al., 2005), but a complete characterization of their gene expression profile compared to the original fibroblast population, as well as to primary vascular cells, is still missing.\n\nSince SMCs and VECs play an important role in human aging and HGPS (Hamczyk et al., 2019; Li et al., 2018), we directly induced iSMCs and iVECs by isolating skin fibroblasts from human donors and overexpressing either the master regulators MYOCD or ETV2, respectively. iSMCs expressed cell-identity markers including alpha smooth muscle actin (\u03b1SMA) (Figure 1A, expressed by about 70% cells) and calponin (Figure 1B, expressed by about 80% cells), both in monoculture and when co-cultured with VECs (Figure 1C). Importantly, \u03b1SMA-expressing iSMCs contributed to the formation of microvascular networks in 3D fibrin matrices (Figure 1D), thus mimicking the behavior of fibroblasts and differentiated mesenchymal stem cells observed in previous vascular models developed by our (Bersini et al., 2016; Jeon et al., 2014) and other groups (Zheng et al., 2012). In particular, no differences were found in terms of vascular area fraction when VECs were co-cultured with fibroblasts or iSMCs (Figure 1\u2014figure supplement 1). In parallel, we found that CD31+ iVECs (Figure 1\u2014figure supplement 2) were able to self-assemble into vessel-like structures when co-cultured with skin fibroblasts (Figure 1E) or iSMCs (Video 1) in 3D fibrin matrices. These vessel-like structures were patent, as demonstrated by cross-sectional views of the lumens (Figure 1F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54383/elife-54383-fig1-v1.jpg)\n\n**Figure 1.:** iSMCs express the identity markers \u03b1SMA (A) and calponin (B). iSMCs contribute to the formation of endothelial monolayers (C) and 3D microvascular networks (D). iVECs form 3D vessel-like structures in fibrin matrix (E) and show open lumens (F). Both iSMCs and iVECs express cell identity genes showing a progressive transition from fibroblasts to mature vascular cells (G\u2013J). iSMC gene expression profile compared to primary SMCs and fibroblasts (analysis based on 1,852 DE genes between primary SMCs and fibroblasts). N\u00a0=\u00a06 donors for iSMCs and fibroblasts, N\u00a0=\u00a03 donors for SMCs. Z score\u00a0=\u00a0\u00b1\u00a03. DE genes with log2FC\u00a0>\u00a01 and FDR\u00a0<\u00a00.05 (G). Gene ontology analysis reveals that iSMCs upregulate genes associated with muscle development, contraction and blood pressure regulation compared to fibroblasts (H). iVEC gene expression profile compared to primary VECs\u00a0and fibroblasts (analysis based on 1,780 DE genes between primary VECs and fibroblasts). N\u00a0=\u00a06 donors for iVECs, primary VECs and fibroblasts. Z score\u00a0=\u00a0\u00b1\u00a04. DE genes with log2FC\u00a0>\u00a01 and FDR\u00a0<\u00a00.05 (I). Gene ontology showing that iVECs upregulate genes associated with chemotaxis, blood vessel morphogenesis and VE cadherin\u2013VEGFR complex compared to fibroblasts, indication of ongoing differentiation towards and endothelial phenotype (J). Scale bars: 25 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54383/elife-54383-fig1-figsupp1-v1.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54383/elife-54383-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Region P4 refers to CD31 positive cells labeled with AlexaFluor488 secondary antibody.\n\n![Video 1.](https://cdn.elifesciences.org/articles/54383/elife-54383-video1.mp4.jpg)\n\nTo further define the reprogramming status of iSMCs and iVECs, we performed RNAseq analysis on these induced cells and compared them with the donor fibroblast population as well as with human primary smooth muscle and endothelial cell lines. Specifically, we initially compared the expression profile of skin fibroblasts (N\u00a0=\u00a06 donors) vs. primary SMCs (N\u00a0=\u00a03 donors, data obtained from GEO) or skin fibroblasts (N\u00a0=\u00a06 donors) vs. primary VECs (N\u00a0=\u00a06 donors, data generated for this study using commercially available skin microvascular endothelial cells) (Supplementary file 1). This analysis allowed us to identify about 1800 differentially expressed (DE) genes in both comparisons, which defined the identity of fibroblasts, SMCs and VECs (Supplementary file 2, 3 and 4). Then, we used these DE genes as a benchmark to analyze the gene expression of iSMCs (Figure 1G and H) and iVECs (Figure 1I and J). The comparison among skin fibroblasts, primary vascular cells and reprogrammed cells highlighted multiple gene clusters representative of specific gene expression signatures. Strikingly, we found that the SMC identity gene ACTA2 (Figure 1G, cluster 2) and multiple endothelial-specific genes (e.g. FLT1, KDR, CDH5, TIE2, ROBO4, NECTIN2) (Figure 1I, cluster 2) were enriched in both reprogrammed cells and primary vascular cells when compared to the original skin fibroblasts. As typical for induced cells, they did not express all cell identity markers of primary vascular cells. For example, iVECs expressed less CD31 and TJP1 compared to primary endothelial cells (Figure 1I, cluster 3). However, the expression level of KDR (an important gene defining endothelial cell identity) was 6.62 log2FoldChange (FC) higher in primary VECs vs. fibroblasts and 6.38 log2FC higher in iVECs vs. fibroblasts. At the same time, another endothelial-specific gene (i.e. CDH5) was upregulated in both primary cells (log2FC\u00a0=\u00a06.7) and iVECs (log2FC\u00a0=\u00a04) compared to fibroblasts, although at different levels (Supplementary file 5). Similarly, both primary and reprogrammed SMCs upregulated key identity genes including ACTA2 and MYH10 compared to fibroblasts (Supplementary file 5). Notably, the expression of MYH10 was lower in reprogrammed vs. primary SMCs. Furthermore, key skin fibroblast cell identity genes (e.g. FSP1, SLUG, TWIST1, TWIST2) (Figure 1G, cluster 4; Figure 1I, cluster 1) were downregulated in both reprogrammed and primary vascular cells (Supplementary file 5).Finally, gene ontology analysis revealed that iVECs upregulated genes linked to blood vessel morphogenesis and VE-cadherin-VEGF receptor complex when compared to fibroblasts (Figure 1J), while iSMCs upregulated genes associated with muscle contraction and muscle development (Figure 1H).\n\nTaken together, the majority of the markers expressed by reprogrammed cells remained fibroblast-like. After carefully considering this critical point, we would like to highlight that reprogrammed SMCs and VECs expressed typical cell identity genes, self-organized into 3D vascular structures mimicking simple vascular networks and showed a global gene expression signature representing a gradual transition towards fully mature cells.\n\n### Induced vascular cells show gene-expression and functional differences between young vs. old donors\n\nPrevious studies demonstrated that directly reprogrammed, but not iPS cell-derived neurons, were able to retain the transcriptional aging signature of the donor (Mertens et al., 2015). We therefore asked if iSMCs and iVECs could be employed to identify genes involved in the vascular degeneration occurring during physiological aging (Ungvari et al., 2018). Aging is characterized by a progressive decrease in the functionality of the endothelial barrier (Palmer and Ousman, 2018), formation of atherosclerotic lesions, reduced contractility and calcifications of SMCs (Yao et al., 2013). Hence, we specifically aimed at identifying genes potentially involved in these processes. To answer this question, we established fibroblast cell lines from skin biopsies of N\u00a0=\u00a03 young (19\u201330 y.o.) and N\u00a0=\u00a03 old (62\u201387 y.o.) healthy donors (Supplementary file 1) and directly reprogrammed them into iSMCs or iVECs using the master regulators MYOCD and ETV2, respectively. It is important to highlight that the expression of MYOCD and ETV2 was comparable in reprogrammed cells derived from young and old donors (log2FC\u00a0=\u00a00.03 for MYOCD and log2FC\u00a0=\u00a00.19 for ETV2 comparing young and old cells; no statistical difference comparing young and old cells). DE analysis highlighted a set of genes (21 DE genes for iSMCs; 9 DE genes for iVECs) that changed according to the age of the donor for either iSMCs (Figure 2A) or iVECs (Figure 2B). We then analyzed the expression of a few cell identity genes in iSMCs or iVECs derived from young and old donors without finding obvious age-related differences (Supplementary file 6 and Figure 2\u2014figure supplement 1). Together with the similar expression of MYOCD and ETV2 in cells derived from young and old donors, these data suggest that the reprogramming efficiency should not be affected by the age of the donor and that potential differences between young and old cells do not seem to be due to different levels of reprogramming.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54383/elife-54383-fig2-v1.jpg)\n\n**Figure 2.:** Heat-map representing DE genes between reprogrammed vascular cells from young (N\u00a0=\u00a03) vs. old (N\u00a0=\u00a03) donors (iSMCs (A), iVECs (B)). Z score\u00a0=\u00a0\u00b1\u00a01.5. DE genes with log2FC\u00a0>\u00a01 and FDR\u00a0<\u00a00.05. Quantification of BMP2 (C) and PALD1 (D) expression in human skin biopsies from young vs. old donors (N\u00a0=\u00a02 donors per condition; N\u00a0=\u00a010 tissue sections per condition; Student\u2019s t-test with p<0.001 (***) and p<0.05 (*)). Representative images of BMP2 (E) and PALD1 (F) from skin biopsies obtained from young vs. old donors. Scale bars: 50 \u00b5m. Quantification of vascular permeability using young vs. old reprogrammed cells (G\u2013J). Schematic showing the generation of an endothelial monolayer covering the interface with a 3D matrix embedding SMCs. Vascular permeability was quantified by measuring the variation of 70 kDa dextran fluorescent intensity across the interface (G). Representative images of dextran flow (red) through the endothelial monolayer in presence of young vs. old reprogrammed cells. Scale bar: 100 \u00b5m (H). Quantification of vascular permeability in presence of young vs. old iVECs (I, at least N\u00a0=\u00a040 independent measurements per condition in three biological replicates; ANOVA with Holm-Sidak test; comparison with primary VECs (** is p<0.01 and *** is p<0.001); comparison with young iVECs (\u2666\u2666\u2666is p<0.001); comparison with old iVECs (\u2022\u2022\u2022 is p<0.001)) or young vs. old iSMCs (J, at least N\u00a0=\u00a040 independent measurements per condition in three biological replicates; ANOVA with Holm-Sidak test; * is p<0.05, ** is p<0.01 and *** is p<0.001). Quantification of vascular permeability in presence of PALD1 KD (K) or BMP2 KD (L) in primary VECs and SMCs, respectively (at least N\u00a0=\u00a060 independent measurements per condition in three biological replicates for each KD experiment; Student's t-test; *** is p<0.001).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54383/elife-54383-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Fibroblasts were included as control. Z score\u00a0=\u00a0\u00b1\u00a01. All these genes were not DE comparing young and old donors.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54383/elife-54383-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Representative image showing young (mCherry MYOCD) and old (EGFP MYOCD) iSMCs. Experiments were also performed with the reciprocal tagging. At least N\u00a0=\u00a025 independent measurements in three biological replicates. Student\u2019s t-test, p<0.01 (**). Scale bar: 50 \u00b5m.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54383/elife-54383-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Scale bars: 100 \u00b5m.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/54383/elife-54383-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Biological processes upregulated in old vs. young mouse\u00a0VECs (pool of bone marrow, brain and skin VECs). It is interesting to observe the upregulation in old mouse VECs of biological processes associated with immune system activation and inflammation, consistent with the general concept that aging is associated with chronic inflammation. Cells were derived from N\u00a0=\u00a03 animals per age group and then pooled for RNAseq.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/54383/elife-54383-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** The higher amount of Y658 staining in old iVECs (Student\u2019s t-test with p<0.01 (**) from N\u00a0=\u00a03 biological replicates) suggests that cell-cell junctions might be compromised in reprogrammed cells derived from old donors. Nuclei: blue. Scale bars: 25 \u00b5m.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/54383/elife-54383-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** VECs stained with VE-cadherin (white) cover the lateral channel and the interface with the 3D matrix embedding iSMCs (red, \u03b1SMA). iSMCs from young donors migrate towards the endothelial layer. Nuclei: blue. Scale bar: 50 \u00b5m.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/54383/elife-54383-fig2-figsupp7-v1.jpg)\n\n**Figure 2\u2014figure supplement 7.:** Note that BMP2 KD was validated using qPCR due to technical problems with any of the tested anti-BMP2 antibodies (Western Blot). The use of these antibodies resulted in multiple aspecific bands.\n\nIntriguingly, among the 21 DE genes, iSMCs from older donors showed upregulation of bone morphogenetic protein 2 (BMP2), which is involved in the vascular calcification of blood vessels during aging and disease (Petsophonsakul et al., 2019). Significantly, we found that \u03b1SMA+ cells in human skin biopsies from old (N\u00a0=\u00a02) vs. young (N\u00a0=\u00a02) donors expressed higher levels of BMP2 (217.4 \u00b1 10.9% vs. 100.0\u00b110.4% after normalization, Figure 2C and E; Videos 2 and 3), in agreement with the RNAseq findings. Noteworthy, the pattern of \u03b1SMA+ cells suggests that these cells are actually surrounding blood vessels rather than being isolated in the skin extracellular matrix (Figure 2E). Finally, we co-cultured iSMCs generated from a young (19 y.o.) and an old (67 y.o.) donor finding higher expression of BMP2 in the iSMCs derived from the old donor (Figure 2\u2014figure supplement 2), confirming observations seen with RNAseq and immunofluorescence of skin biopsies.\n\n![Video 2.](https://cdn.elifesciences.org/articles/54383/elife-54383-video2.mp4.jpg)\n\n**Video 2.:** From the left: panel one is BMP2, panel two is \u03b1SMA, panel three is DAPI and panel four is merge.\n\n![Video 3.](https://cdn.elifesciences.org/articles/54383/elife-54383-video3.mp4.jpg)\n\n**Video 3.:** From the left: panel one is BMP2, panel two is \u03b1SMA, panel three is DAPI and panel four is merge.\n\nIn parallel, DE analysis performed on iVECs highlighted the upregulation of GSTM1 and PALD1 in cells derived from old vs. young donors. GSTM1 is generally activated in presence of oxidative stress and inflammatory conditions (Lopes-Aguiar et al., 2017), while PALD1 is an endothelial-specific gene inhibiting endothelial junction stability (Nitzsche, 2016). To test if these genes were actually dysregulated in human donors, we analyzed human skin biopsies and found that CD31+ VECs from old vs. young healthy donors indeed expressed higher levels of PALD1 (194.9 \u00b1 30.0% vs. 100.0\u00b124.3% after normalization, Figure 2D and F; Videos 4 and 5) and GSTM1 (Figure 2\u2014figure supplement 3). This result shows that the gene expression differences observed in directly reprogrammed cells partially recapitulate signatures of aging in humans. Strikingly, DE analysis on primary VECs from mouse skin, brain and bone marrow also highlighted a clear upregulation of GSTM1 and PALD1 in cells obtained from old (18 months) vs. young (3 months) animals (N\u00a0=\u00a03 animals per condition, Figure 2\u2014figure supplement 4). Together, these data suggest that both PALD1 and GSTM1 might represent evolutionary conserved vascular aging markers.\n\n![Video 4.](https://cdn.elifesciences.org/articles/54383/elife-54383-video4.mp4.jpg)\n\n**Video 4.:** From the left: panel one is Paladin, panel two is CD31, panel three is DAPI and panel four is merge.\n\n![Video 5.](https://cdn.elifesciences.org/articles/54383/elife-54383-video5.mp4.jpg)\n\n**Video 5.:** From the left: panel one is Paladin, panel two is CD31, panel three is DAPI and panel four is merge.\n\nNext we wanted to test if these aging markers were functionally and mechanistically linked to vascular aging. Since abnormal expression of BMPs has been linked to vascular dysfunction (Cai et al., 2012; Csiszar et al., 2009) and upregulation of PALD1 to compromised VEC junctions (Nitzsche, 2016), we hypothesized that the identified DE genes might reflect a functional change in vascular permeability. To test this directly, we employed an in vitro 3D model where VECs lining a microfluidic channel form a continuous barrier separating the channel from a 3D fibrin matrix embedding SMCs (Figure 2G and H). The presence of old vs. young iVECs (N\u00a0=\u00a03 donors per condition) lining the interface with the matrix channel increased the vascular permeability (146.1 \u00b1 5.4% vs. 100.0\u00b14.6% after normalization for old vs. young iVECs). The difference in permeability can be explained by partial damage to cell-cell junctions, as indicated by the different pattern of Y658 VE-Cadherin in old vs. young iVECs (Figure 2\u2014figure supplement 5). Comparison with positive control (primary VECs lining the channel) and negative control (fibroblasts lining the channel) revealed that permeability of young (131.9 \u00b1 6.1%) and old (192.7 \u00b1 7.1%) iVECs was significantly lower compared to fibroblasts (250.0 \u00b1 12.1%), reaching values close to primary VECs (100.0 \u00b1 4.7%) (Figure 2I, data normalized to the permeability of primary VECs). Similarly, the presence of old vs. young iSMCs (N\u00a0=\u00a03 donors per condition) in the fibrin matrix channel induced a significant increase in the leakiness of the endothelial barrier (149.8 \u00b1 11.3% vs. 100.0\u00b14.7%, data normalized to young iSMCs). iSMCs from young donors induced even lower levels of vascular permeability compared to primary SMCs (78.2 \u00b1 3.7% vs. 100.0 \u00b1 4.3%) (Figure 2J, data normalized to primary SMCs), demonstrating that direct reprogramming generates functional cells which contribute to the maintenance of the vascular barrier. Surprisingly, we also found that iSMCs from young vs. old donors were more migratory, being able to reach the endothelial barrier at the interface with the 3D matrix (Figure 2\u2014figure supplement 6). These findings are not only in agreement with in vivo observations but directly link iSMCs to the appearance of functional and morphological changes during aging.\n\nTo test the functional significance of two of the identified DE genes that might play a role in vascular permeability (i.e. PALD1 and BMP2), we performed knockdown (KD) experiments on VECs and SMCs (Figure 2\u2014figure supplement 7). Collected data showed that PALD1 KD in VECs decreased vascular permeability compared to luciferase control (51.5 \u00b1 3.4% vs. 100.0 \u00b1 4.3%) (Figure 2K, data normalized to the permeability with luciferase control). On the other side, KD of BMP2 in SMCs induced a weak, but reproducible, decrease in permeability compared to luciferase control (86.3 \u00b1 3.8% vs. 100.0 \u00b1 4.3%) (Figure 2L, data normalized to luciferase control).\n\nOverall, while we do not claim that reprogrammed cells are transcriptionally and functionally identical to primary cells, these data clearly demonstrate that reprogramming induces a minimum set of transcriptional and functional features which allow to capture a fraction of the vascular changes occurring during aging and disease. This aging signature could be in principle used to longitudinally identify features of vascular degeneration with minimally invasive skin biopsies.\n\n### Induced vascular cells recapitulate hallmarks of vascular dysfunction of HGPS patients\n\nHGPS is a rare form of accelerated aging due to mutation in the Lamin A/C gene. Patients exhibit severe cardiovascular damage which leads to premature death (Stehbens et al., 2001). In particular, HGPS is characterized by dysfunctional SMCs. Phenotypic changes in SMCs are often associated with vascular calcification (Wei et al., 2018) and hypertension (Miriyala et al., 2006) in a broad spectrum of diseases. For these reasons we sought to determine if iSMCs directly reprogrammed from HGPS vs. healthy fibroblasts could retain a signature of vascular dysfunction, with the ultimate goal to identify new potential therapies to slow down the process of vascular degeneration.\n\nFollowing the same strategy used to identify signatures of vascular aging, we performed RNAseq on iSMCs derived from N\u00a0=\u00a03 healthy donors vs. N\u00a0=\u00a08 HGPS donors (Supplementary file 1) revealing 93 DE genes (Figure 3A). Among the identified DE genes, we found upregulation of BMP4, which is generally overexpressed during the early onset of vascular calcification (Wei et al., 2018). Moreover, secreted BMP4 enhances the activation of the endothelium and induces production of reactive oxygen species by VECs (Lowery and de Caestecker, 2010), compromising the vascular barrier. To test the clinical significance of BMP4, we obtained human blood serum from HGPS and age-matched healthy controls (N\u00a0=\u00a07 donors per group) from the Progeria Research Foundation. Interestingly, we found that BMP4 was higher in healthy vs. HGPS donors below 11 years old, while a reverse trend was observed for children above 12 years old (Figure 3B). Analyzing these data from an aging perspective, we found a significant decrease in the level of BMP4 in older vs. younger healthy individuals (p=0.04) which was lost in the HGPS samples. This abnormal trend suggests that a potential correlation might exist between the vascular damage in HGPS patients and circulating BMP4. Indeed, it is reported that the level of BMP4 is high during early development, being a key regulator of musculo-skeletal system formation and vascularization. BMP4 decreases during late childhood/young adulthood and then increases again during physiological aging (Meyers et al., 2016), as well as in pathological conditions including metabolic syndrome (Son et al., 2011), leukemia (Voeltzel et al., 2018) or bone fractures (van Baardewijk et al., 2013). Given the extremely limited number of available samples from HGPS patients, we then collected blood from HGPS mouse models carrying the progerin mutation G609G (N\u00a0=\u00a03, 13\u201314 weeks old) and we compared the level of circulating BMP4 with age-matched healthy mice (N\u00a0=\u00a03, 15 weeks old) as well as with extremely old mice (N\u00a0=\u00a05, about 2 years old). Collected data revealed a higher level of BMP4 in the blood of HGPS mice (Figure 3C), hence further corroborating the analyses performed on human samples.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54383/elife-54383-fig3-v1.jpg)\n\n**Figure 3.:** Heat-map representing DE genes between iSMCs reprogrammed from healthy (N\u00a0=\u00a03) vs. HGPS (N\u00a0=\u00a08) donors. Z score\u00a0=\u00a0\u00b1\u00a02. DE genes with log2FC\u00a0>\u00a01 and FDR\u00a0<\u00a00.05 (A). ELISA measurement of BMP4 in the serum of HGPS and age-matched healthy human donors (B, Student\u2019s t-test with p=0.4 for normal vs. HGPS 5\u201311 y.o.; p=0.575 for normal vs. HGPS 12\u201318 y.o.; Student\u2019s t-test with p=0.04 for 5\u201311 y.o. vs. 12\u201318 y.o. normal donors; Student\u2019s t-test with p=0.4 for 5\u201311 y.o. vs. 12\u201318 y.o. HGPS donors), as well as in the serum of HGPS, young (age-matched) and old mice (C, ANOVA with Holm-Sidak test with p=0.79 for young vs. old; p=0.001 for young vs. HGPS; p<0.001 for old vs. HGPS). Quantification of vascular permeability in presence of iSMCs reprogrammed from young (N\u00a0=\u00a06), old (N\u00a0=\u00a06) and HGPS (N\u00a0=\u00a06) donors. At least N\u00a0=\u00a095 independent measurements per condition in three biological replicates. ANOVA with Holm-Sidak test with p<0.001 (***) (D). Schematic showing the vascular permeability assay in presence of antibodies specifically blocking secreted BMP4 and Jagged 1 (E). Quantification of vascular permeability comparing iSMCs from HGPS donors (ctrl) or the same cells treated with antibodies blocking BMP4 or Jagged 1. At least N\u00a0=\u00a060 independent measurements per condition in three biological replicates. ANOVA with Holm-Sidak test with p<0.001 (***) (F). Quantification of the effect of BMP4 and Jagged one blocking antibody on Y658 VE-cadherin area fraction. N\u00a0=\u00a06 independent measurements per condition in three biological replicates. ANOVA with Holm-Sidak test with p<0.05 (*) or p<0.01 (**); p=0.897 for BMP4 Ab vs. Jagged1 Ab (G). Representative images of Y658 VE-cadherin in presence of BMP4 and Jagged one blocking antibodies (H\u2013J). Scale bars: 25 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54383/elife-54383-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** These supplementary data refer to N\u00a0=\u00a01 biological replicate.\n\nMultiple dysregulated pathways contribute to the age-related and pathological vascular remodeling observed in human patients. In this context, the Jagged 1-Notch pathway plays a pivotal role. Indeed, recent studies demonstrated that Jagged 1-mediated Notch activation induces hyper-permeability of blood vessels in a model of diabetic retinopathy and that blocking Jagged 1 can prevent retinal edema (Miloudi et al., 2019). Intriguingly, we found that iSMCs from HGPS vs. healthy donors upregulated JAG1, suggesting its potential contribution in driving the pathological remodeling of blood vessels in HGPS patients.\n\nBased on these findings, we hypothesized that the identified DE genes in reprogrammed iSMCs from HGPS vs. healthy donors could partially explain potential changes in the vascular barrier functionality. To test this hypothesis, we employed microfluidic devices embedding iSMCs reprogrammed from fibroblasts of young, old or HGPS donors (N\u00a0=\u00a06 donors per group) in co-culture with old VECs. Strikingly, we found that the presence of HGPS iSMCs determined a significant increase in the vascular leakiness compared to young donors (197.4 \u00b1 7.5% vs. 100.0\u00b14.6% after normalization, Figure 3D).\n\nTo verify that BMP4 and Jagged 1 were actually playing a key role in the regulation of vascular permeability, we treated iSMCs from HGPS donors with antibodies blocking secreted BMP4 or Jagged 1 (Figure 3E). Strikingly, we found a significant decrease in the vascular leakiness upon antibody treatment in both conditions compared to control (27.8 \u00b1 1.6% vs. 100.0 \u00b1 4.4% for BMP4 antibody after normalization and 61.5\u00a0\u00b1\u00a03.8% vs. 100.0 \u00b1 4.4% for Jagged 1 antibody after normalization; Figure 3F and Videos 6, 7 and 8). Noteworthy, BMP4 antibody was able to reduce the vascular permeability to a value even lower than the level detected in presence of iSMCs from young donors (indeed we quantified 72.2% decrease in vascular permeability with BMP4 antibody-treated HGPS cells and only 49.3% decrease comparing iSMCs from young vs. HGPS donors). Immunofluorescence staining of the endothelial cell-cell junction marker VE-cadherin did not show any macroscopic difference between HGPS iSMCs with and without BMP4/Jagged 1 blocking antibody. However, we did observe an increase in the amount of Y658 VE-cadherin (indication of cell-cell junction destabilization) in presence of untreated iSMCs, in agreement with the higher vascular leakiness (Figure 3G\u2013J).\n\n![Video 6.](https://cdn.elifesciences.org/articles/54383/elife-54383-video6.mp4.jpg)\n\n![Video 7.](https://cdn.elifesciences.org/articles/54383/elife-54383-video7.mp4.jpg)\n\n![Video 8.](https://cdn.elifesciences.org/articles/54383/elife-54383-video8.mp4.jpg)\n\nSurprisingly, we also found that primary, healthy VECs upregulated BMP4 and other genes associated with calcification, skeletal system development and extracellular matrix organization when co-cultured with HGPS fibroblasts (Figure 3\u2014figure supplement 1, N\u00a0=\u00a01 biological replicate).\n\nOverall, using our validated approach we identified two previously unexplored target proteins which are secreted by HGPS SMCs and directly affect the functionality of the vascular barrier. These secreted proteins can be targeted through blocking antibodies to revert the phenotype of VECs, suggesting a potential application to restore the barrier function in HGPS patients.\n\n## Discussion\n\nWe have described a powerful strategy to study vascular aging and human pathologies affecting the cardiovascular system through directly reprogrammed vascular cells. To validate our strategy, we have provided to our knowledge the most complete characterization of reprogrammed vascular cells by comparing them with the skin fibroblasts from which they are derived and with primary vascular cells. While both iSMCs and iVECs express key cell identity markers and contribute to the formation of in vitro 3D vascular structures, their degree of maturation does not allow ta claim of\u00a0a complete replica of their primary counterparts. Indeed, most of the markers expressed by reprogrammed cells remained fibroblast-like and all the results here presented should be viewed cwith this point in mind. Nevertheless, reprogrammed cells showed indications of progressive transition from the fibroblast to the vascular lineage considering a small set of cell identity genes. These cells could then be successfully employed to identify genes involved in the vascular degeneration observed during physiological aging. Despite the limited number of DE genes comparing reprogrammed cells from young vs. old donors, the identified targets reflect typical changes expected during vascular aging, as demonstrated by their validation within human skin biopsies. While we were surprised for the low number of identified DE genes between young and old donors, this observation is consistent with other studies comparing cells from donors of different biological age (Fleischer et al., 2018; Mertens et al., 2015).\n\nStrikingly, we found that reprogrammed cells from young vs. old donors were also characterized by functional differences, as demonstrated by the compromised barrier function in presence of iSMCs or iVECs from old individuals. We noticed that the levels of permeability were about 50% higher in presence of reprogrammed cells from old vs. young donors. The observed difference in permeability seems to reflect intrinsic differences between young and old cells, considering that the expression level of a small set of cell identity genes was not affected by the age of the donor. It is important to keep in mind that our microscale models do not fully recapitulate the vascular niche, including tissue-specific cells and immune cells, which might contribute to changes in vascular functionality during aging and disease. The absence of these components might partially explain why we observed limited (~50%) differences in vascular functionality. Further, it is important to mention that the contribution of SMCs to the vascular barrier could be in terms of both paracrine secretion and direct support to the endothelial monolayer. While confocal images showed that iSMCs from old donors did not physically interact with iVECs, differential expression analysis highlighted that iSMCs from old donors upregulated genes which might interfere with the integrity of the barrier (e.g. BMP2 which was identified through RNAseq and then through immunofluorescence of skin biopsies). Although we cannot separate the contribution of these two aspects, it is likely that the combination of physical support and secreted factors contributes to the observed differences in the barrier functionality in presence of young vs. old iSMCs.\n\nOnce validated in the context of physiological aging, we applied our strategy to investigate potential mechanisms involved in the vascular degeneration of HGPS, which is the leading cause of death for patients affected by this disease. HGPS is characterized by a mutation in the Lamin A/C gene causing structural defects in the nuclear envelope and leading to the appearance of signs of accelerated aging (Prokocimer et al., 2013). One of the main cardiovascular complications observed in HGPS is the loss of SMC coverage of blood vessels (Stehbens et al., 2001; Varga et al., 2006). Dysfunctional SMCs have been associated with several vascular damages, including vascular calcification (Wei et al., 2018) and hypertension (Miriyala et al., 2006). However, the molecular mechanisms leading to this vascular degeneration in HGPS and other cardiovascular diseases have not yet been completely identified.\n\nIn a recent tissue engineered blood vessel model, iPS cell-derived SMCs from a HGPS donor showed increased calcification and apoptosis when compared to cells obtained from a healthy donor (Atchison et al., 2017). However, no genetic analyses were performed to investigate potential targets or biological mechanisms involved. Herein we combined RNAseq and functional assays of vascular permeability to compare iSMCs from healthy vs. HGPS donors and we identified novel targets associated with HGPS vascular dysfunction. We did not find overlapping genes comparing old vs. young and HGPS vs. healthy cells. However, we were surprised to find that BMP2 was upregulated in old donors while BMP4 was highly expressed by HGPS cells. BMP2 and BMP4 share a 62% sequence similarity and are functionally equivalent. Hence, BMP2/4 dysregulation might underlie a common mechanism leading to vascular degeneration during physiological aging and disease. In this context, BMP4 is not only linked to vascular calcification. Indeed, it directly affects the stability of the endothelial barrier by increasing the vascular permeability both in vitro and in vivo (Helbing et al., 2017). Hence, BMP4 might represent a pleiotropic factor secreted by SMCs which compromises different components of blood vessels. Surprisingly, activation of BMP signaling was reported in presence of mutations of Lamin A/C and other nuclear proteins in skeletal muscle cells (Dubinska-Magiera et al., 2013). Moreover, depletion of Lamin A/C in mouse embryonic fibroblasts determined upregulation of several genes including BMP4 (Singh et al., 2013). Together, these data suggest that Lamin A/C could be directly or indirectly involved in the expression of BMP4, hence establishing a potential link between HGPS and BMP4 dysregulation. Our measurement of BMP4 in blood serum from HGPS and age-matched healthy donors revealed opposite trends in the transition between early/late childhood. The lower level of BMP4 detected during early childhood in HGPS patients could be correlated with the unphysiological development of their musculo-skeletal system. Indeed, the largest growth rate of long bones occurs between 5 and 11 years old (Abrahamyan et al., 2008) and relies on multiple signaling molecules including BMP4. Conversely, abnormal levels of BMP4 in adulthood are correlated with vascular dysfunctions including calcification, atherosclerosis and vascular leakage. It is possible then that the higher level of BMP4 in HGPS vs. control donors during late childhood could be associated, together with other dysregulated pathways, with their cardiovascular decline. Despite these tantalizing observations, we acknowledge that additional analyses are required to give clinical significance to our findings, considering the limited number of samples that were employed (N\u00a0=\u00a07 donors per group). However, we would like to acknowledge that it is extremely difficult to obtain serum form HGPS patients due to the extremely low number of HGPS samples which are available for basic research.\n\nSurprisingly, we also found that primary, healthy VECs upregulated BMP4 and other genes associated with calcification, skeletal system development and extracellular matrix organization when co-cultured with HGPS fibroblasts. Although very preliminary, these data suggest that different HGPS vascular cells could autonomously upregulate or induce the expression of bone-related genes.\n\nIn addition to BMP4, we also found that iSMCs from HGPS donors showed upregulation of the Notch ligand JAG1. Notch signaling plays a critical role in vascular homeostasis and previous reports demonstrated that Jagged 1 increases the vascular permeability of the blood brain barrier (Yao et al., 2011). Furthermore, Jagged 1 was recently identified as one of the contributors of the aging signature of healthy human donors in a large study comparing protein expression and chronological age (Tanaka et al., 2018). To our knowledge, no previous studies demonstrated the dysregulation of two key mediators of vascular permeability in HGPS SMCs. Hence, our approach has the potential to identify novel therapeutic targets in a wide set of diseases characterized by cardiovascular dysfunction, including Alzheimer Disease and Diabetes. In this scenario, the use of reprogrammed vascular cells could be extended to monitor the personalized response of a patient to a given therapy. However, in order to reach these goals it will be essential to optimize current protocols promoting the full maturation of reprogrammed vascular cells and to develop high-throughput systems compatible with the functional screening of hundreds or even thousands of experimental conditions in parallel.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo-Sapiens)</td>\n      <td>Dermal fibroblasts (normal)</td>\n      <td>Coriell</td>\n      <td>Details in Supplementary file 1</td>\n      <td>https://www.coriell.org/0/Sections/Support/Global/QCcells.aspx?PgId=409</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-Sapiens)</td>\n      <td>Dermal fibroblasts (normal and HGPS)</td>\n      <td>Progeria Research Foundation</td>\n      <td>Details inSupplementary file 1</td>\n      <td>https://www.progeriaresearch.org/wp-content/uploads/2020/04/PRF-AVAILABLE-CELL-LINES.pdf</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-Sapiens)</td>\n      <td>Microvascular endothelial cells (normal)</td>\n      <td>Angioproteomie</td>\n      <td>Details in Supplementary file 1</td>\n      <td>https://www.angioproteomie.com/commerce/ccp1073-human-dermal-microvascular-endothelial-cells-cap-0005.htm</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Microvascular endothelial cells (normal)</td>\n      <td>Cell Biologics</td>\n      <td>Details in Supplementary file 1</td>\n      <td>https://cellbiologics.com/index.php?route=product/product&amp;path=2_47_89_91&amp;product_id=2240</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pQCXIB EGFP-MYOCD</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Retroviral construct for stable expression</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pQCXIB ETV2</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Retroviral construct for stable expression</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>On Target Plus Human PALD1 siRNA (Smart Pool)</td>\n      <td>Horizon</td>\n      <td>L-026434-00-0005</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>On Target Plus Human BMP2 siRNA (Smart Pool)</td>\n      <td>Horizon</td>\n      <td>L-011219-00-0005</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Homo-sapiens)</td>\n      <td>Human skin samples</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Isolated from human donors by the Cooperative Human Tissue Network or by the Clinical and Translational Research Institute of UCSD</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD31 (Mouse monoclonal)</td>\n      <td>ThermoFisher</td>\n      <td>Cat# MA3100 RRID:AB_223516</td>\n      <td>IF(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human collagen type I (Mouse monoclonal)</td>\n      <td>ThermoFisher</td>\n      <td>Cat# MA126771 RRID:AB_2081889</td>\n      <td>IF(1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human VE-cadherin (Rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>Cat#2500S RRID:AB_10839118</td>\n      <td>IF(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human Y658 VE-cadherin (Rabbit polyclonal)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#441144G RRID:AB_2533583</td>\n      <td>IF(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human alpha smooth muscle actin (Mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>Cat#14-9760-82 RRID:AB_2572996</td>\n      <td>IF(1:2,500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human calponin (Mouse monoclonal)</td>\n      <td>Santa Cruz</td>\n      <td>Cat#sc-58707 RRID:AB_781770</td>\n      <td>IF(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human BMP2 (Rabbit polyclonal)</td>\n      <td>Novus</td>\n      <td>Cat#nBP1-19751 RRID:AB_2227877</td>\n      <td>IF(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human Paladin (Rabbit polyclonal)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#PA5-53591 RRID:AB_2645183</td>\n      <td>IF(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human GSTM1 (Mouse Monoclonal)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#MA5-17085 RRID:AB_2538556</td>\n      <td>IF(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human BMP4 (Mouse Monoclonal)</td>\n      <td>R and D Systems</td>\n      <td>Cat#MAB3552 RRID:AB_2065677</td>\n      <td>Blocking (2 ug/ml)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human Jagged 1 (Goat polyclonal)</td>\n      <td>R and D Systems</td>\n      <td>Cat#AF1277 RRID:AB_354713</td>\n      <td>Blocking (1 ug/ml)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CD31 forward</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TGGTCAAGAAAAGCAACACAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CD31 reverse</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GATTCGCAACGGACTTCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CD31 forward</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>ACAACGAGGGCATCATCAAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CD31 reverse</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GAAGTGGTAGAAAGGCTGCTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>BMP2 forward</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CATGCTAGACCTGTATCGCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>BMP2 reverse</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TGTTTTCCCACTCGTTTCTGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>BMP2 forward</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GCCCTTCGAGCACCACGCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>BMP2 reverse</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TGGCTTGTAGTGCCGCTGCTG</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>BMP4 ELISA Kit</td>\n      <td>Sigma-Aldrich</td>\n      <td>RAB0029</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td></td>\n      <td></td>\n      <td>https://fiji.sc/</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture and human serum\n\nCell lines used in the study are reported in Supplementary file 1. Details are available in Supplementary Materials and methods. Briefly, iVECs and primary endothelial cells were cultured in EGM-2MV (Lonza) on collagen coated dishes, iSMCs were cultured in EGM-2 (Lonza)\u00a0and fibroblasts were cultured in DMEM+10%FBS+1% P/S. Human primary dermal fibroblast cell lines and serum samples were obtained from The Progeria Research Foundation (PRF) Cell and Tissue Bank. The HGPS cell lines were HGADFN178, HGADFN188, HGADFN164, HGADFN143, HGADFN169, HGADFN122, HGADFN127, HGADFN367. The control cell lines were HGADFN368, GM03349, GM01652. The HGPS serum samples were 205S1, 009, 231, 224, 82, 113, 171. The control samples were 237, 148, 207, 205, 203, 197, 232. Details are reported in Supplementary file 1 and 7.\n\n### RNAseq: library preparation and data analysis\n\nThe quality of cDNA libraries was checked with Tape Station (Agilent) and the amount of cDNA quantified through Qubit (ThermoFisher). HiSeq2500 was used to sequence the samples (single-end reading). Reads were mapped by STAR [v2.5.3a, ref: 10.1093/bioinformatics/bts635. pmid:23104886] to the hg19 reference genome with default parameters. Homer [v4.9.1, Heinz et al., 2010;\u00a0http://homer.ucsd.edu/homer/] was used to quantify gene expression by counting uniquely mapped reads across all exons of RefSeq genes. Differential expression analysis was performed using edgeR for all iSMC related comparisons and DESeq2 for all iVECs related comparisons. Genes with adjusted p-value<0.05 and absolute log fold-change\u00a0>1 were identified as significantly differentially expressed genes between two conditions. Gene ontology maps were generated with Metascape [http://metascape.org]. Heatmaps were generated using package gplots (https://cran.r-project.org/web/packages/gplots/index.html) in R (R Core Team (2013). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL http://www.R-project.org/) on the row-wise z-scaled log-transformed count per million values (CPM). A pseudo-count of 5 was added to each CPM value before log-transformation to reduce noise. Dendrograms on the heatmap were calculated using Ward. D2 clustering algorithm and 1-Pearson\u2019s correlation as distance measurement.\n\n### Statistics\n\nDetails on number of biological replicates, independent measurements/technical replicates, data normalization and statistical tests are reported in each figure legend. Error bars are standard error of the mean (s.e.m.).\n",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "90b40a1d-4f40-4cd5-a1ae-44d191ba2c00",
+      "submission_id": "5726ea0b-279d-4a2d-9af2-af9f6359e2c4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Veronica Galvan, UT Health San Antonio United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54383.sa1](https://doi.org/10.7554/eLife.54383.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for choosing to send your work, \"Direct reprogramming human vascular cells reveals defects associated with aging and Hutchinson-Gilford Progeria Syndrome\", for consideration at eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Jessica Tyler as the Senior Editor.\n\nBersini et al. provide a conceptual advance in the use of direct reprogramming to model age-associated dysfunction of vascular cells. This is a novel and exciting proposed approach to study mechanisms of age-related vascular dysfunction and may provide actionable in vitro models of age-related vascular disease. The data presented, however, do not support efficacy of the reprogramming approach at the transcriptional or functional level. Critical validation of the approach is lacking. In the functional comparisons between reprogrammed cells from young and old donors, it is unclear that reprogramming efficiencies are comparable. Substantial weaknesses in the statistical analyses of the data were identified. Some of the supplementary materials provided may be superfluous and could be replaced by informative panels included in the main figures. BMP2 is identified in one set of experiments, but subsequent experiments focus on a different gene, BMP4. From an RNA-seq experiment that was performed data from only 2 genes are shown. Overall, while the focus of the studies reported is of high interest, these and other weaknesses decrease the priority for publication of these studies in their current form. A revised manuscript adequately addressing the main concerns raised in the peer-review process, that will require additional experimental work, might be suitable for publication. A revised Tools and Resources article also needs to provide additional insights into how the authors' reprogramming techniques and biological resources will advance the field.\n\nReviewer #1:\n\nBersini et al. report the generation of induced vascular endothelial cells and smooth muscle cells by direct reprogramming of skin fibroblasts through enforced expression of single master regulator genes for the endothelial and smooth muscle fates respectively. The stated goal of the study is to characterize and validate directly reprogrammed vascular cells, then use to ascertain age-specific differences in their biology. The goal is important since the authors state that transcriptomic studies on direct reprogrammed cells are lacking. The studies in directly reprogrammed skin fibroblasts hinge on the effectiveness of direct reprogramming. This is not supported by the transcriptomic data of Figure 1G and I. Even though (as the author state) induced cells do not express all cell identity markers of the primary cell types that they model, the paucity of cell type-specific genes that are expressed in the induced smooth muscle and vascular endothelial cells that are presented in Figure 1G strongly suggest that these cells may still be largely of fibroblast nature. It could be argued that a handful of vascular-specific genes are sufficient to direct the functionally relevant reprogramming of fibroblasts. However, the lack of direct comparisons in functional barrier assays (i.e. lack of data from \u201cnegative\u201d and \u201cpositive\u201d control samples using primary fibroblasts (negative control) and primary vascular endothelial or smooth muscle cells (positive controls)) in all subsequent studies that use cells directly reprogrammed from young and old donors make interpretation of those data difficult. Further, the differences in permeability between barriers established with induced cells from old and young donors are very small, and may be related to small differences in integrity or health of induced cells that retain (as suggested by the transcriptomic studies) most of their fibroblast-like features. These are important concerns that need to be addressed.\n\nReviewer #2:\n\nThe current manuscript by Bersini et al. provides a conceptual advance in the utility of direct reprogramming and modeling of aging-associated dysfunction in SMCs and VECs. Interestingly, the authors identified BMP2 and PALD1 as genes differentially regulated in aged iSMC and iVEC, respectively, which remarkably was reflected in human biopsy samples. By taking a similar experimental approach, the authors define the upregulated expression of BMP4 in reprogrammed cells from Hutchinson-Gilford Progeria Syndrome (HGPS) patients, which underlies dysfunction of iSMCs from HGPS patients. The idea underlying the study itself and the perspective of utilizing iSMCs/iVECs for studying the effect of aging is exciting. The manuscript in its current form, however, will benefit from clarifications for some of the data presented, which would further strengthen the author's conclusions.\n\nBased on the heatmap data shown in Figure 1, it is not clear whether the transcriptome of reprogrammed cells represent fully reprogrammed and functional iVECs/iSMCs. The expression data indicate that both iSMCs and iVECs express more genes in common with fibroblasts than with primary VECs or SMCs. The authors state \"transition towards full mature cells.\" The readers will be better informed if the authors clarify what is the measurement for transcriptomics and function for partial versus fully reprogrammed cells, or present additional data that either reject or support fully mature versus partial reprogramming. It is understandable that the goal here is to induce SMCs or VECs to the point that can capture some of the age-associated changes, not necessarily generating cells that will be identical to primary cells. Still, this will be useful information to the readers.\n\nThe choice of some of the SMC markers was not clear. For example, Calponin (shown in Figure 1B) appears to be expressed in cells that do not express the reprogramming factor, MYOCD, suggesting that Calponin could be also expressed in human fibroblasts. As such, it will be informative to the readers if the authors show the same immunostaining data for Calponin in fibroblasts.\n\nThe main focus in Figure 2 is to define age-associated changes modeled through direct reprogramming of fibroblasts of young and old age groups. It is then essential to provide experimental evidence that the comparative analyses were performed in the realm of similar reprogramming efficiencies between young and old groups. This point is particularly crucial as fibroblasts from different ages may not reprogram with the same efficiency.\n\nIt will be good to clarify whether the difference in dextran permeability between young and old cells shown in Figure 2H may be influenced by differences in reprogramming efficiency. Looking at Figure 2H, there appears to be a difference in dextran permeability, but the raw data in Figure S6 show there are very few SMA+ cells (just one red cell) in the old sample and none at the interface with iVECs, in contrast to the young sample. To further dissect the difference in permeability due to aging, not the lack of reprogrammed cells in the old samples, it will be informative to provide clear pictures showing the reprogrammed cells at the interface of the permeability assay.\n\nAs the end of Figure 2 was currently left with the correlation studies, additional mechanistic insights into the identified DE genes will greatly signify the authors' findings, for example by either i) reducing the expression of BMP2 or PALD1 in old cells, or ii) overexpressing those aging-associated genes in young cells to pinpoint whether the identified DE genes are underlying the observed phenotypes.\n\nBMP2 was discovered to be upregulated in aging in Figure 2, but all the HGPS experiments in Figure 3 were associated with a different gene, BMP4. Based on the existing datasets, is BMP4 also upregulated in aged induced cells? Also, JAG1 is introduced in Figure 3, while there is no mention of PALD1 from Figure 2. The text will benefit from a more in-depth discussion of the link between findings of Figure 2 to Figure 3.\n\nReviewer #3:\n\nDirect reprogramming of fibroblasts from young, aged, and HGPS donors into vascular endothelial cells (VECs) and smooth muscle cells (SMCs), combined with transcriptomics analyses and co-culture assays, is a novel and interesting approach to study age-related alterations in EC-SMC crosstalk and discover new potential therapeutic targets to fight vascular dysfunction in normal and premature aging. However, RNAseq results from the physiological aging-related part lacks functional validation, and RNAseq results from the HGPS-related part presents weak in vivo/ex vivo validation.\n\n1) Regarding cells derived from normally aged donors, the authors show validation of three hits obtained from the RNAseq assays by immunofluorescence analysis of skin biopsies. However, no studies were performed to analyze the functional significance of such expression changes on endothelial permeability, as done for HGPS-related studies (e.g., using blocking antibodies or shRNA).\n\n2) Although the HGPS-related part of the paper includes in vitro functional studies, ex vivo and in vivo validation of the RNAseq results appears rather limited. BMP4 ELISA data in Figure 2B comparing age-matched controls and HGPS patients is very far from reaching statistical significance (p=0.4), thus making very difficult to draw conclusion. I concur with the authors that these experiments are very challenging considering the limited number of available HGPS samples, and mouse studies may help overcome this limitation. Regarding mouse studies in Figure 3C, the authors used the t-test to compare serum BMP4 levels in young, aged and HGPS groups. However, t-test is not appropriate for studies including more than 2 experimental groups. These results should be re-analyzed using ANOVA and post-hoc analysis. Given the limitation of the human studies, a more thorough validation using the mouse model would significantly contribute to strengthen the biological significance of the results. For example, it would be very informative to perform qPCR and/or immunofluorescence assays to assess BMP4 and Jagged 1 levels in mouse arteries. I also miss experiments to examine in vivo endothelial permeability and the effects of neutralizing anti-BMP4 and anti-Jagged 1 antibodies in the mouse models of normal and premature aging.\n\n3) Progerin expression should confirmed in HGPS-derived cells.\n\n4) Several references appear to be incorrect in the introductory paragraph in the section of Results focused on HGPS. The authors state: \"In particular, HGPS is characterized by dysfunctional SMCs, which promote vascular calcification (Wei et al., 2018), hypertension (Miriyala et al., 2006) and loss of vascular barrier functionality (Helbing et al., 2017)\". The cited papers address the role of BMPs in vascular calcification, hypertension and loss of vascular barrier functionality, but I believe none of them include studies with either HGPS patients or HGPS experimental models. The same comment regarding the studies by Wei et al., 2018 and Miriyala et al., 2006 applies to the Discussion: \"The main cardiovascular complications observed in HGPS patients include loss of SMC coverage of blood vessels (Varga, et al., 2006), abnormal vascular calcification (Wei, et al., 2018) and hypertension (Miriyala, et al., 2006).\" Also note that all results in Varga et al., 2006 were derived from a mouse model of HGPS, not from HGPS patients, therefore references for SMC loss in patients should be cited instead of Varga et al., 2006 (or 1-2 review articles).\n\n5) Figure 1A, B: Quantitative data should be presented (eg. % aSMA/Myocardin-immunoreactive and % Calponin/Myocardin-immunoreactive cells).\n\n6) Figure 1D: The authors state that iSMCs contribute to the formation of microvascular networks in 3D fibrin matrices (Figure 1D), but no control without iSMCs is shown, which is needed to ascertain if iSMC promote this process.\n\n7) The images in Figure 2E and 2F do not seem to be very representative according to the quantitative data shown in Figure 2C and 2D (massive upregulation in images, but only 2-fold induction in the graphs).\n\n8) Figure 2G-J: To confirm that age-related increased permeability is due to compromised VEC junctions, confocal microscopy experiments should be performed in young and old VECs to visualize junctions within neighbouring cells, ideally in monoculture and in co-culture with young and old SMCs.\n\n9) Figure 3D, F and G: The experiments include 3 groups, therefore t-test is not adequate. Results should be re-analyzed using ANOVA and post-hoc analysis.\n\n10) Figure 3H-J: Quantitative results should be shown.\n\n11) Figure 2\u2014figure supplement 3: Quantitative results of GSTM1 expression in young versus old ECs should be shown (as done for BMNP2 and PALD1 in Figure 2C and 2D, respectively.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Direct reprogramming human vascular cells reveals defects associated with aging and Hutchinson-Gilford Progeria Syndrome\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Jessica Tyler as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nDirect reprogramming of skin fibroblasts is a valuable strategy to obtain large amounts of specific cell types that are centrally involved in human disease processes. This manuscript reports direct reprogramming of skin fibroblasts to address age-specific and disease-specific changes in vascular cells during normative aging and in accelerated aging in Hutchinson-Gilford Progeria Syndrome. The authors report the transcriptional and functional characterization of vascular cell types generated by direct reprogramming. This strategy may have substantial impact by providing a tool to study changes in vascular function and potentially that of other tissues during physiological and pathological aging.\n\nEssential revision requirements:\n\nThe authors addressed most comments appropriately with new experimental results or new statistical analyses. However, the question of similar reprogramming efficiency between young and old samples (an essential point to the manuscript), was still not fully answered. In the revised manuscript, the authors compared the expression of ETV2 and MYOCD and found no statistical difference. However, these are comparisons of the expression level of reprogramming factors, not the reflection of similar reprogramming efficiency between young and old samples \u2013 that is, whether the reprogrammed state into iVECs or iSMC as an output, is similar between young and old samples. This is a central point that needs to be addressed.\n",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8c964a8e-8fc9-46ee-bfc1-478465a89ff8",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C1",
+      "claim": "Vascular dysfunctions are a common feature of multiple age-related diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Vascular dysfunctions are a common feature of multiple age-related diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about vascular dysfunction and aging that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "bcfe6114-270e-4af4-8f06-624f64ef4be4",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C2",
+      "claim": "iVECs induced from old donors revealed upregulation of GSTM1 and PALD1, genes linked to oxidative stress, inflammation and endothelial junction stability, as vascular aging markers.",
+      "claim_type": "EXPLICIT",
+      "source": "iVECs induced from old donors revealed upregulation of GSTM1 and PALD1, genes linked to oxidative stress, inflammation and endothelial junction stability, as vascular aging markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNAseq data presented in the manuscript comparing iVECs from young vs. old donors, as shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "a8475724-c99e-4d7c-b4c5-ff6e1785db8f",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C3",
+      "claim": "A functional assay performed on PALD1 KD VECs demonstrated a recovery in vascular permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "A functional assay performed on PALD1 KD VECs demonstrated a recovery in vascular permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from knockdown experiments shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "b7a0473b-8046-4dec-8bef-77cbb7917582",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C4",
+      "claim": "iSMCs from HGPS donors overexpressed bone morphogenetic protein (BMP)\u22124, which plays a key role in both vascular calcification and endothelial barrier damage observed in HGPS.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that iSMCs from HGPS donors overexpressed bone morphogenetic protein (BMP)\u22124, which plays a key role in both vascular calcification and endothelial barrier damage observed in HGPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data comparing HGPS vs. healthy iSMCs (Figure 3A) and by established knowledge about BMP4's role in vascular pathology.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "63acb928-9710-4892-9a7a-a14e4e27b850",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C5",
+      "claim": "BMP4 concentrations are higher in serum from HGPS vs. age-matched mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, BMP4 concentrations are higher in serum from HGPS vs. age-matched mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ELISA measurements shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "8c1baf20-1e94-43ba-bf76-b358d3bfe36b",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C6",
+      "claim": "Targeting BMP4 with blocking antibody recovered the functionality of the vascular barrier in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, targeting BMP4 with blocking antibody recovered the functionality of the vascular barrier in vitro, hence representing a potential future therapeutic strategy to limit cardiovascular dysfunction in HGPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from antibody blocking experiments shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "7e8d1328-06e7-4693-b328-f63d069659a9",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C7",
+      "claim": "iVECs and iSMCs retain disease-related signatures, allowing modeling of vascular aging and HGPS in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that iVECs and iSMCs retain disease-related signatures, allowing modeling of vascular aging and HGPS in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combined RNAseq and functional data presented throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "9af23081-dba8-4235-a28e-166a949a9fcc",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C8",
+      "claim": "Physiological and pathological aging represent a major risk factor for the onset of cardiovascular diseases, the leading cause of death worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiological and pathological aging represent a major risk factor for the onset of cardiovascular diseases, the leading cause of death worldwide (Benjamin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Benjamin et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "0784e472-c9ab-4d26-94b3-169066c90681",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C9",
+      "claim": "Direct reprogramming of skin fibroblasts into functional cells was previously reported for blood progenitor cells, SMCs and VECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the available strategies, direct reprogramming of skin fibroblasts into functional cells was previously reported for blood progenitor cells (Szabo et al., 2010), SMCs (van Tuyn et al., 2005) and VECs (Han et al., 2014; Morita et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "b0c2f1d9-3a8a-4a80-9e92-c2cf11a2f4b3",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C10",
+      "claim": "The differentiation process of iPS cells requires a mandatory transit through an embryonic-like state which was reported to reset the aging profile of the cells of origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, although iPS cells have significantly contributed to the discovery of novel disease mechanisms (Park et al., 2019) as well as to the pre-clinical screening of promising drug candidates (Zhang et al., 2019), the differentiation process of iPS cells requires a mandatory transit through an embryonic-like state which was reported to reset the aging profile of the cells of origin (Mertens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mertens et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "d692c7aa-9262-4c2f-9f3f-9927ea257e42",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C11",
+      "claim": "Direct reprogramming from skin fibroblasts was shown to maintain the cellular signature of aging and to highlight critical factors of human aging in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, direct reprogramming from skin fibroblasts was shown to maintain the cellular signature of aging and to highlight critical factors of human aging in neurons (Mertens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mertens et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "7dc3ae53-5487-471a-84a4-5be23eacc338",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C12",
+      "claim": "ETV2 alone was sufficient to in vitro reprogram human skin fibroblasts into functional VECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, it was demonstrated that ETV2 alone, which is a master regulator of VEC development and early vasculogenesis (Qiu and Hirschi, 2019), was sufficient to in vitro reprogram human skin fibroblasts into functional VECs (Morita et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Morita et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "ba890d23-7770-42e6-9c8d-54d88ea81b4d",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C13",
+      "claim": "The induced expression of myocardin (MYOCD) was able to strongly induce both smooth and cardiac muscle genes in human foreskin fibroblasts and mesenchymal stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the induced expression of myocardin (MYOCD) was able to strongly induce both smooth and cardiac muscle genes in human foreskin fibroblasts and mesenchymal stem cells (van Tuyn et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to van Tuyn et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "301b2a64-2b8a-400c-b722-3758786d323d",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C14",
+      "claim": "Directly reprogrammed cells, but not iPS cells, preserve the aging signature of the donor.",
+      "claim_type": "EXPLICIT",
+      "source": "Since directly reprogrammed cells, but not iPS cells, preserve the aging signature of the donor (Mertens et al., 2015) and can be largely expanded from an easily obtained skin biopsy compared to other rare cell sources (e.g. blood-derived endothelial progenitor cells) (Mathur et al., 2019), we hypothesized that these cells could represent an effective tool to study cardiovascular aging and disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mertens et al., 2015 and Mathur et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "681f395e-f3f0-47b6-9247-307622cf88bc",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C15",
+      "claim": "Hutchinson-Gilford Progeria Syndrome (HGPS) is a rare age-related disease induced by mutation in the Lamin A/C gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Hutchinson-Gilford Progeria Syndrome (HGPS) is a rare age-related disease induced by mutation in the Lamin A/C gene (Prokocimer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Prokocimer et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "34591d46-6474-489d-84d5-f75eb2184d67",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C16",
+      "claim": "The Lamin A/C mutation in HGPS not only alters the architecture of the nuclear envelope but also impacts the genome organization and gene expression leading to severe cardiovascular damage.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation not only alters the architecture of the nuclear envelope but also impacts the genome organization and gene expression leading to severe cardiovascular damage (e.g. atherosclerosis, vascular calcification), which is responsible for the premature death of patients at an average age of 14 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about HGPS pathology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "a12521c0-8d0d-4bcb-9506-e8b1c9470109",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C17",
+      "claim": "HGPS patients die prematurely at an average age of 14 years.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation not only alters the architecture of the nuclear envelope but also impacts the genome organization and gene expression leading to severe cardiovascular damage (e.g. atherosclerosis, vascular calcification), which is responsible for the premature death of patients at an average age of 14 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about HGPS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "4211501c-4ec8-430a-9aac-3c83ea49871e",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C18",
+      "claim": "iSMCs expressed cell-identity markers including alpha smooth muscle actin (\u03b1SMA) (expressed by about 70% cells) and calponin (expressed by about 80% cells).",
+      "claim_type": "EXPLICIT",
+      "source": "iSMCs expressed cell-identity markers including alpha smooth muscle actin (\u03b1SMA) (Figure 1A, expressed by about 70% cells) and calponin (Figure 1B, expressed by about 80% cells), both in monoculture and when co-cultured with VECs (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "8b25df67-d993-484d-b097-09603d351138",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C19",
+      "claim": "\u03b1SMA-expressing iSMCs contributed to the formation of microvascular networks in 3D fibrin matrices.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, \u03b1SMA-expressing iSMCs contributed to the formation of microvascular networks in 3D fibrin matrices (Figure 1D), thus mimicking the behavior of fibroblasts and differentiated mesenchymal stem cells observed in previous vascular models developed by our (Bersini et al., 2016; Jeon et al., 2014) and other groups (Zheng et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data in Figure 1D and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "a6cc8f26-444b-4778-8d4d-828c83c019a9",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C20",
+      "claim": "No differences were found in terms of vascular area fraction when VECs were co-cultured with fibroblasts or iSMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, no differences were found in terms of vascular area fraction when VECs were co-cultured with fibroblasts or iSMCs (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "cebe880d-b182-4d9d-9bf5-d72df04e73c9",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C21",
+      "claim": "CD31+ iVECs were able to self-assemble into vessel-like structures when co-cultured with skin fibroblasts or iSMCs in 3D fibrin matrices.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we found that CD31+ iVECs (Figure 1\u2014figure supplement 2) were able to self-assemble into vessel-like structures when co-cultured with skin fibroblasts (Figure 1E) or iSMCs (Video 1) in 3D fibrin matrices.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data in Figure 1E and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "c20ec2f2-5d6e-4f1f-96dc-887614115292",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C22",
+      "claim": "The vessel-like structures formed by iVECs were patent, as demonstrated by cross-sectional views of the lumens.",
+      "claim_type": "EXPLICIT",
+      "source": "These vessel-like structures were patent, as demonstrated by cross-sectional views of the lumens (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "a12041e7-8377-49a2-b943-641ff373e0b5",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C23",
+      "claim": "The SMC identity gene ACTA2 was enriched in both reprogrammed cells and primary vascular cells when compared to the original skin fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that the SMC identity gene ACTA2 (Figure 1G, cluster 2) and multiple endothelial-specific genes (e.g. FLT1, KDR, CDH5, TIE2, ROBO4, NECTIN2) (Figure 1I, cluster 2) were enriched in both reprogrammed cells and primary vascular cells when compared to the original skin fibroblasts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "37b728a7-0209-4c66-8084-dc66dd21403c",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C24",
+      "claim": "Multiple endothelial-specific genes (e.g. FLT1, KDR, CDH5, TIE2, ROBO4, NECTIN2) were enriched in both reprogrammed cells and primary vascular cells when compared to the original skin fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that the SMC identity gene ACTA2 (Figure 1G, cluster 2) and multiple endothelial-specific genes (e.g. FLT1, KDR, CDH5, TIE2, ROBO4, NECTIN2) (Figure 1I, cluster 2) were enriched in both reprogrammed cells and primary vascular cells when compared to the original skin fibroblasts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "73540190-e970-4786-ba44-29a087a9e22e",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C25",
+      "claim": "iVECs expressed less CD31 and TJP1 compared to primary endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, iVECs expressed less CD31 and TJP1 compared to primary endothelial cells (Figure 1I, cluster 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "35f5ebda-5c2a-4767-83b7-8bac88cf9e6f",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C26",
+      "claim": "The expression level of KDR was 6.62 log2FoldChange higher in primary VECs vs. fibroblasts and 6.38 log2FC higher in iVECs vs. fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the expression level of KDR (an important gene defining endothelial cell identity) was 6.62 log2FoldChange (FC) higher in primary VECs vs. fibroblasts and 6.38 log2FC higher in iVECs vs. fibroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "91e427d6-ac19-40e1-b387-1bbb63c3598e",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C27",
+      "claim": "CDH5 was upregulated in both primary cells (log2FC = 6.7) and iVECs (log2FC = 4) compared to fibroblasts, although at different levels.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, another endothelial-specific gene (i.e. CDH5) was upregulated in both primary cells (log2FC = 6.7) and iVECs (log2FC = 4) compared to fibroblasts, although at different levels (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data in Supplementary file 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "7662bcf2-ac7c-435c-bd70-9d941b829c35",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C28",
+      "claim": "Both primary and reprogrammed SMCs upregulated key identity genes including ACTA2 and MYH10 compared to fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, both primary and reprogrammed SMCs upregulated key identity genes including ACTA2 and MYH10 compared to fibroblasts (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data in Supplementary file 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "f4264dbc-f470-4c31-9c61-1345a317d0dc",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C29",
+      "claim": "The expression of MYH10 was lower in reprogrammed vs. primary SMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the expression of MYH10 was lower in reprogrammed vs. primary SMCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "33c6c517-7a53-410f-ae5e-4fab451f8917",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C30",
+      "claim": "Key skin fibroblast cell identity genes (e.g. FSP1, SLUG, TWIST1, TWIST2) were downregulated in both reprogrammed and primary vascular cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, key skin fibroblast cell identity genes (e.g. FSP1, SLUG, TWIST1, TWIST2) (Figure 1G, cluster 4; Figure 1I, cluster 1) were downregulated in both reprogrammed and primary vascular cells (Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 1G, 1I and Supplementary file 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "50604bb6-ce60-43a4-9ed5-8cf0106e6e98",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C31",
+      "claim": "iVECs upregulated genes linked to blood vessel morphogenesis and VE-cadherin-VEGF receptor complex when compared to fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, gene ontology analysis revealed that iVECs upregulated genes linked to blood vessel morphogenesis and VE-cadherin-VEGF receptor complex when compared to fibroblasts (Figure 1J), while iSMCs upregulated genes associated with muscle contraction and muscle development (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene ontology analysis shown in Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "886f214b-65f6-4242-ab5b-946ad52ed58a",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C32",
+      "claim": "iSMCs upregulated genes associated with muscle contraction and muscle development when compared to fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, gene ontology analysis revealed that iVECs upregulated genes linked to blood vessel morphogenesis and VE-cadherin-VEGF receptor complex when compared to fibroblasts (Figure 1J), while iSMCs upregulated genes associated with muscle contraction and muscle development (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene ontology analysis shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "e2a8e909-e323-4ecb-9935-efcdefad42be",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C33",
+      "claim": "The majority of the markers expressed by reprogrammed cells remained fibroblast-like.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the majority of the markers expressed by reprogrammed cells remained fibroblast-like.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the RNAseq data analysis presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "17d8a886-8ccd-4a0c-abee-3ee08275a371",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C34",
+      "claim": "Reprogrammed SMCs and VECs expressed typical cell identity genes, self-organized into 3D vascular structures mimicking simple vascular networks and showed a global gene expression signature representing a gradual transition towards fully mature cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After carefully considering this critical point, we would like to highlight that reprogrammed SMCs and VECs expressed typical cell identity genes, self-organized into 3D vascular structures mimicking simple vascular networks and showed a global gene expression signature representing a gradual transition towards fully mature cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combined RNAseq and imaging data presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "40bf9eb6-cefa-4c28-ad07-50932ee1c2ae",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C35",
+      "claim": "Directly reprogrammed, but not iPS cell-derived neurons, were able to retain the transcriptional aging signature of the donor.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies demonstrated that directly reprogrammed, but not iPS cell-derived neurons, were able to retain the transcriptional aging signature of the donor (Mertens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mertens et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "e180277a-103f-4776-a785-a5f09cd8ee56",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C36",
+      "claim": "Aging is characterized by a progressive decrease in the functionality of the endothelial barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging is characterized by a progressive decrease in the functionality of the endothelial barrier (Palmer and Ousman, 2018), formation of atherosclerotic lesions, reduced contractility and calcifications of SMCs (Yao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Palmer and Ousman, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "f238f3d9-920e-4087-bfe2-6a1debdde4a1",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C37",
+      "claim": "Aging is characterized by formation of atherosclerotic lesions, reduced contractility and calcifications of SMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging is characterized by a progressive decrease in the functionality of the endothelial barrier (Palmer and Ousman, 2018), formation of atherosclerotic lesions, reduced contractility and calcifications of SMCs (Yao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yao et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "19ca2f33-be6c-4aff-972f-847f28848d4e",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C38",
+      "claim": "The expression of MYOCD and ETV2 was comparable in reprogrammed cells derived from young and old donors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to highlight that the expression of MYOCD and ETV2 was comparable in reprogrammed cells derived from young and old donors (log2FC = 0.03 for MYOCD and log2FC = 0.19 for ETV2 comparing young and old cells; no statistical difference comparing young and old cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "bc3c7ff6-17c9-426a-8d0f-af48309b4eef",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C39",
+      "claim": "DE analysis highlighted a set of genes (21 DE genes for iSMCs; 9 DE genes for iVECs) that changed according to the age of the donor.",
+      "claim_type": "EXPLICIT",
+      "source": "DE analysis highlighted a set of genes (21 DE genes for iSMCs; 9 DE genes for iVECs) that changed according to the age of the donor for either iSMCs (Figure 2A) or iVECs (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "9dd0babc-3f77-4884-98af-78a2155f6370",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C40",
+      "claim": "The expression of a few cell identity genes in iSMCs or iVECs derived from young and old donors did not show obvious age-related differences.",
+      "claim_type": "EXPLICIT",
+      "source": "We then analyzed the expression of a few cell identity genes in iSMCs or iVECs derived from young and old donors without finding obvious age-related differences (Supplementary file 6 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Supplementary file 6 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "1543ca94-ea0f-4ec3-8acd-16383c8cca10",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C41",
+      "claim": "The reprogramming efficiency should not be affected by the age of the donor.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the similar expression of MYOCD and ETV2 in cells derived from young and old donors, these data suggest that the reprogramming efficiency should not be affected by the age of the donor and that potential differences between young and old cells do not seem to be due to different levels of reprogramming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the gene expression data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "20e07ed3-c1cb-4297-b628-020b841684b0",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C42",
+      "claim": "iSMCs from older donors showed upregulation of bone morphogenetic protein 2 (BMP2), which is involved in the vascular calcification of blood vessels during aging and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, among the 21 DE genes, iSMCs from older donors showed upregulation of bone morphogenetic protein 2 (BMP2), which is involved in the vascular calcification of blood vessels during aging and disease (Petsophonsakul et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data and a citation to Petsophonsakul et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "6e391992-20dd-477a-b568-10eac74559c5",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C43",
+      "claim": "\u03b1SMA+ cells in human skin biopsies from old vs. young donors expressed higher levels of BMP2 (217.4 \u00b1 10.9% vs. 100.0\u00b110.4% after normalization).",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, we found that \u03b1SMA+ cells in human skin biopsies from old (N = 2) vs. young (N = 2) donors expressed higher levels of BMP2 (217.4 \u00b1 10.9% vs. 100.0\u00b110.4% after normalization, Figure 2C and E; Videos 2 and 3), in agreement with the RNAseq findings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2C and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "74dde14d-c638-44fb-93a9-f25661d194a3",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C44",
+      "claim": "The pattern of \u03b1SMA+ cells suggests that these cells are actually surrounding blood vessels rather than being isolated in the skin extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, the pattern of \u03b1SMA+ cells suggests that these cells are actually surrounding blood vessels rather than being isolated in the skin extracellular matrix (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on imaging data in Figure 2E.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "c0c5c187-6294-4af2-9aa7-231ca1ca3f8c",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C45",
+      "claim": "iSMCs derived from an old donor (67 y.o.) showed higher expression of BMP2 compared to iSMCs from a young donor (19 y.o.) when co-cultured.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we co-cultured iSMCs generated from a young (19 y.o.) and an old (67 y.o.) donor finding higher expression of BMP2 in the iSMCs derived from the old donor (Figure 2\u2014figure supplement 2), confirming observations seen with RNAseq and immunofluorescence of skin biopsies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "62ec7ddb-63b8-45ab-b22f-82f106f25911",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C46",
+      "claim": "GSTM1 is generally activated in presence of oxidative stress and inflammatory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "GSTM1 is generally activated in presence of oxidative stress and inflammatory conditions (Lopes-Aguiar et al., 2017), while PALD1 is an endothelial-specific gene inhibiting endothelial junction stability (Nitzsche, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lopes-Aguiar et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "416286e0-5efb-4fb2-ad06-2b54a860adda",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C47",
+      "claim": "PALD1 is an endothelial-specific gene inhibiting endothelial junction stability.",
+      "claim_type": "EXPLICIT",
+      "source": "GSTM1 is generally activated in presence of oxidative stress and inflammatory conditions (Lopes-Aguiar et al., 2017), while PALD1 is an endothelial-specific gene inhibiting endothelial junction stability (Nitzsche, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Nitzsche, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "18eac3c2-f658-484a-ac16-4f87a0e5142d",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C48",
+      "claim": "CD31+ VECs from old vs. young healthy donors expressed higher levels of PALD1 (194.9 \u00b1 30.0% vs. 100.0\u00b124.3% after normalization).",
+      "claim_type": "EXPLICIT",
+      "source": "To test if these genes were actually dysregulated in human donors, we analyzed human skin biopsies and found that CD31+ VECs from old vs. young healthy donors indeed expressed higher levels of PALD1 (194.9 \u00b1 30.0% vs. 100.0\u00b124.3% after normalization, Figure 2D and F; Videos 4 and 5) and GSTM1 (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2D and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "c0607076-6d56-4b10-a64f-7c3706525636",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C49",
+      "claim": "CD31+ VECs from old vs. young healthy donors expressed higher levels of GSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if these genes were actually dysregulated in human donors, we analyzed human skin biopsies and found that CD31+ VECs from old vs. young healthy donors indeed expressed higher levels of PALD1 (194.9 \u00b1 30.0% vs. 100.0\u00b124.3% after normalization, Figure 2D and F; Videos 4 and 5) and GSTM1 (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "0cb2830b-a617-465e-82bc-347ecb7b6abb",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C50",
+      "claim": "The gene expression differences observed in directly reprogrammed cells partially recapitulate signatures of aging in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that the gene expression differences observed in directly reprogrammed cells partially recapitulate signatures of aging in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the validation of RNAseq findings in human skin biopsies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "eae708a5-ce4e-4735-8da6-615639d40ced",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C51",
+      "claim": "DE analysis on primary VECs from mouse skin, brain and bone marrow highlighted a clear upregulation of GSTM1 and PALD1 in cells obtained from old (18 months) vs. young (3 months) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, DE analysis on primary VECs from mouse skin, brain and bone marrow also highlighted a clear upregulation of GSTM1 and PALD1 in cells obtained from old (18 months) vs. young (3 months) animals (N = 3 animals per condition, Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "43e72ef0-0b9d-4aed-94a3-a9390dc28fd7",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C52",
+      "claim": "Both PALD1 and GSTM1 might represent evolutionary conserved vascular aging markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that both PALD1 and GSTM1 might represent evolutionary conserved vascular aging markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of similar upregulation in both human and mouse VECs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "b76a2dd7-a1f3-4a47-93fa-e4cfb3202871",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C53",
+      "claim": "Abnormal expression of BMPs has been linked to vascular dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Since abnormal expression of BMPs has been linked to vascular dysfunction (Cai et al., 2012; Csiszar et al., 2009) and upregulation of PALD1 to compromised VEC junctions (Nitzsche, 2016), we hypothesized that the identified DE genes might reflect a functional change in vascular permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cai et al., 2012 and Csiszar et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "6288af1e-38f4-423f-afc7-34bf5acb741e",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C54",
+      "claim": "Upregulation of PALD1 has been linked to compromised VEC junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Since abnormal expression of BMPs has been linked to vascular dysfunction (Cai et al., 2012; Csiszar et al., 2009) and upregulation of PALD1 to compromised VEC junctions (Nitzsche, 2016), we hypothesized that the identified DE genes might reflect a functional change in vascular permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Nitzsche, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "f8ae0a16-e7fe-4d73-b588-69df333084ea",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C55",
+      "claim": "The presence of old vs. young iVECs lining the interface with the matrix channel increased the vascular permeability (146.1 \u00b1 5.4% vs. 100.0\u00b14.6% after normalization for old vs. young iVECs).",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of old vs. young iVECs (N = 3 donors per condition) lining the interface with the matrix channel increased the vascular permeability (146.1 \u00b1 5.4% vs. 100.0\u00b14.6% after normalization for old vs. young iVECs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the microfluidic permeability assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "18bc42f5-36a2-4c7a-9d5d-51d500c829f5",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C56",
+      "claim": "The difference in permeability can be explained by partial damage to cell-cell junctions, as indicated by the different pattern of Y658 VE-Cadherin in old vs. young iVECs.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in permeability can be explained by partial damage to cell-cell junctions, as indicated by the different pattern of Y658 VE-Cadherin in old vs. young iVECs (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on immunofluorescence data shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "d0f6d7bc-7edb-458b-abba-3f986ff70b88",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C57",
+      "claim": "Permeability of young (131.9 \u00b1 6.1%) and old (192.7 \u00b1 7.1%) iVECs was significantly lower compared to fibroblasts (250.0 \u00b1 12.1%), reaching values close to primary VECs (100.0 \u00b1 4.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison with positive control (primary VECs lining the channel) and negative control (fibroblasts lining the channel) revealed that permeability of young (131.9 \u00b1 6.1%) and old (192.7 \u00b1 7.1%) iVECs was significantly lower compared to fibroblasts (250.0 \u00b1 12.1%), reaching values close to primary VECs (100.0 \u00b1 4.7%) (Figure 2I, data normalized to the permeability of primary VECs).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "8ee4c9b0-1eed-480d-a732-97ba784e3342",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C58",
+      "claim": "The presence of old vs. young iSMCs in the fibrin matrix channel induced a significant increase in the leakiness of the endothelial barrier (149.8 \u00b1 11.3% vs. 100.0\u00b14.7%, data normalized to young iSMCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the presence of old vs. young iSMCs (N = 3 donors per condition) in the fibrin matrix channel induced a significant increase in the leakiness of the endothelial barrier (149.8 \u00b1 11.3% vs. 100.0\u00b14.7%, data normalized to young iSMCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the microfluidic permeability assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "949925f5-9aff-4f0f-a59a-972d8c6da837",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C59",
+      "claim": "iSMCs from young donors induced even lower levels of vascular permeability compared to primary SMCs (78.2 \u00b1 3.7% vs. 100.0 \u00b1 4.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "iSMCs from young donors induced even lower levels of vascular permeability compared to primary SMCs (78.2 \u00b1 3.7% vs. 100.0 \u00b1 4.3%) (Figure 2J, data normalized to primary SMCs), demonstrating that direct reprogramming generates functional cells which contribute to the maintenance of the vascular barrier.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "8ddc2d31-1f8f-486d-83c5-29942bd51bef",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C60",
+      "claim": "Direct reprogramming generates functional cells which contribute to the maintenance of the vascular barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "iSMCs from young donors induced even lower levels of vascular permeability compared to primary SMCs (78.2 \u00b1 3.7% vs. 100.0 \u00b1 4.3%) (Figure 2J, data normalized to primary SMCs), demonstrating that direct reprogramming generates functional cells which contribute to the maintenance of the vascular barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the permeability data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "6cdc7044-e9d6-467a-a859-9b670161acee",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C61",
+      "claim": "iSMCs from young vs. old donors were more migratory, being able to reach the endothelial barrier at the interface with the 3D matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we also found that iSMCs from young vs. old donors were more migratory, being able to reach the endothelial barrier at the interface with the 3D matrix (Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 2\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "dc6c5504-712f-48bb-bf13-6b613ba9db1d",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C62",
+      "claim": "PALD1 KD in VECs decreased vascular permeability compared to luciferase control (51.5 \u00b1 3.4% vs. 100.0 \u00b1 4.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "Collected data showed that PALD1 KD in VECs decreased vascular permeability compared to luciferase control (51.5 \u00b1 3.4% vs. 100.0 \u00b1 4.3%) (Figure 2K, data normalized to the permeability with luciferase control).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "ca3542bd-abeb-47a7-89f0-db0532bdead7",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C63",
+      "claim": "KD of BMP2 in SMCs induced a weak, but reproducible, decrease in permeability compared to luciferase control (86.3 \u00b1 3.8% vs. 100.0 \u00b1 4.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other side, KD of BMP2 in SMCs induced a weak, but reproducible, decrease in permeability compared to luciferase control (86.3 \u00b1 3.8% vs. 100.0 \u00b1 4.3%) (Figure 2L, data normalized to luciferase control).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "7cc80db0-bfe9-44bd-923e-490783969222",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C64",
+      "claim": "Reprogramming induces a minimum set of transcriptional and functional features which allow to capture a fraction of the vascular changes occurring during aging and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, while we do not claim that reprogrammed cells are transcriptionally and functionally identical to primary cells, these data clearly demonstrate that reprogramming induces a minimum set of transcriptional and functional features which allow to capture a fraction of the vascular changes occurring during aging and disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combined transcriptional and functional data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "08d2a667-3d83-4c9b-a598-eb0737b6974a",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C66",
+      "claim": "One of the main cardiovascular complications observed in HGPS is the loss of SMC coverage of blood vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the main cardiovascular complications observed in HGPS is the loss of SMC coverage of blood vessels (Stehbens et al., 2001; Varga et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Stehbens et al., 2001 and Varga et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "dac7b19c-9b36-4928-bec0-2124119d38e9",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C68",
+      "claim": "iPS cell-derived SMCs from a HGPS donor showed increased calcification and apoptosis when compared to cells obtained from a healthy donor.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent tissue engineered blood vessel model, iPS cell-derived SMCs from a HGPS donor showed increased calcification and apoptosis when compared to cells obtained from a healthy donor (Atchison et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Atchison et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "93dfd90a-5524-472e-950d-af7eb2311b2c",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C69",
+      "claim": "RNAseq on iSMCs derived from healthy vs. HGPS donors revealed 93 DE genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the same strategy used to identify signatures of vascular aging, we performed RNAseq on iSMCs derived from N = 3 healthy donors vs. N = 8 HGPS donors (Supplementary file 1) revealing 93 DE genes (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "bb54af59-f5a0-4aba-be28-1ee420b95e6e",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C70",
+      "claim": "BMP4 is generally overexpressed during the early onset of vascular calcification.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the identified DE genes, we found upregulation of BMP4, which is generally overexpressed during the early onset of vascular calcification (Wei et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wei et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "d81c1bd9-bec1-47c2-bd7a-536626bef1b7",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C71",
+      "claim": "Secreted BMP4 enhances the activation of the endothelium and induces production of reactive oxygen species by VECs, compromising the vascular barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, secreted BMP4 enhances the activation of the endothelium and induces production of reactive oxygen species by VECs (Lowery and de Caestecker, 2010), compromising the vascular barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lowery and de Caestecker, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "9e473325-99f7-4f26-b0d8-919cdfa29666",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C72",
+      "claim": "BMP4 was higher in healthy vs. HGPS donors below 11 years old, while a reverse trend was observed for children above 12 years old.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that BMP4 was higher in healthy vs. HGPS donors below 11 years old, while a reverse trend was observed for children above 12 years old (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "3a71576a-4a85-4949-b9d8-e7b86ae41782",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C73",
+      "claim": "There was a significant decrease in the level of BMP4 in older vs. younger healthy individuals (p=0.04) which was lost in the HGPS samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing these data from an aging perspective, we found a significant decrease in the level of BMP4 in older vs. younger healthy individuals (p=0.04) which was lost in the HGPS samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of ELISA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "3c27bba4-3bd2-48c4-b5e6-c41cf8d02c08",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C74",
+      "claim": "The level of BMP4 is high during early development, being a key regulator of musculo-skeletal system formation and vascularization.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is reported that the level of BMP4 is high during early development, being a key regulator of musculo-skeletal system formation and vascularization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about BMP4 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "0d8d7460-26c3-4f09-8223-82f65572bd4f",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C75",
+      "claim": "BMP4 decreases during late childhood/young adulthood and then increases again during physiological aging, as well as in pathological conditions including metabolic syndrome, leukemia or bone fractures.",
+      "claim_type": "EXPLICIT",
+      "source": "BMP4 decreases during late childhood/young adulthood and then increases again during physiological aging (Meyers et al., 2016), as well as in pathological conditions including metabolic syndrome (Son et al., 2011), leukemia (Voeltzel et al., 2018) or bone fractures (van Baardewijk et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Meyers et al., 2016, Son et al., 2011, Voeltzel et al., 2018, and van Baardewijk et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "431fdef0-e7fd-484d-9f4d-fff5b0f42d5b",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C76",
+      "claim": "Blood from HGPS mouse models carrying the progerin mutation G609G revealed a higher level of BMP4 compared to age-matched healthy mice and extremely old mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the extremely limited number of available samples from HGPS patients, we then collected blood from HGPS mouse models carrying the progerin mutation G609G (N = 3, 13\u201314 weeks old) and we compared the level of circulating BMP4 with age-matched healthy mice (N = 3, 15 weeks old) as well as with extremely old mice (N = 5, about 2 years old). Collected data revealed a higher level of BMP4 in the blood of HGPS mice (Figure 3C), hence further corroborating the analyses performed on human samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "20c52a34-8cab-4caa-aaed-8ddbc72c5531",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C77",
+      "claim": "Jagged 1-mediated Notch activation induces hyper-permeability of blood vessels in a model of diabetic retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent studies demonstrated that Jagged 1-mediated Notch activation induces hyper-permeability of blood vessels in a model of diabetic retinopathy and that blocking Jagged 1 can prevent retinal edema (Miloudi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Miloudi et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "c166e2cb-caab-4484-8c75-f50ee4e5de87",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C78",
+      "claim": "Blocking Jagged 1 can prevent retinal edema.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent studies demonstrated that Jagged 1-mediated Notch activation induces hyper-permeability of blood vessels in a model of diabetic retinopathy and that blocking Jagged 1 can prevent retinal edema (Miloudi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Miloudi et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "9ea65f66-617c-478d-91be-a32a25083f1e",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C79",
+      "claim": "iSMCs from HGPS vs. healthy donors upregulated JAG1.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we found that iSMCs from HGPS vs. healthy donors upregulated JAG1, suggesting its potential contribution in driving the pathological remodeling of blood vessels in HGPS patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "1524085b-e3c6-454b-ac63-849981e6c1c1",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C80",
+      "claim": "The presence of HGPS iSMCs determined a significant increase in the vascular leakiness compared to young donors (197.4 \u00b1 7.5% vs. 100.0\u00b14.6% after normalization).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that the presence of HGPS iSMCs determined a significant increase in the vascular leakiness compared to young donors (197.4 \u00b1 7.5% vs. 100.0\u00b14.6% after normalization, Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "28a55e19-4247-416c-b4cd-c8618ab4ee9b",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C81",
+      "claim": "Treatment with antibodies blocking secreted BMP4 resulted in a significant decrease in the vascular leakiness (27.8 \u00b1 1.6% vs. 100.0 \u00b1 4.4% for BMP4 antibody after normalization).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found a significant decrease in the vascular leakiness upon antibody treatment in both conditions compared to control (27.8 \u00b1 1.6% vs. 100.0 \u00b1 4.4% for BMP4 antibody after normalization and 61.5 \u00b1 3.8% vs. 100.0 \u00b1 4.4% for Jagged 1 antibody after normalization; Figure 3F and Videos 6, 7 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "16f3c4a7-d1aa-4802-b2d2-81786874a4a9",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C82",
+      "claim": "Treatment with antibodies blocking Jagged 1 resulted in a significant decrease in the vascular leakiness (61.5 \u00b1 3.8% vs. 100.0 \u00b1 4.4% for Jagged 1 antibody after normalization).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found a significant decrease in the vascular leakiness upon antibody treatment in both conditions compared to control (27.8 \u00b1 1.6% vs. 100.0 \u00b1 4.4% for BMP4 antibody after normalization and 61.5 \u00b1 3.8% vs. 100.0 \u00b1 4.4% for Jagged 1 antibody after normalization; Figure 3F and Videos 6, 7 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "81494355-20e0-40e8-a2aa-9192419401c3",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C83",
+      "claim": "BMP4 antibody was able to reduce the vascular permeability to a value even lower than the level detected in presence of iSMCs from young donors.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, BMP4 antibody was able to reduce the vascular permeability to a value even lower than the level detected in presence of iSMCs from young donors (indeed we quantified 72.2% decrease in vascular permeability with BMP4 antibody-treated HGPS cells and only 49.3% decrease comparing iSMCs from young vs. HGPS donors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of permeability data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "44f411ef-23b4-4139-97c1-27524c488ee8",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C84",
+      "claim": "There was an increase in the amount of Y658 VE-cadherin (indication of cell-cell junction destabilization) in presence of untreated iSMCs, in agreement with the higher vascular leakiness.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did observe an increase in the amount of Y658 VE-cadherin (indication of cell-cell junction destabilization) in presence of untreated iSMCs, in agreement with the higher vascular leakiness (Figure 3G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 3G-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "180fd5b3-3726-467a-81df-da683ac11382",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C85",
+      "claim": "Primary, healthy VECs upregulated BMP4 and other genes associated with calcification, skeletal system development and extracellular matrix organization when co-cultured with HGPS fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we also found that primary, healthy VECs upregulated BMP4 and other genes associated with calcification, skeletal system development and extracellular matrix organization when co-cultured with HGPS fibroblasts (Figure 3\u2014figure supplement 1, N = 1 biological replicate).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "4ca251ed-bdcf-4892-902c-e5270232f0cc",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C86",
+      "claim": "BMP2 and BMP4 share a 62% sequence similarity and are functionally equivalent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we were surprised to find that BMP2 was upregulated in old donors while BMP4 was highly expressed by HGPS cells. BMP2 and BMP4 share a 62% sequence similarity and are functionally equivalent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about BMP protein family.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "4324b500-a58b-4643-9cd3-93d0d55402f9",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C87",
+      "claim": "BMP2/4 dysregulation might underlie a common mechanism leading to vascular degeneration during physiological aging and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, BMP2/4 dysregulation might underlie a common mechanism leading to vascular degeneration during physiological aging and disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of BMP2 upregulation in old donors and BMP4 upregulation in HGPS.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "c2ac2ddf-ca56-4585-b47d-e6ef3af9e3d1",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C88",
+      "claim": "BMP4 directly affects the stability of the endothelial barrier by increasing the vascular permeability both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, BMP4 is not only linked to vascular calcification. Indeed, it directly affects the stability of the endothelial barrier by increasing the vascular permeability both in vitro and in vivo (Helbing et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Helbing et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "276cf796-9c30-476b-b760-ab46a6769858",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C89",
+      "claim": "Activation of BMP signaling was reported in presence of mutations of Lamin A/C and other nuclear proteins in skeletal muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, activation of BMP signaling was reported in presence of mutations of Lamin A/C and other nuclear proteins in skeletal muscle cells (Dubinska-Magiera et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dubinska-Magiera et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "c60a7863-0eb8-48d3-a37c-8ceb6374c726",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C90",
+      "claim": "Depletion of Lamin A/C in mouse embryonic fibroblasts determined upregulation of several genes including BMP4.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, depletion of Lamin A/C in mouse embryonic fibroblasts determined upregulation of several genes including BMP4 (Singh et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Singh et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "18384ad5-d67f-4e2a-ab8d-6412a214fbfb",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C91",
+      "claim": "Lamin A/C could be directly or indirectly involved in the expression of BMP4, hence establishing a potential link between HGPS and BMP4 dysregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that Lamin A/C could be directly or indirectly involved in the expression of BMP4, hence establishing a potential link between HGPS and BMP4 dysregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited literature and the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "1af86014-b276-462f-81a4-900a94672810",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C92",
+      "claim": "The lower level of BMP4 detected during early childhood in HGPS patients could be correlated with the unphysiological development of their musculo-skeletal system.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower level of BMP4 detected during early childhood in HGPS patients could be correlated with the unphysiological development of their musculo-skeletal system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the ELISA data and knowledge of BMP4 function.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "b924c41e-1ff9-4086-ac7e-e87e243b537d",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C93",
+      "claim": "The largest growth rate of long bones occurs between 5 and 11 years old and relies on multiple signaling molecules including BMP4.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the largest growth rate of long bones occurs between 5 and 11 years old (Abrahamyan et al., 2008) and relies on multiple signaling molecules including BMP4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Abrahamyan et al., 2008 and general knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "47b8ff64-e253-4789-863a-9dc5b665a428",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C94",
+      "claim": "Abnormal levels of BMP4 in adulthood are correlated with vascular dysfunctions including calcification, atherosclerosis and vascular leakage.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, abnormal levels of BMP4 in adulthood are correlated with vascular dysfunctions including calcification, atherosclerosis and vascular leakage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about BMP4 in vascular pathology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "cf1f4066-6ccf-4a55-a2c0-571d33469191",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C95",
+      "claim": "The higher level of BMP4 in HGPS vs. control donors during late childhood could be associated, together with other dysregulated pathways, with their cardiovascular decline.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible then that the higher level of BMP4 in HGPS vs. control donors during late childhood could be associated, together with other dysregulated pathways, with their cardiovascular decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the ELISA data and knowledge of HGPS pathology.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "64bc69be-0c1f-40a2-a97e-e3ab56a490db",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C96",
+      "claim": "Different HGPS vascular cells could autonomously upregulate or induce the expression of bone-related genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although very preliminary, these data suggest that different HGPS vascular cells could autonomously upregulate or induce the expression of bone-related genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the co-culture RNAseq data.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "a0e01219-4637-4623-ac55-54a1912cc728",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C97",
+      "claim": "Notch signaling plays a critical role in vascular homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notch signaling plays a critical role in vascular homeostasis and previous reports demonstrated that Jagged 1 increases the vascular permeability of the blood brain barrier (Yao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Notch signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "f7078821-b744-428b-a135-4a0eb3122b06",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C98",
+      "claim": "Jagged 1 increases the vascular permeability of the blood brain barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Notch signaling plays a critical role in vascular homeostasis and previous reports demonstrated that Jagged 1 increases the vascular permeability of the blood brain barrier (Yao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yao et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "3bc67ad1-b858-4dbd-9bb7-fce033698f6e",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C99",
+      "claim": "Jagged 1 was recently identified as one of the contributors of the aging signature of healthy human donors in a large study comparing protein expression and chronological age.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Jagged 1 was recently identified as one of the contributors of the aging signature of healthy human donors in a large study comparing protein expression and chronological age (Tanaka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tanaka et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "4ca44953-9470-426d-85f6-559d54c63469",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C100",
+      "claim": "No previous studies demonstrated the dysregulation of two key mediators of vascular permeability in HGPS SMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, no previous studies demonstrated the dysregulation of two key mediators of vascular permeability in HGPS SMCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings based on literature review.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "3f5f2390-f3e5-4acb-9819-c091cc74749d",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C101",
+      "claim": "The use of reprogrammed vascular cells could be extended to monitor the personalized response of a patient to a given therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, the use of reprogrammed vascular cells could be extended to monitor the personalized response of a patient to a given therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "9cbfdbe7-6a9d-4d7c-a8c9-884c34332b9a",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "claim_id": "C102",
+      "claim": "In order to reach these goals it will be essential to optimize current protocols promoting the full maturation of reprogrammed vascular cells and to develop high-throughput systems compatible with the functional screening of hundreds or even thousands of experimental conditions in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in order to reach these goals it will be essential to optimize current protocols promoting the full maturation of reprogrammed vascular cells and to develop high-throughput systems compatible with the functional screening of hundreds or even thousands of experimental conditions in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future research needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Directly reprogrammed iSMCs and iVECs express cell identity markers, form functional 3D vascular structures, and show transcriptional signatures representing a gradual transition from fibroblasts toward mature vascular cells, though the majority of markers remain fibroblast-like.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C34 collectively demonstrate that reprogrammed cells express key vascular markers (\u03b1SMA, calponin, CD31), self-assemble into 3D structures with patent lumens, and show upregulation of vascular-specific genes (ACTA2, KDR, CDH5) with downregulation of fibroblast markers. The RNAseq data (Figure 1G-J), immunofluorescence (Figure 1A-F), and gene ontology analyses provide converging evidence. The authors appropriately acknowledge that cells remain partially fibroblast-like while demonstrating functional vascular characteristics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "iVECs and iSMCs from old donors show age-related differential gene expression, including upregulation of GSTM1 and PALD1 in iVECs and BMP2 in iSMCs, which are validated in human skin biopsies and conserved in mouse VECs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C39, C42-C52 are supported by RNAseq data (Figure 2A-B), immunofluorescence validation in human skin biopsies (Figure 2C-F), and cross-species validation in mouse VECs (Figure 2\u2014supplement 4). The identification of 21 DE genes in iSMCs and 9 in iVECs, with validation of key targets (BMP2, PALD1, GSTM1) in primary tissue, provides strong evidence. However, the small number of DE genes and limited donor numbers (N=3 per age group) suggest modest effect sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "92dc4860-2c68-4ea1-863c-2b5e2b6a7ae2",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Reprogrammed vascular cells from old donors show functional defects in vascular permeability assays, with increased leakiness compared to young donors. PALD1 knockdown in VECs and BMP2 knockdown in SMCs partially rescue permeability defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C55-C64 are supported by quantitative permeability measurements in microfluidic devices (Figure 2G-L) showing ~46% increase in permeability with old iVECs and ~50% increase with old iSMCs. Knockdown experiments demonstrate functional relevance of identified genes (PALD1 KD: 48.5% decrease; BMP2 KD: 13.7% decrease in permeability). The mechanistic link to Y658 VE-cadherin (Figure 2\u2014supplement 5) supports the junction destabilization hypothesis. Statistical significance is reported with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "06f8e2b4-2771-4d2e-974a-f724384d1736",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "iSMCs from HGPS donors show upregulation of BMP4 and JAG1, genes involved in vascular calcification and endothelial barrier dysfunction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C69-C71, C79 are supported by RNAseq data comparing HGPS vs. healthy iSMCs (Figure 3A, 93 DE genes identified). The identification of BMP4 and JAG1 upregulation is consistent with known HGPS pathology. However, the functional significance of these specific genes in HGPS requires additional validation beyond the transcriptional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "786c920e-dd18-40fd-ad10-2cd177e94dae",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BMP4 levels show age-dependent patterns in human serum, with lower levels in young HGPS patients (<11 years) but higher levels in older HGPS patients (>12 years) compared to age-matched controls. HGPS mice show elevated BMP4 compared to young and old wild-type mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C72-C73, C76 are based on ELISA measurements (Figure 3B-C), but the human data show limited statistical significance (p=0.4 for HGPS vs. normal in both age groups; p=0.04 only for age comparison within normal donors). The sample size is very small (N=7 per group) and the authors acknowledge this limitation. The mouse data (Figure 3C) provides stronger support with significant differences (p=0.001 and p<0.001), but the biological relevance of the age-dependent pattern in humans remains uncertain given the statistical limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "10fd1aef-cfb6-4b29-ad09-762b078d15d7",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "HGPS iSMCs cause increased vascular permeability (~97% increase), which is rescued by blocking antibodies against BMP4 (72.2% decrease) or Jagged 1 (38.5% decrease), with corresponding changes in Y658 VE-cadherin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C80-C84 are supported by permeability measurements (Figure 3D, F) and immunofluorescence data (Figure 3G-J). The antibody blocking experiments show statistically significant rescue effects (p<0.001) with appropriate controls. The BMP4 antibody effect is particularly strong, reducing permeability below even young donor levels. The Y658 VE-cadherin data provides mechanistic support for junction destabilization. Sample sizes are adequate (N\u226560 measurements per condition).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "56d3f5f7-358b-404b-bdce-3578158a399a",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Primary healthy VECs upregulate BMP4 and calcification-related genes when co-cultured with HGPS fibroblasts, suggesting HGPS cells can induce pathological changes in healthy vascular cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85 and C96 are based on RNAseq data from co-culture experiments (Figure 3\u2014supplement 1), but the authors explicitly state this is from N=1 biological replicate and describe the findings as 'very preliminary.' Without replication, these observations cannot be considered well-supported despite being mechanistically interesting. Additional validation is required.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "0e04a9e9-8a64-4765-b59c-4aae2a702641",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Directly reprogrammed iVECs and iSMCs retain disease-related signatures that partially recapitulate vascular aging and HGPS pathology, allowing in vitro modeling of these conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C50, C52, C64 represent the overarching conclusion supported by the combined transcriptional (RNAseq) and functional (permeability) data. The validation of aging markers in human skin biopsies and mouse VECs, along with functional rescue experiments, provides strong evidence. However, the authors appropriately acknowledge that reprogrammed cells are not identical to primary cells and capture only a 'fraction' of vascular changes, which is an important limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "0da68b46-8712-4da7-9d63-5666e96375e6",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Reprogramming efficiency is not affected by donor age, as evidenced by comparable expression of MYOCD and ETV2 in cells from young and old donors and similar expression of cell identity genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C40-C41 are supported by RNAseq data showing minimal differences in reprogramming factor expression (log2FC=0.03 for MYOCD, 0.19 for ETV2) and cell identity genes (Supplementary file 6, Figure 2\u2014supplement 1). This is important for establishing that observed differences reflect aging signatures rather than differential reprogramming efficiency. The inference is reasonable given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "6be7a359-9f9d-4bd1-a108-bc7dad6197e4",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "BMP2 and BMP4 are functionally equivalent proteins (62% sequence similarity) that may represent a common mechanism of vascular degeneration in aging and HGPS, potentially linked to Lamin A/C function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C87, C91 are based on sequence similarity (established knowledge) and inference from the observation that BMP2 is upregulated in old donors while BMP4 is upregulated in HGPS. The link to Lamin A/C is supported by citations (C89-C90) but remains speculative in the context of this study. The functional equivalence is stated but not directly tested. This represents a reasonable hypothesis requiring further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    },
+    {
+      "id": "1c6beee3-7735-41db-8e54-707072c326ac",
+      "content_id": "eb78aea0-828d-4cf0-9584-6c08c2f5e841",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The age-dependent pattern of BMP4 in HGPS patients may relate to musculoskeletal development in early childhood and cardiovascular decline in late childhood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C93, C95 are explicitly speculative, as acknowledged by the authors ('could be correlated,' 'it is possible'). While the hypothesis is biologically plausible given BMP4's known roles in development and the timing of HGPS symptoms, the limited sample size (N=7 per group) and lack of statistical significance in the human ELISA data (p=0.4 for both age group comparisons) make this interpretation uncertain. This represents an interesting hypothesis requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:47:20.447066Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4211501c-4ec8-430a-9aac-3c83ea49871e",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "8b25df67-d993-484d-b097-09603d351138",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "a6cc8f26-444b-4778-8d4d-828c83c019a9",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "cebe880d-b182-4d9d-9bf5-d72df04e73c9",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "c20ec2f2-5d6e-4f1f-96dc-887614115292",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "a12041e7-8377-49a2-b943-641ff373e0b5",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "37b728a7-0209-4c66-8084-dc66dd21403c",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "73540190-e970-4786-ba44-29a087a9e22e",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "35f5ebda-5c2a-4767-83b7-8bac88cf9e6f",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "91e427d6-ac19-40e1-b387-1bbb63c3598e",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "7662bcf2-ac7c-435c-bd70-9d941b829c35",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "f4264dbc-f470-4c31-9c61-1345a317d0dc",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "33c6c517-7a53-410f-ae5e-4fab451f8917",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "50604bb6-ce60-43a4-9ed5-8cf0106e6e98",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "886f214b-65f6-4242-ab5b-946ad52ed58a",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "e2a8e909-e323-4ecb-9935-efcdefad42be",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "17d8a886-8ccd-4a0c-abee-3ee08275a371",
+      "result_id": "d3c83b95-6efd-4e57-9d3c-939ca6602b54"
+    },
+    {
+      "claim_id": "bcfe6114-270e-4af4-8f06-624f64ef4be4",
+      "result_id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49"
+    },
+    {
+      "claim_id": "bc3c7ff6-17c9-426a-8d0f-af48309b4eef",
+      "result_id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49"
+    },
+    {
+      "claim_id": "20e07ed3-c1cb-4297-b628-020b841684b0",
+      "result_id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49"
+    },
+    {
+      "claim_id": "6e391992-20dd-477a-b568-10eac74559c5",
+      "result_id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49"
+    },
+    {
+      "claim_id": "74dde14d-c638-44fb-93a9-f25661d194a3",
+      "result_id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49"
+    },
+    {
+      "claim_id": "c0c5c187-6294-4af2-9aa7-231ca1ca3f8c",
+      "result_id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49"
+    },
+    {
+      "claim_id": "62ec7ddb-63b8-45ab-b22f-82f106f25911",
+      "result_id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49"
+    },
+    {
+      "claim_id": "416286e0-5efb-4fb2-ad06-2b54a860adda",
+      "result_id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49"
+    },
+    {
+      "claim_id": "18eac3c2-f658-484a-ac16-4f87a0e5142d",
+      "result_id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49"
+    },
+    {
+      "claim_id": "c0607076-6d56-4b10-a64f-7c3706525636",
+      "result_id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49"
+    },
+    {
+      "claim_id": "0cb2830b-a617-465e-82bc-347ecb7b6abb",
+      "result_id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49"
+    },
+    {
+      "claim_id": "eae708a5-ce4e-4735-8da6-615639d40ced",
+      "result_id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49"
+    },
+    {
+      "claim_id": "43e72ef0-0b9d-4aed-94a3-a9390dc28fd7",
+      "result_id": "f740dbdd-4fa5-4aaa-8624-cd721fbe0f49"
+    },
+    {
+      "claim_id": "a8475724-c99e-4d7c-b4c5-ff6e1785db8f",
+      "result_id": "92dc4860-2c68-4ea1-863c-2b5e2b6a7ae2"
+    },
+    {
+      "claim_id": "f8ae0a16-e7fe-4d73-b588-69df333084ea",
+      "result_id": "92dc4860-2c68-4ea1-863c-2b5e2b6a7ae2"
+    },
+    {
+      "claim_id": "18bc42f5-36a2-4c7a-9d5d-51d500c829f5",
+      "result_id": "92dc4860-2c68-4ea1-863c-2b5e2b6a7ae2"
+    },
+    {
+      "claim_id": "d0f6d7bc-7edb-458b-abba-3f986ff70b88",
+      "result_id": "92dc4860-2c68-4ea1-863c-2b5e2b6a7ae2"
+    },
+    {
+      "claim_id": "8ee4c9b0-1eed-480d-a732-97ba784e3342",
+      "result_id": "92dc4860-2c68-4ea1-863c-2b5e2b6a7ae2"
+    },
+    {
+      "claim_id": "949925f5-9aff-4f0f-a59a-972d8c6da837",
+      "result_id": "92dc4860-2c68-4ea1-863c-2b5e2b6a7ae2"
+    },
+    {
+      "claim_id": "8ddc2d31-1f8f-486d-83c5-29942bd51bef",
+      "result_id": "92dc4860-2c68-4ea1-863c-2b5e2b6a7ae2"
+    },
+    {
+      "claim_id": "6cdc7044-e9d6-467a-a859-9b670161acee",
+      "result_id": "92dc4860-2c68-4ea1-863c-2b5e2b6a7ae2"
+    },
+    {
+      "claim_id": "dc6c5504-712f-48bb-bf13-6b613ba9db1d",
+      "result_id": "92dc4860-2c68-4ea1-863c-2b5e2b6a7ae2"
+    },
+    {
+      "claim_id": "ca3542bd-abeb-47a7-89f0-db0532bdead7",
+      "result_id": "92dc4860-2c68-4ea1-863c-2b5e2b6a7ae2"
+    },
+    {
+      "claim_id": "7cc80db0-bfe9-44bd-923e-490783969222",
+      "result_id": "92dc4860-2c68-4ea1-863c-2b5e2b6a7ae2"
+    },
+    {
+      "claim_id": "b7a0473b-8046-4dec-8bef-77cbb7917582",
+      "result_id": "06f8e2b4-2771-4d2e-974a-f724384d1736"
+    },
+    {
+      "claim_id": "93dfd90a-5524-472e-950d-af7eb2311b2c",
+      "result_id": "06f8e2b4-2771-4d2e-974a-f724384d1736"
+    },
+    {
+      "claim_id": "bb54af59-f5a0-4aba-be28-1ee420b95e6e",
+      "result_id": "06f8e2b4-2771-4d2e-974a-f724384d1736"
+    },
+    {
+      "claim_id": "d81c1bd9-bec1-47c2-bd7a-536626bef1b7",
+      "result_id": "06f8e2b4-2771-4d2e-974a-f724384d1736"
+    },
+    {
+      "claim_id": "9ea65f66-617c-478d-91be-a32a25083f1e",
+      "result_id": "06f8e2b4-2771-4d2e-974a-f724384d1736"
+    },
+    {
+      "claim_id": "63acb928-9710-4892-9a7a-a14e4e27b850",
+      "result_id": "786c920e-dd18-40fd-ad10-2cd177e94dae"
+    },
+    {
+      "claim_id": "9e473325-99f7-4f26-b0d8-919cdfa29666",
+      "result_id": "786c920e-dd18-40fd-ad10-2cd177e94dae"
+    },
+    {
+      "claim_id": "3a71576a-4a85-4949-b9d8-e7b86ae41782",
+      "result_id": "786c920e-dd18-40fd-ad10-2cd177e94dae"
+    },
+    {
+      "claim_id": "431fdef0-e7fd-484d-9f4d-fff5b0f42d5b",
+      "result_id": "786c920e-dd18-40fd-ad10-2cd177e94dae"
+    },
+    {
+      "claim_id": "8c1baf20-1e94-43ba-bf76-b358d3bfe36b",
+      "result_id": "10fd1aef-cfb6-4b29-ad09-762b078d15d7"
+    },
+    {
+      "claim_id": "1524085b-e3c6-454b-ac63-849981e6c1c1",
+      "result_id": "10fd1aef-cfb6-4b29-ad09-762b078d15d7"
+    },
+    {
+      "claim_id": "28a55e19-4247-416c-b4cd-c8618ab4ee9b",
+      "result_id": "10fd1aef-cfb6-4b29-ad09-762b078d15d7"
+    },
+    {
+      "claim_id": "16f3c4a7-d1aa-4802-b2d2-81786874a4a9",
+      "result_id": "10fd1aef-cfb6-4b29-ad09-762b078d15d7"
+    },
+    {
+      "claim_id": "81494355-20e0-40e8-a2aa-9192419401c3",
+      "result_id": "10fd1aef-cfb6-4b29-ad09-762b078d15d7"
+    },
+    {
+      "claim_id": "44f411ef-23b4-4139-97c1-27524c488ee8",
+      "result_id": "10fd1aef-cfb6-4b29-ad09-762b078d15d7"
+    },
+    {
+      "claim_id": "180fd5b3-3726-467a-81df-da683ac11382",
+      "result_id": "56d3f5f7-358b-404b-bdce-3578158a399a"
+    },
+    {
+      "claim_id": "64bc69be-0c1f-40a2-a97e-e3ab56a490db",
+      "result_id": "56d3f5f7-358b-404b-bdce-3578158a399a"
+    },
+    {
+      "claim_id": "7e8d1328-06e7-4693-b328-f63d069659a9",
+      "result_id": "0e04a9e9-8a64-4765-b59c-4aae2a702641"
+    },
+    {
+      "claim_id": "0cb2830b-a617-465e-82bc-347ecb7b6abb",
+      "result_id": "0e04a9e9-8a64-4765-b59c-4aae2a702641"
+    },
+    {
+      "claim_id": "43e72ef0-0b9d-4aed-94a3-a9390dc28fd7",
+      "result_id": "0e04a9e9-8a64-4765-b59c-4aae2a702641"
+    },
+    {
+      "claim_id": "7cc80db0-bfe9-44bd-923e-490783969222",
+      "result_id": "0e04a9e9-8a64-4765-b59c-4aae2a702641"
+    },
+    {
+      "claim_id": "19ca2f33-be6c-4aff-972f-847f28848d4e",
+      "result_id": "0da68b46-8712-4da7-9d63-5666e96375e6"
+    },
+    {
+      "claim_id": "9dd0babc-3f77-4884-98af-78a2155f6370",
+      "result_id": "0da68b46-8712-4da7-9d63-5666e96375e6"
+    },
+    {
+      "claim_id": "1543ca94-ea0f-4ec3-8acd-16383c8cca10",
+      "result_id": "0da68b46-8712-4da7-9d63-5666e96375e6"
+    },
+    {
+      "claim_id": "4ca251ed-bdcf-4892-902c-e5270232f0cc",
+      "result_id": "6be7a359-9f9d-4bd1-a108-bc7dad6197e4"
+    },
+    {
+      "claim_id": "4324b500-a58b-4643-9cd3-93d0d55402f9",
+      "result_id": "6be7a359-9f9d-4bd1-a108-bc7dad6197e4"
+    },
+    {
+      "claim_id": "18384ad5-d67f-4e2a-ab8d-6412a214fbfb",
+      "result_id": "6be7a359-9f9d-4bd1-a108-bc7dad6197e4"
+    },
+    {
+      "claim_id": "1af86014-b276-462f-81a4-900a94672810",
+      "result_id": "1c6beee3-7735-41db-8e54-707072c326ac"
+    },
+    {
+      "claim_id": "b924c41e-1ff9-4086-ac7e-e87e243b537d",
+      "result_id": "1c6beee3-7735-41db-8e54-707072c326ac"
+    },
+    {
+      "claim_id": "cf1f4066-6ccf-4a55-a2c0-571d33469191",
+      "result_id": "1c6beee3-7735-41db-8e54-707072c326ac"
+    }
+  ],
+  "comparisons": []
+}

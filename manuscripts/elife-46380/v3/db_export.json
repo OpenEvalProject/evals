@@ -1,0 +1,1906 @@
+{
+  "submission": {
+    "id": "57e980b8-ecac-4a45-b621-c7af83195877",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:34:32.576821Z",
+    "updated_at": "2025-12-02T12:34:32.576821Z"
+  },
+  "content": [
+    {
+      "id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "submission_id": "57e980b8-ecac-4a45-b621-c7af83195877",
+      "content_type": "manuscript",
+      "content_text": "# Endothelial PKA activity regulates angiogenesis by limiting autophagy through phosphorylation of ATG16L1\n\n## Authors\n\n- Xiaocheng Zhao<sup>1</sup> ([ORCID: 0000-0002-4048-6813](https://orcid.org/0000-0002-4048-6813))\n- Pavel Nedvetsky<sup>1</sup>\n- Fabio Stanchi<sup>1</sup>\n- Anne-Clemence Vion<sup>4</sup> ([ORCID: 0000-0002-2788-2512](https://orcid.org/0000-0002-2788-2512))\n- Oliver Popp<sup>6</sup>\n- Kerstin Z\u00fchlke<sup>7</sup>\n- Gunnar Dittmar<sup>6</sup>\n- Enno Klussmann<sup>7</sup> ([ORCID: 0000-0003-4004-5003](https://orcid.org/0000-0003-4004-5003))\n- Holger Gerhardt<sup>1</sup> ([ORCID: 0000-0002-3030-0384](https://orcid.org/0000-0002-3030-0384)) \u2020\n\n### Affiliations\n\n1. Vascular Patterning Laboratory, Center for Cancer Biology VIB Leuven Belgium\n2. Vascular Patterning Laboratory, Center for Cancer Biology, Department of Oncology VIB Leuven Belgium\n3. Medical Cell Biology, Medical Clinic D University Hospital M\u00fcnster M\u00fcnster Germany\n4. Integrative Vascular Biology Lab Max-Delbr\u00fcck Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Germany\n5. INSERM UMR-970, Paris Cardiovascular Research Center Paris Descartes University Paris France\n6. Proteomics Max-Delbr\u00fcck Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Germany\n7. Anchored Signaling Lab Max-Delbr\u00fcck Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Germany\n8. CRP Sant\u00e9 \u00b7 Department of Oncology LIH Luxembourg Institute of Health Luxembourg Luxembourg\n9. DZHK (German Center for Cardiovascular Research) Berlin Germany\n10. Berlin Institute of Health (BIH) Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe cAMP-dependent protein kinase A (PKA) regulates various cellular functions in health and disease. In endothelial cells PKA activity promotes vessel maturation and limits tip cell formation. Here, we used a chemical genetic screen to identify endothelial-specific direct substrates of PKA in human umbilical vein endothelial cells (HUVEC) that may mediate these effects. Amongst several candidates, we identified ATG16L1, a regulator of autophagy, as novel target of PKA. Biochemical validation, mass spectrometry and peptide spot arrays revealed that PKA phosphorylates ATG16L1\u03b1 at Ser268 and ATG16L1\u03b2 at Ser269, driving phosphorylation-dependent degradation of ATG16L1 protein. Reducing PKA activity increased ATG16L1 protein levels and endothelial autophagy. Mouse in vivo genetics and pharmacological experiments demonstrated that autophagy inhibition partially rescues vascular hypersprouting caused by PKA deficiency. Together these results indicate that endothelial PKA activity mediates a critical switch from active sprouting to quiescence in part through phosphorylation of ATG16L1, which in turn reduces endothelial autophagy.\n\n## Introduction\n\nAngiogenesis is the process of new blood vessels formation from pre-existing vessels via sprouting and remodeling. Blood vessels are crucial for tissue growth and physiology in vertebrates since they are the pipelines for oxygen and nutrients supply and for immune cell distribution. Inadequate vessel formation and maintenance as well as abnormal vascular remodeling cause, accompany or aggravate many disease processes including myocardial infarction, stroke, cancer, and inflammatory disorders (Geudens and Gerhardt, 2011; Potente et al., 2011).\n\nSprouting angiogenesis is a multistep process encompassing sprout initiation, elongation, anastomosis and final vascular network formation (Geudens and Gerhardt, 2011). Multiple molecular pathways have been identified to regulate sprouting angiogenesis; the most investigated are vascular endothelial growth factor (VEGF) and Notch/delta-like 4 (DLL4) signaling. Whereas VEGF initiates angiogenesis through activating VEGF receptor 2 (VEGFR2), thereby guiding angiogenic sprouting and tip cell formation as well as stalk cell proliferation (Ferrara et al., 2003; Gerhardt et al., 2003), Notch and its ligand delta-like 4 (DLL4) limit tip cell formation and angiogenic sprouting (Hellstr\u00f6m et al., 2007; Leslie et al., 2007; Lobov et al., 2007; Suchting et al., 2007). VEGF and Notch/DLL4 pathways co-operate to form a fine-tuned feedback loop to balance tip and stalk cells during developmental angiogenesis and to maintain vascular stabilization (Hellstr\u00f6m et al., 2007; Leslie et al., 2007; Lobov et al., 2007; Suchting et al., 2007). In addition, PI3K/Akt (Lee et al., 2014), MAP4K4 (Vitorino et al., 2015), ephrins and Eph receptors (Cheng et al., 2002), hedgehog signaling (Pola et al., 2001),YAP/TAZ (Kim et al., 2017; Neto et al., 2018),BMP signaling (Vion et al., 2018) and other pathways also regulate various aspects of angiogenesis.\n\nWe identified endothelial cAMP-dependent protein kinase A (PKA) as a critical regulator of angiogenesis during vascular development in vivo. Inhibition of endothelial PKA results in hypersprouting and increased numbers of tip cells, indicating that PKA regulates the transition from sprouting to quiescent vessels (Nedvetsky et al., 2016). However, the PKA targets mediating these effects remained unknown.\n\nHere, we established a chemical genetics approach based on the mutation of a \u2018gatekeeper residue\u2019 of the ATP-binding pocket of a protein kinase to identify endothelial-specific substrates of PKA. We verified autophagy-related-protein-16-like 1 (ATG16L1) as a substrate of endothelial PKA and identified that phosphorylation of ATG16L1 facilitates its degradation. in vivo experiments showed that autophagy inhibition partially rescued the hypersprouting and increased tip cell numbers caused by PKA deficiency.\n\n## Results\n\n### Screen for novel substrates of endothelial PKA\n\nIn order to identify direct substrates of endothelial PKA, we employed a chemical genetics approach (Allen et al., 2005). The ATP-binding pocket of kinases contains a conserved \u2018gatekeeper residue\u2019, which in naturally occurring wild type (WT) kinases is usually a methionine or phenylalanine. In engineered analogue specific (AS) kinases, this \u2018gatekeeper residue\u2019 is replaced with a smaller amino acid (glycine or alanine), enabling the AS-kinases to accept ATP analogues (or ATP\u03b3S analogues) that are modified at the N6 position with bulky groups as (thio-)phosphodonors. In contrast, WT-kinases poorly use these analogues. Once the substrates are thiophosphorylated by AS-kinases, they can be further alkylated and therefore recognized by a thiophosphate ester-specific antibody (Alaimo et al., 2001; Allen et al., 2005; Allen et al., 2007; Banko et al., 2011). To generate AS-PKAC\u03b1, we mutated the methionine 120 to a glycine residue. Testing seven different variants of N6-substituted bulky ATP\u03b3S analogues, we identified 6-cHe-ATP\u03b3S as the best thiophosphodonor for AS-PKAC\u03b1 substrates in HUVEC lysates (Figure 1\u2014figure supplement 1).\n\nTo identify endothelial substrates of PKAC\u03b1, HUVECs expressing WT-PKAC\u03b1 or AS-PKAC\u03b1 were lysed in kinase lysis buffer (KLB) and the thiophosphorylation reaction with 6-cHe-ATP\u03b3S was performed. After alkylation with p-Nitrobenzyl mesylate (PNBM), thiophosphorylated proteins were immunoprecipitated with the thioP antibody coupled to rProtein G Agarose beads (Figure 1A). For quality control, one thirtieth of the protein on agarose beads was eluted for western blot analysis, and the same amount of\u00a0protein\u00a0was used for gel silver staining (Figure 1B). The rest was subjected to mass spectrometry analysis. Two independent experiments were performed. Candidate endothelial PKA targets were identified as peptides that were at least 2-fold (log ratio(AS/WT)>1) enriched in the AS-PKAC\u03b1 samples compared to WT- PKAC\u03b1 samples in both experiments.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig1-v3.jpg)\n\n**Figure 1.:** (A) Strategy for labeling, immunoprecipitation and identifying of PKAC\u03b1 substrates in HUVEC lysates. (B) Thio-phosphorylation of PKA substrates in HUVEC lysates expressing WT-PKAC\u03b1 or AS-PKAC\u03b1 for mass spectrometry analysis. Left panel (input) shows western blot analysis of lysates after alkylation before immunoprecipitation, middle panel (Eluate) shows western blot analysis of the eluted proteins from the immunoprecipitation beads, right panel (Eluate) shows the silver staining of the same samples as middle panel. (C) Validation of the six PKAC\u03b1 substrates identified in the chemical genetic approach screen by overexpressing of potential substrates and WT-PKAC\u03b1 (or AS-PKAC\u03b1) in 293Tcells, and labeling the substrate in 293 T cell lysates. Western blots are representative of two independent experiments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Kinase assay in HUVEC lysates using WT-PKAC\u03b1 and AS-PKAC\u03b1.\u00a0All the western blot membranes were exposed at the same time. (B)\u00a0Structural formulas of 7 different N6-substituted ATP\u03b3S analogs.\n\nThe ninety-seven proteins identified in both experiments (Table 1\u2014source data 1) included several known PKA substrates such as NFATC1 (Niswender et al., 2002), VASP (Anton et al., 2014; Butt et al., 1994; Profirovic et al., 2005), PRKAR2A and PRKAR2B (Manni et al., 2008) indicating that the chemical genetic screen worked well to identify PKA substrates. Thirty proteins with at least 8-fold enrichment (log ratio(AS/WT)>3) are listed according to their log ratio (AS/WT) value in Table 1, presenting the most likely direct substrates of PKA in this screen.\n\n**Table 1.**\n List of PKACa substrates.Proteins are listed according to the log of fold changes of AS-PKAC\u03b1 to WT- PKAC\u03b1. Two independent experiments have been done to prepare the PKAC\u03b1 substrates samples for mass spectrometric analysis.Table 1\u2014source data 1.The full list of proteins identified in both experiments is provided.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Uniprot</th>\n      <th rowspan=\"2\">Protein.names</th>\n      <th rowspan=\"2\">Gene.names</th>\n      <th rowspan=\"2\">Peptides</th>\n      <th colspan=\"2\">Log ratio AS/WT</th>\n    </tr>\n    <tr>\n      <th>experiment1</th>\n      <th>experiment2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Q6AI12</td>\n      <td>Ankyrin repeat domain-containing protein 40</td>\n      <td>ANKRD40</td>\n      <td>9</td>\n      <td>10</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Q6P6C2</td>\n      <td>RNA demethylase ALKBH5</td>\n      <td>ALKBH5</td>\n      <td>6</td>\n      <td>10</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Q9NRY4</td>\n      <td>Rho GTPase-activating protein 35</td>\n      <td>ARHGAP35</td>\n      <td>9</td>\n      <td>10</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>E7EVC7</td>\n      <td>Autophagy-related protein 16\u20131</td>\n      <td>ATG16L1</td>\n      <td>8</td>\n      <td>10</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>J3KPC8</td>\n      <td>Serine/threonine-protein kinase SIK3</td>\n      <td>SIK3;KIAA0999</td>\n      <td>5</td>\n      <td>10</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>A1 \u00d7 283</td>\n      <td>SH3 and PX domain-containing protein 2B</td>\n      <td>SH3PXD2B</td>\n      <td>4</td>\n      <td>10</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Q8IWZ8</td>\n      <td>SURP and G-patch domain-containing protein 1</td>\n      <td>SUGP1</td>\n      <td>5</td>\n      <td>10</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Q9UJX5</td>\n      <td>Anaphase-promoting complex subunit 4</td>\n      <td>ANAPC4</td>\n      <td>5</td>\n      <td>10</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>O43719</td>\n      <td>HIV Tat-specific factor 1</td>\n      <td>HTATSF1</td>\n      <td>4</td>\n      <td>10</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>O95644-5</td>\n      <td>Nuclear factor of activated T-cells, cytoplasmic 1</td>\n      <td>NFATC1</td>\n      <td>5</td>\n      <td>10</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>G8JLI6</td>\n      <td>Prolyl 3-hydroxylase 3</td>\n      <td>LEPREL2</td>\n      <td>3</td>\n      <td>10</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>F8W781</td>\n      <td>Zinc finger CCCH domain-containing protein 13</td>\n      <td>ZC3H13</td>\n      <td>3</td>\n      <td>10</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Q9BZL4</td>\n      <td>Protein phosphatase 1 regulatory subunit 12C</td>\n      <td>PPP1R12C</td>\n      <td>21</td>\n      <td>6,04440274</td>\n      <td>7,30701515</td>\n    </tr>\n    <tr>\n      <td>O14974</td>\n      <td>Protein phosphatase 1 regulatory subunit 12A</td>\n      <td>PPP1R12A</td>\n      <td>26</td>\n      <td>5,72796034</td>\n      <td>7,12654716</td>\n    </tr>\n    <tr>\n      <td>Q00537</td>\n      <td>Cyclin-dependent kinase 17</td>\n      <td>CDK17</td>\n      <td>31</td>\n      <td>6,37867381</td>\n      <td>6,39216838</td>\n    </tr>\n    <tr>\n      <td>Q9Y4G8</td>\n      <td>Rap guanine nucleotide exchange factor 2</td>\n      <td>RAPGEF2</td>\n      <td>21</td>\n      <td>10</td>\n      <td>6,17455504</td>\n    </tr>\n    <tr>\n      <td>Q9BYB0</td>\n      <td>SH3 and multiple ankyrin repeat domains protein 3</td>\n      <td>SHANK3</td>\n      <td>32</td>\n      <td>5,26591421</td>\n      <td>5,6389181</td>\n    </tr>\n    <tr>\n      <td>J3KSW8</td>\n      <td>Myosin phosphatase Rho-interacting protein</td>\n      <td>MPRIP</td>\n      <td>18</td>\n      <td>4,61398477</td>\n      <td>5,61155414</td>\n    </tr>\n    <tr>\n      <td>P31323</td>\n      <td>cAMP-dependent protein kinase type II-beta regulatory subunit</td>\n      <td>PRKAR2B</td>\n      <td>19</td>\n      <td>7,05077105</td>\n      <td>5,33509437</td>\n    </tr>\n    <tr>\n      <td>P13861</td>\n      <td>cAMP-dependent protein kinase type II-alpha regulatory subunit</td>\n      <td>PRKAR2A</td>\n      <td>24</td>\n      <td>5,42841998</td>\n      <td>5,04010629</td>\n    </tr>\n    <tr>\n      <td>Q14980-2</td>\n      <td>Nuclear mitotic apparatus protein 1</td>\n      <td>NUMA1</td>\n      <td>61</td>\n      <td>3,45625969</td>\n      <td>4,47466712</td>\n    </tr>\n    <tr>\n      <td>O15056</td>\n      <td>Synaptojanin-2</td>\n      <td>SYNJ2</td>\n      <td>13</td>\n      <td>4,64022655</td>\n      <td>4,46069701</td>\n    </tr>\n    <tr>\n      <td>J3KNX9</td>\n      <td>Unconventional myosin-XVIIIa</td>\n      <td>MYO18A</td>\n      <td>10</td>\n      <td>10</td>\n      <td>4,43208178</td>\n    </tr>\n    <tr>\n      <td>Q86UU1-2</td>\n      <td>Pleckstrin homology-like domain family B member 1</td>\n      <td>PHLDB1</td>\n      <td>19</td>\n      <td>5,4105243</td>\n      <td>4,10782285</td>\n    </tr>\n    <tr>\n      <td>P28715</td>\n      <td>DNA repair protein complementing XP-G cells</td>\n      <td>ERCC5;BIVM-ERCC5</td>\n      <td>8</td>\n      <td>3,3571826</td>\n      <td>4,09305592</td>\n    </tr>\n    <tr>\n      <td>P12270</td>\n      <td>Nucleoprotein TPR</td>\n      <td>TPR</td>\n      <td>104</td>\n      <td>3,3333472</td>\n      <td>4,04477536</td>\n    </tr>\n    <tr>\n      <td>Q15111</td>\n      <td>Inactive phospholipase C-like protein 1;Phosphoinositide phospholipase C</td>\n      <td>PLCL1</td>\n      <td>10</td>\n      <td>10</td>\n      <td>3,32188704</td>\n    </tr>\n    <tr>\n      <td>Q9HD67</td>\n      <td>Unconventional myosin-X</td>\n      <td>MYO10</td>\n      <td>39</td>\n      <td>4,13973415</td>\n      <td>3,21827463</td>\n    </tr>\n    <tr>\n      <td>Q14185</td>\n      <td>Dedicator of cytokinesis protein 1</td>\n      <td>DOCK1</td>\n      <td>34</td>\n      <td>4,50413426</td>\n      <td>3,18515106</td>\n    </tr>\n    <tr>\n      <td>O75116</td>\n      <td>Rho-associated protein kinase 2</td>\n      <td>ROCK2</td>\n      <td>29</td>\n      <td>3,27701864</td>\n      <td>3,08277835</td>\n    </tr>\n  </tbody>\n</table>\n\nTo validate novel candidate PKAC\u03b1 substrates, we overexpressed WT-PKAC\u03b1 or AS-PKAC\u03b1 together with flag- or GFP- tagged candidate proteins in 293 T cells, and used the 6-cHe-ATP\u03b3S as thiophosphate donor to thiophosphorylate substrates in lysates as described above. Lysate immunoprecipitation was carried out with M2 anti-flag beads or anti-GFP antibody coupled agarose beads, and the immune complexes were probed by western blot using thiophosphate antibody. The known PKA substrate NFATC1 served as a positive control. Five selected new candidate proteins (PPP1R12C, ATG16L1\u03b1, DDX17, ANKRD40 and ATG5) out of ninety-seven proteins were tested; four of these five proteins were confirmed to be thiophosphorylated by AS-PKAC\u03b1, indicating that they are indeed direct substrates of AS-PKAC\u03b1 (Figure 1C). Only ATG5 was not thiophosphorylated by AS-PKAC\u03b1 in the validation of the screen (Figure 1C). Bioinformatic analysis of ATG5 amino acids sequence also failed to identify a consensus PKA substrate motif (R-R/K-X-S/T;K/R-X1-2-S/T) (Kennelly and Krebs, 1991). Since ATG5 directly binds to ATG16L1 (Matsushita et al., 2007; Mizushima et al., 1999), it likely co-precipitated with ATG16L1 in our screen.\n\nATG5 and ATG16L1 are conserved core components of the autophagy process, and PKA activity has been shown to negatively regulate autophagy in S. Cervisiae and mammalian cells through phosphorylation of ATG1/ULK1 (Mizushima, 2010). ATG16L1 however has not previously been identified as a PKA target, prompting us to further investigate this interaction and the potential regulatory role of PKA and autophagy in endothelial sprouting.\n\n### Pkac\u03b1 phosphorylates ATG16L1\u03b1 at S268 and ATG16L1\u03b2 at S269\n\nTo identify the PKAC\u03b1 phosphorylation sites in ATG16L1, we spot-synthesized 25-mer overlapping peptides that cover the entire ATG16L1 protein. The peptide array was subjected to an in vitro PKA phosphorylation assay. Three peptides of the ATG16L1\u03b1 and 7 peptides of ATG16L1\u03b2 were phosphorylated compared to the negative control (Figure 2A, Supplementary file 1). The common amino acid sequences included in the phosphorylated peptides predicted Ser268 in ATG16L1\u03b1 and Ser269 as well as Ser287 in ATG16L1\u03b2 as potential PKA phosphorylation sites (Figure 2B). Indeed serine to alanine mutation S268A in ATG16L1\u03b1 and S269A but not S287A mutation in ATG16L1\u03b2 resulted in a loss of AS-PKAC\u03b1 thiophosphorylation of these two ATG16L1 isoforms (Figure 2C and D). Moreover, LC-MS/MS analysis demonstrated phosphorylation of ATG16L1\u03b1 at S268 and of ATG16L1\u03b2 at S269 (Figure 2E and F). Of note, thiophosphorylation was converted to normal phosphorylation by 1% TFA acid-catalyzed hydrolysis during sample preparation for LC-MS/MS, thus identifying the target sites as phosphorylated, not thiophosphorylated (Figure 2\u2014figure supplement 1). Together, these results demonstrate that S268 and S269 are the PKAC\u03b1 phosphorylation sites of ATG16L1\u03b1 and ATG16L1\u03b2, respectively.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig2-v3.jpg)\n\n**Figure 2.:** (A) Peptide SPOT assay of ATG16L1 phosphorylation sites screening. (B) Amino acid sequence including potential PKAC\u03b1 phosphorylation sites in ATG16L1\u03b1 and ATG16L1\u03b2 according to the peptide SPOT assay result of Figure 2A. (C\u2013D) Identification of PKAC\u03b1 phosphorylation site in ATG16L1\u03b1 (C) and ATG16L1\u03b2 (D). Analysis was performed as in Figure 1C. Western blots are representative of two independent experiments. (E\u2013F) Flag tagged ATG16L1\u03b1 and ATG16L1\u03b2 were thio-phosphorylated by AS-PKAC\u03b1 and purified twice using M2 beads and thioP antibody coupled beads, followed by mass spectrometric analysis. LC-MS/MS spectra of the PKA- phosphorylated ATG16L1\u03b1 tryptic peptide pSVSSFPVPQDNVDTHPGSGK and ATG16L1\u03b2 tryptic peptide RLpSQPAGGLLDSITNIFGR. The results demonstrate that PKA phosphorylated ATG16L1\u03b1 at S268 and phosphorylated ATG16L1\u03b2 at S269.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013B)\u00a0ATG16L1\u03b1 (A) and ATG16L1\u03b2 (B) thiophosphorylated and immunoprecopitated as in Figure 1C, then treated with or without 1% TFA at 37\u00b0C for 4 hr.\n\n### Pkac\u03b1 regulates ATG16L1 by phosphorylation-dependent degradation\n\nPhosphorylation is one of the most widespread types of post-translational modification, and is crucial for signal transduction (Hunter, 1995; Manning et al., 2002; Ubersax and Ferrell, 2007). Previous research demonstrated that phosphorylation can regulate protein degradation by controlling its stabilization (Bullen et al., 2016; Geng et al., 2009; Hwang et al., 2009). To determine whether phosphorylation of ATG16L1\u03b1 by PKA regulates protein stability, we overexpressed ATG16L1\u03b1WT and the mutant ATG16L1\u03b1S268A in HUVECs. To activate PKA, HUVECs were treated with the PKA specific activator 6-Bnz-cAMP. Using cycloheximide (CHX) to prevent new protein synthesis allowed us to detect the degradation of ATG16L1\u03b1WT and ATG16L1\u03b1S268A over time. Western blot analysis showed that most of the ATG16L1\u03b1WT degraded after 12 hr, whereas ATG16L1\u03b1S268A remained largely stable (Figure 3A), suggesting that the phosphorylation of ATG16L1\u03b1 at site Ser268 by PKA promotes degradation. For ATG16L1\u03b2, Ser269 phosphorylation exhibited a similar function (Figure 3B). In addition, the phosphomimetic site mutants ATG16L1\u03b1S268D and ATG16L1\u03b2S269D were less stable than wild type ATG16L1\u03b1 and ATG16L1\u03b2 (Figure 3C\u20133D), supporting the idea that phosphorylation of ATG16L1\u03b1 on site S268 and ATG16L1\u03b2 on site S269 by PKA promotes degradation. In accordance, depleting PKAC\u03b1 in HUVECs by shRNA led to accumulation of ATG16L1 (Figure 3E) whereas activating PKA by 6-Bnz-cAMP caused ATG16L1 reduction (Figure 3F). Moreover, in PKA inhibited endothelial cells isolated from dnPKAiEC mice (Nedvetsky et al., 2016), ATG16L1 protein was also increased compared to endothelial cells isolated from corresponding Cdh5-CreERT2 control mice (Figure 3G). dnPKAiEC is the short denomination for Prkar1aTg/+ mice carrying a single floxed dominant-negative Prkar1a allele, (the regulatory subunit Prkar1a of PKA is an endogenous inhibitor of PKA) crossed with Cdh5-CreERT2 mice expressing tamoxifen inducible Cre recombinase under control of endothelial specific Cdh5 promotor (Nedvetsky et al., 2016). Taken together, these results indicate that PKAC\u03b1 regulates ATG16L1 by phosphorylation-dependent degradation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig3-v3.jpg)\n\n**Figure 3.:** (A\u2013A'') HUVECs infected with Flag ATG16L1\u03b1 (WT or S268A) were treated with 250\u00a0\u00b5M 6-bnz-cAMP and 20\u00a0\u00b5g/ml CHX at the time points indicated when they reached confluence (A). Quantifications of Flag ATG16L1\u03b1 WT (A') and S268A (A'') expression. (B\u2013B'') HUVECs infected with Flag ATG16L1\u03b2 (WT or S269A) were treated with 250 \u00b5M 6-bnz-cAMP and 20 \u00b5g/ml CHX at the time points indicated when they reached confluence (B). Quantifications of Flag ATG16L1\u03b2 WT (B') and S269A (B'') expression. (C\u2013C'') HUVECs infected with GFP ATG16L1\u03b1 (WT or S268D) were treated with 20\u00a0\u00b5g/ml CHX at the time points indicated when they reached confluence (C). Quantifications of GFP ATG16L1\u03b1 WT (C') and S268D (C'') expression. (D\u2013D'') HUVECs infected with GFP ATG16L1\u03b2 (WT or S269D) were treated with 20\u00a0\u00b5g/ml CHX at the time points indicated when they reached confluence (D). Quantifications of GFP ATG16L1\u03b2 WT (D') and S269D (D'') expression. (E\u2013E') HUVECs infected with shRNA\u00a0(scramble or shPKAC\u03b1) virus were lysed in RIPA buffer and proteins were analyzed by western blot using indicated antibodies (E). Quantifications of indicated protein expression (E'). (F\u2013F') HUVECs treated with DMSO\u00a0(control) and 500\u00a0\u00b5M 6-bnz-cAMP were lysed in RIPA buffer and proteins were analyzed by western blot using indicated antibodies (F). Quantifications of indicated protein expression (F'). (G\u2013G') Endothelial cells isolated from mice\u00a0(wild type or dnPKAiEC) were lysed in RIPA buffer and ATG16L1 protein was analyzed by western blot (G). Quantifications of indicated ATG16L1 expression\u00a0(G'). Data present the mean \u00b1 SD of 3 independent experiments. *P<0,05; **P<0,01; ***P<0,001; ****P<0,0001.\n\n### Inhibition of autophagy partially normalizes the vascular phenotype caused by PKA-deficiency\n\nATG16L1 is an important component of the ATG16L1-ATG5-ATG12 protein complex, required for LC3 lipidation and autophagosome formation. Both LC3 lipidation and autophagosome formation represent essential steps in autophagy (Kuma et al., 2002; Levine and Kroemer, 2008; Matsushita et al., 2007; Mizushima et al., 2003; Mizushima et al., 1999). Accumulation of ATG16L1 upon PKA knock down resulted in increased levels of the positive autophagy marker LC3II whilst reducing the negative autophagy marker p62 in HUVECs (Figure 3E) whereas depleting ATG16L1 by 6-Bnz-cAMP mediated PKA activation resulted in decreased levels of LC3II whilst increasing p62 in HUVECs (Figure 3F). Since ATG16L1 protein levels in endothelial cells isolated from dnPKA mice were also increased, we hypothesized that increased autophagy in endothelial cells may contribute to the vascular phenotype in these mice. If so, inhibiting autophagy could potentially normalize vascular hypersprouting in dnPKAiEC mice. To test this hypothesis, we crossed the ATG5 conditional knock out mice ATG5ECKO (ATG5flox/flox mice crossed with Cdh5-CreERT2 mice) with dnPKAiEC mice, performed retinal staining for isolectin B4 (IB4, membrane staining) and the tip cell specific marker ESM1, and quantified the IB4 and ESM1 positive areas. No significant difference were observed between Cdh5-CreERT2 control mice and ATG5ECKO mice on both the vascular plexus and tip cells. However, ATG5ECKO partially rescued both the hyperdense vascular plexus front and the increasing tip cells in dnPKAiEC mice. Retinal stainings demonstrated that ATG5 deletion in endothelial cells in vivo, which shuts down ATG5-dependent autophagy, partially normalizes the hypersprouting phenotype of dnPKAiEC mice (Figure 4A\u20134F). Autophagy inhibitor chloroquine (CQ) treatment confirmed that autophagy inhibition can partially rescue both the hyperdense vascular plexus front and the increasing tip cells in dnPKAiEC mice (Figure 4\u2014figure supplement 1) . Further more, although the ratio of proliferating endothelial cells was not significant different in retinas of the four groups of mice (Cdh5-CreERT2 control; ATG5ECKO;dnPKAiEC; and dnPKAiEC ATG5ECKO), the total number of endothelial cells and proliferating endothelial cells was deceased in dnPKAiEC ATG5ECKO compared to dnPKAiEC mouse retinas (Figure 5A\u20135D). Also the low levels of apoptotic endothelial cells showed no significant differences (Figure 5E\u20135F), suggesting that neither the rate of proliferation nor the frequency of apoptosis are drivers of PKA and ATG5 dependent vascular density and sprouting phenotypes. ATG5 deletion in endothelial cells instead appears to normalize the hypersprouting phenotype of dnPKAiEC mice by reducing the number of endothelial tip cells cells as well as the total number of proliferating endothelial cells. Although speculative at this time, a shorter cell cycle or more rounds of cycling per cell in the case of increased autophagy would for example explain the increased number of cells with unchanged ratio of proliferating endothelial cells. Altogether our results suggest that PKA regulates the switch from sprouting to stabilization of nascent vascular plexuses by limiting endothelial autophagy levels via ATG16L1 degradation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig4-v3.jpg)\n\n**Figure 4.:** (A\u2013F) Mice were injected with tamoxifen from P1 to P3, then retinas were collected at P6. Isolectin B4 and ESM1 staining of P6 retinas isolated from wtPKA with wtATG5 or ATG5ECKO mice and dnPKAiEC with wtATG5 or ATG5ECKO mice. Representative images are shown (A,D). Quantifications of radial expansion\u00a0(B),\u00a0sprouts per 100\u00b5m (C), vascular area (E) and ESM1 positive area (F) per field of retinal fronts. 8-10 retinas were measured for each group, *P<0,05; **P<0,01; ***P<0,001; ****P<0,0001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013B) Mice were injected with tamoxifen from P1 to P3, and retinas were collected at P6. Isolectin B4 and ESM1 staining of P6 retinas isolated from wtPKA and dnPKAiEC mice treated with PBS or CQ. Representative images are shown (A,B). (C\u2013D) Quantifications of vascular area (C) and ESM1 positive area (D) per field of retinal fronts. 30\u201335 fields\u00a0(images) taken from 6 to 7 retinas were measured for each group, ****p<0,0001.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig5-v3.jpg)\n\n**Figure 5.:** (A\u2013D) Mice were injected with tamoxifen from P1 to P3, 50 \u00b5l 1 mg/ml EdU were I.P injected 2 hr before retinas collecting at P6. CD31 and ERG staining of P6 retinas isolated from wtPKA with wtATG5 or ATG5ECKO mice and dnPKAiEC with wtATG5 or ATG5ECKO mice followed by EdU Click-iT 647 dye labeling. Representative images are shown\u00a0(A). Quantifications of endothelial cells (ERG positive cells) (B), proliferating endothelial cells (EdU and ERG positive cells) (C) and ratio of proliferating endothelial cells (EdU and ERG positive cells/ERG positive cells) (D). 6\u20139 retinas were measured for each group, *p<0,05; **p<0,01; ***p<0,001; ****p<0,0001. (E\u2013F)\u00a0Mice were injected with tamoxifen from P1 to P3, then retinas were collected at P6. CD31 and Cleaved caspase 3 staining of P6 retinas isolated from wtPKA with wtATG5 or ATG5ECKO mice and dnPKAiEC with wtATG5 or ATG5ECKO mice. Representative images are shown (E). Quantifications of endothelial apoptosis (F). 6\u20138 retinas were measured for each group.\n\n## Discussion\n\nOur chemical genetic screen and biochemical analysis identified ATG16L1 as a novel target of PKA activity in endothelial cells. The combined results demonstrate that PKA activity inhibits autophagy in cultured human umbilical vein endothelial cells (HUVEC) via the phosphorylation of ATG16L1, which accelerates its degradation. In cultured bovine aortic endothelial cells, induction of autophagy by overexpression of ATG5 has been shown to promote in vitro vascular tubulogenesis, whereas ATG5 silencing suppressed this morphogenic behavior (Du et al., 2012). In mice, inhibition of autophagy by bafilomycin, or genetic beclin heterozygosity as well as ATG5 knockout impairs angiogenesis post myocardial infarction, whereas the angiogenic factor AGGF1 enhances therapeutic angiogenesis through JNK-mediated stimulation of endothelial autophagy (Lu et al., 2016). Angiogenesis during tissue regeneration in a burn wound model also relied on induction of endothelial autophagy, by driving AMPK/AKT/mTOR signaling (Liang et al., 2018), together suggesting that autophagy regulation may represent a critical determinant of the extent of vascular sprouting. The identification of ATG16L1 as a direct target of PKA therefore raises the hypothesis that the dramatic hypersprouting phenotype in dnPKAiEC mouse retinas deficient in endothelial PKA activity may result from exuberant endothelial activation of autophagy. Both genetic endothelial inactivation of ATG5 and chemical inhibition of autophagy partially normalized the hypersprouting phenotype in dnPKAiEC mice, suggesting that indeed the activation of autophagy in dnPKAiEC mice contributes to vascular hypersprouting. However, the failure to fully normalize vascular patterning by autophagy inhibition indicates that additional PKA targets and mechanisms may be involved. Our mass spectrometry analysis identified a list of presumptive endothelial PKA substrates, which will potentially also be involved in angiogenesis. For example, we identified RAPGEF2 as a candidate target, deficiency of which causes embryonic lethality at E11.5 due to yolk sac vascular defects (Satyanarayana et al., 2010), very similar to the yolk sac phenotype in dnPKAiEC embryos (Nedvetsky et al., 2016). Similarly the potential target Rock2 has a well known role in regulating endothelial functions in angiogenesis (Liu et al., 2018; Montalvo et al., 2013; Seto et al., 2016; Shimizu et al., 2013). Further studies will need to validate all the listed targets and establish which of these exert critical endothelial functions, and under what conditions.\n\nAn alternative explanation for the partial rescue of the dnPKAiEC phenotype by inhibition of autophagy could lie in additional functions of ATG16L1 itself. Although ATG16L1 plays an essential role in autophagy, and is part of a larger protein complex ATG16L1-ATG5-ATG12 that is necessary for autophagy, ATG16L1 is also involved in the production of inflammatory cytokines IL-1\u03b2 and IL-18 and exerts anti-inflammatory functions during intestinal inflammation (Cadwell et al., 2008; Diamanti et al., 2017; Saitoh et al., 2008; Sorbara et al., 2013). IL-1\u03b2 promotes angiogenesis by activating VEGF production during tumor progression (Carmi et al., 2013; Voronov et al., 2003), while IL-18 suppresses angiogenesis in cancer (Cao et al., 1999; Xing et al., 2016; Yang et al., 2010). How ATG16L1 regulates angiogenesis through inflammatory cytokines and whether this regulation operates downstream of PKA activity in vivo requires further investigation.\n\nIntriguingly, our rescue experiments show that in wild type mice, inhibition of autophagy has no significant effect on developmental retinal angiogenesis. This could indicate that autophagy in developmental angiogenesis, unlike in pathological angiogenesis and post-ischemic tissue responses, is not very active.\n\nAlthough, to our knowledge, this is the first identification of ATG16L1 as a PKA target and the first indication that PKA regulates autophagy in endothelial cells, PKA has previously been identified as regulator of autophagy. For example, PKA reduces autophagy through phosphorylation of ATG13 in Saccharomyces cerevisiae (Hundsrucker et al., 2006), and through phosphorylation of LC3 in neurons (Cherra et al., 2010). In our research, ATG16L1 was identified as a novel direct PKA substrate in endothelial cells, but not ATG13 or LC3. Mechanistically, the phosphorylation of ATG16L1 by PKA accelerates its degradation, and consequently decreases autophagy levels in endothelial cells. The finding of different components of the autophagy pathway as targets of PKA identified in yeast and various vertebrate cell populations raises the intriguing possibility that although the principle regulatory logic of PKA in autophagy is conserved, different protein targets mediate this effect in different cells or organisms. In addition, or alternatively, this regulation carries multiple levels of redundancy, and the individual studies simply identify the most prevalent targets within the respective cell types. The fact that also ATG16L1 comes in two splice variants that are both targeted by PKA in endothelial cells lends some strength to this idea.\n\nInterestingly, ATG16L1 can itself be regulated by multiple phosphorylation events by distinct kinases, with opposing effects on protein stability and autophagy. ATG16L1 can be phosphorylated at Ser139 by CSNK2 and this phosphorylation enhances its interaction with the ATG12-ATG5 conjugate (Song et al., 2015). IKK\u03b1 promotes ATG16L1 stabilization by phosphorylation at Ser278 (Diamanti et al., 2017). In addition, phospho-Ser278 has similar functions as phospho-Thr300, since both phospho-mutants ATG16L1S278A and ATG16L1T300A accelerate ATG16L1 degradation by enhancing caspase three mediated ATG16L1 cleavage (Diamanti et al., 2017; Murthy et al., 2014). In contrast, our finding suggest that the PKA target sites Ser268 in ATG16L1\u03b1 (or Ser269 in ATG16L1\u03b2) work in the opposite way of Ser278 and Thr300; ATG16L1\u03b1S268A (and ATG16L1\u03b2S269A) are more stable than ATG16L1WT. Furthermore, PKA deficiency also stabilizes ATG16L1 in endothelial cells in vivo and in vitro. Taken together, it appears that the different phosphorylation sites of ATG16L1 play different roles in fine tuning protein stability under the influence of alternative upstream kinases, and thereby adapt autophagy levels. Given the increasing insights into the role of autophagy in cell and tissue homeostasis and in disease, it will be of great interest to investigate whether the newly identified regulation by PKA extends beyond developmental angiogenesis into pathomechanisms associated with endothelial dysfunction.\n\nFinally, on a technical note, the chemical genetics approach developed by Shokat and colleagues (Alaimo et al., 2001; Allen et al., 2005; Allen et al., 2007) has successfully been used in other cell types, but to our knowledge, this is the first report on direct endothelial PKA targets. Our initial attempts using published cell lysate conditions based on RIPA buffer however failed to identify differences in thiophosphorylation when comparing AS-PKA expressing cells to WT-PKA expressing cells. Our buffer optimization revealed that RIPA buffer limits the activity of PKA, whereas our new kinase lysis buffer (see Materials\u00a0and\u00a0methods) allows effective substrate phosphorylation, thus giving rise to strong signals in AS-PKA samples. This optimization will hopefully be valuable for researchers aiming to utilize this approach for additional chemical genetic kinase substrate screens in the future.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Prkar1\u03b1tm2Gsm</td>\n      <td>PMID: 21533282</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Tg(Cdh5-cre/ERT2)1Rha</td>\n      <td>MGI:3848980</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>ATG5flox/flox</td>\n      <td>PMID: 16625204</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HUVEC</td>\n      <td>PromoCell and freshly isolated cells</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Mus)</td>\n      <td>pRRL.CMV.flag- PKAC\u03b1</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Mus)</td>\n      <td>pRRL.CMV.flag- PKAC\u03b1M120G</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pECE-M2-PPP1R12A</td>\n      <td>Addgene:31658</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>EGFPC1-huNFATc1EE-WT</td>\n      <td>Addgene: 24219</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pDESTmycDDX17, pRRL.CMV.flag-DDX17</td>\n      <td>Addgene: 19876 This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pMRX-IP/SECFP-hATG16L1 pRRL.CMV.flag- ATG16L1\u03b1</td>\n      <td>Addgene: 58994 This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pRRL.CMV.flag- ATG16L1\u03b2</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pRRL.CMV.GFP- ATG5</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pRRL.CMV.flag- ATG16L1\u03b1 S268A</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pRRL.CMV.flag- ATG16L1\u03b2 S269A</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pRRL.CMV.flag- ATG16L1\u03b2 S287A</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pRRL.CMV.flag- ATG16L1\u03b2 S269A and S287A</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pRRL.CMV.GFP- ATG16L1\u03b1</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pRRL.CMV.GFP- ATG16L1\u03b1 S268D</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pRRL.CMV.GFP- ATG16L1\u03b2</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pRRL.CMV.GFP- ATG16L1\u03b2 S269D</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pLKO.1-TRC cloning shRNA vector</td>\n      <td>Addgene: 10878</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pLKO.1-TRC shPKAC\u03b1</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Thiophosphate ester antibody [51-8]</td>\n      <td>Abcam: ab92570</td>\n      <td></td>\n      <td>WB 1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Thiophosphate ester antibody [51-8]</td>\n      <td>Abcam: ab133473</td>\n      <td></td>\n      <td>IP</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>GAPDH (14C10) Rabbit mAb</td>\n      <td>cell signaling: #2118</td>\n      <td></td>\n      <td>WB 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Atg16L1 (D6D5) Rabbit mAb</td>\n      <td>cell signaling: #8089</td>\n      <td></td>\n      <td>WB 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>LC3B (D11) XP Rabbit mAb</td>\n      <td>cell signaling: #3868</td>\n      <td></td>\n      <td>WB 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PKA C-\u03b1 Antibody</td>\n      <td>cell signaling: #4782</td>\n      <td></td>\n      <td>WB 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>SQSTM1/p62 (D5E2) Rabbit mAb</td>\n      <td>cell signaling: #8025</td>\n      <td></td>\n      <td>WB 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Phospho-PKA Substrate (RRXS*/T*) (100G7E) Rabbit mAb</td>\n      <td>cell signaling: #9624</td>\n      <td></td>\n      <td>WB 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>GFP Tag Polyclonal Antibody</td>\n      <td>Invitrogen: A11122</td>\n      <td></td>\n      <td>WB 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti-Actin(c-11)</td>\n      <td>Santa Cruz Biotechnology: sc-1615</td>\n      <td></td>\n      <td>WB 1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>ANTI-FLAG antibody produced in rabbit</td>\n      <td>Sigma: F7425</td>\n      <td></td>\n      <td>WB 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal ANTI-FLAG M2 antibody produced in mouse</td>\n      <td>Sigma: F3165</td>\n      <td></td>\n      <td>WB 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit IgG, HRP-linked Antibody</td>\n      <td>cell signaling: #7074</td>\n      <td></td>\n      <td>WB 1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>chicken anti-goat IgG-HRP</td>\n      <td>Santa Cruz Biotechnology: sc-516086</td>\n      <td></td>\n      <td>WB 1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Peroxidase AffiniPure Donkey Anti-Mouse IgG (H+L)</td>\n      <td>Jackson Immuno Research: 715-035-151</td>\n      <td></td>\n      <td>WB 1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Isolectin GS-IB4 From Griffonia simplicifolia, Alexa Fluor 488 Conjugate</td>\n      <td>Thermo Fisher: I21411</td>\n      <td></td>\n      <td>IF 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse Endocan/ESM-1 Antibody</td>\n      <td>R and D: AF1999</td>\n      <td></td>\n      <td>IF 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-Goat IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 555</td>\n      <td>Thermo Fisher: A21432</td>\n      <td></td>\n      <td>IF 1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-ERG</td>\n      <td>Abcam: ab92513</td>\n      <td></td>\n      <td>IF 1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-cleaved caspase 3</td>\n      <td>R and D: AF835</td>\n      <td></td>\n      <td>IF 1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat anti-CD31</td>\n      <td>BD Pharmingen: BD553370</td>\n      <td></td>\n      <td>IF 1:200 IP</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-Rat IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>\n      <td>Thermo Fisher: A21208</td>\n      <td></td>\n      <td>IF 1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-Rabbit IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 555</td>\n      <td>Thermo Fisher: A31572</td>\n      <td></td>\n      <td>IF 1:500</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Q5 Site-Directed Mutagenesis Kit</td>\n      <td>NEB: E0554S</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Lenti-X p24 Rapid Titer Kit</td>\n      <td>Clontech:632200</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Pierce Silver Stain Kit</td>\n      <td>Thermo Fisher:24600</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Click-iT EdU Alexa Fluor 647 Imaging Kit</td>\n      <td>Thermo fishier:C10340</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>X-tremeGENE HP DNA transfection reagent</td>\n      <td>Roche</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>6-cHe-ATP\u03b3S</td>\n      <td>Biolog:C127</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sp-8-CPT-cAMPS</td>\n      <td>Biolog:C012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>6-bnz-cAMP</td>\n      <td>Biolog:C009</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>image J</td>\n      <td>image J</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 7</td>\n      <td>GraphPad Prism 7</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Recombinant Protein G Agarose</td>\n      <td>Invitrogen</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>sheep anti-Rat IgG-coupled Dynabeads</td>\n      <td>Invitrogen</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nHuman Umbilical Vein Endothelial Cells (HUVECs) were freshly isolated (or purchased from Promocell) and cultured in Endothelial Cell Growth Medium (Ready-to-use) (Promocell), passage 3 to 5 were used for experiments. HEK293T cells were cultured in Dulbecco's Modified Eagle Medium (DMEM, Thermo Fisher) with 10% Fetal Bovine Serum (FBS, Thermo Fisher) and 50 U/ml penicillin and 50 mg/ml streptomycin (Thermo Fisher) in 5% CO2 at 37\u00b0C.\n\n### Plasmid construction\n\nLentivirus vector pRRLsin.PPT.CMV.flag.MCS and pRRLsin.PPT.CMV.GFP.MCS were generated by resctrictional cloning of a sequence coding flag-tag/GFP-tag into the pRRLsin.PPT.CMV.MCS vector at XbaI and XmaI restriction sites. PKAC\u03b1 gene from mouse, ANKRD40 and ATG5 were amplified from total RNA extracted from HUVECs and cloned into the pRRLsin.PPT.CMV.flag/GFP.MCS vector. pECE-M2-PPP1R12A wt, EGFPC1-huNFATc1EE-WT, pDESTmycDDX17, pMRX-IP/SECFP-hATG16L1 were purchased from Addgene. pDESTmycDDX17, pMRX-IP/SECFP-hATG16L1 and subcloned to vector pRRLsin.PPT.CMV.flag.MCS. PKAC\u03b1\u00a0M120G, ATG16L1\u03b1 S268A, ATG16L1\u03b2 S269A, ATG16L1\u03b2 S287A, ATG16L1\u03b2 S269A and S287A were generated by site-directed mutagenesis using Q5 Site-Directed Mutagenesis Kit (NEB). ATG5, ATG16L1\u03b1, ATG16L1\u03b1 S268D, ATG16L1\u03b2, ATG16L1\u03b2 S269D were cloned into the pRRLsin.PPT.CMV.GFP.MCS vector. pLKO.1-TRC cloning shRNA vector (addgene) was used to clone PKACa shRNA constructs targeting sequence: TAGATCTCACCAAGCGCTTTG and TCAAGGACAACTCAAACTTAT.\n\n### Lentivirus production and infection\n\nFor lentivirus production, HEK293T cells, seeded in 150 mm dishes, were transfected with flag-tagged or GFP-tagged constructs, psPAX2 and pMD2.G using X-tremeGENE HP (Roche) as transfection reagent. Medium was changed 12\u201316 hr after transfection. Lentivirus-containing medium was collected in 24\u201348 hr afterwards and filtered through 0.45 filters. Lentivius titers were determined with Lenti-X p24 Rapid Titer Kit (Clontech). To infect HUVEC, lentivirus (MOI 20\u201350) and polybrene (final concentration 8 \u03bcg/ml) was added to cells for 18\u201322 hr, and then the cells were washed with PBS and replaced the medium with fresh EGM2.\n\n### Protein extraction and western blot\n\nCells were lysed in RIPA buffer contained protease inhibitor cocktail and PhosSTOP (Roche). Protein concentrations were measured by Pierce BCA Protein Assay Kit. Samples were further diluted with SDS-loading buffer and SDS-PAGE was performed using NuPAGE 4\u201312% Bis-Tris Protein Gels (Invitrogen). Proteins were tranferred to nitrocellulose membrane with iBlot 2 Dry Blotting System (Thermo Fisher) or to PVDF membranes by wet blotting. Membranes were blocked with 5% nonfat milk in TBST and primary antibodies were incubated overnight at 4\u00b0C or 1.5 hr at room temperature. HRP-conjugated secondary antibodies were diluted and incubated 1 hr at room temperature. SuperSignal West Pico Chemiluminescent Substrate (Thermo Fisher) was used for imaging. Following antibodies were used: rabbit anti-thiophosphate ester (ab92570,1:5000) was from Abcam, goat anti-\u03b2-actin (sc-1615,1:2000) antibody, chicken anti-goat IgG-HRP (sc-516086,1:5000) were from Santa Cruz Biotechnology, rabbit anti-GAPDH (#2118,1:1000), rabbit anti-PKACa (#4782,1:1000), rabbit anti-ATG16L1 (#8089,1:1000), rabbit anti-p62 (#8025,1:1000), rabbit anti-LC3 (#3868,1:1000) antibodies and anti-rabbit IgG, HRP-linked antibody (#7074,1:2000) were from Cell Signaling, rabbit anti-flag (F7425,1:1000) and mouse anti-flag (F3165,1:1000) were from Sigma and rabbit anti-GFP (A11122,1:1000) was from Invitrogen. Peroxidase affinipure donkey anti-mouse IgG (715-035-151,1:2000) was from Jackson Immuno Research.\n\n### Chemical genetic screen and validation of PKA substrates\n\nHUVECs (6 10cm-dishes each containing 1 \u00d7 106 cells) were infected with lentivirus encoding either flag-PKAC\u03b1 WT (as negative control) or flag-PKAC\u03b1 M120G. 48 hr after infection, cells were stimulated with Sp-8-CPT-cAMPS (Biolog) for 10 min, then lysed in kinase lysis buffer (1% NP40, 142 mM NaCl, 25 mM Tris-HCl (pH 7.5), 5 mM \u03b2-glycerophosphate, 2 mM dithiothreitol, 0.1 mM Na3VO4, 10 mM MgCl2) with protease inhibitor cocktail on ice for 20 min and spun (16,000g \u00d7 10 min) to remove cell debries. 3.5 mM GTP and 350 \u03bcM 6-cHe-ATP\u03b3S (Biolog) were added to the lysates. After 30 min incubation at 30\u00b0C, 2.5 mM p-Nitrobenzyl mesylate (PNBM, Abcam) was added and the reaction was incubated for additional 2 hr at room temperature. PNBM was removed by Zeba Spin Desalting Columns, 7K MWCO (Thermo Fisher) and samples were washed with IP buffer (1% NP40, 150 mM NaCl, 50 mM Tris-HCl (pH 7.5), 0.5% sodium deoxycholate). The protein fractions were precleared by incubation with Recombinant Protein G Agarose for one hour at 4\u00b0C. The precleared samples were then incubated with anti-thiophosphate ester antibody (51-8; Abcam) coupled to Recombinant Protein G Agarose coupled gently rocking overnight at 4\u00b0C. The agarose beads were washed four times with IP buffer. 1/30 of the washed beads was boiled in SDS sample loading buffer for western blot detection or silver staining. The rest samples were used for mass spectrometry analyze.\n\nFor validation of the identified substrates, 293 T cells (1.5 \u00d7 106 on a 6 cm dish) were transfected with 0.5 \u03bcg pRRL PKAC\u03b1 WT or pRRL PKAC\u03b1\u00a0M120G and 1.5 \u03bcg of indicated candidate substrate using X-tremeGENE HP DNA transfection reagent (Roche). 30 hr after transfection, cells were stimulated with Sp-8-CPT-cAMPS (Biolog) for 10 min, lysated and treated as described above.\n\n### Silver staining\n\nSilver staining was performed using Pierce Silver Stain Kit (Thermo Fisher,24600) according to the manufacturer\u2019s protocol. Briefly, the SDS-page gel was washed in ultrapure water and fixed by fixing solution\u00a0(30% ethanol,10% acetic acid) for 30 min. After incubating the gel in sensitizer working solution\u00a0(provided in the kit) for 1 min, silver stain enhancer\u00a0(provided in the kit) was added for another 5 min. Subsequently, the gel was incubated with developer working solution\u00a0(provided in the kit) for 2\u20133 min, before stopping the reaction with stop solution\u00a0(provided in the kit).\n\n### Mass spectrometry to identify new PKA substrates and phosphorylation sites\n\nFor mass spectrometric analysis to identify new PKA substrates, samples were prepared by chemical genetical approach as described above, each sample was run on a stacking SDS-PAGE collecting all proteins in a single band. After coomassie blue staining, the minced gel pieces were digested with trypsin based on Shevchenko et al. (2006) in an automated fashion using a PAL robot (Axel Semrau/CTC Analytics). Samples were measured on an LTQ Orbitrap VELOS mass spectrometer (Thermo Fisher) connected to a Proxeon nano-LC system (Thermo Fisher). Five microliters of the sample was loaded on a nano-LC column (0.074 \u00d7 250 mm, 3 mm Reprosil C18; Dr. Maisch) and separated on a 155 min gradient (4%\u201376% acetonitrile) at a flow rate of 0.25 \u00b5l/min and ionized using a Proxeon ion source. Mass spectrometric acquisition was done at a resolution of 60,000 with a scan range of 200\u20131,700 m/z in FTMS mode selecting the top 20 peaks for collision-induced dissociation fragmentation. Tandem mass spectrometric scans were measured in ion-trap mode with an isolation width of 2 m/z and a normalized collision energy of 40. Dynamic exclusion was set to 60 s. For data analysis, the MaxQuant software package version 1.5.2.8 (Cox and Mann, 2008) was used. Carbamidomethylation on cysteine was set as a fixed modification and oxidized methionine, acetylated N-termini and phosphorylation as variable modifications. An FDR of 0.01 was applied for peptides and proteins and the Andromeda search (Cox et al., 2011) was performed using a mouse Uniprot database (August 2014). MS intensities were normalized by the MaxLFQ algorithm implemented in MaxQuant (Cox et al., 2014). MaxLFQ-normalized intensities among the replicates of the groups to be related were used for comparison. For downstream analysis R was used to calculate fold changes and t-statistics.\n\nFor mass spectrometric analysis to identify phosphorylatin sites of ATG16L1, purified thiophosphorylated ATG16L1 proteins on beads were washed 3 times with 800 \u00b5l IP buffer followed by three times washing with 800 \u00b5l digestion buffer (20 mM Tris pH 8.0, 2 mM CaCl2) and dried. The washed beads were resuspended in 150 \u00b5l digestion buffer and incubated for 4 hr with 1 \u00b5g trypsin (Promega, catnr: V5111) at 37 \u00b0C. Beads were removed, another 1 \u00b5g of trypsin was added and proteins were further digested overnight at 37 \u00b0C. Peptides were acidified with 1% TFA and purified on Omix C18 tips (Agilent, catnr. A57003100), dried and re-dissolved in 20 \u00b5l loading solvent (0.1% TFA in water/acetonitrile (98:2, v/v)). Five microliters of the peptide mixture was injected for LC-MS/MS analysis on an Ultimate 3000 RSLC nano LC (Thermo, Bremen, Germany) in-line connected to a Q Exactive mass spectrometer (Thermo). Trapping was performed at 10 \u03bcl/min for 4 min in loading solvent on a 100 \u03bcm internal diameter (I.D.)\u00d720 mm trapping column (5 \u03bcm beads, C18 Reprosil-HD, Dr. Maisch, Germany) and the sample was loaded on a reverse-phase column (made in-house, 75 \u00b5m I.D. x 220 mm, 1.9 \u00b5m. Peptides were eluted by a linear increase from 2% to 55% solvent B (0.08% formic acid in water/acetonitrile (2:8, v/v)) over 120 min at a constant flow rate of 300 nl/min. The mass spectrometer was operated in data-dependent mode, automatically switching between MS and MS/MS acquisition. Full-scan MS spectra (400\u20132000 m/z) were acquired at a resolution of 70,000 in the orbitrap analyzer after accumulation to a target value of 3,000,000. The five most intense ions above a threshold value of 17,500 were isolated (window of 2.0 Th) for fragmentation at a normalized collision energy of 25% after filling the trap at a target value of 50,000 for maximum 80 ms. MS/MS spectra (200\u20132000 m/z) were acquired at a resolution of 17,500 in the orbitrap analyzer. Raw LC-MS/MS data files were searched against the human proteins in the Uniprot/Swiss-Prot database (database version of September 2017 containing 20,237 human sequences, downloaded from www.uniprot.org). The mass tolerance for precursor and fragment ions were set to 4.5 and 20 ppm, respectively, during the main search. Enzyme specificity was set as C-terminal to arginine and lysine, also allowing cleavage at proline bonds with a maximum of two missed cleavages. Variable modifications were set to oxidation of methionine residues, acetylation of protein N-termini, phosphorylation and thiophosphorylation of serine, threonine and tyrosine residues. The minimum score for modified peptides was set to 40. The S-lens RF level was set at 50 and we excluded precursor ions with single, unassigned and charge states above five from fragmentation selection.\n\n### Peptide arrays, Peptide SPOT assay of ATG16L1 phosphorylation sites screening\n\nAutomatic peptide SPOT synthesis was carried out as described previously (Hundsrucker et al., 2006; Hundsrucker et al., 2010; Maass et al., 2015; Stefan et al., 2007). Fmoc-protected amino acids (Intavis) and amino-modified acid-stable cellulose membranes with PEG-spacers (Intavis) were used for peptide spots synthesis on an Intavis ResPep-SL device.\n\nFor phosphorylation of the peptides by PKA (Maass et al., 2015), the membranes were activated in ethanol, blocked in blocking buffer (5% milk in TBS-T: Tris-HCl, 10 mM; NaCl, 150 mM; Tween 20, 0.05%; pH 7.4) for 3 hr at room temperature, and washed twice with incubation buffer (Tris-HCl, 50 mM; MgCl2, 5 mM; ATP, 100 \u00b5M). His-tagged recombinant catalytic subunits (vector pET46) were purified from E. coli (strain Rosetta D3) as described (Maass et al., 2015; Sch\u00e4fer et al., 2013). The membranes were incubated with the recombinant protein (1 nM) in incubation buffer (1 hr, 30\u00b0C), washed three times with TBS-T, and phosphorylated serines were detected with PKA phosphosubstrate antibody directed against the consensus site RRX p(S/T) (Cell Signaling Technology, 100G7E, rabbit mAB #9624) in blocking buffer overnight at 4\u00b0C (Christian et al., 2011). The membranes were washed three times with TBS-T, and a secondary horseradish peroxidase (HRP)-coupled donkey anti-rabbit antibody (#711-036-153; Jackson Immuno Research) was added (3 hr, RT). After three washs with TBS-T, an ECL system (Immobilon Western substrate, Merck Millipore) and an Odyssey FC device (Li-Cor ) was used for visualizing phosphorylated serines.\n\n### Animal procedures\n\nAll animal experimental procedures were approved by the Institutional Animal Care and Research Advisory Committee of the University of Leuven and performed according to the European guidelines. Following mouse strains were used: Prkar1atm2Gsm (Willis et al., 2011), Tg(Cdh5-cre/ERT2)1Rha (Wang et al., 2010) and ATG5flox/flox (Hara et al., 2006). All animals used in the experiments were of mixed N/FVB x C57/Bl6 background. For chloroquine rescue retinal angiogenesis experiment, pups were intraperitoneally injected with 50 \u03bcl of 1 mg/ml tamoxifen from postnatal day one (P1) to P3, and 100 \u03bcl of 1.25 mg/ml chloroquine or PBS from P1 to P5. Mice were euthanized at P6, and dissection and staining of the retinas were performed as described below. For ATG5 deletion in endothelial cells rescue retinal angiogenesis experiment and apoptosis assay in retinal endothelial cells, pups were intraperitoneally injected with 50 \u03bcl of 1 mg/ml tamoxifen from P1 to P3 and euthanized at P6. For proliferation assay in retinal endothelial cells, 50 \u03bcl of 1 mg/ml EdU (Thermo fishier,C10340) were intraperitoneally injected 2 hr before euthanizing the mice at P6. For endothelial cells isolation, pups were intraperitoneally injected with 75 \u03bcl of 1 mg/ml tamoxifen daily from P7 until P10 and the mice were euthanized at 8 weeks and endothelial cells were isolated as described below.\n\n### Retinal angiogenesis assay\n\nTo analyse retinal angiogenesis, the procedures of isolation and staining of the retinas were performed as published (Pitulescu et al., 2010). Briefly, retinas were dissected in PBS and blocked/permeabilized in retina blocking buffer (1% BSA and 0.3% Triton X-100 in PBS) for 1\u20132 hr at room temperature. Alexa Fluor 488 conjugated Isolectin GS-IB4\u00a0(Invitrogen) diluted in Pblec solution (1 mM MgCl2, 1 mM CaCl2, 0.1 mM MnCl2 and 1% Triton X-100 in PBS) was added to visualize whole-retina vasculature by incubating overnight at 4\u00b0C, followed by staining for ESM1 (primary goat anti-ESM1 antibody; R and D Systems). After mounting, images of retinas were taken using a Leica SPE confocal microscope equipped with a HC PL APO 20X/0.75 IMM CORR CS2 objective or Leica SP8 confocal microscope equipped with a HCX IRAPO L 25X/0.95 W objective. Images were taken at room temperature using Leica LAS X software and processed with image J software.\n\n### Retinal endothelial proliferation and apoptosis assay\n\nTo perform endothlial proliferation and apoptosis assays, mouse eyes were collected at P6 and fixed for 30 min at room temperature with 4% PFA. Retinas were dissected in PBS and blocked/permeabilized in 1% BSA, 50 \u03bcg/ml digitonin in PBS, primary antibodies (rat anti-CD31,BD553370; rabbit anti-ERG,ab92513; rabbit anti-Cleaved caspase 3,AF835) were incubated overnight at 4\u00b0C and secondary antibodies (Thermo fisher) were incubated for 2 hr at room temperature. Both antibodies were diluted in1% BSA, 2% donkey serum, 50 \u03bcg/ml digitonin in PBS. The Click-iT Edu cell proliferation kit (C10340) was used to visualize proliferating endothelial cells. After mounting, images of retinas were taken using a Leica SPE confocal microscope equipped with a ACS APO 40X/1.15 oil CS objective or Leica SP8 confocal microscope equipped with a HCX IRAPO L 25X/0.95 W objective. Images were taken at room temperature using Leica LAS X software and processed with image J software.\n\n### Endothelial cell isolation from liver or lung\n\nLivers or lung lobes were collected in dry 10 cm dishes and minced finely with blades for one minute, and then incubated in 25 ml of pre-warmed Dulbecco modified Eagle medium (4.5 g/L glucose with L-glutamine) containing 2 mg/mL collagenase (Invitrogen) in 50 ml tubes, gently shaking for 45 min at 37\u00b0C. Suspensions were passed through a 70 \u03bcm cell strainer (VWR) and cells were spun down at 400 g for 8 min at 4\u00b0C. Pellets were resuspended in 10 ml Dulbecco modified Eagle medium containing 10% FBS, 50 U/ml penicillin and 50 \u03bcg/ml streptomycin, passed through 40 \u03bcm Nylon cell strainer (BD Falcon, Cat. No. 352340) and centrifuged at 400 g for 8 min at 4\u00b0C. Cells were resuspended in cold DPBS (1 ml/lung and 2 ml/liver), added to sheep anti-Rat IgG-coupled Dynabeads (Invitrogen) pre-incubated with purified Rat Anti-Mouse CD31 (BD Pharmingen) and incubated at 4\u00b0C for 20 min. The beads were separated using a magnetic particle concentrator (Dynal MPC-S; Invitrogen) and washed with cold DPBS with 0.1% BSA. This washing step was repeated five times after which cells were lysed in RIPA buffer for Western Blotting.\n\n### Statistical analysis\n\nStatistical analyses were performed using GraphPad Prism 7. The one-way ANOVA was used to compare more than two experimental groups.\n",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "201857b6-fc64-4821-988b-9b4f687e9d8c",
+      "submission_id": "57e980b8-ecac-4a45-b621-c7af83195877",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gou Young Koh, Institute of Basic Science and Korea Advanced Institute of Science and Technology (KAIST) Republic of Korea\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.46380.sa1](https://doi.org/10.7554/eLife.46380.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Endothelial PKA targets ATG16L1 to regulate angiogenesis by limiting autophagy\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Gou Young Koh as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Didier Stainier as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe comments of all three reviewers are in good agreement. While the reviewers found this work to be of high interest, they raised minor concerns about the strength of the conclusions that can be drawn at this stage. The authors are required to carefully address all comments point-by-point in a data-driven manner or with further analyses. Specifically, the present data fail to fully link the angiogenic morphogenesis with the endothelial cell autophagy. Therefore, additional work to detect the changes in the endothelial cell autophagy by performing immunoblotting and/or immunohistochemical experiments.\n\nReviewer #1:\n\nVascular sprouting is regulated positively and negatively by various signals, including the VEGFA-VEGFR2 and the Dll4-Notch signals. The authors of the present manuscript previously showed that the endothelial PKA negatively regulates vascular sprouting by suppressing tip cell formation, independently of the Notch signal (Nedvetsky et al., 2016). As a follow-up study of this seminal work, Zhao et al. identified autophagy-related-protein-16-like 1 (ATG16L1) as a substrate of endothelial PKA (Figure 1). Indeed, PKA phosphorylated ATG16L1alpha at S268 and ATGT16L1beta at S269 (Figure 2), and facilitated their protein degradation (Figure 3), which may lead to reduced endothelial autophagy. Accordingly, PKA deficiency stabilized ATG16L1, thereby increasing levels of the positive autophagy marker LC3 II, and reducing the negative autophagy marker p62 in cultured HUVECs (Figure 3). Finally, the authors showed that autophagy inhibition by chloroquine or endothelial ATG5 knockout partially rescued retinal vascular hyper-sprouting caused by PKA deficiency (Figure 4).\n\nThe overall quality of the chemical genetics screen and biochemical analyses sufficiently supports the notion that PKA mediates phosphorylation and degradation of ATG16L1. On the other hand, additional in vivo data are desirable to more firmly correlate endothelial autophagy with the control of angiogenesis. For example, detection of autophagy markers, such as LC3, in developing retinal vessels of WT and mutant mice shown in Figure 4 will strengthen the authors' claims.\n\nReviewer #2:\n\nThis is a well written and well organized article that uses an innovative chemical biology screen to identify new protein kinase A substrates including the ATG16L regulator of autophagy. Clear biochemical and cellular evidence is presented showing that phosphorylation of Ser268 on the ATG16La isoform and Ser 269 on the ATG16Lb isoforms drive degradation of the protein. These studies are followed up by some well-reasoned cell based studies on a variety of defined genetic backgrounds. This allows the authors to propose that endothelial PKA activity restricts active sprouting of blood vessels in the retina by reducing phosphorylation dependent role of ATG16L1 isoforms in endothelial autophagy. Overall, this is a nice report that provides a succinct message. I feel that it would be appropriate for the authors to expand on some of their findings as the current work could be considered a minimal publishable unit. Although the data is of high quality and necessary rigor some of the work could be presented in a more complete and convincing manner. Specific criticisms are listed below.\n\n1) The authors convincingly show that phosphorylation of Ser268 on the ATG16La isoform and Ser 269 on the ATG16Lb isoforms drive degradation of the protein. All of this phosphorylation is believed to proceed through PKA. However, it seems very likely that other kinases can modify this basophilic site. Experiments should be incorporated that address this issue.\n\n2) The workflow for experiments in Figure 1 is excellent, but the data could be more convincingly presented. For example, Figures 1B and 1C should be enlarged to show the data more clearly and molecular weight markers should be indicated on each gel.\n\n3) Are their physiological agonists that can be used to recapitulate the experiments in Figure 3?\n\n4) What are the additional spots on the peptide arrays in Figure 2A? Focusing in on the relevant information may be advisable.\n\n5) The Mass spec traces in Figures 2E and 2F are hard to see. Need to be enlarged and enhanced to emphasize the important data.\n\n6) What happens in the experiments in Figure 3 when phosphosite mimics (Asp or Glu) are introduced to positions 268 on ATG16La and Ser 269 on ATG16Lb. Are these forms more labile or are refractory to the process?\n\n7) The retina images in Supplementary Figure 3 provide an appreciated context to the study and should be incorporated into the body of the text.\n\nReviewer #3:\n\nThe study by Zhao et al. provides mechanistic insights into regulation of angiogenesis by cAMP-dependent protein kinase A (PKA) through inhibition of endothelial autophagy. The authors employed and optimized a chemical genetic screen to find a substrate of PKA in human umbilical vein endothelial cells (HUVECs), and identified ATG16L1 (Autophagy related 16 Like 1) as a novel target of endothelial PKA. They demonstrated that PKA regulates autophagy in ECs through phosphorylation-dependent degradation of ATG16L1. Furthermore, they showed that genetic and pharmacological inhibition of autophagy partially rescue the hyper-sprouting vascular phenotype of PKA-deficient mice. Overall, this study unravels a role of endothelial PKA in regulation of autophagy in ECs and introduces a valuable tool for identifying kinase substrates in ECs. Therefore, I consider this work suitable for publication in eLife after addressing following points.\n\n1) The authors should provide explanations on Prkar1a gene and meaning of 'dnPKA' for readers who are not familiar with these molecules, as they did in a previous study (Nedvetsky et al., 2016).\n\n\"To study the role of PKA in vascular development we inhibited PKA in endothelial cells using knock-in mice carrying a single floxed dominant-negative Prkar1a allele (dnPKA; Figure 1A) knocked into the genomic Prkar1a locus allowing tissue-specific inhibition of PKA (Willis et al., 2011). The regulatory PRKAR1A subunit of PKA is an endogenous inhibitor of PKA, which binds and keeps the catalytic subunits inactive under low cAMP levels (Kumon et al., 1970; Tao et al., 1970).\"\n\n2) In Figure 3G, the authors showed that knockdown of PKA results in accumulation of ATG16L1 protein, thereby increasing a positive autophagy marker, LC3II and reducing a negative autophagy marker, p62 in HUVECs. They further showed increased ATG16L1 protein in isolated ECs from dnPKAiEC mice in Figure 3H. However, the authors should provide evidences of changes in vascular autophagy in dnPKAiEC and dnPKAiEC; ATG5ECKO mice, such as results of LC3 or p62 immunoblot or immunostaining.\n\n3) In Figure 4, the authors showed vascular hypersprouting in PKA-deficient mice and partial rescue of this phenotype by autophagy inhibition, comparing vascular area and ESM1-positive area of retina from each groups. Detailed analyses and quantitation of vascular features such as radial lengths, number of sprouts, and ratio of proliferating ECs are required.\n\n4) In Figure 4, what is an underlying mechanism for normalization of hypersprouting vascular phenotype of PKA-deficient mice by autophagy inhibition? Does inhibition of autophagy decrease proliferation, or induce apoptosis of ECs?\n",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b33eb094-6d73-4d43-bdc4-b27530f93e46",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C1",
+      "claim": "PKA activity promotes vessel maturation in endothelial cells",
+      "claim_type": "EXPLICIT",
+      "source": "In endothelial cells PKA activity promotes vessel maturation and limits tip cell formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known effect of PKA in endothelial cells",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "1dfef4a6-05f9-4705-bab3-6e0dbbc49614",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C2",
+      "claim": "PKA activity limits tip cell formation in endothelial cells",
+      "claim_type": "EXPLICIT",
+      "source": "In endothelial cells PKA activity promotes vessel maturation and limits tip cell formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known effect of PKA in endothelial cells",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "28fd6fcb-a92e-4a6a-a518-5d227f865b8d",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C3",
+      "claim": "ATG16L1 is a regulator of autophagy",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst several candidates, we identified ATG16L1, a regulator of autophagy, as novel target of PKA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract describing ATG16L1's known function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "7ad2966a-6db7-4af8-b226-cc909baa6a35",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C4",
+      "claim": "ATG16L1 is a novel target of PKA",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst several candidates, we identified ATG16L1, a regulator of autophagy, as novel target of PKA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the chemical genetic screen described in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "00610962-533e-450c-a0d5-ce463f5ea6c4",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C5",
+      "claim": "PKA phosphorylates ATG16L1\u03b1 at Ser268",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical validation, mass spectrometry and peptide spot arrays revealed that PKA phosphorylates ATG16L1\u03b1 at Ser268 and ATG16L1\u03b2 at Ser269, driving phosphorylation-dependent degradation of ATG16L1 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experimental approaches including mass spectrometry and peptide arrays shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "a748583d-acfd-48c3-8b6f-4bb517c34ce8",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C6",
+      "claim": "PKA phosphorylates ATG16L1\u03b2 at Ser269",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical validation, mass spectrometry and peptide spot arrays revealed that PKA phosphorylates ATG16L1\u03b1 at Ser268 and ATG16L1\u03b2 at Ser269, driving phosphorylation-dependent degradation of ATG16L1 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experimental approaches including mass spectrometry and peptide arrays shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "213d665b-9757-45f0-a5fa-9d52c132f9da",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C7",
+      "claim": "Phosphorylation of ATG16L1 by PKA drives phosphorylation-dependent degradation of ATG16L1 protein",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical validation, mass spectrometry and peptide spot arrays revealed that PKA phosphorylates ATG16L1\u03b1 at Ser268 and ATG16L1\u03b2 at Ser269, driving phosphorylation-dependent degradation of ATG16L1 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cycloheximide chase experiments shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "0739f94f-9eab-4a1c-9e4d-e441a2ec17e5",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C8",
+      "claim": "Reducing PKA activity increased ATG16L1 protein levels",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing PKA activity increased ATG16L1 protein levels and endothelial autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by western blot data in Figure 3E and 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "746d6b06-1cef-4954-8a37-e675aa208136",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C9",
+      "claim": "Reducing PKA activity increased endothelial autophagy",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing PKA activity increased ATG16L1 protein levels and endothelial autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by increased LC3II and decreased p62 levels shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "af28ddf7-b6d0-4ff8-b606-58e7ff5af3c4",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C10",
+      "claim": "Autophagy inhibition partially rescues vascular hypersprouting caused by PKA deficiency in mice",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse in vivo genetics and pharmacological experiments demonstrated that autophagy inhibition partially rescues vascular hypersprouting caused by PKA deficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by genetic ATG5 deletion and chloroquine treatment experiments shown in Figures 4 and Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "7d7dcfb0-d397-43dc-b5b0-56d44d64d6f9",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C11",
+      "claim": "Endothelial PKA activity mediates a critical switch from active sprouting to quiescence through phosphorylation of ATG16L1",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results indicate that endothelial PKA activity mediates a critical switch from active sprouting to quiescence in part through phosphorylation of ATG16L1, which in turn reduces endothelial autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental data presented in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "e1ed6af7-1c17-42ee-9924-cf8e04c31d80",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C12",
+      "claim": "Phosphorylation of ATG16L1 by PKA reduces endothelial autophagy",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results indicate that endothelial PKA activity mediates a critical switch from active sprouting to quiescence in part through phosphorylation of ATG16L1, which in turn reduces endothelial autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing PKA activation decreases LC3II and increases p62 (Figure 3F)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "720485c0-c46d-40e8-bf12-f861d2b223de",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C13",
+      "claim": "Blood vessels are crucial for tissue growth and physiology in vertebrates",
+      "claim_type": "EXPLICIT",
+      "source": "Blood vessels are crucial for tissue growth and physiology in vertebrates since they are the pipelines for oxygen and nutrients supply and for immune cell distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about vascular function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "dd5c54a6-f1d1-4d62-a964-6b76e5a00150",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C14",
+      "claim": "Inadequate vessel formation causes, accompanies or aggravates many disease processes including myocardial infarction, stroke, cancer, and inflammatory disorders",
+      "claim_type": "EXPLICIT",
+      "source": "Inadequate vessel formation and maintenance as well as abnormal vascular remodeling cause, accompany or aggravate many disease processes including myocardial infarction, stroke, cancer, and inflammatory disorders (Geudens and Gerhardt, 2011; Potente et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "275691a8-0b02-4db1-860b-0ad965e7134c",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C15",
+      "claim": "VEGF initiates angiogenesis through activating VEGF receptor 2 (VEGFR2)",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas VEGF initiates angiogenesis through activating VEGF receptor 2 (VEGFR2), thereby guiding angiogenic sprouting and tip cell formation as well as stalk cell proliferation (Ferrara et al., 2003; Gerhardt et al., 2003), Notch and its ligand delta-like 4 (DLL4) limit tip cell formation and angiogenic sprouting (Hellstr\u00f6m et al., 2007; Leslie et al., 2007; Lobov et al., 2007; Suchting et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "fe0abefb-f5bc-41b1-9fe3-07bf07612fc6",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C16",
+      "claim": "Notch and its ligand delta-like 4 (DLL4) limit tip cell formation and angiogenic sprouting",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas VEGF initiates angiogenesis through activating VEGF receptor 2 (VEGFR2), thereby guiding angiogenic sprouting and tip cell formation as well as stalk cell proliferation (Ferrara et al., 2003; Gerhardt et al., 2003), Notch and its ligand delta-like 4 (DLL4) limit tip cell formation and angiogenic sprouting (Hellstr\u00f6m et al., 2007; Leslie et al., 2007; Lobov et al., 2007; Suchting et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "02698cd5-5e05-4916-8c5b-639b649da2c0",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C17",
+      "claim": "Inhibition of endothelial PKA results in hypersprouting and increased numbers of tip cells",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of endothelial PKA results in hypersprouting and increased numbers of tip cells, indicating that PKA regulates the transition from sprouting to quiescent vessels (Nedvetsky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "7099a9b3-0288-478b-9cb6-5c80cbc2b76c",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C18",
+      "claim": "6-cHe-ATP\u03b3S is the best thiophosphodonor for AS-PKAC\u03b1 substrates in HUVEC lysates",
+      "claim_type": "EXPLICIT",
+      "source": "Testing seven different variants of N6-substituted bulky ATP\u03b3S analogues, we identified 6-cHe-ATP\u03b3S as the best thiophosphodonor for AS-PKAC\u03b1 substrates in HUVEC lysates (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental testing shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "2f3be2dd-c0a9-4879-b2ce-160ff43e8dcb",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C19",
+      "claim": "The chemical genetic screen identified ninety-seven proteins in both experiments",
+      "claim_type": "EXPLICIT",
+      "source": "The ninety-seven proteins identified in both experiments (Table 1\u2014source data 1) included several known PKA substrates such as NFATC1 (Niswender et al., 2002), VASP (Anton et al., 2014; Butt et al., 1994; Profirovic et al., 2005), PRKAR2A and PRKAR2B (Manni et al., 2008) indicating that the chemical genetic screen worked well to identify PKA substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of the mass spectrometry analysis of the chemical genetic screen",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "6a37dd8e-f77c-4392-91b5-bb6ba2b6b640",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C20",
+      "claim": "The chemical genetic screen identified known PKA substrates including NFATC1, VASP, PRKAR2A and PRKAR2B",
+      "claim_type": "EXPLICIT",
+      "source": "The ninety-seven proteins identified in both experiments (Table 1\u2014source data 1) included several known PKA substrates such as NFATC1 (Niswender et al., 2002), VASP (Anton et al., 2014; Butt et al., 1994; Profirovic et al., 2005), PRKAR2A and PRKAR2B (Manni et al., 2008) indicating that the chemical genetic screen worked well to identify PKA substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This validates the screen by identifying known substrates, with citations to previous literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "12956598-08fd-45da-8c28-69296f6e1793",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C21",
+      "claim": "Four out of five selected candidate proteins were confirmed to be thiophosphorylated by AS-PKAC\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "Five selected new candidate proteins (PPP1R12C, ATG16L1\u03b1, DDX17, ANKRD40 and ATG5) out of ninety-seven proteins were tested; four of these five proteins were confirmed to be thiophosphorylated by AS-PKAC\u03b1, indicating that they are indeed direct substrates of AS-PKAC\u03b1 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by validation experiments shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "2f62db77-9880-4fb5-8587-a9cf67226792",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C22",
+      "claim": "ATG5 was not thiophosphorylated by AS-PKAC\u03b1 in the validation of the screen",
+      "claim_type": "EXPLICIT",
+      "source": "Only ATG5 was not thiophosphorylated by AS-PKAC\u03b1 in the validation of the screen (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the validation experiments in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "11a415bf-9e8a-43fc-8b85-8b7d5697b497",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C23",
+      "claim": "Bioinformatic analysis of ATG5 amino acids sequence failed to identify a consensus PKA substrate motif",
+      "claim_type": "EXPLICIT",
+      "source": "Bioinformatic analysis of ATG5 amino acids sequence also failed to identify a consensus PKA substrate motif (R-R/K-X-S/T;K/R-X1-2-S/T) (Kennelly and Krebs, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis using known PKA consensus motifs from the literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "06ea8ab1-8c0e-4159-a404-bf057093a490",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C24",
+      "claim": "ATG5 directly binds to ATG16L1",
+      "claim_type": "EXPLICIT",
+      "source": "Since ATG5 directly binds to ATG16L1 (Matsushita et al., 2007; Mizushima et al., 1999), it likely co-precipitated with ATG16L1 in our screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "15ac19d3-e3dc-4db5-841a-8a9f125d8df4",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C25",
+      "claim": "ATG5 likely co-precipitated with ATG16L1 in the screen",
+      "claim_type": "EXPLICIT",
+      "source": "Since ATG5 directly binds to ATG16L1 (Matsushita et al., 2007; Mizushima et al., 1999), it likely co-precipitated with ATG16L1 in our screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known interaction between ATG5 and ATG16L1 and the experimental results",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "0eaee627-b3e0-48e3-9afc-7693de7d8621",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C26",
+      "claim": "PKA activity has been shown to negatively regulate autophagy in S. Cervisiae and mammalian cells through phosphorylation of ATG1/ULK1",
+      "claim_type": "EXPLICIT",
+      "source": "ATG5 and ATG16L1 are conserved core components of the autophagy process, and PKA activity has been shown to negatively regulate autophagy in S. Cervisiae and mammalian cells through phosphorylation of ATG1/ULK1 (Mizushima, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "aafa922d-71d8-44bf-9117-95f961deab22",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C27",
+      "claim": "ATG16L1 has not previously been identified as a PKA target",
+      "claim_type": "EXPLICIT",
+      "source": "ATG16L1 however has not previously been identified as a PKA target, prompting us to further investigate this interaction and the potential regulatory role of PKA and autophagy in endothelial sprouting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the novelty of the finding",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "a343272b-f193-4756-9898-1a0cc1b54dcf",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C28",
+      "claim": "Three peptides of ATG16L1\u03b1 were phosphorylated by PKA in the peptide spot array",
+      "claim_type": "EXPLICIT",
+      "source": "Three peptides of the ATG16L1\u03b1 and 7 peptides of ATG16L1\u03b2 were phosphorylated compared to the negative control (Figure 2A, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the peptide spot array results in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "e7c66f24-2c4a-4aa7-855f-06296edd157e",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C29",
+      "claim": "Seven peptides of ATG16L1\u03b2 were phosphorylated by PKA in the peptide spot array",
+      "claim_type": "EXPLICIT",
+      "source": "Three peptides of the ATG16L1\u03b1 and 7 peptides of ATG16L1\u03b2 were phosphorylated compared to the negative control (Figure 2A, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the peptide spot array results in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "7bf47509-83ef-4d89-bdfe-5669e0ee8b2f",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C30",
+      "claim": "Ser268 in ATG16L1\u03b1 and Ser269 as well as Ser287 in ATG16L1\u03b2 are potential PKA phosphorylation sites",
+      "claim_type": "EXPLICIT",
+      "source": "The common amino acid sequences included in the phosphorylated peptides predicted Ser268 in ATG16L1\u03b1 and Ser269 as well as Ser287 in ATG16L1\u03b2 as potential PKA phosphorylation sites (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is predicted from the peptide spot array data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "ce3161cc-0314-40b8-9dbc-d3de75270392",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C31",
+      "claim": "Serine to alanine mutation S268A in ATG16L1\u03b1 resulted in a loss of AS-PKAC\u03b1 thiophosphorylation",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed serine to alanine mutation S268A in ATG16L1\u03b1 and S269A but not S287A mutation in ATG16L1\u03b2 resulted in a loss of AS-PKAC\u03b1 thiophosphorylation of these two ATG16L1 isoforms (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by mutagenesis experiments shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "4ddae907-ef5f-4ba8-b6d3-4fba6492c9b5",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C32",
+      "claim": "Serine to alanine mutation S269A in ATG16L1\u03b2 resulted in a loss of AS-PKAC\u03b1 thiophosphorylation",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed serine to alanine mutation S268A in ATG16L1\u03b1 and S269A but not S287A mutation in ATG16L1\u03b2 resulted in a loss of AS-PKAC\u03b1 thiophosphorylation of these two ATG16L1 isoforms (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by mutagenesis experiments shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "37dd577e-f645-48c3-acb0-06c80b683402",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C33",
+      "claim": "Serine to alanine mutation S287A in ATG16L1\u03b2 did not result in a loss of AS-PKAC\u03b1 thiophosphorylation",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed serine to alanine mutation S268A in ATG16L1\u03b1 and S269A but not S287A mutation in ATG16L1\u03b2 resulted in a loss of AS-PKAC\u03b1 thiophosphorylation of these two ATG16L1 isoforms (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by mutagenesis experiments shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "167a7834-9c7b-421d-8c59-c916a2eb7b76",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C34",
+      "claim": "LC-MS/MS analysis demonstrated phosphorylation of ATG16L1\u03b1 at S268",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, LC-MS/MS analysis demonstrated phosphorylation of ATG16L1\u03b1 at S268 and of ATG16L1\u03b2 at S269 (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by mass spectrometry data in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "f015ffb6-2d6b-4cce-9b58-567981dcc629",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C35",
+      "claim": "LC-MS/MS analysis demonstrated phosphorylation of ATG16L1\u03b2 at S269",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, LC-MS/MS analysis demonstrated phosphorylation of ATG16L1\u03b1 at S268 and of ATG16L1\u03b2 at S269 (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by mass spectrometry data in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "4e9ab98b-b8c2-41f4-be09-7fcecd23bc3d",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C36",
+      "claim": "Thiophosphorylation was converted to normal phosphorylation by 1% TFA acid-catalyzed hydrolysis during sample preparation for LC-MS/MS",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, thiophosphorylation was converted to normal phosphorylation by 1% TFA acid-catalyzed hydrolysis during sample preparation for LC-MS/MS, thus identifying the target sites as phosphorylated, not thiophosphorylated (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "80052f86-9f05-41cc-b22d-8230638b5fd9",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C37",
+      "claim": "Most of the ATG16L1\u03b1WT degraded after 12 hr of cycloheximide treatment with PKA activation",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed that most of the ATG16L1\u03b1WT degraded after 12 hr, whereas ATG16L1\u03b1S268A remained largely stable (Figure 3A), suggesting that the phosphorylation of ATG16L1\u03b1 at site Ser268 by PKA promotes degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by cycloheximide chase experiments in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "fbc77ea1-28f3-44d7-9cfa-e4fd6126012c",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C38",
+      "claim": "ATG16L1\u03b1S268A remained largely stable after 12 hr of cycloheximide treatment with PKA activation",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed that most of the ATG16L1\u03b1WT degraded after 12 hr, whereas ATG16L1\u03b1S268A remained largely stable (Figure 3A), suggesting that the phosphorylation of ATG16L1\u03b1 at site Ser268 by PKA promotes degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by cycloheximide chase experiments in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "a970269d-752f-4153-a90e-8b4d7dcd7e61",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C39",
+      "claim": "Phosphorylation of ATG16L1\u03b1 at site Ser268 by PKA promotes degradation",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed that most of the ATG16L1\u03b1WT degraded after 12 hr, whereas ATG16L1\u03b1S268A remained largely stable (Figure 3A), suggesting that the phosphorylation of ATG16L1\u03b1 at site Ser268 by PKA promotes degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the differential stability of wild-type versus mutant ATG16L1\u03b1 shown in Figure 3A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "3b67206b-5785-43b8-8b5e-369469c70585",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C40",
+      "claim": "Phosphorylation of ATG16L1\u03b2 at site Ser269 by PKA promotes degradation",
+      "claim_type": "EXPLICIT",
+      "source": "For ATG16L1\u03b2, Ser269 phosphorylation exhibited a similar function (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by cycloheximide chase experiments in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "55321e0e-b171-4456-bbac-ef5d9764a843",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C41",
+      "claim": "The phosphomimetic site mutants ATG16L1\u03b1S268D and ATG16L1\u03b2S269D were less stable than wild type ATG16L1\u03b1 and ATG16L1\u03b2",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the phosphomimetic site mutants ATG16L1\u03b1S268D and ATG16L1\u03b2S269D were less stable than wild type ATG16L1\u03b1 and ATG16L1\u03b2 (Figure 3C\u20133D), supporting the idea that phosphorylation of ATG16L1\u03b1 on site S268 and ATG16L1\u03b2 on site S269 by PKA promotes degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by cycloheximide chase experiments in Figures 3C and 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "16b5e260-0dfb-439d-85e5-640605ee5a1a",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C42",
+      "claim": "Depleting PKAC\u03b1 in HUVECs by shRNA led to accumulation of ATG16L1",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance, depleting PKAC\u03b1 in HUVECs by shRNA led to accumulation of ATG16L1 (Figure 3E) whereas activating PKA by 6-Bnz-cAMP caused ATG16L1 reduction (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "32eb7858-22fa-4aa4-a1ef-58adaf9222c8",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C43",
+      "claim": "Activating PKA by 6-Bnz-cAMP caused ATG16L1 reduction",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance, depleting PKAC\u03b1 in HUVECs by shRNA led to accumulation of ATG16L1 (Figure 3E) whereas activating PKA by 6-Bnz-cAMP caused ATG16L1 reduction (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "6ea6880f-a808-4e8f-8dff-ae34f487305b",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C44",
+      "claim": "In PKA inhibited endothelial cells isolated from dnPKAiEC mice, ATG16L1 protein was increased compared to endothelial cells isolated from corresponding Cdh5-CreERT2 control mice",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in PKA inhibited endothelial cells isolated from dnPKAiEC mice (Nedvetsky et al., 2016), ATG16L1 protein was also increased compared to endothelial cells isolated from corresponding Cdh5-CreERT2 control mice (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "1f154527-2695-4039-afa2-31db3d1d10cf",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C45",
+      "claim": "ATG16L1 is part of the ATG16L1-ATG5-ATG12 protein complex",
+      "claim_type": "EXPLICIT",
+      "source": "ATG16L1 is an important component of the ATG16L1-ATG5-ATG12 protein complex, required for LC3 lipidation and autophagosome formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ATG16L1 function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "329a7759-06d8-4c66-8c43-f2153e6bbd6d",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C46",
+      "claim": "The ATG16L1-ATG5-ATG12 protein complex is required for LC3 lipidation and autophagosome formation",
+      "claim_type": "EXPLICIT",
+      "source": "ATG16L1 is an important component of the ATG16L1-ATG5-ATG12 protein complex, required for LC3 lipidation and autophagosome formation. Both LC3 lipidation and autophagosome formation represent essential steps in autophagy (Kuma et al., 2002; Levine and Kroemer, 2008; Matsushita et al., 2007; Mizushima et al., 2003; Mizushima et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "ec11fab7-3ba0-4f10-a401-69a70dcc943e",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C47",
+      "claim": "Accumulation of ATG16L1 upon PKA knock down resulted in increased levels of LC3II in HUVECs",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of ATG16L1 upon PKA knock down resulted in increased levels of the positive autophagy marker LC3II whilst reducing the negative autophagy marker p62 in HUVECs (Figure 3E) whereas depleting ATG16L1 by 6-Bnz-cAMP mediated PKA activation resulted in decreased levels of LC3II whilst increasing p62 in HUVECs (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "d8f294d2-dba7-4699-9ce8-dfb2792c574d",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C48",
+      "claim": "Accumulation of ATG16L1 upon PKA knock down resulted in reduced levels of p62 in HUVECs",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of ATG16L1 upon PKA knock down resulted in increased levels of the positive autophagy marker LC3II whilst reducing the negative autophagy marker p62 in HUVECs (Figure 3E) whereas depleting ATG16L1 by 6-Bnz-cAMP mediated PKA activation resulted in decreased levels of LC3II whilst increasing p62 in HUVECs (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "38b69d16-2217-4e68-8353-84a8cf2eadd4",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C49",
+      "claim": "Depleting ATG16L1 by 6-Bnz-cAMP mediated PKA activation resulted in decreased levels of LC3II in HUVECs",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of ATG16L1 upon PKA knock down resulted in increased levels of the positive autophagy marker LC3II whilst reducing the negative autophagy marker p62 in HUVECs (Figure 3E) whereas depleting ATG16L1 by 6-Bnz-cAMP mediated PKA activation resulted in decreased levels of LC3II whilst increasing p62 in HUVECs (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "b4cacf7a-27f8-42a5-9240-bfefa368900c",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C50",
+      "claim": "Depleting ATG16L1 by 6-Bnz-cAMP mediated PKA activation resulted in increased levels of p62 in HUVECs",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of ATG16L1 upon PKA knock down resulted in increased levels of the positive autophagy marker LC3II whilst reducing the negative autophagy marker p62 in HUVECs (Figure 3E) whereas depleting ATG16L1 by 6-Bnz-cAMP mediated PKA activation resulted in decreased levels of LC3II whilst increasing p62 in HUVECs (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "1d689a02-3f71-4fd9-bb83-41ade62eb9ea",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C51",
+      "claim": "No significant difference was observed between Cdh5-CreERT2 control mice and ATG5ECKO mice on both the vascular plexus and tip cells",
+      "claim_type": "EXPLICIT",
+      "source": "No significant difference were observed between Cdh5-CreERT2 control mice and ATG5ECKO mice on both the vascular plexus and tip cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by quantification of retinal angiogenesis data in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "48040021-a67b-4b08-b391-1c9a5444bb4b",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C52",
+      "claim": "ATG5ECKO partially rescued both the hyperdense vascular plexus front and the increasing tip cells in dnPKAiEC mice",
+      "claim_type": "EXPLICIT",
+      "source": "However, ATG5ECKO partially rescued both the hyperdense vascular plexus front and the increasing tip cells in dnPKAiEC mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by quantification of retinal angiogenesis data in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "3b7e804f-9fc2-49ca-a646-58192c1c87a0",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C53",
+      "claim": "ATG5 deletion in endothelial cells in vivo partially normalizes the hypersprouting phenotype of dnPKAiEC mice",
+      "claim_type": "EXPLICIT",
+      "source": "Retinal stainings demonstrated that ATG5 deletion in endothelial cells in vivo, which shuts down ATG5-dependent autophagy, partially normalizes the hypersprouting phenotype of dnPKAiEC mice (Figure 4A\u20134F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by retinal staining and quantification data in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "e0b1e93c-bc8e-4870-aac4-ca6a90dda394",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C55",
+      "claim": "The ratio of proliferating endothelial cells was not significantly different in retinas of the four groups of mice (Cdh5-CreERT2 control; ATG5ECKO; dnPKAiEC; and dnPKAiEC ATG5ECKO)",
+      "claim_type": "EXPLICIT",
+      "source": "Further more, although the ratio of proliferating endothelial cells was not significant different in retinas of the four groups of mice (Cdh5-CreERT2 control; ATG5ECKO;dnPKAiEC; and dnPKAiEC ATG5ECKO), the total number of endothelial cells and proliferating endothelial cells was deceased in dnPKAiEC ATG5ECKO compared to dnPKAiEC mouse retinas (Figure 5A\u20135D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by quantification of EdU labeling data in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "b2e9ee97-9767-4ed9-b40e-1e9a14ea6dcf",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C56",
+      "claim": "The total number of endothelial cells was decreased in dnPKAiEC ATG5ECKO compared to dnPKAiEC mouse retinas",
+      "claim_type": "EXPLICIT",
+      "source": "Further more, although the ratio of proliferating endothelial cells was not significant different in retinas of the four groups of mice (Cdh5-CreERT2 control; ATG5ECKO;dnPKAiEC; and dnPKAiEC ATG5ECKO), the total number of endothelial cells and proliferating endothelial cells was deceased in dnPKAiEC ATG5ECKO compared to dnPKAiEC mouse retinas (Figure 5A\u20135D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by quantification of ERG positive cells in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "fc86f893-ae5a-4451-bf56-6e6c771b23c8",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C57",
+      "claim": "The total number of proliferating endothelial cells was decreased in dnPKAiEC ATG5ECKO compared to dnPKAiEC mouse retinas",
+      "claim_type": "EXPLICIT",
+      "source": "Further more, although the ratio of proliferating endothelial cells was not significant different in retinas of the four groups of mice (Cdh5-CreERT2 control; ATG5ECKO;dnPKAiEC; and dnPKAiEC ATG5ECKO), the total number of endothelial cells and proliferating endothelial cells was deceased in dnPKAiEC ATG5ECKO compared to dnPKAiEC mouse retinas (Figure 5A\u20135D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by quantification of EdU and ERG positive cells in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "aa2232fe-e8ad-4556-9f58-a16adc7f7f2d",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C58",
+      "claim": "The low levels of apoptotic endothelial cells showed no significant differences among the four groups of mice",
+      "claim_type": "EXPLICIT",
+      "source": "Also the low levels of apoptotic endothelial cells showed no significant differences (Figure 5E\u20135F), suggesting that neither the rate of proliferation nor the frequency of apoptosis are drivers of PKA and ATG5 dependent vascular density and sprouting phenotypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by quantification of cleaved caspase 3 staining in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "5ed0f348-b755-4e1a-b635-2869826bd8a5",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C59",
+      "claim": "Neither the rate of proliferation nor the frequency of apoptosis are drivers of PKA and ATG5 dependent vascular density and sprouting phenotypes",
+      "claim_type": "EXPLICIT",
+      "source": "Also the low levels of apoptotic endothelial cells showed no significant differences (Figure 5E\u20135F), suggesting that neither the rate of proliferation nor the frequency of apoptosis are drivers of PKA and ATG5 dependent vascular density and sprouting phenotypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the proliferation and apoptosis data shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "caf12ded-6cbe-4c1e-824f-78c8b208e258",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C60",
+      "claim": "ATG5 deletion in endothelial cells normalizes the hypersprouting phenotype of dnPKAiEC mice by reducing the number of endothelial tip cells",
+      "claim_type": "EXPLICIT",
+      "source": "ATG5 deletion in endothelial cells instead appears to normalize the hypersprouting phenotype of dnPKAiEC mice by reducing the number of endothelial tip cells cells as well as the total number of proliferating endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data on tip cells and proliferation shown in Figures 4 and 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "e02bfdf6-3802-465f-b23d-29c332dcf85b",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C61",
+      "claim": "ATG5 deletion in endothelial cells normalizes the hypersprouting phenotype of dnPKAiEC mice by reducing the total number of proliferating endothelial cells",
+      "claim_type": "EXPLICIT",
+      "source": "ATG5 deletion in endothelial cells instead appears to normalize the hypersprouting phenotype of dnPKAiEC mice by reducing the number of endothelial tip cells cells as well as the total number of proliferating endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data on tip cells and proliferation shown in Figures 4 and 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "7157dcff-789b-449f-b679-e0c53f9f4747",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C62",
+      "claim": "PKA regulates the switch from sprouting to stabilization of nascent vascular plexuses by limiting endothelial autophagy levels via ATG16L1 degradation",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether our results suggest that PKA regulates the switch from sprouting to stabilization of nascent vascular plexuses by limiting endothelial autophagy levels via ATG16L1 degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental data presented in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "4966c0da-f709-4526-a1d4-594068c2f614",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C63",
+      "claim": "Induction of autophagy by overexpression of ATG5 promotes in vitro vascular tubulogenesis in cultured bovine aortic endothelial cells",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured bovine aortic endothelial cells, induction of autophagy by overexpression of ATG5 has been shown to promote in vitro vascular tubulogenesis, whereas ATG5 silencing suppressed this morphogenic behavior (Du et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "605731a8-6878-47ca-9083-8ef48be2d902",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C64",
+      "claim": "ATG5 silencing suppressed in vitro vascular tubulogenesis in cultured bovine aortic endothelial cells",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured bovine aortic endothelial cells, induction of autophagy by overexpression of ATG5 has been shown to promote in vitro vascular tubulogenesis, whereas ATG5 silencing suppressed this morphogenic behavior (Du et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "d970feec-6da8-4804-8c85-53158f73e50c",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C65",
+      "claim": "Inhibition of autophagy by bafilomycin impairs angiogenesis post myocardial infarction in mice",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, inhibition of autophagy by bafilomycin, or genetic beclin heterozygosity as well as ATG5 knockout impairs angiogenesis post myocardial infarction, whereas the angiogenic factor AGGF1 enhances therapeutic angiogenesis through JNK-mediated stimulation of endothelial autophagy (Lu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "c2102f00-d4b7-4ccd-9eb9-ae00d59c6285",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C66",
+      "claim": "Genetic beclin heterozygosity impairs angiogenesis post myocardial infarction in mice",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, inhibition of autophagy by bafilomycin, or genetic beclin heterozygosity as well as ATG5 knockout impairs angiogenesis post myocardial infarction, whereas the angiogenic factor AGGF1 enhances therapeutic angiogenesis through JNK-mediated stimulation of endothelial autophagy (Lu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "b290ca19-8e96-4e88-ae1a-45e027b5a156",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C67",
+      "claim": "ATG5 knockout impairs angiogenesis post myocardial infarction in mice",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, inhibition of autophagy by bafilomycin, or genetic beclin heterozygosity as well as ATG5 knockout impairs angiogenesis post myocardial infarction, whereas the angiogenic factor AGGF1 enhances therapeutic angiogenesis through JNK-mediated stimulation of endothelial autophagy (Lu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "3362349e-f34d-456d-bcd6-38c423993272",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C68",
+      "claim": "The angiogenic factor AGGF1 enhances therapeutic angiogenesis through JNK-mediated stimulation of endothelial autophagy",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, inhibition of autophagy by bafilomycin, or genetic beclin heterozygosity as well as ATG5 knockout impairs angiogenesis post myocardial infarction, whereas the angiogenic factor AGGF1 enhances therapeutic angiogenesis through JNK-mediated stimulation of endothelial autophagy (Lu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "82b3cf75-a539-4b4c-a491-0596e7edef3a",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C69",
+      "claim": "Angiogenesis during tissue regeneration in a burn wound model relied on induction of endothelial autophagy by driving AMPK/AKT/mTOR signaling",
+      "claim_type": "EXPLICIT",
+      "source": "Angiogenesis during tissue regeneration in a burn wound model also relied on induction of endothelial autophagy, by driving AMPK/AKT/mTOR signaling (Liang et al., 2018), together suggesting that autophagy regulation may represent a critical determinant of the extent of vascular sprouting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "36504f06-f0ed-4f67-923c-4b7dc321b4e9",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C70",
+      "claim": "Autophagy regulation may represent a critical determinant of the extent of vascular sprouting",
+      "claim_type": "EXPLICIT",
+      "source": "Angiogenesis during tissue regeneration in a burn wound model also relied on induction of endothelial autophagy, by driving AMPK/AKT/mTOR signaling (Liang et al., 2018), together suggesting that autophagy regulation may represent a critical determinant of the extent of vascular sprouting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from multiple studies cited showing autophagy's role in angiogenesis",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "fc0a38e5-8309-437b-9f05-807665d5f461",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C71",
+      "claim": "The failure to fully normalize vascular patterning by autophagy inhibition indicates that additional PKA targets and mechanisms may be involved",
+      "claim_type": "EXPLICIT",
+      "source": "However, the failure to fully normalize vascular patterning by autophagy inhibition indicates that additional PKA targets and mechanisms may be involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the partial rescue observed in the genetic and pharmacological experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "063aa86e-1808-48ec-ad70-27979a7c15f6",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C72",
+      "claim": "RAPGEF2 was identified as a candidate PKA target",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we identified RAPGEF2 as a candidate target, deficiency of which causes embryonic lethality at E11.5 due to yolk sac vascular defects (Satyanarayana et al., 2010), very similar to the yolk sac phenotype in dnPKAiEC embryos (Nedvetsky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from the mass spectrometry screen results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "46587228-738b-4ed5-93a9-aa5c80116fed",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C73",
+      "claim": "RAPGEF2 deficiency causes embryonic lethality at E11.5 due to yolk sac vascular defects",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we identified RAPGEF2 as a candidate target, deficiency of which causes embryonic lethality at E11.5 due to yolk sac vascular defects (Satyanarayana et al., 2010), very similar to the yolk sac phenotype in dnPKAiEC embryos (Nedvetsky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "98f99f9c-b84d-423f-a0f1-50c42de13017",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C74",
+      "claim": "Rock2 has a well known role in regulating endothelial functions in angiogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly the potential target Rock2 has a well known role in regulating endothelial functions in angiogenesis (Liu et al., 2018; Montalvo et al., 2013; Seto et al., 2016; Shimizu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "10b92cb6-b5ff-4d94-9ac3-613ad07450d9",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C75",
+      "claim": "ATG16L1 is involved in the production of inflammatory cytokines IL-1\u03b2 and IL-18",
+      "claim_type": "EXPLICIT",
+      "source": "Although ATG16L1 plays an essential role in autophagy, and is part of a larger protein complex ATG16L1-ATG5-ATG12 that is necessary for autophagy, ATG16L1 is also involved in the production of inflammatory cytokines IL-1\u03b2 and IL-18 and exerts anti-inflammatory functions during intestinal inflammation (Cadwell et al., 2008; Diamanti et al., 2017; Saitoh et al., 2008; Sorbara et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "e9928e87-8012-44dd-855c-37a953ec9e5a",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C76",
+      "claim": "ATG16L1 exerts anti-inflammatory functions during intestinal inflammation",
+      "claim_type": "EXPLICIT",
+      "source": "Although ATG16L1 plays an essential role in autophagy, and is part of a larger protein complex ATG16L1-ATG5-ATG12 that is necessary for autophagy, ATG16L1 is also involved in the production of inflammatory cytokines IL-1\u03b2 and IL-18 and exerts anti-inflammatory functions during intestinal inflammation (Cadwell et al., 2008; Diamanti et al., 2017; Saitoh et al., 2008; Sorbara et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "ffa1f2bc-3be1-43ac-a123-0b597a744a09",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C77",
+      "claim": "IL-1\u03b2 promotes angiogenesis by activating VEGF production during tumor progression",
+      "claim_type": "EXPLICIT",
+      "source": "IL-1\u03b2 promotes angiogenesis by activating VEGF production during tumor progression (Carmi et al., 2013; Voronov et al., 2003), while IL-18 suppresses angiogenesis in cancer (Cao et al., 1999; Xing et al., 2016; Yang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "3d24133a-7998-49a0-9ade-d08e0d5b1677",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C78",
+      "claim": "IL-18 suppresses angiogenesis in cancer",
+      "claim_type": "EXPLICIT",
+      "source": "IL-1\u03b2 promotes angiogenesis by activating VEGF production during tumor progression (Carmi et al., 2013; Voronov et al., 2003), while IL-18 suppresses angiogenesis in cancer (Cao et al., 1999; Xing et al., 2016; Yang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "78e06bcb-8951-4c6d-9389-44866651914c",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C79",
+      "claim": "In wild type mice, inhibition of autophagy has no significant effect on developmental retinal angiogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, our rescue experiments show that in wild type mice, inhibition of autophagy has no significant effect on developmental retinal angiogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by the comparison of control and ATG5ECKO mice in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "aabe8564-d21e-4c70-b97d-3b7db95aa297",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C80",
+      "claim": "Autophagy in developmental angiogenesis, unlike in pathological angiogenesis and post-ischemic tissue responses, is not very active",
+      "claim_type": "EXPLICIT",
+      "source": "This could indicate that autophagy in developmental angiogenesis, unlike in pathological angiogenesis and post-ischemic tissue responses, is not very active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the lack of effect of autophagy inhibition in wild type mice",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "2ebbaa1e-2365-4a01-8be6-27cbcc66533c",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C81",
+      "claim": "PKA reduces autophagy through phosphorylation of ATG13 in Saccharomyces cerevisiae",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PKA reduces autophagy through phosphorylation of ATG13 in Saccharomyces cerevisiae (Hundsrucker et al., 2006), and through phosphorylation of LC3 in neurons (Cherra et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "c876288f-b70e-40a6-87ff-124bc7637f81",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C82",
+      "claim": "PKA reduces autophagy through phosphorylation of LC3 in neurons",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PKA reduces autophagy through phosphorylation of ATG13 in Saccharomyces cerevisiae (Hundsrucker et al., 2006), and through phosphorylation of LC3 in neurons (Cherra et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "8029ee87-9609-492c-9d47-a29e83a792bc",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C83",
+      "claim": "ATG13 and LC3 were not identified as PKA substrates in the endothelial cell screen",
+      "claim_type": "EXPLICIT",
+      "source": "In our research, ATG16L1 was identified as a novel direct PKA substrate in endothelial cells, but not ATG13 or LC3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the mass spectrometry results from the chemical genetic screen",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "89fd4bb3-7b2a-41d6-a2f1-c136abb7b181",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C84",
+      "claim": "The phosphorylation of ATG16L1 by PKA accelerates its degradation and consequently decreases autophagy levels in endothelial cells",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, the phosphorylation of ATG16L1 by PKA accelerates its degradation, and consequently decreases autophagy levels in endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the combined data from Figures 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "cfbd3ced-5622-4303-a4b1-0d1be339170b",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C85",
+      "claim": "Different protein targets may mediate PKA regulation of autophagy in different cells or organisms",
+      "claim_type": "EXPLICIT",
+      "source": "The finding of different components of the autophagy pathway as targets of PKA identified in yeast and various vertebrate cell populations raises the intriguing possibility that although the principle regulatory logic of PKA in autophagy is conserved, different protein targets mediate this effect in different cells or organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the different PKA targets identified in different systems",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "55ec8026-a77b-4018-83aa-c9d82e5280e3",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C86",
+      "claim": "PKA regulation of autophagy carries multiple levels of redundancy",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, or alternatively, this regulation carries multiple levels of redundancy, and the individual studies simply identify the most prevalent targets within the respective cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated as an alternative explanation for different PKA targets in different systems",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "93c16c50-7a7f-4ae7-a9a5-c1c027ab82c3",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C87",
+      "claim": "ATG16L1 comes in two splice variants that are both targeted by PKA in endothelial cells",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that also ATG16L1 comes in two splice variants that are both targeted by PKA in endothelial cells lends some strength to this idea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the phosphorylation of both ATG16L1\u03b1 and ATG16L1\u03b2 shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "98224df4-5756-4ef6-86c7-93310bf9222b",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C88",
+      "claim": "ATG16L1 can be phosphorylated at Ser139 by CSNK2",
+      "claim_type": "EXPLICIT",
+      "source": "ATG16L1 can be phosphorylated at Ser139 by CSNK2 and this phosphorylation enhances its interaction with the ATG12-ATG5 conjugate (Song et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "08444843-4abf-4525-8f92-7af17aef4739",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C89",
+      "claim": "Phosphorylation of ATG16L1 at Ser139 by CSNK2 enhances its interaction with the ATG12-ATG5 conjugate",
+      "claim_type": "EXPLICIT",
+      "source": "ATG16L1 can be phosphorylated at Ser139 by CSNK2 and this phosphorylation enhances its interaction with the ATG12-ATG5 conjugate (Song et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "3404e480-9e14-4ec1-a356-fb111ebe00d0",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C90",
+      "claim": "IKK\u03b1 promotes ATG16L1 stabilization by phosphorylation at Ser278",
+      "claim_type": "EXPLICIT",
+      "source": "IKK\u03b1 promotes ATG16L1 stabilization by phosphorylation at Ser278 (Diamanti et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "1f3a697a-9dce-4990-9955-190bba1c3e3c",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C91",
+      "claim": "Phospho-Ser278 and phospho-Thr300 have similar functions in promoting ATG16L1 degradation",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, phospho-Ser278 has similar functions as phospho-Thr300, since both phospho-mutants ATG16L1S278A and ATG16L1T300A accelerate ATG16L1 degradation by enhancing caspase three mediated ATG16L1 cleavage (Diamanti et al., 2017; Murthy et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "348a9db2-5306-4ee3-9ce1-9793367588ce",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C92",
+      "claim": "The PKA target sites Ser268 in ATG16L1\u03b1 and Ser269 in ATG16L1\u03b2 work in the opposite way of Ser278 and Thr300",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our finding suggest that the PKA target sites Ser268 in ATG16L1\u03b1 (or Ser269 in ATG16L1\u03b2) work in the opposite way of Ser278 and Thr300; ATG16L1\u03b1S268A (and ATG16L1\u03b2S269A) are more stable than ATG16L1WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the cycloheximide chase experiments in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "d89f592d-559b-4c6f-af2d-f1af736928ad",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C93",
+      "claim": "Different phosphorylation sites of ATG16L1 play different roles in fine tuning protein stability under the influence of alternative upstream kinases",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, it appears that the different phosphorylation sites of ATG16L1 play different roles in fine tuning protein stability under the influence of alternative upstream kinases, and thereby adapt autophagy levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of different phosphorylation sites and their effects",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "e2d342e1-1f0b-4e8c-a21b-639cd101157c",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C94",
+      "claim": "The chemical genetics approach has successfully been used in other cell types",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, on a technical note, the chemical genetics approach developed by Shokat and colleagues (Alaimo et al., 2001; Allen et al., 2005; Allen et al., 2007) has successfully been used in other cell types, but to our knowledge, this is the first report on direct endothelial PKA targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature and stated as the first application in endothelial cells",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "a20f431a-6c79-4d34-add9-31cb9a4c9ed3",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C95",
+      "claim": "This is the first report on direct endothelial PKA targets using the chemical genetics approach",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, on a technical note, the chemical genetics approach developed by Shokat and colleagues (Alaimo et al., 2001; Allen et al., 2005; Allen et al., 2007) has successfully been used in other cell types, but to our knowledge, this is the first report on direct endothelial PKA targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel application of the method",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "b3022a8d-24e5-452a-93a4-26ed299e7505",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C96",
+      "claim": "RIPA buffer limits the activity of PKA",
+      "claim_type": "EXPLICIT",
+      "source": "Our buffer optimization revealed that RIPA buffer limits the activity of PKA, whereas our new kinase lysis buffer (see Materials and methods) allows effective substrate phosphorylation, thus giving rise to strong signals in AS-PKA samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental optimization of the chemical genetic screen conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "c4f5ed5a-3a5a-4bed-94b7-c573c2e26698",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "claim_id": "C97",
+      "claim": "The new kinase lysis buffer allows effective substrate phosphorylation by PKA",
+      "claim_type": "EXPLICIT",
+      "source": "Our buffer optimization revealed that RIPA buffer limits the activity of PKA, whereas our new kinase lysis buffer (see Materials and methods) allows effective substrate phosphorylation, thus giving rise to strong signals in AS-PKA samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental optimization of the chemical genetic screen conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3a7814fb-47bc-4ba2-8aec-5ba84cc383b0",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A chemical genetic screen using AS-PKAC\u03b1 and 6-cHe-ATP\u03b3S identified 97 proteins as potential PKA substrates in HUVECs, including known substrates (NFATC1, VASP, PRKAR2A, PRKAR2B) and novel candidates. Four of five tested candidates (PPP1R12C, ATG16L1\u03b1, DDX17, ANKRD40) were validated as direct PKA substrates, while ATG5 was not directly phosphorylated but likely co-precipitated with ATG16L1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The chemical genetic screen methodology is well-described (C18) and validated by identifying known PKA substrates (C20). The validation experiments confirm 4/5 candidates as direct substrates (C21), with ATG5's presence explained by its known interaction with ATG16L1 (C24-C25). The approach demonstrates technical rigor with appropriate controls and orthogonal validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "def8cc9e-8d58-4656-a9d4-b7c09244735f",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PKA directly phosphorylates ATG16L1\u03b1 at Ser268 and ATG16L1\u03b2 at Ser269, as demonstrated by peptide spot arrays, site-directed mutagenesis, and LC-MS/MS analysis. Ser287 in ATG16L1\u03b2 was not a PKA phosphorylation site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple orthogonal approaches converge on the same phosphorylation sites: peptide arrays identified candidate sites (C28-C30), mutagenesis confirmed S268 and S269 but not S287 (C31-C33), and LC-MS/MS directly detected phosphorylation at these sites (C34-C35). The technical note about thiophosphate conversion (C36) demonstrates methodological awareness. This is strong evidence for direct phosphorylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "ac4462ab-c91b-4d52-a469-0244f04ab631",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phosphorylation of ATG16L1 by PKA at Ser268 (\u03b1 isoform) and Ser269 (\u03b2 isoform) promotes protein degradation. This is demonstrated by cycloheximide chase experiments showing wild-type ATG16L1 degrades faster than phospho-null mutants, phosphomimetic mutants are less stable, and PKA activity inversely correlates with ATG16L1 protein levels in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The degradation mechanism is supported by multiple lines of evidence: differential stability of WT vs phospho-null mutants (C37-C40), phosphomimetic mutants showing reduced stability (C41), and inverse correlation between PKA activity and ATG16L1 levels in both cultured cells (C42-C43) and primary endothelial cells from mice (C44). The cycloheximide chase experiments are appropriate for measuring protein stability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "91594148-b3b3-4e15-934c-5b535c0f4ea7",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Reducing PKA activity increases ATG16L1 protein levels and endothelial autophagy, as measured by increased LC3II and decreased p62 levels. Conversely, PKA activation decreases ATG16L1 and autophagy markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The relationship between PKA activity, ATG16L1 levels, and autophagy is demonstrated bidirectionally: PKA inhibition increases ATG16L1, LC3II, and decreases p62 (C47-C48), while PKA activation has opposite effects (C49-C50). LC3II and p62 are established autophagy markers, making this a valid readout. The data support the mechanistic link from PKA to autophagy via ATG16L1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "3835479b-b86e-47c2-95e0-22a639985267",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genetic deletion of ATG5 in endothelial cells (ATG5ECKO) partially rescues the vascular hypersprouting and increased tip cell phenotype in PKA-deficient (dnPKAiEC) mice, with no effect in wild-type mice. Pharmacological autophagy inhibition with chloroquine produces similar partial rescue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic rescue experiment is well-controlled, showing no effect of ATG5 deletion alone (C51) but partial rescue in the dnPKA background (C52-C53). The partial nature of the rescue is appropriately acknowledged and suggests additional PKA targets contribute to the phenotype. The chloroquine experiments provide pharmacological validation. However, the mechanism by which reduced autophagy normalizes sprouting requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "92a1cd70-91ca-4aaa-b537-fe247ded4d06",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ATG5 deletion normalizes the dnPKAiEC hypersprouting phenotype by reducing total endothelial cell numbers and tip cells, not by altering the proliferation rate or apoptosis frequency. The ratio of proliferating cells remains unchanged across genotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The proliferation and apoptosis data (C55, C58) show no significant differences in rates, while absolute cell numbers decrease (C56-C57). This suggests the rescue mechanism involves reduced tip cell formation and potentially altered cell cycle dynamics rather than proliferation or survival changes (C59-C61). The interpretation is logical given the data, though the proposed mechanism of shorter cell cycles or more rounds of cycling is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "3941d9ee-5450-4526-a56d-5489ae457018",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Endothelial PKA activity mediates a critical switch from active sprouting to quiescence through phosphorylation of ATG16L1, which reduces endothelial autophagy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion integrates the phosphorylation data (C5-C6), degradation mechanism (C7, C39-C40), autophagy regulation (C8-C9, C12), and in vivo rescue experiments (C10, C52-C53). The use of \"in part\" appropriately acknowledges the partial rescue, indicating additional mechanisms. The conclusion is well-supported by the collective evidence, though the physiological significance of this pathway in normal development vs pathology requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "c7906f22-caae-4cb4-9f59-9596477696ea",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In wild-type mice, inhibition of autophagy has no significant effect on developmental retinal angiogenesis, suggesting autophagy may not be very active during normal developmental angiogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observation that ATG5 deletion alone has no effect on wild-type retinal angiogenesis (C51, C79) is clearly demonstrated. However, the interpretation that autophagy is \"not very active\" in developmental angiogenesis (C80) is speculative and marked as such in the evidence. Alternative explanations (compensatory mechanisms, context-dependent requirements) are not fully explored. The data support the observation but the mechanistic interpretation is uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "53d2bf4e-f467-40e4-8319-061bc0408438",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The partial rescue of the dnPKAiEC phenotype by autophagy inhibition indicates additional PKA targets are involved. The screen identified other candidates including RAPGEF2 and Rock2, which have known roles in vascular development and angiogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The partial rescue (C10, C52) logically implies additional mechanisms (C71). The identification of RAPGEF2 and Rock2 as candidate targets (C72, C74) with relevant vascular phenotypes (C73) provides plausible alternative pathways. However, these remain unvalidated candidates requiring future work. The reasoning is sound but the specific contribution of these targets is speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "9c605f7e-a321-4cfa-ae06-2c462665b372",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ATG16L1 is a novel PKA substrate in endothelial cells, distinct from previously identified targets (ATG13 in yeast, LC3 in neurons). This suggests PKA may regulate autophagy through different targets in different cell types, possibly reflecting cell-type specificity or redundancy in the regulatory mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The novelty of ATG16L1 as a PKA target is established (C27, C83) and contrasted with other systems (C81-C82). The speculation about cell-type specificity vs redundancy (C85-C86) is appropriately presented as hypothesis rather than conclusion. The observation that both ATG16L1 isoforms are targeted (C87) supports the redundancy hypothesis. This represents a valid contribution to understanding PKA-autophagy regulation across systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "0a4de84c-92bf-45f4-b711-6565dec09452",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Different phosphorylation sites on ATG16L1 have opposing effects on protein stability. PKA phosphorylation at Ser268/269 promotes degradation, while other kinases (CSNK2 at Ser139, IKK\u03b1 at Ser278) have different effects, suggesting multi-layered regulation of ATG16L1 stability and autophagy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison with other phosphorylation sites (C88-C91) from the literature provides important context. The demonstration that PKA sites work oppositely to Ser278/Thr300 (C92) is supported by the stability data. The synthesis that different sites fine-tune stability (C93) is a reasonable interpretation. This contextualizes the PKA-ATG16L1 mechanism within broader autophagy regulation, though direct comparison experiments would strengthen the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "7c56f831-fdfc-4fef-ad54-5f671c098ca3",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "This study represents the first application of the chemical genetics approach to identify direct endothelial PKA targets. Buffer optimization was critical, as RIPA buffer limits PKA activity while the new kinase lysis buffer allows effective substrate phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The novelty claim (C95) is appropriately qualified with \"to our knowledge.\" The technical optimization (C96-C97) is important for reproducibility and explains why the approach succeeded where standard conditions might have failed. This methodological contribution will benefit future studies. However, more details on buffer composition and comparative validation would strengthen the technical advance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "53776b50-001b-4aff-88ce-d8db685f1b33",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background context: PKA promotes vessel maturation and limits tip cell formation in endothelial cells. Blood vessels are crucial for tissue physiology, and their dysregulation contributes to various diseases. VEGF and Notch/DLL4 are key regulators of angiogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims establish the biological context and are supported by appropriate citations (C14-C17) or represent established knowledge (C1-C2, C13). The prior work on PKA in angiogenesis (C17) provides the foundation for the current study. This background is accurate and well-supported but represents prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "94e9db04-2318-4c7c-b3bf-5f4e312ef7bf",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on ATG16L1: ATG16L1 is a regulator of autophagy and part of the ATG16L1-ATG5-ATG12 complex required for LC3 lipidation and autophagosome formation. PKA has been shown to regulate autophagy in other systems but ATG16L1 had not previously been identified as a PKA target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide essential background on ATG16L1 function (C3, C45-C46) supported by appropriate citations, and establish the novelty of the finding (C27). The context about PKA regulating autophagy through other targets (C26) is important for framing the discovery. This represents accurate background information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "651c29c9-c43d-418f-ac62-231a1ef67aa2",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Literature context: Previous studies show autophagy promotes angiogenesis in various contexts including in vitro tubulogenesis, post-myocardial infarction, and wound healing. This suggests autophagy regulation is a critical determinant of vascular sprouting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims summarize relevant prior literature (C63-C69) with appropriate citations and draw a reasonable synthesis (C70). This context motivates the investigation of PKA-autophagy interactions in angiogenesis. However, these represent prior findings rather than new results from this study. The synthesis is appropriate but the conclusion (C70) is somewhat overstated given the context-dependent effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    },
+    {
+      "id": "3d85bb56-3b85-4668-adde-d6726ff486ff",
+      "content_id": "28be5d82-3473-4492-aa16-590f8910213d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "ATG16L1 has additional functions beyond autophagy, including roles in inflammatory cytokine production (IL-1\u03b2, IL-18) and anti-inflammatory functions. These cytokines have opposing effects on angiogenesis in cancer contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by appropriate citations (C75-C78) and raise the possibility of autophagy-independent mechanisms. This is appropriately presented as speculation requiring further investigation. The discussion acknowledges complexity but doesn't overinterpret the current data. This represents valid contextualization of potential alternative mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:34:32.576821Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7099a9b3-0288-478b-9cb6-5c80cbc2b76c",
+      "result_id": "3a7814fb-47bc-4ba2-8aec-5ba84cc383b0"
+    },
+    {
+      "claim_id": "2f3be2dd-c0a9-4879-b2ce-160ff43e8dcb",
+      "result_id": "3a7814fb-47bc-4ba2-8aec-5ba84cc383b0"
+    },
+    {
+      "claim_id": "6a37dd8e-f77c-4392-91b5-bb6ba2b6b640",
+      "result_id": "3a7814fb-47bc-4ba2-8aec-5ba84cc383b0"
+    },
+    {
+      "claim_id": "12956598-08fd-45da-8c28-69296f6e1793",
+      "result_id": "3a7814fb-47bc-4ba2-8aec-5ba84cc383b0"
+    },
+    {
+      "claim_id": "2f62db77-9880-4fb5-8587-a9cf67226792",
+      "result_id": "3a7814fb-47bc-4ba2-8aec-5ba84cc383b0"
+    },
+    {
+      "claim_id": "11a415bf-9e8a-43fc-8b85-8b7d5697b497",
+      "result_id": "3a7814fb-47bc-4ba2-8aec-5ba84cc383b0"
+    },
+    {
+      "claim_id": "06ea8ab1-8c0e-4159-a404-bf057093a490",
+      "result_id": "3a7814fb-47bc-4ba2-8aec-5ba84cc383b0"
+    },
+    {
+      "claim_id": "15ac19d3-e3dc-4db5-841a-8a9f125d8df4",
+      "result_id": "3a7814fb-47bc-4ba2-8aec-5ba84cc383b0"
+    },
+    {
+      "claim_id": "7ad2966a-6db7-4af8-b226-cc909baa6a35",
+      "result_id": "def8cc9e-8d58-4656-a9d4-b7c09244735f"
+    },
+    {
+      "claim_id": "00610962-533e-450c-a0d5-ce463f5ea6c4",
+      "result_id": "def8cc9e-8d58-4656-a9d4-b7c09244735f"
+    },
+    {
+      "claim_id": "a748583d-acfd-48c3-8b6f-4bb517c34ce8",
+      "result_id": "def8cc9e-8d58-4656-a9d4-b7c09244735f"
+    },
+    {
+      "claim_id": "a343272b-f193-4756-9898-1a0cc1b54dcf",
+      "result_id": "def8cc9e-8d58-4656-a9d4-b7c09244735f"
+    },
+    {
+      "claim_id": "e7c66f24-2c4a-4aa7-855f-06296edd157e",
+      "result_id": "def8cc9e-8d58-4656-a9d4-b7c09244735f"
+    },
+    {
+      "claim_id": "7bf47509-83ef-4d89-bdfe-5669e0ee8b2f",
+      "result_id": "def8cc9e-8d58-4656-a9d4-b7c09244735f"
+    },
+    {
+      "claim_id": "ce3161cc-0314-40b8-9dbc-d3de75270392",
+      "result_id": "def8cc9e-8d58-4656-a9d4-b7c09244735f"
+    },
+    {
+      "claim_id": "4ddae907-ef5f-4ba8-b6d3-4fba6492c9b5",
+      "result_id": "def8cc9e-8d58-4656-a9d4-b7c09244735f"
+    },
+    {
+      "claim_id": "37dd577e-f645-48c3-acb0-06c80b683402",
+      "result_id": "def8cc9e-8d58-4656-a9d4-b7c09244735f"
+    },
+    {
+      "claim_id": "167a7834-9c7b-421d-8c59-c916a2eb7b76",
+      "result_id": "def8cc9e-8d58-4656-a9d4-b7c09244735f"
+    },
+    {
+      "claim_id": "f015ffb6-2d6b-4cce-9b58-567981dcc629",
+      "result_id": "def8cc9e-8d58-4656-a9d4-b7c09244735f"
+    },
+    {
+      "claim_id": "4e9ab98b-b8c2-41f4-be09-7fcecd23bc3d",
+      "result_id": "def8cc9e-8d58-4656-a9d4-b7c09244735f"
+    },
+    {
+      "claim_id": "213d665b-9757-45f0-a5fa-9d52c132f9da",
+      "result_id": "ac4462ab-c91b-4d52-a469-0244f04ab631"
+    },
+    {
+      "claim_id": "80052f86-9f05-41cc-b22d-8230638b5fd9",
+      "result_id": "ac4462ab-c91b-4d52-a469-0244f04ab631"
+    },
+    {
+      "claim_id": "fbc77ea1-28f3-44d7-9cfa-e4fd6126012c",
+      "result_id": "ac4462ab-c91b-4d52-a469-0244f04ab631"
+    },
+    {
+      "claim_id": "a970269d-752f-4153-a90e-8b4d7dcd7e61",
+      "result_id": "ac4462ab-c91b-4d52-a469-0244f04ab631"
+    },
+    {
+      "claim_id": "3b67206b-5785-43b8-8b5e-369469c70585",
+      "result_id": "ac4462ab-c91b-4d52-a469-0244f04ab631"
+    },
+    {
+      "claim_id": "55321e0e-b171-4456-bbac-ef5d9764a843",
+      "result_id": "ac4462ab-c91b-4d52-a469-0244f04ab631"
+    },
+    {
+      "claim_id": "16b5e260-0dfb-439d-85e5-640605ee5a1a",
+      "result_id": "ac4462ab-c91b-4d52-a469-0244f04ab631"
+    },
+    {
+      "claim_id": "32eb7858-22fa-4aa4-a1ef-58adaf9222c8",
+      "result_id": "ac4462ab-c91b-4d52-a469-0244f04ab631"
+    },
+    {
+      "claim_id": "6ea6880f-a808-4e8f-8dff-ae34f487305b",
+      "result_id": "ac4462ab-c91b-4d52-a469-0244f04ab631"
+    },
+    {
+      "claim_id": "0739f94f-9eab-4a1c-9e4d-e441a2ec17e5",
+      "result_id": "91594148-b3b3-4e15-934c-5b535c0f4ea7"
+    },
+    {
+      "claim_id": "746d6b06-1cef-4954-8a37-e675aa208136",
+      "result_id": "91594148-b3b3-4e15-934c-5b535c0f4ea7"
+    },
+    {
+      "claim_id": "e1ed6af7-1c17-42ee-9924-cf8e04c31d80",
+      "result_id": "91594148-b3b3-4e15-934c-5b535c0f4ea7"
+    },
+    {
+      "claim_id": "ec11fab7-3ba0-4f10-a401-69a70dcc943e",
+      "result_id": "91594148-b3b3-4e15-934c-5b535c0f4ea7"
+    },
+    {
+      "claim_id": "d8f294d2-dba7-4699-9ce8-dfb2792c574d",
+      "result_id": "91594148-b3b3-4e15-934c-5b535c0f4ea7"
+    },
+    {
+      "claim_id": "38b69d16-2217-4e68-8353-84a8cf2eadd4",
+      "result_id": "91594148-b3b3-4e15-934c-5b535c0f4ea7"
+    },
+    {
+      "claim_id": "b4cacf7a-27f8-42a5-9240-bfefa368900c",
+      "result_id": "91594148-b3b3-4e15-934c-5b535c0f4ea7"
+    },
+    {
+      "claim_id": "89fd4bb3-7b2a-41d6-a2f1-c136abb7b181",
+      "result_id": "91594148-b3b3-4e15-934c-5b535c0f4ea7"
+    },
+    {
+      "claim_id": "af28ddf7-b6d0-4ff8-b606-58e7ff5af3c4",
+      "result_id": "3835479b-b86e-47c2-95e0-22a639985267"
+    },
+    {
+      "claim_id": "1d689a02-3f71-4fd9-bb83-41ade62eb9ea",
+      "result_id": "3835479b-b86e-47c2-95e0-22a639985267"
+    },
+    {
+      "claim_id": "48040021-a67b-4b08-b391-1c9a5444bb4b",
+      "result_id": "3835479b-b86e-47c2-95e0-22a639985267"
+    },
+    {
+      "claim_id": "3b7e804f-9fc2-49ca-a646-58192c1c87a0",
+      "result_id": "3835479b-b86e-47c2-95e0-22a639985267"
+    },
+    {
+      "claim_id": "e0b1e93c-bc8e-4870-aac4-ca6a90dda394",
+      "result_id": "92a1cd70-91ca-4aaa-b537-fe247ded4d06"
+    },
+    {
+      "claim_id": "b2e9ee97-9767-4ed9-b40e-1e9a14ea6dcf",
+      "result_id": "92a1cd70-91ca-4aaa-b537-fe247ded4d06"
+    },
+    {
+      "claim_id": "fc86f893-ae5a-4451-bf56-6e6c771b23c8",
+      "result_id": "92a1cd70-91ca-4aaa-b537-fe247ded4d06"
+    },
+    {
+      "claim_id": "aa2232fe-e8ad-4556-9f58-a16adc7f7f2d",
+      "result_id": "92a1cd70-91ca-4aaa-b537-fe247ded4d06"
+    },
+    {
+      "claim_id": "5ed0f348-b755-4e1a-b635-2869826bd8a5",
+      "result_id": "92a1cd70-91ca-4aaa-b537-fe247ded4d06"
+    },
+    {
+      "claim_id": "caf12ded-6cbe-4c1e-824f-78c8b208e258",
+      "result_id": "92a1cd70-91ca-4aaa-b537-fe247ded4d06"
+    },
+    {
+      "claim_id": "e02bfdf6-3802-465f-b23d-29c332dcf85b",
+      "result_id": "92a1cd70-91ca-4aaa-b537-fe247ded4d06"
+    },
+    {
+      "claim_id": "7d7dcfb0-d397-43dc-b5b0-56d44d64d6f9",
+      "result_id": "3941d9ee-5450-4526-a56d-5489ae457018"
+    },
+    {
+      "claim_id": "7157dcff-789b-449f-b679-e0c53f9f4747",
+      "result_id": "3941d9ee-5450-4526-a56d-5489ae457018"
+    },
+    {
+      "claim_id": "78e06bcb-8951-4c6d-9389-44866651914c",
+      "result_id": "c7906f22-caae-4cb4-9f59-9596477696ea"
+    },
+    {
+      "claim_id": "aabe8564-d21e-4c70-b97d-3b7db95aa297",
+      "result_id": "c7906f22-caae-4cb4-9f59-9596477696ea"
+    },
+    {
+      "claim_id": "fc0a38e5-8309-437b-9f05-807665d5f461",
+      "result_id": "53d2bf4e-f467-40e4-8319-061bc0408438"
+    },
+    {
+      "claim_id": "063aa86e-1808-48ec-ad70-27979a7c15f6",
+      "result_id": "53d2bf4e-f467-40e4-8319-061bc0408438"
+    },
+    {
+      "claim_id": "46587228-738b-4ed5-93a9-aa5c80116fed",
+      "result_id": "53d2bf4e-f467-40e4-8319-061bc0408438"
+    },
+    {
+      "claim_id": "98f99f9c-b84d-423f-a0f1-50c42de13017",
+      "result_id": "53d2bf4e-f467-40e4-8319-061bc0408438"
+    },
+    {
+      "claim_id": "8029ee87-9609-492c-9d47-a29e83a792bc",
+      "result_id": "9c605f7e-a321-4cfa-ae06-2c462665b372"
+    },
+    {
+      "claim_id": "2ebbaa1e-2365-4a01-8be6-27cbcc66533c",
+      "result_id": "9c605f7e-a321-4cfa-ae06-2c462665b372"
+    },
+    {
+      "claim_id": "c876288f-b70e-40a6-87ff-124bc7637f81",
+      "result_id": "9c605f7e-a321-4cfa-ae06-2c462665b372"
+    },
+    {
+      "claim_id": "cfbd3ced-5622-4303-a4b1-0d1be339170b",
+      "result_id": "9c605f7e-a321-4cfa-ae06-2c462665b372"
+    },
+    {
+      "claim_id": "55ec8026-a77b-4018-83aa-c9d82e5280e3",
+      "result_id": "9c605f7e-a321-4cfa-ae06-2c462665b372"
+    },
+    {
+      "claim_id": "93c16c50-7a7f-4ae7-a9a5-c1c027ab82c3",
+      "result_id": "9c605f7e-a321-4cfa-ae06-2c462665b372"
+    },
+    {
+      "claim_id": "98224df4-5756-4ef6-86c7-93310bf9222b",
+      "result_id": "0a4de84c-92bf-45f4-b711-6565dec09452"
+    },
+    {
+      "claim_id": "08444843-4abf-4525-8f92-7af17aef4739",
+      "result_id": "0a4de84c-92bf-45f4-b711-6565dec09452"
+    },
+    {
+      "claim_id": "3404e480-9e14-4ec1-a356-fb111ebe00d0",
+      "result_id": "0a4de84c-92bf-45f4-b711-6565dec09452"
+    },
+    {
+      "claim_id": "1f3a697a-9dce-4990-9955-190bba1c3e3c",
+      "result_id": "0a4de84c-92bf-45f4-b711-6565dec09452"
+    },
+    {
+      "claim_id": "348a9db2-5306-4ee3-9ce1-9793367588ce",
+      "result_id": "0a4de84c-92bf-45f4-b711-6565dec09452"
+    },
+    {
+      "claim_id": "d89f592d-559b-4c6f-af2d-f1af736928ad",
+      "result_id": "0a4de84c-92bf-45f4-b711-6565dec09452"
+    },
+    {
+      "claim_id": "e2d342e1-1f0b-4e8c-a21b-639cd101157c",
+      "result_id": "7c56f831-fdfc-4fef-ad54-5f671c098ca3"
+    },
+    {
+      "claim_id": "a20f431a-6c79-4d34-add9-31cb9a4c9ed3",
+      "result_id": "7c56f831-fdfc-4fef-ad54-5f671c098ca3"
+    },
+    {
+      "claim_id": "b3022a8d-24e5-452a-93a4-26ed299e7505",
+      "result_id": "7c56f831-fdfc-4fef-ad54-5f671c098ca3"
+    },
+    {
+      "claim_id": "c4f5ed5a-3a5a-4bed-94b7-c573c2e26698",
+      "result_id": "7c56f831-fdfc-4fef-ad54-5f671c098ca3"
+    },
+    {
+      "claim_id": "b33eb094-6d73-4d43-bdc4-b27530f93e46",
+      "result_id": "53776b50-001b-4aff-88ce-d8db685f1b33"
+    },
+    {
+      "claim_id": "1dfef4a6-05f9-4705-bab3-6e0dbbc49614",
+      "result_id": "53776b50-001b-4aff-88ce-d8db685f1b33"
+    },
+    {
+      "claim_id": "720485c0-c46d-40e8-bf12-f861d2b223de",
+      "result_id": "53776b50-001b-4aff-88ce-d8db685f1b33"
+    },
+    {
+      "claim_id": "dd5c54a6-f1d1-4d62-a964-6b76e5a00150",
+      "result_id": "53776b50-001b-4aff-88ce-d8db685f1b33"
+    },
+    {
+      "claim_id": "275691a8-0b02-4db1-860b-0ad965e7134c",
+      "result_id": "53776b50-001b-4aff-88ce-d8db685f1b33"
+    },
+    {
+      "claim_id": "fe0abefb-f5bc-41b1-9fe3-07bf07612fc6",
+      "result_id": "53776b50-001b-4aff-88ce-d8db685f1b33"
+    },
+    {
+      "claim_id": "02698cd5-5e05-4916-8c5b-639b649da2c0",
+      "result_id": "53776b50-001b-4aff-88ce-d8db685f1b33"
+    },
+    {
+      "claim_id": "28fd6fcb-a92e-4a6a-a518-5d227f865b8d",
+      "result_id": "94e9db04-2318-4c7c-b3bf-5f4e312ef7bf"
+    },
+    {
+      "claim_id": "0eaee627-b3e0-48e3-9afc-7693de7d8621",
+      "result_id": "94e9db04-2318-4c7c-b3bf-5f4e312ef7bf"
+    },
+    {
+      "claim_id": "aafa922d-71d8-44bf-9117-95f961deab22",
+      "result_id": "94e9db04-2318-4c7c-b3bf-5f4e312ef7bf"
+    },
+    {
+      "claim_id": "1f154527-2695-4039-afa2-31db3d1d10cf",
+      "result_id": "94e9db04-2318-4c7c-b3bf-5f4e312ef7bf"
+    },
+    {
+      "claim_id": "329a7759-06d8-4c66-8c43-f2153e6bbd6d",
+      "result_id": "94e9db04-2318-4c7c-b3bf-5f4e312ef7bf"
+    },
+    {
+      "claim_id": "4966c0da-f709-4526-a1d4-594068c2f614",
+      "result_id": "651c29c9-c43d-418f-ac62-231a1ef67aa2"
+    },
+    {
+      "claim_id": "605731a8-6878-47ca-9083-8ef48be2d902",
+      "result_id": "651c29c9-c43d-418f-ac62-231a1ef67aa2"
+    },
+    {
+      "claim_id": "d970feec-6da8-4804-8c85-53158f73e50c",
+      "result_id": "651c29c9-c43d-418f-ac62-231a1ef67aa2"
+    },
+    {
+      "claim_id": "c2102f00-d4b7-4ccd-9eb9-ae00d59c6285",
+      "result_id": "651c29c9-c43d-418f-ac62-231a1ef67aa2"
+    },
+    {
+      "claim_id": "b290ca19-8e96-4e88-ae1a-45e027b5a156",
+      "result_id": "651c29c9-c43d-418f-ac62-231a1ef67aa2"
+    },
+    {
+      "claim_id": "3362349e-f34d-456d-bcd6-38c423993272",
+      "result_id": "651c29c9-c43d-418f-ac62-231a1ef67aa2"
+    },
+    {
+      "claim_id": "82b3cf75-a539-4b4c-a491-0596e7edef3a",
+      "result_id": "651c29c9-c43d-418f-ac62-231a1ef67aa2"
+    },
+    {
+      "claim_id": "36504f06-f0ed-4f67-923c-4b7dc321b4e9",
+      "result_id": "651c29c9-c43d-418f-ac62-231a1ef67aa2"
+    },
+    {
+      "claim_id": "10b92cb6-b5ff-4d94-9ac3-613ad07450d9",
+      "result_id": "3d85bb56-3b85-4668-adde-d6726ff486ff"
+    },
+    {
+      "claim_id": "e9928e87-8012-44dd-855c-37a953ec9e5a",
+      "result_id": "3d85bb56-3b85-4668-adde-d6726ff486ff"
+    },
+    {
+      "claim_id": "ffa1f2bc-3be1-43ac-a123-0b597a744a09",
+      "result_id": "3d85bb56-3b85-4668-adde-d6726ff486ff"
+    },
+    {
+      "claim_id": "3d24133a-7998-49a0-9ade-d08e0d5b1677",
+      "result_id": "3d85bb56-3b85-4668-adde-d6726ff486ff"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1823 @@
+{
+  "submission": {
+    "id": "b7aead1e-a9fb-4f09-b8d2-e57fc933ddb8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:54:51.186210Z",
+    "updated_at": "2025-12-02T06:54:51.186210Z"
+  },
+  "content": [
+    {
+      "id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "submission_id": "b7aead1e-a9fb-4f09-b8d2-e57fc933ddb8",
+      "content_type": "manuscript",
+      "content_text": "# National and regional seasonal dynamics of all-cause and cause-specific mortality in the USA from 1980 to 2016\n\n## Authors\n\n- Robbie M Parks<sup>1</sup> ([ORCID: 0000-0002-7916-1717](https://orcid.org/0000-0002-7916-1717))\n- James E Bennett<sup>1</sup>\n- Kyle J Foreman<sup>1</sup>\n- Ralf Toumi<sup>5</sup>\n- Majid Ezzati<sup>1</sup> ([ORCID: 0000-0002-2109-8081](https://orcid.org/0000-0002-2109-8081)) \u2020\n\n### Affiliations\n\n1. MRC-PHE Centre for Environment and Health Imperial College London London United Kingdom\n2. Department of Epidemiology and Biostatistics, School of Public Health Imperial College London London United Kingdom\n3. WHO Collaborating Centre on NCD Surveillance and Epidemiology Imperial College London London United Kingdom\n4. Institute for Health Metrics and Evaluation University of Washington Seattle United States\n5. Space and Atmospheric Physics Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn temperate climates, winter deaths exceed summer ones. However, there is limited information on the timing and the relative magnitudes of maximum and minimum mortality, by local climate, age group, sex and medical cause of death. We used geo-coded mortality data and wavelets to analyse the seasonality of mortality by age group and sex from 1980 to 2016 in the USA and its subnational climatic regions. Death rates in men and women \u2265 45 years peaked in December to February and were lowest in June to August, driven by cardiorespiratory diseases and injuries. In these ages, percent difference in death rates between peak and minimum months did not vary across climate regions, nor changed from 1980 to 2016. Under five years, seasonality of all-cause mortality largely disappeared after the 1990s. In adolescents and young adults, especially in males, death rates peaked in June/July and were lowest in December/January, driven by injury deaths.\n\n## Introduction\n\nIt is well-established that death rates vary throughout the year, and in temperate climates there tend to be more deaths in winter than in summer (Campbell, 2017; Fowler et al., 2015; Healy, 2003; McKee, 1989). It has therefore been hypothesized that a warmer world may lower winter mortality in temperate climates (Langford and Bentham, 1995; Martens, 1998). In a large country like the USA, which possesses distinct climate regions, the seasonality of mortality may vary geographically, due to geographical variations in mortality, localized weather patterns, and regional differences in adaptation measures such as heating, air conditioning and healthcare (Davis et al., 2004; Braga et al., 2001; Kalkstein, 2013; Medina-Ram\u00f3n and Schwartz, 2007). The presence and extent of seasonal variation in mortality may also itself change over time (Bobb et al., 2014; Carson et al., 2006; Seretakis et al., 1997; Sheridan et al., 2009).\n\nA thorough understanding of the long-term dynamics of seasonality of mortality, and its geographical and demographic patterns, is needed to identify at-risk groups, plan responses at the present time as well as under changing climate conditions. Although mortality seasonality is well-established, there is limited information on how seasonality, including the timing of minimum and maximum mortality, varies by local climate and how these features have changed over time, especially in relation to age group, sex and medical cause of death (Rau, 2004; Rau et al., 2018).\n\nIn this paper, we comprehensively characterize the spatial and temporal patterns of all-cause and cause-specific mortality seasonality in the USA by sex and age group, through the application of wavelet analytical techniques, to over three decades of national mortality data. Wavelets have been used to study the dynamics of weather phenomena (Moy et al., 2002) and infectious diseases (Grenfell et al., 2001). We also used centre of gravity analysis and circular statistics methods to understand the timing of maximum and minimum mortality. In addition, we identify how the percentage difference between death rates in maximum and minimum mortality months has changed over time.\n\n## Results\n\nTable 1 presents number of deaths by cause of death and sex. Deaths from cardiorespiratory diseases make up nearly half of all deaths (48.1%), with most deaths in that group from cardiovascular diseases. Next highest during the study period were deaths from cancers (23.2%), followed by injuries (6.8%), with two thirds of those being from unintentional injuries.\n\n**Table 1.**\n Number of deaths, by cause of death and sex from 1980 to 2016.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\">Cause</th>\n      <th>Male</th>\n      <th>Female</th>\n      <th>Total</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">All cause</td>\n      <td>43,558,203</td>\n      <td>42,295,973</td>\n      <td>85,854,176</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"2\">Cancers</td>\n      <td>10,481,582</td>\n      <td>9,476,530</td>\n      <td>19,958,112</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"2\">Cardiorespiratory diseases</td>\n      <td>20,168,049</td>\n      <td>21,109,525</td>\n      <td>41,277,574</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Cardiovascular diseases</td>\n      <td>16,238,344</td>\n      <td>17,210,556</td>\n      <td>33,448,900</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Chronic respiratory diseases</td>\n      <td>2,791,652</td>\n      <td>2,595,950</td>\n      <td>5,387,602</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Respiratory infections</td>\n      <td>1,138,053</td>\n      <td>1,303,019</td>\n      <td>2,441,072</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"2\">Injuries</td>\n      <td>4,034,876</td>\n      <td>1,768,170</td>\n      <td>5,803,046</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Unintentional</td>\n      <td>2,489,142</td>\n      <td>1,348,187</td>\n      <td>3,837,329</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Intentional</td>\n      <td>1,545,734</td>\n      <td>419,983</td>\n      <td>1,965,717</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"2\">Other causes</td>\n      <td>8,873,696</td>\n      <td>9,941,748</td>\n      <td>18,815,444</td>\n    </tr>\n  </tbody>\n</table>\n\nAll-cause mortality in males had a 12 month seasonality in all age groups, except ages 35\u201344 years, for whom there was periodicity at 6 months (Figure 1). In females, there was 12 month seasonality in all groups except 5\u201314 and 25\u201334 years (p-values=0.21 and 0.25, respectively) (Figure 2). While seasonality persisted throughout the entire analysis period in older ages, it largely disappeared after the\u00a0late 1990s in children aged 0\u20134 years in both sexes and in women aged 15\u201324 years.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig1-v1.jpg)\n\n**Figure 1.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig2-v1.jpg)\n\n**Figure 2.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\nDeaths from all causes of death were seasonal in older adults (above 65 or 75 years depending on cause, p-values<0.06) (Figures 1\u201310 and respective figure supplements), except for intentional injuries and substance use disorders. Deaths from cardiorespiratory diseases, and within it respiratory infections, exhibited seasonality throughout the life-course (p-values<0.06) except for males aged 5\u201324 years and females aged 15\u201324 years (p-values>0.11). In addition to older ages, injury deaths were seasonal from childhood through 44 years in women and through 64 years in men (p-values<0.09). Unintentional injuries drove the seasonality of injury deaths for females, whereas both unintentional and intentional injuries were seasonal in males in most ages, with the exception of below 15 years and above 85 years when intentional injuries were not seasonal (Figure 7\u2014figure supplement 1). Consistent seasonality in cancer deaths (Figures 3,4) only appeared after 55 years of age (p-values<0.05). No consistent seasonality was evident in substance use disorders (Figure 9\u2014figure supplement 1 and Figure 10\u2014figure supplement 1) or maternal conditions (Figure 10\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig3-v1.jpg)\n\n**Figure 3.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig4-v1.jpg)\n\n**Figure 4.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig5-v1.jpg)\n\n**Figure 5.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig6-v1.jpg)\n\n**Figure 6.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig7-v1.jpg)\n\n**Figure 7.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig8-v1.jpg)\n\n**Figure 8.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig8-figsupp2-v1.jpg)\n\n**Figure 8\u2014figure supplement 2.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig9-v1.jpg)\n\n**Figure 9.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig9-figsupp1-v1.jpg)\n\n**Figure 9\u2014figure supplement 1.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig9-figsupp2-v1.jpg)\n\n**Figure 9\u2014figure supplement 2.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 9\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig9-figsupp3-v1.jpg)\n\n**Figure 9\u2014figure supplement 3.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 9\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig9-figsupp4-v1.jpg)\n\n**Figure 9\u2014figure supplement 4.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 9\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig9-figsupp5-v1.jpg)\n\n**Figure 9\u2014figure supplement 5.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig10-v1.jpg)\n\n**Figure 10.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig10-figsupp1-v1.jpg)\n\n**Figure 10\u2014figure supplement 1.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 10\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig10-figsupp2-v1.jpg)\n\n**Figure 10\u2014figure supplement 2.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 10\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig10-figsupp3-v1.jpg)\n\n**Figure 10\u2014figure supplement 3.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 10\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig10-figsupp4-v1.jpg)\n\n**Figure 10\u2014figure supplement 4.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 10\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig10-figsupp5-v1.jpg)\n\n**Figure 10\u2014figure supplement 5.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\n![Figure 10\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig10-figsupp6-v1.jpg)\n\n**Figure 10\u2014figure supplement 6.:** Wavelet power values increase from blue to red. The shaded regions at the left and right edge of each box indicate the cone of influence, where spectral analysis is less robust. P-values for the presence of 12 month seasonality are to the right of each figure at the 12 month line.\n\nCentre of gravity analysis showed that death rates in men aged\u00a0\u226545 years and women aged\u00a0\u226535 years peaked in December, January or February and were lowest in June to August, for all-cause mortality as well as for all non-injury and non-maternal causes of death (Figure 11 and respective figure supplements). Deaths from cardiorespiratory diseases, including cardiovascular diseases, chronic respiratory diseases and respiratory infections, were also consistently highest in January and February and lowest in July and August across all ages, except for chronic respiratory diseases in ages 5\u201324 years where there are few deaths from this cause leading to unstable estimates (p-values for seasonality from wavelet analysis ranged from 0.35 to 0.48 for these ages). A similar temporal pattern was seen for all-cause and non-injury mortality in children younger than five years of age, whose all-cause death rate was highest in February and lowest in August. In contrast, among males aged 5\u201334 years, all-cause mortality peaked in June or July, as did deaths from injuries, which generally had a summer peak in males and females below 45 years of age.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig11-v1.jpg)\n\n**Figure 11.:** Red arrows indicate the month of maximum mortality, and green arrows that of minimum mortality. The size of the arrow is inversely proportional to its respective variance.\n\n![Figure 11\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig11-figsupp1-v1.jpg)\n\n**Figure 11\u2014figure supplement 1.:** Red arrows indicate the month of maximum mortality, and green arrows that of minimum mortality. The size of the arrow is inversely proportional to its respective variance.\n\n![Figure 11\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig11-figsupp2-v1.jpg)\n\n**Figure 11\u2014figure supplement 2.:** Red arrows indicate the month of maximum mortality, and green arrows that of minimum mortality. The size of the arrow is inversely proportional to its respective variance.\n\n![Figure 11\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig11-figsupp3-v1.jpg)\n\n**Figure 11\u2014figure supplement 3.:** Red arrows indicate the month of maximum mortality, and green arrows that of minimum mortality. The size of the arrow is inversely proportional to its respective variance.\n\nFrom 1980 to 2016, the proportional (percent) difference in all-cause death rates between peak and minimum months declined little for people older than 45 years of age (by less than eight percentage points with p-values for declining trend\u00a0>0.1) (Figure 12). In contrast, the difference between peak (summer) and minimum (winter) death rates declined in younger ages, by over 25 percentage points in males aged 5\u201314 years and 15\u201324 years (p-values<0.01), largely driven in the declining difference between summer and winter injury deaths. Under five years of age, percent seasonal difference in all-cause death rates declined by 13 percentage points (p-value<0.01) for boys but only five percentage points (p-value=0.12) for girls. These declines in seasonality of child deaths were a net effect of declining winter-summer difference in cardiorespiratory diseases deaths and increasing summer-winter difference in injury deaths, itself driven by increasing difference in non-intentional injuries (Figure 12\u2014figure supplement 1). Within specific cardiorespiratory diseases in under-five children, percent difference declined for cardiorespiratory diseases, cardiovascular diseases, and chronic respiratory diseases while increasing for respiratory infections.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig12-v1.jpg)\n\n![Figure 12\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig12-figsupp1-v1.jpg)\n\n![Figure 12\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig12-figsupp2-v1.jpg)\n\n![Figure 12\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig12-figsupp3-v1.jpg)\n\nThe subnational centre of gravity analysis showed that all-cause mortality peaks and minima in different climate regions are consistent with the national ones (Figures 13\u201316), indicating that seasonality is largely independent of geography. The relative homogeneity of the timing of maximum and minimum mortality contrasts with the large variation in seasonal temperatures among climate regions. For example, in men and women aged 65\u201374 years, all-cause mortality peaked in February in the Northeast and Southeast, even though the average temperatures for those regions were different by over 13 degrees Celsius (9.3 in the Southeast compared with \u22123.8 in the Northeast). Furthermore, above 45 years of age, there was little inter-region variation in the percent seasonal difference in all-cause mortality, despite the large variation in temperature difference between the peak and minimum months (Figure 17).\n\n![Figure 13.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig13-v1.jpg)\n\n**Figure 13.:** Average temperatures (in degrees Celsius) are included in white for the corresponding month of maximum and minimum mortality for each climate region.\n\n![Figure 14.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig14-v1.jpg)\n\n**Figure 14.:** Average temperatures (in degrees Celsius) are included in white for the corresponding month of maximum and minimum mortality for each climate region.\n\n![Figure 15.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig15-v1.jpg)\n\n**Figure 15.:** Average temperatures (in degrees Celsius) are included in white for the corresponding month of maximum and minimum mortality for each climate region.\n\n![Figure 16.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig16-v1.jpg)\n\n**Figure 16.:** Average temperatures (in degrees Celsius) are included in white for the corresponding month of maximum and minimum mortality for each climate region.\n\n![Figure 17.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig17-v1.jpg)\n\n### Strengths and limitations\n\nThe strengths of our study are its innovative methods of characterizing seasonality of mortality dynamically over space and time, by age group and cause of death; using wavelet and centre of gravity analyses; using ERA-Interim data output to compare the association between seasonality of death rates and regional temperature. A limitation of our study is that we did not investigate seasonality of mortality by socioeconomic characteristics which may help with understanding its determinants and planning responses.\n\n## Discussion\n\nWe used wavelet and centre of gravity analyses, which allowed systematically identifying and characterizing seasonality of total and cause-specific mortality in the USA, and examining how seasonality has changed over time. We identified distinct seasonal patterns in relation to age and sex, including higher all-cause summer mortality in young men (Feinstein, 2002; Rau et al., 2018). Importantly, we also showed that all-cause and cause-specific mortality seasonality is largely similar in terms of both timing and magnitude across diverse climatic regions with substantially different summer and winter temperatures. Insights of this kind would not have been possible analysing data averaged over time or nationally, or fixed to pre-specified frequencies.\n\nPrior studies have noted seasonality of mortality for all-cause mortality and for specific causes of death in the USA (Feinstein, 2002; Kalkstein, 2013; Rau, 2004; Rau et al., 2018; Rosenwaike, 1966; Seretakis et al., 1997). Few of these studies have done consistent national and subnational analyses, and none has done so over time, for a comprehensive set of age groups and causes of death, and in relation to regional temperature differences. Our results on strong seasonality of cardiorespiratory diseases deaths and weak seasonality of cancer deaths, restricted to older ages, are broadly consistent with these studies (Feinstein, 2002; Rau et al., 2018; Rosenwaike, 1966; Seretakis et al., 1997), which had limited analysis on how seasonality changes over time and geography (Feinstein, 2002; Rau et al., 2018; Rosenwaike, 1966). Similarly, our results on seasonality of injury deaths are supported by a few prior studies (Feinstein, 2002; Rau et al., 2018; Rosenwaike, 1966), but our subnational analysis over three decades revealed variations in when injury deaths peaked and in how seasonal differences in these deaths have changed over time in relation to age group which had not been reported before.\n\nA study of 36 cities in the USA, aggregated across age groups and over time, also found that excess mortality was not associated with seasonal temperature range (Kinney et al., 2015). In contrast, a European study found that the difference between winter and summer mortality was lower in colder Nordic countries than in warmer southern European nations (Healy, 2003; McKee, 1989)\u00a0(the study\u2019s measure of temperature was mean annual temperature which differed from the temperature difference between maximum and minimum mortality used in our analysis although the two measures are correlated). The absence of variation in the magnitude of mortality seasonality indicates that different regions in the USA are similarly adapted to temperature seasonality, whereas Nordic countries may have better environmental (e.g. housing insulation and heating) and health system measures to counter the effects of cold winters than those in southern Europe. If the observed absence of association between the magnitude of mortality seasonality and seasonal temperature difference across the climate regions also persists over time, the changes in temperature as a result of global climate change are unlikely to affect the winter-summer mortality difference.\n\nThe cause-specific analysis showed that the substantial decline in seasonal mortality differences in adolescents and young adults was related to the diminishing seasonality of (unintentional) injuries, especially from road traffic crashes, which are more likely to occur in the summer months (Liu et al., 2005)\u00a0and are more common in men. The weakening of seasonality in boys under five years of age was related to two phenomena: first, the seasonality of death from cardiorespiratory diseases declined, and second, the proportion of deaths from perinatal conditions, which exhibit limited seasonality (Figure 9\u2014figure supplement 2 and Figure 10\u2014figure supplement 3), increased (MacDorman and Gregory, 2015).\n\nIn contrast to young and middle ages, mortality in older ages, where death rates are highest, maintained persistent seasonality over a period of three decades (we note that although the percent seasonal difference in mortality has remained largely unchanged in these ages, the absolute difference in death rates between the peak and minimum months has declined because total mortality has a declining long-term trend). This finding demonstrates the need for environmental and health service interventions targeted towards this group irrespective of geography and local climate. Examples of such interventions include enhancing the availability of both environmental and medical protective factors, such as better insulation of homes, winter heating provision and flu vaccinations, for the vulnerable older population (Katiyo et al., 2017).\u00a0Social interventions, including regular visits to the isolated elderly during peak mortality periods to ensure that they are optimally prepared for adverse conditions, and responsive and high-quality emergency care, are also important to protect this vulnerable group (Healy, 2003; Lerchl, 1998; Katiyo et al., 2017). Emergent new technologies, such as always-connected hands-free communications devices with the outside world, in-house cameras, and personal sensors also provide an opportunity to enhance care for the older, more vulnerable groups in the population, especially in winter when the elderly have fewer social interactions (Morris, 2013). Such interventions are important today, and will remain so as the population ages and climate change increases the within- and between-season weather variability.\n\n## Materials and methods\n\n### Data\n\nWe used data on all 85,854,176 deaths in the USA from 1980 to 2016 from the National Center for Health Statistics (NCHS). Age, sex, state of residence, month of death, and underlying cause of death were available for each record. The underlying cause of death was coded according to the international classification of diseases (ICD) system (9th revision of ICD from 1980 to 1998 and 10th revision of ICD thereafter). Yearly population counts were available from NCHS for 1990 to 2016 and from the US Census Bureau prior to 1990 (Ingram et al., 2003). We calculated monthly population counts through linear interpolation, assigning each yearly count to July.\n\nWe also subdivided the national data geographically into nine climate regions used by the National Oceanic and Atmospheric Administration (Figure 18 and Table 2) (Karl and Koss, 1984). On average, the Southeast and South are the hottest climate regions with average annual temperatures of 18.4\u00b0C and 18\u00b0C respectively; the South also possesses the highest average maximum monthly temperature (27.9\u00b0C in July). The lowest variation in temperature throughout the year is that of the Southeast (an average range of 17.5\u00b0C). The three coldest climate regions are West North Central, East North Central and the Northwest (7.6\u00b0C, 8.0\u00b0C, 8.2\u00b0C respectively). Mirroring the characteristics of the hottest climate regions, the largest variation in temperature throughout the year is that of the coldest region, West North Central (an average range of 30.5\u00b0C), which also has the lowest average minimum monthly temperature (\u22126.5\u00b0C in January). The other climate regions, Northeast, Southwest, and Central, possess similar average temperatures (10\u00b0C to 14\u00b0C) and variation within the year of (23\u00b0C to 26\u00b0C), with the Northeast being the most populous region in the United States (with 19.8% total population in 2016).\n\n![Figure 18.](https://cdn.elifesciences.org/articles/35500/elife-35500-fig18-v1.jpg)\n\n**Table 2.**\n Characteristics of climate regions of the USA.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Climate region</th>\n      <th>Constituent states</th>\n      <th>Population (2016)</th>\n      <th>Mean annual temperature (1980\u20132016) (\u00b0C)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Central</td>\n      <td>Illinois, Indiana, Kentucky, Missouri, Ohio, Tennessee, West Virginia</td>\n      <td>50,191,326</td>\n      <td>11.6</td>\n    </tr>\n    <tr>\n      <td>East North Central</td>\n      <td>Iowa, Michigan, Minnesota, Wisconsin</td>\n      <td>24,418,738</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Northeast</td>\n      <td>Connecticut, Delaware, Maine, Maryland, Massachusetts, New Hampshire, New Jersey, New York, Pennsylvania, Rhode Island, Vermont</td>\n      <td>64,046,741</td>\n      <td>10.6</td>\n    </tr>\n    <tr>\n      <td>Northwest</td>\n      <td>Alaska, Idaho, Oregon, Washington</td>\n      <td>13,811,810</td>\n      <td>8.2</td>\n    </tr>\n    <tr>\n      <td>South</td>\n      <td>Arkansas, Kansas, Louisiana, Mississippi, Oklahoma, Texas</td>\n      <td>45,388,414</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>Southeast</td>\n      <td>Alabama, Florida, Georgia, North Carolina, South Carolina, Virginia</td>\n      <td>59,356,072</td>\n      <td>18.4</td>\n    </tr>\n    <tr>\n      <td>Southwest</td>\n      <td>Arizona, Colorado, New Mexico, Utah</td>\n      <td>17,613,981</td>\n      <td>13.6</td>\n    </tr>\n    <tr>\n      <td>West</td>\n      <td>California, Hawaii, Nevada</td>\n      <td>43,708,574</td>\n      <td>16.6</td>\n    </tr>\n    <tr>\n      <td>West North Central</td>\n      <td>Montana, Nebraska, North Dakota, South Dakota, Wyoming</td>\n      <td>5,168,753</td>\n      <td>7.6</td>\n    </tr>\n  </tbody>\n</table>\n\nData were divided by sex and age in the following 10 age groups: 0\u20134, 5\u201314, 15-24,\u00a025\u201334, 35\u201344, 45\u201354, 55\u201364, 65\u201374, 75\u201384, 85+\u00a0years. We calculated monthly death rates for each age and sex group, both nationally and for sub-national climate regions. Death rate calculations accounted for varying length of months, by multiplying each month\u2019s death count by a factor that would make it equivalent to a 31 day month.\n\nFor analysis of seasonality by cause of death, we mapped each ICD-9 and ICD-10 codes to four main disease categories (Table 1) and to a number of subcategories which are presented in the Supplementary Note. Cardiorespiratory diseases and cancers accounted for 56.4% and 21.2% of all deaths in the USA, respectively, in 1980, and 40.3% and 22.4%, respectively, in 2016. Deaths from cardiorespiratory diseases have been associated with cold and warm temperatures (Basu, 2009; Basu and Samet, 2002; Bennett et al., 2014; Braga et al., 2002; Gasparrini et al., 2015). Injuries, which accounted for 8% of all deaths in the USA in 1980 and 7.3% in 2016, may have seasonality that is distinct from so-called natural causes. We did not further divide other causes because the number of deaths could become too small to allow stable estimates when divided by age group, sex and climate region.\n\nWe obtained data on temperature from ERA-Interim, which combines predictions from a physical model with ground-based and satellite measurements (Dee et al., 2011). We used gridded four-times-daily estimates at a resolution of 80 km to generate monthly population-weighted temperature by climate region throughout the analysis period.\n\n### Statistical methods\n\nWe used wavelet analysis to investigate seasonality for each age-sex group. Wavelet analysis uncovers the presence, and frequency, of repeated maxima and minima in each age-sex-specific death rate time series (Hubbard, 1998; Torrence and Compo, 1998). In brief, a Morlet wavelet, described in detail elsewhere (Cazelles et al., 2008), is equivalent to using a moving window on the death rate time series and analysing periodicity in each window using a short-form Fourier transform, hence generating a dynamic spectral analysis, which allows measuring dynamic seasonal patterns, in which the periodicity of death rates may disappear, emerge, or change over time. In addition to coefficients that measure the frequency of periodicity, wavelet analysis estimates the probability of whether the data are different from the null situation of random fluctuations that can be represented with white (an independent random process) or red (autoregressive of order one process) noise. For each age-sex group, we calculated the p-values of the presence of 12 month seasonality for the comparison of wavelet power spectra of the entire study period (1980\u20132016) with 100 simulations against a white noise spectrum, which represents random fluctuations. We used the R package WaveletComp (version 1.0) for the wavelet analysis. Before analysis, we de-trended death rates using a polynomial regression, and rescaled each death rate time series so as to range between 1 and \u22121.\n\nTo identify the months of maximum and minimum death rates, we calculated the centre of gravity and the negative centre of gravity of monthly death rates. Centre of gravity was calculated as a weighted average of months of deaths, with each month weighted by its death rate; negative centre of gravity was also calculated as a weighted average of months of deaths, but with each month was weighted by the difference between its death rate and the year\u2019s maximum death rate. In taking the weighted average, we allowed December (month 12) to neighbour January (month 1), representing each month by an angle subtended from 12 equally-spaced points around a unit circle. Using a technique called circular statistics, a mean $(\\theta-)$of the angles ($\\theta_{1},\\theta_{2},\\theta_{3}\u2026,\\theta_{n,}$) representing the deaths (with n the total number of deaths in an age-sex group for a particular cause of death) is found using the relation below:\n\n$$\n\\theta-=arg\\sumj=1nexp\u2061(i\\theta_{j}),\n$$\n\nwhere arg denotes the complex number argument and $\\theta_{j}$ denotes the month of death in angular form for a particular death j. The outcome of this calculation is then converted back into a month value (Fisher, 1995).\u00a0Along with each circular mean, a 95% confidence interval (CI) was calculated by using 1000 bootstrap samples. The R package CircStats (version 0.2.4) was used for this analysis.\n\nFor each age-sex group and cause of death, and for each year, we calculated the percent difference in death rates between the maximum and minimum mortality months. We fitted a linear regression to the time series of seasonal differences from 1980 to 2016, and used the fitted trend line to estimate how much the percentage difference in death rates between the maximum and minimum mortality months had changed from 1980 to 2016. We weighted seasonal difference by the inverse of the square of its standard error, which was calculated using a Poisson model to take population size of each age-sex group through time into account. This method gives us a p-value for the change in seasonal difference per year, which we used to calculate the seasonal difference at the start (1980) and end (2016) of the period of study. Our method of analysing seasonal differences avoids assuming that any specific month or group of months represent highest and lowest number of deaths for a particular cause of death, which is the approach taken by the traditional measure of Excess Winter Deaths. It also allows the maximum and minimum mortality months to vary by age group, sex and cause of death.\n",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "b6df4308-d67e-46cd-a068-864521a99328",
+      "submission_id": "b7aead1e-a9fb-4f09-b8d2-e57fc933ddb8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eduardo Franco, McGill University Canada\n\nReviewers:\n- Tom Fowler, University of Birmingham United Kingdom\n- Patrick Brown, University of Toronto Canada\n\n## Review text\n\nDOI: [10.7554/eLife.35500.062](https://doi.org/10.7554/eLife.35500.062)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"National and regional seasonal dynamics of all-cause and cause-specific mortality in the USA from 1980 to 2013\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Eduardo Franco as a Reviewing Editor and Prabhat Jha as the Senior Editor. The Reviewing Editor has drafted this decision to help you prepare a revised submission. As is common in eLife, decision narratives are an amalgamation of the essential points of the reviewers' critiques after eliminating redundancies in comments and suggestions.\n\nSummary:\n\nThis paper examines the seasonality in age- and disease-specific mortality in the US using geocoded data analyzed via wavelet statistical modelling and Poisson regression techniques. The key results indicate mortality increases in adults over 45 years old in winter from cardiorespiratory causes and injuries. Injuries, attributable mainly to road traffic crashes were seen to rise in the summer months among young men. No variation in seasonality was found by climate region, indicating no apparent disparities in adaptation by geographic location. This study provides insights as to whether climate changes could have an impact on the mortality patterns observed in the US as a model. The findings could assist in planning surveillance mechanisms and in projecting workforce requirements in primary and emergency healthcare.\n\nEssential revisions:\n\n1) By choosing only 4 disease groups the authors seem to have missed a key opportunity to investigate seasonal patterns in finer subgroups despite possessing a large sample size (n = 77,771,264), Furthermore, the rationale for choosing the subgroups presented is unclear. For example, the authors chose to group cardiorespiratory diseases into one large outcome when cardiovascular and respiratory outcomes have differing mechanisms in their association with heat or cold exposure. Within respiratory diseases itself, it makes sense to separate acute and chronic causes because the mechanisms vary so starkly and are related to seasonal patterns, i.e. the incidence of pneumonia and acute respiratory outcomes are likely heightened in the winter and this observation may differ to how/why the incidence of chronic respiratory deaths vary seasonally. Furthermore, the mechanisms for how heat is associated with elevated respiratory deaths is understudied and knowing more about seasonal patterns here would be a useful addition to the literature.\n\nI believe it's important to investigate seasonal patterns of deaths from infectious disease, maternal and neonatal causes, endocrine disorders, genitourinary conditions and neuropsychiatric conditions (which are all associated with temperature) to add valuable insight into understudied but important disease groups, but these have been excluded from the present analysis. Considering the tragic opioid epidemic in USA, it would be a valuable contribution to the literature to understand whether seasonal patterns (at least in more recent years) are observed with deaths related to substance use disorders.\n\n2) The authors pointed out in the Introduction that global warming may impact on excess cold weather death rates. Presumably a major part of the rationale for testing the differences in regions over time was to help inform our understanding of what the impact may be. However no conclusions were reached with regard to the implications of the findings. Clearly any such conclusions would need to be appropriately and heavily caveated but as this is a major reason for the analysis. Please expand the Discussion to include these points.\n\n3) Methodology:\n\nA) Wavelet power spectra are not always easy to interpret, and the uncertainty in estimated wavelet coefficients is difficult to quantify. The wavelet analysis makes for an interesting exploratory tool, showing that for the most part cycles have a duration of 12 months and are reasonably stable over time. It does not seem possible to draw firm conclusions about the research hypothesis using wavelets, however. All cause male mortality for 15-24 year olds appears to be less cyclical in recent years, although how to quantify this effect and assign a statistical significance to it is not apparent from the power spectrum shown.\n\nThe second analysis is more appropriate, although the details of this analysis are sparse. It appears that the model used is something like the following, where Yit is the count of deaths in age group i at time t.\n\n--------------------- -------------------------------------\n\nYit\u223c Poisson(Nit \u22c5 \u03bbit)log(\u03bbit)= \u03bci + \u03b2it + Mit \u22c5 [\u03b11i \u22c5 cos(2\u03c0t/12)\n\n+\u03b12i \u22c5 sin(2\u03c0t/12)+\u03b13i \u22c5 cos(2\u03c0t/6)\n\n+\u03b14i \u22c5 sin(2\u03c0t/6)]\n\nMit= \u03c1i + \u03b3it\n\n--------------------- -------------------------------------\n\nA model of this could answer the following questions, with p-values produced from a likelihood ratio test.\n\n- Is \u03b3i negative? If so the seasonal effect is becoming less severe for age group i.\n\n- Does it look like all age groups have the same trend, with \u03b3i = \u03b3\u2080 for all i?\n\n- Do all age groups have the same cycle, with \u03b1pi = \u03b1p0?\n\n- Does \u03b3 vary by region (negative in cold-climate regions?)\n\n- Do the cycles, given by the \u03b1, vary by region or is a nation-wide cycle sufficient?\n\nThe above model is easier to interpret than the wavelet analysis. The quantity 1 \u2212 exp(120\u03b3) is the change per decade in the seasonality effect, which could be reported with a 95% confidence interval.\n\nB) The approach is different to a number of those referenced (particularly the standard measure of excess winter deaths). It would be helpful to have some comment on this, particularly the generalisability to other studies. The focus has been on peak months in this analysis, but the standard assessment of excess winter deaths is to compare December to March months to the rest of the year.\n\nC) Appropriate rationale was given to the regional splits used in the analysis. However no description was given of the characteristics of these regional areas other than subsequent information on temperatures. As pointed out there could be a number of factors that are important. I would expect some reference to their differing characteristics.\n\n4) Interpretation:\n\nA) No table is presented with descriptive statistics, i.e. on the sample size of cases that fall into each disease category.\n\nB) I may be misreading the paper (in which case it would be helpful to clarify so others do not make the same mistake), however the analysis in Figure 6 compares the difference in temperature experienced in those regions between the warmest and coldest months versus the% seasonal difference in death. In the Discussion this in contrasted with findings from Europe where countries with a more temperate winter have, paradoxically, higher rates of excess winter mortality. However this is not an appropriate direct comparison, regional extremes in variation were not looked at when comparisons between countries are made. This does not invalidate the comparison but it would be helpful to explicitly summarise if there are any differences between regions and examine what those are.\n\nC) One option for this paper would be to be admittedly exploratory, avoiding the use of the word 'significant' and simplifying the analysis. Simple monthly averages and testing for the months having the same mean could replace the wavelet analysis. A second option would be to focus on a specific research hypothesis, explain carefully how the model estimates relate to this research hypothesis, and adjust the p-values for multiple testing.\n",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5a124978-abc3-4818-aa3d-adb3eae148bd",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C1",
+      "claim": "In temperate climates, winter deaths exceed summer ones.",
+      "claim_type": "EXPLICIT",
+      "source": "In temperate climates, winter deaths exceed summer ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact stated in the abstract, supported by citations in the introduction (Campbell, 2017; Fowler et al., 2015; Healy, 2003; McKee, 1989).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "c617f577-5aad-4cf8-99b2-620193f8ab58",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C2",
+      "claim": "Death rates in men and women \u2265 45 years peaked in December to February and were lowest in June to August.",
+      "claim_type": "EXPLICIT",
+      "source": "Death rates in men and women \u2265 45 years peaked in December to February and were lowest in June to August, driven by cardiorespiratory diseases and injuries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is directly stated in the abstract and supported by Figure 11 showing center of gravity analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "4e310930-d9a1-44cb-89a4-2b94de7f592d",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C3",
+      "claim": "Seasonality of all-cause mortality in men and women \u2265 45 years is driven by cardiorespiratory diseases and injuries.",
+      "claim_type": "EXPLICIT",
+      "source": "Death rates in men and women \u2265 45 years peaked in December to February and were lowest in June to August, driven by cardiorespiratory diseases and injuries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this causal relationship, supported by cause-specific analysis in Figures 5-7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "09d05204-cfa6-4e9d-b8aa-a25ee9a4c2c0",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C4",
+      "claim": "Percent difference in death rates between peak and minimum months did not vary across climate regions for ages \u2265 45 years.",
+      "claim_type": "EXPLICIT",
+      "source": "In these ages, percent difference in death rates between peak and minimum months did not vary across climate regions, nor changed from 1980 to 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by Figure 17 showing regional comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "39c3d563-192f-47bf-973d-1cfda2ac4838",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C5",
+      "claim": "Percent difference in death rates between peak and minimum months did not change from 1980 to 2016 for ages \u2265 45 years.",
+      "claim_type": "EXPLICIT",
+      "source": "In these ages, percent difference in death rates between peak and minimum months did not vary across climate regions, nor changed from 1980 to 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This temporal stability is stated in the abstract and shown in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "787e33b4-d736-4f47-8fca-b4280d605f19",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C6",
+      "claim": "Seasonality of all-cause mortality largely disappeared after the 1990s in children under five years.",
+      "claim_type": "EXPLICIT",
+      "source": "Under five years, seasonality of all-cause mortality largely disappeared after the 1990s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figures 1 and 2 showing wavelet analysis for ages 0-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "08ba8a86-f62a-4a61-8d2c-e71f09cc245e",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C7",
+      "claim": "In adolescents and young adults, especially males, death rates peaked in June/July and were lowest in December/January.",
+      "claim_type": "EXPLICIT",
+      "source": "In adolescents and young adults, especially in males, death rates peaked in June/July and were lowest in December/January, driven by injury deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and shown in Figure 11 center of gravity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "c711f4a1-a95e-4019-b34e-8d32a06d1a9e",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C8",
+      "claim": "Summer mortality peak in adolescents and young adults is driven by injury deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "In adolescents and young adults, especially in males, death rates peaked in June/July and were lowest in December/January, driven by injury deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this causal relationship, supported by injury-specific analysis in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "476002d1-244b-476b-a2fc-b7b48ee07418",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C9",
+      "claim": "There were 85,854,176 deaths in the USA from 1980 to 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "We used data on all 85,854,176 deaths in the USA from 1980 to 2016 from the National Center for Health Statistics (NCHS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the total number of deaths analyzed, stated in the Materials and methods section and shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "71eee382-e530-4861-a84f-b20723e59609",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C10",
+      "claim": "Deaths from cardiorespiratory diseases make up nearly half of all deaths (48.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "Deaths from cardiorespiratory diseases make up nearly half of all deaths (48.1%), with most deaths in that group from cardiovascular diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This percentage is stated in the Results section and shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "7449bf11-97a6-4b2e-8e48-d3276dc61bb8",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C11",
+      "claim": "Most cardiorespiratory disease deaths are from cardiovascular diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Deaths from cardiorespiratory diseases make up nearly half of all deaths (48.1%), with most deaths in that group from cardiovascular diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by Table 1 showing 33,448,900 cardiovascular deaths out of 41,277,574 cardiorespiratory deaths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "83c02d8d-f71b-4dfe-b117-3938678abe15",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C12",
+      "claim": "Deaths from cancers accounted for 23.2% of all deaths during the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "Next highest during the study period were deaths from cancers (23.2%), followed by injuries (6.8%), with two thirds of those being from unintentional injuries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This percentage is stated in the Results section and shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "d7a03a4e-a25a-489b-8bbd-25a258b976a2",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C13",
+      "claim": "Deaths from injuries accounted for 6.8% of all deaths during the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "Next highest during the study period were deaths from cancers (23.2%), followed by injuries (6.8%), with two thirds of those being from unintentional injuries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This percentage is stated in the Results section and shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "8f355a22-9834-416b-8c22-e50073d85f4a",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C14",
+      "claim": "Two thirds of injury deaths were from unintentional injuries.",
+      "claim_type": "EXPLICIT",
+      "source": "Next highest during the study period were deaths from cancers (23.2%), followed by injuries (6.8%), with two thirds of those being from unintentional injuries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This proportion is stated in the Results section and supported by Table 1 showing 3,837,329 unintentional out of 5,803,046 total injury deaths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "6d4a723c-fde7-4a78-a307-32b699fc34e5",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C15",
+      "claim": "All-cause mortality in males had a 12 month seasonality in all age groups except ages 35\u201344 years.",
+      "claim_type": "EXPLICIT",
+      "source": "All-cause mortality in males had a 12 month seasonality in all age groups, except ages 35\u201344 years, for whom there was periodicity at 6 months (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and demonstrated in Figure 1 wavelet analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "a50c83b6-5a5a-444d-8a4d-7d73910ad405",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C16",
+      "claim": "All-cause mortality in males aged 35-44 years had periodicity at 6 months.",
+      "claim_type": "EXPLICIT",
+      "source": "All-cause mortality in males had a 12 month seasonality in all age groups, except ages 35\u201344 years, for whom there was periodicity at 6 months (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "63cd9798-d279-40b7-ba87-5a08ca63efc6",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C17",
+      "claim": "In females, there was 12 month seasonality in all groups except 5\u201314 and 25\u201334 years.",
+      "claim_type": "EXPLICIT",
+      "source": "In females, there was 12 month seasonality in all groups except 5\u201314 and 25\u201334 years (p-values=0.21 and 0.25, respectively) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with p-values and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "7ba12248-3a07-4fea-8159-bb7fbc6ab3a3",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C18",
+      "claim": "Seasonality persisted throughout the entire analysis period in older ages.",
+      "claim_type": "EXPLICIT",
+      "source": "While seasonality persisted throughout the entire analysis period in older ages, it largely disappeared after the late 1990s in children aged 0\u20134 years in both sexes and in women aged 15\u201324 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This temporal pattern is stated in the Results section and visible in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "dce000e2-315f-49f7-b3b6-e92ef4789858",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C19",
+      "claim": "Seasonality largely disappeared after the late 1990s in children aged 0\u20134 years in both sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "While seasonality persisted throughout the entire analysis period in older ages, it largely disappeared after the late 1990s in children aged 0\u20134 years in both sexes and in women aged 15\u201324 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This temporal change is stated in the Results section and visible in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "10659cd1-5d12-4df7-9786-c329eda1d6db",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C20",
+      "claim": "Seasonality largely disappeared after the late 1990s in women aged 15\u201324 years.",
+      "claim_type": "EXPLICIT",
+      "source": "While seasonality persisted throughout the entire analysis period in older ages, it largely disappeared after the late 1990s in children aged 0\u20134 years in both sexes and in women aged 15\u201324 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This temporal change is stated in the Results section and visible in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "f2c87842-0bc5-49d0-9bbe-623cee7d9072",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C21",
+      "claim": "Deaths from all causes of death were seasonal in older adults (above 65 or 75 years depending on cause).",
+      "claim_type": "EXPLICIT",
+      "source": "Deaths from all causes of death were seasonal in older adults (above 65 or 75 years depending on cause, p-values<0.06) (Figures 1\u201310 and respective figure supplements), except for intentional injuries and substance use disorders.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with p-values and supported by multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "56d54fc0-122b-4dd8-85d2-e2a59b65ca0a",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C22",
+      "claim": "Intentional injuries were not seasonal in older adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Deaths from all causes of death were seasonal in older adults (above 65 or 75 years depending on cause, p-values<0.06) (Figures 1\u201310 and respective figure supplements), except for intentional injuries and substance use disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This exception is stated in the Results section and shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "5d97cc06-e8d8-473d-990a-f76b0755b935",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C23",
+      "claim": "Substance use disorders were not seasonal in older adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Deaths from all causes of death were seasonal in older adults (above 65 or 75 years depending on cause, p-values<0.06) (Figures 1\u201310 and respective figure supplements), except for intentional injuries and substance use disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This exception is stated in the Results section and shown in Figure 9\u2014figure supplement 1 and Figure 10\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "ed1df58d-7c18-434d-99a3-14b2898dde23",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C24",
+      "claim": "Deaths from cardiorespiratory diseases exhibited seasonality throughout the life-course except for males aged 5\u201324 years and females aged 15\u201324 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Deaths from cardiorespiratory diseases, and within it respiratory infections, exhibited seasonality throughout the life-course (p-values<0.06) except for males aged 5\u201324 years and females aged 15\u201324 years (p-values>0.11).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This pattern is stated in the Results section with p-values and shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "79313638-249e-431b-a6b4-0db10d23e95c",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C25",
+      "claim": "Respiratory infections exhibited seasonality throughout the life-course except for males aged 5\u201324 years and females aged 15\u201324 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Deaths from cardiorespiratory diseases, and within it respiratory infections, exhibited seasonality throughout the life-course (p-values<0.06) except for males aged 5\u201324 years and females aged 15\u201324 years (p-values>0.11).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This pattern is stated in the Results section with p-values and shown in Figure 5\u2014figure supplement 3 and Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "3d153992-a5c4-478a-8639-ade433bc79a2",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C26",
+      "claim": "Injury deaths were seasonal from childhood through 44 years in women and through 64 years in men.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to older ages, injury deaths were seasonal from childhood through 44 years in women and through 64 years in men (p-values<0.09).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This age-specific pattern is stated in the Results section with p-values and shown in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "48a884b9-b151-458d-bfa2-f5d7576a569a",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C27",
+      "claim": "Unintentional injuries drove the seasonality of injury deaths for females.",
+      "claim_type": "EXPLICIT",
+      "source": "Unintentional injuries drove the seasonality of injury deaths for females, whereas both unintentional and intentional injuries were seasonal in males in most ages, with the exception of below 15 years and above 85 years when intentional injuries were not seasonal (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This sex-specific pattern is stated in the Results section and shown in Figure 7\u2014figure supplement 1 and Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "c7a1bbe4-2dbd-4979-a316-f13606f1dbbc",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C28",
+      "claim": "Both unintentional and intentional injuries were seasonal in males in most ages.",
+      "claim_type": "EXPLICIT",
+      "source": "Unintentional injuries drove the seasonality of injury deaths for females, whereas both unintentional and intentional injuries were seasonal in males in most ages, with the exception of below 15 years and above 85 years when intentional injuries were not seasonal (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This sex-specific pattern is stated in the Results section and shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "3fe886b4-9fd6-43a6-aad8-3dd3172309c3",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C29",
+      "claim": "Intentional injuries were not seasonal in males below 15 years and above 85 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Unintentional injuries drove the seasonality of injury deaths for females, whereas both unintentional and intentional injuries were seasonal in males in most ages, with the exception of below 15 years and above 85 years when intentional injuries were not seasonal (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This age-specific exception is stated in the Results section and shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "290edf05-524f-4b1f-9b17-ff01472b2678",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C30",
+      "claim": "Consistent seasonality in cancer deaths only appeared after 55 years of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent seasonality in cancer deaths (Figures 3,4) only appeared after 55 years of age (p-values<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This age threshold is stated in the Results section with p-values and shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "5671a516-4e96-4758-96ba-339e99c86443",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C31",
+      "claim": "No consistent seasonality was evident in substance use disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "No consistent seasonality was evident in substance use disorders (Figure 9\u2014figure supplement 1 and Figure 10\u2014figure supplement 1) or maternal conditions (Figure 10\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This absence of seasonality is stated in the Results section and shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "1d1ab479-0d85-427b-ad61-b68e7e0a4ac0",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C32",
+      "claim": "No consistent seasonality was evident in maternal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "No consistent seasonality was evident in substance use disorders (Figure 9\u2014figure supplement 1 and Figure 10\u2014figure supplement 1) or maternal conditions (Figure 10\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This absence of seasonality is stated in the Results section and shown in Figure 10\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "039cab6b-8732-4155-ae40-460f1bbc07e9",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C33",
+      "claim": "Deaths from cardiorespiratory diseases were consistently highest in January and February and lowest in July and August across all ages.",
+      "claim_type": "EXPLICIT",
+      "source": "Deaths from cardiorespiratory diseases, including cardiovascular diseases, chronic respiratory diseases and respiratory infections, were also consistently highest in January and February and lowest in July and August across all ages, except for chronic respiratory diseases in ages 5\u201324 years where there are few deaths from this cause leading to unstable estimates (p-values for seasonality from wavelet analysis ranged from 0.35 to 0.48 for these ages).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This temporal pattern is stated in the Results section and shown in Figure 11\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "001160e2-a082-47ca-acac-abd780e0d738",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C34",
+      "claim": "Among males aged 5\u201334 years, all-cause mortality peaked in June or July.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, among males aged 5\u201334 years, all-cause mortality peaked in June or July, as did deaths from injuries, which generally had a summer peak in males and females below 45 years of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This pattern is stated in the Results section and shown in Figure 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "fc8946d7-8049-4cbe-a912-fc37f5df942f",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C35",
+      "claim": "Deaths from injuries generally had a summer peak in males and females below 45 years of age.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, among males aged 5\u201334 years, all-cause mortality peaked in June or July, as did deaths from injuries, which generally had a summer peak in males and females below 45 years of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This pattern is stated in the Results section and shown in Figure 11\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "59b5874d-f625-4e6b-b038-4664f2e66029",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C36",
+      "claim": "From 1980 to 2016, the proportional difference in all-cause death rates between peak and minimum months declined little for people older than 45 years of age (by less than eight percentage points).",
+      "claim_type": "EXPLICIT",
+      "source": "From 1980 to 2016, the proportional (percent) difference in all-cause death rates between peak and minimum months declined little for people older than 45 years of age (by less than eight percentage points with p-values for declining trend >0.1) (Figure 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This temporal trend is stated in the Results section with p-values and shown in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "88a88d41-bcd7-470f-8d16-dd5544fe89cd",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C37",
+      "claim": "The difference between peak (summer) and minimum (winter) death rates declined in younger ages by over 25 percentage points in males aged 5\u201314 years and 15\u201324 years.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the difference between peak (summer) and minimum (winter) death rates declined in younger ages, by over 25 percentage points in males aged 5\u201314 years and 15\u201324 years (p-values<0.01), largely driven in the declining difference between summer and winter injury deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This temporal change is stated in the Results section with p-values and shown in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "38435c69-008d-451b-a66f-d32f4804cc6c",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C38",
+      "claim": "The decline in seasonal mortality difference in young males was largely driven by declining difference between summer and winter injury deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the difference between peak (summer) and minimum (winter) death rates declined in younger ages, by over 25 percentage points in males aged 5\u201314 years and 15\u201324 years (p-values<0.01), largely driven in the declining difference between summer and winter injury deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This causal relationship is stated in the Results section and supported by Figure 12\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "eb168292-7c45-47fc-9458-d52f57234b1b",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C39",
+      "claim": "Under five years of age, percent seasonal difference in all-cause death rates declined by 13 percentage points for boys but only five percentage points for girls.",
+      "claim_type": "EXPLICIT",
+      "source": "Under five years of age, percent seasonal difference in all-cause death rates declined by 13 percentage points (p-value<0.01) for boys but only five percentage points (p-value=0.12) for girls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This sex-specific difference is stated in the Results section with p-values and shown in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "2fa1377c-baba-44de-a7e0-bf3b09139ff6",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C40",
+      "claim": "Declines in seasonality of child deaths were a net effect of declining winter-summer difference in cardiorespiratory diseases deaths and increasing summer-winter difference in injury deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "These declines in seasonality of child deaths were a net effect of declining winter-summer difference in cardiorespiratory diseases deaths and increasing summer-winter difference in injury deaths, itself driven by increasing difference in non-intentional injuries (Figure 12\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This explanation is stated in the Results section and shown in Figure 12\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "f6482807-56ea-4697-bfbc-aa77db9fd6a2",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C41",
+      "claim": "All-cause mortality peaks and minima in different climate regions are consistent with the national ones.",
+      "claim_type": "EXPLICIT",
+      "source": "The subnational centre of gravity analysis showed that all-cause mortality peaks and minima in different climate regions are consistent with the national ones (Figures 13\u201316), indicating that seasonality is largely independent of geography.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This regional consistency is stated in the Results section and shown in Figures 13-16.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "16d840a5-f4bd-4b15-81a6-4fe255564749",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C42",
+      "claim": "Seasonality is largely independent of geography.",
+      "claim_type": "EXPLICIT",
+      "source": "The subnational centre of gravity analysis showed that all-cause mortality peaks and minima in different climate regions are consistent with the national ones (Figures 13\u201316), indicating that seasonality is largely independent of geography.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This inference is stated in the Results section based on the regional analysis shown in Figures 13-16.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "7d8e9577-a479-43c9-a215-aff7592a08c1",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C43",
+      "claim": "Above 45 years of age, there was little inter-region variation in the percent seasonal difference in all-cause mortality, despite large variation in temperature difference between peak and minimum months.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, above 45 years of age, there was little inter-region variation in the percent seasonal difference in all-cause mortality, despite the large variation in temperature difference between the peak and minimum months (Figure 17).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the Results section and shown in Figure 17.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "cb5f6091-e580-4ec5-b876-d0d6ea3b2465",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C44",
+      "claim": "In men and women aged 65\u201374 years, all-cause mortality peaked in February in the Northeast and Southeast, even though the average temperatures for those regions were different by over 13 degrees Celsius.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in men and women aged 65\u201374 years, all-cause mortality peaked in February in the Northeast and Southeast, even though the average temperatures for those regions were different by over 13 degrees Celsius (9.3 in the Southeast compared with \u22123.8 in the Northeast).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specific example is stated in the Results section and shown in Figures 13-14.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "2b6778c3-93da-49f4-8967-a3db3571ea4b",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C45",
+      "claim": "Wavelets have been used to study the dynamics of weather phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "Wavelets have been used to study the dynamics of weather phenomena (Moy et al., 2002) and infectious diseases (Grenfell et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prior application is stated in the Introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "b43f10f6-4284-4050-b0d7-33b09e2c938d",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C46",
+      "claim": "Wavelets have been used to study infectious diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Wavelets have been used to study the dynamics of weather phenomena (Moy et al., 2002) and infectious diseases (Grenfell et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prior application is stated in the Introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "066db597-ea3a-42d4-8f90-d29c8bfde457",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C47",
+      "claim": "A warmer world may lower winter mortality in temperate climates.",
+      "claim_type": "EXPLICIT",
+      "source": "It has therefore been hypothesized that a warmer world may lower winter mortality in temperate climates (Langford and Bentham, 1995; Martens, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is stated in the Introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "910fe25d-58c5-4ac0-81bd-0e64ae10fd7d",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C48",
+      "claim": "The seasonality of mortality may vary geographically due to geographical variations in mortality, localized weather patterns, and regional differences in adaptation measures.",
+      "claim_type": "EXPLICIT",
+      "source": "In a large country like the USA, which possesses distinct climate regions, the seasonality of mortality may vary geographically, due to geographical variations in mortality, localized weather patterns, and regional differences in adaptation measures such as heating, air conditioning and healthcare (Davis et al., 2004; Braga et al., 2001; Kalkstein, 2013; Medina-Ram\u00f3n and Schwartz, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This potential variation is stated in the Introduction with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "15c53191-45b7-4263-96aa-1e442db1f497",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C49",
+      "claim": "The presence and extent of seasonal variation in mortality may change over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence and extent of seasonal variation in mortality may also itself change over time (Bobb et al., 2014; Carson et al., 2006; Seretakis et al., 1997; Sheridan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This temporal variability is stated in the Introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "bebd5efe-1b24-47f4-b0aa-c6b189e53c5f",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C55",
+      "claim": "Injuries accounted for 8% of all deaths in the USA in 1980.",
+      "claim_type": "EXPLICIT",
+      "source": "Injuries, which accounted for 8% of all deaths in the USA in 1980 and 7.3% in 2016, may have seasonality that is distinct from so-called natural causes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This percentage is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "78752090-5f78-4a97-8496-556b3d2a4f26",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C56",
+      "claim": "Injuries accounted for 7.3% of all deaths in the USA in 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "Injuries, which accounted for 8% of all deaths in the USA in 1980 and 7.3% in 2016, may have seasonality that is distinct from so-called natural causes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This percentage is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "47e67d36-b933-4ab9-a23b-74acda95c61c",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C57",
+      "claim": "Injuries may have seasonality that is distinct from so-called natural causes.",
+      "claim_type": "EXPLICIT",
+      "source": "Injuries, which accounted for 8% of all deaths in the USA in 1980 and 7.3% in 2016, may have seasonality that is distinct from so-called natural causes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This potential distinction is stated in the Materials and methods section and supported by the results showing summer peaks for injuries versus winter peaks for other causes.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "0a12a45c-f2cd-422a-bf8f-124b2ee03594",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C58",
+      "claim": "The USA possesses nine distinct climate regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We also subdivided the national data geographically into nine climate regions used by the National Oceanic and Atmospheric Administration (Figure 18 and Table 2) (Karl and Koss, 1984).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Materials and methods section with a citation and shown in Figure 18 and Table 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "394d122a-fb92-4cef-a506-a0d83b22e73b",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C59",
+      "claim": "The Southeast and South are the hottest climate regions with average annual temperatures of 18.4\u00b0C and 18\u00b0C respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the Southeast and South are the hottest climate regions with average annual temperatures of 18.4\u00b0C and 18\u00b0C respectively; the South also possesses the highest average maximum monthly temperature (27.9\u00b0C in July).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section and shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "ba6168a1-d672-4ceb-ae96-ba5216487721",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C60",
+      "claim": "The South possesses the highest average maximum monthly temperature (27.9\u00b0C in July).",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the Southeast and South are the hottest climate regions with average annual temperatures of 18.4\u00b0C and 18\u00b0C respectively; the South also possesses the highest average maximum monthly temperature (27.9\u00b0C in July).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "af064f0f-a9e5-43e2-bb27-0fad83485cfe",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C61",
+      "claim": "The Southeast has the lowest variation in temperature throughout the year (an average range of 17.5\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest variation in temperature throughout the year is that of the Southeast (an average range of 17.5\u00b0C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "b1cd84a3-1e77-4933-a516-2fb4cebd0754",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C62",
+      "claim": "The three coldest climate regions are West North Central, East North Central and the Northwest (7.6\u00b0C, 8.0\u00b0C, 8.2\u00b0C respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The three coldest climate regions are West North Central, East North Central and the Northwest (7.6\u00b0C, 8.0\u00b0C, 8.2\u00b0C respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section and shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "ecd14ba2-44b5-4a71-9ccb-a1adbef3a4f9",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C63",
+      "claim": "The largest variation in temperature throughout the year is that of the coldest region, West North Central (an average range of 30.5\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Mirroring the characteristics of the hottest climate regions, the largest variation in temperature throughout the year is that of the coldest region, West North Central (an average range of 30.5\u00b0C), which also has the lowest average minimum monthly temperature (\u22126.5\u00b0C in January).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "1d1c37d4-b17f-406e-8ade-ba1a59d0d723",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C64",
+      "claim": "West North Central has the lowest average minimum monthly temperature (\u22126.5\u00b0C in January).",
+      "claim_type": "EXPLICIT",
+      "source": "Mirroring the characteristics of the hottest climate regions, the largest variation in temperature throughout the year is that of the coldest region, West North Central (an average range of 30.5\u00b0C), which also has the lowest average minimum monthly temperature (\u22126.5\u00b0C in January).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "ddd58d1e-86fe-4a72-9c8c-203f5656bd27",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C65",
+      "claim": "The Northeast is the most populous region in the United States (with 19.8% total population in 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "The other climate regions, Northeast, Southwest, and Central, possess similar average temperatures (10\u00b0C to 14\u00b0C) and variation within the year of (23\u00b0C to 26\u00b0C), with the Northeast being the most populous region in the United States (with 19.8% total population in 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section and shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "317f54b9-b3cf-4a82-b1c1-a03b0a4ddf18",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C66",
+      "claim": "The study identified distinct seasonal patterns in relation to age and sex, including higher all-cause summer mortality in young men.",
+      "claim_type": "EXPLICIT",
+      "source": "We used wavelet and centre of gravity analyses, which allowed systematically identifying and characterizing seasonality of total and cause-specific mortality in the USA, and examining how seasonality has changed over time. We identified distinct seasonal patterns in relation to age and sex, including higher all-cause summer mortality in young men (Feinstein, 2002; Rau et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the Discussion section with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "643a8966-1878-4e6c-915c-594b881337f5",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C67",
+      "claim": "All-cause and cause-specific mortality seasonality is largely similar in terms of both timing and magnitude across diverse climatic regions with substantially different summer and winter temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we also showed that all-cause and cause-specific mortality seasonality is largely similar in terms of both timing and magnitude across diverse climatic regions with substantially different summer and winter temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This key finding is stated in the Discussion section and supported by Figures 13-17.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "b6b347c6-9c81-4031-92a2-ddd10daca5da",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C68",
+      "claim": "A study of 36 cities in the USA found that excess mortality was not associated with seasonal temperature range.",
+      "claim_type": "EXPLICIT",
+      "source": "A study of 36 cities in the USA, aggregated across age groups and over time, also found that excess mortality was not associated with seasonal temperature range (Kinney et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prior finding is stated in the Discussion section with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "610f5f89-3fd5-4a95-9ee0-d76e77102981",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C69",
+      "claim": "A European study found that the difference between winter and summer mortality was lower in colder Nordic countries than in warmer southern European nations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a European study found that the difference between winter and summer mortality was lower in colder Nordic countries than in warmer southern European nations (Healy, 2003; McKee, 1989) (the study's measure of temperature was mean annual temperature which differed from the temperature difference between maximum and minimum mortality used in our analysis although the two measures are correlated).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This contrasting finding is stated in the Discussion section with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "13cd1148-df58-416e-b9ea-0d98efbea0b9",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C70",
+      "claim": "The absence of variation in the magnitude of mortality seasonality indicates that different regions in the USA are similarly adapted to temperature seasonality.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of variation in the magnitude of mortality seasonality indicates that different regions in the USA are similarly adapted to temperature seasonality, whereas Nordic countries may have better environmental (e.g. housing insulation and heating) and health system measures to counter the effects of cold winters than those in southern Europe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the Discussion section based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "03bccac2-2eb4-4b1e-a4bb-83f3a663067e",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C71",
+      "claim": "Nordic countries may have better environmental and health system measures to counter the effects of cold winters than those in southern Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of variation in the magnitude of mortality seasonality indicates that different regions in the USA are similarly adapted to temperature seasonality, whereas Nordic countries may have better environmental (e.g. housing insulation and heating) and health system measures to counter the effects of cold winters than those in southern Europe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This speculation is stated in the Discussion section to explain differences between US and European findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "dc389e43-fc87-483e-8d89-09666fd113e8",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C72",
+      "claim": "If the observed absence of association between the magnitude of mortality seasonality and seasonal temperature difference across climate regions persists over time, changes in temperature as a result of global climate change are unlikely to affect the winter-summer mortality difference.",
+      "claim_type": "EXPLICIT",
+      "source": "If the observed absence of association between the magnitude of mortality seasonality and seasonal temperature difference across the climate regions also persists over time, the changes in temperature as a result of global climate change are unlikely to affect the winter-summer mortality difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conditional prediction is stated in the Discussion section based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "f568fe6a-933b-4d17-a6c5-ce0594fc1229",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C73",
+      "claim": "The substantial decline in seasonal mortality differences in adolescents and young adults was related to the diminishing seasonality of (unintentional) injuries, especially from road traffic crashes.",
+      "claim_type": "EXPLICIT",
+      "source": "The cause-specific analysis showed that the substantial decline in seasonal mortality differences in adolescents and young adults was related to the diminishing seasonality of (unintentional) injuries, especially from road traffic crashes, which are more likely to occur in the summer months (Liu et al., 2005) and are more common in men.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explanation is stated in the Discussion section with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "5011e5ca-e895-4bc5-8442-8d3cd6fcd796",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C74",
+      "claim": "Road traffic crashes are more likely to occur in the summer months and are more common in men.",
+      "claim_type": "EXPLICIT",
+      "source": "The cause-specific analysis showed that the substantial decline in seasonal mortality differences in adolescents and young adults was related to the diminishing seasonality of (unintentional) injuries, especially from road traffic crashes, which are more likely to occur in the summer months (Liu et al., 2005) and are more common in men.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This pattern is stated in the Discussion section with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "f977fdda-a518-4730-8dbd-bf0619b33246",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C75",
+      "claim": "The weakening of seasonality in boys under five years of age was related to declining seasonality of death from cardiorespiratory diseases and increasing proportion of deaths from perinatal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The weakening of seasonality in boys under five years of age was related to two phenomena: first, the seasonality of death from cardiorespiratory diseases declined, and second, the proportion of deaths from perinatal conditions, which exhibit limited seasonality (Figure 9\u2014figure supplement 2 and Figure 10\u2014figure supplement 3), increased (MacDorman and Gregory, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This explanation is stated in the Discussion section with a citation and supported by referenced figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "2be0b541-d0c4-411f-bb88-8459814b075d",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C76",
+      "claim": "Perinatal conditions exhibit limited seasonality.",
+      "claim_type": "EXPLICIT",
+      "source": "The weakening of seasonality in boys under five years of age was related to two phenomena: first, the seasonality of death from cardiorespiratory diseases declined, and second, the proportion of deaths from perinatal conditions, which exhibit limited seasonality (Figure 9\u2014figure supplement 2 and Figure 10\u2014figure supplement 3), increased (MacDorman and Gregory, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This characteristic is stated in the Discussion section and shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "595325b9-f0c3-456c-86d6-184ff784ba3f",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C77",
+      "claim": "Mortality in older ages, where death rates are highest, maintained persistent seasonality over a period of three decades.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to young and middle ages, mortality in older ages, where death rates are highest, maintained persistent seasonality over a period of three decades (we note that although the percent seasonal difference in mortality has remained largely unchanged in these ages, the absolute difference in death rates between the peak and minimum months has declined because total mortality has a declining long-term trend).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the Discussion section and supported by Figures 1, 2, and 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "682be12b-7739-4fce-81b4-095c727003ba",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C78",
+      "claim": "Although the percent seasonal difference in mortality has remained largely unchanged in older ages, the absolute difference in death rates between the peak and minimum months has declined because total mortality has a declining long-term trend.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to young and middle ages, mortality in older ages, where death rates are highest, maintained persistent seasonality over a period of three decades (we note that although the percent seasonal difference in mortality has remained largely unchanged in these ages, the absolute difference in death rates between the peak and minimum months has declined because total mortality has a declining long-term trend).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clarification is stated in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "878250a2-7fd1-4cd6-b99f-f741b5f7c63e",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C79",
+      "claim": "Environmental and health service interventions are needed for older populations irrespective of geography and local climate.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding demonstrates the need for environmental and health service interventions targeted towards this group irrespective of geography and local climate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This recommendation is stated in the Discussion section based on the persistent seasonality in older ages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "3fd1478a-9224-49d0-b98c-655f04135ed4",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C80",
+      "claim": "Examples of interventions include enhancing the availability of environmental and medical protective factors, such as better insulation of homes, winter heating provision and flu vaccinations, for the vulnerable older population.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of such interventions include enhancing the availability of both environmental and medical protective factors, such as better insulation of homes, winter heating provision and flu vaccinations, for the vulnerable older population (Katiyo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These intervention examples are stated in the Discussion section with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "6019ce41-ed9c-4bb0-912c-075d190f95ea",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C81",
+      "claim": "Social interventions, including regular visits to the isolated elderly during peak mortality periods, are important to protect vulnerable groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Social interventions, including regular visits to the isolated elderly during peak mortality periods to ensure that they are optimally prepared for adverse conditions, and responsive and high-quality emergency care, are also important to protect this vulnerable group (Healy, 2003; Lerchl, 1998; Katiyo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These intervention examples are stated in the Discussion section with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "e967f433-b3da-48cb-9e03-b5c3264fd29a",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C82",
+      "claim": "Emergent new technologies, such as always-connected hands-free communications devices, in-house cameras, and personal sensors provide an opportunity to enhance care for older, more vulnerable groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Emergent new technologies, such as always-connected hands-free communications devices with the outside world, in-house cameras, and personal sensors also provide an opportunity to enhance care for the older, more vulnerable groups in the population, especially in winter when the elderly have fewer social interactions (Morris, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This opportunity is stated in the Discussion section with a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "02e9d4d3-eba1-4d33-8e32-a1e6b0b42d40",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C83",
+      "claim": "Such interventions are important today, and will remain so as the population ages and climate change increases the within- and between-season weather variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Such interventions are important today, and will remain so as the population ages and climate change increases the within- and between-season weather variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This forward-looking statement is made in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "f6ae3448-f747-4a1e-9a35-6ce426540d63",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C84",
+      "claim": "A limitation of the study is that it did not investigate seasonality of mortality by socioeconomic characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of our study is that we did not investigate seasonality of mortality by socioeconomic characteristics which may help with understanding its determinants and planning responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This limitation is explicitly stated in the Strengths and limitations section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "d73ffc25-5930-4e26-81ae-14b28fa7decd",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C85",
+      "claim": "Investigating seasonality by socioeconomic characteristics may help with understanding its determinants and planning responses.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of our study is that we did not investigate seasonality of mortality by socioeconomic characteristics which may help with understanding its determinants and planning responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This potential benefit is stated in the Strengths and limitations section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "fd2eb3eb-854a-4470-ae5d-6896e3e61d19",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C86",
+      "claim": "The study used geo-coded mortality data and wavelets to analyse the seasonality of mortality by age group and sex from 1980 to 2016 in the USA and its subnational climatic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We used geo-coded mortality data and wavelets to analyse the seasonality of mortality by age group and sex from 1980 to 2016 in the USA and its subnational climatic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This methodological approach is stated in the Abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "7720fcaf-6e64-4c69-8453-fd0acc45e6dd",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C87",
+      "claim": "The study used centre of gravity analysis and circular statistics methods to understand the timing of maximum and minimum mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "We also used centre of gravity analysis and circular statistics methods to understand the timing of maximum and minimum mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This methodological approach is stated in the Introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "b3e30cf2-7396-4d59-a50d-bc0eaa7f7f51",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C88",
+      "claim": "Wavelet analysis uncovers the presence and frequency of repeated maxima and minima in each age-sex-specific death rate time series.",
+      "claim_type": "EXPLICIT",
+      "source": "We used wavelet analysis to investigate seasonality for each age-sex group. Wavelet analysis uncovers the presence, and frequency, of repeated maxima and minima in each age-sex-specific death rate time series (Hubbard, 1998; Torrence and Compo, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This description of wavelet analysis is stated in the Materials and methods section with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "d897a0dd-3024-49e6-b71a-7e0e4ee667d6",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C89",
+      "claim": "The study used the R package WaveletComp (version 1.0) for the wavelet analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the R package WaveletComp (version 1.0) for the wavelet analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This software tool is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "c138eef4-da2e-4439-855a-506dc2cf18bf",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C90",
+      "claim": "The study used the R package CircStats (version 0.2.4) for circular statistics analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The R package CircStats (version 0.2.4) was used for this analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This software tool is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "37caa5c2-c053-4e26-bdf2-6ac7e2b91ecb",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C91",
+      "claim": "Temperature data was obtained from ERA-Interim.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained data on temperature from ERA-Interim, which combines predictions from a physical model with ground-based and satellite measurements (Dee et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This data source is stated in the Materials and methods section with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "9481501e-b6ae-470f-92b0-ae6aba34ed2b",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "claim_id": "C92",
+      "claim": "ERA-Interim combines predictions from a physical model with ground-based and satellite measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained data on temperature from ERA-Interim, which combines predictions from a physical model with ground-based and satellite measurements (Dee et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This description of ERA-Interim is stated in the Materials and methods section with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6ed31891-0ffc-4025-b5e5-6bd6cd9902da",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 85,854,176 deaths in the USA from 1980 to 2016. Cardiorespiratory diseases accounted for 48.1% of all deaths (mostly cardiovascular), cancers for 23.2%, and injuries for 6.8% (two-thirds unintentional).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C14 provide descriptive statistics directly from the dataset stated in the Materials and methods section and shown in Table 1. The numbers are internally consistent and represent straightforward data summaries with no complex inference required.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "caa04020-c62b-496a-ae78-7c6b64672e44",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "All-cause mortality exhibited 12-month seasonality in most age groups for both sexes, with notable exceptions. Males aged 35-44 showed 6-month periodicity. Females aged 5-14 and 25-34 showed no significant seasonality. Seasonality persisted in older ages throughout 1980-2016 but largely disappeared after the late 1990s in children aged 0-4 years (both sexes) and women aged 15-24 years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 describe wavelet analysis results shown in Figures 1-2 with reported p-values. The statistical methodology is appropriate for detecting periodic patterns in time series data. The temporal changes are clearly visible in the figures and supported by statistical testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "c346e8e0-bfa8-4189-a292-2bb397b53d1d",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cause-specific mortality showed distinct seasonal patterns by age. In older adults (\u226565-75 years), deaths from all causes except intentional injuries and substance use disorders were seasonal (p<0.06). Cardiorespiratory diseases and respiratory infections exhibited seasonality throughout the life-course except for specific young age groups. Cancer deaths showed consistent seasonality only after age 55. Substance use disorders and maternal conditions showed no consistent seasonality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25, C30-C32 describe cause-specific seasonality patterns supported by Figures 3-10 and supplements with reported p-values. The age-specific patterns are clearly documented in the wavelet analyses. The statistical thresholds (p<0.06, p<0.05) are consistently applied across analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "b12ac9f5-8771-4457-8a2e-3c767784f786",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Injury deaths were seasonal from childhood through age 44 in women and through age 64 in men (p<0.09). Unintentional injuries drove seasonality in females, while both unintentional and intentional injuries were seasonal in males at most ages, except intentional injuries were not seasonal in males below 15 years and above 85 years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 describe injury-specific seasonality patterns shown in Figures 7-8 and supplements with reported p-values. The sex-specific differences and age-specific exceptions are clearly documented in the figure supplements. The patterns are consistent with the overall analytical approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "2223dc04-def5-4e2d-b74f-25eb43bd258d",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The timing of mortality peaks varied by age and cause. In adults \u226545 years, death rates peaked in December-February and were lowest in June-August. Cardiorespiratory disease deaths were consistently highest in January-February and lowest in July-August across all ages. In contrast, males aged 5-34 years showed all-cause mortality peaks in June-July, and injury deaths generally peaked in summer for those below age 45.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C7, C33-C35 describe center of gravity analysis results shown in Figure 11 and supplements. The opposing seasonal patterns (winter peaks for older adults/cardiorespiratory diseases vs. summer peaks for young adults/injuries) are clearly demonstrated. The circular statistics methodology is appropriate for identifying timing of peaks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "319c0158-4d75-40ac-a2b7-4cf10c7116d9",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The seasonality of all-cause mortality in adults \u226545 years is driven by cardiorespiratory diseases and injuries, while the summer mortality peak in adolescents and young adults is driven by injury deaths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C8 make causal attributions about drivers of seasonality. These are supported by the cause-specific analyses in Figures 5-7 showing that the seasonal patterns of specific causes align with all-cause patterns in the respective age groups. The inference is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "5488a715-3cf3-4408-8522-44c9060c1fc1",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "For ages \u226545 years, the percent difference in death rates between peak and minimum months did not vary across climate regions and did not change substantially from 1980 to 2016 (declined by less than 8 percentage points, p>0.1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C36 describe temporal and geographic stability of seasonal mortality magnitude shown in Figures 12 and 17. The statistical testing (p>0.1 for temporal trend) and the small magnitude of change (<8 percentage points) support the conclusion of stability. The regional consistency is clearly shown in Figure 17.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "935a4e9b-fed0-47a3-a718-f649a351f39e",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In younger ages, seasonal mortality differences declined substantially from 1980 to 2016. Males aged 5-24 years showed declines exceeding 25 percentage points (p<0.01), driven by declining summer-winter differences in injury deaths. In children under 5, the decline was 13 percentage points for boys (p<0.01) but only 5 for girls (p=0.12), resulting from declining winter-summer differences in cardiorespiratory deaths and increasing summer-winter differences in injury deaths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 describe temporal changes in young age groups shown in Figure 12 and supplements with reported p-values. The sex-specific differences and cause-specific decomposition are clearly documented. The statistical significance is appropriately reported, including the non-significant result for girls (p=0.12).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "41d69221-205c-4dab-8972-c28e4d058b2d",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Seasonality of all-cause mortality largely disappeared after the 1990s in children under five years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C6 is directly supported by the wavelet analyses in Figures 1-2 showing loss of 12-month periodicity after the late 1990s in the 0-4 age group. This is a major finding regarding temporal changes in child mortality patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "38e218ff-b206-46f0-ba71-27f9d4b27022",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "All-cause mortality peaks and minima were consistent across different climate regions, indicating seasonality is largely independent of geography. Above age 45, there was little inter-region variation in percent seasonal mortality difference despite large temperature variations between regions (e.g., 13\u00b0C difference between Northeast and Southeast, both peaking in February for ages 65-74).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 describe geographic consistency shown in Figures 13-17. The center of gravity analyses demonstrate similar timing across regions, and Figure 17 shows minimal variation in seasonal magnitude despite temperature differences. The specific example (C44) is clearly documented in the figures. This is a key finding regarding climate independence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "3031c990-97c4-444f-aec3-983db08c6b0a",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study demonstrates that mortality seasonality is largely similar in timing and magnitude across diverse climatic regions with substantially different temperatures, indicating that different regions in the USA are similarly adapted to temperature seasonality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C70 synthesize the geographic findings from Figures 13-17. The inference about similar adaptation is reasonable given the data showing consistent seasonality despite temperature differences. This represents a major conclusion about the relationship between climate and mortality seasonality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "d5a49031-6d7f-4d07-aed3-581f264301c8",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The decline in seasonal mortality differences in adolescents and young adults was related to diminishing seasonality of unintentional injuries, especially road traffic crashes (which peak in summer and are more common in men). The weakening seasonality in boys under 5 was related to declining seasonality of cardiorespiratory disease deaths and increasing proportion of deaths from perinatal conditions (which exhibit limited seasonality).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 provide mechanistic explanations for temporal changes, stated in the Discussion with supporting citations and data from Figures 9-10 supplements and Figure 12 supplement 1. The explanations are consistent with the observed patterns and supported by the cause-specific decomposition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "6553fd34-906d-49f9-beb8-5138c5a8ba78",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mortality in older ages maintained persistent seasonality over three decades. Although percent seasonal difference remained largely unchanged, the absolute difference in death rates between peak and minimum months declined because total mortality has a declining long-term trend.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 describe the persistence of seasonality in older ages (Figures 1-2, 12) with an important clarification about absolute vs. relative differences. The distinction between percent and absolute differences is mathematically sound and important for interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "01250bbd-5884-46c3-9b5b-17849a608bcd",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior studies show mixed results on the relationship between temperature and mortality seasonality. A US study of 36 cities found no association between excess mortality and seasonal temperature range, while a European study found lower winter-summer mortality differences in colder Nordic countries than warmer southern European nations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 accurately cite prior literature in the Discussion section. These provide context for interpreting the current study's findings. The citations are appropriately used to compare and contrast with the present results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "ea7a2039-ddc2-4fd3-97a8-ae98c02c835c",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors speculate that Nordic countries may have better environmental and health system measures to counter cold winters than southern Europe, and that if the observed absence of association between mortality seasonality magnitude and temperature persists over time, climate change is unlikely to affect winter-summer mortality differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C72 are speculative statements in the Discussion. C71 offers a plausible explanation for European patterns but lacks direct evidence. C72 makes a conditional prediction about climate change impacts that extends beyond the data. These are reasonable hypotheses but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "8cb24a11-78cd-47e3-9e10-7dba2c061d99",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The persistent seasonality in older populations demonstrates the need for environmental and health service interventions irrespective of geography and climate. Suggested interventions include better home insulation, winter heating provision, flu vaccinations, regular visits to isolated elderly during peak mortality periods, responsive emergency care, and emerging technologies like connected devices and sensors. Such interventions remain important as populations age and climate change increases weather variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C83 present policy recommendations based on the finding of persistent seasonality in older ages (C77). The recommendations are reasonable applications of the findings, supported by citations (C80-C82). The forward-looking statement (C83) is a logical extension of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "4a8cb43e-4cf2-4834-90f9-5a5ba649e244",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "A limitation of the study is that it did not investigate seasonality by socioeconomic characteristics, which may help understand determinants and plan responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 acknowledge a clear limitation explicitly stated in the Strengths and limitations section. This is an appropriate recognition of what the study did not address and represents good scientific practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "d5b7bc2a-ec72-4c3f-9011-1a56954f2ddb",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study used geo-coded mortality data from 1980-2016, wavelet analysis to detect seasonality, center of gravity analysis with circular statistics to identify timing of peaks, and ERA-Interim temperature data. Specific R packages (WaveletComp version 1.0, CircStats version 0.2.4) were used for analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C92 describe the methodological approach stated in the Abstract, Introduction, and Materials and methods sections. The methods are clearly documented with appropriate citations for wavelet analysis (C88) and ERA-Interim (C91-C92). Software versions are specified (C89-C90), supporting reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "bb0fd1ca-24dd-4ed8-9dac-7a20b73868a0",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The study builds on established knowledge that winter deaths exceed summer ones in temperate climates, that wavelets have been used to study weather and infectious diseases, and that mortality seasonality may vary geographically and temporally. It has been hypothesized that a warmer world may lower winter mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C45-C49 provide background context from the Introduction with appropriate citations. These establish the scientific foundation and motivation for the study. The claims accurately represent prior knowledge and hypotheses in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "1881d0dd-9635-4358-b0ca-bdc5028a87bf",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study analyzed nine distinct US climate regions with varying temperature characteristics. Injuries accounted for 8% of deaths in 1980 and 7.3% in 2016, and may have seasonality distinct from natural causes. The Southeast and South are hottest (18.4\u00b0C, 18\u00b0C average), while West North Central, East North Central, and Northwest are coldest (7.6-8.2\u00b0C). Temperature variation ranges from 17.5\u00b0C (Southeast) to 30.5\u00b0C (West North Central). The Northeast is most populous (19.8% of 2016 population).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C65 provide descriptive information about the study design and climate regions from the Materials and methods section, supported by Figure 18 and Table 2. The temperature data and regional characteristics are clearly documented. The speculation about distinct injury seasonality (C57) is supported by subsequent results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    },
+    {
+      "id": "51bc827d-98fb-4f3a-9a66-905dc94c1f82",
+      "content_id": "61a977dc-3284-4e0d-9913-3efca14bcbea",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The study identified distinct seasonal patterns in relation to age and sex, including higher all-cause summer mortality in young men, using wavelet and center of gravity analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 summarizes key findings stated in the Discussion with supporting citations. This accurately reflects the major patterns identified in the results (particularly C7, C34) and the methodological approach used.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:54:51.186210Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "476002d1-244b-476b-a2fc-b7b48ee07418",
+      "result_id": "6ed31891-0ffc-4025-b5e5-6bd6cd9902da"
+    },
+    {
+      "claim_id": "71eee382-e530-4861-a84f-b20723e59609",
+      "result_id": "6ed31891-0ffc-4025-b5e5-6bd6cd9902da"
+    },
+    {
+      "claim_id": "7449bf11-97a6-4b2e-8e48-d3276dc61bb8",
+      "result_id": "6ed31891-0ffc-4025-b5e5-6bd6cd9902da"
+    },
+    {
+      "claim_id": "83c02d8d-f71b-4dfe-b117-3938678abe15",
+      "result_id": "6ed31891-0ffc-4025-b5e5-6bd6cd9902da"
+    },
+    {
+      "claim_id": "d7a03a4e-a25a-489b-8bbd-25a258b976a2",
+      "result_id": "6ed31891-0ffc-4025-b5e5-6bd6cd9902da"
+    },
+    {
+      "claim_id": "8f355a22-9834-416b-8c22-e50073d85f4a",
+      "result_id": "6ed31891-0ffc-4025-b5e5-6bd6cd9902da"
+    },
+    {
+      "claim_id": "6d4a723c-fde7-4a78-a307-32b699fc34e5",
+      "result_id": "caa04020-c62b-496a-ae78-7c6b64672e44"
+    },
+    {
+      "claim_id": "a50c83b6-5a5a-444d-8a4d-7d73910ad405",
+      "result_id": "caa04020-c62b-496a-ae78-7c6b64672e44"
+    },
+    {
+      "claim_id": "63cd9798-d279-40b7-ba87-5a08ca63efc6",
+      "result_id": "caa04020-c62b-496a-ae78-7c6b64672e44"
+    },
+    {
+      "claim_id": "7ba12248-3a07-4fea-8159-bb7fbc6ab3a3",
+      "result_id": "caa04020-c62b-496a-ae78-7c6b64672e44"
+    },
+    {
+      "claim_id": "dce000e2-315f-49f7-b3b6-e92ef4789858",
+      "result_id": "caa04020-c62b-496a-ae78-7c6b64672e44"
+    },
+    {
+      "claim_id": "10659cd1-5d12-4df7-9786-c329eda1d6db",
+      "result_id": "caa04020-c62b-496a-ae78-7c6b64672e44"
+    },
+    {
+      "claim_id": "f2c87842-0bc5-49d0-9bbe-623cee7d9072",
+      "result_id": "c346e8e0-bfa8-4189-a292-2bb397b53d1d"
+    },
+    {
+      "claim_id": "56d54fc0-122b-4dd8-85d2-e2a59b65ca0a",
+      "result_id": "c346e8e0-bfa8-4189-a292-2bb397b53d1d"
+    },
+    {
+      "claim_id": "5d97cc06-e8d8-473d-990a-f76b0755b935",
+      "result_id": "c346e8e0-bfa8-4189-a292-2bb397b53d1d"
+    },
+    {
+      "claim_id": "ed1df58d-7c18-434d-99a3-14b2898dde23",
+      "result_id": "c346e8e0-bfa8-4189-a292-2bb397b53d1d"
+    },
+    {
+      "claim_id": "79313638-249e-431b-a6b4-0db10d23e95c",
+      "result_id": "c346e8e0-bfa8-4189-a292-2bb397b53d1d"
+    },
+    {
+      "claim_id": "290edf05-524f-4b1f-9b17-ff01472b2678",
+      "result_id": "c346e8e0-bfa8-4189-a292-2bb397b53d1d"
+    },
+    {
+      "claim_id": "5671a516-4e96-4758-96ba-339e99c86443",
+      "result_id": "c346e8e0-bfa8-4189-a292-2bb397b53d1d"
+    },
+    {
+      "claim_id": "1d1ab479-0d85-427b-ad61-b68e7e0a4ac0",
+      "result_id": "c346e8e0-bfa8-4189-a292-2bb397b53d1d"
+    },
+    {
+      "claim_id": "3d153992-a5c4-478a-8639-ade433bc79a2",
+      "result_id": "b12ac9f5-8771-4457-8a2e-3c767784f786"
+    },
+    {
+      "claim_id": "48a884b9-b151-458d-bfa2-f5d7576a569a",
+      "result_id": "b12ac9f5-8771-4457-8a2e-3c767784f786"
+    },
+    {
+      "claim_id": "c7a1bbe4-2dbd-4979-a316-f13606f1dbbc",
+      "result_id": "b12ac9f5-8771-4457-8a2e-3c767784f786"
+    },
+    {
+      "claim_id": "3fe886b4-9fd6-43a6-aad8-3dd3172309c3",
+      "result_id": "b12ac9f5-8771-4457-8a2e-3c767784f786"
+    },
+    {
+      "claim_id": "c617f577-5aad-4cf8-99b2-620193f8ab58",
+      "result_id": "2223dc04-def5-4e2d-b74f-25eb43bd258d"
+    },
+    {
+      "claim_id": "08ba8a86-f62a-4a61-8d2c-e71f09cc245e",
+      "result_id": "2223dc04-def5-4e2d-b74f-25eb43bd258d"
+    },
+    {
+      "claim_id": "039cab6b-8732-4155-ae40-460f1bbc07e9",
+      "result_id": "2223dc04-def5-4e2d-b74f-25eb43bd258d"
+    },
+    {
+      "claim_id": "001160e2-a082-47ca-acac-abd780e0d738",
+      "result_id": "2223dc04-def5-4e2d-b74f-25eb43bd258d"
+    },
+    {
+      "claim_id": "fc8946d7-8049-4cbe-a912-fc37f5df942f",
+      "result_id": "2223dc04-def5-4e2d-b74f-25eb43bd258d"
+    },
+    {
+      "claim_id": "4e310930-d9a1-44cb-89a4-2b94de7f592d",
+      "result_id": "319c0158-4d75-40ac-a2b7-4cf10c7116d9"
+    },
+    {
+      "claim_id": "c711f4a1-a95e-4019-b34e-8d32a06d1a9e",
+      "result_id": "319c0158-4d75-40ac-a2b7-4cf10c7116d9"
+    },
+    {
+      "claim_id": "09d05204-cfa6-4e9d-b8aa-a25ee9a4c2c0",
+      "result_id": "5488a715-3cf3-4408-8522-44c9060c1fc1"
+    },
+    {
+      "claim_id": "39c3d563-192f-47bf-973d-1cfda2ac4838",
+      "result_id": "5488a715-3cf3-4408-8522-44c9060c1fc1"
+    },
+    {
+      "claim_id": "59b5874d-f625-4e6b-b038-4664f2e66029",
+      "result_id": "5488a715-3cf3-4408-8522-44c9060c1fc1"
+    },
+    {
+      "claim_id": "88a88d41-bcd7-470f-8d16-dd5544fe89cd",
+      "result_id": "935a4e9b-fed0-47a3-a718-f649a351f39e"
+    },
+    {
+      "claim_id": "38435c69-008d-451b-a66f-d32f4804cc6c",
+      "result_id": "935a4e9b-fed0-47a3-a718-f649a351f39e"
+    },
+    {
+      "claim_id": "eb168292-7c45-47fc-9458-d52f57234b1b",
+      "result_id": "935a4e9b-fed0-47a3-a718-f649a351f39e"
+    },
+    {
+      "claim_id": "2fa1377c-baba-44de-a7e0-bf3b09139ff6",
+      "result_id": "935a4e9b-fed0-47a3-a718-f649a351f39e"
+    },
+    {
+      "claim_id": "787e33b4-d736-4f47-8fca-b4280d605f19",
+      "result_id": "41d69221-205c-4dab-8972-c28e4d058b2d"
+    },
+    {
+      "claim_id": "f6482807-56ea-4697-bfbc-aa77db9fd6a2",
+      "result_id": "38e218ff-b206-46f0-ba71-27f9d4b27022"
+    },
+    {
+      "claim_id": "16d840a5-f4bd-4b15-81a6-4fe255564749",
+      "result_id": "38e218ff-b206-46f0-ba71-27f9d4b27022"
+    },
+    {
+      "claim_id": "7d8e9577-a479-43c9-a215-aff7592a08c1",
+      "result_id": "38e218ff-b206-46f0-ba71-27f9d4b27022"
+    },
+    {
+      "claim_id": "cb5f6091-e580-4ec5-b876-d0d6ea3b2465",
+      "result_id": "38e218ff-b206-46f0-ba71-27f9d4b27022"
+    },
+    {
+      "claim_id": "643a8966-1878-4e6c-915c-594b881337f5",
+      "result_id": "3031c990-97c4-444f-aec3-983db08c6b0a"
+    },
+    {
+      "claim_id": "13cd1148-df58-416e-b9ea-0d98efbea0b9",
+      "result_id": "3031c990-97c4-444f-aec3-983db08c6b0a"
+    },
+    {
+      "claim_id": "f568fe6a-933b-4d17-a6c5-ce0594fc1229",
+      "result_id": "d5a49031-6d7f-4d07-aed3-581f264301c8"
+    },
+    {
+      "claim_id": "5011e5ca-e895-4bc5-8442-8d3cd6fcd796",
+      "result_id": "d5a49031-6d7f-4d07-aed3-581f264301c8"
+    },
+    {
+      "claim_id": "f977fdda-a518-4730-8dbd-bf0619b33246",
+      "result_id": "d5a49031-6d7f-4d07-aed3-581f264301c8"
+    },
+    {
+      "claim_id": "2be0b541-d0c4-411f-bb88-8459814b075d",
+      "result_id": "d5a49031-6d7f-4d07-aed3-581f264301c8"
+    },
+    {
+      "claim_id": "595325b9-f0c3-456c-86d6-184ff784ba3f",
+      "result_id": "6553fd34-906d-49f9-beb8-5138c5a8ba78"
+    },
+    {
+      "claim_id": "682be12b-7739-4fce-81b4-095c727003ba",
+      "result_id": "6553fd34-906d-49f9-beb8-5138c5a8ba78"
+    },
+    {
+      "claim_id": "b6b347c6-9c81-4031-92a2-ddd10daca5da",
+      "result_id": "01250bbd-5884-46c3-9b5b-17849a608bcd"
+    },
+    {
+      "claim_id": "610f5f89-3fd5-4a95-9ee0-d76e77102981",
+      "result_id": "01250bbd-5884-46c3-9b5b-17849a608bcd"
+    },
+    {
+      "claim_id": "03bccac2-2eb4-4b1e-a4bb-83f3a663067e",
+      "result_id": "ea7a2039-ddc2-4fd3-97a8-ae98c02c835c"
+    },
+    {
+      "claim_id": "dc389e43-fc87-483e-8d89-09666fd113e8",
+      "result_id": "ea7a2039-ddc2-4fd3-97a8-ae98c02c835c"
+    },
+    {
+      "claim_id": "878250a2-7fd1-4cd6-b99f-f741b5f7c63e",
+      "result_id": "8cb24a11-78cd-47e3-9e10-7dba2c061d99"
+    },
+    {
+      "claim_id": "3fd1478a-9224-49d0-b98c-655f04135ed4",
+      "result_id": "8cb24a11-78cd-47e3-9e10-7dba2c061d99"
+    },
+    {
+      "claim_id": "6019ce41-ed9c-4bb0-912c-075d190f95ea",
+      "result_id": "8cb24a11-78cd-47e3-9e10-7dba2c061d99"
+    },
+    {
+      "claim_id": "e967f433-b3da-48cb-9e03-b5c3264fd29a",
+      "result_id": "8cb24a11-78cd-47e3-9e10-7dba2c061d99"
+    },
+    {
+      "claim_id": "02e9d4d3-eba1-4d33-8e32-a1e6b0b42d40",
+      "result_id": "8cb24a11-78cd-47e3-9e10-7dba2c061d99"
+    },
+    {
+      "claim_id": "f6ae3448-f747-4a1e-9a35-6ce426540d63",
+      "result_id": "4a8cb43e-4cf2-4834-90f9-5a5ba649e244"
+    },
+    {
+      "claim_id": "d73ffc25-5930-4e26-81ae-14b28fa7decd",
+      "result_id": "4a8cb43e-4cf2-4834-90f9-5a5ba649e244"
+    },
+    {
+      "claim_id": "fd2eb3eb-854a-4470-ae5d-6896e3e61d19",
+      "result_id": "d5b7bc2a-ec72-4c3f-9011-1a56954f2ddb"
+    },
+    {
+      "claim_id": "7720fcaf-6e64-4c69-8453-fd0acc45e6dd",
+      "result_id": "d5b7bc2a-ec72-4c3f-9011-1a56954f2ddb"
+    },
+    {
+      "claim_id": "b3e30cf2-7396-4d59-a50d-bc0eaa7f7f51",
+      "result_id": "d5b7bc2a-ec72-4c3f-9011-1a56954f2ddb"
+    },
+    {
+      "claim_id": "d897a0dd-3024-49e6-b71a-7e0e4ee667d6",
+      "result_id": "d5b7bc2a-ec72-4c3f-9011-1a56954f2ddb"
+    },
+    {
+      "claim_id": "c138eef4-da2e-4439-855a-506dc2cf18bf",
+      "result_id": "d5b7bc2a-ec72-4c3f-9011-1a56954f2ddb"
+    },
+    {
+      "claim_id": "37caa5c2-c053-4e26-bdf2-6ac7e2b91ecb",
+      "result_id": "d5b7bc2a-ec72-4c3f-9011-1a56954f2ddb"
+    },
+    {
+      "claim_id": "9481501e-b6ae-470f-92b0-ae6aba34ed2b",
+      "result_id": "d5b7bc2a-ec72-4c3f-9011-1a56954f2ddb"
+    },
+    {
+      "claim_id": "5a124978-abc3-4818-aa3d-adb3eae148bd",
+      "result_id": "bb0fd1ca-24dd-4ed8-9dac-7a20b73868a0"
+    },
+    {
+      "claim_id": "2b6778c3-93da-49f4-8967-a3db3571ea4b",
+      "result_id": "bb0fd1ca-24dd-4ed8-9dac-7a20b73868a0"
+    },
+    {
+      "claim_id": "b43f10f6-4284-4050-b0d7-33b09e2c938d",
+      "result_id": "bb0fd1ca-24dd-4ed8-9dac-7a20b73868a0"
+    },
+    {
+      "claim_id": "066db597-ea3a-42d4-8f90-d29c8bfde457",
+      "result_id": "bb0fd1ca-24dd-4ed8-9dac-7a20b73868a0"
+    },
+    {
+      "claim_id": "910fe25d-58c5-4ac0-81bd-0e64ae10fd7d",
+      "result_id": "bb0fd1ca-24dd-4ed8-9dac-7a20b73868a0"
+    },
+    {
+      "claim_id": "15c53191-45b7-4263-96aa-1e442db1f497",
+      "result_id": "bb0fd1ca-24dd-4ed8-9dac-7a20b73868a0"
+    },
+    {
+      "claim_id": "bebd5efe-1b24-47f4-b0aa-c6b189e53c5f",
+      "result_id": "1881d0dd-9635-4358-b0ca-bdc5028a87bf"
+    },
+    {
+      "claim_id": "78752090-5f78-4a97-8496-556b3d2a4f26",
+      "result_id": "1881d0dd-9635-4358-b0ca-bdc5028a87bf"
+    },
+    {
+      "claim_id": "47e67d36-b933-4ab9-a23b-74acda95c61c",
+      "result_id": "1881d0dd-9635-4358-b0ca-bdc5028a87bf"
+    },
+    {
+      "claim_id": "0a12a45c-f2cd-422a-bf8f-124b2ee03594",
+      "result_id": "1881d0dd-9635-4358-b0ca-bdc5028a87bf"
+    },
+    {
+      "claim_id": "394d122a-fb92-4cef-a506-a0d83b22e73b",
+      "result_id": "1881d0dd-9635-4358-b0ca-bdc5028a87bf"
+    },
+    {
+      "claim_id": "ba6168a1-d672-4ceb-ae96-ba5216487721",
+      "result_id": "1881d0dd-9635-4358-b0ca-bdc5028a87bf"
+    },
+    {
+      "claim_id": "af064f0f-a9e5-43e2-bb27-0fad83485cfe",
+      "result_id": "1881d0dd-9635-4358-b0ca-bdc5028a87bf"
+    },
+    {
+      "claim_id": "b1cd84a3-1e77-4933-a516-2fb4cebd0754",
+      "result_id": "1881d0dd-9635-4358-b0ca-bdc5028a87bf"
+    },
+    {
+      "claim_id": "ecd14ba2-44b5-4a71-9ccb-a1adbef3a4f9",
+      "result_id": "1881d0dd-9635-4358-b0ca-bdc5028a87bf"
+    },
+    {
+      "claim_id": "1d1c37d4-b17f-406e-8ade-ba1a59d0d723",
+      "result_id": "1881d0dd-9635-4358-b0ca-bdc5028a87bf"
+    },
+    {
+      "claim_id": "ddd58d1e-86fe-4a72-9c8c-203f5656bd27",
+      "result_id": "1881d0dd-9635-4358-b0ca-bdc5028a87bf"
+    },
+    {
+      "claim_id": "317f54b9-b3cf-4a82-b1c1-a03b0a4ddf18",
+      "result_id": "51bc827d-98fb-4f3a-9a66-905dc94c1f82"
+    }
+  ],
+  "comparisons": []
+}

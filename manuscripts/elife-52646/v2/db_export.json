@@ -1,0 +1,1670 @@
+{
+  "submission": {
+    "id": "9e998339-99a6-4250-ba5f-a5ed6f5e2102",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:50:28.713532Z",
+    "updated_at": "2025-12-02T13:50:28.713532Z"
+  },
+  "content": [
+    {
+      "id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "submission_id": "9e998339-99a6-4250-ba5f-a5ed6f5e2102",
+      "content_type": "manuscript",
+      "content_text": "# Releasing a preprint is associated with more attention and citations for the peer-reviewed article\n\n## Authors\n\n- Darwin Y Fu<sup>1</sup> ([ORCID: 0000-0003-1407-1689](https://orcid.org/0000-0003-1407-1689))\n- Jacob J Hughey<sup>1</sup> ([ORCID: 0000-0002-1558-6089](https://orcid.org/0000-0002-1558-6089)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Informatics Vanderbilt University Medical Center Nashville United States\n2. Department of Biological Sciences Vanderbilt University Medical Center Nashville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPreprints in biology are becoming more popular, but only a small fraction of the articles published in peer-reviewed journals have previously been released as preprints. To examine whether releasing a preprint on bioRxiv was associated with the attention and citations received by the corresponding peer-reviewed article, we assembled a dataset of 74,239 articles, 5,405 of which had a preprint, published in 39 journals. Using log-linear regression and random-effects meta-analysis, we found that articles with a preprint had, on average, a 49% higher Altmetric Attention Score and 36% more citations than articles without a preprint. These associations were independent of several other article- and author-level variables (such as scientific subfield and number of authors), and were unrelated to journal-level variables such as access model and Impact Factor. This observational study can help researchers and publishers make informed decisions about how to incorporate preprints into their work.\n\n## Introduction\n\nPreprints offer a way to freely disseminate research findings while a manuscript undergoes peer review (Berg et al., 2016). Releasing a preprint is standard practice in several disciplines, such as physics and computer science (Ginsparg, 2011), and a number of organizations \u2013 including ASAPbio and bioRxiv.org (Sever et al., 2019) \u2013 are encouraging the adoption of preprints in biology and the life sciences. However, some researchers in these fields remain reluctant to release their work as preprints, partly for fear of being scooped as preprints are not universally considered a marker of priority (Bourne et al., 2017), and partly because some journals explicitly or implicitly refuse to accept manuscripts released as preprints (Reichmann et al., 2019). Whatever the reason, the number of preprints released each month in the life sciences is only a fraction of the number of peer-reviewed articles published (Penfold and Polka, 2019).\n\nAlthough the advantages of preprints have been well articulated (Bourne et al., 2017; Sarabipour et al., 2019), quantitative evidence for these advantages remains relatively sparse. In particular, how does releasing a preprint relate to the outcomes \u2013 in so far as they can be measured \u2013 of the peer-reviewed article? Previous work found that papers posted on arXiv before acceptance at a computer science conference received more citations in the following year than papers posted after acceptance (Feldman et al., 2018). Another study found that articles with preprints on bioRxiv had higher Altmetric Attention Scores and more citations than those without, but the study was based on only 776 peer-reviewed articles with preprints (commensurate with the size of bioRxiv at the time) and did not examine differences between journals (Serghiou and Ioannidis, 2018). We sought to build on these efforts by leveraging the rapid growth of bioRxiv,\u00a0which is now the largest repository of biology preprints. Independently from our work, a comprehensive recent study has replicated and extended the findings of Serghiou and Ioannidis, although it did not quantify journal-specific effects or account for differences between scientific fields (Fraser et al., 2019).\n\n## Results\n\nWe first assembled a dataset of peer-reviewed articles indexed in PubMed, including each article's Altmetric Attention Score and number of citations and whether it had a preprint on bioRxiv. (See Methods for full details. The code and data to reproduce this study are available on Figshare; see data availability statement below.) Because we sought to perform an analysis stratified by journal, we only included articles from journals that had published at least 50 articles with a preprint on bioRxiv. Overall, our dataset included 74,239 articles, 5,405 of which had a preprint, published in 39 journals between January 1, 2015 and December 31, 2018 (Supplementary file 1). Release of the preprint preceded publication of the peer-reviewed article by a median of 174 days (Figure 1\u2014figure supplement 2).\n\nAcross journals and often within a journal, Attention Score and citations varied by orders of magnitude between articles (Figure 1\u2014figure supplements 3 and 4). Older articles within a given journal tended to have more citations, whereas older and newer articles tended to have similar distributions of Attention Score. In addition, Attention Score and citations within a given journal were weakly correlated with each other (median Spearman correlation 0.18, Figure 1\u2014figure supplement 5, and Supplementary file 2). These findings suggest that the two metrics capture different aspects of an article\u2019s impact.\n\nWe next used regression modeling to quantify the associations of an article\u2019s Attention Score and citations with whether the article had a preprint. To reduce the possibility of confounding (Falagas et al., 2013; Fox et al., 2016), each regression model included terms for an article\u2019s preprint status, publication date, number of authors, number of references, whether any author had an affiliation in the United\u00a0States (by far the most common country of affiliation in our dataset, Supplementary file 13), whether any author had an affiliation at an institution in the 2019 Nature Index for Life Sciences (a proxy for institutions that publish a large amount of high quality research), the last author publication age, and the article\u2019s approximate scientific subfield within the journal (Supplementary file 4). We inferred each last author\u2019s publication age (which is a proxy for the number of years the\u00a0last\u00a0author has been a principal investigator) using names and affiliations in PubMed (see Methods for details). We approximated scientific subfield as the top 15 principal components (PCs) of Medical Subject Heading (MeSH) term assignments calculated on a journal-wise basis (Figure 1\u2014figure supplements 6 and 7 and Supplementary file 5), analogously to how genome-wide association studies use PCs to adjust for population stratification (Price et al., 2006).\n\nFor each journal and each of the two metrics, we fit multiple regression models. For Attention Scores, which are real numbers, we fit log-linear and Gamma models. For citations, which are integers, we fit log-linear, Gamma, and negative binomial models. Log-linear regression consistently gave the lowest mean absolute error and mean absolute percentage error (Figure 1\u2014figure supplement 8 and Supplementary file 6), so we used only log-linear regression for all subsequent analyses (Supplementary file 7).\n\nWe used the regression fits to calculate predicted Attention Scores and citations for hypothetical articles with and without a preprint in each journal, holding all other variables fixed (Figure 1). We also examined the exponentiated model coefficients for having a preprint (equivalent to fold-changes), which allowed comparison of relative effect sizes between journals (Figure 2). Both approaches indicated higher Attention Scores and more citations for articles with preprints, although as expected Attention Score and citations showed large article-to-article variation (Figure 1\u2014figure supplement 9). Similar to Attention Scores and citations themselves, fold-changes of the two metrics were weakly correlated with each other (Spearman correlation 0.19).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-v2.jpg)\n\n**Figure 1.:** Each point indicates the predicted mean of the Attention Score (middle column) and number of citations (right column) for a hypothetical article with (green) or without (orange) a preprint, assuming the hypothetical article was published three years ago and had the mean value (i.e., zero) of each of the top 15 MeSH term PCs and the median value (for articles in that journal) of number of authors, number of references, U.S. affiliation status, Nature Index affiliation status, and last author publication age. Error bars indicate 95% confidence intervals. Journal names correspond to PubMed abbreviations: number of articles with (green) and without (orange) a preprint are shown in the left column. Journals are ordered by the mean of predicted mean Attention Score and predicted mean number of citations.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Each point represents one of the 100 randomly selected articles. The gray line represents y\u00a0=\u00a0x. For details, see Supplementary file 14.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp2-v2.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp3-v2.jpg)\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** For ease of visualization, 23 articles with more than 1024 citations were set to have exactly 1024 citations.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** For ease of visualization, 23 articles with more than 1,024 citations were set to have exactly 1,024 citations.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp6-v2.jpg)\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Each point represents an article.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp8-v2.jpg)\n\n**Figure 1\u2014figure supplement 8.:** Each point represents a journal. The gray line indicates y\u00a0=\u00a0x.\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp9-v2.jpg)\n\n**Figure 1\u2014figure supplement 9.:** The plots were generated identically to Figure 1, except they show 95% prediction intervals instead of 95% confidence intervals. Confidence intervals represent uncertainty in the population mean, whereas prediction intervals represent uncertainty in an individual observation. Thus, prediction intervals show the article-to-article variation in Attention Score and citations, even when all variables in the model are fixed.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig2-v2.jpg)\n\n**Figure 2.:** Fold-change corresponds to the exponentiated coefficient from log-linear regression, where fold-change\u00a0>1 indicates higher Attention Score or number of citations for articles that had a preprint. A fold-change of 1 corresponds to no association. Error bars indicate 95% confidence intervals. Journals are ordered by mean log fold-change. Bottom row shows estimates from random-effects meta-analysis (also shown in Table 1). The source data for this figure is in Supplementary file 7.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** P-values are not adjusted for testing multiple journals.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Comparison in terms of (A) fold-change (i.e., exponentiated coefficient) for preprint status and (B) t-statistic for each of five variables. Each point represents a journal-metric pair.\n\nTo quantify the overall evidence for each variable\u2019s association with Attention Score and citations, we performed a random-effects meta-analysis of the respective model coefficients (Table 1 and Supplementary file 8). Based on the meta-analysis, an article\u2019s Attention Score and citations were positively associated with its preprint status, number of authors, number of references, U.S. affiliation status, and Nature Index affiliation status, and slightly negatively associated with its last author publication age.\n\n**Table 1.**\n Random-effects meta-analysis across journals of model coefficients from log-linear regression.A positive coefficient (column 3) means that Attention Score or number of citations increases as that variable increases (or if the article had a preprint or had an author with a U.S. affiliation or a Nature Index affiliation). However, coefficients for some variables have different units and are not directly comparable. P-values were adjusted using the Bonferroni-Holm procedure, based on having fit two models for each journal. Effectively, for each variable, the procedure multiplied the lesser p-value by two and left the other unchanged. Meta-analysis statistics for the intercept and publication date are shown in Supplementary file 8.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Metric</th>\n      <th>Article-level variable</th>\n      <th>Coef.</th>\n      <th>Std. error</th>\n      <th>95% CI (lower)</th>\n      <th>95% CI (upper)</th>\n      <th>p-value</th>\n      <th>Adj. p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Attention Score</td>\n      <td>Had a preprint</td>\n      <td>0.575</td>\n      <td>0.036</td>\n      <td>0.502</td>\n      <td>0.647</td>\n      <td>1.91e-18</td>\n      <td>3.82e-18</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>log2(number of authors)</td>\n      <td>0.129</td>\n      <td>0.015</td>\n      <td>0.099</td>\n      <td>0.158</td>\n      <td>1.04e-10</td>\n      <td>1.04e-10</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>log2(number of references + 1)</td>\n      <td>0.070</td>\n      <td>0.021</td>\n      <td>0.027</td>\n      <td>0.113</td>\n      <td>2.10e-03</td>\n      <td>2.10e-03</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Had an author with U.S. affiliation</td>\n      <td>0.143</td>\n      <td>0.021</td>\n      <td>0.100</td>\n      <td>0.187</td>\n      <td>6.08e-08</td>\n      <td>6.08e-08</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Had an author with Nature Index affiliation</td>\n      <td>0.147</td>\n      <td>0.020</td>\n      <td>0.106</td>\n      <td>0.188</td>\n      <td>1.20e-08</td>\n      <td>2.41e-08</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Last author publication age (yrs)</td>\n      <td>\u22120.009</td>\n      <td>0.001</td>\n      <td>\u22120.011</td>\n      <td>\u22120.007</td>\n      <td>5.86e-10</td>\n      <td>1.17e-09</td>\n    </tr>\n    <tr>\n      <td>Citations</td>\n      <td>Had a preprint</td>\n      <td>0.442</td>\n      <td>0.031</td>\n      <td>0.380</td>\n      <td>0.505</td>\n      <td>7.38e-17</td>\n      <td>7.38e-17</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>log2(number of authors)</td>\n      <td>0.181</td>\n      <td>0.009</td>\n      <td>0.163</td>\n      <td>0.200</td>\n      <td>9.76e-22</td>\n      <td>1.95e-21</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>log2(number of references + 1)</td>\n      <td>0.217</td>\n      <td>0.020</td>\n      <td>0.176</td>\n      <td>0.258</td>\n      <td>4.87e-13</td>\n      <td>9.73e-13</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Had an author with U.S. affiliation</td>\n      <td>0.079</td>\n      <td>0.011</td>\n      <td>0.057</td>\n      <td>0.102</td>\n      <td>1.49e-08</td>\n      <td>2.98e-08</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Had an author with Nature Index affiliation</td>\n      <td>0.100</td>\n      <td>0.015</td>\n      <td>0.071</td>\n      <td>0.130</td>\n      <td>3.46e-08</td>\n      <td>3.46e-08</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Last author publication age (yrs)</td>\n      <td>\u22120.003</td>\n      <td>0.001</td>\n      <td>\u22120.004</td>\n      <td>\u22120.001</td>\n      <td>8.61e-05</td>\n      <td>8.61e-05</td>\n    </tr>\n  </tbody>\n</table>\n\nIn particular, having a preprint was associated with a 1.49 times higher Attention Score (95% CI 1.42 to 1.57) and 1.36 times more citations (95% CI 1.30 to 1.42) of the peer-reviewed article. These effect sizes were\u00a0~4 times\u00a0larger than those for having an author with an affiliation in the U.S. or at a Nature Index institution. In a separate meta-analysis, the amount of time between release of the preprint and publication of the article was positively associated with the article\u2019s Attention Score, but not its citations (Supplementary files 9 and 10). Taken together, these results indicate that having a preprint is associated with a higher Attention Score and more citations independently of other article-level variables.\n\nBecause we calculated the MeSH term PCs separately for each journal, we did not perform a random-effects meta-analysis of the corresponding coefficients. However, within each journal, typically several PCs had p-value\u22640.05 for association with Attention Score or citations (Figure 2\u2014figure supplement 1). In addition, if we excluded the MeSH term PCs from the regression, the fold-changes for having a preprint increased modestly (Figure 2\u2014figure supplement 2 and Supplementary file 11). These results suggest that the MeSH term PCs capture meaningful variation in scientific subfield between articles in a given journal.\n\nFinally, using meta-regression, we found that the log fold-changes of the two metrics were not associated with the journal\u2019s access model, Impact Factor, or percentage of articles with preprints (Table 2 and Supplementary file 12). Thus, these journal-level characteristics do not explain journal-to-journal variation in the differences in Attention Score and citations between articles with and without a preprint.\n\n**Table 2.**\n Meta-regression across journals of log fold-changes for having a preprint.A positive coefficient means the log fold-change for having a preprint increases as that variable increases (or if articles in that journal are immediately open access). However, coefficients for different variables have different units and are not directly comparable. P-values were adjusted using the Bonferroni-Holm procedure, based on having fit two models. Depending on the two p-values for a given variable, the procedure may have left one p-value unchanged. Regression statistics for the intercept are shown in Supplementary file 12.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Metric</th>\n      <th>Journal-level variable</th>\n      <th>Coef.</th>\n      <th>Std. error</th>\n      <th>95% CI (lower)</th>\n      <th>95% CI (upper)</th>\n      <th>t-statistic</th>\n      <th>p-value</th>\n      <th>Adj. p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Attention Score</td>\n      <td>Immediately open access</td>\n      <td>0.118</td>\n      <td>0.076</td>\n      <td>\u22120.037</td>\n      <td>0.273</td>\n      <td>1.551</td>\n      <td>0.130</td>\n      <td>0.260</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>log2(Impact Factor)</td>\n      <td>\u22120.025</td>\n      <td>0.040</td>\n      <td>\u22120.107</td>\n      <td>0.057</td>\n      <td>\u22120.616</td>\n      <td>0.542</td>\n      <td>0.542</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>log2(% of articles with preprints)</td>\n      <td>\u22120.064</td>\n      <td>0.032</td>\n      <td>\u22120.129</td>\n      <td>0.001</td>\n      <td>\u22121.991</td>\n      <td>0.054</td>\n      <td>0.109</td>\n    </tr>\n    <tr>\n      <td>Citations</td>\n      <td>Immediately open access</td>\n      <td>\u22120.013</td>\n      <td>0.069</td>\n      <td>\u22120.152</td>\n      <td>0.126</td>\n      <td>\u22120.187</td>\n      <td>0.853</td>\n      <td>0.853</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>log2(Impact Factor)</td>\n      <td>0.044</td>\n      <td>0.036</td>\n      <td>\u22120.030</td>\n      <td>0.117</td>\n      <td>1.211</td>\n      <td>0.234</td>\n      <td>0.468</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>log2(% of articles with preprints)</td>\n      <td>0.037</td>\n      <td>0.029</td>\n      <td>\u22120.022</td>\n      <td>0.095</td>\n      <td>1.283</td>\n      <td>0.208</td>\n      <td>0.208</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nThe decision of when and where to disclose the products of one\u2019s research is influenced by multiple factors. Here we find that having a preprint on bioRxiv is associated with a higher Altmetric Attention Score and more citations of the peer-reviewed article. The associations appear independent of several other article- and author-level variables and unrelated to journal-level variables such as access model and Impact Factor.\n\nThe advantage of stratifying by journal as we did here is that it accounts for the journal-specific factors \u2013 both known and unknown \u2013 that affect an article\u2019s Attention Score and citations. The disadvantage is that our results only apply to journals that have published at least 50 articles that have a preprint on bioRxiv (with multidisciplinary journals excluded). In fact, our preprint counts may be an underestimate, since some preprints on bioRxiv have been published as peer-reviewed articles, but not yet detected as such by bioRxiv's internal system (Abdill and Blekhman, 2019). Furthermore, the associations we observe may not apply to preprints on other repositories such as arXiv Quantitative Biology and PeerJ Preprints.\n\nWe used the Altmetric Attention Score and number of citations on CrossRef because, unlike other article-level metrics such as number of views, both are publicly and programmatically available for any article with a DOI. However, both metrics are only crude proxies for an article\u2019s true scientific impact, which is difficult to quantify and can take years or decades to assess.\n\nFor multiple reasons, our analysis does not indicate whether the associations between preprints, Attention Scores, and citations have changed over time. First, historical citation counts are not currently available from CrossRef, so our data included each article\u2019s citations at only one moment in time. Second, most journals had a relatively small number of articles with preprints and most preprints were relatively recent, so we did not model a statistical interaction between publication date and preprint status. We also largely ignored characteristics of the preprints themselves. In any case, the associations we observe may change as the culture of preprints in the life sciences evolves.\n\nGrouping scientific articles by their research areas is an ongoing challenge (Piwowar et al., 2018; Waltman and van Eck, 2012). Although the principal components of MeSH term assignments are only a simple approximation, they do explain some variation in Attention Score and citations between articles in a given journal. Thus, our approach to estimating scientific subfield may be useful in other analyses of the biomedical literature.\n\nOur heuristic approach to infer authors\u2019 publication histories from their names and free-text affiliations in PubMed was accurate, but not perfect. The heuristic was necessary because unique author identifiers such as ORCID iDs currently have sparse coverage of the published literature. This may change with a recent requirement from multiple U.S. funding agencies (NIH, 2019), which would enhance future analyses of scientific publishing.\n\nBecause our data are observational, we cannot conclude that releasing a preprint is causal for a higher Attention Score and more citations of the peer-reviewed article. Even accounting for all the other factors we modeled, having a preprint on bioRxiv could be merely a marker for research likely to receive more attention and citations anyway. For example, perhaps authors who release their work as preprints are more active on social media, which could partly explain the association with Attention Score, although given the weak correlation between Attention Score and citations, it would likely not explain the association with citations. If there is a causal role for preprints, it may be related to increased visibility that leads to \u201cpreferential attachment\u201d (Wang et al., 2013) while the manuscript is in peer review. These scenarios need not be mutually exclusive, and without a randomized trial they are extremely difficult to distinguish.\n\nAltogether, our findings contribute to the growing observational evidence of the effects of preprints in biology (Fraser et al., 2019), and have implications for preprints in chemistry and medicine (Kiessling et al., 2016; Rawlinson and Bloom, 2019). Consequently, our study may help researchers and publishers make informed decisions about how to incorporate preprints into their work.\n\n## Methods\n\n### Collecting the data\n\nData came from four primary sources: PubMed, Altmetric, CrossRef, and Rxivist. We obtained data for peer-reviewed articles from PubMed using NCBI's E-utilities API via the rentrez R package (Winter, 2017). We obtained Altmetric Attention Scores using the Altmetric Details Page API via the rAltmetric R package. The Altmetric Attention Score is an aggregate measure of mentions from various sources, including social media, mainstream media, and policy documents (https://www.altmetric.com/about-our-data/our-sources/). We obtained numbers of citations using the CrossRef API (specifically, we used \u201cis-referenced-by-count\u201d). We obtained links between bioRxiv preprints and peer-reviewed articles using the CrossRef API via the rcrossref R package. We verified and supplemented the links from CrossRef using Rxivist (Abdill and Blekhman, 2019) via the Postgres database in the public Docker image (https://hub.docker.com/r/blekhmanlab/rxivist_data). We merged data from the various sources using the Digital Object Identifier (DOI) and PubMed ID of the peer-reviewed article.\n\nWe obtained Journal Impact Factors from the 2018 Journal Citation Reports published by Clarivate Analytics. We obtained journal access models from the journals' websites. As in previous work (Abdill and Blekhman, 2019), we classified access models as \u201cimmediately open\u201d (in which all articles receive an open access license immediately upon publication) or \u201cclosed or hybrid\u201d (anything else).\n\nStarting with all publications indexed in PubMed, we applied the following inclusion criteria:\n\nInclusion criteria for bioRxiv preprints:\n\nInclusion criteria for journals:\n\nWe obtained all data on September 28, 2019, thus all predictions of Attention Score and citations are for this date. Preprints and peer-reviewed articles have distinct DOIs, and accumulate Attention Scores and citations independently of each other. We manually inspected 100 randomly selected articles from the final set, and found that all 100 were original research articles. For those 100 articles, the Spearman correlation between number of citations from CrossRef and number of citations from Web of Science Core Collection was 0.98, with a mean difference of 2.5 (CrossRef typically being higher), which indicates that the citation data from CrossRef are reliable and different sources would likely not produce different results.\n\n### Inferring author-level variables\n\nInstitutional affiliation in PubMed is a free-text field, but is typically a series of comma-separated values with the country near the end. To identify the corresponding country of each affiliation, we used a series of heuristic regular expressions (Supplementary file 13 shows the number of affiliations for each identified country). Each author of a given article can have zero or more affiliations. For many articles, especially less recent ones, only the first author has any affiliations listed in PubMed, even though those affiliations actually apply to all the article\u2019s authors (as verified by the version on the journal\u2019s website). Therefore, the regression modeling used a binary variable for each article corresponding to whether any author had any affiliation in the United\u00a0States.\n\nTo approximate institutions that may be associated with higher citation rates, we used the 2019 Nature Index for Life Sciences (Nature Index, 2019), which lists the 100 institutions with the highest fractional count of articles in Nature Index journals in the Life Sciences between January 1, 2018 and December 31, 2018. The fractional count accounts for the fraction of authors from that institution and the number of affiliated institutions per article. Nature Index journals are selected by panels of active scientists and are supposed to represent the \u201cupper echelon\u201d (Nature Index, 2014). They are not limited to journals of Nature Publishing Group. We used regular expressions to identify which affiliations corresponded to which Nature Index institutions. The regression modeling then used a binary variable for each article corresponding to whether any author had an affiliation at any of the Nature Index institutions.\n\nFor each article in our dataset, we sought to identify the last author\u2019s *first* last-author publication, i.e., the earliest publication in which that person is the last author, in order to estimate how long a person has been a principal investigator. Author disambiguation is challenging, and unique identifiers are currently sparse in PubMed and bioRxiv. We developed an approach to infer an author\u2019s previous publications in PubMed based only on that person\u2019s name and affiliations.\n\nThe primary components of an author\u2019s name in PubMed are last name, fore name (which often includes middle initials), and initials (which do not include last name). Fore names are present in PubMed mostly from 2002 onward. For each article in our dataset (each target publication), our approach went as follows:\n\nFor a randomly selected subset of 50 articles (none of which had been used to manually tune the similarity cutoff), we searched PubMed and authors\u2019 websites to manually identify each last author\u2019s first last-author publication. The Spearman correlation between manually identified and automatically identified dates was 0.88, the mean error was 1.74 years (meaning our automated approach sometimes missed the earliest publication), and the mean absolute error was 1.81 years (Figure 1\u2014figure supplement 1). The most common reason for error was that the author had changed institutions (Supplementary file 14).\n\n### Calculating principal components of MeSH term assignments\n\nMedical Subject Headings (MeSH) are a controlled vocabulary used to index PubMed and other biomedical databases. For each journal, we generated a binary matrix of MeSH term assignments for the peer-reviewed articles (1 if a given term was assigned to a given article, and 0 otherwise). We only included MeSH terms assigned to at least 5% of articles in a given journal, and excluded the terms \"Female\" and \"Male\" (which referred to the biological sex of the study animals and were not related to the article's field of research). We calculated the principal components (PCs) using the prcomp function in the stats R\u00a0package and scaling the assignments for each term to have unit variance. We calculated the percentage of variance in MeSH term assignment explained by each PC as that PC's eigenvalue divided by the sum of all eigenvalues. By calculating the PCs separately for each journal, we sought to capture the finer variation between articles in a given journal rather than the higher-level variation between articles in different journals.\n\n### Quantifying the associations\n\nAttention Scores are real numbers\u00a0\u2265\u00a00, whereas citations are integers\u00a0\u2265\u00a00. Therefore, for each journal, we fit two types of regression models for Attention Score and three for citations:\n\nEach model had the following independent variables for each peer-reviewed article:\n\nWe evaluated goodness-of-fit of each regression model using mean absolute error and mean absolute percentage error. To fairly compare the different model types, we converted each prediction to the original scale of the respective metric prior to calculating the error.\n\nAs a secondary analysis, we added to the log-linear regression model a variable corresponding to the amount of time in years by which release of the preprint preceded publication of the peer-reviewed article (using 0 for articles without a preprint). We calculated this variable based on preprint release dates from CrossRef and Rxivist and publication dates from PubMed.\n\nWe extracted coefficients and their 95% confidence intervals from each log-linear regression model. Because preprint status is binary, its model coefficient corresponded to a log2 fold-change. We used each regression model to calculate predicted Attention Score and number of citations, along with corresponding 95% confidence intervals and 95% prediction intervals, given certain values of the variables in the model. For simplicity in the rest of the manuscript, we refer to exponentiated model coefficients as fold-changes of Attention Score and citations, even though they are actually fold-changes of \u201cAttention Score + 1\u201d and \u201ccitations + 1\u201d.\n\nWe performed each random-effects meta-analysis based on the Hartung-Knapp-Sidik-Jonkman method (IntHout et al., 2014) using the metagen function of the meta R package (Schwarzer et al., 2015). We performed meta-regression by fitting a linear regression model in which the dependent variable was the journal\u2019s coefficient for preprint status (from either Attention Score or citations) and the independent variables were the journal\u2019s access model (encoded as 0 for \u201cclosed or hybrid\u201d and 1 for \u201cimmediately open\u201d), log2(Impact Factor), and log2(percentage of articles released as preprints). We adjusted p-values for multiple testing using the Bonferroni-Holm procedure, which is uniformly more powerful than the standard Bonferroni procedure (Holm, 1979).\n\n### Data availability\n\nCode and data to reproduce this study are available on Figshare (https://doi.org/10.6084/m9.figshare.8855795).\n",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "2f411966-7114-4597-8558-e044dc945f26",
+      "submission_id": "9e998339-99a6-4250-ba5f-a5ed6f5e2102",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, eLife United Kingdom\n\nReviewers:\n- Olavo Amaral, Universidade Federal do Rio de Janeiro Brazil\n\n## Review text\n\nDOI: [10.7554/eLife.52646.sa1](https://doi.org/10.7554/eLife.52646.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors\u2019 note: the original version of this study was declined after peer review. The authors submitted a revised version, which was reviewed, revised again, and accepted. The decision letter sent after the first round of peer review is immediately below, followed by the decision letter sent after the second round of peer review.]\n\nThank you for submitting your manuscript \"Releasing a preprint is associated with more attention and citations\" to eLife for consideration as a Feature Article. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by the eLife Features Editor.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nReviewer #1:\n\nThe submitted manuscript, \"Releasing a preprint is associated with more attention and citations,\" examines more than 45,000 publications from 26 biology journals and compares the citation counts and Altmetric Attention Scores of publications that were or were not previously released as a preprint. After controlling for journal, publication date and a cleverly constructed \"scientific subfield,\" the authors find articles that had been pre-printed are associated with higher citation counts and Attention Scores, and that these effects are diminished in journals with higher Journal Impact Factors. The code availability is exemplary, the results are conveyed clearly, and it's laudable that the Discussion section is so frank regarding the limitations of the study. However, I am unsure whether those limitations are acceptable \u2013 if they are, there are several issues that should be addressed before publication.\n\nMy primary concern is the large number of confounders that are unaccounted for in the study. Though the authors make a convincing case that the publications with preprints do have an advantage in citations and attention score, there is little attention given in the analysis to the numerous factors that have already been linked to increased attention or citations, factors that may be the actual driver of this effect, rendering preprint status irrelevant. For example, perhaps (published) preprints are longer than articles without preprints [1,2] or have more authors [2]. The results could be affected if senior authors with other highly cited papers are more likely to post a preprint [3,4], or if bioRxiv has an overrepresentation of researchers from \"elite\" institutions [5] or large research groups [6]. Or maybe authors enthusiastic about preprints also just happen to be more active on Twitter.\n\nIn short, I am unsure of the utility of measuring complex dynamics like citation count and attention score without incorporating any data about authors. Most importantly, I do not believe this work provides adequate support for the statement in its Abstract that \"this observational study can help researchers and publishers make informed decisions about how to incorporate preprints into their work.\" This assertion is directly contradicted by the Discussion section, which accurately assesses the shortcomings of the study. I sympathize with the difficulties in obtaining data on authors, and I do not believe those shortcomings could be remediated in the two-month revision timeline given in the review instructions. I leave it to the discretion of the editors whether this represents an incremental improvement significant enough for publication.\n\nAdditional comments:\n\nResults, first paragraph: I believe there are several ways for this finding to be strengthened, some of which pose significant problems as presented currently:\n\n- Most straightforwardly, I don't believe the statement accurately reflects what is actually being measured: \"Across journals, each article's Attention Score and citations were weakly correlated\" does not convey that the metrics within each journal, and then again within individual years, are, on average, weakly correlated. Clarification would be helpful.\n\n- This result would also benefit from elaboration, here or in the Materials and methods section, regarding why the data were segmented this way to begin with. While other results indicate that journal and year both influence the difference between preprinted and non-preprinted publications, is there any evidence that journal and/or year influence the relationship between citations and attention score overall? Comparing all articles together, it appears citations and attention score are correlated with Spearman's rho=0.32. Is there any benefit to instead separating the articles into \"journal-years,\" calculating separate rho values, and finding the median is instead 0.29? If it is to measure the consistency of the relationship across years and journals, this should be stated more explicitly.\n\n- The reported median Spearman correlation and the contents of Figure S2 exclude any consideration of the significance of the correlations, which, while it may not substantially affect the median, does obscure how frequently a journal-year does not have a significant correlation between citations and attention score. A quick estimation using the p-values from the \"cor.test\" function, corrected for performing 103 correlation tests, suggests there are 16 journal-years that have no significant correlation-changing those rho values to 0 makes Figure S2 look very different, and the largest bin becomes the one indicating no correlation at all. That said, I don't have the knowledge to say if the assumptions used to generate p-values in that package are appropriate here, since the end result is a median of correlations. At the least, if the authors keep the median Spearman correlation, this finding would benefit from performing a permutation test to help us understand whether this median is any better than would be expected at random: Scrambling the citation numbers (possibly within each journal?) and calculating a new median, say, 1,000 times, may help reveal how unexpected a median rho of 0.29 actually is.\n\nResults, second paragraph: I'm curious about the reasoning given for using a log transformation here: \"since both metrics were greater than or equal to zero and spanned orders of magnitude.\" While those are reasonable tests to see whether it's possible to log-transform the data, it seems like the actual reason was because it enables using the regression to discuss log-fold change rather than differences in absolute measurements. This statement would benefit from clarification, or a citation supporting why the stated criteria is appropriate.\n\nTable 2: The authors state that they present uncorrected p-values here because \"for each metric, the three variables were tested in one model.\" This is true, and a nice benefit of meta-regression. However, the paper describes the results of two different meta-regression models, which test two different hypotheses (one regarding attention score, and another regarding citations). Though a p-value threshold is not specified for these tests (Results, final paragraph, states only \"significantly associated\"), convention would suggest the cutoff was 0.05. A Bonferroni correction (for two tests) would push all p values in Table 2 above this threshold-the authors should correct these measurements and update the findings described in the final paragraph of the Results accordingly. Alternatively, it would be acceptable to leave these values as-is and provide further support for not correcting the p-values generated by multiple meta-regression analyses.\n\nReferences:\n\n(Not intended as a request for the authors to include citations to these papers, just offered here to support my feedback above.)\n\n1) Falagas et al. 2013. The Impact of Article Length on the Number of Future Citations: A Bibliometric Analysis of General Medicine Journals. PLOS ONE. doi: 10.1371/journal.pone.0049476.\n\n2) Fox et al. 2016. Citations increase with manuscript length, author number, and references cited in ecology journals. Ecology and Evolution. doi: 10.1002/ece3.2505.\n\n3) Fu and Aliferis. 2008. Models for Predicting and Explaining Citation Count of Biomedical Articles. AMIA Annual Symposium Proceedings. PMID: 8999029.\n\n4) Perc. 2014. The Matthew effect in empirical data. Journal of the Royal Society Interface. doi: 10.1098/rsif.2014.0378.\n\n5) Medoff. 2007. Evidence of a Harvard and Chicago Matthew Effect. Journal of Economic Methodology. doi: 10.1080/13501780601049079.\n\n6) van Raan. 2006. Performance\u2010related differences of bibliometric statistical properties of research groups: Cumulative advantages and hierarchically layered networks. Journal of the American Society for Information Science and Technology. doi: 10.1002/asi.20389.\n\nReviewer #2:\n\nThe article investigates the relationship between preprint posting and subsequent citations and Altmetric scores of published articles. The topic is interesting and worthy of attention and, although it has been approached previously in the literature with similar conclusions (Serghiou and Ioannidis, 2018), the authors perform a much more detailed analysis of the subject. Data and code for the performed analyses are available in figshare.\n\nMy major concerns and suggestions are the following:\n\n1) Although the statistics used, based on multivariate linear regression, are generally solid, the visualization of results is frequently less intuitive than it could be, and seems to be aimed at the data scientist more than at the average reader. In summary:\n\n- In Figure 1A, although the forest plot is a great way to show how results vary by journal, it does not allow the reader to appreciate the range of variability of citations among articles with and without preprints (as the confidence intervals shown depend both on variability and on sample size). As the article is ultimately the unit of analysis here, I miss a standard scatter plot showing unit-level citations for articles with and without preprints \u2013 either for the whole set of articles or divided by journal (although this might be too large and better left to a supplementary figure).\n\n- Again in terms of visualizing variability, are the authors sure about using log scales in the figures? Although logarithmic transformation is useful for statistics, it is once again not the most intuitive way for the reader to get a sense of the full range of variability.\n\n- Some of the supplementary figures (particularly Figures S3 and S5) are quite hard to read and understand due to the sheer volume of data presented and might not be very useful to the reader.\n\n2) Did the author evaluate the interaction between preprints and publication year in the model? This seems like an important question to better assess the likelihood of causality between preprint availability and citations \u2013 for more recent articles, I would expect the preprint-related advantage to be greater, as the preprint-only period will account for a larger part of the paper's lifetime. Over time, this advantage is likely to taper off. On the other hand, if an interaction between publication year and preprint availability is not observed, this might suggest that the citation advantage is not necessarily due to the preprint's visibility, but rather to other features or confounders (e.g. articles with preprints being of higher interest, or stemming from groups with more visibility).\n\n3) Similarly, it would be interesting to investigate whether metrics of the preprint such as altmetric scores, number of downloads, or even citations \u2013 all of which are available in bioRxiv or CrossRef) are related to the citation advantage for their published versions. Although showing that the advantage is larger for preprints with more visibility does not prove that posting a preprint leads to more citations, finding that the advantage does not correlate with attention received to the preprint would argue against it. All of these could be performed as secondary analyses similar to the one performed for the number of days the preprint preceded the peer-reviewed article.\n\n4) The criteria for journal selection should be explained more clearly for the reader to assess the sample\u2019s representativeness. Moreover, the principal components used in subfield analysis could be better described (explicitly showing the terms with high loading in each of them) for one to get a sense of how meaningful they are to define subfields. Both of these themes are expanded in the minor comments.\n\nReviewer #3:\n\nThis article first identified 26 journals in the life sciences that have published at least 50 articles with a preprint on bioRxiv. For each article published in these journals between 2015-2018 it then extracted citation count from CrossRef, attention score from Altmetric and presence of a preprint from CrossRef and Rxivist. It then used log-transformed linear regression to quantify the association of having a preprint to citation count and attention score, adjusting for time since publication using a spline and scientific field using principal components analysis (PCA) of MeSH terms. It finally used meta-regression to conclude that across journals, overall, having a preprint was associated with 1.53 higher attention score and 1.31 higher citation count.\n\nThe authors should be commended for attempting to study and promote the advantages of preprints, validate and extend previous work, for openly providing their data and code and for including a good limitations section. However, the chosen method of data collection is highly prone to selection bias, many of the descriptive and analytic choices are poorly justified and the magnitude of association, wherever presented, is quantified in relative rather than absolute terms, which in the setting of highly skewed data is very misleading.\n\nAs such, in view of significant limitations, I am afraid I cannot recommend publication at this time. In addition, there is a preprint on bioRxiv with seemingly more thorough and compelling analyses than the current manuscript (Fraser et al., 2019: https://www.biorxiv.org/content/10.1101/673665v1).\n\nMajor concerns:\n\n1) The data collection process introduced serious selection bias. First, the manuscript uses a non-standard approach to recognizing research articles on PubMed, instead of using the \"publication type\" field. By using the \"date received\" and \"date published\" fields, this procedure immediately excludes dozens of journals that do not publish those dates, such as PNAS, which also happens to rank 6th in terms of total number of preprints published. Second, it is unclear why the manuscript only considers journals that have published at least 50 preprints. This decision introduces selection bias because journals publishing more articles will proportionally have more preprints and journals in certain fields publish more articles/preprints than others. Indeed, a quick look through Table 1 confirms that this analysis only includes articles from very large journals (e.g. PLoS journals) or from fields in which preprints are very popular (e.g. neuroscience and genetics). Third, it is unclear what the manuscript considers 'life sciences', what journals were initially eligible and what journals were excluded because of this definition \u2013 for example, what percentage of the articles published by a journal have to be \"non-life-science\" for it to be excluded?\n\n2) Multiple problems with descriptive and regression analyses. First, it is impossible to appreciate and interpret the findings of the regression analyses without descriptive statistics. The manuscript has to provide a table with descriptive statistics about all covariates included in each regression (in terms of median and interquartile range) as well as a univariable test for each (e.g. p-values from a non-parametric test). Second, such count data are notoriously skewed. As such, even though the log-transformation attempts to capture this skewness, the confidence intervals and p-values may still be wrong. I recommend that the authors instead use bootstrapped confidence intervals and p-values, which can be calculated using the confint(model, method = \"boot\", boot.type = \"basic\", nsim = 2000) function of the lme4 package. I also recommend that the manuscript (a) uses a Negative Binomial regression instead of the log-transformation of the response and (b) reports on the diagnostic procedures used to confirm appropriate fit (e.g. by investigating Pearson residuals). The manuscript did well in presenting Figure S8 to illustrate effects without adjusting for the principal components (PCs), the number of which in relation to the number of preprints was quite large (the 1 covariate per 10 outcomes rule of thumb was violated in about ~ 70% of the journals (18/26)), to confirm the apparent absence of overfitting.\n\n3) Interpretation of effect size is in relative rather than absolute terms. When presented, the size of association is interpreted in relative terms (e.g. 1.53 times), instead of absolute terms (e.g. a difference of 2 in median attention score, from 20 to 22). Relative terms are less meaningful and tend to unduly exaggerate the effects estimated. I recommend (a) that the authors present all measures of association (unlike Table 2, which only presents t-statistics) and (b) that all relative terms are either replaced or accompanied by absolute terms; here is an excellent guide on how to do this: https://www.healthnewsreview.org/toolkit/tips-for-understanding-studies/absolute-vs-relative-risk/. I also recommend that any talk of \"statistically significant\" or \"not significant\" is replaced by the magnitude of association, as this is what truly matters, and statistical significance language is often confusing and misleading to readers.\n\n4) Inadequate adjustment for scientific field. Even though the authors correctly identify that adjusting for scientific field is hard, the PCA does not convincingly address this concern. First, the approach of using a fixed number of PCs for each journal, rather than a fixed percent of variance explained, means that in half of the journals (13/26) the PCs only explain 50% of the variance due to scientific field or less. Second, the approach of refitting the PCA within each journal, means that even though there was an attempt to account for within-journal variability in scientific field, the between-journal variability is not being accounted for. Third, because of these points, the meta-regression results in a messy estimate of effect from the combination of heterogeneous values (as seen in Figure 1) emanating from regressions adjusting for different study fields to different extends (this heterogeneity was never quantified). The manuscript could address these issues by (a) using a sensitivity analysis to explore the impact of adjusting for different numbers of PCs, (b) using previously published methods to account for scientific field (e.g. Piwowar et al., 2018) or (c) matching articles for subject field using a chosen measure of distance (e.g. Mahalanobis distance) and only using pairs within a pre-specified maximum distance from each other.\n\n5) Lacking in principles of good scientific practice. Even though the authors should be commended for making their data and code available in a neatly-put ZIP file on figshare as well as making their article available as a preprint on bioRxiv, the manuscript would significantly benefit from the following additional practices: (a) make the protocol of this study openly available on either figshare or OSF Registries (https://osf.io/registries), (b) abide by and cite the STROBE guidelines for reporting observational studies (http://www.equator-network.org/reporting-guidelines/strobe/) and (c) include at least a statement on their sources of funding.\n\n6) Poor reporting. This manuscript could derive significant benefit from (a) further and more comprehensive explanation of its methods (e.g. why the choice of 50 or 200, why use regressions followed by meta-regression instead of a random effects model to start with, why use log-transformation instead of Negative Binomial, why use the quoted type of meta-regression, why use the current covariates and not more/less, etc.), (b) avoiding language that may not be familiar to many readers (e.g. fold-change, population stratification, citations + 1, etc.) and (c) adding explanations to figures in the supplement (e.g. what do Figure 1\u2014figure supplement 6 and Figure 1\u2014figure supplement 7 tell us about the PCs, etc.). I actually had to read the Results in combination with the Materials and methods a couple of times to understand that a different regression was fitted for each journal.\n\n[Editors' note: below is the decision letter sent after the second round of peer review.]\n\nThank you for submitting the revised version of \"Releasing a preprint is associated with more attention and citations for the peer-reviewed article\" to eLife. The revised version has been reviewed by two of the three reviewers who reviewed the previous version. The following individuals involved in review of your submission have agreed to reveal their identity: Olavo Amaral (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and myself, and we would like you to submit a revised version that addresses the points raised by the reviewers (see below). In particular, it is important that the datasets are better described so that other researchers can use them (see points 1 and 3 from Reviewer #1). Reviewer #1 also asks for some further analyses: these are optional \u2013 please see below for more details.\n\nReviewer #1:\n\nThe manuscript has been extensively revised and some of my main issues with it have been solved. In particular, methodology (especially article inclusion criteria) is much better described, and data visualization has been improved in many of the figures.\n\n1) However, I still have some issues with data presentation, in particular concerning the supplementary files in which much of the data requested by reviewers has been included. These tables are essentially datasets in. csv format with no legend or clear annotation for the meaning of each column, which is not always obvious from the variable name. Although inclusion of this material is laudable in the sense of data sharing, if the authors mean to use them as a meaningful way to present the results cited in the text, I feel that it is unfair to leave the burden of understanding and analyzing the data on the reader. If they are meant as tables in a scientific paper, it is the author's job to synthesize the data and make them clear to the reader through formatting and annotation, including making variable names self-explanatory and providing legends.\n\nOther general concerns involving analysis are described below:\n\n2) Why is \"affiliation in the US\" the only geographical factor analyzed? This is rather US-centric, and does not really capture the vast differences between countries in the \"non-US\" category. Can't the authors make a more meaningful division \u2013 for example, based on region/continent, or of economical/scientific development of the country of affiliation?\n\nNote from editor: Please either perform this extra analysis or explain why \"affiliation in the US\" is the only geographical factor analyzed.\n\n3) I still can get no intuitive meaning of what each of the principal components stand for, and cannot evaluate whether they indeed capture what they mean to (e.g. scientific subfield). The authors do provide a supplementary file with the PC loading, but as the other supplementary files, it is pretty much the raw data, and don't think it's fair for the reader to have to mine it on its own to look for meaning. Can't the authors provide a list of the top MeSH terms loading onto each principal component (as a word cloud, for example), so as to make the meaning of each of them somewhat intuitive?\n\n4) Moreover, if I understood correctly, the principal components are calculated separately for each journal \u2013 thus, their meaning varies from one journal to the next. Although that might increase their capability of capturing subfield-specific distinctions, this probably increases the potential that they capture noise rather than signal, due both to sample size decrease and to a decrease in meaningful variability within individual journals. Wouldn't it be more interesting to define subfields based on principal components for the whole sample? Note that this would have the added bonus of allowing inclusion of subfield in the metaregression analysis, and would probably facilitate visualization of the main factors loading onto each component, which would no longer be journal-dependent.\n\nNote from editor: Please either perform this extra analysis or address the comments above about the consequences of the principal components being journal-specific.\n\n5) I very much miss a table of descriptives and individual univariate associations for each variable included in the model before the data on multivariate regression are presented (as mentioned by reviewer #3 in their comments on the first version). Once again, I don't think that throwing in the raw data as a supplementary file substitutes for that.\n\n6) If the authors used time since publication as one of the variables in the model, why didn't they directly test the interaction between this and having a preprint to see whether the relationship changes over time, rather than not doing it and discussing it in the limitations? I understand that there might be confounders, as the authors appropriately discuss in the response to reviewers. However, I feel that discussing the results for the interaction, taking into account the possible confounders and limitations, is still likely to be more interesting than discussing the limitations without a result.\n\nNote from editor: Performing this extra analysis is optional.\n\nReviewer #2:\n\nThe revised manuscript includes a thorough response to the initial comments from reviewers. I believe the analysis has been much improved, and the manuscript now more clearly addresses the concerns that could not be practically addressed. There are only have a few points that could benefit from elaboration within the text.\n\nIntroduction, first paragraph: A concern in the previous review was that the statement regarding the proportion of papers that were preprinted was not supported by the provided citation. Though the authors state they have clarified the statement regarding \"the number of preprints released [...] is only a fraction of the number of peer reviewed articles published,\" it remains true that the cited paper says nothing about the overall number of published papers. If the authors want to include a statement about the proportion of published papers, I would point them toward a dataset such as this one, which may provide an acceptable estimate: Penfold NC, Polka J. (2019). Preprints in biology as a fraction of the biomedical literature (Version 1.0) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3256298\n\nMaterials and methods, subsection \u201cQuantifying the associations\u201d: It's still not clear why a spline was used to find the publication date instead of, say, the number of days since 1 Jan 2015. I'm not disputing that it's an appropriate way to encode the dates, but elaboration, as mentioned by a previous reviewer, would be helpful for people like me who have not explicitly encountered this technique before.\n\nDiscussion: A previous review comment was that authors with large social media followings may be confounding the analysis by giving themselves a publicity advantage that wasn't included in the analysis. The authors state in their response, \"given the weak correlation between Attention Score and citations, it seems unlikely this could explain the effect of preprint status on citations.\" This is a key point and an interesting rebuttal to the initial suggestion, but I don't believe it's made clear in the paper itself, which says only that online popularity \"would likely not explain the association with citations.\" The manuscript would benefit from clarification here to point out that there is only a loose connection between Attention Score and citations.\n\nTable 1 and Table 2: I believe the advice for multiple-test correction in my earlier review was misguided, I apologize. Though Table 1 now includes adjusted p-values, I'm confused by the approach taken. For 5 of the given p-values, the adjusted value is 2p, while the other 5 have identical adjusted values. Can the authors please check if these values are typos: if they are not, I would suggest they consult a statistician about this analysis, and also about the analysis in Table 2.\n",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a1f891ef-2751-4599-a595-2e4b66ca4c78",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C1",
+      "claim": "The dataset included 74,239 articles, 5,405 of which had a preprint, published in 39 journals between January 1, 2015 and December 31, 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our dataset included 74,239 articles, 5,405 of which had a preprint, published in 39 journals between January 1, 2015 and December 31, 2018 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the composition of the dataset with specific numbers of articles, preprints, journals, and date range.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "ca95fe68-3f41-4b89-b5c4-f9bf195e9dc2",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C2",
+      "claim": "Release of the preprint preceded publication of the peer-reviewed article by a median of 174 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Release of the preprint preceded publication of the peer-reviewed article by a median of 174 days (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides a specific median value and references a figure showing the distribution of days between preprint release and publication.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "6baeb566-7dee-429c-a570-f3c1baf9e964",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C3",
+      "claim": "Attention Score and citations within a given journal were weakly correlated with each other (median Spearman correlation 0.18).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Attention Score and citations within a given journal were weakly correlated with each other (median Spearman correlation 0.18, Figure 1\u2014figure supplement 5, and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides a specific correlation coefficient and references supporting figures and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "3be8a57f-34b3-4f0a-a3df-ad6da6f38acf",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C4",
+      "claim": "The two metrics (Attention Score and citations) capture different aspects of an article's impact.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the two metrics capture different aspects of an article's impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the weak correlation between Attention Score and citations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "94ae465c-4109-40eb-baa1-d7c3ff1ba1c0",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C5",
+      "claim": "Log-linear regression consistently gave the lowest mean absolute error and mean absolute percentage error.",
+      "claim_type": "EXPLICIT",
+      "source": "Log-linear regression consistently gave the lowest mean absolute error and mean absolute percentage error (Figure 1\u2014figure supplement 8 and Supplementary file 6), so we used only log-linear regression for all subsequent analyses (Supplementary file 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this as a result of comparing different regression models and references supporting figures and files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "340d551f-90c4-4182-ba06-713b589c583c",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C6",
+      "claim": "Articles with a preprint had higher Attention Scores and more citations than articles without a preprint.",
+      "claim_type": "EXPLICIT",
+      "source": "Both approaches indicated higher Attention Scores and more citations for articles with preprints, although as expected Attention Score and citations showed large article-to-article variation (Figure 1\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this as a finding from regression analysis and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "1cff610d-379c-4d2c-b7f3-75ff2026af05",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C7",
+      "claim": "Fold-changes of Attention Score and citations for having a preprint were weakly correlated with each other (Spearman correlation 0.19).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Attention Scores and citations themselves, fold-changes of the two metrics were weakly correlated with each other (Spearman correlation 0.19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a specific correlation coefficient for the relationship between fold-changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "776eb5ac-4c9f-4a48-8cc4-b39ea41b1035",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C8",
+      "claim": "Having a preprint was associated with a 1.49 times higher Attention Score (95% CI 1.42 to 1.57).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, having a preprint was associated with a 1.49 times higher Attention Score (95% CI 1.42 to 1.57) and 1.36 times more citations (95% CI 1.30 to 1.42) of the peer-reviewed article.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific effect sizes with confidence intervals from meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "f7cd3205-02a1-4222-a822-786e3836beab",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C9",
+      "claim": "Having a preprint was associated with 1.36 times more citations (95% CI 1.30 to 1.42).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, having a preprint was associated with a 1.49 times higher Attention Score (95% CI 1.42 to 1.57) and 1.36 times more citations (95% CI 1.30 to 1.42) of the peer-reviewed article.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific effect sizes with confidence intervals from meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "7bcd9900-7054-4b27-9019-31d0ed98a8ea",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C10",
+      "claim": "The effect sizes for having a preprint were approximately 4 times larger than those for having an author with a U.S. affiliation or at a Nature Index institution.",
+      "claim_type": "EXPLICIT",
+      "source": "These effect sizes were ~4 times larger than those for having an author with an affiliation in the U.S. or at a Nature Index institution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares the magnitude of effect sizes between different variables.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "234ab775-7c3d-4e1b-9eb9-451181cdd7fa",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C11",
+      "claim": "The amount of time between release of the preprint and publication of the article was positively associated with the article's Attention Score.",
+      "claim_type": "EXPLICIT",
+      "source": "In a separate meta-analysis, the amount of time between release of the preprint and publication of the article was positively associated with the article's Attention Score, but not its citations (Supplementary files 9 and 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a result from a separate meta-analysis and references supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "6d184e1a-fbd4-48cb-9227-542d7e35e82a",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C12",
+      "claim": "The amount of time between release of the preprint and publication of the article was not associated with the article's citations.",
+      "claim_type": "EXPLICIT",
+      "source": "In a separate meta-analysis, the amount of time between release of the preprint and publication of the article was positively associated with the article's Attention Score, but not its citations (Supplementary files 9 and 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a result from a separate meta-analysis and references supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "b2ad6001-cfdc-4787-8a3b-4229c9357f29",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C13",
+      "claim": "Having a preprint is associated with a higher Attention Score and more citations independently of other article-level variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that having a preprint is associated with a higher Attention Score and more citations independently of other article-level variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the regression analysis that controlled for multiple variables.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "3ec7397b-4939-49de-bb10-573b93362a6e",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C14",
+      "claim": "Within each journal, typically several principal components had p-value\u22640.05 for association with Attention Score or citations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, within each journal, typically several PCs had p-value\u22640.05 for association with Attention Score or citations (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this observation and references a supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "8810b604-2645-4b96-b313-91aa3f75301f",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C15",
+      "claim": "If MeSH term PCs were excluded from the regression, the fold-changes for having a preprint increased modestly.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, if we excluded the MeSH term PCs from the regression, the fold-changes for having a preprint increased modestly (Figure 2\u2014figure supplement 2 and Supplementary file 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the result of a sensitivity analysis and references supporting materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "fdf90d15-71c2-4ef6-9bf9-57bddbcc01d9",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C16",
+      "claim": "The MeSH term PCs capture meaningful variation in scientific subfield between articles in a given journal.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the MeSH term PCs capture meaningful variation in scientific subfield between articles in a given journal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the statistical significance of PCs and the change in fold-changes when PCs are excluded.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "57ea180c-0699-4669-b2c4-00b21b779d46",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C17",
+      "claim": "The log fold-changes of Attention Score and citations for having a preprint were not associated with the journal's access model.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, using meta-regression, we found that the log fold-changes of the two metrics were not associated with the journal's access model, Impact Factor, or percentage of articles with preprints (Table 2 and Supplementary file 12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a result from meta-regression analysis and references a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "0db6a266-ce5c-4616-8fc1-0333ff5b1ff6",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C18",
+      "claim": "The log fold-changes of Attention Score and citations for having a preprint were not associated with the journal's Impact Factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, using meta-regression, we found that the log fold-changes of the two metrics were not associated with the journal's access model, Impact Factor, or percentage of articles with preprints (Table 2 and Supplementary file 12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a result from meta-regression analysis and references a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "e4b4e13b-8f92-45ca-9348-25f997a607b6",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C19",
+      "claim": "The log fold-changes of Attention Score and citations for having a preprint were not associated with the journal's percentage of articles with preprints.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, using meta-regression, we found that the log fold-changes of the two metrics were not associated with the journal's access model, Impact Factor, or percentage of articles with preprints (Table 2 and Supplementary file 12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a result from meta-regression analysis and references a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "69d4d085-93f7-4c0c-90e9-80f5c59c1d90",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C20",
+      "claim": "Journal-level characteristics (access model, Impact Factor, percentage of articles with preprints) do not explain journal-to-journal variation in the differences in Attention Score and citations between articles with and without a preprint.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these journal-level characteristics do not explain journal-to-journal variation in the differences in Attention Score and citations between articles with and without a preprint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the meta-regression results showing no association.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "1f2768f9-573b-460e-ad70-395fb66d461a",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C21",
+      "claim": "Articles with a preprint had, on average, a 49% higher Altmetric Attention Score than articles without a preprint.",
+      "claim_type": "EXPLICIT",
+      "source": "Using log-linear regression and random-effects meta-analysis, we found that articles with a preprint had, on average, a 49% higher Altmetric Attention Score and 36% more citations than articles without a preprint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a main finding in the abstract using specific percentages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "eed0a982-7cf7-4e01-9ccf-11e4b84aa941",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C22",
+      "claim": "Articles with a preprint had, on average, 36% more citations than articles without a preprint.",
+      "claim_type": "EXPLICIT",
+      "source": "Using log-linear regression and random-effects meta-analysis, we found that articles with a preprint had, on average, a 49% higher Altmetric Attention Score and 36% more citations than articles without a preprint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a main finding in the abstract using specific percentages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "942827ad-8829-428d-8f87-8ada5c85e2fa",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C23",
+      "claim": "The associations between preprints and Attention Score/citations were independent of several other article- and author-level variables (such as scientific subfield and number of authors).",
+      "claim_type": "EXPLICIT",
+      "source": "These associations were independent of several other article- and author-level variables (such as scientific subfield and number of authors), and were unrelated to journal-level variables such as access model and Impact Factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a main finding in the abstract, based on the regression models that controlled for these variables.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "c095389c-7790-4400-be07-178293eb893d",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C24",
+      "claim": "The associations between preprints and Attention Score/citations were unrelated to journal-level variables such as access model and Impact Factor.",
+      "claim_type": "EXPLICIT",
+      "source": "These associations were independent of several other article- and author-level variables (such as scientific subfield and number of authors), and were unrelated to journal-level variables such as access model and Impact Factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a main finding in the abstract, based on the meta-regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "7431a90f-b33b-4958-9075-e8c03e3ff8e5",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C25",
+      "claim": "Preprints in biology are becoming more popular.",
+      "claim_type": "EXPLICIT",
+      "source": "Preprints in biology are becoming more popular, but only a small fraction of the articles published in peer-reviewed journals have previously been released as preprints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "c5974930-656d-41a0-b29d-eca43cc948e0",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C26",
+      "claim": "Only a small fraction of the articles published in peer-reviewed journals have previously been released as preprints.",
+      "claim_type": "EXPLICIT",
+      "source": "Preprints in biology are becoming more popular, but only a small fraction of the articles published in peer-reviewed journals have previously been released as preprints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "88f37e96-7660-44f3-b2a7-2e30d76019c1",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C27",
+      "claim": "Preprints offer a way to freely disseminate research findings while a manuscript undergoes peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "Preprints offer a way to freely disseminate research findings while a manuscript undergoes peer review (Berg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "969f41d6-43f4-4c59-99d6-eade2a74163d",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C28",
+      "claim": "Releasing a preprint is standard practice in several disciplines, such as physics and computer science.",
+      "claim_type": "EXPLICIT",
+      "source": "Releasing a preprint is standard practice in several disciplines, such as physics and computer science (Ginsparg, 2011), and a number of organizations \u2013 including ASAPbio and bioRxiv.org (Sever et al., 2019) \u2013 are encouraging the adoption of preprints in biology and the life sciences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "5a1f931d-823a-49e5-8049-adf10f51be7b",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C29",
+      "claim": "A number of organizations \u2013 including ASAPbio and bioRxiv.org \u2013 are encouraging the adoption of preprints in biology and the life sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "Releasing a preprint is standard practice in several disciplines, such as physics and computer science (Ginsparg, 2011), and a number of organizations \u2013 including ASAPbio and bioRxiv.org (Sever et al., 2019) \u2013 are encouraging the adoption of preprints in biology and the life sciences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "e11438d9-526d-4260-aec9-23c9b1585f96",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C30",
+      "claim": "Some researchers in biology and life sciences remain reluctant to release their work as preprints, partly for fear of being scooped.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some researchers in these fields remain reluctant to release their work as preprints, partly for fear of being scooped as preprints are not universally considered a marker of priority (Bourne et al., 2017), and partly because some journals explicitly or implicitly refuse to accept manuscripts released as preprints (Reichmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "d950defe-7526-4f24-a3fb-bec86f4a3bf0",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C31",
+      "claim": "Preprints are not universally considered a marker of priority.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some researchers in these fields remain reluctant to release their work as preprints, partly for fear of being scooped as preprints are not universally considered a marker of priority (Bourne et al., 2017), and partly because some journals explicitly or implicitly refuse to accept manuscripts released as preprints (Reichmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "bad1a765-8996-4304-8cf6-70b3b6f30633",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C32",
+      "claim": "Some journals explicitly or implicitly refuse to accept manuscripts released as preprints.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some researchers in these fields remain reluctant to release their work as preprints, partly for fear of being scooped as preprints are not universally considered a marker of priority (Bourne et al., 2017), and partly because some journals explicitly or implicitly refuse to accept manuscripts released as preprints (Reichmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "41fdeb32-df14-4d8d-a25d-b7eb60e722fc",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C33",
+      "claim": "The number of preprints released each month in the life sciences is only a fraction of the number of peer-reviewed articles published.",
+      "claim_type": "EXPLICIT",
+      "source": "Whatever the reason, the number of preprints released each month in the life sciences is only a fraction of the number of peer-reviewed articles published (Penfold and Polka, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "a066ad89-d936-4054-b2c4-be05180ea500",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C34",
+      "claim": "Papers posted on arXiv before acceptance at a computer science conference received more citations in the following year than papers posted after acceptance.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work found that papers posted on arXiv before acceptance at a computer science conference received more citations in the following year than papers posted after acceptance (Feldman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior research and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "252cd994-947f-4855-897d-7afaaa315111",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C35",
+      "claim": "A previous study found that articles with preprints on bioRxiv had higher Altmetric Attention Scores and more citations than those without, but the study was based on only 776 peer-reviewed articles with preprints.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study found that articles with preprints on bioRxiv had higher Altmetric Attention Scores and more citations than those without, but the study was based on only 776 peer-reviewed articles with preprints (commensurate with the size of bioRxiv at the time) and did not examine differences between journals (Serghiou and Ioannidis, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior research and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "c9c4cfb9-4bcb-4db1-a008-5f6916821f67",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C36",
+      "claim": "The previous study by Serghiou and Ioannidis did not examine differences between journals.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study found that articles with preprints on bioRxiv had higher Altmetric Attention Scores and more citations than those without, but the study was based on only 776 peer-reviewed articles with preprints (commensurate with the size of bioRxiv at the time) and did not examine differences between journals (Serghiou and Ioannidis, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of prior research and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "fbe5dd02-b265-423d-9a4d-c459f03e2d84",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C37",
+      "claim": "bioRxiv is now the largest repository of biology preprints.",
+      "claim_type": "EXPLICIT",
+      "source": "We sought to build on these efforts by leveraging the rapid growth of bioRxiv, which is now the largest repository of biology preprints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "18d60d3b-fd05-4c98-8bd2-bbaaab96ec3d",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C38",
+      "claim": "A comprehensive recent study has replicated and extended the findings of Serghiou and Ioannidis, although it did not quantify journal-specific effects or account for differences between scientific fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Independently from our work, a comprehensive recent study has replicated and extended the findings of Serghiou and Ioannidis, although it did not quantify journal-specific effects or account for differences between scientific fields (Fraser et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior research and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "e2eec655-a0ed-4824-b7b0-fe719af486fd",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C39",
+      "claim": "Older articles within a given journal tended to have more citations.",
+      "claim_type": "EXPLICIT",
+      "source": "Older articles within a given journal tended to have more citations, whereas older and newer articles tended to have similar distributions of Attention Score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "2dd5eb34-f2d9-42eb-b8c3-3ba269c349bb",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C40",
+      "claim": "Older and newer articles tended to have similar distributions of Attention Score.",
+      "claim_type": "EXPLICIT",
+      "source": "Older articles within a given journal tended to have more citations, whereas older and newer articles tended to have similar distributions of Attention Score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "3cba0397-f6f6-4037-935c-8ca3c5fce982",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C41",
+      "claim": "An article's Attention Score was positively associated with its number of authors.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the meta-analysis, an article's Attention Score and citations were positively associated with its preprint status, number of authors, number of references, U.S. affiliation status, and Nature Index affiliation status, and slightly negatively associated with its last author publication age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "c351a80b-ff24-4a87-a4b0-bce7b11196ea",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C42",
+      "claim": "An article's Attention Score was positively associated with its number of references.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the meta-analysis, an article's Attention Score and citations were positively associated with its preprint status, number of authors, number of references, U.S. affiliation status, and Nature Index affiliation status, and slightly negatively associated with its last author publication age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "5afe0b0e-642c-4e54-85fa-d5f2cd1285c4",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C43",
+      "claim": "An article's Attention Score was positively associated with having an author with a U.S. affiliation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the meta-analysis, an article's Attention Score and citations were positively associated with its preprint status, number of authors, number of references, U.S. affiliation status, and Nature Index affiliation status, and slightly negatively associated with its last author publication age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "70a46abe-0534-4b5e-8376-788575dc7299",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C44",
+      "claim": "An article's Attention Score was positively associated with having an author with a Nature Index affiliation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the meta-analysis, an article's Attention Score and citations were positively associated with its preprint status, number of authors, number of references, U.S. affiliation status, and Nature Index affiliation status, and slightly negatively associated with its last author publication age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "7e9cad83-0641-4f4e-9413-aadb50a24c47",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C45",
+      "claim": "An article's Attention Score was slightly negatively associated with its last author publication age.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the meta-analysis, an article's Attention Score and citations were positively associated with its preprint status, number of authors, number of references, U.S. affiliation status, and Nature Index affiliation status, and slightly negatively associated with its last author publication age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "289d68b8-7cc4-4816-9a26-36b010619e0d",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C46",
+      "claim": "An article's citations were positively associated with its number of authors.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the meta-analysis, an article's Attention Score and citations were positively associated with its preprint status, number of authors, number of references, U.S. affiliation status, and Nature Index affiliation status, and slightly negatively associated with its last author publication age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "7fbee146-e4ae-405a-a0f6-98d7ad4d8e90",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C47",
+      "claim": "An article's citations were positively associated with its number of references.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the meta-analysis, an article's Attention Score and citations were positively associated with its preprint status, number of authors, number of references, U.S. affiliation status, and Nature Index affiliation status, and slightly negatively associated with its last author publication age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "a568afc8-03eb-4c79-a937-08d9190e6ef8",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C48",
+      "claim": "An article's citations were positively associated with having an author with a U.S. affiliation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the meta-analysis, an article's Attention Score and citations were positively associated with its preprint status, number of authors, number of references, U.S. affiliation status, and Nature Index affiliation status, and slightly negatively associated with its last author publication age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "f475ff36-c084-4555-b95d-b81c8d6ada96",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C49",
+      "claim": "An article's citations were positively associated with having an author with a Nature Index affiliation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the meta-analysis, an article's Attention Score and citations were positively associated with its preprint status, number of authors, number of references, U.S. affiliation status, and Nature Index affiliation status, and slightly negatively associated with its last author publication age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "051ca48f-211e-4b55-b672-944f322cf0be",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C50",
+      "claim": "An article's citations were slightly negatively associated with its last author publication age.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the meta-analysis, an article's Attention Score and citations were positively associated with its preprint status, number of authors, number of references, U.S. affiliation status, and Nature Index affiliation status, and slightly negatively associated with its last author publication age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "3e755bb4-eca8-4a3c-8a88-370131e40fd5",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C51",
+      "claim": "The observational nature of the data means causality cannot be concluded between releasing a preprint and higher Attention Score/citations.",
+      "claim_type": "EXPLICIT",
+      "source": "Because our data are observational, we cannot conclude that releasing a preprint is causal for a higher Attention Score and more citations of the peer-reviewed article.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the study design.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "5694091a-0901-48a2-959a-2bbf8ca51d1d",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C52",
+      "claim": "Having a preprint on bioRxiv could be merely a marker for research likely to receive more attention and citations anyway.",
+      "claim_type": "EXPLICIT",
+      "source": "Even accounting for all the other factors we modeled, having a preprint on bioRxiv could be merely a marker for research likely to receive more attention and citations anyway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible alternative explanation for the observed associations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "7e57c4f9-4669-4d00-86d2-e5f7a86c53d8",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C53",
+      "claim": "Authors who release their work as preprints may be more active on social media, which could partly explain the association with Attention Score.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, perhaps authors who release their work as preprints are more active on social media, which could partly explain the association with Attention Score, although given the weak correlation between Attention Score and citations, it would likely not explain the association with citations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative explanation for the observed associations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "a5da5af0-d6b8-48a0-9bd6-5269eb604511",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C54",
+      "claim": "If there is a causal role for preprints, it may be related to increased visibility that leads to 'preferential attachment' while the manuscript is in peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "If there is a causal role for preprints, it may be related to increased visibility that leads to \"preferential attachment\" (Wang et al., 2013) while the manuscript is in peer review.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative mechanism and supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "62e40e8d-b99f-4572-9775-bcaf43163f6b",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C55",
+      "claim": "The results only apply to journals that have published at least 50 articles that have a preprint on bioRxiv (with multidisciplinary journals excluded).",
+      "claim_type": "EXPLICIT",
+      "source": "The disadvantage is that our results only apply to journals that have published at least 50 articles that have a preprint on bioRxiv (with multidisciplinary journals excluded).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the study's scope.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "e319f0f8-19b7-41a0-869f-1c892f0f49ad",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C56",
+      "claim": "The preprint counts may be an underestimate, since some preprints on bioRxiv have been published as peer-reviewed articles, but not yet detected as such by bioRxiv's internal system.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, our preprint counts may be an underestimate, since some preprints on bioRxiv have been published as peer-reviewed articles, but not yet detected as such by bioRxiv's internal system (Abdill and Blekhman, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential limitation and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "1da0fc93-7cab-4165-b50b-13c5ce36b8fa",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C57",
+      "claim": "The associations observed may not apply to preprints on other repositories such as arXiv Quantitative Biology and PeerJ Preprints.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the associations we observe may not apply to preprints on other repositories such as arXiv Quantitative Biology and PeerJ Preprints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the study's generalizability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "327ebf15-fb9b-494b-bfc0-1b86d8a57183",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C58",
+      "claim": "The Altmetric Attention Score and number of citations are only crude proxies for an article's true scientific impact.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both metrics are only crude proxies for an article's true scientific impact, which is difficult to quantify and can take years or decades to assess.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the metrics used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "df32ffac-0399-497c-8ebf-59945b88c450",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C59",
+      "claim": "An article's true scientific impact is difficult to quantify and can take years or decades to assess.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both metrics are only crude proxies for an article's true scientific impact, which is difficult to quantify and can take years or decades to assess.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge about scientific impact assessment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "9929387a-77bf-43a7-ac70-086a6529510a",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C60",
+      "claim": "The Altmetric Attention Score is an aggregate measure of mentions from various sources, including social media, mainstream media, and policy documents.",
+      "claim_type": "EXPLICIT",
+      "source": "The Altmetric Attention Score is an aggregate measure of mentions from various sources, including social media, mainstream media, and policy documents (https://www.altmetric.com/about-our-data/our-sources/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the metric used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "741405b3-d207-4c3a-bfe2-2fe8e3249dce",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C61",
+      "claim": "The Spearman correlation between number of citations from CrossRef and number of citations from Web of Science Core Collection was 0.98 for 100 randomly selected articles.",
+      "claim_type": "EXPLICIT",
+      "source": "For those 100 articles, the Spearman correlation between number of citations from CrossRef and number of citations from Web of Science Core Collection was 0.98, with a mean difference of 2.5 (CrossRef typically being higher), which indicates that the citation data from CrossRef are reliable and different sources would likely not produce different results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a validation of the citation data source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "3e0d6c7b-adb3-4eef-976d-db7db1765500",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C62",
+      "claim": "The citation data from CrossRef are reliable and different sources would likely not produce different results.",
+      "claim_type": "EXPLICIT",
+      "source": "For those 100 articles, the Spearman correlation between number of citations from CrossRef and number of citations from Web of Science Core Collection was 0.98, with a mean difference of 2.5 (CrossRef typically being higher), which indicates that the citation data from CrossRef are reliable and different sources would likely not produce different results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the high correlation between citation sources.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "2d27ead9-0646-4e11-a89e-8242d857a3ef",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C63",
+      "claim": "The United States was by far the most common country of affiliation in the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce the possibility of confounding (Falagas et al., 2013; Fox et al., 2016), each regression model included terms for an article's preprint status, publication date, number of authors, number of references, whether any author had an affiliation in the United States (by far the most common country of affiliation in our dataset, Supplementary file 13), whether any author had an affiliation at an institution in the 2019 Nature Index for Life Sciences (a proxy for institutions that publish a large amount of high quality research), the last author publication age, and the article's approximate scientific subfield within the journal (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the data and references a supplementary file.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "2cbe8d64-e0bb-4edd-8675-c2352d36f701",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C64",
+      "claim": "The 2019 Nature Index for Life Sciences is a proxy for institutions that publish a large amount of high quality research.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce the possibility of confounding (Falagas et al., 2013; Fox et al., 2016), each regression model included terms for an article's preprint status, publication date, number of authors, number of references, whether any author had an affiliation in the United States (by far the most common country of affiliation in our dataset, Supplementary file 13), whether any author had an affiliation at an institution in the 2019 Nature Index for Life Sciences (a proxy for institutions that publish a large amount of high quality research), the last author publication age, and the article's approximate scientific subfield within the journal (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the rationale for using the Nature Index as a variable.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "256b5f00-8735-4e07-b56b-44770ac239db",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C65",
+      "claim": "Last author publication age is a proxy for the number of years the last author has been a principal investigator.",
+      "claim_type": "EXPLICIT",
+      "source": "We inferred each last author's publication age (which is a proxy for the number of years the last author has been a principal investigator) using names and affiliations in PubMed (see Methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the rationale for using publication age as a variable.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "2e092068-102c-4874-8087-e0ef71eef3c5",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C66",
+      "claim": "The approach to estimating scientific subfield using principal components of MeSH term assignments may be useful in other analyses of the biomedical literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our approach to estimating scientific subfield may be useful in other analyses of the biomedical literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "f74a091c-7f48-4cb7-9b50-3d4d9885ccc5",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C67",
+      "claim": "The heuristic approach to infer authors' publication histories from their names and free-text affiliations in PubMed was accurate, but not perfect.",
+      "claim_type": "EXPLICIT",
+      "source": "Our heuristic approach to infer authors' publication histories from their names and free-text affiliations in PubMed was accurate, but not perfect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an assessment of the methodology based on validation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "bf1d7885-1217-4c52-9827-6719f96ad9a7",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C68",
+      "claim": "Unique author identifiers such as ORCID iDs currently have sparse coverage of the published literature.",
+      "claim_type": "EXPLICIT",
+      "source": "The heuristic was necessary because unique author identifiers such as ORCID iDs currently have sparse coverage of the published literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the rationale for developing the heuristic approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "6cc9d6d6-f8da-40e3-b091-f234c7c59bec",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C69",
+      "claim": "A recent requirement from multiple U.S. funding agencies may change the sparse coverage of ORCID iDs, which would enhance future analyses of scientific publishing.",
+      "claim_type": "EXPLICIT",
+      "source": "This may change with a recent requirement from multiple U.S. funding agencies (NIH, 2019), which would enhance future analyses of scientific publishing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about future improvements and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "516c5464-e7de-499a-8604-de691ac30937",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C70",
+      "claim": "The Spearman correlation between manually identified and automatically identified dates of first last-author publication was 0.88.",
+      "claim_type": "EXPLICIT",
+      "source": "The Spearman correlation between manually identified and automatically identified dates was 0.88, the mean error was 1.74 years (meaning our automated approach sometimes missed the earliest publication), and the mean absolute error was 1.81 years (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a validation result for the automated approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "d6dee321-f42d-4a03-af0c-5080a153f9a5",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C71",
+      "claim": "The mean error of the automated approach for identifying first last-author publication was 1.74 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The Spearman correlation between manually identified and automatically identified dates was 0.88, the mean error was 1.74 years (meaning our automated approach sometimes missed the earliest publication), and the mean absolute error was 1.81 years (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a validation result for the automated approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "2bacfc90-e6e6-4e0e-8b20-3a85a1d6f4fd",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C72",
+      "claim": "The most common reason for error in identifying first last-author publication was that the author had changed institutions.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common reason for error was that the author had changed institutions (Supplementary file 14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an analysis of the errors in the automated approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "2ec3779c-042d-4fc5-b84b-5d081bd6c211",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C73",
+      "claim": "The 2019 Nature Index for Life Sciences lists the 100 institutions with the highest fractional count of articles in Nature Index journals in the Life Sciences between January 1, 2018 and December 31, 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "To approximate institutions that may be associated with higher citation rates, we used the 2019 Nature Index for Life Sciences (Nature Index, 2019), which lists the 100 institutions with the highest fractional count of articles in Nature Index journals in the Life Sciences between January 1, 2018 and December 31, 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the data source used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "92e1ece2-9c05-48d7-b71a-8d2751494f3c",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C74",
+      "claim": "Nature Index journals are selected by panels of active scientists and are supposed to represent the 'upper echelon'.",
+      "claim_type": "EXPLICIT",
+      "source": "Nature Index journals are selected by panels of active scientists and are supposed to represent the \"upper echelon\" (Nature Index, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information about the Nature Index and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "b795ff26-3f10-4a69-9213-9593d67efdf7",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C75",
+      "claim": "Nature Index journals are not limited to journals of Nature Publishing Group.",
+      "claim_type": "EXPLICIT",
+      "source": "They are not limited to journals of Nature Publishing Group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as clarification about the Nature Index.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "6025d20f-a232-42b6-8fb7-52cb66398da3",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C76",
+      "claim": "All data were obtained on September 28, 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained all data on September 28, 2019, thus all predictions of Attention Score and citations are for this date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail about data collection timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "fe0cf947-f46f-446d-899d-b76511f263e4",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C77",
+      "claim": "Preprints and peer-reviewed articles have distinct DOIs, and accumulate Attention Scores and citations independently of each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Preprints and peer-reviewed articles have distinct DOIs, and accumulate Attention Scores and citations independently of each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge about how preprints and articles are tracked.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "8dbfeb1b-1026-47ac-8e5f-f674a34a6e34",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "claim_id": "C78",
+      "claim": "All 100 randomly selected articles from the final set were original research articles.",
+      "claim_type": "EXPLICIT",
+      "source": "We manually inspected 100 randomly selected articles from the final set, and found that all 100 were original research articles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a validation of the article selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1f6ec4f6-4921-4364-879f-18dae3e274e9",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study dataset comprised 74,239 articles from 39 journals published between 2015-2018, of which 5,405 had bioRxiv preprints. Preprints preceded publication by a median of 174 days, and all randomly sampled articles were confirmed to be original research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C76, and C78 provide clear descriptive statistics about the dataset with specific numbers and validation. The dataset composition is well-documented with appropriate quality control checks (manual inspection of 100 articles).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "8eb54f37-7ad7-4a91-92f7-93ed4bf4dc59",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Attention Score and citations represent distinct aspects of article impact, showing weak correlation (Spearman r=0.18) within journals. Older articles accumulated more citations but similar Attention Scores compared to newer articles, and fold-changes of the two metrics were also weakly correlated (r=0.19).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C7, C39, and C40 collectively demonstrate through correlation analysis and temporal patterns that the two metrics capture different dimensions of impact. The weak correlations and differential temporal patterns provide converging evidence for this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "da73bc50-54ce-4ec0-a927-d3cf5ab81c98",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Log-linear regression was selected as the optimal model type based on consistently achieving the lowest mean absolute error and mean absolute percentage error across journals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 describes a model selection procedure with clear performance criteria. The comparison across multiple model types (log-linear, Gamma, negative binomial) with quantitative error metrics provides appropriate justification for the methodological choice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "c871d9a4-15d2-4449-8210-b2f83e47b775",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Articles with preprints had significantly higher Attention Scores (1.49-fold, 95% CI 1.42-1.57, or 49% increase) and more citations (1.36-fold, 95% CI 1.30-1.42, or 36% increase) compared to articles without preprints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C8, C9, C21, and C22 present the primary finding with consistent effect sizes, confidence intervals, and statistical support from both regression analysis and meta-analysis. The results are presented with appropriate uncertainty quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "d5732bef-6959-4772-982e-c7f703986f29",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The effect sizes for having a preprint were approximately 4 times larger than those for having an author with a U.S. affiliation or at a Nature Index institution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C10 provides a comparative context for the preprint effect size by relating it to other variables in the model. This comparison is supported by the meta-analysis results in Table 1, which shows coefficients for all variables.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "3e53b9c9-de1f-4044-b0aa-189bdc70a850",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The time interval between preprint release and article publication was positively associated with Attention Score but not with citations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C12 describe results from a separate meta-analysis examining temporal effects. The differential association with the two metrics is consistent with their representing different aspects of impact, though the manuscript provides limited detail about effect sizes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "b908903b-5979-4456-a1c2-8618829b3bdc",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The associations between preprints and both Attention Score and citations were independent of multiple article- and author-level variables including scientific subfield, number of authors, affiliations, and last author publication age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13 and C23 summarize the key inference from the multivariable regression models. The independence claim is supported by the regression framework that controlled for these variables, though the observational design limits causal interpretation (addressed in C51).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "274d1a65-abc7-4c9d-97fc-a090c78ac6ff",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MeSH term principal components captured meaningful variation in scientific subfield within journals, as evidenced by multiple PCs showing significant associations with outcomes and modest increases in preprint fold-changes when PCs were excluded from models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C15, and C16 validate the MeSH PC approach for controlling scientific subfield. The statistical significance of PCs and sensitivity analysis results provide evidence that this method captures relevant variation, though the approach is acknowledged as an approximation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "d31e6756-22c3-4722-8a4c-d77c9fcb532a",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Journal-level characteristics including access model, Impact Factor, and percentage of articles with preprints did not explain variation in the preprint-outcome associations across journals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 and C24 report null findings from meta-regression analysis. The lack of associations with journal-level variables is clearly stated with reference to Table 2, suggesting the preprint effect is consistent across different journal types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "6403b971-86e3-4349-820c-65ed525e5894",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Meta-analysis revealed that Attention Score and citations were positively associated with number of authors, number of references, U.S. affiliation, and Nature Index affiliation, and slightly negatively associated with last author publication age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C50 systematically report associations for control variables from Table 1. All associations are supported by meta-analysis with adjusted p-values, confidence intervals, and appropriate statistical methods (Hartung-Knapp-Sidik-Jonkman method).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "a8053577-becb-4117-b484-2dc1f6adb942",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The observational study design precludes causal conclusions; preprint status could be a marker for research likely to receive attention anyway, potentially mediated by factors like author social media activity or preferential attachment during peer review.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 appropriately acknowledge the fundamental limitation of observational data and discuss alternative explanations. This critical self-assessment is essential and well-articulated, distinguishing association from causation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "a076edc2-0bb5-432b-8c36-0ad656def2d6",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study's scope is limited to journals with \u226550 preprinted articles on bioRxiv (excluding multidisciplinary journals), preprint counts may be underestimated due to incomplete detection, and findings may not generalize to other preprint repositories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 clearly delineate the study's boundaries and potential sources of bias. These limitations are appropriately acknowledged and affect the generalizability of findings, though they do not invalidate the results within the defined scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "f24c65ba-882c-47c1-9e90-8736180375ea",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Altmetric Attention Score and citation counts serve as crude proxies for scientific impact, which is inherently difficult to quantify and requires years to assess. The Attention Score aggregates mentions from social media, mainstream media, and policy documents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 acknowledge the limitations of the outcome metrics used. This is an important caveat about what the study actually measures versus true scientific impact, appropriately tempering interpretation of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "82171c58-8b52-42b6-8e27-93ca18333c5d",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CrossRef citation data were validated against Web of Science Core Collection for 100 articles, showing high correlation (Spearman r=0.98) and small mean difference (2.5 citations), indicating reliability of the citation data source.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C62 provide validation of a key data source. The high correlation and small systematic difference support the reliability of CrossRef citations, though the validation sample is relatively small (100 articles).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "4f6dc8c2-99bc-4714-ad28-c245e93432cf",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The regression models incorporated U.S. affiliation (the most common country), Nature Index affiliation (as a proxy for high-quality research institutions), and last author publication age (as a proxy for years as principal investigator) as control variables.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 describe the rationale for specific control variables. The justifications are reasonable, though the proxies are imperfect (e.g., Nature Index as quality proxy, publication age as career stage proxy).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "e725e07b-d0ee-48dc-815a-0fcae151650e",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The MeSH term principal component approach for estimating scientific subfield may be useful for other analyses of biomedical literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 suggests broader applicability of the methodological approach. This is a reasonable inference based on the demonstrated utility in this study, though it remains a suggestion for future work rather than a tested conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "de0c044d-d4fa-44e7-8850-e43243576bf1",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The heuristic approach for inferring last author publication history from PubMed names and affiliations was accurate but imperfect, with Spearman correlation of 0.88, mean error of 1.74 years, and institutional changes being the most common error source.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67, C70-C72 provide validation of the author disambiguation method. The correlation and error metrics indicate reasonable but imperfect performance, with clear identification of the main error source. The validation is appropriately conducted on a separate sample.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "830c6a13-4440-4087-86a8-cbc721012c83",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The heuristic author identification approach was necessary due to sparse ORCID coverage in the literature, though recent funding agency requirements may improve identifier coverage and enhance future analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68 and C69 justify the methodological choice and note potential future improvements. This appropriately contextualizes the current limitations and anticipates how the field may evolve.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "731f5aaa-27ba-42be-b428-d8fbea99d16d",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The 2019 Nature Index for Life Sciences, which lists the top 100 institutions by fractional article count in Nature Index journals (selected by scientist panels to represent the 'upper echelon' and not limited to Nature Publishing Group), was used to identify high-impact institutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 describe the Nature Index data source with appropriate detail and clarification. The description is accurate and the source is appropriately cited, though the use of this as a proxy for research quality could be debated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "88fdcb10-503e-4997-8ccb-2de0f846fc26",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Preprints and peer-reviewed articles have distinct DOIs and accumulate Attention Scores and citations independently.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 clarifies an important methodological detail about how metrics are tracked. This is factually correct and important for understanding that the study measures outcomes for the published article, not the preprint.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    },
+    {
+      "id": "aed01018-65a7-4378-b5a3-5266a8ed4568",
+      "content_id": "35b699e5-ef64-481c-8063-cd9f877b8205",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background context establishes that preprints are becoming more popular in biology but remain a small fraction of publications, some researchers remain reluctant due to concerns about priority and journal policies, and prior studies found positive associations between preprints and citations but with limitations in sample size or scope.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C38 provide literature context and study motivation. These background claims are appropriately cited and accurately represent prior work, including limitations of previous studies that justify the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:50:28.713532Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a1f891ef-2751-4599-a595-2e4b66ca4c78",
+      "result_id": "1f6ec4f6-4921-4364-879f-18dae3e274e9"
+    },
+    {
+      "claim_id": "ca95fe68-3f41-4b89-b5c4-f9bf195e9dc2",
+      "result_id": "1f6ec4f6-4921-4364-879f-18dae3e274e9"
+    },
+    {
+      "claim_id": "6025d20f-a232-42b6-8fb7-52cb66398da3",
+      "result_id": "1f6ec4f6-4921-4364-879f-18dae3e274e9"
+    },
+    {
+      "claim_id": "8dbfeb1b-1026-47ac-8e5f-f674a34a6e34",
+      "result_id": "1f6ec4f6-4921-4364-879f-18dae3e274e9"
+    },
+    {
+      "claim_id": "6baeb566-7dee-429c-a570-f3c1baf9e964",
+      "result_id": "8eb54f37-7ad7-4a91-92f7-93ed4bf4dc59"
+    },
+    {
+      "claim_id": "3be8a57f-34b3-4f0a-a3df-ad6da6f38acf",
+      "result_id": "8eb54f37-7ad7-4a91-92f7-93ed4bf4dc59"
+    },
+    {
+      "claim_id": "1cff610d-379c-4d2c-b7f3-75ff2026af05",
+      "result_id": "8eb54f37-7ad7-4a91-92f7-93ed4bf4dc59"
+    },
+    {
+      "claim_id": "e2eec655-a0ed-4824-b7b0-fe719af486fd",
+      "result_id": "8eb54f37-7ad7-4a91-92f7-93ed4bf4dc59"
+    },
+    {
+      "claim_id": "2dd5eb34-f2d9-42eb-b8c3-3ba269c349bb",
+      "result_id": "8eb54f37-7ad7-4a91-92f7-93ed4bf4dc59"
+    },
+    {
+      "claim_id": "94ae465c-4109-40eb-baa1-d7c3ff1ba1c0",
+      "result_id": "da73bc50-54ce-4ec0-a927-d3cf5ab81c98"
+    },
+    {
+      "claim_id": "340d551f-90c4-4182-ba06-713b589c583c",
+      "result_id": "c871d9a4-15d2-4449-8210-b2f83e47b775"
+    },
+    {
+      "claim_id": "776eb5ac-4c9f-4a48-8cc4-b39ea41b1035",
+      "result_id": "c871d9a4-15d2-4449-8210-b2f83e47b775"
+    },
+    {
+      "claim_id": "f7cd3205-02a1-4222-a822-786e3836beab",
+      "result_id": "c871d9a4-15d2-4449-8210-b2f83e47b775"
+    },
+    {
+      "claim_id": "1f2768f9-573b-460e-ad70-395fb66d461a",
+      "result_id": "c871d9a4-15d2-4449-8210-b2f83e47b775"
+    },
+    {
+      "claim_id": "eed0a982-7cf7-4e01-9ccf-11e4b84aa941",
+      "result_id": "c871d9a4-15d2-4449-8210-b2f83e47b775"
+    },
+    {
+      "claim_id": "7bcd9900-7054-4b27-9019-31d0ed98a8ea",
+      "result_id": "d5732bef-6959-4772-982e-c7f703986f29"
+    },
+    {
+      "claim_id": "234ab775-7c3d-4e1b-9eb9-451181cdd7fa",
+      "result_id": "3e53b9c9-de1f-4044-b0aa-189bdc70a850"
+    },
+    {
+      "claim_id": "6d184e1a-fbd4-48cb-9227-542d7e35e82a",
+      "result_id": "3e53b9c9-de1f-4044-b0aa-189bdc70a850"
+    },
+    {
+      "claim_id": "b2ad6001-cfdc-4787-8a3b-4229c9357f29",
+      "result_id": "b908903b-5979-4456-a1c2-8618829b3bdc"
+    },
+    {
+      "claim_id": "942827ad-8829-428d-8f87-8ada5c85e2fa",
+      "result_id": "b908903b-5979-4456-a1c2-8618829b3bdc"
+    },
+    {
+      "claim_id": "3ec7397b-4939-49de-bb10-573b93362a6e",
+      "result_id": "274d1a65-abc7-4c9d-97fc-a090c78ac6ff"
+    },
+    {
+      "claim_id": "8810b604-2645-4b96-b313-91aa3f75301f",
+      "result_id": "274d1a65-abc7-4c9d-97fc-a090c78ac6ff"
+    },
+    {
+      "claim_id": "fdf90d15-71c2-4ef6-9bf9-57bddbcc01d9",
+      "result_id": "274d1a65-abc7-4c9d-97fc-a090c78ac6ff"
+    },
+    {
+      "claim_id": "57ea180c-0699-4669-b2c4-00b21b779d46",
+      "result_id": "d31e6756-22c3-4722-8a4c-d77c9fcb532a"
+    },
+    {
+      "claim_id": "0db6a266-ce5c-4616-8fc1-0333ff5b1ff6",
+      "result_id": "d31e6756-22c3-4722-8a4c-d77c9fcb532a"
+    },
+    {
+      "claim_id": "e4b4e13b-8f92-45ca-9348-25f997a607b6",
+      "result_id": "d31e6756-22c3-4722-8a4c-d77c9fcb532a"
+    },
+    {
+      "claim_id": "69d4d085-93f7-4c0c-90e9-80f5c59c1d90",
+      "result_id": "d31e6756-22c3-4722-8a4c-d77c9fcb532a"
+    },
+    {
+      "claim_id": "c095389c-7790-4400-be07-178293eb893d",
+      "result_id": "d31e6756-22c3-4722-8a4c-d77c9fcb532a"
+    },
+    {
+      "claim_id": "3cba0397-f6f6-4037-935c-8ca3c5fce982",
+      "result_id": "6403b971-86e3-4349-820c-65ed525e5894"
+    },
+    {
+      "claim_id": "c351a80b-ff24-4a87-a4b0-bce7b11196ea",
+      "result_id": "6403b971-86e3-4349-820c-65ed525e5894"
+    },
+    {
+      "claim_id": "5afe0b0e-642c-4e54-85fa-d5f2cd1285c4",
+      "result_id": "6403b971-86e3-4349-820c-65ed525e5894"
+    },
+    {
+      "claim_id": "70a46abe-0534-4b5e-8376-788575dc7299",
+      "result_id": "6403b971-86e3-4349-820c-65ed525e5894"
+    },
+    {
+      "claim_id": "7e9cad83-0641-4f4e-9413-aadb50a24c47",
+      "result_id": "6403b971-86e3-4349-820c-65ed525e5894"
+    },
+    {
+      "claim_id": "289d68b8-7cc4-4816-9a26-36b010619e0d",
+      "result_id": "6403b971-86e3-4349-820c-65ed525e5894"
+    },
+    {
+      "claim_id": "7fbee146-e4ae-405a-a0f6-98d7ad4d8e90",
+      "result_id": "6403b971-86e3-4349-820c-65ed525e5894"
+    },
+    {
+      "claim_id": "a568afc8-03eb-4c79-a937-08d9190e6ef8",
+      "result_id": "6403b971-86e3-4349-820c-65ed525e5894"
+    },
+    {
+      "claim_id": "f475ff36-c084-4555-b95d-b81c8d6ada96",
+      "result_id": "6403b971-86e3-4349-820c-65ed525e5894"
+    },
+    {
+      "claim_id": "051ca48f-211e-4b55-b672-944f322cf0be",
+      "result_id": "6403b971-86e3-4349-820c-65ed525e5894"
+    },
+    {
+      "claim_id": "3e755bb4-eca8-4a3c-8a88-370131e40fd5",
+      "result_id": "a8053577-becb-4117-b484-2dc1f6adb942"
+    },
+    {
+      "claim_id": "5694091a-0901-48a2-959a-2bbf8ca51d1d",
+      "result_id": "a8053577-becb-4117-b484-2dc1f6adb942"
+    },
+    {
+      "claim_id": "7e57c4f9-4669-4d00-86d2-e5f7a86c53d8",
+      "result_id": "a8053577-becb-4117-b484-2dc1f6adb942"
+    },
+    {
+      "claim_id": "a5da5af0-d6b8-48a0-9bd6-5269eb604511",
+      "result_id": "a8053577-becb-4117-b484-2dc1f6adb942"
+    },
+    {
+      "claim_id": "62e40e8d-b99f-4572-9775-bcaf43163f6b",
+      "result_id": "a076edc2-0bb5-432b-8c36-0ad656def2d6"
+    },
+    {
+      "claim_id": "e319f0f8-19b7-41a0-869f-1c892f0f49ad",
+      "result_id": "a076edc2-0bb5-432b-8c36-0ad656def2d6"
+    },
+    {
+      "claim_id": "1da0fc93-7cab-4165-b50b-13c5ce36b8fa",
+      "result_id": "a076edc2-0bb5-432b-8c36-0ad656def2d6"
+    },
+    {
+      "claim_id": "327ebf15-fb9b-494b-bfc0-1b86d8a57183",
+      "result_id": "f24c65ba-882c-47c1-9e90-8736180375ea"
+    },
+    {
+      "claim_id": "df32ffac-0399-497c-8ebf-59945b88c450",
+      "result_id": "f24c65ba-882c-47c1-9e90-8736180375ea"
+    },
+    {
+      "claim_id": "9929387a-77bf-43a7-ac70-086a6529510a",
+      "result_id": "f24c65ba-882c-47c1-9e90-8736180375ea"
+    },
+    {
+      "claim_id": "741405b3-d207-4c3a-bfe2-2fe8e3249dce",
+      "result_id": "82171c58-8b52-42b6-8e27-93ca18333c5d"
+    },
+    {
+      "claim_id": "3e0d6c7b-adb3-4eef-976d-db7db1765500",
+      "result_id": "82171c58-8b52-42b6-8e27-93ca18333c5d"
+    },
+    {
+      "claim_id": "2d27ead9-0646-4e11-a89e-8242d857a3ef",
+      "result_id": "4f6dc8c2-99bc-4714-ad28-c245e93432cf"
+    },
+    {
+      "claim_id": "2cbe8d64-e0bb-4edd-8675-c2352d36f701",
+      "result_id": "4f6dc8c2-99bc-4714-ad28-c245e93432cf"
+    },
+    {
+      "claim_id": "256b5f00-8735-4e07-b56b-44770ac239db",
+      "result_id": "4f6dc8c2-99bc-4714-ad28-c245e93432cf"
+    },
+    {
+      "claim_id": "2e092068-102c-4874-8087-e0ef71eef3c5",
+      "result_id": "e725e07b-d0ee-48dc-815a-0fcae151650e"
+    },
+    {
+      "claim_id": "f74a091c-7f48-4cb7-9b50-3d4d9885ccc5",
+      "result_id": "de0c044d-d4fa-44e7-8850-e43243576bf1"
+    },
+    {
+      "claim_id": "516c5464-e7de-499a-8604-de691ac30937",
+      "result_id": "de0c044d-d4fa-44e7-8850-e43243576bf1"
+    },
+    {
+      "claim_id": "d6dee321-f42d-4a03-af0c-5080a153f9a5",
+      "result_id": "de0c044d-d4fa-44e7-8850-e43243576bf1"
+    },
+    {
+      "claim_id": "2bacfc90-e6e6-4e0e-8b20-3a85a1d6f4fd",
+      "result_id": "de0c044d-d4fa-44e7-8850-e43243576bf1"
+    },
+    {
+      "claim_id": "bf1d7885-1217-4c52-9827-6719f96ad9a7",
+      "result_id": "830c6a13-4440-4087-86a8-cbc721012c83"
+    },
+    {
+      "claim_id": "6cc9d6d6-f8da-40e3-b091-f234c7c59bec",
+      "result_id": "830c6a13-4440-4087-86a8-cbc721012c83"
+    },
+    {
+      "claim_id": "2ec3779c-042d-4fc5-b84b-5d081bd6c211",
+      "result_id": "731f5aaa-27ba-42be-b428-d8fbea99d16d"
+    },
+    {
+      "claim_id": "92e1ece2-9c05-48d7-b71a-8d2751494f3c",
+      "result_id": "731f5aaa-27ba-42be-b428-d8fbea99d16d"
+    },
+    {
+      "claim_id": "b795ff26-3f10-4a69-9213-9593d67efdf7",
+      "result_id": "731f5aaa-27ba-42be-b428-d8fbea99d16d"
+    },
+    {
+      "claim_id": "fe0cf947-f46f-446d-899d-b76511f263e4",
+      "result_id": "88fdcb10-503e-4997-8ccb-2de0f846fc26"
+    },
+    {
+      "claim_id": "7431a90f-b33b-4958-9075-e8c03e3ff8e5",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    },
+    {
+      "claim_id": "c5974930-656d-41a0-b29d-eca43cc948e0",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    },
+    {
+      "claim_id": "88f37e96-7660-44f3-b2a7-2e30d76019c1",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    },
+    {
+      "claim_id": "969f41d6-43f4-4c59-99d6-eade2a74163d",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    },
+    {
+      "claim_id": "5a1f931d-823a-49e5-8049-adf10f51be7b",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    },
+    {
+      "claim_id": "e11438d9-526d-4260-aec9-23c9b1585f96",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    },
+    {
+      "claim_id": "d950defe-7526-4f24-a3fb-bec86f4a3bf0",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    },
+    {
+      "claim_id": "bad1a765-8996-4304-8cf6-70b3b6f30633",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    },
+    {
+      "claim_id": "41fdeb32-df14-4d8d-a25d-b7eb60e722fc",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    },
+    {
+      "claim_id": "a066ad89-d936-4054-b2c4-be05180ea500",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    },
+    {
+      "claim_id": "252cd994-947f-4855-897d-7afaaa315111",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    },
+    {
+      "claim_id": "c9c4cfb9-4bcb-4db1-a008-5f6916821f67",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    },
+    {
+      "claim_id": "fbe5dd02-b265-423d-9a4d-c459f03e2d84",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    },
+    {
+      "claim_id": "18d60d3b-fd05-4c98-8bd2-bbaaab96ec3d",
+      "result_id": "aed01018-65a7-4378-b5a3-5266a8ed4568"
+    }
+  ],
+  "comparisons": []
+}

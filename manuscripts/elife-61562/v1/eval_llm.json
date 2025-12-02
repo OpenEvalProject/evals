@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C32",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "A high-quality reference genome (ALV5) of 296 Mb containing 17,902 protein-coding genes was assembled from a single Ascaris worm collected from a human in Kenya using a reference-based assembly strategy that leveraged the high similarity (>99% identity) to A. suum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genome assembly is well-documented with clear quality metrics (N50=4.63 Mb, >99% read mapping, minimal gaps). The reference-based approach is justified by the exceptionally high sequence similarity to A. suum, and the assembly quality is superior to previous de novo attempts as shown in Table 1. The annotation of 17,902 genes using transferred A. suum transcripts is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C60",
+      "C61",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C77",
+      "C78"
+    ],
+    "result": "Mitochondrial genome analysis of 68 worms from Kenyan humans revealed that 63/68 possessed cox-1 haplotypes clustering with clade A (typically pig-associated A. suum), while only 6/68 clustered with clade B (typically human-associated A. lumbricoides), with limited genetic diversity within clades but clear separation between them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mitochondrial phylogenetic analysis is robust with high coverage (7690X average) and complete genome assemblies. The cox-1 haplotype network and whole mitochondrial genome phylogenies consistently show the same clade structure. The finding that predominantly pig-associated mitochondrial types are found in humans from an area with rare pig husbandry is surprising but well-documented with clear figures and statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Species delimitation analysis using the Birky 4X ratio (K/\u0398 = 2.285) failed to differentiate clades A and B as distinct species, and PERMANOVA found no significant associations between mitochondrial variation and geographic or demographic factors, suggesting a single large interbreeding population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Birky 4X ratio analysis is appropriately applied and the result (K/\u0398 <4) clearly indicates lack of species-level differentiation. The PERMANOVA analysis across multiple factors (village, household, host, time) with appropriate multiple testing corrections (Table 2) provides strong statistical support for panmixia. However, the interpretation of 'one large population' may be overstated given the clear mitochondrial clade structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Population genetic analyses revealed signatures of recent population expansion (negative Tajima's D = -1.5691, p=0.028) in global mitochondrial data, though the lack of mutation rate information prevents accurate timing of this expansion event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Tajima's D test is appropriately applied and statistically significant. The authors appropriately acknowledge the limitation that mutation rates are unknown, preventing temporal calibration. The positive but non-significant Fu's Fs is correctly interpreted as potentially indicating a bottleneck, though the authors appropriately note this is not significant. The conclusion is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Nuclear genome sequencing at ~27-fold coverage identified 11.15 million SNPs across 68 worms, with each worm averaging 2.3 million variants (60% heterozygous), ~1% genome-wide polymorphism, and disomic inheritance with minimal aneuploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SNP calling is well-documented with appropriate coverage thresholds (\u226510x) and quality filters (Phred \u226530). The ploidy analysis using AGELESS software confirms disomic inheritance. The high heterozygosity (~60%) and polymorphism levels (~1%) are clearly quantified. The ratio of indels:SNPs (~1:7) provides internal consistency checks. The analysis is restricted to the 50 largest scaffolds (78% of genome) which is appropriate given assembly quality concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "SNP density analysis revealed structured genomic regions with scaffolds being either SNP-poor or SNP-dense, with three genetic types resolved: SNP-poor homozygous regions, SNP-dense homozygous alternate regions, and SNP-dense heterozygous regions, indicating mosaic genome architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Circos plots (Figure 3) clearly visualize the mosaic pattern of SNP density across the genome. The Tajima's D analysis showing negative values in SNP-poor regions supports structured allele frequencies. The identification of three genetic types is well-illustrated, though specimen 119_3 is noted as anomalous with genome-wide heterozygosity. The 10 kb sliding window approach is appropriate for detecting large-scale structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Nuclear genome phylogenetic analysis revealed mito-nuclear discordance, with worms possessing A. lumbricoides-like mitochondria not clustering separately in nuclear phylogenies, and co-ancestry analysis identifying 13 clusters with evidence of recombination and limited allelic diversity across specimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic tree based on 11.15 million phased SNPs clearly shows Kenyan specimens clustering together but not separating by mitochondrial type, demonstrating mito-nuclear discordance. The fineSTRUCTURE co-ancestry analysis is appropriately applied and identifies 13 clusters. The sliding-window neighbor-joining topology analysis effectively detects recombination breakpoints. The FST analysis showing elevated values in specific regions supports the recombination interpretation. However, the claim of 'just two distinct genetic types' (C5) is inconsistent with identifying 13 clusters and should be clarified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Population structure analysis using the Dunn index supported 3-6 ancestral populations, with chromosome painting revealing large mosaic haplotype blocks consistent with limited recombination between a small number of parental haplotypes, supporting a model of genetic recombinants between A. suum and A. lumbricoides that are predominantly inbreeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Dunn index analysis (Figure 4D) provides quantitative support for K=3-6 ancestral populations. The POPSICLE analysis with K=6 and chromosome painting (Figures 4E, 5) clearly visualize the mosaic structure with large haplotype blocks. The identification of three major 'parentage blocks' is well-illustrated. However, the conclusion that specimens are 'predominantly inbreeding' seems contradictory to the high heterozygosity (~60%) reported earlier and requires clarification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C123",
+      "C124",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Integrative analysis of mitochondrial and nuclear genomes indicates that A. suum and A. lumbricoides form a genetic complex capable of interbreeding, with distinct mitochondrial lineages suggesting early species differentiation but nuclear genome admixture disrupting speciation barriers, representing detailed mito-nuclear discordance in nematodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mito-nuclear discordance is clearly demonstrated through multiple independent analyses (mitochondrial phylogeny, nuclear phylogeny, co-ancestry, chromosome painting). The interpretation that distinct mitochondrial clades represent early speciation while nuclear admixture prevents complete separation is logically consistent with the data. The comparison to O. volvulus provides appropriate context. However, the claim that worms are 'capable of interbreeding' is inferred from genetic patterns rather than directly demonstrated through breeding experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Geographic analysis revealed significant genetic separation between villages (PERMANOVA, Table 2) but Kenyan worms clustered globally rather than locally based on cox-1, suggesting high within-village transmission but no correlation between genetic and geographic distance, with no detectable effect of albendazole treatment on worm genetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PERMANOVA analysis (Table 2) shows statistically significant village effects (p=0.001) with appropriate Bonferroni correction. The PCA (Figure 6) visualizes village clustering. The lack of correlation between genetic and geographic distance (Figure 6-supplement 1) is surprising but clearly documented. The finding that post-treatment worms are not different from baseline is appropriately analyzed but limited by small sample size (n=13). The interpretation of 'high within-village transmission' is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C134",
+      "C148"
+    ],
+    "result": "The genetic data support a model of recent worldwide multi-species Ascaris population expansion mediated by historical movement of humans and domesticated livestock, with rapid global spread leaving little time for differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the genetic similarity across global samples and population expansion signatures (Tajima's D) are consistent with this model, the evidence is largely circumstantial. The lack of mutation rate data (C87) prevents temporal calibration of the expansion. Alternative explanations (e.g., ancestral polymorphism, balancing selection) are not thoroughly excluded. The model is plausible and consistent with the data but requires additional evidence (e.g., ancient DNA, more precise dating) for strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C39",
+      "C145",
+      "C146",
+      "C147",
+      "C149",
+      "C151"
+    ],
+    "result": "The findings indicate no barriers to anthroponotic transmission of hybrid worms and suggest that pigs may serve as a reservoir for drug resistance, necessitating a one-health approach integrating human and veterinary interventions for Ascaris control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The genetic evidence for interbreeding and the presence of pig-associated mitochondrial types in humans from areas with rare pig husbandry is strong. However, the claim of 'no barriers to anthroponotic transmission' (C9) is an inference from genetic data rather than direct epidemiological evidence. The concern about drug resistance (C145) is speculative as current data shows no resistance issues (C142). The recommendation for a one-health approach is reasonable but goes beyond what the genetic data alone can support. Direct transmission studies would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "Transmission dynamics analysis suggests villages are appropriate units for interventions and that people are infected with multiple eggs from a single source based on genetic clustering patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The village-level clustering (C117) supports villages as intervention units, but the inference that 'people are infected with multiple eggs from a single source' is not directly demonstrated. Multiple worms from the same individual could result from multiple infection events with genetically similar worms from the same local population. The data showing clustering within individuals (Table 2) is consistent with this interpretation but does not definitively prove single-source infection. Additional epidemiological data would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "DNA elimination in the human Ascaris sample, including chromosomal breaks, eliminated sequences, and eliminated genes, was identical to that previously described for pig A. suum, with ~30 Mb of 120 bp tandem repeats and ~1000 germline genes lost during somatic differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison of germline and somatic genomes from the same individual provides direct evidence for DNA elimination. The claim that elimination patterns are 'identical' to A. suum is clearly stated and consistent with the high genomic similarity (>99% identity). However, the manuscript provides limited detail on the specific analysis methods used to identify elimination breakpoints and eliminated sequences. The quantitative estimates (~30 Mb, ~1000 genes) are cited from prior A. suum work rather than independently measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Functional annotation classified 48% of the predicted proteome into functional groups, with 52% (9,300 genes) remaining uncharacterized, though 27% of uncharacterized genes encode proteins with signatures of secretion or membrane localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The annotation pipeline using multiple databases (Swissprot, GO, KOG, Pfam, SMART) is well-described and appropriate. The percentages are clearly reported and the identification of secreted/membrane proteins among uncharacterized genes using signal peptide and transmembrane domain prediction is methodologically sound. Figure 1A provides clear visualization. This represents a comprehensive annotation effort though the high proportion of uncharacterized genes is typical for parasitic nematodes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "While the genome assembly is not at full chromosome resolution due to repetitive sequences, analysis restricted to the 50 largest high-confidence scaffolds demonstrates that genetic mosaicism cannot be solely attributed to mis-assembly, though future long-read sequencing with Hi-C will improve resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge the limitation that the assembly is not at full chromosome resolution due to 120 bp tandem repeats and subtelomeric repeats. The restriction of comparative analyses to the 50 largest scaffolds (78% of genome) is a reasonable quality control measure. The observation that large haplotype blocks are resolved in high-confidence scaffolds supports that mosaicism is biological rather than artifactual. The suggestion for future long-read sequencing is appropriate. This represents good scientific practice in acknowledging limitations.",
+    "result_type": "MINOR"
+  }
+]

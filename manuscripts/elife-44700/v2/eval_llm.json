@@ -1,0 +1,470 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Using SMR with <0.1 pg precision, L1210 mouse lymphocytes accumulate 12% of total cell cycle mass during M-phase: 7% in early mitosis and 5% in cytokinesis, with negligible accumulation during anaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by n=180 individual cell measurements with established SMR technology. The precision is validated with bead measurements (C1), and the quantification of M-phase growth (C3-C6) is directly measured with appropriate temporal resolution. Statistical reporting includes means and standard errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "M-phase growth (9-14% of total mass) is conserved across multiple mammalian cell types (mouse lymphocytes, HeLa, primary human T cells) and chicken lymphoblasts, making M-phase growth rate comparable to interphase when normalized for duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 provide direct measurements across 5+ cell types showing consistent M-phase growth. The inference that this is comparable to interphase (C8, C14) is reasonable given M-phase represents ~10% of cell cycle duration (C7, general knowledge). Sample sizes are adequate for each cell type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "L1210 cells show dynamic MAR during mitosis: 15.8\u00b13% increase in prophase compared to late G2, rapid decrease approaching metaphase-to-anaphase transition reaching zero during anaphase, and recovery during late cytokinesis continuing through abscission. This pattern is reproducible across conditions and devices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 describe detailed temporal dynamics supported by high-resolution SMR measurements (n=180). The reproducibility across nutrient conditions and devices (C20-C21) strengthens confidence. Statistical reporting is appropriate with means, SEM, and sample sizes. The temporal resolution (~2 min) is adequate for the observed dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The dynamic MAR pattern (rapid reduction in metaphase, near-zero in anaphase <15 min, recovery in late cytokinesis) is conserved across all studied cell types, with some cells showing negative MAR indicating mass loss. This conservation suggests functional importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are supported by data across multiple cell types shown in Figure 2e. The observation of negative MAR in some cells (C27) adds nuance. However, the inference about functional importance (C29) is speculative and not directly tested. The conservation pattern itself is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Protein synthesis rates mirror MAR dynamics: early mitotic cells show higher rates than G2 (85\u00b16% in unsynchronized cells, higher immediately after G2 release), while late mitotic cells show reduced rates. This correlation supports that MAR reflects protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 provide protein synthesis measurements using OPP assays with appropriate controls and cell cycle markers (Cyclin A, Cyclin B1). The correlation with MAR (C31, C38) is logical given proteins constitute ~70% of dry mass (C30, cited). Multiple approaches (synchronized and unsynchronized) strengthen the conclusion. Sample sizes (n=3-6 cultures) are adequate for biochemical assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Mitotic arrests induced by diverse mechanisms (STLC, nocodazole, MG-132, proTAME, vinblastine, vincristine) all cause gradual growth inhibition over 2-3 hours, with initial growth burst followed by MAR approaching zero. This occurs independently of the specific arresting mechanism and without affecting G2 growth (except MG-132).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 demonstrate consistent growth inhibition across multiple arrest mechanisms with appropriate controls. The independence from arresting mechanism (C47) is well-supported by testing 6 different approaches. The clinical relevance of vinca alkaloids (C45-C46) is appropriately contextualized with literature comparison. Sample sizes vary but are adequate for each condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Inhibition of mitotic swelling with EIPA removes the MAR increase in early mitosis but does not affect MAR in metaphase/anaphase or early mitotic protein synthesis rates, indicating swelling contributes to early mitotic MAR but doesn't explain metaphase-to-anaphase growth cessation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by EIPA experiments (n=12 cells) showing selective effects on early mitosis. The inference that swelling doesn't explain later growth cessation (C51) is logical. However, the mechanism by which swelling affects MAR (C50, ion uptake) is speculative. The conclusion is appropriately limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Blocking cytokinesis with Tozasertib (Aurora kinase inhibitor) or blebbistatin (myosin inhibitor) does not prevent the MAR reduction around metaphase-to-anaphase transition, indicating physical cell separation is not required for the observed growth dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by experiments with two independent cytokinesis inhibitors. While Tozasertib-treated cells show somewhat higher MAR than controls (C52), the overall pattern persists. The conclusion (C55) is appropriately stated. Sample sizes are smaller (n=12, n=9) but adequate for this control experiment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Comparing control cells to STLC-arrested cells at matched times after mitotic entry reveals that control cells in metaphase/anaphase have lower MAR than arrested cells in prometaphase, indicating mitotic stage-specific growth reduction beyond time-dependent effects. Additional mechanism(s) must exist around metaphase-to-anaphase transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 provide a clever experimental design comparing time-matched cells in different mitotic stages. The statistical comparison is appropriate. The inference that additional mechanisms exist (C59) is logical but the specific mechanisms remain unidentified. The conclusion (C58) is appropriately cautious about not \"fully\" explaining the dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Phosphorylated 4E-BP1 (Thr37/46) levels are approximately threefold higher in mitosis than G2, while phosphorylated S6RP shows only minor increase. This is consistent with previous reports and indicates mTOR translational targets remain active in mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by flow cytometry with appropriate antibody controls and validation by microscopy and phosphatase treatment. The consistency with prior work (C62-C63, Shuda et al. 2015, Park et al. 2016) strengthens confidence. Sample sizes (n=5-6 cultures) are adequate. The threefold increase is substantial and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "TORIN-1 (mTOR inhibitor) reduces G2 phosphorylation of both 4E-BP1 and S6RP to near zero, and reduces G2 protein synthesis. However, in mitosis, TORIN-1 reduces S6RP phosphorylation but not 4E-BP1 phosphorylation or protein synthesis rates, indicating mTOR is not a major contributor to mitotic growth and an mTOR-independent mechanism activates 4E-BP1 in mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 provide clear differential effects of TORIN-1 in G2 vs. mitosis with appropriate sample sizes (n=4-6). The inference that mTOR is not a major contributor to mitotic growth (C68) is well-supported by the lack of effect on mitotic protein synthesis. The suggestion of mTOR-independent 4E-BP1 activation (C66) is reasonable but the specific mechanism is not identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CDK1 inhibition with RO-3306 (1 \u00b5M) or 1NM-PP1 (in CDK1as cells) specifically reduces mitotic but not G2 phosphorylation of 4E-BP1, protein synthesis rates, and MAR, while prolonging early mitosis. This demonstrates CDK1 drives mitotic growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 use two independent approaches (chemical inhibitor and analog-sensitive genetic system) showing consistent mitosis-specific effects. The dose-dependent response with 1NM-PP1 (C74) strengthens the conclusion. Sample sizes are adequate (n=5-8 for protein synthesis, n=23-24 for MAR). The specificity for mitosis vs. G2 is well-demonstrated. However, RO-3306 at 1 \u00b5M only partially inhibits CDK1, which should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Inhibitors of CDK2, Aurora kinases, and DYRK kinases do not affect mitotic protein synthesis. OTSSP167 reduces mitotic growth but this is likely due to off-target effects rather than MELK inhibition, as alternative MELK inhibitors lack this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 appropriately test alternative kinases and show negative results. The conclusion about OTSSP167 off-targets (C79) is well-supported by testing multiple MELK inhibitors with different selectivity profiles. This demonstrates good experimental rigor in ruling out MELK as the relevant target. Sample sizes (n=4-8) are adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "4E-BP1 knockdown (two independent shRNAs achieving 50-85% reduction) partially rescues mitotic protein synthesis inhibition caused by CDK1 inhibition with RO-3306, indicating CDK1 promotes mitotic growth at least partly through 4E-BP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 use genetic knockdown with two independent shRNAs showing dose-dependent rescue, which is strong evidence for the CDK1\u21924E-BP1 pathway. The conclusion is appropriately stated as \"at least partly\" (C81), acknowledging other mechanisms may exist. Sample sizes (n=6) are adequate. The knockdown efficiency is validated by flow cytometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "4EGI-1 (cap-dependent translation inhibitor) reduces both G2 and mitotic protein synthesis by ~50%. Combined 4EGI-1 and RO-3306 treatment shows no additional reduction beyond 4EGI-1 alone, indicating cap-dependent translation is involved in CDK1-driven mitotic translation. Overall, CDK1 substitutes for mTOR in mitosis to promote 4E-BP1 phosphorylation, maintain cap-dependent translation, and promote mass accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 use a logical epistasis-type experiment showing lack of additivity between 4EGI-1 and RO-3306, supporting that they act in the same pathway. The overall conclusion (C85) integrates multiple lines of evidence and is consistent with Shuda et al. 2015. Sample sizes (n=6-8) are adequate. However, the lack of additivity could have alternative explanations (e.g., floor effects), though the interpretation is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Mitotic growth inhibition with RO-3306, OTSSP167, STLC arrest, or 1NM-PP1 (in CDK1as cells) does not affect G2 MAR but causes reduced MAR and protein synthesis in cytokinesis and newborn G1 cells. This is specific to mitotic growth inhibition, as cycloheximide (general translation inhibitor) lacks this cell cycle specificity. Mother and daughter cell MARs correlate (R\u00b2=0.33-0.42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 demonstrate daughter cell effects using multiple approaches including serial SMR and protein synthesis assays. The comparison with cycloheximide (C87) is an important control showing specificity. The correlation (C88) suggests but doesn't prove a causal link. Sample sizes vary but are generally adequate. The use of serial SMR for daughter cell measurements is technically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "4E-BP1 knockdown partly rescues daughter cell protein synthesis rates reduced by CDK1 inhibition, suggesting 4E-BP1-mediated mitotic protein synthesis may affect daughter cell protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 extend the 4E-BP1 findings to daughter cells with appropriate sample sizes (n=4). The conclusion is appropriately cautious (\"may also affect\"), acknowledging that CDK1 inhibition could affect daughter cells through other mechanisms (e.g., chromosome missegregation mentioned in text). The partial rescue is consistent with 4E-BP1 playing a role but not being the sole mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Protein synthesis rates and long-term proliferation rates of daughter cells recover over time after mitotic growth inhibitions, suggesting these inhibitions do not permanently affect cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by time-course measurements showing recovery. This is an important control demonstrating the effects are reversible. Sample sizes (n=5-6) are adequate for proliferation assays. The inference about viability (C94) is reasonable but could be more rigorously tested with additional viability assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Animal cells grow approximately 10% of total mass during M-phase, making M-phase growth comparable to interphase when normalized for M-phase duration (~10% of cell cycle). This contradicts the classical dogma that growth occurs primarily during interphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 accurately summarize the main findings. The comparison to interphase (C96) is a reasonable inference based on relative durations. The statement about contradicting dogma (C97) is appropriate given the historical literature. This represents a synthesis of the experimental results rather than new data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Mass accumulation during mitosis is dynamic, stage-dependent, conserved across cell types, and reflected in protein synthesis rates. Growth stops only briefly during metaphase-to-anaphase transition and recovers in late cytokinesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 provide an accurate summary of the key findings supported by Figures 2-3. This synthesis appropriately integrates multiple experimental observations. The characterization as \"dynamic\" and \"stage-dependent\" is well-supported by the temporal resolution of the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Most studies on mitotic translation use population-based approaches requiring mitotic enrichment via blockades (which inhibit growth) or mitotic shake-off (which enriches only metaphase/anaphase cells with low growth). This explains many controversial reports about mitotic translational control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 accurately describe common experimental approaches and their limitations, supported by the authors' own data (Figure 4). The inference that this explains controversial reports (C107) is reasonable speculation supported by the demonstrated artifacts of these methods. This provides important context for interpreting prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The tight coordination between growth rates and mitotic stages suggests mitotic growth control is important for cell division. While energy prioritization toward mechanical reorganization could explain growth reduction (consistent with growth stopping during physical separation), there is no direct evidence for energetic limitations. Alternatively, growth inhibition may protect against excessive growth during prolonged mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C112 are largely speculative. The suggestion of functional importance (C108) is reasonable but not directly tested. The energy hypothesis (C109) is from prior literature and the authors show correlation (C110) but acknowledge lack of direct evidence (C111). The alternative hypothesis about protection (C112) is speculative with only indirect support from cited papers. These represent reasonable hypotheses but lack direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Complete growth inhibition during M-phase would cause loss of short-lived proteins needed for mitosis/cytokinesis. Consistently, growth continues in prophase and late cytokinesis, allowing production of short-lived proteins immediately before and after anaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 cites prior work (White-Gilbertson et al. 2009) for the hypothesis. Claim C114 provides an inference consistent with the observed growth dynamics. While the authors don't directly measure short-lived protein levels, the logic is sound and the observation (growth in prophase/late cytokinesis) is well-supported. This represents reasonable interpretation rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "CDK1 remains active until metaphase-to-anaphase transition, but MAR begins declining in late prometaphase/metaphase, indicating CDK1 alone cannot fully explain the observed mass accumulation dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is supported by citation to Gavet and Pines 2010. Claim C116 is a logical inference from the temporal mismatch between CDK1 activity and MAR decline. This appropriately acknowledges limitations of the CDK1 model and suggests additional mechanisms exist, consistent with the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Mitotic growth may depend on time in mitosis due to reduced chromatin accessibility and transcription, consistent with gradual growth reduction during arrests. However, given long mRNA half-lives and stable mRNA levels during mitosis, limited chromatin accessibility doesn't explain protein synthesis reduction in normally progressing mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 present a hypothesis consistent with arrest data (Figure 4). Claims C119-C121 appropriately cite literature showing this hypothesis is insufficient for normal mitosis. This represents good scientific reasoning, acknowledging a partial explanation while recognizing its limitations. The logic is sound though the mRNA stability argument could be more directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Normal mitotic progression causes more radical MAR reduction than prometaphase arrest, indicating additional mechanism(s) beyond time-dependent effects radically reduce mass accumulation around metaphase-to-anaphase transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are supported by the comparison experiments in Figure 5. This is a key finding that rules out time-dependent effects as the sole explanation. The conclusion is appropriately stated, acknowledging that the specific additional mechanisms remain unidentified. This represents an important negative result that constrains possible models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Mass accumulation reflects nutrient flux. Since MAR reaches zero or becomes negative during anaphase, mechanism(s) must block nutrient uptake or expel components. However, cells can maintain translation without nutrient uptake by recycling amino acids from protein degradation. During prolonged arrests, ~25% protein synthesis persists despite near-zero MAR. The authors hypothesize that around metaphase-to-anaphase transition, cells stop nutrient uptake but maintain low protein synthesis by recycling amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C124 is a general principle. Claims C125-C127 are logical inferences from the data. However, the hypothesis (C128) is speculative and not directly tested. The authors don't measure nutrient uptake or amino acid recycling. While the hypothesis is consistent with the data and supported by citation (Son et al. 2015b for recycling), it requires direct experimental validation. The observation of negative MAR (C125) is intriguing but the mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Reducing CDK1 activity reduces daughter cell growth. This may be explained by CDK1-driven translation of growth components (e.g., ribosomal proteins) during mitosis that 'jump-start' newborn cell growth. Several studies suggest growth-related genes are prioritized during mitosis. CDK1 coordinates cell division and optimizes mitotic translation to promote immediate daughter cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C129 is well-supported by data (Figure 7). However, claims C130 and C132 are speculative inferences. While claim C131 cites supporting literature (Aviner et al. 2017, Palozola et al. 2017, Park et al. 2016), the authors acknowledge in the text that: (1) active mitotic translation of growth components remains controversial, (2) CDK1 inhibition may affect daughter cells independently of mitotic growth, and (3) physiological significance in vivo is unexplored. The hypothesis is reasonable but requires more direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The active mitotic translation of growth-promoting components remains controversial. CDK1 inhibition may reduce daughter cell growth independently of mitotic growth. The physiological significance of mitotic translational control in vivo remains unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 appropriately acknowledge limitations and uncertainties in the field. These caveats are important for balanced interpretation. The authors cite conflicting literature (Stumpf et al. 2013, Tanenbaum et al. 2015) and recognize alternative explanations for their observations. This demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Mitotic arrests block cell growth. Vincristine and Vinblastine stop growth at concentrations lower than patient plasma levels. This mitotic growth arrest may contribute to mitotic catastrophe induction and antimitotic chemotherapy efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 summarizes well-supported findings. Claim C137 is supported by data (Figure 4d) and appropriate comparison to clinical concentrations (Florian and Mitchison 2016). However, claim C138 is speculative - the authors don't directly test whether growth arrest contributes to therapeutic efficacy or mitotic catastrophe. This represents a reasonable hypothesis with potential clinical relevance but requires further investigation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C25"
+    ],
+    "result": "The model estimated that 74% (70\u201378%) of SARS-CoV-2 infections on the Diamond Princess proceeded asymptomatically, with a total of 1,304 (1,198\u20131,416) individuals infected, representing 35% (32\u201338%) of the initial population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C24, and C25 are well-supported by Bayesian model calibration to outbreak data including symptom onset dates and testing patterns (C21). The model fit the data well (Figure 1) and the proportion asymptomatic was strongly identifiable from the relative proportions testing positive with/without symptoms. Sensitivity analyses (C39-C46, C50) confirmed robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Over half (53%, 51\u201356%) of infections remained undetected at disembarkation despite intense testing, with the majority being asymptomatic. Undetected infections comprised those who recovered before testing (37%), were yet to be tested (15%), or were recently exposed (1%). Nearly two-thirds (67%) of pre/asymptomatic infections went undetected compared to only 8% of symptomatic infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C26-C31 are supported by model estimates that account for testing patterns, recovery dynamics, and the 7-day post-infectious test-positive period (C73). The breakdown of undetected infections is internally consistent and follows logically from the model structure. Figure 2C provides visual confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C37",
+      "C89"
+    ],
+    "result": "Asymptomatic individuals were estimated to be the source of 69% (20\u201385%, IQR 56\u201376%) of all infections, with asymptomatic infections responsible for more than half of transmission in 83% of scenarios compatible with the data. Presymptomatic and symptomatic individuals contributed approximately equally to the remaining transmission (14% and 17% respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C34, C35, C37, and C89 report model estimates with very wide confidence intervals (20\u201385%) for asymptomatic contribution. While the model produces these estimates, the authors acknowledge that relative infectiousness is unidentifiable (C6, C32, C33), creating degeneracy with contact rates. The high contribution estimate relies on the non-linear saturation relationship (C35, Figure 2\u2014figure supplement 1) rather than direct data constraint, introducing substantial uncertainty about the true value.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C32",
+      "C33",
+      "C36",
+      "C38"
+    ],
+    "result": "The data could not identify the relative infectiousness of asymptomatic or presymptomatic infections due to degeneracy with overall contact rates. However, low asymptomatic infectiousness (0\u201325%) would require implausibly high net reproduction numbers (15.5\u201329.1) for presymptomatic/symptomatic individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C32, C33, C36, and C38 accurately describe a fundamental identifiability limitation. The uniform posterior for relative infectiousness (Figure 2B) confirms non-identifiability. The trade-off analysis (Table 1) showing extreme R values for low asymptomatic infectiousness is mathematically sound and provides indirect evidence that asymptomatic transmission is non-negligible, though the specific threshold of 15.5\u201329.1 depends on model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The model successfully captured outbreak dynamics including differently timed peaks for crew and passengers, the impact of passenger quarantine on February 4th (shown by drop in reproduction number), and a later transmission drop after February 10th driven by crew contact pattern changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by visual comparison of model outputs to data in Figure 1A-E. The model's ability to capture temporal dynamics and intervention effects provides validation. However, C23's attribution of the February 10th drop specifically to crew contact changes is a model inference that could have alternative explanations not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C50"
+    ],
+    "result": "Sensitivity analyses demonstrated that the model required an asymptomatic state to fit the data (DIC 974 vs 329), results were robust to crew-passenger mixing assumptions and asymptomatic state duration, but were sensitive to biased testing assumptions (asymptomatic proportion ranging 66\u201384% depending on testing bias direction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 and C50 describe comprehensive sensitivity analyses with quantitative model comparison (DIC values). The finding that biased testing has greater impact than mixing assumptions (C41) is well-demonstrated. However, the authors acknowledge testing may not have been random (C75 assumption, later contradicted by known reverse-age screening), which is a significant limitation not fully resolved by sensitivity analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors conclude that asymptomatic infections may contribute substantially to SARS-CoV-2 transmission, requiring control measures to look beyond symptomatic cases. However, they emphasize this conclusion is critically setting-dependent: symptomatic cases were rapidly removed before symptom-agnostic testing began, allowing asymptomatic infections to dominate transmission in this specific context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C90-C92 appropriately contextualize the findings. The authors correctly note that asymptomatic dominance resulted from the specific intervention sequence (rapid symptomatic case removal) rather than being a universal constant. This interpretation is logically sound and appropriately cautious, though C8's policy recommendation extends beyond what the data directly support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C51"
+    ],
+    "result": "The estimated proportion of asymptomatic infections (74%) is higher than previous studies relying only on diagnosed cases, which the authors attribute to substantial undetected infections in their analysis. This finding confirms a prior hypothesis by Nishiura (2020) based on post-disembarkation symptomatic cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, and C51 appropriately compare results to prior work. The explanation that accounting for undetected infections increases the asymptomatic proportion is logically sound. However, the comparison is limited by differences in methodology and populations across studies, and alternative explanations (age differences, testing sensitivity) are only briefly mentioned (C49).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The initial reproduction number was estimated at 9.3 (7.4\u201310.6), reflecting the high transmission environment on cruise ships. The finding of similar contributions from presymptomatic and symptomatic individuals matches findings from other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 report model estimates and compare to literature. The R\u2080 estimate is plausible for a cruise ship setting (C53) and is lower than one earlier analysis (Rockl\u00f6v et al., 2020), suggesting reasonable calibration. The consistency with other studies on presymptomatic/symptomatic contributions (C20, C54) provides external validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The model incorporated key assumptions including: 100% test sensitivity/specificity, 4.3-day latent period, 7-day post-infectious test positivity, random symptom-agnostic testing, 1-day delay for symptomatic case removal, constant infectiousness over time, universal probability of asymptomatic progression independent of infector, and 1/10th between-group contact rate relative to within-passenger contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C80 describe model assumptions that are clearly stated but several are problematic. The 100% sensitivity/specificity assumption (C77) is unrealistic and could bias results. The random testing assumption (C75) contradicts known reverse-age screening. The constant infectiousness assumption (C79) ignores evidence of peak viral load timing. The independence assumption (C80) may miss dose-response effects (C81). While sensitivity analyses address some concerns, these structural assumptions limit confidence in point estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The Diamond Princess departed Yokohama on January 20th; a passenger who disembarked January 25th tested positive February 1st with symptom onset January 23rd. Quarantine began February 5th with 3,711 individuals (2,666 passengers, 1,045 crew, median age 65). Testing was initially symptom-based until February 11th when symptom-agnostic testing scaled up. By disembarkation February 21st, 314 symptomatic and 320 pre/asymptomatic infections were reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 provide factual background on the outbreak timeline, population characteristics, and testing strategy. These are well-documented facts from cited sources (Mizumoto et al., 2020; Nishiura, 2020; NIID, 2020) and form the empirical foundation for the modeling analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors argue that net reproduction numbers exceeding 20 (required if asymptomatic infectiousness is near zero) are unlikely based on comparison to other diseases like norovirus on cruise ships. Combined with evidence on viral load in asymptomatic infections and anecdotal transmission reports, they conclude it is reasonable to assume asymptomatic infections play some role in transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C83, C86-C88 present a reasonable inference chain supported by citations. The comparison to norovirus (C83) provides useful context, though cross-disease comparisons have limitations. The integration of viral load evidence (C86) and case reports (C87) strengthens the argument, though the conclusion (C88) remains an assumption rather than a direct finding from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The authors speculate that PCR-based testing may have lower sensitivity for asymptomatic individuals, which would further increase the estimated proportion of asymptomatic infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 is presented as speculation with a single citation (Chau et al., 2020). While biologically plausible (lower viral loads in asymptomatic individuals could reduce test sensitivity), this is not tested in the current analysis and would require additional data to evaluate. If true, it would significantly impact the main findings but remains unquantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The authors define asymptomatic infections as those where individuals do not experience or are not aware of symptoms throughout infection, distinguishing them from presymptomatic infections which describe the incubation period before symptom development during which transmission is possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C12 provide standard epidemiological definitions that are well-established in the literature. These definitional claims are appropriately used to frame the analysis and are consistent with general scientific understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors argue that symptoms are not required for SARS-CoV-2 transmission, noting that while cough may increase spread of respiratory infections, it is not essential. Transmission can occur through breathing, talking, sneezing, and contaminated surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by multiple citations and draw on established knowledge from other respiratory pathogens (C56). These claims provide biological plausibility for asymptomatic transmission, though C58 on surface transmission is noted as likely not the primary mode (C85).",
+    "result_type": "MINOR"
+  }
+]

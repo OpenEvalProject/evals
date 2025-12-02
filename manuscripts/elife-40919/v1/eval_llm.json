@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The proneural wave in the Drosophila optic lobe is a well-characterized developmental process where neuroepithelial cells divide symmetrically, then undergo sequential transition into neuroblasts at a transition zone marked by l'sc expression. This transition zone sweeps across the tissue and is controlled by EGFR and Delta-Notch signalling, generating neuronal diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 describe established background knowledge about the proneural wave, supported by multiple citations to prior work (Egger et al., Yasugi et al., and others) and imaging data in Figure 1. These claims provide the biological context for the study and are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C30",
+      "C31",
+      "C73",
+      "C77"
+    ],
+    "result": "The authors propose that the proneural wave is driven by an excitable reaction-diffusion system involving EGFR signalling and l'sc, where a propagating transition zone emerges from molecular feedback and diffusion. The model demonstrates that EGFR-l'sc interactions create excitable dynamics that produce a traveling pulse of signaling activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C24, C30, C31, C73, and C77 present the core theoretical framework supported by mathematical modeling (Equations 1-2, Figure 2a-c, Videos 1-2). The simulations demonstrate that the proposed EGFR-l'sc feedback mechanism can generate traveling wave behavior consistent with experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "EGFR signalling forms an autocrine positive feedback loop through Rhomboid and Spitz, activates l'sc expression which drives the NE to NB transition, and is subsequently downregulated by l'sc, creating indirect negative feedback. EGFR signalling is both necessary and sufficient for wave progression but remains spatially confined to the transition zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C29 describe the molecular interactions underlying the model, supported by multiple citations to prior experimental work (Yasugi et al., 2010; Sato et al., 2013; Wiley et al., 2003). These established molecular relationships form the biological basis for the mathematical model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The integrated model incorporates Delta-Notch signalling with canonical interactions (trans-activation, cis-inhibition, lateral inhibition) and its crosstalk with EGFR and l'sc. Despite complex interactions, EGFR-l'sc remains the wave driver while Delta-Notch provides timing cues and prevents premature differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 describe the extended model incorporating Delta-Notch signalling, supported by citations to prior work and model schematic (Figure 2d). The model structure is based on established Delta-Notch biology and documented interactions with EGFR and l'sc pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The integrated model predictions match experimental observations: EGFR, l'sc, and Delta are elevated only in the transition zone; Notch activity peaks before the transition then drops sharply. The model attributes the Notch drop to cis-inhibition by Delta, consistent with experimental evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 demonstrate agreement between model predictions (Figure 2e) and prior experimental data (Figure 1c, multiple citations). The model successfully recapitulates key spatial expression patterns, providing validation of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The model captures genetic perturbation effects on wave progression: constitutive EGFR activation advances the transition zone within clones, while EGFR loss abolishes the wave, consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 show the model reproduces documented clone phenotypes (Figure 3a-b, Yasugi et al., 2010). The simulations correctly predict acceleration with EGFR gain-of-function and wave loss with EGFR loss-of-function, validating the model's predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The model predicts that basal Notch activity in the neuroepithelium suppresses lateral inhibition patterns outside the transition zone through 'oversaturation'. Experimental testing with Notch RNAi did not produce salt-and-pepper patterns, likely due to complete Notch loss rather than subtle reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C61 present a model prediction (Figure 4b) that was tested experimentally (Figure 4c-d) but not confirmed. The authors attribute the negative result to technical limitations (complete vs. partial Notch knockdown), but the prediction remains unvalidated. The phase diagram (Figure 4e) suggests the prediction requires precise parameter tuning that may be experimentally inaccessible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72"
+    ],
+    "result": "Sensitivity analysis reveals that EGFR signalling parameters (diffusion, gain, decay) are key regulators of wave speed, while basal Notch signalling also prominently affects speed. L'sc expression has minimal effect on speed but tightens transition zone width, while basal Notch enlarges the width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67, C72 present results from Morris sensitivity analysis (Figure 5a-b, Appendix 7). The analysis systematically identifies parameter influences on wave properties, with findings consistent with the model structure where EGFR drives propagation and l'sc promotes differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The model predicts that Notch levels at the transition zone regulate transition zone width: Notch overexpression extends the width (supported by Contreras et al., 2018), while Notch reduction should decrease width. Experimental Notch RNAi clones showed both wave acceleration and reduced transition zone width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 present a model prediction (C69) that was experimentally validated (C70-C71, Figure 6). The observation that Notch RNAi clones have narrower transition zones confirms the model prediction, with prior work (C68) supporting the converse manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The model predicts that local EGFR activation should initiate circular transition waves, demonstrating excitability. Experimental ectopic expression of PntP1 (EGFR effector) in clones induced l'sc upregulation and neuroblast generation, confirming the excitability prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C74-C76 present a key model prediction (excitability allowing wave initiation anywhere) that was experimentally validated (Figure 7). PntP1 clones showed l'sc expression and Dpn+ neuroblasts, matching model simulations and prior observations (Yasugi et al., 2010), providing strong support for the excitable medium hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C25",
+      "C78",
+      "C79",
+      "C80",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors contextualize their findings within broader developmental biology: traveling waves are ubiquitous in development, reaction-diffusion systems with self-activation support traveling fronts, and the excitable mechanism may represent a generic strategy for sequential transitions in developing tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C25, C78-C80, C84-C85 place the work in broader context, supported by extensive citations. These claims appropriately connect the specific findings to general principles in developmental pattern formation and suggest wider applicability, though C85 is appropriately speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C42",
+      "C43"
+    ],
+    "result": "Prior experimental work established that EGFR signalling is necessary and sufficient for wave progression, Notch activity shows specific dynamics during the transition, JAK/STAT and Fat-Hippo pathways prevent premature transition, and both l'sc and Notch downregulation promote the NE to NB transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18, C42-C43 summarize established experimental findings from prior work (multiple citations), providing the empirical foundation for model construction. These are well-documented observations that inform the model's biological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors discuss that JAK/STAT and Hippo pathways modulate but don't drive wave progression, the excitable mechanism provides robustness, and their model differs from a recent alternative (Sato et al., 2016) in not requiring differentiation for EGFR stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 provide appropriate discussion of model scope and comparison with prior modeling work. C81 is supported by citations, C82 is a reasonable inference from excitable dynamics, and C83 appropriately distinguishes their model from alternatives.",
+    "result_type": "MINOR"
+  }
+]

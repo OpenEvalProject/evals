@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C130",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors generated a novel autochthonous transgenic mouse model where conditional co-expression of MYC and Twist1 in hepatocytes leads to metastatic HCC with >90% penetrance. Twist1 alone does not cause tumors, but when combined with MYC, induces widespread metastasis to lungs (70%), peritoneum (60%), and lymph nodes (20%), with reduced survival compared to MYC-only mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C35, C130, C135-C137 collectively demonstrate successful generation and characterization of the mouse model with robust data on metastasis rates, survival, and tissue distribution. The model is well-controlled (Twist1 alone shows no pathology for 18 months), uses appropriate imaging and histology, and shows reproducible high-penetrance metastasis. Sample sizes (n=50 per group) are adequate for the reported statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "MYC/Twist1-HCC and MYC-HCC tumors show no differences in primary tumor burden, histological appearance, MYC expression levels, proliferation, apoptosis, in vitro migration capacity, or EMT marker expression. Twist1 drives metastasis without affecting these cancer cell-intrinsic properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 provide comprehensive characterization showing that Twist1's pro-metastatic effect is not due to altered tumor growth, cell proliferation/death, or classical EMT. Multiple orthogonal assays (histology, IHC, qPCR, Western blot, wound healing) consistently show no differences in these parameters. This effectively rules out several obvious alternative mechanisms and sets up the immune microenvironment hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "RNA-seq analysis reveals that MYC/Twist1-HCC exhibits a distinct transcriptional profile enriched for inflammatory response genes. CIBERSORT analysis shows significant M2 macrophage enrichment (15-fold shift in M2/M1 ratio) in MYC/Twist1 tumors, with no changes in other immune compartments. Macrophage infiltration increases during tumor progression and rapidly decreases upon oncogene inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C55 demonstrate robust transcriptomic differences with appropriate statistical thresholds (p<0.001, q<0.05, FC\u22652) and n=5 per group. CIBERSORT analysis is properly cited and applied. IHC validation confirms the computational predictions. The temporal dynamics (early tumor, late tumor, regression) provide strong evidence for the relationship between oncogene expression and macrophage infiltration. The specificity for M2 macrophages over other immune cells is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Conditioned media from MYC/Twist1-HCC TAMs increases tumor cell invasiveness in vitro. Both MYC and Twist1 are required for metastasis, as inactivation of either gene abrogates lung metastasis in IV injection experiments, while cells expressing both develop extensive metastases with macrophage infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 demonstrate functional requirement for both oncogenes using elegant genetic manipulation. The wound healing assays show TAM-mediated effects on tumor cells. The IV injection experiments with conditional expression provide strong evidence that both MYC and Twist1 are necessary. However, the experiments use NSG (immunocompromised) mice, which somewhat limits interpretation of immune-mediated mechanisms, though macrophages are preserved in this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Macrophage depletion with clodronate liposomes significantly reduces metastasis in both orthotopic (4.4-fold reduction in liver, 8.8-fold in lung) and IV injection models (4.3-fold reduction). Clodronate specifically depletes macrophages without affecting tumor cells, demonstrating that macrophages are required for metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 provide strong functional evidence for macrophage requirement using pharmacological depletion. The clodronate experiments are well-controlled with appropriate liposome controls and validation that tumor cells are not directly affected (C62). Statistical significance is reported with appropriate p-values. The consistency across two different transplantation models (orthotopic and IV) strengthens the conclusion. The fold-changes are substantial and biologically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "MYC/Twist1-HCC cells secrete cytokines (Il13, Ccl2, Ccl5, Ccl7, Cxcl1) that promote macrophage migration and M2 polarization. Ccl2 primarily drives migration (7-fold effect), while Il13 is the dominant polarization factor (50-fold reduction in Cd206 upon neutralization). Neutralizing antibody experiments demonstrate specific roles for each cytokine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C82 systematically dissect the cytokine-mediated mechanism using conditioned media, multiplex ELISA, qPCR validation, and neutralizing antibodies. The experiments appropriately separate migration from polarization effects. Statistical significance is reported throughout with biological replicates. The fold-changes clearly distinguish major (Ccl2 for migration, Il13 for polarization) from minor contributors. The 3D spheroid data (C78) provides additional validation in a more physiological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "ChIP-seq database analysis reveals MYC and TWIST1 binding sites in the promoter regions of CCL2 and IL13 genes in multiple cancer cell lines. Motif analysis identifies multiple potential binding sites for both transcription factors in mouse Ccl2 and Il13 promoters, suggesting direct transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86 provide suggestive evidence from public databases and computational analysis, but lack direct experimental validation in the authors' system. While the ChIP-seq data from other cell lines and motif predictions are consistent with direct regulation, the authors do not perform ChIP experiments in their own MYC/Twist1-HCC cells, nor do they test promoter activity with reporter assays or show that mutations in the binding sites affect expression. The inference of transcriptional regulation (C86) is reasonable but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Systemic administration of recombinant Ccl2 and Il13 together is sufficient to induce metastasis in non-metastatic MYC-HCC (p=0.008 for liver, p=0.02 for lung), with increased macrophage infiltration and M2 polarization. Neither cytokine alone induces metastasis, though Ccl2 alone recruits macrophages. Il4 (negative control) has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C97 provide compelling sufficiency data showing that the cytokines can phenocopy the Twist1 effect. The experimental design properly includes single cytokine controls, combination treatment, and a negative control (Il4). Statistical significance is reported with appropriate p-values. The fold-changes are dramatic (104.4-fold for lung metastases). The observation that Ccl2 alone recruits macrophages but doesn't induce metastasis (C93) is particularly important, showing that recruitment alone is insufficient and polarization is required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Neutralizing antibodies against Ccl2 and Il13 synergistically block metastasis in MYC/Twist1-HCC (12-fold reduction in liver, 14-fold in lung, p<0.001), without affecting primary tumor burden. Anti-Ccl2 reduces macrophage recruitment (4-fold), while anti-Il13 blocks M2 polarization. Combined treatment shows greater efficacy than either alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C109 demonstrate necessity through antibody blockade with appropriate controls (control antibody, anti-Il4). The experimental design properly separates effects on primary tumor from metastasis. Statistical significance is robust with substantial fold-changes. The demonstration of synergy between the two antibodies is important for therapeutic implications. The mechanistic dissection showing Ccl2 affects recruitment while Il13 affects polarization is consistent with the earlier in vitro data. Sample sizes appear adequate though exact n is not always specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "In 9,502 patients across 33 cancer types, high MYC and TWIST1 expression predicts poor survival (p=4.3\u00d710\u207b\u00b9\u2070), CCL2/IL13 expression (p<10\u207b\u00b9\u2070\u2079), and M2 macrophage infiltration (p<10\u207b\u2079\u2076). In HCC specifically, M2 TAMs are prognostic (HR=16.0, p=0.01) and associated with vascular invasion and advanced stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C110-C120 provide extensive human validation using large TCGA datasets with highly significant p-values. The pan-cancer analysis (n=9,502) and HCC-specific analysis (n=373) are appropriately powered. CIBERSORT analysis is properly applied. The correlations between MYC/TWIST1, cytokines, and immune infiltration are consistent with the mouse model findings. Multivariate survival analysis controls for confounders. The extremely low p-values (10\u207b\u00b9\u2070\u2079, 10\u207b\u2079\u2076) suggest robust associations, though such extreme values should be interpreted cautiously and may reflect the large sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Human HCC cell lines with high MYC/TWIST1 expression (SNU398) secrete more CCL2 and IL13 than low-expressing lines (Huh7) and polarize macrophages toward M2 phenotype, while low-expressing lines induce M1 polarization. This validates the mechanism in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 provide human cell line validation of the mouse findings. The comparison between high and low expressing lines is appropriate, though only two lines are compared. The qPCR data show clear differences in cytokine expression, and the macrophage polarization assays demonstrate functional consequences. However, the study would be strengthened by including more cell lines or genetic manipulation of MYC/TWIST1 in human cells to establish causality rather than just correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C133"
+    ],
+    "result": "In a prospective clinical study, plasma CCL2 (p=0.006) and IL13 (p<0.0001) are elevated in HCC patients (n=25) versus cirrhosis controls (n=10). IL13 levels predict multifocal tumors (p=0.04) and vascular invasion (p=0.01), markers of aggressive disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C125-C128, C133 provide clinical validation with appropriate controls (cirrhosis patients). The sample sizes are modest (n=25 HCC, n=10 cirrhosis) but adequate for the reported statistics. The association of IL13 with aggressive features (multifocality, vascular invasion) is consistent with the mechanistic findings. However, this is a single-center study with relatively small numbers, and the p-value for multifocal tumors (p=0.04) is borderline. Larger validation cohorts would strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C12",
+      "C23",
+      "C24",
+      "C129",
+      "C131",
+      "C132",
+      "C134",
+      "C138",
+      "C139",
+      "C140",
+      "C154",
+      "C155"
+    ],
+    "result": "MYC and TWIST1 cooperate to drive metastasis through a transcriptional program that induces a cytokinome (including CCL2 and IL13), enabling crosstalk between cancer cells and the immune microenvironment to recruit and polarize tumor-associated macrophages. This mechanism is conserved across species and cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C12, C23-C24, C129, C131-C132, C134, C138-C140, C154-C155 represent the main conclusions synthesized from all experimental and clinical data. The evidence supporting this model is comprehensive: genetic requirement for both factors, cytokine identification, functional validation with gain/loss of function experiments, macrophage depletion, human correlations, and clinical associations. The mechanism is supported by multiple orthogonal approaches across mouse models, human cell lines, and patient samples. The claim of generality across cancer types is supported by the pan-cancer TCGA analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C25",
+      "C26"
+    ],
+    "result": "Systemic treatment with Ccl2 and Il13 induces MYC-HCC metastasis, while blockade of these cytokines abrogates MYC/Twist1-HCC metastasis, demonstrating both sufficiency and necessity of these cytokines for the metastatic phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C25-C26 are summary statements supported by the detailed experimental data in other claim groups (C87-C97 for sufficiency, C98-C109 for necessity). These represent key findings that are well-supported by the experimental evidence with appropriate statistics and controls. The bidirectional experiments (gain and loss of function) provide strong support for causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The authors propose that MYC and TWIST1 overexpression in cancer may activate an embryonic program of innate immune cell activation and cellular migration, as both factors cooperate during embryogenesis to modulate inflammation and enable mesodermal cell migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C146 present a speculative evolutionary/developmental hypothesis. While the citations to embryonic roles of MYC and TWIST1 (C142-C145) are appropriate, the proposal that cancer 'hijacks' this embryonic program (C141, C146) is not directly tested. This is presented as a 'possible general explanation' and remains speculative. The hypothesis is plausible and consistent with the data, but would require developmental biology experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Ccl2-induced macrophage recruitment alone is insufficient for metastasis; Il13-induced M2 polarization plays an essential complementary role in promoting angiogenesis and metastasis. Together, these cytokines can enable non-metastatic cancer to become metastatic through cell non-autonomous mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 synthesize key mechanistic insights from the cytokine experiments. The data clearly show that Ccl2 alone recruits macrophages but doesn't induce metastasis (C93), while the combination is required (C89). The angiogenesis data (C95) supports the role of Il13 in promoting vascular changes. The conclusion about cell non-autonomous mechanisms is well-supported by the overall experimental design showing that cytokines act on the microenvironment rather than directly on tumor cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors suggest that stratifying patients by cytokine expression could guide therapy, and that personalized combination therapy targeting both CCL2 and IL13 may be more effective than CCL2 inhibition alone, which has failed in clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C153 present therapeutic implications and suggestions for future clinical trials. While C152 correctly cites failed CCL2 trials, the suggestions for combination therapy (C153) and patient stratification (C151) are reasonable extrapolations but remain untested hypotheses. These are appropriate discussion points but represent speculation about future applications rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C150"
+    ],
+    "result": "Background claims establishing that metastasis is a major cause of cancer mortality, TAMs contribute to metastasis through multiple mechanisms, MYC is commonly activated in cancer, Twist1 enables metastasis in cell lines, and both factors have roles in embryogenesis and inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C20, C142-C145, C150 represent established knowledge appropriately cited from the literature. These provide necessary context for the study but are not novel findings. The citations appear appropriate and the statements accurately reflect current understanding in the field.",
+    "result_type": "MINOR"
+  }
+]

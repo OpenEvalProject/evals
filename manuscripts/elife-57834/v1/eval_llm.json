@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C13"
+    ],
+    "result": "The manuscript establishes background knowledge about the NMD pathway, stating that it mediates degradation of PTC-containing transcripts to prevent accumulation of truncated polypeptides, and requires conserved proteins UPF1, UPF2, and UPF3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11, and C13 represent well-established background knowledge about NMD function and components, supported by citations to prior literature. These are foundational statements that contextualize the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C30",
+      "C34"
+    ],
+    "result": "The 5' termini of 3' RNA decay fragments in UPF1 ATPase mutants map downstream of the PTC at specific positions (e.g., +17 and +20 nucleotides for GFPPTC125), as determined by primer extension analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C24, C30, and C34 are directly supported by primer extension data shown in Figures 1A and Figure 1\u2014figure supplement 1C & D. The mapping is reproducible across multiple PTC-containing reporters, providing strong experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Decay intermediates in UPF1 ATPase mutants are distinct from fragments that accumulate when ribosomes stall at the PTC due to eRF1 depletion, indicating that UPF1 ATPase deficiency does not impair translation termination at the PTC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C31-C33 are supported by comparative primer extension analysis (Figure 1A) showing different fragment patterns between UPF1 mutants and eRF1-depleted cells. The eRF1 depletion control demonstrates ribosome queuing upstream of the PTC, while UPF1 mutants show fragments downstream, supporting the conclusion that termination efficiency is not impaired.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "3' RNA decay intermediates co-purify with intact 80S ribosomes, as demonstrated by immunoprecipitation of epitope-tagged ribosomal proteins RPS13 and RPL16a followed by northern blot and primer extension analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C26, C35-C38 are well-supported by ribosome immunoprecipitation experiments (Figure 2 and Figure 2\u2014figure supplement 1). The presence of stoichiometric 25S and 18S rRNA, co-precipitation of decay fragments, and mapping of 5' termini in immunoprecipitated material provide converging evidence for ribosome association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Ribosome occupancy on the 3' UTR occurs independent of canonical translation events, as evidenced by the absence of read-through or reinitiation products and the insensitivity of decay fragment patterns to reading frame shifts or additional stop codons downstream of the PTC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C39-C44 are supported by western blot analysis (Figure 3B) showing no read-through or reinitiation products, and primer extension data (Figure 3C-D) showing identical fragment patterns regardless of reading frame shifts or additional stop codons. These experiments effectively rule out canonical translation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The position and accumulation of 3' decay fragment termini are determined by RNA sequence downstream of the PTC, particularly nucleotides 25-34 nt downstream that would contact the mRNA binding channel of a stalled ribosome, rather than by fixed distance from the PTC or the identity of the stop codon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C45-C55 are supported by extensive mutational analysis (Figures 4A-D and Figure 4\u2014figure supplements). The data show that insertions/deletions of 3-6 nt do not shift fragment positions, sequence swaps alter fragment patterns predictably, and mutations at positions 25-34 nt downstream affect fragment accumulation, while mutations at the stop codon or penultimate codon do not. The deletion series provides particularly strong evidence for ribosome collision effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C29",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Mutations within the UPF1 active site alter the abundance and position of 3' RNA decay fragment termini in an allele-specific manner, with mutations affecting ATP hydrolysis or product release (but not ATP binding alone) leading to fragment accumulation, and specific mutations (Q601A, Q766K, E769A) showing altered fragment patterns that correlate with intermediate NMD activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C29, C56-C67 are supported by comprehensive mutational analysis of UPF1 active site residues (Figure 5). Northern blots show allele-specific fragment accumulation patterns, and primer extension reveals distinct 5' termini for different mutants. The correlation between fragment patterns and NMD activity (Figure 5\u2014figure supplement 1) strengthens the interpretation. The structural context (Figure 5B) provides a rational basis for the observed effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C68"
+    ],
+    "result": "UPF1 ATPase mutants exhibit a failure in post-termination ribosome recycling, and the authors propose that ATP hydrolysis by UPF1 promotes RLI1-dependent ribosome subunit dissociation at a PTC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C8 represents the main conclusion, while C68 is a proposed model. The experimental evidence (ribosome-bound 3' UTR fragments, absence of termination defects, sequence-dependent stalling) is consistent with a recycling defect, but direct demonstration of impaired ribosome subunit dissociation is lacking. The proposed mechanism involving RLI1 (C68) is speculative and based on inference rather than direct experimental evidence. Ribosome profiling attempts were unsuccessful, and the model relies on comparison to RLI1 depletion phenotypes from prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The authors speculate that modulation of ribosome subunit dissociation at a PTC could serve as the molecular signal for NMD-mediated mRNA decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is explicitly stated as speculation by the authors and lacks experimental support in the current manuscript. This represents a hypothesis for future investigation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Overexpression of RLI1 does not abrogate 3' decay fragment accumulation in UPF1 ATPase mutants, and deletion of DOM34 does not increase fragment accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73 and C74 are stated as unpublished data ('data not shown'), making independent evaluation impossible. While these observations would support the proposed model if verified, the lack of presented data prevents assessment of experimental rigor, controls, or reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C23"
+    ],
+    "result": "The authors previously identified a functional interaction between NMD machinery and terminating ribosomes based on 3' RNA decay fragments that accumulate in UPF1 ATPase mutants due to impediment of XRN1-mediated 5' to 3' degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C23 reference the authors' prior work (Serdar et al., 2016) and are supported by citation. These establish the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The manuscript cites established knowledge and prior literature about mRNA decay rates, NMD substrate prevalence, UPF protein interactions, UPF1 biochemical properties, and RLI1 function in translation termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C12, C14-C22, C70-C72 represent background knowledge supported by citations to prior literature. These contextual claims are appropriately referenced and provide necessary background for interpreting the current findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1507 @@
+{
+  "submission": {
+    "id": "35c14c67-d255-4dbd-bfff-14e736ba1b31",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:39:01.087913Z",
+    "updated_at": "2025-12-02T10:39:01.087913Z"
+  },
+  "content": [
+    {
+      "id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "submission_id": "35c14c67-d255-4dbd-bfff-14e736ba1b31",
+      "content_type": "manuscript",
+      "content_text": "# Absolute quantification of cohesin, CTCF and their regulators in human cells\n\n## Authors\n\n- Johann Holzmann<sup>1</sup>\n- Antonio Z Politi<sup>4</sup> ([ORCID: 0000-0003-4788-0933](https://orcid.org/0000-0003-4788-0933))\n- Kota Nagasaka<sup>1</sup> ([ORCID: 0000-0003-0765-638X](https://orcid.org/0000-0003-0765-638X))\n- Merle Hantsche-Grininger<sup>4</sup> ([ORCID: 0000-0002-5137-1616](https://orcid.org/0000-0002-5137-1616))\n- Nike Walther<sup>4</sup> ([ORCID: 0000-0002-7591-5251](https://orcid.org/0000-0002-7591-5251))\n- Birgit Koch<sup>4</sup>\n- Johannes Fuchs<sup>1</sup>\n- Gerhard D\u00fcrnberger<sup>1</sup>\n- Wen Tang<sup>1</sup>\n- Rene Ladurner<sup>1</sup>\n- Roman R Stocsits<sup>1</sup>\n- Georg A Busslinger<sup>1</sup>\n- B\u00e9la Nov\u00e1k<sup>5</sup> ([ORCID: 0000-0002-6961-1366](https://orcid.org/0000-0002-6961-1366))\n- Karl Mechtler<sup>1</sup>\n- Iain Finley Davidson<sup>1</sup> ([ORCID: 0000-0003-4945-6415](https://orcid.org/0000-0003-4945-6415)) \u2020\n- Jan Ellenberg<sup>4</sup> ([ORCID: 0000-0001-5909-701X](https://orcid.org/0000-0001-5909-701X)) \u2020\n- Jan-Michael Peters<sup>1</sup> ([ORCID: 0000-0003-2820-3195](https://orcid.org/0000-0003-2820-3195)) \u2020\n\n### Affiliations\n\n1. Research Institute of Molecular Pathology (IMP) Vienna Biocenter (VBC) Vienna Austria\n2. Institute of Molecular Biotechnology of the Austrian Academy of Sciences (IMBA) Vienna Biocenter (VBC) Vienna Austria\n3. Gregor Mendel Institute, Austrian Academy of Sciences Vienna Biocenter (VBC) Vienna Austria\n4. Cell Biology and Biophysics Unit European Molecular Biology Laboratory (EMBL) Heidelberg Germany\n5. Department of Biochemistry University of Oxford Oxford United Kingdom\n6. Medical University of Vienna Vienna Austria\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe organisation of mammalian genomes into loops and topologically associating domains (TADs) contributes to chromatin structure, gene expression and recombination. TADs and many loops are formed by cohesin and positioned by CTCF. In proliferating cells, cohesin also mediates sister chromatid cohesion, which is essential for chromosome segregation. Current models of chromatin folding and cohesion are based on assumptions of how many cohesin and CTCF molecules organise the genome. Here we have measured absolute copy numbers and dynamics of cohesin, CTCF, NIPBL, WAPL and sororin by mass spectrometry, fluorescence-correlation spectroscopy and fluorescence recovery after photobleaching in HeLa cells. In G1-phase, there are ~250,000 nuclear cohesin complexes, of which ~ 160,000 are chromatin-bound. Comparison with chromatin immunoprecipitation-sequencing data implies that some genomic cohesin and CTCF enrichment sites are unoccupied in single cells at any one time. We discuss the implications of these findings for how cohesin can contribute to genome organisation and cohesion.\n\n## Introduction\n\nIn interphase, eukaryotic genomes form long-range interactions that lead to the formation of chromatin loops and topologically associating domains (TADs) (Dixon et al., 2012;\u00a0Nora et al., 2012; Rao et al., 2014). These interactions organise chromatin structurally and contribute to gene regulation and recombination. Cohesin complexes are not only required for the formation of chromatin loops and TADs (Gassler et al., 2017; Rao et al., 2017; Schwarzer et al., 2017; Wutz et al., 2017), but also for sister chromatid cohesion, a prerequisite for chromosome segregation in mitosis and meiosis (reviewed in Morales and Losada, 2018). In interphase, cohesin is enriched at specific positions genome-wide, most of which are also associated with CCCTC-binding factor (CTCF) (Parelho et al., 2008; Wendt et al., 2008). CTCF consensus binding sites are frequently oriented convergently at TAD borders (Rao et al., 2014; de Wit et al., 2015; Guo et al., 2015; Vietri Rudan et al., 2015) and depletion of CTCF leads to a reduction in insulation between TADs (Nora et al., 2017; Wutz et al., 2017). The mechanism by which cohesin and CTCF contribute to the generation of TADs is unknown, but it has been proposed that cohesin acts by extruding loops of DNA until it encounters convergently-oriented CTCF sites (Sanborn et al., 2015; Fudenberg et al., 2016), thus generating long-range interactions by tethering distal regions of the same chromosome together. Additionally, cohesin is thought to mediate sister chromatid cohesion by physically entrapping two different DNA molecules, one from each sister chromatid (Gruber et al., 2003; Ivanov and Nasmyth, 2005; Haering et al., 2008). How cohesin can perform these two apparently distinct functions is poorly understood.\n\nCohesin is a ring-shaped protein complex composed of four core subunits. The subunits SMC1, SMC3 and SCC1 (also called Rad21 or Mcd1) form a tripartite ring structure and associate via SCC1 with a fourth subunit, which exists in two isoforms in mammalian somatic cells termed STAG1 and STAG2 (also known as SA1 and SA2). Cohesin\u2019s binding to and release from chromosomes are mediated by the proteins NIPBL and WAPL, respectively. Recruitment of cohesin to chromatin in vivo depends on NIPBL and its binding partner MAU2 (Ciosk et al., 2000; Gillespie and Hirano, 2004; Takahashi et al., 2004; Watrin et al., 2006; Schwarzer et al., 2017). NIPBL also stimulates cohesin\u2019s ATPase activity in vitro, an activity thought to be essential for loading of cohesin onto DNA (Arumugam et al., 2003; Weitzer et al., 2003; Hu et al., 2011; Ladurner et al., 2014; Murayama and Uhlmann, 2014; Petela et al., 2018). WAPL, on the other hand, is required for cohesin\u2019s release from chromatin in interphase and prophase, presumably via opening of the cohesin ring (Gandhi et al., 2006; Kueng et al., 2006; Chan et al., 2012; Buheitel and Stemmann, 2013; Eichinger et al., 2013; Tedeschi et al., 2013; Huis in 't Veld et al., 2014). Upon experimental depletion of WAPL in interphase cells, cohesin relocalises to axial elements termed vermicelli (Tedeschi et al., 2013). This coincides\u00a0with global compaction of chromatin that is detectable via DNA and chromatin staining and also by mapping long-range chromatin interactions via Hi-C, indicating that cohesin turnover on chromatin is essential for normal genome organisation (Tedeschi et al., 2013; Gassler et al., 2017; Haarhuis et al., 2017; Wutz et al., 2017). In S and G2 phase of the cell cycle, those cohesin complexes that mediate cohesion are protected from WAPL\u2019s releasing activity by the protein sororin, which is essential for maintaining sister chromatid cohesion (Rankin et al., 2005; Schmitz et al., 2007) in the presence of WAPL (Nishiyama et al., 2010; Ladurner et al., 2016).\n\nAlthough the regulation of cohesin \u2013 chromatin interactions has been well studied, quantitative insight into how cohesin contributes to chromatin loop and TAD formation is lacking. Most Hi-C studies into cohesin-mediated chromosome organisation are performed on a population of cells. The few studies that used Hi-C to investigate the genome organisation of single cells have found that chromosome organisation is variable from cell to cell (Nagano et al., 2013; Flyamer et al., 2017; Gassler et al., 2017; Nagano et al., 2017; Stevens et al., 2017), raising the possibility that TADs might be the product of ongoing loop extrusion events that occur stochastically and are detectable only when averaging across a cell population. Recent microscopy studies have reported structural features consistent with a TAD-like organisation in single cells (Boettiger et al., 2016; Bintu et al., 2018; Szabo et al., 2018), however cell to cell heterogeneity was also detected (Bintu et al., 2018).\n\nTo gain insight into how cohesin might function within a single cell, we have used quantitative mass spectrometry (MS) (Picotti and Aebersold, 2012) to determine the copy number of soluble and chromatin-bound cohesin complexes and ChIP-seq to analyze\u00a0cohesin\u2019s genomic distribution in populations of HeLa cells synchronised in G1, G2 and prometaphase. We combined these ensemble approaches with automated fluorescence-correlation spectroscopy (FCS) and fluorescence recovery after photobleaching (FRAP)\u00a0to determine cohesin copy number and residence time on chromatin in individual synchronised HeLa cells. Our findings, as well as those reported in mouse embryonic stem cells and the human cell line U2OS (Cattoglio et al., 2019), suggest that a fraction of cohesin and CTCF enrichment sites along chromosome arms may be unoccupied in a single cell at any one time. We discuss the implications of these findings for how cohesin might contribute to genome organisation and sister chromatid cohesion.\n\n## Results\n\n### Mass spectrometry analysis of cohesin copy number\n\nTo determine the number of cohesin complexes that exist in HeLa cells, a widely used human cell line, we synchronised cells in G1 phase, G2 phase or prometaphase using thymidine and nocodazole arrest/release protocols. We verified synchronisation efficiency using fluorescence activated cell sorting (FACS) of propidium iodide-stained cells (Figure 1\u2014figure supplement 1A) and determined the number of cells collected in each condition. We separated soluble proteins from chromatin-bound proteins by differential centrifugation and released proteins from chromatin by DNase and RNase treatment. Soluble proteins were isolated from between 1400 and 4,200 cells, depending on cell cycle stage, and chromatin-bound proteins were isolated from 62,500\u00a0\u00b1\u00a03,100 cells. Liquid chromatography-MS (LC-MS) analyses using an LTQ Orbitrap Velos revealed that each fraction was enriched in marker proteins known to be soluble (glucose metabolising enzymes) and chromatin-bound (core histones), respectively (Figure 1\u2014figure supplement 1B). For absolute quantification, an aliquot of each sample was combined with an equimolar mixture of isotopically labelled proteotypic reference peptides generated with the equimolarity through equaliser peptide (EtEP) strategy (Holzmann et al., 2009). This reference set consisted of one peptide from SMC1, five peptides from SMC3, three peptides from SCC1 and STAG1 and two from STAG2 (Appendix 1\u2014table 1). Scheduled selective reaction monitoring (SRM) analyses of the samples obtained in two experiments were each performed in technical duplicates on a 5500 QTRAP instrument.\n\nUsing this approach, we found that the cohesin subunits SMC3 and SCC1 were present in approximately 417,000 and 350,000 copies per G1 cell (Figure 1, see Table 1 for exact values and Figure 1\u2014figure supplement 2 for individual peptide counts). The excess SMC3 detected over SCC1 is consistent with the previously reported existence of SMC1-SMC3 dimers not bound to SCC1 (Losada et al., 2000; Sumara et al., 2000; Waizenegger et al., 2000). However, consistent with a 1:1:1 stoichiometry of these subunits on chromatin, between 61,000 and 69,000 copies of SMC1, SMC3 and SCC1 were detectable on chromatin in G1. STAG2 has been reported to be in excess of STAG1 in HeLa cells (3:1 in HeLa nuclear extract, Losada et al., 2000;\u00a0~12\u201315:1 in SCC1 immunoprecipitates from HeLa total cell extract, Holzmann et al., 2011). We consistently detected more STAG2 than STAG1 in all conditions (Figure 1, Table 1). We detected around 15,000 copies of chromatin-bound STAG1 and 45,000 copies of STAG2 in G1, suggesting that cohesin-STAG2 is present in approximately three-fold excess over cohesin-STAG1 on chromatin in HeLa cells in G1; this ratio increased to 4.6-fold in G2 and decreased to 2.9-fold in prometaphase. The combined total of STAG1 and STAG2 on chromatin was 60,000; taken together this suggests that, on average, between 60,000 and 70,000 cohesin complexes exist in chromatin fractions isolated by differential centrifugation from HeLa cells in G1 phase.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46269/elife-46269-fig1-v3.jpg)\n\n**Figure 1.:** Absolute quantification of cohesin subunits in (A) chromatin or (B) soluble extracts isolated from G1, G2 or prometaphase synchronised HeLa cells, adjusted for cell numbers to derive copy number per cell. Data are plotted as mean\u00a0\u00b1\u00a0standard deviation from two biological replicates and two technical replicates. For absolute values and exceptions, see Table 1. For individual peptide counts, see Figure 1\u2014figure supplement 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46269/elife-46269-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Fluorescence activated cell sorting (FACS) of propidium iodide-stained cells after cell synchronisation. The average synchrony (two biological replicates) of G1-, G2- and prometaphase-arrested cells were 95%, 85% and 92%, respectively. (B) Spectral counting in chromatin and soluble protein extracts. Glyceraldehyde-3-phosphate dehydrogenase (GAPDH), glucose-6-phosphate-isomerase and 6-phospho-frucotokinase (soluble protein markers) were largely depleted from chromatin extracts but were enriched 10- to 20-fold in soluble extracts. Histone H2B, H2A and macroH2A1 were strongly increased in chromatin extracts. For source data, see Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46269/elife-46269-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Absolute quantification of individual SMC1, SMC3, SCC1, STAG1 and STAG2 peptides used to generate the mean cohesin subunit copy numbers shown in Figure 1 and Table 1. Data are plotted as mean\u00a0\u00b1\u00a0standard deviation of two technical replicates. A single technical replicate was quantified for peptide ELAETEPK in G2 soluble extract.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46269/elife-46269-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Quantification of cohesin subunits in SCC1 immunoprecipitates from (A) chromatin or (B) soluble extracts isolated from G1, G2 or prometaphase synchronised HeLa cells. Numbers are normalised relative to SCC1 abundance. Data are plotted as mean\u00a0\u00b1\u00a0standard deviation of two biological replicates and two technical replicates. For absolute values and exceptions, see Appendix 1\u2014table 2. For individual peptide counts, see Figure 1\u2014figure supplement 4.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/46269/elife-46269-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Absolute quantification of individual SMC1, SMC3, SCC1, STAG1 and STAG2 peptides used to generate the mean cohesin subunit ratios shown in Figure 1\u2014figure supplement 3. Data are mean\u00a0\u00b1\u00a0standard deviation of two technical replicates. A single technical replicate was quantified in one of the two biological replicates for peptides TDLYAK (G1 chromatin), YSVDAEK (G1 soluble), LELFTNR (G2 chromatin and soluble) and ETGGVEK (prometaphase chromatin). A single technical replicate was quantified in both of the biological replicates for peptide LELFTNR (prometaphase soluble).\n\n**Table 1.**\n LC-MS quantification of cohesin subunit copy number.Absolute quantification of cohesin subunits in chromatin or soluble extracts isolated from G1, G2 or prometaphase synchronised HeLa cells, adjusted for cell number. Data are tabulated as [mean - s.d., mean\u00a0+\u00a0s.d.] of two biological replicates and two technical replicates (s.d.\u00a0=\u00a0standard deviation). Values in bold or italics derive\u00a0from quantification of one peptide or two peptides, respectively. Underlined values derive\u00a0from quantification of a single biological replicate. For individual peptide counts, see Figure 1\u2014figure supplement 2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">G1</th>\n      <th colspan=\"2\">G2</th>\n      <th colspan=\"2\">Prometaphase</th>\n    </tr>\n    <tr>\n      <th>Protein</th>\n      <th>Chromatin-bound</th>\n      <th>Soluble</th>\n      <th>Chromatin-bound</th>\n      <th>Soluble</th>\n      <th>Chromatin-bound</th>\n      <th>Soluble</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SMC1</td>\n      <td>61125 [47609, 74640]</td>\n      <td>-</td>\n      <td>142290 [120274, 164306]</td>\n      <td>-</td>\n      <td>12461 [11497, 13425]</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>SMC3</td>\n      <td>66430 [53421, 79440]</td>\n      <td>350228 [312360, 388095]</td>\n      <td>158478 [129846, 187111]</td>\n      <td>622117 [557712, 686522]</td>\n      <td>14165 [12173, 16158]</td>\n      <td>899510 [816643, 982376]</td>\n    </tr>\n    <tr>\n      <td>SCC1</td>\n      <td>69275 [54577, 83972]</td>\n      <td>281140 [199837, 362444]</td>\n      <td>149500 [127373, 171627]</td>\n      <td>356850 [270483, 443217]</td>\n      <td>13973 [10478, 17468]</td>\n      <td>494155 [314240, 674070]</td>\n    </tr>\n    <tr>\n      <td>STAG1</td>\n      <td>14718 [11295, 18140]</td>\n      <td>114355 [104557, 124152]</td>\n      <td>23017 [17947, 28087]</td>\n      <td>120960 [119860, 122061]</td>\n      <td>2797 [1842, 3752]</td>\n      <td>152033 [147488, 156577]</td>\n    </tr>\n    <tr>\n      <td>STAG2</td>\n      <td>44812 [37745, 51879]</td>\n      <td>144160 [131233, 157086]</td>\n      <td>106106 [93591, 118621]</td>\n      <td>235980 [213879, 258081]</td>\n      <td>8112 [6863, 9361]</td>\n      <td>336062 [305203, 366922]</td>\n    </tr>\n  </tbody>\n</table>\n\n### The stoichiometry of cohesin complexes remains constant throughout G1, G2 and prometaphase\n\nAs described above, cohesin functions both in genome organisation and in sister chromatid cohesion. Models for cohesin function during these processes have proposed that cohesin might exist in a variety of stoichiometries (Nasmyth, 2011; Hassler et al., 2018). According to the \u2018monomeric ring\u2019 model, cohesin complexes are predicted to exist as monomeric complexes with a core subunit composition ratio of 1:1:1:1. The \u2018handcuff\u2019 model in contrast, proposes that cohesin complexes that mediate cohesion exist as dimeric cohesin rings bridged by a single STAG subunit; that\u00a0is these complexes exist in a 1:1:1:0.5 subunit ratio, with 0.5 being the stoichiometry of the sum of STAG1 and STAG2 proteins relative to the other three subunits (Zhang et al., 2008; Zhang and Pati, 2009). Previous experiments have indicated that approximately half of all chromatin-bound cohesin complexes become cohesive during DNA replication (Gerlich et al., 2006; Kueng et al., 2006; Schmitz et al., 2007). Thus, to be consistent with the handcuff model, our measurements should have revealed a 1:1:1:1 stoichiometry for chromatin-bound cohesin before DNA replication and a 1:1:1:0.75 stoichiometry after replication.\n\nA cohesin subunit stoichiometry of 1:1:1:1 has been previously reported for cohesin complexes immunoprecipitated from unfractionated HeLa cells (Holzmann et al., 2011). To compare the stoichiometry of soluble and chromatin-bound cohesin, we used SCC1 antibody beads to immunoprecipitate cohesin from soluble and chromatin fractions isolated from G1, G2 and prometaphase HeLa cells and then subjected the immunoprecipitates to LC-MS analysis on an LTQ Orbitrap instrument. The ratios of SMC1, SMC3 and STAG1/2 relative to SCC1 were below one in all experimental conditions, possibly reflecting a loss of co-precipitating material during sample processing. It is therefore likely that this method underestimates the ratio of cohesin subunits to SCC1. We identified SMC1, SMC3 and STAG1/2 at ratios of 0.89, 0.95 and 0.83 relative to SCC1 in immunoprecipitates from G1 chromatin, at 0.9, 0.97 and 0.85 in G2 and at 0.88, 0.98 and 0.88 in prometaphase (Figure 1\u2014figure supplements 3 and 4, Appendix 1\u2014table 2). Thus, the stoichiometry of cohesin remains close to 1:1:1:1 in G1, G2 and prometaphase. Importantly, the 95% confidence interval for the ratio of STAG1/2 to SCC1 on G2 chromatin was 0.77\u20130.93. Since this is likely to be an underestimation of the true STAG1/2:SCC1 ratio, our experiments are consistent with the monomeric ring model for cohesion establishment. However, this approach is unable to distinguish between 1:1:1:1 and 2:2:2:2 subunit ratios. Therefore, we cannot exclude that a fraction of cohesin complexes exists as dimers or multimers, as proposed in the accompanying study (Cattoglio et al., 2019).\n\n### Fluorescence correlation spectroscopy analysis of cohesin, CTCF and other cohesin regulators\n\nBy measuring the changes in photon counts caused by single molecule fluctuations within a small illumination volume, fluorescence correlation spectroscopy (FCS) allows determination of a number of biophysical parameters, including the concentration of fluorescently-tagged proteins within living cells. To this end, we used HeLa cell lines in which the cohesin subunits SCC1, STAG1, STAG2 and NIPBL, WAPL, sororin, and CTCF were homozygously tagged with enhanced green fluorescent protein (EGFP) at their endogenous loci using CRISPR-Cas9 genome editing (Figure 2\u2014figure supplement 1). We synchronised these cell lines in G1 phase, G2 phase or prometaphase using thymidine and nocodazole arrest/release protocols similar to those used in our MS analysis. FCS measurements were automatically acquired from multiple positions in the nucleus and cytoplasm (Figure 2A) and protein concentrations were computed (Figure 2B, Appendix 1\u2014table 3). The G1 concentrations of SCC1 and STAG2 in the nucleus were measured to have a median of 330 nM and 280 nM, respectively. Consistent with our LC-MS data, the concentration of nuclear STAG1 was lower, at around 70 nM. The cytoplasmic concentration of all proteins measured was low and frequently fell below the detection limit of FCS (Appendix 1\u2014table 3). To estimate the stoichiometry of our proteins of interest, we compared the fluorescence intensity of the molecules detected by FCS in our EGFP-tagged cell lines to those detected in a cell line that expressed freely diffusing monomeric EGFP (mEGFP). The counts per molecule (CPM) in all our EGFP-tagged cell lines was similar to that of mEGFP, indicating that most cohesin complexes and cohesin regulators exist as monomers (the mean of the median protein of interest: free mEGFP CPM ratios was 1\u00a0\u00b1\u00a00.3, Appendix 1\u2014table 4). This also indicates that the concentrations obtained using FCS represent the total fraction of diffusing proteins.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46269/elife-46269-fig2-v3.jpg)\n\n**Figure 2.:** FCS measurements to estimate the concentration of endogenously GFP-tagged proteins in the nucleus/chromatin and cytoplasm of G1, G2 and prometaphase cells. (A) FCS measurements were taken at different positions (three in the nucleus/chromatin, two in the cytoplasm) in cells in G1 (top), G2 (middle) or prometaphase (bottom), whereby photon counts were recorded for 30 s at each position. Example images for SCC1-EGFP H2B-mCherry in the GFP (left), DNA (middle) and transmission channels are shown. Scale bar: 10 \u00b5m. (B) Probability density violin plots of the GFP-based protein concentrations determined from each FCS measurement (dots) after data fitting and quality control. Note that the EGFP-sororin cell line displayed a mitotic defect, raising the possibility that EGFP-sororin may be hypomorphic. Data were derived from 2 to 4 experiments per condition, 16\u2013254 cells, and 80\u20131270 FCS measurements. Data associated with this figure are included in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46269/elife-46269-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, C, E) PCR genotype analysis of parental and homozygous EGFP tagged HeLa cells used in this study. PCR primers annealed external to the homology arm that was used to insert EGFP in each cell line; a single larger PCR product in the tagged cell line relative to the parental cell line was consistent with homozygosity. (B) Immunoblotting analysis of whole-cell extracts from parental HeLa cells and four homozygously tagged EGFP-NIPBL HeLa cell lines. Clone F1 was used for all experiments. \u03b1-tubulin was used as a loading control. Asterisk denotes non-specific signal. (D) Immunoblotting analysis of chromatin extracts from parental HeLa cells and EGFP-sororin tagged HeLa cells. SMC1 was used as a loading control. Note that the EGFP-sororin cell line displayed a mitotic defect, raising the possibility that EGFP-sororin may be hypomorphic. (F) Immunoblotting analysis of whole-cell extracts from parental HeLa cells and EGFP-WAPL tagged HeLa cell line. \u03b1-tubulin was used as a loading control. Characterisation of the EGFP-STAG1, STAG1-EGFP and STAG2-EGFP cell lines will be published elsewhere. Characterisation of the SCC1-mEGFP and CTCF-EGFP cell lines was previously published (Davidson et al., 2016; Wutz et al., 2017).\n\nWe next converted the protein concentration values to absolute copy numbers using cell volumes calculated from 3D segmentation of the nucleus and an estimate of the cell to nucleus volume ratio (Table 2). Using this approach, we estimated that approximately 260,000 copies of SCC1-mEGFP, 50,000 copies of STAG1-EGFP and 240,000 copies of STAG2-EGFP exist per G1 cell. This compares to 350,000 copies of SCC1, 130,000 copies of STAG1 and 160,000 copies of STAG2 per G1 cell as estimated by LC-MS. Using bootstrapping, we estimated that the two orthogonal methods agree to within an average factor of 1.5, and that a ratio of one, that\u00a0is equal protein numbers for the two methods, was within 68% of the error for 6 out of 9 conditions (Appendix 1\u2014table 5, see Discussion). As also observed in the LC-MS dataset, the total copy number of cohesin subunits increased in G2 cells compared to G1 cells (Tables 1 and 2). The intracellular concentration of cohesin was maintained in G2 despite this increase in total copy number, since the volume of G2 cells also increased (Figure 2, Table 2, Appendix 1\u2014table 3).\n\n**Table 2.**\n FCS quantification of copy number of cohesin subunits and regulators.Absolute copy number of cohesin subunits and regulators obtained from FCS protein concentration measurements in the nucleus/chromatin and cytoplasmic compartment of cells (Figure 2\u2014source data 1). Copy numbers were calculated by multiplying the protein concentrations by the cell cycle-specific volume of the respective cellular compartment and Avagadro\u2019s constant as described in Materials and Methods. Missing or italicised\u00a0numbers indicate that the number of successful FCS measurements was not sufficient to estimate the protein concentration. Note that the EGFP-sororin cell line displayed a mitotic defect, raising the possibility that EGFP-sororin may be hypomorphic. Data are tabulated as the median. The 68% interval of the distribution is listed in brackets.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">G1</th>\n      <th colspan=\"2\">G2</th>\n      <th colspan=\"2\">Prometaphase</th>\n    </tr>\n    <tr>\n      <th>Protein</th>\n      <th>nucleus/chromatin</th>\n      <th>cytoplasm</th>\n      <th>nucleus/chromatin</th>\n      <th>cytoplasm</th>\n      <th>nucleus/chromatin</th>\n      <th>cytoplasm</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SCC1</td>\n      <td>250755 [160752; 387511]</td>\n      <td>10690 [2426; 28277]</td>\n      <td>291939 [228902; 547040]</td>\n      <td>6279 [2917; 9460]</td>\n      <td>52195 [35147; 72881]</td>\n      <td>203259 [138338; 303046]</td>\n    </tr>\n    <tr>\n      <td>STAG1</td>\n      <td>50062 [26338; 95212]</td>\n      <td>1738 [419; 6726]</td>\n      <td>90712 [59923; 152640]</td>\n      <td>1048 [359; 3369]</td>\n      <td>10714 [6958; 16682]</td>\n      <td>34860 [26096; 50824]</td>\n    </tr>\n    <tr>\n      <td>STAG2</td>\n      <td>221261 [158694; 291715]</td>\n      <td>18168 [5571; 59386]</td>\n      <td>281503 [202964; 384802]</td>\n      <td>29080 [9410; 92086]</td>\n      <td>67163 [46974; 105183]</td>\n      <td>249048 [183810; 360561]</td>\n    </tr>\n    <tr>\n      <td>NIPBL</td>\n      <td>146764 [107180; 202180]</td>\n      <td>7314 [3462; 13262]</td>\n      <td>162915 [101109; 218244]</td>\n      <td>10537 [4819; 18812]</td>\n      <td>32357 [22248; 44222]</td>\n      <td>135313 [114223; 172737]</td>\n    </tr>\n    <tr>\n      <td>WAPL</td>\n      <td>91114 [68317; 115878]</td>\n      <td>-</td>\n      <td>100084 [70256; 125633]</td>\n      <td>-</td>\n      <td>20196 [13253; 30023]</td>\n      <td>88677 [68173; 141144]</td>\n    </tr>\n    <tr>\n      <td>SORORIN</td>\n      <td>44396 [21054; 84541]</td>\n      <td>1216 [363; 3551]</td>\n      <td>104939 [40639; 163976]</td>\n      <td>4580 [832; 27180]</td>\n      <td>25099 [16846; 38736]</td>\n      <td>103462 [61909; 139749]</td>\n    </tr>\n    <tr>\n      <td>CTCF</td>\n      <td>181157 [131295; 259610]</td>\n      <td>3671 [1192; 6294]</td>\n      <td>206494 [157309; 284756]</td>\n      <td>9708 [9256; 10160]</td>\n      <td>51898 [32725; 80216]</td>\n      <td>143505 [87355; 243766]</td>\n    </tr>\n  </tbody>\n</table>\n\nWe found that NIPBL, WAPL, sororin and CTCF were all sub-stoichiometric relative to SCC1 in G1 and G2 HeLa cells, although the 68% distribution intervals for nuclear SCC1 and NIPBL overlapped in G1 (Figure 2B and Appendix 1\u2014table 3). Sub-stoichiometry between NIPBL and cohesin is consistent with estimates comparing nuclear levels of fluorescently tagged SCC1 and NIPBL in the human cell line HCT116 (Rhodes et al., 2017).\n\n### Dynamics of chromatin-bound cohesin\n\nOur FCS experiments allowed us to measure the number of cohesin complexes that reside in the nucleus but not the number of chromatin-bound complexes, that\u00a0is those that might actually contribute to chromatin architecture and sister chromatid cohesion. To investigate the dynamics of nuclear cohesin in G1 and G2 phase (Figure 3\u2014figure supplement 1A), we performed inverse fluorescence recovery after photobleaching (iFRAP) using the same SCC1-EGFP cell line that was used in our FCS experiments (Figure 3A,B). Consistent with previous studies that relied on ectopically expressed GFP-tagged cohesin subunits (Gerlich et al., 2006; Schmitz et al., 2007; Ladurner et al., 2014; Ladurner et al., 2016), the recovery kinetics obtained from G1 phase cells could largely be fitted using a single exponential function, indicating cohesin was dynamically bound to chromatin with a residence time of 13.7\u00a0\u00b1\u00a02.2 min (Figure 3\u2014figure supplement 1B,D). We refer to this population of cohesin as \u2018dynamic\u2019. Previous work has revealed that it arises from repeated loading and WAPL-mediated release events (Gandhi et al., 2006; Kueng et al., 2006; Chan et al., 2012; Buheitel and Stemmann, 2013; Eichinger et al., 2013; Tedeschi et al., 2013; Huis in 't Veld et al., 2014). Also consistent with previous studies, the recovery kinetics obtained from cells in G2 phase could only be fitted using a double exponential function with a dynamic residence time of 10.0\u00a0\u00b1\u00a03.1 min and a stable residence time of 8.6\u00a0\u00b1\u00a04.1 hr (Figure 3\u2014figure supplement 1C,D,E and Gerlich et al., 2006).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46269/elife-46269-fig3-v3.jpg)\n\n**Figure 3.:** (A) Images of inverse fluorescence recovery after photobleaching (iFRAP) in SCC1-mEGFP cells in G1 and G2 phase (Figure 3\u2014figure supplement 1A). Half of the nuclear SCC1-mEGFP fluorescent signal was photobleached and the mean fluorescence in the bleached and unbleached regions was monitored by time-lapse microscopy. (B) The difference in fluorescence signals between the bleached and unbleached regions was normalised to the first post bleach image and plotted (mean\u00a0\u00b1\u00a0S.D., n\u00a0=\u00a019 per condition). (C) SCC1-mEGFP distribution in the nucleus in G1 and G2 phase. Dynamic and stable populations were estimated using curve fittings from Figure 3\u2014figure supplement 1B,C. Soluble populations were estimated by measuring the reduction in signal intensity in the unbleached area after bleaching (Figure 3\u2014figure supplement 1G). (D) FCS/FRAP estimates of soluble, dynamic and stable nuclear SCC1-mEGFP copy number (see Table 3 for exact values).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46269/elife-46269-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Images of SCC1-mEGFP cells in G1 and G2 phase, as distinguished by nuclear (G1) and cytoplasmic (G2) distribution of DHB-mKate2. Scale bar: 10 \u03bcm. (B) Curve fitting to experimental iFRAP curves obtained from G1 phase using a single exponential function (dashed black line). (C) Curve fitting to experimental iFRAP curves obtained from G2 phase by a single exponential function (dashed cyan line) and double exponential functions (dashed black line). (D) Residence times of dynamically bound SCC1-mEGFP in G1 and G2 were measured from individual curves by a single exponential function in (B) and by double exponential functions in (C), respectively, and plotted (mean\u00a0\u00b1\u00a0S.D.). (E) Residence time of stably-bound SCC1-mEGFP measured from individual curves by double exponential functions in (C) and plotted (mean\u00a0\u00b1\u00a0S.D.). Dots indicate individual cells. (F) Population of stably-bound SCC1-mEGFP expressed as a percentage of total chromatin-bound SCC1-mEGFP, measured from individual curves by double exponential functions in (C) and plotted (mean\u00a0\u00b1\u00a0S.D.). Dots indicate individual cells. (G) Reduction of fluorescent signals in unbleached area after photobleaching was quantified and plotted (mean\u00a0\u00b1\u00a0S.D.). \u2018unbleached\u2019 shows the reduction in nuclear fluorescent signal in cells not subjected to iFRAP within the same experiment. Dots indicate individual cells.\n\nSince highly mobile proteins diffuse from the unbleached area to the bleached area during the bleaching time period, the reduction in GFP signal in the unbleached area provides an estimate of the soluble fraction of SCC1-EGFP (Figure 3\u2014figure supplement 1G). This reduction in GFP signal was not due to general photobleaching, since this signal did not decrease in the nuclei of cells that were not subjected to iFRAP (Figure 3\u2014figure supplement 1G, \u2018unbleached\u2019). According to our FCS analysis, approximately 250,000 copies of SCC1-GFP reside in the nucleus in G1. Our iFRAP analysis allowed us to estimate that approximately 64 \u00b1 4% (160,000\u00a0\u00b1\u00a010,000) of these molecules are bound to chromatin (Figure 3C,D, Table 3). In G2, we estimate that 37 \u00b1 9% of nuclear SCC1-EGFP is bound stably to chromatin, 36 \u00b1 9% is bound dynamically and 27 \u00b1 7% is soluble (Figure 3C). Taking into account our FCS measurements of SCC1-EGFP copy number in G2 phase, we estimate that around 108,000\u00a0\u00b1\u00a026,000 cohesin molecules are stably bound, 105,000\u00a0\u00b1\u00a026,000 bind dynamically and 79,000\u00a0\u00b1\u00a021,000 are soluble (Figure 3D, Table 3). Thus, our LC-MS and FCS estimates of the number of SCC1 molecules bound to chromatin in a HeLa cell agree to within a factor of 2.3 in G1 and a factor of 1.4 in G2 (Appendix 1\u2014table 1, Table 3). We suspect that this difference is caused by the removal of a fraction of dynamically chromatin-bound cohesin during sample preparation for LC-MS (see Discussion).\n\n**Table 3.**\n FCS/iFRAP estimates of soluble, dynamic and stable nuclear SCC1-mEGFP copy number.Copy numbers were calculated by multiplying the median nuclear FCS copy number measurements (Table 2) by the average and s.d. population fractions as determined by iFRAP (Figure 3C).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">Copy number</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>G1</th>\n      <th>G2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>soluble</td>\n      <td>91318\u00a0\u00b1\u00a010277</td>\n      <td>79239\u00a0\u00b1\u00a021371</td>\n    </tr>\n    <tr>\n      <td>dynamic</td>\n      <td>159437\u00a0\u00b1\u00a010277</td>\n      <td>104952\u00a0\u00b1\u00a026360</td>\n    </tr>\n    <tr>\n      <td>stable</td>\n      <td>0</td>\n      <td>107748\u00a0\u00b1\u00a026360</td>\n    </tr>\n    <tr>\n      <td>total</td>\n      <td>250755</td>\n      <td>291939</td>\n    </tr>\n  </tbody>\n</table>\n\n### A mathematical model for cohesin binding to chromatin\n\nWe observed that the number of chromatin-bound cohesin complexes increased by around a factor of two in G2 cells compared to G1 cells, as measured directly by LC-MS (Table 1) and indirectly by integrating our FCS and FRAP data (see above). This increase coincides with the appearance of a stably-bound population of cohesin. To explore whether the observed increase in cohesin's residence time is sufficient to explain the two-fold increase in chromatin-bound cohesin complexes, we performed mathematical modelling. For this we considered the inter-conversion between the different unbound and chromatin-bound forms of nuclear cohesin (Figure 4A). By performing a number of algebraic substitutions (see Materials and methods), we generated an equation that allows us to plot the equilibrium distribution of the unbound and dynamically chromatin-bound forms of cohesin as a function of the stably chromatin-bound fraction (Figure 4B). The fraction of stable cohesin (s) in G2 phase cells is\u00a0~0.37 (Figure 3C). According to our model, if s\u00a0=\u00a00.37 the chromatin-bound fraction (bT) should be 0.77 (Figure 4B). This is very close to the experimentally-determined fraction of chromatin-bound cohesin in G2 (0.73, Figure 3C). Therefore, we propose that the only major distinction between cohesin dynamics in G1 and G2 phase cells is that a fraction of cohesin becomes stably bound in G2 phase.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46269/elife-46269-fig4-v3.jpg)\n\n**Figure 4.:** (A) Model describing transitions between unbound (U), dynamic (D) and stable (S) forms of nuclear cohesin. The \u2018k\u2019s refer to the first order rate constants (with a dimension of time\u22121) of individual transitions. (B) Equilibrium distribution of the unbound and dynamic forms of cohesin as a function of the stable fraction. The grey line represents the fraction of nuclear cohesin that is chromatin-bound (BT). The red line represents the fraction of nuclear cohesin that is stably chromatin-bound (S). The black dots represent the experimentally observed values of BT and S in G1 and G2.\n\n### Implications of absolute cohesin copy numbers for the occupancy of cohesin enrichment sites\n\nOur current knowledge regarding the genomic distribution of human cohesin and its regulators derives largely from population-based ChIP-seq experiments. The distribution of human cohesin on DNA has only been analysed for the \u2018mappable\u2019 non-repetitive part of the genome, and most ChIP experiments that have been performed for this purpose have only revealed the relative distribution of cohesin and can therefore not be used for a quantitative analysis. Nevertheless, it is interesting to compare the absolute number of cohesin complexes that we have measured here with data on cohesin enrichment sites in the human genome. We have identified around 37,000, 35,000 and 47,000 sites for SMC3, STAG1 and STAG2, respectively in the mappable fraction of the human genome in G1-synchronised HeLa cells (Figure 5A, Appendix 1\u2014table 6). 88% of SMC3 sites overlap with the combined enrichment sites of STAG1 and STAG2, and 77% overlap with CTCF (Figure 5B, Appendix 1\u2014table 7.).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46269/elife-46269-fig5-v3.jpg)\n\n**Figure 5.:** (A) Enrichment profiles of SMC3, STAG1, STAG2 and CTCF along an exemplary 100 kb region of chromosome 3, illustrating typical distribution and co-localisation of sequencing read pileups. Genes within this region are depicted above. SMC3 and CTCF were immunoprecipitated from HeLa Kyoto using anti-SMC3 and anti-CTCF antibodies, respectively. EGFP-STAG1 and STAG2-EGFP were immunoprecipitated from the respective genome-edited cell lines using anti-GFP antibodies. (B) Area-proportional threefold eulerAPE Venn diagram (www.eulerdiagrams.org/eulerAPE/) illustrating genome-wide co-localisation between SMC3, CTCF, and the combined set of STAG1 and STAG2 coordinates. (C) Pie chart depicting categories of pairwise genomic distances between SMC3 enrichment sites. (D) Schematic comparing the occupancy of cohesin and CTCF across a cell population and within a single cell. Incomplete occupation of cohesin and CTCF binding sites can explain why chromatin loops are not uniform and how cohesin can \u2018skip\u2019 past CTCF binding sites.\n\nIf we assume that cohesin occupies the HeLa genome (7.9 Mb; Landry et al., 2013) with equal frequency as in the \u2018mappable\u2019 human genome (2.7 Mb) there should be around 117,000 cohesin enrichment sites per HeLa cell (~40,000 \u00f7 2.7 \u00d7 7.9). If one assumes that all\u00a0~160,000 dynamically chromatin-bound cohesin complexes identified in a single cell by FCS/FRAP are positioned at the 117,000 cohesin enrichment sites, it is therefore theoretically possible that every site is occupied simultaneously by cohesin in a single G1 cell. However, for reasons explained in the Discussion, at any given time many cohesin complexes may not be positioned at cohesin enrichment sites, in which case not all of these could be simultaneously occupied by cohesin.\n\nWe identified around 41,000 CTCF binding sites in ChIP-seq experiments performed in G1-arrested HeLa cells (Figure 5A, Appendix 1\u2014table 7). Using the same logic as described above, this equates to around 120,000 potential CTCF binding sites per HeLa cell. Using FCS, we estimated that approximately 180,000 copies of GFP-tagged CTCF reside in the nucleus in G1 (Table 2). It is unknown what fraction of these molecules is bound to chromatin in HeLa cells, and whether CTCF binds to chromatin as multimers, as has been proposed (Pant et al., 2004; Yusufzai et al., 2004; Bonchuk et al., 2015). Given that we estimate that the number of CTCF molecules in the nucleus is similar to the number of CTCF binding sites, and assuming that at steady state not all CTCF molecules are chromatin bound, it is possible that not every site is occupied simultaneously by CTCF in a single G1 cell\u00a0(see Discussion).\n\nIf cohesin/CTCF enrichment sites represent positions at which cohesin loop extrusion frequently stalls, an estimate as to the average distance a cohesin complex might travel during loop extrusion could be made by determining the genomic distances between pairs of cohesin enrichment sites. If every ChIP-seq peak were distributed equally within the mappable genome, we would expect to detect around one peak every 67.5 kb (2.7 Mb \u00f7 40,000). We found that SMC3 enrichment sites were actually distributed over a very broad range of distances, ranging from less than 10 kb apart to greater than 2 Mb (Figure 5C). However, around 80% percent of the detected SMC3 enrichment sites resided within 100 kb of each other. We note that this predicted cohesin loop size is very similar to those calculated for the loops formed by the related condensin complex on mitotic chromosomes (Gibcus et al., 2018; Walther et al., 2018) and is also consistent with the range of loop sizes predicted to exist in interphase chromatin (Wutz et al., 2017). As described above, it is possible that not every cohesin enrichment site is occupied simultaneously in a single cell, and the size of a loop formed by a cohesin complex might depend on\u00a0where in between the two adjacent cohesin enrichment sites cohesin initially binds. Nevertheless, this analysis suggests that at least some cohesin complexes might extrude loops around 100 kb in size. This is in line with predictions of loop extrusion processivity based on polymer modelling (120\u2013240 kb; Fudenberg et al., 2016).\n\n## Discussion\n\n### A comparison between LC-MS and FCS measurements of cohesin copy number\n\nAs mentioned above, our LC-MS and FCS-derived estimates of total cohesin subunit copy number were within an overall factor of 1.3 of one another in G1 and 1.4 in G2 (Appendix 1\u2014table 5). Given the major differences between these orthogonal techniques, the similarity between both datasets is remarkable. The estimated copy numbers for STAG1 showed larger differences, however. Several factors, including experimental variability (intra-assay variability for each of the two methods was\u00a0~20\u201330%), could have contributed to this discrepancy (see Materials and methods). Our FCS-derived estimates of chromatin-bound SCC1 were 2.3-fold higher than our LC-MS estimates in G1 and 1.4-fold higher in G2. It is possible that a fraction of dynamically chromatin-bound cohesin complexes was lost during the purification steps that preceded our LC-MS analysis.\n\n### Occupancy of cohesin and CTCF enrichment sites in a single cell\n\nIn the loop extrusion model of cohesin-mediated genome organisation, cohesin is predicted to bind to chromatin and translocate to extrude loops (Nasmyth, 2001; Sanborn et al., 2015; Fudenberg et al., 2016). This model therefore predicts that chromatin-bound cohesin must transiently exist at other sites in addition to those identifiable by standard ChIP-seq. Consistently, calibrated ChIP-seq experiments suggest that significant amounts of budding yeast cohesin localises to regions between peaks (Hu et al., 2015). Direct evidence of cohesin-mediated loop extrusion is so far missing, however the budding yeast orthologue of the related SMC complex condensin has been shown to translocate unidirectionally along DNA (Terakawa et al., 2017) and perform loop extrusion of DNA in vitro (Ganji et al., 2018). Fission yeast and vertebrate cohesin can translocate along DNA in vitro (Davidson et al., 2016; Kanke et al., 2016; Stigler et al., 2016) and ChIP-seq studies in bacteria, yeast and mammalian cells have all revealed that cohesin/SMC enrichment sites can vary in their positions (Lengronne et al., 2004; Hu et al., 2015; Ocampo-Hafalla et al., 2016; Busslinger et al., 2017; Wang et al., 2017; Petela et al., 2018; Wang et al., 2018). If cohesin is indeed mobile on chromatin, our finding that the number of chromatin-bound cohesin complexes is similar to the number of potential cohesin binding sites means it is unlikely that every cohesin enrichment site is occupied in a single G1 cell. However, if cohesin performs loop extrusion as a monomer, and the cohesin ChIP-seq binding sites that overlap with CTCF represent stalled extrusion events, it could be that a single cohesin complex could occupy the two cohesin enrichment sites present at the base of chromatin loops. This would decrease the number of cohesin complexes required to simultaneously occupy all cohesin enrichment sites in a single cell.\n\nWe estimate that there are around 120,000 potential CTCF binding sites and 180,000 copies of CTCF per HeLa cell nucleus. This suggests that if the chromatin-bound fraction of CTCF is below around 0.67, not all CTCF binding sites would be occupied simultaneously. This would provide a potential explanation as to how cohesin might \u2018skip\u2019 past the CTCF sites identified within TADs (Figure 5D) and also how longer chromatin loops can form following WAPL depletion despite no detectable change in CTCF distribution (Gassler et al., 2017; Haarhuis et al., 2017; Wutz et al., 2017). Similar conclusions regarding the copy number and occupancy of cohesin and CTCF have recently been drawn in mouse embryonic stem cells and human U2OS cells\u00a0(Hansen et al., 2017; Cattoglio et al., 2019). Importantly, these authors concluded that only around 49% of nuclear CTCF molecules are actually chromatin-bound (Hansen et al., 2017).\n\n### Cohesin residence time and genome organisation\n\nOur FRAP data indicate that in G1, cohesin is bound to chromatin dynamically with a residence time of around 13 min, although our measurements cannot exclude that there are also more short-lived interactions between cohesin and chromatin as reported earlier (Ladurner et al., 2014). To try to understand whether dynamic cohesin complexes might participate in loop extrusion, it is interesting to consider how fast cohesin would have to extrude to generate a chromatin loop of a defined size within its estimated residence time. To generate a 100 kb loop (the genomic distance that covers more than 80% of cohesin enrichment sites; Figure 5C), a dynamically chromatin-bound cohesin complex would need to extrude at around 8 kb/min. Since we found that the distance between neighbouring cohesin enrichment sites was highly variable and cohesin occupancy at these sites is likely to be below 100%, an alternative estimate as to the dimensions of a typical chromatin loop is to use the median TAD size determined in Hi-C experiments (~185 kb, Rao et al., 2014). Using this value, dynamically chromatin-bound cohesin would need to extrude at rates of around 14 kb/min. These calculated rates of dynamic cohesin-mediated loop extrusion are close to the predicted rate of loop extrusion by cohesin in HeLa cells (22.5 kb/min, Rao et al., 2017), condensin II in chicken cells (6\u201312 kb/min, Gibcus et al., 2018), SMC complexes in B. subtilis (54 kb/min, Wang et al., 2017) and the maximal rate of loop extrusion observed for yeast condensin in vitro (90 kb/min, Ganji et al., 2018).\n\n### Genome organisation and sister chromatid cohesion\n\nThe ring model of sister chromatid cohesion proposes that cohesive cohesin complexes topologically entrap replicated sister chromatids\u00a0Haering et al. (2008). If cohesin extrudes loops of chromatin, it is possible that it does so without topological entrapment, raising the possibility that two populations of cohesin exists in cells, one that is competent for loop extrusion and the other for cohesion (Srinivasan et al., 2018). Cohesion is believed to be mediated by stably-bound complexes, which comprises around half of all chromatin-bound cohesin in G2 (Figure 3C and Gerlich et al., 2006). Depletion of WAPL results in the stabilisation of cohesin complexes on chromatin and a dramatic change in chromatin architecture, indicating that stably-bound cohesin complexes are able to function in chromosome organisation and that alteration of cohesin\u2019s residence time may influence this process (Kueng et al., 2006; Tedeschi et al., 2013; Gassler et al., 2017; Haarhuis et al., 2017; Wutz et al., 2017). However, the number and position of TADs and loops does not differ significantly between G1 and G2 cells (Wutz et al., 2017), that\u00a0is chromatin architecture does not detectably change even though many cohesin complexes are stably bound to chromatin in G2. This raises the interesting possibility that stably-bound cohesive cohesin in G2 is functionally distinct from the stably-bound cohesin found in cells depleted of WAPL. If so, it is possible that this is because the former might interact with two stretches of chromatin topologically and the latter might do so non-topologically.\n\nConsidering the notion that around half of chromatin-bound cohesin is stably-bound in G2 and may not function in loop extrusion, we were interested to use our LC-MS, FCS and FRAP data to compare the number of dynamically chromatin-bound cohesin complexes in cells synchronised in G1 and G2. If chromatin loops are formed by dynamically bound cohesin one might expect that more of these complexes are present on chromatin in G2-phase to be able to form long-range chromatin interactions on both sister chromatids. However, even though the total number of cohesin complexes bound to chromatin in G2 is twice of that in G1, our FRAP data indicate that the number of dynamically chromatin-bound cohesin complexes is actually reduced (Tables 1, 2 and 3, and Figure 3D). Thus, either stably-bound cohesin participates in genome organisation in some way \u2013 without any of the changes in chromatin structure observed following WAPL depletion \u2013 or the two-fold increase in DNA content in G2 must be organised by relatively fewer cohesin complexes.\n\n### Implications of cohesin copy number measurements for cohesion at centromeric regions\n\nUsing FCS and iFRAP, we estimated that around 213,000 cohesin complexes are bound to chromatin in a typical G2 cell, of which around half are bound stably to chromatin (Table 3, Figure 3D). Since the stable fraction is the one thought to mediate cohesion (Gerlich et al., 2006), this suggests that around 108,000 cohesin complexes establish cohesion between replicated genomes that each contain 117,000 predicted cohesin enrichment sites. Thus, if cohesion is mediated by monomeric cohesin, it is unlikely that it is established at every cohesin enrichment site in a single cell. This is consistent with the finding that proximity to a cohesin enrichment site does not correlate with proximity between sister chromatids in G2 (Stanyte et al., 2018).\n\nOur results obtained with prometaphase arrested HeLa cells imply that the situation may be different at centromeres. Using LC-MS, we estimated that only around 14,000 cohesin complexes were bound to chromosomes in these cells (Figure 1 and Table 1). These numbers are in good agreement with the previous observation that approximately 90% of all chromatin-bound cohesin complexes dissociate from chromosomes in prophase and prometaphase (Waizenegger et al., 2000; Gerlich et al., 2006). Since previous immunofluorescence microscopy experiments have shown that in prometaphase-arrested cells cohesin is predominantly detected at centromeres (Gim\u00e9nez-Abi\u00e1n et al., 2004) and because ChIP experiments could not detect cohesin in the non-repetitive part of the genome in such cells (Wendt et al., 2008), we assume that most of the 14,000 cohesin complexes that we found on prometaphase chromosomes must have represented cohesin at centromeres. Since the HeLa cells used in this study contained on average 64 chromosomes (Landry et al., 2013), our measurements indicate that each of these chromosomes might contain around 200 cohesin complexes in its centromeric region.\n\nWith this study, we have measured the number of cohesin complexes and cohesin regulatory proteins in a human cell line that is widely used for studying chromatin organisation and mechanisms of sister chromatid cohesion. We have approximated how many of those cohesin complexes may participate in these two functions and have related this to the genomic distribution of cohesin enrichment sites throughout the cell cycle. Our findings suggest that at least some but possibly many of the predicted cohesin enrichment sites are unoccupied in a single cell at a given timepoint, implying that our current models of chromatin organisation and sister chromatid cohesion derived from large populations of cells may not fully reflect the situation in individual cells.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HK CRISPR SCC1-mEGFP\u00a0+\u00a0H2B-mCherry</td>\n      <td>parental genome-edited cell line from Davidson et al. (2016)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HK CRISPR EGFP-STAG1</td>\n      <td>this paper</td>\n      <td></td>\n      <td>See Materials and methods subsection \u2018Generation of EGFP-tagged NIPBL and STAG1 HeLa Kyoto cell lines\u2019</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HK CRISPR STAG1-EGFP H8\u00a0+\u00a0H2B-mCherry</td>\n      <td>parental genome-edited cell line from Cai et al. (2018)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HK CRISPR STAG2-EGFP F2\u00a0+\u00a0H2B-mCherry</td>\n      <td>parental genome-edited cell line from Cai et al. (2018)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HK CRISPR EGFP-NIPBL F1\u00a0+\u00a0H2B-mCherry</td>\n      <td>this paper</td>\n      <td></td>\n      <td>See Figure 2\u2014figure supplement 1 and Materials and methods subsection \u2018Generation of EGFP-tagged NIPBL and STAG1 HeLa Kyoto cell lines\u2019</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HK CRISPR EGFP-WAPL H3\u00a0+\u00a0H2B-mCherry</td>\n      <td>parental genome-edited cell line from Ladurner et al. (2016); Cai et al. (2018)</td>\n      <td></td>\n      <td>See Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HK CRISPR EGFP-SORORIND3\u00a0+\u00a0H2B-mCherry</td>\n      <td>parental genome-edited cell line from Ladurner et al. (2016)</td>\n      <td></td>\n      <td>See Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HK CRISPR CTCF-EGFP F2</td>\n      <td>Wutz et al. (2017); Cai et al. (2018)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HK H2B-mCherry</td>\n      <td>Neumann et al. (2010)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal Anti-SMC3</td>\n      <td>Peters laboratory</td>\n      <td>Antibody ID:k727</td>\n      <td>ChIP, Figure 5</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal Anti-CTCF</td>\n      <td>Merck</td>\n      <td>Cat #:07\u2013729 RRID:AB_441965</td>\n      <td>ChIP, Figure 5</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal Anti-WAPL</td>\n      <td>Peters laboratory</td>\n      <td>Antibody ID:A1017</td>\n      <td>Western blotting (1:1000), Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal Anti-sororin</td>\n      <td>Peters laboratory</td>\n      <td>Antibody ID:A953</td>\n      <td>Western blotting (1:1000), Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat polyclonal Anti-NIPBL</td>\n      <td>Absea</td>\n      <td>Cat #:010702F01</td>\n      <td>Western blotting (1:1000), Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal Anti-tubulin</td>\n      <td>Sigma</td>\n      <td>Cat #:T-5168 RRID:AB_477579</td>\n      <td>Western blotting (1:50000), Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal Anti-GFP</td>\n      <td>Abcam</td>\n      <td>Cat #:ab290 RRID:AB_303395</td>\n      <td>ChIP, Figure 5</td>\n    </tr>\n  </tbody>\n</table>\n\n### Data reporting and accessibility\n\nNo statistical methods were used to predetermine sample size. The experiments were not randomised. The investigators were not blinded to allocation during experiments and outcome assessment. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with the dataset identifier PXD012712. The FCS data with the autocorrelation curves used to compute protein concentrations are included in Figure 2\u2014source data 1.\n\n### Generation of EGFP-tagged NIPBL and STAG1 HeLa Kyoto cell lines\n\nThe EGFP-NIPBL and EGFP-STAG1 cell lines were generated by homology-directed repair using CRISPR Cas9(D10A) paired nickase (Ran et al., 2013). A donor plasmid comprising homology arms (700\u2013800 bp (NIPBL) and 1300\u20131500 bp (STAG1) on either side of the coding sequence start site) and EGFP were cloned into plasmid pJet1.2 (Thermo Scientific, K1232). Cas9 guide RNA sequences were identified using the website crispr.mit.edu (NIPBL guide A: gTCCCCGCAAGAGTAGTAAT; NIPBL guide B: gGTCTCACAGACCGTAAGTT; STAG1 guide A: gACAATACTTACTGTAACAC; STAG1 guide B: gTATTTTTTAAGGAAAATTT) and inserted into plasmid pX335 (a gift from Feng Zhang, Addgene, 42335). HeLa Kyoto cells (Landry et al., 2013) were transfected with donor, Cas9 nickase plasmids and Lipofectamine 2000 (Invitrogen, 11668019). Media were replaced the next day and cells were maintained for 7 days before sorting GFP positive cells by flow cytometry into 96 well plates. EGFP-NIPBL clone F1 and EGFP-STAG1 clone H7 were selected after verification of homozygous GFP insertion by PCR of genomic DNA, immunoblotting and inspection by microscopy.\n\n### Cell line characterization\n\nAll cell lines were free from detectable mycoplasma contamination and have been authenticated by STR fingerprinting (Vienna Biocenter Core Facilities). PCR of genomic DNA was used to verify homozygous GFP insertion in all EGFP-tagged HeLa Kyoto cell lines. The following primers were used: EGFP-NIPBL: ATCGTGGGAACGTGCTTTGGA, GCTCAGCCTCAATAGGTACCAACA. EGFP-WAPL: TGATTTTTCATTCCTTAGGCCCTTG, TACAAGTTGATACTGGCCCCAA. EGFP-sororin: GCTAGCCCTACGTCACTTCC, TGCAGTCCCAGTACACAACG.\n\nWestern blotting was used to detect proteins of interest in HeLa Kyoto w.t. and GFP-tagged cell lines. For western blotting of GFP-tagged NIPBL and WAPL HeLa Kyoto cell lines, cells were resuspended in RIPA buffer (50 mM Tris pH 7.5, 150 mM NaCl, 1 mM EDTA, 1% NP-40, 0.5% Na-deoxycholate and 0.1% SDS), supplemented with pepstatin, leupeptin and chymostatin (10 \u00b5g/ml each) and PMSF (1 mM). Protein concentration was determined using the Bradford Protein Assay (Bio-Rad Laboratories). Samples were separated by SDS-PAGE and western blotting was performed using the antibodies described below. For western blotting of GFP-tagged sororin HeLa Kyoto cell line, a chromatin extract was prepared as described previously (Ladurner et al., 2014). Antibodies used: rabbit anti-WAPL (Peters laboratory ID A1017), rabbit anti-sororin (Peters laboratory ID A953), rat anti-NIPBL (Absea 010702F01) and mouse anti-tubulin (Sigma, T-5168).\n\n### iFRAP\n\nFor live-cell imaging, cells were seeded into LabTek II chambered coverslips (ThermoFisher Scientific) in cell culture medium without riboflavin and phenol red, and cultured at 37\u00b0C and 5% CO2 during imaging. Cells in G1 and G2 phase were identified by nuclear and cytoplasmic distribution of DHB-mKate2 signals, respectively. 1 \u00b5g/ml cycloheximide was added to the imaging medium 1 hr before the imaging to reduce new synthesis of SCC1-mEGFP. Both FRAP and iFRAP experiments were performed using an LSM880 confocal microscope (Carl Zeiss) with a 40\u00a0\u00d7\u00a01.4 NA oil DIC Plan- Apochromat objective (Zeiss). Photobleaching was performed in half of nuclear regions with 2 iterations of 488 nm laser at max intensity after acquisition of two images. Fluorescence was measured in bleached- and unbleached regions followed by background subtraction with 1 min interval. iFRAP curves were normalised to the mean of the pre-bleach fluorescent intensity and to the first image after photobleaching. Curve fitting was performed with single exponential functions f(t)=EXP(-kOff1*t) or double exponential functions f(t)=a*EXP(-kOff1*t)+(1-a)*EXP(-kOff2*t) in R using the minpack.lm package (version 1.2.1). Dynamic and stable residence times were calculated from 1/kOff1 and 1/kOff2 respectively. Double exponential curve fitting was performed under constraint that 1/kOff2 is in range between 1.5 hr and 15 hr. Soluble fractions were estimated by the reduction of fluorescence signals in unbleached area after photobleaching.\n\n### Chromatin immunoprecipitation and Illumina sequencing\n\nCells were synchronised in G1 phase using the same procedure as described for LC-MS. ChIP was performed as described (Wendt et al., 2008). Ten million cells were used for one ChIP experiment. Cells were crosslinked with 1/10 medium volume of X-link solution (11% formaldehyde, 100 mM NaCl, 0.5 mM EGTA, 50 mM Hepes pH 8.0) at room temperature for 10 min and subsequently quenched with 125 mM glycine for 5 min. Cells were washed with PBS and collected by mechanical scraping and pelleted by centrifugation. Cell pellets were lysed in lysis buffer (50 mM Tris-HCl pH 8.0, 10 mM EDTA pH 8.0, 1% SDS, protease inhibitors) on ice for 20 min. The DNA was sonicated for 6 cycles (30 sec on/off) using a Biorupter. Ten volumes of dilution buffer (20 mM Tris-HCl pH 8.0, 2 mM EDTA pH 8.0, 1% Triton X-100, 150 mM NaCl, 1 mM PMSF) was added to the lysate, which was then pre-cleared using 100 \u00b5l Affi-Prep Protein A beads at 4\u00b0C. Immunoprecipitation was performed with rabbit IgG or specific antibody overnight; Affi-Prep Protein A beads were then added for a further 3 hours. Anti-GFP antibody ab290 (Abcam, United Kingdom) was used to immunoprecipitate EGFP-STAG1 and STAG2-EGFP. An antibody raised against peptide CEMAKDFVEDDTTHG, Peters lab antibody ID: k727, was used to immunoprecipitate SMC3. Anti-CTCF antibody 07-729 (Merck, Germany) was used to immunoprecipitate CTCF. Beads were washed twice with Wash buffer 1 (20 mM Tris-HCl pH 8.0, 2 mM EDTA pH 8.0, 1% Triton X-100, 150 mM NaCl, 0.1% SDS, 1 mM PMSF), twice with Wash buffer 2 (20 mM Tris-HCl pH 8.0, 2 mM EDTA pH 8.0, 1% Triton X-100, 500 mM NaCl, 0.1% SDS, 1 mM PMSF), twice with Wash buffer 3 (10 mM Tris-HCl pH 8.0, 2 mM EDTA pH 8.0, 250 mM LiCl, 0.5% NP-40, 0.5% deoxycholate), twice with TE buffer (10 mM Tris-HCl pH 8.0, 1 mM EDTA pH 8.0), and eluted twice with 200 \u00b5l elution buffer (25 mM Tris-HCl pH 7.5, 5 mM EDTA pH 8.0, 0.5% SDS) by shaking at 65\u00b0C for 20 min. The eluates were treated with RNase-A at 37\u00b0C for 1 hour and proteinase K at 65\u00b0C overnight. Addition of 1 \u00b5l glycogen (20 mg/ml) and 1/10th volume sodium acetate (3 M, pH 5.2) was followed by extraction with phenol/chloroform/isoamyl alcohol (25:24:1) and precipitation with ethanol. DNA was resuspended in 100 \u00b5l of H2O, and ChIP efficiency was quantified by quantitative PCR (qPCR). The DNA samples were submitted to Vienna BioCenter Core Facilities for library preparation and Illumina deep sequencing.\n\n### ChIP-seq peak calling and site overlap counting\n\nIllumina sequencing results of ChIPseq experiments were mapped against the human hg19 reference assembly using bowtie2 (bowtie-bio.sourceforge.net/bowtie2/index.shtml); the resulting alignments from two biological replicate experiments for each immunoprecipitation were combined as BAM files using samtools merge (samtools.sourceforge.net/). Peaks were called by MACS 1.4.2 (liulab.dfci.harvard.edu/MACS/) with a P-value threshold of 1e-10 using sample and control inputs. Peak overlaps were calculated by using multovl 1.3 (github.com/aaszodi/multovl). Since occasionally two peaks from one dataset overlap with a single peak in another dataset, the output of such an overlap is displayed as a connected genomic site and counted as one single entry. Consequently, the overall sum of peak counts is reduced when displayed in overlaps.\n\n### LC-MS methods\n\n#### Cell culture\n\nHeLa cells were cultured as previously (Nishiyama et al., 2010). Cells were synchronised in G2 phase by a double thymidine block (24 hr block in 2 mM thymidine, 8 hr release and 16 hr block in 2 mM thymidine) followed by a 6 hr release into G2 phase. Cells were synchronised in Prometaphase by a double thymidine block followed by a 6 hr release and a 4 hr block in Prometaphase using a final concentration of 100 ng/ml nocodazole. Cells were synchronised in G1 phase using the same procedure as described for Prometaphase cells, but after mitotic shake off, cells were washed twice and cultured for a further 6 hr. Cells were counted using a CASY counter (Sch\u00e4rfe, Germany) and cell counts were verified by manual counting.\n\n#### Preparation of soluble and chromatin extracts\n\ntwo \u00d7 107 HeLa cells in G1, G2 and Prometaphase were re-suspended in 0.5 ml lysis buffer (20 mM Hepes pH 7.6, 150 mM NaCl, 10% glycerol, 0.2% NP40, 1 mM NaF, 1 mM sodium butyrate, 1 mM EDTA and 10 \u00b5g/ml (w:v) each of leupeptin, pepstatin and chymostatin) and cells were lysed with 20 strokes using a dounce homogenizer. Chromatin and soluble fractions were separated by centrifugation at 1000 g for 3 min at 4\u00b0C. The soluble supernatant was centrifuged for a further 20 min at 20000 g at 4\u00b0C (soluble extract). The chromatin pellet was washed by resuspension in 1 ml lysis buffer and centrifugation at 1000 g for 3 min at 4\u00b0C. Washing was repeated for a total of 10 times. The chromatin pellet was then re-suspended in 250 \u03bcl nuclease buffer (lysis buffer complimented with a final concentration of 0.04 units/\u03bcl micrococcal nuclease, 0.1 mg/ml RNase A, 20 mM CaCl2 and 0.04 \u03bcl Turbo DNase per \u03bcl nuclease buffer), incubated for 2 hr at 4\u00b0C and for 15 min at 37\u00b0C and finally centrifuged at 20000 g for 5 min (chromatin extract). 90% of soluble and chromatin extracts were used for immunoprecipitation and 10% (corresponding to 2 \u00d7 106 cells) were precipitated using acetone. To compensate for losses during acetone precipitation the protein concentration was measured before and after precipitation using Bradford reagent (on average 17% loss). The protein pellets were resuspended in 1 ml 500 mM tetraethylammonium chloride (TEAB, Fluka) (soluble extract) and 50 \u03bcl 500 mM TEAB (chromatin extract), respectively. Proteolysis of soluble and chromatin total cell extracts was performed using a double digest protocol. After reduction in 1 mM tris(2-carboxyethyl)phosphine (TCEP) at 56\u00b0C for 30 min and alkylation in 2 mM methyl methanethiosulfonate (MMTS, Fluka) for 30 min, proteins were digested with 500 ng LysC per 20 \u03bcl extract (Wako, Richmond, VA) at 37\u00b0C for 4 hr. Proteins were then digested with 500 ng trypsin per 20 \u03bcl extract (MS grade trypsin gold, Promega) for 16 hr at 37\u00b0C.\n\n#### Absolute quantification of cohesin in total cell extracts using SRM on 5500 QTRAP\n\nImmediately before LC-SRM analysis, digested soluble and chromatin cell extracts were labelled with the light version of the mTRAQ reagent according to the manufacturer\u2019s instructions. For quantification in total soluble extracts, 1.5 \u03bcg (experiment 1) and 2 \u03bcg (experiment 2) of HeLa extract were used. The mTRAQ light-labelled extract was spiked with heavy labelled reference peptides (2.5 and 5 fmol for the soluble extract and 10 fmol for the chromatin extract). Samples were then separated on a Dionex Ultimate 3000 RSLCnano-HPLC equipped with a C18 PepMap100 column (75 \u03bcm ID\u00a0\u00d7500 mm length, 3 \u03bcm particle size, 100 \u00c5 pore size) (Dionex, Amsterdam, The Netherlands) using the following gradient of solvents A (2% ACN, 0.1% FA) and B (80% ACN, 10% TFE, 0.08% FA) at a flow rate of 250 nl/min: from 2%B to 40% B over 300 min. The mass spectrometer was operated in scheduled SRM mode with the following parameters: multiple reaction monitoring (MRM) detection window of 360 s, target scan time of 2.5 s, curtain gas of 20, ion source gas 1 of 15, declustering potential of 75, entrance potential of 10. Q1 and Q3 were set to unit resolution. The pause between mass ranges was set to 2.5 ms. Three SRM transitions per peptide were monitored.\n\n#### Immunoprecipitation of cohesin complexes\n\nImmunoprecipitation (IP) was performed as described (Holzmann et al., 2011). In brief, extracts were incubated on a rotary shaker with 30 \u03bcl SCC1 antibody-conjugated beads for 2 hr at 4\u00b0C (antibody raised against peptide FHDFDQPLPDLDDIDVAQQFSLNQSRVEEC; Peters lab antibody ID: A890, k575). Beads were then collected by centrifugation and washed three times with 30 beads volume lysis buffer and three times with 30 beads volume lysis buffer minus detergent and protease inhibitor. Finally, beads were washed once with 30 bead volumes of 5 mM Hepes pH 7.8 and 150 mM NaCl. 10 \u03bcl of beads were used for elution with 0.2 M glycine pH 2.0 and analysed using SDS-PAGE. 20 \u03bcl of beads were re-suspended with 40 \u03bcl 500 mM TEAB and subjected to protease elution essentially as described (Holzmann et al., 2011). Proteolysis was performed using a double digest protocol using LysC and trypsin (Holzmann et al., 2011).\n\n#### Analysis of shotgun proteomics data\n\nFor peptide identification, the RAW-files were loaded into Proteome Discoverer (version 2.1.0.81, Thermo Scientific). All MS/MS spectra were searched using MS Amanda (Search Engine Version 2.2.6.11097) (Dorfer et al., 2014). RAW-files were searched against the human swissprot database (2017-04-02; 20.153 sequences; 11,315.842 residues), using the following search parameters: the peptide mass tolerance was set to 10 ppm and the fragment mass tolerance to 0.8 Da. Trypsin was specified as the proteolytic enzyme, cleaving after lysine and arginine except when followed by proline. The maximal number of missed cleavages was set to 2. Beta-methylthiolation on cysteine was set as fixed and oxidation on methionine was set as variable modification. Proteins were grouped applying a strict parsimony principle and filtered to 1% false discovery rate (FDR) on PSM and protein level using the Percolator algorithm (K\u00e4ll et al., 2007) as integrated in Proteome Discoverer. Proteins identified by a single spectra were removed. In all six samples combined (soluble and chromatin-bound cohesin from cells in G1, G2 and prometaphase), we identified 377 and 265 different proteins in two independent experiments (Figure 1\u2014source data 1). In both experiments, core cohesin subunits were among the 14 most abundant proteins identified according to the number of peptide spectrum matches.\n\n#### Absolute quantification of purified cohesin using SRM on 5500 QTRAP\n\nImmediately before LC-SRM analysis, digested cohesin was labelled with the light version of the mTRAQ reagent according to the manufacturer\u2019s instructions. Labelling efficiency was checked by LC-MS experiments on Orbitrap and found to be\u00a0>98%. mTRAQ light-labelled cohesin was spiked with 10 fmol (biological experiment 1) and 15 fmol (biological experiment 2), respectively of mTRAQ heavy labelled reference peptides. Preparation of heavy reference peptides was performed essentially as described (Holzmann et al., 2011), but peptide EQLSAER was replaced by ELAETEPK. To remove excess of 2-propanol samples were concentrated in a Speed Vac for 10 min to a final volume of approximately 25% of the starting volume and re-diluted with 0.1% trifluoroacetic acid (TFA, Pierce). Samples were then separated on a Dionex Ultimate 3000 RSLCnano-HPLC equipped with a C18 PepMap100 column (75 \u03bcm ID\u00a0\u00d7500 mm length, 3 \u03bcm particle size, 100 \u00c5 pore size) (Dionex, Amsterdam, The Netherlands) using the following gradient of solvents A (2% ACN, 0.1% FA) and B (80% ACN, 10% TFE, 0.08% FA) at a flow rate of 250 nl/min: from 2%B to 40% B over 120 min. Peptides eluting from the nanoLC were analysed on a 5500 QTRAP instrument (ABSCIEX, Foster City, CA) equipped with a nano-electrospray source with an applied voltage of 2.3 kV. The mass spectrometer was operated in scheduled SRM mode with the following parameters: MRM detection window of 180 s, target scan time of 1.5 s, curtain gas of 20, ion source gas 1 of 15, declustering potential of 75, entrance potential of 10. Q1 and Q3 were set to unit resolution. Pause between mass ranges was set to 2.5 ms. Three SRM transitions per peptide (Appendix 1\u2014table 1) were selected and optimised for collision energy by direct infusion of heavy reference peptides. Collision cell exit potentials (CXP) were calculated by dividing Q3 mass by a factor of 29.\n\n#### SRM data analysis\n\nSRM data were analysed in Skyline (version 2.5.0.6157). Peptides were quantified based on the height of the elution apex to prevent incomplete quantification due to partially covered elution peaks within the scheduled measurements. Transitions were manually reviewed, and low-quality transitions retracted from subsequent quantification. Soluble SMC1 quantification was not possible since the single SMC1 peptide was filtered out during analysis. Quantitative results were further analysed in R (version 3.4.3).\n\n### FCS methods\n\n#### Cell culture\n\nHeLa Kyoto (HK) cells (RRID: CVCL_1922) were a gift from S. Narumiya (Kyoto University, Kyoto, Japan [Landry et al., 2013]) and grown in 1x high-glucose DMEM (Thermo Fisher Scientific; #41965039) supplemented with 10% (v/v) FBS (Thermo Fisher Scientific; #10270106; qualified, European Union approved, and South American origin), 1 mM sodium pyruvate (Thermo Fisher Scientific; #11360070), 2 mM L-glutamine (Thermo Fisher Scientific; #25030081) and 100 U/mL penicillin-streptomycin (Thermo Fisher Scientific; #15140122) at 37\u00b0C and 5% CO2 in 10 cm cell culture dishes (Thermo Fisher Scientific). Cells were passaged every two to three days by trypsinization using 0.05% Trypsin-EDTA (Thermo Fisher Scientific; #25300054) at a confluency of 70\u201390%.\n\n#### Generation of stably expressing H2B-mCherry cells\n\nTo generate cells stably expressing H2B-mCherry as DNA marker, cells were transfected with a plasmid encoding H2B-mCherry. In brief, 2 \u00b5g of pH2B-mCherry plasmid DNA was incubated with 200 \u00b5L of jetPRIME buffer and 4 \u00b5L of jetPRIME (Polyplus Transfection; #114\u201307) for 15 min before addition to cells grown to 80% confluency in one well of a Nunc 6-well plate (Thermo Fisher Scientific; #140685) containing 2 mL of complete cell culture medium. After 4 hr the transfection mix was changed to complete cell culture medium. Cells stably expressing H2B-mCherry were selected with 0.5 \u00b5g/mL puromycin (InvivoGen; #ant-pr-1).\n\n#### Cell preparation for FCS experiments\n\nFor each FCS experiment, HK wild-type (WT) cells were seeded together with HK cells homozygously expressing the EGFP-tagged protein of interest (POI) into individual wells of a Nunc 6-well plate (Thermo Fisher Scientific; #140685) at a concentration of 2 \u00d7 105 cells per well and grown overnight in a cell culture incubator. Alternatively, HK WT cells stably expressing H2B-mCherry (Neumann et al., 2010) were seeded together with genome-edited cell lines additionally expressing H2B-mCherry. On the next morning, 2 mM thymidine (Sigma-Aldrich; #T1895) in complete cell culture medium was added per well to arrest cells at the G1/S boundary. After 24 hr the thymidine block was released by washing the cells three times with pre-warmed D-PBS. Directly after release from the G1/S block, cells were trypsinized and 8 \u00d7 103 to 2 \u00d7 104 cells were seeded into individual wells of a 96-well glass bottom plate (zell-kontakt; #5241\u201320) or a Nunc 8-well LabTek #1.0 chambered coverglass (Thermo Fisher Scientific; #155411). HK WT cells in one well were transiently transfected with a plasmid encoding free mEGFP (pmEGFP-C1; Addgene plasmid #54759, kindly provided by J Lippincott-Schwartz) using FuGENE6 Transfection Reagent (Promega; #E2693) according to the manufacturer\u2019s instructions, while HK WT cells in another well remained untransfected. 8 hr after release from the first G1/S block, 2 mM thymidine in complete cell culture medium was added per well. After 16 h cells were released from the second thymidine block as described before by washing with D-PBS and adding complete cell culture medium.\n\nFCS measurements of cells in G2 and G1 phases were performed in the same experiment at time windows 6\u20139 hr and 14\u201320 hr, respectively, after release from double thymidine arrest. In preparation for G2/G1 phase experiments, cells were washed with D-PBS and 350 \u00b5L imaging medium (CO2-independent imaging medium without phenol red; custom order based on #18045070 from Thermo Fisher Scientific; supplemented with 20% v/v FBS (Thermo Fisher Scientific; #10270106; qualified, European Union approved, and South American origin), 1 mM sodium pyruvate (Thermo Fisher Scientific; #11360070) and 2 mM L-glutamine (Thermo Fisher Scientific; #25030081)) was added per well. For cells not expressing H2B-mCherry as DNA marker, the imaging medium contained 50 nM SiR-DNA (Spirochrome; #SC007; [Lukinavi\u010dius et al., 2015]).\n\nFor FCS experiments of prometaphase cells, 6 hr after release from double thymidine arrest, the complete cell culture medium was changed to imaging medium as described for G2/G1 experiments and additionally supplemented with 330 nM nocodazole (Sigma-Aldrich; #SML1665). FCS measurements of cells in prometaphase arrest were performed 2\u201315 hr after addition of nocodazole.\n\n### FCS measurements\n\nFCS measurements and fluorescence images were recorded on a Zeiss LSM780, Confocor3, laser scanning microscope equipped with a fluorescence correlation setup and a temperature control chamber. Imaging was performed at 37\u00b0C and using a C-Apochromat UV-visible-IR 40X/1.2-NA water objective lens (Zeiss). Data acquisition was performed either manually or with an automatic workflow by using ZEN 2012 Black software (Zeiss) and the software described in Politi et al. (2018). An in-house-designed objective cap and a water pump enabled automatic water immersion during data acquisition.\n\nThe effective confocal volume was determined using a 50 nM fluorescent dye solution containing an equimolar mix of Alexa Fluor 488 (Thermo Fisher Scientific; #A20000) and Alexa Fluor 568 (Thermo Fisher Scientific; #A20003). The dye solution was excited with the 488 nm laser (laser at 0.6% excitation (exc.) power) and the 561 nm laser (laser at 0.15% exc. power) and photon counts were recorded for 30 s and six repetitions using two avalanche photodiode detectors (APD). The band pass filters (BPs) were set to 505\u2013540 nm and 600\u2013650 nm, respectively. For FCS measurements of cells homozygously expressing EGFP-tagged POIs, photon counts were recorded from three points in the nucleus/chromatin and 2\u20133 points in the cytoplasm using the 488 nm laser with an exc. power between 0.6% and 1% depending on the protein expression level. Each FCS measurement lasted 30 s and only one repetition was performed per FCS point. To determine background fluorescence intensities and photon counts, FCS measurements of HK WT cells were performed. Similarly, in order to determine the count per molecule (CPM) of free EGFP, FCS measurements of HK WT cells expressing freely diffusing EGFP were conducted. These FCS measurements were taken manually at one point both in the nucleus/chromatin and the cytoplasm for 30 s each by using the same laser settings as described above for the EGFP-tagged POIs. An image indicating the FCS positions inside a cell was acquired before starting the FCS measurements. When data were acquired with the automatic workflow (30/34 data sets), a 3D image-stack was acquired at the end of the FCS-measurements for estimating the nuclear/chromatin volume.\n\n### FCS analysis\n\nBased on visual inspection of the images indicating the FCS positions, cells not corresponding to the desired cell cycle stage, dead cells and FCS points outside the cell or in the wrong subcellular compartment were excluded. From the remaining measurements, the autocorrelation function (ACF), a fit to a two-component diffusion model, and protein concentrations were determined (Politi et al., 2018). For several cell lines, the POI-EGFP concentration in the cytoplasm of interphase cells was so low that the recorded photon counts were close to background noise impairing a reliable estimation of the ACF. To account for this, only FCS measurements for which the fits fulfilled following conditions R2\u00a0>0.92, \u03c72/N\u00a0<\u00a01.2 (N number of ACF time points) were included (~60% of the data). Further outliers were removed based on Tukey\u2019s fences of 3 times the interquartile range of CPMs and CPMs below 10 times the mean CPMs measured for mEGFP-C1. The last quality control left on average 59% of the total data.\n\nThe number of molecules listed in Table 2 was estimated from the protein concentrations measured by FCS multiplied by the volumes of the respective compartments and the Avogadro\u2019s constant. For each cell, the nucleus/chromatin volume $V_{nuc}$ was obtained from the segmented chromatin signal of the 3D image-stack acquired at the end of the FCS measurement (Walther et al., 2018). In case of failed segmentation or lack of 3D images (<20% of the cases) the average volume for the specific cell-line and stage has been used. The cytoplasmic volume was calculated from $V_{cyt}=V_{cell}-V_{nuc}\u2248V_{nuc}(V_{r}-1)$ where we assume that the ratio of cell to nucleus/chromatin volume $V_{r}=V_{cell}/V_{nuc}$ is constant for a specific cell stage. The following ratios were used: G2/G1-phase\u00a0$V_{r}=3.04$; Prometaphase\u00a0$V_{r}=5.72$. The volume ratio values were obtained from 3D time-lapse imaging data of HK cell lines (Cai et al., 2018; Walther et al., 2018). These time-lapse imaging data sets include cellular volumes for mitotic stages from prophase, prometaphase up to cytokinesis from over 600 cells. Prophase (mitotic standard phase 1) volumes were used as a proxy for G2 volumes. Prometaphase volumes (mitotic standard phase 5, 6, 7) were used for the volumes of nocodazole-arrested prometaphase cells.\n\nBootstrapping was used to compute statistics of the ratios between FCS measurements and data from LC-MS or from Cai et al. (2018) (Appendix 1\u2014table 4, Appendix 1\u2014table 5). For this, we sampled with replacement the measurements of two methods to compute 100,000 pairs. For each of these bootstrapped pair we compute the ratio. From the distribution of the ratios, we finally calculated the medians and 68% distribution intervals.\n\nWhereas LC-MS measurements represent the average of a potentially diverse population of Hela cells, FCS-measurements rely on monoclonal populations of EGFP-tagged Hela cell lines. It is therefore possible that clonal variability (Walther et al., 2018) could contribute to the differences between our LC-MS and FCS measurements. FCS only measures fluorescent molecules, thus any protein in which the fluorophore is not visible, for\u00a0example due to photobleaching or slow maturation, will not be detected. Also, FCS cannot detect completely immobile molecules, although it can detect local fluctuations of chromatin-bound molecules, which may arise either by movement of the chromatin itself or by diffusion of molecules along chromatin. We corrected for the presence of a non-diffusible pool by accounting for photobleaching (Wachsmuth et al., 2015; Politi et al., 2018), however it remains possible that our FCS measurements underestimated the number of chromatin-bound molecules.\n\n### Mathematical modelling of cohesin dynamics in G1 and G2\n\nThe absolute copy number of nuclear cohesin CT is the algebraic sum of the copy number of unbound (U), dynamically-bound (D) and stably bound (S) cohesin forms:\n\n$$\nC_{T}=U+D+S=U+B_{T}\n$$\n\nwhere BT represents the sum of all chromatin-bound cohesin complexes. Assuming that the rates of chromatin binding and unbinding are balanced:\n\n$$\nk_{on}\u2219U=k_{off}\u2219D\n$$\n\nwhere the k\u2019s refer to the first order rate constants (with a dimension of time\u22121) of individual steps in the mechanism. Using the definitions of U = CT \u2013 BT and D = BT \u2013 S:\n\n$$\nk_{on}C_{T}-B_{T}=k_{off}\u2219B_{T}-S\n$$\n\nthe expression for BT:\n\n$$\nB_{T}=\\frac{k_{on}}{k_{on}+k_{off}}C_{T}+\\frac{k_{off}}{k_{on}+k_{off}}S\n$$\n\nwhich is convenient to normalise to total cohesin level (CT):\n\n$$\nb_{T}=\\frac{k_{on}}{k_{on}+k_{off}}+\\frac{k_{off}}{k_{on}+k_{off}}s\n$$\n\nby introducing the fraction of total (bT\u00a0=\u00a0BT/CT) and stable (s\u00a0=\u00a0S/CT) bound cohesin complexes. This equation tells us that stabilisation of cohesin on chromatin will lead to an increase of the chromatin-bound fraction. Furthermore, the increase of the chromatin-bound fraction (bT) becomes a linear function of the stable fraction (s) if the kinetic parameters (kon and koff) are constant, that\u00a0is they are not influenced by the stabilisation of a fraction of cohesin on the chromatin. The linear relationship between the chromatin-bound (bT) and stable (s) fractions has a slope of $\\frac{k_{off}}{k_{on}+k_{off}}$ with an intercept of\u00a0$\\frac{k_{on}}{k_{on}+k_{off}}$. Notice that the sum of the slope and the intercept equals to one.\n\nEquation 5 allows us to plot the equilibrium distribution of different cohesin forms as a function of the stable fraction (s) (Figure 4B). The diagonal red line represents the fraction of the stable form (s) with a slope of one. Since bT\u00a0=\u00a0d\u00a0+\u00a0 s, the difference between the chromatin-bound (bT) and stable (s) forms is the dynamic (d) form. The value of the unbound form (u) is given by the difference between the bT line (Equation 5) and one.\n\nCells in G1 phase do not have any stable cohesin (s\u00a0=\u00a00), therefore their bound-chromatin fraction (bT\u00a0=\u00a00.635) defines the intercept of Equation 5 (Figure 4B,G1 black circle). Since the slope is (1 \u2013 intercept) which is equivalent to the fraction of unbound cohesin in G1 (0.365), Equation 5 has the following parametric form:\n\n$$\nb_{T}=0.635+0.365\u2219s\n$$\n\nThe experimentally derived fraction of stable cohesin (s) in G2 phase cells is 0.367 (Figure 3C). According to Equation 6, at s\u00a0=\u00a00.367 the chromatin-bound fraction (bT) should have a value of 0.769 (=0.635\u00a0+\u00a00.365*0.367) (Figure 4B,G2 black circle), consistent with the experimentally estimated value of 0.728 (Figure 3C).\n",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "adf29c72-d96b-493d-a614-f90c3c6a4dcb",
+      "submission_id": "35c14c67-d255-4dbd-bfff-14e736ba1b31",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David J Sherratt, University of Oxford United Kingdom\n\nReviewers:\n- David J Sherratt, University of Oxford United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.46269.032](https://doi.org/10.7554/eLife.46269.032)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Absolute quantification of cohesin, CTCF and their regulators in human cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including David J Sherratt as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Kevin Struhl as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe are unanimous in recommending publication of your paper (along with the complementary paper of Cattoglio and colleagues) after minor revisions that attend to the points below are addressed.\n\nThe manuscript focuses on the absolute quantification of protein copy numbers of cohesin complex components in human cells. This information is fundamental in the genome organization field, as it allows to set some constraints to models that have been previously proposed for the role of this complex in determining chromosome folding in topologically associated domains and in chromatin loops. The copy-number of cohesin subunits measured by the authors at different cell cycle stages, using two orthogonal approaches, mass spectrometry and fluorescence correlation spectroscopy are in reasonable agreement with each other. Similarly, to what is proposed in Cattoglio et al., the conclusions of the authors point to a model in which not all of the possible cohesin binding sites in the mammalian genome are simultaneously occupied in a single cell. A significant implication of these numbers is that cohesin is likely to frequently pass CTCF sites when these are unoccupied by CTCF.\n\nEssential revisions:\n\n1) Differences in copy number estimates between LC-MS and FCS need to be discussed more fully. If ones looks at the total copy number of cohesin measured by the two techniques (that is chromatin bound + soluble for MS, and nuclear + cytosolic for FCS), FCS seems to provide a lower estimate for all of the tested conditions (except one: STAG2 in G1). In some cases the FCS estimate is around half the MS estimate. I think that the authors should try to explain this potential discrepancy. One potential bias in FCS is related to the potential homo-oligomerization state of cohesin subunits while they diffuse in the nucleus of the cell. This is due to the fact that the G(0) of the FCS curve measures the concentration as the ratio of the average intensity in the observation volume divided by the fluctuation in fluorescence brought by one diffuser moving in and out of the focal volume. If some of the diffusers are dimeric (and carry two fluorescent tags), this might lead to an underestimation of the monomer concentration. I am not expert in cohesin, but I understand that the possibility of cohesin subunits to homo-dimerize in mammals is debated. However, it would be nice if the authors could exclude that their FCS data captures some homo-oligomers. This could probably be done by analyzing the first- and second- moment of their fluorescence fluctuations, as it is done in the Number and Brightness (N&B) approach (Digman et al., Biophys J, 2008). Also, it would be helpful if the authors could comment on the impact of a large fraction of stably bound molecules on the concentration estimates by FCS. My understanding is that both mobile and immobile molecules would contribute to the measured concentration, but this needs to be explicitly mentioned in the text: it is a little counterintuitive how FCS can provide information about total concentration (immobile + mobile), since the technique relies on measuring the fluctuations of intensity brought by mobile molecules only.\n\n2) From the data in Figure 1\u2014figure supplement 4, it is difficult to conclude that the stoichiometry of cohesin subunits is different in the different phases of the cell cycle. At minimum the authors should try to test statistically (within a certain interval of confidence) that their data is incompatible with the stoichiometry 1:1:1:0.75 in G2. At the moment the data seems to be compatible with both the monomeric ring model and with the handcuffs model.\n\n3) The \"Modeling\" section. The scheme of the kinetic reaction in Figure 4A seems to imply that the stable binding of cohesion occurs through an intermediate dynamic binding event. However, another possibility is that the stable binding events are independent (and competing) with the dynamic events, therefore controlled by a second set of kinetic rates. Equation 2 should still be valid in this case (as it can be derived from the steady state of the D population), as well as all the other equations, so their theory should hold also in the case of competitive binding between stable and dynamic events. Nevertheless, the authors could mention this possibility. Also, the main text describing this part is not very clear. The authors mention that the mathematical modelling is performed \"to test whether an increase in cohesin's residence time is sufficient to explain the change in the number of chromatin-bound cohesin complexes, or other alterations in cohesin dynamics might also contribute\", but the authors do not mention what these other alterations refer to. To one reviewer, the mathematical modelling simply determines that the observed increase in bound fraction in G2 is entirely due to the appearance of a more stable binding state on DNA in this phase. Finally, the scheme in Figure 4B is not explained with sufficient detail. I assume that the red line is s, and the grey line is bt, that the upper black dots are the total bound fraction measured in G1 and G2, while the bottom black dots are the measurements for s in G1 and G2, but a more detailed description should be added to the figure legend.\n\n4) In Figure 3 and Figure 3\u2014figure supplement 1 the authors show FRAP experiments for SCC1. The example shown for G1 is not very convincing. It seems that the lower part of the nucleus is not fully bleached, and also that this cell is a bit out of focus. Figure 3\u2014figure supplement 1G shows the reduction in signal in the unbleached area between pre-bleach and post-bleach. A difference could also occur due to non-specific photobleaching of the whole frame. It would therefore be good to include the difference in intensity pre- and post-bleach for a control cell from the same frame.\n\n5) Could the authors explain why SMC1 is not quantified in the soluble fraction of the LC-MS experiments? Is this due to the use of only one reference peptide for SMC1?\n\n6) The authors measure the stoichiometry of cohesin complexes by pulling on one subunit and measuring the abundance of the other subunits. As the composition of the complex is 1:1:1:1 in G2, they conclude that the 'handcuff model' in which one STAG subunit bridges two complexes after DNA replication is unlikely to be correct. I agree, but in all fairness this particular handcuff model made no sense from the start anyway. These results however do not rule out the existence of cohesin dimers of full complexes. Such a 2:2:2:2 stoichiometry is hard to distinguish from 1:1:1:1, which could be mentioned in the text. This is of particular interest as cohesin dimers have been proposed to play a role in loop formation, and also as the co-submitted Cattoglio paper does indeed observe dimers/multimers.\n\n7) Supplementary Figure 7 shows the ChIP data for cohesin subunits and CTCF. It could be nice to move this figure to the main figures and to then include a schematic depiction of the implications for the abundance of cohesin and CTCF on chromatin in single cells.\n\n8) The two slightly different green colours in Figure 2 are noteasy to distinguish for the reader. Perhaps one of these colours could be changed into something more distinct into something more distinct.\n\n9) One reviewer thought that a final schematic summarizing the results in cartoons representing cells in G1/S etc. with some sort of simply visual representation of the relative numbers/classes of the analyzed molecules would be helpful to the general reader.\n",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a9a7b76d-183a-4dc5-948d-621c6f2ae89c",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C1",
+      "claim": "TADs and many loops are formed by cohesin and positioned by CTCF.",
+      "claim_type": "EXPLICIT",
+      "source": "TADs and many loops are formed by cohesin and positioned by CTCF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific understanding about the roles of cohesin and CTCF in chromatin organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "7cf5e612-e93b-4630-872c-7bc09a65f0ae",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C2",
+      "claim": "In proliferating cells, cohesin mediates sister chromatid cohesion, which is essential for chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "In proliferating cells, cohesin also mediates sister chromatid cohesion, which is essential for chromosome segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cohesin's role in cell division.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "88d6f963-7b7b-41ab-a970-6abf88b797a3",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C3",
+      "claim": "In G1-phase, there are ~250,000 nuclear cohesin complexes in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In G1-phase, there are ~250,000 nuclear cohesin complexes, of which ~ 160,000 are chromatin-bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements using mass spectrometry and fluorescence-correlation spectroscopy as described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "3bdf4e2b-e8e6-4154-b163-2c470b9aaa1e",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C4",
+      "claim": "In G1-phase, ~160,000 cohesin complexes are chromatin-bound in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In G1-phase, there are ~250,000 nuclear cohesin complexes, of which ~ 160,000 are chromatin-bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements combining FCS and FRAP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "4d475e0a-d5a8-4310-ac8e-9c92468b676e",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C5",
+      "claim": "Some genomic cohesin and CTCF enrichment sites are unoccupied in single cells at any one time.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison with chromatin immunoprecipitation-sequencing data implies that some genomic cohesin and CTCF enrichment sites are unoccupied in single cells at any one time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from comparing absolute copy numbers with ChIP-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "a2fab6fd-003a-4c0f-a030-6b0e42c2ea85",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C6",
+      "claim": "Cohesin complexes are required for the formation of chromatin loops and TADs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin complexes are not only required for the formation of chromatin loops and TADs (Gassler et al., 2017; Rao et al., 2017; Schwarzer et al., 2017; Wutz et al., 2017), but also for sister chromatid cohesion, a prerequisite for chromosome segregation in mitosis and meiosis (reviewed in Morales and Losada, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "da779270-334a-42eb-b110-619305601ce7",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C7",
+      "claim": "Cohesin is enriched at specific positions genome-wide, most of which are also associated with CTCF.",
+      "claim_type": "EXPLICIT",
+      "source": "In interphase, cohesin is enriched at specific positions genome-wide, most of which are also associated with CCCTC-binding factor (CTCF) (Parelho et al., 2008; Wendt et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "43b9f0c8-c241-4714-acbf-794e39928a99",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C8",
+      "claim": "CTCF consensus binding sites are frequently oriented convergently at TAD borders.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF consensus binding sites are frequently oriented convergently at TAD borders (Rao et al., 2014; de Wit et al., 2015; Guo et al., 2015; Vietri Rudan et al., 2015) and depletion of CTCF leads to a reduction in insulation between TADs (Nora et al., 2017; Wutz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "a234bf06-4c52-4fec-b993-487616fa90cc",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C9",
+      "claim": "Depletion of CTCF leads to a reduction in insulation between TADs.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF consensus binding sites are frequently oriented convergently at TAD borders (Rao et al., 2014; de Wit et al., 2015; Guo et al., 2015; Vietri Rudan et al., 2015) and depletion of CTCF leads to a reduction in insulation between TADs (Nora et al., 2017; Wutz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "04ec16f4-92de-4922-ae1b-6b8851cba8c2",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C10",
+      "claim": "Cohesin acts by extruding loops of DNA until it encounters convergently-oriented CTCF sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism by which cohesin and CTCF contribute to the generation of TADs is unknown, but it has been proposed that cohesin acts by extruding loops of DNA until it encounters convergently-oriented CTCF sites (Sanborn et al., 2015; Fudenberg et al., 2016), thus generating long-range interactions by tethering distal regions of the same chromosome together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model cited from previous studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "c96ef4ca-6cc3-46a2-b8ba-edab4e6d2233",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C11",
+      "claim": "Cohesin is a ring-shaped protein complex composed of four core subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin is a ring-shaped protein complex composed of four core subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cohesin structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "67f2e5c7-6768-4b57-81af-6ff7aee09ef7",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C12",
+      "claim": "The subunits SMC1, SMC3 and SCC1 form a tripartite ring structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The subunits SMC1, SMC3 and SCC1 (also called Rad21 or Mcd1) form a tripartite ring structure and associate via SCC1 with a fourth subunit, which exists in two isoforms in mammalian somatic cells termed STAG1 and STAG2 (also known as SA1 and SA2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cohesin structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "5b22aac8-8250-4f51-868d-f02b188c8c65",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C13",
+      "claim": "The fourth cohesin subunit exists in two isoforms in mammalian somatic cells termed STAG1 and STAG2.",
+      "claim_type": "EXPLICIT",
+      "source": "The subunits SMC1, SMC3 and SCC1 (also called Rad21 or Mcd1) form a tripartite ring structure and associate via SCC1 with a fourth subunit, which exists in two isoforms in mammalian somatic cells termed STAG1 and STAG2 (also known as SA1 and SA2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cohesin composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "f9d54990-474a-4680-9093-8c68a1b1b580",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C14",
+      "claim": "Recruitment of cohesin to chromatin in vivo depends on NIPBL and its binding partner MAU2.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment of cohesin to chromatin in vivo depends on NIPBL and its binding partner MAU2 (Ciosk et al., 2000; Gillespie and Hirano, 2004; Takahashi et al., 2004; Watrin et al., 2006; Schwarzer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "74211242-23cf-4be6-82ed-39672ab8274c",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C15",
+      "claim": "NIPBL stimulates cohesin's ATPase activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "NIPBL also stimulates cohesin's ATPase activity in vitro, an activity thought to be essential for loading of cohesin onto DNA (Arumugam et al., 2003; Weitzer et al., 2003; Hu et al., 2011; Ladurner et al., 2014; Murayama and Uhlmann, 2014; Petela et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "e40c4dab-c050-49d9-a45b-e8b63b92495a",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C16",
+      "claim": "WAPL is required for cohesin's release from chromatin in interphase and prophase.",
+      "claim_type": "EXPLICIT",
+      "source": "WAPL, on the other hand, is required for cohesin's release from chromatin in interphase and prophase, presumably via opening of the cohesin ring (Gandhi et al., 2006; Kueng et al., 2006; Chan et al., 2012; Buheitel and Stemmann, 2013; Eichinger et al., 2013; Tedeschi et al., 2013; Huis in 't Veld et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "af55547e-7674-4d03-9ff7-e5b288c22ad8",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C17",
+      "claim": "Upon experimental depletion of WAPL in interphase cells, cohesin relocalises to axial elements termed vermicelli.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon experimental depletion of WAPL in interphase cells, cohesin relocalises to axial elements termed vermicelli (Tedeschi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "312ada8a-6a4f-4cce-8679-5bd501f2cfa8",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C18",
+      "claim": "Sororin is essential for maintaining sister chromatid cohesion in the presence of WAPL.",
+      "claim_type": "EXPLICIT",
+      "source": "In S and G2 phase of the cell cycle, those cohesin complexes that mediate cohesion are protected from WAPL's releasing activity by the protein sororin, which is essential for maintaining sister chromatid cohesion (Rankin et al., 2005; Schmitz et al., 2007) in the presence of WAPL (Nishiyama et al., 2010; Ladurner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "04c5bd89-a0ba-4494-a249-bf86c011dd5d",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C19",
+      "claim": "Chromosome organisation is variable from cell to cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The few studies that used Hi-C to investigate the genome organisation of single cells have found that chromosome organisation is variable from cell to cell (Nagano et al., 2013; Flyamer et al., 2017; Gassler et al., 2017; Nagano et al., 2017; Stevens et al., 2017), raising the possibility that TADs might be the product of ongoing loop extrusion events that occur stochastically and are detectable only when averaging across a cell population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous single-cell Hi-C studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "d7c0a701-d212-4e04-a872-4435a72d7584",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C20",
+      "claim": "TADs might be the product of ongoing loop extrusion events that occur stochastically and are detectable only when averaging across a cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "The few studies that used Hi-C to investigate the genome organisation of single cells have found that chromosome organisation is variable from cell to cell (Nagano et al., 2013; Flyamer et al., 2017; Gassler et al., 2017; Nagano et al., 2017; Stevens et al., 2017), raising the possibility that TADs might be the product of ongoing loop extrusion events that occur stochastically and are detectable only when averaging across a cell population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of single-cell Hi-C data.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "0fdccc8f-3cb5-4cd1-8d99-2be51ab72e71",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C21",
+      "claim": "The cohesin subunits SMC3 and SCC1 were present in approximately 417,000 and 350,000 copies per G1 cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we found that the cohesin subunits SMC3 and SCC1 were present in approximately 417,000 and 350,000 copies per G1 cell (Figure 1, see Table 1 for exact values and Figure 1\u2014figure supplement 2 for individual peptide counts).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LC-MS quantification data shown in Figure 1 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "2aae780e-45c6-4256-88f1-a588b8dd807c",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C22",
+      "claim": "Between 61,000 and 69,000 copies of SMC1, SMC3 and SCC1 were detectable on chromatin in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, consistent with a 1:1:1 stoichiometry of these subunits on chromatin, between 61,000 and 69,000 copies of SMC1, SMC3 and SCC1 were detectable on chromatin in G1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by LC-MS quantification data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "7657c601-8314-4693-bcec-ab7b78fa7129",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C23",
+      "claim": "Around 15,000 copies of chromatin-bound STAG1 and 45,000 copies of STAG2 were detected in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected around 15,000 copies of chromatin-bound STAG1 and 45,000 copies of STAG2 in G1, suggesting that cohesin-STAG2 is present in approximately three-fold excess over cohesin-STAG1 on chromatin in HeLa cells in G1; this ratio increased to 4.6-fold in G2 and decreased to 2.9-fold in prometaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by LC-MS quantification data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "10c26a36-20c7-4564-9963-483792512dd2",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C24",
+      "claim": "Cohesin-STAG2 is present in approximately three-fold excess over cohesin-STAG1 on chromatin in HeLa cells in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected around 15,000 copies of chromatin-bound STAG1 and 45,000 copies of STAG2 in G1, suggesting that cohesin-STAG2 is present in approximately three-fold excess over cohesin-STAG1 on chromatin in HeLa cells in G1; this ratio increased to 4.6-fold in G2 and decreased to 2.9-fold in prometaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the measured copy numbers of STAG1 and STAG2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "46f903e1-1b21-43ee-b154-7cc38baa4c64",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C25",
+      "claim": "Between 60,000 and 70,000 cohesin complexes exist in chromatin fractions isolated by differential centrifugation from HeLa cells in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined total of STAG1 and STAG2 on chromatin was 60,000; taken together this suggests that, on average, between 60,000 and 70,000 cohesin complexes exist in chromatin fractions isolated by differential centrifugation from HeLa cells in G1 phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the measured copy numbers of cohesin subunits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "b48c6aa6-1ed5-4685-9512-3f37b8cedad9",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C26",
+      "claim": "The stoichiometry of cohesin remains close to 1:1:1:1 in G1, G2 and prometaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the stoichiometry of cohesin remains close to 1:1:1:1 in G1, G2 and prometaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunoprecipitation and LC-MS data shown in Figure 1\u2014figure supplements 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "9c99160d-075d-46ff-b48e-2174d262f13c",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C27",
+      "claim": "The experiments are consistent with the monomeric ring model for cohesion establishment.",
+      "claim_type": "EXPLICIT",
+      "source": "Since this is likely to be an underestimation of the true STAG1/2:SCC1 ratio, our experiments are consistent with the monomeric ring model for cohesion establishment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the stoichiometry data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "63f8176b-129e-483c-b34b-6bff2e90d2fa",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C28",
+      "claim": "The G1 concentrations of SCC1 and STAG2 in the nucleus were measured to have a median of 330 nM and 280 nM, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The G1 concentrations of SCC1 and STAG2 in the nucleus were measured to have a median of 330 nM and 280 nM, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by FCS measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "6cc7e33a-8da8-43ba-a254-3cf9f6653162",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C29",
+      "claim": "The concentration of nuclear STAG1 was around 70 nM in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our LC-MS data, the concentration of nuclear STAG1 was lower, at around 70 nM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by FCS measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "2cadd663-0445-43be-9829-aa2d9f568776",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C30",
+      "claim": "Most cohesin complexes and cohesin regulators exist as monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "The counts per molecule (CPM) in all our EGFP-tagged cell lines was similar to that of mEGFP, indicating that most cohesin complexes and cohesin regulators exist as monomers (the mean of the median protein of interest: free mEGFP CPM ratios was 1 \u00b1 0.3, Appendix 1\u2014table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from FCS measurements comparing CPM values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "535c073d-8f87-4768-9b6d-25403ef2aa54",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C31",
+      "claim": "Approximately 260,000 copies of SCC1-mEGFP, 50,000 copies of STAG1-EGFP and 240,000 copies of STAG2-EGFP exist per G1 cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we estimated that approximately 260,000 copies of SCC1-mEGFP, 50,000 copies of STAG1-EGFP and 240,000 copies of STAG2-EGFP exist per G1 cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on FCS measurements converted to absolute copy numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "330d7a5f-4b58-43b8-95c9-93e8ec0128ba",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C32",
+      "claim": "The two orthogonal methods (LC-MS and FCS) agree to within an average factor of 1.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Using bootstrapping, we estimated that the two orthogonal methods agree to within an average factor of 1.5, and that a ratio of one, that is equal protein numbers for the two methods, was within 68% of the error for 6 out of 9 conditions (Appendix 1\u2014table 5, see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis comparing LC-MS and FCS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "6557bbb3-38ff-4c00-8d54-1c4d2f5c3654",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C33",
+      "claim": "The total copy number of cohesin subunits increased in G2 cells compared to G1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As also observed in the LC-MS dataset, the total copy number of cohesin subunits increased in G2 cells compared to G1 cells (Tables 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by both LC-MS and FCS data shown in Tables 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "d00f2530-e81d-4bfb-a183-c7b1d17861cb",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C34",
+      "claim": "The intracellular concentration of cohesin was maintained in G2 despite the increase in total copy number, since the volume of G2 cells also increased.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular concentration of cohesin was maintained in G2 despite this increase in total copy number, since the volume of G2 cells also increased (Figure 2, Table 2, Appendix 1\u2014table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from FCS concentration measurements and cell volume measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "0a8860f9-0958-4c4b-9105-63b2a8af7d0c",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C35",
+      "claim": "NIPBL, WAPL, sororin and CTCF were all sub-stoichiometric relative to SCC1 in G1 and G2 HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that NIPBL, WAPL, sororin and CTCF were all sub-stoichiometric relative to SCC1 in G1 and G2 HeLa cells, although the 68% distribution intervals for nuclear SCC1 and NIPBL overlapped in G1 (Figure 2B and Appendix 1\u2014table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCS measurements shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "8a2ba8a0-121e-4e01-a97c-e5123c0add53",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C36",
+      "claim": "In G1 phase, cohesin is dynamically bound to chromatin with a residence time of 13.7 \u00b1 2.2 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies that relied on ectopically expressed GFP-tagged cohesin subunits (Gerlich et al., 2006; Schmitz et al., 2007; Ladurner et al., 2014; Ladurner et al., 2016), the recovery kinetics obtained from G1 phase cells could largely be fitted using a single exponential function, indicating cohesin was dynamically bound to chromatin with a residence time of 13.7 \u00b1 2.2 min (Figure 3\u2014figure supplement 1B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by iFRAP measurements shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "c84cee8d-0c75-48c6-b744-e4af87127bb7",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C37",
+      "claim": "In G2 phase, the recovery kinetics could only be fitted using a double exponential function with a dynamic residence time of 10.0 \u00b1 3.1 min and a stable residence time of 8.6 \u00b1 4.1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Also consistent with previous studies, the recovery kinetics obtained from cells in G2 phase could only be fitted using a double exponential function with a dynamic residence time of 10.0 \u00b1 3.1 min and a stable residence time of 8.6 \u00b1 4.1 hr (Figure 3\u2014figure supplement 1C,D,E and Gerlich et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by iFRAP measurements shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "11a6ceb6-09a7-49cd-aadd-6f91b554e57b",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C38",
+      "claim": "Approximately 64 \u00b1 4% (160,000 \u00b1 10,000) of nuclear SCC1-GFP molecules are bound to chromatin in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our FCS analysis, approximately 250,000 copies of SCC1-GFP reside in the nucleus in G1. Our iFRAP analysis allowed us to estimate that approximately 64 \u00b1 4% (160,000 \u00b1 10,000) of these molecules are bound to chromatin (Figure 3C,D, Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on combining FCS and iFRAP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "cb9c9329-5e3e-4a2f-a4a9-bd1682f902bf",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C39",
+      "claim": "In G2, approximately 37 \u00b1 9% of nuclear SCC1-EGFP is bound stably to chromatin, 36 \u00b1 9% is bound dynamically and 27 \u00b1 7% is soluble.",
+      "claim_type": "EXPLICIT",
+      "source": "In G2, we estimate that 37 \u00b1 9% of nuclear SCC1-EGFP is bound stably to chromatin, 36 \u00b1 9% is bound dynamically and 27 \u00b1 7% is soluble (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on iFRAP analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "839e1dd4-1796-45dc-8644-5a17573a660e",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C40",
+      "claim": "Around 108,000 \u00b1 26,000 cohesin molecules are stably bound, 105,000 \u00b1 26,000 bind dynamically and 79,000 \u00b1 21,000 are soluble in G2 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking into account our FCS measurements of SCC1-EGFP copy number in G2 phase, we estimate that around 108,000 \u00b1 26,000 cohesin molecules are stably bound, 105,000 \u00b1 26,000 bind dynamically and 79,000 \u00b1 21,000 are soluble (Figure 3D, Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on combining FCS and iFRAP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "a067e0b5-567d-4c77-b50d-d9bc4f04b432",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C41",
+      "claim": "The LC-MS and FCS estimates of the number of SCC1 molecules bound to chromatin in a HeLa cell agree to within a factor of 2.3 in G1 and a factor of 1.4 in G2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our LC-MS and FCS estimates of the number of SCC1 molecules bound to chromatin in a HeLa cell agree to within a factor of 2.3 in G1 and a factor of 1.4 in G2 (Appendix 1\u2014table 1, Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparing LC-MS and FCS/iFRAP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "e1de9d59-1105-49b4-b0f8-6cf3c76cc7f2",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C42",
+      "claim": "The number of chromatin-bound cohesin complexes increased by around a factor of two in G2 cells compared to G1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the number of chromatin-bound cohesin complexes increased by around a factor of two in G2 cells compared to G1 cells, as measured directly by LC-MS (Table 1) and indirectly by integrating our FCS and FRAP data (see above).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by both LC-MS and FCS/FRAP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "e184a88f-9f00-4759-9b32-56891c3cbe57",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C43",
+      "claim": "The only major distinction between cohesin dynamics in G1 and G2 phase cells is that a fraction of cohesin becomes stably bound in G2 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that the only major distinction between cohesin dynamics in G1 and G2 phase cells is that a fraction of cohesin becomes stably bound in G2 phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on mathematical modeling of the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "d8687497-18b6-42fe-8695-82d04705ffed",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C44",
+      "claim": "Around 37,000, 35,000 and 47,000 sites for SMC3, STAG1 and STAG2, respectively, were identified in the mappable fraction of the human genome in G1-synchronised HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We have identified around 37,000, 35,000 and 47,000 sites for SMC3, STAG1 and STAG2, respectively in the mappable fraction of the human genome in G1-synchronised HeLa cells (Figure 5A, Appendix 1\u2014table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-seq data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "ce8e03fe-cbe1-4bed-b70f-6fd471970454",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C45",
+      "claim": "88% of SMC3 sites overlap with the combined enrichment sites of STAG1 and STAG2.",
+      "claim_type": "EXPLICIT",
+      "source": "88% of SMC3 sites overlap with the combined enrichment sites of STAG1 and STAG2, and 77% overlap with CTCF (Figure 5B, Appendix 1\u2014table 7.).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-seq overlap analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "f8b89c6b-d558-4fda-841d-0f3b41828418",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C46",
+      "claim": "77% of SMC3 sites overlap with CTCF.",
+      "claim_type": "EXPLICIT",
+      "source": "88% of SMC3 sites overlap with the combined enrichment sites of STAG1 and STAG2, and 77% overlap with CTCF (Figure 5B, Appendix 1\u2014table 7.).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-seq overlap analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "6b8d3e0c-2352-4c5c-b8e8-9c2a08580b11",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C47",
+      "claim": "There should be around 117,000 cohesin enrichment sites per HeLa cell.",
+      "claim_type": "EXPLICIT",
+      "source": "If we assume that cohesin occupies the HeLa genome (7.9 Mb; Landry et al., 2013) with equal frequency as in the 'mappable' human genome (2.7 Mb) there should be around 117,000 cohesin enrichment sites per HeLa cell (~40,000 \u00f7 2.7 \u00d7 7.9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on extrapolating ChIP-seq data to the full HeLa genome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "eb525c51-42ee-406a-b8c5-dbfd44f921fa",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C48",
+      "claim": "Around 41,000 CTCF binding sites were identified in ChIP-seq experiments performed in G1-arrested HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified around 41,000 CTCF binding sites in ChIP-seq experiments performed in G1-arrested HeLa cells (Figure 5A, Appendix 1\u2014table 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-seq data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "b5173051-78f6-457e-b534-cdee6a56ffe1",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C49",
+      "claim": "There are around 120,000 potential CTCF binding sites per HeLa cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same logic as described above, this equates to around 120,000 potential CTCF binding sites per HeLa cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on extrapolating ChIP-seq data to the full HeLa genome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "74f3acea-8a48-4645-a742-0fa56d1dd878",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C50",
+      "claim": "Approximately 180,000 copies of GFP-tagged CTCF reside in the nucleus in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using FCS, we estimated that approximately 180,000 copies of GFP-tagged CTCF reside in the nucleus in G1 (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCS measurements shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "83c3963e-953a-42dd-b37b-5f25414f1aae",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C51",
+      "claim": "It is possible that not every CTCF site is occupied simultaneously by CTCF in a single G1 cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that we estimate that the number of CTCF molecules in the nucleus is similar to the number of CTCF binding sites, and assuming that at steady state not all CTCF molecules are chromatin bound, it is possible that not every site is occupied simultaneously by CTCF in a single G1 cell (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on comparing CTCF copy numbers with binding site numbers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "38c329a0-7fbf-4166-9d85-90aa52d721af",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C52",
+      "claim": "Around 80% of the detected SMC3 enrichment sites resided within 100 kb of each other.",
+      "claim_type": "EXPLICIT",
+      "source": "However, around 80% percent of the detected SMC3 enrichment sites resided within 100 kb of each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of SMC3 ChIP-seq data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "74742fba-331e-4cc9-a10a-00758888a964",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C53",
+      "claim": "At least some cohesin complexes might extrude loops around 100 kb in size.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, this analysis suggests that at least some cohesin complexes might extrude loops around 100 kb in size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the distribution of cohesin enrichment sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "ca9d2815-4126-421d-9361-58d78855610f",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C54",
+      "claim": "The LC-MS and FCS-derived estimates of total cohesin subunit copy number were within an overall factor of 1.3 of one another in G1 and 1.4 in G2.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, our LC-MS and FCS-derived estimates of total cohesin subunit copy number were within an overall factor of 1.3 of one another in G1 and 1.4 in G2 (Appendix 1\u2014table 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparing LC-MS and FCS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "6715fab4-0883-445f-8d48-1990320f94d4",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C55",
+      "claim": "FCS-derived estimates of chromatin-bound SCC1 were 2.3-fold higher than LC-MS estimates in G1 and 1.4-fold higher in G2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our FCS-derived estimates of chromatin-bound SCC1 were 2.3-fold higher than our LC-MS estimates in G1 and 1.4-fold higher in G2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparing LC-MS and FCS/iFRAP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "fba3855c-dbee-4c39-bef6-c52ccb62a8b8",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C56",
+      "claim": "A fraction of dynamically chromatin-bound cohesin complexes was lost during the purification steps that preceded LC-MS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that a fraction of dynamically chromatin-bound cohesin complexes was lost during the purification steps that preceded our LC-MS analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the difference between LC-MS and FCS/iFRAP measurements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "9919d77f-b27d-4698-8eda-15cab156bd9f",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C57",
+      "claim": "If cohesin is mobile on chromatin, it is unlikely that every cohesin enrichment site is occupied in a single G1 cell.",
+      "claim_type": "EXPLICIT",
+      "source": "If cohesin is indeed mobile on chromatin, our finding that the number of chromatin-bound cohesin complexes is similar to the number of potential cohesin binding sites means it is unlikely that every cohesin enrichment site is occupied in a single G1 cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing cohesin copy numbers with binding site numbers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "9f94ebf5-e89d-4aa5-80ed-6b10e18ba01b",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C58",
+      "claim": "If the chromatin-bound fraction of CTCF is below around 0.67, not all CTCF binding sites would be occupied simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that if the chromatin-bound fraction of CTCF is below around 0.67, not all CTCF binding sites would be occupied simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing CTCF copy numbers with binding site numbers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "9bef8a45-5b08-4948-a6b0-c7678af9818b",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C59",
+      "claim": "Only around 49% of nuclear CTCF molecules are chromatin-bound.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these authors concluded that only around 49% of nuclear CTCF molecules are actually chromatin-bound (Hansen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is cited from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "dba345bf-a558-4643-b0a9-9828812c0162",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C60",
+      "claim": "To generate a 100 kb loop, a dynamically chromatin-bound cohesin complex would need to extrude at around 8 kb/min.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate a 100 kb loop (the genomic distance that covers more than 80% of cohesin enrichment sites; Figure 5C), a dynamically chromatin-bound cohesin complex would need to extrude at around 8 kb/min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the measured residence time and estimated loop size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "0df72d91-b0fd-49d2-bbe1-c466daa8461f",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C61",
+      "claim": "Using the median TAD size of ~185 kb, dynamically chromatin-bound cohesin would need to extrude at rates of around 14 kb/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we found that the distance between neighbouring cohesin enrichment sites was highly variable and cohesin occupancy at these sites is likely to be below 100%, an alternative estimate as to the dimensions of a typical chromatin loop is to use the median TAD size determined in Hi-C experiments (~185 kb, Rao et al., 2014). Using this value, dynamically chromatin-bound cohesin would need to extrude at rates of around 14 kb/min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the measured residence time and median TAD size from a cited study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "23749a32-146c-435f-8250-6a9f9fbc3caf",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C62",
+      "claim": "These calculated rates of dynamic cohesin-mediated loop extrusion are close to the predicted rate of loop extrusion by cohesin in HeLa cells (22.5 kb/min).",
+      "claim_type": "EXPLICIT",
+      "source": "These calculated rates of dynamic cohesin-mediated loop extrusion are close to the predicted rate of loop extrusion by cohesin in HeLa cells (22.5 kb/min, Rao et al., 2017), condensin II in chicken cells (6\u201312 kb/min, Gibcus et al., 2018), SMC complexes in B. subtilis (54 kb/min, Wang et al., 2017) and the maximal rate of loop extrusion observed for yeast condensin in vitro (90 kb/min, Ganji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares calculated rates with rates from cited studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "78ce17d3-20fe-40d5-ac9e-32dc301d09f8",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C63",
+      "claim": "Cohesion is believed to be mediated by stably-bound complexes, which comprises around half of all chromatin-bound cohesin in G2.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesion is believed to be mediated by stably-bound complexes, which comprises around half of all chromatin-bound cohesin in G2 (Figure 3C and Gerlich et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on FRAP data and a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "696b9cd4-6481-483b-9435-cade2c7cd37a",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C64",
+      "claim": "Depletion of WAPL results in the stabilisation of cohesin complexes on chromatin and a dramatic change in chromatin architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of WAPL results in the stabilisation of cohesin complexes on chromatin and a dramatic change in chromatin architecture, indicating that stably-bound cohesin complexes are able to function in chromosome organisation and that alteration of cohesin's residence time may influence this process (Kueng et al., 2006; Tedeschi et al., 2013; Gassler et al., 2017; Haarhuis et al., 2017; Wutz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "24693d5c-867d-485d-9cce-6d5bf72d5b03",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C65",
+      "claim": "The number and position of TADs and loops does not differ significantly between G1 and G2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number and position of TADs and loops does not differ significantly between G1 and G2 cells (Wutz et al., 2017), that is chromatin architecture does not detectably change even though many cohesin complexes are stably bound to chromatin in G2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "12b84715-edef-425f-ba1c-fce89b04d979",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C66",
+      "claim": "The number of dynamically chromatin-bound cohesin complexes is actually reduced in G2 compared to G1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even though the total number of cohesin complexes bound to chromatin in G2 is twice of that in G1, our FRAP data indicate that the number of dynamically chromatin-bound cohesin complexes is actually reduced (Tables 1, 2 and 3, and Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on FRAP data shown in Tables and Figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "ca218a85-cdd2-4db0-bbe5-9462d1f77e4f",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C67",
+      "claim": "Around 213,000 cohesin complexes are bound to chromatin in a typical G2 cell, of which around half are bound stably to chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Using FCS and iFRAP, we estimated that around 213,000 cohesin complexes are bound to chromatin in a typical G2 cell, of which around half are bound stably to chromatin (Table 3, Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on FCS and iFRAP data shown in Table 3 and Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "3daff7e4-e6d7-491e-839d-1bfad96ba998",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C68",
+      "claim": "Around 108,000 cohesin complexes establish cohesion between replicated genomes in G2.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the stable fraction is the one thought to mediate cohesion (Gerlich et al., 2006), this suggests that around 108,000 cohesin complexes establish cohesion between replicated genomes that each contain 117,000 predicted cohesin enrichment sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on FRAP data and cited knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "496a9e51-23fd-4950-94a5-570cd5a1d9a3",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C69",
+      "claim": "If cohesion is mediated by monomeric cohesin, it is unlikely that it is established at every cohesin enrichment site in a single cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, if cohesion is mediated by monomeric cohesin, it is unlikely that it is established at every cohesin enrichment site in a single cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing the number of cohesive cohesin complexes with the number of enrichment sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "bd35e3d4-3d33-4a96-8f38-0974af784246",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C70",
+      "claim": "Proximity to a cohesin enrichment site does not correlate with proximity between sister chromatids in G2.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the finding that proximity to a cohesin enrichment site does not correlate with proximity between sister chromatids in G2 (Stanyte et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "2a752097-9d73-4d3c-a327-bacfbe5ac2c5",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C71",
+      "claim": "Only around 14,000 cohesin complexes were bound to chromosomes in prometaphase-arrested HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using LC-MS, we estimated that only around 14,000 cohesin complexes were bound to chromosomes in these cells (Figure 1 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LC-MS data shown in Figure 1 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "d363fdd3-7350-4bef-a4d9-2182e5e21bac",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C72",
+      "claim": "Approximately 90% of all chromatin-bound cohesin complexes dissociate from chromosomes in prophase and prometaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "These numbers are in good agreement with the previous observation that approximately 90% of all chromatin-bound cohesin complexes dissociate from chromosomes in prophase and prometaphase (Waizenegger et al., 2000; Gerlich et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "01f65d2d-0358-4ce7-9c7c-eabcdd90f935",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C73",
+      "claim": "In prometaphase-arrested cells, cohesin is predominantly detected at centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Since previous immunofluorescence microscopy experiments have shown that in prometaphase-arrested cells cohesin is predominantly detected at centromeres (Gim\u00e9nez-Abi\u00e1n et al., 2004) and because ChIP experiments could not detect cohesin in the non-repetitive part of the genome in such cells (Wendt et al., 2008), we assume that most of the 14,000 cohesin complexes that we found on prometaphase chromosomes must have represented cohesin at centromeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "facf8def-b2d2-466c-92a7-a1231b59ff88",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C74",
+      "claim": "Each HeLa chromosome might contain around 200 cohesin complexes in its centromeric region in prometaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the HeLa cells used in this study contained on average 64 chromosomes (Landry et al., 2013), our measurements indicate that each of these chromosomes might contain around 200 cohesin complexes in its centromeric region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on dividing total prometaphase cohesin by chromosome number.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "d69c4226-6220-4457-a606-9e17bd940fc2",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "claim_id": "C75",
+      "claim": "At least some but possibly many of the predicted cohesin enrichment sites are unoccupied in a single cell at a given timepoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that at least some but possibly many of the predicted cohesin enrichment sites are unoccupied in a single cell at a given timepoint, implying that our current models of chromatin organisation and sister chromatid cohesion derived from large populations of cells may not fully reflect the situation in individual cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparing copy numbers with enrichment sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "777e14fe-0493-41da-abad-8302d84749f3",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about cohesin and CTCF function in chromatin organization and sister chromatid cohesion. Cohesin is a ring-shaped complex composed of four core subunits (SMC1, SMC3, SCC1, and STAG1/2) that forms chromatin loops and TADs, positioned by CTCF. Cohesin's binding and release are regulated by NIPBL and WAPL, respectively, and sororin protects cohesive cohesin from WAPL. Single-cell Hi-C studies suggest chromosome organization is variable between cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C20 represent established knowledge and cited prior work that provides essential context for the study. These claims are well-supported by extensive citations to previous literature and represent the scientific foundation upon which the current work builds. The claims about cohesin structure, function, and regulation are widely accepted in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "8f4b5419-0956-40a0-a55d-5cbd24d98d82",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using LC-MS, the authors quantified cohesin subunit copy numbers in HeLa cells. In G1, approximately 417,000 SMC3 and 350,000 SCC1 copies exist per cell, with 60,000-70,000 chromatin-bound cohesin complexes. STAG2 is present in ~3-fold excess over STAG1 on chromatin. The stoichiometry remains close to 1:1:1:1 across G1, G2, and prometaphase, consistent with the monomeric ring model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 are well-supported by LC-MS data shown in Figure 1, Table 1, and supplementary figures. The measurements were performed with biological and technical replicates, and the stoichiometry analysis using immunoprecipitation provides converging evidence. The conclusion about the monomeric ring model (C27) is appropriately cautious, acknowledging limitations in distinguishing 1:1:1:1 from 2:2:2:2 ratios.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "9ac16289-07c6-4b9c-a5b5-19d4770825b8",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Using FCS, the authors measured nuclear concentrations and copy numbers of cohesin subunits and regulators. In G1, SCC1 and STAG2 concentrations were ~330 nM and ~280 nM, respectively, with STAG1 at ~70 nM. Most cohesin complexes exist as monomers based on CPM analysis. The two orthogonal methods (LC-MS and FCS) agree within a factor of 1.5. NIPBL, WAPL, sororin, and CTCF are sub-stoichiometric relative to SCC1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C35 are supported by FCS measurements shown in Figure 2, Table 2, and supplementary data. The agreement between LC-MS and FCS (C32) is quantified using bootstrapping analysis, providing statistical rigor. The CPM analysis for monomer determination (C30) is appropriately interpreted. The sub-stoichiometry of regulators (C35) is clearly demonstrated in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "e6a4687f-64f8-4183-bbb7-02725ee96809",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using iFRAP, the authors characterized cohesin dynamics on chromatin. In G1, cohesin has a dynamic residence time of 13.7 \u00b1 2.2 min, with ~64% (160,000) of nuclear SCC1 bound to chromatin. In G2, cohesin exhibits both dynamic (10.0 \u00b1 3.1 min) and stable (8.6 \u00b1 4.1 hr) binding, with ~37% stably bound, ~36% dynamically bound, and ~27% soluble. LC-MS and FCS/iFRAP estimates agree within factors of 2.3 (G1) and 1.4 (G2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 are well-supported by iFRAP data shown in Figure 3 and supplementary figures. The curve fitting approaches (single vs. double exponential) are appropriate for the data. The integration of FCS and iFRAP data to estimate chromatin-bound fractions is methodologically sound. The agreement between methods (C41) is reasonable given the technical differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "7445f0cf-aefd-4f2f-8c9c-31ca615eb967",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The number of chromatin-bound cohesin complexes doubles from G1 to G2, as measured by both LC-MS and FCS/FRAP. Mathematical modeling suggests the only major distinction between G1 and G2 cohesin dynamics is the appearance of a stably-bound fraction in G2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by converging evidence from multiple methods (LC-MS, FCS, FRAP) and mathematical modeling shown in Figure 4. The model successfully predicts the observed chromatin-bound fraction in G2 based on the stable fraction, providing strong support for the interpretation that stabilization is the primary change.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "e8b25fb0-acc9-4079-add4-7e0b8f6c3bb1",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ChIP-seq identified ~37,000-47,000 cohesin enrichment sites and ~41,000 CTCF sites in the mappable genome, extrapolating to ~117,000 and ~120,000 sites per HeLa cell, respectively. 88% of SMC3 sites overlap with STAG1/2, and 77% overlap with CTCF. FCS measured ~180,000 CTCF copies in G1 nuclei. Given similar numbers of CTCF molecules and binding sites, not all sites may be simultaneously occupied. ~80% of SMC3 sites are within 100 kb of each other, suggesting cohesin may extrude loops of this size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C53 are supported by ChIP-seq data (Figure 5) and FCS measurements. The extrapolation from mappable to total genome (C47, C49) makes reasonable assumptions but introduces uncertainty. The inference about incomplete occupancy (C51) is logical but speculative, appropriately qualified as \"possible.\" The loop size inference (C53) is reasonable but tentative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "ecb71dea-15b8-4131-882d-2bdb2aa9ce37",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LC-MS and FCS estimates of total cohesin agree within factors of 1.3-1.4, but FCS-derived chromatin-bound estimates are 2.3-fold (G1) and 1.4-fold (G2) higher than LC-MS. The authors suggest dynamically bound cohesin may be lost during LC-MS sample preparation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 accurately report the comparison between methods. The explanation for the discrepancy (C56) is speculative but reasonable given the dynamic nature of cohesin binding and the sample processing required for LC-MS. The authors appropriately acknowledge this as a limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "00662c24-1474-470a-944f-748ff3490ce6",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "If cohesin is mobile on chromatin, the similar numbers of chromatin-bound complexes and enrichment sites suggest not all sites are occupied simultaneously in single G1 cells. Similarly, if CTCF's chromatin-bound fraction is below ~0.67, not all CTCF sites would be simultaneously occupied. A cited study found only ~49% of nuclear CTCF is chromatin-bound.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 represent logical inferences from the quantitative data, appropriately qualified with conditional statements. The citation supporting partial CTCF occupancy (C59) provides independent validation. The reasoning is sound, though the conclusions depend on assumptions about cohesin mobility and CTCF binding dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "14f28738-33df-414b-8508-3fb0f9c20de6",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Based on the measured residence time (~13 min) and estimated loop sizes, dynamically bound cohesin would need to extrude at ~8 kb/min (for 100 kb loops) or ~14 kb/min (for 185 kb TADs). These calculated rates are close to predicted and observed rates for cohesin and related SMC complexes (6-90 kb/min) from various studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 present straightforward calculations based on measured residence times and estimated loop sizes. The comparison with literature values (C62) shows reasonable agreement, supporting the plausibility of the loop extrusion model. However, these are indirect calculations that assume continuous extrusion, which remains unproven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "29879e46-2d37-4fa5-8e3f-5099b50c1050",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cohesion is believed to be mediated by stably-bound cohesin (~50% of chromatin-bound cohesin in G2). WAPL depletion stabilizes cohesin and dramatically alters chromatin architecture, but TAD/loop positions don't differ significantly between G1 and G2 despite stable cohesin in G2. The number of dynamically bound cohesin complexes is actually reduced in G2 compared to G1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 integrate the current findings with cited prior work. The observation that dynamic cohesin decreases in G2 (C66) is supported by the FRAP data in Tables 1-3 and Figure 3D. The apparent paradox that stable cohesin in G2 doesn't alter TAD structure (C65) is an important observation from cited work that raises interesting mechanistic questions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "125143a3-5ffc-40e6-be84-e4693e086486",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In G2, ~213,000 cohesin complexes are chromatin-bound, with ~108,000 stably bound. If these stably-bound complexes mediate cohesion as monomers, cohesion is unlikely to be established at every enrichment site (~117,000 per replicated genome). This is consistent with findings that proximity to cohesin sites doesn't correlate with sister chromatid proximity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by the FCS/iFRAP data. The inference about incomplete cohesion site occupancy (C69) is logical given the numbers, though it depends on the monomeric cohesin assumption. The supporting citation (C70) provides independent validation of the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "eaba7f58-e311-4944-b4d1-ecfe6bc481fc",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In prometaphase, only ~14,000 cohesin complexes remain chromosome-bound, representing ~10% of G2 chromatin-bound cohesin, consistent with prior observations. These complexes are predominantly at centromeres, suggesting ~200 cohesin complexes per chromosome centromeric region in HeLa cells (which have ~64 chromosomes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 are supported by LC-MS data (Figure 1, Table 1) and logical inferences based on cited prior work showing centromeric localization. The calculation of ~200 complexes per centromere (C74) is straightforward arithmetic. The agreement with prior observations of ~90% dissociation (C72) validates the measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    },
+    {
+      "id": "65aee3c7-7726-4297-bc61-6683324dec10",
+      "content_id": "a62531b2-e71a-4b87-b83d-3c3c5264ff7d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study's central conclusion is that in G1-phase HeLa cells, there are ~250,000 nuclear cohesin complexes, of which ~160,000 are chromatin-bound. Comparison with ChIP-seq data implies that some genomic cohesin and CTCF enrichment sites are unoccupied in single cells at any given time, suggesting population-based models may not fully reflect individual cell organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C75 represent the study's main findings, integrating multiple lines of evidence from LC-MS, FCS, iFRAP, and ChIP-seq. The conclusion about incomplete site occupancy (C5, C75) is a logical inference from comparing absolute copy numbers with enrichment site numbers, though it relies on assumptions about cohesin mobility and binding dynamics. The conclusion is appropriately qualified as a suggestion rather than definitive proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:39:01.087913Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a9a7b76d-183a-4dc5-948d-621c6f2ae89c",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "7cf5e612-e93b-4630-872c-7bc09a65f0ae",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "a2fab6fd-003a-4c0f-a030-6b0e42c2ea85",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "da779270-334a-42eb-b110-619305601ce7",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "43b9f0c8-c241-4714-acbf-794e39928a99",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "a234bf06-4c52-4fec-b993-487616fa90cc",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "04ec16f4-92de-4922-ae1b-6b8851cba8c2",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "c96ef4ca-6cc3-46a2-b8ba-edab4e6d2233",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "67f2e5c7-6768-4b57-81af-6ff7aee09ef7",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "5b22aac8-8250-4f51-868d-f02b188c8c65",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "f9d54990-474a-4680-9093-8c68a1b1b580",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "74211242-23cf-4be6-82ed-39672ab8274c",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "e40c4dab-c050-49d9-a45b-e8b63b92495a",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "af55547e-7674-4d03-9ff7-e5b288c22ad8",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "312ada8a-6a4f-4cce-8679-5bd501f2cfa8",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "04c5bd89-a0ba-4494-a249-bf86c011dd5d",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "d7c0a701-d212-4e04-a872-4435a72d7584",
+      "result_id": "777e14fe-0493-41da-abad-8302d84749f3"
+    },
+    {
+      "claim_id": "0fdccc8f-3cb5-4cd1-8d99-2be51ab72e71",
+      "result_id": "8f4b5419-0956-40a0-a55d-5cbd24d98d82"
+    },
+    {
+      "claim_id": "2aae780e-45c6-4256-88f1-a588b8dd807c",
+      "result_id": "8f4b5419-0956-40a0-a55d-5cbd24d98d82"
+    },
+    {
+      "claim_id": "7657c601-8314-4693-bcec-ab7b78fa7129",
+      "result_id": "8f4b5419-0956-40a0-a55d-5cbd24d98d82"
+    },
+    {
+      "claim_id": "10c26a36-20c7-4564-9963-483792512dd2",
+      "result_id": "8f4b5419-0956-40a0-a55d-5cbd24d98d82"
+    },
+    {
+      "claim_id": "46f903e1-1b21-43ee-b154-7cc38baa4c64",
+      "result_id": "8f4b5419-0956-40a0-a55d-5cbd24d98d82"
+    },
+    {
+      "claim_id": "b48c6aa6-1ed5-4685-9512-3f37b8cedad9",
+      "result_id": "8f4b5419-0956-40a0-a55d-5cbd24d98d82"
+    },
+    {
+      "claim_id": "9c99160d-075d-46ff-b48e-2174d262f13c",
+      "result_id": "8f4b5419-0956-40a0-a55d-5cbd24d98d82"
+    },
+    {
+      "claim_id": "63f8176b-129e-483c-b34b-6bff2e90d2fa",
+      "result_id": "9ac16289-07c6-4b9c-a5b5-19d4770825b8"
+    },
+    {
+      "claim_id": "6cc7e33a-8da8-43ba-a254-3cf9f6653162",
+      "result_id": "9ac16289-07c6-4b9c-a5b5-19d4770825b8"
+    },
+    {
+      "claim_id": "2cadd663-0445-43be-9829-aa2d9f568776",
+      "result_id": "9ac16289-07c6-4b9c-a5b5-19d4770825b8"
+    },
+    {
+      "claim_id": "535c073d-8f87-4768-9b6d-25403ef2aa54",
+      "result_id": "9ac16289-07c6-4b9c-a5b5-19d4770825b8"
+    },
+    {
+      "claim_id": "330d7a5f-4b58-43b8-95c9-93e8ec0128ba",
+      "result_id": "9ac16289-07c6-4b9c-a5b5-19d4770825b8"
+    },
+    {
+      "claim_id": "6557bbb3-38ff-4c00-8d54-1c4d2f5c3654",
+      "result_id": "9ac16289-07c6-4b9c-a5b5-19d4770825b8"
+    },
+    {
+      "claim_id": "d00f2530-e81d-4bfb-a183-c7b1d17861cb",
+      "result_id": "9ac16289-07c6-4b9c-a5b5-19d4770825b8"
+    },
+    {
+      "claim_id": "0a8860f9-0958-4c4b-9105-63b2a8af7d0c",
+      "result_id": "9ac16289-07c6-4b9c-a5b5-19d4770825b8"
+    },
+    {
+      "claim_id": "8a2ba8a0-121e-4e01-a97c-e5123c0add53",
+      "result_id": "e6a4687f-64f8-4183-bbb7-02725ee96809"
+    },
+    {
+      "claim_id": "c84cee8d-0c75-48c6-b744-e4af87127bb7",
+      "result_id": "e6a4687f-64f8-4183-bbb7-02725ee96809"
+    },
+    {
+      "claim_id": "11a6ceb6-09a7-49cd-aadd-6f91b554e57b",
+      "result_id": "e6a4687f-64f8-4183-bbb7-02725ee96809"
+    },
+    {
+      "claim_id": "cb9c9329-5e3e-4a2f-a4a9-bd1682f902bf",
+      "result_id": "e6a4687f-64f8-4183-bbb7-02725ee96809"
+    },
+    {
+      "claim_id": "839e1dd4-1796-45dc-8644-5a17573a660e",
+      "result_id": "e6a4687f-64f8-4183-bbb7-02725ee96809"
+    },
+    {
+      "claim_id": "a067e0b5-567d-4c77-b50d-d9bc4f04b432",
+      "result_id": "e6a4687f-64f8-4183-bbb7-02725ee96809"
+    },
+    {
+      "claim_id": "e1de9d59-1105-49b4-b0f8-6cf3c76cc7f2",
+      "result_id": "7445f0cf-aefd-4f2f-8c9c-31ca615eb967"
+    },
+    {
+      "claim_id": "e184a88f-9f00-4759-9b32-56891c3cbe57",
+      "result_id": "7445f0cf-aefd-4f2f-8c9c-31ca615eb967"
+    },
+    {
+      "claim_id": "d8687497-18b6-42fe-8695-82d04705ffed",
+      "result_id": "e8b25fb0-acc9-4079-add4-7e0b8f6c3bb1"
+    },
+    {
+      "claim_id": "ce8e03fe-cbe1-4bed-b70f-6fd471970454",
+      "result_id": "e8b25fb0-acc9-4079-add4-7e0b8f6c3bb1"
+    },
+    {
+      "claim_id": "f8b89c6b-d558-4fda-841d-0f3b41828418",
+      "result_id": "e8b25fb0-acc9-4079-add4-7e0b8f6c3bb1"
+    },
+    {
+      "claim_id": "6b8d3e0c-2352-4c5c-b8e8-9c2a08580b11",
+      "result_id": "e8b25fb0-acc9-4079-add4-7e0b8f6c3bb1"
+    },
+    {
+      "claim_id": "eb525c51-42ee-406a-b8c5-dbfd44f921fa",
+      "result_id": "e8b25fb0-acc9-4079-add4-7e0b8f6c3bb1"
+    },
+    {
+      "claim_id": "b5173051-78f6-457e-b534-cdee6a56ffe1",
+      "result_id": "e8b25fb0-acc9-4079-add4-7e0b8f6c3bb1"
+    },
+    {
+      "claim_id": "74f3acea-8a48-4645-a742-0fa56d1dd878",
+      "result_id": "e8b25fb0-acc9-4079-add4-7e0b8f6c3bb1"
+    },
+    {
+      "claim_id": "83c3963e-953a-42dd-b37b-5f25414f1aae",
+      "result_id": "e8b25fb0-acc9-4079-add4-7e0b8f6c3bb1"
+    },
+    {
+      "claim_id": "38c329a0-7fbf-4166-9d85-90aa52d721af",
+      "result_id": "e8b25fb0-acc9-4079-add4-7e0b8f6c3bb1"
+    },
+    {
+      "claim_id": "74742fba-331e-4cc9-a10a-00758888a964",
+      "result_id": "e8b25fb0-acc9-4079-add4-7e0b8f6c3bb1"
+    },
+    {
+      "claim_id": "ca9d2815-4126-421d-9361-58d78855610f",
+      "result_id": "ecb71dea-15b8-4131-882d-2bdb2aa9ce37"
+    },
+    {
+      "claim_id": "6715fab4-0883-445f-8d48-1990320f94d4",
+      "result_id": "ecb71dea-15b8-4131-882d-2bdb2aa9ce37"
+    },
+    {
+      "claim_id": "fba3855c-dbee-4c39-bef6-c52ccb62a8b8",
+      "result_id": "ecb71dea-15b8-4131-882d-2bdb2aa9ce37"
+    },
+    {
+      "claim_id": "9919d77f-b27d-4698-8eda-15cab156bd9f",
+      "result_id": "00662c24-1474-470a-944f-748ff3490ce6"
+    },
+    {
+      "claim_id": "9f94ebf5-e89d-4aa5-80ed-6b10e18ba01b",
+      "result_id": "00662c24-1474-470a-944f-748ff3490ce6"
+    },
+    {
+      "claim_id": "9bef8a45-5b08-4948-a6b0-c7678af9818b",
+      "result_id": "00662c24-1474-470a-944f-748ff3490ce6"
+    },
+    {
+      "claim_id": "dba345bf-a558-4643-b0a9-9828812c0162",
+      "result_id": "14f28738-33df-414b-8508-3fb0f9c20de6"
+    },
+    {
+      "claim_id": "0df72d91-b0fd-49d2-bbe1-c466daa8461f",
+      "result_id": "14f28738-33df-414b-8508-3fb0f9c20de6"
+    },
+    {
+      "claim_id": "23749a32-146c-435f-8250-6a9f9fbc3caf",
+      "result_id": "14f28738-33df-414b-8508-3fb0f9c20de6"
+    },
+    {
+      "claim_id": "78ce17d3-20fe-40d5-ac9e-32dc301d09f8",
+      "result_id": "29879e46-2d37-4fa5-8e3f-5099b50c1050"
+    },
+    {
+      "claim_id": "696b9cd4-6481-483b-9435-cade2c7cd37a",
+      "result_id": "29879e46-2d37-4fa5-8e3f-5099b50c1050"
+    },
+    {
+      "claim_id": "24693d5c-867d-485d-9cce-6d5bf72d5b03",
+      "result_id": "29879e46-2d37-4fa5-8e3f-5099b50c1050"
+    },
+    {
+      "claim_id": "12b84715-edef-425f-ba1c-fce89b04d979",
+      "result_id": "29879e46-2d37-4fa5-8e3f-5099b50c1050"
+    },
+    {
+      "claim_id": "ca218a85-cdd2-4db0-bbe5-9462d1f77e4f",
+      "result_id": "125143a3-5ffc-40e6-be84-e4693e086486"
+    },
+    {
+      "claim_id": "3daff7e4-e6d7-491e-839d-1bfad96ba998",
+      "result_id": "125143a3-5ffc-40e6-be84-e4693e086486"
+    },
+    {
+      "claim_id": "496a9e51-23fd-4950-94a5-570cd5a1d9a3",
+      "result_id": "125143a3-5ffc-40e6-be84-e4693e086486"
+    },
+    {
+      "claim_id": "bd35e3d4-3d33-4a96-8f38-0974af784246",
+      "result_id": "125143a3-5ffc-40e6-be84-e4693e086486"
+    },
+    {
+      "claim_id": "2a752097-9d73-4d3c-a327-bacfbe5ac2c5",
+      "result_id": "eaba7f58-e311-4944-b4d1-ecfe6bc481fc"
+    },
+    {
+      "claim_id": "d363fdd3-7350-4bef-a4d9-2182e5e21bac",
+      "result_id": "eaba7f58-e311-4944-b4d1-ecfe6bc481fc"
+    },
+    {
+      "claim_id": "01f65d2d-0358-4ce7-9c7c-eabcdd90f935",
+      "result_id": "eaba7f58-e311-4944-b4d1-ecfe6bc481fc"
+    },
+    {
+      "claim_id": "facf8def-b2d2-466c-92a7-a1231b59ff88",
+      "result_id": "eaba7f58-e311-4944-b4d1-ecfe6bc481fc"
+    },
+    {
+      "claim_id": "88d6f963-7b7b-41ab-a970-6abf88b797a3",
+      "result_id": "65aee3c7-7726-4297-bc61-6683324dec10"
+    },
+    {
+      "claim_id": "3bdf4e2b-e8e6-4154-b163-2c470b9aaa1e",
+      "result_id": "65aee3c7-7726-4297-bc61-6683324dec10"
+    },
+    {
+      "claim_id": "4d475e0a-d5a8-4310-ac8e-9c92468b676e",
+      "result_id": "65aee3c7-7726-4297-bc61-6683324dec10"
+    },
+    {
+      "claim_id": "d69c4226-6220-4457-a606-9e17bd940fc2",
+      "result_id": "65aee3c7-7726-4297-bc61-6683324dec10"
+    }
+  ],
+  "comparisons": []
+}

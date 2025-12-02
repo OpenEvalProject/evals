@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C16",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Chen et al. (2014) performed single-molecule tracking experiments in living cells to measure Sox2 and Oct4 binding dynamics. They used 2D tracking to estimate residence times on DNA (~10 s) and 3D microscopy to estimate search times (~400 s), employing two cell lines where one TF was fluorescently labeled while the other was inducibly expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C16, C66-C71 collectively describe the experimental methodology of Chen et al. (2014). These are well-documented descriptions of prior work supported by citations and represent an accurate summary of the experimental design and measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C74"
+    ],
+    "result": "The authors identify a critical error in Chen et al.'s interpretation: while the assumption that unbinding rates from single-molecule data equal DNA unbinding rates is correct, the corresponding assumption for binding rates is incorrect because TF and DNA viewpoints involve different concentration dependencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C74 identify a fundamental biophysical error in the prior analysis. The reasoning is sound: unbinding rates are intrinsic properties independent of viewpoint, but binding rates depend on different concentrations (free DNA sites vs. free TF molecules) depending on whether one follows the TF or the DNA. This is a valid critique based on established biophysical principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C77",
+      "C83"
+    ],
+    "result": "The authors identify two additional problematic assumptions in Chen et al.'s analysis: (1) that induced TF binding sites are saturated at maximal induction, and (2) that TF concentrations are equivalent across experimental conditions. Both assumptions are oversimplifications not supported by other TF binding studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C77, and C83 identify reasonable concerns with Chen et al.'s modeling assumptions. The critique of saturation is supported by citation to other studies (Morisaki et al., 2014), and the concentration issue follows logically from the experimental design. These represent valid methodological concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C59",
+      "C60",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors establish the biophysical foundations of thermodynamic equilibrium, explaining that detailed balance (microscopic reversibility) derives from time-reversal symmetry of physical laws, not classical thermodynamics. At equilibrium, binding/unbinding label ratios are thermodynamic quantities determined by free-energy differences, while individual labels are kinetic quantities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C52-C65 present well-established principles of statistical mechanics and non-equilibrium thermodynamics, supported by appropriate citations (Tolman, 1938; Mahan, 1975; Lewis, 1925). These foundational concepts are correctly stated and form the theoretical basis for the subsequent analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C95"
+    ],
+    "result": "The authors employ the 'linear framework' for analyzing biochemical systems, representing them as graphs with vertices (microstates) and directed edges (transitions with rate labels). The framework assumes steady-state, uses concentrations as approximations, and employs coarse-grained effective parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51 and C95 describe the mathematical framework used for analysis, supported by appropriate citations (Gunawardena, 2012; Mirzaev and Gunawardena, 2013; Ahsendorf et al., 2014; Estrada et al., 2016). The assumptions are explicitly stated and reasonable for the system under study. The framework is established methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C92",
+      "C93"
+    ],
+    "result": "Reanalysis of Chen et al.'s data reveals that Sox2 and Oct4 exhibit negative reciprocity: Sox2 fractional binding decreases when Oct4 is induced, but Oct4 fractional binding increases when Sox2 is induced. This reciprocity value is \u0393 = -0.22 with statistical significance (p = 0.02 for \u0393 \u2265 0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C92-C93 present a key finding from reanalysis of the data. The statistical analysis is described in Materials and methods with conservative assumptions (N=3 samples minimum). While the significance (p=0.02) is not as strong as for \u03c1>1, it is sufficient to warrant the conclusion, and the authors appropriately acknowledge this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C85",
+      "C86",
+      "C94"
+    ],
+    "result": "The single-locus model cannot exhibit negative reciprocity at thermodynamic equilibrium, but can do so away from equilibrium. The observed \u03ba ratio arrangement (\u03ba\u2084/\u03ba\u2081 = 0.86, \u03ba\u2083/\u03ba\u2082 = 2.57) is inconsistent with equilibrium predictions, suggesting energy expenditure maintains the system away from equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C85-C86, C94 present mathematical analysis showing that negative reciprocity requires non-equilibrium conditions in the single-locus model. The logic is sound: at equilibrium, cooperativity \u03c9 must have consistent effects on both TFs (Equation 17), but the data show opposite effects. Figure 2E demonstrates that the observed reciprocity can be achieved away from equilibrium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "In the genomic-diversity model with two locus types, negative reciprocity can arise in two ways: (1) energy expenditure away from equilibrium, or (2) mixed cooperativities at equilibrium (positive at some loci, negative at others). The available data cannot distinguish between these possibilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 present analysis of a more complex model accounting for genomic diversity. The mathematical analysis (detailed in Materials and methods) shows that uniform cooperativity signs yield positive reciprocity, while mixed cooperativities or non-equilibrium conditions can yield negative reciprocity. The conclusion that data cannot distinguish these scenarios is appropriately cautious. Figures 3B-D support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C105"
+    ],
+    "result": "In vitro measurements show mixed cooperativities between Sox2 and Oct4 on naked DNA sequences. The genomic-diversity model at equilibrium can account for Chen et al.'s data if Sox2 and Oct4 exhibit mixed cooperativity across the genome, sometimes helping and sometimes hindering each other's binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 cites in vitro evidence for mixed cooperativity (Chang et al., 2017), but C105 acknowledges difficulty assessing relevance to in vivo context. The authors note that effective in vivo cooperativity may differ due to chromatin, nucleosomes, and co-regulators. While the model can mathematically account for the data with mixed cooperativity, whether this explanation is biologically realistic remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The authors conclude that Chen et al.'s claim of ordered assembly (Sox2 binding first, followed by Oct4 in ~75% of cases) is not justified by their analysis. The quantity R calculated by Chen et al. does not measure binding order but rather the cycle condition for thermodynamic equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 present a major critique of Chen et al.'s interpretation. The mathematical analysis clearly demonstrates that R (Equation 1) measures the cycle condition, not binding-order asymmetry. The correct formula for binding-order asymmetry (Equation 5) is derived and shown to be different from R. This is a fundamental correction based on rigorous biophysical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The experimental strategy of measuring each TF while inducing the other can be generalized as a protocol for estimating reciprocity between any two TFs. Titrating the induced TF rather than maximally inducing it may allow accounting for endogenous expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 propose methodological insights and improvements. C103 represents a valid generalization of the experimental approach. C104 is a reasonable suggestion for future work, appropriately framed as speculative ('may be possible'). These represent constructive extensions of the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The most compelling demonstration of non-equilibrium behavior would come from directly measuring loss of detailed balance by imaging TFs at specific genomic loci and determining if the dynamics appear different when played in reverse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 propose future experimental directions for definitively establishing non-equilibrium behavior. The suggestion is scientifically sound (supported by citation to Battle et al., 2016) and represents the gold standard for demonstrating violation of detailed balance. Appropriately framed as future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The single-locus model predicts energy expenditure is required for Sox2 and Oct4 action, while the genomic-diversity model offers an alternative explanation (mixed cooperativity at equilibrium) for the same data. The conclusions are model-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 appropriately summarize the contingent nature of the conclusions. The analysis demonstrates that different models with different assumptions lead to different interpretations of the same data. This honest acknowledgment of model dependence is scientifically appropriate and highlights the importance of model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors emphasize that models describe assumptions about reality, not reality itself. Conclusions are contingent on underlying assumptions and may change as knowledge advances. Experiment and theory must work together to understand biological systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C114-C115 present philosophical perspectives on scientific modeling, supported by appropriate citations (Gunawardena, 2014a; Phillips, 2015; Goldstein, 2018). These represent mature, epistemologically sound views on the role of models in biology and are well-supported by the analysis presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Higher-order cooperativity (beyond pairwise) may have more pronounced impacts than pairwise cooperativity on the conclusions. Such effects appear essential and plausible on theoretical grounds but remain poorly characterized experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C113 discuss higher-order cooperativity effects not included in the models. While the speculation is reasonable and supported by citation (Estrada et al., 2016), the authors acknowledge limited knowledge about such effects. This represents an appropriate identification of model limitations, but the actual impact remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C13",
+      "C14",
+      "C34"
+    ],
+    "result": "Sox2 and Oct4 are pioneer transcription factors that specify early mammalian lineages. Eukaryotic genomes employ energy-expending mechanisms for chromatin regulation, though debate exists about whether pioneer TFs require external energy. Energy expenditure may enable functionality beyond thermodynamic limits, as demonstrated by kinetic proofreading. Evidence for mixed cooperativity or energy expenditure in living cells represents novel findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C11, C13-C14, and C34 provide biological and theoretical context. These are well-supported by appropriate citations and represent accurate summaries of established knowledge and prior work. C34's claim of novelty is justified given the analysis presented.",
+    "result_type": "MINOR"
+  }
+]

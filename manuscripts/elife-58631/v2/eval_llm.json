@@ -1,0 +1,431 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C7"
+    ],
+    "result": "A Bayesian logistic regression model was developed using data from 302 French chloroquine self-poisoning patients (11% mortality) to establish the relationship between whole blood chloroquine concentrations and mortality. The model identified a whole blood concentration of 13.5 \u00b5mol/L (95% CI 10.1-17.7) as associated with 1% mortality, adjusting for metabolite levels, unobserved peak concentrations, and treatment differences between cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C37-C45 collectively describe a well-designed pharmacometric analysis with appropriate statistical methodology. The Bayesian approach accounts for key sources of uncertainty including unobserved peak concentrations (80% of patients), metabolite contributions, and inter-cohort treatment differences. The 1% mortality threshold is appropriately conservative given sample size limitations (n=302, 33 deaths).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "Pharmacokinetic modeling predicted that the high-dose regimen (600 mg twice daily for 10 days) results in median Cmax of 10.7 \u00b5mol/L in 70 kg adults, with ~60% exceeding the 10 \u00b5mol/L danger zone and predicted fatality ratios of 0.05-3.5% depending on body weight. Lower dose regimens (310 mg twice daily) were predicted to be safe, with fewer than 1 per 1000 exceeding the 1% mortality threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C64 describe pharmacokinetic simulations that appropriately couple PK models with the established toxicity threshold. The predictions are internally consistent and account for body weight effects. However, the authors acknowledge important limitations: Cmax is model-derived rather than directly observed, and there are no large population PK studies to validate the upper tail predictions (C124-C126). The conservative approach of using two PK models strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C8",
+      "C9",
+      "C77",
+      "C78",
+      "C189",
+      "C196",
+      "C197"
+    ],
+    "result": "A concentration-dependent relationship between chloroquine levels and QRS prolongation was established using data from 16 healthy volunteers and 290 self-poisoning patients. QRS duration >150 msec was strongly associated with concentrations >10 \u00b5mol/L (36/182 patients, 20%) and was independently predictive of mortality. QRS <100 msec indicates very low risk of lethal toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70, C8-C9, C77-C78, C189, C196-C197 describe a well-executed analysis combining healthy volunteer and overdose data. The Bayesian Emax model appropriately accounts for different measurement errors between cohorts and concentration-dependent heteroskedasticity. The finding that QRS >150 msec independently predicts mortality (adjusted OR 1.3 per 10 msec, p<10^-5) provides strong evidence for QRS as a clinical biomarker. The 10 \u00b5mol/L threshold consistently emerges across multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C115"
+    ],
+    "result": "Chloroquine mortality is concentration-dependent, rising steeply above 10 \u00b5mol/L whole blood concentration (approximately 3 \u00b5mol/L plasma or 14 \u00b5mol/L combined chloroquine+metabolite). Doses resulting in peak concentrations >10 \u00b5mol/L are associated with >1% risk of fatal toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76, C115 synthesize the main findings into clear toxicity thresholds. The 10 \u00b5mol/L threshold is consistently supported by both the mortality model and QRS analysis. The conversions to plasma and combined drug+metabolite concentrations are appropriately qualified as approximate, acknowledging the variability in blood-to-plasma ratios and metabolite contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "The CloroCovid-19 trial in Brazil was stopped early after 81 patients due to cardiac toxicity and increased mortality with the high-dose regimen (600 mg base twice daily for 10 days). This dose represents the standard malaria loading dose repeated 19 times and may have resulted from confusion between salt and base weights. Concomitant azithromycin may have contributed to the observed ventricular arrhythmias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31, C107-C111, C113 accurately describe the Borba et al. trial outcomes and provide plausible explanations for the high doses used. The speculation about salt/base confusion (C108) is appropriately qualified as uncertain. The observation about azithromycin co-administration (C111) is important for interpreting the cardiac toxicity, as azithromycin also prolongs QT interval. The modeling results (C113) are consistent with the observed toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C114",
+      "C153",
+      "C201"
+    ],
+    "result": "Most high-dose chloroquine regimens currently being trialed for COVID-19 are predicted to be safe, with treatment regimens resulting in whole blood concentrations <10 \u00b5mol/L in >95% of patients having acceptable safety margins. Lower dose regimens such as those in RECOVERY and SOLIDARITY trials are predicted to be safe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C114, C153, C201 represent the main translational conclusion of the study. This is well-supported by the coupled PK-PD modeling showing that most regimens (except the very high dose Borba regimen) result in concentrations below the toxicity threshold. However, the prediction relies on PK models with acknowledged limitations (C124-C126), and the analysis does not directly address hydroxychloroquine (C140), which is used in most trials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C182",
+      "C183",
+      "C187"
+    ],
+    "result": "Despite widespread use of hydroxychloroquine (millions of patients, 350 tons annually), systematic literature review found only one case of TdP outside COVID-19 treatment. Large observational studies show lower arrhythmia rates with hydroxychloroquine compared to other drugs. The individual risk of TdP over the short term at currently recommended doses appears very low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C177, C182-C183, C187 present a compelling epidemiological argument that TdP risk with these drugs at therapeutic doses is very low. The systematic review methodology is sound, and the contrast between theoretical 'torsadagenic' classification and actual clinical experience is striking. However, the analysis acknowledges that high-risk subgroups exist (C184) and does not distinguish acute from chronic toxicity (C170, C185-C186).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Preliminary RECOVERY trial results suggest hydroxychloroquine does not benefit hospitalized COVID-19 patients, while dexamethasone shows major benefit in patients receiving oxygen. This supports a paradigm of early antiviral benefit and late anti-inflammatory benefit, leaving potential roles for chloroquine/hydroxychloroquine in prevention and early treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C86 are based on press releases rather than peer-reviewed results (acknowledged in C82). While the interpretation about treatment paradigms (C85) is reasonable, the speculation about potential roles in prevention/early treatment (C86) is not supported by data presented in this manuscript. This represents informed speculation rather than evidence-based conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The study has several important limitations: patients were younger than typical COVID-19 patients, received high-quality intensive care in a single center, often co-ingested other substances, and admission concentrations only weakly correlate with ingested doses due to vomiting. Improvements in intensive care over time (including ECMO) likely improved survival for given drug exposures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119, C127-C134 appropriately acknowledge important limitations that could affect generalizability. The authors transparently discuss how these factors might bias results and affect interpretation. The acknowledgment that mortality might be higher in less well-supported settings (C118) is particularly important for translating findings to COVID-19 treatment contexts. These limitations are appropriately considered in the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The spectrophotometric assay does not separate chloroquine from desethylchloroquine and is relatively insensitive, but performs well at high concentrations. The metabolite has similar biological properties. Correction for the metabolite increases uncertainty around the 1% mortality threshold. Predictions are sensitive to PK model parameterization, and there are no large population PK studies to verify Cmax predictions, especially in the critical upper tails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C126 transparently describe analytical and modeling limitations. The authors appropriately acknowledge that the metabolite correction increases uncertainty (C123) and that absolute mortality predictions are sensitive to PK model choice (C124). The lack of validation data for upper tail predictions (C126) is a significant limitation for the safety predictions, though the use of two independent PK models provides some reassurance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The analysis does not make specific predictions for hydroxychloroquine toxicity, though hydroxychloroquine has similar pharmacokinetic and pharmacodynamic properties to chloroquine and is considered slightly safer. Unlike chloroquine, there are no large hydroxychloroquine self-poisoning cohorts to define toxicity thresholds. Safety margins for hydroxychloroquine are likely wider than for chloroquine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C152 acknowledge a major limitation: most COVID-19 trials use hydroxychloroquine, not chloroquine, yet the toxicity data are from chloroquine overdoses. The inference that hydroxychloroquine has wider safety margins (C149-C150) is reasonable based on animal data (C144) and clinical similarity (C145-C147), but remains uncertain due to lack of human toxicity data (C148). The conditional prediction about the PATCH trial (C152) appropriately qualifies the uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "For clinical monitoring of high-dose regimens, QRS widening can be used as a toxicity indicator when rapid blood concentration measurement is unavailable. QRS <100 msec indicates very low risk of serious cardiovascular toxicity. Plasma potassium should be maintained >4.0 mmol/L and magnesium >0.8 mmol/L with high-dose regimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C200 provide practical clinical recommendations well-supported by the concentration-QRS analysis. The QRS <100 msec threshold (C197) is conservative and evidence-based. The electrolyte recommendations (C200) are based on established knowledge about chloroquine-induced hypokalemia (C199). These are actionable clinical guidelines derived from the study findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C188",
+      "C194"
+    ],
+    "result": "Concerns over QT prolongation dominate reasons for restricting COVID-19 trials with these drugs. While both drugs cause significant QT prolongation through multichannel block and are classified as 'torsadagenic', many recent reports omit the contribution of QRS widening to QT prolongation. Restricting evaluation for TdP concerns seems unwarranted given the evidence-based understanding of concentration-dependent toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C160, C188, C194 present a well-reasoned critique of current regulatory concerns. The observation that QRS widening contributes to QT prolongation (C160) is important for interpreting QT measurements. The argument that concentration-dependent toxicity assessment is more evidence-based than QT-derived TdP risk (C194) is supported by the data presented. However, the recommendation to not restrict trials (C188) is an opinion rather than a data-driven conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Chloroquine and hydroxychloroquine are used extensively for malaria and rheumatological conditions, and now for COVID-19 despite lack of convincing efficacy evidence. In-vitro data suggest high doses are needed for COVID-19, motivating trials of higher doses than typically used. As of June 2020, 77 COVID-19 trials were recruiting, with highly variable dosing regimens raising cardiovascular toxicity concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 provide appropriate background context supported by citations and clinical trial registry data. The characterization of weak antiviral activity (C17-C18) is based on pharmacokinetic predictions from cited work. The observation about variable dosing (C21) is supported by Figure 1 data. These claims establish the rationale for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Chloroquine is dangerous in overdose, causing hypotension, arrhythmias, coma, ARDS, and cardiac arrest. The drugs have unusual pharmacokinetics with very large volumes of distribution and terminal half-lives exceeding one month. Large single doses are dangerous because distribution from a small central compartment results in high blood concentrations. Outcome depends on dose, time to hospital, and quality of intensive care.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36, C90-C103 provide established pharmacological and toxicological background supported by multiple citations. The pharmacokinetic explanation for acute toxicity (C94-C95) is sound. These claims establish the scientific foundation for the study but represent existing knowledge rather than novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "One death occurred in a 32-year-old female with sickle cell disease and admission concentration of 9.8 \u00b5mol/L who died from hemorrhagic ARDS despite cardiac improvement with ECMO. Complications of sickle cell disease likely contributed significantly to the fatal outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 describe an important outlier case that died at a concentration below the 10 \u00b5mol/L threshold. The authors appropriately identify confounding factors (sickle cell disease, anemia) that likely contributed to mortality. This case illustrates the limitations of population-level thresholds and the importance of individual patient factors, though it does not invalidate the overall concentration-mortality relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C79"
+    ],
+    "result": "Body weight is an important determinant of drug exposure when doses are not weight-adjusted. Even with the malaria treatment regimen, at most 2 per 1000 adults weighing 40 kg would reach concentrations above 10 \u00b5mol/L. Weight-adjusted dosing is important to avoid toxicity with high-dose treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C79 highlight an important practical consideration for dosing. The pharmacokinetic modeling appropriately demonstrates weight-dependent exposure with flat dosing. This is particularly relevant given that most oral formulations use fixed doses (C57). The recommendation for weight-adjusted dosing (C79) is well-supported by the modeling results showing substantially higher risk in lower-weight individuals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C87",
+      "C88",
+      "C89",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Chloroquine/hydroxychloroquine are being used extensively for COVID-19 despite lack of evidence, in a highly politicized environment. Confusion has been compounded by a fabricated dataset (subsequently retracted). Over-reactions by regulatory agencies, unjustified risk extrapolations, and misunderstanding of clinical pharmacology have jeopardized needed trials. At the pandemic's start, toxicity thresholds were not well-defined, leading to evaluation of varied dose regimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81, C87-C89, C104-C106 provide important context about the research and regulatory environment. The reference to the retracted Mehra et al. paper (C87-C88) is factual. However, the characterization of regulatory responses as 'over-reactions' (C89) represents the authors' opinion rather than objective assessment. These claims establish the motivation for the study but include subjective judgments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C180",
+      "C181"
+    ],
+    "result": "The RECOVERY and SOLIDARITY trials randomized 2473 patients to hydroxychloroquine and do not show increased mortality at times expected if the drug was causing lethal cardiovascular toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C181 provide important real-world evidence supporting the safety predictions. The observation that mortality is not increased at expected times (first and last days of treatment) is consistent with the modeling predictions that these dose regimens are safe. However, this is based on temporal patterns rather than detailed safety analysis, and the trials were not specifically designed to detect cardiovascular toxicity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The Guangdong Province recommendation of 500 mg chloroquine phosphate salt (310 mg base) twice daily for 10 days in adults >50 kg is not predicted to incur significant cardiotoxicity risk. Model predictions support this body weight threshold for dose reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 validate existing treatment guidelines using the developed model. The finding that the 50 kg weight threshold is appropriate (C64) provides evidence-based support for the Guangdong recommendations. This represents a practical application of the modeling work to evaluate real-world dosing guidelines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C178",
+      "C179",
+      "C184",
+      "C185",
+      "C186",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "Approximately 350 tons of hydroxychloroquine are manufactured annually, with millions receiving long-term regimens for rheumatological conditions. Many patients have systemic lupus erythematosus, which is associated with myocarditis and arrhythmias. Understanding concentration-dependent toxicity is essential for assessing risk-benefit trade-offs in COVID-19 trials, where disease severity ranges from mild to critical and case fatality is age-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C165, C178-C179, C184-C186, C190-C193 provide important context about drug usage patterns and the need for evidence-based risk assessment. The contrast between enormous long-term use and rare TdP reports (C161-C166) is striking. The discussion of risk-benefit considerations (C192-C193) appropriately frames the clinical decision-making context, though these are general principles rather than specific findings from this study.",
+    "result_type": "MINOR"
+  }
+]

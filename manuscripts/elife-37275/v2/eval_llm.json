@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Rats successfully learned to discriminate between reward-available and reward-unavailable cues in both light and sound blocks. Approach behavior was significantly influenced by cue outcome (p < .001) but not by cue identity (p = .115), with no evidence of within-session learning (p = .86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 provide converging behavioral evidence from the task design, learning criteria (chi-square tests over 3 consecutive days), and linear mixed effects models. The statistical tests appropriately control for relevant variables and demonstrate clear discrimination learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Neural recordings yielded 443 units from NAc, of which 344 were analyzed after excluding units with firing rate drift. Of these, 133 (39%) were cue-modulated, with more showing decreased (n=103) than increased (n=30) firing, and diverse response patterns were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 describe the neural data collection and preprocessing with appropriate quality control measures (Mann-Whitney U test for drift, Wilcoxon signed-rank test for cue modulation). The methods are clearly described and the proportions reported are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "GLM analysis revealed that NAc units encode multiple cue features: ~32% showed identity coding, ~41% location coding, and ~20% outcome coding (emerging after cue onset). These representations accounted for 4-5% of firing rate variance and were not attributable to behavioral confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 present GLM results with appropriate statistical controls (shuffling procedures, z-scores > 1.96, control for confounds). The forward stepwise selection and multiple control analyses (approach-only trials, nuisance variables) strengthen the conclusions about cue feature encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "LDA classification analysis on pseudoensembles demonstrated above-chance prediction of cue identity and location across all time points, while outcome prediction increased gradually after cue onset, confirming population-level encoding of cue information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe LDA classification with appropriate cross-validation (10-fold) and statistical controls (shuffling, z-scores > 1.96). The temporal dynamics of classification accuracy align with the GLM findings, providing convergent evidence at the population level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Correlation analysis of recoded GLM coefficients revealed that identity coding was independent from outcome coding (r=.01, z=0.81), while identity and location showed joint population coding (r=.10, z=6.61), as did location and outcome (r=.12, z=8.07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 present correlation analyses with appropriate shuffling controls and z-score thresholds. The recoding approach (binary 0/1 for significant predictors) is reasonable for assessing population overlap, though the interpretation depends on the validity of the z-score thresholds used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Population activity analysis showed nearly uniform distribution of firing fields across task space, with qualitatively different patterns between light and sound blocks. Within-block correlations were significantly higher than across-block correlations (p < .001), demonstrating that NAc activity distinguishes cue identity throughout trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 describe population-level analyses with appropriate statistical testing (linear mixed effects models). The visualization approach (ordering by peak firing) and correlation analysis provide complementary evidence for distributed, identity-dependent coding throughout the task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "GLM analysis during the post-approach period revealed persistent coding of cue identity (~20%), location (~25%), and outcome (~25%) during nosepoke and after outcome receipt, demonstrating that NAc discriminates cue conditions throughout trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 extend the cue-onset GLM analysis to later task phases using identical methods. The persistence of coding across task phases is well-documented, though the proportions are somewhat lower than at cue onset, which is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C76"
+    ],
+    "result": "Identity coding was maintained by a joint overlapping population across all three task events (cue-onset, nosepoke, outcome), with significant positive correlations between all time point pairs (z-scores: 3.47-10.91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C76 present temporal correlation analyses showing persistent identity coding by the same population. The z-scores are well above threshold and the pattern is consistent across comparisons, supporting the conclusion of maintained representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C75",
+      "C77"
+    ],
+    "result": "Outcome coding showed a different temporal pattern: coding at cue-onset was separate from nosepoke (r=-0.04, z=-3.10) and independent from outcome receipt (r=.03, z=1.65), while nosepoke and outcome showed joint coding (r=.15, z=9.74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C75, and C77 demonstrate distinct populations encode outcome at different task phases. The negative correlation between cue-onset and nosepoke is particularly notable and statistically significant, supporting the conclusion of separate populations before and after behavioral decisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "At nosepoke, all cue feature pairs showed joint coding (z-scores: 3.65-8.26). At outcome, identity showed joint coding with location (z=5.58) and outcome (z=2.93), while location and outcome were coded independently (z=0.28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 characterize the overlap of cue feature coding at specific task phases. The z-scores support the conclusions, though the identity-outcome correlation at outcome (z=2.93) is relatively weak compared to other joint coding examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Population activity aligned to nosepoke showed clustering around outcome receipt for reward-available trials, with higher within-block than across-block correlations for all cue features (p < .001), confirming that NAc activity distinguishes all task phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 extend the population analysis to the nosepoke-aligned period. The statistical approach is consistent with earlier analyses and the results converge with other findings about persistent, distributed coding throughout the task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The main finding is that NAc encodes both cue identity and expected outcome. Identity and outcome coding were independent at cue-onset but showed joint coding at nosepoke and outcome receipt. Identity coding persisted throughout trials by the same population and was detectable at both single-unit and population levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 summarize the major findings from the study. These conclusions are well-supported by the convergent evidence from GLM analyses, LDA classification, correlation analyses, and population activity patterns described in earlier results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "NAc unit activity was distributed uniformly throughout trials rather than confined to salient events, and this temporally distributed activity differed systematically between cue identities, outcomes, and locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 describe the distributed nature of NAc coding. This is supported by the population activity visualizations (Figure 5) and correlation analyses showing that firing fields tile the task space uniformly while still discriminating task variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study controlled for potential confounds of time/drift encoding by excluding units with significant firing rate drift between block halves, including trial number as a nuisance variable in GLMs, and demonstrating stronger within-block than across-block correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 describe important controls for alternative interpretations. The multi-pronged approach (exclusion, statistical control, correlation analysis) appropriately addresses the concern that block-separated cues could reflect time rather than identity coding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors acknowledge limitations including that cues were never presented simultaneously, recordings were from well-learned behavior rather than acquisition, and the behavioral relevance of identity coding remains unknown, though they speculate it could reflect context or strategy encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 appropriately acknowledge study limitations. These are honest assessments that the experimental design cannot definitively distinguish between cue identity coding and alternative interpretations like context or strategy encoding, and that behavioral relevance is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Location coding persisted despite being uninformative about reward, unlike dorsolateral striatum where such coding disappears when uninformative. This persistent NAc location coding likely reflects hippocampal inputs and may bias credit assignment toward associating motivationally relevant events with their locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C113 present an interesting finding (C109-C110 supported by data) but the mechanistic interpretations (C112-C113) are speculative. The comparison to dorsolateral striatum (C111) is cited but the functional interpretation about credit assignment bias lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "NAc units showed distributed activity throughout trials, consistent with previous work on sequential coding. This pattern was modulated by task variables like cue identity, suggesting a dynamical systems perspective where different task conditions correspond to different neural state space trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 integrate the current findings with prior literature and theoretical frameworks. The distributed coding observation is well-supported by data (C114), appropriately contextualized with citations (C115-C116), and the dynamical systems interpretation (C118) is a reasonable theoretical framework, though speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Cue identity coding may support contextual modulation of cue relevance, as context requires mapping specific cues to outcomes. This interpretation is supported by prior work showing NAc units prefer firing during specific rules (Sleezer et al. 2016) and fMRI evidence of relevance-gated value representations (FitzGerald et al. 2014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C126 present a plausible functional interpretation supported by relevant citations (C123-C124), but the connection to the current findings is speculative (C126). The logic is sound (C121-C122) but the current study did not test contextual modulation or rule-switching directly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Cue identity coding may serve credit assignment in reinforcement learning, as value updates require encoding of preceding cue features (eligibility traces). Maladaptive credit assignment could contribute to psychiatric disorders including anxiety disorders, schizophrenia, and Parkinson's disease, making this a clinically relevant finding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C136 present an important theoretical framework (C127, C130-C131 well-supported by RL literature) and clinical implications (C134-C135 appropriately speculative with citations). However, the connection to the current findings (C133) is speculative since the task did not require credit assignment across temporal delays during recording sessions (C105).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The finding that NAc discriminates between outcome-predictive stimuli with similar motivational significance extends prior rodent literature. Unlike previous work where cue identity was confounded with outcome (Setlow et al. 2003) or focused on outcome identity (Cooch et al. 2015), this study demonstrates cue identity encoding independent of outcome at multiple levels of analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 appropriately contextualize the findings within prior literature. The comparisons to previous studies (C91, C93) are accurate and the distinction of the current work (C94) is valid. The conclusion about multi-level dissociation (C95) is supported by the GLM and LDA results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "While fMRI studies support NAc as a domain-general value center in neuroeconomic frameworks, the current electrophysiological findings suggest this view neglects additional contributions to learning and decision-making, such as the cue identity signals reported here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 appropriately position the findings relative to the neuroeconomic framework. The fMRI literature is accurately cited (C96) and the conclusion that value-centric views are incomplete (C97) is justified by the demonstration of identity coding independent of outcome value.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The study used 4 adult male Long-Evans rats (from an initial 5, one excluded for poor cell yield), individually housed on 12/12 hr light-dark cycles, food restricted to 85-90% free feeding weight, with all procedures approved by institutional animal care committees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 describe the subjects and housing conditions with appropriate detail. The sample size is small (n=4) which limits generalizability, though this is typical for electrophysiology studies. Ethical approval is documented (C140).",
+    "result_type": "MINOR"
+  }
+]

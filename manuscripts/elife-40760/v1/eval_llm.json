@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C107"
+    ],
+    "result": "MSI colorectal cancer samples exhibit a high rate of indel mutations within active enhancers, characterized by short (1-2 bp) contractions of homopolymer runs of A/T. This finding was validated in both cell lines and primary tumors, with 355 candidate enhancer-activating indels detected from 24 CRC cell lines, 95% validation by Sanger sequencing, and confirmation in a Lynch syndrome patient tumor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25-C37, and C107 collectively demonstrate that MSI CRC samples have elevated indel rates in enhancers with the characteristic MMR signature. The validation rate (C30: 19/20 by Sanger sequencing) indicates high specificity. The finding in both cell lines and primary tumors (C33-C34, C37) strengthens the conclusion that this is not an artifact of cell culture. The characterization of indel properties (C27-C29, C31) is well-supported by the data presented in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C43"
+    ],
+    "result": "Enhancers with indels in MSI CRC show evidence of positive selection, as gained enhancers are significantly more likely to contain allele-biased indels compared to shared enhancers, even after controlling for enhancer length and H3K27ac signal intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C42, and C43 are supported by the data in Figure 2b-c showing that in all 5 MSI samples, gained enhancers had higher proportions of allele-biased indels than shared enhancers. The statistical control for confounding variables (enhancer length and H3K27ac intensity) in C43 strengthens the inference of positive selection. However, the manuscript does not provide explicit p-values for all comparisons, which would strengthen the statistical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Enhancers with indels show increased target gene expression in MSI CRC. Genes regulated by gained enhancers containing indels were more highly expressed than the same genes regulated by gained enhancers without indels, with enrichment for GO terms related to tissue development, embryogenesis, and cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C44-C46 are supported by the expression analysis shown in Figure 3a-b. The comparison design (same genes in cells with vs. without indels) appropriately controls for baseline enhancer activity. The GO enrichment analysis (C45) provides biological context. However, the manuscript notes that H3K27ac levels were verified to be similar between comparison groups (Figure 3\u2014figure supplement 1a), which is important for interpretation but suggests the effect size may be modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "A subset of enhancer indels is highly recurrent across primary CRC tumors. Analysis of 50 whole-genome sequenced samples revealed that 13% (46/355) of cell line indels were recurrent in at least one primary tumor, with 15 indels significantly recurrent in two or more samples, occurring predominantly in MSI samples and more frequently in gained enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47-C53 are well-supported by the WGS analysis of 47 primary CRC samples and 3 cell lines. The recurrence analysis (C50-C51) provides strong evidence for functional relevance, as random passenger mutations would not be expected to recur. The enrichment in gained enhancers (C53) further supports positive selection. The statistical significance of recurrence (C51) is stated but the specific test and p-values are not fully detailed in the text, though Figure 3c indicates \u03c7\u00b2 test with p<0.05.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Recurrent enhancer indels are associated with genes that promote cell fitness and proliferation. The most recurrent indels target genes including UBE2V2, USP8, and COPB2, with GO enrichment for cancer hallmarks. Genes associated with 'cell proliferation' showed significantly lower fitness scores (p=0.046), and specific genes like COPB2 and UBE2V2 were identified as dependency genes in relevant cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 are supported by integration with DepMap dependency data. The p-value for cell proliferation genes (C59: p=0.046) is marginally significant and the manuscript notes that recurrent indel genes as a set were not significantly enriched for dependency genes (p=0.15). However, the specific examples of COPB2 (C60) and UBE2V2 (C61) as dependency genes, particularly the MSI-specific dependency of UBE2V2, provide compelling evidence for functional relevance of at least a subset of recurrent indels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The indels in MSI CRC enhancers affect short homopolymer tracts of A/T and increase affinity for FOX transcription factors. FOX motifs are most enriched at indels in gained enhancers, 83% of gained enhancer indels show FOX enrichment by ChIP-seq with evidence of allele-specific binding, and MSI samples have 50% more gained enhancers at TGTTT(Tn) sequences (the core FOX motif) than MSS samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C63-C73 are well-supported by multiple lines of computational and experimental evidence: motif enrichment analysis (C63, Table 1), computational prediction of increased FOX binding affinity (C66), FOX ChIP-seq showing 83% overlap and allele-specific binding (C68-C69), and the unbiased genome-wide analysis showing 50% more gained enhancers at FOX motif sequences in MSI vs MSS (C72). The convergence of these independent analyses strongly supports the conclusion that FOX factors mediate enhancer activation (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "CRISPR/Cas9-mediated MLH1 knockout in MSS CRC cells induces the MSI phenotype and generates enhancer-activating indels with the characteristic MMR signature. After 2.5 months of culture, MLH1-/- cells showed a 10-fold increase in indel rate, with 30 indels in gained enhancers showing allele-bias, though the frequency is likely lower than in naturally-derived MSI tumors due to limited culture time and lack of selective pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C74-C81 describe a well-designed functional experiment that recapitulates the natural acquisition of MSI mutations. The CRISPR knockout was validated (C75), MSI phenotype confirmed (C76), and the resulting indels matched the expected signature (C77). The key finding of allele-biased indels in gained enhancers (C80) supports causality. The caveat in C81 about lower frequency than natural tumors is appropriately noted and reflects experimental limitations rather than a flaw in the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "MSI signature mutations activate enhancers in vivo in a xenograft tumor metastasis model. MLH1-/- cells injected into mice formed tumors with characteristic MMR-signature indels, 5-10% of which were in gained enhancers with higher mutant allele fractions, and 31 indels showed perfect correlation with H3K27ac increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C92 describe in vivo validation of enhancer activation by MSI mutations. The experimental design (C82-C84) is appropriate, with controls (MLH1+/+ cells) and consistency across tumors (C85). The mutation signature matches expectations (C86), and the key findings of allele-biased indels in gained enhancers (C87-C88) and perfect correlation cases (C89-C90) provide strong evidence for in vivo enhancer activation. The identification of OGDH as an MSI-specific dependency gene (C91) adds functional relevance. However, the sample size is limited (5 MLH1-/- tumors, 2 MLH1+/+ tumors).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C95",
+      "C100",
+      "C101"
+    ],
+    "result": "MMR signature mutations activate enhancers in CRC tumor epigenomes to provide a selective advantage. The prevalence of these mutations in MSI CRC is especially high, and they confer a fitness advantage beyond that of canonical CRC driver genes, with their cumulative effect on growth being substantial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C95, C100-C101 represent the main conclusions of the study, synthesizing evidence from multiple experiments. The conclusion is well-supported by the convergence of: (1) positive selection evidence (C2, C42-C43), (2) increased target gene expression (C3, C44), (3) recurrence in primary tumors (C4, C50-C53), (4) association with dependency genes (C59-C61), (5) functional validation in CRISPR-engineered cells (C74-C80), and (6) in vivo validation (C82-C92). The inference of selective advantage is reasonable given the multiple lines of evidence, though direct measurement of fitness effects would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In MSS CRC, indel mutation rate and H3K27ac levels are anti-correlated (Pearson r 95% CI [-0.63,-0.59]), but in MSI samples there is no correlation (Pearson r 95% CI [-0.020, 0.031]), with both H3K27ac-enriched and depleted regions showing a 68-fold higher mutation rate than MSS CRC, consistent with loss of protection in open chromatin upon MMR loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by the correlation analysis shown in Figure 2a and Figure 2\u2014figure supplement 1. The specific correlation coefficients with confidence intervals (C38-C39) indicate appropriate statistical analysis. The 68-fold increase (C40) is a striking finding. The interpretation (C41) is supported by citation to prior work (Supek and Lehner, 2015). This result provides important context for understanding the distribution of mutations in MSI tumors and supports the subsequent analysis of positive selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript provides background on cancer genomics and the challenges of identifying functional enhancer mutations, including the heterogeneity of tumor epigenomes, variable mutation rates, and the difficulty of determining the cell type of origin for many cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C23 represent background knowledge and context from the introduction. These claims are appropriately supported by citations to relevant literature (Lawrence et al., 2014; Kandoth et al., 2013; Battey et al., 1983; Zhang et al., 2016; Beroukhim et al., 2016; Hnisz et al., 2016; Huang et al., 2013; Mansour et al., 2014; Puente et al., 2015; Schuster-B\u00f6ckler and Lehner, 2012; Polak et al., 2015). These claims establish the scientific context and rationale for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Variant Enhancer Loci (VELs) are sites that differ in the levels of H3K4me1 and H3K27ac between normal crypts and CRC, as previously defined by the authors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 describes a methodological approach previously published by the authors (Akhtar-Zaidi et al., 2012; Cohen et al., 2017). This is appropriately cited and provides context for the current study's approach to identifying gained enhancers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "FOX transcription factors are known pioneer factors in many cell types and are associated with enhancer re-programming, as established in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 represent established knowledge from the literature, appropriately supported by citations (Ang et al., 1993; Lupien et al., 2008; Iwafuchi-Doi et al., 2016; Pomerantz et al., 2015; Roe et al., 2007). This provides important biological context for interpreting the FOX enrichment findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C99",
+      "C103",
+      "C105",
+      "C108",
+      "C109"
+    ],
+    "result": "The manuscript provides discussion context, including that regulatory mutations are generally considered rare passengers, that MMR mutations in coding regions can affect splicing/frameshift (e.g., TGFBR2), that MSI is continuously evolving, and that MSI CRC is a good candidate for immunotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C96-C97, C99, C103, C105, C108-C109 represent discussion points and established knowledge that provide context for interpreting the study's findings. These are appropriately supported by citations where relevant (Fredriksson et al., 2014; Cuykendall et al., 2017; Markowitz et al., 1995; Ionov et al., 1993; Kim et al., 2013) and by the study's own data (C94).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C102",
+      "C104",
+      "C106"
+    ],
+    "result": "The manuscript discusses how the functional regulatory mutations described differ from previously known examples (TERT, ER, TAL1, MYC, FOXA1), speculates that MSI enhancer mutations could be 'reprogrammers' of cell identity, and suggests future investigations into their role in tumor evolution, drug resistance, and immunotherapy response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98, C102, C104, and C106 represent interpretations and speculations about the implications of the findings. While C98 is a reasonable comparison supported by the data, C102 is explicitly speculative ('could be considered'), and C104 and C106 are suggestions for future research ('could play an important role', 'it would be worth investigating'). These are appropriate discussion points but represent hypotheses rather than demonstrated findings.",
+    "result_type": "MINOR"
+  }
+]

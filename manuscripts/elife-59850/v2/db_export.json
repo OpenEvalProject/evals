@@ -1,0 +1,1662 @@
+{
+  "submission": {
+    "id": "a69e4d5d-2b7b-4224-8eab-466291c2892b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:59:42.605957Z",
+    "updated_at": "2025-12-02T20:59:42.605957Z"
+  },
+  "content": [
+    {
+      "id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "submission_id": "a69e4d5d-2b7b-4224-8eab-466291c2892b",
+      "content_type": "manuscript",
+      "content_text": "# Genetic timestamping of plasma cells in vivo reveals tissue-specific homeostatic population turnover\n\n## Authors\n\n- An Qi Xu<sup>1</sup> ([ORCID: 0000-0001-8008-6462](https://orcid.org/0000-0001-8008-6462))\n- Rita R Barbosa<sup>1</sup>\n- Dinis Pedro Calado<sup>1</sup> ([ORCID: 0000-0001-8239-7184](https://orcid.org/0000-0001-8239-7184)) \u2020\n\n### Affiliations\n\n1. Immunity and Cancer, The Francis Crick Institute London United Kingdom\n2. Peter Gorer Department of Immunobiology, School of Immunology & Microbial Sciences, King\u2019s College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nPlasma cells (PCs) are essential for protection from infection, and at the origin of incurable cancers. Current studies do not circumvent the limitations of removing PCs from their microenvironment and confound formation and maintenance. Also, the investigation of PC population dynamics has mostly relied on nucleotide analog incorporation that does not label quiescent cells, a property of most PCs. The main impediment is the lack of tools to perform specific genetic manipulation in vivo. Here we characterize a genetic tool (JchaincreERT2) in the mouse that permits first-ever specific genetic manipulation in PCs in vivo, across immunoglobulin isotypes. Using this tool, we found that splenic and bone marrow PC numbers remained constant over-time with the decay in genetically labeled PCs being compensated by unlabeled PCs, supporting homeostatic population turnover in these tissues. The JchaincreERT2 tool paves the way for an in-depth mechanistic understanding of PC biology and pathology in vivo, in their microenvironment.\n\n## Introduction\n\nAntibodies produced by plasma cells (PCs) are crucial for immune protection against infection and for vaccination success (Nutt et al., 2015). Upon activation, B cells terminally differentiate into PCs, a process initiated by the downregulation of the B cell transcription factor PAX5 (Kallies et al., 2007). This event allows the expression of multiple factors normally repressed by PAX5, including Xbp1 and Jchain (Castro and Flajnik, 2014; Nutt et al., 2015; Rinkenberger et al., 1996; Shaffer et al., 2004). PAX5 downregulation is also followed by the expression of the transcription factors IRF4 and BLIMP1 that play essential roles in the establishment of the PC program (Kallies et al., 2007; Klein et al., 2006; Sciammas et al., 2006; Shapiro-Shelef et al., 2003). Beyond physiology, multiple cancers have a PC as cell of origin, including multiple myeloma, the second most frequent hematological malignancy overall, and for which a cure remains to be found (Palumbo and Anderson, 2011). As a\u00a0consequence, the study of gene function in PC biology and pathology is a subject of intense investigation.\n\nHowever, at least in part because of technical limitations most PC studies make use of in vitro and cell transfer systems that remove PCs from their microenvironment. Currently, genetic manipulation of PCs is not specific and targets other cell populations such as B cells, confounding PC formation, and maintenance. Also, studies on the turnover of the PC population are lacking, as investigation of the regulation of PC maintenance has mostly relied on the use of nucleotide analogs that do not track the vast majority of PCs due to their quiescent nature.\n\nWe found amongst well-known PC-associated genes, that Jchain (Igj) had the highest level and most specific expression in PC populations. JCHAIN is a small polypeptide required to multimerize IgM and IgA, and necessary for the transport of these Ig classes across the mucosal epithelium in a poly-Ig receptor-mediated process (Brandtzaeg and Prydz, 1984; Castro and Flajnik, 2014; Max and Korsmeyer, 1985). Here we characterized in detail a GFP-tagged creERT2 allele at the Jchain endogenous locus: IgjcreERT2, hereafter termed JchaincreERT2. We found at the single cell level that GFP as a reporter of Jchain expression occurred in PCs across immunoglobulin isotypes, including IgG1. Using the JchaincreERT2 allele we performed the first-ever highly specific cre-loxP genetic manipulation in PCs residing in their natural microenvironment in vivo. This system allowed inclusive genetic timestamping of PCs, independently of their cell cycle status. We uncovered that the number of PCs in the spleen and bone marrow remained constant over-time with the decay in numbers of genetically labeled PCs being compensated by that of unlabeled PCs, supporting homeostatic population turnover in these tissues. The JchaincreERT2 is thus a validated PC specific genetic tool that paves the way for an\u00a0in-depth mechanistic understanding of PC biology and pathology in vivo, in their microenvironment.\n\n## Results\n\n### Jchain transcripts are highly enriched in plasma cells\n\nB-to-PC differentiation is a process that involves a complex network of factors (Figure 1A; Nutt et al., 2015). We investigated the level and specificity of the expression of genes associated with PCs (Xbp1, Jchain, Scd1, Irf4, and Prdm1) through the analysis of a publicly available RNA sequencing dataset for immune cell populations (ImmGen, [Heng et al., 2008]). We first determined the cell populations with the highest transcript level for each factor. Xbp1 and Irf4 were primarily expressed in PCs, however, the expression in bone marrow PCs (B_PC_BM) was less than two-fold greater than that of non-PC populations (Figure 1B). The expression of Sdc1 and Prdm1 was not specific to PCs (Figure 1C). Notably, peritoneal cavity macrophages (MF_226+II+480lo_PC) expressed more Sdc1 than bone marrow PCs (B_PC_BM), and a subset of FOXP3+ T cells (Treg_4_FP3+_Nrplo_Co) expressed higher levels of Prdm1 than that observed in splenic plasmablasts (B_PB_Sp) and bone marrow PCs (B_PC_BM; Figure 1C). By contrast, Jchain had the highest level of transcript expression in PCs compared to non-PCs and was the most PC specific amongst all factors, with a forty-fold enrichment over germinal center (GC) B cells (B_GC_CB_Sp; Figure 1D). We concluded that the Jchain locus was a suitable candidate for the generation of PC specific genetic tools.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the network of factors associated with plasma cell differentiation. Upward arrows indicate increased expression compared to the precursor population. (B\u2013D) Differential gene expression analysis using RNA sequencing data (ImmGen, Heng et al., 2008). (B) Analysis of Xbp1 and Irf4, which encode for XBP1 and IRF4, respectively. (C) Analysis of Sdc1 and Prdm1, which encode for CD138 and BLIMP1, respectively. (D) Analysis for Jchain (Igj) that encodes for JCHAIN. \u2018x\u2019 indicates fold change. Expression Value Normalized by DESeq2. http://rstats.immgen.org/Skyline/skyline.html.\n\n### Jchain is expressed in a small fraction of GC B cells and in most plasma cells\n\nWe searched alleles produced by the EUCOMMTools consortium (Koscielny et al., 2014) and identified a genetically engineered Jchain allele produced by the Wellcome Trust Sanger Institute: MGI:5633773, hereafter termed JchaincreERT2. The genetically engineered Jchain allele contained an FRT site between exons 1 and 2 followed by an engrailed two splice acceptor sequence and an EGFP.2A.creERT2 expression cassette (Figure 2A). In this design, the expression of the EGFP (GFP) and of creERT2 is linked by a self-cleaving 2A peptide under the transcriptional control of the Jchain promoter (Figure 2A). To determine cells with GFP expression, we initially analyzed the spleen from mice heterozygous for the JchaincreERT2 allele that had been immunized with sheep red blood cells (SRBC) 12 days earlier (Figure 2B). B220 is expressed on the surface of B cells and downregulated during PC differentiation (Pracht et al., 2017). We, therefore, defined three cell populations based on the levels of GFP fluorescence and B220 surface expression: GFPlowB220high, GFPintB220int, GFPhighB220low, and a population negative for both markers (GFPnegB220neg; Figure 2C). Next,\u00a0we determined the fraction of cells within these populations that expressed surface CD138, a commonly used marker to define PCs by flow-cytometry (Pracht et al., 2017). The GFPnegB220neg population did not contain CD138+ cells, however, the fraction of CD138+ cells increased in the remaining populations in agreement with the reduction of B220 expression during PC differentiation, and the GFPintB220int and GFPhighB220low populations were mostly composed of CD138+ cells (Figure 2D,E). Identical results were found when defining PCs using in addition surface expression of CXCR4, a chemokine receptor that facilitates homing of PCs to the bone marrow (Figure 2D,E; Hargreaves et al., 2001). Thus, increased GFP expression from the JchaincreERT2 allele associates with the loss of B220 and increased expression of PC-associated surface markers.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of Jchain targeted allele Wtsi MGI:5633773. Rectangular boxes indicate exons, and exon number is on top; pink triangle indicates an FRT sequence; EGFPcreERT2 cassette contains a splice acceptor site (SA)-led EGFP-2A-creERT2 expression cassette followed by a poly-A tail inserted in the intron between exons 1 and 2; white triangle indicates a ROX sequence; orange rectangle indicates a promoter-driven puromycin resistance cassette; green triangle indicates loxP sequence. (B) Schematic of experimental procedure protocol. Mice carrying the JchaincreERT2 allele were immunized with sheep red blood cells (SRBC) intravenously (i.v.) on day 0 and spleens of mice were analyzed at day 12 post-immunization. (C) Gating strategy of populations by flow-cytometry according to the expression of GFP and B220 in mice carrying the JchaincreERT2 allele and wild-type B6 mice for a\u00a0negative control of GFP expression. (D) Gating strategy by flow-cytometry for plasma cells within the GFPhiB220low population using CD138+ and CD138+CXCR4+ markers. (E) Cumulative data for CD138+ and CD138+CXCR4+plasma cells analyzed as in (D). Top: fraction of CD138+plasma cells; bottom: fraction of CD138+CXCR4+plasma cells within the four populations defined by flow-cytometry according to the expression of GFP and B220 in mice carrying the JchaincreERT2 allele. (F) Gating strategy by flow-cytometry for total CD138+ and CD138+CXCR4+plasma cells within GFPlowB220hi population. The CD138neg cell fraction within the GFPlowB220hi population was analyzed for the CD19 B cell marker and stained for CD38 and FAS to determine germinal center (GC) B cells. (G) Cumulative data for the frequency of GC B cells within the CD138negGFPlowB220hi population. Each symbol (E: n\u00a0=\u00a026, G: n\u00a0=\u00a026) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ***=p\u00a0\u2264\u00a00.001, ****=p\u00a0\u2264\u00a00.0001 (unpaired Student\u2019s t-test). Data are representative of three independent experiments (E, G).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Cumulative data for the frequency of GFPlowB220hi (GlowBhi) within live cells. (B) Cumulative data for the frequency of GC B cells within the CD138negGFPlowB220hi population. (C\u2013D) Cumulative data for CD138+ (C) and CD138+CXCR4+ (D) cells within the GFPlowB220hi population. Each symbol (n\u00a0=\u00a026) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns\u00a0=\u00a0not significant, **=p\u00a0\u2264\u00a00.01, ***=p\u00a0\u2264\u00a00.001 (unpaired Student\u2019s t-test). Data are representative of three independent experiments (A\u2013D).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Gating strategy by flow-cytometry for the B cell lineage in the spleen. Mice carrying the JchaincreERT2 and R26lslRFP alleles were immunized with sheep red blood cells (SRBC) intravenously (i.v.) at day 0 and spleens were analyzed at day 12. Mice did not receive tamoxifen treatment. Cells were pre-gated on live singlets and for the expression of CD138 and CXCR4 markers. CD138+CXCR4+ cells were defined as plasma cells (PC). Non-PCs positive for the CD19 and B220 markers were defined as B2 cells, whereas those cells displaying a CD19+B220low were defined as B1 cells. B1 cells were further characterized as B1a (CD5hiCD23neg) and B1b (CD5lowCD23neg) cells. B2 cells were further delineated into marginal zone (MZ) B cells (CD21hiCD23int), T1 B cells (CD21lowCD23low), T2 B cells (CD21intIgMhiCD23hi), and follicular B cells (Fo, CD21intIgMintCD23hi). Non MZ or T1 cells were gated for germinal center (GC) B cells (CD38lowFAShigh) and these were further delineated into dark zone GC B cells (CXCR4highCD86low) and light zone GC B cells (CXCR4lowCD86high; Bonami et al., 2014) (B) Cumulative data for the GFP+ cell fraction within the B cell lineage in the spleen. Analyzed as in (A). (C) Cumulative data for the GFP+ cell fraction in additional B cell lineage and non-B cell lineage populations in the spleen. Analyzed as in (A). (D) Gating strategy by flow-cytometry for the B cell lineage in the bone marrow. Mice carrying the JchaincreERT2 and R26lslRFP alleles were immunized with sheep red blood cells (SRBC) intravenously (i.v.) at day 0 and spleens were analyzed at day 12. Mice did not receive tamoxifen treatment. Cells were pre-gated on live singlets and gated for CD138 and B220 expression. CD138+B220low cells were defined as plasma cells (PCs). Non-PCs positive for the CD19 and B220 markers were examined and further delineated to immature B cells (IgM+CD43neg), Pre-B cells (fraction D; IgMnegCD43neg), and Pro-B cells (IgMnegCD43+). Pro B cells were further sub-divided into Hardy fraction A (BP1negCD24neg), fraction B (BP1negCD24+), fraction C (BP1+CD24neg) and fraction C\u2019 (BP1+CD24+). (E) Cumulative data for the GFP+ cell fraction in the B cell lineage and in plasma cells in the bone marrow. Analyzed as in (D). Each symbol (B: n\u00a0=\u00a05, C: n\u00a0=\u00a012, E: n\u00a0=\u00a05) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. Data are representative of three independent experiments (B, C, E).\n\nWe further investigated the cellular composition of the GFPlowB220high population that contained the fewest CD138+ cells (1% to 20%; Figure 2E). The gate defining this population was designed to not disregard the occurrence of cells with a low-level of GFP expression in mice carrying the JchaincreERT2 allele. However, such strategy inevitably led to the inclusion of a small fraction of \u2018false\u2019 GFP positive cells as indicated by the analysis of control mice (wild-type C57BL/6) that are GFP negative (Figure 2C). Still, the fraction of cells within the GFPloB220hi population was significantly enriched in JchaincreERT2 mice compared to control (Figure 2\u2014figure supplement 1). Also above background, we found that virtually all CD138neg cells within the GFPlowB220high population of mice with the JchaincreERT2 allele expressed the B cell marker CD19 (Figure 2F), and in agreement with Jchain gene expression analysis (Figure 1D) these cells mostly represented germinal center (GC) B cells (CD38lowFAShigh; Figure 2F,G and Figure 2\u2014figure supplement 1). By contrast, only 30% of JchaincreERT2 mice had above background enrichment for CD138+ and CD138+CXCR4+ expressing cells within the GFPlowB220high population (Figure 2\u2014figure supplement 1). These data prompts caution when using the gate defining the GFPlowB220high population to study enrichment for PC markers in mice carrying JchaincreERT2 allele, as it may contain an unacceptable level of contamination by non-GFP positive cells.\n\nWe further performed analyses in the spleen and bone marrow of 12 day SRBC immunized mice heterozygous for the JchaincreERT2 allele in which precursors and mature B cells, and non-B cell populations were first defined using surface markers and the fraction of GFP expressing cells within those populations determined (Figure 2\u2014figure supplement 2). We found that most PCs in the spleen and bone marrow expressed GFP (CD138+CXCR4+, 60 to 90%; Figure 2\u2014figure supplement 2). We also observed that a minor fraction of B1b cells (0 to 6%) in the spleen expressed GFP (Figure 2\u2014figure supplement 2), possibly in agreement with the knowledge that B1b cells are prone to differentiate into PCs and are a source of IgM antibodies during T cell independent responses (Alugupalli et al., 2004). Collectively these data confirmed at the single cell level the gene expression analysis using bulk populations (Figure 1D) and suggested that Jchain expression is highly enriched in PCs.\n\n### Jchain expression correlates with that of IRF4 and BLIMP1\n\nIRF4 and BLIMP1 transcription factors play an essential role in PC differentiation (Kallies et al., 2007; Klein et al., 2006; Sciammas et al., 2006; Shapiro-Shelef et al., 2003). We analyzed the spleen of 12 day SRBC immunized mice heterozygous for the JchaincreERT2 allele and determined the expression pattern of IRF4 and BLIMP1 in the populations defined by varied GFP and B220 expression (Figures 2C and 3A,B). The GFPnegB220neg population was virtually devoid of cells with BLIMP1 and IRF4 expression (Figure 3C). In 30% of mice carrying the JchaincreERT2 allele we found above background enrichment for BLIMP1+IRF4+ cells within the GFPlowB220high population (Figure 3D,E and Figure 3\u2014figure supplement 1). However, most GFPlowB220high cells were negative for BLIMP1 and IRF4, suggesting that Jchain expression precedes that of IRF4 and BLIMP1, as previously observed in in vitro cultures of Blimp1 deficient B cells (Kallies et al., 2007). Still, Jchain expression as measured by GFP strongly correlated with that of IRF4 and BLIMP1 given that the vast majority of cells within the GFPintB220int and GFPhighB220low populations were BLIMP1+IRF4+ (Figure 3D and E). Overall, we identified an in vivo population of cells in which Jchain expression preceded that of IRF4 and BLIMP1, possibly representing PC precursors. As PC differentiation ensued, Jchain expression correlated highly with the expression of the transcription factors BLIMP1 and IRF4 that are critical for the establishment of the PC program.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of experimental procedure protocol. Mice carrying the JchaincreERT2 allele were immunized with sheep red blood cells (SRBC) intravenously (i.v.) on day 0 and spleens of mice were analyzed at day 12 post-immunization. (B) Gating strategy of populations by flow-cytometry according to the expression of GFP and B220 in mice carrying the JchaincreERT2 allele. (C) Gating strategy for IRF4 and BLIMP1 expression by flow-cytometry within the GFPnegB220neg population. (D) Gating strategy for IRF4 and BLIMP1 expression by flow-cytometry within GFPlowB220hi, GFPintB220int,\u00a0and GFPhiB220low populations, defined as in (B). (E) Cumulative data for the frequency of BLIMP1+IRF4+ cells within the four populations defined as in (B). Each symbol in (E: n\u00a0=\u00a026) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns\u00a0=\u00a0not significant, ***=p\u00a0\u2264\u00a00.001, ****=p\u00a0\u2264\u00a00.0001 (unpaired Student\u2019s t-test). Data are representative of three independent experiments (E).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Cumulative data for the frequency of BLIMP1+IRF4+ cells within GFPlowB220hi cells. Each symbol (n\u00a0=\u00a026) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns\u00a0=\u00a0not significant (unpaired Student\u2019s t-test). Data are representative of three independent experiments.\n\n### JchaincreERT2 mediated genetic manipulation is effective only in plasma cells\n\nNext,\u00a0we sought to determine whether the JchaincreERT2 allele could be used to perform genetic manipulation in PCs. For that we generated compound mutant mice carrying the JchaincreERT2 allele and a Rosa 26 allele in which RFP expression is conditional to cre-mediated recombination of a loxP-STOP-loxP cassette (R26lslRFP; Luche et al., 2007). In the JchaincreERT2 allele, cre is fused to an estrogen binding domain (ERT2) that sequesters cre in the cytoplasm through the binding to HSP90 (Feil et al., 2009). Addition of tamoxifen displaces the creERT2-HSP90 complex allowing effective nuclear import of creERT2 and its access to loxP flanked DNA sequences (Figure 4A; Feil et al., 2009). We first performed an in vitro experiment using a classical plasmablast (B220lowCD138+) differentiation assay in which B cells purified from mice carrying the JchaincreERT2 and R26lslRFP alleles were cultured with LPS (Andersson et al., 1972) in the presence or absence of 4-OH tamoxifen. GFP expression was highly enriched in plasmablasts compared to B cells and RFP expression was only observed upon addition of 4-OH tamoxifen to the cell culture, and that occurred virtually only in plasmablasts (Figure 4\u2014figure supplement 1). This data suggested that creERT2 was specifically expressed by plasmablasts and effectively retained in the cytoplasm in the absence of 4-OH tamoxifen.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of experimental procedure protocol. Mice carrying the JchaincreERT2 and R26lslRFP alleles were immunized with sheep red blood cells (SRBC) intravenously (i.v.) on day 0 and spleens (top) and bone marrow (bottom) of mice were analyzed at day 12 post-immunization. A group of mice received tamoxifen treatment for four consecutive days from day 7 to day 10 after immunization. (B) Gating strategy of populations by flow-cytometry in the\u00a0spleen (top) and bone marrow (bottom) according to the expression of GFP and B220 in mice carrying the JchaincreERT2 allele. (C) Gating strategy for GFP and RFP expression by flow-cytometry in the four populations defined as in (B). Top: spleen; bottom: bone marrow. (D) Cumulative data for the frequency and number of GFP+RFP+ cells within GFPnegB220neg, GFPlowB220hi, GFPintB220int,\u00a0and GFPhiB220low populations, defined as in (B). Top: spleen; bottom: bone marrow. Each symbol (D: n\u00a0=\u00a014) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns\u00a0=\u00a0not significant, *=p\u00a0\u2264\u00a00.05, **=p\u00a0\u2264\u00a00.01, ***=p\u00a0\u2264\u00a00.001, ****=p\u00a0\u2264\u00a00.0001 (unpaired Student\u2019s t-test). Data are representative of three independent experiments (D).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Gating strategy by flow-cytometry for GFP and RFP expression within CD19+B220+ B cells and B220lowCD138+ plasmablasts. Splenic B cells from unmanipulated mice carrying the JchaincreERT2 and R26lslRFP alleles were enriched using CD43 negative depletion (MACS) and cultured in vitro in the presence of LPS and 4-hydroxytamoxifen (4-OH-TAM). Cells were analyzed 48, 72, and 96 hr time-points for GFP and RFP expression by flow-cytometry. Data from 96 hr analysis of a B cell culture with LPS and 1 \u03bcM 4-OH-TAM is shown as example. (B) Cumulative data for fractions of GFPnegRFPneg, GFP+RFPneg, GFP+RFP+ cells within B cells. Analyzed as in (A). (C) Cumulative data for fractions of GFPnegRFPneg, GFP+RFPneg, GFP+RFP+ cells within plasmablasts. Analyzed as in (A).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Cumulative data for fraction of GFP+RFP+ cells within the B cell lineage in the spleen. Analyzed as in Figure 2\u2014figure supplement 2 panel (A). (B) Cumulative data for fraction of GFP+RFP+ cells in additional B cell lineage and non-B cell lineage populations in the spleen. Analyzed as in Figure 2\u2014figure supplement 2 panel (A). (C) Cumulative data for fraction of GFP+RFP+ cells in the B cell lineage and in plasma cells in the bone marrow. Analyzed as in Figure 2\u2014figure supplement 2 panel (D). Each symbol (A: n\u00a0=\u00a05, B: n\u00a0=\u00a012, C: n\u00a0=\u00a05) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. Data are representative of three independent experiments (A, B, C).\n\nSimilar observations were made in mice carrying the JchaincreERT2 and R26lslRFP alleles in vivo. In the absence of tamoxifen administration RFP expressing cells were not detected, confirming the in vitro results and supporting that the JchaincreERT2 allele was not \u2018leaky\u2019 in the control of cre activity (Figure 4\u2014figure supplement 2). Next,\u00a0we immunized mice carrying JchaincreERT2 and R26lslRFP alleles and administered tamoxifen on days 7, 8, 9, and 10 followed by analysis of the\u00a0spleen and bone marrow at day 12 (Figure 4A). Analyses of the populations defined by varied GFP and B220 surface expression (Figures 2 and 4B) revealed that a small fraction of GFPlowB220high cells were positive for RFP in the spleen (median\u00a0~2%) and in the bone marrow (median\u00a0~1.2%; Figure 4C,D). In contrast, cre mediated recombination and as consequence RFP expression occurred in\u00a0~37% and~31% of GFPintB220int in the spleen and bone marrow, respectively, and the vast majority of cells within the GFPhighB220low population had undergone cre mediated recombination and were RFP positive (~76% in the spleen, and\u00a0~88% in the bone marrow, median; Figure 4C,D). These data showed that JchaincreERT2 mediated cre-recombination was only effective in PC populations validating it as a tool to specifically perform genetic manipulation of PCs.\n\n### Genetic manipulation using JchaincreERT2 occurs across immunoglobulin isotypes\n\nIgG1 does not multimerize, and due to differences in its secretory tail to that of IgA and IgM, JCHAIN does not associate with IgG1 (Johansen et al., 2000). Currently it is suggested that Jchain expression occurs in all PCs regardless of isotype (Castro and Flajnik, 2014; Johansen et al., 2000; Mather et al., 1981). However, this has not been demonstrated at the single cell level. We performed experiments that investigated whether JchaincreERT2 allele GFP expression and cre-mediated loxP recombination occurred in PCs across immunoglobulin isotypes. For that we analyzed the spleen, mesenteric lymph node (mLN), Peyer\u2019s patches and bone marrow of younger (15 weeks) and older (30 weeks) mice carrying the JchaincreERT2 and R26lslRFP alleles. These mice were immunized with SRBC and administered with tamoxifen on days 7, 8, 9, and 10 followed by analysis at day 12 (Figure 5A). We first analyzed total PCs (B220lowCD138+), and within these cells those that expressed GFP (RFP+ and RFPneg) and GFP+RFP+ cells (cre recombined) to determine the proportions of IgA, IgM, and IgG1 expressing cells using intracellular stain (Figure 5B\u2013D). Overall, we found only small differences. Analysis of spleens of 15-week-old mice revealed a slight increase in the percentage of IgA+ cells within the GFP+RFP+ PCs only when compared to total PCs (Figure 5E). A similar trend was observed when analyzing Peyer\u2019s patches of 15-week-old mice (Figure 5E). However, in the other analyzed tissues of these mice we did not observe differences in the proportion of IgA, nor for IgM and IgG1 in any of the tissues analyzed (Figure 5E). 30-week-old mice showed a slight increase in the percentage of splenic IgM+ cells within the GFP+RFP+ PCs only when compared to total PCs, and for IgA+ in the mLN (Figure 5F). No significant difference was observed in 30-week-old mice for the proportion of IgM or IgA in any of the other analyzed tissues, and in none of the analyzed tissues for IgG1 (Figure 5F). Taken together, these data suggested that Jchain expression is not overly represented in IgA or IgM expressing PCs compared to IgG1+ PCs. We concluded that JchaincreERT2 mediated cre-loxP recombination occurs across immunoglobulin isotypes and thus that the JchaincreERT2 allele is a useful tool for genetic manipulation also of IgG1 expressing PCs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of experimental procedure protocol. Mice carrying the JchaincreERT2 and R26lslRFP alleles were immunized with sheep red blood cells (SRBC) intravenously (i.v.) on day 0 and spleens, mesenteric lymph nodes (mLN), Peyer\u2019s patches, and bone marrows of mice were analyzed at day 12 post-immunization. Mice received tamoxifen treatment for four consecutive days from day 7 to day 10 after immunization. (B) Gating strategy by flow-cytometry for intracellular and extracellular expression of IgG1, IgM and IgA within total B220lowCD138+plasma cells. Analysis in the spleen is provided as example. (C) Gating strategy by flow-cytometry for intracellular and extracellular expression of IgG1, IgM, and IgA within B220lowCD138+GFP+ (RFP+ and RFPneg) plasma cells. Analysis in the spleen is provided as example. (D) Gating strategy by flow-cytometry for intracellular and extracellular expression of IgG1, IgM, and IgA within B220lowCD138+GFP+RFP+plasma cells. Analysis in the spleen is provided as example. (E) Cumulative data for the fractions of IgA, IgM or IgG1 expressing cells within total plasma cells (PC) (black, B220lowCD138+), GFP+ (RFP+ and RFPneg) plasma cells (green, B220lowCD138+GFP+), and GFP+RFP+plasma cells (orange, B220lowCD138+GFP+RFP+) at 15 weeks of age. (F) Cumulative data for the fractions of IgA, IgM, or IgG1 expressing cells within total plasma cells (PC) (black, B220lowCD138+), GFP+ (RFP+ and RFPneg) plasma cells (green, B220lowCD138+GFP+), and GFP+RFP+plasma cells (orange, B220lowCD138+GFP+RFP+) at 30 weeks of age. Each symbol (E: n\u00a0=\u00a05\u20136, F: n\u00a0=\u00a05\u20136) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns\u00a0=\u00a0not significant, *=p\u00a0\u2264\u00a00.05 (unpaired Student\u2019s t-test). Data are representative of three independent experiments (E, F).\n\n### Inclusive analysis of plasma cell dynamics reveals tissue-specific homeostatic population turnover\n\nUnderstanding of the PC population turnover is lacking. Multiple investigations have been performed to determine the PC lifespan using primarily nucleotide analog incorporation into the DNA. These studies have provided fundamental insights on PC maintenance and currently it is accepted that a fraction of PCs in the mouse survives for periods longer than 3 months (Ho et al., 1986; Lemke et al., 2016; Manz et al., 1998; Manz et al., 1997; Slifka et al., 1998). However, given the quiescent nature of PCs and that nucleotide analog methodology requires cell division, these methods are not appropriate to study global population turnover in tissues. We investigated the suitability of the JchaincreERT2 allele to determine the turnover of the PC population in the spleen and bone marrow. We immunized mice carrying the JchaincreERT2 and R26lslRFP alleles at two time-points spaced by a period of 21 days (Figure 6A; Calado et al., 2010). Thirty days after the secondary immunization (day 51) we administered tamoxifen for five consecutive days to genetically label PCs (Figure 6A). Next, we determined the absolute cell number of total PCs, of GFP+ cells (RFP+ and RFPneg), GFP+RFP+ cells (cre recombined), and GFP+RFPneg cells (not cre recombined). We found that over a period of 5 months the cell number of total and GFP+ PCs remained constant over time (Figure 6B,C). By contrast, the cell number of GFP+RFP+ cells decayed (Figure 6B,C) in both the\u00a0spleen (t1/2 ~31.63d) and bone marrow (t1/2 ~251.93d; Figure 6D,E). These results may agree with the knowledge that the half-life of PC residence differs between spleen and the bone marrow (Sze et al., 2000). Notably, analysis of the GFP+RFPneg cell numbers revealed that the emergence of these cells paralleled that observed for the decay in cell numbers of GFP+RFP+ cells (Figure 6B,C) both in the\u00a0spleen (t1/2 ~20.20d) and bone marrow (t1/2 ~190.19d; Figure 6F,G). These data indicated that the turnover of the PC population is homeostatically regulated in a tissue-specific manner.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic of the\u00a0experimental procedure protocol. Mice carrying the JchaincreERT2 and R26lslRFP alleles were immunized twice with sheep red blood cells (SRBC) intravenously (i.v.) on day 0 and day 21. Mice received tamoxifen treatment for five consecutive days from day 51 to 55 after the first immunization. Spleens and bone marrow of mice were analyzed at day\u00a05, 2-month, and 5-month timepoints after the last tamoxifen administration. (B) Cumulative data for the absolute cell numbers of total PCs, of GFP+ cells (RFP+ and RFPneg), GFP+RFP+ cells (cre recombined), and GFP+RFPneg cells (not cre recombined) in the spleen. (C) Cumulative data for the absolute cell numbers of total PCs, of GFP+ cells (RFP+ and RFPneg), GFP+RFP+ cells (cre recombined), and GFP+RFPneg cells (not cre recombined) in the bone marrow. (D) Graphical representation of half-life (t1/2) of GFP+RFP+CD138+CXCR4+plasma cells in the spleen using the data presented in (B). Graphing of the\u00a0best-fit curve was performed using the GraphPad Prism eight software. (E) Graphical representation of half-life (t1/2) of GFP+RFP+CD138+CXCR4+plasma cells in the bone marrow using the data presented in (C). Graphing of the\u00a0best-fit curve was performed using the GraphPad Prism eight software. (F) Graphical representation of half-life (t1/2) of GFP+RFPnegCD138+CXCR4+plasma cells in the spleen using the data presented in (B). Graphing of the\u00a0best-fit curve was performed using the GraphPad Prism eight software. (G) Graphical representation of half-life (t1/2) of GFP+RFPnegCD138+CXCR4+plasma cells in the bone marrow using the data presented in (C). Graphing of the\u00a0best-fit curve was performed using the GraphPad Prism eight software. Each symbol (B-G: 5D n\u00a0=\u00a06; 2M n\u00a0=\u00a05; 5M n\u00a0=\u00a09) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns\u00a0=\u00a0not significant, *=p\u00a0\u2264\u00a00.05 **=p\u00a0\u2264\u00a00.01, ***=p\u00a0\u2264\u00a00.001, ****=p\u00a0\u2264\u00a00.0001 (unpaired Student\u2019s t-test). Data are representative of three independent experiments (B, C).\n\n## Discussion\n\nPlasma cells (PC)s are an essential component of the adaptive immune system. However, compared to other B cell lineage populations the molecular analysis of PC gene function in vivo has lagged behind. One underlying cause is the lack of tools for specific genetic manipulation of PCs, something available for B cells since 1997, more than 20 years ago (Rickert et al., 1997), and more recently for B cells at multiple stages of development (Boross et al., 2009; Casola et al., 2006; Croker et al., 2004; Crouch et al., 2007; de Boer et al., 2003; Dogan et al., 2009; D\u00fcber et al., 2009; Georgiades et al., 2002; Hobeika et al., 2006; Kraus et al., 2004; Kwon et al., 2008; Moriyama et al., 2014; Robbiani et al., 2008; Schweighoffer et al., 2013; Shinnakasu et al., 2016; Weber et al., 2019; Yasuda et al., 2013).\n\nHere we used a systematic analysis of PC-associated factors for which expression is increased during PC differentiation (Xbp1, Jchain, Scd1, Irf4, and Prdm1) with the aim of identifying suitable candidates for the generation of PC-specific tools. Blimp1, a critical transcription factor for the establishment of the PC program, displayed an expression pattern unspecific to PCs. This was unsurprising given the knowledge that Blimp1 is expressed by other hematopoietic and non-hematopoietic cells (John and Garrett-Sinha, 2009), including germ cells (Ohinata et al., 2005). Among the analyzed factors we found that Jchain displayed the highest RNA expression level in PCs and had the most PC-specific expression pattern. We considered Jchain to be the most suitable candidate for the generation of PC-specific tools. Next, we searched among alleles generated by the EUCOMMTools consortium and identified a JchaincreERT2 allele which through a comprehensive series of experiments we validated for specific genetic manipulation of PCs.\n\nGFP expression as a reporter for Jchain was expressed in a very small subset of B cells (<2%, primarily GC B cells) and in most plasma cells. The GFP expressing B cells were mostly negative for BLIMP1 and IRF4 expression. This data agrees with previous work using in vitro cultures of Blimp1 deficient B cells suggesting that the initiation of Jchain expression does not require BLIMP1 (Kallies et al., 2007). Thus, the identified population of cells in vivo marked by low GFP expression and high surface expression of B220 (GFPlowB220hi), possibly contains PC precursor cells and future analysis may provide information on the mechanisms underlying the very first steps of PC differentiation. It is important to note, however, that the analysis of the GFPlowB220hi population requires caution as it contains false GFP positive cells (i.e. background cells). If the underlying reason for the false GFP positivity within the GFPlowB220hi population is autofluorescence; a common issue when GFP is weakly expressed because autofluorescence typically displays similar excitation and emission characteristics to GFP (Shapiro, 1995; approaches that quench autofluorescence may reduce or abrogate background; Shilova et al., 2017). Alternatively, the experimenter may design a more stringent gate, possibly increasing specificity and thus reducing contamination as long as the loss of a fraction of lowly expressing GFP cells is acceptable and consideration is taken that such stringency may itself introduce bias in the analysis.\n\nJchaincreERT2 mediated genetic manipulation was only effective in PCs and data of others deposited in bioRxiv during the revision of this work supports this finding (Ayala et al., 2020). In the JchaincreERT2 allele GFP and creERT2 are linked by a self-cleaving 2A peptide that ensures a near equitable co-expression of the proteins (Szymczak et al., 2004). As consequence, it is likely that the effectiveness of cre recombination correlates with the level of creERT2 expression because PCs expressed the highest level of Jchain, as suggested by GFP expression. Of note, the JchaincreERT2 allele analyzed in this work retained the puromycin selection cassette that is flanked by rox recombination sites. This knowledge should be taken in consideration in future experiments involving compound mutant mice that make use of dre recombinase (Anastassiadis et al., 2009). On occasion it has been observed that retention of the selection cassette reduces gene expression of the targeted locus (Meyers et al., 1998; Nagy et al., 1998). Thus, inadvertent or intentional removal of the puromycin selection cassette may increase creERT2 expression, including in B cells, possibly reducing the PC specificity of JchaincreERT2 mediated genetic manipulation. Finally, in the JchaincreERT2 allele the expression of Jchain is interrupted by a GFP-2A-creERT2 cassette and induction of cre-mediated recombination deletes Jchain exon two that is loxP-flanked. It was previously shown that heterozygous deletion of Jchain displayed an intermediate phenotype to that of knockout mice (Lycke et al., 1999). This knowledge must be considered when performing JchaincreERT2 mediated genetic manipulation, including the need to use the JchaincreERT2 allele without the targeted manipulation as control, and the utility of the JchaincreERT2 allele in homozygosity. Future iterations of JchaincreERT2 alleles in which JCHAIN protein expression is preserved should be considered.\n\nIt is currently thought that Jchain expression occurs in all PCs regardless of their isotype (Castro and Flajnik, 2014; Johansen et al., 2000; Mather et al., 1981). The characterization of the JchaincreERT2 allele demonstrated at the single cell level that Jchain expression indeed occurs in PCs across immunoglobulin isotypes. However, we observed the occurrence of both GFP+ PCs and of a smaller fraction of GFPneg PCs, which in a first approximation suggested that Jchainneg PCs exist. Nevertheless, it is important to consider that although GFP is driven by the endogenous Jchain promoter, it does not directly measure JCHAIN itself at the transcriptional and translational level. Further investigation of GFP+ and GFPneg PCs in mice carrying the JchaincreERT2 allele is required.\n\nUsing the JchaincreERT2 allele we performed inclusive genetic timestamping of PCs, independent of the time at which cells were generated, cell cycle status, and localization. We uncovered that the numbers of total PCs in the\u00a0spleen and bone marrow remained constant for at least 5 months. Notably, within the GFP+ PC population, the decay in numbers of genetically labeled PCs (GFP+RFP+) was compensated by that of unlabeled PCs (GFP+RFPneg), supporting that PC turnover is homeostatically regulated in these tissues. Homeostatic control of mature B cell numbers is widely accepted (Crowley et al., 2009). In mature B cells, the expression of a B cell receptor is crucial for cell survival (Srinivasan et al., 2009; however, BAFF is the limited resource that defines the boundaries of the biological \u2018space\u2019; Crowley et al., 2009; Srinivasan et al., 2009). On other hand, the regulation of PC numbers remains unclear. PCs express the BCMA receptor that allows the sensing of both BAFF and APRIL, and BCMA deficient mice have reduced PC numbers (O'Connor et al., 2004). However, because BCMA is expressed in B cells committed to PC differentiation further studies are required to disentangle formation and maintenance (Mackay et al., 2003). The JchaincreERT2 allele is therefore ideally suited to tackle these questions. PC homeostatic regulation could also be the reflection of a limited number of niches in a given organ which would then limit the number of PCs (H\u00f6fer et al., 2006; Khodadadi et al., 2019; Lightman et al., 2019; Lindquist et al., 2019; Wilmore and Allman, 2017).\n\nIn this work, we have not determined if the decay in numbers of genetically labeled PCs (GFP+RFP+) was the reflection of cell death and/or migration away from the tissue analyzed. A possible strategy to determine the latter would be the use of a photoactivatable fluorescent reporter (Patterson and Lippincott-Schwartz, 2002) in combination with the JchaincreERT2 allele to label through photoactivation PCs in a specific tissue and investigate their migratory patterns. Knowledge on the mechanisms underlying PC homeostasis and turnover is important as these are directly related to long-term protection from infection, vaccination, and cancer pathogenesis. The JchaincreERT2 allele is highly suited to perform these investigations as it allows genetic manipulation of PCs in vivo in their microenvironment, and to retrieve live time-stamped PCs for downstream analysis.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Mus musculus, C57BL/6)</td>\n      <td>JchaincreERT2; Jchaintm1(EGFP/cre/ERT2)Wtsi</td>\n      <td>Wellcome Trust Sanger Institute (WTSI)</td>\n      <td>MGI: 5633773</td>\n      <td>The allele was purchased from EMMA mouse repository in agreement with WTSI, mice were rederived at the Francis Crick Institute.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse Blimp1(host species: rat, clone: 6D3)</td>\n      <td>BD Biosciences</td>\n      <td>Cat#: 565002</td>\n      <td>FACS (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse CD16/32 Fc Block (host species: rat, clone: 2.4G2)</td>\n      <td>BD Biosciences</td>\n      <td>Cat#: 553141</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse CD19 (host species: rat, clone: 1D3)</td>\n      <td>BD Biosciences</td>\n      <td>Cat#: 563557</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse CD23 (host species: rat, clone: B3B4)</td>\n      <td>BD Biosciences</td>\n      <td>Cat#: 563986</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse CD38 (host species: rat, clone: 90)</td>\n      <td>BD Biosciences</td>\n      <td>Cat#: 760361</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse CD95 (host species: hamster, clone: Jo2)</td>\n      <td>BD Biosciences</td>\n      <td>Cat#: 562633</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse IgG1 (host species: rat, clone: A85-1)</td>\n      <td>BD Biosciences</td>\n      <td>Cat#: 560089</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse CD138 (host species: rat, clone: 281\u20132)</td>\n      <td>BD Biosciences</td>\n      <td>Cat#: 740880</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse B220 (host species: rat, clone: RA3-6B2)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 103247</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse CD11c (host species: hamster, clone: N418)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 117333</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse CD19 (host species: rat, clone: 6D5)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 115543</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse CD21/35 (host species: Rat, clone: 7E9)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 123421</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse CD43 (host species: rat, clone: 1B11)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 121223</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse CD86 (host species: rat, clone: GL1)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 105013</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse BP1 (host species: rat, clone: 6C3)</td>\n      <td>Ebioscience</td>\n      <td>Cat#: 13\u20135891</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse CD5 (host species: rat, clone: 53\u20137.3)</td>\n      <td>Ebioscience</td>\n      <td>Cat#: 13-0051-82</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse CXCR4 (host species: rat, clone: 2B11)</td>\n      <td>Ebioscience</td>\n      <td>Cat#: 46-9991-82</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse IgA (host species: rat, clone: 11-44-2)</td>\n      <td>Ebioscience</td>\n      <td>Cat#: 13\u20135994</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse IgM (host species: rat, clone: II/41)</td>\n      <td>Ebioscience</td>\n      <td>Cat#: 25\u20135790</td>\n      <td>FACS (1:300)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse IRF4 (host species: rat, clone: 3E4)</td>\n      <td>Ebioscience</td>\n      <td>Cat#: 25-9858-80</td>\n      <td>FACS (1:200)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>BD Cytofix/CytoPerm Fixation/Permeabilization Kit</td>\n      <td>BD Biosciences</td>\n      <td>Cat#: 554714</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Zombie NIR Fixable Viability Kit</td>\n      <td>BioLegend</td>\n      <td>Cat#: 423106</td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CD43 (Ly-48) MicroBeads, mouse</td>\n      <td>Miltenyi Biotec</td>\n      <td>Cat#: 130-049-801</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>(Z) 4-hydroxytamoxifen</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS: 68047-06-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tamoxifen</td>\n      <td>Sigma</td>\n      <td>Cat#: T5648-5G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sunflower seed oil from Helianthus annuus</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: S5007-250ml</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FACSDiva software</td>\n      <td>BD</td>\n      <td>V9.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo</td>\n      <td>BD</td>\n      <td>V10</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td>V7, V8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sheep red blood cells (SRBCs)</td>\n      <td>TCS Biosciences Ltd</td>\n      <td>Cat#: SB054</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nThe JchaincreERT2 allele was purchased from EMMA in agreement with the Wellcome Trust Sanger Institute (Jchain targeted allele Wtsi MGI:5633773, genebank https://www.i-dcc.org/imits/targ_rep/alleles/43805/escell-clone-genbank-file) and mice were rederived at the The Francis Crick Institute. The allele contains a splice acceptor site (SA), an EGFP-2A-creERT2 expression cassette and a poly-A tail in the intron between exons 1 and 2 under the Jchain promoter. In addition, exon 2 is loxP-flanked and the allele also contains a rox-flanked puromycin resistance cassette. These mice were crossed to carry a Rosa26lslRFP cre recombination reporter allele (R26lsl.RFP) allele that expresses a non-toxic tandem-dimer red fluorescent protein upon cre-mediated deletion of a floxed STOP cassette (Luche et al., 2007). Mice were maintained on the C57BL/6 background and bred at The Francis Crick Institute biological resources facility under specific pathogen-free conditions. Animal experiments were carried out in accordance with national and institutional guidelines for animal care and were approved by The Francis Crick Institute biological resources facility strategic oversight committee (incorporating the Animal Welfare and Ethical Review Body) and by the Home Office, UK. All animal care and procedures followed guidelines of the UK Home Office according to the Animals (Scientific Procedures) Act 1986 and were approved by Biological Research Facility at the Francis Crick Institute. The age of mice ranged between 15\u201330 weeks as specified.\n\n### Immunization and in vivo induction of cre activity\n\nMice were injected intravenously with 1 \u00d7 109 sheep red blood cells (SRBCs, TCS Biosciences Ltd) in PBS. For the induction of cre activity, 4 mg tamoxifen (SIGMA T5648) dissolved in sunflower seed oil were administered by oral gavage to mice once per day for multiple days depending on experimental design.\n\n### In vitro B cell culture and induction of\u00a0cre activity\n\nSplenic cells were harvested, and B cells were isolated using CD43 (Ly-48) MicroBeads, mouse (Miltenyi Biotec). The purity of B cells was determined by flow-cytometry (>95%). B cells were cultured in 96-well round-bottom plates (Falcon) in B cell media (DMEM high glucose/Glutamax from Thermo\u00a0Fisher Scientific supplemented with 10% fetal bovine serum F7524 from Sigma, 100 U/mL Penicillin, 100 \u00b5g/mL Streptomycin from Life Technologies, 10 mM HEPES buffer solution from Life Technologies, 100 \u00b5M MEM non-essential amino acids from Thermo\u00a0Fisher Scientific, 1 mM sodium pyruvate from Life Technologies, and 50 uM \u03b2-mercaptoethanol from Sigma) at 1 million/mL concentration (200,000 cells/well) with 10 ug/mL LPS and varied concentrations of (Z) 4-hydroxytamoxifen (Sigma-Aldrich). Analysis was performed using flow-cytometry at 48, 72, or 96 hr of culture.\n\n### Flow cytometry\n\nSingle cell suspensions were stained with antibodies. We used Zombie NIR Fixable Viability Kit (BioLegend) for live/dead discrimination. For intracellular staining, we fixed cells using the BD CytoFix/Cytoperm (BD Biosciences) kit as per manufacturer instructions. Samples were acquired on a BD LSRFortessa analyzer using FACSDiva software (BD) and analyzed on FlowJo software.\n\n### Quantification and statistical analysis\n\nData were analyzed with unpaired two-tailed Student's t-test; a p-value=p\u00a0\u2264\u00a00.05 was considered significant. Prism (v7 and v8, GraphPad) was used for statistical analysis. A single asterisk (\u2217) in the graphs of figures represents a p-value\u22640.05, double asterisks (\u2217\u2217) a p-value\u22640.01, triple asterisks (\u2217\u2217\u2217) a p-value\u22640.001, quadruple asterisks (\u2217\u2217\u2217\u2217) a p-value\u22640.0001, and \u2018ns\u2019 stands for not statistically significant (i.e. a p-value>0.05). Nonlinear regression (curve fit) using (v8, GraphPad) was used to calculate half-life (t1/2) of the population and followed a one-phase decay model, with no special handling of outliers, robust regression and strict convergence criteria and no weighting with a 1000 maximum number of iterations.\n",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "5fc3cb2b-5302-4419-b6c7-93b09e3cda27",
+      "submission_id": "a69e4d5d-2b7b-4224-8eab-466291c2892b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ranjan Sen, National Institute on Aging United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59850.sa1](https://doi.org/10.7554/eLife.59850.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe generation and analysis of JchaincreERT2 tool described in this manuscript will be a valuable addition to the arsenal of regulatable Cre transgenes available to probe the immune system. Your studies have already provided new insights into plasma cell homeostasis that will stage for the use of this mouse strain for additional analyses. We wish you continued success in probing the biology of plasma cells via development and use of novel reagents such as the one described in this manuscript.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Genetic timestamping of plasma cells in vivo reveals homeostatic population turnover\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Satyajit Rath as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nBoth reviewers found this work to be important and characterization of the use of JchaincreERT2 mice as a valuable resource for inducible manipulation of genes in plasma cells (PC). The reviewers noted that \"The present manuscript presents experiments that convincingly demonstrate the suitability of a JchaincreERT2 mice (inducible Cre) to delete loxP-flanked genes specifically in the plasma cell (PC) lineage in an inducible fashion\" and the work \"addresses an important question in plasma cell biology by developing a genetic time-stamping in vivo tool to look at plasma cell turnover\". However, both reviewers raised points enumerated below that need to be addressed before further consideration of this manuscript for publication.\n\nEssential revisions:\n\n1) Account for the presence of GFPloB220hi cells that appear to be present in control mice as well. Do these represent non-specific staining? If so, how can the contribution of GFP from the modified J chain allele be distinguished from the background? This question is pertinent to Figures 1C, 2C and 3B and could be resolved by providing staining in the GFPloB220hi gate for CD138, CXCR4, Blimp1 and IRF4.\n\n2) Clarify the basis of the conclusion that the \"\u2026analysis did not support the concept that the J chain is expressed by all PCs\".\n\n3) Modify the fourth paragraph of the Discussion, there is sentence in the middle which appears to have some missing words.\n\n4) Quote the plasma cell paper from Singh/Staudt labs ion the role of IRF4 (Sciammas et al., 2006).\n\n5) Justify the interpretation critical for the analysis of homeostatic turnover of PC that decline in RFP+ cells is due to loss of PC rather than other possibilities such as migration of PCs to other niches. While this would ideally involve additional experiments with BrdU-labeled cells, a strong rationale for their interpretation along with a succinct discussion of possible limitations in their analysis would suffice for reconsideration of the manuscript.\n\n6) As an extension to the above point, were RFP+ cells scored in other PC survival niches?\n",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5a22b538-43eb-4cbc-b30b-4da946a5c6f7",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C1",
+      "claim": "Plasma cells (PCs) are essential for protection from infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma cells (PCs) are essential for protection from infection, and at the origin of incurable cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about plasma cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "27459624-0383-443b-a819-430a0fab6a82",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C2",
+      "claim": "Plasma cells are at the origin of incurable cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma cells (PCs) are essential for protection from infection, and at the origin of incurable cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about plasma cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "1c13e4bb-39be-429e-b991-e1a91e482938",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C3",
+      "claim": "Current studies do not circumvent the limitations of removing PCs from their microenvironment and confound formation and maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Current studies do not circumvent the limitations of removing PCs from their microenvironment and confound formation and maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of current methodologies stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "6e418562-896b-4942-9305-56b9363b919d",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C4",
+      "claim": "The investigation of PC population dynamics has mostly relied on nucleotide analog incorporation that does not label quiescent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the investigation of PC population dynamics has mostly relied on nucleotide analog incorporation that does not label quiescent cells, a property of most PCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current methodologies in the abstract.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "079d0555-678c-4a97-91f4-ffd63d083923",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C5",
+      "claim": "Most PCs are quiescent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the investigation of PC population dynamics has mostly relied on nucleotide analog incorporation that does not label quiescent cells, a property of most PCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of plasma cells in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "da076f1f-f99a-4e76-bcb2-c0e181f28cd9",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C6",
+      "claim": "The main impediment to studying PCs is the lack of tools to perform specific genetic manipulation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The main impediment is the lack of tools to perform specific genetic manipulation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the primary limitation in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "1d1b2aab-e5f4-459e-9092-e86260ee4189",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C7",
+      "claim": "The JchaincreERT2 genetic tool permits first-ever specific genetic manipulation in PCs in vivo, across immunoglobulin isotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we characterize a genetic tool (JchaincreERT2) in the mouse that permits first-ever specific genetic manipulation in PCs in vivo, across immunoglobulin isotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "a2a41938-d996-4992-ad3f-74506f89ff6b",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C8",
+      "claim": "Splenic and bone marrow PC numbers remained constant over-time.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this tool, we found that splenic and bone marrow PC numbers remained constant over-time with the decay in genetically labeled PCs being compensated by unlabeled PCs, supporting homeostatic population turnover in these tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the study stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "9cf07899-5c8e-43b6-a0bd-2373c62d68b9",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C9",
+      "claim": "The decay in genetically labeled PCs is compensated by unlabeled PCs in spleen and bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this tool, we found that splenic and bone marrow PC numbers remained constant over-time with the decay in genetically labeled PCs being compensated by unlabeled PCs, supporting homeostatic population turnover in these tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the study stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "741164dc-f876-4540-9132-112b91c180f5",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C10",
+      "claim": "Homeostatic population turnover occurs in splenic and bone marrow PC tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this tool, we found that splenic and bone marrow PC numbers remained constant over-time with the decay in genetically labeled PCs being compensated by unlabeled PCs, supporting homeostatic population turnover in these tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data stated in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "117effb0-0c35-472f-baad-9ea2cf83c3a2",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C11",
+      "claim": "Antibodies produced by plasma cells are crucial for immune protection against infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies produced by plasma cells (PCs) are crucial for immune protection against infection and for vaccination success (Nutt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "66e7062d-4333-4492-a9d1-e4cbeef03ec0",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C12",
+      "claim": "Antibodies produced by plasma cells are crucial for vaccination success.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies produced by plasma cells (PCs) are crucial for immune protection against infection and for vaccination success (Nutt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "7263bb69-49ba-4f42-97c2-1d996dee8b28",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C13",
+      "claim": "Upon activation, B cells terminally differentiate into PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon activation, B cells terminally differentiate into PCs, a process initiated by the downregulation of the B cell transcription factor PAX5 (Kallies et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "d2514856-d9b0-43e8-93cb-bba51e4994b4",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C14",
+      "claim": "B cell to PC differentiation is initiated by the downregulation of the B cell transcription factor PAX5.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon activation, B cells terminally differentiate into PCs, a process initiated by the downregulation of the B cell transcription factor PAX5 (Kallies et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "bfc3ce82-109f-42d7-af27-ea347261475f",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C15",
+      "claim": "PAX5 downregulation allows the expression of multiple factors normally repressed by PAX5, including Xbp1 and Jchain.",
+      "claim_type": "EXPLICIT",
+      "source": "This event allows the expression of multiple factors normally repressed by PAX5, including Xbp1 and Jchain (Castro and Flajnik, 2014; Nutt et al., 2015; Rinkenberger et al., 1996; Shaffer et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "a3144cfd-414d-4ac3-87ab-37fdb911d840",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C16",
+      "claim": "PAX5 downregulation is followed by the expression of the transcription factors IRF4 and BLIMP1.",
+      "claim_type": "EXPLICIT",
+      "source": "PAX5 downregulation is also followed by the expression of the transcription factors IRF4 and BLIMP1 that play essential roles in the establishment of the PC program (Kallies et al., 2007; Klein et al., 2006; Sciammas et al., 2006; Shapiro-Shelef et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "883180a5-289a-4acd-ac83-dcb70ce34645",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C17",
+      "claim": "IRF4 and BLIMP1 play essential roles in the establishment of the PC program.",
+      "claim_type": "EXPLICIT",
+      "source": "PAX5 downregulation is also followed by the expression of the transcription factors IRF4 and BLIMP1 that play essential roles in the establishment of the PC program (Kallies et al., 2007; Klein et al., 2006; Sciammas et al., 2006; Shapiro-Shelef et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "df2aaa7e-aebe-42e6-abaa-f828955cf60a",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C18",
+      "claim": "Multiple myeloma is the second most frequent hematological malignancy overall.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond physiology, multiple cancers have a PC as cell of origin, including multiple myeloma, the second most frequent hematological malignancy overall, and for which a cure remains to be found (Palumbo and Anderson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "65bf5584-7cad-4125-9098-9955ae4d2812",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C19",
+      "claim": "A cure for multiple myeloma remains to be found.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond physiology, multiple cancers have a PC as cell of origin, including multiple myeloma, the second most frequent hematological malignancy overall, and for which a cure remains to be found (Palumbo and Anderson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "fcbf4dac-7b80-42cb-9d32-8cab626fa66d",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C20",
+      "claim": "Most PC studies make use of in vitro and cell transfer systems that remove PCs from their microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at least in part because of technical limitations most PC studies make use of in vitro and cell transfer systems that remove PCs from their microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current methodologies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "34d7fca7-4ba8-4008-b66e-31695e7306cc",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C21",
+      "claim": "Current genetic manipulation of PCs is not specific and targets other cell populations such as B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, genetic manipulation of PCs is not specific and targets other cell populations such as B cells, confounding PC formation, and maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current methodologies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "79ea8ae7-71b1-4289-be00-77d531ed7301",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C22",
+      "claim": "Jchain (Igj) had the highest level and most specific expression in PC populations among well-known PC-associated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found amongst well-known PC-associated genes, that Jchain (Igj) had the highest level and most specific expression in PC populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "fd1f3210-2cfa-44d5-8184-89a173b34d7b",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C23",
+      "claim": "JCHAIN is a small polypeptide required to multimerize IgM and IgA.",
+      "claim_type": "EXPLICIT",
+      "source": "JCHAIN is a small polypeptide required to multimerize IgM and IgA, and necessary for the transport of these Ig classes across the mucosal epithelium in a poly-Ig receptor-mediated process (Brandtzaeg and Prydz, 1984; Castro and Flajnik, 2014; Max and Korsmeyer, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "e2670d60-e500-4b1b-a72e-3ae4a9bd31b5",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C24",
+      "claim": "JCHAIN is necessary for the transport of IgM and IgA across the mucosal epithelium in a poly-Ig receptor-mediated process.",
+      "claim_type": "EXPLICIT",
+      "source": "JCHAIN is a small polypeptide required to multimerize IgM and IgA, and necessary for the transport of these Ig classes across the mucosal epithelium in a poly-Ig receptor-mediated process (Brandtzaeg and Prydz, 1984; Castro and Flajnik, 2014; Max and Korsmeyer, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "0c14605b-cd4d-4226-8035-c9d515c48adf",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C25",
+      "claim": "GFP as a reporter of Jchain expression occurred in PCs across immunoglobulin isotypes, including IgG1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found at the single cell level that GFP as a reporter of Jchain expression occurred in PCs across immunoglobulin isotypes, including IgG1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on single cell analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "933ed11b-e32d-4547-900f-95560b525b81",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C26",
+      "claim": "The JchaincreERT2 allele allowed inclusive genetic timestamping of PCs, independently of their cell cycle status.",
+      "claim_type": "EXPLICIT",
+      "source": "This system allowed inclusive genetic timestamping of PCs, independently of their cell cycle status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study demonstrating the capability of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "dc95f40d-625d-4714-bedf-16dbedcaae7f",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C27",
+      "claim": "Xbp1 was primarily expressed in PCs, but the expression in bone marrow PCs was less than two-fold greater than that of non-PC populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Xbp1 and Irf4 were primarily expressed in PCs, however, the expression in bone marrow PCs (B_PC_BM) was less than two-fold greater than that of non-PC populations (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of RNA sequencing data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "5738929d-6334-4422-940d-189300560543",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C28",
+      "claim": "Irf4 was primarily expressed in PCs, but the expression in bone marrow PCs was less than two-fold greater than that of non-PC populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Xbp1 and Irf4 were primarily expressed in PCs, however, the expression in bone marrow PCs (B_PC_BM) was less than two-fold greater than that of non-PC populations (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of RNA sequencing data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "024f783b-0555-492a-be4f-5f998e245273",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C29",
+      "claim": "The expression of Sdc1 and Prdm1 was not specific to PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of Sdc1 and Prdm1 was not specific to PCs (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of RNA sequencing data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "42a37faa-430f-4107-bd25-7da687fc3817",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C30",
+      "claim": "Peritoneal cavity macrophages expressed more Sdc1 than bone marrow PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, peritoneal cavity macrophages (MF_226+II+480lo_PC) expressed more Sdc1 than bone marrow PCs (B_PC_BM), and a subset of FOXP3+ T cells (Treg_4_FP3+_Nrplo_Co) expressed higher levels of Prdm1 than that observed in splenic plasmablasts (B_PB_Sp) and bone marrow PCs (B_PC_BM; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of RNA sequencing data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "a0dce841-7665-48a4-b77e-f5ae24c6b943",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C31",
+      "claim": "A subset of FOXP3+ T cells expressed higher levels of Prdm1 than that observed in splenic plasmablasts and bone marrow PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, peritoneal cavity macrophages (MF_226+II+480lo_PC) expressed more Sdc1 than bone marrow PCs (B_PC_BM), and a subset of FOXP3+ T cells (Treg_4_FP3+_Nrplo_Co) expressed higher levels of Prdm1 than that observed in splenic plasmablasts (B_PB_Sp) and bone marrow PCs (B_PC_BM; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of RNA sequencing data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "9846c0a5-2a90-488b-b655-91f8bca4ecea",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C32",
+      "claim": "Jchain had a forty-fold enrichment over germinal center B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Jchain had the highest level of transcript expression in PCs compared to non-PCs and was the most PC specific amongst all factors, with a forty-fold enrichment over germinal center (GC) B cells (B_GC_CB_Sp; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of RNA sequencing data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "99f70674-c223-4897-a812-7f9979c9b25b",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C33",
+      "claim": "B220 is expressed on the surface of B cells and downregulated during PC differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "B220 is expressed on the surface of B cells and downregulated during PC differentiation (Pracht et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "4d67e6bf-e240-4904-810b-7425470fdc38",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C34",
+      "claim": "The fraction of CD138+ cells increased in populations with higher GFP expression and lower B220 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we determined the fraction of cells within these populations that expressed surface CD138, a commonly used marker to define PCs by flow-cytometry (Pracht et al., 2017). The GFPnegB220neg population did not contain CD138+ cells, however, the fraction of CD138+ cells increased in the remaining populations in agreement with the reduction of B220 expression during PC differentiation, and the GFPintB220int and GFPhighB220low populations were mostly composed of CD138+ cells (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 2D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "851b41e3-5c82-4c0a-aab8-38817e284a80",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C35",
+      "claim": "The GFPintB220int and GFPhighB220low populations were mostly composed of CD138+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The GFPnegB220neg population did not contain CD138+ cells, however, the fraction of CD138+ cells increased in the remaining populations in agreement with the reduction of B220 expression during PC differentiation, and the GFPintB220int and GFPhighB220low populations were mostly composed of CD138+ cells (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 2D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "80d0a35d-3a5d-4340-aa5c-9e302f268677",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C36",
+      "claim": "CXCR4 is a chemokine receptor that facilitates homing of PCs to the bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "Identical results were found when defining PCs using in addition surface expression of CXCR4, a chemokine receptor that facilitates homing of PCs to the bone marrow (Figure 2D,E; Hargreaves et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "3fe507d7-87c8-41c3-8965-b89836acce8c",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C37",
+      "claim": "Increased GFP expression from the JchaincreERT2 allele associates with the loss of B220 and increased expression of PC-associated surface markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, increased GFP expression from the JchaincreERT2 allele associates with the loss of B220 and increased expression of PC-associated surface markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the flow cytometry data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "8897ac26-7d41-4964-982f-66a560467df8",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C38",
+      "claim": "Virtually all CD138neg cells within the GFPlowB220high population of mice with the JchaincreERT2 allele expressed the B cell marker CD19.",
+      "claim_type": "EXPLICIT",
+      "source": "Also above background, we found that virtually all CD138neg cells within the GFPlowB220high population of mice with the JchaincreERT2 allele expressed the B cell marker CD19 (Figure 2F), and in agreement with Jchain gene expression analysis (Figure 1D) these cells mostly represented germinal center (GC) B cells (CD38lowFAShigh; Figure 2F,G and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "032393d3-1f12-44a9-b07c-bf67cc08e357",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C39",
+      "claim": "CD138neg cells within the GFPlowB220high population mostly represented germinal center (GC) B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Also above background, we found that virtually all CD138neg cells within the GFPlowB220high population of mice with the JchaincreERT2 allele expressed the B cell marker CD19 (Figure 2F), and in agreement with Jchain gene expression analysis (Figure 1D) these cells mostly represented germinal center (GC) B cells (CD38lowFAShigh; Figure 2F,G and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 2F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "25b62230-7e5f-4ac6-bc88-82c807b90b7c",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C40",
+      "claim": "Most PCs in the spleen and bone marrow expressed GFP (CD138+CXCR4+, 60 to 90%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that most PCs in the spleen and bone marrow expressed GFP (CD138+CXCR4+, 60 to 90%; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "d856f864-3892-4d28-b9e5-60f8d26b3790",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C41",
+      "claim": "A minor fraction of B1b cells (0 to 6%) in the spleen expressed GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that a minor fraction of B1b cells (0 to 6%) in the spleen expressed GFP (Figure 2\u2014figure supplement 2), possibly in agreement with the knowledge that B1b cells are prone to differentiate into PCs and are a source of IgM antibodies during T cell independent responses (Alugupalli et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "72658340-7490-40a7-bfa7-d529d4ff8d78",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C42",
+      "claim": "B1b cells are prone to differentiate into PCs and are a source of IgM antibodies during T cell independent responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that a minor fraction of B1b cells (0 to 6%) in the spleen expressed GFP (Figure 2\u2014figure supplement 2), possibly in agreement with the knowledge that B1b cells are prone to differentiate into PCs and are a source of IgM antibodies during T cell independent responses (Alugupalli et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "15fd3044-8c8f-437b-a17b-b4a75e6d2f8f",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C43",
+      "claim": "The GFPnegB220neg population was virtually devoid of cells with BLIMP1 and IRF4 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The GFPnegB220neg population was virtually devoid of cells with BLIMP1 and IRF4 expression (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "a3f374a1-4ffc-4f6c-9090-be33b34bf541",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C44",
+      "claim": "Most GFPlowB220high cells were negative for BLIMP1 and IRF4.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most GFPlowB220high cells were negative for BLIMP1 and IRF4, suggesting that Jchain expression precedes that of IRF4 and BLIMP1, as previously observed in in vitro cultures of Blimp1 deficient B cells (Kallies et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on flow cytometry analysis and comparison to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "1bad6e5e-ad5a-4f2b-89a3-6e9d34593781",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C45",
+      "claim": "Jchain expression precedes that of IRF4 and BLIMP1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most GFPlowB220high cells were negative for BLIMP1 and IRF4, suggesting that Jchain expression precedes that of IRF4 and BLIMP1, as previously observed in in vitro cultures of Blimp1 deficient B cells (Kallies et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data and supported by previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "28f476ce-8347-4c87-8cb0-4f6e1c6f8d3b",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C46",
+      "claim": "The vast majority of cells within the GFPintB220int and GFPhighB220low populations were BLIMP1+IRF4+.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, Jchain expression as measured by GFP strongly correlated with that of IRF4 and BLIMP1 given that the vast majority of cells within the GFPintB220int and GFPhighB220low populations were BLIMP1+IRF4+ (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "6659ebfc-a6d5-4dd7-949e-856d37ba1994",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C47",
+      "claim": "An in vivo population of cells exists in which Jchain expression preceded that of IRF4 and BLIMP1, possibly representing PC precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we identified an in vivo population of cells in which Jchain expression preceded that of IRF4 and BLIMP1, possibly representing PC precursors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "5594d7b5-ff8f-4b9d-9859-ec8a4f80e449",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C48",
+      "claim": "GFP expression was highly enriched in plasmablasts compared to B cells in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP expression was highly enriched in plasmablasts compared to B cells and RFP expression was only observed upon addition of 4-OH tamoxifen to the cell culture, and that occurred virtually only in plasmablasts (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in vitro cell culture experiments shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "17e945a7-4fd0-49b0-8e13-186f2ba9b90a",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C49",
+      "claim": "RFP expression was only observed upon addition of 4-OH tamoxifen to the cell culture, and that occurred virtually only in plasmablasts.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP expression was highly enriched in plasmablasts compared to B cells and RFP expression was only observed upon addition of 4-OH tamoxifen to the cell culture, and that occurred virtually only in plasmablasts (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in vitro cell culture experiments shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "ec55d823-70c6-45bd-891e-306c6fc5ab50",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C50",
+      "claim": "creERT2 was specifically expressed by plasmablasts and effectively retained in the cytoplasm in the absence of 4-OH tamoxifen.",
+      "claim_type": "EXPLICIT",
+      "source": "This data suggested that creERT2 was specifically expressed by plasmablasts and effectively retained in the cytoplasm in the absence of 4-OH tamoxifen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the in vitro experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "70470791-557d-4730-af11-6e78f3900360",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C51",
+      "claim": "In the absence of tamoxifen administration RFP expressing cells were not detected in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of tamoxifen administration RFP expressing cells were not detected, confirming the in vitro results and supporting that the JchaincreERT2 allele was not 'leaky' in the control of cre activity (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in vivo experiments shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "e888fabc-f8f5-4510-88d9-0e62830dd4c3",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C52",
+      "claim": "The JchaincreERT2 allele was not 'leaky' in the control of cre activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of tamoxifen administration RFP expressing cells were not detected, confirming the in vitro results and supporting that the JchaincreERT2 allele was not 'leaky' in the control of cre activity (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the in vivo experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "ade8ae25-b27d-4eea-b2a4-15fdf1878537",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C53",
+      "claim": "A small fraction of GFPlowB220high cells were positive for RFP in the spleen (median ~2%) and in the bone marrow (median ~1.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of the populations defined by varied GFP and B220 surface expression (Figures 2 and 4B) revealed that a small fraction of GFPlowB220high cells were positive for RFP in the spleen (median ~2%) and in the bone marrow (median ~1.2%; Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 4C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "e01b824d-a0e2-4a08-acf9-fcf723015173",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C54",
+      "claim": "Cre mediated recombination occurred in ~37% and~31% of GFPintB220int in the spleen and bone marrow, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cre mediated recombination and as consequence RFP expression occurred in ~37% and~31% of GFPintB220int in the spleen and bone marrow, respectively, and the vast majority of cells within the GFPhighB220low population had undergone cre mediated recombination and were RFP positive (~76% in the spleen, and ~88% in the bone marrow, median; Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 4C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "8900a20d-2cc7-426a-b4f1-3123da55db7f",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C55",
+      "claim": "The vast majority of cells within the GFPhighB220low population had undergone cre mediated recombination and were RFP positive (~76% in the spleen, and ~88% in the bone marrow, median).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cre mediated recombination and as consequence RFP expression occurred in ~37% and~31% of GFPintB220int in the spleen and bone marrow, respectively, and the vast majority of cells within the GFPhighB220low population had undergone cre mediated recombination and were RFP positive (~76% in the spleen, and ~88% in the bone marrow, median; Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 4C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "a100c10e-ee47-4f41-9e6b-b6b41521df24",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C56",
+      "claim": "JchaincreERT2 mediated cre-recombination was only effective in PC populations.",
+      "claim_type": "EXPLICIT",
+      "source": "These data showed that JchaincreERT2 mediated cre-recombination was only effective in PC populations validating it as a tool to specifically perform genetic manipulation of PCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "7435f8bf-440a-46b2-a4b7-60159bb7b73b",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C57",
+      "claim": "IgG1 does not multimerize.",
+      "claim_type": "EXPLICIT",
+      "source": "IgG1 does not multimerize, and due to differences in its secretory tail to that of IgA and IgM, JCHAIN does not associate with IgG1 (Johansen et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "d9b361c3-2c6d-4855-b2c8-bbf175515a0f",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C58",
+      "claim": "JCHAIN does not associate with IgG1 due to differences in its secretory tail to that of IgA and IgM.",
+      "claim_type": "EXPLICIT",
+      "source": "IgG1 does not multimerize, and due to differences in its secretory tail to that of IgA and IgM, JCHAIN does not associate with IgG1 (Johansen et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "36993343-4f42-4f89-b325-4ff665bca35a",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C59",
+      "claim": "It is currently suggested that Jchain expression occurs in all PCs regardless of isotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently it is suggested that Jchain expression occurs in all PCs regardless of isotype (Castro and Flajnik, 2014; Johansen et al., 2000; Mather et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current understanding with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "305893e4-2592-4189-a9a1-8890137cbb47",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C60",
+      "claim": "Jchain expression at the single cell level across immunoglobulin isotypes has not been demonstrated prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently it is suggested that Jchain expression occurs in all PCs regardless of isotype (Castro and Flajnik, 2014; Johansen et al., 2000; Mather et al., 1981). However, this has not been demonstrated at the single cell level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "72482296-11dc-4910-bbd8-b41751764e8f",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C61",
+      "claim": "Jchain expression is not overly represented in IgA or IgM expressing PCs compared to IgG1+ PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggested that Jchain expression is not overly represented in IgA or IgM expressing PCs compared to IgG1+ PCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on isotype distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "5186a2bc-2d02-4081-b3ea-d27a90035fc9",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C62",
+      "claim": "JchaincreERT2 mediated cre-loxP recombination occurs across immunoglobulin isotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that JchaincreERT2 mediated cre-loxP recombination occurs across immunoglobulin isotypes and thus that the JchaincreERT2 allele is a useful tool for genetic manipulation also of IgG1 expressing PCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on isotype distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "a59bf499-c086-41a7-b009-d842c2242f5d",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C63",
+      "claim": "It is currently accepted that a fraction of PCs in the mouse survives for periods longer than 3 months.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies have provided fundamental insights on PC maintenance and currently it is accepted that a fraction of PCs in the mouse survives for periods longer than 3 months (Ho et al., 1986; Lemke et al., 2016; Manz et al., 1998; Manz et al., 1997; Slifka et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current understanding with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "602fae8b-88ff-43cb-97fe-6d112ce7cada",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C64",
+      "claim": "Nucleotide analog methodology requires cell division and is not appropriate to study global population turnover in tissues given the quiescent nature of PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the quiescent nature of PCs and that nucleotide analog methodology requires cell division, these methods are not appropriate to study global population turnover in tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of nucleotide analog methodology.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "de2d9681-741b-4606-9c97-079f3b2dcfc0",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C65",
+      "claim": "Over a period of 5 months the cell number of total and GFP+ PCs remained constant over time in spleen and bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that over a period of 5 months the cell number of total and GFP+ PCs remained constant over time (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on longitudinal analysis shown in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "de327b97-4781-4179-b350-96db7502adf2",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C66",
+      "claim": "The cell number of GFP+RFP+ cells decayed in both the spleen (t1/2 ~31.63d) and bone marrow (t1/2 ~251.93d).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the cell number of GFP+RFP+ cells decayed (Figure 6B,C) in both the spleen (t1/2 ~31.63d) and bone marrow (t1/2 ~251.93d; Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on longitudinal analysis shown in Figure 6B,C,D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "5f62add0-ca3f-4142-b145-7d7fc777cfe9",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C67",
+      "claim": "The half-life of PC residence differs between spleen and the bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "These results may agree with the knowledge that the half-life of PC residence differs between spleen and the bone marrow (Sze et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "c5761909-b206-488c-83dd-386a59d28afe",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C68",
+      "claim": "The emergence of GFP+RFPneg cells paralleled the decay in cell numbers of GFP+RFP+ cells both in the spleen (t1/2 ~20.20d) and bone marrow (t1/2 ~190.19d).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, analysis of the GFP+RFPneg cell numbers revealed that the emergence of these cells paralleled that observed for the decay in cell numbers of GFP+RFP+ cells (Figure 6B,C) both in the spleen (t1/2 ~20.20d) and bone marrow (t1/2 ~190.19d; Figure 6F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on longitudinal analysis shown in Figure 6B,C,F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "a6cb0427-4525-4453-9802-988874b1b81f",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C69",
+      "claim": "The turnover of the PC population is homeostatically regulated in a tissue-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicated that the turnover of the PC population is homeostatically regulated in a tissue-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the longitudinal experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "bec6c352-bd00-4742-9e2a-29817bc9a318",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C70",
+      "claim": "Homeostatic control of mature B cell numbers is widely accepted.",
+      "claim_type": "EXPLICIT",
+      "source": "Homeostatic control of mature B cell numbers is widely accepted (Crowley et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "bd823025-dc3d-4000-a739-0600e4e8b804",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C71",
+      "claim": "In mature B cells, the expression of a B cell receptor is crucial for cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "In mature B cells, the expression of a B cell receptor is crucial for cell survival (Srinivasan et al., 2009; however, BAFF is the limited resource that defines the boundaries of the biological 'space'; Crowley et al., 2009; Srinivasan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "044cc30d-cf28-42ca-b2ee-baffdfefd852",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C72",
+      "claim": "BAFF is the limited resource that defines the boundaries of the biological 'space' for mature B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In mature B cells, the expression of a B cell receptor is crucial for cell survival (Srinivasan et al., 2009; however, BAFF is the limited resource that defines the boundaries of the biological 'space'; Crowley et al., 2009; Srinivasan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "4b289f2b-c952-428c-996b-fc803fb84d63",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C73",
+      "claim": "PCs express the BCMA receptor that allows the sensing of both BAFF and APRIL.",
+      "claim_type": "EXPLICIT",
+      "source": "PCs express the BCMA receptor that allows the sensing of both BAFF and APRIL, and BCMA deficient mice have reduced PC numbers (O'Connor et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "ec424547-fcb7-4a9e-a698-4221352d6917",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C74",
+      "claim": "BCMA deficient mice have reduced PC numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "PCs express the BCMA receptor that allows the sensing of both BAFF and APRIL, and BCMA deficient mice have reduced PC numbers (O'Connor et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "297799f4-ca60-46d1-9267-3057318aacd3",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C75",
+      "claim": "BCMA is expressed in B cells committed to PC differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because BCMA is expressed in B cells committed to PC differentiation further studies are required to disentangle formation and maintenance (Mackay et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "e5da3fd6-0fd7-459d-b408-d3b99c122bb3",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C76",
+      "claim": "PC homeostatic regulation could be the reflection of a limited number of niches in a given organ which would then limit the number of PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "PC homeostatic regulation could also be the reflection of a limited number of niches in a given organ which would then limit the number of PCs (H\u00f6fer et al., 2006; Khodadadi et al., 2019; Lightman et al., 2019; Lindquist et al., 2019; Wilmore and Allman, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "be538d31-9122-4d52-b65a-d2d262f5e5b5",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C77",
+      "claim": "The JchaincreERT2 allele is a validated PC specific genetic tool that paves the way for an in-depth mechanistic understanding of PC biology and pathology in vivo, in their microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "The JchaincreERT2 is thus a validated PC specific genetic tool that paves the way for an in-depth mechanistic understanding of PC biology and pathology in vivo, in their microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "1434454e-4fdb-4269-8611-542082c63496",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C78",
+      "claim": "Genetic manipulation of PCs has been available for B cells since 1997.",
+      "claim_type": "EXPLICIT",
+      "source": "One underlying cause is the lack of tools for specific genetic manipulation of PCs, something available for B cells since 1997, more than 20 years ago (Rickert et al., 1997), and more recently for B cells at multiple stages of development (Boross et al., 2009; Casola et al., 2006; Croker et al., 2004; Crouch et al., 2007; de Boer et al., 2003; Dogan et al., 2009; D\u00fcber et al., 2009; Georgiades et al., 2002; Hobeika et al., 2006; Kraus et al., 2004; Kwon et al., 2008; Moriyama et al., 2014; Robbiani et al., 2008; Schweighoffer et al., 2013; Shinnakasu et al., 2016; Weber et al., 2019; Yasuda et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical context with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "6b30679d-0e4d-4467-bf4d-2194a1bb8350",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C79",
+      "claim": "The initiation of Jchain expression does not require BLIMP1.",
+      "claim_type": "EXPLICIT",
+      "source": "This data agrees with previous work using in vitro cultures of Blimp1 deficient B cells suggesting that the initiation of Jchain expression does not require BLIMP1 (Kallies et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as agreement with previous work with a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "f01bd3b1-014f-4d76-b63b-815740982467",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C80",
+      "claim": "In the JchaincreERT2 allele GFP and creERT2 are linked by a self-cleaving 2A peptide that ensures a near equitable co-expression of the proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In the JchaincreERT2 allele GFP and creERT2 are linked by a self-cleaving 2A peptide that ensures a near equitable co-expression of the proteins (Szymczak et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design feature with a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "b688bc72-2ea8-4a19-94df-b18e6e07fc10",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C81",
+      "claim": "The effectiveness of cre recombination likely correlates with the level of creERT2 expression because PCs expressed the highest level of Jchain.",
+      "claim_type": "EXPLICIT",
+      "source": "As consequence, it is likely that the effectiveness of cre recombination correlates with the level of creERT2 expression because PCs expressed the highest level of Jchain, as suggested by GFP expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the design and expression data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "65b92e96-d137-46a6-bf13-6e9993713c12",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C82",
+      "claim": "The JchaincreERT2 allele analyzed in this work retained the puromycin selection cassette that is flanked by rox recombination sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the JchaincreERT2 allele analyzed in this work retained the puromycin selection cassette that is flanked by rox recombination sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical detail of the allele.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "9efd5799-67d7-47ba-8c3b-7e1422e324ab",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C83",
+      "claim": "Retention of the selection cassette can reduce gene expression of the targeted locus.",
+      "claim_type": "EXPLICIT",
+      "source": "On occasion it has been observed that retention of the selection cassette reduces gene expression of the targeted locus (Meyers et al., 1998; Nagy et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known issue with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "97949aca-445b-4535-998c-78fc93bc7b2b",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C84",
+      "claim": "In the JchaincreERT2 allele the expression of Jchain is interrupted by a GFP-2A-creERT2 cassette and induction of cre-mediated recombination deletes Jchain exon two that is loxP-flanked.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in the JchaincreERT2 allele the expression of Jchain is interrupted by a GFP-2A-creERT2 cassette and induction of cre-mediated recombination deletes Jchain exon two that is loxP-flanked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical detail of the allele.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "913f57fd-d6fd-4415-8b76-8a87db2e7263",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C85",
+      "claim": "Heterozygous deletion of Jchain displayed an intermediate phenotype to that of knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that heterozygous deletion of Jchain displayed an intermediate phenotype to that of knockout mice (Lycke et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as previous knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "ce96e93d-4ba4-405d-9c08-abbe2031fc48",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "claim_id": "C86",
+      "claim": "The JchaincreERT2 allele allows genetic manipulation of PCs in vivo in their microenvironment, and to retrieve live time-stamped PCs for downstream analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The JchaincreERT2 allele is highly suited to perform these investigations as it allows genetic manipulation of PCs in vivo in their microenvironment, and to retrieve live time-stamped PCs for downstream analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability of the tool.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "47da45fd-69e5-4394-b96a-c077a09bae9b",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Jchain has the highest and most specific expression in plasma cells compared to other PC-associated genes (Xbp1, Irf4, Sdc1, Prdm1), with a 40-fold enrichment over germinal center B cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C27-C32 collectively demonstrate through RNA-seq analysis that Jchain shows superior PC specificity compared to other markers. The data show Xbp1 and Irf4 have <2-fold enrichment (C27-C28), Sdc1 and Prdm1 are expressed in non-PC populations (C29-C31), while Jchain shows 40-fold enrichment (C32). The analysis uses publicly available ImmGen data with appropriate comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "30c099ae-fd55-4a78-979f-ad7d3093136f",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The JchaincreERT2 allele drives GFP expression specifically in plasma cells across immunoglobulin isotypes, with GFP expression correlating with PC differentiation markers (loss of B220, gain of CD138/CXCR4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C25, C34-C40 demonstrate that GFP expression from the JchaincreERT2 allele is enriched in PCs (60-90% of CD138+CXCR4+ cells, C40) and correlates with PC differentiation (C34-C35, C37). Flow cytometry data show appropriate controls and consistent patterns. A small GC B cell population also expresses GFP (C38-C39), which is acknowledged and consistent with RNA-seq data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "c56606ce-cda4-413e-8b32-cb68db89bee7",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Jchain expression precedes IRF4 and BLIMP1 expression during PC differentiation, identifying a potential PC precursor population (GFPlowB220high cells that are mostly BLIMP1-IRF4-).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 show through flow cytometry that GFPlowB220high cells are mostly BLIMP1-IRF4- (C44), while GFPintB220int and GFPhighB220low populations are predominantly BLIMP1+IRF4+ (C46). This temporal relationship is supported by prior work with Blimp1-deficient cells (C45, C79). The data provide clear evidence for the sequential expression pattern, though the identity of the precursor population remains speculative (C47).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "3e67d451-3e76-472d-9c73-4bad0428f89d",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The JchaincreERT2 allele enables tamoxifen-inducible, PC-specific cre-mediated recombination with minimal leakiness, as demonstrated by RFP reporter expression occurring predominantly in GFPhighB220low cells (76-88% recombination efficiency).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C56 demonstrate tight control of cre activity: no RFP without tamoxifen (C51-C52), RFP expression only in plasmablasts in vitro (C48-C50), and high recombination efficiency in GFPhighB220low PCs (76-88%, C55) with minimal recombination in GFPlowB220high cells (~1-2%, C53). The data include appropriate controls and multiple experimental systems (in vitro and in vivo).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "f9e66ad5-dff5-442f-b719-5053370514c6",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "JchaincreERT2-mediated recombination occurs across immunoglobulin isotypes, including IgG1, demonstrating that Jchain expression is not restricted to IgM/IgA-expressing PCs despite JCHAIN protein not associating with IgG1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 address the important question of whether Jchain expression is isotype-restricted. While JCHAIN protein doesn't associate with IgG1 (C57-C58), the data show similar proportions of IgA, IgM, and IgG1 among GFP+RFP+ PCs across multiple tissues (C61-C62), confirming at single-cell level what was previously only suggested (C59-C60). Statistical analysis shows only minor differences in some tissues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "c6f0f30e-4316-4922-82c8-21ffafe49bf3",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Plasma cell populations in spleen and bone marrow exhibit tissue-specific homeostatic turnover, with total PC numbers remaining constant over 5 months while genetically labeled (RFP+) PCs decay and are replaced by unlabeled (RFPneg) PCs at tissue-specific rates (spleen t1/2 ~32d, bone marrow t1/2 ~252d).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10, C65-C66, C68-C69 demonstrate homeostatic PC turnover through longitudinal analysis. Total PC numbers remain constant (C65), RFP+ cells decay with tissue-specific kinetics (C66), and RFPneg cells emerge with parallel kinetics (C68), supporting homeostatic replacement (C69). The experimental design includes appropriate timepoints and statistical analysis. However, the study cannot distinguish cell death from migration as the mechanism of RFP+ cell loss.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "875185f4-775d-432c-a2c8-f149588e65ff",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Current methodologies for studying plasma cells have significant limitations: they remove PCs from their microenvironment, lack specificity (targeting B cells as well), and rely on nucleotide analog incorporation that cannot label quiescent PCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6, C20-C21, C64 accurately describe limitations of existing approaches. These are well-established issues in the field: in vitro systems and cell transfers remove cells from niches (C3, C20), existing genetic tools lack PC specificity (C21), and nucleotide analogs require cell division (C4, C64) which most PCs don't undergo (C5). These claims provide appropriate context for the study's motivation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "6908065f-6f02-46f1-92bd-8732e169b098",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The JchaincreERT2 allele has specific design features and potential limitations: GFP and creERT2 are linked by 2A peptide for co-expression, the puromycin cassette is retained, and cre-mediated recombination deletes Jchain exon 2, which may affect Jchain function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C85 accurately describe technical aspects of the allele. The 2A peptide design ensures co-expression (C80), which explains why cre efficiency correlates with GFP levels (C81). The authors appropriately note potential issues: retained selection cassette may reduce expression (C82-C83), and the allele disrupts Jchain (C84-C85). These are important caveats for users of this tool.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background knowledge claims about plasma cell biology, B cell differentiation, transcription factors, disease relevance, and existing tools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C11-C19, C23-C24, C33, C36, C42, C63, C67, C70-C75, C78 represent established knowledge with appropriate citations. These provide necessary context but are not novel findings of this study. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "2363a14e-a9a6-4ffb-9f59-1d3d3866d324",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PC homeostatic regulation could reflect limited niche availability in organs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 is presented as speculation with citations. While the homeostatic turnover data (C69) are consistent with niche limitation, the current study does not directly test this mechanism. This remains a hypothesis requiring future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    },
+    {
+      "id": "7fe9d5f4-4d30-4785-8a2c-1692151461d8",
+      "content_id": "68838767-2788-4155-968b-7e2d06541fc6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The JchaincreERT2 allele is a validated PC-specific genetic tool that enables in-depth mechanistic studies of PC biology in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77 and C86 represent the main conclusion, which is well-supported by the comprehensive characterization data (specificity, inducibility, efficiency across isotypes, ability to track PCs over time). The tool addresses the key limitations identified in claims C3-C6, C20-C21.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:59:42.605957Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "79ea8ae7-71b1-4289-be00-77d531ed7301",
+      "result_id": "47da45fd-69e5-4394-b96a-c077a09bae9b"
+    },
+    {
+      "claim_id": "dc95f40d-625d-4714-bedf-16dbedcaae7f",
+      "result_id": "47da45fd-69e5-4394-b96a-c077a09bae9b"
+    },
+    {
+      "claim_id": "5738929d-6334-4422-940d-189300560543",
+      "result_id": "47da45fd-69e5-4394-b96a-c077a09bae9b"
+    },
+    {
+      "claim_id": "024f783b-0555-492a-be4f-5f998e245273",
+      "result_id": "47da45fd-69e5-4394-b96a-c077a09bae9b"
+    },
+    {
+      "claim_id": "42a37faa-430f-4107-bd25-7da687fc3817",
+      "result_id": "47da45fd-69e5-4394-b96a-c077a09bae9b"
+    },
+    {
+      "claim_id": "a0dce841-7665-48a4-b77e-f5ae24c6b943",
+      "result_id": "47da45fd-69e5-4394-b96a-c077a09bae9b"
+    },
+    {
+      "claim_id": "9846c0a5-2a90-488b-b655-91f8bca4ecea",
+      "result_id": "47da45fd-69e5-4394-b96a-c077a09bae9b"
+    },
+    {
+      "claim_id": "1d1b2aab-e5f4-459e-9092-e86260ee4189",
+      "result_id": "30c099ae-fd55-4a78-979f-ad7d3093136f"
+    },
+    {
+      "claim_id": "0c14605b-cd4d-4226-8035-c9d515c48adf",
+      "result_id": "30c099ae-fd55-4a78-979f-ad7d3093136f"
+    },
+    {
+      "claim_id": "4d67e6bf-e240-4904-810b-7425470fdc38",
+      "result_id": "30c099ae-fd55-4a78-979f-ad7d3093136f"
+    },
+    {
+      "claim_id": "851b41e3-5c82-4c0a-aab8-38817e284a80",
+      "result_id": "30c099ae-fd55-4a78-979f-ad7d3093136f"
+    },
+    {
+      "claim_id": "3fe507d7-87c8-41c3-8965-b89836acce8c",
+      "result_id": "30c099ae-fd55-4a78-979f-ad7d3093136f"
+    },
+    {
+      "claim_id": "8897ac26-7d41-4964-982f-66a560467df8",
+      "result_id": "30c099ae-fd55-4a78-979f-ad7d3093136f"
+    },
+    {
+      "claim_id": "032393d3-1f12-44a9-b07c-bf67cc08e357",
+      "result_id": "30c099ae-fd55-4a78-979f-ad7d3093136f"
+    },
+    {
+      "claim_id": "25b62230-7e5f-4ac6-bc88-82c807b90b7c",
+      "result_id": "30c099ae-fd55-4a78-979f-ad7d3093136f"
+    },
+    {
+      "claim_id": "15fd3044-8c8f-437b-a17b-b4a75e6d2f8f",
+      "result_id": "c56606ce-cda4-413e-8b32-cb68db89bee7"
+    },
+    {
+      "claim_id": "a3f374a1-4ffc-4f6c-9090-be33b34bf541",
+      "result_id": "c56606ce-cda4-413e-8b32-cb68db89bee7"
+    },
+    {
+      "claim_id": "1bad6e5e-ad5a-4f2b-89a3-6e9d34593781",
+      "result_id": "c56606ce-cda4-413e-8b32-cb68db89bee7"
+    },
+    {
+      "claim_id": "28f476ce-8347-4c87-8cb0-4f6e1c6f8d3b",
+      "result_id": "c56606ce-cda4-413e-8b32-cb68db89bee7"
+    },
+    {
+      "claim_id": "6659ebfc-a6d5-4dd7-949e-856d37ba1994",
+      "result_id": "c56606ce-cda4-413e-8b32-cb68db89bee7"
+    },
+    {
+      "claim_id": "6b30679d-0e4d-4467-bf4d-2194a1bb8350",
+      "result_id": "c56606ce-cda4-413e-8b32-cb68db89bee7"
+    },
+    {
+      "claim_id": "5594d7b5-ff8f-4b9d-9859-ec8a4f80e449",
+      "result_id": "3e67d451-3e76-472d-9c73-4bad0428f89d"
+    },
+    {
+      "claim_id": "17e945a7-4fd0-49b0-8e13-186f2ba9b90a",
+      "result_id": "3e67d451-3e76-472d-9c73-4bad0428f89d"
+    },
+    {
+      "claim_id": "ec55d823-70c6-45bd-891e-306c6fc5ab50",
+      "result_id": "3e67d451-3e76-472d-9c73-4bad0428f89d"
+    },
+    {
+      "claim_id": "70470791-557d-4730-af11-6e78f3900360",
+      "result_id": "3e67d451-3e76-472d-9c73-4bad0428f89d"
+    },
+    {
+      "claim_id": "e888fabc-f8f5-4510-88d9-0e62830dd4c3",
+      "result_id": "3e67d451-3e76-472d-9c73-4bad0428f89d"
+    },
+    {
+      "claim_id": "ade8ae25-b27d-4eea-b2a4-15fdf1878537",
+      "result_id": "3e67d451-3e76-472d-9c73-4bad0428f89d"
+    },
+    {
+      "claim_id": "e01b824d-a0e2-4a08-acf9-fcf723015173",
+      "result_id": "3e67d451-3e76-472d-9c73-4bad0428f89d"
+    },
+    {
+      "claim_id": "8900a20d-2cc7-426a-b4f1-3123da55db7f",
+      "result_id": "3e67d451-3e76-472d-9c73-4bad0428f89d"
+    },
+    {
+      "claim_id": "a100c10e-ee47-4f41-9e6b-b6b41521df24",
+      "result_id": "3e67d451-3e76-472d-9c73-4bad0428f89d"
+    },
+    {
+      "claim_id": "0c14605b-cd4d-4226-8035-c9d515c48adf",
+      "result_id": "f9e66ad5-dff5-442f-b719-5053370514c6"
+    },
+    {
+      "claim_id": "7435f8bf-440a-46b2-a4b7-60159bb7b73b",
+      "result_id": "f9e66ad5-dff5-442f-b719-5053370514c6"
+    },
+    {
+      "claim_id": "d9b361c3-2c6d-4855-b2c8-bbf175515a0f",
+      "result_id": "f9e66ad5-dff5-442f-b719-5053370514c6"
+    },
+    {
+      "claim_id": "36993343-4f42-4f89-b325-4ff665bca35a",
+      "result_id": "f9e66ad5-dff5-442f-b719-5053370514c6"
+    },
+    {
+      "claim_id": "305893e4-2592-4189-a9a1-8890137cbb47",
+      "result_id": "f9e66ad5-dff5-442f-b719-5053370514c6"
+    },
+    {
+      "claim_id": "72482296-11dc-4910-bbd8-b41751764e8f",
+      "result_id": "f9e66ad5-dff5-442f-b719-5053370514c6"
+    },
+    {
+      "claim_id": "5186a2bc-2d02-4081-b3ea-d27a90035fc9",
+      "result_id": "f9e66ad5-dff5-442f-b719-5053370514c6"
+    },
+    {
+      "claim_id": "a2a41938-d996-4992-ad3f-74506f89ff6b",
+      "result_id": "c6f0f30e-4316-4922-82c8-21ffafe49bf3"
+    },
+    {
+      "claim_id": "9cf07899-5c8e-43b6-a0bd-2373c62d68b9",
+      "result_id": "c6f0f30e-4316-4922-82c8-21ffafe49bf3"
+    },
+    {
+      "claim_id": "741164dc-f876-4540-9132-112b91c180f5",
+      "result_id": "c6f0f30e-4316-4922-82c8-21ffafe49bf3"
+    },
+    {
+      "claim_id": "de2d9681-741b-4606-9c97-079f3b2dcfc0",
+      "result_id": "c6f0f30e-4316-4922-82c8-21ffafe49bf3"
+    },
+    {
+      "claim_id": "de327b97-4781-4179-b350-96db7502adf2",
+      "result_id": "c6f0f30e-4316-4922-82c8-21ffafe49bf3"
+    },
+    {
+      "claim_id": "c5761909-b206-488c-83dd-386a59d28afe",
+      "result_id": "c6f0f30e-4316-4922-82c8-21ffafe49bf3"
+    },
+    {
+      "claim_id": "a6cb0427-4525-4453-9802-988874b1b81f",
+      "result_id": "c6f0f30e-4316-4922-82c8-21ffafe49bf3"
+    },
+    {
+      "claim_id": "1c13e4bb-39be-429e-b991-e1a91e482938",
+      "result_id": "875185f4-775d-432c-a2c8-f149588e65ff"
+    },
+    {
+      "claim_id": "6e418562-896b-4942-9305-56b9363b919d",
+      "result_id": "875185f4-775d-432c-a2c8-f149588e65ff"
+    },
+    {
+      "claim_id": "079d0555-678c-4a97-91f4-ffd63d083923",
+      "result_id": "875185f4-775d-432c-a2c8-f149588e65ff"
+    },
+    {
+      "claim_id": "da076f1f-f99a-4e76-bcb2-c0e181f28cd9",
+      "result_id": "875185f4-775d-432c-a2c8-f149588e65ff"
+    },
+    {
+      "claim_id": "fcbf4dac-7b80-42cb-9d32-8cab626fa66d",
+      "result_id": "875185f4-775d-432c-a2c8-f149588e65ff"
+    },
+    {
+      "claim_id": "34d7fca7-4ba8-4008-b66e-31695e7306cc",
+      "result_id": "875185f4-775d-432c-a2c8-f149588e65ff"
+    },
+    {
+      "claim_id": "602fae8b-88ff-43cb-97fe-6d112ce7cada",
+      "result_id": "875185f4-775d-432c-a2c8-f149588e65ff"
+    },
+    {
+      "claim_id": "f01bd3b1-014f-4d76-b63b-815740982467",
+      "result_id": "6908065f-6f02-46f1-92bd-8732e169b098"
+    },
+    {
+      "claim_id": "b688bc72-2ea8-4a19-94df-b18e6e07fc10",
+      "result_id": "6908065f-6f02-46f1-92bd-8732e169b098"
+    },
+    {
+      "claim_id": "65b92e96-d137-46a6-bf13-6e9993713c12",
+      "result_id": "6908065f-6f02-46f1-92bd-8732e169b098"
+    },
+    {
+      "claim_id": "9efd5799-67d7-47ba-8c3b-7e1422e324ab",
+      "result_id": "6908065f-6f02-46f1-92bd-8732e169b098"
+    },
+    {
+      "claim_id": "97949aca-445b-4535-998c-78fc93bc7b2b",
+      "result_id": "6908065f-6f02-46f1-92bd-8732e169b098"
+    },
+    {
+      "claim_id": "913f57fd-d6fd-4415-8b76-8a87db2e7263",
+      "result_id": "6908065f-6f02-46f1-92bd-8732e169b098"
+    },
+    {
+      "claim_id": "5a22b538-43eb-4cbc-b30b-4da946a5c6f7",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "27459624-0383-443b-a819-430a0fab6a82",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "117effb0-0c35-472f-baad-9ea2cf83c3a2",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "66e7062d-4333-4492-a9d1-e4cbeef03ec0",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "7263bb69-49ba-4f42-97c2-1d996dee8b28",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "d2514856-d9b0-43e8-93cb-bba51e4994b4",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "bfc3ce82-109f-42d7-af27-ea347261475f",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "a3144cfd-414d-4ac3-87ab-37fdb911d840",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "883180a5-289a-4acd-ac83-dcb70ce34645",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "df2aaa7e-aebe-42e6-abaa-f828955cf60a",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "65bf5584-7cad-4125-9098-9955ae4d2812",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "fd1f3210-2cfa-44d5-8184-89a173b34d7b",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "e2670d60-e500-4b1b-a72e-3ae4a9bd31b5",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "99f70674-c223-4897-a812-7f9979c9b25b",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "80d0a35d-3a5d-4340-aa5c-9e302f268677",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "72658340-7490-40a7-bfa7-d529d4ff8d78",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "a59bf499-c086-41a7-b009-d842c2242f5d",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "5f62add0-ca3f-4142-b145-7d7fc777cfe9",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "bec6c352-bd00-4742-9e2a-29817bc9a318",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "bd823025-dc3d-4000-a739-0600e4e8b804",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "044cc30d-cf28-42ca-b2ee-baffdfefd852",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "4b289f2b-c952-428c-996b-fc803fb84d63",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "ec424547-fcb7-4a9e-a698-4221352d6917",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "297799f4-ca60-46d1-9267-3057318aacd3",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "1434454e-4fdb-4269-8611-542082c63496",
+      "result_id": "e2b3f5ae-8f8d-4049-9fe6-a7825be5e31e"
+    },
+    {
+      "claim_id": "e5da3fd6-0fd7-459d-b408-d3b99c122bb3",
+      "result_id": "2363a14e-a9a6-4ffb-9f59-1d3d3866d324"
+    },
+    {
+      "claim_id": "be538d31-9122-4d52-b65a-d2d262f5e5b5",
+      "result_id": "7fe9d5f4-4d30-4785-8a2c-1692151461d8"
+    },
+    {
+      "claim_id": "ce96e93d-4ba4-405d-9c08-abbe2031fc48",
+      "result_id": "7fe9d5f4-4d30-4785-8a2c-1692151461d8"
+    }
+  ],
+  "comparisons": []
+}

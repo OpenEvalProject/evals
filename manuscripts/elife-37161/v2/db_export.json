@@ -1,0 +1,2090 @@
+{
+  "submission": {
+    "id": "c3af72a0-0865-4856-94b8-6cde5ac021ed",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:22:26.137747Z",
+    "updated_at": "2025-12-02T07:22:26.137747Z"
+  },
+  "content": [
+    {
+      "id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "submission_id": "c3af72a0-0865-4856-94b8-6cde5ac021ed",
+      "content_type": "manuscript",
+      "content_text": "# The SERM/SERD bazedoxifene disrupts ESR1 helix 12 to overcome acquired hormone resistance in breast cancer cells\n\n## Authors\n\n- Sean W Fanning<sup>1</sup> ([ORCID: 0000-0002-9428-0060](https://orcid.org/0000-0002-9428-0060))\n- Rinath Jeselsohn<sup>2</sup>\n- Venkatasubramanian Dharmarajan<sup>4</sup>\n- Christopher G Mayne<sup>5</sup> ([ORCID: 0000-0001-8905-6569](https://orcid.org/0000-0001-8905-6569))\n- Mostafa Karimi<sup>6</sup>\n- Gilles Buchwalter<sup>2</sup>\n- Ren\u00e9 Houtman<sup>7</sup>\n- Weiyi Toy<sup>8</sup>\n- Colin E Fowler<sup>1</sup> ([ORCID: 0000-0002-6281-2851](https://orcid.org/0000-0002-6281-2851))\n- Ross Han<sup>1</sup>\n- Muriel Lain\u00e9<sup>1</sup>\n- Kathryn E Carlson<sup>9</sup>\n- Teresa A Martin<sup>9</sup>\n- Jason Nowak<sup>3</sup>\n- Jerome C Nwachukwu<sup>10</sup> ([ORCID: 0000-0003-4313-9187](https://orcid.org/0000-0003-4313-9187))\n- David J Hosfield<sup>1</sup>\n- Sarat Chandarlapaty<sup>8</sup> ([ORCID: 0000-0003-4532-8053](https://orcid.org/0000-0003-4532-8053))\n- Emad Tajkhorshid<sup>5</sup> ([ORCID: 0000-0001-8434-1010](https://orcid.org/0000-0001-8434-1010))\n- Kendall W Nettles<sup>4</sup>\n- Patrick R Griffin<sup>4</sup> ([ORCID: 0000-0002-3404-690X](https://orcid.org/0000-0002-3404-690X))\n- Yang Shen<sup>6</sup> ([ORCID: 0000-0002-1703-7796](https://orcid.org/0000-0002-1703-7796))\n- John A Katzenellenbogen<sup>9</sup> ([ORCID: 0000-0003-0914-0010](https://orcid.org/0000-0003-0914-0010))\n- Myles Brown<sup>2</sup> ([ORCID: 0000-0002-8213-1658](https://orcid.org/0000-0002-8213-1658))\n- Geoffrey L Greene<sup>1</sup> ([ORCID: 0000-0001-6894-8728](https://orcid.org/0000-0001-6894-8728)) \u2020\n\n### Affiliations\n\n1. Ben May Department for Cancer Research University of Chicago Chicago United States\n2. Center for Functional Cancer Epigenetics Dana-Farber Cancer Institute Boston United States\n3. Department of Medical Oncology Dana-Farber Cancer Institute Boston United States\n4. Department of Molecular Medicine The Scripps Research Institute Jupiter United States\n5. Department of Biochemistry, College of Medicine, Center for Biophysics and Computational Biology University of Illinois at Urbana-Champaign Urbana United States\n6. Department of Electrical and Computer Engineering, TEES-AgriLife Center for Bioinformatics and Genomic Systems Engineering Texas A&M University Texas United States\n7. PamGene International BV \u2018s-Hertogenbosch The Netherlands\n8. Human Oncology and Pathogenesis Program Memorial Sloan Kettering Cancer Center New York United States\n9. Department of Chemistry University of Illinois at Urbana-Champaign Urbana United States\n10. Department of Integrative Structural and Computational Biology The Scripps Research Institute Jupiter United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAcquired resistance to endocrine therapy remains a significant clinical burden for breast cancer patients. Somatic mutations in the ESR1 (estrogen receptor alpha (ER\u03b1)) gene ligand-binding domain (LBD) represent a recognized mechanism of acquired resistance. Antiestrogens with improved efficacy versus tamoxifen might overcome the resistant phenotype in ER +breast cancers. Bazedoxifene (BZA) is a potent antiestrogen that is clinically approved for use in hormone replacement therapies. We found that BZA possesses improved inhibitory potency against the Y537S and D538G ER\u03b1 mutants compared to tamoxifen and has additional inhibitory activity in combination with the CDK4/6 inhibitor palbociclib. In addition, comprehensive biophysical and structural biology studies show BZA\u2019s selective estrogen receptor degrading (SERD) properties that override the stabilizing effects of the Y537S and D538G ER\u03b1 mutations.\n\n## Introduction\n\nEstrogen receptor alpha (ER\u03b1) plays critical roles in the etiology, treatment and prevention of the majority of breast cancers (Frasor et al., 2004). Due to the high degree of efficacy and wide therapeutic indices of endocrine therapies, patients may receive such treatments for progressive disease over the course of several years (Toy et al., 2013). Unfortunately, the majority of ER+\u00a0metastatic breast cancers that initially respond to endocrine treatment will become refractory despite continued ER\u03b1 expression (Toy et al., 2013). Selective estrogen receptor modulators (SERMs) like tamoxifen are antagonistic in the breast and agonistic in the bone and endometrium. SERM agonist activity stems from tissue-specific co-regulator binding in the presence of tamoxifen (Shang and Brown, 2002). In addition, somatic mutations to ESR1 (gene for ER\u03b1) ligand binding domain (LBD) were identified in 25\u201330% of patients who previously received endocrine treatment (Toy et al., 2013; Jeselsohn et al., 2015; Jeselsohn et al., 2014; Niu et al., 2015). Y537S and D538G are the two most prevalent mutations, and pre-clinical studies show that these mutations confer hormone-free transcriptional activity and relative resistance to tamoxifen and fulvestrant treatment (Toy et al., 2013; Jeselsohn et al., 2015; Jeselsohn et al., 2014; Niu et al., 2015). Both mutants enable constitutive ER\u03b1 activity by favoring the agonist-like conformation of the receptor activating function-2 (AF-2) surface and significantly reduce hormone and 4-hydroxytamoxifen (the active metabolite of tamoxifen) binding affinities (Nettles et al., 2008; Fanning et al., 2016).\n\nEndocrine treatments with improved efficacy could potentially overcome resistance engendered by the activating somatic mutants and other mechanisms. In pre-clinical studies, fulvestrant (FULV, a selective estrogen receptor degrader (SERD) and complete antiestrogen) at high concentrations was the only molecule that reduced the Y537S and D538G ER\u03b1 mutant transcriptional activity to basal levels (Toy et al., 2013; Jeselsohn et al., 2015; Jeselsohn et al., 2014; Niu et al., 2015). However, its clinical efficacy is limited by poor solubility and oral bioavailability (Wardell et al., 2013a; van Kruchten et al., 2015). Consequently, new complete antiestrogens are being examined for their activities in breast cancers harboring Y537S and D538G ER\u03b1 that all demonstrate improved oral bioavailability and pharmacokinetics, including G1T48, AZD9496, GDC-0927, RAD1901, SAR439859, and LSZ102 (Wardell et al., 2017; De Savi et al., 2015; Weir et al., 2016; Toy et al., 2017; Dickler et al., 2018; Wardell et al., 2015b; Bihani et al., 2017; Tria et al., 2018; Shomali et al., 2017). Other non-traditional ER\u03b1 degraders including H3B 6545, which covalently binds to the ER\u03b1 LBD, and an ER PROTAC from Arvinas are currently in development. The side effect profiles and suitability of these new drugs as long-term endocrine therapies remains to be determined (Rioux et al., 2018; Flanagan et al., 2018).\n\nHere, we explore whether bazedoxifene (BZA), a potent antiestrogen that retains some SERM properties, shows activity against breast cancer cells that express ESR1 somatic mutants. We chose BZA because it has been extensively studied in clinical trials and is well tolerated. BZA was approved a number of years ago for the use in combination with conjugated equine estrogens for hormone replacement therapy in postmenopausal women (DUAVEE, Pfizer) in the US and for the prevention of osteoporosis as a single agent in Europe (Wardell et al., 2013a; Tikoo and Gupta, 2015). Importantly, it displayed strong antagonist and SERD profiles in the breast while retaining beneficial agonist properties in the bone and did not stimulate endometrial tissue in pre-clinical studies (Wardell et al., 2013a; Komm et al., 2005; Lewis-Wambi et al., 2011). In addition, BZA showed potent antitumor activity in AI/SERM-resistant breast tumors in vivo (Wardell et al., 2013b; Wardell et al., 2015a). Further, BZA showed good oral bioavailability and improved pharmacokinetics compared with fulvestrant (FULV) (Wardell et al., 2013a; Biskobing, 2007).\n\nIn this study, breast cancer reporter gene assays reveal the inhibitory capacity of BZA against the ER\u03b1 mutants compared to the SERM 4-hydroxytamoxifen (4-OHT) and SERD FULV in several ER+\u00a0breast cancer cell lines (MCF-7, ZR75, T47D). We further assessed the ability of BZA to induce the degradation of WT, Y537S, and D538G somatic mutant ER\u03b1 in MCF7 cells. Additionally, because inhibitors of CDK4/6 combined with antiestrogens are approved for first-line therapy and beyond in metastatic ER+\u00a0breast cancers (Wardell et al., 2015a; Dean et al., 2010; Yang et al., 2017), we examined whether the CDK4/6 inhibitor, palbociclib, can be used in combination with BZA to enhance the inhibition of breast cancer cell proliferation. Importantly, comprehensive structural and biophysical studies provide additional molecular insights into the chemical differences between BZA, 4-OHT, and raloxifene (RAL, another SERM) that appear to underlie the SERD properties of BZA and its improved inhibitory efficacy against the Y537S and D538G mutants in breast cancer cells. Table 1 shows the chemical structures of the molecules examined in this study and summarizes their clinical indications.\n\n**Table 1.**\n Competitive inhibitors of estrogen receptor alpha.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Antiestrogen</th>\n      <th>Class</th>\n      <th>Approved clinical indications</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>4-Hydroxytamoxifen (4-OHT)</td>\n      <td>SERM</td>\n      <td>\u2022 Adjuvant treatment for ER\u00a0+\u00a0breast cancers (Early Breast Cancer Trialists' Collaborative Group., 1998). \u2022 Metastatic Breast Cancer (Lipton, 1982). \u2022 Ductal Carcinoma in Situ (Allred et al., 2012). \u2022 Reduction in Breast Cancer Incidence in High Risk Women (Visvanathan, 2009).</td>\n    </tr>\n    <tr>\n      <td>Raloxifene (RAL)</td>\n      <td>SERM</td>\n      <td>\u2022 Osteoporosis in postmenopausal women (Messalli and Scaffa, 2010). \u2022 Reduction in Breast Cancer Incidence in High Risk Women(Cauley et al., 2001).</td>\n    </tr>\n    <tr>\n      <td>Fulvestrant (FULV)</td>\n      <td>SERD</td>\n      <td>\u2022 First-line therapy for metastatic breast cancer (Howell et al., 2004). \u2022 Postmenopausal women with progressive breast cancer following other antiestrogen therapy (Osborne et al., 2002; Howell et al., 2002).</td>\n    </tr>\n    <tr>\n      <td>Bazedoxifene (BZA)</td>\n      <td>SERM/SERD</td>\n      <td>\u2022 In combination with conjugated equine estrogens (DUAVEE) to prevent postmenopausal osteoporosis (Tikoo and Gupta, 2015).</td>\n    </tr>\n  </tbody>\n</table>\n\n## Results\n\n### Bazedoxifene displays SERD activity in MCF-7 cells that express WT ER\u03b1\n\nTo assess the ability of BZA to inhibit WT ER\u03b1 in breast cancer cells, we examined its impact on ER\u03b1 transcriptional activity, degradation and cell growth in MCF-7 cells. 4-hydroxytamoxifen (4-OHT) was used as a representative SERM and FULV was used as a representative SERD (Figure 1). In MCF7 cells that expressed an ERE-luciferase reporter gene, BZA was a more potent inhibitor of WT ER\u03b1 transcription than either 4-OHT or FULV (inhibition of luciferase IC50 for BZA\u00a0=\u00a00.12 nM, 4-OHT\u00a0=\u00a00.39 nM and FULV\u00a0=\u00a00.76 nM) (Figure 1A). To test the effect of BZA on endogenous WT ER\u03b1 transcriptional activity, qPCR was used to quantify the relative mRNA levels of known ER target genes, including cyclin D1, c-myc, CA12, and GREB1, in MCF-7 cells treated with estradiol (E2) or with E2 in combination with BZA, 4-OHT or FULV at 10\u22128 and 10\u22126 M (antagonistic mode). For cyclin D1, 4-OHT increased the mRNA level at 10\u22128 M and showed little effect at 10\u22126M, while both FULV and BZA decreased mRNA levels at 10\u22126 M (Figure 1B). The agonist activity of tamoxifen at high concentrations has been described previously (Horwitz et al., 1978). BZA increased c-myc mRNA levels at 10\u22128 M while it significantly decreased c-myc mRNA at 10\u22126 M (Figure 1C). Presumably, this effect is similar to the behavior of low-level tamoxifen stimulation and merits further examination. Interestingly, 10\u22126 M BZA showed the greatest reduction in mRNA levels of both CA12 and GREB compared to 4-OHT and FULV (Figure 1D\u00a0and\u00a0E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig1-v2.jpg)\n\n**Figure 1.:** (A) ER\u03b1 transcriptional reporter gene assay in cells treated with BZA, FULV, and 4-OHT. (B) Relative cyclin D1 mRNA levels of in MCF-7 cells treated with E2 plus 4-OHT, FULV, or BZA vehicle and normalized to E2. (C) Relative c-myc mRNA levelsMCF-7 cells treated with E2 plus 4-OHT, FULV, or BZA vehicle and normalized to E2. (D) Relative GREB1 mRNA levels in MCF-7 cells treated with E2 plus 4-OHT, FULV, or BZA vehicle and normalized to E2. (E) Relative CA12 mRNA levels of MCF-7 cells treated with E2 plus 4-OHT, FULV, or BZA vehicle and normalized to E2. (F) ER\u03b1 degradation in MCF-7 cells with increasing doses of BZA or FULV normalized to \u03b2-actin. (G) Inhibition of cell growth with increasing concentrations of BZA, FULV, or 4-OHT.\n\nAs BZA was shown to behave as a SERM/SERD in previous studies (Wardell et al., 2013a; Lewis-Wambi et al., 2011), we next tested the activity of BZA as an inducer of ER\u03b1 degradation and observed dose-dependent ER degradation in MCF7 cells. Overall, BZA mediated similar levels of ER\u03b1 degradation compared to FULV (Figure 1F). In terms of cell growth inhibition, BZA showed an improved IC50 compared to 4-OHT and in the same range as fulvestrant (BZA IC50\u00a0=\u00a02.4\u00d710\u221210 M, FULV IC50\u00a0=\u00a03.1\u00d710\u221210 M and 4-OHT IC50\u00a0=\u00a01.19\u00d710\u22129 M (Figure 1G). Together, these data indicate that BZA degrades WT ER\u03b1 in breast cancer cells and is more effective at inhibiting ER transcription and cell growth than 4-OHT and FULV.\n\n### BZA is a potent inhibitor of activating somatic mutants of ER\u03b1 in breast cancer cells\n\nWe next tested the activity of BZA in MCF7 cells that ectopically expressed theY537S mutant ER\u03b1 to determine the inhibition of Y537S mutant cell growth. BZA demonstrated an increased potency compared to FULV and 4-OHT, with an IC50 of 1 \u00d7 10\u221210 M vs 2 \u00d7 10\u22129 M and 7 \u00d7 10\u22129 M, respectively (Figure 2A). In addition, qPCR data showed that BZA inhibited the transcription of ER\u03b1 target genes cyclin D1, c-Myc, and PR, in cells expressing the Y537S mutant, in a dose-dependent manner, confirming the on-target effects of BZA in the presence of the mutation (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cell growth in MCF-7 cells with DOX-induced Y537S ER\u03b1 expression. (B) Inhibition of ER\u03b1 target genes in DOX-induced Y537S ER\u03b1 expressed MCF-7 cells with increasing doses of BZA. (C) Representative immunoblot of HA-ER\u03b1 WT, 537S, or D538G treated with E2, 4-OHT, BZA, RAL, or FULV for 24 hr. (D) Representative counts of HA-ER\u03b1 from the immunoblot normalized to actin.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Replicate immunoblot to that shown in Figure 1 probing for HA-ER\u03b1 and actin in MCF-7 cells upon treatment. (B) Counts from immunoblot A normalized to actin. (C) Third replicate immunoblot to that shown in Figure 1 probing for HA-ER\u03b1 and actin in MCF-7 cells upon treatment. (D) Counts from immunoblot C normalized to actin.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Numbers along the top indicate concentrations of BZA in nM.\n\nTo evaluate the ability of BZA to induce WT and mutant ER\u03b1 degradation in breast cancer cells, we treated MCF-7 cells that ectopically expressed HA-tagged WT, Y537S and D538G ER\u03b1 with BZA and other ligands for comparison. Levels of WT and mutant ER\u03b1 were quantified using immunoblots with an anti-HA antibody. Cells were treated with 10 nM E2, or 100 nM 4-OHT, 100 nM BZA, 100 nM RAL, 1 \u00b5M FULV or vehicle for 24 hr before immunostaining; 1 \u00b5M FULV was chosen because it was the minimal concentration necessary to achieve maximal ER\u03b1 degradation. All data were normalized to vehicle-treated cells. In cells expressing HA-WT ER\u03b1, BZA and FULV induced degradation of the receptor to similar levels while the amount of the receptor increased upon 4-OHT treatment and was slightly reduced with E2 and RAL (Figure 2C and D). Interestingly, for the Y537S mutant, ER\u03b1 expression remained unchanged for E2 and FULV, while it increased for 4-OHT and RAL. Y537S ER\u03b1 also increased with BZA but less so than RAL or 4-OHT. Surprisingly, BZA degraded the D538G ER\u03b1 mutant to a greater extent than FULV, while 4-OHT and RAL both increased its expression after 24 hr. It should be noted that BZA and FULV elicited consistent WT and mutant ER\u03b1 degradation across all replicates\u00a0Figure 2\u2014figure supplement 1. However, 4-OHT and RAL elicited slight variations in the actin-normalized quantity of ER\u03b1 after 24 hr. Because SERDs can possess differential activities between cell lines (Guan et al., 2018), we examined the ability of BZA to induce ER\u03b1 degradation in T47D, ZR75-1, CAMA-1, and MDA-MB-361 cells between 25 and 100 nM (Figure 2\u2014figure supplement 2). In each cell line, near complete degradation was observed at 25 nM BZA. Interestingly, in the T47D cells, an ER\u03b1 band emerged at 100 nM BZA, suggesting that it is behaving more SERM-like at that concentration in that cell line. Overall, these data suggest that BZA degrades WT and D538G ER\u03b1 in MCF7 cells, but that the Y537S mutant is resistant to degradation. However, the levels of Y537S ER\u03b1 in the BZA-treated cells were still reduced compared to 4-OHT and RAL treatment, consistent with the reduced activities demonstrated by these compounds in MCF-7 reporter gene assays (Toy et al., 2013).\n\n### Dual treatment with BZA and palbociclib\n\nCDK4/6 inhibitors have emerged as potent agents in the treatment of metastatic ER+\u00a0breast cancer in combination with endocrine treatment. Combined endocrine treatment with a CDK4/6 inhibitor is now the standard of care in either first- or second-line treatment of metastatic ER+\u00a0breast cancer (Wardell et al., 2015a; Dean et al., 2010; Yang et al., 2017). Because BZA showed increased activity over FULV and 4-OHT, we explored whether the activity of BZA combined with the CDK4/6 inhibitor, palbociclib (PB), in multiple ER positive cell lines (MCF-7, ZR75, T47D) and long-term, estrogen-deprived (LTED) ER\u00a0+MCF7 cells that mimic resistance to aromatase inhibitors. For the first three cell lines, the combination of BZA and PB demonstrated the greatest arrest in cellular proliferation, whereas for the LTED cells it was comparable to PB+\u00a0FULV (Figure 3A\u2013D). Additionally, reduced proliferation of MCF-7 cells expressing the Y537S mutant was observed for the BZA\u00a0+PB treatment compared to all other treatments (Figure 3E and F). Transcriptional reporter gene assays in MCF7 cells showed that: 1. BZA had superior activity in the inhibition of ER transcriptional activity compared to fulvestrant. In addition, palbociclib does not affect ER transcriptional activity either as a single agent or in combination with BZA (Figure 3G and H). Similarly, immunoblotting for ER showed that treatment with PB does not affect BZA or FULV-induced degradation of ER\u03b1 (Figure 3I). In sum, these data show that dual inhibition of CDK4/6 with PB and ER\u03b1 with BZA is an effective combination with significant activity against breast cancer cells expressing WT or constitutively active mutant ER\u03b1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig3-v2.jpg)\n\n**Figure 3.:** (A) Cell growth inhibit with MCF7 breast cancer cells. (B) ZR75 breast cancer cells. (C) T47D breast cancer cells. (D) LTED breast cancer cells. (E) Non-induced MCF7 breast cancer cells with a dox-inducible ER\u03b1 Y537S mutant. (F) MCF7 cells expressing ER\u03b1 Y537S. (G) Dose-response curves for inhibition of ER\u03b1 transcriptional activity in the presence of BZA, PALBO, and FULV in MCF7 cells. (H) ER\u03b1 transcriptional reporter gene assays for combination treatments. (I) ER\u03b1 stability resulting from combination treatments.\n\n### Coregulator binding specificity and affinities of WT and mutant ER\u03b1 with BZA, 4-OHT, and FULV\n\nBecause hormone regulated coactivator recruitment is crucial for ER\u03b1 genomic action and inhibition of coactivator recruitment is a key aspect of SERM-mediated ER\u03b1 antagonism (Liao et al., 2002), we tested the effects of 4-OHT, BZA and FULV on co-regulator binding. We applied the Microarray Assay for Real-time Coregulator-Nuclear receptor Interaction (MARCoNI), which allows the quantification of binding affinity of a nuclear receptor with co-regulator peptides. To determine the effect of 4-OHT, BZA and FULV on co-regulator binding to WT, Y537S and D538G ER\u03b1, MCF7 cells that ectopically express HA-tagged WT, Y537S, or D538G ER\u03b1 were used in conjunction with an HA antibody to detect ER binding to the co-regulator array. Experiments were performed under E2 stimulated conditions for WT ER and under apo conditions for mutant ER\u03b1. Overall, dose-dependent inhibition of co-regulator binding was observed for the majority of co-regulator peptides with the three drugs (Figure 4A). A comparison of EC50 levels for inhibition of co-regulator binding of the three ER antagonists showed that EC50 levels for FULV in both the WT and mutant cells was higher, as expected given the mechanism of action of FULV, compared to SERMs. The 4-OHT and BZA EC50s were higher in the presence of the Y537S and D538G mutations. Collectively, these results show that differences in antagonistic activity manifested by the three endocrine treatments are reflected by changes in co-regulator binding. There are significant differences among these drugs in their antagonistic activity on WT-ER and mutant ER.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig4-v2.jpg)\n\n**Figure 4.:** (A) EC50 quartiles for cells treated with 4-OHT (red), BZA (blue), or FULV (green). (B) In vitro quantification of the effect of ligands on promoting (E2) or inhibiting (4-OHT, RAL, BZA) the binding of SRC3-NRD to recombinant expressed WT, Y537S, or D538G ER\u03b1 LBD. To be able to measure a signal from all three receptors, they were first primed with 20 nME2 before adding ligand. IC50 values (nM) are shown next to the legend for each protein.\n\n### SERMs and SERDs abolish hormone-independent ER\u03b1-coactivator binding in vitro and reverse hormone recruitment of coactivators\n\nTo further dissect the molecular basis for the reduced BZA, 4-OHT, and RAL potency/efficacy observed with mutant ERs, biochemical coactivator recruitment and competitive ligand-binding experiments were performed. As described previously (Fanning et al., 2016), F\u00f6rster resonance energy transfer (FRET) assays were used to evaluate the interaction of wild-type and Y537S and D538G mutant ER\u03b1 with steroid receptor coactivator 3 (SRC3), a key coregulator in breast cancer cells. The nuclear receptor recognition domain (NRD) of SRC3 and LBD of the ERs, were used in these experiments.\n\nPreviously, we showed that in the absence of hormone, SRC3 did not bind to WT ER\u03b1 LBD, whereas Y537S ER\u03b1 bound SRC3 markedly in the absence of E2 with a 10-fold reduced affinity, and D538G ER\u03b1 bound SRC3 with a 100-fold reduced affinity compared to hormone-bound WT receptor (Fanning et al., 2016). To better ascertain the potency of ligands to inhibit coactivator recruitment, we titrated the ligands into fixed concentrations of LBD and SRC3 and monitored LBD-SRC3 interaction by a FRET assay; the three samples were primed with E2 to get a measurable signal from WT and D538G ER. 4-OHT, BZA and RAL reversed the binding of SRC3 NRD to the two mutant ERs and WT-ER\u03b1 with similar potencies (Figure 4B). Together, these data show that BZA, 4-OHT, and RAL inhibit both the basal and E2-stimulated recruitment of SRC3 coregulator by the WT and mutant ER\u03b1 in vitro.\n\n### BZA, RAL and FULV elicit similar reduced binding affinities for Y537S and D538G compared to WT ER\u03b1 LBD\n\nTo examine what role alterations in binding affinity may play in this reduced potency, competitive [3H]-E2 ligand binding assays ligand-binding experiments were used to examine the effect of Y537S and D538G mutations on BZA, RAL, and FULV ER binding affinities in vitro. We previously showed that the E2 and 4-OHT binding was significantly reduced for both the Y537S and D538G mutants (Fanning et al., 2016). Affinities were reported using Ki values calculated from IC50 values using the Cheng-Prusoff equation (Table 2) (Cheng and Prusoff, 1973). The affinities of RAL, BZA and FULV for the ER\u03b1 mutants were reduced 9 to 27-fold relative to WT-ER\u03b1. It should be noted that the binding affinity of 4-OHT remained the highest compared to RAL, BZA and FULV against the mutant LBDs. The binding affinities of all tested antiestrogens were somewhat more reduced in D538G than in Y537S. However, FULV and BZA demonstrated the highest potencies in the transcriptional reporter gene assays, even though they exhibited reduced affinities compared to 4-OHT. Therefore, our data indicate that other factors beyond the reduced binding affinity of mutant LBDs for SERM or SERD must play a role in their decreased potency.\n\n**Table 2.**\n Ligand-binding affinities for WT, Y537S, and D538G mutant ER\u03b1 LBD.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Ligand/Mutant</th>\n      <th colspan=\"3\">Kd (nM)*</th>\n    </tr>\n    <tr>\n      <th>WT</th>\n      <th>Y537S</th>\n      <th>D538G</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>E2\u2021</td>\n      <td>0.22\u00a0\u00b1\u00a00.11</td>\n      <td>1.40\u00a0\u00b1\u00a00.54</td>\n      <td>1.77\u00a0\u00b1\u00a00.66</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"3\">Ki (nM)\u2020</td>\n    </tr>\n    <tr>\n      <td>4-OHT\u2021</td>\n      <td>0.12\u00a0\u00b1\u00a00.003</td>\n      <td>2.64\u00a0\u00b1\u00a00.4</td>\n      <td>3.28\u00a0\u00b1\u00a00.7</td>\n    </tr>\n    <tr>\n      <td>RAL</td>\n      <td>0.30\u00a0\u00b1\u00a00.05</td>\n      <td>3.59\u00a0\u00b1\u00a01.0</td>\n      <td>3.77\u00a0\u00b1\u00a01.0</td>\n    </tr>\n    <tr>\n      <td>BZA</td>\n      <td>0.37\u00a0\u00b1\u00a00.01</td>\n      <td>3.50\u00a0\u00b1\u00a00.6</td>\n      <td>5.53\u00a0\u00b1\u00a00.7</td>\n    </tr>\n    <tr>\n      <td>Fulvestrant\u2021</td>\n      <td>0.13\u00a0\u00b1\u00a00.03</td>\n      <td>3.68\u00a0\u00b1\u00a00.8</td>\n      <td>5.06\u00a0\u00b1\u00a01.2</td>\n    </tr>\n  </tbody>\n</table>\n\n_* Measured directly by Scatchard Analysis using [3H]E2.\u2020 Calculated using the Cheng-Prusoff equation from the IC50 values determined in a competitive radiometric binding analysis using [3H]E2 as a tracer.\u2021Indicates previously published data (Fanning et al., 2016; Zhao et al., 2017)._\n\n### The SERD properties of BZA arise from its disruption of helix 12\n\nX-ray crystallography was used to reveal the structural details of BZA\u2019s antiestrogen properties. An X-ray crystal structure for the WT ER\u03b1 LBD, in complex with BZA was solved to 2.4 \u00c5 with two dimers in the asymmetric unit (ASU) (PDB: 4XI3). The BZA ligand and H12 are well resolved in each monomer in the ASU; poorly resolved residues were not included in the model. Figure 5\u2014figure supplement 1 shows the observed difference map density for the BZA ligand for chain A. We were unable to obtain diffraction quality crystals with BZA or RAL in complex with either the Y537S or D538G mutant LBDs.\n\nClear structural differences are apparent compared to the previously published molecular modeling and docking simulations of the ER\u03b1 LBD-BZA complex (Lewis-Wambi et al., 2011). Specifically, the C3 methyl on the indole ring of BZA appears to shift the core of the molecule away from M386, L391 and L428 and towards H12. BZA is most structurally similar to RAL; however, BZA displays more SERD-like behavior (Wardell et al., 2013a). Figure 5 shows a superposition of the ER\u03b1 LBD-BZA or RAL x-ray crystal structures. Interestingly, the distal phenol on BZA appears to form a hydrogen bond with improved binding geometry to H524 compared to the distal phenol of RAL. This suggests that the ketone on the RAL linker constrains the phenyl group, sterically precluding the adoption of an ideal hydrogen bonding geometry with H524. The core differences for BZA broadcast down the linker arm to alter its vector towards H12 where the azepan ring now pushes against V534 and P535 (Figure 5B). The alterations to V534 and P535 propagate to H12 which appears displaced out of the AF-2 cleft into a less stable orientation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig5-v2.jpg)\n\n**Figure 5.:** (A) Overlay of BZA (cyan) with RAL (grey) X-ray crystal structures showing differences in H11-12 loop and H12 orientation. (B) Hydrogen bonds (dashed lines) formed by BZA and RAL in the binding pocket and highlighting differences in H11-12 loop and H12 conformation. PDBs: 1ERR and 4XI3.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig5-figsupp1-v2.jpg)\n\n### BZA binding conformation is energetically favored compared to RAL\n\nQuantum mechanical calculations were employed to determine whether inherent differences in the BZA and RAL ligands accounted for differences in antagonist potency. A significant energetic shift was observed between\u00a0the\u00a0dihedral scans, revealing that the BZA arm can adopt a set of torsion angles with significantly reduced energetic penalties compared to RAL (Figure 6A). Importantly, the energetic minima well is significantly broader for BZA compared to RAL, indicating that the angles adopted by BZA in the ER\u03b1 ligand-binding site are more favorable than RAL. Furthermore, an energetic penalty of approximately 1 kcal/mol would be incurred by RAL to adopt the same conformation observed for BZA in the X-ray crystal structure. Together these data show that the BZA ligand itself possesses physical properties that are more favorable to impact ER\u03b1 H12 compared to RAL.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig6-v2.jpg)\n\n**Figure 6.:** Deuterium uptake for each peptide is calculated as the average of % D for the 6 time points (10 s, 30 s, 60 s, 300 s, 900 s and 3600 s), and the difference in average % D values between the Apo-ER\u03b1 and ER\u03b1-E2 bound samples is shown as a heat map with a color code given at the bottom of the figure (warm colors for deprotection and cool colors for protection). Peptides are colored only if they show a\u00a0>\u00a05% difference (less or more protection) in average deuterium uptake between the two states, and the software employs a paired two-tailed student\u2019s t-test-based coloring scheme (p-value\u00a0<\u00a00.05 for two consecutive time points or a p-value\u00a0<\u00a00.01 for a single time point) to distinguish real protection differences from inherent variation in the data. Grey color represents no significant change (0\u20135%) between the two states.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Deuterium uptake for each peptide is calculated as the average of % D for the 6 time points (10 s, 30 s, 60 s, 300 s, 900 s and 3600 s) and the difference in average % D values between the Apo-ER\u03b1 and ER\u03b1-FULV bound samples is shown as a heat map with a color code given at the bottom of the figure (warm colors for deprotection and cool colors for protection). Peptides are colored only if they show a\u00a0>\u00a05% difference (less or more protection) in average deuterium uptake between the two states and the software employs a paired two-tailed student\u2019s t-test-based coloring scheme (p-value\u00a0<\u00a00.05 for two consecutive time points or a p-value\u00a0<\u00a00.01 for a single time point) to distinguish real protection differences from inherent variation in the data. Grey color represents no significant change (0\u20135%) between the two states.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Deuterium uptake for each peptide is calculated as the average of % D for the 6 time points (10 s, 30 s, 60 s, 300 s, 900 s and 3600 s) and the difference in average % D values between the Apo-ER\u03b1 and ER\u03b1-FULV bound samples is shown as a heat map with a color code given at the bottom of the figure (warm colors for deprotection and cool colors for protection). Peptides are colored only if they show a\u00a0>\u00a05% difference (less or more protection) in average deuterium uptake between the two states and the software employs a paired two-tailed student\u2019s t-test-based coloring scheme (p-value\u00a0<\u00a00.05 for two consecutive time points or a p-value\u00a0<\u00a00.01 for a single time point) to distinguish real protection differences from inherent variation in the data. Grey color represents no significant change (0\u20135%) between the two states.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Deuterium uptake for each peptide is calculated as the average of % D for the 6 time points (10 s, 30 s, 60 s, 300 s, 900 s and 3600 s) and the difference in average % D values between the Apo-ER\u03b1 and ER\u03b1-FULV-bound samples is shown as a heat map with a color code given at the bottom of the figure (warm colors for deprotection and cool colors for protection). Peptides are colored only if they show a\u00a0>\u00a05% difference (less or more protection) in average deuterium uptake between the two states and the software employs a paired two-tailed student\u2019s t-test-based coloring scheme (p-value\u00a0<\u00a00.05 for two consecutive time points or a p-value\u00a0<\u00a00.01 for a single time point) to distinguish real protection differences from inherent variation in the data. Grey color represents no significant change (0\u20135%) between the two states.\n\n### BZA and FULV reduce the impact of Y537S and D538G mutations on helix 12 dynamics\n\nSERDs competitively bind to the ER\u03b1 LBD and destabilize helix 12 (H12), leading to proteosomal degradation, while SERMs push the helix into the AF2 cleft to block coregulator binding (Fanning et al., 2016). Furthermore, AZD9496, a newer orally available SERD pushes H12 into the AF2 cleft but destabilizes the helix (De Savi et al., 2015). Previous work showed that the Y537S and D538G mutants, in complex with 4-OHT, adopts an altered antagonist conformation with respect to the WT-4-OHT complex (Fanning et al., 2016). Here, we explored how Y537S and D538G ER\u03b1 LBD mutations impact H12 mobility in the BZA complex using differential hydrogen-deuterium exchange mass spectrometry (HDX-MS). For comparisons we chose E2 as a representative hormone, FULV as a representative SERD, and 4-OHT as a representative SERM. Average time-dependent amide-deuterium uptake kinetics is indicative of conformational flexibility in proteins with highly dynamic regions being more susceptible to solvent deuterium exchange compared to conformationally rigid regions. As expected, addition of E2 resulted in an increased protection against exchange in H12 (inferred as increased stability or less dynamic), and this protection was enhanced for the Y537S and D538G mutants (Figure 6). Also, FULV treatment led to increased D2O uptake in H12 (interpreted as destabilization) of regions near H12 in both the WT and D538G mutant (Figure 6\u2014figure supplement 1), consistent with its SERD-like properties. Unfortunately, we were unable to collect HDX data for the Y537S mutant with FULV because it precipitated out of solution. Similar to previously published data (Fanning et al., 2016), binding of 4-OHT resulted in decreased stability of H12 with the Y537S compared to D538G and WT receptor (Figure 6\u2014figure supplement 2), suggesting that these mutants resist the ability of the SERM to alter their structure. Interestingly, addition of BZA did not increase the stability (lesser protection) of the region near H12 to as great of an extent as 4-OHT in WT and mutant ER\u03b1 LBDs, suggesting that BZA-bound ER\u03b1 adopts a less stable antagonist conformation than 4-OHT-bound ER\u03b1 (Figure 6\u2014figure supplement 3), consistent with the crystal structure. These data suggest that, while their antagonist conformations are altered by Y537S or D538G mutations, the ER\u03b1-BZA and FULV complexes maintain potency because they resist the stabilizing impact of the mutations better than 4-OHT.\n\n### How Y537S and D538G er\u03b1 LBD mutants alter the BZA antagonist structure\n\nTo understand the structural basis for the reduced BZA degradation of Y537S compared to WT ER\u03b1, atom-level explicit-solvent molecular dynamics (MD) simulations for the LBD of ER\u03b1 Y537S-BZA and D538G-BZA were performed using the WT-BZA crystal structure as template. When compared to the WT-4-OHT structure (PDB: 3ERT), the D538G-4-OHT structure displayed a significantly altered H11-12 loop, which leads to a perturbed H12 antagonist state (Figure 6\u00a0and\u00a0Figure 7B) (Fanning et al., 2016).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig7-v2.jpg)\n\n**Figure 7.:** (B) Overlaid representative calculated structure of Y537S-BZA (cyan) closest to the last 50-ns average from molecular dynamics (MD) simulation and the WT-BZA structure, vertical lines represent the ligand binding conformation in the X-ray crystal structure. Nitrogen atoms of the azepane part of BZA for the last 50-ns MD ensemble are shown in blue spheres near H12. Loop H11-12 is also shown for crystal structures of WT-4-OHT (wheat; PDB: 3ERT) and D538G-4-OHT (yellow; PDB: 4Q50). (C) Root mean squared fluctuations of ER\u03b1 LBD residues, including the C-end of H11 (resi. 519\u2013527), the loop H11-12 (resi. 528\u2013535), and H12 (resi. 536\u2013544), in the last 50-ns MD simulations for Y537S-BZA (cyan) and D538G-BZA (magenta). (D) Overlay of a representative structure of D538G-BZA (magenta) from MD simulations and the same WT-BZA structure (gray) as in (B).\n\nMD simulations show that H12 of both BZA-bound mutants remain close to an antagonist conformation (Figure 7B,D). Furthermore, H12 conformational fluctuations observed in MD simulations are less pronounced in Y537S-BZA than they are in D538G-BZA (Figure 7C), which echoes the aforementioned reduced H12 dynamics observed in HDX-MS data and agrees with our result that Y537S reduces BZA activity more than D538G does. Over the course of the simulations, the Y537S-BZA structure shows a hydrogen bond formation between E380 and S537 (Figure 7B), which could contribute to fewer H12 conformational fluctuations in Y537S ER\u03b1. It should be noted that this hydrogen bond is not sterically allowed in the WT-BZA crystal structure. This predicted hydrogen bond may stabilize H12 in the AF-2 cleft relative to WT. The simulated H11-12 loop conformations for both Y537S-BZA and D538G-BZA resemble WT-BZA or D538G-4-OHT, being closer to the ligand binding site, than they do to WT-4-OHT. The D538G mutation further increases the conformational variance of the H11-12 loop compared to Y537S (Figure 7C), which can be explained by the lack of a hydrogen bond in Y537S and the greater backbone conformational freedom allowed by the mutant glycine residue. Additionally, the H11-12 loop of both Y537S and D538G appears further away from the protein core and BZA compared to that of WT (Figure 7B,D). We hypothesize that the varied conformations and increased dynamics of the H11-12 loop in both ER\u03b1 mutants makes it more difficult for BZA to maintain sufficient interactions with the loop to disrupt the ER antagonist conformation. Together, these data show that both mutations produce a stable antagonist conformation, especially at H12, and reduce the SERD-like properties of BZA by lessening its ability to disrupt the H11-12 loop and stabilize H12 in the AF-2 cleft.\n\n## Discussion\n\nSomatic mutation to ESR1 following prolonged estrogen-deprivation therapy represents a newly appreciated mechanism of acquired hormone resistance in metastatic breast cancer. The two most prevalent mutations,\u00a0Y537S and D538G, give rise to a dysfunctional receptor that escapes hormone regulation and has decreased sensitivity to inhibition by 4-OHT and fulvestrant (Fanning et al., 2016). Newly characterized orally available pure antiestrogens (e.g. GDC-0927, AZ9496, and RAD1901) are emerging as potentially potent inhibitors of these mutants, but their long-term clinical utility is unknown and their side effect profiles have not been studied in large patient populations (Toy et al., 2017; Lai et al., 2015). Because BZA is already clinically approved for use in hormone replacement therapy and is a potent ER\u03b1 antagonist in the breast, an agonist in bone, and neutral in the endometrium with long-term safety data in thousands of patients, we explored its ability to inhibit the Y537S and D538G ER\u03b1 somatic mutants in breast cancer (Wardell et al., 2013a).\n\nWe first quantified the ability of BZA to disrupt WT and mutant ER\u03b1 transcription, induce degradation, and inhibit cell growth in MCF-7 cells. These data show that BZA has increased activity, compared to the SERD FULV and SERM 4-OHT, toward inhibition of cell growth and ER\u03b1 transcriptional activity. Further, BZA elicited degradation of WT receptor, although not as much as FULV. Importantly, BZA reduced the levels of Y537S ER\u03b1 relative to RAL and 4-OHT. Together these data suggest that the ability of BZA to degrade ER\u03b1 confers an inhibitory advantage over 4-OHT in the context of the somatic mutants. Additionally, combined treatment with BZA and the CDK4/6 inhibitor palbociclib resulted in additional inhibitory potency of cellular proliferation in breast cancer cells expressing both WT and Y537S ER\u03b1 without impacting BZA\u2019s action. In line with our studies, previous studies with an Y537S ER mutant PDX model showed an enhanced inhibitory effect on proliferation when bazedoxifene was added to palbociclib (Wardell et al., 2015a) As such, combination BZA-CDK4/6 treatment shows significant potential in pre-clinical studies experiments and merits further evaluation. Results from the current study and the aforementioned PDX studies have led to an ongoing Phase Ib/II clinical trial testing the combination bazedoxifene with palbociclib in patients with metastatic ER\u00a0+breast cancer (NCT02448771). The correlative studies of this trial will include assessment of the ESR1 mutational status. Although this study does not include an arm with single agent bazedoxifene, the study will provide initial results on the signal of the activity of bazedoxifene in patients that have received prior endocrine treatment.\n\nComprehensive structural-biochemical investigations were undertaken to understand the basis for the SERD-like properties of BZA and its improved potency against the Y537S and D538G ER\u03b1 LBD mutants compared to 4-OHT. Biochemical coactivator studies using recombinant ER\u03b1 LBD demonstrated that BZA could inhibit the both basal and E2-induced recruitment of coregulators in vitro, while ligand-binding assays showed that the Y537S and D538G mutants had significantly reduced affinities for BZA, 4-OHT, RAL, and FULV. Interestingly, an HDX MS comparison of BZA, 4-OHT, and FULV suggested that FULV and BZA can both resist the impact of somatic mutation on their antagonist binding conformations compared to 4-OHT. An X-ray crystal structure of the WT-BZA complex revealed that differences in the core of the molecule translated to an altered vector of the linker arm, resulting in contacts with the H11-12 loop and a perturbed H12 antagonist binding mode. This less stable H12 antagonist conformation likely explains the SERM/SERD properties of BZA, wherein it allows H12 to adopt an antagonist conformation (like a SERM) that is somewhat destabilized, although not as destabilized as when FULV is bound.\n\nAtomistic MD simulations were used to examine the molecular basis for the observed decrease in degradation of ER\u03b1 within breast cancer cells expressing the Y537S and D538G mutants. Both mutants stabilized the antagonist conformation of H12 in the AF-2 cleft, while the Y537S appeared to be the more stable of the two by forming a hydrogen bond between S537 and E380. Interestingly, E380Q has also been found to be a recurrent ESR1 mutation able to confer endocrine resistance. MD simulations also suggest that these mutants have varied conformations and increased dynamics of loop H11-12, which potentially reduces BZA\u2019s ability to disrupt ER antagonist conformations. Together these results suggest that BZA retains its SERM antagonist properties within breast cancer cells expressing Y537S and D538G mutant ER\u03b1 to a greater extent than 4-OHT but its SERD-like properties are diminished. The reduced potency on the mutants likely derives from the stabilization of the apo receptor in the agonist conformation, which reduces the on rate of ligand binding (Fanning et al., 2016), reflecting that the agonist conformer blocks ligand exchange (Sonoda et al., 2008).\n\nOverall, our findings show the molecular basis for the SERD-like activity of BZA and its potential advantage with and without CDK4/6 inhibitor, versus 4-OHT, to inhibit the Y537S and D538G ER\u03b1 mutants. Importantly, interrogating the structural details of BZA-ER\u03b1 LBD binding suggests that molecules with improved pharmacological profiles that specifically disrupt the H11-12 loop at H12 will have clear advantages against breast cancer cells expressing WT, Y537S, and D538G ER\u03b1. Figure 8 summarizes how BZA achieves SERM/SERD activity compared to SERM or agonist compounds. In fact, the newer SERM/SERDs and SERDs with improved pharmacologic profiles (e.g. AZ9496) appear to do so using a similar mechanism (De Savi et al., 2015). Thus, the ability of other new SERDs to withstand the impact of Y537S and D538G mutations on their antagonist-binding modes should be investigated.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig8-v2.jpg)\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifier</th>\n      <th>RRID</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Estrogen Receptor Alpha Ligand Binding Domain WT or Y537S</td>\n      <td>Fanning SW, Mayne CG, Dharmarajan V, Carlson KE, Martin TA, Novick SJ, Toy W, Green B, Panchamukhi S, Katzenellenbogen BS, Tajkhorshid E, Griffin PR, Shen Y, Chandarlapaty S, Katzenellenbogen JA, Greene GL. Estrogen receptor alpha somatic mutations Y537S and D538G confer breast cancer endocrine resistance by stabilizing the activating function-2 binding conformation. eLife. 2016;5:e12792. doi: 10.7554/eLife.12792.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Protein Expression)</td>\n      <td>E.coli BL21(DE3)</td>\n      <td>https://www.neb.com/products/c2527-bl21de3-competent-e-coli#Product%20Information</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mammary Cells)</td>\n      <td>MCF7, MCF7 HA-Y537S, MCF7 HA-D538G, T47D, CAMA-1, ZR75-1, MDA-MB-361</td>\n      <td>ATCC; this paper; this paper; ATCC; ATCC; ATCC; ATCC</td>\n      <td>ATCC HTB-22, ATCC HTB-23, ATCC HTB-21, ATCC CRL-1500, ATCC HTB-27</td>\n      <td>CVCL_0031, CVCL_0553, CVCL_1115, CVCL_0588, CVCL_0620</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-ER\u03b1 antibody F10</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>sc-8002</td>\n      <td>AB_627558</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-actin antibody</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>sc-69879</td>\n      <td>AB_1119529</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-HA antibody</td>\n      <td>Cell Signaling</td>\n      <td>C29F4</td>\n      <td>AB_1549585</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>CCP4i</td>\n      <td>https://www.ccp4.ac.uk/ccp4i_main.php</td>\n      <td></td>\n      <td>SCR_007255</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>VMD</td>\n      <td>https://www.ks.uiuc.edu/Research/vmd/</td>\n      <td></td>\n      <td>SCR_004905</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Gaussion G09</td>\n      <td>http://gaussian.com/</td>\n      <td></td>\n      <td>SCR_014897</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>GaussView</td>\n      <td>http://gaussian.com/</td>\n      <td></td>\n      <td>SCR_014897</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>HDX Workbench</td>\n      <td>http://hdxworkbench.com/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Bionavigator</td>\n      <td>PamGene</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PamStation96</td>\n      <td>PamGene</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MycoAlert Mycoplasma Detection Kit</td>\n      <td>Lonza</td>\n      <td>LT07-518</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>protease inhibitor cocktail solution III</td>\n      <td>CalBiochem</td>\n      <td>539134</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>4-hydroxytamoxifen</td>\n      <td>Tocris</td>\n      <td>3412</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ICI 182\u2013780 (fulvestrant)</td>\n      <td>Tocris</td>\n      <td>1047/1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Raloxifene</td>\n      <td>Sigma- Aldrich</td>\n      <td>R1402</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Estradiol</td>\n      <td>Sigma- Aldrich</td>\n      <td>E8875</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Breast cancer cellular reporter gene assays\n\nLuciferase reporter assay system (Promega) was used to monitor luciferase activity in MCF7 cells with stable expression of ERE luciferase per the manufacturer's recommendations, using a single tube luminometer (BD Monolight 2010). MCF7 cells were plated in six-well plates and treated with increasing doses of BZA, FULV or 4-OHT (0/0.01/0.1/1/10/100/1000 nM) in complete medium for 24 hr. All studies were performed in triplicates, and luciferase results are reported as relative light units (RLU) and normalized with \u03b2-Galactosidase activity using Mammalian \u03b2-gal assay kit (Thermo Scientific). Mycoplasma was tested every 6 weeks in these cells, and no mycoplasma was detected in the MCF-7 cell lines using the MycoAlert Mycoplasma Detection Kit (Lonza). MCF-7 cells were purchased directly from ATCC and the studies were completed within 1 year of purchase. Cells reached a maximum of 30 passages during these studies.\n\n### Cell proliferation\n\nFor proliferation studies the breast cancer cells were plated in 24 well plates (2.5 \u00d7 104/well). At the indicated time points, the cells were trypsinized. We determined the number of viable cells by Trypan blue exclusion staining and manual counting with a hemacytometer using independent triplicates.\n\n### RT-PCR\n\nTotal RNA was isolated with the RNeasy kit (Qiagen). The high-capacity RT kit (Applied Biosystems) was used for preparation of the cDNA, and the PCR reaction was carried out with SYBR Green (Qiagen).\n\nPrimers:\n\nc-myc F: 5\u2019 \u2013TTCGGGTAGTGGAAAACCAG-3\u2019\n\nc-myc R: 5\u2019-CAGCAGCTCGAATTTCTTCC-3\u2019\n\nPR F: 5\u2019-AGCCAGAGCCCACAATACAG-3\u2019\n\nPR R: 5-\u2018GACCTTACAGCTCCCACAGG-3\u2019\n\nGREB1 F: 5\u2019-CTGCCCCAGAATGGT TTT TA-3\u2019\n\nGREB1 R: 5\u2019-GGACTGCAGAGTCCAGAAGC \u22123\u2019\n\nCA12 F: 5\u2019-CCACTGTGCTCTGGACAG TTT-3\u2019\n\nCA12 R: 5\u2019- GCCTCTCATGCAACTTCTGG-3\u2019\n\nCCDN1 F: 5\u2019- AACTACCTGGACCGCTTCCT-3\u2019\n\nCCDN1 R: 5\u2019- CCACTTGAGCTTGTTCACCA-3\u2019\n\n### ER\u03b1 stability immunoblots\n\nTet-ON MCF7 cells lines (HA-ER\u03b1 WT, HA-ER\u03b1 Y537S, HA-ER\u03b1 D538G) were cultured in DMEM supplemented with 10% fetal bovine serum (FBS), 2 mM L-glutamate, 1% penicillin-streptomycin, 100 \u03bcg/mL geniticin, and 100 \u03bcg/mL hygromycin. Before western blotting experiments, 300,000 cells were plated in each well of a 6-well culture dish and cultured for 48 hr in DMEM supplemented with 10% charcoal-stripped FBS (SFBS), 2 mM L-glutamate, 1% penicillin-streptomycin, and 0.2 \u03bcg/mL doxycycline. Compounds were diluted in ethanol or DMSO. Cells were treated with either 10 nM estradiol (Sigma), 1 \u03bcM FULV (Tocris), 100 nM Ral (Sigma), 100 nM BZA (Pfizer), 100 nM 4-OHT (Tocris), or vehicle (ethanol) for 24 hr. Subsequently, cells were washed twice with 1 mL of ice-cold PBS, harvested via scraping, and pelleted at 4\u00b0C. Cells were resuspended in 50 \u03bcL lysis buffer [0.1% CHAPS, 50 mM HEPES (pH 8.0), 120 mM NaCl,1mM EDTA, 10 mM Na pyrophosphate, and 10 mM glycerophosphate; supplemented with a protease inhibitor cocktail solution III (CalBiochem)]. Cells were lysed via three freeze-thaw cycles. Lysates were then pelleted at 4\u00b0C, and 100 \u03bcg of protein was mixed with standard 2x Laemmli buffer. Samples were loaded onto a 10% SDS-polyacrylamide electrophoresis gel, transferred after electrophoresis onto nitrocellulose membrane, and immunoblotted using anti-HA-tag (Cell Signaling C29F4) and anti-actin (Santa Cruz Biotechnology AC-15) antibodies. Membranes were probed using anti-rabbit 800 nm (Rockland) and anti-mouse 680 nm (Rockland) and imaged on the Licor Odyssey. Membrane intensities were normalized to actin control and quantified using ImageStudio. Mycoplasma was tested every 6 weeks in these cells and no mycoplasma was detected in any of the Tet-ON MCF-7 cell lines using the MycoAlert Mycoplasma Detection Kit (Lonza).\n\nFor experiments using ZR75-1, MDA-MB-361, CAMA-1, and T47D cells, all cell lines were purchased directly from ATCC. T47D and ZR75-1 cells were grown in RPMI-1640 with 10% FBS. CAMA-1 cells were grown in DMEM with 10% FBS. MDA-MB-361 were grown in L15 media with 20% FBS. Cells were plated at 300 k per well. Once cells reached\u00a0~60% confluency, they were placed in charcoal-stripped FBS media for 48 hr. Cells were treated with 0 (vehicle), 25 nM, 50 nM, and 100 nM BZA in DMSO and harvested after 24 hr. Cells were lysed with M-PER lysis reagent. Experiments with CAMA-1 and MDA-MB-361 were performed using traditional Western blot. For those experiments, 100 \u00b5g of protein was loaded per lane. Experiments in ZR75-1 and T47D were done using a Wes Automated Western Blot (Protein Simple). For the Wes, 9 \u00b5g of protein was loaded per lane. ER\u03b1 F10 antibody (sc-8002) was used at dilutions of 1:500 for traditional western blotting, and 1:50 for the Wes. Mouse \u03b2-actin antibody (60008\u20131-Ig) was used at dilutions of 1:5000 on the Wes, and rabbit \u03b2-actin antibody (20536\u20131-AP) was used at dilutions of 1:10000 for traditional western blotting.\n\n### Co-regulator interaction profiling\n\nThis method has been described previously (Koppen et al., 2009). Cell lysates of MCF7 cells expressing HA-tagged WT-ER, Y537S mutant ER and D538G mutant ER were quantified by ELISA (Active Motif, USA) to enable equimolar input. An array with a set of immobilized peptides representing coregulator-derived NR-binding motifs was incubated with a reaction mixture of crude lysate, vehicle (2% DMSO) with or without 1 \u03bcM 17\u03b2-estradiol (E2), increasing concentrations of BZA, 4-OHT or FULV (0.1, 1, 10, 100, 1000 nM) and anti-HIS-Alexa488 (Qiagen, USA). Incubation was performed for 40 min at 20\u00b0C, followed by removal of unbound receptor by washing and generation of a TIFF image of each array using a PamStation96 (PamGene International). Image processing and quantification of ER\u03b1 binding to each peptide on the array was performed by Bionavigator software (PamGene International).\n\n### Coactivator binding assays\n\nProtein preparation for TR-FRET. Expression, purification, and site-specific labeling of the ER\u03b1-LBD was performed as described previously (Tamrazi et al., 2002). Generation of the nuclear receptor interaction domain (NRD) of human SRC3 coactivator has also been described previously (Kim et al., 2005). ER\u03b1 LBD and the SRC3 fragment were labeled with Mal-dPEG4-biotin (Quanta BioDesign, Powell, OH), and 5-iodoacetamido fluorescein (Molecular Probes, Invitrogen, Eugene, OR), respectively.\n\n### Coactivator recruitment with ligand titration\n\nTo raise the background level of SRC3 NRD binding, the ER\u03b1 LBD preparation (1 nM ER-LBD, 0.25 nM SaTb, 100 nM SRC3-fluorescein) was primed with 20 nM E2, and then increasing ligand concentrations (from 3 \u00d7 10\u221212 to 3 \u00d7 10\u22127 M) were added. Diffusion-enhanced FRET was determined by a parallel incubation without biotinylated ER-LBD and subtracted as a background signal. The time-resolved F\u00f6rster resonance energy transfer measurements were performed with a Victor X5 plate reader (Perkin Elmer, Shelton, CT) with an excitation filter at 340/10 nm and emission filters for terbium and fluorescein at 495/20 and 520/25 nm, respectively, with a 100-\u00b5s delay (Tamrazi et al., 2005; Moore et al., 2015; Jeyakumar et al., 2011). The data, representing 2\u20133 replicate experiments, each with duplicate points, was analyzed using GraphPad Prism 4, and are expressed as the IC50 in nM.\n\n### Ligand binding assays\n\nThe dissociation constant, (Kd) of estradiol binding to each ER was measured by saturation binding with [3H]17\u03b2-E2 and Scatchard plot analysis (Scatchard, 1949), as described previously (Fanning et al., 2016; Hurth et al., 2004). Relative binding affinities (RBA) were determined by a competitive radiometric ligand binding assay with 2 nM [3H]E2 as tracer (Fanning et al., 2016). Incubations were at 0\u00b0C for 18\u201324 hr. Hydroxyapatite was used to adsorb the receptor-ligand complex, and unbound ligand was washed away. The determination of the RBA values is reproducible in independent experiments with a CV of 0.3, and the values shown represent the average\u00a0\u00b1range or SD of two or more separate determinations. Ki was determined by the Cheng-Prusoff equation (Cheng and Prusoff, 1973) Ki = IC50/(1 + [tracer total/Kd of tracer]).\n\n### Hydrogen/deuterium exchange-mass spectrometry (HDX-MS)\n\nSolution-phase amide HDX experiments were carried out with a fully automated system (CTC HTS PAL, LEAP Technologies, Carrboro, NC; housed inside a 4\u00b0C cabinet) as described previously (Fanning et al., 2016) with slight modifications.\n\n#### Peptide identification\n\nPeptides were identified using tandem MS (MS2 or MS/MS) experiments performed with a LTQ linear ion trap mass spectrometer (LTQ Orbitrap XL with ETD, ThermoFisher, San Jose, CA) over a 70 min gradient. Product ion spectra were acquired in a data-dependent mode and the five most abundant ions were selected for the product ion analysis per scan event. The MS/MS *.raw data files were converted to *.mgf files and then submitted to MASCOT ver2.3 (Matrix Science, London, UK) for peptide identification. The maximum number of missed cleavage was set at four with the mass tolerance for precursor ions\u00a0\u00b1\u00a00.6 Da and for fragment ions\u00a0\u00b1\u00a08 ppm. Oxidation to Methionine was selected for variable modification. Pepsin was used for digestion and no specific enzyme was selected in the MASCOT during the search. Peptides included in the peptide set used for HDX detection had a MASCOT score of 20 or greater. The MS/MS MASCOT search was also performed against a decoy (reverse) sequence and false positives were ruled out. The MS/MS spectra of all the peptide ions from the MASCOT search were further manually inspected and only the unique charged ions with the highest MASCOT score were used in estimating the sequence coverage and included in HDX peptide set.\n\n#### HDX-MS analysis\n\nFor differential HDX experiments, 5 \u03bcL of a 10 \u03bcM ER\u03b1 LBD (Apo or in complex with 10-fold excess compound) was diluted to 25 \u03bcL with D2O-containing HDX buffer (20 mM Tris-HCl pH 8.0, 150 mM NaCl, 5% glycerol, 1 mM DTT) and incubated at 4\u00b0C for 10 s, 30 s, 60 s, 900 s, and 3600 s. Following on-exchange, unwanted forward or backward exchange is minimized, and the protein is denatured by dilution to 50 \u03bcL with 0.1% TFA in 5 M urea with 50 mM TCEP (held at 4\u00b0C, pH 2.5). Samples are then passed across an immobilized pepsin column (prepared in house) at 50 \u03bcL min\u22121 (0.1% TFA,15\u00b0C), and the resulting peptides are trapped onto a C8 trap cartridge (Thermo Fisher, Hypersil Gold). Peptides were then gradient eluted (5% CH3CN to 50% CH3CN, 0.3% formic acid over 6 min, 4\u00b0C) across a 1 mm\u00a0\u00d750 mm C18 analytical column (Hypersil Gold, Thermo Fisher) and electrosprayed directly into a high resolution orbitrap mass spectrometer (LTQ Orbitrap XL with ETD, Thermo Fisher). Percent deuterium exchange values for peptide isotopic envelopes at each time point were calculated and processed using HDX Workbench (Pascal et al., 2012). Each HDX experiment was carried out in triplicate with a single preparation of each protein-ligand complex. The intensity weighted mean m/z centroid value of each peptide envelope was calculated and subsequently converted into a percentage of deuterium incorporation. This is accomplished by determining the observed averages of the undeuterated and using the conventional formula described elsewhere (Zhang and Smith, 1993). Statistical significance for the differential HDX data is determined by an unpaired t-test for each time point, a procedure that is integrated into the HDX Workbench software (Pascal et al., 2012). Corrections for back-exchange were made on the basis of an estimated 70% deuterium recovery and accounting for 80% final deuterium concentration in the sample (1:5 dilution in D2O HDX buffer).\n\n### X-ray crystallographic analysis of the WT er\u03b1 LBD-BZA complex\n\nThe 6\u00a0\u00d7\u00a0His TEV-tagged ER\u03b1-L372S, L536S double mutant LBD was expressed in E.coli BL21(DE3) and purified as described (Sharma et al., 2017). LBD (10 mg/mL) and incubated with 1 mM BZA overnight at 4\u00b0C. LBD-BZA was crystallized using vapor diffusion by hanging drop in 33% PEG 3,350, 100 mM Tris pH 6.6, and 250 mM MgCl2. Diffraction data were collected at the Canadian Light Source at beamline 08ID-1 at a wavelength of 0.97 \u00c5. Indexing, scaling, and structure refinement were performed as described (Fanning et al., 2016). Table 3 shows data collection and refinement statistics. Final coordinates were deposited in the Protein Databank with the accession code 4XI3.\n\n**Table 3.**\n Crystallographic data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>ER\u03b1 LBD-BZA</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data Collection</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Space Group</td>\n      <td>P1</td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>53.57, 59.17, 94.14</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>86.76, 75.36, 63.03</td>\n    </tr>\n    <tr>\n      <td>Resolution Range</td>\n      <td>50\u20132.49</td>\n    </tr>\n    <tr>\n      <td>Number of Reflections</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>(all/unique)</td>\n      <td>63,978/29,080</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3 (highest resolution)</td>\n      <td>1.35</td>\n    </tr>\n    <tr>\n      <td>Rmerge</td>\n      <td>8.0</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>97.6</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>2.2</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree</td>\n      <td>21.1/29.3</td>\n    </tr>\n    <tr>\n      <td>No. Residues/Chain</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ER\u03b1 LBD D538G</td>\n      <td>241</td>\n    </tr>\n    <tr>\n      <td>GRIP Peptide</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Ligand</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>RMSD</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.010</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.575</td>\n    </tr>\n    <tr>\n      <td>Chiral volume</td>\n      <td>0.1016</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot statistics</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Preferred number (%)</td>\n      <td>837 (97.44%)</td>\n    </tr>\n    <tr>\n      <td>Additional allowed (%)</td>\n      <td>18 (2.10%)</td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>4 (0.47%)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Quantum mechanical calculations\n\nTorsion scans were performed on the bond connecting the internal substituents to the central core for each ligand. The ligand coordinates were extracted from x-ray crystal structures of BZA (PDB code 4XI3) and RAL (PDB code 2QXS) and all hydrogens were added. Relaxed potential energy surface scans in which the remainder of the structure is geometry optimized at each torsion step were prepared and analyzed using the torsion scan module of the Force Field Toolkit (Mayne et al., 2013) (ffTK) plugin of VMD (Humphrey et al., 1996). Quantum mechanical calculations were performed using Gaussion G09\u00a0(Frisch et al., 2016) at the MP2 level of theory with a 6\u201331G* basis set. Both ligands were scanned using a bidirection technique originating from the crystal structure conformation and scanning outward in the (+) and (-) directions independently. The BZA ligand was scanned in four-degree increments while the RAL ligand required a smaller two-degree step size to avoid discontinuities due to broader conformational changes when taking larger steps.\n\n### Molecular dynamics simulations\n\nLigand parameterization. A 3D structure of BZA (without hydrogen atoms) was first built using the computer program GaussView (version 4.1.2; part of the computer program Gaussian 03 (Frisch, 2004). The remaining ligand parameterization was carried out as described (Fanning et al., 2016).\n\nStructure preparation, molecular dynamics, data visualization and analysis. WT-BZA (PDB: 4XI3) was used as a template to construct starting structures of Y537S-BZA and D538G-BZA. Specifically, chains A and C were chosen among the three dimers in 4XI3 for having the least missing residues in the loop H11-12 region, with ions removed and water molecules retained. Side chain atoms of mutation sites (residue 537 and 538, respectively) were also replaced with the mutant residues. Otherwise, structures were prepared, molecular dynamics were calculated, and data were analyzed/visualized as described (Fanning et al., 2016).\n",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "ec22da1f-d56a-499d-b7db-3e1b2fe90e42",
+      "submission_id": "c3af72a0-0865-4856-94b8-6cde5ac021ed",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Charles L Sawyers, Memorial Sloan-Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37161.023](https://doi.org/10.7554/eLife.37161.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The SERM/SERD Bazedoxifene Disrupts ESR1 Helix 12 to Overcome Acquired Hormone Resistance in Breast Cancer Cells\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Charles Sawyers as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jeffrey H Hager (Reviewer #1); Donald McDonnell (Reviewer #2).\n\nAfter discussing the reviews with one another and the Reviewing Editor, we have drafted this decision to help you prepare a revised submission. All the reviewers are positive about the near-term clinical impact of the work but there is some concern about novelty because some of the findings are predictable/incremental based on prior work with BZE. However, we are willing to consider publication in eLife if you can address the main points listed below.\n\nSummary:\n\nThe authors report a solid functional and structural characterization of the estrogen receptor modulator Bazedoxifene (BZA) that highlights the potential of BZA as a therapeutic to treat ESR1 mutant bearing hormone-resistant breast cancer. Specifically, the work addresses two main questions: (a) what is the molecular basis for the SERD activity of bazedoxifene? and (b) how do somatic mutations in ER, apparent in advanced disease, impact the pharmacology of BZA? This paper answers both of these questions in a comprehensive manner and highlights the potential clinical utility of bazedoxifene (with a cdk4/6 inhibitor) as a treatment for patients with metastatic ER-mutant positive breast cancer. While the data in the paper is executed and presented well, the manuscript in its current form is a relatively minor advance over what these authors and others have previously published (Lewis-Wambi 2011; Waddell 2013) unless additional data are provided.\n\nEssential revisions:\n\n1) Experiments to benchmark BZA against newer next generation SERDs\n\nAs noted in the manuscript, there are multiple, novel, chemically diverse SERDs in clinical development. The paper would be more compelling if there were comparative work describing any potential differences between BZA and the 1 or more next-gen SERDs. Are these agents differentiated from BZA? These data would be of interest to the broader community including the academic and industry scientists who are actively developing novel ER-targeting agents and would lend further support to the ongoing clinical evaluation (NCT02448771) of BZA \u00b1 palbo in the setting of acquired hormone resistant breast cancer. In addition, you need to update the readers on the ER-modulators that are in development at the current time for ER-positive breast cancer and mention what is known about their activity on ESR1 mutations (H3B 6545, SAR439859, ARV-ER, RAD1901 G1T48 and LSZ102).\n\n2) Determine BZA degrader activity across a cell line panel\n\nEmerging data indicating that SERDs can exhibit differential \"degrader\" activity in different ER+ cell lines (Metcalfe AACR 2018). MCF-7 is perhaps the most responsive cell-line to SERD (degrader) activity. To better understand the potential of BZA across the heterogeneity of human tumors, it is important to determine if BZA has broad \"degrader\" activity by testing in a panel of cell lines.\n\n3) In vivo xenograft data\n\nAll of the conclusions are based on in vitro studies. Because of the potential clinical impact, BZA should be evaluated in a xenograft model and benchmarked against other ER degraders such as fulvestrant and RAD-1901 (using dose-regimens that approximate clinical exposures) in ESR1 overexpressing Y537S or D538G (or ideally both) models along with parental MCF-7 as control.\n\n4) Clarification of the current BZA approval and different compositions\n\nMost readers will not understand why the authors mention that BZA is approved as a component of a HT preparation (containing estrogens) and may be confused as to what the authors are proposing as the intervention. Clearly BZA alone can be used in the countries where it is approved as a single agent (most of Europe and Japan). From a regulatory perspective, BZA is not an approved drug in the US. Are the authors suggesting that the antagonist activity of BZA in the Duavee is sufficient to inhibit the activity of the mutants? Given that it is likely that the doses of BZA that will be used for breast cancer treatment are likely to be higher than those available in Duavee this issue needs to be discussed.\n",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "17a93403-42d4-4a63-8110-93ef65b18bd5",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C1",
+      "claim": "Somatic mutations in the ESR1 (estrogen receptor alpha (ER\u03b1)) gene ligand-binding domain (LBD) represent a recognized mechanism of acquired resistance to endocrine therapy in breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Somatic mutations in the ESR1 (estrogen receptor alpha (ER\u03b1)) gene ligand-binding domain (LBD) represent a recognized mechanism of acquired resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a recognized mechanism based on existing knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "ba78003e-fa30-4e2d-ac1b-6c5b1f16003b",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C2",
+      "claim": "Bazedoxifene (BZA) possesses improved inhibitory potency against the Y537S and D538G ER\u03b1 mutants compared to tamoxifen.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that BZA possesses improved inhibitory potency against the Y537S and D538G ER\u03b1 mutants compared to tamoxifen and has additional inhibitory activity in combination with the CDK4/6 inhibitor palbociclib.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including reporter gene assays and cell proliferation studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "59f9e9a8-aa66-41f6-b728-5b4ee77ed3bc",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C3",
+      "claim": "BZA has additional inhibitory activity in combination with the CDK4/6 inhibitor palbociclib.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that BZA possesses improved inhibitory potency against the Y537S and D538G ER\u03b1 mutants compared to tamoxifen and has additional inhibitory activity in combination with the CDK4/6 inhibitor palbociclib.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by combination treatment experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "78168c37-f21e-4450-a08e-bd16cce7c959",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C4",
+      "claim": "BZA's selective estrogen receptor degrading (SERD) properties override the stabilizing effects of the Y537S and D538G ER\u03b1 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, comprehensive biophysical and structural biology studies show BZA's selective estrogen receptor degrading (SERD) properties that override the stabilizing effects of the Y537S and D538G ER\u03b1 mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by HDX-MS, X-ray crystallography, and molecular dynamics simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "c51498ae-20c3-46c7-808c-e8cdc37803a5",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C5",
+      "claim": "ER\u03b1 plays critical roles in the etiology, treatment and prevention of the majority of breast cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Estrogen receptor alpha (ER\u03b1) plays critical roles in the etiology, treatment and prevention of the majority of breast cancers (Frasor et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "76fc7372-f0d2-4610-a3e5-8baea5215d74",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C6",
+      "claim": "The majority of ER+ metastatic breast cancers that initially respond to endocrine treatment will become refractory despite continued ER\u03b1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the majority of ER+ metastatic breast cancers that initially respond to endocrine treatment will become refractory despite continued ER\u03b1 expression (Toy et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "8cc233e5-4fcd-4d7e-837b-416822582d16",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C7",
+      "claim": "Somatic mutations to ESR1 ligand binding domain (LBD) were identified in 25\u201330% of patients who previously received endocrine treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, somatic mutations to ESR1 (gene for ER\u03b1) ligand binding domain (LBD) were identified in 25\u201330% of patients who previously received endocrine treatment (Toy et al., 2013; Jeselsohn et al., 2015; Jeselsohn et al., 2014; Niu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "d711a129-829a-4fb0-9176-9cce7d85b1fd",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C8",
+      "claim": "Y537S and D538G are the two most prevalent ESR1 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Y537S and D538G are the two most prevalent mutations, and pre-clinical studies show that these mutations confer hormone-free transcriptional activity and relative resistance to tamoxifen and fulvestrant treatment (Toy et al., 2013; Jeselsohn et al., 2015; Jeselsohn et al., 2014; Niu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "cbb663f3-867b-4cb2-90ff-fedc3c1756e3",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C9",
+      "claim": "Y537S and D538G mutations confer hormone-free transcriptional activity and relative resistance to tamoxifen and fulvestrant treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Y537S and D538G are the two most prevalent mutations, and pre-clinical studies show that these mutations confer hormone-free transcriptional activity and relative resistance to tamoxifen and fulvestrant treatment (Toy et al., 2013; Jeselsohn et al., 2015; Jeselsohn et al., 2014; Niu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous pre-clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "e0f4290e-188b-4b9b-b4a2-bfbd007076ff",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C10",
+      "claim": "Both Y537S and D538G mutants enable constitutive ER\u03b1 activity by favoring the agonist-like conformation of the receptor activating function-2 (AF-2) surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mutants enable constitutive ER\u03b1 activity by favoring the agonist-like conformation of the receptor activating function-2 (AF-2) surface and significantly reduce hormone and 4-hydroxytamoxifen (the active metabolite of tamoxifen) binding affinities (Nettles et al., 2008; Fanning et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural and biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "1b4fb4c6-f5d4-4029-8c0b-346d976d8ba2",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C11",
+      "claim": "Y537S and D538G mutations significantly reduce hormone and 4-hydroxytamoxifen binding affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mutants enable constitutive ER\u03b1 activity by favoring the agonist-like conformation of the receptor activating function-2 (AF-2) surface and significantly reduce hormone and 4-hydroxytamoxifen (the active metabolite of tamoxifen) binding affinities (Nettles et al., 2008; Fanning et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous binding studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "1f446446-b670-4c06-b6b2-49a05238368f",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C12",
+      "claim": "Fulvestrant at high concentrations was the only molecule that reduced the Y537S and D538G ER\u03b1 mutant transcriptional activity to basal levels in pre-clinical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In pre-clinical studies, fulvestrant (FULV, a selective estrogen receptor degrader (SERD) and complete antiestrogen) at high concentrations was the only molecule that reduced the Y537S and D538G ER\u03b1 mutant transcriptional activity to basal levels (Toy et al., 2013; Jeselsohn et al., 2015; Jeselsohn et al., 2014; Niu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous pre-clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "b6939e83-1438-41aa-a430-8d05124d160a",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C13",
+      "claim": "Fulvestrant's clinical efficacy is limited by poor solubility and oral bioavailability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, its clinical efficacy is limited by poor solubility and oral bioavailability (Wardell et al., 2013a; van Kruchten et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous pharmacological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "5bb54bff-d93d-41eb-a4eb-f78b282ee308",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C14",
+      "claim": "BZA was approved for use in combination with conjugated equine estrogens for hormone replacement therapy in postmenopausal women in the US.",
+      "claim_type": "EXPLICIT",
+      "source": "BZA was approved a number of years ago for the use in combination with conjugated equine estrogens for hormone replacement therapy in postmenopausal women (DUAVEE, Pfizer) in the US and for the prevention of osteoporosis as a single agent in Europe (Wardell et al., 2013a; Tikoo and Gupta, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to regulatory and clinical information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "a7808342-fc3e-4eb3-a3f0-30ecc58966d6",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C15",
+      "claim": "BZA was approved for the prevention of osteoporosis as a single agent in Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "BZA was approved a number of years ago for the use in combination with conjugated equine estrogens for hormone replacement therapy in postmenopausal women (DUAVEE, Pfizer) in the US and for the prevention of osteoporosis as a single agent in Europe (Wardell et al., 2013a; Tikoo and Gupta, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to regulatory and clinical information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "4f2543cf-9254-40b6-a7dd-06e5ec19ad1d",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C16",
+      "claim": "BZA displayed strong antagonist and SERD profiles in the breast while retaining beneficial agonist properties in the bone.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it displayed strong antagonist and SERD profiles in the breast while retaining beneficial agonist properties in the bone and did not stimulate endometrial tissue in pre-clinical studies (Wardell et al., 2013a; Komm et al., 2005; Lewis-Wambi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous pre-clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "e813c5ec-72ec-4d00-9372-e4060a6e4dd3",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C17",
+      "claim": "BZA did not stimulate endometrial tissue in pre-clinical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it displayed strong antagonist and SERD profiles in the breast while retaining beneficial agonist properties in the bone and did not stimulate endometrial tissue in pre-clinical studies (Wardell et al., 2013a; Komm et al., 2005; Lewis-Wambi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous pre-clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "0ae63d61-4d3f-4b73-8037-8222036d22a7",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C18",
+      "claim": "BZA showed potent antitumor activity in AI/SERM-resistant breast tumors in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, BZA showed potent antitumor activity in AI/SERM-resistant breast tumors in vivo (Wardell et al., 2013b; Wardell et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous in vivo studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "5c75dcee-5690-4853-b367-42aaf01006b0",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C19",
+      "claim": "BZA showed good oral bioavailability and improved pharmacokinetics compared with fulvestrant.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, BZA showed good oral bioavailability and improved pharmacokinetics compared with fulvestrant (FULV) (Wardell et al., 2013a; Biskobing, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous pharmacological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "d281d202-137e-4ad0-a142-0961ab85b8d7",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C20",
+      "claim": "BZA was a more potent inhibitor of WT ER\u03b1 transcription than either 4-OHT or FULV in MCF7 cells expressing an ERE-luciferase reporter gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In MCF7 cells that expressed an ERE-luciferase reporter gene, BZA was a more potent inhibitor of WT ER\u03b1 transcription than either 4-OHT or FULV (inhibition of luciferase IC50 for BZA = 0.12 nM, 4-OHT = 0.39 nM and FULV = 0.76 nM) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from luciferase reporter assays shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "b71c5ceb-93cc-4623-a8d2-ccacd6c20c5e",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C21",
+      "claim": "The inhibition of luciferase IC50 for BZA is 0.12 nM in MCF7 cells expressing an ERE-luciferase reporter gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In MCF7 cells that expressed an ERE-luciferase reporter gene, BZA was a more potent inhibitor of WT ER\u03b1 transcription than either 4-OHT or FULV (inhibition of luciferase IC50 for BZA = 0.12 nM, 4-OHT = 0.39 nM and FULV = 0.76 nM) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific measurement from the luciferase reporter assay shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "5cd77c7e-909b-497d-9586-afe517deaf0c",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C22",
+      "claim": "The inhibition of luciferase IC50 for 4-OHT is 0.39 nM in MCF7 cells expressing an ERE-luciferase reporter gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In MCF7 cells that expressed an ERE-luciferase reporter gene, BZA was a more potent inhibitor of WT ER\u03b1 transcription than either 4-OHT or FULV (inhibition of luciferase IC50 for BZA = 0.12 nM, 4-OHT = 0.39 nM and FULV = 0.76 nM) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific measurement from the luciferase reporter assay shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "e25117fe-5b2a-447e-99b2-bd9e8ed3121a",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C23",
+      "claim": "The inhibition of luciferase IC50 for FULV is 0.76 nM in MCF7 cells expressing an ERE-luciferase reporter gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In MCF7 cells that expressed an ERE-luciferase reporter gene, BZA was a more potent inhibitor of WT ER\u03b1 transcription than either 4-OHT or FULV (inhibition of luciferase IC50 for BZA = 0.12 nM, 4-OHT = 0.39 nM and FULV = 0.76 nM) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific measurement from the luciferase reporter assay shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "79150c79-81bd-4fb5-ad4a-2139900e897d",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C24",
+      "claim": "For cyclin D1, 4-OHT increased the mRNA level at 10\u22128 M and showed little effect at 10\u22126M in MCF-7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For cyclin D1, 4-OHT increased the mRNA level at 10\u22128 M and showed little effect at 10\u22126M, while both FULV and BZA decreased mRNA levels at 10\u22126 M (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "5dc0e3ed-1374-40ee-a2db-07050bede04f",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C25",
+      "claim": "Both FULV and BZA decreased cyclin D1 mRNA levels at 10\u22126 M in MCF-7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For cyclin D1, 4-OHT increased the mRNA level at 10\u22128 M and showed little effect at 10\u22126M, while both FULV and BZA decreased mRNA levels at 10\u22126 M (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "c90e1e2e-b4f5-4fd9-be06-c4d4e296201a",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C26",
+      "claim": "BZA increased c-myc mRNA levels at 10\u22128 M while it significantly decreased c-myc mRNA at 10\u22126 M in MCF-7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "BZA increased c-myc mRNA levels at 10\u22128 M while it significantly decreased c-myc mRNA at 10\u22126 M (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "fcd3ccd4-5e9a-4b10-b0d1-e33b625159ed",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C27",
+      "claim": "10\u22126 M BZA showed the greatest reduction in mRNA levels of both CA12 and GREB compared to 4-OHT and FULV in MCF-7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 10\u22126 M BZA showed the greatest reduction in mRNA levels of both CA12 and GREB compared to 4-OHT and FULV (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figures 1D and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "a3caa427-17d7-4cd3-8d7e-290c0e75c7d3",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C28",
+      "claim": "BZA mediated similar levels of ER\u03b1 degradation compared to FULV in MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, BZA mediated similar levels of ER\u03b1 degradation compared to FULV (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "150bdca3-85db-4e28-affc-838682b5fc95",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C29",
+      "claim": "BZA showed an improved IC50 for cell growth inhibition compared to 4-OHT and in the same range as fulvestrant in MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of cell growth inhibition, BZA showed an improved IC50 compared to 4-OHT and in the same range as fulvestrant (BZA IC50 = 2.4\u00d710\u221210 M, FULV IC50 = 3.1\u00d710\u221210 M and 4-OHT IC50 = 1.19\u00d710\u22129 M (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell proliferation assay data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "432bd2d2-1674-42b3-ab84-740a2d23a15a",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C30",
+      "claim": "BZA IC50 for cell growth inhibition is 2.4\u00d710\u221210 M in MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of cell growth inhibition, BZA showed an improved IC50 compared to 4-OHT and in the same range as fulvestrant (BZA IC50 = 2.4\u00d710\u221210 M, FULV IC50 = 3.1\u00d710\u221210 M and 4-OHT IC50 = 1.19\u00d710\u22129 M (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific measurement from cell proliferation assays shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "2e859aa2-f94e-4524-b131-5d725d266335",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C31",
+      "claim": "FULV IC50 for cell growth inhibition is 3.1\u00d710\u221210 M in MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of cell growth inhibition, BZA showed an improved IC50 compared to 4-OHT and in the same range as fulvestrant (BZA IC50 = 2.4\u00d710\u221210 M, FULV IC50 = 3.1\u00d710\u221210 M and 4-OHT IC50 = 1.19\u00d710\u22129 M (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific measurement from cell proliferation assays shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "d71ea2d9-b5b1-42c8-9b39-a79f9239b584",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C32",
+      "claim": "4-OHT IC50 for cell growth inhibition is 1.19\u00d710\u22129 M in MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of cell growth inhibition, BZA showed an improved IC50 compared to 4-OHT and in the same range as fulvestrant (BZA IC50 = 2.4\u00d710\u221210 M, FULV IC50 = 3.1\u00d710\u221210 M and 4-OHT IC50 = 1.19\u00d710\u22129 M (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific measurement from cell proliferation assays shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "939c00c8-3889-4593-99b6-89e8016cc4e3",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C33",
+      "claim": "BZA demonstrated an increased potency for inhibiting Y537S mutant cell growth compared to FULV and 4-OHT, with an IC50 of 1 \u00d7 10\u221210 M vs 2 \u00d7 10\u22129 M and 7 \u00d7 10\u22129 M, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "BZA demonstrated an increased potency compared to FULV and 4-OHT, with an IC50 of 1 \u00d7 10\u221210 M vs 2 \u00d7 10\u22129 M and 7 \u00d7 10\u22129 M, respectively (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell proliferation data in MCF7 cells expressing Y537S mutant shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "768fb43a-bb63-41e7-b806-0e59521199c9",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C34",
+      "claim": "BZA inhibited the transcription of ER\u03b1 target genes cyclin D1, c-Myc, and PR in cells expressing the Y537S mutant in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, qPCR data showed that BZA inhibited the transcription of ER\u03b1 target genes cyclin D1, c-Myc, and PR, in cells expressing the Y537S mutant, in a dose-dependent manner, confirming the on-target effects of BZA in the presence of the mutation (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "b1a6d117-387a-4092-a29d-9cdb9c381393",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C35",
+      "claim": "In cells expressing HA-WT ER\u03b1, BZA and FULV induced degradation of the receptor to similar levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing HA-WT ER\u03b1, BZA and FULV induced degradation of the receptor to similar levels while the amount of the receptor increased upon 4-OHT treatment and was slightly reduced with E2 and RAL (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "1a72df09-789c-4497-8921-fd381862b517",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C36",
+      "claim": "The amount of WT ER\u03b1 receptor increased upon 4-OHT treatment in MCF-7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing HA-WT ER\u03b1, BZA and FULV induced degradation of the receptor to similar levels while the amount of the receptor increased upon 4-OHT treatment and was slightly reduced with E2 and RAL (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "42f5d092-a82b-4a7b-8562-4c1a607f7eea",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C37",
+      "claim": "For the Y537S mutant, ER\u03b1 expression remained unchanged for E2 and FULV treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, for the Y537S mutant, ER\u03b1 expression remained unchanged for E2 and FULV, while it increased for 4-OHT and RAL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "9e893ce9-9341-41a3-b5bd-15fd1c488758",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C38",
+      "claim": "Y537S ER\u03b1 expression increased with 4-OHT and RAL treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, for the Y537S mutant, ER\u03b1 expression remained unchanged for E2 and FULV, while it increased for 4-OHT and RAL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "3f951851-799b-458e-b4a0-8c1e92cb400f",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C39",
+      "claim": "Y537S ER\u03b1 increased with BZA but less so than RAL or 4-OHT.",
+      "claim_type": "EXPLICIT",
+      "source": "Y537S ER\u03b1 also increased with BZA but less so than RAL or 4-OHT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "e332f38f-7d83-41d6-8c17-7d6d3729eeed",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C40",
+      "claim": "BZA degraded the D538G ER\u03b1 mutant to a greater extent than FULV.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, BZA degraded the D538G ER\u03b1 mutant to a greater extent than FULV, while 4-OHT and RAL both increased its expression after 24 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "0fa26fad-f2f4-44f7-b30f-4a2755b559e1",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C41",
+      "claim": "4-OHT and RAL both increased D538G ER\u03b1 expression after 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, BZA degraded the D538G ER\u03b1 mutant to a greater extent than FULV, while 4-OHT and RAL both increased its expression after 24 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "4bdf89ca-56a1-4be5-8dbc-07d9009e5149",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C42",
+      "claim": "Near complete ER\u03b1 degradation was observed at 25 nM BZA in T47D, ZR75-1, CAMA-1, and MDA-MB-361 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In each cell line, near complete degradation was observed at 25 nM BZA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "d5e3f021-fb90-465b-a603-da5fc7d2ee26",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C43",
+      "claim": "The combination of BZA and PB demonstrated the greatest arrest in cellular proliferation in MCF-7, ZR75, and T47D cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first three cell lines, the combination of BZA and PB demonstrated the greatest arrest in cellular proliferation, whereas for the LTED cells it was comparable to PB+ FULV (Figure 3A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell proliferation data shown in Figures 3A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "e948b1c8-4dc5-4413-aea3-94117258f7ca",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C44",
+      "claim": "For LTED cells, the combination of BZA and PB was comparable to PB+ FULV in arresting cellular proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first three cell lines, the combination of BZA and PB demonstrated the greatest arrest in cellular proliferation, whereas for the LTED cells it was comparable to PB+ FULV (Figure 3A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell proliferation data shown in Figures 3A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "9fcb39ad-bb98-4b3e-9c42-35be51e8bc3d",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C45",
+      "claim": "Reduced proliferation of MCF-7 cells expressing the Y537S mutant was observed for the BZA +PB treatment compared to all other treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, reduced proliferation of MCF-7 cells expressing the Y537S mutant was observed for the BZA +PB treatment compared to all other treatments (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell proliferation data shown in Figures 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "9df51d65-5d3b-4f19-abf6-4ce5955df708",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C46",
+      "claim": "BZA had superior activity in the inhibition of ER transcriptional activity compared to fulvestrant in MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional reporter gene assays in MCF7 cells showed that: 1. BZA had superior activity in the inhibition of ER transcriptional activity compared to fulvestrant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reporter gene assay data shown in Figures 3G and 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "a3e42966-d417-464c-9918-5dd79f6bd61b",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C47",
+      "claim": "Palbociclib does not affect ER transcriptional activity either as a single agent or in combination with BZA.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, palbociclib does not affect ER transcriptional activity either as a single agent or in combination with BZA (Figure 3G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reporter gene assay data shown in Figures 3G and 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "502d2f16-4f28-4171-8c7e-bbe8d982310a",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C48",
+      "claim": "Treatment with PB does not affect BZA or FULV-induced degradation of ER\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, immunoblotting for ER showed that treatment with PB does not affect BZA or FULV-induced degradation of ER\u03b1 (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "e60ace6c-f75b-4d70-9b27-2291964b99e8",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C49",
+      "claim": "Dose-dependent inhibition of co-regulator binding was observed for the majority of co-regulator peptides with 4-OHT, BZA and FULV.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, dose-dependent inhibition of co-regulator binding was observed for the majority of co-regulator peptides with the three drugs (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MARCoNI assay data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "b501284a-6f90-4191-9952-e093c745856a",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C50",
+      "claim": "EC50 levels for FULV in both the WT and mutant cells was higher compared to SERMs.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of EC50 levels for inhibition of co-regulator binding of the three ER antagonists showed that EC50 levels for FULV in both the WT and mutant cells was higher, as expected given the mechanism of action of FULV, compared to SERMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MARCoNI assay data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "fc961ad1-cf80-4815-97f6-368f0f24cee6",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C51",
+      "claim": "The 4-OHT and BZA EC50s were higher in the presence of the Y537S and D538G mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The 4-OHT and BZA EC50s were higher in the presence of the Y537S and D538G mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MARCoNI assay data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "ac08045e-9e4c-4f26-91a6-95ce954b3b7c",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C52",
+      "claim": "In the absence of hormone, SRC3 did not bind to WT ER\u03b1 LBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that in the absence of hormone, SRC3 did not bind to WT ER\u03b1 LBD, whereas Y537S ER\u03b1 bound SRC3 markedly in the absence of E2 with a 10-fold reduced affinity, and D538G ER\u03b1 bound SRC3 with a 100-fold reduced affinity compared to hormone-bound WT receptor (Fanning et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous FRET assay data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "f10f5ed3-b50a-4a33-808c-fbb25e89d7f8",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C53",
+      "claim": "Y537S ER\u03b1 bound SRC3 markedly in the absence of E2 with a 10-fold reduced affinity compared to hormone-bound WT receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that in the absence of hormone, SRC3 did not bind to WT ER\u03b1 LBD, whereas Y537S ER\u03b1 bound SRC3 markedly in the absence of E2 with a 10-fold reduced affinity, and D538G ER\u03b1 bound SRC3 with a 100-fold reduced affinity compared to hormone-bound WT receptor (Fanning et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous FRET assay data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "c360f832-8529-4ce7-aa54-2a65376fc722",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C54",
+      "claim": "D538G ER\u03b1 bound SRC3 with a 100-fold reduced affinity compared to hormone-bound WT receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that in the absence of hormone, SRC3 did not bind to WT ER\u03b1 LBD, whereas Y537S ER\u03b1 bound SRC3 markedly in the absence of E2 with a 10-fold reduced affinity, and D538G ER\u03b1 bound SRC3 with a 100-fold reduced affinity compared to hormone-bound WT receptor (Fanning et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous FRET assay data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "1eb76d86-a826-4ae6-abe0-447053631d09",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C55",
+      "claim": "4-OHT, BZA and RAL reversed the binding of SRC3 NRD to the two mutant ERs and WT-ER\u03b1 with similar potencies.",
+      "claim_type": "EXPLICIT",
+      "source": "4-OHT, BZA and RAL reversed the binding of SRC3 NRD to the two mutant ERs and WT-ER\u03b1 with similar potencies (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRET assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "e4734186-90ce-4d54-9b81-5fe611d5e299",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C56",
+      "claim": "The affinities of RAL, BZA and FULV for the ER\u03b1 mutants were reduced 9 to 27-fold relative to WT-ER\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The affinities of RAL, BZA and FULV for the ER\u03b1 mutants were reduced 9 to 27-fold relative to WT-ER\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by competitive ligand binding assay data shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "b6b0c113-45d0-45a7-9357-cb46a62b3569",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C57",
+      "claim": "The binding affinity of 4-OHT remained the highest compared to RAL, BZA and FULV against the mutant LBDs.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the binding affinity of 4-OHT remained the highest compared to RAL, BZA and FULV against the mutant LBDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by competitive ligand binding assay data shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "5d0c0028-1cab-4ff9-879d-b25b5b77756c",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C58",
+      "claim": "The binding affinities of all tested antiestrogens were somewhat more reduced in D538G than in Y537S.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding affinities of all tested antiestrogens were somewhat more reduced in D538G than in Y537S.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by competitive ligand binding assay data shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "52cea649-a94d-475e-b913-18a2df295220",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C59",
+      "claim": "An X-ray crystal structure for the WT ER\u03b1 LBD in complex with BZA was solved to 2.4 \u00c5 with two dimers in the asymmetric unit.",
+      "claim_type": "EXPLICIT",
+      "source": "An X-ray crystal structure for the WT ER\u03b1 LBD, in complex with BZA was solved to 2.4 \u00c5 with two dimers in the asymmetric unit (ASU) (PDB: 4XI3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by X-ray crystallography data deposited as PDB: 4XI3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "66b7f31c-e3fe-45b2-84e6-95cb26b7d2a8",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C60",
+      "claim": "The distal phenol on BZA appears to form a hydrogen bond with improved binding geometry to H524 compared to the distal phenol of RAL.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the distal phenol on BZA appears to form a hydrogen bond with improved binding geometry to H524 compared to the distal phenol of RAL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the X-ray crystal structure comparison shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "b55c8734-9d46-402c-9849-2513cb2ba102",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C61",
+      "claim": "The azepan ring of BZA pushes against V534 and P535.",
+      "claim_type": "EXPLICIT",
+      "source": "The core differences for BZA broadcast down the linker arm to alter its vector towards H12 where the azepan ring now pushes against V534 and P535 (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the X-ray crystal structure shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "11579444-c155-44c0-89a1-6d0f1a60b482",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C62",
+      "claim": "The alterations to V534 and P535 propagate to H12 which appears displaced out of the AF-2 cleft into a less stable orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The alterations to V534 and P535 propagate to H12 which appears displaced out of the AF-2 cleft into a less stable orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the X-ray crystal structure shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "9b536146-f753-4ad1-a7ca-46d594903e12",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C63",
+      "claim": "A significant energetic shift was observed between the dihedral scans of BZA and RAL, revealing that the BZA arm can adopt a set of torsion angles with significantly reduced energetic penalties compared to RAL.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant energetic shift was observed between the dihedral scans, revealing that the BZA arm can adopt a set of torsion angles with significantly reduced energetic penalties compared to RAL (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantum mechanical calculations shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "64fdb654-7bf3-4d58-895c-78e7fa9915bf",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C64",
+      "claim": "The energetic minima well is significantly broader for BZA compared to RAL.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the energetic minima well is significantly broader for BZA compared to RAL, indicating that the angles adopted by BZA in the ER\u03b1 ligand-binding site are more favorable than RAL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantum mechanical calculations shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "56be00d4-c83d-4a6a-97bf-102978364a12",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C65",
+      "claim": "An energetic penalty of approximately 1 kcal/mol would be incurred by RAL to adopt the same conformation observed for BZA in the X-ray crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an energetic penalty of approximately 1 kcal/mol would be incurred by RAL to adopt the same conformation observed for BZA in the X-ray crystal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantum mechanical calculations shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "f2086b07-8d2f-46c6-b505-6f449413202f",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C66",
+      "claim": "Addition of E2 resulted in an increased protection against exchange in H12 of ER\u03b1, and this protection was enhanced for the Y537S and D538G mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, addition of E2 resulted in an increased protection against exchange in H12 (inferred as increased stability or less dynamic), and this protection was enhanced for the Y537S and D538G mutants (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HDX-MS data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "be24e2f3-8688-4cdf-9573-8cb66866cb68",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C67",
+      "claim": "FULV treatment led to increased D2O uptake in H12 of regions near H12 in both the WT and D538G mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, FULV treatment led to increased D2O uptake in H12 (interpreted as destabilization) of regions near H12 in both the WT and D538G mutant (Figure 6\u2014figure supplement 1), consistent with its SERD-like properties.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HDX-MS data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "34128ff8-5c0e-47f6-8fb0-c19ebdec9385",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C68",
+      "claim": "Binding of 4-OHT resulted in decreased stability of H12 with the Y537S compared to D538G and WT receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to previously published data (Fanning et al., 2016), binding of 4-OHT resulted in decreased stability of H12 with the Y537S compared to D538G and WT receptor (Figure 6\u2014figure supplement 2), suggesting that these mutants resist the ability of the SERM to alter their structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HDX-MS data shown in Figure 6\u2014figure supplement 2 and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "c55e9d13-c8a7-4b1f-bb34-dec1c6a1f693",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C69",
+      "claim": "Addition of BZA did not increase the stability of the region near H12 to as great of an extent as 4-OHT in WT and mutant ER\u03b1 LBDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, addition of BZA did not increase the stability (lesser protection) of the region near H12 to as great of an extent as 4-OHT in WT and mutant ER\u03b1 LBDs, suggesting that BZA-bound ER\u03b1 adopts a less stable antagonist conformation than 4-OHT-bound ER\u03b1 (Figure 6\u2014figure supplement 3), consistent with the crystal structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HDX-MS data shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "ffb68433-e04c-4b4d-ab26-d757b89f7196",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C70",
+      "claim": "BZA-bound ER\u03b1 adopts a less stable antagonist conformation than 4-OHT-bound ER\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, addition of BZA did not increase the stability (lesser protection) of the region near H12 to as great of an extent as 4-OHT in WT and mutant ER\u03b1 LBDs, suggesting that BZA-bound ER\u03b1 adopts a less stable antagonist conformation than 4-OHT-bound ER\u03b1 (Figure 6\u2014figure supplement 3), consistent with the crystal structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from HDX-MS data shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "59261468-2bf4-40ba-a5b6-119bddb316da",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C71",
+      "claim": "H12 of both BZA-bound Y537S and D538G mutants remain close to an antagonist conformation according to MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "MD simulations show that H12 of both BZA-bound mutants remain close to an antagonist conformation (Figure 7B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figures 7B and 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "ee125d30-c04f-4abe-8e61-bfa7f215f2b3",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C72",
+      "claim": "H12 conformational fluctuations observed in MD simulations are less pronounced in Y537S-BZA than they are in D538G-BZA.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, H12 conformational fluctuations observed in MD simulations are less pronounced in Y537S-BZA than they are in D538G-BZA (Figure 7C), which echoes the aforementioned reduced H12 dynamics observed in HDX-MS data and agrees with our result that Y537S reduces BZA activity more than D538G does.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "33553643-deef-4160-8161-7fd5e739e1ba",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C73",
+      "claim": "Over the course of the simulations, the Y537S-BZA structure shows a hydrogen bond formation between E380 and S537.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of the simulations, the Y537S-BZA structure shows a hydrogen bond formation between E380 and S537 (Figure 7B), which could contribute to fewer H12 conformational fluctuations in Y537S ER\u03b1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "718d9933-3465-4491-be83-ba6f659a50b6",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C74",
+      "claim": "The predicted hydrogen bond between E380 and S537 may stabilize H12 in the AF-2 cleft relative to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "This predicted hydrogen bond may stabilize H12 in the AF-2 cleft relative to WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from molecular dynamics simulation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "bb30acec-49a3-47e1-a017-734456fadffb",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C75",
+      "claim": "The D538G mutation increases the conformational variance of the H11-12 loop compared to Y537S.",
+      "claim_type": "EXPLICIT",
+      "source": "The D538G mutation further increases the conformational variance of the H11-12 loop compared to Y537S (Figure 7C), which can be explained by the lack of a hydrogen bond in Y537S and the greater backbone conformational freedom allowed by the mutant glycine residue.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "8acf328c-f2cb-4b64-bf3b-df5316745ffc",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C76",
+      "claim": "The H11-12 loop of both Y537S and D538G appears further away from the protein core and BZA compared to that of WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the H11-12 loop of both Y537S and D538G appears further away from the protein core and BZA compared to that of WT (Figure 7B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figures 7B and 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "62dbf0f0-16a9-492a-8595-1c95bb0b05e5",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C77",
+      "claim": "Both Y537S and D538G mutations produce a stable antagonist conformation, especially at H12.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that both mutations produce a stable antagonist conformation, especially at H12, and reduce the SERD-like properties of BZA by lessening its ability to disrupt the H11-12 loop and stabilize H12 in the AF-2 cleft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "af309e61-94d6-4455-9a6e-bff6ff0ae3c8",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C78",
+      "claim": "Y537S and D538G mutations reduce the SERD-like properties of BZA by lessening its ability to disrupt the H11-12 loop and stabilize H12 in the AF-2 cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that both mutations produce a stable antagonist conformation, especially at H12, and reduce the SERD-like properties of BZA by lessening its ability to disrupt the H11-12 loop and stabilize H12 in the AF-2 cleft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "69a61df5-1270-4986-8bf4-27295e60040a",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C79",
+      "claim": "Newly characterized orally available pure antiestrogens (e.g. GDC-0927, AZ9496, and RAD1901) are emerging as potentially potent inhibitors of Y537S and D538G mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Newly characterized orally available pure antiestrogens (e.g. GDC-0927, AZ9496, and RAD1901) are emerging as potentially potent inhibitors of these mutants, but their long-term clinical utility is unknown and their side effect profiles have not been studied in large patient populations (Toy et al., 2017; Lai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "d32f1768-2e06-4e02-b0ef-db6c9c66c992",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C80",
+      "claim": "BZA is already clinically approved for use in hormone replacement therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Because BZA is already clinically approved for use in hormone replacement therapy and is a potent ER\u03b1 antagonist in the breast, an agonist in bone, and neutral in the endometrium with long-term safety data in thousands of patients, we explored its ability to inhibit the Y537S and D538G ER\u03b1 somatic mutants in breast cancer (Wardell et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to regulatory and clinical information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "854b7c52-111f-4853-bfa1-ec2c94ca11d0",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C81",
+      "claim": "BZA is a potent ER\u03b1 antagonist in the breast.",
+      "claim_type": "EXPLICIT",
+      "source": "Because BZA is already clinically approved for use in hormone replacement therapy and is a potent ER\u03b1 antagonist in the breast, an agonist in bone, and neutral in the endometrium with long-term safety data in thousands of patients, we explored its ability to inhibit the Y537S and D538G ER\u03b1 somatic mutants in breast cancer (Wardell et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "63946179-f472-414d-8181-55c0af913fbf",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C82",
+      "claim": "BZA is an agonist in bone.",
+      "claim_type": "EXPLICIT",
+      "source": "Because BZA is already clinically approved for use in hormone replacement therapy and is a potent ER\u03b1 antagonist in the breast, an agonist in bone, and neutral in the endometrium with long-term safety data in thousands of patients, we explored its ability to inhibit the Y537S and D538G ER\u03b1 somatic mutants in breast cancer (Wardell et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "d4de2884-9fac-42da-9c4f-3eca1b109213",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C83",
+      "claim": "BZA is neutral in the endometrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Because BZA is already clinically approved for use in hormone replacement therapy and is a potent ER\u03b1 antagonist in the breast, an agonist in bone, and neutral in the endometrium with long-term safety data in thousands of patients, we explored its ability to inhibit the Y537S and D538G ER\u03b1 somatic mutants in breast cancer (Wardell et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "9fd30259-9b58-451b-b097-0e76bd311d98",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C84",
+      "claim": "BZA has long-term safety data in thousands of patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Because BZA is already clinically approved for use in hormone replacement therapy and is a potent ER\u03b1 antagonist in the breast, an agonist in bone, and neutral in the endometrium with long-term safety data in thousands of patients, we explored its ability to inhibit the Y537S and D538G ER\u03b1 somatic mutants in breast cancer (Wardell et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "6ceb01e8-dfd6-4dcc-bc16-8c2ec408ea52",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C85",
+      "claim": "The ability of BZA to degrade ER\u03b1 confers an inhibitory advantage over 4-OHT in the context of the somatic mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data suggest that the ability of BZA to degrade ER\u03b1 confers an inhibitory advantage over 4-OHT in the context of the somatic mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on degradation and inhibition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "3423ecec-a3da-477b-a288-24f220d7ca2f",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C86",
+      "claim": "Previous studies with an Y537S ER mutant PDX model showed an enhanced inhibitory effect on proliferation when bazedoxifene was added to palbociclib.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our studies, previous studies with an Y537S ER mutant PDX model showed an enhanced inhibitory effect on proliferation when bazedoxifene was added to palbociclib (Wardell et al., 2015a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous PDX studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "b1287bb4-0e7b-4cfa-8798-351a0d92a1bc",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C87",
+      "claim": "Results from the current study and PDX studies have led to an ongoing Phase Ib/II clinical trial testing the combination bazedoxifene with palbociclib in patients with metastatic ER +breast cancer (NCT02448771).",
+      "claim_type": "EXPLICIT",
+      "source": "Results from the current study and the aforementioned PDX studies have led to an ongoing Phase Ib/II clinical trial testing the combination bazedoxifene with palbociclib in patients with metastatic ER +breast cancer (NCT02448771).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about an ongoing clinical trial based on the current and previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "79ce9cef-0423-4eea-9539-a0b6ece7cafd",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C88",
+      "claim": "FULV and BZA can both resist the impact of somatic mutation on their antagonist binding conformations compared to 4-OHT.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, an HDX MS comparison of BZA, 4-OHT, and FULV suggested that FULV and BZA can both resist the impact of somatic mutation on their antagonist binding conformations compared to 4-OHT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from HDX-MS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "7f34262b-3914-4313-b3f7-1e90ab796090",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C89",
+      "claim": "The less stable H12 antagonist conformation of BZA likely explains the SERM/SERD properties of BZA.",
+      "claim_type": "EXPLICIT",
+      "source": "This less stable H12 antagonist conformation likely explains the SERM/SERD properties of BZA, wherein it allows H12 to adopt an antagonist conformation (like a SERM) that is somewhat destabilized, although not as destabilized as when FULV is bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the X-ray crystal structure and HDX-MS data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "a1ed7489-74b8-46ca-a32e-1902156a40d8",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C90",
+      "claim": "Both Y537S and D538G mutants stabilized the antagonist conformation of H12 in the AF-2 cleft in MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mutants stabilized the antagonist conformation of H12 in the AF-2 cleft, while the Y537S appeared to be the more stable of the two by forming a hydrogen bond between S537 and E380.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "6e583399-4836-42b8-a153-63626e65cb59",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C91",
+      "claim": "Y537S and D538G mutants have varied conformations and increased dynamics of loop H11-12, which potentially reduces BZA's ability to disrupt ER antagonist conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "MD simulations also suggest that these mutants have varied conformations and increased dynamics of loop H11-12, which potentially reduces BZA's ability to disrupt ER antagonist conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "ce8d7fcf-124e-4f89-8e48-e51b3317efd7",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C92",
+      "claim": "BZA retains its SERM antagonist properties within breast cancer cells expressing Y537S and D538G mutant ER\u03b1 to a greater extent than 4-OHT but its SERD-like properties are diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results suggest that BZA retains its SERM antagonist properties within breast cancer cells expressing Y537S and D538G mutant ER\u03b1 to a greater extent than 4-OHT but its SERD-like properties are diminished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined structural, biophysical, and cellular data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "654333d2-29c4-4fa9-8ca8-685a244230b3",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C93",
+      "claim": "The reduced potency of BZA on the Y537S and D538G mutants likely derives from the stabilization of the apo receptor in the agonist conformation, which reduces the on rate of ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced potency on the mutants likely derives from the stabilization of the apo receptor in the agonist conformation, which reduces the on rate of ligand binding (Fanning et al., 2016), reflecting that the agonist conformer blocks ligand exchange (Sonoda et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data and supported by citations to previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "4bb0ecd5-cc7f-4d80-baed-fcaa99939afd",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C94",
+      "claim": "Molecules with improved pharmacological profiles that specifically disrupt the H11-12 loop at H12 will have clear advantages against breast cancer cells expressing WT, Y537S, and D538G ER\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, interrogating the structural details of BZA-ER\u03b1 LBD binding suggests that molecules with improved pharmacological profiles that specifically disrupt the H11-12 loop at H12 will have clear advantages against breast cancer cells expressing WT, Y537S, and D538G ER\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and functional data presented.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "71a0b281-3679-4365-af38-7c8111361a27",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C95",
+      "claim": "The newer SERM/SERDs and SERDs with improved pharmacologic profiles (e.g. AZ9496) appear to achieve their activity using a similar mechanism to BZA.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the newer SERM/SERDs and SERDs with improved pharmacologic profiles (e.g. AZ9496) appear to do so using a similar mechanism (De Savi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous studies on AZ9496.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "34765dae-4e63-49d0-bef2-353b393fd774",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C96",
+      "claim": "The ability of other new SERDs to withstand the impact of Y537S and D538G mutations on their antagonist-binding modes should be investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ability of other new SERDs to withstand the impact of Y537S and D538G mutations on their antagonist-binding modes should be investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "90a89611-c71e-4a3a-82f9-174b2e5e9576",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C97",
+      "claim": "SERMs like tamoxifen are antagonistic in the breast and agonistic in the bone and endometrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective estrogen receptor modulators (SERMs) like tamoxifen are antagonistic in the breast and agonistic in the bone and endometrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SERMs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "bd8f6092-fea0-4217-81eb-53847eae50e0",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C98",
+      "claim": "SERM agonist activity stems from tissue-specific co-regulator binding in the presence of tamoxifen.",
+      "claim_type": "EXPLICIT",
+      "source": "SERM agonist activity stems from tissue-specific co-regulator binding in the presence of tamoxifen (Shang and Brown, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous mechanistic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "b91c435e-9ed8-42f4-9f54-af95c32b5f24",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C99",
+      "claim": "Inhibitors of CDK4/6 combined with antiestrogens are approved for first-line therapy and beyond in metastatic ER+ breast cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, because inhibitors of CDK4/6 combined with antiestrogens are approved for first-line therapy and beyond in metastatic ER+ breast cancers (Wardell et al., 2015a; Dean et al., 2010; Yang et al., 2017), we examined whether the CDK4/6 inhibitor, palbociclib, can be used in combination with BZA to enhance the inhibition of breast cancer cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical approval information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "c2ab2467-ebd5-459e-8387-f1486f782495",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C100",
+      "claim": "The agonist activity of tamoxifen at high concentrations has been described previously.",
+      "claim_type": "EXPLICIT",
+      "source": "The agonist activity of tamoxifen at high concentrations has been described previously (Horwitz et al., 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "720077cf-57d6-40c8-9a77-a57f585de61f",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C101",
+      "claim": "SERDs competitively bind to the ER\u03b1 LBD and destabilize helix 12 (H12), leading to proteosomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "SERDs competitively bind to the ER\u03b1 LBD and destabilize helix 12 (H12), leading to proteosomal degradation, while SERMs push the helix into the AF2 cleft to block coregulator binding (Fanning et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous mechanistic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "50bb7417-d052-4e80-9cca-2d2d62b29c52",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C102",
+      "claim": "SERMs push helix 12 into the AF2 cleft to block coregulator binding.",
+      "claim_type": "EXPLICIT",
+      "source": "SERDs competitively bind to the ER\u03b1 LBD and destabilize helix 12 (H12), leading to proteosomal degradation, while SERMs push the helix into the AF2 cleft to block coregulator binding (Fanning et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous mechanistic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "a09bbef7-0b7a-40d5-8470-ec42dcf96634",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C103",
+      "claim": "AZD9496, a newer orally available SERD, pushes H12 into the AF2 cleft but destabilizes the helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, AZD9496, a newer orally available SERD pushes H12 into the AF2 cleft but destabilizes the helix (De Savi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "a839378d-536e-45df-bfb6-0fe8fe118223",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C104",
+      "claim": "Previous work showed that the Y537S and D538G mutants, in complex with 4-OHT, adopt an altered antagonist conformation with respect to the WT-4-OHT complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work showed that the Y537S and D538G mutants, in complex with 4-OHT, adopts an altered antagonist conformation with respect to the WT-4-OHT complex (Fanning et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "35a2ab19-9818-4e2f-9307-2951b78a7a6a",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C105",
+      "claim": "Hormone regulated coactivator recruitment is crucial for ER\u03b1 genomic action.",
+      "claim_type": "EXPLICIT",
+      "source": "Because hormone regulated coactivator recruitment is crucial for ER\u03b1 genomic action and inhibition of coactivator recruitment is a key aspect of SERM-mediated ER\u03b1 antagonism (Liao et al., 2002), we tested the effects of 4-OHT, BZA and FULV on co-regulator binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous mechanistic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "24ef77be-3dec-4e6f-894a-f1ce55b05b1e",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "claim_id": "C106",
+      "claim": "Inhibition of coactivator recruitment is a key aspect of SERM-mediated ER\u03b1 antagonism.",
+      "claim_type": "EXPLICIT",
+      "source": "Because hormone regulated coactivator recruitment is crucial for ER\u03b1 genomic action and inhibition of coactivator recruitment is a key aspect of SERM-mediated ER\u03b1 antagonism (Liao et al., 2002), we tested the effects of 4-OHT, BZA and FULV on co-regulator binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous mechanistic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a9066c79-1317-4328-a786-731da342823f",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BZA demonstrates superior inhibitory activity against WT ER\u03b1 compared to 4-OHT and FULV in MCF7 cells, with improved IC50 values for transcriptional inhibition (0.12 nM vs 0.39 nM and 0.76 nM), greater reduction of target gene mRNA levels, similar degradation capacity to FULV, and improved cell growth inhibition (IC50 = 2.4\u00d710\u207b\u00b9\u2070 M vs 1.19\u00d710\u207b\u2079 M for 4-OHT).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C32 provide converging evidence from multiple experimental approaches (luciferase reporter assays, qPCR, immunoblots, cell proliferation assays) demonstrating BZA's superior activity against WT ER\u03b1. The data are internally consistent and show dose-dependent effects with specific quantitative measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "700f0719-5a2b-48cd-b0b9-24821abbca5b",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "BZA shows improved inhibitory potency against Y537S and D538G ER\u03b1 mutants compared to 4-OHT and FULV, with differential effects on receptor degradation: BZA degrades D538G more effectively than FULV, while Y537S shows resistance to degradation but less receptor accumulation with BZA compared to 4-OHT and RAL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C42 demonstrate BZA's activity against mutant ER\u03b1 through cell proliferation assays (C33), gene expression analysis (C34), and protein degradation studies (C35-C42). The data show consistent patterns across multiple cell lines and experimental replicates, though some variability is noted for 4-OHT and RAL treatments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "2f968f2f-5ebb-4507-8dcf-72ee4970c8de",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Combination treatment with BZA and the CDK4/6 inhibitor palbociclib (PB) demonstrates enhanced inhibition of cellular proliferation in multiple ER+ breast cancer cell lines (MCF-7, ZR75, T47D) and cells expressing Y537S mutant ER\u03b1, without PB affecting BZA-induced ER\u03b1 degradation or transcriptional activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 provide evidence from cell proliferation assays across multiple cell lines and reporter gene assays showing additive/synergistic effects of BZA+PB combination. The mechanistic independence of PB from ER\u03b1 degradation and transcriptional inhibition is demonstrated through immunoblots and reporter assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "4a3423ef-6f41-48b5-8fa6-8319c21487e4",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "BZA, 4-OHT, and FULV show dose-dependent inhibition of co-regulator binding to WT and mutant ER\u03b1, with FULV showing higher EC50 values consistent with its SERD mechanism, and both 4-OHT and BZA showing increased EC50 values in the presence of Y537S and D538G mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 and C55 are supported by MARCoNI assay data and FRET assays showing consistent patterns of co-regulator binding inhibition. The differential EC50 values align with the known mechanisms of action for SERMs vs SERDs, and the mutation-induced changes are consistent across assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "4c4ce753-bb25-4317-893b-0a6aa70d1e8a",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Competitive ligand binding assays reveal that RAL, BZA, and FULV binding affinities for Y537S and D538G mutants are reduced 9-27 fold relative to WT ER\u03b1, with 4-OHT maintaining the highest binding affinity and all antiestrogens showing greater affinity reduction for D538G than Y537S.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by quantitative competitive ligand binding data presented in Table 2. The measurements are specific and reproducible, though the claim notes that binding affinity alone does not fully explain the differential potencies observed in cellular assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "aa260a51-95ab-4101-8464-56dd63639ad3",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "X-ray crystallography of the WT ER\u03b1 LBD-BZA complex (2.4 \u00c5 resolution) reveals that BZA's structural features lead to improved hydrogen bonding geometry with H524, altered linker arm vector causing the azepan ring to push against V534 and P535, and displacement of H12 out of the AF-2 cleft into a less stable orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 are supported by X-ray crystallography data (PDB: 4XI3) with structural comparisons to RAL. The resolution is adequate (2.4 \u00c5), and the structural interpretations are consistent with the observed electron density and comparative analysis with related structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "8fb5aa8c-7ce5-4142-a797-6a76d9732e82",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Quantum mechanical calculations demonstrate that BZA can adopt torsion angles with significantly reduced energetic penalties compared to RAL, with a broader energetic minima well and approximately 1 kcal/mol energetic advantage over RAL for adopting the conformation observed in the X-ray crystal structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 are supported by MP2/6-31G* level quantum mechanical calculations showing clear energetic differences between BZA and RAL. The computational methods are appropriate, and the ~1 kcal/mol difference is chemically meaningful for explaining differential binding properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "8e7bd64d-5109-4558-9792-5f9343939b79",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "HDX-MS studies reveal that E2 increases H12 stability (enhanced for Y537S and D538G mutants), FULV destabilizes H12 in WT and D538G, 4-OHT shows decreased H12 stability with Y537S, and BZA induces less H12 stabilization than 4-OHT, suggesting BZA and FULV better resist the stabilizing impact of mutations compared to 4-OHT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 and C88 are supported by comprehensive HDX-MS data across multiple conditions and mutants. The interpretations of deuterium uptake patterns as indicators of protein dynamics and stability are standard in the field. The data consistently show differential effects of ligands on H12 dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "aa1726ee-cd45-44ac-a282-fa64ab7e34f0",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations show that Y537S and D538G mutations stabilize the antagonist conformation of H12 in the AF-2 cleft when bound to BZA, with Y537S forming a stabilizing hydrogen bond between E380 and S537, D538G showing greater H11-12 loop conformational variance, and both mutations reducing BZA's SERD-like properties by altering H11-12 loop dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C78 and C90-C91 are supported by molecular dynamics simulations with appropriate analysis of conformational dynamics. The predicted hydrogen bond in Y537S and increased loop dynamics in D538G provide mechanistic explanations for the differential effects observed experimentally. The simulations are consistent with HDX-MS data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "daa7ad8f-a0e6-478f-b5fd-58479fd8050c",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "BZA possesses improved inhibitory potency against Y537S and D538G ER\u03b1 mutants compared to tamoxifen, has additional inhibitory activity in combination with palbociclib, and its SERD properties override the stabilizing effects of the mutations, though SERD-like properties are diminished while SERM antagonist properties are retained to a greater extent than 4-OHT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C85, and C92 represent the main conclusions of the study, synthesizing data from cellular assays, structural biology, and biophysical studies. These conclusions are well-supported by the comprehensive experimental evidence, though the claim about 'overriding' stabilizing effects should be interpreted as 'better resisting' based on the detailed data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "957ffb0d-ee3e-487c-aa29-0ca52a987458",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous PDX studies showed enhanced inhibitory effects of bazedoxifene plus palbociclib on Y537S mutant proliferation, leading to an ongoing Phase Ib/II clinical trial (NCT02448771) testing this combination in patients with metastatic ER+ breast cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 are supported by citation to previous work and documentation of an ongoing clinical trial. The clinical trial registration is verifiable, and the rationale based on preclinical data is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "e7212655-a174-4f2c-af19-f765f73f109e",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ESR1 somatic mutations in the ligand-binding domain represent a recognized mechanism of acquired endocrine resistance in breast cancer, with Y537S and D538G being the most prevalent mutations (25-30% of patients), conferring hormone-free transcriptional activity and resistance to tamoxifen and fulvestrant, while fulvestrant's clinical efficacy is limited by poor pharmacokinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 establish the clinical and scientific context through citations to previous literature. These are well-established facts in the field supported by multiple independent studies. The prevalence data and resistance mechanisms are consistently reported across cited studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "fec8481e-3c45-4407-91ad-b7758d71c647",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "BZA is clinically approved for hormone replacement therapy (US) and osteoporosis prevention (Europe), with established tissue-selective properties (antagonist in breast, agonist in bone, neutral in endometrium), good oral bioavailability, improved pharmacokinetics compared to fulvestrant, and long-term safety data in thousands of patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 and C80-C84 describe BZA's clinical status and pharmacological properties based on regulatory approvals and previous studies. These are verifiable facts supported by citations to clinical and preclinical literature, providing important context for why BZA was selected for this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "2d4eac21-39e6-4f15-b1a8-45d04c560677",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Previous work showed that in the absence of hormone, SRC3 does not bind WT ER\u03b1 LBD, while Y537S ER\u03b1 binds SRC3 with 10-fold reduced affinity and D538G ER\u03b1 binds with 100-fold reduced affinity compared to hormone-bound WT receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 cite previous work by the same authors (Fanning et al., 2016) establishing baseline coactivator binding properties. These are appropriately cited prior results that provide context for the current study's coactivator binding experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "f3fefcbc-cf7a-4e33-8202-b3a6942b4cd7",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "New orally available antiestrogens are emerging as potential inhibitors of ESR1 mutants, the reduced potency of BZA on mutants likely derives from stabilization of the apo receptor reducing ligand binding on-rate, and molecules that specifically disrupt the H11-12 loop at H12 may have advantages against WT and mutant ER\u03b1, similar to mechanisms used by newer SERDs like AZ9496.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79, C93-C96 represent discussion points and speculation about future directions. While C79 and C95 are supported by citations, C93-C94 and C96 are mechanistic interpretations and recommendations that, while reasonable, extend beyond the direct experimental evidence. These represent informed speculation rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "7ab9b72d-c9a2-407e-b3ee-edd8a726df09",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background mechanisms of SERM and SERD action are established: SERMs are tissue-selective through differential coregulator binding, SERDs destabilize H12 leading to degradation, SERMs block coregulator binding by positioning H12 in the AF-2 cleft, and Y537S/D538G mutations alter the antagonist conformation with 4-OHT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C106 describe established mechanistic knowledge about SERMs and SERDs, supported by appropriate citations to previous literature. These provide necessary background for interpreting the current study's findings and are well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    },
+    {
+      "id": "ff19e747-fbfa-4715-a3ad-602f4d360ecf",
+      "content_id": "add6b600-c0b9-4924-b306-ee3222f35a69",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The less stable H12 antagonist conformation of BZA likely explains its SERM/SERD properties, allowing H12 to adopt an antagonist conformation that is somewhat destabilized but not as much as with FULV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is a mechanistic interpretation integrating X-ray crystallography and HDX-MS data. This interpretation is well-supported by the structural and biophysical evidence showing intermediate H12 stability between typical SERMs and SERDs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:22:26.137747Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d281d202-137e-4ad0-a142-0961ab85b8d7",
+      "result_id": "a9066c79-1317-4328-a786-731da342823f"
+    },
+    {
+      "claim_id": "b71c5ceb-93cc-4623-a8d2-ccacd6c20c5e",
+      "result_id": "a9066c79-1317-4328-a786-731da342823f"
+    },
+    {
+      "claim_id": "5cd77c7e-909b-497d-9586-afe517deaf0c",
+      "result_id": "a9066c79-1317-4328-a786-731da342823f"
+    },
+    {
+      "claim_id": "e25117fe-5b2a-447e-99b2-bd9e8ed3121a",
+      "result_id": "a9066c79-1317-4328-a786-731da342823f"
+    },
+    {
+      "claim_id": "79150c79-81bd-4fb5-ad4a-2139900e897d",
+      "result_id": "a9066c79-1317-4328-a786-731da342823f"
+    },
+    {
+      "claim_id": "5dc0e3ed-1374-40ee-a2db-07050bede04f",
+      "result_id": "a9066c79-1317-4328-a786-731da342823f"
+    },
+    {
+      "claim_id": "c90e1e2e-b4f5-4fd9-be06-c4d4e296201a",
+      "result_id": "a9066c79-1317-4328-a786-731da342823f"
+    },
+    {
+      "claim_id": "fcd3ccd4-5e9a-4b10-b0d1-e33b625159ed",
+      "result_id": "a9066c79-1317-4328-a786-731da342823f"
+    },
+    {
+      "claim_id": "a3caa427-17d7-4cd3-8d7e-290c0e75c7d3",
+      "result_id": "a9066c79-1317-4328-a786-731da342823f"
+    },
+    {
+      "claim_id": "150bdca3-85db-4e28-affc-838682b5fc95",
+      "result_id": "a9066c79-1317-4328-a786-731da342823f"
+    },
+    {
+      "claim_id": "432bd2d2-1674-42b3-ab84-740a2d23a15a",
+      "result_id": "a9066c79-1317-4328-a786-731da342823f"
+    },
+    {
+      "claim_id": "2e859aa2-f94e-4524-b131-5d725d266335",
+      "result_id": "a9066c79-1317-4328-a786-731da342823f"
+    },
+    {
+      "claim_id": "d71ea2d9-b5b1-42c8-9b39-a79f9239b584",
+      "result_id": "a9066c79-1317-4328-a786-731da342823f"
+    },
+    {
+      "claim_id": "939c00c8-3889-4593-99b6-89e8016cc4e3",
+      "result_id": "700f0719-5a2b-48cd-b0b9-24821abbca5b"
+    },
+    {
+      "claim_id": "768fb43a-bb63-41e7-b806-0e59521199c9",
+      "result_id": "700f0719-5a2b-48cd-b0b9-24821abbca5b"
+    },
+    {
+      "claim_id": "b1a6d117-387a-4092-a29d-9cdb9c381393",
+      "result_id": "700f0719-5a2b-48cd-b0b9-24821abbca5b"
+    },
+    {
+      "claim_id": "1a72df09-789c-4497-8921-fd381862b517",
+      "result_id": "700f0719-5a2b-48cd-b0b9-24821abbca5b"
+    },
+    {
+      "claim_id": "42f5d092-a82b-4a7b-8562-4c1a607f7eea",
+      "result_id": "700f0719-5a2b-48cd-b0b9-24821abbca5b"
+    },
+    {
+      "claim_id": "9e893ce9-9341-41a3-b5bd-15fd1c488758",
+      "result_id": "700f0719-5a2b-48cd-b0b9-24821abbca5b"
+    },
+    {
+      "claim_id": "3f951851-799b-458e-b4a0-8c1e92cb400f",
+      "result_id": "700f0719-5a2b-48cd-b0b9-24821abbca5b"
+    },
+    {
+      "claim_id": "e332f38f-7d83-41d6-8c17-7d6d3729eeed",
+      "result_id": "700f0719-5a2b-48cd-b0b9-24821abbca5b"
+    },
+    {
+      "claim_id": "0fa26fad-f2f4-44f7-b30f-4a2755b559e1",
+      "result_id": "700f0719-5a2b-48cd-b0b9-24821abbca5b"
+    },
+    {
+      "claim_id": "4bdf89ca-56a1-4be5-8dbc-07d9009e5149",
+      "result_id": "700f0719-5a2b-48cd-b0b9-24821abbca5b"
+    },
+    {
+      "claim_id": "d5e3f021-fb90-465b-a603-da5fc7d2ee26",
+      "result_id": "2f968f2f-5ebb-4507-8dcf-72ee4970c8de"
+    },
+    {
+      "claim_id": "e948b1c8-4dc5-4413-aea3-94117258f7ca",
+      "result_id": "2f968f2f-5ebb-4507-8dcf-72ee4970c8de"
+    },
+    {
+      "claim_id": "9fcb39ad-bb98-4b3e-9c42-35be51e8bc3d",
+      "result_id": "2f968f2f-5ebb-4507-8dcf-72ee4970c8de"
+    },
+    {
+      "claim_id": "9df51d65-5d3b-4f19-abf6-4ce5955df708",
+      "result_id": "2f968f2f-5ebb-4507-8dcf-72ee4970c8de"
+    },
+    {
+      "claim_id": "a3e42966-d417-464c-9918-5dd79f6bd61b",
+      "result_id": "2f968f2f-5ebb-4507-8dcf-72ee4970c8de"
+    },
+    {
+      "claim_id": "502d2f16-4f28-4171-8c7e-bbe8d982310a",
+      "result_id": "2f968f2f-5ebb-4507-8dcf-72ee4970c8de"
+    },
+    {
+      "claim_id": "e60ace6c-f75b-4d70-9b27-2291964b99e8",
+      "result_id": "4a3423ef-6f41-48b5-8fa6-8319c21487e4"
+    },
+    {
+      "claim_id": "b501284a-6f90-4191-9952-e093c745856a",
+      "result_id": "4a3423ef-6f41-48b5-8fa6-8319c21487e4"
+    },
+    {
+      "claim_id": "fc961ad1-cf80-4815-97f6-368f0f24cee6",
+      "result_id": "4a3423ef-6f41-48b5-8fa6-8319c21487e4"
+    },
+    {
+      "claim_id": "1eb76d86-a826-4ae6-abe0-447053631d09",
+      "result_id": "4a3423ef-6f41-48b5-8fa6-8319c21487e4"
+    },
+    {
+      "claim_id": "e4734186-90ce-4d54-9b81-5fe611d5e299",
+      "result_id": "4c4ce753-bb25-4317-893b-0a6aa70d1e8a"
+    },
+    {
+      "claim_id": "b6b0c113-45d0-45a7-9357-cb46a62b3569",
+      "result_id": "4c4ce753-bb25-4317-893b-0a6aa70d1e8a"
+    },
+    {
+      "claim_id": "5d0c0028-1cab-4ff9-879d-b25b5b77756c",
+      "result_id": "4c4ce753-bb25-4317-893b-0a6aa70d1e8a"
+    },
+    {
+      "claim_id": "52cea649-a94d-475e-b913-18a2df295220",
+      "result_id": "aa260a51-95ab-4101-8464-56dd63639ad3"
+    },
+    {
+      "claim_id": "66b7f31c-e3fe-45b2-84e6-95cb26b7d2a8",
+      "result_id": "aa260a51-95ab-4101-8464-56dd63639ad3"
+    },
+    {
+      "claim_id": "b55c8734-9d46-402c-9849-2513cb2ba102",
+      "result_id": "aa260a51-95ab-4101-8464-56dd63639ad3"
+    },
+    {
+      "claim_id": "11579444-c155-44c0-89a1-6d0f1a60b482",
+      "result_id": "aa260a51-95ab-4101-8464-56dd63639ad3"
+    },
+    {
+      "claim_id": "9b536146-f753-4ad1-a7ca-46d594903e12",
+      "result_id": "8fb5aa8c-7ce5-4142-a797-6a76d9732e82"
+    },
+    {
+      "claim_id": "64fdb654-7bf3-4d58-895c-78e7fa9915bf",
+      "result_id": "8fb5aa8c-7ce5-4142-a797-6a76d9732e82"
+    },
+    {
+      "claim_id": "56be00d4-c83d-4a6a-97bf-102978364a12",
+      "result_id": "8fb5aa8c-7ce5-4142-a797-6a76d9732e82"
+    },
+    {
+      "claim_id": "f2086b07-8d2f-46c6-b505-6f449413202f",
+      "result_id": "8e7bd64d-5109-4558-9792-5f9343939b79"
+    },
+    {
+      "claim_id": "be24e2f3-8688-4cdf-9573-8cb66866cb68",
+      "result_id": "8e7bd64d-5109-4558-9792-5f9343939b79"
+    },
+    {
+      "claim_id": "34128ff8-5c0e-47f6-8fb0-c19ebdec9385",
+      "result_id": "8e7bd64d-5109-4558-9792-5f9343939b79"
+    },
+    {
+      "claim_id": "c55e9d13-c8a7-4b1f-bb34-dec1c6a1f693",
+      "result_id": "8e7bd64d-5109-4558-9792-5f9343939b79"
+    },
+    {
+      "claim_id": "ffb68433-e04c-4b4d-ab26-d757b89f7196",
+      "result_id": "8e7bd64d-5109-4558-9792-5f9343939b79"
+    },
+    {
+      "claim_id": "79ce9cef-0423-4eea-9539-a0b6ece7cafd",
+      "result_id": "8e7bd64d-5109-4558-9792-5f9343939b79"
+    },
+    {
+      "claim_id": "59261468-2bf4-40ba-a5b6-119bddb316da",
+      "result_id": "aa1726ee-cd45-44ac-a282-fa64ab7e34f0"
+    },
+    {
+      "claim_id": "ee125d30-c04f-4abe-8e61-bfa7f215f2b3",
+      "result_id": "aa1726ee-cd45-44ac-a282-fa64ab7e34f0"
+    },
+    {
+      "claim_id": "33553643-deef-4160-8161-7fd5e739e1ba",
+      "result_id": "aa1726ee-cd45-44ac-a282-fa64ab7e34f0"
+    },
+    {
+      "claim_id": "718d9933-3465-4491-be83-ba6f659a50b6",
+      "result_id": "aa1726ee-cd45-44ac-a282-fa64ab7e34f0"
+    },
+    {
+      "claim_id": "bb30acec-49a3-47e1-a017-734456fadffb",
+      "result_id": "aa1726ee-cd45-44ac-a282-fa64ab7e34f0"
+    },
+    {
+      "claim_id": "8acf328c-f2cb-4b64-bf3b-df5316745ffc",
+      "result_id": "aa1726ee-cd45-44ac-a282-fa64ab7e34f0"
+    },
+    {
+      "claim_id": "62dbf0f0-16a9-492a-8595-1c95bb0b05e5",
+      "result_id": "aa1726ee-cd45-44ac-a282-fa64ab7e34f0"
+    },
+    {
+      "claim_id": "af309e61-94d6-4455-9a6e-bff6ff0ae3c8",
+      "result_id": "aa1726ee-cd45-44ac-a282-fa64ab7e34f0"
+    },
+    {
+      "claim_id": "a1ed7489-74b8-46ca-a32e-1902156a40d8",
+      "result_id": "aa1726ee-cd45-44ac-a282-fa64ab7e34f0"
+    },
+    {
+      "claim_id": "6e583399-4836-42b8-a153-63626e65cb59",
+      "result_id": "aa1726ee-cd45-44ac-a282-fa64ab7e34f0"
+    },
+    {
+      "claim_id": "ba78003e-fa30-4e2d-ac1b-6c5b1f16003b",
+      "result_id": "daa7ad8f-a0e6-478f-b5fd-58479fd8050c"
+    },
+    {
+      "claim_id": "59f9e9a8-aa66-41f6-b728-5b4ee77ed3bc",
+      "result_id": "daa7ad8f-a0e6-478f-b5fd-58479fd8050c"
+    },
+    {
+      "claim_id": "78168c37-f21e-4450-a08e-bd16cce7c959",
+      "result_id": "daa7ad8f-a0e6-478f-b5fd-58479fd8050c"
+    },
+    {
+      "claim_id": "6ceb01e8-dfd6-4dcc-bc16-8c2ec408ea52",
+      "result_id": "daa7ad8f-a0e6-478f-b5fd-58479fd8050c"
+    },
+    {
+      "claim_id": "ce8d7fcf-124e-4f89-8e48-e51b3317efd7",
+      "result_id": "daa7ad8f-a0e6-478f-b5fd-58479fd8050c"
+    },
+    {
+      "claim_id": "3423ecec-a3da-477b-a288-24f220d7ca2f",
+      "result_id": "957ffb0d-ee3e-487c-aa29-0ca52a987458"
+    },
+    {
+      "claim_id": "b1287bb4-0e7b-4cfa-8798-351a0d92a1bc",
+      "result_id": "957ffb0d-ee3e-487c-aa29-0ca52a987458"
+    },
+    {
+      "claim_id": "17a93403-42d4-4a63-8110-93ef65b18bd5",
+      "result_id": "e7212655-a174-4f2c-af19-f765f73f109e"
+    },
+    {
+      "claim_id": "c51498ae-20c3-46c7-808c-e8cdc37803a5",
+      "result_id": "e7212655-a174-4f2c-af19-f765f73f109e"
+    },
+    {
+      "claim_id": "76fc7372-f0d2-4610-a3e5-8baea5215d74",
+      "result_id": "e7212655-a174-4f2c-af19-f765f73f109e"
+    },
+    {
+      "claim_id": "8cc233e5-4fcd-4d7e-837b-416822582d16",
+      "result_id": "e7212655-a174-4f2c-af19-f765f73f109e"
+    },
+    {
+      "claim_id": "d711a129-829a-4fb0-9176-9cce7d85b1fd",
+      "result_id": "e7212655-a174-4f2c-af19-f765f73f109e"
+    },
+    {
+      "claim_id": "cbb663f3-867b-4cb2-90ff-fedc3c1756e3",
+      "result_id": "e7212655-a174-4f2c-af19-f765f73f109e"
+    },
+    {
+      "claim_id": "e0f4290e-188b-4b9b-b4a2-bfbd007076ff",
+      "result_id": "e7212655-a174-4f2c-af19-f765f73f109e"
+    },
+    {
+      "claim_id": "1b4fb4c6-f5d4-4029-8c0b-346d976d8ba2",
+      "result_id": "e7212655-a174-4f2c-af19-f765f73f109e"
+    },
+    {
+      "claim_id": "1f446446-b670-4c06-b6b2-49a05238368f",
+      "result_id": "e7212655-a174-4f2c-af19-f765f73f109e"
+    },
+    {
+      "claim_id": "b6939e83-1438-41aa-a430-8d05124d160a",
+      "result_id": "e7212655-a174-4f2c-af19-f765f73f109e"
+    },
+    {
+      "claim_id": "5bb54bff-d93d-41eb-a4eb-f78b282ee308",
+      "result_id": "fec8481e-3c45-4407-91ad-b7758d71c647"
+    },
+    {
+      "claim_id": "a7808342-fc3e-4eb3-a3f0-30ecc58966d6",
+      "result_id": "fec8481e-3c45-4407-91ad-b7758d71c647"
+    },
+    {
+      "claim_id": "4f2543cf-9254-40b6-a7dd-06e5ec19ad1d",
+      "result_id": "fec8481e-3c45-4407-91ad-b7758d71c647"
+    },
+    {
+      "claim_id": "e813c5ec-72ec-4d00-9372-e4060a6e4dd3",
+      "result_id": "fec8481e-3c45-4407-91ad-b7758d71c647"
+    },
+    {
+      "claim_id": "0ae63d61-4d3f-4b73-8037-8222036d22a7",
+      "result_id": "fec8481e-3c45-4407-91ad-b7758d71c647"
+    },
+    {
+      "claim_id": "5c75dcee-5690-4853-b367-42aaf01006b0",
+      "result_id": "fec8481e-3c45-4407-91ad-b7758d71c647"
+    },
+    {
+      "claim_id": "d32f1768-2e06-4e02-b0ef-db6c9c66c992",
+      "result_id": "fec8481e-3c45-4407-91ad-b7758d71c647"
+    },
+    {
+      "claim_id": "854b7c52-111f-4853-bfa1-ec2c94ca11d0",
+      "result_id": "fec8481e-3c45-4407-91ad-b7758d71c647"
+    },
+    {
+      "claim_id": "63946179-f472-414d-8181-55c0af913fbf",
+      "result_id": "fec8481e-3c45-4407-91ad-b7758d71c647"
+    },
+    {
+      "claim_id": "d4de2884-9fac-42da-9c4f-3eca1b109213",
+      "result_id": "fec8481e-3c45-4407-91ad-b7758d71c647"
+    },
+    {
+      "claim_id": "9fd30259-9b58-451b-b097-0e76bd311d98",
+      "result_id": "fec8481e-3c45-4407-91ad-b7758d71c647"
+    },
+    {
+      "claim_id": "ac08045e-9e4c-4f26-91a6-95ce954b3b7c",
+      "result_id": "2d4eac21-39e6-4f15-b1a8-45d04c560677"
+    },
+    {
+      "claim_id": "f10f5ed3-b50a-4a33-808c-fbb25e89d7f8",
+      "result_id": "2d4eac21-39e6-4f15-b1a8-45d04c560677"
+    },
+    {
+      "claim_id": "c360f832-8529-4ce7-aa54-2a65376fc722",
+      "result_id": "2d4eac21-39e6-4f15-b1a8-45d04c560677"
+    },
+    {
+      "claim_id": "69a61df5-1270-4986-8bf4-27295e60040a",
+      "result_id": "f3fefcbc-cf7a-4e33-8202-b3a6942b4cd7"
+    },
+    {
+      "claim_id": "654333d2-29c4-4fa9-8ca8-685a244230b3",
+      "result_id": "f3fefcbc-cf7a-4e33-8202-b3a6942b4cd7"
+    },
+    {
+      "claim_id": "4bb0ecd5-cc7f-4d80-baed-fcaa99939afd",
+      "result_id": "f3fefcbc-cf7a-4e33-8202-b3a6942b4cd7"
+    },
+    {
+      "claim_id": "71a0b281-3679-4365-af38-7c8111361a27",
+      "result_id": "f3fefcbc-cf7a-4e33-8202-b3a6942b4cd7"
+    },
+    {
+      "claim_id": "34765dae-4e63-49d0-bef2-353b393fd774",
+      "result_id": "f3fefcbc-cf7a-4e33-8202-b3a6942b4cd7"
+    },
+    {
+      "claim_id": "90a89611-c71e-4a3a-82f9-174b2e5e9576",
+      "result_id": "7ab9b72d-c9a2-407e-b3ee-edd8a726df09"
+    },
+    {
+      "claim_id": "bd8f6092-fea0-4217-81eb-53847eae50e0",
+      "result_id": "7ab9b72d-c9a2-407e-b3ee-edd8a726df09"
+    },
+    {
+      "claim_id": "b91c435e-9ed8-42f4-9f54-af95c32b5f24",
+      "result_id": "7ab9b72d-c9a2-407e-b3ee-edd8a726df09"
+    },
+    {
+      "claim_id": "c2ab2467-ebd5-459e-8387-f1486f782495",
+      "result_id": "7ab9b72d-c9a2-407e-b3ee-edd8a726df09"
+    },
+    {
+      "claim_id": "720077cf-57d6-40c8-9a77-a57f585de61f",
+      "result_id": "7ab9b72d-c9a2-407e-b3ee-edd8a726df09"
+    },
+    {
+      "claim_id": "50bb7417-d052-4e80-9cca-2d2d62b29c52",
+      "result_id": "7ab9b72d-c9a2-407e-b3ee-edd8a726df09"
+    },
+    {
+      "claim_id": "a09bbef7-0b7a-40d5-8470-ec42dcf96634",
+      "result_id": "7ab9b72d-c9a2-407e-b3ee-edd8a726df09"
+    },
+    {
+      "claim_id": "a839378d-536e-45df-bfb6-0fe8fe118223",
+      "result_id": "7ab9b72d-c9a2-407e-b3ee-edd8a726df09"
+    },
+    {
+      "claim_id": "35a2ab19-9818-4e2f-9307-2951b78a7a6a",
+      "result_id": "7ab9b72d-c9a2-407e-b3ee-edd8a726df09"
+    },
+    {
+      "claim_id": "24ef77be-3dec-4e6f-894a-f1ce55b05b1e",
+      "result_id": "7ab9b72d-c9a2-407e-b3ee-edd8a726df09"
+    },
+    {
+      "claim_id": "7f34262b-3914-4313-b3f7-1e90ab796090",
+      "result_id": "ff19e747-fbfa-4715-a3ad-602f4d360ecf"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1750 @@
+{
+  "submission": {
+    "id": "5be08ec4-d0c7-4dc5-9382-6db7444e63ad",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:38:19.493358Z",
+    "updated_at": "2025-12-02T17:38:19.493358Z"
+  },
+  "content": [
+    {
+      "id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "submission_id": "5be08ec4-d0c7-4dc5-9382-6db7444e63ad",
+      "content_type": "manuscript",
+      "content_text": "# Mechanisms of nucleotide selection by telomerase\n\n## Authors\n\n- Matthew A Schaich<sup>1</sup> ([ORCID: 0000-0001-6771-5623](https://orcid.org/0000-0001-6771-5623))\n- Samantha L Sanford<sup>2</sup>\n- Griffin A Welfer<sup>1</sup>\n- Samuel A Johnson<sup>2</sup>\n- Thu H Khoang<sup>1</sup>\n- Patricia L Opresko<sup>2</sup>\n- Bret D Freudenthal<sup>1</sup> ([ORCID: 0000-0003-1449-4710](https://orcid.org/0000-0003-1449-4710)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biology, University of Kansas Medical Center Kansas City United States\n2. Department of Environmental and Occupational Health, University of Pittsburgh Graduate School of Public Health, and UPMC Hillman Cancer Center Pittsburgh United States\n3. Department of Cancer Biology, University of Kansas Medical Center Kansas City United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTelomerase extends telomere sequences at chromosomal ends to protect genomic DNA. During this process it must select the correct nucleotide from a pool of nucleotides with various sugars and base pairing properties, which is critically important for the proper capping of telomeric sequences by shelterin. Unfortunately, how telomerase selects correct nucleotides is unknown. Here, we determined structures of Tribolium castaneum telomerase reverse transcriptase (TERT) throughout its catalytic cycle and mapped the active site residues responsible for nucleoside selection, metal coordination, triphosphate binding, and RNA template stabilization. We found that TERT inserts a mismatch or ribonucleotide ~1 in 10,000 and ~1 in 14,000 insertion events, respectively. At biological ribonucleotide concentrations, these rates translate to ~40 ribonucleotides inserted per 10 kilobases. Human telomerase assays determined a conserved tyrosine steric gate regulates ribonucleotide insertion into telomeres. Cumulatively, our work provides insight into how telomerase selects the proper nucleotide to maintain telomere integrity.\n\n## Introduction\n\nDuring every round of eukaryotic cell division, a small amount of DNA is lost from the ends of each chromosome (Olovnikov, 1973; Watson, 1972). Termed the end replication problem, this phenomenon is countered by two complementary adaptations. First, repetitive noncoding DNA sequences, known as telomeres, are found at chromosomal ends, preventing the loss of vital genetic information during each cell division (Blackburn and Gall, 1978; Moyzis et al., 1988). Second, the ribonucleoprotein telomerase elongates shortened telomeres at chromosomal ends using a reverse transcriptase activity (Greider and Blackburn, 1987). Without elongation, telomeres will eventually reach a critically short length, causing cells to undergo apoptosis or become senescent (Hayflick and Moorhead, 1961; Meyerson, 1998). Because telomerase plays such a fundamental role in the temporal regulation of cell division, aberrations in telomerase are implicated in numerous human diseases. These include premature aging, idiopathic pulmonary fibrosis (IPF), dyskeratosis congenita, and cancer (Blasco, 2005; Kim et al., 1994; Nelson and Bertuch, 2012). In particular,~90% of cancers upregulate telomerase to combat telomere shortening and enable unlimited cell division, as opposed to somatic cells where telomerase is absent (Jafri et al., 2016).\n\nThe implication of telomerase in multiple human diseases underscores the importance of understanding its catalytic cycle at the molecular level. Although the human telomerase holoenzyme is composed of multiple accessory subunits, catalysis is localized to the telomerase reverse transcriptase (TERT) subunit (Nguyen et al., 2018). Historically, biochemical characterization of human TERT (hTERT) has proven challenging, in part because of technical difficulties purifying and reconstituting large quantities of active telomerase (Ramakrishnan et al., 1997; Schmidt et al., 2016). As a result, many fundamental parameters describing the telomerase catalytic cycle have remained undefined. These enzymatic constants are essential for understanding the roles of active site residues, the selection of right from the wrong nucleotides (fidelity), and the prevention of ribonucleotide triphosphate (rNTP) insertion (sugar discrimination). The faithful extension of telomeres by telomerase is critical because aberrations in telomeric sequences prevent shelterin proteins from capping telomeres, thus promoting genomic instability (de Lange, 2005; Nandakumar et al., 2010). Structural studies of human telomerase have also been historically challenging. Currently, the highest resolution structural snapshot of human telomerase is a cryo-EM structure at 8 \u00c5 resolution (Nguyen et al., 2018). This structure represents a milestone in telomerase structural biology, revealing details of the telomerase tertiary and secondary structure. However, the positions of amino acids are difficult to distinguish at this resolution, leaving many molecular details of the catalytic cycle ambiguous.\n\nTo mitigate the difficulties inherent in the biochemical characterization of human telomerase, several model systems have been established. These include models from yeast, the protazoa Tetrahymena thermophila (with which a 5 \u00c5 cryo-EM structure was recently determined), and the insect model Tribolium castaneum (sequence alignment shown in Figure 1\u2014figure supplement 1;\u00a0Gillis et al., 2008; Jiang et al., 2018; Petrova et al., 2018). For biochemical characterization of TERT, we opted to use T. castaneum TERT (tcTERT) for the following reasons: first, tcTERT readily fit into the cryo-EM density of hTERT and aligns well with the recent cryo-EM structure from T. thermophila, highlighting the conserved secondary structure (Figure 1\u2014figure supplement 2); second, upon alignment with hTERT, the active site pocket of tcTERT exhibits a high degree of sequence identity (Supplementary file 1, Table 1a); third, using a truncated version of the T. castaneum telomerase RNA component (TR), we can readily obtain sufficient quantities of isolated, active tcTERT for characterization of the telomerase catalytic cycle by pre-steady-state kinetics and X-ray crystallography (Gillis et al., 2008; Nguyen et al., 2018). Although TERTs have highly conserved active sites, there are significant changes in the domain architecture between human and tcTERT. These include tcTERT lacking the N-terminal (TEN) domain and missing a portion of the insertion in fingers domain (IFD) (Supplementary file 1, Table 1b). These domains are essential for the activity of other telomerase homologs, and have been hypothesized to be particularly important for telomerase ratcheting during translocation (Steczkiewicz et al., 2011). Therefore, we kept our tcTERT kinetics within a single turnover (i.e. insertion) regime, and, wherever possible, complemented the kinetic results with human telomerase studies to characterize the catalytic cycle of telomerase. Using this combined approach, we have elucidated the role of conserved telomerase active site residues and determined the mechanisms of fidelity and rNTP discrimination.\n\n## Results\n\nThe TERT subunit of telomerase elongates telomeric DNA using a conserved catalytic cycle as outlined in Figure 1A, Figure 1\u2014figure supplement 3, and here. First, telomerase anneals its RNA template to the end of telomeric DNA to form a binary complex (TERT:DNA, Figure 1A, state A1). Next, the binary complex binds an incoming dNTP and samples for proper Watson-Crick base pairing to the RNA template (Figure 1A, state B1). The transition between these two states represents the nucleotide binding step, measured as a dissociation constant (Kd). If the resulting ternary complex (TERT:DNA:dNTP) is in the proper orientation, TERT will catalyze the formation of a phosphodiester bond and extend the telomere by one nucleotide (Figure 1A, state C1). The transition between these two states is the chemistry step, and its theoretical maximum rate with saturating nucleotide concentration is described as kpol. Following insertion of the incoming nucleotide, telomerase will shift registry to align the active site with the next templating base (forming state A2). This core catalytic cycle repeats six times, until a new telomeric repeat is added (Figure 1A, state C6). All 18 telomerase states that are required to add one telomeric repeat are shown in Figure 1\u2014figure supplement 3 for reference. Importantly, as the telomerase approaches the end of its template, the DNA:RNA duplex at the 5\u2019 end begins to melt, enabling telomerase to either (1) translocate and anneal the RNA component to the newly extended telomeric repeat, thus allowing for additional repeat addition; or (2) dissociate from the telomeric DNA. The number of times that a single telomerase enzyme traverses this catalytic cycle is tightly regulated. It was recently shown telomerase becomes inactive after two repeats, but can be reactivated by the recently discovered intracellular telomerase-activating factors (iTAFs) (Sayed et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55438/elife-55438-fig1-v1.jpg)\n\n**Figure 1.:** (A) Overview of the telomerase catalytic cycle.\u00a0Telomerase forms a prenucleotide bound binary complex (State A1). Then, it binds the incoming nucleotide triphosphate to form a ternary complex (State B1), chemically links it to the telomere terminus (State C1), and then shifting registry to bind the next incoming nucleotide (State A2). After this cycle completes six times (State C6), telomerase will either disassociate or undergo translocation (dotted line), which places it back into State A1. (B) The tcTERT prenucleotide binary complex. tcTERT (pale orange cartoon and surface) encircles the DNA (white) and RNA (purple) substrate. (C) Active site pocket of the prenucleotide binary complex. rC binding (gray), dG binding residues (yellow), nucleoside residues (cyan), catalytic residues (blue), and triphosphate binding (green) are shown as sticks. (D) Closeup views of the rC binding residues, (E) terminal dG binding residues, (F) nucleoside binding residues, and (G) the tcTERT catalytic residues and triphosphate coordinating residues. A Mg2+ ion is shown as a purple sphere and DNA is presented as white sticks.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55438/elife-55438-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** A multiple sequence alignment is shown from several established TERT models, including Tribolium castaneum (tc), Homo sapiens (h), Tetrahymena thermophila (tt), andSaccharomyces cerevisiae(sc). The active site residues discussed are highly conserved throughout all four species. Colored arrows mark the positions of each group as in Figure 1, with residues coordinating the RNA terminus shown in gray, the primer terminus in yellow, the catalytic residues in blue, the nucleoside coordinating residues in cyan, and the triphosphate coordinating residues in green.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55438/elife-55438-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) An overlay of tcTERT with the density from a cryo-EM structure of human telomerase.\u00a0tcTERT is shown as a green cartoon, density is a gray surface, and hTR is shown as a beige cartoon (taken from Nguyen et al., 2018). (B) An overlay of tcTERT with a cryo-EM structure of TERT from Tetrahymena thermophila. tcTERT is shown as a green cartoon, and ttTERT is shown as a blue cartoon. ttTERT structure takin from Jiang et al., 2018; PDB code 6D6V.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55438/elife-55438-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** To extend a full telomeric repeat of 6 nucleotides, 18 structural states are sampled, from A1 to C6. Telomeric DNA is shown in blue, telomerase RNA in purple, the TERT protein in yellow, and nucleotide triphosphates in green. For states without a nucleotide triphosphate bound, the position of the active site is shown with a black circle. The A category represents prenucleotide states, the B category represents ternary states, and the C category represents product states. The structures presented in this manuscript are A6, B6, and C6.\n\n### Observing telomeric extension at the molecular level\n\n#### Pre-nucleotide binary complex\n\nWe determined how TERT engages with telomeric DNA by co-crystallizing tcTERT with a 16-mer RNA strand hybridized to its complementary 15-mer DNA strand to form a binary complex. This substrate mimics the initial TERT:RNA complex bound to telomeric DNA (Figure 1A, state A6). In this orientation, an unpaired 5\u2019 cytosine (rC) of the RNA strand acts as the templating base and a 3\u2019 adenosine (dA) of the DNA strand serves as the primer terminus (Figure 1B,C). Crystals of this complex grew in a P3221 space group, diffracting to 2.5 \u00c5 resolution (Supplementary file 2, Table 2a). The resulting structure shows TERT bound as a ring around the end of the RNA:DNA complex, with its active site positioned at the terminus of the DNA strand (Figure 1B,C).\n\nWithin the TERT active site, the templating RNA strand is stabilized by multiple conserved tcTERT residues (Supplementary file 1, Table 1a). Residues I196, V197, S198, G309, and R194 compose a pocket around the templating RNA base (Figure 1D). This pocket uses both polar and nonpolar interactions to stabilize the templating rC in a conformation that orients its Watson-Crick edge towards the incoming nucleotide binding site. On the opposite side, the 3\u2019-OH of the primer terminal 3\u2019-dA points towards the catalytic metal binding site, and side chains from T341 and V342 coordinate the deoxyribose sugar moiety of the 3\u2019-dA with nonpolar interactions (Figure 1E and Supplementary file 1, Table 1a). This binary TERT complex also has a cavity in the active site that forms the nucleotide binding pocket. These nucleotide pocket residues can be subdivided into three categories: nucleoside coordinating, catalytic, and triphosphate interacting residues (Figure 1F and G). Notably, the residues that compose these three groups are 100% conserved between hTERT and tcTERT (Supplementary file 1, Table 1a). The nucleoside binding group is composed of residues R194, Y256, and Q308 (Figure 1F). These residues form a nucleoside shaped cleft directly upstream of the primer terminus of the telomeric DNA and are further characterized below. The catalytic residues include the catalytic triad: D251, D343, and D344. These residues coordinate the divalent metal ions during catalysis (Figure 1G). Residues K189, A255, N369, and the backbone of K372 are in position to form interactions with the triphosphate of the incoming nucleotide (Figure 1G). Collectively, the active site of tcTERT is primed for nucleotide binding, and the residues involved in binding are highly conserved with human telomerase (Supplementary file 1, Table 1a).\n\n### Nucleotide bound ternary complex\n\nWe also determined the structure of TERT after binding an incoming nucleotide, but prior to catalysis (Figure 1A, state B6). To capture the ternary complex, we utilized a non-hydrolyzable nucleotide analog 2'-deoxyguanosine-5'-[(\u03b1,\u03b2)-methyleno]triphosphate (dGpCpp). dGpCpp is identical to dGTP, except the bridging oxygen between the \u03b1 and \u03b2 phosphate is a carbon atom, which prevents catalysis (Batra et al., 2006; Gleghorn et al., 2011). Crystals of this complex grew in the same P3221 space group and diffracted to 2.9 \u00c5 resolution (Supplementary file 2, Table 2a). Comparing this ternary complex to the binary state (RMSD value of 1.52 \u00c5, Figure 2A) indicates minimal structural rearrangements are required for TERT to bind dGpCpp. The active site residues that compose the nucleotide binding pocket of the pre-nucleotide binary complex coordinate the incoming dGpCpp, positioning its Watson-Crick face to hydrogen bond with the templating rC (Figure 2B,C). Two Mg+2 ions exhibit octahedral coordination to facilitate nucleotide binding. The catalytic metal coordinates residues D251, D343, D344, the 3\u2019-OH of the primer terminus, and the non-bridging oxygen of the dGpCpp \u03b1-phosphate (Figure 2D). The nucleotide metal coordinates the side chains of D251 and D343, the backbone carbonyl of I252, and a non-bridging oxygen on the \u03b1,\u03b2, and \u03b3 phosphates of the incoming dGpCpp (Figure 2D). Nucleoside binding residue R194 remains in a similar position to where it was in the prenucleotide state, but now forms a network of contacts between residue Q308 and the \u03b1 phosphate of the incoming nucleotide, stabilizing it in an orientation near other nucleoside binding residues. Y256 is positioned near the C2 position of the deoxyribose sugar portion of the nucleoside, and Q308 coordinates the nucleoside component of the dGpCpp (Figure 2E). As a whole, the nucleoside binding residues encircle the nucleoside component of the incoming nucleotide, and position it so that the nucleobase can base stack with the primer terminus. Overall, this ternary complex provides insight into nucleotide selection by TERT and the specific roles of active site residues during nucleotide binding.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55438/elife-55438-fig2-v1.jpg)\n\n**Figure 2.:** (A) The tcTERT ternary structure, overlayed with the prenucleotide binary complex.\u00a0DNA (white), RNA (purple), binary tcTERT (yellow cartoon), and ternary tcTERT (blue cartoon) are shown. (B) The tcTERT active site. Nucleoside residues (cyan), triphosphate residues (green), and catalytic residues (blue) are shown. The dGpCpp (yellow), DNA, and RNA are represented as sticks. (C) Closeup view of dGpCpp with a polder OMIT map contoured at \u03c3\u00a0=\u00a03.0 (green mesh). (D, E) dGpCpp contacts are shown with Mg2+ (purple), catalytic residues (marine) and nucleoside residues (cyan) indicated. (F) The tcTERT product structure (red cartoon), overlaid with the prenucleotide binary complex (yellow cartoon). (G) An active site view of the tcTERT product structure. (H) A display of a polder OMIT map contoured at \u03c3\u00a0=\u00a03.3 around the incoming dGpCpp (green mesh). (I) Catalytic residues (marine) coordinate the inserted dG (white).\n\n### Product complex\n\nTo capture a product complex of telomerase, we crystallized TERT after incubation with its nucleic acid substrate and dGTP, allowing TERT to insert the nucleotide and form the final product stage of the catalytic cycle (Figure 1A, state C6). Both globally and within the active site, we observed minimal structural changes between the prenucleotide binary complex and the product structure (RMSD value of 1.04 \u00c5, Figure 2F). Electron density of the inserted dG indicates its Watson-Crick face hydrogen bonds to the Watson-Crick face of the templating rC (Figure 2G,H). The templating rC continues to interact with the residues that coordinated it during the other two structural states described prior, including I196, V197, S198, G309, and R194. Neither a registry shift nor a translocation step has occurred in this structure; the TERT active site remains aligned to the terminal DNA base (Figure 2I). Comparing this structure to structures of the previous stages in the catalytic cycle, we observed that minimal global rearrangements are required to proceed from the binary, ternary, and product states of the catalytic cycle.\n\n### Fidelity and sugar selectivity of TERT\n\nCharacterization of the telomerase catalytic mechanism was performed using pre-steady-state kinetics of single nucleotide insertion by tcTERT (Figure 3, Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 2, and Supplementary file 3). These experiments determined both the Kd of the incoming nucleotide and the kpol for nucleotide insertion by tcTERT, which have thus far proven unattainable for human telomerase (or any other homolog). TERT inserts the correctly matched dGTP across from a templating rC with a kpol of 1.05 s\u22121 and a Kd for the incoming dGTP of 18.1 \u03bcM (Figure 3A,D). Both of these values are comparable to other non-replicative DNA polymerases and the TERT KM values obtained by steady-state kinetics (Brown et al., 2010; Chen et al., 2018). We further probed the role of tcTERT active site residues R194 and Q308 because their role during catalysis is not clear from the structures alone and both residues protrude into the nucleotide binding pocket (Figure 1F and Supplementary file 1, Table 1a). For TERT R194A, the kpol decreased by 28-fold to 0.0369 s\u22121, and the Kd for dGTP increased\u00a0~5 fold to 93 \u03bcM (Figure 3\u2014figure supplement 2A,C). With the Q308A variant, the kpol decreased\u00a0~60 fold to 0.30 s\u22121 and the Kd for dGTP increased\u00a0~2 fold to 45 \u03bcM (Figure 3\u2014figure supplement 2B,D). Therefore, R194 and Q308 primarily play a role in the chemistry step rather than the nucleotide binding. As the hTERT homolog to R194 (R631, Supplementary file 1, Table 1a) is implicated in IPF, we infer that mutations at R631 likely reduce hTERT\u2019s kpol, contributing to IPF pathologies (Basel-Vanagaite et al., 2008; Diaz de Leon et al., 2010).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55438/elife-55438-fig3-v1.jpg)\n\n**Figure 3.:** (A) Pre-steady-state kinetics of WT tcTERT inserting dGTP opposite rC.\u00a0Data was fit to Equation 1 (Supplementary file 3, Table 3a and b). Error bars represent the standard deviation of the mean. These experiments were also performed with WT tcTERT inserting dATP across from rC (B) and rGTP across from rC (C). Replots of the data and fits to Equation 2 were performed for (D) dGTP across from rC, (E) dATP across from rC, and (F) rGTP across from rC. (G) A comparison of TERT nucleobase fidelity (red line) compared to other DNA polymerase families. (H) TERT\u2019s rNTP discrimination rates (red line) compared to select DNA polymerases is shown (Brown and Suo, 2011; McCulloch and Kunkel, 2008).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55438/elife-55438-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Pre-steady-state kinetics of tcTERT with an R194A substitution. Error bars represent the standard deviation of the mean. Data was fit to the exponential equation 1 to determine the kobs (rate) and target engagement. Pre-steady-state parameters were also calculated for (B) tcTERT with a Q308A substitution. (C) A replot of the fits from panel A, showing the kobs values obtained from each concentration of dGTP. Data was fit to equation 2. (D) A replot of tcTERT Q308A.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55438/elife-55438-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Due to space considerations, only a zoomed in portion of pre-steady-state kinetic data was shown in certain portions of the text.\u00a0Both the zoomed and complete curves were shown for (A, B) WT TERT inserting dGTP across from dC, (C, D) TERT R194A inserting dGTP across from dC.\n\nDuring telomeric extension, telomerase must select between a variety of nucleic acid substrates in order to properly maintain telomeric integrity. To probe the fidelity of telomerase, we applied pre-steady-state kinetics, assessing the efficiency with which TERT inserts nucleotides during telomeric elongation. Two separate types of nucleotide selection were examined: (1) the selection of a matched dGTP over a mismatched dATP, and (2) the selection of a matched deoxyribonucletide triphosphate (dNTP) over a matched rNTP (Figure 3B and C, Supplementary file 3, Table 3a and b). We observed that for the insertion of dATP opposite a templating rC, the catalytic efficiency starkly decreased compared to dGTP insertion, both at the nucleotide binding and chemistry step. For the mismatched insertion, the kpol decreased 129-fold to 0.0081 s\u22121 and the Kd increased 76-fold to 1.3 mM (Figure 3E). The resulting catalytic efficiencies (kpol/Kd) for a matched versus mismatched nucleotide insertion indicate telomerase will insert the wrong nucleotide\u00a0~1 in 10,000 nucleotide insertion events. This places telomerase at a moderate fidelity of base selection compared to other DNA polymerases (Figure 3G). For rNTP discrimination, the kpol for inserting a rGTP decreased 281-fold to 0.0037 s\u22121 and the Kd increased 49-fold to 0.89 mM (Figure 3F). This results in a nearly 14,000-fold decrease in the catalytic efficiency for the insertion of a rNTP compared to a dNTP (i.e. sugar discrimination, Figure 3H). Because the cellular concentrations of rNTPs are around 50-fold higher on average than dNTPs, this sugar discrimination indicates telomerase will insert a rNTP\u00a0~1 in 280 insertion events in a cellular context (see discussion) (Traut, 1994).\n\n### The steric gate of telomerase\n\nThe high cellular concentration of rNTPs has resulted in most DNA polymerases evolving a structurally conserved active site residue which provides sugar discrimination by reducing the rate of rNTP insertion (Brown and Suo, 2011; Cavanaugh et al., 2010; Nick McElhinny et al., 2010). These residues are termed \u2018steric gates\u2019 because they clash with the 2\u2019-OH of the incoming rNTP. Throughout the TERT catalytic cycle, we observed that Y256 rests in the minor groove of the DNA and is in position to clash with the 2\u2019-OH of an incoming rNTP (Figure 2E). Therefore, we hypothesized this residue to be the steric gate in telomerase. To test this hypothesis, we performed pre-steady-state kinetics of rNTP insertion with the Y256A variant of TERT (Figure 4A,B). Compared to WT TERT, the insertion of a matched rGTP by Y256A showed a 1,490-fold increase in kpol to 5.5 s\u22121 and a 12-fold decrease in Kd to 73 \u03bcM (Figure 4C). The results for TERT Y256A inserting a matched dGTP were similar to that of the rGTP, with a kpol and Kd of 6.6 s\u22121 and 74 \u03bcM, respectively (Figure 4D). Thus, the sugar selectivity of TERT dropped from 14,000-fold between rGTP and dGTP for WT TERT to less than 2-fold for the Y256A TERT variant (Figure 4E). In other words, a single Y256A substitution increased rGTP insertion efficiency by 18,000-fold, abolishing almost all sugar discrimination. In a cellular environment, where rNTPs are at much higher concentrations than dNTPs, WT TERT would insert rGTP over 100-fold times less efficiently than dGTP. In contrast, TERT Y256A under cellular conditions would insert rGTP 77-fold times more efficiently than dGTP (Figure 4F;\u00a0Traut, 1994).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55438/elife-55438-fig4-v1.jpg)\n\n**Figure 4.:** Pre-steady-state kinetics of tcTERT with its steric gate removed (i.e.\u00a0Y256A) for both (A) rGTP insertion and (B) dGTP insertion (Supplementary file 3, Table 3a). Error bars represent standard deviation of the mean. These graphs were replotted and fit to Equation 2 for (C) tcTERT Y256A inserting rGTP and (D) tcTERT Y256A inserting dGTP (E) A comparison of catalytic efficiencies (kpol/Kd) of both WT TERT and TERT Y256A for the insertion of dGTP (green) versus rGTP (red). (F) A comparison of TERT efficiencies adjusted for cellular nucleotide concentrations. (G) The prenucleotide binary complex of TERT Y256A (green) overlaid with the WT TERT prenucleotide binary complex structure (yellow). (H, I) The active site pocket of TERT Y256A, with DNA (white), RNA (purple), catalytic residues (blue), and nucleoside coordinating residues (cyan) shown. (J) The closest contacts to the C2 position of dGpCpp from the ternary structure (aligned and shown with yellow and green sticks) compared to Y256A tcTERT (cyan).\n\nWe next verified that this ablation in sugar discrimination was due to specific changes in the TERT active site rather than global rearrangements of the enzyme. To test for structural rearrangements, we crystallized the pre-nucleotide binary state of TERT Y256A (state A6), and saw minimal structural differences compared to the WT protein (Figure 4G\u2013J). The position of the primer terminus was not changed, and catalytic residues D251, D343, and D344 were in position to catalyze the nucleotidyl transferase reaction (Figure 4H). Upon closer examination of the active site pocket, the substitution of Y256 with alanine resulted in a more open nucleotide binding pocket (Figure 4H and I). The distance from the C2 carbon of the dGpCpp to residue 256 shifted from 3.3 \u00c5 in WT TERT to 5.7 \u00c5 in TERT Y256A, showing that the TERT Y256A has much more room to accommodate the 2\u2019-OH (Figure 4J). Taken as a whole, these results indicate Y256 clashes with the 2\u2019-OH of rNTPs to provide sugar discrimination and is the steric gate in telomerase.\n\nTo determine if human telomerase uses a similar mechanism to discriminate against rNTP insertion, we implemented human telomerase activity assays (Xi and Cech, 2014). In these assays, 1.5 telomeric repeats with the sequence TTAGGGTTAG were incubated with 50 \u00b5M of either all four dNTPs or all four rNTPs and purified 3xFLAG tagged human telomerase overexpressed with hTR. We performed these tests with both WT telomerase and a telomerase Y717A variant, which is the homologous residue to tcTERT Y256. WT telomerase showed robust primer extension in the presence of dNTPs, with\u00a0~10% of the primer extended into product over the course of 30 min (Figure 5A,B). Similarly, with all four dNTPs, the Y717A variant reached\u00a0~7% primer extension in the same amount of time (Figure 5A,B). In contrast, when we incubated WT telomerase with all four rNTPs rather than dNTPs, we observed very low (<1%) primer extension after 30 min, suggesting that human telomerase discriminates against rNTPs, similar to tcTERT (Figure 5C,D). When we performed the same telomeric extension assay with the steric gate variant (Y717A), we observed that the primer extension was increased 3-fold compared to WT hTERT in the presence of rNTPs (Figure 5C,D). These results indicate the conserved residue Y717 in hTERT (Supplementary file 1, Table 1a) is the steric gate in human telomerase. Interestingly, in both WT and Y717A telomerase, minimal insertion past the first telomeric repeat was observed, which suggests the presence of rNTPs in telomere strands may inhibit the telomerase translocation step (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55438/elife-55438-fig5-v1.jpg)\n\n**Figure 5.:** (A) Timecourse of primer extension with all four dNTPs by WT (left) and Y717A (right) human telomerase.\u00a0(B) Quantification of percent primer extension, with WT shown as a blue line and the Y717A mutant shown in red. (C) Timecourse of primer extension with all four rNTPs for WT telomerase (left) and Y717A telomerase (right). (D) Results from the gel in panel C, quantified with the mutant telomerase shown in red and WT telomerase shown in blue. (E) Primer extension from both WT (left) and Y717A telomerase. Each lane contains either all four dNTPs, or three dNTP and one dNTP marked in red. (F) A close-up view of the first two telomeric repeats from selected lanes in panel E. rNTPs present in the mix are shown in red. Quantifications of each band in terms of percent product are also shown and labeled by the position of the telomerase templating base. The base marked by an asterisk is complementary to the rNTP in the solution. Error bars represent standard deviations of four biological replicates.\n\nWe next assessed if more subtle alterations in the nucleotide mixture would also cause inhibition of telomerase extension. By substituting one rNTP into the nucleotide mix at a time, we could determine the effects of inserting one, two, or three rNTPs inserted per repeat (with rATP, rUTP, and rGTP, respectively). In each case, telomerase processivity was reduced, with no bands evident past the second telomeric repeat (Figure 5E). The inhibitory effect seemed to depend on the number of rNTPs inserted per repeat, with rGTP presence showing the greatest inhibition. For the steric gate Y717A mutant telomerase, the effect of rNTPs on telomerase\u2019s processivity were much less pronounced. In the most extreme case of three rNTPs present per repeat, extension products are evident well into the second repeat, in contrast to the WT telomerase which had almost no insertion events (Figure 5E). We hypothesize that the rGTP insertion drastically inhibits WT telomerase because the first two insertions in the repeat are templated by rC. Therefore, the first event would need to be a rNTP insertion, followed by another rNTP insertion from a potentially unstable primer terminus. We are unable to decipher if inhibitory effects are due to the number of ribonucleotides per repeat, sequence-dependent inhibition, or a combination of both. In contrast to rGTP, telomerase is able to incorporate multiple repeats when rATP is present, albeit at a reduced efficiency compared to dNTPs (Figure 5E).\n\nWithin these primer extension activity assays, the effects of rNTP insertions can also be observed at the single nucleotide level. For rATP insertion with WT telomerase, we observed a buildup in substrates one nucleotide shorter than where the rNTP insertion would occur, composing\u00a0~60% of the total product formation (Figure 5F). This could be explained by the poor catalytic efficiency of telomerase for rATP insertion causing the enzyme to stall directly before the rATP insertion event. In contrast to the WT telomerase, the Y717A variant did not stall at the rATP insertion event. Interestingly, rNTPs inhibited translocation in both Y717A and WT telomerase, implying that telomerase possesses rNTP discrimination mechanisms beyond the level of single nucleotide incorporations (Figure 5E,F). The agreement between the results of the tcTERT and hTERT points towards a universal mechanism of sugar discrimination by any telomerase homolog with a tyrosine in this conserved position (Supplementary file 1, Table 1a).\n\n## Discussion\n\n### Telomerase\u2019s catalytic cycle and fidelity\n\nIn this study, we characterized each step of the TERT catalytic cycle for single nucleotide insertion. We found that, in terms of global protein structure, minimal rearrangement is required to proceed through the catalytic cycle. This lack of rearrangement contrasts many other DNA polymerases and even HIV RT, which have been shown to undergo global shifts from an \u2018open\u2019 to a \u2018closed\u2019 state upon nucleotide binding (Doubli\u00e9 et al., 1999; Sawaya et al., 1994; Schmidt et al., 2018). Although it is unknown why the TERT catalytic core does not open and close, it may be because other complexities necessary for telomerase function limit the opening and closing from occurring, including the translocation step during repeat addition or the extensive interaction with its RNA component. Within the active site, we observed residues that encompass a cavity for the incoming nucleotide prior to binding, which then adjust to coordinate the incoming nucleotide after binding, and continue to stabilize the newly inserted base after its insertion in the product state. Many of the active site residues involved in carrying out the catalytic cycle are in similar positions as other DNA polymerases; a triad of three carboxylate containing residues such as D251, D343, and D344 in tcTERT is conserved in many DNA polymerases (Steitz, 1999). Interestingly, R194 and Q308 are in a similar structural location to R61 and Q38 of human DNA polymerase \u03b7, and both have been shown to be important in its catalytic cycle (Biert\u00fcmpfel et al., 2010).\n\nOur structural snapshots were complemented by kinetic studies, allowing us to understand how telomerase chooses right from wrong nucleotides; that is, selecting canonical dNTPs with correct base pairing compared to noncanonical rNTPs or mismatched base pairing (Figure 6A). Our experiments were carried out specifically with a single dGTP insertion using a 4 nucleotide overhang RNA template. While telomerase has been shown to exhibit moderate base and position-specific effects, our results indicate that the telomerase catalytic core generally exhibits moderate base selection fidelity, similar to that of X-family polymerases involved in DNA repair (Chen et al., 2018; McCulloch and Kunkel, 2008). Based on our kinetic values, we predict that telomerase inserts\u00a0~\u00a01 mismatch per each 10 kb of telomere extension. Because telomerase does not have a proofreading domain, misinsertions created by telomerase will remain as ssDNA during telomere elongation. Upon replication of the complementary strands by a DNA polymerase, the base that was a mismatch (in the context of telomerase) will become a matched base pair, and will not be a substrate for mismatch repair. Therefore, our fidelity measurement is predictive of cellular error rates in telomeric sequences. Accordingly, our predicted error rate agrees with telomeric error rates observed using telomere sequencing (Lee et al., 2018). While the downstream consequences of telomeric mismatches have not been studied in a biological context to our knowledge, they likely would disrupt G-quadruplex stability and inhibit shelterin protein binding, as both of these phenomena are dependent on DNA sequence (Figure 6B;\u00a0Burge et al., 2006; de Lange, 2005).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55438/elife-55438-fig6-v1.jpg)\n\n**Figure 6.:** (A) The telomerase catalytic cycle, with matched dNTP (green), mismatched dNTPs (orange), and matched rNTPs (red).\u00a0For each nucleotide path, kinetic parameters are labeled for each step and the insertion probability. (B) Downstream consequences of mismatch insertion by telomerase may include evasion of mismatch repair, reduced binding affinity for shelterin proteins, and altered stability of telomeric G quadruplexes. (C) Eventual consequences of rNTP insertion by telomerase. After insertion into telomeres, ribonucleotides could cause harsh consequences via hydrolysis, or disrupting telomere capping and stability. Ribonucleotides may also be removed by ribonucleotide excision repair.\n\n### Telomeric ribonucleotides\n\nDNA polymerases insert millions of rNTPs into the genome during replication, because of a large disparity in nucleotide concentrations (rNTPs are\u00a0~50 fold more abundant in cells than dNTPs) (Traut, 1994). Telomerase also must select against this disparity; although telomerase is canonically thought to elongate telomeres with only dNTPs, our kinetics imply this is not the case. Instead, we predict that for every 10 kb of telomere extension, telomerase inserts\u00a0~\u00a040 rNTPs, which represents selectivity comparable to DNA polymerase \u03b2 and DNA polymerase \u03b4 (Brown and Suo, 2011; Cavanaugh et al., 2010; Nick McElhinny et al., 2010). However, it is unknown whether ribonucleotides persist in telomeres, their biological consequences, and if they are addressed with ribonucleotide excision repair (RER), similar to other genomic ribonucleotides (Sparks et al., 2012). In our experiments with human telomerase, we found that even with increased rates of ribonucleotide insertion at the single nucleotide insertion level, telomere elongation was reduced via an inhibition of the translocation step (Figure 5E,F). This reduction was evident even with a single rNTP present in a telomeric repeat. Furthermore, previous studies have found telomeric substrates containing ribonucleotides can prevent or reduce extension of the first repeat depending on the number and position of ribonucleotides present in the DNA template (Collins and Greider, 1995). It is possible that telomerase pauses after inserting ribonucleotides to provide an opportunity for an extrinsic proofreader or RER to remove the ribonucleotide before continuing telomeric elongation. Telomerase has previously been observed to halt telomeric extension after the insertion of other noncanonical nucleotides, particularly in the case of 8-oxodeoxyguanine triphosphate (8-oxodGTP) insertion (Fouquerel et al., 2016). Therefore, telomerase may stall on noncanonical nucleotides, such as 8-oxodGTP, for similar proofreading reasons.\n\nTelomerase discrimination against rNTP insertion is important because ribonucleotides can cause multiple downstream problems for telomeric stability. These problems can arise from both the direct reduction of telomere length and from altering telomere structure. Because RNA is more vulnerable to hydrolysis than DNA, inserted ribonucleotides are more likely to hydrolyze, which would cause a telomeric single strand break (Baumann and Cech, 2001; de Lange, 2005; Li and Breaker, 1999). If the strand break occurred before the complementary strand of the telomere was copied and ligated to the genome, the elongating single strand would be released, and the entire telomere elongation process would need to be restarted (Figure 6C). Alternately, the inserted ribonucleotide may not hydrolyze, but instead persist within telomeres. The continued presence of ribonucleotides in telomeres may cause several structural aberrations, including altering G-quadruplex stability and disrupting shelterin protein binding (Fay et al., 2017; Nowotny et al., 2005). If shelterin proteins are not able to bind to telomeres, telomere ends may be recognized as DNA damage, activating double strand break repair and causing disastrous biological consequences.\n\nSubtle alterations to the telomeric nucleotides have previously been shown to cause telomeric disruption in a cellular context (Fouquerel et al., 2016; Mender et al., 2015; Stefl et al., 2001). Even changes of only one atom in a nucleotide, including replacing an oxygen of a guanine with a sulfur to form therapeutic 6-thioguanine nucleotides or the adduction of an extra oxygen onto guanine to form 8-oxoguanine nucleotides, have significant biological consequences in the context of telomerase. Therefore, in order to prevent this telomeric disruption, the telomerase active site appears to have evolved a high degree of stringency towards noncanonical nucleotides, including both rNTPs and mismatched dNTPs. This stringency was evident by the reduced telomere elongation efficiency with every variant tested; other mutations could also be identified with this system that show increases in telomere elongation efficiency. Our structural characterization of the telomerase catalytic cycle allowed us to efficiently modify the stringent active site of telomerase, generating a human telomerase variant that readily inserts rNTPs. The applications shown here highlight the potential of combining model TERTs with complementary human telomerase studies to further probe the telomerase catalytic mechanism and screen future telomerase-targeting therapeutics.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Tribolium castaneum)</td>\n      <td>tcTERT</td>\n      <td>GenScript</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene(Homo sapiens)</td>\n      <td>hTR</td>\n      <td>Gift from Dr. Tom Cech</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>hTERT</td>\n      <td>Gift from Dr. Tom Cech</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>One Shot BL21(DE3)pLysS Chemically Competent E. coli</td>\n      <td>Invitrogen</td>\n      <td>Cat# C606010</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>One Shot TOP10 Chemically Competent E. coli</td>\n      <td>Invitrogen</td>\n      <td>Cat# C606010</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK 293 T Cells, female</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0063</td>\n      <td>Cells were acquired from ATCC, and have not since been tested for mycoplasma, as they were used for protein generation not biological assays</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pSUPER-hTR</td>\n      <td>Gift from Dr. Tom Cech</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pVan107 3X FLAG hTERT</td>\n      <td>Gift from Dr. Tom Cech</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET-28a(+) with Tribolium castaneum TERT</td>\n      <td>Genscript</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Primer for telomerase activity assays</td>\n      <td>IDT</td>\n      <td>N/A</td>\n      <td>5\u2019-GGTCAGGTCAGGTCA-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNA template for tcTERT kinetics</td>\n      <td>IDT</td>\n      <td>N/A</td>\n      <td>5\u2019-rCrUrGrArCrCrUrGACCUGACC-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>DNA primer for tcTERT kinetics</td>\n      <td>IDT</td>\n      <td>N/A</td>\n      <td>5\u2019-/6-FAM/CCAGCCAGGTCAG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNA template for tcTERT crystallogarphy</td>\n      <td>IDT</td>\n      <td>N/A</td>\n      <td>5\u2019- rUrGrArCrCrUrGrArCrCrUrGrG rCrUrGrG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>DNA primer for tcTERT crystallogarphy</td>\n      <td>IDT</td>\n      <td>N/A</td>\n      <td>5'-GGTTAGGGTTAGGGTTAG-3'</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>T4 polynucleotide kinase</td>\n      <td>NEB</td>\n      <td>Cat# M0201S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>3X FLAG Peptide</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat# F4799-4MG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>2'-deoxyguanosine-5'-[(\u03b1,\u03b2)-methyleno]triphosphate (dGpCpp)</td>\n      <td>Jena Biosciences</td>\n      <td>Cat# NU-431S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>\u03b3\u221232P ATP</td>\n      <td>Perkin-Elmer</td>\n      <td>Cat# BLU002Z250UC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>2-methyl-2,4-pentanediol</td>\n      <td>Hampton Research</td>\n      <td>Cat# HR2-627</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>COOT</td>\n      <td>Emsley and Cowtan (2004)</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>\n      <td>RRID:SCR_014222</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phenix</td>\n      <td>Adams et al., 2010</td>\n      <td>https://www.phenix-online.org/</td>\n      <td>RRID:SCR_014224</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>XDS</td>\n      <td>Kabsch (2010)</td>\n      <td>http://xds.mpimf-heidelberg.mpg.de/</td>\n      <td>RRID:SCR_015652</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MolProbity</td>\n      <td>Chen et al. (2010)</td>\n      <td>http://molprobity.biochem.duke.edu/</td>\n      <td>RRID:SCR_014226</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>Schneider et al., 2012</td>\n      <td>https://imagej.nih.gov/ij/</td>\n      <td>RRID:SCR_003070</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Kaleidagraph</td>\n      <td>Synergy Software</td>\n      <td>http://www.synergy.com/wordpress_650164087/kaleidagraph/</td>\n      <td>RRID:SCR_014980</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageQuant TL v8.1</td>\n      <td>GE Healthcare Life Sciences</td>\n      <td>http://www.gelifesciences. com/en/us</td>\n      <td>RRID:SCR_014246</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMol</td>\n      <td>Schr\u00f6dinger LLC</td>\n      <td>https://pymol. org/2/</td>\n      <td>RRID:SCR_000305</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Large scale expresion (LEX-48) bioreactor</td>\n      <td>Epiphyte</td>\n      <td>https://www.epiphyte3.com/LEX</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HisTrap HP 5 mL column</td>\n      <td>GE healthcare Life Sciences</td>\n      <td>Cat# 17524801</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>POROS HS strong cation ion exchange resin</td>\n      <td>Thermo scientific</td>\n      <td>Cat# 1335906</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>G-25 spin columns</td>\n      <td>GE Healthcare Life Sciences</td>\n      <td>Cat #27532501</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sephacryl 16/60 S-200 HR Size Exclusion Chromatography column</td>\n      <td>GE Healthcare Life Sciences</td>\n      <td>Cat # 17116601</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>ANTI-FLAG M2 affinity gel agarose beads</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat #A2220</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Nucleic acid sequences\n\nTo generate crystal structures of the TERT catalytic cycle, the following DNA sequences were utilized for all crystallization experiments: DNA primer of 5\u2019-GGTCAGGTCAGGTCA-3\u2019 and the RNA template sequence 5\u2019-rCrUrGrArCrCrUrGACCUGACC-3\u2019. For kinetic studies, we utilized a DNA primer with a 5\u2019 label of 6-carboxyfluorescein (6-FAM), and the DNA sequence of 5\u2019- CCAGCCAGGTCAG-3\u2019. The RNA template used in kinetic reactions contained the sequence 5\u2019- rUrGrArCrCrUrGrArCrCrUrGrGrCrUrGrG-3\u2019 and was not labeled. In each case, the oligonucleotides were resuspended in molecular biology grade water, and the concentration was calculated from their absorbance at 260 nm as measured on a NanoDrop microvolume spectrophotometer. Nucleic acid substrates for crystallography were annealed at an equimolar ratio, but nucleic acid substrates for our kinetic studies were annealed at a 1:1.2 molar ratio of labeled to unlabeled primer. We used a thermocycler to anneal all nucleic acid substrates, heating them to 90\u00b0C for 2 min before cooling to 4\u00b0C at a rate of 0.1\u00b0C per second.\n\n### Expression and purification of tcTERT\n\nWe used previously published methods for tcTERT expression and purification, but implemented several modifications\u00a0(Gillis et al., 2008). Briefly, we grew tcTERT in BL-21(DE3)pLysS cells using an Epiphyte3 LEX bioreactor at 37\u00b0C until they reached an OD600 of 0.6\u20130.8, after which the temperature was dropped to 30\u00b0C for 4\u20135 hr of protein production. Cells were harvested via centrifugation at 4000 x g until lysis. For TERT purification, we used buffers containing 0.75 M KCl and 10% glycerol for the capture step on Ni-NTA columns (GE Healthcare), and then further purified our sample with cation exchange on a POROS HS column (Thermo Fisher), using a salt gradient of 0.5 M KCl to 1.5 M KCl. Then, we cleaved the hexahistadine tag with Tobacco etch virus protease before purifying the cut tag from the protein with another run on our Ni-NTA columns. Finally, we used a slightly different buffer for the our size exclusion chromatography (Sephacryl S-200 16/60, GE Helathcare), containing 50 mM Tris-HCl, pH 7.5, 10% glycerol, 0.8 M KCl and 1 mM Tris(2-carboxyethyl)phosphine (TCEP). Resultant tcTERT was concentrated down to 18 mg mL\u22121 prior to crystallography, and stored at 4\u00b0C (Gillis et al., 2008).\n\n### Crystallization of tcTERT\n\nPrior to crystallization, we complexed tcTERT with its nucleic acid substrate by mixing them at a 1:1.2 ratio of protein to DNA. To increase protein solubility, we included 520 mM KCl when preparing to mix tcTERT with its nucleic acid substrate. We then used sitting drop vapor diffusion to grow binary complex crystals in conditions containing 11% isopropanol, 0.1 M KCl, 25 mM MgCl2, and 50 mM sodium cacodylate pH 6.5. Volume ratios for the optimal crystal growth were optimized to 2.3 \u00b5L tcTERT binary complex crystals + 1.7 \u00b5L of our crystallization condition, to make 4 \u00b5L total. For the ternary complex crystals, we used the same conditions, but included 0.69 mM dGpCpp (Jena Biosciences), the next matched incoming nucleotide in the sequence. Finally, for the product complex, we formed a DNA strand one nucleotide longer by incubating 2.5 mM dGTP with tcTERT and its nucleic acid substrate, allowing the reaction to occur at 22\u00b0C for 30 min prior to setting up crystallization drops. In all cases, crystals were transferred to a cryosolution containing 80% reservoir solution and 20% 2-methyl-2,4-pentanediol by volume before flash cooling them in liquid nitrogen.\n\n### Data collection and refinement\n\nAll datasets were collected at a wavelength of 1.00 \u00c5, using the 4.2.2 synchrotron beamline at the Advanced Light Source of the Ernest Orlando Lawrence Berkeley National Laboratory. Datasets were indexed and scaled using XDS (RRID:SCR_015652) (Kabsch, 2010; Winn et al., 2011). Initial models were generated using molecular replacement in PHENIX (RRID:SCR_014224), using a previously published tcTERT structure with an alternate substrate, PDB code 3KYL (Adams et al., 2010; Mitchell et al., 2010). After a solution was found, all DNA and RNA bases were built in the pre-nucleotide complex, and the resultant structure was then used for further molecular replacements other structures. Model building was accomplished with Coot (RRID:SCR_014222) and validated with MolProbity (RRID:SCR_014226) (Chen et al., 2010; Emsley and Cowtan, 2004). For structures\u00a0\u2265\u00a03 \u00c5 resolution, both secondary structure restraints and torsional restraints from the prenucleotide binary structure were used to prevent overmodeling. All refinements were done using PHENIX, and figures were generated using PyMOL (RRID:SCR_000305, Schr\u00f6dinger LLC). For each of the structures, Ramachandran analysis revealed a minimum of 100% of non-glycine residues occupied allowed regions and at least 93% occupied favored regions.\n\n### Pre-steady-state kinetic characterization of tcTERT\n\nPre-steady-state kinetic parameters of tcTERT were obtained using established pre-steady-state kinetics protocols for DNA polymerases, also known as single turnover kinetics (Beard et al., 2014; Powers and Washington, 2017). Briefly, we preincubated 2 \u03bcM tcTERT with 200 nM annealed DNA:RNA hybrid substrate, with a 6-FAM label on the 5\u2019 end of the DNA component. We then used a KinTek RQF-3 (a rapid quench-flow instrument) to mix equal ratios of the incoming nucleotide triphosphate of interest and 10 mM MgCl2 with the existing mix of tcTERT and its DNA:RNA hybrid substrate. Reactions were run at 37\u00b0C and quenched at various timepoints (ranging from 10 ms to 700 s) with 100 mM EDTA pH 7.5. In each case, the conditions used for each reaction were: 25 mM TRIS pH 7.5, 0.05 mg mL\u22121 Bovine Serum Albumin, 1 mM dithiothreitol, 10% glycerol, 200 mM KCl, 1 \u03bcM tcTERT, 100 nM annealed DNA:RNA hybrid substrate, and varying concentrations of the nucleotide triphosphate of interest. The samples were transferred to a DNA gel loading buffer, containing 100 mM EDTA, 80% deionized formamide, 0.25 mg ml\u22121 bromophenol blue and 0.25 mg ml\u22121 xylene cyanol. For the generation of data sets that had a minimum time point of 12 s or greater, a LabDoctor heating block was used in lieu of the KinTec RQF-3, and quenching was accomplished using a solution of DNA gel loading buffer. These mixes were then incubated at 95\u00b0C for 5 mins and loaded onto a 21% denaturing polyacrylamide gel. These gels were run at 700 V, 60 A, and 30 W at 30\u00b0C in order to separate the reaction product from its substrate.\n\nGels were scanned and imaged using a GE Typhoon FLA 9500 imager, and the ratios of product to substrate were quantified using ImageJ (RRID:SCR_003070) (Schneider et al., 2012). Means and standard deviations were taken from at least three technical replicates were calculated and graphed using KaleidaGraph (RRID:SCR_014980). Plots of product formation over time were fit to the exponential Equation 1 to determine kobs values:\n\n$$\nP=A(1-e^{-k_{obs}t})\n$$\n\n[P] is the concentration of the product, A is the target engagement (amplitude), and t is the reaction time. After kobs values were determined for multiple nucleotide triphosphate concentrations, the data was replotted to compare kobs to concentration of nucleotide triphosphate, and fit to Equation 2:\n\n$$\nk_{obs}=\\frac{k_{pol}[NTP]}{K_{d}+[NTP]}\n$$\n\nkpol represents the theoretical maximum value of kobs, and [NTP] represents the concentration of the nucleotide of interest.\n\n### Telomerase expression\n\nHEK293T cells were used to overexpress hTR and 3\u00a0\u00d7\u00a0FLAG tagged human telomerase reverse transcriptase (hTERT) genes in pSUPER-hTR and pVan107, respectively. Cells were grown to 90% confluency in Dulbecco\u2019s modified Eagle\u2019s medium (Gibco) supplemented with 10% High Quality FBS (Hyclone) and 1% penicillin-streptomycin (Corning) at 37\u00b0C and 5% CO2. Cells were transfected with 10 \u03bcg of pSUPER-hTR plasmid and 2.5 \u03bcg of pVan107 hTERT plasmid diluted in 625 \u03bcl of Opti-MEM (Gibco) using 25 \u03bcl of Lipofectamine 2000 (ThermoFisher) diluted in 625 \u03bcl of Opti-MEM. Cells were cultured for 48 hr post-transfection, and then were trypsinized and washed with phosphate-buffered saline and lysed in CHAPS lysis buffer buffer (10 mM Tris-HCl, 1 mM MgCl2, 1 mM EDTA, 0.5% CHAPS, 10% glycerol, 5 mM \u03b2-mercaptoethanol, 120 U RNasin Plus (Promega), 1 \u03bcg/ml each of pepstatin, aprotinin, leupeptin and chymostatin, and 1 mM AEBSF) for 30 min at 4\u00b0C. Cell lysate supernatant was then flash frozen and stored at \u221280\u00b0C.\n\n### Telomerase purification\n\nTelomerase was purified via the 3xFLAG tag on hTERT encoded pVan107 using ANTI-FLAG M2 affinity gel agarose beads (Sigma Aldrich), as described previously with some modification (Fouquerel et al., 2016). An 80 \u03bcL bead slurry (per T75 flask) was washed three times with 10 volumes of 1X human telomerase buffer in 30% glycerol with 1 min centrifugation steps at 3500 r.p.m. at 4\u00b0C. The bead slurry was added to the lysate and nutated for 4\u20136 hr at 4\u00b0C. The beads were harvest by 1 min centrifugation at 3500 r.p.m, and washed 3X with 1X human telomerase buffer with 30% glycerol. Telomerase was eluted from the beads using 2x the bead volume of 250 \u03bcg/mL 3X FLAG peptide (Sigma Aldrich) in 1X telomerase buffer with 150 mM KCl. The bead slurry was nutated for 30 min at 4\u00b0C. The eluted telomerase was collected using Mini Bio-Spin Chromatography columns (Bio-Rad). Samples were flash frozen and stored a \u221280\u00b0C.\n\n### 32P-end-labeling of DNA primers\n\n50 pmol of PAGE purified DNA primer GGTTAGGGTTAGGGTTAG (IDT) was labeled with \u03b3\u221232P ATP (Perkin Elmer) using T4 polynucleotide kinase (NEB) in 1X PNK Buffer (70 mM Tris-HCl, pH 7.6, 10 mM MgCL2, 5 mM DTT) in a 20 uL reaction volume. The reaction was incubated for 1 hr at 37\u00b0C followed by heat inactivation at 65\u00b0C for 20 min. G-25 spin columns (GE Healthcare) were used to purify the end labeled primer.\n\n### Telomerase activity assay\n\nThe telomerase assay was as previously described. Reactions contained 1x human telomerase buffer, 5 nM of 32P-end-labeled primer and 50 \u03bcM dNTP or rNTP mix as indicated in the figure legends. Each reaction was performed with four biological replicates. The reactions were started by the addition of 3 \u03bcL of immunopurified telomerase eluent, incubated at 37\u00b0C for a specified time course, then terminated with 2 \u03bcL of 0.5 mM EDTA and heat inactivated at 65\u00b0C for 20 min. An equal volume of loading buffer (94% formamide, 0.1\u00a0\u00d7\u00a0Tris borate-EDTA [TBE], 0.1% bromophenol blue, 0.1% xylene cyanol) was added to the reaction eluent from the G-25 spin column. The samples were heat denatured for 10 min at 100\u00b0C and loaded onto a 14% denaturing acrylamide gel (7M urea, 1x TBE) and electrophoresed for 90 min at constant 38W. Samples were imaged using a Typhoon phosphorimager (GE Healthcare). Percent primer extension was quantitated using ImageQuant (RRID:SCR_014246).\n\n### Crystallographic statistics\n\nResolution of our crystal structures was determined using correlation coefficients (CC1/2), with the highest resolution shell containing a CC1/2 value of greater than 0.3 (Supplementary file 2, Table 2a). During refinement, the statistics of Rwork and Rfree, as calculated by PHENIX, were used to identify a model\u2019s fit to electron density. See Supplementary file 2, Table 2a for more details of these parameters for each dataset.\n\n### Data resources\n\nAccession numbers for models reported are PDB: 6USO, 6USP, 6USQ, and 6USR.\n",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "362ea555-28ca-4282-b743-9cc6efc8b0e7",
+      "submission_id": "5be08ec4-d0c7-4dc5-9382-6db7444e63ad",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maria Spies, University of Iowa United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55438.sa1](https://doi.org/10.7554/eLife.55438.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe reviewers and the reviewing editor agreed that this work is significant because it is not known how telomerase selects the correct nucleotide for insertion into the telomeric repeat from a pool of nucleotide with various sugars and base pairing properties. This work is an important advance defining (at least in vitro) nucleotide selection by telomerase through the first high resolution crystal structures of Tribolium castaneum telomerase reverse transcriptase (TERT) throughout its catalytic cycle and characterization of the Tribolium and human TERT kinetics. The authors solved the three structures of Tribolium TERT in complex with a DNA/RNA duplex with 1 nucleotide (nt) overhang, the same duplex with a non-hydrolyzable analog of dGTP and a product DNA/RNA duplex. The most important new finding was that there is a steric gate that allows TERT to discriminate dNTPs from rNTPs. The authors show that this residue (Y717) serves similar functions in human telomerase.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mechanisms of nucleotide selection by telomerase\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Cynthia Wolberger as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers and the reviewing editor agreed that this work is significant because it is not known how telomerase selects the correct nucleotide for insertion into the telomeric repeat from a pool of nucleotide with various sugars and base pairing properties. This work is an important advance defining (at least in vitro) nucleotide selection by telomerase through the first high resolution crystal structures of Triboliumcastaneum telomerase reverse transcriptase (TERT) throughout its catalytic cycle and characterization of the Tribolium and human TERT kinetics. The authors solved the three structures of Tribolium TERT in complex with a DNA/RNA duplex with 1 nucleotide (nt) overhang, the same duplex with a non-hydrolyzable analog of dGTP and a product DNA/RNA duplex. The most novel finding was a steric gate which allows TERT to discriminate dNTPs from rNTPs and the authors show that this residue (Y717) serves similar functions in human telomerase.\n\nThe reviewers and the reviewing editor, however feel that there are insufficient discussion and comparison with other structural and biochemical work, especially in the light of similarity between these new reported structures and those published by Gillis et al., 2008 and Mitchell et al., 2010, with the product state being almost the same as that reported by Mitchell et al., 2010. There is also a question of state I designation that needs to be addressed experimentally.\n\nEssential revisions:\n\nSignificant revisions that will require new experiments:\n\nThe main concern of the reviewers was related to \"state I\" designation. The authors chose a substrate where the RNA primer has just one 3' nucleotide overhang, perhaps to prevent subsequent cycles of catalysis. But since tcTERT uses RNA primers with up to 6 nt overhang, it is conceivable that the template-TERT conformation, especially the RNA-interacting residues could be very different between 1 and 6 templating bases. In a natural telomerase RNP, the RNA template threads through the TERT ring. The reviewers questioned whether \"state I\" described in the paper with only 1 nt overhang truly represents state I. In the recent Tetrahymena EM structure at 4.8 \u00c5 (Jiang et al., Science 2018), a stretch of the locked-DNA substrate is bound to the RNA template, which may be more representative of state I in the cycle. For the main conclusions of this paper to be valid, the authors need to provide a new structure of state I with the 6 nt overhang RNA primer (preferred) or show that the structure they have behaves the same way as State I.\n\nOther significant revisions:\n\n1) Wu et al., (EMBO 2017) extensively characterized how the DNA substrate is handled during each cycle of repeat synthesis and suggested a more detailed catalytic cycle than what is proposed in Figure 1 here. It involved partial duplex melting before the synthesis reaches the template 5' end, allowing translocation to occur. It has also been shown that the kinetics of the addition of each nt within each telomeric repeat is not the same (Chen et al., 2018). So far the structures and kinetics have only been done with one single addition of dGTP in this work, which will be different for other nucleotides of the repeat. This point needs to be carefully addressed.\n\n2) The authors identified critical residues for the catalytic activity and fidelity, revealing similarities and differences with other DNA polymerases. This said, while Tribolium TERT provides a good model system for studying TERT structure, it lacks the TEN domain and a large part of the IFD, which have been shown to be crucial for TERT activity and processivity in human and Tetrahymena. This major difference and whether the kinetics observations can be generalized to other telomerases warrants a discussion.\n\n3) The Y717 steric gate is required for discriminating dNTPs from rNTPs, which is nicely shown in the human telomerase case. There is indeed a correlation between the number nucleotide in the repeat and the rate of incorporation. However, it is intriguing that the enzyme is still able to incorporate a couple of repeats with rATP. This suggests that in the human case the rATP in this position can be tolerated to some extent. Besides the sugar gate, could the base identity have some effects too?\n\n4) The description of critical residues surrounding RNA as well as incoming nucleotide is often too vague. More modeling or description is needed. For instance, how does R194 relocation/move between different state?\n\n5) Please provide details to those who are not familiar with T. casteneum telomerase such as the TERT and TR molecular weights and how they differ from human or mouse telomerase. Also the authors should elaborate more on the TR version for T. casteneum. We assume as readers that the authors could not co-crystalize with \"tcTR\" for similar reasons as the field is not able to crystalize human hTR + hTERT. Please provide some background on that (perhaps in the Introduction).\n\n6) It seems that the authors generated the RNA:DNA hybrid substrate prior to incubating with tcTERT. What was the reason for this? Could they incubate the RNA 16-mer with tcTERT to allow that complex to assemble and then add the 15-mer complimentary DNA substrate? Would they see the same results? Technically speaking the substrate for telomerase is the DNA (nucleotide or single stranded). The RNA is a part of the enzymatic complex.\n\n7) Subsection \u201cProduct complex\u201d. It makes sense that there are minimal rearrangements since it could be predicted that the majority of movement is in the RNA subunit of telomerase (which is missing in this model). However, a key question is to know how it stays on and translocates after a full hexameric repeat is added. The authors may want to review a recent paper (J. Biol. Chem., 294(30):11579-11588, 2019). This work provides a more macro look at the telomerase catalytic cycle that may provide some insights into the present studies.\n\n8) Please elaborate on the chemistry step vs nucleotide binding step.\n\n9) Subsection \u201cThe steric gate of telomerase\u201d paragraph three. Please include the details of the telomerase used. Was a recombinant telomerase with 3xFLAG tag and overexpressed hTR used? This is important as we have now seen that the tags used for telomerase play a role for in-vitro and in-vivo activity.\n\n10) Figure 5C. If you generated a custom single-stranded substrate with dNTPs and rNTPs, would you even lose that first extension? Maybe an experiment like this will test the assumption that it \"may inhibit the telomerase translocation step.\"\n\n11) Subsection \u201cThe steric gate of telomerase\u201d paragraph four. rGTP displayed the greatest inhibition. Is this because 3Gs are in the hexameric repeat or is this due to something else? Some discussion on this would be helpful.\n\n12) While all alterations resulted in reduction of telomere extension by telomerase, did any alterations tested enhance telomere extension (e.g. decreased pausing, improved processivity etc). This should be mentioned in the Discussion.\n\n13) Any evidence in the current series of experiment that the alterations of inserted ribonucleotides causes DNA damage or lack of shelterin protection. While this has been shown by others in cells using altered nucleotide insertion into telomeres, there are no cell-based studies in the present studies to confirm or progress much of the speculation in the Discussion since all experiments in the present studies use a somewhat artificial in vitro (test tube) approach. For example, do altered ribonucleotides persist in telomeres and is there any evidence that RER removes them? Also, what is the evidence that a single misinsertion every 10kb would prevent shelterin binding or disrupt G-quadruplex stability? Even with these concerns, the studies are important to help future studies confirm and extend these finding.\n",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bb2797b7-e6a3-4cfa-b7b2-36fe42d31e30",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C1",
+      "claim": "Telomerase extends telomere sequences at chromosomal ends to protect genomic DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomerase extends telomere sequences at chromosomal ends to protect genomic DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract describing the function of telomerase, supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "a010ec67-3ef4-4e6d-a3a9-b534d7b18dc3",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C2",
+      "claim": "Structures of Tribolium castaneum telomerase reverse transcriptase (TERT) throughout its catalytic cycle were determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we determined structures of Tribolium castaneum telomerase reverse transcriptase (TERT) throughout its catalytic cycle and mapped the active site residues responsible for nucleoside selection, metal coordination, triphosphate binding, and RNA template stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes structural determination work performed by the authors, as evidenced by crystallographic data and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "7bc7871b-9f1e-4faa-be2b-96c301c0e05e",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C3",
+      "claim": "TERT inserts a mismatch approximately 1 in 10,000 insertion events.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that TERT inserts a mismatch or ribonucleotide ~1 in 10,000 and ~1 in 14,000 insertion events, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by pre-steady-state kinetic measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "c89f2856-e3e3-4dd7-99ee-2e6d5c646cf3",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C4",
+      "claim": "TERT inserts a ribonucleotide approximately 1 in 14,000 insertion events.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that TERT inserts a mismatch or ribonucleotide ~1 in 10,000 and ~1 in 14,000 insertion events, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by pre-steady-state kinetic measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "c5c4d4d7-6bc2-4672-a982-8bcbe39a04e8",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C5",
+      "claim": "At biological ribonucleotide concentrations, telomerase inserts approximately 40 ribonucleotides per 10 kilobases.",
+      "claim_type": "EXPLICIT",
+      "source": "At biological ribonucleotide concentrations, these rates translate to ~40 ribonucleotides inserted per 10 kilobases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from kinetic data combined with known cellular nucleotide concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "10151913-ea29-454c-bd9e-2e362d831ffa",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C6",
+      "claim": "A conserved tyrosine steric gate regulates ribonucleotide insertion into telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Human telomerase assays determined a conserved tyrosine steric gate regulates ribonucleotide insertion into telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by both tcTERT kinetic data and human telomerase activity assays showing Y256/Y717 function.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "39b47029-afa3-4dde-ace6-fbd8fcec7bcd",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C7",
+      "claim": "During every round of eukaryotic cell division, a small amount of DNA is lost from the ends of each chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "During every round of eukaryotic cell division, a small amount of DNA is lost from the ends of each chromosome (Olovnikov, 1973; Watson, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established phenomenon in cell biology, supported by citations to foundational work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "a3b2eb82-f0c9-44bf-9a6c-9fc188ac7e2f",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C8",
+      "claim": "Repetitive noncoding DNA sequences known as telomeres are found at chromosomal ends.",
+      "claim_type": "EXPLICIT",
+      "source": "First, repetitive noncoding DNA sequences, known as telomeres, are found at chromosomal ends, preventing the loss of vital genetic information during each cell division (Blackburn and Gall, 1978; Moyzis et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about telomere structure and function, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "7994e98a-b7dd-4c04-8894-77c0b708fd82",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C9",
+      "claim": "Telomerase elongates shortened telomeres at chromosomal ends using a reverse transcriptase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the ribonucleoprotein telomerase elongates shortened telomeres at chromosomal ends using a reverse transcriptase activity (Greider and Blackburn, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental property of telomerase, supported by citation to the original discovery.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "16247de1-6821-4ebf-bd1a-32b99bc0b368",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C10",
+      "claim": "Without telomere elongation, telomeres will eventually reach a critically short length, causing cells to undergo apoptosis or become senescent.",
+      "claim_type": "EXPLICIT",
+      "source": "Without elongation, telomeres will eventually reach a critically short length, causing cells to undergo apoptosis or become senescent (Hayflick and Moorhead, 1961; Meyerson, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cellular responses to telomere shortening, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "584dbef1-b770-474f-889e-a8ef8df0df9d",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C11",
+      "claim": "Approximately 90% of cancers upregulate telomerase to combat telomere shortening and enable unlimited cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular,~90% of cancers upregulate telomerase to combat telomere shortening and enable unlimited cell division, as opposed to somatic cells where telomerase is absent (Jafri et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-documented phenomenon in cancer biology, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "5bc4036c-5c9f-4280-8a04-eb9ea98b3287",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C12",
+      "claim": "Catalysis in telomerase is localized to the telomerase reverse transcriptase (TERT) subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the human telomerase holoenzyme is composed of multiple accessory subunits, catalysis is localized to the telomerase reverse transcriptase (TERT) subunit (Nguyen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to structural and functional studies of telomerase.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "eab9b617-ccd9-4b0a-99a5-f677769091be",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C13",
+      "claim": "The highest resolution structural snapshot of human telomerase is a cryo-EM structure at 8 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, the highest resolution structural snapshot of human telomerase is a cryo-EM structure at 8 \u00c5 resolution (Nguyen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the state of structural biology at the time of writing, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "208c6f70-75a2-4dde-ae26-7eb12f2e5aab",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C14",
+      "claim": "tcTERT readily fits into the cryo-EM density of hTERT.",
+      "claim_type": "EXPLICIT",
+      "source": "first, tcTERT readily fit into the cryo-EM density of hTERT and aligns well with the recent cryo-EM structure from T. thermophila, highlighting the conserved secondary structure (Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by structural alignment shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "8f19aff0-82ad-4023-bb6f-aee4e7670ce9",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C15",
+      "claim": "The active site pocket of tcTERT exhibits a high degree of sequence identity with hTERT.",
+      "claim_type": "EXPLICIT",
+      "source": "second, upon alignment with hTERT, the active site pocket of tcTERT exhibits a high degree of sequence identity (Supplementary file 1, Table 1a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence alignment data presented in Supplementary file 1, Table 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "1fc61395-21e5-4864-a47e-3cfedeec5831",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C16",
+      "claim": "tcTERT lacks the N-terminal (TEN) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "These include tcTERT lacking the N-terminal (TEN) domain and missing a portion of the insertion in fingers domain (IFD) (Supplementary file 1, Table 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural comparison between tcTERT and hTERT, documented in supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "17be21ac-f2fb-4ea7-9ea9-06bb9d3f56e5",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C17",
+      "claim": "tcTERT is missing a portion of the insertion in fingers domain (IFD).",
+      "claim_type": "EXPLICIT",
+      "source": "These include tcTERT lacking the N-terminal (TEN) domain and missing a portion of the insertion in fingers domain (IFD) (Supplementary file 1, Table 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural comparison between tcTERT and hTERT, documented in supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "d546db41-204d-40c2-876c-50e233dc2fb5",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C18",
+      "claim": "Telomerase forms a prenucleotide bound binary complex (State A1).",
+      "claim_type": "EXPLICIT",
+      "source": "First, telomerase anneals its RNA template to the end of telomeric DNA to form a binary complex (TERT:DNA, Figure 1A, state A1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the catalytic cycle description, illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "e5a93200-1859-49a2-af50-a4c636904d6b",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C19",
+      "claim": "The binary complex binds an incoming dNTP to form a ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the binary complex binds an incoming dNTP and samples for proper Watson-Crick base pairing to the RNA template (Figure 1A, state B1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the catalytic cycle description, illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "8094b071-fce1-41de-ad0b-cd2d1f4bfeee",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C20",
+      "claim": "TERT catalyzes the formation of a phosphodiester bond to extend the telomere by one nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "If the resulting ternary complex (TERT:DNA:dNTP) is in the proper orientation, TERT will catalyze the formation of a phosphodiester bond and extend the telomere by one nucleotide (Figure 1A, state C1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the chemistry step of the catalytic cycle, illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "f5c52ca3-3811-42b4-85b3-9a589981a642",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C21",
+      "claim": "Telomerase becomes inactive after two repeats but can be reactivated by intracellular telomerase-activating factors (iTAFs).",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently shown telomerase becomes inactive after two repeats, but can be reactivated by the recently discovered intracellular telomerase-activating factors (iTAFs) (Sayed et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recent finding about telomerase regulation, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "d0b50f57-f67d-43b0-8ffc-7944f57d0ee4",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C22",
+      "claim": "The prenucleotide binary complex structure was determined at 2.5 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals of this complex grew in a P3221 space group, diffracting to 2.5 \u00c5 resolution (Supplementary file 2, Table 2a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is crystallographic data from the structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "f9337b60-01e9-42b8-b681-760e14697088",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C23",
+      "claim": "TERT binds as a ring around the end of the RNA:DNA complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting structure shows TERT bound as a ring around the end of the RNA:DNA complex, with its active site positioned at the terminus of the DNA strand (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure, shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "8ea224e0-7a11-4438-a0a4-c26db070415f",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C24",
+      "claim": "Residues I196, V197, S198, G309, and R194 compose a pocket around the templating RNA base.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues I196, V197, S198, G309, and R194 compose a pocket around the templating RNA base (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure, shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "036b4668-d72c-4850-9c91-b4e3f1afbb62",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C25",
+      "claim": "Side chains from T341 and V342 coordinate the deoxyribose sugar moiety of the 3'-dA with nonpolar interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the opposite side, the 3'-OH of the primer terminal 3'-dA points towards the catalytic metal binding site, and side chains from T341 and V342 coordinate the deoxyribose sugar moiety of the 3'-dA with nonpolar interactions (Figure 1E and Supplementary file 1, Table 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure, shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "249f9a0c-c2b3-402e-8026-9c7f9224a083",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C26",
+      "claim": "The nucleoside binding group is composed of residues R194, Y256, and Q308.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleoside binding group is composed of residues R194, Y256, and Q308 (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure, shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "1d243173-10af-41b0-adc5-bf03bd8f6e60",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C27",
+      "claim": "The catalytic residues include the catalytic triad: D251, D343, and D344.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic residues include the catalytic triad: D251, D343, and D344.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation identifying the catalytic residues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "5babddd4-c2cd-4db7-a455-bcbe3fc95e79",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C28",
+      "claim": "Residues K189, A255, N369, and the backbone of K372 are in position to form interactions with the triphosphate of the incoming nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues K189, A255, N369, and the backbone of K372 are in position to form interactions with the triphosphate of the incoming nucleotide (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure, shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "8baf2419-a4b4-4a83-8fde-2cba451100a7",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C29",
+      "claim": "The ternary complex crystals grew in the P3221 space group and diffracted to 2.9 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals of this complex grew in the same P3221 space group and diffracted to 2.9 \u00c5 resolution (Supplementary file 2, Table 2a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is crystallographic data from the structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "0bded417-ec6a-4895-8bfb-a70c7599dc4e",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C30",
+      "claim": "Minimal structural rearrangements are required for TERT to bind dGpCpp, with an RMSD value of 1.52 \u00c5 between binary and ternary complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing this ternary complex to the binary state (RMSD value of 1.52 \u00c5, Figure 2A) indicates minimal structural rearrangements are required for TERT to bind dGpCpp.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative structural comparison based on crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "2ef4c1a0-af8f-4da6-bcc6-34d803c98940",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C31",
+      "claim": "Two Mg2+ ions exhibit octahedral coordination to facilitate nucleotide binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Two Mg+2 ions exhibit octahedral coordination to facilitate nucleotide binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the ternary complex crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "81d7c952-bd50-41cb-9a63-5518d1c36c1e",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C32",
+      "claim": "The catalytic metal coordinates residues D251, D343, D344, the 3'-OH of the primer terminus, and the non-bridging oxygen of the dGpCpp \u03b1-phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic metal coordinates residues D251, D343, D344, the 3'-OH of the primer terminus, and the non-bridging oxygen of the dGpCpp \u03b1-phosphate (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the ternary complex, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "223181d0-f18b-43a1-bdef-c2d323fd6a5e",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C33",
+      "claim": "The nucleotide metal coordinates the side chains of D251 and D343, the backbone carbonyl of I252, and a non-bridging oxygen on the \u03b1, \u03b2, and \u03b3 phosphates of the incoming dGpCpp.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleotide metal coordinates the side chains of D251 and D343, the backbone carbonyl of I252, and a non-bridging oxygen on the \u03b1,\u03b2, and \u03b3 phosphates of the incoming dGpCpp (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the ternary complex, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "c1431a6b-4b59-4043-bf3f-6c18f6982701",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C34",
+      "claim": "Y256 is positioned near the C2 position of the deoxyribose sugar portion of the nucleoside.",
+      "claim_type": "EXPLICIT",
+      "source": "Y256 is positioned near the C2 position of the deoxyribose sugar portion of the nucleoside, and Q308 coordinates the nucleoside component of the dGpCpp (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the ternary complex, shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "b2b72ba7-16c3-4826-a04a-a6eb54468115",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C35",
+      "claim": "Minimal structural changes are observed between the prenucleotide binary complex and the product structure, with an RMSD value of 1.04 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Both globally and within the active site, we observed minimal structural changes between the prenucleotide binary complex and the product structure (RMSD value of 1.04 \u00c5, Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative structural comparison based on crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "aa98ea1f-7fbc-4c1e-8392-ca42daac0511",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C36",
+      "claim": "TERT inserts correctly matched dGTP across from a templating rC with a kpol of 1.05 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "TERT inserts the correctly matched dGTP across from a templating rC with a kpol of 1.05 s\u22121 and a Kd for the incoming dGTP of 18.1 \u03bcM (Figure 3A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is kinetic data from pre-steady-state experiments, shown in Figure 3A,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "476624df-9f6c-4be0-9245-0ea45e72bbe8",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C37",
+      "claim": "TERT inserts correctly matched dGTP across from a templating rC with a Kd of 18.1 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "TERT inserts the correctly matched dGTP across from a templating rC with a kpol of 1.05 s\u22121 and a Kd for the incoming dGTP of 18.1 \u03bcM (Figure 3A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is kinetic data from pre-steady-state experiments, shown in Figure 3A,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "9a6d962e-56bf-4193-a8be-845c8878613a",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C38",
+      "claim": "For TERT R194A, the kpol decreased by 28-fold to 0.0369 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "For TERT R194A, the kpol decreased by 28-fold to 0.0369 s\u22121, and the Kd for dGTP increased ~5 fold to 93 \u03bcM (Figure 3\u2014figure supplement 2A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is kinetic data from pre-steady-state experiments with the R194A mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "4f1638c6-2528-4fec-be10-afef9d3490f5",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C39",
+      "claim": "For TERT R194A, the Kd for dGTP increased approximately 5-fold to 93 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "For TERT R194A, the kpol decreased by 28-fold to 0.0369 s\u22121, and the Kd for dGTP increased ~5 fold to 93 \u03bcM (Figure 3\u2014figure supplement 2A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is kinetic data from pre-steady-state experiments with the R194A mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "107bb554-0282-4040-930e-aff24cc15727",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C40",
+      "claim": "With the Q308A variant, the kpol decreased approximately 60-fold to 0.30 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "With the Q308A variant, the kpol decreased ~60 fold to 0.30 s\u22121 and the Kd for dGTP increased ~2 fold to 45 \u03bcM (Figure 3\u2014figure supplement 2B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is kinetic data from pre-steady-state experiments with the Q308A mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "9c6bba26-09b6-4cc2-aa37-23ffe8cb2943",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C41",
+      "claim": "With the Q308A variant, the Kd for dGTP increased approximately 2-fold to 45 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "With the Q308A variant, the kpol decreased ~60 fold to 0.30 s\u22121 and the Kd for dGTP increased ~2 fold to 45 \u03bcM (Figure 3\u2014figure supplement 2B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is kinetic data from pre-steady-state experiments with the Q308A mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "467168c5-5f4a-4695-a12b-ee807dc3c96d",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C42",
+      "claim": "R194 and Q308 primarily play a role in the chemistry step rather than nucleotide binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, R194 and Q308 primarily play a role in the chemistry step rather than the nucleotide binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the kinetic data showing larger effects on kpol than Kd.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "fc074877-d76d-4e12-8781-39861a042f0c",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C43",
+      "claim": "The hTERT homolog to R194 (R631) is implicated in IPF.",
+      "claim_type": "EXPLICIT",
+      "source": "As the hTERT homolog to R194 (R631, Supplementary file 1, Table 1a) is implicated in IPF, we infer that mutations at R631 likely reduce hTERT's kpol, contributing to IPF pathologies (Basel-Vanagaite et al., 2008; Diaz de Leon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations linking R631 mutations to IPF and inference from the kinetic data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "8ef4e75f-d326-42cd-8d80-1c5272bbba5e",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C44",
+      "claim": "For mismatched dATP insertion opposite templating rC, the kpol decreased 129-fold to 0.0081 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "For the mismatched insertion, the kpol decreased 129-fold to 0.0081 s\u22121 and the Kd increased 76-fold to 1.3 mM (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is kinetic data from pre-steady-state experiments measuring fidelity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "f455f31b-65a6-4dc4-bafd-49dba26687e4",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C45",
+      "claim": "For mismatched dATP insertion opposite templating rC, the Kd increased 76-fold to 1.3 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "For the mismatched insertion, the kpol decreased 129-fold to 0.0081 s\u22121 and the Kd increased 76-fold to 1.3 mM (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is kinetic data from pre-steady-state experiments measuring fidelity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "bf3ae017-7cf7-4991-871b-75a6a889caa5",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C46",
+      "claim": "Telomerase will insert the wrong nucleotide approximately 1 in 10,000 nucleotide insertion events.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting catalytic efficiencies (kpol/Kd) for a matched versus mismatched nucleotide insertion indicate telomerase will insert the wrong nucleotide ~1 in 10,000 nucleotide insertion events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the catalytic efficiency ratios obtained from kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "a31c521d-406f-4c2d-9452-6b0c2fdcef82",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C47",
+      "claim": "For rGTP insertion, the kpol decreased 281-fold to 0.0037 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "For rNTP discrimination, the kpol for inserting a rGTP decreased 281-fold to 0.0037 s\u22121 and the Kd increased 49-fold to 0.89 mM (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is kinetic data from pre-steady-state experiments measuring sugar discrimination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "78436e1d-fe56-4f8a-bd1b-5a28a0260960",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C48",
+      "claim": "For rGTP insertion, the Kd increased 49-fold to 0.89 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "For rNTP discrimination, the kpol for inserting a rGTP decreased 281-fold to 0.0037 s\u22121 and the Kd increased 49-fold to 0.89 mM (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is kinetic data from pre-steady-state experiments measuring sugar discrimination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "65314d00-8df1-432a-b120-99139caf1bd2",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C49",
+      "claim": "There is a nearly 14,000-fold decrease in the catalytic efficiency for the insertion of a rNTP compared to a dNTP.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in a nearly 14,000-fold decrease in the catalytic efficiency for the insertion of a rNTP compared to a dNTP (i.e. sugar discrimination, Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the catalytic efficiency ratios obtained from kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "7e893664-1653-45a9-bb73-a771f3e7eac5",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C50",
+      "claim": "Telomerase will insert a rNTP approximately 1 in 280 insertion events in a cellular context.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the cellular concentrations of rNTPs are around 50-fold higher on average than dNTPs, this sugar discrimination indicates telomerase will insert a rNTP ~1 in 280 insertion events in a cellular context (see discussion) (Traut, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from kinetic data adjusted for known cellular nucleotide concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "3686080e-cce6-423c-b07b-f08730a1a352",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C51",
+      "claim": "Y256 rests in the minor groove of the DNA and is in position to clash with the 2'-OH of an incoming rNTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the TERT catalytic cycle, we observed that Y256 rests in the minor groove of the DNA and is in position to clash with the 2'-OH of an incoming rNTP (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "41b9a034-48c3-4e94-9461-8249ae9cde48",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C52",
+      "claim": "For TERT Y256A inserting rGTP, the kpol increased 1,490-fold to 5.5 s\u22121 compared to WT TERT.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to WT TERT, the insertion of a matched rGTP by Y256A showed a 1,490-fold increase in kpol to 5.5 s\u22121 and a 12-fold decrease in Kd to 73 \u03bcM (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is kinetic data from pre-steady-state experiments with the Y256A mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "5d02d2aa-dc28-4001-8c4a-94c3aa0a0961",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C53",
+      "claim": "For TERT Y256A inserting rGTP, the Kd decreased 12-fold to 73 \u03bcM compared to WT TERT.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to WT TERT, the insertion of a matched rGTP by Y256A showed a 1,490-fold increase in kpol to 5.5 s\u22121 and a 12-fold decrease in Kd to 73 \u03bcM (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is kinetic data from pre-steady-state experiments with the Y256A mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "3d5df2af-35fa-416c-abca-64b1291aa8cb",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C54",
+      "claim": "For TERT Y256A inserting dGTP, the kpol is 6.6 s\u22121 and the Kd is 74 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The results for TERT Y256A inserting a matched dGTP were similar to that of the rGTP, with a kpol and Kd of 6.6 s\u22121 and 74 \u03bcM, respectively (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is kinetic data from pre-steady-state experiments with the Y256A mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "4bace463-da89-4861-a441-13be3841d8db",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C55",
+      "claim": "The sugar selectivity of TERT dropped from 14,000-fold for WT TERT to less than 2-fold for the Y256A TERT variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the sugar selectivity of TERT dropped from 14,000-fold between rGTP and dGTP for WT TERT to less than 2-fold for the Y256A TERT variant (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the catalytic efficiency ratios for WT and Y256A mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "c7fbcd18-f38b-411f-ab25-b3d9982946a0",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C56",
+      "claim": "A single Y256A substitution increased rGTP insertion efficiency by 18,000-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, a single Y256A substitution increased rGTP insertion efficiency by 18,000-fold, abolishing almost all sugar discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the change in catalytic efficiency between WT and Y256A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "034de902-6e7c-4a5b-abaf-ca0f3e895ced",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C57",
+      "claim": "Under cellular conditions, WT TERT would insert rGTP over 100-fold times less efficiently than dGTP.",
+      "claim_type": "EXPLICIT",
+      "source": "In a cellular environment, where rNTPs are at much higher concentrations than dNTPs, WT TERT would insert rGTP over 100-fold times less efficiently than dGTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from kinetic data adjusted for cellular nucleotide concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "42cd9a9d-132d-43c6-be50-b909bfb101d4",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C58",
+      "claim": "Under cellular conditions, TERT Y256A would insert rGTP 77-fold times more efficiently than dGTP.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TERT Y256A under cellular conditions would insert rGTP 77-fold times more efficiently than dGTP (Figure 4F; Traut, 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from kinetic data adjusted for cellular nucleotide concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "99ba0fec-a14a-4b09-aac6-cad917d04240",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C59",
+      "claim": "The distance from the C2 carbon of the dGpCpp to residue 256 shifted from 3.3 \u00c5 in WT TERT to 5.7 \u00c5 in TERT Y256A.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance from the C2 carbon of the dGpCpp to residue 256 shifted from 3.3 \u00c5 in WT TERT to 5.7 \u00c5 in TERT Y256A, showing that the TERT Y256A has much more room to accommodate the 2'-OH (Figure 4J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural measurement from the Y256A crystal structure compared to WT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "65d789a0-27ed-4c95-8345-2d0dc301b008",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C60",
+      "claim": "Y256 clashes with the 2'-OH of rNTPs to provide sugar discrimination and is the steric gate in telomerase.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken as a whole, these results indicate Y256 clashes with the 2'-OH of rNTPs to provide sugar discrimination and is the steric gate in telomerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the combined structural and kinetic data on Y256A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "376453c4-5ad7-4a6a-9b01-6b39f6830004",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C61",
+      "claim": "WT telomerase showed approximately 10% primer extension in the presence of dNTPs over 30 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "WT telomerase showed robust primer extension in the presence of dNTPs, with ~10% of the primer extended into product over the course of 30 min (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from human telomerase activity assays shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "9924b2cd-14f3-4a4a-b6e8-a8b075fe3ad8",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C62",
+      "claim": "With all four dNTPs, the Y717A variant reached approximately 7% primer extension in 30 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, with all four dNTPs, the Y717A variant reached ~7% primer extension in the same amount of time (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from human telomerase activity assays shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "508c66db-e9fc-4593-8396-d701203886d0",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C63",
+      "claim": "When WT telomerase was incubated with all four rNTPs, very low (<1%) primer extension was observed after 30 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when we incubated WT telomerase with all four rNTPs rather than dNTPs, we observed very low (<1%) primer extension after 30 min, suggesting that human telomerase discriminates against rNTPs, similar to tcTERT (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from human telomerase activity assays shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "883181b4-2327-4704-a906-947bfd442854",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C64",
+      "claim": "The Y717A variant showed 3-fold increased primer extension compared to WT hTERT in the presence of rNTPs.",
+      "claim_type": "EXPLICIT",
+      "source": "When we performed the same telomeric extension assay with the steric gate variant (Y717A), we observed that the primer extension was increased 3-fold compared to WT hTERT in the presence of rNTPs (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from human telomerase activity assays shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "f0515443-1d72-4b3e-98fd-6bc986ae00b9",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C65",
+      "claim": "Y717 in hTERT is the steric gate in human telomerase.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate the conserved residue Y717 in hTERT (Supplementary file 1, Table 1a) is the steric gate in human telomerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the human telomerase activity assays with Y717A mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "5a4e39bc-03aa-418e-af5c-52f3f6b0a357",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C66",
+      "claim": "The presence of rNTPs in telomere strands may inhibit the telomerase translocation step.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in both WT and Y717A telomerase, minimal insertion past the first telomeric repeat was observed, which suggests the presence of rNTPs in telomere strands may inhibit the telomerase translocation step (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the pattern of extension products in the activity assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "b66d2c8c-228f-4f03-9f74-963c10c3d3df",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C67",
+      "claim": "Telomerase processivity was reduced when one rNTP was substituted into the nucleotide mix at a time.",
+      "claim_type": "EXPLICIT",
+      "source": "By substituting one rNTP into the nucleotide mix at a time, we could determine the effects of inserting one, two, or three rNTPs inserted per repeat (with rATP, rUTP, and rGTP, respectively). In each case, telomerase processivity was reduced, with no bands evident past the second telomeric repeat (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from human telomerase activity assays shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "79a75df2-08ec-4774-9094-4b3983bce161",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C68",
+      "claim": "For the Y717A mutant telomerase, the effects of rNTPs on telomerase's processivity were much less pronounced.",
+      "claim_type": "EXPLICIT",
+      "source": "For the steric gate Y717A mutant telomerase, the effect of rNTPs on telomerase's processivity were much less pronounced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the activity assay data comparing WT and Y717A with rNTPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "6006d7e4-a2ef-45a4-9e13-4505d13c04a2",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C69",
+      "claim": "rNTPs inhibited translocation in both Y717A and WT telomerase.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, rNTPs inhibited translocation in both Y717A and WT telomerase, implying that telomerase possesses rNTP discrimination mechanisms beyond the level of single nucleotide incorporations (Figure 5E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the pattern of extension products in the activity assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "52616cf3-9c15-44d8-871f-ad6c7d9d637d",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C70",
+      "claim": "Minimal global rearrangement is required for TERT to proceed through the catalytic cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we characterized each step of the TERT catalytic cycle for single nucleotide insertion. We found that, in terms of global protein structure, minimal rearrangement is required to proceed through the catalytic cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the structural comparisons showing low RMSD values between states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "cd1f9030-cc9c-4fb9-bded-210f4297453d",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C71",
+      "claim": "TERT does not undergo global shifts from an 'open' to a 'closed' state upon nucleotide binding, unlike many other DNA polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of rearrangement contrasts many other DNA polymerases and even HIV RT, which have been shown to undergo global shifts from an 'open' to a 'closed' state upon nucleotide binding (Doubli\u00e9 et al., 1999; Sawaya et al., 1994; Schmidt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to other polymerases based on structural observations and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "ca349fb2-71d7-4d95-b84c-c863d9c47c3d",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C72",
+      "claim": "Telomerase exhibits moderate base selection fidelity, similar to X-family polymerases involved in DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "While telomerase has been shown to exhibit moderate base and position-specific effects, our results indicate that the telomerase catalytic core generally exhibits moderate base selection fidelity, similar to that of X-family polymerases involved in DNA repair (Chen et al., 2018; McCulloch and Kunkel, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the fidelity measurements and comparison to other polymerases.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "245b982e-4936-4842-86c9-371183f812b4",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C73",
+      "claim": "Telomerase inserts approximately 1 mismatch per 10 kb of telomere extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our kinetic values, we predict that telomerase inserts ~ 1 mismatch per each 10 kb of telomere extension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the fidelity measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "53d1d78a-097e-4844-b80e-a6e4286f7cc2",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C74",
+      "claim": "Telomerase does not have a proofreading domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Because telomerase does not have a proofreading domain, misinsertions created by telomerase will remain as ssDNA during telomere elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about telomerase structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "bfcb240c-90f8-40e4-b9e4-5e884114601b",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C75",
+      "claim": "The predicted error rate agrees with telomeric error rates observed using telomere sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, our predicted error rate agrees with telomeric error rates observed using telomere sequencing (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the calculated error rate to published sequencing data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "6126e3ca-df85-4477-9be8-ca03e981b507",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C76",
+      "claim": "Telomeric mismatches likely would disrupt G-quadruplex stability and inhibit shelterin protein binding.",
+      "claim_type": "EXPLICIT",
+      "source": "While the downstream consequences of telomeric mismatches have not been studied in a biological context to our knowledge, they likely would disrupt G-quadruplex stability and inhibit shelterin protein binding, as both of these phenomena are dependent on DNA sequence (Figure 6B; Burge et al., 2006; de Lange, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from known sequence-dependence of G-quadruplexes and shelterin binding, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "e9840fd1-10e3-4eed-92b0-8fbbc880973b",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C77",
+      "claim": "For every 10 kb of telomere extension, telomerase inserts approximately 40 rNTPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we predict that for every 10 kb of telomere extension, telomerase inserts ~ 40 rNTPs, which represents selectivity comparable to DNA polymerase \u03b2 and DNA polymerase \u03b4 (Brown and Suo, 2011; Cavanaugh et al., 2010; Nick McElhinny et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the sugar discrimination measurements adjusted for cellular conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "db68167f-ed91-46de-b79f-d9c5701a1481",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C78",
+      "claim": "Telomere elongation was reduced via an inhibition of the translocation step even with increased rates of ribonucleotide insertion at the single nucleotide insertion level.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments with human telomerase, we found that even with increased rates of ribonucleotide insertion at the single nucleotide insertion level, telomere elongation was reduced via an inhibition of the translocation step (Figure 5E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the human telomerase activity assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "ab906185-1354-41db-8f21-8115e3f9b715",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C79",
+      "claim": "Telomeric substrates containing ribonucleotides can prevent or reduce extension of the first repeat depending on the number and position of ribonucleotides present in the DNA template.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, previous studies have found telomeric substrates containing ribonucleotides can prevent or reduce extension of the first repeat depending on the number and position of ribonucleotides present in the DNA template (Collins and Greider, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "b2fab90f-c6c0-4639-87df-b9fb79a37026",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C80",
+      "claim": "Telomerase may pause after inserting ribonucleotides to provide an opportunity for an extrinsic proofreader or RER to remove the ribonucleotide before continuing telomeric elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that telomerase pauses after inserting ribonucleotides to provide an opportunity for an extrinsic proofreader or RER to remove the ribonucleotide before continuing telomeric elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed pausing behavior.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "db8b276f-79e8-48ec-b844-0345d243587e",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C81",
+      "claim": "Telomerase has previously been observed to halt telomeric extension after the insertion of 8-oxodeoxyguanine triphosphate (8-oxodGTP).",
+      "claim_type": "EXPLICIT",
+      "source": "Telomerase has previously been observed to halt telomeric extension after the insertion of other noncanonical nucleotides, particularly in the case of 8-oxodeoxyguanine triphosphate (8-oxodGTP) insertion (Fouquerel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "581940f4-2abf-4ba4-96b1-0e0b4115fdb3",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C82",
+      "claim": "RNA is more vulnerable to hydrolysis than DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Because RNA is more vulnerable to hydrolysis than DNA, inserted ribonucleotides are more likely to hydrolyze, which would cause a telomeric single strand break (Baumann and Cech, 2001; de Lange, 2005; Li and Breaker, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established chemical knowledge about RNA stability, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "f0b95fa1-94c4-46d3-ae18-d4eaa3c8b9fc",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C83",
+      "claim": "Inserted ribonucleotides in telomeres are more likely to hydrolyze, which would cause a telomeric single strand break.",
+      "claim_type": "EXPLICIT",
+      "source": "Because RNA is more vulnerable to hydrolysis than DNA, inserted ribonucleotides are more likely to hydrolyze, which would cause a telomeric single strand break (Baumann and Cech, 2001; de Lange, 2005; Li and Breaker, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the chemical properties of RNA and potential consequences in telomeres.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "6372dc40-30ff-4ad3-a2e3-955926d773f0",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C84",
+      "claim": "The continued presence of ribonucleotides in telomeres may alter G-quadruplex stability and disrupt shelterin protein binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The continued presence of ribonucleotides in telomeres may cause several structural aberrations, including altering G-quadruplex stability and disrupting shelterin protein binding (Fay et al., 2017; Nowotny et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural studies of ribonucleotides in DNA, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "d9daa255-6b5f-4749-8b6a-9db79ca258e6",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C85",
+      "claim": "Subtle alterations to the telomeric nucleotides have previously been shown to cause telomeric disruption in a cellular context.",
+      "claim_type": "EXPLICIT",
+      "source": "Subtle alterations to the telomeric nucleotides have previously been shown to cause telomeric disruption in a cellular context (Fouquerel et al., 2016; Mender et al., 2015; Stefl et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous cellular studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "f4eb41d1-29b6-4a6e-a7dd-7261f5025d15",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C86",
+      "claim": "The telomerase active site appears to have evolved a high degree of stringency towards noncanonical nucleotides, including both rNTPs and mismatched dNTPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in order to prevent this telomeric disruption, the telomerase active site appears to have evolved a high degree of stringency towards noncanonical nucleotides, including both rNTPs and mismatched dNTPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fidelity and sugar discrimination measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "50587b1a-5ec3-4ef0-af5e-b74fbe4056d6",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C87",
+      "claim": "The active site residues that compose the nucleotide binding pocket are 100% conserved between hTERT and tcTERT.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the residues that compose these three groups are 100% conserved between hTERT and tcTERT (Supplementary file 1, Table 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment data presented in the supplementary materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "a857d3c5-e619-4496-8db5-1405e0511bd7",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C88",
+      "claim": "Telomerase will shift registry to align the active site with the next templating base after nucleotide insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "Following insertion of the incoming nucleotide, telomerase will shift registry to align the active site with the next templating base (forming state A2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the catalytic cycle description based on established knowledge of telomerase function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "e8257737-3d75-4f32-a324-6e06f8b7e892",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C89",
+      "claim": "The core catalytic cycle repeats six times until a new telomeric repeat is added.",
+      "claim_type": "EXPLICIT",
+      "source": "This core catalytic cycle repeats six times, until a new telomeric repeat is added (Figure 1A, state C6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the known structure of telomeric repeats and the catalytic cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "03099bbc-bdf6-4a05-8077-77a857a86f2b",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C90",
+      "claim": "As telomerase approaches the end of its template, the DNA:RNA duplex at the 5' end begins to melt.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, as the telomerase approaches the end of its template, the DNA:RNA duplex at the 5' end begins to melt, enabling telomerase to either (1) translocate and anneal the RNA component to the newly extended telomeric repeat, thus allowing for additional repeat addition; or (2) dissociate from the telomeric DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of telomerase mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "65365ff8-97ca-44b3-be0f-cf23eaee65f9",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C91",
+      "claim": "For rATP insertion with WT telomerase, there was a buildup in substrates one nucleotide shorter than where the rNTP insertion would occur, composing approximately 60% of the total product formation.",
+      "claim_type": "EXPLICIT",
+      "source": "For rATP insertion with WT telomerase, we observed a buildup in substrates one nucleotide shorter than where the rNTP insertion would occur, composing ~60% of the total product formation (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the human telomerase activity assay data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "c988fc94-ef9e-492d-9f0c-ea1af2d3d852",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "claim_id": "C92",
+      "claim": "The Y717A variant did not stall at the rATP insertion event, in contrast to WT telomerase.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the WT telomerase, the Y717A variant did not stall at the rATP insertion event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the human telomerase activity assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Crystal structures of tcTERT were determined at 2.5-2.9 \u00c5 resolution throughout the catalytic cycle (prenucleotide binary, ternary, and product complexes), revealing minimal global structural rearrangements (RMSD 1.04-1.52 \u00c5) and identifying conserved active site residues responsible for nucleotide selection, metal coordination, and catalysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural claims are well-supported by crystallographic data with appropriate resolution and validation statistics. The identification of active site residues is based on direct structural observations, and the conservation with hTERT is documented through sequence alignments. The minimal conformational changes are quantified with RMSD values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "553ab776-9052-450d-b252-8c0ad1459bfa",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Pre-steady-state kinetic measurements demonstrate that tcTERT exhibits moderate base selection fidelity, inserting mismatched nucleotides at a rate of ~1 in 10,000 insertion events (kpol 1.05 s\u207b\u00b9 for correct vs 0.0081 s\u207b\u00b9 for mismatch; Kd 18.1 \u03bcM vs 1.3 mM), predicting ~1 mismatch per 10 kb of telomere extension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The fidelity measurements are supported by rigorous pre-steady-state kinetic experiments with multiple nucleotide concentrations and proper controls. The calculated error rate agrees with published telomere sequencing data (C75), providing independent validation. The lack of proofreading domain (C74) is established knowledge that supports the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "57fe954d-7cf6-4f27-b2f7-e4fdef333b75",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "tcTERT discriminates against ribonucleotide insertion with a 14,000-fold reduction in catalytic efficiency compared to dNTPs (kpol 0.0037 s\u207b\u00b9 vs 1.05 s\u207b\u00b9; Kd 0.89 mM vs 18.1 \u03bcM), translating to ~1 rNTP insertion per 280 events under cellular conditions, or ~40 ribonucleotides per 10 kb of telomere extension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sugar discrimination measurements are based on sound pre-steady-state kinetics. The extrapolation to cellular conditions appropriately accounts for the ~50-fold higher rNTP concentrations in cells (cited to Traut, 1994). The calculated insertion rates are consistent with the kinetic parameters and comparable to other DNA polymerases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "0f174af8-0050-4997-bc57-c33dad894f0e",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Y256 in tcTERT functions as a steric gate that discriminates against ribonucleotide insertion. The Y256A mutation increases rGTP insertion efficiency by 18,000-fold (kpol from 0.0037 to 5.5 s\u207b\u00b9), reducing sugar selectivity from 14,000-fold to <2-fold, with structural data showing the distance from C2 carbon to residue 256 increases from 3.3 to 5.7 \u00c5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The steric gate identification is strongly supported by converging structural and kinetic evidence. The Y256A mutation specifically abolishes sugar discrimination while maintaining dNTP insertion activity, and the structural basis (increased space for 2'-OH) is directly demonstrated. This is a classic loss-of-function experiment with clear mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "a4149a30-e454-49be-81d6-be62b0c0eadf",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Human telomerase activity assays demonstrate that Y717 (homologous to tcTERT Y256) is the steric gate in human telomerase. The Y717A variant shows 3-fold increased primer extension with rNTPs compared to WT, and rNTP incorporation inhibits telomerase translocation in both WT and Y717A variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The human telomerase experiments provide critical validation that the tcTERT findings translate to the human enzyme. The activity assays show clear differences between WT and Y717A with rNTPs vs dNTPs. The observation that rNTPs inhibit translocation even in Y717A suggests additional discrimination mechanisms beyond single nucleotide insertion, which is appropriately noted as inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "70ae8626-1005-497a-b5b1-f7b781777f1a",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Active site residues R194 and Q308 primarily affect the chemistry step rather than nucleotide binding, with R194A and Q308A mutations reducing kpol by 28-fold and 60-fold respectively, while having modest effects on Kd. The human homolog R631 is implicated in idiopathic pulmonary fibrosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The kinetic characterization of R194A and Q308A mutants clearly demonstrates their role in catalysis based on the larger effects on kpol than Kd. The connection to IPF through R631 is appropriately presented as inference based on the kinetic data and supported by citations linking R631 mutations to disease.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "398fffca-a77b-4dc4-af21-108567836867",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TERT proceeds through its catalytic cycle with minimal global structural rearrangement, contrasting with many DNA polymerases that undergo open-to-closed conformational changes upon nucleotide binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conclusion is well-supported by the low RMSD values between catalytic states (1.04-1.52 \u00c5) and appropriate comparison to other polymerases through citations. The structural data directly demonstrates the lack of large conformational changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "d064a32d-781f-4476-b186-fea2ec918329",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The telomerase active site has evolved high stringency toward noncanonical nucleotides because mismatches and ribonucleotides in telomeres would likely disrupt G-quadruplex stability, inhibit shelterin binding, and cause telomeric strand breaks through RNA hydrolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the fidelity and discrimination data are solid, the downstream consequences are largely speculative. The authors appropriately note that consequences of telomeric mismatches 'have not been studied in a biological context to our knowledge' (C76). The inferences about G-quadruplex disruption and shelterin binding are reasonable but lack direct experimental support in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "9c194a89-409b-4cdc-a117-3ecf7079012f",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Telomerase may pause after inserting ribonucleotides to allow for proofreading or ribonucleotide excision repair, similar to pausing observed after 8-oxodGTP insertion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is explicitly presented as speculation ('It is possible that...') in C80. While the pausing behavior is observed in the activity assays and previous work with 8-oxodGTP is cited (C81), the proposed mechanism for why pausing occurs remains hypothetical without direct evidence for proofreading or RER involvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    },
+    {
+      "id": "d93fb79c-9870-41f7-ba84-89729d07592c",
+      "content_id": "ce5287ac-20f4-4a6e-a9cc-5a190620262a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background information on telomerase function, the end replication problem, telomere biology, and the telomerase catalytic cycle is presented, establishing context for the experimental work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge in the field, appropriately cited and used to provide context. The descriptions of the catalytic cycle are consistent with current understanding and supported by the structural data presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:19.493358Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a010ec67-3ef4-4e6d-a3a9-b534d7b18dc3",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "d0b50f57-f67d-43b0-8ffc-7944f57d0ee4",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "f9337b60-01e9-42b8-b681-760e14697088",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "8ea224e0-7a11-4438-a0a4-c26db070415f",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "036b4668-d72c-4850-9c91-b4e3f1afbb62",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "249f9a0c-c2b3-402e-8026-9c7f9224a083",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "1d243173-10af-41b0-adc5-bf03bd8f6e60",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "5babddd4-c2cd-4db7-a455-bcbe3fc95e79",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "8baf2419-a4b4-4a83-8fde-2cba451100a7",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "0bded417-ec6a-4895-8bfb-a70c7599dc4e",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "2ef4c1a0-af8f-4da6-bcc6-34d803c98940",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "81d7c952-bd50-41cb-9a63-5518d1c36c1e",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "223181d0-f18b-43a1-bdef-c2d323fd6a5e",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "c1431a6b-4b59-4043-bf3f-6c18f6982701",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "b2b72ba7-16c3-4826-a04a-a6eb54468115",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "208c6f70-75a2-4dde-ae26-7eb12f2e5aab",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "8f19aff0-82ad-4023-bb6f-aee4e7670ce9",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "50587b1a-5ec3-4ef0-af5e-b74fbe4056d6",
+      "result_id": "99c83bbd-8bd9-4354-ba37-9c4228b93f49"
+    },
+    {
+      "claim_id": "aa98ea1f-7fbc-4c1e-8392-ca42daac0511",
+      "result_id": "553ab776-9052-450d-b252-8c0ad1459bfa"
+    },
+    {
+      "claim_id": "476624df-9f6c-4be0-9245-0ea45e72bbe8",
+      "result_id": "553ab776-9052-450d-b252-8c0ad1459bfa"
+    },
+    {
+      "claim_id": "8ef4e75f-d326-42cd-8d80-1c5272bbba5e",
+      "result_id": "553ab776-9052-450d-b252-8c0ad1459bfa"
+    },
+    {
+      "claim_id": "f455f31b-65a6-4dc4-bafd-49dba26687e4",
+      "result_id": "553ab776-9052-450d-b252-8c0ad1459bfa"
+    },
+    {
+      "claim_id": "bf3ae017-7cf7-4991-871b-75a6a889caa5",
+      "result_id": "553ab776-9052-450d-b252-8c0ad1459bfa"
+    },
+    {
+      "claim_id": "7bc7871b-9f1e-4faa-be2b-96c301c0e05e",
+      "result_id": "553ab776-9052-450d-b252-8c0ad1459bfa"
+    },
+    {
+      "claim_id": "ca349fb2-71d7-4d95-b84c-c863d9c47c3d",
+      "result_id": "553ab776-9052-450d-b252-8c0ad1459bfa"
+    },
+    {
+      "claim_id": "245b982e-4936-4842-86c9-371183f812b4",
+      "result_id": "553ab776-9052-450d-b252-8c0ad1459bfa"
+    },
+    {
+      "claim_id": "53d1d78a-097e-4844-b80e-a6e4286f7cc2",
+      "result_id": "553ab776-9052-450d-b252-8c0ad1459bfa"
+    },
+    {
+      "claim_id": "bfcb240c-90f8-40e4-b9e4-5e884114601b",
+      "result_id": "553ab776-9052-450d-b252-8c0ad1459bfa"
+    },
+    {
+      "claim_id": "a31c521d-406f-4c2d-9452-6b0c2fdcef82",
+      "result_id": "57fe954d-7cf6-4f27-b2f7-e4fdef333b75"
+    },
+    {
+      "claim_id": "78436e1d-fe56-4f8a-bd1b-5a28a0260960",
+      "result_id": "57fe954d-7cf6-4f27-b2f7-e4fdef333b75"
+    },
+    {
+      "claim_id": "65314d00-8df1-432a-b120-99139caf1bd2",
+      "result_id": "57fe954d-7cf6-4f27-b2f7-e4fdef333b75"
+    },
+    {
+      "claim_id": "c89f2856-e3e3-4dd7-99ee-2e6d5c646cf3",
+      "result_id": "57fe954d-7cf6-4f27-b2f7-e4fdef333b75"
+    },
+    {
+      "claim_id": "7e893664-1653-45a9-bb73-a771f3e7eac5",
+      "result_id": "57fe954d-7cf6-4f27-b2f7-e4fdef333b75"
+    },
+    {
+      "claim_id": "c5c4d4d7-6bc2-4672-a982-8bcbe39a04e8",
+      "result_id": "57fe954d-7cf6-4f27-b2f7-e4fdef333b75"
+    },
+    {
+      "claim_id": "e9840fd1-10e3-4eed-92b0-8fbbc880973b",
+      "result_id": "57fe954d-7cf6-4f27-b2f7-e4fdef333b75"
+    },
+    {
+      "claim_id": "3686080e-cce6-423c-b07b-f08730a1a352",
+      "result_id": "0f174af8-0050-4997-bc57-c33dad894f0e"
+    },
+    {
+      "claim_id": "41b9a034-48c3-4e94-9461-8249ae9cde48",
+      "result_id": "0f174af8-0050-4997-bc57-c33dad894f0e"
+    },
+    {
+      "claim_id": "5d02d2aa-dc28-4001-8c4a-94c3aa0a0961",
+      "result_id": "0f174af8-0050-4997-bc57-c33dad894f0e"
+    },
+    {
+      "claim_id": "3d5df2af-35fa-416c-abca-64b1291aa8cb",
+      "result_id": "0f174af8-0050-4997-bc57-c33dad894f0e"
+    },
+    {
+      "claim_id": "4bace463-da89-4861-a441-13be3841d8db",
+      "result_id": "0f174af8-0050-4997-bc57-c33dad894f0e"
+    },
+    {
+      "claim_id": "c7fbcd18-f38b-411f-ab25-b3d9982946a0",
+      "result_id": "0f174af8-0050-4997-bc57-c33dad894f0e"
+    },
+    {
+      "claim_id": "034de902-6e7c-4a5b-abaf-ca0f3e895ced",
+      "result_id": "0f174af8-0050-4997-bc57-c33dad894f0e"
+    },
+    {
+      "claim_id": "42cd9a9d-132d-43c6-be50-b909bfb101d4",
+      "result_id": "0f174af8-0050-4997-bc57-c33dad894f0e"
+    },
+    {
+      "claim_id": "99ba0fec-a14a-4b09-aac6-cad917d04240",
+      "result_id": "0f174af8-0050-4997-bc57-c33dad894f0e"
+    },
+    {
+      "claim_id": "65d789a0-27ed-4c95-8345-2d0dc301b008",
+      "result_id": "0f174af8-0050-4997-bc57-c33dad894f0e"
+    },
+    {
+      "claim_id": "10151913-ea29-454c-bd9e-2e362d831ffa",
+      "result_id": "0f174af8-0050-4997-bc57-c33dad894f0e"
+    },
+    {
+      "claim_id": "376453c4-5ad7-4a6a-9b01-6b39f6830004",
+      "result_id": "a4149a30-e454-49be-81d6-be62b0c0eadf"
+    },
+    {
+      "claim_id": "9924b2cd-14f3-4a4a-b6e8-a8b075fe3ad8",
+      "result_id": "a4149a30-e454-49be-81d6-be62b0c0eadf"
+    },
+    {
+      "claim_id": "508c66db-e9fc-4593-8396-d701203886d0",
+      "result_id": "a4149a30-e454-49be-81d6-be62b0c0eadf"
+    },
+    {
+      "claim_id": "883181b4-2327-4704-a906-947bfd442854",
+      "result_id": "a4149a30-e454-49be-81d6-be62b0c0eadf"
+    },
+    {
+      "claim_id": "f0515443-1d72-4b3e-98fd-6bc986ae00b9",
+      "result_id": "a4149a30-e454-49be-81d6-be62b0c0eadf"
+    },
+    {
+      "claim_id": "5a4e39bc-03aa-418e-af5c-52f3f6b0a357",
+      "result_id": "a4149a30-e454-49be-81d6-be62b0c0eadf"
+    },
+    {
+      "claim_id": "b66d2c8c-228f-4f03-9f74-963c10c3d3df",
+      "result_id": "a4149a30-e454-49be-81d6-be62b0c0eadf"
+    },
+    {
+      "claim_id": "79a75df2-08ec-4774-9094-4b3983bce161",
+      "result_id": "a4149a30-e454-49be-81d6-be62b0c0eadf"
+    },
+    {
+      "claim_id": "6006d7e4-a2ef-45a4-9e13-4505d13c04a2",
+      "result_id": "a4149a30-e454-49be-81d6-be62b0c0eadf"
+    },
+    {
+      "claim_id": "db68167f-ed91-46de-b79f-d9c5701a1481",
+      "result_id": "a4149a30-e454-49be-81d6-be62b0c0eadf"
+    },
+    {
+      "claim_id": "65365ff8-97ca-44b3-be0f-cf23eaee65f9",
+      "result_id": "a4149a30-e454-49be-81d6-be62b0c0eadf"
+    },
+    {
+      "claim_id": "c988fc94-ef9e-492d-9f0c-ea1af2d3d852",
+      "result_id": "a4149a30-e454-49be-81d6-be62b0c0eadf"
+    },
+    {
+      "claim_id": "9a6d962e-56bf-4193-a8be-845c8878613a",
+      "result_id": "70ae8626-1005-497a-b5b1-f7b781777f1a"
+    },
+    {
+      "claim_id": "4f1638c6-2528-4fec-be10-afef9d3490f5",
+      "result_id": "70ae8626-1005-497a-b5b1-f7b781777f1a"
+    },
+    {
+      "claim_id": "107bb554-0282-4040-930e-aff24cc15727",
+      "result_id": "70ae8626-1005-497a-b5b1-f7b781777f1a"
+    },
+    {
+      "claim_id": "9c6bba26-09b6-4cc2-aa37-23ffe8cb2943",
+      "result_id": "70ae8626-1005-497a-b5b1-f7b781777f1a"
+    },
+    {
+      "claim_id": "467168c5-5f4a-4695-a12b-ee807dc3c96d",
+      "result_id": "70ae8626-1005-497a-b5b1-f7b781777f1a"
+    },
+    {
+      "claim_id": "fc074877-d76d-4e12-8781-39861a042f0c",
+      "result_id": "70ae8626-1005-497a-b5b1-f7b781777f1a"
+    },
+    {
+      "claim_id": "52616cf3-9c15-44d8-871f-ad6c7d9d637d",
+      "result_id": "398fffca-a77b-4dc4-af21-108567836867"
+    },
+    {
+      "claim_id": "cd1f9030-cc9c-4fb9-bded-210f4297453d",
+      "result_id": "398fffca-a77b-4dc4-af21-108567836867"
+    },
+    {
+      "claim_id": "6126e3ca-df85-4477-9be8-ca03e981b507",
+      "result_id": "d064a32d-781f-4476-b186-fea2ec918329"
+    },
+    {
+      "claim_id": "f0b95fa1-94c4-46d3-ae18-d4eaa3c8b9fc",
+      "result_id": "d064a32d-781f-4476-b186-fea2ec918329"
+    },
+    {
+      "claim_id": "6372dc40-30ff-4ad3-a2e3-955926d773f0",
+      "result_id": "d064a32d-781f-4476-b186-fea2ec918329"
+    },
+    {
+      "claim_id": "d9daa255-6b5f-4749-8b6a-9db79ca258e6",
+      "result_id": "d064a32d-781f-4476-b186-fea2ec918329"
+    },
+    {
+      "claim_id": "f4eb41d1-29b6-4a6e-a7dd-7261f5025d15",
+      "result_id": "d064a32d-781f-4476-b186-fea2ec918329"
+    },
+    {
+      "claim_id": "ab906185-1354-41db-8f21-8115e3f9b715",
+      "result_id": "9c194a89-409b-4cdc-a117-3ecf7079012f"
+    },
+    {
+      "claim_id": "b2fab90f-c6c0-4639-87df-b9fb79a37026",
+      "result_id": "9c194a89-409b-4cdc-a117-3ecf7079012f"
+    },
+    {
+      "claim_id": "db8b276f-79e8-48ec-b844-0345d243587e",
+      "result_id": "9c194a89-409b-4cdc-a117-3ecf7079012f"
+    },
+    {
+      "claim_id": "bb2797b7-e6a3-4cfa-b7b2-36fe42d31e30",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "39b47029-afa3-4dde-ace6-fbd8fcec7bcd",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "a3b2eb82-f0c9-44bf-9a6c-9fc188ac7e2f",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "7994e98a-b7dd-4c04-8894-77c0b708fd82",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "16247de1-6821-4ebf-bd1a-32b99bc0b368",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "584dbef1-b770-474f-889e-a8ef8df0df9d",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "5bc4036c-5c9f-4280-8a04-eb9ea98b3287",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "eab9b617-ccd9-4b0a-99a5-f677769091be",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "1fc61395-21e5-4864-a47e-3cfedeec5831",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "17be21ac-f2fb-4ea7-9ea9-06bb9d3f56e5",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "d546db41-204d-40c2-876c-50e233dc2fb5",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "e5a93200-1859-49a2-af50-a4c636904d6b",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "8094b071-fce1-41de-ad0b-cd2d1f4bfeee",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "f5c52ca3-3811-42b4-85b3-9a589981a642",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "a857d3c5-e619-4496-8db5-1405e0511bd7",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "e8257737-3d75-4f32-a324-6e06f8b7e892",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    },
+    {
+      "claim_id": "03099bbc-bdf6-4a05-8077-77a857a86f2b",
+      "result_id": "d93fb79c-9870-41f7-ba84-89729d07592c"
+    }
+  ],
+  "comparisons": []
+}

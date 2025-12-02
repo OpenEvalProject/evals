@@ -1,0 +1,1458 @@
+{
+  "submission": {
+    "id": "010bd5a0-4fbd-4f58-97ce-47079b8ab6ae",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:28:01.561015Z",
+    "updated_at": "2025-12-02T17:28:01.561015Z"
+  },
+  "content": [
+    {
+      "id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "submission_id": "010bd5a0-4fbd-4f58-97ce-47079b8ab6ae",
+      "content_type": "manuscript",
+      "content_text": "# Structure of substrate-bound SMG1-8-9 kinase complex reveals molecular basis for phosphorylation specificity\n\n## Authors\n\n- Lukas M Langer<sup>1</sup> ([ORCID: 0000-0002-9977-2427](https://orcid.org/0000-0002-9977-2427))\n- Yair Gat<sup>1</sup> ([ORCID: 0000-0002-2338-9384](https://orcid.org/0000-0002-2338-9384))\n- Fabien Bonneau<sup>1</sup> ([ORCID: 0000-0001-8787-7662](https://orcid.org/0000-0001-8787-7662))\n- Elena Conti<sup>1</sup> ([ORCID: 0000-0003-1254-5588](https://orcid.org/0000-0003-1254-5588)) \u2020\n\n### Affiliations\n\n1. Department of Structural Cell Biology, Max Planck Institute of Biochemistry Martinsried Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nPI3K-related kinases (PIKKs) are large Serine/Threonine (Ser/Thr)-protein kinases central to the regulation of many fundamental cellular processes. PIKK family member SMG1 orchestrates progression of an RNA quality control pathway, termed nonsense-mediated mRNA decay (NMD), by phosphorylating the NMD factor UPF1. Phosphorylation of UPF1 occurs in its unstructured N- and C-terminal regions at Serine/Threonine-Glutamine (SQ) motifs. How SMG1 and other PIKKs specifically recognize SQ motifs has remained unclear. Here, we present a cryo-electron microscopy (cryo-EM) reconstruction of a human SMG1-8-9 kinase complex bound to a UPF1 phosphorylation site at an overall resolution of 2.9 \u00c5. This structure provides the first snapshot of a human PIKK with a substrate-bound active site. Together with biochemical assays, it rationalizes how SMG1 and perhaps other PIKKs specifically phosphorylate Ser/Thr-containing motifs with a glutamine residue at position +1 and a hydrophobic residue at position -1, thus elucidating the molecular basis for phosphorylation site recognition.\n\n## Introduction\n\nFamily members of phosphatidylinositol 3-kinase-related kinases (PIKKs) activate distinct signaling pathways that promote cellular survival in different environmental and endogenous stress conditions (Bareti\u0107 and Williams, 2014; Imseng et al., 2018; Lempi\u00e4inen and Halazonetis, 2009). Specifically, PIKKs oversee translation machinery in the cytoplasm (mTOR, SMG1), or regulate DNA damage repair in the nucleus (ATM, ATR and DNA-PK) (Shimobayashi and Hall, 2014; Saxton and Sabatini, 2017; Yamashita, 2013; Yamashita et al., 2001; Blackford and Jackson, 2017; El\u00edas-Villalobos et al., 2019). With the exception of the enzymatically inactive TRAPP/Tra1, which serves as a scaffold in chromatin modification complexes, all other members of the PIKK family are Ser/Thr-protein kinases, and are among the largest proteins in the eukaryotic kinome. Recent publications have revealed the organization of PIKK active sites at better than 4 \u00c5 resolution (Gat et al., 2019; Zhu et al., 2019; Yang et al., 2013; Jansma et al., 2020; Yates et al., 2020), but the key question of how members of this kinase family recognize their substrates remains unanswered.\n\nHuman SMG1 is one of the largest PIKK family members (~410 kDa) and plays a crucial role in nonsense-mediated mRNA decay (NMD), a conserved pathway that regulates mRNA stability in the cytoplasm of eukaryotic cells (Kurosaki and Maquat, 2016; Karousis and M\u00fchlemann, 2019). In its canonical surveillance function, the NMD pathway recognizes and degrades aberrant mRNAs containing premature translation termination codons, thus preventing the accumulation of truncated protein products. In addition, NMD also regulates the levels of a subset of normal, physiological transcripts, amounting to 5\u201310% of the transcriptome. In metazoans, SMG1 forms a stable complex with two additional proteins, SMG8 and SMG9, and specifically phosphorylates the RNA helicase UPF1. Phosphorylation of UPF1 is a crucial event in this pathway as it enables the recruitment of downstream NMD factors SMG5, SMG6 and SMG7, leading to ribonucleolytic cleavage of the RNA. SMG1 phosphorylates UPF1 specifically at Ser/Thr - Gln (SQ) motifs present in the unstructured N- and C-terminal regions that flank the helicase core (Yamashita et al., 2001; Denning et al., 2001). Specificity for a glutamine residue at the +1 position is shared by other PIKK family members, namely, ATM, ATR and DNA-PK kinases (Kim et al., 1999; Bannister et al., 1993). However, there is an additional layer of phosphorylation site specification. Among the 20 possible SQ motifs in UPF1, studies in vitro and in vivo have shown that only a selected few are effectively phosphorylated, including Ser1073, Ser1078, Ser1096 and Ser1116 (Yamashita et al., 2001; Ohnishi et al., 2003; Durand et al., 2016). Interestingly, these UPF1 phosphorylation sites share a Leu-Ser-Gln (LSQ) consensus sequence identical to the LSQ consensus motif identified in substrates of the ATM kinase (O'Neill et al., 2000; Kim et al., 1999). In this work, we studied the interaction between recombinant human SMG1-SMG8-SMG9 with UPF1 peptides using cryo-EM and mass spectrometry to identify the molecular basis with which SMG1, and potentially other PIKKs, recognizes specific phosphorylation sites in its substrate.\n\n## Results and discussion\n\n### Cryo-EM structure of the human SMG1-8-9 kinase complex bound to a UPF1 peptide\n\nWe used stably transfected HEK293T cells to express and purify a human wild-type SMG1-8-9 complex, as previously reported (Gat et al., 2019). The complex phosphorylated full-length recombinant UPF1 in a radioactive kinase assay (Figure 1\u2014figure supplement 1A), confirming the enzymatic activity of purified SMG1 towards its physiological substrate. We selected a frequently phosphorylated site within UPF1 (Yamashita et al., 2001), Ser1078, and used a peptide spanning residues 1074\u20131084 (hereby defined as UPF1-LSQ) for subsequent structural and biochemical analysis (Figure 1\u2014figure supplement 1B). We confirmed the ability of SMG1-8-9 to specifically phosphorylate UPF1-LSQ using a mass spectrometry-based phosphorylation assay (Figure 1\u2014figure supplement 1C and D). This assay allowed us to monitor the relative amount of phosphorylation of a specific peptide over time. As a control, phosphorylation was abolished when Ser1078 was changed to Asp (Figure 1\u2014figure supplement 1C and D). Hence, the reconstitutions used in this study recapitulate specific phosphorylation site selection.\n\nFor structure determination, we incubated SMG1-8-9 with UPF1-LSQ and AMPPNP, a non-hydrolyzable ATP analogue, and subjected the sample to cryo-EM single particle analysis. The final reconstruction reached an overall resolution of 2.9 \u00c5 (Figure 1\u2014figure supplements 2 and 3), and allowed us to further complete and refine the published model for SMG1-8-9 (Supplementary file 1; Gat et al., 2019). Briefly, SMG1 consists of an N-terminal solenoid 'arch' and a compact C-terminal 'head' region (Figure 1A and B). The C-terminal 'head' is formed by the tight interaction between the catalytic module, typical of Ser/Thr-kinases, and the so-called FAT and FATC domains (Imseng et al., 2018; Bareti\u0107 and Williams, 2014; Bosotti et al., 2000). The N-terminal \u2018arch\u2019 provides binding sites for both SMG8 and SMG9 (Figure 1A and B). As we had previously reported, SMG9 contains an unusual G-fold domain that binds ATP rather than GTP or GDP (Gat et al., 2019). The local resolution of around 3 \u00c5 allowed us to model SMG9-bound ATP in the reconstructed density, revealing the molecular basis for how the adenosine nucleotide is recognized by this unusual G-fold domain (Figure 1B and D, Figure 1\u2014figure supplement 4). Briefly, the G4 and G5 motifs responsible for the recognition of the base have rearranged to preferentially bind an adenine base rather than a guanine (Figure 1\u2014figure supplement 4).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57127/elife-57127-fig1-v2.jpg)\n\n**Figure 1.:** (A) Domain organization of SMG1, SMG8, SMG9 and UPF1. White parts are not resolved in the reconstruction. The sequence and location of UPF1-LSQ is indicated with blue text and dotted lines. (B) Segmented cryo-EM reconstruction of substrate-bound SMG1-8-9. Two different views are shown; proteins and domains are colored as in A. (C) A zoomed-in view of SMG1 showing the kinase active site with bound AMPPNP and UPF1-LSQ. Reconstructed density for UPF1-LSQ is shown as a blue mesh. (D) Zoom-in showing ATP bound to SMG9 with reconstructed density displayed as a blue mesh.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57127/elife-57127-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Radioactive phosphorylation assay using SMG1-8-9 and full-length UPF1. Coomassie-stained SDS-PAGE showing a change in migration behavior for UPF1 over time as phosphorylation proceeds. The corresponding radioactive signal is shown in the lower panel indicating an increase of UPF1 phosphorylation over time. (B) Alignment showing all SQ motifs present in UPF1 N- and C-terminus including positions \u22122 to +3. Note the high variance amongst position \u22121 residues. (C) Mass spectrometry-based phosphorylation assay with UPF1-LSQ and the indicated position 0 variations. The peptide sequence is indicated with the varying position marked as \u2018X\u2019. Error bars representing standard deviations calculated from independent experimental triplicates are shown. Phosphorylation was abolished when the phospho-acceptor residue was changed from Ser to Asp. This shows Ser1081 was not recognized for phosphorylation and confirms specificity toward the SQ motif. In addition, phosphorylation was decreased when Ser was changed to Thr, consistent with previous data for ATM, ATR and DNA-PK (Kim et al., 1999; O'Neill et al., 2000). (D). M/z spectra for representative single measurements at indicated time points of the experiment shown in C. The inset lists the expected sizes for the three peptides used in this experiment. Peaks corresponding to unphosphorylated and phosphorylated peptides are highlighted. Note the appearance and increase of intensity of peaks corresponding to phosphorylated peptides over time.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57127/elife-57127-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Coomassie-stained SDS-PAGE showing purified SMG1-8-9. The asterisk indicates contaminants. (B) Representative micrograph of the collected data set with some SMG1-8-9 particles indicated by blue circles. Scale bar \u2248 500 \u00c5. (C) Representative 2D averages of picked particles. Scale bar \u2248 100 \u00c5. (D) Spherical angular distribution of particles contributing to the final reconstruction with larger red rods indicating more prominent particle views and smaller blue rods indicating rarer particle views. (E) Map of SMG1-8-9 colored according to estimated local resolution shown in two different views as in Figure 1B. Large parts of the complex including the kinase domain and the bound UPF1 peptide are resolved to around 3 \u00c5. Important features of the map are indicated. (F) Three-dimensional FSC plot and further analysis of orientation bias. The red line represents the estimated global masked half-map FSC curve indicating a nominal overall resolution of 2.97 \u00c5 according to the gold standard FSC cut off of 0.143 (Rosenthal and Henderson, 2003). The spread of directional resolution values is defined as \u00b1 1\u03c3 (shown as dashed grey lines). Overall isotropy of the map is confirmed by a sphericity of 0.957 (out of 1) (Tan et al., 2017). (G) Model vs. map FSC plot for the real spaced refined model. (H) Model vs. map FSC plots for half map 1 (\"work\") used for real space refinement after displacing atoms of the final model (\u03c3 = 0.5 \u00c5) and half map 2 not used for refinement (\"free\"). The good agreement of the two curves indicates that no substantial overfitting took place.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57127/elife-57127-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Processing steps are indicated in blue; particle numbers of classes used for downstream processing steps (in brackets: percentage with respect to initial candidate particles) and resolutions are in black. The class selected for the 3D refinement after the last step of 3D classification is indicated by a red rectangle. Density for the unmodelled, C-terminal part of SMG8 appearing in two other 3D classes not used for the final reconstruction is highlighted in magenta. This part of SMG8 has been suggested to contribute to kinase regulation (Zhu et al., 2019).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57127/elife-57127-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Detailed view of ATP purine ring recognition by SMG9 with important residues highlighted and reconstructed density indicated. (B) Two-dimensional sketch of adenine base recognition by SMG9 shown in panel A with G motifs, key residues and distances indicated. (C) Detailed view of GTP recognition by the GTPase RAS with important residues highlighted (PDB ID 1ZVQ). (D) Two-dimensional sketch of guanine base recognition shown in panel C by RAS with G motifs, key residues and distances indicated for comparison with panel B (based on PDB ID 1ZVQ). (E) Two-dimensional sketch of the overall recognition of ATP by SMG9. The G1-G3 motifs of SMG9 coordinate the phosphate moieties of ATP, similarly to the corresponding motifs of canonical GTPases, but with an important exception, in that they lack the typical residues crucial for catalysis. Another difference with canonical G-fold is that the G4 and G5 motifs responsible for the recognition of the base have rearranged to preferentially bind an adenine base rather than a guanine. (F) Sequence alignment of G motifs of RHEB and RAS GTPases with SMG9. Residues highlighted in A are indicated by a black dot. In the G4 motif, the aspartic acid that specifically engages the guanine moiety in GTPases has diverged to an arginine residue. Instead, Asn372 in the SMG9 G4 motif has shifted so that it engages the side-chain carbonyl group to interact with the adenine amino group (compare panels A and B with C and D). In the G5 motif, the SAK consensus sequence in RAS and RHEB has diverged in SMG9, with the main-chain carbonyl and amine groups of the upstream residues, Pro432 and Met434, forming adenine-specific interactions (compare panels A and B with C and D). (G) Three-dimensional sketches of SMG9 (top) and RAS/RHEB (bottom) highlighting similarities in their overall topology. Positions of the G motifs are highlighted.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/57127/elife-57127-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Active site density reported in this study. Densities attributed to either AMPPNP or UPF1 peptide are indicated. (B) Active site density of the apo SMG1-8-9 reconstruction reported previously (EMDB 10347). (C) Overlay of the active site densities shown in A and B with the active site density reported in this study shown in transparent grey and density of apo SMG1-8-9 (EMDB 10347) shown in blue. Densities attributed to either AMPPNP or UPF-LSQ are indicated. (D) Model of IP6 and UPF1-LSQ with the corresponding density shown as a blue mesh. Colors of the model as in Figure 1. (E) Additional parts of the model with the corresponding density shown as in B.\n\nImportantly, compared to the previously published apo-SMG1-8-9 structure (Gat et al., 2019), the current reconstruction revealed extra density in the kinase active site accounting for both AMPPNP and UPF1-LSQ (Figure 1B and C, Figure 1\u2014figure supplement 5A,B and C).\n\n### Positioning of UPF1 Ser1078 in the SMG1 active site for phosphoryl transfer\n\nThe active site of SMG1 shows excellent density for residues 1075\u20131081 of UPF1-LSQ (Figure 1C, Figure 1\u2014figure supplement 5). The directionality of the bound substrate peptide is consistent with that of other kinase structures, such as CDK2, and the arrangement of key active site residues is well conserved (Figure 2\u2014figure supplement 1; Bao et al., 2011). The geometry of the catalytic loop (residues 2332 to 2340) and of the activation segment (residues 2352 to 2375) in the SMG1 kinase domain as well as orientation of important active site residues are very similar to those observed in mTOR (Figure 2\u2014figure supplement 1B), indicative of an active kinase state (Yang et al., 2013). Specific recognition of the phosphorylation site is achieved via\u00a0conserved residues contributed by the activation segment and the catalytic loop as well as by the FATC domain (Figure 2). The hydroxyl group of Ser1078, the phospho-acceptor residue in UPF1-LSQ, is positioned by residues of the catalytic loop, in particular Asp2335 and His2337 (Figure 2B and C, Figure 2\u2014figure supplement 2A and B). Consistent with the structural observations, mutation of either of the corresponding residues in SMG1, mTOR and other protein kinases results in catalytically inactive enzyme (Bao et al., 2011; Madhusudan et al., 2002; Yang et al., 2013; Brown et al., 1995; Yamashita et al., 2001; Denning et al., 2001). Therefore, the overall architecture of the substrate-bound SMG1 catalytic module corroborates the structural conservation among PIKK active sites and reveals that positioning of the substrate phospho-acceptor is achieved by residues that are shared between a wide range of protein kinases.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57127/elife-57127-fig2-v2.jpg)\n\n**Figure 2.:** (A) The structure of the entire complex is shown overlayed with transparent reconstructed density. The black box indicates the location of the kinase active site. (B) SMG1 active site with important residues shown as sticks. Activation segment and catalytic loop as indicated; the p-loop was omitted for clarity. UPF1-LSQ is shown in blue with positions of important residues highlighted. (C) Two-dimensional sketch of the SMG1 active site with key kinase-substrate interactions indicated. (D) Activation segment (pink) and catalytic loop (magenta) regions of a SMG1 sequence alignment are shown, indicating a high level of conservation across Homo sapiens, Bos taurus, Mus musculus, Gallus gallus, Xenopus laevis, Danio rerio and Caenorhabditis elegans. Key residues shown in B\u00a0are highlighted by a black dot and activation segment and catalytic loop are indicated.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57127/elife-57127-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Superposition of substrate-bound SMG1 active site with substrate-bound CDK2 active site (PDB ID, 3QHW). SMG1 catalytic loop is colored in magenta, SMG1 activation segment is in pink, CDK2 is shown in salmon and the CDK2 substrate peptide is in orange. Directionality of the substrates and important catalytic residues are indicated and colored as described above. P-loops were omitted for clarity. The SMG1 kinase contains features that have previously been associated with a model preferring the presence of a \u2018dissociative\u2019 transition state, such as a positive charge closely involved in \u03b2-phosphate coordination, namely K2155 (residue not shown) (Wang and Cole, 2014). (B) Superposition of substrate-bound SMG1 active site with nucleotide-bound mTOR active site (PDB ID, 4JSP). SMG1 active site is colored as described in panel A and mTOR is in green. Important active site residues are indicated. P-loops were omitted for clarity. (C) Close-up of the active site hydrophobic cage after superposing the model of the substrate-bound SMG1 active site with Chaetomium thermophilum Tel1ATM (PDB ID, 6SKY). SMG1 active site is colored as described in panel A and CtTel1ATM is colored in light orange. Key residues are indicated. (D) Close-up of the active site hydrophobic cage based on the superposition of SMG1 and mTOR shown in B. Color scheme as in B and important residues are indicated. View is similar to C.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57127/elife-57127-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Close-up showing how residues of the SMG1 catalytic loop coordinate Ser1078 of UPF1-LSQ. (B) Alignment of catalytic loop sequences from Homo sapiens and Xenopus laevis for all PIKKs colored according to conservation. PIKKs are grouped by phosphorylation site specificity and residues highlighted in subfigure C are indicated by a black dot.\n\n### Crucial recognition of a glutamine residue at +1 position of the UPF1 consensus motif\n\nA glutamine residue following the phospho-acceptor site is the minimal requirement for UPF1 phosphorylation by SMG1 (Figure 3A; Yamashita et al., 2001). To validate the importance of this residue, we performed a mass spectrometry-based phosphorylation assay using a series of peptides based on UPF1-LSQ. We changed the residue at position +1 in the UPF1-LSQ peptide to test the effect of different side chain properties on phosphorylation. Only wildtype UPF1-LSQ was efficiently phosphorylated by SMG1 (Figure 3B and Figure 1\u2014figure supplement 1C). In our structure, the glutamine at position +1 of UPF1-LSQ reaches into a hydrophobic cage formed by the SMG1 activation segment and FATC domain (Figure 3C). In particular, UPF1 Gln1079 stacks against Tyr3654 and Leu2365 and forms hydrogen bonds with the backbone of Val2367 (Figure 3C). The hydrophobic cage is highly conserved in other PIKKs that recognize SQ motifs (ATM, ATR and DNA-PK) but is different in mTOR (where Glu2369 is found at the equivalent position of SMG1 Leu2365) (Figure 3D). This difference is also apparent from the superposition of SMG1 with the 2.8 \u00c5 resolution structure of the ATM orthologue Chaetomium thermophilum (Ct) Tel1ATM and with mTOR (Figure 2\u2014figure supplement 1C and D; Jansma et al., 2020; Yang et al., 2013). While the geometry of the hydrophobic cage is highly similar between SMG1 and CtTel1ATM, it deviates in mTOR due to the described Leu to Glu substitution. Indeed, mTOR has been found to prefer small or non-polar residues at position +1 of its phosphorylation consensus motif (Hsu et al., 2011). Taken together, these observations provide a rationale for the difference in phosphorylation site specificity between SMG1, ATM, ATR, DNA-PK and mTOR. Intriguingly, the structural superposition with CtTel1ATM shows that its PIKK regulatory domain (PRD) places a Gln residue in the corresponding hydrophobic cage, effectively occupying the substrate Gln binding site (Figure 2\u2014figure supplement 1C). This explains the autoinhibitory function of the ATM PRD domain (Jansma et al., 2020; Yates et al., 2020). The corresponding PRD domain in SMG1 is a\u00a0~\u00a01100 amino-acid long insertion (Figure 1A) that negatively impacts its kinase activity (Deniaud et al., 2015). However, there is no ordered density for this region in neither the previous apo-structure (Gat et al., 2019) nor in the current substrate-bound structure (Figure 1A and B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57127/elife-57127-fig3-v2.jpg)\n\n**Figure 3.:** (A) Sequence logo derived from an alignment of all SQ motifs present in human UPF1 with the respective residue positions indicated. The heights of single letters correspond to the observed frequency at that position and the overall height of a stack of letters indicates the level of conservation (Figure 1\u2014figure supplement 1B and Figure 4\u2014figure supplement 2; Crooks et al., 2004). (B) Mass spectrometry-based phosphorylation assay comprising UPF1-LSQ and the indicated position +1 variations. The peptide sequence is indicated in the upper left with the varied position marked as \u2018X\u2019. Error bars representing standard deviations calculated from independent experimental triplicates are shown. (C) Zoom-in of the SMG1 active site showing the recognition of UPF1 position +1 glutamine by SMG1 residues located in the activation segment and FATC domain. Residues of interest are shown as sticks. Colors as in Figure 2. (D) Alignment of PIKK sequences from Homo sapiens and Xenopus laevis with the activation segment and FATC domain sequences shown and colored according to conservation. PIKKs are grouped by phosphorylation site specificity and residues highlighted in subfigure C are indicated by a black dot.\n\n### Preferred recognition of a leucine residue at \u22121 position of the UPF1 consensus motif\n\nPrevious results have indicated that SQ motifs preceded by a hydrophobic residue in position \u22121 are preferentially phosphorylated by SMG1 (Yamashita et al., 2001). In our model, the Leu residue at position \u22121 in the substrate forms a C-H\u22c5\u22c5\u22c5\u03c0-interaction with SMG1 Phe2215 and is further stabilized by hydrophobic interactions with SMG1 Pro2249 and Gly3656. The binding pocket is also restricted by the catalytic loop residues His2337 and Asp2339 (Figure 4A). To biochemically characterize the importance of position \u22121, we assayed a peptide library based on UPF1-LSQ, in which we varied the residue in position \u22121 to represent all those found in the 20 different SQ motifs of human UPF1. Following phosphorylation of the peptides over time, we could observe that SQ motifs carrying a hydrophobic residue in position \u22121 were more efficiently phosphorylated. Notably, a Leu elicited the highest phosphorylation rate (Figure 4B). An end-point measurement experiment using single peptides confirmed these observations (Figure 4\u2014figure supplement 1). We conclude that a Leu at position \u22121 is optimal for the interaction with SMG1 at the structural level. This is reflected at the biochemical level, whereby decreasing hydrophobicity of the residue at the \u22121 position negatively affects phosphorylation efficiency.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57127/elife-57127-fig4-v2.jpg)\n\n**Figure 4.:** (A) Recognition of position -1 residue of UPF1-LSQ by SMG1. Important residues are shown as sticks and colored as in Figure 2. (B) Mass spectrometry-based phosphorylation assay with UPF1-LSQ and derivatives varied in position -1. The peptide sequence is indicated in the upper left with the varying position marked as \u201cX\u201d. Error bars representing standard deviations calculated from independent experimental triplicates are shown and curves are colored according to hydrophobicity of the position -1 residue (Eisenberg et al., 1984). The most hydrophobic peptides are in blue while non-hydrophobics are in red. (C) Final time points of experiment shown in B. Peptides grouped and colored according to the location of the respective position -1 residue in UPF1 N- or C-terminus. Individual data points are shown as circles and error bars representing standard deviations are indicated. (D) Mass spectrometry-based phosphorylation assay with UPF1 N-terminus phosphorylation site 28 and the indicated position -1 variation. The peptide sequence is shown in the upper left with the varied position marked as \u201cX\u201d. Error bars represent standard deviations resulting from independent experimental triplicates. A tyrosine residue was added to the C-terminal end of the wildtype sequence to increase absorbance at $\\lambda$ = 280 nm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57127/elife-57127-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Mass spectrometry-based end-point measurements of single peptides combined with a control. Data points corresponding to one experiment are shown in the same color. One preferred (LSQ) and two suboptimal (DSQ, KSQ) motifs were chosen to evaluate how the absence of more optimal, competing motifs affects phosphorylation efficiency toward single peptides. The results indicate that decreased phosphorylation of peptides with non-hydrophobic position \u22121 residues is not only caused by competition with more optimal substrates (compare assay shown in Figure 4B). A peptide with the sequence QPELDQDSYLG was used as a control in all three experiments. Reactions were quenched and analyzed after 80 min. The peptide sequence is shown with the varied position marked as \u2018X\u2019 (B) Mass spectrometry-based phosphorylation assay with UPF1-LSQ and derivatives varying in position +2. The peptide sequence is indicated with the varying position marked as \u2018X\u2019. Error bars representing standard deviations calculated from independent experimental triplicates are shown.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57127/elife-57127-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The alignment is colored according to conservation. (A) Sequence alignment of UPF1 N-terminus. SQ motifs are highlighted by orange boxes with the phosphorylation site position indicated on top. (B) As in A, but for UPF1 C-terminus and using red color to indicate SQ motifs. Location and range of UPF1-LSQ are indicated.\n\nInterestingly, further analysis of the final time points in the time course phosphorylation experiment showed that the SQ motifs that carry rather hydrophobic residues at the \u22121 position (and are therefore more efficiently phosphorylated) reside exclusively in the UPF1 C-terminus (Figure 4C, Figure 4\u2014figure supplement 2). To validate our hypothesis on the importance of position \u22121 hydrophobicity, we turned to a known phosphorylation site in the N-terminus, Thr28. We tested whether SMG1-8-9 phosphorylation activity toward this motif could be enhanced by changing the residue at position \u22121 from the naturally occurring Asp to a Leu. Indeed, mutating the residue upstream of this SQ motif (Asp27Leu) resulted in a gain-of-function effect in the phosphorylation assay (Figure 4D). These findings are in agreement with data for ATM and ATR (Kim et al., 1999), although the residues involved in the recognition of UPF1 Leu1077 have diverged, suggesting that the details of \u22121 recognition will differ in other PIKKs. Finally, we do not observe extensive interactions between SMG1 and the peptide residues preceding or following the LSQ motif in our structure. Consistently, we did not detect a marked effect on phosphorylation in a time course experiment where we changed the residue at position +2 of UPF1-LSQ (Figure 4\u2014figure supplement 1B).\n\n### Conclusions\n\nIn this manuscript, we report the first structure of a substrate-bound PIKK active site, thereby revealing the basis for phosphorylation site selection by SMG1 and other PIKK family members. The results elucidate the mechanism of phospho-acceptor recognition, and explain the specificity for Ser-containing substrates with a glutamine downstream residue at position +1 and an upstream hydrophobic residue at position \u22121 (particularly Leu). These findings can be extrapolated to other PIKK members, such as ATM and ATR, and suggest a specific mechanism for PRD function by acting as a pseudosubstrate. Our results provide molecular insights into a key step of the NMD pathway. Whether phosphorylation of full-length UPF1 by SMG1 involves additional elements of recognition and/or additional levels of regulation will be a subject for future studies.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>SMG1</td>\n      <td>Shigeo Ohno lab</td>\n      <td>Uniprot Q96Q15</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>SMG8</td>\n      <td>Shigeo Ohno lab</td>\n      <td>Uniprot Q8ND04</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>SMG9</td>\n      <td>Shigeo Ohno lab</td>\n      <td>Uniprot Q9H0W8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21 Star (DE3) pRARE</td>\n      <td>EMBL Heidelberg Core Facility</td>\n      <td></td>\n      <td>Electrocompetent cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>UPF1- LSQ (peptide 1078) and derivatives, UPF1- peptide 28 and derivatives</td>\n      <td>in-house as described in the Materials\u00a0and\u00a0methods section</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>AMPPNP</td>\n      <td>Sigma-Aldrich</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ATP</td>\n      <td>Sigma-Aldrich</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION</td>\n      <td>doi: 10.7554/eLife.42166</td>\n      <td>RELION 3.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cryosparc</td>\n      <td>doi: 10.1038/nmeth.4169</td>\n      <td>Cryosparc2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CtfFind</td>\n      <td>doi: 10.1016/j.jsb.2015.08.008</td>\n      <td>CtfFind4.1.9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cryosparc</td>\n      <td>doi: 10.1038/nmeth.4169</td>\n      <td>Cryosparc2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>UCSF, https://www.cgl.ucsf.edu/chimera/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF ChimeraX</td>\n      <td>UCSF, https://www.rbvi.ucsf.edu/chimerax/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>COOT</td>\n      <td>http://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>https://www.phenix-online.org/</td>\n      <td>PHENIX 1.17</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL</td>\n      <td>PyMOL Molecular Graphics System, Schrodinger LLC</td>\n      <td>PyMOL 2.3.2</td>\n      <td>https://www.pymol.org/</td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nThe SMG1-SMG8-SMG9 complex was expressed and purified as previously described (Gat et al., 2019). Briefly, a pool of HEK293T cells (obtained from ATCC) stably expressing full length SMG1 (N-terminally fused to a TwinStrep-tag and a 3C protease cleavage site), SMG8 and SMG9 was established using the piggybac method by initially transfecting the cells using polyethylenimine (Yusa et al., 2011; Li et al., 2013). The source cells were authenticated by genotyping (Eurofins) and tested negative for mycoplasma contamination (LookOut Mycoplasma PCR Detection Kit, Sigma-Aldrich). For SMG1-SMG8-SMG9 expression, cultures were adjusted to a density of 1 \u00d7 106 cells per mL in FreeStyle 293 Expression Medium (Gibco, Thermo Fisher Scientific). The cells were induced by addition of doxycycline and were harvested 48 hr after induction. After lysis by douncing the cells in 1xPBS, 1 mM MgCl2 and 1 mM DTT supplemented with DNase I, Benzonase and EDTA-free cOmplete Protease Inhibitor Cocktail (Roche) the cleared lysate was applied to a StrepTrap HP column (Sigma-Aldrich) and the complex affinity purified using the N-terminal TwinStrep-tag on SMG1. After washing with 50 column volumes of 1xPBS, 1 mM MgCl2 and 1 mM DTT the complex was eluted using wash buffer supplemented with 2.5 mM desthiobiotin. SMG1-8-9 was further purified by size-exclusion chromatography using a Superose 6 Increase 10/300 GL column (Sigma-Aldrich) equilibrated with 1xPBS, 1 mM MgCl2 and 1 mM DTT (Aekta purifier FPLC system, GE Healthcare). Purified SMG1-8-9 was concentrated up to 6 \u03bcM and stored in gel filtration buffer. To obtain full-length unphosphorylated human UPF1, the protein was expressed in Escherichia coli BL21 STAR (DE3) pRARE fused to a C-terminal 6xHis-tag cleavable with Tobacco etch virus (TEV) protease, as described before (Chakrabarti et al., 2011; Chakrabarti et al., 2014). Bacteria were grown at 37\u00b0C in TB medium shaking at 180 rpm and induced using IPTG at an OD of 2 for overnight expression at 18\u00b0C. Harvested bacteria (6000 rpm, 10 min) were lysed by sonication in lysis buffer (50 mM Tris-Cl pH 7.5, 500 mM NaCl, 10 mM Imidazole, 1 mM \u03b2-mercaptoethanol, 10% (v/v) glycerol, 2 mM MgCl2 and 0.2% (v/v) NP-40) supplemented with DNase I and EDTA-free cOmplete Protease Inhibitor Cocktail (Roche). The lysate was cleared by centrifugation (25.000 rpm, 30 min), filtered and combined with TALON resin (Takara) equilibrated with lysis buffer for gravity-flow affinity purification. After washing with 70 column volumes of lysis buffer, the protein was eluted with lysis buffer supplemented with 300 mM imidazole pH 7.5 and the eluate was combined with His-tagged TEV protease and dialyzed overnight against 20 mM HEPES pH 7.5, 85 mM KCl, 1 mM MgCl2, 10% (v/v) glycerol and 2 mM DTT. The dialyzed sample was passed over another TALON column by gravity-flow, in order to separate cleaved protein from the cleaved-off His-tag, the His-tagged TEV protease and uncleaved UPF1 protein. The flow-through of this column contained cleaved UPF1 and was loaded on a HiTrap Heparin HP column (GE Healthcare). Following binding and washing with Heparin buffer A (as for dialysis), UPF1 was eluted by a gradient increasing salt concentration from 85 mM to 500 mM over 50 column volumes (Aekta prime FPLC system, GE Healthcare). The peak corresponding to full-length UPF1 was pooled and concentrated before a final sizing step using a Superdex 200 Increase 10/300 GL column (Sigma-Aldrich) equilibrated with Heparin buffer A (Aekta purifier FPLC system, GE Healthcare). Purified full-length UPF1 was pooled and concentrated up to 30 \u03bcM using an Amicon Ultra Centrifugal Filter (50 kDa MWCO, Merck). All described protein purification steps were carried out at 4\u00b0C and all purified proteins were flash frozen in size-exclusion buffer using liquid nitrogen and stored at \u221280\u00b0C until further usage.\n\n### Cryo-EM sample preparation and data collection\n\nA sample of 0.5 \u03bcM (final concentration) purified SMG1-SMG8-SMG9 was mixed with 0.5 mM of UPF1-LSQ, 1 mM AMPPNP, 2 mM MgCl2, 2 mM DTT and 0.04% (v/v) n-octyl-beta-D-glucoside in 1xPBS and incubated for 30 min on ice. The UPF1-LSQ peptide (sequence: QPELSQDSYLG) was synthesized in-house as described for the mass spectrometry-based phosphorylation assay. A 4 \u03bcL sample was applied to a glow-discharged Quantifoil R1.2/1.3, Cu 200 mesh grid and incubated for 30 s at 4\u00b0C and approximately 100% humidity. Grids were subsequently plunge frozen directly after blotting using a liquid ethane/propane (37% ethane, temperature range when plunging: \u2212170\u00b0C to \u2212180\u00b0C) mixture and a ThermoFisher FEI Vitrobot IV set to a blot time of 3.5 s and a blot force of 4. Cryo-EM data were collected using a ThermoFisher FEI Titan Krios microscope operated at 300 kV equipped with a post-column GIF (energy width 20 eV) and a Gatan K3 camera operated in counting mode, the SerialEM software suite, and a beam-tilt based multi-shot acquisition scheme. Movies were recorded at a nominal magnification of 81.000x corresponding to a pixel size of 1.094 \u00c5 at the specimen level. The sample was imaged with a total exposure of 68.75 e-/\u00c52 evenly spread over 5.5 s and 79 frames. The target defocus during data collection ranged between \u22120.8 and \u22122.9 \u03bcm.\n\n### Cryo-EM data processing\n\nData processing was carried out using RELION 3.0 (Zivanov et al., 2018) unless stated otherwise. Beam-induced sample motions were corrected and dose-weighting was carried out using the RELION implementation of MotionCor2 (Zheng et al., 2017). Particles were picked using Gautomatch (https://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch/) and CTF estimation was done using the RELION wrapper for CtfFind4.1 (Rohou and Grigorieff, 2015). After extraction (box size: 320 pix, 1.094 \u00c5/pix) and downsampling (box size: 80 pix, 4.376 \u00c5/pix), 4,368,586 particles were submitted to two rounds of reference-free 2D classification. A subset of the cleaned candidate particles was used to generate an initial model using CryoSPARC v2 (Punjani et al., 2017). 1,524,355 selected particles were 3D classified before re-extracting 886,714 particles with original sampling followed by two additional rounds of 3D classification resulting in 481,754 final particles. All classification steps were carried out with the total amount of particles being distributed over multiple batches. After 3D auto-refinement, sharpening (b-factor\u00a0=\u00a0\u2212119.5) and Ctf refinement in RELION 3.0, the final refined map (3D auto-refinement) was again submitted to RELIONs\u2019 post-processing routine for automatic B-factor weighting and high-resolution noise substitution (b-factor\u00a0=\u00a0\u2212102.6). The final reconstruction (EMD-11063) reached an overall resolution of 2.9 \u00c5 with local resolution ranging from 2.8 \u00c5 to 4.5 \u00c5 as estimated by RELION 3.0.\n\n### Model building and refinement\n\nThe reconstructed density was interpreted using COOT (version 1.0) and our previously published model of SMG1-8-9 (PDB: 6SYT) (Emsley et al., 2010). Model building was iteratively interrupted by real-space refinements using PHENIX (version 1.17) (Adams et al., 2010; Liebschner et al., 2019). Statistics assessing the quality of the final model (PDB ID 6Z3R) were generated using Molprobity (Chen et al., 2010; Supplementary file 1). FSC curves were calculated using PHENIX and the 3D FSC online application (Tan et al., 2017). Images of the calculated density and the built model were prepared using UCSF Chimera (Pettersen et al., 2004), UCSF ChimeraX (Goddard et al., 2018) and PyMOL (version 2.3.2).\n\n### Radioactive in vitro kinase assay\n\nIn vitro kinase assays were essentially carried out as before (Gat et al., 2019). 1 \u03bcM of full-length UPF1 was mixed with 50 nM SMG1-8-9, 10mM MgCl2 and 2mM DTT in 1xPBS. The reaction was started by adding 0.5mM ATP and 0.06 \u03bcM of $\\gamma$-32P-labeled ATP. The reaction was incubated at 30\u00b0C and samples were taken at different time points to follow phosphorylation over time. The samples were immediately quenched by adding SDS-containing sample buffer and initially analyzed by SDS gel electrophoresis followed by Coomassie-staining. Phosphoproteins were subsequently detected using autoradiography and a Typhoon FLA7000 imager (GE Healthcare).\n\n### Mass spectrometry-based in vitro kinase assay\n\nAll peptides were synthesized in-house using solid-phase peptide synthesis and the quality of the product was assessed by electrospray ionization mass spectrometry (ESI MS). For the purpose of this study, peptides were dissolved in 1xPBS supplemented with 500 mM HEPES pH 7.4. Two types of experiments were carried out. Firstly, several peptides (typically comprising a library) and a control were mixed, and their individual phosphorylation ratios were determined at several time points (0, 10, 20, 40 and 80 min). Secondly, one end-point measurement experiment was carried out. In this setup, a single peptide was mixed with a control and the relative phosphorylation ratio was determined at a single, final time point (80 min). This type of experiment was used to assess whether effects on phosphorylation ratios observed in time course assays are caused by competition between several peptides for SMG1 binding. In both cases, 0.5 \u03bcM of kinase complex was combined with 0.1 mM of each peptide, 0.5 mM ATP, 20 mM MgCl2 and 2 mM DTT in 1xPBS. The reaction was started by addition of kinase and incubated at 30\u00b0C. Samples were taken at desired time points and immediately quenched after collection by adding EDTA to a final concentration of 50 mM on ice.\n\nIn order to remove kinase complex and transfer the peptides into a compatible buffer, we made use of home-made StageTips (Rappsilber et al., 2007). Poly(styrenedivinylbenzene)copolymer (SDB-XC) was washed with methanol by centrifugation before being washed again with buffer B (0.1% (v/v) formic acid, 80% (v/v) acetonitrile). Buffer A (0.1% (v/v) formic acid) was used for equilibration of the SDB-XC material. Following sorbent equilibration, the sample was applied and the tips were washed using buffer A. Finally, the sample was eluted using buffer B. Using an Agilent 1290 HPLC, typically about 5 \u03bcL of the sample in 70% (v/v) acetonitrile and 0.05% (v/v) trifluoroacetic acid were flow-injected (250 \u03bcL/min) into a Bruker maXis II ETD mass spectrometer for ESI MS time-of-flight analysis. Peptides were ionized at a capillary voltage of 4500 V and an end plate offset of 500 V. Full scan MS spectra (200\u20131600 m/z) were acquired at a spectra rate of 1 Hz and a collision energy of 10 eV. All experiments were carried out as independent experimental triplicates. Raw data files were processed using Bruker Compass DataAnalysis software. The m/z spectra were deconvoluted by maximum entropy with an instrument resolving power of 10,000. The 12C peaks corresponding to individual peptides were identified in the resulting neutral spectra and integrated, both for masses accounting for unphosphorylated and phosphorylated peptides. To calculate a relative phosphorylation ratio, the area for phosphorylated peptide was divided by the sum of phosphorylated and unphosphorylated peptide. All time points were normalized to time point 0. Means of independent experimental triplicates and error bars indicating standard deviations were visualized using Prism (GraphPad).\n",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "b6d0ac44-ea39-4bf5-9943-44ed200c594b",
+      "submission_id": "010bd5a0-4fbd-4f58-97ce-47079b8ab6ae",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Philip A Cole, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57127.sa1](https://doi.org/10.7554/eLife.57127.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study reports a high resolution structure using CryoEM of a PIKK family kinase in complex with a peptide substrate and an ATP analog. It is the first member of this family of protein kinases to be captured at atomic resolution with a peptide substrate. The structural interactions between enzyme and substrate were corroborated with very solid biochemical analysis including a range of kinase assays with various peptides. This work will serve as a model for related kinases including ATM, ATR, DNAPK, and mTOR.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structure of substrate-bound SMG1-8-9 kinase complex reveals molecular basis for phosphorylation specificity\" for consideration by eLife. Your article has been reviewed by Reviewing/Senior Editor Philip Cole and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Nikolaus Grigorieff (Reviewer #1); Kacper Rogala (Reviewer #2); Michael B Yaffe (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below, although fairly numerous, are meant to address clarity and presentation.\n\nSummary:\n\nLanger et al. elucidate a cryo-EM structure of a human PIKK family member SMG-1-8-9 in complex with a short peptide substrate (from UPF1) and a non-hydrolyzable analog of ATP, AMPPNP. This is an extension of the cryo-EM work that they did in 2019 on apo SMG-1-8-9 (Gat et al., 2019). However, this study is in fact more interesting than the previous work because it captures the SMG1 kinase in a state with its substrate peptide bound, frozen in time just before the actual act of phosphorylation. Importantly, the authors do an extensive characterization of the peptide recognition sequence, and reveal the chemical compatibility of the LSQ sequence and its derivatives for phosphorylation by SMG1. They compare the binding site of SMG1 to other members of the PIKK family and explain the observed differences between them in terms of substrate recognition. Overall, we believe that this work is novel and interesting. In general, the claims are supported by solid data, and the structure is validated with substantial biochemical work. Although we do not think additional experimental work is needed, below we make the following suggestions for revisions to strengthen the manuscript.\n\nEssential revisions:\n\n-The structure and its interpretation seem plausible. However, we wonder if using an 11-amino acid peptide as a substrate captures all the contacts relevant for the kinase specificity that the authors are interested in. Is it possible that the full UPF1 molecule makes tertiary contacts with the kinase that are important for specificity? The authors should consider this possibility and explain why they can rule this out. Related to the above point, the authors state that \"there are no extensive interactions between SMG1 and the residues preceding or following the LSQ motif in our structure.\" It is not clear how they can conclude this from their structure. If this is known from other work, they should cite it.\n\n-The authors seem to have side-stepped the other 3D classes that were generated during data processing. There are at least two classes (center top and center bottom in Figure 1\u2014figure supplement 3) that show extra density that is not present in the final reconstruction presented. That density appears to extend from SMG8's stalk and reach towards the FRB of SMG1. According to Li et al., 2019), this extra density is likely the kinase inhibitory domain (KID) of SMG8. This density also appeared in the authors' previous map of the apo SMG-1-8-9 complex (EMDB 10348), but they avoided discussing it in their previous manuscript (Gat et al., 2019). If the authors feel that delving into this would be too speculative, adding a label and a note to point out what they represent would be helpful.\n\n-A discussion regarding nucleotide binding to SMG9 and its effects on SMG8 binding and SMG1 catalytic activity is lacking. The authors in their previous work revealed a GTP/GDP nucleotide binding pocket in C. elegans SMG1 (Li et al., 2017), and then realized that human SMG9 co-purifies with bound ATP instead of GTP (Gat et al., 2019). Can human SMG1 also associate with GTP/GDP? In Figure 1\u2014figure supplement 4 of this manuscript, the authors talk extensively about the adaptations for adenine vs guanine binding. This topic appears to be rather confusing in the field, so please include a short discussion that deals with the nucleotide-binding matter, including the mutagenesis study from another SMG-1-8-9 structure paper by Li et al., 2019.\n\n-The methods are not sufficiently detailed, and it would be challenging to reproduce the authors' work by simply following them.\n\n-Figure 3A and Figure 3 legend, particularly the statement that sequence logo letter size reflects the frequency of occurrence is not technically correct. True sequence logos use bit scores that typically do not reflect the frequency of occurrence but rather indicate the information content (in bits) that is being provided by each residue in that position in terms of the informational entropy content in each position of a motif, at least as originally described by Tom Schneider and Mike Stephens in 1990. A good review of the concept is found in Crooks et al., 2004. (http://www.genome.org/cgi/doi/10.1101/gr.849004). The authors should clarify how they are using the sequence logos here.\n\n-Regarding the data in Figure 3B described in subsection \u201cCrucial recognition of a glutamine residue at +1 position of the UPF1 consensus motif\u201d, the claims of \"peptide library\" and \"systematically\" in the text go a bit beyond the data, since they are really looking at a small series of peptides, not a complete library of all residues in that position. The data is solid, and there is no need to do anything more, other than tone down the claims of this being a 'library'. We think the use of the term 'library' in Figure 4 and its description is fine, since in that case the authors really are looking at the set of all possible X-SQ sites that exist in UPF1.\n\n-The authors may want to expound a bit more on the similarity and differences in the hydrophobic cage between SMG1 and other PIKKs, particularly the Leu to Glu activation loop substitution seen in mTor (Figure 2\u2014figure supplement 1B). This is important because the optimal kinase motif for mTor is NOT SQ as it is in ATM, ATR and DNA-PK, but rather more like SF or SP (see Figure 2 in Hsu et al., 2011).\n\n-Subsection \u201cPreferred recognition of a leucine residue at -1 position of the UPF1 consensus motif\u201d and Figure 4C- presumably the point the authors are making is that C-terminal SQ motifs are better phosphorylated than the N-terminal ones because they are better matches to the hydrophocis-Ser-Gln motif. Perhaps they can state this conclusion a bit more clearly.\n\n-Similarly, it appears from Figure 2C that the Gln side chain is actually helping stabilize the activation segment conformation. Is this correct, and if so, shouldn't this be alluded to somewhere in the Results section?\n\n-Regarding the catalytic mechanism, as the authors have a (not so common) ternary complex protein kinase crystal structure containing both a peptide substrate and a nucleotide substrate, it would be nice to say a bit more about the relevance to potential phosphoryl transfer transition states. There has been a classical discussion in the field among physical organic chemists and enzymologists about whether phosphoryl transfers involving monoesters like the \u03b3 phosphate of ATP are more associative or dissociative. High resolution structures have been used to inform these discussions. For examples, please see: PMID:9408938, PMID:21513457, PMID:25399640\n",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b9758e03-e77a-4925-b01c-65e7e1570517",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C1",
+      "claim": "The cryo-EM reconstruction of human SMG1-8-9 kinase complex bound to a UPF1 phosphorylation site reached an overall resolution of 2.9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a cryo-electron microscopy (cryo-EM) reconstruction of a human SMG1-8-9 kinase complex bound to a UPF1 phosphorylation site at an overall resolution of 2.9 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The resolution is stated in the abstract and confirmed in the methods and results sections with supporting data in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "ef0aeb7d-93a1-48c1-a2c0-9e965d774fdb",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C2",
+      "claim": "This structure provides the first snapshot of a human PIKK with a substrate-bound active site.",
+      "claim_type": "EXPLICIT",
+      "source": "This structure provides the first snapshot of a human PIKK with a substrate-bound active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents structural data showing substrate binding in the active site, which is stated to be the first such observation for human PIKKs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "907756f8-f7df-40c4-ab63-89e7b32d64aa",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C3",
+      "claim": "SMG1 specifically phosphorylates Ser/Thr-containing motifs with a glutamine residue at position +1 and a hydrophobic residue at position -1.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with biochemical assays, it rationalizes how SMG1 and perhaps other PIKKs specifically phosphorylate Ser/Thr-containing motifs with a glutamine residue at position +1 and a hydrophobic residue at position -1, thus elucidating the molecular basis for phosphorylation site recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural data showing specific interactions and biochemical assays demonstrating phosphorylation specificity (Figures 3 and 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "f689fb2a-c954-4281-8948-4e329bf7262c",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C4",
+      "claim": "PIKKs oversee translation machinery in the cytoplasm (mTOR, SMG1).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, PIKKs oversee translation machinery in the cytoplasm (mTOR, SMG1), or regulate DNA damage repair in the nucleus (ATM, ATR and DNA-PK) (Shimobayashi and Hall, 2014; Saxton and Sabatini, 2017; Yamashita, 2013; Yamashita et al., 2001; Blackford and Jackson, 2017; El\u00edas-Villalobos et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "ce2adc7e-5b72-4c15-9690-f60544d583f0",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C5",
+      "claim": "PIKKs regulate DNA damage repair in the nucleus (ATM, ATR and DNA-PK).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, PIKKs oversee translation machinery in the cytoplasm (mTOR, SMG1), or regulate DNA damage repair in the nucleus (ATM, ATR and DNA-PK) (Shimobayashi and Hall, 2014; Saxton and Sabatini, 2017; Yamashita, 2013; Yamashita et al., 2001; Blackford and Jackson, 2017; El\u00edas-Villalobos et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "b4b20f70-35d9-4cb5-93c6-81bbd54b5dfb",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C6",
+      "claim": "All PIKK family members except TRAPP/Tra1 are Ser/Thr-protein kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of the enzymatically inactive TRAPP/Tra1, which serves as a scaffold in chromatin modification complexes, all other members of the PIKK family are Ser/Thr-protein kinases, and are among the largest proteins in the eukaryotic kinome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about PIKK family members.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "9151727e-7054-4488-be8e-c40c5739381d",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C7",
+      "claim": "TRAPP/Tra1 is enzymatically inactive and serves as a scaffold in chromatin modification complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of the enzymatically inactive TRAPP/Tra1, which serves as a scaffold in chromatin modification complexes, all other members of the PIKK family are Ser/Thr-protein kinases, and are among the largest proteins in the eukaryotic kinome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about TRAPP/Tra1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "1df85d00-35f0-4101-a194-ecffa63ea851",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C8",
+      "claim": "Human SMG1 is one of the largest PIKK family members (~410 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "Human SMG1 is one of the largest PIKK family members (~410 kDa) and plays a crucial role in nonsense-mediated mRNA decay (NMD), a conserved pathway that regulates mRNA stability in the cytoplasm of eukaryotic cells (Kurosaki and Maquat, 2016; Karousis and M\u00fchlemann, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The molecular weight is stated as a known property of SMG1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "1ef8a286-f91d-40a7-8ce0-5011a84af5dd",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C9",
+      "claim": "SMG1 plays a crucial role in nonsense-mediated mRNA decay (NMD).",
+      "claim_type": "EXPLICIT",
+      "source": "Human SMG1 is one of the largest PIKK family members (~410 kDa) and plays a crucial role in nonsense-mediated mRNA decay (NMD), a conserved pathway that regulates mRNA stability in the cytoplasm of eukaryotic cells (Kurosaki and Maquat, 2016; Karousis and M\u00fchlemann, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "4ec2c1e2-04a5-498f-8fe4-17300a6eaec9",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C10",
+      "claim": "NMD is a conserved pathway that regulates mRNA stability in the cytoplasm of eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Human SMG1 is one of the largest PIKK family members (~410 kDa) and plays a crucial role in nonsense-mediated mRNA decay (NMD), a conserved pathway that regulates mRNA stability in the cytoplasm of eukaryotic cells (Kurosaki and Maquat, 2016; Karousis and M\u00fchlemann, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "748f45e3-f64a-4110-8c34-94600ff0d814",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C11",
+      "claim": "In its canonical surveillance function, the NMD pathway recognizes and degrades aberrant mRNAs containing premature translation termination codons.",
+      "claim_type": "EXPLICIT",
+      "source": "In its canonical surveillance function, the NMD pathway recognizes and degrades aberrant mRNAs containing premature translation termination codons, thus preventing the accumulation of truncated protein products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about NMD function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "8c6c0170-b42f-4342-9e3d-e6faeef7e141",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C12",
+      "claim": "NMD regulates the levels of 5\u201310% of the transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, NMD also regulates the levels of a subset of normal, physiological transcripts, amounting to 5\u201310% of the transcriptome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about NMD's regulatory scope.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "8fee6e91-c1b8-48f6-a8ac-289cfadba2bc",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C13",
+      "claim": "In metazoans, SMG1 forms a stable complex with SMG8 and SMG9.",
+      "claim_type": "EXPLICIT",
+      "source": "In metazoans, SMG1 forms a stable complex with two additional proteins, SMG8 and SMG9, and specifically phosphorylates the RNA helicase UPF1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and is consistent with the experimental system used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "d7d58542-d7af-4525-8d76-dc7811f59a18",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C14",
+      "claim": "SMG1 specifically phosphorylates the RNA helicase UPF1.",
+      "claim_type": "EXPLICIT",
+      "source": "In metazoans, SMG1 forms a stable complex with two additional proteins, SMG8 and SMG9, and specifically phosphorylates the RNA helicase UPF1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and is confirmed by the experimental data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "8d825e63-a09e-46b1-a7c1-1e9b8d718e45",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C15",
+      "claim": "Phosphorylation of UPF1 is a crucial event in the NMD pathway as it enables the recruitment of downstream NMD factors SMG5, SMG6 and SMG7.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of UPF1 is a crucial event in this pathway as it enables the recruitment of downstream NMD factors SMG5, SMG6 and SMG7, leading to ribonucleolytic cleavage of the RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the NMD pathway mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "caa9e120-21cb-487e-9286-b37b0010bf7f",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C16",
+      "claim": "SMG1 phosphorylates UPF1 specifically at Ser/Thr - Gln (SQ) motifs present in the unstructured N- and C-terminal regions that flank the helicase core.",
+      "claim_type": "EXPLICIT",
+      "source": "SMG1 phosphorylates UPF1 specifically at Ser/Thr - Gln (SQ) motifs present in the unstructured N- and C-terminal regions that flank the helicase core (Yamashita et al., 2001; Denning et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "c9c28752-3233-4bae-871a-529e4194ebdf",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C17",
+      "claim": "Specificity for a glutamine residue at the +1 position is shared by other PIKK family members, namely, ATM, ATR and DNA-PK kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Specificity for a glutamine residue at the +1 position is shared by other PIKK family members, namely, ATM, ATR and DNA-PK kinases (Kim et al., 1999; Bannister et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "7fcdd3f3-f8f4-4910-97ab-9a805a5fcef9",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C18",
+      "claim": "Among the 20 possible SQ motifs in UPF1, only a selected few are effectively phosphorylated, including Ser1073, Ser1078, Ser1096 and Ser1116.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 20 possible SQ motifs in UPF1, studies in vitro and in vivo have shown that only a selected few are effectively phosphorylated, including Ser1073, Ser1078, Ser1096 and Ser1116 (Yamashita et al., 2001; Ohnishi et al., 2003; Durand et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "2c8f3657-6111-46b0-9935-6172062a7f0a",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C19",
+      "claim": "UPF1 phosphorylation sites share a Leu-Ser-Gln (LSQ) consensus sequence identical to the LSQ consensus motif identified in substrates of the ATM kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these UPF1 phosphorylation sites share a Leu-Ser-Gln (LSQ) consensus sequence identical to the LSQ consensus motif identified in substrates of the ATM kinase (O'Neill et al., 2000; Kim et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "96b6fe44-e57a-449f-adbf-ce7cbd5035c7",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C20",
+      "claim": "Purified SMG1-8-9 complex phosphorylated full-length recombinant UPF1 in a radioactive kinase assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex phosphorylated full-length recombinant UPF1 in a radioactive kinase assay (Figure 1\u2014figure supplement 1A), confirming the enzymatic activity of purified SMG1 towards its physiological substrate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "c905a496-1774-4533-8159-a7ebe79cd8a4",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C21",
+      "claim": "SMG1-8-9 specifically phosphorylates UPF1-LSQ peptide as confirmed by mass spectrometry-based phosphorylation assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the ability of SMG1-8-9 to specifically phosphorylate UPF1-LSQ using a mass spectrometry-based phosphorylation assay (Figure 1\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "97caae45-70ac-4729-bdd4-7021203401e8",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C22",
+      "claim": "Phosphorylation of UPF1-LSQ was abolished when Ser1078 was changed to Asp.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, phosphorylation was abolished when Ser1078 was changed to Asp (Figure 1\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "07b11c52-ed71-4400-8bcd-ef962a429158",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C23",
+      "claim": "SMG1 consists of an N-terminal solenoid 'arch' and a compact C-terminal 'head' region.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, SMG1 consists of an N-terminal solenoid 'arch' and a compact C-terminal 'head' region (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "d93226bc-cef8-4258-9f42-a27dc740d4b3",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C24",
+      "claim": "The C-terminal 'head' of SMG1 is formed by the tight interaction between the catalytic module and the FAT and FATC domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal 'head' is formed by the tight interaction between the catalytic module, typical of Ser/Thr-kinases, and the so-called FAT and FATC domains (Imseng et al., 2018; Bareti\u0107 and Williams, 2014; Bosotti et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural data and citations to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "79786552-5f89-462e-a405-42cd92da7d59",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C25",
+      "claim": "The N-terminal 'arch' of SMG1 provides binding sites for both SMG8 and SMG9.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal 'arch' provides binding sites for both SMG8 and SMG9 (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "d9ec65f0-f591-497d-8a7c-5130b1197c3c",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C26",
+      "claim": "SMG9 contains an unusual G-fold domain that binds ATP rather than GTP or GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "As we had previously reported, SMG9 contains an unusual G-fold domain that binds ATP rather than GTP or GDP (Gat et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by the same authors and confirmed by structural data in the current manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "dbde79bb-fd30-452b-93f6-8c11cd08425a",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C27",
+      "claim": "The local resolution of around 3 \u00c5 allowed modeling of SMG9-bound ATP in the reconstructed density.",
+      "claim_type": "EXPLICIT",
+      "source": "The local resolution of around 3 \u00c5 allowed us to model SMG9-bound ATP in the reconstructed density, revealing the molecular basis for how the adenosine nucleotide is recognized by this unusual G-fold domain (Figure 1B and D, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 1B, D, and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "a2a0c693-5ecd-4813-a32f-80b1d7acb33e",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C28",
+      "claim": "The G4 and G5 motifs of SMG9 responsible for base recognition have rearranged to preferentially bind an adenine base rather than a guanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Another difference with canonical G-fold is that the G4 and G5 motifs responsible for the recognition of the base have rearranged to preferentially bind an adenine base rather than a guanine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "d786a1ff-fd78-4f45-a7ab-ea03a0776273",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C29",
+      "claim": "The current reconstruction revealed extra density in the kinase active site accounting for both AMPPNP and UPF1-LSQ compared to the previously published apo-SMG1-8-9 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, compared to the previously published apo-SMG1-8-9 structure (Gat et al., 2019), the current reconstruction revealed extra density in the kinase active site accounting for both AMPPNP and UPF1-LSQ (Figure 1B and C, Figure 1\u2014figure supplement 5A,B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of structural data shown in Figure 1B, C, and Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "f308d62b-a9c2-4b91-ab9e-c8da4d88fbed",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C30",
+      "claim": "The active site of SMG1 shows excellent density for residues 1075\u20131081 of UPF1-LSQ.",
+      "claim_type": "EXPLICIT",
+      "source": "The active site of SMG1 shows excellent density for residues 1075\u20131081 of UPF1-LSQ (Figure 1C, Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 1C and Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "ac306720-992b-43a7-bd38-6807ab4793f5",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C31",
+      "claim": "The directionality of the bound substrate peptide in SMG1 is consistent with that of other kinase structures, such as CDK2.",
+      "claim_type": "EXPLICIT",
+      "source": "The directionality of the bound substrate peptide is consistent with that of other kinase structures, such as CDK2, and the arrangement of key active site residues is well conserved (Figure 2\u2014figure supplement 1; Bao et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural comparison shown in Figure 2\u2014figure supplement 1 and citation to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "40ed00cc-f810-41ac-8e1a-4bee5e67ea72",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C32",
+      "claim": "The geometry of the catalytic loop and activation segment in the SMG1 kinase domain is very similar to those observed in mTOR, indicative of an active kinase state.",
+      "claim_type": "EXPLICIT",
+      "source": "The geometry of the catalytic loop (residues 2332 to 2340) and of the activation segment (residues 2352 to 2375) in the SMG1 kinase domain as well as orientation of important active site residues are very similar to those observed in mTOR (Figure 2\u2014figure supplement 1B), indicative of an active kinase state (Yang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural comparison shown in Figure 2\u2014figure supplement 1B and citation to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "538f4bc2-44f2-4307-8221-015d1a66aa51",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C33",
+      "claim": "The hydroxyl group of Ser1078 is positioned by residues of the catalytic loop, in particular Asp2335 and His2337.",
+      "claim_type": "EXPLICIT",
+      "source": "The hydroxyl group of Ser1078, the phospho-acceptor residue in UPF1-LSQ, is positioned by residues of the catalytic loop, in particular Asp2335 and His2337 (Figure 2B and C, Figure 2\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 2B, C, and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "2923b622-64ff-41e9-9e72-fe250e668fe6",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C34",
+      "claim": "Mutation of Asp2335 or His2337 in SMG1, mTOR and other protein kinases results in catalytically inactive enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the structural observations, mutation of either of the corresponding residues in SMG1, mTOR and other protein kinases results in catalytically inactive enzyme (Bao et al., 2011; Madhusudan et al., 2002; Yang et al., 2013; Brown et al., 1995; Yamashita et al., 2001; Denning et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "cd222a06-470a-42be-8fdc-9657c6be1598",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C35",
+      "claim": "A glutamine residue following the phospho-acceptor site is the minimal requirement for UPF1 phosphorylation by SMG1.",
+      "claim_type": "EXPLICIT",
+      "source": "A glutamine residue following the phospho-acceptor site is the minimal requirement for UPF1 phosphorylation by SMG1 (Figure 3A; Yamashita et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to published literature and confirmed by experimental data shown in Figure 3.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "9c1ffd58-ebbe-4486-a4a5-cc978bcf91e9",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C36",
+      "claim": "Only wildtype UPF1-LSQ was efficiently phosphorylated by SMG1 when the residue at position +1 was varied.",
+      "claim_type": "EXPLICIT",
+      "source": "We changed the residue at position +1 in the UPF1-LSQ peptide to test the effect of different side chain properties on phosphorylation. Only wildtype UPF1-LSQ was efficiently phosphorylated by SMG1 (Figure 3B and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B and Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "ffad39ef-3d3f-4cb7-abee-f2a34f4456ff",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C37",
+      "claim": "UPF1 Gln1079 stacks against Tyr3654 and Leu2365 and forms hydrogen bonds with the backbone of Val2367.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, UPF1 Gln1079 stacks against Tyr3654 and Leu2365 and forms hydrogen bonds with the backbone of Val2367 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "3996b47e-9a66-40d6-a5d3-57d22f302598",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C38",
+      "claim": "The hydrophobic cage for glutamine recognition is highly conserved in other PIKKs that recognize SQ motifs (ATM, ATR and DNA-PK) but is different in mTOR.",
+      "claim_type": "EXPLICIT",
+      "source": "The hydrophobic cage is highly conserved in other PIKKs that recognize SQ motifs (ATM, ATR and DNA-PK) but is different in mTOR (where Glu2369 is found at the equivalent position of SMG1 Leu2365) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence alignment data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "7b3e860b-cd85-4ad4-b999-92e28d035da2",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C39",
+      "claim": "mTOR has been found to prefer small or non-polar residues at position +1 of its phosphorylation consensus motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mTOR has been found to prefer small or non-polar residues at position +1 of its phosphorylation consensus motif (Hsu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "5b367960-2c36-43d4-8be4-4c86f1b7f8e4",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C40",
+      "claim": "The structural superposition with CtTel1ATM shows that its PIKK regulatory domain (PRD) places a Gln residue in the corresponding hydrophobic cage, effectively occupying the substrate Gln binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the structural superposition with CtTel1ATM shows that its PIKK regulatory domain (PRD) places a Gln residue in the corresponding hydrophobic cage, effectively occupying the substrate Gln binding site (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural comparison shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "71f31a23-8cb4-4517-91aa-92a14f87701a",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C41",
+      "claim": "The PRD domain occupying the substrate Gln binding site explains the autoinhibitory function of the ATM PRD domain.",
+      "claim_type": "EXPLICIT",
+      "source": "This explains the autoinhibitory function of the ATM PRD domain (Jansma et al., 2020; Yates et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on structural observations and supported by citations to published literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "5dc31b5d-5986-4ba3-85ce-beb87c06d6f7",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C42",
+      "claim": "The corresponding PRD domain in SMG1 is a ~ 1100 amino-acid long insertion that negatively impacts its kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding PRD domain in SMG1 is a ~ 1100 amino-acid long insertion (Figure 1A) that negatively impacts its kinase activity (Deniaud et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to published literature and structural data shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "777fa4eb-754e-4679-a259-80b38dacba68",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C43",
+      "claim": "There is no ordered density for the SMG1 PRD region in neither the previous apo-structure nor in the current substrate-bound structure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is no ordered density for this region in neither the previous apo-structure (Gat et al., 2019) nor in the current substrate-bound structure (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 1A and B and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "07f4a004-cd5e-429a-8ab4-a2fc68ac20f6",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C44",
+      "claim": "SQ motifs preceded by a hydrophobic residue in position \u22121 are preferentially phosphorylated by SMG1.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous results have indicated that SQ motifs preceded by a hydrophobic residue in position \u22121 are preferentially phosphorylated by SMG1 (Yamashita et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "49cfcb4a-7bf4-4854-81ce-c6882fe1f891",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C45",
+      "claim": "The Leu residue at position \u22121 in the substrate forms a C-H\u22c5\u22c5\u22c5\u03c0-interaction with SMG1 Phe2215.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, the Leu residue at position \u22121 in the substrate forms a C-H\u22c5\u22c5\u22c5\u03c0-interaction with SMG1 Phe2215 and is further stabilized by hydrophobic interactions with SMG1 Pro2249 and Gly3656.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "bc2542f8-2c2c-4a8b-89ba-19845a6510f9",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C46",
+      "claim": "SQ motifs carrying a hydrophobic residue in position \u22121 were more efficiently phosphorylated, with Leu eliciting the highest phosphorylation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Following phosphorylation of the peptides over time, we could observe that SQ motifs carrying a hydrophobic residue in position \u22121 were more efficiently phosphorylated. Notably, a Leu elicited the highest phosphorylation rate (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "82ea5e2d-6622-47f2-979a-96fd19fc4aa5",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C47",
+      "claim": "Decreasing hydrophobicity of the residue at the \u22121 position negatively affects phosphorylation efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "This is reflected at the biochemical level, whereby decreasing hydrophobicity of the residue at the \u22121 position negatively affects phosphorylation efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "41683932-b63e-4c4e-96a4-f49fb5593b24",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C48",
+      "claim": "The SQ motifs that carry rather hydrophobic residues at the \u22121 position reside exclusively in the UPF1 C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, further analysis of the final time points in the time course phosphorylation experiment showed that the SQ motifs that carry rather hydrophobic residues at the \u22121 position (and are therefore more efficiently phosphorylated) reside exclusively in the UPF1 C-terminus (Figure 4C, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "92973bf4-efb4-4444-9a1d-0b8702540955",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C49",
+      "claim": "Mutating Asp27 to Leu in the UPF1 N-terminus phosphorylation site Thr28 resulted in a gain-of-function effect in the phosphorylation assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested whether SMG1-8-9 phosphorylation activity toward this motif could be enhanced by changing the residue at position \u22121 from the naturally occurring Asp to a Leu. Indeed, mutating the residue upstream of this SQ motif (Asp27Leu) resulted in a gain-of-function effect in the phosphorylation assay (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "aca7157e-654f-45f9-9be5-d8ee51bb3de1",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C50",
+      "claim": "The residues involved in the recognition of UPF1 Leu1077 have diverged in other PIKKs, suggesting that the details of \u22121 recognition will differ.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are in agreement with data for ATM and ATR (Kim et al., 1999), although the residues involved in the recognition of UPF1 Leu1077 have diverged, suggesting that the details of \u22121 recognition will differ in other PIKKs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from structural data and citation to published literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "27e9a885-d391-4434-9c80-a1fc09cd95d8",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C51",
+      "claim": "There are no extensive interactions between SMG1 and the peptide residues preceding or following the LSQ motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we do not observe extensive interactions between SMG1 and the peptide residues preceding or following the LSQ motif in our structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "a076b32c-ae37-402d-a11a-6cc1d72fdaed",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C52",
+      "claim": "There was no marked effect on phosphorylation when the residue at position +2 of UPF1-LSQ was changed.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we did not detect a marked effect on phosphorylation in a time course experiment where we changed the residue at position +2 of UPF1-LSQ (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "846869ba-c9c4-4915-9fcf-ba6c7a312b1c",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C53",
+      "claim": "The results elucidate the mechanism of phospho-acceptor recognition and explain the specificity for Ser-containing substrates with a glutamine downstream residue at position +1 and an upstream hydrophobic residue at position \u22121 (particularly Leu).",
+      "claim_type": "EXPLICIT",
+      "source": "The results elucidate the mechanism of phospho-acceptor recognition, and explain the specificity for Ser-containing substrates with a glutamine downstream residue at position +1 and an upstream hydrophobic residue at position \u22121 (particularly Leu).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined structural and biochemical data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "ab4b38c0-7195-4722-8f70-7fcc6c408628",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C54",
+      "claim": "These findings can be extrapolated to other PIKK members, such as ATM and ATR.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings can be extrapolated to other PIKK members, such as ATM and ATR, and suggest a specific mechanism for PRD function by acting as a pseudosubstrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the structural and biochemical data combined with sequence conservation analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "0f2f246f-a13f-4323-816f-e1866d71d087",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C55",
+      "claim": "The findings suggest a specific mechanism for PRD function by acting as a pseudosubstrate.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings can be extrapolated to other PIKK members, such as ATM and ATR, and suggest a specific mechanism for PRD function by acting as a pseudosubstrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from structural observations showing PRD occupying the substrate binding site.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "4bd70870-d1cc-4234-a637-4fa4eed14453",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C56",
+      "claim": "The results provide molecular insights into a key step of the NMD pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide molecular insights into a key step of the NMD pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the structural and biochemical data elucidating substrate recognition by SMG1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "37421b36-205c-44f5-b93f-37d9dc618fb3",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C57",
+      "claim": "Phosphorylation was decreased when Ser was changed to Thr in the UPF1-LSQ peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, phosphorylation was decreased when Ser was changed to Thr, consistent with previous data for ATM, ATR and DNA-PK (Kim et al., 1999; O'Neill et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1C and citation to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "3af5b216-62b8-451a-aafc-88470787d3f9",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C58",
+      "claim": "Phosphorylation was abolished when Ser1081 was tested, confirming specificity toward the SQ motif at Ser1078.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation was abolished when the phospho-acceptor residue was changed from Ser to Asp. This shows Ser1081 was not recognized for phosphorylation and confirms specificity toward the SQ motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "3156fe55-3d74-4165-b34b-0177081726e8",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C59",
+      "claim": "Large parts of the SMG1-8-9 complex including the kinase domain and the bound UPF1 peptide are resolved to around 3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Large parts of the complex including the kinase domain and the bound UPF1 peptide are resolved to around 3 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by local resolution analysis shown in Figure 1\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "8e2daa43-989a-4c05-9204-ba0d7056c8a7",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C60",
+      "claim": "The overall isotropy of the map is confirmed by a sphericity of 0.957.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall isotropy of the map is confirmed by a sphericity of 0.957 (out of 1) (Tan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by 3D FSC analysis shown in Figure 1\u2014figure supplement 2F and citation to the method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "0b671b8d-5af7-45d9-815f-8b2f65606173",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C61",
+      "claim": "In the G4 motif of SMG9, the aspartic acid that specifically engages the guanine moiety in GTPases has diverged to an arginine residue.",
+      "claim_type": "EXPLICIT",
+      "source": "In the G4 motif, the aspartic acid that specifically engages the guanine moiety in GTPases has diverged to an arginine residue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural comparison and sequence alignment shown in Figure 1\u2014figure supplement 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "19e762ef-ac2f-4f45-8cca-af0ba0ecc730",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C62",
+      "claim": "Asn372 in the SMG9 G4 motif has shifted so that it engages the side-chain carbonyl group to interact with the adenine amino group.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, Asn372 in the SMG9 G4 motif has shifted so that it engages the side-chain carbonyl group to interact with the adenine amino group (compare panels A and B with C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 1\u2014figure supplement 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "7d9636e1-53c3-4c27-85b9-1d549c229ae6",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C63",
+      "claim": "In the G5 motif of SMG9, the main-chain carbonyl and amine groups of Pro432 and Met434 form adenine-specific interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the G5 motif, the SAK consensus sequence in RAS and RHEB has diverged in SMG9, with the main-chain carbonyl and amine groups of the upstream residues, Pro432 and Met434, forming adenine-specific interactions (compare panels A and B with C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 1\u2014figure supplement 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "978882f7-5e71-4c11-a6b4-43a28a0f2325",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C64",
+      "claim": "The G1-G3 motifs of SMG9 coordinate the phosphate moieties of ATP, similarly to the corresponding motifs of canonical GTPases, but lack the typical residues crucial for catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The G1-G3 motifs of SMG9 coordinate the phosphate moieties of ATP, similarly to the corresponding motifs of canonical GTPases, but with an important exception, in that they lack the typical residues crucial for catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis shown in Figure 1\u2014figure supplement 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "c33ae0d8-9ae5-4dcd-95c8-9d3c6d9976a9",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C65",
+      "claim": "The SMG1 kinase contains features that have previously been associated with a model preferring the presence of a 'dissociative' transition state, such as a positive charge closely involved in \u03b2-phosphate coordination (K2155).",
+      "claim_type": "EXPLICIT",
+      "source": "The SMG1 kinase contains features that have previously been associated with a model preferring the presence of a 'dissociative' transition state, such as a positive charge closely involved in \u03b2-phosphate coordination, namely K2155 (residue not shown) (Wang and Cole, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural observations and citation to published literature on kinase mechanisms.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "bb1dcf5a-5408-4bce-a4d2-ed38fcc6d36e",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C66",
+      "claim": "Decreased phosphorylation of peptides with non-hydrophobic position \u22121 residues is not only caused by competition with more optimal substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that decreased phosphorylation of peptides with non-hydrophobic position \u22121 residues is not only caused by competition with more optimal substrates (compare assay shown in Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "f2c748b5-c446-419a-b1d2-6d6935fa7c4e",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C67",
+      "claim": "Density for the unmodelled, C-terminal part of SMG8 appeared in two 3D classes not used for the final reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Density for the unmodelled, C-terminal part of SMG8 appearing in two other 3D classes not used for the final reconstruction is highlighted in magenta. This part of SMG8 has been suggested to contribute to kinase regulation (Zhu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data processing results shown in Figure 1\u2014figure supplement 3 and citation to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "5d59a261-5241-4cda-b014-84c5f2a7e9b4",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "claim_id": "C68",
+      "claim": "The C-terminal part of SMG8 has been suggested to contribute to kinase regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This part of SMG8 has been suggested to contribute to kinase regulation (Zhu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c6128948-2910-4084-ab7c-efee73a4f408",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The cryo-EM reconstruction of substrate-bound SMG1-8-9 complex achieved 2.9 \u00c5 overall resolution with local resolution around 3 \u00c5 in key regions including the kinase domain and bound UPF1 peptide. The map shows good isotropy (sphericity 0.957) and quality metrics appropriate for atomic model building.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C59, and C60 are well-supported by the data processing workflow, resolution metrics, and validation analyses shown in Figure 1\u2014figure supplement 2. The resolution is appropriate for the structural interpretations made, and quality metrics (FSC curves, local resolution maps, sphericity) confirm the reliability of the reconstruction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "ccccc815-b45b-42f6-8c1b-fce73bca097e",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "This structure represents the first substrate-bound active site of a human PIKK, revealing clear density for both AMPPNP and UPF1-LSQ peptide (residues 1075-1081) in the SMG1 active site that was absent in the previous apo structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C29, and C30 are supported by direct comparison with the previous apo structure (Gat et al., 2019) shown in Figure 1\u2014figure supplement 5, demonstrating new density corresponding to nucleotide and substrate peptide. The novelty claim appears valid based on the literature context provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "df2b68ca-fe59-4960-9638-2d772ecfb48f",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Purified SMG1-8-9 complex is enzymatically active and specifically phosphorylates UPF1 at Ser1078 within the LSQ motif, as demonstrated by radioactive kinase assays and mass spectrometry. Mutation of Ser1078 to Asp abolishes phosphorylation, confirming site specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 and C58 are supported by complementary biochemical assays (Figure 1\u2014figure supplement 1). The radioactive assay confirms activity toward full-length UPF1, while mass spectrometry provides site-specific validation. The negative control (S1078D) appropriately demonstrates specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "5d37c330-24b1-449f-b2a9-c648f7515e57",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SMG1 architecture consists of an N-terminal solenoid 'arch' that provides binding sites for SMG8 and SMG9, and a C-terminal 'head' formed by the catalytic module interacting with FAT and FATC domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 describing SMG1 architecture are supported by the structural data in Figure 1A-B and are consistent with the previous apo structure. These represent refinement and completion of the previously published model rather than entirely new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "5a413869-4f9a-49ee-9efd-f1fd2751142d",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SMG9 contains an unusual G-fold domain that binds ATP rather than GTP/GDP, with rearranged G4 and G5 motifs that preferentially recognize adenine. The structure reveals specific molecular interactions including Asn372 engaging the adenine amino group and Pro432/Met434 forming adenine-specific contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 and C61-C64 are supported by high-resolution structural data (Figure 1\u2014figure supplement 4) showing ATP binding and the molecular basis for adenine specificity. This confirms and extends previous observations by the same authors (Gat et al., 2019) with improved resolution enabling detailed mechanistic interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "4486926b-00e0-481b-b804-7bc47a3ad2f8",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The substrate-bound SMG1 active site shows conserved kinase architecture with proper positioning of catalytic residues. The phospho-acceptor Ser1078 is positioned by catalytic loop residues Asp2335 and His2337, which are essential for catalytic activity across kinases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 are supported by structural comparisons with CDK2 and mTOR (Figure 2\u2014figure supplement 1) and by extensive literature citations demonstrating that mutation of corresponding residues abolishes kinase activity. The structural observations are consistent with established kinase mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "6273eac8-e0cb-4986-a8f0-f52d5f69d4b5",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SMG1 specifically recognizes glutamine at position +1 of the substrate through a hydrophobic cage formed by Tyr3654, Leu2365, and Val2367. Only wildtype UPF1-LSQ with glutamine at +1 is efficiently phosphorylated. This hydrophobic cage is conserved in SQ-recognizing PIKKs (ATM, ATR, DNA-PK) but differs in mTOR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C35-C39 are strongly supported by both structural data (Figure 3C) showing specific interactions and biochemical data (Figure 3B) demonstrating that only glutamine at +1 enables efficient phosphorylation. Sequence conservation analysis (Figure 3D) supports the mechanistic distinction between SQ-specific PIKKs and mTOR.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "9ae0b92d-4a9c-404c-8268-e29d4ac34123",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SMG1 preferentially phosphorylates SQ motifs with hydrophobic residues (especially leucine) at position -1. The Leu at -1 forms C-H\u00b7\u00b7\u00b7\u03c0 interactions with Phe2215 and hydrophobic contacts with Pro2249 and Gly3656. Phosphorylation efficiency correlates with hydrophobicity at -1, and efficiently phosphorylated sites reside in the UPF1 C-terminus. Mutation of Asp27 to Leu in an N-terminal site enhances phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 are supported by structural data (Figure 4A) and systematic biochemical analysis (Figure 4B-D). The time-course experiments with peptide libraries provide quantitative evidence for the hydrophobicity preference, and the gain-of-function mutation validates the structural model. The observation about C-terminal localization is supported by sequence analysis (Figure 4\u2014figure supplement 2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "40954b74-4a35-4805-bb42-88567c2d8744",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SMG1 does not make extensive interactions with peptide residues beyond the LSQ motif, and changing the residue at position +2 has no marked effect on phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51 and C52 are supported by structural observations and biochemical data (Figure 4\u2014figure supplement 1B). The lack of extensive contacts beyond the core motif is consistent with the peptide library results showing minimal effect of +2 position variation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "e8dd9ee1-d2dd-4a5a-93db-86c64d3dddc5",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Structural superposition with CtTel1/ATM reveals that the ATM PRD domain places a glutamine in the substrate glutamine binding site, explaining its autoinhibitory function. The corresponding SMG1 PRD domain (~1100 amino acids) shows no ordered density in either apo or substrate-bound structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C41, and C43 are supported by structural comparison (Figure 2\u2014figure supplement 1C) and appropriate citations. The inference about PRD autoinhibition is reasonable based on the structural overlap, though direct experimental validation of this mechanism for ATM comes from cited literature rather than the current study. The lack of density for SMG1 PRD is clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "a37c360b-11db-4ae4-8e89-a1e0548e9afc",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The SMG1 PRD domain is a ~1100 amino acid insertion that negatively impacts kinase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is supported by citation to Deniaud et al., 2015 and structural data showing the insertion location (Figure 1A). However, the current study does not directly test PRD function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "fcc6a2f5-ec2d-4916-a589-6a259d983da5",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "While the preference for hydrophobic residues at -1 is shared with ATM and ATR, the specific residues involved in recognition have diverged, suggesting different detailed mechanisms among PIKKs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by inference from structural data and sequence divergence, with appropriate citation to ATM/ATR literature. This is a reasonable conclusion based on the structural observations, though direct experimental comparison is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "6d742905-5aeb-4f6a-8ebd-8f410929f661",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The combined structural and biochemical results elucidate the molecular basis for SMG1 phosphorylation site specificity (requiring Gln at +1 and hydrophobic residue, particularly Leu, at -1). These findings can be extrapolated to other PIKKs and suggest PRD functions as a pseudosubstrate, providing insights into the NMD pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 represent appropriate synthesis of the major findings. The mechanistic conclusions are well-supported by the data. The extrapolation to other PIKKs (C54) is reasonable based on sequence conservation but remains somewhat speculative without direct experimental validation. The PRD pseudosubstrate mechanism (C55) is a logical inference from the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "489d9909-539a-4282-a005-3075f6037e8a",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Phosphorylation is decreased when serine is changed to threonine in the UPF1-LSQ peptide, consistent with previous data for ATM, ATR, and DNA-PK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by experimental data (Figure 1\u2014figure supplement 1C) and appropriate citations. This observation is consistent with known PIKK substrate preferences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "b69b0702-2684-475b-a8c7-9f9f54b278a2",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Decreased phosphorylation of peptides with non-hydrophobic residues at position -1 is not solely due to competition with more optimal substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by single-peptide endpoint measurements (Figure 4\u2014figure supplement 1A) that control for competition effects. This validates that the hydrophobicity preference reflects intrinsic binding/catalytic properties rather than just competitive effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "4aff95fa-5166-4742-b934-4bbc5da1c591",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Density for the C-terminal part of SMG8 appeared in 3D classes not used for final reconstruction. This region has been suggested to contribute to kinase regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C68 are supported by data processing results (Figure 1\u2014figure supplement 3) and citation to Zhu et al., 2019. This represents an observation about structural heterogeneity rather than a primary finding, and the regulatory role is based on prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "b4449b71-0954-48e8-b666-15a23f2e8dc2",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background information on PIKK family functions, SMG1 role in NMD, and known phosphorylation site preferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C19 represent established background knowledge supported by appropriate literature citations. These provide context for the current work but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    },
+    {
+      "id": "dca51512-6cb4-4333-a2ff-56fa86c45efa",
+      "content_id": "c2aecb96-11ff-4041-ab12-643a0e05248f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The SMG1 kinase contains features associated with a 'dissociative' transition state mechanism, including a positive charge (K2155) involved in \u03b2-phosphate coordination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C65 is based on structural observation and citation to Wang and Cole, 2014, but the residue K2155 is noted as 'not shown' in the figure. Without direct visualization or experimental validation of the catalytic mechanism, this remains speculative. The claim about transition state preference requires kinetic or computational studies beyond the scope of the structural work presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:28:01.561015Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b9758e03-e77a-4925-b01c-65e7e1570517",
+      "result_id": "c6128948-2910-4084-ab7c-efee73a4f408"
+    },
+    {
+      "claim_id": "3156fe55-3d74-4165-b34b-0177081726e8",
+      "result_id": "c6128948-2910-4084-ab7c-efee73a4f408"
+    },
+    {
+      "claim_id": "8e2daa43-989a-4c05-9204-ba0d7056c8a7",
+      "result_id": "c6128948-2910-4084-ab7c-efee73a4f408"
+    },
+    {
+      "claim_id": "ef0aeb7d-93a1-48c1-a2c0-9e965d774fdb",
+      "result_id": "ccccc815-b45b-42f6-8c1b-fce73bca097e"
+    },
+    {
+      "claim_id": "d786a1ff-fd78-4f45-a7ab-ea03a0776273",
+      "result_id": "ccccc815-b45b-42f6-8c1b-fce73bca097e"
+    },
+    {
+      "claim_id": "f308d62b-a9c2-4b91-ab9e-c8da4d88fbed",
+      "result_id": "ccccc815-b45b-42f6-8c1b-fce73bca097e"
+    },
+    {
+      "claim_id": "96b6fe44-e57a-449f-adbf-ce7cbd5035c7",
+      "result_id": "df2b68ca-fe59-4960-9638-2d772ecfb48f"
+    },
+    {
+      "claim_id": "c905a496-1774-4533-8159-a7ebe79cd8a4",
+      "result_id": "df2b68ca-fe59-4960-9638-2d772ecfb48f"
+    },
+    {
+      "claim_id": "97caae45-70ac-4729-bdd4-7021203401e8",
+      "result_id": "df2b68ca-fe59-4960-9638-2d772ecfb48f"
+    },
+    {
+      "claim_id": "3af5b216-62b8-451a-aafc-88470787d3f9",
+      "result_id": "df2b68ca-fe59-4960-9638-2d772ecfb48f"
+    },
+    {
+      "claim_id": "07b11c52-ed71-4400-8bcd-ef962a429158",
+      "result_id": "5d37c330-24b1-449f-b2a9-c648f7515e57"
+    },
+    {
+      "claim_id": "d93226bc-cef8-4258-9f42-a27dc740d4b3",
+      "result_id": "5d37c330-24b1-449f-b2a9-c648f7515e57"
+    },
+    {
+      "claim_id": "79786552-5f89-462e-a405-42cd92da7d59",
+      "result_id": "5d37c330-24b1-449f-b2a9-c648f7515e57"
+    },
+    {
+      "claim_id": "d9ec65f0-f591-497d-8a7c-5130b1197c3c",
+      "result_id": "5a413869-4f9a-49ee-9efd-f1fd2751142d"
+    },
+    {
+      "claim_id": "dbde79bb-fd30-452b-93f6-8c11cd08425a",
+      "result_id": "5a413869-4f9a-49ee-9efd-f1fd2751142d"
+    },
+    {
+      "claim_id": "a2a0c693-5ecd-4813-a32f-80b1d7acb33e",
+      "result_id": "5a413869-4f9a-49ee-9efd-f1fd2751142d"
+    },
+    {
+      "claim_id": "0b671b8d-5af7-45d9-815f-8b2f65606173",
+      "result_id": "5a413869-4f9a-49ee-9efd-f1fd2751142d"
+    },
+    {
+      "claim_id": "19e762ef-ac2f-4f45-8cca-af0ba0ecc730",
+      "result_id": "5a413869-4f9a-49ee-9efd-f1fd2751142d"
+    },
+    {
+      "claim_id": "7d9636e1-53c3-4c27-85b9-1d549c229ae6",
+      "result_id": "5a413869-4f9a-49ee-9efd-f1fd2751142d"
+    },
+    {
+      "claim_id": "978882f7-5e71-4c11-a6b4-43a28a0f2325",
+      "result_id": "5a413869-4f9a-49ee-9efd-f1fd2751142d"
+    },
+    {
+      "claim_id": "ac306720-992b-43a7-bd38-6807ab4793f5",
+      "result_id": "4486926b-00e0-481b-b804-7bc47a3ad2f8"
+    },
+    {
+      "claim_id": "40ed00cc-f810-41ac-8e1a-4bee5e67ea72",
+      "result_id": "4486926b-00e0-481b-b804-7bc47a3ad2f8"
+    },
+    {
+      "claim_id": "538f4bc2-44f2-4307-8221-015d1a66aa51",
+      "result_id": "4486926b-00e0-481b-b804-7bc47a3ad2f8"
+    },
+    {
+      "claim_id": "2923b622-64ff-41e9-9e72-fe250e668fe6",
+      "result_id": "4486926b-00e0-481b-b804-7bc47a3ad2f8"
+    },
+    {
+      "claim_id": "907756f8-f7df-40c4-ab63-89e7b32d64aa",
+      "result_id": "6273eac8-e0cb-4986-a8f0-f52d5f69d4b5"
+    },
+    {
+      "claim_id": "cd222a06-470a-42be-8fdc-9657c6be1598",
+      "result_id": "6273eac8-e0cb-4986-a8f0-f52d5f69d4b5"
+    },
+    {
+      "claim_id": "9c1ffd58-ebbe-4486-a4a5-cc978bcf91e9",
+      "result_id": "6273eac8-e0cb-4986-a8f0-f52d5f69d4b5"
+    },
+    {
+      "claim_id": "ffad39ef-3d3f-4cb7-abee-f2a34f4456ff",
+      "result_id": "6273eac8-e0cb-4986-a8f0-f52d5f69d4b5"
+    },
+    {
+      "claim_id": "3996b47e-9a66-40d6-a5d3-57d22f302598",
+      "result_id": "6273eac8-e0cb-4986-a8f0-f52d5f69d4b5"
+    },
+    {
+      "claim_id": "7b3e860b-cd85-4ad4-b999-92e28d035da2",
+      "result_id": "6273eac8-e0cb-4986-a8f0-f52d5f69d4b5"
+    },
+    {
+      "claim_id": "07f4a004-cd5e-429a-8ab4-a2fc68ac20f6",
+      "result_id": "9ae0b92d-4a9c-404c-8268-e29d4ac34123"
+    },
+    {
+      "claim_id": "49cfcb4a-7bf4-4854-81ce-c6882fe1f891",
+      "result_id": "9ae0b92d-4a9c-404c-8268-e29d4ac34123"
+    },
+    {
+      "claim_id": "bc2542f8-2c2c-4a8b-89ba-19845a6510f9",
+      "result_id": "9ae0b92d-4a9c-404c-8268-e29d4ac34123"
+    },
+    {
+      "claim_id": "82ea5e2d-6622-47f2-979a-96fd19fc4aa5",
+      "result_id": "9ae0b92d-4a9c-404c-8268-e29d4ac34123"
+    },
+    {
+      "claim_id": "41683932-b63e-4c4e-96a4-f49fb5593b24",
+      "result_id": "9ae0b92d-4a9c-404c-8268-e29d4ac34123"
+    },
+    {
+      "claim_id": "92973bf4-efb4-4444-9a1d-0b8702540955",
+      "result_id": "9ae0b92d-4a9c-404c-8268-e29d4ac34123"
+    },
+    {
+      "claim_id": "27e9a885-d391-4434-9c80-a1fc09cd95d8",
+      "result_id": "40954b74-4a35-4805-bb42-88567c2d8744"
+    },
+    {
+      "claim_id": "a076b32c-ae37-402d-a11a-6cc1d72fdaed",
+      "result_id": "40954b74-4a35-4805-bb42-88567c2d8744"
+    },
+    {
+      "claim_id": "5b367960-2c36-43d4-8be4-4c86f1b7f8e4",
+      "result_id": "e8dd9ee1-d2dd-4a5a-93db-86c64d3dddc5"
+    },
+    {
+      "claim_id": "71f31a23-8cb4-4517-91aa-92a14f87701a",
+      "result_id": "e8dd9ee1-d2dd-4a5a-93db-86c64d3dddc5"
+    },
+    {
+      "claim_id": "777fa4eb-754e-4679-a259-80b38dacba68",
+      "result_id": "e8dd9ee1-d2dd-4a5a-93db-86c64d3dddc5"
+    },
+    {
+      "claim_id": "5dc31b5d-5986-4ba3-85ce-beb87c06d6f7",
+      "result_id": "a37c360b-11db-4ae4-8e89-a1e0548e9afc"
+    },
+    {
+      "claim_id": "aca7157e-654f-45f9-9be5-d8ee51bb3de1",
+      "result_id": "fcc6a2f5-ec2d-4916-a589-6a259d983da5"
+    },
+    {
+      "claim_id": "846869ba-c9c4-4915-9fcf-ba6c7a312b1c",
+      "result_id": "6d742905-5aeb-4f6a-8ebd-8f410929f661"
+    },
+    {
+      "claim_id": "ab4b38c0-7195-4722-8f70-7fcc6c408628",
+      "result_id": "6d742905-5aeb-4f6a-8ebd-8f410929f661"
+    },
+    {
+      "claim_id": "0f2f246f-a13f-4323-816f-e1866d71d087",
+      "result_id": "6d742905-5aeb-4f6a-8ebd-8f410929f661"
+    },
+    {
+      "claim_id": "4bd70870-d1cc-4234-a637-4fa4eed14453",
+      "result_id": "6d742905-5aeb-4f6a-8ebd-8f410929f661"
+    },
+    {
+      "claim_id": "37421b36-205c-44f5-b93f-37d9dc618fb3",
+      "result_id": "489d9909-539a-4282-a005-3075f6037e8a"
+    },
+    {
+      "claim_id": "bb1dcf5a-5408-4bce-a4d2-ed38fcc6d36e",
+      "result_id": "b69b0702-2684-475b-a8c7-9f9f54b278a2"
+    },
+    {
+      "claim_id": "f2c748b5-c446-419a-b1d2-6d6935fa7c4e",
+      "result_id": "4aff95fa-5166-4742-b934-4bbc5da1c591"
+    },
+    {
+      "claim_id": "5d59a261-5241-4cda-b014-84c5f2a7e9b4",
+      "result_id": "4aff95fa-5166-4742-b934-4bbc5da1c591"
+    },
+    {
+      "claim_id": "f689fb2a-c954-4281-8948-4e329bf7262c",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "ce2adc7e-5b72-4c15-9690-f60544d583f0",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "b4b20f70-35d9-4cb5-93c6-81bbd54b5dfb",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "9151727e-7054-4488-be8e-c40c5739381d",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "1df85d00-35f0-4101-a194-ecffa63ea851",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "1ef8a286-f91d-40a7-8ce0-5011a84af5dd",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "4ec2c1e2-04a5-498f-8fe4-17300a6eaec9",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "748f45e3-f64a-4110-8c34-94600ff0d814",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "8c6c0170-b42f-4342-9e3d-e6faeef7e141",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "8fee6e91-c1b8-48f6-a8ac-289cfadba2bc",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "d7d58542-d7af-4525-8d76-dc7811f59a18",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "8d825e63-a09e-46b1-a7c1-1e9b8d718e45",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "caa9e120-21cb-487e-9286-b37b0010bf7f",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "c9c28752-3233-4bae-871a-529e4194ebdf",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "7fcdd3f3-f8f4-4910-97ab-9a805a5fcef9",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "2c8f3657-6111-46b0-9935-6172062a7f0a",
+      "result_id": "b4449b71-0954-48e8-b666-15a23f2e8dc2"
+    },
+    {
+      "claim_id": "c33ae0d8-9ae5-4dcd-95c8-9d3c6d9976a9",
+      "result_id": "dca51512-6cb4-4333-a2ff-56fa86c45efa"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "African Americans develop hypertension earlier and have lower probability of remaining hypertension-free compared to European Americans and Mexican Americans. The median age at hypertension was approximately a decade earlier in African Americans (42-48 years) than in European Americans (57 years) or Mexican Americans (56 years), and by age 85, only 8.4-12.2% of African Americans remained free of hypertension compared to ~21% in the other groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C20-C23, C16-C19, and C26-C31 provide consistent, quantitative evidence across two independent cohorts (HUFS and NHANES) with credible intervals. The findings replicate known health disparities and are supported by Figures 2 and 4 showing clear separation between ethnic groups in survival curves and hazard rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C52",
+      "C54"
+    ],
+    "result": "Hazard rates for hypertension increase until approximately 60 years of age, then decrease but remain non-zero through age 85. The log-normal distribution provided the best parametric fit, though a nonparametric model yielded the highest overall likelihood, and the hazard rates showed an inflection point consistent with the log-normal distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24, C25, C52, and C54 are well-supported by likelihood comparisons in Table 1 and hazard rate modeling shown in Figure 4. The non-zero hazard rates at advanced ages are consistently observed across all ethnic groups, providing strong evidence for continued risk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C57",
+      "C58",
+      "C59",
+      "C80"
+    ],
+    "result": "There are no true controls for hypertension; individuals classified as controls in case-control studies are actually cases with late age of onset. Modeling with a permanent stayer fraction worsened model fit (increased DIC), indicating that if individuals live long enough, hypertension is inevitable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35, C57, C58, C59, and C80 are supported by the DIC analysis in Table 2 showing that including a permanent stayer fraction increased DIC, indicating worse fit. The non-zero hazard rates at all ages (C4, C54) provide additional support. This is a major conceptual finding with implications for study design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C56"
+    ],
+    "result": "Logistic regression with age and age\u00b2 provides a fit comparable to proportional hazards models for hypertension. Age explains 27.8% of variance and age\u00b2 adds 0.8%, with the effective dimensionality of the proportional hazards model (3.3) being comparable to logistic regression with age and age\u00b2 (3.0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C56 are supported by DIC comparisons in Table 2. The recommendation (C56) follows logically from the comparable model fits. However, the small additional variance explained by age\u00b2 (0.8%) raises questions about practical significance, though the DIC improvement supports its inclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C61",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "Six covariates (chloride, insulin, LDL cholesterol, potassium, uric acid, and weight) were identified through model selection in HUFS and replicated in NHANES African Americans. These covariates, along with age and age\u00b2, explained 40.9% of variance in African Americans, 34.8% in European Americans, and 28.3% in Mexican Americans, showing both common risk factors and ethnic heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41, C61, C79, C81-C82 are well-supported by Tables 3-4 showing replication with significant p-values and directional consistency. The variance explained is substantial and the replication across cohorts strengthens the findings. Minor differences across ethnic groups (e.g., insulin non-significant in European Americans, potassium borderline in Mexican Americans) are acknowledged and explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "Increasing LDL cholesterol was unexpectedly associated with decreased risk of hypertension across all ethnic groups. This negative association persisted in both single and multiple regression models, was not time-dependent, and remained significant after accounting for lipid medications, contradicting prior literature showing positive or null associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C45 and C69-C71 show consistent negative associations across ethnic groups (Tables 3-4), but this contradicts established literature (C68). While the authors rule out several confounders, the proposed explanation of survival bias (C73) is speculative and untestable with the cross-sectional data. The lack of longitudinal follow-up to assess competing mortality risks is a critical limitation that prevents definitive interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C65"
+    ],
+    "result": "Sex was not a significant covariate in the model selection, despite three covariates (uric acid, weight, LDL cholesterol) showing sex dimorphisms in HUFS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C65 are supported by Table 5 showing significant sex differences in three covariates and the model selection results showing sex was not retained. This suggests that sex effects on hypertension may be mediated through these intermediate phenotypes rather than being independent. The finding is internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "None of the selected covariates showed evidence of time-dependence, as models with age-interaction terms had larger AIC values than models without interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C47 are supported by Table 6 showing consistently larger AIC values for all interaction models. The analysis appropriately uses AIC for model comparison. This is a methodological finding that validates the use of time-independent covariate effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Under the 2017 revised hypertension classification (SBP \u2265130 or DBP \u226580 mm Hg), prevalence increased from 48.3% to 66.1%, median age at hypertension decreased to 36 years, and lifetime risk at age 85 increased to 95.8% in HUFS African Americans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are internally consistent and show the expected directional changes with more stringent diagnostic thresholds. The 95.8% lifetime risk under revised criteria approaches near-universality. However, these are secondary analyses in only one cohort (HUFS) without replication in NHANES, limiting generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Median systolic blood pressure increased with age while median diastolic blood pressure increased then decreased across all ethnic groups, consistent with known blood pressure trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 are supported by Figure 1 and are consistent with prior literature (C10, C11). These findings validate the dataset and provide context for the hazard rate inflection point but are confirmatory rather than novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C55"
+    ],
+    "result": "The authors propose that the inflection point in hazard rates may be explained by the decrease in diastolic blood pressure after age 60, or alternatively by reduced mortality from comorbidities at older ages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53 and C55 are speculative explanations for the observed inflection point. While the DBP trajectory (C15) provides some support for C53, neither hypothesis is directly tested. The study lacks data on competing mortality risks and longitudinal DBP changes within individuals to evaluate these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Chloride was negatively associated with hypertension, consistent with prior literature showing lower serum chloride levels associated with higher hypertension risk despite high dietary chloride intake being a risk factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C63 are supported by regression coefficients in Tables 3-4 showing consistent negative associations across ethnic groups, and the cited literature (C63) provides biological plausibility. The distinction between dietary intake and serum levels is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The higher initial hazard rates in African Americans are consistent with low birth weight being a risk factor for hypertension and African Americans having lower birth weight than European Americans, though birth weight data were not available in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66 and C67 represent post-hoc interpretation connecting observed hazard rates to literature on birth weight. While the cited literature (C66, C67) supports these associations, the lack of actual birth weight data in the study means this remains speculative. The inference is plausible but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The association of uric acid with hypertension may reflect pleiotropy through metabolic pathways rather than direct causation, as Mendelian randomization studies show conflicting evidence for causality of uric acid on hypertension but consistent evidence that metabolic factors causally increase uric acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 appropriately summarize the literature on uric acid and hypertension, noting the conflicting MR evidence (C75) and the more consistent evidence for reverse causation (C77). The interpretation (C78) is reasonable given the cited evidence, though it remains a hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C60",
+      "C64",
+      "C72"
+    ],
+    "result": "Background claims about hypertension prevalence, mortality, blood pressure trajectories, and risk factors from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C13, C60, C64, and C72 are background information supported by appropriate citations to CDC, WHO, and peer-reviewed literature. These provide context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

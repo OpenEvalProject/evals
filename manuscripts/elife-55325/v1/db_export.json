@@ -1,0 +1,1484 @@
+{
+  "submission": {
+    "id": "c9ed0813-7462-4b47-93fe-53de1d7ec463",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:17:12.277193Z",
+    "updated_at": "2025-12-02T17:17:12.277193Z"
+  },
+  "content": [
+    {
+      "id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "submission_id": "c9ed0813-7462-4b47-93fe-53de1d7ec463",
+      "content_type": "manuscript",
+      "content_text": "# Parallel CRISPR-Cas9 screens clarify impacts of p53 on screen performance\n\n## Authors\n\n- Anne Ramsay Bowden<sup>1</sup> ([ORCID: 0000-0003-1138-4452](https://orcid.org/0000-0003-1138-4452))\n- David A Morales-Juarez<sup>1</sup> ([ORCID: 0000-0001-5370-5512](https://orcid.org/0000-0001-5370-5512))\n- Matylda Sczaniecka-Clift<sup>1</sup>\n- Maria Martin Agudo<sup>1</sup> ([ORCID: 0000-0003-3605-9963](https://orcid.org/0000-0003-3605-9963))\n- Natalia Lukashchuk<sup>1</sup>\n- John Christopher Thomas<sup>1</sup> ([ORCID: 0000-0003-2425-8412](https://orcid.org/0000-0003-2425-8412)) \u2020\n- Stephen P Jackson<sup>1</sup> ([ORCID: 0000-0001-9317-7937](https://orcid.org/0000-0001-9317-7937)) \u2020\n\n### Affiliations\n\n1. Wellcome/Cancer Research UK Gurdon Institute, University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nCRISPR-Cas9 genome engineering has revolutionised high-throughput functional genomic screens. However, recent work has raised concerns regarding the performance of CRISPR-Cas9 screens using TP53 wild-type human cells due to a p53-mediated DNA damage response (DDR) limiting the efficiency of generating viable edited cells. To directly assess the impact of cellular p53 status on CRISPR-Cas9 screen performance, we carried out parallel CRISPR-Cas9 screens in wild-type and TP53 knockout human retinal pigment epithelial cells using a focused dual guide RNA library targeting 852 DDR-associated genes. Our work demonstrates that although functional p53 status negatively affects identification of significantly depleted genes, optimal screen design can nevertheless enable robust screen performance. Through analysis of our own and published screen data, we highlight key factors for successful screens in both wild-type and p53-deficient cells.\n\n## Introduction\n\nCRISPR-Cas9 genome engineering technologies have transformed cell biology, particularly high throughput functional genomic screens (Wang et al., 2015; Shalem et al., 2014; Shalem et al., 2015;\u00a0Smith et al., 2017)\u00a0. Pooled CRISPR-Cas9 cell viability screens have been successfully employed in determining gene essentiality (Hart et al., 2015), identifying genetic interactions (Chan et al., 2019) and assessing drug sensitivities across various genetic backgrounds (Han et al., 2017). A number of factors influence CRISPR-Cas9 screen performance, including cellular background. In particular, recent reports concerning technical difficulties in CRISPR-Cas9 genome editing in p53-proficient cells, have brought into question the suitability of p53-proficient cell lines for high throughput CRISPR-Cas9 genetic screens (Haapaniemi et al., 2018; Ihry et al., 2018).\n\nTP53, encoding p53, acts as a master regulator of cell-cycle checkpoint activation (Kastan et al., 1991), cellular senescence (Shay et al., 1991) and induction of apoptosis in response to DNA damage (Clarke et al., 1993;\u00a0Lowe et al., 1993; Lakin and Jackson, 1999). TP53 is arguably the most important tumour suppressor gene, with loss of function mutations in up to 50% of human cancers (Bouaoun et al., 2016). Consequently, the p53 status of a cell line, either wild-type (proficient) or mutant (deficient), can be an important factor in determining the suitability of a cellular model, and hence is an important consideration in design of high throughput genetic screens.\n\nGeneration of DNA double strand breaks (DSBs) induces p53-dependent cell-cycle arrest in normal fibroblasts (Di Leonardo et al., 1994), and most CRISPR-Cas9 genome editing approaches rely on DSB generation to achieve efficient editing (Jinek et al., 2012). Recent work has shown that CRISPR-Cas9-associated DSBs in hPSCs (human pluripotent stem cells) induce a p53-mediated apoptotic response, leading to high levels of toxicity and reduced editing efficiency in this background (Ihry et al., 2018). Furthermore, a similar p53-mediated DSB response in wild-type retinal pigment epithelial (RPE-1) cells reportedly severely impaired identification of essential genes in a CRISPR-Cas9 screen when compared to RPE-1 TP53 knockout (TP53KO) cells (Haapaniemi et al., 2018). In contrast, analysis of data from a small number of additional screens in p53 wild-type RPE-1 cells has shown that performance of successful CRISPR screens, as determined by essential gene identification and enrichment of expected targets, is possible in this cellular background (Brown et al., 2019). This controversy is confounded by the complexity of variation in experimental design between screens with a lack of controlled parallel experiments. To provide more definitive insights into this important debate, we performed parallel CRISPR-Cas9 screens in paired wild-type and TP53KO cell lines, thereby minimising additional confounding factors that can preclude accurate screen comparisons.\n\n## Results and discussion\n\nWe carried out parallel screens, in wild-type and TP53KO RPE-1 cells with two independent Cas9-expressing monoclonal populations for each genetic background, selected based on p53 status and high Cas9 cutting efficiency (Figure 1\u2014figure supplement 1). To facilitate high screen sensitivity and in-depth interrogation of p53-mediated responses to CRISPR-Cas9-associated DSBs, we designed a bespoke dual guide RNA library targeting 852 DDR-related genes, with 112 olfactory receptor genes included as non-essential gene controls and 14 sequence-scrambled negative controls (Supplementary file 1). The library was manually curated to include established DDR components, putatively DDR related interactors, and a considerable number of bioinformatically-associated DDR factors. Moreover, the smaller size of this library compared to a whole genome library enabled high guide representation (>1000 x) to be maintained throughout the screen, minimising the impact of this key factor on screen sensitivity (Miles et al., 2016). In addition, our library incorporated a dual guide RNA vector design (Erard et al., 2017) to increase the frequency of functional knockout events in transduced cells compared to the canonical single guide RNA (sgRNA) approach. We reasoned that a vector generating two DSBs per cell may increase detection of differences in screen sensitivity due to variation in DSB responses between genetic backgrounds. Thus, the custom DDR library enables interrogation of p53-mediated DDR events, a cell\u2019s overall responses to DSBs, and the fitness effects of inactivating DDR-related genes. Screens were executed as depicted in Figure 1, and relative enrichments and depletions of gene knockouts in the edited cell populations were determined from guide read counts generated by next-generation Illumina DNA sequencing (Supplementary file 2) using the program MAGeCK (Li et al., 2014; Supplementary file 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55325/elife-55325-fig1-v1.jpg)\n\n**Figure 1.:** Cells were infected at a low multiplicity of infection (MOI=0.3). An initial sample was harvested 48 hours after infection. Subsequently, transduced cells were selected with puromycin and harvested at days 15 and 19. Guide RNA (gRNA) representations were evaluated by extraction of genomic DNA from surviving cells, PCR amplification of barcodes, and next-generation sequencing. MAGeCK (Li et al., 2014) was used to determine the relative depletion and enrichment of genes in later samples compared to the 48-hour samples.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55325/elife-55325-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Western Blot of p53 and GAPDH with the RPE-1 wild-type and TP53KO clones used in the screens. (B) Cas9 editing efficiency assayed by FACS. Non-infected samples were used for gating purposes. Cells with no Cas9 expression were used as negative controls. Editing efficiency of Cas9-expressing clones was calculated by comparing the percentage of BFP+ (i.e. edited) cells to the GFP/BFP+ (i.e. total transduced population) using FlowJo. Editing efficiencies of Cas9-expressing clones are displayed in red.\n\nIn our screens, depletion of core essential genes (as defined by Hart et al., 2017) was clearly evident in both wild-type and TP53KO backgrounds (Figure 2A and Figure 2\u2014figure supplement 1A). Due to the conservative nature of this essential gene list, additional genes with significant depletions were also identified in both cell lines (Supplementary file 3). A receiver operating characteristic (ROC) curve showing the classification of essential versus non-essential genes by gene depletion p-value ranks (calculated by MAGeCK) (Figure 2B) demonstrated good performance of both screens. Nevertheless, the TP53KO screen slightly outperformed the wild-type screen at both harvesting timepoints in terms of detection of essential genes by rank.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55325/elife-55325-fig2-v1.jpg)\n\n**Figure 2.:** (A) Mean log2 fold change (LFC) in guide abundance per gene, and significance of this change, from day 3 to day 19 of the experiment. The q-values are false discovery rates (FDR) given by MAGeCK. (B) Receiver operating characteristic curves of MAGeCK p-values, discriminating between genes classified as core essential by Hart et al. (2017) and other genes. (C) Number of core essential genes with q-value less than the range of values given on the x-axis. (D) Mean LFC of guides targeting core essential and not core essential genes (Day 19 samples). Paired t-tests were used to test core essential or not essential genes between cell lines, unpaired t-tests were used within a cell line. (E) Mean LFC of guides targeting core essential and not core essential genes (Day 19 samples).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55325/elife-55325-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Mean log2 fold change (LFC) in guide abundance per gene, and significance of this change, from day 3 to day 15 of the experiment. The q-values were calculated using MAGeCK. (B) Number of core essential genes with p-value less than the range of values given on the x-axis. (C) Mean LFC of guides targeting core essential and not core essential genes (day 15 samples). Paired t-tests were used to test core essential or not essential genes between cell lines, unpaired t-tests were used within a cell line.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55325/elife-55325-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Genes were categorised according to KEGG pathways and significance of enrichment and depletion values were determined by Fisher\u2019s exact test.\n\nWhen the significance of gene depletions was considered, we found that essential genes were much more likely to have low adjusted p-values (q-values) in the TP53KO background, compared to wild-type. In addition, we observed that the day 19 timepoint outperformed the day 15 timepoint, detecting increased numbers of essential genes at a given significance threshold (Figure 2C and Figure 2\u2014figure supplement 1B). The underlying basis behind this differential sensitivity to identifying essential genes lies in the magnitude of the phenotypic effect observed for each guide. While log fold changes (LFCs) across non-core essential (\u2018not essential\u2019) genes were not significantly different between the two genetic backgrounds (p=0.60), LFCs for core essential genes were significantly lower in the TP53KO screens compared to screens in TP53 wild-type settings (p=0.0010) (Figure 2D), consistent with wild-type cells initiating a p53-mediated response to Cas9-induced DSBs. This would inhibit the proliferation rates of all transduced cells during the course of the screens, leading to smaller LFCs and a narrower distribution of guides within the population, with a consequent reduction in genes with significant depletion scores. Similar results were seen in our analyses of day 15 samples (Figure 2\u2014figure supplement 1C).\n\nThe impact of the p53-mediated response is also evident when comparing screen results from differential enrichment and depletion of genes between the two genetic backgrounds (Figure 2E). As expected, in TP53 wild-type cells, guides targeting TP53 were the most significantly enriched, with guides targeting other components of the p53 pathway showing the most significant differences between the two genetic backgrounds. Guides significantly enriched in the TP53 wild-type background included those targeting CDKN1A that encodes p21, the major downstream mediator of p53-mediated cell cycle arrest (el-Deiry et al., 1993), and those targeting USP28 that encodes a deubiquitylating enzyme that acts to stabilise p53 (Zhang et al., 2006; Cuella-Martin et al., 2016). In contrast, guides targeting genes that were significantly depleted in the wild-type but not the TP53 knockout background included MDM2 and MDM4, which act as negative regulators of p53. MDM2 is an E3 ubiquitin ligase that targets p53 for degradation (Haupt et al., 1997), while MDM4 inhibits p53-dependent transcriptional activity (Francoz et al., 2006). SETDB1, which acts via MDM2, was also enriched in the TP53 wild-type background. This protein forms a complex with p53 and catalyses p53 K370 di-methylation. Attenuation of SETDB1 reduces the level of di-methylation at this site, leading to increased recognition and degradation of p53 by MDM2 (Fei et al., 2015). Furthermore, when we assessed the enrichment/depletion of specific biological pathways between the wild-type and TP53KO backgrounds, cell cycle and p53 signalling were the two pathways that were enriched (Figure 2\u2014figure supplement 2 and Supplementary file 4).\n\nGenes that are not acting in the p53 pathway were also identified as significantly enriched (e.g. EP300) or depleted (e.g. CCNA2) at a FDR\u00a0<\u00a00.1 (Supplementary file 3). EP300 was enriched on both genetic backgrounds and has an established role as a tumour suppressor through the regulation of the G1/S cell-cycle transition (Ait-Si-Ali et al., 2000). CCNA2, or cyclin A2, was depleted on both genetic backgrounds as it interacts with both CDK1 and CDK2 to drive S-phase progression and regulate the G1/S and G2/M phases of the cell-cycle (Pagano et al., 1992). Altogether, these results demonstrate that despite reduced screen sensitivity in p53-proficient cells, biologically meaningful enrichment and depletion analyses at the individual gene and pathway levels can, when required, still be performed in TP53 wild-type settings.\n\nTo further contextualise the feasibility of performing CRISPR-Cas9 screens in a p53-proficient background, we analysed our screens with five others performed in TP53 wild-type RPE-1 cells. When we performed a comparative ROC curve analysis to assess the screens\u2019 abilities to discriminate between core essential genes and other genes (Figure 3A), this established that the performance of all screens was similar, with the exception of Haapaniemi et al. (2018) data which underperformed in the ability to distinguish essential genes. We then examined the distribution of normalised LFCs for each screen (Figure 3B). This revealed that the core essential genes formed distributions distinct from those of olfactory receptors and other non-essential genes in all wild-type screens, with the exception of the Haapaniemi et al. screen where the separation was minimal (the smaller median LFC in our screen compared to the other four successful screens did not notably hinder our ability to distinguish essential genes). Taken together, these analyses provide further evidence that CRISPR-Cas9 screens can be performed successfully in a p53-proficient background. It appears that the Haapaniemi et al. screen is an outlier in its inability to robustly detect essential genes, possibly due to differences in experimental design and execution, and perhaps reflecting relatively low editing efficiency of the polyclonal RPE-1 population used in this screen. This factor strengthens the importance of carefully selecting clones with high Cas9 editing efficiency and also for the use of biological replicates, to enable recognition of common screen results that are independent of clonal background.\n\nWe noted that while the median LFC is higher in the LTRI/MDACC, Hart, UBC and MSKCC screens, the variance is also increased when compared to ours. Consequently, we interrogated the relationship between the standard deviation (SD) of the LFCs and the mean LFC values for each of the wild-type screens. Figure 3C shows that the variance in LFC between guides targeting the same gene is less in our screen than in these other screens. We speculate that this decrease in variance is linked to the much higher gRNA representation kept throughout our screen (>1000 x mean gRNA representation) than in these other screens, although we cannot discard the possibility that the dual-sgRNA system we used is the cause of this effect. High gRNA representation is relevant for the success and reliability of CRISPR-Cas9 screens, with most published recommendations suggesting screening to at least 200x gRNA representation (Aregger et al., 2019) but ideally\u00a0>500 x (Joung et al., 2017). Importantly, high representation must be maintained throughout cell culture and also in the PCR amplification steps. Sufficient sequencing depth is also essential to maintain the sensitivity achieved through high gRNA representation. Figure 3D demonstrates the variability in guide abundance determined by sequencing reads across the screens analysed. The MSKCC screen is the only dataset to show a distribution with a substantial number of zero reads in the final samples, which accounts for the decreased variance at more negative LFCs in this screen (Figure 3\u2014figure supplement 1). Through modelling the effect of decreased sequencing depth in our data, we demonstrate that low read counts can notably decrease screen sensitivity (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55325/elife-55325-fig3-v1.jpg)\n\n**Figure 3.:** (A) Receiver operating characteristic curves of MAGeCK p-values, discriminating between core essential and not core essential genes in TP53 WT cells. (B) Distribution of normalised log2 fold changes (LFCs). The solid lines give kernel density estimates for each distribution, and the dashed line shows the median LFC of the core essential genes. (C) Mean LFC vs standard deviation (SD) per gene for genes with mean LFC < 0. As the SD is expected to scale with mean LFC, and the LFC distributions vary between experiments, ordinary least squares regressions were performed to determine the size of the variance across the range of LFCs. The dashed line shows the line of best fit and the equation for each line is given in the chart. (D) Log2 guide abundance across all screens. Box plots give median and quartile values.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55325/elife-55325-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Mean and standard deviation (SD) of LFC per gene in the MSKCC data are shown. Points are coloured by the number of guides targeting a gene that have abundance equal to zero in both end\u00a0point\u00a0replicates.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55325/elife-55325-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The read abundances of our screens were resampled to different levels and analysed with MAGeCK. Cumulative proportion of core essential genes with depletion -log10(p) greater than values given on the y-axis. The mean proportions across 5-replicate sampling are given.\n\n### Conclusions\n\nIn summary, we present data from parallel screens in TP53 wild-type and TP53KO RPE-1 cells, which demonstrate that a p53-mediated response does negatively impact the sensitivity of CRISPR-Cas9 screens. The extent of the impact of TP53 status on CRISPR-Cas9 screens might vary depending on the cell type being studied, including those with loss-of-function mutations in TP53 without being fully TP53 null. It remains to be established precisely how and to what extent different TP53 mutations, including \u2018hotspot\u2019 mutations, might influence CRISPR-Cas9 screen performance. However, we anticipate that most or all cell lines with an intact TP53 pathway and proper cell-cycle checkpoint activation would likely recapitulate our findings. Other important factors impacting sensitivity include the guide RNA library used, the magnitude of guide effects, adequate gRNA representation and sufficient sequencing depth. Selection of high-editing efficiency Cas9-expressing cells is also highly recommended and use of biological replicates enables identification of clonal variation. Considering these factors in screen design and execution allows successful CRISPR-Cas9 screens to be carried out in both p53-proficient and p53-deficient cells, thereby fostering new biological insights.\n\n## Materials and methods\n\n### Dual-sgRNA library design\n\nA custom dual-sgRNA library was designed to target 852 genes related to the DNA damage response, 112 olfactory-receptor genes, and 14 sequence scrambled negative controls with a total of 3404 dual-sgRNAs. The genes targeted by this library include a total of 95 core essential genes. The sgRNA sequences and pairwise scores were determined using the Croatan scoring algorithm (Erard et al., 2017). Transomic Technologies selected the top pairs of sgRNAs for each gene and assigned a distinct barcode to each pair, cloned them into the pCLIP-dual-SFFV-ZsGreen vector, and packaged them into lentiviral particles ready for transduction. For pooled screening, the viral titre was determined by exposing cells to a 6-point dose response of the lentiviral stock. The optimal concentration of virus to achieve a multiplicity of infection (MOI) of 0.3 was determined by linear regression analysis.\n\n### CRISPR-Cas9 screens\n\nCRISPR-Cas9 screens were performed using the custom dual-sgRNA DNA damage response library outlined above. Biological duplicates (two independently isolated Cas9-expressing clones) of wild-type and TP53KO RPE-1 cells were transduced at a MOI of 0.3 and\u00a0>1,000 fold coverage of the library. The following day, cells were cultured with puromycin to select for the transductants for 12 additional days. Surviving cells from each biological replicate were harvested prior to puromycin selection (day 3), and at day 15 and day 19 after initial transduction. Subsequently, the genomic DNA (gDNA) was isolated using TAIL buffer (17 mM Tris pH 7.5, 17 mM EDTA, 170 mM NaCl, 0.85% SDS, and 1 mg/mL Proteinase K) and subjected to 24 PCR reactions with custom indexed primers designed to amplify the barcode within the lentiviral backbone and append Illumina adapter sequences. Finally, the PCR products were purified (QIAquick PCR Purification kit, Qiagen), multiplexed, and sequenced on an Illumina HiSeq1500 system. Genes enriched or depleted in the day 15 and day 19 samples compared to the day 3 samples were determined using MAGeCK v0.5.9.2 (Li et al., 2014).\n\n### Cell culture\n\nRPE-1 TP53 wild-type and TP53KO cells were cultured in DMEM/F-12 media (Dulbecco\u2019s Modified Eagle Medium: Nutrient Mixture Ham\u2019s F-12, Sigma-Aldrich) supplemented with 17 mL of 7.5% NaHCO3 (Sigma-Aldrich) per 500 mL, 10% (v/v) foetal bovine serum (FBS, BioSera), 100 U/mL penicillin, 100 \u00b5g/mL streptomycin (Sigma-Aldrich), 2 mM L-glutamine, and 10 \u03bcg/mL blasticidin (Sigma-Aldrich) to select for Cas9 expressing cells. Cells were additionally cultured with 1.5 \u00b5g/mL puromycin during selection of the transductants.\n\n### Western blot\n\nRPE-1 TP53 wild-type and TP53KO cells were harvested in 100\u2013200 uL of Laemmli buffer (120 mM Tris 6.8 pH, 4%SDS, 20% glycerol). Protein concentrations were determined using a NanoDrop spectrophotometer (Thermo Scientific) at A280 nm. SDS-PAGE was performed with 35 \u00b5g of protein lysates, the proteins were resolved on a precast NuPAGE Novex 4\u201312% Bis/Tris gradient gel (Invitrogen). Resolved proteins were transferred to a nitrocellulose membrane (GE Healthcare) and immunoblotted with the following antibodies at a 1/1,000 dilution: p53 (#554293, BD Biosciences) and GAPDH (#MAB374, Merck Millipore).\n\n### Human cell line generation\n\nRPE-1 wild-type cells were originally obtained from the ATCC cell repository by Professor Jonathon Pines. They were routinely tested for mycoplasma and were authenticated using Affymetrix SNP6 copy number analysis. RPE-1 TP53KO cells were generated as described previously (Chiang et al., 2016). The TP53 wild-type and TP53KO RPE-1 cells were transduced with a lentiviral vector encoding Cas9 and a blasticidin resistance cassette to facilitate the isolation of Cas9-expressing clones. Limiting dilution of the transduced population enabled isolation of monoclonal cell lines. Cas9 expression was validated by western blot and Cas9 editing efficiency was assayed by transducing clones with a lentiviral vector encoding GFP, BFP, and a sgRNA for GFP (obtained from Dr Emmanouil Metzakopian, UK Dementia Research Institute, Cambridge, UK). Transduced and non-transduced cells were subjected to FACS sorting using an LSRFortessa (BD Biosciences) flow cytometer. The Cas9 editing efficiency for each clone was calculated by comparing the percentage of BFP+ (i.e. edited) cells to the GFP/BFP+ cells (i.e. total transduced population) using FlowJo.\n\n### Statistical software used\n\nStatistical analyses were performed in Python (3.7.5), using the following packages in particular:\n\n### CRISPR screen re-analyses\n\nData files containing guide abundances were downloaded from https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE128210.\n\nSupplementary file 5 lists the origins of the data. Where multiple timepoints were available, the day 18 timepoint was used. Guides targeting genes not present in our DDR library were removed from the abundance tables, and MAGeCK (0.5.9.2) was used to obtain significance values for depletion and enrichment of genes. The command line arguments remove-zero-threshold=10 and remove-zero=control were used.\n\n### LFC normalisation\n\nLFCs were normalised by subtracting the mean of the olfactory receptor (OR) genes from all values, and then dividing all values by the SD of the OR genes.\n\n### Resampling\n\nTo simulate smaller sequencing runs, guide abundances were resampled by N random draws using the initial abundances as weights. N was set to yield expected median abundances ranging between 10 and 1000. MAGeCK was used to obtain significance values as above. five replicate draws were performed per sample.\n\n### Pathway analysis\n\nGenes within the library were annotated according to KEGG (Kyoto Encyclopedia of Genes and Genomes) pathway. Selection of relevant pathways within the library was based on classifications by Pearl et al. (2015). The enrichment of genes with p<0.05 in these pathways was evaluated using Fisher\u2019s exact test. Genes that were depleted over time, or enriched, were tested separately.\n",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "295cdca5-9df0-429a-8918-2f97fb39e4ff",
+      "submission_id": "c9ed0813-7462-4b47-93fe-53de1d7ec463",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jean-Christophe Marine, Vlaams Instituut voor Biotechnologie Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55325.sa1](https://doi.org/10.7554/eLife.55325.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nAll reviewers have pointed out the importance, relevance and timely nature of the work. The effect of p53 status on the performance of CRISPR-Cas9 screens has indeed been debated and we believe that your study makes a significant contribution in resolving this issue.\n\nDecision letter after peer review:\n\nThank you for submitting your work entitled \"Parallel CRISPR-Cas9 screens clarify impacts of p53 on screen performance\" for consideration by eLife. Your article has been reviewed by three reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor.\n\nAll three reviewers have pointed out the importance, relevance and timely nature of the work. The effect of p53 status on the performance of CRISPR-Cas9 screens has indeed been debated and we believe that your study makes a significant contribution in resolving this issue.\n\nThey raised, however, several issues that need to be addressed before acceptance, as outlined below:\n\n1) Please address the textual changes proposed by reviewer 1.\n\n2) Indicate which genes -in addition to those highlighted- are substantially enriched or depleted in the WT screen and whether they belong to specific functional groups. Please discuss/speculate on why these genes were selected in this screen.\n\n3) Provide a rationale for choosing DDR as the targeted screen (reviewer 2).\n\nPlease find below all the reviewers' comments:\n\nReviewer #1:\n\nThis is an interesting and timely piece of work.\n\nI have two remarks:\n\n1) The screen is performed in one model cell type/system (retinal pigment epithelial cells). Knowing that the type (G1 arrest, senescence, apoptosis,..) and extend of the p53 response can vary dramatically from one cell type to another, one question that emerges is that how can one generalise the findings? The authors may add a statement in the Discussion about this. Similarly the control line is p53 KO. As stated in the Introduction, 50% of human cancers (cell lines) carry TP53 loss of function mutations (but are not fully KO). It maybe interesting to introduce some of the hotspot mutations in the authors' preferred model system and ask how much this would influence the results.\n\n2) The authors argue that biologically meaningful enrichment and depletion analyses can still be performed in TP53 WT cells. This is correct if one is interested in p53 biology. It maybe also important to highlight enrichment or depletion of essential genes that do not act in the p53 pathway, when describing this part of the data.\n\nReviewer #2:\n\nIn this brief report, Bowden, Juarez and colleague address an important issue in the genome editing field: the effect of p53 status on the performance of CRISPR-Cas9 screens. Previous studies had reported that activation of the p53 response by the DSBs induced by CRISPR-Cas9 negatively impacted the outcome of genome wide and targeted screens, presumably by causing the elimination of gene-edited cells.\n\nTo directly test this hypothesis, the authors performed pooled, dual guides, targeted CRISPR-Cas9 screens in isogenic WT and p53-KO RPE-1 cells using 852 gRNAs targeting DNA damage response genes, 112 control gRNAs targeting olfactory receptor genes, and 14 scrambled gRNAs.\n\nThe experiments were performed in two independent clones per genotype, and at two timepoints (15 and 19 days).\n\nThe authors convincingly show that the screens can efficiently identify core essential genes in both genotypes, although the screens performed better in the KO clones: lower q-values and greater average gRNA depletion (log2 Fold change) for essential genes. Reassuringly, known p53 regulators score positive for enrichment and depletion selectively in the WT background.\n\nFinally, their screen in WT RPE-1 cells shows good correlation with similar screens performed in the same cell line by other groups, with the significant exception of Haapaniemi et al., whose screen appears to be an outlier.\n\nCollectively, these results are of substantial interest to the scientific community and will guide the optimal design of future screens. The experiments are well performed, the results are clearly described, and their interpretation seems accurate. The relevant scientific literature is cited. The computational approaches used seem appropriate to me.\n\nI only have a few comments:\n\n1) The rationale for choosing DDR for the targeted screen is not entirely clear and should be discussed.\n\n2) The authors should explicitly indicate how many of the genes targeted by the screen are considered \"Core essential\".\n\n3) In Figure 2E it appears that several other genes in addition to those highlighted are substantially enriched or depleted in the WT screen. Can the authors comment on those as well?\n\n4) The authors interpret the lower depletion of core essential genes detected in the WT background compared to the KO background (Figure 2D) as likely resulting from the general DDR response induced by the gRNAs in the WT cells. This is certainly a plausible explanation, but another trivial possibility is that the KO clones simply have a faster population doubling compared to WT cells, even in the absence of an exogenous source of DNA damage. To exclude this possibility it would be important to directly compare the growth rate of the 4 RPE-1 clones.\n\nReviewer #3:\n\nIn the present manuscripts the authors compare the differences that might arise in defining essential genes when performing CRISPR screens in p53WT vs p53 deficient cells. This has been somewhat confusing due to reports for instance from the Taipale lab claiming that P53 proficient cells were not suitable to conduct such screens. The reasoning behind is that the breaks generated by the CAS9 would activate a P53-dependent toxic response in cells which can mask the results of these studies and reduce the window to identify bona-fide essential genes.\n\nTo address this, the authors have generated a novel CRISPR library for DNA damage response genes, based on dual sgRNAs to favour gene deletion events. The study was conducted by comparing essential genes in P53 WT and KO RPE human cells.\n\nThe study is well performed, and clearly shows that gene essentiality screens can in fact be conducted in P53 WT cells. The authors show a few examples of genes that are preferentially lost in both backgrounds, which make sense.\n\nIn my opinion, the work is well done and the data provided support the main claim of the authors. Namely, that gene essentiality screens can be conducted in P53 WT cells. Since this has been somewhat confusing in the field of screens, I guess it will be clarifying to have it published.\n\nThat being said, I somewhat guess that the initial objective of this study was not to enter into this dispute, but rather a more exciting experiment in the look for genes that are selectively essential for P53-KO cells.\n\nDue to the covid crisis, I sincerely feel in no position to ask the authors for more experiments. But perhaps, they could still work a bit more on their existing data and make a better paper if they do a bit more analysis and representations of their data. For instance; they could provide a comprehensive list of all the genes that are selectively lost in P53-KO cells, and discuss/speculate on why this could be. In addition, they could also provide a list of genes that are essential in P53 WT cells, but not in P53-KO ones. This is relevant as many DDR genes are essential in mice, in a manner that is rescued by P53 loss. Dissecting which ones behave in this manner and which ones not, might turn out to be informative.\n\nIn summary, I think the data provided is enough to end the discussion on whether gene essentiality screens can be done in P53 WT cells. Before publication, I would suggest the authors work a bit more in the analysis of their data and the presentation, as the same data can make an even nicer paper for their readers.\n",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aa269701-5362-4d53-af4e-5cb44dd1e2f6",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C1",
+      "claim": "CRISPR-Cas9 genome engineering has revolutionised high-throughput functional genomic screens.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR-Cas9 genome engineering has revolutionised high-throughput functional genomic screens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the impact of CRISPR-Cas9 technology, drawing from established scientific consensus in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "f46531e4-ae22-4106-b8f5-4ed9a0d582cd",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C2",
+      "claim": "Recent work has raised concerns regarding the performance of CRISPR-Cas9 screens using TP53 wild-type human cells due to a p53-mediated DNA damage response limiting the efficiency of generating viable edited cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent work has raised concerns regarding the performance of CRISPR-Cas9 screens using TP53 wild-type human cells due to a p53-mediated DNA damage response (DDR) limiting the efficiency of generating viable edited cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references recent work in the field, supported by citations in the introduction section (Haapaniemi et al., 2018; Ihry et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "dc53f794-273e-4544-9b68-6e23baf6db9b",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C3",
+      "claim": "Functional p53 status negatively affects identification of significantly depleted genes in CRISPR-Cas9 screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work demonstrates that although functional p53 status negatively affects identification of significantly depleted genes, optimal screen design can nevertheless enable robust screen performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the authors' experimental work comparing wild-type and TP53 knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "34e99985-16ab-4581-966b-422e7c1ccd59",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C4",
+      "claim": "Optimal screen design can enable robust CRISPR-Cas9 screen performance despite functional p53 status.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work demonstrates that although functional p53 status negatively affects identification of significantly depleted genes, optimal screen design can nevertheless enable robust screen performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the authors' experimental data and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "2fe9a3f4-d8b4-4644-b72c-5ee2c52622d5",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C5",
+      "claim": "Pooled CRISPR-Cas9 cell viability screens have been successfully employed in determining gene essentiality.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooled CRISPR-Cas9 cell viability screens have been successfully employed in determining gene essentiality (Hart et al., 2015), identifying genetic interactions (Chan et al., 2019) and assessing drug sensitivities across various genetic backgrounds (Han et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hart et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "9f9447fb-08e7-402e-ab61-709350be8c58",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C6",
+      "claim": "Pooled CRISPR-Cas9 cell viability screens have been successfully employed in identifying genetic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooled CRISPR-Cas9 cell viability screens have been successfully employed in determining gene essentiality (Hart et al., 2015), identifying genetic interactions (Chan et al., 2019) and assessing drug sensitivities across various genetic backgrounds (Han et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Chan et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "c38dd271-12e2-445d-bdf7-32097440af93",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C7",
+      "claim": "Pooled CRISPR-Cas9 cell viability screens have been successfully employed in assessing drug sensitivities across various genetic backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooled CRISPR-Cas9 cell viability screens have been successfully employed in determining gene essentiality (Hart et al., 2015), identifying genetic interactions (Chan et al., 2019) and assessing drug sensitivities across various genetic backgrounds (Han et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Han et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "885b102f-f3a9-492d-a9d7-2b5c098af965",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C8",
+      "claim": "Recent reports concerning technical difficulties in CRISPR-Cas9 genome editing in p53-proficient cells have brought into question the suitability of p53-proficient cell lines for high throughput CRISPR-Cas9 genetic screens.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, recent reports concerning technical difficulties in CRISPR-Cas9 genome editing in p53-proficient cells, have brought into question the suitability of p53-proficient cell lines for high throughput CRISPR-Cas9 genetic screens (Haapaniemi et al., 2018; Ihry et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Haapaniemi et al., 2018 and Ihry et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "228eb123-bd54-4f21-8326-ad5c59ad18df",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C9",
+      "claim": "TP53 acts as a master regulator of cell-cycle checkpoint activation.",
+      "claim_type": "EXPLICIT",
+      "source": "TP53, encoding p53, acts as a master regulator of cell-cycle checkpoint activation (Kastan et al., 1991), cellular senescence (Shay et al., 1991) and induction of apoptosis in response to DNA damage (Clarke et al., 1993; Lowe et al., 1993; Lakin and Jackson, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kastan et al., 1991.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "6c793f10-c195-498c-8aa4-e146af98ea92",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C10",
+      "claim": "TP53 acts as a master regulator of cellular senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "TP53, encoding p53, acts as a master regulator of cell-cycle checkpoint activation (Kastan et al., 1991), cellular senescence (Shay et al., 1991) and induction of apoptosis in response to DNA damage (Clarke et al., 1993; Lowe et al., 1993; Lakin and Jackson, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Shay et al., 1991.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "09c64bca-02f8-4f24-8283-5840cff5d17c",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C11",
+      "claim": "TP53 acts as a master regulator of induction of apoptosis in response to DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "TP53, encoding p53, acts as a master regulator of cell-cycle checkpoint activation (Kastan et al., 1991), cellular senescence (Shay et al., 1991) and induction of apoptosis in response to DNA damage (Clarke et al., 1993; Lowe et al., 1993; Lakin and Jackson, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Clarke et al., 1993; Lowe et al., 1993; Lakin and Jackson, 1999.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "ac7a73e4-6401-4a9c-ae2b-66058b64ff38",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C12",
+      "claim": "TP53 is the most important tumour suppressor gene, with loss of function mutations in up to 50% of human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "TP53 is arguably the most important tumour suppressor gene, with loss of function mutations in up to 50% of human cancers (Bouaoun et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bouaoun et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "4ae93c1b-b6a4-4078-9209-ceb3b89ef6f0",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C13",
+      "claim": "Generation of DNA double strand breaks induces p53-dependent cell-cycle arrest in normal fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Generation of DNA double strand breaks (DSBs) induces p53-dependent cell-cycle arrest in normal fibroblasts (Di Leonardo et al., 1994), and most CRISPR-Cas9 genome editing approaches rely on DSB generation to achieve efficient editing (Jinek et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Di Leonardo et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "2e6d80e7-3cf5-44e8-9947-bb76d0a3a9f1",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C14",
+      "claim": "Most CRISPR-Cas9 genome editing approaches rely on DSB generation to achieve efficient editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Generation of DNA double strand breaks (DSBs) induces p53-dependent cell-cycle arrest in normal fibroblasts (Di Leonardo et al., 1994), and most CRISPR-Cas9 genome editing approaches rely on DSB generation to achieve efficient editing (Jinek et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Jinek et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "e25b517a-829e-43b6-9573-d52534793e92",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C15",
+      "claim": "CRISPR-Cas9-associated DSBs in hPSCs induce a p53-mediated apoptotic response, leading to high levels of toxicity and reduced editing efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has shown that CRISPR-Cas9-associated DSBs in hPSCs (human pluripotent stem cells) induce a p53-mediated apoptotic response, leading to high levels of toxicity and reduced editing efficiency in this background (Ihry et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ihry et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "60fbc1ac-ee52-44bf-8017-634491630762",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C16",
+      "claim": "A p53-mediated DSB response in wild-type RPE-1 cells severely impaired identification of essential genes in a CRISPR-Cas9 screen when compared to RPE-1 TP53KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a similar p53-mediated DSB response in wild-type retinal pigment epithelial (RPE-1) cells reportedly severely impaired identification of essential genes in a CRISPR-Cas9 screen when compared to RPE-1 TP53 knockout (TP53KO) cells (Haapaniemi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Haapaniemi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "110ef972-6bc3-47d5-a5b5-38a38d85cd01",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C17",
+      "claim": "Analysis of data from a small number of additional screens in p53 wild-type RPE-1 cells has shown that performance of successful CRISPR screens is possible in this cellular background.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, analysis of data from a small number of additional screens in p53 wild-type RPE-1 cells has shown that performance of successful CRISPR screens, as determined by essential gene identification and enrichment of expected targets, is possible in this cellular background (Brown et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Brown et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "c91337bc-29ea-4a3e-b3b3-159e23c00db3",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C18",
+      "claim": "The authors carried out parallel CRISPR-Cas9 screens in wild-type and TP53KO RPE-1 cells with two independent Cas9-expressing monoclonal populations for each genetic background.",
+      "claim_type": "EXPLICIT",
+      "source": "We carried out parallel screens, in wild-type and TP53KO RPE-1 cells with two independent Cas9-expressing monoclonal populations for each genetic background, selected based on p53 status and high Cas9 cutting efficiency (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "72814cc6-8579-4ac3-9e38-4637749b021a",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C19",
+      "claim": "The authors designed a bespoke dual guide RNA library targeting 852 DDR-related genes, with 112 olfactory receptor genes included as non-essential gene controls and 14 sequence-scrambled negative controls.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate high screen sensitivity and in-depth interrogation of p53-mediated responses to CRISPR-Cas9-associated DSBs, we designed a bespoke dual guide RNA library targeting 852 DDR-related genes, with 112 olfactory receptor genes included as non-essential gene controls and 14 sequence-scrambled negative controls (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design and materials used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "382701b3-2250-48cf-bfd3-2377e5735d56",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C20",
+      "claim": "The smaller size of the custom library compared to a whole genome library enabled high guide representation (>1000 x) to be maintained throughout the screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the smaller size of this library compared to a whole genome library enabled high guide representation (>1000 x) to be maintained throughout the screen, minimising the impact of this key factor on screen sensitivity (Miles et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design with citation to Miles et al., 2016 for the importance of guide representation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "acf3e7fa-54aa-4025-b67a-0e87861e75df",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C21",
+      "claim": "High guide representation minimises the impact on screen sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the smaller size of this library compared to a whole genome library enabled high guide representation (>1000 x) to be maintained throughout the screen, minimising the impact of this key factor on screen sensitivity (Miles et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Miles et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "8e058087-9adf-43c1-89e4-beb52ec59add",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C22",
+      "claim": "The dual guide RNA vector design increases the frequency of functional knockout events in transduced cells compared to the canonical single guide RNA approach.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our library incorporated a dual guide RNA vector design (Erard et al., 2017) to increase the frequency of functional knockout events in transduced cells compared to the canonical single guide RNA (sgRNA) approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Erard et al., 2017 and describes the rationale for the experimental design.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "527ccb87-8082-4143-836c-ac5178e45bbf",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C23",
+      "claim": "Depletion of core essential genes was clearly evident in both wild-type and TP53KO backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "In our screens, depletion of core essential genes (as defined by Hart et al., 2017) was clearly evident in both wild-type and TP53KO backgrounds (Figure 2A and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the authors' experimental data, shown in Figure 2A and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "313d4b2f-c821-436c-a177-afc6e7d48385",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C24",
+      "claim": "The TP53KO screen slightly outperformed the wild-type screen at both harvesting timepoints in terms of detection of essential genes by rank.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the TP53KO screen slightly outperformed the wild-type screen at both harvesting timepoints in terms of detection of essential genes by rank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' analysis of their experimental data, supported by the ROC curve analysis mentioned in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "754006a5-156f-4a34-8056-b5577d79901f",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C25",
+      "claim": "Essential genes were much more likely to have low adjusted p-values (q-values) in the TP53KO background, compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "When the significance of gene depletions was considered, we found that essential genes were much more likely to have low adjusted p-values (q-values) in the TP53KO background, compared to wild-type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' analysis of their experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "48f68e04-320f-4fcb-aa95-0c143756ee9d",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C26",
+      "claim": "The day 19 timepoint outperformed the day 15 timepoint, detecting increased numbers of essential genes at a given significance threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed that the day 19 timepoint outperformed the day 15 timepoint, detecting increased numbers of essential genes at a given significance threshold (Figure 2C and Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' analysis of their experimental data, shown in Figure 2C and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "0b57c59a-60ab-4a76-bff7-1cd8da23bbc3",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C27",
+      "claim": "Log fold changes across non-core essential genes were not significantly different between the two genetic backgrounds (p=0.60).",
+      "claim_type": "EXPLICIT",
+      "source": "While log fold changes (LFCs) across non-core essential ('not essential') genes were not significantly different between the two genetic backgrounds (p=0.60), LFCs for core essential genes were significantly lower in the TP53KO screens compared to screens in TP53 wild-type settings (p=0.0010) (Figure 2D), consistent with wild-type cells initiating a p53-mediated response to Cas9-induced DSBs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the authors' analysis of their experimental data, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "4e862cfe-bc9f-432b-b3c8-e47e89d95d5f",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C28",
+      "claim": "LFCs for core essential genes were significantly lower in the TP53KO screens compared to screens in TP53 wild-type settings (p=0.0010).",
+      "claim_type": "EXPLICIT",
+      "source": "While log fold changes (LFCs) across non-core essential ('not essential') genes were not significantly different between the two genetic backgrounds (p=0.60), LFCs for core essential genes were significantly lower in the TP53KO screens compared to screens in TP53 wild-type settings (p=0.0010) (Figure 2D), consistent with wild-type cells initiating a p53-mediated response to Cas9-induced DSBs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the authors' analysis of their experimental data, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "6190bda4-6ed5-4536-8c5d-bbe1a3bde95b",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C29",
+      "claim": "Wild-type cells initiate a p53-mediated response to Cas9-induced DSBs that inhibits the proliferation rates of all transduced cells during the course of the screens.",
+      "claim_type": "EXPLICIT",
+      "source": "This would inhibit the proliferation rates of all transduced cells during the course of the screens, leading to smaller LFCs and a narrower distribution of guides within the population, with a consequent reduction in genes with significant depletion scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the authors' experimental data to explain the observed differences in LFCs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "b426d050-bf5c-403f-ae69-03ff2300d3cc",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C30",
+      "claim": "In TP53 wild-type cells, guides targeting TP53 were the most significantly enriched.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, in TP53 wild-type cells, guides targeting TP53 were the most significantly enriched, with guides targeting other components of the p53 pathway showing the most significant differences between the two genetic backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' analysis of their experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "35983d04-488b-4323-89ec-1b643845056d",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C31",
+      "claim": "Guides targeting CDKN1A were significantly enriched in the TP53 wild-type background.",
+      "claim_type": "EXPLICIT",
+      "source": "Guides significantly enriched in the TP53 wild-type background included those targeting CDKN1A that encodes p21, the major downstream mediator of p53-mediated cell cycle arrest (el-Deiry et al., 1993), and those targeting USP28 that encodes a deubiquitylating enzyme that acts to stabilise p53 (Zhang et al., 2006; Cuella-Martin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' experimental data, with citation to el-Deiry et al., 1993 for the function of CDKN1A/p21.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "791c144d-43e0-4c25-928a-70002e4d18fd",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C32",
+      "claim": "CDKN1A encodes p21, the major downstream mediator of p53-mediated cell cycle arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Guides significantly enriched in the TP53 wild-type background included those targeting CDKN1A that encodes p21, the major downstream mediator of p53-mediated cell cycle arrest (el-Deiry et al., 1993), and those targeting USP28 that encodes a deubiquitylating enzyme that acts to stabilise p53 (Zhang et al., 2006; Cuella-Martin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to el-Deiry et al., 1993.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "f290170f-638e-4a8f-a10c-d5902f629d12",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C33",
+      "claim": "Guides targeting USP28 were significantly enriched in the TP53 wild-type background.",
+      "claim_type": "EXPLICIT",
+      "source": "Guides significantly enriched in the TP53 wild-type background included those targeting CDKN1A that encodes p21, the major downstream mediator of p53-mediated cell cycle arrest (el-Deiry et al., 1993), and those targeting USP28 that encodes a deubiquitylating enzyme that acts to stabilise p53 (Zhang et al., 2006; Cuella-Martin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' experimental data, with citations to Zhang et al., 2006 and Cuella-Martin et al., 2016 for the function of USP28.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "adb706c9-6003-4c50-9199-840cafe8f161",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C34",
+      "claim": "USP28 encodes a deubiquitylating enzyme that acts to stabilise p53.",
+      "claim_type": "EXPLICIT",
+      "source": "Guides significantly enriched in the TP53 wild-type background included those targeting CDKN1A that encodes p21, the major downstream mediator of p53-mediated cell cycle arrest (el-Deiry et al., 1993), and those targeting USP28 that encodes a deubiquitylating enzyme that acts to stabilise p53 (Zhang et al., 2006; Cuella-Martin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Zhang et al., 2006 and Cuella-Martin et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "f8b2c934-95d7-4c33-b6b7-372922dd0d08",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C35",
+      "claim": "Guides targeting MDM2 and MDM4 were significantly depleted in the wild-type but not the TP53 knockout background.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, guides targeting genes that were significantly depleted in the wild-type but not the TP53 knockout background included MDM2 and MDM4, which act as negative regulators of p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "5b630d46-0005-4424-94c9-c6931ee2893b",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C36",
+      "claim": "MDM2 is an E3 ubiquitin ligase that targets p53 for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "MDM2 is an E3 ubiquitin ligase that targets p53 for degradation (Haupt et al., 1997), while MDM4 inhibits p53-dependent transcriptional activity (Francoz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Haupt et al., 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "9073dca5-75e2-4b64-b383-6b65504fea44",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C37",
+      "claim": "MDM4 inhibits p53-dependent transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "MDM2 is an E3 ubiquitin ligase that targets p53 for degradation (Haupt et al., 1997), while MDM4 inhibits p53-dependent transcriptional activity (Francoz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Francoz et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "37ced927-01a0-47fa-90d4-7b6936a4123f",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C38",
+      "claim": "SETDB1 was enriched in the TP53 wild-type background.",
+      "claim_type": "EXPLICIT",
+      "source": "SETDB1, which acts via MDM2, was also enriched in the TP53 wild-type background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "85851ea2-32e9-4bf0-8145-9c435fc700cf",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C39",
+      "claim": "SETDB1 forms a complex with p53 and catalyses p53 K370 di-methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "This protein forms a complex with p53 and catalyses p53 K370 di-methylation. Attenuation of SETDB1 reduces the level of di-methylation at this site, leading to increased recognition and degradation of p53 by MDM2 (Fei et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Fei et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "98fdd1e0-4554-44be-af8b-437b323f0a8a",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C40",
+      "claim": "Attenuation of SETDB1 reduces the level of di-methylation at p53 K370, leading to increased recognition and degradation of p53 by MDM2.",
+      "claim_type": "EXPLICIT",
+      "source": "This protein forms a complex with p53 and catalyses p53 K370 di-methylation. Attenuation of SETDB1 reduces the level of di-methylation at this site, leading to increased recognition and degradation of p53 by MDM2 (Fei et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Fei et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "60643d79-1a3e-4e3f-8d19-386fef212e56",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C41",
+      "claim": "Cell cycle and p53 signalling were the two pathways that were enriched when assessing enrichment/depletion of specific biological pathways between the wild-type and TP53KO backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when we assessed the enrichment/depletion of specific biological pathways between the wild-type and TP53KO backgrounds, cell cycle and p53 signalling were the two pathways that were enriched (Figure 2\u2014figure supplement 2 and Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' pathway analysis of their experimental data, shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "c1d67bab-ee02-40f3-b61a-d2393fa8e098",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C42",
+      "claim": "EP300 was enriched on both genetic backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "EP300 was enriched on both genetic backgrounds and has an established role as a tumour suppressor through the regulation of the G1/S cell-cycle transition (Ait-Si-Ali et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' experimental data, with citation to Ait-Si-Ali et al., 2000 for the function of EP300.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "dc3c0ddd-5349-4134-92c6-dfa122352c3b",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C43",
+      "claim": "EP300 has an established role as a tumour suppressor through the regulation of the G1/S cell-cycle transition.",
+      "claim_type": "EXPLICIT",
+      "source": "EP300 was enriched on both genetic backgrounds and has an established role as a tumour suppressor through the regulation of the G1/S cell-cycle transition (Ait-Si-Ali et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ait-Si-Ali et al., 2000.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "f430e4e1-c38b-48bd-a206-3cb4e6e91e8a",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C44",
+      "claim": "CCNA2 was depleted on both genetic backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "CCNA2, or cyclin A2, was depleted on both genetic backgrounds as it interacts with both CDK1 and CDK2 to drive S-phase progression and regulate the G1/S and G2/M phases of the cell-cycle (Pagano et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' experimental data, with citation to Pagano et al., 1992 for the function of CCNA2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "6c304f0c-40d6-4a1f-98b2-090eeedfc794",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C45",
+      "claim": "CCNA2 interacts with both CDK1 and CDK2 to drive S-phase progression and regulate the G1/S and G2/M phases of the cell-cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "CCNA2, or cyclin A2, was depleted on both genetic backgrounds as it interacts with both CDK1 and CDK2 to drive S-phase progression and regulate the G1/S and G2/M phases of the cell-cycle (Pagano et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pagano et al., 1992.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "15c27bcf-0bd1-484d-9d87-40dc05ead0dc",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C46",
+      "claim": "Biologically meaningful enrichment and depletion analyses at the individual gene and pathway levels can be performed in TP53 wild-type settings despite reduced screen sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results demonstrate that despite reduced screen sensitivity in p53-proficient cells, biologically meaningful enrichment and depletion analyses at the individual gene and pathway levels can, when required, still be performed in TP53 wild-type settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the authors' experimental data and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "107d2f17-fe72-474c-afb9-4ff4ca174a78",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C47",
+      "claim": "The performance of all screens was similar, with the exception of Haapaniemi et al. (2018) data which underperformed in the ability to distinguish essential genes.",
+      "claim_type": "EXPLICIT",
+      "source": "When we performed a comparative ROC curve analysis to assess the screens' abilities to discriminate between core essential genes and other genes (Figure 3A), this established that the performance of all screens was similar, with the exception of Haapaniemi et al. (2018) data which underperformed in the ability to distinguish essential genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' comparative analysis of multiple screen datasets, shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "d271d38a-9c7f-4d59-92fb-c6f5a9a5d873",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C48",
+      "claim": "Core essential genes formed distributions distinct from those of olfactory receptors and other non-essential genes in all wild-type screens, with the exception of the Haapaniemi et al. screen where the separation was minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that the core essential genes formed distributions distinct from those of olfactory receptors and other non-essential genes in all wild-type screens, with the exception of the Haapaniemi et al. screen where the separation was minimal (the smaller median LFC in our screen compared to the other four successful screens did not notably hinder our ability to distinguish essential genes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' analysis of LFC distributions across multiple screen datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "5df9c4a5-23d7-4a9e-917a-18ef838ea428",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C49",
+      "claim": "CRISPR-Cas9 screens can be performed successfully in a p53-proficient background.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these analyses provide further evidence that CRISPR-Cas9 screens can be performed successfully in a p53-proficient background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the authors' comparative analysis of multiple screen datasets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "46992174-60d1-4c38-afb1-f72129ede536",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C50",
+      "claim": "The Haapaniemi et al. screen is an outlier in its inability to robustly detect essential genes, possibly due to differences in experimental design and execution.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that the Haapaniemi et al. screen is an outlier in its inability to robustly detect essential genes, possibly due to differences in experimental design and execution, and perhaps reflecting relatively low editing efficiency of the polyclonal RPE-1 population used in this screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the authors' comparative analysis, speculating on reasons for the poor performance of the Haapaniemi et al. screen.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "cd2818ca-693d-42be-b9d0-1061b13df56e",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C51",
+      "claim": "The variance in LFC between guides targeting the same gene is less in the authors' screen than in other screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3C shows that the variance in LFC between guides targeting the same gene is less in our screen than in these other screens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "af0aa2b2-3fac-4459-a13c-4f1878464bd6",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C52",
+      "claim": "The decrease in variance in LFC is linked to the much higher gRNA representation kept throughout the authors' screen (>1000 x mean gRNA representation) than in other screens.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this decrease in variance is linked to the much higher gRNA representation kept throughout our screen (>1000 x mean gRNA representation) than in these other screens, although we cannot discard the possibility that the dual-sgRNA system we used is the cause of this effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation by the authors about the cause of the observed decrease in variance.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "599a0996-467b-4b91-8029-2f6b6cb306fd",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C53",
+      "claim": "High gRNA representation is relevant for the success and reliability of CRISPR-Cas9 screens.",
+      "claim_type": "EXPLICIT",
+      "source": "High gRNA representation is relevant for the success and reliability of CRISPR-Cas9 screens, with most published recommendations suggesting screening to at least 200x gRNA representation (Aregger et al., 2019) but ideally >500 x (Joung et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Aregger et al., 2019 and Joung et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "ec30c9c4-5962-436e-b9b6-e6c5327f5c70",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C54",
+      "claim": "Most published recommendations suggest screening to at least 200x gRNA representation.",
+      "claim_type": "EXPLICIT",
+      "source": "High gRNA representation is relevant for the success and reliability of CRISPR-Cas9 screens, with most published recommendations suggesting screening to at least 200x gRNA representation (Aregger et al., 2019) but ideally >500 x (Joung et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Aregger et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "2f88b08a-397e-4d56-9cdc-65c00a6799be",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C55",
+      "claim": "Ideally, gRNA representation should be >500x.",
+      "claim_type": "EXPLICIT",
+      "source": "High gRNA representation is relevant for the success and reliability of CRISPR-Cas9 screens, with most published recommendations suggesting screening to at least 200x gRNA representation (Aregger et al., 2019) but ideally >500 x (Joung et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Joung et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "5a7e9b60-f6f8-473e-a0b2-6d3d644386d3",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C56",
+      "claim": "The MSKCC screen is the only dataset to show a distribution with a substantial number of zero reads in the final samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The MSKCC screen is the only dataset to show a distribution with a substantial number of zero reads in the final samples, which accounts for the decreased variance at more negative LFCs in this screen (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "6290ae73-8351-4f40-9612-ea0d55038cc5",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C57",
+      "claim": "Low read counts can notably decrease screen sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Through modelling the effect of decreased sequencing depth in our data, we demonstrate that low read counts can notably decrease screen sensitivity (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' modeling analysis shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "54b53cc1-cafe-482d-9570-89b09d735171",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C58",
+      "claim": "A p53-mediated response negatively impacts the sensitivity of CRISPR-Cas9 screens.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we present data from parallel screens in TP53 wild-type and TP53KO RPE-1 cells, which demonstrate that a p53-mediated response does negatively impact the sensitivity of CRISPR-Cas9 screens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the authors' experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "9b78a366-af8a-47d8-a5c4-ba21c8223d81",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C59",
+      "claim": "The extent of the impact of TP53 status on CRISPR-Cas9 screens might vary depending on the cell type being studied.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of the impact of TP53 status on CRISPR-Cas9 screens might vary depending on the cell type being studied, including those with loss-of-function mutations in TP53 without being fully TP53 null.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation by the authors about the generalizability of their findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "a833b964-48a6-460d-807b-33de213b882c",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C60",
+      "claim": "Most or all cell lines with an intact TP53 pathway and proper cell-cycle checkpoint activation would likely recapitulate the authors' findings.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we anticipate that most or all cell lines with an intact TP53 pathway and proper cell-cycle checkpoint activation would likely recapitulate our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation by the authors about the generalizability of their findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "ea380494-0b1f-4c4d-b56b-9b84442bda27",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C61",
+      "claim": "Important factors impacting sensitivity include the guide RNA library used, the magnitude of guide effects, adequate gRNA representation and sufficient sequencing depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Other important factors impacting sensitivity include the guide RNA library used, the magnitude of guide effects, adequate gRNA representation and sufficient sequencing depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the authors' analysis of their own and published screen data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "cbc73450-400d-4283-a65d-090ed7680eba",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C62",
+      "claim": "Selection of high-editing efficiency Cas9-expressing cells is highly recommended.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection of high-editing efficiency Cas9-expressing cells is also highly recommended and use of biological replicates enables identification of clonal variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' experimental design and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "7ba24415-d8d8-4c27-9434-f17ed63086a5",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C63",
+      "claim": "Use of biological replicates enables identification of clonal variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection of high-editing efficiency Cas9-expressing cells is also highly recommended and use of biological replicates enables identification of clonal variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' experimental design.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "bca31283-7cff-4a66-800c-aa983cef3dad",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C64",
+      "claim": "Considering key factors in screen design and execution allows successful CRISPR-Cas9 screens to be carried out in both p53-proficient and p53-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering these factors in screen design and execution allows successful CRISPR-Cas9 screens to be carried out in both p53-proficient and p53-deficient cells, thereby fostering new biological insights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the authors' work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "28a2b62d-eca1-4138-86a4-41348c06afee",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C65",
+      "claim": "The custom dual-sgRNA library targets a total of 95 core essential genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes targeted by this library include a total of 95 core essential genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the library composition used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "c663aefc-3f4f-417c-a3db-956c8a6765fe",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C66",
+      "claim": "Cells were infected at a low multiplicity of infection (MOI=0.3).",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were infected at a low multiplicity of infection (MOI=0.3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental method, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "1e11393d-70eb-4be8-9a84-9aabaae9df16",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C67",
+      "claim": "An initial sample was harvested 48 hours after infection.",
+      "claim_type": "EXPLICIT",
+      "source": "An initial sample was harvested 48 hours after infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental method, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "feecc1bf-3630-4284-b400-8f7ae50b8b75",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C68",
+      "claim": "Transduced cells were selected with puromycin and harvested at days 15 and 19.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, transduced cells were selected with puromycin and harvested at days 15 and 19.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental method, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "2f7ea42f-a51d-4289-b579-19ddb094d6aa",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C69",
+      "claim": "MAGeCK was used to determine the relative depletion and enrichment of genes in later samples compared to the 48-hour samples.",
+      "claim_type": "EXPLICIT",
+      "source": "MAGeCK (Li et al., 2014) was used to determine the relative depletion and enrichment of genes in later samples compared to the 48-hour samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the data analysis method, shown in Figure 1 and cited to Li et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "dc1e4da4-b545-43b3-a290-81570470d43d",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C70",
+      "claim": "RPE-1 wild-type cells were originally obtained from the ATCC cell repository by Professor Jonathon Pines.",
+      "claim_type": "EXPLICIT",
+      "source": "RPE-1 wild-type cells were originally obtained from the ATCC cell repository by Professor Jonathon Pines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the cell line source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "ce01b448-0550-4eee-8a60-4238b0e512a4",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C71",
+      "claim": "RPE-1 cells were routinely tested for mycoplasma and were authenticated using Affymetrix SNP6 copy number analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "They were routinely tested for mycoplasma and were authenticated using Affymetrix SNP6 copy number analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of quality control measures for the cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "d5b3c9c2-cace-49e8-9564-e181f78d48b8",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "claim_id": "C72",
+      "claim": "RPE-1 TP53KO cells were generated as described previously by Chiang et al., 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "RPE-1 TP53KO cells were generated as described previously (Chiang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the cell line generation method, supported by citation to Chiang et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4b7e5065-57e3-4681-9f21-c7fe2b8f8b9e",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Functional p53 status negatively impacts CRISPR-Cas9 screen sensitivity. The authors demonstrate through parallel screens in wild-type and TP53KO RPE-1 cells that while essential genes are depleted in both backgrounds, TP53KO screens show better detection of essential genes by rank and statistical significance, with significantly lower log fold changes for core essential genes in TP53KO compared to wild-type (p=0.0010).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C23-C29, and C58 collectively provide strong experimental evidence from parallel screens showing reduced screen sensitivity in p53-proficient cells. The statistical analysis (C27, C28) with appropriate p-values, ROC curve analysis (C24), and mechanistic interpretation (C29) converge to support this conclusion. The experimental design with biological replicates and matched genetic backgrounds minimizes confounding factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "3161160a-f1b5-45af-bcd1-dce632926050",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Despite reduced sensitivity in p53-proficient cells, optimal screen design enables successful CRISPR-Cas9 screens in wild-type backgrounds. The authors demonstrate that biologically meaningful enrichment and depletion analyses can be performed in TP53 wild-type settings when key design factors are considered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C46, C49, and C64 are supported by the authors' own experimental data showing successful essential gene detection in wild-type cells and comparative analysis with published screens (C47-C48). The identification of biologically relevant pathway enrichments (C41) and specific gene hits (C30-C44) in wild-type screens provides evidence for this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "f4b22e49-36f1-4761-8993-087adb17561d",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The screens identify expected p53 pathway components as differentially enriched or depleted between wild-type and TP53KO backgrounds. TP53, CDKN1A, USP28, and SETDB1 were enriched in wild-type, while MDM2 and MDM4 were depleted in wild-type, consistent with their known roles in p53 regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C41 describe specific gene hits that align with established p53 pathway biology (supported by citations C32, C34, C36-C37, C39-C40). The pathway analysis (C41) showing enrichment of cell cycle and p53 signaling provides additional validation. These results serve as positive controls demonstrating the screens can detect expected biological signals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "34a16d56-b791-4001-9d0a-f41564004087",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors designed and executed parallel CRISPR-Cas9 screens using a custom dual-sgRNA library targeting 852 DDR-related genes with high guide representation (>1000x) maintained throughout the screen. Two independent Cas9-expressing monoclonal populations were used for each genetic background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 and C65-C69 describe the experimental design and methodology. The use of biological replicates (C18), high guide representation (C20), dual-sgRNA design (C22), and appropriate controls (C19) represent sound experimental design. The methodology is clearly described with appropriate citations (C20, C22, C69).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "209032a6-97d2-4bc1-b65e-43d827594e2e",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Comparative analysis of multiple published screens in p53 wild-type RPE-1 cells shows that most screens perform similarly in detecting essential genes, with the Haapaniemi et al. (2018) screen being an outlier with poor performance, possibly due to low editing efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 present comparative ROC curve and LFC distribution analyses across multiple published datasets. The identification of the Haapaniemi et al. screen as an outlier (C50) is supported by the data shown in Figure 3A-B. However, C50 includes speculation about the cause, which is appropriately qualified as uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "c9a7b39b-5030-4e64-87bd-facd4ade50b9",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors' screen shows lower variance in log fold changes between guides targeting the same gene compared to other published screens, potentially due to higher gRNA representation (>1000x) maintained throughout the screen compared to published recommendations of 200-500x.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C51 presents an observation from Figure 3C, but C52 explicitly states this is speculation and cannot rule out the dual-sgRNA system as the cause. While C53-C55 cite published recommendations for gRNA representation, the causal link between high representation and reduced variance in the authors' screen remains speculative and unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "caf15bfd-ed18-4cc8-a669-72b817d8029f",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Low sequencing depth, as observed in the MSKCC screen with substantial zero reads, can notably decrease screen sensitivity. The authors demonstrate this through modeling decreased sequencing depth in their own data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 are supported by analysis shown in Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2. The modeling approach (C57) provides direct evidence that low read counts decrease sensitivity, and the MSKCC screen serves as a real-world example (C56).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "9a86c7b8-c254-4c98-986c-341c644a926a",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Key factors for successful CRISPR-Cas9 screens include the guide RNA library design, magnitude of guide effects, adequate gRNA representation, sufficient sequencing depth, selection of high-editing efficiency Cas9-expressing cells, and use of biological replicates to identify clonal variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 synthesize conclusions from the authors' experimental data and comparative analyses. These recommendations are supported by the demonstrated impact of these factors throughout the manuscript (e.g., C20-C21 for representation, C57 for sequencing depth, C50 for editing efficiency).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "1149496a-6984-4673-81cc-e88f0d6f25a9",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "EP300 was enriched and CCNA2 was depleted on both genetic backgrounds, consistent with their established roles in cell cycle regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C44 describe specific gene hits with appropriate citations to support their known functions (C43, C45). These findings demonstrate that the screens can identify biologically relevant genes independent of p53 status.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "35b246e0-775b-4cce-96ef-e08888630886",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The extent of p53 impact on CRISPR-Cas9 screens may vary by cell type, but the authors anticipate that most cell lines with intact TP53 pathway and proper cell-cycle checkpoint activation would recapitulate their findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C60 are explicitly speculative statements about the generalizability of the findings. While reasonable based on the data, these claims lack experimental validation in other cell types and acknowledge uncertainty about the impact of different TP53 mutations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "2d1bf8b3-ecfe-4b0c-8553-100651c20c4c",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The RPE-1 cell lines used were obtained from ATCC, routinely tested for mycoplasma, authenticated using Affymetrix SNP6 copy number analysis, and TP53KO cells were generated as previously described.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 describe appropriate quality control measures for cell line authentication and validation. The citation to Chiang et al., 2016 for TP53KO generation (C72) and description of authentication methods (C71) demonstrate proper experimental rigor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "33747ed2-a44b-4749-b3b2-847ccbe29b9c",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CRISPR-Cas9 genome engineering has revolutionized high-throughput functional genomic screens, with successful applications in determining gene essentiality, identifying genetic interactions, and assessing drug sensitivities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C5-C7 provide background context supported by appropriate citations (Hart et al., 2015; Chan et al., 2019; Han et al., 2017). These are well-established facts in the field serving as introduction to the manuscript's focus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "62363e40-8662-4aaa-9616-cc2de256831d",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work has raised concerns about CRISPR-Cas9 screen performance in p53-proficient cells, with conflicting reports showing both severe impairment (Haapaniemi et al., 2018; Ihry et al., 2018) and successful performance (Brown et al., 2019) in wild-type backgrounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C8, C15-C17 accurately summarize the controversy in the field with appropriate citations. These claims establish the motivation for the current study by highlighting conflicting prior results that necessitate controlled parallel experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "45158ba5-9d19-472f-b0ab-744d97408b2f",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TP53 acts as a master regulator of cell-cycle checkpoint activation, cellular senescence, and apoptosis in response to DNA damage, and is the most important tumor suppressor gene with loss-of-function mutations in up to 50% of human cancers. DNA double-strand breaks induce p53-dependent cell-cycle arrest, and most CRISPR-Cas9 approaches rely on DSB generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C14 provide essential background on p53 biology and CRISPR-Cas9 mechanism, all supported by appropriate citations (Kastan et al., 1991; Shay et al., 1991; Clarke et al., 1993; Lowe et al., 1993; Lakin and Jackson, 1999; Bouaoun et al., 2016; Di Leonardo et al., 1994; Jinek et al., 2012). These are well-established facts providing context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    },
+    {
+      "id": "87e8d8a6-4e8e-41bd-a79d-8670aa3b1724",
+      "content_id": "fc82aa19-1b59-43e4-a1ce-ce35dfd98e54",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript accurately describes the known molecular functions of p53 pathway components including CDKN1A/p21, USP28, MDM2, MDM4, SETDB1, EP300, and CCNA2, all supported by appropriate citations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C34, C36-C37, C39-C40, C43, and C45 describe established molecular biology knowledge with appropriate citations (el-Deiry et al., 1993; Zhang et al., 2006; Cuella-Martin et al., 2016; Haupt et al., 1997; Francoz et al., 2006; Fei et al., 2015; Ait-Si-Ali et al., 2000; Pagano et al., 1992). These provide biological context for interpreting screen results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:17:12.277193Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dc53f794-273e-4544-9b68-6e23baf6db9b",
+      "result_id": "4b7e5065-57e3-4681-9f21-c7fe2b8f8b9e"
+    },
+    {
+      "claim_id": "527ccb87-8082-4143-836c-ac5178e45bbf",
+      "result_id": "4b7e5065-57e3-4681-9f21-c7fe2b8f8b9e"
+    },
+    {
+      "claim_id": "313d4b2f-c821-436c-a177-afc6e7d48385",
+      "result_id": "4b7e5065-57e3-4681-9f21-c7fe2b8f8b9e"
+    },
+    {
+      "claim_id": "754006a5-156f-4a34-8056-b5577d79901f",
+      "result_id": "4b7e5065-57e3-4681-9f21-c7fe2b8f8b9e"
+    },
+    {
+      "claim_id": "48f68e04-320f-4fcb-aa95-0c143756ee9d",
+      "result_id": "4b7e5065-57e3-4681-9f21-c7fe2b8f8b9e"
+    },
+    {
+      "claim_id": "0b57c59a-60ab-4a76-bff7-1cd8da23bbc3",
+      "result_id": "4b7e5065-57e3-4681-9f21-c7fe2b8f8b9e"
+    },
+    {
+      "claim_id": "4e862cfe-bc9f-432b-b3c8-e47e89d95d5f",
+      "result_id": "4b7e5065-57e3-4681-9f21-c7fe2b8f8b9e"
+    },
+    {
+      "claim_id": "6190bda4-6ed5-4536-8c5d-bbe1a3bde95b",
+      "result_id": "4b7e5065-57e3-4681-9f21-c7fe2b8f8b9e"
+    },
+    {
+      "claim_id": "54b53cc1-cafe-482d-9570-89b09d735171",
+      "result_id": "4b7e5065-57e3-4681-9f21-c7fe2b8f8b9e"
+    },
+    {
+      "claim_id": "34e99985-16ab-4581-966b-422e7c1ccd59",
+      "result_id": "3161160a-f1b5-45af-bcd1-dce632926050"
+    },
+    {
+      "claim_id": "15c27bcf-0bd1-484d-9d87-40dc05ead0dc",
+      "result_id": "3161160a-f1b5-45af-bcd1-dce632926050"
+    },
+    {
+      "claim_id": "5df9c4a5-23d7-4a9e-917a-18ef838ea428",
+      "result_id": "3161160a-f1b5-45af-bcd1-dce632926050"
+    },
+    {
+      "claim_id": "bca31283-7cff-4a66-800c-aa983cef3dad",
+      "result_id": "3161160a-f1b5-45af-bcd1-dce632926050"
+    },
+    {
+      "claim_id": "b426d050-bf5c-403f-ae69-03ff2300d3cc",
+      "result_id": "f4b22e49-36f1-4761-8993-087adb17561d"
+    },
+    {
+      "claim_id": "35983d04-488b-4323-89ec-1b643845056d",
+      "result_id": "f4b22e49-36f1-4761-8993-087adb17561d"
+    },
+    {
+      "claim_id": "f290170f-638e-4a8f-a10c-d5902f629d12",
+      "result_id": "f4b22e49-36f1-4761-8993-087adb17561d"
+    },
+    {
+      "claim_id": "f8b2c934-95d7-4c33-b6b7-372922dd0d08",
+      "result_id": "f4b22e49-36f1-4761-8993-087adb17561d"
+    },
+    {
+      "claim_id": "37ced927-01a0-47fa-90d4-7b6936a4123f",
+      "result_id": "f4b22e49-36f1-4761-8993-087adb17561d"
+    },
+    {
+      "claim_id": "60643d79-1a3e-4e3f-8d19-386fef212e56",
+      "result_id": "f4b22e49-36f1-4761-8993-087adb17561d"
+    },
+    {
+      "claim_id": "c91337bc-29ea-4a3e-b3b3-159e23c00db3",
+      "result_id": "34a16d56-b791-4001-9d0a-f41564004087"
+    },
+    {
+      "claim_id": "72814cc6-8579-4ac3-9e38-4637749b021a",
+      "result_id": "34a16d56-b791-4001-9d0a-f41564004087"
+    },
+    {
+      "claim_id": "382701b3-2250-48cf-bfd3-2377e5735d56",
+      "result_id": "34a16d56-b791-4001-9d0a-f41564004087"
+    },
+    {
+      "claim_id": "acf3e7fa-54aa-4025-b67a-0e87861e75df",
+      "result_id": "34a16d56-b791-4001-9d0a-f41564004087"
+    },
+    {
+      "claim_id": "8e058087-9adf-43c1-89e4-beb52ec59add",
+      "result_id": "34a16d56-b791-4001-9d0a-f41564004087"
+    },
+    {
+      "claim_id": "28a2b62d-eca1-4138-86a4-41348c06afee",
+      "result_id": "34a16d56-b791-4001-9d0a-f41564004087"
+    },
+    {
+      "claim_id": "c663aefc-3f4f-417c-a3db-956c8a6765fe",
+      "result_id": "34a16d56-b791-4001-9d0a-f41564004087"
+    },
+    {
+      "claim_id": "1e11393d-70eb-4be8-9a84-9aabaae9df16",
+      "result_id": "34a16d56-b791-4001-9d0a-f41564004087"
+    },
+    {
+      "claim_id": "feecc1bf-3630-4284-b400-8f7ae50b8b75",
+      "result_id": "34a16d56-b791-4001-9d0a-f41564004087"
+    },
+    {
+      "claim_id": "2f7ea42f-a51d-4289-b579-19ddb094d6aa",
+      "result_id": "34a16d56-b791-4001-9d0a-f41564004087"
+    },
+    {
+      "claim_id": "107d2f17-fe72-474c-afb9-4ff4ca174a78",
+      "result_id": "209032a6-97d2-4bc1-b65e-43d827594e2e"
+    },
+    {
+      "claim_id": "d271d38a-9c7f-4d59-92fb-c6f5a9a5d873",
+      "result_id": "209032a6-97d2-4bc1-b65e-43d827594e2e"
+    },
+    {
+      "claim_id": "46992174-60d1-4c38-afb1-f72129ede536",
+      "result_id": "209032a6-97d2-4bc1-b65e-43d827594e2e"
+    },
+    {
+      "claim_id": "cd2818ca-693d-42be-b9d0-1061b13df56e",
+      "result_id": "c9a7b39b-5030-4e64-87bd-facd4ade50b9"
+    },
+    {
+      "claim_id": "af0aa2b2-3fac-4459-a13c-4f1878464bd6",
+      "result_id": "c9a7b39b-5030-4e64-87bd-facd4ade50b9"
+    },
+    {
+      "claim_id": "599a0996-467b-4b91-8029-2f6b6cb306fd",
+      "result_id": "c9a7b39b-5030-4e64-87bd-facd4ade50b9"
+    },
+    {
+      "claim_id": "ec30c9c4-5962-436e-b9b6-e6c5327f5c70",
+      "result_id": "c9a7b39b-5030-4e64-87bd-facd4ade50b9"
+    },
+    {
+      "claim_id": "2f88b08a-397e-4d56-9cdc-65c00a6799be",
+      "result_id": "c9a7b39b-5030-4e64-87bd-facd4ade50b9"
+    },
+    {
+      "claim_id": "5a7e9b60-f6f8-473e-a0b2-6d3d644386d3",
+      "result_id": "caf15bfd-ed18-4cc8-a669-72b817d8029f"
+    },
+    {
+      "claim_id": "6290ae73-8351-4f40-9612-ea0d55038cc5",
+      "result_id": "caf15bfd-ed18-4cc8-a669-72b817d8029f"
+    },
+    {
+      "claim_id": "ea380494-0b1f-4c4d-b56b-9b84442bda27",
+      "result_id": "9a86c7b8-c254-4c98-986c-341c644a926a"
+    },
+    {
+      "claim_id": "cbc73450-400d-4283-a65d-090ed7680eba",
+      "result_id": "9a86c7b8-c254-4c98-986c-341c644a926a"
+    },
+    {
+      "claim_id": "7ba24415-d8d8-4c27-9434-f17ed63086a5",
+      "result_id": "9a86c7b8-c254-4c98-986c-341c644a926a"
+    },
+    {
+      "claim_id": "c1d67bab-ee02-40f3-b61a-d2393fa8e098",
+      "result_id": "1149496a-6984-4673-81cc-e88f0d6f25a9"
+    },
+    {
+      "claim_id": "f430e4e1-c38b-48bd-a206-3cb4e6e91e8a",
+      "result_id": "1149496a-6984-4673-81cc-e88f0d6f25a9"
+    },
+    {
+      "claim_id": "9b78a366-af8a-47d8-a5c4-ba21c8223d81",
+      "result_id": "35b246e0-775b-4cce-96ef-e08888630886"
+    },
+    {
+      "claim_id": "a833b964-48a6-460d-807b-33de213b882c",
+      "result_id": "35b246e0-775b-4cce-96ef-e08888630886"
+    },
+    {
+      "claim_id": "dc1e4da4-b545-43b3-a290-81570470d43d",
+      "result_id": "2d1bf8b3-ecfe-4b0c-8553-100651c20c4c"
+    },
+    {
+      "claim_id": "ce01b448-0550-4eee-8a60-4238b0e512a4",
+      "result_id": "2d1bf8b3-ecfe-4b0c-8553-100651c20c4c"
+    },
+    {
+      "claim_id": "d5b3c9c2-cace-49e8-9564-e181f78d48b8",
+      "result_id": "2d1bf8b3-ecfe-4b0c-8553-100651c20c4c"
+    },
+    {
+      "claim_id": "aa269701-5362-4d53-af4e-5cb44dd1e2f6",
+      "result_id": "33747ed2-a44b-4749-b3b2-847ccbe29b9c"
+    },
+    {
+      "claim_id": "2fe9a3f4-d8b4-4644-b72c-5ee2c52622d5",
+      "result_id": "33747ed2-a44b-4749-b3b2-847ccbe29b9c"
+    },
+    {
+      "claim_id": "9f9447fb-08e7-402e-ab61-709350be8c58",
+      "result_id": "33747ed2-a44b-4749-b3b2-847ccbe29b9c"
+    },
+    {
+      "claim_id": "c38dd271-12e2-445d-bdf7-32097440af93",
+      "result_id": "33747ed2-a44b-4749-b3b2-847ccbe29b9c"
+    },
+    {
+      "claim_id": "f46531e4-ae22-4106-b8f5-4ed9a0d582cd",
+      "result_id": "62363e40-8662-4aaa-9616-cc2de256831d"
+    },
+    {
+      "claim_id": "885b102f-f3a9-492d-a9d7-2b5c098af965",
+      "result_id": "62363e40-8662-4aaa-9616-cc2de256831d"
+    },
+    {
+      "claim_id": "e25b517a-829e-43b6-9573-d52534793e92",
+      "result_id": "62363e40-8662-4aaa-9616-cc2de256831d"
+    },
+    {
+      "claim_id": "60fbc1ac-ee52-44bf-8017-634491630762",
+      "result_id": "62363e40-8662-4aaa-9616-cc2de256831d"
+    },
+    {
+      "claim_id": "110ef972-6bc3-47d5-a5b5-38a38d85cd01",
+      "result_id": "62363e40-8662-4aaa-9616-cc2de256831d"
+    },
+    {
+      "claim_id": "228eb123-bd54-4f21-8326-ad5c59ad18df",
+      "result_id": "45158ba5-9d19-472f-b0ab-744d97408b2f"
+    },
+    {
+      "claim_id": "6c793f10-c195-498c-8aa4-e146af98ea92",
+      "result_id": "45158ba5-9d19-472f-b0ab-744d97408b2f"
+    },
+    {
+      "claim_id": "09c64bca-02f8-4f24-8283-5840cff5d17c",
+      "result_id": "45158ba5-9d19-472f-b0ab-744d97408b2f"
+    },
+    {
+      "claim_id": "ac7a73e4-6401-4a9c-ae2b-66058b64ff38",
+      "result_id": "45158ba5-9d19-472f-b0ab-744d97408b2f"
+    },
+    {
+      "claim_id": "4ae93c1b-b6a4-4078-9209-ceb3b89ef6f0",
+      "result_id": "45158ba5-9d19-472f-b0ab-744d97408b2f"
+    },
+    {
+      "claim_id": "2e6d80e7-3cf5-44e8-9947-bb76d0a3a9f1",
+      "result_id": "45158ba5-9d19-472f-b0ab-744d97408b2f"
+    },
+    {
+      "claim_id": "791c144d-43e0-4c25-928a-70002e4d18fd",
+      "result_id": "87e8d8a6-4e8e-41bd-a79d-8670aa3b1724"
+    },
+    {
+      "claim_id": "adb706c9-6003-4c50-9199-840cafe8f161",
+      "result_id": "87e8d8a6-4e8e-41bd-a79d-8670aa3b1724"
+    },
+    {
+      "claim_id": "5b630d46-0005-4424-94c9-c6931ee2893b",
+      "result_id": "87e8d8a6-4e8e-41bd-a79d-8670aa3b1724"
+    },
+    {
+      "claim_id": "9073dca5-75e2-4b64-b383-6b65504fea44",
+      "result_id": "87e8d8a6-4e8e-41bd-a79d-8670aa3b1724"
+    },
+    {
+      "claim_id": "85851ea2-32e9-4bf0-8145-9c435fc700cf",
+      "result_id": "87e8d8a6-4e8e-41bd-a79d-8670aa3b1724"
+    },
+    {
+      "claim_id": "98fdd1e0-4554-44be-af8b-437b323f0a8a",
+      "result_id": "87e8d8a6-4e8e-41bd-a79d-8670aa3b1724"
+    },
+    {
+      "claim_id": "dc3c0ddd-5349-4134-92c6-dfa122352c3b",
+      "result_id": "87e8d8a6-4e8e-41bd-a79d-8670aa3b1724"
+    },
+    {
+      "claim_id": "6c304f0c-40d6-4a1f-98b2-090eeedfc794",
+      "result_id": "87e8d8a6-4e8e-41bd-a79d-8670aa3b1724"
+    }
+  ],
+  "comparisons": []
+}

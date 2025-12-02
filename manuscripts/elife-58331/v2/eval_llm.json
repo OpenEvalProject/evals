@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Sleep deprivation induces massive transcriptomic changes in mouse frontal cortex, with 6,248 DEGs between CS and SD, 3,827 DEGs between CS and RS, but only 81 DEGs between SD and RS. More than half of SD-induced differential expression continues during recovery sleep rather than directly reversing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 are well-supported by RNA-seq data shown in Figures 1B-D with appropriate statistical thresholds (FDR \u22640.05, |log2FC|\u22650.3). The finding that most SD-induced changes persist during RS is clearly demonstrated by the overlap analysis, though the biological interpretation requires caution as only 2hr RS was examined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The transcriptomic response to sleep deprivation is distinct from general glucocorticoid-mediated stress responses, with no significant enrichment of glucocorticoid response genes in upregulated SD DEGs (p=0.513).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by Fisher's exact test comparing SD DEGs to known glucocorticoid response genes. However, the absence of enrichment does not definitively rule out stress contributions, and additional stress markers or corticosterone measurements would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Sleep-responsive DEGs show cell-type-specific patterns, with downregulated genes enriched in excitatory and inhibitory neurons and upregulated genes enriched in non-neuronal cells. These DEGs significantly overlap with genes affected by MEF2C loss of function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by enrichment analysis using single-cell RNA-seq data and comparison to Mef2c-cKOEmx1 knockout data (Figure 1E). The statistical significance of overlaps is demonstrated, though the functional interpretation linking these patterns causally to MEF2C requires the additional genetic experiments presented later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Gene ontology analysis reveals that upregulated genes in SD/RS are enriched for mitochondrial components, oxidative phosphorylation, and protein metabolism, while downregulated genes are enriched for synaptic processes and genes associated with neurological disorders including autism and schizophrenia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by GO analysis shown in Figures 1F-G and supplementary files. The enrichment statistics are appropriate, though the disease associations are correlative and do not establish causal links between sleep disruption and these disorders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Sleep deprivation-responsive DEGs are significantly enriched for rapid primary response genes (rPRGs) and overlap substantially with activity-induced transcription factors identified in visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by enrichment analysis (Figure 1E) and comparison to published datasets. The 50% overlap with visual cortex activity-responsive genes is notable, though the comparison across different brain regions and stimuli requires cautious interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Sleep deprivation from ZT0-6 results in downregulation of core clock genes (Arntl, Clock, Npas2) and circadian entrainment genes, consistent with SD-induced attenuation and destabilization of circadian-mediated gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by RNA-seq data (Figure 1\u2014figure supplement 3) and consistent with cited literature. However, the circadian effects are confounded by the fact that all samples were collected at the same circadian time (ZT6), making it difficult to fully separate sleep homeostatic from circadian effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "WGCNA identified 59 gene co-expression modules, with 53% enriched for sleep-state DEGs. Most modules enriched for upregulation in SD were also enriched in RS (10/11), and most downregulated modules showed similar consistency (13/18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by WGCNA analysis (Figure 2A). The methodology is appropriate and the consistency between SD and RS module enrichments reinforces the finding that transcriptional changes persist during recovery sleep. Module parameters are adequately described in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "MEF2C target genes are enriched in 15 of 59 WGCNA modules, significantly more than expected by chance (p<0.001 by Monte Carlo simulation), indicating widespread MEF2C influence on the sleep-responsive transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are well-supported by enrichment analysis with appropriate statistical validation using Monte Carlo permutation testing (1000 iterations). This provides strong evidence for MEF2C's broad involvement in sleep-responsive transcriptional regulation, though the directionality of regulation requires the knockout experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Two WGCNA modules (M04 and M10) show strong positive correlation with control sleep and negative correlation with SD/RS, and are enriched for neuronal genes, MEF2C targets, genes downregulated in SD/RS, and genes involved in synaptic function and neurological disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by module eigengene analysis and enrichment testing (Figure 2A-D). These modules represent a coherent set of sleep-responsive, MEF2C-regulated, synapse-related genes, providing strong support for the study's central hypothesis about MEF2C's role in sleep-dependent synaptic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Conditional knockout of Mef2c in excitatory neurons (Mef2c-cKOCamk2a-Cre) dramatically reduces the transcriptomic response to sleep deprivation, with only 36 DEGs compared to 767 in controls (~7% of control response), demonstrating MEF2C's essential role in sleep-loss transcriptional responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are strongly supported by RNA-seq data (Figure 3A-C). The dramatic reduction in DEGs provides compelling evidence for MEF2C's necessity. However, the calculation states ~7% but 36/767\u22484.7%. Additionally, potential confounds from germline recombination in some animals and differences between Mef2cf/f and WT are acknowledged but incompletely resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Sleep deprivation significantly reduces MEF2C phosphorylation at S396 without changing total MEF2C levels, consistent with increased MEF2C transcriptional activity during SD. This effect is transient, as RS does not alter phosphorylation, suggesting SD triggers transient MEF2C activation to promote synaptic weakening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 are supported by immunoprecipitation and western blot data (Figure 3D) with appropriate statistical analysis (one-way ANOVA, n=4/condition). The interpretation linking dephosphorylation to activation is based on established knowledge. However, claims C73-C74 about mechanism are inferences that would benefit from additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In WT and Mef2cf/f mice, sleep deprivation increases mEPSC frequency and amplitude, which recover to baseline during RS. Paired-pulse ratio analysis suggests the SD-induced increase in mEPSC frequency results from increased active synapse number rather than increased release probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by electrophysiological recordings (Figures 6-7) with appropriate statistical analysis. The interpretation of paired-pulse ratios is mechanistically sound. However, C79 appropriately acknowledges ambiguity about whether RS effects reflect decreased release probability, synapse number, or both, indicating scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Mef2c-cKOCamk2a-Cre mice show elevated baseline mEPSC frequency and amplitude but lack sleep-dependent changes in synaptic strength, with no significant changes in mEPSCs or paired-pulse ratios across sleep conditions, demonstrating MEF2C's necessity for sleep-dependent synaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are well-supported by electrophysiological data (Figures 6G-L, 7C-D). The elevated baseline and absent sleep-dependent changes provide strong evidence for MEF2C's role. The use of adenosine receptor blockade in all recordings appropriately controls for sleep-loss-induced adenosine effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Mef2c-cKOCamk2a-Cre mice exhibit elevated SWS-SWA that fails to resolve normally during the sleep phase and show attenuated or absent SWS-SWA rebound following sleep deprivation, suggesting MEF2C loss increases sleep need while impairing its resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by EEG recordings (Figure 5). The elevated non-resolving SWA and absent SD rebound provide strong evidence for MEF2C's role in sleep homeostasis. However, the interpretation that this reflects increased 'sleep need' relies on the assumption that SWS-SWA is a valid biomarker of sleep need, which is stated but not independently validated here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Mef2c+/- heterozygous mice show slowed resolution of sleep need under baseline conditions but absent rebound SWS-SWA following SD, along with abnormal waking SWA in the 4-5 Hz range. These mice share 142 overlapping DEGs with Mef2c-cKOCamk2a-Cre mice (p=5.28e-08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by EEG data (Figure 8) and transcriptomic analysis (Figure 8\u2014figure supplement 2). The intermediate phenotype in heterozygotes provides dose-dependent evidence for MEF2C's role. The significant gene overlap between models strengthens conclusions about core MEF2C-dependent mechanisms, though the constitutive nature of the heterozygote introduces potential developmental confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Constitutive loss of one Mef2c allele is sufficient to alter sleep-loss responses, though this appears partially compensated under undisturbed sleep conditions. More acute, complete Mef2c loss in Mef2c-cKOCamk2a-Cre mice produces more severe disruption of homeostatic sleep responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by comparing phenotypes across genotypes (Figure 8H). The dose-dependent and timing-dependent effects provide nuanced understanding of MEF2C's role. However, the interpretation of 'compensation' is somewhat speculative and the constitutive vs. conditional comparison is confounded by developmental timing differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Sleep-loss-induced transcriptomic changes are extensive (~6,248 DEGs, nearly half the expressed genome), with two-thirds of changes persisting through 2hr recovery sleep, indicating delayed transcriptional recovery and suggesting important roles for post-transcriptional mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 are supported by the RNA-seq data. The persistence of transcriptional changes during RS is well-documented. However, C99-C100 about delayed recovery and post-transcriptional mechanisms are inferences that would be strengthened by longer RS timepoints or direct measurement of protein changes. The 2hr RS limitation is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Changes in non-neuronal genes during SD were likely secondary to neuronal Mef2c loss, potentially mediated by adenosine signaling from neurons to glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 are explicitly labeled as speculation by the authors. While the hypothesis is plausible given that Camk2a-Cre targets neurons yet non-neuronal gene expression changes, the mechanism is not directly tested. Adenosine is proposed as one possible mediator but this remains unvalidated conjecture requiring experimental follow-up.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "In WT mice, SD acutely increases synaptic strength alongside downregulation of synaptic genes, with effects manifesting during RS. Mef2c-cKOCamk2a-Cre mice lack both the SD-induced synaptic increase and RS-induced reduction, indicating abnormal responses to both sleep loss and recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 integrate transcriptomic and electrophysiological findings. C103-C104 and C106 are well-supported by data. However, C105 about delayed translation is speculation ('presumably') that, while reasonable, lacks direct evidence such as polysome profiling or protein synthesis measurements during SD vs RS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "MEF2C likely functions as a transcriptional repressor when phosphorylated during waking, and loss of Mef2c results in both de-repression and loss of activation capacity. Sleep-responsive DEGs in WT overlap significantly with genes dysregulated in Mef2c knockouts and lose sleep-responsiveness in Mef2c-cKOCamk2a-Cre mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 synthesize findings about MEF2C's dual function. C107 is supported by citation, C109-C110 by enrichment data (Figures 1E, 3). C108 is mechanistic inference that is logical but not directly tested. The overall model is well-supported though the dual repressor/activator function in the sleep context could benefit from direct transcriptional assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Postnatal loss of MEF2C in forebrain excitatory neurons results in enhanced baseline SWS-SWA with attenuated resolution, indicating that MEF2C loss increases sleep need and impairs its resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 are supported by EEG data (Figure 5). The interpretation relies on the assumption that SWS-SWA reflects sleep need, which is widely accepted but not independently validated here. The causal language ('increases sleep need') is stronger than the correlative data (elevated SWA) strictly supports, though the interpretation is reasonable within the field's framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The sleep loss response reflects a MEF2C-dependent, metabolically driven non-neuron to neuron homeostatic circuit that promotes protein and energy metabolism while constraining synaptic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 present an integrative model synthesizing transcriptomic, electrophysiological, and EEG findings. While individual components are well-supported, the complete circuit model is somewhat speculative, particularly the directionality of non-neuronal to neuronal signaling. The model is plausible and consistent with data but represents interpretation beyond what is directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background knowledge claims about sleep loss effects, SWS-SWA as a biomarker of sleep need, synaptic scaling during sleep/wake, and MEF2C's established roles in synaptic regulation and activity-dependent transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C29 represent established knowledge from prior literature, appropriately cited. These provide the conceptual foundation for the study. The citations appear appropriate and the knowledge claims are consistent with the field's understanding, though individual citations were not independently verified for this review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "MEF2C Haploinsufficiency Syndrome in humans is associated with sleep disruption. The study used ~13,000 expressed genes in frontal cortex and controlled for adenosine effects in electrophysiology by blocking adenosine receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C117 is established knowledge appropriately cited. C118 is a straightforward description of data characteristics. C119 describes an important methodological control for adenosine effects, which is appropriate given that sleep loss increases extracellular adenosine. These are well-supported methodological and contextual claims.",
+    "result_type": "MINOR"
+  }
+]

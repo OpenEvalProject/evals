@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors identify a novel phosphorylation site at Serine 224 (Ser224) in murine CTCF, located approximately 50 amino acids N-terminal of the zinc finger domain. This site shows striking conservation among vertebrates but not in echinodermata or arthropoda, suggesting it may be phosphorylated by a conserved vertebrate kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 are well-supported by mass spectrometry data (Figure 1E), sequence alignment analysis (Figure 1F), and citation to a prior phosphoproteome screen in HeLa cells (C18). The conservation analysis provides strong evolutionary context for the functional significance of this PTM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors demonstrate that Casein Kinase 2 (CK2) can phosphorylate CTCF at Ser224 in vitro. The amino acid sequence surrounding Ser224 fits the known CK2 recognition site (S-x-x-D/E).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by in vitro kinase assays with radioactive ATP (Figure 1\u2014figure supplement 1A) and mass spectrometry confirmation (Figure 1\u2014figure supplement 1C). However, the authors acknowledge they did not capture in vivo interactions between CTCF and CK2, so CK2 remains a candidate but not definitively confirmed as the physiological kinase.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors generate and validate a phospho-specific antibody against CTCF Ser224-P. The antibody shows reduced affinity for phosphatase-treated samples and preferentially recognizes CK2-phosphorylated CTCF over unphosphorylated protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by western blot data showing reduced signal after phosphatase treatment (Figure 2A) and preferential binding to CK2-phosphorylated CTCF (Figure 2B). The antibody validation is thorough, though some cross-reactivity to unphosphorylated CTCF is acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "At a cytological level, CTCF Ser224-P distributes similarly to total CTCF in the nucleus during interphase, showing exclusion from nucleoli and constitutive heterochromatin, and no enrichment on the inactive X chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by immunofluorescence data (Figure 2C, Figure 2\u2014figure supplement 1A-D). The visual comparison between CTCF and CTCF Ser224-P localization patterns is convincing, though the analysis is qualitative rather than quantitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "CTCF Ser224-P labeling is not homogeneous in asynchronous cell populations. Only 23.4% of MEFs are CTCF Ser224-P positive, with 94.8% of these co-labeled with the G2/M marker H3S10ph. CTCF Ser224-P is most prominent in early G2 and late G2/prophase, suggesting phosphorylation initiates at the end of S phase and peaks at G2/M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 are strongly supported by immunofluorescence quantification with cell cycle markers (Figure 2E, Figure 2\u2014figure supplement 1E-F). The co-staining with PCNA and H3S10ph provides clear evidence for cell cycle regulation. The RO-3306 CDK1 inhibitor experiment (C44) further validates G2/M enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "PLK1 is identified as a candidate kinase for CTCF Ser224 based on: (1) its role as a G2/M regulator with expression peaking during G2, (2) the match between CTCF Ser224 flanking sequence and the PLK1 consensus substrate site, and (3) conservation patterns of PLK1 mirroring those of CTCF Ser224 among vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by literature citations (C45-C46), sequence comparison (Figure 3A, C47), and conservation analysis (Figure 3B, C48). The logic connecting PLK1 to CTCF Ser224 phosphorylation is sound, though at this stage it remains a hypothesis requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "PLK1 directly phosphorylates CTCF at Ser224. Treatment with the PLK1 inhibitor BI 6727 reduces CTCF Ser224-P in a dose-dependent manner (100 nM reduces from 30.8% to 18.3%; 1000 nM completely ablates phosphorylation) without affecting total CTCF levels. In vitro kinase assays with recombinant PLK1 and CTCF confirm direct phosphorylation at Ser224 by mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are strongly supported by multiple lines of evidence: PLK1 inhibitor experiments (Figure 3C), in vitro kinase assays (Figure 3D), and mass spectrometry confirmation (Figure 3F). The combination of pharmacological inhibition and direct biochemical demonstration provides convincing evidence that PLK1 phosphorylates CTCF Ser224. However, the authors acknowledge they did not capture in vivo PLK1-CTCF interactions, leaving some uncertainty about whether PLK1 is the primary physiological kinase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "CTCF Ser224-P localizes to pericentric regions during metaphase. While CTCF Ser224-P can be observed on chromatid arms (albeit not uniformly), it is distinctly enriched between the centromeres and H3K27me3-positive dyad arms of murine acrocentric chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by immunofluorescence on metaphase spreads (Figure 3G-H, Figure 3\u2014figure supplement 1A-B). The pericentric enrichment is clearly visible in the images. The authors appropriately note conflicting prior reports about CTCF binding to mitotic chromosomes (C54-C55) and provide visual evidence supporting retention on chromosomes with specific pericentric enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "ChIP-seq analysis reveals approximately 50,000 CTCF peaks and 900 CTCF Ser224-P peaks genome-wide in mESCs. Both peak sets show significant enrichment of CTCF motifs (54% and 48% respectively) with similar genomic feature distributions. Notably, 95.9% of CTCF Ser224-P peaks intersect with CTCF peaks, and CTCF Ser224-P peaks are proximal to both transcribed and non-transcribed regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 are well-supported by ChIP-seq data analysis including MEME-ChIP motif analysis (Figure 4A, Figure 4\u2014figure supplement 1A-B), CEAS genomic feature distribution (Figure 4B), and peak intersection analysis (Figure 4C). The data demonstrate that CTCF Ser224-P occupies a subset of CTCF binding sites with similar characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The linear relationship between CTCF Ser224-P and CTCF binding signal explains only about half of CTCF Ser224-P binding (R\u00b2=0.48 for all peaks, R\u00b2=0.54 for shared peaks), suggesting that at least a subset of CTCF Ser224-P ChIP-seq peaks represent real binding sites rather than antibody cross-reactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by correlation analysis of ChIP-seq data. The modest R\u00b2 values indicate that antibody cross-reactivity cannot fully explain CTCF Ser224-P binding patterns, supporting the conclusion that the phospho-specific antibody detects genuine phosphorylated CTCF at specific genomic locations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "CTCF Ser224-P ChIP peaks are found at higher affinity CTCF binding sites. Shared CTCF and CTCF Ser224-P peaks have significantly more CTCF binding signal (p<2.2\u00d710\u207b\u00b9\u2076) and contain more CTCF motifs (p<2.2\u00d710\u207b\u00b9\u2076) than CTCF peaks in general.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by statistical analysis of ChIP-seq data (Figure 4E-F). The Wilcoxon rank sum tests show highly significant differences, indicating that CTCF Ser224-P preferentially marks stronger CTCF binding sites with multiple motifs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "CTCF Ser224-P ChIP peaks show higher overlap with cohesin subunits than CTCF peaks in general. While 22.8% and 33.3% of CTCF peaks overlap with SMC1 and SMC3 respectively, 51.6% and 85.1% of CTCF Ser224-P peaks overlap with these cohesin subunits, suggesting CTCF Ser224-P co-binds more frequently with cohesin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by comparison to previously published cohesin ChIP-seq data. The substantially higher overlap percentages for CTCF Ser224-P peaks suggest a functional relationship with cohesin, though the mechanism remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Overexpression of the phosphomimetic mutant S224E, but not wild-type CTCF or the phospho-null mutant S224A, affects mESC growth. Colonies overexpressing S224E for 6 days have significantly smaller diameters than uninduced cells, despite comparable expression levels of all FLAG-tagged proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by colony growth assays (Figure 5A-B) and western blot validation of expression levels (Figure 5C). The specific effect of S224E but not S224A suggests the negative charge introduced by the phosphomimetic is functionally important. However, the authors note that endogenous wild-type CTCF remains present, which may obscure additional phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "CTCF Ser224 mutations (S224A and S224E) do not affect nuclear localization or DNA binding. Both mutants localize normally to the nucleus and bind to a known CTCF motif but not to a mutated motif in EMSA assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by immunofluorescence (Figure 6A) and EMSA data (Figure 6C). These negative results are important for ruling out simple mechanisms by which Ser224 phosphorylation might affect CTCF function, though they do not explain the observed growth phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Overexpression of S224A or S224E does not lead to defects in cell cycle progression or ploidy. DNA content profiles show no blockages in the cell cycle, and karyotyping reveals no significant increase in polyploid spreads compared to uninduced cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by flow cytometry cell cycle analysis (Figure 7A) and karyotyping (Figure 7B-C). These negative results help narrow down potential mechanisms for the S224E growth phenotype by ruling out gross cell cycle or chromosomal segregation defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C83",
+      "C84"
+    ],
+    "result": "Many CTCF Ser224-P ChIP-seq peaks overlap CTCF peaks at TAD borders. However, overexpression of wild-type CTCF, S224A, or S224E does not detectably impact three-dimensional chromatin structure, as measured by Hi-C2 analysis of the Mecp2 TAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81, C83-C84 are supported by ChIP-seq visualization (Figure 8A) and Hi-C2 data (Figure 8B). However, the authors acknowledge that S224E CTCF binding to the Mecp2 TAD was modest (Figure 8C), likely due to endogenous wild-type CTCF remaining in the system. This may explain why no changes in TAD structure were detected. The negative result is therefore inconclusive - it could mean Ser224 phosphorylation doesn't affect TAD structure, or the experimental system was insufficient to detect such effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "RNA-seq reveals 375 differentially expressed genes upon S224E overexpression in mESCs (118 upregulated, 257 downregulated, adjusted p<0.01). CTCF itself is not differentially expressed, and RNA-seq reads confirm that 12-16% contain the glutamate codon at position 224, indicating modest S224E expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are supported by RNA-seq data analysis (Figure 8D-E). The modest level of S224E expression (12-16% of reads) is important context for interpreting the results. The differential expression of hundreds of genes despite modest overexpression suggests Ser224 phosphorylation has significant regulatory effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "CTCF binding is enriched along both downregulated and upregulated differentially expressed genes, but at different locations. Downregulated genes show more CTCF binding upstream of the transcription start site, while upregulated genes show more CTCF binding along the gene body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by metagene coverage analysis of ChIP-seq data over differentially expressed genes (Figure 8F). The differential localization patterns suggest position-dependent effects of CTCF on gene regulation, though the mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Among upregulated genes, the p53 pathway is the only significantly overrepresented PANTHER pathway (FDR=0.0495). This includes Trp53 (1.3-fold upregulated, adjusted p<0.00075) and Cdkn1a (1.3-fold upregulated, adjusted p<0.00043), both of which are bound by CTCF and CTCF Ser224-P.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by PANTHER overrepresentation analysis and RNA-seq data. The upregulation of p53 pathway genes is statistically significant and provides a potential mechanistic link to the observed growth phenotype. However, the fold-changes are modest (1.3-fold), and whether this is sufficient to explain the phenotype is uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Among downregulated genes, the most significant overrepresented cellular component categories are 'cell periphery' (FDR=2.28\u00d710\u207b\u2076) and 'plasma membrane' (FDR=3.45\u00d710\u207b\u2076), though many downregulated genes do not fall into these categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by PANTHER overrepresentation analysis. The enrichment of plasma membrane-related genes among downregulated genes is statistically significant, though the biological significance is less clear than for the p53 pathway upregulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors conclude that Ser224 plays a critical role in regulating gene expression, with modest S224E overexpression leading to slight activation of p53 signaling and global downregulation of plasma membrane proteins. They suggest the p53 pathway effect may partly explain the growth phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C100 are inferences based on the RNA-seq data. While the gene expression changes are well-documented, the causal connection between S224E overexpression, p53 pathway activation, and the growth phenotype is speculative. The authors appropriately use cautious language ('could lead to', 'may partly explain'), but direct mechanistic evidence is lacking. The effects could be direct or indirect, as RNA-seq was performed after 6 days when the growth phenotype was already apparent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors discover and confirm a CTCF post-translational modification conserved among vertebrates. CTCF is differentially regulated during the cell cycle with Ser224-P enriched at G2/M and specifically on pericentric regions during metaphase. Ser224 phosphorylation is regulated by PLK1, and exogenous S224E expression leads to colony formation defects and gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 summarize the major findings of the study. These are well-supported by the collective evidence from immunofluorescence, ChIP-seq, kinase assays, and functional studies. This represents the core contribution of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors conclude that regulation of CTCF Ser224-P is needed to prevent dysregulation of hundreds of genes through mechanisms that likely do not involve direct effects on DNA binding, TAD structure, cell cycle progression, or ploidy. Ser224 does not directly affect CTCF DNA binding, and CTCF Ser224-P occupies only a subset of CTCF sites genome-wide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C111 represent a series of negative results and inferences. While the negative results are supported by data (EMSA, Hi-C2, cell cycle analysis, karyotyping), the conclusion that Ser224-P regulates genes through alternative mechanisms is based on exclusion rather than positive evidence. The Hi-C2 result is particularly uncertain due to modest S224E binding (see result for C81, C83, C84). The mechanism by which Ser224 phosphorylation affects gene expression remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C20"
+    ],
+    "result": "The introduction provides background on CTCF, describing its identification as a c-myc regulator, conservation among Nephrozoa, insulatory activity, binding to TAD borders, and previous reports of post-translational modifications including poly(ADP-ribosyl)ation, SUMOylation, and phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 and C20 are background claims supported by appropriate literature citations. These establish the context for the current study and are standard for an introduction section. The claims accurately represent prior work in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The discussion contextualizes findings with prior knowledge about CTCF-cohesin interactions, PLK1's role in phosphorylating cohesins, the Polo Box Domain of PLK1, and conservation of CTCF binding sites at syntenic chromatin domain boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 are discussion points supported by appropriate literature citations. These help interpret the findings in the context of existing knowledge about CTCF, cohesin, and PLK1 biology.",
+    "result_type": "MINOR"
+  }
+]

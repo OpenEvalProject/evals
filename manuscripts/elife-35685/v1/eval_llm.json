@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Upon glucose exhaustion in yeast, mitochondria undergo distinct morphological reorganizations that correlate with cell fate: cells entering quiescence display numerous small vesicular mitochondria (~85% after 7 days), while cells entering senescence exhibit few large globular mitochondria (~10% after 7 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7-C11 are well-supported by microscopy data showing time-course progression of mitochondrial morphology changes (Figure 1A). The quantitative measurements and visual evidence consistently demonstrate the two distinct mitochondrial morphologies and their prevalence in the population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "The formation of vesicular and globular mitochondria occurs independently of the canonical mitochondrial fission machinery (Dnm1, Fis1, Caf4, Mdv1) and selective mitophagy (Atg32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by experiments showing that deletion mutants of known fission machinery components and mitophagy factors still form both vesicular and globular mitochondria after 7 days (Figure 1B). This indicates alternative mechanisms are responsible for these morphological changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Cells with globular mitochondria are respiratory deficient, lacking some OXPHOS proteins, while cells with vesicular mitochondria retain functional respiratory chain components and ATP synthase subunits. Globular mitochondria do not form when cells are grown on respiratory carbon sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are supported by multiple lines of evidence: DAPI staining shows mtDNA presence (Figure 1C), fluorescence microscopy demonstrates differential OXPHOS protein localization (Figure 1E), and ConA-FITC pulse-chase experiments confirm cells with globular mitochondria cannot proliferate in respiratory medium (Figure 1G-H). The absence of globular mitochondria in respiratory growth conditions (Figure 1\u2014figure supplement 1F) further supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Cells with vesicular mitochondria are metabolically active and quiescent, with >90% able to re-enter proliferation within 6 hours and 98\u00b12% within 12 hours after refeeding. Upon quiescence exit, mitochondrial vesicles rapidly fuse to reform tubules before bud emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 are well-supported by methylene blue viability staining (Figure 2A), individual cell tracking experiments (Figure 2B-C), and time-lapse microscopy showing mitochondrial fusion dynamics (Figure 2\u2014figure supplement 1A). The statistical analysis (Chi test value <10^-26) provides strong quantitative support for the quiescent classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Approximately 90% of cells with globular mitochondria are unable to re-enter proliferation after 7 days and are considered senescent. The entry into senescence is non-synchronous, with the percentage of cells able to re-proliferate progressively decreasing over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are supported by individual cell tracking experiments (Figure 2B-C) and time-course analysis (Figure 2D). The statistical analysis (Chi test value <10^-140) strongly supports the senescent classification. The progressive decrease in re-proliferation capacity demonstrates the non-synchronous nature of senescence entry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Respiratory deficiency correlates with senescence: ethidium bromide treatment increases globular mitochondria and senescence; rho zero cells become senescent after 14 days; mmm1\u0394 cells (98\u00b14% respiratory deficient) become senescent after 16 days. The inability to metabolize respiratory carbon sources correlates with inability to maintain quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 are supported by multiple experimental approaches: ethidium bromide treatment experiments (Figure 2F-G), rho zero cell analysis (Figure 2\u2014figure supplement 1C-D), and mmm1\u0394 mutant characterization (Figure 2\u2014figure supplement 1E). The convergent evidence from different respiratory-deficient models strongly supports the correlation between respiratory deficiency and senescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Different nutrient depletions produce distinct outcomes: respiratory carbon source exhaustion yields only vesicular mitochondria and quiescent cells; phosphate depletion produces both morphologies; nitrogen exhaustion causes massive mitophagy and rapid cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by experiments testing different starvation conditions (Figure 1\u2014figure supplement 1F). The data clearly show nutrient-specific responses, with nitrogen starvation producing a distinct outcome (mitophagy and death) compared to carbon or phosphate depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Mitochondrial network morphology can predict the fate of yeast cells facing chronological aging, and this finding is reproducible across different strain backgrounds (W303 and CEN-PK).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by the strong correlation between mitochondrial morphology and re-proliferation capacity demonstrated throughout the study, with reproducibility confirmed in multiple strain backgrounds (Figure 2\u2014figure supplement 1F-G). This represents a key conclusion of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cell volume does not determine cell fate: dead cells are evenly distributed across volumes; small cells are enriched in globular mitochondria (and thus senescent cells); but among cells with vesicular mitochondria, re-proliferation capacity is independent of cell volume. Cell-size mutants confirm chronological aging capacity is unrelated to volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are supported by comprehensive volume analysis (Figure 3A-D) and cell-size mutant experiments (Figure 3\u2014figure supplement 1B). The key insight is that volume only matters because small cells are enriched for respiratory-deficient cells with globular mitochondria; when controlling for mitochondrial morphology, volume has no effect on quiescence capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Replicative age (up to 15 divisions) does not influence cell fate: mother and daughter cells have similar propensities to form globular mitochondria and similar abilities to exit quiescence. Within cells with vesicular mitochondria, replicative age does not affect re-proliferation capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by experiments comparing mother and daughter cells (Figure 4A) and analyzing mother cells with different numbers of bud scars (Figure 4B-D). The data clearly show no significant differences in mitochondrial morphology distribution or re-proliferation capacity across replicative ages up to 15 divisions. The caveat that very old mothers (>15 divisions) could not be adequately studied is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Cell density does not determine quiescence capacity: while the upper fraction from density gradient separation is enriched in globular mitochondria (21\u00b14%) and dead cells (11\u00b11%), it still contains ~70% cells with vesicular mitochondria. Cells with vesicular mitochondria from all density fractions have similar re-proliferation capacities (95-96%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by density gradient fractionation experiments (Figure 4E-F). The key finding is that both fractions contain quiescent cells with vesicular mitochondria that have similar re-proliferation capacities, challenging the previous Boolean model that equated density with quiescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "After 7 days, 85\u00b19% of cells display actin bodies (AB) and 69\u00b11% display proteasome storage granules (PSG). More than 90% of cells with AB or PSG re-enter proliferation within 6 hours. Among cells with vesicular mitochondria, 92% display AB and 65% display PSG, with ~95% able to re-proliferate. A cell displaying AB and/or PSG and/or vesicular mitochondria has at least 90% probability of being quiescent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 are supported by individual cell tracking experiments with fluorescently tagged markers (Figure 5A-B). Statistical analysis (Chi-test values <10^-13 and 10^-53) confirms the non-independence of these structures with quiescence. The data establish these cellular reorganizations as strong predictors of quiescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Actin bodies (AB) form in both quiescent and senescent cells (57% of cells with globular mitochondria have AB; 99\u00b11% of rho zero cells have AB), while proteasome storage granules (PSG) form only in quiescent cells (0% of cells with globular mitochondria or rho zero cells have PSG). This indicates AB can assemble even in respiratory-deficient cells, while PSG cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 are supported by analysis of AB and PSG in cells with different mitochondrial morphologies (Figure 5C-D) and in rho zero cells (Figure 5\u2014figure supplement 1A-B). The complete absence of PSG in respiratory-deficient cells (globular mitochondria and rho zero) contrasts with the presence of AB in these cells, establishing a clear distinction between these two cellular reorganizations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Prior work has established that mitochondria play key roles in cellular aging, with mitochondrial respiration dysfunctions affecting both replicative and chronological aging in S. cerevisiae. Mitochondrial morphology defects have been observed in replicatively-old yeast, and Yotsuyanagi reported in the 1960s that mitochondria reorganize into peripherally-localized vesicles upon proliferation cessation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 accurately summarize prior literature with appropriate citations. These claims provide important context for the current work and are supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Quiescent cells are not all identical, but quiescence establishment predominantly occurs upon reorganization of specific cytoplasmic elements (mitochondria, actin, proteasome).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 represent a key conclusion supported by the observation that quiescent cells display various physical features (volume, density, replicative age) but most share specific cellular reorganizations. The data show that while these reorganizations are not absolute markers (some quiescent cells lack them and vice versa), they are statistically strong predictors of quiescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The manuscript provides standard definitions and reviews prior work on quiescence, senescence, aging paradigms, and previous models for identifying quiescent cells, including the limitations of the Boolean density model and the finding that very small daughter cells contain mostly senescent or dead cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C99 accurately present standard definitions and prior work with appropriate citations. These claims provide essential background and context for understanding the current study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Prior work in other organisms has shown that senescence is accompanied by mitochondrial morphology changes: in P. anserina, mitochondria fragment into large globular pieces; in metazoans, 'giant mitochondria' have been observed in senescent models, and respiratory chain failure has been proposed to cause premature senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 accurately summarize prior literature with appropriate citations, providing important comparative context for the yeast findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Prior work has established that trehalose accumulation is crucial for chronological aging as it fuels re-entry into proliferation; respiratory mutants are defective in trehalose stockpiling and display shorter chronological lifespan; chronological age reduces replicative capacity in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 accurately summarize prior literature with appropriate citations, providing important mechanistic context for understanding why respiratory-deficient cells become senescent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Prior work has shown that upon carbon source exhaustion in yeast, many proteins relocalize to cytoplasmic foci, cytoskeletons are reshaped, and organelles are reorganized. While some events (like telomere clustering) are not crucial for survival, actin, microtubule, and mitochondria reorganization improve the ability to undergo chronological aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 accurately summarize prior work (including the authors' previous studies) with appropriate citations. Claim C111 is supported both by citations and by data in the current study showing that mitochondrial reorganization into vesicles correlates with quiescence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The authors hypothesize that limited trehalose storage in respiratory deficient cells with globular mitochondria might be responsible for their inability to re-enter the proliferation cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 is explicitly presented as a hypothesis by the authors. While it is based on reasonable inference from prior work on trehalose's role in quiescence exit and respiratory mutants' defects in trehalose stockpiling, it is not directly tested in this study. The hypothesis is plausible but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors hypothesize that vesicular mitochondrial networks might be beneficial because defective vesicles might not be incorporated into the reassembling tubular network upon re-entry into proliferation but would be targeted for degradation, thus improving fitness of quiescence exit and participating in progeny rejuvenation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C115 are explicitly presented as hypotheses by the authors. While the speculation is reasonable and provides a potential functional explanation for vesicular mitochondria in quiescence, it is not tested experimentally. The hypothesis requires validation through experiments tracking mitochondrial quality control during quiescence exit.",
+    "result_type": "MINOR"
+  }
+]

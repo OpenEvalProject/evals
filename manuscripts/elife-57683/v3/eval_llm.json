@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims establish that ERMS is the most common RMS subtype (~60% of cases), arises from blocked myogenic differentiation, has poor prognosis (30% 5-year survival for high-risk), and is characterized by specific chromosomal alterations and recurrent mutations rather than a single genetic lesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims supported by multiple literature citations (C1-C7). They provide appropriate context but represent prior knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior work demonstrates that epigenetic mechanisms (EZH2, HDAC, SUV39H1) and Wnt signaling suppression are relevant in ERMS pathogenesis, with Wnt downregulation being ERMS-specific and GSK3\u03b2 inhibitors inducing differentiation in zebrafish models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C8-C17) are appropriately cited from published literature and establish the rationale for investigating epigenetic regulation of Wnt signaling in ERMS. They represent prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Canonical Wnt signaling operates through Wnt ligand binding to Frizzled receptors and LRP5/6 co-receptors, leading to disruption of the \u03b2-catenin destruction complex, accumulation of active \u03b2-catenin, and nuclear translocation for gene activation with TCF/LEF1. DKK1 antagonizes this pathway by preventing LRP5/6 association with Wnt/Fzd complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established mechanistic descriptions of Wnt signaling (C18-C25) supported by appropriate citations. They provide necessary background but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "EHMT2 is a lysine methyltransferase mediating H3K9me1/2 primarily for transcriptional repression, but can also function as an activator. It has oncogenic functions in multiple cancers including ARMS, where it causes tumor suppressor gene silencing through H3K9me2 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C26-C30) are well-supported by citations including the authors' prior work on ARMS. They establish the rationale for investigating EHMT2 in ERMS but represent prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "EHMT2 is overexpressed in ERMS patient tumors and cell lines (RD18, JR1, RD) compared to normal muscle at both mRNA and protein levels. Drug screening of 13 methyltransferase inhibitors identified EHMT2 inhibitors (particularly UNC0642) as highly effective in reducing ERMS cell viability and colony formation with selectivity over normal muscle cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are well-supported by IHC data from 16 patient samples, qPCR, western blots, drug screening assays, and colony formation assays (Figures 1A-G). The data consistently demonstrate EHMT2 overexpression and functional relevance. Statistical significance is shown (p\u22640.01-0.0001). This establishes EHMT2 as a relevant therapeutic target in ERMS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "EHMT2 inhibition (by siRNA knockdown or UNC0642 treatment) promotes myogenic differentiation (increased MHC and MYOG expression) and reduces proliferation (decreased BrdU+ cells and colony formation) in multiple ERMS cell lines (RD18, JR1, RD), indicating that EHMT2 maintains the differentiation block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are strongly supported by consistent data across multiple cell lines using both genetic (siRNA, shRNA) and pharmacological (UNC0642) approaches. Multiple differentiation markers (MHC, MYOG) and proliferation assays (BrdU incorporation, colony formation) show concordant results with high statistical significance (p\u22640.0001) (Figures 2, supplements). The convergence of evidence from different experimental approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "RNA-Seq analysis of EHMT2 knockdown cells revealed differential expression of 1970 genes (872 up, 1098 down), with GO analysis identifying Wnt signaling and cell cycle progression among top biological processes. EHMT2 loss specifically downregulates Wnt antagonists (DKK1, DKK3, ITGA3) and upregulates Wnt agonists (WNT3, FRAT2), leading to reduced DKK1 expression at mRNA and protein levels and increased active \u03b2-catenin, indicating activation of canonical Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52 are well-supported by RNA-Seq data (n=3 biological replicates), qPCR validation, and western blots showing consistent changes in DKK1 and active \u03b2-catenin across multiple cell lines and experimental conditions (siRNA, shRNA, UNC0642) (Figure 3). The transcriptomic approach provides unbiased identification of pathways, and validation by orthogonal methods strengthens the findings. Statistical significance is demonstrated (p\u22640.05-0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "ChIP-Seq and ChIP-PCR demonstrate that EHMT2 directly binds to the DKK1 promoter with high specificity. EHMT2 occupancy correlates with Sp1 and p300 enrichment at the DKK1 promoter, and EHMT2 inhibition reduces Sp1, p300, and H3K9ac occupancy as well as Sp1-p300 interaction (by PLA and IP), while EHMT2-Sp1 and EHMT2-p300 interactions remain unchanged. This indicates EHMT2 activates DKK1 transcription through modulation of Sp1/p300 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C66 are supported by multiple complementary techniques: ChIP-Seq identifying genome-wide EHMT2 binding, ChIP-PCR validating specific DKK1 promoter occupancy with appropriate specificity controls (C57), motif analysis identifying KLF7/Sp1 sites, and PLA/IP demonstrating protein-protein interactions (Figures 4A-K). The mechanistic model is well-supported, though the precise mechanism by which EHMT2 methyltransferase activity affects Sp1-p300 interaction requires further investigation. The data are internally consistent across multiple cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "DKK1 is overexpressed in ERMS cell lines, and DKK1 knockdown phenocopies EHMT2 knockdown (increased active \u03b2-catenin, reduced proliferation, increased differentiation). Rescue experiments with recombinant DKK1 or the Wnt inhibitor LGK974 reverse the effects of EHMT2 knockdown on active \u03b2-catenin, differentiation (MHC, MYOG), and proliferation (BrdU), demonstrating that EHMT2 mediates the differentiation block through DKK1-dependent suppression of Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C76 provide critical epistasis experiments demonstrating that DKK1 functions downstream of EHMT2. The rescue experiments with both rDKK1 and LGK974 (an independent Wnt inhibitor) provide strong evidence for the proposed pathway (Figure 5). The consistency of rescue across multiple phenotypes (proliferation, differentiation, \u03b2-catenin levels) strengthens the mechanistic model. Statistical significance is demonstrated (p\u22640.01-0.0001). This is a key result establishing causality in the EHMT2\u2192DKK1\u2192Wnt axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In vivo xenograft experiments demonstrate that UNC0642 treatment reduces tumor growth without affecting body weight, with decreased H3K9me2, Ki67, and DKK1, and increased MHC and active \u03b2-catenin in tumors. Genetic EHMT2 knockdown (shRNA) also reduces tumor growth, but this effect is reversed by LGK974 treatment, confirming that EHMT2 inhibition promotes differentiation and reduces tumor progression through Wnt signaling activation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C88 provide critical in vivo validation of the in vitro findings using both pharmacological (UNC0642) and genetic (shRNA) approaches with appropriate rescue experiments (LGK974) (Figure 6). The xenograft data show consistent effects on tumor growth, proliferation (Ki67), differentiation (MHC), and the DKK1/\u03b2-catenin axis. Sample sizes are adequate (n=10/group), and statistical analysis uses appropriate repeated-measures two-way ANOVA. The rescue experiment with LGK974 in vivo provides strong evidence for the proposed mechanism. However, only IHC data from 2 tumors per group are shown for molecular markers, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Integration of RNA-Seq and ChIP-Seq data reveals that EHMT2 directly or indirectly regulates genes involved in myogenic differentiation, cell cycle progression, and metabolic pathways beyond Wnt signaling, suggesting additional mechanisms may contribute to EHMT2's oncogenic effects in ERMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C90 are based on integrated genomic data (Figure 5 supplement 1C-F), but C90 is explicitly speculative ('may contribute'). While the data show EHMT2 regulates multiple pathways, the functional significance of non-Wnt targets is not experimentally validated. The rescue experiments demonstrate Wnt signaling is necessary for EHMT2's effects on differentiation and proliferation, but whether other pathways contribute independently remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study demonstrates that EHMT2 suppresses canonical Wnt signaling by activating DKK1 expression through Sp1/p300 recruitment, and that inhibiting EHMT2 (genetically or pharmacologically) reduces DKK1, elevates Wnt signaling, and promotes myogenic differentiation in vitro and in vivo. ERMS cells are vulnerable to EHMT2 inhibitors, and targeting the EHMT2-DKK1-\u03b2-catenin axis holds promise for differentiation therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C100 represent the main conclusions synthesizing all experimental results. The core mechanistic findings (C91-C96) are well-supported by the comprehensive data. C97-C98 are supported by the drug screening and functional assays. C99 is partially speculative ('holds promise') but is a reasonable conclusion based on the data. C100 represents the proposed model, which is well-supported by the experimental evidence. The convergence of genetic, pharmacological, in vitro, and in vivo data provides strong support for the overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Discussion claims establish that Wnt signaling suppression is critical for the ERMS differentiation block, RMS cells lack nuclear \u03b2-catenin and \u03b2-catenin mutations, GSK3\u03b2 has broad substrate specificity making it non-specific for Wnt activation, and GSK3\u03b2 inhibitor tideglusib failed in RMS PDX models, highlighting the need for alternative approaches to activate Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C108 are discussion points supported by appropriate citations to prior literature. They provide important context for why targeting EHMT2 is advantageous over GSK3\u03b2 inhibition, but represent prior knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Discussion claims propose that EHMT2 activates DKK1 in a methylation-dependent manner (based on UNC0642 effects), directly regulates DKK1 through promoter occupancy, and affects Sp1 occupancy and p300 recruitment. RNA-seq reveals deregulation of multiple Sp1 target genes, suggesting EHMT2's effect on Sp1 transcriptional activity may extend beyond DKK1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are supported by the experimental data, though the precise mechanism of methylation-dependent activation requires further investigation (the authors acknowledge this gap). C113 is supported by RNA-seq data. C114 is speculative ('might not be limited') but reasonable based on the data showing multiple Sp1 target genes affected. These represent appropriate interpretation and discussion of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Discussion claims establish that DNMT inhibitors have toxicity limitations, EZH2 inhibitors are the only other specific epigenetic inhibitors effective in ERMS, the drug screen identified EHMT2 inhibitors as very effective, EHMT2 deletion doesn't impact muscle development, EHMT2 is also deregulated in ARMS, and the role of EHMT2 in both ERMS and ARMS implies common features between RMS subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 are discussion points supported by appropriate citations and the study's drug screening data (C117). They provide context for the therapeutic potential of EHMT2 inhibition and connect to the authors' prior work on ARMS. C120 is an inference that is reasonable but not directly tested in this study.",
+    "result_type": "MINOR"
+  }
+]

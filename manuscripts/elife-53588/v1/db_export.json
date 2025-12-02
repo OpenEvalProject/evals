@@ -1,0 +1,2100 @@
+{
+  "submission": {
+    "id": "98b17407-7a8c-45fa-861b-e980b1b8ffac",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:32:37.878588Z",
+    "updated_at": "2025-12-02T18:32:37.878588Z"
+  },
+  "content": [
+    {
+      "id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "submission_id": "98b17407-7a8c-45fa-861b-e980b1b8ffac",
+      "content_type": "manuscript",
+      "content_text": "# Neural dynamics of perceptual inference and its reversal during imagery\n\n## Authors\n\n- Nadine Dijkstra<sup>1</sup> ([ORCID: 0000-0003-1423-9277](https://orcid.org/0000-0003-1423-9277)) \u2020\n- Luca Ambrogioni<sup>1</sup>\n- Diego Vidaurre<sup>3</sup> ([ORCID: 0000-0002-9650-2229](https://orcid.org/0000-0002-9650-2229))\n- Marcel van Gerven<sup>1</sup> ([ORCID: 0000-0002-2206-9098](https://orcid.org/0000-0002-2206-9098))\n\n### Affiliations\n\n1. Donders Centre for Cognition, Radboud University, Donders Institute for Brain, Cognition and Behaviour Nijmegen Netherlands\n2. Wellcome Centre for Human Neuroimaging, University College London London United Kingdom\n3. Oxford Centre for Human Brain Activity, Oxford University Oxford United Kingdom\n4. Department of Clinical Health, Aarhus University Aarhus Denmark\n\n\u2020 Corresponding author\n\n## Abstract\n\nAfter the presentation of a visual stimulus, neural processing cascades from low-level sensory areas to increasingly abstract representations in higher-level areas. It is often hypothesised that a reversal in neural processing underlies the generation of mental images as abstract representations are used to construct sensory representations in the absence of sensory input. According to predictive processing theories, such reversed processing also plays a central role in later stages of perception. Direct experimental evidence of reversals in neural information flow has been missing. Here, we used a combination of machine learning and magnetoencephalography to characterise neural dynamics in humans. We provide direct evidence for a reversal of the perceptual feed-forward cascade during imagery and show that, during perception, such reversals alternate with feed-forward processing in an 11 Hz oscillatory pattern. Together, these results show how common feedback processes support both veridical perception and mental imagery.\n\n## Introduction\n\nWhen light hits the retina, a complex cascade of neural processing is triggered. Light waves are transformed into electrical signals that travel via the lateral geniculate nucleus of the thalamus to the visual cortex (Card and Moore, 1989; Reid and Alonso, 1995) (but see [Bullier, 2001] for other routes). First, low-level visual features such as orientation and spatial frequency are processed in primary, posterior visual areas (Hubel and Wiesel, 1968) after which activation spreads forward towards secondary, more anterior visual areas where high-level features such as shape and eventually semantic category are processed (Maunsell and Newsome, 1987; Thorpe and Fabre-Thorpe, 2001; Vogels and Orban, 1996). This initial feed-forward flow through the visual hierarchy is completed within 150 ms (Seeliger et al., 2018; Thorpe et al., 1996) after which feedback processes are assumed to further sharpen representations over time until a stable percept is achieved (Cauchoix et al., 2014; Kok et al., 2012).\n\nActivation in visual areas can also be triggered internally, in the absence of external sensory signals. During mental imagery, information from memory is used to generate rich visual representations. Neural representations activated during imagery are highly similar to those activated during perception (Dijkstra et al., 2019). Imagining an object activates similar object representations in high-level visual cortex (Dijkstra et al., 2017; Ishai et al., 2000; Lee et al., 2012; Reddy et al., 2010) and generating a mental image with simple visual features such as oriented gratings or letters is associated with perception-like activation of low-level visual areas (Albers et al., 2013; Pearson et al., 2008; Senden et al., 2019).\n\nIn contrast, the temporal dynamics underlying the activation within the visual system during perception and mental imagery are presumably very different. The neural dynamics of the early stages of perception have been extensively characterised with intracranial electrophysiological recordings in primates (Thorpe et al., 1996; Thorpe and Fabre-Thorpe, 2001; Hubel and Wiesel, 1968). However, the neural dynamics of imagery, i.e. how activation travels through the brain during internally generated visual experience, remain unclear. Researchers from various fields have proposed that the direction of information flow during internally generated visual experience is reversed compared to perception (Ahissar and Hochstein, 2004; Hochstein and Ahissar, 2002; Kosslyn et al., 2001; Pearson and Keogh, 2019). In line with this idea, a recent study showed that during memory recall, high-level, semantic representations were active before low-level, perceptual representations (Linde-Domingo et al., 2019). However, the localisation of activation in this study was ambiguous such that it is possible that all processing happened within high-level visual cortex but that only the dimension to which the neurons were sensitive changed from abstract features to perceptual features over time (for an example of dynamic neural tuning, see Spaak et al., 2017. Moreover, memory recall was not directly compared with memory encoding. Therefore, it remains unclear whether the same perceptual cascade of neural activation is reactivated in reverse order during internally generated visual experience.\n\nAccording to predictive processing (PP) theories, reversals of information flow also play an important role during perception. PP states that the brain deals with the inherent ambiguity of incoming sensory signals by incorporating prior knowledge about the world (Helmholtz, 1925). This knowledge is used to generate top-down sensory predictions which are compared to the bottom-up sensory input. Perceptual inference is then accomplished by iteratively updating the model of the world until the difference between prediction and input is minimised (Friston, 2005; Knill and Pouget, 2004). Therefore, the neural dynamics of stimulus information during perception should be characterised by an interplay between feed-forward and feedback sweeps. Simulations based on PP models predict that these recurrent dynamics are dominated by slow-wave oscillations (Bastos et al., 2012; Lozano-Soldevilla and VanRullen, 2019).\n\nIn this study, we used magnetoencephalography (MEG) and machine learning to characterise the spatio-temporal dynamics of information flow during mental imagery and perception. We first characterised neural activity during the initial perceptual feed-forward sweep using multivariate classifiers at different time points which served as proxies for representations in different visual areas. That is, decoding at early perception time points was taken to reflect stimulus representations in low-level, posterior visual areas while decoding at later time points was taken to reflect high-level, anterior visual representations. Then, we estimated when these feed-forward perception models were reactivated during imagery and later stages of perception to infer the neural dynamics of information processing.\n\n## Results\n\nTwenty-five participants executed a retro-cue task while MEG was measured. During the task, two consecutive stimuli were presented, a face and a house or a house and a face, followed by a cue indicating whether participants had to imagine the first or the second stimulus. They then imagined the cued stimulus as vividly as possible and indicated their experienced imagery vividness. There were eight exemplars per stimulus category which were chosen to be highly similar to minimise variation in low-level details within categories and to maximise between-category differences. To ensure that participants were generating detailed mental images, we included catch trials during which participants had to indicate which of four highly similar exemplars they had just imagined. An accuracy of 89.9% (SD\u00a0=\u00a05.4%) indicated that participants did indeed imagine the stimuli with a high degree of visual detail.\n\n### Inferring information flow using perceptual feed-forward classifier models\n\nClassifier models representing neural representations at different time points during perception were obtained using linear discriminant analysis (LDA). An LDA classifier was trained to decode the stimulus class ('face' vs 'house') from sensor level activity at each time point, giving different perception models for different time points (Figure 1A). We decided to only focus on the time period between 70 ms and 130 ms after stimulus onset, which, with a sampling rate of 300 Hz, contained 19 perception models. Perceptual content could be decoded significantly better than chance level at 70 ms after stimulus onset (Dijkstra et al., 2018). This is in line with intracranial and MEG studies which showed that visual information is detectable in early visual cortex from 50 ms onwards (Thorpe and Fabre-Thorpe, 2001; Ramkumar et al., 2013). Furthermore, both intracranial as well as scalp electrophysiology has shown that around 130 ms, high-level object representations first get activated (Isik et al., 2014; Maunsell and Newsome, 1987; Seeliger et al., 2018; Vogels and Orban, 1996). Therefore, this early time window is representative of the feed-forward sweep during perception. In line with this, source reconstruction of the sensor-level activation patterns at different time points shows that stimulus information (i.e. the difference in activation between faces and houses [Haufe et al., 2014] spreads from low-level visual areas towards higher-level visual areas during this period (Figure 1A). Furthermore, cross-correlation between the information flow in early visual cortex (EVC) and inferior temporal cortex (IT; Figure 1B) confirms that stimulus information is available in low-level EVC 26.3 ms (CI\u00a0=\u00a013.1 to 32.9 ms) before it reaches high-level IT.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53588/elife-53588-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013B) Perception models. At each point in time between 70 and 130 ms after stimulus onset, a perception model (classifier) was estimated using Linear Discriminant Analysis (LDA) on the activation patterns over sensors. (A) The source-reconstructed difference in activation between faces and houses (i.e. decoding weights or stimulus information) is shown for different time points during perception. (B) Stimulus information standardised over time is shown for low-level early visual cortex (EVC: blue) and high-level inferior temporal cortex (IT: green). These data confirm a feed-forward flow during the initial stages of perception. (C) Imagery reactivation. For each trial and time point during imagery, the distance to the perceptual hyperplane of each perception model is calculated. (D) To remove high-frequency noise, a low-pass filter is applied to the distance measured. (E) The timing of the reactivation of each perception model during imagery is determined by finding the peak distance for each trial. (F) Hypothesised results. This procedure results in a measure of the imagery reactivation time for each trial, for each perception model time point. If perception models are reactivated in the same order during imagery, there would be a positive relation between reactivation imagery time and perception model time. If instead, perception models are reactivated in reverse order, there would be a negative relation. Source data associated with this figure can be found in the Figure 1\u2014source data 1 and 2.\n\nTo identify when these representations were reactivated during imagery, we tested the perception models on imagery to obtain the distances to the classifier hyperplanes per trial (Figure 1C\u2013E). The distance to the hyperplane indicates the amount of classifier evidence present in the data. Distance measures have previously been used as a measure of model activation (Kerr\u00e9n et al., 2018; Linde-Domingo et al., 2019) and have been linked to reaction time measurements (Grootswagers et al., 2018). For each perception model and for each imagery trial, we identified the time of the absolute peak distance (Linde-Domingo et al., 2019). This resulted in a trial-by-trial estimate of the reactivation timing for the different perception models. If processing happens in a similar order during imagery as during perception, we would expect that during imagery, early perception models are reactivated earlier in time than late perception models (Figure 1F). This would result in a positive relation between perception model time and imagery reactivation time. If instead, processing happens in reverse order, with late, high-level models being active before earlier models, we would see a negative relation between perception model time and imagery model time.\n\nWe tested whether this analysis approach was indeed able to infer the order of reactivation of neural representations using simulations (see Methods; Simulations). The perceptual feedforward sweep was simulated as the sequential activation of five neural representations, operationalised as pseudorandom sensor projections (Figure 2A). We then tested whether distance measures could successfully identify the order of reactivation in a testing (i.e. imagery) set with either small temporal jitter (SD of the onset between trials =\u00a00.1 s) or large temporal jitter (SD\u00a0=\u00a00.5 s). First the cross-decoding accuracy is plotted for each combination of training and testing time point, computed by averaging classifier performance over trials per time point (Figure 2B\u2013D; top panels). For small amounts of temporal jitter, the temporal profile of the decoding accuracy clearly differentiates between same or reversed order of reactivation (compare top-left panel of Figure 2B and Figure 2C). However, for larger temporal jitter, which is supposedly the case during mental imagery (Dijkstra et al., 2018), the temporal profile of the decoding accuracy smears out over the testing time axis, completely obscuring the order of reactivations. In contrast, the reactivation time defined as the peak distance time point per trial accurately indicates the direction of the relationship with the training sequence, irrespective of the amount of temporal jitter.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53588/elife-53588-fig2-v1.jpg)\n\n**Figure 2.:** (A) Five different neural representations, activated sequentially over time, were modelled as separate sensor activation patterns. Stimulus information is defined as the difference in activation between the two classes (i.e. what is picked up by the classifier). Results on a testing data-set in which the order of activation was either the same (B) or reversed (C). Top panels: cross-decoding accuracy obtained by averaging over trials. Bottom panels: reactivation times inferred per trial. Source data associated with this figure can be found in the Figure 2\u2014source data 1.\n\nOur approach has a close relationship with temporal generalisation decoding analysis (King and Dehaene, 2014). Temporal generalisation characterises the stability of neural representations over time by training and testing a classifier on different time points of either the same or different conditions, resulting in a time by time decoding accuracy matrix. Above chance accuracy between two different time points indicates that the neural representation of the stimulus at those time points is similar, whereas chance decoding indicates that the representation between two time points is not similar and has therefore changed over time. In our approach we also train and test classifiers at different time points. However, instead of computing the accuracy between different training and testing time-points by averaging over trials per time point, we determine per training time point and per trial, which testing time point is most similar to the training time point, indicated by the time point with the maximum LDA distance in favour of the correct class (Linde-Domingo et al., 2019; Kerr\u00e9n et al., 2018; Grootswagers et al., 2018). In other words, our method was targeted at the ordering of the representations, and, critically, did not assume a consistent timing between trials, which has been shown to be a limitation of the temporal generalisation decoding scheme (Vidaurre et al., 2019). When applied to different time epochs, our method revealed whether the order of activation of neural representations is the same or reversed while at the same time allowing for variation in the exact onset of reactivation between trials. We re-emphasise that this is especially important in the current context given that the timing of imagery likely substantially differs between trials, which means that the temporal dynamics will be obscured when computing accuracy by averaging over trials per time point (Dijkstra et al., 2018).\n\n### Perceptual feed-forward sweep is reversed during imagery\n\nThe reactivation time during imagery for the different perception models is shown in Figure 3A. To test whether there was a significant ordering in the reactivation, we ran a linear mixed-effects model (LMM) with the reactivation time during imagery as dependent variable, the perception model time as fixed predictor, and subject and trial as random variables. Five models with different combinations of random effects were estimated and the model with the highest Schwarz Bayesian Information Criterion (BIC) was used to ensure best-fit with minimum number of predictors (Supplementary file 1a). The winning model contained a random effect for the intercept of each subject and trial. This means that this model allowed the reactivation of the perception sequence to start at different time points per trial and per subject, which is in line with the idea that there is a large variation in timing of imagery between trials and subjects (Dijkstra et al., 2018).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53588/elife-53588-fig3-v1.jpg)\n\n**Figure 3.:** (A) Reactivation time during imagery for every perception model averaged over trials. The shaded area represents the 95% confidence interval. The linear equation shows how imagery reactivation time (I) can be calculated using perception model time (P) in seconds. (B) Same results after removing stimulus information by permuting the class-labels (C\u2013D) Stimulus information during imagery was estimated by realigning the trials based on the reactivation time points and using the linear equation to estimate the imagery time axis. (C) Stimulus information standardised over time for low-level early visual cortex (EVC) and high-level inferior temporal cortex (IT). (D) Stimulus information in EVC and IT averaged over time before and after realignment. Stimulus information below 0 indicates that the amount of information did not exceed the permutation distribution. Source data associated with this figure can be found in the Figure 2\u2014source data 1\u20136.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53588/elife-53588-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Unpermuted data. (B) Permuted data.\n\nThe model showed a significant main effect of perception time (t(98160)\u00a0=\u00a0\u22125.403, p=6.58e-8) with a negative slope (\u03b20\u00a0=\u00a02.05, SD\u00a0=\u00a00.28; \u03b21\u00a0=\u00a0\u22121.17,SD\u00a0=\u00a00.22) indicating that models of later perception time points were associated with earlier imagery reactivation times. The fact that the absolute slope is so close to one suggests that reactivation during imagery of the perception model sequence happens at a similar speed as the original activation during perception.\n\nNext, we reconstructed the imagery activation by realigning the trials based on the identified peak time points for each perception model time point. The imagery time line was inferred using the linear equation obtained from the LMM. The temporal dynamics of high-level IT and low-level EVC (Figure 3B) confirm the conclusion that during imagery, information flows from high-level to low-level visual areas. Cross-correlation between these realigned signals shows that information in IT precedes information in EVC by 11.2 ms (CI\u00a0=\u00a00 to 29.9 ms). Furthermore, before realignment, time-locked decoding during imagery only revealed a small amount of information in high-level visual cortex (Figure 3D). In contrast, after realignment, stimulus information was also clearly present in EVC. This emphasises how time-locked analyses obscure neural processing during complex cognitive processes such as mental imagery.\n\nTo ensure that these results were not due to confounds in the structure of the data irrelevant to reactivation of stimulus representations, we performed the same analysis after permuting the class-labels of the trials, erasing stimulus information while keeping the temporal structure of the data unaltered. Specifically, we trained the perception models using random class assignments and then again calculated the reactivations during imagery. The results are shown in\u00a0Figure 3B. The sequential reactivation disappeared when using shuffled classifiers as perception time did not significantly predict imagery reactivation time anymore (t(98160)\u00a0=\u00a0\u22120.762, p=0.446). Furthermore, for the main analysis, we removed high frequency noise from the imagery distance traces. To check whether this filter somehow altered the results, we ran the same analysis without the low-pass filter, which gave highly similar results (see\u00a0Figure 3\u2014figure supplement 1). Without the filter, there was still a significant main effect of perception time (t(98160)\u00a0=\u00a0\u22124.153, p=0.0000328) where models of later perception time points were associated with earlier imagery reactivation times ($\\beta$=\u22120.8942, SD\u00a0=\u00a00.2153) and the results of the shuffled classifier remained non-significant. Finally, because we used cross-validation within subjects to calculate reactivation timing, there is a dependence between trials of the same subject, violating the independence assumption of first-order statistical tests. As a sanity check, we performed a second test that did not require splitting trials: we used LMM models with reactivation times averaged over trials within subjects, and only 'subject' as a random variable. In this case, the model containing both a random effect of intercept as well as slope per subject best explained the data (see Supplementary file 1c). This between-subject model still showed a significant main effect of perception time (t(24) = \u22123.24, p=0.003) with a negative slope (\u03b20\u00a0=\u00a02.05, SD\u00a0=\u00a00.03, \u03b21\u00a0=\u00a0\u22121.19, SD\u00a0=\u00a00.37) confirming that the effect was not dependent on between-trial statistics.\n\n### Reactivation during imagery reveals recurrent processing during later stages of perception\n\nIn the previous analysis, we focused on the first 150 ms after stimulus presentation because this period reflects the initial perceptual feed-forward sweep. A negative relationship with imagery reactivation time therefore indicated feedback processing during imagery (Figure 1). However, feedback processes are assumed to play a fundamental role in later stages of perception (Lamme and Roelfsema, 2000; Pennartz et al., 2019). For these later stages of perception, we would therefore expect a positive relation with imagery reactivation, indicating that information flows in the same direction. To investigate this, we next calculated the imagery reactivation time for all time points during perception (Figure 4). The results between 70 ms and 130 ms are equivalent to Figure 3A.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53588/elife-53588-fig4-v1.jpg)\n\n**Figure 4.:** (A) Imagery reactivation time for perception models trained on all time points. On the x-axis the training time point during perception is shown and on the y-axis the reactivation time during imagery is shown. The dots represent the mean over trials for individual time points and the shaded area represents the 95% confidence interval. (B) Left: time-frequency decomposition using a Morlet wavelet at 10 Hz. Right: power at different frequencies using a Fast Fourier Transformation. The purple line represents the true data and the grey line represents the results from the shuffled classifier. Shaded areas represent 95% confidence intervals over trials. Red lines indicate time points for which the true and shuffled curve differed significantly (FDR corrected). (C) Intrinsic mode function and its extrema derived from the reactivation traces using empirical model decomposition. (D) Coherence between reactivation trace and raw signal. Left coherence values, right log10 p values. Source data associated with this figure can be found in the Figure 4\u2014source data 1\u20133.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53588/elife-53588-fig4-figsupp1-v1.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53588/elife-53588-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Top panels: per channel. Bottom panels: averaged over channels. Shaded area represents the 95% CI over trials. (A) Raw signal amplitude. (B) Frequency decomposition. (C) Auto-correlation.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53588/elife-53588-fig4-figsupp3-v1.jpg)\n\nInterestingly, during the first 400 ms of perception, there seems to be an oscillatory pattern in the relationship between perception time and imagery reactivation time, where positive and negative slopes alternate. This suggests that during perception, the direction of information flow alternates. This pattern repeats four times in 400 ms, roughly reflecting an alpha oscillation. To investigate this further, we quantified 10 Hz power over time using a Morlet decomposition (Figure 4B left, purple curve) and compared the results with the permuted classifier (Figure 4B left, grey curve). There was a significant increase in 10 Hz power between 80 and 315 ms after stimulus onset during perception (all FDR corrected p-values below 0.003). Furthermore, a Fast Fourier Transform over the first 400 ms revealed that the difference in power was limited to the 11.2 Hz frequency (Figure 4B right, p=0.001).\n\nThese results indicate that, during perception, stimulus information travels up and down the visual hierarchy aligned to the alpha frequency. To make sure this effect was not due to the low-pass filtering, we applied the same analysis on the unfiltered data, giving almost identical results (see Figure 4\u2014figure supplement 1). We next aimed to parse the signal into feed-forward and feedback sweeps. To this end, we used empirical mode decomposition (EMD) over the first 400 ms to separate the signal in intrinsic mode functions (IMFs). We selected identified increasing and decreasing phases by selecting the period between two subsequent extrema (Figure 4C) and calculated the slope for each phase (single estimated slopes are shown in Figure 4A). The average decreasing (feed-forward) slope was \u22120.69 (CI\u00a0=\u00a0\u22122.05 to \u22120.35) and the average increasing (feedback) slope was 1.02 (CI\u00a0=\u00a0\u22120.31 to 2.14; Figure 4D). There was no significant difference in the absolute slope value between increasing and decreasing phases (Mdiff\u00a0=\u00a00.33, CI: \u22121.80 to 1.74), revealing no evidence for a difference in processing speed for feed-forward and feedback sweeps.\n\nIt might be possible that the oscillation in the reactivation trace is caused by evoked alpha oscillations in the raw signal which modulates signal-to-noise ratio via its amplitude. As can be seen in Figure 4\u2014figure supplement 2, there is indeed a clear evoked alpha oscillation present in the raw signal. To investigate whether the oscillation of the reactivation trace was related to the oscillation in the raw signal, we calculated the spectral coherence at the peak frequency (Figure 4B) between the reactivation trace and the raw signal at each sensor. We then compared the coherence between the raw data and the true activation reactivation with the coherence between the raw data and the reactivation of the shuffled classifier using a permutation test with 10000 permutations. None of the sensors showed a significant difference in coherence between the true and permuted classifier (FDR corrected; Figure 4D), even though the reactivation was only present for the true classifier ( Figure 4B). Furthermore, the topography of the coherence values appears very unstructured (Figure 4D). Together, this suggests that the oscillatory pattern in the reactivated trace does not merely reflect evoked alpha in the raw signal. However, future research is necessary to fully characterise the relationship between the reactivation dynamics and the raw signal dynamics.\n\n### Stimulus representations are iteratively updated during perception\n\nIf there is indeed a recurrent information flow up and down the visual hierarchy during perception, we should also be able to demonstrate this within perception. The previous results suggest specific time windows of feed-forward and feedback phases during perception. To test whether these different phases indeed reflected reversals of information flow, we applied the reactivation analysis previously used for imagery (Figure 1) to the different perception phases identified in the previous analysis (Figure 4). We predicted that perception classifiers trained during a decreasing (feed-forward) phase would be reactivated in reverse order during an increasing (feedback) phase and vice versa, showing a negative relationship between training time and reactivation time. In contrast, classifiers trained and tested on the same type of phase (both decreasing or both increasing), should show a positive relationship (see Figure 5B, for hypothesised results).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53588/elife-53588-fig5-v1.jpg)\n\n**Figure 5.:** (A) The reactivation traces for each testing phase. Blue traces reflect feed-forward phases, pink traces reflect feedback phases (Figure 4A) and grey traces reflect reactivation traces for permuted classifiers. Shaded area represents the 95% confidence interval over trials. (B) Hypothesised (top) and empirical (bottom) slopes between the training and testing phases. The hypothesised matrix assumes recurrent processing such that subsequent phases show a reversal in the direction of information flow. Recurrence index reflects the amount of recurrent processing in the data, which is quantified as the dot product between the vectorised hypothesis matrix and empirical matrix. (C) Recurrence index for the permuted classifier, phase specification based on the IMF of the imagery reactivation trace (Figure 4C) and phase specification on evoked oscillations at various frequencies. (D) Slope matrix for phase specification defined at 10 Hz over the entire stimulus period. Source data associated with this figure can be found in the Figure 5\u2014source data 1\u20138.\n\nThe reactivation traces for the different test phases are shown in Figure 5A. Blue traces represent reactivations during feed-forward phases and pink traces represent reactivations during feedback phases. Grey traces show the results for a permuted classifier. In line with the previous findings, for most phases, there is a clear oscillatory pattern between training time and reactivation time within perception. For each phase, the training time corresponding to that testing phase is highlighted in bold. This time period should always show a positive slope, indicating that classifiers trained and tested on time points belonging to the same phase are reactivated in the same order.\n\nThe slopes between the training time and the reactivation time of the different phases are shown below the hypothesised results in Figure 5B. As expected, the diagonal, reflecting training and testing on the same phase, was always positive. In contrast, training and testing on different phases tended to be associated with negative slopes. Note that for all decoding analyses, cross-validation was used, which means that these results cannot be due to overfitting but reflect true representational overlap between phases. To quantify the effect, we calculated a Recurrence Index (RI) which was defined as the dot-product between the vectorised hypothesis-matrix and the empirical-matrix. The RI is positive if the data show the hypothesised oscillatory pattern of slope reversals, zero if there is no clear oscillatory pattern and negative if the data show the opposite pattern. The RI was significantly larger than zero for the true data (RI\u00a0=\u00a01.83, CI\u00a0=\u00a01.71 to 1.94, p < 0.0001) but not for the permuted data (RI\u00a0=\u00a0\u22120.008, CI\u00a0=\u00a0\u22120.12 to 0.10, p=0.548). This confirms that during perception, stimulus information flows up and down the visual hierarchy in feedback and feed-forward phases.\n\nThe phases that we used here were identified based on the IMF of the oscillation in the imagery reactivation trace (Figure 4), leading to phases of different lengths. Next, we investigated whether we could observe the same pattern if we specified the phases based on fixed evoked oscillations at different frequencies. For example, a 10 Hz oscillation resulted in four feed-forward and four feedback phases of 50 ms each within our 400 millisecond time window. The RI for the different frequencies is plotted in Figure 5C. Whereas the RI was significantly above zero for several low frequencies, the oscillatory pattern was clearest for the IMF based phases and for the 10 Hz oscillation, confirming that the perceptual recurrence is most strongly aligned to the alpha frequency. Furthermore, to investigate whether this pattern of recurrence was indeed specific to the 400 millisecond time window identified previously, we also applied the 10 Hz recurrence analysis to the entire stimulus period (Figure 5D). The results show that the recurrence pattern is indeed restricted the first 400 ms after stimulus onset.\n\nAn interesting observation is that the recurrence pattern seems to be restricted to around the testing phase, such that only classifiers trained on phases close to the testing phase show a clear positive or negative relation with reactivation time. This is what causes the 'traveling wave' pattern between the rows in Figure 5A. An intriguing explanation for this observation is that stimulus representations change over subsequent cycles, such that representations only show a reactivation relation with neighbouring phases, but that the representations during later phases are too dissimilar to result in reliable reactivations. We tested whether recurrence was indeed specific to phases around the testing phase by comparing the normalised RI of slopes next to the diagonal in the slope matrix with the other slopes. Neighbouring phases indeed show a significantly higher RI (M\u00a0=\u00a00.073, CI\u00a0=\u00a00.069 to 0.076) than other phases (M\u00a0=\u00a00.002, CI\u00a0=\u00a0\u22120.0004 to 0.005, p < 0.0001), confirming that recurrence was restricted to a small number of cycles.\n\n## Discussion\n\nIn this study, we investigated how stimulus representations flow through the visual system during mental imagery and perception. Our results reveal an asymmetry in information processing between perception and imagery. First, we showed that early perception processes are reactivated in reverse order during imagery, demonstrating that during imagery, activation flows from high-level visual areas down to low-level areas over time. Second, for later stages of perception, we found an oscillatory pattern of alternating positive and negative relations with imagery reactivation, indicating recurrent stimulus processing up and down the visual hierarchy aligned to an 11 Hz oscillation. Finally, by focusing on the identified feed-forward and feedback phases, we showed that recurrence during perception was restricted to neighbouring phases, suggesting that the format of neural stimulus representations changed with subsequent cycles of recurrent processing. Together, these findings indicate that during imagery, stimulus representations are activated via feedback processing whereas during perception, stimulus representations are iteratively updated through cycles of recurrent processing.\n\nOur results are neatly in line with predictive processing (PP) theories. According to PP, recurrent processing during perception reflects dynamic hypothesis testing (Bastos et al., 2012; Friston, 2005; Kersten et al., 2004; Knill and Pouget, 2004). Specifically, perceptual inference is assumed to be accomplished via an interplay between top-down prediction signals encoding perceptual hypotheses and bottom-up prediction errors encoding the sensory signal unexplained by these hypotheses. Inferring the cause of sensory input is done by iteratively updating the perceptual hypothesis until the prediction error is minimised, in line with the dynamically changing representations observed here. Importantly, recurrent processing is assumed to happen hierarchically such that each level is activated by both bottom-up evidence as well as top-down predictions (Friston, 2005). This is in line with our observation that feed-forward and feedback sweeps proceeded at the same speed. Also in line with the current findings, PP predicts that these recurrent dynamics are dominated by slow-wave oscillations (Bastos et al., 2012). To our knowledge, the current study is the first to show these perceptual updating cycles empirically in humans. Furthermore, our results suggest that in the current task context, the perceptual inference process was completed in approximately four updating cycles. An exciting avenue for future research is to investigate whether the number of cycles needed can be modulated by task variables such as attention and stimulus noise.\n\nWhereas perception was characterised by dynamically changing representations updated through recurrent cycles, we only found evidence for a single feedback flow during imagery. Specifically, all perceptual feed-forward sweeps showed a negative relationship with the same imagery time window and all perceptual feedback sweeps showed a negative relationship with that same imagery time window. This suggests that the imagery feedback flow contained the complete stimulus representation that was inferred via recurrent cycles during perception. This result fits with the idea that imagery uses the same predictive processes that underlie perceptual inference to run off-line simulations of sensory representations under different hypotheses (Dijkstra et al., 2019; Gershman, 2019; Grush, 2004; Hobson and Friston, 2012; Moulton and Kosslyn, 2009). In contrast to perception, during imagery, there is no bottom-up sensory input prompting hypothesis updating. Instead, the perceptual cause is given and feedback connections are used to generate the corresponding low-level sensory representation based on the mapping that was learned during perception. Recurrent processing within the visual system might become important when imagining a more dynamic stimulus in which sensory representations change over time. However, it is also possible that recurrent dynamics were actually present during imagery in this task but that we were unable to reveal them due to signal-to-noise issues. Future research should focus on developing more sensitive techniques to further characterise information flow during imagery. Another interesting question for future research is whether reactivation during mental imagery has to always fully progress down the visual hierarchy. In this study, participants were instructed to generate highly detailed mental images and catch trials were used to ensure that they indeed focused on low-level visual details. It might be the case that if less detail is needed for the task, earlier perception processes are not reactivated and mental simulations stop at a higher level (Kosslyn and Thompson, 2003; Pearson and Keogh, 2019).\n\nCentral to this predictive processing interpretation of bottom-up and top-down sweeps is that increasingly abstract stimulus features are processed in higher-level brain areas. This is indeed what has generally been observed in the literature (Hubel and Wiesel, 1968; Thorpe and Fabre-Thorpe, 2001; Vogels and Orban, 1996). However, because we have not directly assessed which stimulus features were captured by the classifiers in this study, we cannot be certain that the sweeps through the visual hierarchy observed here genuinely reflect processing of stimulus information at different levels of abstraction. For example, it is possible for the classifier to be driven by other features of the signal irrelevant to processing of visual information such as general amplification of signal due to differences in attentional capture between the two stimuli, which might have also given rise to sweeps through the visual hierarchy (Michalareas et al., 2016). It is likely that such high-level cognitive mechanisms have influenced processing during later stages of perception. However, a recent study showed that the initial feedforward sweep during perception does not seem to be influenced by attention (Alilovi\u0107 et al., 2019). Moreover, modelling work using Convolutional Neural Networks (CCNs) has shown that the MEG signal during perception does reflect activation of hierarchically increasing complex features over time (Seeliger et al., 2018). Further research using explicit encoding models of stimulus features at different levels of abstraction would be necessary to completely address this point. Furthermore, the current study used a number of non-traditional analysis steps. While we aimed to demonstrate the validity of this approach via simulations, it is worth noting that simulations are not a perfect control since simulated data cannot account for all the features present in real data, and might be blind to other issues. Therefore, to fully ensure that this analysis approach does not suffer from any overlooked confounds, future validation studies are needed.\n\nIn conclusion, by using a novel multivariate decoding approach which allowed us to infer the order in which representations were reactivated, we show that, while similar neural representations are activated during imagery and perception, the neural dynamics underlying this activation are different. Whereas perception is characterised by recurrent processing, imagery is dominated by top-down feedback processing. These results are in line with the idea that during perception, high-level causes of sensory input are inferred whereas during imagery, this inferred mapping is reversed to generate sensory representations given these causes. This highlights a fundamental asymmetry in information processing between perception and imagery and sets the stage for exciting new avenues for future research.\n\n## Materials and methods\n\n### Participants\n\nWe assumed a medium effect size (d\u00a0=\u00a00.6) which, to reach a power of 0.8, required twenty four participants. To take into account drop-out, thirty human volunteers with normal or corrected-to-normal vision gave written informed consent and participated in the study. Five participants were excluded: two because of movement in the scanner (movement exceeded 15 mm), two due to incorrect execution of the task (less than 50% correct on the catch trials, as described below) and one due to technical problems. Twenty-five participants (mean age 28.6, SD\u00a0=\u00a07.62) remained for the final analysis. The study was approved by the local ethics committee and conducted according to the corresponding ethical guidelines (CMO Arnhem-Nijmegen). An initial analysis of these data has been published previously (Dijkstra et al., 2018).\n\n### Experimental design\n\nWe adapted a retro-cue paradigm in which the cue was orthogonalised with respect to the stimulus identity (Harrison and Tong, 2009). Participants were shown two images after each other followed by a retro-cue indicating which of the images had to be imagined. After the cue, a frame was shown in which the participants had to imagine the cued stimulus as vividly as possible. Next, they had to indicate their experienced imagery vividness by moving a bar on a continuous scale. To ensure that participants were imagining the stimuli with great visual detail, both categories contained eight exemplars, and on 7% of the trials the participants had to indicate which of four exemplars they imagined. The exemplars were chosen to be highly similar in terms of low-level features to minimise within-class variability and increase between-class classification performance. We instructed participants to focus on vividness and not on correctness of the stimulus, to motivate them to generate a mental image including all visual features of the stimulus. The stimuli encompassed 2.7 \u00d7 2.7 visual degrees. A fixation bull's-eye with a diameter of 0.1 visual degree remained on screen throughout the trial, except during the vividness rating.\n\n### MEG recording and preprocessing\n\nData were recorded at 1200 Hz using a 275-channel MEG system with axial gradiometers (VSM/CTF Systems, Coquitlam, BC, Canada). For technical reasons, data from five sensors (MRF66, MLC11, MLC32, MLF62, MLO33) were not recorded. Subjects were seated upright in a magnetically shielded room. Head position was measured using three coils: one in each ear and one on the nasion. Throughout the experiment head motion was monitored using a real-time head localiser (Stolk et al., 2013). If necessary, the experimenter instructed the participant back to the initial head position during the breaks. This way, head movement was kept below 8 mm in most participants. Furthermore, both horizontal and vertical electro-oculograms (EOGs), as well as an electrocardiogram (ECG) were recorded for subsequent offline removal of eye- and heart-related artefacts. Eye position and pupil size were also measured for control analyses using an Eye Link 1000 Eye tracker (SR Research). Data were analysed with MATLAB version R2018a and FieldTrip (Oostenveld et al., 2011) (RRID:SCR_004849). Per trial, three events were defined. The first event was defined as 200 ms prior to onset of the first image until 200 ms after the offset of the first image. The second event was defined similarly for the second image. Further analyses focused only on the first event, because the neural response to the second image is contaminated by the neural response to the first image. Finally, the third event was defined as 200 ms prior to the onset of the retro-cue until 500 ms after the offset of the imagery frame. As a baseline correction, for each event, the activity during 300 ms from the onset of the initial fixation of that trial was averaged per channel and subtracted from the corresponding signals. The data were down-sampled to 300 Hz to reduce memory and CPU load. Line noise at 50 Hz was removed from the data using a DFT notch filter. To identify artefacts, the variance of each trial was calculated. Trials with high variance were visually inspected and removed if they contained excessive artefacts. After artefact rejection, on average 108 perception face trials, 107 perception house trials, 105 imagery face trials and 106 imagery house trials remained for analysis. To remove eye movement and heart rate artefacts, independent components of the MEG data were calculated and correlated with the EOG and ECG signals. Components with high correlations were manually inspected before removal. The eye tracker data were cleaned separately by inspecting trials with high variance and removing them if they contained blinks or other excessive artefacts.\n\n### Reactivation timing analysis\n\nTo estimate when neural representations at different perception time points got reactivated during imagery, we trained classifiers on several time points during perception and applied them to imagery. Specifically, to decode the stimulus category per perception time point, we used a linear discriminant analysis (LDA) classifier with the activity from the 270 MEG sensors as features and a shrinkage regularisation parameter of 0.05 (see [Mostert et al., 2016] for more details). To prevent a potential bias in the classifier, the number of trials per class was balanced per fold by randomly removing trials from the class with the most trials until the trial numbers were equal between the classes. In our design, the perception and imagery epochs happened in the same general 'trial'. If the imagery epochs on which the classifier was tested came from the same trials as the perception epochs on which it was trained, auto-correlations in the signal could inflate decoding accuracy. To circumvent this, a five-fold cross-validation procedure was implemented where for each fold the classifier was trained on 80% of the trials and tested on the other 20%.\n\nBecause the amplitude of the signal is usually smaller during imagery than during perception (Kosslyn et al., 2001; Pearson and Keogh, 2019), we demeaned the data by subtracting the mean over trials per time point and per sensor. This forced the classifier to leverage relative changes in the multivariate signal while avoiding the confounding effect of having global changes in amplitude.\n\nThis resulted in a decision value for each perception model, for each imagery trial and time point. The sign of this value indicates in which category the trial has been classified and the value indicates the distance to the hyperplane. In order to obtain the confidence of the classifier in the correct class, the sign of the distance values in one category was inverted. This means that increasing positive distance values now always reflected increasingly confident classification. To obtain the specific moment within each imagery trial that a given perception model became active, we identified the time point with the highest distance (Linde-Domingo et al., 2019; Figure 1).\n\nIdentifying the order of reactivation of neural representations was then done by performing a linear regression with the training time points as predictor and the inferred reactivation times points as dependent variable. A positive relationship indicates that reactivations happened in the same order, whereas a negative relationship indicates a reversal in the order of reactivations.\n\nAfter discovering the oscillatory pattern between later perception time points and imagery reactivation, we also ran this reactivation analysis within perception by training on all perception time points and testing on specific perception time windows reflecting the identified feed-forward and feedback phases (Figure 4). This identified, per phase, reversals in information flow.\n\nFor the imagery generalisation, the time window used to obtain the peak distance extended from the cue onset until the vividness instruction onset, covering the entire 4 s during which participants were instructed to imagine the stimulus. For this data, we removed high frequency noise using a low-pass filter of 30 Hz (for the results using the raw data, see Figure 3\u2014figure supplement 1). For the within-perception tests we did not use a low-pass filter because we used smaller testing time windows and were also interested in possible high-frequency effects.\n\nTo ensure that the observed effects were due to dynamics in activation of neural stimulus representations, and not due to dynamics of the raw signals, for each analysis, we performed the same analysis after permuting the class-labels, thereby removing stimulus information from the data without altering the temporal structure of the data.\n\n### Simulations\n\nWe tested the validity of our approach on a relatively realistic synthetic dataset. Specifically, we tested whether the trial-by-trial LDA distance measures could successfully be used to infer the order of reactivation of neural representations, even when the timing of these reactivations differed between trials. The true neural model consisted of 5 neural representations activated in a partially overlapping sequence over the course of 60 milliseconds, with a sampling rate of 300 Hz, modelled as pseudo random activation of 20 sensors for two classes (Figure 2A). Stimulus information is defined as the difference between the two classes. The training set was generated as 100 trials per class of the true neural model activation. Testing sets were generated as 100 trials per class of the true neural model activation in the same order or in reversed order as the training set and slowed down by a factor of 10. Furthermore, temporal uncertainty between trials was introduced by randomly sampling the onset of the reactivation in each trial from a standard normal distribution with mean 0.8 s and a standard deviation of 0.1 or 0.5. Testing set trials were 2 s long with a sampling frequency of 300 Hz. This stimulus-specific activity was added on top of some generated ongoing activity, which we simulated as realistic 1/f noise. In order to do that, we fitted a multivariate autoregressive model of order 1 to the real data, and then sampled from it trial by trial (Vidaurre et al., 2019). We simulated 10 subjects and performed LDA cross-decoding analysis as described above in each subject separately resulting in distance measures per testing trial and time point. Decoding accuracy was computed for each combination of training and testing time point as the number of trials in which the distance was highest for the correct class divided by the total number of trials (i.e. proportion of correctly classified trials). Reactivation time was computed for each training time point and for each trial as the testing time with the peak distance in favour of the correct class (Linde-Domingo et al., 2019).\n\n### Realignment\n\nTo confirm that the order of activation of low and high-visual areas was reversed during imagery compared to perception, we realigned the imagery activation based on the identified distance peaks. This was done by selecting the peak imagery time point for every trial for every perception model time point to create a realigned imagery data set. The time axis for this new data set was inferred using the linear relationship between perception model time and imagery reactivation time established in the main imagery reactivation analysis. Source activation was then calculated using the same procedure as was used for the un-realigned perception and imagery data (more details below under Source localisation).\n\n### Frequency analysis\n\nFor the time frequency analysis, we used a Morlet Wavelet at 10 Hz defined as:\n\n$$\nM\u2062W=exp\u2061(\\frac{-t^{2}}{2\u2062s^{2}}+i\u2062w\u2062t)\n$$\n\nwhere $t$ is a time vector from \u22120.5 to 0.5 in steps of 1/fs, $w=2\u2062\\pi\u206210$, $s=\\frac{c\u20622\u2062\\pi}{w}$ and $c$ is the number of cycles, this case 1. We only used 200 samples in the centre of the wavelet and convolved this with the mean reactivation trace to obtain the time frequency representation. To calculate power at different frequencies we used the Fast Fourier Transform (FFT). To prevent edge effects, we first multiplied the mean signal with a Hanning taper from \u22120.2 to 0.6 s prior to performing the FFT. Of the resulting complex numbers, the absolute value was taken and the result was normalised by the length of the signal.\n\nWithin reactivation traces, positive slopes represented reactivation in a similar order whereas negative slopes represented reactivation in reverse order. We wanted to divide the signal into phases of positive and negative slopes because these represented feed-forward and feedback phases. In order to do this, we used empirical mode decomposition (EMD) which separates the signal into intrinsic mode functions (IMF) based on local and global extrema; that\u00a0is, peaks and troughs (Huang et al., 1998; Rilling et al., 2003; Wang et al., 2010). This technique identifies oscillations without assuming that these oscillations should be sinusoidal. For a 10 Hz frequency we would expect eight extrema in 400 ms, reflecting four full cycles. Therefore, to identify the different phases, we selected the IMF with the number of extrema closest to eight. Decreasing and increasing phases were defined as periods between subsequent extrema (Figure 4C). Slopes between periods were calculated using linear regression and slopes for decreasing and increasing periods were averaged to reflect the speed of feed-forward and feedback processing respectively. To determine the uncertainty of these slopes, for every bootstrapping sample the mean reactivation trace and the corresponding EMD separation was recalculated.\n\n### Statistics\n\nTo test whether there was a significant linear relationship between perception training model time and imagery reactivation time, we used a generalised linear mixed model (GLMM) with the single trial classifier distance peaks as dependent variable and perception model time during the feed-forward sweep as independent variable. We chose GLMMs because they make fewer assumptions than more commonly used GLMs and because we expected large differences in the onset of reactivation between trials and subjects and, in contrast to GLMs, GLMMs allow for random effects on trials and subjects.\n\nTo obtain 95% confidence intervals for reactivation times, time-frequency and frequency plots, we performed bootstrapping analyses with 10000 bootstrapping samples. For pair-wise comparisons, we obtained p-values by bootstrapping the difference between the two conditions. Source traces represented the mean difference between the stimulus classes which cannot be computed per trial. Therefore, uncertainty in the mean of these values was represented as the standard error of the mean (SEM) over subjects.\n\n### Source localisation\n\nTo identify brain areas that represented information about the stimuli during perception and imagery, we performed source reconstruction. For LDA classification, the spatial pattern that underlies the classification (i.e. the decoding weights or 'stimulus information\u2019), reduces to the difference in magnetic fields between the two conditions (Haufe et al., 2014). Therefore, the difference ERF between faces and houses reflects the contributing brain areas. For the sensor-level activation plots, we calculated the planar gradient for each participant prior to averaging over participants. For the source-level plots, we performed source reconstruction on the axial difference ERF.\n\nT1-weighted structural MRI images were acquired in separate sessions using a Siemens 3T MRI scanner. Vitamin E markers in both ears indicated the location of the head coils during the MEG measurements, allowing for realignment between the two. The location of the fiducial at the nasion was estimated based on anatomy. The volume conduction model was created based on a single shell model of the inner surface of the skull. The source model was based on a reconstruction of the cortical surface created for each participant using FreeSurfer's anatomical volumetric processing pipeline (RRID:SCR_001847,(Fischl, 2012). MNE-suite (Version 2.7.0; https://mne.tools/, RRID:SCR_005972, (Gramfort et al., 2014) was subsequently used to infer the subject-specific source locations from the surface reconstruction. The resulting head model and source locations were co-registered to the MEG sensors.\n\nThe lead fields were rank reduced for each grid point by removing the sensitivity to the direction perpendicular to the surface of the volume conduction model. Source activity was obtained by estimating linearly constrained minimum variance (LCMV) spatial filters (Van Veen et al., 1997). The data covariance was calculated over the interval of 50 ms to 1 s after stimulus onset for perception and over the entire segment for imagery. The data covariance was subsequently regularised using shrinkage with a regularisation parameter of 0.01 (as described in Manahova et al., 2018). These filters were then applied to the sensor MEG data, resulting in an estimated two-dimensional dipole moment for each grid point over time.\n\nTo facilitate interpretation and visualisation, we reduced the two-dimensional dipole moments to a scalar value by taking the norm of the vector. This value reflects the degree to which a given source location contributes to activity measured at the sensor level. However, the norm is always a positive value and will therefore, due to noise, suffer from a positivity bias. To counter this bias, we employed a permutation procedure in order to estimate this bias. Specifically, in each permutation, the sign of half of the trials were flipped before averaging and projecting to source space. This way, we cancelled out the systematic stimulus-related part of the signal, leaving only the noise. Reducing this value by taking the norm thus provides an estimate of the positivity bias. This procedure was repeated 1000 times, resulting in a distribution of the noise. We took the mean of this distribution as providing the most likely estimate of the noise and subtracted this from the true, squared source signal. Furthermore, this estimate provides a direct estimate of the artificial amplification factor due to the depth bias. Hence, we also divided the data by the noise estimate to obtain a quantity that allowed visualisation across cortical topography, leading to an unbiased estimate of the amount of stimulus information present in each cortical area. Values below zero therefore reflected no detectable signal compared to noise. For full details, see Manahova et al., 2018.\n\nTo perform group averaging, for each subject, the surface-based source points were divided into 74 atlas regions as extracted by FreeSurfer on the basis of the subject-specific anatomy (Destrieux et al., 2010). Next, the activation per atlas region was averaged over grid points for each participant. Group-level activations were then calculated by averaging the activity over participants per atlas region (van de Nieuwenhuijzen et al., 2016). The early visual cortex ROI (EVC) corresponded to the 'occipital pole' parcels from the Destrieux atlas and the inferior temporal ROI (IT) was a combination of the 'temporal lateral fusiform', 'temporal lateral' and 'temporal lateral and lingual' parcels. Activation in the IT ROI was calculated by applying PCA to the three parcels and taking the first principal component. Because data are z-scored over time during PCA, to ensure that the activation in the EVC ROI was comparable to activation in IT, we also z-scored these data.\n",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "9bd56124-6711-42c7-9f1e-8a17e3f9e100",
+      "submission_id": "98b17407-7a8c-45fa-861b-e980b1b8ffac",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ga\u00ebl Varoquaux, Inria Saclay France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53588.sa1](https://doi.org/10.7554/eLife.53588.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nDijkstra et al. provide empirical evidence for reversal of perceptual inference by analyzing the electrophysiological signature of brain responses to visual stimuli. It reveals a feedback loop from higher-level regions that appear as an oscillation in the delay of the brain response. This empirical evidence is useful to refine theories of perception.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Neural dynamics of perceptual inference and its reversal during imagery\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Timothy Behrens as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript uses MEG during a working memory/imagery task to investigate the flow of information between low and high level areas during perception and imagery respectively. The authors provide empirical evidence consistent with the notion that high level regions are first during imagery, and last during perception. In addition, they show that recall leads to several oscillations (around 11Hz), interpreted as bottom-up and top-down processes. This evidence is extracted via several methodological innovations. A multivariate classification methods, namely Linear Discriminant Analysis (LDA) is applied to various time points following stimulus presentation and the resulting trained classifiers (one by time-point) are used, to time-align the imagery trials via their ability to discriminate better than others. This time alignment is central to claim that \u201cinformation\u201d is processed bottom-up or top-down along the ventral visual pathway. Here the distance to the discriminating hyperplane is used as a proxy for the evidence that the signal is present, analyzed at the group level.\n\nThe findings were deemed of high interest by the reviewers. The evidence for oscillations is expected to stimulate greatly neurosciences, in particular predictive coding theory. Indeed, the phenomena revealed are insufficiently known (e.g. the oscillation between feedforward and feedback activity during imagery). The reviewers also appreciated the creative use of classifiers to extract signal as well as the fact that the data from the study are publicly available.\n\nThe discussions however mostly focused on trying to decide whether or not the evidence was conclusive. Given the amount of non-classic data transformations that lead to the evidence, how to assert that the results, in particular the multiple oscillations, are specific to visual recall, and not low-level properties of the neural signal, Indeed, the neural signal has a complex time-frequency structure. Our understanding of the permutations used is that they will create unstructured patterns, which will lead to a random and unstructured ordering of the most-similar pattern. In other terms, the permutations do not capture the temporal structure of the neural signal. A better null procedure is needed to provide solid evidence that the oscillation revealed is indeed related to imagery dynamics.\n\nEssential revisions:\n\n1) A first point to clarify are what aspects of the stimuli that drives variations in the perception time. The manuscript is very light on details in terms of the psychological dimensions varied to create the variations in the perception time that are related to variations in the imagery time. The theories invoked (predictive processing theories) relate to ambiguity in the sensory signal, hence they suggest that the variations the perception time should be related to the stimuli. Yet, the manuscript does not offer an explanation on the causes the variation in perception time. Some of the differences between the two classes of stimuli likely reflect \"unspecific\" mechanisms: i.e. electrophysiological signatures that are not specific to particular neural representations, but to overall differences in e.g. attentional capture. For example, if faces trigger a stronger visual response than houses, then, what is considered to be the reactivation of a face in this study, would simply reflect an overall modulation of visual/IT activity. Such non-specific activation would be expected to trigger feedforward and feedback traveling waves in the ventral and dorsal visual pathways, as extensively described in monkey electrophysiology as well as with MEG (e.g. Michalareas et al., 2016). For these reasons, we feel that the revised manuscript should discuss in detail what aspects of the stimuli drive the variations in time.\n\n2) A second wider point relates to establishing whether or not the sophisticated analysis enhances oscillations that are specific to mental imagery, or rather general to neural signals. Indeed, neural signals have a complex autocorrelation structure. To address the possible confound that alpha modulation could affect the SNR and explain the corresponding findings the authors perform a coherence analysis on individual sensors. The fact that no significant effect is obtained with this analysis motivates the authors to rule out this hypothesis. However, statistics on single sensors are known to be less statistically powerful techniques, so the result could be explained by the poor statistical power of this supplementary analysis. Overall, all the reviewers found it hard to assess the methods, and hence feel that the whole pipeline should be experimentally shown not to create the signatures that are interpreted. A small number of specific analyses can help establishing this evidence without resorting to fine theoretical analysis of the data-processing pipeline:\n\nA) Applying the same exact analysis to neural signal where one would not expect such conclusion to arise. A specific instance of such signals can be found using time windows located in the inter-stimuli intervals (for instance before the trial).\n\nB) Using a complementary analysis based on second-level statistics: i.e. fit a distinct model on each subject separately, and test the reactivation signatures across subjects. Indeed, the authors use mixed-model/first-level statistics with trials and subjects as random variables. Such approach is unusual in decoding-based analyses, because of the cross-validation \u2013 i.e. the training of the decoder introduces dependencies across decoders' predictions, and thus breaks the independence assumption of first-order statistical tests.\n\nC) Using the non low-pass filtered data. Indeed, there is the suspicion that the oscillatory effect observed during perception could be due to a low pass filtering effect. This doubt is suggested by the supplementary analysis using non-low pass filtered data. Figure S2 in supplementary material is however not comparable to the corresponding figure in the main text. If the non-low pass filtered data actually confirm the findings these data should be used in the main text without the need for added analysis.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Neural dynamics of perceptual inference and its reversal during imagery\" for further consideration by eLife. Your revised article has been evaluated by Timothy Behrens (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe reviewers find that the evidence is not rock solid, but the work is stimulating and the findings do not stem from an apparent methodological flaw. They feel that publishing these is beneficial for the field, but would like the potential limitations to be more explicit. No additional analysis is mandatory for resubmitting, but work on the wording is important.\n\nReviewer #1:\n\nThe authors answered thoroughly most of the comments raised by the reviewers. Importantly, they performed complementary analyses to make the evidence stronger, for instance the analysis without low-pass filtering. Also, the trial-level data show a weak effect, but one that is present, which is an important piece of evidence to confirm that the effect is not created by the analysis. They unfortunately did not follow our suggestion of analyzing data outside the stimuli, which would have made a strong null hypothesis. Rather, they used an elaborate simulation.\n\nOverall, I feel comforted that the evidence is not created by the data analysis, and I am in favor of publication.\n\nReviewer #2:\n\nThanks to the authors for this response.\n\nGenerally speaking, I am not amazed by responses based on simulations \u2013 which is the source of a significant set of the new results and analyses in the present revision. Simulations remain soft controls, because, unlike real data, they may be blind to a wide variety of issues. Responses systematically based on novel analyses of the MEG signals would have been more convincing, like we originally proposed (e.g. applying the same analyses on different time windows such as the inter-stimulus interval, in order to ensure that no effect were found there).\n\nIn addition, if I understand correctly, the p-values derived from the mix models may be invalid (reviewing comment 2B): i.e. we cannot easily estimate p-values when the independence hypotheses between samples is not met \u2013 which is the case with a CV, because the training models are fitted on partially similar datasets \u2013 consequently their predictions are not independent: c.f. e.g. Noirhomme et al., 2014 (NeuroImage: Clinical).\n\nThis arguably minor concern is reinforced by the fact that single-trial-based statistics can dramatically increase the degrees of freedom, and can thus lead to unreasonably confident p-values. Second-level stats across subjects only would be a more conservative approach. Again, the authors did not follow that recommended route.\n\nThat being said, these statistical issues should not undermine the methodological and neuroscientific work. While I am relatively unhappy with the current answer, the paper remains interesting and potentially important.\n\nConsequently, I will not oppose its acceptation for publication, but would strongly recommend the authors to provide a clear code of their analyses and simulations to facilitate future replications.\n\nReviewer #3:\n\nI would like to thank the authors for the convincing and thorough revision.\n\nI just have two remaining comments.\n\n\u2013 Related to your answer \"We acknowledge that this breaks the independence assumption but we still believe that this is the most valid test for our data, since testing across subjects ignores the large between-trial variability.\" Can you add a sentence somewhere in the text about this?\n\nJust as a comment here, using non-parametric methods like in the EEGLAB LIMO toolbox would address this issue: e.g. Pernet et al., 2011 (Computational Intelligence and Neuroscience).\n\n\u2013 The proper URL for MNE software is https://mne.tools/ and the related\n\npublication is:\n\nA. Gramfort, M. Luessi, E. Larson, D. Engemann, D. Strohmeier, C. Brodbeck, L. Parkkonen, M. H\u00e4m\u00e4l\u00e4inen, MNE software for processing MEG and EEG data, NeuroImage, Volume 86, 1 February 2014, Pages 446-460, ISSN 1053-8119\n",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "79c22613-6410-4bc1-8ba0-b2f5e27af2b8",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C1",
+      "claim": "After the presentation of a visual stimulus, neural processing cascades from low-level sensory areas to increasingly abstract representations in higher-level areas.",
+      "claim_type": "EXPLICIT",
+      "source": "After the presentation of a visual stimulus, neural processing cascades from low-level sensory areas to increasingly abstract representations in higher-level areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established principle in neuroscience supported by extensive prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "fac1558a-9637-411e-ba23-71b94622d08e",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C2",
+      "claim": "A reversal in neural processing underlies the generation of mental images as abstract representations are used to construct sensory representations in the absence of sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "It is often hypothesised that a reversal in neural processing underlies the generation of mental images as abstract representations are used to construct sensory representations in the absence of sensory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis in the literature, not yet directly demonstrated.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "bb6458c1-f298-4249-913b-8b24858eae86",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C3",
+      "claim": "According to predictive processing theories, reversed processing plays a central role in later stages of perception.",
+      "claim_type": "EXPLICIT",
+      "source": "According to predictive processing theories, such reversed processing also plays a central role in later stages of perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references predictive processing theories from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "c15378ea-008c-46a8-b917-47d9e95d6712",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C4",
+      "claim": "Direct experimental evidence of reversals in neural information flow has been missing.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct experimental evidence of reversals in neural information flow has been missing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature prior to this study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "f9f989a2-2fb9-4704-b077-19b87ffc740f",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C5",
+      "claim": "During perception, reversals in neural processing alternate with feed-forward processing in an 11 Hz oscillatory pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "show that, during perception, such reversals alternate with feed-forward processing in an 11 Hz oscillatory pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data and analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "76927f1b-4088-4417-bc28-264829cc02df",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C6",
+      "claim": "There is a reversal of the perceptual feed-forward cascade during imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide direct evidence for a reversal of the perceptual feed-forward cascade during imagery",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "9aa4b4a0-f3e3-4879-9388-ada98732a5a6",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C7",
+      "claim": "Common feedback processes support both veridical perception and mental imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show how common feedback processes support both veridical perception and mental imagery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "6ce43445-4942-4630-bf60-e1de401370b0",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C8",
+      "claim": "Light waves are transformed into electrical signals that travel via the lateral geniculate nucleus of the thalamus to the visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Light waves are transformed into electrical signals that travel via the lateral geniculate nucleus of the thalamus to the visual cortex (Card and Moore, 1989; Reid and Alonso, 1995) (but see [Bullier, 2001] for other routes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "c1fb5874-5cf3-403e-baf8-17661bc78dc7",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C9",
+      "claim": "Low-level visual features such as orientation and spatial frequency are processed in primary, posterior visual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "First, low-level visual features such as orientation and spatial frequency are processed in primary, posterior visual areas (Hubel and Wiesel, 1968)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to classic neuroscience research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "f06bcdb9-daad-446e-9baa-4f4705b358a9",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C10",
+      "claim": "Activation spreads forward towards secondary, more anterior visual areas where high-level features such as shape and eventually semantic category are processed.",
+      "claim_type": "EXPLICIT",
+      "source": "after which activation spreads forward towards secondary, more anterior visual areas where high-level features such as shape and eventually semantic category are processed (Maunsell and Newsome, 1987; Thorpe and Fabre-Thorpe, 2001; Vogels and Orban, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "44cfd420-4a30-4315-9537-0374f299a300",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C11",
+      "claim": "The initial feed-forward flow through the visual hierarchy is completed within 150 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This initial feed-forward flow through the visual hierarchy is completed within 150 ms (Seeliger et al., 2018; Thorpe et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "dfc2976c-13af-4954-b183-49b660963e3a",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C12",
+      "claim": "After the initial feed-forward sweep, feedback processes are assumed to further sharpen representations over time until a stable percept is achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "after which feedback processes are assumed to further sharpen representations over time until a stable percept is achieved (Cauchoix et al., 2014; Kok et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "8b177490-8004-4569-98e4-01b2b0ee330f",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C13",
+      "claim": "Activation in visual areas can be triggered internally, in the absence of external sensory signals, during mental imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation in visual areas can also be triggered internally, in the absence of external sensory signals. During mental imagery, information from memory is used to generate rich visual representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mental imagery.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "60176a98-b235-458e-80bc-68809ec79352",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C14",
+      "claim": "Neural representations activated during imagery are highly similar to those activated during perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural representations activated during imagery are highly similar to those activated during perception (Dijkstra et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "9bc00714-0cc3-4a2a-b3e9-3f09da35279b",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C15",
+      "claim": "Imagining an object activates similar object representations in high-level visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Imagining an object activates similar object representations in high-level visual cortex (Dijkstra et al., 2017; Ishai et al., 2000; Lee et al., 2012; Reddy et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "858a9209-9250-434c-b10d-a21bcd0073b9",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C16",
+      "claim": "Generating a mental image with simple visual features such as oriented gratings or letters is associated with perception-like activation of low-level visual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "generating a mental image with simple visual features such as oriented gratings or letters is associated with perception-like activation of low-level visual areas (Albers et al., 2013; Pearson et al., 2008; Senden et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "fa4638c4-0639-47dd-b5c8-0d42fa3ea407",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C17",
+      "claim": "The temporal dynamics underlying the activation within the visual system during perception and mental imagery are presumably very different.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the temporal dynamics underlying the activation within the visual system during perception and mental imagery are presumably very different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on theoretical considerations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "0f61df7e-1bd5-4d43-9cfb-38541ee0481d",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C18",
+      "claim": "The neural dynamics of the early stages of perception have been extensively characterised with intracranial electrophysiological recordings in primates.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural dynamics of the early stages of perception have been extensively characterised with intracranial electrophysiological recordings in primates (Thorpe et al., 1996; Thorpe and Fabre-Thorpe, 2001; Hubel and Wiesel, 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to classic neuroscience research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "50757a44-151e-4db8-8827-8f5eb5814304",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C19",
+      "claim": "The neural dynamics of imagery remain unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the neural dynamics of imagery, i.e. how activation travels through the brain during internally generated visual experience, remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "b67bcc22-0650-475e-a1ae-4b0165da0b6f",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C20",
+      "claim": "Researchers from various fields have proposed that the direction of information flow during internally generated visual experience is reversed compared to perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers from various fields have proposed that the direction of information flow during internally generated visual experience is reversed compared to perception (Ahissar and Hochstein, 2004; Hochstein and Ahissar, 2002; Kosslyn et al., 2001; Pearson and Keogh, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "1f4c9f52-e35a-4b97-b96a-23587362f836",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C21",
+      "claim": "During memory recall, high-level, semantic representations were active before low-level, perceptual representations.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this idea, a recent study showed that during memory recall, high-level, semantic representations were active before low-level, perceptual representations (Linde-Domingo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "02157204-ab56-432f-ab02-74b60e25137b",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C22",
+      "claim": "The localization of activation in the Linde-Domingo et al. study was ambiguous such that it is possible that all processing happened within high-level visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the localisation of activation in this study was ambiguous such that it is possible that all processing happened within high-level visual cortex but that only the dimension to which the neurons were sensitive changed from abstract features to perceptual features over time",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical evaluation of a cited study based on inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "d2029401-490e-41a3-b51a-fdcd88b905a6",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C23",
+      "claim": "Memory recall was not directly compared with memory encoding in the Linde-Domingo et al. study.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, memory recall was not directly compared with memory encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the design of a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "62b8df26-d6f7-4584-a91c-7ef2e7878749",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C24",
+      "claim": "According to predictive processing theories, the brain deals with the inherent ambiguity of incoming sensory signals by incorporating prior knowledge about the world.",
+      "claim_type": "EXPLICIT",
+      "source": "According to predictive processing (PP) theories, reversals of information flow also play an important role during perception. PP states that the brain deals with the inherent ambiguity of incoming sensory signals by incorporating prior knowledge about the world (Helmholtz, 1925).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of predictive processing theory supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "035362a5-54e2-4903-940f-877c07bccba5",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C25",
+      "claim": "Prior knowledge is used to generate top-down sensory predictions which are compared to the bottom-up sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "This knowledge is used to generate top-down sensory predictions which are compared to the bottom-up sensory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of predictive processing theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "09fdac0c-1fdd-4247-abac-a19371ceb95a",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C26",
+      "claim": "Perceptual inference is accomplished by iteratively updating the model of the world until the difference between prediction and input is minimised.",
+      "claim_type": "EXPLICIT",
+      "source": "Perceptual inference is then accomplished by iteratively updating the model of the world until the difference between prediction and input is minimised (Friston, 2005; Knill and Pouget, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of predictive processing theory supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "4ea4d567-c05e-43ae-99f5-6c30a9e5946b",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C27",
+      "claim": "The neural dynamics of stimulus information during perception should be characterised by an interplay between feed-forward and feedback sweeps.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the neural dynamics of stimulus information during perception should be characterised by an interplay between feed-forward and feedback sweeps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction derived from predictive processing theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "9bb610ac-9793-41c2-9af4-f96a3fb63204",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C28",
+      "claim": "Simulations based on PP models predict that recurrent dynamics are dominated by slow-wave oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations based on PP models predict that these recurrent dynamics are dominated by slow-wave oscillations (Bastos et al., 2012; Lozano-Soldevilla and VanRullen, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "de0c43a7-6b79-4764-ac2c-e671f5aa6ccb",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C29",
+      "claim": "Twenty-five participants executed a retro-cue task while MEG was measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-five participants executed a retro-cue task while MEG was measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "87385f58-b80a-427c-9814-5b818021e6f9",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C30",
+      "claim": "During the task, two consecutive stimuli were presented, a face and a house or a house and a face, followed by a cue indicating whether participants had to imagine the first or the second stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "During the task, two consecutive stimuli were presented, a face and a house or a house and a face, followed by a cue indicating whether participants had to imagine the first or the second stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "985d9bd6-f28c-40f9-a569-d811b76526c8",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C31",
+      "claim": "There were eight exemplars per stimulus category which were chosen to be highly similar to minimise variation in low-level details within categories and to maximise between-category differences.",
+      "claim_type": "EXPLICIT",
+      "source": "There were eight exemplars per stimulus category which were chosen to be highly similar to minimise variation in low-level details within categories and to maximise between-category differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "c894c9db-68d9-43e8-b53c-326aee8c50ad",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C32",
+      "claim": "An accuracy of 89.9% (SD = 5.4%) on catch trials indicated that participants did indeed imagine the stimuli with a high degree of visual detail.",
+      "claim_type": "EXPLICIT",
+      "source": "An accuracy of 89.9% (SD = 5.4%) indicated that participants did indeed imagine the stimuli with a high degree of visual detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a behavioral result from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "2515545b-0f69-4bc8-bd58-46458c2de5c3",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C33",
+      "claim": "Perceptual content could be decoded significantly better than chance level at 70 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Perceptual content could be decoded significantly better than chance level at 70 ms after stimulus onset (Dijkstra et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by data and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "36ff90a3-883a-455a-acf6-6e751c52f884",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C34",
+      "claim": "Visual information is detectable in early visual cortex from 50 ms onwards according to intracranial and MEG studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with intracranial and MEG studies which showed that visual information is detectable in early visual cortex from 50 ms onwards (Thorpe and Fabre-Thorpe, 2001; Ramkumar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "13aec00a-4300-483b-8167-099c1f93f68d",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C35",
+      "claim": "Around 130 ms, high-level object representations first get activated according to intracranial and scalp electrophysiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both intracranial as well as scalp electrophysiology has shown that around 130 ms, high-level object representations first get activated (Isik et al., 2014; Maunsell and Newsome, 1987; Seeliger et al., 2018; Vogels and Orban, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "9cb11614-3250-4a98-8758-9313142dae3b",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C36",
+      "claim": "Source reconstruction of the sensor-level activation patterns at different time points shows that stimulus information spreads from low-level visual areas towards higher-level visual areas during the 70-130 ms period.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, source reconstruction of the sensor-level activation patterns at different time points shows that stimulus information (i.e. the difference in activation between faces and houses [Haufe et al., 2014] spreads from low-level visual areas towards higher-level visual areas during this period (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "25c371fc-925d-4c69-a0eb-496cb8750b05",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C37",
+      "claim": "Cross-correlation between the information flow in early visual cortex (EVC) and inferior temporal cortex (IT) confirms that stimulus information is available in low-level EVC 26.3 ms (CI = 13.1 to 32.9 ms) before it reaches high-level IT.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, cross-correlation between the information flow in early visual cortex (EVC) and inferior temporal cortex (IT; Figure 1B) confirms that stimulus information is available in low-level EVC 26.3 ms (CI = 13.1 to 32.9 ms) before it reaches high-level IT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data analysis and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "f3b50647-c91c-487f-8a89-de894ebc58ec",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C38",
+      "claim": "The distance to the hyperplane indicates the amount of classifier evidence present in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance to the hyperplane indicates the amount of classifier evidence present in the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the interpretation of classifier outputs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "d6a0280e-b015-4fa1-b918-e848b1ed8f88",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C39",
+      "claim": "Distance measures have previously been used as a measure of model activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Distance measures have previously been used as a measure of model activation (Kerr\u00e9n et al., 2018; Linde-Domingo et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "a19e45cc-24eb-4bee-baf0-0cfa44d455f7",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C40",
+      "claim": "Distance measures have been linked to reaction time measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "and have been linked to reaction time measurements (Grootswagers et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "0b2044da-5c00-4c3b-a8fa-853db926e1d1",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C41",
+      "claim": "There is a significant main effect of perception time on imagery reactivation time (t(98160) = \u22125.403, p=6.58e-8) with a negative slope (\u03b20 = 2.05, SD = 0.28; \u03b21 = \u22121.17,SD = 0.22).",
+      "claim_type": "EXPLICIT",
+      "source": "The model showed a significant main effect of perception time (t(98160) = \u22125.403, p=6.58e-8) with a negative slope (\u03b20 = 2.05, SD = 0.28; \u03b21 = \u22121.17,SD = 0.22)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "e3e82214-20d6-4d83-8a51-a419632d2f6a",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C42",
+      "claim": "Models of later perception time points were associated with earlier imagery reactivation times.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that models of later perception time points were associated with earlier imagery reactivation times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the statistical result.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "f14ab4b6-03c2-433a-970e-90e13eda3399",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C43",
+      "claim": "The absolute slope being close to one suggests that reactivation during imagery of the perception model sequence happens at a similar speed as the original activation during perception.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the absolute slope is so close to one suggests that reactivation during imagery of the perception model sequence happens at a similar speed as the original activation during perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the statistical result.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "b5526b44-9675-4780-abe2-79b4744acd00",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C44",
+      "claim": "Cross-correlation between realigned signals shows that information in IT precedes information in EVC by 11.2 ms (CI = 0 to 29.9 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-correlation between these realigned signals shows that information in IT precedes information in EVC by 11.2 ms (CI = 0 to 29.9 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "8cc7ad4c-5865-4505-a01d-630b903ec081",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C45",
+      "claim": "Before realignment, time-locked decoding during imagery only revealed a small amount of information in high-level visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, before realignment, time-locked decoding during imagery only revealed a small amount of information in high-level visual cortex (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "38b8ddce-6811-4769-8dda-b0dc15b35930",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C46",
+      "claim": "After realignment, stimulus information was clearly present in EVC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, after realignment, stimulus information was also clearly present in EVC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "4e8f30a5-61ff-4419-b2f2-0a4ac6e4f3de",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C47",
+      "claim": "The sequential reactivation disappeared when using shuffled classifiers as perception time did not significantly predict imagery reactivation time anymore (t(98160) = \u22120.762, p=0.446).",
+      "claim_type": "EXPLICIT",
+      "source": "The sequential reactivation disappeared when using shuffled classifiers as perception time did not significantly predict imagery reactivation time anymore (t(98160) = \u22120.762, p=0.446).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a control analysis result from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "fd1ea411-c7a0-4f0f-97a3-f92e6b119cf7",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C48",
+      "claim": "During the first 400 ms of perception, there is an oscillatory pattern in the relationship between perception time and imagery reactivation time, where positive and negative slopes alternate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, during the first 400 ms of perception, there seems to be an oscillatory pattern in the relationship between perception time and imagery reactivation time, where positive and negative slopes alternate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "4fc63964-c0c0-4e86-a2bf-b21cee32cab6",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C49",
+      "claim": "The oscillatory pattern repeats four times in 400 ms, roughly reflecting an alpha oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern repeats four times in 400 ms, roughly reflecting an alpha oscillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "4509ee40-d8b6-4628-b40e-23c9cc071391",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C50",
+      "claim": "There was a significant increase in 10 Hz power between 80 and 315 ms after stimulus onset during perception (all FDR corrected p-values below 0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant increase in 10 Hz power between 80 and 315 ms after stimulus onset during perception (all FDR corrected p-values below 0.003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from frequency analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "b8041090-df67-4891-823d-5e1e88bdf06b",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C51",
+      "claim": "A Fast Fourier Transform over the first 400 ms revealed that the difference in power was limited to the 11.2 Hz frequency (p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a Fast Fourier Transform over the first 400 ms revealed that the difference in power was limited to the 11.2 Hz frequency (Figure 4B right, p=0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from frequency analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "5a35e5be-d5bc-40e6-8cc2-908731203283",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C52",
+      "claim": "During perception, stimulus information travels up and down the visual hierarchy aligned to the alpha frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that, during perception, stimulus information travels up and down the visual hierarchy aligned to the alpha frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the frequency analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "890396d8-6c48-499a-95be-239030fb5af1",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C53",
+      "claim": "The average decreasing (feed-forward) slope was \u22120.69 (CI = \u22122.05 to \u22120.35).",
+      "claim_type": "EXPLICIT",
+      "source": "The average decreasing (feed-forward) slope was \u22120.69 (CI = \u22122.05 to \u22120.35)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "3cb05b15-af1b-4494-9277-78f8710867df",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C54",
+      "claim": "The average increasing (feedback) slope was 1.02 (CI = \u22120.31 to 2.14).",
+      "claim_type": "EXPLICIT",
+      "source": "and the average increasing (feedback) slope was 1.02 (CI = \u22120.31 to 2.14; Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the study shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "281f043f-2379-4e9e-8a26-c273ef03d937",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C55",
+      "claim": "There was no significant difference in the absolute slope value between increasing and decreasing phases (Mdiff = 0.33, CI: \u22121.80 to 1.74).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in the absolute slope value between increasing and decreasing phases (Mdiff = 0.33, CI: \u22121.80 to 1.74)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "ff677b62-e87a-4127-af74-25483c8a4b61",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C56",
+      "claim": "There is no evidence for a difference in processing speed for feed-forward and feedback sweeps.",
+      "claim_type": "EXPLICIT",
+      "source": "revealing no evidence for a difference in processing speed for feed-forward and feedback sweeps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the statistical comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "d978e235-2fcb-455c-832f-64a56ca7c405",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C57",
+      "claim": "None of the sensors showed a significant difference in coherence between the true and permuted classifier (FDR corrected).",
+      "claim_type": "EXPLICIT",
+      "source": "None of the sensors showed a significant difference in coherence between the true and permuted classifier (FDR corrected; Figure 4D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from coherence analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "c0eb65b5-e4ed-4b4f-a4c8-e5f6dfe12408",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C58",
+      "claim": "The oscillatory pattern in the reactivated trace does not merely reflect evoked alpha in the raw signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this suggests that the oscillatory pattern in the reactivated trace does not merely reflect evoked alpha in the raw signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the coherence analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "1bb0b552-9bcb-4b2f-adc1-afbe96e22c56",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C59",
+      "claim": "The diagonal in the slope matrix, reflecting training and testing on the same phase, was always positive.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the diagonal, reflecting training and testing on the same phase, was always positive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the within-perception reactivation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "d9e9f2c9-a141-4ae0-b98c-5b405f3581bd",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C60",
+      "claim": "Training and testing on different phases tended to be associated with negative slopes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, training and testing on different phases tended to be associated with negative slopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the within-perception reactivation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "8b88a664-ed01-42ae-b17f-a20499b59a81",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C61",
+      "claim": "The Recurrence Index (RI) was significantly larger than zero for the true data (RI = 1.83, CI = 1.71 to 1.94, p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "The RI was significantly larger than zero for the true data (RI = 1.83, CI = 1.71 to 1.94, p < 0.0001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the recurrence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "acf2542e-7940-4e75-9a0d-0a9b1a3422c7",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C62",
+      "claim": "The RI was not significantly different from zero for the permuted data (RI = \u22120.008, CI = \u22120.12 to 0.10, p=0.548).",
+      "claim_type": "EXPLICIT",
+      "source": "but not for the permuted data (RI = \u22120.008, CI = \u22120.12 to 0.10, p=0.548).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "58757dc2-2d74-4e31-8d1d-5696e8e2290b",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C63",
+      "claim": "During perception, stimulus information flows up and down the visual hierarchy in feedback and feed-forward phases.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms that during perception, stimulus information flows up and down the visual hierarchy in feedback and feed-forward phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the recurrence analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "4b0356ad-9823-41c8-b6f5-4f7adbdf9368",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C64",
+      "claim": "The recurrence pattern is most strongly aligned to the alpha frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "confirming that the perceptual recurrence is most strongly aligned to the alpha frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing recurrence indices at different frequencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "6d57f913-cc4d-4291-81cd-564e97ff2429",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C65",
+      "claim": "The recurrence pattern is restricted to the first 400 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that the recurrence pattern is indeed restricted the first 400 ms after stimulus onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analyzing the entire stimulus period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "39ab6e11-026e-4887-8aa4-c4c2fad4b1dd",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C66",
+      "claim": "Neighbouring phases show a significantly higher RI (M = 0.073, CI = 0.069 to 0.076) than other phases (M = 0.002, CI = \u22120.0004 to 0.005, p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Neighbouring phases indeed show a significantly higher RI (M = 0.073, CI = 0.069 to 0.076) than other phases (M = 0.002, CI = \u22120.0004 to 0.005, p < 0.0001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "fdfaa237-1cf7-45af-80b9-e83c126a8114",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C67",
+      "claim": "Recurrence was restricted to a small number of cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "confirming that recurrence was restricted to a small number of cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the statistical comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "1c9d3ac0-209e-44ec-a64d-f3bdcf383207",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C68",
+      "claim": "Early perception processes are reactivated in reverse order during imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we showed that early perception processes are reactivated in reverse order during imagery",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "b482194a-a372-462b-b7b3-f66ef96ae128",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C69",
+      "claim": "During imagery, activation flows from high-level visual areas down to low-level areas over time.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrating that during imagery, activation flows from high-level visual areas down to low-level areas over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "5c58072c-eb03-452e-9c7c-ef9157ada891",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C70",
+      "claim": "For later stages of perception, there is an oscillatory pattern of alternating positive and negative relations with imagery reactivation, indicating recurrent stimulus processing up and down the visual hierarchy aligned to an 11 Hz oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, for later stages of perception, we found an oscillatory pattern of alternating positive and negative relations with imagery reactivation, indicating recurrent stimulus processing up and down the visual hierarchy aligned to an 11 Hz oscillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "91c47310-686b-499b-9092-d3653690c1de",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C71",
+      "claim": "Recurrence during perception was restricted to neighbouring phases, suggesting that the format of neural stimulus representations changed with subsequent cycles of recurrent processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, by focusing on the identified feed-forward and feedback phases, we showed that recurrence during perception was restricted to neighbouring phases, suggesting that the format of neural stimulus representations changed with subsequent cycles of recurrent processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion of the study based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "370dd9b9-bea5-4e07-a7cb-8d7c6633b478",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C72",
+      "claim": "During imagery, stimulus representations are activated via feedback processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings indicate that during imagery, stimulus representations are activated via feedback processing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "7b016bc8-36ae-440c-b5a1-92b8513ac5a5",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C73",
+      "claim": "During perception, stimulus representations are iteratively updated through cycles of recurrent processing.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas during perception, stimulus representations are iteratively updated through cycles of recurrent processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "818eff5c-d83b-4a07-8491-e7090d04e4fb",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C74",
+      "claim": "The results are in line with predictive processing (PP) theories.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are neatly in line with predictive processing (PP) theories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in the context of existing theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "dc6f3060-021c-4d53-bea4-92b74775ba19",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C75",
+      "claim": "According to PP, recurrent processing during perception reflects dynamic hypothesis testing.",
+      "claim_type": "EXPLICIT",
+      "source": "According to PP, recurrent processing during perception reflects dynamic hypothesis testing (Bastos et al., 2012; Friston, 2005; Kersten et al., 2004; Knill and Pouget, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of PP theory supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "ee01f72a-3b27-4024-ae9e-2d950d356f0a",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C76",
+      "claim": "Perceptual inference is assumed to be accomplished via an interplay between top-down prediction signals encoding perceptual hypotheses and bottom-up prediction errors encoding the sensory signal unexplained by these hypotheses.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, perceptual inference is assumed to be accomplished via an interplay between top-down prediction signals encoding perceptual hypotheses and bottom-up prediction errors encoding the sensory signal unexplained by these hypotheses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of PP theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "4f9f0eec-9db3-4638-b56f-94c12b621a9f",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C77",
+      "claim": "Inferring the cause of sensory input is done by iteratively updating the perceptual hypothesis until the prediction error is minimised.",
+      "claim_type": "EXPLICIT",
+      "source": "Inferring the cause of sensory input is done by iteratively updating the perceptual hypothesis until the prediction error is minimised, in line with the dynamically changing representations observed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of PP theory and how it relates to the findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "5dccab8a-627d-4b63-ac85-7e5f69d2096a",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C78",
+      "claim": "Recurrent processing is assumed to happen hierarchically such that each level is activated by both bottom-up evidence as well as top-down predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, recurrent processing is assumed to happen hierarchically such that each level is activated by both bottom-up evidence as well as top-down predictions (Friston, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of PP theory supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "fc9dd4c1-704e-46f4-b070-a88d59be35c2",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C79",
+      "claim": "The observation that feed-forward and feedback sweeps proceeded at the same speed is in line with hierarchical recurrent processing in PP.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with our observation that feed-forward and feedback sweeps proceeded at the same speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the findings to PP theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "2d187c8e-4a80-45c0-be68-dfe7f1765a86",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C80",
+      "claim": "The current study is the first to show perceptual updating cycles empirically in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, the current study is the first to show these perceptual updating cycles empirically in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "15f8e8bb-26dd-405d-9282-a9748228c27a",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C81",
+      "claim": "In the current task context, the perceptual inference process was completed in approximately four updating cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results suggest that in the current task context, the perceptual inference process was completed in approximately four updating cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "542a1e28-9f90-41a5-9dfd-a0ce90517bbe",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C82",
+      "claim": "All perceptual feed-forward sweeps showed a negative relationship with the same imagery time window.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, all perceptual feed-forward sweeps showed a negative relationship with the same imagery time window",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "e5028d20-9fdf-41b9-a706-b57b74ba9011",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C83",
+      "claim": "All perceptual feedback sweeps showed a negative relationship with the same imagery time window.",
+      "claim_type": "EXPLICIT",
+      "source": "and all perceptual feedback sweeps showed a negative relationship with that same imagery time window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "692ecca8-47bf-4030-8ce9-484a97737019",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C84",
+      "claim": "The imagery feedback flow contained the complete stimulus representation that was inferred via recurrent cycles during perception.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the imagery feedback flow contained the complete stimulus representation that was inferred via recurrent cycles during perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "bf67bb6a-790a-4f93-b40e-01476dba9d74",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C85",
+      "claim": "Imagery uses the same predictive processes that underlie perceptual inference to run off-line simulations of sensory representations under different hypotheses.",
+      "claim_type": "EXPLICIT",
+      "source": "This result fits with the idea that imagery uses the same predictive processes that underlie perceptual inference to run off-line simulations of sensory representations under different hypotheses (Dijkstra et al., 2019; Gershman, 2019; Grush, 2004; Hobson and Friston, 2012; Moulton and Kosslyn, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of existing theory, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "e8e08247-03cc-44d4-9dd5-6c30ab09a756",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C86",
+      "claim": "During imagery, there is no bottom-up sensory input prompting hypothesis updating.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to perception, during imagery, there is no bottom-up sensory input prompting hypothesis updating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual distinction between perception and imagery.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "4b0f00a5-6a68-4a13-a41c-94c02110a13c",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C87",
+      "claim": "During imagery, the perceptual cause is given and feedback connections are used to generate the corresponding low-level sensory representation based on the mapping that was learned during perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the perceptual cause is given and feedback connections are used to generate the corresponding low-level sensory representation based on the mapping that was learned during perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of how imagery works based on the findings.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "61d76665-ae9f-4456-beaf-a9eacc2b0c70",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C88",
+      "claim": "The initial feedforward sweep during perception does not seem to be influenced by attention.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a recent study showed that the initial feedforward sweep during perception does not seem to be influenced by attention (Alilovi\u0107 et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "b8bd03b2-8621-4fdb-b094-418d0091e642",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C89",
+      "claim": "Modelling work using Convolutional Neural Networks (CCNs) has shown that the MEG signal during perception reflects activation of hierarchically increasing complex features over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, modelling work using Convolutional Neural Networks (CCNs) has shown that the MEG signal during perception does reflect activation of hierarchically increasing complex features over time (Seeliger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "f40851c6-02d0-42b9-8212-311c6f973ce8",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C90",
+      "claim": "While similar neural representations are activated during imagery and perception, the neural dynamics underlying this activation are different.",
+      "claim_type": "EXPLICIT",
+      "source": "we show that, while similar neural representations are activated during imagery and perception, the neural dynamics underlying this activation are different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "8c224331-5972-4baa-9b56-1f63218fd3af",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C91",
+      "claim": "Perception is characterised by recurrent processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas perception is characterised by recurrent processing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "3c272283-a360-431c-9190-02d38ad4f221",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C92",
+      "claim": "Imagery is dominated by top-down feedback processing.",
+      "claim_type": "EXPLICIT",
+      "source": "imagery is dominated by top-down feedback processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "650869b2-1fb2-47a8-be3b-63044a4de867",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C93",
+      "claim": "During perception, high-level causes of sensory input are inferred.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with the idea that during perception, high-level causes of sensory input are inferred",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of PP theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "5e411245-6259-4065-9802-ce483e61922e",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C94",
+      "claim": "During imagery, the inferred mapping is reversed to generate sensory representations given these causes.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas during imagery, this inferred mapping is reversed to generate sensory representations given these causes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of PP theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "b538d8fd-6d3c-41d1-aaa9-4977baa033cf",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C95",
+      "claim": "There is a fundamental asymmetry in information processing between perception and imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights a fundamental asymmetry in information processing between perception and imagery",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "e57c0af7-5ec7-45ee-ba8e-841ff6c09d5a",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C96",
+      "claim": "Thirty human volunteers with normal or corrected-to-normal vision gave written informed consent and participated in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed a medium effect size (d = 0.6) which, to reach a power of 0.8, required twenty four participants. To take into account drop-out, thirty human volunteers with normal or corrected-to-normal vision gave written informed consent and participated in the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant recruitment for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "3222209e-2482-47a3-a0fa-e7427bda8d2f",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C97",
+      "claim": "Five participants were excluded from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Five participants were excluded: two because of movement in the scanner (movement exceeded 15 mm), two due to incorrect execution of the task (less than 50% correct on the catch trials, as described below) and one due to technical problems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria applied in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "2abc82cd-5142-40b3-ad53-f12c20aa376f",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C98",
+      "claim": "Twenty-five participants (mean age 28.6, SD = 7.62) remained for the final analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-five participants (mean age 28.6, SD = 7.62) remained for the final analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final sample for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "cdf5ba12-c020-4a42-9e67-4455a27941ca",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C99",
+      "claim": "The study was approved by the local ethics committee and conducted according to the corresponding ethical guidelines (CMO Arnhem-Nijmegen).",
+      "claim_type": "EXPLICIT",
+      "source": "The study was approved by the local ethics committee and conducted according to the corresponding ethical guidelines (CMO Arnhem-Nijmegen).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "83ce2ee7-72d5-44c5-b35f-45ee4d96b6c6",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C100",
+      "claim": "Data were recorded at 1200 Hz using a 275-channel MEG system with axial gradiometers.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were recorded at 1200 Hz using a 275-channel MEG system with axial gradiometers (VSM/CTF Systems, Coquitlam, BC, Canada).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data acquisition method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "a9d01a64-3efb-4cf2-ae77-571cd26f2e21",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C101",
+      "claim": "Data from five sensors were not recorded for technical reasons.",
+      "claim_type": "EXPLICIT",
+      "source": "For technical reasons, data from five sensors (MRF66, MLC11, MLC32, MLF62, MLO33) were not recorded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical limitation of the data acquisition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "617a4695-a572-4b6d-8e7c-1ff2405bfccf",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C102",
+      "claim": "Head movement was kept below 8 mm in most participants.",
+      "claim_type": "EXPLICIT",
+      "source": "This way, head movement was kept below 8 mm in most participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality control for head motion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "fb91a63f-1eb3-43f1-89db-af5cc80276b6",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C103",
+      "claim": "After artefact rejection, on average 108 perception face trials, 107 perception house trials, 105 imagery face trials and 106 imagery house trials remained for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "After artefact rejection, on average 108 perception face trials, 107 perception house trials, 105 imagery face trials and 106 imagery house trials remained for analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of trials included in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "c58a63dc-218e-466f-8395-d75e9db7ed68",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C104",
+      "claim": "A linear discriminant analysis (LDA) classifier with a shrinkage regularisation parameter of 0.05 was used to decode the stimulus category per perception time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, to decode the stimulus category per perception time point, we used a linear discriminant analysis (LDA) classifier with the activity from the 270 MEG sensors as features and a shrinkage regularisation parameter of 0.05 (see [Mostert et al., 2016] for more details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the machine learning method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "c41219ca-da74-4696-9f37-2d4962f70e8b",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C105",
+      "claim": "A five-fold cross-validation procedure was implemented to prevent auto-correlations in the signal from inflating decoding accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "To circumvent this, a five-fold cross-validation procedure was implemented where for each fold the classifier was trained on 80% of the trials and tested on the other 20%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cross-validation method used to ensure valid results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "b86b32c1-b5ae-4e0b-a3c2-41c8503a5800",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "claim_id": "C106",
+      "claim": "The data were demeaned by subtracting the mean over trials per time point and per sensor to force the classifier to leverage relative changes in the multivariate signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the amplitude of the signal is usually smaller during imagery than during perception (Kosslyn et al., 2001; Pearson and Keogh, 2019), we demeaned the data by subtracting the mean over trials per time point and per sensor. This forced the classifier to leverage relative changes in the multivariate signal while avoiding the confounding effect of having global changes in amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a preprocessing step to control for amplitude differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a8e882f0-1508-4309-ae72-23e3c173bfd6",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used a retro-cue task with 25 participants (after exclusions) who viewed face and house stimuli and then imagined the cued stimulus. MEG data were recorded at 1200 Hz using a 275-channel system, with behavioral performance (89.9% accuracy on catch trials) indicating participants generated detailed mental images.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 and C96-C103 describe the experimental design, participant characteristics, data acquisition, and behavioral validation. The high catch trial accuracy (C32) provides strong evidence that participants followed instructions and generated detailed imagery. The methodological details are clearly documented with appropriate quality control measures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "973bbb54-3ae1-4598-874f-cf1bc0d511b7",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "During the initial feed-forward sweep (70-130 ms), stimulus information progresses from early visual cortex (EVC) to inferior temporal cortex (IT), with EVC activation preceding IT by 26.3 ms (CI = 13.1 to 32.9 ms). Source reconstruction shows information spreading from low-level to high-level visual areas during this period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 establish the perceptual feed-forward cascade using decoding analysis, source reconstruction, and cross-correlation. The timing estimates align with prior literature (C34, C35), and the confidence intervals for the lag between EVC and IT (C37) are appropriately reported. Figure 1A-B provides visual support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "361e6d65-4fc0-4790-a09b-e79d93478886",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study employed LDA classifiers with distance-to-hyperplane measures to track neural representation reactivation. A five-fold cross-validation procedure prevented autocorrelation artifacts, and data were demeaned to control for amplitude differences between perception and imagery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 and C104-C106 describe the analytical approach with appropriate methodological controls. The use of distance measures is justified by prior work (C39, C40), cross-validation addresses potential confounds (C105), and demeaning controls for amplitude differences (C106). These are standard and appropriate methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "75e4e130-a9df-4db4-96e5-90c3bdeecb72",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "During imagery, perception models trained at later time points reactivated earlier (negative slope \u03b21 = -1.17, p=6.58e-8), indicating reversed information flow from IT to EVC with an 11.2 ms lag. This reversal disappeared with shuffled classifiers (p=0.446), and realignment revealed stimulus information in EVC that was obscured in time-locked analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 provide converging evidence for reversed processing during imagery through statistical modeling (C41-C43), cross-correlation (C44), realignment analysis (C45-C46), and control analysis (C47). The negative slope, control with permuted labels, and improved signal detection after realignment all support the reversal hypothesis. Statistical tests are appropriate with reported confidence intervals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "70ed9100-7a78-46b6-97fa-7e87cc32b2d8",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "During the first 400 ms of perception, an oscillatory pattern emerged where the relationship between perception time and imagery reactivation alternated between positive and negative slopes approximately four times, corresponding to an 11.2 Hz oscillation. Frequency analysis confirmed significant 10 Hz power (p<0.003) and FFT showed the effect was specific to 11.2 Hz (p=0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 demonstrate oscillatory recurrent processing using multiple analytical approaches: visual inspection of reactivation patterns (C48-C49), time-frequency decomposition (C50), and FFT (C51). The convergence of methods and statistical significance support the conclusion (C52). Figure 4B provides visual evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "a7ce458a-3ac2-41de-bc60-18ba8fff2aee",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Feed-forward and feedback sweeps during perception proceeded at similar speeds, with average slopes of -0.69 (CI = -2.05 to -0.35) for feed-forward and 1.02 (CI = -0.31 to 2.14) for feedback phases. The absolute slope values did not differ significantly (Mdiff = 0.33, CI: -1.80 to 1.74).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 quantify processing speeds for feed-forward and feedback sweeps using empirical mode decomposition. The confidence intervals are reported appropriately (C53-C54), and the statistical comparison (C55) supports the conclusion of no speed difference (C56). However, the wide confidence intervals suggest substantial uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "95b3abf2-91aa-467a-8b8f-4401920cf1f8",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The oscillatory pattern in the reactivation trace does not merely reflect evoked alpha oscillations in the raw signal, as coherence analysis showed no significant difference between true and permuted classifiers (FDR corrected).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C58 attempt to rule out that the oscillatory reactivation pattern is simply driven by raw signal alpha oscillations. While the coherence analysis (C57) shows no significant difference, the authors acknowledge in the manuscript that \"future research is necessary to fully characterise the relationship between the reactivation dynamics and the raw signal dynamics.\" The evidence is suggestive but not definitive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "245b1d73-7a9d-43ea-a597-06e784376e5e",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Within-perception reactivation analysis showed that training and testing on the same phase yielded positive slopes (diagonal), while different phases showed negative slopes. The Recurrence Index was significantly positive for true data (RI = 1.83, p < 0.0001) but not for permuted data (RI = -0.008, p=0.548), confirming recurrent information flow during perception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 provide strong evidence for recurrent processing within perception using a novel Recurrence Index metric. The diagonal pattern (C59), off-diagonal pattern (C60), significant RI for true data (C61), non-significant RI for permuted data (C62), and the conclusion (C63) form a coherent and well-controlled analysis. Figure 5 provides visual support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "0fa33433-fd52-4fc3-b69d-74fd88a72ae3",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The recurrence pattern was most strongly aligned to alpha frequency (11.2 Hz), restricted to the first 400 ms after stimulus onset, and limited to neighboring phases (M = 0.073 vs M = 0.002, p < 0.0001), suggesting that neural representations changed with subsequent recurrent cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 characterize the temporal and spectral properties of recurrent processing. The frequency specificity (C64), temporal restriction (C65), and phase-neighbor analysis (C66-C67) are well-supported by data. The interpretation that representations change across cycles (C67) is reasonable given the restricted recurrence pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "6453c3f6-7901-4883-a7c1-14e8d7896be6",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "During imagery, early perception processes are reactivated in reverse order, with activation flowing from high-level to low-level visual areas via feedback processing. This demonstrates a fundamental asymmetry between perception and imagery, where similar representations are activated through different neural dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69, C72, C90, C92, and C95 represent the primary conclusions about imagery. These are well-supported by the reactivation analysis (C41-C47), source reconstruction (C44-C46), and control analyses (C47). The evidence converges on reversed processing during imagery, though the authors acknowledge limitations in detecting potential recurrent dynamics during imagery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "7b3bb812-86bf-409d-942e-0f1b7e9328dd",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "During perception, stimulus representations are iteratively updated through cycles of recurrent processing, with an oscillatory pattern of feed-forward and feedback sweeps aligned to an 11 Hz oscillation. This recurrent processing characterizes perception in contrast to the unidirectional feedback during imagery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70, C73, and C91 represent the primary conclusions about perception. These are strongly supported by the oscillatory reactivation pattern (C48-C52), within-perception recurrence analysis (C59-C63), and frequency characterization (C64-C65). Multiple converging lines of evidence support recurrent processing during perception.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "c675c4fa-7da6-4f61-a984-9545494ec666",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The results align with predictive processing (PP) theories, which propose that perception involves iterative hypothesis testing through interplay between top-down predictions and bottom-up prediction errors. The equal speed of feed-forward and feedback sweeps supports hierarchical recurrent processing, and imagery may use the same predictive processes to run offline simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79, C85, C93-C94 interpret the findings in the context of PP theory. The alignment is reasonable given the observed recurrent dynamics (C74, C77), equal processing speeds (C79), and reversed processing during imagery (C85, C94). However, these are interpretations rather than direct tests of PP theory. The evidence is consistent with but does not uniquely prove PP mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "f02cca21-71d0-4851-b3c4-4b964cdc0745",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This is the first study to empirically demonstrate perceptual updating cycles in humans, showing approximately four cycles complete the perceptual inference process. All perceptual feed-forward and feedback sweeps showed negative relationships with the same imagery time window, suggesting imagery contains the complete stimulus representation inferred through recurrent perception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 make novelty claims and interpretations about the completeness of imagery representations. The novelty claim (C80) appears justified given the literature review. The observation about four cycles (C81) is supported by the data. The finding that all perceptual phases map to the same imagery window (C82-C83) is interesting, though the interpretation about completeness (C84) is more speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "8752945e-e355-4a96-8a16-73bdbae2dc40",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript reviews established knowledge about visual processing: perception involves a feed-forward cascade from low-level to high-level areas completed within 150 ms, followed by feedback processes. Mental imagery activates similar representations to perception in both high-level and low-level visual areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C16, and C18 summarize well-established prior knowledge about visual perception and imagery, supported by extensive citations to classic and recent literature. These provide appropriate context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "18ce99f8-2090-4f40-a89a-9c12abc70620",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior to this study, it was hypothesized that imagery involves reversed neural processing, and predictive processing theories suggest reversals play a role in perception. However, direct experimental evidence for reversals in neural information flow was missing, and the temporal dynamics of imagery remained unclear. A recent study (Linde-Domingo et al., 2019) suggested reversed processing during memory recall, but had ambiguous localization and lacked direct comparison with encoding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C17, C19-C23 establish the gap in knowledge that motivates the study. The characterization of prior work is accurate, including appropriate critical evaluation of the Linde-Domingo et al. study (C22-C23). This effectively motivates the need for the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "f42b8ea7-ee3a-46f8-a26d-7a2b0b03272b",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Predictive processing theories propose that the brain incorporates prior knowledge to generate top-down predictions compared against bottom-up input, with perceptual inference accomplished by iteratively minimizing prediction error. This predicts an interplay between feed-forward and feedback sweeps dominated by slow-wave oscillations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 accurately describe predictive processing theory with appropriate citations. These theoretical predictions (C27-C28) provide specific hypotheses tested in the study. The description is accurate and well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "34f0fb19-251d-4acd-94fe-0d1b8af353c4",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study provides direct evidence for reversal of the perceptual feed-forward cascade during imagery and shows that during perception, reversals alternate with feed-forward processing in an 11 Hz oscillatory pattern. Common feedback processes support both veridical perception and mental imagery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 are the primary findings stated in the abstract. These are well-supported by the detailed analyses presented in the results section (C41-C67). The evidence from multiple converging analyses strongly supports these main conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    },
+    {
+      "id": "2f3be841-51a8-44ed-98c5-2110e66f6e5a",
+      "content_id": "60cf1101-10da-40d7-9bef-2991fc8f9973",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "During imagery, there is no bottom-up sensory input prompting hypothesis updating; instead, feedback connections generate low-level representations from given high-level causes. The initial feedforward sweep during perception is not influenced by attention, and MEG signals reflect hierarchically increasing complex features over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 provide conceptual distinctions between perception and imagery that are reasonable interpretations. Claims C88-C89 cite recent studies to address potential alternative explanations (attention, feature complexity), strengthening the interpretation of the findings. These are appropriately supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:37.878588Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "de0c43a7-6b79-4764-ac2c-e671f5aa6ccb",
+      "result_id": "a8e882f0-1508-4309-ae72-23e3c173bfd6"
+    },
+    {
+      "claim_id": "87385f58-b80a-427c-9814-5b818021e6f9",
+      "result_id": "a8e882f0-1508-4309-ae72-23e3c173bfd6"
+    },
+    {
+      "claim_id": "985d9bd6-f28c-40f9-a569-d811b76526c8",
+      "result_id": "a8e882f0-1508-4309-ae72-23e3c173bfd6"
+    },
+    {
+      "claim_id": "c894c9db-68d9-43e8-b53c-326aee8c50ad",
+      "result_id": "a8e882f0-1508-4309-ae72-23e3c173bfd6"
+    },
+    {
+      "claim_id": "e57c0af7-5ec7-45ee-ba8e-841ff6c09d5a",
+      "result_id": "a8e882f0-1508-4309-ae72-23e3c173bfd6"
+    },
+    {
+      "claim_id": "3222209e-2482-47a3-a0fa-e7427bda8d2f",
+      "result_id": "a8e882f0-1508-4309-ae72-23e3c173bfd6"
+    },
+    {
+      "claim_id": "2abc82cd-5142-40b3-ad53-f12c20aa376f",
+      "result_id": "a8e882f0-1508-4309-ae72-23e3c173bfd6"
+    },
+    {
+      "claim_id": "cdf5ba12-c020-4a42-9e67-4455a27941ca",
+      "result_id": "a8e882f0-1508-4309-ae72-23e3c173bfd6"
+    },
+    {
+      "claim_id": "83ce2ee7-72d5-44c5-b35f-45ee4d96b6c6",
+      "result_id": "a8e882f0-1508-4309-ae72-23e3c173bfd6"
+    },
+    {
+      "claim_id": "a9d01a64-3efb-4cf2-ae77-571cd26f2e21",
+      "result_id": "a8e882f0-1508-4309-ae72-23e3c173bfd6"
+    },
+    {
+      "claim_id": "617a4695-a572-4b6d-8e7c-1ff2405bfccf",
+      "result_id": "a8e882f0-1508-4309-ae72-23e3c173bfd6"
+    },
+    {
+      "claim_id": "fb91a63f-1eb3-43f1-89db-af5cc80276b6",
+      "result_id": "a8e882f0-1508-4309-ae72-23e3c173bfd6"
+    },
+    {
+      "claim_id": "2515545b-0f69-4bc8-bd58-46458c2de5c3",
+      "result_id": "973bbb54-3ae1-4598-874f-cf1bc0d511b7"
+    },
+    {
+      "claim_id": "36ff90a3-883a-455a-acf6-6e751c52f884",
+      "result_id": "973bbb54-3ae1-4598-874f-cf1bc0d511b7"
+    },
+    {
+      "claim_id": "13aec00a-4300-483b-8167-099c1f93f68d",
+      "result_id": "973bbb54-3ae1-4598-874f-cf1bc0d511b7"
+    },
+    {
+      "claim_id": "9cb11614-3250-4a98-8758-9313142dae3b",
+      "result_id": "973bbb54-3ae1-4598-874f-cf1bc0d511b7"
+    },
+    {
+      "claim_id": "25c371fc-925d-4c69-a0eb-496cb8750b05",
+      "result_id": "973bbb54-3ae1-4598-874f-cf1bc0d511b7"
+    },
+    {
+      "claim_id": "f3b50647-c91c-487f-8a89-de894ebc58ec",
+      "result_id": "361e6d65-4fc0-4790-a09b-e79d93478886"
+    },
+    {
+      "claim_id": "d6a0280e-b015-4fa1-b918-e848b1ed8f88",
+      "result_id": "361e6d65-4fc0-4790-a09b-e79d93478886"
+    },
+    {
+      "claim_id": "a19e45cc-24eb-4bee-baf0-0cfa44d455f7",
+      "result_id": "361e6d65-4fc0-4790-a09b-e79d93478886"
+    },
+    {
+      "claim_id": "c58a63dc-218e-466f-8395-d75e9db7ed68",
+      "result_id": "361e6d65-4fc0-4790-a09b-e79d93478886"
+    },
+    {
+      "claim_id": "c41219ca-da74-4696-9f37-2d4962f70e8b",
+      "result_id": "361e6d65-4fc0-4790-a09b-e79d93478886"
+    },
+    {
+      "claim_id": "b86b32c1-b5ae-4e0b-a3c2-41c8503a5800",
+      "result_id": "361e6d65-4fc0-4790-a09b-e79d93478886"
+    },
+    {
+      "claim_id": "0b2044da-5c00-4c3b-a8fa-853db926e1d1",
+      "result_id": "75e4e130-a9df-4db4-96e5-90c3bdeecb72"
+    },
+    {
+      "claim_id": "e3e82214-20d6-4d83-8a51-a419632d2f6a",
+      "result_id": "75e4e130-a9df-4db4-96e5-90c3bdeecb72"
+    },
+    {
+      "claim_id": "f14ab4b6-03c2-433a-970e-90e13eda3399",
+      "result_id": "75e4e130-a9df-4db4-96e5-90c3bdeecb72"
+    },
+    {
+      "claim_id": "b5526b44-9675-4780-abe2-79b4744acd00",
+      "result_id": "75e4e130-a9df-4db4-96e5-90c3bdeecb72"
+    },
+    {
+      "claim_id": "8cc7ad4c-5865-4505-a01d-630b903ec081",
+      "result_id": "75e4e130-a9df-4db4-96e5-90c3bdeecb72"
+    },
+    {
+      "claim_id": "38b8ddce-6811-4769-8dda-b0dc15b35930",
+      "result_id": "75e4e130-a9df-4db4-96e5-90c3bdeecb72"
+    },
+    {
+      "claim_id": "4e8f30a5-61ff-4419-b2f2-0a4ac6e4f3de",
+      "result_id": "75e4e130-a9df-4db4-96e5-90c3bdeecb72"
+    },
+    {
+      "claim_id": "fd1ea411-c7a0-4f0f-97a3-f92e6b119cf7",
+      "result_id": "70ed9100-7a78-46b6-97fa-7e87cc32b2d8"
+    },
+    {
+      "claim_id": "4fc63964-c0c0-4e86-a2bf-b21cee32cab6",
+      "result_id": "70ed9100-7a78-46b6-97fa-7e87cc32b2d8"
+    },
+    {
+      "claim_id": "4509ee40-d8b6-4628-b40e-23c9cc071391",
+      "result_id": "70ed9100-7a78-46b6-97fa-7e87cc32b2d8"
+    },
+    {
+      "claim_id": "b8041090-df67-4891-823d-5e1e88bdf06b",
+      "result_id": "70ed9100-7a78-46b6-97fa-7e87cc32b2d8"
+    },
+    {
+      "claim_id": "5a35e5be-d5bc-40e6-8cc2-908731203283",
+      "result_id": "70ed9100-7a78-46b6-97fa-7e87cc32b2d8"
+    },
+    {
+      "claim_id": "890396d8-6c48-499a-95be-239030fb5af1",
+      "result_id": "a7ce458a-3ac2-41de-bc60-18ba8fff2aee"
+    },
+    {
+      "claim_id": "3cb05b15-af1b-4494-9277-78f8710867df",
+      "result_id": "a7ce458a-3ac2-41de-bc60-18ba8fff2aee"
+    },
+    {
+      "claim_id": "281f043f-2379-4e9e-8a26-c273ef03d937",
+      "result_id": "a7ce458a-3ac2-41de-bc60-18ba8fff2aee"
+    },
+    {
+      "claim_id": "ff677b62-e87a-4127-af74-25483c8a4b61",
+      "result_id": "a7ce458a-3ac2-41de-bc60-18ba8fff2aee"
+    },
+    {
+      "claim_id": "d978e235-2fcb-455c-832f-64a56ca7c405",
+      "result_id": "95b3abf2-91aa-467a-8b8f-4401920cf1f8"
+    },
+    {
+      "claim_id": "c0eb65b5-e4ed-4b4f-a4c8-e5f6dfe12408",
+      "result_id": "95b3abf2-91aa-467a-8b8f-4401920cf1f8"
+    },
+    {
+      "claim_id": "1bb0b552-9bcb-4b2f-adc1-afbe96e22c56",
+      "result_id": "245b1d73-7a9d-43ea-a597-06e784376e5e"
+    },
+    {
+      "claim_id": "d9e9f2c9-a141-4ae0-b98c-5b405f3581bd",
+      "result_id": "245b1d73-7a9d-43ea-a597-06e784376e5e"
+    },
+    {
+      "claim_id": "8b88a664-ed01-42ae-b17f-a20499b59a81",
+      "result_id": "245b1d73-7a9d-43ea-a597-06e784376e5e"
+    },
+    {
+      "claim_id": "acf2542e-7940-4e75-9a0d-0a9b1a3422c7",
+      "result_id": "245b1d73-7a9d-43ea-a597-06e784376e5e"
+    },
+    {
+      "claim_id": "58757dc2-2d74-4e31-8d1d-5696e8e2290b",
+      "result_id": "245b1d73-7a9d-43ea-a597-06e784376e5e"
+    },
+    {
+      "claim_id": "4b0356ad-9823-41c8-b6f5-4f7adbdf9368",
+      "result_id": "0fa33433-fd52-4fc3-b69d-74fd88a72ae3"
+    },
+    {
+      "claim_id": "6d57f913-cc4d-4291-81cd-564e97ff2429",
+      "result_id": "0fa33433-fd52-4fc3-b69d-74fd88a72ae3"
+    },
+    {
+      "claim_id": "39ab6e11-026e-4887-8aa4-c4c2fad4b1dd",
+      "result_id": "0fa33433-fd52-4fc3-b69d-74fd88a72ae3"
+    },
+    {
+      "claim_id": "fdfaa237-1cf7-45af-80b9-e83c126a8114",
+      "result_id": "0fa33433-fd52-4fc3-b69d-74fd88a72ae3"
+    },
+    {
+      "claim_id": "1c9d3ac0-209e-44ec-a64d-f3bdcf383207",
+      "result_id": "6453c3f6-7901-4883-a7c1-14e8d7896be6"
+    },
+    {
+      "claim_id": "b482194a-a372-462b-b7b3-f66ef96ae128",
+      "result_id": "6453c3f6-7901-4883-a7c1-14e8d7896be6"
+    },
+    {
+      "claim_id": "370dd9b9-bea5-4e07-a7cb-8d7c6633b478",
+      "result_id": "6453c3f6-7901-4883-a7c1-14e8d7896be6"
+    },
+    {
+      "claim_id": "f40851c6-02d0-42b9-8212-311c6f973ce8",
+      "result_id": "6453c3f6-7901-4883-a7c1-14e8d7896be6"
+    },
+    {
+      "claim_id": "3c272283-a360-431c-9190-02d38ad4f221",
+      "result_id": "6453c3f6-7901-4883-a7c1-14e8d7896be6"
+    },
+    {
+      "claim_id": "b538d8fd-6d3c-41d1-aaa9-4977baa033cf",
+      "result_id": "6453c3f6-7901-4883-a7c1-14e8d7896be6"
+    },
+    {
+      "claim_id": "5c58072c-eb03-452e-9c7c-ef9157ada891",
+      "result_id": "7b3bb812-86bf-409d-942e-0f1b7e9328dd"
+    },
+    {
+      "claim_id": "7b016bc8-36ae-440c-b5a1-92b8513ac5a5",
+      "result_id": "7b3bb812-86bf-409d-942e-0f1b7e9328dd"
+    },
+    {
+      "claim_id": "8c224331-5972-4baa-9b56-1f63218fd3af",
+      "result_id": "7b3bb812-86bf-409d-942e-0f1b7e9328dd"
+    },
+    {
+      "claim_id": "818eff5c-d83b-4a07-8491-e7090d04e4fb",
+      "result_id": "c675c4fa-7da6-4f61-a984-9545494ec666"
+    },
+    {
+      "claim_id": "dc6f3060-021c-4d53-bea4-92b74775ba19",
+      "result_id": "c675c4fa-7da6-4f61-a984-9545494ec666"
+    },
+    {
+      "claim_id": "ee01f72a-3b27-4024-ae9e-2d950d356f0a",
+      "result_id": "c675c4fa-7da6-4f61-a984-9545494ec666"
+    },
+    {
+      "claim_id": "4f9f0eec-9db3-4638-b56f-94c12b621a9f",
+      "result_id": "c675c4fa-7da6-4f61-a984-9545494ec666"
+    },
+    {
+      "claim_id": "5dccab8a-627d-4b63-ac85-7e5f69d2096a",
+      "result_id": "c675c4fa-7da6-4f61-a984-9545494ec666"
+    },
+    {
+      "claim_id": "fc9dd4c1-704e-46f4-b070-a88d59be35c2",
+      "result_id": "c675c4fa-7da6-4f61-a984-9545494ec666"
+    },
+    {
+      "claim_id": "bf67bb6a-790a-4f93-b40e-01476dba9d74",
+      "result_id": "c675c4fa-7da6-4f61-a984-9545494ec666"
+    },
+    {
+      "claim_id": "650869b2-1fb2-47a8-be3b-63044a4de867",
+      "result_id": "c675c4fa-7da6-4f61-a984-9545494ec666"
+    },
+    {
+      "claim_id": "5e411245-6259-4065-9802-ce483e61922e",
+      "result_id": "c675c4fa-7da6-4f61-a984-9545494ec666"
+    },
+    {
+      "claim_id": "2d187c8e-4a80-45c0-be68-dfe7f1765a86",
+      "result_id": "f02cca21-71d0-4851-b3c4-4b964cdc0745"
+    },
+    {
+      "claim_id": "15f8e8bb-26dd-405d-9282-a9748228c27a",
+      "result_id": "f02cca21-71d0-4851-b3c4-4b964cdc0745"
+    },
+    {
+      "claim_id": "542a1e28-9f90-41a5-9dfd-a0ce90517bbe",
+      "result_id": "f02cca21-71d0-4851-b3c4-4b964cdc0745"
+    },
+    {
+      "claim_id": "e5028d20-9fdf-41b9-a706-b57b74ba9011",
+      "result_id": "f02cca21-71d0-4851-b3c4-4b964cdc0745"
+    },
+    {
+      "claim_id": "692ecca8-47bf-4030-8ce9-484a97737019",
+      "result_id": "f02cca21-71d0-4851-b3c4-4b964cdc0745"
+    },
+    {
+      "claim_id": "79c22613-6410-4bc1-8ba0-b2f5e27af2b8",
+      "result_id": "8752945e-e355-4a96-8a16-73bdbae2dc40"
+    },
+    {
+      "claim_id": "6ce43445-4942-4630-bf60-e1de401370b0",
+      "result_id": "8752945e-e355-4a96-8a16-73bdbae2dc40"
+    },
+    {
+      "claim_id": "c1fb5874-5cf3-403e-baf8-17661bc78dc7",
+      "result_id": "8752945e-e355-4a96-8a16-73bdbae2dc40"
+    },
+    {
+      "claim_id": "f06bcdb9-daad-446e-9baa-4f4705b358a9",
+      "result_id": "8752945e-e355-4a96-8a16-73bdbae2dc40"
+    },
+    {
+      "claim_id": "44cfd420-4a30-4315-9537-0374f299a300",
+      "result_id": "8752945e-e355-4a96-8a16-73bdbae2dc40"
+    },
+    {
+      "claim_id": "dfc2976c-13af-4954-b183-49b660963e3a",
+      "result_id": "8752945e-e355-4a96-8a16-73bdbae2dc40"
+    },
+    {
+      "claim_id": "8b177490-8004-4569-98e4-01b2b0ee330f",
+      "result_id": "8752945e-e355-4a96-8a16-73bdbae2dc40"
+    },
+    {
+      "claim_id": "60176a98-b235-458e-80bc-68809ec79352",
+      "result_id": "8752945e-e355-4a96-8a16-73bdbae2dc40"
+    },
+    {
+      "claim_id": "9bc00714-0cc3-4a2a-b3e9-3f09da35279b",
+      "result_id": "8752945e-e355-4a96-8a16-73bdbae2dc40"
+    },
+    {
+      "claim_id": "858a9209-9250-434c-b10d-a21bcd0073b9",
+      "result_id": "8752945e-e355-4a96-8a16-73bdbae2dc40"
+    },
+    {
+      "claim_id": "0f61df7e-1bd5-4d43-9cfb-38541ee0481d",
+      "result_id": "8752945e-e355-4a96-8a16-73bdbae2dc40"
+    },
+    {
+      "claim_id": "fac1558a-9637-411e-ba23-71b94622d08e",
+      "result_id": "18ce99f8-2090-4f40-a89a-9c12abc70620"
+    },
+    {
+      "claim_id": "bb6458c1-f298-4249-913b-8b24858eae86",
+      "result_id": "18ce99f8-2090-4f40-a89a-9c12abc70620"
+    },
+    {
+      "claim_id": "c15378ea-008c-46a8-b917-47d9e95d6712",
+      "result_id": "18ce99f8-2090-4f40-a89a-9c12abc70620"
+    },
+    {
+      "claim_id": "fa4638c4-0639-47dd-b5c8-0d42fa3ea407",
+      "result_id": "18ce99f8-2090-4f40-a89a-9c12abc70620"
+    },
+    {
+      "claim_id": "50757a44-151e-4db8-8827-8f5eb5814304",
+      "result_id": "18ce99f8-2090-4f40-a89a-9c12abc70620"
+    },
+    {
+      "claim_id": "b67bcc22-0650-475e-a1ae-4b0165da0b6f",
+      "result_id": "18ce99f8-2090-4f40-a89a-9c12abc70620"
+    },
+    {
+      "claim_id": "1f4c9f52-e35a-4b97-b96a-23587362f836",
+      "result_id": "18ce99f8-2090-4f40-a89a-9c12abc70620"
+    },
+    {
+      "claim_id": "02157204-ab56-432f-ab02-74b60e25137b",
+      "result_id": "18ce99f8-2090-4f40-a89a-9c12abc70620"
+    },
+    {
+      "claim_id": "d2029401-490e-41a3-b51a-fdcd88b905a6",
+      "result_id": "18ce99f8-2090-4f40-a89a-9c12abc70620"
+    },
+    {
+      "claim_id": "62b8df26-d6f7-4584-a91c-7ef2e7878749",
+      "result_id": "f42b8ea7-ee3a-46f8-a26d-7a2b0b03272b"
+    },
+    {
+      "claim_id": "035362a5-54e2-4903-940f-877c07bccba5",
+      "result_id": "f42b8ea7-ee3a-46f8-a26d-7a2b0b03272b"
+    },
+    {
+      "claim_id": "09fdac0c-1fdd-4247-abac-a19371ceb95a",
+      "result_id": "f42b8ea7-ee3a-46f8-a26d-7a2b0b03272b"
+    },
+    {
+      "claim_id": "4ea4d567-c05e-43ae-99f5-6c30a9e5946b",
+      "result_id": "f42b8ea7-ee3a-46f8-a26d-7a2b0b03272b"
+    },
+    {
+      "claim_id": "9bb610ac-9793-41c2-9af4-f96a3fb63204",
+      "result_id": "f42b8ea7-ee3a-46f8-a26d-7a2b0b03272b"
+    },
+    {
+      "claim_id": "f9f989a2-2fb9-4704-b077-19b87ffc740f",
+      "result_id": "34f0fb19-251d-4acd-94fe-0d1b8af353c4"
+    },
+    {
+      "claim_id": "76927f1b-4088-4417-bc28-264829cc02df",
+      "result_id": "34f0fb19-251d-4acd-94fe-0d1b8af353c4"
+    },
+    {
+      "claim_id": "9aa4b4a0-f3e3-4879-9388-ada98732a5a6",
+      "result_id": "34f0fb19-251d-4acd-94fe-0d1b8af353c4"
+    },
+    {
+      "claim_id": "e8e08247-03cc-44d4-9dd5-6c30ab09a756",
+      "result_id": "2f3be841-51a8-44ed-98c5-2110e66f6e5a"
+    },
+    {
+      "claim_id": "4b0f00a5-6a68-4a13-a41c-94c02110a13c",
+      "result_id": "2f3be841-51a8-44ed-98c5-2110e66f6e5a"
+    },
+    {
+      "claim_id": "61d76665-ae9f-4456-beaf-a9eacc2b0c70",
+      "result_id": "2f3be841-51a8-44ed-98c5-2110e66f6e5a"
+    },
+    {
+      "claim_id": "b8bd03b2-8621-4fdb-b094-418d0091e642",
+      "result_id": "2f3be841-51a8-44ed-98c5-2110e66f6e5a"
+    }
+  ],
+  "comparisons": []
+}

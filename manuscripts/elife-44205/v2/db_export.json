@@ -1,0 +1,1893 @@
+{
+  "submission": {
+    "id": "e027076e-afd1-4639-a647-5570c4c6c404",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:19:52.216767Z",
+    "updated_at": "2025-12-02T12:19:52.216767Z"
+  },
+  "content": [
+    {
+      "id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "submission_id": "e027076e-afd1-4639-a647-5570c4c6c404",
+      "content_type": "manuscript",
+      "content_text": "# Phylodynamic theory of persistence, extinction and speciation of rapidly adapting pathogens\n\n## Authors\n\n- Le Yan<sup>1</sup> ([ORCID: 0000-0003-1323-0545](https://orcid.org/0000-0003-1323-0545)) \u2020\n- Richard A Neher<sup>2</sup> ([ORCID: 0000-0003-2525-1407](https://orcid.org/0000-0003-2525-1407)) \u2020\n- Boris I Shraiman<sup>1</sup> ([ORCID: 0000-0003-0886-8990](https://orcid.org/0000-0003-0886-8990)) \u2020\n\n### Affiliations\n\n1. Kavli Institute for Theoretical Physics University of California, Santa Barbara Santa Barbara United States\n2. Biozentrum University of Basel, Swiss Institute for Bioinformatics Basel Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nRapidly evolving pathogens like influenza viruses can persist by changing their antigenic properties fast enough to evade the adaptive immunity, yet they rarely split into diverging lineages. By mapping the multi-strain Susceptible-Infected-Recovered model onto the traveling wave model of adapting populations, we demonstrate that persistence of a rapidly evolving, Red-Queen-like state of the pathogen population requires long-ranged cross-immunity and sufficiently large population sizes. This state is unstable and the population goes extinct or \u2018speciates\u2019 into two pathogen strains with antigenic divergence beyond the range of cross-inhibition. However, in a certain range of evolutionary parameters, a single cross-inhibiting population can exist for times long compared to the time to the most recent common ancestor (TM\u2062R\u2062C\u2062A) and gives rise to phylogenetic patterns typical of influenza virus. We demonstrate that the rate of speciation is related to fluctuations of TM\u2062R\u2062C\u2062A and construct a \u2018phase diagram\u2019 identifying different phylodynamic regimes as a function of evolutionary parameters.\n\n## Introduction\n\nIn a host population that develops long-lasting immunity, a pathogen can persist by infecting immunological naive individuals such as children, or through rapid antigenic evolution that enables the pathogen to evade immunity and re-infect individuals. Childhood diseases like measles or chicken pox fall into the former category, while influenza virus adapts rapidly and re-infects most humans multiple times during their lifespan. The continuous adaptation of influenza is facilitated by high mutation rates resulting in diverse populations of co-circulating viral strains. Nevertheless, almost always a single variant eventually outcompetes the others such that diversity within one subtype or lineage remains limited (Petrova and Russell, 2018).\n\nThe contrast of rapid evolution while maintaining limited genetic diversity is most pronounced for the influenza virus subtype A/H3N2. Figure 1 shows a phylogenetic tree of HA sequences of type A/H3N2 with the characteristic \u2018spindly\u2019 shape. The most recent common ancestor of the population is rarely more than 3\u20135 years in the past (Rambaut et al., 2008). Other pathogenic RNA viruses that typically do\u00a0not reinfect the same individual, (measles, mumps, HCV, or HIV) diversify for decades or centuries (Grenfell et al., 2004). Interestingly, influenza B has split into two co-circulating lineages in the 1970s which by now are antigenically distinct (Rota et al., 1990) and maintain intermediate levels of diversity (see Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44205/elife-44205-fig1-v2.jpg)\n\n**Figure 1.:** The top left panel shows a phylogeny of the HA segment of influenza A virus of subtype H3N2 from its emergence in 1968 to 2018. The virus population never accumulates much diversity but is rapidly evolving. The lower left panel shows a phylogeny of the HA segment of influenza B viruses from 1940 to 2018. In the 70s, the population split into two lineages known as Victoria (B/Vic) and Yamagata (B/Yam) in the 1970s. The graphs on the right quantify diversity via the time to the most recent common ancestor $T_{M\u2062R\u2062C\u2062A}$ for different influenza virus lineages. Influenza B viruses harbor more genetic diversity than influenza A viruses. The subtype A/H3N2 in particular coalesces typically in 3y while deeps splits in excess of 5y are rare.\n\nInfluenza virus infections elicit lasting immunity rendering most individuals non-susceptible to viruses that circulated during their lifetime (Fonville et al., 2014). The virus population escapes collective human immunity by accumulating amino acid substitutions in its surface glycoproteins (Koel et al., 2013; Wilson and Cox, 1990). Extensive genetic characterizations have shown that within each subtype many HA sequence variants co-circulate (Rambaut et al., 2008; Fitch et al., 1997). These variants differ from each other by \u223c10 substitutions and compete for susceptible hosts (Strelkowa and L\u00e4ssig, 2012). The rapid sequence evolution results in a decay of immune cross-reactivity over \u223c10 years (Smith et al., 2004; Bedford et al., 2014; Fonville et al., 2014; Neher et al., 2016).\n\nEpidemiological dynamics of influenza is often modeled using generalizations of the classic Susceptible-Infected-Recovered (SIR) model to multiple antigenically distinct viral strains (Kermack and McKendrick, 1927; Gog and Grenfell, 2002). Such models need to capture (i) how the infection with one strain affects susceptibility to other strains and (ii) how novel strains are generated from existing strains by mutations. A common approach has been to impose a discrete one-dimensional strain space in which new strains are generated by mutation of adjacent strains. Infection results in a reduction of susceptibility in a manner that depends on the distance in this one-dimensional strain space (Andreasen et al., 1996; Gog and Grenfell, 2002). Such models naturally result in \u2018traveling waves\u2019 in the sense that the pathogen population moves through strain space by recurrent emergence of antigenically advanced variants produced by mutation from neighboring strains (Lin et al., 2003).\n\nThese models of antigenically evolving populations are related to general models of rapid adaptation in which populations form a traveling wave moving towards higher fitness (Tsimring et al., 1996; Rouzine et al., 2003; Desai and Fisher, 2007; Neher et al., 2014), reviewed in Neher (2013a). Recently, Rouzine and Rozhnova (2018) described an explicit mapping between a SIR model in a one-dimensional antigenic space and traveling wave models in fitness.\n\nTraveling wave (TW) models in a one-dimensional antigenic space naturally result in spindly phylogenies: There is only one possible direction for immune escape and the fastest growing most antigenically advanced strain grows drives all other strains extinct. Influenza viruses, however, can escape immunity by mutations at a large number of positions (Wilson and Cox, 1990), suggesting antigenic space is high dimensional (Perelson and Oster, 1979). In many dimensions, different viral strains can escape immunity via different paths and diverge sufficiently from each other until they no longer compete for hosts and thereafter propagate independently evolve. A satisfactory explanation of spindly phylogenies therefore has to describe how evolution in a high dimensional space reduces to an effectively one-dimensional path without persistent branching or rapid extinction. Several computational studies have addressed this question and identified cross-immunity (Bedford et al., 2012; Tria et al., 2005; Koelle et al., 2011; Ferguson et al., 2003; Sasaki and Haraguchi, 2000) as well as deleterious mutations (Koelle and Rasmussen, 2015; Gog and Grenfell, 2002) as critical parameters. We will discuss this earlier work at greater length below.\n\nOur work aims to examine the conditions under which the evolving pathogen can maintain a spindly phylogeny with an approximately constant level of diversity \u2013 sufficient to avoid extinction, yet constrained from further branching by cross-inhibition between not too distant strains. We show that long range cross immunity in generic stochastic models of antigenic evolution generates such phylogenies. However, in the long term the viral population either \u2018speciates\u2019 into weakly interacting diverging lineages or goes extinct with rates that are controlled by three dimensionless combinations of model parameters. While the relation of these parameters to the known characteristics of influenza epidemiology and evolution is not direct, the general \u2018phase diagram\u2019 captured by the parameters of the simple model illustrates the key competing factors governing expected long-term dynamics.\n\n## Results\n\n### Model\n\nA model of an antigenically evolving pathogen population needs to account for cross-immunity between strains and the evolution of antigenically novel strains. We use an extension of the standard multi-strain SIR model (Gog and Grenfell, 2002). The fraction of individuals $I_{a}$ infected with viral strain $a$ changes according to\n\n$$\n\\frac{d}{d\u2062t}\u2062I_{a}=\\beta\u2062S_{a}\u2062I_{a}-(\u03bd+\\gamma)\u2062I_{a}\n$$\n\nwhere $\\beta$ is the transmissibility, $S_{a}$ is the population averaged susceptible to strain $a$, $\u03bd$ is the recovery rate, and $\\gamma$ is the population turnover rate. The fraction $R_{a}$ of the population recovered from infection with strain $a$ changes according to\n\n$$\n\\frac{d}{dt}R_{a}=\u03bdI_{a}\u2212\\gammaR_{a}\n$$\n\nOur focus here is on antigenically evolving pathogens that reinfect an individual multiple times during its life-time, we shall ignore population turnover and set $\\gamma=0$ right away to simplify presentation.\n\nThe dynamics of $I_{a}$ depends on the average susceptibility of the host population $S_{a}=\u27e8S_{a}\u2062(i)\u27e9_{i}$, while the susceptibility $S_{a}\u2062(i)$ of host $i$ depends on the host\u2019s history of previous infections. A plausible representation of the history dependence of susceptibility at the level of individuals has a product form (Wikramaratna et al., 2015)\n\n$$\nS_{a}^{(\\sigma)}=\u27e8\\prodb(1-K_{a\u2062b}\u2062\\sigma_{b}\u2062(i))\u27e9_{i}\n$$\n\nwhere $\\sigma_{b}\u2062(i)$ is one or zero depending on whether host $i$ has or has not been previously infected with strain $b$. Matrix $K_{a\u2062b}\\leq1$ quantifies the cross-immunity to strain $a$ due to prior infection with strain $b$. Thus, Equation 3 expresses the susceptibility $S_{a}$ in terms of a product of attenuation factors each arising from a prior infection by a different strain $b$. A simple, but adequate approximation for the population averaged susceptibility is provided by replacing $\\sigma_{b}\u2062(i)$ in the product in Equation 3 by the fraction of the population $R_{b}$ that recovered from infection with strain $b$:\n\n$$\nS_{a}\u2248\\prodb(1-K_{a\u2062b}\u2062R_{b})\u2248e^{-\\sum_{b}K_{a\u2062b}\u2062R_{b}}\n$$\n\nThis corresponds to the \u2018order one independence closure\u2019 by Kryazhimskiy et al. (2007) and is known as Mean-Field approximation in physics (Weiss, 1907; Landau and Lifshitz, 2013). The Mean-Field approximation here corresponds to ignoring correlations between subsequent infection in the individual histories. Approximating the product by the exponential is justified because the total fraction of the host population infected by any single strain in the endemic regime is typically small (Yang et al., 2015). A detailed derivation of Equation 4 and more detailed discussion of approximations is given in Appendix 1. While the original formulation of immunity in Equation 3 is based on the infection history of individuals (Andreasen et al., 1997), the population average over the factorized distribution of histories relates the model to status based formulations (Gog and Grenfell, 2002). While some differences between status and history-based models have been reported (Ballesteros et al., 2009), others have shown that different model types have similar properties (Ferguson and Andreasen, 2002). The differences between these models and approximations are small compared to the crudeness with which these simple mathematical models capture the complex immunity profile of the human population. A model similar to ours has been successfully applied to influenza virus evolution (Luksza and L\u00e4ssig, 2014).\n\nWe note that differentiating Equation 4 with respect to time defines the equation governing the dynamics of population average susceptibility\n\n$$\n\\frac{d}{d\u2062t}\u2062S_{a}=-\u03bd\u2062S_{a}\u2062\\sumbK_{a\u2062b}\u2062I_{b}\n$$\n\nwhich is exactly the same as the dynamics of susceptibility in Gog and Grenfell (2002)\u00a0and Luksza and L\u00e4ssig (2014)\u00a0in the limit of negligible population turnover $\\gamma/\u03bd\u226a1$.\n\nNew strains are constantly produced by mutation with rate $m$. The novel strain will differ from its parent at one position in its genome. Following Luksza and L\u00e4ssig (2014), we assume that cross-immunity decays exponentially with the number of mutations that separate two strains:\n\n$$\nK_{a\u2062b}=\\alpha\u2062e^{-\\frac{|a-b|}{d}}\n$$\n\nwhere $|a-b|$ denotes the mutational distance between the two strains, $d$ denotes the radius of cross-immunity measured in units of mutations. Antigenic space is thereby assumed to be high dimensional and antigenic distance is proportional to genetic distance in the phylogenetic tree (Neher et al., 2016). The parameter $\\alpha\\leq1$ quantifies the reduction of susceptibility to reinfection by the same strain and hence the overall strength of protective immunity. We shall set $\\alpha=1$ corresponding to perfect protection here for simplicity of presentation. Our analysis below applies equally well to the more realistic case of $\\alpha<1$, since in our approximation this parameter can be eliminated by rescaling $R_{a}$ and $I_{a}$ and ultimately merely renormalizes the host population size, which serves as one of the \u2018control parameters\u2019 in our analysis.\n\nCross-immunity and the mutation/diversification process are illustrated in Figure 2. An infection with a particular strain (center of the graph) generates a cross-immunity footprint (shaded circles). Mutation away from the focal strain reduces the effect of existing immunity in the host population, but complete escape requires many mutations. Hence closely related viruses compete against each other for susceptible individuals.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44205/elife-44205-fig2-v2.jpg)\n\n**Figure 2.:** Via cross-reactivity, the immunity foot-print of ancestral variants (center of the graph) mediates competition between related emerging viral strains and can drive all but one of the competing lineages extinct. At high mutation rates and relatively short range of antigenic cross-reactivity, different viral lineages can escape inhibition and continue to evolve independently.\n\nThe above model was formulated in terms of the deterministic Equations 1-4. The actual dynamics, however, is stochastic in two respects: (i) antigenic mutations are generated at random with rate $m$ and (ii) stochasticity of infection and transmission. The latter can be captured by interpreting the terms in Equation 1 as rates of discrete transitions in a total population of $N_{h}$ hosts. This stochasticity is particularly important for novel mutant strains that are rare. Most rare strains are quickly lost by chance even if they have a growth advantage due to antigenic novelty. To account for stochasticity in a computationally efficient way, we employ a clone-based hybrid scheme where mutation and the dynamics of rare mutants are modeled stochastically, while common strains follow deterministic dynamics, see Materials\u00a0and\u00a0methods (Clone-based simulations).\n\nWe will use the recovery rate $\u03bd$ to set the unit of time, fixing $\u03bd=1$ in rescaled units. The remaining parameters of the model are (1) the transmission rate $\\beta$ - in our units the number of transmission events per infection and hence equal to the basic reproduction number $R_{0}$, (2) the mutation rate $m$, (3) the range of cross-immunity $d$ measured as the\u00a0typical number of mutations needed for an $e$-fold drop of cross-inhibition, and (4) the host population size $N_{h}$.\n\n### Phenomenology\n\nBefore proceeding with a quantitative analysis we discuss different behaviors qualitatively. Figure 3A shows several trajectories of prevalence $I_{t\u2062o\u2062t}=\\sum_{a}I_{a}$ (i.e. total actively infected fraction) for several different parameters. Depending on the range of cross-immunity, the pathogen either goes extinct after a single pandemic (red line) or settles into a persistently evolving state, the Red Queen State (RQS) traveling wave (Van Valen, 1973 In large populations the RQS exhibits oscillations in prevalence. As we will discuss further below, the RQS state is transient and either goes extinct after some time or splits into multiple antigenically diverging lineages that propagate independently. To quantitatively understand the dependence on parameters, we will further simplify the model and establish a connection to models of rapid adaptation in population genetics. Figure 3BC shows parameter regimes corresponding to distinct qualitative behaviors. The relevant parameters are three combinations of the population size $N_{h}$, the selection coefficient of novel mutations $s$, the mutation rate $m$, and the radius of cross-immunity $d$. A long-lived but transient RQS regime is flanked be the regime of deterministic extinction (red) and the regime of continuous branching and diversification \u2013 the \u2018speciation\u2019 regime (blue). The RQS regime itself undergoes a transition from a steady traveling wave (yellow) to a limit cycle oscillation (green) with increasing population size. The location of the boundaries depend on the time scale of observation as the cumulative probability of extinction and speciation increases with time.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44205/elife-44205-fig3-v2.jpg)\n\n**Figure 3.:** (A) Typical trajectories of infection prevalence in the parameter regimes corresponding to extinction (red), traveling wave RQS (yellow) and oscillatory RQS (green). Panels B and C schematically show parameter regimes corresponding to these qualitatively different behaviors. As explained in the text the boundaries $q_{e\u2062x},q_{s\u2062p}$ of the RQS regime depend explicitly on the time scale considered (see also Figure 7). Simulation results supporting this diagram are shown in Figure 3\u2014figure supplements 1 and 2. Panel (D) is a schematic illustrating how a novel pandemic strain (red) can settle into an endemic RQS state. As the cumulative number of infected individuals increases, the susceptible fraction decreases, and survival of the strain depends on the emergence of antigenic escape mutations (gray). The top part of the panel illustrates the population composition at a particular time point. Rare pioneering variants are $q$ mutations ahead of the dominant variant and grow with rate $x_{n}$. (Note, that boundaries of the \u2018extinction\u2019 regime in (B,C) correspond to $q$ value close to one.) Different lineages are related via their phylogenetic tree embedded in the fitness distribution in the population.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44205/elife-44205-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The data points are assigned to phases using the following criteria. The extinction phase (red): $\\tau_{ext}<10\u2062\\tau_{sw}$; The speciation phase (blue): $\\tau_{sp}<10\u2062\\tau_{sw}$; The transient RQS regime (yellow and green): otherwise. Red and blue lines correspond to the extinction boundary $q_{e\u2062x\u2062t}$ and speciation boundary $q_{s\u2062p}$ respectively, defined for $\\tau=10\u2062\\tau_{sw}$. The black solid line corresponds to the onset of spontaneous oscillation $log\u2061(N_{h}\u2062I\u00af)=8.3$. Color in the transient phase labels the amplitude of prevalence $var\u2062(log\u2061I_{t\u2062o\u2062t})$, increasing from yellow to green. Simulation set $d=50$.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44205/elife-44205-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Value of $q$ across the \u2018Phase diagram\u2019.This figure shows the same data as one with each data point colored by the corresponding value of $q$, which is constant along the straight of different angle.\n\n### Large effect antigenic mutations allow transition from pandemic to seasonal dynamics\n\nA novel virus in a completely susceptible population will initially spread with rate $\\beta-1$ and the pandemic peaks when susceptible fraction falls to $\\beta^{-1}$. The trajectory of such a pandemic strain in the time-susceptibility plane is indicated in red in Figure 3D. Further infections in the contracting epidemic will then push susceptibility below $\\beta^{-1}$ \u2013 the propagation threshold for the virus \u2013 and without rapid antigenic evolution the pathogen will go extinct after a time $t\u223c\\beta^{-1}\u2062log\u2061N_{h}$. Such boom-bust epidemics are reminiscent of the recent Zika virus outbreak in French Polynesia and the Americas where in a short time a large fraction of the population was infected and developed protective immunity (O'Reilly et al., 2018).\n\nPersistence and transition to an endemic state is only possible if the pathogen can evade the rapid build-up of immunity via a small number of large effect antigenic mutations. This process is indicated in Figure 3D by horizontal arrows leading to antigenically evolved strains of higher susceptibility and bears similarity to the concept of \u2018evolutionary rescue\u2019 in population genetics (Gomulkiewicz, 1995). The parameter range of the idealized SIR model that avoid extinction after a pandemic resulting in persistent endemic disease is relatively small. Yet, various factors like geographic structure, heterogeneity of host adaptation and population turn-over slow down the pandemic and extinction, thereby increasing the chances of sufficient antigenic evolution to enter the endemic, RQS-type, regime. The 2009 pandemic influenza A/H1N1 has undergone such a transition from a pandemic to a seasonal/endemic state. We shall not investigate the transition process in detail here, but will assume that endemic regime has been reached.\n\n### Long-range cross-immunity results in evolving but low diversity pathogen populations\n\nOnce the pathogen population has established an endemic circulation through continuous antigenic evolution (green and yellow regimes in Figure 3BC), the average rate of new infections $\\beta\u2062\\sum_{a}I_{a}\u2062S_{a}/I_{t\u2062o\u2062t}$ fluctuates around the rate of recovery $\u03bd=1$ (in our time units). This balance is maintained by the steady decrease in susceptibility due to rising immunity against resident strains and the emergence of antigenically novel strains, see Figure 3D. If the typical mutational distance between strains is small compared to the cross-immunity range $d$, the rate at which susceptibility decreases is similar for all strains. To see this we expand $K_{a\u2062b}$ in Equation 5\n\n$$\nS_{a}^{-1}\u2062\\frac{d}{d\u2062t}\u2062S_{a}\u2062(t)=-\\sumbe^{-\\frac{|a-b|}{d}}\u2062I_{b}\u2248-I_{t\u2062o\u2062t}+\\sumb\\frac{|a-b|}{d}\u2062I_{b}\n$$\n\nwhere we have used that $|a-b|\u226ad$ for all pairs of strains with substantial prevalence. In fact it will suffice to keep only the first, leading, term on the right hand side. Close to a steady state, prevalent strains obey $\\beta\u2062S_{a}\u22481$. We can hence define the instantaneous growth rate of strain $x_{a}=(\\beta\u2062S_{a}-1)\u226a1$ as its effective fitness. In this limit, the model can be simplified to\n\n$$\n\\frac{d}{dt}I_{a}=x_{a}I_{a}\\frac{d}{dt}x_{a}\u2248\u2212I_{tot}\n$$\n\nThe second equation means that effective fitness of all strains $a$ decreases approximately at the same rate since the pathogen population is dominated by antigenically similar strains.\n\nIf a new strain $c$ emerged from strain $a$ by a single antigenic mutation, its mutational distance from a strain $b$ is $|c-b|=|a-b|+1$ and $K_{c\u2062b}=K_{a\u2062b}\u2062e^{-d^{-1}}\u2248K_{a\u2062b}\u2062(1-d^{-1})$. The population susceptibility of strain $c$ is therefore increased to\n\n$$\nS_{c}\u2248e^{-(1-d^{-1})\u2062\\sum_{b}K_{a\u2062b}\u2062R_{b}}\u2248S_{a}\u2062(1-\\frac{log\u2061S_{a}}{d})\n$$\n\nSince the typical susceptibility is of order $\\beta^{-1}$, the growth rate of the mutant\u00a0strain $c$ is $s=d^{-1}\u2062log\u2061\\beta$ higher than that of its parent. The growth rate increment,\u00a0s, plays the role of a selection coefficient in typical population genetic models and corresponds to the step size of the fitness distribution in Figure 3D. In such models, individuals within a fitness class (bin of the histogram) are equivalent and different classes can be modeled as homogeneous populations which greatly accelerates numerical analysis of the model, see Materials\u00a0and\u00a0methods.\n\nRouzine and Rozhnova (2018) have recently formulated a similar model of antigenic evolution of rapidly adapting pathogens. Analogously to our model, Rouzine and Rozhnova couple strain dynamics to antigenic adaptation through mutations, albeit assuming a one-dimensional antigenic space. In agreement with Rouzine and Rozhnova, we find that selection coefficients of novel mutations are inversely proportional to the cross-immunity rate $d$ and increase with infectivity $\\beta$, see Equation 9. Rouzine and Rozhnova, however, do not consider oscillations, extinction, and speciation (see below).\n\nThe simplified model in Equation 8, along with the model developed by Rouzine and Rozhnova (2018), is analogous to the traveling wave (TW) models of rapidly adapting asexual populations that have been studied extensively over the past two decades (Tsimring et al., 1996; Desai and Fisher, 2007; Rouzine et al., 2003; Hallatschek, 2011), see Neher (2013a) for a review. These models describe large populations that generate beneficial mutations rapidly enough that many strains co-circulate and compete against each other. The fittest (most antigenically advanced) strains are often multiple mutational steps,\u00a0$q$,\u00a0ahead of the most common strains, see Figure 3D. This \u2018nose\u2019 of the fitness distributions contains the strains that dominate in the future and the only adaptive mutations that fixate in the population arise in pioneer strains in the nose. Consequently, the rate with which antigenic mutations establish in the population is controlled by the rate at which they arise in the nose (Desai and Fisher, 2007). If the growth rate at the nose of the distribution, $x_{n}$, is much higher than antigenic mutation rate, $x_{n}\u226bm$, it takes typically\n\n$$\n\\tau_{a}=\\frac{log\u2061(x_{n}/m)}{x_{n}}\n$$\n\ngenerations before a novel antigenic mutation arises in a newly arisen pioneer strain that grows exponentially with rate $x_{n}$. The advancement of the nose is balanced rapidly by the increasing population mean fitness.\n\nIf beneficial mutations have comparable effects on fitness and population sizes are sufficiently large ($N\u2062m\u226b1$), the fitness distribution has an approximately Gaussian shape with a variance $\\sigma^{2}\u22482\u2062s^{2}\u2062log\u2061(N\u2062s)/log^{2}\u2061(x_{n}/m)$. The wave is $\\sigma/s$ mutations wide, while the most advanced strains are approximately $q=2\u2062log\u2061(N\u2062s)/log\u2061(x_{n}/m)$ ahead of the mean (Desai and Fisher, 2007). Two contemporaneous lineages coalesce on a time scale $\\tau_{sw}=s\u2062q/\\sigma^{2}=s^{-1}\u2062log\u2061(x_{n}/m)$ and the branching patterns of the tree resemble a Bolthausen-Sznitman coalescent rather than a Kingman coalescent (Desai et al., 2013; Neher and Hallatschek, 2013b).\n\nIn circulating influenza viruses, typically around 3\u201310 adaptive mutations separate pioneer strains from the most common variants (Strelkowa and L\u00e4ssig, 2012; Neher and Bedford, 2015). While this clearly corresponds to a regime where multiple stains compete, it does not necessarily mean that asymptotic formulae assuming $q\u226b1$ are accurate. Nevertheless, many qualitative features of TW models have been shown to qualitatively extend into regimes where $q$ takes intermediate values (Neher and Hallatschek, 2013b).\n\nWhile parameter $N$ in the TW models summarized above is a fixed population size, the corresponding entity in our SIR model is the fluctuating pathogen population size $N_{p}$ which is related to the (fixed) host population size $N_{h}$ by $N_{p}=N_{h}\u2062I_{t\u2062o\u2062t}$. The average $I_{t\u2062o\u2062t}$ depends on other parameters of the model, scaling in particular with $I\u00af\u223cs^{2}$. Hence, it will be convenient for us to use $N_{h}\u2062s^{2}$ as one of the relevant \u2018control parameters\u2019, replacing $N$ of the standard TW model.\n\n### Stability and fluctuations of the RQS\n\nIn contrast to most population genetic models of rapid adaptation, our epidemiological model does not control the total population size directly. Instead, the pathogen population size (or prevalence) depends on the host susceptibility, which in itself is determined by recent antigenic evolution of the pathogen. The coupling of these two different effects results in a rich and complicated dynamics (see Figure 4A for an example trajectory): The first effect is ecological: a bloom of the\u00a0pathogen depletes susceptible hosts leading to a crash in pathogen population and a tendency of the population size to oscillate London and Yorke, 1973 (blue line in Figure 4A). The second effect is evolutionary: higher nose fitness $x_{n}$ begets faster antigenic evolution and vice versa, resulting in an apparent instability in the advancement of the antigenic pioneer strains (Fisher, 2013) (yellow line and inset in Figure 4A). In our epidemiological model, as we shall show below, fluctuations in the rate of antigenic advance of the pioneer strains couple with a delay of $\\tau_{sw}$ to the ecological oscillation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44205/elife-44205-fig4-v2.jpg)\n\n**Figure 4.:** (A) An example of the stochastic limit cycle trajectory from the fitness-class simulation. Note the rapid rise and fall of infection prevalence (blue), which causes a drop in nose fitness (yellow) which subsequently recovers (approximately linearly) during the remainder of the cycle. Fluctuations in $I_{t\u2062o\u2062t}\u2062(t)$ and $x_{n}\u2062(t)$ from cycle to cycle are caused by the stochasticity of $x_{n}$, that\u00a0is antigenic evolution in pioneer strains. A particularly large fluctuation about $\\tau_{sw}$ prior to the end, caused a large spike in prevalence, followed by the collapse of $x_{n}$ below zero and complete extinction. Inset (red) shows the cross-correlation between $x_{n}$ and $\\sigma^{2}$ which peaks with the delay $\\tau=\\tau_{sw}$ (additional peaks reflect the oscillatory nature of the state and are displaced by integer multiples of mean period). (B) A family of limit cycles in the infection prevalence/mean fitness plane as described by Equation (11) with fixed variance. The variation of $\\sigma$ governed by the Equations 11 and 12 (in the deterministic limit) reduces the family to a single limit cycle (red); (C) Trajectories in the infection prevalence/nose fitness generated by the stochastic DD system in the regime above (right panel) and below (left panel) the oscillatory instability of the deterministic DD system.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44205/elife-44205-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Top: Amplitude of epidemic circulations in logarithm of total prevalence. The amplitude predicted in the fitness class-based (FC) simulation is consistent with the clone-based simulation, bounded from below by the amplitude in the deterministic differential-delay approximation (DDE), which sets on at the spontaneous oscillation threshold $log(N_{h}I\u00afs)_{o\u2062s\u2062c}=8.3$, indicated by the dashed line. When the noise is properly considered as in Equation (15), the amplitude can also be predicted from the stochastic differential-delay equations (DDE). Bottom: Period of epidemic oscillation, also bounded below by the limit cycle period of the deterministic DDE.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44205/elife-44205-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) In our model, the speed of traveling wave varies in time. The instantaneous speeds measured from immune adaptation, Fisher\u2019s theorem, and nose advance could be different at any given moment. (B) But in the phase with steady traveling waves, the time-averaged speeds are consistent for different parameters. (C) The average nose position and (D) the average speed of adaptation (in the clone-based simulation) are consistent with the prediction of the traveling wave theory.\n\nTo recognize the ecological aspect of the oscillatory tendency, consider the total prevalence $I_{t\u2062o\u2062t}$ and the mean fitness of the pathogen $X=\\sum_{a}x_{a}\u2062I_{a}/I_{t\u2062o\u2062t}$\u00a0\n\n$$\n\\frac{d}{d\u2062t}\u2062I_{t\u2062o\u2062t}=X\u2062I_{t\u2062o\u2062t};\\frac{d}{d\u2062t}\u2062X=\\sigma^{2}-I_{t\u2062o\u2062t}\n$$\n\nwhich follows directly from Equation (8). Selection on fitness variance $\\sigma^{2}$ increases $X$, while prevalence $I_{t\u2062o\u2062t}$ reduces susceptibility and hence $X$. At fixed variance $\\sigma=\\sigma\u00af$ this system is equivalent to a non-linear oscillator describing a family of limit cycles oscillating about $I_{t\u2062o\u2062t}=\\sigma\u00af^{2}$ and $X=0$ as shown in Figure 4B.\n\nWhile Equation (11) describes the behavior of common strains, the mutation driven dynamics of the antigenic pioneer strains is governed by the equation for $x_{n}$ that in a continuum limit (suitable for the limit of high mutation rate) reads:\n\n$$\n\\frac{d}{d\u2062t}\u2062x_{n}=\\tau_{sw}^{-1}\u2062x_{n}-I_{t\u2062o\u2062t}+s\u2062\u03be\u2062(t)\n$$\n\nThe first term on the right hand side represents the rate at which antigenic pioneer strains enter the population, $\\tau_{a}^{-1}$, advancing the nose fitness by an increment $s$ (with\u00a0$\\tau_{a}^{-1}\u2062s=\\tau_{sw}^{-1}\u2062x_{n}$\u00a0). The second term on the right hand side of Equation (12) represents gradual reduction of susceptibility of the host population, and $\u03be\u2062(t)$ is a random noise variable representing the stochasticity of the establishment of new strains. The Gaussian white noise $\u03be\u2062(t)$ is defined statistically by its correlation function $\u27e8\u03be\u2062(t)\u2062\u03be\u2062(0)\u27e9=\\tau_{a}^{-1}\u2062\\delta\u2062(t)$, see Materials\u00a0and\u00a0methods (Stochastic differential-delay simulation).\n\nThe first term of Equation (12) captures the apparent instability of the nose: an advance of the nose to higher $x_{n}$ accelerates its rate of advancement. The stabilizing factor is the subsequent increase in $I_{t\u2062o\u2062t}$, but to see how that comes about we must connect Equation (12) to Equation (11). The connection is provided by $\\sigma^{2}$ since it is controlled by the emergence of novel strains, that\u00a0is the dynamics of the \u2018nose\u2019 $x_{n}$, which impacts the bulk of the distribution after a delay $\\tau_{sw}$. Based on the analysis detailed in the Appendix 2, we approximate\n\n$$\n\\sigma^{2}\u2062(t)\u2248\\tau_{sw}^{-1}\u2062x_{n}\u2062(t-\\tau_{sw})\n$$\n\nrelating population dynamics, Equation (11), to antigenic evolution of pioneer strains described by Equation (12). Taken together Equations (11-13) define a Differential Delay (DD) system of equations. Sample simulations of this stochastic DD system are shown in Figure 4 BC. The delay approximation Equation (13) is supported by the cross-correlation of $x_{n}\u2062(t)$ and $\\sigma^{2}\u2062(t^{\u2032})$ measured using fitness-class simulations (see Figure 4A Inset).\n\nThe deterministic limit of the DD system (obtained by omitting the noise term in Equation (12)) has a fixed point at $\\tau_{sw}^{-1}\u2062x\u00af_{n}=\\sigma\u00af^{2}=2\u2062\\tau_{sw}^{-2}\u2062log\u2061(N_{h}\u2062I\u00af)$. Small deviations decay in underdamped oscillations with frequency $\\omega=\\sigma\u00af=\\tausw-1\u2062\\sqrt{2\u2062log\u2061(N_{h}\u2062I\u00af)}$ if $\\omega\u2062\\tau_{sw}<2\u2062\\pi$. For $\\omega\u2062\\tau_{sw}>2\u2062\\pi$, the system fails to recover from a deviation of the nose in a single period and the steady state becomes unstable to a limit cycle oscillation. The nonlinearity of Equation (11) implies a longer period with increasing amplitude and the system is stabilized at a limit cycle with the period long enough compared to the feedback delay $\\tau_{sw}$. In Appendix 3, we derive the threshold of oscillatory instability to lie at $log\u2061(N_{h}\u2062I\u00af_{o\u2062s\u2062c}\u2062s)\u22488.3$ (leading to limit cycle period $T\u22481.5\u2062\\tau_{sw}$, see Figure 4\u2014figure supplement 1). We also find that the amplitude of the oscillation $log\u2061(I_{m\u2062a\u2062x}/I\u00af)$ scales as $log\u2061(N_{h}\u2062I\u00af)$ for large values of the later. This transition defines quantitatively the boundary between the TW RQS and the Oscillatory RQS regimes that appear on the phase diagrams in Figure 3 (BC). The validity of the predictions of standard TW theory for our adapting SIR system are explored in Figure 4\u2014figure supplement 2.\n\nThe distinction between the TW and Oscillatory RQS is obscured by the stochasticity of antigenic advance, Equation (12), which continuously feeds the underdamped relaxation mode, generating a noisy oscillation with the frequency $\\omega$ defined above. The difference between the two regimes is illustrated by Figure 4C: in the TW RQS noisy oscillation is about the fixed point, whereas in the Oscillatory RQS it is about deterministic limit cycle.\n\nInterestingly, the dynamics of the Oscillatory RQS, as shown in Figure 4A, can be understood in terms of a non-linear relaxation oscillator. At relatively low infection prevalence nose fitness $x_{n}$ increases until rising $I_{t\u2062o\u2062t}$ catches up with it (when $I_{t\u2062o\u2062t}=\\tau_{sw}^{-1}\u2062x_{n}$) driving it down rapidly. Once this \u2018mini-pandemic\u2019 burns out, the population returns to the low prevalence part of the cycle $I_{t\u2062o\u2062t}<\\tau_{sw}^{-1}\u2062x_{n}$, when $x_{n}$ begins to increase again.\n\n### The rate of extinction\n\nWhile in the deterministic limit the differential-delay system predicts a stable steady TW for $q>q_{e\u2062x},I\u00af<I\u00af_{o\u2062s\u2062c}$ and a limit cycle above $I\u00af_{o\u2062s\u2062c}$, fluctuations in the establishment of the antigenic pioneer strains (Equation (12)) can lead to stochastic extinction. In fact, both the TW and Oscillatory RQS (see Figure 3BC) are transient, subject to extinction due to a sufficiently large stochastic fluctuation. (Note however the contrast with the \u2018extinction\u2019 state in Figure 3BC, where extinction is deterministic and rapid.) The rate of extinction depends on $q$ and $log\u2061(N_{h}\u2062I\u00af)$ as shown in Figure 5A. The time to extinction increases dramatically in the range of $q\u223c1-2$ and more slowly thereafter. Although extinction is fluctuation driven, the mechanism of extinction in the oscillatory state is related closely to the deterministic dynamics, according to which large amplitude excursion in infection prevalence can lead to extinction. A large $x_{n}$ advance leads, after a time $\\tau_{sw}$ to a rise in prevalence $I_{t\u2062o\u2062t}$, followed by the rapid fall in the number of susceptible hosts and hence loss of viral fitness. This turns out to be the main mode of fluctuation driven extinction as illustrated by Figure 4C. One expects extinction to take place when a fluctuation induced deviation $\\delta\u2062x$ of the fitness of pioneer strains becomes of the order of the mean $x\u00af_{n}$. New mutations at the nose accumulate with rate $1/\\tau_{a}$ such that at short times $t$ we expect $\\delta\u2062x\u2248s\u2062\\sqrt{t/\\tau_{a}}$. Hence $\\delta\u2062x$ becomes of the order of the mean $x\u00af_{n}$ at times $\\tau_{ext}\u223cq\u2062\\tau_{sw}$. However the probability of extinction will also depend on the shape of the oscillatory limit cycle (as it depends on the minimum of infection prevalence during the cycle), which in turn depends on $log\u2061(N_{h}\u2062I\u00af)$. Numerical simulations, Figure 5B, confirm the dependence of $\\tau_{ext}$ on $q$ and $log\u2061(N_{h}\u2062I\u00af)$. We note that the rate increase in $\\tau_{ext}$ with increasing $q$ slows down in the oscillatory regime and appears to approach a power law dependence $\\tau_{ext}/\\tau_{sw}\u223cq^{2.5}$ (albeit over a limited accessible range): presently we do not have an analytic understanding of this specific functional form.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44205/elife-44205-fig5-v2.jpg)\n\n**Figure 5.:** (A) Simulation results for the average extinction time $\\tau_{ext}$ (open symbols) and the average speciation time $\\tau_{sp}$ (filled symbols) as a function of pathogen diversity $q$. The life time of the endemic RQS state is limited by the smaller of $\\tau_{ext}$ and $\\tau_{sp}$. If $\\tau_{sp}<\\tau_{ext}$, the population tends to speciate and persist, while the population is more likely to go extinct if $\\tau_{sp}>\\tau_{ext}$. The graph shows $\\tau_{sp}$ and $\\tau_{ext}$ rescaled with the sweep time $\\tau_{sw}$ as a function of genetic diversity measured by the number of mutations $q$. The speciation time $\\tau_{sp}$ increases with the range of cross-inhibition ($d$) and decreases with $q$. Note the agreement between the results of the fitness class-based simulation (black line in (A)) and the clone-based simulation (colored squares in (A)). (B) Extinction time over a broad range of parameters, obtained via fitness class-based simulation of population dynamics, confirms its primary dependence on $q$ for large population sizes.\n\n### The rate of speciation\n\nThe correspondence of the multi-strain SIR and the TW models discussed above assumes that cross-immunity decays slowly compared to the coalescent time of the population, that\u00a0is $d/q\u226b1$. In this case, all members of the population compete against each other for the same susceptible hosts. Conversely, if the viral population were to split into two sub-populations separated by antigenic distance greater than the range of cross-inhibition $d$, these sub-population would no-longer compete for the hosts, becoming effectively distinct viral \u2018species\u2019 that propagate (or fail) independently of each other. Such a split has for example occurred among influenza B viruses, see Figure 1.\n\nA \u2018speciation\u2019 event corresponds to a deep split in the viral phylogeny, with the $T_{M\u2062R\u2062C\u2062A}$ growing without bounds, see Figure 1 and Figure 6A. This situation contrasts the phylogeny of the single competing population, where $T_{M\u2062R\u2062C\u2062A}$ fluctuates with a characteristic ramp-like structure generated by stochastic extinction of one of the two oldest clades. In each such extinction event the MRCA jumps forward by $\\delta\u2062T$. Hence the probability of speciation depends on the probability of the two oldest clades to persist without extinction for a time long enough to accumulate antigenic divergence in excess of $d$. The combined carrying capacity of the resulting independent lineages is then twice their original carrying capacity as observed in simulations, see Figure 6B.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/44205/elife-44205-fig6-v2.jpg)\n\n**Figure 6.:** (A) To speciate, two lineage have to diverge enough to substantially reduce cross-reactivity, that\u00a0is $T$ needs to be comparable to $d$. Inset: Illustration of the definition of time to most recent common ancestor $T$ and the time interval $\\delta\u2062T$ by which $T$ advances. (B) If such speciation happens, the host capacity - the average number of infected individuals increases two-fold. (C) The probability of such deep divergences decreases exponentially with the ratio $d/q^{*}$, where effective antigenic diversity is $q^{*}=2\u2062log\u2061(N_{h}\u2062s^{2})/log\u2061(s/m)$. In the presence of deleterious mutations, the relevant $q$ is not necessarily the total advance of the pioneer strains, but only the antigenic contribution. This antigenic advance $q^{*}$ can be computed as $q^{*}=\\sqrt{2\u2062log\u2061(N_{h}\u2062s^{2})\u2062\\sigma_{a\u2062g}^{2}}$ with antigenic variance $\\sigma_{a\u2062g}^{2}=\\sigma^{2}-\\sigma_{\\beta}^{2}$, where $\\sigma_{\\beta}^{2}$ is fitness variance due to deleterious mutations. With this correction, speciation times agree with the predicted dependence (colored lines).\n\nTo gain better intuition into this process let\u2019s follow two most antigenically advanced \u2018pioneer strains\u2019. In the TW approximation one of these will with high probability belong to the backbone giving the rise to the persisting clade, while the other clade will become extinct, unless it persist long enough to diverge antigenically beyond $d$, becoming a speciation event. As their antigenic distance gradually increases, the two clades are evolving to evade immunity built up against the common ancestor. The less advanced of the two clades is growing less rapidly and takes longer to generate antigenic advance mutations, resulting in still slower growth and slower antigenic advance. Deep splits are hence unstable and it is rare for a split to persist long enough for speciation. In Appendix 5, we reformulate this intuition mathematically as a \u2018first passage\u2019-type problem which shows that $T_{M\u2062R\u2062C\u2062A}$ distribution has an exponential tail which governs the probability of speciation events. Figure 6C shows that the time to speciation increases approximately exponentially with the ratio $d/q$. More precisely we found that average simulated speciation time behaves as $\\tau_{sw}^{*}\u2062e^{f\u2062(C\u2062I/q^{*})}$ with \u2018effective\u2019 $\\tau_{sw}^{*}=\\tau_{sw}/(1+log\u2061q/log\u2061(s/m))$ and $q^{*}=q\u2062(1+log\u2061q/log\u2061(s/m))$ picking up an additional logarithmic dependence on parameters, the exact origin of which is beyond our current approximations. This correction plausibly suggests rapid speciation, $\\tau_{sw}^{*}\u21920$, when mutation rate become comparable to the selection strength $m/s\u21921$.\n\n### Red Queen State is transient\n\nWe emphasize that the RQS regime in Figure 3BC is only transient. For any given $q$ and $d$, the RQS is likely to persist for a time given by the smaller of $\\tau_{ext}$ and $\\tau_{sp}$, before undergoing either extinction or speciation. These two processes limit the range of $q$ corresponding to the RQS from both sides in a time-dependent manner. Figure 7 shows the likely state of an RQS system after time $\\tau$ as a function of genetic diversity $q$ for the case of $d=50$ and $log\u2061(N_{h}\u2062I\u00af)=6.5$.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/44205/elife-44205-fig7-v2.jpg)\n\n**Figure 7.:** This schematic diagram based on Figure 5A defines the \u2018boundaries\u2019 of the transient RQS $q_{e\u2062x\u2062t}\u2062(\\tau)$ (red line) and $q_{s\u2062p}\u2062(\\tau)$ (blue line). $q_{e\u2062x\u2062t}\u2062(\\tau)$ gives the value of $q$ for which the average time to extinction is equal to $\\tau$ is defined similarly but for the speciation process. Average times to speciation and extinction become equal at the critical value $q_{c}$ at which RQS persists the longest. For $d=50$, $q_{c}\u22482.4$ and this value, along with the RQS lifetime, increases with $d$.\n\nThe regime of a single persistent lineage shrinks with increasing $\\tau$, for\u00a0example after $\\tau=10\u2062\\tau_{sw}$ the RQS state likely prevails between $q=1.5$ and $\u22484$, while (for $d=50$ and $log\u2061(N_{h}\u2062I\u00af)=6.5$) it is unlikely to persist beyond $\\tau\u2248100\u2062\\tau_{sw}$ for any $q$. Both the maximal RQS lifetime and corresponding\u00a0critical $q_{c}$, increase with increasing $d$.\n\n## Discussion\n\nThe epidemiological and evolutionary dynamics of human RNA viruses show a number of qualitatively distinct patterns (Grenfell et al., 2004; Koelle et al., 2011). Agents of classical childhood diseases like measles or mumps virus show little antigenic evolution, other viruses like dengue- or norovirus exist in distinct serotypes, while seasonal influenza viruses undergo continuous antigenic evolution enabling viruses of the same lineage to reinfect the same individual.\n\nHere, we have integrated classical multi-strain SIR models with stochastic models of adaptation to understand the interplay between the epidemiological dynamics and the accumulation of antigenic novelty. The former is dominated by the most prevalent strains, while the latter depends critically on rare pioneer strains that become dominant at later times. Our model differs from that of Rouzine and Rozhnova (2018) in two aspects that are crucial to questions addressed here: To meaningfully study speciation and diversification, the model needs to allow for an\u00a0high dimensional antigenic space. Similarly, fluctuations in pathogen population size determine the dynamics of extinction and this aspect can not be studied in models with constant population size. Including these aspects of the epi-evolutionary dynamics allowed to define a \u2018phase\u2019 diagram that summarizes qualitatively different behavior as a function of the relevant parameter combinations, see Figure 3B\u00a0and\u00a0C.\n\nThe phase diagram shows which combinations of key parameters lead to three distinct outcomes: (1) extinction (red), (2) an evolving but low diversity pathogen population (yellow and green), (3) a deeply branching and continuously diversifying pathogen population (blue). The key parameters are the size of the population $log\u2061(N_{h}\u2062s^{2})$, the ratio of mutational effects to mutation rate $log\u2061(s/m)$, and the cross-immunity range $d$. In particular, large $d$ prevents speciation, while rapid mutation and large population sizes facilitate speciation.\n\nIn regime (2) of a low diversity but rapidly evolving pathogen population, incidence is determined by the range of cross-immunity $d$ and by the speed of antigenic evolution which itself depends on the pathogen population size, mutation rates, and the fitness effect of novel mutations. A consistent solution of these dependencies shows that average incidence $I_{t\u2062o\u2062t}$ decreases as $d^{-2}$, while weakly depending on population size and mutation rates (see Equation A2.11), consistent with results by Rouzine and Rozhnova (2018). Typical values of the coalescent time of influenza A (2-4y), an infectious period of 5d, and a human population size $\u223c10^{10}$ result in an average annual incidence of 3\u201310%. This number is consistent with previous estimates of the annual attack rate of influenza (Yang et al., 2015) (which typically do\u00a0not differentiate the different influenza lineages).\n\nOf the different regimes, only extinction (1) and speciation (3) are truly asymptotic. The intermediate regimes of continuously evolving low diversity pathogen population - the Red Queen State (RQS) - are strictly speaking metastable states which eventually either go extinct or undergo branching, but in a certain regime of parameters are very long lived. In our simple model, stability against speciation on the time scale $>10\u2062\\tau_{sw}$ required $d\u223c10\u2062q$ (while stability against extinction requires $q>2$). These results are consistent with earlier studies that have shown that competition between lineages mediated by long-range cross-immunity can prevent diversification, effectively canalizing the population into a single lineage (Tria et al., 2005; Ferguson et al., 2003).\n\nIn practice, the range of cross-immunity required to prevent speciation might be smaller than the idealized model. Our model assumes that the pathogen population can escape immunity via many equivalent mutational path. But in reality, the number of path to escape will be limited and some path more accessible than others, which will reduce the tendency to speciate and the necessity for large $d$. Similarly, other factors such as population turn over and geographic heterogeneity can delay extinction.\n\nPrevious studies have shown that the rate of branching in the speciation regime increases with population size and mutation rate consistent with the phase diagram (Sasaki and Haraguchi, 2000; Koelle et al., 2011). Bedford et al. (2012) have used large-scale individual-based simulations to explore structure of influenza viruses phylogenies. Consistent with our results, they found that the speciation rate increases with the mutation rate (lowering $log\u2061s/m$ and thereby facilitating speciation) and increasing standard deviation of mutational effects. The latter increases the typical antigenic effect of successful mutations, which decreases the radius of cross-immunity when measured in units of mutations making the population more prone to speciate.\n\nKoelle and Rasmussen (2015) have implicated deleterious mutation load as a cause of spindly phylogenies. Deleterious mutations increase fitness variation, which results in more rapid coalescence and less antigenic diversity, which in turn reduces speciation rates. Our model can readily incorporate deleterious effects of antigenic mutations on transmission $\\beta$. Such deleterious mutations reduce the selection coefficient of antigenic mutations, which in turn reduces the fitness variance $\\sigma^{2}$, see Appendix 6. After subtracting the contribution of deleterious mutations from the the fitness variance, the times to speciation follow the predicted dependence on $q$ and $d$, see Figure 6C.\n\nOutbreaks of emerging viruses that quickly infect a large fraction of the population, as for example the recent Zika virus outbreak in the Americas, fall into regime (1): In 2\u20133 years, large fractions of the population were infected and have developed long-lasting immunity. As far as we know, the viral population did\u00a0not evolve antigenically to escape this build up of herd immunity and the virus population is not expected to continue to circulate in the Americas (O'Reilly et al., 2018).\n\nDifferent influenza virus lineages, in contrast, persist in the human population, suggesting that they correspond to parameters that fall into the RQS region of the phase diagram. Furthermore, the different subtypes display quantitatively different circulation and diversity patterns that allow for a direct, albeit limited, comparison to theoretical models: subtype A/H1N1 circulated with interruption from 1918 to 2009, A(H2N2) circulated for about 10 years until 1968, A/H3N2 emerged in 1968 and is still circulating today, and the triple reassortant 2009 H1N1 lineage, called A(H1N1pdm), settled into a seasonal pattern following the pandemic in 2009. Influenza B viruses have split into two separate lineages (B/Victoria and B/Yamagata) in the 1970s (Rota et al., 1990). Phylogenetic trees of A/H3N2 and the influenza B lineages are shown in Figure 1.\n\nThe influenza B lineages tend to be more genetically diverse than the influenza A lineages with a typical time to the most recent common ancestor of around 6 compared to 3 years, see Figure 1. Influenza A/H3N2 tends to have the lowest diversity and most rapid population turnover. This difference in diversity is consistent with influenza B lineages being more prone to speciation.\n\nThe typical diversity of these viruses needs to be compared to their rate of antigenic evolution. Hemagglutination inhibition titers drop by about 0.7\u20131 log2 per year in A/H3N2 compared to 0.1\u20130.4 log2 per year for influenza B lineages (Smith et al., 2004; Bedford et al., 2014; Neher et al., 2016). Hence the ratio of the time required to lose immunity and $T_{M\u2062R\u2062C\u2062A}$ is similar for the different lineages, suggesting that the distinct rates of genetic and antigenic evolution can not be used as a straight forward rationalization of the speciation event of Influenza B and the lack of speciation of influenza A lineages. Nor should such an explanation be expected as there is only a single observation of speciation. We note that currently circulating A/H3N2 viruses are exceptionally diverse with a common ancestor that existed about 8 years in the past. Furthermore, the cocirculating 3c.3a and 3c.2a are antigenically distinct and it is conceivable that further antigenic evolution will result in speciation of A/H3N2 viruses.\n\nWhile we have shown that the natural tendency of SIR models to oscillate couples to the instability of the nose of the pathogen fitness distribution, making a quantitative link to the observed epidemiological dynamics of the flu is difficult on account of seasonal oscillation in transmissivity. The latter confounding factor is widely believed to be the cause behind observed seasonality of the flu. Including explicit temporal variation (in $\\beta$) in our model would lock the frequency of the prevalence oscillation to the seasonal cycle, possibly resulting in subharmonic modulation, yet distinguishing such a modulation on top of an already stochastic process is hard. Much remains to be done: finite birth rates, distinct age distributions (as for example is the case for the two influenza B lineages), realistic distribution of antigenic effect sizes, or very long range T-cell-mediated immunity would all be interesting avenues for future work.\n\n## Materials and methods\n\n### Clone-based simulations\n\nWe simulate the original model on a genealogical tree by\u00a0combining the deterministic update\u00a0of\u00a0SIR-type equations and the stochastic step introducing mutated strains. In each time step $\u0394\u2062t<1$, we apply the mid-point method to advance SIR equations Equations (1,2,4). We then generate a random number uniformly sampled between zero and one for each surviving strain with $N_{h}\u2062I_{a}\\geq1$. If the random number is smaller than $m\u2062N_{h}\u2062I_{a}\u2062\u0394\u2062t$ for strain $a$, we append a new strain $b$ as a descendent to $a$. The susceptibility to strain $b$ is related to susceptibility to strain $a$ via $S_{b}=(S_{a})^{e^{-1/d}}$. In most of the simulations, the transmissibility of different strains is held constant $\\beta$. Otherwise we allow for a strain specific transmissibility that is to its parent: $\\beta_{b}=\\beta_{a}-\\delta\u2062\\beta$ with $\\delta\u2062\\beta>0$ for the deleterious effect of antigenic mutations and $\\beta_{b}=\\beta_{max}$ if the mutation is compensatory. The new strain grows deterministically only if $\\beta_{b}\u2062S_{b}>1$.\n\nThis simplified model contains six relevant parameters: transmissibility $\\beta$, recovery rate $\u03bd$, mutation rate of the virus $m$, birth/death rate of the hosts $\\gamma$, the effective cross-immunity range $d$, and the effective size of the hosts $N_{h}$, whose empirical ranges are summarized in the Table 1. For flu and other asexual systems in RQS, $\\beta\u2273\u03bd\u226bm,\\gamma$, $d\u226b1$, and $N_{h}\u226b1$.\n\n**Table 1.**\n Relevant quantities of influenza virus and parameters in multi-strain SIR model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Symbol</th>\n      <th>Definition</th>\n      <th>Typical values for influenza</th>\n      <th>Range in simulations</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ia</td>\n      <td>Fraction of population infected with strain a</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sa</td>\n      <td>Population average susceptibility to strain a</td>\n      <td>\u223c0.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>It\u2062o\u2062t=\u2211aIi</td>\n      <td>Total prevalence</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>I\u00af</td>\n      <td>Average total prevalence</td>\n      <td>0.005</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>d</td>\n      <td>Cross-immunity range</td>\n      <td></td>\n      <td>[50,\u00a0200]</td>\n    </tr>\n    <tr>\n      <td>\u03b2=\u03bd\u2062R0</td>\n      <td>Transmission rate</td>\n      <td>\u223c0.5/day</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>\u03bd</td>\n      <td>Recovery rate</td>\n      <td>\u223c0.2/day</td>\n      <td>1 (sets unit of time)</td>\n    </tr>\n    <tr>\n      <td>\u03b3</td>\n      <td>Host birth/death rate</td>\n      <td>\u223c0.01/year</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Ka\u2062b=e-|b-a|/d</td>\n      <td>Cross-immunity of strains a, b</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03c4sw</td>\n      <td>Coalescent time scale/sweep time</td>\n      <td>\u223c2-6 years</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>TM\u2062R\u2062C\u2062A</td>\n      <td>Time to most recent common ancestor</td>\n      <td>\u223c2-10 years</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03b4\u2062T</td>\n      <td>Fluctuations of TM\u2062R\u2062C\u2062A</td>\n      <td>\u223c2-6 years</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>s</td>\n      <td>Selection coefficient</td>\n      <td>\u223c0.03/week</td>\n      <td>[0.003,\u00a00.05]</td>\n    </tr>\n    <tr>\n      <td>m</td>\n      <td>Beneficial mutation rate per genome</td>\n      <td>10-3/week</td>\n      <td>[10-7,10-3]</td>\n    </tr>\n    <tr>\n      <td>Nh</td>\n      <td>Host population</td>\n      <td>1010</td>\n      <td>[106,\u00a01012]</td>\n    </tr>\n  </tbody>\n</table>\n\nSimulation code and output are available on github in repository FluSpeciation of the neherlab organization\u00a0(Neher and Yan, 2019; copy archived at https://github.com/elifesciences-publications/FluSpeciation).\n\n### Fitness-class-based simulations\n\nThe stability of the RQS and the extinction dynamics is fully captured by the traveling wave Equation (8). We simulate the traveling wave by discretizing the fitness space $x$ into bins of step size $s$ around zero. The number of individuals infected by different strains correspond to integers in each bin $x_{i}$. At each time step, the population in each bin $I_{i}$ updates to a number sampled from the Poisson distribution with parameter $\\lambda_{i}=N_{h}\u2062I_{i}\u2062(1+(x_{i}-x\u00af)\u2062\u0394\u2062t)$ determined by mean fitness $x_{i}$ and a dynamic mean fitness $x\u00af$, which increases by $\u0394\u2062t\u2062I_{t\u2062o\u2062t}$, where $I_{t\u2062o\u2062t}$ is the total infected fraction summed over all bins. When $x\u00af$ becomes larger than one bin size $s$, we shift the all populations to left by one bin and reset $x\u00af$ to , a trick to keep only a finite number of bins in the simulation. At the same time, antigenic mutation is represented by moving the mutated fraction in each bin to the adjacent bin on the right. The fraction is determined by a random number drawn from the Poisson distribution with the mean $m\u2062I_{i}\u2062\u0394\u2062t$. The typical ranges of the three parameters $s$, $m$, and $N_{h}$\u00a0follow the parameters in the genealogical simulation, as documented also in Table 1.\n\n### Stochastic differential-delay simulation\n\nTo simulate the differential delay equations Equations (11-13), we discretize time in increments of $\u0394\u2062t=\\tau_{sw}/k$ and update the dynamical variables $\u03c7_{i}=x_{n}\u2062(t_{i})$ and $\u03b7_{i}=I_{t\u2062o\u2062t}\u2062(t_{i})$ via the simple Euler scheme:\n\n$$\n\u03c7_{i+1}=\u03c7_{i}+\u0394t(\u03c7_{i}\u2212\u03b7_{i})+\\frac{\u03c7_{i}}{qs}\\sqrt{\u0394t}\u03be_{i};\n$$\n\n\n\n$$\n\u03b7_{i+1}=I\u00afexp\u2061(\\tau_{sw}\u03c7_{i\u2212k}\u2212\\frac{\\tau_{sw}^{2}}{k}\\sumj=0kj\u03b7_{i\u2212j}),\n$$\n\nwhere $\u03be_{i}$ is a Gaussian random variable with zero mean and unit variance. Mean prevalence, $I\u00af$, enters as the control parameter (which defines the time average of $\u03b7_{i}$).\n\n### Influenza phylogenies\n\nInfluenza virus HA sequences for the subtypes A/H3N2, A/H1N1, A/H1N1pdm, as well as influenza B lineages Victoria and Yamagata were downloaded from fludb.org.\n\nWe aligned HA sequences using mafft (Katoh et al., 2002) and reconstructed phylogenies with IQ-Tree (Nguyen et al., 2015). Phylogenies were further processed and time-scaled with the augur (Hadfield et al., 2018) and TreeTime (Sagulenko et al., 2018). The analysis pipeline and scripts are available on github in repository 2019_Yan_flu_analysis of the neherlab organization.\n",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "e493cb6b-6160-4dd2-ad9a-26e14f6da15a",
+      "submission_id": "e027076e-afd1-4639-a647-5570c4c6c404",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Katia Koelle, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.44205.024](https://doi.org/10.7554/eLife.44205.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Phylodynamic theory of persistence, extinction and speciation of rapidly adapting pathogens\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom served as a guest Reviewing Editor, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript analyzes a model of virus evolution in a host population in response to accumulating immune memory in previously infected individuals. The main result is a phase diagram that delineates qualitatively different modes of evolution (rapid extinction, strain proliferation, and metastable traveling fitness wave dynamics) as a function of evolutionary and epidemiological parameters.\n\nEssential revisions:\n\nThe reviewers all agreed that the presented analyses were thorough and that the results were interesting. However, they also felt that several essential revisions were required:\n\n1) The manuscript makes use of an existing status-based SIR model when mapping epidemiological dynamics on to the traveling wave evolutionary model. This model, first, should be explained in greater detail and with more clarity in the manuscript text. Further, this multi-strain model is one of two general types of multi-strain models (the other being a history-based model formulation). Are the phase diagram results robust to other SIR model formulations, including history-based formulations and the model formulation by Lin et al., 2003? Previous relevant work (Ballesteros et al. PLOS One) indicates that this might not be the case.\n\n2) Text should be added to refer to several previous analyses that focus on very similar questions. Of particular importance is incorporating (to a much greater extent, both in the Introduction and starting around Equation 6) text that relates to the results presented recently in Rouzine and Rozhnova, 2018, ensuring that the overlap and the differences between these two analyses is accurately described. Koelle et al., 2011,) and Andreasen and Sasaki, 2006, also address similar questions about how certain epidemiological factors (population size, breadth of cross-immunity, etc.) affect whether and how quickly antigenic diversification will occur. The results presented here should be compared to those found earlier, even if these former approaches do not consider explicitly a traveling wave model. Finally, the way in which the epidemiological dynamics are mapped to fitness and how cross-immunity is quantified is identical to the approach outlined in Luksza et al., 2014, and this paper therefore needs to be cited, most notably in the context of Equations 1-3 and 4.\n\n3) The mathematical conditions for the mapping onto fitness waves should be made more precise. This mapping is used throughout to describe the endemic regime. However, the traveling fitness wave formalism is derived under more specific assumptions, namely, the coexistence of many small-effect mutations (which corresponds to large values of q). Some parts of the phase diagram clearly fall outside this regime. While it may still be permissible to extend the asymptotic formulae, this should be discussed. We suggest to mark the boundary of the many-mutations regime, say, given by the condition U_b \\gtrsim s, as a dotted line in the phase diagram.\n\n4) In the Discussion, it would be important to emphasize that the metastability of the endemic regime is a result of the specific assumptions of this model and to discuss potential biological effects that alter the phase diagram. In particular, much work has been devoted to discuss mechanisms that stabilize the TW regime, e.g. the ideas of short-term broad cross-immunity (Ferguson et al., 2003, or random fitness components (Tria et al., 2005).\n\n[Editors\u2019 note: further revisions were requested before acceptance.]\n\nThank you for sending your article entitled \"Phylodynamic theory of persistence, extinction and speciation of rapidly adapting pathogens\" for peer review at eLife. Your article is being evaluated by two peer reviewers, and the evaluation is being overseen by a guest Reviewing Editor and Patricia Wittkopp as the Senior Editor.\n\nThe primary concern stems from details that are now provided in the revised manuscript that you submitted. Given these new details, reviewer #2 is particularly concerned that the epidemiological model does not incorporate infection histories appropriately, such that the results of this analysis do not advance the literature. The reviewer's request is that you re-do the entire analysis, using an epidemiological model structure that is appropriate. We would like to give you an opportunity to respond to this request, given the set of highly divergent approaches for modeling multi-strain dynamics.\n\nFinally, the second reviewer requested that his/her entire initial review is transmitted in full. We will follow up shortly on the transmission of this entire review, as well as those from the two other reviewers.\n\nWe appreciate the value of simplified models; however, our previous comments we designed primarily towards making the simplifying assumptions explicit and to embed the epidemiological model better into the context of previous work on the subject, which we also discussed in the review consultation. Both issues are not yet adequately addressed in the current revision, and we regard the following points as essential for publication of this manuscript:\n\n1) The assumptions underlying the epidemiological model, in particular with respect to the applicability to influenza, should be made explicit. It is not clear to us whether the model used here is indeed a generalization of previous models, as claimed. Specific points:\n\na) Some justification should be given for the steps leading from a general multi-strain immunity model to their Equations 1 \u2013 3, e.g. along the lines of Rozhnova and Rouzine. For example, the authors could try to estimate, by the order of magnitude, the error of this approximation, at least, in a simple population configuration.\n\nb) Equation 3 should be linked to the underlying dynamical model.\n\nc) We also note again that the first application of this model to influenza data analysis (Lukza et al., 2014), which contains a very similar form of the equations and discusses their application to influenza, should be acknowledged in the context of Equations 1 \u2013 3.\n\n2) A quantitative comparison of the results of this paper to Bedford et al., 2012, and to Rozhnova and Rouzine should be given, for example in a supplementary figure. Specifically:\n\na) The fraction N_inf/N and average selection coefficient \\\u03c3, which allow the mapping to traveling wave theory, should be compared with previous work.\n\nb) Also, it remains important to quantify the behaviour of the number of competing strains in the phase diagram (Figure 3B, C) in some fashion (see previous comment 3). The authors map the line q=1. Their reply otherwise refers to Figure 5, but it is not clear to us to which numbers q this refers to in Figure 3 (e.g., where is the locus q=10). Figure 3B, C shows two quantities as formulas in white font which we are not sure to which lines they refer to; please clarify and give units and numbers for these quantities.\n\nReviewer #2:\n\nUnfortunately, not tracking the history of individual patients, i.e., not classifying patients according to previous infecting strains, is not a biologically correct approach, even though it has been done by two groups. This is not how the immune system works. One must track the memory cells from, at least, last infection. Virus infecting an individual reacts to memory in that individual, and not in other individuals. The oversimplification changes the results substantially and cannot be relied upon. For example, the turnover rate of population should not be an important parameter of the model. The dependence of the speed on parameters changes as well. We cannot be sure about the rest.\n\nTo avoid huge phase space, the simplest meaningful approximation is to track the last infection of an individual, i.e., to introduce the recovered uninfected individuals density and classify then according to memory cells left from their last infecting strain. One can show that older infection are a small correction. Then, consider multiple dimensions (analytically or numerically does not matter) and demonstrate that one-dimensional path arises automatically. After 1D path is assured, solve the 1D model analytically. Rouzine and Rozhnova did exactly that, in the case of the long-range immunity. Their multi-dimensional simulation is located in the end of Results and Supplementary Information. I also recommend to consult the previous numeric work of Bedford.\n\nTherefore, I have to insist that the authors redo the work properly, with tracking the last memory of infection in individual. Otherwise, no numeric comparison is possible and cannot be in the future used for data comparison.\n\nThe original review follows for the authors' information:\n\nThe manuscript analyzes a model of the virus evolution in a host population due to accumulating immune memory in previously infected individuals. The authors use the SIR model by Gog et al., 2002, to map it to results of the traveling wave theory of evolution. If the cross-immunity between the virus and the memory is long-range, the authors demonstrate that the virus persists indefinitely. The state is a Red Queen process, a never-ending chase between virus and immune system in the antigenic space. If the cross-immunity is short-range, they find out that persistent infection is either unstable or splits into new states. An effective selection coefficient which makes the mapping to traveling wave possible is calculated.\n\nThe topic of the manuscript is important and the problem is challenging. The novel part of this work, compared to a recent paper on the same topic (below), is the comparison between long-range and short-range cross-immunity, and predicting the existence of a phase diagram of various behaviors including instability and oscillations.\n\nI have some questions regarding the choice of the initial model, the sensitivity of results to its assumptions, and the connection to the previous work, as follows:\n\nMajor comments:\n\n1) The SIR model is not explained in the manuscript, not the original paper by Gog et a. My questions are as follows.\n\na) According to my understanding, a typical infection is a stochastic event. An individual exposed to virus is either infected, at the systemic level, or not. If the individual is infected, the virus reaches high loads, causes a strong immune response, leaves high numbers of memory cells, and can be transmitted with appreciable probability to another individual. If the exposed individual is not infected at the systemic level, none of these events takes place. The probability of each of the two outcomes, given the exposure dose, depends on the presence of memory cells left from the previous infections, and their genetic distance from the infecting strain. Is this the scenario that the authors had in mind?\n\nb) The model in MS considers a population structured into recovered and infected individuals classified by genetic variants of memory cells and virus, respectively. Are these population groups mutually excluding. What is their sum, the total population?\n\nc) Can the authors draw a multi-compartment flow diagram of the model in supplement to show the processes they have included in the model?\n\nd) An average adult person is infected by influenza virus more than once during lifetime. Indeed, between 4% and 20% individuals are infected annually. Therefore, all infections occur in previously infected (recovered) individuals. Yet, I do not see any infection of recovered individuals in model's equation. Who is infected then? This is especially confusing given that memory cells left from previous infections are the force that drives virus evolution.\n\nf) What is the meaning of the exponential term in susceptibility S?\n\n2) After Gog et al., 2002, Lin et al., 2003 have proposed an alternative, more transparent SIR model. Rouzine and Rozhnova, 2018 (RR) mapped that model to the traveling wave theory.\n\na) How does the change to Lin et al.'s version of SIR would affect the results on the stability of infection and the oscillatory states?\n\nb) What is the difference with RR's results in the long range immunity case?\n\nAdditional comments:\n\n3) In contrast to authors' statement, neither them nor RR's included the fluctuations of population size. If the authors implied that RR substituted the total population size instead of infected population to the traveling wave theory, they are mistaken: RR did the same rescaling.\n\n4) The main difference between two models is in the choice of the initial SIR model (see above). RR considered the case of long-range cross-immunity only.\n\n5) I would write the equations for the effective selection coefficient and for the rescaling of population size in separate lines, since they are important mapping formulas.\n\nReviewer #3:\n\nThe revised version has adequately addressed most of the comments, except the following:\n\nI still think it would be relevant to quantify the behaviour of the number of competing strains in the phase diagram (Figure 3B, C) in some fashion (see previous comment 3). The authors map the line q=1. Their reply otherwise refers to Figure 5, but it is not clear to me to which numbers q this refers to in Figure 3 (e.g., where is the locus q=10). Figure 3B, C shows two quantities as formulas in white font which I am not sure to which lines they refer to; please clarify and give units and numbers for these quantities.\n\nWith this amendment, I think the paper is ready for publication.\n",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ce3a6f1c-30fa-4bd2-ba66-fe49bceeb83c",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C1",
+      "claim": "Rapidly evolving pathogens like influenza viruses can persist by changing their antigenic properties fast enough to evade adaptive immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapidly evolving pathogens like influenza viruses can persist by changing their antigenic properties fast enough to evade the adaptive immunity, yet they rarely split into diverging lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general observation about rapidly evolving pathogens.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "334c07c1-eec3-4d76-bb10-0a304309e7f8",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C2",
+      "claim": "Rapidly evolving pathogens like influenza viruses rarely split into diverging lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapidly evolving pathogens like influenza viruses can persist by changing their antigenic properties fast enough to evade the adaptive immunity, yet they rarely split into diverging lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an observed characteristic of influenza viruses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "d804c548-5b81-4f9b-b49d-553e30bf4c52",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C3",
+      "claim": "Persistence of a rapidly evolving, Red-Queen-like state of the pathogen population requires long-ranged cross-immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "By mapping the multi-strain Susceptible-Infected-Recovered model onto the traveling wave model of adapting populations, we demonstrate that persistence of a rapidly evolving, Red-Queen-like state of the pathogen population requires long-ranged cross-immunity and sufficiently large population sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, derived from the model mapping.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "1fc1962e-e200-4dcb-b482-124693db8af8",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C4",
+      "claim": "Persistence of a rapidly evolving, Red-Queen-like state of the pathogen population requires sufficiently large population sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "By mapping the multi-strain Susceptible-Infected-Recovered model onto the traveling wave model of adapting populations, we demonstrate that persistence of a rapidly evolving, Red-Queen-like state of the pathogen population requires long-ranged cross-immunity and sufficiently large population sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, derived from the model mapping.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "71d91811-f17f-4451-b42a-7a255b5fe0e0",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C5",
+      "claim": "The Red-Queen-like state is unstable and the population goes extinct or 'speciates' into two pathogen strains with antigenic divergence beyond the range of cross-inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This state is unstable and the population goes extinct or 'speciates' into two pathogen strains with antigenic divergence beyond the range of cross-inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract about the instability of the RQS state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "b8a77f9c-1e59-4c11-be12-ed20c62f27bc",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C6",
+      "claim": "In a certain range of evolutionary parameters, a single cross-inhibiting population can exist for times long compared to the time to the most recent common ancestor (TMRCA).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in a certain range of evolutionary parameters, a single cross-inhibiting population can exist for times long compared to the time to the most recent common ancestor (TM\u2062R\u2062C\u2062A) and gives rise to phylogenetic patterns typical of influenza virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract about the transient RQS regime.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "3df38fd7-69e4-444c-9a8e-9a922f43ac75",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C7",
+      "claim": "A single cross-inhibiting population gives rise to phylogenetic patterns typical of influenza virus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in a certain range of evolutionary parameters, a single cross-inhibiting population can exist for times long compared to the time to the most recent common ancestor (TM\u2062R\u2062C\u2062A) and gives rise to phylogenetic patterns typical of influenza virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract about phylogenetic patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "a4f26d62-ac66-4018-8a10-a3fae51722df",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C8",
+      "claim": "The rate of speciation is related to fluctuations of TMRCA.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the rate of speciation is related to fluctuations of TM\u2062R\u2062C\u2062A and construct a 'phase diagram' identifying different phylodynamic regimes as a function of evolutionary parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract about the relationship between speciation and TMRCA fluctuations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "e5f5bb13-2403-47fd-b13b-209c15776c62",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C9",
+      "claim": "A pathogen can persist in a host population that develops long-lasting immunity by infecting immunologically naive individuals such as children.",
+      "claim_type": "EXPLICIT",
+      "source": "In a host population that develops long-lasting immunity, a pathogen can persist by infecting immunological naive individuals such as children, or through rapid antigenic evolution that enables the pathogen to evade immunity and re-infect individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as one mechanism of pathogen persistence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "2bc1bb96-e6be-41f1-83df-bbaf0358b16a",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C10",
+      "claim": "A pathogen can persist in a host population that develops long-lasting immunity through rapid antigenic evolution that enables the pathogen to evade immunity and re-infect individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In a host population that develops long-lasting immunity, a pathogen can persist by infecting immunological naive individuals such as children, or through rapid antigenic evolution that enables the pathogen to evade immunity and re-infect individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as one mechanism of pathogen persistence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "adfd474c-50a9-4a69-b64a-f472c6797048",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C11",
+      "claim": "Measles falls into the category of childhood diseases that persist by infecting immunologically naive individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Childhood diseases like measles or chicken pox fall into the former category, while influenza virus adapts rapidly and re-infects most humans multiple times during their lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as an example of a childhood disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "438a0341-4085-49fe-8cac-e7aeae124a63",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C12",
+      "claim": "Chicken pox falls into the category of childhood diseases that persist by infecting immunologically naive individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Childhood diseases like measles or chicken pox fall into the former category, while influenza virus adapts rapidly and re-infects most humans multiple times during their lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as an example of a childhood disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "08823174-c442-4a21-8d43-61230080d6f3",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C13",
+      "claim": "Influenza virus adapts rapidly and re-infects most humans multiple times during their lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Childhood diseases like measles or chicken pox fall into the former category, while influenza virus adapts rapidly and re-infects most humans multiple times during their lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a characteristic of influenza virus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "e2c164cf-fbb8-47f3-96c1-4fcec2123523",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C14",
+      "claim": "The continuous adaptation of influenza is facilitated by high mutation rates resulting in diverse populations of co-circulating viral strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The continuous adaptation of influenza is facilitated by high mutation rates resulting in diverse populations of co-circulating viral strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a mechanism of influenza adaptation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "7a1a800f-e58c-4a42-8f31-2b317dd781f0",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C15",
+      "claim": "Almost always a single variant eventually outcompetes the others such that diversity within one subtype or lineage remains limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, almost always a single variant eventually outcompetes the others such that diversity within one subtype or lineage remains limited (Petrova and Russell, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "2e81e259-730c-497d-9c1d-71dfdee6ca41",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C16",
+      "claim": "The contrast of rapid evolution while maintaining limited genetic diversity is most pronounced for the influenza virus subtype A/H3N2.",
+      "claim_type": "EXPLICIT",
+      "source": "The contrast of rapid evolution while maintaining limited genetic diversity is most pronounced for the influenza virus subtype A/H3N2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as an observation about A/H3N2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "d8dcf2eb-1b57-493d-87b4-e5baf2e4f749",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C17",
+      "claim": "The most recent common ancestor of the A/H3N2 population is rarely more than 3\u20135 years in the past.",
+      "claim_type": "EXPLICIT",
+      "source": "The most recent common ancestor of the population is rarely more than 3\u20135 years in the past (Rambaut et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "74ac55ad-6a9d-436c-aa7c-6b2d5bb01e7f",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C18",
+      "claim": "Pathogenic RNA viruses that typically do not reinfect the same individual (measles, mumps, HCV, or HIV) diversify for decades or centuries.",
+      "claim_type": "EXPLICIT",
+      "source": "Other pathogenic RNA viruses that typically do not reinfect the same individual, (measles, mumps, HCV, or HIV) diversify for decades or centuries (Grenfell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "73e6af94-5ca8-4153-8f10-e59c628fa472",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C19",
+      "claim": "Influenza B has split into two co-circulating lineages in the 1970s which by now are antigenically distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, influenza B has split into two co-circulating lineages in the 1970s which by now are antigenically distinct (Rota et al., 1990) and maintain intermediate levels of diversity (see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and supported by a citation and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "f8f3b9e7-4d3b-4c07-8c26-4186f26ad8f2",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C20",
+      "claim": "Influenza B lineages maintain intermediate levels of diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, influenza B has split into two co-circulating lineages in the 1970s which by now are antigenically distinct (Rota et al., 1990) and maintain intermediate levels of diversity (see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and supported by reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "e1e10ae1-a497-4807-8228-36d49f07031d",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C21",
+      "claim": "Influenza virus infections elicit lasting immunity rendering most individuals non-susceptible to viruses that circulated during their lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "Influenza virus infections elicit lasting immunity rendering most individuals non-susceptible to viruses that circulated during their lifetime (Fonville et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "d5d35008-b35c-4a24-a2c0-d6bfbce058f0",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C22",
+      "claim": "The virus population escapes collective human immunity by accumulating amino acid substitutions in its surface glycoproteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The virus population escapes collective human immunity by accumulating amino acid substitutions in its surface glycoproteins (Koel et al., 2013; Wilson and Cox, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "3792ca15-0623-4717-81aa-4fe1ee36e969",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C23",
+      "claim": "Within each subtype many HA sequence variants co-circulate.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive genetic characterizations have shown that within each subtype many HA sequence variants co-circulate (Rambaut et al., 2008; Fitch et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "bcb055d6-f086-4a02-a2a7-a2df9574e297",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C24",
+      "claim": "Co-circulating HA sequence variants differ from each other by \u223c10 substitutions and compete for susceptible hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "These variants differ from each other by \u223c10 substitutions and compete for susceptible hosts (Strelkowa and L\u00e4ssig, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "4cb6245b-8d79-464c-8ba4-8973047fec92",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C25",
+      "claim": "The rapid sequence evolution results in a decay of immune cross-reactivity over \u223c10 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid sequence evolution results in a decay of immune cross-reactivity over \u223c10 years (Smith et al., 2004; Bedford et al., 2014; Fonville et al., 2014; Neher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "ca2c39fc-4ff1-49ff-965f-b56ccd9be041",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C26",
+      "claim": "Epidemiological dynamics of influenza is often modeled using generalizations of the classic Susceptible-Infected-Recovered (SIR) model to multiple antigenically distinct viral strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidemiological dynamics of influenza is often modeled using generalizations of the classic Susceptible-Infected-Recovered (SIR) model to multiple antigenically distinct viral strains (Kermack and McKendrick, 1927; Gog and Grenfell, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "865f6506-20cb-4e43-a513-93a85dbe24a2",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C27",
+      "claim": "A common approach has been to impose a discrete one-dimensional strain space in which new strains are generated by mutation of adjacent strains.",
+      "claim_type": "EXPLICIT",
+      "source": "A common approach has been to impose a discrete one-dimensional strain space in which new strains are generated by mutation of adjacent strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a description of a common modeling approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "aaa3adcf-a337-44fd-b53c-0293d3707921",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C28",
+      "claim": "Infection results in a reduction of susceptibility in a manner that depends on the distance in one-dimensional strain space.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection results in a reduction of susceptibility in a manner that depends on the distance in this one-dimensional strain space (Andreasen et al., 1996; Gog and Grenfell, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "b82200c3-3188-4781-b7f6-b496ffbfe30e",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C29",
+      "claim": "One-dimensional strain space models naturally result in 'traveling waves' in the sense that the pathogen population moves through strain space by recurrent emergence of antigenically advanced variants produced by mutation from neighboring strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Such models naturally result in 'traveling waves' in the sense that the pathogen population moves through strain space by recurrent emergence of antigenically advanced variants produced by mutation from neighboring strains (Lin et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "892e7d3c-f693-4fa1-8342-cf3384c3e4e2",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C30",
+      "claim": "Models of antigenically evolving populations are related to general models of rapid adaptation in which populations form a traveling wave moving towards higher fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "These models of antigenically evolving populations are related to general models of rapid adaptation in which populations form a traveling wave moving towards higher fitness (Tsimring et al., 1996; Rouzine et al., 2003; Desai and Fisher, 2007; Neher et al., 2014), reviewed in Neher (2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "2bdde521-fbbd-4980-80dd-247a0068fa3d",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C31",
+      "claim": "Rouzine and Rozhnova (2018) described an explicit mapping between a SIR model in a one-dimensional antigenic space and traveling wave models in fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Rouzine and Rozhnova (2018) described an explicit mapping between a SIR model in a one-dimensional antigenic space and traveling wave models in fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "e07c0e38-49f2-4fac-ae1d-a0ff1251af51",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C32",
+      "claim": "Traveling wave (TW) models in a one-dimensional antigenic space naturally result in spindly phylogenies.",
+      "claim_type": "EXPLICIT",
+      "source": "Traveling wave (TW) models in a one-dimensional antigenic space naturally result in spindly phylogenies: There is only one possible direction for immune escape and the fastest growing most antigenically advanced strain grows drives all other strains extinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a consequence of TW models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "da962c96-e563-4bd7-aafc-5862ae645fb3",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C33",
+      "claim": "Influenza viruses can escape immunity by mutations at a large number of positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Influenza viruses, however, can escape immunity by mutations at a large number of positions (Wilson and Cox, 1990), suggesting antigenic space is high dimensional (Perelson and Oster, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "7871b22c-ef92-4ebb-a5b1-48b216a12c38",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C34",
+      "claim": "Antigenic space is high dimensional.",
+      "claim_type": "EXPLICIT",
+      "source": "Influenza viruses, however, can escape immunity by mutations at a large number of positions (Wilson and Cox, 1990), suggesting antigenic space is high dimensional (Perelson and Oster, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "6c8c6dbf-168c-49fd-b2df-af9c58f8e432",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C35",
+      "claim": "In many dimensions, different viral strains can escape immunity via different paths and diverge sufficiently from each other until they no longer compete for hosts and thereafter propagate independently.",
+      "claim_type": "EXPLICIT",
+      "source": "In many dimensions, different viral strains can escape immunity via different paths and diverge sufficiently from each other until they no longer compete for hosts and thereafter propagate independently evolve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a consequence of high-dimensional antigenic space.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "0c090618-c15d-4a6a-9afc-9cb842a648a2",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C36",
+      "claim": "Several computational studies have identified cross-immunity as a critical parameter for preventing persistent branching or rapid extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Several computational studies have addressed this question and identified cross-immunity (Bedford et al., 2012; Tria et al., 2005; Koelle et al., 2011; Ferguson et al., 2003; Sasaki and Haraguchi, 2000) as well as deleterious mutations (Koelle and Rasmussen, 2015; Gog and Grenfell, 2002) as critical parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "979e33c6-4a06-44c2-9037-9c819e4bc1f9",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C37",
+      "claim": "Several computational studies have identified deleterious mutations as a critical parameter for preventing persistent branching or rapid extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Several computational studies have addressed this question and identified cross-immunity (Bedford et al., 2012; Tria et al., 2005; Koelle et al., 2011; Ferguson et al., 2003; Sasaki and Haraguchi, 2000) as well as deleterious mutations (Koelle and Rasmussen, 2015; Gog and Grenfell, 2002) as critical parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "5237fda7-9d7a-42fa-bbe7-14934a13128c",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C38",
+      "claim": "Long range cross immunity in generic stochastic models of antigenic evolution generates spindly phylogenies.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that long range cross immunity in generic stochastic models of antigenic evolution generates such phylogenies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "a2573a7d-ad93-4eeb-81af-512f8cfc3566",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C39",
+      "claim": "In the long term the viral population either 'speciates' into weakly interacting diverging lineages or goes extinct with rates that are controlled by three dimensionless combinations of model parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the long term the viral population either 'speciates' into weakly interacting diverging lineages or goes extinct with rates that are controlled by three dimensionless combinations of model parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "6657da19-5764-4ec4-87ab-2f96664c49f2",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C47",
+      "claim": "A plausible representation of the history dependence of susceptibility at the level of individuals has a product form.",
+      "claim_type": "EXPLICIT",
+      "source": "A plausible representation of the history dependence of susceptibility at the level of individuals has a product form (Wikramaratna et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the model description and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "b4994d6f-a6ff-426f-b4fc-fc536d8e700d",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C49",
+      "claim": "The Mean-Field approximation corresponds to ignoring correlations between subsequent infection in the individual histories.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mean-Field approximation here corresponds to ignoring correlations between subsequent infection in the individual histories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the model description.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "497946b5-0c23-45d8-8968-e219938332e3",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C50",
+      "claim": "The total fraction of the host population infected by any single strain in the endemic regime is typically small.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximating the product by the exponential is justified because the total fraction of the host population infected by any single strain in the endemic regime is typically small (Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the model description and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "549a5e0a-1df1-4959-a7e5-b8a3c6aca7c9",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C52",
+      "claim": "The novel strain will differ from its parent at one position in its genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The novel strain will differ from its parent at one position in its genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the model description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "e11eec92-b92d-4b17-88d2-0e44b4df1046",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C53",
+      "claim": "Cross-immunity decays exponentially with the number of mutations that separate two strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Following Luksza and L\u00e4ssig (2014), we assume that cross-immunity decays exponentially with the number of mutations that separate two strains:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the model description and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "1cdc4b4f-d74e-4eff-bfc0-294e1227ac7b",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C55",
+      "claim": "Antigenic space is assumed to be high dimensional and antigenic distance is proportional to genetic distance in the phylogenetic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Antigenic space is thereby assumed to be high dimensional and antigenic distance is proportional to genetic distance in the phylogenetic tree (Neher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the model description and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "717a549b-16ce-4da4-9047-cad137ec66e0",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C60",
+      "claim": "Recent Zika virus outbreak in French Polynesia and the Americas are reminiscent of boom-bust epidemics.",
+      "claim_type": "EXPLICIT",
+      "source": "Such boom-bust epidemics are reminiscent of the recent Zika virus outbreak in French Polynesia and the Americas where in a short time a large fraction of the population was infected and developed protective immunity (O'Reilly et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "19a05324-1c0e-43cc-805c-35ab5169c598",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C61",
+      "claim": "Persistence and transition to an endemic state is only possible if the pathogen can evade the rapid build-up of immunity via a small number of large effect antigenic mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Persistence and transition to an endemic state is only possible if the pathogen can evade the rapid build-up of immunity via a small number of large effect antigenic mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a consequence of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "ef5e8d1b-9361-4787-ae39-266d272422c1",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C62",
+      "claim": "The 2009 pandemic influenza A/H1N1 has undergone a transition from a pandemic to a seasonal/endemic state.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2009 pandemic influenza A/H1N1 has undergone such a transition from a pandemic to a seasonal/endemic state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an example.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "5689b7f6-0637-44b1-b567-cd5803b982df",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C68",
+      "claim": "The growth rate increment s plays the role of a selection coefficient in typical population genetic models.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth rate increment, s, plays the role of a selection coefficient in typical population genetic models and corresponds to the step size of the fitness distribution in Figure 3D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an interpretation of the model parameter.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "70436ece-ad64-4596-9c94-1e064da16ae7",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C69",
+      "claim": "Rouzine and Rozhnova (2018) formulated a similar model of antigenic evolution of rapidly adapting pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Rouzine and Rozhnova (2018) have recently formulated a similar model of antigenic evolution of rapidly adapting pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "cfe64024-38fb-446c-bd2a-deb1d6751b45",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C70",
+      "claim": "Rouzine and Rozhnova couple strain dynamics to antigenic adaptation through mutations, assuming a one-dimensional antigenic space.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogously to our model, Rouzine and Rozhnova couple strain dynamics to antigenic adaptation through mutations, albeit assuming a one-dimensional antigenic space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a comparison to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "3fc0d1a2-5c2d-475b-904f-47e484be7192",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C72",
+      "claim": "Rouzine and Rozhnova do not consider oscillations, extinction, and speciation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rouzine and Rozhnova, however, do not consider oscillations, extinction, and speciation (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a distinction from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "5a318110-7c98-47ac-b365-40798cedcc1b",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C73",
+      "claim": "The simplified model is analogous to the traveling wave (TW) models of rapidly adapting asexual populations that have been studied extensively over the past two decades.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplified model in Equation 8, along with the model developed by Rouzine and Rozhnova (2018), is analogous to the traveling wave (TW) models of rapidly adapting asexual populations that have been studied extensively over the past two decades (Tsimring et al., 1996; Desai and Fisher, 2007; Rouzine et al., 2003; Hallatschek, 2011), see Neher (2013a) for a review.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "2bc34bdb-3370-49dc-ab05-658cbfc6994f",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C74",
+      "claim": "TW models describe large populations that generate beneficial mutations rapidly enough that many strains co-circulate and compete against each other.",
+      "claim_type": "EXPLICIT",
+      "source": "These models describe large populations that generate beneficial mutations rapidly enough that many strains co-circulate and compete against each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a description of TW models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "fa6396df-efa6-4676-bcd5-c341e908649c",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C76",
+      "claim": "The 'nose' of the fitness distributions contains the strains that dominate in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'nose' of the fitness distributions contains the strains that dominate in the future and the only adaptive mutations that fixate in the population arise in pioneer strains in the nose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a characteristic of TW models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "6a4b485e-f2c5-45d9-be49-b9951fab6e24",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C77",
+      "claim": "The only adaptive mutations that fixate in the population arise in pioneer strains in the nose.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'nose' of the fitness distributions contains the strains that dominate in the future and the only adaptive mutations that fixate in the population arise in pioneer strains in the nose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a characteristic of TW models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "5421fc9a-9e60-422c-a127-52f552c147e3",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C78",
+      "claim": "The rate with which antigenic mutations establish in the population is controlled by the rate at which they arise in the nose.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the rate with which antigenic mutations establish in the population is controlled by the rate at which they arise in the nose (Desai and Fisher, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "49fb93fa-405e-4535-80b5-d185e59d2c34",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C85",
+      "claim": "In circulating influenza viruses, typically around 3\u201310 adaptive mutations separate pioneer strains from the most common variants.",
+      "claim_type": "EXPLICIT",
+      "source": "In circulating influenza viruses, typically around 3\u201310 adaptive mutations separate pioneer strains from the most common variants (Strelkowa and L\u00e4ssig, 2012; Neher and Bedford, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "d525ba01-3573-41fd-ae94-aac200a569b6",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C89",
+      "claim": "The pathogen population size (or prevalence) depends on the host susceptibility, which in itself is determined by recent antigenic evolution of the pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the pathogen population size (or prevalence) depends on the host susceptibility, which in itself is determined by recent antigenic evolution of the pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a characteristic of the epidemiological model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "8db6124b-4eb6-4011-9e7c-678be133f04c",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C90",
+      "claim": "The coupling of ecological and evolutionary effects results in a rich and complicated dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The coupling of these two different effects results in a rich and complicated dynamics (see Figure 4A for an example trajectory):",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by reference to Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "d9e47627-1a0f-4985-bf53-7ad302a9416e",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C91",
+      "claim": "A bloom of the pathogen depletes susceptible hosts leading to a crash in pathogen population and a tendency of the population size to oscillate.",
+      "claim_type": "EXPLICIT",
+      "source": "The first effect is ecological: a bloom of the pathogen depletes susceptible hosts leading to a crash in pathogen population and a tendency of the population size to oscillate London and Yorke, 1973 (blue line in Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by a citation and reference to Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "c5a776cb-0844-4006-994b-0c8946844c00",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C111",
+      "claim": "In the TW RQS noisy oscillation is about the fixed point, whereas in the Oscillatory RQS it is about deterministic limit cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between the two regimes is illustrated by Figure 4C: in the TW RQS noisy oscillation is about the fixed point, whereas in the Oscillatory RQS it is about deterministic limit cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by reference to Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "4898037c-3fdc-4727-88ab-c15793a31cc4",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C114",
+      "claim": "Both the TW and Oscillatory RQS are transient, subject to extinction due to a sufficiently large stochastic fluctuation.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, both the TW and Oscillatory RQS (see Figure 3BC) are transient, subject to extinction due to a sufficiently large stochastic fluctuation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section as a finding of the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "442c7329-626f-4b53-8737-07a0470ffbae",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C117",
+      "claim": "The mechanism of extinction in the oscillatory state is related closely to the deterministic dynamics, according to which large amplitude excursion in infection prevalence can lead to extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Although extinction is fluctuation driven, the mechanism of extinction in the oscillatory state is related closely to the deterministic dynamics, according to which large amplitude excursion in infection prevalence can lead to extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an explanation of the extinction mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "34a25b75-c671-458c-8e1f-386945e29a04",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C126",
+      "claim": "In the case where d/q\u226b1, all members of the population compete against each other for the same susceptible hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, all members of the population compete against each other for the same susceptible hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a consequence of the assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "c3915cfb-4ec9-4b3e-920f-878d8e93e277",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C128",
+      "claim": "A split has occurred among influenza B viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a split has for example occurred among influenza B viruses, see Figure 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "6bf074f9-b946-456a-9900-a87db76aad60",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C133",
+      "claim": "The combined carrying capacity of the resulting independent lineages is twice their original carrying capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined carrying capacity of the resulting independent lineages is then twice their original carrying capacity as observed in simulations, see Figure 6B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by reference to Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "e81463b0-afc6-4bc3-88e1-aec75c8efbe6",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C134",
+      "claim": "Deep splits are unstable and it is rare for a split to persist long enough for speciation.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep splits are hence unstable and it is rare for a split to persist long enough for speciation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an explanation of speciation dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "360e45e1-25f7-4be6-b19f-8f5b5544c693",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C138",
+      "claim": "The RQS regime is only transient.",
+      "claim_type": "EXPLICIT",
+      "source": "We emphasize that the RQS regime in Figure 3BC is only transient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section as a key finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "19d6eecc-a7fe-46d3-bfe0-7829e2e68247",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C143",
+      "claim": "Agents of classical childhood diseases like measles or mumps virus show little antigenic evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Agents of classical childhood diseases like measles or mumps virus show little antigenic evolution, other viruses like dengue- or norovirus exist in distinct serotypes, while seasonal influenza viruses undergo continuous antigenic evolution enabling viruses of the same lineage to reinfect the same individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "85ae6fe6-9dca-41d2-af18-2c2896f7f78f",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C144",
+      "claim": "Viruses like dengue- or norovirus exist in distinct serotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Agents of classical childhood diseases like measles or mumps virus show little antigenic evolution, other viruses like dengue- or norovirus exist in distinct serotypes, while seasonal influenza viruses undergo continuous antigenic evolution enabling viruses of the same lineage to reinfect the same individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "2b491b93-5b8e-43ed-bad0-0fd937caf607",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C145",
+      "claim": "Seasonal influenza viruses undergo continuous antigenic evolution enabling viruses of the same lineage to reinfect the same individual.",
+      "claim_type": "EXPLICIT",
+      "source": "Agents of classical childhood diseases like measles or mumps virus show little antigenic evolution, other viruses like dengue- or norovirus exist in distinct serotypes, while seasonal influenza viruses undergo continuous antigenic evolution enabling viruses of the same lineage to reinfect the same individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "6a051ab7-94f0-4df2-a66f-7f3fa56b780f",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C146",
+      "claim": "The phase diagram shows which combinations of key parameters lead to three distinct outcomes: (1) extinction, (2) an evolving but low diversity pathogen population, (3) a deeply branching and continuously diversifying pathogen population.",
+      "claim_type": "EXPLICIT",
+      "source": "The phase diagram shows which combinations of key parameters lead to three distinct outcomes: (1) extinction (red), (2) an evolving but low diversity pathogen population (yellow and green), (3) a deeply branching and continuously diversifying pathogen population (blue).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "b21aa225-3a31-453f-bb42-59a6209ee90d",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C152",
+      "claim": "The average annual incidence of 3\u201310% is consistent with previous estimates of the annual attack rate of influenza.",
+      "claim_type": "EXPLICIT",
+      "source": "This number is consistent with previous estimates of the annual attack rate of influenza (Yang et al., 2015) (which typically do not differentiate the different influenza lineages).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "d410ff42-a18a-4010-a9d4-f4324be6e88c",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C155",
+      "claim": "Competition between lineages mediated by long-range cross-immunity can prevent diversification, effectively canalizing the population into a single lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with earlier studies that have shown that competition between lineages mediated by long-range cross-immunity can prevent diversification, effectively canalizing the population into a single lineage (Tria et al., 2005; Ferguson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "e87a4658-5e78-4c90-a18b-20ed563be89d",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C157",
+      "claim": "Other factors such as population turn over and geographic heterogeneity can delay extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, other factors such as population turn over and geographic heterogeneity can delay extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a consideration of model limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "e0b6f225-4cf8-4e98-83b0-4c6fb6dade0a",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C158",
+      "claim": "The rate of branching in the speciation regime increases with population size and mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the rate of branching in the speciation regime increases with population size and mutation rate consistent with the phase diagram (Sasaki and Haraguchi, 2000; Koelle et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "cdf09018-653e-4565-97ea-564bf6651de3",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C160",
+      "claim": "Koelle and Rasmussen (2015) have implicated deleterious mutation load as a cause of spindly phylogenies.",
+      "claim_type": "EXPLICIT",
+      "source": "Koelle and Rasmussen (2015) have implicated deleterious mutation load as a cause of spindly phylogenies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "5ce40802-4696-477a-acee-5950dbef0b76",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C161",
+      "claim": "Deleterious mutations increase fitness variation, which results in more rapid coalescence and less antigenic diversity, which in turn reduces speciation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Deleterious mutations increase fitness variation, which results in more rapid coalescence and less antigenic diversity, which in turn reduces speciation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an explanation of prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "7c7891a4-e8ff-4f5d-8004-78d084395fd2",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C164",
+      "claim": "The recent Zika virus outbreak in the Americas falls into regime (1) of extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Outbreaks of emerging viruses that quickly infect a large fraction of the population, as for example the recent Zika virus outbreak in the Americas, fall into regime (1): In 2\u20133 years, large fractions of the population were infected and have developed long-lasting immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an example.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "97bc0e48-0f8a-4b15-a5b6-7a8fc5692297",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C165",
+      "claim": "The Zika virus population did not evolve antigenically to escape the build up of herd immunity and is not expected to continue to circulate in the Americas.",
+      "claim_type": "EXPLICIT",
+      "source": "As far as we know, the viral population did not evolve antigenically to escape this build up of herd immunity and the virus population is not expected to continue to circulate in the Americas (O'Reilly et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "6db17ed6-5837-4eea-8816-1ed8ab590606",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C166",
+      "claim": "Different influenza virus lineages correspond to parameters that fall into the RQS region of the phase diagram.",
+      "claim_type": "EXPLICIT",
+      "source": "Different influenza virus lineages, in contrast, persist in the human population, suggesting that they correspond to parameters that fall into the RQS region of the phase diagram.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "6d7e28af-f4bc-44a8-848a-f24e66bf0b36",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C167",
+      "claim": "Subtype A/H1N1 circulated with interruption from 1918 to 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "subtype A/H1N1 circulated with interruption from 1918 to 2009, A(H2N2) circulated for about 10 years until 1968, A/H3N2 emerged in 1968 and is still circulating today, and the triple reassortant 2009 H1N1 lineage, called A(H1N1pdm), settled into a seasonal pattern following the pandemic in 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as background information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "1fad52bc-bea9-4f2d-9f18-832b6e510fcc",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C168",
+      "claim": "A(H2N2) circulated for about 10 years until 1968.",
+      "claim_type": "EXPLICIT",
+      "source": "subtype A/H1N1 circulated with interruption from 1918 to 2009, A(H2N2) circulated for about 10 years until 1968, A/H3N2 emerged in 1968 and is still circulating today, and the triple reassortant 2009 H1N1 lineage, called A(H1N1pdm), settled into a seasonal pattern following the pandemic in 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as background information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "bcc0eff8-e0da-4d20-9497-d5b32d701e2f",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C169",
+      "claim": "A/H3N2 emerged in 1968 and is still circulating today.",
+      "claim_type": "EXPLICIT",
+      "source": "subtype A/H1N1 circulated with interruption from 1918 to 2009, A(H2N2) circulated for about 10 years until 1968, A/H3N2 emerged in 1968 and is still circulating today, and the triple reassortant 2009 H1N1 lineage, called A(H1N1pdm), settled into a seasonal pattern following the pandemic in 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as background information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "f9ed1f7a-62f2-4934-ba14-9579f25af809",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C170",
+      "claim": "The triple reassortant 2009 H1N1 lineage, called A(H1N1pdm), settled into a seasonal pattern following the pandemic in 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "subtype A/H1N1 circulated with interruption from 1918 to 2009, A(H2N2) circulated for about 10 years until 1968, A/H3N2 emerged in 1968 and is still circulating today, and the triple reassortant 2009 H1N1 lineage, called A(H1N1pdm), settled into a seasonal pattern following the pandemic in 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as background information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "6a68cfd5-88f6-499f-8f83-87ab8fa09aaa",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C171",
+      "claim": "Influenza B viruses have split into two separate lineages (B/Victoria and B/Yamagata) in the 1970s.",
+      "claim_type": "EXPLICIT",
+      "source": "Influenza B viruses have split into two separate lineages (B/Victoria and B/Yamagata) in the 1970s (Rota et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "3f82b796-294c-4eda-87a8-5da2fc5bbcce",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C172",
+      "claim": "The influenza B lineages tend to be more genetically diverse than the influenza A lineages with a typical time to the most recent common ancestor of around 6 compared to 3 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The influenza B lineages tend to be more genetically diverse than the influenza A lineages with a typical time to the most recent common ancestor of around 6 compared to 3 years, see Figure 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "d4d5a643-e235-4ec4-ae4d-10ef233cc99a",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C173",
+      "claim": "Influenza A/H3N2 tends to have the lowest diversity and most rapid population turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Influenza A/H3N2 tends to have the lowest diversity and most rapid population turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "0033ca94-c2ab-427f-856c-bfd44aa73e69",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C174",
+      "claim": "This difference in diversity is consistent with influenza B lineages being more prone to speciation.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in diversity is consistent with influenza B lineages being more prone to speciation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation of the observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "95e651db-59ae-4fdd-81f6-4ecf7733e1f4",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C175",
+      "claim": "Hemagglutination inhibition titers drop by about 0.7\u20131 log2 per year in A/H3N2 compared to 0.1\u20130.4 log2 per year for influenza B lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Hemagglutination inhibition titers drop by about 0.7\u20131 log2 per year in A/H3N2 compared to 0.1\u20130.4 log2 per year for influenza B lineages (Smith et al., 2004; Bedford et al., 2014; Neher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "7b7683e3-d822-4f73-afca-4fc6afe71bc7",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C177",
+      "claim": "Currently circulating A/H3N2 viruses are exceptionally diverse with a common ancestor that existed about 8 years in the past.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that currently circulating A/H3N2 viruses are exceptionally diverse with a common ancestor that existed about 8 years in the past.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "4394847d-7080-4759-9b7d-b7edd0994442",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C178",
+      "claim": "The cocirculating 3c.3a and 3c.2a are antigenically distinct and it is conceivable that further antigenic evolution will result in speciation of A/H3N2 viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the cocirculating 3c.3a and 3c.2a are antigenically distinct and it is conceivable that further antigenic evolution will result in speciation of A/H3N2 viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "47d4a3fd-7d03-436a-8413-ea22f19aefd7",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C179",
+      "claim": "The natural tendency of SIR models to oscillate couples to the instability of the nose of the pathogen fitness distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "While we have shown that the natural tendency of SIR models to oscillate couples to the instability of the nose of the pathogen fitness distribution, making a quantitative link to the observed epidemiological dynamics of the flu is difficult on account of seasonal oscillation in transmissivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a finding of the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "c57fcaec-fe7a-4f67-99d4-7ac244a937e0",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "claim_id": "C180",
+      "claim": "Seasonal oscillation in transmissivity is widely believed to be the cause behind observed seasonality of the flu.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter confounding factor is widely believed to be the cause behind observed seasonality of the flu.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2de4783d-e0ff-47f7-bdf9-1b0e20f4078c",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate through model mapping that persistence of a rapidly evolving Red-Queen-like state (RQS) requires long-ranged cross-immunity and large population sizes. However, this RQS state is unstable and eventually leads to either extinction or speciation into diverging lineages. In certain parameter ranges, a single cross-inhibiting population can persist for times long compared to TMRCA and produce phylogenetic patterns typical of influenza virus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C8 and C38-C39 collectively establish the core theoretical findings from the model. The mapping between multi-strain SIR and traveling wave models is described with mathematical detail (Equations 1-13), simulation results are presented (Figures 3-7), and the phase diagram systematically characterizes different regimes. The claims are internally consistent and supported by both analytical approximations and computational validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "ee668b12-9e13-4024-bf0b-f6c6148c0a64",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The phase diagram identifies three distinct outcomes as a function of key parameters: (1) extinction, (2) an evolving but low diversity pathogen population (RQS), and (3) a deeply branching and continuously diversifying pathogen population (speciation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C146 summarizes the phase diagram presented in Figures 3B-C and discussed throughout the Results section. The three regimes are clearly delineated based on combinations of log(N_h*s^2), log(s/m), and cross-immunity range d. Simulation data in Figures 3, 5, and 7 support the existence and boundaries of these regimes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "9f9f7a4c-a54f-4cc7-b861-397838610285",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Both the traveling wave and oscillatory RQS regimes are transient states subject to eventual extinction due to stochastic fluctuations. The mechanism of extinction in the oscillatory state is related to deterministic dynamics where large amplitude excursions in infection prevalence can lead to extinction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114, C117, and C138 describe the transient nature of the RQS and extinction mechanisms. Figure 5 provides quantitative data on extinction times as a function of parameters, and Figure 4A shows example trajectories demonstrating extinction events. The differential-delay equations (11-13) provide theoretical support for the coupling between stochastic fluctuations and extinction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "7a1d0374-4ba6-43e2-bb0b-6698bde31785",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When the cross-immunity range d is much larger than genetic diversity q, all strains compete for the same hosts. Speciation occurs when lineages diverge beyond the range of cross-inhibition, doubling the combined carrying capacity. However, deep splits are unstable and speciation is rare.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C126, C128, C133, and C134 describe the speciation mechanism. Figure 6 provides direct evidence: panel A shows TMRCA dynamics during speciation, panel B demonstrates the doubling of carrying capacity, and panel C shows the exponential dependence of speciation time on d/q. The influenza B split example (C128, Figure 1) provides empirical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "8dbbf79e-5cc9-497c-8695-1b3702430472",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The coupling of ecological (prevalence-susceptibility) and evolutionary (antigenic advance) effects results in rich dynamics including oscillations. The ecological effect causes pathogen blooms to deplete susceptible hosts leading to population crashes. The distinction between TW and oscillatory RQS regimes is characterized by whether oscillations occur about a fixed point or a limit cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91, C111, and C179 describe the oscillatory dynamics. Figure 4 provides comprehensive support: panel A shows example trajectories with oscillations, panel B illustrates limit cycles, and panel C distinguishes the two regimes. The differential-delay system (Equations 11-13) provides theoretical foundation, and Figure 4\u2014figure supplement 1 quantifies oscillation amplitude and period.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "60501e31-9c35-49f8-8489-fdaf0c1b5a95",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Persistence and transition from pandemic to endemic state requires the pathogen to evade rapid immunity buildup via large-effect antigenic mutations. The 2009 H1N1 pandemic underwent such a transition, while the Zika virus outbreak represents a boom-bust epidemic that did not evolve antigenically and is not expected to persist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 and C164-C165 provide examples of different epidemic outcomes. The theoretical framework (Figure 3D) illustrates the transition mechanism. The H1N1 and Zika examples are cited appropriately (C62, C165) and fit the model predictions. However, these are illustrative examples rather than quantitative validations of the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "2bc30ee7-ffb7-4439-a15f-335c0f0c1cc2",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The simplified model is analogous to traveling wave models of rapidly adapting populations. The growth rate increment s acts as a selection coefficient, and the 'nose' of the fitness distribution contains pioneer strains that dominate in the future. The rate of antigenic mutation establishment is controlled by the rate at which mutations arise in the nose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C78 establish the connection to traveling wave theory. The mathematical derivation (Equations 7-10) shows how the SIR model reduces to TW dynamics. Citations to prior TW work (C73, C78) are appropriate. Figure 4\u2014figure supplement 2 validates TW predictions for the model. The comparison to Rouzine and Rozhnova (C69-C72) appropriately distinguishes the current work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "78ea3f5d-3eb4-4c6f-aff2-2aeb586dd23d",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Influenza B viruses split into two lineages (Victoria and Yamagata) in the 1970s and maintain higher genetic diversity (TMRCA ~6 years) compared to influenza A lineages (TMRCA ~3 years). This difference is consistent with influenza B being more prone to speciation, though the ratio of immunity decay time to TMRCA is similar across lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 and C171-C175 describe empirical observations about influenza phylogenies. Figure 1 provides direct phylogenetic evidence showing the split and diversity differences. The TMRCA measurements and antigenic evolution rates (C175) are cited appropriately. The interpretation regarding speciation propensity (C174) is reasonable but somewhat speculative given the single observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "b7f28785-4dd7-4f4c-adaa-0fa864a4ac74",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model predicts average annual incidence of 3-10%, consistent with previous estimates of influenza attack rates. The results are consistent with earlier studies showing that long-range cross-immunity mediated competition can prevent diversification and canalize the population into a single lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C152 and C155 connect model predictions to empirical observations and prior work. The incidence calculation is derived from model parameters (discussed in Appendix 2) and cited as consistent with Yang et al. 2015 (C152). The agreement with prior computational studies (C155, citing Tria et al. 2005 and Ferguson et al. 2003) strengthens the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "68061566-0a64-42b2-bfd9-64f03ef98be9",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model uses a product form for individual susceptibility history, employs a mean-field approximation that ignores correlations between infections, assumes single-mutation steps, exponential decay of cross-immunity with mutational distance, and high-dimensional antigenic space where antigenic distance is proportional to genetic distance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C55 describe key model assumptions. These are standard modeling choices appropriately cited (C47: Wikramaratna et al. 2015; C53: Luksza and L\u00e4ssig 2014; C55: Neher et al. 2016). The mean-field approximation (C49) is justified by low prevalence (C50). Appendix 1 provides detailed derivation. These assumptions are reasonable for the modeling goals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "ec917bf5-8540-4120-982d-7574a1e24b17",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims about pathogen persistence mechanisms, influenza characteristics, and immune dynamics establish the biological context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C9-C25 provide background knowledge about influenza and pathogen evolution. These are appropriately cited throughout (e.g., C15: Petrova and Russell 2018; C17: Rambaut et al. 2008; C21: Fonville et al. 2014; C25: Smith et al. 2004, Bedford et al. 2014). These establish the biological motivation for the modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "fd5c8860-d58a-495b-aaa5-a04acd6f66ce",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior modeling approaches using multi-strain SIR models with one-dimensional strain space naturally produce traveling waves but result in spindly phylogenies. Influenza's high-dimensional antigenic space allows multiple escape paths, potentially leading to diversification. Previous computational studies identified cross-immunity and deleterious mutations as critical parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C37 review prior modeling work. Citations are appropriate throughout (e.g., C26: Kermack and McKendrick 1927, Gog and Grenfell 2002; C31: Rouzine and Rozhnova 2018; C36-C37: multiple computational studies). This establishes the gap that the current work addresses: understanding how high-dimensional antigenic space can produce spindly phylogenies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "451accc5-d436-4f21-8c91-cf84ad0f5d1e",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In circulating influenza viruses, typically 3-10 adaptive mutations separate pioneer strains from the most common variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 provides an empirical observation about influenza diversity, appropriately cited (Strelkowa and L\u00e4ssig 2012; Neher and Bedford 2015). This establishes the relevant parameter range (q ~ 3-10) for model validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "4217ecb6-dc13-4b2e-b142-92c49b560717",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Different RNA viruses show distinct evolutionary patterns: childhood diseases show little antigenic evolution, dengue/norovirus exist as distinct serotypes, and seasonal influenza undergoes continuous antigenic evolution. Different influenza A subtypes have circulated for varying durations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C143-C145 and C167-C170 provide background on viral diversity patterns. These are general knowledge claims that appropriately contextualize the study. The historical information about influenza subtypes (C167-C170) is accurate and relevant for understanding the model's applicability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "a397cdaf-0d1d-4f7c-a983-a1890c6b225a",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Other factors like population turnover and geographic heterogeneity can delay extinction. Previous studies showed branching rate increases with population size and mutation rate. Deleterious mutations increase fitness variation, leading to more rapid coalescence and reduced speciation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C157-C161 discuss model limitations and connections to prior work. C157 acknowledges factors not included in the model. C158 cites consistent findings (Sasaki and Haraguchi 2000; Koelle et al. 2011). C160-C161 discuss Koelle and Rasmussen 2015's work on deleterious mutations, which is addressed in the model (Figure 6C, Appendix 6).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    },
+    {
+      "id": "d48120ad-fb0d-48a8-8331-ea4f05417cfe",
+      "content_id": "1716ce58-7648-4edf-ab11-6ac91daff691",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Different influenza lineages likely correspond to parameters in the RQS region of the phase diagram. Currently circulating A/H3N2 viruses are exceptionally diverse and might undergo speciation. Seasonal oscillation in transmissivity is believed to cause observed flu seasonality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C166, C177-C178, and C180 make interpretive connections between model and observations. C166 is a reasonable inference but lacks quantitative validation. C177-C178 are speculative about potential future A/H3N2 speciation. C180 acknowledges a confounding factor (seasonality) not included in the model, limiting quantitative comparison to real flu dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:19:52.216767Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d804c548-5b81-4f9b-b49d-553e30bf4c52",
+      "result_id": "2de4783d-e0ff-47f7-bdf9-1b0e20f4078c"
+    },
+    {
+      "claim_id": "1fc1962e-e200-4dcb-b482-124693db8af8",
+      "result_id": "2de4783d-e0ff-47f7-bdf9-1b0e20f4078c"
+    },
+    {
+      "claim_id": "71d91811-f17f-4451-b42a-7a255b5fe0e0",
+      "result_id": "2de4783d-e0ff-47f7-bdf9-1b0e20f4078c"
+    },
+    {
+      "claim_id": "b8a77f9c-1e59-4c11-be12-ed20c62f27bc",
+      "result_id": "2de4783d-e0ff-47f7-bdf9-1b0e20f4078c"
+    },
+    {
+      "claim_id": "3df38fd7-69e4-444c-9a8e-9a922f43ac75",
+      "result_id": "2de4783d-e0ff-47f7-bdf9-1b0e20f4078c"
+    },
+    {
+      "claim_id": "a4f26d62-ac66-4018-8a10-a3fae51722df",
+      "result_id": "2de4783d-e0ff-47f7-bdf9-1b0e20f4078c"
+    },
+    {
+      "claim_id": "5237fda7-9d7a-42fa-bbe7-14934a13128c",
+      "result_id": "2de4783d-e0ff-47f7-bdf9-1b0e20f4078c"
+    },
+    {
+      "claim_id": "a2573a7d-ad93-4eeb-81af-512f8cfc3566",
+      "result_id": "2de4783d-e0ff-47f7-bdf9-1b0e20f4078c"
+    },
+    {
+      "claim_id": "6a051ab7-94f0-4df2-a66f-7f3fa56b780f",
+      "result_id": "ee668b12-9e13-4024-bf0b-f6c6148c0a64"
+    },
+    {
+      "claim_id": "4898037c-3fdc-4727-88ab-c15793a31cc4",
+      "result_id": "9f9f7a4c-a54f-4cc7-b861-397838610285"
+    },
+    {
+      "claim_id": "442c7329-626f-4b53-8737-07a0470ffbae",
+      "result_id": "9f9f7a4c-a54f-4cc7-b861-397838610285"
+    },
+    {
+      "claim_id": "360e45e1-25f7-4be6-b19f-8f5b5544c693",
+      "result_id": "9f9f7a4c-a54f-4cc7-b861-397838610285"
+    },
+    {
+      "claim_id": "34a25b75-c671-458c-8e1f-386945e29a04",
+      "result_id": "7a1d0374-4ba6-43e2-bb0b-6698bde31785"
+    },
+    {
+      "claim_id": "c3915cfb-4ec9-4b3e-920f-878d8e93e277",
+      "result_id": "7a1d0374-4ba6-43e2-bb0b-6698bde31785"
+    },
+    {
+      "claim_id": "6bf074f9-b946-456a-9900-a87db76aad60",
+      "result_id": "7a1d0374-4ba6-43e2-bb0b-6698bde31785"
+    },
+    {
+      "claim_id": "e81463b0-afc6-4bc3-88e1-aec75c8efbe6",
+      "result_id": "7a1d0374-4ba6-43e2-bb0b-6698bde31785"
+    },
+    {
+      "claim_id": "d525ba01-3573-41fd-ae94-aac200a569b6",
+      "result_id": "8dbbf79e-5cc9-497c-8695-1b3702430472"
+    },
+    {
+      "claim_id": "8db6124b-4eb6-4011-9e7c-678be133f04c",
+      "result_id": "8dbbf79e-5cc9-497c-8695-1b3702430472"
+    },
+    {
+      "claim_id": "d9e47627-1a0f-4985-bf53-7ad302a9416e",
+      "result_id": "8dbbf79e-5cc9-497c-8695-1b3702430472"
+    },
+    {
+      "claim_id": "c5a776cb-0844-4006-994b-0c8946844c00",
+      "result_id": "8dbbf79e-5cc9-497c-8695-1b3702430472"
+    },
+    {
+      "claim_id": "47d4a3fd-7d03-436a-8413-ea22f19aefd7",
+      "result_id": "8dbbf79e-5cc9-497c-8695-1b3702430472"
+    },
+    {
+      "claim_id": "717a549b-16ce-4da4-9047-cad137ec66e0",
+      "result_id": "60501e31-9c35-49f8-8489-fdaf0c1b5a95"
+    },
+    {
+      "claim_id": "19a05324-1c0e-43cc-805c-35ab5169c598",
+      "result_id": "60501e31-9c35-49f8-8489-fdaf0c1b5a95"
+    },
+    {
+      "claim_id": "ef5e8d1b-9361-4787-ae39-266d272422c1",
+      "result_id": "60501e31-9c35-49f8-8489-fdaf0c1b5a95"
+    },
+    {
+      "claim_id": "7c7891a4-e8ff-4f5d-8004-78d084395fd2",
+      "result_id": "60501e31-9c35-49f8-8489-fdaf0c1b5a95"
+    },
+    {
+      "claim_id": "97bc0e48-0f8a-4b15-a5b6-7a8fc5692297",
+      "result_id": "60501e31-9c35-49f8-8489-fdaf0c1b5a95"
+    },
+    {
+      "claim_id": "5689b7f6-0637-44b1-b567-cd5803b982df",
+      "result_id": "2bc30ee7-ffb7-4439-a15f-335c0f0c1cc2"
+    },
+    {
+      "claim_id": "70436ece-ad64-4596-9c94-1e064da16ae7",
+      "result_id": "2bc30ee7-ffb7-4439-a15f-335c0f0c1cc2"
+    },
+    {
+      "claim_id": "cfe64024-38fb-446c-bd2a-deb1d6751b45",
+      "result_id": "2bc30ee7-ffb7-4439-a15f-335c0f0c1cc2"
+    },
+    {
+      "claim_id": "3fc0d1a2-5c2d-475b-904f-47e484be7192",
+      "result_id": "2bc30ee7-ffb7-4439-a15f-335c0f0c1cc2"
+    },
+    {
+      "claim_id": "5a318110-7c98-47ac-b365-40798cedcc1b",
+      "result_id": "2bc30ee7-ffb7-4439-a15f-335c0f0c1cc2"
+    },
+    {
+      "claim_id": "2bc34bdb-3370-49dc-ab05-658cbfc6994f",
+      "result_id": "2bc30ee7-ffb7-4439-a15f-335c0f0c1cc2"
+    },
+    {
+      "claim_id": "fa6396df-efa6-4676-bcd5-c341e908649c",
+      "result_id": "2bc30ee7-ffb7-4439-a15f-335c0f0c1cc2"
+    },
+    {
+      "claim_id": "6a4b485e-f2c5-45d9-be49-b9951fab6e24",
+      "result_id": "2bc30ee7-ffb7-4439-a15f-335c0f0c1cc2"
+    },
+    {
+      "claim_id": "5421fc9a-9e60-422c-a127-52f552c147e3",
+      "result_id": "2bc30ee7-ffb7-4439-a15f-335c0f0c1cc2"
+    },
+    {
+      "claim_id": "73e6af94-5ca8-4153-8f10-e59c628fa472",
+      "result_id": "78ea3f5d-3eb4-4c6f-aff2-2aeb586dd23d"
+    },
+    {
+      "claim_id": "f8f3b9e7-4d3b-4c07-8c26-4186f26ad8f2",
+      "result_id": "78ea3f5d-3eb4-4c6f-aff2-2aeb586dd23d"
+    },
+    {
+      "claim_id": "c3915cfb-4ec9-4b3e-920f-878d8e93e277",
+      "result_id": "78ea3f5d-3eb4-4c6f-aff2-2aeb586dd23d"
+    },
+    {
+      "claim_id": "6a68cfd5-88f6-499f-8f83-87ab8fa09aaa",
+      "result_id": "78ea3f5d-3eb4-4c6f-aff2-2aeb586dd23d"
+    },
+    {
+      "claim_id": "3f82b796-294c-4eda-87a8-5da2fc5bbcce",
+      "result_id": "78ea3f5d-3eb4-4c6f-aff2-2aeb586dd23d"
+    },
+    {
+      "claim_id": "d4d5a643-e235-4ec4-ae4d-10ef233cc99a",
+      "result_id": "78ea3f5d-3eb4-4c6f-aff2-2aeb586dd23d"
+    },
+    {
+      "claim_id": "0033ca94-c2ab-427f-856c-bfd44aa73e69",
+      "result_id": "78ea3f5d-3eb4-4c6f-aff2-2aeb586dd23d"
+    },
+    {
+      "claim_id": "95e651db-59ae-4fdd-81f6-4ecf7733e1f4",
+      "result_id": "78ea3f5d-3eb4-4c6f-aff2-2aeb586dd23d"
+    },
+    {
+      "claim_id": "b21aa225-3a31-453f-bb42-59a6209ee90d",
+      "result_id": "b7f28785-4dd7-4f4c-adaa-0fa864a4ac74"
+    },
+    {
+      "claim_id": "d410ff42-a18a-4010-a9d4-f4324be6e88c",
+      "result_id": "b7f28785-4dd7-4f4c-adaa-0fa864a4ac74"
+    },
+    {
+      "claim_id": "6657da19-5764-4ec4-87ab-2f96664c49f2",
+      "result_id": "68061566-0a64-42b2-bfd9-64f03ef98be9"
+    },
+    {
+      "claim_id": "b4994d6f-a6ff-426f-b4fc-fc536d8e700d",
+      "result_id": "68061566-0a64-42b2-bfd9-64f03ef98be9"
+    },
+    {
+      "claim_id": "497946b5-0c23-45d8-8968-e219938332e3",
+      "result_id": "68061566-0a64-42b2-bfd9-64f03ef98be9"
+    },
+    {
+      "claim_id": "549a5e0a-1df1-4959-a7e5-b8a3c6aca7c9",
+      "result_id": "68061566-0a64-42b2-bfd9-64f03ef98be9"
+    },
+    {
+      "claim_id": "e11eec92-b92d-4b17-88d2-0e44b4df1046",
+      "result_id": "68061566-0a64-42b2-bfd9-64f03ef98be9"
+    },
+    {
+      "claim_id": "1cdc4b4f-d74e-4eff-bfc0-294e1227ac7b",
+      "result_id": "68061566-0a64-42b2-bfd9-64f03ef98be9"
+    },
+    {
+      "claim_id": "ce3a6f1c-30fa-4bd2-ba66-fe49bceeb83c",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "334c07c1-eec3-4d76-bb10-0a304309e7f8",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "e5f5bb13-2403-47fd-b13b-209c15776c62",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "2bc1bb96-e6be-41f1-83df-bbaf0358b16a",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "adfd474c-50a9-4a69-b64a-f472c6797048",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "438a0341-4085-49fe-8cac-e7aeae124a63",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "08823174-c442-4a21-8d43-61230080d6f3",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "e2c164cf-fbb8-47f3-96c1-4fcec2123523",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "7a1a800f-e58c-4a42-8f31-2b317dd781f0",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "2e81e259-730c-497d-9c1d-71dfdee6ca41",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "d8dcf2eb-1b57-493d-87b4-e5baf2e4f749",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "74ac55ad-6a9d-436c-aa7c-6b2d5bb01e7f",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "e1e10ae1-a497-4807-8228-36d49f07031d",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "d5d35008-b35c-4a24-a2c0-d6bfbce058f0",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "3792ca15-0623-4717-81aa-4fe1ee36e969",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "bcb055d6-f086-4a02-a2a7-a2df9574e297",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "4cb6245b-8d79-464c-8ba4-8973047fec92",
+      "result_id": "ec917bf5-8540-4120-982d-7574a1e24b17"
+    },
+    {
+      "claim_id": "ca2c39fc-4ff1-49ff-965f-b56ccd9be041",
+      "result_id": "fd5c8860-d58a-495b-aaa5-a04acd6f66ce"
+    },
+    {
+      "claim_id": "865f6506-20cb-4e43-a513-93a85dbe24a2",
+      "result_id": "fd5c8860-d58a-495b-aaa5-a04acd6f66ce"
+    },
+    {
+      "claim_id": "aaa3adcf-a337-44fd-b53c-0293d3707921",
+      "result_id": "fd5c8860-d58a-495b-aaa5-a04acd6f66ce"
+    },
+    {
+      "claim_id": "b82200c3-3188-4781-b7f6-b496ffbfe30e",
+      "result_id": "fd5c8860-d58a-495b-aaa5-a04acd6f66ce"
+    },
+    {
+      "claim_id": "892e7d3c-f693-4fa1-8342-cf3384c3e4e2",
+      "result_id": "fd5c8860-d58a-495b-aaa5-a04acd6f66ce"
+    },
+    {
+      "claim_id": "2bdde521-fbbd-4980-80dd-247a0068fa3d",
+      "result_id": "fd5c8860-d58a-495b-aaa5-a04acd6f66ce"
+    },
+    {
+      "claim_id": "e07c0e38-49f2-4fac-ae1d-a0ff1251af51",
+      "result_id": "fd5c8860-d58a-495b-aaa5-a04acd6f66ce"
+    },
+    {
+      "claim_id": "da962c96-e563-4bd7-aafc-5862ae645fb3",
+      "result_id": "fd5c8860-d58a-495b-aaa5-a04acd6f66ce"
+    },
+    {
+      "claim_id": "7871b22c-ef92-4ebb-a5b1-48b216a12c38",
+      "result_id": "fd5c8860-d58a-495b-aaa5-a04acd6f66ce"
+    },
+    {
+      "claim_id": "6c8c6dbf-168c-49fd-b2df-af9c58f8e432",
+      "result_id": "fd5c8860-d58a-495b-aaa5-a04acd6f66ce"
+    },
+    {
+      "claim_id": "0c090618-c15d-4a6a-9afc-9cb842a648a2",
+      "result_id": "fd5c8860-d58a-495b-aaa5-a04acd6f66ce"
+    },
+    {
+      "claim_id": "979e33c6-4a06-44c2-9037-9c819e4bc1f9",
+      "result_id": "fd5c8860-d58a-495b-aaa5-a04acd6f66ce"
+    },
+    {
+      "claim_id": "49fb93fa-405e-4535-80b5-d185e59d2c34",
+      "result_id": "451accc5-d436-4f21-8c91-cf84ad0f5d1e"
+    },
+    {
+      "claim_id": "19d6eecc-a7fe-46d3-bfe0-7829e2e68247",
+      "result_id": "4217ecb6-dc13-4b2e-b142-92c49b560717"
+    },
+    {
+      "claim_id": "85ae6fe6-9dca-41d2-af18-2c2896f7f78f",
+      "result_id": "4217ecb6-dc13-4b2e-b142-92c49b560717"
+    },
+    {
+      "claim_id": "2b491b93-5b8e-43ed-bad0-0fd937caf607",
+      "result_id": "4217ecb6-dc13-4b2e-b142-92c49b560717"
+    },
+    {
+      "claim_id": "6d7e28af-f4bc-44a8-848a-f24e66bf0b36",
+      "result_id": "4217ecb6-dc13-4b2e-b142-92c49b560717"
+    },
+    {
+      "claim_id": "1fad52bc-bea9-4f2d-9f18-832b6e510fcc",
+      "result_id": "4217ecb6-dc13-4b2e-b142-92c49b560717"
+    },
+    {
+      "claim_id": "bcc0eff8-e0da-4d20-9497-d5b32d701e2f",
+      "result_id": "4217ecb6-dc13-4b2e-b142-92c49b560717"
+    },
+    {
+      "claim_id": "f9ed1f7a-62f2-4934-ba14-9579f25af809",
+      "result_id": "4217ecb6-dc13-4b2e-b142-92c49b560717"
+    },
+    {
+      "claim_id": "e87a4658-5e78-4c90-a18b-20ed563be89d",
+      "result_id": "a397cdaf-0d1d-4f7c-a983-a1890c6b225a"
+    },
+    {
+      "claim_id": "e0b6f225-4cf8-4e98-83b0-4c6fb6dade0a",
+      "result_id": "a397cdaf-0d1d-4f7c-a983-a1890c6b225a"
+    },
+    {
+      "claim_id": "cdf09018-653e-4565-97ea-564bf6651de3",
+      "result_id": "a397cdaf-0d1d-4f7c-a983-a1890c6b225a"
+    },
+    {
+      "claim_id": "5ce40802-4696-477a-acee-5950dbef0b76",
+      "result_id": "a397cdaf-0d1d-4f7c-a983-a1890c6b225a"
+    },
+    {
+      "claim_id": "6db17ed6-5837-4eea-8816-1ed8ab590606",
+      "result_id": "d48120ad-fb0d-48a8-8331-ea4f05417cfe"
+    },
+    {
+      "claim_id": "7b7683e3-d822-4f73-afca-4fc6afe71bc7",
+      "result_id": "d48120ad-fb0d-48a8-8331-ea4f05417cfe"
+    },
+    {
+      "claim_id": "4394847d-7080-4759-9b7d-b7edd0994442",
+      "result_id": "d48120ad-fb0d-48a8-8331-ea4f05417cfe"
+    },
+    {
+      "claim_id": "c57fcaec-fe7a-4f67-99d4-7ac244a937e0",
+      "result_id": "d48120ad-fb0d-48a8-8331-ea4f05417cfe"
+    }
+  ],
+  "comparisons": []
+}

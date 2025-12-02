@@ -1,0 +1,191 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C40",
+      "C87"
+    ],
+    "result": "The study analyzed 51,292 drug-gene interaction (DGI) claims from the Comparative Toxicogenomics Database (CTD) matched with LINCS L1000 high-throughput experimental data, comprising 60,159 supporting and 4,253 opposing findings from 3,363 articles. Most claims (89%) are supported by findings in only one or two papers, and the datasets were verified to be independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C7 provide consistent descriptive statistics about the dataset composition that are directly stated and supported by Figure 1A. C40 verifies independence between literature and LINCS L1000 data through PubMed search. C87 confirms data availability. These foundational data claims are well-documented and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C54"
+    ],
+    "result": "The literature shows 93-94% agreement on DGI claim directions, significantly higher than the 41% generalizability observed in LINCS L1000 experiments. Papers with overlapping authors show significantly higher agreement (98.9%) than independent teams (88.9%), suggesting confirmation bias influences the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 present quantitative findings with statistical support (bootstrap analysis, Figure 1\u2014figure supplement 1). C54 provides a reasonable inference about confirmation bias based on the discrepancy between literature agreement (93%) and experimental generalizability (41%). The comparison is acknowledged as not directly comparable due to different measurements, but the pattern is striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Claims with multiple supporting papers show substantially higher replication rates than single-paper claims. Very High support claims replicate 45.5% (95% CI: 21.8-74.2%) more than expected, while single-paper claims replicate only 19.0% (95% CI: 16.9-21.2%) more than expected. Not Supported claims replicate 28.9% less than random and show greater experimental variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C14, C16-C21 present a coherent gradient of replication success correlated with literature support, all with confidence intervals from bootstrap analysis (Figure 2E-F). C22 appropriately contextualizes findings against prior reproducibility studies. C23-C25 provide supporting context about single vs. multi-study claims. The Bayesian model for categorizing support (Figure 2A-B) is methodologically sound, and results show clear dose-response relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C32",
+      "C33",
+      "C34",
+      "C66",
+      "C67"
+    ],
+    "result": "Centralized scientific communities with overlapping authors, shared methods, and common references produce less replicable claims (OR=0.36, 95% CI: 0.27-0.48) than decentralized communities with independent teams and diverse methodologies. When modeled simultaneously, centralization and literature support account for most other predictors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32, C66-C67 present the core finding supported by multivariate logistic regression (Figure 4A). C26 describes the subsample (n=2,493 claims). C33-C34 provide supporting evidence for mechanisms through correlation analysis and exploratory ANOVA. The statistical models control for confounders including experimental variability, and effect sizes are substantial with tight confidence intervals. The network dependency measures are well-defined using established metrics (Jaccard coefficient, Gini coefficient).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Journal prominence positively predicts replication, but prominent journals account for only a small fraction of claims. Claims with high literature support have ~45% higher replication probability when studied by decentralized vs. centralized communities. Support from decentralized teams is a stronger predictor than experimental variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by logistic regression models with interaction terms (Figure 4A-C, Figure 4\u2014figure supplements 2-3). C59-C60 appropriately compare effect sizes showing centralization/social independence dominate over experimental variability. C61 is supported by Figure 4\u2014figure supplement 4. The interaction models are statistically appropriate and reveal meaningful effect modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62",
+      "C63",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors infer that confirmation bias leads to filing away contradictory results, social dependencies discourage outside researchers from pursuing claims, and collective correction is undermined by centralized influence. They identify conditions under which multiple studies may not increase confidence in findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C58, C62-C63, C69-C71 are primarily inferences and speculations about mechanisms. While these interpretations are plausible and supported by citations to relevant literature (C55, C57), they go beyond what the data directly demonstrate. C58 is based on exploratory analysis (C34) with limited sample size. C63 extrapolates to clinical implications without direct evidence. These are reasonable interpretations but require additional empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors argue that LINCS L1000 data, while not error-free, provides an appropriate replication benchmark because it uses representative methods and is free from social/methodological dependencies inherent in sequential publication. This approach can identify uncertain claims at scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 establish LINCS L1000 reproducibility and independence from the literature corpus. C79-C82 present a coherent methodological argument about why imperfect high-throughput data can still serve as a replication benchmark by avoiding systematic biases in the publication system. C83-C84 appropriately position the contribution. The logic is sound: the goal is to detect social/cultural biases in science, not to have perfect experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors review prior literature on replication failures, publication bias, network effects on collective performance, and methodological diversity. They identify a gap: no comprehensive evaluation of how scientific community network structure relates to replication of published findings, especially in biomedicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C53 accurately summarize relevant prior work with appropriate citations. C43-C44 state the hypotheses tested in the paper. C51-C53 identify the research gap. These background claims are well-supported by citations and provide appropriate context. The literature review is selective but representative of key relevant work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C68",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors conclude that research replicability is associated with network structure of scientific collaborations after adjusting for experimental variability and methodology. Current science organization incentivizes centralization, creating a productivity-reliability tradeoff. The findings allay concerns about a universal replication crisis by identifying conditions facilitating convergence on replicable findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 appropriately summarizes the main empirical finding supported by multivariate models. C65 contextualizes findings in the broader science organization literature with citations. C68 and C72 draw appropriate conclusions about implications. C73-C77 acknowledge nuances and exceptions (big science, repeated collaboration benefits) with supporting citations. C78 offers a reasonable policy recommendation based on the tradeoff identified. These conclusions follow logically from the empirical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The authors suggest this approach could be extended to a continuous replication system with proliferating high-throughput platforms, and claim this is the largest biomedical replication study of its kind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 is speculative about future applications, appropriately hedged with 'could be.' C86 claims this is the 'largest biomedical replication of its kind' but provides no quantitative comparison to prior replication studies to substantiate this claim. While the scale (51,292 claims) is impressive, the comparative claim requires verification against other large-scale replication efforts.",
+    "result_type": "MINOR"
+  }
+]

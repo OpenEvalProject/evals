@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors developed HIPODSCO1, a novel two-component polyspermy detection assay based on complementation of the sco1 mutant phenotype. The assay uses two pollen donors carrying different components (GAL4 activator and UAS-SCO1-tdTOMATO) that only produce green seeds with tdTOMATO fluorescence when both sperm from different donors fertilize the same egg cell, enabling detection of polyspermy events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 collectively establish the HIPODSCO1 assay design and validation. The experimental data in Figure 1C confirms that only seeds with both constructs show complementation (C29), and the logic of the two-component system is clearly explained (C25-C26). The limitation that monopaternal polyspermy escapes detection is appropriately acknowledged (C27-C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Using HIPODSCO1, the authors screened 56,493 seeds and identified 10 polyspermy-derived embryos that were triploid (3n) but had triploid (3n) rather than tetraploid (4n) endosperm. This demonstrates that polyspermy can selectively polyploidize the egg cell without affecting central cell ploidy, as confirmed by chromosome counting and CENH3-GFP analysis showing 11-15 chromosomes in both embryo and endosperm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C42 provide converging experimental evidence from multiple methods (chromosome spreads, CENH3-GFP) showing triploid embryos with triploid endosperm in polyspermy-derived seeds. The controls (C33-C34, C38-C39) appropriately establish expected ploidy levels. The finding of one abnormal seed with tetraploid endosperm (C42) strengthens rather than weakens the conclusion by showing the expected triploid block phenotype when central cell polyspermy does occur. The inference of selective egg cell polyploidization (C43) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C4",
+      "C52",
+      "C83",
+      "C84",
+      "C88"
+    ],
+    "result": "Polyspermy bypasses the triploid block because selective egg cell polyploidization avoids introducing extra paternal genomes to the endosperm. The authors tested this by comparing the effect of the triploid block suppressor admetos: while adm-1 increased triploid recovery 15.6-fold in interploidy crosses, it only increased polyspermy-derived triploids ~2-fold, demonstrating that most polyspermy events are insensitive to the triploid block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 provide a clever functional test of the triploid block bypass hypothesis. The large difference in admetos effect between interploidy crosses (15.6-fold) and polyspermy (2-fold) strongly supports that polyspermy-derived embryos develop without triggering the endosperm-based triploid block (C4, C49). The experimental design with large sample sizes (>110,000 seeds per condition, C47) provides statistical power. The logic connecting selective egg cell polyploidization to triploid block bypass (C44, C84, C88) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C5"
+    ],
+    "result": "Transcriptome profiling of polyspermy-derived triparental triploids (TT), biparental triploids (BT), and biparental diploids (BD) revealed no statistically significant differentially expressed genes in any pairwise comparison. The high correlation (>0.94) and overlapping PCA/MDS plots indicate that polyspermy-derived plants are transcriptionally similar to interploidy cross-derived triploids, despite inheriting two sperm cytoplasms and developing with embryo-endosperm ploidy balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C66 present comprehensive transcriptome analysis with appropriate quality controls (C58, C61) and statistical methods. The finding of no differential expression between TT and BT (C64) is supported by multiple analytical approaches (hierarchical clustering, PCA, MDS). The similarity is corroborated by phenotypic data showing comparable life-history traits (C65). However, the authors appropriately note that normalized data cannot address transcriptome size changes (mentioned in text). The conclusion that Arabidopsis responds in a transcriptionally balanced fashion (C66) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Polyspermy-derived triploids can generate stable tetraploid and diploid offspring within a single generation. Flow cytometric analysis of F2 progeny identified 5/109 near-tetraploid plants, of which 3/5 segregated exclusively tetraploid offspring in F3, confirmed as stable tetraploids in F4. The progeny segregate complex aneuploid swarms similar to interploidy cross-derived triploids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 provide multi-generational data tracking ploidy stability. The flow cytometry data (C69-C71) demonstrates both the initial identification of near-tetraploids and confirmation of stability across generations. The comparison to interploidy crosses (C67-C68) appropriately contextualizes the findings. The sample sizes are adequate for the conclusions drawn, though relatively small for the near-tetraploid category (5 plants).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Polyspermy-derived three-accession hybrids (TT3) show delayed flowering compared to parents, with flowering initiation at 64.6\u00b15.4 days\u2014approximately 15-20 days after parental lines terminate flowering. This complete temporal isolation of flowering periods suggests reproductive isolation in the first generation, though the authors acknowledge this was observed under optimized growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 provide detailed quantitative flowering time data with appropriate error estimates. The temporal separation between TT3 and parental flowering is substantial and well-documented (Figure 4E). The inference of reproductive isolation (C81) is appropriately qualified as being under optimized conditions. The comparison to prior work on two-accession hybrids (C74) provides context. However, the sample sizes are relatively small (n=7 for TT3) and field conditions would strengthen the reproductive isolation claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C82",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors provide background on polyploidization in flowering plants, explaining that polyploids typically arise from unreduced gametes or somatic doubling, and that the triploid block\u2014caused by endosperm ploidy imbalance when unreduced sperm fertilize both egg and central cell\u2014limits triploid formation and acts as a reproductive barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C23, C82, C85-C87 establish the scientific context through citations to prior literature. These background claims are well-supported by the cited references and represent established knowledge in the field. The explanation of the triploid block mechanism (C13-C19) is accurate and provides necessary context for understanding the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Prior research suggests the egg cell block is stricter than the central cell block, and that fertilization of egg and central cell occurs in a coordinated fashion during normal monospermy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 accurately represent prior findings with appropriate citations. These provide important context for interpreting the selective egg cell polyploidization results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose that polyspermy-induced polyploidization enables three-parent hybridization, which could have evolutionary significance and agricultural applications by combining traits from three cultivars or potentially overcoming endosperm-induced hybrid incompatibilities through selective egg cell transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C91 are largely speculative about potential applications (C90-C91 explicitly use 'potential' and 'might'). While the mechanism of three-parent hybridization is demonstrated, the agricultural utility and ability to overcome hybrid incompatibilities remain untested hypotheses requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors describe materials and methods used in the study, including sources of mutant lines and generation of transgenic and tetraploid plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are straightforward methodological descriptions with appropriate citations. These are standard materials and methods statements.",
+    "result_type": "MINOR"
+  }
+]

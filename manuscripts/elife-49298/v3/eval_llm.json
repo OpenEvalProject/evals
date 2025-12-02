@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6"
+    ],
+    "result": "Prior work suggests that brain connectivity mediates disease propagation in neurodegenerative diseases, with atrophy patterns matching known connectivity networks and showing selective regional vulnerability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, and C6 are well-supported by multiple citations to prior literature establishing the relationship between connectivity and atrophy patterns. These claims provide the foundational context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Zhou et al. (2012) proposed four topological descriptors (centrality, segregation, network proximity, cortical proximity) that relate to distinct mechanisms of pathology propagation (nodal stress, trophic failure, trans-neuronal spread, unguided diffusive propagation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 accurately describe the framework from Zhou et al. (2012) with appropriate citations. This establishes the theoretical foundation for the topological descriptors used in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Previous studies focused on identifying single mechanisms of disease propagation and used only cross-sectional end-stage data, representing key methodological limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 provide a critical assessment of prior work supported by citations. This critique is reasonable and establishes the motivation for the current methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Multiple distinct mechanisms likely contribute to neurodegeneration in diseases with multiple proteinopathies, variable atrophy patterns, or co-existing pathologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 are supported by appropriate citations to prior literature. These claims establish the biological plausibility for multiple concurrent spreading mechanisms, addressing limitation (i) of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Considering only end-stage pathology severely limits sensitivity in understanding disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is a reasonable inference supported by citation to Oxtoby and Alexander (2017). This establishes the motivation for using disease progression models rather than cross-sectional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The GP Progression Model estimates temporal trajectories of atrophy evolution for AD, PPMS, and HA that match known progression patterns from prior literature and histology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C28-C34 are supported by Figure 2 and citations to prior literature. The estimated progression patterns are consistent with known atrophy patterns in each condition, validating the GP Progression Model approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "AD, PPMS, and HA have distinct topological profiles: AD shows centrality (40%) and network proximity (60%); PPMS shows centrality (35%), segregation (45%), and cortical proximity (20%); HA shows centrality (25%), cortical proximity (60%), and constant progression (20%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are directly supported by Table 1 showing the weight distributions. The profiles are statistically distinct with credible intervals, bootstrap validation, and significant p-values for most weights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C65"
+    ],
+    "result": "Topological profiles (combinations of descriptors) explain observed data better than single descriptors, with higher variance explained and lower AIC scores across all three conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25, C39-C44, C65 are supported by quantitative comparisons showing topological profiles explain 82-88% of variance versus 25-64% for single descriptors, with lower AIC scores (Figure 2, Supplementary Table S4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C49",
+      "C50",
+      "C51",
+      "C68"
+    ],
+    "result": "Topological profiles derived from full disease time-course produce better-defined profiles than using only late-stage atrophy data, with stronger cohort separation and higher classification rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C49-C51, C68 are supported by comparison of Figure 3(a-b) versus 3(e-f) and Table 3 showing classification rates of 84%/68%/91% for full-course versus 57%/45%/74% for late-stage profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Individual topological profiles cluster around their corresponding cohort profiles, with cohort profiles being consistent under bootstrap cross-validation and the three cohorts separating well in topological space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26, C46-C48 are supported by Figure 3(a-b) showing clustering and Table 3 showing high classification rates (84%, 68%, 91%). Bootstrap validation shows consistency of cohort profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C70"
+    ],
+    "result": "AD outliers closer to the HA profile (159/1312 individuals) show reduced cognitive deficits with higher MMSE scores (27.6\u00b11.2 vs 26.1\u00b11.7) and lower Clinical Dementia Rating Scale scores (1.8\u00b10.7 vs 2.1\u00b10.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27, C52-C55, C70 are supported by ANOVA analyses showing statistically significant differences in clinical features. This demonstrates that topological profiles reflect underlying disease processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "HA outliers closer to the AD profile (358/5463 individuals) show lower MMSE scores (27.7\u00b10.8 vs 28.0\u00b10.6), are older (70.5\u00b110.1 vs 64.5\u00b19.8 years), and contain 70% of individuals who developed dementia within 2-4 years versus 5% in non-outliers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by ANOVA analyses and longitudinal follow-up data. The enrichment of prodromal dementia cases in the outlier group (70% vs 5%) is particularly compelling evidence for clinical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "No significant differences were found between PPMS outliers and the rest of the PPMS group in available clinical or demographic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by ANOVA analyses showing no significant differences. However, the authors acknowledge small sample sizes (N=1 and N=13 outliers) and suggest this may reflect limitations in available clinical features or sample size rather than absence of true differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C69"
+    ],
+    "result": "The distance of individual profiles from cohort profiles correlates negatively with clinical features: MMSE in AD (R=0.11, p<0.01), EDSS in PPMS (R=0.68, p=0.07), and age in HA (R=0.32, p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C64, C69 show correlations, but the effect sizes are modest (R=0.11 for AD) and one correlation is not statistically significant (PPMS p=0.07). While the correlations are in the expected direction, the clinical utility of these weak correlations is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C84",
+      "C85"
+    ],
+    "result": "The topological profiles differ substantially among AD, PPMS, and HA at both cohort and individual levels, suggesting distinct modes of pathological spread beyond different epicenters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C84-C85 are supported by Table 1 showing different weight distributions and Figure 3 showing separation in topological space. The inference that differences reflect distinct spreading mechanisms rather than just different epicenters is reasonable given the methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The AD topological profile shows both network proximity (60%) and a substantial centrality component (40%), with the centrality component being less apparent in late-stage-only profiles (25%) and suppressed in single-descriptor approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by comparison of Table 1 (full-course) with Table 2 (late-stage) and Figure 2. The centrality component is consistent with prior literature on trans-neuronal spread while revealing an additional hub-vulnerability mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Hub-vulnerability may drive early AD progression while trans-neuronal spread dominates later stages, potentially explaining heterogeneity in AD and consistency with atypical presentations like posterior cortical atrophy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C78 are speculative interpretations of the centrality component in AD profiles. While supported by citations to atypical AD and metabolic demand literature, these remain hypotheses requiring direct validation through longitudinal studies or mechanistic experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Hub vulnerability appears as a significant component in HA and PPMS only when considering full trajectories, suggesting activity-dependent mechanisms may influence early brain loss across neurodegenerative conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by comparison of Tables 1 and 2. Claim C80 is speculative but reasonably supported by citations. The observation of centrality components across conditions when using full trajectories is a novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C89"
+    ],
+    "result": "Departures of individual profiles from cohort profiles signal abnormality, and alignment with other cohort profiles corresponds to clinical features of that cohort, indicating that AD and PPMS represent distinct mechanisms from normal aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83, C89 are supported by the outlier analyses showing clinical differences (C53-C60). The inference that mechanisms differ from aging is supported by distinct topological profiles and age-regression preprocessing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "PPMS shows diverse contributing mechanisms (centrality, segregation, cortical proximity) suggesting multiple processes, while HA shows cortical proximity and constant progression suggesting relatively uniform loss not linked to connectivity features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by Table 1 weight distributions. The interpretations are reasonable inferences from the data, though the biological mechanisms underlying these patterns require further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "While tractography has limitations (false positives/negatives), it reliably recovers major anatomical connections, and using a healthy connectome is a sensible first-order approximation supported by prior work showing connectome choice doesn't significantly impact predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 acknowledge tractography limitations while providing reasonable justification for the methodological choices. The citation to Acosta et al. (2018) supports the connectome choice, though this remains a simplification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The GP Progression Model captures biomarker trajectories rather than underlying pathology, and differences in biomarker accuracy can affect the order of change, though effects are expected to be small with the current pipeline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 appropriately acknowledge model limitations with supporting citations. This is an honest assessment of the gap between measured biomarkers and underlying pathology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "A single cohort-level epicenter was estimated as the most atrophied region for each dataset (hippocampus for AD, caudate for PPMS, insula for HA), consistent with prior knowledge and literature showing epicenters are typically near the most atrophied regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 describe the epicenter selection methodology with appropriate citations. The epicenters are consistent with prior knowledge, though individual variation in epicenters is acknowledged as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "With further development, topological profiles may provide clinical utility, such as identifying HA individuals at risk for AD for patient management and clinical trial recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 are speculative about future clinical applications. While the enrichment of prodromal dementia in HA outliers (C59) provides supporting evidence, clinical utility requires prospective validation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study used three cohorts: AD (N=1713, age 73.9\u00b17.2 years from ADNI), PPMS (N=64, age 41.6\u00b110.2 years), and HA (N=5463, age 64.8\u00b110.8 years from Rotterdam Study, including 148 who developed dementia).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109 provide demographic descriptions of the study cohorts. These are straightforward data descriptions that are internally consistent and appropriate for the analyses performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Structural connectomes were generated using MRtrix3 as weighted adjacency matrices across 82 cortical and subcortical ROIs (excluding cerebellum and brainstem), with the average connectome computed by taking the mean over subject-wise matrices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 describe the connectome generation methodology. The approach is standard and appropriate, though the averaging procedure may lose individual variation (acknowledged in the discussion).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The topological profile weights \u03b2 were estimated using Expectation-Maximization (ISRA algorithm) for positively-constrained least-squares minimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 describes the optimization method with appropriate citations. The ISRA algorithm is appropriate for non-negative least squares problems, though convergence criteria and initialization are not specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Graph-theoretic measures may associate with different mechanisms of disease spread in neural networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by citations to prior literature and represents the conceptual framework underlying the study. This is a reasonable working hypothesis, though the links between mathematical abstractions and biological mechanisms are acknowledged as simplistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The effects of aging were regressed out in the AD and PPMS cohorts to minimize effects of the aging process on disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 describes a preprocessing step that is methodologically sound for isolating disease-specific effects from age-related changes. However, complete separation of aging and disease effects may not be fully achievable.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Cryo-EM analysis revealed that 63% of Pol I elongation complex particles lack the A49-A34.5 heterodimer (Pol I*), while 37% retain it (Pol I). Both forms were refined to high resolution (3.18 \u00c5 and 3.42 \u00c5, respectively) and show similar overall conformations except for the presence/absence of the heterodimer and the position of A12.2C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 are well-supported by quantitative cryo-EM data showing particle distribution, resolution metrics, and structural comparisons. The data processing pipeline is clearly documented (Figure 1\u2014figure supplement 1), and the structural observations are directly derived from the electron density maps with appropriate resolution for the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C3"
+    ],
+    "result": "In Pol I* lacking the heterodimer, the A12.2C domain occupies a novel 'Rpb9-like' position on the A135 surface that overlaps with the A34.5-Ct binding site in complete Pol I. The A12.2C can move between TFIIS-like and Rpb9-like positions via rotation around a hinge at residues 66-67.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 and C3 are strongly supported by the cryo-EM structures showing clear electron density for A12.2C in the novel position (Figure 1). The structural comparison with Pol II Rpb9 and the identification of the hinge region are well-documented. The overlap with A34.5-Ct is demonstrated through structural superposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The binding of A12.2C to different positions is mutually exclusive with heterodimer binding and depends on cleft conformation. A12.2C binds the TFIIS-like position when the cleft is open/partially open, while the Rpb9-like position is only accessible when the heterodimer is absent. The presence of the heterodimer may promote A12.2C binding to the TFIIS-like site by blocking the Rpb9-like site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 and C61-C63 are supported by structural observations across multiple Pol I states (apo, DNA-bound, EC). The steric constraints are clearly demonstrated through structural comparisons. The mechanistic inference about heterodimer blocking the Rpb9-like site (C63) is reasonable given the structural overlap, though it remains an inference rather than direct experimental demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Two distinct interaction surfaces on A135 mediate mutually exclusive binding of A12.2C or A34.5-Ct: the ED1 domain and the HB domain. Both A12.2C and A34.5-Ct form similar interactions with conserved residues (N683, N684, D990). The A135 N-terminal tail acts as a switch, repositioning to either allow or prevent A34.5-Ct binding to the HB domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are well-supported by detailed structural analysis showing specific residue interactions (Figure 2). The electron density maps clearly show the binding interfaces, and the identification of conserved interacting residues is appropriate at the reported resolution. The 'switch' mechanism of A135-Nt is a reasonable interpretation of the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Fluorescence anisotropy experiments demonstrate that heterodimer binding to Pol I is reversible and that A12.2C binding to the Rpb9-like position occurs only after heterodimer dissociation. Free A12.2C peptide or GMPCPP cannot displace the bound heterodimer from Pol I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are supported by fluorescence anisotropy data (Figure 3). The experiments show concentration-dependent binding, reversibility through exchange experiments, and negative results with A12.2C peptide and GMPCPP. However, the authors note they could not fit a 1:1 binding model, suggesting complexity in the binding mechanism. The conclusion that A12.2C binding requires prior heterodimer dissociation is a reasonable inference from the negative displacement experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Comparative structural analysis reveals that the ED1 domains of Pol I, Pol II, and Pol III have evolved distinct architectures specifically tailored to bind their respective Rpb9-like subunits (A12.2C, Rpb9C, C11C) in different positions. Pol I ED1 is smaller and lacks extensions present in Pol II and Pol III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by structural comparisons across the three polymerases (Figure 4). The differences in ED1 architecture and the resulting different binding modes for the Rpb9-like domains are clearly demonstrated. The inference about evolutionary tailoring (C75) is reasonable given the structural divergence and functional conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The active sites of Pol I* and 14-subunit Pol I are identical. GMPCPP binds in the 'A' site with positioning virtually identical to Pol II, involving conserved residues for phosphate binding (R714, R957), NTP/dNTP discrimination (N625, R591), and base stacking (L1202 from trigger loop).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are well-supported by high-resolution structural data of the active site (Figure 5). The pooling strategy for particles from both Pol I forms is justified by the lack of differences. The identification of specific residue interactions and comparison with Pol II structures is appropriate. The conservation of the catalytic mechanism is a reasonable inference from the structural similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Pol I stabilizes the downstream transcription bubble edge through interactions with +1 and +2 nucleotides of the non-template strand. The +2 base flips into an 'A135 pocket' formed by fork loop 2 and loop B, with F508 stacking against the +1 base, resembling bacterial RNA polymerase. These interactions form only when the cleft is completely closed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 are supported by structural data showing the DNA interactions (Figure 5). The comparison with bacterial polymerase is appropriate and well-documented. The observation that these interactions require complete cleft closure (C90) is supported by the classification data showing different conformational states (Figure 5\u2014figure supplement 1). The claim that Pol II and Pol III cannot form equivalent interactions (C89) is supported by structural comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Formation of the elongation complex involves coarse movement of modules 1 and 2, while nucleotide stabilization in the active site requires more subtle, modular rearrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by the classification data showing different conformational states with varying cleft widths and nucleotide binding (Figure 5\u2014figure supplement 1). The distinction between coarse and subtle movements is a reasonable interpretation of the structural intermediates observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "A12.2C alternates between TFIIS-like and Rpb9-like positions depending on heterodimer presence. In the TFIIS-like position, A12.2C occludes the active site (incompatible with NTP incorporation but compatible with RNA cleavage). When the cleft closes, A12.2C moves to the ED1, where binding is mutually exclusive with the heterodimer. The A135 surface, particularly ED1, plays a pivotal role in factor exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 synthesize the structural findings into a coherent mechanistic model. The structural basis for mutual exclusivity is well-demonstrated. The functional implications (C94 about active site occlusion, C95 about cleft closure) are reasonable inferences from the structures. The conclusion about ED1's role in factor exchange (C98) is a well-supported interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "In apo Pol I*, the repositioning of A12.2C to the Rpb9-like position shifts A12.2N by ~3 \u00c5 toward the jaw, and part of the jaw moves toward the A12.2 linker to stabilize this position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by structural comparison of apo Pol I* with previous apo Pol I structures (Figure 1\u2014figure supplement 3). The quantitative measurement of the shift and the interpretation about stabilization are reasonable given the structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "A12.2 may regulate jaw/lobe interface movement, especially in the absence of A49. A12.2C binding to ED1 might restrict lobe movement, while A12.2N regulates jaw flexibility. Together, both domains could regulate cleft opening/closing and binding to +1/+2 nucleotides. When the heterodimer is present, A12.2 might destabilize the EC by occupying the TFIIS-like site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C105 are largely speculative mechanistic interpretations. While C99-C100 cite recent genetic studies, the specific mechanistic proposals about A12.2C restricting lobe movement (C101), regulating cleft dynamics (C102-C103), and destabilizing the EC (C104-C105) are not directly tested. These are reasonable hypotheses based on the structural data but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C115",
+      "C116"
+    ],
+    "result": "Heterodimer association to Pol I may provide an additional regulatory layer for rDNA transcription in vivo. The ratio of Pol I to Pol I* could be regulated by heterodimer concentration in the nucleolus, controlling the pool of initiation-competent Pol I molecules beyond regulation by Rrn3 binding and dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C109 and C115-C116 present a speculative regulatory model. While C107 cites previous work about Rrn3, the proposals about Pol I* representing a pre-active pool (C108) and regulation through heterodimer concentration (C109, C116) are hypotheses not directly tested in this study. The connection to nutrient starvation effects (C115) cites previous work but the mechanistic link remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Nutrient-dependent regulation of heterodimer nucleolar localization has been observed in mammals and yeast. In yeast, A49 is required for high Pol I loading rates onto rDNA, and the human PAF53-PAF49 can functionally substitute the yeast heterodimer, suggesting conserved function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 are supported by citations to previous work. These are established findings from the literature that provide context for the current study's mechanistic proposals. The functional conservation between yeast and human (C114) is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Release of the heterodimer would allow binding of elongation factors (Spt4/5 and Paf1C) to Pol I. In the Pol I EC, the A49 tWH and linker preclude canonical Spt4/5 binding, while the heterodimer dimerization domain overlaps with Paf1C binding sites. Factor exchange during initiation-to-elongation transition could occur through heterodimer release and switching to Pol I*, with A12.2 preventing heterodimer re-association. Release might be induced by Spt4/5 and Paf1C in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C130 present an elaborate mechanistic model for elongation factor recruitment. While C118-C124 cite previous structural and functional studies establishing factor binding and activities, the specific proposals about mutual exclusivity (C125-C126), factor exchange mechanism (C127), and A12.2 preventing re-association (C128) are speculative. The proposal that Spt4/5 and Paf1C induce heterodimer release (C130) is explicitly acknowledged as speculation based on negative in vitro results (C70). This model requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Background context on Pol I structure, function, and regulation based on previous literature, including the 14-subunit composition, structural conservation with Pol II/III, incorporation of transcription factor-like subunits (A49-A34.5, A12.2), conformational transitions, and genetic/biochemical characterization of subunit functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C40 provide literature-based background context. All are supported by appropriate citations to previous work. These establish the foundation for the current study but are not novel findings from this manuscript.",
+    "result_type": "MINOR"
+  }
+]

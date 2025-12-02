@@ -1,0 +1,490 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "The authors designed three symmetric membrane models (control, inner, raft) mimicking different aspects of the plasma membrane and performed over 40 \u03bcs of all-atom MD simulations using CHARMM36m force field on GROMACS and Anton2 platforms. The simulations included MA monomers, trimers, and various membrane compositions with appropriate equilibration protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-documented with specific details about force fields, software, equilibration times, system sizes, and simulation parameters (C172-C198). The membrane model design is justified by citation to experimental work (C26) and includes appropriate compositional details (C27). The total simulation time of 42.8 \u03bcs across 13 systems (C189) is substantial and appropriate for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C203",
+      "C204"
+    ],
+    "result": "The simulations captured, for the first time, natural (unbiased) insertion of the myristoyl tail into membrane bilayers, occurring in 2 of 4 monomer trajectories and in the trimer system, with an average insertion timescale of 50 ns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C49, and C203 assert this is the first unbiased observation of Myr insertion, which is a significant achievement supported by the simulation data (C50-C52). The quantitative timescale (C204) and reproducibility across multiple trajectories provide strong evidence. The claim of being 'first' is reasonable given the computational challenge of capturing rare events without biasing potentials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C56",
+      "C57",
+      "C137",
+      "C209"
+    ],
+    "result": "Myr insertion occurred repeatedly only in the inner membrane model that mimics the inner leaflet of the PM, and never in the raft or control models, even with MA trimers present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The membrane specificity of insertion is consistently observed across multiple simulation conditions (C30, C31, C56, C57, C137). This is a robust finding as it was tested with monomers, trimers, and different membrane patches. The negative results with raft and control models strengthen the conclusion about the importance of specific membrane composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C58",
+      "C59",
+      "C60",
+      "C135",
+      "C202",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "Myr insertion follows an unrolling mechanism where insertion occurs only from the open bound conformation, never from the blocked conformation, with C14 passing C2 as the tail rolls into the leaflet, and H1 shifting to lay flat on the membrane surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic details are consistently observed across all insertion events (C53-C55, C58-C60). The conformational requirement (C54, C55, C202) and the specific unrolling mechanism with detailed atomic movements (C58, C59, C206, C207) are well-documented. The accompanying structural changes in H1 (C205) provide additional support for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C114"
+    ],
+    "result": "MA binding to membranes occurs rapidly (within 100 ns) in two conformations: mouth-down (blocked) and mouth-to-the-side (open), with the initial protein orientation not influencing the final bound state, and both conformations occurring reproducibly across replicate simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of two binding conformations is well-documented (C35, C114) with supporting visual evidence referenced. The independence from initial conditions (C38) and reproducibility (C41) strengthen the findings. The timescale data (C40) provides quantitative support, though the comparison between models shows some variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C34",
+      "C42",
+      "C43",
+      "C44",
+      "C107",
+      "C108",
+      "C115",
+      "C199",
+      "C200"
+    ],
+    "result": "MA binding is stabilized primarily by electrostatic interactions between the HBR and charged lipid headgroups (especially PIP2 and DOPS), with these interactions strong enough to maintain binding even without Myr insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrostatic stabilization is consistently observed across all membrane models (C34, C107, C199, C200) and is supported by specific residue-lipid interaction data (C42, C108). The finding that binding persists without Myr insertion (C4, C34, C111) is important and well-supported by long trajectories (3-5 \u03bcs) showing stable binding. Agreement with experimental observations (C42) adds external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C121",
+      "C201"
+    ],
+    "result": "The open conformation is the only biologically relevant conformation during early viral assembly when the full Gag polyprotein is present, as it allows H5 to extend toward the solvent while H1 and HBR interact with the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biological relevance argument (C117, C201) is based on sound structural reasoning about the connectivity of MA to the rest of Gag. The characterization of the open conformation (C118) and its preference (C121) are supported by simulation data. However, this is an inference about biological relevance rather than direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Myr exposure occurs readily from the open conformation within 200 ns as the Lid region separates from H1, opening the protein's mouth, while the blocked conformation only allows Myr to move within the hydrophobic cavity without exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conformational dependence of Myr exposure is clearly demonstrated (C124, C125) with specific mechanistic details (C123, C126). The timescale (C122) is reasonable and supported by the simulation data. The distinction between the two conformations in terms of Myr behavior is well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "A combination of membrane surface charge, lipid packing, and lipid tail unsaturation are key determinants for Myr insertion. The inner model's sterol content creates a more ordered environment preferred by Myr, while the control model is too disordered and the raft model too tightly packed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The multi-factorial analysis (C210) is supported by systematic comparison of membrane properties (C139, C140, C211). The mechanistic explanations for why each model does or doesn't support insertion (C212-C215) are reasonable inferences from the data. However, some aspects rely on qualitative assessment (C141, C213) rather than quantitative measurements of packing defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C221"
+    ],
+    "result": "MA binding results in co-localization of charged lipids (especially PIP2) to the protein binding site even with a single MA unit, with 75-100% of PIP2 recruited in the inner model. PIP2 recruitment is not required for Myr insertion, though contacts may increase upon insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lipid recruitment is well-documented with quantitative data (C85, C86) showing model-dependent differences. The independence of PIP2 recruitment from Myr insertion (C81) is an important finding, though the variability in PIP2 contacts (C82, C83) suggests a complex relationship. The effect of Myr insertion on MA mobility (C84) provides additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "PS lipid interactions with MA vary by membrane model and Myr insertion state, with enhanced interactions in the raft model when Myr is pre-inserted (12-30%) and complex patterns in systems with multiple MA units, indicating a tight feedback loop between Myr insertion and local lipid composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PS interaction data (C87-C91) show clear model-dependent and state-dependent patterns. The variability in the control model (C88) is reasonably attributed to membrane fluidity. The effects with multiple MA units (C93-C96) add complexity but are well-documented. The conclusion about feedback loops (C92) is a reasonable inference from the observed correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "When multiple MA monomers interact with each other, PIP2 density increases locally at the protein binding site, with MA-MA interactions modifying local lipid concentration to enhance the site for viral assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The progressive increase in PIP2 density with MA-MA interactions (C98) is clearly observed. The conclusion about enhancement for viral assembly (C99) is a reasonable inference, though the monomers did not form a trimer in the simulation timescale, which somewhat limits the strength of this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C158",
+      "C217",
+      "C218",
+      "C219"
+    ],
+    "result": "Myr insertion increases lipid order (SCD) in PIP2 and sphingomyelin tails, with different effects for monomers versus trimers. Trimers induce increased order in the mid-region of sphingomyelin tails in the binding leaflet and disorder in the opposite leaflet, potentially recruiting additional MA units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lipid order changes are quantified using SCD parameters (C100, C158, C217) with clear differences between monomer and trimer systems (C101, C102, C218, C219). The opposite leaflet effects (C104, C105) suggest inter-leaflet coupling. The speculation about MA recruitment (C103) is reasonable but not directly tested. The lack of effect in the control model (C157) serves as an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C208"
+    ],
+    "result": "Time-independent component analysis (tICA) identified the HBR, H1, and H5 as key protein regions contributing to Myr insertion, with the first tIC related to protein motions for Myr exposure/sequestration and the second tIC capturing insertion events, corroborating the unrolling mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tICA methodology is appropriate for identifying slow motions (C161). The interpretation of the tICs (C162, C163) is supported by correlation with known events. The identification of key distances (C168, C169) and protein regions (C170, C208) provides mechanistic insight. The V-shape pattern for insertion (C164, C165) is a clear signature. The corroboration of the unrolling mechanism (C171) strengthens the overall mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "RMSF analysis shows that residues 8-18 (H1) fluctuate more before and during Myr insertion and stabilize afterwards, with H1 moving closer to the bilayer and laying flat on the membrane surface as Myr inserts and aligns with lipid tails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RMSF analysis (C64, C65) provides quantitative evidence for conformational changes associated with insertion. The structural changes in H1 (C66) and the stability of inserted Myr (C67) are consistent with the proposed mechanism. This analysis complements the visual observations and mechanistic descriptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "In cholesterol and sphingomyelin-rich membranes (raft model), the angle distribution of Myr is much narrower than in the fluid control model, showing that membrane structure and mechanical properties can restrain Myr motion and dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison of angle distributions (C69) provides clear evidence for membrane-dependent restraint of Myr dynamics. The conclusion about membrane properties affecting Myr motion (C70) is well-supported by this data and consistent with the overall findings about membrane specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C62",
+      "C63"
+    ],
+    "result": "A partially inserted Myr in the inner model returned to the protein's hydrophobic cavity, and the Myr tail can survey the local lipid environment, inserting partially and exiting before permanent insertion, suggesting Myr may act as a lipid sensing probe during viral assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of Myr return to the cavity (C71) is unexpected but well-documented. The dynamic behavior of partial insertion and exit (C62) is clearly observed. The interpretation as a feedback loop (C72) and the speculation about lipid sensing (C63, C73) are reasonable inferences from the data, though they remain speculative without direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "During insertion, C2 (first carbon) remains relatively stable while C14 (last carbon) reaches near the bilayer center (~0.6 nm away). With multiple MA units, C2 can penetrate deeper into the bilayer, potentially pushing the protein platform deeper as more Gag units bind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The detailed tracking of C2 and C14 positions (C74, C77, C78) provides quantitative support for the insertion mechanism. The explanation for C14's position based on Myr length (C78) is sound. The observation with multiple units (C75) and the speculation about cumulative effects (C76) are interesting but based on limited data. The horizontal configuration when Myr returns (C79) is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C155"
+    ],
+    "result": "Myr insertion affects lipid-lipid interactions, creating more defined sphingomyelin aggregates with cholesterol at their edges (not below the protein). Myr avoids fully saturated regions for initial insertion, and cholesterol-rich sites cause Myr to retract, with permanent insertion occurring in less cholesterol-rich areas, suggesting a feedback loop between Myr insertion and local lipid composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observations about sphingomyelin aggregation (C144, C145) and cholesterol distribution (C145, C146, C149) are well-documented. The avoidance of saturated regions (C150) and the specific example of cholesterol-induced retraction (C151, C152, C153) provide mechanistic insight. The conclusion about feedback loops (C155) is well-supported by these observations, though the dynamics remain incompletely understood (C154).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C159",
+      "C160"
+    ],
+    "result": "The control model (lacking cholesterol and raft-forming lipids) shows no lipid aggregates and no statistical difference in lipid order parameters compared to membrane-only systems, while the inner model shows increased order with Myr insertion, demonstrating that membrane composition determines the extent of protein influence on lipid-lipid interactions and that Myr plays a role in lipid sorting rather than MA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of effects in the control model (C156, C157) serves as an important negative control. The contrast with the inner model (C158) clearly demonstrates composition-dependent effects. The conclusions about membrane composition determining protein influence (C159) and Myr's role in lipid sorting (C160) are well-supported by the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C220"
+    ],
+    "result": "Addition of multiple MA units did not result in Myr insertion in control or raft models but enhanced changes in the local membrane environment of the inner model, with increasing protein units enhancing membrane changes as would occur during early viral assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative results with control and raft models (C32) strengthen the conclusion about membrane specificity. The enhanced effects in the inner model (C33, C220) are well-documented. The connection to biological viral assembly (C220) is a reasonable inference, though the simulations don't directly model the full assembly process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C129",
+      "C127",
+      "C128",
+      "C130",
+      "C131",
+      "C134"
+    ],
+    "result": "The character of the membrane has a greater influence on Myr exposure and insertion than MA trimerization, contrary to previous suggestions that trimerization was needed for exposure. In solvent, Myr sequestration into the hydrophobic cavity is observed, and Myr exposure itself is not a determining step for insertion or membrane retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion about membrane character being more important than trimerization (C129) is well-supported by the observation of insertion from monomers. The comparison with previous work (C127, C128) provides context. The observations in solvent (C130, C131) are reasonable controls. The conclusion about Myr exposure not being determinative (C134) is supported by the observation that exposure occurs in all models but insertion only in the inner model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C166",
+      "C167",
+      "C143"
+    ],
+    "result": "Membrane composition affects MA-bilayer interactions, with the protein initially free to search the membrane surface but restricted after Myr insertion. However, Myr does not serve as the only anchor since binding persists without insertion. Different membrane models show different intra-protein and protein-membrane interactions, demonstrating the need for realistic membrane models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The effect of membrane composition (C106) is well-established throughout the study. The mobility changes (C109, C110) are clearly observed. The conclusion about Myr not being the sole anchor (C111) is supported by long trajectories without insertion and by experimental evidence (C112). The methodological conclusion about needing realistic models (C143, C167) is well-justified by the observed differences between models (C166).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The open conformation is strongly modulated by HBR-PIP2 interactions, with PIP2-mediated interactions and H1 shift enabling permanent transition from blocked to open conformation within the first microsecond of simulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The role of HBR-PIP2 interactions in stabilizing the open conformation (C119) is well-documented with specific trajectory examples. The mechanism of conformational transition (C120) is clearly observed in the microsecond trajectories. This provides important mechanistic insight into the conformational dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "In one protein-only equilibration, Myr was observed in an external hydrophobic cavity between the Lid and H3, different from the NMR-suggested lodging pocket for membrane lipid tails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a clearly documented observation (C132) from one simulation. The comparison to NMR studies (C133) provides context. While this is a single observation and wasn't pursued further, it's accurately reported and could be relevant for future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Myr insertion is permanent on the timescale of the simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a straightforward observation about the stability of the inserted state within the simulation timescales (microseconds). The claim is appropriately qualified to the simulation timescale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C222",
+      "C223",
+      "C225",
+      "C226",
+      "C227"
+    ],
+    "result": "Changes in local lipid composition can influence recruitment of viral components, creating a suitable platform for viral assembly. The study used symmetric models with asymmetric models reserved for future work. The findings are expected to provide insight into other retroviral systems and offer perspectives for antiretroviral treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The speculation about influencing viral component recruitment (C222) is reasonable but not directly tested. The acknowledgment of the symmetric model limitation (C223) is appropriate. The claims about broader applicability (C225) and therapeutic relevance (C226) are speculative and would require additional validation. These represent future directions rather than established results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,445 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Grid cells in the medial entorhinal cortex exhibit spatially periodic firing patterns organized into discrete modules with characteristic scale ratios. Experimental observations show that grid scales cluster around discrete values, with consecutive module pairs having scale ratios in the range 1.2\u20132.0, and the average scale ratio across animals being constant at 1.4\u20131.7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 accurately summarize well-established experimental findings about grid cell organization, all supported by appropriate citations to primary literature (Hafting et al., 2005; Stensola et al., 2012; Barry et al., 2007; Krupic et al., 2015). These are foundational observations that motivate the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Existing models of grid cell formation, including continuous attractor networks and alternative approaches, cannot self-organize discrete modular structure from smooth parameter gradients without explicit tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15, C17 correctly characterize limitations of existing models based on their published properties and theoretical structure. C16 provides appropriate context about smooth tuning distributions in other neural systems. These claims establish the gap that the current work addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "An uncoupled model consisting of 12 continuous attractor networks with smoothly increasing inhibition distance produces triangular grids with scales proportional to inhibition distance, but does not self-organize into discrete modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C37 describe the baseline uncoupled model and its behavior, supported by simulation results in Figures 2A-D and 3A-B. The model architecture is clearly specified, and the simulations demonstrate that smooth parameter gradients produce smooth scale distributions without modularity, establishing the need for the coupling mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Adding excitatory connections between adjacent networks along the dorsoventral axis causes grid scales to cluster into discrete modules that are co-modular with orientation, matching experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 describe the key innovation and its primary effect, supported by simulation results in Figures 2E-H and 3A-B (coupled). The coupled model produces clear plateaus in scale with discrete jumps, and orientation clustering within modules, both matching experimental data (Stensola et al., 2012). This is the central mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The coupled model produces scale ratios of approximately 1.7 and orientation differences of approximately 30\u00b0 between adjacent modules, and these values are robust to various parameter perturbations, architectural variations, and noise sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 report quantitative measurements from simulations (Figure 3C) and extensive robustness testing (Figure 4A-I). The scale ratio of 1.74 \u00b1 0.02 and orientation difference of 29.5 \u00b1 0.4\u00b0 fall within the experimental range. The robustness analysis is comprehensive, testing multiple perturbations including different inhibition profiles, coupling directions, noise sources, and spiking dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69"
+    ],
+    "result": "The mechanism underlying module formation involves competition between excitatory coupling (which adds rigidity favoring shared grid patterns) and changing inhibition distance (which drives scale changes), resulting in commensurate lattice relationships at module interfaces with stereotyped geometric properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C69 provide the mechanistic interpretation of the model's behavior, supported by activity overlays in Figure 3D showing partial overlap of activity peaks at module boundaries. The explanation is conceptually clear and consistent with the observed plateaus and jumps in scale. The commensurate lattice framework provides a geometric basis for the specific scale ratios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The model predicts field-to-field firing rate variability in grid cells at module interfaces, arising from selective excitation of activity peaks in the smaller-scale grid by the larger-scale grid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 describe a prediction of the model visible in Figure 2G and supported by citations to experimental observations (Ismakov et al., 2017; Dunn et al., 2017; Diehl et al., 2017). The mechanistic explanation is logical and follows from the commensurate lattice structure. This represents a testable prediction that connects model structure to observed phenomena.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Systematic exploration of the excitation-inhibition balance in a two-network model reveals discrete phase regions corresponding to different commensurate and discommensurate lattice relationships, with scale ratios spanning the experimentally observed range of 1.2\u20132.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 describe the phase diagram analysis in Figure 5A-D, showing how different parameter combinations produce different lattice relationships. The finding that model-predicted scale ratios match the experimental range (1.2\u20132.0) is well-supported. The robustness to noise (Figure 5\u2014figure supplement 3) strengthens the result. This provides a comprehensive characterization of the model's parameter space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Discommensurate lattice relationships produce modules with preferred scale ratios (1.39 \u00b1 0.10) and orientation differences (6.7 \u00b1 3.5\u00b0) that match experimental observations, but with greater variability than commensurate relationships due to lower coupling rigidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 describe discommensurate simulations (Figure 6) showing module formation with scale ratios matching Stensola et al. (2012). The increased variability compared to commensurate systems is demonstrated and mechanistically explained. The comparison to experimental variability (Stensola et al., 2012; Barry et al., 2007) is appropriate. This extends the model to a broader parameter regime.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The model occasionally produces 'defects'\u2014lattice relationships with low activity overlap and large orientation differences\u2014which arise under strong coupling conditions and are distinguished from incommensurate lattices by their characteristic scale ratios and orientation differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 describe a specific type of lattice relationship observed in simulations (Figure 6F-G) and characterized in phase diagrams (Figure 5B). The distinction between defects (strong coupling, scale ratio <1.1, orientation difference >10\u00b0) and incommensurate lattices (weak coupling, scale ratio >1.3) is clearly defined. This represents a detailed characterization of model behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Discommensurate lattice relationships also produce field-to-field firing rate variability through a mechanism involving discommensurations\u2014regions lacking activity overlap that move through the neural sheet during path integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 extend the firing rate variability prediction to discommensurate systems, with mechanistic explanation and an example in Figure 6\u2014figure supplement 2. The mechanism is logically consistent with the discommensurate lattice structure. This represents a testable prediction specific to discommensurate relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Varying model parameters across simulations to mimic biological variability produces a range of scale ratios, but the average scale ratio remains constant across module pairs (1.52 \u00b1 0.03), matching experimental observations, while normalized scale differences change across the hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C110 describe the parameter variation analysis (Figure 7) showing constant-on-average scale ratios despite individual variability. Statistical testing (Mann-Whitney U test, p=0.9 for scale ratios, p=0.006 for normalized differences) supports the claims. The mean scale ratio (1.52 \u00b1 0.03) agrees well with Krupic et al. (2015) and overlaps with Stensola et al. (2012). This demonstrates a key emergent property of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Simulated lesions demonstrate that disrupting excitatory coupling at one location causes immediate changes in grid scales and orientations at distant locations, with the anatomical distribution of changes indicating coupling directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C120 describe lesion experiments (Figure 8) showing that inactivating network z=7 causes changes in networks z\u22646 but not z\u22658, consistent with ventral-to-dorsal coupling. The mechanistic explanation (loss of constraint from ventral networks) is logical. Claims C119-C120 appropriately frame these as testable experimental predictions. This provides a clear experimental test of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Regional and decimation lesions produce additional predicted effects: regional lesions cause individual networks to contain multiple modules, potentially enhancing anatomical overlap, while decimation lesions impede grid pattern motion and destroy grid responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 describe additional lesion simulations (Figure 8\u2014figure supplement 1) with specific predictions. The regional lesion prediction connects to experimental observations of module overlap (Stensola et al., 2012). The observation of band-like rate maps (C124) is noted with appropriate caution given disputed experimental reports. These represent additional testable predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C126",
+      "C127",
+      "C128",
+      "C181",
+      "C187",
+      "C188"
+    ],
+    "result": "The model establishes that continuous attractor networks with excitatory coupling along the MEC axis and smoothly increasing inhibition distance can self-organize a discrete hierarchy of modules through geometric lattice relationships, producing scale ratio distributions that quantitatively match experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C18-C23, C126-C128, C181, C187-C188 state the main theoretical contribution. The mechanism is demonstrated through extensive simulations (Figures 2-7) showing module formation, specific scale ratios, robustness, and quantitative agreement with experimental data. This represents the core finding that continuous attractor networks can produce modular structure without explicit parameter discontinuities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The model's distribution of scale ratios matches experimental measurements from multiple studies, capturing both the preferred range (1.4\u20131.7) and the variability (1.1\u20132.0) observed across individual module pairs, while reproducing the constant-on-average property.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C136 provide detailed comparison to experimental data from Barry et al. (2007), Stensola et al. (2012), and Krupic et al. (2015). The model reproduces both the mean values and the variability, and the constant-on-average property emerges from the geometric mechanism. This demonstrates quantitative agreement with multiple independent datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The model requires co-modularity of scale and orientation, produces orientation differences spanning 0\u00b0\u201330\u00b0 with a predicted positive correlation to scale ratio, and predicts preservation of orientation differences across environments, consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C145 address orientation properties. Co-modularity (C137) is demonstrated in simulations and matches experiments. The range of orientation differences (C138-C139) is shown in Figure 5. The predicted correlation (C140) is testable. Claims C141-C143 appropriately note confounds in existing data and suggest improved experiments. The prediction of preserved orientation differences (C144) is supported by Krupic et al. (2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The model predicts structured field-to-field firing rate variability arising from selective excitation at module interfaces, with signatures that could be sought experimentally but may be obscured by other sources of variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 describe a testable prediction with mechanistic explanation, example (Figure 6\u2014figure supplement 2), and appropriate caveats about other sources of variability (place cell inputs, reward modulation). The prediction is consistent with suggestions by Ismakov et al. (2017). This represents a specific, mechanistically grounded prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The model requires excitatory coupling between grid cells along the MEC axis, which is supported by recent experimental evidence for short-range and long-range excitatory connections, and can be tested through lesion experiments, noise correlations, and calcium imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C158 discuss the biological plausibility of the required coupling and experimental tests. Citations to Fuchs et al. (2016), Winterer et al. (2017), Varga et al. (2010), and Zutshi et al. (2018) provide evidence for relevant connections. Suggested tests (lesions, noise correlations, calcium imaging) are appropriate. This addresses a key requirement of the model with existing and proposed experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Environmental deformation experiments may not be ideal tests due to boundary effects, and synaptic plasticity (not implemented in the model) could alter predictions, though the geometric mechanism could still govern initial module formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C166 appropriately discuss limitations and caveats. The concern about boundary effects (C160-C161) is supported by Keinath et al. (2018). The discussion of plasticity (C162-C166) acknowledges a model limitation and speculates about potential effects, appropriately noting that the geometric mechanism could still be relevant during development. This represents appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Alternative implementations with depth-dependent velocity gain produced inconsistent results, and recent calcium imaging experiments support changing inhibition distance over changing velocity gain as the mechanism for different grid scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C171 discuss an alternative model implementation and experimental evidence favoring the chosen mechanism. C168 reports negative results from velocity gain simulations. C169-C171 cite Gu et al. (2018) showing anatomical organization consistent with changing inhibition distance. This justifies the modeling choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "The current model addresses limitations of previous models (Grossberg and Pilly, 2012; Urdapilleta et al., 2017) by naturally producing constant-on-average scale ratios and a wide range of orientation differences, supported by recent experimental evidence for continuous attractor mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C180 provide critical comparison to alternative models, citing specific limitations (lack of constant-on-average ratios, limited orientation differences) and advantages of the current approach. Citations to recent experimental support (Couey et al., 2013; Dunn et al., 2015; Fuchs et al., 2016; Zutshi et al., 2018; Yoon et al., 2013; Heys et al., 2014; Gu et al., 2018) strengthen the case for continuous attractor models. This appropriately positions the work in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "The model's competition between excitatory and inhibitory connections resembles the Frenkel-Kontorova model from condensed matter physics, and can produce quasicrystalline approximant grids, analogous to recently observed phenomena in thin-film materials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C186 draw connections to condensed matter physics, citing the Frenkel-Kontorova model (Kontorova and Frenkel, 1938), devil's staircases (Bak, 1982; Chaikin and Lubensky, 1995), and recent experimental observations in materials (F\u00f6rster et al., 2013, 2016; Pa\u00dfens et al., 2017). The quasicrystalline result is mentioned in Appendix 3. This provides broader theoretical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C189"
+    ],
+    "result": "The model is amenable to extensions including spiking dynamics, synaptic learning, unified network architecture, and border cell inputs to address additional features of the grid system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C189 appropriately discusses potential extensions with relevant citations. This is a reasonable statement about future directions that acknowledges the model's current scope while indicating paths for development.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "A survey of 100 RNA-protein binding studies revealed that 70% did not report varying incubation time to demonstrate equilibration. Of the 30% that did vary time, 80% used techniques (ITC/SPR) with built-in time monitoring, meaning less than 10% of studies using other methods (gel shifts, filter binding, fluorescence anisotropy) reported this essential control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C7, C8, and C9 are directly supported by survey data presented in Figure 1 and Supplementary file 1. The survey methodology is clearly described, and the findings are quantitatively documented with specific percentages and technique breakdowns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Only 5% of the surveyed studies reported systematically varying the concentration of the limiting component to control for titration effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is directly supported by survey data shown in Figure 1\u2014figure supplement 2. The survey methodology and scoring criteria are described in Materials and methods, providing transparency for this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Insufficient controls for equilibration and titration led to incorrect reported affinities in the surveyed literature. For Puf4, lack of controls gave apparent KD values up to 7-fold higher than actual values. A literature example (Cas12a) showed 1000-fold discrepancies, and failing to account for these factors can underestimate specificity by orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C11, C12, and C13 are supported by experimental data for Puf4 (presented in the manuscript) and citations to published examples (Strohkendl et al., 2018). Simulated data in Figure 4\u2014figure supplement 1 and Figure 5\u2014figure supplement 4 further support the impact on specificity measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Nearly 90% of surveyed studies used incubation times of 1 hour or less. CRISPR nuclease studies exemplify this problem: several reported equilibrium constants from \u22641 hour incubations, but kinetic measurements showed dissociation taking many hours. For Cas12a, the equilibration time was >100 hours, and the true KD was 1000-fold lower than previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by survey data (Figure 1\u2014figure supplement 1B), citations to CRISPR studies (Supplementary file 2), and kinetic measurements from cited literature (Strohkendl et al., 2018; Richardson et al., 2016; Boyle et al., 2017; Raper et al., 2018). The 1000-fold discrepancy for Cas12a is documented in Strohkendl et al., 2018.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Extended time binding studies of the signal recognition particle (SRP) changed mechanistic interpretations. Initially, 4.5S RNA was thought to stabilize the SRP/receptor complex, but longer incubation studies revealed it accelerates binding and dissociation without affecting affinity, demonstrating a catalytic rather than stabilizing role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by citation to Peluso et al., 2000, which provided the kinetic data that changed the mechanistic interpretation. This serves as a literature example of how insufficient equilibration time can lead to incorrect mechanistic conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Time-dependent Puf4-RNA binding experiments demonstrated equilibration at 25\u00b0C within 30 minutes (identical binding at 30 min, 1.5 hr, and 4.5 hr), but at 0\u00b0C equilibration required at least 4.5 hours. A 30-minute incubation at 0\u00b0C would yield an apparent KD 7-fold higher than the true value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are directly supported by experimental data shown in Figure 4B and 4C. The experiments systematically varied incubation time at two temperatures, clearly demonstrating the temperature dependence of equilibration and the quantitative impact of insufficient incubation time on measured KD values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "At 25\u00b0C, Puf4 binding curves were identical across a 9-fold range of RNA concentrations, demonstrating the binding regime holds. The observed KD of 120 pM from hyperbolic fitting (Equation 4b) represents a true equilibrium constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by experimental data in Figure 6A,B showing constant binding curves across different RNA concentrations. The constancy of curves is the key evidence that the binding regime assumption ([P]free \u2248 [P]total) is valid, supporting the reliability of the measured KD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "At 0\u00b0C, varying RNA concentration revealed divergent Puf4 binding curves and concentration-dependent apparent KD values (5-fold variation across 30-fold RNA concentration range). Poor fits to the hyperbolic equation indicated protein depletion. Only an upper limit (KD \u22642.3 pM) could be determined from hyperbolic fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by experimental data in Figure 6C,D. The divergent curves, poor fits, and concentration-dependent apparent KD values provide clear evidence that the binding regime does not hold at 0\u00b0C with the RNA concentrations tested, demonstrating the importance of the titration control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The quadratic equation (Equation 5) provided good fits to Puf4 binding data at 0\u00b0C and yielded uniform KD values of ~1.9 pM across different RNA concentrations, consistent with an intermediate regime. The same KD was obtained from independent kinetic experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by experimental data in Figure 6C,D and kinetic measurements in Appendix 1. The agreement between equilibrium (quadratic fit) and kinetic determinations provides strong validation of the measured KD value and demonstrates the utility of the quadratic equation in the intermediate regime.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Kinetic measurements revealed an equilibration time of 30 hours (5 half-lives) for Puf4 binding at 0\u00b0C, and a 100-fold difference in affinity between 0\u00b0C (1.9 pM) and 25\u00b0C (120 pM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 are supported by kinetic data in Appendix 1 and Table 2. The 30-hour equilibration time is calculated from koff measurements, and the 100-fold affinity difference is directly evident from comparing KD values at the two temperatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "For Puf4, affinities determined by kinetic measurements were within 2-fold of those from equilibrium determinations, supporting the accuracy of both approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by comparison of KD values in Table 2. At 25\u00b0C: 120\u00b130 pM (equilibrium) vs 130\u00b130 pM (kinetic). At 0\u00b0C: 1.39\u00b10.09 pM (equilibrium, quadratic) vs 1.02\u00b10.08 pM (kinetic). The close agreement validates both measurement approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Titration experiments determined that the Puf4 preparation was 75% active (based on the breakpoint ratio of 1.3 in Figure 7), with the active protein fraction ranging from 0.75 to 0.90 across multiple experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 are supported by experimental data in Figure 7 and Figure 7\u2014figure supplement 1. The titration method is clearly described, and the calculation of active fraction from the breakpoint is straightforward and mathematically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Exponential kinetic processes have a constant half-life, and after three half-lives, the process is 87.5% complete (almost 90%), which is close enough to equilibration for most applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 describe fundamental properties of exponential processes, illustrated in Figure 2. These are well-established mathematical principles, correctly stated and appropriately applied to binding kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18",
+      "C20"
+    ],
+    "result": "According to the equilibration rate equation (kequil = kon[P] + koff), equilibration is slowest at the lowest protein concentrations. The more long-lived the complex (lower koff), the longer the incubation time required to reach equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C20 are logical inferences from Equation 1 (kequil = kon[P] + koff) and Equation 2 (kequil,limit = koff). These are standard kinetic relationships, correctly stated and appropriately applied to explain equilibration time dependence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Binding rate constants for macromolecules are often smaller than the diffusion-driven limit (~10^8 M^-1 s^-1) when conformational rearrangements are required. Some reactions in the biologically relevant affinity range can require equilibration times of tens of hours or longer in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 are supported by citations to published studies (Karbstein and Herschlag, 2003; Peluso et al., 2000; Wu et al., 2002; Hulme and Trevethick, 2010; Sanders, 2010) and calculations in Table 1. The theoretical framework and examples are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In the binding regime ([R]total << KD), the protein concentration giving half-binding equals KD. In the titration regime ([R]total >> KD), the protein concentration giving half-binding does not equal KD but instead equals approximately half the concentration of active R molecules, potentially differing from KD by orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 describe fundamental properties of binding and titration regimes, illustrated in Figure 5A,B and Figure 5\u2014figure supplements. These are well-established thermodynamic principles, correctly stated and clearly illustrated with simulated data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "If 90% of protein is damaged or inactivated, the observed affinity will be 10-fold higher than the actual KD value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is a logical inference from the relationship between active protein concentration and observed KD. If only 10% of protein is active, 10-fold more total protein is needed to achieve the same free active protein concentration, resulting in an apparent KD 10-fold higher than the true value.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Pull-down experiments are complex functions of experimental conditions. Ligands with similar or even higher affinity can incorrectly appear not to bind due to dissociation during washing. For example, with 30-second washing, only ~10% of a complex with koff=0.1 s^-1 remains, while no detectable complex remains if koff=1 s^-1. Limited dynamic range of gel readouts increases misinterpretation risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are logical inferences from dissociation kinetics, with quantitative examples calculated from exponential decay. The calculations are mathematically sound, and the conclusions about the limitations of pull-down assays are well-reasoned and appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Direct solution-based approaches (ITC, fluorescence anisotropy) can distinguish between absent binding and undetected binding, though each has limitations (inner filter effects for fluorescence, small enthalpy changes for ITC). Competition experiments can test for binding when no signal is observed and can determine KD values for additional substrates without labeling each one.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 describe established knowledge about binding assay methods and their limitations, supported by citations (Hulme and Trevethick, 2010; Sanders, 2010; Ryder et al., 2008). The recommendations are sound and based on well-understood principles of each technique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5"
+    ],
+    "result": "Quantitative measurements of biomolecule associations are central to biological understanding. These associations form complex networks enabling developmental programs and environmental responses. Equilibrium constants are needed to define, model, predict, and manipulate biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, and C5 represent established scientific consensus about the importance of quantitative binding measurements in biology. These are foundational statements that motivate the work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Several high-throughput strategies have recently emerged to obtain quantitative information for intermolecular associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by multiple citations to published high-throughput methods (Buenrostro et al., 2014; Tome et al., 2014; Lambert et al., 2014; Nutiu et al., 2011; Maerkl and Quake, 2007; Adams et al., 2016; Jain et al., 2017). This contextualizes the importance of ensuring measurement reliability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Biology has developed mechanisms to circumvent or utilize slow binding processes, such as high intracellular concentrations and cellular factors (chaperones, helicases, chromatin remodelers, translation) that speed up binding and dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is a reasonable inference based on the discrepancy between slow in vitro equilibration times (tens of hours) and the need for faster biological processes. This represents established biological knowledge about cellular mechanisms that facilitate molecular interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The equilibrium dissociation constant is only constant at a given set of conditions, and affinity can change dramatically when conditions (temperature, salt, pH) are changed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is a fundamental thermodynamic principle, illustrated by the 100-fold difference in Puf4 affinity between 0\u00b0C and 25\u00b0C (C54). This is well-established knowledge, appropriately emphasized given its importance for interpreting and comparing binding measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Reporting guidelines have been successfully adopted by journals in structural biology and other fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by citation to Berman et al., 2000 and references to reporting guidelines in various fields. This provides precedent for the authors' recommendation to adopt similar standards for binding measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The Puf4 construct (residues 537-888) was purified free from significant RNA contamination (<1 RNA base per protein). Binding experiments used the RNA sequence AUGUGUAUAUUAGU in buffer containing 20 mM HEPES, 2 mM MgCl2, 100 mM KOAc, 2 mM DTT, 0.2% Tween 20, 5% glycerol, 0.1 mg/ml BSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 describe experimental materials and methods. These are straightforward descriptions of the protein construct, RNA sequence, and buffer conditions used, supported by the Materials and methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Quantitative binding parameters for Puf4-RNA interaction were determined at 25\u00b0C and 0\u00b0C by equilibrium and kinetic methods. At 25\u00b0C: KD=120\u00b130 pM (equilibrium), kon=(1.04\u00b10.14)\u00d710^8 M^-1s^-1, koff=0.014\u00b10.003 s^-1, KD=130\u00b130 pM (kinetic). At 0\u00b0C: KD\u22641.7 pM (hyperbolic, upper limit), KD=1.39\u00b10.09 pM (quadratic), kon=(2.85\u00b10.14)\u00d710^7 M^-1s^-1, koff=(2.92\u00b10.17)\u00d710^-5 s^-1, KD=1.02\u00b10.08 pM (kinetic).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 report quantitative measurements summarized in Table 2. These are directly supported by experimental data from equilibrium binding (Figures 4, 6) and kinetic measurements (Appendix 1). The values are reported with appropriate error estimates and are internally consistent.",
+    "result_type": "MAJOR"
+  }
+]

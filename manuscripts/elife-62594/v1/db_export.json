@@ -1,0 +1,1227 @@
+{
+  "submission": {
+    "id": "1a1ae05e-3e25-40db-8b8b-cc549b3eb5dd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:44:34.250280Z",
+    "updated_at": "2025-12-02T21:44:34.250280Z"
+  },
+  "content": [
+    {
+      "id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "submission_id": "1a1ae05e-3e25-40db-8b8b-cc549b3eb5dd",
+      "content_type": "manuscript",
+      "content_text": "# The integration of Gaussian noise by long-range amygdala inputs in frontal circuit promotes fear learning in mice\n\n## Authors\n\n- Mattia Aime<sup>1</sup>\n- Elisabete Augusto<sup>1</sup>\n- Vladimir Kouskoff<sup>1</sup>\n- Tiago Campelo<sup>1</sup>\n- Christelle Martin<sup>1</sup>\n- Yann Humeau<sup>1</sup>\n- Nicolas Chenouard<sup>1</sup>\n- Frederic Gambino<sup>1</sup> ([ORCID: 0000-0002-2981-5030](https://orcid.org/0000-0002-2981-5030)) \u2020\n\n### Affiliations\n\n1. University of Bordeaux, CNRS, Interdisciplinary Institute for Neuroscience, IINS Bordeaux France\n\n\u2020 Corresponding author\n\n## Abstract\n\nSurvival depends on the ability of animals to select the appropriate behavior in response to threat and safety sensory cues. However, the synaptic and circuit mechanisms by which the brain learns to encode accurate predictors of threat and safety remain largely unexplored. Here, we show that frontal association cortex (FrA) pyramidal neurons of mice integrate auditory cues and basolateral amygdala (BLA) inputs non-linearly in a NMDAR-dependent manner. We found that the response of FrA pyramidal neurons was more pronounced to Gaussian noise than to pure frequency tones, and that the activation of BLA-to-FrA axons was the strongest in between conditioning pairings. Blocking BLA-to-FrA signaling specifically at the time of presentation of Gaussian noise (but not 8 kHz tone) between conditioning trials impaired the formation of auditory fear memories. Taken together, our data reveal a circuit mechanism that facilitates the formation of fear traces in the FrA, thus providing a new framework for probing discriminative learning and related disorders.\n\n## Introduction\n\nDiscriminative learning is an important survival strategy that depends on the repeated contingency and contiguity between sensory cues (conditioned stimuli, CS) and the events (e.g. danger, safety) that they must predict (unconditioned stimuli, US) (Hall, 2002). It has been classically studied by using differential fear-conditioning paradigms where two different auditory CS are positively (CS+) and negatively (CS-) paired in time with an aversive US (e.g. foot shock). This learning protocol is supposed to assign appropriate emotional valence to the two incoming CSs (Hall, 2002; LeDoux, 2000; Likhtik and Paz, 2015). However, while previous work has thoroughly investigated how CSs modulate fear responses after learning (Dejean et al., 2016; Karalis et al., 2016; Likhtik et al., 2014; Rogan et al., 2005; Stujenske et al., 2014), it remains unclear how the brain processes and encodes CS+ and CS- during conditioning.\n\nThe medial prefrontal cortex (mPFC) has appeared over the past decade as a critical region that shapes behaviors in response to both aversive and non-aversive environmental cues (Likhtik and Paz, 2015; Likhtik et al., 2014; Stujenske et al., 2014). These effects of the mPFC possibly rely on the specific interaction between its different subdivisions (i.e.prelimbic [PL] and infralimbic [IL] cortices) and the basolateral complex of the amygdala (BLA) (Senn et al., 2014; Sierra-Mercado et al., 2011; Vidal-Gonzalez et al., 2006). However, the mPFC does not receive direct sensory information neither from sensory cortical areas or from the thalamus (Hoover and Vertes, 2007), thereby supporting the idea that a higher\u00a0order neuronal network above the mPFC might encode specific memories that are later selected preferentially during recall together with its downstream cortical (e.g. PL or IL mPFC) or subcortical structures (e.g. BLA). Specifically, the frontal association cortex (FrA), a region of the lateral part of the agranular cortex (Paxinos and Franklin, 2001; Uylings et al., 2003), receives inputs from the BLA (Lai et al., 2012; M\u00e1ty\u00e1s et al., 2014; Nakayama et al., 2015) and sensory cortices (Hoover and Vertes, 2007; Zhang et al., 2016). In addition, the FrA appears non-reciprocally connected to the PL/IL subdivisions of the mPFC (Zhang et al., 2016). Thus, the FrA may function as a relay station during learning from sensory cortical areas and the BLA to the mPFC. However, whether and how the FrA integrates the variety of sensory information required for discriminative learning is not understood.\n\nThe involvement of the FrA in auditory fear conditioning has constantly been reported. For example, the pharmacological inactivation of FrA neurons alters both the expression and extinction of learned fear (Lai et al., 2012; Nakayama et al., 2015; Sacchetti et al., 2002). Recently, fear conditioning and extinction have been shown to induce dendritic spine elimination and formation in the FrA, respectively (Lai et al., 2012). Importantly, this phenomenon occurs within the same dendritic branch, supporting the idea that a unique FrA circuit could form memory traces with distinct emotional values. Nonetheless, no previous evidence has demonstrated the contribution of the FrA in the encoding of incoming sensory cues during learning, and, if so, how such a process may be controlled by inputs from the BLA.\n\nTo address the possible role of the FrA in discriminative learning and the mechanisms behind it, we investigated auditory-evoked computations of layers II/III FrA pyramidal neurons, as well as the dynamics of long-range projections from the BLA during the acquisition of fear memory traces. By using two-photon (2P) calcium imaging in head-restrained mice, in vivo whole cell recordings and optogenetics, we found that FrA pyramidal neurons process auditory tones based on their spectral properties. Unlike pure frequency tones, Gaussian noise produced somatic and dendritic depolarizations in FrA pyramidal neurons. The photo-stimulation of BLA-to-FrA neurons resulted in the supra-linear integration of auditory tones. During conditioning, the activity of BLA-to-FrA axons was stronger between CS+/US pairings (that is, when CS- is presented) than during pairings. Inhibiting these axons during CS- impaired auditory fear learning but only when Gaussian noise is used as CS-. Taken together, our data suggest that FrA and BLA-to-FrA neurons promote learning by integrating non-conditioned Gaussian noise (i.e. not paired to the footshock), and provide additional evidence for a critical function of cortical areas when animals learn from complex tones (Grosso et al., 2015; Letzkus et al., 2011; Ohl et al., 1999). In conclusion, the study reveals a potent dendritic mechanism for encoding predictors in the FrA, and thus extends the cortical framework for probing discriminative learning and related disorders.\n\n## Results\n\n### Auditory tones recruit NMDARs conductances in FrA L2/3 pyramidal neurons\n\nWe performed somatic whole-cell recordings in anesthetized naive animals and characterized the activation of FrA L2 pyramidal cells to different sounds by presenting white Gaussian noise (WGN), pure frequency tones (4 and 8 kHz), as well as linear chirps of these frequencies (Figure 1; Figure 1\u2014figure supplement 1). WGN, which is a true random signal with equal intensity at all frequencies (Figure 1\u2014figure supplement 1), and pure frequency tones have been widely used in previous fear-conditioning studies (Dejean et al., 2016; Grosso et al., 2015; Karalis et al., 2016; LeDoux, 2000; Likhtik et al., 2014; Park et al., 2016; Senn et al., 2014; Stujenske et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig1-v1.jpg)\n\n**Figure 1.:** (A) Membrane potential (Vm) was recorded from L2/3 FrA pyramidal under urethane anesthesia with 2P visual guidance. Depth of recorded cells is indicated. (B) Example of recorded FrA neuron showing typical spontaneous slow wave fluctuations. Black bar indicates timing of Gaussian stimulation. Right, membrane potential probability histogram. (C) Example traces of postsynaptic membrane potential recorded from an individual FrA L2/3 pyramidal neuron upon white Gaussian noise (WGN) auditory stimulation (gray bars: 27 pips, 50 ms in duration, 0.9 Hz, 30 s). Bottom right panels, auditory-evoked cVm changes were calculated by subtracting the cumulative Vm (cVm, solid black line) by its linear regression during the baseline period (solid black line). (D) Left, averaged cVm change (\u00b1sem) evoked by WGN, with or without the blockade of NMDARs (dAP5 or iMK801). Auditory stimulation is depicted by the blue bar; arrows, analysis time points 1 (end of stimulation) and 2 (30 s later). Right, effect of dAP5 and iMK801 on cVm change at time points 1 (left) and 2 (right). Boxplots represent median and interquartile range. (E, F) Same representation as (C, D) but for pure 8 kHz-evoked cVm change. The effect of both stimuli was tested on the same cell. ***, p<0.001; **, p<0.01; *, p<0.05.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) 50 ms-long pips (sampling frequency: 44100 Hz) were generated by producing 2205 samples (i) following a Gaussian distribution for WGN, (ii) of a sinusoidal signal for pure tones, and (iii) of a swept-frequency cosine signal for linear chirp tones. For clarity, pips have been cut at 10 ms in the figure. Each presented sound lasts 30 s and is composed of 27 pips (50 ms each). (B) Power spectral density obtained by Fourier Transform of digitalized WGN (blue), pure 4 kHz (orange) and 8 kHz (red) tones, and linear chirp tones (green). Note that the power spectral density of WGN is constant (flat) across all the frequencies below 20 kHz (the signal is low pass filtered to avoid aliasing and ultrasonic frequencies that generate innate defensive behaviors). (C) Spectrograms generated by the short-time Fourier transform of a single pip (50 ms). (D) Averaged cVm change (\u00b1sem) evoked by WGN, linear chirps (4-to-8 kHz and 8-to-4 kHz pooled together), and pure frequency tones (4 and 8 kHz pooled together), at different intensities. All tones and intensities were tested on the same cell (n\u00a0=\u00a06 cells). Black bar, 30 s-long sound (27 pips). (E) Mean cVm change at the end of the tone presentation (t\u00a0=\u00a060 s).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Single-cell example of typical spontaneous slow wave fluctuations. (B) WGN-evoked cVm change (light blue) is calculated by subtracting the cumulative Vm (cPSP, blue) by its linear regression during the baseline period (black line). (C) Experimental protocol: L2/3 pyramidal neurons were patched 1 to 5 hr after craniotomy and dAP5 (1 \u00b5M) was applied topically and present for the entire duration of the experiment. (D) Left, examples of single-cell spontaneous membrane potential (Vm) fluctuations during anesthesia in controls (black) and upon dAP5 injection (green). Right, mean (\u00b1sem) membrane potential probability histograms (control, n\u00a0=\u00a022; dAP5, n\u00a0=\u00a019). (E) Left, average (\u00b1sem) fast Fourier transform (FFT) of spontaneous membrane potentials in controls (black) and upon dAP5 injection (green). Right, blocking NMDARs significantly decreases the 0.5\u20132 Hz range (p=0.048, Mann-Whitney rank sum test). Box plot represents median and interquartile range (control, n\u00a0=\u00a022; dAP5, n\u00a0=\u00a019). (F) Left, average (\u00b1sem) cumulative PSP (cPSP) of spontaneous membrane potentials in controls (black) and upon dAP5 injection (green). Right, blocking NMDARs significantly decreases cVm amplitude after 30 s (p=0.007, Mann-Whitney rank sum test). Box plot represents median and interquartile range (control, n\u00a0=\u00a022; dAP5, n\u00a0=\u00a019). (G) Single cell example of Vm fluctuation upon WGN (left) and 8 kHz (right) before and after dAP5 application. Colored bars represent averaged Vm over 1 s time window. The NMDARs-mediated component is calculated by subtracting the averaged Vm before and after dAP5 application. (H, I) Average cVm (\u00b1sem) change before and after dAP5 application. Circles and lines, paired cells.\n\nFor each recorded cell, membrane potential (Vm) was monitored prior to, during, and after the random presentation of both tones, each consisting of 27 pips (50 ms, 0.9 Hz for 30 s) (Figure 1B\u2013F). Membrane potential spontaneously fluctuated between up and down states (Figure 1B). Therefore, to detect changes in Vm specifically induced by the auditory stimulation, we computed the cumulative depolarization over time (cVm), from which was then subtracted the linear regression calculated during the baseline period prior to auditory stimulation (cVm change) (Figure 1C,D; Figure 1\u2014figure supplement 2A,B). This allowed us to minimize the variability related to spontaneous activity and thus compare evoked depolarizations under different conditions.\n\nWGN evoked a subthreshold depolarization in naive animals (27.6\u00a0\u00b1\u00a04 mV, n\u00a0=\u00a022 cells) that lasted for at least 30 s after the end of the stimulation (32.5\u00a0\u00b1\u00a05 mV, n\u00a0=\u00a022 cells) (Figure 1C,D). These changes in Vm, which were always higher than those evoked by the linear chirps or the pure tones (Figure 1\u2014figure supplement 1), were abolished by the application of the NMDAR antagonist D(-)\u22122-amino-5-phosphonovaleric acid (dAP5) or the presence of the NMDAR open-channel blocker MK-801 in the intracellular solution (end of the stimulation; control: 27.6\u00a0\u00b1\u00a04 mV, n\u00a0=\u00a022 cells; +dAP5: \u221213.4\u00a0\u00b1\u00a05 mV, n\u00a0=\u00a014 cells; +iMK801: \u22122.2\u00a0\u00b1\u00a02 mV, n\u00a0=\u00a05 cells; p<0.001, anova) (Figure 1D; Figure 1\u2014figure supplement 2C\u2013F), suggesting that WGN generates NMDAR-mediated depolarization.\n\nIn contrast, pure auditory tones did not seem to affect membrane potential either during (8 kHz: 1.2\u00a0\u00b1\u00a04 mV; WGN: 27.6\u00a0\u00b1\u00a04 mV; n\u00a0=\u00a022 cells, p<0.001, paired t-test) or after auditory stimulation (8 kHz: \u22123.8\u00a0\u00b1\u00a03 mV; WGN: 32.5\u00a0\u00b1\u00a05 mV; n\u00a0=\u00a022 cells, p<0.001, paired t-test). Nonetheless, we found that 8 kHz tones affected membrane potential of FrA neurons in the presence of dAP5 or iMK801 (end of stimulation; control: 1.16\u00a0\u00b1\u00a03.9 mV, n\u00a0=\u00a022 cells; +dAP5: \u221216.7\u00a0\u00b1\u00a04 mV, n\u00a0=\u00a010 cells; +iMK801: \u221221\u00a0\u00b1\u00a03.5 mV, n\u00a0=\u00a05 cells; p=0.004, anova) (Figure 1C\u2013F). This suggests that pure tones might also activate FrA neurons to some extent. However, on average, the NMDAR-mediated component of the evoked cVm change was much larger in response to WGN, indicating that it recruited more NMDAR conductances than pure auditory tones (WGN: 33.1\u00a0\u00b1\u00a04.2 mV; 8 kHz: 9.7\u00a0\u00b1\u00a03.4 mV; n\u00a0=\u00a05 cells; p=0.017, paired t-test) (Figure 1\u2014figure supplement 2G\u2013J). Altogether, our data indicate that, during anesthesia, WGN activates enough NMDAR-mediated synaptic inputs to produce sustained depolarization of the cell body.\n\n### Auditory tones generate local calcium events in distal FrA dendrites\n\nNMDARs conductances confer unique computational capabilities to pyramidal neurons by operating supra-linear signaling in dendrites (Antic et al., 2010; Major et al., 2013). These NMDAR-mediated events are highly localized to a small dendritic segment but can spread toward the soma to produce plateau potentials (Gambino et al., 2014; Palmer et al., 2014). Thus, we investigated whether auditory tones generate local dendritic events. We infected mice with an AAV9-Syn-flex-GCaMP6s together with a 1:10,000 dilution of AAV1-hSyn-cre (Figure 2A) in order to obtain a sparse labeling with few neurons expressing GCaMP6s. The activity of non-overlapping distal dendritic branches was imaged in superficial layer one through an implanted cranial window in anesthetized (139 dendrites from five mice; Figure 2B\u2013D) and awake mice (104 dendrites from eight mice; Figure 2B,E,F). We isolated calcium transients and segregated them based on their spatial spread along individual dendrites (Figure 2C; Figure 2\u2014figure supplement 1A\u2013C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig2-v1.jpg)\n\n**Figure 2.:** (A) Top, experimental strategy resulting in the sparse expression of GCaMP6s. Scale bar, 10 \u00b5m. Ca2+ events in individual dendrites were imaged in L1 upon auditory stimulation in awake or anesthetized mice. Bottom, example of GCaMP6s fluorescence standard deviation image with ROIs in yellow. Red ROIs overlapped with another dendrite and were excluded from the analysis. (B) The spread of Ca2+ events was quantified by calculating the full-width at half-max (fwhm, dashed line) of the normalized Gaussian fit at the time when the averaged \u0394F/F0 was maximal. (C) Top, example of multiple Ca2+ transients (\u0394F/F0) recorded in a single dendrite in anesthetized mouse, during baseline and upon WGN (blue) and 8 kHz (red). Gray lines, \u0394F/F0 measured from small ROIs (all ROIs superimposed). Black line, mean \u0394F/F0 averaged over all ROIs, respectively. Bottom, examples of local dendritic Ca2+ events upon WGN (1) and 8 kHz (2). Scale bar, 5 \u00b5m. (D) The frequency (left) and amplitude (right) of all Ca2+ events observed during baseline and upon auditory stimulations was averaged over five anesthetized mice. Gray lines represent individual mice. (E) Top, same representation as (C) but in awake mouse. Bottom, example of local (*) and global (#) dendritic Ca2+ events. Scale bar, 5 \u00b5m. (F) Same presentation as in (D) but for local events from nine awake mice. Gray lines represent individual mice. (G, H) Distribution histogram of dendritic events fwhm upon WGN (blue), 8 kHz (red) and 2 kHz (orange) tone presentation, from anesthetized (G) and awake (H) mice. Inset, cumulative probability histograms of auditory-evoked events fwhm. (I) Dendritic events evoked by WGN and pure tones (8 kHz and 2 kHz tones pooled together) in anesthetized (+) and awake (-) mice. *, p<0.05; **, p<0.01; ***, p<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Top, example of single-dendrite local (left) and global (right) Ca2+ events. Bottom, raster plot of \u0394F/F0 for multiple ROIs along the dendrite represented above. Right, average \u0394F/F0. Dashed line, time point of the maximum peak amplitude of averaged \u0394F/F0. (B) Gaussian fits (normalized to max) of the local (black) and global (green) Ca2 events shown in (A). (C, D) number of local (left) and global (right) Ca2+ events observed during baseline and upon auditory stimulations in awake (E) and anesthetized (F) mice (n\u00a0=\u00a09 and 5, respectively). p<0.001, one-way repeated measures anova: **, p<0.01; ***, p<0.001, (Holm-Sidak multiple comparisons). Gray lines represent individual mice.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Heatmap representation of mouse activity over 12 min. Each auditory tone was presented four times for 30 s, every 10 to 60 s. (B) Averaged distance travelled (total, in the periphery, and in the center of the open field) upon WGN and 8 kHz tone presentation. Gray lines, individual mouse (n\u00a0=\u00a017). ns, non-significant, post-hoc comparison after repeated measures anova. (C) Averaged stop duration upon tone presentation. Gray lines, individual mouse (n\u00a0=\u00a017). ns, paired t-test.\n\nWe detected calcium transients in apical dendritic tufts of mice that were anesthetized with isoflurane (1.5%). These calcium events occurred both spontaneously (i.e. during baseline prior to stimulation) and upon auditory stimulation with similar amplitude (Figure 2C,D). The presentation of WGN evoked more events (WGN: 409; 8 kHz: 139; 2 kHz: 102; p<0.001, McNemar\u2019s \u03c7\u00b2 test), with a significantly higher number of local dendritic events per dendrite as compared to pure frequency auditory tones (WGN: 0.11\u00a0\u00b1\u00a00.01 Hz; 8 kHz: 0.04\u00a0\u00b1\u00a00.01 Hz; 2 kHz: 0.04\u00a0\u00b1\u00a00.007 Hz; n\u00a0=\u00a09 mice; p<0.001, anova) (Figure 2C,D). Eight kHz and 2 kHz tones did not evoke calcium transients more frequently than baseline (Figure 2D). Although it remains possible that pure tones activate basal dendrites, our data demonstrate that, during anesthesia, apical dendrites located in L1 are specifically activated by WGN.\n\nDuring anesthesia, auditory-evoked calcium events were mostly local, with a full width at half maximum (fwhm: 13.5 \u00b1 [s.d.] 13 \u00b5m, n\u00a0=\u00a0650 events) that fell into the spatial range of NMDAR-mediated spikes (Gambino et al., 2014; Palmer et al., 2014; Figure 2G). Global calcium transients with a longer spatial extent (fwhm\u00a0\u226550 \u00b5m; 81 \u00b1 [s.d.] 35 \u00b5m, n\u00a0=\u00a0313 events) were additionally observed in awake mice (Figure 2E,H). These events, which could reflect backpropagating somatic action potentials, occurred independently of the nature of the auditory tone (Figure 2\u2014figure supplement 1). In contrast, most of the local calcium transients were concurrent with WGN (WGN: 339; 8 kHz: 218; 2 kHz: 253; p<0.001, McNemar\u2019s \u03c7\u00b2 test). Again, and as expected, WGN evoked significantly more local events per dendrite than pure tones (WGN: 0.11\u00a0\u00b1\u00a00.01 Hz; 8 kHz: 0.08\u00a0\u00b1\u00a00.005 Hz; 2 kHz: 0.07\u00a0\u00b1\u00a00.007 Hz; n\u00a0=\u00a05 mice; p<0.001, anova) (Figure 2F), thus mirroring what we observed during anesthesia (Figure 2I). Nevertheless, 8 kHz and 2 kHz tones generated more local events as compared to baseline (Figure 2F), suggesting that anesthesia might reduce dendritic signaling of pure frequency auditory inputs (0.04\u00a0\u00b1\u00a00.009 Hz vs. 0.08\u00a0\u00b1\u00a00.05 Hz; p=0.037) (Figure 2I). However, the specific effect of WGN on FrA neurons was not attributable to the intensity of the tones (Figure 1\u2014figure supplement 1E), or to noise-induced pain since exploratory motor behaviors were not affected by WGN or pure tones (Figure 2\u2014figure supplement 2).\n\nTaken together, our results show that FrA pyramidal neurons process auditory tones differently according to their spectral properties in both anesthetized and awake mice. This occurs at the subthreshold level with Gaussian auditory tones being more efficient in producing somatic depolarizations and local dendritic events within the same tuft dendritic branch than pure frequency tones (Figure 1; Figure 2) or simple frequency-modulated tones (Figure 1\u2014figure supplement 1).\n\n### Non-conditioned Gaussian noise promotes fear memories in FrA circuit\n\nWGN and pure frequency tones produce distinct forms of synaptic plasticity during auditory fear conditioning (Park et al., 2016). This raises the possibility that\u00a0they might play a specific role during learning (Grosso et al., 2015; Park et al., 2016). To test this hypothesis, we injected mice bilaterally with an AAV expressing the light-activated proton pump archaerhodopsin (AAV9.CaMKII.ArchT.GFP, n\u00a0=\u00a040 mice; or AAV9.CamKII.eGFP for controls, n\u00a0=\u00a035 mice) into the FrA. Although both L5 and L2/3 cells were infected (Figure 3A), we implanted optical fibers in the superficial L1 to inhibit the activity of FrA L2/3 pyramidal somas (as well as L5 dendrites) during fear learning (Figure 3B). Auditory fear conditioning (FC) was induced by using a classical discriminative protocol, during which five auditory stimuli (each consisting of 27 WGN or 8 kHz pips, 50 ms, 0.9 Hz for 30 s) were positively (CS+) or negatively (CS-) paired with the delivery of a mild electrical shock (0.6 mA) to the paws in a pseudorandom order (Figure 3\u2014figure supplement 1). The auditory tones (8 kHz and WGN) used for CS+ and CS- during conditioning were counterbalanced across mice (protocol 1, CS+/CS-: 8 kHz/WGN, respectively; protocol 2, CS+/CS-: WGN/8 kHz, respectively) (Figure 3\u2014figure supplement 1) and learning was tested 24 hr later during recall by measuring cue-induced freezing in a novel context (Figure 3B). Mice were classified as learners (learning+) when the learning index was higher than 20% during recall (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig3-v1.jpg)\n\n**Figure 3.:** (A) Left, experimental strategy. Mice were infected with AAV9.CaMKII.ArchT (n\u00a0=\u00a039) or AAV9.CaMKII.eGFP for controls (n\u00a0=\u00a034) in the FrA, and implanted bilaterally with optical fibers in the FrA. Right, expression profile of ArchT (in green) in the FrA (bregma: +2.58). DAPI staining in blue. Entropy thresholding was used to determine the expression of ArchT across layers. (B) Timeline of auditory fear-conditioning behavioral protocol, with habituation and fear conditioning done in one context and fear learning quantified 24 hr later in a new context. (C) Experimental fear-conditioning protocols. FrA neurons expressing ArchT (or GFP) were photo-stimulated during the presentation of CS+ (8 kHz for protocol 1a or WGN for protocol 1b). US, unconditional stimulus (footshock). (D) Effect of light during learning on freezing behaviors during recall as compared to habituation (hab.) in GFP-expressing mice (left; n\u00a0=\u00a015) and ArchT-expressing mice (right, n\u00a0=\u00a015). Turquoise and khaki lines represent individual mice. (E) Fraction of mice that learned the cue-shocked association for each protocol. (F) Freezing behaviors quantified during CS+ in GFP- and ArchT-expressing mice. Circles, individual mice. (G\u2013J) Same representation as (C\u2013F) but for experiments with photo-stimulations delivered during CS-.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Timeline of behavioral experiments.\u00a0Random delays (between 10 and 60 s) between CS were used and one example is indicated below. (B) Fear conditioning is performed on day 2 by pairing the CS+ with a US (1 s foot shock, 0.6 mA, 5 CS+/US pairings). The onset of the US coincides with the offset of the CS+. The CS\u2212 is presented after each CS+/US association with random delays (8\u201343 s) and is never reinforced. The next pairing is performed after random delays (10\u201330 s) from the offset of the CS\u2212. Each CS lasts 30 s and is composed of 27 pips of 50 ms presented at 0.9 Hz. The frequencies used for CS+ and CS\u2212 were counterbalanced across animals (protocols 1 and 2). (C) Fear-conditioning protocols. FrA neurons expressing ArchT (or GFP) were photo-stimulated during the presentation of CS+ (8 kHz for protocol 1a or WGN for protocol 2a) or CS- (WGN for protocol 1b or 8 kHz for protocol 2b). US, footshock. Photo-simulations (orange box) were given during CS+ (protocols 1a and 2a) or CS- (protocols 1b and 2b). (D) Left, effect of light during learning on freezing behaviors during recall as compared to habituation (hab.) in GFP-expressing mice (left; n\u00a0=\u00a015) and ArchT-expressing mice (right, n\u00a0=\u00a015). Turquoise and khaki lines represent individual mice. Right, freezing behaviors quantified during CS+ in GFP- and ArchT-expressing mice. Circles, individual mice. (E) Same representation as (D) but for experiments with photo-stimulations delivered during CS-. (F) Freezing responses during recall upon CS+ (filled circles) and CS- (open circles) in GFP (turquoise) and ArchT (khaki) expressing mice. Significant differences between GFP and ArchT-mice were seen only for protocol 1b (red). (G) Coefficient of discrimination (CD) was calculated as follows: CD = (CS+ % freezing- CS- % freezing) / (CS+ % freezing+ CS- % freezing). Circles, individual mice. (H) Learning index was quantified for each CS by multiplying the % of freezing in each condition by the corresponding coefficient of discrimination. Mice with a learning index below 20% (dotted line) were considered as non-learners. (I) Fraction of mice that learned the cue-shock association (learning\u00a0>20%).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Top, Experimental protocol.\u00a0GCAMP6s-expressing dendrites were imaged in awake mice before and after fear conditioning during presentation of WGN, 8 kHz and 2 kHz tones. Bottom, fear-conditioning protocol. Only WGN and 8 kHz were used during conditioning, while 2 kHz served as a neutral tone that was only presented before and after conditioning. (B) Example of GCaMP6s fluorescence standard deviation projection (top) with ROIs in yellow (bottom). (C) Example of multiple Ca2+ transients (\u0394F/F0) recorded in a single dendrite, upon WGN (blue), 8 kHz (red) and 2 kHz (orange). Gray lines, \u0394F/F0 measured from small ROIs (all ROIs superimposed). Black line, mean \u0394F/F0 averaged over all ROIs, respectively. (D, E) Number of local Ca2+ events per dendrite observed during baseline and upon auditory stimulations in awake mice before (-, n\u00a0=\u00a09) and after (+, n\u00a0=\u00a05) fear conditioning. The averaged number of local dendritic events per dendrite observed upon WGN presentation in awake mice was significantly lower after fear learning (WGN-: 3.37\u00a0\u00b1\u00a00.3, n\u00a0=\u00a09 naive mice; WGN+: 1.88\u00a0\u00b1\u00a00.3, n\u00a0=\u00a05 conditioned mice; p=0.025, t-test). (F, G) Same presentation as in (D, E) for global events.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Example traces of postsynaptic membrane potential recorded from an individual FrA pyramidal neuron upon WGN (CS-, top) and 8 kHz (CS+, bottom) auditory stimulation after fear conditioning. The effect of both stimuli was tested on the same cell. (B) Averaged cVm change (\u00b1sem) evoked by WGN (top) and 8 kHz tones (bottom) before (naive (-)) and after fear conditioning (FC (+)). (C) Effect of WGN and pure 8 kHz tone on cVm change before (-, n\u00a0=\u00a022) and after learning (+; n\u00a0=\u00a08). As compared to naive mice, WGN failed to activate FrA pyramidal neurons in conditioned mice (WGN+: 5.4\u00a0\u00b1\u00a09 mV, n\u00a0=\u00a08; WGN-: 27.6\u00a0\u00b1\u00a04 mV, n\u00a0=\u00a022; p=0.008). Thus, the difference between WGN and 8 kHz-induced cVm change observed in naive mice (14 naive mice; WGN-: 27.6\u00a0\u00b1\u00a04 mV; 8kHz-: 1.1\u00a0\u00b1\u00a04 mV; n\u00a0=\u00a022; p<0.001; paired t-test) disappeared after fear conditioning (five conditioned mice; WGN+: 5.4\u00a0\u00b1\u00a09 mV; 8 kHz+: 0.5\u00a0\u00b1\u00a05 mV; n\u00a0=\u00a08; p=0.698; paired t-test). p<0.001, one-way anova; ***, p<0.001; **, p<0.01, Holm-Sidak comparisons. (D) Relation between the learning index and WGN (blue)- and 8 kHz (red)-induced cVm change after conditioning. As opposed to 8kHz-cVm change that was not different between behavioral performance (r\u00b2<0.001), WGN induced stronger cVm change in low freezing mice indicating that WGN- somatic plateaus are negatively correlated with behavioral performance (WGN: r\u00b2=0.55; 8 kHz: r\u00b2<0.001). Open/filled circles, individual cells from non-learning/learning mice, respectively.\n\nFirst, we suppressed the activity of FrA L2/3 neurons by delivering light each time a CS+ was presented during conditioning (Figure 3C,D). Surprisingly, neither the fraction of mice that learned the cue-shock association (protocol 1, GFP: 75%, n\u00a0=\u00a08 mice, ArchT: 87%, n\u00a0=\u00a08 mice, p=0.522; protocol 2, GFP: 85%, n\u00a0=\u00a07 mice, ArchT: 70%, n\u00a0=\u00a07 mice, p=0.248, Pearson\u2019s \u03c7\u00b2 test), nor the percentage of freezing induced by CS+ during recall (protocol 1, GFP: 51.2 \u00b1 8%, n\u00a0=\u00a08 mice; ArchT: 46.2 \u00b1 8%, n\u00a0=\u00a08 mice; p=0.7; protocol 2, GFP: 45.3 \u00b1 4%, n\u00a0=\u00a07 mice; ArchT: 33.3 \u00b1 5%, n\u00a0=\u00a07 mice; p=0.105) were affected by the inhibition of FrA neurons (Figure 3D\u2013F). In contrast, ArchT stimulation during CS- presentation (Figure 3G,H) significantly decreased the fraction of mice that were conditioned. However, this occurred only when WGN was used as CS- (protocol 1, GFP: 75%, n\u00a0=\u00a012 mice, ArchT: 30%, n\u00a0=\u00a013 mice, p=0.02; protocol 2, GFP: 85%, n\u00a0=\u00a07 mice, ArchT: 91%, n\u00a0=\u00a011 mice, p=0.7, Pearson\u2019s \u03c7\u00b2 test) (Figure 3I). In those mice, the magnitude of CS+ evoked freezing responses was significantly lower during recall than in control mice (protocol 1, GFP: 51 \u00b1 7%, n\u00a0=\u00a012 mice; ArchT: 24.5 \u00b1 5%, n\u00a0=\u00a013 mice; p=0.005) (Figure 3J).\n\nThese data indicate that when WGN is paired negatively to footshock during conditioning, it promotes fear memory traces in the FrA circuit, thus confirming the specific nature of complex auditory cues during learning (Grosso et al., 2015; Park et al., 2016). To further clarify the synaptic mechanisms involved, we measured auditory-evoked dendritic and somatic responses following conditioning protocol 1. As compared to naive mice, WGN (CS-) generated less local dendritic activation during recall (protocol 1; naive: 0.11\u00a0\u00b1\u00a00.01 Hz, n\u00a0=\u00a09 mice; FC: 0.06\u00a0\u00b1\u00a00.009 Hz, n\u00a0=\u00a05 mice; p=0.003) (Figure 3\u2014figure supplement 2). In contrast, local dendritic events evoked by a conditioned cue (8 kHz) or cues that were not presented during conditioning (2 kHz) were not altered, indicating that fear learning specifically affected WGN-mediated dendritic signaling. In addition, WGN-induced somatic plateau potentials were reduced in conditioned animals in a learning-dependent manner, suggesting that NMDAR-dependent plasticity mechanisms in FrA neurons were engaged during learning (Lai et al., 2012; Rioult-Pedotti et al., 2000; Figure 3\u2014figure supplement 3). Interestingly, the somatic and dendritic responses to both 8 kHz and WGN tones were similar during recall while mice performed better at discriminating these stimuli. This suggest that, while dendritic signaling appears critical during learning to recruit pyramidal neurons into memory traces, other circuit and cellular mechanisms are at play to discriminate sensory cues after learning. Whether the effect of learning on FrA pyramidal neurons is cancelled following fear extinction remains unknown and would be interesting to explore.\n\n### BLA-to-FrA axons are recruited during fear conditioning\n\nThe above-mentioned results indicate that the FrA is required for fear learning and guides behaviors by integrating non-conditioned complex auditory cues during conditioning. Given the well-established role of the BLA and its cortical projection during the acquisition and expression of auditory cue fear learning (LeDoux, 2000; Likhtik and Paz, 2015; Likhtik et al., 2014; Nakayama et al., 2015; Senn et al., 2014; Stujenske et al., 2014), we next investigated the information transmitted from the BLA to the FrA (Lai et al., 2012; M\u00e1ty\u00e1s et al., 2014; Nakayama et al., 2015) during conditioning. We injected a virus expressing the genetically encoded calcium indicator GCaMP6f into the right BLA and imaged axonal Ca2+ responses in the superficial L1 of the right FrA of awake head-restrained mice during fear conditioning (Figure 4A,B). Results confirmed that BLA neurons project to the superficial layer 1 of the ipsilateral FrA (<150 \u00b5m from the pia) (Lai et al., 2012; M\u00e1ty\u00e1s et al., 2014; Nakayama et al., 2015; Figure 4B; Figure 4\u2014figure supplement 1). We conditioned awake mice (n\u00a0=\u00a010 mice) under the two-photon microscope by using the same counterbalanced protocols as described previously (protocol 1, n\u00a0=\u00a07 mice; protocol 2, n\u00a0=\u00a03 mice) (Figure 3\u2014figure supplement 1). GCaMP6f calcium transients (\u0394F/F0) provided a direct measure of the activation of BLA neurons projecting to the FrA (Figure 4B). Again, learning was tested 24 hr later and quantified by the percentage of freezing (Figure 4C). We then compared the activity of individual boutons between mice that learned (learning+, n\u00a0=\u00a05 mice) and those that failed to learn (learning-, n\u00a0=\u00a05 mice).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig4-v1.jpg)\n\n**Figure 4.:** (A) Top left, experimental protocol. BLA-to-FrA axons were imaged in the superficial layer of the FrA. Top Right, expression profiles of GCaMP6f in the BLA. Bottom, GCaMP6f-expressing mice were fear conditioned under the 2P microscope (conditioning protocols 1 and 2 pooled together), and fear learning was quantified 24 hr later in a new context. (B) GCaMP6f-expressing axons were imaged in the FrA of awake mice (scale bar, 200 \u00b5m). Inset, example of Ca2+ transients in individual BLA-to-FrA axon. (C) Left, conditioning under the microscope-induced robust fear behaviors: in contrast to CS-, CS+ increased freezing responses during recall as compared to habituation (hab.). Gray solid lines, % of freezing of mice with learning index\u00a0>20% (learning+, n\u00a0=\u00a05); gray dashed lines, % of freezing of mice with learning index\u00a0<20% (learning-, n\u00a0=\u00a05). Right, freezing responses induced by CS+ during recall for learners (learn. +) and non-learners (learn. -) mice. (D) Examples of Ca2+ transients (\u0394F/F0) from individual boutons recorded from one mouse upon consecutive CS+/US pairings. Dark gray bars, CS+; light grey bars, CS-; black bars, footshock (US). (E) Frequency of axonal Ca2+ transients recorded during successive CS. For the first CS+, the activity of boutons was monitored in absence of footshock. Black arrow points to the difference between the first CS+ (before the first footshock) and the first CS- (after the first footshock). 0 corresponds to the baseline period before conditioning. (F) Cumulative \u0394F/F0 averaged (\u00b1sem) across all CS+ (solid black lines, n\u00a0=\u00a010) and CS-(dotted black lines, n\u00a0=\u00a010). Green lines, difference between CS+ and CS- related axonal activity (\u0394cumulative: \u0394F/F0 CS- - \u0394F/F0 cs+) in mice that learned (learning+, solid green line, n\u00a0=\u00a05) or not (learning-, dotted green line, n\u00a0=\u00a05) the association. (G) Relation between the \u0394cumulative during conditioning and the % of freezing during recall for protocol 1 (blue, CS+: 8 kHz) and protocol 2 (red, CS+: WGN). Circles, mice. *, p<0.05; ***, p<0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Two illustrative examples of BLA-to-FrA axons expressing GCaMP6f. BLA neurons were transfected with AAV1.Syn.GCaMP6f. GCaMP6f-expressing axons were imaged in the FrA of awake mice through a cranial window. (B) Examples of Ca2+ transients (\u0394F/F0) from individual boutons recorded from one mouse upon different auditory tones. (C) Frequency of axonal Ca2+ transients (normalized to baseline) recorded in naive mice (no conditioning, n\u00a0=\u00a06 mice) and during auditory fear conditioning (n\u00a0=\u00a010 mice) with protocol 1 (CS+: 8 kHz, CS-: WGN, n\u00a0=\u00a07) and protocol 2 (CS+: WGN, CS-: 8 kHz, n\u00a0=\u00a03). (D) Left, fraction of axonal calcium transients detected in mice that learned (red, learning +) or not (orange, learning-) the protocol, inside and outside CS- presentation (excluding those that occurred during CS+). Right, normalized frequency of axonal Ca2+ transients recorded between conditioning trials (CS+/US) within (filled circles) and outside (open circles) CS- presentation, in mice that learned (red) or not (orange) the protocol. (E) Amplitude in \u0394F/F0 of detected calcium transients (same presentation as in D).\n\nAs a first metric to quantify the activity of BLA-to-FrA axons, we measured the number of calcium transients in individual boutons observed during baseline and in conditioning pairings. While the activity of individual BLA boutons in FrA was relatively low at rest, it increased significantly upon successive pairings (Figure 4D). This occurred independently of the conditioning protocol and only in mice that learned (learning+, all CS+: 1.73\u00a0\u00b1\u00a00.3, all CS-: 2.07\u00a0\u00b1\u00a00.45, n\u00a0=\u00a05 mice; learning-, all CS+: 0.62\u00a0\u00b1\u00a00.08, all CS-: 0.77\u00a0\u00b1\u00a00.13, n\u00a0=\u00a05 mice; p=0.015) (Figure 4D,E; Figure 4\u2014figure supplement 1). Interestingly, it also never occurred before the end of the first US presentation. Indeed, the number of transients observed during the first CS+ (i.e. before the delivery of the first US) was significantly lower than the other CS that were paired with the US (learning+, CS/No US: 1.03\u00a0\u00b1\u00a00.15, CS/US: 1.97\u00a0\u00b1\u00a00.4, n\u00a0=\u00a05 mice, p=0.011; learning-: CS/No US: 0.74\u00a0\u00b1\u00a00.05, CS/US: 0.68\u00a0\u00b1\u00a00.08, n\u00a0=\u00a05 mice, p=0.863) (Figure 4E). As a consequence, the activity of boutons measured during the first CS- was always higher than during the first CS+ (learning+, CS+1: 1.03\u00a0\u00b1\u00a00.15, CS-1: 2.03\u00a0\u00b1\u00a00.4, n\u00a0=\u00a05 mice, p=0.003; learning-, CS+1: 0.74\u00a0\u00b1\u00a00.05, CS-1: 0.88\u00a0\u00b1\u00a00.09, n\u00a0=\u00a05 mice, p=0.425) (arrow in Figure 4E). These data suggest that neither the tone alone nor the foot shock influence the activity of BLA-to-FrA axons. In agreement, calcium transients between conditioning trials were not modulated by the presence of CS- (Figure 4\u2014figure supplement 1). In addition, BLA-to-FrA axons were never activated by auditory stimulations in naive mice (i.e. before fear conditioning) (Figure 4\u2014figure supplement 1). Together, our data support the idea that BLA axons projecting to the FrA convey information about learning, that\u00a0is the CS+/US association itself rather than about the nature of the auditory tones.\n\nThen, we summed the amplitude of all calcium transients detected during each CS presentation (cumulative \u0394F/F0 averaged across all CS+ or CS-). The averaged cumulative \u0394F/F0 measured during CS- was always higher than during CS+ (CS-: 0.27\u00a0\u00b1\u00a00.07 \u0394F/F0, CS+: 0.21\u00a0\u00b1\u00a00.06 \u0394F/F0, n\u00a0=\u00a010 mice; p=0.012), revealing that the overall activity of BLA-to-FrA axons was stronger between conditioning trials, notably at the time when CS- occurred (Figure 4F). Importantly, the difference between CS+ and CS- related axonal activity (\u0394cumulative: \u0394F/F0 CS- - \u0394F/F0 cs+) was significantly higher in mice that learned the association than in non-learners (learning+: 0.1\u00a0\u00b1\u00a00.02 \u0394cumulative, n\u00a0=\u00a05 mice; learning-: 0.01\u00a0\u00b1\u00a00.008 \u0394cumulative, n\u00a0=\u00a05 mice; p=0.013, t-test) (Figure 4F). In fact, when plotted as a function of freezing percentage observed during recall, the \u0394cumulative correlated positively with learning performance (r\u00b2=0.89, p<0.001) (Figure 4G), suggesting that the level of activity of BLA-to-FrA axons during CS- is critical for the acquisition of fear memories.\n\n### Non-linear interaction in FrA L2/3 pyramidal neurons between segregated BLA and auditory inputs\n\nThe activation of BLA neurons instructs prefrontal circuits during learning and memory recall (Klavir et al., 2017; Nakayama et al., 2015; Stujenske et al., 2014). However, the optical activation of the BLA alone is not sufficient to produce learned associations (Johansen et al., 2010). Therefore, we hypothesized that the activation of BLA axons during CS- (Figure 4), along with the synaptic non-linearities evoked by WGN (Figures 1 and 2), could gate fear learning (Figure 3) by controlling L2/3 FrA pyramidal neurons through their projections into L1.\n\nTo test this hypothesis, we first addressed the properties of BLA-to-FrA synapses in naive mice. We expressed the recombinant light-gated ion channel channelrhodopsin-2-YFP (ChR2; AAV9-CamKIIa-hChR2-eYFP) in the BLA and performed intracellular recordings in L2/3 FrA neurons from naive mice (Figure 5). BLA neurons expressing ChR2 projected to the superficial layer 1 of the ipsilateral FrA (<150 \u00b5m from the pia) (Figure 5A; Figure 5\u2014figure supplement 1A\u2013C), thereby most likely contacting dendritic tufts of L2/3 pyramidal neurons. Local photostimulation of ChR2-BLA axons in acute slices produced excitatory postsynaptic current (EPSC) in FrA pyramidal neurons with short latencies (3.5\u00a0\u00b1\u00a00.36 ms, n\u00a0=\u00a09 cells) and low jitter (0.289\u00a0\u00b1\u00a00.04 ms, n\u00a0=\u00a09 cells), suggesting that a fraction of BLA neurons are connected monosynaptically to L2/3 FrA pyramidal neurons (Figure 5\u2014figure supplement 1D,E; Klavir et al., 2017). In vivo, the photostimulation of BLA neurons with an implanted optical fiber produced plateau-like depolarizations in all FrA neurons (averaged peak amplitude: 6.2\u00a0\u00b1\u00a01.2 mV*sec, full-width at half-max (fwhm): 551\u00a0\u00b1\u00a080 ms; n\u00a0=\u00a013 cells). However, BLA-to-FrA inputs were mostly undetectable and became visible only when the stimulation was delivered during down states (Figure 5\u2014figure supplement 1F,G), suggesting that the responses of FrA neurons to BLA stimulation in vivo are likely to be altered by on-going spontaneous activity (Ferezou and Deneux, 2017). When detected, the distribution of amplitudes across cells suggested that, on average, they were highly variable (range of amplitude: 0.4 mV-14.5 mV) (Figure 5\u2014figure supplement 1G). The rhythmic stimulation of ChR2-expressing BLA neurons at 0.9 Hz for 30 s (27 square pulses, 50 ms) (Figure 5B,C), a protocol that mimicked the pattern of auditory stimuli, generated modest cumulative depolarization (8\u00a0\u00b1\u00a04 mV; n\u00a0=\u00a021 cells). Taken together, our data indicate that BLA-to-FrA synapses are likely to be weak and unreliable.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig5-v1.jpg)\n\n**Figure 5.:** (A) Left, co-activation protocol. ChR2-expressing BLA neurons were photo-stimulated during auditory stimulation. Right, representative example of the ChR2-GFP expression profile in the mouse BLA and FrA (ChR2-expressing axons were imaged in superficial layer 1 with 2P microscopy before recording). (B) Single-cell example of depolarizations in FrA by the rhythmic photostimulation of BLA neurons (27 square stimulations, 50 ms, 0.9 Hz for 30 s). (C) Averaged cVm change (\u00b1sem) evoked by the photostimulation of BLA neurons. Photo-stimulation is depicted by the black bar. (D) Example of traces of postsynaptic membrane potential recorded from individual FrA L2/3 pyramidal neurons upon WGN paired (top) or not (bottom) with the photo-stimulation of ChR2-expressing BLA neurons. Black and blue bars below the traces indicate the duration of the stimulation. (E) Averaged cVm change (\u00b1sem) observed upon paired stimulation (solid line) or expected from the arithmetic sum of individual depolarizations evoked by the stimulation of BLA or auditory tones alone (dotted line). Blue and black bars, auditory and BLA stimulations, respectively. (F, G) Same representation as in (D, E) but for 8 kHz. (H) Left, relation between observed and expected cVm. Circles, individual cells, squares, mean\u00a0\u00b1sem. Right, Averaged cVm (\u00b1sem). **, p<0.01; ****, p<0.001. Gray lines indicate paired experiments. (I) Left, averaged observed cVm change (\u00b1sem). Arrows, analysis time points 1 (end of stimulation) and 2 (30 s later). Right, effect of photostimulation (+) on WGN (dark blue) and 8 kHz (black red)-evoked cVm at time points 1 and 2. **, p=0.003; *, p=0.035. Circles, individual cells.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Experimental strategy. Left, BLA neurons were transfected with AAV9-CamKIIa-hChR2-eYFP, and ChR2-expressing BLA neurons were then photo-stimulated in vivo with a DPSSL (\u03bb\u00a0=\u00a0473 nm) through an implanted optical fiber. Middle, example of a cortical coronal slice with ChR2-YFP fluorescence in the FrA. PL, prelimbic cortex; MO, medial orbital cortex. Right, fluorescence intensity profiles measured in the FrA (white box) of six different animals in which injections targeted BLA. (B) Examples of ChR2-expressing axons imaged in superficial layer 1 with 2P microscopy. (C) Left, representative example of the ChR2-YFP expression profile in the mouse BLA. Right, coronal diagrams of the brains from six mice showing the expression profiles (in black) of ChR2-YFP. Diagrams were adapted from Paxinos and Franklin, 2001. (D) Schematic of the slice experiment. BLA-to-FrA axons expressing ChR2 were photo-activated through the objective. Right, gray and black lines, representative examples of excitatory post-synaptic current (EPSCs) and feed-forward inhibitory post-synaptic currents (IPSCs) respectively evoked on L2/3 pyramidal neurons with an ultrahigh power 488 nm LED. (E) Amplitude (left) and jitter (right) of light-evoked EPSCs. Gray lines indicate pairs. Open circles indicate individual cells. (F) Single-cell examples of depolarizations in FrA neuron evoked by the photostimulation of BLA neurons. Gray lines, single trials; black line, average of 20 trials. (G) Peak amplitude (left) and fwhm (right) of evoked PSP. Triangles, cells.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Optical fibers implantation (canula) do not affect auditory-induced cVm changes as compared to non-implanted mice (no canula). (B) Co-activation protocol. ChR2-expressing BLA neurons were photo-stimulated during WGN auditory stimulation. (C) Averaged cVm changes (\u00b1sem) in response to BLA photo-stimulation alone (black), WGN presentation alone (light blue) and WGN+BLA (dark blue). Arrows, analysis time points 1 (end of stimulation) and 2 (30 s later). *, p<0.05; **, p<0.01; ***, p<0.001; Holm-Sidak multiple comparisons after one-way anova (p<0.001 for time point 1; p=0.002 for time point 2). (D, E) Same presentation as in (B, C) but for 8 kHz. (F) Averaged cVm change (\u00b1sem) during WGN+BLA co-stimulation in controls (solid line) and after dAP5 application (dashed line). ***, p<0.001; t-test.\n\nWe next investigated the effect of BLA activation during auditory stimulation on L2/3 FrA pyramidal neurons (Figure 5D\u2013I). We first verified that WGN alone was able to activate FrA pyramidal neurons in mice chronically implanted with optical fibers. Similar to the effect of auditory stimulation in non-implanted mice (Figure 5\u2014figure supplement 2A), WGN but not 8 kHz evoked a long-lasting subthreshold depolarization (WGN: 18.9\u00a0\u00b1\u00a07 mV, n\u00a0=\u00a011 cells; 8 kHz: \u22129.7\u00a0\u00b1\u00a03 mV, n\u00a0=\u00a08 cells; p=0.005; t-test). The coincident photo-activation of BLA neurons during the presentation of WGN did not generate somatic action potential. However, it resulted in somatic responses (observed cVm) that were significantly higher than the arithmetic sum (expected cVm) of individual depolarizations evoked by the stimulation of BLA or auditory tones alone (observed cVm: 44\u00a0\u00b1\u00a06.4 mV, expected cVm: 18\u00a0\u00b1\u00a08.8 mV, n\u00a0=\u00a011 cells; p=0.002, paired t-test) (Figure 5D,E,H; Figure 5\u2014figure supplement 2B,C). We then plotted the observed vs. expected cVm change and found that the observed cVm exceeded the expected cVm, indicating that the interaction in FrA neurons between BLA and WGN-related inputs was clearly supralinear (Spruston and Kath, 2004; Tran-Van-Minh et al., 2015; Figure 5H). Supra-linear operations have been shown to depend on active dendritic conductances (Spruston and Kath, 2004; Tran-Van-Minh et al., 2015). Accordingly, we found that the application of dAP5 (1 mM) to the cortical surface blocked the effect of BLA activation during WGN (BLA+WGN: 39\u00a0\u00b1\u00a06.2 mV, n\u00a0=\u00a013 cells; BLA+WGN/+dAP5: \u221226.6\u00a0\u00b1\u00a06.7 mV, n\u00a0=\u00a07 cells; p<0.001; t-test), indicating that NMDARs are involved in the supra-linear integration in FrA neurons (Figure 5\u2014figure supplement 2F). The photo-activation of BLA also significantly affected the cumulative potential evoked by 8 kHz (8 kHz: 9.7\u00a0\u00b1\u00a03.3 mV vs. 8 kHz+BLA: 16.6\u00a0\u00b1\u00a03.1 mV; n\u00a0=\u00a08 cells; p<0.001; paired t-test) (Figure 5F,G; Figure 5\u2014figure supplement 2D,E). Although supra-linear (observed cVm: 16.6\u00a0\u00b1\u00a03.1 mV, expected cVm: \u22122.4\u00a0\u00b1\u00a03.3 mV, n\u00a0=\u00a08 cells; p<0.001, paired t-test), the BLA+8 kHz integration remained significantly lower than the supra-linearity generated by BLA+WGN (observed cVm; WGN: 44\u00a0\u00b1\u00a06.4 mV, n\u00a0=\u00a011 cells; 8 kHz: 16.6\u00a0\u00b1\u00a03.1 mV, n\u00a0=\u00a08 cells; p=0.003, t-test). This indicates that BLA axons are necessary to produce non-linear integration of auditory inputs in FrA neurons, which is stronger for Gaussian noise than for pure tones.\n\n### BLA-to-FrA non-linear integration of Gaussian noise gates fear learning\n\nWe next examined whether this BLA-mediated, non-linear integration of auditory inputs in FrA pyramidal neurons could play a role in the acquisition of fear memories. This question was addressed by silencing specifically the BLA neurons that project to the FrA axons during conditioning with optogenetics (Figure 6; Figure 6\u2014figure supplement 1). Mice were injected bilaterally with a retrograde Cav-2-CMV-Cre (Hnasko et al., 2006) into the FrA together with either AAV9. CBA.Flex.ArchT.GFP (ArchT-expressing mice, n\u00a0=\u00a024) or AAV9.CAG.Flex.eGFP (control GFP-expressing mice, n\u00a0=\u00a025) into BLA bilaterally (Figure 6A). This resulted in the restricted expression of the light-driven inhibitory proton pump ArchT (or GFP for controls) in a target-specific fraction of BLA neurons that project to the FrA (Figure 6B\u2013D). In contrast to BLA neurons that project directly to the mPFC (Hoover and Vertes, 2007; Likhtik and Paz, 2015; Senn et al., 2014), BLA-to-FrA axons do no send collaterals to the prelimbic and infralimbic subdivisions of the mPFC (Figure 6C,D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig6-v1.jpg)\n\n**Figure 6.:** (A) Experimental strategy. Mice were infected with AAV9.CBA.Flex.ArchT-GFP (or AAV9.CAG.Flex.eGFP for controls) in BLA and CAV2.CMV.CRE in FrA, and chronically implanted with optical fibers in both BLA. (B) Neurons expressing GFP were found throughout the entire BLA, but not the LA. (C) Example of expression profile of GFP in the FrA and the M2. Note the absence of GFP-expressing axons in the prelimbic (PL) and infralimbic (IL) subdivisions of the mPFC. (D) Distribution of GFP-expressing axons; in different frontal structure; as a function of the distance from the bregma. (E) Top, experimental fear-conditioning protocols. FrA neurons expressing ArchT (or GFP) were photo-stimulated during the presentation of CS- (WGN for protocol 1b or 8 kHz for protocol 2b). US, unconditional stimulus (footshock). Bottom, fraction of mice that learned the cue-shocked association for each protocol. (F) Effect of light during learning on freezing behaviors during recall as compared to habituation (hab.) in GFP-expressing mice (left; n\u00a0=\u00a020) and ArchT-expressing mice (right, n\u00a0=\u00a019). Turquoise and khaki lines represent individual mice. (G) Freezing behaviors quantified during CS+ in GFP- and ArchT-expressing mice (p=0.235). Circles, individual mice. ***, p<0.001; **, p<0.01; ns, non-significant.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62594/elife-62594-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Experimental strategies for optogenic. Left, mice were infected with AAV9.CBA.Flex.ArchT or AAV9.CAG.flex.eGFP in the BLA and CAV2.CMV.Cre in the FrA, and chronically implanted with optical fibers bilaterally in the BLA. Right, mice were infected with AAV9-CAG-ArchT or AAV9-CaMKII-eGFP for controls in the FrA, and chronically implanted with optical fibers bilaterally in FrA. (B) Fear-conditioning protocols. Left, BLA-to-FrA neurons or FrA neurons expressing ArchT (or GFP) were photo-stimulated during the presentation of CS+ (8 kHz) or CS- (WGN). US, footshock. Photo-simulations (orange box) were given during CS+ (protocols 1a) or CS- (protocols 1b). Right, fear conditioning was performed in the absence of photostimulation, in presence (top, protocol 1 c) or absence (bottom, protocol 1d) of CS-. (C) Freezing responses during recall upon CS+ for all behavioral conditions. (D, E) Protocol 1 (with CS-) produces more freezing responses than protocol 1 (with CS- omitted) and protocol 2. All control mice were pooled together.\n\nMice were then submitted to auditory fear conditioning, and we analyzed the impact of opto-stimulation on freezing behaviors for each counter-balanced protocol (Figure 6\u2014figure supplement 1). We found that the time-locked suppression of BLA-to-FrA communication during negatively\u00a0paired WGN (CS-, protocol 1b) significantly decreased the fraction of ArchT-mice that learned the association (GFP: 87.5%; ArchT: 22%, p=0.005, Pearson\u2019s \u03c7\u00b2 test) and freezing behaviors upon subsequent CS+ (8 kHz) presentation (GFP: 55.9 \u00b1 8%, n\u00a0=\u00a08 mice; ArchT: 34.9 \u00b1 3%, n\u00a0=\u00a07 mice; p=0.037, t-test) (Figure 6E,F; Figure 6\u2014figure supplement 1). These results were similar to those obtained when FrA neurons were inhibited during conditioning (Figure 3; Figure 6\u2014figure supplement 1), thus confirming that negatively paired WGN participates in the formation of fear traces. In contrast, neither the fraction of mice that learned (GFP: 78%; ArchT: 44%, p=0.145, Pearson\u2019s \u03c7\u00b2 test) nor freezing responses during recall (CS+; GFP: 34.8\u00a0\u00b1\u00a03.9, n\u00a0=\u00a09 mice; ArchT: 29.3\u00a0\u00b1\u00a08, n\u00a0=\u00a09 mice; p=0.530, t-test) were affected by blocking the activity of BLA-to-FrA axons during negatively-paired 8 kHz (CS-, protocol 2b) (Figure 6E,G). Similar results were obtained when photo-stimulation was administered during CS+ (WGN, protocol 2a).\n\nAltogether, our data support the idea that if Gaussian noise is presented when the activity of BLA neurons is the strongest (i.e. between conditioning trials, Figure 4) it facilitates discriminative learning. In support of this hypothesis, fear conditioning with protocol one produced more freezing responses in control mice than with protocol 2 (Figure 6\u2014figure supplement 1). In addition, CS+ evoked freezing responses were significantly lower during recall in mice that were conditioned in the absence of CS- (Figure 6\u2014figure supplement 1).\n\n## Discussion\n\nThe present study investigates the role of the BLA-to-FrA circuit in the integration of auditory cues, and how this process participates in the acquisition of fear traces during conditioning. Taken together, our data demonstrate that rather than being an obstacle, Gaussian noise facilitates auditory fear learning when not paired to the foot shock (i.e. delivered between conditioning trials), thereby confirming the sophisticated nature of differential conditioning protocols (Grosso et al., 2015; Hall, 2002; McDonnell and Abbott, 2009). This is possibly due to: (1) the specific dendritic and somatic responses of FrA pyramidal neurons to WGN;(2) the activation of BLA-to-FrA axons between conditioning pairings, which might support (3) the non-linear integration of Gaussian noise in FrA neurons. Unlike WGN, none of the optogenetic manipulations aiming at altering pure tone processing in FrA and BLA during conditioning had an effect on fear learning. Thus, our data bring additional perspectives to central questions regarding how frontal circuits contribute to learning, thus going beyond the BLA-mPFC interactions classically described in fear learning studies (Likhtik and Paz, 2015). Lesion studies revealed the decisive functions of cortical areas when animals learn to predict threat specifically from complex tones (Grosso et al., 2015; LeDoux, 2000; Letzkus et al., 2011; Ohl et al., 1999). Thus, despite the dendritic and somatic properties of WGN that we observed in the FrA, it remains likely that other complex tones, including natural tones or more complex frequency-modulated tones covering a wider spectrum of pure frequencies, could also facilitate learning in a similar way than WGN.\n\nAccumulating evidence from anatomical and functional studies has demontrated that despite its pivotal role in the acquisition and expression of associations between sensory stimuli and the emotional valence of these stimuli (Laviolette et al., 2005; Roesch et al., 2010), the mPFC is not directly involved in sensory processing (Hoover and Vertes, 2007; Martin-Cortecero and Nu\u00f1ez, 2016; Zhang et al., 2016). In contrast, due to its anatomical connections with distributed cortical and subcortical regions (Hoover and Vertes, 2007; Zhang et al., 2016), the FrA might serve as a hub that coordinates incoming sensory information before reaching the mPFC. Here, we show that it is indeed required for fear learning in a rather unconventional way, and further clarify the underlying synaptic mechanisms. To our knowledge, this is the first demonstration that auditory sensory stimulation produces NMDAR-dependent depolarization in FrA L2/3 pyramidal neurons and activates their dendrites during both anesthesia and wakefulness. These depolarizations persisted beyond the end of the stimulation, which possibly reflects changes in the dynamics of network activity through local recurrent connections (Ferezou and Deneux, 2017; Kasanetz et al., 2002; Shu et al., 2003). The somatic and dendritic events were more pronounced with Gaussian noise than with pure frequency auditory stimulation. Although we cannot rule out that WGN tones are structured and further abstracted throughout the entire auditory system (Deneux et al., 2016), the simplest explanation is that frequency-tuned spines are distributed widely and heterogeneously throughout the same FrA dendrite, as already reported in the auditory cortex of anesthetized mice (Chen et al., 2011). As a consequence, the multiple frequencies composing WGN might promote the activation of a dense pattern of neighboring spines that in turn facilitate the generation and propagation of local non-linear events toward the soma (Antic et al., 2010). Multiple calcium transients occurring simultaneously in multiple dendritic branches are necessary to affect somatic voltage (Palmer et al., 2014). Both those findings and ours suggest that WGN-induced depolarization is the consequence of multiple calcium events that occur in different dendritic branches of the same neuron. In contrast, pure-frequency tone appeared unable to activate enough branches simultaneously, thereby making the alteration of somatic voltage less probable. In support of this hypothesis, we found that simple linear chirps produced more somatic depolarization than pure tones. This further suggests that more complex frequency-modulated tones could theoretically also activate FrA pyramidal neurons and affect fear learning like WGN did in our experimental conditions.\n\nThe FrA and the BLA are strongly interconnected (Lai et al., 2012; M\u00e1ty\u00e1s et al., 2014; Nakayama et al., 2015). However, the functional properties of these connections remain unknown, notably during learning. Our results confirm that BLA neurons project to the superficial layer of the FrA, thereby most likely contacting dendrites of L2/3 pyramidal neurons. However, and in contrast to what we observed in vitro, the photo-stimulation of ChR2-expressing BLA neurons in vivo at the same intensity than for behavioral experiments produced depolarizations in FrA pyramidal neurons that were rather weak and unreliable. The difference between in vitro and in vivo conditions may reflect the interaction between evoked responses and on-going spontaneous activity that occurs in vivo (Ferezou and Deneux, 2017). It thus seems unlikely that they can summate during rhythmic activation to create favorable conditions for the integration of coincident sensory-driven inputs. Alternatively, it is possible that the modest activation of BLA synapses in FrA apical dendrites gates the propagation towards the soma of tone-evoked dendritic events which could enhance the generation of somatic action potential (Jarsky et al., 2005; Palmer et al., 2014). Here, we observed that the coincident activation of BLA-to-FrA inputs increased both WGN and 8 kHz-evoked depolarization non-linearly. Although the BLA+WGN nonlinearities were much stronger than those generated by BLA+8 kHz, it did not generate somatic action potential in FrA pyramidal neurons. While the absence of spiking could have been caused by the anesthesia, it is known that the non-linear interaction between compartmentalized streams of neural activity also induces long-lasting changes in synaptic strength and intrinsic excitability (Dudman et al., 2007; Gambino et al., 2014; Jarsky et al., 2005; Larkum, 2013; McGaugh, 2013; Xu et al., 2012). In agreement, we found that the activation of BLA neurons during WGN affected subsequent spontaneous activity more robustly and for a longer period of time than during 8 kHz. Although this effect was analyzed no longer than 30 s after the end of the stimulation, it also prompts the speculation that the alteration of FrA membrane potential evoked by the BLA+WGN nonlinearities might reflect a global brain state change which would modify the integration of future incoming sensory inputs, such as it occurs during consecutive pairing upon conditioning.\n\nThe mechanism by which these BLA-mediated nonlinearities affect learning remains unclear. The BLA presumably transfers information to the FrA that is relevant for fear learning (Lai et al., 2012; Nakayama et al., 2015). Surprisingly, inhibiting the activity of FrA neurons during CS-, or BLA neurons projecting to the FrA, attenuated freezing responses in response to CS+ during recall. However, this counterintuitive effect occurred only when WGN, but not 8 kHz tone, was used as CS- during conditioning (protocol 1). This alteration of learning is unlikely to be the consequence of insufficient activation of the BLA. Instead, given the low number of BLA neurons expressing ArchT and their precise inhibition during CS-, an alternative explanation is that when WGN is combined with the activation of BLA projecting axons, which is maximal between conditioning trials, it might promote the representation of sensory cues predicting threat (i.e. CS+, 8 kHz) within the FrA (Hall, 2002). This hypothesis is supported by the late modification of membrane potential fluctuations observed after the activation of BLA with WGN presentation, which occurred when an 8 kHz tone was presented during conditioning. Interestingly, omitting CS-/WGN during fear conditioning does not prevent learning. However, freezing responses during recall were significantly lower than when CS- were presented between conditioning trials, but similar to those obtained when FrA or BLA-to-FrA neurons were inhibited during CS. Taken together, it indicates that the BLA-mediated, non-linear integration of WGN in FrA neurons between conditioning trials facilitates the acquisition of fear memory traces.\n\nBLA neurons send multiple projections to cortical and subcortical areas that have been shown to project also to the FrA. It is thus possible that the information is transmitted from the BLA to the FrA through an indirect pathway (Nakayama et al., 2015; Price, 2003). Here, we found that BLA-to-FrA neurons do not send axonal collaterals to the mPFC. In addition, we demonstrate that the expression of the genetically encoded calcium indicator GCaMP6 in BLA neurons makes it possible to monitor optically the activity of target-specific BLA axons during learning. Using this strategy in awake mice, we demonstrate for the first time that BLA-to-FrA axons are progressively recruited upon successive conditioning trials, thereby ruling out the indirect activation of the FrA circuit. First, we show that BLA-to-FrA axonal activity is never affected by the presentation of auditory cues alone. Our data contrast with previous work showing an increase in local field potential and unit activity in the BLA upon auditory stimulation (Collins and Par\u00e9, 2000), and suggest instead the existence of a subpopulation of BLA neurons projecting specifically to the FrA that might play a specific role during the learning of emotion. Although it remains unknown whether BLA axons might convey contextual information to the FrA, they seem to transmit integrated information about the association itself. First, these axons are activated only after the first CS+/US pairing. Then, the level of activity of BLA-to-FrA axons was stronger between conditioning trials (i.e. during CS- presentation) and correlated with learning performance. This suggests a putative Hebbian-like frontal mechanism that could integrate any Gaussian noise that is contiguous to the maximal activation of BLA-to-FrA axons (Johansen et al., 2010; Johansen et al., 2014; Larkum, 2013; Nakayama et al., 2015). Supporting this idea, we found that WGN but not 8 kHz-dendritic and somatic signaling were reduced in conditioned mice in a learning-dependent manner, suggesting that NMDAR-dependent plasticity mechanisms in FrA neurons were engaged during fear learning. While this mechanism would occur only if WGN is presented between conditioning trials (and thus used as CS-), it might eventually facilitate the recruitment of neurons into specific cue memory traces. Dendritic plateau potentials have been shown to regulate synaptic strength and synaptic plasticity (Cichon and Gan, 2015; Du et al., 2017; Gambino et al., 2014; Humeau and L\u00fcthi, 2007; Palmer et al., 2014), which might subsequently facilitate the stabilization or pruning of synaptic inputs during learning (Holtmaat and Caroni, 2016; Li et al., 2017). In support of the latter, the level of fear learning has been shown to correlate with the percentage of spine elimination in FrA (Lai et al., 2012) which possibly explains the negative relation we observed during anesthesia between WGN/(CS-)-evoked subthreshold depolarizations and the strength of learning.\n\nCollectively, our data reveal the specific properties of Gaussian noise in FrA during fear conditioning. The question arises as to the function or benefit of Gaussian noise in the BLA-to-FrA circuit during learning. Previous studies highlighted the critical function of the BLA in attention for learning (Laviolette et al., 2005; Roesch et al., 2010). Here, we show that the activation of BLA-to-FrA axons is independent of the nature of the CS presented. It thus seems unlikely that BLA-to-FrA axons convey the emotional valence of this association. In addition, the activation of BLA alone, while necessary, is not sufficient to trigger learning (Johansen et al., 2010; Johansen et al., 2014). BLA neurons might signal to frontal circuits any new association independently of its valence, which might subsequently be assigned by the mPFC (Klavir et al., 2013; Likhtik and Paz, 2015). While acoustic noise is often viewed as a disturbing variable, it can enhance signal processing, facilitate sensory signaling and improve cognitive performance, notably in individuals with poor attention (McDonnell and Abbott, 2009; McDonnell and Ward, 2011; Stein et al., 2005). Therefore, given that noise is abundant in the environment and communication of most mammals, it might facilitate learning in coordination with BLA-to-FrA inputs.\n\n## Materials and methods\n\nAll experiments were performed in accordance with the Guide for the Care and Use of Laboratory Animals (National Research Council Committee (2011): Guide for the Care and Use of Laboratory Animals, 8th ed. Washington, DC: The National Academic Press.) and the European Communities Council Directive of September 22th 2010 (2010/63/EU, 74). Experimental protocols were approved by the institutional ethical committee guidelines for animal research (N\u00b050DIR_15-A) and by the French Ministry of Research (N\u00b002169.01). We used male C57Bl6/J 6 weeks old mice from Charles River that were housed with littermates (3\u20134 mice per cage) in a 12 hr light-dark cycle. Cages were enriched and food and water were provided ad libitum.\n\n### Auditory tones\n\nThe different sounds used in this study are all composed of 27 pips of 50 ms presented at 0.9 Hz, regardless of their spectral properties. Each 50 ms-long pips (sampling frequency: 44100 Hz) were generated by producing 2205 samples (i) following a Gaussian distribution for WGN, (ii) of a sinusoidal signal for pure tones, and (iii) of a swept-frequency cosine signal for linear chirp tones. Pure and Chirp pips were created by using the \u2018sin\u2019 and \u2018chirp\u2019 functions in Matlab, respectively. WGN was created by using the \u2018randn\u2019 function in Matlab, which generates random numbers that follow a Gaussian distribution. WGN is thus a true random signal with equal intensity at all frequencies. Auditory tones were further low-pass filtered at 20 kHz to avoid aliasing, but also to limit ultrasonic frequencies, which could trigger innate fear-induced defensive responses in rodents, such as escape of freezing, without associative learning (Brudzynski and Chiu, 1995).\n\n### Surgery and virus injection\n\nMice were anesthetized with an intraperitoneal (i.p.) injection of a mix containing medetomidine (sededorm, 0.27 mg kg\u22121), midazolam (5 mg kg\u22121), and fentanyl (0.05 mg kg\u22121) in sterile NaCl 0.9% (MMF-mix). Analgesia was achieved by local application of 100 \u00b5l of lidocaine (lurocaine, 1%) and subcutaneous (s.c.) injection of buprenorphine (bupr\u00e9care, 0.05 mg kg\u22121). 40 \u00b5l of dexamethasone (dexadreson, 0.1 mg ml\u22121) was administrated intramuscularly (i.m.) in the quadriceps to prevent inflammation potentially caused by the friction of the drilling. A heating-pad was positioned underneath the animal to keep the body temperature at 37\u00b0C. Eye dehydration was prevented by topical application of ophthalmic gel. The skin above the skull was disinfected with modified ethanol 70% and betadine before an incision was made. Stereotaxic injections were done as previously described (Gambino et al., 2014). Briefly, the bregma and lambda were aligned (x and z) and a hole for injection was made using a pneumatic dental drill (BienAir Medical Technologies, AP-S001). The injections were targeted either to the layer 2/3 of the FrA (from bregma: AP, +2.8 mm; DV, \u22120.2\u20130.3 mm; ML\u00a0\u00b1\u00a01.0 mm) or to the BLA (from bregma: AP, \u22121.3 mm; DV, \u22124.5 to 4.8 mm; ML,\u00b12.9 mm), or to both at the same time. A total of 200 nl of virus were injected at a maximum rate of 60 nl/min, using a glass pipette (Wiretrol, Drummond) attached to an oil hydraulic manipulator (MO-10, Narishige).\n\nThe following viruses were used depending on the experiments. AAV-ChR2 (AAV9.CamKIIa.hChR2(H134R).eYFP.WPRW.SV40, Penn Vector Core) was unilaterally injected in the right BLA, whereas AAV-ArchT-Flex (AAV9.CBA.flex.Arch-GFP.WPRE.SV40, Penn Vector Core) and CAV2-Cre (Cav2.CMV.Cre, IGMM BioCampus Montpellier) were bilaterally injected into the BLA and FrA, respectively. Control experiments were performed using an AAV containing the DNA construct for GFP (AAV9.CAG.flex.eGFP.WPRE.bGH). For axonal calcium imaging, AAV-GCaMP6f (AAV1.Syn.GCaMP6f.WPRE.SV40, Penn Vector Core) was injected to the right BLA. For dendritic calcium imaging, AAV-GCaMP6s (AAV9.Syn.Flex.GCaMP6s.WPRE.SV40, Penn Vector Core) and a 1:10,000 dilution of AAV-Cre (AAV1.hSyn.Cre.WPRE.hGH, Penn Vector Core) were injected together into the right FrA. After injections, the viruses were allowed to diffuse for at least 10 min before the pipette was withdrawn. Mice were then either prepared for cranial window implantation or waked-up by a sub-cutaneous injection of a mixture containing atipamezole (revertor, 2.5 mg kg\u22121), flumazenil (0.5 mg kg\u22121), and buprenorphine (bupr\u00e9care, 0.1 mg kg-1) in sterile NaCl 0.9% (AFB-mix).\n\nThe cranial windows were made as previously described (Gambino et al., 2014). Briefly, after skull\u2019s exposure a\u00a0~\u00a05 mm plastic chamber was attached on the area of interest and a 3 mm craniotomy was made on the right hemisphere above FrA and M2, with a pneumatic dental drill, leaving the dura intact. The craniotomy was covered with sterile saline (0.9% NaCl) and sealed with a 3-mm glass cover slip after viral injection (for imaging experiments). The chamber, the cover slip and a custom-made stainless steel head stage were well attached to the skull using dental acrylic and dental cement (Jet Repair Acrylic, Lang Dental Manufacturing).\n\nTo evaluate the viral expression profiles in BLA and FrA, fixed brain slices were imaged post-hoc using a wide-field epifluorescence microscope (Nikon, Eclipse N-iU). Illumination was set such that the full dynamic range of the 16-bit images was utilized. A two-dimensional graph of the intensities of pixel was plot using Fiji Software. 16-bit images\u2019 brightness was processed and masks were registered to the corresponding coronal plates (ranging from \u22121.94 to \u22122.70 mm) of the mouse brain atlas using Illustrator (Adobe), at various distances anterior (FrA) or posterior (BLA) to the bregma.\n\n### Fear conditioning and quantification of learning\n\nAt least 5 days before starting behavioral experiments, mice went through handling with the same experimenter that performed the experiments in order to decrease stress. For consistency across experiments, mice were then habituated to auditory tones during three successive days. During habituation, mice were placed on the conditioning compartment (context A, consisting of a squared box with a grid floor that allows the delivery of a foot shock and with home cage litter under; cleaned between individuals with 70% ethanol). Two conditional auditory stimuli (CS) (8 kHz pure tone; and white Gaussian noise (WGN); each composed of 27 pips, 50 ms in duration, 0.9 Hz for 30 s) were presented four times with a 80 dB sound pressure level and variable inter stimulus interval (ISI). The freezing time during each CS presentation was measured and the mice returned to their home cage. Mice were fear conditioned 24 hr after the last habituation phase by using a classical differential protocol. Briefly, mice were exposed to context A and five auditory tones (CS+) were paired with the unconditional stimulus (US, 1 s foot-shock, 0.6 mA). The onset of US coincided with the CS+ offset. 5 CS- presentations were intermingled with CS+ presentations with a variable (10\u201360 s) ISI. CS were counterbalanced with WGN and 8 kHz pure tones being used as CS+ and CS-, respectively. Both CS+ and CS- have always the same duration (30 s each) regardless of their spectral properties, with the same number of pips (27 pips at 0.9 Hz). Only the delays between the end of a pairing (CS+/footshock) and the beginning of the next CS-, as well as the delays between the end of a CS- and the beginning of the next CS+ have been chosen randomly during conditioning. Recall tests were carried out 24, 48, and 72 hr after the conditioning phase by measuring the freezing time during the presentation of 2 CS+ and 2 CS- in a new context (context B, consisting of a cylindrical white compartment with home cage litter on the floor; cleaned between individuals with septanios MD 2%).\n\nFor optogenetic experiments using archeorhodopsin (ArchT) or GFP controls, mice were subjected to the same behavioral protocol described above. Optogenetic inhibition of FrA neurons or BLA-to-FrA projections upon CS presentation was achieved during the conditioning phase by synchronizing each pip (50 ms) composing the CS+ or the CS- with a 50-ms-laser pulse. For the experiments in which the conditioning phase was taken place under the two-photon microscope, the context consisted of the microscope shading box in which the mice were head-restrained in a custom tube containing a shocking grid at the bottom. CS and US presentations were triggered by a MATLAB routine, associated to a pulse-stimulator (Master-8, A.M.P.I) capable of triggering the foot shock. For somatic and dendritic calcium imaging experiments, behavior was assessed at least 6 hr after imaging sessions. For whole-cell recordings experiments, mice were anesthetized and prepare for patch recordings immediately after behavior.\n\nFor each behavioral session, the total time duration (s) of freezing episodes upon CS+ and CS- presentation was quantified automatically using a fire-wire CCD-camera connected to an automated freezing detection software (AnyMaze, Ugo Basile, Italy), and expressed as % of freezing. Learning index was further quantified for each CS by multiplying the % of freezing in each condition by the corresponding index of discrimination by using the following equation:\n\n$$\nlearning\u00a0index\u00a0(%)=freezing\u00a0(%)\\times\\frac{freezing\u00a0CS^{+}(%)\u2212freezing\u00a0CS^{\u2212}(%)}{freezing\u00a0CS^{+}(%)+freezing\u00a0CS^{\u2212}(%)}\n$$\n\nLearning index\u00a0<20% during recall was considered as a failure of conditioning.\n\n### In vivo whole cell recordings\n\nIsoflurane (4% with\u00a0~0.5 l min\u22121 O2) combined with an i.p. injection of urethane (1.5 g kg\u22121, in lactated ringer solution containing in [mM] 102 NaCl, 28 Na L Lactate, 4 KCl, 1.5 CaCl2) was used to induce anesthesia and prolonged by supplementary urethane (0.15 g kg\u22121) if necessary. To prevent risks of inflammation, brain swelling and salivary excretions, 40 \u00b5l of dexamethasone (dexadreson, 0.1 mg ml\u22121, i.m.) and glycopyrrolate (Robinul-V, 0.01 mg kg\u22121, s.c.) were injected before the surgery. Adequate anesthesia (absence of toe pinch and corneal reflexes, and vibrissae movements) was constantly checked and body temperature was maintained at 37\u00b0C using a heating-pad positioned underneath the animal. Ophthalmic gel was applied to prevent eye dehydration. Analgesia was provided as described for viral injection (with lidocaine and buprenorphine). After disinfection of the skin (with modified ethanol 70% and betadine), the skull was exposed and a\u00a0~3 mm plastic chamber was attached to it above the prefrontal cortex using a combination of super glue (Loctite) and dental acrylic and dental cement (Jet Repair Acrylic, Lang Dental Manufacturing). A small\u00a0~1\u00d71 mm craniotomy centered above the FrA (+2.8 mm from bregma,\u00a0\u00b11.0 mm midline) was made using a pneumatic dental drill, leaving the dura intact.\n\nWhole-cell patch-clamp recordings of L2/3 pyramidal neurons were obtained as previously described (Gambino et al., 2014) Briefly, high-positive pressure (200\u2013300 mbar) was applied to the pipette (5\u20138 M\u03a9) to prevent tip occlusion, when passing the pia. Immediately after, the positive pressure was reduced to prevent cortical damage. The pipette resistance was monitored in the conventional voltage clamp configuration during the descendent pathway through the cortex (until \u2212200 \u00b5m from the surface) of 1 \u00b5m steps. When the pipette resistance abruptly increased, the 3\u20135 G\u03a9 seal was obtained by decreasing the positive pressure. After break-in, Vm was measured, and dialysis was allowed to occur for at least 5 min before launching the recording protocols. Current-clamp recordings were made using a potassium-based internal solution (in mM: 135 potassium gluconate, 4 KCl, 10 HEPES, 10 Na2-phosphocreatine, 4 Mg-ATP, 0.3 Na-GTP, and 25 \u00b5M, pH adjusted to 7.25 with KOH, 285 mOsM), and acquired using a Multiclamp 700B Amplifier (Molecular Devices). Spontaneous activity was recorded prior, during, and after the presentation of auditory stimulation. Spiking pattern of patched cells was analyzed to identify pyramidal neurons. dAP5 (1 mM, Tocris) was topically applied to the dura mater, before whole cell recordings. Offline analysis was performed using custom routines written in Sigmaplot (Systat), IGOR Pro (WaveMetrics) and Matlab (Mathworks).\n\n### In vivo optogenetics\n\nAfter virus injection for ChR2 or ArchT expression, mice were subsequently implanted with fiber optic cannula for optogenetics (CFML22U, Thorlabs) in the BLA. The optic fibers were previously cleaved with a fiber optic scribe (S90R, Thorlabs) at 4.5 mm for BLA. The cannula were guided and stereotaxically inserted inside the brain with the help of a cannula holder (XCL, Thorlabs) through the same burr hole used for the viral injections (BLA coordinates from bregma: AP, \u22121.3 mm; DV, \u22124.5 mm; ML,\u00b12.9 mm) and secured in place with a mix of super glue (Loctite) and dental acrylic and dental cement (Jet Repair Acrylic, Lang Dental Manufacturing). Anesthesia was reversed using AFB-mix for mice assigned to behavioral experiments. For in vivo photostimulation of ChR2-expressing BLA neurons, the fiber optic cannula and the optogenetic patch cable (M83L01, Thorlabs) were connected through a ceramic split mating sleeve (ADAL1, Thorlabs). The patch cable was then coupled to a blue DPSS laser (SDL-473-050MFL, Shanghai Dream Lasers Technology) which was triggered by a pulse-stimulator (Master-9, A.M.P.I), able to synchronize 50 ms laser pulses with 50 ms sound pips composing the CS. For inhibition of BLA-to-FrA projections during learning, in vivo bilateral optic stimulation of ArchT-expressing neurons was achieved by coupling the optic fibers implanted in BLA to a multimode fiber optic coupler (FCMH2-FCL, Thorlabs), with a ceramic split mating sleeve, and subsequently connected to a yellow DPSS laser (SDL-LH-1500, Shanghai Dream Lasers Technology).\n\n### In vitro whole-cell recordings\n\nMice were anesthetized with a mixture of ketamine/xylazine (100 mg/kg and 10 mg/kg respectively) and cardiac-perfused with ice-cold, oxygenated (95% O2, 5% CO2) cutting solution (NMDG) containing (in mM): 93 NMDG, 93 HCl, 2.5 KCl, 1.2 NaH2PO4, 30 NaHCO3, 25 Glucose, 10 MgSO4, 0.5 CaCl2, 5 Sodium Ascorbate, 3 Sodium Pyruvate, 2 Thiourea, and 12 mM N-Acetyl-L-cysteine (pH 7.3\u20137.4, with osmolarity of 300\u2013310 mOsm). Brains were rapidly removed and placed in ice-cold and oxygenated NMDG cutting solution (described above). Coronal slices (300 \u03bcm) were prepared using a Vibratome (VT1200S, Leica Microsystems, USA) and transferred to an incubation chamber held at 32\u00b0C and containing the same NMDG cutting solution. After this incubation (9\u201311 min), the slices were maintained at room temperature in oxygenated modified ACSF containing (mM): 92 NaCl, 2.5 KCl, 1.2 NaH2PO4, 30 NaHCO3, 20 HEPES, 25 Glucose, 2 MgSO4, 2 CaCl2, 5 Sodium Ascorbate, 3 Sodium Pyruvate, 2 Thiourea, and 12 mM N-Acetyl-L-cysteine (pH 7.3\u20137.4, with osmolarity of 300\u2013310 mOsm) until recording.\n\nWhole-cell recordings of layer 2/3 FrA principal neurons were performed on coronal slices (from bregma: +2.58 mm to +3.08 mm) at 30\u201332\u00b0C in a superfusing chamber. Patch electrodes (3\u20135 M\u03a9) were pulled from borosilicate glass tubing and filled with a K-gluconate-based intracellular solution (in mM: 140 K-gluconate, 5 QX314-Cl, 10 HEPES, 10 phosphocreatine, 4 Mg-ATP and 0.3 Na-GTP) (pH adjusted to 7.25 with KOH, 295 mOsm). BLA-to-FrA monosynaptic EPSCs were elicited by 1\u201350 ms light stimulations delivered by an ultrahigh power 460 nm LED (Prizmatix Ltd, Israel). Data were recorded with a Multiclamp700B (Molecular Devices, USA), filtered at 2 kHz and digitized at 10 kHz. Data were acquired and analysed with pClamp10.2 (Molecular Devices).\n\n### Two-photon laser-scanning microscope (2PSLM)-based calcium imaging\n\nHead-fixed awake mice were placed and trained under the microscope every day for at least 7 days prior to the experiment, and then imaged 21 to 35 days after virus injection using an in vivo non-descanned FemtoSmart 2PLSM (Femtonics, Budapest, Hungary) equipped with a\u00a0\u00d7\u00a016 objective (0.8 NA, Nikon). The MES Software (MES v.4.6; Femtonics, Budapest, Hungary) was used to control the microscope, the acquisition parameters, and the TTL-driven synchronization between the acquisition and auditory/footshock stimuli. The GCaMPs were excited using a Ti:sapphire laser operating at \u03bb\u00a0=\u00a0910 nm (Mai Tai DeepSee, Spectra-Physics) with an average excitation power at the focal point lower than 50 mW. Time-series images were acquired within a field-of-view of 300 \u00d7 300 \u00b5m (256 lines, 1 ms/line) for axons; for dendrite: 200 \u00d7 60 \u00b5m (64 lines, 0.5 ms/line). Each imaging session consisted of 30 s of baseline recording followed by eight Gaussian and eight pure (8 kHz)-tone auditory stimuli delivered with pseudo-random delays. We imaged on average 3500 frames (~900 s) per session, and no visible photo-bleaching was observed. Images were then analyzed as previously described (Gambino et al., 2014) using Fiji and Matlab (Mathworks). We registered images over time and corrected XY motion artifacts within a single imaging session by using cross-correlation based on rigid body translation (Stack aligner, Image J, NIH, USA). Motion corrections were then assessed by computing pair-wise 2D correlation coefficient (Image correlation, Image J, NIH, USA), and frames were discarded from the analysis if lower than 0.7. Regions of interest (ROIs) putative axonal boutons were selected and drawn manually. All pixels within each ROI were first averaged providing a single time-series of raw fluorescence. To limit the effect of fluorescence drift over time, the baseline fluorescence (F0) was calculated as the mean of the lower 50% of previous 3 s fluorescence values. Change in fluorescence (\u0394Ft/F0) was defined as (Ft-F0)/F0, were Ft is the fluorescence intensity at time t (time of the first pixel in each frame). Calcium events were then detected using a template-based method with a custom library of calcium transients. Templates were created by extracting and averaging segments of data that were visually identified as corresponding to a transient. Calcium transients whose peak amplitude reached a 3 X background standard deviation threshold were further considered for analysis. Each detected event was inspected visually and analysis was restricted to detected events rather than on raw fluorescence. For extracting spatial profiles of dendritic calcium events, small ROIs of 2 \u00d7 2 pixels are generated along the dendrite in Fiji. The spread of Ca2+ events was then quantified by calculating the full-width at half-max (fwhm, expressed as % of total dendritic length) of the normalized Gaussian fit at the time when the averaged \u0394F/F0 was maximal.\n\n### Statistics\n\nExperiments and analysis were conducted blind to the operator. Data are presented as the median\u00a0\u00b1interquartile range or mean\u00a0\u00b1sem (except where stated differently). All statistics were performed using Matlab (Mathworks) and Sigmaplot (Systat) with an \u03b1 significant level set at 0.05. Normality of all value distributions and the equality of variance between different distributions were first assessed by the Shapiro-Wilk and Levene median tests, respectively. Standard parametric tests were only used when data passed the normality and equal variance tests. Non-parametric tests were used otherwise. Only two-sided tests were used. When applicable, pair-wise multiple post-hoc comparisons were done by using the Holm-Sidak method. No statistical methods were used to estimate sample size, but \u03b2-power values were calculated for parametric tests.\n",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "178691a0-0afb-49cd-a2a9-29b3739a28d0",
+      "submission_id": "1a1ae05e-3e25-40db-8b8b-cc549b3eb5dd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mihaela D Iordanova, Concordia University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62594.sa1](https://doi.org/10.7554/eLife.62594.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe manuscript presents a large set of technically challenging and impressive experiments addressing the cellular and circuit mechanisms of discriminative fear learning in the frontal association cortex. The results are likely to be of interest to those studying fear conditioning, auditory learning, corticolimbic dynamics, and related psychiatric conditions.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The integration of Gaussian noise by long-range amygdala inputs in frontal circuit promotes fear learning\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kate Wassum as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe manuscript by Aime et al. presents a large sets of technically challenging and impressive experiments studying the cellular and circuit mechanisms of discriminative fear learning in the frontal association cortex (FrA). Using recording and modulatory approaches, the authors show that white Gaussian noise (WGN) causes greater depolarization than pure tones, more local dendritic events than pure frequency tones in both the anaesthetized and awake preparation, is differentially modulated by photo-inhibition of FrA during discriminative conditioning (when in the role of CS-). Further, axons within the FrA from the basolateral amygdala (BLA) increased activity between conditioning trials, and predicted the level of auditory fear learning. The topic is of broad interest and the approach taken considers both the cellular and circuit dynamics underlying discriminative fear learning. The authors have addressed the concerns of the reviewers in a previous submission of the manuscript, however, some outstanding concerns remain (detailed below) which we believe can be addressed through revisions in the text.\n\nEssential revisions:\n\n1) One of the main concerns echoed by all reviewers (and was also something noted in the previous version of the manuscript) was the idea of \"unique properties of WGN over frequency modulated and pure tone frequency\". This appears to be true for the stimuli tested, however, the chirps and pure frequencies did not cover the same frequency range as the WGN. Put simply, the WGN included frequencies up to 20 kHz, whereas the pure tones and linear chirps only involved frequencies between 4 and 8 kHz. Also, although the chirp stimuli was more complex (and probably involves more cortical processing than pure tones), it is still not comparable to WGN (as clearly shown in Figure 1\u2014figure supplement 1). Therefore, it remains that the 'unique properties' of the WGN stimuli that result in greater neural activity might simply be due to the different frequencies and complexity of the auditory stimuli used. This needs to be made explicit in the manuscript.\n\n2) In Figure 1, FrA neurons decrease voltage under NMDAR blockade. The authors state that \u201cthis suggests that a fraction of the NMDAR conductances recruited by auditory stimulations is masked by non-specific inhibition under control conditions\u201d. However, the \u201chyperpolarization\u201d is reported from the voltage change during NMDA block (i.e. zeroed to baseline). Couldn't the inhibition reported also be a reflection of the decrease in conductance through NMDA channels (and other Ca2+ dependent channels)?\n\n3) The finding that the activation of BLA-to-FrA axons supports the non-linear integration of auditory tones is interesting. However, non-linear integration typically leads to the generation of action potentials. Clarification on whether there was a change in evoked action potentials during the combined stimulus is necessary. In addition, please clarify why when paired with activation of BLA axons, both WGN and pure tones resulted in a larger than expected change in membrane voltage given that pure tones are not encoded in the PFC.\n\n4) The authors conclude that \"our data indicate that BLA-to-FrA synapses are likely to be weak and unreliable\". This conclusion is surprising based on the evoked responses recorded in vitro (Figure 5\u2014figure supplement 1), especially considering the input presumably lands on the distal dendrites of layer 2/3 pyramidal neurons. Was the response modulated by different intensities of the photo-activating LED light?\n\n5) Why does the influence of the auditory stimulus significantly outlast the stimulus presentation? Does the difference between CS- and CS+ in the learner mice return to \u201cunlearnt\u201d (na\u00efve) mice over time?\n\n6) The behavioural/optogenetic results clearly show the influence of WGN is specific to CS-. However, the BLA-FrA axonal imaging data is less convincing. Could BLA-FrA axons be signaling the contextual threat of the situation with no specificity to CS+ or CS-?\n\n7) WGN dendritic and somatic activity is reduced after fear conditioning. The authors suggest this is due to plasticity however since the encoding of WGN is similar to pure tones after conditioning. Wouldn't this make more difficult to discriminate?\n\n8) Figure clarification. It is difficult to compare the Ca2+ activity based on events / dendrite in Figure 2. Please convert to frequency or a measure that can be compared with other conditions. Aside from the fwhm, was there any difference in the waveform (amplitude/duration) of the evoked Ca2+ between the different auditory stimuli? Overall, Figure 3 is difficult to interpret. 3D and 3H should be split into different graphs for protocol type, as it is currently impossible to separate the conditions. In Figure 4F, when was the stimulus presented? Why is the cumulative distribution taken over 40 seconds? How was the cumulative \u2206F/F calculated?\n\n9) Are the fear conditioning protocols equally effective in inducing fear memories? Compared to control mice (Figure 3), there appears to be a big difference in the GFP controls during the different protocols in Figure 6. Was this significant?\n",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bdf2325e-a701-4ffd-b7f8-2160ba6e7f31",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C1",
+      "claim": "Frontal association cortex (FrA) pyramidal neurons of mice integrate auditory cues and basolateral amygdala (BLA) inputs non-linearly in a NMDAR-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that frontal association cortex (FrA) pyramidal neurons of mice integrate auditory cues and basolateral amygdala (BLA) inputs non-linearly in a NMDAR-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from whole-cell recordings and optogenetic manipulations showing non-linear integration that is blocked by NMDAR antagonists.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "e444f63e-6694-4e5d-ab5d-abc841558b64",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C2",
+      "claim": "The response of FrA pyramidal neurons was more pronounced to Gaussian noise than to pure frequency tones.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the response of FrA pyramidal neurons was more pronounced to Gaussian noise than to pure frequency tones",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through in vivo whole-cell recordings and calcium imaging showing larger depolarizations and more dendritic events with Gaussian noise.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "1b4f4b7c-c5c8-4eb8-8efd-3bb570021ba2",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C3",
+      "claim": "The activation of BLA-to-FrA axons was the strongest in between conditioning pairings.",
+      "claim_type": "EXPLICIT",
+      "source": "and that the activation of BLA-to-FrA axons was the strongest in between conditioning pairings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by two-photon calcium imaging of BLA-to-FrA axons during fear conditioning, with quantification of calcium transient frequency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "b9475cce-8a38-4695-90c4-204eb6e2c114",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C4",
+      "claim": "Blocking BLA-to-FrA signaling specifically at the time of presentation of Gaussian noise (but not 8 kHz tone) between conditioning trials impaired the formation of auditory fear memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking BLA-to-FrA signaling specifically at the time of presentation of Gaussian noise (but not 8 kHz tone) between conditioning trials impaired the formation of auditory fear memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through optogenetic inhibition experiments with ArchT during fear conditioning and subsequent behavioral testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "35b09273-f308-4131-a28a-205c9fdf22fd",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C5",
+      "claim": "Discriminative learning depends on the repeated contingency and contiguity between sensory cues (conditioned stimuli, CS) and the events (e.g. danger, safety) that they must predict (unconditioned stimuli, US).",
+      "claim_type": "EXPLICIT",
+      "source": "Discriminative learning is an important survival strategy that depends on the repeated contingency and contiguity between sensory cues (conditioned stimuli, CS) and the events (e.g. danger, safety) that they must predict (unconditioned stimuli, US) (Hall, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature on learning theory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "072d1022-ec52-420f-9316-30d5557d30bc",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C6",
+      "claim": "The medial prefrontal cortex (mPFC) has appeared over the past decade as a critical region that shapes behaviors in response to both aversive and non-aversive environmental cues.",
+      "claim_type": "EXPLICIT",
+      "source": "The medial prefrontal cortex (mPFC) has appeared over the past decade as a critical region that shapes behaviors in response to both aversive and non-aversive environmental cues (Likhtik and Paz, 2015; Likhtik et al., 2014; Stujenske et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research on mPFC function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "8001d365-2d24-44cf-99e0-2d98217c374a",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C7",
+      "claim": "The mPFC does not receive direct sensory information neither from sensory cortical areas or from the thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mPFC does not receive direct sensory information neither from sensory cortical areas or from the thalamus (Hoover and Vertes, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to anatomical connectivity study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "bf5fd6b3-2481-4d4d-b91b-31ef56a19a9e",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C8",
+      "claim": "The frontal association cortex (FrA) receives inputs from the BLA and sensory cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the frontal association cortex (FrA), a region of the lateral part of the agranular cortex (Paxinos and Franklin, 2001; Uylings et al., 2003), receives inputs from the BLA (Lai et al., 2012; M\u00e1ty\u00e1s et al., 2014; Nakayama et al., 2015) and sensory cortices (Hoover and Vertes, 2007; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "2560a61e-919e-4089-8686-c598dfecb985",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C9",
+      "claim": "The FrA appears non-reciprocally connected to the PL/IL subdivisions of the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the FrA appears non-reciprocally connected to the PL/IL subdivisions of the mPFC (Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to anatomical connectivity study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "ba540c89-dc28-4970-9904-7bdf196f2992",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C10",
+      "claim": "The pharmacological inactivation of FrA neurons alters both the expression and extinction of learned fear.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the pharmacological inactivation of FrA neurons alters both the expression and extinction of learned fear (Lai et al., 2012; Nakayama et al., 2015; Sacchetti et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior pharmacological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "9b13a4e5-19d0-41a5-abff-3914dbbb3a87",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C11",
+      "claim": "Fear conditioning and extinction induce dendritic spine elimination and formation in the FrA, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, fear conditioning and extinction have been shown to induce dendritic spine elimination and formation in the FrA, respectively (Lai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior imaging study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "cbdeaa0a-4694-4d69-9447-062edb9f313e",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C12",
+      "claim": "WGN evoked a subthreshold depolarization in naive animals that lasted for at least 30 s after the end of the stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "WGN evoked a subthreshold depolarization in naive animals (27.6 \u00b1 4 mV, n = 22 cells) that lasted for at least 30 s after the end of the stimulation (32.5 \u00b1 5 mV, n = 22 cells) (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by in vivo whole-cell recordings with quantification of cumulative voltage changes, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "808b1ae6-bca4-43c0-88e8-8ca7d7561928",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C13",
+      "claim": "WGN-evoked changes in membrane potential were abolished by the application of the NMDAR antagonist D(-)\u22122-amino-5-phosphonovaleric acid (dAP5) or the presence of the NMDAR open-channel blocker MK-801 in the intracellular solution.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes in Vm, which were always higher than those evoked by the linear chirps or the pure tones (Figure 1\u2014figure supplement 1), were abolished by the application of the NMDAR antagonist D(-)\u22122-amino-5-phosphonovaleric acid (dAP5) or the presence of the NMDAR open-channel blocker MK-801 in the intracellular solution (end of the stimulation; control: 27.6 \u00b1 4 mV, n = 22 cells; +dAP5: \u221213.4 \u00b1 5 mV, n = 14 cells; +iMK801: \u22122.2 \u00b1 2 mV, n = 5 cells; p<0.001, anova) (Figure 1D; Figure 1\u2014figure supplement 2C\u2013F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pharmacological manipulation experiments with statistical comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "ef67356c-4544-43f3-9626-fa77f0c0be7f",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C14",
+      "claim": "Pure auditory tones did not affect membrane potential during or after auditory stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, pure auditory tones did not seem to affect membrane potential either during (8 kHz: 1.2 \u00b1 4 mV; WGN: 27.6 \u00b1 4 mV; n = 22 cells, p<0.001, paired t-test) or after auditory stimulation (8 kHz: \u22123.8 \u00b1 3 mV; WGN: 32.5 \u00b1 5 mV; n = 22 cells, p<0.001, paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by in vivo whole-cell recordings with statistical comparison between tone types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "600a85bf-3638-442b-8177-caf760066699",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C15",
+      "claim": "Pure tones affected membrane potential of FrA neurons in the presence of dAP5 or iMK801.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, we found that 8 kHz tones affected membrane potential of FrA neurons in the presence of dAP5 or iMK801 (end of stimulation; control: 1.16 \u00b1 3.9 mV, n = 22 cells; +dAP5: \u221216.7 \u00b1 4 mV, n = 10 cells; +iMK801: \u221221 \u00b1 3.5 mV, n = 5 cells; p=0.004, anova) (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pharmacological experiments showing effects only when NMDARs are blocked.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "198d8be3-fd2d-4fa7-9265-a21d0463737e",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C16",
+      "claim": "The NMDAR-mediated component of the evoked cVm change was much larger in response to WGN than pure auditory tones.",
+      "claim_type": "EXPLICIT",
+      "source": "However, on average, the NMDAR-mediated component of the evoked cVm change was much larger in response to WGN, indicating that it recruited more NMDAR conductances than pure auditory tones (WGN: 33.1 \u00b1 4.2 mV; 8 kHz: 9.7 \u00b1 3.4 mV; n = 5 cells; p=0.017, paired t-test) (Figure 1\u2014figure supplement 2G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing NMDAR-mediated components calculated from pharmacological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "64a2da22-bb54-4a6e-8391-a28898d1c278",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C17",
+      "claim": "WGN evoked significantly more local dendritic events per dendrite than pure frequency auditory tones during anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "The presentation of WGN evoked more events (WGN: 409; 8 kHz: 139; 2 kHz: 102; p<0.001, McNemar's \u03c7\u00b2 test), with a significantly higher number of local dendritic events per dendrite as compared to pure frequency auditory tones (WGN: 0.11 \u00b1 0.01 Hz; 8 kHz: 0.04 \u00b1 0.01 Hz; 2 kHz: 0.04 \u00b1 0.007 Hz; n = 9 mice; p<0.001, anova) (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by two-photon calcium imaging of dendrites in anesthetized mice with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "190d1b8b-b867-4221-a365-2e4ebf221355",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C18",
+      "claim": "Eight kHz and 2 kHz tones did not evoke calcium transients more frequently than baseline during anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight kHz and 2 kHz tones did not evoke calcium transients more frequently than baseline (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by comparison of event frequencies during baseline and tone presentation in calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "5cca55d0-8dbe-4f26-8e43-ca5372d8af6b",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C19",
+      "claim": "WGN evoked significantly more local events per dendrite than pure tones in awake mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, and as expected, WGN evoked significantly more local events per dendrite than pure tones (WGN: 0.11 \u00b1 0.01 Hz; 8 kHz: 0.08 \u00b1 0.005 Hz; 2 kHz: 0.07 \u00b1 0.007 Hz; n = 5 mice; p<0.001, anova) (Figure 2F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by two-photon calcium imaging in awake mice with statistical comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "65589c95-7f44-4f26-9e30-d9b85a654295",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C20",
+      "claim": "Eight kHz and 2 kHz tones generated more local events in awake mice as compared to baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, 8 kHz and 2 kHz tones generated more local events as compared to baseline (Figure 2F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by calcium imaging data comparing event frequencies during baseline and tone presentation in awake mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "6c8063ce-130d-48f7-97e8-8f2a2ba8e793",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C21",
+      "claim": "Anesthesia might reduce dendritic signaling of pure frequency auditory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that anesthesia might reduce dendritic signaling of pure frequency auditory inputs (0.04 \u00b1 0.009 Hz vs. 0.08 \u00b1 0.05 Hz; p=0.037) (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparison of dendritic event frequencies between anesthetized and awake conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "7659c9f7-86c5-4048-a5da-f46710c1dc22",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C22",
+      "claim": "The specific effect of WGN on FrA neurons was not attributable to the intensity of the tones.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the specific effect of WGN on FrA neurons was not attributable to the intensity of the tones (Figure 1\u2014figure supplement 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by testing different sound intensities and showing WGN effects persist across intensities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "70eb3803-4ab7-418e-b0a2-1a45df5840df",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C23",
+      "claim": "The specific effect of WGN on FrA neurons was not attributable to noise-induced pain since exploratory motor behaviors were not affected by WGN or pure tones.",
+      "claim_type": "EXPLICIT",
+      "source": "or to noise-induced pain since exploratory motor behaviors were not affected by WGN or pure tones (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral analysis showing no differences in locomotor activity between tone types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "76eac344-2779-4255-af05-1c1c6f6ba2e3",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C24",
+      "claim": "Inhibiting the activity of FrA neurons during CS- presentation significantly decreased the fraction of ArchT-mice that learned the association when WGN was used as CS-.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ArchT stimulation during CS- presentation (Figure 3G,H) significantly decreased the fraction of mice that were conditioned. However, this occurred only when WGN was used as CS- (protocol 1, GFP: 75%, n = 12 mice, ArchT: 30%, n = 13 mice, p=0.02; protocol 2, GFP: 85%, n = 7 mice, ArchT: 91%, n = 11 mice, p=0.7, Pearson's \u03c7\u00b2 test) (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by optogenetic inhibition experiments during fear conditioning with behavioral testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "099e721f-2410-45a0-86a8-714f3bae46f9",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C25",
+      "claim": "In mice where FrA neurons were inhibited during WGN CS-, the magnitude of CS+ evoked freezing responses was significantly lower during recall than in control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In those mice, the magnitude of CS+ evoked freezing responses was significantly lower during recall than in control mice (protocol 1, GFP: 51 \u00b1 7%, n = 12 mice; ArchT: 24.5 \u00b1 5%, n = 13 mice; p=0.005) (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantification of freezing behavior during recall after optogenetic manipulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "e0c87ea6-32bc-41b1-8009-dc79982a18c7",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C26",
+      "claim": "WGN (CS-) generated less local dendritic activation during recall as compared to naive mice.",
+      "claim_type": "EXPLICIT",
+      "source": "As compared to naive mice, WGN (CS-) generated less local dendritic activation during recall (protocol 1; naive: 0.11 \u00b1 0.01 Hz, n = 9 mice; FC: 0.06 \u00b1 0.009 Hz, n = 5 mice; p=0.003) (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing dendritic calcium imaging data before and after fear conditioning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "902aeb00-161e-4406-9bdc-be58a5a4d223",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C27",
+      "claim": "Local dendritic events evoked by a conditioned cue (8 kHz) or cues that were not presented during conditioning (2 kHz) were not altered by fear learning.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, local dendritic events evoked by a conditioned cue (8 kHz) or cues that were not presented during conditioning (2 kHz) were not altered",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparing dendritic event frequencies for different tones before and after conditioning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "6a66dbca-8b56-42e1-a761-79f3d12092bc",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C28",
+      "claim": "WGN-induced somatic plateau potentials were reduced in conditioned animals in a learning-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, WGN-induced somatic plateau potentials were reduced in conditioned animals in a learning-dependent manner, suggesting that NMDAR-dependent plasticity mechanisms in FrA neurons were engaged during learning (Lai et al., 2012; Rioult-Pedotti et al., 2000; Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by whole-cell recordings after conditioning showing correlation between learning and reduced WGN responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "78d93bd5-5389-48b8-a7ee-3cb1e1ecda55",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C29",
+      "claim": "BLA neurons project to the superficial layer 1 of the ipsilateral FrA (<150 \u00b5m from the pia).",
+      "claim_type": "EXPLICIT",
+      "source": "Results confirmed that BLA neurons project to the superficial layer 1 of the ipsilateral FrA (<150 \u00b5m from the pia) (Lai et al., 2012; M\u00e1ty\u00e1s et al., 2014; Nakayama et al., 2015; Figure 4B; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Confirmed by viral tracing and imaging of BLA axons in FrA, supported by prior anatomical studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "1d7fc86f-6b8d-4c95-82e8-0584984bf5f4",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C30",
+      "claim": "The activity of individual BLA-to-FrA boutons increased significantly upon successive pairings only in mice that learned.",
+      "claim_type": "EXPLICIT",
+      "source": "While the activity of individual BLA boutons in FrA was relatively low at rest, it increased significantly upon successive pairings (Figure 4D). This occurred independently of the conditioning protocol and only in mice that learned (learning+, all CS+: 1.73 \u00b1 0.3, all CS-: 2.07 \u00b1 0.45, n = 5 mice; learning-, all CS+: 0.62 \u00b1 0.08, all CS-: 0.77 \u00b1 0.13, n = 5 mice; p=0.015) (Figure 4D,E; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by two-photon calcium imaging of BLA axons during conditioning with comparison between learners and non-learners.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "453db721-4cd2-4d57-b3ba-6e449641f8fa",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C31",
+      "claim": "The activity of BLA-to-FrA axons never occurred before the end of the first US presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it also never occurred before the end of the first US presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from temporal analysis of calcium transients during conditioning trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "3d85a8ef-046d-4340-b94d-e4a26a318486",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C32",
+      "claim": "The number of transients observed during the first CS+ (before the delivery of the first US) was significantly lower than the other CS that were paired with the US in learning mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the number of transients observed during the first CS+ (i.e. before the delivery of the first US) was significantly lower than the other CS that were paired with the US (learning+, CS/No US: 1.03 \u00b1 0.15, CS/US: 1.97 \u00b1 0.4, n = 5 mice, p=0.011; learning-: CS/No US: 0.74 \u00b1 0.05, CS/US: 0.68 \u00b1 0.08, n = 5 mice, p=0.863) (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantification of calcium transients across conditioning trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "7f0cab10-ab5f-4b54-8288-97baf3ec31eb",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C33",
+      "claim": "The activity of boutons measured during the first CS- was always higher than during the first CS+ in learning mice.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the activity of boutons measured during the first CS- was always higher than during the first CS+ (learning+, CS+1: 1.03 \u00b1 0.15, CS-1: 2.03 \u00b1 0.4, n = 5 mice, p=0.003; learning-, CS+1: 0.74 \u00b1 0.05, CS-1: 0.88 \u00b1 0.09, n = 5 mice, p=0.425) (arrow in Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing calcium transient frequencies between first CS+ and CS- presentations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "716acfab-30c1-48fd-b4f0-d0c50d0ad511",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C34",
+      "claim": "BLA-to-FrA axons were never activated by auditory stimulations in naive mice (before fear conditioning).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, BLA-to-FrA axons were never activated by auditory stimulations in naive mice (i.e. before fear conditioning) (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by calcium imaging in naive mice showing no response to auditory tones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "7127b58d-e461-49f1-86c7-a955a08ecc50",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C35",
+      "claim": "The averaged cumulative \u0394F/F0 measured during CS- was always higher than during CS+.",
+      "claim_type": "EXPLICIT",
+      "source": "The averaged cumulative \u0394F/F0 measured during CS- was always higher than during CS+ (CS-: 0.27 \u00b1 0.07 \u0394F/F0, CS+: 0.21 \u00b1 0.06 \u0394F/F0, n = 10 mice; p=0.012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by quantification of cumulative calcium signals during different conditioning stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "529eca14-617d-4970-a2a3-4d022bbca502",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C36",
+      "claim": "The difference between CS+ and CS- related axonal activity (\u0394cumulative) was significantly higher in mice that learned the association than in non-learners.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the difference between CS+ and CS- related axonal activity (\u0394cumulative: \u0394F/F0 CS- - \u0394F/F0 cs+) was significantly higher in mice that learned the association than in non-learners (learning+: 0.1 \u00b1 0.02 \u0394cumulative, n = 5 mice; learning-: 0.01 \u00b1 0.008 \u0394cumulative, n = 5 mice; p=0.013, t-test) (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing differential axonal activity between learners and non-learners.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "0340a3ff-aca3-4f91-ac1b-550e111bc9fc",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C37",
+      "claim": "The \u0394cumulative correlated positively with learning performance.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, when plotted as a function of freezing percentage observed during recall, the \u0394cumulative correlated positively with learning performance (r\u00b2=0.89, p<0.001) (Figure 4G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by correlation analysis between axonal activity measure and behavioral performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "cc893366-7a7a-4e19-9466-4e03fdf99de7",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C38",
+      "claim": "Local photostimulation of ChR2-BLA axons in acute slices produced excitatory postsynaptic current (EPSC) in FrA pyramidal neurons with short latencies and low jitter.",
+      "claim_type": "EXPLICIT",
+      "source": "Local photostimulation of ChR2-BLA axons in acute slices produced excitatory postsynaptic current (EPSC) in FrA pyramidal neurons with short latencies (3.5 \u00b1 0.36 ms, n = 9 cells) and low jitter (0.289 \u00b1 0.04 ms, n = 9 cells), suggesting that a fraction of BLA neurons are connected monosynaptically to L2/3 FrA pyramidal neurons (Figure 5\u2014figure supplement 1D,E; Klavir et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by in vitro slice electrophysiology with optogenetic stimulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "d1eb4f50-f3ea-418b-9021-40627781729e",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C39",
+      "claim": "The photostimulation of BLA neurons with an implanted optical fiber produced plateau-like depolarizations in all FrA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, the photostimulation of BLA neurons with an implanted optical fiber produced plateau-like depolarizations in all FrA neurons (averaged peak amplitude: 6.2 \u00b1 1.2 mV*sec, full-width at half-max (fwhm): 551 \u00b1 80 ms; n = 13 cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by in vivo whole-cell recordings with optogenetic stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "fba3c478-ec45-4b8b-a046-9287866c89b2",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C40",
+      "claim": "BLA-to-FrA inputs were mostly undetectable and became visible only when the stimulation was delivered during down states.",
+      "claim_type": "EXPLICIT",
+      "source": "However, BLA-to-FrA inputs were mostly undetectable and became visible only when the stimulation was delivered during down states (Figure 5\u2014figure supplement 1F,G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by analyzing responses during different phases of spontaneous activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "6495d2c1-c4cb-4cc2-b0ae-1e59dda657c3",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C41",
+      "claim": "The rhythmic stimulation of ChR2-expressing BLA neurons at 0.9 Hz for 30 s generated modest cumulative depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "The rhythmic stimulation of ChR2-expressing BLA neurons at 0.9 Hz for 30 s (27 square pulses, 50 ms) (Figure 5B,C), a protocol that mimicked the pattern of auditory stimuli, generated modest cumulative depolarization (8 \u00b1 4 mV; n = 21 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by in vivo whole-cell recordings with patterned optogenetic stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "453c8872-f22a-4b24-aba9-c2f238dbde5a",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C42",
+      "claim": "The coincident photo-activation of BLA neurons during the presentation of WGN resulted in somatic responses that were significantly higher than the arithmetic sum of individual depolarizations evoked by the stimulation of BLA or auditory tones alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The coincident photo-activation of BLA neurons during the presentation of WGN did not generate somatic action potential. However, it resulted in somatic responses (observed cVm) that were significantly higher than the arithmetic sum (expected cVm) of individual depolarizations evoked by the stimulation of BLA or auditory tones alone (observed cVm: 44 \u00b1 6.4 mV, expected cVm: 18 \u00b1 8.8 mV, n = 11 cells; p=0.002, paired t-test) (Figure 5D,E,H; Figure 5\u2014figure supplement 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing observed responses to expected linear sum in paired experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "9c0d4ec1-4b4c-40fb-98c6-e250d11c6389",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C43",
+      "claim": "The interaction in FrA neurons between BLA and WGN-related inputs was clearly supralinear.",
+      "claim_type": "EXPLICIT",
+      "source": "We then plotted the observed vs. expected cVm change and found that the observed cVm exceeded the expected cVm, indicating that the interaction in FrA neurons between BLA and WGN-related inputs was clearly supralinear (Spruston and Kath, 2004; Tran-Van-Minh et al., 2015; Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by plotting observed vs. expected responses showing deviation from linearity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "5cbe816c-2797-416a-b264-44fc8f90ff55",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C44",
+      "claim": "The application of dAP5 to the cortical surface blocked the effect of BLA activation during WGN.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that the application of dAP5 (1 mM) to the cortical surface blocked the effect of BLA activation during WGN (BLA+WGN: 39 \u00b1 6.2 mV, n = 13 cells; BLA+WGN/+dAP5: \u221226.6 \u00b1 6.7 mV, n = 7 cells; p<0.001; t-test), indicating that NMDARs are involved in the supra-linear integration in FrA neurons (Figure 5\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pharmacological blockade of NMDARs during combined stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "22faf7a5-8db3-4ab1-ac31-320e5df8142d",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C45",
+      "claim": "The photo-activation of BLA significantly affected the cumulative potential evoked by 8 kHz in a supra-linear manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The photo-activation of BLA also significantly affected the cumulative potential evoked by 8 kHz (8 kHz: 9.7 \u00b1 3.3 mV vs. 8 kHz+BLA: 16.6 \u00b1 3.1 mV; n = 8 cells; p<0.001; paired t-test) (Figure 5F,G; Figure 5\u2014figure supplement 2D,E). Although supra-linear (observed cVm: 16.6 \u00b1 3.1 mV, expected cVm: \u22122.4 \u00b1 3.3 mV, n = 8 cells; p<0.001, paired t-test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing observed and expected responses for 8 kHz tone with BLA stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "91155cd9-9613-4f2c-ad32-6d933a23a79c",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C46",
+      "claim": "The BLA+WGN integration was significantly stronger than the BLA+8 kHz integration.",
+      "claim_type": "EXPLICIT",
+      "source": "the BLA+8 kHz integration remained significantly lower than the supra-linearity generated by BLA+WGN (observed cVm; WGN: 44 \u00b1 6.4 mV, n = 11 cells; 8 kHz: 16.6 \u00b1 3.1 mV, n = 8 cells; p=0.003, t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by statistical comparison of non-linear integration magnitude between tone types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "ab4274f0-79fd-461f-9a9a-352f7d6dda51",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C47",
+      "claim": "BLA-to-FrA neurons do not send collaterals to the prelimbic and infralimbic subdivisions of the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to BLA neurons that project directly to the mPFC (Hoover and Vertes, 2007; Likhtik and Paz, 2015; Senn et al., 2014), BLA-to-FrA axons do no send collaterals to the prelimbic and infralimbic subdivisions of the mPFC (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by retrograde tracing showing absence of labeled axons in mPFC subdivisions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "89b45213-be5d-400b-abc4-5c1c1c629c5d",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C48",
+      "claim": "The time-locked suppression of BLA-to-FrA communication during negatively paired WGN (CS-, protocol 1b) significantly decreased the fraction of ArchT-mice that learned the association.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the time-locked suppression of BLA-to-FrA communication during negatively paired WGN (CS-, protocol 1b) significantly decreased the fraction of ArchT-mice that learned the association (GFP: 87.5%; ArchT: 22%, p=0.005, Pearson's \u03c7\u00b2 test) and freezing behaviors upon subsequent CS+ (8 kHz) presentation (GFP: 55.9 \u00b1 8%, n = 8 mice; ArchT: 34.9 \u00b1 3%, n = 7 mice; p=0.037, t-test) (Figure 6E,F; Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by optogenetic inhibition of BLA-to-FrA projections during conditioning with behavioral testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "fd3c7095-1866-45ad-88ec-3c5ca5437c86",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C49",
+      "claim": "Neither the fraction of mice that learned nor freezing responses during recall were affected by blocking the activity of BLA-to-FrA axons during negatively-paired 8 kHz (CS-, protocol 2b).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, neither the fraction of mice that learned (GFP: 78%; ArchT: 44%, p=0.145, Pearson's \u03c7\u00b2 test) nor freezing responses during recall (CS+; GFP: 34.8 \u00b1 3.9, n = 9 mice; ArchT: 29.3 \u00b1 8, n = 9 mice; p=0.530, t-test) were affected by blocking the activity of BLA-to-FrA axons during negatively-paired 8 kHz (CS-, protocol 2b) (Figure 6E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by optogenetic inhibition experiments showing no effect when 8 kHz is CS-.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "fdf96c67-3462-4f0a-9e05-5f07578fa2f4",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C50",
+      "claim": "Fear conditioning with protocol one produced more freezing responses in control mice than with protocol 2.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this hypothesis, fear conditioning with protocol one produced more freezing responses in control mice than with protocol 2 (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing behavioral outcomes between different conditioning protocols.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "80c47910-5d70-4faf-99c0-113988042440",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C51",
+      "claim": "CS+ evoked freezing responses were significantly lower during recall in mice that were conditioned in the absence of CS-.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CS+ evoked freezing responses were significantly lower during recall in mice that were conditioned in the absence of CS- (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing freezing responses between protocols with and without CS- presentation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "266fd00b-7337-4327-9c09-b38f7f5cfc04",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C52",
+      "claim": "The FrA may function as a relay station during learning from sensory cortical areas and the BLA to the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the FrA may function as a relay station during learning from sensory cortical areas and the BLA to the mPFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from anatomical connectivity patterns and functional data showing FrA integrates sensory and BLA inputs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "286687f7-e2e9-475a-9268-617182f85cd6",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C53",
+      "claim": "Multiple frequencies composing WGN might promote the activation of a dense pattern of neighboring spines that in turn facilitate the generation and propagation of local non-linear events toward the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot rule out that WGN tones are structured and further abstracted throughout the entire auditory system (Deneux et al., 2016), the simplest explanation is that frequency-tuned spines are distributed widely and heterogeneously throughout the same FrA dendrite, as already reported in the auditory cortex of anesthetized mice (Chen et al., 2011). As a consequence, the multiple frequencies composing WGN might promote the activation of a dense pattern of neighboring spines that in turn facilitate the generation and propagation of local non-linear events toward the soma (Antic et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from dendritic imaging data and supported by citations to prior work on dendritic spine properties.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "a5064c1b-f4ba-45fd-8bba-ca493daf9ff5",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C54",
+      "claim": "BLA-to-FrA synapses are likely to be weak and unreliable.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data indicate that BLA-to-FrA synapses are likely to be weak and unreliable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from in vivo recordings showing modest and variable responses to BLA stimulation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "1b02f89b-7010-44f6-b752-bf9ad65024f2",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C55",
+      "claim": "BLA neurons might signal to frontal circuits any new association independently of its valence, which might subsequently be assigned by the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "BLA neurons might signal to frontal circuits any new association independently of its valence, which might subsequently be assigned by the mPFC (Klavir et al., 2013; Likhtik and Paz, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of BLA function based on data showing activation independent of CS type, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "2dd6b0ae-83a3-47e1-a27f-7efd86e8bfee",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C56",
+      "claim": "Acoustic noise can enhance signal processing, facilitate sensory signaling and improve cognitive performance, notably in individuals with poor attention.",
+      "claim_type": "EXPLICIT",
+      "source": "While acoustic noise is often viewed as a disturbing variable, it can enhance signal processing, facilitate sensory signaling and improve cognitive performance, notably in individuals with poor attention (McDonnell and Abbott, 2009; McDonnell and Ward, 2011; Stein et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research on stochastic resonance and noise effects on cognition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "089b565c-f015-4e2d-b691-4fe4282f19da",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "claim_id": "C57",
+      "claim": "Given that noise is abundant in the environment and communication of most mammals, it might facilitate learning in coordination with BLA-to-FrA inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, given that noise is abundant in the environment and communication of most mammals, it might facilitate learning in coordination with BLA-to-FrA inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation connecting environmental noise prevalence to the observed learning facilitation mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6b925746-36cf-4ad6-98e7-6814db5369a0",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "White Gaussian noise (WGN) evokes NMDAR-dependent subthreshold depolarizations in FrA L2/3 pyramidal neurons that are significantly larger and longer-lasting than responses to pure frequency tones (8 kHz). The NMDAR-mediated component is much larger for WGN than pure tones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 provide converging evidence from whole-cell recordings showing WGN produces sustained depolarization (27.6\u00b14 mV) that is abolished by NMDAR antagonists (dAP5, MK-801), while pure tones produce minimal responses. The NMDAR-mediated component is significantly larger for WGN (33.1\u00b14.2 mV) than 8 kHz tones (9.7\u00b13.4 mV, p=0.017). Statistical tests are appropriate and sample sizes are reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "711d87a4-a866-41d2-8874-e50b54e97f52",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "WGN evokes significantly more local dendritic calcium events in FrA pyramidal neurons than pure frequency tones in both anesthetized and awake mice, with anesthesia potentially reducing dendritic signaling of pure frequency inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 demonstrate through two-photon calcium imaging that WGN produces more local dendritic events (0.11\u00b10.01 Hz) than pure tones (0.04\u00b10.01 Hz for 8 kHz, p<0.001) in anesthetized mice. Similar patterns are observed in awake mice, though pure tones show some activity above baseline when awake. Statistical comparisons are appropriate with adequate sample sizes (5-9 mice).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "7b3afbd3-c1aa-48b1-a68d-79f850a02697",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The differential effects of WGN on FrA neurons are not attributable to sound intensity or noise-induced pain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 provide control experiments showing WGN effects persist across different intensities and that exploratory motor behaviors are unaffected by WGN or pure tones, ruling out alternative explanations based on intensity or pain. These are appropriate controls for the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "5eaef96b-f64b-4439-ac6b-efccff08c016",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of FrA neurons during CS- presentation impairs fear learning only when WGN is used as CS-, reducing both the fraction of mice that learn and freezing responses during recall. WGN-evoked dendritic and somatic responses are reduced after conditioning in a learning-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 demonstrate through optogenetic inhibition that FrA activity during WGN CS- is critical for learning (protocol 1: GFP 75% vs ArchT 30% learned, p=0.02), but not when 8 kHz is CS- (protocol 2: p=0.7). Post-conditioning imaging shows reduced WGN-evoked dendritic activity (0.11 to 0.06 Hz, p=0.003) and somatic responses correlate negatively with learning. The specificity of the effect and correlation with learning support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "fa809b0a-48e4-49b3-8b8e-0a3cd4f48e82",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BLA-to-FrA axons project to superficial layer 1 and are progressively recruited during fear conditioning, with activity strongest between conditioning trials (during CS-) rather than during CS+/US pairings. The differential activity between CS- and CS+ (\u0394cumulative) correlates positively with learning performance (r\u00b2=0.89).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C37 provide comprehensive evidence from two-photon calcium imaging during conditioning showing BLA-to-FrA axons are activated only after the first US presentation, with higher activity during CS- than CS+ (0.27\u00b10.07 vs 0.21\u00b10.06 \u0394F/F0, p=0.012). The \u0394cumulative is significantly higher in learners than non-learners (0.1\u00b10.02 vs 0.01\u00b10.008, p=0.013) and correlates strongly with freezing behavior. The temporal dynamics and correlation with learning are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "9d2a7381-fa0b-46df-b823-d23a88c91ec9",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "BLA-to-FrA synapses are monosynaptic but produce weak and state-dependent responses in vivo, with rhythmic stimulation generating only modest cumulative depolarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 demonstrate through slice electrophysiology that BLA-to-FrA connections are monosynaptic (short latency 3.5\u00b10.36 ms, low jitter 0.289\u00b10.04 ms), but in vivo recordings show responses are weak, variable, and state-dependent (visible only during down states). Rhythmic stimulation produces modest depolarization (8\u00b14 mV). The contrast between in vitro and in vivo conditions is appropriately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "bf5c97e2-c89b-4794-b29f-690d5f1b1b8f",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Coincident activation of BLA inputs and auditory tones produces supralinear integration in FrA neurons that is NMDAR-dependent, with BLA+WGN integration significantly stronger than BLA+8kHz integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 demonstrate through paired stimulation experiments that observed responses exceed expected linear summation for both WGN (observed 44\u00b16.4 mV vs expected 18\u00b18.8 mV, p=0.002) and 8 kHz (observed 16.6\u00b13.1 mV vs expected -2.4\u00b13.3 mV, p<0.001), with WGN showing significantly stronger supralinearity (p=0.003). dAP5 blocks the effect, confirming NMDAR dependence. The comparison between observed and expected responses is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "5db74b6b-d4be-4ab5-90a0-4077703d784a",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "BLA-to-FrA neurons do not send collaterals to the prelimbic and infralimbic subdivisions of the mPFC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by retrograde tracing experiments showing absence of labeled axons in mPFC subdivisions, establishing the specificity of the BLA-to-FrA projection. This anatomical finding is important for interpreting the functional results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "1c737910-05dc-4490-9f2a-71f9b24c215f",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of BLA-to-FrA projections during CS- impairs fear learning only when WGN is used as CS-, not when 8 kHz is CS-. Protocol 1 (WGN as CS-) produces stronger learning than protocol 2, and omitting CS- reduces learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 demonstrate through projection-specific optogenetic inhibition that BLA-to-FrA communication during WGN CS- is critical for learning (protocol 1b: GFP 87.5% vs ArchT 22% learned, p=0.005), but not during 8 kHz CS- (protocol 2b: p=0.145). Behavioral comparisons between protocols support the specificity of WGN's role. The use of retrograde CAV2-Cre for projection-specific targeting is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "eff1abd2-3f89-406f-aeaf-67c3d206ed31",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The FrA may function as a relay station during learning from sensory cortical areas and the BLA to the mPFC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C52 is an inference based on anatomical connectivity and functional data, but direct evidence for relay function (e.g., recording from mPFC during FrA manipulation) is not provided. While the anatomical connections support this possibility, the functional relay role remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "b8322a73-8ccb-4907-ab53-62ef9e9dc6e7",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Multiple frequencies composing WGN might promote activation of dense patterns of neighboring spines that facilitate generation and propagation of local non-linear events toward the soma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C53 is a mechanistic interpretation of the dendritic imaging data, supported by citations to prior work on dendritic spine properties. However, direct evidence for frequency-tuned spine distribution in FrA or dense neighboring spine activation is not provided. The explanation is plausible but remains speculative without spine-level imaging or mapping of frequency tuning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "6f938250-e2a2-4e0d-a407-317c4cb7d26f",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "BLA-to-FrA synapses are likely to be weak and unreliable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is supported by in vivo recordings (C39-C41) showing modest, variable, and state-dependent responses to BLA stimulation. The characterization as 'weak and unreliable' is consistent with the quantitative data showing high variability (0.4-14.5 mV range) and state-dependence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "15a40750-78ae-40ca-ab7f-07ff69167a67",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "BLA neurons might signal to frontal circuits any new association independently of its valence, which might subsequently be assigned by the mPFC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C55 is speculative interpretation based on the observation that BLA-to-FrA activity is independent of CS type. While the data show BLA activation is not CS-specific, the proposed role in signaling associations independent of valence and subsequent valence assignment by mPFC is not directly tested. This remains a hypothesis requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "16da15ca-316b-44a4-8ca1-fdf2e37644e7",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Acoustic noise can enhance signal processing, facilitate sensory signaling and improve cognitive performance, notably in individuals with poor attention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by citations to prior research on stochastic resonance and noise effects on cognition. This is established knowledge from the literature and provides context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "9edeb952-2c09-49b2-8691-b3f4209ea3ae",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Given that noise is abundant in the environment and communication of most mammals, it might facilitate learning in coordination with BLA-to-FrA inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C57 is speculative extrapolation connecting environmental noise prevalence to the observed learning facilitation mechanism. While the experimental data support a role for WGN in the laboratory setting, the ecological relevance and generalization to natural environmental noise is not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    },
+    {
+      "id": "3e58249f-34bc-4c93-ba8e-341d105780e6",
+      "content_id": "e7e3f36c-3b3b-4ad2-81be-bdf76fec2b0e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establishing the theoretical framework and prior knowledge about discriminative learning, mPFC function, and FrA anatomy and function in fear conditioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C11 are supported by appropriate citations to established literature on learning theory, mPFC function, and FrA anatomy/function. These provide necessary context for the current study and are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:44:34.250280Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cbdeaa0a-4694-4d69-9447-062edb9f313e",
+      "result_id": "6b925746-36cf-4ad6-98e7-6814db5369a0"
+    },
+    {
+      "claim_id": "808b1ae6-bca4-43c0-88e8-8ca7d7561928",
+      "result_id": "6b925746-36cf-4ad6-98e7-6814db5369a0"
+    },
+    {
+      "claim_id": "ef67356c-4544-43f3-9626-fa77f0c0be7f",
+      "result_id": "6b925746-36cf-4ad6-98e7-6814db5369a0"
+    },
+    {
+      "claim_id": "600a85bf-3638-442b-8177-caf760066699",
+      "result_id": "6b925746-36cf-4ad6-98e7-6814db5369a0"
+    },
+    {
+      "claim_id": "198d8be3-fd2d-4fa7-9265-a21d0463737e",
+      "result_id": "6b925746-36cf-4ad6-98e7-6814db5369a0"
+    },
+    {
+      "claim_id": "64a2da22-bb54-4a6e-8391-a28898d1c278",
+      "result_id": "711d87a4-a866-41d2-8874-e50b54e97f52"
+    },
+    {
+      "claim_id": "190d1b8b-b867-4221-a365-2e4ebf221355",
+      "result_id": "711d87a4-a866-41d2-8874-e50b54e97f52"
+    },
+    {
+      "claim_id": "5cca55d0-8dbe-4f26-8e43-ca5372d8af6b",
+      "result_id": "711d87a4-a866-41d2-8874-e50b54e97f52"
+    },
+    {
+      "claim_id": "65589c95-7f44-4f26-9e30-d9b85a654295",
+      "result_id": "711d87a4-a866-41d2-8874-e50b54e97f52"
+    },
+    {
+      "claim_id": "6c8063ce-130d-48f7-97e8-8f2a2ba8e793",
+      "result_id": "711d87a4-a866-41d2-8874-e50b54e97f52"
+    },
+    {
+      "claim_id": "7659c9f7-86c5-4048-a5da-f46710c1dc22",
+      "result_id": "7b3afbd3-c1aa-48b1-a68d-79f850a02697"
+    },
+    {
+      "claim_id": "70eb3803-4ab7-418e-b0a2-1a45df5840df",
+      "result_id": "7b3afbd3-c1aa-48b1-a68d-79f850a02697"
+    },
+    {
+      "claim_id": "76eac344-2779-4255-af05-1c1c6f6ba2e3",
+      "result_id": "5eaef96b-f64b-4439-ac6b-efccff08c016"
+    },
+    {
+      "claim_id": "099e721f-2410-45a0-86a8-714f3bae46f9",
+      "result_id": "5eaef96b-f64b-4439-ac6b-efccff08c016"
+    },
+    {
+      "claim_id": "e0c87ea6-32bc-41b1-8009-dc79982a18c7",
+      "result_id": "5eaef96b-f64b-4439-ac6b-efccff08c016"
+    },
+    {
+      "claim_id": "902aeb00-161e-4406-9bdc-be58a5a4d223",
+      "result_id": "5eaef96b-f64b-4439-ac6b-efccff08c016"
+    },
+    {
+      "claim_id": "6a66dbca-8b56-42e1-a761-79f3d12092bc",
+      "result_id": "5eaef96b-f64b-4439-ac6b-efccff08c016"
+    },
+    {
+      "claim_id": "78d93bd5-5389-48b8-a7ee-3cb1e1ecda55",
+      "result_id": "fa809b0a-48e4-49b3-8b8e-0a3cd4f48e82"
+    },
+    {
+      "claim_id": "1d7fc86f-6b8d-4c95-82e8-0584984bf5f4",
+      "result_id": "fa809b0a-48e4-49b3-8b8e-0a3cd4f48e82"
+    },
+    {
+      "claim_id": "453db721-4cd2-4d57-b3ba-6e449641f8fa",
+      "result_id": "fa809b0a-48e4-49b3-8b8e-0a3cd4f48e82"
+    },
+    {
+      "claim_id": "3d85a8ef-046d-4340-b94d-e4a26a318486",
+      "result_id": "fa809b0a-48e4-49b3-8b8e-0a3cd4f48e82"
+    },
+    {
+      "claim_id": "7f0cab10-ab5f-4b54-8288-97baf3ec31eb",
+      "result_id": "fa809b0a-48e4-49b3-8b8e-0a3cd4f48e82"
+    },
+    {
+      "claim_id": "716acfab-30c1-48fd-b4f0-d0c50d0ad511",
+      "result_id": "fa809b0a-48e4-49b3-8b8e-0a3cd4f48e82"
+    },
+    {
+      "claim_id": "7127b58d-e461-49f1-86c7-a955a08ecc50",
+      "result_id": "fa809b0a-48e4-49b3-8b8e-0a3cd4f48e82"
+    },
+    {
+      "claim_id": "529eca14-617d-4970-a2a3-4d022bbca502",
+      "result_id": "fa809b0a-48e4-49b3-8b8e-0a3cd4f48e82"
+    },
+    {
+      "claim_id": "0340a3ff-aca3-4f91-ac1b-550e111bc9fc",
+      "result_id": "fa809b0a-48e4-49b3-8b8e-0a3cd4f48e82"
+    },
+    {
+      "claim_id": "cc893366-7a7a-4e19-9466-4e03fdf99de7",
+      "result_id": "9d2a7381-fa0b-46df-b823-d23a88c91ec9"
+    },
+    {
+      "claim_id": "d1eb4f50-f3ea-418b-9021-40627781729e",
+      "result_id": "9d2a7381-fa0b-46df-b823-d23a88c91ec9"
+    },
+    {
+      "claim_id": "fba3c478-ec45-4b8b-a046-9287866c89b2",
+      "result_id": "9d2a7381-fa0b-46df-b823-d23a88c91ec9"
+    },
+    {
+      "claim_id": "6495d2c1-c4cb-4cc2-b0ae-1e59dda657c3",
+      "result_id": "9d2a7381-fa0b-46df-b823-d23a88c91ec9"
+    },
+    {
+      "claim_id": "453c8872-f22a-4b24-aba9-c2f238dbde5a",
+      "result_id": "bf5c97e2-c89b-4794-b29f-690d5f1b1b8f"
+    },
+    {
+      "claim_id": "9c0d4ec1-4b4c-40fb-98c6-e250d11c6389",
+      "result_id": "bf5c97e2-c89b-4794-b29f-690d5f1b1b8f"
+    },
+    {
+      "claim_id": "5cbe816c-2797-416a-b264-44fc8f90ff55",
+      "result_id": "bf5c97e2-c89b-4794-b29f-690d5f1b1b8f"
+    },
+    {
+      "claim_id": "22faf7a5-8db3-4ab1-ac31-320e5df8142d",
+      "result_id": "bf5c97e2-c89b-4794-b29f-690d5f1b1b8f"
+    },
+    {
+      "claim_id": "91155cd9-9613-4f2c-ad32-6d933a23a79c",
+      "result_id": "bf5c97e2-c89b-4794-b29f-690d5f1b1b8f"
+    },
+    {
+      "claim_id": "ab4274f0-79fd-461f-9a9a-352f7d6dda51",
+      "result_id": "5db74b6b-d4be-4ab5-90a0-4077703d784a"
+    },
+    {
+      "claim_id": "89b45213-be5d-400b-abc4-5c1c1c629c5d",
+      "result_id": "1c737910-05dc-4490-9f2a-71f9b24c215f"
+    },
+    {
+      "claim_id": "fd3c7095-1866-45ad-88ec-3c5ca5437c86",
+      "result_id": "1c737910-05dc-4490-9f2a-71f9b24c215f"
+    },
+    {
+      "claim_id": "fdf96c67-3462-4f0a-9e05-5f07578fa2f4",
+      "result_id": "1c737910-05dc-4490-9f2a-71f9b24c215f"
+    },
+    {
+      "claim_id": "80c47910-5d70-4faf-99c0-113988042440",
+      "result_id": "1c737910-05dc-4490-9f2a-71f9b24c215f"
+    },
+    {
+      "claim_id": "266fd00b-7337-4327-9c09-b38f7f5cfc04",
+      "result_id": "eff1abd2-3f89-406f-aeaf-67c3d206ed31"
+    },
+    {
+      "claim_id": "286687f7-e2e9-475a-9268-617182f85cd6",
+      "result_id": "b8322a73-8ccb-4907-ab53-62ef9e9dc6e7"
+    },
+    {
+      "claim_id": "a5064c1b-f4ba-45fd-8bba-ca493daf9ff5",
+      "result_id": "6f938250-e2a2-4e0d-a407-317c4cb7d26f"
+    },
+    {
+      "claim_id": "1b02f89b-7010-44f6-b752-bf9ad65024f2",
+      "result_id": "15a40750-78ae-40ca-ab7f-07ff69167a67"
+    },
+    {
+      "claim_id": "2dd6b0ae-83a3-47e1-a27f-7efd86e8bfee",
+      "result_id": "16da15ca-316b-44a4-8ca1-fdf2e37644e7"
+    },
+    {
+      "claim_id": "089b565c-f015-4e2d-b691-4fe4282f19da",
+      "result_id": "9edeb952-2c09-49b2-8691-b3f4209ea3ae"
+    },
+    {
+      "claim_id": "35b09273-f308-4131-a28a-205c9fdf22fd",
+      "result_id": "3e58249f-34bc-4c93-ba8e-341d105780e6"
+    },
+    {
+      "claim_id": "072d1022-ec52-420f-9316-30d5557d30bc",
+      "result_id": "3e58249f-34bc-4c93-ba8e-341d105780e6"
+    },
+    {
+      "claim_id": "8001d365-2d24-44cf-99e0-2d98217c374a",
+      "result_id": "3e58249f-34bc-4c93-ba8e-341d105780e6"
+    },
+    {
+      "claim_id": "bf5fd6b3-2481-4d4d-b91b-31ef56a19a9e",
+      "result_id": "3e58249f-34bc-4c93-ba8e-341d105780e6"
+    },
+    {
+      "claim_id": "2560a61e-919e-4089-8686-c598dfecb985",
+      "result_id": "3e58249f-34bc-4c93-ba8e-341d105780e6"
+    },
+    {
+      "claim_id": "ba540c89-dc28-4970-9904-7bdf196f2992",
+      "result_id": "3e58249f-34bc-4c93-ba8e-341d105780e6"
+    },
+    {
+      "claim_id": "9b13a4e5-19d0-41a5-abff-3914dbbb3a87",
+      "result_id": "3e58249f-34bc-4c93-ba8e-341d105780e6"
+    }
+  ],
+  "comparisons": []
+}

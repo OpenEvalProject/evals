@@ -1,0 +1,1583 @@
+{
+  "submission": {
+    "id": "29425caf-c655-47ce-ba20-c3df5a7e2aec",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:00:30.569652Z",
+    "updated_at": "2025-12-02T17:00:30.569652Z"
+  },
+  "content": [
+    {
+      "id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "submission_id": "29425caf-c655-47ce-ba20-c3df5a7e2aec",
+      "content_type": "manuscript",
+      "content_text": "# Mechanics and kinetics of dynamic instability\n\n## Authors\n\n- Thomas CT Michaels<sup>1</sup> ([ORCID: 0000-0001-6931-5041](https://orcid.org/0000-0001-6931-5041))\n- Shuo Feng<sup>2</sup> ([ORCID: 0000-0003-0530-8381](https://orcid.org/0000-0003-0530-8381))\n- Haiyi Liang<sup>2</sup> ([ORCID: 0000-0001-7458-8036](https://orcid.org/0000-0001-7458-8036)) \u2020\n- L Mahadevan<sup>1</sup> ([ORCID: 0000-0002-5114-0519](https://orcid.org/0000-0002-5114-0519)) \u2020\n\n### Affiliations\n\n1. Paulson School of Engineering and Applied Sciences, Harvard University Cambridge United States\n2. Department of Modern Mechanics, University of Science and Technology of China Hefei China\n3. IAT Chungu Joint Laboratory for Additive Manufacturing, Anhui Chungu 3D Institute of Intelligent Equipment and Industrial Technology Wuhu China\n4. Department of Physics, Harvard University Cambridge United States\n5. Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring dynamic instability, self-assembling microtubules (MTs) stochastically alternate between phases of growth and shrinkage. This process is driven by the presence of two distinct states of MT subunits, GTP- and GDP-bound tubulin dimers, that have different structural properties. Here, we use a combination of analysis and computer simulations to study the mechanical and kinetic regulation of dynamic instability in three-dimensional (3D) self-assembling MTs. Our model quantifies how the 3D structure and kinetics of the distinct states of tubulin dimers determine the mechanical stability of MTs. We further show that dynamic instability is influenced by the presence of quenched disorder in the state of the tubulin subunit as reflected in the fraction of non-hydrolysed tubulin. Our results connect the 3D geometry, kinetics and statistical mechanics of these tubular assemblies within a single framework, and may be applicable to other self-assembled systems where these same processes are at play.\n\n## Introduction\n\nMicrotubules (MTs) are polar tubular polymers formed by the self-assembly of the protein tubulin. MTs are ubiquitous in eukaryotic cells, where they are a major component of the cellular cytoskeleton, and participate in a number of essential cellular functions, such as cell migration, morphogenesis, transport within cells and cell division (Desai, 1997; Gupta et al., 2015; Huber et al., 2013; Fletcher and Mullins, 2010). They are also involved in regulating the shape and dynamics of axons, cilia and flagella (Mimori-Kiyosue, 2011).\n\nThe basic building blocks of MTs are tubulin heterodimers. These are formed by \u03b1-tubulin and \u03b2-tubulin, two structurally similar globular proteins with mass of about 55 kDa. \u03b1\u03b2-tubulin dimers are arranged longitudinally into flexible tubulin filaments called protofilaments (PFs). A number (between 9 and 16, typically 13) of such PFs then assembles by lateral interactions to form the MT lattice (Mandelkow et al., 1986; Chr\u00e9tien and Wade, 1991; Mitchison, 1993; Tilney et al., 1973). MT growth occurs by the addition of tubulin dimers mainly at the plus end, where $\\beta$-tubulin is exposed. Upon hydrolysis of guanosine-tri-phosphate (GTP), tubulin subunits undergo a structural conversion that weakens lateral bonds, destabilises the subunit in the MT lattice and converts the relatively straight tubulin state into a state that is bound to guanosine-di-phosphate (GDP) and is characterised by an increased longitudinal curvature (Wang and Nogales, 2005; Alushin et al., 2014).\n\nMTs are not static assemblies. They can repeatedly and stochastically vary their length by undergoing alternating phases of assembly and disassembly both in vivo and in vitro. This phenomenon is termed \u2018dynamic instability\u2019 and it is essential to a number of cellular functions, such as chromosome separation, the remodelling of spatial organisation of the cytoskeleton during mitosis or the exploration of extracellular environment (Mitchison and Kirschner, 1984; Gildersleeve et al., 1992; Cassimeris et al., 1988; Sammak and Borisy, 1988). Understanding the factors that regulate MT dynamic instability is central to cell physiology and disease. Yet a detailed understanding of dynamic instability still remains elusive (Aher and Akhmanova, 2018; Hemmat et al., 2018). This difficulty originates in part from the fact that dynamic instability is the result of several mechanical and kinetic aspects operating at multiple time and length scales (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54077/elife-54077-fig1-v1.jpg)\n\n**Figure 1.:** MTs are composed of tubulin heterodimers formed of \u03b1-tubulin and \u03b2-tubulin. Both \u03b1-tubulin and \u03b2-tubulin are bound to GTP, but only the GTP that is bound to a \u03b2-tubulin is hydrolysable (Nogales et al., 1998). When the tubulin dimer is part of the MT lattice, GTP hydrolysis increases the spontaneous longitudinal curvature along the dimer axis. This causes GDP-tubulin dimers to be less tightly bound in the MT lattice (Wang and Nogales, 2005; Alushin et al., 2014). In the scheme, GTP-tubulin dimers are shown in green, while GDP-tubulin dimers are shown in blue; dark color indicates \u03b2-tubulin and light colour indicates $\\alpha$-tubulin. Tubulin dimers are connected head-to-tail into PFs. Typically, 13 such PFs align laterally to form the MT lattice, which is a long and hollow cylindrical shell with an outer diameter of approximately 25 nm and a thickness of about 5 nm (Mandelkow et al., 1986; Chr\u00e9tien and Wade, 1991; Mitchison, 1993; Tilney et al., 1973). The mechanical stability/instability of the MT tube structure results from a competition between lateral and longitudinal curvatures. While MTs made of GTP-tubulin are relatively straight (about 5\u00b0 per subunit), MTs made of GDP-tubulin tend to curve outward longitudinally at the plus end due to the longitudinal spontaneous curvature of GDP-tubulin dimers (about 12\u00b0 per subunit) (Chr\u00e9tien et al., 1995). Consequently, MTs consisting of GDP-tubulin (hydrolyzed MTs) tend to be mechanically less stable that their non-hydrolysed counterparts. The images show: (a) Schematic structure of an unhydrolyzed \u03b1\u03b2-tubulin dimer with bound nucleotides highlighted in orange (Alushin et al., 2014). (b) EM image showing the characteristic shape of a depolymerising MT plus end, resembling a ram\u2019s horn (VanBuren et al., 2005). (c) Sequence of TIRF microscopy images of a MT end illustrating the switching between phases of polymerisation and depolymerisation during dynamic instability; catastrophe is associated with the loss of the GTP-caps (green fluorescence is from a protein that is believed to associate with the GTP cap). (a) is adapted from Alushin et al. (2014); (b) is reproduced from Austin et al. (2005). (c) is reproduced from Duellberg et al. (2016) under the Creative Commons Attribution License CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/).\n\nAs such, dynamic instability of MTs has been the focus of extensive experimental and theoretical work (Mandelkow et al., 1986; Chr\u00e9tien and Wade, 1991; Mitchison, 1993; Tilney et al., 1973; Mitchison and Kirschner, 1984; Fygenson et al., 1994; Gildersleeve et al., 1992; Cassimeris et al., 1988; Sammak and Borisy, 1988; Hemmat et al., 2018; Aher and Akhmanova, 2018; Dogterom and Leibler, 1993; Brun et al., 2009; Antal et al., 2007; Mahadevan and Mitchison, 2005; Nogales et al., 1998; Wang and Nogales, 2005; Alushin et al., 2014; Zovko et al., 2008; Hoog et al., 2011; Mandelkow et al., 1991; Chr\u00e9tien et al., 1995; Austin et al., 2005; Gardner et al., 2011; Hunyadi and J\u00e1nosi, 2007; Rice et al., 2008; Kueh and Mitchison, 2009; J\u00e1nosi et al., 1998; Molodtsov et al., 2005; VanBuren et al., 2005; Zapperi and Mahadevan, 2011; Bertalan et al., 2014b; Wu et al., 2009; Duellberg et al., 2016; Seetapun et al., 2012; Cheng et al., 2012; Cheng and Stevens, 2014; Jain et al., 2015; Aparna et al., 2017; Zakharov et al., 2015). Studies initially invoked a kinetic view capturing MT dynamic instability phenomenologically by different rates of polymerisation and depolymerisation depending on the state of the tubulin-phosphate complex (Dogterom and Leibler, 1993; Brun et al., 2009; Antal et al., 2007). Evidence of changes in the structural properties of MT subunits during hydrolysis later showed how lattice-bound tubulin dimers undergo a structural conformational change that increases their curvature (Wang and Nogales, 2005; Alushin et al., 2014; Mahadevan and Mitchison, 2005), suggesting that outward curving tips of hydrolysed MTs can cause such structures to be mechanically unstable (Zovko et al., 2008; Hoog et al., 2011; Austin et al., 2005; Mandelkow et al., 1991; Chr\u00e9tien et al., 1995; Gardner et al., 2011; Hunyadi and J\u00e1nosi, 2007; Rice et al., 2008; Kueh and Mitchison, 2009). Several coarse-grained computer simulations have since then adopted this structural-mechanical view, considering MT elasticity explicitly, to understand different aspects of dynamic instability, including hydrolysis-driven mechanical deformations near the cap (J\u00e1nosi et al., 1998), force generation by shrinking microtubules (Molodtsov et al., 2005), or 3D sheet-like/blunt tips (VanBuren et al., 2005), or stochastic microtubule tip configurations and their relation to catastrophe (Zakharov et al., 2015). Few studies, however, have attempted to capture this mechanical view with the aim of emphasizing the qualitative features necessary for dynamic instability and providing phase diagrams that delineate the zones where dynamic instability is seen. Those that exist, for\u00a0example (Zapperi and Mahadevan, 2011; Bertalan et al., 2014b), focus on the 1D limit, where MTs are modelled as adsorbed chains: the predictions from these models can be qualitatively different from those that correctly account for the 3D geometry of MTs (see \u2018Mechanical stability of 3D MTs in the presence of quenched disorder\u2019).\n\nHere, we use a combination of theory and simulations to establish how the kinetics of polymerization and the mechanics associated with the 3D geometry of MTs act together across multiple scales to regulate dynamic instability. We also establish the role of disordered remnants of GDP-tubulin in determining the statistics of MT rescue. All together, our study provides a set of qualitative phase diagrams that delineate the regions of parameter space where dynamic instability is seen, consistent with previous observations while providing experimentally testable predictions.\n\n## Methods\n\n### Computational model\n\nTo complement the theory (see \u2018A phase diagram for mechanical stability of 3D MTs\u2019), we developed a minimal coarse-grained computational model of MT mechanics and dynamics. To characterize the tubulin heterodimers, we use two patchy spheres linked together by a flexible hinge. We derive the patchy particles from coarse-grained representations of colloidal particles that are decorated by patches on their surface; the patches represent specific anisotropic interactions that promote binding with patches on other particles. In our model, interactions between dimers are described by patches carrying two types of interactions: longitudinal and lateral contacts (Huisman et al., 2008). Longitudinal contacts link dimers head-to-tail, arranging them into PFs. Lateral contacts connect parallel PFs to form the cylindrical shell of the MT. Each dimer has two longitudinal contacts and four lateral ones, corresponding to three patches per monomer (Figure 2a). Interactions between two patches on monomers $i$ and $j$ are described by the following potential (Feng and Liang, 2012):\n\n$$\nV_{patchy}\u2062(r,\\theta_{i},\\theta_{j})=V_{S}\u2062(r,\\theta_{i},\\theta_{j})+V_{B}\u2062(r,\\theta_{i},\\theta_{j})+V_{T}\u2062(r,\\theta_{i},\\theta_{j}).\n$$\n\nWe see that there are three distinct contributions associated with the stretching ($V_{S}$), bending ($V_{B}$) and twisting ($V_{T}$) modes, and we choose the following forms for these potentials:\n\n$$\nV_{S}(r,\\theta_{i},\\theta_{j})={\u03f5[(1\u2212e^{\u2212a(r\u2212r_{0})})^{2}\u22121]r<r_{m}\u03f5[(1\u2212e^{\u2212a(r\u2212r_{0})})^{2}\u22121]D_{\\theta}(\\theta_{i})D_{\\theta}(\\theta_{j})r_{m}\\leqr<r_{c}0r\\geqr_{c}\n$$\n\n\n\n$$\nV_{B}(r,\\theta_{i},\\theta_{j})=b(\\theta_{i}^{2}+\\theta_{j}^{2})D_{r}(r)D_{\\theta}(\\theta_{i})D_{\\theta}(\\theta_{j})\n$$\n\n\n\n$$\nV_{T}(r,\\theta_{i},\\theta_{j})=c(\u03d5/r)^{2}D_{r}(r)D_{\\theta}(\\theta_{i})D_{\\theta}(\\theta_{j})\n$$\n\nwhere\n\n$$\nD_{r}(r)={1\u2212sin^{4}\u2061(\\frac{\\pi}{4}\\frac{r\u2212r_{0}}{r_{d}\u2212r_{0}})r<r_{d}0r\\geqr_{d}\n$$\n\n\n\n$$\nD_{\\theta}(\\theta)={1\u2212sin^{4}\u2061(\\frac{\\pi}{4}\\frac{\\theta}{\\theta_{d}})\\theta<\\theta_{d}0\\theta\\geq\\theta_{d}\n$$\n\nHere, $r$ denotes the center-to-center distance between monomers, while the angles $\\theta_{i}$ and $\\theta_{j}$ describe the spatial directions of the patches (Figure 2b). The Morse potential term $V_{S}$, defined in Equation 2, describes the non-covalent interaction between patches, with $\u03f5$ being the depth of the potential well, $r_{0}$ the equilibrium distance between monomers, and $a$ is a parameter that controls the curvature of the potential well and, hence, determines the stretching modulus (see Equation 7). When $r<r_{m}$, where $r_{m}=r_{0}-log\u2061(2)/a$, the potential $V_{S}$ behaves as an isotropic repulsive interaction. In the range $r_{m}\\leqr<r_{c}$, where $r_{c}=5\u2062r_{0}$ is the cutoff for $V_{S}$ ($V_{S}$ is set to zero for $r\\geqr_{c}$), $V_{S}$ is modified by multipliers $D_{\\theta}\u2062(\\theta_{i})$ and $D_{\\theta}\u2062(\\theta_{j})$. This yields an anisotropic attractive potential that exists only when the patches are aligned. Indeed, the multipliers $D_{\\theta}\u2062(\\theta_{i})$ and $D_{\\theta}\u2062(\\theta_{j})$, which are defined in Equation 6, weaken the attraction between the patches when these are not aligned (Figure 2c): $D_{\\theta}$ reaches its maximum value when $\\theta=0$. The cutoff of $D_{\\theta}$ is $\\theta_{d}=\\pi/3$ and limits the influence of the patches within particular range of spatial directions. The potential terms $V_{B}$ and $V_{T}$, defined in Equations 3 and 4, characterise bending and twisting deformations respectively. They are described as classical harmonic potentials with curvature $b$, respectively, $c$, and are modified by the multipliers $D_{r}\u2062(r)$, $D_{\\theta}\u2062(\\theta_{i})$ and $D_{\\theta}\u2062(\\theta_{j})$, which are defined in Equations 5 and 6. These multipliers limit the range of $V_{B}$ and $V_{T}$ to specific spatial locations and directions. The cutoff of $D_{r}$ is set as $r_{d}=2.7\u2062r_{0}$, which is smaller than $r_{c}$ (the cutoff of $V_{S}$). This choice makes $V_{B}$ and $V_{T}$ shorter-range interactions compared to $V_{S}$.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54077/elife-54077-fig2-v1.jpg)\n\n**Figure 2.:** (a) The GTP-tubulin subunit ($\\alpha\u2062\\beta$-heterodimer) in our coarse-grained computer model. The blue patches (1 and 2) are longitudinal connecting points, while the pink patches (3 to 6) are lateral ones. This setup allows the dimer to curve inward along the MT longitudinal direction and outward laterally. The positions of the patches allow us to control the longitudinal and lateral curvatures of the subunit, giving a strong curvature (12\u00b0) to hydrolysed dimers and a weaker curvature (5\u00b0) to non-hydrolysed dimers. (b) The interaction potential $V_{patchy}\u2062(r;\\theta_{i},\\theta_{j})$ between two patchy particles as a function of their centre-to-centre distance $r$ for $\\theta_{i}=0$ and increasing $\\theta_{j}=\\theta$. Inset: the bending angles $\\theta_{i}$ and $\\theta_{j}$ are defined as the angles between the centre-to-patch line and the centre-to-centre line; the twisting angle $\\phi_{i\u2062j}$ is defined by the projection of the normals $\ud835\udc8f_{i}$ and $\ud835\udc8f_{j}$ on the plane perpendicular to the centre-to-centre line. (c) Our mechanical model describes a MT as a continuous, thin elastic sheet. This is parameterised as a surface of revolution obtained by rotating the function $R\u2062(x)=R_{0}+u\u2062(x)$ along the MT long axis ($x$-axis), where $R_{0}$ is the natural radius of the MT and $u\u2062(x)$ describes the local deformation of the surface away from $R_{0}$. We approximate lateral interaction potentials between tubulin subunits in neighbouring PFs by a set of spring potentials (springs with stiffness $S$). Bending of the PFs in the MT causes the connecting springs to stretch. This competition between bending energy and stretching energy determines the mechanical stability of MTs. Inset: hydrolysed tubulin dimers curve naturally in two directions as described by the longitudinal and lateral spontaneous curvatures $\u03ba$ and $\\omega$, respectively.\n\nThe parameters in our coarse-grained computational model are linked to the mesoscopic mechanical properties of MTs (see section \u2019Mechanics\u2019) including the interfilament spring stiffness $S$, the filament bending stiffness $B$ and the filament torsional rigidity $K$ as\n\n$$\nS=2\u2062a^{2}\u2062l\u2062\u03f5,B=b\u2062l,K=\\frac{8\u2062c}{l},\n$$\n\nwhere $l$ is the length scale of tubulin dimers. $l$ takes different values depending on whether we are calculating longitudinal or lateral properties. In particular, we set $l=2\u2062r_{0}=8$ nm when calculating longitudinal properties and set $l=r_{0}=4$ nm for lateral ones (see Appendix 1 and Table 1 for further details on the computer simulation model and a summary of parameter choices). We choose the potential-well parameters in our simulations such that the resulting mesoscopic mechanical parameters Equation 7 are consistent with the experimentally measured values of the mechanical properties of typical MTs (Gittes et al., 1993; Mickey and Howard, 1995; Felgner et al., 1996; Tolomeo and Holley, 1997; de Pablo et al., 2003; Sept and MacKintosh (2010); Deriu et al., 2010). Simulations of this coarse-grained model of MTs were performed using Molecular Dynamics (MD), as described in Appendix 1.\n\n**Table 1.**\n Values of parameters used in our coarse-grained simulations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Value</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>r0</td>\n      <td>4 nm</td>\n      <td>Equilibrium distance between tubulin monomers</td>\n    </tr>\n    <tr>\n      <td>\u03f50</td>\n      <td>7.665 \u00d7 10-20J</td>\n      <td>Potential energy depth for longitudinal interactions</td>\n    </tr>\n    <tr>\n      <td>\u03be</td>\n      <td>5\u00b0 or 12\u00b0</td>\n      <td>Angle between \u03b1-tubulin and \u03b2-tubulin within a GTP- or GDP-dimer</td>\n    </tr>\n    <tr>\n      <td>\u03c7c\u2062h\u2062a\u2062i\u2062n</td>\n      <td>3\u00b0</td>\n      <td>See Equations 24-29</td>\n    </tr>\n    <tr>\n      <td>\u03c7s\u2062i\u2062d\u2062e\u20621</td>\n      <td>103.45\u00b0 or 90\u00b0</td>\n      <td>See Equations 24-29</td>\n    </tr>\n    <tr>\n      <td>\u03c7s\u2062i\u2062d\u2062e\u20622</td>\n      <td>13.8\u00b0</td>\n      <td>See Equations 24-29</td>\n    </tr>\n    <tr>\n      <td>ll\u2062o\u2062n\u2062g</td>\n      <td>2r0</td>\n      <td>Longitudinal size of tubulin dimers</td>\n    </tr>\n    <tr>\n      <td>ll\u2062a\u2062t</td>\n      <td>r0</td>\n      <td>Lateral size of tubulin dimers</td>\n    </tr>\n    <tr>\n      <td>al\u2062o\u2062n\u2062g,al\u2062a\u2062t</td>\n      <td>20/r0</td>\n      <td>Parameters that control longitudinal and lateral stretching stiffness</td>\n    </tr>\n    <tr>\n      <td>bl\u2062o\u2062n\u2062g</td>\n      <td>20\u2062\u03f50</td>\n      <td>Parameter that controls longitudinal bending stiffness</td>\n    </tr>\n    <tr>\n      <td>bl\u2062a\u2062t</td>\n      <td>10\u2062\u03f50</td>\n      <td>Parameter that controls lateral bending stiffness</td>\n    </tr>\n    <tr>\n      <td>cl\u2062o\u2062n\u2062g</td>\n      <td>500\u2062\u03f50\u2062r02</td>\n      <td>Parameter controls longitudinal twisting stiffness</td>\n    </tr>\n    <tr>\n      <td>cl\u2062a\u2062t</td>\n      <td>0.5\u2062\u03f50\u2062r02</td>\n      <td>Parameter that controls lateral twisting stiffness</td>\n    </tr>\n    <tr>\n      <td>\u03f5l\u2062o\u2062n\u2062g</td>\n      <td>\u03f50</td>\n      <td>Potential energy depth for longitudinal interactions</td>\n    </tr>\n    <tr>\n      <td>\u03f5l\u2062a\u2062t</td>\n      <td>0.0906\u03b50</td>\n      <td>Potential energy depth for lateral interactions</td>\n    </tr>\n  </tbody>\n</table>\n\n## Results\n\n### A phase diagram for mechanical stability of 3D MTs\n\nOur analytical model to study the mechanical stability of 3D MTs is a function of the underlying parameters describing MT mechanics, MT growth kinetics and subunit hydrolysis, which we first consider in the deterministic limit (see \u2019A phase diagram for mechanical stability of 3D MTs\u2019). This forms the basis for studying the mechanical stability of MTs when there is heterogeneity in the state of tubulin, that\u00a0is it could be either GTP or GDP bound (see \u2018Mechanical stability of 3D MTs in the presence of quenched disorder\u2019), and allows us to investigate the role of GTP-remnants (containing random fractions of non-hydrolysed subunits) on rescue (see \u2018Role of GTP-remnants in rescue\u2019).\n\nThe starting point of our mechanical model is that MTs exist as individual polymers with persistence lengths in the O(mm) range, which is much larger than the typical length of MTs (\u00b5m range) (Fletcher and Mullins, 2010; Huber et al., 2013). This observation suggests that MTs can be considered to have a well-defined shape that is not affected significantly by thermal fluctuations. Moreover, previous studies indicate that lateral bonds between tubulin dimers are considerably weaker than longitudinal ones (VanBuren et al., 2002; VanBuren et al., 2005; Molodtsov et al., 2005). We model MTs as a set of adherent PFs that have bending stiffness $B$; we approximate lateral interactions between PFs by a series of spring potentials (springs of stiffness $S$) and assume that extending these springs beyond a critical displacement causes MTs to become mechanically unstable and break, potentially leading to dynamic instability.\n\n#### Kinetics\n\nPrevious studies (Wang and Nogales, 2005; Alushin et al., 2014) suggest that tubulin dimers that are part of the MT lattice have different mechanical properties depending on their hydrolysis state. In particular, upon hydrolysis the tubulin dimer undergoes a structural transformation from a relatively straight state to a state with finite curvature. In a 3D setting, the tubulin dimer can be curved both in the longitudinal direction and in the lateral direction. Let $\u03ba\u2062(0)$ denote the longitudinal curvature of tubulin dimers in their GTP-state and let $\u03ba\u2062(\u221e)$ be the longitudinal curvature in the hydrolysed state. For simplicity, we assume that the hydrolysis reaction affects primarily the longitudinal curvature of the tubulin dimers, such that their curvature $\\omega$ in the azimuthal direction can be considered to be constant. This assumption can be relaxed, see Appendix 2. Thus, as a result of GTP-hydrolysis, the longitudinal curvature of tubulin dimers, $\u03ba$, changes with time, which we assume follows first order kinetics so that\n\n$$\n\\frac{d\u2062\u03ba}{d\u2062t}=k_{H}\u2062(\u03ba\u2062(\u221e)-\u03ba),\n$$\n\nwhere $k_{H}$ is the rate of hydrolysis. While bound tubulin changes its structure, unbound (bound) tubulin can attach (detach) to (from) the free end of the MTs, which we also describe using a minimal first order kinetic law for the evolution of the length of the MT $n\u2062(t)$ (expressed in number of subunits) so that\n\n$$\n\\frac{d\u2062n}{d\u2062t}=k_{+}\u2062[m]-k_{-}=k_{G}.\n$$\n\nHere $k_{G}$ is the net growth rate, $k_{+}$ is the elongation rate constant, $k_{-}$ is the dissociation rate constant and, for simplicity, we have assumed a constant subunit concentration $[m]$ in solution.\n\n#### Mechanics\n\nIn addition to MT growth and subunit hydrolysis, we also need to account for the elastic deformation of the MTs since the geometric state of the assembly is linked to its mechanical state. Individual PFs can bend, but are also constrained by inter-filament interactions, so that there are two contributions to elastic energy: (i) curvature energy associated with the bending of PFs, (ii) stretching energy of the springs connecting neighbouring PFs. We capture these energy contributions in a continuum picture that describes a MT as a thin elastic surface of revolution obtained by rotating the function $R\u2062(x)=R_{0}+u\u2062(x)$ along the long MT axis ($x$-axis), where $R\u2062(x)$ is the local radius of MT and $R_{0}$ is the natural radius (Figure 2c). In the small gradient approximation, corresponding to $u^{\u2032}\u226a1$, the total elastic energy can be written as (see Appendix 2 for details):\n\n$$\n\u2130_{tot}=\\int_{0}^{\u221e}(\\frac{B}{2}\u2062[u^{\u2032\u2032}-\u03ba]^{2}+\\frac{\u03a3}{2}\u2062[u^{\u2032}]^{2}+\\frac{S}{2}\u2062u^{2})\u2062\ud835\udc51x,\n$$\n\nwhere $\u03a3=B\u2062(1+\\omega\u2062R_{0})^{2}/R_{0}^{2}$ and $=\u2032\\partial/\\partialx$ denotes derivative with respect to $x$. The first term in Equation 10 is the energy of MT that penalises deviations from its natural curvature $\u03ba\u2062(t)$ which itself reflects its state of hydrolysis. The second term is a surface energy term that penalises area increase due to the outward curving of the surface. The third term is the stretching energy of the springs. The minimum energy configuration results from a competition between bending energy, which favours a natural curved MT state, and elastic spring energy, which favours a straight cylindrical MT configuration. The overall shape of the axisymmetric tubule is then obtained by solving the Euler-Lagrange equation associated with Equation 10 (see Appendix 2 for details):\n\n$$\nB\u2062u^{\u2032\u2032\u2032\u2032}-\u03a3\u2062u^{\u2032\u2032}+S\u2062u=0\n$$\n\nsubject to the boundary conditions $u\u2062(\u221e,t)=u^{\u2032}\u2062(\u221e,t)=0$ (fixed minus end), $u^{\u2032\u2032}\u2062(0,t)=\u03ba$ and $u^{\u2032\u2032\u2032}\u2062(0,t)=0$ (free plus end), and is coupled to the kinetic Equations 8 and 9.\n\n#### Condition for mechanical stability\n\nThere are three natural dimensionless parameters (two mechanical parameters and one kinetic parameter) in our model that read:\n\n$$\n\\alpha=(\\frac{B\u2062\u03ba^{2}}{S\u2062u_{c}^{2}})^{1/2},\\beta=(\\frac{\u03a3\u2062u_{c}}{B\u2062\u03ba})^{1/2},\\gamma=\\frac{k_{G}}{k_{H}}.\n$$\n\nThe first parameter \u03b1 describes the effect of longitudinal curvature. The second parameter \u03b2 pertains to lateral curvature. Coupling these mechanical parameters to the kinetics of subunit hydrolysis and MT growth introduces an additional relevant dimensionless parameter $\\gamma$, which is the ratio of the rate of hydrolysis of GTP-tubulin dimers to the net rate of addition of GTP-subunits to the MT plus end (see Appendix 2 for details).\n\nThese parameters serve as the basis for a phase diagram for the mechanical stability of a 3D MT (Figure 3a). Assuming that a mechanical instability arises when the elastic MT is deformed so that the radial displacement crosses a critical value ($u\u2062(0)>u_{c}$), we can solve Equation 11 in terms of the maximal deformation $u\u2062(0)$ to yield a condition for when the MT is mechanically unstable. Rewriting this in terms of the scaled longitudinal curvature yields a critical value (see the Appendix 2 for details):\n\n$$\n\\alpha=\\frac{\\sqrt{1+\\frac{4\u2062\\beta^{2}}{1-e^{-n/\\gamma}}}-1}{2\u2062\\beta^{2}}.\n$$\n\nabove which MTs are mechanically unstable (the transition curve in the \u03b1\u03b2-plane in Figure 3a). This critical value depends on the lateral curvature parameter \u03b2, which is related to MT radius through $\\beta\u22431/R_{0}$. In particular, the critical value for $\\alpha$ is maximal ($\\alpha=1$) when $\\beta=0$, that\u00a0is $R_{0}\u2192\u221e$. This situation corresponds to the limit of a one-dimensional MT (Zapperi and Mahadevan, 2011). The critical value for $\\alpha$ then decreases with increasing lateral curvature \u03b2, that\u00a0is decreasing MT radius. Overall, these results suggest that MTs with smaller radius are mechanically less stable than MTs with larger radius, consistent with the intuition that increasing azimuthal curvature increases the mechanical strain on the MT and thus makes it more likely to fracture. Furthermore, increasing the rate of MT growth over hydrolysis acts to stabilise MTs mechanically. In the mechanically stable phase, hydrolysis is slower than the addition of GTP-tubulin at the plus end, leaving a stabilising GTP-cap of size $n$ (see Appendix 2, Video 1). In the mechanically unstable phase, hydrolysis is faster than subunit addition at the plus end. Consequently, the \u2018hydrolysis front\u2019 takes over the \u2018growth front\u2019, which destabilises MTs. In this case, the PFs curve outward near the plus end, leading to a characteristic morphology of depolymerising MTs that resembles rams\u2019 horns (VanBuren et al., 2005) (see Appendix 2, Video 2). The transition curve separating these fast and slow hydrolysis regimes depends on both the longitudinal and lateral curvatures of the MT.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54077/elife-54077-fig3-v1.jpg)\n\n**Figure 3.:** (a) Schematic phase diagram for mechanical stability/instability with three axes (two mechanical axes and one kinetic axis): longitudinal curvature parameter $\\alpha=(B\u2062\u03ba^{2}/S\u2062u_{c}^{2})^{1/2}$, lateral curvature parameter $\\beta=(\u03a3\u2062u_{c}/B\u2062\u03ba)^{1/2}$, and ratio of growth rate to hydrolysis rate $\\gamma=\\tau_{\u03ba}/\\tau_{G}$. (b) 2D phase diagram separating regions of mechanically stable and unstable MTs as a function of $\\alpha$ and $\\beta$. Data points are from computer simulations and the solid line is the prediction of Equation 13. (c)-(d) Implementation of lateral (c) and longitudinal (d) disorder at the level of the spring stiffness $S$ in our coarse-grained computer model. The data points are simulation results and the solid lines are fits to Equation 16 and Equation 17. The data show that lateral disorder acts to destabilise MTs mechanically (c), while longitudinal disorder strengthens MTs (d). In both cases, disorder was generated using the distribution of spring constants in Equation 14 with $\\sigma=0.02\u2062\u27e8S\u27e9$, that\u00a0is the disorder parameter was $k=50$. The amount disorder of each tubulin subunit represents the average value of the relative stiffness $S/\u27e8S\u27e9$ of its two lateral interactions. See Videos 1\u20134 for movies illustrating the mechanical stability of a MT with and without quenched disorder (see Videos 1\u20134).\n\n![Video 1.](https://cdn.elifesciences.org/articles/54077/elife-54077-video1.mp4.jpg)\n\n**Video 1.:** This movie shows the interplay between MT growth kinetics (we focus here only on the addition of GTP-tubulin subunits at the plus end) and the subsequent hydrolysis of the incorporated subunits in the older parts of the MT. The interplay between growth and hydrolysis can be seen in the emergence of a growing front and a hydrolysis front that move with different speed. In this case, the hydrolysis front does not catch up with the growth front at the plus end, yielding a stabilising GTP-cap and a mechanically stable MT configuration for the entire duration of the simulation. The growth rate is $r_{G}=10^{-4}$ steps\u22121, while the probability of hydrolysis for each dimer is given by $p_{H}=e^{-r_{H}\u2062t}$, where $r_{H}=10^{-10}$ steps\u22121 is the rate of hydrolysis. Note the separation of timescales between MT growth and subunit hydrolysis ($r_{G}\u226br_{H}$). To keep the helical structure stable, we use the following parameters $b_{l\u2062o\u2062n\u2062g}=8\u2062\u03f5_{0}$, $b_{l\u2062a\u2062t}=4\u2062\u03f5_{0}$ and $c_{l\u2062o\u2062n\u2062g}=5\u2062\u03f5_{0}\u2062r_{0}^{2}$, while the other mechanical parameters are the same as listed in Table 1.\n\n![Video 2.](https://cdn.elifesciences.org/articles/54077/elife-54077-video2.mp4.jpg)\n\n**Video 2.:** This movie shows the interplay between MT growth and subunit hydrolysis. The rate of hydrolysis is $r_{H}=5\\times10^{-6}$ steps\u22121 while the growth rate is decreasing from $r_{G}=5\\times10^{-3}$ steps\u22121 to $r_{G}=2\\times10^{-6}$ steps\u22121. Hydrolysis destroys the GTP-cap of MT and causes catastrophe. The mechanical parameters are the same as in Video 1.\n\nIn Figure 3b, we show that crossing the transition curve given by Equation 13 causes a switch from the mechanically stable phase into the mechanically unstable phase. This could result from variations in either $\\alpha$, $\\beta$ or $\\gamma$. For MTs in the mechanically stable phase, catastrophic failure can still occur via thermal activation. In this regime, the rate of catastrophe follows Arrhenius\u2019 law $r_{c}\u2243exp\u2061(\u0394E/k_{B}T)$, where $k_{B}T$ is the thermal energy and $\u0394E$ is the energy barrier given by $\u0394E\u221d\\alpha\u22121+\\beta^{2}$ is a measure of the \u2018distance\u2019 from the transition curve Equation 13 in the phase diagram of Figure 3b; the further away a MT is from this transition curve, the less likely it is to undergo catastrophe. The dependence of the rate of catastrophe on MT radius is through the parameter \u03b2, such that $ln\u2061r_{c}\u221d1/R_{0}^{2}$. Thus, at constant temperature and at fixed values of the mechanical parameters, the rate of catastrophe increases with decreasing MT radius or, equivalently, decreasing PF number.\n\n#### Comparison with computer simulations\n\nWe used our computer simulations to test the prediction from Equation 13 for how the critical value of $\\alpha$ varies with \u03b2, which is a function of MT radius $R_{0}$ that is controlled by changing the number $N_{f}$ of PFs in the MT. The results (Figure 3b) show that the critical value for $\\alpha$ is maximal when $\\beta=0$, and decreases with increasing \u03b2, in agreement with the theoretical prediction of Equation 13 (solid line).\n\n### Mechanical stability of 3D MTs in the presence of quenched disorder\n\nHaving considered the deterministic limit where growth kinetics, hydrolysis and longitudinal/lateral curvatures characterise the mechanical stability of a 3D MT, we now consider the role of randomness by including a random fraction of GTP-tubulin dimers in their lattice. We can model this situation by introducing quenched disorder in the state of the tubulin subunit. Quenched disorder describes the general situation when certain parameters in the system become random variables; disorder can be considered to be \u2018quenched\u2019 when the probability distribution of parameter values either does not vary with time or it varies with time slowly compared to some underlying fast dynamics, and thus cannot be described solely using equilibrium statistical mechanics. In the context of MTs, such a separation of timescales emerges very naturally when comparing fast polymerization/depolymerization kinetics and the comparatively slower GTP turn-over.\n\nSince the primary mode of MT instability is due to the breaking of lateral bonds, a natural parameter for discussing the role of disorder is the spring stiffness $S$. The underlying motivation for this choice is that mechanical forces can influence the rates of chemical reactions. Indeed, mechanical work contributes to the free energy, which in turn determines the rates of a chemical reaction (Howard, 2001). In our context, GDP-tubulins within the MT lattice experience mechanical stresses due to the strong curvature. These mechanical stresses can shift the polymerisation-depolymerisation equilibrium and favour free monomers. This is consistent with the idea that GDP-tubulins are less tightly bound to MTs than GTP-tubulins (Wang and Nogales, 2005; Alushin et al., 2014), even if the chemical bonds are identical.\n\nThus, instead of having a well-defined spring constant $S$ throughout the MT, we consider a MT with varying $S$. Each lateral interaction is characterised in principle by a different spring constant $S$, which is drawn from a time\u2013independent probability distribution $p\u2062(S)$ of spring constants. For convenience, we choose the Gamma-distribution\n\n$$\np\u2062(S;k,\u27e8S\u27e9)=\\frac{k^{k}\u2062S^{k-1}\u2062exp\u2061(-k\u2062S/\u27e8S\u27e9)}{\u27e8S\u27e9^{k}\u2062\u0393\u2062(k)},\n$$\n\nwhere $\u0393\u2062(x)$ is the Gamma function, $\u27e8S\u27e9$ is the average spring stiffness, and the parameter $1/k=\\sigma/\u27e8S\u27e9$, with $\\sigma$ being the standard deviation of the distribution, is the coefficient of variation that describes the degree of disorder in the system. The choice of the Gamma-distribution admits a simple parameterisation in terms of the coefficient of variation that allows us to explore a range of different extreme value statistics. For instance, for $k=1$ the Gamma distribution $p\u2062(S;1,\u27e8S\u27e9)$ yields the exponential distribution with intensity $\\lambda=1/\u27e8S\u27e9$, while for\u00a0$k\u226b1$ it yields a normal distribution with mean $\\mu=k\u2062\u27e8S\u27e9$ and variance $\\sigma^{2}=k\u2062\u27e8S\u27e9^{2}$. We distinguish two limiting modes for disorder: lateral (Figure 3c) and longitudinal (Figure 3d). Any realisation of disorder can then be decomposed into a combination of these two limiting modes.\n\n#### Lateral disorder\n\nIn the presence of disorder in $S$, lateral interactions are characterised by variations in $S$ azimuthally but not longitudinally. In this case, whether the MT undergoes catastrophe depends on the breaking of the weakest lateral bond along the circumference of the MT, resulting in a MT that is \u2018cut-open\u2019 along the longitudinal direction (Figure 3c and Appendix 2, Video 3). This situation is fully analogous to what happens when pulling a one-dimensional chain by its ends: the chain will break as soon as its weakest link breaks. The mechanical stability of a MT with lateral disorder is thus equivalent to the mechanical stability of a MT with uniform spring stiffness $\u27e8S_{min}\u27e9$, where $\u27e8S_{min}\u27e9$ denotes the average value of the weakest spring stiffness along the MT circumference. This replacement maps the study of the mechanical stability of a MT with lateral disorder onto a problem of extreme value statistics (Zapperi and Mahadevan, 2011; Bertalan et al., 2014b): the determination of $\u27e8S_{min}\u27e9$ for a system of $N$ independent and identically distributed links with spring constants $S_{1},\u22ef,S_{N}$. In Appendix 2, we show that $\u27e8S_{min}\u27e9$ can be calculated from Equation 14 using extreme-value statistics, yielding:\n\n$$\n\\frac{\u27e8S_{min}\u27e9}{\u27e8S\u27e9}=\\frac{1}{k}\u2062\u0393\u2062(\\frac{k+1}{k})\u2062[\\frac{\u0393\u2062(k+1)}{N}]^{1/k}.\n$$\n\nThe condition for mechanical instability of a MT with lateral disorder in $S$ is thus obtained by replacing $\u27e8S\u27e9$ by $\u27e8S_{min}\u27e9$ in Equation 13, yielding:\n\n$$\n\\alpha=\\frac{\\sqrt{1+\\frac{4\u2062\\beta^{2}}{1-e^{-n/\\gamma}}}-1}{2\u2062\\beta^{2}}\u2062\\sqrt{\\frac{\u27e8S_{min}\u27e9}{\u27e8S\u27e9}}.\n$$\n\nSince $\u27e8S_{min}\u27e9<\u27e8S\u27e9$, Equation 16 predicts that the transition curve between mechanically stable and unstable MT regions shifts towards the instability region. Thus, lateral disorder weakens MTs.\n\n![Video 3.](https://cdn.elifesciences.org/articles/54077/elife-54077-video3.mp4.jpg)\n\n**Video 3.:** This movie illustrates the stability of a MT in the presence of lateral disorder in the spring stiffness $S$, which describes the strength of lateral contacts between PFs. Note that lateral disorder causes the MT to be mechanically unstable along directions with weakest lateral bonds (the MT \u2018cut opens\u2019 along these weak directions). The color code indicates the local value of $S$ for each subunit, which is obtained by averaging over the relative stiffness of its two lateral bonds (drawn from the Gamma-distribution (14) with $k=50$). The simulation parameters are the same as listed in Table 1, except that we set $\u03be=5.8^{\u2218}$ for all tubulin dimers.\n\n#### Longitudinal disorder\n\nA different situation arises when quenched disorder is distributed longitudinally. Here, the strongest lateral bond determines MT stability. In fact, longitudinal disorder leads to the presence of \u2018rings\u2019 of particularly strong bonds that prevent the MT from depolymerising completely (Figure 3d and Appendix 2, Video 4). The mechanical stability of a MT with longitudinal disorder is thus equivalent to that of a MT with uniform spring stiffness $\u27e8S_{max}\u27e9$, where $\u27e8S_{max}\u27e9$ is the expected value of $S$ associated with the strongest lateral bond. Using extreme-value statistics, one finds (see Appendix 2) $\u27e8S_{max}\u27e9/\u27e8S\u27e9=(\\gamma_{e}+log\u2061N)/k$, where $\\gamma_{e}\u22480.5772$ is the Euler-Mascheroni constant (Taloni et al., 2018; Bertalan et al., 2014b; Zapperi and Mahadevan, 2011). Hence, the curve separating mechanically stable and unstable regions in the presence of longitudinal disorder is Zapperi and Mahadevan (2011):\n\n$$\n\\alpha=\\frac{\\sqrt{1+\\frac{4\u2062\\beta^{2}}{1-e^{-n/\\gamma}}}-1}{2\u2062\\beta^{2}}\u2062\\sqrt{\\frac{\u27e8S_{max}\u27e9}{\u27e8S\u27e9}}.\n$$\n\nSince $\u27e8S_{max}\u27e9>\u27e8S\u27e9$, longitudinal disorder in $S$ reinforces MTs.\n\n![Video 4.](https://cdn.elifesciences.org/articles/54077/elife-54077-video4.mp4.jpg)\n\n**Video 4.:** This movie illustrates the stability of a MT in the presence of longitudinal disorder in the spring stiffness $S$. Note that the MT is in this case mechanically more stable than in the presence of lateral disorder. This is because longitudinal disorder leads to the presence of \u2018rings\u2019 of strong bonds that prevent the MT from peeling off completely. The simulation parameters are the same as in\u00a0Video 3.\n\nIt is important to note that longitudinal disorder is the only mode of disorder present in a 1D MT (Zapperi and Mahadevan, 2011). Lateral disorder is thus a defining feature of the 3D geometry of MTs. Our results thus reveal a fundamental role of MT dimensionality: while in a 1D setting quenched disorder stabilises MTs mechanically, in a 3D setting it can destabilise MTs.\n\n#### Comparison with computer simulations\n\nWe have tested the theoretical predictions of Equation 16 and Equation 17 using our coarse-grained simulations (Figure 3c,d). Quenched disorder was realised using Equation 14 with disorder parameter $k=50$. These simulations confirm that longitudinal quenched disorder increases the mechanical stability of MTs (Figure 3c), whereas the effect of quenched disorder in the lateral direction is to destabilise MTs mechanically (Figure 3d).\n\n### Role of GTP-remnants in rescue\n\nUsing our theoretical model of mechanical stability of 3D MTs in the presence of quenched disorder, we are now in the position to investigate the role of remnants of GTP-tubulin in rescue. Rescue refers to the transition from depolymerisation to polymerisation during MT dynamic instability but is still poorly understood (Brouhard, 2015). Experiments indicate that GTP-tubulin addition at the plus end is not critical for rescue (Gardner et al., 2013; Walker et al., 1988), but that the presence of remnants of GTP-tubulin along the MT lattice in so-called \u2018GTP-islands\u2019 can lead to MT rescue (Tropini et al., 2012; Dimitrov et al., 2008; Aumeier et al., 2016; Gardner et al., 2013; Vemu et al., 2018). In particular, experiments in vivo have revealed a strong correlation between rescue probability and the presence of remnants of GTP-tubulin in older parts of the MTs, suggesting that these \u2019GTP-remnants\u2019 can function as rescue sites (Dimitrov et al., 2008). This view was further supported by the observation that the presence of a slowly hydrolyzable analogue of GTP bound to tubulin subunits contributes to MT rescue (Tropini et al., 2012. Aumeier et al., 2016) also demonstrated the possibility to generate GTP-islands along the MT lattice in a controlled manner by means of laser damaging and subsequent repair of the damaged site by incorporation of GTP-tubulin from solution (Schaedel et al., 2015): rescue occurred at laser-damaged sites in the presence of free GTP-tubulin (Aumeier et al., 2016). Separately, recent studies (Vemu et al., 2018; Vemu et al., 2019) reported of a damage-repair mechanism that stabilises MTs mediated by\u00a0the enzymes spastin and katanin. Overall, these studies suggest that disordered GTP-islands in an otherwise structurally periodic lattice are involved in rescue regulation. Since these GTP-remnants are characterised by a random mixture of different states of tubulin, we ask if our framework might help to quantify these observations.\n\n#### Computer simulations\n\nWe first used our coarse-grained simulations to study the role of disordered GTP-remnants in MT rescue. We generated reinforcing islands by inserting, in the middle of a fully hydrolysed, depolymerising MT, a ring consisting of several layers of GTP-tubulin dimers (Figure 4a). We then observed whether the reinforcing GTP-islands were able rescue the depolymerising MTs as a function of two parameters: 1) the length of the GTP-island $N_{rf}$ (defined here as the number of layers in the island) and 2) the fraction $\u03d5$ of GTP-tubulin in the island. The results of these simulations (Video 5) are shown in Figure 4b. Note that the parameter $\u03d5$ controls the amount of disorder present in the island at the level of GTP-hydrolysis. This mimics both the scenario when rescue islands are formed because not all GTP-tubulin is able to hydrolyse, as suggested in Dimitrov et al. (2008), or when rescue islands result from the incorporation of GTP-tubulin during the repair process of a damaged site, as suggested in Aumeier et al. (2016). If disorder varies slowly over time compared to the characteristic timescale of polymerisation/depolymerisation, we can model slow changes of MT mechanical properties by making the relevant mechanical parameters explicit functions of time. For the parameters in our simulation, we find that when the reinforcing island is one layer long ($N_{rf}=1$), the probability of rescue is close to zero, irrespective of the GTP-fraction in the reinforcing island. Interestingly, when $N_{rf}>1$, we observe that rescue probability $p_{rescue}$ increases with $\u03d5$ in a highly nonlinear manner. Specifically, $p_{rescue}$ is either close to zero or close to one for most values of $\u03d5$, with a sharp increase in the transition region.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54077/elife-54077-fig4-v1.jpg)\n\n**Figure 4.:** (a) Schematics showing the rescue of a depolymerising MT reinforced by a disordered GTP-tubulin island. In this example, the length of the reinforcing island is $N_{rf}=3$ and the GTP-island consists of 20 GTP-tubulin dimers, which corresponds to a GTP-fraction of $\u03d5=20/(3\\times13)\u22430.51$ (see Video 5). (b) Simulated rescue probability by GTP-islands as a function of GTP-fraction $\u03d5$ and reinforcing island length $N_{rf}$. The rescue probability $p_{rescue}$ was estimated by repeating simulations six to ten times for each pair $\u03d5$ and $N_{rf}$. (c) Percolation model for the role of disordered reinforcing GTP-islands on MT rescue. (d) Simulated site percolation on a square lattice with dimensions $N_{rf}\\times13$ as a function of GTP-fraction $\u03d5$ and island length $N_{rf}$. The probability of percolation was obtained by averaging over 103 realisations for each pair $\u03d5$ and $N_{rf}$.\n\n![Video 5.](https://cdn.elifesciences.org/articles/54077/elife-54077-video5.mp4.jpg)\n\n**Video 5.:** This movie illustrates the successful rescue of a depolymerising MT by a disordered GTP-island placed along the MT lattice. The mechanical parameters in this case are the same as in Video 1.\n\n#### Percolation model of rescue\n\nTo qualitatively understand the observed nonlinear behaviour of rescue probability with GTP-fraction in the reinforcing island $\u03d5$, we propose a site percolation model of rescue (Figure 4c). Site percolation is concerned with the following question: given a random graph, in which each site is (independently) occupied with probability $q$ or empty with probability $1-q$, what is the probability that a connected path of occupied sites exists between the boundaries of the graph? In our percolation model of rescue, each site of the reinforcing island is occupied by a GTP-tubulin dimer with probability $\u03d5$, while it is occupied by a GDP-tubulin dimer with probability $1-\u03d5$. In Sec. \u2019Role of quenched disorder in mechanical stability of MTs\u2019, we have shown that the presence of randomly distributed weak lateral bonds (mediated by GDP-tubulin) can destabilise MTs mechanically when disorder is longitudinal. As such, a MT will be mechanically unstable when a connecting path of GDP-tubulins runs longitudinally through the reinforcing island (Figure 4c). The question of whether a reinforcing island with GTP-fraction $\u03d5$ is able to rescue a depolymerising MT is thus analogous to site percolation with $q=\u03d5$. The rescue probability $p_{rescue}$ thus relates to $1-p_{perc}$, where $p_{perc}$ is the probability of percolation of a longitudinal path of GDP-tubulin subunits through the length of the reinforcing island. Figure 4d shows that the results of site percolation on a square lattice of dimensions $13\\timesN_{rf}$ with varying $\u03d5$ are in qualitative agreement with simulated rescue probabilities (Figure 4b).\n\n## Discussion\n\nOur multi-scale approach to dynamic instability incorporates the mechanics and 3D geometry of MTs, the kinetics of tubulin addition and GTP-hydrolysis, and quenched disorder in the state of the tubulin subunit. Our results provide a series of phase diagrams for the presence of dynamic instability, revealing the dimensionless mechanical and kinetic parameters controlling the problem. Compared to previous analytic studies of dynamic instability, our results reveal the key role of the 3D geometry of MTs. In particular, we find that the mechanical stability of a MT is strongly affected by its radius (Mahadevan and Mitchison, 2005); a MT with a smaller radius is mechanically less stable than an identical MT with a larger radius.\n\nSince MT radius has been shown to vary because the number $N_{f}$ of PFs composing MTs typically ranges between 9 to 16 (Chr\u00e9tien et al., 1992; Chalfie and Thomson, 1982; Chaaban and Brouhard, 2017; Cueva et al., 2012; D\u00edaz et al., 1998), our study suggests quantitative experimental tests via measurements of catastrophe rates $r_{c}$ as a function of PF number $N_{f}$ to verify the theoretical prediction for the rate of catastrophe $log\u2061(r_{c})\u221d1/N_{f}^{2}$. Another key prediction from our study is that the rescuing power of GTP-islands displays a sharp drop at intermediate values of GTP-fraction. In particular, the percolation model predicts that there is a critical point for the GTP-fraction, $\u03d5=\u03d5_{c}$, below which reinforcing islands lose their ability to rescue MT disassembly. The numerical value of the threshold $\u03d5_{c}$ depends on the thickness of the reinforcing island as well as on the MT lattice structure. This critical GTP-fraction could be determined experimentally and compared to theory by using non-hydrolyzable analogs of tubulin (Tropini et al., 2012), to control the amount of disorder at the level of the state of tubulin subunit in the island, in combination with super-resolution microscopy (Huang et al., 2009) to establish island length. Finally, we note that our assumption of the form of the quenched disorder in terms of the Gamma distribution is just that - an assumption. Further experimental work will be required to solve the inverse problem of estimating the average GTP-fraction in GTP remnants from rescue probabilities determined experimentally (Dimitrov et al., 2008; Aumeier et al., 2016; Vemu et al., 2018)\u00a0to see if we might determine both the form of the disorder and the intrinsic parameters characterising it, thus allowing future research to address the question of how to control dynamic instability.\n",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "fcd1f6da-5dbe-4bd7-a672-5829eac81aa1",
+      "submission_id": "29425caf-c655-47ce-ba20-c3df5a7e2aec",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54077.sa1](https://doi.org/10.7554/eLife.54077.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nOne of the most characteristic features of microtubules is their stochastic growth and shrinkage. The present article provides a microscopic analysis of this process which incorporates the bending elasticity of free ends of filaments that curve away from the microtubule axis along with the effects of disorder in the distribution of hydrolysed tubulin. In bringing together ideas from mechanics and statistical mechanics this work provides new insights into microtubule dynamics.\n\nDecision letter after peer review:\n\n[Editors' note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Mechanics and kinetics of dynamic instability\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Jennifer Ross (Reviewer #1).\n\nBoth reviewers found the work to be interesting and solid, but they raised\n\na number of issues regarding the novelty of the research, its connection with\n\nprevious work, its predictive nature, and its presentation. Based on consultation between the reviewers and editors, we regret to inform you that your work in its present form will not be considered further for publication in eLife. Please see below for the individual reviews. We would in principle be prepared to consider a new submission if the concerns of the reviewers are fully addressed. The paper and the point-by-point rebuttal would then most likely be sent to the same reviewers.\n\nReviewer #1:\n\nThe manuscript \"Mechanics and kinetics of dynamic instability\" from Michaels et al., is a theoretical study of the fundamental causes behind microtubule dynamic instability. The manuscript specifically focuses on the effect of GTP-islands, locations within the lattice where the tubulin has not fully hydrolyzed yet. They use the assumption that the lateral and longitudinal inter-tubulin binding interactions and the conformation of the tubulin dimers both depend on the GTP-hydrolysis state of the tubulin dimer to control the stability of the microtubule structure. Overall, I found the model to be clear (although laced with too much undefined physics jargon) and interesting.\n\nThe positive aspects of the manuscript are:\n\n1) The model is based on prior experimental and theoretical results that all seem reasonable.\n\n2) They bring in the concept of frozen-in (quenched) states where the GTP-hydrolysis is stuck in some state to allow the presence of GTP-islands that have been experimentally observed.\n\n3) They also use the concept of percolation (connectedness) of these stable sites to understand why the phase change from growth to shrinkage would be so dramatically sensitive to the size and shape of the GTP-island.\n\nSome problematic aspects of the manuscript:\n\n1) The model put forward is fairly derivative as it is based on prior theory and models. It is entirely possible that I am mistaken, but if so, the authors should explain the novelty of their model, which is not well-explained. What does this model bring to the table that prior models have not? This will help readers and people who might want to use it know when it would be appropriate to use or compare to their experiments.\n\n2) The model suggests at the end that it could make predictions, but it actually fails to make those predictions. Actual, specific predictions would make the manuscript far more useful to experimentalists. For instance, what if you have a 9-protofilament microtubule? How sensitive is it to protofilament number? Can it tell the difference between 9 and 10 protofilament microtubules? In the same field of view?\n\n3) The model does not explain some important aspects of dynamic instability. Specifically, it does not explain the switch from growing phase to shrinkage phase. Or if it does, that was not articulated well. It does a better job of explaining rescue, but with the limitation that the GTP-islands are frozen states. Although it is nice to confirm that this is true with a model, the model is not as realistic as it should be because it is unlikely that the GTP-islands are actually frozen-in. More likely, there is a rate of GTP turn-over that is statistical and probabilistic, so the locations of the islands are dynamic and tend to break the connectedness (percolation) as time proceeds. I understand the importance of initial toy models, but this model, especially given the inarticulation of specific predictions, could do so much more.Reviewer #2:The manuscript by Michaels and coauthors develops theory and simulations of the dynamic instability of microtubules. The authors use two approaches: (1) a coarse-grained simulation model of a tubulin dimer with variable curvature and interacting patches to represent lateral and longitudinal interactions and (2) a continuum mechanical model of a microtubule as an elastic sheet. The authors use these models to show several results. First, they demonstrate that stronger lateral interactions and lower longitudinal interactions stabilize microtubules (favor growing over shrinking). Second, they introduce, without physical motivation, random variation in the spring constant of longitudinal and lateral interactions, and show that random variation of lateral interactions destabilizes microtubules (as expected, because breaking of lateral bonds is required for shrinking), but random weakening of longitudinal interactions strengthens microtubules (again as expected, because a single strong ring can keep the microtubule together). Third, the authors consider how hypothesized GTP islands could allow rescue, by introducing into the model GTP islands with varying properties into their simulations and studying the rescue probability. They find that the GTP island length and the GTP fraction of dimers in the island must be high enough for GTP tubulin to percolate the island to achieve a high probability of rescue.\n\nWhile this paper is technically sound, in my opinion it does not meet the novelty standard of eLife. The results are exactly what one would intuitively expect, so the paper reads as using mathematics to demonstrate previously expected results on dynamic instability. The nature of the modeling and the results obtained are similar to many previously found. Previous related work is not cited, including Zakharov et al., 2015. In particular, the model in this manuscript is quite similar to that of Zakharov et al., so what new insight is gained from the current work is unclear.\n\nAdditionally, this manuscript does not cite recent work suggesting that tubulin dimers and protofilaments have intrinsic curvature in the GTP-bound state, which would change the nature of the model and possibly the conclusions.\n\nIn addition, the authors have not made sufficient effort to use language consistent with that used in the field, or to explain technical terms from other fields. For examples, the authors refer to the rams' horns of shrinking MTs as a flower-like shape. Similarly, the authors use the term quenched disorder without explaining clearly that it simply means random variation in a property of the model, which will confuse readers who are not already familiar with the condensed-matter usage of quenched disorder.\n\nTherefore I recommend that the paper be published in a more specialized journal (such as the Biophysical Journal, which would be a good fit for this paper) and significantly rewrite the paper to clarify the presentation and the connection to previous work.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Mechanics and kinetics of dynamic instability\" for consideration by eLife. Your revised article has been reviewed by\n\none of the original reviewers, and the evaluation has been overseen by a Reviewing Editor and Detlef Weigel as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Jennifer Ross (Reviewer #1).\n\nAs you can see from the review below, there are only minor changes needed to the manuscript in order for it to be acceptable for publication. Please make these at your earliest convenience.\n\nReviewer #1:\n\nThe manuscript \"Mechanics and Kinetics of Dynamics Instability\" by Michaels, et al., is a revision of a prior submission to eLife. The goal of the manuscript is to understand the mechanisms of dynamic instability of the 3D model. After having read the new version and the response to reviews, I feel the manuscript is a good contribution to the literature. In particular, I would like to commend the authors on their ability to communicate the physical concepts in much clearer terms. It is clear that they spent time and effort to make the manuscript more accessible. In so doing, they made the manuscript more impactful. It was well-worth the effort. Thank you also for clarifying the predictions of this model.\n\nThe authors state that, \"MT growth\u2026 is powered by the hydrolysis of GTP.\" This is not true. Dynamic instability is powered by GTP hydrolysis, since the hydrolysis is required for depolymerization, but growth simply needs the GTP binding \u2013 not hydrolysis. Perhaps this sentence, which is a compound sentence, meant something else, when it said, \"'it' is powered by the hydrolysis of GTP.\" Whatever, the way it reads currently is that the authors are stating that growth is powered by GTP hydrolysis, which is opposite to currently accepted mechanisms.\n",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "042bf97a-e060-4359-815b-aa498dd41be3",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C1",
+      "claim": "Microtubules (MTs) are polar tubular polymers formed by the self-assembly of the protein tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules (MTs) are polar tubular polymers formed by the self-assembly of the protein tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the introduction describing the basic nature of microtubules, supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "31901090-f353-48cc-9dab-5c3acd75010d",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C2",
+      "claim": "MTs are ubiquitous in eukaryotic cells, where they are a major component of the cellular cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "MTs are ubiquitous in eukaryotic cells, where they are a major component of the cellular cytoskeleton, and participate in a number of essential cellular functions, such as cell migration, morphogenesis, transport within cells and cell division (Desai, 1997; Gupta et al., 2015; Huber et al., 2013; Fletcher and Mullins, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "548771f2-f766-4a05-b619-122e57923926",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C3",
+      "claim": "MTs participate in essential cellular functions such as cell migration, morphogenesis, transport within cells and cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "MTs are ubiquitous in eukaryotic cells, where they are a major component of the cellular cytoskeleton, and participate in a number of essential cellular functions, such as cell migration, morphogenesis, transport within cells and cell division (Desai, 1997; Gupta et al., 2015; Huber et al., 2013; Fletcher and Mullins, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple research papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "059ac46c-c43d-40bd-92bf-021f5292f094",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C4",
+      "claim": "MTs are involved in regulating the shape and dynamics of axons, cilia and flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "They are also involved in regulating the shape and dynamics of axons, cilia and flagella (Mimori-Kiyosue, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "e6548e03-9240-4c8c-9336-4af542545948",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C5",
+      "claim": "The basic building blocks of MTs are tubulin heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic building blocks of MTs are tubulin heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing the fundamental structural unit of microtubules, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "c68d43b4-83b6-429d-8c75-47e181670723",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C6",
+      "claim": "Tubulin heterodimers are formed by \u03b1-tubulin and \u03b2-tubulin, two structurally similar globular proteins with mass of about 55 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "These are formed by \u03b1-tubulin and \u03b2-tubulin, two structurally similar globular proteins with mass of about 55 kDa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement providing structural and physical characteristics of tubulin proteins, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "677c77b4-9102-498e-ad4c-27b7875c4448",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C7",
+      "claim": "\u03b1\u03b2-tubulin dimers are arranged longitudinally into flexible tubulin filaments called protofilaments (PFs).",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1\u03b2-tubulin dimers are arranged longitudinally into flexible tubulin filaments called protofilaments (PFs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing the arrangement of tubulin dimers, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "e9c514f4-d669-43c0-87ac-c90bd8cb87ec",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C8",
+      "claim": "A number (between 9 and 16, typically 13) of protofilaments assembles by lateral interactions to form the MT lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "A number (between 9 and 16, typically 13) of such PFs then assembles by lateral interactions to form the MT lattice (Mandelkow et al., 1986; Chr\u00e9tien and Wade, 1991; Mitchison, 1993; Tilney et al., 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "7a0271df-67e0-4fb7-b868-c57f2ba19149",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C10",
+      "claim": "Upon hydrolysis of GTP, tubulin subunits undergo a structural conversion that weakens lateral bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon hydrolysis of guanosine-tri-phosphate (GTP), tubulin subunits undergo a structural conversion that weakens lateral bonds, destabilises the subunit in the MT lattice and converts the relatively straight tubulin state into a state that is bound to guanosine-di-phosphate (GDP) and is characterised by an increased longitudinal curvature (Wang and Nogales, 2005; Alushin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "17bb6827-e659-4232-b0d2-a1ae17463668",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C11",
+      "claim": "GTP hydrolysis destabilises the tubulin subunit in the MT lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon hydrolysis of guanosine-tri-phosphate (GTP), tubulin subunits undergo a structural conversion that weakens lateral bonds, destabilises the subunit in the MT lattice and converts the relatively straight tubulin state into a state that is bound to guanosine-di-phosphate (GDP) and is characterised by an increased longitudinal curvature (Wang and Nogales, 2005; Alushin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "32db8515-8a62-4ed6-ac01-73e9a1270e0a",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C12",
+      "claim": "GTP hydrolysis converts the relatively straight tubulin state into a GDP-bound state characterised by an increased longitudinal curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon hydrolysis of guanosine-tri-phosphate (GTP), tubulin subunits undergo a structural conversion that weakens lateral bonds, destabilises the subunit in the MT lattice and converts the relatively straight tubulin state into a state that is bound to guanosine-di-phosphate (GDP) and is characterised by an increased longitudinal curvature (Wang and Nogales, 2005; Alushin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "c456aa43-24e7-48f5-b031-468329479289",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C13",
+      "claim": "MTs can repeatedly and stochastically vary their length by undergoing alternating phases of assembly and disassembly both in vivo and in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "MTs are not static assemblies. They can repeatedly and stochastically vary their length by undergoing alternating phases of assembly and disassembly both in vivo and in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing the dynamic behavior of microtubules, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "10b5f8d5-4d3f-47d2-a99c-6f2457fc2650",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C14",
+      "claim": "The phenomenon of MTs repeatedly and stochastically varying their length is termed 'dynamic instability'.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon is termed 'dynamic instability' and it is essential to a number of cellular functions, such as chromosome separation, the remodelling of spatial organisation of the cytoskeleton during mitosis or the exploration of extracellular environment (Mitchison and Kirschner, 1984; Gildersleeve et al., 1992; Cassimeris et al., 1988; Sammak and Borisy, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "25d7cf1f-d42f-40dd-aff7-c56fc216c13a",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C15",
+      "claim": "Dynamic instability is essential to cellular functions such as chromosome separation, remodelling of spatial organisation of the cytoskeleton during mitosis, and exploration of extracellular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon is termed 'dynamic instability' and it is essential to a number of cellular functions, such as chromosome separation, the remodelling of spatial organisation of the cytoskeleton during mitosis or the exploration of extracellular environment (Mitchison and Kirschner, 1984; Gildersleeve et al., 1992; Cassimeris et al., 1988; Sammak and Borisy, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "e4dfb48c-d648-4d1a-8f24-b0dc6464b349",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C16",
+      "claim": "Understanding the factors that regulate MT dynamic instability is central to cell physiology and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding the factors that regulate MT dynamic instability is central to cell physiology and disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the importance of understanding dynamic instability, based on inference from the role of MTs in cellular functions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "363e4fe7-fe59-4de4-8388-6616a74ebd20",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C17",
+      "claim": "A detailed understanding of dynamic instability still remains elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet a detailed understanding of dynamic instability still remains elusive (Aher and Akhmanova, 2018; Hemmat et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "3a481be8-bf03-45b5-8a48-1df85287481a",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C18",
+      "claim": "The difficulty in understanding dynamic instability originates in part from the fact that it results from several mechanical and kinetic aspects operating at multiple time and length scales.",
+      "claim_type": "EXPLICIT",
+      "source": "This difficulty originates in part from the fact that dynamic instability is the result of several mechanical and kinetic aspects operating at multiple time and length scales (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 1 which illustrates the multiple scales involved.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "86ba5437-4d47-41b6-b928-90e0b8de0227",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C19",
+      "claim": "Both \u03b1-tubulin and \u03b2-tubulin are bound to GTP, but only the GTP that is bound to \u03b2-tubulin is hydrolysable.",
+      "claim_type": "EXPLICIT",
+      "source": "Both \u03b1-tubulin and \u03b2-tubulin are bound to GTP, but only the GTP that is bound to a \u03b2-tubulin is hydrolysable (Nogales et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "97ef2d3f-d060-45b0-b16b-84c2e29bffca",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C20",
+      "claim": "When the tubulin dimer is part of the MT lattice, GTP hydrolysis increases the spontaneous longitudinal curvature along the dimer axis.",
+      "claim_type": "EXPLICIT",
+      "source": "When the tubulin dimer is part of the MT lattice, GTP hydrolysis increases the spontaneous longitudinal curvature along the dimer axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing the effect of GTP hydrolysis on tubulin structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "b955e2c4-77fa-4f2b-a95d-af132e91f2fc",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C21",
+      "claim": "GTP hydrolysis causes GDP-tubulin dimers to be less tightly bound in the MT lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "This causes GDP-tubulin dimers to be less tightly bound in the MT lattice (Wang and Nogales, 2005; Alushin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "e784dbd4-df75-4a55-9083-8c7d7a2e5fca",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C22",
+      "claim": "Typically, 13 protofilaments align laterally to form the MT lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, 13 such PFs align laterally to form the MT lattice, which is a long and hollow cylindrical shell with an outer diameter of approximately 25 nm and a thickness of about 5 nm (Mandelkow et al., 1986; Chr\u00e9tien and Wade, 1991; Mitchison, 1993; Tilney et al., 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "a8529c5e-da98-453c-b144-4159334a4b7d",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C23",
+      "claim": "The MT lattice is a long and hollow cylindrical shell with an outer diameter of approximately 25 nm and a thickness of about 5 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, 13 such PFs align laterally to form the MT lattice, which is a long and hollow cylindrical shell with an outer diameter of approximately 25 nm and a thickness of about 5 nm (Mandelkow et al., 1986; Chr\u00e9tien and Wade, 1991; Mitchison, 1993; Tilney et al., 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "1b01de1c-d317-426b-9847-3e6136e7aaf6",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C24",
+      "claim": "The mechanical stability/instability of the MT tube structure results from a competition between lateral and longitudinal curvatures.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanical stability/instability of the MT tube structure results from a competition between lateral and longitudinal curvatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing the mechanical basis of MT stability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "d463cc7c-5ca4-484a-9c03-2cd4463098ae",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C25",
+      "claim": "MTs made of GTP-tubulin are relatively straight (about 5\u00b0 per subunit).",
+      "claim_type": "EXPLICIT",
+      "source": "While MTs made of GTP-tubulin are relatively straight (about 5\u00b0 per subunit), MTs made of GDP-tubulin tend to curve outward longitudinally at the plus end due to the longitudinal spontaneous curvature of GDP-tubulin dimers (about 12\u00b0 per subunit) (Chr\u00e9tien et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "0c23c1ae-b530-4cb6-8032-d2c9d76ebb46",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C26",
+      "claim": "MTs made of GDP-tubulin tend to curve outward longitudinally at the plus end due to the longitudinal spontaneous curvature of GDP-tubulin dimers (about 12\u00b0 per subunit).",
+      "claim_type": "EXPLICIT",
+      "source": "While MTs made of GTP-tubulin are relatively straight (about 5\u00b0 per subunit), MTs made of GDP-tubulin tend to curve outward longitudinally at the plus end due to the longitudinal spontaneous curvature of GDP-tubulin dimers (about 12\u00b0 per subunit) (Chr\u00e9tien et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "6f2eb259-ce5d-4ef5-83bd-a40df578874b",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C27",
+      "claim": "MTs consisting of GDP-tubulin (hydrolyzed MTs) tend to be mechanically less stable than their non-hydrolysed counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, MTs consisting of GDP-tubulin (hydrolyzed MTs) tend to be mechanically less stable that their non-hydrolysed counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement inferring mechanical stability from structural properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "13937096-b34c-4d1d-a3df-a5a8d517d4b1",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C28",
+      "claim": "The study uses a combination of analysis and computer simulations to study the mechanical and kinetic regulation of dynamic instability in three-dimensional (3D) self-assembling MTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use a combination of analysis and computer simulations to study the mechanical and kinetic regulation of dynamic instability in three-dimensional (3D) self-assembling MTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract describing the methodology of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "97f55f05-c902-4a9a-b9d8-6f7da2da629f",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C29",
+      "claim": "The model quantifies how the 3D structure and kinetics of the distinct states of tubulin dimers determine the mechanical stability of MTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model quantifies how the 3D structure and kinetics of the distinct states of tubulin dimers determine the mechanical stability of MTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract describing the findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "5cac9801-18ab-46a9-8206-9f4bcbb28147",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C30",
+      "claim": "Dynamic instability is influenced by the presence of quenched disorder in the state of the tubulin subunit as reflected in the fraction of non-hydrolysed tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that dynamic instability is influenced by the presence of quenched disorder in the state of the tubulin subunit as reflected in the fraction of non-hydrolysed tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract describing a finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "09cb34a8-4430-4b8c-8445-a9a9543a68d0",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C31",
+      "claim": "The results connect the 3D geometry, kinetics and statistical mechanics of these tubular assemblies within a single framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results connect the 3D geometry, kinetics and statistical mechanics of these tubular assemblies within a single framework, and may be applicable to other self-assembled systems where these same processes are at play.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract describing the contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "b28fc713-db9f-4de6-ac77-0f0f33a41237",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C32",
+      "claim": "The framework may be applicable to other self-assembled systems where geometry, kinetics and statistical mechanics are at play.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results connect the 3D geometry, kinetics and statistical mechanics of these tubular assemblies within a single framework, and may be applicable to other self-assembled systems where these same processes are at play.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential applicability of the framework.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "63f6261f-a47c-45c2-b485-d20c901d0095",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C33",
+      "claim": "MTs exist as individual polymers with persistence lengths in the O(mm) range, which is much larger than the typical length of MTs (\u00b5m range).",
+      "claim_type": "EXPLICIT",
+      "source": "The starting point of our mechanical model is that MTs exist as individual polymers with persistence lengths in the O(mm) range, which is much larger than the typical length of MTs (\u00b5m range) (Fletcher and Mullins, 2010; Huber et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "43dd2a17-b18d-4cfa-ae00-49d9cb366374",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C34",
+      "claim": "MTs can be considered to have a well-defined shape that is not affected significantly by thermal fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that MTs can be considered to have a well-defined shape that is not affected significantly by thermal fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the large persistence length of MTs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "4af7d406-c282-432c-a3d2-4add5b69e5a5",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C35",
+      "claim": "Lateral bonds between tubulin dimers are considerably weaker than longitudinal ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, previous studies indicate that lateral bonds between tubulin dimers are considerably weaker than longitudinal ones (VanBuren et al., 2002; VanBuren et al., 2005; Molodtsov et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "b757b28d-c170-4d03-b85c-b86f19c80a31",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C37",
+      "claim": "Tubulin dimers that are part of the MT lattice have different mechanical properties depending on their hydrolysis state.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies (Wang and Nogales, 2005; Alushin et al., 2014) suggest that tubulin dimers that are part of the MT lattice have different mechanical properties depending on their hydrolysis state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "ecdf07ef-76cb-4002-8359-8f03a4af359b",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C38",
+      "claim": "Upon hydrolysis the tubulin dimer undergoes a structural transformation from a relatively straight state to a state with finite curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, upon hydrolysis the tubulin dimer undergoes a structural transformation from a relatively straight state to a state with finite curvature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing the structural change upon hydrolysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "d5a457fc-8901-4de1-9734-3a5270483d5c",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C39",
+      "claim": "In a 3D setting, the tubulin dimer can be curved both in the longitudinal direction and in the lateral direction.",
+      "claim_type": "EXPLICIT",
+      "source": "In a 3D setting, the tubulin dimer can be curved both in the longitudinal direction and in the lateral direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing the geometry of tubulin dimers in 3D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "0e7f8cf7-b7a4-48e4-9df4-13dfcfe9f927",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C43",
+      "claim": "There are two contributions to elastic energy: curvature energy associated with the bending of PFs, and stretching energy of the springs connecting neighbouring PFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual PFs can bend, but are also constrained by inter-filament interactions, so that there are two contributions to elastic energy: (i) curvature energy associated with the bending of PFs, (ii) stretching energy of the springs connecting neighbouring PFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing the components of the elastic energy model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "eeb7a632-9836-4a38-9600-51e545ae99eb",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C44",
+      "claim": "The minimum energy configuration results from a competition between bending energy, which favours a natural curved MT state, and elastic spring energy, which favours a straight cylindrical MT configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "The minimum energy configuration results from a competition between bending energy, which favours a natural curved MT state, and elastic spring energy, which favours a straight cylindrical MT configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing the energy balance in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "23a61b2a-3e4e-4d2d-b3f9-0f9320cc029a",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C46",
+      "claim": "The parameter \u03b1 describes the effect of longitudinal curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "The first parameter \u03b1 describes the effect of longitudinal curvature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing the meaning of the parameter \u03b1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "348b7c48-13e8-4a74-969e-2465cf44685a",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C47",
+      "claim": "The parameter \u03b2 pertains to lateral curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "The second parameter \u03b2 pertains to lateral curvature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing the meaning of the parameter \u03b2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "c5dd22b0-d346-41de-b1d5-5addd55ee53b",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C52",
+      "claim": "MTs with smaller radius are mechanically less stable than MTs with larger radius.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results suggest that MTs with smaller radius are mechanically less stable than MTs with larger radius, consistent with the intuition that increasing azimuthal curvature increases the mechanical strain on the MT and thus makes it more likely to fracture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing a conclusion from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "bc80a9db-33e8-4adb-99d7-81f833882f1b",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C53",
+      "claim": "Increasing the rate of MT growth over hydrolysis acts to stabilise MTs mechanically.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, increasing the rate of MT growth over hydrolysis acts to stabilise MTs mechanically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing a result from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "ff46c436-03d4-499e-8a30-902aa43b32bd",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C55",
+      "claim": "In the mechanically unstable phase, hydrolysis is faster than subunit addition at the plus end.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mechanically unstable phase, hydrolysis is faster than subunit addition at the plus end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing a result from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "59a44a22-5621-4cab-bddf-f7cdb9c3448b",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C56",
+      "claim": "In the mechanically unstable phase, the 'hydrolysis front' takes over the 'growth front', which destabilises MTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the 'hydrolysis front' takes over the 'growth front', which destabilises MTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing a result from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "c58eb84d-6ab7-4634-908f-8777ec4a3082",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C57",
+      "claim": "In the mechanically unstable phase, the PFs curve outward near the plus end, leading to a characteristic morphology of depolymerising MTs that resembles rams' horns.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the PFs curve outward near the plus end, leading to a characteristic morphology of depolymerising MTs that resembles rams' horns (VanBuren et al., 2005) (see Appendix 2, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement describing a result from the model, with a citation and reference to a video.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "e3b2db92-21f7-4de6-8e7c-f8c1bc52fa11",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C58",
+      "claim": "The transition curve separating fast and slow hydrolysis regimes depends on both the longitudinal and lateral curvatures of the MT.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition curve separating these fast and slow hydrolysis regimes depends on both the longitudinal and lateral curvatures of the MT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing a result from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "5af16e13-4f76-468a-a58f-bb49a5c64a06",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C60",
+      "claim": "Quenched disorder describes the general situation when certain parameters in the system become random variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Quenched disorder describes the general situation when certain parameters in the system become random variables; disorder can be considered to be 'quenched' when the probability distribution of parameter values either does not vary with time or it varies with time slowly compared to some underlying fast dynamics, and thus cannot be described solely using equilibrium statistical mechanics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement defining quenched disorder.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "f28293d3-959d-45b6-a298-ebf20d7a89ca",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C61",
+      "claim": "In the context of MTs, a separation of timescales emerges naturally when comparing fast polymerization/depolymerization kinetics and the comparatively slower GTP turn-over.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of MTs, such a separation of timescales emerges very naturally when comparing fast polymerization/depolymerization kinetics and the comparatively slower GTP turn-over.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing the relevance of quenched disorder to MTs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "d3e7e11a-bfb5-48aa-aef8-eb1fc0e4ed15",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C63",
+      "claim": "Mechanical forces can influence the rates of chemical reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying motivation for this choice is that mechanical forces can influence the rates of chemical reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "11f91047-c182-47b8-b375-a0c6f337dc2c",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C64",
+      "claim": "Mechanical work contributes to the free energy, which in turn determines the rates of a chemical reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mechanical work contributes to the free energy, which in turn determines the rates of a chemical reaction (Howard, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "19b53b90-c7df-4370-9e96-2fc9318b5421",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C65",
+      "claim": "GDP-tubulins within the MT lattice experience mechanical stresses due to the strong curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "In our context, GDP-tubulins within the MT lattice experience mechanical stresses due to the strong curvature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing a consequence of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "b708b840-33b0-4c59-bc5e-2e953eea60ca",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C66",
+      "claim": "Mechanical stresses can shift the polymerisation-depolymerisation equilibrium and favour free monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "These mechanical stresses can shift the polymerisation-depolymerisation equilibrium and favour free monomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing a consequence of mechanical stress.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "0107805d-6362-457e-8a49-2d13bf82a7ab",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C67",
+      "claim": "GDP-tubulins are less tightly bound to MTs than GTP-tubulins.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the idea that GDP-tubulins are less tightly bound to MTs than GTP-tubulins (Wang and Nogales, 2005; Alushin et al., 2014), even if the chemical bonds are identical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "fde6651e-7b21-4312-9987-191f890e893a",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C71",
+      "claim": "Longitudinal disorder leads to the presence of 'rings' of particularly strong bonds that prevent the MT from depolymerising completely.",
+      "claim_type": "EXPLICIT",
+      "source": "A different situation arises when quenched disorder is distributed longitudinally. Here, the strongest lateral bond determines MT stability. In fact, longitudinal disorder leads to the presence of 'rings' of particularly strong bonds that prevent the MT from depolymerising completely (Figure 3d and Appendix 2, Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement describing a result from the model, with reference to Figure 3d and Video 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "0a96264a-a147-447f-b5bb-4f529720847a",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C74",
+      "claim": "Longitudinal disorder is the only mode of disorder present in a 1D MT.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that longitudinal disorder is the only mode of disorder present in a 1D MT (Zapperi and Mahadevan, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "12583de2-2a4b-4fa5-95af-c4d6ddc11c01",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C75",
+      "claim": "Lateral disorder is a defining feature of the 3D geometry of MTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Lateral disorder is thus a defining feature of the 3D geometry of MTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing a conclusion from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "eda100e8-7138-47d2-8d10-20ca447b1ff0",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C76",
+      "claim": "In a 1D setting quenched disorder stabilises MTs mechanically, while in a 3D setting it can destabilise MTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus reveal a fundamental role of MT dimensionality: while in a 1D setting quenched disorder stabilises MTs mechanically, in a 3D setting it can destabilise MTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing a key finding of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "2d9a18a7-c9c5-4e2e-ac61-3876419b5c24",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C77",
+      "claim": "Computer simulations confirm that longitudinal quenched disorder increases the mechanical stability of MTs.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations confirm that longitudinal quenched disorder increases the mechanical stability of MTs (Figure 3c), whereas the effect of quenched disorder in the lateral direction is to destabilise MTs mechanically (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement describing simulation results, with reference to Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "5401de76-649c-47a9-b48d-2be74f33ec9c",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C78",
+      "claim": "Computer simulations confirm that quenched disorder in the lateral direction destabilises MTs mechanically.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations confirm that longitudinal quenched disorder increases the mechanical stability of MTs (Figure 3c), whereas the effect of quenched disorder in the lateral direction is to destabilise MTs mechanically (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement describing simulation results, with reference to Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "68da6eb9-f84d-4a5f-a023-a9f79472df41",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C79",
+      "claim": "Rescue refers to the transition from depolymerisation to polymerisation during MT dynamic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescue refers to the transition from depolymerisation to polymerisation during MT dynamic instability but is still poorly understood (Brouhard, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement defining rescue, with a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "ecb07e9b-8049-47e4-ac57-acbf6ba1d90d",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C80",
+      "claim": "GTP-tubulin addition at the plus end is not critical for rescue.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments indicate that GTP-tubulin addition at the plus end is not critical for rescue (Gardner et al., 2013; Walker et al., 1988), but that the presence of remnants of GTP-tubulin along the MT lattice in so-called 'GTP-islands' can lead to MT rescue (Tropini et al., 2012; Dimitrov et al., 2008; Aumeier et al., 2016; Gardner et al., 2013; Vemu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "27d88d82-25ac-4456-acfc-f03076a2d81b",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C81",
+      "claim": "The presence of remnants of GTP-tubulin along the MT lattice in 'GTP-islands' can lead to MT rescue.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments indicate that GTP-tubulin addition at the plus end is not critical for rescue (Gardner et al., 2013; Walker et al., 1988), but that the presence of remnants of GTP-tubulin along the MT lattice in so-called 'GTP-islands' can lead to MT rescue (Tropini et al., 2012; Dimitrov et al., 2008; Aumeier et al., 2016; Gardner et al., 2013; Vemu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "990aea47-0d8e-4838-bd00-eb7627aba737",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C82",
+      "claim": "Experiments in vivo have revealed a strong correlation between rescue probability and the presence of remnants of GTP-tubulin in older parts of the MTs.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, experiments in vivo have revealed a strong correlation between rescue probability and the presence of remnants of GTP-tubulin in older parts of the MTs, suggesting that these 'GTP-remnants' can function as rescue sites (Dimitrov et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "f795add8-1afc-4c45-a64a-dedb8ee3c90c",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C83",
+      "claim": "GTP-remnants can function as rescue sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, experiments in vivo have revealed a strong correlation between rescue probability and the presence of remnants of GTP-tubulin in older parts of the MTs, suggesting that these 'GTP-remnants' can function as rescue sites (Dimitrov et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "555eff25-944c-4369-9314-01a5b42738d3",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C84",
+      "claim": "The presence of a slowly hydrolyzable analogue of GTP bound to tubulin subunits contributes to MT rescue.",
+      "claim_type": "EXPLICIT",
+      "source": "This view was further supported by the observation that the presence of a slowly hydrolyzable analogue of GTP bound to tubulin subunits contributes to MT rescue (Tropini et al., 2012.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "616e481f-1a31-46a1-9880-62e8375ce978",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C85",
+      "claim": "It is possible to generate GTP-islands along the MT lattice in a controlled manner by means of laser damaging and subsequent repair of the damaged site by incorporation of GTP-tubulin from solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Aumeier et al., 2016) also demonstrated the possibility to generate GTP-islands along the MT lattice in a controlled manner by means of laser damaging and subsequent repair of the damaged site by incorporation of GTP-tubulin from solution (Schaedel et al., 2015): rescue occurred at laser-damaged sites in the presence of free GTP-tubulin (Aumeier et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "ca5376e1-8857-4418-b2ed-eed755d347d6",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C86",
+      "claim": "Rescue occurred at laser-damaged sites in the presence of free GTP-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Aumeier et al., 2016) also demonstrated the possibility to generate GTP-islands along the MT lattice in a controlled manner by means of laser damaging and subsequent repair of the damaged site by incorporation of GTP-tubulin from solution (Schaedel et al., 2015): rescue occurred at laser-damaged sites in the presence of free GTP-tubulin (Aumeier et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "be0a726f-fa19-4c41-bf92-842e94734520",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C87",
+      "claim": "Recent studies reported of a damage-repair mechanism that stabilises MTs mediated by the enzymes spastin and katanin.",
+      "claim_type": "EXPLICIT",
+      "source": "Separately, recent studies (Vemu et al., 2018; Vemu et al., 2019) reported of a damage-repair mechanism that stabilises MTs mediated by the enzymes spastin and katanin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "2b3b14b5-4637-4c82-8e22-3edc9def706a",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C88",
+      "claim": "Disordered GTP-islands in an otherwise structurally periodic lattice are involved in rescue regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these studies suggest that disordered GTP-islands in an otherwise structurally periodic lattice are involved in rescue regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement summarizing findings from prior research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "58ae3274-a12d-4ec9-a626-e3cf09427a62",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C92",
+      "claim": "A MT will be mechanically unstable when a connecting path of GDP-tubulins runs longitudinally through the reinforcing island.",
+      "claim_type": "EXPLICIT",
+      "source": "In Sec. 'Role of quenched disorder in mechanical stability of MTs', we have shown that the presence of randomly distributed weak lateral bonds (mediated by GDP-tubulin) can destabilise MTs mechanically when disorder is longitudinal. As such, a MT will be mechanically unstable when a connecting path of GDP-tubulins runs longitudinally through the reinforcing island (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement describing a result from the model, with reference to Figure 4c.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "88c2b42e-958e-42dd-8734-da05bbd296d4",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C95",
+      "claim": "The mechanical stability of a MT is strongly affected by its radius.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to previous analytic studies of dynamic instability, our results reveal the key role of the 3D geometry of MTs. In particular, we find that the mechanical stability of a MT is strongly affected by its radius (Mahadevan and Mitchison, 2005); a MT with a smaller radius is mechanically less stable than an identical MT with a larger radius.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing a key finding of the study, with a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "a0841aa1-85e8-4426-a4b0-a21104366164",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C96",
+      "claim": "A MT with a smaller radius is mechanically less stable than an identical MT with a larger radius.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to previous analytic studies of dynamic instability, our results reveal the key role of the 3D geometry of MTs. In particular, we find that the mechanical stability of a MT is strongly affected by its radius (Mahadevan and Mitchison, 2005); a MT with a smaller radius is mechanically less stable than an identical MT with a larger radius.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing a key finding of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "9cba55e0-1c05-4650-9d15-9dbf77d19113",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C99",
+      "claim": "The rescuing power of GTP-islands displays a sharp drop at intermediate values of GTP-fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Another key prediction from our study is that the rescuing power of GTP-islands displays a sharp drop at intermediate values of GTP-fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing a key prediction of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "fb0761af-2336-4f12-abda-4dcdd692c59a",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C102",
+      "claim": "The critical GTP-fraction could be determined experimentally and compared to theory by using non-hydrolyzable analogs of tubulin to control the amount of disorder at the level of the state of tubulin subunit in the island, in combination with super-resolution microscopy to establish island length.",
+      "claim_type": "EXPLICIT",
+      "source": "This critical GTP-fraction could be determined experimentally and compared to theory by using non-hydrolyzable analogs of tubulin (Tropini et al., 2012), to control the amount of disorder at the level of the state of tubulin subunit in the island, in combination with super-resolution microscopy (Huang et al., 2009) to establish island length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement proposing an experimental approach to test the model's predictions, with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "123eea36-fceb-4942-b315-c9a4f83ad832",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C103",
+      "claim": "The assumption of the form of the quenched disorder in terms of the Gamma distribution is an assumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we note that our assumption of the form of the quenched disorder in terms of the Gamma distribution is just that - an assumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement acknowledging a limitation of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "568050f3-a64f-4855-933e-dec2905cd388",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "claim_id": "C104",
+      "claim": "Further experimental work will be required to solve the inverse problem of estimating the average GTP-fraction in GTP remnants from rescue probabilities determined experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Further experimental work will be required to solve the inverse problem of estimating the average GTP-fraction in GTP remnants from rescue probabilities determined experimentally (Dimitrov et al., 2008; Aumeier et al., 2016; Vemu et al., 2018) to see if we might determine both the form of the disorder and the intrinsic parameters characterising it, thus allowing future research to address the question of how to control dynamic instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement proposing future research directions, with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7af375a4-b298-48c5-b6e7-d59d856b63d1",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Microtubules are polar tubular polymers composed of tubulin heterodimers arranged into protofilaments that assemble laterally to form the MT lattice. MTs are ubiquitous in eukaryotic cells and participate in essential cellular functions including cell migration, morphogenesis, intracellular transport, cell division, and regulation of axons, cilia, and flagella.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide well-established background information about MT structure and function, all supported by appropriate citations to prior research (C2, C3, C4, C8) or established knowledge (C1, C5, C6, C7). This represents standard textbook knowledge about microtubules.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "503699e9-5eed-4d6c-b261-3bb4ea55c8b6",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GTP hydrolysis causes tubulin dimers to undergo structural conversion from a relatively straight state (~5\u00b0 per subunit) to a GDP-bound state with increased longitudinal curvature (~12\u00b0 per subunit), weakening lateral bonds and destabilizing the subunit in the MT lattice. This makes GDP-tubulin MTs mechanically less stable than GTP-tubulin MTs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12, C19-C21, C25-C27 describe the well-established structural and mechanical consequences of GTP hydrolysis, supported by multiple citations to prior structural studies (Wang and Nogales, 2005; Alushin et al., 2014; Chr\u00e9tien et al., 1995). These claims form the mechanistic basis for the authors' model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "fdf75251-8823-465e-99d1-6f605cea64ec",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Microtubules exhibit dynamic instability, stochastically alternating between growth and shrinkage phases both in vivo and in vitro. This phenomenon is essential for cellular functions including chromosome separation and cytoskeletal remodeling, but remains incompletely understood due to the multiple mechanical and kinetic processes operating across different time and length scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 establish the biological importance and complexity of dynamic instability, supported by appropriate citations (C14, C15, C17). The acknowledgment that understanding remains elusive (C17) is supported by recent review citations and provides motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "c27e3c76-6f30-41f0-94af-df8dd285097b",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study develops a combined analytical and computational model that quantifies how 3D structure and kinetics of tubulin dimers determine MT mechanical stability, demonstrates that dynamic instability is influenced by quenched disorder in tubulin hydrolysis state, and connects 3D geometry, kinetics, and statistical mechanics within a unified framework.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 accurately describe the study's approach and main contributions as demonstrated throughout the Results section. The model development (C28), quantification of stability (C29), role of disorder (C30), and unified framework (C31) are all substantiated by the theoretical derivations, simulations, and phase diagrams presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "1617d581-ffa8-43af-aa4c-920fc133f7ba",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MTs have persistence lengths in the O(mm) range, much larger than typical MT lengths (\u03bcm range), allowing them to be modeled as having well-defined shapes unaffected by thermal fluctuations. Lateral bonds between tubulin dimers are considerably weaker than longitudinal bonds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 establish key modeling assumptions supported by citations to prior research (Fletcher and Mullins, 2010; Huber et al., 2013; VanBuren et al., 2002, 2005; Molodtsov et al., 2005). These assumptions are reasonable and well-justified for the continuum mechanical model developed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "a8bd0998-9b4b-47cc-a9d8-4efa90466917",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The mechanical model describes MT elastic energy as competition between bending energy (favoring curved state) and spring stretching energy (favoring straight cylindrical configuration), with two key dimensionless parameters \u03b1 (longitudinal curvature) and \u03b2 (lateral curvature) characterizing the system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C47 describe the core mechanical model framework. The energy formulation (C43, C44) and parameter definitions (C46, C47) are mathematically sound and physically motivated by prior structural studies (C37). The model appropriately captures the essential physics of MT mechanics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "b2bd4b92-7df7-40b7-a7ba-59f55d00b8e4",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model predicts that MTs with smaller radius are mechanically less stable than those with larger radius, and that increasing growth rate relative to hydrolysis stabilizes MTs. In the unstable phase, hydrolysis overtakes growth, causing PFs to curve outward into characteristic 'ram's horn' morphology, with the transition depending on both longitudinal and lateral curvatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C58 describe key predictions from the analytical model (Equation 13) that are physically intuitive and consistent with known MT behavior. The ram's horn morphology (C57) is supported by citation to VanBuren et al., 2005 and Video 2. Figure 3a,b shows good agreement between theory and simulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "5ac462ed-ed59-44ac-a5a2-833b7bbd1c0f",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study introduces quenched disorder in spring stiffness S to model random GTP/GDP states in the MT lattice, motivated by the separation of timescales between fast polymerization/depolymerization and slower GTP turnover, and by the principle that mechanical forces influence reaction rates through free energy contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C67 establish the theoretical framework for incorporating disorder. The definition of quenched disorder (C60) is standard, the timescale separation (C61) is physically justified, and the mechanochemical coupling (C63-C67) is supported by citation to Howard, 2001 and prior structural studies. The approach is theoretically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "83a933c5-cc83-4c03-b3af-c3485e527466",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Lateral disorder destabilizes MTs by creating weak paths that allow the MT to 'cut open' longitudinally, while longitudinal disorder stabilizes MTs by creating rings of strong bonds. This reveals a fundamental difference between 1D and 3D MT models: disorder stabilizes 1D MTs but can destabilize 3D MTs through lateral disorder.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C78 describe a key novel finding distinguishing 3D from 1D models. The theoretical predictions (Equations 16-17) are derived using extreme value statistics and validated by simulations (Figure 3c,d, Videos 3-4). The distinction between lateral and longitudinal disorder effects is well-demonstrated and represents an important contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "a189f957-e2ae-4510-876f-4b760a67e9ea",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior experimental work has established that MT rescue is not primarily driven by GTP-tubulin addition at the plus end, but rather by the presence of GTP-islands (remnants of non-hydrolyzed tubulin) along the MT lattice, which can be generated naturally or through laser damage-repair mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C88 provide comprehensive background on rescue mechanisms, all supported by appropriate citations to experimental studies (Gardner et al., 2013; Dimitrov et al., 2008; Tropini et al., 2012; Aumeier et al., 2016; Vemu et al., 2018, 2019). This establishes the experimental context for the authors' modeling of GTP-island rescue.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "e64da649-9f03-4c8e-945b-9e546cb27884",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model predicts that MTs become mechanically unstable when a connecting path of GDP-tubulins runs longitudinally through a GTP-island, and that the rescuing power of GTP-islands displays a sharp drop at intermediate GTP-fractions, analogous to a percolation transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92 and C99 describe key predictions about GTP-island rescue. The percolation model (Figure 4c,d) provides a mechanistic explanation for the sharp transition in rescue probability observed in simulations (Figure 4b). The qualitative agreement between percolation theory and simulations supports the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "61caf575-21df-457b-8549-19aa1cd481bb",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The mechanical stability of MTs is strongly affected by radius, with smaller radius MTs being mechanically less stable than larger radius MTs, revealing a key role of 3D geometry compared to previous 1D analytic studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 highlight a central finding of the study. The radius dependence is demonstrated theoretically (Equation 13, \u03b2 \u2243 1/R\u2080) and validated by simulations (Figure 3b). This represents an important advance over 1D models and is appropriately cited to prior work (Mahadevan and Mitchison, 2005).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "7848626c-4b02-45f2-baef-5aca887165f6",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The critical GTP-fraction for rescue could be experimentally determined using non-hydrolyzable tubulin analogs to control disorder combined with super-resolution microscopy to measure island length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C102 proposes a reasonable experimental approach with appropriate citations (Tropini et al., 2012; Huang et al., 2009), but this is a prospective suggestion rather than a demonstrated result. The feasibility and whether the proposed experiments would yield the predicted critical behavior remains to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "d13930be-b997-4985-85f3-bec5385ed839",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors acknowledge that the Gamma distribution assumption for quenched disorder is an assumption requiring validation, and that further experimental work is needed to solve the inverse problem of estimating GTP-fraction from rescue probabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C104 appropriately acknowledge limitations and future directions. The authors transparently note the assumption about disorder distribution (C103) and identify the need for experimental validation (C104). This represents good scientific practice in acknowledging model limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "2a5ce45c-c4cf-4a99-9d82-c2a83794d6e2",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The MT lattice typically consists of 13 protofilaments forming a hollow cylindrical shell with outer diameter ~25 nm and thickness ~5 nm, with mechanical stability resulting from competition between lateral and longitudinal curvatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 provide structural details supported by multiple citations (Mandelkow et al., 1986; Chr\u00e9tien and Wade, 1991; Mitchison, 1993; Tilney et al., 1973). The mechanical interpretation (C24) is consistent with the model framework. These are well-established structural facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    },
+    {
+      "id": "21945fd9-ecf8-4467-82ae-cb926cd7b98b",
+      "content_id": "45003bb0-85f1-4d7a-be34-4b038d2d5449",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The framework may be applicable to other self-assembled systems where geometry, kinetics, and statistical mechanics are at play.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C32 is speculative about broader applicability. While the general framework of competing mechanical energies and quenched disorder could apply to other systems, no specific examples are tested or demonstrated. This remains a reasonable but unvalidated hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:00:30.569652Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "042bf97a-e060-4359-815b-aa498dd41be3",
+      "result_id": "7af375a4-b298-48c5-b6e7-d59d856b63d1"
+    },
+    {
+      "claim_id": "31901090-f353-48cc-9dab-5c3acd75010d",
+      "result_id": "7af375a4-b298-48c5-b6e7-d59d856b63d1"
+    },
+    {
+      "claim_id": "548771f2-f766-4a05-b619-122e57923926",
+      "result_id": "7af375a4-b298-48c5-b6e7-d59d856b63d1"
+    },
+    {
+      "claim_id": "059ac46c-c43d-40bd-92bf-021f5292f094",
+      "result_id": "7af375a4-b298-48c5-b6e7-d59d856b63d1"
+    },
+    {
+      "claim_id": "e6548e03-9240-4c8c-9336-4af542545948",
+      "result_id": "7af375a4-b298-48c5-b6e7-d59d856b63d1"
+    },
+    {
+      "claim_id": "c68d43b4-83b6-429d-8c75-47e181670723",
+      "result_id": "7af375a4-b298-48c5-b6e7-d59d856b63d1"
+    },
+    {
+      "claim_id": "677c77b4-9102-498e-ad4c-27b7875c4448",
+      "result_id": "7af375a4-b298-48c5-b6e7-d59d856b63d1"
+    },
+    {
+      "claim_id": "e9c514f4-d669-43c0-87ac-c90bd8cb87ec",
+      "result_id": "7af375a4-b298-48c5-b6e7-d59d856b63d1"
+    },
+    {
+      "claim_id": "7a0271df-67e0-4fb7-b868-c57f2ba19149",
+      "result_id": "503699e9-5eed-4d6c-b261-3bb4ea55c8b6"
+    },
+    {
+      "claim_id": "17bb6827-e659-4232-b0d2-a1ae17463668",
+      "result_id": "503699e9-5eed-4d6c-b261-3bb4ea55c8b6"
+    },
+    {
+      "claim_id": "32db8515-8a62-4ed6-ac01-73e9a1270e0a",
+      "result_id": "503699e9-5eed-4d6c-b261-3bb4ea55c8b6"
+    },
+    {
+      "claim_id": "86ba5437-4d47-41b6-b928-90e0b8de0227",
+      "result_id": "503699e9-5eed-4d6c-b261-3bb4ea55c8b6"
+    },
+    {
+      "claim_id": "97ef2d3f-d060-45b0-b16b-84c2e29bffca",
+      "result_id": "503699e9-5eed-4d6c-b261-3bb4ea55c8b6"
+    },
+    {
+      "claim_id": "b955e2c4-77fa-4f2b-a95d-af132e91f2fc",
+      "result_id": "503699e9-5eed-4d6c-b261-3bb4ea55c8b6"
+    },
+    {
+      "claim_id": "d463cc7c-5ca4-484a-9c03-2cd4463098ae",
+      "result_id": "503699e9-5eed-4d6c-b261-3bb4ea55c8b6"
+    },
+    {
+      "claim_id": "0c23c1ae-b530-4cb6-8032-d2c9d76ebb46",
+      "result_id": "503699e9-5eed-4d6c-b261-3bb4ea55c8b6"
+    },
+    {
+      "claim_id": "6f2eb259-ce5d-4ef5-83bd-a40df578874b",
+      "result_id": "503699e9-5eed-4d6c-b261-3bb4ea55c8b6"
+    },
+    {
+      "claim_id": "c456aa43-24e7-48f5-b031-468329479289",
+      "result_id": "fdf75251-8823-465e-99d1-6f605cea64ec"
+    },
+    {
+      "claim_id": "10b5f8d5-4d3f-47d2-a99c-6f2457fc2650",
+      "result_id": "fdf75251-8823-465e-99d1-6f605cea64ec"
+    },
+    {
+      "claim_id": "25d7cf1f-d42f-40dd-aff7-c56fc216c13a",
+      "result_id": "fdf75251-8823-465e-99d1-6f605cea64ec"
+    },
+    {
+      "claim_id": "e4dfb48c-d648-4d1a-8f24-b0dc6464b349",
+      "result_id": "fdf75251-8823-465e-99d1-6f605cea64ec"
+    },
+    {
+      "claim_id": "363e4fe7-fe59-4de4-8388-6616a74ebd20",
+      "result_id": "fdf75251-8823-465e-99d1-6f605cea64ec"
+    },
+    {
+      "claim_id": "3a481be8-bf03-45b5-8a48-1df85287481a",
+      "result_id": "fdf75251-8823-465e-99d1-6f605cea64ec"
+    },
+    {
+      "claim_id": "13937096-b34c-4d1d-a3df-a5a8d517d4b1",
+      "result_id": "c27e3c76-6f30-41f0-94af-df8dd285097b"
+    },
+    {
+      "claim_id": "97f55f05-c902-4a9a-b9d8-6f7da2da629f",
+      "result_id": "c27e3c76-6f30-41f0-94af-df8dd285097b"
+    },
+    {
+      "claim_id": "5cac9801-18ab-46a9-8206-9f4bcbb28147",
+      "result_id": "c27e3c76-6f30-41f0-94af-df8dd285097b"
+    },
+    {
+      "claim_id": "09cb34a8-4430-4b8c-8445-a9a9543a68d0",
+      "result_id": "c27e3c76-6f30-41f0-94af-df8dd285097b"
+    },
+    {
+      "claim_id": "63f6261f-a47c-45c2-b485-d20c901d0095",
+      "result_id": "1617d581-ffa8-43af-aa4c-920fc133f7ba"
+    },
+    {
+      "claim_id": "43dd2a17-b18d-4cfa-ae00-49d9cb366374",
+      "result_id": "1617d581-ffa8-43af-aa4c-920fc133f7ba"
+    },
+    {
+      "claim_id": "4af7d406-c282-432c-a3d2-4add5b69e5a5",
+      "result_id": "1617d581-ffa8-43af-aa4c-920fc133f7ba"
+    },
+    {
+      "claim_id": "b757b28d-c170-4d03-b85c-b86f19c80a31",
+      "result_id": "a8bd0998-9b4b-47cc-a9d8-4efa90466917"
+    },
+    {
+      "claim_id": "ecdf07ef-76cb-4002-8359-8f03a4af359b",
+      "result_id": "a8bd0998-9b4b-47cc-a9d8-4efa90466917"
+    },
+    {
+      "claim_id": "d5a457fc-8901-4de1-9734-3a5270483d5c",
+      "result_id": "a8bd0998-9b4b-47cc-a9d8-4efa90466917"
+    },
+    {
+      "claim_id": "0e7f8cf7-b7a4-48e4-9df4-13dfcfe9f927",
+      "result_id": "a8bd0998-9b4b-47cc-a9d8-4efa90466917"
+    },
+    {
+      "claim_id": "eeb7a632-9836-4a38-9600-51e545ae99eb",
+      "result_id": "a8bd0998-9b4b-47cc-a9d8-4efa90466917"
+    },
+    {
+      "claim_id": "23a61b2a-3e4e-4d2d-b3f9-0f9320cc029a",
+      "result_id": "a8bd0998-9b4b-47cc-a9d8-4efa90466917"
+    },
+    {
+      "claim_id": "348b7c48-13e8-4a74-969e-2465cf44685a",
+      "result_id": "a8bd0998-9b4b-47cc-a9d8-4efa90466917"
+    },
+    {
+      "claim_id": "c5dd22b0-d346-41de-b1d5-5addd55ee53b",
+      "result_id": "b2bd4b92-7df7-40b7-a7ba-59f55d00b8e4"
+    },
+    {
+      "claim_id": "bc80a9db-33e8-4adb-99d7-81f833882f1b",
+      "result_id": "b2bd4b92-7df7-40b7-a7ba-59f55d00b8e4"
+    },
+    {
+      "claim_id": "ff46c436-03d4-499e-8a30-902aa43b32bd",
+      "result_id": "b2bd4b92-7df7-40b7-a7ba-59f55d00b8e4"
+    },
+    {
+      "claim_id": "59a44a22-5621-4cab-bddf-f7cdb9c3448b",
+      "result_id": "b2bd4b92-7df7-40b7-a7ba-59f55d00b8e4"
+    },
+    {
+      "claim_id": "c58eb84d-6ab7-4634-908f-8777ec4a3082",
+      "result_id": "b2bd4b92-7df7-40b7-a7ba-59f55d00b8e4"
+    },
+    {
+      "claim_id": "e3b2db92-21f7-4de6-8e7c-f8c1bc52fa11",
+      "result_id": "b2bd4b92-7df7-40b7-a7ba-59f55d00b8e4"
+    },
+    {
+      "claim_id": "5af16e13-4f76-468a-a58f-bb49a5c64a06",
+      "result_id": "5ac462ed-ed59-44ac-a5a2-833b7bbd1c0f"
+    },
+    {
+      "claim_id": "f28293d3-959d-45b6-a298-ebf20d7a89ca",
+      "result_id": "5ac462ed-ed59-44ac-a5a2-833b7bbd1c0f"
+    },
+    {
+      "claim_id": "d3e7e11a-bfb5-48aa-aef8-eb1fc0e4ed15",
+      "result_id": "5ac462ed-ed59-44ac-a5a2-833b7bbd1c0f"
+    },
+    {
+      "claim_id": "11f91047-c182-47b8-b375-a0c6f337dc2c",
+      "result_id": "5ac462ed-ed59-44ac-a5a2-833b7bbd1c0f"
+    },
+    {
+      "claim_id": "19b53b90-c7df-4370-9e96-2fc9318b5421",
+      "result_id": "5ac462ed-ed59-44ac-a5a2-833b7bbd1c0f"
+    },
+    {
+      "claim_id": "b708b840-33b0-4c59-bc5e-2e953eea60ca",
+      "result_id": "5ac462ed-ed59-44ac-a5a2-833b7bbd1c0f"
+    },
+    {
+      "claim_id": "0107805d-6362-457e-8a49-2d13bf82a7ab",
+      "result_id": "5ac462ed-ed59-44ac-a5a2-833b7bbd1c0f"
+    },
+    {
+      "claim_id": "fde6651e-7b21-4312-9987-191f890e893a",
+      "result_id": "83a933c5-cc83-4c03-b3af-c3485e527466"
+    },
+    {
+      "claim_id": "0a96264a-a147-447f-b5bb-4f529720847a",
+      "result_id": "83a933c5-cc83-4c03-b3af-c3485e527466"
+    },
+    {
+      "claim_id": "12583de2-2a4b-4fa5-95af-c4d6ddc11c01",
+      "result_id": "83a933c5-cc83-4c03-b3af-c3485e527466"
+    },
+    {
+      "claim_id": "eda100e8-7138-47d2-8d10-20ca447b1ff0",
+      "result_id": "83a933c5-cc83-4c03-b3af-c3485e527466"
+    },
+    {
+      "claim_id": "2d9a18a7-c9c5-4e2e-ac61-3876419b5c24",
+      "result_id": "83a933c5-cc83-4c03-b3af-c3485e527466"
+    },
+    {
+      "claim_id": "5401de76-649c-47a9-b48d-2be74f33ec9c",
+      "result_id": "83a933c5-cc83-4c03-b3af-c3485e527466"
+    },
+    {
+      "claim_id": "68da6eb9-f84d-4a5f-a023-a9f79472df41",
+      "result_id": "a189f957-e2ae-4510-876f-4b760a67e9ea"
+    },
+    {
+      "claim_id": "ecb07e9b-8049-47e4-ac57-acbf6ba1d90d",
+      "result_id": "a189f957-e2ae-4510-876f-4b760a67e9ea"
+    },
+    {
+      "claim_id": "27d88d82-25ac-4456-acfc-f03076a2d81b",
+      "result_id": "a189f957-e2ae-4510-876f-4b760a67e9ea"
+    },
+    {
+      "claim_id": "990aea47-0d8e-4838-bd00-eb7627aba737",
+      "result_id": "a189f957-e2ae-4510-876f-4b760a67e9ea"
+    },
+    {
+      "claim_id": "f795add8-1afc-4c45-a64a-dedb8ee3c90c",
+      "result_id": "a189f957-e2ae-4510-876f-4b760a67e9ea"
+    },
+    {
+      "claim_id": "555eff25-944c-4369-9314-01a5b42738d3",
+      "result_id": "a189f957-e2ae-4510-876f-4b760a67e9ea"
+    },
+    {
+      "claim_id": "616e481f-1a31-46a1-9880-62e8375ce978",
+      "result_id": "a189f957-e2ae-4510-876f-4b760a67e9ea"
+    },
+    {
+      "claim_id": "ca5376e1-8857-4418-b2ed-eed755d347d6",
+      "result_id": "a189f957-e2ae-4510-876f-4b760a67e9ea"
+    },
+    {
+      "claim_id": "be0a726f-fa19-4c41-bf92-842e94734520",
+      "result_id": "a189f957-e2ae-4510-876f-4b760a67e9ea"
+    },
+    {
+      "claim_id": "2b3b14b5-4637-4c82-8e22-3edc9def706a",
+      "result_id": "a189f957-e2ae-4510-876f-4b760a67e9ea"
+    },
+    {
+      "claim_id": "58ae3274-a12d-4ec9-a626-e3cf09427a62",
+      "result_id": "e64da649-9f03-4c8e-945b-9e546cb27884"
+    },
+    {
+      "claim_id": "9cba55e0-1c05-4650-9d15-9dbf77d19113",
+      "result_id": "e64da649-9f03-4c8e-945b-9e546cb27884"
+    },
+    {
+      "claim_id": "88c2b42e-958e-42dd-8734-da05bbd296d4",
+      "result_id": "61caf575-21df-457b-8549-19aa1cd481bb"
+    },
+    {
+      "claim_id": "a0841aa1-85e8-4426-a4b0-a21104366164",
+      "result_id": "61caf575-21df-457b-8549-19aa1cd481bb"
+    },
+    {
+      "claim_id": "fb0761af-2336-4f12-abda-4dcdd692c59a",
+      "result_id": "7848626c-4b02-45f2-baef-5aca887165f6"
+    },
+    {
+      "claim_id": "123eea36-fceb-4942-b315-c9a4f83ad832",
+      "result_id": "d13930be-b997-4985-85f3-bec5385ed839"
+    },
+    {
+      "claim_id": "568050f3-a64f-4855-933e-dec2905cd388",
+      "result_id": "d13930be-b997-4985-85f3-bec5385ed839"
+    },
+    {
+      "claim_id": "e784dbd4-df75-4a55-9083-8c7d7a2e5fca",
+      "result_id": "2a5ce45c-c4cf-4a99-9d82-c2a83794d6e2"
+    },
+    {
+      "claim_id": "a8529c5e-da98-453c-b144-4159334a4b7d",
+      "result_id": "2a5ce45c-c4cf-4a99-9d82-c2a83794d6e2"
+    },
+    {
+      "claim_id": "1b01de1c-d317-426b-9847-3e6136e7aaf6",
+      "result_id": "2a5ce45c-c4cf-4a99-9d82-c2a83794d6e2"
+    },
+    {
+      "claim_id": "b28fc713-db9f-4de6-ac77-0f0f33a41237",
+      "result_id": "21945fd9-ecf8-4467-82ae-cb926cd7b98b"
+    }
+  ],
+  "comparisons": []
+}

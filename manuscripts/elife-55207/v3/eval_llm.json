@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Bulk WGS has fundamental limitations in detecting recent mutational events. The authors claim that bulk WGS can only identify highly prevalent mutations from early tumorigenesis due to sequencing depth constraints, limiting evolutionary modeling to fixed early events rather than current or recent mutational processes. Studying current evolutionary events requires confident identification of very low prevalence mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established limitations of bulk sequencing supported by citations (C8, C9) and are consistent with fundamental principles of sequencing depth and variant allele frequency detection. The logical connection between sequencing depth, mutation prevalence, and temporal resolution is sound and represents accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Single cell and small clone sequencing face major technical challenges from DNA damage and amplification artifacts. The authors claim that oxidation and deamination of picogram quantities of DNA create disproportionate C>A and C>T artefactual mutations that cannot be distinguished from biological mutations, and that whole genome amplification propagates and inflates these errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by multiple citations (C10, C11, C13) and represent established technical challenges in the field. The specific mutation types (C>A from oxidation, C>T from deamination) are consistent with known DNA damage chemistry. This provides important context for the problem the authors aim to solve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C45",
+      "C46"
+    ],
+    "result": "The DigiPico method is based on the principle that partitioning DNA into single-molecule compartments enables discrimination between artefactual and genuine mutations. The authors hypothesize that amplification errors occur randomly, so artefactual mutations will appear in only a fraction of reads from a single molecule, while genuine variants will be present in all reads. Partitioning creates distinctive distribution patterns across compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The underlying hypothesis (C16, C17) is logically sound and based on established principles of random error introduction during amplification (C15, supported by citations). The reasoning that single-molecule sequencing enables error detection through allelic distribution patterns is valid. Claims C26-C27 provide experimental validation showing UTDs have significantly different distribution patterns (p<2e-16), confirming the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C47"
+    ],
+    "result": "The DigiPico library preparation method distributes ~200 pg DNA into 384 wells with <10% probability of two molecules from the same locus co-occurring. REPLI-g Single Cell was the only MDA method meeting required specifications, and EvaGreen dye enables real-time monitoring without interfering with amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The technical specifications are clearly stated with appropriate citations (C20 cites Peters et al. 2012 for the probability calculation, C47 cites support for EvaGreen properties). The comparison of six MDA methods (C21) with data support (Figure 1F) provides empirical justification for the choice. The method description is sufficiently detailed and technically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C52"
+    ],
+    "result": "DigiPico sequencing produces high-quality data from limited clinical samples. Libraries D1110 and D1111 achieved mapping rates of 91.35% and 94.27%, with breadth of coverage of 92.1% and 91.1% at depths of 30x and 43x respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quality metrics are clearly stated with figure support (Figure 1G, source data 3). The mapping rates and coverage statistics are appropriate benchmarks for sequencing quality. These results demonstrate technical feasibility, though the sample size is limited (n=2 libraries shown). The conclusion (C52) reasonably follows from the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C53",
+      "C54"
+    ],
+    "result": "UTD variants show distinctive distribution patterns consistent with artefactual origin. In run D1110 (expected to contain only artefacts), UTDs had significantly higher dual-allelic compartment rates and were present in fewer wells compared to other mutation categories (p<2e-16). Run D1111 is expected to contain both artefacts and true clone-specific mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analysis (C26, C27) uses appropriate methods (One-way ANOVA with Tukey HSD) and shows highly significant differences with figure support (Figure 2A, 2B). The experimental design logic (C53, C54) is sound: D1110 from bulk DNA should have no clone-specific variants, while D1111 from ~30 cells may contain them. This validates the core hypothesis about distribution patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "MutLX employs a two-step ANN training process to handle noisy training data. The method accommodates mislabeled true mutations among UTDs by first identifying and temporarily removing apparently mislabeled examples, then retraining on the cleaned dataset. Uncertainty estimation is based on dropout analysis assuming robust predictions are supported by most activated neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-step training approach (C49, C50) is a reasonable strategy for handling label noise, with conceptual support from machine learning literature. The uncertainty estimation via dropout (C51) is based on established techniques (referenced as Gal and Ghahramani, 2015 in methods). The approach is methodologically sound, though the specific implementation details and parameter choices (e.g., probability thresholds of 0.7 and 0.3) appear empirically determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C55"
+    ],
+    "result": "MutLX eliminates >99% of false positive calls while maintaining ~85% sensitivity. In runs D1110, DE011, and GM12885 (expected to have no true UTDs), MutLX reduced FP calls to 4, 7, and 3 respectively, compared to 713, 712, and 13,280 for SCcaller. The authors conclude MutLX can accurately distinguish artefactual from real variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The performance metrics (C28, C29) are clearly stated with figure support (Figure 2F, 2G). The comparison to SCcaller (C30) provides important context showing substantial improvement. However, the validation relies on the assumption that D1110, DE011, and GM12885 truly have no clone-specific variants, which is reasonable but not independently verified. The ~85% sensitivity estimate requires knowing true positives, which depends on the extensive validation dataset from patient #11152 (C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "MutLX identified 266 putative clone-specific variants in run D1111, with 90% (240/266) validated through independent high-depth sequencing. Targeted sequencing confirmed 10/11 variants were present at low frequencies in bulk DNA. Conversely, 37 UTDs from DE111 labeled as artefactual showed no evidence in bulk DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation strategy is rigorous, using independent high-depth sequencing data (C31) and targeted amplicon sequencing (C32, C33). The 90% validation rate is strong evidence for accuracy, though 10% false positives remain. The reciprocal validation (C33) showing artefactual calls are truly absent strengthens confidence. The validation depends on the exceptional depth (~4200x) of the patient #11152 dataset (C48), which may not be generalizable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "MutLX does not suffer from overfitting when true clone-specific mutations are present among UTDs. Simulated data with UTD*/UTD ratios up to 10% did not significantly affect recovery rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation approach (C34) directly tests a key concern about the method. The use of artificially mislabeled somatic mutations to create synthetic datasets is appropriate. Results shown in Figure 2\u2014figure supplement 2 support the claim. However, the simulations are limited to two runs (D1110 and DE111) and the specific definition of \"not significantly affect\" is not quantified with statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Artefactual mutations identified by MutLX show elevated C>A mutations consistent with oxidative DNA damage during library preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation (C35) is supported by figure data (Figure 2\u2014figure supplement 3, source data 4) and is consistent with cited literature on oxidative damage. This provides biological validation that the mutations being filtered are indeed artefacts with expected damage signatures. However, the analysis is descriptive and lacks statistical testing of the enrichment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "MutLX can reliably identify and eliminate artefactual variants from diverse DigiPico libraries. Testing on multiple samples from four HGSOC patients and a cell line demonstrated versatility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Table 1 shows application to 14 different runs from diverse sources with consistently high AUC values (0.85-0.97). The diversity of samples (different patients, timepoints, tissue types, and a cell line) supports generalizability. However, all tumor samples are from the same cancer type (HGSOC), limiting broader claims of versatility. The validation rates vary considerably where available (e.g., 16/28 to 240/266), suggesting performance may be context-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Patient #11152 tumor was the most extensively whole genome sequenced tumor to date, with ~4200x total depth from 48 independent WGS datasets across three timepoints from two sequencing platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the depth and number of datasets are clearly stated (C48), the claim of being \"the most extensively sequenced tumor to date\" is difficult to verify and may be outdated. The extensive sequencing does provide exceptional validation capability, which is crucial for the study. However, no comparison to other highly-sequenced tumors is provided to support the superlative claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Analysis of patient #11152 revealed evolutionary dynamics across timepoints. 84.6% of bulk pre-chemotherapy mutations were present in \u22653 DigiPico islets. Pre-chemotherapy islets harbored 2-36 unique mutations each. The PT2R recurrence showed 3009 new mutations and higher clone-specific mutation load than PALNR or pre-chemotherapy tumor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative results (C36, C37, C38, C39) are clearly stated with figure support (Figure 3A). The high concordance (84.6%) between bulk and DigiPico data validates the method. The observation of islet-specific mutations demonstrates the method's ability to detect recent events. The comparison across timepoints and sites provides biological insight into tumor evolution. The interpretation is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C40",
+      "C41"
+    ],
+    "result": "A sub-clonal kataegis event was identified for the first time in ~30 cancer cells from PT2R recurrence. This kataegis on chromosome 17 was only found in DigiPico PT2R data and was unidentifiable from bulk WGS, representing genuine clone-specific mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kataegis identification (C40) is supported by rainfall plot analysis (Figure 3B, 3C, supplement 1) showing the characteristic clustering pattern. The validation (C41) comparing across multiple datasets (bulk, DigiPico, LFR from pre-chemotherapy) confirms these are clone-specific. The claim of \"first time\" detection in such a small cell population (C5) is significant if true, though difficult to verify comprehensively. The biological interpretation is sound given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "DigiPico/MutLX virtually eliminates all false positive results while retaining an excellent proportion of true positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching claim is supported by the combined evidence from C28-C33 showing >99% FP elimination, ~85% sensitivity, high validation rates (90% for D1111), and successful application across diverse samples (C56). The word \"virtually\" appropriately hedges the claim. However, \"excellent proportion\" is subjective, and 85% sensitivity means 15% of true mutations are missed, which may be significant depending on application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Understanding current mutational processes is key for predicting tumor evolutionary trajectory. Bulk sequencing mutations reflect extended tumor history, while cell-specific mutations reflect recent events during the limited cell lifetime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C2, C57, C58, C59) represent logical reasoning about the temporal information content of mutations at different clonal scales. The argument is conceptually sound: more recent mutations provide information about current processes. This provides important motivation for the work, though the practical utility for predicting evolutionary trajectories remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Current single cell WGS methods require extensive validation or combine data from multiple cells. Reducing sequencing depth per cell to enable large-scale studies reduces breadth of coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These limitations of existing methods (C60, C61) are supported by citations and represent accurate characterization of the field's challenges. This provides appropriate context for the advantages of the DigiPico/MutLX approach. The claims are consistent with known trade-offs in single-cell sequencing strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C42",
+      "C62",
+      "C63"
+    ],
+    "result": "DigiPico/MutLX has advantages including compatibility with genomes having extensive copy number alterations and preservation of spatial information. Analyzing spatially-related cells enables the assumption that physically related cells belong to an individual clone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The compatibility with copy number alterations (C42) is a stated advantage, though not explicitly demonstrated with data. The spatial information preservation (C62, C63) is inherent to the LCM-based sampling approach and is a legitimate advantage over dissociated single-cell methods. The citation (C63) supports the biological reasoning about spatial relationships and clonality. These represent valid advantages though some are more conceptual than empirically demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "DigiPico library preparation adds approximately \u00a3250 to total reagent costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This cost estimate (C43) is clearly stated and provides important practical information for method adoption. The cost is reasonable for the added value, though it represents a significant increase over standard library preparation. No detailed cost breakdown is provided, and costs may vary by institution and scale.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Regional factors (country and continent) had the largest effect on gut microbiome composition, followed by age and study-condition (disease vs. control status). Elderly controls had significantly distinct microbiome composition compared to young and middle-aged individuals (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are supported by PERMANOVA analysis results shown in Figure 1A-B. The statistical tests appropriately adjust for confounders (DNA extraction technique, country) and provide significant p-values. The findings are consistent with prior work (Claesson et al., 2012).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Age had a significant effect on gut microbiome composition across multiple diseases. For T2D, CRC, and intestinal polyps, the effect of age was higher than that of disease itself. The interaction between disease and age-group was significant for IBD, CRC, and Polyps (p<0.05), with IBD and CRC showing the highest influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 are supported by PERMANOVA analysis (Table 2, Figure 1C) with appropriate statistical controls for confounders. The R\u00b2 values and p-values are clearly reported. However, the study acknowledges potential confounding from unbalanced age distributions and regional biases in some cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Disease classifiers trained and tested on the same age-group had significantly higher AUC than when tested on different age-groups in 10 of 13 disease-age scenarios. CRC and Polyps showed decreased classification AUCs in elderly age-groups, indicating weaker microbiome-disease signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are supported by Random Forest classifier analysis (Figure 2) validated with permutation tests (Figure 2\u2014figure supplement 2). The iterative resampling approach (100 iterations) and permutation testing strengthen the findings. However, non-independence between training samples across iterations could inflate significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The proportion of age-influenced disease markers ranged from 30% (CRC) to 50% (IBD). When compared to previously reported markers, 40-63% of known markers for various diseases displayed significant differences in feature importance scores across age-groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are supported by Random Forest feature importance analysis and comparison with previously reported markers. The 85th percentile threshold for marker selection is justified (Figure 3\u2014figure supplement 1). Linear regression validation strengthens the findings by deconvoluting aging effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "In CRC validation cohorts, 67% of 19 known CRC markers showed differential age-group associations, with 77% replicated across independent cohorts. Six top CRC markers were associated with higher predictive power only in young/middle-aged individuals. Elderly-specific classifiers showed significantly higher inter-cohort variability (p<2.2e-16), and five top CRC markers had higher prevalence in elderly controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 are supported by validation across independent CRC cohorts with consistent methodology. The cross-cohort validation strengthens the findings. The Mann-Whitney test for inter-cohort distances is appropriate. However, the increased prevalence of CRC markers in elderly controls suggests potential confounding between aging and disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "For four of five diseases (except polyps), there was a significant shift in directionality of microbiome alterations with age, characterized by reduced gained features and increased lost taxa in elderly (Fisher's exact test p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by Fisher's exact tests comparing directionality across age groups (Figure 5A, Figure 5\u2014figure supplement 1). The analysis was performed at both study-level and continent-level, strengthening reproducibility. Statistical thresholds are appropriate (p<0.05 for study-level, FDR<0.1 for continent-level).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Generic disease prediction models performed well in young/middle-aged individuals (median AUC: 0.79) but had significantly lower performance in elderly subjects (p<1e-7). The specificity of prediction was significantly lower for elderly, while sensitivity showed no significant difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by Random Forest classifier analysis (Figure 5B) with appropriate statistical testing. The equal representation of diseases across age-groups controls for disease-specific biases. However, the generic classifier approach may mask disease-specific patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Gut microbiome from elderly individuals in Europe and North America was significantly more variable than young/middle-aged controls, but this pattern was not observed in the Asian (Chinese) cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by analysis of intra-age-group Spearman distances (Figure 5\u2014figure supplement 2). The region-specific differences are notable and suggest population-specific aging effects. However, the Asian cohort is limited to Chinese samples, which may not represent all Asian populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A total of 61 taxa showed consistent directionality of association with multiple diseases across age-groups. These were classified into six groups (G1-G3 for gained, L1-L3 for lost). The G1 group, including Clostridia species (C. bolteae, C. symbiosum, C. hathewayi, C. citronae, C. asparagiforme), was gained across diseases in all age groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by systematic analysis of shared disease markers (Figure 5C). The classification into six groups is data-driven and reproducible. The identification of G1 group as a novel shared disease response is a key finding, though mechanistic validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Frailty could be predicted from gut microbiome taxonomic composition with R=0.79 using Random Forest regression. The G1 group had the highest predictive power for frailty. Eight taxa had optimal frailty predictive ability, all more abundant with frailty, with five belonging to the G1 group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by Random Forest regression analysis with 5-fold cross-validation (Figure 6A-C). The validation in the independent ELDERMET cohort strengthens the findings. The optimization of feature number is appropriate. However, the correlation (R=0.79) should be interpreted cautiously as it may reflect overfitting despite cross-validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Thirteen metabolite profiles were significantly associated with eight frailty-marker taxa and could predict frailty with R=0.60. Frail individuals had significantly higher fecal levels of LCA, DCA (p<0.006), p-cresol, and ethanol, and lower levels of CA and CDCA (p<0.02). The CutC enzyme abundance was significantly higher in frail individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by metabolite association analysis and validation with measured fecal metabolomics (Figure 6D). The predicted metabolic functions are validated with experimental data, strengthening mechanistic interpretation. However, the metabolite predictions rely on literature-curated databases which may have incomplete coverage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Frailty onset was associated with increased SCFA consumption, decreased butyrate production, increased tryptophan consumption, and increased threonine production. Specific microbial pathways for propane-1,2-diol to acetone and allantoin to ammonia conversion were predicted to be higher in frail individuals. Gained taxa groups (G1-G3) were associated with simple sugar consumption, while lost groups (L1-L3) were enriched for prebiotic consumption and butyrate/succinate production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 are supported by metabolite profile association analysis and pathway abundance analysis (Figure 6D, Figure 6\u2014figure supplement 2-3). The metabolic signatures are consistent with known disease associations. However, the pathway predictions are computational and require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Frailty-associated markers remained significant after adjusting for medication effects and were identified in top 15 predictors independently in individuals with high or low medication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by analysis adjusting for medication effects in the ELDERMET cohort. This addresses a key potential confounder. However, medication data was limited to specific drug classes and not available for all cohorts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study analyzed gut microbiome in 15 studies encompassing multiple diseases, comprising >2500 individuals aged 20-89 years. Samples from one study (SchirmerC_2016) using 'Illuminakit' DNA extraction had distinct profiles and were removed. Half of eight disease cohorts had significant age differences between controls and diseased individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe the study dataset and quality control procedures. The removal of samples based on DNA extraction method is justified by envfit analysis (Figure 1\u2014figure supplement 1). The identification of age-matching issues is important for interpretation. These are methodological details appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C69"
+    ],
+    "result": "The manuscript provides extensive background on prior work regarding gut microbiome alterations in diseases, age effects on microbiome, regional variations, and metabolic functions of specific taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C69 represent background knowledge and citations to prior work. These are appropriately cited and provide context for the current study. The citations appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors conclude that accounting for age can inform development of age-specific microbiome diagnostics, that microbiome restoration may be more important than antibiotic eradication in elderly, and that acquisition of G1 taxa can shift metabolic state to disease-like configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75 represent interpretations and conclusions drawn from the data. These are reasonable inferences based on the presented results, though they represent hypotheses requiring further validation rather than definitively proven mechanisms. The conclusions appropriately acknowledge limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "A recent study identified cancer stage-microbiome interactions, but analysis of their data showed 51% of younger CRC subjects had Stage III/IV cancer while 71% of older subjects had Stage I/II cancer (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by citation and reanalysis of published data (Yachida et al., 2019). This highlights an important confounding factor (disease stage) that could interact with age effects. The statistical test is appropriate.",
+    "result_type": "MINOR"
+  }
+]

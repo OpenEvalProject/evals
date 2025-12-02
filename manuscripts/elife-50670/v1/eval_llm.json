@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The study identified 7,282 endogenous GLI3 binding regions (GBRs) in E10.5 limb buds, with 83% enriched for H3K27ac in wild-type limbs. Nearly all nuclear GLI3 is present in the anterior limb bud in the repressor form, indicating that the identified GBRs exclusively represent GLI3-repressor binding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are well-supported by ChIP-seq data using an endogenously FLAG-tagged Gli3 allele and Western blot analysis of anterior/posterior limb bud fractions. The data clearly demonstrate GLI3 binding patterns and the predominance of the repressor form in the anterior limb bud, consistent with previous literature (C13).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "A subset of GLI binding regions (349 HH-responsive GBRs: 148 HH-sensitive and 201 HH-dependent) specifically loses H3K27ac enrichment in the absence of HH signaling, while 94% of GBRs (5,715 Stable GBRs) retain H3K27ac regardless of HH signaling status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C20 are supported by comparative H3K27ac ChIP-seq analysis between WT and Shh-/- limb buds using appropriate statistical methods (limma). The classification of GBRs into HH-responsive (HH-sensitive and HH-dependent) and Stable categories is based on quantitative differential analysis with clear numerical thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C25",
+      "C69"
+    ],
+    "result": "HH-responsive GBRs are highly enriched around HH target genes and cluster with other HH-responsive regulatory regions, while Stable GBRs show minimal enrichment near HH target genes. Many previously validated GLI limb enhancers (Grem1, Ptch1, Gli1) are among the HH-responsive GBRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22-C23, C25, and C69 are supported by permutation test analysis (p=0) showing significant enrichment of HH-responsive GBRs near genes with reduced expression in Shh-/- limb buds, clustering analysis of HH-responsive regions, and identification of known enhancers within the dataset consistent with previous literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "HH-responsive GBRs are tissue-specific enhancers that drive HH-specific transcriptional activity primarily in the limb (average 1.9 tissues), with only 12% active in NIH3T3 cells. In contrast, Stable GBRs are broadly active enhancers functioning across multiple tissues (average 2.9 tissues), with 70% remaining active in NIH3T3 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21, C61-C68 are supported by multiple lines of evidence: 82% of HH-responsive GBRs are enriched for H3K4me1 (C21), VISTA enhancer database analysis showing tissue-specific activity patterns (C61-C64), and H3K27ac ChIP-seq from NIH3T3 cells demonstrating differential activity between GBR classes (C65-C66). The tissue specificity is quantitatively demonstrated with statistical significance (p<0.01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "HH-responsive enhancers retain or increase H3K27ac enrichment in limb buds devoid of both GLI activator and repressor (Shh-/-;Gli3-/-), indicating that their activity is primarily regulated by GLI repression rather than GLI activation. GLI de-repression is responsible for activation of most GLI limb enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C49, C51-C55 are supported by MicroChIP-seq data from Shh-/-;Gli3-/- limb buds showing that 88% (183/207) of HH-responsive GBRs retained or increased H3K27ac enrichment, and H3K27ac ChIP-qPCR data from anterior/posterior fractions of WT and Gli3-/- limbs. The data strongly support a GLI repressor-centric model of regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C80",
+      "C82"
+    ],
+    "result": "The Polycomb repression complex (PRC2) is not the primary mechanism of GLI repression, as only 31 of 349 HH-responsive GBRs and 8 of 22 HH target gene promoters are enriched for H3K27me3 in the absence of HH signaling. Notable exceptions include Gli1, Ptch1, and Ptch2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C32-C36, C80, C82 are supported by H3K27me3 ChIP-seq data from Shh-/- limb buds showing minimal enrichment at most HH-responsive GBRs (318/349 lack H3K27me3) and at most target gene promoters (14/22 lack H3K27me3). The identification of Gli1, Ptch1, and Ptch2 as exceptions is consistent with previous findings (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "HH signaling and GLI repression specifically regulate H3K27ac enrichment at HH-responsive regions, while other enhancer marks (H3K4me1 and H3K4me2) remain unchanged in the absence of HH signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by H3K4me2 ChIP-seq showing no significant changes at GLI-bound regions between WT and Shh-/- limbs, and H3K4me1 ChIP-qPCR showing retention of enrichment at tested HH-responsive GBRs in Shh-/- limbs. This demonstrates the specificity of H3K27ac regulation by HH signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "HH-responsive GBRs have more restricted chromatin accessibility compared to Stable GBRs (66% vs 87% accessible in WT limbs), with accessibility further reduced in Shh-/- limb buds. The majority of HH-responsive GBRs become more compact in the absence of HH signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C45-C48 are supported by ATAC-seq data from WT and Shh-/- posterior limb buds with appropriate statistical significance (p=0.001 and p=4.99e-09). The data demonstrate differential accessibility between GBR classes and changes in response to HH signaling, though the sample size is limited (n=2 per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C70",
+      "C71",
+      "C72",
+      "C87"
+    ],
+    "result": "GLI repressors regulate H3K27ac levels at HH-responsive GBRs through HDACs. HDAC inhibition (FK228 and SAHA) increases acetylation at HH-responsive enhancers, and HDAC1 binds to 41% of HH-responsive GBRs and 78% of Stable GBRs. The proposed model suggests GLI repressors recruit or activate HDACs to prevent H3K27 acetylation at enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C56-C60, C70-C72, C87 are partially supported by HDAC inhibitor experiments showing increased H3K27ac at HH-responsive GBRs and HDAC1 ChIP-seq showing binding at these regions. However, the mechanism remains speculative as the data do not definitively establish whether GLI repressors directly recruit HDACs or if HDAC activity is indirect. The absence of HDAC1 at 59% of HH-responsive GBRs raises questions about the generality of the mechanism. Additional experiments would be needed to establish direct GLI-HDAC interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C75"
+    ],
+    "result": "Stable GBRs are enriched at promoters (62% within 2kb upstream to 1kb downstream of TSS) compared to HH-responsive GBRs (26%), with 90% of promoter-associated Stable GBRs found at CpG island-associated promoters, which are typically associated with housekeeping genes and broadly expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C75 are supported by genomic location analysis of GBRs relative to transcription start sites and CpG island analysis. The enrichment patterns are consistent with the functional characterization of Stable GBRs as broadly active enhancers and are supported by literature on CpG island characteristics (C28).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C78"
+    ],
+    "result": "HH-responsive GBRs contain significantly more GLI motifs (69.7% HH-dependent, 57.4% HH-sensitive vs 39.5% Stable), higher density of GLI motifs (1.51 HH-dependent, 1.47 HH-sensitive vs 1.27 Stable), and higher quality GLI motifs (5.75 HH-dependent, 5.56 HH-sensitive vs 4.88 Stable) compared to Stable GBRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C78 are supported by motif analysis using CisGenome software with appropriate statistical testing (p=2.2e-16, p=8.00e-06 for percentage; p=5.03e-13, p=5.98e-08 for quality; p=5.92e-06 for quantity). The quantitative differences in GLI motif characteristics between GBR classes are clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C79"
+    ],
+    "result": "HH-responsive H3K27ac regions that are not bound by GLI cluster near HH-responsive GBRs and Stable GBRs, suggesting they may be modified based on proximity to GLI-repressor-HDAC complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C79 are supported by statistical clustering analysis showing significant enrichment of HH-responsive non-GBR H3K27ac peaks near GBRs (Wilcoxon-test p-value=0). The interpretation regarding modification by proximity to GLI-repressor-HDAC complexes is speculative but reasonable given the clustering data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Among HH-responsive GBRs, 93.5% of ATAC-accessible regions and 72% of ATAC-inaccessible regions are co-enriched with H3K4me1/2, supporting that most of these regions are likely enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by intersection analysis of ATAC-seq data with H3K4me1 and H3K4me2 ChIP-seq data. The co-enrichment with enhancer marks validates the enhancer identity of both accessible and inaccessible HH-responsive GBRs, though at somewhat different frequencies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "HH-responsive enhancers constitute only 6% (349/6064) of all GLI-bound active enhancers. Stable GBRs show modest but significant increases in H3K27ac enrichment in Shh-/-;Gli3-/- limbs (p=3.4e-185), indicating that their H3K27ac levels are regulated by GLI repressor to some extent on a population level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by quantitative analysis of GBR proportions and MicroChIP-seq data showing statistically significant increases in H3K27ac at Stable GBRs in double mutants. The modest increase at Stable GBRs suggests a continuum of GLI responsiveness rather than discrete categories.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Stable GBRs are more highly conserved than HH-dependent GBRs (p=0.0001134492) and appear to be active in other cell types and tissues besides the limb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by phastCons conservation score analysis showing significant differences and by VISTA enhancer database analysis and NIH3T3 cell H3K27ac ChIP-seq data demonstrating activity across multiple tissues and cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background on HH pathway biology: Transcriptional repression needs to be rapidly reversible during development. The HH pathway primarily serves to counter GLI repression by processing GLI proteins into activators. In the absence of HH ligand, GLI proteins are proteolytically modified into repressors. GLI de-repression is sufficient to activate most GLI target genes in the limb bud, and HH induction rapidly inactivates GLI repression within 4-9 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C89-C97 represent established knowledge of HH pathway signaling and developmental biology, supported by appropriate citations to previous literature. These claims provide necessary context for interpreting the current study's findings and are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "Prior work on GLI regulation and HDAC interactions: Gli1 and Ptch1 require both loss of GLI repression and subsequent GLI activation for expression. HDACs bind and deacetylate GLI1/GLI2 proteins, promoting their activator function. HDACs bind cis-regulatory regions in Gli1. SKI-HDAC and Atrophin-HDAC complexes have been shown to interact with GLI3 in repression. HDAC2 preferentially binds distal rather than promoter regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C83-C86, C88 accurately represent previous findings from the literature with appropriate citations. These claims provide important context for the complexity of HDAC-GLI interactions and highlight that HDACs can have both positive and negative roles in HH signaling depending on context.",
+    "result_type": "MINOR"
+  }
+]

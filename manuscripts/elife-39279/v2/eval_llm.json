@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C20",
+      "C96",
+      "C97",
+      "C194"
+    ],
+    "result": "The model predicts a highly non-uniform distribution of olfactory receptor types in the epithelium, which matches experimental observations in mammals showing heterogeneous receptor abundances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17, C20, C96, C97, and C194 collectively establish that the model predicts non-uniform receptor distributions in intermediate SNR regimes, and this prediction is consistent with experimental data from mammals (C17, C97). The theoretical prediction (C20, C96, C194) is supported by both modeling results and empirical observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C5",
+      "C29",
+      "C109",
+      "C110",
+      "C111",
+      "C126",
+      "C135",
+      "C197"
+    ],
+    "result": "The model demonstrates context-dependent adaptation where the change in abundance of a receptor type depends on the global correlation structure of all receptor responses, not just individual receptor properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C5, C29, C109, C110, C111, C126, C135, and C197 establish the core finding of context-dependent adaptation. The modeling work (C29, C126, C135) demonstrates this mathematically, simulations confirm it (C109, C110), and experimental data supports it (C111). This is a key novel contribution distinguishing this work from prior efficient coding studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C33",
+      "C34",
+      "C195"
+    ],
+    "result": "The model predicts that receptor abundances should continuously adapt to odor statistics in mammals through neurogenesis, with increased exposure to odorants leading to reproducible but varied changes (increases, decreases, or no change) in different receptor types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21, C33, C34, and C195 establish the prediction of adaptive changes and their reproducibility. The prediction (C3, C21, C33, C195) is supported by comparison with experimental data (C34), though the mechanism requires further experimental validation as noted in C168.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C22",
+      "C142",
+      "C159",
+      "C161",
+      "C162",
+      "C165"
+    ],
+    "result": "Experimental studies show that increased exposure to odorants leads to varied but reproducible changes in receptor abundances, matching the model's predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19, C22, C142, C159, C161, C162, and C165 establish that experimental observations match model predictions. Multiple experimental studies are cited (C4, C19, C22, C142, C159), and specific comparisons with Ibarra-Soria et al. 2017 data show qualitative agreement (C161, C162, C165).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106",
+      "C201"
+    ],
+    "result": "The model predicts a monotonic relationship between the number of receptor types expressed and the total number of olfactory sensory neurons, which is broadly consistent with cross-species data on intact OR genes and epithelial area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99, C101, C102, C103, C104, C106, and C201 establish the prediction and its comparison with data. However, the comparison involves multiple approximations (C103, C104), cross-species differences in environments and behavior (C106), and the prediction strictly applies only when environment and receptor affinities are held constant (C99). The trend is consistent but not a strong quantitative test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C120",
+      "C121",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "For narrowly tuned receptors with weak correlations, receptor abundances correlate with individual signal-to-noise ratios, but for broadly tuned receptors (the biological case), correlations become important and simple SNR predictions fail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C116, C117, C120, C121, C123, C124, and C125 establish the transition from simple to context-dependent predictions as tuning width increases. The modeling results (C121, C124, C125) demonstrate this transition, and C123 establishes that the biological setting involves broad tuning where correlations matter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C161"
+    ],
+    "result": "The model predicts that constant (non-varying) odor concentrations do not affect receptor abundances, which is consistent with experimental observations that chronic odor exposure has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C114, and C161 establish both the theoretical prediction and its experimental confirmation. The model prediction (C113) is based on information theory principles, matches experimental data from Ibarra-Soria et al. 2017 (C114, C161), providing a clear prediction-observation match.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C147",
+      "C148",
+      "C149",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C200"
+    ],
+    "result": "The model predicts that environments differing in odor identity (non-overlapping) lead to more extreme changes in receptor abundances than environments differing only in odor statistics (generic changes), with the pattern of change depending on the type of environmental difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C154 and C200 establish this prediction through systematic simulations comparing generic vs. non-overlapping environmental changes. The quantitative results (C145, C147, C149, C151) show clear differences in the distribution of abundance changes, supporting the conclusion that the nature of environmental change matters (C154, C200).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C199"
+    ],
+    "result": "The model predicts that narrowly tuned receptors are more sensitive to environmental changes than broadly tuned receptors, an effect that could be experimentally tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155, C156, and C199 establish this prediction through simulations varying receptor tuning width. The result is shown in Figure 5d (C155, C156) and represents a testable prediction (C156), though it has not yet been experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C174",
+      "C173"
+    ],
+    "result": "Partial data on receptor responses to a subset of odorants leads to robust statistical predictions of overall receptor abundances, despite the difficulty of measuring complete sensing matrices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174 and C173 establish that the model is robust to subsampling. Figure 7a-b (C174) demonstrates this through systematic subsampling analysis, addressing the practical concern raised in C173 about incomplete data availability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "A dynamical model based on gradient ascent shows that if OSN lifetimes are anti-correlated with the inverse response covariance matrix, the receptor distribution can converge to the optimal information-maximizing distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C184 establish the dynamical model and its properties. The model (C176, C181, C182) is consistent with experimental observations about apoptosis modulation (C177, C183) and demonstrates convergence to the optimal distribution (C184). However, the biological implementation of matrix inversion (C186) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C187",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "In the dynamical model, convergence times vary across receptor types, with slower convergence for rare receptors and when starting near local optima, suggesting that stochastic fluctuations may aid convergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187, C189, C190, C191, and C192 describe convergence properties observed in simulations. The observations (C187, C189, C190) are documented in Figure 8, and the interpretation about stochastic fluctuations (C191, C192) is reasonable though speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "The model uses a linear approximation for OSN responses to odorant concentrations, which is valid in certain concentration ranges and requires fewer parameters than nonlinear models, though natural scenes may span ranges outside the linear regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C61, C62, C63, C64, and C66 establish the linear approximation and its justification. The approximation is supported by prior work (C62) and comparison with nonlinear models in Appendix 3 (C64), though limitations are acknowledged (C63). This is a reasonable modeling choice given data constraints (C66).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The model uses a Gaussian approximation for the environmental distribution of odorant concentrations, which is a maximum-entropy approximation that misses some sparse structure but is common and often predictive in efficient coding studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, C53, and C54 establish the Gaussian approximation and its justification. The limitation (C52) is acknowledged, but the approach is justified by precedent in efficient coding literature (C53) and a plausible explanation for why it works (C54).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C86",
+      "C91",
+      "C92",
+      "C95",
+      "C96"
+    ],
+    "result": "The model predicts that at high OSN numbers (high SNR), receptor distributions are nearly uniform, while at low OSN numbers (low SNR), all neurons should express a single receptor type, with intermediate SNR producing non-uniform distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C86, C91, C92, C95, and C96 establish the SNR-dependent predictions. The high SNR result (C86) is derived analytically (Equation 8), the low SNR result (C91, C92) follows from noise considerations, and the intermediate regime (C95, C96) is demonstrated through simulations in Figure 2b.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Model simulations show that abundant receptors change little while rare receptors can change dramatically but are sensitive to environmental perturbations, qualitatively matching experimental patterns where the largest reproducible changes occur for receptors with intermediate abundances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163, C164, C165, C166, C167, and C168 establish the comparison between model and experiment. The simulation results (C163, C164) match experimental patterns (C165), though the comparison is qualitative and additional experiments are needed to distinguish receptor numbers from OSN numbers (C168).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "Detailed quantitative tests of the model require more comprehensive measurements of olfactory environments than currently available, but such measurements are feasible and the authors provide computational tools to facilitate future tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170, C171, C172, C202, C203, C204, and C205 establish the need for future work and its feasibility. The limitations of current data (C170, C202) are acknowledged, but the feasibility of collecting needed data (C171, C204) and provision of tools (C172) support future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C157",
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "The olfactory system provides an opportunity for causal testing of the efficient coding hypothesis through controlled environmental perturbations and measurement of receptor distribution changes, which was not possible in classic efficient coding studies of vision and audition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, C11, C12, C157, C218, C219, and C220 establish the novelty and potential impact of this approach. The limitation of prior work (C11) and the unique opportunity in olfaction (C12, C157) are clearly stated, and the proposal for causal testing (C218, C219, C220) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C206"
+    ],
+    "result": "This is the first application of efficient coding to explain receptor usage patterns in the olfactory epithelium, focusing on optimal use of available receptor genes rather than their evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, C25, and C206 establish the novelty and scope of the work. The distinction from prior work (C23) and the focus on receptor usage (C24, C25) are clearly stated, and the claim of novelty (C206) is reasonable given the literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217"
+    ],
+    "result": "The model could be extended to incorporate nonlinear receptor responses, more realistic environmental distributions, and value-based optimization, though the current mutual information approach has been effective in other sensory systems and value information is currently scarce.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C207-C217 discuss potential extensions and limitations. The proposed extensions (C207, C208, C209, C214) are reasonable, the justification for current approach (C212) is well-supported by citations, and the limitations regarding value (C211, C213, C217) are honestly acknowledged. The speculative arguments (C215, C216) are clearly marked as such.",
+    "result_type": "MINOR"
+  }
+]

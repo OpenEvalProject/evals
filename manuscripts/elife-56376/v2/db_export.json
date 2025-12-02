@@ -1,0 +1,1885 @@
+{
+  "submission": {
+    "id": "ad24cff1-48d5-4da2-a7bb-cd56ffc3cda2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:55:32.445492Z",
+    "updated_at": "2025-12-02T18:55:32.445492Z"
+  },
+  "content": [
+    {
+      "id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "submission_id": "ad24cff1-48d5-4da2-a7bb-cd56ffc3cda2",
+      "content_type": "manuscript",
+      "content_text": "# Alternative splicing of coq-2 controls the levels of rhodoquinone in animals\n\n## Authors\n\n- June H Tan<sup>1</sup> ([ORCID: 0000-0001-6597-3952](https://orcid.org/0000-0001-6597-3952))\n- Margot Lautens<sup>1</sup> ([ORCID: 0000-0002-8503-9603](https://orcid.org/0000-0002-8503-9603))\n- Laura Romanelli-Cedrez<sup>2</sup>\n- Jianbin Wang<sup>3</sup>\n- Michael R Schertzberg<sup>1</sup>\n- Samantha R Reinl<sup>5</sup>\n- Richard E Davis<sup>3</sup>\n- Jennifer N Shepherd<sup>5</sup> \u2020\n- Andrew G Fraser<sup>1</sup> ([ORCID: 0000-0001-9939-6014](https://orcid.org/0000-0001-9939-6014)) \u2020\n- Gustavo Salinas<sup>2</sup> \u2020\n\n### Affiliations\n\n1. The Donnelly Centre, University of Toronto Toronto Canada\n2. Laboratorio de Biolog\u00eda de Gusanos. Unidad Mixta, Departamento de Biociencias, Facultad de Qu\u00edmica, Universidad de la Rep\u00fablica - Institut Pasteur de Montevideo Montevideo Uruguay\n3. Department of Biochemistry and Molecular Genetics, RNA Bioscience Initiative, University of Colorado School of Medicine Aurora United States\n4. Department of Biochemistry and Cellular and Molecular Biology, University of Tennessee Knoxville United States\n5. Department of Chemistry and Biochemistry, Gonzaga University Spokane United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nParasitic helminths use two benzoquinones as electron carriers in the electron transport chain. In normoxia, they use ubiquinone (UQ), but in anaerobic conditions inside the host, they require rhodoquinone (RQ) and greatly increase RQ levels. We previously showed the switch from UQ to RQ synthesis is driven by a change of substrates by the polyprenyltransferase COQ-2 (Del Borrello et al., 2019; Roberts Buceta et al., 2019); however, the mechanism of substrate selection is not known. Here, we show helminths synthesize two coq-2 splice forms, coq-2a and coq-2e, and the coq-2e-specific exon is only found in species that synthesize RQ. We show that in Caenorhabditis elegans COQ-2e is required for efficient RQ synthesis and survival in cyanide. Importantly, parasites switch from COQ-2a to COQ-2e as they transit into anaerobic environments. We conclude helminths switch from UQ to RQ synthesis principally via changes in the alternative splicing of coq-2.\n\n## Introduction\n\nParasitic helminths are major human pathogens. Soil-transmitted helminths (STHs) such as Ascaris, hookworms, and whipworms infect well over a billion people, and 7 out of the 18 neglected diseases categorized by WHO are caused by helminths (CDC, 2019). Despite the huge impact on global health of these infections, there are few classes of available anthelmintics and resistance is increasing in humans and is widespread in some species that infect animals \u2014 for example, Haemonchus contortus, a common\u00a0parasite in small ruminants, has developed multidrug resistance (Jackson and Coop, 2000; Kotze and Prichard, 2016). Thus,\u00a0there is a serious need to develop new classes of anthelmintics that target the parasites while leaving their animal hosts unaffected. One potential target for anthelmintics is their unusual anaerobic metabolism which differs from that of their hosts. When STHs are in the free-living stages of their life cycles, they use the same aerobic respiration as their hosts and use ubiquinone (referred to here as UQ and as Q in other papers) as an electron carrier in their mitochondrial electron transport chain (ETC). However, when they infect their hosts, they encounter highly anaerobic environments. This is particularly the case for species that inhabit the host gut, for example Ascaris\u00a0can live for many months in this anaerobic environment (Dold and Holland, 2011). To survive, they use an alternate form of anaerobic metabolism that relies on the electron carrier rhodoquinone (RQ). Since hosts do not synthesize or use RQ, RQ-dependent metabolism could be a key pharmacological target as it is required by the parasite but absent in mammalian hosts.\n\nRQ is an electron carrier that functions in the mitochondrial ETC of STHs (Van Hellemond et al., 1995). RQ is a prenylated aminobenzoquinone that is similar to UQ (Figure 1), but the slight difference in structure gives RQ a lower standard redox potential than UQ (\u221263 mV and 110 mV, respectively) (Erabi et al., 1976; Unden and Bongaerts, 1997). This difference in redox potential means that RQ, but not UQ, can play a unique role in anaerobic metabolism. In aerobic metabolism, UQ can accept electrons from a diverse set of molecules via quinone-coupled dehydrogenases,\u00a0including succinate dehydrogenase and electron-transferring-flavoprotein (ETF) dehydrogenase. In RQ-dependent anaerobic metabolism, RQ does the reverse \u2014 it carries electrons to these same dehydrogenase enzymes and drives them in reverse to act as reductases that transfer electrons onto a diverse set of terminal acceptors (Tielens and Van Hellemond, 1998; van Hellemond et al., 2003). UQ thus allows electrons to enter the ETC via dehydrogenases; RQ can drive the reactions that let electrons leave the ETC and this difference in the\u00a0direction of electron flow is driven by the difference in redox potential (Figure 1A). This ability of RQ to provide electrons to an alternative set of terminal electron acceptors allows helminths to continue to use a form of mitochondrial ETC to generate ATP without oxygen. In this RQ-dependent anaerobic metabolism, electrons enter the ETC from NADH through Complex I and onto RQ, and this is coupled to proton pumping to generate the proton motive force required for ATP synthesis by F0F1-ATPase (van Hellemond et al., 2003). The electrons are carried by RQ to the quinone-coupled dehydrogenases which are driven in reverse as reductases and the electrons thus exit onto a diverse set of terminal acceptors, allowing NAD+ to be regenerated and the redox balance to be maintained. This RQ-dependent metabolism does not occur in the hosts and is thus an excellent target for anthelmintics (Kita et al., 2003).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56376/elife-56376-fig1-v2.jpg)\n\n**Figure 1.:** (A) In aerobic metabolism, ubiquinone (UQ) shuttles electrons in the ETC from Complex I (CI; yellow box) and quinone-coupled dehydrogenases (QDHs), such as Complex II. These electrons are ultimately transferred to oxygen. In anaerobic metabolism, rhodoquinone (RQ) reverses electron flow in QDHs and facilitates an early exit of electrons from the ETC onto anaerobic electron acceptors (Ae-A), such as fumarate. (B) The RQ biosynthetic pathway in C. elegans requires L-tryptophan, a precursor in the kynurenine pathway. L-Trptophan is transformed into 3-hydroxyanthranilic acid (3HA) in four steps. It is proposed that 3HA is a substrate for COQ-2, producing 3-hydroxy-5-nonaprenylanthranilic acid (NHA), where n=9. The\u00a0transformation of NHA to RQ requires several shared proteins from the UQ biosynthetic pathway. (C) Eukaryotes can use either p-aminobenzoic acid (pABA) or 4-hydroxybenzoic acid (4HB) as precursors to UQ. Prenylation is facilitated by Coq2 to form 3-hexaprenyl-4-hydroxybenzoic acid (HHB) or 3-hexaprenyl-4-aminobenzoic acid (HAB), where n\u00a0= varies between species. Further functionalization of these intermediates occurs through a Coq\u00a0synthome (Coq3\u2013Coq9 and Coq11) to yield UQ.\n\nIn the animal kingdom, RQ is present in several facultative anaerobic lineages that face environmental anoxia or hypoxia as part of their life\u00a0cycle. Among animals, RQ has only been described in nematodes, platyhelminths, mollusks, and annelids (Van Hellemond et al., 1995). The\u00a0key steps of RQ biosynthesis in animals were recently elucidated (Roberts Buceta et al., 2019; Del Borrello et al., 2019). In contrast to bacteria, where RQ derives from UQ (Bernert et al., 2019; Brajcich et al., 2010), RQ biosynthesis in animals requires precursors derived from tryptophan (Figure 1B). Recent\u00a0studies performed on C. elegans have demonstrated that animals that lack a functional kynureninase pathway (e.g. strains carrying mutations in kynu-1, the sole kynureninase) are unable to synthesize RQ (Del Borrello et al., 2019; Roberts Buceta et al., 2019). It is presumed that 3-hydroxyanthranilic acid (3HA, also sometimes referred to as 3HAA) from the kynurenine pathway is prenylated in a reaction catalyzed by COQ-2. The prenylated benzoquinone ring can then be modified by methylases and hydroxylases to form RQ. This proposed pathway is analogous to the biosynthesis of UQ from 4-hydroxybenzoic acid (4HB) or para-aminobenzoic acid (pABA) (Figure 1C). The key insight from these previous studies is that the critical choice between UQ and RQ synthesis is the choice of substrate by COQ-2 \u2014 if 4HB is prenylated by COQ-2, UQ will ultimately be produced, but if 3HA is used, the final product will be RQ. In most parasitic helminths, there is a major shift in quinone composition as they move from aerobic to anaerobic environments, for\u00a0example, RQ is less than 10% of H. contortus total quinone when the parasite is in an aerobic environment but is over 80% of total quinone in the anaerobic environment of the sheep gut and similar shifts occur in other parasites (L\u00fcmmen et al., 2014; Sakai et al., 2012; Van Hellemond et al., 1995). Somehow, COQ-2 must,\u00a0therefore, switch from using 4HB to using 3HA as a substrate, but the mechanism for this substrate switch is completely unknown. Understanding this mechanism is important \u2014 if we could interfere pharmacologically with the switch to RQ synthesis, it could lead to a new class of anthelmintics.\n\nIn this study, we reveal that two variants of COQ-2, derived from alternative splicing of mutually exclusive exons, are the key for the choice to synthesize RQ or UQ. We find that one of the mutually exclusive exons is only found in the genomes of animals that synthesize RQ and that its inclusion remodels the core of the COQ-2 enzyme. We show that the removal of\u00a0this exon abolishes almost all RQ biosynthesis in C. elegans. Finally, we find that inclusion of this RQ-specific exon expression is increased in the stages of the parasite\u00a0life cycle where they encounter hypoxic conditions and increase RQ production, while the alternative exon is increased in normoxic life stages. We thus conclude that alternative splicing of COQ-2 is the key mechanism that causes the switch from UQ to RQ synthesis in the parasite life\u00a0cycle.\n\n## Results\n\n### The C. elegans COQ-2 polyprenyl transferase required for quinone biosynthesis has two major alternative splice forms\n\nOur research\u00a0groups previously showed that if COQ-2 uses 4HB as a substrate, it would lead to the\u00a0synthesis of UQ; however, if COQ-2 uses 3HA,\u00a0it would ultimately yield RQ. As parasites move from aerobic environments to the anaerobic niches in their host, they change their quinone composition from high UQ to high RQ. For this to occur, COQ-2 must switch its substrate from 4HB to 3HA, but the mechanism for this switch is unknown.\n\nWe identified two distinct splice forms of C. elegans coq-2: coq-2a and coq-2e. These are annotated in the genome and confirmed by RNA-sequencing by nanopore-based direct RNA sequencing, and by targeted validation studies (Kuroyanagi et al., 2014; Ramani et al., 2011; Roach et al., 2020). These two isoforms differ by the mutually exclusive splicing of two internal exons (6a and 6e), both of 134 nucleotides (see Figure 2A). We note that mutually exclusive splicing of cassette exons is very rare in the C. elegans genome and fewer than 100 such splicing events have been identified (Kuroyanagi et al., 2014; Ramani et al., 2011). Both coq-2a and coq-2e splice forms are abundant in C. elegans across all stages of development, where\u00a0~30\u201350% of coq-2 is the coq-2e isoform (Gerstein et al., 2010; Gr\u00fcn et al., 2014; Ramani et al., 2011; Roach et al., 2020).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56376/elife-56376-fig2-v2.jpg)\n\n**Figure 2.:** (A) The coq-2 gene contains two mutually exclusive exons, 6e (blue box) and 6a (red box), that are alternatively spliced (blue and red lines, respectively) generating two COQ-2 isoforms. Light gray boxes represent coding sequences of exons 1\u20135 and 7\u20138, black lines represent introns, and dark gray boxes denote 5\u00b4and 3\u00b4 untranslated regions of exons 1 and 8. (B) Alternative splicing of COQ-2 changes the enzyme core. The sequences of C. elegans coq-2a and coq-2e were threaded onto the crystal structure of the apo-form of the Aeropyrum pernix COQ-2 homolog (PDB: 4OD5) in Chimera using Modeller. The region switched by mutually exclusive alternative splicing is shown magenta\u00a0color. (C) The alternative exons found in all RQ-synthesizing species have two residues that are invariant (L204 and S243 show in cyan; C. elegans numbering) that are near the binding site of the two substrates. Substrates are the polyprenyl tail (dark green; geranyl S-thiolodiphosphate in the crystal structure), and the aromatic ring (light green; p-hydroxybenzoic acid [4HB] in the crystal structure). Note that COQ-2 is rotated from panel B to panel C for clarity.\n\nTo examine how the alternative splicing of COQ-2 might affect its function, we threaded the predicted COQ-2a and COQ-2e protein sequences onto the solved crystal structure of the archaean A. pernix COQ-2 ortholog (PDB:4OD5). We found that the splicing change causes a switch in two \u03b1-helices at the core of the COQ-2 structure (Figure 2B). This is a region of the protein that is believed to form a hydrophobic tunnel along which aromatic substrates must pass to the active site for the key polyprenylation reaction (Desbats et al., 2016), suggesting that the change in splicing could affect COQ-2 substrate selection and thus could explain a shift from UQ to RQ synthesis. We,\u00a0therefore, examined whether similar COQ-2 alternative splicing is seen in parasitic helminths and how the different splice forms compare to COQ-2 sequences in parasite hosts which do not synthesize RQ.\n\n### Parasitic helminths have a distinct splice form of coq-2 that is not present in any of the parasitic hosts\n\nC. elegans has two major isoforms of coq-2 which resulted\u00a0from mutually exclusive alternative splicing of two internal exons and affects the core of the enzyme. If this alternative splicing affects the choice of COQ-2 substrate and thus the switch from UQ to RQ synthesis, we reasoned that parasitic helminths that synthesize RQ should have a similar gene structure and that the hosts that do not synthesize RQ should not. We used both gene predictions and available RNA-seq data to examine the coq-2 gene structure and splicing in parasitic helminths and their hosts (human, sheep, cow, and rat, respectively; Figure 3). Since many of the parasite gene structures were not correctly annotated, all the relevant exon junctions in Figure 3 were manually annotated and confirmed with RNA-seq data (see Materials and methods). We note that while the alternative splicing of coq-2 in C. elegans we observe\u00a0using\u00a0RNA-seq has been validated by nanopore-based\u00a0direct\u00a0transcript sequencing, microarray analysis, and RT-PCR, the data on the other helminths only derives from RNA-seq and genome analysis. Although the same robust RNA-seq analysis pipeline has been used, it would be ideal to validate these changes in the future. Remarkably, we find a similar gene structure with the same mutually exclusive exons in all parasites known to synthesize RQ (Figure 3). Furthermore, annelids and mollusks are the only other phyla known to synthesize RQ and their coq-2 orthologs also show similar mutually exclusive alternative splicing of homologous exons and we only find evidence for alternative splicing between a coq-2a form and a coq-2e like form in animals that synthesize RQ. Crucially, no mammalian hosts show any evidence for this kind of alternative splicing of their coq-2 orthologs, nor do they have an e-like exon either in their gene predictions or genome sequences or in any available RNA-seq or direct transcriptome sequence data (human and mouse are shown as representatives in Figure 3). Note that the RNA-seq datasets are much deeper and more extensive in humans and mouse than in helminths, mollusks, or annelids, so this lack of evidence for such alternative splicing is unlikely to be due to a failure to detect such events due to low coverage transcriptome data. We conclude that the e-exon and the mutually exclusive alternative splicing of coq-2 is unique to animals that synthesize RQ and is not found in any other species. This suggests that this coq-2 alternative splicing could indeed be linked to the ability to synthesize RQ.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56376/elife-56376-fig3-v2.jpg)\n\n**Figure 3.:** Parasitic helminths, as well as annelids and mollusks, have two internal exons that are spliced in a mutually exclusive manner. By contrast, humans and other hosts only have one exon that is homologous to exon 6a of C. elegans coq-2. The a-form exon (red) shares greater similarity to the exon present in species that do not synthesize RQ, while the e-form (blue) is present only in RQ-producing species. The genes used for each species are listed in Supplementary file 3. The gene structures shown are based on genome annotations but in many cases include manual reannotations \u2014 in all such cases, the manual annotations are confirmed with RNA-seq data.\n\nWe aligned the two mutually exclusive exons across helminth species and compared them to the similar regions of their host COQ-2 sequences, and of other eukaryotes that cannot synthesize RQ (S. cerevisiae\u00a0and S. pombe) (Figure 4). We find that all the coq-2a-specific exons are similar to the pan-eukaryotic COQ-2 sequence, whereas all the coq-2e-specific exons have a distinct sequence to this. We examined the alignments of the a- and e-specific exons and identified two residues that are strictly conserved in pan-eukaryotic COQ-2 sequences, Phe204 and Ala243 (C. elegans numbering), that are switched to a Leu and a Ser residue in all COQ2-e-specific exons that we examined (Figure 4). These residues sit very close to the substrates in the active site of the enzyme (Figure 2C) and we note that mutation of the equivalent Ala243 residue dramatically affects the ability of human COQ-2 to synthesize UQ (Desbats et al., 2016). Altogether these results suggest that animals that synthesize both UQ and RQ synthesize two forms of COQ-2 \u2014 one looks similar to that in all other eukaryotic species, whereas the other has a single exon that appears to be specific for species that synthesize RQ. To test whether these two COQ-2 isoforms have distinct roles in UQ and RQ synthesis, we turned to C. elegans.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56376/elife-56376-fig4-v2.jpg)\n\n**Figure 4.:** Amino acid sequences of COQ-2 orthologs were aligned using Clustal Omega (Madeira et al., 2019). The sequences of exons homologous to exon 6a/e in C. elegans, as well as the flanking five amino acid sequences, were used to generate the alignment. Sequences of the mutually exclusive exons are shaded in red (a-form) or blue (e-form). Two residue changes between the a- and e- forms are highlighted (Phe to Leu, Ala to Ser) and are invariant across diverse species that synthesize RQ. The COQ-2 orthologs and exons used for each species are listed in Supplementary file 3.\n\n### Efficient RQ synthesis requires the coq-2e isoform\n\nWe found that helminths synthesize two major isoforms of coq-2, whereas their hosts only synthesize a single isoform. To test the requirement for each of the two major helminth isoforms of coq-2 for RQ synthesis, we used CRISPR engineering to generate C. elegans mutant strains that either lack coq-2 exon 6a (coq-2(syb1715)) or coq-2 exon 6e (coq-2(syb1721)) \u2014 we refer to these as coq-2\u22066a and coq-2\u22066e, respectively, from here on (see Figure 5A and Supplementary file 1 for details of engineering). We find that the coq-2\u22066e strain synthesizes essentially no detectable RQ but has higher levels of UQ, whereas coq-2\u22066a has greatly reduced UQ levels but higher RQ levels (Figure 5B, Supplementary file 2). We conclude that the coq-2e isoform, which includes the helminth/annelid/mollusc-specific exon 6e, is required for efficient RQ synthesis. While these engineered changes could potentially affect RQ levels via some indirect mechanisms such as alterations in the levels of 4HB and 3HA, it is unclear what mechanism would drive those metabolic rewirings. We thus suggest that the more parsimonious explanation is the one we propose here that COQ-2a and COQ-2e have different substrate preferences due to the large change to the core of the enzyme.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56376/elife-56376-fig5-v2.jpg)\n\n**Figure 5.:** (A) Mutant strains were generated in C. elegans by deletion of exon 6a (coq-2\u22066a) or exon 6e (coq-2\u22066e). (B) Deletion of exon 6a from the coq-2 gene significantly increased the level of RQ9 (p=0.013) and significantly decreased UQ9 (p<0.001) compared to the N2 control. By contrast, the deletion of exon 6e decreased RQ9 to a negligible level (p<0.001) and slightly increased the level of UQ9 (p=0.130) compared to N2. Statistically significant increases and decreases with respect to N2 levels are denoted with \u2605 and \u25ca, respectively; error bars reflect standard deviation where N\u00a0=\u00a04. (C) Deletion of coq-2 exon 6e affects the ability of worms to survive extended KCN treatment. Wild-type (N2) and coq-2 mutant L1 worms were exposed to 200 \u00b5M KCN for 15 hr. KCN was then diluted 6-fold and worm movement was measured over 3 hr to track recovery from KCN exposure (see Materials and methods). Worms without exon 6e could not survive extended treatment with KCN while deletion of exon 6a had little effect on KCN survival. Cyanide titration is shown in Figure 5\u2014figure supplement 1. Curves show the mean of four biological replicates and error bars are standard errors of the mean.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56376/elife-56376-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Wild-type (N2), coq-2 and kynu-1(e1003) mutant L1 worms were exposed to 150\u2013500 \u00b5M KCN for 15 hr. KCN was then diluted 6-fold and worm movement was measured over 3 hr to track recovery from KCN exposure (see Materials and methods). Worms without exon 6e could not survive extended treatment at KCN concentrations greater than 150 \u00b5M, and resembled kynu-1(e1003), a mutant devoid of RQ. Deletion of exon 6a had little effect on KCN survival and showed recovery patterns similar to wild-type worms. Curves show the mean of four biological replicates and error bars are standard errors of the mean.\n\nTo further examine whether COQ-2e is required for RQ synthesis and thus for RQ-dependent metabolism, we tested whether the coq-2\u22066a and coq-2\u22066e strains could survive long-term exposure to potassium cyanide (KCN) (Figure 5C and Figure 5\u2014figure supplement 1). We previously showed that when C. elegans is exposed to KCN, it switches to RQ-dependent metabolism and that while wild-type worms can survive a 15 hr exposure to KCN, C. elegans strains that do not synthesize RQ cannot survive. We found that while the coq-2\u22066a strain (that can synthesize RQ) survives 15 hr of KCN exposure, as well as wild-type animals, the coq-2\u22066e strain that synthesizes no RQ does not survive, confirming the functional relevance of the coq-2e isoform as being critical for RQ synthesis.\n\n### Regulation of the alternative splicing of coq-2 in helminths\n\nHelminths synthesize two isoforms of COQ-2 \u2014 COQ-2a resembles the pan-eukaryotic consensus and cannot synthesize RQ, whereas COQ-2e includes an exon that is only found in species that synthesize RQ and COQ-2e is required for RQ synthesis. Changing the levels of coq-2a and coq-2e splice forms could thus regulate the switch from UQ synthesis in the aerobic environment outside the host to RQ synthesis in the host gut. We thus examined RNA-seq data to see whether parasites switch between these isoforms as they switch between these environments.\n\nAscaris suum has a relatively simple life cycle (schematic Figure 6A) and is the pig equivalent of Ascaris lumbricoides which infects\u00a0~900 M humans. Eggs are laid in the host and emerge via defecation and the L1-L3 larval stages develop within the egg outside the host. The L3 infective larval stage then enters the host via ingestion into the digestive tract. These then leave the digestive tract and synthesize their way to the lungs where they develop into L4 larvae and, finally, the L4 re-enter the digest tract and move to the small intestine where they develop into adulthood. The adults remain in this anaerobic environment for the remainder of their life. The free-living larval stages have relatively low RQ (~35% of total quinones), whereas adults\u00a0have\u00a0high RQ (\u00a0~100% of total quinones) (Takamiya et al., 1993). We used RNA-seq data (Wang et al., 2011; Wang et al., 2012) to analyze coq-2 isoforms in free-living stages and in the adults to examine whether there was a\u00a0switch from coq-2a to coq-2e as the parasites switch from low RQ aerobic-respiring embryos and larvae to high RQ anaerobic adults. We see a clear switch\u00a0approximately\u00a060% of coq-2 transcripts are coq-2e in the free-living, aerobic stages but\u00a0>90% is the RQ-synthesizing coq-2e form in adults (Figure 6B). Increased coq-2e levels thus correlate with increased RQ levels.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/56376/elife-56376-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic of the\u00a0life cycle of A. suum. \u2018OUT\u2019 denotes aerobically\u00a0respiring free-living stages; \u2018IN\u2019 indicates stages living inside the host intestine. (B) Graph indicates the percentage of all COQ-2 transcripts that include the RQ-specific exon (Percent e-form) in a number of life cycle stages, sexes, and tissues. Timing\u00a0of embryogenesis shows the post-fertilization time\u00a0in hours. (C) Schematic of the\u00a0life cycle of Strongyloides stercoralis. \u2018OUT\u2019 denotes aerobically\u00a0respiring free-living stages; \u2018IN\u2019 indicates stages living inside the host. Note that egg, L1, L2, and L3 can either develop inside or outside the host. (D) Graph indicates the percentage of all COQ-2 transcripts that include the RQ-specific exon (Percent e-form) in L3 larvae that either developed outside the host (OUT) or inside the host (IN). Data were\u00a0derived from three individual replicates taken from published RNA-seq data (Stoltzfus et al., 2012).\n\nThe analysis in Ascaris is complicated by the life cycle: while we are comparing coq-2 splicing in two distinct environments, this is also necessarily a comparison between different life stages (we are comparing developing embryos or larvae with adults). It is possible that the changes in splicing we see are not environmentally-induced by the switch from normoxia to anaerobic conditions but are simply a developmentally programmed switch. To address this, we turned to Strongyloides stercoralis. The life cycle of S. stercoralis (schematic Figure 6C) is broadly similar to Ascaris \u2014 L1-L3 stages are free-living, the L3 infective stage infects hosts, and L4 larvae and adults develop and live in the host. However, they have an alternative life cycle where instead of L1-L3 developing outside the host, the eggs can hatch in the host and the entire life cycle takes place inside the host. This allows us to compare the same larval stage in two conditions \u2014 here we compare L3 animals that developed inside the host anaerobic environment with L3 animals that developed outside the host. The difference is clear\u00a0about\u00a0<20% of coq-2 transcripts are coq-2e in the free-living L3s but\u00a0>60% is the RQ-synthesizing coq-2e form in L3s that developed inside the host (Figure 6D; Stoltzfus et al., 2012). We conclude that increased inclusion of the coq-2e-specific exon correlates with increased synthesis of RQ during the parasite life cycles.\n\nIn summary, our data show that animal species that synthesize RQ regulate the choice between synthesizing UQ and RQ by alternative splicing of the polyprenyltransferase COQ-2\u00a0gene. A switch between two mutually exclusive exons changes the core of the COQ-2 enzyme and switches it from primarily generating UQ precursors to primarily RQ precursors. We propose that this switch ultimately results in a shift in quinone content from high UQ in aerobic conditions to high RQ in anaerobic conditions. This alternative splicing event is only seen in species that synthesize RQ and the switch correlates with the change from aerobic to anaerobic metabolism in parasitic helminths.\n\n## Discussion\n\nOrganisms are continually challenged by changes in their environments and they must be able to respond for them to survive. Hypoxia is one such challenge and animals have evolved diverse strategies to alter their metabolism to cope with low oxygen levels. For example, humans rapidly switch to anaerobic glycolysis, generating lactate; goldfish on the other hand can adapt to hypoxia by fermenting carbohydrates to generate ethanol (Shoubridge and Hochachka, 1980). In this paper, we focus on how helminths can survive in anaerobic conditions by switching from ubiquinone (UQ)-dependent aerobic metabolism to rhodoquinone (RQ)-dependent anaerobic metabolism.\n\nThe ability to use RQ is highly restricted among animal species \u2014 only helminths, mollusks, and annelids are known to synthesize and use RQ. This is a key adaptation since it allows them to rewire their mitochondrial electron transport chain (ETC) to use a variety of terminal electron acceptors in the place of oxygen. They can,\u00a0therefore, still use Complex I to pump protons and generate the proton motive force need to power the F0F1-ATPase in the absence of oxygen. This allows them to survive without oxygen for long periods \u2014 they are thus facultative anaerobes. C. elegans is a free-living nematode that does not face extended anaerobic conditions as an obligate part of its life\u00a0cycle. However, Pseudomonas aeruginosa, a natural pathogen of C. elegans, uses cyanide to kill the worm (Gallagher and Manoil, 2001). Cyanide blocks the conventional ETC at Complex IV preventing the use of oxygen as a final electron acceptor. We speculate that in C. elegans, the alternative ETC may be an adaptive strategy to withstand transient cyanide stress from pathogens. For parasitic helminths like Ascaris, the need to respire anaerobically is critical for their life cycle since they must survive for long periods in the anaerobic environment of the human gut. Since the host does not synthesize RQ or use RQ-dependent metabolism if we could interfere with RQ synthesis, this would be an excellent way to target the parasite and leave the host untouched.\n\nWe previously showed that the key decision on whether to synthesize UQ to power aerobic metabolism or RQ to synthesize anaerobic metabolism is dictated by the choice of substrate of the polyprenyltransferase COQ-2 (Del Borrello et al., 2019; Roberts Buceta et al., 2019). COQ-2 must switch from using 4HB to synthesize UQ in aerobic conditions to 3HA to synthesize RQ in anaerobic conditions. Here we reveal the simple mechanism for that switch in substrate specificity in helminths: they use the mutually exclusive alternative splicing of two internal exons to remodel the core of COQ-2. Inclusion of exon 6a results in the COQ-2a enzyme that can synthesize UQ but not RQ; switching exon 6a for the alternative exon 6e yields COQ-2e which principally synthesizes RQ (Figure 7). All eukaryotes synthesize a homolog of COQ-2a \u2014 only the species known to synthesize RQ (helminths, annelids, and mollusks) have genomes encoding the RQ-specific exon 6e and this exon is introduced by alternative splicing in a similar mutually exclusive splicing event in all these phyla. These different lineages thus have the same solution to the problem of substrate switching in COQ-2 \u2014 to have two distinct forms of COQ-2 due to alternative splicing \u2014 and all do it with the same structural switch in COQ-2.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/56376/elife-56376-fig7-v2.jpg)\n\n**Figure 7.:** elegans. There are two variants of exon 6 in the C. elegans coq-2 gene (6a and 6e) which undergo mutually exclusive alternative splicing leading to COQ-2a and COQ-2e isoforms, respectively. Synthesis of UQ originates from 4-hydroxybenzoic acid (4HB) and prenylation is catalyzed by COQ-2a (and marginally by COQ-2e) to form 4-hydroxy-3-nonaprenylbenzoic acid (NHB). By contrast, RQ is most likely synthesized from 3HA, and prenylation is facilitated by COQ-2e to form NHA. Several additional steps are required to convert NHB to UQ and NHA to RQ, respectively. Supplementary Documentation.\n\nThe alternative splicing of COQ-2 in all animal lineages that synthesize RQ draws focus to COQ-2 as a potential anthelmintic target. COQ-2e is required for RQ generation and has a distinct sequence to the pan-eukaryotic COQ-2a. The switch between COQ-2a to COQ-2e causes a change in the core of the COQ-2 active site and all species that synthesize RQ have a pair of conserved residues in COQ-2e. We suggest that small molecule inhibitors that selectively target COQ-2e and not the host COQ-2 enzyme could be potent anthelmintics and our research\u00a0groups are initiating these screens at this point. We also note that it is rare to see such a clear and profound change in enzyme specificity due to a single splice event affecting the core of an enzyme catalytic site. There are other examples, most notably a switch in the substrate specificity of the cytochrome P450 CYP4F3 from LTB4 to arachidonic acid (Christmas et al., 1999; Christmas et al., 2001). This switch is tissue specific rather than environmentally induced, however, and there are few other examples to our knowledge. The regulation of COQ-2 specificity by alternative splicing is thus a beautiful and rare example of this type of enzyme regulation by alternative splicing. We note that while alternative splicing of COQ-2 appears to be the key regulated step in determining RQ or UQ biosynthesis, we see no such splicing regulation for other enzymes that are required for both RQ and UQ synthesis downstream of COQ-2 (Roberts Buceta et al., 2019), for\u00a0example, there are no known splice variants of COQ-3 and COQ-5, which are quinone methylases downstream of COQ-2. This suggests that while COQ-2 can clearly discriminate between substrates that have/lack a 2-amino group, COQ-3 and COQ-5 would be more promiscuous than COQ-2 and act on both RQ and UQ precursors.\n\nFinally, the mechanism of alternative splicing to regulate the synthesis of UQ or RQ may explain some part of the evolution of RQ synthesis in animals and its phylogenetic distribution. One of the enduring mysteries of RQ synthesis is that it only occurs in very restricted animal phyla. RQ synthesis could either be the ancestral state with widespread loss across most animal species or else RQ synthesis could have arisen independently in helminths, annelids, and mollusks. It is unclear that our findings here definitively answer this but we do note that there is a precedent for a mutually exclusive splicing event that has arisen independently in helminths, annelids, and mollusks in the gene mrp-1 (Yue et al., 2017) which encodes a transporter that is required for the uptake of vitamin B12 into mitochondria. The\u00a0mrp-1 gene\u00a0undergoes alternative splicing in these species and just like coq-2, mrp-1 has mutually exclusive exons of exactly the same length. Importantly, in\u00a0mrp-1,\u00a0a mutually\u00a0exclusive alternative splicing has arisen independently in each lineage in which it is seen. This example indicates it is at least plausible that alternative splicing of coq-2 might have originated independently in helminths, annelids, and mollusks, but we do not believe that our current data can distinguish between an ancestral animal origin of RQ biosynthesis followed by independent losses, or independent animal origin of RQ biosynthesis due to an \u2018mrp-1-like\u2019 independent evolution of alternative splicing of coq-2. Future studies should shed light on this issue. Whatever the evolutionary scenario, our results show that a simple innovation of a mutually\u00a0exclusive alternative splicing event can have a profound effect rewiring animal metabolism and it will be interesting to establish whether alternative splicing of COQ-2 is sufficient to drive RQ biosynthesis, or whether additional innovations are needed.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Caenorhabditis elegans)</td>\n      <td>coq-2</td>\n      <td>WormBase</td>\n      <td>WBGene00000762</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>N2</td>\n      <td>Caenorhabditis Genetics Center (CGC)</td>\n      <td>N2</td>\n      <td>Wild-type</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>coq-2\u00a0(syb1715)</td>\n      <td>This paper</td>\n      <td>PHX1715</td>\n      <td>coq-2\u22066a Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>coq-2\u00a0(syb1721)</td>\n      <td>This paper</td>\n      <td>PHX1721</td>\n      <td>coq-2\u22066e Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>OP50</td>\n      <td>Caenorhabditis Genetics Center (CGC)</td>\n      <td>OP50</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgRNAs used in this study</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PCR primers used in this study</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Potassium cyanide (KCN)</td>\n      <td>Sigma-Aldrich</td>\n      <td>60178\u201325G</td>\n      <td>Stock solution: 50 mM in PBS buffer</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Hexane, HPLC grade</td>\n      <td>Sigma-Aldrich</td>\n      <td>650552\u20131L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Acetonitrile, LC-MS grade</td>\n      <td>Fisher Scientific</td>\n      <td>A955-4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Ubiquinone-3 standard</td>\n      <td>Campbell et al., 2019</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Ubiquinone-9 standard</td>\n      <td>Sigma-Aldrich</td>\n      <td>27597\u20131 MG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Rhodoquinone-9 standard</td>\n      <td>Roberts Buceta et al., 2019</td>\n      <td></td>\n      <td>Isolated from Ascaris suum</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Whippet</td>\n      <td>Sterne-Weiler et al., 2018</td>\n      <td>RRID:SCR_018349</td>\n      <td>https://github.com/timbitz/Whippet.jl</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HISAT2</td>\n      <td>Kim et al., 2019</td>\n      <td>RRID:SCR_015530</td>\n      <td>https://daehwankimlab.github.io/hisat2/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>Resource for Biocomputing Visualization and Informatics Pettersen et al., 2004</td>\n      <td>RRID:SCR_004097</td>\n      <td>http://plato.cgl.ucsf.edu/chimera/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MODELLER</td>\n      <td>University of California at San Francisco Webb and Sali, 2016</td>\n      <td>RRID:SCR_008395</td>\n      <td>https://salilab.org/modeller/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image analysis pipeline</td>\n      <td>Spensley et al., 2018</td>\n      <td></td>\n      <td>https://github.com/fraser-lab-UofT/acute_assay</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Python</td>\n      <td>Python</td>\n      <td>RRID:SCR_008394</td>\n      <td>https://www.python.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NIS-Elements</td>\n      <td>Nikon</td>\n      <td>RRID:SCR_014329</td>\n      <td>https://www.microscope.healthcare.nikon.com/products/software/nis-elements</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageMagick</td>\n      <td>ImageMagick</td>\n      <td>RRID:SCR_014491</td>\n      <td>https://imagemagick.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BioFormats</td>\n      <td>OME - Open Microscopy Environment</td>\n      <td>RRID:SCR_000450</td>\n      <td>https://docs.openmicroscopy.org/bio-formats/5.7.1/users/comlinetools/index.html</td>\n    </tr>\n  </tbody>\n</table>\n\n### Sequence identification and analysis\n\nTo identify COQ-2 sequences from lineages known to synthesize RQ, we searched and analyzed from genomes and transcriptomes of\u00a0platyhelminths (Schistosoma mansoni, Fasciola hepatica, and Schmidtea mediterranea), nematodes (Ascaris suum, Brugia malayi, Haemonchus contortus, Trichuris muris, Strongyloides stercoralis, Strongyloides ratti, Ancylostoma ceylanicum, and C. elegans), mollusks (Crassostrea virginica, and Biomphalaria glabrata), and annelids (Capitella teleta). Sequences were retrieved from https://parasite.wormbase.org (WBPS14), S. mediterranea database (http://smedgd.neuro.utah.edu), NCBI protein and nucleotide databases and UniProt (https://www.uniprot.org). Human, mice, and Saccharomyces cerevisiae COQ-2, eukaryotic lineages are\u00a0known to be unable to synthesize RQ, were also identified for comparison. Searches were performed initially with BLASTP (protein databases) using human and C. elegans COQ-2 sequences as queries. Additionally, TBLASTN searches were performed using genomic sequences and cDNAs databases. This served to confirm the annotated protein sequences and to identify the non-annotated ones. Identified sequences were confirmed by best reciprocal hits in BLAST. Multiple sequence alignments were made with MUSCLE 3.8 (Chojnacki et al., 2017). Gaps were manually refined after alignment inspection.\n\n### RNA-seq analysis of mutually exclusive exons\n\nTo confirm if coq-2 exons are spliced in a mutually exclusive manner in other helminths, mollusks and annelids, we analyzed the\u00a0existing RNA-seq data for evidence of alternative splicing (listed in Supplementary file 3). Whippet (v0.11) (Sterne-Weiler et al., 2018) was used to analyze RNA-seq data for quantification of AS events. To create a splicing index of exon-exon junctions in Whippet, genome annotations were taken from WormBase Parasite (WBPS14) and Ensembl Metazoa (Release 45). To identify novel exons and splice sites, reads were first aligned to the genome using HISAT2 (Kim et al., 2015). The BAM file generated was then used to supplement the\u00a0existing genome annotations to create a splicing index of known and predicted exon-exon junctions in Whippet (using the --bam --bam-both-novel settings). Where required, TBLASTN data was also used to guide manual re-annotation of the coq-2 gene. Quantification of AS events was then performed by running whippet quant at default settings. This analysis was repeated for all species listed in Figure 5 using publicly available RNA-seq datasets (details on datasets used can be found in Supplementary file 3). A summary of coq-2 exons with reads that mapped to alternative exon-exon junctions are listed in Supplementary file 3. We also identified cases where both coq-2 exons were either included or skipped. However, since these are likely to be non-productive transcripts due to a pre-mature termination codon, we expressed exon usage as the proportion of events where either only the \u2018a\u2019 or the \u2018e\u2019 form is included.\n\n### Structural analysis\n\nMultiple sequence alignment was performed using Clustal Omega (Madeira et al., 2019). The substrate-bound structure of a UbiA homolog from A. pernix (PDB: 4OD5) was displayed on Chimera (Pettersen et al., 2004) and the C. elegans sequence was threaded by homology using Modeller (Sali and Blundell, 1993; Webb and Sali, 2016).\n\n### Caenorhabditis elegans strains and culture conditions\n\nThe C. elegans wild-type Bristol strain (N2) was obtained from the Caenorhabditis Genetics Center (CGC, University of Minnesota, USA), which is supported by the National Institutes of Health-Office of Research Infrastructure Programs. The C. elegans mutant strains in coq-2 exon 6A (PHX1715, coq-2(syb1715)) and coq-2\u00a0exon 6E (PHX1721, coq-2(syb1721)) were generated by Suny Biotech Co., Ltd (Fuzhou City, China) using CRISPR/Cas9 system. The precise deletion of both mutant strains (134 bp) was verified by DNA sequencing the flanking region of exons 6a and 6e. The wild-type sequence, the deleted sequence in each strain, the sgRNAs, and primers used are listed in Supplementary file 1.\n\nThe general methods used for culturing and maintenance of C. elegans are described in Brenner, 1974. All chemical reagents were purchased from Sigma-Aldrich (St. Louis, MO). The E. coli OP50 strain, used as C. elegans food, was also received from CGC.\n\n### Lipid extraction and LC-MS quantitation\n\nLipid extractions of C. elegans N2 and mutant strains were performed on\u00a0~100 mg worm pellets after adding 1000 pmol UQ3 internal standard (Roberts Buceta et al., 2019). LC-MS samples were prepared from lipid extracts and diluted 1:100 (Bernert et al., 2019). Standards were extracted using the same method as for worm samples at the following concentrations: UQ3 (10 pmol/10 \u00b5L injection), RQ9 (0.75, 1.5, 3.0, 4.5, or 6.0 pmol/10 \u00b5L injection), and UQ9 (3.75, 7.5, 15.0, 22.5, or 30.0 pmol/10 \u00b5L injection). The UQ3 standard was synthesized at Gonzaga University (Campbell et al., 2019), the RQ9 standard was isolated by preparative chromatography from A. suum lipid extracts (Roberts Buceta et al., 2019) and the UQ9 standard was purchased (Sigma-Aldrich, St. Louis, MO). The general LC-MS conditions and parameters were previously reported (Bernert et al., 2019; Campbell et al., 2019). Samples were analyzed in quadruplicate and the pmol quinone was determined from the standard curve and corrected for recovery of internal standard. Samples were normalized by mg pellet mass.\n\n### Image-based KCN recovery assay\n\nThe KCN recovery assay was performed as previously described (Del Borrello et al., 2019; Spensley et al., 2018). Briefly, L1 worms were isolated by filtration through an 11 \u00b5m nylon mesh filter (Millipore: S5EJ008M04). Approximately, 100 L1 worms in M9 were dispensed to each well of a 96-well plate and an equal volume of potassium cyanide (KCN) (Sigma-Aldrich, St. Louis, MO) solution was then added to a final concentration of 200 \u00b5M KCN. Upon KCN addition, the\u00a0plates were immediately sealed and incubated at room temperature for 15 hr on a rocking platform. After 15 hr, KCN was diluted 6-fold by addition of M9 buffer. Plates were immediately imaged on a Nikon Ti Eclipse microscope every 10 min for 3 hr. Fractional mobility scores (FMS) were then calculated using a custom image analysis pipeline (Spensley et al., 2018). For each strain, FMSfor the KCN-treated wells were normalized to the M9-only control wells at the first timepoint. Three technical replicates were carried out in each experiment and the final FMS taken from the mean of four biological replicates.\n",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "65f27302-6ead-4205-8e4f-effff0a7eea2",
+      "submission_id": "ad24cff1-48d5-4da2-a7bb-cd56ffc3cda2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gisela Storz, National Institute of Child Health and Human Development United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56376.sa1](https://doi.org/10.7554/eLife.56376.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Alternative splicing of COQ-2 determines the choice between ubiquinone and rhodoquinone biosynthesis in animals\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Gisela Storz as Reviewing and Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nParasitic helminths are important human pathogens. It is important to find candidate therapies that specifically target these pathogens. Many parasitic helminths use rhodoquinone (RQ) instead of ubiquinone (UQ) when they live inside a host, in an anaerobic environment. Since the host does not make or use RQ, it could be an important pharmacological target. The authors previously showed that switch from UQ to RQ synthesis in parasitic helminths is driven by a change of substrate specificity of the polyprenyltransferase COQ-2 (Del Borrello et al., 2019; Roberts Buceta et al., 2019) when their living environment is switched from normoxia to anaerobic conditions. In this paper, they answer a simple but important question: what is the mechanism for substrate switching for COQ-2? The authors found that coq-2 has two different splicing isoforms, coq-2a and coq-2e, and that COQ-2a is specific for UQ synthesis while COQ-2e is specific for RQ synthesis. They use CRISPR/Cas9 to specifically delete each isoform in C. elegans and then measure UQ and RQ levels. The results clearly demonstrate the specificity of COQ-2a and COQ-2e for UQ and RQ, respectively. They further show the functional significance of this as animals that cannot synthesize RQ are hypersensitive to cyanide, which blocks the electron transport chain, and is a proxy for anaerobic conditions.\n\nRevisions for this paper:\n\nThe proposed model is attractive and seems very promising and overall the reviewers were enthusiastic about the study. However, the paper is light on results. After discussion, the reviewers recommend that you consider the following experiments:\n\n1) Directly validate splice forms' abundance on the RNA levels. The RNA-seq data meta-analysis is reasonable, but it would be good to see this validated.\n\n2) Measure the level of 4HB and 3HA. If only the splice form selection drives the switch in quinone type then 4HB and 3HA levels should not change drastically.\n\n3) Titrate KCN in Figure 5C experiment and also feed the helminths with 3HA. Data show that even the UQ-specific form can make a small amount of RQ. Is it enough to survive lower KCN treatment and can it be boosted by 3HA feeding?\n\n4) Can the e-exon, which switches COQ2 to make more RQ, be found in any other organism? It was not clear in the text and methods if the sequence was \"BLASTed\" against all organisms to see if the e-exon exists in any non-Nematodes.\n\n5) Analyze the in silico model and do binding simulations to explain why F204L and A243S changes would so strongly dictate precursor selection. In the human system, COQ2 can use many modified headgroups so why two mutations make it so specific?\n\nEditorial points:\n\nThe text should also be revised to address the following:\n\n\u2013 Throughout: The text could be improved to correctly describe the results of the experiments. For example, in the final conclusion authors say that \"A switch between two mutually exclusive exons changes the core of the COQ-2 enzyme and switches it from generating UQ precursors to RQ precursors\" however, Figure 5C shows that RQ-specific form makes both RQ and UQ, and also UQ-specific form can make a small amount of RQ. Therefore, it is somewhat misleading to suggest that individual splice forms can make only UQ or RQ.\n\n\u2013 Introduction paragraph three: Maybe just start sentence with \"RQ biosynthesis in animals requires precursors derived from tryptophan\" (the evidence in Stairs is not convincing, it could be bacteria in the medium), the situation in microbes does not bear upon these finding. Bernet et al. is convincing, but concerns the R. rubrum gene.\n\n\u2013 Please explain the conversion of the amino group in PABA to the hydroxyl group in HHB in Figure 2C.\n\n\u2013 Introduction paragraph four: summarize the findings and restate the Abstract (mollusc and mollusk spelling occur). The meaning of \"independent evolution\" in is unclear.\n\n\u2013 Figure 1 legend: ETF is not shown in the figure. For malate dismutation to operate (which it does, the endproduct stoichiometry is correct), fumarate reductase (CII) is the RQ oxidant (M\u00fcller et al., MMBR 2012).\n\n\u2013 Subsection \u201cRegulation of the alternative splicing of coq-2 in helminths\u201d paragraph four: the data show that animal species\n\n\u2013 Discussion paragraph three: all animal lineages\n\n\u2013 Discussion: The authors favour independent origin of this mechanism and the exons. One needs to spell out what that means. That would mean that sequence homologous exons arose independently in independent lineages, which would mean that e arose from a each time, which is possible, and that e always arose in front of a in each of the 14 lineages surveyed, a 1/16000 proposition if all of the events were independent. Of course, if e arose from a in the common ancestor of these lineages followed by many differential losses in aerobic lineages, then we would have normal Darwinian evolution and no need for LGT or independent origins (googling differential gene loss in eukaryotes or evolution by gene loss returns a lot of hits, the evidence for the widespread occurrence of loss in eukaryotes is uncontroversial). Also possible. Of course, it is also possible that the alternative RQ specific exon here arose only once in one of these animals has been passed around via LGT among eukaryotic lineages (Leger et al., 2018) and specifically inserted into the COQ2 gene of the anaeobes in the conserved position (always in front of the UQ exon) in adaptation to anaerobic niches.\n\n\u2013 What if we consider the possibility that a single origin and loss, not independent origins (by whatever mechanism) are the cause of the homologous exons (and exon order). What use would RQ be to the common ancestor of molluscs annelisds and nematodes? It would be essential.\n\n\u2013 Animal aroses and diversified during a phase of Earth history in which oxygen was still low. Geologists have been saying for 20 years that the Proterozoic was anoxic (see Figure 1 in Lyons et al., 2014 or Figure 2 in Catling and Zahnle, 2020). Palaeontologists have been saying that animals arose and diversified in the Ediacaran (that is, Precambrian; <540 MY ago), nematode-mollusc divergence (do Reis et al., 2015) or the nematode annelid divergence (Parfrey et al., 2011). When I find 540 MY ago on the timescales in Lyons et al. and Catling and Zahnle, oxygen is low. Moreover, during the one billion years of eukaryote evolution before that, oxygen was low too. Some of us have been saying for 20 years (Zimorski et al., 2019; Gould et al., 2019) that survival in anaerobic environments was a normal thing that eukaryotes did for over a billlion years of evolution before life on land above the soli line. In that interpretation, the expectation would be that mechanisms of aerobic-anaerobic switching exist that are conserved across annelids, molluscs and nematodes (including free living and parasitic forms). My goodness, a Nobel Prize in Physiology and Medicine went for HIF last year, which senses low oxygen in animals. HIF is conserved across all animals. Did the HIF-dependent oxygen sensing cascade arise independently in all animals? Not likely. Was the HIF pathway laterally transferred? Not likely. I would think that the authors might wish to at least entertain the possibility that the anaerobic physiology that they see in these in animals (and eukaryotes) is conserved from the low oxygen and anaerobic past of animal and eukaryotic lineages. Is it possible that HIF sends the signal that regulates the RQ response? Yes, but I know of no evidence to suggest that, and there are HIF-independent possibilites. They mention Hochachka's work on vertebrates and the goldfish ethanol fermentation example. The vertebrate mechanisms (anaerobiosis in humans will work for about a minute) are not UQ dependent. This is the author's paper and they should write what they want. But if they say independent origins, that interpretation carries a lot of corollaries, none of which are spelled out in the paper, but are spelled out here. Of course, maybe 20 years of geochemical data on late oyxgen, the known age of fossil animals, the conservation of HIF and the conservation of pathways for eukaryote anaerobe survival are all wrong.\n\n\u2013 Why does C. elegans make both RQ and UQ? A paragraph in the Discussion would be helpful, even if it is speculative.\n\n\u2013 Do the other enzymes involved in RQ or UQ biosynthesis change in expression under anaerobic conditions?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Alternative splicing of COQ-2 determines the choice between ubiquinone and rhodoquinone biosynthesis in animals\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Gisela Storz as the Reviewing and Senior Editor. The reviewers have opted to remain anonymous.\n\nSummary:\n\nParasitic helminths are important human pathogens. It is important to find candidate therapies that specifically target these pathogens. Many parasitic helminths use rhodoquinone (RQ) instead of ubiquinone (UQ) when they live inside a host, in an anaerobic environment. Since the host does not make or use RQ, it could be an important pharmacological target. The authors previously showed that switch from UQ to RQ synthesis in parasitic helminths is driven by a change of substrate specificity of the polyprenyltransferase COQ-2 (Del Borrello et al., 2019; Roberts Buceta et al., 2019) when their living environment is switched from normoxia to anaerobic conditions. In this paper, they answer a simple but important question: what is the mechanism for substrate switching for COQ-2? The authors found that coq-2 has two different splicing isoforms, coq-2a and coq-2e, and that COQ-2a is specific for UQ synthesis while COQ-2e is specific for RQ synthesis. They use CRISPR/Cas9 to specifically delete each isoform in C. elegans and then measure UQ and RQ levels. The results clearly demonstrate the specificity of COQ-2a and COQ-2e for UQ and RQ, respectively. They further show the functional significance of this as animals that cannot synthesize RQ are hypersensitive to cyanide, which blocks the electron transport chain, and is a proxy for anaerobic conditions.\n\nRevisions:\n\nReviewer #2:\n\nThe authors have put worth a reasonable revision that provided very little new data, but nonetheless somewhat bolsters their compelling model. Given that the authors haven't, and perhaps can't, provide certain validations of their data, I think the title and some language should be toned down. In the end, both splice forms can make both quinones, but at a different ratio. Also, both splice forms are often co-expressed. The levels of 4HB and 3HA headgroups were not measured so how they impact levels of the quinones is unknown. It will require a significant amount of biochemical data to fully understand the exact differences between the COQ-2a and COQ-2e splice forms. However, it is quite unlikely that the general model put forth is incorrect.\n\nReviewer #3:\n\nI continue to think this is a nice study that should be published in eLife. The authors did a nice job in their rebuttal and I am satisfied overall. I agree that RNA-seq is totally fine, given the depth and precision of the method. However, I find parts of the Discussion a bit unsatisfying. For instance, what is the function of alternative splicing of mrp-1? There is no reference for the statement that this transporter transports B12 into the mitochondria. Also, it is not clear that vitamin B12 is required for RQ synthesis in C. elegans, even though it is stated. Finally, the relationship with branched chain fatty acid synthesis is unclear to me. However, clarifying this is up to the authors and shouldn't prevent acceptance of the work.\n",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7f439fb9-7bd8-4851-b1a6-6a6cd023590e",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C1",
+      "claim": "Parasitic helminths use two benzoquinones as electron carriers in the electron transport chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Parasitic helminths use two benzoquinones as electron carriers in the electron transport chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the abstract about helminth metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "1cfd43ec-d0b1-4e51-8316-d7c7bc2df593",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C2",
+      "claim": "In normoxia, parasitic helminths use ubiquinone (UQ).",
+      "claim_type": "EXPLICIT",
+      "source": "In normoxia, they use ubiquinone (UQ), but in anaerobic conditions inside the host, they require rhodoquinone (RQ) and greatly increase RQ levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the broader literature on helminth metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "05230546-85da-41ee-9537-dceec62f4318",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C3",
+      "claim": "In anaerobic conditions inside the host, parasitic helminths require rhodoquinone (RQ) and greatly increase RQ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In normoxia, they use ubiquinone (UQ), but in anaerobic conditions inside the host, they require rhodoquinone (RQ) and greatly increase RQ levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the broader literature on helminth metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "a40629eb-92f9-4031-8a86-e5794f974e08",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C4",
+      "claim": "The switch from UQ to RQ synthesis is driven by a change of substrates by the polyprenyltransferase COQ-2.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed the switch from UQ to RQ synthesis is driven by a change of substrates by the polyprenyltransferase COQ-2 (Del Borrello et al., 2019; Roberts Buceta et al., 2019); however, the mechanism of substrate selection is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "c8d33663-2612-4bc9-b656-94b39f87895a",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C5",
+      "claim": "Helminths synthesize two coq-2 splice forms, coq-2a and coq-2e.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show helminths synthesize two coq-2 splice forms, coq-2a and coq-2e, and the coq-2e-specific exon is only found in species that synthesize RQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by RNA-seq and genome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "18f9d112-b486-47d3-821a-1dd209da5f35",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C6",
+      "claim": "The coq-2e-specific exon is only found in species that synthesize RQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show helminths synthesize two coq-2 splice forms, coq-2a and coq-2e, and the coq-2e-specific exon is only found in species that synthesize RQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by comparative genomic analysis across multiple species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "8eb4fc64-6ece-4dc5-ade4-287cd48fd4cd",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C7",
+      "claim": "In Caenorhabditis elegans, COQ-2e is required for efficient RQ synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that in Caenorhabditis elegans COQ-2e is required for efficient RQ synthesis and survival in cyanide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from CRISPR-engineered mutants and LC-MS quantitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "691ed4a3-a04f-4ba7-9e07-b1a56a96a109",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C8",
+      "claim": "COQ-2e is required for survival in cyanide in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that in Caenorhabditis elegans COQ-2e is required for efficient RQ synthesis and survival in cyanide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from KCN recovery assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "0d2ca19c-0108-446b-825a-26e60c4c29fc",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C9",
+      "claim": "Parasites switch from COQ-2a to COQ-2e as they transit into anaerobic environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, parasites switch from COQ-2a to COQ-2e as they transit into anaerobic environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq analysis of different life stages in Ascaris suum and Strongyloides stercoralis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "43774ff0-91ff-4836-a06a-4787cb01c3a1",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C10",
+      "claim": "Helminths switch from UQ to RQ synthesis principally via changes in the alternative splicing of coq-2.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude helminths switch from UQ to RQ synthesis principally via changes in the alternative splicing of coq-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "09166ac8-fd62-4113-9211-1a3fd31dd1b5",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C11",
+      "claim": "Soil-transmitted helminths (STHs) such as Ascaris, hookworms, and whipworms infect well over a billion people.",
+      "claim_type": "EXPLICIT",
+      "source": "Soil-transmitted helminths (STHs) such as Ascaris, hookworms, and whipworms infect well over a billion people, and 7 out of the 18 neglected diseases categorized by WHO are caused by helminths (CDC, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to CDC data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "8151df5d-7686-4303-97e8-f711644571ed",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C12",
+      "claim": "7 out of the 18 neglected diseases categorized by WHO are caused by helminths.",
+      "claim_type": "EXPLICIT",
+      "source": "Soil-transmitted helminths (STHs) such as Ascaris, hookworms, and whipworms infect well over a billion people, and 7 out of the 18 neglected diseases categorized by WHO are caused by helminths (CDC, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to CDC data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "6e01a45f-5e8c-4bf7-8b73-8e82920b4678",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C13",
+      "claim": "There are few classes of available anthelmintics and resistance is increasing in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the huge impact on global health of these infections, there are few classes of available anthelmintics and resistance is increasing in humans and is widespread in some species that infect animals \u2014 for example, Haemonchus contortus, a common parasite in small ruminants, has developed multidrug resistance (Jackson and Coop, 2000; Kotze and Prichard, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature on anthelmintic resistance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "627fa63d-553c-48cc-8252-a9c816528302",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C14",
+      "claim": "Haemonchus contortus has developed multidrug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the huge impact on global health of these infections, there are few classes of available anthelmintics and resistance is increasing in humans and is widespread in some species that infect animals \u2014 for example, Haemonchus contortus, a common parasite in small ruminants, has developed multidrug resistance (Jackson and Coop, 2000; Kotze and Prichard, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature on anthelmintic resistance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "042c12fb-a59d-431f-8f48-c84bb8e397e8",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C15",
+      "claim": "When STHs are in the free-living stages of their life cycles, they use the same aerobic respiration as their hosts and use ubiquinone (UQ) as an electron carrier in their mitochondrial electron transport chain (ETC).",
+      "claim_type": "EXPLICIT",
+      "source": "When STHs are in the free-living stages of their life cycles, they use the same aerobic respiration as their hosts and use ubiquinone (referred to here as UQ and as Q in other papers) as an electron carrier in their mitochondrial electron transport chain (ETC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of helminth metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "638f0c88-0908-4e13-a868-2e6268979869",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C16",
+      "claim": "Ascaris can live for many months in the anaerobic environment of the host gut.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly the case for species that inhabit the host gut, for example Ascaris can live for many months in this anaerobic environment (Dold and Holland, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "008c26f3-6f46-48e3-b496-050bd8c38f5b",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C17",
+      "claim": "RQ is an electron carrier that functions in the mitochondrial ETC of STHs.",
+      "claim_type": "EXPLICIT",
+      "source": "RQ is an electron carrier that functions in the mitochondrial ETC of STHs (Van Hellemond et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "0a2cfa54-6b11-4350-bf42-75b0a01227c2",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C18",
+      "claim": "RQ is a prenylated aminobenzoquinone that is similar to UQ.",
+      "claim_type": "EXPLICIT",
+      "source": "RQ is a prenylated aminobenzoquinone that is similar to UQ (Figure 1), but the slight difference in structure gives RQ a lower standard redox potential than UQ (\u221263 mV and 110 mV, respectively) (Erabi et al., 1976; Unden and Bongaerts, 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and Figure 1 showing the chemical structures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "57a07c33-3b33-4db4-a16a-3d503a717ac6",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C19",
+      "claim": "RQ has a lower standard redox potential than UQ (\u221263 mV and 110 mV, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "RQ is a prenylated aminobenzoquinone that is similar to UQ (Figure 1), but the slight difference in structure gives RQ a lower standard redox potential than UQ (\u221263 mV and 110 mV, respectively) (Erabi et al., 1976; Unden and Bongaerts, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "015a1c1d-f39c-46ad-ac3d-33d42fca4e8e",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C20",
+      "claim": "In aerobic metabolism, UQ can accept electrons from a diverse set of molecules via quinone-coupled dehydrogenases, including succinate dehydrogenase and electron-transferring-flavoprotein (ETF) dehydrogenase.",
+      "claim_type": "EXPLICIT",
+      "source": "In aerobic metabolism, UQ can accept electrons from a diverse set of molecules via quinone-coupled dehydrogenases, including succinate dehydrogenase and electron-transferring-flavoprotein (ETF) dehydrogenase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of mitochondrial metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "adfc9cf6-e5b7-4403-bd1c-837350fce402",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C21",
+      "claim": "In RQ-dependent anaerobic metabolism, RQ carries electrons to dehydrogenase enzymes and drives them in reverse to act as reductases that transfer electrons onto a diverse set of terminal acceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In RQ-dependent anaerobic metabolism, RQ does the reverse \u2014 it carries electrons to these same dehydrogenase enzymes and drives them in reverse to act as reductases that transfer electrons onto a diverse set of terminal acceptors (Tielens and Van Hellemond, 1998; van Hellemond et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "bf9a3123-5509-40ea-97ea-a7900c262b8b",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C22",
+      "claim": "The difference in the direction of electron flow between UQ and RQ is driven by the difference in redox potential.",
+      "claim_type": "EXPLICIT",
+      "source": "UQ thus allows electrons to enter the ETC via dehydrogenases; RQ can drive the reactions that let electrons leave the ETC and this difference in the direction of electron flow is driven by the difference in redox potential (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on established knowledge and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "ff4b6aed-9f9d-416a-9ded-1a983fbcbb08",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C23",
+      "claim": "RQ-dependent metabolism does not occur in the hosts and is thus an excellent target for anthelmintics.",
+      "claim_type": "EXPLICIT",
+      "source": "This RQ-dependent metabolism does not occur in the hosts and is thus an excellent target for anthelmintics (Kita et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents a logical inference about drug targeting.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "5b50c3b1-42ee-48c8-b9ab-7496642f7223",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C24",
+      "claim": "Among animals, RQ has only been described in nematodes, platyhelminths, mollusks, and annelids.",
+      "claim_type": "EXPLICIT",
+      "source": "Among animals, RQ has only been described in nematodes, platyhelminths, mollusks, and annelids (Van Hellemond et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "7c400b03-854d-4848-b40b-88a9e96b1954",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C25",
+      "claim": "In contrast to bacteria, where RQ derives from UQ, RQ biosynthesis in animals requires precursors derived from tryptophan.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to bacteria, where RQ derives from UQ (Bernert et al., 2019; Brajcich et al., 2010), RQ biosynthesis in animals requires precursors derived from tryptophan (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "00794a61-a561-4fad-bc41-50810f769e1a",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C26",
+      "claim": "C. elegans strains carrying mutations in kynu-1 are unable to synthesize RQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies performed on C. elegans have demonstrated that animals that lack a functional kynureninase pathway (e.g. strains carrying mutations in kynu-1, the sole kynureninase) are unable to synthesize RQ (Del Borrello et al., 2019; Roberts Buceta et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "aae2b75f-dc7d-49c1-8f76-5249bf5eb847",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C27",
+      "claim": "3-hydroxyanthranilic acid (3HA) from the kynurenine pathway is presumed to be prenylated in a reaction catalyzed by COQ-2.",
+      "claim_type": "EXPLICIT",
+      "source": "It is presumed that 3-hydroxyanthranilic acid (3HA, also sometimes referred to as 3HAA) from the kynurenine pathway is prenylated in a reaction catalyzed by COQ-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on previous studies and the known pathway.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "85644daa-e39b-47f0-abb6-05548eab427b",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C28",
+      "claim": "The critical choice between UQ and RQ synthesis is the choice of substrate by COQ-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The key insight from these previous studies is that the critical choice between UQ and RQ synthesis is the choice of substrate by COQ-2 \u2014 if 4HB is prenylated by COQ-2, UQ will ultimately be produced, but if 3HA is used, the final product will be RQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous studies by the authors.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "771b71a7-74fb-4ae7-962d-e9f1c043f4b2",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C29",
+      "claim": "If 4HB is prenylated by COQ-2, UQ will ultimately be produced.",
+      "claim_type": "EXPLICIT",
+      "source": "The key insight from these previous studies is that the critical choice between UQ and RQ synthesis is the choice of substrate by COQ-2 \u2014 if 4HB is prenylated by COQ-2, UQ will ultimately be produced, but if 3HA is used, the final product will be RQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous studies by the authors.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "65e2935c-fb62-4768-8579-0bb1f3c96afb",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C30",
+      "claim": "If 3HA is prenylated by COQ-2, the final product will be RQ.",
+      "claim_type": "EXPLICIT",
+      "source": "The key insight from these previous studies is that the critical choice between UQ and RQ synthesis is the choice of substrate by COQ-2 \u2014 if 4HB is prenylated by COQ-2, UQ will ultimately be produced, but if 3HA is used, the final product will be RQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous studies by the authors.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "37d619dc-8c4b-4ca1-aa71-5f30228bc136",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C31",
+      "claim": "In most parasitic helminths, there is a major shift in quinone composition as they move from aerobic to anaerobic environments.",
+      "claim_type": "EXPLICIT",
+      "source": "In most parasitic helminths, there is a major shift in quinone composition as they move from aerobic to anaerobic environments, for example, RQ is less than 10% of H. contortus total quinone when the parasite is in an aerobic environment but is over 80% of total quinone in the anaerobic environment of the sheep gut and similar shifts occur in other parasites (L\u00fcmmen et al., 2014; Sakai et al., 2012; Van Hellemond et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "d73c0027-b571-45f5-be8c-ba25369b4134",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C32",
+      "claim": "RQ is less than 10% of H. contortus total quinone when the parasite is in an aerobic environment but is over 80% of total quinone in the anaerobic environment of the sheep gut.",
+      "claim_type": "EXPLICIT",
+      "source": "In most parasitic helminths, there is a major shift in quinone composition as they move from aerobic to anaerobic environments, for example, RQ is less than 10% of H. contortus total quinone when the parasite is in an aerobic environment but is over 80% of total quinone in the anaerobic environment of the sheep gut and similar shifts occur in other parasites (L\u00fcmmen et al., 2014; Sakai et al., 2012; Van Hellemond et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "b0bae415-11f7-4218-a869-e21480755c98",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C33",
+      "claim": "C. elegans coq-2 has two distinct splice forms: coq-2a and coq-2e.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified two distinct splice forms of C. elegans coq-2: coq-2a and coq-2e.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by RNA-seq and other validation studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "e93fb592-355b-4696-87d9-8ed2e1848caa",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C34",
+      "claim": "The two coq-2 isoforms differ by the mutually exclusive splicing of two internal exons (6a and 6e), both of 134 nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "These two isoforms differ by the mutually exclusive splicing of two internal exons (6a and 6e), both of 134 nucleotides (see Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data and illustrated in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "dc298c56-502c-487f-9f4c-815611de426e",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C35",
+      "claim": "Mutually exclusive splicing of cassette exons is very rare in the C. elegans genome and fewer than 100 such splicing events have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that mutually exclusive splicing of cassette exons is very rare in the C. elegans genome and fewer than 100 such splicing events have been identified (Kuroyanagi et al., 2014; Ramani et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "34e41be5-191d-4a95-ba36-d98358a45387",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C36",
+      "claim": "Both coq-2a and coq-2e splice forms are abundant in C. elegans across all stages of development, where ~30\u201350% of coq-2 is the coq-2e isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "Both coq-2a and coq-2e splice forms are abundant in C. elegans across all stages of development, where ~30\u201350% of coq-2 is the coq-2e isoform (Gerstein et al., 2010; Gr\u00fcn et al., 2014; Ramani et al., 2011; Roach et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to RNA-seq and transcriptome studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "cd97c001-335d-4f83-baf3-eea0112e4392",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C37",
+      "claim": "The splicing change in coq-2 causes a switch in two \u03b1-helices at the core of the COQ-2 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the splicing change causes a switch in two \u03b1-helices at the core of the COQ-2 structure (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural modeling shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "3b229331-6fea-4571-95c5-29ca5e09aa90",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C38",
+      "claim": "The region switched by alternative splicing is believed to form a hydrophobic tunnel along which aromatic substrates must pass to the active site for the key polyprenylation reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a region of the protein that is believed to form a hydrophobic tunnel along which aromatic substrates must pass to the active site for the key polyprenylation reaction (Desbats et al., 2016), suggesting that the change in splicing could affect COQ-2 substrate selection and thus could explain a shift from UQ to RQ synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to structural studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "65f28bee-592b-459a-8c8c-16bb8d3f9a6d",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C39",
+      "claim": "All parasites known to synthesize RQ have a similar gene structure with the same mutually exclusive exons as C. elegans coq-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we find a similar gene structure with the same mutually exclusive exons in all parasites known to synthesize RQ (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome and RNA-seq analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "7175f8be-5e77-4dfd-a2ed-365c98c1e790",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C40",
+      "claim": "Annelids and mollusks are the only other phyla known to synthesize RQ and their coq-2 orthologs also show similar mutually exclusive alternative splicing of homologous exons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, annelids and mollusks are the only other phyla known to synthesize RQ and their coq-2 orthologs also show similar mutually exclusive alternative splicing of homologous exons and we only find evidence for alternative splicing between a coq-2a form and a coq-2e like form in animals that synthesize RQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genome and RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "a3288dbd-914d-4e08-a6a3-96e1a393b67e",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C41",
+      "claim": "No mammalian hosts show any evidence for mutually exclusive alternative splicing of their coq-2 orthologs, nor do they have an e-like exon.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, no mammalian hosts show any evidence for this kind of alternative splicing of their coq-2 orthologs, nor do they have an e-like exon either in their gene predictions or genome sequences or in any available RNA-seq or direct transcriptome sequence data (human and mouse are shown as representatives in Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome and RNA-seq analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "5537f8c0-41ad-4d7a-a0c2-686c86c49043",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C42",
+      "claim": "The e-exon and the mutually exclusive alternative splicing of coq-2 is unique to animals that synthesize RQ and is not found in any other species.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the e-exon and the mutually exclusive alternative splicing of coq-2 is unique to animals that synthesize RQ and is not found in any other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparative genomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "c325f67f-b44e-442d-970d-16d51df47141",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C43",
+      "claim": "All the coq-2a-specific exons are similar to the pan-eukaryotic COQ-2 sequence, whereas all the coq-2e-specific exons have a distinct sequence to this.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that all the coq-2a-specific exons are similar to the pan-eukaryotic COQ-2 sequence, whereas all the coq-2e-specific exons have a distinct sequence to this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "6d3e694c-d303-454f-81d8-dab975fab19b",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C44",
+      "claim": "Two residues (Phe204 and Ala243 in C. elegans numbering) that are strictly conserved in pan-eukaryotic COQ-2 sequences are switched to a Leu and a Ser residue in all COQ2-e-specific exons.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the alignments of the a- and e-specific exons and identified two residues that are strictly conserved in pan-eukaryotic COQ-2 sequences, Phe204 and Ala243 (C. elegans numbering), that are switched to a Leu and a Ser residue in all COQ2-e-specific exons that we examined (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "bf947d5a-b422-498c-a8e7-da8e9058d970",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C45",
+      "claim": "The residues Phe204 and Ala243 sit very close to the substrates in the active site of the COQ-2 enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "These residues sit very close to the substrates in the active site of the enzyme (Figure 2C) and we note that mutation of the equivalent Ala243 residue dramatically affects the ability of human COQ-2 to synthesize UQ (Desbats et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural modeling shown in Figure 2C and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "8d76e21a-7213-499c-9e31-14415131c1e6",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C46",
+      "claim": "Mutation of the equivalent Ala243 residue dramatically affects the ability of human COQ-2 to synthesize UQ.",
+      "claim_type": "EXPLICIT",
+      "source": "These residues sit very close to the substrates in the active site of the enzyme (Figure 2C) and we note that mutation of the equivalent Ala243 residue dramatically affects the ability of human COQ-2 to synthesize UQ (Desbats et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "f661b9fe-38a5-4366-8d12-1ba5ebbb41ea",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C47",
+      "claim": "The coq-2\u22066e strain synthesizes essentially no detectable RQ but has higher levels of UQ.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the coq-2\u22066e strain synthesizes essentially no detectable RQ but has higher levels of UQ, whereas coq-2\u22066a has greatly reduced UQ levels but higher RQ levels (Figure 5B, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by LC-MS quantitation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "6ef079cd-3cb1-4c2b-9dd7-027077961396",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C48",
+      "claim": "The coq-2\u22066a strain has greatly reduced UQ levels but higher RQ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the coq-2\u22066e strain synthesizes essentially no detectable RQ but has higher levels of UQ, whereas coq-2\u22066a has greatly reduced UQ levels but higher RQ levels (Figure 5B, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by LC-MS quantitation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "d2a9f70d-92ea-46b8-8bfc-dab9276f8388",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C49",
+      "claim": "The coq-2e isoform, which includes the helminth/annelid/mollusc-specific exon 6e, is required for efficient RQ synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the coq-2e isoform, which includes the helminth/annelid/mollusc-specific exon 6e, is required for efficient RQ synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data from CRISPR mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "495bcc7f-5c5c-4920-ac2d-12d9298b84ae",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C50",
+      "claim": "Wild-type C. elegans can survive a 15 hr exposure to KCN.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that when C. elegans is exposed to KCN, it switches to RQ-dependent metabolism and that while wild-type worms can survive a 15 hr exposure to KCN, C. elegans strains that do not synthesize RQ cannot survive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "39f456ec-c029-41b9-85ef-53a6b0300838",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C51",
+      "claim": "C. elegans strains that do not synthesize RQ cannot survive 15 hr exposure to KCN.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that when C. elegans is exposed to KCN, it switches to RQ-dependent metabolism and that while wild-type worms can survive a 15 hr exposure to KCN, C. elegans strains that do not synthesize RQ cannot survive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "984c5b61-4667-477b-9a83-c5c3a23e91f1",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C52",
+      "claim": "The coq-2\u22066a strain (that can synthesize RQ) survives 15 hr of KCN exposure as well as wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that while the coq-2\u22066a strain (that can synthesize RQ) survives 15 hr of KCN exposure, as well as wild-type animals, the coq-2\u22066e strain that synthesizes no RQ does not survive, confirming the functional relevance of the coq-2e isoform as being critical for RQ synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by KCN recovery assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "258fa088-b714-4a3c-8392-e78a8ff55770",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C53",
+      "claim": "The coq-2\u22066e strain that synthesizes no RQ does not survive 15 hr of KCN exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that while the coq-2\u22066a strain (that can synthesize RQ) survives 15 hr of KCN exposure, as well as wild-type animals, the coq-2\u22066e strain that synthesizes no RQ does not survive, confirming the functional relevance of the coq-2e isoform as being critical for RQ synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by KCN recovery assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "5b5df579-5d51-409e-bd12-58be982a950d",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C54",
+      "claim": "Ascaris suum has a relatively simple life cycle where eggs are laid in the host and emerge via defecation and the L1-L3 larval stages develop within the egg outside the host.",
+      "claim_type": "EXPLICIT",
+      "source": "Ascaris suum has a relatively simple life cycle (schematic Figure 6A) and is the pig equivalent of Ascaris lumbricoides which infects ~900 M humans. Eggs are laid in the host and emerge via defecation and the L1-L3 larval stages develop within the egg outside the host.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on established knowledge of Ascaris life cycle and illustrated in Figure 6A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "bd6c33e8-baca-45ce-8f15-c6341f77f88b",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C55",
+      "claim": "Ascaris suum is the pig equivalent of Ascaris lumbricoides which infects ~900 M humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Ascaris suum has a relatively simple life cycle (schematic Figure 6A) and is the pig equivalent of Ascaris lumbricoides which infects ~900 M humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "9b61230d-f38f-4058-b7c1-59fc56471d44",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C56",
+      "claim": "The free-living larval stages of Ascaris suum have relatively low RQ (~35% of total quinones).",
+      "claim_type": "EXPLICIT",
+      "source": "The free-living larval stages have relatively low RQ (~35% of total quinones), whereas adults have high RQ ( ~100% of total quinones) (Takamiya et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "26a619ad-e11d-4545-b2c7-92e08f24d32b",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C57",
+      "claim": "Adult Ascaris suum have high RQ (~100% of total quinones).",
+      "claim_type": "EXPLICIT",
+      "source": "The free-living larval stages have relatively low RQ (~35% of total quinones), whereas adults have high RQ ( ~100% of total quinones) (Takamiya et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "ad2e0ea4-b9b5-4780-9eac-d3d412ce67d9",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C58",
+      "claim": "In Ascaris suum, approximately 60% of coq-2 transcripts are coq-2e in the free-living, aerobic stages but >90% is the RQ-synthesizing coq-2e form in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "We see a clear switch approximately 60% of coq-2 transcripts are coq-2e in the free-living, aerobic stages but >90% is the RQ-synthesizing coq-2e form in adults (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "17c5108e-381d-4fa5-9ab2-3030d2bcda40",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C59",
+      "claim": "In Strongyloides stercoralis, <20% of coq-2 transcripts are coq-2e in the free-living L3s but >60% is the RQ-synthesizing coq-2e form in L3s that developed inside the host.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference is clear about <20% of coq-2 transcripts are coq-2e in the free-living L3s but >60% is the RQ-synthesizing coq-2e form in L3s that developed inside the host (Figure 6D; Stoltzfus et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "5135df2c-abc7-4ccc-96eb-1670d056dde6",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C60",
+      "claim": "Increased inclusion of the coq-2e-specific exon correlates with increased synthesis of RQ during the parasite life cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that increased inclusion of the coq-2e-specific exon correlates with increased synthesis of RQ during the parasite life cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on RNA-seq analysis of different life stages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "fb79cc83-fb6f-4c90-9e74-76228def62cd",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C61",
+      "claim": "Animal species that synthesize RQ regulate the choice between synthesizing UQ and RQ by alternative splicing of the polyprenyltransferase COQ-2 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our data show that animal species that synthesize RQ regulate the choice between synthesizing UQ and RQ by alternative splicing of the polyprenyltransferase COQ-2 gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "46e215b5-049b-4169-9880-da54ae78419c",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C62",
+      "claim": "A switch between two mutually exclusive exons changes the core of the COQ-2 enzyme and switches it from primarily generating UQ precursors to primarily RQ precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "A switch between two mutually exclusive exons changes the core of the COQ-2 enzyme and switches it from primarily generating UQ precursors to primarily RQ precursors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural modeling and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "e21fffaa-d939-4f1e-971e-e2f5887c6a26",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C63",
+      "claim": "This alternative splicing event is only seen in species that synthesize RQ.",
+      "claim_type": "EXPLICIT",
+      "source": "This alternative splicing event is only seen in species that synthesize RQ and the switch correlates with the change from aerobic to anaerobic metabolism in parasitic helminths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "717c6b71-dcb0-4f37-bf75-d07cb45017cd",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C64",
+      "claim": "The switch in coq-2 splicing correlates with the change from aerobic to anaerobic metabolism in parasitic helminths.",
+      "claim_type": "EXPLICIT",
+      "source": "This alternative splicing event is only seen in species that synthesize RQ and the switch correlates with the change from aerobic to anaerobic metabolism in parasitic helminths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq analysis of different life stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "12bca1c4-3db8-4a64-a004-39e0234262fa",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C65",
+      "claim": "Humans rapidly switch to anaerobic glycolysis, generating lactate, in response to hypoxia.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, humans rapidly switch to anaerobic glycolysis, generating lactate; goldfish on the other hand can adapt to hypoxia by fermenting carbohydrates to generate ethanol (Shoubridge and Hochachka, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of human metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "97347262-d71e-4503-ba48-b5527164372a",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C66",
+      "claim": "Goldfish can adapt to hypoxia by fermenting carbohydrates to generate ethanol.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, humans rapidly switch to anaerobic glycolysis, generating lactate; goldfish on the other hand can adapt to hypoxia by fermenting carbohydrates to generate ethanol (Shoubridge and Hochachka, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "dd0b7acb-1b42-4683-8400-7e3c4f22fd63",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C67",
+      "claim": "Only helminths, mollusks, and annelids are known to synthesize and use RQ among animal species.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to use RQ is highly restricted among animal species \u2014 only helminths, mollusks, and annelids are known to synthesize and use RQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "00bc564c-2bd4-450c-bca3-8caf9616fa32",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C68",
+      "claim": "C. elegans is a free-living nematode that does not face extended anaerobic conditions as an obligate part of its life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans is a free-living nematode that does not face extended anaerobic conditions as an obligate part of its life cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of C. elegans biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "49c0e296-53b2-4a8c-a177-cd6e4bbe2d5f",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C69",
+      "claim": "Pseudomonas aeruginosa, a natural pathogen of C. elegans, uses cyanide to kill the worm.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Pseudomonas aeruginosa, a natural pathogen of C. elegans, uses cyanide to kill the worm (Gallagher and Manoil, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "954ca85c-bc73-4bfa-a6c8-78780aa8e4d6",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C70",
+      "claim": "Cyanide blocks the conventional ETC at Complex IV preventing the use of oxygen as a final electron acceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanide blocks the conventional ETC at Complex IV preventing the use of oxygen as a final electron acceptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of cyanide toxicity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "297da580-ad87-4853-b18c-8934f72bc08f",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C71",
+      "claim": "In C. elegans, the alternative ETC may be an adaptive strategy to withstand transient cyanide stress from pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that in C. elegans, the alternative ETC may be an adaptive strategy to withstand transient cyanide stress from pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "6ce3f68f-4ad2-4c76-bf19-036e0b15c8dd",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C72",
+      "claim": "For parasitic helminths like Ascaris, the need to respire anaerobically is critical for their life cycle since they must survive for long periods in the anaerobic environment of the human gut.",
+      "claim_type": "EXPLICIT",
+      "source": "For parasitic helminths like Ascaris, the need to respire anaerobically is critical for their life cycle since they must survive for long periods in the anaerobic environment of the human gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of helminth biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "d93ea4dd-f882-4472-95fe-9c3cf3a5bd6b",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C73",
+      "claim": "If we could interfere with RQ synthesis, this would be an excellent way to target the parasite and leave the host untouched.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the host does not synthesize RQ or use RQ-dependent metabolism if we could interfere with RQ synthesis, this would be an excellent way to target the parasite and leave the host untouched.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about drug targeting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "148a580d-8873-4c0d-bd1a-531b40b0481f",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C74",
+      "claim": "Inclusion of exon 6a results in the COQ-2a enzyme that can synthesize UQ but not RQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of exon 6a results in the COQ-2a enzyme that can synthesize UQ but not RQ; switching exon 6a for the alternative exon 6e yields COQ-2e which principally synthesizes RQ (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data and illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "34f6f355-e126-4948-b3f1-b0be9f99d5a5",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C75",
+      "claim": "Switching exon 6a for the alternative exon 6e yields COQ-2e which principally synthesizes RQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of exon 6a results in the COQ-2a enzyme that can synthesize UQ but not RQ; switching exon 6a for the alternative exon 6e yields COQ-2e which principally synthesizes RQ (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data and illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "c9fb3b39-7fef-4c2b-b782-a9fcd9ca76d4",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C76",
+      "claim": "All eukaryotes synthesize a homolog of COQ-2a.",
+      "claim_type": "EXPLICIT",
+      "source": "All eukaryotes synthesize a homolog of COQ-2a \u2014 only the species known to synthesize RQ (helminths, annelids, and mollusks) have genomes encoding the RQ-specific exon 6e and this exon is introduced by alternative splicing in a similar mutually exclusive splicing event in all these phyla.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative genomic analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "1229af92-f5b2-44e7-bed9-482cb59028fa",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C77",
+      "claim": "Only the species known to synthesize RQ (helminths, annelids, and mollusks) have genomes encoding the RQ-specific exon 6e.",
+      "claim_type": "EXPLICIT",
+      "source": "All eukaryotes synthesize a homolog of COQ-2a \u2014 only the species known to synthesize RQ (helminths, annelids, and mollusks) have genomes encoding the RQ-specific exon 6e and this exon is introduced by alternative splicing in a similar mutually exclusive splicing event in all these phyla.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "36fcb8bf-7f58-497e-96c6-6a6e8ba7f3c5",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C78",
+      "claim": "The RQ-specific exon 6e is introduced by alternative splicing in a similar mutually exclusive splicing event in helminths, annelids, and mollusks.",
+      "claim_type": "EXPLICIT",
+      "source": "All eukaryotes synthesize a homolog of COQ-2a \u2014 only the species known to synthesize RQ (helminths, annelids, and mollusks) have genomes encoding the RQ-specific exon 6e and this exon is introduced by alternative splicing in a similar mutually exclusive splicing event in all these phyla.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative genomic and RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "2e56ab1c-5c7f-4897-975c-32233e3efa52",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C79",
+      "claim": "The alternative splicing of COQ-2 in all animal lineages that synthesize RQ draws focus to COQ-2 as a potential anthelmintic target.",
+      "claim_type": "EXPLICIT",
+      "source": "The alternative splicing of COQ-2 in all animal lineages that synthesize RQ draws focus to COQ-2 as a potential anthelmintic target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about drug targeting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "2ca75dc7-4a0d-41a8-b43d-d826bfd61bbc",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C80",
+      "claim": "COQ-2e is required for RQ generation and has a distinct sequence to the pan-eukaryotic COQ-2a.",
+      "claim_type": "EXPLICIT",
+      "source": "COQ-2e is required for RQ generation and has a distinct sequence to the pan-eukaryotic COQ-2a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data and sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "c5b8ea51-b454-4be8-9a5d-eff94faa747d",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C81",
+      "claim": "All species that synthesize RQ have a pair of conserved residues in COQ-2e.",
+      "claim_type": "EXPLICIT",
+      "source": "The switch between COQ-2a to COQ-2e causes a change in the core of the COQ-2 active site and all species that synthesize RQ have a pair of conserved residues in COQ-2e.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "7ff7adf9-f512-4851-9ece-ef8ca7b10183",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C82",
+      "claim": "Small molecule inhibitors that selectively target COQ-2e and not the host COQ-2 enzyme could be potent anthelmintics.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that small molecule inhibitors that selectively target COQ-2e and not the host COQ-2 enzyme could be potent anthelmintics and our research groups are initiating these screens at this point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future drug development.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "1bc950a0-c64c-446a-a09a-190d5552aa88",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C83",
+      "claim": "It is rare to see such a clear and profound change in enzyme specificity due to a single splice event affecting the core of an enzyme catalytic site.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that it is rare to see such a clear and profound change in enzyme specificity due to a single splice event affecting the core of an enzyme catalytic site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of enzyme regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "8bf2d717-80d6-447e-9626-176596497979",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C84",
+      "claim": "A switch in the substrate specificity of the cytochrome P450 CYP4F3 from LTB4 to arachidonic acid is an example of enzyme specificity change due to alternative splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "There are other examples, most notably a switch in the substrate specificity of the cytochrome P450 CYP4F3 from LTB4 to arachidonic acid (Christmas et al., 1999; Christmas et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "f8f0908a-7a0c-4b62-9b23-8c28ad1c3f12",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C85",
+      "claim": "The regulation of COQ-2 specificity by alternative splicing is a beautiful and rare example of this type of enzyme regulation by alternative splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulation of COQ-2 specificity by alternative splicing is thus a beautiful and rare example of this type of enzyme regulation by alternative splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "1d241828-7e46-4db2-841b-75ec8ef6747a",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C86",
+      "claim": "While alternative splicing of COQ-2 appears to be the key regulated step in determining RQ or UQ biosynthesis, there is no such splicing regulation for other enzymes that are required for both RQ and UQ synthesis downstream of COQ-2.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that while alternative splicing of COQ-2 appears to be the key regulated step in determining RQ or UQ biosynthesis, we see no such splicing regulation for other enzymes that are required for both RQ and UQ synthesis downstream of COQ-2 (Roberts Buceta et al., 2019), for example, there are no known splice variants of COQ-3 and COQ-5, which are quinone methylases downstream of COQ-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of other genes in the pathway.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "cef35cb2-063e-4ccc-af91-e3eb9004f1ae",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C87",
+      "claim": "There are no known splice variants of COQ-3 and COQ-5, which are quinone methylases downstream of COQ-2.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that while alternative splicing of COQ-2 appears to be the key regulated step in determining RQ or UQ biosynthesis, we see no such splicing regulation for other enzymes that are required for both RQ and UQ synthesis downstream of COQ-2 (Roberts Buceta et al., 2019), for example, there are no known splice variants of COQ-3 and COQ-5, which are quinone methylases downstream of COQ-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of other genes in the pathway.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "7978a523-a9b7-4a0a-9927-1c3b4f8a1f76",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C88",
+      "claim": "COQ-2 can clearly discriminate between substrates that have/lack a 2-amino group, while COQ-3 and COQ-5 would be more promiscuous than COQ-2 and act on both RQ and UQ precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that while COQ-2 can clearly discriminate between substrates that have/lack a 2-amino group, COQ-3 and COQ-5 would be more promiscuous than COQ-2 and act on both RQ and UQ precursors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of splicing regulation in downstream enzymes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "6988c311-ff67-4678-8a0d-63f53f0aa7eb",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C89",
+      "claim": "The mechanism of alternative splicing to regulate the synthesis of UQ or RQ may explain some part of the evolution of RQ synthesis in animals and its phylogenetic distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the mechanism of alternative splicing to regulate the synthesis of UQ or RQ may explain some part of the evolution of RQ synthesis in animals and its phylogenetic distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about evolutionary implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "73ba3490-19b2-46ed-a960-a90072468241",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C90",
+      "claim": "There is a precedent for a mutually exclusive splicing event that has arisen independently in helminths, annelids, and mollusks in the gene mrp-1.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear that our findings here definitively answer this but we do note that there is a precedent for a mutually exclusive splicing event that has arisen independently in helminths, annelids, and mollusks in the gene mrp-1 (Yue et al., 2017) which encodes a transporter that is required for the uptake of vitamin B12 into mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "c39dfd72-f8c9-4a61-8535-9e8fd85a0f98",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C91",
+      "claim": "The mrp-1 gene undergoes alternative splicing in helminths, annelids, and mollusks and has mutually exclusive exons of exactly the same length.",
+      "claim_type": "EXPLICIT",
+      "source": "The mrp-1 gene undergoes alternative splicing in these species and just like coq-2, mrp-1 has mutually exclusive exons of exactly the same length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "7de9cf1d-d527-40eb-aebf-7454853a2641",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C92",
+      "claim": "In mrp-1, a mutually exclusive alternative splicing has arisen independently in each lineage in which it is seen.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in mrp-1, a mutually exclusive alternative splicing has arisen independently in each lineage in which it is seen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "4cf9b7df-12ad-4287-8e76-1e4da9236817",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C93",
+      "claim": "It is plausible that alternative splicing of coq-2 might have originated independently in helminths, annelids, and mollusks.",
+      "claim_type": "EXPLICIT",
+      "source": "This example indicates it is at least plausible that alternative splicing of coq-2 might have originated independently in helminths, annelids, and mollusks, but we do not believe that our current data can distinguish between an ancestral animal origin of RQ biosynthesis followed by independent losses, or independent animal origin of RQ biosynthesis due to an 'mrp-1-like' independent evolution of alternative splicing of coq-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about evolutionary scenarios.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "11bb6c9b-c5ba-4554-93a4-3cdf6c3b0b63",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C94",
+      "claim": "A simple innovation of a mutually exclusive alternative splicing event can have a profound effect rewiring animal metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Whatever the evolutionary scenario, our results show that a simple innovation of a mutually exclusive alternative splicing event can have a profound effect rewiring animal metabolism and it will be interesting to establish whether alternative splicing of COQ-2 is sufficient to drive RQ biosynthesis, or whether additional innovations are needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "f6721ef7-bf86-4eaa-b971-4af81995aa62",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "claim_id": "C95",
+      "claim": "It will be interesting to establish whether alternative splicing of COQ-2 is sufficient to drive RQ biosynthesis, or whether additional innovations are needed.",
+      "claim_type": "EXPLICIT",
+      "source": "Whatever the evolutionary scenario, our results show that a simple innovation of a mutually exclusive alternative splicing event can have a profound effect rewiring animal metabolism and it will be interesting to establish whether alternative splicing of COQ-2 is sufficient to drive RQ biosynthesis, or whether additional innovations are needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d2c94707-1496-4e43-926c-ec17b964f0cf",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Parasitic helminths use ubiquinone (UQ) in aerobic conditions and rhodoquinone (RQ) in anaerobic conditions within the host. RQ has a lower redox potential than UQ, enabling it to reverse electron flow through quinone-coupled dehydrogenases to alternative terminal acceptors, allowing ATP generation without oxygen. This RQ-dependent metabolism is absent in mammalian hosts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C15-C24 collectively establish the metabolic context for helminth quinone usage. These claims are well-supported by established knowledge and multiple literature citations describing helminth metabolism, redox potentials, and the unique role of RQ in anaerobic respiration. The phylogenetic restriction of RQ synthesis (C24) is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "d2b0af3a-54cf-4459-b1c8-575e5358a1c3",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The switch from UQ to RQ synthesis is controlled by COQ-2 substrate selection. In animals, RQ biosynthesis requires tryptophan-derived precursors via the kynurenine pathway, with 3-hydroxyanthranilic acid (3HA) presumed to be prenylated by COQ-2 to produce RQ, while 4-hydroxybenzoic acid (4HB) prenylation yields UQ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C25-C30 describe the biochemical basis for quinone switching, supported by prior work from the authors (C4, C26) and established bacterial/animal differences (C25). The mechanism is well-grounded in previous studies, though C27 notes the 3HA prenylation is 'presumed' rather than directly demonstrated, which is appropriately cautious.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "ab069643-5737-462e-a2ce-3cc54c6439b8",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "C. elegans coq-2 has two splice forms (coq-2a and coq-2e) that differ by mutually exclusive splicing of two 134-nucleotide internal exons (6a and 6e). The coq-2e-specific exon is only found in species that synthesize RQ. Both isoforms are abundant across C. elegans development (~30-50% coq-2e), and this mutually exclusive splicing is rare in the C. elegans genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C33-C36 present the core discovery of alternative splicing in coq-2. These are supported by RNA-seq data, genome analysis, and multiple transcriptome studies (C36 cites four independent datasets). The rarity of mutually exclusive splicing in C. elegans (C35) provides important context and is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "02d92341-2c71-495a-8dac-780bad663f16",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Alternative splicing of coq-2 switches two \u03b1-helices at the core of the COQ-2 structure, affecting a region believed to form a hydrophobic tunnel for substrate passage to the active site. Two conserved residues (Phe204 and Ala243) in pan-eukaryotic COQ-2 are switched to Leu and Ser in all COQ-2e-specific exons, and these residues sit near the substrates in the active site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38, C44-C46 describe structural consequences of splicing based on homology modeling to archaeal COQ-2 structure. The structural analysis is reasonable and the identification of conserved residue switches (C44) is data-driven. The functional relevance is supported by citation showing mutation of Ala243 affects human COQ-2 function (C46). However, these are computational predictions rather than experimental structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "29437417-778e-43b0-b738-267a47e0c19d",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "All parasites known to synthesize RQ have similar coq-2 gene structure with mutually exclusive exons homologous to C. elegans 6a/6e. Annelids and mollusks (the only other RQ-synthesizing phyla) also show this splicing pattern. Mammalian hosts show no evidence for this alternative splicing or the e-like exon. The e-exon and mutually exclusive splicing is unique to RQ-synthesizing animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43, C63, C76-C78 present comparative genomic analysis across multiple species. The analysis is comprehensive, covering helminths, annelids, mollusks, and mammalian hosts using genome annotations and RNA-seq data (Figure 3). The authors appropriately note that some annotations required manual curation and RNA-seq validation. The phylogenetic specificity is a key finding well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "14f103c8-6012-4957-a503-4855664bfce7",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "COQ-2e is required for efficient RQ synthesis in C. elegans. CRISPR deletion of exon 6e (coq-2\u03946e) eliminates detectable RQ and increases UQ levels, while deletion of exon 6a (coq-2\u03946a) reduces UQ and increases RQ. COQ-2a synthesizes UQ but not RQ, while COQ-2e principally synthesizes RQ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C47-C49, C74-C75, C80 present experimental validation using CRISPR mutants and LC-MS quantitation (Figure 5B). The reciprocal effects on UQ/RQ levels in the two deletion strains provide strong evidence for distinct isoform functions. The data are quantitative with replicates (N=4) and statistical analysis. This is a key experimental result supporting the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "646e64b9-ef11-4d87-acb7-fc743ab8fbe8",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "COQ-2e is required for survival in cyanide in C. elegans. The coq-2\u03946e strain (lacking RQ) cannot survive 15 hr KCN exposure, while coq-2\u03946a (capable of RQ synthesis) survives as well as wild-type. Wild-type C. elegans can survive 15 hr KCN exposure by switching to RQ-dependent metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C50-C53 present functional validation using KCN survival assays (Figure 5C). The differential survival of the two deletion strains correlates with their RQ synthesis capacity, providing functional evidence for COQ-2e's role. The assay is based on prior work (C50-C51) and includes appropriate controls and replicates. Figure 5\u2014figure supplement 1 shows dose-response data strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "2596723e-8e54-473b-a8a3-fa39c003faa6",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Parasites switch from COQ-2a to COQ-2e as they transit into anaerobic environments. In Ascaris suum, ~60% of coq-2 transcripts are coq-2e in free-living aerobic stages but >90% in anaerobic adults. This correlates with the shift from low RQ (~35%) in larvae to high RQ (~100%) in adults. The splicing switch correlates with the metabolic transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C31-C32, C54-C58, C60, C64 analyze coq-2 splicing across Ascaris life stages using RNA-seq data (Figure 6A-B). The correlation between coq-2e levels and RQ levels is clear and well-documented. However, the authors appropriately note this compares different life stages, not just environments, which could confound interpretation. This limitation is addressed by the Strongyloides analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "63fe63d7-7659-4bb6-8868-6d8d598788ca",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In Strongyloides stercoralis, <20% of coq-2 transcripts are coq-2e in free-living L3s but >60% in L3s that developed inside the host, demonstrating environment-dependent splicing regulation in the same developmental stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 provides critical evidence that the splicing switch is environmentally regulated rather than purely developmental, by comparing the same larval stage (L3) in different environments (Figure 6C-D). This addresses the confounding variable in the Ascaris analysis and strengthens the conclusion that oxygen availability drives the splicing change. The data are from published RNA-seq with three replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "1447df4e-6f72-41b6-a296-761735659af3",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Helminths switch from UQ to RQ synthesis principally via changes in alternative splicing of coq-2. The switch between mutually exclusive exons changes the core of the COQ-2 enzyme, switching it from primarily generating UQ precursors to primarily RQ precursors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C61-C62 present the main conclusion of the study. This is well-supported by the convergence of multiple lines of evidence: (1) phylogenetic specificity of the e-exon to RQ-synthesizing species, (2) structural changes affecting the active site, (3) functional requirement of COQ-2e for RQ synthesis in CRISPR mutants, (4) correlation of splicing changes with metabolic transitions in parasites. The use of 'principally' is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "e480dd7d-e349-458e-b94d-4922cb8489e1",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Soil-transmitted helminths infect over a billion people, 7 of 18 WHO neglected diseases are caused by helminths, there are few anthelmintic classes available, and resistance is increasing in humans and widespread in some animal parasites like H. contortus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 provide public health context and are supported by appropriate citations to CDC data and literature on anthelmintic resistance. These are background claims establishing the importance of the research but not primary findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "4e7f2715-c506-4615-abf8-0532a7988aa5",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Different organisms have evolved diverse strategies for hypoxia adaptation. RQ synthesis is restricted to helminths, mollusks, and annelids. C. elegans may use RQ-dependent metabolism to withstand cyanide stress from pathogens like P. aeruginosa. For parasitic helminths, anaerobic respiration is critical for survival in the host gut, making RQ synthesis an excellent drug target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C73 provide biological context and discuss implications. Most are well-supported by citations or established knowledge. C71 is explicitly speculative about C. elegans adaptation. C73 is a logical inference about drug targeting based on host-parasite metabolic differences. These are appropriate contextual and interpretive claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "f83a1d77-927b-4ce0-a25c-b4ca079fa021",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "COQ-2 represents a potential anthelmintic target, and small molecule inhibitors that selectively target COQ-2e could be potent anthelmintics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79, C82 propose COQ-2e as a drug target. While this is a logical inference based on the findings (host-parasite differences, functional requirement), C82 is explicitly speculative about future drug development ('could be,' 'we suggest'). No drug screening or inhibitor data are presented. This is appropriate speculation for the Discussion but not a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "21ea2174-1bd0-46f8-a082-5ee3a2d7e573",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "It is rare to see such clear enzyme specificity changes due to single splice events affecting catalytic sites. The regulation of COQ-2 specificity by alternative splicing is a rare example of this type of enzyme regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 place the findings in the context of enzyme regulation mechanisms. C83 is based on general knowledge, C84 provides a cited precedent (CYP4F3), and C85 is an interpretive statement. These appropriately contextualize the novelty of the findings within the broader field of alternative splicing and enzyme regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "81fa7d71-9d3a-4467-a396-1f76413551b7",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Alternative splicing of COQ-2 is the key regulated step in quinone biosynthesis; downstream enzymes COQ-3 and COQ-5 show no splicing regulation. This suggests COQ-2 discriminates between substrates with/without 2-amino groups, while COQ-3 and COQ-5 are more promiscuous and act on both RQ and UQ precursors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 analyze the specificity of regulation within the biosynthetic pathway. The observation that downstream enzymes lack alternative splicing (C86-C87) is data-driven. The inference about substrate promiscuity (C88) is logical and appropriately presented as a suggestion. This helps explain why splicing regulation of COQ-2 alone is sufficient to control quinone output.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    },
+    {
+      "id": "52b3e827-ee46-417d-9525-f89f0884c046",
+      "content_id": "21fa3273-ab71-4510-a92e-74855c5fe518",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The alternative splicing mechanism may explain aspects of RQ synthesis evolution and phylogenetic distribution. The mrp-1 gene provides precedent for independent evolution of mutually exclusive splicing in helminths, annelids, and mollusks. It is plausible coq-2 splicing originated independently in these lineages, though current data cannot distinguish between ancestral origin with losses versus independent origins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C95 discuss evolutionary implications. The mrp-1 precedent (C90-C92) is appropriately cited and provides relevant context. However, the authors explicitly state their data cannot distinguish between evolutionary scenarios (C93), making this appropriately uncertain. C94-C95 are interpretive statements about future research directions. These are reasonable speculations but not resolved conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:55:32.445492Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7f439fb9-7bd8-4851-b1a6-6a6cd023590e",
+      "result_id": "d2c94707-1496-4e43-926c-ec17b964f0cf"
+    },
+    {
+      "claim_id": "1cfd43ec-d0b1-4e51-8316-d7c7bc2df593",
+      "result_id": "d2c94707-1496-4e43-926c-ec17b964f0cf"
+    },
+    {
+      "claim_id": "05230546-85da-41ee-9537-dceec62f4318",
+      "result_id": "d2c94707-1496-4e43-926c-ec17b964f0cf"
+    },
+    {
+      "claim_id": "042c12fb-a59d-431f-8f48-c84bb8e397e8",
+      "result_id": "d2c94707-1496-4e43-926c-ec17b964f0cf"
+    },
+    {
+      "claim_id": "638f0c88-0908-4e13-a868-2e6268979869",
+      "result_id": "d2c94707-1496-4e43-926c-ec17b964f0cf"
+    },
+    {
+      "claim_id": "008c26f3-6f46-48e3-b496-050bd8c38f5b",
+      "result_id": "d2c94707-1496-4e43-926c-ec17b964f0cf"
+    },
+    {
+      "claim_id": "0a2cfa54-6b11-4350-bf42-75b0a01227c2",
+      "result_id": "d2c94707-1496-4e43-926c-ec17b964f0cf"
+    },
+    {
+      "claim_id": "57a07c33-3b33-4db4-a16a-3d503a717ac6",
+      "result_id": "d2c94707-1496-4e43-926c-ec17b964f0cf"
+    },
+    {
+      "claim_id": "015a1c1d-f39c-46ad-ac3d-33d42fca4e8e",
+      "result_id": "d2c94707-1496-4e43-926c-ec17b964f0cf"
+    },
+    {
+      "claim_id": "adfc9cf6-e5b7-4403-bd1c-837350fce402",
+      "result_id": "d2c94707-1496-4e43-926c-ec17b964f0cf"
+    },
+    {
+      "claim_id": "bf9a3123-5509-40ea-97ea-a7900c262b8b",
+      "result_id": "d2c94707-1496-4e43-926c-ec17b964f0cf"
+    },
+    {
+      "claim_id": "ff4b6aed-9f9d-416a-9ded-1a983fbcbb08",
+      "result_id": "d2c94707-1496-4e43-926c-ec17b964f0cf"
+    },
+    {
+      "claim_id": "5b50c3b1-42ee-48c8-b9ab-7496642f7223",
+      "result_id": "d2c94707-1496-4e43-926c-ec17b964f0cf"
+    },
+    {
+      "claim_id": "a40629eb-92f9-4031-8a86-e5794f974e08",
+      "result_id": "d2b0af3a-54cf-4459-b1c8-575e5358a1c3"
+    },
+    {
+      "claim_id": "7c400b03-854d-4848-b40b-88a9e96b1954",
+      "result_id": "d2b0af3a-54cf-4459-b1c8-575e5358a1c3"
+    },
+    {
+      "claim_id": "00794a61-a561-4fad-bc41-50810f769e1a",
+      "result_id": "d2b0af3a-54cf-4459-b1c8-575e5358a1c3"
+    },
+    {
+      "claim_id": "aae2b75f-dc7d-49c1-8f76-5249bf5eb847",
+      "result_id": "d2b0af3a-54cf-4459-b1c8-575e5358a1c3"
+    },
+    {
+      "claim_id": "85644daa-e39b-47f0-abb6-05548eab427b",
+      "result_id": "d2b0af3a-54cf-4459-b1c8-575e5358a1c3"
+    },
+    {
+      "claim_id": "771b71a7-74fb-4ae7-962d-e9f1c043f4b2",
+      "result_id": "d2b0af3a-54cf-4459-b1c8-575e5358a1c3"
+    },
+    {
+      "claim_id": "65e2935c-fb62-4768-8579-0bb1f3c96afb",
+      "result_id": "d2b0af3a-54cf-4459-b1c8-575e5358a1c3"
+    },
+    {
+      "claim_id": "c8d33663-2612-4bc9-b656-94b39f87895a",
+      "result_id": "ab069643-5737-462e-a2ce-3cc54c6439b8"
+    },
+    {
+      "claim_id": "18f9d112-b486-47d3-821a-1dd209da5f35",
+      "result_id": "ab069643-5737-462e-a2ce-3cc54c6439b8"
+    },
+    {
+      "claim_id": "b0bae415-11f7-4218-a869-e21480755c98",
+      "result_id": "ab069643-5737-462e-a2ce-3cc54c6439b8"
+    },
+    {
+      "claim_id": "e93fb592-355b-4696-87d9-8ed2e1848caa",
+      "result_id": "ab069643-5737-462e-a2ce-3cc54c6439b8"
+    },
+    {
+      "claim_id": "dc298c56-502c-487f-9f4c-815611de426e",
+      "result_id": "ab069643-5737-462e-a2ce-3cc54c6439b8"
+    },
+    {
+      "claim_id": "34e41be5-191d-4a95-ba36-d98358a45387",
+      "result_id": "ab069643-5737-462e-a2ce-3cc54c6439b8"
+    },
+    {
+      "claim_id": "cd97c001-335d-4f83-baf3-eea0112e4392",
+      "result_id": "02d92341-2c71-495a-8dac-780bad663f16"
+    },
+    {
+      "claim_id": "3b229331-6fea-4571-95c5-29ca5e09aa90",
+      "result_id": "02d92341-2c71-495a-8dac-780bad663f16"
+    },
+    {
+      "claim_id": "6d3e694c-d303-454f-81d8-dab975fab19b",
+      "result_id": "02d92341-2c71-495a-8dac-780bad663f16"
+    },
+    {
+      "claim_id": "bf947d5a-b422-498c-a8e7-da8e9058d970",
+      "result_id": "02d92341-2c71-495a-8dac-780bad663f16"
+    },
+    {
+      "claim_id": "8d76e21a-7213-499c-9e31-14415131c1e6",
+      "result_id": "02d92341-2c71-495a-8dac-780bad663f16"
+    },
+    {
+      "claim_id": "65f28bee-592b-459a-8c8c-16bb8d3f9a6d",
+      "result_id": "29437417-778e-43b0-b738-267a47e0c19d"
+    },
+    {
+      "claim_id": "7175f8be-5e77-4dfd-a2ed-365c98c1e790",
+      "result_id": "29437417-778e-43b0-b738-267a47e0c19d"
+    },
+    {
+      "claim_id": "a3288dbd-914d-4e08-a6a3-96e1a393b67e",
+      "result_id": "29437417-778e-43b0-b738-267a47e0c19d"
+    },
+    {
+      "claim_id": "5537f8c0-41ad-4d7a-a0c2-686c86c49043",
+      "result_id": "29437417-778e-43b0-b738-267a47e0c19d"
+    },
+    {
+      "claim_id": "c325f67f-b44e-442d-970d-16d51df47141",
+      "result_id": "29437417-778e-43b0-b738-267a47e0c19d"
+    },
+    {
+      "claim_id": "e21fffaa-d939-4f1e-971e-e2f5887c6a26",
+      "result_id": "29437417-778e-43b0-b738-267a47e0c19d"
+    },
+    {
+      "claim_id": "c9fb3b39-7fef-4c2b-b782-a9fcd9ca76d4",
+      "result_id": "29437417-778e-43b0-b738-267a47e0c19d"
+    },
+    {
+      "claim_id": "1229af92-f5b2-44e7-bed9-482cb59028fa",
+      "result_id": "29437417-778e-43b0-b738-267a47e0c19d"
+    },
+    {
+      "claim_id": "36fcb8bf-7f58-497e-96c6-6a6e8ba7f3c5",
+      "result_id": "29437417-778e-43b0-b738-267a47e0c19d"
+    },
+    {
+      "claim_id": "8eb4fc64-6ece-4dc5-ade4-287cd48fd4cd",
+      "result_id": "14f103c8-6012-4957-a503-4855664bfce7"
+    },
+    {
+      "claim_id": "f661b9fe-38a5-4366-8d12-1ba5ebbb41ea",
+      "result_id": "14f103c8-6012-4957-a503-4855664bfce7"
+    },
+    {
+      "claim_id": "6ef079cd-3cb1-4c2b-9dd7-027077961396",
+      "result_id": "14f103c8-6012-4957-a503-4855664bfce7"
+    },
+    {
+      "claim_id": "d2a9f70d-92ea-46b8-8bfc-dab9276f8388",
+      "result_id": "14f103c8-6012-4957-a503-4855664bfce7"
+    },
+    {
+      "claim_id": "148a580d-8873-4c0d-bd1a-531b40b0481f",
+      "result_id": "14f103c8-6012-4957-a503-4855664bfce7"
+    },
+    {
+      "claim_id": "34f6f355-e126-4948-b3f1-b0be9f99d5a5",
+      "result_id": "14f103c8-6012-4957-a503-4855664bfce7"
+    },
+    {
+      "claim_id": "2ca75dc7-4a0d-41a8-b43d-d826bfd61bbc",
+      "result_id": "14f103c8-6012-4957-a503-4855664bfce7"
+    },
+    {
+      "claim_id": "691ed4a3-a04f-4ba7-9e07-b1a56a96a109",
+      "result_id": "646e64b9-ef11-4d87-acb7-fc743ab8fbe8"
+    },
+    {
+      "claim_id": "495bcc7f-5c5c-4920-ac2d-12d9298b84ae",
+      "result_id": "646e64b9-ef11-4d87-acb7-fc743ab8fbe8"
+    },
+    {
+      "claim_id": "39f456ec-c029-41b9-85ef-53a6b0300838",
+      "result_id": "646e64b9-ef11-4d87-acb7-fc743ab8fbe8"
+    },
+    {
+      "claim_id": "984c5b61-4667-477b-9a83-c5c3a23e91f1",
+      "result_id": "646e64b9-ef11-4d87-acb7-fc743ab8fbe8"
+    },
+    {
+      "claim_id": "258fa088-b714-4a3c-8392-e78a8ff55770",
+      "result_id": "646e64b9-ef11-4d87-acb7-fc743ab8fbe8"
+    },
+    {
+      "claim_id": "0d2ca19c-0108-446b-825a-26e60c4c29fc",
+      "result_id": "2596723e-8e54-473b-a8a3-fa39c003faa6"
+    },
+    {
+      "claim_id": "37d619dc-8c4b-4ca1-aa71-5f30228bc136",
+      "result_id": "2596723e-8e54-473b-a8a3-fa39c003faa6"
+    },
+    {
+      "claim_id": "d73c0027-b571-45f5-be8c-ba25369b4134",
+      "result_id": "2596723e-8e54-473b-a8a3-fa39c003faa6"
+    },
+    {
+      "claim_id": "5b5df579-5d51-409e-bd12-58be982a950d",
+      "result_id": "2596723e-8e54-473b-a8a3-fa39c003faa6"
+    },
+    {
+      "claim_id": "bd6c33e8-baca-45ce-8f15-c6341f77f88b",
+      "result_id": "2596723e-8e54-473b-a8a3-fa39c003faa6"
+    },
+    {
+      "claim_id": "9b61230d-f38f-4058-b7c1-59fc56471d44",
+      "result_id": "2596723e-8e54-473b-a8a3-fa39c003faa6"
+    },
+    {
+      "claim_id": "26a619ad-e11d-4545-b2c7-92e08f24d32b",
+      "result_id": "2596723e-8e54-473b-a8a3-fa39c003faa6"
+    },
+    {
+      "claim_id": "ad2e0ea4-b9b5-4780-9eac-d3d412ce67d9",
+      "result_id": "2596723e-8e54-473b-a8a3-fa39c003faa6"
+    },
+    {
+      "claim_id": "5135df2c-abc7-4ccc-96eb-1670d056dde6",
+      "result_id": "2596723e-8e54-473b-a8a3-fa39c003faa6"
+    },
+    {
+      "claim_id": "717c6b71-dcb0-4f37-bf75-d07cb45017cd",
+      "result_id": "2596723e-8e54-473b-a8a3-fa39c003faa6"
+    },
+    {
+      "claim_id": "17c5108e-381d-4fa5-9ab2-3030d2bcda40",
+      "result_id": "63fe63d7-7659-4bb6-8868-6d8d598788ca"
+    },
+    {
+      "claim_id": "43774ff0-91ff-4836-a06a-4787cb01c3a1",
+      "result_id": "1447df4e-6f72-41b6-a296-761735659af3"
+    },
+    {
+      "claim_id": "fb79cc83-fb6f-4c90-9e74-76228def62cd",
+      "result_id": "1447df4e-6f72-41b6-a296-761735659af3"
+    },
+    {
+      "claim_id": "46e215b5-049b-4169-9880-da54ae78419c",
+      "result_id": "1447df4e-6f72-41b6-a296-761735659af3"
+    },
+    {
+      "claim_id": "09166ac8-fd62-4113-9211-1a3fd31dd1b5",
+      "result_id": "e480dd7d-e349-458e-b94d-4922cb8489e1"
+    },
+    {
+      "claim_id": "8151df5d-7686-4303-97e8-f711644571ed",
+      "result_id": "e480dd7d-e349-458e-b94d-4922cb8489e1"
+    },
+    {
+      "claim_id": "6e01a45f-5e8c-4bf7-8b73-8e82920b4678",
+      "result_id": "e480dd7d-e349-458e-b94d-4922cb8489e1"
+    },
+    {
+      "claim_id": "627fa63d-553c-48cc-8252-a9c816528302",
+      "result_id": "e480dd7d-e349-458e-b94d-4922cb8489e1"
+    },
+    {
+      "claim_id": "12bca1c4-3db8-4a64-a004-39e0234262fa",
+      "result_id": "4e7f2715-c506-4615-abf8-0532a7988aa5"
+    },
+    {
+      "claim_id": "97347262-d71e-4503-ba48-b5527164372a",
+      "result_id": "4e7f2715-c506-4615-abf8-0532a7988aa5"
+    },
+    {
+      "claim_id": "dd0b7acb-1b42-4683-8400-7e3c4f22fd63",
+      "result_id": "4e7f2715-c506-4615-abf8-0532a7988aa5"
+    },
+    {
+      "claim_id": "00bc564c-2bd4-450c-bca3-8caf9616fa32",
+      "result_id": "4e7f2715-c506-4615-abf8-0532a7988aa5"
+    },
+    {
+      "claim_id": "49c0e296-53b2-4a8c-a177-cd6e4bbe2d5f",
+      "result_id": "4e7f2715-c506-4615-abf8-0532a7988aa5"
+    },
+    {
+      "claim_id": "954ca85c-bc73-4bfa-a6c8-78780aa8e4d6",
+      "result_id": "4e7f2715-c506-4615-abf8-0532a7988aa5"
+    },
+    {
+      "claim_id": "297da580-ad87-4853-b18c-8934f72bc08f",
+      "result_id": "4e7f2715-c506-4615-abf8-0532a7988aa5"
+    },
+    {
+      "claim_id": "6ce3f68f-4ad2-4c76-bf19-036e0b15c8dd",
+      "result_id": "4e7f2715-c506-4615-abf8-0532a7988aa5"
+    },
+    {
+      "claim_id": "d93ea4dd-f882-4472-95fe-9c3cf3a5bd6b",
+      "result_id": "4e7f2715-c506-4615-abf8-0532a7988aa5"
+    },
+    {
+      "claim_id": "2e56ab1c-5c7f-4897-975c-32233e3efa52",
+      "result_id": "f83a1d77-927b-4ce0-a25c-b4ca079fa021"
+    },
+    {
+      "claim_id": "7ff7adf9-f512-4851-9ece-ef8ca7b10183",
+      "result_id": "f83a1d77-927b-4ce0-a25c-b4ca079fa021"
+    },
+    {
+      "claim_id": "1bc950a0-c64c-446a-a09a-190d5552aa88",
+      "result_id": "21ea2174-1bd0-46f8-a082-5ee3a2d7e573"
+    },
+    {
+      "claim_id": "8bf2d717-80d6-447e-9626-176596497979",
+      "result_id": "21ea2174-1bd0-46f8-a082-5ee3a2d7e573"
+    },
+    {
+      "claim_id": "f8f0908a-7a0c-4b62-9b23-8c28ad1c3f12",
+      "result_id": "21ea2174-1bd0-46f8-a082-5ee3a2d7e573"
+    },
+    {
+      "claim_id": "1d241828-7e46-4db2-841b-75ec8ef6747a",
+      "result_id": "81fa7d71-9d3a-4467-a396-1f76413551b7"
+    },
+    {
+      "claim_id": "cef35cb2-063e-4ccc-af91-e3eb9004f1ae",
+      "result_id": "81fa7d71-9d3a-4467-a396-1f76413551b7"
+    },
+    {
+      "claim_id": "7978a523-a9b7-4a0a-9927-1c3b4f8a1f76",
+      "result_id": "81fa7d71-9d3a-4467-a396-1f76413551b7"
+    },
+    {
+      "claim_id": "6988c311-ff67-4678-8a0d-63f53f0aa7eb",
+      "result_id": "52b3e827-ee46-417d-9525-f89f0884c046"
+    },
+    {
+      "claim_id": "73ba3490-19b2-46ed-a960-a90072468241",
+      "result_id": "52b3e827-ee46-417d-9525-f89f0884c046"
+    },
+    {
+      "claim_id": "c39dfd72-f8c9-4a61-8535-9e8fd85a0f98",
+      "result_id": "52b3e827-ee46-417d-9525-f89f0884c046"
+    },
+    {
+      "claim_id": "7de9cf1d-d527-40eb-aebf-7454853a2641",
+      "result_id": "52b3e827-ee46-417d-9525-f89f0884c046"
+    },
+    {
+      "claim_id": "4cf9b7df-12ad-4287-8e76-1e4da9236817",
+      "result_id": "52b3e827-ee46-417d-9525-f89f0884c046"
+    },
+    {
+      "claim_id": "11bb6c9b-c5ba-4554-93a4-3cdf6c3b0b63",
+      "result_id": "52b3e827-ee46-417d-9525-f89f0884c046"
+    },
+    {
+      "claim_id": "f6721ef7-bf86-4eaa-b971-4af81995aa62",
+      "result_id": "52b3e827-ee46-417d-9525-f89f0884c046"
+    }
+  ],
+  "comparisons": []
+}

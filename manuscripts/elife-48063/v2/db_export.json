@@ -1,0 +1,1278 @@
+{
+  "submission": {
+    "id": "279757a5-eacf-434f-950c-29d52549ad0e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:18:23.380250Z",
+    "updated_at": "2025-12-02T13:18:23.380250Z"
+  },
+  "content": [
+    {
+      "id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "submission_id": "279757a5-eacf-434f-950c-29d52549ad0e",
+      "content_type": "manuscript",
+      "content_text": "# Initiation of chromosome replication controls both division and replication cycles in E. coli through a double-adder mechanism\n\n## Authors\n\n- Guillaume Witz<sup>1</sup> ([ORCID: 0000-0003-1562-4265](https://orcid.org/0000-0003-1562-4265)) \u2020\n- Erik van Nimwegen<sup>1</sup>\n- Thomas Julou<sup>1</sup> ([ORCID: 0000-0001-7123-198X](https://orcid.org/0000-0001-7123-198X))\n\n### Affiliations\n\n1. Biozentrum University of Basel Basel Switzerland\n2. Swiss Institute of Bioinformatics University of Bern Bern Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nLiving cells proliferate by completing and coordinating two cycles, a division cycle controlling cell size and a DNA replication cycle controlling the number of chromosomal copies. It remains unclear how bacteria such as Escherichia coli tightly coordinate those two cycles across a wide range of growth conditions. Here, we used time-lapse microscopy in combination with microfluidics to measure growth, division and replication in single E. coli cells in both slow and fast growth conditions. To compare different phenomenological cell cycle models, we introduce a statistical framework assessing their ability to capture the correlation structure observed in the data. In combination with stochastic simulations, our data indicate that the cell cycle is driven from one initiation event to the next rather than from birth to division and is controlled by two adder mechanisms: the added volume since the last initiation event determines the timing of both the next division and replication initiation events.\n\n## Introduction\n\nAcross all domains of life, cell proliferation requires that the chromosome replication and cell division cycles are coordinated to ensure that every new cell receives one copy of the genetic material. While in eukaryotes this coordination is implemented by a dedicated regulatory system in which genome replication and division occur in well-separated stages, no such system has been found in most bacteria. This suggests that the molecular events that control replication initiation and division might be coordinated more directly in bacteria, through molecular interactions that are yet to be elucidated. The contrast between this efficient coordination and the apparent absence of a dedicated regulatory system is particularly remarkable since most bacteria feature a unique replication origin which imposes that multiple rounds of replication occur concurrently in fast growth conditions. For example, in the specific case of E. coli that we study here, it has long been known that growth rate, cell size, and replication initiation are coordinated such that the average number of replication origins per unit of cellular volume is approximately constant across conditions (Donachie, 1968) or that cellular volume grows approximately exponentially with growth rate (Taheri-Araghi et al., 2017). Although several models have been proposed over the last decades to explain such observations (for a review and a historical perspective see\u00a0for\u00a0example\u00a0Willis and Huang, 2017), so far direct validation of these models has been lacking, due to a large extent to the lack of quantitative measurements of cell cycles parameters in large samples with single-cell resolution.\n\nThanks to techniques such as microfluidics in combination with time-lapse microscopy, it has recently become possible to perform long-term observation of growth and division in single bacteria. By systematically quantifying how cell cycle variables such as size at birth, size at division, division time, and growth rate vary across single cells, insights can be gained about the mechanism of cell cycle control. Several recent studies have focused on understanding the regulation of cell size, resulting in the discovery that E. coli cells maintain a constant average size by following an adder strategy: instead of attempting to reach a certain size at division (i.e. a sizer mechanism) or to grow for a given time (i.e. a timer mechanism), it was found that cells add a constant length $d\u2062L$ to their birth length $L_{b}$ before dividing (Amir, 2014; Campos et al., 2014; Taheri-Araghi et al., 2017). In particular, while the cell size at division and the division time correlate with other variables such the cell size at birth and growth rate, the added length $d\u2062L$ fluctuates independently of birth size and growth rate. A remarkable feature of the adder model is its capacity to efficiently dampen large cell size fluctuations caused by the intrinsically noisy regulation, without the need for any fail-safe mechanism. This efficient strategy has been shown to be shared by various bacterial species as well as by archea (Eun et al., 2018) and even some eukaryotes such as budding yeast (Soifer et al., 2016).\n\nHere, we focus on how the control of replication initiation is coordinated with cell size control in E. coli, a question that has attracted attention for a long time (Helmstetter, 1974; Pierucci, 1978; Koppes and Nanninga, 1980). Several models have been proposed to explain how the adder behavior at the level of cell size might arise from a coordinated control of replication and division. Broadly, most models assume that the accumulation of a molecular trigger, usually assumed to be DnaA, leads to replication initiation, which in turn controls the corresponding future division event (Campos et al., 2014; Ho and Amir, 2015; Wallden et al., 2016). Subtle variations in how the initiation trigger accumulates and how the initiation to division period is set in each model imply distinct molecular mechanisms, and thus fundamentally different cell cycle regulations. Specifically, most models assume that initiation is triggered either when a cell reaches a critical absolute volume (initiation size, see for\u00a0example Wallden et al., 2016) or alternatively when it has accumulated a critical volume since the last initiation event (see e.g. Ho and Amir, 2015). In order to explain the coordination between cell cycle events, division is often assumed to be set by a timer starting at replication initiation, but recent studies have also proposed that the two cycles might be independently regulated (Micali et al., 2018a; Si et al., 2019). Finally, it is often assumed that the regulation strategy could be different at slow and fast growth where different constraints occur.\n\nWe use an integrated microfluidics and time-lapse microscopy approach to quantitatively characterize growth, division, and replication in parallel across many lineages of single E. coli cells, both in slow and fast growth conditions. We show that insights about the underlying control mechanisms can be gained by systematically studying the structure of correlations between these different variables. Our single-cell observations are inconsistent with several previously proposed models including models that assume replication is initiated at a critical absolute cell volume and models that assume division is set by a timer that starts at replication initiation. Instead, the most parsimonious model consistent with our data is a double-adder model in which the cell cycle commences at initiation of replication and both the subsequent division and the next initiation of replication are controlled by the added volume. We show that this model is most consistent with the correlation structure of the fluctuations in the data and, through simulations, we show that this model accurately reproduces several non-trivial observables including the previously observed adder behavior for cell size control, the distribution of cell sizes at birth, and the distribution of the number of origins per cell at birth. Moreover, the same model best describes the data both at slow and fast growth rates. As far as we are aware, no other proposed model at the same level of parsimony can account for the full set of observations we present here.\n\n## Results\n\nTo test possible models for the coordination of replication and division in E. coli we decided to systematically quantify growth, replication initiation, and division across thousands of single E. coli cell cycles, across multiple generations, and in various growth conditions. To achieve this, cells were grown in a Mother Machine type microfluidic device (Wang et al., 2010) and imaged by time-lapse microscopy. We used M9 minimal media supplemented with glycerol, glucose or glucose and eight amino acids, resulting in doubling times of 89, 53 and 41 min, respectively. The cell growth and division cycles were monitored by measuring single-cell growth curves obtained through segmentation and tracking of cells in phase contrast images using the MoMA software (Kaiser et al., 2018). The replication cycle was monitored by detecting initiation as the duplication of an oriC proximal FROS tagged locus imaged by fluorescence microscopy (Figure 1A). This of course only offers a proxy for initiation timing, as origin splitting can be affected by a cohesion time (Reyes-Lamothe et al., 2008). These measurements allowed us to quantify each single cell cycle by a number of variables such as the growth rate, the sizes at birth, replication initiation, and division, the times between birth and replication initiation and the time between birth and division. As done previously, we assume that cell radius is constant and use cell length as a proxy for cell volume (Adiciptaningrum et al., 2016; Taheri-Araghi et al., 2017). Since we can follow cells over multiple generations, we can also measure quantities that span multiple division cycles such as the total time or total cell growth between consecutive replication initiation events. As we analyze growth conditions spanning cases with both single and overlapping rounds of replication, we defined two alternative ways of defining variables. In particular, while the cell cycle is classically defined from division to division (Figure 1C), we also use an alternative framework proposed recently (Ho and Amir, 2015; Amir, 2017), in which the cell cycle is defined from one replication initiation to the next (Figure 1D). As this framework is centered on origins of replication rather than on cells, we consequently define a new quantity $\u039b$, the cell length per origin, which allows tracking of the amount of cell growth per origin of replication. For instance, in a case where a cell is born with an ongoing round of replication which started at time $t$, $\u039b_{i}$ for that cell is defined as $\u039b_{i}=L_{i}/4$ where $L_{i}$ is the length of the mother cell which contains four origins at time $t$ (Figure 1\u2014figure supplement 1). Using these definitions allows us to avoid having to apply artificial cut-offs as for\u00a0example done in Wallden et al. (2016). In this article, we explore a wide variety of models that take either a division-centric or replication-centric view of the cell cycle. Using specific correlations observed in our data, we show how entire classes of models can be rejected. In addition, we present a general statistical framework for ranking models based on their ability to capture the full correlation structure of the data.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig1-v2.jpg)\n\n**Figure 1.:** (A) Time-lapse of E. coli cells growing in a single microfluidic channel. The fluorescence signal from FROS labeling is visible as red spots in each cell. The green dotted line is an aid to the eye, illustrating the replication of a single origin. (B) Consistent with an adder model, the added length between birth and division is uncorrelated with length at birth (here and in all other scatter plots, the darker lines show the mean of the binned data and the error bars represent the standard error per bin). (C) The classical cell cycle is defined between consecutive division events, shown here with replication and division for slow growth conditions (i.e. without overlapping rounds of replication). (D) We introduce an alternative description framework where the cell cycle is defined between consecutive replication initiation events. The observables that are relevant to characterize the cell cycle in these two frameworks are indicated (see also Table 1).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig1-figsupp1-v2.jpg)\n\n### Cell size adder\n\nWe first verified whether our measurements support the previously observed adder behavior in cell size, and find that added length $d\u2062L$ between birth and division is indeed uncorrelated with length at birth $L_{b}$ in all growth conditions (Figure 1B), and, also in agreement with the adder model, the heritability of birth length between mother and daughter is characterized by a Pearson correlation coefficient of $r\u22480.5$ (see Appendix 1\u2014table 1). There has been a question in the literature as to whether adder behavior is also observed at slow growth. Slow growth conditions have only been tested in two studies. While an initial study reported that adder behavior is not observed at slow growth (Wallden et al., 2016), a more recent study did observe adder behavior at slow growth (Si et al., 2019). Our own observations are thus in line with this later study and it should also be noted that Si et al. (2019) only found a weak deviation from adder behavior when reanalyzing the data of Wallden et al. (2016). Thus, while more independent studies are needed, on the whole the currently available data appear to support that adder behavior is independent of growth conditions.\n\n### Replication initiation mass\n\nA popular idea dating back to the 1960s and still often used today to explain the coupling of division and replication cycles is the initiation mass model. The observations that cell volume grows exponentially with growth rate (Schaechter et al., 1958) and that, across a range of conditions, the time between replication initiation and division is roughly constant (Helmstetter et al., 1968) led Donachie to propose that the volume per origin of replication is held constant (Donachie, 1968). In particular, the model proposes that initiation occurs when a cell reaches a critical volume. A simple prediction of this model is that, for a given cell, the cell length $L_{i}$ at which initiation occurs should be independent of other cell cycle variables such as the length at birth $L_{b}$. However, as can be seen in Figure 2A, we observe that the initiation length $L_{i}$ and birth length $L_{b}$ are clearly correlated in all conditions, rejecting the initiation mass model. The absence of an initiation mass has already been shown by Adiciptaningrum et al. (2016) and confirmed in a recent comprehensive analysis (Micali et al., 2018a). Note that, by assuming that the concentration of the molecule that controls initiation is the same independent of growth\u00a0rate, and a critical amount of this molecule has to accumulate per origin to trigger initiation, then this model would still predict that the average volume per origin in bulk is independent of growth\u00a0rate (Si et al., 2017).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig2-v2.jpg)\n\n**Figure 2.:** (A) The initiation mass model predicts that the length at initiation $L_{i}$ should be independent of the length at birth $L_{b}$. However, we observe clear positive correlations between $L_{i}$ and $L_{b}$ in all growth conditions. (B) In contrast, the length accumulated between two rounds of replication $d\u2062\u039b_{i\u2062f}$ is independent of the initiation size $\u039b_{i}$, suggesting that replication initiation may be controlled by an adder mechanism.\n\n### Multiple origins accumulation model\n\nJust as a constant average cell size can be accomplished by adding a constant volume per division cycle rather than by dividing at a critical division volume, so a constant average volume per origin of replication can also be implemented by controlling the added volume between replication initiations rather than by a critical initiation volume. A concrete proposal for such an adder mechanism, called the multiple origins accumulation model, has recently received increasing attention (Ho and Amir, 2015). In this model, a molecule that is expressed at a constant cellular concentration accumulates at each origin until it reaches a critical amount, triggering replication, after which it is degraded and starts a new accumulation cycle. Given that, for a molecule at constant concentration, the added volume over some time period is proportional to the amount produced of the molecule, the result of this process is that the cell adds a constant volume per origin $d\u2062\u039b_{i\u2062f}$ between initiation events (with $d\u2062\u039b_{i\u2062f}=\u039b_{f}-\u039b_{i}$ where indexes stand for 'initial\u2019 and 'final\u2019 respectively, see Figure 1D and Table 1 for more details). Note also that in this 'per origin\u2019 formalism $d\u2062\u039b_{i\u2062f}$ is independent of the status of the division cycle, for\u00a0example a cell might have two origins $n_{o\u2062r\u2062i}=2$ and a length at initiation $L_{i}^{o\u2062r\u2062i\u20622}$ or have already divided and have one origin $n_{o\u2062r\u2062i}=1$ and a length $L_{i}^{o\u2062r\u2062i\u20621}$, but $\u039b_{i}=L_{i}^{o\u2062r\u2062i\u20622}/2=(L_{i}^{o\u2062r\u2062i\u20622}/2)/1=L_{i}^{o\u2062r\u2062i\u20621}/1$ is invariant. If replication is indeed triggered by such an adder mechanism, then one would expect the observed added lengths $d\u2062\u039b_{i\u2062f}$ to be independent of the length $\u039b_{i}$ at the previous initiation. As shown in Figure 2B, our data support this prediction.\n\n**Table 1.**\n Variables definitions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Division-centric</th>\n      <th colspan=\"2\">Replication-centric</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">Measured variables</td>\n    </tr>\n    <tr>\n      <td>Lb</td>\n      <td>Size at birth*</td>\n      <td>\u039bi</td>\n      <td>Size per origin at initial replication initiation*</td>\n    </tr>\n    <tr>\n      <td>Ld</td>\n      <td>Size at division*</td>\n      <td>\u039bf</td>\n      <td>Size per origin at final replication initiation*</td>\n    </tr>\n    <tr>\n      <td>Tb\u2062d</td>\n      <td>Duration between birth and division</td>\n      <td>Ti\u2062f</td>\n      <td>Duration between consecutive replication initiations</td>\n    </tr>\n    <tr>\n      <td>Li</td>\n      <td>Size at replication initiation*</td>\n      <td>\u039bb</td>\n      <td>Size per origin at birth*</td>\n    </tr>\n    <tr>\n      <td>Tb\u2062i</td>\n      <td>Duration between birth and replication initiation</td>\n      <td>Ti\u2062b</td>\n      <td>Duration between replication initiation and birth</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Derived variables</td>\n    </tr>\n    <tr>\n      <td>\u03bb=1Tbdlog\u2061LdLb</td>\n      <td>Cell growth rate* (between birth and division)</td>\n      <td>\u03b1=1Tiflog\u2061\u039bf\u039bi</td>\n      <td>Cell growth rate* (between consecutive replication initiations)</td>\n    </tr>\n    <tr>\n      <td>d\u2062L=Ld-Lb</td>\n      <td>Division 'adder'</td>\n      <td>d\u2062\u039bi\u2062b=\u039bb-\u039bi</td>\n      <td>Replication 'adder'</td>\n    </tr>\n    <tr>\n      <td>d\u2062Lb\u2062i=Li-Lb</td>\n      <td>Birth-to-initiation 'adder'</td>\n      <td>d\u2062\u039bi\u2062f=\u039bf-\u039bi</td>\n      <td>Initiation-to-birth 'adder'</td>\n    </tr>\n    <tr>\n      <td>Rb\u2062d=Ld/Lb</td>\n      <td>Growth ratio between birth and division</td>\n      <td>Ri\u2062f=\u039bf/\u039bi</td>\n      <td>Growth ratio between con- secutive initiations</td>\n    </tr>\n    <tr>\n      <td>Rb\u2062i=Li/Lb</td>\n      <td>Growth ratio between birth and initiation</td>\n      <td>Ri\u2062b=\u039bb/\u039bi</td>\n      <td>Growth ratio between initia- tion and birth</td>\n    </tr>\n  </tbody>\n</table>\n\n_* variables indicated by a star are measured from a linear fit of exponential elongation._\n\n### Connecting replication and division cycles\n\nHaving validated the multiple origins accumulation model for replication control, we now investigate its relation to the division cycle. A common assumption is that the period $T_{i\u2062d}$ from initiation to division (classically split into the replication period C and the end of replication to division period D) is constant and independent of growth rate (Cooper and Helmstetter, 1968; Ho and Amir, 2015). Such a constant period might suggest a timer mechanism by which, on average, a fixed time elapses in each cell between initiation and division. However, as visible in Figure 3A, while on average $T_{i\u2062d}$ is indeed rather constant across growth conditions, within each condition fast growing cells clearly complete this period faster than slow growing cells. One possibility is to assume that the time $T_{i\u2062d}$ is coupled to growth\u00a0rate $\\lambda$ by an unspecified mechanism in such a way as to recover the empirically observed correlation (Wallden et al., 2016). However, Figure 3B reveals another and arguably simpler solution. We find that $d\u2062\u039b_{i\u2062d}=\u039b_{d}-\u039b_{i}$, the length per origin added by a cell between initiation and division, has an adder behavior as well: independently of its size at initiation $L_{i}$, a cell will complete the corresponding division cycle after having accumulated a constant volume per origin $d\u2062\u039b_{i\u2062d}$.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig3-v2.jpg)\n\n**Figure 3.:** (A) Several models assume that a constant time passes from an initiation event to it corresponding division event. However, within each growth condition, that period is clearly dependent on fluctuations in growth rate. (B) The length accumulated from initiation to division is constant for each growth condition, suggesting an adder behavior for that period. In A and B, the Pearson correlation coefficient R and p values are indicated for each condition.\n\n### The double-adder model\n\nThese observations motivated us to formulate a model in which the cell cycle does not run from one division to the next, but rather starts at initiation of replication, and in\u00a0which both the next initiation of replication and the intervening division event, are controlled by two distinct adder mechanisms. In this replication-centric view, the cell cycles are controlled in a given condition by three variables: an average growth rate $\\lambda$, an average added length per origin $d\u2062\u039b_{i\u2062f}$, and an average added length $d\u2062\u039b_{i\u2062d}$ between replication initiation and division. In particular, we assume that these three variables fluctuate independently around these averages for each individual cell cycle, and that all other parameters such as the sizes at birth, initiation, and the times between birth and division or between initiation and division, are all a function of these three fundamental variables. This double-adder model is sketched in Figure 4 for the case of slow growth conditions: a cell growing at rate $\\lambda$ initiates replication at length $L_{i}$ and thereby starts two adder processes. The cell then divides when reaching a size $L_{d}=L_{i}+n\u2062d\u2062\u039b_{i\u2062d}=n\u2062(\u039b_{i}+d\u2062\u039b_{i\u2062d})$, where $n=2$ is the number of replication origins. Second, the next replication round will be initiated when the total length has increased by $d\u2062\u039b_{i\u2062f}$ per origin.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig4-v2.jpg)\n\n**Figure 4.:** Both adders (shown as coloured bars) start one copy per origin at replication initiation and accumulate in parallel for some time. After the division adder (green) has reached its threshold, the cell divides, and the initiation adder (orange) splits between the daughters. It keeps accumulating until it reaches its own threshold and initiates a new round of division and replication adders. Note that the double-adder model is illustrated here for the simpler case of slow growth.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The position along the cell axis and the cell-cycle time of all detected spots were collected. The longitudinal position was scaled with cell length to indicate the relative position in the cell. The cell cycle time was normalized between 0 and 1. The figure shows these space-time data as a 2D histogram, where additionally each time point (column) has been normalized to have a maximum bin value of 1. The mid-cell and quarter-cell (mid-cell of daughter cell) positions are indicated with dotted lines.\n\n### Simulations of the double-adder model\n\nTo assess to what extent our double-adder model can recover our quantitative observations, we resorted to numerical simulations. We first obtained from experimental data the empirical distributions of growth rates $\\lambda$, the added length per initiation $d\u2062\u039b_{i\u2062f}$, and the added length between initiation and division $d\u2062\u039b_{i\u2062d}$. A series of cells are initialized at the initiation of replication, with sizes taken from the experimental distributions. For each cell, a growth rate $\\lambda$ is independently drawn from its empirical distribution, and values of $d\u2062\u039b_{i\u2062d}$ and $d\u2062\u039b_{i\u2062f}$ are drawn from independent distributions, to set the times of the next division and replication initiation events. This procedure is then iterated indefinitely, that is a new growth rate and values of each adder are independently drawn for each subsequent cycle. As has been observed previously (Campos et al., 2014) the growth rate is correlated ($r\u22480.3$) between mother and daughter. Accounting for this mother-daughter correlation in growth rate was found not to be critical for capturing features of E. coli cell cycle, but was included in the model to reproduce simulation conditions of previous studies.\n\nAs can be seen in Figure 5, the double-adder model accurately reproduces measured distributions and correlations at all growth rates. In particular, the global adder behavior for cell size regulation naturally emerges from it (Figure 5A). Note however that in particular at fast growth (Glucose +AA), the relation between $d\u2062L$ and $L_{b}$ deviates from pure adder behavior, that\u00a0is $d\u2062L$ weakly anti-correlates with $L_{b}$ (Figure 1B). Interestingly, this deviation is recovered as well in the simulations (Figure 5A), supporting the validity of our model. The specific relation between length at initiation $L_{i}$ and length at birth $L_{b}$, which prompted us to reject the initiation mass model, is too reproduced by the model (Figure 5B). Furthermore, the distribution of the number of origins at birth, which reflects the presence of overlapping replication cycles is also reproduced (Figure 5D). Finally, we note that while the average cell length parameters (e.g. for $L_{b}$ in Figure 5C) are recovered in the simulations, the variances of the simulated distributions are a bit larger in the faster growth conditions, which can be attributed to an overestimation of the variances of the two adder distributions. An exhaustive comparison between experiments and simulations can be found in Figure 5\u2014figure supplement 1 through Figure 5\u2014figure supplement 4.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig5-v2.jpg)\n\n**Figure 5.:** (A) Binned scatter plot of the added length between birth and division $d\u2062L$ versus length at birth $L_{b}$ shows no correlations in both the data and the simulations, demonstrating that the double-adder model reproduces the adder behavior at the level of cell size. (B) Binned scatter plot of the length at initiation $L_{i}$ versus length at birth $L_{b}$ shows almost identical correlations in data and simulation. (C) Average (\u00b1\u00a0s.d) cell length at birth $L_{b}$. Both the mean and standard deviation are recovered in the model simulation. (D) The distribution of the number of origins at birth is also highly similar between experiments and data for all growth conditions.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The top row shows binned scatter plots of pairs of variables. The transparency degree reflects the density of data on the horizontal axis. Note that the slight slope of the adder plot ($d\u2062L\u2062v\u2062s.L_{b}$) can be corrected when reducing the variances of the division adder distribution (data not shown). As the initiation measurement is made imprecise for experimental (e.g. acquisition rate) and biological (e.g. variable cohesion of origins), it is reasonable to assume that we overestimate the variance of that parameter.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The top row shows binned scatter plots of pairs of variables. The transparency degree reflects the density of data on the horizontal axis.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The top row shows binned scatter plots of pairs of variables. The transparency degree reflects the density of data on the horizontal axis.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** The top row shows binned scatter plots of pairs of variables. The transparency degree reflects the density of data on the horizontal axis.\n\nAs our model recovers the classic adder from birth to division, that\u00a0is\u00a0independence of $L_{b}$ and $d\u2062L$, one could ask whether, instead of assuming division to be controlled by an adder between initiation and birth, one could simply have a classic birth-to-division adder running independently and in parallel with a replication adder. Harris and Theriot (2016) proposed that a homeostatic mechanism maintaining a constant cell surface to volume ratio could produce a birth-to-division adder, but only if division were controlled completely independently of replication. A recent study that emerged during the course of this work (Si et al., 2019) also argued that the division and replication cycles are uncoupled and controlled independently. To test these ideas, we implemented a model in which division and replication are controlled by completely independent adder mechanisms. Although this model recapitulates most experimental observations, it predicts a negative correlation between volume at initiation $L_{i}$ and the added volume $d\u2062\u039b_{i\u2062b}$ between initiation and birth (Appendix 2), which is at odds with the adder behavior we observe in the data (Figure 3). It should also be noted that purely geometric division models such as the Harris and Theriot (2016) model have been recently challenged more broadly by research indicating that surface expansion is coupled to dry-mass increase rather than to volume increase (Oldewurtel et al., 2019).\n\nRecently, Micali et al. (2018b) introduced a wider class of models in which the replication and division cycles are controlled by two concurrently running processes, which are coupled through a check-point that demands a certain minimal amount of time has to elapse between replication initiation and division. This class includes models in which independent replication and division adders are coupled through such a check-point and, if parameters are appropriately tuned, it is possible for such a model to exhibit no correlation between $L_{i}$ and $d\u2062\u039b_{i\u2062b}$, that\u00a0is reproduce the observed adder behavior for the period between replication initiation and division (Micali and Cosentino Lagomarsino, personal communication). Although such a model is thus potentially consistent with our observations, it requires the parameters to be precisely tuned and, moreover, this tuning has to apply to all growth conditions.\n\n### The double-adder model best captures the correlation structure of the data\n\nIn this work, we used empirically observed correlations between certain variables, such as those shown in Figure 2 and Figure 3, to motivate our double-adder model, and then used numerical simulations of this model to show that this model also successfully reproduces other features of the experimental data (Figure 5). However, it is conceivable that other models would be equally successful in reproducing the experimental observations. We thus aimed to devise a general approach for systematically comparing the performance of a large class of models.\n\nThe basic idea behind this approach is that, if the cell cycle is controlled by independent control processes, then we expect the variables associated with these control processes to fluctuate independently. To illustrate this, let\u2019s consider for the moment the simpler case of the division cycle and cell size control (Figure 6A). If cell size homeostasis were controlled by a \u2018sizer\u2019 mechanism, we would expect the size at division $L_{d}$ to fluctuate independently of size at birth $L_{b}$ and growth\u00a0rate $\\lambda$. If it were instead controlled by a \u2018timer\u2019, then we would expect the time $T_{b\u2062d}$ between birth and division to fluctuate independently from size at birth $L_{b}$ and growth\u00a0rate $\\lambda$. However, the measurements show that the time $T_{b\u2062d}$ is clearly negatively correlated with both growth\u00a0rate and size at birth. Instead, the added volume $d\u2062L$ fluctuates almost independently of size at birth $L_{b}$ and growth\u00a0rate $\\lambda$ (Figure 6A). It is precisely this independence of fluctuations in added volume from fluctuations in the other variables, that constitutes the support of the adder mechanism. Here, we generalize this idea by systematically considering all sets of variables that can be used to describe the cell cycle in single cells, and quantifying, for each set of variables, the extent to which they fluctuate independently.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig6-v2.jpg)\n\n**Figure 6.:** (A) The cell division cycle of a single cell can be described by different combinations of three variables which we refer to as decompositions. For example, the set $(L_{b},d\u2062L,\\lambda)$ corresponds to an adder decomposition, while $(L_{b},T_{b\u2062d},\\lambda)$ corresponds to a timer decomposition. For each possible decomposition, we can calculate the matrix $R$ of observed correlations $R_{i\u2062j}$ between each pair of variables in the decomposition from the data. Shown are the correlation matrices for the adder decomposition (left) and the timer decomposition (right), with positive correlations shown in red and negative correlations in blue. The independence $I$ of each decomposition is defined as the determined of the correlation matrix $I=det\u2062(R)$ and is indicated on top of each matrix. While the independence for the adder decomposition is close to the possible maximum of 1, the independence of the timer correlation is much lower due to a strong negative correlation between growth\u00a0rate $\\lambda$ and the cell cycle duration $T_{b\u2062d}$. (B) Conceptual illustration of the independence measure $I$. For each decomposition, the data can be thought of as a scatter of points in the space of the decomposition\u2019s variables, normalized such that the variance of points along each dimension is 1. In this conceptual example, we show two scatters of points for the two variables $x_{0}$ and $x_{1}$. The independence $I$ corresponds to the square of the volume covered by the scatter of points. On the left, there is virtually no correlation between the two variables, that\u00a0is $R_{01}\u22480$, such that the independence $I=det\u2062(R)=1-R_{01}^{2}\u22481$. In contrast, on the right there is a strong correlation, leading to a much lower independence $I\u22480.3$. In this way, the independence measure quantifies to what extent the variables in the decomposition fluctuate independently, and this measure applies to scatters of any number of dimensions.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** In the main Figure 6, we showed the correlation matrices and independence measure for two possible decompositions of the division cycle. Here we show the correlation matrices for all eight possible decompositions, sorted by their independence $I$. Each matrix represents one decomposition, and each element of the matrix shows the correlation of the two variables indicated within it. The level and sign of correlation is given by the color bar.\n\nA single division cycle needs 3 variables to be fully described and we will refer to such sets of variables as decompositions. For example, the set $(L_{b},L_{d},\\lambda)$ corresponds to a \u2018sizer\u2019 decomposition, the set $(L_{b},T_{b\u2062d},\\lambda)$ to a \u2018timer\u2019 decomposition, and $(L_{b},d\u2062L,\\lambda)$ to an adder decomposition. For each decomposition, we can now calculate, from the data, the matrix $R$ of observed correlations $R_{i\u2062j}$ between each pair of variables $(i,j)$ in the decomposition. For example, Figure 6A shows the correlation matrices $R$ for the adder and timer decompositions. The more independent the variables are in the decomposition, the smaller the correlations will be. As a measure for the overall independence of the variables in a decomposition we use the determinant of the matrix $R$, that\u00a0is we define $I=det\u2062(R)$. The intuitive meaning of this measure is illustrated in Figure 6B. We can think of each cell cycle as a point in the three-dimensional space spanned by the decomposition, such that all cell cycle observations form a scatter of points in this space. If we normalize each axis by setting its scale such that the variance equals 1 along the axis, then the independence $I=det\u2062(R)$ corresponds exactly to the volume covered by the scatter of points. Note that, if there are no correlations, the matrix $R$ will become the identity matrix,\u00a0that\u00a0is $R_{i\u2062i}=1$ and $R_{i\u2062j}=0$ when $i\\neqj$, and the independence will become exactly 1. The larger the correlations between the variables, the smaller the volume $I$ will become, and it will become zero in the limit of perfect correlation between 2 or more variables. Thus, the independence per definition ranges from\u00a00 to 1 (perfect independence).\n\nWe can now apply this systematic approach to the complete cell cycle case. In this case, we measured the variables shown in Table 1 (measured variables) either for the replication- or the division-centric view of the cell cycle. As for the division cycle case analyzed in Figure 6, we can use equations relating these variables in order to derive a set of additional variables as shown in Table 1 (derived variables). We need four variables to define both replication and division cycles, and using now all the measured and derived variables, as well as the equations connecting them, we can create all possible decompositions of four variables sufficient to describe the cell cycle, and measure their independence using the decomposition method. Finally, we can rank all decompositions according to their independence to find which ones offer the most accurate description of the data. Such a statistical analysis is only relevant when applied to a large dataset and we therefore focus here on the slow growth condition (M9 glycerol) for which we implemented automatic origin tracking.\n\nThe tables in Figure 7A show the five best models ranked by decreasing independence (all decompositions can be found in Figure 7\u2014figure supplement 3). Note that these variable sets include previously proposed sizer and timer models as special cases, for example the inter-initiation model combined with an initiation to division timer (Ho and Amir, 2015) is highlighted in red in Figure 7\u2014figure supplement 3. The most successful decompositions are shown in greater detail as correlation matrices Figure 7B. We find in general that none of the division-centric models accomplishes high independence. For example, as shown in the covariance matrix of Figure 7B right, the best division-centric model is plagued by high correlation between $L_{b}$ and $d\u2062L_{b\u2062i}$. This strongly suggests that the cell cycle control is better described from a replication-centric point of view. Of all replication-centric models, our double-adder model clearly reaches the highest independence, followed by various derivative models in which one of the adders is replaced by another variable. Notably, the top three decompositions are the same for the real data and for the data from the simulations of the double-adder model, underscoring that these near optimal variants are expected for data produced by a double-adder mechanism. We note that independence of our double-adder model on the real data is a bit lower than on simulated data Figure 7B, that is\u00a00.88 versus\u00a00.98. This residual dependence might either result from correlated errors in the measurements, or it might reflect some small biological dependence not captured by our model. As an additional control, we also applied our decomposition analysis to a dataset from a simulation with the multiple origins accumulation model in which there is an inter-initiation added volume $d\u2062\u039b_{i\u2062f}$ and a timer from initiation to division $T_{i\u2062b}$. As shown in Figure 7\u2014figure supplement 4, the decomposition analysis successfully identifies the model used in the simulation as having the highest Independence $I$. Finally, to verify that the results obtained by analyzing the fluctuations of the division and replication cycles are not primarily driven by differences in experimental details (such as strains or reporters used to measure replication initiation), we also applied our decomposition method to a dataset from a study that appeared in the course of this work (Si et al., 2019). As shown in Figure 7\u2014figure supplement 5, here again the double-adder model is the most successful at explaining the experimental measurements. In summary, this systematic analysis shows that, within a large class of alternative models, the double-adder model best captures the correlation structure of both our data and data recently obtained by another laboratory.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig7-v2.jpg)\n\n**Figure 7.:** (A)\u00a0The tables show the independence measures $I$ for the top scoring decompositions of the division and replication cycles. In these tables, each line represents a possible decomposition and its independence $I$. As there are two ways to see the cell cycle (replication- and division-centric), we present decompositions for both replication- (left) and division-centric decompositions (right). In addition, we show the top decompositions both for the correlation matrices of the experimental data of the growth conditions M9+glycerol (automated analysis) and for the data from the simulations of the double-adder model (top and bottom rows, respectively). Results for the full list of decompositions can be found in Figure 7\u2014figure supplement 3. Note that the decomposition analysis clearly identifies the replication-centric double-adder characterized by $\u039b_{i}$, $\\alpha$, $d\u2062\u039b_{i\u2062f}$ and $d\u2062\u039b_{i\u2062b}$ as the best decomposition. The fact that the double-adder decomposition is also top scoring (with $I\u22431$) for data from the simulation of the double-adder confirms that the decomposition analysis works as expected. (B) Correlation matrices for the best decompositions for replication-centric (left) and division-centric models (right). As in Figure 6A, each matrix represents one decomposition, and each element of the matrix shows the correlation of the two variables indicated within it. The level and sign of correlation is given by the color bar. As the lower left and upper right triangles of the matrices are redundant, we use them to show correlations from both experimental and simulation data in a single matrix. The lower-left corners bounded by a dotted line contain correlations from experimental data and the upper-right ones, bounded by a continuous line, from simulation data. The diagonal summarizes the set of variables. The best replication-centric model (left) has only weak correlations between its variables as reflected in high independence, while the best division-centric model has a few highly correlated variables leading to low independence.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** In complement to the best decomposition shown in Figure 7, we show here correlation matrices for the first nine best decompositions for the experimental data (M9+glycerol). Each matrix represents one decomposition, and each element of the matrix shows the correlation of the two variables indicated within it. The level and sign of the correlation is given by the color bar. The independence $I$ is shown at the top of each correlation matrix.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** In complement to the best decomposition shown in Figure 7, we show here correlation matrices for the first nine best decompositions for the data from the simulation of the double-adder model (with parameters from growth in M9+glycerol). Each matrix represents one decomposition, and each element of the matrix shows the correlation of the two variables indicated within it. The level and sign of the correlation is given by the color bar. The independence $I$ is shown at the top of each correlation matrix.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** Full list of independences $I$ for all replication-centric and division-centric models.In Figure 7A we show tables indicating independence $I$ for the five best decompositions of the M9+glycerol growth condition. Here, we show independences $I$ for all possible decompositions for both experimental and simulation data and both replication- and division-centric views of the cell cycle. Each line in the table shows one possible decomposition and its associated independence $I$, and decompositions are ranked by decreasing $I$. The double-adder model (decomposition $\u039b_{i}$, $\\alpha$, $d\u2062\u039b_{i\u2062f}$, $d\u2062\u039b_{i\u2062b}$) presented in this article has the best level of independence (top row in tables A and B). Some decompositions correspond to other previously proposed models. As an example, the Ho and Amir (2015) model based on an inter-initiation adder and a division timer is highlighted in red (decomposition $T_{i\u2062b}$, $\\alpha$, $d\u2062\u039b_{i\u2062f}$, $\u039b_{b}$), and the Wallden model based on a per origin initiation mass and a timer from initiation to division is highlighted in blue (decomposition $\u039b_{i}$, $T_{i\u2062b}$, $\\alpha$, $d\u2062\u039b_{i\u2062f}$).\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig7-figsupp4-v2.jpg)\n\n**Figure 7\u2014figure supplement 4.:** We simulated a model regulated by a inter-initiation adder $\u039b_{i\u2062f}$ and a initiation to division timer $T_{i\u2062b}$, that\u00a0is as proposed by Ho and Amir (2015), and applied our decomposition analysis to data from these simulations. We here show the correlation matrices of the best replication- and division-centric decompositions on this data. Each matrix represents one decomposition, and each element of the matrix shows the correlation of the two variables indicated within it. The level and sign of correlation is given by the color bar. The independence $I$ of each decomposition is shown at the top of each matrix. In the tables, we also show the scores of the five best decompositions. Reassuringly, the decomposition corresponding to the variables used for the simulation (left) indeed comes out as top scoring, with an independence of $I\u22431$, confirming the validity of our decomposition approach.\n\n![Figure 7\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/48063/elife-48063-fig7-figsupp5-v2.jpg)\n\n**Figure 7\u2014figure supplement 5.:** We performed the same decomposition analysis as the one used for our data in the main Figure 7 on a published dataset found in Si et al. (2019) for slow growth in a different strain and different growth medium (MG1655 in M9+acetate). We show here correlation matrices for the two best replication- and division-centric decompositions on this data. Each matrix represents one decomposition, and each element of the matrix shows the correlation of the two variables indicated within it. The level and sign of correlation is given by the color bar. The independence $I$ of each decomposition is shown at the top of each matrix. In the tables, we also show the scores of the five best decompositions. Notably, in agreement with the results on our own data, the double-adder model ($\u039b_{i}$, $\\alpha$, $\u039b_{i\u2062f}$, $\u039b_{i\u2062b}$) shows the best independence on this dataset as well.\n\n## Discussion\n\nThanks to experimental techniques like the one used here, models of bacterial cell cycle regulation dating back to the 1960s have been recently re-examined in detail in several studies (Campos et al., 2014; Tanouchi et al., 2015; Ho and Amir, 2015; Adiciptaningrum et al., 2016; Wallden et al., 2016; Si et al., 2017; Logsdon et al., 2017; Micali et al., 2018a; Eun et al., 2018; Si et al., 2019). Although these data have shed important new light on the regulation of bacterial physiology, such as identifying the adder behavior in cell growth and division, it has remained somewhat unclear to what extent different models are consistent with the data. In particular, many studies only focus on certain correlations and dependencies between measurable cell cycle quantities, and these can often be explained by multiple models. In this study, we have in a first step empirically built a model which is based on previous ideas and which recapitulates measured cell cycle parameters. This model makes replication the central regulator of the cell cycle, with each initiation round triggering subsequent division and replication events through concurrent adder processes. In a second step, we then designed and applied a statistical method to determine, within a class of models built on biologically relevant cell cycle variables, which set of those variables best explains the correlation structure observed in the measurements. Following this fully independent and more systematic approach, our empirical double-adder model clearly comes out as the most successful. It should be noted that, whereas models based on a timer between initiation and division naturally predict the well-known exponential increase of average cell-size with average growth\u00a0rate measured in the bulk (Schaechter et al., 1958; Taheri-Araghi et al., 2017), the double-adder does not require such a relationship. However, neither is such a relationship inconsistent with the double-adder model. The difference between a timer and adder model is in the nature of the correlations of different cell cycle quantities across single cells within one condition, and not in the behavior of their averages across conditions. Therefore, it is possible to implement the same dependence of average size on growth\u00a0rate using different models that have different single-cell correlation structure. In particular, in order for the average bulk cell-size cell size to grow exponentially with the average bulk growth\u00a0rate, it is enough that the average time between initiation and division is independent of growth\u00a0rate and this can also be achieved with an adder model. For example, if we imagine that the initiation to division adder is implemented by the accumulation of a key molecule to a critical amount, and we assume that the average rate of accumulation of this molecule is independent of the bulk growth\u00a0rate, then the average cell-size will grow exponentially with growth\u00a0rate. At the same time, within such an adder model the single-cell fluctuations in the added volume will be independent of the single-cell fluctuations in growth\u00a0rate and initiation size, as required by our observations, and in contrast to the predictions of a timer model, which would predict fluctuations in growth\u00a0rate and added volume to correlate positively.\n\nWhile the division and replication cycles are seemingly coupled, our analysis demonstrates that two simple adders connected to replication initiation are sufficient to recapitulate both cycles without explicitly enforcing constraints reflecting mechanisms such as over-initiation control by SeqA and nucleoid occlusion which ensures that division only occurs after chromosome replication is completed. The initiation-to-initiation adder mimics SeqA activity by creating a refractory period without initiation, and the initiation-to-division adder ensures that a minimal time is allocated for replication to complete. While the simulations might in rare cases generate unrealistic situations, for example if a large initiation adder is combined with a small division adder leading to premature division, those clashes seem rare enough to not affect the global statistical behavior of the model. Naturally, the model would break down and these controls would need to be explicitly included in the case where cells are subject to stress conditions where these control mechanisms act as fail-safes for\u00a0example to ensure that division is delayed if DNA repair is needed. In the course of our study, new research proposed that division and replication cycles are only seemingly connected, and used perturbation methods to drive cells to states where the uncoupling is revealed (Si et al., 2019). While such perturbation studies are very informative, more work is needed to understand to what extent hidden compensatory mechanisms might be at play when affecting DnaA or FtsZ expression. Also, that study focuses exclusively on a model which explicitly enforces various correlations between variables unlike our model which naturally produces such relations. Another recent study (Wehrens et al., 2018) using a perturbative approach has shown that cells driven to a filamentous state recover normal sizes through successive single division events seemingly independently from initiation and following an adder behaviour. As division inhibition also hinders replication related processes such as chromosome segregation (S\u00e1nchez-Gorostiaga et al., 2016), it is difficult to untangle the different mechanisms that might be at play. Complementing such experiments with a monitoring of replication as done here would surely be a worthwhile future endeavour, a task though which is beyond the purpose of this study, which tries to clarify the normal growth case.\n\nInterestingly, a double-adder mechanism similar to the one that we propose here has been shown to explain cell cycle control in mycobacteria (Logsdon et al., 2017). These mycobacteria have a much more complex cell cycle than E. coli, in particular characterized by a strong asymmetry between daughter cells and a growth rate almost an order of magnitude smaller than that of E. coli. Despite those important differences, it was shown that mycobacterial cell cycles exhibit adder behavior for both division and replication starting at initiation, in a manner highly similar to our observations in E. coli. This suggests that the mechanism connecting replication and division must be quite fundamental and independent of the specifics of available genes and their expression.\n\nAlthough the single-cell observations provide clear indications of which variables are most likely to be directly involved in the cell cycle control, they of course do not indicate the underlying molecular mechanisms. However, it is not hard to speculate about possible molecular mechanisms that could implement the double-adder behavior. As others have pointed out previously (Ho and Amir, 2015), an adder for the regulation of replication initiation can be easily implemented at the molecular level by having a 'sensor\u2019 protein that builds up at each origin, and that triggers replication initiation whenever a critical mass is reached at a given origin. If this sensor protein is additionally homeostatically controlled such that its production relative to the overall protein production is kept constant, then the average volume per origin will also be kept constant across conditions.\n\nIt is more challenging to define a molecular system that can implement the second adder that controls division. The main challenge is that this adder does not run throughout the entire cell cycle, but only between replication initiation and division. It is well known that division is driven by the polymerization of the FtsZ ring, which includes a host of other FtsZ-ring associated proteins, and its progressive constriction. It might seem simplest to assume that the division adder could be implemented directly through FtsZ production, again in the logic of the regulated 'sensor\u2019 mentioned above. However, this would require FtsZ to be produced and accumulating at the division sites only from replication initiation to cell division. Although this is conceivable, that\u00a0is it is known that FtsZ and other division proteins are heavily regulated at several levels (Dewar and Dorazi, 2000) and that especially in slow growth conditions its concentration varies during the cell cycle (M\u00e4nnik et al., 2018), it is hard to imagine how this model could work under fast growth conditions in which there are overlapping rounds of replication such that FtsZ would be constantly expressed. Moreover recent data (Si et al., 2019) rather suggest that FtsZ concentration is constant during the cell cycle.\n\nAlternatively, rather than FtsZ production, Ftsz polymerization could be regulated. One remarkable observation that is well known within the field (Lau et al., 2004; Nielsen et al., 2006) and that we also observe in our data (see Figure 4\u2014figure supplement 1), is that origins always occupy the position of future division sites (mid-cell, 1/4 and 3/4 positions etc.) when replication is initiated. This observation not only suggests that, at replication initiation, some local molecular event occurs that will eventually trigger division at the same site, but it is also remarkably consistent with the idea of an adder running only between replication initiation and division. One long-standing idea that is consistent with these observations is that some molecular event that occurs during replication initiation triggers the start of FtsZ ring formation, and that the timing from initiation to division is controlled by the polymerization dynamics of the FtsZ ring (Weart and Levin, 2003). At the molecular level, the common triggering of initiation and polymerization might be explained by the accumulation of acidic phosholipids in the cell membrane precisely at future division sites (Renner and Weibel, 2011) where they probably interact with components of the division machinery. At the same time those lipids are known to play a role in promoting replication by rejuvenating the initiator protein DnaA-ADP into DnaA-ATP (Saxena et al., 2013), and might therefore be a 'hub\u2019 coordinating the two cycles. Finally, it remains to be explained how FtsZ polymerization or pole building could result in an adder behavior. For that purpose, future experiments should focus on combining the type of information collected in this study and detailed measures of the dynamics of FtsZ-ring assembly and constriction as done in Coltharp et al. (2016).\n\n## Materials and methods\n\n### Bacterial strains and media\n\nAll strains are derived from the K-12 strain BW27378, a \u0394(araH-araF)570(::FRT) derivative of the Keio collection background strain (Baba et al., 2006) obtained from the Yale Coli Genetic Stock Center. This strain was further modified by \u03bb-Red recombination (Datsenko and Wanner, 2000) and P1 transduction to result in \u0394araFGH(::FRT), \u0394araE(::FRT), \u0394lacIZYA(::FRT). A 250 lacO repeats FROS array with chloramphenicol resistance was inserted close to the origin of replication in the asnA gene by \u03bb-Red recombination and P1 transduction resulting in strain GW273. The lacO-CmR array was derived from the original plasmid pLau43 (Lau et al., 2004) by replacing the kanamycin resistance and a series of operators on both sides of it with the CmR gene. For visualization of the array, GW273 was transformed with plasmid pGW266 expressing a LacI-mVenus fusion, resulting in strain GW296. The plasmid is derived from the original FROS plasmid pLAU53 (Lau et al., 2004) from which the tetR construct was removed and the lacI-CFP replaced with lacI-mVenus. For the experiment analyzed automatically, strain GW296 was additionally transformed with plasmid pGW339 expressing FtsZ-mVenus under the control of the araBAD promoter using 0.002% arabinose for induction, resulting in strain GW339. Expression is tightly controlled by using the approach proposed in Morgan-Kiss et al. (2002).\n\nAll experiments were done using M9 minimal media supplemented with 2mM\u00a0MgSO4, 0.1mM CaCl2, and sugars (0.2% for glucose and 0.2% for glycerol). In one experiment, the media was supplemented with eight amino acids at a concentration of 5\u00a0\u00b5g/mL-1: Threonine, Aspagrinine, Methionine, Proline, Leucine, Tryptophane, Serine, Alanine. All experiments were carried out at 37\u00b0C.\n\n### Microfluidic device fabrication\n\nMother Machine experiments were performed using the Dual Input Mother Machine (DIMM) microfluidic design which has been described elsewhere (Kaiser et al., 2018) and is freely available online (https://metafluidics.org/devices/dual-input-mother-machine/); since no change of conditions was intended during experiments, the same media was flown at both inputs.\n\nSeveral microfluidics masters were produced using soft lithography techniques by micro-resist Gmbh; two masters with regular growth channels of suitable size ( 0.8\u00a0\u00b5m\u00a0width \u00d7 0.9\u00a0\u00b5m\u00a0height for growth in glycerol, and 1\u00a0\u00b5m width \u00d7\u00a01.2\u00a0\u00b5m\u00a0height for growth in glucose) were used for all experiments.\n\nFor each experiment, a new chip was produced by pouring PDMS (Sylgard 184 with 1:9 w/w ratio of curing agent) on the master and baking it for 4 hrs or more at 80\u00b0C. After cutting the chip and punching inlets, the chip was bonded to a #1.5 glass coverslip as follows: the coverslip was manually washed in water and soap, rinsed in isopropanol then water; the chip cleaned from dust using MagicTape, rinsed in isopropanol then water; surfaces were activated with air plasma (40 s at 1500\u00a0\u00b5m of Hg) before being put in contact; the assembled chip was cooked 1 hr or more at 80\u00b0C.\n\nBefore running the experiment, the chip was primed and incubated 1 hr at 37\u00b0C using passivation buffer (2.5 mg/mL salmon sperm DNA, 7.5 mg/mL bovine serum albumin) for the mother machine part and water for the overflow channels.\n\n### Experiment setup and conditions\n\nBacteria were stored as frozen glycerol stocks at \u221280\u00b0C and streaked onto LB agar plates to obtain clonal colonies. Overnight precultures were grown from single colonies in the same growth media as the experiment. The next day, cells were diluted 100-fold into fresh medium and harvested after 4\u20136 hr.\n\nThe experimental apparatus was initialized, pre-warmed and equilibrated. Media flow was controlled using a pressure controller and monitored with flow-meters, set to run a total flow of \u2248\u00a01.5\u00a0L/min (corresponding to a pressure of \u2248\u00a01600\u00a0mbar).\n\nThe primed microfluidic chip was mounted, connected to media supply and flushed with running media for 30 min or more to rinse passivation buffer. The grown cell culture was centrifuged at 4000\u00d7 g for 5 min, and the pellet re-suspended in a few \u00b5L supernatant and injected into the device from the outlet using the pressure controller. To facilitate the filling of growth channels by swimming and diffusing cells, the pressure was adjusted in order to maintain minimal flow in the main channel (loading time \u2248\u00a040\u00a0min).\n\nAfter loading, bacteria were incubated during 2 hr before starting image acquisition. Every 3 min, phase contrast and fluorescence images were acquired for several well-separated positions in parallel.\n\n### Microscopy and image analysis\n\nAn inverted Nikon Ti-E microscope, equipped with a motorized xy-stage and enclosed in a temperature incubator (TheCube, Life Imaging Systems), was used to perform all experiments. The sample was fixed on the stage using metal clamps and focus was maintained using hardware autofocus (Perfect Focus System, Nikon). Images were recorded using a CFI Plan Apochromat Lambda DM \u00d7100 objective (NA 1.45, WD 0.13 mm) and a CMOS camera (Hamamatsu Orca-Flash 4.0). The setup was controlled using microManager (Edelstein et al., 2014) and time-lapse movies were recorded with its Multi-Dimensional Acquisition engine. Phase contrast images were acquired using 200 ms exposure (CoolLED pE-100, full power). Images of mCherry fluorescence were acquired using 200 ms exposure (Lumencor SpectraX, Green LED at 33% with ND4) using a Semrock triple-band emission filter (FF01-475/543/702-25).\n\nImage analysis was performed using MoMA (Kaiser et al., 2018) as described in its documentation (https://github.com/fjug/MoMA/wiki). Raw image datasets were transferred to a centralised storage and preprocessed in batch. Growth channels were chosen randomly after discarding those where cell cycle arrest occurred in the mother cell, and curated manually in MoMA. An exponential elongation model was then fitted to each cell cycle, and cycles presenting large deviations were discarded (1\u20133% of each experiment, see Appendix 1).\n\nFor the automated origin detection and tracking, we used custom Python code (Witz, 2019; copy archived at https://github.com/elifesciences-publications/DoubleAdderArticle) which makes extensive use of the packages numpy (van der Walt et al., 2011), scipy (Jones et al., 2001), matplotlib (Hunter, 2007), pandas (McKinney, 2010), and scikit-image (van der Walt et al., 2014). Spots were detected following the method proposed in Aguet et al. (2013). Briefly, amplitude and background are estimated for each pixel using a fast filtering method and a spot model corresponding to the optical setup. Among the local maxima found in the amplitude estimates, spots are then selected using a statistical test based on the assumption that background noise is Gaussian. To track spots, we used the trackpy package (Allan et al., 2018). Cell cycles with incoherent properties (e.g. missing origin because of a failed detection) were discarded (~14%). The time of initiation was assigned as the first time point where a track splits into two. For the manual analysis of the other experiments, the frame showing origin splitting was selected manually.\n\nUsing the timing of origin splitting, the corresponding cell length could be determined. All further variables like $d\u2062L$ or $d\u2062\u039b_{i\u2062b}$ are deduced from the primary variables. For the decomposition analysis, a pseudo-cell cycle was created by concatenating the mother cell cycle from initiation to division with the daughter cell cycle from birth to initiation (the operation is repeated for both daughters separately). The growth rate $\\alpha$ for this pseudo-cell cycle was again obtained by fitting an exponential growth model. All the growth lanes corresponding to a given conditions were then pooled to generate the various statistics shown in this article.\n\nThe entire analysis pipeline is available as Python modules and Jupyter Notebooks on Github, https://github.com/guiwitz/DoubleAdderArticle (Witz, 2019).\n\n### Simulations\n\nThe numerical implementation of the model described in Figure 4 and used in Figure 5 requires several parameters for each individual cell cycle. To generate those, the following distributions were extracted from experimental data, and if needed their means and variances were obtained by a fitting procedure:\n\nFor the simulation, a series of 500 cells is initialized with all required parameters: initial length $L_{0}$ taken from the birth length distribution, $\\lambda=P\u2062(\\lambda)$, number of origins $n_{o\u2062r\u2062i}=1$, and the two adders $d\u2062\u039b_{i\u2062b}=P\u2062(\\lambda)$ and $d\u2062\u039b_{i\u2062f}=P\u2062(d\u2062\u039b_{i\u2062f})$ whose counters are starting at 0. The exact initialization is not crucial as the system relaxes to its equilibrium state after a few generations. Cells are then growing incrementally following an exponential law, and the added length is monitored. Every time the cell reaches its target $d\u2062\u039b_{i\u2062f}$, the number of origins doubles and a new initiation adder is drawn from $P\u2062(d\u2062\u039b_{i\u2062f})$. Every time the cell reaches its target $d\u2062\u039b_{i\u2062b}$ the cell (1) divides into two cells using a division ratio drawn $P\u2062(r)$, (2) the number of origins per cell is divided by two, (3) a new division adder is drawn from $P\u2062(d\u2062\u039b_{i\u2062b})$, and finally (4) a new growth rate is drawn from $P\u2062(\\lambda)$. Each simulation runs for 30 hrs in steps of 1 min. In the end, the cell tracks resulting from the simulation are formatted in the same format as the experimental data, and follow the same analysis pipeline. The code is available on Github.\n",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "4fd26d8e-3f4e-4a3e-b4a1-5ca859544d21",
+      "submission_id": "279757a5-eacf-434f-950c-29d52549ad0e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael T Laub, Massachusetts Institute of Technology United States\n\nReviewers:\n- Alan Leonard\n\n## Review text\n\nDOI: [10.7554/eLife.48063.sa1](https://doi.org/10.7554/eLife.48063.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper uses time-lapse microscopy of individual cells to examine the coupling of chromosome replication and cell division. The authors present a new model suggesting a \"dual adder\" mechanism in which the volume added by cells controls both the subsequent round of replication initiation and cell division. This new model contrasts with recent single \"adder\" models. Although a dissection of the mechanistic basis remains to be done, this new model represents an important new concept that will guide future studies of the bacterial cell cycle.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Chromosome replication initiation controls both division and replication cycles in E. coli via a double-adder mechanism\" for consideration by eLife. Your article has been reviewed by Gisela Storz as the Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Alan Leonard (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe regulatory mechanisms that coordinate the bacterial cell cycle remain obscure, but recent technological advances in single cell analysis have resulted in an avalanche of recent manuscripts focused on \"adder mechanisms\", particularly those related to cell size control where cells add constant length to their birth length and the added length fluctuates independently of either birth size or growth rate. While the \"classic\" adder model is insightful as a universal cell size maintenance mechanism, its application to other aspect of cell cycle regulation are less satisfying. The studies and model presented here in Witz et al., based on time lapse microscopy of individually growing cells, take the adder concept in an interesting new direction. The authors present an intriguing model that focuses on the initiation of chromosome replication as the critical starting point and incorporates \"dual adder\" mechanisms whereby cell volume increases from the initiation point controlling the subsequent cell division as well as the next initiation of replication. Importantly, the authors show that their model is compatible with the known parameters for both slow and fast growth conditions (Figure 5), parameters not usually examined or even addressed successfully in prior adder models. The authors also present a compelling comparison of their model with other models in Figure 6 and Figure 6\u2014figure supplement 1. Despite the general enthusiasm for the work, the reviewers have several comments/concerns regarding the analyses presented as well as how the work relates to previous work. These issues will need to be addressed in a revision. Some of the following points are from different reviewers but hit on related points, so some revisions may address multiple points below.\n\nEssential revisions:\n\n1) The results of this study seem to disagree with those of Wallden et al. The latter does not find \"adder\" correlations in the slower conditions studied. The authors reference Wallden et al., but do not address the discrepancy.\n\n2) The double-adder proposed do not capture the well-established exponential dependence of cell size on growth rate at the bulk level (Donachie, 1968). As such, their statement, in the Discussion section, on how models \"fail to capture at least one important observation\" may be applicable to the double-adder as well (at least in fast growth conditions).\n\n3) The argument against the previous work of Wallden et al., in Appendix 2 seems incorrect. The authors state that \"The histogram of the number of origins at birth shown in Figure 1D shows a clear failure of the model where cells in slow growth conditions are all born with an ongoing round of replication in contradiction with experimental data\". But in fact, Figure 1D of this appendix is consistent with initiation occurring shortly after cell birth, which is precisely what the Wallden et al., experimental data shows in the slow growth condition. Moreover, the authors attempt to use (both in the main text Figure 5D and in Appendix 2) the bimodal distribution of the number of origin as a \"smoking gun\" for one model or another. But such bimodal distributions of origin numbers are mostly model-agnostic, and therefore cannot be used to discriminate between models.\n\n4) In order to discriminate between models, a clearer statement of which models were considered is necessary. In particular, how is noise implemented exactly in the various models considered? e.g. does the noise affect the generation time or the growth rate, and how? What is the biologically dominant source of noise? One reason this might be important is that different implementations might affect the analysis used in Figure 6.\n\n5) In Figure 6, the authors propose a new method for distinguishing between models. The authors should also test the method and validate it on synthetic data, to show that the method can indeed decouple the newly proposed model from previous ones. From the text and Figure 6, it is not obvious that correlation patterns similar to the double-adder cannot be generated by other models (e.g., can this method distinguish between the multiple origins accumulation model and the double-adder?).\n\n6) The results of Figure 5C do not seem compelling. Could the authors perform some statistical analysis to test the data more quantitatively?\n\n7) Regarding the Wallden model test (Appendix 2), it would be useful to show in panel D the data from Figure 3 of the Wallden paper, as to judge the claimed contradiction. Please then also provide a comparison with your model (Figure 5D), so that one can judge how well it predicts their data.\n\n8) This also addresses another general topic: how similar are the data sets from the different studies? Is would be good to do this not only for 5D-style data, but also other quantifications. Are they qualitatively or quantitatively similar? If they are different, what are the causes?\n\n9) In Figure 2 of the appendix, red and blue do not appear to be properly labelled.\n\n10) Regarding the presentation of the modelling, I can guess what the 3x3 and the colouring means, but descriptions are not given in Appendix 3\u2014figure 1, nor what the use of 'estimating independence' is. The former is given in Figure 6A, but no clarification is given about the aim of this exercise \u2013 e.g., why are these 4x4 the 'best decompositions' (how can I see that from these 4x4 diagrams)? But also, very basic aspects of their approach, like the notion that different rows in Figure 6A bottom are different models, is highly non-intuitive. In 6B caption, what is the difference between 'blue area', 'shaded blue'. What is the difference between the mathematical 'determinant of the correlation matrix' and the more usual correlation coefficient? Because of its unusual nature, more effort needs to go into explaining such basics. The authors did try to explain some aspects in the main text (subsection \u201cThe double-adder model best captures the correlation structure of the data\u201d), but overall these quite crucial parts of the paper are very difficult to follow, even with a quantitative background.\n\n11) The authors did a good job in discussing their results in relation to the possible molecular mechanisms, such as the possibility of replication initiation setting future division sites. This relates to recent work showing rapid min-system-driven repositioning of the FtsA rings in filamentous cells, which appear to be odds with such a notion (Wehrens, 2018), which would be good to discuss. On a different note, that study also found adder behaviour despite already having multiple chromosomes because of the filamented state, and single division events despite many potential division sites and rings, all suggesting some division to division regulation. It would be good to discuss these findings, also to keep open the possibility that such a division to division mechanism may exist, even if it is not required to explain the data presented here.\n\n12) It would similarly be important to discuss surface to volume ratio models, and the extent to which they are consistent or not consistent with the presented data and models.\n\n13) The authors do not discuss at the D period, or its compensations. I was trying to determine whether a birth-division adder has some bearing on this, but could not resolve it. The C period rather fixed in time, while the D period can compensate for (eg small) size at termination (Adicipingrum, 2015). That could be consistent with a birth-division adder, or at least both observations indicate the D period is not a constant time, as suggested in much of the literature, which would be good to discuss.\n",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0eff5a84-9b43-4a5e-bf2c-06bd499289c9",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C1",
+      "claim": "E. coli cells were grown in M9 minimal media supplemented with glycerol, glucose, or glucose and eight amino acids, resulting in doubling times of 89, 53 and 41 min, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We used M9 minimal media supplemented with glycerol, glucose or glucose and eight amino acids, resulting in doubling times of 89, 53 and 41 min, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly reports measured doubling times for different growth media conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "2876f818-3e86-4e62-a82d-401c8bc02381",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C3",
+      "claim": "The heritability of birth length between mother and daughter is characterized by a Pearson correlation coefficient of r\u22480.5.",
+      "claim_type": "EXPLICIT",
+      "source": "also in agreement with the adder model, the heritability of birth length between mother and daughter is characterized by a Pearson correlation coefficient of r\u22480.5 (see Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific correlation coefficient value from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "97a482bc-3166-4f1c-9e0b-835c8c04367d",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C4",
+      "claim": "Adder behavior is observed at slow growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our own observations are thus in line with this later study and it should also be noted that Si et al. (2019) only found a weak deviation from adder behavior when reanalyzing the data of Wallden et al. (2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations and comparison with published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "706178e4-6065-453a-ab4c-b96ff5f3d136",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C5",
+      "claim": "The initiation length Li and birth length Lb are clearly correlated in all conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as can be seen in Figure 2A, we observe that the initiation length Li and birth length Lb are clearly correlated in all conditions, rejecting the initiation mass model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data in Figure 2A showing correlation between these variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "b81dee98-3e35-4e4f-937d-f7c0e4bc1a53",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C6",
+      "claim": "The initiation mass model is rejected by the observed correlation between initiation length and birth length.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as can be seen in Figure 2A, we observe that the initiation length Li and birth length Lb are clearly correlated in all conditions, rejecting the initiation mass model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The authors use their experimental data to reject a specific model based on observed correlations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "241e41a0-8cd5-40a8-9611-d4babba222d3",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C7",
+      "claim": "The absence of an initiation mass has been shown by Adiciptaningrum et al. (2016) and confirmed in a recent comprehensive analysis (Micali et al., 2018a).",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of an initiation mass has already been shown by Adiciptaningrum et al. (2016) and confirmed in a recent comprehensive analysis (Micali et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references prior published work that supports the finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "a1f72179-1e9a-4d4b-83a1-291fb1d8f41c",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C11",
+      "claim": "The double-adder model accurately reproduces measured distributions and correlations at all growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen in Figure 5, the double-adder model accurately reproduces measured distributions and correlations at all growth rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents simulation results in Figure 5 that match experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "669c2258-c5c9-4599-86ed-23e9816538c7",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C12",
+      "claim": "The global adder behavior for cell size regulation naturally emerges from the double-adder model.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the global adder behavior for cell size regulation naturally emerges from it (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript shows through simulations that the model produces the observed adder behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "952d4002-7902-4f34-ae51-052555458651",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C14",
+      "claim": "The double-adder model reproduces the distribution of the number of origins at birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the distribution of the number of origins at birth, which reflects the presence of overlapping replication cycles is also reproduced (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript shows simulation results matching experimental data for origin number distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "780ccf0a-b34a-496a-8d77-bf989029638d",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C16",
+      "claim": "The three fundamental variables (growth rate, d\u039bif, and d\u039bid) fluctuate independently around their averages for each individual cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we assume that these three variables fluctuate independently around these averages for each individual cell cycle, and that all other parameters such as the sizes at birth, initiation, and the times between birth and division or between initiation and division, are all a function of these three fundamental variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this assumption as part of the model definition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "d0fdf7c7-7f8a-4dbd-b46c-74f47cb376f6",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C17",
+      "claim": "The double-adder decomposition has the highest independence (I=0.882) among replication-centric models for experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all replication-centric models, our double-adder model clearly reaches the highest independence",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents statistical analysis results in Figure 7 showing the double-adder model has the highest independence score.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "fff1d083-8c23-456f-9e4d-188d367ca04c",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C18",
+      "claim": "Division-centric models accomplish lower independence than replication-centric models.",
+      "claim_type": "EXPLICIT",
+      "source": "We find in general that none of the division-centric models accomplishes high independence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents comparative statistical analysis in Figure 7 showing lower independence scores for division-centric models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "f3fea644-788f-4dc4-a323-97f7c8de0466",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C20",
+      "claim": "The decomposition analysis successfully identifies the model used in simulations as having the highest Independence I.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 7\u2014figure supplement 4, the decomposition analysis successfully identifies the model used in the simulation as having the highest Independence I.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript validates their analysis method by applying it to simulated data with known model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "8bf58b3e-07e0-458b-83bd-17253dc7ea59",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C21",
+      "claim": "The double-adder model is the most successful at explaining experimental measurements in the dataset from Si et al. (2019).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 7\u2014figure supplement 5, here again the double-adder model is the most successful at explaining the experimental measurements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript applies their analysis to an independent published dataset and shows consistent results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "25f1d4e5-8719-4ca7-b381-d0a196946e6c",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C22",
+      "claim": "Origins always occupy the position of future division sites (mid-cell, 1/4 and 3/4 positions etc.) when replication is initiated.",
+      "claim_type": "EXPLICIT",
+      "source": "One remarkable observation that is well known within the field (Lau et al., 2004; Nielsen et al., 2006) and that we also observe in our data (see Figure 4\u2014figure supplement 1), is that origins always occupy the position of future division sites (mid-cell, 1/4 and 3/4 positions etc.) when replication is initiated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports their own observation of this phenomenon and cites prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "872c5c93-27f8-4e54-a806-e7040077d408",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C23",
+      "claim": "A double-adder mechanism similar to the one proposed for E. coli has been shown to explain cell cycle control in mycobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a double-adder mechanism similar to the one that we propose here has been shown to explain cell cycle control in mycobacteria (Logsdon et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published work showing similar mechanisms in other bacteria.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "c7e84296-6963-4e03-9899-3e16f23137d7",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C24",
+      "claim": "Mycobacterial cell cycles exhibit adder behavior for both division and replication starting at initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite those important differences, it was shown that mycobacterial cell cycles exhibit adder behavior for both division and replication starting at initiation, in a manner highly similar to our observations in E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript references published findings about mycobacterial cell cycle control.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "04f47914-c211-42ed-b5ab-f1f3ba192bcb",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C25",
+      "claim": "The mechanism connecting replication and division must be quite fundamental and independent of the specifics of available genes and their expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the mechanism connecting replication and division must be quite fundamental and independent of the specifics of available genes and their expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors infer this conclusion from the observation of similar mechanisms in different bacterial species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "e2daaa3a-5b28-4266-b663-41f9f3bcebf1",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C26",
+      "claim": "An adder for the regulation of replication initiation can be implemented at the molecular level by having a 'sensor' protein that builds up at each origin and triggers replication initiation when a critical mass is reached.",
+      "claim_type": "EXPLICIT",
+      "source": "As others have pointed out previously (Ho and Amir, 2015), an adder for the regulation of replication initiation can be easily implemented at the molecular level by having a 'sensor' protein that builds up at each origin, and that triggers replication initiation whenever a critical mass is reached at a given origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses a potential molecular mechanism based on prior theoretical work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "ddb3ff49-b685-4733-8125-aa8ad4522656",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C27",
+      "claim": "If a sensor protein is homeostatically controlled such that its production relative to overall protein production is kept constant, then the average volume per origin will be kept constant across conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "If this sensor protein is additionally homeostatically controlled such that its production relative to the overall protein production is kept constant, then the average volume per origin will also be kept constant across conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents a theoretical argument about how homeostatic control could maintain constant volume per origin.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "4495957b-6c75-4033-b806-ddadf4f16961",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C28",
+      "claim": "Acidic phospholipids accumulate in the cell membrane at future division sites where they interact with components of the division machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "At the molecular level, the common triggering of initiation and polymerization might be explained by the accumulation of acidic phosholipids in the cell membrane precisely at future division sites (Renner and Weibel, 2011) where they probably interact with components of the division machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published work about phospholipid localization and proposes a speculative mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "cc99be4a-99c2-4c92-8468-269a4018a6de",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C29",
+      "claim": "Acidic phospholipids play a role in promoting replication by rejuvenating the initiator protein DnaA-ADP into DnaA-ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time those lipids are known to play a role in promoting replication by rejuvenating the initiator protein DnaA-ADP into DnaA-ATP (Saxena et al., 2013), and might therefore be a 'hub' coordinating the two cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published work about the role of phospholipids in DnaA activation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "f8bb75cc-a6cd-4e30-a6ca-32b9004fbdf7",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C30",
+      "claim": "Acidic phospholipids might be a 'hub' coordinating the replication and division cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time those lipids are known to play a role in promoting replication by rejuvenating the initiator protein DnaA-ADP into DnaA-ATP (Saxena et al., 2013), and might therefore be a 'hub' coordinating the two cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors speculate about a potential coordinating role based on known functions of phospholipids.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "984d64c7-c8f3-463d-86ff-b6bd91fbcfea",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C31",
+      "claim": "The strain used is derived from the K-12 strain BW27378, a \u0394(araH-araF)570(::FRT) derivative of the Keio collection background strain.",
+      "claim_type": "EXPLICIT",
+      "source": "All strains are derived from the K-12 strain BW27378, a \u0394(araH-araF)570(::FRT) derivative of the Keio collection background strain (Baba et al., 2006) obtained from the Yale Coli Genetic Stock Center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the bacterial strain used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "94de22e2-0504-4d8a-ac70-1ee333395a47",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C32",
+      "claim": "A 250 lacO repeats FROS array with chloramphenicol resistance was inserted close to the origin of replication in the asnA gene.",
+      "claim_type": "EXPLICIT",
+      "source": "A 250 lacO repeats FROS array with chloramphenicol resistance was inserted close to the origin of replication in the asnA gene by \u03bb-Red recombination and P1 transduction resulting in strain GW273.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the genetic modification made to create the experimental strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "77212a58-c95e-4b93-b61c-0d4dab73dd50",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C33",
+      "claim": "Cells were grown in a Mother Machine type microfluidic device and imaged by time-lapse microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve this, cells were grown in a Mother Machine type microfluidic device (Wang et al., 2010) and imaged by time-lapse microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental setup used for data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "7248a123-3577-425c-a4a3-7cf9bf00a671",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C34",
+      "claim": "The replication cycle was monitored by detecting initiation as the duplication of an oriC proximal FROS tagged locus imaged by fluorescence microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "The replication cycle was monitored by detecting initiation as the duplication of an oriC proximal FROS tagged locus imaged by fluorescence microscopy (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the method used to monitor replication initiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "ffb29890-7d18-4b36-9138-dea10a089b4e",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C35",
+      "claim": "Origin splitting can be affected by a cohesion time.",
+      "claim_type": "EXPLICIT",
+      "source": "This of course only offers a proxy for initiation timing, as origin splitting can be affected by a cohesion time (Reyes-Lamothe et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript acknowledges a limitation of their measurement method based on published work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "32db0f25-e4b2-49f8-8bc4-e8a65ec97d82",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C36",
+      "claim": "Cell radius is assumed to be constant and cell length is used as a proxy for cell volume.",
+      "claim_type": "EXPLICIT",
+      "source": "As done previously, we assume that cell radius is constant and use cell length as a proxy for cell volume (Adiciptaningrum et al., 2016; Taheri-Araghi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states an assumption used in their analysis, citing prior work that used the same assumption.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "71eab529-41ad-4aa6-9643-4524760ed9c6",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C37",
+      "claim": "The average number of replication origins per unit of cellular volume is approximately constant across conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the specific case of E. coli that we study here, it has long been known that growth rate, cell size, and replication initiation are coordinated such that the average number of replication origins per unit of cellular volume is approximately constant across conditions (Donachie, 1968)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a well-established observation from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "b7fcf67a-0403-42ad-b217-bd4104eb8fce",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C38",
+      "claim": "Cellular volume grows approximately exponentially with growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "or that cellular volume grows approximately exponentially with growth rate (Taheri-Araghi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a published observation about the relationship between cell volume and growth rate.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "5f6553da-79cd-4463-ab1a-cbeccf9c6cf7",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C39",
+      "claim": "E. coli cells maintain a constant average size by following an adder strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recent studies have focused on understanding the regulation of cell size, resulting in the discovery that E. coli cells maintain a constant average size by following an adder strategy",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript references the established finding of adder behavior in E. coli.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "49683fb6-bf27-448f-8a58-a22b8714c68f",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C42",
+      "claim": "The adder model efficiently dampens large cell size fluctuations caused by intrinsically noisy regulation without the need for any fail-safe mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "A remarkable feature of the adder model is its capacity to efficiently dampen large cell size fluctuations caused by the intrinsically noisy regulation, without the need for any fail-safe mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a theoretical property of the adder model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "44dbaba6-ca90-46d9-a60d-0e17d17df735",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C43",
+      "claim": "The adder strategy is shared by various bacterial species, archaea, and some eukaryotes such as budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "This efficient strategy has been shown to be shared by various bacterial species as well as by archea (Eun et al., 2018) and even some eukaryotes such as budding yeast (Soifer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published work showing adder behavior across different organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "59554810-b16b-4ce8-b725-09d950177b2d",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C44",
+      "claim": "Most models assume that the accumulation of a molecular trigger, usually assumed to be DnaA, leads to replication initiation, which in turn controls the corresponding future division event.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly, most models assume that the accumulation of a molecular trigger, usually assumed to be DnaA, leads to replication initiation, which in turn controls the corresponding future division event (Campos et al., 2014; Ho and Amir, 2015; Wallden et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes common assumptions in existing models from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "da0918ee-0e74-4431-9a6e-34169b5feea6",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C45",
+      "claim": "The time between replication initiation and division is roughly constant across a range of conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The observations that cell volume grows exponentially with growth rate (Schaechter et al., 1958) and that, across a range of conditions, the time between replication initiation and division is roughly constant (Helmstetter et al., 1968) led Donachie to propose that the volume per origin of replication is held constant (Donachie, 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a classic observation from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "684599f7-973a-4716-8a4b-69b5b8d40020",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C46",
+      "claim": "The growth rate is correlated (r\u22480.3) between mother and daughter.",
+      "claim_type": "EXPLICIT",
+      "source": "As has been observed previously (Campos et al., 2014) the growth rate is correlated (r\u22480.3) between mother and daughter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports an observed correlation and cites prior work showing the same.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "f07bf1ee-9b23-4f9c-a7de-8c9a00deae6a",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C47",
+      "claim": "Accounting for mother-daughter correlation in growth rate was found not to be critical for capturing features of E. coli cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Accounting for this mother-daughter correlation in growth rate was found not to be critical for capturing features of E. coli cell cycle, but was included in the model to reproduce simulation conditions of previous studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports findings from their simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "34e29a06-da4c-4246-b266-6a862fb232ac",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C49",
+      "claim": "Purely geometric division models such as the Harris and Theriot (2016) model have been challenged by research indicating that surface expansion is coupled to dry-mass increase rather than to volume increase.",
+      "claim_type": "EXPLICIT",
+      "source": "It should also be noted that purely geometric division models such as the Harris and Theriot (2016) model have been recently challenged more broadly by research indicating that surface expansion is coupled to dry-mass increase rather than to volume increase (Oldewurtel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites recent published work that challenges certain types of models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "0081b511-9425-40ac-9848-a66dabd936db",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C50",
+      "claim": "Micali et al. (2018b) introduced a class of models in which replication and division cycles are controlled by two concurrently running processes coupled through a check-point.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Micali et al. (2018b) introduced a wider class of models in which the replication and division cycles are controlled by two concurrently running processes, which are coupled through a check-point that demands a certain minimal amount of time has to elapse between replication initiation and division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a class of models from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "359fe1bc-16a9-4e48-9625-f80d6b6152c5",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C51",
+      "claim": "If the cell cycle is controlled by independent control processes, then the variables associated with these control processes should fluctuate independently.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic idea behind this approach is that, if the cell cycle is controlled by independent control processes, then we expect the variables associated with these control processes to fluctuate independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents the theoretical basis for their statistical analysis approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "95e0ea01-af8d-43e1-aa46-daceb69f1ed1",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C52",
+      "claim": "The independence of fluctuations in added volume from fluctuations in other variables constitutes the support of the adder mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "It is precisely this independence of fluctuations in added volume from fluctuations in the other variables, that constitutes the support of the adder mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the theoretical basis for identifying adder behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "0807b1f3-1a41-4055-8c12-133e5ec2a95c",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C55",
+      "claim": "The independence per definition ranges from 0 to 1 (perfect independence).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the independence per definition ranges from 0 to 1 (perfect independence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript defines the range of their independence measure.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "afd504d1-fcf4-4605-9ccd-b5b64643fbe6",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C56",
+      "claim": "The residual dependence in the double-adder model might result from correlated errors in measurements or reflect some small biological dependence not captured by the model.",
+      "claim_type": "EXPLICIT",
+      "source": "This residual dependence might either result from correlated errors in the measurements, or it might reflect some small biological dependence not captured by our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors speculate about possible explanations for observed discrepancies between model and data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "93d91bb2-a096-4ac2-add9-cc0bea42dfac",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C57",
+      "claim": "The double-adder model does not require an exponential relationship between average cell-size and average growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that, whereas models based on a timer between initiation and division naturally predict the well-known exponential increase of average cell-size with average growth rate measured in the bulk (Schaechter et al., 1958; Taheri-Araghi et al., 2017), the double-adder does not require such a relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses a theoretical property of their model in comparison to timer models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "3c590fb3-6f98-418e-93c9-6cf4e9190b9c",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C58",
+      "claim": "The difference between a timer and adder model is in the nature of the correlations of different cell cycle quantities across single cells within one condition, not in the behavior of their averages across conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between a timer and adder model is in the nature of the correlations of different cell cycle quantities across single cells within one condition, and not in the behavior of their averages across conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains a key conceptual distinction between model types.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "60558341-3c23-48ca-9812-ee76d8e44086",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C59",
+      "claim": "The two adders connected to replication initiation are sufficient to recapitulate both cycles without explicitly enforcing constraints reflecting mechanisms such as over-initiation control by SeqA and nucleoid occlusion.",
+      "claim_type": "EXPLICIT",
+      "source": "While the division and replication cycles are seemingly coupled, our analysis demonstrates that two simple adders connected to replication initiation are sufficient to recapitulate both cycles without explicitly enforcing constraints reflecting mechanisms such as over-initiation control by SeqA and nucleoid occlusion which ensures that division only occurs after chromosome replication is completed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents a conclusion from their modeling and simulation work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "8278754d-708b-4693-a7d7-a1f67cff218b",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C60",
+      "claim": "The initiation-to-initiation adder mimics SeqA activity by creating a refractory period without initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The initiation-to-initiation adder mimics SeqA activity by creating a refractory period without initiation, and the initiation-to-division adder ensures that a minimal time is allocated for replication to complete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains how their model implicitly captures known biological constraints.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "02282810-1862-48a2-963c-4d0b4869ba7c",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C61",
+      "claim": "The initiation-to-division adder ensures that a minimal time is allocated for replication to complete.",
+      "claim_type": "EXPLICIT",
+      "source": "The initiation-to-initiation adder mimics SeqA activity by creating a refractory period without initiation, and the initiation-to-division adder ensures that a minimal time is allocated for replication to complete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains how their model implicitly captures known biological constraints.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "0fea1924-7c15-4643-af93-486a4a8c2108",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C62",
+      "claim": "Si et al. (2019) proposed that division and replication cycles are only seemingly connected and used perturbation methods to drive cells to states where the uncoupling is revealed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the course of our study, new research proposed that division and replication cycles are only seemingly connected, and used perturbation methods to drive cells to states where the uncoupling is revealed (Si et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes findings from a concurrent published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "ac2d680f-e332-407b-8385-efaa2f06a73e",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C63",
+      "claim": "Cells driven to a filamentous state recover normal sizes through successive single division events seemingly independently from initiation and following an adder behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Another recent study (Wehrens et al., 2018) using a perturbative approach has shown that cells driven to a filamentous state recover normal sizes through successive single division events seemingly independently from initiation and following an adder behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes findings from a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "5c3f3da7-996f-46b0-9f6b-1311469c58bc",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C64",
+      "claim": "Division inhibition hinders replication related processes such as chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "As division inhibition also hinders replication related processes such as chromosome segregation (S\u00e1nchez-Gorostiaga et al., 2016), it is difficult to untangle the different mechanisms that might be at play.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published work about the effects of division inhibition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "3d07f981-e3d9-49a3-b028-ea35df7a7d6d",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C65",
+      "claim": "Division is driven by the polymerization of the FtsZ ring and its progressive constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that division is driven by the polymerization of the FtsZ ring, which includes a host of other FtsZ-ring associated proteins, and its progressive constriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states established knowledge about bacterial cell division.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "93dc952c-3d5b-4c54-8dc9-25ad50c0877b",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C66",
+      "claim": "FtsZ and other division proteins are heavily regulated at several levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this is conceivable, that is it is known that FtsZ and other division proteins are heavily regulated at several levels (Dewar and Dorazi, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published knowledge about FtsZ regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "261984b3-8170-455d-b20e-86e53450ab15",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C67",
+      "claim": "In slow growth conditions, FtsZ concentration varies during the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "and that especially in slow growth conditions its concentration varies during the cell cycle (M\u00e4nnik et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published observations about FtsZ concentration dynamics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "7ac28f3b-3b59-48b7-a56c-afc0bbb593ca",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C68",
+      "claim": "Recent data suggest that FtsZ concentration is constant during the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover recent data (Si et al., 2019) rather suggest that FtsZ concentration is constant during the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites recent published findings about FtsZ concentration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "acf4668c-666c-45b8-bfdd-b8845ba53ae3",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C69",
+      "claim": "At replication initiation, some local molecular event occurs that will eventually trigger division at the same site.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation not only suggests that, at replication initiation, some local molecular event occurs that will eventually trigger division at the same site, but it is also remarkably consistent with the idea of an adder running only between replication initiation and division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors infer a molecular mechanism from observed spatial-temporal patterns.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "536d1dab-41ff-4907-827b-0225003b71b1",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "claim_id": "C70",
+      "claim": "Some molecular event that occurs during replication initiation triggers the start of FtsZ ring formation, and the timing from initiation to division is controlled by the polymerization dynamics of the FtsZ ring.",
+      "claim_type": "EXPLICIT",
+      "source": "One long-standing idea that is consistent with these observations is that some molecular event that occurs during replication initiation triggers the start of FtsZ ring formation, and that the timing from initiation to division is controlled by the polymerization dynamics of the FtsZ ring (Weart and Levin, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a speculative molecular mechanism from the literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5000ad41-ec63-4a1b-a1ac-91d5d0253353",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed an experimental system using E. coli strain GW296 grown in M9 minimal media with different carbon sources (glycerol, glucose, or glucose + amino acids) in a Mother Machine microfluidic device, with replication initiation monitored via FROS-tagged oriC loci and time-lapse microscopy, yielding doubling times of 89, 53, and 41 minutes respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C31-C34 collectively describe a well-documented experimental setup with specific strain construction, growth conditions, and imaging methodology. The measured doubling times are consistent with expected values for these growth conditions, and the methodology follows established protocols.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "c0fff219-e00d-4e09-8421-e5be6d1b3f16",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "E. coli cells exhibit adder behavior for cell size control across all growth conditions tested, including slow growth, with mother-daughter birth length correlation of r\u22480.5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C39 are supported by the authors' experimental data showing adder behavior across conditions and are consistent with recent literature (Si et al. 2019). The correlation coefficient is directly measured from their dataset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "0b2b2445-e061-4a7a-b5c3-a363a69106aa",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The initiation mass model is rejected based on observed positive correlation between initiation length Li and birth length Lb across all growth conditions, consistent with prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 present clear experimental evidence (Figure 2A) showing correlation between Li and Lb, which directly contradicts the initiation mass model's prediction of independence. This finding is corroborated by cited prior work (Adiciptaningrum et al. 2016; Micali et al. 2018a).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "171a52b2-8823-469a-93db-ec916c597603",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The double-adder model, which assumes three independently fluctuating fundamental variables (growth rate, d\u039bif, and d\u039bid), accurately reproduces experimental distributions and correlations at all growth rates, including the global adder behavior for cell size regulation and the distribution of origins at birth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12, C14, and C16 are supported by simulation results (Figure 5) showing quantitative agreement between model predictions and experimental data across multiple observables. The model's ability to reproduce non-trivial features like origin number distributions strengthens the validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "d2729bdb-d1b0-47cf-b9a5-de546b8fa417",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Statistical decomposition analysis demonstrates that the double-adder model (with variables \u039bi, \u03b1, d\u039bif, d\u039bib) achieves the highest independence (I=0.882) among all tested models for experimental data, outperforming division-centric models, and this result is validated on both simulated data and an independent dataset from Si et al. (2019).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18, C20-C21 present a systematic statistical framework that objectively ranks models. The method is validated on simulated data with known ground truth (C20) and shows consistent results on independent experimental data (C21), providing strong support for the double-adder model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "e9a8554f-e35b-4e14-8191-7c91309eab18",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Origins occupy future division sites (mid-cell, 1/4, 3/4 positions) at replication initiation, suggesting a local molecular event at initiation triggers division at the same site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 is supported by the authors' own observations (Figure 4\u2014figure supplement 1) and is consistent with well-established prior literature (Lau et al. 2004; Nielsen et al. 2006). Claim C69 represents a reasonable inference from this spatial-temporal pattern, though the specific molecular mechanism remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "507e1abf-3705-4213-a9fd-bd7d9a7c354a",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A double-adder mechanism similar to that proposed for E. coli has been demonstrated in mycobacteria, suggesting the mechanism connecting replication and division is fundamental and independent of specific genes and their expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 accurately cite published work (Logsdon et al. 2017) showing similar double-adder behavior in mycobacteria. The inference about fundamental mechanisms (C25) is reasonable given the observation of similar control strategies in phylogenetically distant bacteria with very different cell cycle characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "97f7f63e-a19e-42f8-b575-494594b58180",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The double-adder model implicitly captures known biological constraints (SeqA-mediated over-initiation control and nucleoid occlusion) without explicitly enforcing them: the initiation-to-initiation adder creates a refractory period mimicking SeqA activity, while the initiation-to-division adder ensures minimal time for replication completion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 are supported by the simulation results showing that the model reproduces realistic cell cycle behavior without explicit constraint enforcement. The mechanistic interpretation of how the adders implicitly capture these constraints is logically sound and consistent with known biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "0c13664d-31e9-4b60-9b1c-ed91f2eb844c",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "An adder mechanism for replication initiation can be implemented by a sensor protein that accumulates at each origin and triggers initiation at a critical mass; if homeostatically controlled, this maintains constant average volume per origin across conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C26-C27 present plausible molecular mechanisms cited from prior theoretical work (Ho and Amir 2015), but these remain speculative proposals without direct experimental validation. While conceptually sound, the specific molecular identity and regulation of such a sensor protein are not demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "2e691a27-ee30-4b58-8ced-84d64d307d7b",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Acidic phospholipids that accumulate at future division sites and promote DnaA-ATP rejuvenation might serve as a molecular hub coordinating replication and division cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C28-C29 cite established observations about phospholipid localization and DnaA activation (Renner and Weibel 2011; Saxena et al. 2013), but C30's proposal of phospholipids as a coordinating hub is speculative. While the hypothesis is plausible given the known functions, direct evidence for this coordinating role is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "a3df050e-e403-4fac-bcbb-7e3d76727303",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The experimental approach has inherent limitations: origin splitting timing is affected by cohesion time and thus provides only a proxy for initiation timing, and cell length is used as a proxy for volume assuming constant cell radius.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 appropriately acknowledge methodological limitations. The cohesion time issue (C35) is well-documented (Reyes-Lamothe et al. 2008), and the constant radius assumption (C36) is standard in the field (Adiciptaningrum et al. 2016; Taheri-Araghi et al. 2017), though it introduces some measurement uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "3e963d7c-8ee8-48a5-9c8d-c4c62aed4e82",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Growth rate shows mother-daughter correlation (r\u22480.3), but accounting for this correlation was found not critical for capturing E. coli cell cycle features, though it was included in simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by the authors' measurements and simulation analysis. The observation of mother-daughter growth rate correlation is consistent with prior work (Campos et al. 2014), and the finding that it's not critical for model performance is demonstrated through their simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "3cc8d376-058b-4ee8-953b-78e91d6603dc",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Alternative models exist in the literature: purely geometric division models (Harris and Theriot 2016) have been challenged by findings that surface expansion couples to dry-mass rather than volume increase, and Micali et al. (2018b) proposed models with concurrent replication and division processes coupled through checkpoints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 accurately summarize relevant published models and their limitations. The challenge to geometric models is appropriately cited (Oldewurtel et al. 2019), and the description of Micali et al.'s checkpoint-coupled model is accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "68abaef0-0f12-4606-92d7-250ed768e30a",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The statistical framework is based on the principle that independent control processes should have independently fluctuating variables, with independence measured by the determinant of the correlation matrix ranging from 0 to 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52, C55 present a sound theoretical basis for the decomposition analysis. The use of correlation matrix determinant as an independence measure is mathematically valid and appropriate for identifying the most parsimonious model consistent with the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "0b70744e-df4b-4dcd-b003-e90ca90d2437",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The residual dependence observed in the double-adder model (I=0.88 vs 0.98 in simulations) might result from correlated measurement errors or small biological dependencies not captured by the model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 acknowledges unexplained variance between model and data but can only speculate about causes. While the proposed explanations (measurement error or unmodeled biology) are plausible, the claim cannot definitively determine which factor(s) contribute to the discrepancy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "b528aa20-9c1a-4428-8a35-ddf79123a219",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The double-adder model differs from timer models in the nature of single-cell correlations within conditions rather than in average behavior across conditions, and does not require an exponential relationship between average cell size and growth rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 correctly distinguish the double-adder from timer models based on correlation structure rather than bulk averages. The explanation is conceptually sound and consistent with the statistical framework presented in the paper.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "281c4db5-d066-4338-9025-88147a41dc90",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Recent perturbation studies (Si et al. 2019; Wehrens et al. 2018) suggest potential uncoupling of division and replication cycles, but interpretation is complicated because division inhibition also affects replication-related processes like chromosome segregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 accurately summarize recent perturbation studies and appropriately note the interpretational challenges. The caveat about pleiotropic effects of division inhibition (C64, citing S\u00e1nchez-Gorostiaga et al. 2016) is important for contextualizing these findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "53c87c10-ee6a-42a0-890b-44a258fc6d7d",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "FtsZ ring polymerization and constriction drive division, with FtsZ and associated proteins heavily regulated at multiple levels, though there are conflicting reports about whether FtsZ concentration varies (M\u00e4nnik et al. 2018) or remains constant (Si et al. 2019) during the cell cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 accurately summarize established knowledge about FtsZ-mediated division and appropriately note conflicting evidence about FtsZ concentration dynamics. The authors correctly present both perspectives from the literature without overstating the consensus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    },
+    {
+      "id": "f546d876-79e8-4719-89bb-3eddf3f6c958",
+      "content_id": "3d47c31f-268d-4869-a793-56e443526cfb",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "A long-standing hypothesis proposes that replication initiation triggers FtsZ ring formation, with initiation-to-division timing controlled by FtsZ ring polymerization dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 accurately cites a speculative molecular mechanism from the literature (Weart and Levin 2003). The authors appropriately present this as a hypothesis consistent with their observations rather than as established fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:23.380250Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0eff5a84-9b43-4a5e-bf2c-06bd499289c9",
+      "result_id": "5000ad41-ec63-4a1b-a1ac-91d5d0253353"
+    },
+    {
+      "claim_id": "984d64c7-c8f3-463d-86ff-b6bd91fbcfea",
+      "result_id": "5000ad41-ec63-4a1b-a1ac-91d5d0253353"
+    },
+    {
+      "claim_id": "94de22e2-0504-4d8a-ac70-1ee333395a47",
+      "result_id": "5000ad41-ec63-4a1b-a1ac-91d5d0253353"
+    },
+    {
+      "claim_id": "77212a58-c95e-4b93-b61c-0d4dab73dd50",
+      "result_id": "5000ad41-ec63-4a1b-a1ac-91d5d0253353"
+    },
+    {
+      "claim_id": "7248a123-3577-425c-a4a3-7cf9bf00a671",
+      "result_id": "5000ad41-ec63-4a1b-a1ac-91d5d0253353"
+    },
+    {
+      "claim_id": "2876f818-3e86-4e62-a82d-401c8bc02381",
+      "result_id": "c0fff219-e00d-4e09-8421-e5be6d1b3f16"
+    },
+    {
+      "claim_id": "97a482bc-3166-4f1c-9e0b-835c8c04367d",
+      "result_id": "c0fff219-e00d-4e09-8421-e5be6d1b3f16"
+    },
+    {
+      "claim_id": "5f6553da-79cd-4463-ab1a-cbeccf9c6cf7",
+      "result_id": "c0fff219-e00d-4e09-8421-e5be6d1b3f16"
+    },
+    {
+      "claim_id": "706178e4-6065-453a-ab4c-b96ff5f3d136",
+      "result_id": "0b2b2445-e061-4a7a-b5c3-a363a69106aa"
+    },
+    {
+      "claim_id": "b81dee98-3e35-4e4f-937d-f7c0e4bc1a53",
+      "result_id": "0b2b2445-e061-4a7a-b5c3-a363a69106aa"
+    },
+    {
+      "claim_id": "241e41a0-8cd5-40a8-9611-d4babba222d3",
+      "result_id": "0b2b2445-e061-4a7a-b5c3-a363a69106aa"
+    },
+    {
+      "claim_id": "a1f72179-1e9a-4d4b-83a1-291fb1d8f41c",
+      "result_id": "171a52b2-8823-469a-93db-ec916c597603"
+    },
+    {
+      "claim_id": "669c2258-c5c9-4599-86ed-23e9816538c7",
+      "result_id": "171a52b2-8823-469a-93db-ec916c597603"
+    },
+    {
+      "claim_id": "952d4002-7902-4f34-ae51-052555458651",
+      "result_id": "171a52b2-8823-469a-93db-ec916c597603"
+    },
+    {
+      "claim_id": "780ccf0a-b34a-496a-8d77-bf989029638d",
+      "result_id": "171a52b2-8823-469a-93db-ec916c597603"
+    },
+    {
+      "claim_id": "d0fdf7c7-7f8a-4dbd-b46c-74f47cb376f6",
+      "result_id": "d2729bdb-d1b0-47cf-b9a5-de546b8fa417"
+    },
+    {
+      "claim_id": "fff1d083-8c23-456f-9e4d-188d367ca04c",
+      "result_id": "d2729bdb-d1b0-47cf-b9a5-de546b8fa417"
+    },
+    {
+      "claim_id": "f3fea644-788f-4dc4-a323-97f7c8de0466",
+      "result_id": "d2729bdb-d1b0-47cf-b9a5-de546b8fa417"
+    },
+    {
+      "claim_id": "8bf58b3e-07e0-458b-83bd-17253dc7ea59",
+      "result_id": "d2729bdb-d1b0-47cf-b9a5-de546b8fa417"
+    },
+    {
+      "claim_id": "25f1d4e5-8719-4ca7-b381-d0a196946e6c",
+      "result_id": "e9a8554f-e35b-4e14-8191-7c91309eab18"
+    },
+    {
+      "claim_id": "acf4668c-666c-45b8-bfdd-b8845ba53ae3",
+      "result_id": "e9a8554f-e35b-4e14-8191-7c91309eab18"
+    },
+    {
+      "claim_id": "872c5c93-27f8-4e54-a806-e7040077d408",
+      "result_id": "507e1abf-3705-4213-a9fd-bd7d9a7c354a"
+    },
+    {
+      "claim_id": "c7e84296-6963-4e03-9899-3e16f23137d7",
+      "result_id": "507e1abf-3705-4213-a9fd-bd7d9a7c354a"
+    },
+    {
+      "claim_id": "04f47914-c211-42ed-b5ab-f1f3ba192bcb",
+      "result_id": "507e1abf-3705-4213-a9fd-bd7d9a7c354a"
+    },
+    {
+      "claim_id": "60558341-3c23-48ca-9812-ee76d8e44086",
+      "result_id": "97f7f63e-a19e-42f8-b575-494594b58180"
+    },
+    {
+      "claim_id": "8278754d-708b-4693-a7d7-a1f67cff218b",
+      "result_id": "97f7f63e-a19e-42f8-b575-494594b58180"
+    },
+    {
+      "claim_id": "02282810-1862-48a2-963c-4d0b4869ba7c",
+      "result_id": "97f7f63e-a19e-42f8-b575-494594b58180"
+    },
+    {
+      "claim_id": "e2daaa3a-5b28-4266-b663-41f9f3bcebf1",
+      "result_id": "0c13664d-31e9-4b60-9b1c-ed91f2eb844c"
+    },
+    {
+      "claim_id": "ddb3ff49-b685-4733-8125-aa8ad4522656",
+      "result_id": "0c13664d-31e9-4b60-9b1c-ed91f2eb844c"
+    },
+    {
+      "claim_id": "4495957b-6c75-4033-b806-ddadf4f16961",
+      "result_id": "2e691a27-ee30-4b58-8ced-84d64d307d7b"
+    },
+    {
+      "claim_id": "cc99be4a-99c2-4c92-8468-269a4018a6de",
+      "result_id": "2e691a27-ee30-4b58-8ced-84d64d307d7b"
+    },
+    {
+      "claim_id": "f8bb75cc-a6cd-4e30-a6ca-32b9004fbdf7",
+      "result_id": "2e691a27-ee30-4b58-8ced-84d64d307d7b"
+    },
+    {
+      "claim_id": "ffb29890-7d18-4b36-9138-dea10a089b4e",
+      "result_id": "a3df050e-e403-4fac-bcbb-7e3d76727303"
+    },
+    {
+      "claim_id": "32db0f25-e4b2-49f8-8bc4-e8a65ec97d82",
+      "result_id": "a3df050e-e403-4fac-bcbb-7e3d76727303"
+    },
+    {
+      "claim_id": "684599f7-973a-4716-8a4b-69b5b8d40020",
+      "result_id": "3e963d7c-8ee8-48a5-9c8d-c4c62aed4e82"
+    },
+    {
+      "claim_id": "f07bf1ee-9b23-4f9c-a7de-8c9a00deae6a",
+      "result_id": "3e963d7c-8ee8-48a5-9c8d-c4c62aed4e82"
+    },
+    {
+      "claim_id": "34e29a06-da4c-4246-b266-6a862fb232ac",
+      "result_id": "3cc8d376-058b-4ee8-953b-78e91d6603dc"
+    },
+    {
+      "claim_id": "0081b511-9425-40ac-9848-a66dabd936db",
+      "result_id": "3cc8d376-058b-4ee8-953b-78e91d6603dc"
+    },
+    {
+      "claim_id": "359fe1bc-16a9-4e48-9625-f80d6b6152c5",
+      "result_id": "68abaef0-0f12-4606-92d7-250ed768e30a"
+    },
+    {
+      "claim_id": "95e0ea01-af8d-43e1-aa46-daceb69f1ed1",
+      "result_id": "68abaef0-0f12-4606-92d7-250ed768e30a"
+    },
+    {
+      "claim_id": "0807b1f3-1a41-4055-8c12-133e5ec2a95c",
+      "result_id": "68abaef0-0f12-4606-92d7-250ed768e30a"
+    },
+    {
+      "claim_id": "afd504d1-fcf4-4605-9ccd-b5b64643fbe6",
+      "result_id": "0b70744e-df4b-4dcd-b003-e90ca90d2437"
+    },
+    {
+      "claim_id": "93d91bb2-a096-4ac2-add9-cc0bea42dfac",
+      "result_id": "b528aa20-9c1a-4428-8a35-ddf79123a219"
+    },
+    {
+      "claim_id": "3c590fb3-6f98-418e-93c9-6cf4e9190b9c",
+      "result_id": "b528aa20-9c1a-4428-8a35-ddf79123a219"
+    },
+    {
+      "claim_id": "0fea1924-7c15-4643-af93-486a4a8c2108",
+      "result_id": "281c4db5-d066-4338-9025-88147a41dc90"
+    },
+    {
+      "claim_id": "ac2d680f-e332-407b-8385-efaa2f06a73e",
+      "result_id": "281c4db5-d066-4338-9025-88147a41dc90"
+    },
+    {
+      "claim_id": "5c3f3da7-996f-46b0-9f6b-1311469c58bc",
+      "result_id": "281c4db5-d066-4338-9025-88147a41dc90"
+    },
+    {
+      "claim_id": "3d07f981-e3d9-49a3-b028-ea35df7a7d6d",
+      "result_id": "53c87c10-ee6a-42a0-890b-44a258fc6d7d"
+    },
+    {
+      "claim_id": "93dc952c-3d5b-4c54-8dc9-25ad50c0877b",
+      "result_id": "53c87c10-ee6a-42a0-890b-44a258fc6d7d"
+    },
+    {
+      "claim_id": "261984b3-8170-455d-b20e-86e53450ab15",
+      "result_id": "53c87c10-ee6a-42a0-890b-44a258fc6d7d"
+    },
+    {
+      "claim_id": "7ac28f3b-3b59-48b7-a56c-afc0bbb593ca",
+      "result_id": "53c87c10-ee6a-42a0-890b-44a258fc6d7d"
+    },
+    {
+      "claim_id": "536d1dab-41ff-4907-827b-0225003b71b1",
+      "result_id": "f546d876-79e8-4719-89bb-3eddf3f6c958"
+    }
+  ],
+  "comparisons": []
+}

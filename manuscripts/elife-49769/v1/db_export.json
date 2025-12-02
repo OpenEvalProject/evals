@@ -1,0 +1,1873 @@
+{
+  "submission": {
+    "id": "9531b948-00d5-4c96-9a65-0242828e1c25",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:32:44.607371Z",
+    "updated_at": "2025-12-02T14:32:44.607371Z"
+  },
+  "content": [
+    {
+      "id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "submission_id": "9531b948-00d5-4c96-9a65-0242828e1c25",
+      "content_type": "manuscript",
+      "content_text": "# In vitro reconstitution of branching microtubule nucleation\n\n## Authors\n\n- Ammarah Tariq<sup>1</sup>\n- Lucy Green<sup>1</sup>\n- J Charles G Jeynes<sup>1</sup>\n- Christian Soeller<sup>1</sup> ([ORCID: 0000-0002-9302-2203](https://orcid.org/0000-0002-9302-2203))\n- James G Wakefield<sup>1</sup> ([ORCID: 0000-0003-3616-2346](https://orcid.org/0000-0003-3616-2346)) \u2020\n\n### Affiliations\n\n1. Living Systems Institute University of Exeter Exeter United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nEukaryotic cell division requires the mitotic spindle, a microtubule (MT)-based structure which accurately aligns and segregates duplicated chromosomes. The dynamics of spindle formation are determined primarily by correctly localising the MT nucleator, \u03b3-Tubulin Ring Complex (\u03b3-TuRC), within the cell. A conserved MT-associated protein complex, Augmin, recruits \u03b3-TuRC to pre-existing spindle MTs, amplifying their number, in an essential cellular phenomenon termed \u2018branching\u2019 MT nucleation. Here, we purify endogenous, GFP-tagged Augmin and \u03b3-TuRC from Drosophila embryos to near homogeneity using a novel one-step affinity technique. We demonstrate that, in vitro, while Augmin alone does not affect Tubulin polymerisation dynamics, it stimulates \u03b3-TuRC-dependent MT nucleation in a cell cycle-dependent manner. We also assemble and visualise the MT-Augmin-\u03b3-TuRC-MT junction using light microscopy. Our work therefore conclusively reconstitutes branching MT nucleation. It also provides a powerful synthetic approach with which to investigate the emergence of cellular phenomena, such as mitotic spindle formation, from component parts.\n\n## Introduction\n\nBranching MT nucleation is dependent\u00a0upon Augmin and \u03b3-TuRC and generates the bulk of MTs required for both meiotic and mitotic spindle formation\u00a0(Petry et al., 2011;\u00a0S\u00e1nchez-Huertas and L\u00fcders, 2015; David et al., 2019)\u00a0and has been visualised in vivo in Drosophila, Xenopus, plants, and humans\u00a0(Petry et al., 2011; David et al., 2019; Hayward et al., 2014; Ho et al., 2011; Lawo et al., 2009; Goshima et al., 2008; Uehara et al., 2009; Prosser and Pelletier, 2017; Petry et al., 2013). However, understanding, and in vitro reconstitution of, this phenomenon has been hampered by methodological constraints relating to purification of functional protein complexes\u00a0(Hsia et al., 2014; Song et al., 2018); Augmin is composed of 8 subunits, while the \u03b3-TuRC is a\u00a0~\u00a02 MD protein complex containing multiple copies of at least six proteins, including 14 molecules of \u03b3-Tubulin (Zheng et al., 1995; Moritz et al., 1995; Kollman et al., 2011; Tovey and Conduit, 2018; Oegema et al., 1999). In vitro studies\u00a0(Oegema et al., 1999) generally use proteins that have been individually- or co-expressed and purified in heterologous systems\u00a0(Trokter et al., 2012; Schlager et al., 2014), where folding and post translational modifications crucial to function may not occur. Although purification of protein complexes from autogenous cells can be achieved using affinity-based methods, non-specific binding of contaminating proteins and difficulties in releasing purified proteins from affinity matrices are major problems.\n\nWe therefore developed an approach to allow the isolation of intact, functional Augmin and \u03b3-TuRC, to test the hypothesis that these two complexes are necessary and sufficient for branched MT nucleation. The approach is based on biotinylated, amine-reactive thiol- or photo-cleavable linkers, Sulfo-NHS-SS-Biotin and PC-Biotin-NHS (Figure 1a). Stepwise incubation of the\u00a0~12 kD camelid anti-GFP nanobody, GFP-binding protein, with either of these linkers resulted in covalent linkage, while subsequent incubation with a Streptavidin Agarose matrix led to stable tri-partite reagents \u2013 GFP-TRAP-Sulfo beads and GFP-TRAP-PC beads; where GFP-binding protein is immobilised, but cleavable through the addition of DTT or exposure to UV light, respectively (Figure 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49769/elife-49769-fig1-v1.jpg)\n\n**Figure 1.:** (a) Sketch of purification methodology. (b) Images of GFP-TRAP-Sulfo beads after incubation with His-GFP, pre- and post-cleavage by 50 mM DTT. (c) Western blot demonstrating the effective isolation and cleavage of soluble His-GFP. (d) Western blots of cl-AP of Msd1-GFP and \u03b3-Tubulin-GFP. The fusion proteins, present in embryo extracts (input), are efficiently depleted upon incubation with GFP-TRAP-Sulfo beads (unbound), released in 50 mM DTT (post-cleaved beads) and present in the eluate. Subunits of Augmin, but not \u03b3-TuRC, co-elute with Msd1-GFP. Subunits of \u03b3-TuRC, but not Augmin, co-elute with \u03b3-Tubulin-GFP. (e). SYPRO-ruby stained gels of post-cleaved eluates from control embryos (OrR), or MG132-treated (mitotic) embryos expressing the Augmin subunit Msd1-GFP or \u03b3-Tubulin-GFP. (f) Western blot of sucrose gradient fractionation of purified mitotic Augmin or \u03b3-TuRC. Complexes sediment as expected for their molecular weights. (g) Western blots of in vitro MT co-sedimentation assays. In the absence of taxol (-), Tubulin, pure Augmin (Msd1-GFP) and pure \u03b3-TuRC (\u03b3-Tubulin-GFP) remain in the supernatant (S). In the presence of taxol (+), Tubulin polymerises and is present in the pellet (P). Augmin and \u03b3-TuRC co-sediment.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49769/elife-49769-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Graph showing the comparative decrease in GFP fluorescence on GFP-TRAP-PC beads, and increase in the surrounding eluate, following exposure to UV light (UV filter block on TE2000U fluorescence microscope). (b) Images of GFP-TRAP-PC beads after incubation with GFP, pre- and post-cleavage by 30 s exposure to UV light, used to generate data for (a). (c) Western blot to quantify the binding and release capacity of GFP-TRAP-PC beads. 100 ng of GFP is completely immobilised on the beads. In this case,~60% of GFP is cleaved via UV exposure, corresponding to 3 ng x 20\u00a0=\u00a060 ng GFP. (d) Western blots demonstrating the isolation and cleavage of Msd1-GFP and \u03b3-Tubulin-GFP using GFP-TRAP-PC beads. The proteins, present in embryo extracts (input), are efficiently captured onto beads (bound), with\u00a0~50% released following UV exposure (post-cleaved beads and eluate). (e) Western blots of in vitro MT co-sedimentation assays using GFP-TRAP-PC beads. In the absence of taxol (-), Tubulin, pure Augmin (Msd1-GFP) and pure \u03b3-TuRC (\u03b3-Tubulin-GFP) remain in the supernatant (S). In the presence of taxol (+), Tubulin polymerises and is present in the pellet (P). Augmin and \u03b3-TuRC co-sediment. GFP alone does not co-sediment with MTs in this assay. (f) Western blot of purified \u03b3-Tubulin-GFP eluate, probed with anti-\u03b3-Tubulin antibody. Endogenously expressed, untagged \u03b3-Tubulin is co-purified with \u03b3-Tubulin-GFP, presumably as part of active \u03b3-TuRCs, at a ratio of\u00a0~3:1 \u03b3-Tubulin-GFP: \u03b3-Tubulin (as quantified by LiCOR analysis).\n\nTo test these reagents, beads were incubated with bacterially expressed and purified 6xHis-GFP, and extensively washed. Individual beads fluoresced with varying intensity and, upon brief exposure to 50 mM DTT or UV light, fluorescence decreased, concomitant with an increase in the surrounding medium (Figure 1b; Figure 1\u2014figure supplement 1a,b). Western blot analysis confirmed\u00a0>90% and~60% of GFP was released from GFP-TRAP-Sulfo and GFP-TRAP-PC beads, respectively, following cleavage (Figure 1c; Figure 1\u2014figure supplement 1c).\n\nWe next sought to determine whether this \u2018cleavable Affinity Purification\u2019 (cl-AP) could be used to isolate Augmin and \u03b3-TuRC. We have previously shown that Drosophila Augmin can be purified from extracts of early embryos expressing a GFP-tagged variant of the Msd1 subunit\u00a0(Chen et al., 2017).\u00a0Drosophila embryos have also been used to purify the \u03b3-TuRC\u00a0(Oegema et al., 1999; Moritz et al., 1995), and flies expressing \u03b3-Tubulin-GFP are available\u00a0(Hallen et al., 2008). As branching MT nucleation is essential during mitosis, we used embryos arrested in a metaphase-like state through incubation with the proteasomal inhibitor, MG132 (Chesnel et al., 2006). Both Msd1-GFP and \u03b3-Tubulin-GFP were efficiently immobilised on GFP-TRAP-Sulfo or GFP-TRAP-PC beads and western blotting confirmed that, upon cleaving, Msd1-GFP and \u03b3-Tubulin-GFP were concentrated in the eluate, with other subunits of the complexes co-eluting (Figure 1d; Figure 1\u2014figure supplement 1d). To test the purity of the complexes, we subjected MG132-treated (mitotic) control (OrR), Msd1-GFP or \u03b3-Tubulin-GFP embryo extracts to GFP-TRAP-Sulfo cl-AP followed by gel electrophoresis and SYPRO-ruby staining of eluates (Figure 1e). Bands corresponding to each subunit of both Augmin and \u03b3-TuRC were identified at intensities expected for the known stoichiometric relationships between subunits (Oegema et al., 1999). One additional set of low intensity bands was seen in all eluates, at\u00a0~45 kD; almost certainly corresponding to yolk proteins - the most abundant proteins in Drosophila early embryos\u00a0(Barnett et al., 1980). Importantly, \u03b3-Tubulin did not co-purify with Augmin, and Dgt3 (a subunit of the Augmin complex) did not co-purify with \u03b3-TuRC (Figure 1d). Moreover, sucrose gradient analysis undertaken on purified mitotic complexes determined that Msd1-GFP sedimented as expected for Augmin-GFP (~360 kD) and that \u03b3-Tubulin-GFP sedimented in two populations \u2013 one consistent with \u03b3-Tubulin-GFP alone and one consistent with incorporation into the \u03b3-TuRC (2MD) (Figure 1f). Neither complex co-fractionated, again strongly suggesting that Augmin and \u03b3-TuRC are purified independently of one another, or other cellular activities.\n\nBoth \u03b3-TuRC and Augmin bind MTs in co-sedimentation assays\u00a0(Hughes et al., 2008; Wainman et al., 2009; Goshima et al., 2008). We therefore incubated mitotic Augmin-GFP or \u03b3-TuRC-GFP with purified Tubulin, in the presence of GTP and taxol to promote MT polymerisation, sedimenting through a glycerol cushion to separate MTs and MT associated proteins from soluble Tubulin and non-MT binding proteins (Figure 1g; Figure 1\u2014figure supplement 1e). As expected, both Msd1-GFP and \u03b3-Tubulin-GFP co-sedimented with MTs, demonstrating purified Augmin and \u03b3-TuRC maintain at least some of their cellular properties.\n\nTo assess the effects of purified Augmin and \u03b3-TuRC on MT nucleation and polymerisation, we used a highly-reproducible quantitative assay, where incorporation of a dye into MTs as they polymerise is measured as a change in fluorescence\u00a0(Bonne et al., 1985) (Cytoskeleton Inc). Incubation of Tubulin in the presence of GTP and glycerol at 37\u00b0C resulted in its polymerisation over\u00a0~1 hr, with sigmoidal dynamics corresponding to lag, nucleation, polymerisation and plateau phases (Figure 2a; Figure 2\u2014figure supplement 1). The time at which 50% of polymerisation was achieved (x50) was 31.5mins (\u00b1\u00a00.5 mins) (Figure 2b). Addition of purified \u03b3-TuRC-GFP stimulated MT nucleation, causing a shift in the polymerisation curve and a reduction in the x50 to 16.5 mins (\u00b1\u00a01.2 min) (Figure 2a,b), confirming its functionality. In contrast, addition of purified Augmin-GFP had no significant effect on the shape of the polymerisation curve or the x50 (32.5 mins (\u00b1\u00a01.5 min) (Figure 2a,b). Therefore, although Augmin-GFP binds MTs it does not, in isolation, change MT nucleation/polymerisation dynamics. However, addition of Augmin-GFP dramatically enhanced \u03b3-TuRC-dependent nucleation of MTs, further reducing the x50 to 9.5 min (\u00b1\u00a00.45 min) (Figure 2a,b). This effect was specific for the physical interaction between Augmin and \u03b3-TuRC, as addition of bacterially expressed and purified truncated Augmin subunits, Dgt3, Dgt5 and Dgt6, which we previously demonstrated interact directly with \u03b3-TuRC\u00a0(Chen et al., 2017), resulted in nucleation/polymerisation curves indistinguishable to \u03b3-TuRC alone (Figure 2\u2014figure supplement 1). Thus, purified Augmin does, indeed, augment \u03b3-TuRC-dependent MT nucleation in vitro.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49769/elife-49769-fig2-v1.jpg)\n\n**Figure 2.:** (a) Tubulin polymerisation assays, where fluorescence is directly related to the amount of Tubulin polymer present. The curves are a sigmoidal fit to six replicates of the experiment (dots); three independent purification experiments, each undertaken in duplicate. (b) Plot of the x50 in relation to control polymerisation assay, showing the median (red line), interquartile ranges (blue box) and 95% confidence intervals of the median (notches) for each condition. The differences in the time taken for 50% polymerisation between all conditions differs significantly at p=0.001, except when comparing control to Augmin (ANOVA). (c) Fluorescent tubulin polymerisation assays undertaken with complexes isolated from MG132-treated (mitotic) or cycling embryos.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49769/elife-49769-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Representation of the interactions between Augmin subunits, as determined by cross-linking mass spectrometry. The N-terminus of Dgt3 and Dgt5, and the C terminus of Dgt6 have all been previously shown to be responsible for localising the \u03b3-TuRC to the mitotic spindle in Drosophila embryos. (b) Western blot showing the purification of MBP-Dgt3N, MBP-Dgt5N and MBP-Dgt6C, expressed in bacteria. (c) Fluorescent tubulin polymerisation assays undertaken with GFP-Augmin and GFP-\u03b3-TuRC isolated from MG132-treated embryos, in the presence and absence of Dgt3N, Dgt5N and Dgt6C. Inclusion of the Dgt regions completely abrogates the ability of Augmin to affect \u03b3-TuRC-dependent MT nucleation, without affecting \u03b3-TuRC-dependent MT nucleation itself. (d) Individual datasets from (c). Note that inclusion of the Dgt regions with \u03b3-TuRC alone does not affect \u03b3-TuRC-dependent MT nucleation but does slightly reduce the total amount of MT polymer formed (middle graph). (a and b reproduced from Chen et al., 2017).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49769/elife-49769-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Mitotic \u03b3-TuRC stimulates MT nucleation/polymerisation to a greater extent than \u03b3-TuRC isolated from cycling embryo extracts. Neither cycling nor mitotic Augmin affects MT nucleation/polymerisation. Addition of mitotic Augmin to mitotic \u03b3-TuRC stimulates \u03b3-TuRC-dependent MT nucleation. This effect is reduced when cycling Augmin and cycling \u03b3-TuRC are used. However, if either Augmin or \u03b3-TuRC is mitotic, Augmin-dependent MT nucleation is active, even if the other complex is isolated from cycling embryos.\n\nImportantly, this phenomenon was dependent on whether the complexes were isolated from mitotically arrested (MG132) or untreated, mainly interphase (cycling) embryos. \u03b3-TuRC purified from cycling embryos was a less efficient nucleator than its mitotic counterpart (Figure 2c; Figure 2\u2014figure supplement 2), while cycling Augmin, like mitotic Augmin, showed no independent activity. However, when incubated together, either mitotic \u03b3-TuRC and cycling Augmin or cycling \u03b3-TuRC and mitotic Augmin were able to enhance MT nucleation to the same extent as both mitotic complexes (Figure 2c; Figure 2\u2014figure supplement 2). As cell cycle dependent changes in protein function are determined mostly by post-translational modifications (PTMs), this observation suggests that PTMs of either Augmin or \u03b3-Tubulin are crucial in vivo.\n\nTo characterise the morphology of MTs generated in the presence of purified mitotic Augmin and \u03b3-TuRC, we initially took samples from the in vitro assays at t\u00a0=\u00a015 min, fixing and imaging them via fluorescence microscopy. Control samples, or those containing purified Augmin, showed only very few, short MTs per field of view while, as expected, \u03b3-TuRC-containing samples possessed many individual MTs (Figure 3a). In contrast, samples incubated simultaneously with \u03b3-TuRC and Augmin showed extensive MT branching, bundling and nesting, rather than individual MTs (Figure 3a). Moreover, consistent with the observation that, in vivo, Augmin is required for \u03b3-Tubulin localisation to the mitotic spindle, purified mitotic Augmin was able to recruit purified \u03b3-TuRC to MTs in vitro, co-localising along the length of MTs in distinct punctae (Figure 3\u2014figure supplement 1a). To temporally resolve the MT nucleation and polymerisation in the presence of Augmin and \u03b3-TuRC, we fixed reactions at earlier timepoints. Even within 1 min of the simultaneous addition of Augmin and \u03b3-TuRC, MT nucleation and putative branching were observed, though background fluorescence of soluble tubulin was high (Figure 3b). Samples taken at t\u00a0=\u00a02 and t\u00a0=\u00a05 min showed similar numbers of MTs to each other, per field of view, though the mean length of MTs, and proportion of MTs with branches, were significantly greater after 5 min, than after 2 min (4.01 \u03bcm versus 3.24 \u03bcm and 34% versus 24%, respectively) (Figure 3b; Figure 3\u2014source data 1). This suggests that MT nucleation from purified \u03b3-TuRCs reaches maximal activity within the first few minutes of the assay. Moreover,\u00a0the estimated number of \u03b3-TuRCs per coverslip\u00a0(6.0\u00a0x\u00a0106) was 2-3 times less than the mean number of MTs per coverslip (1.7 x 107)\u00a0(see Materials\u00a0and\u00a0methods).\u00a0These calculations suggest \ufeff\ufeffeither (i) that our approximations of \u03b3-TuRC molarity are out by a factor of 2-3, (ii) that the MTs counted include a proportion that have been nucleated by a \u03b3-TuRC and subsequently broken or (iii) that a single \u03b3-TuRC is able to nucleate multiple MTs at a rate of >1 MT/min, perhaps by nucleation and subsequent release.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49769/elife-49769-fig3-v1.jpg)\n\n**Figure 3.:** (a) Confocal images of fixed, fluorescent polymerisation assays at t\u00a0=\u00a015 mins for each condition. (b)\u00a0Confocal images of fixed, fluorescent polymerisation assays at t\u00a0=\u00a01, 2 and 5 mins in the presence of purified Augmin and \u03b3-TuRC. (c) Confocal images of taxol stabilised MTs, formed in the absence or presence of purified Augmin and \u03b3-TuRC, and co-incubated. Incubation of Augmin-488MTs (green) with \u03b3-TuRC-RhodMTs (red) leads to MT branches. (d)\u00a0Higher magnification of the MT-Augmin-\u03b3-TuRC-MT junctions (arrows). (e) Histogram of the percentage of RhodMTs that terminate precisely at a 488MT, generating a branchpoint. (f) Distribution of \u03b3-TuRC-RhodMTs junction angles, in relation to Augmin-488MTs. (g) Confocal images of junctions, using GMPCPP seeds (purple) to distinguish the MT minus ends. Minus ends of \u03b3-TuRC-RhodMTs (red) interact with Augmin-488MTs (green). (h) Pearson correlation coefficient plot demonstrating a strong positive correlation between the length of Augmin-488MTs and the position of \u03b3-TuRC-RhodMT branch points. Scale bars, a-d, 5 \u03bcm; scale bar, g, 2 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49769/elife-49769-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Samples were taken mid-way through in vitro polymerisation reactions, fixed and stained for \u03b3-Tubulin, the Augmin Msd1 subunit or MTs. When present on its own, Augmin localises along the length of MTs. Note this localisation is not uniform; rather Augmin is present as punctae. When \u03b3-TuRC is present on its own, \u03b3-Tubulin is not observed on MTs, even though it stimulates MT nucleation (presumably the levels on the minus ends of MTs are too low to be resolved). However, when \u03b3-TuRC is present with Augmin, \u03b3-Tubulin co-localises with Augmin on MTs. Scale bar, 10 \u03bcm. See insets for higher magnified images.\n\nFinally, we sought to conclusively reconstitute and visualise the branching MT-Augmin-\u03b3-TuRC-MT junction, and to measure the ability of the purified \u03b3-TuRCs to simultaneously bind MT minus ends and Augmin. To do this, we generated populations of taxol-stabilised fluorescent MTs in the presence or absence of individual mitotic protein complexes, subsequently co-incubating them. Co-incubation of HiLyte Fluor 488-MTs (488MTs) with Rhodamine-MTs (RhodMTs) resulted in independent populations of MTs. Occasional examples of RhodMTs terminating at 488MTs were observed, but at a frequency consistent with random placement of MTs on coverslips (~6%) (Figure 3b,d; Figure 3\u2014source data 1). Similar results were obtained with fluorescent MTs incubated with either Augmin or \u03b3-TuRC (Figure 3c,e; Figure 3\u2014source data 1). However, when RhodMTs incubated with \u03b3-TuRC were added together with 488MTs incubated with Augmin, 55% of \u03b3-TuRC-containing RhodMTs terminated precisely at an Augmin-containing 488MT (Figure 3c\u2013e; Figure 3\u2014source data 1). Although the polarity and angles of the RhodMTs branches in relation to the \u2018mother\u2019 488MTs varied far more widely than seen in vivo, presumably due to how the MTs settled on the coverslip during preparation, we found a bias in the angle, similar to that seen in living Drosophila (Verma and Maresca, 2019) (Figure 3e; Figure 3\u2014source data 1). To unequivocally demonstrate the polarity of the MTs, and to take into account MTs that might have lost their native \u03b3-TuRC-bound minus end during sample preparation, we formed these junctions in the presence of pre-stabilised HiLyte 647-labelled GMPCPP MT seeds. As expected, the polarity of the interaction between \u03b3-TuRC-RhodMTs and Augmin-488MTs was specific; with only the minus ends of \u03b3-TuRC-RhodMTs precisely terminating at the Augmin-488MTs lateral surfaces (Figure 3g). Moreover, as predicted, the percentage of \u03b3-TuRC-RhodMTs generating branches further increased to 64% (Figure 3e; Figure 3\u2014source data 1). Finally, we found that the formation of junctions on Augmin-containing 488MTs was length independent \u2013 branches were equally distributed at the very distal MT tips, throughout their length and on the GMPCPP seed itself (Figure 3g,h; Figure 3\u2014source data 1).\n\nOur work confirms a long-standing hypothesis, first articulated to explain the loss of \u03b3-Tubulin on the mitotic spindle when the expression of Augmin subunits is reduced\u00a0(Goshima et al., 2007). It demonstrates conclusively that Augmin directly recruits \u03b3-TuRC to MTs and that these two protein complexes are sufficient for robust and efficient branching MT nucleation. Although our calculations suggest that 65% of the mitotic \u03b3-TuRCs are competent to bind MT minus ends and Augmin, and that they are able to nucleate at a rate of\u00a0>1 MT/min, we expect that, in vivo, other proteins further enhance these \u03b3-TuRC activities. For example, a clear role has been reported for the MT associated protein, TPX2, in stimulating Augmin-dependent branched MT nucleation in Xenopus meiotic extracts\u00a0(Petry et al., 2013; Thawani et al., 2019). However, in support of our conclusions, Drosophila TPX2 has recently been shown to be dispensible for the phenomenon in vivo (Verma and Maresca, 2019). Our experiments also highlight the intriguing possibility that, in some cells, Augmin might recruit pre-existing \u03b3-TuRC-containing MTs, nucleated elsewhere in the cell, anchoring them to specific sites and increasing local MT density.\n\nThe generation of stable MT-Augmin-\u03b3-TuRC-MT junctions using the methodologies pioneered here also provide a route to finally defining the molecular detail of MT branching at the ultrastructural level. More broadly, cleavable affinity purification provides the basis to generate more complex, but molecularly defined, mixes of purified proteins, complete with in vivo PTMs, in order to reconstitute higher-order aspects of spindle formation. Indeed, by isolating and combining purified, active proteins and protein complexes from any biological system of interest, \"cl-AP TRAP\"\u00a0overcomes the limitations of traditional \u2018bottom-up\u2019 approaches, allowing exploration of the level of biological organisation between individual protein and biological process \u2013 the level at which emergence of cellular phenomena often occurs.\n\n## Materials and methods\n\n### Drosophila husbandry and embryo collection\n\nFlies were kept on standard medium and grown according to standard laboratory procedures. w1118 or Oregon R (OrR) strains (Bloomington Stock Center) were utilized as a wild-type controls. Transgenic flies used were: pUAS-Msd1-GFP; maternal-\u03b1-Tubulin-Gal4\u00a0(Bonne et al., 1985) and pNcd(\u03b3\u2212Tub37C-GFP), a gift from Sharyn Endow\u00a0(Chesnel et al., 2006). 0\u20133 hr old embryos were collected from apple juice/Agar plates, dechorionated using bleach, washed, flash frozen in liquid nitrogen and stored at \u221280\u00b0C. For MG132 treatment, embryos were incubated in a solution containing 66.5% PBS (Melford), 33.2% heptane (Sigma) and 0.3% MG132 (Sigma) for 20 mins, prior to rinsing and flash freezing as above. Each embryo collection resulted in 0.05\u20130.1 g of frozen embryos, different batches of which were combined for each biochemical assay/purification. Routinely, batches of MG132-treated embryos were fixed and stained to visualise chromosomes and MTs, to verify their mitotic arrest.\n\n### Preparation of GFP-TRAP-PC and GFP-TRAP-Sulfo beads\n\nTo prepare GFP-TRAP-Sulfo beads, 200 \u03bcL of GFP-binding protein (1 mg/mL) (Chromotek) in PBS was incubated with 86.1 \u03bcl of Sulfo-NHS-SS-Biotin (sulfosuccinimidyl-20(biotinamido)ethyl-1,3-dithiopropionate) (8 mM) (Thermo Scientific) for 2 hr at 4\u00b0C. Unreacted linker was removed by desalting. 40 \u03bcL of High Capacity Streptavidin Agarose Resin (Pierce) was washed 3 times for 5 mins in PBS and incubated with the GFP-binding protein-SS-Biotin product for 1 hr at 4\u00b0C with gentle rotation. The beads were washed 3 times for 5 mins in BRB80 + 0.1% IGEPAL, the volume of BRB80 was reduced to 40 \u03bcL (to maintain a 50% bead slurry) and beads stored at 4\u00b0C for use. A similar protocol was used to generate GFP-TRAP-PC-Biotin-NHS beads, but using 50 \u03bcL of GFP-binding protein, incubated with 1.45 \u00b5L of PC-Biotin-NHS (50 mM) (Ambergen) for 40 min at RT with gentle rotation and 400 \u00b5L of standard Streptavidin-Agarose bead slurry (Sigma Aldrich). Over the course of the project, different conditions were tried in an attempt to increase the photo-cleaving of GFP, Augmin-GFP and \u03b3-TuRC-GFP from the GFP-TRAP-PC beads. We were unable to consistently reach cleaving efficiencies of greater than 60%. In contrast, cleavage of proteins and complexes from GFP-TRAP-Sulfo-beads reproducibly gave efficiencies of\u00a0>90% (n\u00a0=>\u00a010).\n\n### Cleavable affinity purification\n\nDrosophila embryo High Speed Supernatant (HSS) was prepared using batches of frozen 0\u20133 hr embryos. Embryos were dounce homogenised in BRB80 + 0.1% IGEPAL + 1 mM PMSF (Sigma), PhosSTOP phosphotase inhibitors and cOmplete, Mini, EDTA free protease inhibitors (Roche) at a ratio of 100 mg embryos to 200 \u03bcL buffer. Extracts were clarified through centrifugation at: 17,000 g for 10 min, 100,000 g for 10 min, and 100,000 g for a further 30 min. 6xHis-GFP was purified from bacteria expressing pQE80-His-GFP, using standard protocols and HisPur Cobalt Resin (Thermo Scientific), and dialysed into BRB80 + 0.1% IGEPAL + 1 mM PMSF.\n\nTypically, HSS from 200 mg embryos or 6xHis-GFP (100 ng) were incubated overnight at 4\u00b0C with 20 \u03bcL of either GFP-TRAP-PC or GFP-TRAP-Sulfo beads. For SYPRO-Ruby staining (see below) HSS from 1 g of embryos expressing either Msd1-GFP or \u03b3-Tubulin-GFP were used, incubated with 50 \u03bcL of GFP-TRAP-Sulfo beads. Beads were centrifuged at 2500 g for 2 mins and the depleted supernatant removed and discarded, or used for Western blotting. For cleaving of Sulfo-beads, beads were washed 4 times for 5 mins in BRB80 + 0.1% IGEPAL, resuspended in 25 \u03bcL of BRB80 + 0.1% IGEPAL, prior to addition of 25 \u03bcL of 100 mM DTT in BRB80 0.1% IGEPAL for 5 mins (50 mM final concentration). For PC-beads, beads were washed as above, then transferred to a microscope slide with a concave cavity with 25 \u03bcL of BRB80 0.1% IGEPAL. The slide was placed 10 cm below a UV lamp (UVP XX-15L (Analytik Jena US)) and exposed for 30 s intervals with gentle mixing between. Eluates were removed using a Gel-Saver II pipette tip (STARLAB). Cleaved beads were washed 4 times for 5 min in BRB80 0.1% IGEPAL. After each purification, samples were taken for SDS-PAGE and Western blotting alongside known amounts of 6xHis-GFP, in order to quantify yield and concentration of purified complexes.\n\n### Calculation of the molarity of augmin and \u03b3-TuRC following cl-AP\n\n#### Estimation of the concentration of GFP\n\nWestern blotting from 6 independent experiments estimates that cl-AP from\u00a0~200 \u03bcg of either Msd1-GFP or \u03b3-Tubulin-GFP 0\u20133 hr embryo extract results in soluble complexes containing the equivalent of 8\u20139 ng of His-GFP per 1 \u03bcl. His-GFP has a molecular weight of 28 kD, therefore one mole of GFP weighs 28000 g. Given number of molecules in a mole is 6.02 \u00d7 1023, 8.5 ng of GFP contains 1.8 \u00d7 1011 molecules of GFP. The number of moles of GFP in 1 litre is therefore (1.8 \u00d7 1011\u00d71 \u00d7 106) and the molar concentration is 300 nM.\n\n#### Estimation of the concentration of purified Augmin\n\nSucrose gradient sedimentation followed by western blotting demonstrates that all Msd1-GFP in the purified supernatant isolated from GFP-Msd1 expressing embryos is present in fractions consistent with incorporation into Augmin (Figure 1f). Therefore, the number of Augmin complexes in 1 \u03bcl of cl-AP supernatant, isolated from GFP-Msd1 expressing embryos, is 1.8 \u00d7 1011 and the molar concentration of Augmin is 300 nM. The final concentration of Augmin in the MT co-sedimentation assay was 60 nM (10 \u03bcl in 50 \u03bcl total), while the final concentration of Augmin in the MT polymerisation assays was 30 nM (5 \u03bcl in 50 \u03bcl total).\n\n#### Estimation of the concentration of purified \u03b3-TuRC\n\ncl-AP from GFP-\u03b3-Tubulin expressing embryos resulted in a mixed population of GFP-\u03b3-Tubulin that is either incorporated into a \u03b3-TuRC, or monomeric (partially folded, or folded but not incorporated). Sucrose gradient sedimentation followed by western blotting estimates that 60% of the GFP-\u03b3-Tubulin in the purified supernatant isolated from GFP-\u03b3-Tubulin expressing embryos is present in fractions consistent with incorporation into \u03b3-TuRCs, while 40% is present in fractions consistent with \u03b3-Tubulin that is not part of the \u03b3-TuRC (Figure 1f). Purified \u03b3-TuRCs contain\u00a0~14 molecules of \u03b3-Tubulin17. As GFP-\u03b3-Tubulin expressing embryos also contain endogenous \u03b3-Tubulin, the \u03b3-TuRCs isolated by cl-AP will be a mixed population. Western blotting of purified supernatant isolated from GFP-\u03b3-Tubulin expressing embryos using anti\u2212\u03b3-Tubulin antibodies estimates that 75% of the \u03b3-Tubulin is present as GFP-\u03b3-Tubulin while 25% is present as \u03b3-Tubulin with no tag (Figure 1\u2014figure supplement 1f). Therefore, we estimate that the purified GFP-\u03b3-TuRCs contain 8\u201310 molecules of GFP-\u03b3-Tubulin (average 9) and 4\u20135 molecules of unlabelled \u03b3-Tubulin. The molar concentration of \u03b3-TuRC purified by cl-AP is therefore 300 nM x 0.6/9\u00a0=\u00a020 nM, or the equivalent of 1.8 \u00d7 1011\u00d70.6/9\u00a0=\u00a01.2\u00d71010 \u03b3-TuRCs per 1 \u03bcl. The final concentration of \u03b3-TuRC in the MT co-sedimentation assay was 4 nM (10 \u03bcl in 50 \u03bcl total), while the final concentration of \u03b3-TuRC in the MT polymerisation assays was 2 nM (5 \u03bcl in 50 \u03bcl total).\n\n#### Estimation of the nucleation efficiency of purified \u03b3-TuRC in vitro\n\n1 \u03bcl of polymerisation assay containing 2 nM \u03b3-TuRC and 30 nM Augmin at t\u00a0=\u00a01, 2 or 5 min post-initiation was fixed in 200 \u03bcl glutaraldehyde fixation fix. 1 \u03bcl of this was spotted onto a 22x22 mm coverslip and imaged. We therefore estimate the total number of \u03b3-TuRCs per coverslip as 6.0 \u00d7 106. After two mins post-initiation, an average of 130 MTs were observed per field of view (60.5 \u03bcm2) (Figure 3\u2014source data 1). Given there are\u00a0~1.32\u00d7105 fields of view per coverslip, this equates to 1.7 \u00d7 107 MTs per coverslip. Therefore, one \u03b3-TuRC is capable of nucleating 2\u20133 MTs within 2 mins.\n\n### SDS-PAGE and western blot analysis\n\nProtein samples were fractionated by sodium dodecyl sulfate (SDS)-polyacrylamide gel electrophoresis (PAGE). SYPRO Ruby Staining (Invitrogen) of Augmin and \u03b3-TuRC was undertaken according to manufacturer\u2019s instructions. For Western analysis, the proteins were blotted onto a nitrocellulose membrane and probed with anti-GFP (1:1000; Sigma-Aldrich and Roche), anti-dgt6 (1:500) (a gift from M. Gatti), or anti-Dgrip91 antibodies (1:1000) (a gift from Y Zheng). IRDye 800CW goat anti-rabbit (LI-COR) and IRDye 680RD goat anti-mouse (LI-COR) IgG polyclonal Abs were used as secondary detection antibodies. Fluorescence from blots was developed with the Odyssey CLx Imaging System (LI-COR) according to the manufacturer\u2019s instructions.\n\n#### Sucrose gradient fractionation\n\n2 ml sucrose gradients were formed by layering steps (200 \u03bcL each) of 5% to 50% sucrose in BRB80 (5% steps). 15 \u03bcL of 300 nM purified Augmin-GFP or 20 nM \u03b3-TuRC-GFP was loaded on to each gradient and spun at 55,000 rpm for 3 hr at 4\u00b0C in a TLS-55 rotor (Beckman Coulter). Ten fractions of 180 \u03bcL were collected in each gradient from top (fraction 1) to bottom (fraction 10) and, after precipitation with 10% TCA, analysed by SDS-PAGE followed by immunoblotting for GFP. As standards, carbonic anhydrase (29 KDa), Apoferritin (443 Kda), and Blue dextran (2 MD) (Sigma) were subjected to the gradients and samples analysed by SDS-PAGE and Coomassie brilliant blue staining.\n\n### In vitro microtubule co-sedimentation assay\n\nPurified proteins/cl AP eluates were pre-spun at 100,000 g for 15 min at 4\u00b0C. 10 \u03bcL 300 nM GFP, 300 nM Augmin-GFP or 20 nM \u03b3-TuRC-GFP were incubated for 15 min at 37\u00b0C in General Tubulin Buffer with 2.25 mg/mL of 99% pure porcine tubulin and 1 mM GTP (all from Cytoskeleton Inc), in a final volume of 50 \u03bcL. Taxol (Sigma) was added to 100 \u00b5M and samples incubated for a further 10 min at 37\u00b0C. A negative control for each sample was run in parallel, where samples were incubated at 4\u00b0C and where GTB replaced taxol. Samples were immediately spun through a 150 \u00b5L cushion of BRB80 40% glycerol at 100,000 g for 45 min at 4\u00b0C in a TLA120.1 rotor (Beckmann Coulter). The supernatant and pellet fractions were analysed by Western blotting, probing with mouse anti-GFP (Roche) and anti-\u03b1-Tubulin antibodies [DM1A] (Sigma). Co-sedimentation assays were undertaken in triplicate, each with independently purified Augmin or \u03b3-TuRC. A representative western is shown.\n\n### MT polymerization assays\n\nMT polymerization assays were performed using a fluorescence-based Tubulin Polymerization kit (Cytoskeleton Inc, Denver CO, Cat. # BK011P) following the manufacturer\u2019s instructions. Briefly, 5 \u03bcL of 300 nM GFP, 300 nM Augmin-GFP or 20 nM \u03b3-TuRC-GFP was pipetted into wells within a 96-well microtiter plate, followed by 45 \u03bcL of Tubulin Reaction Mix. Tubulin polymerization was initiated by transferring the plate to a 37\u00b0C chamber of a plate reader. The polymerization dynamics of Tubulin were monitored for 60 min at 37\u00b0C by measuring the change in fluorescence every 1 min using a TECAN infinite 200pro fluorimeter, at excitation of 350 nm and emission of 440 nm. Assays to assess the effect of purified Augmin and \u03b3-TuRC presented in Figure 2A are the summation of 3 individual purifications of each protein complex, undertaken in duplicate wells (six data points). Assays to assess the difference in polymerization between cycling and MG132 purified Augmin and \u03b3-TuRC, presented in Figure 2C are the summation of triplicate experiments. In vitro polymerization assays to assess the difference in Augmin-dependent polymerization upon addition of competing truncated Augmin subunits (Figure 2\u2014figure supplement 2) are the summation of triplicate experiments.\n\n### Generation of fluorescent MTs\n\nTubulin Polymerization assays were performed as described above, but with the following modifications: Rhodamine- or HiLyte Fluor 488-tubulin was used (Cytoskeleton, Inc, Denver, CO) at a 1:10 ratio with unlabelled porcine tubulin (final tubulin concentration, 2 mg/ml). At t\u00a0=\u00a01, 2, 5 or 15 min, 1 \u03bcl of polymerisation sample was added to 200 \u03bcl glutaraldehyde (0.5% final concentration in GTB + 1 mM GTP) and incubated at RT for 15 mins. 1 \u03bcl of these fixed MTs were spotted onto glass coverslips and imaged.\n\nTo generate fluorescent, taxol-stabilised MTs, Rhodamine- or HiLyte Fluor 488-tubulin was polymerized as above, but in the absence of purified complexes, but in the presence of taxol at a final concentration of 20 \u03bcM. After 7 mins, the taxol-stabilized MTs were removed from the well and incubated with 5 \u03bcL of 300 nM Augmin-GFP, 20 nM \u03b3-TuRC-GFP or buffer for 10 min at room temperature. Samples were then layered over a 150 \u03bcL cushion of 15% glycerol in BRB80 and centrifuged at 135,000\u00a0\u00d7\u00a0g for 10 mins at 25\u00b0C in a TLA120.1 rotor (Beckmann Coulter). The MT pellets were gently resuspended in 50 \u03bcL of General Tubulin Buffer containing 1 mM GTP and 30% glycerol, combined as necessary as 1:1 mixtures and incubated for 10 min at room temperature. The samples were fixed with glutaraldehyde (0.5\u20132% final concentration) and spotted onto glass coverslips as above. Images were taken from randomly distributed fields of the coverslips using a Leica TCS SP8 confocal laser scanning microscope. Representative images from one of three independent experiments are shown.\n\nFor experiments to visualise MT polarity, HiLyte 647-labelled GMPCPP MTs were generated according to the manufacturer\u2019s instructions (Jena Biosciences). Seeds were added to the polymerisation reactions at a 1:10 ratio and processed as described above. Images were taken from randomly distributed fields of the coverslips using a Leica TCS SP8 confocal laser scanning microscope. Representative images from one of two independent experiments are shown.\n\n### Imaging and image analysis\n\nSamples were imaged using an inverted Leica TCS SP8 confocal laser scanning microscope using a HCOL APO CS2 63x, NA 1.4 oil immersion lens (Leica, Wetzlar, Germany). Standard filter sets were used to visualize Rhodamine, HiLyte Fluor 488, and HiLyte Fluor 647 fluorescence. Images were captured as TIFFs using Leica Application Suite X (LAS X), opened in FIJI and levels adjusted to maximise the full range of pixel intensities. To estimate the number of MTs nucleated by purified \u03b3-TuRC and Augmin at different timepoints during the polymerization assay, images were despeckled, a duplicate, segmented mask (otsu method) applied and a minimum size threshold of 0.4 \u03bcm (to filter non-MT background) was set. After skeletonizing, the average length of the identified MTs was calculated for 10 fields of view at both t\u00a0=\u00a02 and t\u00a0=\u00a05. To quantify the % of 488MTs with RhodMT branches, 8 fields of view of each sample were randomly captured. 488MTs over\u00a0~1 \u03bcM length in each field of view were totaled, alongside the number of RhodMTs whose fluorescence terminated precisely at a HiLyte488MT lateral surface (between 243\u2013339 488MTs per sample condition). To quantify the position of the branchpoints relative to the minus ends of MTs, the length of HiLyte647 GMPCPP-containing 488MTs were measured using the line tool in ImageJ. The position of the RhodMT branch from the minus end of these MTs, was also measured. The two sets of variables were subjected to Pearson correlation coefficient analysis using an on-line tool (https://www.socscistatistics.com/tests/pearson/default2.aspx), providing the graph in Figure 3\u2014figure supplement 1. The Pearson correlation coefficient was r\u00a0=\u00a00.9962 at a p value of\u00a0<\u00a00.00001.\n\n### Statistical analysis of polymerisation curves\n\nPolymerisation data sets were fitted using a sigmoidal function. This characterised each data set in terms of the maximum and minimum fluorescence, the x value (min) at 50% distance between maximum and minimum y fluorescence value (termed \u2018x50\u2019) and the slope. The mean x50 value for the control samples (n\u00a0=\u00a06) was x\u00a0=\u00a031.99 (minutes) and y\u00a0=\u00a02411 (fluorescence a.u.). This value was used as a fix point to compare all the data sets. A one-way ANOVA was performed to compare the four variables (control, Augmin, \u03b3-TuRC, and Augmin+\u03b3-TuRC), with each variable having six repeats. A post-hoc Tukey test showed that all variables were significantly different from each other at p=0.001 apart from the control and Augmin, which were not significantly different from each other. Similar analyses were undertaken for the comparison of polymerisation datasets between complexes isolated from MG132 and cycling embryos, and the augmenting activity of Augmin in the presence of truncated Dgt3, Dgt5 and Dgt6 proteins. All fitting and analyses were performed in MATLAB. The code and data can be found at\u00a0http://www.github.com/charliejeynes/microtubules\u00a0(Jeynes, 2020; copy archived at https://github.com/elifesciences-publications/microtubules).\n",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "945b1881-eae2-4811-9eea-303532add712",
+      "submission_id": "9531b948-00d5-4c96-9a65-0242828e1c25",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jens L\u00fcders, IRB Barcelona Spain\n\nReviewers:\n- Jens L\u00fcders, IRB Barcelona Spain\n\n## Review text\n\nDOI: [10.7554/eLife.49769.sa1](https://doi.org/10.7554/eLife.49769.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nBranching microtubule nucleation from the lateral surface of pre-existing microtubules has emerged as an important nucleation mechanism contributing, for example, to mitotic and meiotic spindle assembly and to microtubule organization in post-mitotic neurons. In this manuscript the authors show that the previously identified main players, augmin and \u03b3-TuRC, purified as native protein complexes from Drosophila embryo extract, are sufficient to reconstitute branching nucleation in vitro. It is further shown that augmin stimulates \u03b3-TuRC nucleation activity in a cell cycle-dependent manner. These are important conceptual advances in our understanding of fundamental cell biological processes. By establishing the minimally required components and revealing a regulatory activity, this manuscript also provides the framework and tools for further analyses in future studies.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"in vitro reconstitution of branched microtubule nucleation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Jens L\u00fcders as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper \"in vitro reconstitution of branched microtubule nucleation\" by Tariq et al. presents the biochemical reconstitution of microtubule nucleation from the lattice of pre-existing microtubules. Using affinity purification from Drosophila embryo extract the study suggests that purified augmin and \u03b3-TuRC, two multi-subunit protein complexes previously implicated in branching nucleation, are sufficient for this activity.\n\nThe reconstitution of branching nucleation from purified proteins is a major achievement. A weakness of the study is that the visualization of branched nucleation in fixed samples is not very convincing and that the authors have never looked at the branching nucleation process by real-time imaging; it would have been a doable experiment assuming the authors had access to a TIRF microscope. On the other hand, all reviewers agree that a unique aspect of this study is that, by collecting embryos in mitosis and interphase, the authors directly compared the augmin and \u03b3-TuRC activities of both phases. This is not easily achievable by approaches utilizing recombinant proteins. Moreover, the finding that augmin stimulates \u03b3-TuRC dependent nucleation would also be an important contribution to our understanding of branching nucleation.\n\nEssential revisions:\n\nIn summary, while the study represents an important advance, it is not fully convincing in its current form. The authors need to improve the quality of the branching nucleation assay, include quality controls for the purified protein complexes and provide an estimate of the efficiency of the reconstitution. This is crucial since reconstitution with low efficiency may indicate that an important factor is missing.\n\n1) The demonstration of reconstituted branching nucleation in Figure 3A needs to be improved. Tubulin appears to form aggregates rather than clear branches. If real-time imaging cannot be provided, another possibility is to perform the assay on pre-assembled MTs. These could be labeled in one color and then, after addition of augmin and \u03b3-TuRC, the nucleated branches could be labeled with tubulin of a different color.\n\n2) Throughout the manuscript, the authors refer to \"pure\" proteins, for example \"pure Augmin.\" However, none of the protein reagents are pure as would be revealed by analysis by mass spectrometry. Therefore \"pure\" should be replaced with \"purified\" or \"enriched.\" Following the same reasoning, the statement \u2013 \"It demonstrates conclusively that Augmin directly recruits \u03b3-TuRC to MTs and that these two protein complexes are sufficient for the phenomenon of branched MT nucleation.\" cannot be made. This issue could be potentially resolved by demonstrating a high efficiency of the reconstitution (see point 3 below) and by ensuring the quality of the purified complexes. The authors should at least show that they purify complexes of the expectd size (e.g. by gel filtration or sucrose gradient analysis) and also probe purified augmin with \u03b3-TuRC antibodies and purified \u03b3-TuRC with augmin antibodies to exclude significant co-purification. It is also important to compare size and composition of preparations from the two different cell cycle stages that are used in the assays. Gels are only shown for \"interphase\" augmin and \u03b3-TuRC.\n\n3) Please indicate protein concentrations used in each experiment in a reader-friendly manner (provide nM or \u00b5M instead of providing volume and mass). The authors should provide an estimate of the efficiency of the branched nucleation, the fraction of \u03b3-TuRC that is active.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"in vitro reconstitution of branching microtubule nucleation\" for further consideration at eLife.\n\nThe reviewers have evaluated your revisions and have noted that an important issue raised in the first round of review was not addressed. It concerns the estimation of the specific activity of gTuRC in the branching nucleation assay (assay in Figure 3A). As outlined in the previous decision letter and in the follow-up clarification, the reviewers feel that without this information it is difficult to assess if the reconstituted system is complete. It seems that in your revision you have provided an alternative quantification, the efficiency of branch site formation from preformed MT/augmin and MT/gTuRC complexes. However, this is not a measure of the gTuRC nucleation activity.\n\nBefore coming to a decision, we would like to ask if you can obtain this data and add it to your revised manuscript?\n",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "eceb45fd-8654-4c8e-9d36-7607be08fa31",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C1",
+      "claim": "Eukaryotic cell division requires the mitotic spindle, a microtubule (MT)-based structure which accurately aligns and segregates duplicated chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic cell division requires the mitotic spindle, a microtubule (MT)-based structure which accurately aligns and segregates duplicated chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the role of the mitotic spindle in cell division.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "04203289-6f2f-4ade-92ec-dbaa4081b189",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C2",
+      "claim": "The dynamics of spindle formation are determined primarily by correctly localising the MT nucleator, \u03b3-Tubulin Ring Complex (\u03b3-TuRC), within the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of spindle formation are determined primarily by correctly localising the MT nucleator, \u03b3-Tubulin Ring Complex (\u03b3-TuRC), within the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the role of \u03b3-TuRC in spindle formation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "d119660f-4df4-486d-be04-cf90cd476f5f",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C3",
+      "claim": "Augmin recruits \u03b3-TuRC to pre-existing spindle MTs, amplifying their number, in an essential cellular phenomenon termed 'branching' MT nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "A conserved MT-associated protein complex, Augmin, recruits \u03b3-TuRC to pre-existing spindle MTs, amplifying their number, in an essential cellular phenomenon termed 'branching' MT nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Augmin's function in branching MT nucleation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "7a5dc2df-c164-4466-8cfa-dc2423ca7637",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C4",
+      "claim": "Endogenous, GFP-tagged Augmin and \u03b3-TuRC can be purified from Drosophila embryos to near homogeneity using a novel one-step affinity technique.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we purify endogenous, GFP-tagged Augmin and \u03b3-TuRC from Drosophila embryos to near homogeneity using a novel one-step affinity technique.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated by the experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "bb3e44f8-8d27-4a95-8224-e4298ebd4479",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C5",
+      "claim": "Augmin alone does not affect Tubulin polymerisation dynamics in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that, in vitro, while Augmin alone does not affect Tubulin polymerisation dynamics, it stimulates \u03b3-TuRC-dependent MT nucleation in a cell cycle-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the polymerization assay data shown in Figure 2a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "4c0cd880-b19a-4083-8286-a30ca51de7c6",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C6",
+      "claim": "Augmin stimulates \u03b3-TuRC-dependent MT nucleation in a cell cycle-dependent manner in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that, in vitro, while Augmin alone does not affect Tubulin polymerisation dynamics, it stimulates \u03b3-TuRC-dependent MT nucleation in a cell cycle-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the polymerization assay data comparing mitotic and cycling complexes in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "c25763f1-512b-48bb-a2a7-7160519eb91a",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C7",
+      "claim": "The MT-Augmin-\u03b3-TuRC-MT junction can be assembled and visualised using light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assemble and visualise the MT-Augmin-\u03b3-TuRC-MT junction using light microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the microscopy data in Figure 3c-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "02bb5e3a-8b0d-4ba2-899d-22a96251b1fc",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C8",
+      "claim": "Branching MT nucleation is dependent upon Augmin and \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Branching MT nucleation is dependent upon Augmin and \u03b3-TuRC and generates the bulk of MTs required for both meiotic and mitotic spindle formation (Petry et al., 2011; S\u00e1nchez-Huertas and L\u00fcders, 2015; David et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "8a80c28c-bcda-4ea3-9e57-bafc8a51a9dc",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C9",
+      "claim": "Branching MT nucleation generates the bulk of MTs required for both meiotic and mitotic spindle formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Branching MT nucleation is dependent upon Augmin and \u03b3-TuRC and generates the bulk of MTs required for both meiotic and mitotic spindle formation (Petry et al., 2011; S\u00e1nchez-Huertas and L\u00fcders, 2015; David et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "54ef4efb-f0c0-44fd-9df6-d126e9aab9c5",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C10",
+      "claim": "Branching MT nucleation has been visualised in vivo in Drosophila, Xenopus, plants, and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "and has been visualised in vivo in Drosophila, Xenopus, plants, and humans (Petry et al., 2011; David et al., 2019; Hayward et al., 2014; Ho et al., 2011; Lawo et al., 2009; Goshima et al., 2008; Uehara et al., 2009; Prosser and Pelletier, 2017; Petry et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "1d18665d-e93f-4167-a3e4-d79b1dd141d4",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C11",
+      "claim": "Understanding and in vitro reconstitution of branching MT nucleation has been hampered by methodological constraints relating to purification of functional protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, understanding, and in vitro reconstitution of, this phenomenon has been hampered by methodological constraints relating to purification of functional protein complexes (Hsia et al., 2014; Song et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "8f7e0077-dea3-43b6-a678-91627cbeddca",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C12",
+      "claim": "Augmin is composed of 8 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Augmin is composed of 8 subunits, while the \u03b3-TuRC is a ~ 2 MD protein complex containing multiple copies of at least six proteins, including 14 molecules of \u03b3-Tubulin (Zheng et al., 1995; Moritz et al., 1995; Kollman et al., 2011; Tovey and Conduit, 2018; Oegema et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "292902f2-3f50-4ee7-b457-07bc60e79bfe",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C13",
+      "claim": "The \u03b3-TuRC is a ~ 2 MD protein complex containing multiple copies of at least six proteins, including 14 molecules of \u03b3-Tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Augmin is composed of 8 subunits, while the \u03b3-TuRC is a ~ 2 MD protein complex containing multiple copies of at least six proteins, including 14 molecules of \u03b3-Tubulin (Zheng et al., 1995; Moritz et al., 1995; Kollman et al., 2011; Tovey and Conduit, 2018; Oegema et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "63e4fad3-4385-4baf-924b-d974c2fdb208",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C14",
+      "claim": "In vitro studies generally use proteins that have been individually- or co-expressed and purified in heterologous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro studies (Oegema et al., 1999) generally use proteins that have been individually- or co-expressed and purified in heterologous systems (Trokter et al., 2012; Schlager et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "a0642e76-b156-416e-9007-ee3589a63b65",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C15",
+      "claim": "Folding and post translational modifications crucial to function may not occur in heterologous expression systems.",
+      "claim_type": "EXPLICIT",
+      "source": "where folding and post translational modifications crucial to function may not occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about limitations of heterologous expression systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "6ca5f2a2-acc8-4562-b04d-9b74b5ed66d9",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C16",
+      "claim": "Non-specific binding of contaminating proteins and difficulties in releasing purified proteins from affinity matrices are major problems in affinity-based purification methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Although purification of protein complexes from autogenous cells can be achieved using affinity-based methods, non-specific binding of contaminating proteins and difficulties in releasing purified proteins from affinity matrices are major problems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about limitations of affinity purification methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "cfedb877-5cf7-49f5-ad1c-3a423a210597",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C17",
+      "claim": "The purification approach is based on biotinylated, amine-reactive thiol- or photo-cleavable linkers, Sulfo-NHS-SS-Biotin and PC-Biotin-NHS.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach is based on biotinylated, amine-reactive thiol- or photo-cleavable linkers, Sulfo-NHS-SS-Biotin and PC-Biotin-NHS (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the methodology shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "a3f572f0-2df1-4a26-864e-86bf1c7106c7",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C18",
+      "claim": "Stepwise incubation of the ~12 kD camelid anti-GFP nanobody with cleavable linkers results in covalent linkage.",
+      "claim_type": "EXPLICIT",
+      "source": "Stepwise incubation of the ~12 kD camelid anti-GFP nanobody, GFP-binding protein, with either of these linkers resulted in covalent linkage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "4c0940dc-f491-4dca-a449-071b5dba46e3",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C19",
+      "claim": "Incubation of GFP-binding protein-linker conjugates with Streptavidin Agarose matrix leads to stable tri-partite reagents where GFP-binding protein is immobilised but cleavable through the addition of DTT or exposure to UV light.",
+      "claim_type": "EXPLICIT",
+      "source": "while subsequent incubation with a Streptavidin Agarose matrix led to stable tri-partite reagents \u2013 GFP-TRAP-Sulfo beads and GFP-TRAP-PC beads; where GFP-binding protein is immobilised, but cleavable through the addition of DTT or exposure to UV light, respectively (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the methodology and data shown in Figure 1a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "efc7499e-4677-4447-a40f-2f8855b3a0a3",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C20",
+      "claim": "Upon brief exposure to 50 mM DTT or UV light, fluorescence of GFP-TRAP beads decreased, concomitant with an increase in the surrounding medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual beads fluoresced with varying intensity and, upon brief exposure to 50 mM DTT or UV light, fluorescence decreased, concomitant with an increase in the surrounding medium (Figure 1b; Figure 1\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the microscopy data in Figure 1b and Figure 1\u2014figure supplement 1a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "47a99695-f3ee-41b3-9192-1b08b4c6271e",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C21",
+      "claim": ">90% of GFP was released from GFP-TRAP-Sulfo beads following cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis confirmed >90% and~60% of GFP was released from GFP-TRAP-Sulfo and GFP-TRAP-PC beads, respectively, following cleavage (Figure 1c; Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the Western blot data in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "ffc78c16-7f3c-4d2e-ac06-e64d5d6c2f61",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C22",
+      "claim": "~60% of GFP was released from GFP-TRAP-PC beads following cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis confirmed >90% and~60% of GFP was released from GFP-TRAP-Sulfo and GFP-TRAP-PC beads, respectively, following cleavage (Figure 1c; Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the Western blot data in Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "5c354b15-a8c6-4cbf-8126-3a87699c8c9d",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C23",
+      "claim": "Drosophila Augmin can be purified from extracts of early embryos expressing a GFP-tagged variant of the Msd1 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that Drosophila Augmin can be purified from extracts of early embryos expressing a GFP-tagged variant of the Msd1 subunit (Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "c28d26c7-a431-4e9d-99f9-1557b7837d8f",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C24",
+      "claim": "Drosophila embryos have been used to purify the \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila embryos have also been used to purify the \u03b3-TuRC (Oegema et al., 1999; Moritz et al., 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "3d45760a-e908-47c3-9507-434038c3120c",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C25",
+      "claim": "Branching MT nucleation is essential during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "As branching MT nucleation is essential during mitosis, we used embryos arrested in a metaphase-like state through incubation with the proteasomal inhibitor, MG132 (Chesnel et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "201c53a1-00e8-4f19-b5a6-5d923590b407",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C26",
+      "claim": "Both Msd1-GFP and \u03b3-Tubulin-GFP were efficiently immobilised on GFP-TRAP-Sulfo or GFP-TRAP-PC beads.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Msd1-GFP and \u03b3-Tubulin-GFP were efficiently immobilised on GFP-TRAP-Sulfo or GFP-TRAP-PC beads and western blotting confirmed that, upon cleaving, Msd1-GFP and \u03b3-Tubulin-GFP were concentrated in the eluate, with other subunits of the complexes co-eluting (Figure 1d; Figure 1\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the Western blot data in Figure 1d and Figure 1\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "2d0648c6-9f2e-4e38-94e2-a2832794897f",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C27",
+      "claim": "Upon cleaving, Msd1-GFP and \u03b3-Tubulin-GFP were concentrated in the eluate, with other subunits of the complexes co-eluting.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Msd1-GFP and \u03b3-Tubulin-GFP were efficiently immobilised on GFP-TRAP-Sulfo or GFP-TRAP-PC beads and western blotting confirmed that, upon cleaving, Msd1-GFP and \u03b3-Tubulin-GFP were concentrated in the eluate, with other subunits of the complexes co-eluting (Figure 1d; Figure 1\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the Western blot data in Figure 1d and Figure 1\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "ce0232db-54f0-4f75-9f9e-aeb5ae27767d",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C28",
+      "claim": "Bands corresponding to each subunit of both Augmin and \u03b3-TuRC were identified at intensities expected for the known stoichiometric relationships between subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Bands corresponding to each subunit of both Augmin and \u03b3-TuRC were identified at intensities expected for the known stoichiometric relationships between subunits (Oegema et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the SYPRO-ruby stained gel in Figure 1e and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "86dec197-acc1-4b15-b0a3-19222ab864d5",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C29",
+      "claim": "One additional set of low intensity bands was seen in all eluates, at ~45 kD, almost certainly corresponding to yolk proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "One additional set of low intensity bands was seen in all eluates, at ~45 kD; almost certainly corresponding to yolk proteins - the most abundant proteins in Drosophila early embryos (Barnett et al., 1980).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the SYPRO-ruby stained gel in Figure 1e and supported by citation about yolk proteins.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "ac7ea403-8820-44b2-9725-bd090928a419",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C30",
+      "claim": "\u03b3-Tubulin did not co-purify with Augmin.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, \u03b3-Tubulin did not co-purify with Augmin, and Dgt3 (a subunit of the Augmin complex) did not co-purify with \u03b3-TuRC (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the Western blot data in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "b4fbe94a-aba8-4b1a-a021-c3a0fe87c2c9",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C31",
+      "claim": "Dgt3 (a subunit of the Augmin complex) did not co-purify with \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, \u03b3-Tubulin did not co-purify with Augmin, and Dgt3 (a subunit of the Augmin complex) did not co-purify with \u03b3-TuRC (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the Western blot data in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "ef3e4ed3-fc00-4c8f-b18e-dfbff67dea0a",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C32",
+      "claim": "Msd1-GFP sedimented as expected for Augmin-GFP (~360 kD) in sucrose gradient analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, sucrose gradient analysis undertaken on purified mitotic complexes determined that Msd1-GFP sedimented as expected for Augmin-GFP (~360 kD) and that \u03b3-Tubulin-GFP sedimented in two populations \u2013 one consistent with \u03b3-Tubulin-GFP alone and one consistent with incorporation into the \u03b3-TuRC (2MD) (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the sucrose gradient fractionation data in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "79c9f943-c430-48d3-a1db-72124168206b",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C33",
+      "claim": "\u03b3-Tubulin-GFP sedimented in two populations \u2013 one consistent with \u03b3-Tubulin-GFP alone and one consistent with incorporation into the \u03b3-TuRC (2MD).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, sucrose gradient analysis undertaken on purified mitotic complexes determined that Msd1-GFP sedimented as expected for Augmin-GFP (~360 kD) and that \u03b3-Tubulin-GFP sedimented in two populations \u2013 one consistent with \u03b3-Tubulin-GFP alone and one consistent with incorporation into the \u03b3-TuRC (2MD) (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the sucrose gradient fractionation data in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "2c8514e0-9164-4cf1-a481-f76717d6b17b",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C34",
+      "claim": "Augmin and \u03b3-TuRC do not co-fractionate in sucrose gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither complex co-fractionated, again strongly suggesting that Augmin and \u03b3-TuRC are purified independently of one another, or other cellular activities.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the sucrose gradient fractionation data in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "30dcf69a-4abc-4b86-9120-1ca7ab1ef412",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C35",
+      "claim": "Both \u03b3-TuRC and Augmin bind MTs in co-sedimentation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Both \u03b3-TuRC and Augmin bind MTs in co-sedimentation assays (Hughes et al., 2008; Wainman et al., 2009; Goshima et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "fe7ff59f-0a27-4a9f-8132-326c6803b2ab",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C36",
+      "claim": "Both Msd1-GFP and \u03b3-Tubulin-GFP co-sedimented with MTs in the presence of taxol.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both Msd1-GFP and \u03b3-Tubulin-GFP co-sedimented with MTs, demonstrating purified Augmin and \u03b3-TuRC maintain at least some of their cellular properties.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the MT co-sedimentation assay data in Figure 1g and Figure 1\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "07de40cb-3208-4178-959a-a5df6b632e63",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C37",
+      "claim": "Purified Augmin and \u03b3-TuRC maintain at least some of their cellular properties.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both Msd1-GFP and \u03b3-Tubulin-GFP co-sedimented with MTs, demonstrating purified Augmin and \u03b3-TuRC maintain at least some of their cellular properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the MT co-sedimentation assay results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "6f73d954-d2fb-4009-81b0-2da7cd1f8478",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C38",
+      "claim": "Addition of purified \u03b3-TuRC-GFP stimulated MT nucleation, reducing the x50 from 31.5 mins to 16.5 mins.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of purified \u03b3-TuRC-GFP stimulated MT nucleation, causing a shift in the polymerisation curve and a reduction in the x50 to 16.5 mins (\u00b1 1.2 min) (Figure 2a,b), confirming its functionality.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the polymerization assay data in Figure 2a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "c69db617-8e7d-413f-945c-e543ebd7b53b",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C39",
+      "claim": "Addition of purified Augmin-GFP had no significant effect on the shape of the polymerisation curve or the x50.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, addition of purified Augmin-GFP had no significant effect on the shape of the polymerisation curve or the x50 (32.5 mins (\u00b1 1.5 min) (Figure 2a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the polymerization assay data in Figure 2a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "5a4e646a-c432-4f3d-b936-9a3e8368af27",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C40",
+      "claim": "Although Augmin-GFP binds MTs it does not, in isolation, change MT nucleation/polymerisation dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, although Augmin-GFP binds MTs it does not, in isolation, change MT nucleation/polymerisation dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the polymerization assay results showing no effect of Augmin alone.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "d0910a31-e427-4887-82b0-ca40cc724e97",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C41",
+      "claim": "Addition of Augmin-GFP dramatically enhanced \u03b3-TuRC-dependent nucleation of MTs, further reducing the x50 to 9.5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "However, addition of Augmin-GFP dramatically enhanced \u03b3-TuRC-dependent nucleation of MTs, further reducing the x50 to 9.5 min (\u00b1 0.45 min) (Figure 2a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the polymerization assay data in Figure 2a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "d6afba8f-5ba7-4ee0-91c9-3ba62c767ce6",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C42",
+      "claim": "The effect of Augmin on \u03b3-TuRC-dependent MT nucleation was specific for the physical interaction between Augmin and \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was specific for the physical interaction between Augmin and \u03b3-TuRC, as addition of bacterially expressed and purified truncated Augmin subunits, Dgt3, Dgt5 and Dgt6, which we previously demonstrated interact directly with \u03b3-TuRC (Chen et al., 2017), resulted in nucleation/polymerisation curves indistinguishable to \u03b3-TuRC alone (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the polymerization assay data in Figure 2\u2014figure supplement 1 and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "9800ffaf-fba8-4bd4-adcb-03abfce56522",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C43",
+      "claim": "Truncated Augmin subunits Dgt3, Dgt5 and Dgt6 interact directly with \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "as addition of bacterially expressed and purified truncated Augmin subunits, Dgt3, Dgt5 and Dgt6, which we previously demonstrated interact directly with \u03b3-TuRC (Chen et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "601cbcd6-c721-4b1f-9b1b-cc069772907a",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C44",
+      "claim": "Purified Augmin augments \u03b3-TuRC-dependent MT nucleation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, purified Augmin does, indeed, augment \u03b3-TuRC-dependent MT nucleation in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion drawn from the polymerization assay data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "5624b68e-b7c2-4f20-8fb1-6f53620bba1b",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C45",
+      "claim": "The augmenting phenomenon was dependent on whether the complexes were isolated from mitotically arrested (MG132) or untreated, mainly interphase (cycling) embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this phenomenon was dependent on whether the complexes were isolated from mitotically arrested (MG132) or untreated, mainly interphase (cycling) embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the polymerization assay data in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "0c39dd46-50b9-4d98-af05-99b04d7044ac",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C46",
+      "claim": "\u03b3-TuRC purified from cycling embryos was a less efficient nucleator than its mitotic counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b3-TuRC purified from cycling embryos was a less efficient nucleator than its mitotic counterpart (Figure 2c; Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the polymerization assay data in Figure 2c and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "d6101c9c-4007-4c70-8f83-40125277831a",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C47",
+      "claim": "Cycling Augmin, like mitotic Augmin, showed no independent activity on MT nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "while cycling Augmin, like mitotic Augmin, showed no independent activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the polymerization assay data in Figure 2c and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "d2249aff-36a8-4e6a-8f77-1dfb7813eddd",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C48",
+      "claim": "Either mitotic \u03b3-TuRC and cycling Augmin or cycling \u03b3-TuRC and mitotic Augmin were able to enhance MT nucleation to the same extent as both mitotic complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when incubated together, either mitotic \u03b3-TuRC and cycling Augmin or cycling \u03b3-TuRC and mitotic Augmin were able to enhance MT nucleation to the same extent as both mitotic complexes (Figure 2c; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the polymerization assay data in Figure 2c and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "529f4bff-6fa1-40be-8885-bca30622ce4f",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C49",
+      "claim": "Cell cycle dependent changes in protein function are determined mostly by post-translational modifications (PTMs).",
+      "claim_type": "EXPLICIT",
+      "source": "As cell cycle dependent changes in protein function are determined mostly by post-translational modifications (PTMs), this observation suggests that PTMs of either Augmin or \u03b3-Tubulin are crucial in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cell cycle regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "119a4147-975a-4772-b9f1-65a4a9d93f1a",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C50",
+      "claim": "PTMs of either Augmin or \u03b3-Tubulin are crucial in vivo for branching MT nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "As cell cycle dependent changes in protein function are determined mostly by post-translational modifications (PTMs), this observation suggests that PTMs of either Augmin or \u03b3-Tubulin are crucial in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that either mitotic Augmin or mitotic \u03b3-TuRC is sufficient for enhanced nucleation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "c9a8d10d-140e-4cb2-ae6e-4da3b927f352",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C51",
+      "claim": "Samples containing purified Augmin showed only very few, short MTs per field of view at t = 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Control samples, or those containing purified Augmin, showed only very few, short MTs per field of view while, as expected, \u03b3-TuRC-containing samples possessed many individual MTs (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the microscopy data in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "5a30a1ca-7e20-45d3-bfab-0cdfbfd9207f",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C52",
+      "claim": "\u03b3-TuRC-containing samples possessed many individual MTs at t = 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Control samples, or those containing purified Augmin, showed only very few, short MTs per field of view while, as expected, \u03b3-TuRC-containing samples possessed many individual MTs (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the microscopy data in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "e6380d0a-5840-49bf-9da4-b46aa0bf98e3",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C53",
+      "claim": "Samples incubated simultaneously with \u03b3-TuRC and Augmin showed extensive MT branching, bundling and nesting, rather than individual MTs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, samples incubated simultaneously with \u03b3-TuRC and Augmin showed extensive MT branching, bundling and nesting, rather than individual MTs (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the microscopy data in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "d7a4468a-4445-4e1a-8dba-37d643efe295",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C54",
+      "claim": "Purified mitotic Augmin was able to recruit purified \u03b3-TuRC to MTs in vitro, co-localising along the length of MTs in distinct punctae.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, consistent with the observation that, in vivo, Augmin is required for \u03b3-Tubulin localisation to the mitotic spindle, purified mitotic Augmin was able to recruit purified \u03b3-TuRC to MTs in vitro, co-localising along the length of MTs in distinct punctae (Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the microscopy data in Figure 3\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "b19ac245-e923-4ea7-aae1-05fa3f8a702d",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C55",
+      "claim": "In vivo, Augmin is required for \u03b3-Tubulin localisation to the mitotic spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, consistent with the observation that, in vivo, Augmin is required for \u03b3-Tubulin localisation to the mitotic spindle",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "0553bb80-83d0-4b08-84d2-e4be1bdb166b",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C56",
+      "claim": "Within 1 min of the simultaneous addition of Augmin and \u03b3-TuRC, MT nucleation and putative branching were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Even within 1 min of the simultaneous addition of Augmin and \u03b3-TuRC, MT nucleation and putative branching were observed, though background fluorescence of soluble tubulin was high (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the microscopy data in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "bb16283e-8f59-43ef-8da1-86a56488811d",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C57",
+      "claim": "The mean length of MTs was significantly greater after 5 min than after 2 min (4.01 \u03bcm versus 3.24 \u03bcm).",
+      "claim_type": "EXPLICIT",
+      "source": "Samples taken at t = 2 and t = 5 min showed similar numbers of MTs to each other, per field of view, though the mean length of MTs, and proportion of MTs with branches, were significantly greater after 5 min, than after 2 min (4.01 \u03bcm versus 3.24 \u03bcm and 34% versus 24%, respectively) (Figure 3b; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the microscopy data and quantification in Figure 3b and Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "1fbb11de-d974-4816-85cc-a7b1c7b1b305",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C58",
+      "claim": "The proportion of MTs with branches was significantly greater after 5 min than after 2 min (34% versus 24%).",
+      "claim_type": "EXPLICIT",
+      "source": "Samples taken at t = 2 and t = 5 min showed similar numbers of MTs to each other, per field of view, though the mean length of MTs, and proportion of MTs with branches, were significantly greater after 5 min, than after 2 min (4.01 \u03bcm versus 3.24 \u03bcm and 34% versus 24%, respectively) (Figure 3b; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the microscopy data and quantification in Figure 3b and Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "52e4f14b-4432-448a-b94e-dbb20dfc7d6c",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C59",
+      "claim": "MT nucleation from purified \u03b3-TuRCs reaches maximal activity within the first few minutes of the assay.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that MT nucleation from purified \u03b3-TuRCs reaches maximal activity within the first few minutes of the assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that MT numbers are similar at 2 and 5 minutes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "02f0a51e-df2c-4420-a6b3-8f3d86c48887",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C60",
+      "claim": "The estimated number of \u03b3-TuRCs per coverslip (6.0 x 10^6) was 2-3 times less than the mean number of MTs per coverslip (1.7 x 10^7).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the estimated number of \u03b3-TuRCs per coverslip (6.0 x 106) was 2-3 times less than the mean number of MTs per coverslip (1.7 x 107) (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data as described in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "46257a58-3fbb-47e6-83f1-82cd0786cc34",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C61",
+      "claim": "A single \u03b3-TuRC may be able to nucleate multiple MTs at a rate of >1 MT/min.",
+      "claim_type": "EXPLICIT",
+      "source": "These calculations suggest \ufeff\ufeffeither (i) that our approximations of \u03b3-TuRC molarity are out by a factor of 2-3, (ii) that the MTs counted include a proportion that have been nucleated by a \u03b3-TuRC and subsequently broken or (iii) that a single \u03b3-TuRC is able to nucleate multiple MTs at a rate of >1 MT/min, perhaps by nucleation and subsequent release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is one of three possible explanations inferred from the calculation that there are more MTs than \u03b3-TuRCs.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "b5e808dc-1214-478c-8e29-a25ff5e37ca8",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C62",
+      "claim": "55% of \u03b3-TuRC-containing RhodMTs terminated precisely at an Augmin-containing 488MT.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when RhodMTs incubated with \u03b3-TuRC were added together with 488MTs incubated with Augmin, 55% of \u03b3-TuRC-containing RhodMTs terminated precisely at an Augmin-containing 488MT (Figure 3c\u2013e; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the microscopy data and quantification in Figure 3c-e and Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "7892686f-c55c-4fab-a241-b93435e4ec86",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C63",
+      "claim": "The polarity and angles of the RhodMTs branches in relation to the 'mother' 488MTs varied far more widely than seen in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the polarity and angles of the RhodMTs branches in relation to the 'mother' 488MTs varied far more widely than seen in vivo, presumably due to how the MTs settled on the coverslip during preparation, we found a bias in the angle, similar to that seen in living Drosophila (Verma and Maresca, 2019) (Figure 3e; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the angle distribution data in Figure 3e and Figure 3\u2014source data 1, and compared to in vivo data by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "1eea07be-8038-4eef-aadd-de94a158025c",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C64",
+      "claim": "There is a bias in the branch angle similar to that seen in living Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the polarity and angles of the RhodMTs branches in relation to the 'mother' 488MTs varied far more widely than seen in vivo, presumably due to how the MTs settled on the coverslip during preparation, we found a bias in the angle, similar to that seen in living Drosophila (Verma and Maresca, 2019) (Figure 3e; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the angle distribution data in Figure 3e and Figure 3\u2014source data 1, and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "ad5a803e-9dd3-4510-8727-a933e601f31e",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C65",
+      "claim": "The polarity of the interaction between \u03b3-TuRC-RhodMTs and Augmin-488MTs was specific; with only the minus ends of \u03b3-TuRC-RhodMTs precisely terminating at the Augmin-488MTs lateral surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the polarity of the interaction between \u03b3-TuRC-RhodMTs and Augmin-488MTs was specific; with only the minus ends of \u03b3-TuRC-RhodMTs precisely terminating at the Augmin-488MTs lateral surfaces (Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the microscopy data using GMPCPP seeds in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "62b1522d-9fcb-4b01-a0d5-35552c4eac0f",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C66",
+      "claim": "The percentage of \u03b3-TuRC-RhodMTs generating branches increased to 64% when GMPCPP seeds were used.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as predicted, the percentage of \u03b3-TuRC-RhodMTs generating branches further increased to 64% (Figure 3e; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the quantification data in Figure 3e and Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "b448b393-b46b-447d-bc2c-154d855d6b77",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C67",
+      "claim": "The formation of junctions on Augmin-containing 488MTs was length independent \u2013 branches were equally distributed at the very distal MT tips, throughout their length and on the GMPCPP seed itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that the formation of junctions on Augmin-containing 488MTs was length independent \u2013 branches were equally distributed at the very distal MT tips, throughout their length and on the GMPCPP seed itself (Figure 3g,h; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the microscopy data and correlation analysis in Figure 3g,h and Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "83d99917-2a93-4e83-a69f-bf8f0d881ea7",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C68",
+      "claim": "Augmin directly recruits \u03b3-TuRC to MTs.",
+      "claim_type": "EXPLICIT",
+      "source": "It demonstrates conclusively that Augmin directly recruits \u03b3-TuRC to MTs and that these two protein complexes are sufficient for robust and efficient branching MT nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion drawn from the reconstitution experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "dae7a697-d6ba-4d72-9b53-143229b77379",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C69",
+      "claim": "Augmin and \u03b3-TuRC are sufficient for robust and efficient branching MT nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "It demonstrates conclusively that Augmin directly recruits \u03b3-TuRC to MTs and that these two protein complexes are sufficient for robust and efficient branching MT nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion drawn from the reconstitution experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "e2e70a62-2f30-4e1c-9da1-2c90349e3765",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C70",
+      "claim": "65% of the mitotic \u03b3-TuRCs are competent to bind MT minus ends and Augmin.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our calculations suggest that 65% of the mitotic \u03b3-TuRCs are competent to bind MT minus ends and Augmin, and that they are able to nucleate at a rate of >1 MT/min, we expect that, in vivo, other proteins further enhance these \u03b3-TuRC activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data showing 64% of \u03b3-TuRC-RhodMTs forming branches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "a843cf1e-3579-4ebb-b2e7-334cd60573c1",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C71",
+      "claim": "Purified \u03b3-TuRCs are able to nucleate at a rate of >1 MT/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our calculations suggest that 65% of the mitotic \u03b3-TuRCs are competent to bind MT minus ends and Augmin, and that they are able to nucleate at a rate of >1 MT/min, we expect that, in vivo, other proteins further enhance these \u03b3-TuRC activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data on MT numbers and \u03b3-TuRC amounts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "eb8f0140-fa1d-4781-911b-9be2b00c9174",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C72",
+      "claim": "In vivo, other proteins further enhance \u03b3-TuRC activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our calculations suggest that 65% of the mitotic \u03b3-TuRCs are competent to bind MT minus ends and Augmin, and that they are able to nucleate at a rate of >1 MT/min, we expect that, in vivo, other proteins further enhance these \u03b3-TuRC activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the authors' expectations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "d83d930f-ad49-4944-b0d5-d37638e749c2",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C73",
+      "claim": "TPX2 has a clear role in stimulating Augmin-dependent branched MT nucleation in Xenopus meiotic extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a clear role has been reported for the MT associated protein, TPX2, in stimulating Augmin-dependent branched MT nucleation in Xenopus meiotic extracts (Petry et al., 2013; Thawani et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "a45fd2b8-0658-48db-9913-793dea3fc3f0",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C74",
+      "claim": "Drosophila TPX2 has been shown to be dispensible for branching MT nucleation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in support of our conclusions, Drosophila TPX2 has recently been shown to be dispensible for the phenomenon in vivo (Verma and Maresca, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "639dcf17-4599-4db4-b9d3-2d961ec32271",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C75",
+      "claim": "In some cells, Augmin might recruit pre-existing \u03b3-TuRC-containing MTs, nucleated elsewhere in the cell, anchoring them to specific sites and increasing local MT density.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments also highlight the intriguing possibility that, in some cells, Augmin might recruit pre-existing \u03b3-TuRC-containing MTs, nucleated elsewhere in the cell, anchoring them to specific sites and increasing local MT density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "5f2aeaab-6720-4449-89d5-d6fabe3dbe03",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C76",
+      "claim": "The methodologies provide a route to defining the molecular detail of MT branching at the ultrastructural level.",
+      "claim_type": "EXPLICIT",
+      "source": "The generation of stable MT-Augmin-\u03b3-TuRC-MT junctions using the methodologies pioneered here also provide a route to finally defining the molecular detail of MT branching at the ultrastructural level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "8a638691-e2f2-4c77-b232-012daddda35b",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C77",
+      "claim": "Cleavable affinity purification provides the basis to generate more complex, but molecularly defined, mixes of purified proteins to reconstitute higher-order aspects of spindle formation.",
+      "claim_type": "EXPLICIT",
+      "source": "More broadly, cleavable affinity purification provides the basis to generate more complex, but molecularly defined, mixes of purified proteins, complete with in vivo PTMs, in order to reconstitute higher-order aspects of spindle formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "05042c0d-d29d-4183-a586-9c86eab51ec6",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C78",
+      "claim": "By isolating and combining purified, active proteins and protein complexes from any biological system of interest, \"cl-AP TRAP\" overcomes the limitations of traditional 'bottom-up' approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, by isolating and combining purified, active proteins and protein complexes from any biological system of interest, \"cl-AP TRAP\" overcomes the limitations of traditional 'bottom-up' approaches, allowing exploration of the level of biological organisation between individual protein and biological process \u2013 the level at which emergence of cellular phenomena often occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation of the significance of their methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "c89f7a6e-cba6-44ba-b494-e9e82d74ffcd",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C79",
+      "claim": "Augmin confirms a long-standing hypothesis first articulated to explain the loss of \u03b3-Tubulin on the mitotic spindle when the expression of Augmin subunits is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work confirms a long-standing hypothesis, first articulated to explain the loss of \u03b3-Tubulin on the mitotic spindle when the expression of Augmin subunits is reduced (Goshima et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "51800812-01e9-4480-bab9-5cfbe0408cbe",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C80",
+      "claim": "Endogenously expressed, untagged \u03b3-Tubulin is co-purified with \u03b3-Tubulin-GFP at a ratio of ~3:1 \u03b3-Tubulin-GFP: \u03b3-Tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenously expressed, untagged \u03b3-Tubulin is co-purified with \u03b3-Tubulin-GFP, presumably as part of active \u03b3-TuRCs, at a ratio of ~3:1 \u03b3-Tubulin-GFP: \u03b3-Tubulin (as quantified by LiCOR analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the Western blot data in Figure 1\u2014figure supplement 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "8cef5829-12fb-4842-8497-9c521ff24fcb",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C81",
+      "claim": "Cleavage of proteins from GFP-TRAP-Sulfo-beads reproducibly gave efficiencies of >90%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cleavage of proteins and complexes from GFP-TRAP-Sulfo-beads reproducibly gave efficiencies of >90% (n => 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from multiple experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "4e8d8257-bf3c-40d2-abfe-4403c4e409a0",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C82",
+      "claim": "Cleavage efficiencies from GFP-TRAP-PC beads could not consistently reach greater than 60%.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of the project, different conditions were tried in an attempt to increase the photo-cleaving of GFP, Augmin-GFP and \u03b3-TuRC-GFP from the GFP-TRAP-PC beads. We were unable to consistently reach cleaving efficiencies of greater than 60%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from multiple experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "00e5b3e1-76ad-471a-98b2-9fdcc1b4c145",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C83",
+      "claim": "The molar concentration of Augmin purified by cl-AP is 300 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the number of Augmin complexes in 1 \u03bcl of cl-AP supernatant, isolated from GFP-Msd1 expressing embryos, is 1.8 \u00d7 1011 and the molar concentration of Augmin is 300 nM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data as described in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "a2adeaef-6b55-4d64-ab14-8ee8a9d46451",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C84",
+      "claim": "The molar concentration of \u03b3-TuRC purified by cl-AP is 20 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The molar concentration of \u03b3-TuRC purified by cl-AP is therefore 300 nM x 0.6/9 = 20 nM, or the equivalent of 1.8 \u00d7 1011\u00d70.6/9 = 1.2\u00d71010 \u03b3-TuRCs per 1 \u03bcl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data as described in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "9e4954bf-dd9e-4c4e-ae9b-14a0ad2f5563",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C85",
+      "claim": "The final concentration of Augmin in the MT co-sedimentation assay was 60 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The final concentration of Augmin in the MT co-sedimentation assay was 60 nM (10 \u03bcl in 50 \u03bcl total)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the experimental condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "3dea7970-560c-4221-bbca-9046954f9f73",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C86",
+      "claim": "The final concentration of Augmin in the MT polymerisation assays was 30 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "while the final concentration of Augmin in the MT polymerisation assays was 30 nM (5 \u03bcl in 50 \u03bcl total).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the experimental condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "5cde294e-3f46-4658-92d9-047431e8ff20",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C87",
+      "claim": "The final concentration of \u03b3-TuRC in the MT co-sedimentation assay was 4 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The final concentration of \u03b3-TuRC in the MT co-sedimentation assay was 4 nM (10 \u03bcl in 50 \u03bcl total)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the experimental condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "1536b0dc-f425-4107-b3e3-365f6edcbb3d",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C88",
+      "claim": "The final concentration of \u03b3-TuRC in the MT polymerisation assays was 2 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "while the final concentration of \u03b3-TuRC in the MT polymerisation assays was 2 nM (5 \u03bcl in 50 \u03bcl total).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the experimental condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "b5dd3b02-b26c-43f6-a437-50bdc720c290",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C89",
+      "claim": "One \u03b3-TuRC is capable of nucleating 2\u20133 MTs within 2 mins.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, one \u03b3-TuRC is capable of nucleating 2\u20133 MTs within 2 mins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data as described in Materials and methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "c8f8230c-659e-4b12-840c-61dbdaa2a93a",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C90",
+      "claim": "The purified GFP-\u03b3-TuRCs contain 8\u201310 molecules of GFP-\u03b3-Tubulin (average 9) and 4\u20135 molecules of unlabelled \u03b3-Tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we estimate that the purified GFP-\u03b3-TuRCs contain 8\u201310 molecules of GFP-\u03b3-Tubulin (average 9) and 4\u20135 molecules of unlabelled \u03b3-Tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data as described in Materials and methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "59816f6f-cdf8-45fb-9267-01ec44c071df",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C91",
+      "claim": "60% of the GFP-\u03b3-Tubulin in the purified supernatant is present in fractions consistent with incorporation into \u03b3-TuRCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Sucrose gradient sedimentation followed by western blotting estimates that 60% of the GFP-\u03b3-Tubulin in the purified supernatant isolated from GFP-\u03b3-Tubulin expressing embryos is present in fractions consistent with incorporation into \u03b3-TuRCs, while 40% is present in fractions consistent with \u03b3-Tubulin that is not part of the \u03b3-TuRC (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the sucrose gradient fractionation data in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "0a0ad6b3-0e8f-4eee-a6c7-950d3eda73c7",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C92",
+      "claim": "40% of the GFP-\u03b3-Tubulin in the purified supernatant is present in fractions consistent with \u03b3-Tubulin that is not part of the \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Sucrose gradient sedimentation followed by western blotting estimates that 60% of the GFP-\u03b3-Tubulin in the purified supernatant isolated from GFP-\u03b3-Tubulin expressing embryos is present in fractions consistent with incorporation into \u03b3-TuRCs, while 40% is present in fractions consistent with \u03b3-Tubulin that is not part of the \u03b3-TuRC (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the sucrose gradient fractionation data in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "e817c9e7-9f46-45da-bbe8-71e9eebb3d30",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C93",
+      "claim": "75% of the \u03b3-Tubulin in purified supernatant is present as GFP-\u03b3-Tubulin while 25% is present as \u03b3-Tubulin with no tag.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting of purified supernatant isolated from GFP-\u03b3-Tubulin expressing embryos using anti\u2212\u03b3-Tubulin antibodies estimates that 75% of the \u03b3-Tubulin is present as GFP-\u03b3-Tubulin while 25% is present as \u03b3-Tubulin with no tag (Figure 1\u2014figure supplement 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the Western blot data in Figure 1\u2014figure supplement 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "54685ba1-caa3-454f-bbc3-80969e5d219c",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C94",
+      "claim": "An average of 130 MTs were observed per field of view (60.5 \u03bcm2) after two mins post-initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "After two mins post-initiation, an average of 130 MTs were observed per field of view (60.5 \u03bcm2) (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the quantification data in Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "3711989b-8738-4f1b-8afa-7cf7fab1182a",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C95",
+      "claim": "The total number of \u03b3-TuRCs per coverslip is estimated as 6.0 \u00d7 10^6.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore estimate the total number of \u03b3-TuRCs per coverslip as 6.0 \u00d7 106.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data as described in Materials and methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "4028855f-ab54-4fbe-a28a-eebe33cdaf01",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C96",
+      "claim": "There are ~1.32\u00d710^5 fields of view per coverslip.",
+      "claim_type": "EXPLICIT",
+      "source": "Given there are ~1.32\u00d7105 fields of view per coverslip, this equates to 1.7 \u00d7 107 MTs per coverslip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data as described in Materials and methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "4182f2b1-ff49-45ad-90cc-cb97c5425bae",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C97",
+      "claim": "The total number of MTs per coverslip is 1.7 \u00d7 10^7.",
+      "claim_type": "EXPLICIT",
+      "source": "Given there are ~1.32\u00d7105 fields of view per coverslip, this equates to 1.7 \u00d7 107 MTs per coverslip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data as described in Materials and methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "8dc60035-1331-44c2-9c95-ded1d3b3dd57",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C98",
+      "claim": "The differences in the time taken for 50% polymerisation between all conditions differs significantly at p=0.001, except when comparing control to Augmin.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences in the time taken for 50% polymerisation between all conditions differs significantly at p=0.001, except when comparing control to Augmin (ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the result of statistical analysis of the polymerization assay data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "f2e7cfb6-d8e1-45f5-87c7-53e6eb013468",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C99",
+      "claim": "The Pearson correlation coefficient between the length of Augmin-488MTs and the position of \u03b3-TuRC-RhodMT branch points was r = 0.9962 at a p value of < 0.00001.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pearson correlation coefficient was r = 0.9962 at a p value of < 0.00001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of statistical analysis of the branch position data shown in Figure 3h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "fd737e08-ac9f-41e6-8e2e-97b24c308fbd",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C100",
+      "claim": "Samples taken at t = 2 and t = 5 min showed similar numbers of MTs to each other, per field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples taken at t = 2 and t = 5 min showed similar numbers of MTs to each other, per field of view, though the mean length of MTs, and proportion of MTs with branches, were significantly greater after 5 min, than after 2 min (4.01 \u03bcm versus 3.24 \u03bcm and 34% versus 24%, respectively) (Figure 3b; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the microscopy data and quantification in Figure 3b and Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "91d08d39-9b13-42d4-99eb-8c66e333f0f2",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "claim_id": "C101",
+      "claim": "Occasional examples of RhodMTs terminating at 488MTs were observed at a frequency consistent with random placement of MTs on coverslips (~6%).",
+      "claim_type": "EXPLICIT",
+      "source": "Occasional examples of RhodMTs terminating at 488MTs were observed, but at a frequency consistent with random placement of MTs on coverslips (~6%) (Figure 3b,d; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the microscopy data and quantification in Figure 3b,d and Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "734330e5-9ddd-48fd-a182-0a0684ea6ad5",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel cleavable affinity purification (cl-AP) method using biotinylated, cleavable linkers (Sulfo-NHS-SS-Biotin and PC-Biotin-NHS) conjugated to anti-GFP nanobodies immobilized on streptavidin beads. GFP-TRAP-Sulfo beads achieved >90% cleavage efficiency with DTT, while GFP-TRAP-PC beads achieved ~60% cleavage efficiency with UV light.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 and C81-C82 collectively demonstrate the development and validation of the cl-AP methodology. The Western blot data (Figure 1b-c, Figure 1\u2014figure supplement 1a-c) and fluorescence microscopy data provide direct evidence for efficient binding and cleavage. The reproducibility across multiple experiments (n>10 for Sulfo beads) supports the robustness of the method, though the lower efficiency of PC beads is acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "09cb84a2-1b8e-4439-b7c6-a0c114fccefc",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Endogenous Augmin and \u03b3-TuRC were purified to near homogeneity from Drosophila embryos using cl-AP. Western blotting and SYPRO-ruby staining confirmed that all expected subunits co-eluted at appropriate stoichiometric ratios, with minimal contamination (only yolk proteins at ~45 kD). Importantly, Augmin and \u03b3-TuRC did not co-purify with each other, and sucrose gradient analysis confirmed they sediment independently at their expected molecular weights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C26-C34 are strongly supported by multiple lines of evidence including Western blots (Figure 1d), SYPRO-ruby stained gels (Figure 1e), and sucrose gradient fractionation (Figure 1f). The data demonstrate high purity and integrity of both complexes. The lack of co-purification between Augmin and \u03b3-TuRC is critical for subsequent functional assays and is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "3ee2cfa4-f4f0-4e78-98e3-2e635822446c",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Purified Augmin and \u03b3-TuRC maintain their cellular MT-binding properties, as demonstrated by co-sedimentation with taxol-stabilized microtubules in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by MT co-sedimentation assay data (Figure 1g, Figure 1\u2014figure supplement 1e). Both Msd1-GFP and \u03b3-Tubulin-GFP co-sediment with MTs in the presence of taxol but remain in the supernatant without taxol, demonstrating functional MT-binding activity. This validates that the purification method preserves protein function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "c1ec764f-a3cf-4359-9d57-bfdcce23ff6e",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In fluorescence-based MT polymerization assays, purified \u03b3-TuRC stimulated MT nucleation (reducing x50 from 31.5 to 16.5 min), while Augmin alone had no significant effect on polymerization dynamics (x50 = 32.5 min, not significantly different from control). Statistical analysis confirmed significant differences between all conditions except control vs. Augmin (p=0.001, ANOVA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C38-C40, and C98 are well-supported by the polymerization assay data in Figure 2a-b. The statistical analysis is appropriate (ANOVA with post-hoc Tukey test), sample sizes are adequate (n=6, three independent purifications in duplicate), and the results are internally consistent. The lack of effect of Augmin alone is a critical negative control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "ecf8733f-a2cc-4cd7-93fc-fb7799e379a7",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Augmin dramatically enhances \u03b3-TuRC-dependent MT nucleation in vitro, reducing the x50 from 16.5 min (\u03b3-TuRC alone) to 9.5 min (Augmin + \u03b3-TuRC). This effect is specific for the physical interaction between intact Augmin and \u03b3-TuRC, as truncated Augmin subunits (Dgt3, Dgt5, Dgt6) that bind \u03b3-TuRC did not enhance nucleation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C41-C42, and C44 are strongly supported by polymerization assay data (Figure 2a-b, Figure 2\u2014figure supplement 1). The specificity control using truncated subunits is particularly important and demonstrates that the full Augmin complex is required for the augmenting activity. The statistical significance and reproducibility across multiple experiments strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "1a55d2b4-aa7d-45cd-9d94-2b4e09af0725",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The augmenting activity of Augmin on \u03b3-TuRC-dependent MT nucleation is cell cycle-dependent. \u03b3-TuRC from cycling embryos is less efficient than mitotic \u03b3-TuRC, but either mitotic Augmin with cycling \u03b3-TuRC or cycling Augmin with mitotic \u03b3-TuRC can enhance nucleation to the same extent as both mitotic complexes. This suggests that post-translational modifications of either Augmin or \u03b3-TuRC are crucial in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 and C50 are supported by polymerization assay data comparing mitotic and cycling complexes (Figure 2c, Figure 2\u2014figure supplement 2). The cross-mixing experiments are well-designed and provide strong evidence for cell cycle regulation. The inference about PTMs (C50) is reasonable given established knowledge about cell cycle regulation (C49), though direct identification of specific PTMs would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "40fe1710-32d9-4d6e-8902-c0693a120f3b",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Microscopy of fixed polymerization reactions revealed that Augmin alone or control samples showed few short MTs at t=15 min, while \u03b3-TuRC samples contained many individual MTs. Samples with both Augmin and \u03b3-TuRC showed extensive MT branching, bundling, and nesting. Time-course analysis (t=1, 2, 5 min) showed that MT numbers were similar at t=2 and t=5 min, but mean MT length and proportion with branches increased significantly (3.24 to 4.01 \u03bcm; 24% to 34% branched). Augmin recruited \u03b3-TuRC to MTs in vitro, co-localizing in distinct punctae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54, C56-C58, and C100 are supported by confocal microscopy data (Figure 3a-b, Figure 3\u2014figure supplement 1a) and quantification (Figure 3\u2014source data 1). The time-course analysis provides insight into nucleation kinetics. The observation that MT numbers plateau while length and branching increase is consistent with rapid initial nucleation followed by polymerization and branching. The co-localization data directly demonstrates Augmin-\u03b3-TuRC interaction on MTs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "09a014d6-c179-40b4-9dfb-958bedc89d26",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Quantitative analysis suggests that MT nucleation from purified \u03b3-TuRCs reaches maximal activity within the first few minutes. The estimated number of \u03b3-TuRCs per coverslip (6.0\u00d710\u2076) was 2-3 times less than the mean number of MTs per coverslip (1.7\u00d710\u2077), suggesting that a single \u03b3-TuRC may nucleate multiple MTs at a rate of >1 MT/min, or that approximations of \u03b3-TuRC molarity are off by a factor of 2-3, or that some MTs have broken.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C61 and C89, C94-C97 involve calculations and inferences from quantitative microscopy data. While the calculations appear mathematically sound (detailed in Materials and Methods), the authors themselves acknowledge three possible explanations for the MT:\u03b3-TuRC ratio discrepancy. The inference that \u03b3-TuRCs can nucleate >1 MT/min (C61, C89) is speculative and marked as such in the evidence. Additional experiments (e.g., single-molecule imaging, direct measurement of nucleation rates) would be needed to definitively resolve this question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "ff8af7c2-604a-4c5e-8ddc-2c3490eff020",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The MT-Augmin-\u03b3-TuRC-MT branching junction was reconstituted and visualized by light microscopy. When \u03b3-TuRC-RhodMTs were mixed with Augmin-488MTs, 55% of RhodMTs terminated precisely at 488MTs (vs. ~6% for random controls). Using GMPCPP seeds to mark minus ends, the authors confirmed that only the minus ends of \u03b3-TuRC-RhodMTs terminated at Augmin-488MT lateral surfaces, with branching efficiency increasing to 64%. Branch formation was length-independent (Pearson r=0.9962, p<0.00001), and branch angles showed a bias similar to that seen in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C62-C69, C99, and C101 are strongly supported by confocal microscopy data (Figure 3c-h) and quantification (Figure 3\u2014source data 1). The use of GMPCPP seeds to definitively establish MT polarity (C65) is a critical control. The high Pearson correlation for length-independent branching (C99) is statistically robust. The comparison to in vivo branch angles (C63-C64) is supported by citation. The ~6% background in controls (C101) establishes that the 55-64% branching is well above random. This represents the first direct visualization and quantification of reconstituted branching MT nucleation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "817317fe-45d9-4863-8385-283a51aa173e",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Quantitative analysis of purified complexes determined that Augmin concentration is 300 nM and \u03b3-TuRC concentration is 20 nM in cl-AP eluates. Purified \u03b3-TuRCs contain an average of 9 molecules of GFP-\u03b3-Tubulin and 4-5 molecules of unlabeled \u03b3-Tubulin (ratio ~3:1 GFP:unlabeled). Sucrose gradient analysis showed that 60% of GFP-\u03b3-Tubulin is incorporated into \u03b3-TuRCs while 40% is not. Final concentrations in assays were 30-60 nM Augmin and 2-4 nM \u03b3-TuRC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80, C83-C88, and C90-C93 describe quantitative measurements and calculations detailed in Materials and Methods. The Western blot quantification (Figure 1\u2014figure supplement 1f) and sucrose gradient data (Figure 1f) support these calculations. The presence of endogenous unlabeled \u03b3-Tubulin in purified complexes (C80) is important for interpreting complex composition. While these calculations involve assumptions and approximations (acknowledged by the authors), they are based on multiple independent measurements and are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "717172ad-83dc-459e-b110-60e529271bd5",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Calculations suggest that 65% of mitotic \u03b3-TuRCs are competent to bind MT minus ends and Augmin, and that they can nucleate at a rate of >1 MT/min.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C71 are inferred from the branching efficiency data (64% in C66) and MT:\u03b3-TuRC ratio calculations. While the 65% competency estimate is directly supported by the branching data, the >1 MT/min nucleation rate is more speculative and depends on the accuracy of molarity calculations that the authors acknowledge may be off by a factor of 2-3. These are reasonable estimates but would benefit from direct kinetic measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "e5b8cf71-5eb0-4ee0-933d-d7fcdf340e73",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that in vivo, other proteins (such as TPX2 in some systems) may further enhance \u03b3-TuRC activities, though Drosophila TPX2 has been shown to be dispensable. They also suggest that Augmin might recruit pre-existing \u03b3-TuRC-containing MTs to specific sites, and that the cl-AP methodology could enable future ultrastructural studies and reconstitution of higher-order spindle assembly processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C78 are explicitly speculative (marked as SPECULATION in evidence_type) and represent discussion of future directions and broader implications. While C73-C74 are supported by citations to prior work, the other claims are hypotheses for future testing rather than demonstrated results. These are reasonable speculations based on the current findings but do not constitute supported results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    },
+    {
+      "id": "a27a463d-eb35-4da8-9e2e-cbd788bfb63f",
+      "content_id": "c8e9d097-4e7b-48b3-b520-15fd4c97862a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The work confirms a long-standing hypothesis that Augmin recruits \u03b3-TuRC to the mitotic spindle, originally proposed to explain the loss of \u03b3-Tubulin from spindles when Augmin expression is reduced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by the totality of the reconstitution data (particularly C68-C69) and is appropriately contextualized with citation to the original hypothesis (Goshima et al., 2007). The in vitro reconstitution provides direct mechanistic evidence for what was previously inferred from in vivo depletion experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:32:44.607371Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cfedb877-5cf7-49f5-ad1c-3a423a210597",
+      "result_id": "734330e5-9ddd-48fd-a182-0a0684ea6ad5"
+    },
+    {
+      "claim_id": "a3f572f0-2df1-4a26-864e-86bf1c7106c7",
+      "result_id": "734330e5-9ddd-48fd-a182-0a0684ea6ad5"
+    },
+    {
+      "claim_id": "4c0940dc-f491-4dca-a449-071b5dba46e3",
+      "result_id": "734330e5-9ddd-48fd-a182-0a0684ea6ad5"
+    },
+    {
+      "claim_id": "efc7499e-4677-4447-a40f-2f8855b3a0a3",
+      "result_id": "734330e5-9ddd-48fd-a182-0a0684ea6ad5"
+    },
+    {
+      "claim_id": "47a99695-f3ee-41b3-9192-1b08b4c6271e",
+      "result_id": "734330e5-9ddd-48fd-a182-0a0684ea6ad5"
+    },
+    {
+      "claim_id": "ffc78c16-7f3c-4d2e-ac06-e64d5d6c2f61",
+      "result_id": "734330e5-9ddd-48fd-a182-0a0684ea6ad5"
+    },
+    {
+      "claim_id": "8cef5829-12fb-4842-8497-9c521ff24fcb",
+      "result_id": "734330e5-9ddd-48fd-a182-0a0684ea6ad5"
+    },
+    {
+      "claim_id": "4e8d8257-bf3c-40d2-abfe-4403c4e409a0",
+      "result_id": "734330e5-9ddd-48fd-a182-0a0684ea6ad5"
+    },
+    {
+      "claim_id": "7a5dc2df-c164-4466-8cfa-dc2423ca7637",
+      "result_id": "09cb84a2-1b8e-4439-b7c6-a0c114fccefc"
+    },
+    {
+      "claim_id": "201c53a1-00e8-4f19-b5a6-5d923590b407",
+      "result_id": "09cb84a2-1b8e-4439-b7c6-a0c114fccefc"
+    },
+    {
+      "claim_id": "2d0648c6-9f2e-4e38-94e2-a2832794897f",
+      "result_id": "09cb84a2-1b8e-4439-b7c6-a0c114fccefc"
+    },
+    {
+      "claim_id": "ce0232db-54f0-4f75-9f9e-aeb5ae27767d",
+      "result_id": "09cb84a2-1b8e-4439-b7c6-a0c114fccefc"
+    },
+    {
+      "claim_id": "86dec197-acc1-4b15-b0a3-19222ab864d5",
+      "result_id": "09cb84a2-1b8e-4439-b7c6-a0c114fccefc"
+    },
+    {
+      "claim_id": "ac7ea403-8820-44b2-9725-bd090928a419",
+      "result_id": "09cb84a2-1b8e-4439-b7c6-a0c114fccefc"
+    },
+    {
+      "claim_id": "b4fbe94a-aba8-4b1a-a021-c3a0fe87c2c9",
+      "result_id": "09cb84a2-1b8e-4439-b7c6-a0c114fccefc"
+    },
+    {
+      "claim_id": "ef3e4ed3-fc00-4c8f-b18e-dfbff67dea0a",
+      "result_id": "09cb84a2-1b8e-4439-b7c6-a0c114fccefc"
+    },
+    {
+      "claim_id": "79c9f943-c430-48d3-a1db-72124168206b",
+      "result_id": "09cb84a2-1b8e-4439-b7c6-a0c114fccefc"
+    },
+    {
+      "claim_id": "2c8514e0-9164-4cf1-a481-f76717d6b17b",
+      "result_id": "09cb84a2-1b8e-4439-b7c6-a0c114fccefc"
+    },
+    {
+      "claim_id": "fe7ff59f-0a27-4a9f-8132-326c6803b2ab",
+      "result_id": "3ee2cfa4-f4f0-4e78-98e3-2e635822446c"
+    },
+    {
+      "claim_id": "07de40cb-3208-4178-959a-a5df6b632e63",
+      "result_id": "3ee2cfa4-f4f0-4e78-98e3-2e635822446c"
+    },
+    {
+      "claim_id": "bb3e44f8-8d27-4a95-8224-e4298ebd4479",
+      "result_id": "c1ec764f-a3cf-4359-9d57-bfdcce23ff6e"
+    },
+    {
+      "claim_id": "6f73d954-d2fb-4009-81b0-2da7cd1f8478",
+      "result_id": "c1ec764f-a3cf-4359-9d57-bfdcce23ff6e"
+    },
+    {
+      "claim_id": "c69db617-8e7d-413f-945c-e543ebd7b53b",
+      "result_id": "c1ec764f-a3cf-4359-9d57-bfdcce23ff6e"
+    },
+    {
+      "claim_id": "5a4e646a-c432-4f3d-b936-9a3e8368af27",
+      "result_id": "c1ec764f-a3cf-4359-9d57-bfdcce23ff6e"
+    },
+    {
+      "claim_id": "8dc60035-1331-44c2-9c95-ded1d3b3dd57",
+      "result_id": "c1ec764f-a3cf-4359-9d57-bfdcce23ff6e"
+    },
+    {
+      "claim_id": "4c0cd880-b19a-4083-8286-a30ca51de7c6",
+      "result_id": "ecf8733f-a2cc-4cd7-93fc-fb7799e379a7"
+    },
+    {
+      "claim_id": "d0910a31-e427-4887-82b0-ca40cc724e97",
+      "result_id": "ecf8733f-a2cc-4cd7-93fc-fb7799e379a7"
+    },
+    {
+      "claim_id": "d6afba8f-5ba7-4ee0-91c9-3ba62c767ce6",
+      "result_id": "ecf8733f-a2cc-4cd7-93fc-fb7799e379a7"
+    },
+    {
+      "claim_id": "601cbcd6-c721-4b1f-9b1b-cc069772907a",
+      "result_id": "ecf8733f-a2cc-4cd7-93fc-fb7799e379a7"
+    },
+    {
+      "claim_id": "5624b68e-b7c2-4f20-8fb1-6f53620bba1b",
+      "result_id": "1a55d2b4-aa7d-45cd-9d94-2b4e09af0725"
+    },
+    {
+      "claim_id": "0c39dd46-50b9-4d98-af05-99b04d7044ac",
+      "result_id": "1a55d2b4-aa7d-45cd-9d94-2b4e09af0725"
+    },
+    {
+      "claim_id": "d6101c9c-4007-4c70-8f83-40125277831a",
+      "result_id": "1a55d2b4-aa7d-45cd-9d94-2b4e09af0725"
+    },
+    {
+      "claim_id": "d2249aff-36a8-4e6a-8f77-1dfb7813eddd",
+      "result_id": "1a55d2b4-aa7d-45cd-9d94-2b4e09af0725"
+    },
+    {
+      "claim_id": "119a4147-975a-4772-b9f1-65a4a9d93f1a",
+      "result_id": "1a55d2b4-aa7d-45cd-9d94-2b4e09af0725"
+    },
+    {
+      "claim_id": "c9a8d10d-140e-4cb2-ae6e-4da3b927f352",
+      "result_id": "40fe1710-32d9-4d6e-8902-c0693a120f3b"
+    },
+    {
+      "claim_id": "5a30a1ca-7e20-45d3-bfab-0cdfbfd9207f",
+      "result_id": "40fe1710-32d9-4d6e-8902-c0693a120f3b"
+    },
+    {
+      "claim_id": "e6380d0a-5840-49bf-9da4-b46aa0bf98e3",
+      "result_id": "40fe1710-32d9-4d6e-8902-c0693a120f3b"
+    },
+    {
+      "claim_id": "d7a4468a-4445-4e1a-8dba-37d643efe295",
+      "result_id": "40fe1710-32d9-4d6e-8902-c0693a120f3b"
+    },
+    {
+      "claim_id": "0553bb80-83d0-4b08-84d2-e4be1bdb166b",
+      "result_id": "40fe1710-32d9-4d6e-8902-c0693a120f3b"
+    },
+    {
+      "claim_id": "bb16283e-8f59-43ef-8da1-86a56488811d",
+      "result_id": "40fe1710-32d9-4d6e-8902-c0693a120f3b"
+    },
+    {
+      "claim_id": "1fbb11de-d974-4816-85cc-a7b1c7b1b305",
+      "result_id": "40fe1710-32d9-4d6e-8902-c0693a120f3b"
+    },
+    {
+      "claim_id": "fd737e08-ac9f-41e6-8e2e-97b24c308fbd",
+      "result_id": "40fe1710-32d9-4d6e-8902-c0693a120f3b"
+    },
+    {
+      "claim_id": "52e4f14b-4432-448a-b94e-dbb20dfc7d6c",
+      "result_id": "09a014d6-c179-40b4-9dfb-958bedc89d26"
+    },
+    {
+      "claim_id": "02f0a51e-df2c-4420-a6b3-8f3d86c48887",
+      "result_id": "09a014d6-c179-40b4-9dfb-958bedc89d26"
+    },
+    {
+      "claim_id": "46257a58-3fbb-47e6-83f1-82cd0786cc34",
+      "result_id": "09a014d6-c179-40b4-9dfb-958bedc89d26"
+    },
+    {
+      "claim_id": "b5dd3b02-b26c-43f6-a437-50bdc720c290",
+      "result_id": "09a014d6-c179-40b4-9dfb-958bedc89d26"
+    },
+    {
+      "claim_id": "54685ba1-caa3-454f-bbc3-80969e5d219c",
+      "result_id": "09a014d6-c179-40b4-9dfb-958bedc89d26"
+    },
+    {
+      "claim_id": "3711989b-8738-4f1b-8afa-7cf7fab1182a",
+      "result_id": "09a014d6-c179-40b4-9dfb-958bedc89d26"
+    },
+    {
+      "claim_id": "4028855f-ab54-4fbe-a28a-eebe33cdaf01",
+      "result_id": "09a014d6-c179-40b4-9dfb-958bedc89d26"
+    },
+    {
+      "claim_id": "4182f2b1-ff49-45ad-90cc-cb97c5425bae",
+      "result_id": "09a014d6-c179-40b4-9dfb-958bedc89d26"
+    },
+    {
+      "claim_id": "c25763f1-512b-48bb-a2a7-7160519eb91a",
+      "result_id": "ff8af7c2-604a-4c5e-8ddc-2c3490eff020"
+    },
+    {
+      "claim_id": "b5e808dc-1214-478c-8e29-a25ff5e37ca8",
+      "result_id": "ff8af7c2-604a-4c5e-8ddc-2c3490eff020"
+    },
+    {
+      "claim_id": "7892686f-c55c-4fab-a241-b93435e4ec86",
+      "result_id": "ff8af7c2-604a-4c5e-8ddc-2c3490eff020"
+    },
+    {
+      "claim_id": "1eea07be-8038-4eef-aadd-de94a158025c",
+      "result_id": "ff8af7c2-604a-4c5e-8ddc-2c3490eff020"
+    },
+    {
+      "claim_id": "ad5a803e-9dd3-4510-8727-a933e601f31e",
+      "result_id": "ff8af7c2-604a-4c5e-8ddc-2c3490eff020"
+    },
+    {
+      "claim_id": "62b1522d-9fcb-4b01-a0d5-35552c4eac0f",
+      "result_id": "ff8af7c2-604a-4c5e-8ddc-2c3490eff020"
+    },
+    {
+      "claim_id": "b448b393-b46b-447d-bc2c-154d855d6b77",
+      "result_id": "ff8af7c2-604a-4c5e-8ddc-2c3490eff020"
+    },
+    {
+      "claim_id": "83d99917-2a93-4e83-a69f-bf8f0d881ea7",
+      "result_id": "ff8af7c2-604a-4c5e-8ddc-2c3490eff020"
+    },
+    {
+      "claim_id": "dae7a697-d6ba-4d72-9b53-143229b77379",
+      "result_id": "ff8af7c2-604a-4c5e-8ddc-2c3490eff020"
+    },
+    {
+      "claim_id": "f2e7cfb6-d8e1-45f5-87c7-53e6eb013468",
+      "result_id": "ff8af7c2-604a-4c5e-8ddc-2c3490eff020"
+    },
+    {
+      "claim_id": "91d08d39-9b13-42d4-99eb-8c66e333f0f2",
+      "result_id": "ff8af7c2-604a-4c5e-8ddc-2c3490eff020"
+    },
+    {
+      "claim_id": "51800812-01e9-4480-bab9-5cfbe0408cbe",
+      "result_id": "817317fe-45d9-4863-8385-283a51aa173e"
+    },
+    {
+      "claim_id": "00e5b3e1-76ad-471a-98b2-9fdcc1b4c145",
+      "result_id": "817317fe-45d9-4863-8385-283a51aa173e"
+    },
+    {
+      "claim_id": "a2adeaef-6b55-4d64-ab14-8ee8a9d46451",
+      "result_id": "817317fe-45d9-4863-8385-283a51aa173e"
+    },
+    {
+      "claim_id": "9e4954bf-dd9e-4c4e-ae9b-14a0ad2f5563",
+      "result_id": "817317fe-45d9-4863-8385-283a51aa173e"
+    },
+    {
+      "claim_id": "3dea7970-560c-4221-bbca-9046954f9f73",
+      "result_id": "817317fe-45d9-4863-8385-283a51aa173e"
+    },
+    {
+      "claim_id": "5cde294e-3f46-4658-92d9-047431e8ff20",
+      "result_id": "817317fe-45d9-4863-8385-283a51aa173e"
+    },
+    {
+      "claim_id": "1536b0dc-f425-4107-b3e3-365f6edcbb3d",
+      "result_id": "817317fe-45d9-4863-8385-283a51aa173e"
+    },
+    {
+      "claim_id": "c8f8230c-659e-4b12-840c-61dbdaa2a93a",
+      "result_id": "817317fe-45d9-4863-8385-283a51aa173e"
+    },
+    {
+      "claim_id": "59816f6f-cdf8-45fb-9267-01ec44c071df",
+      "result_id": "817317fe-45d9-4863-8385-283a51aa173e"
+    },
+    {
+      "claim_id": "0a0ad6b3-0e8f-4eee-a6c7-950d3eda73c7",
+      "result_id": "817317fe-45d9-4863-8385-283a51aa173e"
+    },
+    {
+      "claim_id": "e817c9e7-9f46-45da-bbe8-71e9eebb3d30",
+      "result_id": "817317fe-45d9-4863-8385-283a51aa173e"
+    },
+    {
+      "claim_id": "e2e70a62-2f30-4e1c-9da1-2c90349e3765",
+      "result_id": "717172ad-83dc-459e-b110-60e529271bd5"
+    },
+    {
+      "claim_id": "a843cf1e-3579-4ebb-b2e7-334cd60573c1",
+      "result_id": "717172ad-83dc-459e-b110-60e529271bd5"
+    },
+    {
+      "claim_id": "eb8f0140-fa1d-4781-911b-9be2b00c9174",
+      "result_id": "e5b8cf71-5eb0-4ee0-933d-d7fcdf340e73"
+    },
+    {
+      "claim_id": "d83d930f-ad49-4944-b0d5-d37638e749c2",
+      "result_id": "e5b8cf71-5eb0-4ee0-933d-d7fcdf340e73"
+    },
+    {
+      "claim_id": "a45fd2b8-0658-48db-9913-793dea3fc3f0",
+      "result_id": "e5b8cf71-5eb0-4ee0-933d-d7fcdf340e73"
+    },
+    {
+      "claim_id": "639dcf17-4599-4db4-b9d3-2d961ec32271",
+      "result_id": "e5b8cf71-5eb0-4ee0-933d-d7fcdf340e73"
+    },
+    {
+      "claim_id": "5f2aeaab-6720-4449-89d5-d6fabe3dbe03",
+      "result_id": "e5b8cf71-5eb0-4ee0-933d-d7fcdf340e73"
+    },
+    {
+      "claim_id": "8a638691-e2f2-4c77-b232-012daddda35b",
+      "result_id": "e5b8cf71-5eb0-4ee0-933d-d7fcdf340e73"
+    },
+    {
+      "claim_id": "05042c0d-d29d-4183-a586-9c86eab51ec6",
+      "result_id": "e5b8cf71-5eb0-4ee0-933d-d7fcdf340e73"
+    },
+    {
+      "claim_id": "c89f7a6e-cba6-44ba-b494-e9e82d74ffcd",
+      "result_id": "a27a463d-eb35-4da8-9e2e-cbd788bfb63f"
+    }
+  ],
+  "comparisons": []
+}

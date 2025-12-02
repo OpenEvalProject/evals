@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C73",
+      "C41"
+    ],
+    "result": "Viral expression of hM4Di-mCherry and eGFP was selective to direct-pathway (D1R-Cre) and indirect-pathway (D2R-Cre) striatal neurons, with minimal labeling of interneurons. Histological examination confirmed expression in dorsal striatum with appropriate downstream projections (EP for D1R, GP for D2R), and similar low percentages of parvalbumin and choline acetyltransferase co-labeling across mouse lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 provide direct histological evidence shown in Figure 1, and C73 provides quantitative confirmation that interneuron labeling was minimal and similar between lines (p>0.05). Claim C41 appropriately concludes that interneuron contributions are unlikely given the similar, small percentages. The anatomical targeting is well-validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "All animal groups (CNO, DMSO, eGFP-CNO in both D1R-Cre and D2R-Cre mice) showed similar learning performance during initial acquisition (stage 1), reversal (stage 2), and across-session reversal (stage 3) in the reversal task, with no significant differences between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 report behavioral data with appropriate statistical analysis (two-way ANOVA showing no significant main effects or interactions in stage 3: p=0.101, 0.141, 0.858). This establishes that basic learning and simple reversal are intact, providing important baseline for subsequent within-session reversal deficits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C17"
+    ],
+    "result": "Inactivation of either D1R- or D2R-expressing striatal neurons (CNO group) significantly impaired performance in stages 4 and 5 of the reversal task, which involved within-session reversals. Performance deficits were observed in both D1R-Cre and D2R-Cre mice compared to DMSO and eGFP-CNO controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 provide strong statistical evidence with highly significant main effects of animal group (p=2.3\u00d710\u207b\u00b9\u00b3 and 1.1\u00d710\u207b\u00b9\u2070) and multiple post-hoc comparisons showing CNO impairment in both mouse lines. Claim C16 addresses the important confound of trial duration. The convergence of evidence from multiple control groups strengthens the conclusion in C17.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "In the dynamic two-armed bandit (TAB) task, inactivation of either D1R- or D2R-expressing striatal neurons impaired overall performance, as measured by significant main effects of drug on proportion of rewarded trials P(R) and higher-reward-probability target choices P(H), without significant mouse line \u00d7 drug interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 provide appropriate within-subject statistical analyses showing significant drug effects (p=1.5\u00d710\u207b\u2076 and 2.1\u00d710\u207b\u2076) without interactions (p=0.471 and 0.984). Claim C18 validates the modeling approach with visual evidence (Figure 3a). The lack of interaction effects motivates the subsequent state-specific analyses that reveal differential contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "State-specific analysis revealed differential effects of D1R vs D2R neuronal inactivation: in the dynamic state, CNO significantly decreased P(R) in D2R-Cre but not D1R-Cre mice; in the steady state, CNO significantly decreased P(H), P(LS), and P(WS) in D1R-Cre but not D2R-Cre mice, indicating distinct contributions to different phases of decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 report significant mouse line \u00d7 drug interactions with appropriate post-hoc tests. The pattern shows clear dissociation: D2R effects in dynamic state (learning phase) and D1R effects in steady state (action selection phase). Statistical rigor is demonstrated by permutation analysis showing this pattern is unlikely by chance (0/100 permutations). The state-dependent dissociation is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C37",
+      "C38"
+    ],
+    "result": "Q-learning model-based analysis revealed a double dissociation: CNO significantly increased randomness in action selection (\u03b2) in D1R-Cre but not D2R-Cre mice (p=2.4\u00d710\u207b\u2074 vs p=0.842), while CNO significantly decreased learning rate (\u03b1) in D2R-Cre but not D1R-Cre mice (p=0.001 vs p=0.941). These findings were consistent across multiple model variants, indicating that D1R neurons are critical for value-dependent action selection and D2R neurons are critical for value learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 provide strong statistical evidence for the double dissociation with significant interactions and selective post-hoc effects. Claim C30 demonstrates robustness across 6 model variants (Figure 4 supplement 1), addressing concerns about model-specific artifacts. Claims C31-C32 and C37-C38 appropriately interpret these findings. This is the core computational result supporting distinct functional roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "Analysis of model-derived action values showed that in D2R-Cre mice, CNO significantly reduced Qhigh in the dynamic state (p=1.3\u00d710\u207b\u2074) but not Qlow, and had no effect on either value in the steady state. In D1R-Cre mice, CNO had no significant effects on action values in either state, consistent with the proposed roles in learning vs action selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C36 provide model-based predictions that align with the parameter estimates. The selective effect on Qhigh but not Qlow in D2R mice during learning (C33-C34) supports impaired learning, while the lack of steady-state effects (C36) confirms values eventually converge. The absence of D1R effects on values is consistent with a pure action selection deficit. This provides convergent validation of the model interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "D2R-expressing striatal neurons show preferential contributions to learning from positive outcomes. The effect on Qhigh was much greater than on Qlow after block transitions, and models with separate learning rates showed significant reduction in \u03b1p but not \u03b1n following D2R inactivation, indicating a more important role in positive than negative outcome learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 provide direct evidence from action value analysis and extended modeling (models 3, 5, 6 in Figure 4 supplement 1). The differential effects on Qhigh vs Qlow (C51) and \u03b1p vs \u03b1n (C52) converge on the same conclusion. Claims C35 and C53 appropriately interpret these findings with supporting citations. This refines understanding of D2R function beyond general learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C40",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Control analyses ruled out potential confounds: performance deficits could not be attributed to differences in trial duration (C16), selective effects between mouse lines argue against non-specific CNO effects (C40), and animals did not estimate reversal timing as evidenced by flat probability of choosing the lower-reward target before block transitions (C74-C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by Figure 2 supplement 1 showing trial duration-matched analyses. Claim C40 makes a logical inference from the differential effects pattern. Claims C74-C75 provide statistical evidence (non-significant slopes) with C76 drawing the appropriate conclusion. These controls strengthen confidence in the main findings by addressing alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The study concludes that dorsal striatal direct (D1R-expressing) and indirect (D2R-expressing) pathways play distinct, indispensable roles in two different steps of value-based decision making: value-dependent action selection and value learning, respectively, suggesting differential contributions rather than purely antagonistic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C39, C70-C72) are well-supported by the convergent evidence from behavioral dissociations (C22-C27), model-based analysis (C28-C32), and action value predictions (C33-C36). The double dissociation is robust across multiple analyses and control conditions. The conclusion represents a significant advance in understanding striatal pathway functions in decision-making.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C64"
+    ],
+    "result": "The current results are inconsistent with prior proposals that direct- and indirect-pathway neurons mediate learning from positive and negative outcomes respectively. Instead, inactivation of D1R neurons had no effect on learning rate, and inactivation of D2R neurons impaired learning from positive outcomes, revealing different functional roles than previously theorized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 appropriately contrasts current findings with Frank et al. (2004, 2007) proposals, citing specific evidence (no D1R effect on learning rate, D2R effects on positive learning). Claim C64 summarizes the discrepancy. The evidence from C28-C29 and C50-C53 directly contradicts the prior model. This represents an important revision of theoretical understanding, though the authors acknowledge complexity in reconciling with stimulation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The current findings are consistent with prior literature showing D2R and indirect pathway involvement in value learning and reversal learning, including evidence from D2R-knockout mice, pharmacological manipulations, and neural recording studies showing stronger reward signals in indirect pathway neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 cite multiple converging lines of prior evidence (knockout studies, inactivation studies, pharmacology, neural recordings) that align with the current D2R/indirect pathway role in learning. Claim C48 appropriately synthesizes this consistency. The citations appear appropriate and the integration with prior work strengthens the interpretation, though the authors should verify the accuracy of cited findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The results support a gain control framework where striatal pathways modulate the gain of decision-making processes: changing \u03b2 (randomness) is equivalent to changing gain of value-dependent action selection, and changing \u03b1 (learning rate) is equivalent to changing gain of reward prediction error-dependent learning. This extends prior proposals about dopamine and striatal gain control from motor commands to value-based decision making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 correctly describe the mathematical properties of the Q-learning model parameters. Claims C54-C56 cite relevant prior work on gain control. Claim C59 makes an appropriate conceptual synthesis extending gain control from motor to cognitive domains. However, this remains somewhat speculative as the study used chronic inactivation rather than dynamic gain modulation. The framework is plausible but requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors acknowledge apparent inconsistencies between current inactivation results (showing selective deficits) and prior stimulation studies (showing antagonistic effects), proposing that both pathways may be involved in both processes but with differential necessity, or that strong stimulation produces non-physiological indirect effects. They note that pathway interactions are complex and not simply antagonistic or synergistic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 offer speculative explanations for discrepancies with stimulation literature (C62-C63), but these remain untested hypotheses. Claims C67-C68 cite evidence of complexity, but this doesn't resolve the inconsistency. The authors appropriately acknowledge limitations and complexity, but the mechanistic explanation for why inactivation shows selectivity while stimulation shows antagonism remains unclear. This represents an important unresolved question requiring future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The study inactivated both dorsomedial and dorsolateral striatum, which are known to make different contributions to behavioral control, representing a limitation in anatomical specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 accurately describes the anatomical extent of inactivation and appropriately cites literature on functional differences between striatal subregions. This is an important methodological limitation that could affect interpretation, as dorsomedial and dorsolateral regions are associated with goal-directed vs habitual control. Future studies with more restricted inactivation would be valuable.",
+    "result_type": "MINOR"
+  }
+]

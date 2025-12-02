@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C34",
+      "C35"
+    ],
+    "result": "The cryo-EM structure of the UMOD filament core was determined at 3.5 \u00c5 resolution, revealing that it is comprised of the bipartite zona pellucida (ZP) module arranged in a helix with a rise of ~65 \u00c5 and a twist of ~180\u00b0. The asymmetric unit consists of ZPN, ZPC, and the inset linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C34-C35 collectively describe the primary structural determination result. The 3.5 \u00c5 resolution structure with defined helical parameters is supported by comprehensive cryo-EM data collection (C21-C25), rigorous image processing (C26-C33), and iterative model building and refinement procedures (C42-C51). The resolution and structural parameters are directly measured from experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The ZPN and ZPC subdomains of each UMOD monomer are separated by a long linker that mediates filament assembly through \u03b2-sheet complementation with both the preceding ZPC and following ZPN subdomains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 describe the key structural feature enabling UMOD polymerization. These interactions are directly observed in the 3.5 \u00c5 resolution cryo-EM structure and are supported by the detailed model building and refinement procedures described in C42-C51. The \u03b2-sheet complementation mechanism is a structural observation from the electron density map.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The unique UMOD filament architecture suggests a novel assembly mechanism in which subunit incorporation could be synchronized with proteolytic cleavage of the C-terminal pro-peptide that anchors assembly-incompetent UMOD precursors to the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14-C16 propose an assembly mechanism based on the structural findings. However, C15 explicitly uses speculative language ('suggests', 'could be'), indicating this is a hypothesis rather than experimentally demonstrated. No functional or biochemical experiments are presented to validate the proposed synchronization between subunit incorporation and proteolytic cleavage, making this interpretation uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "UMOD filaments exhibit intrinsic structural flexibility, as demonstrated by 3D heterogeneous refinement yielding multiple distinct class-averages and 3D variability analysis revealing yaw/pitch movements and elongation along the filament axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C54-C59 describe the flexibility analysis using complementary approaches (3D classification in both cryoSPARC and cisTEM, plus 3DVA). The observation of multiple distinct 3D class-averages (C32) and specific movement patterns in 3DVA components (C57, C59) provide converging evidence for intrinsic flexibility. The methods are appropriately described and the analysis includes proper controls (C58 identifies an artifact).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "An alternative processing approach using cisTEM yielded a 4.7 \u00c5 resolution map focused on several repeat units, from which helical parameters (rise: 60-67 \u00c5, twist: 175-185\u00b0) were estimated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 describe a complementary analysis pipeline that validates the primary structural findings. The cisTEM approach uses independent particle picking (manual vs. TOPAZ), different classification strategies, and yields consistent helical parameters with the primary analysis. This orthogonal validation strengthens confidence in the structural determination, though at lower resolution than the primary 3.5 \u00c5 map.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Human UMOD fibers were purified from a healthy donor using established protocols, with specific sample preparation procedures for cryo-EM including use of the second morning micturition and application of 2.5 \u00b5M UMOD to cryo-EM grids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 describe the sample preparation methodology. The purification follows a previously published protocol (C17, C20), and specific methodological details are provided (C18, C19, C21). The use of second morning micturition (C19) is a specific quality control measure. These methods are standard and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Cryo-EM data were collected on a Titan Krios microscope at 300 kV, recording 9,543 movies total from two grids at 130,000x magnification with 1.084 \u00c5 pixel size and ~45 e-/\u00c5\u00b2 total dose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 describe the data collection parameters in detail. The specifications are standard for high-resolution cryo-EM and are appropriate for the achieved resolution. The use of two separate grids (C23) provides technical replication. All parameters are clearly stated and fall within accepted ranges for cryo-EM structure determination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33"
+    ],
+    "result": "Image processing using MotionCor2, Gctf, and cryoSPARC involved TOPAZ-based particle picking of 1.3 million particles, 2D classification yielding 723,000 particles, and selection of 145,000 particles from the most populated 3D class for final refinement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31, C33 describe a standard and rigorous cryo-EM processing workflow. The use of neural network-based particle picking (TOPAZ, C29-C30), multiple rounds of 2D classification (C31), and 3D heterogeneous refinement (C33) are appropriate methods. The progressive reduction in particle numbers (1.3M \u2192 723K \u2192 145K) through quality filtering is typical and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Model building used the UMOD crystal structure (PDB: 4WRN) as a starting point, followed by rigid-body fitting, manual building in Coot/ISOLDE, and iterative refinement using PHENIX and RosettaCM with appropriate validation, though residues 462-473 could not be confidently built.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51 describe a comprehensive and rigorous model building and refinement workflow. The use of a crystal structure as starting model (C42), iterative manual and automated refinement (C43-C47), and proper validation tools (C50-C51) are appropriate. The acknowledgment of a region that could not be built (C48) demonstrates scientific rigor. Three rounds of refinement (C47) with progressively tighter restraints is standard practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Genetic variation analysis was performed using GnomAD v2.1.1 database (141,456 individuals), filtering for missense variants in UMOD transcript ENST00000302509.8, with variants normalized using the PAM250 matrix and mapped onto the structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 describe a systematic approach to analyzing population genetic variation in the context of the structure. The use of GnomAD (C60-C62), appropriate filtering for missense variants (C63-C64), and normalization using PAM250 matrix (C66) are standard bioinformatics approaches. The interface definition using 8 \u00c5 cutoff (C67) is reasonable for structural analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "UMOD is the most abundant protein in human urine, forms filamentous homopolymers that encapsulate uropathogens, plays a critical role in innate immunity against urinary tract infections, but the structural basis of polymerization was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide background context from established literature. These are stated as prior knowledge without experimental validation in this manuscript. While no citations are provided in the abstract for C1-C5, these are well-established facts in the field. Claim C6 appropriately identifies the knowledge gap addressed by this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Structural figures were prepared using PyMol v2.4 and UCSF ChimeraX 0.93 for visualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 describe the software used for figure preparation. Both are standard, widely-used visualization tools appropriate for structural biology. Software versions are specified, which aids reproducibility.",
+    "result_type": "MINOR"
+  }
+]

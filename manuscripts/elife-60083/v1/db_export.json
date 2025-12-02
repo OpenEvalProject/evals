@@ -1,0 +1,1252 @@
+{
+  "submission": {
+    "id": "7100ffda-5012-4979-9bc0-fb2ab35ee15d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:08:19.587700Z",
+    "updated_at": "2025-12-02T21:08:19.587700Z"
+  },
+  "content": [
+    {
+      "id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "submission_id": "7100ffda-5012-4979-9bc0-fb2ab35ee15d",
+      "content_type": "manuscript",
+      "content_text": "# Arrayed CRISPRi and quantitative imaging describe the morphotypic landscape of essential mycobacterial genes\n\n## Authors\n\n- Timothy J de Wet<sup>1</sup> ([ORCID: 0000-0002-3978-5322](https://orcid.org/0000-0002-3978-5322)) \u2020\n- Kristy R Winkler<sup>1</sup> ([ORCID: 0000-0003-3098-3290](https://orcid.org/0000-0003-3098-3290))\n- Musa Mhlanga<sup>2</sup>\n- Valerie Mizrahi<sup>1</sup> ([ORCID: 0000-0003-4824-9115](https://orcid.org/0000-0003-4824-9115))\n- Digby F Warner<sup>1</sup> ([ORCID: 0000-0002-4146-0930](https://orcid.org/0000-0002-4146-0930)) \u2020\n\n### Affiliations\n\n1. SAMRC/NHLS/UCT Molecular Mycobacteriology Research Unit, Department of Pathology, University of Cape Town Cape Town South Africa\n2. Institute of Infectious Disease and Molecular Medicine, University of Cape Town Cape Town South Africa\n3. Department of Integrative Biomedical Sciences, University of Cape Town Cape Town South Africa\n4. Wellcome Centre for Infectious Diseases Research in Africa, University of Cape Town Cape Town South Africa\n\n\u2020 Corresponding author\n\n## Abstract\n\nMycobacterium tuberculosis possesses a large number of genes of unknown or predicted function, undermining fundamental understanding of pathogenicity and drug susceptibility. To address this challenge, we developed a high-throughput functional genomics approach combining inducible CRISPR-interference and image-based analyses of morphological features and sub-cellular chromosomal localizations in the related non-pathogen, M. smegmatis. Applying automated imaging and analysis to 263 essential gene knockdown mutants in an arrayed library, we derive robust, quantitative descriptions of bacillary morphologies consequent on gene silencing. Leveraging statistical-learning, we demonstrate that functionally related genes cluster by morphotypic similarity and that this information can be used to inform investigations of gene function. Exploiting this observation, we infer the existence of a mycobacterial restriction-modification system, and identify filamentation as a defining mycobacterial response to histidine starvation. Our results support the application of large-scale image-based analyses for mycobacterial functional genomics, simultaneously establishing the utility of this approach for drug mechanism-of-action studies.\n\n## Introduction\n\nThe acquisition of genomic data continues to exceed significantly the pace at which corresponding functional information can be obtained (Kemble et al., 2019). This aphorism applies to Mycobacterium tuberculosis, etiological agent of tuberculosis (TB) and the leading cause of death globally from an infectious disease (WHO, 2019). Despite considerable activity (Satta et al., 2018) in the two decades subsequent to the pioneering release of the first complete mycobacterial whole-genome sequence (Cole et al., 1998), the M. tuberculosis genome still contains a large number of genes of unknown or hypothetical function (Mazandu and Mulder, 2012; Satta et al., 2018). Moreover, functional validation is lacking even for many annotated genes, undermining fundamental understanding of mycobacterial metabolic and cellular functions which impact pathogenicity and drug susceptibility. There is consequently a pressing need for tractable, high-throughput approaches that can inform mycobacterial gene function rapidly and at scale.\n\nThe most commonly applied functional genomics methods in bacteria \u2013 transposon-sequencing (Tn-Seq) (van Opijnen and Camilli, 2013) and, increasingly, CRISPR-interference (CRISPRi)-Seq (de Wet et al., 2018; Wang et al., 2018; Lee et al., 2019) \u2013 combine pooled mutagenesis with next-generation sequencing, returning quantitative estimates of fitness (via relative abundance) of mutants in a particular growth condition. Common to these approaches is that they report on the capacity of the cells to produce biomass, thereby excluding other \u2013 potentially subtler \u2013 measures of the physiological consequences of target gene disruption. To overcome this limitation, some studies have utilized novel combinations of pooled approaches with cellular stains and sorting (Rego et al., 2017; Baranowski et al., 2018), or with imaging and in situ sequencing (Camsund et al., 2020) to provide alternative readouts of genetic function. However, these methods are restricted in their resolution and throughput.\n\nAs for many bacterial pathogens, mycobacterial functional genomics has focused primarily on the identification of essential genes, employing Tn-based investigations under a variety of conditions (Sassetti et al., 2003; DeJesus et al., 2017), in different strain (Carey et al., 2018) and mutant (Kieser et al., 2015) backgrounds, and in models of infection (Sassetti and Rubin, 2003; Rengarajan et al., 2005). The development of genetic tools for conditional knockdown mutagenesis via targeted gene silencing (utilizing engineered hypomorphic strains carrying promoter replacement and/or targeted protein-degradation mutations) has subsequently enabled gene-by-gene explorations of essential gene function (Kim et al., 2011; Kim et al., 2013; Schnappinger and Ehrt, 2014). However, while these approaches have ensured increasingly refined (conditional) essentiality predictions (DeJesus et al., 2017), there is still an absence of whole-cell functional data for the majority of essential genes.\n\nHere, we couple key recent advances in mycobacterial CRISPRi (Rock et al., 2017) with quantitative microscopic imaging (Ducret et al., 2016) in developing a platform enabling whole-cell characterization of essential gene knockdown in the non-pathogenic model mycobacterium, M. smegmatis. Leveraging available gene essentiality and CRISPRi guide efficacy data (de Wet et al., 2018), we describe the construction of an arrayed collection of 276 validated CRISPRi mutants targeting essential M. smegmatis homologs of M. tuberculosis genes. Applying high-throughput quantitative imaging to the arrayed library, we implement a bespoke analytic pipeline to probe essential gene function at scale. From the \u2018phenoprints\u2019 generated via this approach, we demonstrate the potential for preliminary assignment of gene function and illustrate the capacity to analyze metabolic and macromolecular synthesis pathways using clustering analyses. Notably, these observations provide evidence supporting a mycobacterial restriction-modification system, and identify filamentation as a defining mycobacterial response to histidine starvation but not to other amino acid auxotrophies. Finally, we demonstrate the potential utility of this approach in elucidating antimicrobial mechanism-of-action (MOA), supporting its potential incorporation as a complementary tool in current TB drug discovery pipelines. Consistent with our intention to generate a community-accessible resource, all data from the screen are made available via an interactive database (https://timdewet.shinyapps.io/MorphotypicLanscape/).\n\n## Results\n\n### Construction of an arrayed CRISPRi library targeting essential mycobacterial genes\n\nWe aimed to construct an arrayed library of inducible CRISPRi mutants (Figure 1A) targeting essential M. smegmatis genes (de Wet et al., 2018). To this end, we leveraged an optimized mycobacterial CRISPRi system (Rock et al., 2017) and previously generated genome-wide CRISPRi-Seq data (de Wet et al., 2018) from which we were able to identify the set of highest efficiency single-guide (sg)RNAs targeting 294 essential M. smegmatis genes with direct M. tuberculosis homologs (Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig1-v1.jpg)\n\n**Figure 1.:** (A) An arrayed CRISPRi library was designed to target 294 essential M. smegmatis genes. For each gene, the highest efficiency sgRNA was identified from a previous pooled CRISPRi-Seq screen (de Wet et al., 2018) and synthesized as an annealed oligonucleotide. Cloning was performed at scale, followed by electroporation into an M. smegmatis ParB-mCherry reporter strain (Santi and McKinney, 2015). (B) A total of 276 sequence-verified transformants produced a greater than twofold decrease in colony size (Kritikos et al., 2017) when spotted on 7H10 agar containing the inducer, anhydrotetracycline (ATc) compared to the same cells spotted onto solid medium without ATc, confirming ATc-dependent growth inhibition.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig1-figsupp1-v1.jpg)\n\nCRISPRi produces polar effects on downstream genes in polycistronic operons (Rock et al., 2017). To ascertain operonic structure directly, we utilized published data on the transcriptional landscape of wild-type M. smegmatis mc2155 during exponential growth in standard laboratory media (Martini et al., 2019). Of our targeted set of 294 genes, 229 genes (~78%) were not located in identified operons (Supplementary file 2). For these genes, it was expected that any knockdown phenotype should solely reflect the impact of silencing the targeted essential gene. Of the remaining 65 genes within operons, 20 possessed downstream transcriptional start sites which would be expected to abrogate polar effects. This left 34 genes whose genomic context was likely to complicate the interpretation of any knockdown phenotype. We nevertheless considered this group of 34 genes worth pursuing given our ability to evaluate the results in the context of the corresponding essentiality calls from Tn-Seq (Dragset et al., 2019) and in comparison to phenotypes observed for related (or \u2018shared pathway\u2019) genes.\n\nFollowing large-scale cloning, all 294 CRISPRi constructs were electroporated into an M. smegmatis ParB-mCherry reporter mutant (Santi and McKinney, 2015). This strain was chosen as background to enable visualization of the oriC proximate region of the chromosome during imaging assays, thereby providing information about chromosome location dynamics and copy number as a function of essential gene knockdown. To validate the identity and essentiality of each M. smegmatis mutant strain, we performed Sanger sequencing of the inserted sgRNA and whole-cell spotting assays of ATc sensitivity. Cloning was repeated for mutants which failed the validation screen. This process yielded 276 validated CRISPRi mutants (Figure 1B, Figure 1\u2014figure supplement 1), 93% of the initial target set. According to a review of the literature (Supplementary file 3), approximately 90% of the strains in our library lacked whole-cell morphological characterization\u00a0in either M. tuberculosis or M. smegmatis. Furthermore, almost 40% of the targeted genes and their protein products had no biochemical or structural information (Supplementary file 3).\n\n### A quantitative imaging pipeline for mycobacteria\n\nHigh-throughput, quantitative imaging has been productively utilized in a number of bacterial systems to rapidly characterize the impact of genetic alterations on cellular function (Peters et al., 2016; Liu et al., 2017; Campos et al., 2018) or to determine antimicrobial MOA (Nonejuie et al., 2013). Until very recently (Smith et al., 2020), an equivalent approach had not been described for mycobacteria. Therefore, on initiating this study, we chose to investigate the use of imaging to phenotype the CRISPRi mutant library following ATc-dependent transcriptional silencing. This required the development of tools for the extraction of large-scale quantitative data describing mycobacterial cell morphology.\n\nTo determine the optimal duration of ATc exposure, we performed time-lapse microscopy of knockdown mutants of\u00a0three well-characterized essential genes (Videos 1 and 2) \u2013 the cell-division mediator, ftsZ (Dziadek et al., 2003), the elongasome anchor, wag31 (Kang et al., 2008), and the inosine monophosphate dehydrogenase, guaB2 (Singh et al., 2017; Park et al., 2017). Time-lapse microscopy established that fully penetrant phenotypes were manifest at 18 hr post ATc exposure for all three genes. This represents approximately 6\u20137 doubling times of the wild-type M. smegmatis mc2155 parental strain (Logsdon et al., 2017), or a dilution factor of pre-existing protein of approximately 64 to 128 (26 - 27)-fold. For both wag31 and ftsZ mutants, lytic cell death was observable after the 18 hr time-point. While guaB2 knockdown did not produce as distinctive a visual phenotype as the other two genes, the formation of minicells and a decline in growth rate was evident from 18 hr. Although this test set comprised only three mutants, we were encouraged that, for these essential genes with distinct cellular functions, the 18 hr timepoint appeared suitable to ensure sufficient knockdown and dilution of pre-existing protein to yield a detectable phenotype while maintaining suitable cell numbers for imaging. We therefore proceeded to apply the same experimental conditions in phenotyping the full library, recognizing that the pragmatic utilization of a single, \u2018terminal\u2019 endpoint might not be optimal for every mutant in the collection.\n\n![Video 1.](https://cdn.elifesciences.org/articles/60083/elife-60083-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/60083/elife-60083-video2.mp4.jpg)\n\nAdopting the 18 hr CRISPRi duration, we derived a protocol for medium-throughput imaging of batches of 24 strains (Figure 2A). Exponential-phase cultures were treated with ATc overnight for 18 hr prior to spotting onto 2% agarose pads for semi-automated imaging. Phase contrast and fluorescence images of ParB-mCherry localizations were captured for 263 of the 276 mutant strains. Additionally, an empty vector control strain was treated and repeatedly imaged in the same manner. To confirm the reproducibility of data obtained from the single-timepoint, single-replicate imaging workflow, we selected 137 strains for re-imaging on separate days.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig2-v1.jpg)\n\n**Figure 2.:** (A) Cells were exposed to ATc inducer for 18 hr before spotting onto large-format agarose pads for semi-automated imaging. (B) Image processing in MicrobeJ (Ducret et al., 2016) was combined with a manually trained Averaged Neural Network classifier to extract quantitative descriptions of bacterial morphologies and ParB protein localizations for 163559 cells across 263 gene-specific CRISPRi mutants and 27 empty vector controls. (C) Classifier performance was measured by Receiver Operating Characteristic (ROC) Area Under the Curve (AUC), returning good performance metrics. (D) Mean cell lengths were compared for 137 strains imaged as biological replicates on two separate occasions, and showed high reproducibility (r\u00a0=\u00a00.88, Pearson\u2019s).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Detailed descriptions of each feature can be found in the supplementary material of Ducret et al., 2016.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** A selection of mutants present in the library (Mutant 1) were chosen and targeted with a second sgRNA (Mutant 2). Phenotypes were broadly consistent.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Samples of the imaged library were analyzed with MicrobeJ and manually classified. A variety of models was trained using Caret, with fivefold cross validation, and tested on a reserved sample of the classified images. An averaged neural network was selected as the best performing model based on receiver-operating characteristic (ROC) area-under-the-curve.\n\nImage analysis tools such as MicrobeJ (Ducret et al., 2016) or Oufti (Paintdakhi et al., 2016) extract detailed quantitative descriptions of bacterial morphology and protein localization (Figure 2\u2014figure supplement 1). However, automated image analysis is complicated by out-of-focus objects, or cells that are too close together to separate adequately \u2013 a particular concern for mycobacteria with\u00a0their proclivity to clump (Cheng et al., 2014). To overcome these complications, machine\u00a0learning-based classifiers have been utilized in E. coli for post-processing clean-up (Campos et al., 2018).\n\nTo extract quantitative descriptions of mutant morphologies and ParB-mCherry localizations across our imaging dataset, we utilized the ImageJ package, MicrobeJ (Ducret et al., 2016), with a machine\u00a0learning-based post-processing clean-up (Figure 2B). For this purpose, we trained an Averaged Neural Network with 22,936 manually classified objects, sampled from across our imaging dataset. Receiver Operator Characteristic (ROC) analysis of our classifier produced an Area Under the Curve (AUC) of 0.952 when applied to a reserved test set (Figure 2C). Our curated dataset contains morphological descriptions for 163559 cells across all 263 imaged mutant and empty vector control strains, with a mean of 568 cells per mutant (ranging from a minimum of 24 to a maximum of 3861 cells). Reassuringly, when comparing the mean cell lengths of the 137 replica-imaged knockdown mutants following ATc induction, the imaging and analytic pipeline showed high reproducibility (Figure 2D, r\u00a0=\u00a00.88, Pearson\u2019s).\n\n### An atlas of morphological changes consequent on essential gene silencing\n\nThere are relatively few published descriptions of the morphological impacts of essential gene silencing (Supplementary file 3). We aimed to use our extracted imaging data to generate a comprehensive repository of morphological changes following CRISPRi-mediated essential gene knockdown in M. smegmatis. For each gene, a nearest-neighbor approach was applied to identify the representative morphotype which was in turn incorporated into an atlas of morphological changes consequent on essential gene silencing (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig3-v1.jpg)\n\n**Figure 3.:** Following imaging and extraction of quantitative data on cellular morphology, an approximate nearest-neighbor approach was utilized to identify a single representative cell which was closest to the mean values of the measured morphological features for each specific (clonal) mutant population. Representative cell contours and ParB localization patterns were extracted from MicrobeJ and utilized to assemble the atlas of morphological changes. Cells are grouped and colored according to downstream clustering (Figure 5).\n\nVisual inspection of the atlas revealed distinctive alterations in morphology in a large number of knockdown mutants. Moreover, it appeared that silencing certain cellular functions or pathways produced consistent morphological changes. In general, the responses could be broadly categorized into either elongation \u2013 occasionally with bulging and/or branching \u2013 or shortening, with a variety of alterations in cell width and roundness. For example, components of DNA metabolism (dna- prefix genes), the divisome (fts- genes), and protein translation (rpl- and rps- genes) produced cellular elongation. To our surprise, a filamentation response was also observed for components of the histidine biosynthesis pathway (his- genes), but not for other amino acid biosynthesis pathways. In contrast, components of cell-wall homeostasis \u2013 including peptidoglycan (ponA1), arabinogalactan (aftA) and mycolic acid synthesis (inhA and mmpL3) \u2013 were associated with distinctive shortening of cells, often in combination with bulging.\n\nTo quantitate these observations, we adapted an approach developed for E. coli (Campos et al., 2018). Single-cell data were reduced to normalized, gene-level descriptors of morphology. For each mutant, the mean and coefficient of variation (CV) of each morphological feature were extracted and normalized to the distribution of empty vector control samples with a Z-score transformation (Figure 4\u2014figure supplement 1A). For a particular mutant and feature, the Z-score reflects how many standard deviations the mutant feature is away from the mean of the control strains. That is, it provides a measure of the extent to which transcriptional inhibition of the targeted essential gene impacts a specific morphological characteristic. In total, 206 (78%) strains returned at least one Z-score\u00a0>3, or <-3. Certain gross changes in morphology were more frequently observed than others (Figure 4\u2014figure supplement 1B). For example, many mutants exhibited marked increases in mean curvature, roundness and feret (the calliper diameter). Conversely, few mutants exhibited major alterations in the number of ParB foci (maxima) per cell, suggesting that the number of replication origins (oriCs) per cell \u2013 and, by implication, ploidy \u2013 was maintained even under essential gene knockdown.\n\nTo test for associations between morphological changes and functional classes of genes, we extracted clusters of orthologous groups (COG) annotations for all 276 essential genes before testing for statistical enrichment with changes in morphology. For each morphological feature, we tested for COG enrichment of the mutants with Z-scores\u00a0>\u00a03 or<-3. This analysis revealed that statistical enrichments were largely consistent with visual inspection of the cell atlas (Figure 4\u2014figure supplement 2). For example, the filamentation phenotype of fts-, rpl- and dna- genes was reflected in the enrichment of cell cycle control (D), Translation (J) and DNA replication and repair (L) COGs with increases in length (means and CVs).\n\n### The morphotypic landscape of essential gene silencing in mycobacteria\n\nIn a complementary approach, we visualized the mean population Z-scores for key morphological features by COG (Figure 4). Again, consistent with the cell atlas and enrichment results, specific COGs (Supplementary file 3) produced distinct morphological signatures (or \u2018phenoprints\u2019). Together, these results highlighted the utility of multi-parameter morphological descriptors for characterizing mutants and, moreover, signaled the potential to link genes according to whole-cell phenotype independent of known or predicted (annotated) function. Based on prior cytological profiling studies in eukaryotic (Caicedo et al., 2017) and prokaryotic (Nonejuie et al., 2013; Huang, 2015; Campos et al., 2018) systems, we applied an unsupervised learning approach that combined dimensionality reduction with clustering of our multidimensional dataset. For this, we utilized uniform manifold approximation and projection (UMAP) (Lel et al., 2018) and optimized hyper-parameters to produce consistent visual clusters of our control strains in combination with density-based clustering using hdbscan (Lel et al., 2017; Figure 5).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig4-v1.jpg)\n\n**Figure 4.:** Mean Z-scores were calculated and visualized for all genes assigned to a particular COG, highlighting distinctive changes in morphology. The dotted line indicates a Z-score of 3. Selected features with mean Z-scores\u00a0>\u00a03 are labeled.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The mean and coefficient of variation (CV) was determined for each morphological feature, for each gene knockdown, followed by a Z-score transformation. (B) From the arrayed library, 206 (78%) mutants had at least one morphological feature with a Z-score\u00a0>3, or <-3.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Each gene in the library was functionally annotated to a cluster of orthologous groups (COG) category. For each morphological feature, mutants were selected with Z-scores\u00a0>\u00a03, or\u00a0<-3, and tested for statistical enrichment of COGs, with adjustment for multiple testing. Only features with at least one statistically enriched COG (adjusted p value\u00a0\u2264\u00a00.05) are shown and labeled.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig5-v1.jpg)\n\n**Figure 5.:** (A) A combination of UMAP dimensionality reduction (Lel et al., 2018) and hdbscan clustering (Lel et al., 2017) was applied to processed morphological data. Parameters were optimized to ensure a uniform clustering of control strains\u00a0(MinPts\u00a0=\u00a012). A consistent seed was used for visualization. (B) The mean Z-Scores of each cluster highlights the dominant features determining clustering. (C) Clusters are enriched for certain COGs. (D) Overlaid Z-score data for mean aspect ratio, length, maxima, and width demonstrate heterogeneity within clusters. (E) and (F) An adapted SAFE (Baryshnikova, 2016) approach demonstrates that functionally enriched sub-clusters are present in UMAP space.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** We obtained data on high-confidence operon identification from a published report (Martini et al., 2019) and compared the Euclidean distances of genes in identified operons to random pairs of genes. A similar approach was used for published protein\u2013protein interaction predictions (Cong et al., 2019).\n\nThis process produced a two-dimensional UMAP space consisting of three reproducible clusters (Figure 5A). The scale of different morphological features varied across the 2-dimensional space with visible patterns, such as regions of decreased length, or increased width (Figure 5D). To explore the three clusters, we tested for COG enrichment and visualized mean feature Z-scores for each cluster (Figure 5B and C). Cluster 1, which was enriched for lipid metabolism (I) and cell-wall metabolism (M), was associated with increases in width and curvature and decreases in area and aspect ratio. Conversely, Cluster 3, which was associated with translation (J) and DNA replication and repair (L), was characterized by increases in area and length. Cluster 2, which contained the control, non-targeting strains, was enriched for energy production and conversion (C) and nucleotide metabolism (F), highlighting the comparatively small impact that silencing of these genes has on cellular morphology.\n\nTo analyze further the spatial arrangements within the three large clusters, and across UMAP space, we adapted a spatial analysis of functional enrichment (SAFE) approach (Baryshnikova, 2016; Campos et al., 2018) to identify sub-clusters of either COG or KEGG enrichment. This yielded distinct sub-clusters that were not originally apparent (Figure 5E and F). For example, Cluster 1 contained regions enriched for either lipid metabolism (I) or the cell wall (M), while cluster three could be subdivided into a region enriched for DNA metabolism (L), ribosomal genes (K) and genes involved in aminoacyl-tRNA biosynthesis (by KEGG enrichment). Using this approach, even cluster two could be subdivided into functionally enriched regions despite the apparent similarity of these strains (on visual inspection) to wild-type morphologies.\n\nAs UMAP maintains the essential topological structure of data, we wondered if biological connections would be reflected in the distances between genes in UMAP space. Given the acknowledged propensity of CRISPRi to produce polar effects (Rock et al., 2017), we predicted that these would be reflected in the Euclidean distance between operonic genes. Consistent with our hypothesis, genes in verified operons (Martini et al., 2019) were located more proximally than random pairs of genes (Figure 5\u2014figure supplement 1). Similarly, predicted protein\u2013protein interaction pairs (Cong et al., 2019) were found to be non-randomly proximate (Figure 5\u2014figure supplement 1).\n\nTo demonstrate further the utility of UMAP space for understanding the link between gene function and morphology, we performed more granular analysis of manually annotated functional groupings. Again, consistent clustering of many genes with similar biological functions was observed (Figure 6), a striking finding given that the close associations in UMAP space were driven by similarities in cytological characteristics (phenoprints) independent of annotated gene function.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig6-v1.jpg)\n\n**Figure 6.:** Genes were manually classified following a review of the literature (Supplementary file 3) and visualized in UMAP space. Numbers represent M. smegmatis accession numbers.\n\nThe observation that subtle morphological changes appeared to associate with particular genetic functions implied the potential to utilize the pipeline and mutant library to elucidate biological relationships and as an additional tool in MOA studies. Four examples are presented below which illustrate the application of this approach to explore (i) putative genetic function, (ii) pathway-specific phenotypes, (iii) macromolecular biosynthetic phenotypes, and (iv) chemical-genetic approaches to antimycobacterial MOA identification.\n\n### Exploring gene function: a possible mycobacterial restriction-modification system\n\nMorphological profiling has the capacity to identify mutants with unexpected phenotypes, providing a preliminary phenotypic characterization which can guide focused downstream investigations toward assigning gene function. An example illustrating this possibility is MSMEG_3213, which is annotated as a putative DNA methylase but lacks biological validation. The M. tuberculosis homolog, Rv3263, has been implicated in bacillary fitness during hypoxia (Shell et al., 2013) but, unlike its M. smegmatis homolog, is not included in the essential gene set in the pathogen (DeJesus et al., 2017). In our imaging pipeline, MSMEG_3213 produced a marked filamentation phenotype, clustering with components of DNA replication and repair in UMAP space (Figure 7A and B). Utilizing the ParB-mCherry marker, we noted a significant disturbance in normal cell-cycle progression, consistent with the interpretation that knockdown of MSMEG_3213 disrupted DNA replication (Figure 7C). Moreover, Nanopore-based RNA-Seq confirmed the specificity of MSMEG_3213 knockdown, eliminating potential off-target effects on downstream or upstream genes (Figure 7D). Notably, the whole-genome transcriptional profile on MSMEG_3213 knockdown showed marked overlap with the well-characterized DNA damage (SOS) regulon (Davis et al., 2002; Boshoff et al., 2003) induced by treatment with genotoxins such as the DNA crosslinking agent, mitomycin C (MMC, M\u00fcller et al., 2018; Figure 7E).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig7-v1.jpg)\n\n**Figure 7.:** (A) MSMEG_3213, a putative DNA methylase, is associated with genes involved in DNA replication and repair in UMAP space. (B) Knockdown of MSMEG_3213 leads to cellular filamentation. The morphological nearest neighbors are dnaE1, pyrG and dnaA. (C) Consensus heatmaps of ParB-mCherry localization demonstrate that oriC positioning is disrupted in the MSMEG_3213 knockdown mutant. (D) Nanopore-based RNA-Seq confirmed that knockdown of MSMEG_3213 was specific to the targeted sgRNA position. (E) MSMEG_3213 produces a transcriptional response comparable to treatment with the DNA damaging agent, mitomycin C (MMC). (F) MSMEG_3213 is located upstream of MSMEG_3214, a gene with weak homology, according to HHpred (Hildebrand et al., 2009), to an endonuclease subunit (REBASE: 3098 BbvCI). (G) Lethality of MSMEG_3213 knockdown is suppressed by simultaneous CRISPRi-mediated knockdown of MSMEG_3214.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Genes with putative function were visualized in UMAP space. MSMEG_0317 (Cashmore et al., 2017) and MSMEG_6276 (murT) were found in the cell-wall cluster, supporting their suggested roles as components of cell-wall synthesis. The transcription factor, WhiA (Rustad et al., 2014), was found in the DNA-Cell Division-Translation Cluster, suggesting a role in cell-cycle regulation. (B) MSMEG_0317 produces a distinct phenotype on knockdown, with Dendra-tagged MSMEG_0317 localizing to the cell wall and cell septa. (C) Knockdown of whiA produces elongated, branching cells, with Dendra-tagged WhiA localized to the nucleoid. (D) MSMEG_6276, a gene predicted by HHpred (Hildebrand et al., 2009) to have strong homology to murT/gatD, causes cellular bulging and lysis on silencing.\n\nBased on this intriguing observation, we hypothesized that, since depletion of the methylase appeared to trigger a DNA damage response, MSMEG_3213 might be part of a restriction-modification (R-M) system (Loenen et al., 2014). Following an extensive bioinformatic search, this conclusion gained further credence by the observation that REBASE (Roberts et al., 2015) lists MSMEG_3213 as putative DNA methylase of a type II R-M system, with MSMEG_3214 the associated restriction endonuclease (Figure 7F). We reasoned that, if MSMEG_3213-MSMEG_3214 does constitute a cryptic R-M system, knockdown of MSMEG_3214 should render MSMEG_3213 non-essential. To test this, a dual-targeting CRISPRi construct was generated to enable simultaneous silencing of both genes. Knockdown of MSMEG_3214 alone produced no growth phenotype whereas dual silencing of MSMEG_3213 and MSMEG_3214 alleviated the lethal impact of MSMEG_3213 depletion (Figure 7G). Further biochemical and/or functional characterization is required before MSMEG_3213 can be definitively assigned as methylase; however, the evidence derived here from morphological profiling, transcriptomic profiling and combinatorial CRISPRi strongly support the identification of a predicted Type II R-M system in M. smegmatis.\n\nOther examples supporting the utility of morphological profiling to inform single-gene functional analyses arose during the course of this work (Figure 7\u2014figure supplement 1). For example, the C. glutamicum homolog of MSMEG_0317 is required for lipomannan maturation and lipoarabinomannan (LM/LAM) synthesis (Cashmore et al., 2017). We observed that MSMEG_0317 clustered closely with genes involved in arabinogalactan synthesis and localized to the cell wall (Figure 7\u2014figure supplement 1B). It was pleasing, therefore, when a separate study emerged suggesting that MSMEG_0317 was involved in the transport of LM/LAM (Gupta et al., 2019). In another example, the transcriptional regulator, whiA, which is involved in sporulation in Streptomyces (Bush et al., 2013), appears to play a key role in the mycobacterial cell cycle, clustering with other components of cell division (Figure 7\u2014figure supplement 1C). Furthermore, MSMEG_6276 \u2013 a putative mur ligase \u2013 clusters closely with the peptidoglycan synthesis protein, mviN (Gee et al., 2012), and exhibits strong homology to murT/gatD from S. pneumoniae (Morlot et al., 2018; Figure 7\u2014figure supplement 1D). In combination, these additional examples support the utility of image-based profiling for informing or validating hypothetical or predicted gene function \u2013 particularly those involved in cell-wall metabolism or DNA metabolism and cell-cycle regulation.\n\n### Identifying pathway-specific phenotypes: histidine auxotroph filamentation\n\nA feature of the library is that many metabolic pathways are represented by multiple mutants, allowing for pathway-level analyses of metabolic function. M. smegmatis possesses a full complement of genes for the biosynthesis of the essential amino acid, L-histidine (Figure 8A and B). In the absence of histidine supplementation, the majority of the his- prefix genes are predicted to be essential, but most have not been validated individually (Lunardi et al., 2013). Surprisingly, CRISPRi-mediated knockdown of histidine biosynthesis genes produced a filamentation phenotype that was tightly clustered in UMAP space (Figure 8C) and, among all the amino acid knockdowns, appeared unique to histidine. The possibility existed that the operonic arrangement of some genes in the pathway (hisB, hisC1, hisH, hisA, hisF, hisI; hisE, hisG) had confounded interpretation of the CRISPRi phenoprints as a result of polar effects. However, our transcriptional data and those of others (Martini et al., 2019) appeared to eliminate this possibility: hisD, hisC, hisB, hisH and hisF possess nested promoters and are therefore likely to be impervious to CRISPRi-mediated silencing of upstream genes. Moreover, CRISPRi knockdown of hisG and hisS, which are distally located in the M. smegmatis genome, produced the same phenotype, suggesting that filamentation might be a consistent, and previously unreported, consequence of disruptions to histidine biosynthesis.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig8-v1.jpg)\n\n**Figure 8.:** (A) Histidine biosynthetic genes are located throughout the chromosome. (B) Histidine is synthesized through a multi-step pathway (KEGG). (C) Cluster analysis demonstrated a consistent filamentation phenotype associated with genes involved in histidine synthesis. (D) Growth could be rescued with histidine supplementation (normalized to non-induced mutants). As HisA has an additional role in tryptophan synthesis, full rescue required simultaneous tryptophan supplementation (50\u00a0\u00b5g/ml). (E) The addition of histidine to ATc-containing growth media rescued the filamentation phenotype in all mutants other than hisS.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Following CRISPRi-mediated silencing of hisG, cells were stained with the D-alanine analogue, NADA, for visualization of peptidoglycan (Botella et al., 2017). While staining was uneven, no clear septa were detected in any cells imaged (n\u00a0=\u00a035).\n\nTo test the specificity of this phenotype, we supplemented ATc-containing media with L-histidine. The reversal of the growth inhibitory phenotype verified all his knockdowns as histidine auxotrophs, with the notable exceptions of hisA and hisS. Previous reports indicate that hisA likely encodes a bifunctional HisA/TrpF enzyme (Due et al., 2011). Consistent with this annotation, growth of the hisA CRISPRi mutant was rescued in medium supplemented with tryptophan (Figure 8D). Intriguingly, for all his knockdowns other than hisS (encoding the histidine tRNA synthetase), histidine supplementation reversed the filamentation phenotype (Figure 8E). This was also the case for hisA, even when the lack of tryptophan impaired growth. Morphologically, the filaments observed under histidine starvation differ from those which result from depletion of components of the divisome: that is, the his mutants display minimal branching. Moreover, staining of peptidoglycan with the D-alanine analogue, NADA (Botella et al., 2017), failed to resolve any clear septa (Figure 8\u2014figure supplement 1). The mechanism underlying the filamentation response to histidine deficiency remains unclear, but likely reflects translation defects resulting from uncharged tRNAs. Further work is required to establish this definitively, but the observations reported here nevertheless support the potential utility of the CRISPRi-imaging pipeline to discover, and then validate, pathway-specific phenotypes.\n\n### Validating macromolecular pathway phenotypes: morphotypic consequences of disrupting mycolic acid biosynthesis\n\nMycobacteria possess a multilayered cell envelope, the outer mycolic acid layer of which is synthesized via a well-characterized pathway containing a number of established and experimental drug targets (Jankute et al., 2015; Figure 9A). CRISPRi-mediated inhibition of the components of this pathway produced consistent changes in cellular morphology (Figure 9B and C), with the majority of genes implicated in mycolic acid synthesis clustering tightly together in 2-dimensional UMAP space (Figure 9B). Notably, the fact that clustering was observed despite the location of these genes throughout the chromosome appeared to eliminate polar effects as a potential confounder.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig9-v1.jpg)\n\n**Figure 9.:** (A) The multi-step pathway of mycolic acid biosynthesis. (B) Components of mycolic acid synthesis, visualized in UMAP space, cluster closely and are morphologically similar (C) with overlapping phenoprints (D). Exposure to the frontline anti-TB drug, isoniazid (INH), at 1X MIC produces a similar morphological change and an analogous phenoprint to silencing of inhA, the validated target of INH (Vilch\u00e8ze and Jacobs, 2007).\n\nBy superimposing our imaging results and quantitative analyses of morphology on the mycolic acid biosynthetic pathway, we noted highly analogous morphotypes irrespective of the gene targeted for silencing (Figure 9C and D). It was also evident that knockdown of components involved in early steps produced similar results to inhibition of the final step, involving the flippase, MmpL3 (Xu et al., 2017; Su et al., 2019). Given the consistency observed following genetic disruption of mycolic acid synthesis, we wondered whether chemical inhibition would produce a comparable morphological change. To test this possibility, we treated cells with isoniazid (INH), a frontline anti-TB drug which inhibits the essential enoyl-ACP reductase, InhA (Timmins and Deretic, 2006; Vilch\u00e8ze and Jacobs, 2007). Exposure to 1X minimum inhibitory concentration (MIC90) INH triggered increases in cell width and morphological alterations which were closely similar to those produced by genetic silencing of inhA (Figure 9C and D). This was an important observation since it suggested the possibility that, by analogy with bacterial cytological profiling (Nonejuie et al., 2013; Nonejuie et al., 2016), drug-induced morphological changes could be utilized to inform antimycobacterial MOA more broadly; that is, by exploiting the CRISPRi-imaging database of correlated genotype-phenotype connections with chemical (drug-induced) phenotype.\n\n### CRISPRi phenoprinting for antimycobacterial MOA determination\n\nTo ascertain if the CRISPRi dataset could be used to determine antimycobacterial MOA, we investigated a panel of compounds from different classes that inhibit various essential mycobacterial processes (Figure 10A). For proof-of-concept assays, the initial selection was limited to five clinically used anti-TB drugs: the first-line agents, INH and ethambutol (EMB), which disrupt cell-wall biosynthesis (Abrahams and Besra, 2018); RIF, which binds the DNA-dependent RNA polymerase subunit, RpoB (Koch et al., 2014); the second-line fluoroquinolone, moxifloxacin (MOXI), which inhibits DNA gyrase\u00a0(Kumar et al., 2014) and bedaquiline (BDQ), an inhibitor of mycobacterial ATP biosynthesis recently approved for the treatment of MDR-TB (Sarathy et al., 2019). Thereafter, the panel was expanded to include an additional 12 known and experimental antimycobacterial compounds (Figure 10\u2014figure supplements 1\u20133).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig10-v1.jpg)\n\n**Figure 10.:** Cells were exposed to varying supra-MIC concentrations (1X, 2X, 4X MIC) of the selected antimycobacterial compounds for 18 hr, imaged, and analyzed using the pipeline developed for CRISPRi-imaging. The resulting profiles were visualized in CRISPRi-generated UMAP space (A), and the morphological nearest-neighbor identified (B). Known targets were simultaneously visualized for comparative purposes. BDQ, bedaquiline; EMB, ethambutol; INH, isoniazid; RIF, rifampicin; MOXI, moxifloxacin.\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig10-figsupp1-v1.jpg)\n\n**Figure 10\u2014figure supplement 1.:** Cells were exposed to varying supra-MIC concentrations (1X, 2X, 4X MIC) of the selected antimycobacterial compounds for 18 hr, imaged, and analyzed using the same pipeline developed for CRISPRi-imaging. The resulting profiles were visualized in CRISPRi-generated UMAP space. CIP, ciprofloxacin; DCS, D-cycloserine; GRS, griselimycin; KAN, kanamycin; LEVO, levofloxacin; LNZ, linezolid; NOVO, novobiocin; NRG, nargenicin; OFX, ofloxacin; STR, streptomycin; TMP, trimethoprim; VAN, vancomycin.\n\n![Figure 10\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig10-figsupp2-v1.jpg)\n\n**Figure 10\u2014figure supplement 2.:** Cells were exposed to varying supra-MIC concentrations (1X, 2X, 4X MIC) of the selected antimycobacterial compounds for 18 hr, imaged, and analyzed using the same pipeline developed for CRISPRi-imaging. The resulting profiles were visualized in CRISPRi-generated UMAP space. For each compound, representative cells, known targets and the morphological nearest neighbor are presented. CIP, ciprofloxacin, DCS, D-cycloserine; GRS, griselimycin; KAN, kanamycin, LEVO, levofloxacin; LNZ, linezolid. NOVO, novobiocin; NRG, nargenicin; OFX, ofloxacin; STR, streptomycin; TMP, trimethoprim; VAN, vancomycin. *The major spontaneous resistance gene, if available. For kanamycin, rrs is not present in the library. Limited compound availability restricted nargenicin assays to 1X MIC.\n\n![Figure 10\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60083/elife-60083-fig10-figsupp3-v1.jpg)\n\nMorphotypes observed following drug treatment were often positioned in regions of UMAP space consistent with their known MOAs. For example, cells exposed to BDQ at 2X and 4X MIC clustered tightly with components of the mycobacterial ATP synthase and mapped to a region enriched for genes involved in energy metabolism (Figure 10A); the nearest neighbor for both 2X and 4X BDQ-treated cells was atpA (Figure 10B). The cell-wall targeting compounds similarly produced closely correlating profiles: EMB-treated cells clustered tightly together, irrespective of applied concentration, and were positioned in lipid metabolism-enriched UMAP space. The nearest neighbor at 2X and 4X MIC was pks16, a gene involved in mycolic acid synthesis; moreover, consistent with inhibition of arabinogalactan synthesis, aftA, ubiA, dprE1, glfT2 were proximal to the EMB-exposed cells at all three applied drug concentrations. INH-treated cells were situated in lipid metabolism-enriched space at 1X MIC but, at higher concentrations, fell in a region associated with energy production and conversion. Notably, however, the nearest neighbor at 4X MIC was fabD, a component of mycolic acid synthesis. In contrast, compounds targeting peptidoglycan, including vancomycin and D-cycloserine, did not yield definitive profiles (Figure 10\u2014figure supplements 1\u20133). Manual inspection of the data indicated that\u00a0this was probably due to the induction of lysis, highlighting a limitation inherent in applying a single, 18 hr endpoint for analysis of all drug treatments.\n\nCompounds targeting DNA replication generally produced filamentation, and clustered accordingly. Notably, MOXI-treated cells did not co-localize with gyrA and gyrB knockdowns (the DNA-gyrase subunits, and targets of MOXI) in UMAP space and were instead associated with DNA metabolism, an observation common to all fluoroquinolones. In contrast, novobiocin (NVB), a gyrase B inhibitor (Chatterji et al., 2001), did not trigger filamentation, instead positioning closely with gyrA and gyrB genetic knockdowns. Like the fluoroquinolones, the experimental agents nargenicin (putative DnaE1 inhibitor; Painter et al., 2015) and griselimycin (which binds to the \u03b2-clamp, DnaN; Kling et al., 2015) were associated with DNA metabolism pathways, in this case mapping much closer to their known or predicted targets.\n\nWhile compounds disrupting DNA replication and cell envelope biogenesis were readily associated with a target class, this was not universally true for drugs with other MOAs. At 4X MIC, RIF was associated with rpoB. However, at the two lower concentrations, RIF-treated cells were positioned at dramatically different locations in UMAP space.\n\nIt was noticeable, too, that compounds targeting mycobacterial protein synthesis \u2013 for example, linezolid (Leach et al., 2011), streptomycin or kanamycin (Riska et al., 2000) \u2013 similarly failed to produce responses analogous to their cognate gene knockdowns. Like RNA polymerase, the protein translation machinery operates as a large, multi-protein complex, perhaps exposing a deficiency in this approach when applied to the macromolecular machines responsible for transcription and translation. Overall, however, the results supported the utility of CRISPRi-enabled cytological profiling to inform compound MOA, especially for agents targeting DNA replication, cell-wall biosynthesis, and energy metabolism.\n\n## Discussion\n\nWe have described the construction and validation of an arrayed library of CRISPRi mutants targeting essential M. smegmatis homologs of M. tuberculosis genes. By coupling the library with a high-throughput imaging pipeline, we confirmed the utility of quantitative methodologies to describe morphological changes and, moreover, established the capacity to harness morphotypic information to construct a database of cytological phenotypes, or mycobacterial phenoprints. Then, in demonstrating the potential utility of the resulting phenoprint atlas, we presented four examples illustrating its use in enabling preliminary characterization of single-gene function (DNA methylase), the identification of distinct morphotypes associated with biosynthetic (histidine) and macromolecular (mycolic acid) pathway disruptions, and the potential to exploit CRISPRi morphotypes as a chemical-genetic tool to illuminate antimycobacterial MOA determination.\n\nAdvances in imaging technologies (Camsund et al., 2020) and sample preparation (Shi et al., 2017), together with the availability of software tools such as MicrobeJ (Ducret et al., 2016), have enabled the application of imaging in bacterial systems biology (Huang, 2015). Our pipeline was optimized for medium-throughput imaging of mycobacteria; however, increasing the throughput of imaging, for example with the Strain Library Imaging Protocol (Shi et al., 2017), would be advantageous for larger collections of mutants. To ensure completeness in our online \u2018Morphotypic Landscape\u2019 database, we plan in future to expand the library to include all 423 predicted essential M. smegmatis genes from our pooled screening data (de Wet et al., 2018). There appears to be significant value, too, in establishing an equivalent library in M. tuberculosis, a challenging undertaking but one which would benefit from the lessons learnt from this study. In this context, we note with interest key recent advances in mycobacterial cytological profiling (Smith et al., 2020) which suggest the potential to combine these complementary approaches in applying CRISPRi-imaging to M. tuberculosis.\n\nIn developing our analytical pipeline, we relied heavily on the pioneering work of Jacobs-Wagner and colleagues (Campos et al., 2018). In particular, we adapted a machine\u00a0learning-based cleanup that leverages the power of MicrobeJ but adds a Mycobacterium-specific post-processing step. This classifier should have downstream utility for future imaging studies in M. smegmatis but will require retraining if utilized for M. tuberculosis. For analysis, we applied an unsupervised learning approach that combined UMAP dimensionality reduction with density-based clustering of our multidimensional dataset. UMAP is a generally applicable algorithm, but has enjoyed especially rapid uptake for the visualization of single-cell sequencing results (Becht et al., 2018). In our pipeline, we also used UMAP for data visualization and as a preprocessing step prior to the application of density-based clustering approaches, analogous to the use of t-SNE by Jacobs-Wagner and colleagues (Campos et al., 2018). While non-linear dimensionality reduction techniques must be used with caution, our extensive validation supports the utility of the approach. Additionally, our dataset should be amenable to further analysis using alternative analytic approaches, including deep-learning (von Chamier et al., 2019).\n\nUsing data obtained from our CRISPRi screen, we generated a quantitative atlas of morphological changes associated with essential gene silencing in M. smegmatis. For\u00a0~90% of the strains in our library, no prior morphological data were available at the outset of the study. Moreover, approximately 40% of the genes and their protein products had not been characterized at all, either functionally (biochemically or microbiologically) or structurally. It was notable, therefore, that almost 78% of the essential genes assayed here resulted in at least one dramatically aberrant morphological feature on CRISPRi knockdown. This number exceeds the\u00a0~60% of B. subtilis mutants that produce clear terminal phenotypes (Peters et al., 2016) and may reflect increased sensitivity of our analytic approach and/or the differential compositions of the respective libraries. However, given that only 20% of the non-essential E. coli Keio Collection displays significant morphological changes (Campos et al., 2018), it is evident that silencing of essential genes is more likely to disrupt core processes affecting maintenance of general bacillary morphology.\n\nA number of CRISPRi mutants produced morphological alterations that were unexpected. For example, while filamentation is a well-described phenomenon consequent on interference in cell-division (Dziadek et al., 2003; Campos et al., 2018; Wu et al., 2018), DNA replication (Greendyke et al., 2002; Justice et al., 2008) and depletion of ClpP protease components (Li et al., 2010), it is not typically associated with genes involved in protein synthesis or export. Nevertheless, we recorded filamentation responses following silencing of ribosomal subunits, the Sec translocase, and histidine biosynthesis. These phenotypes contrast with B. subtilis where filamentation is not observed on silencing of the corresponding genes (Peters et al., 2016). In Salmonella typhimurium (Murray and Hartman, 1972) and E. coli (Frandsen and D'Ari, 1993), mutants overexpressing hisH and hisF are known to produce filaments, possibly through a scarcity of PBP3 substrates required for cell division (Cano et al., 1998). To our knowledge, though, filamentation of histidine auxotrophs has not been reported in any bacterial species, including mycobacteria. The mechanism underlying the filamentation phenotype is unclear, though potentially attributable to interference in cell division through an unknown mechanism. Moreover, the fact that this phenotype manifests on knockdown of the L-histidine-tRNA ligase, hisS, suggests the involvement of a regulatory mechanism dependent on the presence of his-tRNAs (Raina and Ibba, 2014). However, further work is required to explain this observation.\n\nWhile interfering in cell envelope biogenesis might be expected to cause aberrations in morphology, the increases in mycobacterial cell width observed on silencing essential steps in mycolic acid synthesis have limited precedent in the literature. One example is the association of temperature-sensitive mutants of inhA with analogous phenotypes (Vilch\u00e8ze et al., 2000). The phenotypic consistency across the pathway was nevertheless surprising; again, however, the precise mechanism remains elusive. It is possible that the cell-wall synthetic machinery acts together in a spatiotemporally related complex that requires the presence of all proteins for function. It might be instructive, for example, that fluorescently-tagged versions of InhA and MabA co-localize (Vilch\u00e8ze et al., 2000) and may be present in the same specialized membrane domain (Hayashi et al., 2018). Knockdown of individual components of the pathway might therefore impact multiple protein\u2013protein interactions, collapsing numerous components of cell-wall synthesis to produce the same phenotypic outcome. Alternatively, it is possible that biosynthetic precursors accumulate, producing consistent alterations in cell structure. A further possibility is that mycolic acids might play a more important structural role in the maintenance of mycobacterial cell width \u2013 an intriguing prospect considering the absence of the prokaryotic actin homolog, MreB, in mycobacteria (Singh et al., 2010). Further work is needed to resolve these possibilities and should benefit from the collection of CRISPRi mutants described here.\n\nIn general, the CRISPRi-induced morphological changes appeared consistent within pathways and following exposure to the various anti-mycobacterial drugs. This was especially true of genes involved in DNA replication, cell division, cell-wall metabolism, and energy metabolism \u2013 a property which allowed us to leverage the platform to assign functional predictions for a number of genes, and to infer antimicrobial MOA. An example is MSMEG_3213, which morphological profiling, transcriptomic profiling and combinatorial CRISPRi identified as methylase of a predicted Type II R-M system in M. smegmatis. The biological function of this system is currently unclear; however, one practical implication is that, if involved as expected in intrinsic phage defense, it might inadvertently eliminate phages, which could be otherwise useful for clinically relevant mycobacteria such as M. tuberculosis or M. abscessus (Dedrick et al., 2019). It is tempting to consider, too, if the differential complement of R-M systems among mycobacteria might determine the apparent species-selectivity of some mycobacteriophages \u2013 for example, DS6A (Mayer et al., 2016) \u2013 and whether the MSMEG_3213 methylase, which is conserved in M. tuberculosis, functions in cell-cycle regulation (Wion and Casades\u00fas, 2006) in addition to its role in self-defense.\n\nCytological profiling has been extensively exploited to determine antimicrobial MOA (Nonejuie et al., 2013; Huang, 2015; Nonejuie et al., 2016), with a very recent report providing the first evidence of its utility in mycobacteria (Smith et al., 2020). To our knowledge, all approaches have consistently utilized whole-cell drug treatment to create profiles of known mechanisms. In this work, we instead applied a genetic approach, generating a database of phenoprints based on essential gene knockdown which were then compared with profiles produced by drug exposure of whole cells. Notwithstanding the fundamental difference between genetic (transcriptional) knockdown and pharmacological (small molecule) inhibition, we observed strong overlap in the resulting phenotypes, especially for compounds targeting energy metabolism (BDQ), the mycolic acid (INH) or arabinogalactan (EMB) components of the cell wall, as well as DNA metabolism (fluoroquinolones and griselimycin). In some cases, we noted, too, that different concentrations of compound could produce disparate morphological profiles, suggesting a possible dependence of MOA on drug concentration (Bernier and Surette, 2013). Furthermore, not all compounds produced defining phenotypes. For example, compounds targeting peptidoglycan synthesis (DCS and VAN) led to rapid lysis, while aminoglycosides did not cluster with the majority of ribosomal knockdowns. While these exceptions expose limitations in cytological profiling (discussed below), the approach nevertheless appears useful as rapid pre-screen of compound MOA in drug discovery pipelines, prior to more in-depth investigation. Moreover, the pioneering development by Aldridge and colleagues (Smith et al., 2020) of the MorphEUS (morphological evaluation and understanding of stress) system for mycobacterial cytological profiling suggests the potential to replicate the CRISPRi approach described here in M. tuberculosis, a daunting but tractable challenge.\n\nIt was notable that MOXI-treated cells did not sit closely with gyrA and gyrB knockdowns and were instead associated with DNA metabolism, an observation common to other fluoroquinolones. While this separation in UMAP space might be deemed surprising, two factors are salient to the interpretation of this result: firstly, the role of mycobacterial DNA gyrase in the removal of torsional stress and the maintenance of template topology during RNA transcription (Ahmed et al., 2017) is consistent with the dominant effect of gyrA and gyrB knockdown manifesting as more similar to RNA polymerase inhibition (here, the close association with rpoB in the UMAP analysis is potentially telling); and, secondly, the filamentation observed on fluoroquinolone exposure is SOS-dependent (Drlica et al., 2008) and involves the formation of lethal double-strand DNA breaks following drug-mediated trapping of the DNA-gyrase complex \u2013 an effect which ATc-induced CRISPRi knockdown does not produce. Supporting this interpretation, the gyrase B inhibitor, NVB, did not trigger filamentation, and was instead closely associated with gyrA and gyrB knockdowns, a key observation given previous work noting the lack of SOS induction in NVB-treated cells (Boshoff et al., 2004). A question which commonly arises is how the apparently discrepant gyrA/gyrB and moxifloxacin phenoprints can be reconciled with recent data from a pioneering high-throughput chemical-genetic screen which reported the identification of novel gyrase inhibitors by utilizing a library which included gyrA and gyrB hypomorphs (Johnson et al., 2019). In addressing this dilemma, it is important to remember that hypomorphs provide a powerful means to identify hypersusceptibilities consequent on bacillary exposure to chemicals which inhibit the same (cognate) gene or pathway targeted by the knockdown system (i.e. the genetic and antibiotic targets are identical); in contrast, whole-cell morphotypes report on the physiological response to (or manifestation of) lethal stress induced by essential gene silencing. Importantly, a key element distinguishing antibiotic-mediated target inhibition or corruption from transcript depletion is time: antibiotic treatment inhibits (or corrupts) active processes, triggering intracellular catastrophe (in the case of MOXI treatment, an SOS response), whereas gene silencing is much more gradual, or ordered, avoiding the impact of instantaneous loss of function.\n\nAs for all large-scale assays, the approach detailed here inevitably carries inherent limitations which must be borne in mind when analyzing and applying the data: (i) Although motivated primarily by pragmatism, the decision to apply an 18 hr endpoint for all analyses might inadvertently have biased the \u2018strongest\u2019 phenotypes to genes involved in DNA replication, cell division, and cell-wall metabolism. One obvious complication pertains to the drug MOA analyses, and is evident in the striking frequency with which the data points for 1X, 2X and 4X concentrations map differently in UMAP space for different compounds. Intuitively, increasing drug concentration might be expected to have two principal effects \u2013 increasing the rate of cell death while retaining the primary MOA (put simply, cells treated at 4X MIC will be further along the \u2018path to death\u2019 at 18 hr than those treated at 1X MIC) or increasing the likelihood of hitting secondary targets. This issue has been noted previously in transcriptional profiling of the M. tuberculosis drug-exposure response (Boshoff et al., 2004) in which optimizing the drug concentration and exposure time were critical in avoiding convergence on a common stress pathway, obscuring the informative, drug-specific transcriptional signature. Similarly, the propensity for the rate of gene-product depletion to impact qualitatively the terminal phenotype has been elegantly demonstrated in B. subtilis (Peters et al., 2016). Notwithstanding the significant resources required, future work might therefore envisage the use of time-lapse imaging of all mutants to identify optimal gene-specific knockdown durations. (ii) This proof-of-concept study employed only aerobically grown mycobacteria cultivated at 37\u00b0C in media comprising Middlebrook 7H9 broth base, with glycerol as primary carbon source. There is ample precedent in the literature indicating that gene essentialities, metabolic vulnerabilities and drug susceptibilities can alter as a function of growth conditions; therefore, the phenotypes presented here are necessarily condition-specific, and could benefit significantly from expanding these analyses to other, \u2018disease-relevant\u2019 culture systems. By extension, there is also the potential to perform equivalent analyses in different genetic backgrounds, avoiding the well-described pitfalls of \u2018wild-type\u2019 laboratory strains. (iii) Morphological profiling appears to offer a rapid means of preliminary gene function assignment or compound MOA; however, definitive validation is required \u2013 via further biochemical and/or functional analysis \u2013 to ratify the functional assignments predicted using this tool. (iv) Future iterations should also aim to resolve the large cluster (Cluster 2) of genes exhibiting minimal morphological effects on knockdown into more informative sub-clusters, perhaps through the incorporation of additional features and/or by applying alternative fluorescent reporters (possibly in addition to the ParB reporter). Some approaches to consider include the use of sentinel genes and transcription factors involved in different aspects of macromolecular biosynthesis and/or metabolic remodeling (Naran et al., 2016; Boot et al., 2018). In addition to the potential for improved MOA delineation, such refinements are necessary to address the large number of hypothetical proteins whose functions were not significantly informed by the current morphological profiling algorithm.\n\nIn conclusion, we are hopeful that the library of M. smegmatis mutants \u2013 and the associated online database \u2013 will offer a potentially valuable resource for the mycobacterial research community, particularly given the utilization of the ParB-mCherry reporter background which, to our knowledge, is unique in coupling whole-cell morphological information with a measure of replicative status and ploidy. While a large collection of inducible protein-degradation mutants was recently described in M. tuberculosis (Johnson et al., 2019), there is not yet an equivalent in the faster-growing model mycobacterium, M. smegmatis. Moreover, in addition to the validated strains, the plasmids used to establish our library should enable relatively simple construction of either single mutants or mutant libraries in alternative genetic backgrounds and reporter strains.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Eschericia coli)</td>\n      <td>Dh5a</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. smegmatis)</td>\n      <td>ParB-mCherry</td>\n      <td>Santi and McKinney, 2015</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. smegmatis)</td>\n      <td>See Supplementary file 1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>plJR962</td>\n      <td>Rock et al., 2017</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>See Supplementary file 1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>See Supplementary file 1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>OneTaq Master Mix</td>\n      <td>NEB</td>\n      <td>NEB M0482L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Esp31-FastDigest</td>\n      <td>Thermo</td>\n      <td>FD0454</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Zyppy-96 Plasmid Miniprep Kit</td>\n      <td>Zymo</td>\n      <td>D4041</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>FastRNA Blue Kit</td>\n      <td>MP Biomedicals</td>\n      <td>MP6025050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>DNAse</td>\n      <td>NEB</td>\n      <td>NEB M0303S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Poly(A) Polymerase</td>\n      <td>NEB</td>\n      <td>NEB M0276L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Zymo RNA Clean and Concentrator-5</td>\n      <td>Zymo</td>\n      <td>R1 013</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Ribo-Zero rRNA Removal Kit</td>\n      <td>Illumina</td>\n      <td>MRZMB126</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Nanopore Direct RNA Sequencing Kit</td>\n      <td>Oxford Nanopore Technologies</td>\n      <td>SQK-RNA002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Nanopore Direct cDNA Sequencing Kit</td>\n      <td>Oxford Nanopore Technologies</td>\n      <td>SQK-DCS109</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEBNext Q5 High-Fidelity Polymerase Master Mix</td>\n      <td>NEB</td>\n      <td>NEB M0543L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QIAquick PCR purification kit</td>\n      <td>Qiagen</td>\n      <td>28106</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>T4 Ligase</td>\n      <td>NEB</td>\n      <td>NEB M0202M</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SapI</td>\n      <td>NEB</td>\n      <td>NEB R0569S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>See Supplementary file 1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>FIJI</td>\n      <td>Schindelin et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>MicrobeJ</td>\n      <td>Ducret et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>R</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>UMAP</td>\n      <td>Lel et al., 2018</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>hdbscan</td>\n      <td>Lel et al., 2017</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>tSNE</td>\n      <td>Maaten and Hinton, 2008</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>Minimap2</td>\n      <td>Li, 2018</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>samtools</td>\n      <td>Li et al., 2009</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>deepTools2</td>\n      <td>Ram\u00edrez et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>featureCounts</td>\n      <td>Liao et al., 2014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>DESeq2</td>\n      <td>Love et al., 2014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>Iris</td>\n      <td>Kritikos et al., 2017</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Construction of arrayed library\n\nWe limited our initial selection to 294 genes. In addition to the 288 genes found universally essential in both Tn-seq and CRISPRi-Seq (de Wet et al., 2018), we added six components of the ATP synthase which were found to be non-essential in Tn-seq owing to gene duplication in M. smegmatis (Dragset et al., 2019).\n\nWhile CRISPRi is a reliable technology for producing knockdown, it is subject to variation in knockdown efficacy, depending on the selected guide RNA. Moreover, when targeting a gene with CRISPRi, the efficacy of a particular guide is not known de novo, and activity prediction algorithms are still in their infancy, particularly for bacteria (Wang et al., 2017). As a result, it is generally best practice to target a gene with more than one sgRNA to account for differences in activity. However, in the case of arrayed mutant collections, this requirement becomes unwieldy; as such, previous arrayed CRISPRi mutant collections in bacteria have utilized one predicted sgRNA per gene (Liu et al., 2017; Wang et al., 2017). Our previous CRISPRi-Seq data (de Wet et al., 2018) allowed us to identify essential genes that were growth-suppressed by multiple sgRNAs, but additionally provided empirical data on sgRNA knockdown efficiency. As a result, we were able to identify the most efficient sgRNAs for any gene.\n\nFor each of the 294 selected genes, two oligonucleotides (Supplementary file 1) were synthesized at 50 nmol and annealed by LGC Biosciences. For five genes, an additional set of oligonucleotides was used to validate the observed phenotypes (Figure 2\u2014figure supplement 2). Oligonucleotides were delivered in 96-well plates, and were resuspended in water to a final concentration of 100 \u00b5M. Cloning was performed as previously described (Rock et al., 2017) but adapted for scale. Briefly, pJR962 (Rock et al., 2017) was digested overnight with BsmBI-FastDigest (Thermo) and gel purified. Ligations were performed in 96-well\u00a0plates with 1U T4 Ligase (NEB) and incubated at room temperate overnight. Ligation reactions were transformed into 5 \u03bcl High-Efficiency DH5\u03b1 cells (NEB) with heat-shock, rescued in TY Broth, and plated on LB agar prepared in 6-well plates. Following overnight growth at 37\u00b0C, single colonies were picked into 800 \u03bcl of LB broth, in 2 ml deep 96-well plates, and grown overnight at 37\u00b0C with vigorous shaking. All E. coli cultures were supplemented with Kanamycin (Roche) at a final concentration of 50 \u00b5g/ml. Plasmids were extracted with a Zyppy-96 Plasmid Miniprep kit (Zymo) according to manufacturer instructions and quantified via Nanodrop.\n\nApproximately 100 ng of plasmid was electroporated into the M. smegmatis ParB-mCherry reporter strain (Santi and McKinney, 2015) and rescued in 7H9 broth supplemented with OADC and 0.05% Tween 80, for 3 hr at 37\u00b0C. Electroporation reactions were plated on 7H10 agar supplemented with OADC and Kanamycin at 20\u00a0\u00b5g/ml, prepared in 6-well plates, and grown at 37\u00b0C until visible colonies formed. Single colonies were picked into 400 \u03bcl 7H9 supplemented with kanamycin (20\u00a0\u00b5g/ml) and grown with shaking until stationary phase. Glycerol stocks of all transformants were stored at \u221280\u00b0C. Any failed ligations or transformations were repeated.\n\n### Sequencing validation\n\nPCR Primers (Supplementary file 1) designed to target the sgRNA-containing region of plasmid pJR962 were synthesized by Inqaba Biotech. PCR reactions were prepared with OneTaq Master-mix (NEB) in 96-well plates to a final volume of 20 \u03bcl. Using pipette tips, scrapings of glycerol stocks were taken and mixed with the PCR reaction. The PCR was performed with the settings described (Supplementary file 4). PCR reactions were purified and sequenced by the Stellenbosch Central Analytic Facility using the same forward primer as the PCR reaction. Sequencing results were analyzed using a custom written R script. For PCR amplification, we opted not to use a high-fidelity polymerase owing to the number of reactions performed. Since this risked introducing artificial mismatches or ambiguities into the sequencing results, a sequence was considered correct if the mutant had a high-quality alignment with its expected sequence. We accepted ambiguities in the sequencing trace if the strain functionally validated in downstream growth analysis. PCR reactions that did not produce sequencing results were repeated; ultimately, sequence-validation was obtained for 238 mutants from the initial cloning workflow, a success rate of 83%. Of the invalidated mutants, 15 wells contained plasmid backbone, 15 were cross-contaminants which occurred at some point during the cloning process, and the remaining 20 failed to sequence. We maintained the plasmid-backbone strains in our library and downstream workflow as these represented useful empty vector sequences, so that control strains were nested within the arrayed library. Cloning was repeated for invalidated mutants.\n\n### Growth validations\n\nSquare plates containing standard Middlebrook 7H10 OADC agar were prepared and supplemented with kanamycin (Roche,20ug/ml), with or without anhydrotetracycline (ATc, Sigma, 100 ng/ml). Fresh cultures were inoculated from glycerol freezer stocks into 400 \u03bcl Middlebrook 7H9 liquid medium supplemented with kanamycin (Roche, 20\u00a0\u00b5g/ml) in deep 96-well plates. Cultures were grown with shaking until saturated. Stationary-phase cultures were diluted 1:10 000 into fresh 7H9 before spotting onto prepared 7H10 plates using a 96-well replicator pin (Sigma). All spotting was performed in triplicate. Plates were grown until colonies formed and photographed using a lightbox. Colony sizes were quantified using Iris (Kritikos et al., 2017).\n\n### Image sample preparation\n\nFresh cultures were inoculated from glycerol stocks into 400 \u03bcl 7H9 with kanamycin (Roche, 20\u00a0\u00b5g/ml) and grown until saturated. Saturated cultures were diluted 1:800 into fresh 7H9 with kanamycin (Roche, 20\u00a0\u00b5g/ml) and grown for 24 hr until exponential phase. Exponential-phase cultures were inoculated 1:40 into 7H9 supplemented with kanamycin (Roche, 20\u00a0\u00b5g/ml) and ATc (Sigma 100 ng/ml) and grown for 18 hr, with shaking. Large-format agarose pads were prepared with water to a final concentration of 2%. Briefly, 2 ml of molten low-melt agarose was sandwiched between two rectangular coverslips (No. 1.5, 24 x 60 mm). The bottom coverslip was marked using a laser-cut stencil to indicate sample placement. Agarose pads were left to dry, and 1 \u03bcl of induced culture spotted onto the pads, using a multichannel pipette. Each pad contained eight samples. Twenty-four strains were imaged per day, and replicate imaging was performed for 137 samples to validate the reproducibility of the imaging workflow.\n\n### Microscopy\n\nLarge-format agarose pads were imaged using a Zeiss Axio Observer Z1 and ZEN 2 (blue edition) software, with the ZEN Tiles and Positions and ZEN Autofocus Modules installed. Images were captured using a Zeiss Axiocam 503 with 3X analogue gain. Using a low magnification 10X objective, each sample was localized on the pad. Approximately 24 fields-of-view were selected with a 100X Phase Contrast Objective (1.4NA), before capturing images using bright-field and fluorescent imaging. Fluorescence was excited using a Colibri Green LED (555/30 nm) and filtered at 590\u2013650 nm. Exposure times were maintained across imaging sessions for Brightfield Images, and for fluorescent images. A software autofocus regimen was used before each field-of-view was captured. In the case of low-density samples, fields-of-view were manually chosen and increased in number. Raw images were saved as CZI files prior to processing and data extraction.\n\nTime-lapse imaging was performed on 1.5% agarose pads embedded with 7H9 OADC medium containing ATc (Sigma, 100 ng/ml) and kanamycin (Roche, 20\u00a0\u00b5g/ml), in glass-bottomed dishes (NEST Biotechnology). Cells were maintained in an incubated chamber at 37\u00b0C and imaged every 15 min with a software autofocus regimen implemented between each frame.\n\n### Image processing and data extraction\n\nAll image processing was performed in FIJI (Schindelin et al., 2012). CZI Images were converted to TIFF images and were manually inspected and out-of-focus fields removed. To enhance foci in the fluorescent channel, a Gaussian blur filter was applied to the fluorescent channel and subtracted from the original image. Furthermore, overall intensity of each fluorescent channel was normalized throughout the imaging dataset, to a mean pixel intensity of 15. ImageJ processing scripts are available at https://osf.io/pdcw2/. Pre-processed images were analyzed using MicrobeJ (Ducret et al., 2016) with limited constraints on cell and foci detection. MicrobeJ output (cell contours, shape descriptions and fluorescent localization \u2013 see Figure 2\u2014figure supplement 1) was exported as CSV files.\n\nQuantitation of microcolony growth rates was performed in ImageJ and R with a custom script. Briefly, images were thresholded in ImageJ and the microcolony area extracted per frame. Time-lapse plots were produced in R using a combination of ggplot2 (Wickham, 2016) and gganimate.\n\n### Dataset curation\n\nTo curate the output of MicrobeJ, a classifier was built in R. Two fields-of-view were sampled from each mutant and replica dataset and processed and analyzed as described above. All detected objects were initially exported. To create a reference of correctly identified cells, cells were inspected with the interface built into MicrobeJ, and misidentified cells removed from the dataset. Thus, two datasets were exported: the full dataset of all identified objects, and the dataset of classified cells. In total, approximately 22,000 objects were manually classified. The classified data were imported into R and utilized to build a classification model. Briefly, 20% of the dataset was reserved as a test sample, and the remaining 80% was used to train a variety of models, using the Caret package (Kuhn, 2008). For model training, fivefold cross-validation was used, and resampling performed across the default tuning parameters. ROC was used to select the optimal tuning parameters for each model. A selection of models was tested and compared based on ROC AUC. An Averaged Neural Network was empirically chosen as the best-performing model (Figure 2\u2014figure supplement 3). The trained classifier was used to classify the entire dataset and remove misidentified objects. Data were input through the curation pipeline and labeled based on sequencing results and growth validations. Reproducibility of the imaging workflow was tested by comparing length of the replica image sets. The scripts used to develop and test the models, and all input data, are available at https://osf.io/pdcw2/.\n\n### Representative cell generation\n\nFor each imaged mutant strain, we derived the mean values for a selection of 13 morphological features \u2013 Angularity, Area, Aspect Ratio, Circularity, Curvature, Feret, Length, Perimeter, Sinuosity, Solidity, Roundness, Width and Width Variation \u2013 and counts of ParB maxima. We utilized the approximate nearest neighbor approach in the R package, RANN, to identify a single cell that best approximated the mean values of the mutant. The cell contour, derived from MicrobeJ, was plotted using ggplot, and maxima identified by MicrobeJ were superimposed on the plotted contour. Visualizing scripts are available at https://osf.io/pdcw2/.\n\n### Data input and processing\n\nFor data processing, we adapted a previously described approach (Campos et al., 2018). For each mutant, we calculated the mean of each measured feature, and the CV (mean/standard deviation). We transformed each feature into a Z-score, relative to the distribution of means derived from the empty vector strains utilizing the equation:\n\n$$\nZ=(F_{i}-mean(F_{i}^{WT}))/sd(F_{i}^{WT})\n$$\n\nThe normalized Z-Score therefore represents the number of standard deviations away from the mean of the wild-type distribution (Figure 4\u2014figure supplement 1). All subsequent analyses utilized Z-Score adjusted data, unless otherwise described.\n\n### Cluster of Orthologous Groups (COG) Annotations\n\nEach gene in our dataset was assigned to a Cluster of Orthologous Groups using annotations obtained from eggNOG (Huerta-Cepas et al., 2016). We utilized both M. smegmatis and M. tuberculosis annotations to assign COGs to as many genes as possible. In addition, we manually annotated a number of genes with recently identified function (Wu et al., 2018).\n\n### Phenoprint visualization\n\nFor phenoprint visualization, variables were chosen for their interpretability and potential biological relevance. Variables included angularity, area, circularity, curvature, length, sinuosity, roundness, width, width variation and number of ParB foci (maxima). For visualization, the mean and CV Z-scores for each variable were displayed in a circular coordinate system. Where visualizations represented groups of mutants (for example COGs) means of the mutant Z-scores were used for visualization. Phenoprint visualization code is available at https://osf.io/pdcw2/.\n\n### COG enrichment analysis\n\nFor each feature, we utilized a cut-off of 3 standard deviations above or below the mean of the control distribution, and tested for enrichment of each COG category utilizing Fisher\u2019s Exact Test. We corrected for multiple testing using the Benjamini-Hochberg Procedure and utilized a significance cut-off of p<0.05. For display of data, we opted to replicate prior work (Campos et al., 2018) in displaying all genes found above or below the threshold. COG categories that were enriched for a particular feature were highlighted to differentiate them from the background. We only displayed plots where at least one COG was found to be statistically enriched (Figure 4\u2014figure supplement 2) Scripts are available at https://osf.io/pdcw2/.\n\n### Dimensionality reduction and analysis\n\nDimensionality reduction allows visualization of multidimensional data in two-dimensional space. Utilizing our normalized Z-score data, we performed dimensionality reduction in R. We tested a number of approaches for dimensionality reduction, including a Principle Component Analysis (PCA), t-SNE (Maaten and Hinton, 2008) and UMAP (Maaten and Hinton, 2008) algorithms. We superimposed these dimensionality reduction techniques with a hierarchical density-based spatial clustering of applications with noise (hdbscan) (Lel et al., 2017). For each technique, we tested a variety of optimization parameters to produce distinct clusters of points, while still maintaining a consistent cluster of wild-type samples. On comparison, UMAP produced the best separated clusters, while maintaining a relatively uniform wild-type cluster. UMAP is characterized by a degree of stochasticity during initialization (Lel et al., 2017); therefore, we generated 100 maps which were each clustered with hdbscan (minPts\u00a0=\u00a012). Consistently present clusters across initializations were determined with hierarchical clustering.\n\nTo explain the features that assigned points to particular clusters, we superimposed a color-gradient based on the mutant Z-Scores for a chosen set of features. Additionally, we generated heatmaps describing mean Z-scores of chosen features, for each cluster. We performed COG enrichment on each cluster, utilizing Fisher\u2019s Exact Test, and adjusted for multiple testing using the Benjamini-Hochberg Procedure. For visualizing sub-clusters within the UMAP, we adapted an approach inspired by the previously described spatial analysis of functional enrichment (SAFE) approach (Baryshnikova, 2016; Campos et al., 2018), to identify regions of the UMAP output that were enriched for particular functions. Briefly, for each point on our 2-dimensional UMAP projection, we examined surrounding points, within a predefined radius (the 10th percentile of the distribution of pairwise distances between all points) and tested for enrichment of either COG or KEGG ontologies using a hypergeometric test. We combined enrichment testing with a k-nearest neighbor interpolation approach to identify spatial regions of our UMAP manifold that were enriched for particular functions.\n\n### Antimicrobial profiling\n\nFor each drug, twofold serial dilutions were prepared in 400 \u03bcl of 7H9-OADC medium in deep 96-well plates. Exponential-phase M. smegmatis ParB-mCherry cells were inoculated into prepared media at a 1:40 dilution and cultured with shaking for 18 hr. Prior to imaging, ODs were measured and a dose-response curve fitted to the results with the DRC package in R (Ritz et al., 2015). The MIC90 was derived from the fitted curve and defined as 1X MIC. We validated that the MIC90 was consistent with results from a fluorescent resazurin based assay. To this end, 10 \u03bcl of resazurin (Sigma) was added to 50 \u03bcl of cell culture, incubated for one hour at 37\u00b0C and color change determined visually. For imaging, cultures were spotted on agarose pads, and imaged and analyzed as previously described.\n\n### Cell cycle heatmaps\n\nA population of cells at a single-timepoint contains a degree of temporal information, as the population contains cells at different stages of the cell cycle (Campos et al., 2018). To visualize movement of ParB through the cell cycle, we utilized extracted maxima-localization data and cell length from MicrobeJ and processed the data further utilizing a bespoke R script. For each mutant, we arranged cells by length, and produced consensus heatmaps of ParB localization relative to cell\u00a0length using ggplot2. Scripts are available at https://osf.io/pdcw2/.\n\n### Nanopore RNA-seq library preparation\n\nCultures of M. smegmatis were grown, with shaking, to exponential phase (OD600\u00a0~0.9\u20131.0) in 15 ml of 7H9 OADC at 37\u00b0C prior to RNA extraction. For CRISPRi knockdowns, the strain of interest was inoculated from an exponential-phase culture into 15 ml of 7H9-OADC supplemented with kanamycin (Roche, 20\u00a0\u00b5g/ml) and ATc (Sigma, 100 ng/ml) and cultured for 18 hr at 37\u00b0C with shaking. RNA was extracted using a FastRNA Blue Kit (MP Biomedicals) and ethanol-precipitated, according to manufacturer instructions. Extracted RNA was quantified by Nanodrop. Ten \u00b5g of RNA was treated with 2U DNase (NEB) at 37\u00b0C for 10 min, prior to cleanup with a Zymo RNA Clean and Concentrator-5 kit (Zymo Research) according to manufacturer instructions. The purified DNAse-treated RNA was poly-A tailed using E. coli Poly(A) Polymerase (NEB), according to manufacturer instructions, prior to clean-up with a Zymo RNA Clean and Concentrator-5 kit (Zymo Research). Ribosomal RNA was depleted with a Bacterial Ribo-Zero rRNA Removal Kit (Illumina) according to manufacturer instructions, prior to clean-up with a Zymo RNA Clean and Concentrator-5 kit (Zymo Research). Library preparation for Nanopore sequencing was performed using either a Nanopore Direct RNA Sequencing Kit (SQK-RNA001, Oxford Nanopore Technologies) or Nanopore Direct cDNA (SQK-DCS109, Oxford Nanopore Technologies) according to manufacturer protocols, and sequenced on MinION sequencers (Oxford Nanopore Technologies). Base-calling was performed by MinKNOW software (Oxford Nanopore Technologies), and data stored as FASTQ files for downstream analysis.\n\n### RNA-Seq data analysis\n\nReads were aligned to the M. smegmatis mc2155 genome (NC_008596) with Minimap2 (Li, 2018), utilizing the map-ont command. Produced SAM files were sorted and indexed with samtools (Li et al., 2009). For visualization, coverage was calculated using the bamCoverage command of deepTools2 (Ram\u00edrez et al., 2016) with normalization by Reads Per Kilobase per Million mapped reads (RPKM). featureCounts (Liao et al., 2014) was utilized for assigning read counts to genes, and DESeq2 (Love et al., 2014) was used for comparisons of upregulated transcripts. All visualizations were produced in R, using ggplot2.\n\n### Dual CRISPRi Knockdown\n\nsgRNAs were chosen to target MSMEG_3214 and cloned into pJR962 as previously described (Love et al., 2014). Golden Gate (Supplementary file 3) primers were designed to amplify the promoter-sgRNA-terminator region of the plasmid, with SapI restriction sites included at the 5\u2019 region of the primers, and synthesized by Inqaba Biotech. The PCR reaction was performed with Q5 high-fidelity polymerase master mix (NEB) and the product column purified with a QIAquick PCR purification kit (Qiagen) and quantified by Nanodrop. PCR primers and reaction settings are available in Supplementary file 4. Golden Gate cloning was performed utilizing the purified MSMEG_3213-targeting plasmid cloned during establishing the library as a backbone. Briefly, a single-pot reaction was set up containing T4 ligase (10 000U) and buffer (NEB), SapI (NEB, 10Units), 75 ng of backbone, and purified PCR product at a molar ratio of 2:1. The reaction was incubated at 37\u00b0C for one hour, and at 55\u00b0C for 5 min, prior to transformation into E. coli DH5\u03b1 (NEB). Colonies were screened by PCR using the sequencing primers, plJR962_Seq_F and plJR962_Seq_R, and OneTaq polymerase (NEB), as described previously, and positive clones sequenced by the Stellenbosch Central Analytic Facility utilizing plJR962_Seq_F to confirm the insertion. The sequence-verified plasmid was electroporated into M. smegmatis mc2155 and tested for growth rescue by spotting assays.\n",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "ee6cf8c2-d348-4bac-8433-76466a7e8cd4",
+      "submission_id": "7100ffda-5012-4979-9bc0-fb2ab35ee15d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christina L Stallings, Washington University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60083.sa1](https://doi.org/10.7554/eLife.60083.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript represents important technological and biological advances in our understanding of how different essential pathways in mycobacteria intersect with effects on bacterial morphology, identifying previously unknown functional associations. This study provides a framework for future work that could accelerate our understanding of gene function in mycobacteria.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Arrayed CRISPRi and quantitative imaging describe the morphotypic landscape of essential mycobacterial genes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gisela Storz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: E Hesper Rego (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThis manuscript combines a CRISPRi library in Mycobacterium smegmatis with high throughput light microscopy and image analysis to investigate the effects of essential gene knockdown on bacterial morphology. The reviewers all agree that there are many technical advances presented in this paper, the experiments are well executed, and the data and its analysis is significant for the field. However, there are some questions regarding the reproducibility of the data and the utility of these data as a predictive tool. The reviewers believe that these questions should be straightforward to address, as described more below.\n\nRevisions for this paper:\n\n1) Questions of reproducibility: The authors state that \"Moreover, to verify the reproducibility of the imaging workflow, replicate imaging was performed on separate days for 134 strains.\"\n\nDoes this mean that the authors don't have replicate data for 29 strains? To ensure reproducibility, the authors should perform one or both of the following: 1) Finish collecting the replicate data sets to ensure reproducibility and/or 2) Address reproducibility by comparing the data for the 129 that have been replicated.\n\nThe authors should also validate a few genes with a second guide RNA to rule out off-target effects and confirm phenotypes.\n\n2) Questions of utility as a predictive tool:\n\na) MSMEG_3213 isn't an example of defining the function of an uncharacterized gene instead it simply validates existing database predictions. Further, the data presented here do not demonstrate that MSMEG_3213 is the methylase of an R-M pair. Limitations should be made clear in the discussion of the data.\n\nb) The approach and data falls short of broadly being able to predict the function for any essential gene of interest. The data as presented in Figure 6 do not help this case. While some functionally related genes cluster together, many do not, especially for genes that fall into cluster 2. The disorganization in the UMAP space may stem from the small number of observed phenotypes, whereas published work in other organisms reports much broader ranges of depletion phenotypes. That being said, this isn't a fault of the authors', but it does diminishes their claim to use this method as a predictive tool. The text should be reworded or restructured to clearly represent the utility (or limitations) of these data as a predictive tool.\n\nc) Reshuffling or restructuring some of the sections may help to guide the reader towards understanding the utility of the methods and the data. For example, in addition to describing the methods of their technique, the author's validate or give examples of what their data contain (identification of cryptic putative RM system, histidine auxotroph phenotypes, effects of disrupting mycolic acid biosynthesis). They then discuss the potential to use CRISPRi to confirm compound MOA. This is a lot of information (10 figures with many subpanels), but none of these threads are really taken to completion.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Arrayed CRISPRi and quantitative imaging describe the morphotypic landscape of essential mycobacterial genes\" for further consideration by eLife. Your revised article has been evaluated by Gisela Storz (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) \"An immediate priority is to expand the library to include all 423 predicted essential M. smegmatis genes from our pooled screening data (de Wet et al., 2018) and to perform additional replicate imaging for all mutants to enhance resolution and reproducibility.\"\n\nWhile this passage might assuage a reviewer or provide the impetus for a sub-Aim of a proposal, it should possibly be omitted because it implies that the missing data are too important to omit and therefore it is premature to publish the current body of work. A stated immediate priority in a published report is acceptable when it describes the next logical step in a progression identified by conclusions of that publication, but it is less acceptable when it describes a gap in the present step. The wording in the passage sounds like the latter.\n\nThe subset of genes selected and currently presented is justified on the basis of conservation with M. tuberculosis, and the degree of reproducibility demonstrated by an independent replicate of more than half of those suggest high value and reliable data.\n\n2) \"Although morphological profiling appears to offer a rapid means of preliminary gene function assignment or compound MOA, this approach cannot claim single gene-level sensitivity. Definitive validation is therefore required \u2013 via further biochemical and/or functional analysis \u2013 to ratify the functional assignments predicted using this tool.\"\n\nThe phrase \"gene-level sensitivity\" may be misapplied in this context, or at least, confusing. A reviewer points out that the manuscript demonstrates gene-level sensitivity by reducing expression of a gene and the subsequent combination of morphologic effects (phenoprint) places that gene in the Euclidean neighborhood of other genes. The overall passage is aimed at qualifying a limitation of the screen in that it cannot biochemically discern the basis for its inclusion in the neighborhood. Therefore, a clearer and more concise passage would delete \"this approach cannot claim single gene-level sensitivity.\" The resulting single sentence says that phenoprint data does not assign gene function but gene membership to a process or pathway. This can then guide specific experiments of the functional basis for that membership.\n\n3) \"Despite lacking single-gene resolution, morphological profiling has the capacity to identify mutants with unexpected phenotypes, providing a preliminary phenotypic characterization which can guide focused downstream investigations towards assigning gene function.\"\n\nSame comment about the use of \"single-gene\". Just starting with \"Morphological profiling\u2026\" could be a clearer statement.\n",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "908a93ed-a5c6-4934-bb12-6a69252e0683",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C1",
+      "claim": "Mycobacterium tuberculosis possesses a large number of genes of unknown or predicted function.",
+      "claim_type": "EXPLICIT",
+      "source": "Mycobacterium tuberculosis possesses a large number of genes of unknown or predicted function, undermining fundamental understanding of pathogenicity and drug susceptibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction regarding the M. tuberculosis genome containing genes of unknown or hypothetical function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "8282a5cf-6ea9-4ed3-a09f-a33ac7a0c040",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C2",
+      "claim": "An arrayed library of 276 validated CRISPRi mutants targeting essential M. smegmatis genes was constructed.",
+      "claim_type": "EXPLICIT",
+      "source": "This process yielded 276 validated CRISPRi mutants (Figure 1B, Figure 1\u2014figure supplement 1), 93% of the initial target set.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The construction and validation of the library is described in the methods and results, with supporting figures showing validation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "ac753658-c999-46bf-a582-7e06bc447107",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C3",
+      "claim": "Approximately 90% of the strains in the library lacked whole-cell morphological characterization in either M. tuberculosis or M. smegmatis.",
+      "claim_type": "EXPLICIT",
+      "source": "According to a review of the literature (Supplementary file 3), approximately 90% of the strains in our library lacked whole-cell morphological characterization in either M. tuberculosis or M. smegmatis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a literature review documented in Supplementary file 3.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "2836437a-d41f-4e70-bc2a-dd5a5430169f",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C4",
+      "claim": "Almost 40% of the targeted genes and their protein products had no biochemical or structural information.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, almost 40% of the targeted genes and their protein products had no biochemical or structural information (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a literature review documented in Supplementary file 3.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "9182c638-21a6-4fab-8146-417a9a278cdc",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C5",
+      "claim": "An 18-hour ATc exposure duration was determined to be optimal for CRISPRi knockdown experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse microscopy established that fully penetrant phenotypes were manifest at 18 hr post ATc exposure for all three genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This was determined through time-lapse microscopy experiments on three well-characterized essential genes (ftsZ, wag31, and guaB2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "ae0893a7-2532-4f13-abaf-6329b1b5fb07",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C6",
+      "claim": "The 18-hour timepoint represents approximately 6-7 doubling times of wild-type M. smegmatis mc2155.",
+      "claim_type": "EXPLICIT",
+      "source": "This represents approximately 6\u20137 doubling times of the wild-type M. smegmatis mc2155 parental strain (Logsdon et al., 2017), or a dilution factor of pre-existing protein of approximately 64 to 128 (26 - 27)-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Logsdon et al., 2017 for the doubling time information.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "7f69c5ba-ce34-43aa-8174-d8859c8fc19b",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C7",
+      "claim": "The Averaged Neural Network classifier achieved an ROC AUC of 0.952 on the test set.",
+      "claim_type": "EXPLICIT",
+      "source": "Receiver Operator Characteristic (ROC) analysis of our classifier produced an Area Under the Curve (AUC) of 0.952 when applied to a reserved test set (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This performance metric is reported from testing the trained classifier on a reserved test set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "a603f6ea-d0dd-48c3-a585-2a1a79e343c1",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C8",
+      "claim": "The curated dataset contains morphological descriptions for 163,559 cells across 263 imaged mutant and empty vector control strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Our curated dataset contains morphological descriptions for 163559 cells across all 263 imaged mutant and empty vector control strains, with a mean of 568 cells per mutant (ranging from a minimum of 24 to a maximum of 3861 cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the dataset size and composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "1e4ba7d6-9938-44b8-a88a-35f116de87da",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C9",
+      "claim": "The imaging and analytic pipeline showed high reproducibility with r = 0.88 for mean cell lengths of replica-imaged knockdown mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Reassuringly, when comparing the mean cell lengths of the 137 replica-imaged knockdown mutants following ATc induction, the imaging and analytic pipeline showed high reproducibility (Figure 2D, r = 0.88, Pearson's).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation coefficient was calculated from comparing biological replicates of 137 strains imaged on separate occasions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "7389c221-8509-4a27-8414-d6baee0cc99d",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C10",
+      "claim": "78% of the essential genes assayed resulted in at least one dramatically aberrant morphological feature on CRISPRi knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 206 (78%) strains returned at least one Z-score >3, or <-3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Z-score analysis of morphological features, where Z-scores >3 or <-3 indicate dramatic aberrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "fa85e7a3-9de0-4a38-bb2b-bd78a0b9f95b",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C11",
+      "claim": "Components of DNA metabolism, the divisome, and protein translation produced cellular elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the responses could be broadly categorized into either elongation \u2013 occasionally with bulging and/or branching \u2013 or shortening, with a variety of alterations in cell width and roundness. For example, components of DNA metabolism (dna- prefix genes), the divisome (fts- genes), and protein translation (rpl- and rps- genes) produced cellular elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on visual inspection and analysis of the morphological atlas generated from the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "6623b335-f9e7-41f9-b5f2-f61d3a8552e3",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C12",
+      "claim": "Filamentation was observed for components of the histidine biosynthesis pathway but not for other amino acid biosynthesis pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, a filamentation response was also observed for components of the histidine biosynthesis pathway (his- genes), but not for other amino acid biosynthesis pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is based on morphological analysis of the imaging data and is noted as surprising by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "c3232ea1-1766-4d1c-a12f-52ffd475e385",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C13",
+      "claim": "Components of cell-wall homeostasis were associated with distinctive shortening of cells, often in combination with bulging.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, components of cell-wall homeostasis \u2013 including peptidoglycan (ponA1), arabinogalactan (aftA) and mycolic acid synthesis (inhA and mmpL3) \u2013 were associated with distinctive shortening of cells, often in combination with bulging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on morphological analysis of the imaging data for cell-wall related genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "519b870c-5a11-4b90-b7c5-3d52f4210ee1",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C14",
+      "claim": "UMAP dimensionality reduction combined with hdbscan clustering produced three reproducible clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "This process produced a two-dimensional UMAP space consisting of three reproducible clusters (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the result of applying unsupervised learning approaches to the multidimensional morphological dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "deaa6906-e06f-4aa9-b586-2a5b79d7cf71",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C15",
+      "claim": "Genes in verified operons were located more proximally in UMAP space than random pairs of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, genes in verified operons (Martini et al., 2019) were located more proximally than random pairs of genes (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This was tested by comparing Euclidean distances in UMAP space between operonic genes versus random gene pairs, using operon data from Martini et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "d12f4bee-6ee1-499b-944e-6a6b684eeceb",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C16",
+      "claim": "Predicted protein-protein interaction pairs were found to be non-randomly proximate in UMAP space.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, predicted protein\u2013protein interaction pairs (Cong et al., 2019) were found to be non-randomly proximate (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This was tested using protein-protein interaction predictions from Cong et al., 2019 and measuring distances in UMAP space.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "eab90a33-cfb4-42b5-b971-c56fe4de48f8",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C17",
+      "claim": "MSMEG_3213 knockdown produced a marked filamentation phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In our imaging pipeline, MSMEG_3213 produced a marked filamentation phenotype, clustering with components of DNA replication and repair in UMAP space (Figure 7A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on morphological analysis from the imaging pipeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "46f61709-4246-4fed-8efb-2c97fb72cb76",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C18",
+      "claim": "MSMEG_3213 knockdown showed a significant disturbance in normal cell-cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing the ParB-mCherry marker, we noted a significant disturbance in normal cell-cycle progression, consistent with the interpretation that knockdown of MSMEG_3213 disrupted DNA replication (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of ParB-mCherry localization patterns in the knockdown mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "9c710a29-1937-4134-92e4-9c6a271045d8",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C19",
+      "claim": "The transcriptional profile of MSMEG_3213 knockdown showed marked overlap with the DNA damage (SOS) regulon.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the whole-genome transcriptional profile on MSMEG_3213 knockdown showed marked overlap with the well-characterized DNA damage (SOS) regulon (Davis et al., 2002; Boshoff et al., 2003) induced by treatment with genotoxins such as the DNA crosslinking agent, mitomycin C (MMC, M\u00fcller et al., 2018; Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Nanopore RNA-Seq data comparing MSMEG_3213 knockdown to mitomycin C treatment, with citations to prior work on the SOS regulon.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "ddeca991-84da-4831-8a9b-b76f00b2f06c",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C20",
+      "claim": "REBASE lists MSMEG_3213 as a putative DNA methylase of a type II restriction-modification system.",
+      "claim_type": "EXPLICIT",
+      "source": "Following an extensive bioinformatic search, this conclusion gained further credence by the observation that REBASE (Roberts et al., 2015) lists MSMEG_3213 as putative DNA methylase of a type II R-M system, with MSMEG_3214 the associated restriction endonuclease (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis using the REBASE database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "51c264ac-4345-4bcb-9ea0-6c668c336b19",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C21",
+      "claim": "Dual silencing of MSMEG_3213 and MSMEG_3214 alleviated the lethal impact of MSMEG_3213 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of MSMEG_3214 alone produced no growth phenotype whereas dual silencing of MSMEG_3213 and MSMEG_3214 alleviated the lethal impact of MSMEG_3213 depletion (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from dual-targeting CRISPRi constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "ca48f177-8355-4a47-9c99-f616c2cdc411",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C22",
+      "claim": "M. smegmatis possesses a full complement of genes for the biosynthesis of L-histidine.",
+      "claim_type": "EXPLICIT",
+      "source": "M. smegmatis possesses a full complement of genes for the biosynthesis of the essential amino acid, L-histidine (Figure 8A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a known fact about M. smegmatis genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "20591035-ac7c-4c6f-93ba-257bd67eaacd",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C23",
+      "claim": "CRISPRi-mediated knockdown of histidine biosynthesis genes produced a filamentation phenotype that was tightly clustered in UMAP space.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, CRISPRi-mediated knockdown of histidine biosynthesis genes produced a filamentation phenotype that was tightly clustered in UMAP space (Figure 8C) and, among all the amino acid knockdowns, appeared unique to histidine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on morphological analysis and UMAP clustering of the histidine biosynthesis gene knockdowns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "0e617f50-17aa-488a-b64e-817746d745fa",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C24",
+      "claim": "Histidine supplementation reversed the growth inhibitory phenotype for all his knockdowns except hisA and hisS.",
+      "claim_type": "EXPLICIT",
+      "source": "The reversal of the growth inhibitory phenotype verified all his knockdowns as histidine auxotrophs, with the notable exceptions of hisA and hisS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on growth rescue experiments with histidine supplementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "6e632a82-86e0-4a8a-bc73-ba406ad4c635",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C25",
+      "claim": "Growth of the hisA CRISPRi mutant was rescued in medium supplemented with tryptophan.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports indicate that hisA likely encodes a bifunctional HisA/TrpF enzyme (Due et al., 2011). Consistent with this annotation, growth of the hisA CRISPRi mutant was rescued in medium supplemented with tryptophan (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth rescue experiments with tryptophan supplementation, consistent with prior literature on hisA function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "c34a755a-dacd-4b97-9001-15fff03b3a82",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C26",
+      "claim": "Histidine supplementation reversed the filamentation phenotype for all his knockdowns other than hisS.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, for all his knockdowns other than hisS (encoding the histidine tRNA synthetase), histidine supplementation reversed the filamentation phenotype (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on morphological analysis of histidine-supplemented cultures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "3c74aabe-c264-4139-b461-1ae64c65e676",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C27",
+      "claim": "The filaments observed under histidine starvation display minimal branching, differing from those resulting from depletion of divisome components.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphologically, the filaments observed under histidine starvation differ from those which result from depletion of components of the divisome: that is, the his mutants display minimal branching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on morphological comparison of different filamentation phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "d63254ea-eba5-4589-b02d-8dded94a97e4",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C28",
+      "claim": "Staining of peptidoglycan with NADA failed to resolve any clear septa in histidine biosynthesis mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, staining of peptidoglycan with the D-alanine analogue, NADA (Botella et al., 2017), failed to resolve any clear septa (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on peptidoglycan staining experiments using NADA.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "3da4758e-9136-403a-802a-d7902ffb1990",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C29",
+      "claim": "The majority of genes implicated in mycolic acid synthesis clustered tightly together in 2-dimensional UMAP space.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPRi-mediated inhibition of the components of this pathway produced consistent changes in cellular morphology (Figure 9B and C), with the majority of genes implicated in mycolic acid synthesis clustering tightly together in 2-dimensional UMAP space (Figure 9B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on UMAP analysis of morphological data for mycolic acid biosynthesis genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "b9cb294e-c171-43cd-9f5c-85ece0446d6b",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C30",
+      "claim": "Knockdown of components involved in early steps of mycolic acid synthesis produced similar results to inhibition of the final step involving MmpL3.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also evident that knockdown of components involved in early steps produced similar results to inhibition of the final step, involving the flippase, MmpL3 (Xu et al., 2017; Su et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on morphological comparison of different steps in the mycolic acid biosynthesis pathway.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "b4f63594-6041-40c1-8c46-8198ade9d583",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C31",
+      "claim": "Exposure to 1X MIC isoniazid triggered increases in cell width and morphological alterations closely similar to those produced by genetic silencing of inhA.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to 1X minimum inhibitory concentration (MIC90) INH triggered increases in cell width and morphological alterations which were closely similar to those produced by genetic silencing of inhA (Figure 9C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on morphological comparison between drug treatment and genetic knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "515259a7-e62f-4498-bc82-7797c620f3ab",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C32",
+      "claim": "Cells exposed to bedaquiline at 2X and 4X MIC clustered tightly with components of the mycobacterial ATP synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cells exposed to BDQ at 2X and 4X MIC clustered tightly with components of the mycobacterial ATP synthase and mapped to a region enriched for genes involved in energy metabolism (Figure 10A); the nearest neighbor for both 2X and 4X BDQ-treated cells was atpA (Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on UMAP analysis of morphological data from drug-treated cells compared to genetic knockdowns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "531ba108-a59a-4a29-bab7-4f985eab8dbc",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C33",
+      "claim": "Ethambutol-treated cells clustered tightly together, irrespective of applied concentration, and were positioned in lipid metabolism-enriched UMAP space.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell-wall targeting compounds similarly produced closely correlating profiles: EMB-treated cells clustered tightly together, irrespective of applied concentration, and were positioned in lipid metabolism-enriched UMAP space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on UMAP analysis of morphological data from ethambutol-treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "db8bbd34-99e7-41d1-82f2-cf6f711e3188",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C34",
+      "claim": "The nearest neighbor for ethambutol-treated cells at 2X and 4X MIC was pks16, a gene involved in mycolic acid synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The nearest neighbor at 2X and 4X MIC was pks16, a gene involved in mycolic acid synthesis; moreover, consistent with inhibition of arabinogalactan synthesis, aftA, ubiA, dprE1, glfT2 were proximal to the EMB-exposed cells at all three applied drug concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on nearest neighbor analysis in UMAP space for drug-treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "18942e41-87bc-4366-be6d-62dcbd29421f",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C35",
+      "claim": "Compounds targeting DNA replication generally produced filamentation and clustered accordingly.",
+      "claim_type": "EXPLICIT",
+      "source": "Compounds targeting DNA replication generally produced filamentation, and clustered accordingly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on morphological analysis and UMAP clustering of cells treated with DNA replication inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "44179d40-648c-4abf-a738-37b424aeb11c",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C36",
+      "claim": "Moxifloxacin-treated cells did not co-localize with gyrA and gyrB knockdowns in UMAP space and were instead associated with DNA metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, MOXI-treated cells did not co-localize with gyrA and gyrB knockdowns (the DNA-gyrase subunits, and targets of MOXI) in UMAP space and were instead associated with DNA metabolism, an observation common to all fluoroquinolones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on UMAP analysis comparing drug-treated cells to genetic knockdowns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "c17aa8c3-a006-4297-83c1-ad01e0132147",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C37",
+      "claim": "Novobiocin did not trigger filamentation and positioned closely with gyrA and gyrB genetic knockdowns.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, novobiocin (NVB), a gyrase B inhibitor (Chatterji et al., 2001), did not trigger filamentation, instead positioning closely with gyrA and gyrB genetic knockdowns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on morphological analysis and UMAP positioning of novobiocin-treated cells compared to genetic knockdowns.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "b1df9c06-9956-4666-a793-02498dc5b809",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C38",
+      "claim": "Compounds targeting peptidoglycan, including vancomycin and D-cycloserine, did not yield definitive profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, compounds targeting peptidoglycan, including vancomycin and D-cycloserine, did not yield definitive profiles (Figure 10\u2014figure supplements 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on morphological analysis of cells treated with peptidoglycan-targeting compounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "6e7840e4-7771-485d-a4a4-1a8eb6869898",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C39",
+      "claim": "The lack of definitive profiles for peptidoglycan-targeting compounds was probably due to the induction of lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual inspection of the data indicated that this was probably due to the induction of lysis, highlighting a limitation inherent in applying a single, 18 hr endpoint for analysis of all drug treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on manual inspection of the imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "7152716a-236f-4c57-af2b-b94c2079f9c1",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C40",
+      "claim": "Compounds targeting mycobacterial protein synthesis failed to produce responses analogous to their cognate gene knockdowns.",
+      "claim_type": "EXPLICIT",
+      "source": "It was noticeable, too, that compounds targeting mycobacterial protein synthesis \u2013 for example, linezolid (Leach et al., 2011), streptomycin or kanamycin (Riska et al., 2000) \u2013 similarly failed to produce responses analogous to their cognate gene knockdowns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on morphological comparison between drug treatment and genetic knockdowns, with citations to prior work on drug mechanisms.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "5ff25e0e-fa6a-4265-9c97-993c2a27b97f",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C41",
+      "claim": "CRISPRi produces polar effects on downstream genes in polycistronic operons.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPRi produces polar effects on downstream genes in polycistronic operons (Rock et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of CRISPRi cited from Rock et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "72fc7249-e0ed-4646-98ab-b1719066bd90",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C42",
+      "claim": "Of the 294 targeted genes, 229 genes (~78%) were not located in identified operons.",
+      "claim_type": "EXPLICIT",
+      "source": "Of our targeted set of 294 genes, 229 genes (~78%) were not located in identified operons (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of transcriptional landscape data from Martini et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "44b3641b-738c-456b-9b98-511a32b6bf49",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C43",
+      "claim": "Of the 65 genes within operons, 20 possessed downstream transcriptional start sites which would be expected to abrogate polar effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the remaining 65 genes within operons, 20 possessed downstream transcriptional start sites which would be expected to abrogate polar effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of transcriptional landscape data from Martini et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "87173dcc-c816-4951-9e3f-5a4efcafe169",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C44",
+      "claim": "The M. smegmatis ParB-mCherry reporter strain was chosen to enable visualization of the oriC proximate region of the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This strain was chosen as background to enable visualization of the oriC proximate region of the chromosome during imaging assays, thereby providing information about chromosome location dynamics and copy number as a function of essential gene knockdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the rationale for choosing this particular reporter strain.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "6769a207-4278-41c7-a9a7-2967b8206755",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C46",
+      "claim": "The mechanism underlying the filamentation response to histidine deficiency likely reflects translation defects resulting from uncharged tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism underlying the filamentation response to histidine deficiency remains unclear, but likely reflects translation defects resulting from uncharged tRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation by the authors based on the observed phenotypes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "befe1a27-53ec-4bf3-b1b1-a771c56898fb",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C47",
+      "claim": "The fact that clustering was observed for mycolic acid synthesis genes despite their location throughout the chromosome appeared to eliminate polar effects as a potential confounder.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the fact that clustering was observed despite the location of these genes throughout the chromosome appeared to eliminate polar effects as a potential confounder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that genes scattered across the chromosome still cluster together morphologically.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "d315c040-106b-4be8-ac86-6280ff4c825d",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C48",
+      "claim": "The role of mycobacterial DNA gyrase in the removal of torsional stress and the maintenance of template topology during RNA transcription is consistent with the dominant effect of gyrA and gyrB knockdown manifesting as more similar to RNA polymerase inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "While this separation in UMAP space might be deemed surprising, two factors are salient to the interpretation of this result: firstly, the role of mycobacterial DNA gyrase in the removal of torsional stress and the maintenance of template topology during RNA transcription (Ahmed et al., 2017) is consistent with the dominant effect of gyrA and gyrB knockdown manifesting as more similar to RNA polymerase inhibition (here, the close association with rpoB in the UMAP analysis is potentially telling)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on known gyrase function cited from Ahmed et al., 2017 and the observed UMAP clustering.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "95b9a80b-06d4-4e97-882f-6192b236a006",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C49",
+      "claim": "The filamentation observed on fluoroquinolone exposure is SOS-dependent and involves the formation of lethal double-strand DNA breaks following drug-mediated trapping of the DNA-gyrase complex.",
+      "claim_type": "EXPLICIT",
+      "source": "and, secondly, the filamentation observed on fluoroquinolone exposure is SOS-dependent (Drlica et al., 2008) and involves the formation of lethal double-strand DNA breaks following drug-mediated trapping of the DNA-gyrase complex \u2013 an effect which ATc-induced CRISPRi knockdown does not produce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known mechanism of fluoroquinolone action, cited from Drlica et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "73f0ac5a-7ef2-4ad9-b8d9-c7b18ffd3b10",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C51",
+      "claim": "Hypomorphs provide a powerful means to identify hypersusceptibilities consequent on bacillary exposure to chemicals which inhibit the same cognate gene or pathway targeted by the knockdown system.",
+      "claim_type": "EXPLICIT",
+      "source": "In addressing this dilemma, it is important to remember that hypomorphs provide a powerful means to identify hypersusceptibilities consequent on bacillary exposure to chemicals which inhibit the same (cognate) gene or pathway targeted by the knockdown system (i.e. the genetic and antibiotic targets are identical)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle about hypomorph screens stated by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "29d9c382-a325-4dc3-a300-ef441f40e9bd",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C52",
+      "claim": "Whole-cell morphotypes report on the physiological response to lethal stress induced by essential gene silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "in contrast, whole-cell morphotypes report on the physiological response to (or manifestation of) lethal stress induced by essential gene silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual distinction made by the authors about what morphotypes represent.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "c11f8394-9ec4-4622-9df3-7336042e9321",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C53",
+      "claim": "A key element distinguishing antibiotic-mediated target inhibition from transcript depletion is time: antibiotic treatment inhibits active processes triggering intracellular catastrophe, whereas gene silencing is much more gradual.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, a key element distinguishing antibiotic-mediated target inhibition or corruption from transcript depletion is time: antibiotic treatment inhibits (or corrupts) active processes, triggering intracellular catastrophe (in the case of MOXI treatment, an SOS response), whereas gene silencing is much more gradual, or ordered, avoiding the impact of instantaneous loss of function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual explanation provided by the authors to explain differences between drug treatment and genetic knockdown.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "3ecf8e04-f3ec-4a42-a5b0-d3fc3e804c3a",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C54",
+      "claim": "The decision to apply an 18 hr endpoint for all analyses might inadvertently have biased the 'strongest' phenotypes to genes involved in DNA replication, cell division, and cell-wall metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Although motivated primarily by pragmatism, the decision to apply an 18 hr endpoint for all analyses might inadvertently have biased the 'strongest' phenotypes to genes involved in DNA replication, cell division, and cell-wall metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is acknowledged as a potential limitation by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "8c684723-d211-409d-b5ba-1b99f7bf60be",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C55",
+      "claim": "Increasing drug concentration might be expected to have two principal effects: increasing the rate of cell death while retaining the primary MOA or increasing the likelihood of hitting secondary targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, increasing drug concentration might be expected to have two principal effects \u2013 increasing the rate of cell death while retaining the primary MOA (put simply, cells treated at 4X MIC will be further along the 'path to death' at 18 hr than those treated at 1X MIC) or increasing the likelihood of hitting secondary targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation provided by the authors for observed concentration-dependent effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "5f427303-8d3c-437f-9bd4-d3ac1e479d98",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C56",
+      "claim": "Optimizing drug concentration and exposure time is critical in avoiding convergence on a common stress pathway that obscures the informative, drug-specific transcriptional signature.",
+      "claim_type": "EXPLICIT",
+      "source": "This issue has been noted previously in transcriptional profiling of the M. tuberculosis drug-exposure response (Boshoff et al., 2004) in which optimizing the drug concentration and exposure time were critical in avoiding convergence on a common stress pathway, obscuring the informative, drug-specific transcriptional signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Boshoff et al., 2004 regarding transcriptional profiling considerations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "d4ecae33-a010-4093-af74-b1c377cce7c9",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C57",
+      "claim": "The propensity for the rate of gene-product depletion to impact qualitatively the terminal phenotype has been elegantly demonstrated in B. subtilis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the propensity for the rate of gene-product depletion to impact qualitatively the terminal phenotype has been elegantly demonstrated in B. subtilis (Peters et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Peters et al., 2016 regarding phenotype dependence on depletion rate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "2e57aa76-5691-4fd9-b0cc-892da45b1b81",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C58",
+      "claim": "Gene essentialities, metabolic vulnerabilities and drug susceptibilities can alter as a function of growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "There is ample precedent in the literature indicating that gene essentialities, metabolic vulnerabilities and drug susceptibilities can alter as a function of growth conditions; therefore, the phenotypes presented here are necessarily condition-specific, and could benefit significantly from expanding these analyses to other, 'disease-relevant' culture systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known principle in the field, acknowledged as a limitation of the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "f136d147-c08a-4a46-b5e6-6b4a13449647",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C59",
+      "claim": "Morphological profiling appears to offer a rapid means of preliminary gene function assignment or compound MOA.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphological profiling appears to offer a rapid means of preliminary gene function assignment or compound MOA; however, definitive validation is required \u2013 via further biochemical and/or functional analysis \u2013 to ratify the functional assignments predicted using this tool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors about the utility and limitations of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "ec04218f-af32-4e1e-8866-c58de4cac5d5",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "claim_id": "C60",
+      "claim": "All data from the screen are made available via an interactive database at https://timdewet.shinyapps.io/MorphotypicLanscape/.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our intention to generate a community-accessible resource, all data from the screen are made available via an interactive database (https://timdewet.shinyapps.io/MorphotypicLanscape/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a resource provided by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4af60b5c-9559-4e9e-8eca-70afdce133f2",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "An arrayed library of 276 validated CRISPRi mutants targeting essential M. smegmatis genes was successfully constructed, with approximately 90% of strains lacking prior morphological characterization and almost 40% having no biochemical or structural information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 collectively demonstrate successful library construction with appropriate validation. The 93% success rate (C2) is well-documented through sequencing and growth assays. The novelty of the resource is established through literature review (C3, C4), though these percentages rely on the completeness of the cited supplementary file.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "957ebbf9-254a-4b82-ab94-b71178e03550",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An 18-hour ATc exposure duration was determined optimal for CRISPRi knockdown experiments, representing approximately 6-7 doubling times and achieving 64-128 fold dilution of pre-existing protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 are supported by time-lapse microscopy data on three well-characterized genes. However, the authors acknowledge this single timepoint may not be optimal for all mutants (C54), representing a pragmatic rather than universally optimal choice. The calculation in C6 appropriately cites prior work for doubling time.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "7ef23dac-3c18-4f41-9f9f-67c0948dfd08",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A high-throughput quantitative imaging and analysis pipeline was developed, achieving ROC AUC of 0.952 for cell classification and high reproducibility (r=0.88) across 163,559 cells from 263 strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 demonstrate robust pipeline development with appropriate validation metrics. The classifier performance (C7) is well-validated on reserved test data. Dataset size (C8) is substantial. Reproducibility (C9) is good though not excellent, with r=0.88 indicating some biological or technical variation between replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "e27b4518-60bc-43d6-b03b-e000860e5703",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Morphological profiling revealed that 78% of essential genes produced dramatically aberrant phenotypes, with distinct patterns: DNA metabolism/divisome/translation genes caused elongation, histidine biosynthesis uniquely caused filamentation, and cell-wall genes caused shortening with bulging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 describe the morphological atlas findings. The 78% figure (C10) is based on Z-score analysis with clear thresholds. The categorical descriptions (C11-C13) are supported by visual inspection and quantitative analysis, though the histidine filamentation observation (C12) is noted as surprising and unprecedented, requiring further mechanistic investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "ed32668f-c284-4987-b61f-d6374a372010",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "UMAP dimensionality reduction with hdbscan clustering produced three reproducible clusters, with genes in verified operons and predicted protein-protein interaction pairs showing non-random proximity in UMAP space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 demonstrate successful unsupervised clustering and biological validation. The three-cluster structure (C14) is reproducible across 100 initializations. Validation using operons (C15) and protein interactions (C16) from independent sources provides strong evidence that UMAP space captures biological relationships, though the authors acknowledge CRISPRi polar effects may contribute to operonic clustering.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "183242df-bc59-41df-994f-f4d8ba5ffe87",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MSMEG_3213 was identified as a putative DNA methylase of a type II restriction-modification system through morphological profiling, transcriptional analysis showing SOS regulon overlap, REBASE annotation, and genetic rescue experiments with dual MSMEG_3213/3214 knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 provide converging evidence for MSMEG_3213 function. Morphological clustering with DNA replication genes (C17), cell cycle disruption (C18), SOS response transcriptional signature (C19), REBASE annotation (C20), and genetic rescue (C21) collectively support the restriction-modification system hypothesis. However, the authors appropriately note that definitive biochemical validation is still required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "0b0321bd-a7cd-4aae-95e8-32535a639ac6",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Histidine biosynthesis gene knockdowns produced a unique filamentation phenotype that clustered tightly in UMAP space, was reversed by histidine supplementation (except for hisS), and differed morphologically from divisome-related filamentation with minimal branching and no clear septa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 describe a novel pathway-specific phenotype. The tight UMAP clustering (C23) and rescue experiments (C24-C26) provide strong evidence. The morphological distinctions (C27-C28) are well-documented. However, the mechanism remains unclear (C46), and this represents an unprecedented observation requiring further investigation. The hisA rescue with tryptophan (C25) appropriately validates its bifunctional annotation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "ab90a4cc-d931-47d1-aa6c-b2116a9ee5ae",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mycolic acid biosynthesis genes clustered tightly in UMAP space with consistent morphological changes regardless of pathway position, and isoniazid treatment at 1X MIC produced morphological changes similar to inhA genetic silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 demonstrate pathway-level consistency and chemical-genetic validation. The tight clustering (C29) despite chromosomal dispersion argues against polar effects (C47). Consistency across pathway steps (C30) is notable. The isoniazid-inhA correspondence (C31) validates the approach for MOA determination, though the authors acknowledge this represents proof-of-concept rather than comprehensive validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "4389a1e8-8723-4247-89d3-5d0875c70291",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Drug-treated cells showed MOA-consistent clustering for several compound classes: bedaquiline clustered with ATP synthase genes, ethambutol with lipid metabolism, DNA replication inhibitors produced filamentation, though moxifloxacin-treated cells did not co-localize with gyrA/gyrB knockdowns while novobiocin did.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 demonstrate partial success in MOA determination. Strong concordance for bedaquiline (C32), ethambutol (C33-C34), and general DNA replication inhibitors (C35) supports the approach. The moxifloxacin/novobiocin distinction (C36-C37) is explained by mechanistic differences (C48-C49): fluoroquinolones induce SOS-dependent DNA breaks while novobiocin does not, and gyrase has transcriptional roles beyond DNA replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "409bc8d1-3ad3-47d9-98f4-9a7ca3d75209",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Peptidoglycan-targeting compounds and protein synthesis inhibitors failed to produce definitive morphological profiles, likely due to rapid lysis induction and differences between drug-mediated inhibition versus genetic knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 acknowledge important limitations. The lack of definitive profiles for peptidoglycan inhibitors (C38) is reasonably attributed to lysis (C39) based on manual inspection. Protein synthesis inhibitor failures (C40) highlight that the approach may not work for all target classes, particularly large macromolecular complexes. These limitations are appropriately discussed (C53-C54).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "0fae03e6-0268-41ad-9034-b191f6261ae2",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Of the 294 targeted genes, 229 genes (~78%) were not in identified operons, and 20 of the 65 operonic genes possessed downstream transcriptional start sites expected to abrogate CRISPRi polar effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 address a critical confounding factor in CRISPRi experiments. The analysis using transcriptional landscape data from Martini et al. 2019 (C42-C43) is appropriate. However, 34 genes remain where polar effects could complicate interpretation, which the authors acknowledge. The observation that dispersed mycolic acid genes cluster together (C47) provides empirical evidence that polar effects don't dominate the morphological signatures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "ab60e950-47a5-4c76-9ed3-5fb4e67cb24a",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The mechanism underlying histidine starvation-induced filamentation likely reflects translation defects from uncharged tRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C46 is explicitly speculative, as acknowledged by the authors. While the hypothesis is reasonable given that histidine starvation would produce uncharged his-tRNAs affecting translation, no direct evidence is provided. The observation that hisS (tRNA synthetase) knockdown filamentation is not rescued by histidine (C26) supports a tRNA-related mechanism, but definitive validation requires additional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "30314538-a785-44c9-943a-f619f401b041",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study has inherent limitations including potential bias from the single 18-hour endpoint, concentration-dependent drug effects, condition-specific phenotypes, and the need for time-optimization and validation in disease-relevant conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 represent appropriate acknowledgment of limitations. The 18-hour endpoint bias (C54) is recognized as pragmatic but potentially non-optimal. Concentration effects (C55) are observed but not fully resolved. The citations to prior work (C56-C57) appropriately contextualize these issues. The condition-specificity caveat (C58) is important for interpretation. These represent honest assessment of the approach's boundaries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "406ca114-46e7-4bf1-b268-a330ad86a3fa",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Morphological profiling offers a rapid means for preliminary gene function assignment and compound MOA determination, with all data made available via an interactive online database.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 appropriately summarize the utility and accessibility of the resource. The qualification that definitive validation is required (C59) is important and honest. The provision of an interactive database (C60) enhances community value. However, the actual utility will depend on the database's usability and maintenance, which cannot be fully evaluated from the manuscript alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "2a023fb1-5203-4363-b83a-72bc6c04fef0",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The M. smegmatis ParB-mCherry reporter strain was chosen to enable visualization of chromosome dynamics and copy number during essential gene knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 describes the rationale for strain selection. This is appropriate and the ParB-mCherry data are used in the analysis (e.g., C18 for MSMEG_3213). However, the manuscript doesn't extensively exploit this feature for most mutants, suggesting this capability remains underutilized in the current study but provides value for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    },
+    {
+      "id": "3f85ca9e-e99d-464c-9e33-878d61adb731",
+      "content_id": "3bea5c0f-1ad6-4286-b510-7ff16b39febd",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Fundamental differences between genetic knockdown and drug treatment explain some discordances: genetic silencing is gradual while drug treatment causes instantaneous inhibition or corruption of function, and morphotypes report on physiological stress responses rather than direct target inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49, C51-C53 provide important conceptual framework for interpreting chemical-genetic comparisons. The distinction between hypomorph screens (identifying cognate targets, C51) versus morphological profiling (reporting stress responses, C52) is well-articulated. The time-dependent differences (C53) and specific examples like fluoroquinolone SOS induction (C49) versus gyrase knockdown are appropriately cited and reasoned.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:08:19.587700Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8282a5cf-6ea9-4ed3-a09f-a33ac7a0c040",
+      "result_id": "4af60b5c-9559-4e9e-8eca-70afdce133f2"
+    },
+    {
+      "claim_id": "ac753658-c999-46bf-a582-7e06bc447107",
+      "result_id": "4af60b5c-9559-4e9e-8eca-70afdce133f2"
+    },
+    {
+      "claim_id": "2836437a-d41f-4e70-bc2a-dd5a5430169f",
+      "result_id": "4af60b5c-9559-4e9e-8eca-70afdce133f2"
+    },
+    {
+      "claim_id": "9182c638-21a6-4fab-8146-417a9a278cdc",
+      "result_id": "957ebbf9-254a-4b82-ab94-b71178e03550"
+    },
+    {
+      "claim_id": "ae0893a7-2532-4f13-abaf-6329b1b5fb07",
+      "result_id": "957ebbf9-254a-4b82-ab94-b71178e03550"
+    },
+    {
+      "claim_id": "7f69c5ba-ce34-43aa-8174-d8859c8fc19b",
+      "result_id": "7ef23dac-3c18-4f41-9f9f-67c0948dfd08"
+    },
+    {
+      "claim_id": "a603f6ea-d0dd-48c3-a585-2a1a79e343c1",
+      "result_id": "7ef23dac-3c18-4f41-9f9f-67c0948dfd08"
+    },
+    {
+      "claim_id": "1e4ba7d6-9938-44b8-a88a-35f116de87da",
+      "result_id": "7ef23dac-3c18-4f41-9f9f-67c0948dfd08"
+    },
+    {
+      "claim_id": "7389c221-8509-4a27-8414-d6baee0cc99d",
+      "result_id": "e27b4518-60bc-43d6-b03b-e000860e5703"
+    },
+    {
+      "claim_id": "fa85e7a3-9de0-4a38-bb2b-bd78a0b9f95b",
+      "result_id": "e27b4518-60bc-43d6-b03b-e000860e5703"
+    },
+    {
+      "claim_id": "6623b335-f9e7-41f9-b5f2-f61d3a8552e3",
+      "result_id": "e27b4518-60bc-43d6-b03b-e000860e5703"
+    },
+    {
+      "claim_id": "c3232ea1-1766-4d1c-a12f-52ffd475e385",
+      "result_id": "e27b4518-60bc-43d6-b03b-e000860e5703"
+    },
+    {
+      "claim_id": "519b870c-5a11-4b90-b7c5-3d52f4210ee1",
+      "result_id": "ed32668f-c284-4987-b61f-d6374a372010"
+    },
+    {
+      "claim_id": "deaa6906-e06f-4aa9-b586-2a5b79d7cf71",
+      "result_id": "ed32668f-c284-4987-b61f-d6374a372010"
+    },
+    {
+      "claim_id": "d12f4bee-6ee1-499b-944e-6a6b684eeceb",
+      "result_id": "ed32668f-c284-4987-b61f-d6374a372010"
+    },
+    {
+      "claim_id": "eab90a33-cfb4-42b5-b971-c56fe4de48f8",
+      "result_id": "183242df-bc59-41df-994f-f4d8ba5ffe87"
+    },
+    {
+      "claim_id": "46f61709-4246-4fed-8efb-2c97fb72cb76",
+      "result_id": "183242df-bc59-41df-994f-f4d8ba5ffe87"
+    },
+    {
+      "claim_id": "9c710a29-1937-4134-92e4-9c6a271045d8",
+      "result_id": "183242df-bc59-41df-994f-f4d8ba5ffe87"
+    },
+    {
+      "claim_id": "ddeca991-84da-4831-8a9b-b76f00b2f06c",
+      "result_id": "183242df-bc59-41df-994f-f4d8ba5ffe87"
+    },
+    {
+      "claim_id": "51c264ac-4345-4bcb-9ea0-6c668c336b19",
+      "result_id": "183242df-bc59-41df-994f-f4d8ba5ffe87"
+    },
+    {
+      "claim_id": "ca48f177-8355-4a47-9c99-f616c2cdc411",
+      "result_id": "0b0321bd-a7cd-4aae-95e8-32535a639ac6"
+    },
+    {
+      "claim_id": "20591035-ac7c-4c6f-93ba-257bd67eaacd",
+      "result_id": "0b0321bd-a7cd-4aae-95e8-32535a639ac6"
+    },
+    {
+      "claim_id": "0e617f50-17aa-488a-b64e-817746d745fa",
+      "result_id": "0b0321bd-a7cd-4aae-95e8-32535a639ac6"
+    },
+    {
+      "claim_id": "6e632a82-86e0-4a8a-bc73-ba406ad4c635",
+      "result_id": "0b0321bd-a7cd-4aae-95e8-32535a639ac6"
+    },
+    {
+      "claim_id": "c34a755a-dacd-4b97-9001-15fff03b3a82",
+      "result_id": "0b0321bd-a7cd-4aae-95e8-32535a639ac6"
+    },
+    {
+      "claim_id": "3c74aabe-c264-4139-b461-1ae64c65e676",
+      "result_id": "0b0321bd-a7cd-4aae-95e8-32535a639ac6"
+    },
+    {
+      "claim_id": "d63254ea-eba5-4589-b02d-8dded94a97e4",
+      "result_id": "0b0321bd-a7cd-4aae-95e8-32535a639ac6"
+    },
+    {
+      "claim_id": "3da4758e-9136-403a-802a-d7902ffb1990",
+      "result_id": "ab90a4cc-d931-47d1-aa6c-b2116a9ee5ae"
+    },
+    {
+      "claim_id": "b9cb294e-c171-43cd-9f5c-85ece0446d6b",
+      "result_id": "ab90a4cc-d931-47d1-aa6c-b2116a9ee5ae"
+    },
+    {
+      "claim_id": "b4f63594-6041-40c1-8c46-8198ade9d583",
+      "result_id": "ab90a4cc-d931-47d1-aa6c-b2116a9ee5ae"
+    },
+    {
+      "claim_id": "515259a7-e62f-4498-bc82-7797c620f3ab",
+      "result_id": "4389a1e8-8723-4247-89d3-5d0875c70291"
+    },
+    {
+      "claim_id": "531ba108-a59a-4a29-bab7-4f985eab8dbc",
+      "result_id": "4389a1e8-8723-4247-89d3-5d0875c70291"
+    },
+    {
+      "claim_id": "db8bbd34-99e7-41d1-82f2-cf6f711e3188",
+      "result_id": "4389a1e8-8723-4247-89d3-5d0875c70291"
+    },
+    {
+      "claim_id": "18942e41-87bc-4366-be6d-62dcbd29421f",
+      "result_id": "4389a1e8-8723-4247-89d3-5d0875c70291"
+    },
+    {
+      "claim_id": "44179d40-648c-4abf-a738-37b424aeb11c",
+      "result_id": "4389a1e8-8723-4247-89d3-5d0875c70291"
+    },
+    {
+      "claim_id": "c17aa8c3-a006-4297-83c1-ad01e0132147",
+      "result_id": "4389a1e8-8723-4247-89d3-5d0875c70291"
+    },
+    {
+      "claim_id": "b1df9c06-9956-4666-a793-02498dc5b809",
+      "result_id": "409bc8d1-3ad3-47d9-98f4-9a7ca3d75209"
+    },
+    {
+      "claim_id": "6e7840e4-7771-485d-a4a4-1a8eb6869898",
+      "result_id": "409bc8d1-3ad3-47d9-98f4-9a7ca3d75209"
+    },
+    {
+      "claim_id": "7152716a-236f-4c57-af2b-b94c2079f9c1",
+      "result_id": "409bc8d1-3ad3-47d9-98f4-9a7ca3d75209"
+    },
+    {
+      "claim_id": "5ff25e0e-fa6a-4265-9c97-993c2a27b97f",
+      "result_id": "0fae03e6-0268-41ad-9034-b191f6261ae2"
+    },
+    {
+      "claim_id": "72fc7249-e0ed-4646-98ab-b1719066bd90",
+      "result_id": "0fae03e6-0268-41ad-9034-b191f6261ae2"
+    },
+    {
+      "claim_id": "44b3641b-738c-456b-9b98-511a32b6bf49",
+      "result_id": "0fae03e6-0268-41ad-9034-b191f6261ae2"
+    },
+    {
+      "claim_id": "6769a207-4278-41c7-a9a7-2967b8206755",
+      "result_id": "ab60e950-47a5-4c76-9ed3-5fb4e67cb24a"
+    },
+    {
+      "claim_id": "3ecf8e04-f3ec-4a42-a5b0-d3fc3e804c3a",
+      "result_id": "30314538-a785-44c9-943a-f619f401b041"
+    },
+    {
+      "claim_id": "8c684723-d211-409d-b5ba-1b99f7bf60be",
+      "result_id": "30314538-a785-44c9-943a-f619f401b041"
+    },
+    {
+      "claim_id": "5f427303-8d3c-437f-9bd4-d3ac1e479d98",
+      "result_id": "30314538-a785-44c9-943a-f619f401b041"
+    },
+    {
+      "claim_id": "d4ecae33-a010-4093-af74-b1c377cce7c9",
+      "result_id": "30314538-a785-44c9-943a-f619f401b041"
+    },
+    {
+      "claim_id": "2e57aa76-5691-4fd9-b0cc-892da45b1b81",
+      "result_id": "30314538-a785-44c9-943a-f619f401b041"
+    },
+    {
+      "claim_id": "f136d147-c08a-4a46-b5e6-6b4a13449647",
+      "result_id": "406ca114-46e7-4bf1-b268-a330ad86a3fa"
+    },
+    {
+      "claim_id": "ec04218f-af32-4e1e-8866-c58de4cac5d5",
+      "result_id": "406ca114-46e7-4bf1-b268-a330ad86a3fa"
+    },
+    {
+      "claim_id": "87173dcc-c816-4951-9e3f-5a4efcafe169",
+      "result_id": "2a023fb1-5203-4363-b83a-72bc6c04fef0"
+    },
+    {
+      "claim_id": "d315c040-106b-4be8-ac86-6280ff4c825d",
+      "result_id": "3f85ca9e-e99d-464c-9e33-878d61adb731"
+    },
+    {
+      "claim_id": "95b9a80b-06d4-4e97-882f-6192b236a006",
+      "result_id": "3f85ca9e-e99d-464c-9e33-878d61adb731"
+    },
+    {
+      "claim_id": "73f0ac5a-7ef2-4ad9-b8d9-c7b18ffd3b10",
+      "result_id": "3f85ca9e-e99d-464c-9e33-878d61adb731"
+    },
+    {
+      "claim_id": "29d9c382-a325-4dc3-a300-ef441f40e9bd",
+      "result_id": "3f85ca9e-e99d-464c-9e33-878d61adb731"
+    },
+    {
+      "claim_id": "c11f8394-9ec4-4622-9df3-7336042e9321",
+      "result_id": "3f85ca9e-e99d-464c-9e33-878d61adb731"
+    }
+  ],
+  "comparisons": []
+}

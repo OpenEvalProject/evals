@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C73",
+      "C74",
+      "C90",
+      "C91"
+    ],
+    "result": "Rats display substantial individual variability in progressive ratio (PR) performance for sucrose reward (270.4\u00b111.3 vs 57.4\u00b14.6 lever presses for highS vs lowS), which is specific to high-effort conditions and not explained by differences in fixed-ratio (FR) acquisition, locomotor ability, or inactive lever pressing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 provide converging behavioral evidence with appropriate statistical tests (unpaired t-tests, two-way ANOVA) showing dramatic differences in PR performance but not FR performance. The sample size (N=111 rats across 7 cohorts) is adequate, and controls for confounding variables (inactive lever, acquisition) are appropriate. The conclusion that variability is specific to effort-based motivation (C73-C74) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C75"
+    ],
+    "result": "Individual differences in motivation are not associated with baseline stress levels, as measured by plasma corticosterone concentrations, which did not differ between groups and showed no correlation with PR breakpoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 present corticosterone data with appropriate statistical analysis (correlation, r\u00b2=0.0005, p=0.93). However, the sample size is relatively small (N=5/group) and represents only a subset of one cohort. While the lack of correlation is clear, the limited sample size and single timepoint measurement reduce confidence that stress differences don't contribute to the phenotype under other conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C76"
+    ],
+    "result": "RNA sequencing of NAc shell tissue reveals divergent transcriptome profiles between lowS and highS rats, with 231 differentially expressed transcripts including genes related to potassium channels (Kcna4, Kcnab1, Kcnc4, Kcnv1, Hcn4) and dopamine signaling (Pdyn, Drd1, Penk, Drd2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 describe RNA-seq results with appropriate methodology (FDR<0.05, log2fold\u22650.5). The pathway analysis using Reactome is appropriate. However, the sample size is very small (N=3-4/group), which limits statistical power and raises concerns about biological variability. The manuscript does not report validation of key transcripts by qPCR or other methods, which is a significant limitation. The conclusion (C76) that behavioral differences are linked to genomic variability is supported but would be strengthened by validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C77",
+      "C78",
+      "C100"
+    ],
+    "result": "LowS rats exhibit increased NAc shell SPN excitability with more action potentials across depolarizing current injections, decreased afterhyperpolarization, and 27% faster IA current inactivation kinetics, without differences in IA amplitude, BK currents, or total K+ conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 present electrophysiological data with appropriate statistical tests (two-way RM ANOVA, unpaired t-tests). The sample sizes are adequate (n=9-16 cells, N=4-5 animals/group). The finding of faster IA inactivation without amplitude changes (C41 vs C40) is particularly interesting and well-documented. The conclusion (C78, C100) that increased spiking is consistent with faster IA inactivation is mechanistically sound. However, the manuscript does not address potential confounds from cell-type heterogeneity (D1 vs D2 SPNs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C79",
+      "C82",
+      "C101",
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C114"
+    ],
+    "result": "The Kv1.4 antagonist UK-78,282 (100 nM) selectively suppresses action potential output in lowS but not highS SPNs, reduces IA amplitude equally in both groups, but differentially affects IA inactivation kinetics (slowing inactivation in lowS: 7.32\u219210.57 ms; no effect in highS: 9.07\u21928.9 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 provide compelling electrophysiological evidence with appropriate paired and unpaired statistical tests. The differential effect on inactivation kinetics (C47 vs C48) despite similar effects on amplitude (C46) is a key finding supporting the conclusion (C79, C82) that Kv1.4 gating differences, rather than channel number, distinguish the groups. The voltage-dependence differences (C106-C107) add mechanistic insight. However, the interpretation that reduced Kcna4 transcript doesn't reduce surface availability (C114) is speculative and would benefit from protein-level measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C88"
+    ],
+    "result": "Microinjection of UK-78,282 (100 nM) into the NAc shell selectively increases PR breakpoints, active lever presses, and pellets earned in lowS rats (p=0.001, p=0.0006, p=0.007 respectively) but not in midS or highS rats, demonstrating behavioral rescue of the low motivation phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 present behavioral pharmacology data with appropriate one-way ANOVAs showing selective effects in lowS animals. The sample sizes are adequate (N=6-7/group), and the dose-response (1 nM vs 100 nM) strengthens the interpretation. The finding of reduced inactive lever pressing in highS rats (C111) is puzzling and inadequately explained. The conclusion (C112, C88) that Kv1.4 blockade selectively rescues low motivation is well-supported, though the mechanism by which decreased neuronal excitability increases motivation requires further explanation given the inverse relationship proposed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C104",
+      "C105",
+      "C108"
+    ],
+    "result": "MidS animals display intermediate electrophysiological properties: spike frequency lower than lowS but not different from highS, IA decay time intermediate between groups, and no sensitivity to UK-78,282 in spike frequency or IA kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99, C104-C105, C108 characterize the midS group with appropriate statistics. The intermediate phenotype is consistent with the behavioral and transcriptomic data. However, the lack of UK-78,282 sensitivity in midS animals despite intermediate IA decay times (C99) is not fully explained and suggests complex regulatory mechanisms. This result supports the overall model but highlights gaps in mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C80",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors propose that faster IA inactivation in lowS animals may result from decreased D2 receptor-mediated CaMKII activity, supported by RNA-seq showing downregulated Drd2 and upregulated Camk2n2 (CaMKII inhibitor) in lowS tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C52 cite prior work on CaMKII regulation of Kv1.4, and C116 shows relevant transcript changes. However, C80 is explicitly speculative, and C115 shows no differences in CaMKII isoform expression. This mechanism is plausible but lacks direct experimental support (no CaMKII activity measurements, no phosphorylation state analysis). The proposal requires validation through additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C81",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors propose that lower Kcnab1 (Kv\u03b21) expression in lowS animals may decrease Kv1.x heterotetramer availability and contribute to faster Kv1.4 inactivation, though Kcna1 and Kcna2 (Kv1.1/1.2) expression is unchanged between lowS and highS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C54 cite prior work on heterotetramer assembly, C118 shows decreased Kcnab1 in lowS, and C117 shows no change in Kcna1/2. However, C81 is explicitly speculative. The proposal is mechanistically plausible but lacks direct evidence (no co-immunoprecipitation, no functional validation of heterotetramer composition). The complexity in midS animals (C119-C120) further complicates interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "The authors conclude that lower motivation is linked to divergent transcriptome, increased SPN output dependent on faster Kv1.4 inactivation, and that Kv1.4 gating modulators represent potential therapeutic targets for psychiatric disorders with motivational deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 summarize the main findings, which are well-supported by the data presented. However, C89's therapeutic speculation is premature given: (1) the study uses only healthy rats with natural variability, not disease models; (2) the relationship between NAc activity and motivation is complex and context-dependent; (3) no toxicity or side-effect data for chronic Kv1.4 modulation; (4) UK-78,282 is a research tool, not a therapeutic candidate. The therapeutic claim requires substantial additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C122",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors discuss that the relationship between NAc firing and reward-seeking is complex, with prior studies showing context-dependent excitation and inhibition, and that effort-based motivation likely does not depend on uniformly sustained changes in firing across all NAc SPNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61, C122, C125-C127 appropriately cite prior literature and acknowledge complexity in NAc function. This contextualizes the current findings and appropriately tempers interpretation. The discussion recognizes that slice recordings may not capture the dynamic, context-dependent activity patterns observed in vivo, which is an important limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors address potential confounds from D1 vs D2 SPN heterogeneity, arguing against biased sampling based on random selection, similar input resistance/rheobase between groups, and RNA-seq showing reduced expression of both Drd1 and Drd2 in lowS animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C64 cite conflicting prior literature on D1/D2 function. Claims C123-C124 present arguments against biased sampling, but these are indirect. The manuscript lacks direct identification of recorded cell types (no immunohistochemistry, no transgenic reporters). While the arguments are reasonable, the uncertainty about cell-type composition remains a significant limitation that could affect interpretation of the electrophysiological results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C113"
+    ],
+    "result": "UK-78,282 at 100 nM concentration is expected to be highly selective for Kv1.4 over other channels, with ~200-fold selectivity over Kv3.4 and the next nearest target (Kv1.3, IC50=280 nM) not expressed in striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69, C113 appropriately cite pharmacological characterization of UK-78,282 and channel expression patterns. The selectivity argument is sound at 100 nM concentration. However, the manuscript does not discuss potential off-target effects at higher local concentrations near the injection site in behavioral experiments, or effects on other Kv1 family members (Kv1.1, Kv1.2) that are expressed in NAc.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors propose that Kv1.2 co-assembly with Kv1.4 may contribute to voltage-dependence shifts and use-dependent activation in highS animals, potentially suppressing action potential output during spike trains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 cite prior work on Kv1.2 effects, and C83-C84 propose mechanisms. However, these are speculative (C83 explicitly so) and lack direct experimental support. The manuscript does not measure heterotetramer composition, use-dependent properties, or test predictions of this model. While mechanistically plausible, this remains a hypothesis requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Prior studies in Kv1.4 knockout mice show brain region-specific effects: cortical neurons have shorter action potential width but similar excitability measures, suprachiasmatic neurons show increased firing, and NAc neurons show dopamine-mediated suppression of A-type currents linked to increased firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 appropriately cite prior literature to contextualize the current findings. The discussion acknowledges brain region-specific effects and notes that prior NAc studies did not specifically examine Kv1.4. This provides appropriate context for interpreting the current results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Monkeys successfully learned a Cue-Set-Go motor timing task requiring flexible production of two time intervals (800 ms and 1500 ms) using two effectors (saccade and button press), with four randomly interleaved trial types and minimal errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 collectively establish successful task performance. The behavioral data (C3) shows animals flexibly switched between trial types, with no effector errors (C4) and extremely low interval misclassification (~0.79%). The task design is clearly described and validated by performance metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Timing variability exhibited scalar properties, with produced intervals more variable for longer target intervals and hand movements more variable than eye movements, consistent with Weber's law.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C58-C60 provide converging statistical evidence for scalar variability. The linear relationship between mean and standard deviation (C7, p<<0.001) and significant differences between intervals (C59) and effectors (C58) are well-documented with appropriate statistical tests. This replicates established findings in timing literature (C6).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C61"
+    ],
+    "result": "Produced intervals exhibited context-specific serial correlations extending over 20+ trials, which were stronger for same effector/interval combinations and diminished in a control task, suggesting memory drift as the underlying mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C61 provide strong evidence for memory drift. The serial correlations are statistically significant (C8, p<0.01), context-specific (C9, C61 with p<<0.001), and critically, diminish when memory demands are reduced in the control experiment (C11, p<<0.001). The control experiment is essential for ruling out non-specific factors (C10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Error statistics across consecutive trials showed a monotonic relationship between mean error and previous error, and a U-shaped relationship between error variability and previous error, suggesting reward-dependent regulation of behavioral variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 establish reward-dependent variability modulation. The monotonic (C12) and U-shaped (C13) relationships are quantified with regression models (Table 1). The graded effect (C15, \u03c1=-0.23, p=2e-15), temporal decay (C16), and context-specificity (C17) provide converging evidence. However, causality requires the probabilistic reward experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C64",
+      "C65"
+    ],
+    "result": "Human subjects exhibited the same patterns as monkeys: context-specific serial correlations, monotonic mean error relationships, U-shaped variability profiles, and context-specific reward effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C64-C65 demonstrate cross-species generalization. The qualitative similarity (C19) is supported by statistical tests (C64-C65, p<<0.001) and quantitative regression parameters (Table 1). This strengthens the conclusion that these are general principles rather than species-specific or training artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C66"
+    ],
+    "result": "In a probabilistic reward experiment, trial outcome (correct/incorrect feedback) causally impacted behavioral variability independent of error magnitude, with variability significantly larger after incorrect trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C66 provide critical causal evidence through experimental manipulation. By dissociating feedback from error magnitude, the study demonstrates that reward itself (not just error size) drives variability changes. The effect is consistent across error magnitudes (Figure 4D), establishing causality that was only correlational in the main task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C67",
+      "C68"
+    ],
+    "result": "The reward-sensitive Gaussian process (RSGP) model successfully captured both long-term memory drift and short-term reward effects on variability, with distinct timescales (lSE > lRS) and accurate prediction of behavioral statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 demonstrate model validity. The RSGP captures key behavioral features (C24, Figure 5C), generalizes to the probabilistic reward experiment (C25), and recovers interpretable parameters (C23, lSE=20.6\u00b121.4 vs lRS=2.0\u00b10.7 trials in monkeys). Parameter identifiability is verified through simulation (Table 2). The model provides a mechanistic account of the behavioral phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Alternative reinforcement learning models (MCMC sampling and directed search) failed to capture key behavioral features, with the DS model additionally exhibiting unstable run-away behavior in 65% of simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 provide systematic model comparison. The MCMC model fails to capture the U-shaped variability profile (C26, s2=0.045 [-0.048 0.14]). The DS model shows instability (C27-C28, 65.1\u00b11.2% run-away probability) and fails even on stable trials (C29). Both models miss long-term correlations (C30). This validates the RSGP's unique explanatory power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "In the probabilistic reward experiment, the monotonic relationship between mean error and previous error was stronger after positive feedback, consistent with RSGP model predictions combining directed and random exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 provides additional validation of the RSGP model's prediction that reward affects both bias (directed exploration) and variance (random exploration). The observation that serial correlations strengthen after positive feedback (Figure 5\u2014figure supplement 2A) matches model behavior (Figure 5\u2014figure supplement 2B), supporting the model's mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Neural population activity in thalamus (91% of sessions), DMFC (~79%), and caudate (~45%) exhibited slow fluctuations correlated with behavioral memory drift, with context-specific relationships between neural activity and error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 establish neural correlates of memory drift. The high proportion of significant sessions (C32, p<0.01) and context-specific monotonic relationships (C33-C34, Table 3) demonstrate that drift is represented across the cortico-basal ganglia circuit. The cross-validated decoding approach strengthens the findings, though the lower percentage in caudate (45%) suggests weaker or more variable representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Only in thalamus did neural variability exhibit reward-dependent modulation aligned with the memory drift direction, showing a U-shaped profile with respect to previous error in a context-specific manner, while DMFC and caudate lacked this alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 identify thalamus as uniquely showing aligned reward-dependent variability modulation. Statistical tests confirm the U-shaped profile in thalamus (C35, p<0.01 and p<0.001) and its context-specificity (C36, p=0.91 and p=0.97 for different effectors). The absence in DMFC and caudate (C37, p=0.99 and p=0.021) serves as an important control, though the interpretation (C38) is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "An unconstrained decoding strategy could find neural dimensions in all three brain areas where slow fluctuations and reward effects are aligned, though this differs from the constrained drift-direction analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 acknowledges that alternative analysis approaches can find reward-sensitive dimensions in all areas (Figure 8\u2014figure supplement 3, Table 4). This is important for interpretation: the key finding is not that DMFC/caudate lack reward sensitivity entirely, but that reward effects are not aligned with the drift direction identified by the constrained analysis. This nuance is critical for understanding the circuit's organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Reward differentially affected neural trajectory dynamics across brain areas: in thalamus, reward modulated variance of average firing rates but not trajectory speed; in DMFC and caudate, reward modulated variance of trajectory speed, with effects context-specific to effector.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C74 propose an important mechanistic distinction but rely on challenging speed variance estimation (acknowledged in manuscript). While conceptually compelling and consistent with prior work on thalamic rate coding vs. DMFC trajectory dynamics, the statistical reliability of single-trial speed variance estimates is questionable given dimensionality and trial number constraints. The analysis in Figure 8\u2014figure supplement 6 provides some support but requires cautious interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The study identifies two opposing factors in timing variability\u2014performance-degrading memory drift and performance-optimizing reward-dependent exploration\u2014with signatures evident across cortico-basal ganglia circuits but uniquely aligned only in thalamus, suggesting thalamocortical projections may help mitigate undesirable variability sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 synthesize the main findings. The opposing factors (C41) are well-established through behavioral (memory drift and reward effects) and neural evidence (C42). The unique alignment in thalamus (C43) is the key novel finding. However, C44-C45 regarding functional implications and thalamocortical role are interpretive/speculative, appropriately hedged with 'might' and 'may.' The causal role of thalamus would require perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The manuscript establishes theoretical context that classic reinforcement learning is infeasible for continuous action spaces, motivating the hypothesis that the brain directly regulates variability to facilitate learning, with supporting evidence from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 establish the theoretical framework through citations to established literature. The logical argument about RL limitations in continuous spaces (C48) is sound. The hypothesis about direct variability regulation (C49-C50) and supporting evidence (C51) are appropriately cited. This provides necessary context but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Prior work established that the DMFC-thalamus-caudate circuit causally controls movement initiation timing through thalamic rate coding that sets the speed of DMFC/caudate trajectory evolution, with thalamic inactivation having stronger effects on timing variability than DMFC or caudate inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 and C69-C71 cite the authors' previous work (Wang et al., 2018) establishing the circuit's causal role and mechanistic operation. These claims provide essential context for interpreting the current findings but represent prior rather than current results. The citations appear accurate based on the described findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The experimental reward structure used a truncated triangular function where reward magnitude decreased linearly with error within an adaptive acceptance window, controlled by a one-up-one-down staircase to maintain ~50% reward rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe the reward structure, which is critical for interpreting behavioral results. The staircase procedure is a standard psychophysical method for maintaining constant difficulty. The actual reward rates achieved (57% monkey A, 51% monkey D, Figure 1C inset) confirm the procedure worked as intended. This is methodological detail rather than a scientific finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study recorded 932 thalamic, 568 DMFC, and 509 caudate neurons, with thalamic neurons verified by antidromic activation (1.8-3 ms latency, <0.2 ms jitter), and collected extensive behavioral data (167,115 trials in monkeys, 59,297 in humans for main task, 75,652 in control task).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 report data collection metrics. The sample sizes are substantial and appropriate for population analyses. Antidromic verification (C79) provides important validation of thalamic recording locations. These are methodological details documenting the study's scope and rigor rather than scientific findings per se.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The manuscript discusses potential upstream sources of thalamic variability modulation, noting that the recorded thalamic region receives input from frontal cortex, basal ganglia, and cerebellum, with prior literature showing variability modulation in motor/premotor areas and cerebellar involvement in motor calibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 cite anatomical connectivity (Middleton and Strick, 2000; Kunimatsu et al., 2018) and prior findings on variability modulation in cortex (Churchland et al., 2006, 2010) and cerebellar function (multiple citations). These provide context for interpreting the thalamic findings and suggest future directions, but represent discussion of prior work rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

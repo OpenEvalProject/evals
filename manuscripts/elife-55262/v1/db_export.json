@@ -1,0 +1,2056 @@
+{
+  "submission": {
+    "id": "560bf461-550c-4072-b22a-ba3c005673a9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:02:07.910307Z",
+    "updated_at": "2025-12-02T17:02:07.910307Z"
+  },
+  "content": [
+    {
+      "id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "submission_id": "560bf461-550c-4072-b22a-ba3c005673a9",
+      "content_type": "manuscript",
+      "content_text": "# Heterogeneity of proteome dynamics between connective tissue phases of adult tendon\n\n## Authors\n\n- Howard Choi<sup>1</sup>\n- Deborah Simpson<sup>2</sup>\n- Ding Wang<sup>1</sup>\n- Mark Prescott<sup>2</sup>\n- Andrew A Pitsillides<sup>3</sup>\n- Jayesh Dudhia<sup>4</sup>\n- Peter D Clegg<sup>5</sup>\n- Peipei Ping<sup>1</sup>\n- Chavaunne T Thorpe<sup>3</sup> ([ORCID: 0000-0001-7051-3504](https://orcid.org/0000-0001-7051-3504)) \u2020\n\n### Affiliations\n\n1. Department of Physiology and Medicine, David Geffen School of Medicine, UCLA Los Angeles United States\n2. Centre for Proteome Research, Biosciences Building, Institute of Integrative Biology, University of Liverpool Liverpool United Kingdom\n3. Department of Comparative Biomedical Sciences, Royal Veterinary College London United Kingdom\n4. Department of Clinical Sciences and Services, Royal Veterinary College Hatfield United Kingdom\n5. Department of Musculoskeletal Biology, Institute of Ageing and Chronic Disease, University of Liverpool Liverpool United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nMaintenance of connective tissue integrity is fundamental to sustain function, requiring protein turnover to repair damaged tissue. However, connective tissue proteome dynamics remain largely undefined, as do differences in turnover rates of individual proteins in the collagen and glycoprotein phases of connective tissue extracellular matrix (ECM). Here, we investigate proteome dynamics in the collagen and glycoprotein phases of connective tissues by exploiting the spatially distinct fascicular (collagen-rich) and interfascicular (glycoprotein-rich) ECM phases of tendon. Using isotope labelling, mass spectrometry and bioinformatics, we calculate turnover rates of individual proteins within rat Achilles tendon and its ECM phases. Our results demonstrate complex proteome dynamics in tendon, with ~1000 fold differences in protein turnover rates, and overall faster protein turnover within the glycoprotein-rich interfascicular matrix compared to the collagen-rich fascicular matrix. These data provide insights into the complexity of proteome dynamics in tendon, likely required to maintain tissue homeostasis.\n\n## Introduction\n\nMaintaining the structural and mechanical integrity of tissues in the musculoskeletal system, and other connective tissues, is fundamental to sustain tissue homeostasis and healthy function, requiring protein synthesis and degradation to repair and/or replace damaged tissue before damage accumulates and leads to injury (Humphrey et al., 2014). However, while the composition and structure of connective tissues is well defined (Scott, 1983), relatively little is known regarding proteome dynamics in connective tissues, particularly at the level of the individual constituent proteins.\n\nConnective tissues consist of fibrous proteins (predominantly collagen) embedded in a glycoprotein-rich matrix (Scott, 1983), and variation in the organisation of both phases give rise to tissues with distinct structural and mechanical properties (Culav et al., 1999). Research in a variety of tissues including skin, tendon and cartilage indicates a relatively long half-life of collagens, with more rapid turnover of glycoproteins and other non-collagenous proteins (Thorpe et al., 2010; Maroudas et al., 1998; Sivan et al., 2006; Sivan et al., 2008; Verzijl et al., 2000). Indeed, several studies have reported negligible turnover of collagen, the major component of tendon and other connective tissues, within an individual\u2019s lifetime (Thorpe et al., 2010; Heinemeier et al., 2013; Heinemeier et al., 2016). However other studies have measured relatively rapid collagen synthesis in tendon, both at basal levels and in response to exercise (Miller et al., 2005), and also identified soluble collagen with a much shorter half-life compared to the majority of collagen in human articular cartilage (Hsueh et al., 2019); the location(s) of these more labile proteins remain to be identified. When taken together, these contradictory findings indicate that proteome dynamics in connective tissues is complex, and that the glycoprotein-rich phase may be replenished more rapidly than the collagen-rich phase. However, the turnover rate of individual proteins within the different phases of the extracellular matrix (ECM), and the potential contribution of differential regulation of protein turnover to maintenance of tissue homeostasis remain undefined.\n\nTendon provides an ideal model in which to separately interrogate protein turnover in these ECM phases, as it consists of highly aligned, collagen-rich fascicular matrix (FM), interspersed by a less dense glycoprotein-rich phase, termed the interfascicular matrix (IFM, also referred to as the endotenon) (Kastelic et al., 1978). While the FM is predominantly composed of type I collagen, glycoproteins are also present in this region at low abundance (Thorpe et al., 2016b). Similarly, the IFM contains small amounts of a variety of collagens (S\u00f6dersten et al., 2013; Thorpe et al., 2016b). Due to the highly aligned structure of tendon tissue, it is possible to separate FM and IFM for individual analysis using laser capture microdissection (Thorpe et al., 2016b; Zamboulis et al., 2018). Indeed, these, and other studies, have shown greater expression of markers of ECM degradation, as well as increased neo-peptide levels, a proxy measure of protein turnover, within the IFM (Spiesz et al., 2015; Thorpe et al., 2015a; Thorpe et al., 2016b), suggesting this region is more prone to microdamage, likely due to the high shear environment that occurs due to interfascicular sliding (Thorpe et al., 2012; Thorpe et al., 2015b). Taken together, these findings suggest that there is greater turnover of ECM proteins localised to the IFM than within the FM to repair local microdamage and maintain tendon homeostasis.\n\nDue to a lack of available methodology, it has not been possible until recently to study differential rate of turnover at the individual protein level. However, novel bioinformatics software developments, in combination with in vivo isotope labelling, and mass spectrometry technologies, now provide the capacity to determine the turnover rates of individual proteins within a sample (Kim et al., 2012; Lam et al., 2014; Lau et al., 2016). The aim of this study is therefore to apply this technique to tendon, firstly to establish the proteome-wide turnover rate of tendon, and secondly to combine this approach with laser capture microdissection to test the hypothesis that the proteome of the IFM is more dynamic than in the FM, with faster turnover of individual proteins. More rapid remodelling of the IFM would provide a mechanism by which shear-induced microdamage to this region could be repaired, preventing damage accumulation and subsequent injury.\n\n## Results\n\n### 2H enrichment in serum water\n\nIn rats labelled with deuterium over a period of 127 days (Figure 1a), 2H enrichment of serum occurred rapidly and in a similar manner to that reported previously in rodents (Kim et al., 2012), reaching a plateau of 5.6% by day 4, and remained constant throughout the study (Figure 1b). The enrichment curve, which was empirically derived from the GC-MS measurements at the sampled time points, defines two parameters: deuterium enrichment rate (kp)\u00a0=\u00a00.7913 and plateau (pss)\u00a0=\u00a00.0558; these values were used for subsequent kinetic curve fitting to calculate peptide turnover rate constants (k).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic showing 2H2O labelling of rats and details of sample collection, and interfascicular matrix isolation by laser capture microdissection (scale bar\u00a0=\u00a0100 \u00b5m). (B) 2H enrichment in serum occurred rapidly, reaching a plateau of 5.6% by day 4 and remained constant throughout the study. Data are shown as mean\u00a0\u00b1\u00a0SD and raw data provided in Figure 1\u2014source data 1. (C) Example extracted ion chromatograms from tendon samples demonstrating increased abundance of higher mass isotopomer peaks over the course of the study (M1 \u2013 M5). (D) Example curve showing the relative abundance of the unlabelled monoisotopic peak (M0) for the cartilage oligomeric matrix protein (COMP) peptide QMEQTYWQANPFR, calculated by ProTurn software and plotted as a function of time.\n\n### Protein identification\n\n190 proteins with\u00a0\u22652 unique peptides were identified in whole tendon digests and protein interactions are shown in Figure 2. Of these proteins, 72 were classified as ECM or ECM-related proteins by MatrisomeDB (Hynes and Naba, 2012). In samples collected by laser capture microdissection of tendon cryosections, 266 proteins with\u00a0\u22652 unique peptides were identified in the IFM, 79 of which were ECM or ECM-related proteins (Figure 3). In the FM, 116 proteins were identified, of which 71 were ECM or ECM-related proteins (Figure 4). Protein interactions for each tendon component demonstrate a complex and highly interconnected proteome in tendon and its ECM phases.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig2-v1.jpg)\n\n**Figure 2.:** Unconnected nodes were removed to provide clarity of the interactome. The total cluster was built with STRING (Szklarczyk et al., 2019) allowing for experimentally verified and predicted protein-protein interactions at high confidence levels (0.700). Line thickness indicates the strength of supporting data. Source data are provided in Figure 2\u2014source data 1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig3-v1.jpg)\n\n**Figure 3.:** Unconnected nodes were removed to provide clarity of the interactome. The total cluster was built with STRING (Szklarczyk et al., 2019) allowing for experimentally verified and predicted protein-protein interactions at high confidence levels (0.700). Line thickness indicates the strength of supporting data. Source data are provided in Figure 3\u2014source data 1.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig4-v1.jpg)\n\n**Figure 4.:** Unconnected nodes were removed to provide clarity of the interactome. The total cluster was built with STRING (Szklarczyk et al., 2019) allowing for experimentally verified and predicted protein-protein interactions at high confidence levels (0.700). Line thickness indicates the strength of supporting data. Source data are provided in Figure 4\u2014source data 1.\n\n### Protein turnover in whole tendon\n\nPeptide turnover rates were calculated using ProTurn (v2.1.05; available at http://proturn.heartproteome.org; Lam et al., 2014; Lau et al., 2016; Lau et al., 2018; Wang et al., 2014), which automatically calculates turnover rate constants for all peptides that pass the selection criteria using non-steady state curve fitting (Figure 1). To assure data quality, we used a stringent cut-off, passing only peptides that are identified at 1% false discovery rate (FDR) and quantified at four or more time points. In total, 455 peptides, relating to 41 proteins, passed the ProTurn selection criteria and were used to calculate protein half-life in whole tendon samples.\n\nThe relative abundance of the unlabelled monoisotopic peak (M0), plotted as a function of time for selected decorin and collagen peptides are shown in Figure 5a&b. Non-steady state curve fitting was performed by ProTurn to calculate turnover rate constants (k) for each peptide, and resultant fractional synthesis curves in Figure 5c&d demonstrate much faster turnover of decorin peptides compared to collagen types 1 and 3. k values for all peptides identified, and corresponding protein half-lives are shown in Figure 6. As expected, the smallest k values related to collagenous proteins, with corresponding half-lives of 330 to 1086 days. By contrast, the protein identified with the fastest turnover was the glycoprotein clusterin, with a half-life of 1.4 days. The half-life of proteoglycans ranged from 21 days for decorin to 72 days for lumican. With the exception of collagens, which all exhibited low turnover rates, there was no clear relationship between protein class and rate of turnover (Figure 6c).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig5-v1.jpg)\n\n**Figure 5.:** Relative abundance of M0 in selected decorin (A) and collagen type 1, alpha one chain (B) peptides, and resulting k values calculated by non-steady state curve fitting using ProTurn software. Fractional synthesis rates (FSR), calculated from peptide k values, demonstrate more rapid turnover of decorin (C) compared to collagen type 1, alpha one chain (D). Source data, generated by ProTurn are available in Source data 1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig6-v1.jpg)\n\n**Figure 6.:** (A) The peptide rate constants (k) for individual proteins are plotted in descending order on a logarithmic scale, with the median value represented by a red line. (B) The median k values for each protein were used to calculate protein half-life, assuming a first order reaction. (C) Protein turnover rates plotted against MatrisomeDB and PANTHER categories, with the median value represented by a red line. Due to space constraints, gene, rather than protein, names are displayed in parts A and B. Source data, generated by ProTurn are available in Source data 1.\n\n### Protein turnover in tendon compartments\n\n246 peptides, relating to 20 proteins, and 121 peptides, relating to 12 proteins, passed the ProTurn selection criteria in the FM and IFM respectively. 55 peptides were present both in the IFM and FM, and k values were significantly greater for these peptides in the IFM compared to the FM (median: 0.018 vs. 0.010; p<0.0001), demonstrating an overall faster rate of protein turnover in the IFM. 39 peptides relating to collagen type I were identified in both the IFM and FM, with significantly greater k values in the IFM (p<0.0001; Figure 7a). The turnover rate constants and resultant half-lives for proteins identified in each tendon phase are shown in Figure 4b. Turnover rate constants for Col1a1 and Col1a2 were significantly higher in the IFM compared to the FM, but there were no significant differences in rate constants for Col3a1 between tendon phases.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig7-v1.jpg)\n\n**Figure 7.:** (A) Rate constants (k) for collagen type I peptides identified in both tendon phases were significantly greater in the IFM compared to the FM (n\u00a0=\u00a039). (B) Median peptide decay curves for Col1a1 and Col1a2 in the FM (\u25b2; solid line) and IFM (\u25cf; dashed line), showing goodness of fit (r2) and standard error (S.E.). (C) Turnover rate constants (k) and corresponding half-lives for proteins identified in each phase. *** indicates p<0.0001. Source data, generated by ProTurn are available in Figure 7\u2014source data 1 for the FM and Figure 7\u2014source data 2 for the IFM.\n\nDue to ProTurn software identifying a low number of proteins in laser captured samples, particularly in the IFM, turnover rate constants in tendon phases were calculated manually for a number of proteins of interest (Figure 8). Rate constants of turnover of decorin peptides were significantly higher in the IFM compared to the FM (Figure 8). It was not possible to assess differences in turnover of other proteins due to a low number of peptides identified at sufficient time points to allow accurate curve fitting (Figure 8c).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig8-v1.jpg)\n\n**Figure 8.:** (A) Relative abundance of M0 as a function of time, and resultant non-linear curve fitting for peptides corresponding to decorin identified in the FM (\u25b2; solid line) and IFM (\u25cf; dashed line). (B) Resultant k values for decorin peptides were significantly greater in the IFM than in the FM (p=0.042). (C) Manually calculated turnover rate constants (k) and corresponding half-lives for tendon proteins of interest. Source data are available in Figure 8\u2014source data 1.\n\n## Discussion\n\nThis is the first study to investigate the proteome-wide turnover rate of tendon and its constituent ECM phases, demonstrating complex proteome dynamics in whole tendon. Protein turnover rate in tendon varied almost 1000-fold, with half-lives ranging from 1.5 days to over 1000 days. The results also support our hypothesis, demonstrating significantly faster turnover of proteins in the glycoprotein-rich IFM compared to the collagen-rich FM, both overall and when directly comparing individual proteins.\n\nIn agreement with previous studies (Thorpe et al., 2016b), the IFM had a more complex proteome than the FM, with a greater number of proteins identified in this region. Indeed, more proteins were identified within the IFM than in whole tendon samples; this is likely due to the predominance of collagen in whole tendon samples which precludes detection of proteins present at lower abundance in these samples. As many of the proteins present in the IFM were identified in less than four samples, it was not possible to perform curve fitting to calculate the turnover rate for these proteins. Due to the small size of the rat Achilles tendon, it was not possible to laser-capture a larger volume of IFM, and pooling samples from each time point for LC-MS/MS analysis did not result in a greater number of protein hits than when each sample was analysed separately. In addition, it was necessary to calculate turnover rates of some proteins manually as automated identification of isotopomer peaks was unsuccessful, particularly in IFM samples. While turnover rates calculated manually cannot be compared directly to those calculated automatically by ProTurn, due to differences in curve fitting, it is possible to compare turnover rates of IFM and FM proteins, where both are calculated manually. Additionally, only tendons from female rats were used, such that any differences in turnover rate between sexes could not assessed. While no previous studies have directly compared tendon turnover rates in males and females, it has been demonstrated that there are very small differences in the transcriptome and proteome of Achilles tendons from male and female mice (Sarver et al., 2017). Despite these limitations, results reveal a diverse rate of protein turnover in both the FM and IFM, with values for individual proteins similar to those observed when the tendon matrix was analysed as a whole.\n\nCollagenous proteins had the slowest turnover of all tendon matrix proteins identified, in the whole tendon, and in the FM and IFM, with a half-life from approximately 1.5 years in the IFM to 3 years in the FM for type I collagen. Collagen type III appeared to have a somewhat faster turnover rate than type I in both the FM and IFM, with no significant difference between phases. The IFM is known to be enriched in collagen type III, whereas the majority of collagen type I localises to the FM (S\u00f6dersten et al., 2013; Thorpe et al., 2016b). While the collagen turnover rates measured are relatively slow, they contrast with previous studies which have reported that collagen is essentially inert in the adult rat patellar tendon (Bechsh\u00f8ft et al., 2017) and in tendons from larger animals (Heinemeier et al., 2013; Thorpe et al., 2010), as well as in cartilage and intervertebral disc (Heinemeier et al., 2016; Sivan et al., 2008). However, these previous studies have either analysed tissues as a whole, or separated the tissue into collagenous and non-collagenous fractions, rather than calculating turnover of individual proteins, such that they lack the specificity achieved by using deuterium labelling combined with mass spectrometry analysis. Other studies that have measured collagen synthesis in human tendon using stable isotope labelling and performing tendon biopsies, report contradictory findings, calculating a FSR of 0.04\u20130.06% hour\u22121, which equates to a half-life ranging from 48 to 64 days (Miller et al., 2005; Babraj et al., 2005; Smeets et al., 2019). However, these were very short term studies, and it is unlikely that all newly synthesised protein would be incorporated into the matrix, such that FSR is over-estimated (Heinemeier et al., 2013). The results we present here help to explain these apparent contradictory findings, suggesting that the pool of more labile collagen identified previously in human tendon and cartilage (Miller et al., 2005; Hsueh et al., 2019) may be located in the glycoprotein-rich ECM phase rather than with the bulk of the fascicular collagen.\n\nAnother factor that is likely to influence tendon remodelling is the regulation of post-translational modifications. ECM proteins, particularly collagens, undergo a wide range of post-translational modifications during synthesis and assembly which occur both intra- and extra-cellularly, either through regulated pathways or spontaneously (Yamauchi and Sricholpech, 2012; Avery and Bailey, 2005). Post-translational modifications are essential for determining protein structure and function, and are also likely to influence susceptibility to degradation by limiting enzyme access to cleavage sites (Jaisson et al., 2007). Indeed, a previous study has shown that, with ageing, partially degraded collagen accumulates within the equine superficial digital flexor tendon (Thorpe et al., 2010). This is accompanied by increased advanced glycation end products which may render the ECM more resistant to degradation and subsequent remodelling, reducing the ability to repair damage within the tendon (Thorpe et al., 2010). However, the effects of alterations in post-translations modifications on rates of protein turnover remain to be determined.\n\nIn addition, it is likely that overall protein turnover rate is more rapid in small compared to large animals. While few studies have directly compared protein turnover kinetics between species, a recent study of protein turnover in dermal fibroblasts from different rodent species demonstrated a negative correlation between median k values and lifespan (Swovick et al., 2018). In support of this, the half-life of serum albumin is approximately 10 fold greater in the human compared to the rat (Chaudhury et al., 2003; Jeffay, 1960). Taken together, it can be presumed that turnover of tendon ECM proteins is also likely slower in larger animals than those we report here for the rat, but the relative differences observed between individual proteins and ECM phases are likely to persist in humans and other large animals.\n\nIt is also important to recognise that specific proteins that are not core components of the tendon ECM will not be metabolised within the tendon, but instead will be synthesised elsewhere and transported to the tendon via the circulation. Specifically, serum albumin and serotransferrin are predominantly synthesised and secreted by the liver (Tavill, 1972), whereas haemoglobin is synthesised in the bone marrow and its turnover provides a measure of erythrocyte lifespan (Koury, 2016). In addition, anionic trypsin-1, which had a particularly long half-life of nearly 2000 days in the FM, is synthesised in the pancreas. The long half-life measured for this protein is rather surprising, as generally enzymes have a much shorter half-life than ECM proteins (Lake-Bakaar et al., 1980) Proteases have a role in tissue repair (Shah and Mital, 2018); it is possible that there is a pool of trypsin within tendon that remains inactive until required for repair, which would explain the long half-life measured.\n\nThe measured rate constants of protein turnover will also be dependent on the protein extraction methods used. We chose GuHCl extraction for whole tendon as this has previously been shown to result in best proteome coverage for tendon (Ashraf Kharaz et al., 2017). It was not possible to use the same extraction method for laser-captured samples due to the small amount of starting material, therefore we used a method previously optimised for this sample type (Thorpe et al., 2016b). Despite differences in extraction techniques used, protein half-lives were similar in the whole tendon and the fascicular matrix, suggesting minimal effects from using different extraction techniques. Indeed, previous studies, in which the rat Achilles was acid-solubilised post deuterium labelling and FSR measured by GC-MS, reported a FSR of 0.66 % day\u22121 (Katsma et al., 2017) which equates to a half-life of 105 days, supporting the results we present here, in which average protein half-life in whole tendon is 131 days.\n\nAs well as providing the first data on individual protein turnover rates in tendon, this work builds on our understanding of the role of the IFM in tendon function. Previous work has shown that the IFM has specialised composition and function, facilitating sliding between tendon fascicles to provide extensibility to the tendon (Thorpe et al., 2012; Thorpe et al., 2015b; Thorpe et al., 2016b; Thorpe et al., 2016c; Thorpe et al., 2016a). Cyclic sliding and recoil increases the risk of microdamage to this region (Spiesz et al., 2015), and therefore greater turnover of IFM proteins may be a protective mechanism to repair this damage. We have previously demonstrated that elastin and lubricin are localised to the IFM and likely contribute to its mechanical function (Godinho et al., 2017; Thorpe et al., 2016a). However, these proteins are difficult to identify using LC-MS/MS (Thorpe et al., 2016b) so we were unable to assess their rate of turnover.\n\nWe extend previous observations in tendon and other musculoskeletal tissues (Thorpe et al., 2010; Sivan et al., 2006; Maroudas et al., 1998; Hsueh et al., 2019), measuring considerably faster turnover of proteoglycans compared to collagens in tendons, FM and IFM. Interestingly, there were variations in rates of small leucine-rich proteoglycan turnover between tendon phases. Significantly faster turnover of decorin was observed in the IFM compared to the FM, whereas the results suggest that faster fibromodulin turnover may occur within the FM. Indeed, previous studies have shown differential abundance of specific proteoglycans in the IFM and FM, with enrichment of fibromodulin in the FM, but no significant differences in amounts of decorin, biglycan or lumican between tendon phases, as determined by proteomic analysis and immunohistochemistry (Thorpe et al., 2016b; Thorpe et al., 2016a). While use of mouse knock out models have established the roles of a variety of proteins during tendon development, with collagen type V, decorin, biglycan, fibromodulin, lumican and thrombospondins all serving roles in modulating collagen fibrillogenesis (Connizzo et al., 2013; Delgado Caceres et al., 2018), the contributions of these proteins to the function of mature tendon are less well characterised. Recent work using decorin and biglycan inducible knock-out mice demonstrated alterations in collagen fibril diameter and decreased tendon mechanical properties in the adult, indicating an important role for these proteoglycans in FM and subsequently, tendon homeostasis (Robinson et al., 2017). It is likely that proteoglycans also contribute to homeostasis within the IFM, but the roles of specific proteins in the IFM during development and in the adult remain to be defined.\n\nOur results show that proteome dynamics in tendon is highly complex, with differences in protein-selective turnover rates observed in distinct IFM and FM ECM phases. Regulation of protein turnover is multifactorial, involving pathways controlling protein synthesis, folding, transport, assembly, disassembly, and degradation (Powers et al., 2009). Recent studies have identified the important role of transforming growth factor-\u03b2 (TGF-\u03b2) in regulating ECM remodelling in tendon and other tissues (Gumucio et al., 2015; Rys et al., 2016). Indeed, it has been shown that TGF-\u03b2 localises to the IFM in developing and adult tendon (Kuo et al., 2008; Russo et al., 2015), which is consistent with the notion that increased TGF-\u03b2 signalling could have a role in this faster protein turnover identified in the IFM.\n\n### Conclusions\n\nThis is the first study to determine the turnover rate of individual proteins in different connective tissue phases, demonstrating complex proteome dynamics in tendon, with an overall faster turnover of proteins in the glycoprotein-rich IFM phase. Greater capacity for turnover of this phase of the tendon matrix may be indicative of a mechanism that reduces the accumulation of damage caused by the high shear environment within this region, although this remains to be directly determined. The techniques used here provide a powerful approach to interrogate alterations in connective tissue protein turnover with ageing and/or disease which are likely to influence injury risk.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Rattus Norvegicus, Female)</td>\n      <td>Wistar</td>\n      <td>Charles River</td>\n      <td>RRID:RGD_13508588</td>\n      <td>Female</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Pierce protein assay</td>\n      <td>ThermoFisher</td>\n      <td>22660</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>[2H]2O</td>\n      <td>CK isotopes LtD</td>\n      <td>DLM-2259</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Acetonitrile with 0.1% formic acid LCMS grade</td>\n      <td>Fisher Scientific</td>\n      <td>10723857</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ammonium bicarbonate</td>\n      <td>Sigma</td>\n      <td>09830</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Chondroitinase ABC</td>\n      <td>Sigma</td>\n      <td>C3667</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dithiothreitol</td>\n      <td>Melford laboratories</td>\n      <td>MB1015</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Formic acid (0.1% v/v) LCMS grade</td>\n      <td>Fisher Scientific</td>\n      <td>10188164</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Guanidine hydrocholoride</td>\n      <td>Sigma</td>\n      <td>G3272</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Iodoacetamide</td>\n      <td>Sigma Aldrich</td>\n      <td>I1149</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RapiGest SF</td>\n      <td>Waters</td>\n      <td>186001861</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trifluoroacetic acid Optima</td>\n      <td>Fisher Scientific</td>\n      <td>10723857</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trifluoroacetic acid (0.1% v/v) LCMS grade</td>\n      <td>Fisher Scientific</td>\n      <td>10516625</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trypsin Gold MS grade</td>\n      <td>Promega</td>\n      <td>V5280</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Peaks Studio v8.5</td>\n      <td>Bioinformatics Solutions</td>\n      <td>www.bioinfor.com/peaks-studio</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STRING v11.0</td>\n      <td>PMID:30476243</td>\n      <td>string-db.org</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MatrisomeDB</td>\n      <td>PMID:21937732</td>\n      <td>matrisomeproject.mit.edu</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PANTHER</td>\n      <td>PMID:23868073</td>\n      <td>www.pantherdb.org</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ProLuCID</td>\n      <td>PMID:26171723</td>\n      <td>fields.scripps.edu/yates/wp/?page_id = 821</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ProteoWizard v3</td>\n      <td>PMID:28188540</td>\n      <td>proteowizard.sourceforge.net/index.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ProTurn</td>\n      <td>PMID:24614109</td>\n      <td>proturn.heartproteome.org</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism v8.2</td>\n      <td>GraphPad</td>\n      <td>www.graphpad.com</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Filter units, Vivacon 500 10000 MWCO</td>\n      <td>Sartorius</td>\n      <td>VN01H02</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\n- Female Wistar rats (n\u00a0=\u00a024, 12 week old, weight: 270\u00a0\u00b1\u00a018 g, range: 228\u2013299 g, specific pathogen free, Charles River Company, UK) were randomly housed in polypropylene cages in groups of 3, subjected to 12 hr light/dark cycle with room temperature at 21 \u00b1 2\u00b0C and fed ad libitum with a maintenance diet (Special Diet Services, Witham UK). All procedures complied with the Animals (Scientific Procedures) Act 1986, were approved by the local ethics committee at the Royal Veterinary College, were performed under project licence PB78F43EE and are reported according to the ARRIVE guidelines (Kilkenny et al., 2010).\n\n### In vivo isotope labelling\n\nAll rats, with the exception of the controls (n\u00a0=\u00a03) received two intraperitoneal injections of 99% [2H]2O (10 ml/kg; CK isotopes Ltd) spaced 4 hr apart, and were then allowed free access to 8% [2H]2O (v/v) in drinking water for the duration of the study to maintain steady-state labelling (Kim et al., 2012). All rats were acclimatized for 1 week prior to commencement of the study, and monitored daily and weighed weekly throughout the study; no adverse effects were observed. Rats in the control group were sacrificed on day 0. Rats in the isotope labelled groups were sacrificed on day 1, 3, 6, 15, 31, 63 and 127 (n\u00a0=\u00a03 per time point). Rats were culled at the same time of day (10 am) at each time point, to minimise any effect from diurnal variations. Blood was collected from each rat immediately post-mortem, and allowed to clot at room temperature. Blood samples were centrifuged at 1500 g for 10 min, and serum collected and stored at \u221220\u00b0C prior to analysis. Both Achilles tendons were harvested within 2 hr of death. The left Achilles was snap frozen in n-hexane cooled on dry ice for proteomic analysis of the whole tissue, and the right Achilles was embedded in optimal cutting temperature compound and snap frozen in n-hexane cooled on dry ice for isolation of fascicular and interfascicular matrices (Figure 1a).\n\n### GC-MS analysis of serum water\n\n2H labelling in serum was measured via gas chromatography-mass spectrometry (GC-MS) after exchange with acetone and extraction with chloroform as described previously (McCabe et al., 2006). 30 \u00b5l extract was analysed using GC-MS (Waters GCT mass spectrometer, Agilent J and W DB-17MS column (30m \u00d7 0.25 mm x 0.25 \u00b5m)). The carrier gas was helium (flow rate: 0.8 ml/min). The column temperature gradient was as follows: 60\u00b0C initial, 20 \u00b0C/min increase to 100\u00b0C, 1 min hold, then 50 \u00b0C/min increase to 220\u00b0C. The injection volume was 1 \u00b5l and injector temperature was 220\u00b0C. The mass spectrometer operated in positive ion electron ionisation mode, the source temperature was 180\u00b0C and the range scanned was m/z 40\u2013600 (scan time: 0.9 s). Mass spectral intensities for m/z values 58 and 59 were produced by combining the mass spectra in the acetone peak to create an averaged spectrum (Waters MassLynx). Serum 2H enrichment was calculated by comparison to a standard curve, and first order curve fitting (GraphPad Prism 8) used to calculate the rate constant (kp) and plateau (pss) of deuterium enrichment (Figure 1b).\n\n### Protein extraction from whole tendon\n\nLeft Achilles tendons were thawed, and their surface scraped with a scalpel, followed by PBS washes, to remove the epitenon and any residual non-tendinous tissue. Tendons were finely chopped, flash frozen in liquid nitrogen and pulverised in a dismembrator (Sartorius, mikro-dismembrator U, 1800rpm, 2 mins.). Proteins were extracted using previously optimised methodologies (Ashraf Kharaz et al., 2017). Briefly, following deglycosylation in chondroitinase ABC, proteins were extracted in guanidine hydrocholoride (GuHCl) as described previously (Kharaz et al., 2016). Protein content was determined using a Pierce protein assay according to the manufacturer\u2019s instructions. Samples were stored at \u221280\u00b0C prior to preparation for LC-MS/MS by centrifugal filtration. Filter units (Vivacon 500; 10 000 MWCO) were rinsed with 1%(v/v) formic acid and a balance volume of buffer (4M GuHCl/50 mM ammonium bicarbonate (ambic)) was added. A volume equivalent to 50 \u00b5g protein was added to each filter and the samples vortexed gently. Filters were centrifuged (15 min, 12500 rpm, 20\u00b0C), washed with GuHCl buffer and centrifuged again. Proteins were reduced by DTT incubation (100 \u00b5l of 8 mM in 4M GuHCl, 15 min, 56\u00b0C) and then centrifuged (10 min, 12500 rpm). DTT was removed by washing twice with buffer as described above. Proteins were alkylated with 100 \u03bcl 50 mM iodoacetamide in 4M GuHCl solution, vortexed and incubated in the dark (20 min., room temperature). Iodoacetamide was removed by washing twice with GuHCl buffer as described above. Buffer was exchanged to ambic by 3 washes with 50 mM ambic, centrifuging after each wash. 1 \u00b5g trypsin in 50 mM ambic (40 \u00b5l) was added and proteins digested overnight at 37\u00b0C with mixing. Flow through was collected after centrifugation and addition of 40 \u00b5l 50 mM ambic. The flow though was combined and acidified using trifluoroacetic acid (10%(v/v)), and diluted 20-fold in 0.1%(v/v) TFA/3%(v/v) acetonitrile for LC-MS/MS analysis.\n\n### Isolation and extraction of fascicular and interfascicular matrix proteins\n\nLongitudinal cryosections (15 \u00b5m) from the right Achilles tendons (five time points, n\u00a0=\u00a02\u20133/time point) were adhered to membrane slides (PEN, Leica) and stored at \u221280\u00b0C. Sections were prepared for laser capture as described previously (Thorpe et al., 2016b) and approximately 1 mm2 of FM and IFM from each sample were collected into 50 \u00b5l molecular biology grade H2O (Leica LMD7000; Figure 1a). Samples were immediately frozen and stored at \u221280\u00b0C. Prior to digestion, samples were centrifuged immediately after removal from \u221280\u00b0C storage. Volume was adjusted to 80 \u00b5l by adding 50 mM ambic, and Rapigest SF (1%(v/v) in 25 mM ambic, Waters, UK) was added to a final volume of 0.1%(v/v). Samples were mixed (room temperature, 30 min) then incubated at 60\u00b0C (1 hr, 450 rpm). Samples were centrifuged (17200 g, 10 min), vortexed, then incubated at 80\u00b0C (10 min). Proteins were reduced by incubating with DTT (5 \u03bcL, 60 mM in 25 mM ambic, 10 min, 60\u00b0C) then alkylated by adding 5 \u03bcl 178 mM iodoacetamide in 25 mM ambic (30 min. incubation, room temperature, in dark). Trypsin (Promega Gold sequencing grade) was diluted in 25 mM ambic and added at an enzyme to protein ratio of 1:50 (based on estimated protein amount from tissue volume collected). Digests were incubated overnight at 37\u00b0C with an enzyme top-up after 3.5 hr. Rapigest was hydrolysed with TFA (0.5 \u03bcl, 37\u00b0C, 45 min.). Digests were centrifuged (17200 g, 30 min.), aspirated into low-bind tubes and de-salted on stage-tips as previously described (Thorpe et al., 2016b).\n\n### LC-MS/MS analyses\n\nData-dependent LC-MS/MS analyses were conducted on a QExactive quadrupole-Orbitrap mass spectrometer (Williamson et al., 2016; Michalski et al., 2011) coupled to a Dionex Ultimate 3000 RSLC nano-liquid chromatograph (Thermo Fisher, UK). Digest was loaded onto a trapping column (Acclaim PepMap 100 C18, 75 \u00b5m x 2 cm, 3 \u00b5m packing material, 100 \u00c5) using a loading buffer of 0.1%(v/v) TFA, 2%(v/v) acetonitrile in water for 7 min (flow rate: 9 \u00b5l/min). The trapping column was set in-line with an analytical column (EASY-Spray PepMap RSLC C18, 75 \u00b5m x 50 cm, 2 \u00b5m packing material, 100 \u00c5) and peptides eluted using a linear gradient of 96.2% A (0.1%(v/v) formic acid):3.8% B (0.1%(v/v) formic acid in water:acetonitrile [80:20](v/v)) to 50% A:50% B over 30 min (flow rate: 300 nl/min), followed by 1% A:99% B for 5 min and re-equilibration of the column to starting conditions. The column was maintained at 40\u00b0C, and the effluent introduced directly into the integrated nano-electrospray ionisation source operating in positive ion mode. The mass spectrometer was operated in DDA mode with survey scans between m/z 300\u20132000 acquired at a mass resolution of 70,000 (FWHM) at m/z 200. The maximum injection time was 250 ms, and the automatic gain control was set to 1e6. The 10 most intense precursor ions with charges states of between 2+ and 4+ were selected for MS/MS with an isolation window of 2 m/z units. The maximum injection time was 100 ms, and the automatic gain control was set to 1e5. Peptides were fragmented by higher-energy collisional dissociation using a normalised collision energy of 30%. Dynamic exclusion of m/z values to prevent repeated fragmentation of the same peptide was used (exclusion time: 20 s).\n\n### Peptide and protein identification\n\nProteins were identified from RAW data files, with trypsin specified as the protease, with one missed cleavage allowed and with fixed modifications of carbamidomethyl cysteine and variable modifications of oxidation of methionine and proline (Peaks Studio v8.5, Bioinformatics Solutions, Waterloo, Canada). Searches were performed against the UniProt Rattus Norvegicus database (www.uniprot.org/proteomes), with an FDR of 1%,\u22652 unique peptides per protein and a confidence score\u00a0>20. Protein network analysis was performed using the Search Tool for Retrieval of Interacting Genes/Proteins (STRING), v11.0 (Szklarczyk et al., 2019), and proteins were further classified using MatrisomeDB (Hynes and Naba, 2012) and the Protein ANalysis THrough Evolutionary Relationships (PANTHER) Classification System (Mi et al., 2013). The proteomic data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository (Perez-Riverol et al., 2019) with the data set identifier PXD015928 and 10.6019/PXD015928.\n\n### Calculation of protein turnover rates\n\nPeptides at each time point were identified using ProLuCID (Xu et al., 2015) searching against a reverse-decoyed protein sequence database (UniProt Rattus Norvigicus, reviewed, accessed 23/04/2018). Fixed modifications of carbamidomethyl cysteine and\u00a0\u22643 variable modifications of oxidation of methionine and proline were allowed. Tryptic, semi-tryptic, and non-tryptic peptides within a 15-ppm mass window surrounding the candidate precursor mass were searched. Protein identification was performed using DTASelect (v.2.1.4) (Cociorva et al., 2006), with\u00a0\u22641% global peptide FDR and\u00a0\u22652 unique peptides per protein. Protein turnover rates and resulting half-lives were calculated using custom software (ProTurn v2.1.05; available at: http://proturn.heartproteome.org) as previously described and validated (Lam et al., 2014; Lau et al., 2016; Lau et al., 2018; Wang et al., 2014). Briefly, RAW files were converted into mzML format (ProteoWizard, v3.0.11781)(Adusumilli and Mallick, 2017) for input into ProTurn, along with DTAselect-filter text files for protein identification. ProTurn parameters were as follows: area-under-curve integration width: 60 p.p.m., extracted ion chromatograph smoothing: Savitzky-Golay filter (Savitzky and Golay, 1964) over seven data points. Non-steady state curve fitting was used to account for the initial delay in uptake of 2H, using a first-order kinetic curve to approximate the equilibration of 2H2O in body water. Values of kp and pss were inputted from the resultant curve fitting of 2H enrichment in serum samples. To control against false positive identifications, only peptides that were explicitly identified in\u00a0\u22654 data points were accepted for the calculation of protein turnover. The \u2018Allow Peptide Modification\u2019 option was selected to include any identified post-translationally modified peptides in kinetic curve-fitting, and peptide isotopomer time series were included if R2\u00a0\u22650.8 or standard error of estimate (S.E)\u22640.05 (Lam et al., 2014). Protein-level turnover rate is reported as the median and median absolute deviation of the turnover rate constants of each accepted unique constituent peptide, from which protein half-life can be calculated assuming a first order reaction (Lau et al., 2018).\n\nFor some proteins of interest, particularly in the IFM, automated calculation of turnover rates was unsuccessful, due to unsuccessful automated identification of isotopomer peaks. In these cases, turnover rate constants were calculated manually, using isotopomer peak height to calculate the relative abundance of M0 as a function of time (Thermo Xcalibur v2.2), and fitting first order kinetic curves to estimate k (GraphPad Prism v8.0.2). As the labelling pattern of each peptide is dependent on the number of available labelling sites (N), unlabelled relative abundance of the 0th isotopomer (a), as well as the plateau level of enrichment of deuterium (pss); these values were used to calculate the plateau values of the 0th isotopomer (A0) which occurs when the peptide is fully labelled. N was calculated from the literature (Lam et al., 2014; Commerford et al., 1983). a was calculated from the peptide sequence and natural abundance of heavy isotopes of carbon, nitrogen, oxygen and sulphur (Lam et al., 2014). pss was calculated from the serum enrichment as detailed above. The following equation was then used to calculate the plateau of A0:\n\n$$\nA_{0,PLATEA}=a(1\u2212p_{ss})^{N}\n$$\n\nPrevious work demonstrates this accurately predicts the plateau measured experimentally (Lam et al., 2014), therefore, for curve fitting calculations the plateau was constrained to the calculated value for each peptide. To assess the degree of differences in curve fitting performed by automated and manual approaches, k values were calculated using both approaches for 10 peptides. Resulting k values differed by an average of 23%. This method does not allow for direct comparison between manual and automated calculations of k, due to differences in curve fitting method, but does allow differences in peptide k values between IFM and FM to be assessed, when both are calculated manually.\n\n### Statistical analysis\n\nWhen\u00a0\u2265\u00a03 peptides were identified corresponding to a particular protein, statistical differences in turnover rate constants in tendon phases were assessed using paired t-tests, Wilcoxon matched pairs tests, or Mann-Whitney tests, with p<0.05 (GraphPad Prism, v8.2). The statistical test chosen was dependent on whether data were normally distributed, which was assessed with Kolmogorov-Smirnov tests, and whether the same peptides were identified in tendon phases, which allowed for paired statistical tests.\n",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "5e4df9e1-8299-458c-a1b1-129182f3c6a5",
+      "submission_id": "560bf461-550c-4072-b22a-ba3c005673a9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Calvin Vary, University of Maine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55262.sa1](https://doi.org/10.7554/eLife.55262.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis is an interesting study that uses mass spectrometry combined with deuterium isotope labeling (via initial injection and D2O water ad lib) to gain an unbiased look at the protein composition and turnover in the interfascicular and fascicular (IFM and FM, respectively) matrix of the rat Achilles tendon. The results support the hypothesis that the proteome of the IFM is more dynamic than the FM, and point out that these data in this model system have relevance to tendinous tissue remodeling and repair.\n\nDecision letter after peer review:\n\nThank you for submitting your work entitled \"Heterogeneity of proteome dynamics between connective tissue phases of adult tendon\" for consideration by eLife. Your article has been evaluated by Clifford Rosen as the Senior Editor, a Reviewing Editor and one peer reviewer.\n\nThere are some issues that need to be addressed before acceptance, as outlined below:\n\nReviewer #1:\n\nThis is an interesting study that uses mass spectrometry combined with deuterium isotope labeling (via initial injection and D2O water ad lib) to gain an unbiased look at the protein composition and turnover in the interfascicular and fascicular (IFM and FM, respectively) matrix of the rat Achilles tendon. The results support the hypothesis that the proteome of the IFM is more dynamic than the FM, and point out that these data in this model system have relevance to tendinous tissue remodeling and repair.\n\nOverall, the results were convincing that there is a difference in IFM and FM composition and turnover. However, some concerns were noted regarding the validation of some aspects of this model system. Addressing these concerns would strengthen the paper overall.\n\nFirst, there were no corroborating data for the mass spectrometric results. For example, western blotting for IFM and IF proteins would be useful not only to corroborate the MS data but additionally, to gauge the efficiency of the separation of IFM and FM tissue sections and their relative levels of enrichment for at least 1 or a few selected proteins. An alternative approach (given the low amounts of IFM material) could include immunofluorescence or immunohistochemical staining of tendon sections for representative proteins.\n\nSecond, regarding the equal representation of sex in the experiments, justification for using only female rats should be offered.\n\nThe Discussion should address whether turnover of protein post translational modifications (e.g., glycosylation) is an important feature of tendinous remodeling. Also, the Discussion would be enhanced by a concise discussion of any relevant knockout mouse phenotypes that support the importance of IFM- or FM-expressed proteins to tendinous or other tissue function.\n\nFinally, if this was not included, provision for submission of these MS/proteomic data should be made to an appropriate public-accessible data base (e.g., PRIDE, PRoteomics IDEntifications database), consistent with Journal policies.\n\nReviewer #2:\n\nThis paper investigates the proteome dynamics in tendon by comparing calculated protein turnover rates in the interfascicular matrix (IFM) vs. the fascicular matrix (FM).\n\nThis is a very interesting study illustrating the different protein turnover rates in different regions of the tendon, isolated by laser capture microdissection. The methods used are highly adequate and the data interpretation is sound. The main conclusions drawn are supported by the data presented and the study is well presented in the manuscript.\n\nIn the database search (subsection \u201cPeptide and Protein Identification\u201d) \u2013 it seems like you did not use oxidation of proline as a variable modification, please comment. The number of collagen peptides identified would be significantly increased by using that modification and I would highly recommend a new search using this modification to see how the collagen data is affected.\n",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "79075666-a2ae-499e-8fd1-6bd8dda27365",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C1",
+      "claim": "Maintenance of connective tissue integrity requires protein turnover to repair damaged tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintenance of connective tissue integrity is fundamental to sustain function, requiring protein turnover to repair damaged tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fundamental principle in the abstract and introduction, drawing on established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "a10e99bb-d436-441c-9115-8eb054d44191",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C2",
+      "claim": "Connective tissue proteome dynamics remain largely undefined.",
+      "claim_type": "EXPLICIT",
+      "source": "However, connective tissue proteome dynamics remain largely undefined, as do differences in turnover rates of individual proteins in the collagen and glycoprotein phases of connective tissue extracellular matrix (ECM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "52195ed6-15b0-446f-a87f-8cd01153e2db",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C3",
+      "claim": "Differences in turnover rates of individual proteins in the collagen and glycoprotein phases of connective tissue ECM remain undefined.",
+      "claim_type": "EXPLICIT",
+      "source": "However, connective tissue proteome dynamics remain largely undefined, as do differences in turnover rates of individual proteins in the collagen and glycoprotein phases of connective tissue extracellular matrix (ECM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "e7a1b91e-34ae-428b-b24e-fb2f2bc23ac4",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C4",
+      "claim": "Tendon has spatially distinct fascicular (collagen-rich) and interfascicular (glycoprotein-rich) ECM phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we investigate proteome dynamics in the collagen and glycoprotein phases of connective tissues by exploiting the spatially distinct fascicular (collagen-rich) and interfascicular (glycoprotein-rich) ECM phases of tendon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "ac2b7107-5d0a-4356-bb31-a14cac0e3bfe",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C5",
+      "claim": "There are approximately 1000-fold differences in protein turnover rates in tendon.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate complex proteome dynamics in tendon, with ~1000 fold differences in protein turnover rates, and overall faster protein turnover within the glycoprotein-rich interfascicular matrix compared to the collagen-rich fascicular matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "8c1b4d41-78aa-40c1-ab4d-e23190c825ca",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C6",
+      "claim": "Protein turnover is overall faster within the glycoprotein-rich interfascicular matrix compared to the collagen-rich fascicular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate complex proteome dynamics in tendon, with ~1000 fold differences in protein turnover rates, and overall faster protein turnover within the glycoprotein-rich interfascicular matrix compared to the collagen-rich fascicular matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "c4a7fce8-4f5d-48ce-818d-d069b2add335",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C7",
+      "claim": "Connective tissues consist of fibrous proteins (predominantly collagen) embedded in a glycoprotein-rich matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Connective tissues consist of fibrous proteins (predominantly collagen) embedded in a glycoprotein-rich matrix (Scott, 1983), and variation in the organisation of both phases give rise to tissues with distinct structural and mechanical properties (Culav et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Scott, 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "e85bb642-fce5-493a-8c94-dd86f038862b",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C8",
+      "claim": "Variation in the organisation of collagen and glycoprotein phases gives rise to tissues with distinct structural and mechanical properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Connective tissues consist of fibrous proteins (predominantly collagen) embedded in a glycoprotein-rich matrix (Scott, 1983), and variation in the organisation of both phases give rise to tissues with distinct structural and mechanical properties (Culav et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Culav et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "9f35200a-b7ac-4744-b4e6-c83261781794",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C9",
+      "claim": "Research in skin, tendon and cartilage indicates a relatively long half-life of collagens.",
+      "claim_type": "EXPLICIT",
+      "source": "Research in a variety of tissues including skin, tendon and cartilage indicates a relatively long half-life of collagens, with more rapid turnover of glycoproteins and other non-collagenous proteins (Thorpe et al., 2010; Maroudas et al., 1998; Sivan et al., 2006; Sivan et al., 2008; Verzijl et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "74dd1558-69d5-4f0c-b383-8cc429076257",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C10",
+      "claim": "Glycoproteins and other non-collagenous proteins have more rapid turnover than collagens in skin, tendon and cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "Research in a variety of tissues including skin, tendon and cartilage indicates a relatively long half-life of collagens, with more rapid turnover of glycoproteins and other non-collagenous proteins (Thorpe et al., 2010; Maroudas et al., 1998; Sivan et al., 2006; Sivan et al., 2008; Verzijl et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "abb53d50-64db-4f04-b4d4-d518226a68e9",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C11",
+      "claim": "Several studies have reported negligible turnover of collagen within an individual's lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several studies have reported negligible turnover of collagen, the major component of tendon and other connective tissues, within an individual's lifetime (Thorpe et al., 2010; Heinemeier et al., 2013; Heinemeier et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Thorpe et al., 2010; Heinemeier et al., 2013; Heinemeier et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "bacc7ee1-0f88-4b0f-ba6a-60e4b71c2ddc",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C12",
+      "claim": "Other studies have measured relatively rapid collagen synthesis in tendon at basal levels and in response to exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "However other studies have measured relatively rapid collagen synthesis in tendon, both at basal levels and in response to exercise (Miller et al., 2005), and also identified soluble collagen with a much shorter half-life compared to the majority of collagen in human articular cartilage (Hsueh et al., 2019); the location(s) of these more labile proteins remain to be identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Miller et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "283ad3d9-e2df-4bb7-a3f6-1f079e889616",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C13",
+      "claim": "Soluble collagen with a much shorter half-life compared to the majority of collagen has been identified in human articular cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "However other studies have measured relatively rapid collagen synthesis in tendon, both at basal levels and in response to exercise (Miller et al., 2005), and also identified soluble collagen with a much shorter half-life compared to the majority of collagen in human articular cartilage (Hsueh et al., 2019); the location(s) of these more labile proteins remain to be identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hsueh et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "b6511a07-5fa4-464c-b432-1a851f852c3a",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C14",
+      "claim": "The location(s) of more labile collagen proteins remain to be identified.",
+      "claim_type": "EXPLICIT",
+      "source": "However other studies have measured relatively rapid collagen synthesis in tendon, both at basal levels and in response to exercise (Miller et al., 2005), and also identified soluble collagen with a much shorter half-life compared to the majority of collagen in human articular cartilage (Hsueh et al., 2019); the location(s) of these more labile proteins remain to be identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "cbb17499-1330-4b1c-9c93-79965065cd3a",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C15",
+      "claim": "The glycoprotein-rich phase may be replenished more rapidly than the collagen-rich phase.",
+      "claim_type": "EXPLICIT",
+      "source": "When taken together, these contradictory findings indicate that proteome dynamics in connective tissues is complex, and that the glycoprotein-rich phase may be replenished more rapidly than the collagen-rich phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the contradictory findings in the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "0ba35876-a71b-44c9-b3e3-be240bc87890",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C16",
+      "claim": "The turnover rate of individual proteins within the different phases of the ECM remains undefined.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the turnover rate of individual proteins within the different phases of the extracellular matrix (ECM), and the potential contribution of differential regulation of protein turnover to maintenance of tissue homeostasis remain undefined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "4c9ba4c3-43da-42dd-8053-74473d122b0a",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C17",
+      "claim": "The potential contribution of differential regulation of protein turnover to maintenance of tissue homeostasis remains undefined.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the turnover rate of individual proteins within the different phases of the extracellular matrix (ECM), and the potential contribution of differential regulation of protein turnover to maintenance of tissue homeostasis remain undefined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "00de80f1-2101-4fa1-966b-1febd0e0cd15",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C18",
+      "claim": "Tendon consists of highly aligned, collagen-rich fascicular matrix (FM), interspersed by a less dense glycoprotein-rich phase termed the interfascicular matrix (IFM).",
+      "claim_type": "EXPLICIT",
+      "source": "Tendon provides an ideal model in which to separately interrogate protein turnover in these ECM phases, as it consists of highly aligned, collagen-rich fascicular matrix (FM), interspersed by a less dense glycoprotein-rich phase, termed the interfascicular matrix (IFM, also referred to as the endotenon) (Kastelic et al., 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kastelic et al., 1978.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "71773672-97bd-42b5-8099-8f75b0acb3a8",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C19",
+      "claim": "The FM is predominantly composed of type I collagen.",
+      "claim_type": "EXPLICIT",
+      "source": "While the FM is predominantly composed of type I collagen, glycoproteins are also present in this region at low abundance (Thorpe et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Thorpe et al., 2016b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "a0cd25bd-c026-4c88-b4c2-a0facaed5e67",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C20",
+      "claim": "Glycoproteins are present in the FM at low abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "While the FM is predominantly composed of type I collagen, glycoproteins are also present in this region at low abundance (Thorpe et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Thorpe et al., 2016b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "ab612989-a656-496e-8a0f-824a1849e13b",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C21",
+      "claim": "The IFM contains small amounts of a variety of collagens.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the IFM contains small amounts of a variety of collagens (S\u00f6dersten et al., 2013; Thorpe et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to S\u00f6dersten et al., 2013 and Thorpe et al., 2016b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "b994d345-ad41-4793-9f32-ab5c9d0c3082",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C22",
+      "claim": "It is possible to separate FM and IFM for individual analysis using laser capture microdissection.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the highly aligned structure of tendon tissue, it is possible to separate FM and IFM for individual analysis using laser capture microdissection (Thorpe et al., 2016b; Zamboulis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Thorpe et al., 2016b and Zamboulis et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "c7eb103d-2d5b-48af-87fd-3ef80fcb7b1e",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C23",
+      "claim": "There is greater expression of markers of ECM degradation within the IFM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, these, and other studies, have shown greater expression of markers of ECM degradation, as well as increased neo-peptide levels, a proxy measure of protein turnover, within the IFM (Spiesz et al., 2015; Thorpe et al., 2015a; Thorpe et al., 2016b), suggesting this region is more prone to microdamage, likely due to the high shear environment that occurs due to interfascicular sliding (Thorpe et al., 2012; Thorpe et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Spiesz et al., 2015; Thorpe et al., 2015a; Thorpe et al., 2016b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "2bef0efe-77b6-4aeb-981b-5e755c86bb2b",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C24",
+      "claim": "There are increased neo-peptide levels within the IFM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, these, and other studies, have shown greater expression of markers of ECM degradation, as well as increased neo-peptide levels, a proxy measure of protein turnover, within the IFM (Spiesz et al., 2015; Thorpe et al., 2015a; Thorpe et al., 2016b), suggesting this region is more prone to microdamage, likely due to the high shear environment that occurs due to interfascicular sliding (Thorpe et al., 2012; Thorpe et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Spiesz et al., 2015; Thorpe et al., 2015a; Thorpe et al., 2016b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "9f3d6bd8-ca4e-4859-af1d-ee36d356cb23",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C25",
+      "claim": "The IFM is more prone to microdamage, likely due to the high shear environment that occurs due to interfascicular sliding.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, these, and other studies, have shown greater expression of markers of ECM degradation, as well as increased neo-peptide levels, a proxy measure of protein turnover, within the IFM (Spiesz et al., 2015; Thorpe et al., 2015a; Thorpe et al., 2016b), suggesting this region is more prone to microdamage, likely due to the high shear environment that occurs due to interfascicular sliding (Thorpe et al., 2012; Thorpe et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data and supported by citations to Thorpe et al., 2012; Thorpe et al., 2015b.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "098dbd93-4ff5-45c3-8b84-0dde449ef105",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C26",
+      "claim": "There is greater turnover of ECM proteins localised to the IFM than within the FM to repair local microdamage and maintain tendon homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that there is greater turnover of ECM proteins localised to the IFM than within the FM to repair local microdamage and maintain tendon homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the findings discussed in the introduction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "6839498b-8009-4362-9bbd-bb3114424b7e",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C27",
+      "claim": "Novel bioinformatics software developments, in combination with in vivo isotope labelling and mass spectrometry technologies, provide the capacity to determine the turnover rates of individual proteins within a sample.",
+      "claim_type": "EXPLICIT",
+      "source": "However, novel bioinformatics software developments, in combination with in vivo isotope labelling, and mass spectrometry technologies, now provide the capacity to determine the turnover rates of individual proteins within a sample (Kim et al., 2012; Lam et al., 2014; Lau et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kim et al., 2012; Lam et al., 2014; Lau et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "b82ce70d-f33c-4abe-a6a3-60d2714f79fa",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C28",
+      "claim": "2H enrichment of serum occurred rapidly in rats labelled with deuterium, reaching a plateau of 5.6% by day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "In rats labelled with deuterium over a period of 127 days (Figure 1a), 2H enrichment of serum occurred rapidly and in a similar manner to that reported previously in rodents (Kim et al., 2012), reaching a plateau of 5.6% by day 4, and remained constant throughout the study (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1b and comparison to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "c469dc3f-2f9a-444f-9d8a-5e517acf7d84",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C29",
+      "claim": "2H enrichment of serum remained constant throughout the 127-day study.",
+      "claim_type": "EXPLICIT",
+      "source": "In rats labelled with deuterium over a period of 127 days (Figure 1a), 2H enrichment of serum occurred rapidly and in a similar manner to that reported previously in rodents (Kim et al., 2012), reaching a plateau of 5.6% by day 4, and remained constant throughout the study (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "c3422abb-8a13-460d-a140-6e1e4866418f",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C30",
+      "claim": "190 proteins with \u22652 unique peptides were identified in whole tendon digests.",
+      "claim_type": "EXPLICIT",
+      "source": "190 proteins with \u22652 unique peptides were identified in whole tendon digests and protein interactions are shown in Figure 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the proteomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "be4160ca-60ef-40b5-91b5-24ea8d23f68d",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C31",
+      "claim": "Of the 190 proteins identified in whole tendon, 72 were classified as ECM or ECM-related proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these proteins, 72 were classified as ECM or ECM-related proteins by MatrisomeDB (Hynes and Naba, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the proteomic analysis and classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "4c807658-250f-442a-ad2d-8307420c4d01",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C32",
+      "claim": "266 proteins with \u22652 unique peptides were identified in the IFM.",
+      "claim_type": "EXPLICIT",
+      "source": "In samples collected by laser capture microdissection of tendon cryosections, 266 proteins with \u22652 unique peptides were identified in the IFM, 79 of which were ECM or ECM-related proteins (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the proteomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "d36dc952-ee0e-4317-afff-af16357abc0f",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C33",
+      "claim": "Of the 266 proteins identified in the IFM, 79 were ECM or ECM-related proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In samples collected by laser capture microdissection of tendon cryosections, 266 proteins with \u22652 unique peptides were identified in the IFM, 79 of which were ECM or ECM-related proteins (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the proteomic analysis and classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "b4189177-3cbd-4e1f-96c4-db0ac6e041cb",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C34",
+      "claim": "116 proteins with \u22652 unique peptides were identified in the FM.",
+      "claim_type": "EXPLICIT",
+      "source": "In the FM, 116 proteins were identified, of which 71 were ECM or ECM-related proteins (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the proteomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "b1216b44-3e11-4670-a8a9-4e8bc99fc225",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C35",
+      "claim": "Of the 116 proteins identified in the FM, 71 were ECM or ECM-related proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In the FM, 116 proteins were identified, of which 71 were ECM or ECM-related proteins (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the proteomic analysis and classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "724482f8-2602-4739-903d-c62e8143293e",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C36",
+      "claim": "455 peptides, relating to 41 proteins, passed the ProTurn selection criteria and were used to calculate protein half-life in whole tendon samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 455 peptides, relating to 41 proteins, passed the ProTurn selection criteria and were used to calculate protein half-life in whole tendon samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "c4572485-cb3e-4c58-81bb-7dec5fd9278a",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C37",
+      "claim": "Decorin peptides demonstrate much faster turnover compared to collagen types 1 and 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-steady state curve fitting was performed by ProTurn to calculate turnover rate constants (k) for each peptide, and resultant fractional synthesis curves in Figure 5c&d demonstrate much faster turnover of decorin peptides compared to collagen types 1 and 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "3de4e6e7-258e-4576-aa79-7722d23210ad",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C38",
+      "claim": "Collagenous proteins had the smallest k values, with corresponding half-lives of 330 to 1086 days.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the smallest k values related to collagenous proteins, with corresponding half-lives of 330 to 1086 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "a4925c13-e0d8-458e-908e-1c6caf310245",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C39",
+      "claim": "Clusterin had the fastest turnover with a half-life of 1.4 days.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the protein identified with the fastest turnover was the glycoprotein clusterin, with a half-life of 1.4 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "9b3da9ec-8f39-48ed-951d-be2f6a13ddd5",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C40",
+      "claim": "The half-life of proteoglycans ranged from 21 days for decorin to 72 days for lumican.",
+      "claim_type": "EXPLICIT",
+      "source": "The half-life of proteoglycans ranged from 21 days for decorin to 72 days for lumican.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "39ca9678-41bd-4ddf-af91-814e5524adb2",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C41",
+      "claim": "With the exception of collagens, there was no clear relationship between protein class and rate of turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of collagens, which all exhibited low turnover rates, there was no clear relationship between protein class and rate of turnover (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data analysis shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "8ac9e932-6b66-41a0-bb0a-4d2809e9a20d",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C42",
+      "claim": "246 peptides, relating to 20 proteins, passed the ProTurn selection criteria in the FM.",
+      "claim_type": "EXPLICIT",
+      "source": "246 peptides, relating to 20 proteins, and 121 peptides, relating to 12 proteins, passed the ProTurn selection criteria in the FM and IFM respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "cd965132-c2db-44ff-95b7-1d0f5c237b27",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C43",
+      "claim": "121 peptides, relating to 12 proteins, passed the ProTurn selection criteria in the IFM.",
+      "claim_type": "EXPLICIT",
+      "source": "246 peptides, relating to 20 proteins, and 121 peptides, relating to 12 proteins, passed the ProTurn selection criteria in the FM and IFM respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "8d316d8d-6e2d-4b1c-b3f5-43a5623e797b",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C44",
+      "claim": "55 peptides were present both in the IFM and FM.",
+      "claim_type": "EXPLICIT",
+      "source": "55 peptides were present both in the IFM and FM, and k values were significantly greater for these peptides in the IFM compared to the FM (median: 0.018 vs. 0.010; p<0.0001), demonstrating an overall faster rate of protein turnover in the IFM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "a6393e6e-d055-4913-ad93-6202f5235421",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C45",
+      "claim": "k values were significantly greater for peptides present in both IFM and FM in the IFM compared to the FM (median: 0.018 vs. 0.010; p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "55 peptides were present both in the IFM and FM, and k values were significantly greater for these peptides in the IFM compared to the FM (median: 0.018 vs. 0.010; p<0.0001), demonstrating an overall faster rate of protein turnover in the IFM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "4cbf2712-65d6-4998-9626-13da66cf3e12",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C46",
+      "claim": "There is an overall faster rate of protein turnover in the IFM compared to the FM.",
+      "claim_type": "EXPLICIT",
+      "source": "55 peptides were present both in the IFM and FM, and k values were significantly greater for these peptides in the IFM compared to the FM (median: 0.018 vs. 0.010; p<0.0001), demonstrating an overall faster rate of protein turnover in the IFM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "ebc26968-e6fd-44af-9385-82eba734ee02",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C47",
+      "claim": "39 peptides relating to collagen type I were identified in both the IFM and FM.",
+      "claim_type": "EXPLICIT",
+      "source": "39 peptides relating to collagen type I were identified in both the IFM and FM, with significantly greater k values in the IFM (p<0.0001; Figure 7a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "555ed68b-55d1-45a4-a54b-414f2b218082",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C48",
+      "claim": "Collagen type I peptides had significantly greater k values in the IFM compared to the FM (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "39 peptides relating to collagen type I were identified in both the IFM and FM, with significantly greater k values in the IFM (p<0.0001; Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the statistical analysis of the data shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "58087d4c-fb27-46a7-a8a6-cd9a3b51d0c9",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C49",
+      "claim": "Turnover rate constants for Col1a1 and Col1a2 were significantly higher in the IFM compared to the FM.",
+      "claim_type": "EXPLICIT",
+      "source": "Turnover rate constants for Col1a1 and Col1a2 were significantly higher in the IFM compared to the FM, but there were no significant differences in rate constants for Col3a1 between tendon phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "dd485386-e792-4c80-b01e-cf520bed83c2",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C50",
+      "claim": "There were no significant differences in rate constants for Col3a1 between tendon phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Turnover rate constants for Col1a1 and Col1a2 were significantly higher in the IFM compared to the FM, but there were no significant differences in rate constants for Col3a1 between tendon phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "8fdb9774-a125-4a5c-8b07-bed7a176b1a5",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C51",
+      "claim": "Rate constants of turnover of decorin peptides were significantly higher in the IFM compared to the FM (p=0.042).",
+      "claim_type": "EXPLICIT",
+      "source": "Rate constants of turnover of decorin peptides were significantly higher in the IFM compared to the FM (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the statistical analysis of the data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "af789c18-3557-46aa-8a41-a7f7145b079b",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C52",
+      "claim": "Protein turnover rate in tendon varied almost 1000-fold, with half-lives ranging from 1.5 days to over 1000 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein turnover rate in tendon varied almost 1000-fold, with half-lives ranging from 1.5 days to over 1000 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "cd0b98a3-a6b2-4c4d-9047-8c2c12f618c6",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C53",
+      "claim": "The results support the hypothesis that there is significantly faster turnover of proteins in the glycoprotein-rich IFM compared to the collagen-rich FM.",
+      "claim_type": "EXPLICIT",
+      "source": "The results also support our hypothesis, demonstrating significantly faster turnover of proteins in the glycoprotein-rich IFM compared to the collagen-rich FM, both overall and when directly comparing individual proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "6583243e-1d31-40dd-a803-e9ba45da03cc",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C54",
+      "claim": "The IFM had a more complex proteome than the FM, with a greater number of proteins identified in this region.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous studies (Thorpe et al., 2016b), the IFM had a more complex proteome than the FM, with a greater number of proteins identified in this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data and comparison to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "56de97c3-4cca-4932-9c36-da78945a2e5a",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C55",
+      "claim": "More proteins were identified within the IFM than in whole tendon samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, more proteins were identified within the IFM than in whole tendon samples; this is likely due to the predominance of collagen in whole tendon samples which precludes detection of proteins present at lower abundance in these samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data with an explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "53279e50-e416-4d5f-ab8e-d1742ce3b62d",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C56",
+      "claim": "The predominance of collagen in whole tendon samples precludes detection of proteins present at lower abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, more proteins were identified within the IFM than in whole tendon samples; this is likely due to the predominance of collagen in whole tendon samples which precludes detection of proteins present at lower abundance in these samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the observation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "4c915c19-bfb6-41b4-b13a-1b231a4edf78",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C57",
+      "claim": "Collagen type I had a half-life from approximately 1.5 years in the IFM to 3 years in the FM.",
+      "claim_type": "EXPLICIT",
+      "source": "Collagenous proteins had the slowest turnover of all tendon matrix proteins identified, in the whole tendon, and in the FM and IFM, with a half-life from approximately 1.5 years in the IFM to 3 years in the FM for type I collagen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "5a569f1a-cc42-48f8-a304-386072bbc380",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C58",
+      "claim": "Collagen type III appeared to have a somewhat faster turnover rate than type I in both the FM and IFM.",
+      "claim_type": "EXPLICIT",
+      "source": "Collagen type III appeared to have a somewhat faster turnover rate than type I in both the FM and IFM, with no significant difference between phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "cf2e59a4-7baa-41cc-82d9-dcc38ab2976b",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C59",
+      "claim": "The IFM is enriched in collagen type III.",
+      "claim_type": "EXPLICIT",
+      "source": "The IFM is known to be enriched in collagen type III, whereas the majority of collagen type I localises to the FM (S\u00f6dersten et al., 2013; Thorpe et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to S\u00f6dersten et al., 2013 and Thorpe et al., 2016b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "828a4598-1dee-4e99-a7df-57b5237faca5",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C60",
+      "claim": "The majority of collagen type I localises to the FM.",
+      "claim_type": "EXPLICIT",
+      "source": "The IFM is known to be enriched in collagen type III, whereas the majority of collagen type I localises to the FM (S\u00f6dersten et al., 2013; Thorpe et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to S\u00f6dersten et al., 2013 and Thorpe et al., 2016b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "80ad2510-5880-493a-9e20-25b739bcb2ed",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C61",
+      "claim": "Previous studies have reported that collagen is essentially inert in the adult rat patellar tendon.",
+      "claim_type": "EXPLICIT",
+      "source": "While the collagen turnover rates measured are relatively slow, they contrast with previous studies which have reported that collagen is essentially inert in the adult rat patellar tendon (Bechsh\u00f8ft et al., 2017) and in tendons from larger animals (Heinemeier et al., 2013; Thorpe et al., 2010), as well as in cartilage and intervertebral disc (Heinemeier et al., 2016; Sivan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bechsh\u00f8ft et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "93058f28-7946-46b3-a44a-cd35dff9024b",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C62",
+      "claim": "Previous studies have reported that collagen is essentially inert in tendons from larger animals.",
+      "claim_type": "EXPLICIT",
+      "source": "While the collagen turnover rates measured are relatively slow, they contrast with previous studies which have reported that collagen is essentially inert in the adult rat patellar tendon (Bechsh\u00f8ft et al., 2017) and in tendons from larger animals (Heinemeier et al., 2013; Thorpe et al., 2010), as well as in cartilage and intervertebral disc (Heinemeier et al., 2016; Sivan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Heinemeier et al., 2013 and Thorpe et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "ca0fdf52-77ed-4b21-817e-00d6d4b6fb4c",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C63",
+      "claim": "Previous studies have reported that collagen is essentially inert in cartilage and intervertebral disc.",
+      "claim_type": "EXPLICIT",
+      "source": "While the collagen turnover rates measured are relatively slow, they contrast with previous studies which have reported that collagen is essentially inert in the adult rat patellar tendon (Bechsh\u00f8ft et al., 2017) and in tendons from larger animals (Heinemeier et al., 2013; Thorpe et al., 2010), as well as in cartilage and intervertebral disc (Heinemeier et al., 2016; Sivan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Heinemeier et al., 2016 and Sivan et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "e44c035e-5d21-4e48-b03f-7bb5ddf48b68",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C64",
+      "claim": "Previous studies that measured collagen synthesis in human tendon using stable isotope labelling calculated a FSR of 0.04\u20130.06% hour\u22121, which equates to a half-life ranging from 48 to 64 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies that have measured collagen synthesis in human tendon using stable isotope labelling and performing tendon biopsies, report contradictory findings, calculating a FSR of 0.04\u20130.06% hour\u22121, which equates to a half-life ranging from 48 to 64 days (Miller et al., 2005; Babraj et al., 2005; Smeets et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Miller et al., 2005; Babraj et al., 2005; Smeets et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "40d72432-0740-472c-a894-66db5a1645e9",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C65",
+      "claim": "Short term studies are likely to over-estimate FSR because not all newly synthesised protein would be incorporated into the matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these were very short term studies, and it is unlikely that all newly synthesised protein would be incorporated into the matrix, such that FSR is over-estimated (Heinemeier et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation to Heinemeier et al., 2013.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "c70fb8ee-11ab-48e0-900b-138e451d72de",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C66",
+      "claim": "The pool of more labile collagen identified previously in human tendon and cartilage may be located in the glycoprotein-rich ECM phase rather than with the bulk of the fascicular collagen.",
+      "claim_type": "EXPLICIT",
+      "source": "The results we present here help to explain these apparent contradictory findings, suggesting that the pool of more labile collagen identified previously in human tendon and cartilage (Miller et al., 2005; Hsueh et al., 2019) may be located in the glycoprotein-rich ECM phase rather than with the bulk of the fascicular collagen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the current findings and previous studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "c3cb2a1a-2389-487f-bf69-30a2a1ec2851",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C67",
+      "claim": "Post-translational modifications are essential for determining protein structure and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-translational modifications are essential for determining protein structure and function, and are also likely to influence susceptibility to degradation by limiting enzyme access to cleavage sites (Jaisson et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jaisson et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "4c6f09d2-54e9-44d5-b5e6-a9dc264e5acf",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C68",
+      "claim": "Post-translational modifications are likely to influence susceptibility to degradation by limiting enzyme access to cleavage sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-translational modifications are essential for determining protein structure and function, and are also likely to influence susceptibility to degradation by limiting enzyme access to cleavage sites (Jaisson et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jaisson et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "515928a9-3a98-4059-85ee-99c445b6f678",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C69",
+      "claim": "With ageing, partially degraded collagen accumulates within the equine superficial digital flexor tendon.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a previous study has shown that, with ageing, partially degraded collagen accumulates within the equine superficial digital flexor tendon (Thorpe et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Thorpe et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "b9f92436-b691-4b7e-a9f3-19edefefc6e6",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C70",
+      "claim": "Increased advanced glycation end products may render the ECM more resistant to degradation and subsequent remodelling, reducing the ability to repair damage within the tendon.",
+      "claim_type": "EXPLICIT",
+      "source": "This is accompanied by increased advanced glycation end products which may render the ECM more resistant to degradation and subsequent remodelling, reducing the ability to repair damage within the tendon (Thorpe et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by a citation to Thorpe et al., 2010.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "380b5ba9-c101-41a0-99d5-bd5d6c761d86",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C71",
+      "claim": "Overall protein turnover rate is likely more rapid in small compared to large animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is likely that overall protein turnover rate is more rapid in small compared to large animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "3721c242-4404-4f55-95fa-2ebfb6c08430",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C72",
+      "claim": "A recent study of protein turnover in dermal fibroblasts from different rodent species demonstrated a negative correlation between median k values and lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "While few studies have directly compared protein turnover kinetics between species, a recent study of protein turnover in dermal fibroblasts from different rodent species demonstrated a negative correlation between median k values and lifespan (Swovick et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Swovick et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "8f28ca1c-0d39-4056-be2b-072b3e3951ba",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C73",
+      "claim": "The half-life of serum albumin is approximately 10 fold greater in the human compared to the rat.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, the half-life of serum albumin is approximately 10 fold greater in the human compared to the rat (Chaudhury et al., 2003; Jeffay, 1960).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chaudhury et al., 2003 and Jeffay, 1960.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "f70292dc-174b-4ac1-89d5-4f4693f7e186",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C74",
+      "claim": "Turnover of tendon ECM proteins is likely slower in larger animals than in the rat.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, it can be presumed that turnover of tendon ECM proteins is also likely slower in larger animals than those we report here for the rat, but the relative differences observed between individual proteins and ECM phases are likely to persist in humans and other large animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the discussion of species differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "51db34ae-7887-47b8-a770-25c82395152a",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C75",
+      "claim": "The relative differences observed between individual proteins and ECM phases are likely to persist in humans and other large animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, it can be presumed that turnover of tendon ECM proteins is also likely slower in larger animals than those we report here for the rat, but the relative differences observed between individual proteins and ECM phases are likely to persist in humans and other large animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the discussion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "996a0007-4a95-4718-91d9-79016442521b",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C76",
+      "claim": "Serum albumin and serotransferrin are predominantly synthesised and secreted by the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, serum albumin and serotransferrin are predominantly synthesised and secreted by the liver (Tavill, 1972), whereas haemoglobin is synthesised in the bone marrow and its turnover provides a measure of erythrocyte lifespan (Koury, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tavill, 1972.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "d8456a48-4308-4fef-abbf-48fb831a2cb7",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C77",
+      "claim": "Haemoglobin is synthesised in the bone marrow and its turnover provides a measure of erythrocyte lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, serum albumin and serotransferrin are predominantly synthesised and secreted by the liver (Tavill, 1972), whereas haemoglobin is synthesised in the bone marrow and its turnover provides a measure of erythrocyte lifespan (Koury, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Koury, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "54f781ec-96d4-476f-a46e-0c9cbd3e05de",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C78",
+      "claim": "Anionic trypsin-1 is synthesised in the pancreas.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, anionic trypsin-1, which had a particularly long half-life of nearly 2000 days in the FM, is synthesised in the pancreas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "37e47f0a-eff5-481f-90f1-57e1d253dc44",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C79",
+      "claim": "Anionic trypsin-1 had a particularly long half-life of nearly 2000 days in the FM.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, anionic trypsin-1, which had a particularly long half-life of nearly 2000 days in the FM, is synthesised in the pancreas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "4e1634a4-32c0-4848-a068-1c4e31629ad4",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C80",
+      "claim": "There may be a pool of trypsin within tendon that remains inactive until required for repair, which would explain the long half-life measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteases have a role in tissue repair (Shah and Mital, 2018); it is possible that there is a pool of trypsin within tendon that remains inactive until required for repair, which would explain the long half-life measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation to explain the observation, with a citation to Shah and Mital, 2018.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "b329b3b4-c320-43ef-8fa1-078622ddaed8",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C81",
+      "claim": "GuHCl extraction has previously been shown to result in best proteome coverage for tendon.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose GuHCl extraction for whole tendon as this has previously been shown to result in best proteome coverage for tendon (Ashraf Kharaz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ashraf Kharaz et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "e12bae48-71f5-48e8-aef6-92580ac73fd8",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C82",
+      "claim": "Protein half-lives were similar in the whole tendon and the fascicular matrix, suggesting minimal effects from using different extraction techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite differences in extraction techniques used, protein half-lives were similar in the whole tendon and the fascicular matrix, suggesting minimal effects from using different extraction techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "7d6c9a2a-f90d-4d81-bd35-748b47087447",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C83",
+      "claim": "A previous study in which the rat Achilles was acid-solubilised post deuterium labelling reported a FSR of 0.66 % day\u22121 which equates to a half-life of 105 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous studies, in which the rat Achilles was acid-solubilised post deuterium labelling and FSR measured by GC-MS, reported a FSR of 0.66 % day\u22121 (Katsma et al., 2017) which equates to a half-life of 105 days, supporting the results we present here, in which average protein half-life in whole tendon is 131 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Katsma et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "28823c3d-1ce1-4ada-8cd4-9aed5d6d7f62",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C84",
+      "claim": "Average protein half-life in whole tendon is 131 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous studies, in which the rat Achilles was acid-solubilised post deuterium labelling and FSR measured by GC-MS, reported a FSR of 0.66 % day\u22121 (Katsma et al., 2017) which equates to a half-life of 105 days, supporting the results we present here, in which average protein half-life in whole tendon is 131 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "d223f62f-0c08-4197-b1d2-2b6d880f9416",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C85",
+      "claim": "The IFM has specialised composition and function, facilitating sliding between tendon fascicles to provide extensibility to the tendon.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that the IFM has specialised composition and function, facilitating sliding between tendon fascicles to provide extensibility to the tendon (Thorpe et al., 2012; Thorpe et al., 2015b; Thorpe et al., 2016b; Thorpe et al., 2016c; Thorpe et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "cc2dda97-3a1d-4307-95ff-a42d5bb86f73",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C86",
+      "claim": "Cyclic sliding and recoil increases the risk of microdamage to the IFM.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclic sliding and recoil increases the risk of microdamage to this region (Spiesz et al., 2015), and therefore greater turnover of IFM proteins may be a protective mechanism to repair this damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Spiesz et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "1a4025c7-febb-4437-91fc-58cd50e26d98",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C87",
+      "claim": "Greater turnover of IFM proteins may be a protective mechanism to repair microdamage.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclic sliding and recoil increases the risk of microdamage to this region (Spiesz et al., 2015), and therefore greater turnover of IFM proteins may be a protective mechanism to repair this damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "cc3754e4-5c4f-4c55-98d0-f1ce7fbaa004",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C88",
+      "claim": "Elastin and lubricin are localised to the IFM and likely contribute to its mechanical function.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously demonstrated that elastin and lubricin are localised to the IFM and likely contribute to its mechanical function (Godinho et al., 2017; Thorpe et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Godinho et al., 2017 and Thorpe et al., 2016a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "0dbec853-2cf8-4072-bdb7-7ae2d18bf323",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C89",
+      "claim": "Elastin and lubricin are difficult to identify using LC-MS/MS.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these proteins are difficult to identify using LC-MS/MS (Thorpe et al., 2016b) so we were unable to assess their rate of turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Thorpe et al., 2016b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "4f8f527c-fffb-4c73-9aee-408675ed454c",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C90",
+      "claim": "Considerably faster turnover of proteoglycans compared to collagens was measured in tendons, FM and IFM.",
+      "claim_type": "EXPLICIT",
+      "source": "We extend previous observations in tendon and other musculoskeletal tissues (Thorpe et al., 2010; Sivan et al., 2006; Maroudas et al., 1998; Hsueh et al., 2019), measuring considerably faster turnover of proteoglycans compared to collagens in tendons, FM and IFM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis and extends previous observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "5e1613f7-7edc-4acf-93e9-d80ccf46a8dc",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C91",
+      "claim": "Significantly faster turnover of decorin was observed in the IFM compared to the FM.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there were variations in rates of small leucine-rich proteoglycan turnover between tendon phases. Significantly faster turnover of decorin was observed in the IFM compared to the FM, whereas the results suggest that faster fibromodulin turnover may occur within the FM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "3f899501-157b-46d4-b42b-b7474ed44260",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C92",
+      "claim": "Faster fibromodulin turnover may occur within the FM.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there were variations in rates of small leucine-rich proteoglycan turnover between tendon phases. Significantly faster turnover of decorin was observed in the IFM compared to the FM, whereas the results suggest that faster fibromodulin turnover may occur within the FM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "3a07ab87-bc0d-4cf2-99dd-8d655fc613ff",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C93",
+      "claim": "Previous studies have shown differential abundance of specific proteoglycans in the IFM and FM, with enrichment of fibromodulin in the FM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous studies have shown differential abundance of specific proteoglycans in the IFM and FM, with enrichment of fibromodulin in the FM, but no significant differences in amounts of decorin, biglycan or lumican between tendon phases, as determined by proteomic analysis and immunohistochemistry (Thorpe et al., 2016b; Thorpe et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Thorpe et al., 2016b and Thorpe et al., 2016a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "74c6f35c-5608-4c89-b602-028115000167",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C94",
+      "claim": "There are no significant differences in amounts of decorin, biglycan or lumican between tendon phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous studies have shown differential abundance of specific proteoglycans in the IFM and FM, with enrichment of fibromodulin in the FM, but no significant differences in amounts of decorin, biglycan or lumican between tendon phases, as determined by proteomic analysis and immunohistochemistry (Thorpe et al., 2016b; Thorpe et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Thorpe et al., 2016b and Thorpe et al., 2016a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "467ab27f-af8d-47f2-8671-3abb669f617e",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C95",
+      "claim": "Collagen type V, decorin, biglycan, fibromodulin, lumican and thrombospondins all serve roles in modulating collagen fibrillogenesis during tendon development.",
+      "claim_type": "EXPLICIT",
+      "source": "While use of mouse knock out models have established the roles of a variety of proteins during tendon development, with collagen type V, decorin, biglycan, fibromodulin, lumican and thrombospondins all serving roles in modulating collagen fibrillogenesis (Connizzo et al., 2013; Delgado Caceres et al., 2018), the contributions of these proteins to the function of mature tendon are less well characterised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Connizzo et al., 2013 and Delgado Caceres et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "b08a4355-cc6d-4832-abc9-44bd2262be3d",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C96",
+      "claim": "The contributions of collagen type V, decorin, biglycan, fibromodulin, lumican and thrombospondins to the function of mature tendon are less well characterised.",
+      "claim_type": "EXPLICIT",
+      "source": "While use of mouse knock out models have established the roles of a variety of proteins during tendon development, with collagen type V, decorin, biglycan, fibromodulin, lumican and thrombospondins all serving roles in modulating collagen fibrillogenesis (Connizzo et al., 2013; Delgado Caceres et al., 2018), the contributions of these proteins to the function of mature tendon are less well characterised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "f9e67f93-3bd4-46e4-838b-bfeb62406d84",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C97",
+      "claim": "Decorin and biglycan inducible knock-out mice demonstrated alterations in collagen fibril diameter and decreased tendon mechanical properties in the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work using decorin and biglycan inducible knock-out mice demonstrated alterations in collagen fibril diameter and decreased tendon mechanical properties in the adult, indicating an important role for these proteoglycans in FM and subsequently, tendon homeostasis (Robinson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Robinson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "d968e126-be3d-45d7-a172-a28b64d34ee5",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C98",
+      "claim": "Decorin and biglycan have an important role in FM and tendon homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work using decorin and biglycan inducible knock-out mice demonstrated alterations in collagen fibril diameter and decreased tendon mechanical properties in the adult, indicating an important role for these proteoglycans in FM and subsequently, tendon homeostasis (Robinson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the findings and supported by a citation to Robinson et al., 2017.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "fbe03715-e5bd-422f-82e0-dc999066c05c",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C99",
+      "claim": "Proteoglycans likely contribute to homeostasis within the IFM.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that proteoglycans also contribute to homeostasis within the IFM, but the roles of specific proteins in the IFM during development and in the adult remain to be defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the discussion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "c7f4ecc3-5a6d-4319-a840-a933deeea95b",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C100",
+      "claim": "The roles of specific proteins in the IFM during development and in the adult remain to be defined.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that proteoglycans also contribute to homeostasis within the IFM, but the roles of specific proteins in the IFM during development and in the adult remain to be defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "0106e128-502a-4a7b-a555-10186bce5e0a",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C101",
+      "claim": "Proteome dynamics in tendon is highly complex, with differences in protein-selective turnover rates observed in distinct IFM and FM ECM phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that proteome dynamics in tendon is highly complex, with differences in protein-selective turnover rates observed in distinct IFM and FM ECM phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "534992fb-839a-4f3e-bac7-810a359b2913",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C102",
+      "claim": "Regulation of protein turnover is multifactorial, involving pathways controlling protein synthesis, folding, transport, assembly, disassembly, and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulation of protein turnover is multifactorial, involving pathways controlling protein synthesis, folding, transport, assembly, disassembly, and degradation (Powers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Powers et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "22fb44fb-780c-4d4d-897c-f941eacda8ab",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C103",
+      "claim": "Recent studies have identified the important role of transforming growth factor-\u03b2 (TGF-\u03b2) in regulating ECM remodelling in tendon and other tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have identified the important role of transforming growth factor-\u03b2 (TGF-\u03b2) in regulating ECM remodelling in tendon and other tissues (Gumucio et al., 2015; Rys et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gumucio et al., 2015 and Rys et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "a1e454d7-da8b-4146-96f1-d77ecfb92244",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C104",
+      "claim": "TGF-\u03b2 localises to the IFM in developing and adult tendon.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it has been shown that TGF-\u03b2 localises to the IFM in developing and adult tendon (Kuo et al., 2008; Russo et al., 2015), which is consistent with the notion that increased TGF-\u03b2 signalling could have a role in this faster protein turnover identified in the IFM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kuo et al., 2008 and Russo et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "52e70ffe-6404-428e-a675-01f84f5f94d2",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C105",
+      "claim": "Increased TGF-\u03b2 signalling could have a role in the faster protein turnover identified in the IFM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it has been shown that TGF-\u03b2 localises to the IFM in developing and adult tendon (Kuo et al., 2008; Russo et al., 2015), which is consistent with the notion that increased TGF-\u03b2 signalling could have a role in this faster protein turnover identified in the IFM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings and previous studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "ccbc1040-86b9-413d-a98f-6b6f30b281fb",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C106",
+      "claim": "This is the first study to determine the turnover rate of individual proteins in different connective tissue phases.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first study to determine the turnover rate of individual proteins in different connective tissue phases, demonstrating complex proteome dynamics in tendon, with an overall faster turnover of proteins in the glycoprotein-rich IFM phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "c0dd4f11-f5c9-4eb2-a267-907b26e096d3",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C107",
+      "claim": "Greater capacity for turnover of the IFM phase may be indicative of a mechanism that reduces the accumulation of damage caused by the high shear environment within this region.",
+      "claim_type": "EXPLICIT",
+      "source": "Greater capacity for turnover of this phase of the tendon matrix may be indicative of a mechanism that reduces the accumulation of damage caused by the high shear environment within this region, although this remains to be directly determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "2d2d4338-3c98-4a08-971a-62fb7f661fcb",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "claim_id": "C108",
+      "claim": "The techniques used provide a powerful approach to interrogate alterations in connective tissue protein turnover with ageing and/or disease which are likely to influence injury risk.",
+      "claim_type": "EXPLICIT",
+      "source": "The techniques used here provide a powerful approach to interrogate alterations in connective tissue protein turnover with ageing and/or disease which are likely to influence injury risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the implications of the methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "72694ca1-01ae-4b62-8f4a-c6b5122a2846",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Deuterium labeling in rats reached a stable plateau of 5.6% by day 4 and remained constant throughout the 127-day study period, consistent with previous rodent studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C29 are directly supported by experimental data shown in Figure 1b and are consistent with prior work (Kim et al., 2012). The plateau and stability of deuterium enrichment are critical for calculating protein turnover rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "bb42a2a6-a284-4241-af08-7d9ad66a4acc",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Proteomic analysis identified 190 proteins in whole tendon (72 ECM-related), 266 proteins in IFM (79 ECM-related), and 116 proteins in FM (71 ECM-related), demonstrating differential proteome complexity between tendon compartments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 report direct proteomic identification results with appropriate criteria (\u22652 unique peptides, 1% FDR). The finding that IFM has greater proteome complexity than FM is consistent with previous work (C54) and methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "ada45621-8654-4427-9296-045aac59631c",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Protein turnover rates in whole tendon varied ~1000-fold, with collagen half-lives of 330-1086 days, clusterin at 1.4 days, and proteoglycans ranging from 21-72 days. No clear relationship existed between protein class and turnover rate except for collagens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 and C52 are supported by ProTurn analysis of 455 peptides from 41 proteins meeting stringent quality criteria (R\u00b2\u22650.8 or S.E.\u22640.05, \u22654 time points). The data demonstrate the wide range of turnover rates and are visualized in Figures 5 and 6.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "88dc0a30-2547-4e5c-a2c0-b6340a9ee17d",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Overall protein turnover is significantly faster in the IFM compared to FM, with 55 shared peptides showing significantly higher k values in IFM (median 0.018 vs 0.010, p<0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 present statistically significant differences in turnover rates between compartments using paired analysis of shared peptides. The statistical test is appropriate and the p-value is highly significant, directly supporting the study's main hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "ffc95d4e-f3c8-4982-bc45-64b8e28c1920",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Collagen type I turnover is significantly faster in IFM than FM (39 peptides, p<0.0001), with half-lives of ~1.5 years in IFM vs ~3 years in FM. Collagen type III showed no significant difference between phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 and C57 are supported by statistical analysis of collagen peptides identified in both compartments (Figure 7). The finding that Col1a1 and Col1a2 differ between phases while Col3a1 does not is clearly stated and statistically tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "5cf04bec-6352-4795-a83e-c3c0928113d7",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Decorin peptides showed significantly faster turnover in IFM compared to FM (p=0.042), demonstrating differential proteoglycan dynamics between tendon compartments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51 and C91 are supported by manual calculation of turnover rates shown in Figure 8, with appropriate statistical testing. The p-value of 0.042 is marginally significant but meets the p<0.05 threshold stated in methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "400c2004-8f59-4467-9375-f811cbb15b55",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "This first study of individual protein turnover in distinct connective tissue phases demonstrates complex proteome dynamics with ~1000-fold differences in turnover rates and overall faster turnover in glycoprotein-rich IFM versus collagen-rich FM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C53, C101, and C106 represent the study's main conclusions, which are well-supported by the experimental data (C28-C51, C91). The novelty claim (C106) appears justified as no prior studies measured individual protein turnover in spatially separated ECM phases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "faa5ba1e-9785-4572-bdca-1be5bd196688",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The IFM has a more complex proteome than FM with more proteins identified, likely because collagen predominance in whole tendon masks lower-abundance proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by the proteomic data (C30-C35) showing 266 proteins in IFM vs 116 in FM, consistent with prior work (Thorpe et al., 2016b). The explanation for greater IFM complexity (C56) is a reasonable inference based on mass spectrometry dynamic range limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "53f013e3-f8ba-4b51-b210-895673665390",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The measured collagen turnover rates (1.5-3 years) contrast with some prior studies reporting negligible turnover but align with others showing rapid synthesis. The more labile collagen pool may be located in the glycoprotein-rich ECM phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C66 attempt to reconcile contradictory literature findings. While the current data (C57-C58) are supported, the speculation that labile collagen is in the IFM (C66) is reasonable but remains unproven. The critique of short-term studies overestimating FSR (C65) is valid but the magnitude of this effect is uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "6d6a957b-6a51-49d5-aedb-14607383384b",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Protein turnover is likely faster in small versus large animals, suggesting the absolute turnover rates measured in rats may not directly translate to humans, though relative differences between proteins and ECM phases likely persist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C75 are speculative inferences based on limited cross-species data (C72-C73). While the reasoning is logical, the extrapolation to tendon ECM proteins (C74-C75) lacks direct experimental support. This represents an important caveat but remains unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "3b2a264d-e9cd-4055-bb8c-28b8bd8cf886",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Some identified proteins (serum albumin, serotransferrin, hemoglobin, trypsin) are synthesized elsewhere and transported to tendon. Trypsin's unusually long half-life (~2000 days in FM) may reflect an inactive pool awaiting tissue repair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C78 correctly identify proteins synthesized in other organs. The measured trypsin half-life (C79) is data-supported but the explanation (C80) is speculative. The extremely long half-life is surprising and may warrant further investigation or validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "0dd404ab-e59d-4ed9-b366-ad82b78ab5bb",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Despite using different extraction methods for whole tendon (GuHCl) versus laser-captured samples, protein half-lives were similar between whole tendon and FM, with average whole tendon half-life of 131 days consistent with prior rat Achilles studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 address methodological concerns about extraction techniques. The similarity in results (C82) and agreement with prior work (C83: 105 days vs C84: 131 days) support the validity of the approach, though the different methods remain a limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "01c390cb-fcf3-48ea-b2d3-0c53411ce27f",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The IFM's specialized composition facilitates interfascicular sliding, and cyclic loading increases microdamage risk. Greater IFM protein turnover may be a protective mechanism to repair damage and prevent accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C86 are well-supported by prior work. However, the mechanistic interpretation that faster turnover is protective (C87, C107) is speculative. While consistent with the data, causality is not established and alternative explanations are not excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "7da0d72d-c67b-44cb-b66d-5e1b3ac10e65",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Elastin and lubricin localize to IFM and likely contribute to mechanical function, but their turnover rates could not be assessed due to LC-MS/MS detection limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 accurately describe a technical limitation. The localization and functional importance are supported by prior work (Godinho et al., 2017; Thorpe et al., 2016a), and the inability to detect these proteins by LC-MS/MS is a known limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "eaffc2ef-dd88-42f6-b874-fcaaa5da1802",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Proteoglycans showed considerably faster turnover than collagens in all tendon compartments. Decorin turnover was faster in IFM, while fibromodulin may turn over faster in FM, despite no differences in proteoglycan abundance between phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C90 is well-supported by data. Claim C91 (decorin faster in IFM) is supported with p=0.042. However, C92 (fibromodulin faster in FM) is speculative with insufficient statistical support. Claims C93-C94 from prior work provide context but don't resolve the uncertainty about fibromodulin.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "cd0145c8-0812-4ad7-8b99-7917a5cd5c21",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "While proteoglycans modulate collagen fibrillogenesis during development, their roles in mature tendon are less characterized. Recent knockout studies suggest decorin and biglycan are important for FM homeostasis, but IFM-specific roles remain undefined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C100 accurately summarize the state of knowledge regarding proteoglycan function. The developmental roles (C95) and recent adult findings (C97-C98) are properly cited. The acknowledgment of knowledge gaps (C96, C100) is appropriate and honest.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "2e38f0f7-826e-4681-bb45-b60c1f2ba694",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Protein turnover regulation is multifactorial. TGF-\u03b2, which localizes to IFM in developing and adult tendon, could contribute to the faster protein turnover observed in IFM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C102 is well-established (Powers et al., 2009). Claims C103-C104 correctly cite TGF-\u03b2's role and localization. However, C105 is speculative\u2014while TGF-\u03b2 localization is consistent with faster IFM turnover, a causal role is not demonstrated and requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "e5c657ee-e081-44c7-916e-16a2bde159c0",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Post-translational modifications influence protein structure, function, and degradation susceptibility. Age-related accumulation of partially degraded collagen and advanced glycation end products may reduce ECM remodeling capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are well-established principles supported by Jaisson et al., 2007. Claims C69-C70 cite prior work (Thorpe et al., 2010) on age-related changes. While C70 includes speculation about mechanism, it is appropriately qualified and based on reasonable inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    },
+    {
+      "id": "5ace6c08-242b-4ba2-8196-bc124208fb1a",
+      "content_id": "6c93e18b-4e76-4485-bfed-9a0d91c1f8af",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The techniques used provide a powerful approach to interrogate alterations in connective tissue protein turnover with aging and/or disease that likely influence injury risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C108 is a reasonable assessment of the methodology's potential applications. The study successfully demonstrated the approach's capability to measure individual protein turnover in distinct tissue compartments, supporting its utility for future studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:07.910307Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b82ce70d-f33c-4abe-a6a3-60d2714f79fa",
+      "result_id": "72694ca1-01ae-4b62-8f4a-c6b5122a2846"
+    },
+    {
+      "claim_id": "c469dc3f-2f9a-444f-9d8a-5e517acf7d84",
+      "result_id": "72694ca1-01ae-4b62-8f4a-c6b5122a2846"
+    },
+    {
+      "claim_id": "c3422abb-8a13-460d-a140-6e1e4866418f",
+      "result_id": "bb42a2a6-a284-4241-af08-7d9ad66a4acc"
+    },
+    {
+      "claim_id": "be4160ca-60ef-40b5-91b5-24ea8d23f68d",
+      "result_id": "bb42a2a6-a284-4241-af08-7d9ad66a4acc"
+    },
+    {
+      "claim_id": "4c807658-250f-442a-ad2d-8307420c4d01",
+      "result_id": "bb42a2a6-a284-4241-af08-7d9ad66a4acc"
+    },
+    {
+      "claim_id": "d36dc952-ee0e-4317-afff-af16357abc0f",
+      "result_id": "bb42a2a6-a284-4241-af08-7d9ad66a4acc"
+    },
+    {
+      "claim_id": "b4189177-3cbd-4e1f-96c4-db0ac6e041cb",
+      "result_id": "bb42a2a6-a284-4241-af08-7d9ad66a4acc"
+    },
+    {
+      "claim_id": "b1216b44-3e11-4670-a8a9-4e8bc99fc225",
+      "result_id": "bb42a2a6-a284-4241-af08-7d9ad66a4acc"
+    },
+    {
+      "claim_id": "724482f8-2602-4739-903d-c62e8143293e",
+      "result_id": "ada45621-8654-4427-9296-045aac59631c"
+    },
+    {
+      "claim_id": "c4572485-cb3e-4c58-81bb-7dec5fd9278a",
+      "result_id": "ada45621-8654-4427-9296-045aac59631c"
+    },
+    {
+      "claim_id": "3de4e6e7-258e-4576-aa79-7722d23210ad",
+      "result_id": "ada45621-8654-4427-9296-045aac59631c"
+    },
+    {
+      "claim_id": "a4925c13-e0d8-458e-908e-1c6caf310245",
+      "result_id": "ada45621-8654-4427-9296-045aac59631c"
+    },
+    {
+      "claim_id": "9b3da9ec-8f39-48ed-951d-be2f6a13ddd5",
+      "result_id": "ada45621-8654-4427-9296-045aac59631c"
+    },
+    {
+      "claim_id": "39ca9678-41bd-4ddf-af91-814e5524adb2",
+      "result_id": "ada45621-8654-4427-9296-045aac59631c"
+    },
+    {
+      "claim_id": "af789c18-3557-46aa-8a41-a7f7145b079b",
+      "result_id": "ada45621-8654-4427-9296-045aac59631c"
+    },
+    {
+      "claim_id": "8ac9e932-6b66-41a0-bb0a-4d2809e9a20d",
+      "result_id": "88dc0a30-2547-4e5c-a2c0-b6340a9ee17d"
+    },
+    {
+      "claim_id": "cd965132-c2db-44ff-95b7-1d0f5c237b27",
+      "result_id": "88dc0a30-2547-4e5c-a2c0-b6340a9ee17d"
+    },
+    {
+      "claim_id": "8d316d8d-6e2d-4b1c-b3f5-43a5623e797b",
+      "result_id": "88dc0a30-2547-4e5c-a2c0-b6340a9ee17d"
+    },
+    {
+      "claim_id": "a6393e6e-d055-4913-ad93-6202f5235421",
+      "result_id": "88dc0a30-2547-4e5c-a2c0-b6340a9ee17d"
+    },
+    {
+      "claim_id": "4cbf2712-65d6-4998-9626-13da66cf3e12",
+      "result_id": "88dc0a30-2547-4e5c-a2c0-b6340a9ee17d"
+    },
+    {
+      "claim_id": "ebc26968-e6fd-44af-9385-82eba734ee02",
+      "result_id": "ffc95d4e-f3c8-4982-bc45-64b8e28c1920"
+    },
+    {
+      "claim_id": "555ed68b-55d1-45a4-a54b-414f2b218082",
+      "result_id": "ffc95d4e-f3c8-4982-bc45-64b8e28c1920"
+    },
+    {
+      "claim_id": "58087d4c-fb27-46a7-a8a6-cd9a3b51d0c9",
+      "result_id": "ffc95d4e-f3c8-4982-bc45-64b8e28c1920"
+    },
+    {
+      "claim_id": "dd485386-e792-4c80-b01e-cf520bed83c2",
+      "result_id": "ffc95d4e-f3c8-4982-bc45-64b8e28c1920"
+    },
+    {
+      "claim_id": "4c915c19-bfb6-41b4-b13a-1b231a4edf78",
+      "result_id": "ffc95d4e-f3c8-4982-bc45-64b8e28c1920"
+    },
+    {
+      "claim_id": "8fdb9774-a125-4a5c-8b07-bed7a176b1a5",
+      "result_id": "5cf04bec-6352-4795-a83e-c3c0928113d7"
+    },
+    {
+      "claim_id": "5e1613f7-7edc-4acf-93e9-d80ccf46a8dc",
+      "result_id": "5cf04bec-6352-4795-a83e-c3c0928113d7"
+    },
+    {
+      "claim_id": "ac2b7107-5d0a-4356-bb31-a14cac0e3bfe",
+      "result_id": "400c2004-8f59-4467-9375-f811cbb15b55"
+    },
+    {
+      "claim_id": "8c1b4d41-78aa-40c1-ab4d-e23190c825ca",
+      "result_id": "400c2004-8f59-4467-9375-f811cbb15b55"
+    },
+    {
+      "claim_id": "cd0b98a3-a6b2-4c4d-9047-8c2c12f618c6",
+      "result_id": "400c2004-8f59-4467-9375-f811cbb15b55"
+    },
+    {
+      "claim_id": "0106e128-502a-4a7b-a555-10186bce5e0a",
+      "result_id": "400c2004-8f59-4467-9375-f811cbb15b55"
+    },
+    {
+      "claim_id": "ccbc1040-86b9-413d-a98f-6b6f30b281fb",
+      "result_id": "400c2004-8f59-4467-9375-f811cbb15b55"
+    },
+    {
+      "claim_id": "6583243e-1d31-40dd-a803-e9ba45da03cc",
+      "result_id": "faa5ba1e-9785-4572-bdca-1be5bd196688"
+    },
+    {
+      "claim_id": "56de97c3-4cca-4932-9c36-da78945a2e5a",
+      "result_id": "faa5ba1e-9785-4572-bdca-1be5bd196688"
+    },
+    {
+      "claim_id": "53279e50-e416-4d5f-ab8e-d1742ce3b62d",
+      "result_id": "faa5ba1e-9785-4572-bdca-1be5bd196688"
+    },
+    {
+      "claim_id": "4c915c19-bfb6-41b4-b13a-1b231a4edf78",
+      "result_id": "53f013e3-f8ba-4b51-b210-895673665390"
+    },
+    {
+      "claim_id": "5a569f1a-cc42-48f8-a304-386072bbc380",
+      "result_id": "53f013e3-f8ba-4b51-b210-895673665390"
+    },
+    {
+      "claim_id": "cf2e59a4-7baa-41cc-82d9-dcc38ab2976b",
+      "result_id": "53f013e3-f8ba-4b51-b210-895673665390"
+    },
+    {
+      "claim_id": "828a4598-1dee-4e99-a7df-57b5237faca5",
+      "result_id": "53f013e3-f8ba-4b51-b210-895673665390"
+    },
+    {
+      "claim_id": "80ad2510-5880-493a-9e20-25b739bcb2ed",
+      "result_id": "53f013e3-f8ba-4b51-b210-895673665390"
+    },
+    {
+      "claim_id": "93058f28-7946-46b3-a44a-cd35dff9024b",
+      "result_id": "53f013e3-f8ba-4b51-b210-895673665390"
+    },
+    {
+      "claim_id": "ca0fdf52-77ed-4b21-817e-00d6d4b6fb4c",
+      "result_id": "53f013e3-f8ba-4b51-b210-895673665390"
+    },
+    {
+      "claim_id": "e44c035e-5d21-4e48-b03f-7bb5ddf48b68",
+      "result_id": "53f013e3-f8ba-4b51-b210-895673665390"
+    },
+    {
+      "claim_id": "40d72432-0740-472c-a894-66db5a1645e9",
+      "result_id": "53f013e3-f8ba-4b51-b210-895673665390"
+    },
+    {
+      "claim_id": "c70fb8ee-11ab-48e0-900b-138e451d72de",
+      "result_id": "53f013e3-f8ba-4b51-b210-895673665390"
+    },
+    {
+      "claim_id": "380b5ba9-c101-41a0-99d5-bd5d6c761d86",
+      "result_id": "6d6a957b-6a51-49d5-aedb-14607383384b"
+    },
+    {
+      "claim_id": "3721c242-4404-4f55-95fa-2ebfb6c08430",
+      "result_id": "6d6a957b-6a51-49d5-aedb-14607383384b"
+    },
+    {
+      "claim_id": "8f28ca1c-0d39-4056-be2b-072b3e3951ba",
+      "result_id": "6d6a957b-6a51-49d5-aedb-14607383384b"
+    },
+    {
+      "claim_id": "f70292dc-174b-4ac1-89d5-4f4693f7e186",
+      "result_id": "6d6a957b-6a51-49d5-aedb-14607383384b"
+    },
+    {
+      "claim_id": "51db34ae-7887-47b8-a770-25c82395152a",
+      "result_id": "6d6a957b-6a51-49d5-aedb-14607383384b"
+    },
+    {
+      "claim_id": "996a0007-4a95-4718-91d9-79016442521b",
+      "result_id": "3b2a264d-e9cd-4055-bb8c-28b8bd8cf886"
+    },
+    {
+      "claim_id": "d8456a48-4308-4fef-abbf-48fb831a2cb7",
+      "result_id": "3b2a264d-e9cd-4055-bb8c-28b8bd8cf886"
+    },
+    {
+      "claim_id": "54f781ec-96d4-476f-a46e-0c9cbd3e05de",
+      "result_id": "3b2a264d-e9cd-4055-bb8c-28b8bd8cf886"
+    },
+    {
+      "claim_id": "37e47f0a-eff5-481f-90f1-57e1d253dc44",
+      "result_id": "3b2a264d-e9cd-4055-bb8c-28b8bd8cf886"
+    },
+    {
+      "claim_id": "4e1634a4-32c0-4848-a068-1c4e31629ad4",
+      "result_id": "3b2a264d-e9cd-4055-bb8c-28b8bd8cf886"
+    },
+    {
+      "claim_id": "b329b3b4-c320-43ef-8fa1-078622ddaed8",
+      "result_id": "0dd404ab-e59d-4ed9-b366-ad82b78ab5bb"
+    },
+    {
+      "claim_id": "e12bae48-71f5-48e8-aef6-92580ac73fd8",
+      "result_id": "0dd404ab-e59d-4ed9-b366-ad82b78ab5bb"
+    },
+    {
+      "claim_id": "7d6c9a2a-f90d-4d81-bd35-748b47087447",
+      "result_id": "0dd404ab-e59d-4ed9-b366-ad82b78ab5bb"
+    },
+    {
+      "claim_id": "28823c3d-1ce1-4ada-8cd4-9aed5d6d7f62",
+      "result_id": "0dd404ab-e59d-4ed9-b366-ad82b78ab5bb"
+    },
+    {
+      "claim_id": "d223f62f-0c08-4197-b1d2-2b6d880f9416",
+      "result_id": "01c390cb-fcf3-48ea-b2d3-0c53411ce27f"
+    },
+    {
+      "claim_id": "cc2dda97-3a1d-4307-95ff-a42d5bb86f73",
+      "result_id": "01c390cb-fcf3-48ea-b2d3-0c53411ce27f"
+    },
+    {
+      "claim_id": "1a4025c7-febb-4437-91fc-58cd50e26d98",
+      "result_id": "01c390cb-fcf3-48ea-b2d3-0c53411ce27f"
+    },
+    {
+      "claim_id": "c0dd4f11-f5c9-4eb2-a267-907b26e096d3",
+      "result_id": "01c390cb-fcf3-48ea-b2d3-0c53411ce27f"
+    },
+    {
+      "claim_id": "cc3754e4-5c4f-4c55-98d0-f1ce7fbaa004",
+      "result_id": "7da0d72d-c67b-44cb-b66d-5e1b3ac10e65"
+    },
+    {
+      "claim_id": "0dbec853-2cf8-4072-bdb7-7ae2d18bf323",
+      "result_id": "7da0d72d-c67b-44cb-b66d-5e1b3ac10e65"
+    },
+    {
+      "claim_id": "4f8f527c-fffb-4c73-9aee-408675ed454c",
+      "result_id": "eaffc2ef-dd88-42f6-b874-fcaaa5da1802"
+    },
+    {
+      "claim_id": "3f899501-157b-46d4-b42b-b7474ed44260",
+      "result_id": "eaffc2ef-dd88-42f6-b874-fcaaa5da1802"
+    },
+    {
+      "claim_id": "3a07ab87-bc0d-4cf2-99dd-8d655fc613ff",
+      "result_id": "eaffc2ef-dd88-42f6-b874-fcaaa5da1802"
+    },
+    {
+      "claim_id": "74c6f35c-5608-4c89-b602-028115000167",
+      "result_id": "eaffc2ef-dd88-42f6-b874-fcaaa5da1802"
+    },
+    {
+      "claim_id": "467ab27f-af8d-47f2-8671-3abb669f617e",
+      "result_id": "cd0145c8-0812-4ad7-8b99-7917a5cd5c21"
+    },
+    {
+      "claim_id": "b08a4355-cc6d-4832-abc9-44bd2262be3d",
+      "result_id": "cd0145c8-0812-4ad7-8b99-7917a5cd5c21"
+    },
+    {
+      "claim_id": "f9e67f93-3bd4-46e4-838b-bfeb62406d84",
+      "result_id": "cd0145c8-0812-4ad7-8b99-7917a5cd5c21"
+    },
+    {
+      "claim_id": "d968e126-be3d-45d7-a172-a28b64d34ee5",
+      "result_id": "cd0145c8-0812-4ad7-8b99-7917a5cd5c21"
+    },
+    {
+      "claim_id": "fbe03715-e5bd-422f-82e0-dc999066c05c",
+      "result_id": "cd0145c8-0812-4ad7-8b99-7917a5cd5c21"
+    },
+    {
+      "claim_id": "c7f4ecc3-5a6d-4319-a840-a933deeea95b",
+      "result_id": "cd0145c8-0812-4ad7-8b99-7917a5cd5c21"
+    },
+    {
+      "claim_id": "534992fb-839a-4f3e-bac7-810a359b2913",
+      "result_id": "2e38f0f7-826e-4681-bb45-b60c1f2ba694"
+    },
+    {
+      "claim_id": "22fb44fb-780c-4d4d-897c-f941eacda8ab",
+      "result_id": "2e38f0f7-826e-4681-bb45-b60c1f2ba694"
+    },
+    {
+      "claim_id": "a1e454d7-da8b-4146-96f1-d77ecfb92244",
+      "result_id": "2e38f0f7-826e-4681-bb45-b60c1f2ba694"
+    },
+    {
+      "claim_id": "52e70ffe-6404-428e-a675-01f84f5f94d2",
+      "result_id": "2e38f0f7-826e-4681-bb45-b60c1f2ba694"
+    },
+    {
+      "claim_id": "c3cb2a1a-2389-487f-bf69-30a2a1ec2851",
+      "result_id": "e5c657ee-e081-44c7-916e-16a2bde159c0"
+    },
+    {
+      "claim_id": "4c6f09d2-54e9-44d5-b5e6-a9dc264e5acf",
+      "result_id": "e5c657ee-e081-44c7-916e-16a2bde159c0"
+    },
+    {
+      "claim_id": "515928a9-3a98-4059-85ee-99c445b6f678",
+      "result_id": "e5c657ee-e081-44c7-916e-16a2bde159c0"
+    },
+    {
+      "claim_id": "b9f92436-b691-4b7e-a9f3-19edefefc6e6",
+      "result_id": "e5c657ee-e081-44c7-916e-16a2bde159c0"
+    },
+    {
+      "claim_id": "2d2d4338-3c98-4a08-971a-62fb7f661fcb",
+      "result_id": "5ace6c08-242b-4ba2-8196-bc124208fb1a"
+    }
+  ],
+  "comparisons": []
+}

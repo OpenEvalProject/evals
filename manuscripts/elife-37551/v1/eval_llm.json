@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C32",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors developed a non-genetic method for isolating cell-type-specific nuclei using antibodies against ER and plasma membrane proteins, demonstrating that this approach produces highly pure and reproducible gene expression profiles comparable to genetic labeling methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C36 collectively establish the validity of the antibody-based nuclear sorting method. The high correlation (r=0.98-0.99) between antibody-sorted and genetically-labeled samples (C32), hierarchical clustering showing cell-type separation (C35), and minimal technical effects from fixation (C36) provide strong converging evidence. The unexpected finding that NeuN labels Purkinje nuclei (C28) is well-documented with flow cytometry and imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C34",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "Nuclear RNA expression profiles from mouse cerebellar cell types show high correlation between cell types (r=0.91-0.94) and very high correlation between biological replicates (r=0.98-1.0), with hierarchical clustering separating samples by cell class and enabling identification of cell subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C40 demonstrate the quality and reproducibility of the nuclear profiling data. The correlation coefficients (C30, C31) and hierarchical clustering results (C34) are well-supported by the data. The identification of OPC and mature oligodendrocyte subpopulations based on OLIG2 levels (C37-C38) is validated by RNA-seq showing differential marker expression and is consistent with prior literature (C39).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Population-based cell-type-specific profiling detects more genes than single nuclei sequencing regardless of sequencing depth and shows less variability in gene expression across biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by direct comparison with published single nuclei data (Habib et al., 2016) shown in Figure 1\u2014figure supplement 2D-F. The comparison appropriately uses downsampling to control for sequencing depth differences. However, the comparison is limited to one published dataset and may not generalize to all single-cell/nuclei methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The antibody-based nuclear sorting method is transferable across species (mouse, rat, human), with sorting conditions for most cell types directly applicable to human postmortem tissue, though Purkinje cell isolation was unsuccessful in human samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 demonstrate cross-species applicability with flow cytometry data from all three species. The validation using Allen Mouse Brain Atlas (C46: 93% correct localization) provides independent confirmation. The failure to isolate human Purkinje cells is appropriately acknowledged and explained by their rarity (C48-C49), though this represents a limitation of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C110",
+      "C111"
+    ],
+    "result": "Cell-type-specific gene expression profiles from human postmortem brain samples are highly reproducible across individuals, with correlation coefficients of 0.96-0.99 between biological replicates and hierarchical clustering showing stronger variation by cell type than by individual.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C110-C111 establish reproducibility in human samples with correlation analysis and hierarchical clustering. The high correlations (r=0.96-0.99) across 16 individuals demonstrate robustness despite inter-individual variation. The slightly lower correlations for glial cells (C51) compared to neurons is noted but still indicates high quality data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Classically defined cerebellar cell types differ between mouse and human by expression of 70-280 cell-type and species-specific genes, with hierarchical clustering showing that samples group primarily by cell type when using variable genes but by species when using all genes, and PCA indicating that cell-type differences account for more variance (47%) than species differences (22%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C53-C61 establish species-specific gene expression differences through multiple complementary analyses. The differential expression analysis (C60) uses stringent criteria (adjusted p<10e-5, fold change >4, expression filters). The PCA results (C57-C59) appropriately quantify the relative contributions of cell type versus species. Validation by ATAC-seq (C3) and the observation that rat expression resembles mouse (C61) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Species-enriched genes identified by population-based profiling are validated in single cell/nuclei datasets, with human-enriched genes showing significantly higher expression in human single nuclei and mouse-enriched genes showing higher expression in mouse single cells, confirming these are true species differences rather than artifacts of sorting different subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 provide critical validation using independent single cell/nuclei datasets from Lake et al. (2018) and Saunders et al. (2018). The statistical differences in expression distributions for all cell types except OPCs (C64) are appropriately noted, with the OPC exception explained by small sample size. This validation addresses a key alternative explanation for the observed differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "GO analysis of species-enriched genes reveals that most cell types show no significant functional enrichment, suggesting species differences involve frequent alterations in single genes, though some cell types show enrichment for specific pathways (e.g., transporter activity in mouse-enriched genes from neurons and glia).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 appropriately characterize the functional implications of species differences through GO analysis. The lack of significant enrichment for most gene sets (C66-C67) is an important negative result that supports the interpretation of widespread regulatory evolution. The enrichments that are found (C68-C69) are appropriately described as weak or specific to certain cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Species-enriched genes are validated using the Allen Mouse Brain Atlas and GENSAT Project, confirming expression patterns in mouse cerebellum, with some human-enriched genes (Clvs2, Pde1a) expressed in other mouse brain regions, suggesting alterations in cell-specific regulatory sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 provide independent validation using in situ hybridization databases. The observation that some genes are expressed elsewhere in the mouse brain (C73) is an important finding that supports the regulatory evolution hypothesis, though the mechanistic claim about cis-regulatory changes is speculative and requires further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "ATAC-seq analysis reveals that species-enriched genes show concordant changes in chromatin accessibility, with human-enriched genes having strong ATAC signals in human but not mouse, and vice versa. DNA sequences in ATAC peaks associated with species-enriched genes are less conserved than housekeeping genes, suggesting evolutionary changes in promoter accessibility drive expression differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C85 establish the epigenetic basis for species differences through ATAC-seq. The concordance between gene expression and chromatin accessibility (C76-C82) is well-demonstrated with multiple examples. The conservation analysis (C83-C84) using PhastCons scores provides quantitative support for the evolutionary interpretation. However, the causal claim (C85) is inferential and would require functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Mouse granule cells express Pde1c while human granule cells express PDE1A, confirmed by RNA-seq, ATAC-seq, and immunofluorescence. Since PDE1A preferentially hydrolyzes cGMP while PDE1C hydrolyzes both cAMP and cGMP equally, these differences may affect neuronal activity between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 provide a detailed example of species-specific gene family member usage. The expression differences are validated by three independent methods (RNA-seq, ATAC-seq, immunofluorescence in C86-C88) and are consistent with prior literature (C87). However, the functional claim about neuronal activity (C90) is speculative and based only on known enzyme properties, not direct functional measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The transcription factor Trps1 is expressed in mouse but not human granule cells, and changes in transcription factor expression patterns between species may contribute to phenotypic discrepancies between mouse models and human disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C93 identify differential TRPS1 expression (C91) supported by RNA-seq data and prior literature on its binding properties. However, the connection to phenotypic discrepancies (C92-C93) is highly speculative, based only on incomplete phenotype recapitulation in a bone development model. No direct evidence links TRPS1 expression differences to neurological phenotypes or disease model discrepancies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "GWAS SNPs associated with Parkinson's disease (rs356182, rs2736990) are located in cell-type-specific regulatory regions around SNCA that are preferentially accessible in granule neurons, with rs356182 associated with lower SNCA expression specifically in cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 integrate GWAS data with cell-type-specific epigenetic maps. The overlap analysis (C101-C102) is straightforward, and the SNCA example (C103-C107) is well-supported by prior GWAS studies and expression QTL data (C107). However, the regulatory function of these regions (C105) remains speculative without functional validation. This represents a promising application but not a definitive mechanistic finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Postmortem delay has minimal effects on gene expression in human brain samples, with only 12 genes changing significantly across all samples and only one gene (KIF19) showing linear change with PMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 address an important technical concern for postmortem studies. The differential expression analysis with PMD as a covariate is appropriate, and the finding of minimal effects (C112-C113) is consistent with prior literature (C114). However, the analysis is limited to samples with PMD ranging from ~5-24 hours, and effects at longer delays are not assessed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Gender-specific gene expression differences are identified in human cerebellum, with 27 differentially expressed genes including sex chromosome genes and autosomal genes like GYG2P1 that shows male-enriched, basket cell-specific expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C115-C117 identify gender-specific expression through appropriate differential expression analysis. The GYG2P1 example (C116-C117) demonstrates cell-type-specific sexual dimorphism with RNA-seq data. However, the sample size (7 males, 9 females) is modest, and the functional significance of these differences is not explored. The finding is descriptive rather than mechanistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Aging affects gene expression differently in different cerebellar cell types, with 274 genes changing in granule cells, 139 in basket cells, and 31 in glia. Few genes change with age in multiple cell types, and aging genes from one cell type show only modest correlation with age when examined in other cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C118-C123 establish cell-type-specific aging effects through differential expression analysis with age as a covariate. The correlation analysis (C122) quantitatively demonstrates that aging genes are cell-type-specific. However, the sample size (4 individuals per age group) is limited, and the age groups are widely spaced (20-30, 40-50, 60-70, 80-90 years), which may miss non-linear age effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Genes down-regulated with age in all three cell types are enriched for synaptic genes, consistent with age-related synaptic atrophy, but the specific genes affected differ between cell types, suggesting cell-type-specific aging mechanisms require examination of defined cell types rather than whole tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 identify a common functional theme (synaptic decline) across cell types while demonstrating cell-type specificity in the genes affected. The GO enrichment (C124) is well-supported, and the consistency with prior literature on synaptic atrophy (C125) strengthens the interpretation. The conclusion about the need for cell-type-specific analysis (C127) is appropriately cautious, noting that generalization to other brain regions requires further study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Three human brain samples (WI, VM, ZH) show a robust, cell-type-specific molecular response characterized by induction of 224 genes in granule cells and 136 genes in glia, including immediate early genes and heat shock genes, but not astrocyte activation markers. The cause of this response is unknown, and clinical records reveal no distinguishing features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C128-C142 identify an unexpected molecular phenotype through PCA (C128-C130) and differential expression analysis (C131-C132). The resampling analysis (C135-C136) demonstrates this is unlikely to occur by chance. The characterization of the response (C137-C139) is thorough, and the acknowledgment of uncertainty about causation (C140-C142) is appropriate. However, without identifying the cause, the biological significance remains unclear. This is a well-documented observation requiring follow-up.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Gene expression in specific brain cell types is highly conserved across species, with most cell-type markers shared between rodent and human, but hundreds of genes show species-specific expression that may result in functionally important biochemical differences between classically defined cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 synthesize the major findings about species conservation and divergence. The claims appropriately balance conservation (C94-C95) with divergence (C96-C97) and provide mechanistic insights about regulatory evolution (C98-C99). However, the functional importance (C100) is largely speculative, as the manuscript does not directly test functional consequences of expression differences. This represents an important interpretive framework but requires future experimental validation.",
+    "result_type": "MAJOR"
+  }
+]

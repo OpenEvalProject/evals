@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The study analyzed RNA-seq data from 39 human and 39 chimpanzee heart tissue samples, combining previously published data with newly generated samples from both species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 clearly document the sample composition and data sources. The manuscript explicitly states sample sizes, tissue types, and data provenance with appropriate citations (C2) and describes new data generation (C4). This is well-documented methodological information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The study design introduces technical batch effects partly confounded with species, but these are expected to have minimal impact because the analysis focuses on within-species comparisons, and samples primarily separate by species rather than batch in PCA and clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 acknowledge batch effects (C5) but provide reasoning (C6) and empirical evidence from PCA/clustering (C7) that species differences dominate over technical factors. The logic is sound: within-species analyses for dispersion and eQTLs would be less affected by between-species batch confounding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The study identified 8,880 differentially expressed genes between species and performed power analyses demonstrating that sample size (not sequencing depth) drives detection power, that small studies are underpowered but have well-calibrated false discovery rates, and that effect sizes in small studies are upwardly biased due to winner's curse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 report differential expression results and comprehensive subsampling analyses with appropriate statistical frameworks. The power analysis methodology is sound, using the full dataset as a reference standard. The observations about winner's curse (C14) are supported by citations and empirical data. FDR calibration (C15) is empirically validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Some chimpanzee samples are first-degree relatives, but variance partitioning and subsampling analyses show that technical factors like RNA extraction batch explain more variance than relatedness, and inter-relatedness has minimal impact on differential expression results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 acknowledge relatedness (C16), quantify its contribution via variance partitioning (C17), and empirically test its impact through subsampling (C18). The analyses appropriately address a potential confound and provide evidence it does not substantially affect conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Gene expression variability was quantified using a negative binomial model to estimate overdispersion, which was then mean-corrected to obtain 'dispersion' estimates. This identified 2,658 differentially dispersed genes between species, which are generally not differentially expressed, and dispersion is well-correlated between humans and chimpanzees (R=0.60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 describe a statistically sound approach to quantifying variability. The negative binomial model (C19) is appropriate for RNA-seq count data with theoretical and empirical support (citations provided). The mean-correction procedure (C21) is clearly described. The finding that differential dispersion is independent of differential expression (C23) is important and supported by supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Lower gene expression dispersion is associated with higher protein coding conservation (measured by amino acid identity, dN/dS, and loss-of-function intolerance), with the strongest effects in immune function genes. Housekeeping genes have low dispersion while cardiovascular genes and TATA box genes have high dispersion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 report associations between dispersion and multiple independent measures of evolutionary constraint with appropriate statistical tests. The use of multiple conservation metrics (C25, C27) and functional enrichment analyses (C26, C30, C31) provides converging evidence. The observation about TATA box genes (C28) is consistent with prior literature (citations provided), though an alternative explanation is acknowledged (C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Dispersion is strongly correlated with cell-type-specificity (R=0.32, p<2\u00d710\u207b\u00b9\u2076) based on comparison with mouse single-cell RNA-seq data, with highly dispersed genes showing cell-type-specific expression and low dispersion genes showing even expression across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 report a statistically significant correlation between bulk dispersion and single-cell-derived cell-type-specificity. The analysis appropriately uses the \u03c4 statistic (C34) with proper citations. The manuscript acknowledges a limitation (C35) that using mouse data may underestimate the true correlation, showing appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Cell type deconvolution shows qualitatively similar proportions between species with inter-individual variation. Deconvoluted expression profiles cluster by cell type while dispersion estimates cluster more strongly by species, suggesting both genetic differences and cell type heterogeneity drive inter-individual dispersion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 report results from cell type deconvolution analysis using BayesPrism. The observation that expression clusters by cell type (C37) while dispersion clusters by species (C38) is internally consistent and supports the interpretation (C39) that genetic factors contribute to dispersion beyond cell composition effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Analysis of matched tissue samples from different heart regions shows that individual-level factors explain more variance in cell type composition than tissue-level factors, providing evidence that dispersion estimates reflect true biological differences between individuals rather than technical variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 use an independent dataset (GTEx matched tissues) to validate that cell composition differences are biologically meaningful. The variance partitioning approach (C41) with linear mixed models is appropriate and properly cited. The interpretation (C42) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Inter-species differences in dispersion show weak correlation with cell-type-specificity (R=0.07) and are enriched for mitotic regulators in humans (possibly reflecting GTEx sample characteristics) and immune function genes in chimpanzees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 report that inter-species dispersion differences are less explained by cell heterogeneity (C43) and show functional enrichments (C44, C46). The interpretation about GTEx samples (C45) is speculative but appropriately caveated with supporting citations about ischemia-induced mitosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "High-coverage whole genome sequencing of 39 chimpanzees identified 2.9 million novel SNPs. Analysis of Pn/Ps ratios shows that the inter-species ratio correlates with differences in gene expression dispersion, suggesting inter-species differences in selection pressures at polymorphic loci contribute to dispersion differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 describe new genomic data generation (C48-C49) and analysis linking genetic diversity to expression variability. The Pn/Ps metric (C50-C51) is appropriate for assessing within-species selection. The correlation between Pn/Ps ratio and dispersion difference (C51-C52) provides evidence for a genetic basis of dispersion differences, though the correlation strength is not reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "310 eGenes were identified in chimpanzees with enrichment near transcription start sites. When accounting for power differences through subsampling, there is significant overlap of eGenes between species, with 21 of the top 500 human eGenes also identified in chimpanzees (OR=2.05, p=0.003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 report eQTL mapping results with appropriate acknowledgment of power differences between species. The subsampling approach (C57) to account for sample size differences is methodologically sound. The significant enrichment (C58) despite modest sample size in chimpanzees is notable and properly tested with hypergeometric test.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Species-specific eGenes have higher species-specific dispersion (p=3.7\u00d710\u207b\u00b9\u00b9), and within each species, eGenes have higher dispersion than non-eGenes. This suggests that genes with eQTLs evolve under less evolutionary constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 report a key finding linking genetic regulation (eQTLs) to expression variability (dispersion) with strong statistical significance (C60). The within-species comparison (C61) provides additional support. The interpretation about evolutionary constraint (C62) is reasonable given the data, though the manuscript acknowledges cell composition could partially explain this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "eGenes show higher inter-species expression differences and lower coding conservation than non-eGenes. Shared eGenes are enriched for immune response genes including MHC genes, consistent with these genes evolving under strong selection pressures. Chimpanzee-specific eGenes are enriched for transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 report multiple lines of evidence that eGenes are under different selective pressures. The associations with differential expression (C63) and coding conservation (C64) are internally consistent. The immune gene enrichment (C65-C66) is well-supported and contextualized with appropriate literature. The transcriptional regulation enrichment (C67) is interesting given prior work on human-specific selection on transcription factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Analysis of 125 trans-species polymorphic haplotypes shows no compelling evidence for conserved regulatory activity in either species, with no correlation of eQTL effect sizes between species and no significant enrichment of regulatory effects compared to control SNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 report negative results from analysis of trans-species polymorphisms. The analysis appropriately uses matched control SNPs (C73-C74) and tests for correlation of effect sizes (C72). The marginally significant association with dispersion (C69, p=0.053) is appropriately described as potentially due to chance. The negative findings are clearly stated (C75) and the manuscript acknowledges power limitations (C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Inter-individual expression variability is highly correlated between humans and chimpanzees, with cell type heterogeneity being a major driver. However, natural selection has shaped variability patterns, as evidenced by correlations with evolutionary constraint measures and the observation that species-specific eGenes have higher species-specific dispersion, pointing to a genetic basis for dispersion differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 synthesize major findings of the study. The high correlation (C76) and role of cell heterogeneity (C77) are well-supported by earlier results. The conclusion about natural selection (C78) is justified by multiple lines of evidence including conservation metrics (C79) and eQTL-dispersion associations (C80). The interpretation about eQTLs as indicators of dosage insensitivity (C83) is reasonable though speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study proposes that inter-species analysis of expression variability can complement existing methods for assessing selection pressures. Immune genes show high variability and enrichment among shared eGenes in both species, consistent with diversifying selection, though whether regulatory variation itself is under selection or hitchhiking with coding variants remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 present interpretations and acknowledge uncertainties. The methodological proposal (C84) is reasonable given the results. The immune gene findings (C86-C87) are well-supported and appropriately contextualized with literature. The acknowledgment of uncertainty (C88) and alternative explanations (C89) demonstrates appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study acknowledges limitations including potential lack of power to detect subtle effects in chimpanzees and possible tissue/context-dependent regulatory functions. Future studies should assess multiple tissues and may benefit from single-cell approaches given the strong contribution of cell-type heterogeneity to variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 appropriately acknowledge study limitations and propose future directions. The power limitation (C90) is relevant given the sample size difference between species. The recommendation for single-cell approaches (C93) is well-justified by the findings about cell heterogeneity throughout the manuscript.",
+    "result_type": "MINOR"
+  }
+]

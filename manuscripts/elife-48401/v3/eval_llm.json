@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Bats serve as reservoir hosts for highly virulent zoonotic viruses without experiencing disease symptoms, in contrast to non-bat mammals where these same viruses cause substantial morbidity and mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C8 collectively establish the well-documented phenomenon that bats host virulent zoonotic viruses asymptomatically. These claims are supported by multiple citations to published literature and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Bats employ unique immune mechanisms including constitutive IFN-\u03b1 expression and anti-inflammatory adaptations to limit viral load without experiencing immunopathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 describe bat-specific immune mechanisms supported by citations to published literature. The claims acknowledge uncertainty about the functional significance of constitutive IFN-\u03b1 expression (C14), which is appropriately cautious given the current state of knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Viral infection experiments on three cell lines with different immune phenotypes (Vero, RoNi/7.1, PaKiT01) showed that bat cell cultures exhibited less severe epidemics, with PaKiT01 cells avoiding monolayer destruction and supporting persistent infection or early viral elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 and C81-C87 describe the experimental design and key observations from in vitro infection experiments. The data are presented in Figure 1 and supplementary figures, with appropriate sample sizes (18-39 trials per condition) and proper controls. The experimental approach using plaque assays and fluorescence microscopy is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Model fitting to experimental data showed that immune-absent models best fit Vero cells, induced immunity models best fit RoNi/7.1 cells, and constitutive immunity models best fit PaKiT01 cells (except for rVSV-MARV), recapitulating expected immune phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 and C70-C72 describe model selection results supported by AIC comparisons (Table 1, Supplementary file 4). The model fits align with known immune phenotypes of the cell lines from published literature. The exception for rVSV-MARV on PaKiT01 cells is appropriately noted and explained by receptor incompatibility (C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C47",
+      "C73"
+    ],
+    "result": "PaKiT01 cells are refractory to rVSV-MARV infection due to NPC1 receptor incompatibilities, and model fitting suggests that constitutive IFN-\u03b1 expression may represent immune priming rather than perpetual antiviral defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C26 relies on unpublished results, which limits independent verification. Claims C47 and C73 are inferences from model fitting that suggest constitutive IFN-\u03b1 may function as priming rather than continuous defense, but this interpretation requires additional experimental validation beyond model fitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Bifurcation analysis of the theoretical model revealed that constitutive immunity (\u03b5) affects pathogen invasion threshold (R0), while induced immunity (\u03c1) does not, and that higher immune rates allow persistent infections at higher viral transmission rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C39 describe theoretical model analysis supported by bifurcation diagrams (Figures 2-3). The mathematical derivation of R0 and bifurcation analysis follow established methods. The distinction between constitutive and induced immunity effects on invasion threshold is logically sound and mathematically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Parameter estimation from model fitting showed that PaKiT01 cells had transmission rates (\u03b2) an order of magnitude higher than other cell lines, balanced by correspondingly higher immune responses, and that higher antiviral acquisition rates correlated with higher transmission rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C50 describe parameter estimates from model fitting (Table 1, Figure 4). The correlation between immune response strength and transmission rate is consistently observed across cell lines. The trade-off between \u03c1 and \u03b5 parameters (C48) is documented in the fitting results. Confidence intervals are provided for parameter estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C63"
+    ],
+    "result": "Bat cell lines demonstrated enhanced interferon-mediated immune responses that allowed for rapid within-host viral transmission rates, with PaKiT01 cells showing the highest antiviral rates and RoNi/7.1 cells intermediate between Vero and PaKiT01.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C51-C54, and C63 synthesize findings from model fitting showing that robust immune responses correlate with higher transmission rates. The ranking of antiviral capacity (PaKiT01 > RoNi/7.1 > Vero) is supported by parameter estimates in Table 1 and Supplementary file 4. The finding that high immune rates result in high \u03b2 estimates that still produce similar epidemic curves (C54) is a key insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C68",
+      "C69"
+    ],
+    "result": "Antiviral immune responses protect cells from virus-induced mortality, extending epidemic duration and facilitating persistent infections by safeguarding susceptible cells and allowing cellular reproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C55-C62, C64, C68-C69 describe the protective role of antiviral cells supported by experimental data (Figure 5) and model simulations. The observation that cell births are necessary to reproduce long-term infection dynamics (C61) is supported by model fitting. The mechanism whereby antiviral cells act as refugia is demonstrated in spatial simulations (Videos 1-3, Figure 5\u2014figure supplement 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C65",
+      "C66",
+      "C76",
+      "C80"
+    ],
+    "result": "Viruses evolved in bat reservoirs with enhanced immune capabilities could achieve rapid within-host transmission rates without causing pathology, but would likely cause enhanced virulence upon spillover to hosts lacking similar immune capacities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C65-C66, C76, and C80 are speculative extrapolations from in vitro findings to cross-species emergence scenarios. While the logic follows from the experimental results, these claims require validation through additional experiments in non-bat hosts or epidemiological data from natural spillover events. The manuscript appropriately frames these as inferences and suggestions rather than demonstrated facts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C75"
+    ],
+    "result": "Constitutive immunity can prevent pathogen invasion while induced immunity can only control infections post-hoc, and modeling bat cell dynamics requires incorporation of top-down immune control beyond simple target cell depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C75 are supported by the mathematical analysis (R0 derivation) and model fitting results. The distinction between constitutive and induced immunity effects is mathematically justified. The necessity of immune modeling for bat cells (especially PaKiT01) is demonstrated by improved model fits when immunity is included (Table 1, Supplementary file 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C74",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Within-host persistence in bats is supported by robust antiviral responses, and bats merit designation as pathogen reservoirs based on their ability to maintain long-term viral infections in small populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C74, C77-C79 place the current work in context of prior within-host modeling and bat reservoir ecology. These claims are supported by citations to published literature. Claim C79 appropriately synthesizes the manuscript's findings as supporting (but not definitively proving) the role of within-host mechanisms in population-level persistence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C92"
+    ],
+    "result": "The immune phenotypes of the three cell lines used (Vero IFN-deficient, RoNi/7.1 induced IFN, PaKiT01 constitutive IFN-\u03b1) were verified by qPCR and are consistent with published literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 and C92 describe cell line characterization supported by citations and qPCR validation (Figure 1\u2014figure supplement 6). The qPCR results showing less pronounced IFN response in RoNi/7.1 versus PaKiT01 cells (C90) align with literature expectations and model fitting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Model parameters were estimated or fixed based on control experiments and literature values, with birth rate fixed at 0.025, mortality rates estimated from control data, incubation rate from microscopy observations, infection-induced mortality at 1/6, and antiviral regression rate at 0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 describe parameter estimation methodology. The approach of fixing birth rate and estimating mortality from control data (C93-C94, Figure 1\u2014figure supplement 7) is justified by identifiability constraints. Other parameter choices are supported by experimental observations (C95) or literature standards (C96). The assumption that c=0 for the experimental timeframe (C97) is reasonable given the <200 hour duration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Spatial stochastic simulations with adjusted parameters (birth rate \u00d76, transmission rate \u00d710) confirmed mean field results, showing antiviral cells acting as refugia that protect live cells and enable sustained transmission through birth of new susceptibles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 describe spatial model validation supported by simulation results (Videos 1-3, Figure 5\u2014figure supplement 3). The parameter adjustments for spatial models (C98-C99) are justified by citation to published work on spatial thresholds. The refugia mechanism (C100-C101) is visually demonstrated in the spatial simulations.",
+    "result_type": "MINOR"
+  }
+]

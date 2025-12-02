@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C95"
+    ],
+    "result": "Short-term (2 hr) monocular deprivation in adult humans boosts the BOLD response to the deprived eye and changes ocular dominance of V1 vertices. Before deprivation, V1 responses to high spatial frequency stimuli are balanced between eyes, but after deprivation, the deprived eye shows increased BOLD response while the non-deprived eye shows suppression, resulting in a significant time \u00d7 eye interaction and a shift in the ocular dominance distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C50-C54, and C95 are well-supported by experimental fMRI data showing significant statistical effects (F(1,18) = 13.80703, p = 0.00158) and shifts in ocular dominance distributions (z = 115.39, p < 0.001). The findings are visualized in Figures 1 and 2 with appropriate controls and replication (split-half reliability test).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The shift in ocular dominance after deprivation is selective: vertices originally preferring the deprived eye remain unchanged, while vertices originally preferring the non-deprived eye shift their preference toward the deprived eye. This pattern suggests recruitment of cortical resources normally dedicated to the non-deprived eye rather than a general gain increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 and C100-C104 are supported by detailed analysis of vertex subpopulations shown in Figure 2, with strong statistical evidence (correlation R = 0.22, p < 0.0001; t-tests with p < 0.012). The modeling approach (adding Gaussian noise) provides additional validation that the effect is specific to vertices originally preferring the non-deprived eye.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Short-term monocular deprivation induces changes in binocular rivalry dynamics, with a 30% increase in phase duration for the deprived eye and a 15% decrease for the non-deprived eye. The effect size is similar to previous studies, indicating that retinotopic mapping stimulation during deprivation did not modulate the effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by psychophysical measurements showing significant time \u00d7 eye interaction (F(1,18) = 23.56957, p = 0.00013) and comparison with previous studies. The inference about lack of modulation from retinotopic mapping (C63) is reasonable based on effect size comparison but could benefit from direct experimental control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C64",
+      "C65",
+      "C66",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The V1 deprivation effect correlates across participants with perceptual changes measured by binocular rivalry, suggesting a common origin. This correlation holds despite binocular rivalry being restricted to foveal vision while BOLD measurements span V1, indicating that binocular rivalry may serve as a proxy for general cortical plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C64-C66, and C109-C112 are supported by correlation data shown in Figure 3B (Pearson's correlation, p = 0.036). The inference that binocular rivalry serves as a proxy for general plasticity (C66, C112) is reasonable given the correlation, though the mechanistic link requires further validation. The correlation is meaningful despite different spatial extents of the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Monocular deprivation produces a change in spatial frequency selectivity of V1 BOLD responses, with the plasticity effect absent at low spatial frequencies but strong at high spatial frequencies. For the deprived eye, the spatial frequency tuning changes from band-pass to high-pass, indicating enhancement primarily affects higher spatial frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C67-C72 are supported by experimental data across five spatial frequency stimuli (Figures 4-5), with significant statistical differences (paired t-test t(18) = \u22123.441, p = 0.003). The characterization of tuning curve changes from band-pass to high-pass is well-documented in Figure 4B. The modeling approach using DoG functions provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Spatial frequency cut-off varies with eccentricity (from ~16 cpd at 1.5 deg to ~4 cpd at 8 deg) in a manner consistent with previous fMRI and psychophysical studies. After deprivation, the deprived eye shows a significant shift toward higher spatial frequencies at all eccentricities, while the non-deprived eye remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 are supported by pRF modeling and spatial frequency tuning analysis shown in Figure 5, with significant post-hoc t-test for the deprived eye (t(18) = \u22122.263, p = 0.036) but not for the non-deprived eye (t(18) = 0.440, p = 0.665). The consistency with prior work (C74) strengthens confidence in the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The increase in spatial frequency cut-off for the deprived eye correlates with the increase in binocular rivalry phase duration across participants, with those showing stronger perceptual changes also showing larger shifts in spatial frequency selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by correlation analysis shown in Figure 6B (R(19) = 0.68, p = 0.001). This cross-modal correlation between neural and perceptual measures strengthens the interpretation that both reflect a common plasticity mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The deprivation effect is strongest in V1, present in V2, V3, and V4, but absent in dorsal areas V3a and hMT+. The plasticity effect in ventral area V4 is significantly stronger than in dorsal areas V3a and hMT+, suggesting differential involvement of ventral versus dorsal visual pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C82-C90 are supported by systematic analysis across visual areas shown in Figure 7, with appropriate statistical tests (V4: t(18) = 2.41, p = 0.027; V3a: t(18) = 0.52, p = 0.61; hMT+: t(18) = \u22120.19, p = 0.85). The differential effects across areas are statistically significant (V4 vs V3a: t(18) = 2.39, p = 0.028).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C91",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The preferential boost of high spatial frequencies and stronger effects in ventral areas (V4) compared to dorsal areas (V3a, hMT+) suggest primary involvement of the parvocellular pathway, which preferentially processes high spatial frequencies and projects to ventral stream areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C91, C123-C125 represent reasonable inferences based on established knowledge about visual pathway organization and the experimental findings showing spatial frequency selectivity and ventral/dorsal differences. However, the study does not directly manipulate or measure parvocellular versus magnocellular activity, so this remains an inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C13",
+      "C94",
+      "C96",
+      "C98",
+      "C99",
+      "C150",
+      "C151"
+    ],
+    "result": "The observed BOLD changes are consistent with homeostatic plasticity, demonstrating that two hours of abnormally unbalanced visual experience induces functional reorganization of cortical circuits, particularly in the parvocellular pathway, leading to altered visual perceptual abilities. The visual cortex, particularly the ventral pathway, retains high potential for homeostatic plasticity in human adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C13, C94, C96, C98-C99, and C150-C151 represent interpretations of the experimental findings in the context of homeostatic plasticity theory. The interpretation is well-supported by the data showing paradoxical enhancement of the deprived eye (opposite to developmental deprivation effects) and consistency with animal studies. However, the mechanism is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The plasticity effect is robust in areas where the majority of cells are binocular (V3 and V4), indicating that the effect does not require segregated representations of the two eyes such as ocular dominance columns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by the observation of strong effects in V3 and V4 (Figure 7), which are known to have predominantly binocular cells. This is a reasonable inference based on established knowledge of visual area organization, though the study does not directly measure ocular dominance column structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The correlation between V1 deprivation effects and binocular rivalry suggests a common origin and could validate the use of binocular rivalry as a biomarker of adult cortical plasticity. Binocular rivalry originates in primary visual cortex and reflects excitatory-inhibitory dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C12 is supported by the observed correlation, but the inference of 'common origin' is speculative. Claims C113-C116 about binocular rivalry as a biomarker and its neural basis (C114-C116) are based on cited literature but represent future potential rather than demonstrated results. The validation of binocular rivalry as a biomarker would require additional prospective studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The study used 7T fMRI to directly measure changes in early visual cortical areas in 19 adult humans before and after 2 hours of monocular deprivation, demonstrating changes in ocular drive selective for higher spatial frequencies and strongest along the ventral pathway, consistent with parvocellular pathway involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C152-C159 describe the experimental approach and are supported by the methods section. The sample size (n=19) was justified by power analysis for detecting correlations. The deprivation procedure using translucent patches is well-characterized and consistent with previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background claims about critical period plasticity, developmental effects of monocular deprivation, homeostatic plasticity in animal models, and adult visual cortex plasticity are established from prior literature and provide context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C14-C30 are background statements supported by appropriate citations to established literature. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Prior research has demonstrated various forms of short-term deprivation effects in adults, including paradoxical enhancement of deprived stimuli, with evidence suggesting preferential involvement of the parvocellular pathway and potential for long-lasting or permanent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C46 summarize prior research with appropriate citations. These establish the context and motivation for the current study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C105",
+      "C107",
+      "C108",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Discussion claims connecting current findings to prior work on homeostatic plasticity in macaques, VEP studies, GABAergic mechanisms, perceptual learning, and potential for Hebbian plasticity outside the critical period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C105, C107-C108, C117-C122, C126-C129, C132-C137, and C140-C143 represent interpretations and connections to prior literature that are appropriately cited and provide reasonable context for the findings. These are not novel results but appropriate scholarly discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C41",
+      "C106",
+      "C130",
+      "C131",
+      "C138",
+      "C139",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Speculative claims about potential links between homeostatic and Hebbian plasticity, mechanisms underlying the effects, therapeutic implications for amblyopia, and potential for stable changes in adult cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41, C106, C130-C131, C138-C139, and C144-C149 represent speculation about mechanisms and future implications. While these are reasonable hypotheses based on the data and prior literature, they are not directly tested in this study. Claims about therapeutic potential (C145-C149) are particularly speculative and would require clinical trials to validate.",
+    "result_type": "MINOR"
+  }
+]

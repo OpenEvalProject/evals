@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors generated a novel BrafCAT mouse model in which CRE-mediated recombination leads to co-expression of BRAFV600E and tdTomato from a bicistronic mRNA. This model allows for unequivocal identification of BRAFV600E-expressing cells by flow cytometry and functions analogously to the original BrafCA allele for lung tumor development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C28, C33-C37 describe the generation and validation of the BrafCAT mouse model with supporting experimental data including flow cytometry detection within 24 hours (C35), functional equivalence to BrafCA (C33), and differentiation from autofluorescence (C37). Claims C103-C110 discuss advantages and limitations of the approach with appropriate caveats. The model is well-characterized with multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C30",
+      "C31",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C111"
+    ],
+    "result": "Co-expression of BRAFV600E and PIK3CAH1047R in AT2 pneumocytes leads to rapid de-differentiation with widespread loss of AT2 marker expression (SFTPA, SFTPB, SFTPC, LYZ) as early as 2 weeks post-initiation. This represents the strongest effect observed by GSEA (NES: -2.71) and occurs more rapidly than in other reported lung cancer models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C30-C31, C38-C43, C46-C48, C51, and C111 are supported by multiple complementary approaches: RNA-Seq with GSEA analysis (C38-C42), immunofluorescence with quantification (C46-C47), and temporal analysis showing early onset at 2 weeks (C42). Statistical significance is reported (adj. p=0.01 for C40; Wilcoxon p values for C47). The variegated loss pattern within tumors (C48) is documented by imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The loss of AT2 differentiation markers in BRAFV600E/PIK3CAH1047R-driven tumors occurs despite maintained or slightly increased expression and nuclear localization of the known AT2 lineage transcription factors NKX2-1, FOXA1, and FOXA2, suggesting these factors are insufficient to maintain AT2 identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C65 are supported by RNA-Seq data (C53), immunofluorescence with quantification (C54-C57), and single-cell correlation analysis (C58-C62). The key finding that NKX2-1+/SFTPA- cells are the largest proportional increase (C61-C62) is supported by chi-squared analysis (p<0.001). Phosphorylation status of NKX2-1 was also examined (C64). The conclusion (C65) appropriately follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Similar NKX2-1-independent loss of SFTPA expression was observed in KRASG12D/PIK3CAH1047R-driven tumors compared to KRASG12D-driven tumors at 16 weeks post-initiation, suggesting this mechanism is generalizable across different oncogenic drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 extend the findings to a different genetic model (KRASG12D). The decrease in SFTPA without corresponding NKX2-1 decrease (C66-C67) is supported by immunofluorescence and quantification. The observation that KRASG12D alone does not cause extensive SFTPA loss (C68) provides an important control. Correlation analysis (C69) supports the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "BRAFV600E/PIK3CAH1047R-driven tumors show increased AT1 marker (AQP5) expression at early time points (2 weeks) but this effect diminishes by 12 weeks. These tumors display heterogeneous expression patterns with decreased correlation between AT1 and AT2 markers compared to BRAFV600E-driven tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C71-C77 are supported by GSEA analysis (C44-C45), immunofluorescence with quantification (C71-C72), and correlation analysis (C75-C76: Spearman Rho 0.54 vs 0.13). The heterogeneous expression patterns (C74) are documented by imaging, and chi-squared analysis shows significant genotype effects on marker distribution (C77, p<1e-5). The temporal dynamics are well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "BRAFV600E-driven tumor cells display glycogen storage vacuoles characteristic of bipotent progenitor cells, suggesting BRAFV600E\u2192MEK\u2192ERK signaling drives AT2 pneumocytes toward a bipotent progenitor fate, while coincident PI3K activation promotes more profound de-differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are supported by electron microscopy showing normal AT2 morphology (C78), tumor cell similarities with large vacuoles (C79-C80), and characteristic glycogen storage patterns (C81). The interpretation relies on cited literature linking glycogen vacuoles to bipotent progenitors (C82). The proposed mechanism (C83-C84) is appropriately presented as inference based on the morphological and marker expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C112",
+      "C139",
+      "C140"
+    ],
+    "result": "PGC1\u03b1 was identified as a candidate regulator of AT2 identity through WGCNA analysis. PGC1\u03b1 mRNA is significantly decreased in BRAFV600E/PIK3CAH1047R-driven tumors, and on a cell-by-cell basis, loss of nuclear PGC1\u03b1 correlates with decreased SFTPA expression in mouse tumors and human lung adenocarcinomas with PI3K pathway mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89, C112, C139-C140 are supported by systematic computational analysis (WGCNA, C85), differential expression analysis (C86), human tumor data analysis (C87), and immunofluorescence showing cell-by-cell correlation (C88-C89). The early and consistent repression of PGC1\u03b1 (C112, C139) is documented by RNA-Seq. The correlation between PGC1\u03b1 and SFTPA (C140) provides strong support for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Genetic silencing of PGC1\u03b1 in BRAFV600E-driven tumors recapitulates key aspects of PI3K activation, including decreased oxidative phosphorylation gene expression, widespread loss of AT2 differentiation markers, and increased EMT markers, though with some differences including increased ciliated and club cell markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by RNA-Seq with GSEA analysis (C90-C93) and immunofluorescence validation (C94) in BrafCAT/Ppargc1af/f mice. The functional genetic experiment directly tests PGC1\u03b1's role. The acknowledgment of differences from PI3K activation (C92-C93) demonstrates appropriate scientific rigor. Statistical significance is reported (Wilcoxon p=0.0288 for C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The nuclear receptor NR5A2 binding motif is highly enriched in AT2-specific gene promoters. NR5A2 and PGC1\u03b1 cooperate with NKX2-1 and FOXA1 to dramatically enhance (25-100 fold) transactivation of surfactant protein promoters (SFTPA, SFTPB, SFTPC), with PGC1\u03b1 being essential for this cooperative effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98, C136-C138 are supported by motif discovery analysis (C95, C136) and luciferase reporter assays (C96-C98, C137-C138). The dramatic synergistic effect (25-100 fold, C97) with statistical significance (ANOVA p<0.0001, Dunnett's test) is compelling. The requirement for PGC1\u03b1 (C98) is demonstrated by loss-of-function experiments. The differential effect on SFTPC (C138) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "PGC1\u03b1 and NKX2-1 physically interact in a complex in MLE-12 cells that express AT2 surfactant proteins, as demonstrated by reciprocal co-immunoprecipitation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by reciprocal co-immunoprecipitation experiments with appropriate IgG controls. The experiments were performed in MLE-12 cells that express relevant AT2 markers. The protocol indicates n=3 replicates with equivalent results. The physical interaction provides mechanistic support for the functional cooperation observed in luciferase assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "PGC1\u03b1 expression is repressed by PI3K\u2192AKT signaling via FOXO1 binding to insulin response sequences in the PGC1\u03b1 promoter, and BRAFV600E signaling can also suppress PGC1\u03b1 via MITF in melanoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are appropriately presented as prior knowledge from cited literature (Daitoku et al., 2003; Kemper et al., 2014; Haq et al., 2013). The authors correctly state their data support these previous findings (C113). The citation to melanoma work (C114) is appropriately qualified as not examining differentiation. These claims provide mechanistic context for the observed PGC1\u03b1 repression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Mutational activation of PI3'-lipid signaling in BRAFV600E-driven lung adenocarcinoma leads to diminished PGC1\u03b1 expression, compromising NKX2-1/FOXA1's ability to maintain AT2 identity. This mechanism operates in both KRASG12D and BRAFV600E-driven tumors, though PGC1\u03b1 loss represents one of multiple PI3K effector pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C144 represent the authors' synthesis of their findings. The conclusion (C141) is supported by the genetic silencing experiments (C90-C94) combined with the correlation data (C88-C89, C139-C140). The acknowledgment of incomplete recapitulation (C142) and multiple effector pathways (C143) demonstrates appropriate scientific caution. The generalizability across models (C144) is supported by data in both BRAF and KRAS models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C32",
+      "C102",
+      "C115",
+      "C123"
+    ],
+    "result": "Human lung adenocarcinoma exhibits de-differentiation that complicates diagnosis/treatment and predicts poor survival. BRAF mutations occur in ~8% of LUAD, and poorly differentiated human tumors show loss of functional lung markers despite maintaining NKX2-1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C15, C32, C102, C115, C123 provide background context supported by appropriate citations. These are established facts in the field (e.g., Siegel et al., 2016; Cancer Genome Atlas Research Network, 2014; Yatabe et al., 2002). The claims accurately represent the cited literature and provide necessary context for the study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C29"
+    ],
+    "result": "Prior work established that BRAFV600E expression initiates benign lung tumors retaining AT2 characteristics, while cooperating alterations activating PI3'-lipid signaling promote malignant progression. BRAFV600E-driven tumors maintain expression of AT2 markers including NKX2-1, FOXA1, and FOXA2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C16-C23, C29 summarize prior work from the authors' lab and others, appropriately cited (Dankort et al., 2007; Trejo et al., 2013; Kinross et al., 2012). These claims establish the foundation for the current study and are supported by the cited literature. The comparison between BRAFV600E and KRASG12D models (C20-C22) is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Genetically manipulated mice provide opportunities to separate RAF\u2192MEK\u2192ERK and PI3'-lipid pathway effects, but the original BrafCA mouse has limitations in identifying pure tumor cell populations. The mT-mG fluorescent reporter approach has the limitation that not all oncoprotein-expressing cells express the fluorophore and vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 describe the rationale for developing the BrafCAT model. The limitations of prior approaches (C25, C27) are based on the authors' experience and knowledge of CRE-lox systems. These claims appropriately motivate the need for the new model and are consistent with known properties of dual-reporter systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "BRAFV600E/PIK3CAH1047R-driven tumors do not show CCA expression throughout the tumor and arise predominantly in alveolar spaces rather than bronchioalveolar junctions, arguing against a club cell or BASC origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by immunofluorescence showing CCA restricted to airways (C49) and tumor location patterns (C50) compared to cited literature on club cell-derived tumors (Cicchini et al., 2017). These observations effectively rule out alternative explanations for the de-differentiation phenotype and support an AT2 cell origin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52",
+      "C70",
+      "C135"
+    ],
+    "result": "NKX2-1 and FOXA1/2 are known regulators of lung cell differentiation, but the data suggest either additional factors regulate AT2 identity independently, or these factors require additional co-factors for function. Transcriptional co-activators are critical for NKX2-1 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C70, C135 are supported by extensive cited literature (Bruno et al., 1995; Camolotto et al., 2018; DeFelice et al., 2003; etc.) and the authors' experimental observations showing NKX2-1-independent loss of AT2 markers. The inference (C70) is appropriately presented as a hypothesis based on the data. The role of co-activators (C135) is established in cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "KRASG12D's ability to activate PI3K\u03b1 is critical for tumor promotion and maintenance, but PI3'-lipid signaling remains rate-limiting in KRASG12D-driven tumors. KRASG12D is a weak activator of both PI3K and RAF\u2192MEK\u2192ERK pathways, and the lack of strong PI3K signaling limits both tumor growth and AT2 de-differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 synthesize prior literature (Castellano et al., 2013; Green et al., 2015; Cicchini et al., 2017; Chen et al., 2014) with the current findings. The weak activation by KRASG12D (C118) and differential AKT phosphorylation (C119-C120) are from cited work. The inference about de-differentiation (C121) appropriately extends prior findings with the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The role of NKX2-1 in lung adenocarcinoma is complex: it is diminished in poorly differentiated tumors and its loss enhances metastasis, but it can also promote gastric trans-differentiation when silenced with KRASG12D. NKX2-1 is frequently amplified rather than lost in human LUAD, and GEM models provide ideal systems to study individual mutation contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C134 synthesize extensive literature on NKX2-1's complex roles (Winslow et al., 2011; Snyder et al., 2013; Camolotto et al., 2018; Maeda et al., 2012; Campbell et al., 2016; Kwei et al., 2008; Chalmers et al., 2017). The authors appropriately characterize NKX2-1's role as \"critically important and complicated\" (C133) and justify the use of GEM models (C134). These claims provide important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "PGC1\u03b1 is best known for regulating mitochondrial biogenesis, but recent work shows that crippling mitochondrial function via MPC1 loss drives de-differentiation in Drosophila and mouse intestinal cells, suggesting links between metabolism and differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 provide context for the unexpected finding of PGC1\u03b1's role in AT2 identity. C145 represents established knowledge about PGC1\u03b1 function. C146 cites recent work (Schell et al., 2017) linking mitochondrial function to differentiation state. These claims appropriately contextualize the findings and suggest future research directions.",
+    "result_type": "MINOR"
+  }
+]

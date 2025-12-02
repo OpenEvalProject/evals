@@ -1,0 +1,1826 @@
+{
+  "submission": {
+    "id": "48490631-d402-422f-ab06-4ab16b27c3a5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:23:31.793159Z",
+    "updated_at": "2025-12-02T10:23:31.793159Z"
+  },
+  "content": [
+    {
+      "id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "submission_id": "48490631-d402-422f-ab06-4ab16b27c3a5",
+      "content_type": "manuscript",
+      "content_text": "# Ceapins block the unfolded protein response sensor ATF6\u03b1 by inducing a neomorphic inter-organelle tether\n\n## Authors\n\n- Sandra Elizabeth Torres<sup>1</sup> ([ORCID: 0000-0003-2764-4407](https://orcid.org/0000-0003-2764-4407))\n- Ciara M Gallagher<sup>2</sup>\n- Lars Plate<sup>4</sup>\n- Meghna Gupta<sup>2</sup>\n- Christina R Liem<sup>1</sup>\n- Xiaoyan Guo<sup>6</sup>\n- Ruilin Tian<sup>6</sup>\n- Robert M Stroud<sup>2</sup>\n- Martin Kampmann<sup>6</sup> ([ORCID: 0000-0002-3819-7019](https://orcid.org/0000-0002-3819-7019))\n- Jonathan S Weissman<sup>1</sup> ([ORCID: 0000-0003-2445-670X](https://orcid.org/0000-0003-2445-670X)) \u2020\n- Peter Walter<sup>2</sup> ([ORCID: 0000-0002-6849-708X](https://orcid.org/0000-0002-6849-708X)) \u2020\n\n### Affiliations\n\n1. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States\n2. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States\n3. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n4. Department of Chemistry Vanderbilt University Nashville United States\n5. Department of Biological Sciences Vanderbilt University Nashville United States\n6. Department of Biochemistry and Biophysics, Institute for Neurodegenerative Diseases University of California, San Francisco San Francisco United States\n7. Chan Zuckerberg Biohub San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe unfolded protein response (UPR) detects and restores deficits in the endoplasmic reticulum (ER) protein folding capacity. Ceapins specifically inhibit the UPR sensor ATF6\u03b1, an ER-tethered transcription factor, by retaining it at the ER through an unknown mechanism. Our genome-wide CRISPR interference (CRISPRi) screen reveals that Ceapins function is completely dependent on the ABCD3 peroxisomal transporter. Proteomics studies establish that ABCD3 physically associates with ER-resident ATF6\u03b1 in cells and in vitro in a Ceapin-dependent manner. Ceapins induce the neomorphic association of ER and peroxisomes by directly tethering the cytosolic domain of ATF6\u03b1 to ABCD3\u2019s transmembrane regions without inhibiting or depending on ABCD3 transporter activity. Thus, our studies reveal that Ceapins function by chemical-induced misdirection which explains their remarkable specificity and opens up new mechanistic routes for drug development and synthetic biology.\n\n## Introduction\n\nThe endoplasmic reticulum (ER) is the site of folding and assembly of secreted and transmembrane proteins. When ER homeostasis is disturbed, misfolded proteins accumulate and activate the unfolded protein response (UPR) (Walter and Ron, 2011). One of the ER-resident UPR sensors, ATF6\u03b1, is an ER-tethered transcription factor that is cytoprotective and necessary for cell survival when cells experience ER stress (Wu et al., 2007; Yamamoto et al., 2007). Under stress conditions, ATF6\u03b1 traffics to the Golgi apparatus, where it undergoes intramembrane proteolysis, releasing a bZIP transcription factor domain that moves to the nucleus and activates transcription (Haze et al., 1999; Yoshida et al., 1998). The events leading to ATF6\u03b1 activation and trafficking remain poorly understood, but require the Golgi-resident proteases S1P and S2P and general components involved in COPII trafficking (Nadanaka et al., 2004; Okada et al., 2003; Schindler and Schekman, 2009; Ye et al., 2000) that are not specific to ATF6\u03b1.\n\nUsing a cell-based high-throughput screen, we recently identified a series of selective small-molecule inhibitors of ATF6\u03b1 signaling, termed Ceapins (from the Irish verb \u2018ceap\u2019 meaning \u2018to trap\u2019) (Gallagher et al., 2016). Ceapins act on the most upstream step of ATF6\u03b1 activation by retaining ATF6\u03b1 at the ER and excluding it from ER exit sites during ER stress. When this trafficking requirement is removed by collapsing the Golgi apparatus into the ER, making ATF6\u03b1 accessible to S1P and S2P, ATF6\u03b1 is still cleavable by the proteases in the presence of Ceapin. Upon Ceapin treatment, ATF6\u03b1 rapidly and reversibly forms foci without requiring new protein synthesis (Gallagher et al., 2016; Gallagher and Walter, 2016). The molecular target(s) of Ceapins, let alone how Ceapins specifically inhibit ATF6\u03b1, especially in light of the fact that activation depends on components that are shared by other cellular process, have remained an enigma.\n\nTo identify the molecular target of Ceapin, we carried out an unbiased genome-wide screen and proteomic analysis. Our approaches converged on a single target, the peroxisomal transporter ABCD3. ATF6\u03b1 and ABCD3 normally do not interact and, indeed, localize to different parts of the cell. Ceapins induce these novel physical associations between ATF6\u03b1 and ABCD3 in cells and in vitro. Our results indicate that Ceapins achieve their remarkable specificity through an unprecedented mechanism of small molecule induced inter-organelle tethering.\n\n## Results\n\n### ABCD3 KD desensitizes cells to Ceapin-A7\n\nTo decipher the molecular mechanism of Ceapins, we carried out a genome-wide CRISPR interference (CRISPRi) screen to identify genes whose knockdown (KD) resulted in reduced or enhanced sensitivity to the drug. To this end, we screened a genome-wide sgRNA library (Horlbeck et al., 2016) in K562 cells that stably expressed dCas9-KRAB and an mCherry transcriptional reporter dependent on ATF6\u03b1 activation (Figure 1A). Treatment with tunicamycin (Tm), which blocks N-linked glycosylation, activates ATF6\u03b1 signaling leading to a two-fold reporter induction that was completely dependent on ATF6\u03b1 (Figure 1A). As a positive control, knocking down MBTPS2, one of the Golgi proteases that processes ATF6\u03b1, also inhibited induction of the reporter (Figure 1\u2014figure supplement 1A), whereas knocking down HSPA5, encoding the major Hsp70-type ER chaperone BiP (Binding Protein), induced ER stress and the reporter constitutively (Figure 1\u2014figure supplement 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the ER stress element (ERSE) reporter cassette. K562 ERSE reporter cells were transduced with the indicated sgRNAs and treated with vehicle (DMSO) or tunicamycin (Tm) (6 \u03bcg/ml) for 16 hr. (B) Schematic of the CRISPRi screen to identify the target of Ceapin. K562 cells expressing the ERSE reporter were transduced with the sgRNA library. The population was then divided into two subpopulations, which were treated with Tm or Tm plus Ceapin-A7 at EC90 (3 \u03bcM) for 16 hr. Cells in the top and bottom thirds of mCherry fluorescence of each subpopulation (Tm-treatment and Tm\u00a0+\u00a0Ceapin-treatment) were collected by FACS and processed to measure the frequencies of sgRNAs contained within each. (C) Volcano plot of gene-reporter phenotypes and p values from CRISPRi screen. Negative control sgRNA targeted genes (gray), Ceapin-independent genes (red), genes with growth phenotypes (blue), and Ceapin hits (black) are indicated.\u00a0(*)\u00a0denotes chromatin architecture and remodeling related genes that impact reporter transcription. The reporter phenotypes and p values for genes in CRISPRi screen are listed in Figure 1\u2014source data 1. (D) K562 ERSE reporter cells with individual ABCD3 sgRNAs or control sgRNA (NegCtrl) were treated with Tm and increasing concentrations of Ceapin-A7 for 16 hr. Reporter fluorescence was measured by flow cytometry and median values were plotted (N\u00a0= 3, \u00b1 SD). (E) K562 ERSE reporter ABCD3 and NegCtrl KD cells were treated with DMSO or Tm and reporter activation was measured as in (D). (F and G) qPCR analysis of ATF6\u03b1 target genes HSPA5 and HSP90B1, respectively. HepG2 CRISPRi NegCrl and ABCD3 KD cell lines were treated with DMSO, thapsigargin (Tg) (100 nM), and Tg with Ceapin (6 \u03bcM). Tg blocks the ER calcium pump and induces ER stress. Data plotted are mRNA levels for HSPA5 and HSP90B1 normalized to GAPDH and then compared to unstressed NegCtrl cells\u00a0\u00b1\u00a0standard deviation of duplicate technical replicates of two biological replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A and B) K562 ERSE reporter cells were transduced with the indicated sgRNAs and treated with vehicle (DMSO) or tunicamycin (Tm) (6 \u03bcg/ml) for 16 hr. (C) Reporter phenotypes from CRISPRi screens treated with ER stress in the absence (x-axis) and presence (y-axis) of Ceapin. Ceapin-independent genes (labeled in red) are genes whose knockdown changed the expression of the reporter to the same degree in both treatments and localized to the diagonal. Genes with growth phenotypes of at least \u22120.19 in previous growth screens (Horlbeck et al., 2016) are labeled in blue. (*) denotes chromatin architecture and remodeling related genes that impact reporter transcription. Negative control genes are labeled in gray. (D) Volcano plot of gene-reporter phenotypes and p values from CRISPRi screen described in (Figure 1C) and shown on y-axis of (A) with additional genes labeled. The reporter phenotypes and p values for genes in CRISPRi screen are listed in Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Quantification of nuclear translocation of ATF6\u03b1. Endogenous ABCD3 was knocked-down in 3xFLAG-ATF6\u03b1 HEK293 CRISPRi cells and full length GFP-ABCD3 construct was added back by FACS soring for narrow, low GFP levels. Data plotted is the ratio of ATF6\u03b1 signal intensity of nucleus to ER per cell, from one of three independent experiments and with at least twenty cells per condition. Statistical analysis used unpaired two-tailed t-tests, **** indicates p<0.0001.\n\nTo carry out our genome-wide screen, we transduced the K562 ATF6\u03b1 reporter cell line and selected for sgRNA expressing cells. We then induced ER stress with Tm in the presence or absence of Ceapin-A7, a potent member of the Ceapin family, and sorted cells by FACS (fluorescence-activated cell sorting). We isolated populations with decreased or increased ATF6\u03b1 signaling (bottom 30% and top 30% of the reporter signal distributions, respectively) and used next-generation sequencing to quantify frequencies of cells expressing each sgRNA in both pools to evaluate how expression of each individual sgRNA affects activation of the ATF6\u03b1 reporter (Adamson et al., 2016; Sidrauski et al., 2015) (Figure 1B).\n\nAs expected, KD of ATF6\u03b1 or MBTPS2 (encoding S2P) inhibited reporter induction (Figure 1C). Knocking down abundant ER quality control components such as HSPA5, induced ER stress and turned on the reporter independently of Ceapin treatment (labeled in red in Figure 1C, Figure 1\u2014figure supplement 1C\u2013D). Ceapin independent genes localized to the diagonal because their knockdown changed the expression of the reporter to the same degree in both treatments (labeled in red in Figure 1\u2014figure supplement 1C). Of particular interest were genes whose KD specifically made cells insensitive to Ceapin treatment allowing activation of the reporter by Tm in the presence of Ceapin (labeled in black in Figure 1\u2014figure supplement 1C). Two genes, ABCD3 and PEX19, robustly retested among the more than twenty hits from the genetic screen we individually knocked down and tested in the ERSE reporter cell line.\n\nABCD3, which encodes a peroxisomal ABC transporter involved in long-chain fatty acid import into peroxisomes, desensitized cells to Ceapin treatment (Figure 1C, Figure 1\u2014figure supplement 1C\u2013D). Additionally, PEX19, which is necessary for chaperoning and targeting ABCD3 to the peroxisome, also desensitized cells to Ceapin treatment (Figure 1C, Figure 1\u2014figure supplement 1C\u2013D). We knocked down these candidates individually and performed ERSE-mCherry dose response assays using Tm. Retesting of these candidates revealed that ABCD3 and PEX19 KD cells remained completely insensitive to Ceapin-A7 at saturating concentrations (Figure 1D, Figure 2\u2014figure supplement 3A). To determine if ATF6\u03b1 trafficking, processing, or activation is altered in ABCD3 KD cells, we then measured ATF6\u03b1 nuclear translocation (Figure 1\u2014figure supplement 2) and the downstream ATF6\u03b1-N activation of the reporter and endogenous ATF6\u03b1 target genes HSPA5 and HSP90B1 (Figure 1E\u2013G). In the absence of ER stress, ABCD3 or PEX19 KD cells also do not cause constitutive nuclear translocation nor activate ATF6\u03b1 (Figure 1E\u2013G, Figure 1\u2014figure supplement 2, Figure 2\u2014figure supplement 3B). Furthermore, in the presence of ER stress, ABCD3 or PEX19 KD alone did not impede ATF6\u03b1 nuclear translocation nor activation (Figure 1E\u2013G, Figure 2\u2014figure supplement 3B). These results indicate that neither ABCD3 nor PEX19 have direct roles in ATF6\u03b1 signaling, posing the question of how Ceapins functionally connect proteins that reside in separate organelles.\n\n### ABCD3 is required for Ceapin-induced ATF6\u03b1 foci\n\nCeapin treatment induces rapid and reversible formation of ATF6\u03b1 foci that are retained in the ER (Figure 2A) (Gallagher et al., 2016; Gallagher and Walter, 2016). We next tested if ABCD3 was directly involved in the formation of these foci and would colocalize with ATF6\u03b1. Indeed, in Ceapin-treated cells, ATF6\u03b1 colocalized with ABCD3 as visualized by immunofluorescence (Figure 2A\u2013B). This result was surprising because newly synthesized ABCD3 is inserted directly into the peroxisomal membrane using PEX19 as import receptor (Imanaka et al., 1996; Biermanns and G\u00e4rtner, 2001; Kashiwayama et al., 2007; Kashiwayama et al., 2005; Sacksteder et al., 2000). ABCD3 is not co-translationally translocated into the ER, indicating there is not a pool of ABCD3 in the ER (Figure 2\u2014figure supplement 1) (Jan et al., 2014); indeed, it is commonly used as a reliable marker for peroxisomes (Uhl\u00e9n et al., 2015). Since both ABCD3 and PEX19 scored as hits in our screen, it seemed plausible that Ceapin induces ATF6\u03b1 colocalization with peroxisomal ABCD3. We next tested whether ATF6\u03b1 also colocalized with other peroxisomal markers, peroxisomal membrane protein PEX14 and peroxisomal matrix protein Thiolase (a maker for mature import competent peroxisomes). In the absence of Ceapin, ATF6\u03b1 and PEX14 or Thiolase did not colocalize (Figure 2A,C, Figure 2\u2014figure supplement 2). By contrast, in the presence of Ceapin, we observed ATF6\u03b1 and PEX14 and Thiolase colocalization (Figure 2A,C Figure 2\u2014figure supplement 2). Furthermore, in ABCD3 KD cells treated with Ceapin, ATF6\u03b1 no longer formed foci or colocalized with peroxisomes (Figure 2A,C). This result was consistent in PEX19 KD cells, where peroxisome biogenesis is affected and ABCD3 is no longer chaperoned and targeted to the peroxisome (Kashiwayama et al., 2007; Kashiwayama et al., 2005; Sacksteder et al., 2000), ATF6\u03b1 no longer formed foci in the presence of Ceapin (Figure 2\u2014figure supplement 3C). Thus, peroxisomes interact with Ceapin-induced ATF6\u03b1 foci in an ABCD3-dependent fashion to sequester ATF6\u03b1 at the ER.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig2-v2.jpg)\n\n**Figure 2.:** (A) HEK293 CRISPRi cells stably expressing doxycycline inducible 3xFLAG-ATF6\u03b1 with ABCD3 or NegCtrl KD were treated either with DMSO or Ceapin (6 \u03bcM) for 30 min prior to fixation, staining with anti-ABCD3 and/or anti-PEX14, and confocal fluorescent imaging. Scale bar, 10 \u03bcm. Images are representative of two independent experiments, in which we imaged at least 20 positions per well for each experiment. (B and C) Plotted is the mean and standard deviation of the mean per cell correlation of 3xFLAG-ATF6\u03b1 and ABCD3 or PEX14 from (A) with at least 30 cells imaged per condition. All cells imaged in ABCD3 KD (96% KD), including wildtype cells, were used in quantification. Statistical analysis used unpaired two-tailed t-tests, **** indicates p<0.0001. (D) U2-OS cells stably expressing GFP-ATF6\u03b1 were treated either with vehicle (DMSO), Tg (100 nM), Tm (2 \u03bcg/ml), or Ceapin (6 \u03bcM) for 2 hr or 4 hr (shown) prior to fixation, co-staining with anti-ABCD3 and anti-PEX14, and fluorescent imaging. Stress attenuated GFP-ATF6\u03b1 foci are indicated by arrowheads. Scale bar, 10 \u03bcm. (E) Quantification of correlation of GFP-ATF6\u03b1 and ABCD3 within PEX14 sites.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Data from Jan et al. (2014) is plotted. Gene enrichments obtained with the general BirA-Sec61\u00df ER marker in HEK293 cells and signal\u00a0sequence\u00a0(SS) annotations predicted by SignalP. ABCD4 was previously annotated to be peroxisomal, but recently shown to be ER localized. PEX16 has been previously shown to be co-translationally translocated. PXPM2 is a peroxisomal membrane protein.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) 3xFLAG-ATF6\u03b1 HEK293 CRISPRi cells with NegCtrl KD were treated and fixed as in Figure 2A and stained for Thiolase. Scale bar, 10 \u03bcm. (B) Quantification of the correlation of ATF6\u03b1 and Thiolase from (A) and plotted as in Figure 2B.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) K562 ERSE reporter cells with NegCtrl or PEX19 sgRNA KD were treated with ER stressor (6 \u03bcg/ml Tm) and increasing concentrations of Ceapin-A7 for 16 hr. Reporter fluorescence was measured by flow cytometry and median values were plotted (N\u00a0= 3, \u00b1 SD). (B) K562 ERSE reporter PEX19 and NegCtrl KD cells were treated without (DMSO) or with ER stressor (Tm) and reporter activation was measured as in (A). (C) 3xFLAG-ATF6\u03b1 HEK293 CRISPRi cells with PEX19 sgRNA or NegCtrl KD were treated, fixed, and stained as in Figure 2A. Scale bar, 10 \u03bcm.\n\nAfter prolonged ER stress, ATF6\u03b1 attenuates and forms foci that are reminiscent of Ceapin induced foci (Gallagher and Walter, 2016). We next asked whether Ceapin was acting on the normal mechanism of ATF6\u03b1 attenuation by testing ABCD3 colocalization with stress attenuated ATF6\u03b1 foci. To induce stress attenuated ATF6\u03b1 foci, we treated U2OS cells expressing GFP-ATF6\u03b1 with ER stress, Tm or Tg (thapsigargin, which inhibits the ER calcium pump) for 2 and 4 hr. In positive control cells treated with Ceapin, ATF6\u03b1 colocalized with ABCD3 and PEX14. In stress induced cells, attenuated ATF6\u03b1 foci did not colocalize with ABCD3 or PEX14 by immunofluorescence (Figure 2D\u2013E). Thus, Ceapin does not act on the ATF6\u03b1 pathway by stabilizing the attenuated ATF6\u03b1 state. The stress attenuated foci and Ceapin induced foci are distinct.\n\n### Ceapin treatment does not inhibit ABCD3 activity\n\nSince Ceapin treatment inhibits ATF6\u03b1, we next tested whether Ceapin treatment also inhibits ABCD3. ABCD3 knockout mice and hepatocytes display defects in bile acid biosynthesis (Ferdinandusse et al., 2015). To test if Ceapin treatment affects ABCD3 activity, we measured bile acid levels in a liver cancer cell line (HepG2) after Ceapin treatment and ABCD3 KD. As expected, in ABCD3 KD cells, bile acid levels were decreased (Figure 3). In control cells treated at the EC50 and ten-times the EC50 of Ceapin, bile acid levels were similar to cells treated with vehicle only (Figure 3). Thus, Ceapin does not inhibit ABCD3 activity in cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig3-v2.jpg)\n\n**Figure 3.:** Bile acid levels were measured in HepG2 CRISPRi cells with NegCtrl or ABCD3 KD treated with vehicle (DMSO), EC50 of Ceapin (600 nM), and ten times the EC50 of Ceapin-A7 (6 \u03bcM).\n\n### Ceapin-induced ATF6\u03b1-ABCD3 interaction does not require known ER-peroxisome tethers\n\nThe tight association between the ER and peroxisome is mediated by ER-peroxisome tethers, VAPA and VAPB on the ER and ACBD4 and ACBD5 on the peroxisomes (Costello et al., 2017a; Costello et al., 2017b; Hua et al., 2017). While the ER components are redundant, ACBD5 KD or overexpression alone decreases or increase ER-peroxisome contacts, respectively (Costello et al., 2017a; Hua et al., 2017). To determine whether proximity between the ER and peroxisomes induced by these tethers is required for Ceapin-induced foci formation, we knocked-down these known ER-peroxisome tethers. In tether KD cells treated with Ceapin, ATF6\u03b1 foci still formed and ATF6\u03b1 colocalized with ABCD3 (Figure 4A\u2013B). Additionally, tether KD cells were not resistant to Ceapin treatment (Figure 4C), consistent with the results from our screen in which these components also did not score as hits.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig4-v2.jpg)\n\n**Figure 4.:** (A) ER tether components, VAPA and VAPB, and peroxisome tether components, ACBD4 and ACBD5, were individually knocked-down in 3xFLAG-ATF6\u03b1 HEK293 CRISPRi cell line, treated, fixed, and stained as in Figure 2A prior to fluorescence imaging. Scale bar, 10 \u03bcm. (B) Quantification of the correlation of ATF6\u03b1 and ABCD3 from (A) and plotted as in Figure 2B. (C) K562 ERSE reporter cells with NegCtrl or indicated knockdowns were treated with Tm and increasing concentrations of Ceapin-A7 for 16 hr. Reporter fluorescence was measured by flow cytometry and median values were plotted (N\u00a0= 3, \u00b1 SD).\n\n### Ceapin-induced interactions do not require ER localized ATF6\u03b1 nor ABCD3 transporter activity\n\nWe next tested if ER membrane association of ATF6\u03b1 is required for Ceapin induced foci. To this end, we knocked down endogenous ATF6\u03b1 and FACS sorted for a narrow, low level of GFP expression for truncated variants of ATF6\u03b1 containing its cytosolic regions without the transmembrane and ER-lumenal domains (Figure 5A). We found that GFP-ATF6\u03b1(2-302), which was retained in the cytosol with a nuclear exit signal and was no longer associated with the ER, colocalized with ABCD3 and formed foci (Figure 5A\u2013B). Further truncations showed that only the first 89 amino acids of ATF6\u03b1 were both necessary and sufficient for Ceapin-dependent foci formation and colocalization with ABCD3 and peroxisomes (Figure 5A\u2013B, Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig5-v2.jpg)\n\n**Figure 5.:** (A) Diagram of GFP-ATF6\u03b1 constructs tested. A nuclear exit signal (NES) was added to ATF6\u03b1 truncated constructs to retain ATF6\u03b1 in the cytosol. Endogenous ATF6\u03b1 was knocked-down in 3xFLAG-ATF6\u03b1 HEK293 CRISPRi cells grown without doxycycline, so that only GFP-ATF6\u03b1 constructs were expressed. GFP-ATF6\u03b1-truncated cell lines were treated with DMSO or Ceapin-A7, fixed and stained for ABCD3. Scale bar, 10 \u03bcm. (B) Quantification of the correlation of GFP-ATF6\u03b1 within ABCD3 sites. (C) Diagram of the GFP-ABCD3 mutants and truncations tested. Endogenous ABCD3 was knocked-down in 3xFLAG-ATF6\u03b1 HEK293 CRISPRi cells so only GFP-ABCD3 constructs were expressed. GFP-ABCD3 cell lines were treated with DMSO or Ceapin-A7, fixed and stained for FLAG(ATF6\u03b1) (shown) and PEX14. Scale bar, 10 \u03bcm. (D) Quantification of the correlation of GFP-ABCD3 and 3xFLAG-ATF6\u03b1 within PEX14 sites.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Endogenous ATF6 was knocked-down in U2OS Flp-In CRISPRi cells and FACS sorted for narrow, low GFP levels so only GFP-ATF6\u03b1(2-90) construct was expressed. Cells were treated and fixed as in Figure 2A and stained for Thiolase. Scale bar, 10 \u03bcm. (B) Quantification of the correlation of ATF6\u03b1 and Thiolase from (A) and plotted as in Figure 2B.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Endogenous ABCD3 was knocked-down in 3xFLAG-ATF6\u03b1 HEK293 CRISPRi cells and FACS sorted for narrow, low GFP levels so only GFP-ABCD3 constructs were expressed. GFP-ABCD3 cell lines were treated with DMSO or Ceapin-A7, fixed and stained for PEX14 (shown) and FLAG(ATF6\u03b1). Scale bar, 10 \u03bcm.\n\nSince ABCD3 is a transporter, we then tested if ABCD3 catalytic activity was required for Ceapin action. Similarly to our ATF6\u03b1 truncations, we also knocked down endogenous ABCD3 and FACS sorted for low level GFP expression of constructs with mutations of ABCD3 residues that mediate ATP binding (G478R) and hydrolysis (S572I) or a deletion of the entire catalytic domain (Roerig et al., 2001). There is one reported patient with a C terminal truncation of ABCD3 in which a reduced number of import competent peroxisomes are present (Ferdinandusse et al., 2015). Similarly, GFP-ABCD3\u0394NBD cells, with a deletion of the entire catalytic domain, have reduced, enlarged peroxisomes (Figure 5C, Figure 5\u2014figure supplement 2). We also confirmed correct localization of the GFP-ABCD3 constructs to the peroxisome (Figure 5\u2014figure supplement 2). As a positive control, ABCD3 KD cells complemented with the full length ABCD3 construct were able to colocalize with and form ATF6\u03b1 foci when treated with Ceapin (Figure 5C\u2013D). In our catalytic activity mutants, we found that ABCD3 ATP binding or hydrolysis was not required for Ceapin-induced foci formation (Figure 5C\u2013D). Although there are fewer larger peroxisomes in GFP-ABCD3\u0394NBD cells, peroxisomal ABCD3 still induced foci formation and colocalized with ATF6\u03b1 in the presence of Ceapin (Figure 5C\u2013D). These results indicate that Ceapin-induced interactions do not require ER localized ATF6\u03b1 nor ABCD3 transporter activity.\n\n### Ceapin drives ATF6\u03b1-ABCD3 interaction in cells and in vitro\n\nTo identify components physically associating with ATF6\u03b1 in the presence of Ceapin, we carried out native immunoprecipitation \u2013 mass spectrometric (IP-MS) analyses. We treated 3xFLAG-ATF6\u03b1 HEK293 cells with Ceapin-A7 or an inactive analog, Ceapin-A5, in the presence of stress (Tg) and found that ABCD3 co-purified as the top hit with epitope-tagged ATF6\u03b1 selectively in the presence of active Ceapin-A7 but not inactive Ceapin-A5 (Figure 6A\u2013B). The native reciprocal affinity purification with full-length GFP-ABCD3 cells confirmed these results (Figure 6C). Furthermore, GFP-ABCD3\u0394NBD, lacking the entire nucleotide binding domain, also physically associated with ATF6\u03b1 in the presence of Ceapin (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig6-v2.jpg)\n\n**Figure 6.:** (A and B) Proteomic analysis and immunoblot (IB) of anti-FLAG affinity purification from 3xFLAG-ATF6\u03b1 HEK293 cells treated with stress (100 nM Tg) and inactive Ceapin-A5 analog (6\u00a0\u03bcM) or active Ceapin-A7 (6\u00a0\u03bcM) with two replicates for each treatment condition. The proteins identified with affinity-purified FLAG-ATF6 treated with ER stress and Ceapin-A5 or Ceapin-A7 are listed in Figure 6\u2014source data 1. SQSTM1 KD (*) was the top second hit in proteomics, however, SQSTM1 KD in the K562 ATF6 reporter cell line did not render cells resistant to Ceapin treatment and retained a similar response to negative control cells. I, input; FT, flow-through; E, elution. (C) Immunoprecipitation of full-length GFP-ABCD3 and GFP-ABCD3\u0394NBD from cells treated with DMSO or Ceapin-A7. (D) Detergent solubilized GFP-ATF6\u03b1(2-90) or GFP-only cell lysates were incubated with Ceapin-A7 or inactive analog Ceapin-A5 and affinity purified with anti-GFP. (*) Indicates a degradation product. (E) Purified ATF6\u03b1-MBP and ABCD3-GFP were incubated with inactive Ceapin-A5 or active Ceapin-A7 and affinity purified with anti-MBP antibody.\n\nWe then tested if the minimal cytosolic domain of ATF6\u03b1, GFP-ATF6\u03b1(2-90), physically associated with peroxisomal ABCD3. We immunoprecipitated GFP-ATF6\u03b1(2-90) from detergent solubilized lysates and specifically enriched ABCD3 in the presence of active Ceapin-A7 but not inactive Ceapin-A5 (Figure 6D). Thus, consistent with the above experiments where organelle tethering was not required, these results confirm that no other ER proteins are required for Ceapin-A7 induced ATF6\u03b1 and ABCD3 physical association.\n\nFinally, we tested whether purified ATF6\u03b1 and ABCD3 were sufficient for Ceapin-induced tethering. In a binding assay with purified ATF6\u03b1(2-90) and ABCD3, our vehicle (DMSO) and inactive Ceapin-A5 controls did not induce ATF6\u03b1(2-90) and ABCD3 binding (Figure 6E). In the presence of Ceapin-A7, however, the cytosolic domain of ATF6\u03b1(2-90) and ABCD3 associated in solution (Figure 6E). Thus, Ceapin is directly responsible for tethering ABCD3 to ATF6\u03b1.\n\n## Discussion\n\nCeapins, named for their ability to trap ATF6\u03b1 in the ER, act with exquisite selectivity; they do not affect signaling of ATF6\u03b1\u2019s close homolog ATF6\u03b2 or SREBP (sterol response element binding protein) (Gallagher et al., 2016), which depend on broadly used vesicular trafficking ER-Golgi pathways and are activated by the same Golgi-resident proteases (Nadanaka et al., 2004; Okada et al., 2003; Schindler and Schekman, 2009; Ye et al., 2000). Here we discovered the basis of this specificity. Ceapins induce neomorphic inter-organelle junctions, forcing interactions between the cytosolic domain of ER-tethered ATF6\u03b1 and the peroxisomal transmembrane protein ABCD3 to sequester ATF6\u03b1 from its normal trafficking route (Figure 7), and do so without interfering with or depending on ABCD3\u2019s normal function. Since ABCD3 protein expression is ten-fold higher than ATF6 (Hein et al., 2015), it is likely ABCD3 is not saturated. Ceapin induced interaction of ABCD3 with the most N-terminal region of ATF6\u03b1 also clarifies how ATF6\u03b1 foci are excluded from COPII trafficking, while the transmembrane region of ATF6\u03b1 remains accessible to protease cleavage. Mechanistically, Ceapins could act as molecular staples that physically bridge the respective proteins or bind to one or the other inducing allosteric changes that promote their association; but in either case, Ceapin is responsible for tethering ABCD3 to ATF6\u03b1.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/46595/elife-46595-fig7-v2.jpg)\n\n**Figure 7.:** Ceapins sequester ATF6\u03b1 into a transport-incompetent pool during ER stress by tethering ATF6\u03b1 to peroxisomal ABCD3. ATF6\u03b1 is occluded from COPII trafficking, while its transmembrane domain remains accessibly to protease cleavage.\n\nRemarkably, in the absence of Ceapins, ATF6\u03b1 and ABCD3 localize to different parts of the cell and are not known to interact physically or functionally. Indeed, an 89-amino acid fragment of ATF6\u03b1 fused to GFP is sufficient to recruit GFP to peroxisomes, ruling out the need for endogenous inter-organellar tethers. This Ceapin-induced tethering enables an \u2018anchor away\u2019 strategy but one that uses an abundant, ubiquitously expressed endogenous acceptor protein. There has been increasing interest in small molecules that induce novel protein-protein interactions with therapeutic potential (de Waal et al., 2016; Han et al., 2017; Kr\u00f6nke et al., 2014; Lu et al., 2014; Kr\u00f6nke et al., 2015;\u00a0Petzold et al., 2016; Uehara et al., 2017). Ceapins provide a novel example of such molecules and increase the repertoire to include the induction of inter-organellar connections, opening new mechanistic routes for drug development and synthetic biology by broadly enabling control of protein function through chemical-induced misdirection.\n\nUnderstanding the mechanism of action of a chemical modulator of cellular stress and establishing that it is acting directly and specifically is critical for exploiting the utility of any stress modulators either as research or potential therapeutic agents. Our identification of the mechanism by which Ceapins achieve their remarkable specificity forms a foundation to explore the utility of ATF6\u03b1 inhibition in the treatment of cancers, such as squamous carcinomas, in which ATF6\u03b1 signaling protects dormant tumor cells from classical chemotherapies (Schewe and Aguirre-Ghiso, 2008).\n\n## Materials and methods\n\n### Cell culture and experimental reagents\n\nU2OS, 293TREx, and HepG2 cells were cultured in DMEM. K562 cells were cultured in RPMI. Culture media was supplemented with 10% fetal bovine serum (FBS), 1% L-glutamine, and 1% penicillin/streptomycin (ThermoFisher). U2-OS cells stably expressing GFP-HsATF6\u03b1 were purchased from Thermo Scientific (084_01) and supplemented with 500 \u03bcg/ml G418 to maintain GFP-HsATF6\u03b1 expression. HeLa CRISPRi cells expressing SFFV-dCas9-BFP-KRAB were previously described (Jost et al., 2017). Tunicamycin and thapsigargin were purchased from Sigma. Antibodies used were rabbit anti-GFP (ThermoFisher A11122), mouse anti-FLAG M2 (Sigma F1804), rat anti-GRP94 9G10 (abcam ab2791), rabbit anti-ACAA1 (Sigma HPA007244), rabbit anti-pmp70 (ab109448) for PFA fixation and (PA1-650) for methanol fixation, mouse anti-pmp70 (ab211533) for PFA fixation and (SAB4200181) for methanol fixation.\n\n### Generation of constructs and cell lines\n\nTo generate CRISPRi knockdown cell lines, SFFV-dCas9-BFP-KRAB (Addgene 46911) or UCOE-EF1\u03b1-dCas9-BFP-KRAB (Jost et al., 2017) were stably transduced and FACS-sorted for BFP positive cells. 293 TREx cells expressing doxycycline-inducible 6xHis-3xFLAG-HsATF6\u03b1 (Gallagher et al., 2016) were infected with SFFV-dCas9-BFP-KRAB and sorted twice for BFP expressing cells. HepG2 cells from ATTC (CRL-10741) were infected with UCOE-EF1\u03b1-dCas9-BFP-KRAB and FACS sorted for BFP expression. The ERSE reporter construct was generated by subcloning mCherry into the ERSE.Fluc.pcDNA3.1 (Mortenson et al., 2018) using the polymerase incomplete primer extension method to replace the FLuc gene. This construct was then subcloned into ClaI and EcoRI digested pLenti6.V5.GFP. K562 cells stably expressing dCas9-KRAB (Gilbert et al., 2014) were stably transduced with the ERSE reporter construct and a monoclonal line was selected and expanded to generate K562 ERSE reporter cell line.\n\nIndividual gene knockdowns were carried out by selecting sgRNA protospacers from compact hCRISPRi-v2 library and cloning into lentiviral plasmid pU6-sgRNA EF1\u03b1-puro-t2a-BFP (Addgene 60955) as previously described (Horlbeck et al., 2016). Protospacer sequences used for individual knockdowns are listed in Table 1. The resulting sgRNA expression vectors were packaged into lentivirus by transfecting HEK293T with standard packaging vectors using TransIT-LTI Transfection Reagent (Mirus, MIR 2306). The viral supernatant was harvested 2\u20133 days after transfection and frozen prior to transduction into CRISPRi knockdown cell lines described above.\n\n**Table 1.**\n Protospacer sequence of sgRNAs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Protospacer</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>NegCtrl</td>\n      <td>GCGCCAAACGTGCCCTGACGG</td>\n    </tr>\n    <tr>\n      <td>ATF6</td>\n      <td>GTGGGATCTGAGAATGTACCA</td>\n    </tr>\n    <tr>\n      <td>ABCD3-1</td>\n      <td>GGTACCAGCGAGCCGGCGAG</td>\n    </tr>\n    <tr>\n      <td>ABCD3-2</td>\n      <td>GACTGCCGGTACCAGCGAGC</td>\n    </tr>\n    <tr>\n      <td>PEX19-1</td>\n      <td>GGCCGAAGCGGACAGGGAAT</td>\n    </tr>\n    <tr>\n      <td>PEX19-2</td>\n      <td>GGAGGAAGGCTGTAGTGTCG</td>\n    </tr>\n    <tr>\n      <td>ACBD4</td>\n      <td>GCCGGCCCTGCTGGACCCCG</td>\n    </tr>\n    <tr>\n      <td>ACBD5</td>\n      <td>GGGAGCCGCTCTCCCACCCT</td>\n    </tr>\n    <tr>\n      <td>VAPA</td>\n      <td>GCACCGAACCGGTGACACAG</td>\n    </tr>\n    <tr>\n      <td>VAPB</td>\n      <td>GCGGGGGTCCTCTACCGGGT</td>\n    </tr>\n  </tbody>\n</table>\n\n3xFLAG-ATF6\u03b1 HEK293 CRISPRi described above was stably transduced with sgRNA knockdown of endogenous ATF6\u03b1 or ABCD3 and grown without doxycycline to ascertain that only truncation constructs would be expressed. ATF6\u03b1 truncation constructs were generated by Gibson assembly of IDT gblock of sfGFP and ATF6\u03b1 PCR amplified from peGFP-HsATF6\u03b1 (Addgene #32955) into inserted into BamHI/NotI digested pHR-SFFV-Tet3G (Gilbert et al., 2014). ATF6\u03b1 truncations were PCR amplified with reverse primers containing nuclear exit signal (NES) (NES, CTGCCCCCCCTGGAGCGCCTGACCCTG; NES_REV, CCCCTGCAGCTGCCCCCCCTGGAGCGGCTGACCCTG) to retain ATF6\u03b1 in the cytosol. Full length GFP-ABCD3 and GFP-ABCD3\u0394NBD (2-416) were cloned by Gibson assembly of ABCD3 PCR amplified from cDNA and IDT gblock of sfGFP into BamHI/NotI digested pHR-SFFV-Tet3G (Gilbert et al., 2014). ABCD3 G478R and S572I mutations were generated by site directed mutagenesis (QuikChange Lightning Agilent) of full-length GFP-ABCD3 construct. ATF6\u03b1 and ABCD3 truncation vectors were packaged into lentivirus as described above, stably transduced, and FACS sorted for a narrow and low level of GFP expression.\n\nU2OS Flp-In cells were infected with UCOE-EF1\u03b1-dCas9-BFP-KRAB and FACS sorted for BFP expression. They were then stably transduced with sgRNA knockdown of endogenous ATF6\u03b1 and GFP-ATF6\u03b1(2-90) construct, and FACS sorted for a narrow level of GFP expression. Parental cell lines and commercially available cell lines were authenticated by STR analysis and tested negative for mycoplasma contamination.\n\n### Genome-scale CRISPRi screen\n\nReporter screens were carried out using protocols similar to those previously described (Adamson et al., 2016; Gilbert et al., 2014; Sidrauski et al., 2015). The compact (five sgRNA/gene) hCRISPRi-v2 (Horlbeck et al., 2016) sgRNA libraries were transduced into ERSE reporter cells at a MOI\u00a0<1 (55% BFP+\u00a0cells). Cells were grown in spinner flasks for 2 days without selection, selected with 2 \u03bcg/ml puromycin for 2 days, and allowed to recover for 3 days. Cells were then split into two populations, which were treated for 16 hr with 6 \u03bcg/ml tunicamycin alone or 6 \u03bcg/ml tunicamycin and 3 \u03bcM Ceapin (EC90). Cells were then sorted based on reporter fluorescence using BD FACS Aria2. Cells with the highest (~30%) and lowest (~30%) mCherry expression were collected and frozen after collection. Approximately 20 million cells were collected per bin. Genomic DNA was isolated from frozen cells, and the sgRNA-encoded regions were enriched, amplified, and prepared for sequencing.\n\nSequenced protospacer sequences were aligned and data were processed as described (Gilbert et al., 2014; Horlbeck et al., 2016) with custom Python scripts (available at https://github.com/mhorlbeck/ScreenProcessing). Reporter phenotypes for library sgRNAs were calculated as the log2 enrichment of sgRNA sequences identified within the high-expressing mCherry over the low-expressing mCherry cells. Phenotypes for each transcription start site were then calculated as the average reporter phenotype of all five sgRNAs. Mann-Whitney test p-values were calculated by comparing all sgRNAs targeting a given TSS to the full set of negative control sgRNAs. For data presented in Figure 1B, screen hits are defined as those genes where the absolute value of a calculated reporter phenotype over the standard deviation of all evaluated phenotypes multiplied by the log10 of the Mann-Whitney p-value for given candidate is greater than 7. Growth screen data (Horlbeck et al., 2016) was used to label genes with growth phenotype of at least \u22120.19. Ceapin independent genes are defined as genes that were hits in tunicamycin alone and tunicamycin with Ceapin treatment since their phenotype was independent of Ceapin treatment. Genes involved in chromatin remodeling and architecture have been previously described in UPR screens to act downstream and directly affect expression of the reporter (Jonikas et al., 2009). Chromatin related genes that impact reporter expression are labeled with ($\u22c6$) in Figure 1\u2014figure supplement 1C\u2013D.\n\n### Bile acid assay\n\nHepG2 CRISPRi ABCD3 KD and NegCtrl cells were treated with DMSO or Ceapin at 600 nM or 6 \u03bcM for 24 hr. Cells were harvested in scrapping buffer (cold PBS with 10 \u03bcM MG132 and 1X protease inhibitor), spun down, resuspended in lysis buffer (50 mM Tris pH 7.4, 150 mM NaCl, 5 mM EDTA, 1X protease inhibitor, and 1% LMNG), and spun down at 10,000 x g for 10 min. The supernatant was used for bile acid assay (Cell Biolabs STA-631) as described by the manufacturer.\n\n### Quantitative RT-PCR\n\nCells were harvested and total RNA was isolated using the NucleoSpin RNA II (Macherey-Nagel) according to manufacturer\u2019s instructions. RNA was converted to cDNA using AMV reverse transcriptase under standard conditions with oligo dT and RNasin (Promega, Life Technologies). Quantitative PCR reactions were prepared with a 2x master mix according to the manufacturer\u2019s instructions (KAPA SYBR FAST qPCR Kit). Reactions were performed on a LightCycler thermal cycler (Roche). Primers used were against HSPA5 (forward, TGTGCAGCAGGACATCAAGT: reverse, AGTTCCAGCGTCTTTGGTTG) and HSP90B1 (forward, GGCCAGTTTGGTGTCGGTTT; reverse, CGTTCCCCGTCCTAGAGTGTT).\n\n### Immunofluorescence\n\nFluorescence confocal imaging was carried out as described in Gallagher and Walter (2016). 293 TREx, U2OS, HepG2, and HeLa cells were plated in 8-well ibiTreat \u03bcSlide (ibidi 80826) at 20\u201325,000 cells/well. In 3xFLAG-ATF6\u03b1 imaging experiments (Figure 2A\u2013C, Figure 2\u2014figure supplements 2\u20133, Figure 4A\u2013C, Figure 5A\u2013D, Figure 5\u2014figure supplement 2), 3xFLAG-ATF6\u03b1 HEK293 CRISPRi cells were plated and induced with 50 nM doxycycline on the same day. On the following day, cells were treated with DMSO or 6 \u03bcM Ceapin for 30 min and then fixed with cold methanol or 4% PFA. For cold methanol fixation, media was removed, cold ethanol was added for 3 min at \u221220 \u00b0C, washed, and permeabilized with PHEM (60 mM PIPES, 25 mM HEPES, 10 mM EGTA, 2 mM MgCl2, pH 6.9) with 0.1% Triton X-100, and washed twice with PHEM. For PFA fixation, media was removed from slides, 4% PFA (EMS) was added for 10 min at room temperature, washed, permeabilized as above, and washed with PHEM. Slides were then treated with blocking buffer (5% goat serum (Jackson ImmunoResearch) in PHEM) for 1 hr at room temperature. Antibodies were diluted in blocking buffer and incubated with cells at 4\u00b0C overnight. After three washes with PHEM, cells were incubated with secondary antibodies conjugated to Alexa 488, Alexa 568, and/or Alexa 633 (Invitrogen) for 1 hr at room temperature. Slides were imaged on a spinning disk confocal with Yokogawa CSUX A1 scan head, Andor iXon EMCCD camera and 100x ApoTIRF objective NA 1.49 (Nikon). Linear adjustments were made using ImageJ. Quantification of correlation between ATF6\u03b1 with ABCD3,\u00a0Thiolase,\u00a0and/or PEX14 was calculated using CellProfiler 2.1.1. ABCD3,\u00a0Thiolase, or PEX14 images were used to identify objects, a background threshold for ATF6\u03b1 images was set to 1.2, and clumped objects were separated based on intensity. The resulting ABCD3,\u00a0Thiolase, or PEX14 outlines were used as masks to count the ATF6\u03b1 intensity within ABCD3,\u00a0Thiolase, or PEX14. Data from CellProfiler was imported into GraphPad Prism version 6.0 for statistical analysis and plotting.\n\n### Nuclear translocation assay\n\n3xFLAG-ATF6\u03b1 HEK293 CRISPRi cells with ABCD3 KD and ABCD3 KD complemented with full length GFP-ABCD3 construct were plated in ibidi 96-well ibiTreat \u03bc-plate (ibidi 89626) and induced with 50 nM doxycycline on the same day. On the following day, cells were treated with DMSO or 100 nM Tg for 2 hr and then fixed with 4% PFA as described above. The plates were then treated with blocking buffer (5% goat serum (Jackson ImmunoResearch) in PHEM) for 1 hr at room temperature. Primary antibodies, mouse anti-FLAG M2 (Sigma F1804) and rat anti-GRP94 9G10 (abcam ab2791), were diluted in blocking buffer and incubated with cells at 4\u00b0C overnight. After three washes with PHEM, cells were incubated with secondary antibodies conjugated to Alexa 568 and Alexa 633 (Invitrogen) and nuclear stain (DAPI, Molecular Probes D-1306, 5 \u03bcg/mL) for 1 hr at room temperature. Quantification ATF6\u03b1 signal in ER and nucleus was calculated using CellProfiler 2.1.1 as described in\u00a0Gallagher and Walter (2016). DAPI images were used to identify primary objects and clumped objects were distinguished based on fluorescence intensity. The GRP94 images were then used to generate secondary objects from primary objects using global Otsu two-class thresholding with weighted variance. The final ER mask was generated by subtracting the nuclear area from the ER area. Lastly, the FLAG-ATF6\u03b1 images were used to calculate FLAG-ATF6\u03b1 intensity in the nucleus and ER and determine the nucleus to ER ratio of each cell. Data from CellProfiler was exported as a MATLAB file for analysis and plotted on GraphPad Prism version 6.0.\n\n### Immunoprecipitation and immunoblot analysis\n\nCells were grown in 100 mm plates with two replicates for each treatment condition, treated with 50 nM doxycycline the following day, treated with 100 nM Tg and 6 \u03bcM Ceapin-A5 or 6 \u03bcM Ceapin-A7 for 30 min on the day of harvest, and harvested in scrapping buffer (cold PBS with 10 \u03bcM MG132 and 1X protease inhibitor). Ceapin A-7, inactive analog Ceapin A-5, or DMSO were kept in scrapping and lysis buffers throughout IP. Cells were lysed for 1 hr at 4\u00b0C in lysis buffer (50 mM Tris pH 7.4, 150 mM NaCl, 5 mM EDTA, 1X protease inhibitor, and 1% LMNG (Anatrace NG322)). The lysates were cleared by centrifugation at 17,000 x g for 30 min. Dynabeads Protein-G (ThermoFisher) were bound with Sigma FLAG M2 antibody for 1 hr at 4\u00b0C and crosslinked with 100 \u03bcM BS3 crosslinker for 30 min. 293 TREx 3XFLAG cell lysates were then incubated with these FLAG beads for 2 hr at 4\u00b0C. IP beads were washed with wash buffer (lysis buffer without LMNG) and boiled and eluted in buffer containing 50 mM Tris pH 6.8, 300 mM NaCl, 2% SDS, and 10 mM EDTA. Protein samples were then precipitated, trypsin digested, labeled with tandem mass tags (TMT), and analyzed by liquid chromatography-mass spectrometry using Multidimensional Protein Identification Technology (MuDPIT), as described previously (Mortenson et al., 2018; Plate et al., 2018). TMT intensities for proteins detected in each channel were normalized to the respective TMT intensity of ATF6\u03b1. TMT ratios for individual proteins were then calculated between Tg+Ceapin-A7/DMSO treatment or Tg+Ceapin-A5/DMSO treatment.\n\nThe reciprocal affinity purification with full-length GFP-ABCD3 or GFP-ABCD3\u0394NBD cells was carried out by culturing, treating, and lysing cells as described above. 293 TREx 3XFLAG GFP-ABCD3 clarified cell lysate was then incubated with GFP-Trap_MA ChromoTek beads for 2 hr at 4\u00b0C. IP beads were washed with wash buffer (lysis buffer without LMNG) and boiled in SDS sample buffer for 10 min.\n\nCells for in vitro incubation were lysed with lysis buffer containing LMNG (described above) and cleared by centrifugation at 17,000 x g for 30 min in the absence of any drug. Cleared supernatant was then incubated with Ceapin A-7 or inactive analog Ceapin A-5 for 30 min at room temperature, bound to GFP-Trap_MA ChromoTek beads for 1 hr at 4\u00b0C, washed with wash buffer containing Ceapin A-7 or Ceapin A-5, and eluted by boiling in SDS sample buffer.\n\nFor in vitro binding studies with purified components, 6.25 nM 3XFLAG-ATF6\u03b1 (2-90)-TEV-MBP- HIS6X and 100 nM ABCD3-eGFP- HIS8X were incubated in lysis buffer (50 mM Tris pH 7.4, 150 mM NaCl, 5 mM EDTA, 1X protease inhibitor, 0.001% LMNG) with 15\u201390 \u03bcM Ceapin-A7 or inactive Ceapin-A5 for 30 min at room temperature. Samples were then incubated with MBP-Trap_A ChromoTek beads for 1 hr at 4\u00b0C, washed with same buffer containing Ceapin A-7 or A-5 and 300 mM NaCl, and eluted by boiling in SDS sample buffer.\n\nSamples were run on a precast 4\u201312% Bis-Tris polyacrylamide gel (Life Technologies) under denaturing conditions and transferred to nitrocellulose membrane. Antibodies described above for FLAG, GFP, and Pmp70 (SAB4200181) were used to detect proteins and blots were imaged for chemiluminescence detection using a ChemiDocTM XRS\u00a0+\u00a0Imaging System (Bio-Rad) (Figure 6B and D\u2013E) or LICOR system (Figure 6C).\n\n### Generation of recombinant proteins\n\nHuman ATF6\u03b1(2-90) with an N-terminal 3XFLAG was cloned into pET16b-TEV-MBP-HIS6X (Novagen) using Gibson assembly. The construct was expressed in in BL21-Gold(DE3) E. coli cells, grown to 0.6\u20130.8 OD 600, and induced overnight at 16\u00b0C with 0.25 mM IPTG (Gold Biotechnology). The cells were harvested and resuspended in buffer containing 50 mM HEPES pH 7, 150 mM NaCl, 10% glycerol, 2 mM TCEP, and complete EDTA-free protease inhibitor cocktail (Roche). After lysis by sonication, the lysate was clarified at 30,000 x g for 30 min at 4\u00b0C. The clarified lysate was loaded onto a HisTrap HP 5 ml column, washed in binding buffer (50 mM HEPES, pH 7, 300 mM NaCl, 1 mM TCEP, 10% glycerol, and 25 mM imidazole), and eluted with a linear gradient of 25 mM to 1M imidazole in the same buffer. The ATF6\u03b1 fractions eluted at 240 mM imidazole were collected and concentrated with an Amicon Ultra-15 concentrator (EMD Millipore) with a 30,000-dalton molecular weight cutoff. The ATF6\u03b1 concentrated fraction was loaded onto a Mono Q HR16/10 column (GE Healthcare), washed in Buffer A (50 mM HEPES, pH 7.5, 100 mM NaCl, 10% glycerol, and 1 mM DTT) and eluted with a linear gradient of 100 mM to 1M NaCl in the same buffer. Fractions were collected, concentrated as above, and loaded onto a Superdex 200 10/300 GL column (GE Healthcare) equilibrated with buffer containing 30 mM HEPES, pH 7.5, 300 mM NaCl, 5% glycerol, and 1 mM DTT.\n\nExpression and purification of human ABCD3: Full-length human ABCD3 isoform I was synthesized and cloned into modified pFastBac1 plasmid with a C-terminal -eGFP \u22128XHis-tag for baculoviral expression in Spodoptera frugiperda SF9 cells. Bacmid DNA was produced by transforming the recombinant pFastBac1 plasmid into E. coli DH10Bac strain. To express the protein, SF9 cells were infected with the bacmid made from recombinant pFastBac1 plasmid at multiplicity of infection (MOI)\u00a0=\u00a02 for 48 hr at 27\u00b0C. The cells were harvested and resuspended in lysis buffer (50 mM Tris Cl, pH 7.5, 100 mM NaCl, 100 mM MgCl2, 10% glycerol) containing complete EDTA-free protease inhibitor cocktail (Roche), and lysed by sonication. The lysate was centrifuged at 186,010 x g for 2 hr to extract the membrane fraction. 3 g of the membrane was solubilized in 30 ml of lysis buffer containing 1% w/v lauryl maltose neopentyl glycol (LMNG) (Anatrace): 0.1% w/v cholesteryl hemisuccinate (CHS) (Anatrace) overnight. Solubilized membrane was clarified by centrifugation at 104,630 x g for 30 min with 5 mM imidazole added. A HiTrap TALON crude 1 ml column (GE Healthcare) was equilibrated with the lysis buffer containing 5 mM imidazole and solubilized membrane loaded onto the column. After binding the column was washed with 15 ml of 10 mM imidazole, 0.02% glyco-diosgenin (GDN) (Anatrace) in lysis buffer. The protein was eluted from the column with 10 ml of 150 mM imidazole, 0.02% GDN containing lysis buffer. The protein obtained was concentrated using Amicon Ultra-15 centrifugal filter units (MilliporeSigma) and size exclusion chromatography was done to further purify the protein in SEC buffer (20 mM HEPES, pH 7.5, 100 mM NaCl, 2 mM MgCl2, 2% glycerol and 0.02% GDN).\n",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "aa9233f4-5414-4a5d-b034-b5543509c2ab",
+      "submission_id": "48490631-d402-422f-ab06-4ab16b27c3a5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Elizabeth A Miller, MRC Laboratory of Molecular Biology United Kingdom\n\nReviewers:\n- Elizabeth A Miller, MRC Laboratory of Molecular Biology United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.46595.021](https://doi.org/10.7554/eLife.46595.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Ceapins block the unfolded protein response sensor ATF6\u03b1 by inducing a neomorphic inter-organelle tether\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Elizabeth A Miller as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Vivek Malhotra as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript from the Walter and Weissman labs aims to understand the mechanism of action of a UPR modulator, Ceapin, which acts on ATF6 to prevent its transport to the Golgi and subsequent activation. Using genome-wide KO approaches, the authors identify components that abrogate Ceapin-mediated UPR inhibition, identifying the peroxisomal ABC transporter, ABCD3, as a primary target. Through a subsequent set of thorough experiments, the authors establish that Ceapin triggers an interaction between ATF6 and ABCD3, which tethers peroxisomes to the ER and precludes traffic of AFT6 to the Golgi, presumably by steric effects. The conclusions are well-supported and uncover a novel mechanism of action for a UPR modulator, as well as suggest a new anchor-away method that will be of interest to the broader research community.\n\nEssential revisions:\n\nReviewers had significant enthusiasm for the study, and overall the experiments were convincing and the conclusions largely well-supported. There are several important points raised by reviewers that don't change the conclusions of the paper, but that we agree are important to address before publication. Of particular importance is the question of the foci that ATF6 becomes anchored to upon Ceapin treatment \u2013 given that some peroxisomal membrane proteins are first inserted into the ER, it seems a formal possibility that the foci are pre-peroxisomal vesicles rather than peroxisomes. Although this doesn't change the conclusion of how Ceapin impacts ATF6 ER retention, it does affect the specific model invoked and thus is an important question. Related questions about stoichiometry and ATF6 activation are also important and speak to the model.\n\nThus essential revisions include: (i) address the potential question of whether ABCD3 recruits ATF6 to a bona fide peroxisome, or whether an ER subdomain or pre-peroxisomal vesicle might be the anchor; (ii) address the related question of stoichiometry to determine whether sufficient ABCD3 is expressed to quantitatively retain ATF6; (iii) check activation of ATF6 directly by immunoblot rather than reporter assay; (iv) address the questions about other candidates that were not explored further.\n\nReviewer #1:\n\nMy only major point would be that the authors don't formally demonstrate that Golgi localization and/or processing of ATF6 is restored in the ABCD3 KO + stress + Ceapin condition. It seems to be assumed that traffic and processing is restored, but this is not shown.\n\nReviewer #2:\n\nThis is a very interesting piece of work. The data presented are comprehensive and greatly improve our understanding of how Ceapins specifically inhibit ATF6\u03b1. The manuscript is well-written, clear, and easy to understand. I recommend publication of this manuscript in eLife after considering one major point that could have a major impact on the validity of the exciting model for Ceapin action that the authors propose (induction of a neomorphic inter-organelle tether).\n\nSpecifically, from my understanding of the literature there is a difference of opinion regarding how peroxisomal membrane proteins (PMPs such as PMP70, also known as ABCD3) end up in the peroxisome: (1) PMPs are synthesized in the cytosol and recruited into peroxisomes or (2) PMPs are first inserted into the ER membrane and then the PMP-containing pre-peroxisomal vesicle is pinched off from ER membrane. The issue of alternative models for peroxisome biogenesis is discussed in detail in Smith et al., 2013.\n\nThe authors make great use of the first option to propose a model for Ceapin-induced ATF6\u03b1 inhibition (Figure 7). However, my understanding is that it is debatable whether ABCD3 is inserted directly into the peroxisomal membrane from the cytosol (as mentioned in subsection \u201cABCD3 is required for Ceapin-induced ATF6\u03b1 foci\u201d of this manuscript). Therefore, I am currently not convinced by the reasoning of the authors in subsection \u201cABCD3 is required for Ceapin-induced ATF6\u03b1 foci\u201d, and thus am not convinced by the proposed model in Figure 7 or, for that matter, that the manuscript title is appropriate. In fact, if I give credence to the model that PMPs are first inserted into ER membrane and then the PMP-containing pre-peroxisomal vesicles are pinched off from ER membrane, I could propose another model for Ceapin action that I believe is fully consistent with all the data provided in this manuscript (including work on the cytosolic domain of ATF6\u03b1). That is, Ceapin initiates the recruitment of ATF6\u03b1 to the ER-derived pre-peroxisomal vesicle through ABCD3.\n\nCitations that motivate my suggestion of the alternative model for Ceapin function are the following: Although commonly used as a reliable marker for peroxisomes, there appears to be evidence that PMP70 (or ABCD3) also presents in specialized subdomains of the ER that are continuous with a peroxisomal reticulum from which mature peroxisomes arose (Geuze et al., 2003; Smith et al., 2013. Similarly, PEX14 (found to be colocalized with ATF6\u03b1 in the presence of Ceapin) is also found in these pre-peroxisomal vesicles (Joshi et al., 2016; Joshi et al., 2018). If my interpretation of the literature is right, it could provide an alternative explanation for how Ceapin induces the formation of ATF6\u03b1 foci. In addition, if ATF6\u03b1 could partially be translocated to the peroxisomal vesicle, it would explain the reduced activity of ATF6\u03b1 in the presence of Ceapin.\n\nI believe that microscopy methods such as conventional immunofluorescent imaging (probing for ER-resident proteins, ATF6s, and ABCD3 or PEX14 (or PEX19?) or immunolabelled electron microscopy could answer whether or not the proposed model in Figure 7 is valid or whether the alternative explanation mentioned above could be relevant. If the alternative model cannot be falsified, at a minimum the title and abstract of the paper should change to account for this fact and the Discussion section should address these issues.\n\nReviewer #3:\n\n1) According to the presented data, ATF6\u03b1 is fixed to the ER membrane due to the interaction with ABCD3 mediated by Ceapin-A7. There is no description about the molecular number of these proteins in the cell. Is ABCD3 quantitatively expressed enough numbers more than ATF6\u03b1 in the cell? I am very concerned with the stoichiometry of these molecules. In IF studies (ex. Figure 2D), green colored ATF6\u03b1 looks more expressed than ABCD3.\n\n2) Although the authors obtained 20 candidates, they focused on ABCD3 and PEX19 without further explanation. There is no description about the other 18 molecules. If possible, the authors list up them or should describe why the authors abort the further analysis. Are there all false-positive?\n\n3) Figure 1D-G, Figure 2\u2014figure supplement 1A, B: ATF6\u03b1 activation process was mostly checked by reporter assay or IF, but the authors should also present IB data about the important experiments.\n\n4) In most of the IF data, the merge of each foci was judged by color alteration. In some figures, it is quite hard to detect the coincidence (Ex. Figure 5 ABCD3 mutants). In such a case, the authors should need more explanation in the legend. In Figure 2D, there is no description about arrowheads. In Figure 2\u2014figure supplement 1B, the authors forgot the description (compared with Figure 1E-G).\n\n5) The authors should describe the efficiency of KD. If possible, KD experiments should be confirmed by the recovery of original phenotype by the expression of target gene.\n",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f9fac6e0-831a-4b1e-880d-fc0454e4be92",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C1",
+      "claim": "The unfolded protein response (UPR) detects and restores deficits in the endoplasmic reticulum (ER) protein folding capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "The unfolded protein response (UPR) detects and restores deficits in the endoplasmic reticulum (ER) protein folding capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established concept in cell biology supported by extensive literature, as indicated by the citation to Walter and Ron, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "e369b8c2-aa8e-433e-b8e6-40dc58b65bad",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C2",
+      "claim": "Ceapins specifically inhibit the UPR sensor ATF6\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Ceapins specifically inhibit the UPR sensor ATF6\u03b1, an ER-tethered transcription factor, by retaining it at the ER through an unknown mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to prior work (Gallagher et al., 2016) and is a central finding of the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "13c4829f-5dd4-4ab6-a45f-51cc10316571",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C3",
+      "claim": "Ceapins retain ATF6\u03b1 at the ER through an unknown mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Ceapins specifically inhibit the UPR sensor ATF6\u03b1, an ER-tethered transcription factor, by retaining it at the ER through an unknown mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as the motivation for the study, indicating prior knowledge gap.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "e6454666-fd62-4918-a450-a47fa03b5084",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C4",
+      "claim": "A genome-wide CRISPR interference (CRISPRi) screen reveals that Ceapins function is completely dependent on the ABCD3 peroxisomal transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Our genome-wide CRISPR interference (CRISPRi) screen reveals that Ceapins function is completely dependent on the ABCD3 peroxisomal transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript supported by the CRISPRi screen data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "66a0099c-e6ad-4ebb-8322-f9536029274f",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C5",
+      "claim": "ABCD3 physically associates with ER-resident ATF6\u03b1 in cells in a Ceapin-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomics studies establish that ABCD3 physically associates with ER-resident ATF6\u03b1 in cells and in vitro in a Ceapin-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by proteomics data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "fbdd5926-0f1f-450d-91a8-e9e4977e654e",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C6",
+      "claim": "ABCD3 physically associates with ER-resident ATF6\u03b1 in vitro in a Ceapin-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomics studies establish that ABCD3 physically associates with ER-resident ATF6\u03b1 in cells and in vitro in a Ceapin-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro binding assays shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "9fa56e6d-f44a-47dd-9d8d-faf9c310fbc7",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C7",
+      "claim": "Ceapins induce the neomorphic association of ER and peroxisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Ceapins induce the neomorphic association of ER and peroxisomes by directly tethering the cytosolic domain of ATF6\u03b1 to ABCD3's transmembrane regions without inhibiting or depending on ABCD3 transporter activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 2 and biochemical data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "ef9d1cfc-a02d-4508-801d-ee037637b027",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C8",
+      "claim": "Ceapins directly tether the cytosolic domain of ATF6\u03b1 to ABCD3's transmembrane regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Ceapins induce the neomorphic association of ER and peroxisomes by directly tethering the cytosolic domain of ATF6\u03b1 to ABCD3's transmembrane regions without inhibiting or depending on ABCD3 transporter activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by truncation studies in Figure 5 showing that the cytosolic domain of ATF6\u03b1 (amino acids 2-90) is sufficient for Ceapin-induced interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "c18046c6-231f-4990-96ec-c177b4437b06",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C9",
+      "claim": "Ceapins do not inhibit ABCD3 transporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Ceapins induce the neomorphic association of ER and peroxisomes by directly tethering the cytosolic domain of ATF6\u03b1 to ABCD3's transmembrane regions without inhibiting or depending on ABCD3 transporter activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bile acid assay data in Figure 3 showing that Ceapin treatment does not affect bile acid levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "b8d12202-edc6-4827-82c4-63ca3c5e4789",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C10",
+      "claim": "Ceapins function does not depend on ABCD3 transporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Ceapins induce the neomorphic association of ER and peroxisomes by directly tethering the cytosolic domain of ATF6\u03b1 to ABCD3's transmembrane regions without inhibiting or depending on ABCD3 transporter activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 5C-D showing that ABCD3 catalytic mutants still mediate Ceapin-induced ATF6\u03b1 foci formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "2e30af9d-6966-4d83-b14f-e953e6582cce",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C11",
+      "claim": "ATF6\u03b1 is an ER-tethered transcription factor that is cytoprotective and necessary for cell survival when cells experience ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the ER-resident UPR sensors, ATF6\u03b1, is an ER-tethered transcription factor that is cytoprotective and necessary for cell survival when cells experience ER stress (Wu et al., 2007; Yamamoto et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wu et al., 2007 and Yamamoto et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "25ee8eef-685c-40dd-aff4-62599e1a872b",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C12",
+      "claim": "Under stress conditions, ATF6\u03b1 traffics to the Golgi apparatus where it undergoes intramembrane proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Under stress conditions, ATF6\u03b1 traffics to the Golgi apparatus, where it undergoes intramembrane proteolysis, releasing a bZIP transcription factor domain that moves to the nucleus and activates transcription (Haze et al., 1999; Yoshida et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Haze et al., 1999 and Yoshida et al., 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "fee88b47-53f0-4b41-9572-37d61f2f274a",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C13",
+      "claim": "ATF6\u03b1 intramembrane proteolysis releases a bZIP transcription factor domain that moves to the nucleus and activates transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Under stress conditions, ATF6\u03b1 traffics to the Golgi apparatus, where it undergoes intramembrane proteolysis, releasing a bZIP transcription factor domain that moves to the nucleus and activates transcription (Haze et al., 1999; Yoshida et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Haze et al., 1999 and Yoshida et al., 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "7aa5206c-9487-4749-8f59-4cd041a32ceb",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C14",
+      "claim": "ATF6\u03b1 activation requires the Golgi-resident proteases S1P and S2P.",
+      "claim_type": "EXPLICIT",
+      "source": "The events leading to ATF6\u03b1 activation and trafficking remain poorly understood, but require the Golgi-resident proteases S1P and S2P and general components involved in COPII trafficking (Nadanaka et al., 2004; Okada et al., 2003; Schindler and Schekman, 2009; Ye et al., 2000) that are not specific to ATF6\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations (Nadanaka et al., 2004; Okada et al., 2003; Schindler and Schekman, 2009; Ye et al., 2000).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "369faa0b-07d6-408e-b2a1-38a0f2af3092",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C15",
+      "claim": "ATF6\u03b1 activation requires general components involved in COPII trafficking that are not specific to ATF6\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The events leading to ATF6\u03b1 activation and trafficking remain poorly understood, but require the Golgi-resident proteases S1P and S2P and general components involved in COPII trafficking (Nadanaka et al., 2004; Okada et al., 2003; Schindler and Schekman, 2009; Ye et al., 2000) that are not specific to ATF6\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations (Nadanaka et al., 2004; Okada et al., 2003; Schindler and Schekman, 2009; Ye et al., 2000).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "289d3c97-39a7-46ef-a880-8559f8e907df",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C16",
+      "claim": "Ceapins act on the most upstream step of ATF6\u03b1 activation by retaining ATF6\u03b1 at the ER and excluding it from ER exit sites during ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Ceapins act on the most upstream step of ATF6\u03b1 activation by retaining ATF6\u03b1 at the ER and excluding it from ER exit sites during ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to prior work (Gallagher et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "baa768d9-416b-48cc-b13b-9294bb55b4fc",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C17",
+      "claim": "When the Golgi apparatus is collapsed into the ER, ATF6\u03b1 is still cleavable by S1P and S2P in the presence of Ceapin.",
+      "claim_type": "EXPLICIT",
+      "source": "When this trafficking requirement is removed by collapsing the Golgi apparatus into the ER, making ATF6\u03b1 accessible to S1P and S2P, ATF6\u03b1 is still cleavable by the proteases in the presence of Ceapin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to prior work (Gallagher et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "5f545f67-4bb4-4708-9a08-c31a928c31db",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C18",
+      "claim": "Upon Ceapin treatment, ATF6\u03b1 rapidly and reversibly forms foci without requiring new protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon Ceapin treatment, ATF6\u03b1 rapidly and reversibly forms foci without requiring new protein synthesis (Gallagher et al., 2016; Gallagher and Walter, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gallagher et al., 2016 and Gallagher and Walter, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "5f6683b7-6da6-4dba-a826-e60bd767eaf6",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C19",
+      "claim": "Treatment with tunicamycin activates ATF6\u03b1 signaling leading to a two-fold reporter induction that was completely dependent on ATF6\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with tunicamycin (Tm), which blocks N-linked glycosylation, activates ATF6\u03b1 signaling leading to a two-fold reporter induction that was completely dependent on ATF6\u03b1 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "0dc62901-6595-48e2-b627-51a485e3b16a",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C20",
+      "claim": "Tunicamycin blocks N-linked glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with tunicamycin (Tm), which blocks N-linked glycosylation, activates ATF6\u03b1 signaling leading to a two-fold reporter induction that was completely dependent on ATF6\u03b1 (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about tunicamycin's mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "931d0052-c218-491d-88eb-e2cc23a8b6ad",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C21",
+      "claim": "Knocking down MBTPS2 (encoding S2P) inhibited induction of the ATF6\u03b1 reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control, knocking down MBTPS2, one of the Golgi proteases that processes ATF6\u03b1, also inhibited induction of the reporter (Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "46ae7e02-8c5b-42a8-9fbd-c99e560f653a",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C22",
+      "claim": "MBTPS2 encodes S2P, one of the Golgi proteases that processes ATF6\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control, knocking down MBTPS2, one of the Golgi proteases that processes ATF6\u03b1, also inhibited induction of the reporter (Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MBTPS2/S2P function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "d460cc2c-0a4e-47e0-abe0-a8ff5936f466",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C23",
+      "claim": "Knocking down HSPA5 induced ER stress and the ATF6\u03b1 reporter constitutively.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas knocking down HSPA5, encoding the major Hsp70-type ER chaperone BiP (Binding Protein), induced ER stress and the reporter constitutively (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "bc08f596-85b5-4473-afa3-7bc210f76d2d",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C24",
+      "claim": "HSPA5 encodes the major Hsp70-type ER chaperone BiP (Binding Protein).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas knocking down HSPA5, encoding the major Hsp70-type ER chaperone BiP (Binding Protein), induced ER stress and the reporter constitutively (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HSPA5/BiP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "c6a90180-f299-4940-9296-62d995cb62cc",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C25",
+      "claim": "ABCD3 encodes a peroxisomal ABC transporter involved in long-chain fatty acid import into peroxisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "ABCD3, which encodes a peroxisomal ABC transporter involved in long-chain fatty acid import into peroxisomes, desensitized cells to Ceapin treatment (Figure 1C, Figure 1\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ABCD3 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "3e15b47f-5637-467d-a301-7d8708021a2b",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C26",
+      "claim": "ABCD3 knockdown desensitized cells to Ceapin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "ABCD3, which encodes a peroxisomal ABC transporter involved in long-chain fatty acid import into peroxisomes, desensitized cells to Ceapin treatment (Figure 1C, Figure 1\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1C and Figure 1\u2014figure supplement 1C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "5c53816d-430c-40da-bd2f-cc68bf8009cb",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C27",
+      "claim": "PEX19 is necessary for chaperoning and targeting ABCD3 to the peroxisome.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, PEX19, which is necessary for chaperoning and targeting ABCD3 to the peroxisome, also desensitized cells to Ceapin treatment (Figure 1C, Figure 1\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PEX19 function supported by citations elsewhere in the manuscript (Kashiwayama et al., 2007; Kashiwayama et al., 2005; Sacksteder et al., 2000).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "4d28327b-2ff1-4834-8229-56223169ee83",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C28",
+      "claim": "PEX19 knockdown desensitized cells to Ceapin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, PEX19, which is necessary for chaperoning and targeting ABCD3 to the peroxisome, also desensitized cells to Ceapin treatment (Figure 1C, Figure 1\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1C and Figure 1\u2014figure supplement 1C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "9f53346f-6b40-425c-b993-d760286c6e00",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C29",
+      "claim": "ABCD3 or PEX19 knockdown cells do not cause constitutive nuclear translocation nor activate ATF6\u03b1 in the absence of ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ER stress, ABCD3 or PEX19 KD cells also do not cause constitutive nuclear translocation nor activate ATF6\u03b1 (Figure 1E\u2013G, Figure 1\u2014figure supplement 2, Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1E\u2013G, Figure 1\u2014figure supplement 2, and Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "8a39b246-1398-455c-a307-4ba990f8cbe2",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C30",
+      "claim": "In the presence of ER stress, ABCD3 or PEX19 knockdown alone did not impede ATF6\u03b1 nuclear translocation nor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the presence of ER stress, ABCD3 or PEX19 KD alone did not impede ATF6\u03b1 nuclear translocation nor activation (Figure 1E\u2013G, Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1E\u2013G and Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "f6e4686b-c751-4f43-91ad-def66b940ece",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C31",
+      "claim": "Neither ABCD3 nor PEX19 have direct roles in ATF6\u03b1 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that neither ABCD3 nor PEX19 have direct roles in ATF6\u03b1 signaling, posing the question of how Ceapins functionally connect proteins that reside in separate organelles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that ABCD3/PEX19 knockdown does not affect ATF6\u03b1 signaling in the absence of Ceapin.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "f52f0c35-80d6-49bb-b72f-acf4dd8e44ad",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C32",
+      "claim": "Ceapin treatment induces rapid and reversible formation of ATF6\u03b1 foci that are retained in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Ceapin treatment induces rapid and reversible formation of ATF6\u03b1 foci that are retained in the ER (Figure 2A) (Gallagher et al., 2016; Gallagher and Walter, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "d1fe5825-a836-4c62-af27-4a9bdface5db",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C33",
+      "claim": "In Ceapin-treated cells, ATF6\u03b1 colocalized with ABCD3.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in Ceapin-treated cells, ATF6\u03b1 colocalized with ABCD3 as visualized by immunofluorescence (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "86dce806-0a4a-46dc-bae8-e8d36a00a7ac",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C34",
+      "claim": "Newly synthesized ABCD3 is inserted directly into the peroxisomal membrane using PEX19 as import receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was surprising because newly synthesized ABCD3 is inserted directly into the peroxisomal membrane using PEX19 as import receptor (Imanaka et al., 1996; Biermanns and G\u00e4rtner, 2001; Kashiwayama et al., 2007; Kashiwayama et al., 2005; Sacksteder et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "0aecde07-9135-42a1-bf91-29b6edddbcc3",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C35",
+      "claim": "ABCD3 is not co-translationally translocated into the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "ABCD3 is not co-translationally translocated into the ER, indicating there is not a pool of ABCD3 in the ER (Figure 2\u2014figure supplement 1) (Jan et al., 2014)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data from Jan et al., 2014 shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "518838d3-07a1-4a51-a16b-e582d2a67ece",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C36",
+      "claim": "ABCD3 is commonly used as a reliable marker for peroxisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "indeed, it is commonly used as a reliable marker for peroxisomes (Uhl\u00e9n et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Uhl\u00e9n et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "f354019e-637a-4c59-b1cb-75c67b6a12ee",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C37",
+      "claim": "In the presence of Ceapin, ATF6\u03b1 colocalized with peroxisomal markers PEX14 and Thiolase.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the presence of Ceapin, we observed ATF6\u03b1 and PEX14 and Thiolase colocalization (Figure 2A,C Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2A, C and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "0d38c1e6-4cfc-4f66-a277-6eec5ddb78df",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C38",
+      "claim": "In ABCD3 knockdown cells treated with Ceapin, ATF6\u03b1 no longer formed foci or colocalized with peroxisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in ABCD3 KD cells treated with Ceapin, ATF6\u03b1 no longer formed foci or colocalized with peroxisomes (Figure 2A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2A, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "2d65922a-7c2b-4ede-84f5-c50d91b69ff1",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C39",
+      "claim": "In PEX19 knockdown cells, where peroxisome biogenesis is affected and ABCD3 is no longer chaperoned and targeted to the peroxisome, ATF6\u03b1 no longer formed foci in the presence of Ceapin.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was consistent in PEX19 KD cells, where peroxisome biogenesis is affected and ABCD3 is no longer chaperoned and targeted to the peroxisome (Kashiwayama et al., 2007; Kashiwayama et al., 2005; Sacksteder et al., 2000), ATF6\u03b1 no longer formed foci in the presence of Ceapin (Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2\u2014figure supplement 3C and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "3433b7f2-43f3-497e-ba76-dc419bdfdce4",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C40",
+      "claim": "Peroxisomes interact with Ceapin-induced ATF6\u03b1 foci in an ABCD3-dependent fashion to sequester ATF6\u03b1 at the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, peroxisomes interact with Ceapin-induced ATF6\u03b1 foci in an ABCD3-dependent fashion to sequester ATF6\u03b1 at the ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the colocalization data and the requirement for ABCD3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "f4af2214-fcd9-4430-a994-95521448360a",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C41",
+      "claim": "After prolonged ER stress, ATF6\u03b1 attenuates and forms foci that are reminiscent of Ceapin induced foci.",
+      "claim_type": "EXPLICIT",
+      "source": "After prolonged ER stress, ATF6\u03b1 attenuates and forms foci that are reminiscent of Ceapin induced foci (Gallagher and Walter, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Gallagher and Walter, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "a2d8e506-36ae-4517-b818-f3b0471e91bd",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C42",
+      "claim": "Stress attenuated ATF6\u03b1 foci did not colocalize with ABCD3 or PEX14.",
+      "claim_type": "EXPLICIT",
+      "source": "In stress induced cells, attenuated ATF6\u03b1 foci did not colocalize with ABCD3 or PEX14 by immunofluorescence (Figure 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "4f03dc28-df6d-4ec7-90b9-f95c199dda03",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C43",
+      "claim": "Ceapin does not act on the ATF6\u03b1 pathway by stabilizing the attenuated ATF6\u03b1 state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Ceapin does not act on the ATF6\u03b1 pathway by stabilizing the attenuated ATF6\u03b1 state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that stress-attenuated foci do not colocalize with ABCD3/PEX14 while Ceapin-induced foci do.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "db464708-71ba-4248-ab3f-658de34337af",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C44",
+      "claim": "The stress attenuated foci and Ceapin induced foci are distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "The stress attenuated foci and Ceapin induced foci are distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential colocalization patterns with peroxisomal markers.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "36d9b780-b689-4410-a97b-a4d22b7ba53e",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C45",
+      "claim": "ABCD3 knockout mice display defects in bile acid biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "ABCD3 knockout mice and hepatocytes display defects in bile acid biosynthesis (Ferdinandusse et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ferdinandusse et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "e0fa9ada-061d-476a-a517-eb7ea64bc127",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C46",
+      "claim": "In ABCD3 knockdown cells, bile acid levels were decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, in ABCD3 KD cells, bile acid levels were decreased (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bile acid assay data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "a2e5bab7-e547-48e9-889d-9535ed188593",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C47",
+      "claim": "In control cells treated at the EC50 and ten-times the EC50 of Ceapin, bile acid levels were similar to cells treated with vehicle only.",
+      "claim_type": "EXPLICIT",
+      "source": "In control cells treated at the EC50 and ten-times the EC50 of Ceapin, bile acid levels were similar to cells treated with vehicle only (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bile acid assay data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "dda323e5-b999-451e-8e50-7f95adceab38",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C48",
+      "claim": "Ceapin does not inhibit ABCD3 activity in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Ceapin does not inhibit ABCD3 activity in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the bile acid assay data showing no effect of Ceapin on bile acid levels.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "73101dc0-a8a2-47e2-976a-f49e56cad5be",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C49",
+      "claim": "The tight association between the ER and peroxisome is mediated by ER-peroxisome tethers, VAPA and VAPB on the ER and ACBD4 and ACBD5 on the peroxisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The tight association between the ER and peroxisome is mediated by ER-peroxisome tethers, VAPA and VAPB on the ER and ACBD4 and ACBD5 on the peroxisomes (Costello et al., 2017a; Costello et al., 2017b; Hua et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Costello et al., 2017a; Costello et al., 2017b; Hua et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "df146860-64da-481d-8590-aa7b72b82cbc",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C50",
+      "claim": "ACBD5 knockdown or overexpression alone decreases or increases ER-peroxisome contacts, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "While the ER components are redundant, ACBD5 KD or overexpression alone decreases or increase ER-peroxisome contacts, respectively (Costello et al., 2017a; Hua et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Costello et al., 2017a and Hua et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "c0eabd55-4d72-4463-878d-6a099899971f",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C51",
+      "claim": "In tether knockdown cells treated with Ceapin, ATF6\u03b1 foci still formed and ATF6\u03b1 colocalized with ABCD3.",
+      "claim_type": "EXPLICIT",
+      "source": "In tether KD cells treated with Ceapin, ATF6\u03b1 foci still formed and ATF6\u03b1 colocalized with ABCD3 (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 4A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "6b5e6e63-b830-4824-bba7-6b7a4a198f34",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C52",
+      "claim": "Tether knockdown cells were not resistant to Ceapin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, tether KD cells were not resistant to Ceapin treatment (Figure 4C), consistent with the results from our screen in which these components also did not score as hits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reporter assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "1c22125e-7dd3-412b-b53f-f94fb6621938",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C53",
+      "claim": "GFP-ATF6\u03b1(2-302), which was retained in the cytosol with a nuclear exit signal and was no longer associated with the ER, colocalized with ABCD3 and formed foci.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that GFP-ATF6\u03b1(2-302), which was retained in the cytosol with a nuclear exit signal and was no longer associated with the ER, colocalized with ABCD3 and formed foci (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "6bad67db-12b0-4e76-a26c-723d6ca15cb9",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C54",
+      "claim": "Only the first 89 amino acids of ATF6\u03b1 were both necessary and sufficient for Ceapin-dependent foci formation and colocalization with ABCD3 and peroxisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further truncations showed that only the first 89 amino acids of ATF6\u03b1 were both necessary and sufficient for Ceapin-dependent foci formation and colocalization with ABCD3 and peroxisomes (Figure 5A\u2013B, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5A\u2013B and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "349432ad-a75c-4afc-9dc5-4c3cfb62c581",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C55",
+      "claim": "ABCD3 ATP binding or hydrolysis was not required for Ceapin-induced foci formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our catalytic activity mutants, we found that ABCD3 ATP binding or hydrolysis was not required for Ceapin-induced foci formation (Figure 5C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "87078132-99b0-4157-95a2-2de74287bffb",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C56",
+      "claim": "GFP-ABCD3\u0394NBD cells have reduced, enlarged peroxisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, GFP-ABCD3\u0394NBD cells, with a deletion of the entire catalytic domain, have reduced, enlarged peroxisomes (Figure 5C, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5C and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "abec9610-c950-43da-8583-c6b60205f097",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C57",
+      "claim": "Although there are fewer larger peroxisomes in GFP-ABCD3\u0394NBD cells, peroxisomal ABCD3 still induced foci formation and colocalized with ATF6\u03b1 in the presence of Ceapin.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are fewer larger peroxisomes in GFP-ABCD3\u0394NBD cells, peroxisomal ABCD3 still induced foci formation and colocalized with ATF6\u03b1 in the presence of Ceapin (Figure 5C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "6261db9f-05b5-455b-8701-14ed498f9141",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C58",
+      "claim": "Ceapin-induced interactions do not require ER localized ATF6\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Ceapin-induced interactions do not require ER localized ATF6\u03b1 nor ABCD3 transporter activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the truncation and mutation studies showing that cytosolic ATF6\u03b1 and catalytically inactive ABCD3 can still mediate Ceapin-induced interactions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "3660300f-60ad-4abc-bebe-4cdecd89c914",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C59",
+      "claim": "Ceapin-induced interactions do not require ABCD3 transporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Ceapin-induced interactions do not require ER localized ATF6\u03b1 nor ABCD3 transporter activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutation studies showing that catalytically inactive ABCD3 can still mediate Ceapin-induced interactions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "1fe40380-3d77-47c1-8df3-0f465a6dfd5f",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C60",
+      "claim": "ABCD3 co-purified as the top hit with epitope-tagged ATF6\u03b1 selectively in the presence of active Ceapin-A7 but not inactive Ceapin-A5.",
+      "claim_type": "EXPLICIT",
+      "source": "We treated 3xFLAG-ATF6\u03b1 HEK293 cells with Ceapin-A7 or an inactive analog, Ceapin-A5, in the presence of stress (Tg) and found that ABCD3 co-purified as the top hit with epitope-tagged ATF6\u03b1 selectively in the presence of active Ceapin-A7 but not inactive Ceapin-A5 (Figure 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by IP-MS data shown in Figure 6A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "4cd20c53-cd0b-477b-8d14-55b2dc1138a3",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C61",
+      "claim": "The native reciprocal affinity purification with full-length GFP-ABCD3 cells confirmed that ABCD3 physically associates with ATF6\u03b1 in a Ceapin-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The native reciprocal affinity purification with full-length GFP-ABCD3 cells confirmed these results (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by IP data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "c49b52a9-ac3f-4e61-8abe-ef347e91871f",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C62",
+      "claim": "GFP-ABCD3\u0394NBD, lacking the entire nucleotide binding domain, also physically associated with ATF6\u03b1 in the presence of Ceapin.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, GFP-ABCD3\u0394NBD, lacking the entire nucleotide binding domain, also physically associated with ATF6\u03b1 in the presence of Ceapin (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by IP data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "37e327be-983d-4db5-a458-eddec25410d7",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C63",
+      "claim": "GFP-ATF6\u03b1(2-90) specifically enriched ABCD3 in the presence of active Ceapin-A7 but not inactive Ceapin-A5.",
+      "claim_type": "EXPLICIT",
+      "source": "We immunoprecipitated GFP-ATF6\u03b1(2-90) from detergent solubilized lysates and specifically enriched ABCD3 in the presence of active Ceapin-A7 but not inactive Ceapin-A5 (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by IP data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "89392419-da95-4ee6-b765-4ca49eb47e92",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C64",
+      "claim": "No other ER proteins are required for Ceapin-A7 induced ATF6\u03b1 and ABCD3 physical association.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, consistent with the above experiments where organelle tethering was not required, these results confirm that no other ER proteins are required for Ceapin-A7 induced ATF6\u03b1 and ABCD3 physical association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the IP experiment with the minimal cytosolic domain of ATF6\u03b1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "894beb54-f33e-4f40-af1e-87ba641b3b27",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C66",
+      "claim": "In the presence of Ceapin-A7, the cytosolic domain of ATF6\u03b1(2-90) and ABCD3 associated in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of Ceapin-A7, however, the cytosolic domain of ATF6\u03b1(2-90) and ABCD3 associated in solution (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro binding assay data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "13785331-41ba-4689-9ebf-2f01ac1d2a34",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C67",
+      "claim": "Ceapin is directly responsible for tethering ABCD3 to ATF6\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Ceapin is directly responsible for tethering ABCD3 to ATF6\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the in vitro binding assay showing that purified components are sufficient for Ceapin-induced association.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "1140877c-3bc7-4c95-bc83-273ef023553a",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C68",
+      "claim": "Ceapins do not affect signaling of ATF6\u03b1's close homolog ATF6\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Ceapins, named for their ability to trap ATF6\u03b1 in the ER, act with exquisite selectivity; they do not affect signaling of ATF6\u03b1's close homolog ATF6\u03b2 or SREBP (sterol response element binding protein) (Gallagher et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Gallagher et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "38f1350c-e9ab-49f2-9f7c-d76b7dd1a7b7",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C69",
+      "claim": "Ceapins do not affect signaling of SREBP (sterol response element binding protein).",
+      "claim_type": "EXPLICIT",
+      "source": "Ceapins, named for their ability to trap ATF6\u03b1 in the ER, act with exquisite selectivity; they do not affect signaling of ATF6\u03b1's close homolog ATF6\u03b2 or SREBP (sterol response element binding protein) (Gallagher et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Gallagher et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "158d4998-c891-4c94-8a1b-c9b58dc3fec3",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C70",
+      "claim": "ATF6\u03b2 and SREBP depend on broadly used vesicular trafficking ER-Golgi pathways and are activated by the same Golgi-resident proteases as ATF6\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "which depend on broadly used vesicular trafficking ER-Golgi pathways and are activated by the same Golgi-resident proteases (Nadanaka et al., 2004; Okada et al., 2003; Schindler and Schekman, 2009; Ye et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations (Nadanaka et al., 2004; Okada et al., 2003; Schindler and Schekman, 2009; Ye et al., 2000).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "fd803b4c-1186-4866-b9f3-7979ebc14037",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C71",
+      "claim": "Ceapins induce neomorphic inter-organelle junctions, forcing interactions between the cytosolic domain of ER-tethered ATF6\u03b1 and the peroxisomal transmembrane protein ABCD3 to sequester ATF6\u03b1 from its normal trafficking route.",
+      "claim_type": "EXPLICIT",
+      "source": "Ceapins induce neomorphic inter-organelle junctions, forcing interactions between the cytosolic domain of ER-tethered ATF6\u03b1 and the peroxisomal transmembrane protein ABCD3 to sequester ATF6\u03b1 from its normal trafficking route (Figure 7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion of the manuscript supported by all the data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "86a1ad46-d3d7-4f7e-9b4e-478f1cd1e0b3",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C72",
+      "claim": "Ceapins achieve their specificity without interfering with or depending on ABCD3's normal function.",
+      "claim_type": "EXPLICIT",
+      "source": "and do so without interfering with or depending on ABCD3's normal function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the bile acid assay and catalytic mutant data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "1e0ce398-2d3a-43f7-8467-d3da0e317ea7",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C73",
+      "claim": "ABCD3 protein expression is ten-fold higher than ATF6.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ABCD3 protein expression is ten-fold higher than ATF6 (Hein et al., 2015), it is likely ABCD3 is not saturated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hein et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "ea972a76-5bce-40d4-ad17-adda1fb695bc",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C74",
+      "claim": "ABCD3 is likely not saturated by Ceapin-induced interaction with ATF6\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ABCD3 protein expression is ten-fold higher than ATF6 (Hein et al., 2015), it is likely ABCD3 is not saturated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relative expression levels of ABCD3 and ATF6.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "be4f9a30-f09f-4223-a82f-b07e855d33e3",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C75",
+      "claim": "Ceapin induced interaction of ABCD3 with the most N-terminal region of ATF6\u03b1 clarifies how ATF6\u03b1 foci are excluded from COPII trafficking, while the transmembrane region of ATF6\u03b1 remains accessible to protease cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Ceapin induced interaction of ABCD3 with the most N-terminal region of ATF6\u03b1 also clarifies how ATF6\u03b1 foci are excluded from COPII trafficking, while the transmembrane region of ATF6\u03b1 remains accessible to protease cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the truncation studies and prior observations about ATF6\u03b1 cleavability in the presence of Ceapin.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "18828101-a6e8-4676-95af-c2e8fd873700",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C76",
+      "claim": "Mechanistically, Ceapins could act as molecular staples that physically bridge the respective proteins or bind to one or the other inducing allosteric changes that promote their association.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, Ceapins could act as molecular staples that physically bridge the respective proteins or bind to one or the other inducing allosteric changes that promote their association; but in either case, Ceapin is responsible for tethering ABCD3 to ATF6\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the molecular mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "c264098a-0af9-4476-a346-893815df8e30",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C77",
+      "claim": "In the absence of Ceapins, ATF6\u03b1 and ABCD3 localize to different parts of the cell and are not known to interact physically or functionally.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in the absence of Ceapins, ATF6\u03b1 and ABCD3 localize to different parts of the cell and are not known to interact physically or functionally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge and supported by the data showing no interaction without Ceapin.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "c0761969-543a-4121-9ff6-62196701a46e",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C78",
+      "claim": "An 89-amino acid fragment of ATF6\u03b1 fused to GFP is sufficient to recruit GFP to peroxisomes in the presence of Ceapin.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, an 89-amino acid fragment of ATF6\u03b1 fused to GFP is sufficient to recruit GFP to peroxisomes, ruling out the need for endogenous inter-organellar tethers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the truncation studies in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "72667703-4b7e-4b6b-85ad-514acc3bf0d0",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C79",
+      "claim": "The Ceapin-induced tethering rules out the need for endogenous inter-organellar tethers.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, an 89-amino acid fragment of ATF6\u03b1 fused to GFP is sufficient to recruit GFP to peroxisomes, ruling out the need for endogenous inter-organellar tethers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the minimal fragment being sufficient and the tether knockdown experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "d13a43e0-2464-4d72-a736-6ade6e1cb4b0",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C80",
+      "claim": "This Ceapin-induced tethering enables an 'anchor away' strategy but one that uses an abundant, ubiquitously expressed endogenous acceptor protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This Ceapin-induced tethering enables an 'anchor away' strategy but one that uses an abundant, ubiquitously expressed endogenous acceptor protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mechanism in the context of synthetic biology strategies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "96402fe0-f370-4cc8-9384-26cf698fec68",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C81",
+      "claim": "Ceapins provide a novel example of small molecules that induce novel protein-protein interactions and increase the repertoire to include the induction of inter-organellar connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Ceapins provide a novel example of such molecules and increase the repertoire to include the induction of inter-organellar connections, opening new mechanistic routes for drug development and synthetic biology by broadly enabling control of protein function through chemical-induced misdirection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "b3ec786a-ec7e-46e3-a8d9-76eca940db1d",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C82",
+      "claim": "ATF6\u03b1 signaling protects dormant tumor cells from classical chemotherapies in squamous carcinomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Our identification of the mechanism by which Ceapins achieve their remarkable specificity forms a foundation to explore the utility of ATF6\u03b1 inhibition in the treatment of cancers, such as squamous carcinomas, in which ATF6\u03b1 signaling protects dormant tumor cells from classical chemotherapies (Schewe and Aguirre-Ghiso, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schewe and Aguirre-Ghiso, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "2d5c9fcc-0a78-456c-a9f7-ea667632e6d3",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C83",
+      "claim": "There is one reported patient with a C terminal truncation of ABCD3 in which a reduced number of import competent peroxisomes are present.",
+      "claim_type": "EXPLICIT",
+      "source": "There is one reported patient with a C terminal truncation of ABCD3 in which a reduced number of import competent peroxisomes are present (Ferdinandusse et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ferdinandusse et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "20c6f791-a257-4919-bc67-89924ba8bbf8",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C84",
+      "claim": "Tunicamycin treatment with Ceapin-A7 at EC90 (3 \u03bcM) was used in the CRISPRi screen.",
+      "claim_type": "EXPLICIT",
+      "source": "The population was then divided into two subpopulations, which were treated with Tm or Tm plus Ceapin-A7 at EC90 (3 \u03bcM) for 16 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological detail from the screen description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "8c43e0a3-a299-4d7d-bc51-545027c59ba5",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C85",
+      "claim": "ABCD3 KD cells remained completely insensitive to Ceapin-A7 at saturating concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Retesting of these candidates revealed that ABCD3 and PEX19 KD cells remained completely insensitive to Ceapin-A7 at saturating concentrations (Figure 1D, Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response data in Figure 1D and Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "45cdc7d5-ad47-4876-8e9a-588c8c5f2123",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C86",
+      "claim": "PEX19 KD cells remained completely insensitive to Ceapin-A7 at saturating concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Retesting of these candidates revealed that ABCD3 and PEX19 KD cells remained completely insensitive to Ceapin-A7 at saturating concentrations (Figure 1D, Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response data in Figure 1D and Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "094cb217-0f30-45c2-bb29-234cdd8334e6",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "claim_id": "C87",
+      "claim": "Thapsigargin blocks the ER calcium pump and induces ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "HepG2 CRISPRi NegCrl and ABCD3 KD cell lines were treated with DMSO, thapsigargin (Tg) (100 nM), and Tg with Ceapin (6 \u03bcM). Tg blocks the ER calcium pump and induces ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about thapsigargin's mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "47484c23-bd27-4034-bc57-c39778ec26e4",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A genome-wide CRISPRi screen identified ABCD3 and PEX19 as genes whose knockdown completely desensitizes cells to Ceapin treatment at saturating concentrations, indicating that Ceapin function is completely dependent on ABCD3 and PEX19.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C26, C28, C85, and C86 collectively demonstrate through CRISPRi screening and dose-response validation that ABCD3 and PEX19 knockdown renders cells insensitive to Ceapin. The screen methodology is appropriate, positive and negative controls are included (C21, C23), and the hits were independently validated with dose-response curves showing complete resistance at saturating concentrations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "e2be4ffe-ba60-469b-a553-171598bb9228",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ABCD3 and PEX19 do not have direct roles in ATF6\u03b1 signaling in the absence of Ceapin, as their knockdown does not affect ATF6\u03b1 nuclear translocation or activation under ER stress conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by nuclear translocation assays, reporter assays, and qPCR data showing that ABCD3/PEX19 knockdown does not affect ATF6\u03b1 signaling in the absence of Ceapin. This establishes that these proteins are specifically required for Ceapin action rather than normal ATF6\u03b1 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "ee82299b-b152-4638-b6cb-448df8691763",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ceapin treatment induces ATF6\u03b1 foci formation that colocalize with peroxisomal markers (ABCD3, PEX14, Thiolase) in an ABCD3-dependent manner, indicating that peroxisomes interact with Ceapin-induced ATF6\u03b1 foci to sequester ATF6\u03b1 at the ER.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C40 are supported by extensive immunofluorescence colocalization data showing ATF6\u03b1 foci colocalize with multiple peroxisomal markers upon Ceapin treatment, and this colocalization is abolished in ABCD3 or PEX19 knockdown cells. Quantitative correlation analysis strengthens these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "2dddf6c1-39d8-45c0-b3b4-f69700d0289a",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Stress-attenuated ATF6\u03b1 foci are distinct from Ceapin-induced foci, as stress-attenuated foci do not colocalize with peroxisomal markers ABCD3 or PEX14, indicating Ceapin does not act by stabilizing the attenuated ATF6\u03b1 state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 are supported by immunofluorescence data comparing stress-attenuated and Ceapin-induced foci. The differential colocalization patterns with peroxisomal markers provide clear evidence that these are mechanistically distinct phenomena.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "8ccf150b-47b0-47c3-bbd0-c3af649db74a",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ceapin does not inhibit ABCD3 transporter activity, as demonstrated by bile acid assays showing that Ceapin treatment at EC50 and 10\u00d7 EC50 does not affect bile acid levels in control cells, while ABCD3 knockdown reduces bile acid levels as expected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 and C9 are supported by bile acid assays with appropriate positive control (ABCD3 KD) and dose-response testing. The data clearly show that Ceapin does not affect ABCD3's normal metabolic function, supporting the specificity of the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "0783e609-4bf3-49e6-a5df-f2d0825b1ddc",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Known ER-peroxisome tethers (VAPA, VAPB, ACBD4, ACBD5) are not required for Ceapin-induced ATF6\u03b1-ABCD3 interaction, as knockdown of these tethers does not prevent ATF6\u03b1 foci formation or colocalization with ABCD3, and does not confer resistance to Ceapin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 are supported by immunofluorescence colocalization data and reporter assays showing that tether knockdown does not affect Ceapin function. This is consistent with the CRISPRi screen results where these genes did not score as hits, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "9cc8528b-efe8-4245-b23a-4bbc78103bbc",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The first 89 amino acids of ATF6\u03b1's cytosolic domain are both necessary and sufficient for Ceapin-dependent foci formation and colocalization with ABCD3 and peroxisomes, even when ATF6\u03b1 is not ER-localized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C54, and C78 are supported by systematic truncation studies with immunofluorescence showing that GFP-ATF6\u03b1(2-90) is sufficient for Ceapin-induced peroxisome recruitment. The minimal domain mapping is rigorous and includes appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "fa5f2e13-ab97-4fd5-933c-2bb5a8c17331",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ABCD3 transporter activity (ATP binding and hydrolysis) is not required for Ceapin-induced foci formation, as catalytic mutants (G478R, S572I) and a deletion mutant (\u0394NBD) still mediate Ceapin-induced ATF6\u03b1 foci formation and colocalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57, C10, and C59 are supported by immunofluorescence data with multiple ABCD3 catalytic mutants showing retained Ceapin-induced interaction. This complements the bile acid data and establishes that Ceapin's mechanism is independent of ABCD3's enzymatic function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "bdde9884-01d6-41a3-a6a4-9b7678122b98",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ABCD3 physically associates with ATF6\u03b1 in cells in a Ceapin-dependent manner, as demonstrated by IP-MS showing ABCD3 as the top hit co-purifying with FLAG-ATF6\u03b1 only in the presence of active Ceapin-A7 but not inactive Ceapin-A5, confirmed by reciprocal IP with GFP-ABCD3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by quantitative proteomics (IP-MS) with appropriate inactive analog control and reciprocal IP validation. The use of both active and inactive Ceapin analogs strengthens the specificity of the interaction. The \u0394NBD mutant data further confirms the interaction is independent of catalytic activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "47ea9c31-cef5-4b75-a8d0-a3c0486dd903",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The minimal cytosolic domain of ATF6\u03b1 (amino acids 2-90) is sufficient for Ceapin-dependent physical association with ABCD3 in detergent-solubilized lysates, indicating no other ER proteins are required for this interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63 and C64 are supported by IP experiments with the minimal ATF6\u03b1 domain showing specific enrichment of ABCD3 only with active Ceapin-A7. This demonstrates that the minimal domain is sufficient and no additional ER components are needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "83bbd8ad-3a3a-45f4-921c-ae1150c0cd7f",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Purified ATF6\u03b1(2-90) and ABCD3 proteins are sufficient for Ceapin-induced association in vitro, demonstrating that Ceapin directly tethers these two proteins without requiring additional cellular factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C67, and C6 are supported by in vitro binding assays with purified recombinant proteins showing Ceapin-dependent association. This is the most direct evidence that Ceapin acts as a molecular glue, with appropriate inactive analog controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "411bd01e-97b0-464b-a6bc-e342d7acfb95",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Ceapins induce neomorphic inter-organelle junctions by directly tethering the cytosolic domain of ER-tethered ATF6\u03b1 to the peroxisomal transmembrane protein ABCD3, sequestering ATF6\u03b1 from its normal trafficking route without interfering with ABCD3's normal function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C7, C8, and C72 represent the main conclusion synthesizing all experimental evidence: CRISPRi screen, colocalization studies, domain mapping, catalytic mutant analysis, bile acid assays, and in vitro binding. The convergent evidence from multiple orthogonal approaches strongly supports this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "fde17e6b-669d-4258-8595-1ee7acb43532",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Ceapins exhibit exquisite selectivity for ATF6\u03b1, not affecting signaling of the close homolog ATF6\u03b2 or SREBP, despite these proteins using the same Golgi-resident proteases and ER-Golgi trafficking pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 are supported by citation to prior work (Gallagher et al., 2016) establishing Ceapin selectivity. This prior characterization is critical context for understanding the significance of the mechanism revealed in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "d90f4a92-248d-4afc-8bb6-4b2eb2deb722",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The ATF6\u03b1 reporter system is validated with appropriate controls: tunicamycin induces ATF6\u03b1-dependent reporter activation, MBTPS2 (S2P) knockdown inhibits reporter induction, and HSPA5 (BiP) knockdown constitutively activates the reporter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 describe the validation of the reporter system used throughout the study. The positive and negative controls are appropriate and demonstrate that the reporter specifically measures ATF6\u03b1 pathway activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "90b5c43f-637c-46de-87fc-abfdf8fbce11",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "ABCD3 is a peroxisomal ABC transporter that is inserted directly into the peroxisomal membrane via PEX19, is not co-translationally translocated into the ER, and is commonly used as a reliable peroxisomal marker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36, C25, and C27 describe established knowledge about ABCD3 and PEX19 biology supported by multiple literature citations. This background information is accurately presented and relevant to interpreting the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "e3e3e08e-ef2f-499d-a733-cfcd3cd7a8ed",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on the UPR and ATF6\u03b1: The UPR detects and restores ER protein folding deficits; ATF6\u03b1 is an ER-tethered transcription factor that traffics to the Golgi under stress for proteolytic processing by S1P and S2P, releasing a transcription factor domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11-C15 accurately describe established UPR and ATF6\u03b1 biology supported by appropriate literature citations. This background is essential context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "6329bb15-2edb-4f05-a5cd-938dfa5d60a5",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior characterization of Ceapins: Ceapins specifically inhibit ATF6\u03b1 by retaining it at the ER and excluding it from ER exit sites, inducing rapid and reversible ATF6\u03b1 foci formation, but the mechanism was previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C16-C18 accurately summarize prior work on Ceapins (Gallagher et al., 2016) that motivated this mechanistic study. The citations are appropriate and the knowledge gap is clearly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "69b497c2-8943-4cfe-9a4d-b9640bc86cbc",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "ABCD3 protein expression is ten-fold higher than ATF6\u03b1, suggesting ABCD3 is likely not saturated by Ceapin-induced interaction with ATF6\u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C74 are supported by citation to protein expression data (Hein et al., 2015). The inference about non-saturation is reasonable given the expression difference, though direct experimental evidence of saturation status is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "d773f322-8758-46f7-bfeb-22244ab62e31",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The Ceapin-induced interaction of ABCD3 with the N-terminal region of ATF6\u03b1 clarifies how ATF6\u03b1 foci are excluded from COPII trafficking while the transmembrane region remains accessible to protease cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is a reasonable inference from the domain mapping studies (C54) combined with prior observations about ATF6\u03b1 cleavability in the presence of Ceapin (C17). The N-terminal tethering would sterically occlude COPII machinery while leaving the transmembrane domain accessible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "36e6757c-a6a7-4701-af98-c32b0f3e6300",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Mechanistic speculation: Ceapins could act as molecular staples physically bridging ATF6\u03b1 and ABCD3, or bind to one protein inducing allosteric changes promoting association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 is explicitly speculative about the precise molecular mechanism. While the in vitro binding data (C66) demonstrates Ceapin is necessary and sufficient for the interaction, distinguishing between direct bridging versus allosteric mechanisms would require structural studies not presented here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "bb7bb06f-3d3c-47a6-ac7c-961458acf75b",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Significance and implications: Ceapins represent a novel example of small molecules inducing inter-organellar connections between proteins that normally do not interact, enabling an 'anchor away' strategy with therapeutic and synthetic biology applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77, C79-C81 represent interpretations of the significance of the findings. These are well-supported by the experimental data and appropriately contextualized within the broader field of induced protein-protein interactions and synthetic biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "3169134f-5fee-4151-84aa-f6e28a6bc1fc",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Therapeutic context: ATF6\u03b1 signaling protects dormant tumor cells from chemotherapies in squamous carcinomas, providing rationale for exploring ATF6\u03b1 inhibition therapeutically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is supported by citation to prior work (Schewe and Aguirre-Ghiso, 2008) and provides therapeutic context for the mechanistic findings. This is appropriately presented as motivation for future work rather than a result of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    },
+    {
+      "id": "f81d1dbf-87ab-4e8b-8cd6-890815bc5eb4",
+      "content_id": "93d2a115-431a-48b0-a3ba-29ed25df5a38",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Methodological details: The CRISPRi screen used tunicamycin with Ceapin-A7 at EC90 (3 \u03bcM); thapsigargin blocks the ER calcium pump and induces ER stress; one patient with C-terminal ABCD3 truncation has reduced import-competent peroxisomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83, C84, and C87 are methodological details and background information appropriately cited. These provide important context for interpreting the experimental design and results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:23:31.793159Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e6454666-fd62-4918-a450-a47fa03b5084",
+      "result_id": "47484c23-bd27-4034-bc57-c39778ec26e4"
+    },
+    {
+      "claim_id": "3e15b47f-5637-467d-a301-7d8708021a2b",
+      "result_id": "47484c23-bd27-4034-bc57-c39778ec26e4"
+    },
+    {
+      "claim_id": "4d28327b-2ff1-4834-8229-56223169ee83",
+      "result_id": "47484c23-bd27-4034-bc57-c39778ec26e4"
+    },
+    {
+      "claim_id": "8c43e0a3-a299-4d7d-bc51-545027c59ba5",
+      "result_id": "47484c23-bd27-4034-bc57-c39778ec26e4"
+    },
+    {
+      "claim_id": "45cdc7d5-ad47-4876-8e9a-588c8c5f2123",
+      "result_id": "47484c23-bd27-4034-bc57-c39778ec26e4"
+    },
+    {
+      "claim_id": "9f53346f-6b40-425c-b993-d760286c6e00",
+      "result_id": "e2be4ffe-ba60-469b-a553-171598bb9228"
+    },
+    {
+      "claim_id": "8a39b246-1398-455c-a307-4ba990f8cbe2",
+      "result_id": "e2be4ffe-ba60-469b-a553-171598bb9228"
+    },
+    {
+      "claim_id": "f6e4686b-c751-4f43-91ad-def66b940ece",
+      "result_id": "e2be4ffe-ba60-469b-a553-171598bb9228"
+    },
+    {
+      "claim_id": "f52f0c35-80d6-49bb-b72f-acf4dd8e44ad",
+      "result_id": "ee82299b-b152-4638-b6cb-448df8691763"
+    },
+    {
+      "claim_id": "d1fe5825-a836-4c62-af27-4a9bdface5db",
+      "result_id": "ee82299b-b152-4638-b6cb-448df8691763"
+    },
+    {
+      "claim_id": "f354019e-637a-4c59-b1cb-75c67b6a12ee",
+      "result_id": "ee82299b-b152-4638-b6cb-448df8691763"
+    },
+    {
+      "claim_id": "0d38c1e6-4cfc-4f66-a277-6eec5ddb78df",
+      "result_id": "ee82299b-b152-4638-b6cb-448df8691763"
+    },
+    {
+      "claim_id": "2d65922a-7c2b-4ede-84f5-c50d91b69ff1",
+      "result_id": "ee82299b-b152-4638-b6cb-448df8691763"
+    },
+    {
+      "claim_id": "3433b7f2-43f3-497e-ba76-dc419bdfdce4",
+      "result_id": "ee82299b-b152-4638-b6cb-448df8691763"
+    },
+    {
+      "claim_id": "f4af2214-fcd9-4430-a994-95521448360a",
+      "result_id": "2dddf6c1-39d8-45c0-b3b4-f69700d0289a"
+    },
+    {
+      "claim_id": "a2d8e506-36ae-4517-b818-f3b0471e91bd",
+      "result_id": "2dddf6c1-39d8-45c0-b3b4-f69700d0289a"
+    },
+    {
+      "claim_id": "4f03dc28-df6d-4ec7-90b9-f95c199dda03",
+      "result_id": "2dddf6c1-39d8-45c0-b3b4-f69700d0289a"
+    },
+    {
+      "claim_id": "db464708-71ba-4248-ab3f-658de34337af",
+      "result_id": "2dddf6c1-39d8-45c0-b3b4-f69700d0289a"
+    },
+    {
+      "claim_id": "36d9b780-b689-4410-a97b-a4d22b7ba53e",
+      "result_id": "8ccf150b-47b0-47c3-bbd0-c3af649db74a"
+    },
+    {
+      "claim_id": "e0fa9ada-061d-476a-a517-eb7ea64bc127",
+      "result_id": "8ccf150b-47b0-47c3-bbd0-c3af649db74a"
+    },
+    {
+      "claim_id": "a2e5bab7-e547-48e9-889d-9535ed188593",
+      "result_id": "8ccf150b-47b0-47c3-bbd0-c3af649db74a"
+    },
+    {
+      "claim_id": "dda323e5-b999-451e-8e50-7f95adceab38",
+      "result_id": "8ccf150b-47b0-47c3-bbd0-c3af649db74a"
+    },
+    {
+      "claim_id": "c18046c6-231f-4990-96ec-c177b4437b06",
+      "result_id": "8ccf150b-47b0-47c3-bbd0-c3af649db74a"
+    },
+    {
+      "claim_id": "73101dc0-a8a2-47e2-976a-f49e56cad5be",
+      "result_id": "0783e609-4bf3-49e6-a5df-f2d0825b1ddc"
+    },
+    {
+      "claim_id": "df146860-64da-481d-8590-aa7b72b82cbc",
+      "result_id": "0783e609-4bf3-49e6-a5df-f2d0825b1ddc"
+    },
+    {
+      "claim_id": "c0eabd55-4d72-4463-878d-6a099899971f",
+      "result_id": "0783e609-4bf3-49e6-a5df-f2d0825b1ddc"
+    },
+    {
+      "claim_id": "6b5e6e63-b830-4824-bba7-6b7a4a198f34",
+      "result_id": "0783e609-4bf3-49e6-a5df-f2d0825b1ddc"
+    },
+    {
+      "claim_id": "1c22125e-7dd3-412b-b53f-f94fb6621938",
+      "result_id": "9cc8528b-efe8-4245-b23a-4bbc78103bbc"
+    },
+    {
+      "claim_id": "6bad67db-12b0-4e76-a26c-723d6ca15cb9",
+      "result_id": "9cc8528b-efe8-4245-b23a-4bbc78103bbc"
+    },
+    {
+      "claim_id": "c0761969-543a-4121-9ff6-62196701a46e",
+      "result_id": "9cc8528b-efe8-4245-b23a-4bbc78103bbc"
+    },
+    {
+      "claim_id": "349432ad-a75c-4afc-9dc5-4c3cfb62c581",
+      "result_id": "fa5f2e13-ab97-4fd5-933c-2bb5a8c17331"
+    },
+    {
+      "claim_id": "87078132-99b0-4157-95a2-2de74287bffb",
+      "result_id": "fa5f2e13-ab97-4fd5-933c-2bb5a8c17331"
+    },
+    {
+      "claim_id": "abec9610-c950-43da-8583-c6b60205f097",
+      "result_id": "fa5f2e13-ab97-4fd5-933c-2bb5a8c17331"
+    },
+    {
+      "claim_id": "b8d12202-edc6-4827-82c4-63ca3c5e4789",
+      "result_id": "fa5f2e13-ab97-4fd5-933c-2bb5a8c17331"
+    },
+    {
+      "claim_id": "3660300f-60ad-4abc-bebe-4cdecd89c914",
+      "result_id": "fa5f2e13-ab97-4fd5-933c-2bb5a8c17331"
+    },
+    {
+      "claim_id": "1fe40380-3d77-47c1-8df3-0f465a6dfd5f",
+      "result_id": "bdde9884-01d6-41a3-a6a4-9b7678122b98"
+    },
+    {
+      "claim_id": "4cd20c53-cd0b-477b-8d14-55b2dc1138a3",
+      "result_id": "bdde9884-01d6-41a3-a6a4-9b7678122b98"
+    },
+    {
+      "claim_id": "c49b52a9-ac3f-4e61-8abe-ef347e91871f",
+      "result_id": "bdde9884-01d6-41a3-a6a4-9b7678122b98"
+    },
+    {
+      "claim_id": "37e327be-983d-4db5-a458-eddec25410d7",
+      "result_id": "47ea9c31-cef5-4b75-a8d0-a3c0486dd903"
+    },
+    {
+      "claim_id": "89392419-da95-4ee6-b765-4ca49eb47e92",
+      "result_id": "47ea9c31-cef5-4b75-a8d0-a3c0486dd903"
+    },
+    {
+      "claim_id": "894beb54-f33e-4f40-af1e-87ba641b3b27",
+      "result_id": "83bbd8ad-3a3a-45f4-921c-ae1150c0cd7f"
+    },
+    {
+      "claim_id": "13785331-41ba-4689-9ebf-2f01ac1d2a34",
+      "result_id": "83bbd8ad-3a3a-45f4-921c-ae1150c0cd7f"
+    },
+    {
+      "claim_id": "fbdd5926-0f1f-450d-91a8-e9e4977e654e",
+      "result_id": "83bbd8ad-3a3a-45f4-921c-ae1150c0cd7f"
+    },
+    {
+      "claim_id": "fd803b4c-1186-4866-b9f3-7979ebc14037",
+      "result_id": "411bd01e-97b0-464b-a6bc-e342d7acfb95"
+    },
+    {
+      "claim_id": "9fa56e6d-f44a-47dd-9d8d-faf9c310fbc7",
+      "result_id": "411bd01e-97b0-464b-a6bc-e342d7acfb95"
+    },
+    {
+      "claim_id": "ef9d1cfc-a02d-4508-801d-ee037637b027",
+      "result_id": "411bd01e-97b0-464b-a6bc-e342d7acfb95"
+    },
+    {
+      "claim_id": "86a1ad46-d3d7-4f7e-9b4e-478f1cd1e0b3",
+      "result_id": "411bd01e-97b0-464b-a6bc-e342d7acfb95"
+    },
+    {
+      "claim_id": "1140877c-3bc7-4c95-bc83-273ef023553a",
+      "result_id": "fde17e6b-669d-4258-8595-1ee7acb43532"
+    },
+    {
+      "claim_id": "38f1350c-e9ab-49f2-9f7c-d76b7dd1a7b7",
+      "result_id": "fde17e6b-669d-4258-8595-1ee7acb43532"
+    },
+    {
+      "claim_id": "158d4998-c891-4c94-8a1b-c9b58dc3fec3",
+      "result_id": "fde17e6b-669d-4258-8595-1ee7acb43532"
+    },
+    {
+      "claim_id": "5f6683b7-6da6-4dba-a826-e60bd767eaf6",
+      "result_id": "d90f4a92-248d-4afc-8bb6-4b2eb2deb722"
+    },
+    {
+      "claim_id": "0dc62901-6595-48e2-b627-51a485e3b16a",
+      "result_id": "d90f4a92-248d-4afc-8bb6-4b2eb2deb722"
+    },
+    {
+      "claim_id": "931d0052-c218-491d-88eb-e2cc23a8b6ad",
+      "result_id": "d90f4a92-248d-4afc-8bb6-4b2eb2deb722"
+    },
+    {
+      "claim_id": "46ae7e02-8c5b-42a8-9fbd-c99e560f653a",
+      "result_id": "d90f4a92-248d-4afc-8bb6-4b2eb2deb722"
+    },
+    {
+      "claim_id": "d460cc2c-0a4e-47e0-abe0-a8ff5936f466",
+      "result_id": "d90f4a92-248d-4afc-8bb6-4b2eb2deb722"
+    },
+    {
+      "claim_id": "bc08f596-85b5-4473-afa3-7bc210f76d2d",
+      "result_id": "d90f4a92-248d-4afc-8bb6-4b2eb2deb722"
+    },
+    {
+      "claim_id": "86dce806-0a4a-46dc-bae8-e8d36a00a7ac",
+      "result_id": "90b5c43f-637c-46de-87fc-abfdf8fbce11"
+    },
+    {
+      "claim_id": "0aecde07-9135-42a1-bf91-29b6edddbcc3",
+      "result_id": "90b5c43f-637c-46de-87fc-abfdf8fbce11"
+    },
+    {
+      "claim_id": "518838d3-07a1-4a51-a16b-e582d2a67ece",
+      "result_id": "90b5c43f-637c-46de-87fc-abfdf8fbce11"
+    },
+    {
+      "claim_id": "c6a90180-f299-4940-9296-62d995cb62cc",
+      "result_id": "90b5c43f-637c-46de-87fc-abfdf8fbce11"
+    },
+    {
+      "claim_id": "5c53816d-430c-40da-bd2f-cc68bf8009cb",
+      "result_id": "90b5c43f-637c-46de-87fc-abfdf8fbce11"
+    },
+    {
+      "claim_id": "f9fac6e0-831a-4b1e-880d-fc0454e4be92",
+      "result_id": "e3e3e08e-ef2f-499d-a733-cfcd3cd7a8ed"
+    },
+    {
+      "claim_id": "2e30af9d-6966-4d83-b14f-e953e6582cce",
+      "result_id": "e3e3e08e-ef2f-499d-a733-cfcd3cd7a8ed"
+    },
+    {
+      "claim_id": "25ee8eef-685c-40dd-aff4-62599e1a872b",
+      "result_id": "e3e3e08e-ef2f-499d-a733-cfcd3cd7a8ed"
+    },
+    {
+      "claim_id": "fee88b47-53f0-4b41-9572-37d61f2f274a",
+      "result_id": "e3e3e08e-ef2f-499d-a733-cfcd3cd7a8ed"
+    },
+    {
+      "claim_id": "7aa5206c-9487-4749-8f59-4cd041a32ceb",
+      "result_id": "e3e3e08e-ef2f-499d-a733-cfcd3cd7a8ed"
+    },
+    {
+      "claim_id": "369faa0b-07d6-408e-b2a1-38a0f2af3092",
+      "result_id": "e3e3e08e-ef2f-499d-a733-cfcd3cd7a8ed"
+    },
+    {
+      "claim_id": "e369b8c2-aa8e-433e-b8e6-40dc58b65bad",
+      "result_id": "6329bb15-2edb-4f05-a5cd-938dfa5d60a5"
+    },
+    {
+      "claim_id": "13c4829f-5dd4-4ab6-a45f-51cc10316571",
+      "result_id": "6329bb15-2edb-4f05-a5cd-938dfa5d60a5"
+    },
+    {
+      "claim_id": "289d3c97-39a7-46ef-a880-8559f8e907df",
+      "result_id": "6329bb15-2edb-4f05-a5cd-938dfa5d60a5"
+    },
+    {
+      "claim_id": "baa768d9-416b-48cc-b13b-9294bb55b4fc",
+      "result_id": "6329bb15-2edb-4f05-a5cd-938dfa5d60a5"
+    },
+    {
+      "claim_id": "5f545f67-4bb4-4708-9a08-c31a928c31db",
+      "result_id": "6329bb15-2edb-4f05-a5cd-938dfa5d60a5"
+    },
+    {
+      "claim_id": "1e0ce398-2d3a-43f7-8467-d3da0e317ea7",
+      "result_id": "69b497c2-8943-4cfe-9a4d-b9640bc86cbc"
+    },
+    {
+      "claim_id": "ea972a76-5bce-40d4-ad17-adda1fb695bc",
+      "result_id": "69b497c2-8943-4cfe-9a4d-b9640bc86cbc"
+    },
+    {
+      "claim_id": "be4f9a30-f09f-4223-a82f-b07e855d33e3",
+      "result_id": "d773f322-8758-46f7-bfeb-22244ab62e31"
+    },
+    {
+      "claim_id": "18828101-a6e8-4676-95af-c2e8fd873700",
+      "result_id": "36e6757c-a6a7-4701-af98-c32b0f3e6300"
+    },
+    {
+      "claim_id": "c264098a-0af9-4476-a346-893815df8e30",
+      "result_id": "bb7bb06f-3d3c-47a6-ac7c-961458acf75b"
+    },
+    {
+      "claim_id": "72667703-4b7e-4b6b-85ad-514acc3bf0d0",
+      "result_id": "bb7bb06f-3d3c-47a6-ac7c-961458acf75b"
+    },
+    {
+      "claim_id": "d13a43e0-2464-4d72-a736-6ade6e1cb4b0",
+      "result_id": "bb7bb06f-3d3c-47a6-ac7c-961458acf75b"
+    },
+    {
+      "claim_id": "96402fe0-f370-4cc8-9384-26cf698fec68",
+      "result_id": "bb7bb06f-3d3c-47a6-ac7c-961458acf75b"
+    },
+    {
+      "claim_id": "b3ec786a-ec7e-46e3-a8d9-76eca940db1d",
+      "result_id": "3169134f-5fee-4151-84aa-f6e28a6bc1fc"
+    },
+    {
+      "claim_id": "2d5c9fcc-0a78-456c-a9f7-ea667632e6d3",
+      "result_id": "f81d1dbf-87ab-4e8b-8cd6-890815bc5eb4"
+    },
+    {
+      "claim_id": "20c6f791-a257-4919-bc67-89924ba8bbf8",
+      "result_id": "f81d1dbf-87ab-4e8b-8cd6-890815bc5eb4"
+    },
+    {
+      "claim_id": "094cb217-0f30-45c2-bb29-234cdd8334e6",
+      "result_id": "f81d1dbf-87ab-4e8b-8cd6-890815bc5eb4"
+    }
+  ],
+  "comparisons": []
+}

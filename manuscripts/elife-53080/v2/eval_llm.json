@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C27",
+      "C28",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study enrolled 46 Tanzanian adult male volunteers (8 controls, 18 in group 2, 20 in group 3) who were immunized with PfSPZ Vaccine by direct venous inoculation and assessed for protective efficacy by homologous CHMI. Volunteers had no parasitemia at baseline or before CHMI and no history of malaria in the previous 5 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C27, C28, C63-C66 collectively describe the study design, participant characteristics, and CHMI assessment method. These are well-documented in the methods and supported by Figure 1, which shows the study flow and group allocations. The inclusion/exclusion criteria are clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C58",
+      "C59",
+      "C67",
+      "C165"
+    ],
+    "result": "Serum IgG responses were analyzed using a Pf protein microarray covering 91% of the proteome (7455 proteins representing 4805 genes), with samples collected pre-vaccination and 14 days post-last vaccination. The analysis identified 2804 probes corresponding to 2239 reactive Pf proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C58, C59, C67, C165 describe the microarray methodology and coverage. The 91% proteome coverage and identification of 2239 reactive proteins are directly stated results supported by the methods section and data analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C106",
+      "C107"
+    ],
+    "result": "The study identified immunoreactivity against 2239 functionally diverse Pf proteins, demonstrating a wide breadth of humoral response in malaria pre-exposed volunteers. This large number of immunoreactive targets is surprising given that the majority are predicted to be intracellular.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C106-C107 report the breadth of antibody responses. The identification of 2239 reactive proteins is a direct data result. The interpretation that this represents 'wide breadth' is reasonable given the scale, though the surprise about intracellular localization (C107) is subjective commentary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C60",
+      "C61",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C111",
+      "C149"
+    ],
+    "result": "Volunteers displayed highly personalized antibody 'fingerprints' at baseline that remained largely unchanged after PfSPZ immunization. t-SNE analysis showed that 43/46 volunteers clustered by individual rather than by treatment group, with paired samples from the same volunteer clustering together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C60-C61, C68-C71, C111, C149 describe the immune fingerprinting finding. This is strongly supported by Figure 2 (heatmap and t-SNE analysis) showing individual-specific clustering patterns that persist across time points. The t-SNE analysis provides quantitative support for the personalized response pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Three volunteers (BSPZV1-360, BSPZV1-104, BSPZV1-117) did not maintain longitudinally consistent antibody profiles and had slightly higher baseline breadth with steeper decreases after immunization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 describe outliers in the fingerprinting analysis. These are documented in Figure 2 and Figure 3c. The authors appropriately acknowledge uncertainty about whether this reflects technical issues or biological factors, demonstrating appropriate caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C112"
+    ],
+    "result": "Antibody breadth varied widely among individuals, ranging from 187-2360 reactive antigens at baseline and 217-1535 (group 2) or 187-1965 (group 3) after vaccination. Median breadth was 720 pre-immunization and 669 post-immunization, with only ~10% of reactive antigens common across individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77, C112 report breadth measurements directly from the data shown in Figure 3. The wide ranges and median values are clearly documented. The finding that only ~10% of antigens are commonly recognized supports the personalized response interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "No significant differences in antibody breadth were detected between control and vaccinated groups or between dose groups. Breadth declined in many individuals across all groups (controls: -4.8%, group 2: -13.6%, group 3: -4.7%), though only group 2 showed a statistically significant decline (p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 report statistical comparisons of breadth. The negative binomial regression results are stated, and the inverted beta-binomial test results are provided with specific p-values. However, the significant decline in group 2 but not group 3 is puzzling and may warrant further investigation of potential confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "DeepLoc subcellular localization prediction identified 53 exported and 208 cell membrane-associated reactive proteins, but the majority (1978) were predicted to be intracellular. Many known exported proteins (rhoptries, micronemes, PfEMP1) were misclassified as intracellular, indicating limitations of current prediction algorithms for malaria parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 report subcellular localization predictions and acknowledge algorithm limitations. The authors appropriately recognize that DeepLoc was not trained on malaria-specific organelles and that misclassification of known exported proteins indicates algorithm limitations. This honest assessment of methodological constraints is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Reactivity against most antigens decreased after immunization in controls and group 2, though not significantly after FDR adjustment. Anti-CSP antibodies increased in both vaccine groups (unadjusted p=4.4\u00d710\u207b\u2074 for group 2, p=2.1\u00d710\u207b\u2075 for group 3) but not significantly after FDR adjustment. The declining trend in group 2 was not present in group 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 report differential antigen reactivity from volcano plot analysis (Figure 4). The statistical tests are appropriate (paired t-tests with BH adjustment), though the lack of FDR-significant findings limits strong conclusions. The difference between groups 2 and 3 in overall trends is an interesting observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Four proteins (PfAMA1 and three PfEMP1 fragments) showed significantly higher reactivity in protected vs. unprotected volunteers after immunization. However, with small sample size (n=5 protected) and low effect sizes (Cohen's d), no strong argument for association with protection can be made. The three PfEMP1 fragments showed sequence conservation with sporozoite-encoded variant PF3D7_0809100.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C98 report potential correlates of protection but appropriately acknowledge severe limitations (C95). The small sample size (5 protected individuals) and low effect sizes preclude strong conclusions. The sequence conservation finding (C93) is interesting but insufficient to establish functional relevance. The authors' caution is appropriate given the statistical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Protected individuals had 12% higher mean breadth than unprotected at baseline and 28% higher after immunization, but differences were not statistically significant (p=0.6 and p=0.3). ROC analysis showed limited discrimination by protection status (AUC=0.64 pre-immunization, AUC=0.73 post-immunization).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 report breadth comparisons by protection status with appropriate statistical tests (logistic regression, ROC analysis). The lack of significance is clearly stated, and the authors appropriately note the high over-dispersion and small protected group size as limiting factors. The AUC values indicate poor to fair discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Common antigens (reactive in \u226580% of samples) were significantly more numerous in protected vs. unprotected groups both at baseline (350 vs. 62, p<2.2\u00d710\u207b\u00b9\u2076) and after immunization (383 vs. 58, p<2.2\u00d710\u207b\u00b9\u2076). Almost all common antigens in the unprotected group were also present in the protected group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C103 report common antigen analysis with highly significant p-values. However, the 2-sample test for equality of proportions may not be appropriate given the vastly different sample sizes (n=5 vs. n=33) and the definition of 'common' (\u226580% threshold). The bootstrap analysis (Figure 7 supplement 1) shows wide confidence intervals, suggesting substantial uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Protected volunteers more broadly recognized predicted cell membrane proteins (63 vs. 10 at baseline, 70 vs. 5 post-immunization, p<0.05) and intracellular proteins in multiple compartments (cytoplasm, ER, Golgi, mitochondrion, nucleus, all p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105 report subcellular localization enrichment in protected individuals. While statistically significant, the analysis suffers from the same small sample size issue (n=5 protected) and the acknowledged limitations of DeepLoc predictions for malaria proteins (C85-C86). The broad enrichment across all compartments suggests this may not be specific.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C136"
+    ],
+    "result": "In the BSPZV1 trial, 1/18 volunteers in group 2 (1.35\u00d710\u2075 PfSPZ/dose) and 4/20 in group 3 (2.7\u00d710\u2075 PfSPZ/dose) were sterilely protected at 3 weeks post-vaccination. The four protected individuals from group 3 remained protected at 24 weeks post-vaccination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C136 report the primary efficacy outcomes from the BSPZV1 trial. These are clearly documented results from the clinical trial (Jongo et al., 2018) and shown in Figure 1. The protection rates (5.6% in group 2, 20% in group 3) are modest but clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C62"
+    ],
+    "result": "The moderate increase in immunogenicity following immunization and the extensive, variable baseline humoral response suggest that pre-exposure reduces vaccine-induced antigen reactivity in unanticipated ways, leading to the hypothesis of natural imprinting of humoral immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9-C11, C62 present the central hypothesis of immune imprinting. While the data show limited vaccine-induced changes (C8, C87) and extensive baseline responses (C10), the causal claim that 'pre-exposure reduces vaccine-induced reactivity' (C11) is speculative. The imprinting hypothesis is plausible but not definitively proven by the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The tendency of malaria antigens to span comprehensive cellular compartments is likely due to the complexity of the parasite life cycle and chronicity of infection. Schizogony in parasitophorous vacuoles culminates in host cell destruction, likely releasing abundant parasite proteins that result in substantial immune responses to intracellular proteins potentially functionally irrelevant for infection control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C110 present a mechanistic hypothesis for the broad intracellular protein recognition. While C109 is supported by citation to established parasite biology, C108 and C110 are speculative interpretations. The hypothesis is plausible but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The majority of reactive antigens are distinctly recognized at the individual level, suggesting clonal imprinting in malaria immunity. This is consistent with findings in other pathogens (S. pneumoniae, HCMV, influenza) and the concept of 'original antigenic sin,' indicating that personalized immune status and pathogen exposure history may affect vaccine take across taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C120 place the findings in broader immunological context. While the individual-specific patterns are well-documented (C7-C8, C69-C71), the interpretation as 'clonal imprinting' (C113) is speculative. The citations to similar phenomena in other pathogens (C114-C118) provide supporting context, but the mechanistic claim of imprinting is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "A consistent picture is emerging that pre-exposure limits vaccine-induced responses. Anti-PfCSP responses were 6-7-fold lower in Malian adults than Tanzanians, and lower in Kenyan adults than na\u00efve U.S. subjects for RTS,S. Higher responses were observed in na\u00efve U.S. and European vaccinees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 synthesize findings across multiple studies with appropriate citations. The comparative data from different populations (Mali, Tanzania, Kenya, U.S., Europe) consistently show lower responses in pre-exposed populations. However, C125 is speculative about antigens beyond PfCSP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Breadth is known to be associated with reduced malaria risk, and protection is likely the sum of immunity across antigens (threshold of immune response concept). The tendency for protected individuals to have higher breadth likely represents predisposition toward more effective vaccine 'take,' indicating that greater baseline breadth may positively impact vaccination outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C130 present an interpretation of the breadth findings. While C126-C128 are supported by citations, the interpretation in C129-C130 that higher baseline breadth predicts better vaccine take is speculative. The lack of statistical significance in breadth differences (C99) and the presence of similar breadth patterns in unprotected placebo controls weakens this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Higher baseline levels of PfEMP1 antibodies in protected individuals might enable cross-reactivity with other PfEMP1 proteins during CHMI. Protein families uniquely identified in protected individuals included SSP2/TRAP (required for hepatocyte invasion), Rifin family (implicated in cytoadherence and severe malaria), and Mauer's cleft (involved in trafficking variant surface antigens).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C135 present hypotheses about functional protein families. While the protein identifications are data-based, the functional interpretations (C131 about cross-reactivity, C132-C135 about biological roles) are speculative. The citations support the known functions of these proteins, but their role in protection in this study is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The declining antibody trend in lower dose and placebo groups was not evident in the higher dose group, suggesting that higher doses may maintain immune status over time and rescue vaccine immunogenicity in pre-exposed volunteers. However, recent studies show a four-fold dose increase did not improve efficacy over a two-fold increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C140 present a dose-response hypothesis. While C137 is an observation from the data (Figure 4), the interpretation in C138-C139 is speculative. The contradictory finding in C140 (from Jongo et al., 2019) undermines the dose-escalation hypothesis, suggesting the relationship is more complex than proposed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Both humoral and cellular immune responses have been observed in na\u00efve volunteers, but their association with protection in pre-exposed populations is unclear. There is accumulating evidence that PfSPZ Vaccine induces limited humoral immunity in pre-exposed adults with no correlation between anti-CSP titers and CHMI protection, despite functional antibodies being isolated from Tanzanian studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C147 summarize the state of knowledge about immune correlates. The statements are appropriately cautious (C143) and supported by multiple citations. The apparent contradiction between lack of correlation (C145) and isolation of functional antibodies (C147) highlights the complexity of the immune response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The study has several limitations: FDR adjustments may underestimate associations with subtle differences; proteins lack post-translational modifications and may be misfolded (making this a 'rule-in' not 'rule-out' method); and reliance on in silico predictions for functionally uncharacterized proteins. However, the balanced experimental design makes technical variability unlikely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C155 provide an honest assessment of methodological limitations. The authors appropriately acknowledge the constraints of microarray technology (C152-C153), statistical methods (C148), and bioinformatic predictions (C154-C155). The statement about experimental design (C150-C151) is supported by the methods description.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "Due to limited volunteer information and selection of an apparently homogeneous population, it was impossible to examine associations with parasite or host factors. Much larger sample sizes or population meta-analysis would be needed to identify patterns associated with host and parasite factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C157 acknowledge study limitations regarding population heterogeneity and sample size. These are appropriate acknowledgments of the study's scope and the need for future work. The recognition that the personalized responses require larger studies is scientifically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The study suggests that whole sporozoite vaccines predominantly boost pre-existing immunity in pre-exposed adults due to natural imprinting. The moderate number of protected individuals indicates that boosting pre-existing humoral responses may not be sufficient for sterile protection. If confirmed, these findings have implications for target age selection in endemic populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C167-C169 present the main conclusions and implications. While the data show limited vaccine-induced changes (supporting C167), the causal interpretation is speculative. The conclusion in C168 about insufficiency of boosting is reasonable given the low protection rates, but alternative explanations are not fully explored. The conditional framing ('if confirmed') in C169 is appropriate.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The manuscript describes the Reproducibility Project: Cancer Biology (RP:CB), a collaboration that conducts replications of high-profile cancer biology papers using pre-registered protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 accurately describe the RP:CB project structure and methodology, supported by appropriate citations and consistent with established knowledge about this reproducibility initiative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The original Liu et al. 2011 study reported that miR-34a was underexpressed in CD44+ prostate cancer stem cells and that enforced expression of miR-34a inhibited tumor regeneration by directly targeting CD44.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 accurately summarize the findings from the original Liu et al. 2011 study, supported by appropriate citations. These claims establish the context for the replication attempt.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Subsequent studies have reported tumor suppressive functions of miR-34a in various cancer types, including clinical trials, though the MRX34 trial was terminated due to adverse events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C20 provide appropriate context from the literature about miR-34a's role in cancer, all supported by proper citations. These claims establish the broader significance of the replication study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "LAPC4 cells obtained from the original study authors had an aberrant STR profile (lacking Y chromosome) and failed to form tumors, while cells from the original isolators had correct STR profiles and formed tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are well-supported by STR analysis data in Table 1 and experimental observations. This critical finding explains the need to change cell sources and represents a significant methodological issue affecting the replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In the replication study, miR-34a was overexpressed (202%) in CD44+ LAPC4 cells compared to CD44- cells, contradicting the original study which reported underexpression (3.4%), though let-7b showed expected underexpression (0.20%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C39 are supported by qRT-PCR data in Figure 1 and flow cytometry data in Figure 1\u2014figure supplement 1. However, the modified gating strategy (top 1% vs 10%) and weak CD44 signal introduce methodological concerns that may affect interpretation. The contradictory miR-34a result is a major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "LAPC4 cells transduced to express miR-34a showed no difference in tumor weight (0.55g vs 0.51g control, p=0.671) or growth kinetics compared to controls, contradicting the original study which reported significant tumor suppression (0.15g vs 0.54g control).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C50 are supported by experimental data in Figure 2B-C showing no effect of miR-34a on tumor growth. However, the critical confound is that miR-34a expression was lost in vivo (C52), making it impossible to determine whether miR-34a truly lacks tumor suppressive activity or whether the experimental system failed to maintain expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "miR-34a expression was unexpectedly lost in vivo in tumors derived from miR-34a transduced cells, despite successful in vitro expression and detectable GFP marker, suggesting silencing of the pre-miR-34a construct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are well-supported by qRT-PCR data in Figure 2D and RT-PCR for GFP in Figure 2\u2014figure supplement 1C. This is a critical finding that undermines interpretation of the tumor growth experiments and represents a major technical failure of the experimental system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The loss of miR-34a expression in vivo could be explained by promoter silencing mechanisms, and does not necessarily indicate that miR-34a lacks tumor suppressive activity since overexpression was not confirmed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 provide reasonable speculative explanations for the observed miR-34a silencing, supported by appropriate citations about CMV promoter silencing and tumor suppressor downregulation. The logical inference in C58 is sound\u2014the experiment cannot test miR-34a's function without confirmed expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "CD44 expression in tumors was similar across all groups in the replication study, contrasting with the original study's report of inverse correlation between CD44 and miR-34a expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 are supported by Western blot data in Figure 2E. However, interpretation is confounded by the absence of miR-34a expression in the miR-34a transduced group, making it impossible to assess whether miR-34a regulates CD44 in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Luciferase reporter assays showed no significant effect of miR-34a on CD44 3'UTR activity (wild-type: 0.99 vs 1.00, p=0.632; mutant: 1.19 vs 1.00), contradicting the original study which reported decreased activity (wild-type: 0.67 vs 1.00) partially rescued by mutation (0.78 vs 1.00).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by luciferase assay data in Figure 3A-B with appropriate statistical analysis. The replication failed to reproduce the original finding. However, C68 appropriately notes interpretive cautions about microRNA overexpression experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Meta-analyses combining original and replication studies showed no statistically significant effects for tumor weight (p=0.510) or luciferase reporter comparisons (p=0.353-0.581), with evidence of heterogeneity between studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 are supported by meta-analysis results in Figure 4A-C. The statistical analyses are appropriate and the interpretation of effect size comparisons and confidence intervals is sound. The heterogeneity findings (C77) are important for understanding differences between studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The original study's reported statistical significance for the wild-type luciferase reporter may be explained by use of an unpaired test, as the calculated 95% CI crosses zero indicating the null hypothesis cannot be rejected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 provide valid statistical critique supported by meta-analysis data in Figure 4C. The observation that the original study's effect size CI crosses zero is an important finding suggesting the original statistical approach may have been inappropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Interpretation of microRNA overexpression experiments should account for potential artifacts from non-physiological stoichiometry and effects on other microRNA targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by appropriate citation (Svoboda, 2015) and represents an important interpretive consideration for all microRNA overexpression studies in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Multiple factors including cell line genetic drift, subclonal drift, mouse strain heterogeneity, and microbiome differences could influence experimental outcomes, and unidentified protocol differences may exist between the original and replication studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 provide appropriate discussion of factors that could affect reproducibility, supported by relevant citations. These represent reasonable considerations for interpreting differences between studies, though they remain speculative without direct evidence.",
+    "result_type": "MINOR"
+  }
+]

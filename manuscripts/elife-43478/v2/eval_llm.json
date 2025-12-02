@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C28",
+      "C29",
+      "C33",
+      "C36"
+    ],
+    "result": "In wild-type Drosophila larvae, the dbd sensory neuron forms synapses specifically with the A08a medial dendritic arbor, while other neurons (A02l, A31x) synapse with the lateral arbor. This subcellular specificity is demonstrated by both electron microscopy and light microscopy approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16, C17, C28, C29, C33, and C36 provide converging evidence from multiple imaging modalities (EM and light microscopy) showing that dbd selectively synapses onto the A08a medial dendrite. The EM reconstruction (C28, Table 1) quantifies synapse numbers, light microscopy validates the morphology (C33), and synapse voxel quantification (C36) confirms the spatial distribution. The consistency across techniques strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The A08a interneuron has distinct morphological compartments: two spatially distinct dendritic arbors (medial and lateral) containing predominantly postsynapses, and a V-shaped output domain containing mixed pre- and postsynapses. This organization is consistent across light microscopy and EM reconstruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27 describe the morphological characterization of A08a using molecular markers (DenMark, Synaptotagmin), light microscopy, EM reconstruction, and computational analysis (synapse flow centrality). The consistency between light microscopy markers (C23, C24) and EM reconstruction (C25, C26) across four hemisegments provides strong validation of the neuronal architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Overexpression of axon guidance receptors Unc-5 or Robo-2 in dbd neurons causes lateralization of the dbd axon terminal, with Unc-5 being most effective. Lateralized dbd terminals form anatomical synapse voxels with the A08a lateral dendritic arbor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C38-C42 demonstrate that guidance receptor overexpression redirects dbd axon positioning. The repulsive response to midline cues (C38) is well-established in the literature. The experimental data (C39-C42, Figures 4 and supplements) show dose-dependent lateralization and formation of Brp+ synapse voxels at the lateral dendrite. However, C43 appropriately notes that anatomical proximity does not prove functional connectivity, which is addressed in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52"
+    ],
+    "result": "Lateralized dbd axons form functional synaptic connections with the A08a lateral dendrite. Optogenetic activation of lateralized dbd produces GCaMP6m responses in A08a that are statistically indistinguishable from wild-type controls, demonstrating functional connectivity at the ectopic location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C46-C49, and C52 demonstrate functional connectivity using optogenetics. The experiments include appropriate controls (-ATR, no Gal4 driver) and show that lateralized dbd activates A08a with similar efficacy to wild-type (C48, C49). The two-photon holographic stimulation experiments (C50-C52) further validate that dbd, not off-target neurons, drives the A08a response. The statistical comparisons support the conclusion of equivalent functional connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C74"
+    ],
+    "result": "The lateralized dbd-A08a synapses are monosynaptic. TTX eliminates spontaneous rhythmic activity but does not block dbd-induced A08a activation, demonstrating direct synaptic connectivity independent of polysynaptic circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C58, and C74 provide evidence for monosynaptic connectivity using TTX to block action potentials. The experimental design is appropriate: TTX effectively eliminates spontaneous activity (C54), yet dbd-induced A08a responses persist (C55). Combined with EM evidence of direct synapses (C74), this strongly supports monosynaptic connectivity. However, C78 appropriately notes a caveat about non-spiking interneurons, though this is unlikely to fully explain the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C19",
+      "C44",
+      "C59",
+      "C64",
+      "C65",
+      "C81"
+    ],
+    "result": "Axon guidance cues, rather than molecularly distinct dendritic arbors, are the major determinant of dbd-A08a subcellular synapse specificity. All regions of the A08a dendrite are competent to receive dbd synaptic inputs when dbd is repositioned by guidance receptor manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C19, C44, C59, C64, C65, and C81 represent the main conclusion of the study. The evidence is strong: lateralized dbd forms both anatomical (C41) and functional (C48, C56) synapses with the lateral dendrite, which normally receives no dbd input. This demonstrates that the lateral dendrite is competent to receive dbd synapses, supporting the guidance cue model over the labeled arbor model. The conclusion is well-supported by the experimental data, though C67 and C70-C71 appropriately note that both mechanisms may operate in different contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Two-photon holographic stimulation experiments demonstrate that A08a responds significantly more to dbd activation than to off-target neurons in the dbd-Gal4 line, in both wild-type and Unc-5 misexpression conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C51 address a potential confound from off-target expression in the dbd-Gal4 line. The spatially restricted two-photon stimulation (Figure 6) allows selective activation of dbd versus off-target neurons within the same animal. The significantly larger A08a responses to dbd stimulation validate that the observed connectivity is primarily due to dbd, not off-targets. This is an important control that strengthens the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C75",
+      "C76"
+    ],
+    "result": "A08a GCaMP responses are significantly greater in the presence of TTX, suggesting that dbd may activate an inhibitory feedforward circuit (potentially via A02d) that is silenced by TTX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C75, and C76 describe an unexpected observation that TTX increases rather than decreases A08a responses. The interpretation of feedforward inhibition is reasonable and supported by prior literature showing A02d is inhibitory and receives dbd input (C76). However, this remains somewhat speculative as direct testing of the A02d circuit was not performed. The observation is robust but the mechanistic explanation requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "There appear to be fewer synapse voxels between lateralized dbd and A08a compared to wild-type, yet functional connectivity is indistinguishable, possibly due to homeostatic mechanisms increasing synaptic efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 makes a qualitative observation about synapse voxel numbers, but no quantitative comparison is provided in the figures or text. The functional connectivity data (C48) shows statistically indistinguishable responses, but without quantification of synapse voxel numbers in both conditions, the premise cannot be fully evaluated. Claim C73 offers a speculative explanation (homeostatic mechanisms) without experimental evidence. This result requires additional quantitative analysis to be supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The dbd-A08a synapse filling fraction is similar to previously described synaptically connected neurons, validating that these are bona fide synaptic connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 compares the filling fraction to published data (Gerhard et al., 2017; Stepanyants et al., 2002) and shows consistency (Figure 2\u2014figure supplement 1). This analysis validates that the dbd-A08a connections identified in EM represent genuine synaptic partnerships rather than random proximity. The comparison to established benchmarks strengthens confidence in the EM reconstruction data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "The truncated Brp-Short protein localizes to presynaptic sites but is not functional for inducing synapse formation, making it an appropriate marker for visualizing presynapses without perturbing synapse formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by citations to previous research (Fouquet et al., 2009; Owald et al., 2010) establishing the properties of Brp-Short. This is an important methodological validation ensuring that the marker used to identify synapses does not itself alter synapse formation, which could confound the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The A08a neuron at third instar larval stage (72\u00b14 hr ALH) retains its morphological features including medial and lateral dendritic arbors plus V-shaped output domain, validating the use of this stage for optogenetic experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by Figure 5\u2014figure supplement 1 showing that A08a morphology is preserved at the later developmental stage used for optogenetics. This is an important validation because the anatomical characterization was performed at 24\u00b14 hr ALH while functional experiments were at 72\u00b14 hr ALH. The morphological consistency justifies comparing results across developmental stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "In some cases (8/20 A08a pairs), fluctuations in GCaMP6m activity were detected following TTX application, though the source of these fluctuations is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 reports an observation from the TTX experiments with appropriate uncertainty about interpretation. The authors acknowledge this could represent incomplete inactivation, graded Ca2+ potentials, or Ca2+ release from organelles. This transparent reporting of an unexplained observation is appropriate, though it does not substantially impact the main conclusions since the majority (12/20) showed complete elimination of spontaneous activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Animals fed ATR have statistically significant higher baseline calcium activity than -ATR controls, likely due to weak activation of Chrimson by 488 nm imaging light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79 and C80 identify a technical artifact and provide a reasonable explanation based on prior literature (Klapoetke et al., 2014). The authors appropriately note this does not change their interpretation of stimulus-evoked responses. This is good experimental practice in acknowledging and explaining an observed artifact, though it is a minor technical point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C37",
+      "C66"
+    ],
+    "result": "A08a receives additional synaptic inputs on its dendritic arbors and output domain from neurons beyond the four characterized in detail, and dbd does not form synapses with the A08a output domain despite close proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31, C32, C37, and C66 describe observations for which the supporting data is explicitly stated as not shown. While these claims are likely true based on the EM reconstruction, they cannot be fully evaluated without access to the data. The claim about dbd not synapsing on the output domain (C66, C37) is important for the discussion but lacks presented evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The A08a output domain may contain cell surface molecules that locally prevent dbd synapse formation, and both labeled arbors and guidance cues may work together to achieve subcellular synaptic specificity in different contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67, C70, and C71 are explicitly speculative, proposing mechanisms that were not directly tested. While the speculation is reasonable and draws on relevant literature (C68, C69), no experimental evidence is provided to test whether CSMs restrict synapse formation on the output domain or whether both mechanisms operate together. These are appropriate discussion points but remain hypotheses requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The study cannot determine whether dbd maintains cellular synaptic specificity with its other target neurons after lateralization, as some targets (like Jaam-3) only have medial dendritic arbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82 and C83 appropriately acknowledge a limitation of the current study. The authors transparently note they cannot assess whether lateralized dbd maintains connections with other targets that lack lateral dendrites. This is an important caveat that does not diminish the main findings but identifies an area for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "The Drosophila larva has 10,000 neurons and the human brain has 80 billion neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6 and C7 present factual statements about neuron numbers that are commonly cited but not directly supported by citations in this manuscript. The human brain neuron count of 80 billion is reasonably accurate based on modern estimates, though the Drosophila larval count may be approximate. These are contextual statements in the introduction and do not impact the main results, but ideally would be cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The manuscript provides extensive background on subcellular synaptic specificity in various systems, the importance of synapse positioning for circuit function, and current knowledge gaps regarding mechanisms of subcellular targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 and C60-C63, C84-C87 provide literature context supported by appropriate citations. These establish the importance of the research question and position the current work within the field. The citations appear accurate and relevant. C15 and C62 appropriately identify knowledge gaps that the current study addresses. These background claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study performed scRNA-seq on over 5,400 Toxoplasma parasites across three strains (RH, Pru, ME49), with 612 RH, 2198 Pru, and 1552 ME49 parasites passing quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C28-C31 provide consistent experimental data on sample sizes and quality control metrics. The numbers are explicitly stated and internally consistent across the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors developed and validated a cost-effective 384-well Smart-seq2 protocol with sensitivity comparable to 96-well format, achieving 50% detection at 17 molecules for RH and Pru datasets, with doublet rate below 1% and quantitative measurement capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 and C37-C39 collectively demonstrate technical validation through multiple independent measurements (doublet testing, titration experiments, ERCC spike-in analysis). The sensitivity metrics are supported by appropriate controls and comparisons to published benchmarks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "scRNA-seq analysis of asynchronous RH tachyzoites revealed a circular trajectory in PCA space corresponding to cell cycle progression, with five distinct clusters including two G1 subclusters (G1a and G1b) with distinct transcriptional profiles, validated by correlation with bulk transcriptomics and RNA velocity analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 describe a coherent cell cycle analysis supported by multiple complementary approaches (PCA, clustering, RNA velocity, DNA content staining, bulk transcriptome correlation). The identification of G1a and G1b subclusters is supported by differential expression analysis and independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Pseudotime analysis identified misannotated genes including ROP33/ROP34 (non-rhoptry proteins) and IMC2a (actually GRA44), while correctly identifying unannotated rhoptry proteins ROP48 and RON11, demonstrating the utility of scRNA-seq for refining genome annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 demonstrate that scRNA-seq-based pseudotime clustering can identify annotation errors, with validation from recent experimental studies (Beraki et al., 2019; Camejo et al., 2014; Beck et al., 2013; Coffey et al., 2018). The concordance between expression patterns and experimental localization data supports the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Analysis of alkaline-induced Pru parasites revealed six distinct clusters (P1-6) with partial correlation to cell cycle states and developmental stages, showing that most induced parasites arrest in G1b phase, with 72% remaining SAG1+ suggesting asynchronous differentiation, and 7.1% of bradyzoites actively replicating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C64 provide a comprehensive characterization of asexual development supported by multiple analytical approaches (UMAP, clustering, RNA velocity, marker gene expression). The observation of cycling bradyzoites (C63-C64) is supported by both scRNA-seq data and citation to Watts et al., 2015.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "A novel P6 cluster was identified in alkaline-induced Pru parasites (21% of population), with intermediate expression between tachyzoites and bradyzoites, enriched for specific AP2 transcription factors, and potentially representing either reversion from bradyzoites or a distinct developmental trajectory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C69 and C103-C111 identify an interesting P6 cluster, but the biological interpretation remains speculative. The RNA velocity analysis (C109-C110) suggests P6 transitions from P2 rather than P1, contradicting the reversion hypothesis (C108). The lack of P6 in ME49 (C72) raises questions about its biological significance versus strain-specific artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Comparative analysis of ME49 and Pru strains showed five clusters in ME49 with significant overlap to Pru, but P6-specific genes were not enriched in any ME49 cluster, suggesting P6 state is not conserved across type II strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 demonstrate reproducibility of most findings across strains while identifying strain-specific differences. The absence of P6 in ME49 is clearly documented but raises questions about the biological significance of P6 in Pru.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Analysis using higher-sensitivity 96-well Smart-seq2 revealed that most SRS genes are expressed sporadically in only a small fraction of parasites at lower abundance than other genes, with variation unexplained by measurement noise, cell cycle, or asexual development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 demonstrate sporadic SRS expression through multiple lines of evidence: comparison to ERCC spike-ins (C80), detection rate analysis (C79, C81), and projection dependence scoring (C82). The 96-well vs 384-well comparison (C77-C78) validates that findings are not due to technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "A single SAG1-negative RH tachyzoite with sexual stage-like expression pattern was identified, leading to discovery that transient AP2IX-1 expression reduces SAG1 protein and induces sexual stage markers including >1000-fold increase in SRS22C, demonstrating AP2IX-1 controls surface antigen switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 and C113-C117 describe discovery of a rare cell leading to functional validation. The transient transfection experiments (C87-C88) provide strong experimental support for AP2IX-1's role in antigen switching. However, the causal role in sexual differentiation (C117) remains speculative as only a subset of genes were validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C120",
+      "C121"
+    ],
+    "result": "Comparative analysis of 1830 orthologous genes between Plasmodium berghei and Toxoplasma Pru revealed conserved timing of cell cycle gene expression despite fundamental differences in replication modes, with Plasmodium stages mapping to specific Toxoplasma cell cycle phases based on shared expression of ribosomal, DNA replication, and cytoskeletal genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C99 and C120-C121 demonstrate cross-species conservation through computational integration and gene set analysis. The mapping of Plasmodium stages to Toxoplasma cell cycle phases (C94-C98) is supported by expression of functionally related gene sets, though the biological significance of these similarities requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "An interactive single-cell atlas for Toxoplasma gondii was constructed at http://st-atlas.org to enable community access to the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 describes a data resource that was created and made publicly available. This is a straightforward methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Two distinct G1 transcriptional states (G1a and G1b) were identified in cycling parasites, with bradyzoites found predominantly in G1b, suggesting a putative checkpoint between these phases that may regulate developmental transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by the cell cycle analysis (C40-C47) and developmental analysis (C54-C64). The G1a/G1b distinction is validated by correlation with bulk data (C101, citing Behnke et al., 2010). However, the checkpoint hypothesis (C102) is speculative and requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "96-well Smart-seq2 greatly improved measurement sensitivity over 384-well format, likely due to changes in input mRNA concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is directly supported by the comparative analysis in C77-C78 showing ~40% vs 14% single-molecule detection sensitivity. The mechanistic explanation (mRNA concentration) is reasonable inference based on protocol differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The biological role of AP2 transcription factors in Toxoplasma is evolutionarily conserved with their role in plants, where they regulate stress response and sexual differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C118 states established knowledge about AP2 factors in plants, but C119's inference of evolutionary conservation is speculative. While AP2IX-1 does regulate antigen switching (C87-C89), the functional analogy to plant AP2 factors requires more direct evidence of homology and mechanistic similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study detected 30-50% reads mapping to Toxoplasma protein-coding genes, with most unmapped reads from 28S rRNA, detecting on average 862-1290 genes per parasite, consistent with challenges in single-parasite RNA-seq also observed in Plasmodium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 describe technical characteristics of the data supported by Figure 1 supplements. The rRNA contamination issue (C34-C35) is acknowledged and contextualized with Plasmodium studies, showing awareness of technical limitations.",
+    "result_type": "MINOR"
+  }
+]

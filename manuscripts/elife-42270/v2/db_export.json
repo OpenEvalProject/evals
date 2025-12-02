@@ -1,0 +1,1346 @@
+{
+  "submission": {
+    "id": "5d2ed4a8-7ea0-4370-a6b8-644fd80e4ffe",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:43:14.243166Z",
+    "updated_at": "2025-12-02T07:43:14.243166Z"
+  },
+  "content": [
+    {
+      "id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "submission_id": "5d2ed4a8-7ea0-4370-a6b8-644fd80e4ffe",
+      "content_type": "manuscript",
+      "content_text": "# Preacinetobactin not acinetobactin is essential for iron uptake by the BauA transporter of the pathogen Acinetobacter baumannii\n\n## Authors\n\n- Lucile Moyni\u00e9<sup>1</sup> ([ORCID: 0000-0002-4097-4331](https://orcid.org/0000-0002-4097-4331))\n- Ilaria Serra<sup>3</sup>\n- Mariano A Scorciapino<sup>3</sup>\n- Emilia Oueis<sup>5</sup> ([ORCID: 0000-0002-0228-6394](https://orcid.org/0000-0002-0228-6394))\n- Malcolm GP Page<sup>6</sup>\n- Matteo Ceccarelli<sup>3</sup>\n- James H Naismith<sup>1</sup> ([ORCID: 0000-0001-6744-5061](https://orcid.org/0000-0001-6744-5061)) \u2020\n\n### Affiliations\n\n1. Division of Structural Biology Wellcome Trust Centre of Human Genomics Oxford England\n2. Research Complex at Harwell, Rutherford Laboratory Didcot England\n3. Department of Physics University of Cagliari Cagliari Italy\n4. Department of Chemical and Geological Sciences University of Cagliari Cagliari Italy\n5. Biomedical Sciences Research Complex The University of St Andrews Scotland United Kingdom\n6. Department of Life Sciences and Chemistry Jacobs University Bremen Germany\n7. The Rosalind Franklin Institute Didcot England\n\n\u2020 Corresponding author\n\n## Abstract\n\nNew strategies are urgently required to develop antibiotics. The siderophore uptake system has attracted considerable attention, but rational design of siderophore antibiotic conjugates requires knowledge of recognition by the cognate outer-membrane transporter. Acinetobacter baumannii is a serious pathogen, which utilizes (pre)acinetobactin to scavenge iron from the host. We report the structure of the (pre)acinetobactin transporter BauA bound to the siderophore, identifying the structural determinants of recognition. Detailed biophysical analysis confirms that BauA recognises preacinetobactin. We show that acinetobactin is not recognised by the protein, thus preacinetobactin is essential for iron uptake. The structure shows and NMR confirms that under physiological conditions, a molecule of acinetobactin will bind to two free coordination sites on the iron preacinetobactin complex. The ability to recognise a heterotrimeric iron-preacinetobactin-acinetobactin complex may rationalize contradictory reports in the literature. These results open new avenues for the design of novel antibiotic conjugates (trojan horse) antibiotics.\n\n## Introduction\n\nAcinetobacter baumannii is a Gram-negative bacteria that has been identified by the WHO as a critical priority pathogen for new antibiotic development. A. baumannii was highlighted for its increasing role in nosocomial infections and its intrinsic resistance to multiple antibiotics. Several virulence factors have been identified in Acinetobacter species including iron-uptake pathways (Peleg et al., 2012; Harding et al., 2018). Iron is essential for all bacteria, and consequently, human pathogens have to possess an efficient acquisition system to scavenge iron from the host during infection. Gram-negative bacteria secrete small molecules (siderophores), which chelate iron with extremely high affinity. The resulting siderophore-iron complex is recognized by a specific outer-membrane transporter that couples to the TonB system to translocate the complex (and thus iron) into the periplasm where an ABC transporter takes it across the inner membrane (Noinaj et al., 2010).\n\nThe conserved and essential nature of the uptake system has drawn interest as a potential drug target. Several siderophore-conjugates have been developed to deliver drugs directly to the periplasm with promising results (Wencewicz and Miller, 2017). The successful compounds in part appear able to overcome the resistance of the bacteria to the antibiotic perhaps by increasing the local concentration. This \u2018trojan horse\u2019 strategy is potentially very general and could be used widely to specifically target bacteria and thus avoid the killing of the beneficial microbiome. Three classes of siderophore have been identified as being produced by A. baumannii, acinetobactin (Yamamoto et al., 1994), fimsbactins (Proschak et al., 2013) and baumannoferrins (Penwell et al., 2015) and each would be expected to be transported by distinct TonB-dependent transporters. Analogues of the bis-catechol siderophore fimsbactin A linked to antibiotics such as loracarbef/ciprofloxacin (Wencewicz and Miller, 2013), daptomycin (Ghosh et al., 2018) and cephalosporin (Liu et al., 2018) have proven effective in killing A. baumanni. A. baumanni has been also targeted by directly inhibiting the biosynthesis of acinetobactin (Drake et al., 2010; Neres et al., 2013) and by disrupting the acinetobactin uptake mechanism through the use of an oxidized version of acinetobactin (Bohac et al., 2017).\n\nAn important requirement for rational development of a trojan horse strategy is understanding the chemical nature of the siderophore and the structure activity relationship of its translocation, that\u00a0is what parts are recognised and where cargo can be attached. The acinetobactin system is of particular interest since it has been identified as a virulence factor in mouse infection models (Gaddy et al., 2012). Acinetobactin is synthesized as a precursor, preacinetobactin, which rearranges non-enzymatically and irreversibly at pH\u00a0>7 to give acinetobactin (Figure 1A) (Sattely and Walsh, 2008; Wuest et al., 2009; Shapiro and Wencewicz, 2016). There have been different reports on whether acinetobactin or preacinetobactin or both are transported into the bacteria (Song et al., 2017; Shapiro and Wencewicz, 2017) complicating rational design. The A. baumannii outer-membrane transporter protein, BauA, that recognises this siderophore has itself been identified as a vaccine candidate (Esmaeilkhani et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Schematic representation of the spontaneous isomerization of preacinetobactin into acinetobactin occurring at pH\u00a0>7. (B) Overall structure of BauA. The N-ter plug domain is colored in blue and the \u03b2-barrel in yellow.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Plug domains are colored in blue. BauA \u03b2-barrel forms a large open cavity giving large access to the loops of the plug domain compared to FepA and FpvA.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A)\u00a0The asymmetric unit of the crystal contains a trimer. View from the extracellular side of the trimer. The surface of BauA is colored by electrostatic charges calculated in CCP4MG. Position of the binding site have been alighted with a green circle.\u00a0(B) BauA runs around 146 kDa in a blue native gel. BauA purified sample has been loaded into\u00a0a\u00a0NativePAGE Novex Bis-Tris gel (Invitrogen).\u00a0(C) Size-exclusion chromatography coupled to multi-angle light-scattering (SEC-MALS) analysis gives a molecular weight of 80 kDa which is consistent with a monomeric state. Purified proteins were injected on a Superdex 200 16/60 column (GE Healthcare) equilibrated with 10 mM Tris pH 8, 150 mM NaCl and 0.45% C8E4 and monitored in-line with three detectors for UV absorption, light scattering (LS) and refractive index (RI) using a DAWN HELEOS II light-scattering detector (Wyatt Technology) and an Optilab rEX interferometric refractometer detector (Wyatt Technology). Data were analyzed using ASTRA software (Wyatt Technology).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Secondary structure elements of BauA are illustrated above the sequence. N\u03b1 and N\u03b2 refer to the plug domain elements. Residues forming the binding sites BauA, FptA (Cobessi et al., 2005b), FpvA (Cobessi et al., 2005a) FecA (Ferguson et al., 2002) FhuA (Ferguson et al., 1998), FetA (Brillet et al., 2011), FepA (Buchanan et al., 1999) are highlighted in green and blue for polar and hydrophobic interactions respectively. Residues involved in the binding site are part of the same secondary structure elements. The alignment was performed with PROMALS3D (Pei et al., 2008) and the picture was drawn using ESPript (Robert and Gouet, 2014).\n\nWe report the structure of the BauA transporter bound to its cognate siderophore. Our structure reveals the molecular basis of recognition and sheds light on the question of which isomer is recognised. We establish that BauA recognises preacinetobactin not acinetobactin. Interestingly, we actually found that a mixed complex of both preacinetobactin and acinetobactin can be bound to the transporter. Under the most likely physiological conditions, low iron and neutral pH, the mixed species would seem the most plausible compound for uptake. Our data provide structural insights that can be used to guide rational design of \u2018trojan horse\u2019 antibiotics against A. baumannii.\n\n## Results\n\n### Structural biology\n\nThe apo structure of BauA was solved to a resolution of 1.8 \u00c5 by single wavelength anomalous diffraction (SAD) using selenomethionine-labeled proteins. Residues 33 to 703 of the protein are well defined in the electron density map, while the N-terminal region comprising the TonB box is missing, presumably because it is flexible. BauA has the typical outer-membrane TonB-dependent transporter (TBDT) fold with a \u03b2-barrel formed by 22 antiparallel strands, several extracellular loops, and a plug domain folded inside of the barrel (Figure 1B). Compared to the other TBDTs, the extracellular loops of the \u03b2-barrel form a large open cavity bordered by mainly short and apolar amino acids giving large access to the loops NL1-NL3 of the plug domain (Figure 1\u2014figure supplement 1). Search of the structural database reveals the closest structural homologues are ferrichrome (Locher et al., 1998) (1by5, rmsd of 2.5 \u00c5 for 634 residues aligned and 2fcp, 2.4 \u00c5 for 631 residues) and enantiopyochelin (Brillet et al., 2011) (3qlb, rmsd of 2.5 \u00c5 for 630 residues) transporters. The asymmetric unit contains three monomers arranged around a threefold symmetry axis reminiscent of the porin arrangement (Figure 1\u2014figure supplement 2A) and thus plausibly biologically meaningful. PISA (Krissinel and Henrick, 2007), a computational assessment of oligomeric state in the crystal, suggests a trimer with a high degree of confidence. Biophysical methods (gel filtration and light scattering) do not support a trimeric assembly.\u00a0Size Exclusion Chromatography coupled to Multi-Angle Light Scattering (SEC-MALS) analysis in C8E4 is consistent with monomer whilst native gel shows the protein runs more closely to a dimer; however, the detergent bound to the protein may increase the apparent weight suggesting a monomer in solution (Figure 1\u2014figure supplement 2B; Figure 1\u2014figure supplement 2C).\n\nWe incubated separate native protein crystals with preacinetobactin and acinetobactin compounds (both compounds preloaded with Fe3+); surprisingly in both cases, we obtained the same structure: BauA bound to a heterocomplex Fe3+-preacinetobactin-acinetobactin (1:1:1) (Figure 2A). Given that preacinetobactin is the precursor for acinetobactin in a pH-dependent irreversible rearrangement reaction, it would explain this observation only for the preacinetobactin sample. LC-MS analysis of preacinetobactin in the crystallization conditions shows that in the absence of iron, the majority of preacinetobactin is converted to acinetobactin in 30 min and no preacinetobactin was observed the next day (Figure 3\u2014figure supplement 1C); indicating that the presence of iron stabilizes preacinobactin. On the other hand, we discovered that there was a small amount (~2%) of preacinetobactin in our acinetobactin sample (Figure 3\u2014figure supplement 1A). After full conversion of preacinetobactin into acinetobactin (Figure 3\u2014figure supplement 1B), no crystal structure complex with BauA was obtained with this material.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig2-v2.jpg)\n\n**Figure 2.:** (A) Overall structure of BauA in complex with Fe3+, preacinetobactin and acinetobactin.\u00a0The N-ter plug domain is colored in blue and the \u03b2-barrel in yellow. Preacinetobactin is shown as sticks with carbon atoms colored cyan and acinetobactin carbon atoms are in white, nitrogen in blue and oxygen in red. The Fe3+ is represented as an orange sphere. Secondary structure elements involved in the binding site have been labeled. (B) FO-FC electron density from the original omit map at 3 \u03c3 around Fe3+, preacinetobactin and acinetobactin complex. The color scheme of the Fe3+- siderophores is the same as A. We model the second molecule as a mixture of two diastereomers of acinetobactin. (C) 2FO-FC (blue) and FO-FC (green) electron density maps at 1 and 3 \u03c3, respectively, around acinetobactin. In the left panel, only the acinetobactin (carbon atom represented in pink) has been added in the model before refinement. Position of (5-ent)-acinetobactin is shown in yellow line for information. In the right panel, only (5-ent)-acinetobactin (yellow stick) has been added in the model. Position of acinetobactin is shown in pink line for information. Schematic representation of both compounds has been added in the top corner for each image.\u00a0(D) Binding site of the siderophores. Residues within 4.0 \u00c5 of the siderophores are displayed and hydrogen bonds are shown as black broken lines. Carbon atoms of residues of the \u03b2-barrel are in yellow and the ones of the plug domain in blue.\u00a0(E) Ligplot diagram of Fe3+, preacinetobactin, acinetobactin bound to BauA. Covalent bonds of the siderophore and protein residues are in purple and brown sticks, respectively. Hydrogen bonds are represented by green dashed line and hydrophobic contacts are shown as red semi-circles with radiating spokes.\u00a0One molecule of ethylene glycol is present in the binding site. Figure prepared with Ligplot\u00a0(Wallace et al., 1995).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Fe3+ of FptA (Cobessi et al., 2005b) FpvA (Cobessi et al., 2005a), FecA (Ferguson et al., 2002), FhuA (Ferguson et al., 1998) FetA (Brillet et al., 2011) complexes are represented by an orange sphere and the one of BauA in pink. BauA structure is shown in transparency (yellow) and NL1-NL3 are highlighted in blue.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** 2FO-FC (contoured at 1 \u03c3 blue) and FO-FC (contoured at 3 \u03c3 in green and \u22123 \u03c3 in red) electron density maps, respectively, around the second molecule when it has been modeled as (A) preacinetobactin (correct diasteromer), (B) a mixture of preacinetobactin and acinetobactin (both correct diasteromers), (C) acinetobactin (correct diasteromer), (D) acinetobactin (\u2018wrong\u2019 diastereomer (5-ent)-acinetobactin) and (E) a mixture of the two diastereomers of acinetobactin. In the co-crystal structure, the correct diastereomer (F) shows significant unfilled FO-FC density, where as the \u2018wrong\u2019 \u2018diastereomer\u2019 (G) (5-ent)-acinetobactin shows less unfilled density.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Binding site observed in the crystal structure (A) has been used to model the binding of Fe3+-acinetobactin and a mixture of two diastereomers of acinetobactin (rac-acinetobactin) (B) Fe3+-(5-ent)-preacinetobactin- rac-acinetobactin (C) and Fe3+-preacinetobactin-preacinetobactin (D). Fe3+-acinetobactin- rac-acinetobactin and Fe3+ -(5-ent)-preacinetobactin- rac-acinetobactin would clash with Tyr314 (red dashes).\n\nThe coordination of the iron is octahedral with four coordination atoms from preacinetobactin (one hydroxy group of the catecholate, the hydroxy of the hydroxamate, the nitrogen of the methyl oxazoline and one nitrogen (N1) of the imidazole group) and two hydroxyls from acinetobactin (the catecholate) (Figure 2B). The Fe3+-preacinetobactin coordination geometry is similar to that observed for one Ga3+ in the gallium complex with anguibactin but the later forms a Ga2L2MeOH2 complex with two methanol molecules bridging the two four coordinate Ga3+ ions (Hossain et al., 1998). The net charge of the Fe3+-preacinetobactin complex assuming three deprotonated catecholates, one deprotonated hydroxamate and Fe3+ would be \u22121, consistent with stabilization by Arg253. The interaction between the catecholate and the nitrogen of the methyl oxazoline of the acinetobactin and the N1 of the imidazole group and the catecholate of preacinetobactin may play a role in the stabilization of the complex. A water molecule bridges the catecholate oxygen atoms of preacinetobactin.\n\nThe protein interacts mainly with the preacinetobactin molecule. The binding site is located inside the \u03b2-barrel similar to other siderophore complexes (Locher et al., 1998; Brillet et al., 2011; Chimento et al., 2005; Cobessi et al., 2005a; Cobessi et al., 2005b; Ferguson et al., 1998; Ferguson et al., 2002) (Figure 1\u2014figure supplement 3; Figure 2\u2014figure supplement 1; Figure 2A). The siderophores interact mainly with the residues of the \u03b2-barrel and the extracellular loops. BauA recognises the preacinetobactin through two direct hydrogen bonds between the hydroxamate group and Tyr312 of \u03b27 and Arg253 of L3 and one interaction through a bridging water molecule between Asp375 and the nitrogen N2 of the imidazole, respectively (Figure 2D and E). The binding site is predominantly hydrophobic in character with van der Waals interactions involving residues Trp97, Tyr125, Tyr314, Tyr378, Gly334, Gln335, Leu336, Arg379 and Leu684. Although there are no hydrogen bonds between the siderophores and the plug domain, two residues of the plug domain (Trp97 and Tyr125) do make van der Waals\u00a0interactions with preacinetobactin. The acinetobactin molecule makes only one hydrogen bond (Arg253) and one van der Waals interaction (Leu684). There are no changes in the TonB region as a result of ligand binding. The experimental electron density is most convincingly fitted by a mixture of two diastereomers of acinetobactin (Figure 2C), in an earlier co-crystalliszation experiment the \u2018wrong\u2019 diastereomer of acinetobactin was clearer\u00a0(Figure 2\u2014figure supplement 2F; Figure 2\u2014figure supplement 2G. Consequently, we disfavor explanations for the electron density based on disorder or a mixture of acinetobactin/preacinetobactin (Figure 2\u2014figure supplement 2). However, we find no evidence for the \u2018wrong\u2019 diastereomer in any NMR spectra of the starting materials which all match the literature report for the 'correct' diastereomer (Shapiro and Wencewicz, 2016; Takeuchi et al., 2010). Spontaneous chemical interconversion of the diastereomers seems implausible in simple solution. Thus, we are left to suggest the presence of small contaminating amount of the \u2018wrong\u2019 diastereomer or chemical conversion under crystallization conditions (protein, buffer, salts, crystal effects etc).\n\n### Siderophore binding\n\nThree observations led us to speculate BauA preferentially recognises preacinetobactin; first, the protein ligand contacts are almost all with the preacinetobactin molecule, secondly the reduction of the preacinetobactin impurity to undetectable level gave no co-complex, and\u00a0finally even a small amount of preacinetobactin as an impurity lead to complex formation. To test our hypothesis, we conducted isothermal titration calorimetry (ITC) experiments with both compounds (Figure 3A and Figure 3\u2014figure supplement 2). These results are unambiguous: the Fe3+-preacinetobactin binds to BauA with nM affinity whilst Fe3+-acinetobactin shows no binding. The titration curves and thus affinity for the Fe3+-preacinetobactin complex and BauA differ depending on the ratio of Fe3+ to siderophore. A stoichiometry of 1:1 Fe3+: preacinetobactin has a Kd of 763 nM, whereas 1:2 Fe3+:preacinetobactin bind with 83 nM affinity. In both cases, the stoichiometry of binding was one Fe3+ to one protein; in neither case did we see any evidence for a biphasic recognition model that has been proposed between enterobactin and FepA (Payne et al., 1997).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Isothermal calorimetry titrations\u00a0of Fe3+-preacinetobactin (ratio 1:2 in red sphere and 1:1 in black triangle) and Fe3+-acinetobactin (ratio 1:2 in open red circle and 1:1 in open black lozenge). For Fe3+-preacinetobactin, the isotherm fitted with the Origin software gave a Kd of 83 and 763 nM for the ratio 1:2 and 1:1, respectively. With both ratios, no interaction has been detected for Fe3+-acinetobactin.\u00a0(B) Results of curve fitting for titration of preacinetobactin in acetate buffered saline\u00a0(ABS) at pH 5.0 (meter reading) with Ga3+. Results are shown for the proton resonance due to the methyl group and the curves correspond to the complexation model with the lowest total square deviation between the calculated (solid lines) and the experimental data (dots). Key: L, ligand; M, metal. (C) Molecular structure of acinetobactin (top) and preacinetobactin (bottom) is shown together with color-coded markers. Cyan triangles were used to represent the chemical shift difference observed in ABS between the resonance of the L2M complex and the corresponding one for the free L in the absence of metal ions (Table 1). Maximum colour intensity was set for the largest shift observed for each case and rescaling the other markers proportionally. Some markers are missing because corresponding resonances were not sufficiently resolved.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0In DMSO, both samples contain small amounts of the other species (retention time 21.10 and 21.43 min for acinetobactin and preacinetobactin respectively). (B) In 100 mM sodium phosphate buffer, preacinetobactin fully converts to acinetobactin. (C) In the crystallization condition (0.1 M Hepes pH 7.5), 2/3 of preacinetobactin is converted into acinetobactin after 1 hr and is fully converted overnight.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Top panel raw titration data and bottom panel the fitted isotherm after the control subtraction using Origin software. Experiments A, B, D have been done using an ITC200 and C with a VP-ITC.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The molecular structure of both (A) preacinetobactin and (B) acinetobactin are shown together with lower case labels indicating the different proton groups. For each of the two siderophores, selected 1H-NMR spectra are shown from the corresponding titration with Ga3+ ions in acetate buffered saline. In particular, in the case of preacinetobactin (A), three spectra were selected, where the free ligand (0 eq. Ga3+), the ML2 complexes (0.5 eq. Ga3+) and the ML complex (1.0 eq. Ga3+) concentration is maximum, respectively. In the case of acinetobactin (B), two spectra were selected, where the free ligand (0 eq. Ga3+) and the complex (stoichiometry not determined; 0.3 eq. Ga3+) concentration is maximum, respectively. On each spectrum, lower case labels are used to show resonance assignments for the different species formed along the titration.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** At the end of the titration of preacinetobactin with Ga3+ in acetate buffered saline (1.3 eq. Ga3+), one 1H-NMR spectrum was acquired each hour (from bottom to top) for 24 hr. The regions at frequency (A) higher and (B) lower than the water resonance (~4.78 ppm) are shown. No significant changes in the spectrum are observed.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Spectra have been recorded at 25\u00b0C in CD3OD with a Bruker Avance spectrometer (ZH035003, SN1423) with a 9.4 T magnet, 400 MHz for 1H (Z54948, SN01072) and 5 mm BBI probe (PA BBI 400S1 H-BB-D, SN 2820201). The temperature was controlled with a nitrogen flushed BCU-05 temperature unit. Topspin 2.1 software was used for acquisition, automated with Icon NMR 4.1.1 and TopShim (including automatic tuning, matching and shimming). Topspin 2.1 or Topspin 3.2 software were used for evaluation.\n\n### Siderophore-metal complex stoichiometry\n\nThe different affinities of Fe3+-preacinetobactin observed in ITC prompted us to examine the stoichiometry of the complex. Different molar ratios of metal to preacinetobactin were examined through 1H-NMR by using Ga3+ as a diamagnetic alternative to Fe3+ (Matzanke, 2006) (Figure 3\u2014figure supplement 3). The conversion from preacinetobactin to acinetobactin is much slower at the lower pH used (pH 5) (Shapiro and Wencewicz, 2016), therefore on the timescale of the experiment, we ignored the small amount of acinetobactin. The titration reveals complexation of the free siderophore in the presence of low amounts of metal to give a complex of two siderophores to one metal, with the free siderophore almost disappearing when the metal reaches 0.5 molar equivalent (Figure 3B). Two different new sets of resonances were observed, both with chemical shift distinct from the free siderophore. This magnetic inequivalence clearly indicates two different ion coordination modes for each molecule of preacinetobactin in the ML2 complex. The only exception was the ethyl-imidazole group, which showed one set of resonances the same as free siderophore as well as a new series of different resonances. This is consistent with the imidazole being directly involved in metal coordination in one of the siderophores whilst in the other siderophore the imidazole is uncoordinated. As the amount of metal is further increased, a 1:1 complex of the siderophore with the metal appeared whilst the amount of the 2:1 complex decreased. This indicates there is an equilibrium in which the ML2 complex is favored at low metal concentration but the ML complex is predominant at higher metal concentrations. The formation constants were calculated as Kf(ML)=1.2\u00b7105 M\u22121; Kf(ML2)=7.2\u00b7103 M\u22121. Beyond 1.0 eq. Ga3+, a noticeable deviation between the model and the experimental data can be seen (Figure 3B). This is plausibly due to a fraction of acinetobactin present, which can coordinate some of the ML complexes formed by preacinetobactin giving the mixed complex seen in the structure. Preacinetobactin in these mixed complexes would be magnetically undistinguishable from those in the true ML2 complexes, thus artificially inflating the apparent concentration of this species.\n\nThe experiment was repeated with acinetobactin, however, titration was not possible beyond 0.35 molar equivalent of metal due to precipitation. We were able to observe the formation of a complex with concomitant decrease in free siderophore. The decrease in free siderophore versus ion concentration (up to 0.35) is more pronounced for preacinetobactin. NMR shows that metal binding to acinetobactin results in the largest shifts of signals within the catechol group, whereas in preacinetobactin the largest shifts are observed in the central portion of the molecule, where the hydroxamate moiety is located in agreement with the crystal structure (Figure 3C and Table 1).\n\n**Table 1.**\n Chemical shift difference (absolute value of ppm in the absence \u2013 ppm in the presence of metal ions) is reported for the resonances of both preacinetobactin and acinetobactin during titration.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>1H nuclei\u2020</th>\n      <th>preacinetobactin\u2021</th>\n      <th>Acinetobactin</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>a</td>\n      <td>0.34</td>\n      <td>0.07</td>\n    </tr>\n    <tr>\n      <td>b</td>\n      <td>0.17</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>d</td>\n      <td>n.r.</td>\n      <td>n.r.</td>\n    </tr>\n    <tr>\n      <td>e</td>\n      <td>0.16</td>\n      <td>n.r.</td>\n    </tr>\n    <tr>\n      <td>f</td>\n      <td>~0.4\u00a7</td>\n      <td>n.r.</td>\n    </tr>\n    <tr>\n      <td>g</td>\n      <td>0.56</td>\n      <td>n.r.</td>\n    </tr>\n    <tr>\n      <td>h</td>\n      <td>0.12</td>\n      <td>n.o.</td>\n    </tr>\n    <tr>\n      <td>i</td>\n      <td>0.27</td>\n      <td>0.15</td>\n    </tr>\n    <tr>\n      <td>l</td>\n      <td>0.27</td>\n      <td>0.30</td>\n    </tr>\n    <tr>\n      <td>m</td>\n      <td>0.39</td>\n      <td>0.28</td>\n    </tr>\n  </tbody>\n</table>\n\n_The titration performed in acetate buffered saline with Ga3+. Reported values correspond to 0.5 and 0.3 eq. Ga3+ in the case of preacinetobactin and acinetobactin, respectively.\u2020\u00a0Labels refer to Figure 3C.\u2021\u00a0Two resolved resonances were observed for protons g, h, i, l and m, due to two different L2M species (see the main paper). Average values are reported here.\u00a7\u00a0Complex overlapped with residual water\u2019s resonance. Value estimated by comparison with additional titration performed in DMSO. n.r.: not sufficiently resolved. n.o.: difference not observed._\n\n### Discussion\n\nThe nature of one of the main siderophore molecules taken up by A. baumannii is important, both for understanding the physiology of this significant pathogen and for the rational design of the so-called \u2018trojan horse\u2019 antibiotics. Conflicting reports are extant in the literature as to whether the molecule which is taken up is preacinetobactin or acinetobactin (Song et al., 2017; Shapiro and Wencewicz, 2017). As our own experiments have shown, small amounts of impurities that are hard to eliminate coupled to ready conversion of preacinetobactin to acinetobactin poses significant technical challenges in resolving this problem.\n\nThe siderophore is known to be bound from the medium by the integral outer-membrane BauA protein. Structural biology strongly implies that BauA in fact recognizes preacinetobactin and not acinetobactin. In the crystal structure, preacinetobactin fits into a complementary pocket; a simple molecular model shows that the\u00a0same site would not bind acinetobactin due to extensive van der Waals clashes with Tyr312 (Figure 2\u2014figure supplement 3B). Preacinetobactin wraps around the metal ion by occupying four out of the six possible coordination sites. ITC confirms this hypothesis and demonstrates very tight binding for the Fe3+-preacinetobactin complex but none at all for acinetobactin; thus, for transport, preacinetobactin must be present. We note that our crystallization results show that even small amounts of contaminating preacinetobactin present in our original acinetobactin sample (detected only by careful chemical characterization after the fact), will bind to the protein, a reflection of the large difference in affinity between preacinetobactin and acinetobactin. We observed that in the absence of Fe3+, preacinetobactin rapidly converts to acinetobactin under the crystallization conditions. In our hands, the Fe3+ complex stabilized preacinetobactin by preventing the conversion to acinetobactin. This was also observed by NMR in solution with Ga3+ (Figure 3\u2014figure supplement 4) and it agrees with the literature (Shapiro and Wencewicz, 2016).\n\nWe observed a heterotrimeric Fe3+-preacinetobactin-acinetobactin complex in the crystal. The acinetobactin molecule is not itself recognised by the protein, rather it is the favorable coordination of the catechol group to the remaining two sites of Fe3+ that drives complex formation. The lack of recognition would seem supported by our observation that in the crystal structure there is an unnatural diastereomer of acinetobactin playing the role of the second ligand (Figure 2\u2014figure supplement 2; Figure 2C). In contrast, there was no electron density for the other diastereomer of preacinetobactin at the primary site consistent with simple modelling showing it would clash with the protein (Figure 2\u2014figure supplement 3C). The second molecule in the complex, acinetobactin, has arisen from chemical conversion of preacinetobactin, a conversion known to occur rapidly in solution. We have no reason to predict that the conversion is in anyway affected by the crystal environment. The presence of preacinetobactin in the crystal is consistent with its chemical stabilization by Fe3+. Modeling suggests that the catechol of a second molecule of preacinetobactin would be able\u00a0to bind to the unoccupied iron sites via its catechol without any clash with the\u00a0protein (Figure 2\u2014figure supplement 3D). We attribute the fact we do not observe it in preacinetobactin-soaked crystals as a consequence of the rapid conversion of catechol only ligated preacinetobactin into acinetobactin.\n\nBased on the 1H-NMR experiment performed with Ga3+, we predict that at siderophore/iron ratio\u00a0>0.8, the dominant complex is Fe3+-preacinetobactin (Fe3+L) whilst at siderophore/iron ratio\u00a0<0.6, the Fe3+L2 is dominant. ITC suggests that the Fe3+L2 binds to BauA with higher affinity than the Fe3+L complex (Figure 3\u2014figure supplement 2; Figure 3A).\n\nCombining all our data, we suggest that under physiological conditions such as blood where free iron is very low, it is the heterotrimeric Fe3+-preacinetobactin-acinetobactin complex that is most likely to be bound by BauA and taken up (Figure 4a). Only under acidic conditions (pH\u00a0<6), where preacinetobactin conversion is slower, is it conceivable that the Fe3+- (preacinetobactin)2 complex could be taken up. This maybe significant as A. baumannii infections do occur in an acidic environment (Peleg et al., 2008; Higgins et al., 2010). Our data cannot rule out the possibility that during uptake, the second ligand, bound only by the catechol group, is removed immediately before translocation. In this scenario only preacinetobactin would be transported but could convert to acinetobactin after transport when iron has been removed. However, in the light of the tendency to form stable ML2 complexes, removal of one L molecule is expected to be energetically unfavorable. The definitive resolution of this question is beyond the scope of this study.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/42270/elife-42270-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0In acidic environments, preacinetobactin is stable. Two molecules can chelate Fe3+ and the complex could be stable thus recognised and transported by the TonB dependent transporter, BauA. Once in the periplasm, BauB, a periplasmic binding protein, delivers the Fe3+-siderophore to the inner membrane ABC transport system (BauCDE) to cross the inner membrane. The release of the Fe occurs into the cytoplasm with the help of BauF, a hydrolase. In neutral pH conditions, preacinetobactin isomerizes into acinetobactin. Fe3+ chelation stabilizes one molecule of preacinetobactin but the second molecule isomerizes. The heterotrimeric Fe3+-preacinetobactin-acinetobactin complex is recognised and possibly transported by BauA. (B) Functional groups involved in the Fe3+ chelation are highlighted in blue and the ones which could be modified in the design of siderophore antibiotic conjugates are circled in red.\n\nOur data would appear to resolve the controversy in the literature as to the nature of siderophore taken up by BauA transporter. A complex containing both preacinetobactin and acinetobactin will bind to BauA and may in fact be taken up, but the presence of preacinetobactin is essential. Our work does not eliminate the possibility of another TBDT transporting acinetobactin, but so far none has been identified in A baumannii. It will be interesting to study whether the BauA transporter when it recognises preacinetobactin can \u2018pull\u2019 through catechols other than acinetobactin which bind to the two vacant iron coordination sites. The stabilization of preacinetobactin by formation of the tetradentate Fe3+ complex resolves the puzzle as to how a chemically unstable molecule is transported.\n\nThe structure outlines two new routes for the rational design of siderophore conjugates that could be taken up via BauA. The first approach is modification of preacinetobactin. The crystal structure suggests the uncoordinated nitrogen atom of the imidazole ring has\u00a0the potential for modification without affecting recognition. Similarly, one of the oxygens and\u00a0a\u00a0carbon of catechol seem plausible candidates for expansion (Figure 4b). Shapiro and Wencewicz (2017) and Song et al. (2017) reported important indications about the role of the different portions of both ligands by comparing the biological activity of multiple derivatives and checking complex formation through UV-vis spectroscopy. These studies confirm the 2-OH of preacinetobactin is essential but changes at the 3 and 5 positions of the catechol are well tolerated (no information on the four position was reported). The second approach would be to design a catechol antibiotic conjugate that forms a high-affinity heterotrimeric complex with iron and preacinetobactin. The structure suggests that\u00a0there is no protein imposed recognition requirement on the second molecule, this potentially unlocks a diversity of conjugate molecules complementing the fimsbactin A type conjugates (Wencewicz and Miller, 2013; Ghosh et al., 2018; Liu et al., 2018). The third approach would be the design of a molecule that hexacoordinates the iron molecule, whilst preserving the protein preacinetobactin contacts thus binding to BauA. This compound with its much higher affinity would easily outcompete preacinetobactin for iron and could be designed so as to block translocation by BauA.\n\n## Materials and methods\n\n### Preparation of the substances\n\nAcinetobactin and preacinetobactin were synthesized following the synthetic schemes and the protocols described by Takeuchi et al., 2010. The collected 1H-NMR data were similar to the 1H-NMR described by Takeuchi et al. (2010) and Shapiro et al. (Shapiro and Wencewicz, 2016; Shapiro and Wencewicz, 2017)(Figure 3\u2014figure supplement 3 and 5).\n\n### BauA cloning\n\nPosition of the cleavage of the signal peptide of the proteins was predicted with Signal P4.0 (Petersen et al., 2011). The coding sequence of the mature protein BauA (uniprot Q76HJ9) was amplified from the genomic DNA ATCC 19606 using the primers 5'- AGGGGCGCCATGGCTGTTATTGATAATTCAACAAAAACTC and 5'- AATTTGGATCCTTAAAAGTCATATGATACAGATAGCATATACG and Pfu DNA polymerase. PCR product has been digested by NcoI and BamHI restriction enzymes. The gene was cloned with an N-terminal tobacco etch virus (TEV) protease cleavable His7-tag in pTAMAHISTEV vector using NcoI and BamHI restriction sites.\n\n### Over-expression in E. coli and purification\n\nThe proteins were over-expressed in E. coli C43 (DE3) cells. Cells were grown at 37\u00b0C in LB medium containing 100 \u03bcg.ml\u22121 ampicillin until an OD600 of 0.7 and then induced with 0.4 mM IPTG at 25\u00b0C overnight. The proteins were purified following the protocol used for AbPirA as described in Moyni\u00e9 et al. (2017). Isolated outer-membrane pellets were solubilized with 7% octylpolyoxyethylene (octylPOE)) and the proteins were purified with a Ni2+\u2013NTA affinity chromatography followed by the His-tag cleavage by TEV protease and a second IMAC column. Finally, the protein was loaded on a Superdex S200 gel filtration chromatography (10 mM Tris pH 7.5, 150 mM NaCl, 0.45% C8E4) and concentrated to 10 mg.ml\u22121 before setting up the crystallization plates. Selenomethionine-substituted proteins were produced with the SelenoMethionine Medium Nutrient Mix (Molecular Dimension) in C43(DE3) cells according to the feedback inhibition method (van den Ent et al., 1999). Purification of the protein was the same as the native but with 5 mM \u03b2-mercaptoethanol added in all purification buffer.\n\n### Structural biology\n\nCrystals of BauA appeared at 20\u00b0C after a few days by mixing 1 \u03bcl of protein solution (10 mg.ml\u22121) with 1 \u03bcl of reservoir solution containing 10% PEG 8000, 0.1 M Hepes pH 7.5, 0.1M KCl, and 10% ethylene glycol. Crystals were frozen with the same solution containing 26% ethylene glycol. Complex structures were obtained by soaking apo crystals for few hours with mother liquor containing 5 mM Fe3+-acetylacetonate siderophore (preacinetobactin or acinetobactin) in 1:1 ratio (Fe3+: siderophore) before cryoprotection. Subsequent LC-MS analysis showed that the acinetobactin sample had a small amount (~2%) of preacinetobaction present. Preacinetobactin was fully converted overnight into acinetobactin in a 150 mM sodium phosphate pH\u00a08 solution before adding Fe3+ (1:1 ratio) with a ferric ammonium citrate solution (the colour changes from red to blue in 30 min). The ferric complex solution was diluted with the mother liquor to a final concentration of 2 mM before soaking the crystal overnight. No complex has yet been obtained.\n\nData were collected at the beamlines i02, i03 and i24 at the Diamond light source Oxfordshire. Data were processed with XIA2\u00a0(Winter, 2010; Zhang et al., 2006; Sauter et al., 2004; Kabsch, 1993; Evans, 2006). Structure of BauA was solved by SAD with the program AUTO-RICKSHAW\u00a0(Panjikar et al., 2009). Structures of the complexes have been solved using the apo structure. Models were adjusted with COOT (Emsley and Cowtan, 2004) and refinement was carried out using REFMAC in the CCP4 program suite with TLS parameters (Murshudov et al., 1997). Coordinates and topologies of ligands were generated by PRODRG (Sch\u00fcttelkopf and van Aalten, 2004). Final refinement statistics are given in Table 2. Atomic coordinates and structure factors have been deposited in the Protein Data Bank (6H7F, 6H7V, 6HCP). The quality of all structures was checked with MOLPROBITY (Chen et al., 2010). Figures were drawn using PYMOL (Schrodinger, 2010).\n\n**Table 2.**\n Crystallographic data and refinement statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Semet 6H7V</th>\n      <th>Apo 6HCP</th>\n      <th>Complex 6H7F</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>C 1 2 1</td>\n      <td>C 1 2 1</td>\n      <td>C 1 2 1</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5) \u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>182.3, 220.4, 101.7 90, 98.7, 90</td>\n      <td>180.2, 219.5, 101.4 90, 99.2, 90</td>\n      <td>179.6, 220.7, 101.1 90, 99.2, 90</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>139.53\u20132.54 (2.61\u20132.54)*</td>\n      <td>57.24\u20131.83 (1.88\u20131.83)*</td>\n      <td>49.93\u20132.26 (2.30\u20132.26)</td>\n    </tr>\n    <tr>\n      <td>Rsym or Rmerge</td>\n      <td>0.12 (0.789)</td>\n      <td>0.049 (0.665)</td>\n      <td>0.108 (0.844)</td>\n    </tr>\n    <tr>\n      <td>I / \u03c3I</td>\n      <td>19.3 (3.8)</td>\n      <td>17.1 (2.2)</td>\n      <td>9.2 (1.6)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>(99.9) 100</td>\n      <td>99.7 (99.6)</td>\n      <td>99.8 (99.9)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>15.2 (14.1)</td>\n      <td>3.8 (3.9)</td>\n      <td>3.8 (3.8)</td>\n    </tr>\n    <tr>\n      <td>CC half</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.995 (0.527)</td>\n    </tr>\n    <tr>\n      <td>Anom completeness</td>\n      <td>99.9 (99.9)</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Ano multiplicity</td>\n      <td>7.5 (6.9)</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>139.53\u20132.54</td>\n      <td>57.24\u20131.83</td>\n      <td>49.93\u20132.26</td>\n    </tr>\n    <tr>\n      <td>No. of\u00a0reflections</td>\n      <td>123,580</td>\n      <td>322,409</td>\n      <td>171,799</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree</td>\n      <td>0.183/0.213</td>\n      <td>0.156/0.176</td>\n      <td>0.187/0.217</td>\n    </tr>\n    <tr>\n      <td>No. of\u00a0atoms</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>15,424</td>\n      <td>16,060</td>\n      <td>15,854</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>201</td>\n      <td>754</td>\n      <td>691</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>303</td>\n      <td>1995</td>\n      <td>752</td>\n    </tr>\n    <tr>\n      <td>B-factors</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>44.4</td>\n      <td>33.40</td>\n      <td>39.70</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>60.4</td>\n      <td>57.70</td>\n      <td>59.22</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>36.90</td>\n      <td>45.90</td>\n      <td>36.87</td>\n    </tr>\n    <tr>\n      <td>R.m.s deviations</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.010</td>\n      <td>0.008</td>\n      <td>0.008</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.24</td>\n      <td>1.16</td>\n      <td>0.958</td>\n    </tr>\n  </tbody>\n</table>\n\n_Each dataset was collected from a single crystal. *Values in parentheses are for highest-resolution shell._\n\n### Isothermal microcalorimetry titration\n\nAffinity of BauA for Fe3+-preacinetobactin and Fe3+-acinetobactin were measured by isothermal titration calorimetry using a VP-ITC or a ITC200 instrument (GE Healthcare) at 25 \u02daC. Ratio 1:2 and 1:1 of Fe3+: preacinetobactin or acinetobactin have been tested. Solutions of 100 mM of compound and either 100 mM or 50 mM of Fe3+-acetylacetonate in DMSO were diluted with the dialysis buffer (50 mM Sodium phosphate pH 7.5, 50 mM NaCl, 0.8% OctylPOE). Titrations of preacinetobaction were performed using 2 \u03bcl injections of 100 \u03bcM of Fe3+ and either 100 \u03bcM or 200 \u03bcM preacinetobactin into 10 \u03bcM BauA.\n\nSeveral conditions have been tested for Fe3+-acinetobactin. Titrations of acinetobaction were performed using 2 \u03bcl injections of 100 \u03bcM of Fe3+ and 200 \u03bcM acinetobactin (1:2) into 10 \u03bcM BauA. Titrations of acinetobaction were also performed with higher concentration using 5 \u03bcl injections of 370 \u03bcM of Fe3+-acinetobactin (1:1) in 20 \u03bcM BauA in the same buffer. The heats of dilution were measured by injecting the ligands into the buffer. Titration curves were fitted using Origin software.\n\n### LCMS analysis\n\nThe HPLC grade acetonitrile (MeCN) was purchased from Fisher. Aqueous buffers and aqueous mobile-phases for HPLC were prepared using water purified with an Elga Purelab Milli-Q water purification system (purified to 18.2 M\u03a9.cm) and filtered over 0.45 \u03bcm filters.\n\nAnalytical RP-HPLC-MS was performed on an Agilent infinity 1260 series equipped with a MWD detector using a Macherey-Nagel Nucleodur C18 column (10 \u03bcm x 4.6 \u00d7 250 mm) and connected to an Agilent 6130 single quad apparatus equipped with an electrospray ionization source using the following chromatographic system: 1 mL/min flow rate with MeCN and 0.1% TFA in H2O [95% TFA/H2O (5 min), linear gradient from 5% to 25% of MeCN (25 min), 95% MeCN (30 min)] and UV detection at 220 nm.\n\n### Nuclear magnetic resonance\n\n1H spectra were acquired at 300K with an Agilent UNITY INOVA spectrometer operating at a Larmor frequency of 500 MHz. Spectra were acquired with a pulse of 6.1 \u03bcs (90\u00b0), 5 s recycle delay, 48 transients over a spectral window of 6000 Hz. Homonuclear 1H gCOSY was acquired with the same acquisition parameters and sampling each of the 512 increments with 64 transients and 2048 complex points. The same parameters were applied for homonuclear 1H ROESY experiments with both 200 and 300 ms mixing time and applying the MLEV17 scheme for the spin-lock. The 1H chemical shift scale was referenced to the solvent residual resonance.\n\nTitrations were performed in acetate buffered saline (ABS) at pH five prepared in D2O (pD 5.4), at constant ligand concentration in the 2\u20133 mM range by varying metal concentration (Ga3+), which was added in the form of Ga(ClO4)3. Relative intensities of selected resonances from the same proton group in the different species formed along the titration were measured and normalized for each spectrum. Normalized NMR intensities were analysed by fitting model equations through a Monte-Carlo minimization scheme. The following stepwise equilibria were taken into consideration at constant pH:\n\n$$\nL+L_{n-1}M\u21ccL_{n}M;K_{n}=\\frac{L_{n}M}{LL_{n-1}M}\n$$\n\nwhere L is the ligand, M the metal, Kn is the apparent equilibrium constant, n is an integer from 1 to 3, and molar concentrations are indicated with brackets. In addition to these mass-action laws, the following mass-balance relationships must also be applied:\n\n$$\nL_{0}=L+\\sum_{n=1}^{3}n\u2219L_{n}M\n$$\n\n\n\n$$\nM_{0}=M+\\sum_{n=1}^{3}L_{n}M\n$$\n\nwhere [L0] and [M0] are the total ligand and total metal molar concentration, respectively. Finally, the following quartic equation is obtained for [L], that\u00a0is the free ligand at equilibrium:\n\n$$\nK_{1}K_{2}K_{3}[L]^{4}+(K_{1}K_{2}\u2212K_{1}K_{2}K_{3}[L_{0}]+3K_{1}K_{2}K_{3}[M_{0}])[L]^{3}+(K_{1}\u2212K_{1}K_{2}[L_{0}]+2K_{1}K_{2}[M_{0}])[L]^{2}+(1\u2212K_{1}[L_{0}]+K_{1}[M_{0}])[L]\u2212[L]_{0}=0\n$$\n\nwhich was solved numerically with the Newton-Raphson method. A Monte-Carlo scheme was implemented to minimize the sum of square difference between the experimental and calculated data points, by using the Kn as fitting parameters. One parameter was randomly selected at each iteration and randomly varied between \u221210% and\u00a0+10%. Only the steps resulting in a decrease of the sum of square difference were accepted, rejecting the last move otherwise. All the datasets pertaining to the different species along the same titration were fitted simultaneously.\n",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "b5b25708-5ef6-4e6b-bade-95ff137901e6",
+      "submission_id": "5d2ed4a8-7ea0-4370-a6b8-644fd80e4ffe",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wilfred A van der Donk, University of Illinois at Urbana-Champaign United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.42270.026](https://doi.org/10.7554/eLife.42270.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Preacinetobactin not acinetobactin is essential for iron uptake by the pathogen Acinetobacter baumannii\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Wilfred A van der Donk as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Gisela Storz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Timothy Wencewicz (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors describe a novel structure of BauA, the TonB-dependent siderophore outer membrane receptor from Acinetobacter baumannii, in complex with a novel mixed ligand siderophore complex composed of one iron, one pre-acinetobactin, and one acinetobactin. The new structure is important from several perspectives 1) it gives the first structural glimpse of a TonB-dependent siderophore receptor from A. baumannii, 2) it gives the first structural evidence that pre-acinetobactin is recognized by BauA which provides clarity on a literature debate for the biologically relevant isomer, pre-acinetobactin or acinetobactin, and 3) the chelation mode of pre-acinetobactin is revealed showing occupancy of four coordinate sites by pre-acinetobacter and leaving two coordination sites for the catecholate of acinetobactin. The data also provides information regarding potential cargo attachment for siderophore-antibiotic conjugates. The crystallographic data are supported by binding studies.\n\nEssential revisions:\n\n1) There is some recent consensus in the literature that there are two ligand binding sites in these types of receptors, one peripheral (secondary) and one deeper inside the protein (primary). Is this the case for BauA, and if so, which binding site is occupied here? From the structure it appears that the ligands make very few interactions with the plug domain, and this raises the question if and how occupation of this binding site causes a conformational change of the N-terminus of the plug, including the TonB box. Are there any differences with the plug of the apo structure? This entire issue is important, because if the observed binding site is not the primary one, the main selling point, i.e. relevance of the structure for antibiotic delivery is not clear.\n\n2) It is not demonstrated which of the two siderophores is actually transported. Literature evidence suggests that both siderophores can serve as iron sources for wild type and pre-acinetobactin biosynthetic incompetent mutants of A. baumannii (Shapiro and Wencewicz, 2016). Indeed, acinetobactin could become relevant or even essential for import downstream of BauA. It is also possible that there is a second TonB-dependent transporter for the acinetobactin ferric complex. Such alternative scenarios should be discussed and the title should be revised because the biological relevance for acinetobactin is not fully ruled out. A possible title could be something like \"Preacinetobactin is essential for iron uptake by the pathogen Acinetobacter baumannii\".\n\n3) The authors should show the NMR data currently presented in Table 1. They should also show the NMR data for the 1:1 and 1:2 complexes with metal since this is essential information. Furthermore, which resonances were used for Figure 3B? It seems that the equation used for the fit expects that at higher and higher metal equivalents the material is driven to the LM complex, but the data seem to indicate that a final equilibrium is reached between LM and L2M. Did the authors consider other models? It does not seem that the LM complex goes away at high metal equiv. The authors should have a few more data points at 1.4 and 1.5 equivalents to see if this is indeed the case, and if not should either explain this or consider another model.\n\n4) It is surprising that acinetobactin is obtained as a mixture of diastereomers. No details on the synthesis are given and epimerization at this carbon was not observed in Shapiro and Wencewicz, 2016; Song et al., 2017; Shapiro and Wencewicz, 2017 and Takeuchi et al., 2010. What stereoisomer of Thr was used in the synthesis? Why/how did the epimerization happen? Normally, methyl oxazolines are resistant to epimerization. Since other studies do not report this epimerization, more information should be provided. Furthermore, is it possible that the mixed electron density is due to a mixture of pre-acinetobactin and acinetobactin at this position in the crystal structure, and not diastereomers? In the Discussion the authors first mention that an incorrect diastereomer is formed in the chemical synthesis (it should be mentioned much earlier when the diastereomers are observed), but no reference is provided here.\n",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4eaa527b-94d0-4bcf-89df-c2d967b385b0",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C1",
+      "claim": "Acinetobacter baumannii has been identified by the WHO as a critical priority pathogen for new antibiotic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Acinetobacter baumannii is a Gram-negative bacteria that has been identified by the WHO as a critical priority pathogen for new antibiotic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction without experimental data from this manuscript, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "77336ec7-5166-48fa-8f3b-8df5d85f8304",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C2",
+      "claim": "A. baumannii was highlighted for its increasing role in nosocomial infections and its intrinsic resistance to multiple antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "A. baumannii was highlighted for its increasing role in nosocomial infections and its intrinsic resistance to multiple antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about A. baumannii.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "83894964-c1b0-4ed5-80a8-ed3fef60e664",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C3",
+      "claim": "Several virulence factors have been identified in Acinetobacter species including iron-uptake pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Several virulence factors have been identified in Acinetobacter species including iron-uptake pathways (Peleg et al., 2012; Harding et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "d2b12282-732f-409b-8b31-6bdee42505b6",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C4",
+      "claim": "Iron is essential for all bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Iron is essential for all bacteria, and consequently, human pathogens have to possess an efficient acquisition system to scavenge iron from the host during infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about bacterial physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "7215c6ac-b035-488c-ae4c-2ea37002c87d",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C5",
+      "claim": "Gram-negative bacteria secrete small molecules (siderophores), which chelate iron with extremely high affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Gram-negative bacteria secrete small molecules (siderophores), which chelate iron with extremely high affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bacterial iron acquisition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "93b19808-6367-40c6-82bf-85d443b291e9",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C6",
+      "claim": "The resulting siderophore-iron complex is recognized by a specific outer-membrane transporter that couples to the TonB system to translocate the complex into the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting siderophore-iron complex is recognized by a specific outer-membrane transporter that couples to the TonB system to translocate the complex (and thus iron) into the periplasm where an ABC transporter takes it across the inner membrane (Noinaj et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "9de97cd5-908f-47cd-a14a-05686c65b7ad",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C7",
+      "claim": "The conserved and essential nature of the uptake system has drawn interest as a potential drug target.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved and essential nature of the uptake system has drawn interest as a potential drug target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for research in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "f44e324c-0d36-4ac5-aaf0-969383dab14e",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C8",
+      "claim": "Several siderophore-conjugates have been developed to deliver drugs directly to the periplasm with promising results.",
+      "claim_type": "EXPLICIT",
+      "source": "Several siderophore-conjugates have been developed to deliver drugs directly to the periplasm with promising results (Wencewicz and Miller, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "eb961a72-9cf5-4245-a40e-2129b8233e67",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C9",
+      "claim": "Three classes of siderophore have been identified as being produced by A. baumannii: acinetobactin, fimsbactins and baumannoferrins.",
+      "claim_type": "EXPLICIT",
+      "source": "Three classes of siderophore have been identified as being produced by A. baumannii, acinetobactin (Yamamoto et al., 1994), fimsbactins (Proschak et al., 2013) and baumannoferrins (Penwell et al., 2015) and each would be expected to be transported by distinct TonB-dependent transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature identifying these siderophores.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "84309693-8bdc-479e-be6f-06b6061990ce",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C10",
+      "claim": "Analogues of the bis-catechol siderophore fimsbactin A linked to antibiotics such as loracarbef/ciprofloxacin have proven effective in killing A. baumanni.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogues of the bis-catechol siderophore fimsbactin A linked to antibiotics such as loracarbef/ciprofloxacin (Wencewicz and Miller, 2013), daptomycin (Ghosh et al., 2018) and cephalosporin (Liu et al., 2018) have proven effective in killing A. baumanni.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "fdf21f3e-25af-46d4-b667-a0bada820c71",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C11",
+      "claim": "A. baumanni has been targeted by directly inhibiting the biosynthesis of acinetobactin.",
+      "claim_type": "EXPLICIT",
+      "source": "A. baumanni has been also targeted by directly inhibiting the biosynthesis of acinetobactin (Drake et al., 2010; Neres et al., 2013) and by disrupting the acinetobactin uptake mechanism through the use of an oxidized version of acinetobactin (Bohac et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "ebb016d9-bba3-4e79-847e-7234b7bcd6fb",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C12",
+      "claim": "The acinetobactin system has been identified as a virulence factor in mouse infection models.",
+      "claim_type": "EXPLICIT",
+      "source": "The acinetobactin system is of particular interest since it has been identified as a virulence factor in mouse infection models (Gaddy et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "2ee2fbcd-8145-489e-adc3-4802f36c867d",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C13",
+      "claim": "Acinetobactin is synthesized as a precursor, preacinetobactin, which rearranges non-enzymatically and irreversibly at pH >7 to give acinetobactin.",
+      "claim_type": "EXPLICIT",
+      "source": "Acinetobactin is synthesized as a precursor, preacinetobactin, which rearranges non-enzymatically and irreversibly at pH >7 to give acinetobactin (Figure 1A) (Sattely and Walsh, 2008; Wuest et al., 2009; Shapiro and Wencewicz, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous literature and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "1ba21516-87fa-4aa0-a1f6-a834a26f4164",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C14",
+      "claim": "There have been different reports on whether acinetobactin or preacinetobactin or both are transported into the bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "There have been different reports on whether acinetobactin or preacinetobactin or both are transported into the bacteria (Song et al., 2017; Shapiro and Wencewicz, 2017) complicating rational design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to conflicting previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "5bc81e2c-f4d2-49ae-9ff8-49e021676235",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C15",
+      "claim": "The A. baumannii outer-membrane transporter protein, BauA, has been identified as a vaccine candidate.",
+      "claim_type": "EXPLICIT",
+      "source": "The A. baumannii outer-membrane transporter protein, BauA, that recognises this siderophore has itself been identified as a vaccine candidate (Esmaeilkhani et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "d9131dae-ed82-473a-97a2-df84894d93bf",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C16",
+      "claim": "The apo structure of BauA was solved to a resolution of 1.8 \u00c5 by single wavelength anomalous diffraction (SAD) using selenomethionine-labeled proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The apo structure of BauA was solved to a resolution of 1.8 \u00c5 by single wavelength anomalous diffraction (SAD) using selenomethionine-labeled proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used to determine the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "1ab6e0b5-9ff7-4c70-80c9-c1fa48128478",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C17",
+      "claim": "Residues 33 to 703 of the protein are well defined in the electron density map.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues 33 to 703 of the protein are well defined in the electron density map, while the N-terminal region comprising the TonB box is missing, presumably because it is flexible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "433a7f1e-a67b-4bed-963b-52056bfd26e4",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C18",
+      "claim": "BauA has the typical outer-membrane TonB-dependent transporter (TBDT) fold with a \u03b2-barrel formed by 22 antiparallel strands, several extracellular loops, and a plug domain folded inside of the barrel.",
+      "claim_type": "EXPLICIT",
+      "source": "BauA has the typical outer-membrane TonB-dependent transporter (TBDT) fold with a \u03b2-barrel formed by 22 antiparallel strands, several extracellular loops, and a plug domain folded inside of the barrel (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis of the crystal structure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "403d70c2-e212-48b7-b305-dde5c30443e1",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C19",
+      "claim": "The extracellular loops of the \u03b2-barrel form a large open cavity bordered by mainly short and apolar amino acids giving large access to the loops NL1-NL3 of the plug domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the other TBDTs, the extracellular loops of the \u03b2-barrel form a large open cavity bordered by mainly short and apolar amino acids giving large access to the loops NL1-NL3 of the plug domain (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "639ead14-d0c2-4f25-a4e0-35ba5f0cdc2c",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C20",
+      "claim": "The closest structural homologues are ferrichrome and enantiopyochelin transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Search of the structural database reveals the closest structural homologues are ferrichrome (Locher et al., 1998) (1by5, rmsd of 2.5 \u00c5 for 634 residues aligned and 2fcp, 2.4 \u00c5 for 631 residues) and enantiopyochelin (Brillet et al., 2011) (3qlb, rmsd of 2.5 \u00c5 for 630 residues) transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural database search and comparison with known structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "f6a868f4-2ad8-441e-bb40-bdd0b57f7f47",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C21",
+      "claim": "The asymmetric unit contains three monomers arranged around a threefold symmetry axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetric unit contains three monomers arranged around a threefold symmetry axis reminiscent of the porin arrangement (Figure 1\u2014figure supplement 2A) and thus plausibly biologically meaningful.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on crystallographic analysis shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "261df96d-0244-4808-a376-cf16b87b76bd",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C22",
+      "claim": "PISA suggests a trimer with a high degree of confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "PISA (Krissinel and Henrick, 2007), a computational assessment of oligomeric state in the crystal, suggests a trimer with a high degree of confidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational analysis using PISA software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "4b31564f-4e3a-4632-8bdb-faf11b46d1a0",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C23",
+      "claim": "Biophysical methods (gel filtration and light scattering) do not support a trimeric assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Biophysical methods (gel filtration and light scattering) do not support a trimeric assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental biophysical measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "cb0505a3-c532-42f1-a7df-a4c3523ec7e8",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C24",
+      "claim": "Size Exclusion Chromatography coupled to Multi-Angle Light Scattering (SEC-MALS) analysis in C8E4 is consistent with monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Size Exclusion Chromatography coupled to Multi-Angle Light Scattering (SEC-MALS) analysis in C8E4 is consistent with monomer whilst native gel shows the protein runs more closely to a dimer; however, the detergent bound to the protein may increase the apparent weight suggesting a monomer in solution (Figure 1\u2014figure supplement 2B; Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on SEC-MALS experimental data shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "3022bee4-c9b3-4691-9d14-1767ac04b68a",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C25",
+      "claim": "When native protein crystals were incubated with preacinetobactin and acinetobactin compounds (both preloaded with Fe3+), the same structure was obtained in both cases: BauA bound to a heterocomplex Fe3+-preacinetobactin-acinetobactin (1:1:1).",
+      "claim_type": "EXPLICIT",
+      "source": "We incubated separate native protein crystals with preacinetobactin and acinetobactin compounds (both compounds preloaded with Fe3+); surprisingly in both cases, we obtained the same structure: BauA bound to a heterocomplex Fe3+-preacinetobactin-acinetobactin (1:1:1) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on crystallographic soaking experiments and structure determination shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "fcff201a-275d-4cd9-8785-61daaedd5fc8",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C26",
+      "claim": "LC-MS analysis of preacinetobactin in the crystallization conditions shows that in the absence of iron, the majority of preacinetobactin is converted to acinetobactin in 30 min and no preacinetobactin was observed the next day.",
+      "claim_type": "EXPLICIT",
+      "source": "LC-MS analysis of preacinetobactin in the crystallization conditions shows that in the absence of iron, the majority of preacinetobactin is converted to acinetobactin in 30 min and no preacinetobactin was observed the next day (Figure 3\u2014figure supplement 1C); indicating that the presence of iron stabilizes preacinobactin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS experimental data shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "91e40e14-4b67-40ff-ad53-461d7c689ad7",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C27",
+      "claim": "There was a small amount (~2%) of preacinetobactin in the acinetobactin sample.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, we discovered that there was a small amount (~2%) of preacinetobactin in our acinetobactin sample (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS analysis shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "57a4801d-5d01-41b9-ba58-0947d6ce95b3",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C28",
+      "claim": "After full conversion of preacinetobactin into acinetobactin, no crystal structure complex with BauA was obtained with this material.",
+      "claim_type": "EXPLICIT",
+      "source": "After full conversion of preacinetobactin into acinetobactin (Figure 3\u2014figure supplement 1B), no crystal structure complex with BauA was obtained with this material.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on crystallization experiments with fully converted acinetobactin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "02862b13-aaf5-4229-8b73-f44182b7cbc5",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C29",
+      "claim": "The coordination of the iron is octahedral with four coordination atoms from preacinetobactin and two hydroxyls from acinetobactin.",
+      "claim_type": "EXPLICIT",
+      "source": "The coordination of the iron is octahedral with four coordination atoms from preacinetobactin (one hydroxy group of the catecholate, the hydroxy of the hydroxamate, the nitrogen of the methyl oxazoline and one nitrogen (N1) of the imidazole group) and two hydroxyls from acinetobactin (the catecholate) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis of the crystal structure shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "7f1cf9db-dfaa-4c92-a055-586332ade811",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C30",
+      "claim": "The protein interacts mainly with the preacinetobactin molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein interacts mainly with the preacinetobactin molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of protein-ligand interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "8f7d50ab-10af-496f-96f9-183c0c556be2",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C31",
+      "claim": "BauA recognises the preacinetobactin through two direct hydrogen bonds between the hydroxamate group and Tyr312 of \u03b27 and Arg253 of L3 and one interaction through a bridging water molecule between Asp375 and the nitrogen N2 of the imidazole.",
+      "claim_type": "EXPLICIT",
+      "source": "BauA recognises the preacinetobactin through two direct hydrogen bonds between the hydroxamate group and Tyr312 of \u03b27 and Arg253 of L3 and one interaction through a bridging water molecule between Asp375 and the nitrogen N2 of the imidazole, respectively (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis of hydrogen bonding shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "e199c39d-3a84-4333-b029-854469523a47",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C32",
+      "claim": "The binding site is predominantly hydrophobic in character with van der Waals interactions involving residues Trp97, Tyr125, Tyr314, Tyr378, Gly334, Gln335, Leu336, Arg379 and Leu684.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding site is predominantly hydrophobic in character with van der Waals interactions involving residues Trp97, Tyr125, Tyr314, Tyr378, Gly334, Gln335, Leu336, Arg379 and Leu684.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the binding site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "e4b27e20-905d-452f-926b-b43f71fb588a",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C33",
+      "claim": "The acinetobactin molecule makes only one hydrogen bond (Arg253) and one van der Waals interaction (Leu684).",
+      "claim_type": "EXPLICIT",
+      "source": "The acinetobactin molecule makes only one hydrogen bond (Arg253) and one van der Waals interaction (Leu684).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of protein-ligand interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "358db0a2-ad1a-4cc3-9c38-5343cc412edb",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C34",
+      "claim": "The experimental electron density is most convincingly fitted by a mixture of two diastereomers of acinetobactin.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimental electron density is most convincingly fitted by a mixture of two diastereomers of acinetobactin (Figure 2C), in an earlier co-crystalliszation experiment the 'wrong' diastereomer of acinetobactin was clearer (Figure 2\u2014figure supplement 2F; Figure 2\u2014figure supplement 2G.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of electron density maps shown in Figure 2C and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "65a7d087-25d2-4c99-96a7-6c288fb2a9e0",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C35",
+      "claim": "The Fe3+-preacinetobactin binds to BauA with nM affinity whilst Fe3+-acinetobactin shows no binding.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are unambiguous: the Fe3+-preacinetobactin binds to BauA with nM affinity whilst Fe3+-acinetobactin shows no binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "ff15fb6e-e6e3-4009-968e-2065d762e521",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C36",
+      "claim": "A stoichiometry of 1:1 Fe3+: preacinetobactin has a Kd of 763 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "A stoichiometry of 1:1 Fe3+: preacinetobactin has a Kd of 763 nM, whereas 1:2 Fe3+:preacinetobactin bind with 83 nM affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ITC experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "88f0da81-ac9c-4117-b24c-fba378460e61",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C37",
+      "claim": "1:2 Fe3+:preacinetobactin bind with 83 nM affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "A stoichiometry of 1:1 Fe3+: preacinetobactin has a Kd of 763 nM, whereas 1:2 Fe3+:preacinetobactin bind with 83 nM affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ITC experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "3732f0a7-3751-43af-b435-35db83534a8e",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C38",
+      "claim": "In both cases, the stoichiometry of binding was one Fe3+ to one protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, the stoichiometry of binding was one Fe3+ to one protein; in neither case did we see any evidence for a biphasic recognition model that has been proposed between enterobactin and FepA (Payne et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "869a12b6-a5ec-4400-b474-cfea05140e07",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C39",
+      "claim": "The titration reveals complexation of the free siderophore in the presence of low amounts of metal to give a complex of two siderophores to one metal, with the free siderophore almost disappearing when the metal reaches 0.5 molar equivalent.",
+      "claim_type": "EXPLICIT",
+      "source": "The titration reveals complexation of the free siderophore in the presence of low amounts of metal to give a complex of two siderophores to one metal, with the free siderophore almost disappearing when the metal reaches 0.5 molar equivalent (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NMR titration data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "1cd20d1d-804d-41cc-bc3b-ccde01b07091",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C40",
+      "claim": "Two different new sets of resonances were observed, both with chemical shift distinct from the free siderophore, indicating two different ion coordination modes for each molecule of preacinetobactin in the ML2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Two different new sets of resonances were observed, both with chemical shift distinct from the free siderophore. This magnetic inequivalence clearly indicates two different ion coordination modes for each molecule of preacinetobactin in the ML2 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on NMR spectroscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "c95b20bf-22a3-45e4-bb2b-4b1d8fa90d54",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C41",
+      "claim": "The formation constants were calculated as Kf(ML)=1.2\u00b710^5 M\u22121; Kf(ML2)=7.2\u00b710^3 M\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation constants were calculated as Kf(ML)=1.2\u00b7105 M\u22121; Kf(ML2)=7.2\u00b7103 M\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on fitting NMR titration data to a complexation model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "36f49acf-1905-4677-b88c-5f7f4afd1a0e",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C42",
+      "claim": "NMR shows that metal binding to acinetobactin results in the largest shifts of signals within the catechol group, whereas in preacinetobactin the largest shifts are observed in the central portion of the molecule, where the hydroxamate moiety is located.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR shows that metal binding to acinetobactin results in the largest shifts of signals within the catechol group, whereas in preacinetobactin the largest shifts are observed in the central portion of the molecule, where the hydroxamate moiety is located in agreement with the crystal structure (Figure 3C and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NMR chemical shift analysis shown in Figure 3C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "79e53d43-ed19-4937-90b6-74dc78ca8a41",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C43",
+      "claim": "BauA preferentially recognises preacinetobactin not acinetobactin.",
+      "claim_type": "EXPLICIT",
+      "source": "We establish that BauA recognises preacinetobactin not acinetobactin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural, ITC, and NMR data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "510f122c-3537-4d75-8136-89606305b208",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C44",
+      "claim": "Under the most likely physiological conditions, low iron and neutral pH, the mixed species (Fe3+-preacinetobactin-acinetobactin) would seem the most plausible compound for uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the most likely physiological conditions, low iron and neutral pH, the mixed species would seem the most plausible compound for uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and biophysical data combined with knowledge of physiological conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "e8d204b7-7688-45c3-85e6-c010033f09ca",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C45",
+      "claim": "In the crystal structure, preacinetobactin fits into a complementary pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural biology strongly implies that BauA in fact recognizes preacinetobactin and not acinetobactin. In the crystal structure, preacinetobactin fits into a complementary pocket; a simple molecular model shows that the same site would not bind acinetobactin due to extensive van der Waals clashes with Tyr312 (Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis and molecular modeling shown in Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "f9565784-5b94-4a52-a01b-69cc0796b97e",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C46",
+      "claim": "The same site would not bind acinetobactin due to extensive van der Waals clashes with Tyr312.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crystal structure, preacinetobactin fits into a complementary pocket; a simple molecular model shows that the same site would not bind acinetobactin due to extensive van der Waals clashes with Tyr312 (Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on molecular modeling shown in Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "db0d162f-0045-4805-813a-77bc360c7d90",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C47",
+      "claim": "In the absence of Fe3+, preacinetobactin rapidly converts to acinetobactin under the crystallization conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that in the absence of Fe3+, preacinetobactin rapidly converts to acinetobactin under the crystallization conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on LC-MS analysis of preacinetobactin under crystallization conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "3e06cb7c-5926-44b0-9e18-191090c30244",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C48",
+      "claim": "The Fe3+ complex stabilized preacinetobactin by preventing the conversion to acinetobactin.",
+      "claim_type": "EXPLICIT",
+      "source": "In our hands, the Fe3+ complex stabilized preacinetobactin by preventing the conversion to acinetobactin. This was also observed by NMR in solution with Ga3+ (Figure 3\u2014figure supplement 4) and it agrees with the literature (Shapiro and Wencewicz, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NMR data shown in Figure 3\u2014figure supplement 4 and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "a660a778-7557-49d5-83f9-b58cee143d1a",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C49",
+      "claim": "The acinetobactin molecule is not itself recognised by the protein, rather it is the favorable coordination of the catechol group to the remaining two sites of Fe3+ that drives complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The acinetobactin molecule is not itself recognised by the protein, rather it is the favorable coordination of the catechol group to the remaining two sites of Fe3+ that drives complex formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis showing minimal protein-acinetobactin interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "202a3725-729e-4125-b1cf-11e351d15065",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C50",
+      "claim": "Based on the 1H-NMR experiment performed with Ga3+, at siderophore/iron ratio >0.8, the dominant complex is Fe3+-preacinetobactin (Fe3+L) whilst at siderophore/iron ratio <0.6, the Fe3+L2 is dominant.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the 1H-NMR experiment performed with Ga3+, we predict that at siderophore/iron ratio >0.8, the dominant complex is Fe3+-preacinetobactin (Fe3+L) whilst at siderophore/iron ratio <0.6, the Fe3+L2 is dominant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on NMR titration data and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "9610e10f-7b76-4298-a773-70cec481cc44",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C51",
+      "claim": "ITC suggests that the Fe3+L2 binds to BauA with higher affinity than the Fe3+L complex.",
+      "claim_type": "EXPLICIT",
+      "source": "ITC suggests that the Fe3+L2 binds to BauA with higher affinity than the Fe3+L complex (Figure 3\u2014figure supplement 2; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on ITC data shown in Figure 3A and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "10fc2cb9-b05b-495e-b7be-f11dafe7cde8",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C52",
+      "claim": "Under physiological conditions such as blood where free iron is very low, it is the heterotrimeric Fe3+-preacinetobactin-acinetobactin complex that is most likely to be bound by BauA and taken up.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining all our data, we suggest that under physiological conditions such as blood where free iron is very low, it is the heterotrimeric Fe3+-preacinetobactin-acinetobactin complex that is most likely to be bound by BauA and taken up (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from combining structural, ITC, and NMR data with knowledge of physiological conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "6cb8e4dd-ae73-4c4b-a6ea-d3e3e781ab64",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C53",
+      "claim": "Only under acidic conditions (pH <6), where preacinetobactin conversion is slower, is it conceivable that the Fe3+- (preacinetobactin)2 complex could be taken up.",
+      "claim_type": "EXPLICIT",
+      "source": "Only under acidic conditions (pH <6), where preacinetobactin conversion is slower, is it conceivable that the Fe3+- (preacinetobactin)2 complex could be taken up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pH-dependent conversion of preacinetobactin to acinetobactin.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "4804f4ce-33b0-4a57-bc9f-814d4d2bc6e6",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C54",
+      "claim": "A. baumannii infections do occur in an acidic environment.",
+      "claim_type": "EXPLICIT",
+      "source": "This maybe significant as A. baumannii infections do occur in an acidic environment (Peleg et al., 2008; Higgins et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "7eae066d-5f13-49f3-b606-d0e3924eab43",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C55",
+      "claim": "The structure suggests the uncoordinated nitrogen atom of the imidazole ring has the potential for modification without affecting recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure suggests the uncoordinated nitrogen atom of the imidazole ring has the potential for modification without affecting recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis of the binding site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "cc57055f-87f3-4e60-9c60-0aa079ef3b03",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C56",
+      "claim": "One of the oxygens and a carbon of catechol seem plausible candidates for expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, one of the oxygens and a carbon of catechol seem plausible candidates for expansion (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural analysis shown in Figure 4b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "83301f00-619d-43e3-bd32-56552f512ac7",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C57",
+      "claim": "The 2-OH of preacinetobactin is essential but changes at the 3 and 5 positions of the catechol are well tolerated.",
+      "claim_type": "EXPLICIT",
+      "source": "Shapiro and Wencewicz (2017) and Song et al. (2017) reported important indications about the role of the different portions of both ligands by comparing the biological activity of multiple derivatives and checking complex formation through UV-vis spectroscopy. These studies confirm the 2-OH of preacinetobactin is essential but changes at the 3 and 5 positions of the catechol are well tolerated (no information on the four position was reported).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "aaa38e50-c594-474e-abe5-ef36b83ec1fa",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C58",
+      "claim": "The structure suggests that there is no protein imposed recognition requirement on the second molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure suggests that there is no protein imposed recognition requirement on the second molecule, this potentially unlocks a diversity of conjugate molecules complementing the fimsbactin A type conjugates (Wencewicz and Miller, 2013; Ghosh et al., 2018; Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis showing minimal protein-acinetobactin interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "caf8fb4f-bcdf-4b88-a672-df50c695a2fe",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C59",
+      "claim": "Acinetobactin and preacinetobactin were synthesized following the synthetic schemes and the protocols described by Takeuchi et al., 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "Acinetobactin and preacinetobactin were synthesized following the synthetic schemes and the protocols described by Takeuchi et al., 2010.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used for synthesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "d9ee9fbf-9417-4725-9473-af12f89b60f7",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C60",
+      "claim": "The coding sequence of the mature protein BauA was amplified from the genomic DNA ATCC 19606.",
+      "claim_type": "EXPLICIT",
+      "source": "The coding sequence of the mature protein BauA (uniprot Q76HJ9) was amplified from the genomic DNA ATCC 19606 using the primers 5'- AGGGGCGCCATGGCTGTTATTGATAATTCAACAAAAACTC and 5'- AATTTGGATCCTTAAAAGTCATATGATACAGATAGCATATACG and Pfu DNA polymerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used for cloning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "1c326167-1359-4773-b2f6-ec56e65fa46e",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C61",
+      "claim": "The proteins were over-expressed in E. coli C43 (DE3) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The proteins were over-expressed in E. coli C43 (DE3) cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used for protein expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "1009a8d8-d1ee-4032-9c0e-161262a212a7",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C62",
+      "claim": "Crystals of BauA appeared at 20\u00b0C after a few days by mixing 1 \u03bcl of protein solution (10 mg.ml\u22121) with 1 \u03bcl of reservoir solution containing 10% PEG 8000, 0.1 M Hepes pH 7.5, 0.1M KCl, and 10% ethylene glycol.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals of BauA appeared at 20\u00b0C after a few days by mixing 1 \u03bcl of protein solution (10 mg.ml\u22121) with 1 \u03bcl of reservoir solution containing 10% PEG 8000, 0.1 M Hepes pH 7.5, 0.1M KCl, and 10% ethylene glycol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental crystallization conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "41d60b5d-b3e9-4ae9-96f1-0547a0a5d651",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C63",
+      "claim": "Data were collected at the beamlines i02, i03 and i24 at the Diamond light source Oxfordshire.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were collected at the beamlines i02, i03 and i24 at the Diamond light source Oxfordshire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes where the X-ray diffraction data were collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "b3fbc8ed-c63e-4946-bf43-fb0b8b4710bd",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C64",
+      "claim": "Structure of BauA was solved by SAD with the program AUTO-RICKSHAW.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure of BauA was solved by SAD with the program AUTO-RICKSHAW (Panjikar et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used for structure solution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "9f904500-f771-4503-82bf-4c85723265f9",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C65",
+      "claim": "Atomic coordinates and structure factors have been deposited in the Protein Data Bank (6H7F, 6H7V, 6HCP).",
+      "claim_type": "EXPLICIT",
+      "source": "Atomic coordinates and structure factors have been deposited in the Protein Data Bank (6H7F, 6H7V, 6HCP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides the PDB accession codes for the deposited structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "62d92910-5880-403a-9870-7172d9e891eb",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C66",
+      "claim": "Affinity of BauA for Fe3+-preacinetobactin and Fe3+-acinetobactin were measured by isothermal titration calorimetry using a VP-ITC or a ITC200 instrument at 25 \u02daC.",
+      "claim_type": "EXPLICIT",
+      "source": "Affinity of BauA for Fe3+-preacinetobactin and Fe3+-acinetobactin were measured by isothermal titration calorimetry using a VP-ITC or a ITC200 instrument (GE Healthcare) at 25 \u02daC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used for ITC measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "79a98322-5406-41bb-ae7c-0e3c78b06617",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C67",
+      "claim": "1H spectra were acquired at 300K with an Agilent UNITY INOVA spectrometer operating at a Larmor frequency of 500 MHz.",
+      "claim_type": "EXPLICIT",
+      "source": "1H spectra were acquired at 300K with an Agilent UNITY INOVA spectrometer operating at a Larmor frequency of 500 MHz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used for NMR spectroscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "42cd0f9e-8b39-455e-b2b4-3f5b938e8771",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "claim_id": "C68",
+      "claim": "Titrations were performed in acetate buffered saline (ABS) at pH five prepared in D2O (pD 5.4), at constant ligand concentration in the 2\u20133 mM range by varying metal concentration (Ga3+).",
+      "claim_type": "EXPLICIT",
+      "source": "Titrations were performed in acetate buffered saline (ABS) at pH five prepared in D2O (pD 5.4), at constant ligand concentration in the 2\u20133 mM range by varying metal concentration (Ga3+), which was added in the form of Ga(ClO4)3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions for NMR titrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "231444d6-c586-47f9-8435-dd8af8746242",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The apo structure of BauA was determined at 1.8 \u00c5 resolution using selenomethionine-labeled protein and SAD phasing. BauA exhibits the typical TonB-dependent transporter fold with a 22-stranded \u03b2-barrel and a plug domain, with structural features including a large open extracellular cavity and closest homology to ferrichrome and enantiopyochelin transporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 and C60-C65 provide comprehensive structural characterization with appropriate methods (SAD phasing, crystallographic statistics in Table 2, structural database searches). The resolution, completeness, and R-factors reported in Table 2 support high-quality structure determination. The structural features are well-documented with figures and appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "98ef3bee-4b77-4c65-ad40-7b9f6e83db73",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The oligomeric state of BauA in solution is monomeric, despite crystallographic evidence suggesting a trimeric arrangement in the asymmetric unit. PISA computational analysis predicts a trimer, but SEC-MALS and gel filtration experiments support a monomeric state in detergent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 present conflicting data from crystallography versus solution biophysics, which the authors appropriately acknowledge. The SEC-MALS data (Figure 1\u2014figure supplement 2C) provides direct experimental evidence for the monomer, and the authors reasonably attribute the discrepancy to detergent effects. The conclusion favoring monomer is well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "afa1ade8-0504-420a-979a-4a40b4e65f46",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Crystal structures reveal BauA bound to a heterotrimeric Fe\u00b3\u207a-preacinetobactin-acinetobactin complex (1:1:1), with octahedral iron coordination involving four atoms from preacinetobactin and two from acinetobactin. The protein interacts primarily with preacinetobactin through hydrogen bonds and hydrophobic contacts, while acinetobactin makes minimal protein contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C34 are strongly supported by crystallographic data (Figure 2, electron density maps) and LC-MS analysis (Figure 3\u2014figure supplement 1). The structural characterization of protein-ligand interactions is detailed and consistent. The observation of the heterocomplex from both starting materials is explained by chemical conversion and impurity analysis, providing a coherent interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "4650c895-cb11-4e90-a58e-6f7043c4e85c",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ITC experiments demonstrate that Fe\u00b3\u207a-preacinetobactin binds BauA with nanomolar affinity (Kd = 83 nM for 1:2 Fe\u00b3\u207a:preacinetobactin; Kd = 763 nM for 1:1), while Fe\u00b3\u207a-acinetobactin shows no detectable binding. The stoichiometry is one Fe\u00b3\u207a per protein in both cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 and C66 present clear ITC data (Figure 3A, Figure 3\u2014figure supplement 2) with fitted binding constants. The lack of binding for acinetobactin is unambiguous from the flat titration curves. The methods are appropriately described, and the differential affinity for the two stoichiometries is well-documented. This provides strong biophysical validation of the structural observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "d1b5c886-caf5-45e9-8dbc-6f3585dde7b0",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NMR titration experiments with Ga\u00b3\u207a as a diamagnetic Fe\u00b3\u207a analog reveal that preacinetobactin forms both 1:1 (ML) and 2:1 (ML\u2082) complexes with metal, with formation constants Kf(ML) = 1.2\u00d710\u2075 M\u207b\u00b9 and Kf(ML\u2082) = 7.2\u00d710\u00b3 M\u207b\u00b9. Chemical shift analysis shows metal binding involves the hydroxamate region in preacinetobactin but primarily the catechol in acinetobactin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 and C67-C68 present detailed NMR analysis (Figure 3B, C, Table 1, Figure 3\u2014figure supplement 3) with appropriate fitting to complexation models. The use of Ga\u00b3\u207a as a diamagnetic proxy is well-established. The observation of two magnetically inequivalent preacinetobactin molecules in ML\u2082 is supported by distinct resonance sets. The chemical shift mapping provides orthogonal validation of the coordination modes observed crystallographically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "0d433f9f-4fa3-444e-a43f-33cf04acb457",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "BauA specifically recognizes preacinetobactin, not acinetobactin. Structural analysis shows preacinetobactin fits complementarily in the binding pocket, while molecular modeling indicates acinetobactin would clash with Tyr312. Fe\u00b3\u207a stabilizes preacinetobactin and prevents its conversion to acinetobactin. Acinetobactin in the complex is not directly recognized by the protein but coordinates to Fe\u00b3\u207a.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C45-C49 integrate structural, biophysical (ITC), and chemical stability data (LC-MS, NMR) to reach a coherent conclusion. The molecular modeling (Figure 2\u2014figure supplement 3B) supports the steric clash argument. The LC-MS time course (Figure 3\u2014figure supplement 1C) and NMR stability data (Figure 3\u2014figure supplement 4) demonstrate Fe\u00b3\u207a-mediated stabilization. The conclusion is well-supported by converging lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "b1c115d1-05e3-4a4c-9286-253358d2ca5b",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Under physiological conditions (neutral pH, low iron), the heterotrimeric Fe\u00b3\u207a-preacinetobactin-acinetobactin complex is the most likely species taken up by BauA. At acidic pH (<6), the Fe\u00b3\u207a-(preacinetobactin)\u2082 complex may be taken up. ITC data suggest Fe\u00b3\u207aL\u2082 binds with higher affinity than Fe\u00b3\u207aL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C50-C54 synthesize structural, ITC, and NMR data with knowledge of pH-dependent chemistry and physiological conditions. The inference is logical given: (1) rapid preacinetobactin conversion at neutral pH, (2) Fe\u00b3\u207a stabilization of preacinetobactin, (3) higher affinity of Fe\u00b3\u207aL\u2082, and (4) low iron availability in vivo. The citation of A. baumannii infections in acidic environments (C54) provides relevant context. The conclusion is well-reasoned though necessarily inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "3e9c4e7f-0b33-4b0e-a7be-442464a48051",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The structure suggests potential sites for modification in rational drug design: the uncoordinated imidazole nitrogen, positions on the catechol ring (particularly 3, 4, 5), and the second molecule position which has no protein recognition requirement. Previous studies confirm the 2-OH of preacinetobactin is essential while 3 and 5 positions tolerate changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 make reasonable structure-based predictions for drug design, supported by structural analysis showing which groups are/aren't involved in protein contacts. Claim C57 appropriately cites prior SAR studies that validate some predictions. The inference about the second molecule (C58) follows logically from the minimal protein-acinetobactin contacts observed. These are appropriate forward-looking conclusions from the structural data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "cf3b084e-6b11-4fef-b49c-709118d8f20f",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background context establishing A. baumannii as a WHO critical priority pathogen with intrinsic antibiotic resistance, the importance of iron uptake systems as virulence factors and drug targets, the existence of three siderophore classes in A. baumannii, and the pH-dependent conversion of preacinetobactin to acinetobactin. Previous conflicting reports exist regarding which form is transported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 provide literature-based background supported by appropriate citations. These establish the scientific context and rationale for the study. The claims about prior work are verifiable through the cited references. The acknowledgment of conflicting reports (C14) appropriately frames the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    },
+    {
+      "id": "ed6798c6-398b-4d52-a5c8-c0c03d406d88",
+      "content_id": "c08cc805-5d08-4baa-8501-c761714c309c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Acinetobactin and preacinetobactin were synthesized following published protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 describes the synthesis method with appropriate citation. The text indicates NMR characterization matched literature values, providing validation. This is a standard methodological claim that is adequately supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:43:14.243166Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d9131dae-ed82-473a-97a2-df84894d93bf",
+      "result_id": "231444d6-c586-47f9-8435-dd8af8746242"
+    },
+    {
+      "claim_id": "1ab6e0b5-9ff7-4c70-80c9-c1fa48128478",
+      "result_id": "231444d6-c586-47f9-8435-dd8af8746242"
+    },
+    {
+      "claim_id": "433a7f1e-a67b-4bed-963b-52056bfd26e4",
+      "result_id": "231444d6-c586-47f9-8435-dd8af8746242"
+    },
+    {
+      "claim_id": "403d70c2-e212-48b7-b305-dde5c30443e1",
+      "result_id": "231444d6-c586-47f9-8435-dd8af8746242"
+    },
+    {
+      "claim_id": "639ead14-d0c2-4f25-a4e0-35ba5f0cdc2c",
+      "result_id": "231444d6-c586-47f9-8435-dd8af8746242"
+    },
+    {
+      "claim_id": "d9ee9fbf-9417-4725-9473-af12f89b60f7",
+      "result_id": "231444d6-c586-47f9-8435-dd8af8746242"
+    },
+    {
+      "claim_id": "1c326167-1359-4773-b2f6-ec56e65fa46e",
+      "result_id": "231444d6-c586-47f9-8435-dd8af8746242"
+    },
+    {
+      "claim_id": "1009a8d8-d1ee-4032-9c0e-161262a212a7",
+      "result_id": "231444d6-c586-47f9-8435-dd8af8746242"
+    },
+    {
+      "claim_id": "41d60b5d-b3e9-4ae9-96f1-0547a0a5d651",
+      "result_id": "231444d6-c586-47f9-8435-dd8af8746242"
+    },
+    {
+      "claim_id": "b3fbc8ed-c63e-4946-bf43-fb0b8b4710bd",
+      "result_id": "231444d6-c586-47f9-8435-dd8af8746242"
+    },
+    {
+      "claim_id": "9f904500-f771-4503-82bf-4c85723265f9",
+      "result_id": "231444d6-c586-47f9-8435-dd8af8746242"
+    },
+    {
+      "claim_id": "f6a868f4-2ad8-441e-bb40-bdd0b57f7f47",
+      "result_id": "98ef3bee-4b77-4c65-ad40-7b9f6e83db73"
+    },
+    {
+      "claim_id": "261df96d-0244-4808-a376-cf16b87b76bd",
+      "result_id": "98ef3bee-4b77-4c65-ad40-7b9f6e83db73"
+    },
+    {
+      "claim_id": "4b31564f-4e3a-4632-8bdb-faf11b46d1a0",
+      "result_id": "98ef3bee-4b77-4c65-ad40-7b9f6e83db73"
+    },
+    {
+      "claim_id": "cb0505a3-c532-42f1-a7df-a4c3523ec7e8",
+      "result_id": "98ef3bee-4b77-4c65-ad40-7b9f6e83db73"
+    },
+    {
+      "claim_id": "3022bee4-c9b3-4691-9d14-1767ac04b68a",
+      "result_id": "afa1ade8-0504-420a-979a-4a40b4e65f46"
+    },
+    {
+      "claim_id": "fcff201a-275d-4cd9-8785-61daaedd5fc8",
+      "result_id": "afa1ade8-0504-420a-979a-4a40b4e65f46"
+    },
+    {
+      "claim_id": "91e40e14-4b67-40ff-ad53-461d7c689ad7",
+      "result_id": "afa1ade8-0504-420a-979a-4a40b4e65f46"
+    },
+    {
+      "claim_id": "57a4801d-5d01-41b9-ba58-0947d6ce95b3",
+      "result_id": "afa1ade8-0504-420a-979a-4a40b4e65f46"
+    },
+    {
+      "claim_id": "02862b13-aaf5-4229-8b73-f44182b7cbc5",
+      "result_id": "afa1ade8-0504-420a-979a-4a40b4e65f46"
+    },
+    {
+      "claim_id": "7f1cf9db-dfaa-4c92-a055-586332ade811",
+      "result_id": "afa1ade8-0504-420a-979a-4a40b4e65f46"
+    },
+    {
+      "claim_id": "8f7d50ab-10af-496f-96f9-183c0c556be2",
+      "result_id": "afa1ade8-0504-420a-979a-4a40b4e65f46"
+    },
+    {
+      "claim_id": "e199c39d-3a84-4333-b029-854469523a47",
+      "result_id": "afa1ade8-0504-420a-979a-4a40b4e65f46"
+    },
+    {
+      "claim_id": "e4b27e20-905d-452f-926b-b43f71fb588a",
+      "result_id": "afa1ade8-0504-420a-979a-4a40b4e65f46"
+    },
+    {
+      "claim_id": "358db0a2-ad1a-4cc3-9c38-5343cc412edb",
+      "result_id": "afa1ade8-0504-420a-979a-4a40b4e65f46"
+    },
+    {
+      "claim_id": "65a7d087-25d2-4c99-96a7-6c288fb2a9e0",
+      "result_id": "4650c895-cb11-4e90-a58e-6f7043c4e85c"
+    },
+    {
+      "claim_id": "ff15fb6e-e6e3-4009-968e-2065d762e521",
+      "result_id": "4650c895-cb11-4e90-a58e-6f7043c4e85c"
+    },
+    {
+      "claim_id": "88f0da81-ac9c-4117-b24c-fba378460e61",
+      "result_id": "4650c895-cb11-4e90-a58e-6f7043c4e85c"
+    },
+    {
+      "claim_id": "3732f0a7-3751-43af-b435-35db83534a8e",
+      "result_id": "4650c895-cb11-4e90-a58e-6f7043c4e85c"
+    },
+    {
+      "claim_id": "62d92910-5880-403a-9870-7172d9e891eb",
+      "result_id": "4650c895-cb11-4e90-a58e-6f7043c4e85c"
+    },
+    {
+      "claim_id": "869a12b6-a5ec-4400-b474-cfea05140e07",
+      "result_id": "d1b5c886-caf5-45e9-8dbc-6f3585dde7b0"
+    },
+    {
+      "claim_id": "1cd20d1d-804d-41cc-bc3b-ccde01b07091",
+      "result_id": "d1b5c886-caf5-45e9-8dbc-6f3585dde7b0"
+    },
+    {
+      "claim_id": "c95b20bf-22a3-45e4-bb2b-4b1d8fa90d54",
+      "result_id": "d1b5c886-caf5-45e9-8dbc-6f3585dde7b0"
+    },
+    {
+      "claim_id": "36f49acf-1905-4677-b88c-5f7f4afd1a0e",
+      "result_id": "d1b5c886-caf5-45e9-8dbc-6f3585dde7b0"
+    },
+    {
+      "claim_id": "79a98322-5406-41bb-ae7c-0e3c78b06617",
+      "result_id": "d1b5c886-caf5-45e9-8dbc-6f3585dde7b0"
+    },
+    {
+      "claim_id": "42cd0f9e-8b39-455e-b2b4-3f5b938e8771",
+      "result_id": "d1b5c886-caf5-45e9-8dbc-6f3585dde7b0"
+    },
+    {
+      "claim_id": "79e53d43-ed19-4937-90b6-74dc78ca8a41",
+      "result_id": "0d433f9f-4fa3-444e-a43f-33cf04acb457"
+    },
+    {
+      "claim_id": "e8d204b7-7688-45c3-85e6-c010033f09ca",
+      "result_id": "0d433f9f-4fa3-444e-a43f-33cf04acb457"
+    },
+    {
+      "claim_id": "f9565784-5b94-4a52-a01b-69cc0796b97e",
+      "result_id": "0d433f9f-4fa3-444e-a43f-33cf04acb457"
+    },
+    {
+      "claim_id": "db0d162f-0045-4805-813a-77bc360c7d90",
+      "result_id": "0d433f9f-4fa3-444e-a43f-33cf04acb457"
+    },
+    {
+      "claim_id": "3e06cb7c-5926-44b0-9e18-191090c30244",
+      "result_id": "0d433f9f-4fa3-444e-a43f-33cf04acb457"
+    },
+    {
+      "claim_id": "a660a778-7557-49d5-83f9-b58cee143d1a",
+      "result_id": "0d433f9f-4fa3-444e-a43f-33cf04acb457"
+    },
+    {
+      "claim_id": "510f122c-3537-4d75-8136-89606305b208",
+      "result_id": "b1c115d1-05e3-4a4c-9286-253358d2ca5b"
+    },
+    {
+      "claim_id": "202a3725-729e-4125-b1cf-11e351d15065",
+      "result_id": "b1c115d1-05e3-4a4c-9286-253358d2ca5b"
+    },
+    {
+      "claim_id": "9610e10f-7b76-4298-a773-70cec481cc44",
+      "result_id": "b1c115d1-05e3-4a4c-9286-253358d2ca5b"
+    },
+    {
+      "claim_id": "10fc2cb9-b05b-495e-b7be-f11dafe7cde8",
+      "result_id": "b1c115d1-05e3-4a4c-9286-253358d2ca5b"
+    },
+    {
+      "claim_id": "6cb8e4dd-ae73-4c4b-a6ea-d3e3e781ab64",
+      "result_id": "b1c115d1-05e3-4a4c-9286-253358d2ca5b"
+    },
+    {
+      "claim_id": "4804f4ce-33b0-4a57-bc9f-814d4d2bc6e6",
+      "result_id": "b1c115d1-05e3-4a4c-9286-253358d2ca5b"
+    },
+    {
+      "claim_id": "7eae066d-5f13-49f3-b606-d0e3924eab43",
+      "result_id": "3e9c4e7f-0b33-4b0e-a7be-442464a48051"
+    },
+    {
+      "claim_id": "cc57055f-87f3-4e60-9c60-0aa079ef3b03",
+      "result_id": "3e9c4e7f-0b33-4b0e-a7be-442464a48051"
+    },
+    {
+      "claim_id": "83301f00-619d-43e3-bd32-56552f512ac7",
+      "result_id": "3e9c4e7f-0b33-4b0e-a7be-442464a48051"
+    },
+    {
+      "claim_id": "aaa38e50-c594-474e-abe5-ef36b83ec1fa",
+      "result_id": "3e9c4e7f-0b33-4b0e-a7be-442464a48051"
+    },
+    {
+      "claim_id": "4eaa527b-94d0-4bcf-89df-c2d967b385b0",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "77336ec7-5166-48fa-8f3b-8df5d85f8304",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "83894964-c1b0-4ed5-80a8-ed3fef60e664",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "d2b12282-732f-409b-8b31-6bdee42505b6",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "7215c6ac-b035-488c-ae4c-2ea37002c87d",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "93b19808-6367-40c6-82bf-85d443b291e9",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "9de97cd5-908f-47cd-a14a-05686c65b7ad",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "f44e324c-0d36-4ac5-aaf0-969383dab14e",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "eb961a72-9cf5-4245-a40e-2129b8233e67",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "84309693-8bdc-479e-be6f-06b6061990ce",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "fdf21f3e-25af-46d4-b667-a0bada820c71",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "ebb016d9-bba3-4e79-847e-7234b7bcd6fb",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "2ee2fbcd-8145-489e-adc3-4802f36c867d",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "1ba21516-87fa-4aa0-a1f6-a834a26f4164",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "5bc81e2c-f4d2-49ae-9ff8-49e021676235",
+      "result_id": "cf3b084e-6b11-4fef-b49c-709118d8f20f"
+    },
+    {
+      "claim_id": "caf8fb4f-bcdf-4b88-a672-df50c695a2fe",
+      "result_id": "ed6798c6-398b-4d52-a5c8-c0c03d406d88"
+    }
+  ],
+  "comparisons": []
+}

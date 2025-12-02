@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "A bacterial GWAS of 101 pyomyositis cases and 417 asymptomatic nasal carriage controls revealed high heritability (63.8%, 95% CI 49.2\u201378.4%) and strong lineage effects, with CC-121 causing 85% of pyomyositis cases while ST-834 and CC-45 caused none. Principal components analysis identified significant associations with case/control status (PC1 p=10^-29.6, PC20 p=10^-13.9, PC2 p=10^-4.9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C20-C24 provide consistent quantitative evidence from the study design, heritability analysis, and principal component analysis. The sample sizes are adequate (n=518 total), statistical significance is strong, and the lineage-specific patterns are clearly demonstrated in Figure 1. The heritability estimate with confidence intervals and multiple significant PCs controlling for population structure support the conclusion of strong bacterial genetic contribution to pyomyositis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Kmer-based GWAS identified 9,175 significantly associated kmers (p\u226410^-6.8 to 10^-21.4), with 98.9% (9,074/9,175) mapping to a 45.7 kb prophage region with 95% identity to \u03c6SLT. Among these, 1,630 kmers tagged the PVL coding sequence (lukSF-PV), present in 97% of cases vs 20% of controls (OR 129.5, p=10^-17.9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 describe a well-powered kmer GWAS with appropriate multiple testing correction (Bonferroni) and strong effect sizes (OR 2.7-139.8). The localization of 98.9% of significant kmers to a single prophage region is compelling, and the PVL association is highly significant. The quantitative data are internally consistent and supported by Figure 2A-B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Kmers in the 389 bp region upstream of the PVL coding sequence showed strong disease association (p=10^-21.4, OR 140). Long-read Oxford Nanopore sequencing of 37 problematic assemblies resolved assembly gaps, after which the upstream signal was no more significant than the coding sequence itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 describe a methodologically sound approach to resolving assembly artifacts. The use of long-read sequencing to address short-read assembly problems in the upstream region is appropriate, and the finding that improved assemblies eliminated the apparent stronger upstream signal suggests the initial result was technical rather than biological. This demonstrates good scientific practice in validating unexpected findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39"
+    ],
+    "result": "The PVL region (coding sequence plus upstream sequence) explained >99.9% of heritability (95% CI 93.5\u2013100%). When PVL-tagging kmers were included as a covariate, residual heritability was 0.0% (95% CI 0\u20132.5%), representing a 100% reduction (95% CI 93.5\u2013100%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38-C39 provide consistent quantitative evidence that PVL accounts for essentially all heritable variation in pyomyositis risk. The statistical approach using GEMMA with covariates is appropriate, and the confidence intervals are narrow and exclude meaningful residual heritability. This strongly supports PVL as the primary genetic determinant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "PVL was absent in only 3/101 pyomyositis cases (in CC-88, CC-1, CC-121), suggesting near-necessity for disease development in Cambodian children. However, PVL presence in 20% of asymptomatic controls indicates incomplete penetrance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 correctly interpret the data showing PVL is nearly necessary (97% of cases) but not sufficient (20% of controls carry it without disease). This demonstrates appropriate caution in distinguishing necessity from sufficiency and acknowledges the role of host or environmental factors in disease penetrance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C53",
+      "C54"
+    ],
+    "result": "PVL genes were carried on multiple phage backgrounds that varied by clonal complex, with sequences showing >95% homology to four of seven known PVL-carrying phages. PVL-positive lineages generally carried a single phage type, consistent with known strain restriction of S. aureus phages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 and C53-C54 describe phage diversity analysis supported by BLAST results and Figure 2\u2014figure supplement 3. The finding of lineage-specific phage types is consistent with cited literature on phage-strain restriction (C54). The observation that PVL moves on mobile genetic elements helps explain how GWAS could identify it despite population structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C7"
+    ],
+    "result": "The study concludes that PVL (coding sequence plus upstream region) is nearly necessary for pyomyositis development, with sporadic presence associated with disease in low-frequency strains and absence associated with carriage in high-propensity strains. The locally common CC-121 lineage contributes most to pyomyositis prevalence. Staphylococcal pyomyositis is established as critically dependent on a single toxin, like tetanus and diphtheria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C50-C52, C55 represent the main conclusions drawn from the data. The evidence strongly supports PVL as the key determinant: high heritability explained by PVL, presence in 97% of cases vs 20% of controls, and movement across lineages breaking confounding. The comparison to tetanus and diphtheria is appropriate given the single-toxin dependence. The CC-121 contribution is well-documented (C20).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Outside the PVL-carrying prophage, only 101/9,175 significantly associated kmers were found, mapping to short, fragmentary, mostly non-coding regions including sequences with homology to adhesins (sraP, sdrC/sdrD region) and acetyltransferase genes. These signals were not investigated further.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 appropriately characterize the minor non-PVL signals. The decision not to pursue these fragmentary, non-coding signals is reasonable given their characteristics and the overwhelming signal from PVL. However, this does represent a limitation\u2014some of these regions (particularly adhesins) could have biological relevance that warrants future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "All pyomyositis cases were methicillin-sensitive S. aureus (MSSA), despite emergence of CA-MRSA in carriage in Cambodia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by Figure 1\u2014figure supplement 1 and represents an important negative finding. This observation helps break the confounding between PVL and methicillin resistance seen in previous USA300 studies, strengthening the conclusion that PVL rather than MRSA status drives pyomyositis risk.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The study demonstrates that bacterial GWAS can pinpoint virulence variants when mobile genetic elements unravel linkage disequilibrium, if effect sizes are sufficiently strong.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is a valid methodological conclusion supported by the study's success in identifying PVL. The movement of PVL on phages across lineages (C43-C45) broke the confounding with strain background that plagued previous studies, and the large effect size (OR ~130) enabled detection. This represents an important proof-of-principle for bacterial GWAS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C74"
+    ],
+    "result": "The biological plausibility of PVL's role is supported by prior literature: skeletal muscle abscesses are rare in bacteremia models without trauma; PVL-containing strains show increased bacteremia duration and larger muscle abscesses in animal models; and PVL has been found bound to necrotic muscle in human myositis. These observations support the hypothesis that PVL facilitates bacterial seeding to muscles via bloodstream and tropism for muscular infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 and C74 appropriately cite prior experimental and clinical evidence supporting PVL's mechanistic role. The animal model data (C58-C59) and human observation (C60) provide independent support for the GWAS findings. However, C74 correctly frames this as a hypothesis\u2014direct mechanistic proof in the current study population is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The study suggests that PVL-targeting vaccines might protect against pyomyositis and that antibiotics decreasing toxin expression may offer clinical benefit, drawing parallels to toxin-mediated diseases like tetanus and diphtheria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 are explicitly speculative (\"might,\" \"may,\" \"raise the hypothesis\") and represent future directions rather than current findings. While the strong association with PVL provides rationale for these interventions, no vaccine or antibiotic efficacy data are presented. These remain untested hypotheses requiring clinical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study methods included 106 pyomyositis episodes in 101 individuals (using earliest episode per individual) and 417 controls randomly selected from two cohorts (222 from 2008, 195 from 2012). Genome assembly used median kmer length 123 bp, MLST-based clonal complex assignment (6/7 shared loci), and identified median 2,801,000 kmers per isolate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 describe methodological details that are clearly stated and appropriate. The sample sizes are adequate for the observed effect sizes, control selection appears unbiased (random selection from carriage cohorts), and the bioinformatic methods are standard. The use of earliest episode per individual (C63) appropriately avoids pseudoreplication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The study demonstrates the potential for microbial GWAS to elucidate pathogenesis of bacterial infections and identify specific virulence genes associated with human disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is a valid general conclusion supported by the successful identification of PVL as the key determinant of pyomyositis. The study provides proof-of-principle that bacterial GWAS can identify specific virulence genes for human disease when effect sizes are large and mobile genetic elements break linkage disequilibrium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims establish that pyomyositis is a severe skeletal muscle infection affecting children in tropical regions, caused by S. aureus in up to 90% of cases, with distinctive features including sparing of skin/subcutaneous tissues and presumed hematogenous spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C10 represent established background knowledge appropriately cited from prior literature. These claims provide necessary context for the study but are not novel findings. The characterization of pyomyositis as distinct from skin/soft tissue infections (C9) is important for understanding why PVL might be specifically associated with this disease manifestation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior evidence on PVL and pyomyositis was conflicting: pyomyositis incidence doubled during CA-MRSA epidemics in the USA, small case series reported high PVL prevalence in pyomyositis-causing S. aureus, but a meta-analysis found no evidence for increased musculoskeletal infection rates in PVL-positive bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C18-C19 accurately summarize the conflicting prior literature that motivated this study. The tension between case series showing PVL association and meta-analysis showing no association (C19) highlights the confounding problems (strain background, MRSA status) that this GWAS approach successfully addressed. This context is essential for understanding the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on PVL mechanism: PVL is a bipartite pore-forming toxin (LukF-PV and LukS-PV) usually carried on bacteriophages that facilitate horizontal transfer. PVL causes neutrophil lysis by inserting into cellular membranes after binding complement receptor C5aR, with both toxic and immunomodulatory effects including inhibition of C5a-mediated immune activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 provide well-cited background on PVL structure, genetics, and mechanism. This established knowledge is important for interpreting the GWAS findings and understanding biological plausibility. The description of PVL's dual toxic and immunomodulatory effects (C17) is particularly relevant for understanding how it might promote muscle infection.",
+    "result_type": "MINOR"
+  }
+]

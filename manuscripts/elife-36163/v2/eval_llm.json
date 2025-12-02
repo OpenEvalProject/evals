@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The systematic review examined 328 original research articles from the top 25% of physiology journals published in June 2017. Of these, 277 (84.5%) included ANOVA or t-tests, with ANOVA (68.6%) being more common than t-tests (54.5%). Most papers used one-way or two-way ANOVAs, with three or more factors being uncommon (<3%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is clearly described with appropriate detail (C32, C123-C130), including independent dual review (C125-C126), adherence to PRISMA guidelines (C127), and transparent reporting of sample characteristics. The descriptive statistics about test usage (C33-C37) are directly reported from the systematic review data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "95% of papers using ANOVA (213/225) did not contain sufficient information to determine what type of ANOVA was performed. Specifically, 16.9% failed to specify the number of factors, and 54% did not specify which factors were included in any ANOVA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are directly supported by quantitative data from the systematic review (C4, C44-C47) and are consistent with Figure 2. The findings represent objective counts of missing information in the reviewed papers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Among papers using one-way ANOVAs, 60.9% (67/110) applied this test to study designs with two or more factors. While this may be appropriate for very small sample sizes, a two-way ANOVA would typically provide more information by examining both factors simultaneously and testing for interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The empirical finding (C48) is clearly stated with supporting data. The interpretation about when one-way vs. two-way ANOVA is appropriate (C49-C52) is based on established statistical principles and is appropriately qualified. Figures 3-4 provide supporting illustrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Among papers reporting repeated measures ANOVA (18.2%), 63.4% did not specify whether factors were between- or within-subjects. Of papers not mentioning repeated measures (81.8%), 28.3% appeared to require repeated measures based on study design, but it's impossible to distinguish whether the wrong test was used or reporting was incomplete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative findings (C53, C56-C58) are directly from the systematic review data. The interpretation about ambiguity (C59) and statistical consequences (C60) are appropriately qualified. The recommendation (C61) follows logically from the findings. Figure 5 provides supporting illustration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C62",
+      "C63"
+    ],
+    "result": "27.1% of papers (61/225) using ANOVA did not specify what type of post-hoc tests were performed, while 72.8% did report the post-hoc test used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C5, C62, C63) present straightforward descriptive statistics from the systematic review with clear denominators and are consistent with Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Over half of papers (53%; 95/179) using t-tests did not specify whether tests were paired or unpaired. Among these, 69 reported using 'Student's t-test,' which traditionally refers to unpaired tests but was sometimes used by authors to describe paired tests. The choice between paired and unpaired tests is critical as they test different hypotheses and yield different results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The empirical findings (C64-C66, C68) are clearly reported from the systematic review. The statistical principles about differences between paired and unpaired tests (C67, C69-C72) are established knowledge. Figure 6-7 provide supporting illustrations of the statistical consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Among papers with unpaired t-tests, 64.5% (100/155) reported whether equal variance was assumed for all tests, and 6.5% reported this for some tests. Incorrect variance assumptions lead to inflated Type I error rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The descriptive statistics (C76-C77) are directly from the systematic review. The statistical principles about variance assumptions (C73-C75) are established knowledge supported by appropriate citation (Ruxton, 2006).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Most papers failed to report information needed to verify test results: >95% of ANOVA papers did not report F-statistics or degrees of freedom, and 95.7% of t-test papers omitted t-statistics. Additionally, 77.8% of ANOVA papers and 79.7% of t-test papers reported p-value ranges rather than exact values. This prevents verification of results and detection of errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The empirical findings (C87-C93) are directly from the systematic review and supported by Figure 8 and Table 1. The rationale for reporting these values (C78-C79, C83) and consequences of errors (C80-C82, C84-C85) are supported by appropriate citations. The recommendation (C86) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Statistical reporting in biomedical sciences is often limited, contributing to reproducibility concerns. Prior studies have documented common statistical errors including inappropriate test selection, inadequate reporting, and p-value errors that can alter study conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the context and motivation for the study. They are supported by multiple appropriate citations to published literature (C6, C8-C13). The inference about contribution to reproducibility concerns (C7) is appropriately qualified as 'likely.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "SAMPL guidelines recommend detailed statistical reporting to enable verification of results, but these guidelines have not been widely adopted. Some journals have implemented policies to improve statistical reporting, including Science's Statistical Board of Reviewing Editors and policies at Nature, eLife, and EMBO Journal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SAMPL guideline principle (C14) is appropriately cited. The observation about limited adoption (C15) is consistent with the study's findings. Journal policy examples (C17-C18) are supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "T-tests and ANOVA are fundamental to biomedical research, but statistical methods are often vaguely reported (e.g., 'analyzed by t-tests or ANOVA, as appropriate'). This vague reporting prevents verification of appropriate test selection and assumes uniform statistical training, which is problematic given that only 67.5% of top NIH-funded physiology departments require statistics training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of t-tests/ANOVA as fundamental (C19) is supported by citation. The observation about vague reporting (C20) is consistent with the study's findings. The logical inferences about consequences (C22-C27, C31) are reasonable. The statistics training data (C28) is appropriately cited, and observations about training variability (C29-C30) are supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The study's results may not generalize to brief reports, lower impact factor journals, non-English journals, or non-PubMed indexed journals. Further research is needed to determine if findings apply to other fields beyond physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriate acknowledgments of study limitations (C39) and needs for future research (C40) that follow logically from the study design described in C32, C38, C123-C124.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Basic biomedical science papers generally use one- and two-way ANOVAs with or without repeated measures, as more complex ANOVAs were rare (<3%). Authors need to report three key pieces of information to allow verification that the appropriate ANOVA type was used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation about ANOVA types (C41-C42) is supported by the systematic review data. The recommendation about reporting requirements (C43) is based on established statistical principles and is appropriately referenced to Box 1 and Box 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Many papers lack sufficient information to determine test selection rationale or verify results. Data are often presented using summary statistics only, with raw data rarely available. While journals are implementing policies for better graphics and non-parametric tests may be preferable for small samples, non-parametric tests remain uncommon (3.8% exclusive use in physiology).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusions (C94-C96) are appropriately drawn from the systematic review findings. Observations about data presentation (C97-C98) and journal policies (C99) are supported by citations. The recommendation about non-parametric tests (C101) is appropriately qualified, and usage statistics (C102-C105) are cited from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Fields like psychology are moving toward more informative techniques including effect sizes, confidence intervals, and meta-analyses. These approaches provide information about effect magnitude and uncertainty that p-values alone do not capture, and can synthesize results from multiple small studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe alternative statistical approaches and their benefits. The trend in psychology (C106) is appropriately cited. The descriptions of effect sizes, confidence intervals, and meta-analyses (C107-C110) represent established statistical knowledge with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The findings highlight the need for improved statistical reporting through collaboration among investigators, editors, and reviewers. While journal policy changes are common, their effectiveness is unclear, with mixed evidence from studies of Nature journals (modest improvement), PLoS One (no effect), Psychological Science (some improvement), and Journal of Physiology/British Journal of Pharmacology (no improvement). Potential solutions include unlimited word counts for methods, supplemental methods sections, software tools, and data archiving.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion (C111) follows logically from the study findings. The assessment of policy effectiveness (C112-C116) is appropriately qualified and supported by citations to specific studies. The observation about current practices (C117) is consistent with findings. Proposed solutions (C118-C121) are reasonable suggestions, with C118 and C121 supported by citations, while C119-C120 are appropriately presented as possibilities.",
+    "result_type": "MINOR"
+  }
+]

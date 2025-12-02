@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C51",
+      "C55",
+      "C56",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors developed iSAIL, a machine learning framework that includes a Random Forest classifier trained to map gene expression data from combination treatment experiments across a comprehensive taxonomy of 123 distinguishable interaction profiles. The classifier was validated using simulated data under multiple noise regimes and outperformed alternative methods (LDA and deterministic matching) in accuracy, precision, and recall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C17-C18, C51, C55-C56, C60-C67 collectively demonstrate the development and validation of the iSAIL classifier. The systematic comparison of machine learning models using simulated data with defined noise characteristics (C61-C62, C64-C67) provides strong evidence for Random Forest selection. The mathematical framework (C60) and validation approach are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors curated a compendium of 32 combination treatment studies (25 human, 7 murine) from public repositories, encompassing diverse immune cell types (dendritic cells, macrophages, monocytes, epithelial cells, adaptive immune cells) and stimuli (cytokines, TLR ligands, drugs). Datasets were preprocessed using standard methods including differential expression analysis with Limma and multiple testing correction at p<0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C68-C70 describe the data compendium assembly and preprocessing pipeline. The methodology is clearly documented with appropriate statistical thresholds and standard bioinformatics tools. Table 1 provides detailed documentation of all included datasets, supporting the claims about dataset diversity and scope.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Analysis of the ~30,000 interactions in the landscape revealed that the most frequent interactions (floor and ceiling effects, 27% and 12% respectively) likely represent assay limitations, while biologically relevant interactions including suppression (9%), inhibition (8%), restoration (4%), emergence (4%), and potentiation (3%) were less frequent. Theoretically possible reversal interactions were nearly absent (<0.04%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 present quantitative findings from the landscape analysis shown in Figure 2B. The percentages are clearly documented and the interpretation distinguishing assay artifacts from biologically meaningful interactions is reasonable. However, the claim that floor/ceiling effects provide limited information (C23) relies on the absence of dose-response data, which is acknowledged as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Mining the interaction landscape for immune checkpoint genes revealed that IDO1 shows positive interactions in 5 out of 15 selected datasets, including two cases of potentiation (pDC with IL3+influenza and moDC with TNF+IFN\u03b2). The authors speculate these interactions may restrict overreactive immune responses based on IDO1's known function in inhibiting T cell division and promoting regulatory T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 describe findings from landscape mining shown in Figure 2D-E. The quantitative observation about IDO1 interactions (C30-C31) is data-supported. The functional interpretation (C33) is appropriately presented as speculation based on established IDO1 biology (C32, supported by citation), though it lacks direct experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C52"
+    ],
+    "result": "Analysis of TNF-containing combination treatments across multiple datasets revealed that cofactors can qualitatively alter TNF biology through suppression, reversal, and emergence of new functions including proteasome degradation, alternative NF-\u03baB activation, T cell chemotaxis, and alterations in antigen presentation and T helper cell polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C52 describe findings from the TNF-focused analysis shown in Figure 3. The enrichment analysis methodology is appropriate and the identification of context-dependent TNF effects is well-supported by the data. However, these are computational predictions from enrichment analysis rather than experimentally validated mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Application of iSAIL to TNF+IFN\u03b2 co-treatment of human moDCs identified 374 positive interactions, including emergent synergy of VCAM1. Experimental validation using imaging flow cytometry demonstrated that TNF+IFN\u03b2 synergistically induce VCAM-1-dependent DC-T cell adhesion, with VCAM-1 neutralization significantly reducing the synergy score (p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42, C77-C82 describe the experimental validation of VCAM1-mediated DC-T cell adhesion. The experimental design is appropriate with proper controls (neutralizing antibody), the methodology is clearly described, and statistical significance is demonstrated (C42). This represents a complete hypothesis-generation-to-validation cycle demonstrating iSAIL's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "iSAIL-based enrichment analysis of TNF+IFN\u03b2 interactions, performed separately for different interaction profiles using four annotation databases (GO, KEGG, Wikipathways, Reactome), provided richer functional annotation than conventional analysis. This revealed reciprocal potentiation of TNF and IFN\u03b2 signaling pathways, metallothionein involvement in the 'IFN\u03b2 restores TNF' pattern, and distinct enrichments for NK cell proliferation ('TNF potentiates IFN\u03b2') and T cell proliferation ('IFN\u03b2 potentiates TNF').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47, C74-C76 describe the enrichment analysis methodology and findings shown in Figure 4C. The comparison with conventional analysis demonstrates added value of profile-specific enrichment. The methodology is appropriate with multiple annotation databases and proper statistical thresholds (adjusted p<0.05). The biological interpretations are supported by the enrichment data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C83"
+    ],
+    "result": "Experimental validation using allogeneic cross-donor stimulation confirmed iSAIL's prediction of synergistic T cell proliferation from TNF+IFN\u03b2 treatment, showing a nearly twofold increase in proliferating T cells. CCL-5 neutralization experiments demonstrated that CCL-5 mediates this synergistic effect, with neutralization significantly reducing the synergy score (p=0.008).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C83 describe experimental validation of CCL-5-mediated T cell proliferation. The experimental design includes appropriate controls (neutralizing antibody), the methodology for measuring proliferation (CFSE dilution) is standard and well-described, and statistical significance is demonstrated (C50). The authors acknowledge a marginal difference between gene-level and functional profiles, which is appropriately discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "iSAIL analysis of TNF+IFN\u03b2 co-treatment uncovered novel synergies controlling DC-T cell interactions and T cell proliferation, generating testable hypotheses about molecular mediators (VCAM-1 and CCL-5) that were subsequently validated experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 summarize the discovery and validation cycle. These summary claims are well-supported by the experimental validations described in previous result groups (VCAM-1 and CCL-5 experiments). The complete workflow from computational prediction to experimental validation demonstrates the utility of the iSAIL framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors establish the biological context and motivation for iSAIL by reviewing prior work on immune regulation, noting that while studies have focused on individual stimuli, immunological responses are shaped by multiple stimuli acting in combination. They identify critical limitations of standard binary classification approaches that fail to distinguish biologically relevant interactions from artifacts, prevent meaningful aggregation of interactions, and do not support integration across multiple studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C16 establish the scientific context and rationale for the work. These claims are appropriately supported by citations to prior literature (C7, C9, C12) and represent established knowledge in the field (C8, C11, C13). The identified limitations (C14-C16) are logical and well-articulated, providing clear motivation for the iSAIL framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The iSAIL resource demonstrates that TNF has strikingly different effects depending on co-stimulators and enables discovery of new functional synergies between TNF and IFN\u03b2 controlling dendritic cell-T cell crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 are high-level summary statements of major findings. C5 is supported by the detailed TNF context-dependence analysis (Figure 3, claims C34-C35, C52). C6 is supported by the experimental validations of VCAM-1 and CCL-5 mechanisms (claims C40-C42, C48-C50). These represent key discoveries of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors discuss potential extensions and applications of iSAIL, speculating that the framework could be adapted to other -omics data types (proteomics, metabolomics, epigenomics) under alternative distributional assumptions, and noting the relevance to drug combination therapeutics where thousands of clinical trials study combination effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C59 represent discussion points about future applications. C57 is explicitly speculative about framework adaptability without supporting data. C58 is a general statement about clinical trials supported by citations. C59 is a general principle about drug combinations. These are reasonable discussion points but lack experimental support in the current work.",
+    "result_type": "MINOR"
+  }
+]

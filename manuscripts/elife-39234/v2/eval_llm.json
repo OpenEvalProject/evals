@@ -1,0 +1,482 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The duration of the lag phase when S. cerevisiae cells are switched from glucose to maltose depends on the duration of glucose exposure, with longer glucose exposure leading to longer lag times. This is observed both at the population level and at the single-cell level, where increasing lag times result from individual cells taking more time to resume growth and an increasing fraction of cells that do not resume growth at all.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, C51, C52, and C53 are well-supported by experimental data shown in Figure 1. The population-level measurements (Figure 1B-C) and single-cell measurements (Figure 1D-E) both demonstrate a clear relationship between glucose exposure duration and lag phase duration. The data show both increased individual lag times and increased fraction of non-growing cells with longer glucose exposure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "History-dependent behavior is not unique to maltose-glucose-maltose shifts but is a commonly occurring phenomenon in yeast. Similar behavior is observed in galactose-glucose-galactose shifts, glycerol-glucose-glycerol shifts, and in non-laboratory strains (L-1374 and BC187), although the extent of the effect can vary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by experimental data shown in Figure 1\u2014figure supplements 1, 2, and 4. The observation of similar HDB patterns across multiple carbon source transitions and in different genetic backgrounds demonstrates the generality of the phenomenon. The data show consistent patterns of lag phase dependence on glucose exposure duration across these conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C99",
+      "C107",
+      "C154",
+      "C158"
+    ],
+    "result": "History-dependent behavior in glucose-maltose and glucose-galactose shifts does not rely on inheritance of dedicated nutrient-specific proteins (Mal or Gal proteins). Pre-growth in galactose leads to shorter lag times in maltose despite very low Mal protein levels, and there is little correlation between Mal/Gal protein levels and lag duration when cells are pre-grown in different carbon sources. Additionally, variability in inherited protein levels does not explain variability in single-cell lag times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C59-C66, C71-C74, C99, C107, C154, and C158 are well-supported by experimental data shown in Figures 2A-F and 2G-I. The key evidence includes: (1) pre-growth in galactose (with ~70-fold lower Mal12p and undetectable Mal11p) leads to shorter lags than maltose pre-growth, which is opposite to predictions of the protein inheritance hypothesis; (2) correlation between Mal/Gal protein levels and lag times only holds for specific pre-growth conditions; (3) single-cell analysis shows R\u00b2 < 0.11 for correlation between inherited protein levels and individual lag times. These multiple lines of evidence convincingly refute the protein inheritance hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "MAL and GAL gene induction coincides with the resumption of rapid exponential growth after carbon source shifts. However, MAL gene induction is often preceded by a period of slow growth (limited to <2-fold area increase), and the mal deletion mutant can enter this slow growth phase but cannot shift to rapid exponential growth. This suggests that while MAL/GAL gene induction is crucial for complete growth resumption, other mechanisms may be the main rate-limiting step for cells escaping the lag phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C91 are supported by experimental data shown in Figure 3B-C and Figure 3\u2014figure supplements 1-3. The time-lapse microscopy data clearly show that MAL/GAL gene induction coincides with rapid growth resumption, but the observation of slow growth before MAL induction and the behavior of the mal deletion mutant provide strong evidence that MAL induction is not the sole rate-limiting step. The data are internally consistent and the conclusions are logically derived from the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Constitutively high levels of both Mal11p and Mal12p are sufficient to allow rapid resumption of growth after the shift to maltose, but single overexpression of either gene alone does not produce this effect. The differential effects of MAL11 and MAL12 overexpression are consistent with their roles in positive and negative feedback loops in the MAL regulatory network. In wild-type cells, Mal11p is likely inherited in a non-functional (internalized) form during glucose growth, while Mal12p remains present at higher concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C106 are supported by experimental data shown in Figure 3\u2014figure supplements 4-5 and by citations to previous work on Mal11 internalization. The dual overexpression experiments clearly demonstrate that both proteins are required for the effect, and the differential behavior of single overexpression strains is consistent with known biochemical functions. The inference about Mal11 internalization is supported by both the experimental data and previous literature (C101).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C162"
+    ],
+    "result": "Mating experiments demonstrate that HDB is caused by a growth-promoting factor that is diluted during glucose growth. When diploids are formed from parents with different pre-growth conditions (one in maltose, one in glucose), the resulting diploid demonstrates a lag similar to the parent pre-grown on maltose, suggesting the diploid received a high concentration of a growth-promoting factor from the maltose-grown parent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 and C162 are supported by experimental data shown in Figure 3\u2014figure supplement 6. The mating experiment provides clear evidence that the factor determining HDB promotes growth resumption rather than repressing it. The observation that diploids from mixed matings show short lag phases (similar to the maltose-grown parent) is consistent with a dilutable growth-promoting factor. However, the authors appropriately note a caveat that two-fold dilution of a repressor could also render it non-functional, though this seems less likely given the graded HDB response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C163"
+    ],
+    "result": "Heterokaryon experiments show that the rate of MAL gene induction is not biased towards one of the two nuclei with distinct pre-growth conditions, indicating that the events leading up to MAL gene induction involve at least one cytoplasmic step and are not restricted to the nucleus. This argues against the hypothesis that HDB is exclusively due to a transcriptionally poised chromatin structure at the MAL genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 and C163 are supported by experimental data shown in Figure 3\u2014figure supplement 7. The heterokaryon experiment with kar1-1 mutation provides strong evidence for cytoplasmic involvement in HDB. The lack of bias in MAL gene induction between the two nuclei (R\u00b2 = 0.854 and 0.627 for the two conditions) indicates that nuclear factors alone cannot explain the phenomenon. This is a well-designed experiment that effectively tests the chromatin hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C46"
+    ],
+    "result": "Genome-wide Bar-Seq screen of 3548 gene deletion mutants reveals that deletion mutants with shorter lag phases are enriched for genes involved in transcriptional regulation, the cytoplasmic ribosome, and histone deacetylation (suggesting defects in glucose repression), while deletion mutants with longer lag phases are highly enriched for genes involved in respiration and mitochondrial function. Additional classes of mutants show altered HDB dynamics, including long-then-short mutants enriched for chromatin modifiers and short-then-long mutants enriched for purine biosynthesis and ESCRT complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 and C46 are supported by Bar-Seq data and GO enrichment analysis shown in Figure 4 and Figure 4\u2014figure supplements 4-5. The genome-wide screen provides unbiased identification of genes affecting HDB. The GO enrichment analysis is statistically sound (Holm-Bonferroni-corrected p-value < 0.05), and the results are validated by follow-up experiments on three candidate genes (ATP5, COQ5, QCR7) shown in Figure 4\u2014figure supplement 6. The strong enrichment of respiratory genes in the long lag mutants is particularly notable and consistent with the main hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "RNA-Seq analysis reveals that genes involved in respiration-related pathways (TCA cycle, electron transport chain) are repressed during glucose growth and induced after the shift to maltose, with their induction preceding MAL gene induction. Genes that lead to long lag when deleted tend to be repressed during glucose growth (by ~35%), while genes that lead to shorter lag when deleted are slightly induced during glucose growth (by ~10%). The repressed genes that cause long lag when deleted are mainly linked to respiration and are likely involved in HDB. There is good correlation between mRNA and protein levels for respiratory and MAL genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C131 are supported by RNA-Seq data shown in Figure 5 and Figure 5\u2014figure supplements 1-4. The transcriptome analysis provides comprehensive gene expression profiles across the experimental conditions. The GO enrichment analysis identifies biologically meaningful categories, and the comparison with Bar-Seq data (Figure 5\u2014figure supplement 3) provides orthogonal validation. The correlation between mRNA and protein levels (Figure 5\u2014figure supplement 4) confirms that transcriptional changes reflect protein-level changes. The temporal ordering of respiratory gene induction before MAL gene induction is particularly important for the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C165",
+      "C166"
+    ],
+    "result": "The levels of respiratory proteins (Cit1p, Mdh1p, Kgd2p, Ndi1p, Sdh2p, Cox6p) correlate strongly with population lag times (R\u00b2 between 0.76 and 0.97) for both maltose and galactose pre-growth conditions, suggesting that the link between respiration and lag duration is a general phenomenon. This correlation holds across different pre-growth conditions, unlike the correlation with Mal protein levels. Pre-growth in galactose leads to shorter lag times compared to maltose because respiratory protein levels are higher in galactose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C141, C165, and C166 are supported by experimental data shown in Figure 6A and Figure 2A-B. The strong correlations (R\u00b2 0.76-0.97) between respiratory protein levels and lag times provide compelling evidence for the role of respiration in HDB. The fact that these correlations hold across different pre-growth conditions (maltose and galactose) strengthens the conclusion that this is a general mechanism. The comparison with Mal protein correlations (which only hold for specific conditions) further supports the respiratory hypothesis over the protein inheritance hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Respiratory gene induction occurs around the same time as the start of slow growth in microcolonies and precedes MAL gene induction by several hours. Only microcolonies that induce respiratory genes show substantial growth. Time-resolved cross-correlation analysis shows that expression of respiratory proteins (Cit1p, Cox6p) precedes escape from lag phase by ~4 hours with stronger correlation, while Mal protein expression peaks right after cells resume growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 are supported by experimental data shown in Figure 6\u2014figure supplement 1, Figure 6\u2014figure supplement 2, and Figure 6D. The microcolony tracking data combined with cross-correlation analysis provides strong temporal evidence that respiratory activation precedes MAL gene induction and growth resumption. The cross-correlation analysis is methodologically sound and clearly shows the temporal ordering of events. This temporal sequence is critical for establishing that respiratory activation is the rate-limiting step rather than MAL gene induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C47"
+    ],
+    "result": "Inhibiting respiration using either a chemical inhibitor (antimycin A) or a respiratory deficient mutant (cox6\u0394) leads to substantially longer lag phases and a stronger increase in lag with extended pre-growth in glucose, even in cells that only grew for short periods in glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147, C148, and C47 are supported by experimental data shown in Figure 6B. The use of both chemical inhibition and genetic deletion provides orthogonal validation of the respiratory requirement. The data show clear increases in lag time with both methods, and the effect is observed across different glucose pre-growth durations. This provides direct causal evidence that respiratory activity influences lag phase duration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C48"
+    ],
+    "result": "Overexpression of the HAP4 respiratory regulator leads to a two-fold decrease in lag duration and a much smaller increase in lag with extended pre-growth on glucose, effectively abolishing HDB and resulting in nearly constant short lag phases. This effect occurs both after pre-growth in maltose and galactose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149, C150, and C48 are supported by experimental data shown in Figure 6C. The HAP4 overexpression experiment provides strong evidence that increasing respiratory capacity can overcome HDB. The effect is observed across different pre-growth conditions (maltose and galactose), demonstrating generality. This gain-of-function experiment complements the loss-of-function experiments (antimycin A, cox6\u0394) and together they provide compelling causal evidence for the role of respiration in HDB.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C151"
+    ],
+    "result": "HAP4 overexpression and respiratory deficient mutant (cox6\u0394) strains consume oxygen at higher and lower rates respectively, compared to wild-type, confirming that the genetic manipulations affect respiratory activity as expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C151 is supported by experimental data shown in Figure 6\u2014figure supplement 3. The dissolved oxygen measurements provide direct validation that the genetic manipulations (HAP4 overexpression and cox6\u0394 deletion) have the expected effects on respiratory activity. This is important for confirming that the observed effects on lag phase are indeed due to changes in respiration rather than off-target effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C155",
+      "C156",
+      "C157",
+      "C6",
+      "C7"
+    ],
+    "result": "Repression of respiratory pathways during glucose growth and subsequent re-induction upon shift to maltose plays a key role in HDB. Activation of respiration precedes MAL gene induction, and this activation of respiratory metabolism is the main rate-determining step. The level of respiratory activity has a strong, direct influence on the duration of the lag time and the associated HDB. Respiration is needed to metabolize alternative carbon sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C155, C156, C157, C6, and C7 represent the central mechanistic conclusion of the study and are supported by multiple converging lines of evidence: (1) Bar-Seq showing respiratory gene deletions cause long lags; (2) RNA-Seq showing respiratory genes are repressed in glucose and induced before MAL genes; (3) strong correlation between respiratory protein levels and lag times; (4) temporal ordering showing respiratory activation precedes MAL induction; (5) causal experiments showing respiratory inhibition increases lag and respiratory activation decreases lag. The integration of these multiple experimental approaches provides strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50",
+      "C159",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "History-dependent behavior in changing carbon environments is not the consequence of changes in chromatin state or persistence of a few metabolism-specific proteins. Instead, HDB depends on a much broader metabolic network, with slow changes in respiration and fermentation playing a key role. HDB is linked to previous exposure to any alternative carbon source that requires respiration, and the gradual decline of respiratory activity during glucose growth. While activating uptake and metabolism of alternative sugars is the last crucial step for growth resumption, other processes (particularly respiratory activation) precede this step and are more important bottlenecks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C49, C50, C159, and C192-C198 represent the overarching conclusions of the study. These conclusions are well-supported by the comprehensive set of experiments: (1) protein inheritance experiments rule out Mal/Gal protein perdurance; (2) heterokaryon experiments rule out chromatin-based mechanisms; (3) genome-wide screens identify respiratory genes as key determinants; (4) temporal analysis shows respiratory activation precedes MAL induction; (5) causal experiments manipulating respiration directly affect HDB. The conclusions are appropriately qualified and acknowledge that MAL gene activation is still necessary for complete growth resumption, just not the rate-limiting step.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Cell cycle stage and replicative age have minimal influence on single-cell lag times. Budding cells are on average 60% more likely to escape the lag at any given time point, but this factor describes less than 4% of the variability in single-cell lag times. Cells with different replicative ages do not have significantly different lag times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by experimental data shown in Figure 2\u2014figure supplements 3 and 4. The Cox proportional hazard model analysis is appropriate for this type of survival data. While budding status shows a statistically significant effect in some experiments, the low pseudo-R\u00b2 values (<0.094) indicate this explains very little of the overall variability. The replicative age analysis using Calcofluor White staining is well-controlled. These results effectively rule out cell cycle and age as major determinants of HDB.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In glucose-galactose shifts, galactose pre-growth increases the timescale over which HDB occurs and results in generally shorter lags compared to maltose pre-growth. There is a clear correlation between Gal1p levels and population lag time after galactose pre-growth, but little correlation when cells are pre-grown on maltose. However, pre-growth on maltose (which does not result in measurable Gal1p levels) also leads to considerable HDB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by experimental data shown in Figure 2B, 2D, 2F, and Figure 2\u2014figure supplement 2. The data show clear differences in HDB patterns between maltose and galactose pre-growth conditions. The observation that maltose pre-growth (with no detectable Gal1p) still produces HDB in galactose shifts is particularly important for ruling out Gal protein inheritance as the sole mechanism. This parallels the findings for maltose shifts and strengthens the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "The hypothesis that HDB is due to a gradual decrease in respiratory activity during glucose growth is consistent with previous reports demonstrating gradual decrease of respiration over multiple generations in glucose and with recent studies showing the importance of respiration for switches from glucose to other carbon sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160 and C161 are supported by citations to Slavov et al., 2014 and Perez-Samper et al., 2018. The authors appropriately place their findings in the context of previous work. The consistency with prior observations of gradual respiratory decline in glucose strengthens the plausibility of their mechanism. However, these claims rely on the accuracy of the cited work, which is not independently verified in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C169"
+    ],
+    "result": "S. cerevisiae is a Crabtree-positive yeast, meaning glucose represses respiration in favor of fermentation even in the presence of oxygen. This behavior resembles the Warburg effect observed in mammalian tumors. Respiration is a more energy-efficient pathway per carbon molecule compared to fermentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132, C133, and C169 are statements of established knowledge in the field, supported by citations (Vander Heiden et al., 2009; Warburg, 1956). These are well-known characteristics of yeast metabolism and provide important context for understanding why respiratory repression during glucose growth would affect subsequent adaptation to alternative carbon sources. The claims are appropriately cited and represent accurate descriptions of yeast physiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C167",
+      "C168",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The authors propose a mechanistic model where cells enter an energy-deficient state upon sudden loss of glucose because they cannot yet metabolize maltose, and this is exacerbated by decreased respiratory activity. This energy-deficient state likely prevents MAL gene induction until cells have partly recovered metabolic flux and ATP production. In cells that successfully induce MAL genes, protein synthesis of other proteins occurs before Mal proteins, while cells that never resume growth show no protein synthesis. The hypothesis is consistent with the observation that lag phase in maltose is similar for cultures with pre-growth in maltose or galactose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C137 and C167-C176 represent a mechanistic hypothesis proposed by the authors to explain their observations. While the hypothesis is plausible and consistent with the data (particularly the observation of slow growth before MAL induction and the lack of protein synthesis in non-growing cells), it is largely speculative and not directly tested. The authors appropriately present this as a hypothesis ('we hypothesize', 'an intriguing possibility') rather than a proven mechanism. Direct measurements of ATP levels, metabolic flux, or energy state would be needed to fully support this model. The hypothesis is reasonable and provides a framework for future work, but should be considered uncertain until more direct evidence is obtained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C164",
+      "C186",
+      "C187"
+    ],
+    "result": "The gradual decrease in respiratory activity could be due to protein inheritance of respiratory proteins/complexes during glucose growth, and/or indirectly by gradual change in an upstream factor determining respiratory activity. Heterogeneity in respiratory functionality after glucose repression could be attributed to inheritance of bistable positive feedback loops in regulation of respiration, similar to the Lac operon in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C164, C186, and C187 represent speculative mechanistic proposals about the molecular basis of respiratory decline and heterogeneity. While the authors provide some support for protein-level changes (correlation between respiratory protein levels and lag times), they acknowledge that both direct (protein inheritance) and indirect (upstream regulatory) mechanisms are possible. The bistability hypothesis is interesting and supported by analogy to the Lac operon (C188), but is not directly tested in this study. These remain open questions that would require additional experiments to resolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Previous investigations into HDB in carbon sources have not identified the general metabolic state as a central determinant, instead focusing on inheritance of metabolic proteins or induction of specific genes without showing these are rate-limiting steps or screening more broadly for preceding processes. Previous studies revealed correlations between residual Gal1p levels and lag duration but did not show causation. Experimental setup differences between studies may influence the main determinants of lag duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C183 represent the authors' critical assessment of previous literature. These claims are appropriately supported by citations to previous work (Kundu and Peterson, 2010; Stockwell and Rifkin, 2017; Zacharioudakis et al., 2007; Murphy et al., 2015; Radonjic et al., 2005; Zampar et al., 2013). The authors make valid points about limitations of previous studies, particularly the lack of demonstration that gene induction is rate-limiting and the failure to screen more broadly. The caveat about experimental setup differences is appropriately noted. This critical analysis helps position the current work's contributions relative to the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C189"
+    ],
+    "result": "Both the lag time and the fraction of cells resuming growth depend on the duration of previous exposure to glucose repression. Upon shift to maltose after longer exposure to glucose, cells have longer lag phases and a smaller fraction manage to make the shift within 24 hours. HDB is present in three different genetic backgrounds (laboratory strain and two non-laboratory strains), but the extent of the effect can vary greatly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184, C185, and C189 are supported by experimental data shown in Figure 1 and Figure 1\u2014figure supplement 4. The observation that both lag time and fraction of cells escaping depend on glucose exposure duration is important for understanding the population-level consequences of HDB. The demonstration of HDB in multiple genetic backgrounds shows this is not an artifact of laboratory adaptation, though the variability in extent suggests genetic modifiers exist. These observations are well-documented in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C199",
+      "C200"
+    ],
+    "result": "The findings have potential biotechnological applications, as stuck or sluggish fermentations in industrial settings cause economic losses. Engineering strains by overexpressing HAP4 might lead to more efficient fermentations. Similar slow transitions in metabolic states may govern HDB in other cell types, including nutritional programming in mammals. The genes identified in the genome-wide screen show overlap with a screen for oxidative phosphorylation in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C190, C191, C199, and C200 represent speculative applications and broader implications of the findings. While C190 is supported by citations about industrial fermentation problems (Bisson and Butzke, 2000; Verstrepen et al., 2004), the other claims are speculative. The potential for HAP4 overexpression to improve industrial fermentations (C191) is plausible but untested. The speculation about mammalian nutritional programming (C199) is interesting but highly speculative. The overlap with human oxidative phosphorylation genes (C200) is supported by citation (Arroyo et al., 2016) but the functional significance is unclear. These represent reasonable directions for future work but should be considered uncertain until tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The introduction provides background on cellular adaptation, lag phase, history-dependent behavior (HDB), and proposed mechanisms including chromatin changes and protein inheritance. It describes HDB in various organisms including yeast and mammals, and discusses the glucose-galactose system in yeast where HDB has been well-documented. The introduction also notes that the assumption that growth resumption is directly governed by induction kinetics of nutrient-specific genes has not been strongly supported experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C39 represent background information and literature review in the introduction. These claims are appropriately supported by citations to previous work and represent accurate descriptions of the field's current understanding. The critical assessment (C28, C36) that the causative role of protein inheritance has not been confirmed is appropriate and sets up the motivation for the current study. This background material is well-documented and provides necessary context.",
+    "result_type": "MINOR"
+  }
+]

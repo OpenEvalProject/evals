@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "LightR is designed as a light-sensitive allosteric switch composed of two tandemly connected VVD photoreceptor domains from Neurospora crassa, linked by a flexible 22 amino acid linker. VVD monomers in the dark form antiparallel homodimers upon blue light illumination, with N-terminal tail flipping bringing it close to the C-terminus of the partner VVD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 describe the design and structural basis of the LightR domain, supported by multiple citations to prior work on VVD photoreceptors (C1-C3) and explicit description of the engineered linker design (C4-C5). The structural properties are well-established in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C16"
+    ],
+    "result": "The proposed mechanism of LightR function involves opening of the clamp in the dark to increase N- to C-terminal distance (~25 \u00c5), distorting and inactivating the catalytic domain. Blue light closes the clamp, restoring native structure and activity, potentially through disruption of the G-loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-C8 and C16 describe the proposed mechanism but are explicitly speculative (evidence_type includes SPECULATION and INFERENCE). While molecular dynamics simulations provide support (C10-C14), the mechanism remains a hypothesis rather than experimentally validated fact. The use of 'could' and 'should' in the source text indicates uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Molecular dynamics simulations of LightR-Src show that insertion at G288 causes increased RMSD and correlated motion between LightR and Src catalytic domain in the dark state, with substantial G-loop deviation. The lit state exhibits lower RMSD closer to wild-type Src and loss of motion correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 report computational modeling results with appropriate references to figures. The simulations show equilibration (Figure 1\u2014figure supplement 1A) and systematic differences between dark and lit states. However, C16 remains speculative as it proposes a mechanism based on these simulations without experimental validation of the G-loop disruption hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "LightR-Src with Y527F mutation is completely inactive in the dark and recovers activity upon blue light exposure to levels comparable to constitutively active Src, as demonstrated by in vitro kinase assays and cellular phosphorylation of endogenous substrates (paxillin, p130Cas). Activation occurs within 2 minutes and is dose-dependent with light intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 are supported by experimental data from in vitro kinase assays (C18-C19, Figure 2A) and cell-based assays (C20-C24, Figures 2B-C). Appropriate negative controls with catalytically inactive mutant (D388R) are included (C21). The Y527F mutation rationale is cited (C17). Time course and dose-response data support rapid, tunable activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Quantitative phosphoproteomics reveals temporally distinct phosphorylation patterns following LightR-Src activation: early responders (10-30s) including known Src substrates, intermediate responders (1-5 min) enriched for focal adhesion and migration proteins, and late responders (1 hr). ERK1/2 show only transient activation at 5 min. Src autophosphorylation on Y416 occurs at 1 min, after some substrate phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C35 report comprehensive phosphoproteomics data with appropriate statistical analysis (PCA, network analysis) and proper controls (HeLa cells without LightR-Src, Figure 2\u2014figure supplement 4). The temporal categorization is data-driven and supported by heatmaps (Figures 2D-F). The inference about Src phosphorylating targets before autophosphorylation (C31) is reasonable given the timing data (C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "LightR-Src activity is reversible upon switching off light, with phosphorylation returning to basal levels in ~2 hours. Introduction of I85V mutation in both VVD domains (FastLightR-Src) accelerates inactivation kinetics to ~15 minutes, though with reduced maximal activity compared to original LightR-Src.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 demonstrate reversibility with experimental data (Figures 3A-B). The I85V mutation effect is supported by citation (C39) and experimental validation (C40-C42). The trade-off of faster kinetics for lower activity (C43) is acknowledged with data reference. The mechanism is consistent with known VVD photocycle properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "FastLightR-Src enables cyclic activation/inactivation and induces reversible cell spreading upon blue light illumination. The kinase translocates from perinuclear regions to focal adhesions and cell membrane upon activation, mimicking wild-type Src behavior. Catalytically inactive mutant (D388R) shows no response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 are supported by live cell imaging data (Figures 3C, 4A-C, Video 1) with appropriate negative controls (C49). The cyclic behavior demonstrates the tool's capability for mimicking oscillatory signaling. Localization changes are consistent with cited wild-type Src behavior (C52). Quantification of cell area changes provides objective measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Local illumination of cells expressing FastLightR-Src induces membrane protrusions and cell polarization specifically within the illuminated area, with effects reversing upon light cessation. FastLightR-Src translocates to focal adhesions only in illuminated regions. Catalytically inactive mutant shows no response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 demonstrate subcellular spatial control with imaging data (Figures 5A-D, Video 2) and quantitative analysis (polarity index, centroid shift). Appropriate negative controls with D388R mutant are included (C56). The localized translocation to focal adhesions (C57-C58) provides additional validation. This represents a key advantage over prior optogenetic approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Sustained local Src activation induces waves of increased cell-edge velocity, mediated by ROCK and MLCK. Inhibition of these kinases perturbs the waves and reduces protrusion velocity, with MLCK inhibition having a greater effect than ROCK inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by quantitative cell edge dynamics analysis (Figures 5E-J) and pharmacological inhibitor studies. The differential effects of ROCK vs MLCK inhibition (C62) are statistically significant (Figure 5\u2014figure supplement 2B) and consistent with cited literature on their roles at the cell periphery. The wave pattern analysis is novel and enabled by the temporal control of LightR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The LightR approach is broadly applicable to different kinases. LightR-Abl and LightR-bRaf, with insertions at analogous positions (K282 in Abl, H477 in bRaf), show light-dependent activation of their respective substrates. FastLightR-bRaf variant exhibits faster deactivation kinetics (~15 min vs ~3 hr) and enables cyclic ERK2 nuclear shuttling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 demonstrate broad applicability with experimental data for Abl (Figure 6B) and bRaf (Figures 6C-D, Video 3). The insertion strategy is rational based on conserved kinase structure (C64). The FastLightR-bRaf variant shows tunable kinetics similar to FastLightR-Src (C68). ERK2 shuttling provides a functional readout of cyclic activation (C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "LightR can be applied beyond kinases to other enzyme classes. LightR-Cre recombinase with insertion at D153 shows light-dependent activation, demonstrating broad applicability to different enzyme types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 demonstrate applicability beyond kinases with experimental data (Figures 6E-F). Multiple insertion sites were tested (N60, D153, D189, D278) with D153 showing successful light-dependent activity. This extends the utility of the approach, though optimization may be needed for different enzymes as noted in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "LightR provides four key features: (1) allosteric regulation of enzymatic activity, (2) tight temporal control with tunable kinetics, (3) local subcellular regulation, and (4) broad applicability to different enzymes. The modular design allows flexibility in insertion site selection without compromising protein interactions or localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 summarize the demonstrated capabilities supported by the collective experimental evidence. Temporal control is shown by activation/inactivation kinetics (C37-C42), subcellular control by local illumination experiments (C53-C59), and broad applicability by multiple kinases and Cre (C66-C72). The modular design advantage (C77-C78) is supported by citation and demonstrated by successful application to multiple proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "LightR activation requires low intensity blue light (0.6 mW/cm\u00b2), lower than other optogenetic approaches, minimizing phototoxicity. The blue light specificity enables multiplexing with red-shifted tools or FRET biosensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by experimental data (Figure 2\u2014figure supplement 1B) and comparison with cited literature (C80). The low light requirement is an important practical advantage. The spectral specificity claim (C81) is reasonable based on VVD properties, though multiplexing is not experimentally demonstrated in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Phosphoproteomics reveals biological insights: early talin-1 phosphorylation (Y26, Y70) may represent an early step in integrin activation; intermediate phosphorylation (1-5 min) of focal adhesion proteins correlates with cell spreading; late phosphorylation (1 hr) is indicative of oncogenic transformation; continuous Src activity induces only transient ERK1/2 activation, suggesting differential regulation of short-term vs prolonged Src activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 provide biological interpretation of phosphoproteomics data, appropriately supported by citations to relevant literature. The talin-1 interpretation (C85) is reasonable given the F0 domain properties (C83-C84). The correlation with morphological changes (C86) is supported by temporal alignment with imaging data. The ERK1/2 transient activation (C88-C89) is a novel finding enabled by the temporal resolution of LightR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The manuscript contextualizes findings within established knowledge: kinases undergo oscillatory activation with functional consequences; Src activation stimulates cell spreading and localizes to focal adhesions; local Src activation should stimulate local protrusions; ROCK and MLCK regulate contractile machinery with MLCK predominating at the cell periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 represent prior knowledge from cited literature that provides context for the experimental findings. These are appropriately cited and accurately represent the referenced work. They establish the biological rationale for the experiments performed and interpretation of results.",
+    "result_type": "MINOR"
+  }
+]

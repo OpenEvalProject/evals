@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "DUHi and FVB mouse strains exhibit morphological differences that recapitulate evolutionary variation in murine rodents. DUHi mice display narrow, elongated upper molars with an additional anterior cusp, while FVB mice have broad, short upper molars. This variation mirrors the main axes of phenotypic variation seen across murine species and wild Mus musculus domesticus populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 provide converging morphometric evidence from PCA analysis, length/width ratios, and comparisons with wild populations. The quantitative data (62% variance for upper molar PC1 vs 46% for lower molar) and positioning of strains relative to wild samples provide strong support for the morphological characterization and its evolutionary relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A novel Bayesian modeling approach was developed to compute strain-specific embryonic age (cdpc) by combining days post-coitum and embryonic body weight. This method reveals rather than corrects for developmental stage differences between strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 describe a methodological innovation necessary for comparing developmental trajectories. The approach is explicitly described with code availability, and its properties (revealing vs. correcting strain differences) are clearly stated. The robustness testing with different parameter values (Appendix 1) strengthens confidence in the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In upper molars, the R2 signaling center persists significantly longer in DUHi than FVB mice (p<1.10E-8), with frequent co-occurrence of R2 and M1 signaling centers in DUHi. The M1 signaling center appears later in DUHi (p<0.01), and this is associated with a more prominent R2 bud.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C71 provide multiple lines of evidence including in situ hybridization data, statistical analysis via logistic regression, and morphological observations from dissected epithelia and 3D reconstructions. The highly significant p-values and consistent observations across multiple samples and methods strongly support these temporal and spatial differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The two strains follow distinct trajectories through 'developmental space', with only 11 of 54 theoretically possible developmental states observed for upper molars. Strain-exclusive states are particularly evident in upper molars (3 DUHi-exclusive, 2 FVB-exclusive) during the period between R2 disappearance and M1 maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 present a novel quantitative framework for analyzing developmental variation. The developmental state scoring system is clearly defined (Supplementary file 1), and the observation that only ~20% of theoretical states are occupied demonstrates developmental constraints. The identification of strain-exclusive states with specific temporal windows provides strong evidence for distinct developmental trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Lower and upper jaw developmental systems consistently differ in R2-M1 dynamics regardless of strain. R2 persists longer in upper than lower jaw (p=0.04), and in the lower jaw only, the M1 Shh expression zone encompasses the R2 signaling center zone. These differences represent conserved developmental properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C93 demonstrate jaw-specific developmental differences that are consistent across both strains and match previous observations in CD1 mice. The statistical support (Fisher exact test, p=0.04) and consistency with prior literature strengthen this conclusion. However, the sample size for the Fisher test may be limited as it requires paired upper/lower jaw data from the same embryo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The M1 signaling center is shifted posteriorly in DUHi upper molars, with longer pre-M1 regions (p<0.01) and shorter post-M1 regions (p<0.01) compared to FVB, while total epithelium length remains unchanged. No significant differences were found in lower molars.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 provide quantitative measurements with statistical support (t-tests, p<0.01) from 3D reconstructions. The finding that total length is unchanged while regional proportions differ is internally consistent and supports the interpretation of posterior shift rather than overall growth differences. The jaw-specific nature of this difference aligns with other findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C120"
+    ],
+    "result": "Transcriptomic analysis reveals differential expression of genes involved in activation-inhibition mechanisms. Spry2 and Sostdc1 are downregulated in DUHi. BMP4 pathway analysis shows weaker BMP4 activity in DUHi (20 vs 7 genes, p=0.01), while Wnt pathway shows no clear trend but differential expression of feedback inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C120 present RNA-seq data with appropriate statistical analysis (DESeq2). The BMP4 pathway analysis shows a significant 2-fold difference (\u03c7\u00b2 test, p=0.01). However, the interpretation relies on indirect inference from target gene expression rather than direct pathway activity measurements. The Wnt pathway results are more ambiguous, with the authors appropriately noting they cannot determine directionality. The connection to known gene functions (Spry2, Sostdc1 knockouts) strengthens the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Ex vivo culture of upper molars results in partial rescue of the R2 bud significantly more frequently in DUHi than FVB mice (Fisher exact test, p=0.015).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 provides experimental validation of differential activation-inhibition balance between strains. The statistical support (p=0.015) and consistency with other findings strengthen this result. However, the sample size (n=18 per strain) is modest, and the biological interpretation assumes that culture conditions perturb activation-inhibition mechanisms in a known way.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Lineage tracing experiments demonstrate that R2 signaling center descendants contribute to the anterior region of the upper first molar but not the lower molar. In lower molars, R2 is overwritten by the mature M1 signaling center and does not contribute specifically to the anterior part.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C101 present fate mapping data using tamoxifen-inducible Cre/LacZ system with clear temporal controls. The differential marking patterns between upper and lower molars with different tamoxifen treatment timings provide strong evidence for distinct developmental fates. The experiments were performed in CD1 background, which is appropriate given its intermediate morphology, though this introduces a caveat about direct applicability to DUHi/FVB strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "DUHi embryos show significantly greater developmental variation than FVB in both upper (p<0.001) and lower molars (p<0.001). Developmental variation peaks during R2-M1 coexistence (14-15 cdpc), with this peak being considerably greater in DUHi than FVB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 present a novel quantitative method for measuring developmental variation with strong statistical support (Wilcoxon tests, p<0.001). The temporal profiling using local regression reveals biologically meaningful patterns. However, the method's validity depends on the accuracy of embryonic age estimation (cdpc), and the authors appropriately tested robustness to different parameter values. The correlation between peak variation timing and biological events (R2-M1 coexistence) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C133",
+      "C134"
+    ],
+    "result": "Despite being inbred, DUHi mice show greater variation in upper molar length than FVB (p=0.095), comparable to outbred CD1 mice. This adult variation is consistent with and correlated with greater developmental variability in upper R2 signaling centers. The variation is specific to upper molar length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C134 connect developmental variation to adult phenotypic variation. The p-value of 0.095 is marginally non-significant by conventional standards, which the authors should acknowledge more clearly. However, the consistency between developmental and adult variation patterns, and the jaw-specific nature of the variation, provide strong circumstantial support. The comparison with outbred CD1 mice provides important context for interpreting variation in an inbred strain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The use of inter-strain variation as a proxy for natural variation is justified because: (1) FVB-DUHi morphological variation recapitulates variation in the Mus genus, (2) DUHi recapitulates the correlation between anterior elongation and large body size seen in natural populations, and (3) lab mice were derived from multiple mouse subspecies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 provide justification for the experimental design. The morphometric data (C46-C49) support point 1, and the citation to Renaud et al. 2011 supports point 2. Point 3 is general knowledge about lab mouse origins. This reasoning is sound, though the authors could more explicitly acknowledge that artificial selection in DUHi may have produced developmental changes not found in natural populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C124"
+    ],
+    "result": "The two strains differ in settings of activation-inhibition mechanisms patterning tooth signaling centers, with these differences being more marked in upper than lower molars. The two evolutionary lines of least resistance (anterior elongation of upper molar and shape variation in both molars) are developmentally coupled by common activation-inhibition balance settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C124 synthesize multiple lines of evidence into an overarching mechanistic interpretation. The conclusion is well-supported by the collective data on signaling center dynamics, gene expression, spatial measurements, and ex vivo culture experiments. However, the mechanistic link between activation-inhibition balance and both lines of least resistance involves some inferential steps that could benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The R2 signaling center is intrinsically stronger in the upper jaw, remains independent of M1, and contributes to the anterior cervical loop of upper M1. In contrast, lower jaw R2 is smaller, included in the mature M1 signaling center (pEK), and contributes to a more central part of the molar. These differences explain why only upper M1 shows anterior elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 integrate findings from multiple experiments (signaling dynamics, lineage tracing, morphological observations) to explain the jaw-specific evolutionary pattern. The logic connecting developmental differences to morphological outcomes is sound and well-supported by the data. This represents a key mechanistic insight of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C135",
+      "C136"
+    ],
+    "result": "Upper molar development is inherently more variable than lower molar development, with DUHi and FVB showing greater differences in upper than lower molar development. Upper molar development is intrinsically unstable, especially with 'DUHi range' activation-inhibition parameters. This reveals the developmental basis for an evolutionary line of least resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 synthesize developmental variation data, morphological differences, and evolutionary patterns into a coherent explanation for repeated evolution. The multiple lines of evidence (developmental variation, adult variation, jaw-specific differences) converge to support this interpretation. However, the claim of 'intrinsic instability' is somewhat speculative and could benefit from more mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "The study identifies strong variation in early tooth development between strains in tandem with relatively mild adult phenotypic variation. This has implications for experimental practices, as heterozygotes may have important developmental differences despite normal adult phenotypes, making their use as controls potentially unreliable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 present an important methodological insight supported by the data showing greater developmental than adult variation. However, the extrapolation to heterozygotes (C138) is speculative, as no heterozygote data are presented. The authors appropriately frame this as a possibility ('may have') rather than a certainty, but this represents an inference beyond the direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Reduced activation favors R2 bud rescue, consistent with previous studies. The narrow morphology of DUHi molars and association of anterior cusp with decreased cusp complexity in Orkney populations are consistent with decreased activation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 connect current findings to prior work and natural populations. C121 is supported by citation to Sadier et al. 2019. C122 is a reasonable inference from morphology. C123 relies on a citation to Renaud et al. 2018. These claims provide important context but are largely interpretive rather than direct findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The murine first upper molar shows repeated anterior elongation across multiple scales (intra-population to interspecific), representing an evolutionary line of least resistance. This pattern is associated with diet adaptation, body size, and developmental constraints, with the additional anterior cusp being especially common in the Mus genus and evolving independently in multiple island populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 establish the evolutionary and ecological context for the study, drawing heavily on prior literature (multiple citations to Renaud et al., Misonne, Ledevin et al.). These claims are well-supported by the cited literature and provide essential background, though they represent synthesis of prior work rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "During molar development, enamel knots (signaling centers) are positioned by activation-inhibition mechanisms and determine crown/cusp formation. The developmental sequence involves transient premolar rudiments (R2) that interact differently with M1 in upper versus lower jaws, with upper jaw R2 not being incorporated during initial cap development and maintaining greater distance from M1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C39 summarize established knowledge about tooth development with appropriate citations. Claims C38-C39 reference the authors' previous work (Sadier et al. 2019). These claims provide essential developmental context and are well-supported by the literature, though they represent background knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "DUHi and FVB strains differ in temporal, spatial, and functional aspects of tooth signaling center activity, arising from differential tuning of activation-inhibition mechanisms. Only the upper first molar reacts via anterior elongation. Despite genetic uniformity in the inbred DUHi strain, individuals vary in tooth length and signaling center dynamics, indicating intrinsic developmental system instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C7 summarize the main findings of the abstract. These are high-level conclusions supported by the detailed results presented in the paper. The evidence for each component is strong (temporal/spatial/functional differences, jaw-specific responses, within-strain variation), making this a well-supported synthesis of the study's major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "R2 is much less transient and discrete in the CD1 strain than in FVB, requiring heavier sampling to detect in FVB. This may have contributed to historical debates about R2 presence in mouse development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C139 provides an interesting historical and methodological note supported by the authors' observations across multiple strains. This explains potential sources of confusion in the literature and highlights the importance of strain choice in developmental studies. While not a major finding, it provides valuable context for interpreting prior literature.",
+    "result_type": "MINOR"
+  }
+]

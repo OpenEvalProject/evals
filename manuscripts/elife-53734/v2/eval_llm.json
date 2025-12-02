@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C62",
+      "C63"
+    ],
+    "result": "FORCP is significantly downregulated in CRC tumors compared to normal tissue, shows GI-tract-specific expression with high levels in normal colon, and is almost exclusively expressed in well-differentiated CRC cell lines (~4400 fold change vs poorly differentiated lines).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, C5, C62, and C63 are supported by microarray data from 83 CRC patient samples, RNA-seq from GTExPortal, RNA-seq from 7 CRC cell lines, and NCI-60 panel data. The differential expression pattern is consistently demonstrated across multiple datasets with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C54",
+      "C75"
+    ],
+    "result": "FOXA1 transcriptionally regulates FORCP in well-differentiated CRC cells, as demonstrated by significantly higher FOXA1 expression in well-differentiated vs poorly differentiated lines (~16 fold, p<0.0001), FOXA1 binding to the FORCP locus by ChIP-seq/ChIP-qPCR, and decreased FORCP levels upon FOXA1 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 and C54 are well-supported by converging evidence from RNA-seq, immunoblotting, ChIP-seq, ChIP-qPCR, and knockdown experiments. The mechanistic link between FOXA1 and FORCP transcription is established through multiple complementary approaches with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "FORCP is predominantly cytoplasmic, has a positive PhyloCSF score indicating coding potential, contains a conserved 240 nt ORF encoding a 79 amino acid protein, and shows syntenic conservation with a mouse homolog that also exhibits GI-tract-specific expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 are supported by RNA-FISH, subcellular fractionation, PhyloCSF analysis, sequence conservation analysis, and mouse ENCODE data. The convergence of computational predictions and experimental localization data provides strong evidence for coding potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C52",
+      "C57",
+      "C76"
+    ],
+    "result": "FORCP encodes an endogenously expressed 79 amino acid protein, as demonstrated by mass spectrometry identification of a unique N-terminal peptide (MLLGSLWGR), antibody detection of endogenous protein that co-migrates with overexpressed protein, and loss of protein expression upon FORCP knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C52, C57, and C76 are strongly supported by mass spectrometry data identifying a unique FORCP peptide, custom antibody validation showing co-migration of endogenous and overexpressed protein, and knockdown experiments demonstrating specificity. This provides definitive evidence that FORCP is protein-coding, not a lncRNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "FORCP inhibits proliferation through its protein-coding function, as demonstrated by the observation that wild-type FORCP (producing protein) but not start codon mutant FORCP (not producing protein) inhibits proliferation and colony formation despite comparable RNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by a well-designed experiment comparing WT and mutant FORCP with comparable RNA expression but differential protein expression. The protein-dependent effects on proliferation and colony formation provide strong evidence that FORCP functions as a protein-coding gene. However, the experiment was performed in HCT116 cells which do not endogenously express FORCP, limiting physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C79"
+    ],
+    "result": "FORCP protein predominantly localizes to the endoplasmic reticulum (ER), as demonstrated by colocalization of FORCP-GFP and endogenous FORCP with the ER marker PDI, with computational prediction suggesting it is a double-pass transmembrane protein homologous to TMEM238.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 and C79 are supported by confocal microscopy showing colocalization with PDI for both overexpressed FORCP-GFP and endogenous FORCP, immunostaining after knockdown confirming specificity, and TMHMM/BLASTX analysis. The convergence of imaging and computational data provides strong evidence for ER localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C45",
+      "C55",
+      "C78"
+    ],
+    "result": "FORCP inhibits basal proliferation, clonogenicity, and tumorigenicity in well-differentiated CRC cells, as demonstrated by increased proliferation, colony formation on plastic and soft agar, and enhanced tumor growth in mouse xenografts upon FORCP knockdown or knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37, C45, C55, and C78 are supported by multiple complementary assays including Incucyte proliferation assays, colony formation on plastic and soft agar, mouse xenograft experiments, and CRISPR/Cas9 knockout validation. The consistency across knockdown and knockout approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C56",
+      "C80"
+    ],
+    "result": "FORCP is upregulated 3-4 fold upon ER stress and promotes apoptosis during ER stress, as demonstrated by decreased apoptosis (measured by sub-G1 population and cleaved caspase-3) upon FORCP knockdown or knockout in LS180 and SW1222 cells treated with DTT or tunicamycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C40-C44, C56, and C80 are supported by qRT-PCR showing FORCP upregulation upon ER stress, PI staining/FACS analysis showing decreased sub-G1 population upon FORCP depletion, and immunoblotting for cleaved caspase-3. The consistency across two cell lines, two ER stress inducers, and both knockdown and knockout approaches provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Upregulation of FORCP upon ER stress in FOXA1 knockdown cells is less marked, perhaps due to decreased basal FORCP levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C39 is supported by qRT-PCR data showing reduced FORCP induction upon ER stress in FOXA1 knockdown cells. However, the proposed mechanism (decreased basal levels) is speculative and not directly tested. Alternative explanations such as FOXA1 involvement in stress response pathways are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "FORCP-KO cells display modestly but significantly improved viability compared to FORCP-WT cells in response to glucose deprivation induced by 2-DG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by cell viability assay data showing statistically significant differences between FORCP-WT and FORCP-KO cells after 2-DG treatment. However, the effect is modest and only one stress condition beyond ER stress is tested, limiting generalizability about FORCP's role in cellular stress responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C68"
+    ],
+    "result": "FORCP-FLAG interacts with 16 proteins in all four pulldown experiments, with 7 appearing in less than 30 of 411 CRAPOME experiments, including validated interactions with BRI3BP, KDSR, and CERS2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C68 are supported by mass spectrometry from four biological replicates, CRAPOME filtering to reduce false positives, and co-immunoprecipitation validation of the BRI3BP interaction. The rigorous approach with multiple replicates and validation strengthens confidence in the identified interactors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "BRI3BP knockdown results in significantly increased apoptosis during ER stress (opposite to FORCP), raising the possibility that FORCP and BRI3BP have antagonistic functions in the context of ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is supported by PI staining/FACS analysis showing increased sub-G1 population upon BRI3BP knockdown during DTT treatment. However, claim C51 regarding antagonistic function is speculative. The opposite phenotypes could reflect independent pathways rather than direct antagonism, and no epistasis experiments or rescue experiments are performed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "The annotated spliced FORCP transcript is approximately 1.5 kb long with a canonical polyadenylation signal, and Northern blotting confirms FORCP runs at the expected size in well-differentiated CRC cells (SW1222, LS180) but is undetectable in poorly differentiated cells (HCT116).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 are supported by sequence analysis and Northern blot data. The Northern blot provides important validation of transcript size and differential expression, complementing the RNA-seq data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "FORCP is transcribed from chromosome 17 and is antisense to TMEM220-AS1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 is supported by genomic location data from UCSC genome browser. This is a straightforward genomic annotation observation that is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Identifying the appropriate cell type (well-differentiated CRC cells) was instrumental in discovering the FORCP protein, identifying FOXA1 as an upstream regulator, and enabling functional analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is a valid inference based on the observation that FORCP was undetectable in commonly used CRC cell lines and the NCI-60 panel, but abundant in well-differentiated CRC cells. This methodological insight is important for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C65",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Small proteins encoded by lncRNAs have vital functions in diverse biological processes across organisms, and the discovery of FORCP contributes to this emerging understanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61, C65, and C92-C99 are supported by citations to previous literature documenting other small proteins encoded by lncRNAs. These claims provide important context for the FORCP discovery and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C101"
+    ],
+    "result": "There is a need to determine the coding potential of cytoplasmic lncRNAs in endogenous settings, and future studies will likely identify additional mis-annotated lncRNAs encoding functional small proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C67, and C101 are reasonable inferences based on the discovery that FORCP was mis-annotated as a lncRNA and the large number of uncharacterized lncRNAs. These represent appropriate forward-looking statements based on the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "KDSR and CERS2 catalyze sequential steps in ceramide biosynthesis, and FORCP may have a role in this pathway; BRI3BP was previously reported in a subnetwork of proteins important for ER biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is established knowledge about KDSR and CERS2 function. Claim C71 is supported by citation. However, claim C70 regarding FORCP's potential role in ceramide biosynthesis is speculative based solely on the interaction data, with no functional validation of this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C100",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Background claims about lncRNAs, their functions, ribosome association, coding potential, and ER biology establish the context for the FORCP discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C82-C91, C100, and C102-C104 represent established knowledge in the field, appropriately cited and providing necessary background context. These are standard introductory claims that frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C77",
+      "C81"
+    ],
+    "result": "FORCP (LINC00675) is a novel, conserved small protein encoded by a mis-annotated lncRNA that regulates apoptosis and tumorigenicity in well-differentiated CRC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C77, and C81 represent summary statements of the major findings, supported by the comprehensive characterization including protein identification, localization, functional assays, and conservation analysis. These integrate multiple lines of evidence presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

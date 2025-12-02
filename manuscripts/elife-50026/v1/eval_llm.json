@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C60",
+      "C61"
+    ],
+    "result": "CidB toxicity in yeast is temperature-sensitive and varies by strain background. Expression of CidBwPip causes strong growth inhibition in yeast, with W303-1A showing greater sensitivity than BY4741.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C60, and C61 are directly supported by Figure 1a showing differential yeast growth at various temperatures and between strain backgrounds. The data demonstrate reproducible temperature-dependent toxicity with strain-specific sensitivity differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C48"
+    ],
+    "result": "The cidABwHa operon exhibits cognate-specific rescue in yeast, with CidAwHa suppressing CidBwHa toxicity while non-cognate CifA proteins fail to rescue or enhance toxicity. CifA proteins alone are non-toxic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 and C48 are supported by Figure 1b-c showing cognate-specific rescue patterns and lack of CifA toxicity. The data demonstrate specificity of the toxin-antidote interaction with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C66",
+      "C67",
+      "C73"
+    ],
+    "result": "A yeast suppressor screen identified SRP1 (karyopherin-\u03b1) as the strongest suppressor of CidBwPip toxicity. Seven library plasmids showed suppression, with SRP1, RTT103, HRP1, and FET4 individually capable of suppressing toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C66, C67, and C73 are supported by Figure 2 showing the suppressor screen results. The screen methodology appears sound with appropriate controls (URA3 plasmid), though the relatively low coverage (~16-fold) and identification of false positives (Figure 2\u2014supplement 1) suggest some technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C74",
+      "C76",
+      "C77",
+      "C114"
+    ],
+    "result": "SRP1 suppression of CidB toxicity requires nuclear localization signal (NLS) binding function. The S116F mutation that disrupts NLS binding impaired suppression, while the E145K mutation affecting co-translational degradation did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C74, C76, C77, and C114 are supported by Figure 3a-b showing differential effects of specific SRP1 mutations. The data demonstrate functional specificity with appropriate protein expression controls, though the mechanism remains indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The srp1-S116F mutation in the chromosomal copy increased CidB toxicity, particularly with CidBwHa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by Figure 3c showing synthetic growth defects. However, the authors note this was observed in 6/7 replicates, indicating some variability in the phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "High-copy SRP1 suppression is specific to Cid (DUB) toxins and does not suppress CinBwPip nuclease toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by Figure 3d demonstrating specificity. This suggests distinct mechanisms for different CI toxin classes, though only one alternative toxin was tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The yeast data demonstrate a functional link between CidB toxicity and nuclear protein import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is an inference supported by the combined data from C7, C8, C76, and C78. The identification of karyopherin-\u03b1 as a suppressor requiring NLS-binding function provides strong genetic evidence for this link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C88",
+      "C9"
+    ],
+    "result": "A substrate-trapping CidB* mutant identified 45 enriched Drosophila proteins including karyopherin-\u03b12 and Moleskin as top hits, plus histone chaperones P32 and Nap1. Ubiquitin enrichment served as a positive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82, C85-C86, C88, and C9 are supported by Table 1a and the LC-MS/MS methodology. The stringent filtering from 169 to 45 proteins and use of biological triplicates strengthens confidence, though the relatively modest p-values (0.004-0.122) and peptide counts suggest some hits may be indirect interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C11",
+      "C59",
+      "C118"
+    ],
+    "result": "When CidB* is bound to CidA, the interactome changes dramatically with loss of karyopherin-\u03b12, Moleskin, P32, and Nap1, and gain of 67 different proteins including AP-3 complex subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94, C11, C59, and C118 are supported by comparing Tables 1a and 1b and Figure 4b. The dramatic shift in interactome (only 3 proteins overlap) provides strong evidence for CidA-mediated remodeling of CidB interactions, supporting the exclusion model of rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "CidA alone has few robust Drosophila protein interactions (15 total, 5 significant), with no overlap with CidB* or CidA-CidB* interactomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by Table 1c and Figure 4b. The limited CidA interactome contrasts sharply with CidB* and suggests CidA's primary function is CidB binding rather than independent host interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Transgenic cidABwMel-induced CI is strongly temperature-dependent, with 22\u00b0C optimal for observing partial suppressive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by Figure 5a and Supplementary file 1h. This optimization was necessary for the suppression experiments, though it highlights the sensitivity of the transgenic system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Drosophila karyopherin-\u03b1 paralogs partially suppressed transgenic CI when expressed in females, but GFP also showed non-distinguishable suppression. Stronger expression with MTD driver caused maternal toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C106 are shown in Figure 5b-c, but the inability to distinguish karyopherin-\u03b1 suppression from GFP control (C105) undermines confidence in the transgenic CI system. The authors acknowledge this limitation and attribute GFP effects to Gal4/UAS artifacts, but this makes the transgenic data inconclusive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "P32 overexpression showed highly significant suppression of transgenic CI (~30% increase in hatch rates), equivalent to CidA rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by Figure 5b showing P32 suppression significantly exceeds GFP control. This provides stronger evidence than the karyopherin-\u03b1 data, though still in the problematic transgenic system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C13",
+      "C14",
+      "C116"
+    ],
+    "result": "Karyopherin-\u03b1 and P32 overexpression in female germlines showed partial but highly significant suppression of natural wMel-induced CI, while GFP did not suppress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110, C13-C14, and C116 are supported by Figure 5d demonstrating suppression of natural CI. This is the most critical result as it validates the findings in the natural system, overcoming concerns about transgenic artifacts. Statistical significance is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C132"
+    ],
+    "result": "The differential effects of GFP (suppressing transgenic but not natural CI) indicate that Gal4/UAS systems can produce nonspecific suppression artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111 and C132 are supported by comparing Figure 5b vs 5d. This is an important methodological observation that validates the need for natural CI testing, though the proposed mechanism (C135-C136) remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C15",
+      "C117",
+      "C128"
+    ],
+    "result": "CidA overexpression in female flies suppressed both transgenic and natural CI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C117, and C128 are supported by Figure 5b and 5d. This validates CidA as a functional antidote in the maternal rescue model and serves as a positive control for the suppression experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Two orthogonal screens (genetic in yeast, physical in Drosophila) independently identified karyopherin-\u03b1 as both a CidB binder and genetic suppressor of CidB toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 summarize the convergence of yeast suppressor screen (Figure 2) and Drosophila interactome (Table 1a) results. The orthogonal validation strengthens confidence that karyopherin-\u03b1 is a genuine CI-relevant factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C130",
+      "C131"
+    ],
+    "result": "The yeast and Drosophila systems show striking concordance in CidB toxicity patterns, cognate-specific rescue, and karyopherin-\u03b1 suppression, suggesting CI targets conserved pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125, C127, C130-C131 are supported by parallel findings across Figures 1-5. The conservation across divergent systems strengthens mechanistic inferences, though yeast lacks the reproductive context of CI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C122",
+      "C158",
+      "C159"
+    ],
+    "result": "The authors propose that CidB targets nuclear-protein import and protamine-histone exchange, and that CidA rescues embryos by restricting CidB access to these targets through an exclusion mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C16-C18, C122, C158-C159 represent the authors' mechanistic model. While supported by the interactome changes (C11, C59, C94) and suppression data (C13-C14, C109), direct evidence for the proposed mechanisms is lacking. The model is plausible but requires validation through localization studies (C157) and direct demonstration of deubiquitylation of proposed targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C138",
+      "C141",
+      "C143",
+      "C145",
+      "C146",
+      "C147",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Multiple speculative mechanistic models are proposed for how CidB causes CI, including direct deubiquitylation of single or multiple targets, or indirect effects through nuclear import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138, C141, C143, C145-C147, C153-C156 are explicitly labeled as speculative by the authors. While these models are consistent with the data, they lack direct experimental support. The authors appropriately acknowledge uncertainty and the need for future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Overexpression of SRP1 and RTT103 did not reduce CidB protein levels, ruling out suppression through reduced toxin expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by Figure 2d Western blot. This control is important for interpreting the suppression mechanism, though it only addresses two of the suppressors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Karyopherin-\u03b1 and P32 are maternally deposited and could be important factors in the evolution of host resistance to CI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C176-C177 are supported by citations and Figure 5 data. However, C178 is speculation about evolutionary implications. While the dosage suppression is demonstrated, the evolutionary significance requires population genetic or comparative studies not presented here.",
+    "result_type": "MINOR"
+  }
+]

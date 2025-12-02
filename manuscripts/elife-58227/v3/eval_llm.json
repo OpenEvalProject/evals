@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The study analyzed EHR data from 77,167 patients (2,317 COVID-19-positive and 74,850 COVID-19-negative) subjected to PCR testing. The COVIDpos cohort had a mean age of 41.9\u00b119.1 years and was 51% male, while the COVIDneg cohort had a mean age of 50.7\u00b121.4 years and was 43% male.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 and C23-C26 provide consistent demographic and cohort size data that are directly stated in the manuscript. The sample sizes are substantial and the demographic characteristics are clearly reported with appropriate statistical measures (mean and standard deviation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C33",
+      "C34",
+      "C35",
+      "C51",
+      "C52"
+    ],
+    "result": "Anosmia/dysgeusia showed the strongest association with COVID-19 positivity, with a 27.1-fold amplification (p<1E-300) in COVIDpos versus COVIDneg patients. This symptom appeared in 145 (6.3%) COVIDpos and 173 (0.2%) COVIDneg patients, representing an overall prevalence of 0.4% across all patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C33-C35 present consistent statistical data from Table 1 with extremely significant p-values. However, C51's interpretation that this is the \"most salient early indicator\" should be tempered by C52's acknowledgment of the low overall prevalence (0.4%), which the authors correctly note limits its utility as a standalone predictor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C36",
+      "C37",
+      "C38",
+      "C53"
+    ],
+    "result": "Fever/chills showed significant amplification in COVIDpos patients with a 2.6-fold increase (p=3.57E-169), appearing in 750 (32.4%) COVIDpos and 9,421 (12.6%) COVIDneg patients, representing 13.2% overall prevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C36-C38 present consistent data from Table 1 with highly significant statistical support. The higher overall prevalence (13.2%, C53) compared to anosmia/dysgeusia makes this a more practical clinical indicator despite lower fold-amplification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C42",
+      "C43",
+      "C44",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Respiratory symptoms showed significant amplification in COVIDpos patients: respiratory difficulty (2.2-fold, p=3.06E-105) appeared in 681 (29.4%) COVIDpos versus 10,082 (13.5%) COVIDneg patients, and cough (2.2-fold, p=4.60E-129) appeared in 769 (33.2%) COVIDpos versus 11,083 (14.8%) COVIDneg patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C39-C44 present internally consistent data from Table 1 with highly significant p-values. Both respiratory symptoms show similar fold-amplification and high prevalence in COVIDpos patients, supporting their utility as clinical indicators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Myalgia/arthralgia showed 2.0-fold amplification (p=5.35E-34) in COVIDpos patients, appearing in 288 (12.4%) COVIDpos versus 4,620 (6.2%) COVIDneg patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C45-C47 present consistent data from Table 1 with statistically significant results. The moderate fold-amplification and prevalence support myalgia/arthralgia as a contributing but not primary diagnostic indicator.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C48",
+      "C49",
+      "C50",
+      "C54",
+      "C55"
+    ],
+    "result": "Diarrhea showed modest amplification (1.4-fold, p=3.47E-06) in COVIDpos patients, appearing in 228 (9.8%) COVIDpos versus 5,452 (7.3%) COVIDneg patients. The authors speculate this may relate to fecal viral shedding, citing wastewater surveillance studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19 and C48-C50 present statistically significant but modest amplification data. However, C54's speculation about fecal shedding and C55's citation of wastewater surveillance are correlative observations that do not establish causation or mechanism. The connection between diarrhea prevalence and fecal shedding requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C56",
+      "C57"
+    ],
+    "result": "Symptom combinations showed enhanced discriminatory power: cough and fever/chills together had 4.2-fold amplification, while cough and diarrhea co-occurred in 8.0% of COVIDpos versus 2.8% of COVIDneg patients (2.8-fold, p=5.6E-32). The combination of cough, fever/chills, and anosmia/dysgeusia constitutes the earliest EHR-derived COVID-19 signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C56-C57 present pairwise symptom analysis with strong statistical support. The combinatorial approach shows enhanced discriminatory power over individual symptoms. However, C21's claim about \"earliest signature\" requires temporal validation from the day-by-day analysis presented elsewhere.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Temporal analysis revealed that cough showed strongest amplification 4-7 days before PCR testing (5.2-fold on day -7 to 3.1-fold on day -4, all p<0.05), while diarrhea showed early amplification on days -7 (2.2-fold, p=5.6E-04) and -6 (1.8-fold, p=1.2E-02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 present consistent temporal data from Table 2 showing declining amplification as PCR testing approaches. The statistical significance is maintained for the earlier time points, supporting the interpretation that these symptoms emerge early in disease progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Change in appetite showed delayed onset compared to other symptoms, with significant amplification only on days -4 to -2 (3.7-fold to 2.9-fold, p<0.001). The authors interpret this as a secondary symptom appearing after other manifestations rather than being directly caused by infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 present temporal data showing later onset of appetite changes. C67's interpretation that this is secondary rather than primary is reasonable given the temporal pattern, though alternative explanations (e.g., direct viral effects with delayed onset) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Hospitalization data showed that only 0.5% of COVIDpos and 0.3% of COVIDneg patients were hospitalized \u22657 days before PCR testing, indicating most patients were not seriously ill during the study window. During the week prior to testing, 5.8% of COVIDpos and 8.0% of COVIDneg patients were hospitalized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 present consistent hospitalization data supporting that the cohort primarily represents early/mild disease. The lower hospitalization rate in COVIDpos during the week before testing (5.8% vs 8.0%) may reflect selection bias where sicker COVIDneg patients were more likely to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study employed SciBERT-based neural networks trained on 21,678 sentences (18,490 initial + 3,188 COVID-related) covering 26 symptom categories with 145 synonyms. The model achieved 94.0% accuracy with precision and recall \u226596% for sentiment classification, and was applied to 35,790,640 clinical notes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 provide detailed methodology with consistent performance metrics. The model selection (SciBERT) is justified by comparison to alternatives (C70-C71), and performance metrics are appropriate. However, the manuscript lacks information about random seeds, cross-validation strategy, and potential overfitting given the relatively small training set compared to application scale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Model validation on 4,001 sentences showed 96.7% true positive rate and 6.1% false positive rate overall, with 93-100% true positive rates for major symptoms but only 82.2% for anosmia/dysgeusia. Template sentences (10.2%) were excluded from analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 present validation metrics showing generally strong performance. However, the lower performance for anosmia/dysgeusia (82.2%, C82) is concerning given its importance as the primary finding (27.1-fold amplification). This could lead to underestimation of this symptom's true prevalence and affect the reliability of the main result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors acknowledge multiple limitations including sparse longitudinal data (only 0.3-0.5% had notes all 7 days), inherent delays in PCR testing influenced by public awareness and testing availability, potential underreporting of mild symptoms like anosmia, and selection bias in the COVIDneg cohort who sought testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C92 present important limitations that appropriately qualify the findings. The data sparsity (C83-C85) is particularly concerning for temporal analysis validity. The discussion of testing delays (C86-C90) and reporting bias (C91-C92) demonstrates appropriate critical assessment, though these limitations may substantially affect the interpretability of temporal patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The introduction provides background on COVID-19 epidemiology (6.3M cases, 379,941 deaths as of June 2020) and clinical characteristics including asymptomatic transmission, diverse symptoms across multiple organ systems, variable disease severity, and recovery timelines ranging from 3 days to >3 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 present background information supported by appropriate citations to WHO data and published literature. These claims establish context but are not original findings of this study. The information was accurate for the June 2020 timeframe.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C32",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study used FDA EUA-approved SARS-CoV-2 PCR testing on nasopharyngeal/oropharyngeal swabs, was conducted under IRB 20-003278, maintained data in Mayo Clinic's privacy-preserving environment, and complied with Belmont Report principles and 45 CFR 46 regulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C93-C96 document appropriate regulatory compliance and ethical oversight. C32 notes that >20% of both cohorts had ICD10 codes for acute upper respiratory infection, which is expected given the testing indication but important for interpreting the control group.",
+    "result_type": "MINOR"
+  }
+]

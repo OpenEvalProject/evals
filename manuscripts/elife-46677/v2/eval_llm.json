@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Prior bladder infection results in earlier onset of robust bladder inflammation upon bacterial challenge compared to naive mice, with inflammation kinetics differing by infection history. Resolved and Sensitized mice both show severe inflammation at 6 hpi (median histopathology score of 5), while Adult Naive mice show minimal inflammation (median score 2.5). By 24 hpi, inflammation wanes in Resolved mice (score 1) but remains elevated in Sensitized mice (score 2), while increasing in Adult Naive mice (score 3.5). This pattern is mirrored by bladder edema and pro-inflammatory cytokines (IL-6, CXCL1, CCL2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C47 are well-supported by multiple converging lines of evidence including histopathology (Figure 1B-C), bacterial burden measurements (Figure 2A), bladder weights (Figure 2B), and cytokine quantification (Figure 2C). The data consistently show accelerated early inflammation in previously infected mice with divergent kinetics between Resolved and Sensitized groups. Sample sizes appear adequate (N=2-4 independent experiments) and statistical comparisons are appropriate (Kruskal-Wallis with Dunn's correction).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "RNA-seq analysis reveals that TNF\u03b1 receptor signaling pathways are among the most highly upregulated pathways during UPEC infection across all mouse groups. Previously infected mice (Resolved and Sensitized) show robust TNF\u03b1 pathway activation by 6 hpi, while Adult Naive mice show delayed activation. Critically, TNF\u03b1 signaling is sustained through 24 hpi only in Sensitized mice, not in Resolved mice. The kinetics of Ptgs2 (COX-2) expression closely mirror TNF\u03b1 expression patterns across all groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C76 are supported by comprehensive RNA-seq analysis (Figure 3-4) with appropriate bioinformatic methods (DESeq2, pathway analysis). The hierarchical clustering of TNF\u03b1 pathway genes (Figure 4A) clearly demonstrates differential activation patterns. However, the study acknowledges limitations: pathway analysis cannot distinguish between TNFR1 and TNFR2 signaling due to overlapping gene sets, and whole bladder RNA-seq precludes cell-type-specific analysis. The correlation between TNF\u03b1 and COX-2 expression is descriptive and mechanistic relationship remains speculative (C141, C146).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "TNF\u03b1 depletion in Resolved mice disrupts intracellular colonization resistance, resulting in significantly increased IBCs and bladder bacterial burdens at 6 hpi compared to isotype controls, while not affecting Adult Naive or Sensitized mice. TNF\u03b1 depletion does not affect early bacterial entry (3-4.5 hpi) but reduces neutrophil recruitment to the bladder and urothelial exfoliation at 6 hpi, as demonstrated by flow cytometry, SEM, and reduced pyuria. This indicates TNF\u03b1-mediated protection in Resolved mice operates through rapid neutrophil recruitment and exfoliation of IBC-containing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C101 are well-supported by multiple complementary experimental approaches including bacterial burden quantification (Figure 5A), IBC enumeration (Figure 5D), SEM imaging (Figure 6C), flow cytometry (Figure 6F), and pyuria measurements (Figure 6E). The mechanistic interpretation is logical and supported by the data. However, a single dose of anti-TNF\u03b1 was insufficient to induce chronic infection in Resolved mice (C89), suggesting additional factors contribute to long-term protection. The experiments used appropriate controls (isotype antibody) and multiple independent replicates (N=2-7 experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "TNF\u03b1 depletion in Sensitized mice does not affect IBC formation or bacterial burdens at 6 hpi, suggesting early colonization resistance is TNF\u03b1-independent in these mice. However, at 24 hpi, TNF\u03b1 depletion significantly reduces bladder bacterial burdens (median decrease from 3.8\u00d710^6 to 8.4\u00d710^3 cfu/bladder) and bladder inflammation, while not affecting pyuria. This indicates sustained TNF\u03b1 signaling in Sensitized mice promotes severe acute cystitis through prolonged inflammation, but neutrophil transmigration is TNF\u03b1-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C112 are supported by bacterial burden data (Figure 7A), bladder weight measurements (Figure 7D), and pyuria analysis (Figure 7E). The finding that TNF\u03b1 depletion reduces bacterial burdens at 24 hpi but not pyuria contrasts with Resolved mice and suggests different mechanisms. The interpretation that neutrophil transmigration is TNF\u03b1-independent in Sensitized mice (C149) is a reasonable inference but somewhat speculative. The data are consistent with prior COX-2 inhibition studies (C105, C147-C148), though the relationship between TNF\u03b1 and COX-2 remains unclear (C146).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "At 24 hpi, Sensitized mice show a bimodal distribution of bladder bacterial burdens, with 11 of 14 mice experiencing bacterial bloom to 10^5-10^8 cfu/bladder (median increase from 3.2\u00d710^4 to 8.6\u00d710^5 cfu/bladder). In contrast, Resolved mice show decreased median bacterial burden (1.7\u00d710^5 to 1.6\u00d710^4 cfu/bladder), though 6 of 17 mice had burdens >10^5 cfu/bladder. However, only 1 of 25 Resolved mice developed chronic infection lasting four weeks, indicating higher bacterial burdens at 24 hpi do not predict chronic infection in Resolved mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are supported by bacterial burden data (Figure 2A) and longitudinal infection monitoring. The bimodal distribution in previously infected mice is clearly shown. The observation that elevated bacterial burdens at 24 hpi in some Resolved mice do not predict chronic infection (C38) is important for distinguishing acute from chronic susceptibility. Sample sizes are adequate for these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Comparison of mock-infected Sensitized vs. Resolved mice shows 1019 differentially expressed genes, similar to a previous study (992 genes), with 357 genes and 98 of 139 enriched pathways overlapping between studies. At 24 hpi during challenge infection, Resolved and Sensitized mice each have 37 unique pathways among the top 100 most enriched. Pathways unique to Sensitized mice are predominantly inflammation-related, while Resolved mice show pathways related to cell growth, neuron ontogeny, and anti-inflammatory processes including DHA-derived resolvin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C67-C70 are supported by RNA-seq pathway analysis (Figure 3\u2014figure supplement 1, Supplementary file 1). The reproducibility with prior work (C53-C54) strengthens confidence in the findings. However, the authors note many signals in Resolved-unique pathways were not strong enough for z-score assignment (C69), suggesting these differences may be subtle. The anti-inflammatory pathway interpretation (C70) is supported by citation to resolvin biology but represents a relatively small signal in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Sensitized mice are unable to harbor IBCs in the presence or absence of TNF\u03b1 signaling, likely due to significantly smaller superficial umbrella cells (approximately one-eighth the surface area of Adult Naive umbrella cells), which restricts IBC formation. This indicates the mechanism of intracellular colonization resistance differs between Sensitized and Resolved mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 are supported by IBC enumeration data (Figure 5D) and prior characterization of umbrella cell size differences (O'Brien et al., 2016; O'Brien et al., 2018). The inference that smaller umbrella cells restrict IBC formation (C138) is reasonable but somewhat speculative. The conclusion that mechanisms differ between Resolved and Sensitized mice (C139) is well-supported by the differential effects of TNF\u03b1 depletion on IBC formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C131"
+    ],
+    "result": "The major distinction between Sensitized and Resolved mice is the duration of TNF\u03b1 signaling. Resolved mice shut down TNF\u03b1 signaling and bladder inflammation by 24 hpi, while Sensitized mice sustain TNF\u03b1 signaling through 24 hpi, contributing to more severe infection. Adult Naive mice also show sustained TNF\u03b1 signaling at 24 hpi, though slower to develop and less robust than Sensitized mice. Previously infected mice, regardless of outcome, share an accelerated pattern of robust TNF\u03b1 signaling in the first 6 hours relative to naive mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124, C131 synthesize findings from RNA-seq pathway analysis (Figure 4) and inflammatory profiling (Figures 1-2). The characterization of TNF\u03b1 signaling duration as the key distinguishing feature is well-supported by hierarchical clustering data showing pathway activation at different timepoints. The statement that sustained TNF\u03b1 'contributed to' more severe infection (C123) is supported by the TNF\u03b1 depletion experiments but represents an interpretive synthesis rather than a single direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Mucosal bacterial infections, particularly urinary tract infections (UTI), represent a major public health burden. Over 80% of community-acquired UTI are caused by uropathogenic E. coli (UPEC), predominantly affecting the bladder. Over 60% of women experience at least one UTI, with 20-30% experiencing recurrence within 6 months. A history of prior UTI is a major risk factor for developing acute UTI, and disease history may impact susceptibility to symptomatic recurrent UTI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 are well-supported by appropriate citations to epidemiological and clinical literature. These establish the clinical context and rationale for the study but do not represent new findings from this work. The inference that disease history impacts susceptibility (C11) is the hypothesis being tested rather than a result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior work in C3H/HeN mice established that the outcome of initial infection (self-resolving vs. chronic) polarizes susceptibility to recurrent UTI. An early immune checkpoint at 24 hpi determines infection outcome, with COX-2 expression promoting chronic cystitis. Mice resolving initial infection are resistant to rUTI, while those with chronic infection \u22652 weeks become highly susceptible in a COX-2-dependent manner. This susceptibility can overcome genetic resistance in C57BL/6J mice and is associated with bladder remodeling and serum cytokine biomarkers predictive of rUTI in women.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C22 accurately summarize prior published work from this research group, appropriately cited. These establish the experimental model and prior findings that motivate the current mechanistic investigation. The claims represent background rather than new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The kinetics of TNF\u03b1 expression and pathway activation mirror Ptgs2 (COX-2) expression regardless of disease history, suggesting potential association between TNF\u03b1 signaling and COX-2 expression during bladder infection. TNF\u03b1 depletion in Sensitized mice phenocopies some effects of COX-2 inhibition (reduced edema and bacterial titers) but not others (pyuria unchanged), suggesting neutrophil transmigration is TNF\u03b1-independent but COX-2-dependent in Sensitized mice. Whether COX-2 acts downstream of TNF\u03b1 or both are activated by a common mechanism remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C141, C145-C149 describe correlative observations and comparisons to prior COX-2 inhibition studies. The correlation between TNF\u03b1 and COX-2 expression kinetics (C140) is supported by data (Figure 4B), but the mechanistic relationship is explicitly stated as uncertain (C146). The comparison to COX-2 inhibition effects (C147-C148) is reasonable but indirect, comparing current TNF\u03b1 depletion data to prior published COX-2 inhibition studies rather than direct side-by-side comparison. The inference about neutrophil transmigration independence (C149) is logical but speculative. Additional experiments would be needed to definitively establish the TNF\u03b1-COX-2 relationship.",
+    "result_type": "MINOR"
+  }
+]

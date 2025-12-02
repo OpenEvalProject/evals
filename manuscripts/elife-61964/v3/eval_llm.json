@@ -1,0 +1,203 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The cryo-EM structure of PHF1-PRC2 bound to dinucleosomes at 5.2 \u00c5 overall resolution (4.4 \u00c5 focused) reveals how EZH2 binding to nucleosomal DNA orients the H3 N-terminus (residues R26-K37) through an extended network of interactions to position H3K27 in the active site. Unmodified H3K36 occupies a critical position in the EZH2CXC-DNA interface, with its epsilon-amino group engaging Q570 and possibly the DNA phosphate backbone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17-C32 collectively describe the cryo-EM structure determination and modeling of the PRC2-dinucleosome complex. The resolution values (5.2 \u00c5 overall, 4.4 \u00c5 focused) are directly stated with supporting data processing workflows (Figure 1 supplements). The structural model of H3 residues R26-K37 is supported by well-defined density (C21, Figure 1F). The positioning of H3K36 in the EZH2CXC-DNA interface is supported by structural data (C28-C29, Figure 1F and supplements). The comparison with the previously proposed E579 pocket (C31-C32) provides critical context showing incompatibility with the current structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Mutations in the EZH2CXC domain (K563A Q565A K569A Q570A) reduce PRC2 nucleosome binding affinity 2-3 fold and nearly abolish H3K27 methylation activity on mononucleosomes, while activity is partially restored on dinucleosomes. The mutations do not affect catalytic activity on free H3 peptides, indicating that EZH2CXC-DNA interaction is critical for engaging the H3 N-terminus on nucleosomes for effective H3K27 methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 describe systematic mutational analysis of the EZH2CXC domain. EMSA data (C33-C36, Figure 2A-B) quantitatively demonstrate modest effects on binding affinity. HMTase assays (C37-C38, Figure 2C) show dramatic loss of activity on mononucleosomes but partial restoration on dinucleosomes. The peptide control experiment (C39, Figure 2 supplement 1B) is critical for ruling out direct catalytic defects. The conclusion (C41) logically follows from the combined data showing that DNA binding by EZH2CXC is required for productive substrate engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "H3K36me3, H3K36R, and H3K36A modifications all inhibit H3K27 methylation by PRC2 on nucleosomes in vitro (>10-fold for H3K36me3, less severe for H3K36R/A) without affecting nucleosome binding affinity. Importantly, H3K36me3 does not inhibit H3K27 methylation on free H3 peptides, demonstrating that allosteric inhibition requires the geometric constraints of the nucleosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C42-C48 describe comprehensive biochemical characterization of H3K36 variants. EMSA data (C42, Figure 3A-B) show no binding defect for H3K36me3. HMTase assays (C43-C46, Figure 3C) quantitatively demonstrate inhibition by H3K36me3, H3K36R, and H3K36A on nucleosomes. The critical peptide control (C47, Figure 3D) shows no inhibition on free peptides, strongly supporting the allosteric mechanism conclusion (C48). The data are internally consistent and support the model that unmodified H3K36 provides optimal fit in the EZH2CXC-DNA interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Full-length PHF1-PRC2, which has higher nucleosome binding affinity and residence time than core PRC2, is still strongly inhibited by H3K36me3 on mononucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 extend the inhibition mechanism to PHF1-PRC2. HMTase data (C50, Figure 3 supplement 1C) demonstrate strong inhibition despite enhanced binding properties. This result is important for showing that increased binding affinity/residence time cannot overcome the allosteric inhibition mechanism, supporting the geometric model proposed from the structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Drosophila H3K36R mutants complete embryogenesis with normal cuticle morphology but show variable developmental arrest: 81% during larval stages, 18% as pupae, and 1% as pharate adults displaying Polycomb-like homeotic transformations (antenna-to-leg, extra sex combs). H3K36A mutants show more severe phenotypes with 96% arresting before hatching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 describe detailed developmental phenotyping of H3K36 mutants. The quantitative developmental staging data (C52-C55, Figure 4) are clearly presented with sample sizes. The homeotic transformation phenotypes (C56-C57, Figure 4) are characteristic of Polycomb mutants and well-documented. The difference between H3K36R strains (C53 vs C58) is noted and discussed in Methods. The H3K36A phenotype (C59) is consistent with the in vitro data showing inhibition. The phenotypic data provide strong in vivo validation of the biochemical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "H3K36R mutant larvae show >4-fold reduction in H3K36me2/me3 bulk levels and ~2-fold reduction in H3K27me3, with 3-4 fold reduction specifically at HOX genes (Ubx, abd-A, Abd-B, Antp). In H3K36A and H3K36R mutant embryos, H3K27me3 bulk levels appear unchanged but are ~1.5-fold reduced at HOX loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68 describe comprehensive molecular characterization by western blot and ChIP-seq. Western blot data (C60-C63, Figure 5A-B) quantitatively show histone modification changes with appropriate loading controls. ChIP-seq data (C64-C68, Figure 5C-F) provide genome-wide validation with proper normalization using spike-in controls. The differential effects at HOX genes versus genome-wide are clearly demonstrated. The apparent discrepancy between embryos and larvae (C63 vs C61) is appropriately noted and likely reflects incomplete H3 replacement in embryos as discussed in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "H3K36R and H3K36A mutants show stochastic misexpression of multiple HOX genes (Abd-B, Ubx, Antp) in specific tissues (CNS, imaginal discs) where these genes are normally repressed by Polycomb. The misexpression is less widespread than in strong PcG mutants (H3K27R, esc-) and correlates with reduced H3K27me3 levels at HOX genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 describe detailed HOX gene expression analysis by immunohistochemistry/immunofluorescence. The stochastic misexpression patterns (C69, C71-C74, Figure 6) are well-documented with quantitative penetrance data (50% for Ubx in wing discs, 100% for Antp in antenna). The comparison with strong PcG mutants (C70, Figure 6A) provides important context. The conclusion (C75) that misexpression results from reduced H3K27me3 is well-supported by the correlation between molecular (Figure 5) and phenotypic (Figure 6) data. The tissue-specific patterns are consistent with known PcG biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The structural, biochemical, and genetic data collectively support a model where the geometry formed by interactions between PRC2, nucleosomal DNA, and the H3 N-terminus enables allosteric inhibition by H3K36me2/3. Unmodified H3K36 provides optimal fit for productive H3K27 methylation, while methylated or mutated H3K36 impairs catalytic competence without disrupting binding, preventing effective H3K27me3 deposition at transcriptionally active genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 represent the integrated conclusions of the study. The model is well-supported by convergent evidence: (1) structural data showing H3K36 position in the EZH2CXC-DNA interface (C3-C4, C28-C29), (2) biochemical data showing inhibition by H3K36 modifications on nucleosomes but not peptides (C43-C48), (3) mutational data showing EZH2CXC-DNA interaction is critical (C37-C41), and (4) in vivo data showing reduced H3K27me3 and HOX misexpression in H3K36R/A mutants (C60-C75). The allosteric mechanism (C78-C80) is supported by the lack of binding defects (C42) and peptide activity (C47). The model is internally consistent and explains all major observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establishing that PRC2 trimethylates H3K27, H3K27me3 recruits PRC1 and activates PRC2 in trans, while H3K4me3 and H3K36me2/3 inhibit PRC2 in cis by reducing kcat without major effects on binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C16 represent well-established background knowledge supported by extensive prior literature (multiple citations provided). These claims provide essential context for the current study but are not novel findings. The citations appear appropriate and the statements are consistent with the field's understanding of PRC2 regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "Di- and tri-methylated H3K36 inhibit PRC2 at transcriptionally active genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 is supported both by prior literature (citations provided) and by the new data in this manuscript (Figures 3, 5). This represents a key biological context for the study, bridging prior knowledge with the new mechanistic insights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "DNA-binding by the PHF1 winged-helix domain increases PHF1-PRC2 binding affinity and residence time on nucleosomes 2-3 fold, resulting in more efficient H3K27 methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by citation to prior work (Choi et al., 2017) and provides context for the PHF1-PRC2 experiments in this study. This is established prior knowledge used to interpret the current findings.",
+    "result_type": "MINOR"
+  }
+]

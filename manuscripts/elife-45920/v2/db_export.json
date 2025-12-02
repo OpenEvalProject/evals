@@ -1,0 +1,2047 @@
+{
+  "submission": {
+    "id": "0236e0dc-eec8-49f0-860c-aa70aae39d98",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:48:28.314704Z",
+    "updated_at": "2025-12-02T10:48:28.314704Z"
+  },
+  "content": [
+    {
+      "id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "submission_id": "0236e0dc-eec8-49f0-860c-aa70aae39d98",
+      "content_type": "manuscript",
+      "content_text": "# Exercise-induced enhancement of synaptic function triggered by the inverse BAR protein, Mtss1L\n\n## Authors\n\n- Christina Chatzi<sup>1</sup> ([ORCID: 0000-0001-8922-5617](https://orcid.org/0000-0001-8922-5617))\n- Yingyu Zhang<sup>1</sup> ([ORCID: 0000-0002-3414-4059](https://orcid.org/0000-0002-3414-4059))\n- Wiiliam D Hendricks<sup>1</sup> ([ORCID: 0000-0003-2841-577X](https://orcid.org/0000-0003-2841-577X))\n- Yang Chen<sup>1</sup> ([ORCID: 0000-0002-4365-9900](https://orcid.org/0000-0002-4365-9900))\n- Eric Schnell<sup>3</sup> ([ORCID: 0000-0002-5623-5015](https://orcid.org/0000-0002-5623-5015))\n- Richard H Goodman<sup>1</sup>\n- Gary L Westbrook<sup>1</sup> ([ORCID: 0000-0002-8108-5223](https://orcid.org/0000-0002-8108-5223)) \u2020\n\n### Affiliations\n\n1. Vollum Institute Oregon Health & Science University Portland United States\n2. Neuroscience Graduate Program, Vollum Institute Oregon Health & Science University Portland United States\n3. Department of Anesthesiology and Perioperative Medicine Oregon Health & Science University Portland United States\n4. Portland VA Health Care System Portland United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nExercise is a potent enhancer of learning and memory, yet we know little of the underlying mechanisms that likely include alterations in synaptic efficacy in the hippocampus. To address this issue, we exposed mice to a single episode of voluntary exercise, and permanently marked activated mature hippocampal dentate granule cells using conditional Fos-TRAP mice. Exercise-activated neurons (Fos-TRAPed) showed an input-selective increase in dendritic spines and excitatory postsynaptic currents at 3 days post-exercise, indicative of exercise-induced structural plasticity. Laser-capture microdissection and RNASeq of activated neurons revealed that the most highly induced transcript was Mtss1L, a little-studied I-BAR domain-containing gene, which we hypothesized could be involved in membrane curvature and dendritic spine formation. shRNA-mediated Mtss1L knockdown in vivo prevented the exercise-induced increases in spines and excitatory postsynaptic currents. Our results link short-term effects of exercise to activity-dependent expression of Mtss1L, which we propose as a novel effector of activity-dependent rearrangement of synapses.\n\n## Introduction\n\nThe beneficial cognitive effects of physical exercise cross the lifespan as well as disease boundaries (Mandolesi et al., 2018; Saraulli et al., 2017). Exercise alters neural activity in local hippocampal circuits, presumably by enhancing learning and memory through short- and long-term changes in synaptic plasticity (Vivar et al., 2013; Voss et al., 2013). The dentate gyrus is uniquely important in learning and memory, acting as an input stage for encoding contextual and spatial information from multiple brain regions. This circuit is well suited to its biological function because of its sparse coding design, with only a few dentate granule cells active at any one time (Jung and McNaughton, 1993; Leutgeb et al., 2007; Severa et al., 2017).\u00a0These properties also provide an ideal network to investigate how exercise-induced changes in activity-dependent gene expression affect hippocampal structural and synaptic plasticity in vivo.\n\nMost studies have focused on the cognitive effects of sustained exercise (Bolz et al., 2015; Creer et al., 2010; Uda et al., 2006). However, memory improvements are well documented after acute bouts of exercise (Mandolesi et al., 2018;\u00a0Perini et al., 2016).\u00a0Thus, the response to a single episode of exercise may be better suited to uncover cellular and molecular cascades that form and rearrange synapses, and which evolve over minutes to weeks following exercise. We reasoned that these mechanisms could be unmasked by a single period of voluntary exercise in vivo, followed by functional and molecular analysis of subsequent changes specific to neurons that were activated during the exercise.\n\n## Results\n\ncFoscreERT2 transgenic mice (Fos-TRAP) provide valid proxies of neural activity (12 and Figure 1\u2014figure supplement 1) and a means to permanently label activated dentate granule cells. During a two-hour exposure to running wheels, mice ran approximately 3 km. We examined activated cells 3 days post-running in Fos-TRAP mice crossed with a TdT reporter line\u00a0(Figure 1A). We used Fos immunohistochemistry at 1 hr post-exercise, confirming robust stimulation of neuronal activity in mature granule cells (Figure 1B). The increase in Fos expression, assessed by immunohistochemistry, matched the increase in TdTomato-positive cells (TdT+) measured 3 or 7 day later in Fos-TRAP mice, indicating that activated granule cells were accurately and permanently labeled during the 2 hr time window Figure 1C). We refer to these cells as \u2018exercise-TRAPed\u2019. To investigate whether a single bout of exercise activated a specific subset of granule cells, we exercise TRAPed dentate granule cells (TdT+) and compared this population to an ensemble activated by a subsequent re-exposure to exercise either 1 or 4 days later, as measured by Fos immunohistochemistry at 2 hr after the 2nd exercise period (Figure 1D). When the two exercise periods were separated by 24 hr, only 13% of exercise TRAPed cells were activated in the 2nd exercise period. There was almost no overlap between the two neuronal ensembles (1%) when the two periods were separated by 4 days (Figure 1D, right panel). Exercise-TRAPed neurons were distributed through the granule cell body layer, without labeling in the subgranular zone. This indicates that our exercise protocol activated stochastic, non-overlapping sets of mature granule cells, consistent with the sparse coding design of this circuit.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic showing exercise paradigm. Fos-TRAP:TdTomato (Guenthner et al., 2013) mice were injected with tamoxifen (150 mg/kg) 24 hr before exposure to 2 hr of voluntary exercise, while littermate controls remained in their homecage. Mice were sacrificed 3 or 7 days after exposure to the running wheel. (B) Voluntary exercise (2 hr) increased neuronal activity in the dentate gyrus. Representative images of endogenous c-Fos expression in the dentate gyrus of WT mice housed in their homecage (left) or 2 hr after exposure to voluntary exercise (middle). A single bout of exposure to exercise increased c-Fos+\u00a0cells in the dentate gyrus (right). (% increase, Homecage: 100\u00a0\u00b1\u00a04 n\u00a0=\u00a06, Exercise: 255\u00a0\u00b1\u00a025, n\u00a0=\u00a04, unpaired t-test p=0.001). Scale bars: insert 50 \u00b5m, right 100 \u00b5m. (C) Representative images of the dentate gyrus from Fos-TRAP:TdTomato mice housed in their homecage (left) or 3 days after 2 hr of voluntary exercise (middle). Voluntary exercise increased exercise-TRAPed dentate granule cells (% increase from baseline in exercise-TRAPed cells, homecage 100\u00a0\u00b1\u00a05 n\u00a0=\u00a05, Exercise 264\u00a0\u00b1\u00a019, n\u00a0=\u00a05, unpaired t-test, p<0.0001). (D) A single exposure to exercise tags distinct populations of activated DG granule cells. (A) We used the Fos-TRAP: Tdtomato mice to tag a neuronal ensemble activated by a single exposure to exercise (2 hr) (Tdtomato+). We compared these exercise-TRAPed cells to granule cells activated by a second exposure to exercise (C) and tagged at 2 hr post-exercise using c-Fos immunohistochemistry 1 or 4 days later. Fos-TRAP:Tdtomato mice were injected with Tamoxifen (150 mg/kg) 24 hr prior to exercise. Animals were exposed to a second bout of exercise either 1 or 4 days later. (B) When the two exercise periods were separated by 24 hr, 12.5 \u00b1 5.6%, (n\u00a0=\u00a03) of the exercise-TRAPed cells were re-activated, whereas with a 4-day separation only 1.3 \u00b1 0.3% (n\u00a0=\u00a04, unpaired t-test, p=0.07) overlapped, indicating that labeling with exercise was stochastic.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** To validate the sensitivity of the Fos-TRAP method, primary hippocampal cultures were derived from 2-day-old Fos-TRAP pups (Guenthner et al., 2013), transduced with an AAV-flex-H2B-mRFP virus, and then 5 days later treated with 4-OH tamoxifen (4-OH Tam, 1\u00b5M) for 48 hr. As expected, H2B- mRFP labeling was sparse in these low-density cultures (left panel), whereas KCl-induced depolarization (20 mM, 30 min) resulted in a robust increase in Fos:H2B-mRFP expression (red, middle panel). Inhibition of neuronal activity in the cultures for 48 hr with TTX (500 nM), NBQX (2.5 \u00b5M) and CPP (5 \u00b5M) completely abolished Fos-TRAP: H2B-mRFP expression (right panel). Scale bar: 40 \u00b5m.\n\nHigher cortical information converges on the dentate gyrus through laminated perforant path axons from the entorhinal cortex. To examine whether a single exposure to exercise altered structural plasticity in exercise-activated neurons, we analyzed exercise-TRAPed cells in mice 3 or 7 days post-exercise as compared to homecage controls (Figure 2A, left panels). Exercise-TRAPed cells showed a nearly 50% increase in dendritic spines at 3\u00a0days. This increase was limited to the outer molecular layer (OML), which interestingly, receives contextual and time information via the lateral perforant path (Hargreaves et al., 2005; Yoganarasimha et al., 2011), whereas there was no change in dendritic spines in the middle molecular layer (MML), which receives spatial information via the medial perforant path (Hafting et al., 2005; Sargolini et al., 2006). Consistent with a transient response to a single stimulus, spine density in the OML returned to baseline levels by 7 days (Figure 2A, right panels). Exercise did not affect total dendritic length in OML or MML indicating that the increase in spine density reflected an increase in the number of synapses (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative images of TRAPed granule cell dendrites in the OML and MML from mice at baseline (i.e. homecage) or 3 days post-exercise. Scale bar: 5 \u00b5m. Spine densities were significantly increased in the OML of activated cells at 3 days post exercise (two-way ANOVA, OML 3 days homecage: 0.94\u00a0\u00b1\u00a00.1, exercise: 1.39\u00a0\u00b1\u00a00.2, p=0.02, n\u00a0=\u00a05), whereas there was no difference in the OML at 7 days post-exercise (OML 7 days homecage: 0.87\u00a0\u00b1\u00a00.2, exercise: 1.10\u00a0\u00b1\u00a00.1, p=0.18, n\u00a0=\u00a05). Spine density in the MML was unaffected (two-way ANOVA, no interaction between homecage and exercise groups, MML 3 days homecage: 0.99\u00a0\u00b1\u00a00.1, exercise: 1.10\u00a0\u00b1\u00a00.1; MML 7 days homecage: 0.88\u00a0\u00b1\u00a00.2, exercise 0.95\u00a0\u00b1\u00a00.2, n\u00a0=\u00a05, p=0.79). (B) Configuration for simultaneous whole-cell voltage clamp recordings of control and exercise-TRAPed dentate granule cells (left). Bipolar stimulating electrodes were placed in the OML and/or MML to activate lateral and medial perforant path axons, respectively. Cells were filled with AlexaFluor 488 dye (right) to confirm that the adjacent cell bodies had dendritic arbors that overlapped (control:green, exercise TRAPed: yellow). (C)\u00a0Representative EPSCs from the cell pair shown at left in response to alternating MML and OML stimulation in the control (black traces) and exercise-TRAPed cell (red traces). (D)\u00a0OML stimulation produced EPSCs that were significantly greater in exercise-TRAPed cells (EPSCs - OML amplitude: TdT-, \u221244.1\u00a0\u00b1\u00a08.9 pA; TdT+, \u2212114.9\u00a0\u00b1\u00a023.5 pA; n\u00a0=\u00a013 cell pairs (eight mice); p=0.0002, Wilcoxon matched-pairs signed rank test), whereas MML stimulation did not differ from controls (EPSCs - MML amplitude: TdT-\u221269.7 \u00b1 14.9 pA; TdT+, \u221260.1\u00a0\u00b1\u00a010.3 pA; n\u00a0=\u00a07 cell pairs (four mice); p=0.15, paired t-test). There was no difference in EPSC amplitudes during OML stimulation while recording from two control (both TdT-) granule cells (EPSC amplitudes: TdT-, \u221255.8\u00a0\u00b1\u00a016.3 pA; TdT-, \u221257.5 \u00b1 13.8 pA, n\u00a0=\u00a05 cell pairs, p=0.80, paired t-test). (E)\u00a0EPSC amplitudes from control (y-axis) and exercise TRAPed (x-axis) from each cell pair were plotted with each point representing a cell pair. MML stimulated cell pairs (open circles) were present along the unity line (dashed line), whereas OML stimulated pairs (black circles) were shifted below unity, indicating that the larger EPSC amplitudes for exercise-TRAPed cells was specific to the OML.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative image of dendrites of the outer molecular layer (light green) and middle molecular layer (light purple) of exercise-TRAPed cells (red) 3 days post-exercise. The band of VGluT2 immunofluorescence labeled only the OML and MML, with the outer half representing OML and the inner half representing MML for quantification. Scale bar: 40 \u00b5m. (B) There was no difference in dendritic lengths per cell between MML and OML cells (MML: 326\u00a0\u00b1\u00a014 \u00b5m, n\u00a0=\u00a03, OML: 300\u00a0\u00b1\u00a020, n\u00a0=\u00a03, unpaired t-test, p=0.14, 49 \u00b5m stack). Masking was used to better visualize the OML and MML in the image.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Representative EPSCs from paired-pulse experiments during 50 ms interstimulus interval (ISI) OML stimulation.\u00a0Responses are scaled on the y-axis relative to the first peak (PPR, 50 ms ISI: tdT-, 1.30\u00a0\u00b1\u00a00.08, tdT+, 1.10\u00a0\u00b1\u00a00.07, n\u00a0=\u00a09 cells, p=0.0770, paired t-test). Stimulus artifacts were blanked for presentation. (B) Same as in A, but with 100 ms ISI PPR, 100 ms ISI: tdT-, 1.25\u00a0\u00b1\u00a00.06, tdT+, 1.06\u00a0\u00b1\u00a00.08, n\u00a0=\u00a08 cells, p=0.09, paired t-test) (C) Quantification and summary of paired-pulse experiments. There was no change in PPR at 50 ms ISI (p=0.08, paired t-test) or 100 ms ISI (p=0.09, paired t-test). ns, not significant.\n\nThe increase in spine density in the OML was associated with a corresponding increase in functional synaptic input in exercise-TRAPed cells (Figure 2B). Three days after exercise, we used acute brain slices to make simultaneous whole-cell voltage clamp recordings from an exercise-TRAPed granule cell (yellow, Figure 2B, middle) and a neighboring control granule cell (green, Figure 2B, middle). Selective stimulation of lateral perforant path (LPP) axons evoked nearly three-fold larger EPSCs in the exercise-TRAPed cell of the simultaneously recorded cell pair (Figure 2C,D), whereas EPSC amplitudes evoked by stimulation of medial perforant path axons (MPP) were unaffected (Figure 2C,D). Plotting each cell pair as a function of the site of stimulation indicated that MPP cell pairs were on the unity line, whereas LPP cell pairs were below the unity line, indicative of the increased EPSCs in exercise-TRAPed cells (Figure 2E). The increased EPSC amplitudes could not be attributed to differences in intrinsic membrane properties or presynaptic release probability\u00a0(Figure 2\u2014figure supplement 2 and Supplementary file 1). These results indicate that dentate granule cells activated by a single bout of exercise show a laminar-specific increase in dendritic spines and in excitatory postsynaptic currents.\n\nActivity-dependent gene expression is one of the main drivers of short- and long-term changes in synaptic function (West and Greenberg, 2011). To identify exercise-activated genes underlying the observed structural plasticity in the dentate gyrus, we isolated RNA from RFP+ nuclei of exercise-TRAPed cells (Figure 3A,B) using laser microdissection. An ensemble of 150 individual exercise-TRAPed or adjacent non-activated (RFP-) mature granule cells was excised per mouse at 3 and 7 days post-exercise. Analysis of transcripts by RNASeq (Figure 3\u2014figure supplement 1) revealed up- and down-regulated transcripts (Figure 3C, left panel, Supplementary file 2 and 3) of which approximately 150 transcripts were significantly upregulated in exercise-TRAPed neurons 3 days after exercise. Gene Ontology analysis indicated that most of the upregulated transcripts had signaling or synaptic functions. The top ten upregulated genes (Figure 3C) included several known genes involved in hippocampal function, such as the neuron-specific RNA-binding protein Elavl4 and the immediate early gene Egr1 (Akamatsu et al., 2005; Jones et al., 2001). Consistent with the transient increase in dendritic spines, no transcript identified at 3\u00a0days post- exercise remained elevated at 7 days (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig3-v2.jpg)\n\n**Figure 3.:** (A) A virus expressing a CAG promoter followed by a loxP-flanked (\u2018floxed\u2019) stop cassette-controlled Histone2B Monomeric Red Fluorescent Protein (flex H2B-mRFP), was injected stereotaxically into the dentate gyrus of Fos-TRAP mice. The nuclear tag allowed preservation of the fluorophore during laser capture microdissection. Two weeks post-viral injections, mice were injected with tamoxifen, followed 24 hr later by 2 hr of voluntary exercise. Mice were sacrificed 3 and 7 days following exercise. mRFP+ (exercise TRAPed) and non-activated granule cells were subsequently excised from unfixed intact tissue cryosections using laser capture microdissection, and pooled in batches of 100\u2013150 cells per mouse. cDNA libraries were prepared and samples were processed for RNASeq library construction. Scale bar: 20 \u00b5m. (B) Voluntary exercise increased activated mRFP+ cells compared to littermate controls in homecage. Scale bars: 100 \u00b5m. Fos TRAPed:H2B-mRFP+ cells/50 \u00b5m section was 164\u00a0\u00b1\u00a026 for homecage (n\u00a0=\u00a03) and 686\u00a0\u00b1\u00a092 for exercise (n\u00a0=\u00a04, unpaired t-test, p=0.007). (C) Differential expression of genes between RFP+ and RFP- cell ensembles from four mice are displayed in a MA-plot (M value vs A value plot, which are Log2fold vs normalized mean expression in DEseq2), with and significantly changed (FDR\u00a0<\u00a00.1, fold enrichment 2.) Upregulated and downregulated transcripts are shown as red dots (upper and lower circles, respectively). For analysis at 3 days post-exercise in exercise-TRAPed cells, the top enriched ontological clusters are listed as well as the top 10 upregulated genes. (D) Real-time qPCR confirmation of the Mtss1L expression in in exercise-TRAPed cells at 3 days (see also Figure 3\u2014figure supplement 2).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Log2 raw counts dataframe after filtering transcripts with rowmax\u00a0<\u00a064 counts are displayed with violin plots in blue, median counts of each sample are shown as white dots with black bars representing standard deviation. Data from four samples from Fos-TRAP- cells and three samples from Fos-TRAP+ cells showed similar count distributions. Each sample contained cDNA from 150 neurons from each mouse. (B) Dispersion estimation of the normalized counts of samples at 3 days post-exercise was analyzed using the DEseq2 package. Local fit was used for the estimation, which showed that data dispersion estimated from raw counts (gene-est shown in black dots) fit well with the statistical model calculated from the DEseq2 package (red line). Normalized data (blue dots) were used for differential expression comparison.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Six of the top 10 enriched genes (see Figure 3C) were selected for validation including the top five based on padj values, and one from the lower five padj (CDKN1A). (A) Summary real-time qPCR confirmation of Mtss1L and Elavl4 exercise-induced transcripts in 3 and 7 day post-exercise samples using Smartseq2 amplified cDNA (exercise-TRAPed- (control) n\u00a0=\u00a04 mice; exercise-TRAPed+ n = 3 mice). mRNA expression was normalized to neuronal internal control gene Ubc. Statistical analysis was performed using one-way ANOVA with multiple comparisons and t-test *p<0.05. (B) mRNA expression of p21(CDKN1A), Egr1, Tnfsf12a, Stmn2 in the 3-day post-exercise samples (exercise TRAPed- (control) n\u00a0=\u00a04 exercise TRAPed+ n = 3). mRNA expression was normalized to neuronal internal control gene Ubc. Statistical analysis was performed using t-test assuming equal variation *p<0.05.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Exposure to a fixed wheel for 2 hr increased exercise-TRAPed dentate granule cells (% increase from baseline in TRAPed cells, homecage 100\u00a0\u00b1\u00a06 n\u00a0=\u00a05, Fixed wheel 133\u00a0\u00b1\u00a05, n\u00a0=\u00a05, unpaired t-test, p<0.01). (B) mRNA expression of Mtss1L was upregulated at 3 days after exposure to a fixed wheel in TRAPed cells (TRAPed- (control, n\u00a0=\u00a03), TRAPed+ (fixed wheel, n\u00a0=\u00a03). mRNA expression was normalized to neuronal internal control gene Ubc. Statistical analysis was performed using unpaired t-test *p<0.05.\n\nWe focused on Mtss1-like (metastasis-suppressor 1-like, Mtss1L), a protein that has been little studied in the adult nervous system (Saarikangas et al., 2008). Mtss1L, (recently renamed to Mtss2, MTSSI-BAR domain containing 2) the most enriched transcript in our experiments, was nine-fold elevated compared to non-activated neighboring cells, as validated in exercise TRAPed cells by RT-PCR (Figure 3D, Figure 3\u2014figure supplement 2). As a control for the object novelty of the running wheel, we exposed Fos-TRAP mice for 2 hr to an identical wheel that was locked, so that the mice could explore but not run. At 3 days post-exposure, there was a small increase above baseline in the number of Fos-TRAPed cells and Mtss1L expression (Figure 3\u2014figure supplement 3), but substantially less than exercise-TRAPed mice.\n\nTo determine the spatiotemporal pattern of Mtss1L expression, we derived KOMP Mtss1L reporter mice (Skarnes et al., 2011) in which the endogenous Mtss1L promoter drives bacterial beta-galactosidase (lacZ) gene expression. LacZ expression was undetectable in the dentate gyrus of KOMP Mtss1L+/- housed in their homecage, suggesting no expression of Mtss1L under baseline conditions. In contrast, exercise-induced LacZ expression peaked at 3 days post-exercise (Figure 4), confirming the activity-dependence of Mtss1L expression in the dentate gyrus. Mtss1L belongs to the BAR (Bin, Amphiphysin and Rvs, I-BAR) protein family, a class of proteins that function by promoting curvature in membranes. BAR domain proteins such as amphyphysin promote inward curvatures including invaginations that are involved in endocytosis or synaptic vesicles at presynaptic nerve terminals (Dawson et al., 2006). In contrast, I-BAR proteins promote outward structures typically seen in membrane protrusions. Thus, we hypothesized that Mtss1L expression-mediated exercise-dependent formation or rearrangement of synapses in postsynaptic dendrites.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic representation of the experimental paradigm used for the Mtss1L reporter mice. KOMP Mtss1l\u00a0+/-\u00a0were either housed in their homecage or exposed to 2 hr of voluntary exercise. Brain sections were processed for LacZ immunohistochemistry at several time points. (B) Pink lines outline the granular cell layer of the dentate gyrus based on DAPI staining and blue square identifies the area magnified at right. LacZ was detected only in dentate granule cells of mice at 3 days post-exercise (bottom, right), whereas no expression was observed in homecage littermates (bottom, left). Scale bars: 250 \u00b5m, 12 \u00b5m. (C) LacZ expression in granule cells peaked at 3 days post-exercise and was not detectable at 5 or 7 days post-exercise (LacZ+\u00a0cells/mm3\u00a02 days post-exercise: 1235\u00a0\u00b1\u00a0345, n\u00a0=\u00a03; 3 days post-exercise: 4573\u00a0\u00b1\u00a0767,n\u00a0=\u00a03, one-way ANOVA p<0.0001).\n\nAs proof of principle, we first examined the localization of endogenous Mtss1L in hippocampal neurons in vitro following exposure to brain-derived neurotrophic factor (BDNF), which is upregulated by exercise and involved in activity-dependent synaptic plasticity (Vaynman et al., 2004; Wrann et al., 2013). Mtss1L immunoreactivity was detectable only after BDNF treatment\u00a0(Figure 5A), consistent with the activity-dependent expression pattern we observed in vivo.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig5-v2.jpg)\n\n**Figure 5.:** (A) Primary hippocampal neurons were cultured with or without BDNF from DIV 7\u201314 to examine activity-dependence of Mtss1L expression. Representative images of hippocampal neurons co-stained with anti-Mtss1L (red) and the somatodendritic marker anti-MAP2 (green) showed robust Mtss1L immunoreactivity in BDNF-treated cells (middle), but not in the vehicle-treated controls (left). Scale bar: 20 \u00b5m. High magnification image of a single dendrite in a BDNF-treated neuron showed localization of Mtss1L (red) in dendritic shaft and spines (right, arrowheads, scale bar: 1.5 \u00b5m). (B) Representative images of cultured hippocampal neurons transfected with mCherry or Mtss1L-mCherry and stained with anti-Mtss1L (green). Scale bar: 12 \u00b5m. Ectopic expression of Mtss1L markedly increased the number of dendritic protrusions (mCherry: 0.9\u00a0\u00b1\u00a00.09, Mtss1L-mCherry: 1.3\u00a0\u00b1\u00a00.07, unpaired t-test, p=0.004, n\u00a0=\u00a03). (C) Higher magnification images of dendritic segments from hippocampal neurons transfected with mCherry (left) or Mtss1L-mCherry (middle) shows the increased number of protrusions. Scale bar: 3 \u00b5m. Merged image at right of PSD-95.FingR-GFP and Mtss1L-mCherry in co-transfected neurons demonstrates that the protrusions contained postsynaptic proteins. Scale bar: 0.5 \u00b5m. (D) DNA solution was injected into the lateral ventricle of P0 pups followed by gene delivery by electroporation. Representative dendritic segments of dentate granule cells expressing control plasmid mCherry (top) or mCherry-Mtss1L (bottom) 21 days post-electroporation. Scale bar: 3 \u00b5m. Mtss1L-mCherry expressing cells show increased dendritic protrusions in vivo (mCherry, 0.9\u00a0\u00b1\u00a00.03, n\u00a0=\u00a03, Mtss1L-mCherry, 1.3\u00a0\u00b1\u00a00.07, n\u00a0=\u00a03, unpaired t-test, p=0.004).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Mtss1L overexpression significantly increased the density of both thin and mushroom dendritic spines, whereas there was no difference in the density of stubby spines (n\u00a0=\u00a03, unpaired t-test, p<0.05).\n\nMtss1L colocalized with the somatodendritic marker MAP2 along dendrites and in dendritic spines (Figure 5A). To determine whether Mtss1L could induce spine-like protrusions, we compared spine density in cultured hippocampal neurons transfected with mCherry or mCherry-Mtss1L. At DIV 14, Mtss1L overexpression markedly increased spine-like protrusions (Figure 5B) including filopodia and mushroom spine subtypes (Figure 5\u2014figure supplement 1). The somatodendritic pattern of overexpressed mCherry-Mtss1L overlapped the endogenous Mtss1L expression (Figure 5B, yellow). mCherry-Mtss1L-expressing dendritic spines also were labeled with co-transfected PSD-95-FingR-GFP, (Fibronectin Intrabody generated with mRNA display) that binds to endogenous PSD-95 (Gross et al., 2013). PSD-95 intrabody labeling of excitatory synapses in living neurons indicated that the protrusions induced by Mtss1L also contain postsynaptic proteins (Figure 5C). In vivo, overexpression of mCherry- Mtss1lL by DNA electroporation at P0 increased spine density of mature dentate granule cells at P21 (Figure 5D). These results indicate that Mtss1L is expressed in dendrites and can induce spine-like protrusions, consistent with a putative role in synaptic plasticity.\n\nTo determine whether Mtss1L was responsible for the increase in synapses in exercise-TRAPed cells, we used a lentivirus expressing shRNAs targeting Mtss1L. Validating the efficacy of the shRNAs, shMtss1L reduced mCherry-Mtss1L mRNA and protein expression in HEK293T cells and in primary hippocampal neurons treated with BDNF\u00a0(Figure 6\u2014figure supplement 1). To knockdown Mtss1L in vivo (Figure 6A), a combination of two lentiviral shMtss1L-GFP constructs or a shscramble-GFP were injected into the dentate gyrus of Fos-TRAP mice. Three weeks post-viral injection, we assessed spine density and excitatory synaptic function in TdT+ (exercise-TRAPed) granule cells that also co-expressed GFP as a marker for shRNA expression. At 3 days post-exercise, knockdown of Mtss1L occluded the exercise-induced increase in dendritic spines in the OML (Figure 6B middle panel top, and right panel). The shscramble-GFP, injected into the contralateral dentate gyrus of the same mice, had no effect (Figure 6B right panel). Viral knockdown of Mtss1L in exercise-TRAPed cells also prevented the increase in evoked EPSCs in simultaneous paired recordings from TdT- and TdT+/GFP+ granule cells (Figure 6C\u2013D). The amplitude of EPSCs following viral knockdown in exercise-TRAPed cells was the same as neighboring cells that were not activated by exercise (Figure 6D, right panel). Intrinsic membrane properties were not affected by Mtss1L knockdown (Supplementary file 1). Figure 6E includes the results from Figure 2 (\u2018exercise-TRAPed OML\u2019 (red) and \u2018exercise-TRAPED MML\u2019 (black), compared to the effects of Mtss1L shRNA (yellow), demonstrating that knockdown of Mtss1L was necessary to explain the exercise-induced increase in excitatory synapses. Importantly, evoked EPSCs in granule cells that only expressed GFP\u00a0+shRNA were unaffected, demonstrating that the effect of Mtss1L was dependent on activity-dependent expression (Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig6-v2.jpg)\n\n**Figure 6.:** (A) Effects of Mtss1L knockdown on the spine density of exercise-TRAPed cells were assessed by stereotaxically injecting a control shScramble-GFP lentivirus into the left hemisphere and a shMtss1L-GFP lentivirus in the right hemisphere of Fos-TRAP mice. After 21 days, dentate granule cells were exercise-TRAPed and analyzed 3 days later as shown in the schematic. (B) The left panel shows representative OML dendritic segments of exercise-TRAPed cells (red), exercise-TRAPed cells co-expressing shRNA (orange) next to several dendrites expressing only shRNA (green). The middle panel shows the dendritic field isolated in the red channel to allow comparison of dendritic spines in exercise-TRAPed cells at 3 days post exercise with (top, middle panel) and without (bottom, middle panel) co-expression of the Mtss1L shRNA. Mtss1L shRNA, but not shScramble, blocked the exercise\u2013induced increase in dendritic spines in exercise-TRAPed cells. Summary graph at right shows dendritic spine density in the dentate OML for each condition (Homecage TRAPed: 0.8\u00a0\u00b1\u00a00.1, n\u00a0=\u00a04, Exercise TRAPed: 1.2\u00a0\u00b1\u00a00.2, n\u00a0=\u00a05, Exercise TRAPed/shScramble: 1.17\u00a0\u00b1\u00a00.1, n\u00a0=\u00a04, Exercise-TRAPed/shMtss1L: 0.87\u00a0\u00b1\u00a00.06, n\u00a0=\u00a05, one-way ANOVA, multiple comparisons Dunnett\u2019s test, p<0.01). (C) Schematic of simultaneous whole-cell recordings from control (black) and exercise-TRAPed cells co-expressing shRNA-Mtss1L (orange) to assess functional synaptic activity. Lateral perforant path axons were stimulated in the OML. (D) Superimposed EPSCs from a representative control cell (black) and a simultaneously recorded exercise-TRAPed cell (red) showed a large increase in amplitude in the exercise-TRAPed cells, as quantified in Figure 1E. In contrast, superimposed EPSCs from a control cell (black, 46.5\u00a0\u00b1\u00a04.2 pA) and an exercise-TRAPed cell co-expressing shMtss1L (orange, \u221259.6\u00a0\u00b1\u00a013.5 pA) showed no increase in amplitude (p=0.42, paired t-test, seven-cell pairs from five mice). Traces are normalized and scaled relative to control cells (black) for presentation. (E) Summary plot across experimental conditions. The exercise-TRAPed increase in EPSC amplitude in the OML was blocked by Mtss1L shRNA expression in exercise-TRAPed cells. (Percent increase in EPSC amplitudes: exercise-TRAPed - OML stimulation, 208.2 \u00b1 52.8%, n\u00a0=\u00a013 cells, eight mice; exercise-TRAPed - MML stimulation, - 6.7 \u00b1 10.1%, n\u00a0=\u00a07 cells, four mice; exercise TRAPed\u00a0+shMtss1L - OML stimulation, 38.4 \u00b1\u00a032.1%, n\u00a0=\u00a07 cells, five mice; shMtss1L only - OML stimulation, 7.8 \u00b1 8.0%, n\u00a0=\u00a06 cells, three mice, p=0.002, one-way ANOVA; exercise-TRAPed shMtss1L, p=0.025; shMtss1L only, p=0.011; exercise-TRAPed MML, p=0.004; Dunnett\u2019s test).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) shRNA knockdown efficiency was first screened using HEK293T cells overexpressing Mtss1L after transduction with lentiviral construct FUGW-mcherry-T2A-Mtss1L. Knockdown efficiency of the overexpression construct was confirmed by fluorescence microscopy Scale bar: 200 \u03bcm. (B) Primary hippocampal cultures were transduced with 10^5 particles of one or both short hairpin shRNAs against Mtss1L (designated L1 and L2) or shMtss1Lscramble lentivirus, and then treated for 7 d.i.v. with media supplemented by BDNF (25 ng/ml). The shScramble virus was ineffective, whereas the combination of the two short hairpins was the most effective. Mtss1L shRNA knockdown efficiency was analyzed by RT-qPCR for Mtss1L expression, using 18S as the housekeeping/control gene (n\u00a0=\u00a03 biological replicates, one way ANOVA with Dunnett\u2019s multiple comparison, p<0.001).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45920/elife-45920-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Schematic of paired dentate granule cell recordings. EPSCs were evoked with a bipolar stimulation electrode in the OML. (B) Representative EPSCs from a paired control granule cell (GFP-, black trace) and an adjacent Mtss1L shRNA only (GFP+/tdT-) granule cell show similar amplitudes. Stimulation artifacts were blanked. (C) EPSC amplitudes in paired recordings were unaffected by shRNA-Mtss1L expression in granule cells that were not exercise-TRAPed, indicating that knockdown of Mtss1L had no effect unless the granule cell was exercise-activated (paired t-test, p=0.4805).\n\n## Discussion\n\nOur experiments were designed to test the cellular and molecular response to acute exercise with an emphasis on time periods during which synapses might form or reorganize. This approach differs from studies of sustained or chronic exercise that likely involve systemic as well as neural mechanisms (Vivar et al., 2013; Voss et al., 2013; van Praag and Christie, 2015). Such studies have shown effects of exercise on many aspects of hippocampal function, including neurogenesis, synaptic plasticity, structural changes at synapses and dendritic spines as well as behavioral effects on learning and memory (Mandolesi et al., 2018; Saraulli et al., 2017). Our goal was to examine the transcriptional response in the days following acute exercise, which led to the identification of a novel effector of structural plasticity, Mtss1L.\n\nAlthough the Fos-TRAP method is limited by the time required for reporter expression\u00a0(ca.\u00a01 day post-exercise), the immediate early gene Egr1 was upregulated (Figure 3C), indicating that our protocol detected activity-dependent gene expression in mature granule cells. Although introduction of the running wheel for 2 hr itself could act as a novel object, there was a small increase in Fos-TRAPed cells when the wheel was fixed to prevent running. These results indicate that exercise is a particularly strong stimulus for activation of granule cells, but as expected other stimuli can also activate dentate granule cells (Ryan et al., 2015). Adult-generated granule cells in the subgranular zone were not activated by 2 hr of exercise (data not shown). Although it is well known that chronic exercise increases adult neurogenesis (van Praag, 2008), progenitors and newborn neurons do not receive direct excitatory perforant path input for several weeks (Overstreet et al., 2004), perhaps explaining their lack of activation in our experiments.\n\nOur results provide the first evidence for activity-dependent expression of an I-BAR protein as well as a role in experience-dependent remodeling of synapses. However, I-BAR proteins including MIM (Mtss1L) and IRSp53 can affect constitutive dendritic spine formation (Saarikangas et al., 2015; Choi et al., 2005). For example, MIM/Mtss1, is involved in cerebellar synapse formation via PIP2-dependent membrane curvature and subsequent Arp2/3-mediated action polymerization (Saarikangas et al., 2015). Expression of Mtss1L in neurons has gone largely undetected, likely a result of the previously unrecognized activity-dependence. However, Mtss1L has been detected in radial glial cells during development and implicated in glial membrane protrusions and end-feet (Saarikangas et al., 2008). I-BAR protein function at synapses is thought to be mediated by several interaction domains including the N-terminal I-BAR domain and a C-terminal actin-monomer-binding WH2 domain (Zhao et al., 2011), and may depend on slice variants. For example, the effects of MIM in cerebellar neurons is splice-variant specific (Sistig et al., 2017). Mtss1L also has two known splice variants, both of which were targeted in our overexpression and knockdown experiments. It will be interesting to investigate how protein-protein interactions and splice variants of Mtss1L contribute to their role in synaptic remodeling.\n\nAt a circuit level, the laminar-specific increase in synaptic function suggests that acute exercise had a network-specific effect. Entorhinal inputs to the outer molecular layer, the distal dendrites of mature granule cells, have been previously associated with contextual information and particularly the \u2018how\u2019 and \u2018when\u2019 aspects of encoding memories (Tsao et al., 2018). How might these results relate to the beneficial effects of exercise? One possibility consistent with our data is that exercise acts as a preconditioning signal that primes exercise-activated neurons for contextual information incoming during the several days following exercise. This represents a broader time window than is usually associated with short-term plasticity. For example, human studies give support for the idea that exercise within 4 hr of a learning task improved memory performance (van Dongen et al., 2016). It will be interesting to examine if exercise enhances the pattern of granule cell responses to spatial or context-specific tasks. Our identification of Mtss1L as an activity-dependent I-BAR domain protein makes it ideally suited to act as an early mediator of structural plasticity following neural activity.\n\n## Materials and methods\n\n### Mice\n\nAll procedures were performed according to the National Institutes of Health\u00a0Guidelines for the Care and Use of Laboratory Animals and were in compliance with approved IACUC protocols at Oregon Health and Science University. Both female and male mice from a C57BL6/J background were used for experiments, aged 6\u20138 weeks at the time of surgery. TRAP mice were heterozygous for the cFoscreERT2 allele (Guenthner et al., 2013); some were also heterozygous for the B6;129S6-Gt(ROSA)26Sortm14(CAG-tdTomato)/Hze/J(Ai14;JAX#007908) allele for experiments involving tdTomato labeling. Cryopreserved Mtss1ltm1a(KOMP)Wtsi sperm was obtained from the Knockout Mouse Project (KOMP) Repository (The Knockout Mouse Project, Mouse Biology Program, University of California, Davis, CA) under the identifier CSD79567. The Mtss1ltm1a(KOMP)Wtsi mouse line was re-derived by in vitro fertilization at the OHSU transgenic core. Genotype was confirmed by PCR. Mtss1L (recently renamed to Mtss2, MTSS I-BAR domain containing 2) deletion in Mtss1L-/- KO KOMP mice was confirmed by RT-qPCR and immunohistochemistry in the cerebellum. Cerebellar Purkinje cells, perhaps because of their high basal firing rate, are the only cells in the brain with detectable basal Mtss1L expression. Mtss1L mRNA and protein levels were undetectable in the cerebellum of Mtss1L-/- KO KOMP mice. The KOMP allele contains a Neo cassette driven by a mouse phosphoglycerate kinase promoter (PGK), which is bidirectional and may interefere with gene expression. Thus, for the generation of the Mtss1L+/- reporter mice, the Neo cassette was removed in a tissue-specific manner by stereotaxically injecting an AAV nuGFP-Cre PGK into the dentate gyrus of Mtss1L-/- KO KOMP mice 3 weeks prior to experiments. All mice were housed in plastic cages with disposable bedding on a standard light cycle with food and water available ad libitum.\n\n### Stereotaxic injections\n\nMice were anesthetized using an isoflurane delivery system\u00a0(Veterinary Anesthesia Systems Co.) by spontaneous respiration, and placed in a Kopf stereotaxic frame. Skin was cleaned with antiseptic and topical lidocaine was applied before an incision was made. The dentate gyrus was targeted by placing Burr holes at x:\u00b11.1 mm, y: \u22121.9 mm from bregma. Using a 10 \u00b5l Hamilton syringe with a 30 ga needle and the Quintessential Stereotaxic Injector (Stoelting), 2 \u00b5l mixed viral stock (1 \u00b5l of each virus) was delivered at 0.25 \u00b5l/min at z-depths of 2.5 and 2.3 mm. The syringe was left in place for 1 min after each injection before slow withdrawal. The skin above the injection site was closed using veterinary glue. Animals received post-operative analgesia with topical lidocaine and flavored acetaminophen in the drinking water.\n\n### TRAP induction\n\nTamoxifen was dissolved at 20 mg/ml in corn oil by sonication at 37\u00b0C for 5 min. The dissolved tamoxifen was then stored in aliquots at \u201320\u00b0C for up to several weeks or used immediately. The dissolved solution was injected intraperitoneally at 150 mg/kg. For exercise-TRAP, tamoxifen was administered 23 hr before exposure to the running wheel. Experiments were begun 48 hr after tamoxifen administration to allow for reporter expression.\n\n### Voluntary exercise and fixed wheel protocol\n\nBoth homecage and exercise groups were housed together until 7 days before the experiment, then they were singled housed in an oversized (rat) sedentary cages (43\u00a0\u00d7\u00a021.5 cm2) to allow acclimation in the novel environment before tamoxifen administration. At 23 hr post-tamoxifen injection, a running wheel (free or locked) was introduced in the cage of animals in the exercise group and mice had free access to running or exploring for 2 hr at the beginning of the dark period, after which the running wheel was removed from the cage. Total distance (km) was measured using an odometer. All mouse groups were handled for 5 days before tamoxifen administration.\n\n### Immunohistochemistry\n\nMice were terminally anesthetized, transcardially perfused with saline and 20 ml of 4% paraformaldehyde (PFA), and brains were post-fixed overnight.\u00a0Coronal sections (100 \u03bcm) of the hippocampus were collected and permeabilized in 0.4%\u00a0Triton in PBS (PBST) for 30 min. Sections were then blocked for 30 min with 5% horse serum in PBST and incubated overnight (4\u00b0C) with primary antibody in 5% horse serum/PBST. After extensive washing, sections were incubated with the appropriate secondary antibody conjugated with Alexa 488, 568 or 647 (Molecular Probes), for 2hrs at room temperature. They were then washed in PBST (2 \u00d7 10 min) and mounted with Dapi Fluoromount-G (SouthernBiotech). The primary antibodies used were: anti-c- fos (1:500, Santa-Cruz), anti-tdTomato (1:500, Clontech), anti-MAP2 (1:500, Sigma), anti-ABBA/Mtss1L (1:500, Millipore), anti-VGLUT2 (1:500, Synaptic Systems) and anti-beta-galactosidase (1:20, Developmental Studies Hybridoma Bank). All antibodies have been well characterized in prior studies in our laboratory, and staining was not observed when the primary antibody was omitted.\n\n### Imaging and morphological analysis\n\nFor imaging we used an LSM 7 MP laser scanning microscope (Carl Zeiss MicroImaging; Thornwood, NY). All cell and dendritic spine counting and dendritic arbor tracing were done manually with ImageJ and Imaris (National Institutes of Health; Bethesda, MD). For quantification of immunopositive cells, six hippocampal slices at set intervals from dorsal to ventral were stained per animal; 3\u20136 animals were analyzed per group. A 49 \u03bcm z-stack (consisting of seven optical sections of 7 \u03bcm thickness) was obtained from every slice. Positive cells were counted per field from every z-stack, averaged per mouse and the results were pooled to generate group mean values. For analysis of spine density of dentate granule cells, sections were imaged with a 63x objective with 2.5x optical zoom. The span of z-stack was tailored to the thickness of a single segment of dendrite with 0.1 \u00b5m distance between planes.\u00a0Dendritic spines were imaged and analyzed in the middle (MML) and outer molecular\u00a0(OML) layers of the dentate gyrus. The MML and OML were distinguished based on the pattern of VGluT2 immunofluorescence, which begins at the border between the inner molecular layer and middle molecular layer. MML dendritic segments were therefore imaged at the beginning of the VGluT2 staining nearest the granule cell body layer, whereas OML dendritic segments were imaged at the distal tip of the molecular layer.\u00a0The same microscope settings (laser intensity and gain) were used for each experimental group analyzed. Slides were coded and imaged by an investigator blinded to experimental condition.\n\n### Laser Capture Microdissection (LCM)\n\nTo obtain nuclei of exercise-TRAPed cells, fresh frozen coronal brain sections (12 \u00b5m) were collected by cryostat sectioning on polyethylene napthalate membrane slides. Sections were fixed for 1 min in 75% ethanol, followed by a final wash in 100% ethanol for 1 min. Pools of 150 RFP+ and RFP- individual cells were laser captured from the granular cell layer of the dentate gyrus of each mouse using a Leica Microsystem LMD system under a HC PL FL L 63/0.60 XT objective and collected in lysis buffer (50 \u03bcl RLT buffer, Qiagen). Total RNA from LCM samples was isolated separately from each animal.\n\n### RNA extraction and RNAseq library preparation\n\nRNA was extracted from laser-captured pooled nuclei using RNeasy mini-elute column with a modified protocol. Briefly, cells were picked from laser capture microscopy onto caps of 0.5 ml Eppendorf tubes, 50 \u03bcl RLT buffer was added immediately, and placed on ice. After spinning down the samples, 300 \u03bcl RLT was added to each sample, mixed well and vortexed for 30 s. After a brief spin, 2 ng tRNA was added as carrier and 625 \u00b5l 100% ETOH was added into each sample and mixed well. After a quick spin, samples were loaded onto RNeasy mini-elute columns, washed, dried and eluted in 10 \u03bcl RNAse-free water. 8 \u03bcl RNA was used for reverse transcription using Superscribe reverse transcriptase 2 ul, DTT 0.1M 0.5 ul, 5x RT buffer 4 \u03bcl at 42\u00b0C for 1.5 hr then heat inactivated at 75\u00b0C for 20 min (self-developed protocol for RNA extraction, superscribe reverse transcriptase was from Clontech, protocol adopted from manufacturer\u2019s protocol for smarter single-cell RNAseq v4). TSO (AAGCAGTGGTATCAACGCAGAGTACrG\u00a0+GrG) was ordered from Exicon. After RNA, PCR was carried out using Seqamp DNA polymerase and amplification PCR primer (AAGCAGTGGTATCAACGCAGAGTAC). Half of amplified cDNA was used for qPCR and the other half made into sequencing libraries using Nextera XT DNA library prep kit (Illumina) Quality of cDNA libraries were checked on Bioanalyzer using DNA high sensitivity Chip. 2 nM library dilutions were mixed and denatured, 1.8 pmol mixed library was sequenced on Nextseq500 (Illumina). Libraries were sequenced to a depth of 14\u201330 million reads. Alignment rate of total reads was above 90% across all samples. Gene level coverage at 1x was\u00a0~10000 genes and even among all samples with no 3\u2019 or 5\u2019 end bias.\n\n### RNAseq analysis\n\nAfter sequencing, sequencing quality was checked by fastqc, raw reads were aligned with STAR 2.5b on Illumina Basespace. Raw reads were then plotted as a violin plot using the R ggplot2 package. Genes with reads lower than 64 in all samples were filtered away and dataframe was replotted to check data distribution. Individual samples that differed significantly in their count distribution due to technical issues were discarded from further analysis. Data dispersion and differential expression analysis was done on filtered reads using DEseq2 unpaired analysis. FDR and <0.15 fold enrichment\u00a0and > 1.5 fold were considered as enriched genes and were plotted in MA-plot using R script. Genes enriched in TRAPed cells at 3 days post exercise were further analyzed by PantherGO for GO terms enrichment (release 20160321, GO Ontology database released\u00a02016-05-20); protein-protein reactions analyzed by Cytoscape application Biogenet.\n\n### Real-time qPCR\n\nTo quantify gene expression levels, amplified cDNA was mixed with the iQ5 SYBR Green PCR master mix (Biorad) and 5 pmol of both forward and reverse primers were used. For qPCR of our miRNA-based shRNA, miRNA was converted to cDNA using the QuantiMiR reverse transcription kit (System Biosciences, Mountain View, CA). Briefly, RNA was polyadenylated with ATP by poly(A) polymerase at 37\u00b0C for 1 hr and reverse transcribed using 0.5 \u00b5g of poly(T) adapter primer. Each miRNA was detected by the mature DNA sequence as the forward primer and a 3\u2032 universal reverse primer provided in the QuantiMir RT kit. Human small nuclear U6 RNA was amplified as an internal control. qPCR was performed using Power SYBR Green PCR Master Mix (Applied Biosystems). All qPCR performed using SYBR Green was conducted at 50\u00b0C for 2 min, 95\u00b0C for 10 min, and then 40 cycles of 95\u00b0C for\u00a015 s and 60\u00b0C for 1 min. The specificity of the reaction was verified by melt curve analysis. Relative expression was calculated using mouse Ubc or 18S as internal controls as specified in the Figure legends. A table of primers is included as Supplementary file 4.\n\n### Primary neuronal hippocampal cultures and in vitro transfections\n\nHippocampi from E18-19 embryos were isolated as described previously (Seibenhener and Wooten, 2012) and placed on ice. The tissue was chopped into 1 mm cubes with fine scissors and transferred to a 15-ml tube using a\u00a0Pasteur pipette.\u00a0This tube was placed in a water bath at 37\u00b0C with the papain solution, separately, and both were allowed to equilibrate at this temperature for 5 min. The tissue was then carefully transferred into the papain solution and placed on an orbital shaker at\u00a0100 rpm at 37\u00b0C for 15 min. The tissue was then gently transferred from the papain solution into a 15-ml tube containing 2 ml HBSS. This step was repeated 2X to remove any residual papain. The tissue was then triturated using fire polished Pasteur pipettes. Following trituration and centrifugation, the single-cell suspension was seeded on poly- D-Lysine coated coverslips in 24-well plates at 104 cells/well in Neurobasal Plating\u00a0Media with B27 Supplement [1 ml/50 ml], 0.5 mM glutamine solution, penicillin(10,000 units/ml)/streptomycin (10,000 \u00b5g/ml) [250 \u00b5l/50 ml], 1 mM HEPES (MW238.3 g/mol), 10% Heat-Inactivated horse serum. HI-horse serum was removed by half- changes of the plating media beginning at 24 hr.\n\nFor transfection of cultured neurons, DNA-Lipofectamine 2000 complexes were prepared as follows: 1 \u00b5g of DNA was diluted in 50 \u00b5l of Neurobasal medium and 2 \u00b5l of Lipofectamine 2000 was diluted in another 50 \u00b5l of Neurobasal medium. Five min after dilution of Lipofectamine 2000, the diluted DNA was combined with the diluted lipid. The solutions were gently mixed and then left for 20 min at room temperature to allow the DNA\u2013Lipofectamine 2000 lipoplexes to form. 100 \u00b5l of transfection complex was added to each well containing cells and medium, and the cells were incubated at 37\u00b0C in a humidified incubator with 5% CO2 for 1 hr after which transfection media was changed. Transfection efficiency was assayed 48 hr post-transfection by fluorescence microscopy.\n\n### In vivo electroporation into postnatal granule cells of the dentate gyrus\n\nPostnatal day 0 (P0) electroporation of the dentate gyrus was performed according to a previously published method (Ito et al., 2014). In brief, mice were anesthetized by hypothermia, and then a sharp glass electrode with a beveled tip containing plasmid (1 \u00b5g/\u00b5l in TE mixed with 0.05% Fast Green) was inserted through skin and skull. One \u00b5l of DNA solution was injected into the lateral ventricle (LV). Correct injection was confirmed by trans-cranial visualization of Fast Green in the LV in the dissecting microscope. Successfully\u00a0injected pups were immediately electroporated with tweezer electrodes (5 mm platinum) positioned onto the brains as described by\u00a0Ito et al. (2014). Five pulses of 100 V and of 50\u00a0ms duration were given at 950 ms intervals. Electroporated animals were placed in a recovery chamber at 37\u00b0C for several minutes and then returned to their mother.\n\n### Plasmid construction\n\nPLVX-cherry-C1 plasmid was from Clontech and Mtss1L coding region was cloned into the C-terminus of mCherry between BsrG1 and SmaI sites to generate fusion construct of PLVX-cherryC1-Mtss1L (Mtss1L coding region sequence\u00a0Accession number B), FUCW-T2A-Mtss1L was constructed using NEB HiFi\u00a0DNA builder assembly kit. shABBA constructs were either obtained from Dharmacon or designed by Biosettia and subcloned into PLV-Ubc-GFP-mU6-shRNA using NEB HIFI DNA assembly mix. The folllowing shRNA sequences were used: Mtss1L1:AAAAGGCCGTTTCTGCACCTTTATTGGATCCAATAAAGGTGCAGAAACGGCC, Mtss1L2 (miRNA-based shRNA): TCTCTACTAGGCTGTGCCT,\u00a0Scramble:AAAAGCTACACTATCGAGCAATTTTGGATCCAAAATTGCTCGATAGTGTAGC.\n\n### Slice physiology\n\nAcute brain slices were prepared as previously described (Hendricks et al., 2017). In summary, 8-week-old male and female mice were anesthetized with 4% isoflurane and injections of 1.2% avertin (Sigma-Aldrich). Mice were perfused with 10 mL of ice-cold cold N-methyl-D-glucamine (NMDG)-based cutting solution, containing the following (in mM): 93 NMDG, 30 NaHCO3, 24 glucose, 20 HEPES, 5 Na-ascorbate, 5 N-acetyl cysteine, 3 Na-pyruvate, 2.5 KCl, two thiourea, 1.2 NaH2PO4, 10 MgSO4, and 0.5 CaCl2.\u00a0Transverse 300-\u00b5m-thick hippocampal sections were cut in ice-cold NMDG solution on a\u00a0Leica VT1200S vibratome. Slices recovered in warm (34\u00b0C) NMDG solution for 15\u00a0min. Slices were transferred to room temperature in standard ACSF and allowed to recover for at least 1 hr prior to recording. Dentate granule cell whole-cell recordings were made with 3\u20135 M\u03a9 borosilicate glass pipets filled with a Cs+-based internal solution containing (in mM): 113 Cs-gluconate, 17.5 CsCl, 10 HEPES, 10 EGTA, 8 NaCl, 2 Mg-ATP, 0.3 Na-GTP, 0.05 Alexa Fluor 488, pH adjusted to 7.3 with CsOH. Osmolarity was adjusted to 295 mOsm and QX-314-Cl (5 mM; Tocris Bioscience) was included to block unclamped action potentials. The junction potential was 8 mV and left uncorrected. Granule cells were visually identified on an Olympus BX-51WI microscope using infrared differential interference contrast imaging. To ensure relatively equal stimulation intensity between cells during paired simultaneous tdT\u00a0+and tdT- recordings, neighboring tdT\u00a0+and tdT- (control) cells were selected. Cells were only considered \u2018neighbors\u2019 if they were within roughly\u00a0\u00b12 cell bodies distance apart in the x and y planes, and roughly\u00a0\u00b11 cell body distance in the z plane. Granule cells were filled with AlexaFluor 488 to ensure dendritic overlap. Bi-polar stimulating electrodes (FHC) were placed in distally in the OML and medially in the MML, to ensure OML and MML-specific stimulation of lateral and medial perforant path, respectively (Woods et al., 2018). Electrical stimulation was delivered with a constant current stimulator (Digitimer, Inc); intensity was tittered to produce 50\u2013100 pA EPSCs in tdT- cells. Proximity to the stimulating electrode and recording configuration was randomly assigned. Cells were voltage-clamped to \u221270 mV and signals were amplified using two\u00a0AxoClamp 200B amplifiers (Molecular Devices), Bessel filtered at 5 kHz, and captured at 10 kHz with an analog-to-digital converter (National Instruments). Data were collected and analyzed in Igor Pro eight using the Igor NIDAQ Tools MX script package (Wavemetrics). Averages were the mean of 15 consecutive sweeps.\n\n### Cell lines and culture\n\nHEK293T cells were purchased from CH3 Biosystems (#920001) and maintained in DMEM media supplemented with 10% fetal bovine serum, non-essential amino acid and penicillin-streptomycin using standard procedures.\n\nThe identity of the HEK 293 T cell line was provided and authenticated by CH3 Biosystems (#920001), where the line was purchased from. Mycoplasma screening was negative.\n\n### Statistical analysis\n\nSample sizes were based on pilot experiments with an effect size of 20% and a power of 0.8. Littermates were randomly assigned to control or exercise groups. Criteria were established in advance based on pilot studies for issues including data inclusion, outliers, and selection of endpoints. Criteria for excluding animals from analysis are listed in the methods. Mean\u00a0\u00b1\u00a0SD was used to report statistics for all apart from electrophysiology experiments where Mean\u00a0\u00b1\u00a0SE was used. The choice of statistical test, test for normality, definition of N, and multiple hypothesis correction where appropriate are described in the figure legends. Unless otherwise stated, all statistical tests were two-sided. Significance was defined as p<0.05. All statistical analyses were performed in Prism or Igor Pro 8.\n",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "148b68ba-74b2-41b5-a586-0c92a379cbaa",
+      "submission_id": "0236e0dc-eec8-49f0-860c-aa70aae39d98",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Huguenard, Stanford University School of Medicine United States\n\nReviewers:\n- Paul F Worley, Johns Hopkins University School of Medicine United States\n\n## Review text\n\nDOI: [10.7554/eLife.45920.025](https://doi.org/10.7554/eLife.45920.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: the authors were asked to provide a plan for revisions before the editors issued a final decision. What follows is the editors\u2019 letter requesting such plan.]\n\nThank you for sending your article entitled \"Exercise-induced enhancement of synaptic function triggered by the inverse BAR protein, Mtss1L\" for peer review at eLife. Your article is being evaluated by three peer reviewers, and the evaluation is being overseen by a Reviewing Editor and Ronald Calabrese as the Senior Editor.\n\nGiven the list of essential revisions, including new experiments, the editors and reviewers invite you to respond with an action plan and timetable for the completion of the additional work. We plan to share your responses with the reviewers and then issue a binding recommendation.\n\nSummary:\n\nThe authors present work where Mtss1L is identified as an exercise induced hippocampal gene, then show modulation of Mtss1L levels changes exercise induced spine density. Overall there are few papers on I-BAR genes in the nervous system and even fewer on Mtss1L making this work potentially novel.\n\nThe authors address mechanisms contributing to exercise-induced synaptic plasticity in the hippocampus using Fos-TRAP mice to identify exercise-activated dentate granule cells. They show that brief bouts of running result in changes in spine density and synaptic strength, and they perform RNASeq to identify potential molecular mediators. shRNA knock-down of one highly-upregulated gene, Mtss1L, was sufficient to block the exercise-induced change in spines and EPSCs. Thus, they propose Mtss1L is a novel effector of activity-dependent synapse function. Overall the experiments, analysis and interpretations are convincing and the conclusions are interesting.\n\nEssential revisions:\n\n- The authors don't directly show that Mtss1L expression is activity dependent. Their in vitro data suggest it is BDNF dependent, but do not show changes in firing activity cause Mtss1L expression. It is unclear how closely the synaptic changes are associated with exercise rather than then Fos-expressing status of GCs (which could occur under various conditions and in the homecage). Since the authors strongly focus on exercise and subsequent cognitive benefits in the introduction, it is important to confirm that these are exercise-mediated effects.\n\n- Figure 2/Figure 6. All of the functional data involves comparison of TRAPed and non-TRAPed (control) GCs in the exercise condition. To confirm that the effects result from exercise, the author should address functional synaptic differences in TRAPed and control GCs in the non-exercise condition. This would address the possibility that TRAPed cells exhibit increased OML synaptic function in the absence of exercise.\n\n- Figure 4 addresses the expression of Mtss1L in the DG in response to exercise, but the images are not very helpful. Higher magnification images are needed to illustrate the expression pattern. It is also unclear why the authors used the KOMP approach rather than the antibody shown in Figure 5A. Co-labeling of Mtss1L and Fos-TRAP before and after exercise should be obtained to confirm that it is upregulated only in Fos-TRAPed GCs.\n\n- Results, fifth paragraph: Key reagent validation is necessary. The KOMP Mtss1Ltm1a(KOMP)Wtsi allele is reporter tagged allele with conditional potential. LacZ activity with this allele is not Cre dependent. LacZ activity can be eliminated with Flp expression. Treating with Cre will excise the Neo cassette and exons 7 and 8 leaving LacZ expressed and unaffected. Of concern is the lack of characterization of the allele and the apparently unnecessary manipulations on their animals (nuGFP-Cre injection). Additional controls need to be included that are required of those making or using an allele for the first time. The authors should more clearly explain the motivation for nuGFP-CRE line of experiments, as it is not clear in the text.\n\n- Additionally, several sequencing and array studies suggest Mtss1L expression in neurons is ambiguous, but high in radial glia (Saarikangas et al., 2008), astrocytes (astrocyternaseq.org), oligodendrocyte progenitors (https://web.stanford.edu/group/barres_lab/brain_rnaseq.html, described in Zhang et al., 2014, J. Neurosci.). Additional experiments to better characterize Mtss1L staining would be incredibly helpful in resolving this ambiguity.\n\n- The Mtss1L paralog Mtss1 have multiple splice variants that are biologically important controlling localization in the cell and other functions. Given the similarity one may expect similar for Mtss1L and clearly documenting the spliceform used is essential. Related, Figure 5C and D \u2013 the interpretation of these overexpression experiments will depend strongly on the spliceform of Mtss1L used. Saarikangas et al. (2015) demonstrated the Mtss1 IMD domain alone is sufficient to induce extra spines, which is almost completely identical to Mtss1L. However, Mtss1 and Mtss1L have different overexpression phenotypes, suggesting domains outside the N-terminal IMD region are biologically important. Without explaining what form of Mtss1L is being used it's impossible for readers to determine whether these overexpression phenotypes reflect Mtss1L function, or whether a truncated form is mimicking roles established for Mtss1.\n\n- Figure 6D. The authors show that expressing Mtss1L is sufficient to alter spines in GCs in the absence of exercise, suggesting an important contribution to on-going synaptic plasticity. Thus, it seems counter-intuitive that knockdown of Mtss1L had no effect on EPSCs in the basal condition (Figure 6\u2014figure supplement 2). This should be explained (as it relates to the first point).\n\n[Editors\u2019 note: formal revisions were requested, following approval of the authors\u2019 plan of action.]\n\nThank you for submitting your article \"Exercise-induced enhancement of synaptic function triggered by the inverse BAR protein, Mtss1L\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ronald Calabrese as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Paul F Worley (Reviewer #3).\n\nThe reviewers have discussed the reviews and your revision plan with one another. The revision plan is generally acceptable, but there is one additional experiment, listed under essential revisions, below, that will bolster the specific claims made in the Abstract and Introduction. The Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers were not fully satisfied about the revision response to point 2 relating to the relationship between the authors conclusions about Mtss1L-induced synapse/spine plasticity and exercise.\n\nThere is no doubt that Fos+ cells represent an active population of GCs in the DG, sometimes referred to as \"engram\" cells. The Tonegawa lab has used a similar approach to show that Fos+ GCs have greater evoked EPSCs and spine density compared to Fos- GCs after a 5 min exposure to novel context (see Supplementary Figure 7 of Ryan et al., 2015). The authors should do a similar experiment \u2013 repeat the experiment of 2B in mice that have not undergone exercise \u2013 to test whether exercise is really required for this main outcome measure. The Ryan et al. data suggests that the synaptic function and spine difference between Fos+ and Fos- cells will exist in the absence of exercise (i.e. exercise is not required). The result of this experiment could differentiate whether Mtss1L is simply an activity-dependent gene downstream of Fos or whether it is specifically related to exercise-induced activity as indicated in the Abstract and Introduction. The outcome of this experiment does not change the mechanistic novelty of the role of Mtss1L in activity-dependent synaptic plasticity, but it could affect the conclusions that the authors make about this mechanism in the context of exercise. At the very least, the authors should discuss their results in the context of what has been reported about synapses/spines of Fos+ and Fos- GCs in the absence of exercise, which is very similar to what they are currently ascribing to an effect of exercise.\n\nIt is unclear how closely the synaptic changes are associated with exercise rather than then Fos-expressing status of GCs (which could occur under various conditions and in the homecage). Since the authors strongly focus on exercise and subsequent cognitive benefits in the Introduction, it is important to confirm that these are exercise-mediated effects.\n",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e18f79d3-10b9-49f3-8019-2eb278465ca4",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C1",
+      "claim": "Exercise is a potent enhancer of learning and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercise is a potent enhancer of learning and memory, yet we know little of the underlying mechanisms that likely include alterations in synaptic efficacy in the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established scientific consensus in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "99bda9da-c59f-40fd-bc3f-7432a9e36c91",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C2",
+      "claim": "The underlying mechanisms of exercise-enhanced learning and memory likely include alterations in synaptic efficacy in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercise is a potent enhancer of learning and memory, yet we know little of the underlying mechanisms that likely include alterations in synaptic efficacy in the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about likely mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "5606c8d0-888b-45ea-a68e-372e398d597c",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C3",
+      "claim": "Exercise-activated neurons showed an input-selective increase in dendritic spines at 3 days post-exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercise-activated neurons (Fos-TRAPed) showed an input-selective increase in dendritic spines and excitatory postsynaptic currents at 3 days post-exercise, indicative of exercise-induced structural plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "c1ffb005-74b2-4b18-a08c-498d70885ced",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C4",
+      "claim": "Exercise-activated neurons showed an input-selective increase in excitatory postsynaptic currents at 3 days post-exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercise-activated neurons (Fos-TRAPed) showed an input-selective increase in dendritic spines and excitatory postsynaptic currents at 3 days post-exercise, indicative of exercise-induced structural plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "2938c0d2-5210-43e3-9555-bc9013325378",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C5",
+      "claim": "The increase in dendritic spines and excitatory postsynaptic currents is indicative of exercise-induced structural plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercise-activated neurons (Fos-TRAPed) showed an input-selective increase in dendritic spines and excitatory postsynaptic currents at 3 days post-exercise, indicative of exercise-induced structural plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed data based on established knowledge about structural plasticity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "fccbd695-6404-4596-a5a0-81a3e9f640ba",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C6",
+      "claim": "Mtss1L was the most highly induced transcript in exercise-activated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Laser-capture microdissection and RNASeq of activated neurons revealed that the most highly induced transcript was Mtss1L, a little-studied I-BAR domain-containing gene, which we hypothesized could be involved in membrane curvature and dendritic spine formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNASeq data from the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "11776fc6-f096-4734-acde-0ba216df7973",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C7",
+      "claim": "Mtss1L is a little-studied I-BAR domain-containing gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Laser-capture microdissection and RNASeq of activated neurons revealed that the most highly induced transcript was Mtss1L, a little-studied I-BAR domain-containing gene, which we hypothesized could be involved in membrane curvature and dendritic spine formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of Mtss1L based on existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "27860a23-83b1-4bb1-b800-e32c34840c66",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C8",
+      "claim": "Mtss1L could be involved in membrane curvature and dendritic spine formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Laser-capture microdissection and RNASeq of activated neurons revealed that the most highly induced transcript was Mtss1L, a little-studied I-BAR domain-containing gene, which we hypothesized could be involved in membrane curvature and dendritic spine formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a hypothesis by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "e28c1925-4014-4aa2-929a-f9590c991efa",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C9",
+      "claim": "shRNA-mediated Mtss1L knockdown in vivo prevented the exercise-induced increases in spines.",
+      "claim_type": "EXPLICIT",
+      "source": "shRNA-mediated Mtss1L knockdown in vivo prevented the exercise-induced increases in spines and excitatory postsynaptic currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from knockdown experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "02244542-debf-43a7-b6cd-89b5b41c93bb",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C10",
+      "claim": "shRNA-mediated Mtss1L knockdown in vivo prevented the exercise-induced increases in excitatory postsynaptic currents.",
+      "claim_type": "EXPLICIT",
+      "source": "shRNA-mediated Mtss1L knockdown in vivo prevented the exercise-induced increases in spines and excitatory postsynaptic currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from knockdown experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "86e134e5-1cb9-43f3-bbf7-d77c4d6cc8e1",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C11",
+      "claim": "Mtss1L is a novel effector of activity-dependent rearrangement of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results link short-term effects of exercise to activity-dependent expression of Mtss1L, which we propose as a novel effector of activity-dependent rearrangement of synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "3170174b-cdf0-442f-982e-245dfe4f6540",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C12",
+      "claim": "The beneficial cognitive effects of physical exercise cross the lifespan as well as disease boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "The beneficial cognitive effects of physical exercise cross the lifespan as well as disease boundaries (Mandolesi et al., 2018; Saraulli et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "23e49521-d1f1-464a-adf3-2f689e1658dd",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C13",
+      "claim": "Exercise alters neural activity in local hippocampal circuits, presumably by enhancing learning and memory through short- and long-term changes in synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercise alters neural activity in local hippocampal circuits, presumably by enhancing learning and memory through short- and long-term changes in synaptic plasticity (Vivar et al., 2013; Voss et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research and includes speculative language ('presumably').",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "495eae3b-6dd2-45f5-86d8-cdd18de8ea69",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C14",
+      "claim": "The dentate gyrus is uniquely important in learning and memory, acting as an input stage for encoding contextual and spatial information from multiple brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The dentate gyrus is uniquely important in learning and memory, acting as an input stage for encoding contextual and spatial information from multiple brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the dentate gyrus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "18b27834-647a-45e6-a7a4-b90727b13286",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C15",
+      "claim": "The dentate gyrus has a sparse coding design, with only a few dentate granule cells active at any one time.",
+      "claim_type": "EXPLICIT",
+      "source": "This circuit is well suited to its biological function because of its sparse coding design, with only a few dentate granule cells active at any one time (Jung and McNaughton, 1993; Leutgeb et al., 2007; Severa et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "6bb1606e-306a-4df1-9dfe-de2dbba409f1",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C16",
+      "claim": "Memory improvements are well documented after acute bouts of exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "However, memory improvements are well documented after acute bouts of exercise (Mandolesi et al., 2018; Perini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "d3e28b7a-9a02-4e96-9ff9-29bf9449ebd3",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C17",
+      "claim": "During a two-hour exposure to running wheels, mice ran approximately 3 km.",
+      "claim_type": "EXPLICIT",
+      "source": "During a two-hour exposure to running wheels, mice ran approximately 3 km.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "59f8b966-8baa-41e2-8d9b-e21c5980ebfe",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C18",
+      "claim": "Voluntary exercise (2 hr) increased neuronal activity in the dentate gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "Voluntary exercise (2 hr) increased neuronal activity in the dentate gyrus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Fos immunohistochemistry data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "5170714b-ca55-458c-8ed5-cfb01a71849a",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C19",
+      "claim": "A single bout of exposure to exercise increased c-Fos+ cells in the dentate gyrus by 255% compared to homecage controls.",
+      "claim_type": "EXPLICIT",
+      "source": "(% increase, Homecage: 100 \u00b1 4 n = 6, Exercise: 255 \u00b1 25, n = 4, unpaired t-test p=0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "5e5e4ada-291b-46ae-8cac-956919a1c10a",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C20",
+      "claim": "Voluntary exercise increased exercise-TRAPed dentate granule cells by 264% compared to homecage controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Voluntary exercise increased exercise-TRAPed dentate granule cells (% increase from baseline in exercise-TRAPed cells, homecage 100 \u00b1 5 n = 5, Exercise 264 \u00b1 19, n = 5, unpaired t-test, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "d22ffca6-41e9-4516-a46a-13568c8d7f8a",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C21",
+      "claim": "When two exercise periods were separated by 24 hr, only 12.5% of exercise-TRAPed cells were re-activated.",
+      "claim_type": "EXPLICIT",
+      "source": "When the two exercise periods were separated by 24 hr, 12.5 \u00b1 5.6%, (n = 3) of the exercise-TRAPed cells were re-activated, whereas with a 4-day separation only 1.3 \u00b1 0.3% (n = 4, unpaired t-test, p=0.07) overlapped, indicating that labeling with exercise was stochastic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "ccce126b-fd89-4b66-a585-b84a26742594",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C22",
+      "claim": "When two exercise periods were separated by 4 days, only 1.3% of exercise-TRAPed cells were re-activated.",
+      "claim_type": "EXPLICIT",
+      "source": "When the two exercise periods were separated by 24 hr, 12.5 \u00b1 5.6%, (n = 3) of the exercise-TRAPed cells were re-activated, whereas with a 4-day separation only 1.3 \u00b1 0.3% (n = 4, unpaired t-test, p=0.07) overlapped, indicating that labeling with exercise was stochastic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "78e0cb4f-c196-4aac-81fd-a1d701ad7678",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C23",
+      "claim": "Labeling with exercise was stochastic.",
+      "claim_type": "EXPLICIT",
+      "source": "When the two exercise periods were separated by 24 hr, 12.5 \u00b1 5.6%, (n = 3) of the exercise-TRAPed cells were re-activated, whereas with a 4-day separation only 1.3 \u00b1 0.3% (n = 4, unpaired t-test, p=0.07) overlapped, indicating that labeling with exercise was stochastic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the low overlap data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "a0fd2ad8-4b34-4741-8bdd-a1169cfa1126",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C24",
+      "claim": "Exercise-TRAPed neurons were distributed through the granule cell body layer, without labeling in the subgranular zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercise-TRAPed neurons were distributed through the granule cell body layer, without labeling in the subgranular zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "b4059ff7-cc4c-4927-a03a-6f692cee34cb",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C25",
+      "claim": "The exercise protocol activated stochastic, non-overlapping sets of mature granule cells, consistent with the sparse coding design of this circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that our exercise protocol activated stochastic, non-overlapping sets of mature granule cells, consistent with the sparse coding design of this circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data in the context of known circuit properties.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "ad66840d-a5fe-4edb-8e0d-953b5806c7d8",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C26",
+      "claim": "Exercise-TRAPed cells showed a nearly 50% increase in dendritic spines at 3 days in the outer molecular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercise-TRAPed cells showed a nearly 50% increase in dendritic spines at 3 days. This increase was limited to the outer molecular layer (OML), which interestingly, receives contextual and time information via the lateral perforant path (Hargreaves et al., 2005; Yoganarasimha et al., 2011), whereas there was no change in dendritic spines in the middle molecular layer (MML), which receives spatial information via the medial perforant path (Hafting et al., 2005; Sargolini et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative spine density data from Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "5aa4eb40-0a03-41af-9044-07c26a4553fb",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C27",
+      "claim": "The increase in dendritic spines was limited to the outer molecular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercise-TRAPed cells showed a nearly 50% increase in dendritic spines at 3 days. This increase was limited to the outer molecular layer (OML), which interestingly, receives contextual and time information via the lateral perforant path (Hargreaves et al., 2005; Yoganarasimha et al., 2011), whereas there was no change in dendritic spines in the middle molecular layer (MML), which receives spatial information via the medial perforant path (Hafting et al., 2005; Sargolini et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative spine density data from Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "dcb68348-c4e1-4566-9286-90a1ee5eaa14",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C28",
+      "claim": "The outer molecular layer receives contextual and time information via the lateral perforant path.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase was limited to the outer molecular layer (OML), which interestingly, receives contextual and time information via the lateral perforant path (Hargreaves et al., 2005; Yoganarasimha et al., 2011), whereas there was no change in dendritic spines in the middle molecular layer (MML), which receives spatial information via the medial perforant path (Hafting et al., 2005; Sargolini et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "67abc723-9e1a-41bc-aa25-ec63f21f561a",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C29",
+      "claim": "There was no change in dendritic spines in the middle molecular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase was limited to the outer molecular layer (OML), which interestingly, receives contextual and time information via the lateral perforant path (Hargreaves et al., 2005; Yoganarasimha et al., 2011), whereas there was no change in dendritic spines in the middle molecular layer (MML), which receives spatial information via the medial perforant path (Hafting et al., 2005; Sargolini et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative spine density data from Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "07d77166-8cd4-4dc8-af19-7a715a82dd4d",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C30",
+      "claim": "The middle molecular layer receives spatial information via the medial perforant path.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase was limited to the outer molecular layer (OML), which interestingly, receives contextual and time information via the lateral perforant path (Hargreaves et al., 2005; Yoganarasimha et al., 2011), whereas there was no change in dendritic spines in the middle molecular layer (MML), which receives spatial information via the medial perforant path (Hafting et al., 2005; Sargolini et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "0459bd43-8b75-455a-b6b2-8bbb176c887d",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C31",
+      "claim": "Spine density in the OML returned to baseline levels by 7 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a transient response to a single stimulus, spine density in the OML returned to baseline levels by 7 days (Figure 2A, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative spine density data from Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "ec2fb9b1-d3cc-4a79-a8f9-7f935bc18a5f",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C32",
+      "claim": "Exercise did not affect total dendritic length in OML or MML.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercise did not affect total dendritic length in OML or MML indicating that the increase in spine density reflected an increase in the number of synapses (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "f1f15c6a-2974-4be8-8446-90ad2bdff92e",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C33",
+      "claim": "The increase in spine density reflected an increase in the number of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercise did not affect total dendritic length in OML or MML indicating that the increase in spine density reflected an increase in the number of synapses (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation that dendritic length did not change.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "33d8999d-1c4c-4410-801e-0a016a456dfe",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C34",
+      "claim": "OML stimulation produced EPSCs that were significantly greater in exercise-TRAPed cells compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "OML stimulation produced EPSCs that were significantly greater in exercise-TRAPed cells (EPSCs - OML amplitude: TdT-, \u221244.1 \u00b1 8.9 pA; TdT+, \u2212114.9 \u00b1 23.5 pA; n = 13 cell pairs (eight mice); p=0.0002, Wilcoxon matched-pairs signed rank test), whereas MML stimulation did not differ from controls (EPSCs - MML amplitude: TdT-\u221269.7 \u00b1 14.9 pA; TdT+, \u221260.1 \u00b1 10.3 pA; n = 7 cell pairs (four mice); p=0.15, paired t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data from Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "3de35978-b2c7-44b4-975e-f74107be6329",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C35",
+      "claim": "MML stimulation did not produce EPSCs that differed between exercise-TRAPed cells and control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "OML stimulation produced EPSCs that were significantly greater in exercise-TRAPed cells (EPSCs - OML amplitude: TdT-, \u221244.1 \u00b1 8.9 pA; TdT+, \u2212114.9 \u00b1 23.5 pA; n = 13 cell pairs (eight mice); p=0.0002, Wilcoxon matched-pairs signed rank test), whereas MML stimulation did not differ from controls (EPSCs - MML amplitude: TdT-\u221269.7 \u00b1 14.9 pA; TdT+, \u221260.1 \u00b1 10.3 pA; n = 7 cell pairs (four mice); p=0.15, paired t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data from Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "84a2846a-f94f-4c20-b948-b1159d3c3af2",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C36",
+      "claim": "There was no difference in EPSC amplitudes during OML stimulation while recording from two control (both TdT-) granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no difference in EPSC amplitudes during OML stimulation while recording from two control (both TdT-) granule cells (EPSC amplitudes: TdT-, \u221255.8 \u00b1 16.3 pA; TdT-, \u221257.5 \u00b1 13.8 pA, n = 5 cell pairs, p=0.80, paired t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data from Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "a39210ad-72d9-4f72-b65f-3726b1b2bb44",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C37",
+      "claim": "The increased EPSC amplitudes could not be attributed to differences in intrinsic membrane properties or presynaptic release probability.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased EPSC amplitudes could not be attributed to differences in intrinsic membrane properties or presynaptic release probability (Figure 2\u2014figure supplement 2 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from Figure 2\u2014figure supplement 2 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "1165c73b-e97b-4be1-afd4-3b9413940661",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C38",
+      "claim": "Dentate granule cells activated by a single bout of exercise show a laminar-specific increase in dendritic spines and in excitatory postsynaptic currents.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that dentate granule cells activated by a single bout of exercise show a laminar-specific increase in dendritic spines and in excitatory postsynaptic currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "a10aca9d-5985-4946-9e10-5e9effe545a2",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C39",
+      "claim": "Activity-dependent gene expression is one of the main drivers of short- and long-term changes in synaptic function.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity-dependent gene expression is one of the main drivers of short- and long-term changes in synaptic function (West and Greenberg, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "552c0a2c-dbf5-4ed2-a162-4d6e7532fd2a",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C40",
+      "claim": "Approximately 150 transcripts were significantly upregulated in exercise-TRAPed neurons 3 days after exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of transcripts by RNASeq (Figure 3\u2014figure supplement 1) revealed up- and down-regulated transcripts (Figure 3C, left panel, Supplementary file 2 and 3) of which approximately 150 transcripts were significantly upregulated in exercise-TRAPed neurons 3 days after exercise.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNASeq data from Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "9e908f97-810c-4a61-9907-4f324f8c2c0e",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C41",
+      "claim": "Gene Ontology analysis indicated that most of the upregulated transcripts had signaling or synaptic functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology analysis indicated that most of the upregulated transcripts had signaling or synaptic functions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Gene Ontology analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "c6cbc05e-411c-4118-8d99-8895644ece1f",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C42",
+      "claim": "The top ten upregulated genes included several known genes involved in hippocampal function, such as the neuron-specific RNA-binding protein Elavl4 and the immediate early gene Egr1.",
+      "claim_type": "EXPLICIT",
+      "source": "The top ten upregulated genes (Figure 3C) included several known genes involved in hippocampal function, such as the neuron-specific RNA-binding protein Elavl4 and the immediate early gene Egr1 (Akamatsu et al., 2005; Jones et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNASeq data from Figure 3C and citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "37123387-0eab-47d0-94dc-ac23ee4f10fd",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C43",
+      "claim": "No transcript identified at 3 days post-exercise remained elevated at 7 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the transient increase in dendritic spines, no transcript identified at 3 days post- exercise remained elevated at 7 days (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "250847b1-8524-452f-b044-73e71e9a41c4",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C44",
+      "claim": "Mtss1L belongs to the BAR (Bin, Amphiphysin and Rvs, I-BAR) protein family.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtss1L belongs to the BAR (Bin, Amphiphysin and Rvs, I-BAR) protein family, a class of proteins that function by promoting curvature in membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of Mtss1L based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "e3b78e93-2bdc-4407-9aa2-8f86bda738f7",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C45",
+      "claim": "BAR domain proteins function by promoting curvature in membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtss1L belongs to the BAR (Bin, Amphiphysin and Rvs, I-BAR) protein family, a class of proteins that function by promoting curvature in membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about BAR domain proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "1475df5d-d5dc-4ae6-bb35-25da1f84f7c9",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C46",
+      "claim": "BAR domain proteins such as amphyphysin promote inward curvatures including invaginations that are involved in endocytosis or synaptic vesicles at presynaptic nerve terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "BAR domain proteins such as amphyphysin promote inward curvatures including invaginations that are involved in endocytosis or synaptic vesicles at presynaptic nerve terminals (Dawson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "d42b91b2-8e16-4300-bb01-443c8bd50766",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C47",
+      "claim": "I-BAR proteins promote outward structures typically seen in membrane protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, I-BAR proteins promote outward structures typically seen in membrane protrusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about I-BAR proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "2a95dee8-ff5f-401e-a024-6babef96f841",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C48",
+      "claim": "Mtss1L expression mediates exercise-dependent formation or rearrangement of synapses in postsynaptic dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we hypothesized that Mtss1L expression-mediated exercise-dependent formation or rearrangement of synapses in postsynaptic dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a hypothesis by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "0a414686-7675-409a-bafc-4774edc82157",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C49",
+      "claim": "Mtss1L immunoreactivity was detectable only after BDNF treatment in hippocampal neurons in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtss1L immunoreactivity was detectable only after BDNF treatment (Figure 5A), consistent with the activity-dependent expression pattern we observed in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data from Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "0c7c0050-b683-446d-abdb-4677abb1b926",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C50",
+      "claim": "The BDNF-induced Mtss1L expression is consistent with the activity-dependent expression pattern observed in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtss1L immunoreactivity was detectable only after BDNF treatment (Figure 5A), consistent with the activity-dependent expression pattern we observed in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference connecting in vitro and in vivo observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "2721a99b-f6f0-4e2c-b3a3-317a1d7cf80d",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C51",
+      "claim": "Mtss1L colocalized with the somatodendritic marker MAP2 along dendrites and in dendritic spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtss1L colocalized with the somatodendritic marker MAP2 along dendrites and in dendritic spines (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data from Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "5e0d0fa0-124f-4d84-b393-557dc669a225",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C52",
+      "claim": "Mtss1L overexpression markedly increased spine-like protrusions in cultured hippocampal neurons at DIV 14.",
+      "claim_type": "EXPLICIT",
+      "source": "At DIV 14, Mtss1L overexpression markedly increased spine-like protrusions (Figure 5B) including filopodia and mushroom spine subtypes (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "43b1500b-ed07-4acc-87cf-d87830e7428e",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C53",
+      "claim": "Mtss1L overexpression increased filopodia and mushroom spine subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "At DIV 14, Mtss1L overexpression markedly increased spine-like protrusions (Figure 5B) including filopodia and mushroom spine subtypes (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "75957587-f455-432b-b036-ae8ffba47f54",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C54",
+      "claim": "mCherry-Mtss1L-expressing dendritic spines were labeled with co-transfected PSD-95-FingR-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "mCherry-Mtss1L-expressing dendritic spines also were labeled with co-transfected PSD-95-FingR-GFP, (Fibronectin Intrabody generated with mRNA display) that binds to endogenous PSD-95 (Gross et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data from Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "6481d2e0-eb67-41af-9503-737794a1b559",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C55",
+      "claim": "The protrusions induced by Mtss1L contain postsynaptic proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "PSD-95 intrabody labeling of excitatory synapses in living neurons indicated that the protrusions induced by Mtss1L also contain postsynaptic proteins (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on PSD-95 labeling data from Figure 5C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "63c57727-4966-4106-80f6-0498360fb2e7",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C56",
+      "claim": "Overexpression of mCherry-Mtss1L by DNA electroporation at P0 increased spine density of mature dentate granule cells at P21.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, overexpression of mCherry- Mtss1lL by DNA electroporation at P0 increased spine density of mature dentate granule cells at P21 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "763c903b-8e1f-429b-a3a6-7a3c11cb5927",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C57",
+      "claim": "Mtss1L is expressed in dendrites and can induce spine-like protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Mtss1L is expressed in dendrites and can induce spine-like protrusions, consistent with a putative role in synaptic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "44d1a501-e4d6-4c5b-8e19-0149ebfe3099",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C58",
+      "claim": "Mtss1L has a putative role in synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Mtss1L is expressed in dendrites and can induce spine-like protrusions, consistent with a putative role in synaptic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "5633cdf2-58d7-430e-a1c3-931a22fb9986",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C59",
+      "claim": "Knockdown of Mtss1L in vivo occluded the exercise-induced increase in dendritic spines in the OML at 3 days post-exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "At 3 days post-exercise, knockdown of Mtss1L occluded the exercise-induced increase in dendritic spines in the OML (Figure 6B middle panel top, and right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "1bc3a0c0-17e2-486f-8cd8-65aafcf5bc65",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C60",
+      "claim": "shscramble-GFP had no effect on exercise-induced increase in dendritic spines.",
+      "claim_type": "EXPLICIT",
+      "source": "The shscramble-GFP, injected into the contralateral dentate gyrus of the same mice, had no effect (Figure 6B right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "3cc883ab-e5c1-4499-9e0a-42d401b15060",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C61",
+      "claim": "Viral knockdown of Mtss1L in exercise-TRAPed cells prevented the increase in evoked EPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral knockdown of Mtss1L in exercise-TRAPed cells also prevented the increase in evoked EPSCs in simultaneous paired recordings from TdT- and TdT+/GFP+ granule cells (Figure 6C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data from Figure 6C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "e92d9cde-01a7-48c2-b2d0-6be39c5fc78d",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C62",
+      "claim": "The amplitude of EPSCs following viral knockdown in exercise-TRAPed cells was the same as neighboring cells that were not activated by exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of EPSCs following viral knockdown in exercise-TRAPed cells was the same as neighboring cells that were not activated by exercise (Figure 6D, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data from Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "16897722-a140-4cb0-aaff-c576b80f11aa",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C63",
+      "claim": "Intrinsic membrane properties were not affected by Mtss1L knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsic membrane properties were not affected by Mtss1L knockdown (Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "120232d0-d4a2-4f9b-8ced-a4baf7415c46",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C64",
+      "claim": "Knockdown of Mtss1L was necessary to explain the exercise-induced increase in excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6E includes the results from Figure 2 ('exercise-TRAPed OML' (red) and 'exercise-TRAPED MML' (black), compared to the effects of Mtss1L shRNA (yellow), demonstrating that knockdown of Mtss1L was necessary to explain the exercise-induced increase in excitatory synapses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the combined data from Figures 2 and 6.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "c17710f2-1da0-40c3-90ed-e3a10e3bcad8",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C65",
+      "claim": "Evoked EPSCs in granule cells that only expressed GFP+shRNA were unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, evoked EPSCs in granule cells that only expressed GFP +shRNA were unaffected, demonstrating that the effect of Mtss1L was dependent on activity-dependent expression (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data from Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "028cd720-719b-41dd-8152-b4d6b0aeb4be",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C66",
+      "claim": "The effect of Mtss1L was dependent on activity-dependent expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, evoked EPSCs in granule cells that only expressed GFP +shRNA were unaffected, demonstrating that the effect of Mtss1L was dependent on activity-dependent expression (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation that shRNA alone had no effect.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "f6a368a3-da3e-46d7-b44f-19ac667f5ff7",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C67",
+      "claim": "The Fos-TRAP method is limited by the time required for reporter expression (ca. 1 day post-exercise).",
+      "claim_type": "EXPLICIT",
+      "source": "Although the Fos-TRAP method is limited by the time required for reporter expression (ca. 1 day post-exercise), the immediate early gene Egr1 was upregulated (Figure 3C), indicating that our protocol detected activity-dependent gene expression in mature granule cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of the Fos-TRAP method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "8a24dc78-b049-4196-a814-f0ab9eb68220",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C68",
+      "claim": "The immediate early gene Egr1 was upregulated in exercise-TRAPed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the Fos-TRAP method is limited by the time required for reporter expression (ca. 1 day post-exercise), the immediate early gene Egr1 was upregulated (Figure 3C), indicating that our protocol detected activity-dependent gene expression in mature granule cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNASeq data from Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "475626e9-5dff-43b0-8913-e166f2c546c7",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C69",
+      "claim": "The protocol detected activity-dependent gene expression in mature granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the Fos-TRAP method is limited by the time required for reporter expression (ca. 1 day post-exercise), the immediate early gene Egr1 was upregulated (Figure 3C), indicating that our protocol detected activity-dependent gene expression in mature granule cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the upregulation of Egr1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "d096fc97-c1a5-4e97-bd2e-bbc9b1c4f521",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C70",
+      "claim": "There was a small increase in Fos-TRAPed cells when the wheel was fixed to prevent running.",
+      "claim_type": "EXPLICIT",
+      "source": "Although introduction of the running wheel for 2 hr itself could act as a novel object, there was a small increase in Fos-TRAPed cells when the wheel was fixed to prevent running.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "dc70a55c-c2a7-4fe4-85e3-efb9176ea53a",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C71",
+      "claim": "Exercise is a particularly strong stimulus for activation of granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that exercise is a particularly strong stimulus for activation of granule cells, but as expected other stimuli can also activate dentate granule cells (Ryan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison between exercise and fixed wheel conditions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "3e45eda9-1676-425f-a46d-45225b6c1974",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C72",
+      "claim": "Other stimuli can also activate dentate granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that exercise is a particularly strong stimulus for activation of granule cells, but as expected other stimuli can also activate dentate granule cells (Ryan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "9904f8c2-8f0b-4229-8510-5dcb2d9d71c4",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C73",
+      "claim": "Adult-generated granule cells in the subgranular zone were not activated by 2 hr of exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult-generated granule cells in the subgranular zone were not activated by 2 hr of exercise (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "dfa3b0be-92dc-4a2a-aa1a-dd71a1bb8e00",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C74",
+      "claim": "Chronic exercise increases adult neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is well known that chronic exercise increases adult neurogenesis (van Praag, 2008), progenitors and newborn neurons do not receive direct excitatory perforant path input for several weeks (Overstreet et al., 2004), perhaps explaining their lack of activation in our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "cc6b7e75-2655-471c-8323-01371d5250d2",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C75",
+      "claim": "Progenitors and newborn neurons do not receive direct excitatory perforant path input for several weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is well known that chronic exercise increases adult neurogenesis (van Praag, 2008), progenitors and newborn neurons do not receive direct excitatory perforant path input for several weeks (Overstreet et al., 2004), perhaps explaining their lack of activation in our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "ef3e3330-4712-4f16-9cdb-72c8906d54c1",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C76",
+      "claim": "The lack of activation of adult-generated granule cells is perhaps explained by their lack of direct excitatory perforant path input.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is well known that chronic exercise increases adult neurogenesis (van Praag, 2008), progenitors and newborn neurons do not receive direct excitatory perforant path input for several weeks (Overstreet et al., 2004), perhaps explaining their lack of activation in our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "5333058f-48e7-4b27-8f2f-ec271f91c802",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C77",
+      "claim": "This study provides the first evidence for activity-dependent expression of an I-BAR protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide the first evidence for activity-dependent expression of an I-BAR protein as well as a role in experience-dependent remodeling of synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "ded40f40-3911-4df3-a87f-b13c9669c402",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C78",
+      "claim": "This study provides the first evidence for a role of an I-BAR protein in experience-dependent remodeling of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide the first evidence for activity-dependent expression of an I-BAR protein as well as a role in experience-dependent remodeling of synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "cb59a8fa-6193-4035-9e35-f3d192031b8d",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C79",
+      "claim": "I-BAR proteins including MIM (Mtss1L) and IRSp53 can affect constitutive dendritic spine formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, I-BAR proteins including MIM (Mtss1L) and IRSp53 can affect constitutive dendritic spine formation (Saarikangas et al., 2015; Choi et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "3df06577-77e6-44cb-9de4-ff7bc8fff0e5",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C80",
+      "claim": "MIM/Mtss1 is involved in cerebellar synapse formation via PIP2-dependent membrane curvature and subsequent Arp2/3-mediated action polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, MIM/Mtss1, is involved in cerebellar synapse formation via PIP2-dependent membrane curvature and subsequent Arp2/3-mediated action polymerization (Saarikangas et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "a7ea634b-b84c-4d39-8012-141f185ff84a",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C81",
+      "claim": "Expression of Mtss1L in neurons has gone largely undetected, likely a result of the previously unrecognized activity-dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Mtss1L in neurons has gone largely undetected, likely a result of the previously unrecognized activity-dependence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the lack of prior detection.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "f9ac1ab2-8dc9-470d-9f03-7b974cc040e6",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C82",
+      "claim": "Mtss1L has been detected in radial glial cells during development and implicated in glial membrane protrusions and end-feet.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Mtss1L has been detected in radial glial cells during development and implicated in glial membrane protrusions and end-feet (Saarikangas et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "151a7b4b-eba8-4df2-88a8-a6e369efc79c",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C83",
+      "claim": "I-BAR protein function at synapses is thought to be mediated by several interaction domains including the N-terminal I-BAR domain and a C-terminal actin-monomer-binding WH2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "I-BAR protein function at synapses is thought to be mediated by several interaction domains including the N-terminal I-BAR domain and a C-terminal actin-monomer-binding WH2 domain (Zhao et al., 2011), and may depend on slice variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "f3d6aed9-1584-4325-9bf7-70b314d4cc7d",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C84",
+      "claim": "I-BAR protein function may depend on splice variants.",
+      "claim_type": "EXPLICIT",
+      "source": "I-BAR protein function at synapses is thought to be mediated by several interaction domains including the N-terminal I-BAR domain and a C-terminal actin-monomer-binding WH2 domain (Zhao et al., 2011), and may depend on slice variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential splice variant effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "eca38c35-33ce-4dcc-a8ad-750c731796af",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C85",
+      "claim": "The effects of MIM in cerebellar neurons is splice-variant specific.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the effects of MIM in cerebellar neurons is splice-variant specific (Sistig et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "7c91557a-988d-47d4-bff4-1867e9daf321",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C86",
+      "claim": "Mtss1L has two known splice variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtss1L also has two known splice variants, both of which were targeted in our overexpression and knockdown experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Mtss1L.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "dd02d70d-3a56-43a5-bdfc-b3f2ba15f45e",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C87",
+      "claim": "The laminar-specific increase in synaptic function suggests that acute exercise had a network-specific effect.",
+      "claim_type": "EXPLICIT",
+      "source": "At a circuit level, the laminar-specific increase in synaptic function suggests that acute exercise had a network-specific effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed laminar specificity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "431891ae-bd8c-4015-9f18-ba88ddf96043",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C88",
+      "claim": "Entorhinal inputs to the outer molecular layer have been previously associated with contextual information and particularly the 'how' and 'when' aspects of encoding memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Entorhinal inputs to the outer molecular layer, the distal dendrites of mature granule cells, have been previously associated with contextual information and particularly the 'how' and 'when' aspects of encoding memories (Tsao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "73efa1de-d5d1-47d7-8e14-9a88d66ce96b",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C89",
+      "claim": "Exercise acts as a preconditioning signal that primes exercise-activated neurons for contextual information incoming during the several days following exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility consistent with our data is that exercise acts as a preconditioning signal that primes exercise-activated neurons for contextual information incoming during the several days following exercise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "3fc88da3-fa46-430c-9376-92694d0dbd48",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C90",
+      "claim": "Human studies give support for the idea that exercise within 4 hr of a learning task improved memory performance.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, human studies give support for the idea that exercise within 4 hr of a learning task improved memory performance (van Dongen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "1e93d9c6-f5ce-419e-af51-48a7e507cae6",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C91",
+      "claim": "Mtss1L is ideally suited to act as an early mediator of structural plasticity following neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our identification of Mtss1L as an activity-dependent I-BAR domain protein makes it ideally suited to act as an early mediator of structural plasticity following neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of Mtss1L and the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "9f157730-b609-466e-9398-3a1792a8a8fc",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C92",
+      "claim": "Spine densities were significantly increased in the OML of activated cells at 3 days post exercise (OML 3 days homecage: 0.94 \u00b1 0.1, exercise: 1.39 \u00b1 0.2, p=0.02, n = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "Spine densities were significantly increased in the OML of activated cells at 3 days post exercise (two-way ANOVA, OML 3 days homecage: 0.94 \u00b1 0.1, exercise: 1.39 \u00b1 0.2, p=0.02, n = 5), whereas there was no difference in the OML at 7 days post-exercise (OML 7 days homecage: 0.87 \u00b1 0.2, exercise: 1.10 \u00b1 0.1, p=0.18, n = 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "6a11179a-1b37-4d15-9795-04c01724a85b",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C93",
+      "claim": "There was no difference in spine density in the OML at 7 days post-exercise (OML 7 days homecage: 0.87 \u00b1 0.2, exercise: 1.10 \u00b1 0.1, p=0.18, n = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "Spine densities were significantly increased in the OML of activated cells at 3 days post exercise (two-way ANOVA, OML 3 days homecage: 0.94 \u00b1 0.1, exercise: 1.39 \u00b1 0.2, p=0.02, n = 5), whereas there was no difference in the OML at 7 days post-exercise (OML 7 days homecage: 0.87 \u00b1 0.2, exercise: 1.10 \u00b1 0.1, p=0.18, n = 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "87e2a8ef-10f8-4797-b082-b41986624966",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C94",
+      "claim": "Spine density in the MML was unaffected by exercise (MML 3 days homecage: 0.99 \u00b1 0.1, exercise: 1.10 \u00b1 0.1; MML 7 days homecage: 0.88 \u00b1 0.2, exercise 0.95 \u00b1 0.2, n = 5, p=0.79).",
+      "claim_type": "EXPLICIT",
+      "source": "Spine density in the MML was unaffected (two-way ANOVA, no interaction between homecage and exercise groups, MML 3 days homecage: 0.99 \u00b1 0.1, exercise: 1.10 \u00b1 0.1; MML 7 days homecage: 0.88 \u00b1 0.2, exercise 0.95 \u00b1 0.2, n = 5, p=0.79).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "31ebc940-0bc6-4bff-a12d-9d4225055a93",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C95",
+      "claim": "LacZ expression was undetectable in the dentate gyrus of KOMP Mtss1L+/- mice housed in their homecage.",
+      "claim_type": "EXPLICIT",
+      "source": "LacZ expression was undetectable in the dentate gyrus of KOMP Mtss1L+/- housed in their homecage, suggesting no expression of Mtss1L under baseline conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data from Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "15e1fb55-78b5-4b3a-a3ed-c0e82f75be8f",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C96",
+      "claim": "There is no expression of Mtss1L under baseline conditions in the dentate gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "LacZ expression was undetectable in the dentate gyrus of KOMP Mtss1L+/- housed in their homecage, suggesting no expression of Mtss1L under baseline conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the lack of LacZ expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "2bdf8c51-1082-4884-82a7-2f1bbcf190ea",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C97",
+      "claim": "Exercise-induced LacZ expression peaked at 3 days post-exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, exercise-induced LacZ expression peaked at 3 days post-exercise (Figure 4), confirming the activity-dependence of Mtss1L expression in the dentate gyrus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "4837e8be-5777-4462-9fd8-ce83aca5576d",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C98",
+      "claim": "The peak in LacZ expression at 3 days post-exercise confirms the activity-dependence of Mtss1L expression in the dentate gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, exercise-induced LacZ expression peaked at 3 days post-exercise (Figure 4), confirming the activity-dependence of Mtss1L expression in the dentate gyrus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the temporal pattern of LacZ expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "adfdd690-173e-4453-965f-e7a33aed6106",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C99",
+      "claim": "BDNF is upregulated by exercise and involved in activity-dependent synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "As proof of principle, we first examined the localization of endogenous Mtss1L in hippocampal neurons in vitro following exposure to brain-derived neurotrophic factor (BDNF), which is upregulated by exercise and involved in activity-dependent synaptic plasticity (Vaynman et al., 2004; Wrann et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "83bdb14d-734c-4330-b865-02329adcfc08",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C100",
+      "claim": "Ectopic expression of Mtss1L markedly increased the number of dendritic protrusions (mCherry: 0.9 \u00b1 0.09, Mtss1L-mCherry: 1.3 \u00b1 0.07, unpaired t-test, p=0.004, n = 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of Mtss1L markedly increased the number of dendritic protrusions (mCherry: 0.9 \u00b1 0.09, Mtss1L-mCherry: 1.3 \u00b1 0.07, unpaired t-test, p=0.004, n = 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "f4dd545b-7cdc-4da6-908c-34493f542dda",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C101",
+      "claim": "Mtss1L-mCherry expressing cells show increased dendritic protrusions in vivo (mCherry, 0.9 \u00b1 0.03, n = 3, Mtss1L-mCherry, 1.3 \u00b1 0.07, n = 3, unpaired t-test, p=0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "Mtss1L-mCherry expressing cells show increased dendritic protrusions in vivo (mCherry, 0.9 \u00b1 0.03, n = 3, Mtss1L-mCherry, 1.3 \u00b1 0.07, n = 3, unpaired t-test, p=0.004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "a6537ce8-a517-474e-a518-8764248f2acf",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C102",
+      "claim": "Mtss1L shRNA, but not shScramble, blocked the exercise-induced increase in dendritic spines in exercise-TRAPed cells (Homecage TRAPed: 0.8 \u00b1 0.1, n = 4, Exercise TRAPed: 1.2 \u00b1 0.2, n = 5, Exercise TRAPed/shScramble: 1.17 \u00b1 0.1, n = 4, Exercise-TRAPed/shMtss1L: 0.87 \u00b1 0.06, n = 5, one-way ANOVA, multiple comparisons Dunnett's test, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Mtss1L shRNA, but not shScramble, blocked the exercise\u2013induced increase in dendritic spines in exercise-TRAPed cells. Summary graph at right shows dendritic spine density in the dentate OML for each condition (Homecage TRAPed: 0.8 \u00b1 0.1, n = 4, Exercise TRAPed: 1.2 \u00b1 0.2, n = 5, Exercise TRAPed/shScramble: 1.17 \u00b1 0.1, n = 4, Exercise-TRAPed/shMtss1L: 0.87 \u00b1 0.06, n = 5, one-way ANOVA, multiple comparisons Dunnett's test, p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "79e9bd7a-db5e-4136-8c1c-e2e7c6407de2",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C103",
+      "claim": "LacZ expression in granule cells peaked at 3 days post-exercise and was not detectable at 5 or 7 days post-exercise (LacZ+ cells/mm3 2 days post-exercise: 1235 \u00b1 345, n = 3; 3 days post-exercise: 4573 \u00b1 767,n = 3, one-way ANOVA p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "LacZ expression in granule cells peaked at 3 days post-exercise and was not detectable at 5 or 7 days post-exercise (LacZ+ cells/mm3 2 days post-exercise: 1235 \u00b1 345, n = 3; 3 days post-exercise: 4573 \u00b1 767,n = 3, one-way ANOVA p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "dd33475b-65af-4e77-863e-7e7dd18f262a",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C104",
+      "claim": "Mtss1L overexpression significantly increased the density of both thin and mushroom dendritic spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtss1L overexpression significantly increased the density of both thin and mushroom dendritic spines, whereas there was no difference in the density of stubby spines (n = 3, unpaired t-test, p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "7388e5f5-53ec-481c-93dd-55df67713b81",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C105",
+      "claim": "There was no difference in the density of stubby spines with Mtss1L overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtss1L overexpression significantly increased the density of both thin and mushroom dendritic spines, whereas there was no difference in the density of stubby spines (n = 3, unpaired t-test, p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "94f5c387-a80b-42ee-bdea-33f65ea65e69",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C106",
+      "claim": "Exposure to a fixed wheel for 2 hr increased exercise-TRAPed dentate granule cells (% increase from baseline in TRAPed cells, homecage 100 \u00b1 6 n = 5, Fixed wheel 133 \u00b1 5, n = 5, unpaired t-test, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to a fixed wheel for 2 hr increased exercise-TRAPed dentate granule cells (% increase from baseline in TRAPed cells, homecage 100 \u00b1 6 n = 5, Fixed wheel 133 \u00b1 5, n = 5, unpaired t-test, p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data from Figure 3\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "57994da5-0335-4092-8bef-d032b4d90a35",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "claim_id": "C107",
+      "claim": "mRNA expression of Mtss1L was upregulated at 3 days after exposure to a fixed wheel in TRAPed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "mRNA expression of Mtss1L was upregulated at 3 days after exposure to a fixed wheel in TRAPed cells (TRAPed- (control, n = 3), TRAPed+ (fixed wheel, n = 3). mRNA expression was normalized to neuronal internal control gene Ubc. Statistical analysis was performed using unpaired t-test *p<0.05.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data from Figure 3\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ee1b236d-3a30-49bf-810a-f47e453a1163",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A single 2-hour bout of voluntary exercise activates a stochastic, sparse population of mature dentate granule cells. Exercise increased c-Fos+ cells by 255% and exercise-TRAPed cells by 264% compared to homecage controls. When exercise was repeated after 24 hours, only 12.5% of cells were re-activated, and after 4 days only 1.3% overlapped, indicating stochastic activation consistent with sparse coding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C25 provide converging evidence from Fos immunohistochemistry (C18-C19) and Fos-TRAP labeling (C20) showing robust neuronal activation. The low overlap between exercise sessions (C21-C22) with appropriate statistical testing (p=0.07 for 4-day comparison) supports the stochastic nature of activation (C23, C25). The distribution pattern (C24) and interpretation in context of sparse coding (C25) are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "c9877474-f437-40f1-a527-164610b6426c",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Exercise-activated neurons show a transient, laminar-specific increase in dendritic spine density in the outer molecular layer (OML) but not the middle molecular layer (MML). At 3 days post-exercise, spine density increased ~50% in the OML (p=0.02) but not MML (p=0.79), returning to baseline by 7 days (p=0.18). This increase reflects more synapses, not dendritic elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C33 and C92-C94 provide quantitative morphological data with appropriate statistics (two-way ANOVA) showing laminar specificity. The transient nature (C31, C93) and control for dendritic length (C32) strengthen the interpretation that spine density changes reflect synapse number (C33). Sample sizes (n=5) are adequate for morphological analysis, and the layer-specific effect is consistent across multiple measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "dee9086c-45f5-4249-af79-6542ddc234c7",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Exercise-activated neurons show laminar-specific increases in excitatory postsynaptic currents (EPSCs) matching the spine density changes. OML stimulation produced significantly larger EPSCs in exercise-TRAPed cells (p=0.0002, Wilcoxon test), while MML stimulation showed no difference (p=0.15). This effect was not due to intrinsic membrane properties or presynaptic release probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 provide electrophysiological evidence that complements the morphological findings. The use of paired recordings from neighboring cells (C36) is an excellent control. Appropriate non-parametric statistics were used (Wilcoxon for OML, paired t-test for MML). The exclusion of alternative explanations (C37) through additional measurements strengthens the conclusion that the effect is postsynaptic and specific to the OML input.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "aeca8008-dff1-4fc5-945c-52b3f0ad7e00",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RNASeq analysis of exercise-activated neurons revealed approximately 150 significantly upregulated transcripts at 3 days post-exercise, enriched for signaling and synaptic functions. The top upregulated genes included known hippocampal function genes (Elavl4, Egr1). No transcripts remained elevated at 7 days, consistent with the transient spine changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 and C68-C69 describe RNASeq results with appropriate bioinformatic analysis (Gene Ontology). The detection of immediate early gene Egr1 (C68) validates that the protocol captured activity-dependent gene expression (C69), addressing a limitation of the Fos-TRAP method (C67). The transient nature of transcript elevation (C43) matches the spine density time course. However, the manuscript lacks details on FDR thresholds and fold-change cutoffs for the ~150 genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "557de282-532d-4a11-8efd-76b5e969e042",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mtss1L was the most highly induced transcript in exercise-activated neurons and shows activity-dependent expression. Using KOMP reporter mice, LacZ expression was undetectable at baseline but peaked at 3 days post-exercise (p<0.0001) and was undetectable by 5-7 days, confirming activity-dependent expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C95-C98, C103 provide converging evidence from RNASeq (C6) and reporter mice (C95-C98, C103). The temporal pattern of LacZ expression matches the spine density and transcript changes. The use of a genetic reporter provides independent validation of the RNASeq finding. Statistical analysis (one-way ANOVA, p<0.0001) is appropriate. The inference that baseline lack of LacZ indicates no Mtss1L expression (C96) is reasonable but assumes complete absence rather than below-detection levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "3a37fbfa-dff6-4210-9703-f34d8e437104",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mtss1L is expressed in dendrites and dendritic spines in an activity-dependent manner and overexpression increases spine-like protrusions. In cultured neurons, Mtss1L was detectable only after BDNF treatment, colocalized with MAP2 in dendrites and spines, and overexpression increased protrusions by ~44% (p=0.004), including thin and mushroom spine subtypes containing PSD-95.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 and C100 provide in vitro evidence for Mtss1L localization and function. The BDNF-induced expression (C49-C50) links to activity-dependence observed in vivo. Colocalization with MAP2 (C51) and PSD-95 (C54-C55) supports dendritic/spine localization. Overexpression experiments (C52-C53, C100) with appropriate statistics (unpaired t-test, p=0.004, n=3) demonstrate sufficiency for spine formation. However, n=3 is relatively small for cell culture experiments, and more replicates would strengthen confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "c92c27ec-c1eb-4136-ac04-145f04c820b3",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mtss1L overexpression increases spine density in vivo. DNA electroporation of mCherry-Mtss1L at P0 increased spine density of mature dentate granule cells at P21 by ~44% (p=0.004) compared to mCherry controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56 and C101 extend the in vitro findings to in vivo conditions. The use of neonatal electroporation allows long-term expression in developing neurons. The effect size (~44%) is similar to the in vitro result, suggesting consistency. Statistics are appropriate (unpaired t-test, p=0.004, n=3). However, this is a developmental manipulation rather than in mature neurons, which limits direct comparison to the exercise paradigm in adult mice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "3f11cb21-416b-4d1b-9ad9-bb50e888cb5a",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mtss1L knockdown prevents exercise-induced increases in spines and EPSCs. shRNA-mediated Mtss1L knockdown occluded the exercise-induced spine increase in OML (p<0.01, one-way ANOVA) and prevented the increase in evoked EPSCs (p=0.42 for knockdown vs control), while scrambled shRNA had no effect. Intrinsic membrane properties were unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 and C102 provide loss-of-function evidence that Mtss1L is necessary for exercise-induced plasticity. The use of contralateral injection of scrambled control (C60) is excellent experimental design. Both morphological (C59, C102) and functional (C61-C62) measures show occlusion. The lack of effect on intrinsic properties (C63) indicates specificity. Statistical analysis is appropriate (one-way ANOVA with Dunnett's test). The interpretation that Mtss1L is 'necessary' (C64) is well-supported by the convergent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "d71863df-a64d-480a-bd7d-287d2e465f7e",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The effect of Mtss1L on synaptic function is dependent on activity-dependent expression. Granule cells expressing only GFP+shRNA (without exercise activation) showed no change in EPSCs, demonstrating that Mtss1L knockdown only affects exercise-activated neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 provide an important control showing that Mtss1L knockdown alone is insufficient to affect synaptic function without prior exercise activation. This supports the model that Mtss1L acts specifically in the context of activity-dependent plasticity. The data from Figure 6\u2014figure supplement 2 shows no effect (p=0.48), which is appropriate. This control strengthens the overall conclusion about activity-dependence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "55ddc27e-8875-41b3-be3c-073a46ae6dbd",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Exercise is a stronger stimulus than novel object exposure for activating dentate granule cells. Exposure to a fixed wheel increased Fos-TRAPed cells by 33% (p<0.01) and Mtss1L expression (p<0.05), but substantially less than the 164% increase with running exercise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 and C106-C107 provide an important control for novelty effects. The fixed wheel control shows that some activation occurs with novelty alone (C70, C106), but exercise produces a much stronger response (C71). The quantitative comparison (33% vs 164% increase) supports this interpretation. Statistics are appropriate (unpaired t-test, p<0.01 for cell counts, p<0.05 for Mtss1L). This control strengthens the conclusion that the observed effects are primarily due to exercise rather than environmental novelty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "daedae8e-ecce-4e2e-9ee5-37b4b66cbecf",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Adult-generated granule cells in the subgranular zone were not activated by acute exercise, possibly because newborn neurons lack direct perforant path input for several weeks. While chronic exercise increases neurogenesis, progenitors and newborn neurons do not receive excitatory input during the timeframe studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C76 address an important negative result. The observation that adult-born neurons were not activated (C73) is stated but data are not shown. The explanation based on lack of perforant path input (C75-C76) is reasonable and supported by citation (Overstreet et al., 2004), but remains speculative (C76 uses 'perhaps'). Without showing the data or quantification, this result cannot be fully evaluated. This is a limitation that should be addressed with data or removed from strong conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "d59f293d-2b55-4a61-82b4-f6c834ed9833",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The laminar-specific increase in OML synaptic function suggests exercise has network-specific effects on contextual information processing. The OML receives contextual and temporal information via the lateral perforant path, suggesting exercise may prime neurons for contextual information in the days following exercise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C28 and C30 about the functional roles of OML and MML are well-supported by citations. However, the interpretation that exercise has 'network-specific effects' (C87) and acts as a 'preconditioning signal' (C89) is speculative. While the laminar specificity is clear from the data, the functional implications for contextual vs spatial information processing are inferred rather than directly tested. The citation to human studies (C90) provides some support but is indirect. This interpretation requires behavioral validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "5f30fffb-7079-46e9-9859-bb05dbbf9a65",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This study provides the first evidence for activity-dependent expression of an I-BAR protein (Mtss1L) and its role in experience-dependent synaptic remodeling. While I-BAR proteins like MIM/Mtss1L can affect constitutive spine formation in cerebellum, neuronal expression of Mtss1L has been largely undetected, likely due to its activity-dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 about novelty are supported by the data showing activity-dependent expression and functional role in synaptic plasticity. The comparison to prior work on constitutive spine formation (C79-C80) provides appropriate context. The explanation for why Mtss1L expression was previously undetected (C81) is reasonable speculation supported by the data. The mention of prior detection in radial glia (C82) acknowledges existing literature. The novelty claims appear justified based on the evidence presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "bb319ad9-826a-47e1-8c11-7aa4971fab98",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Mtss1L belongs to the I-BAR protein family that promotes outward membrane curvature, distinct from BAR proteins that promote inward curvature. I-BAR function may depend on splice variants, and Mtss1L has two known splice variants that were both targeted in the experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 provide established background on BAR/I-BAR protein function, appropriately supported by citations. The discussion of splice variant dependence (C83-C85) is relevant context, though somewhat speculative (C84 uses 'may depend'). The statement that both Mtss1L splice variants were targeted (C86) is important for interpreting the knockdown experiments. This background information is accurate and appropriately cited, providing necessary context for understanding Mtss1L function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "b09bec59-025c-45a5-ae8d-d5f64cd5af67",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Exercise enhances learning and memory through mechanisms that likely involve synaptic plasticity in the hippocampus, particularly in the dentate gyrus. The dentate gyrus has a sparse coding design and is important for encoding contextual and spatial information. Memory improvements occur after both acute and chronic exercise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C12-C16 provide well-established background supported by appropriate citations. These are general knowledge claims about exercise effects on cognition and dentate gyrus function. Claim C2 is more speculative ('likely include') but reasonable given the literature. These claims provide necessary context but are not novel findings of this study. They are appropriately cited and accurately represent the field's understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "4436d1e9-753c-4ca6-beba-c3a4471bb95a",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Exercise-activated neurons show input-selective increases in dendritic spines and EPSCs at 3 days post-exercise, indicative of exercise-induced structural plasticity. This represents a laminar-specific increase in both structural and functional measures of synaptic strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C38 are summary statements of the main findings, supported by the detailed data in other claim groups. The interpretation that these changes are 'indicative of structural plasticity' (C5, C38) is well-supported by the convergent morphological and electrophysiological evidence. These claims accurately summarize the key results and their interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    },
+    {
+      "id": "70855036-ebd4-474e-9dd9-a8ec1257c0db",
+      "content_id": "f4875642-76a9-44aa-957d-14b0fdcd434f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Mtss1L is proposed as a novel effector of activity-dependent synaptic rearrangement and is ideally suited to act as an early mediator of structural plasticity following neural activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C91 represent the main conclusions of the study. These are supported by the convergent evidence from RNASeq identification (C6), activity-dependent expression (C95-C98), gain-of-function (C52-C56), and loss-of-function (C59-C64) experiments. The characterization as 'novel effector' is justified by the novelty of activity-dependent I-BAR expression (C77-C78). The statement that Mtss1L is 'ideally suited' (C91) is somewhat interpretive but reasonable given the I-BAR domain function and the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:48:28.314704Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "59f8b966-8baa-41e2-8d9b-e21c5980ebfe",
+      "result_id": "ee1b236d-3a30-49bf-810a-f47e453a1163"
+    },
+    {
+      "claim_id": "5170714b-ca55-458c-8ed5-cfb01a71849a",
+      "result_id": "ee1b236d-3a30-49bf-810a-f47e453a1163"
+    },
+    {
+      "claim_id": "5e5e4ada-291b-46ae-8cac-956919a1c10a",
+      "result_id": "ee1b236d-3a30-49bf-810a-f47e453a1163"
+    },
+    {
+      "claim_id": "d22ffca6-41e9-4516-a46a-13568c8d7f8a",
+      "result_id": "ee1b236d-3a30-49bf-810a-f47e453a1163"
+    },
+    {
+      "claim_id": "ccce126b-fd89-4b66-a585-b84a26742594",
+      "result_id": "ee1b236d-3a30-49bf-810a-f47e453a1163"
+    },
+    {
+      "claim_id": "78e0cb4f-c196-4aac-81fd-a1d701ad7678",
+      "result_id": "ee1b236d-3a30-49bf-810a-f47e453a1163"
+    },
+    {
+      "claim_id": "a0fd2ad8-4b34-4741-8bdd-a1169cfa1126",
+      "result_id": "ee1b236d-3a30-49bf-810a-f47e453a1163"
+    },
+    {
+      "claim_id": "b4059ff7-cc4c-4927-a03a-6f692cee34cb",
+      "result_id": "ee1b236d-3a30-49bf-810a-f47e453a1163"
+    },
+    {
+      "claim_id": "ad66840d-a5fe-4edb-8e0d-953b5806c7d8",
+      "result_id": "c9877474-f437-40f1-a527-164610b6426c"
+    },
+    {
+      "claim_id": "5aa4eb40-0a03-41af-9044-07c26a4553fb",
+      "result_id": "c9877474-f437-40f1-a527-164610b6426c"
+    },
+    {
+      "claim_id": "67abc723-9e1a-41bc-aa25-ec63f21f561a",
+      "result_id": "c9877474-f437-40f1-a527-164610b6426c"
+    },
+    {
+      "claim_id": "0459bd43-8b75-455a-b6b2-8bbb176c887d",
+      "result_id": "c9877474-f437-40f1-a527-164610b6426c"
+    },
+    {
+      "claim_id": "ec2fb9b1-d3cc-4a79-a8f9-7f935bc18a5f",
+      "result_id": "c9877474-f437-40f1-a527-164610b6426c"
+    },
+    {
+      "claim_id": "f1f15c6a-2974-4be8-8446-90ad2bdff92e",
+      "result_id": "c9877474-f437-40f1-a527-164610b6426c"
+    },
+    {
+      "claim_id": "9f157730-b609-466e-9398-3a1792a8a8fc",
+      "result_id": "c9877474-f437-40f1-a527-164610b6426c"
+    },
+    {
+      "claim_id": "6a11179a-1b37-4d15-9795-04c01724a85b",
+      "result_id": "c9877474-f437-40f1-a527-164610b6426c"
+    },
+    {
+      "claim_id": "87e2a8ef-10f8-4797-b082-b41986624966",
+      "result_id": "c9877474-f437-40f1-a527-164610b6426c"
+    },
+    {
+      "claim_id": "33d8999d-1c4c-4410-801e-0a016a456dfe",
+      "result_id": "dee9086c-45f5-4249-af79-6542ddc234c7"
+    },
+    {
+      "claim_id": "3de35978-b2c7-44b4-975e-f74107be6329",
+      "result_id": "dee9086c-45f5-4249-af79-6542ddc234c7"
+    },
+    {
+      "claim_id": "84a2846a-f94f-4c20-b948-b1159d3c3af2",
+      "result_id": "dee9086c-45f5-4249-af79-6542ddc234c7"
+    },
+    {
+      "claim_id": "a39210ad-72d9-4f72-b65f-3726b1b2bb44",
+      "result_id": "dee9086c-45f5-4249-af79-6542ddc234c7"
+    },
+    {
+      "claim_id": "552c0a2c-dbf5-4ed2-a162-4d6e7532fd2a",
+      "result_id": "aeca8008-dff1-4fc5-945c-52b3f0ad7e00"
+    },
+    {
+      "claim_id": "9e908f97-810c-4a61-9907-4f324f8c2c0e",
+      "result_id": "aeca8008-dff1-4fc5-945c-52b3f0ad7e00"
+    },
+    {
+      "claim_id": "c6cbc05e-411c-4118-8d99-8895644ece1f",
+      "result_id": "aeca8008-dff1-4fc5-945c-52b3f0ad7e00"
+    },
+    {
+      "claim_id": "37123387-0eab-47d0-94dc-ac23ee4f10fd",
+      "result_id": "aeca8008-dff1-4fc5-945c-52b3f0ad7e00"
+    },
+    {
+      "claim_id": "8a24dc78-b049-4196-a814-f0ab9eb68220",
+      "result_id": "aeca8008-dff1-4fc5-945c-52b3f0ad7e00"
+    },
+    {
+      "claim_id": "475626e9-5dff-43b0-8913-e166f2c546c7",
+      "result_id": "aeca8008-dff1-4fc5-945c-52b3f0ad7e00"
+    },
+    {
+      "claim_id": "fccbd695-6404-4596-a5a0-81a3e9f640ba",
+      "result_id": "557de282-532d-4a11-8efd-76b5e969e042"
+    },
+    {
+      "claim_id": "31ebc940-0bc6-4bff-a12d-9d4225055a93",
+      "result_id": "557de282-532d-4a11-8efd-76b5e969e042"
+    },
+    {
+      "claim_id": "15e1fb55-78b5-4b3a-a3ed-c0e82f75be8f",
+      "result_id": "557de282-532d-4a11-8efd-76b5e969e042"
+    },
+    {
+      "claim_id": "2bdf8c51-1082-4884-82a7-2f1bbcf190ea",
+      "result_id": "557de282-532d-4a11-8efd-76b5e969e042"
+    },
+    {
+      "claim_id": "4837e8be-5777-4462-9fd8-ce83aca5576d",
+      "result_id": "557de282-532d-4a11-8efd-76b5e969e042"
+    },
+    {
+      "claim_id": "79e9bd7a-db5e-4136-8c1c-e2e7c6407de2",
+      "result_id": "557de282-532d-4a11-8efd-76b5e969e042"
+    },
+    {
+      "claim_id": "0a414686-7675-409a-bafc-4774edc82157",
+      "result_id": "3a37fbfa-dff6-4210-9703-f34d8e437104"
+    },
+    {
+      "claim_id": "0c7c0050-b683-446d-abdb-4677abb1b926",
+      "result_id": "3a37fbfa-dff6-4210-9703-f34d8e437104"
+    },
+    {
+      "claim_id": "2721a99b-f6f0-4e2c-b3a3-317a1d7cf80d",
+      "result_id": "3a37fbfa-dff6-4210-9703-f34d8e437104"
+    },
+    {
+      "claim_id": "5e0d0fa0-124f-4d84-b393-557dc669a225",
+      "result_id": "3a37fbfa-dff6-4210-9703-f34d8e437104"
+    },
+    {
+      "claim_id": "43b1500b-ed07-4acc-87cf-d87830e7428e",
+      "result_id": "3a37fbfa-dff6-4210-9703-f34d8e437104"
+    },
+    {
+      "claim_id": "75957587-f455-432b-b036-ae8ffba47f54",
+      "result_id": "3a37fbfa-dff6-4210-9703-f34d8e437104"
+    },
+    {
+      "claim_id": "6481d2e0-eb67-41af-9503-737794a1b559",
+      "result_id": "3a37fbfa-dff6-4210-9703-f34d8e437104"
+    },
+    {
+      "claim_id": "83bdb14d-734c-4330-b865-02329adcfc08",
+      "result_id": "3a37fbfa-dff6-4210-9703-f34d8e437104"
+    },
+    {
+      "claim_id": "63c57727-4966-4106-80f6-0498360fb2e7",
+      "result_id": "c92c27ec-c1eb-4136-ac04-145f04c820b3"
+    },
+    {
+      "claim_id": "f4dd545b-7cdc-4da6-908c-34493f542dda",
+      "result_id": "c92c27ec-c1eb-4136-ac04-145f04c820b3"
+    },
+    {
+      "claim_id": "5633cdf2-58d7-430e-a1c3-931a22fb9986",
+      "result_id": "3f11cb21-416b-4d1b-9ad9-bb50e888cb5a"
+    },
+    {
+      "claim_id": "1bc3a0c0-17e2-486f-8cd8-65aafcf5bc65",
+      "result_id": "3f11cb21-416b-4d1b-9ad9-bb50e888cb5a"
+    },
+    {
+      "claim_id": "3cc883ab-e5c1-4499-9e0a-42d401b15060",
+      "result_id": "3f11cb21-416b-4d1b-9ad9-bb50e888cb5a"
+    },
+    {
+      "claim_id": "e92d9cde-01a7-48c2-b2d0-6be39c5fc78d",
+      "result_id": "3f11cb21-416b-4d1b-9ad9-bb50e888cb5a"
+    },
+    {
+      "claim_id": "16897722-a140-4cb0-aaff-c576b80f11aa",
+      "result_id": "3f11cb21-416b-4d1b-9ad9-bb50e888cb5a"
+    },
+    {
+      "claim_id": "120232d0-d4a2-4f9b-8ced-a4baf7415c46",
+      "result_id": "3f11cb21-416b-4d1b-9ad9-bb50e888cb5a"
+    },
+    {
+      "claim_id": "a6537ce8-a517-474e-a518-8764248f2acf",
+      "result_id": "3f11cb21-416b-4d1b-9ad9-bb50e888cb5a"
+    },
+    {
+      "claim_id": "c17710f2-1da0-40c3-90ed-e3a10e3bcad8",
+      "result_id": "d71863df-a64d-480a-bd7d-287d2e465f7e"
+    },
+    {
+      "claim_id": "028cd720-719b-41dd-8152-b4d6b0aeb4be",
+      "result_id": "d71863df-a64d-480a-bd7d-287d2e465f7e"
+    },
+    {
+      "claim_id": "d096fc97-c1a5-4e97-bd2e-bbc9b1c4f521",
+      "result_id": "55ddc27e-8875-41b3-be3c-073a46ae6dbd"
+    },
+    {
+      "claim_id": "dc70a55c-c2a7-4fe4-85e3-efb9176ea53a",
+      "result_id": "55ddc27e-8875-41b3-be3c-073a46ae6dbd"
+    },
+    {
+      "claim_id": "94f5c387-a80b-42ee-bdea-33f65ea65e69",
+      "result_id": "55ddc27e-8875-41b3-be3c-073a46ae6dbd"
+    },
+    {
+      "claim_id": "57994da5-0335-4092-8bef-d032b4d90a35",
+      "result_id": "55ddc27e-8875-41b3-be3c-073a46ae6dbd"
+    },
+    {
+      "claim_id": "9904f8c2-8f0b-4229-8510-5dcb2d9d71c4",
+      "result_id": "daedae8e-ecce-4e2e-9ee5-37b4b66cbecf"
+    },
+    {
+      "claim_id": "dfa3b0be-92dc-4a2a-aa1a-dd71a1bb8e00",
+      "result_id": "daedae8e-ecce-4e2e-9ee5-37b4b66cbecf"
+    },
+    {
+      "claim_id": "cc6b7e75-2655-471c-8323-01371d5250d2",
+      "result_id": "daedae8e-ecce-4e2e-9ee5-37b4b66cbecf"
+    },
+    {
+      "claim_id": "ef3e3330-4712-4f16-9cdb-72c8906d54c1",
+      "result_id": "daedae8e-ecce-4e2e-9ee5-37b4b66cbecf"
+    },
+    {
+      "claim_id": "dcb68348-c4e1-4566-9286-90a1ee5eaa14",
+      "result_id": "d59f293d-2b55-4a61-82b4-f6c834ed9833"
+    },
+    {
+      "claim_id": "07d77166-8cd4-4dc8-af19-7a715a82dd4d",
+      "result_id": "d59f293d-2b55-4a61-82b4-f6c834ed9833"
+    },
+    {
+      "claim_id": "dd02d70d-3a56-43a5-bdfc-b3f2ba15f45e",
+      "result_id": "d59f293d-2b55-4a61-82b4-f6c834ed9833"
+    },
+    {
+      "claim_id": "431891ae-bd8c-4015-9f18-ba88ddf96043",
+      "result_id": "d59f293d-2b55-4a61-82b4-f6c834ed9833"
+    },
+    {
+      "claim_id": "73efa1de-d5d1-47d7-8e14-9a88d66ce96b",
+      "result_id": "d59f293d-2b55-4a61-82b4-f6c834ed9833"
+    },
+    {
+      "claim_id": "5333058f-48e7-4b27-8f2f-ec271f91c802",
+      "result_id": "5f30fffb-7079-46e9-9859-bb05dbbf9a65"
+    },
+    {
+      "claim_id": "ded40f40-3911-4df3-a87f-b13c9669c402",
+      "result_id": "5f30fffb-7079-46e9-9859-bb05dbbf9a65"
+    },
+    {
+      "claim_id": "cb59a8fa-6193-4035-9e35-f3d192031b8d",
+      "result_id": "5f30fffb-7079-46e9-9859-bb05dbbf9a65"
+    },
+    {
+      "claim_id": "3df06577-77e6-44cb-9de4-ff7bc8fff0e5",
+      "result_id": "5f30fffb-7079-46e9-9859-bb05dbbf9a65"
+    },
+    {
+      "claim_id": "a7ea634b-b84c-4d39-8012-141f185ff84a",
+      "result_id": "5f30fffb-7079-46e9-9859-bb05dbbf9a65"
+    },
+    {
+      "claim_id": "f9ac1ab2-8dc9-470d-9f03-7b974cc040e6",
+      "result_id": "5f30fffb-7079-46e9-9859-bb05dbbf9a65"
+    },
+    {
+      "claim_id": "250847b1-8524-452f-b044-73e71e9a41c4",
+      "result_id": "bb319ad9-826a-47e1-8c11-7aa4971fab98"
+    },
+    {
+      "claim_id": "e3b78e93-2bdc-4407-9aa2-8f86bda738f7",
+      "result_id": "bb319ad9-826a-47e1-8c11-7aa4971fab98"
+    },
+    {
+      "claim_id": "1475df5d-d5dc-4ae6-bb35-25da1f84f7c9",
+      "result_id": "bb319ad9-826a-47e1-8c11-7aa4971fab98"
+    },
+    {
+      "claim_id": "d42b91b2-8e16-4300-bb01-443c8bd50766",
+      "result_id": "bb319ad9-826a-47e1-8c11-7aa4971fab98"
+    },
+    {
+      "claim_id": "151a7b4b-eba8-4df2-88a8-a6e369efc79c",
+      "result_id": "bb319ad9-826a-47e1-8c11-7aa4971fab98"
+    },
+    {
+      "claim_id": "f3d6aed9-1584-4325-9bf7-70b314d4cc7d",
+      "result_id": "bb319ad9-826a-47e1-8c11-7aa4971fab98"
+    },
+    {
+      "claim_id": "eca38c35-33ce-4dcc-a8ad-750c731796af",
+      "result_id": "bb319ad9-826a-47e1-8c11-7aa4971fab98"
+    },
+    {
+      "claim_id": "7c91557a-988d-47d4-bff4-1867e9daf321",
+      "result_id": "bb319ad9-826a-47e1-8c11-7aa4971fab98"
+    },
+    {
+      "claim_id": "e18f79d3-10b9-49f3-8019-2eb278465ca4",
+      "result_id": "b09bec59-025c-45a5-ae8d-d5f64cd5af67"
+    },
+    {
+      "claim_id": "99bda9da-c59f-40fd-bc3f-7432a9e36c91",
+      "result_id": "b09bec59-025c-45a5-ae8d-d5f64cd5af67"
+    },
+    {
+      "claim_id": "3170174b-cdf0-442f-982e-245dfe4f6540",
+      "result_id": "b09bec59-025c-45a5-ae8d-d5f64cd5af67"
+    },
+    {
+      "claim_id": "23e49521-d1f1-464a-adf3-2f689e1658dd",
+      "result_id": "b09bec59-025c-45a5-ae8d-d5f64cd5af67"
+    },
+    {
+      "claim_id": "495eae3b-6dd2-45f5-86d8-cdd18de8ea69",
+      "result_id": "b09bec59-025c-45a5-ae8d-d5f64cd5af67"
+    },
+    {
+      "claim_id": "18b27834-647a-45e6-a7a4-b90727b13286",
+      "result_id": "b09bec59-025c-45a5-ae8d-d5f64cd5af67"
+    },
+    {
+      "claim_id": "6bb1606e-306a-4df1-9dfe-de2dbba409f1",
+      "result_id": "b09bec59-025c-45a5-ae8d-d5f64cd5af67"
+    },
+    {
+      "claim_id": "5606c8d0-888b-45ea-a68e-372e398d597c",
+      "result_id": "4436d1e9-753c-4ca6-beba-c3a4471bb95a"
+    },
+    {
+      "claim_id": "c1ffb005-74b2-4b18-a08c-498d70885ced",
+      "result_id": "4436d1e9-753c-4ca6-beba-c3a4471bb95a"
+    },
+    {
+      "claim_id": "2938c0d2-5210-43e3-9555-bc9013325378",
+      "result_id": "4436d1e9-753c-4ca6-beba-c3a4471bb95a"
+    },
+    {
+      "claim_id": "1165c73b-e97b-4be1-afd4-3b9413940661",
+      "result_id": "4436d1e9-753c-4ca6-beba-c3a4471bb95a"
+    },
+    {
+      "claim_id": "86e134e5-1cb9-43f3-bbf7-d77c4d6cc8e1",
+      "result_id": "70855036-ebd4-474e-9dd9-a8ec1257c0db"
+    },
+    {
+      "claim_id": "1e93d9c6-f5ce-419e-af51-48a7e507cae6",
+      "result_id": "70855036-ebd4-474e-9dd9-a8ec1257c0db"
+    }
+  ],
+  "comparisons": []
+}

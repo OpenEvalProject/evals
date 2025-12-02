@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Both disease-associated TRPM3 mutations (V990/992M and P1090/1092Q) render the channel overactive, but through different mechanisms. The V990/992M mutation in the S4-S5 loop shows greater increases in basal activity and agonist sensitivity at room temperature (EC50 for PregS: 0.32-0.63 \u03bcM vs wild-type 7.01-17.1 \u03bcM), while the P1090/1092Q mutation in the S6 segment shows more pronounced heat activation (temperature-induced response ~122.5% vs 76.5% of PregS response, with steeper temperature-current slopes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary experimental approaches (Ca2+ imaging in HEK293 cells, patch clamp, and two-electrode voltage clamp in oocytes) consistently demonstrate gain-of-function phenotypes for both mutants with distinct mechanistic profiles. The quantitative EC50 values, temperature response ratios, and slope measurements provide robust statistical support across different splice variants and expression systems. The differential effects on agonist sensitivity versus heat activation are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C48",
+      "C49",
+      "C65",
+      "C66",
+      "C67",
+      "C11",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Both TRPM3 mutants are inhibited by the TRPM3 antagonist primidone, with IC50 values of 2.41 \u03bcM for V992M and 0.64 \u03bcM for P1092Q at room temperature. Primidone reduced basal Ca2+ levels in both wild-type and mutant channels at 37\u00b0C, with larger inhibition in V990M than P1090Q. Since primidone is a clinically approved antiepileptic drug that crosses the blood-brain barrier and inhibits TRPM3 below therapeutic concentrations, this suggests a potential therapeutic intervention for this channelopathy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inhibitory effects of primidone are well-documented across multiple experimental systems (Ca2+ imaging and electrophysiology) with quantitative IC50 measurements. The therapeutic potential claim (C11) is appropriately qualified as a suggestion based on the demonstrated inhibition and known pharmacological properties of primidone. However, this remains speculative without clinical validation or in vivo disease model testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C59"
+    ],
+    "result": "In heterozygous conditions (1:1 mutant:wild-type ratio mimicking patient genotype), the V990M mutation maintains a marked leftward shift in PregS dose-response (EC50: 3.83 \u03bcM vs 17.8 \u03bcM for wild-type), while the P1090Q mutation shows only marginal shift (EC50: 12.2 \u03bcM vs 17.8 \u03bcM). This demonstrates that the V990M mutation has a dominant gain-of-function effect even in the heterozygous state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The heterozygous experiments appropriately model the clinical situation since all known patients are heterozygous (C59). The quantitative EC50 measurements in oocytes co-expressing mutant and wild-type channels provide clear evidence for differential dominant effects. This is a critical finding for understanding disease pathophysiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C87"
+    ],
+    "result": "Both mutants show elevated basal activity compared to wild-type TRPM3, with V990M showing higher basal currents than P1090Q at room temperature. This increased constitutive activity is consistent with gain-of-function mutations that stabilize the open state of the channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Basal current measurements in oocytes (C69, C70) and Ca2+ measurements in HEK293 cells (C87) consistently demonstrate elevated basal activity for both mutants. The differential basal activity between mutants at room temperature supports the mechanistic interpretation that V990/992M has a larger effect on open state stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The ratio of temperature-induced currents (30\u00b0C) to PregS-induced currents is significantly larger for P1090Q compared to V990M, and both mutants show larger ratios than wild-type. This indicates enhanced temperature sensitivity, particularly for the P1090Q mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temperature/PregS current ratio measurements in oocytes provide quantitative evidence for differential temperature sensitivity. The control experiment showing negligible currents in non-injected oocytes at 30\u00b0C (C73) validates that the observed effects are TRPM3-specific. The limitation to 30\u00b0C due to endogenous temperature-activated currents at higher temperatures is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "M2 muscarinic receptor activation (via G\u03b2\u03b3) inhibits wild-type TRPM3 and P1090Q mutant by ~50%, but the V990M mutant shows reduced inhibition at high PregS concentrations (50 \u03bcM). However, at lower PregS concentrations (5 \u03bcM) or at EC50 concentrations, V990M shows normal inhibition, indicating that impaired receptor-mediated inhibition is not the primary mechanism of the gain-of-function phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GPCR inhibition experiments are well-controlled with appropriate concentration ranges tested. The key finding that V990M inhibition is restored at lower agonist concentrations (C78, C79) supports the interpretation that the apparent loss of inhibition at high PregS is an allosteric effect rather than a primary defect in G\u03b2\u03b3 binding. This mechanistic insight is important for understanding the mutation's effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "At 37\u00b0C (physiological temperature), wild-type TRPM3 shows increased PregS sensitivity (EC50: 0.99 \u03bcM vs 7 \u03bcM at room temperature) and elevated basal Ca2+ levels. Both mutant channels show very high basal Ca2+ levels at 37\u00b0C that are not further increased by PregS, indicating substantial Ca2+ overload under continuous physiological temperature conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temperature-dependent changes in channel activity are well-documented with quantitative EC50 measurements. The observation of Ca2+ overload in mutants at 37\u00b0C (C45-C47) is critical for understanding disease pathophysiology. However, the interpretation of \"Ca2+ overload\" (C47) is somewhat inferential, though reasonably supported by the data showing maximal Ca2+ levels that cannot be further increased by agonist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The authors propose that increased neuronal excitability and/or Ca2+-induced neuronal damage are possible disease-causing mechanisms, based on the observed increased constitutive activity of the mutants at body temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the increased constitutive activity at physiological temperature is well-established, the proposed disease mechanisms (C82, C83) are speculative. No direct evidence of neuronal excitability or Ca2+-induced damage is provided. These are reasonable hypotheses based on the channel properties, but require validation in neuronal systems or disease models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The V990/992M mutation is located in the S4-S5 linker, a region known to be critical for channel gating and a hotspot for disease-associated gain-of-function mutations in TRP channels. The mutation likely primarily increases open state stability, with the decreased EC50 for agonist activation being a thermodynamic consequence. However, direct effects on PregS binding cannot be excluded given the role of this region in ligand binding in related channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic interpretation is well-grounded in established principles of channel gating thermodynamics (supported by Colquhoun, 1998 citation) and comparative structural biology from related TRP channels. The increased basal activity provides strong evidence for enhanced open state stability (C98). The acknowledgment that direct ligand binding effects cannot be excluded (C100) is appropriately cautious given the lack of TRPM3 structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "PIP2 is required for PregS-induced TRPM3 activity, and structural analysis of TRPM8 shows that the equivalent of V990 is near PIP2 binding sites. The authors speculate that the V990/992M mutation might affect PregS activation indirectly via PIP2, and that increased Ca2+ levels in mutant-expressing cells might modify cellular PIP2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The requirement of PIP2 for TRPM3 activity is well-established by citations (C101). The structural comparisons to TRPM8 (C102) provide reasonable context, but the proposed indirect effects via PIP2 (C105, C106) are speculative. No direct measurements of PIP2 binding, PIP2 sensitivity, or cellular PIP2 levels are provided. These remain plausible hypotheses requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The P1090/1092Q mutation is located in the outer portion of S6, a region that in TRPV1 and TRPV3 selectively affects heat activation. The authors propose that the primary effect of P1090/1092Q is increasing heat sensitivity, with increased PregS sensitivity being secondary to enhanced heat activation, given the known synergy between temperature and PregS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic interpretation is well-supported by comparative mutagenesis studies in related channels (C107) and the observed differential effects on heat versus agonist activation. The structural location in S6 (C108) and the stronger effect on heat activation (documented in multiple claims) support this interpretation. The proposal that increased PregS sensitivity is secondary (C111) is reasonable given the demonstrated temperature-PregS synergy (C110), though this remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction establishes the known properties of TRPM3: it is a Ca2+-permeable cation channel activated by heat and chemical agonists (PregS, CIM0216), functions as a temperature sensor in DRG neurons affecting nociception, is inhibited by Gi-coupled receptors, and is expressed in various tissues including pancreatic \u03b2-cells, vascular smooth muscle, and brain, though functional roles outside sensory neurons are poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations to prior literature. They establish the necessary context for understanding the significance of the disease-associated mutations. All claims are properly attributed to prior work and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Two missense mutations in TRPM3 (V837M in S4-S5 loop found in 7/8 patients, and P937Q in S6 found in 1 patient) are associated with neurodevelopmental disorder with intellectual disability, hypotonia, and epilepsy. The functional effects of these mutations were not previously reported, representing the knowledge gap addressed by this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent the clinical findings from Dyment et al., 2019 and clearly establish the rationale for the current study. The citation is appropriate and the description of the knowledge gap (C5) is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "HEK293 cells were obtained from ATCC (CRL-1573), with cell identity verified by STR analysis and tested for mycoplasma contamination. Cells were used up to passage 25-30.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details are clearly stated and follow appropriate cell culture authentication practices. The information is sufficient for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C66",
+      "C73"
+    ],
+    "result": "Appropriate negative controls were performed: cells not expressing TRPM3 showed negligible Ca2+ signals at 37\u00b0C, primidone had no effect on non-injected oocytes, and temperature increases to 30\u00b0C induced negligible currents in non-injected oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These control experiments are essential for validating that observed effects are TRPM3-specific. While some are mentioned as \"not shown\" in the text, the controls are appropriate and strengthen the conclusions.",
+    "result_type": "MINOR"
+  }
+]

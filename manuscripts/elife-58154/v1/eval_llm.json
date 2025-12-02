@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C16",
+      "C17",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C79"
+    ],
+    "result": "The LPFC contains two minimally dependent low-dimensional subspaces: a working memory subspace where target information emerges in Delay 1 and is maintained through Delay 2, and a motor preparation subspace where information emerges only in Delay 2 after distractor presentation. These subspaces were identified through an optimization method that minimized mutual information between unmixed elements (from 0.33 bits to 0.08 bits), with specific mixing coefficients (a=0.12, b=0.65) defining the relative magnitudes of each element across delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C37-C45 provide converging evidence for two minimally dependent subspaces through: (1) quantitative mutual information reduction from optimization (C37-C38), (2) distinct temporal dynamics of projection magnitudes (C41-C42), (3) differential cross-temporal decoding patterns showing working memory information throughout the trial (C43-C44) versus motor preparation information only in Delay 2 (C45), and (4) appropriate variance explained and effective dimensionality (C46-C48). The methodological approach is clearly described and results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Subspace 1 corresponds to a working memory subspace and Subspace 2 corresponds to a motor preparation subspace, validated through principal angle analysis and correlation with pre-saccadic activity. Element 1 showed near-perfect correlation with Element 1' (r>0.99), while Element 2 showed significant correlation with pre-saccadic Element 2' (r=0.62), with 47% of spatially tuned neurons showing significant correlation between motor preparation and pre-saccadic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 provide multiple lines of validation: (1) principal angle analysis showing Subspace 1 is significantly closer to previously identified working memory subspace (C50), (2) high correlation between unmixed elements and their temporal counterparts (C53-C54), and (3) single-cell level validation showing specific correlation between motor preparation and pre-saccadic activity but not between working memory and pre-saccadic activity (C55-C56). The convergence of population-level and single-cell analyses strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C107",
+      "C108"
+    ],
+    "result": "A single population of neurons with mixed selectivity forms both subspaces, with 88-90% of neurons having loading weights away from exclusive axes and a significant positive correlation (r=0.68) between loading weights in the two subspaces. Only 14 neurons (6%) showed exclusive loading for one subspace, and these were not necessary for subspace identification. Among selective cells, 43.9% showed mixed selectivity to both working memory and motor preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C57-C60, C107-C108 provide consistent evidence that mixed selectivity neurons form both subspaces through: (1) quantitative loading weight analysis showing most neurons contribute to both subspaces (C107), (2) significant positive correlation between loading weights (C57), (3) demonstration that exclusively loaded neurons are rare and unnecessary (C59-C60), and (4) cell classification showing substantial mixed selectivity (C108). The rejection of the exclusive population mechanism is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The working memory and motor preparation subspaces are non-orthogonal with small but significant interference between them. While decoding performance showed no evidence of drops when both types of information were present (p>0.73 for working memory, p>0.22 for motor preparation), state space analysis revealed a 7.1% decrease in inter-to-intra cluster distance ratio, indicating small but significant interference (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 demonstrate appropriate use of multiple analytical approaches to assess interference: (1) principal angle analysis establishing non-orthogonality (C61-C62), (2) decoding performance analysis showing minimal practical interference (C64-C65), and (3) more sensitive state space analysis detecting small but significant interference (C66-C67). The apparent contradiction between methods is appropriately addressed by noting that decoding boundaries are not crossed despite cluster shifts. The statistical tests are properly reported with p-values and effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C19"
+    ],
+    "result": "Both subspaces show behavioral relevance with significantly reduced decoding performance in error trials compared to correct trials (p<0.001, g=13.9 for working memory subspace; p<0.001, g=13.8 for motor preparation subspace), with the reduction specific to the subspaces and not due to general noise increase in the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C72, C19 provide strong evidence for behavioral relevance through: (1) significant and large effect size reductions in both subspaces during error trials (C68, C70), (2) appropriate control analysis ruling out general noise increase as an alternative explanation (C19, with methods describing intra-cluster variance analysis), and (3) consistency with behavioral expectations that errors involve different saccade locations (C71). The statistical tests are properly conducted with both p-values and effect sizes reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C73",
+      "C74",
+      "C44"
+    ],
+    "result": "Working memory information decreased in Delay 2 (from 60.5\u00b11.3% to 39.9\u00b11.1%) coincident with motor preparation information emergence, while mean population firing rate remained constant across delay periods. This pattern is consistent with a divisive normalization mechanism acting on population activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C73-C74, C44 provide converging evidence for normalization: (1) quantitative decrease in working memory decoding performance in Delay 2 (C44), (2) constant mean population firing rate across periods (C73), and (3) appropriate inference linking these observations to normalization mechanisms with supporting citations (C22, C74). The observation is unexpected based on the initial hypothesis but is well-documented and leads to appropriate modeling work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C23",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Computational models with divisive normalization replicate the properties of neural data. Both a bump attractor model and a linear subspace model with divisive normalization qualitatively replicated all features of the neural data, while models without normalization failed to reproduce key properties including constant population firing rate and decreased working memory information in Delay 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C23, C75-C77 demonstrate that divisive normalization is necessary for model fidelity through systematic comparison of models with and without normalization (C75-C76). The authors appropriately acknowledge limitations (C89) that models provide only high-level support and mechanistic implementation is needed. The modeling provides convergent support for the normalization hypothesis but does not constitute independent validation. The claim about normalization being part of LPFC function (C78) is appropriately marked as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study recorded 226 single neurons from LPFC of two male macaque monkeys using chronically implanted electrode arrays (192 electrodes in Animal A, 112 in Animal B), with FEF identification via microstimulation. Data were analyzed using pseudo-populations constructed by pooling activity across recording sessions, with 1,750 pseudo-trials for training and 1,750 for testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C99-C105 provide clear methodological documentation of subjects, recording techniques, and data analysis approach. The use of pseudo-populations is explicitly stated (C104), which is important for interpreting the results as this approach assumes stationarity across sessions. The FEF identification criterion is clearly defined (C102). One animal was presented with only 7 of 8 target locations due to behavioral bias (C103), which is appropriately disclosed and consistent with the 7-location analysis throughout.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "LPFC neurons showed sustained selectivity to target locations during both delay periods, with some maintaining the same tuning and others changing tuning between delays (code-morphing). A decoder trained in Delay 1 could not decode memory locations in Delay 2 and vice versa, indicating two stable but non-generalizing population codes. This code-morphing was observed in LPFC but not FEF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 establish the phenomenon of code-morphing that motivates the subspace analysis. The cross-temporal decoding results (C30, Figure 2a) clearly demonstrate the lack of generalization between delays. The regional specificity to LPFC versus FEF (C32) is supported by citation to previous work. The single-neuron examples (C25-C27) and population-level analysis (C29) provide converging evidence at multiple scales. This prior finding from the same lab provides the foundation for the current subspace decomposition approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The two subspaces account for different proportions of variance in Delay 1 (14.6% and 10.3% for Subspaces 1 and 2) versus Delay 2 (5.8% and 8.1%), with an effective dimensionality of 6 dimensions each based on PCA analysis requiring 6 of 7 principal components to explain >95% of variance within each subspace.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 provide appropriate characterization of subspace properties through variance explained and dimensionality analysis. The effective dimensionality of 6 (C48) being less than the 7 target locations leads to the reasonable inference that the true neural code dimensionality may be smaller than the discrete task structure (C49). The variance explained values are relatively low (C46-C47), which is acknowledged and consistent with the subspaces being embedded in a high-dimensional space.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Significant target information was present outside the previously identified stable working memory subspace (35.7\u00b11.7% in Delay 1, 31.6\u00b11.5% in Delay 2), suggesting the existence of an additional non-trivial subspace. The stable population activity in Delay 2 suggested animals could have initiated preparatory activity after distractor offset, as the distractor was the last signal reliably predicting the Go cue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 provide the motivation for seeking a second subspace beyond the previously identified working memory subspace. The null space decoding performance values (C33) are cited from previous work and demonstrate substantial information outside the working memory subspace. The inference about motor preparation timing (C35) is reasonable given the task structure (C36), though appropriately presented as a hypothesis rather than established fact. This motivates the subsequent unmixing analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "This work provides the first evidence that information about two separate cognitive processes (working memory and motor preparation) can be simultaneously encoded in subspaces within the same brain region. Previous work reported either single subspaces, multiple subspaces in different regions, or sequential rather than simultaneous subspace usage within a region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 appropriately contextualize the novelty of the findings through comparison with prior literature. The distinction from Mante et al. 2013 (C82) and Minxha et al. 2020 (C83) is clearly articulated - those studies either mixed stimulus and cognitive subspaces or used subspaces asynchronously. The claim of novelty (C80) is well-supported by the literature review (C81) and the distinction that both subspaces encode cognitive (not sensory) information simultaneously is valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The LPFC integrates multiple types of information including working memory and motor preparation, with a large proportion of neurons showing mixed selectivity. This mixed selectivity creates a high-dimensional representational space, and multiple low-dimensional subspaces could enable independent readout of different information types. While information subspaces have been identified in various brain regions, no prior studies explicitly tested whether two separate cognitive processes can be simultaneously encoded in subspaces within a single biological neural network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C15 establish the background and motivation for the study through appropriate citations to prior work. The claims about LPFC function (C1), mixed selectivity (C8-C9), and the theoretical framework of subspaces (C10) are well-supported by citations. The literature review of subspaces in different brain regions (C11-C14) is accurate. The claim of novelty (C15) is appropriately scoped - while subspaces have been studied, the simultaneous encoding of two cognitive processes in one region has not been explicitly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The LPFC's dense connectivity (>80 regions) and resulting high dimensionality from mixed selectivity could support multiple coexisting subspaces, enabling different downstream regions to read out specific information types (e.g., visual areas reading working memory, premotor regions reading motor preparation). The limited capacity of working memory items may reflect encoding constraints within the working memory subspace, while the diversity of information types that can be encoded may reflect the large number of possible subspaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C98 present a speculative framework connecting the findings to broader questions about LPFC function, working memory capacity, and cognitive flexibility. While the anatomical connectivity claim (C90) is supported by citation, most other claims are explicitly speculative (C88, C95, C98) or inferential (C91, C93). The functional connectivity claims (C85-C86) are supported by citations but represent hypotheses about how subspaces might be read out rather than demonstrated mechanisms. These represent reasonable interpretations and future directions but lack direct empirical support from the current study.",
+    "result_type": "MINOR"
+  }
+]

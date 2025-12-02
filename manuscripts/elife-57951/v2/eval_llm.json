@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The SAPK pathway is activated by low concentrations of LatA (0.15-0.2 \u00b5M) in S. pombe, and mutants lacking SAPK components (sty1\u0394, mcs4\u0394, wak1\u0394, win1\u0394, wis1\u0394) are resistant to LatA, while mutants with hyperactive SAPK (wis1DD, pyp1\u0394, ptc1\u0394) are hypersensitive. Sty1 activation by LatA is dose-dependent, requires dual phosphorylation, and is mediated through the Mcs4 response regulator independently of the two-component system for oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C72 provide comprehensive evidence from multiple genetic backgrounds (deletions, hyperactive mutants, phosphorylation mutants) and biochemical assays (Western blots with phospho-p38 antibodies) showing consistent dose-dependent SAPK activation by LatA and opposite growth phenotypes in loss- vs. gain-of-function mutants. The use of LatA-resistant actin mutants (C65-C66) and Mcs4 mutants (C67-C70) provides strong mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Sty1-mediated negative control of cell growth in LatA is primarily transcription-independent, as cells expressing a nuclear-excluded Sty1-GFP-CAAX fusion show similar LatA sensitivity to control cells. However, the transcription factor Atf1 is activated by LatA and atf1\u0394 cells show lower LatA tolerance than wild-type, opposite to sty1\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by the Sty1-GFP-CAAX localization experiment (C73-C74) and Atf1 mobility shift/growth assays (C75-C76). The opposite phenotypes of sty1\u0394 (resistant) vs. atf1\u0394 (sensitive) suggest Atf1 has a protective role independent of Sty1's negative regulation, supporting the transcription-independent mechanism interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Low concentrations of LatA (0.2 \u00b5M) that activate Sty1 and inhibit CAR assembly do not cause dispersal of active Cdc42 from cell poles, and the timing of CRIB-3xGFP dispersal after SPB separation is unchanged by 0.15 \u00b5M LatA treatment. Sty1 deletion partially suppresses LatA sensitivity in Cdc42 GEF mutants (gef1\u0394, scd1\u0394), suggesting SAPK-mediated growth inhibition is not primarily through Cdc42 activity changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide multiple lines of evidence (CRIB-3xGFP localization, timing measurements, genetic suppression) that low LatA concentrations do not affect Cdc42 activity despite activating Sty1. The data are internally consistent and rule out Cdc42 as the primary mediator of SAPK effects on CAR integrity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The SAPK pathway does not affect actin (act1+) gene expression or Act1 protein levels, as both mRNA and protein levels are virtually identical in wild-type, sty1\u0394, and wis1DD mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by qPCR data (Figure 2\u2014figure supplement 1) and Western blot analysis (Figure 2\u2014figure supplement 2) showing no significant differences in actin expression across genotypes. This rules out transcriptional/translational regulation of actin as a mechanism for SAPK effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "During unperturbed growth, actin patch and cable integrity is similar across wild-type, sty1\u0394, and wis1DD cells. Treatment with 0.15 \u00b5M LatA does not affect patch density but causes partial depolarization of patches in wild-type and wis1DD cells, while patches remain polarized in sty1\u0394 cells. The time for complete patch depolymerization with high LatA (20 \u00b5M) is similar in wild-type and sty1\u0394 cells, indicating LatA resistance is not due to differential drug entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 are supported by confocal microscopy data (Figure 2A-B) and time-course experiments (Figure 2\u2014figure supplement 3). The differential response to low vs. high LatA concentrations and the similar depolymerization kinetics at high concentrations provide strong evidence that SAPK affects actin organization rather than drug uptake.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Actin cables are present in ~100% of cells during unperturbed growth across all genotypes. Treatment with 0.15 \u00b5M LatA reduces cable numbers in wild-type and wis1DD cells but cables remain assembled in sty1\u0394 cells. Environmental stresses that activate Sty1 (0.6 M KCl, 40\u00b0C, 1 mM H2O2) also reduce cable numbers in wild-type but not sty1\u0394 cells, indicating Sty1 negatively regulates actin cable integrity in response to stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by quantitative microscopy data (Figure 2A, C, and Figure 2\u2014figure supplement 4) showing consistent patterns across multiple stress conditions. The genetic specificity (sty1\u0394 resistance) and multiple stress conditions strengthen the conclusion that Sty1 negatively regulates cable integrity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "During unperturbed growth, CAR assembly and constriction timing is similar in wild-type, sty1\u0394, and wis1DD cells. Treatment with 0.2 \u00b5M LatA impairs CAR assembly in >80% of wild-type cells but rings form correctly in >85% of sty1\u0394 cells. With 0.15 \u00b5M LatA, rings form normally in >85% of wild-type cells but fail in >84% of wis1DD cells. In asynchronous cultures, CAR damage increases over time in wild-type cells (40% at 20 min, 90% at 40 min) and is more pronounced in wis1DD cells, while sty1\u0394 cells maintain CAR integrity longer. Inhibition of Sty1 kinase activity with 3BrBPP1 in Sty1-T97A cells favors CAR assembly during LatA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C108 are supported by extensive time-lapse microscopy data (Figure 2D-G, Figure 2\u2014figure supplement 5) showing consistent dose-dependent and genotype-specific effects. The use of both genetic (sty1\u0394, wis1DD) and chemical (3BrBPP1) approaches to modulate SAPK activity provides strong convergent evidence that SAPK negatively regulates CAR assembly during LatA stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "During unperturbed growth, for3\u0394 cells show normal node condensation and ring maturation timing but display delayed ring constriction and disassembly (36 \u00b1 1.6 min vs. 21 \u00b1 0.6 min in wild-type). for3\u0394 cells are hypersensitive to LatA, and For3 deletion completely suppresses the LatA-resistant phenotype of sty1\u0394 cells. In 0.15 \u00b5M LatA, CARs fail to assemble in >70% of for3\u0394 cells while forming correctly in >80% of wild-type cells, suggesting For3 localization at the CAR is essential for maintaining ring integrity during LatA stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 are supported by time-lapse microscopy (Figure 2\u2014figure supplement 5, Figure 3A-B) and genetic epistasis analysis showing complete suppression of sty1\u0394 LatA resistance by for3\u0394. The quantitative data on CAR assembly defects and the epistasis relationship provide strong evidence that For3 is the primary target through which SAPK regulates CAR integrity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "After 40 min incubation with 0.15 \u00b5M LatA, both wild-type and for3\u0394 cells show highly damaged rings, while ~45% of rings remain unaffected in sty1\u0394 cells. However, the sty1\u0394 for3\u0394 double mutant shows CAR defects similar to for3\u0394 cells, indicating that For3 is epistatic to Sty1 for CAR integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by phalloidin staining data (Figure 3C) showing clear epistasis. The double mutant phenotype matching for3\u0394 rather than sty1\u0394 provides strong genetic evidence that For3 acts downstream of or in parallel to Sty1, and that Sty1's protective effect requires For3 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Cdc12 phosphorylation slightly increases with LatA concentration while total Cdc12 levels remain constant. However, Cdc12 protein and phosphorylation status do not change in LatA-treated sty1\u0394 or wis1DD mutants compared to wild-type. Sty1 deletion partially suppresses LatA sensitivity and CAR defects in cdc12-4A (Sid2 phospho-site mutant) and cdc12-6D (Cdk1 phospho-mimetic mutant) strains, suggesting the negative effect of SAPK signaling on CAR assembly relies primarily on For3 rather than Cdc12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 are supported by PhosTag Western blots (Figure 3\u2014figure supplements 1-2) and genetic suppression analysis (Figure 3\u2014figure supplements 3-4). The lack of SAPK-dependent changes in Cdc12 phosphorylation combined with partial suppression of cdc12 mutant phenotypes by sty1\u0394 provides evidence that SAPK primarily targets For3, though some Cdc12-independent effects may exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "In exponentially growing wild-type cells, For3-3GFP migrates as three bands in SDS-PAGE, with the two lower mobility bands representing phosphorylated forms as shown by lambda phosphatase treatment. For3-3GFP levels and phosphorylation status do not change significantly during the cell cycle (G1, G2, M phases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are supported by Western blot data with lambda phosphatase treatment (Figure 5A) and cell cycle arrest experiments (Figure 5\u2014figure supplement 1). The phosphatase sensitivity confirms phosphorylation, and the cell cycle analysis rules out cell cycle-dependent regulation of For3 levels or phosphorylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Total For3-3GFP levels are significantly elevated (~1.7-fold) in sty1\u0394 cells and reduced in wis1DD and pyp1\u0394 cells (which have higher basal Sty1 activity) compared to wild-type. In cells expressing analogue-sensitive Sty1-T97A, For3-3GFP levels increase progressively after 2-3 hr treatment with the kinase-specific inhibitor 3BrBPP1, while phosphorylation patterns remain unchanged. This rules out long-term physiological adaptation and confirms acute Sty1-dependent regulation of For3 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132 are supported by Western blot quantification (Figure 5B-C) showing consistent inverse correlation between Sty1 activity and For3 levels across multiple genetic backgrounds. The chemical inhibition experiment (C130-C131) provides temporal resolution and rules out indirect adaptive effects, strengthening the conclusion of direct SAPK-mediated For3 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Higher For3-3GFP levels in sty1\u0394 cells result in enhanced cellular localization of the formin including at the CAR, as confirmed by quantitative fluorescence microscopy of mixed wild-type and sty1\u0394 cells. This increased localization is not a general feature of Sty1 deletion, as Pmk1-GFP localization at the CAR slightly decreases in sty1\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by quantitative line scan analysis (Figure 5D) comparing For3-3GFP and Pmk1-GFP localization in mixed cell populations. The specificity for For3 (increased) vs. Pmk1 (decreased) demonstrates that elevated For3 levels in sty1\u0394 cells translate to increased CAR localization and rules out general effects on protein localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "for3+ mRNA levels are reduced to ~50% in sty1\u0394 cells and ~25% in atf1\u0394 cells, while remaining unchanged in wis1DD cells compared to wild-type. In wild-type cells, for3+ mRNA expression increases gradually in response to increasing LatA concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 are supported by qPCR data (Figure 5\u2014figure supplement 2, Figure 5E). The reduced mRNA in sty1\u0394 and atf1\u0394 cells contrasts with elevated For3 protein in sty1\u0394 cells, indicating post-transcriptional regulation. The LatA-induced increase in for3+ mRNA suggests a compensatory transcriptional response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Increasing LatA concentrations that induce progressive Sty1 phosphorylation cause concomitant decreases in For3-3GFP protein levels. In synchronized cdc2-asM17 cells entering mitosis and undergoing CAR assembly, For3 levels decrease quickly (30 min) after treatment with 0.2 \u00b5M LatA, suggesting reduction of For3 levels is an essential factor responsible for CAR integrity defects during LatA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 are supported by Western blots showing dose-dependent For3 reduction (Figure 5F) and synchronized cell experiments (Figure 5G). The temporal correlation between Sty1 activation and For3 reduction, combined with the synchronized cell data showing rapid For3 decrease during CAR assembly, provides strong evidence for a causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "Reduction in For3 levels during LatA treatment is absent in cells expressing the LatA-resistant actin mutant Act1-R183A D184A (which does not activate Sty1), indicating that For3 reduction is a consequence of MAPK activation during actin network damage rather than a direct effect of LatA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 are supported by Western blot data (Figure 5H) showing no For3 reduction in Act1-LQ mutant cells despite LatA treatment. This genetic control experiment provides strong evidence that For3 reduction requires Sty1 activation triggered by actin damage, not LatA itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Total For3 levels decline in wild-type cells in response to multiple Sty1-activating stimuli (heat shock at 40\u00b0C, osmotic stress with 0.6 M KCl, oxidative stress with 1 mM H2O2) in a MAPK-dependent manner, as For3-3GFP levels remain unchanged in sty1\u0394 cells during these stresses. This indicates that SAPK activation prompts a specific decrease in For3 protein levels that accounts for lower CAR stability, and this control occurs primarily at the post-transcriptional level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 are supported by Western blots showing For3 reduction across multiple stress conditions in wild-type but not sty1\u0394 cells (Figure 5I, Figure 5\u2014figure supplement 3). The consistency across different stresses and the contrast between mRNA (reduced in sty1\u0394) and protein (elevated in sty1\u0394) levels provide strong evidence for post-transcriptional SAPK-mediated For3 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Ubiquitinated For3-3GFP species are recovered from wild-type cells during unperturbed growth, and For3 ubiquitination is more pronounced in the temperature-sensitive proteasome mutant mts3-1 at restrictive temperature (36\u00b0C) compared to wild-type. Since For3 level decrease at high temperature is Sty1-dependent, these findings suggest a SAPK-mediated mechanism enhances For3 ubiquitination and degradation in response to stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152 are supported by ubiquitin pull-down assays (Figure 5\u2014figure supplement 4) showing For3 ubiquitination under basal conditions and enhanced ubiquitination in proteasome mutants. The connection to Sty1-dependent For3 reduction at high temperature provides mechanistic insight, though direct evidence linking SAPK to ubiquitination machinery is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Incubation of temperature-sensitive profilin (cdc3-124) and tropomyosin (cdc8-110) mutants at restrictive temperature (34\u00b0C) for 4 hr reduces For3-3GFP levels compared to wild-type. Sty1 deletion partially alleviates thermosensitivity of cdc3-124 but not cdc8-110 cells, yet restores For3 levels in both mutants at 34\u00b0C. This indicates that reduced profilin or tropomyosin function decreases For3 levels in a Sty1-dependent manner even without LatA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C159 are supported by growth assays (Figure 6A) and Western blots (Figure 6B) showing Sty1-dependent For3 reduction in actin-binding protein mutants. The differential growth suppression (cdc3-124 but not cdc8-110) despite For3 restoration in both suggests For3 is necessary but not sufficient for suppression, and that SAPK responds to general actin cytoskeleton perturbations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Using a \u03b2-estradiol-inducible system, For3-HA levels after 3 hr induction are similar to genomic For3-HA levels and increase 3-4 fold after 6 hr. Enhanced For3 levels significantly reduce CAR damage during 0.15 \u00b5M LatA treatment compared to wild-type-like levels, while strong CAR defects return 12 hr after \u03b2-estradiol removal. This demonstrates For3 behaves as a dose-dependent regulator of CAR integrity in S. pombe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C164 are supported by Western blots (Figure 7A) and quantitative microscopy (Figure 7B) showing dose-dependent protection from LatA-induced CAR damage with increased For3 levels. The reversibility upon hormone washout provides strong evidence for a direct dose-dependent relationship between For3 levels and CAR integrity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "S. japonicus shows approximately one order of magnitude higher LatA sensitivity than S. pombe on solid medium. S. japonicus Sty1 becomes increasingly activated after 1 hr LatA treatment in a dose-dependent manner, similar to S. pombe. However, in sharp contrast to S. pombe, S. japonicus sty1\u0394 and atf1\u0394 cells are strongly hypersensitive to LatA, and most cytokinetic nodes in sty1\u0394 cells (~90%) fail to coalesce into functional CARs when treated with 0.005 \u00b5M LatA. This suggests the S. japonicus SAPK pathway has a positive impact on CAR assembly during LatA stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C169 are supported by growth assays (Figure 8A), Western blots (Figure 8B), and time-lapse microscopy (Figure 8C) showing opposite genetic relationships in S. japonicus compared to S. pombe. The consistent pattern across multiple assays and the dramatic phenotype reversal (sty1\u0394 resistant in S. pombe vs. hypersensitive in S. japonicus) provide strong evidence for evolutionary divergence in SAPK function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C197",
+      "C198"
+    ],
+    "result": "Cycloheximide-chase experiments show For3 has a long half-life (>20 hr), consistent with a previous report (t1/2 = 21.3 hr). Sty1 deletion does not alter For3 half-life compared to wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C197-C198 are supported by cycloheximide-chase Western blots (Figure 5\u2014figure supplement 5) showing similar For3 stability in wild-type and sty1\u0394 cells over 36 hr. However, this appears inconsistent with the rapid For3 reduction observed during stress (C140), suggesting SAPK may trigger rapid degradation of a specific For3 pool rather than affecting basal turnover.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "For3 is heavily phosphorylated in vivo, but its phosphorylation status does not change during the cell cycle. Sty1 is unlikely to directly phosphorylate For3, as For3 was not phosphorylated by Sty1 in vitro, and For3 phosphorylation patterns remain unaffected in vivo regardless of Sty1 activation status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C201-C204 are supported by cell cycle Western blots (Figure 5\u2014figure supplement 1), in vitro kinase assays (Figure 5\u2014figure supplement 6), and in vivo phosphorylation analysis (Figure 5). The negative in vitro kinase result and unchanged phosphorylation patterns across Sty1 activity states provide strong evidence against direct For3 phosphorylation by Sty1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The SAPK pathway and its effector MAPK Sty1 negatively regulate CAR assembly and integrity in S. pombe in response to actin polymerization inhibition induced with LatA by reducing For3 levels. Sty1 becomes activated by low LatA concentrations that specifically depolymerize actin cables and the CAR. Mutants lacking Sty1 or upstream SAPK activators are more resistant to LatA than wild-type, while Sty1-hyperactive wis1DD cells fail to condense functional rings at LatA concentrations permissive for wild-type CAR assembly. SAPK negative control of CAR integrity is mainly exerted through For3, as For3 deletion completely suppresses the enhanced CAR assembly and growth of sty1\u0394 cells with LatA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C172-C176 represent the central findings of the manuscript and are supported by extensive genetic, biochemical, and cell biological data across multiple figures. The convergent evidence from loss-of-function, gain-of-function, epistasis analysis, and dose-response experiments provides strong support for the model that SAPK negatively regulates CAR integrity through For3 downregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C210",
+      "C211",
+      "C215"
+    ],
+    "result": "SAPK signaling favors CAR assembly and integrity in S. japonicus during cytoskeletal damage with LatA, revealing remarkable evolutionary divergence of this response within the fission yeast clade. The opposite effect of SAPK pathway activation on CAR assembly in S. japonicus vs. S. pombe likely relates to marked differences in the timely coordination of mitosis and cytokinesis between species, illustrating how a conserved signaling cascade may adopt different strategies to cope with distinctive cell cycle characteristics in evolutionarily related species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C210-C211, C215 are supported by the S. japonicus experiments (Figure 8) showing opposite genetic relationships compared to S. pombe. While the mechanistic basis for this divergence is speculative (C211, C215), the empirical observation of opposite SAPK effects is well-supported and represents a significant evolutionary finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Sty1-negative regulation of For3 does not occur at the transcriptional level. Instead, Sty1 and its downstream transcription factor Atf1 may elicit for3+ transcription, as basal for3+ mRNA levels are lower in sty1\u0394 and atf1\u0394 cells and become induced in response to LatA. Enhanced for3+ expression by Sty1-Atf1 may function as a positive feedback mechanism to compensate for the drop in formin levels following Sty1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C195 are supported by the contrast between mRNA (reduced in sty1\u0394/atf1\u0394) and protein (elevated in sty1\u0394) levels (Figure 5\u2014figure supplement 2, Figure 5E). The interpretation of a compensatory feedback mechanism (C195) is reasonable given the opposing transcriptional and post-transcriptional effects, though direct evidence for this feedback is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C199",
+      "C200"
+    ],
+    "result": "The authors hypothesize that during vegetative growth, most For3 is active (open) and highly stable, while in response to stress SAPK activation might trigger rapid ubiquitination and degradation of For3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C199-C200 represent a hypothesis proposed to reconcile the long For3 half-life (C197) with rapid stress-induced degradation (C140). While the hypothesis is reasonable and supported by ubiquitination data (C150-C152), direct evidence for stress-induced changes in For3 conformation or ubiquitination kinetics is not provided. This remains speculative pending further mechanistic studies.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Validation of reporter cell lines demonstrates that GCN2 ablation selectively abolishes ISR activation by histidinol but not by tunicamycin, which activates the PERK-mediated ISR pathway. Both HeLa and CHO cells with Eif2ak4 knockout showed loss of CHOP::GFP response to histidinol while maintaining responsiveness to tunicamycin and XBP1::mCherry induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are well-supported by flow cytometry data in Figure 1A-B showing selective loss of histidinol response in GCN2-ablated cells while preserving tunicamycin responses. This establishes the specificity of the reporter system and validates its use for screening GCN2-specific ISR components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "CRISPR screen in CHO cells identified P-stalk components (Rplp0, Rplp1) as critical for GCN2-mediated ISR activation. Guides targeting Eif2ak4 and ribosomal P-stalk genes (Rplp0, Rplp1, Rplp2) were enriched in CHOP::GFP dull cells. Enriched Rplp0 guides mapped to the C-terminal P-stalk protrusion region, while guides targeting the N-terminal ribosome-embedded portion were depleted, suggesting this region is essential for cell fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 are supported by sequencing data in Figure 1E-F and Figure 1\u2014figure supplement 1B showing enrichment patterns. The spatial mapping of guide enrichment/depletion to functional domains of uL10 provides strong evidence for the P-stalk's role in GCN2 activation while distinguishing this from general ribosome function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Validation of P-stalk mutants confirms selective defect in GCN2-mediated ISR. Individual clones with Rplp0 or Rplp1 mutations showed compromised CHOP::GFP induction by histidinol and amino acid starvation but retained responsiveness to ER stress agents. The defect was rescued by restoring wildtype Rplp0 function through homologous recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are strongly supported by flow cytometry data in Figure 2A-D and genetic rescue experiments. The selective defect in GCN2-mediated responses with preserved PERK responses, combined with genetic rescue, provides compelling evidence for P-stalk involvement in GCN2 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "P-stalk mutations affect polysome profiles and ISR reporter activation during amino acid starvation. Wildtype cells showed redistribution of ribosomes from polysomes to lighter fractions upon starvation, which was lost in GCN2-ablated cells. Single P-stalk mutants showed partial attenuation, while the compound Rplp0/Rplp1m29-132 double mutant phenocopied GCN2 ablation in both polysome profile and CHOP::GFP activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by polysome profile data in Figure 3A-B and flow cytometry in Figure 3C. The dose-dependent phenotype from single to double mutants, culminating in complete loss of function matching GCN2 ablation, provides strong evidence for P-stalk involvement in the ISR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "P-stalk double mutant cells lack GCN2 hyperphosphorylation and fail to induce endogenous ISR markers during amino acid starvation. Wildtype cells showed time-dependent accumulation of hyperphosphorylated GCN2 upon starvation (confirmed by phosphatase treatment), which was absent in Rplp0/Rplp1m29-132 cells. These mutant cells were selectively defective in inducing CHOP and ATF4 in response to amino acid starvation but retained inducibility by ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are well-supported by PhosTag gel data in Figure 3D-E and immunoblots in Figure 3F. The multiple lines of evidence (GCN2 phosphorylation, endogenous ISR markers, selectivity for amino acid starvation vs ER stress) provide strong support for the P-stalk's role in GCN2 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Ribosomes from P-stalk mutant cells have diminished P1/P2 content, suggesting the mutations destabilize P-stalk protein association with ribosomes. This was observed in both the Rplp0/Rplp1m29-132 double mutant and the Rplp0m14 single mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by Coomassie-stained gels and immunoblots in Figure 4B showing reduced P1/P2 in purified ribosomes from mutant cells. The inference about destabilization (C63) is reasonable given the structural role of uL10 in anchoring P1/P2 to the ribosome.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In vitro reconstitution demonstrates that wildtype ribosomes stimulate GCN2-dependent eIF2\u03b1 phosphorylation, while P-stalk mutant ribosomes are impaired. Isolated ribosomes alone had negligible kinase activity, but nanomolar concentrations of wildtype ribosomes markedly stimulated GCN2 activity. The hierarchy of defects in vitro (double mutant > single mutants) correlated with cellular ISR impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are strongly supported by in vitro kinase assays in Figure 5A-C and supplements. The correlation between in vitro biochemical activity and in vivo phenotypes across multiple mutant alleles provides compelling evidence that the P-stalk directly activates GCN2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Ribosome stimulation of eIF2\u03b1 phosphorylation is specific to GCN2 and not PERK. The related PERK kinase showed minimal activation by ribosomes in vitro, consistent with the lack of effect of P-stalk lesions on PERK-dependent ISR induction in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by in vitro kinase assays in Figure 6A comparing GCN2 and PERK. The specificity demonstrated both in vitro and in vivo strengthens the conclusion that the P-stalk specifically activates GCN2 rather than affecting eIF2\u03b1 kinases generally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C84"
+    ],
+    "result": "Ribosomes alter GCN2 enzymatic properties by lowering substrate Km. While a 10-fold increase in GCN2 concentration could mimic the rate enhancement by ribosomes at physiological substrate concentrations, the kinetic properties differed fundamentally. GCN2 with wildtype ribosomes showed saturation kinetics (Km ~7.8 \u00b5M, Vmax 130 min\u207b\u00b9), while GCN2 alone did not saturate at experimentally attainable substrate concentrations. Mutant ribosomes resembled GCN2 alone, establishing the P-stalk's role in this enzymatic shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79, C84 are supported by kinetic analyses in Figure 6B-C and Figure 6\u2014figure supplement 1A-B. The Michaelis-Menten analysis provides quantitative evidence that ribosomes fundamentally alter GCN2's catalytic mechanism, not just increase its effective concentration. The loss of this effect with mutant ribosomes directly implicates the P-stalk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Ribosome-mediated GCN2 activation involves phosphorylation events beyond Thr899. While ribosome stimulation of GCN2 activity was not associated with consistent changes in Thr899 phosphorylation, PhosTag gels revealed multiple phosphorylation events in amino acid-deprived wildtype cells that were absent in P-stalk mutant cells, suggesting ribosomes promote phosphorylation of residues other than Thr899 in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by immunoblot data in Figure 6D and PhosTag gel data in Figure 3D-E. The observation that ribosome-mediated activation occurs without consistent Thr899 phosphorylation changes, combined with evidence of multiple phosphorylation events in vivo, suggests a more complex activation mechanism than simple autophosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C110"
+    ],
+    "result": "The P-stalk propagates a signal from stalled ribosomes to activate GCN2 during amino acid starvation. The correlation between selective defects in GCN2-mediated ISR activation in cells with P-stalk lesions and defects in ribosome activation of GCN2 in vitro establishes that the P-stalk is essential for coupling ribosome perturbation by amino acid starvation to GCN2 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C110 represent the central conclusion, supported by the convergence of genetic (C4-C5, C48-C61), biochemical (C68-C70), and kinetic (C76-C79) evidence. The multiple independent lines of evidence\u2014cellular phenotypes, in vitro reconstitution, and correlation across mutant alleles\u2014strongly support this mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Prior work in mice suggests GCN2 can be activated by ribosome stalling without global elevation of uncharged tRNAs. C57BL/6J mice lacking a neuron-specific arginyl-tRNA showed elevated GCN2-dependent ISR activity without globally elevated uncharged tRNAs, and this was enhanced by mutations compromising ribosome recycling, suggesting a stalled ribosome-generated signal activates GCN2 when charged tRNAs are limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 accurately represent findings from Ishimura et al., 2016 as cited. These prior observations provide important context motivating the current study's focus on ribosome-mediated GCN2 activation, though the authors appropriately note these are inferences from the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97"
+    ],
+    "result": "Proposed model: elongation factors cycling through the A site may restrain P-stalk GCN2-stimulatory activity through steric blocking, competition for P-stalk acidic tails, or conformational changes. Lack of cognate charged tRNA stalls ribosomes in a conformation that relieves these restraints, exposing the P-stalk's latent GCN2-activating capacity. Ribosome isolation may disrupt these constraints, explaining why ribosomes from fed cells activate GCN2 in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C95, C97 are explicitly speculative models proposed by the authors to explain their observations. While the model is plausible and consistent with known P-stalk functions in elongation, it lacks direct experimental support. The speculation is appropriately presented as such in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Comparison of mammalian and yeast P-stalk requirements for GCN2 activation. Mammalian P-stalk activation requires both ribosome-associated uL10 domain II and acidic C-termini of P-stalk components, while yeast P1/P2 proteins alone suffice in vitro. In yeast, free P2 contributes to GCN2 activation by osmotic stress and glucose deprivation but is dispensable for histidine depletion, consistent with amino acid starvation requiring a ribosome-coupled P-stalk signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 accurately represent findings from cited work (Inglis et al., 2019; Jim\u00e9nez-D\u00edaz et al., 2013). The comparison highlights species-specific differences in P-stalk-mediated GCN2 activation and supports the authors' emphasis on ribosome-coupled signaling in mammalian amino acid starvation responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Physical coupling between P-stalk and ribosome is important for mammalian GCN2 activation. The strong phenotype of the Rplp0/Rplp1m29-132 double mutant, which depletes ribosome-associated P-stalk while retaining cytosolic P proteins, suggests efficient GCN2 activation requires P-stalk proximity to the ribosome. This is consistent with the importance of other GCN2-ribosome contacts such as those involving eS10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by the phenotypic data from the double mutant (Figure 3-4) and the screen hit on Rps10/eS10. The inference that proximity matters is reasonable given the biochemical data, though direct measurement of GCN2-ribosome binding in mutants would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Differences in P-stalk effects on GCN2 phosphorylation between yeast and mammals. Yeast P1/P2 proteins markedly stimulated GCN2 autophosphorylation in vitro, but mammalian ribosomes had no consistent effect on GCN2 Thr899 phosphorylation status, despite altering enzymatic properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are supported by data in Figure 6D and citations to prior work. This observation highlights mechanistic differences between yeast and mammalian systems and suggests mammalian ribosome-mediated activation involves mechanisms beyond simple autophosphorylation enhancement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Evolutionary speculation: GCN2 may have initially evolved as a simple feedback loop attenuating translation initiation in response to ribosome stalling, with coupling to gene expression programs that relieve stalling causes emerging later and evolving into the modern ISR in multicellular organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112 are explicitly speculative evolutionary models. While consistent with GCN2 being the most ancient eIF2\u03b1 kinase and its conservation across eukaryotes, these claims lack direct experimental support and represent interesting hypotheses rather than tested conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C108",
+      "C109"
+    ],
+    "result": "Background and context claims establishing the ISR pathway, GCN2 function, and prior knowledge about GCN2 activation mechanisms. These include the role of eIF2\u03b1 phosphorylation in translation regulation, the four eIF2\u03b1 kinases in mammals, GCN2's evolutionary conservation and discovery in yeast, the uncharged tRNA model of GCN2 activation, evidence for GCN2-ribosome interactions, and the P-stalk's role in translation elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28, C86-C90, C108-C109 represent established knowledge and accurately cited prior work. These provide essential context for the current study and are well-supported by the cited literature. They establish the foundation for understanding why the P-stalk findings are significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Technical limitations of HeLa screen: Many HeLa cells selected for CHOP::GFP dullness lost tunicamycin responsiveness, and stressed HeLa cells showed poor clonogenic potential compared to CHO cells, leading to development of a focused CHO-based library.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by stated observations and crystal violet staining in Figure 1\u2014figure supplement 1A. These technical observations appropriately justified the methodological shift to CHO cells and the focused library approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C96"
+    ],
+    "result": "Prior work established that intact ribosomes and isolated P-stalk can stimulate GCN2-mediated eIF2\u03b1 phosphorylation in vitro, and that GCN2 physically interacts with the mammalian P-stalk. Ribosomes from actively translating fed cells are potent GCN2 activators in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66, C96 accurately represent findings from Inglis et al., 2019 and the current study's in vitro data. These establish the biochemical basis for P-stalk-mediated GCN2 activation and provide important context for interpreting the genetic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Speculation that free P1/P2 proteins may play a role in mammalian GCN2 activation in response to non-ribosomal stress signals, analogous to yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 is explicitly speculative and lacks experimental support in the current study. While an interesting possibility based on yeast findings, this remains an untested hypothesis for mammalian systems.",
+    "result_type": "MINOR"
+  }
+]

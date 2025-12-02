@@ -1,0 +1,1853 @@
+{
+  "submission": {
+    "id": "bee189b7-7098-4275-b52f-5bc896b49f6f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:29:58.842037Z",
+    "updated_at": "2025-12-02T08:29:58.842037Z"
+  },
+  "content": [
+    {
+      "id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "submission_id": "bee189b7-7098-4275-b52f-5bc896b49f6f",
+      "content_type": "manuscript",
+      "content_text": "# Delayed inhibition mechanism for secondary channel factor regulation of ribosomal RNA transcription\n\n## Authors\n\n- Sarah K Stumper<sup>1</sup>\n- Harini Ravi<sup>1</sup>\n- Larry J Friedman<sup>1</sup> ([ORCID: 0000-0003-4946-8731](https://orcid.org/0000-0003-4946-8731))\n- Rachel Anne Mooney<sup>2</sup>\n- Ivan R Corr\u00eaa<sup>3</sup>\n- Anne Gershenson<sup>4</sup> ([ORCID: 0000-0003-3124-9610](https://orcid.org/0000-0003-3124-9610))\n- Robert Landick<sup>2</sup> ([ORCID: 0000-0002-5042-0383](https://orcid.org/0000-0002-5042-0383))\n- Jeff Gelles<sup>1</sup> ([ORCID: 0000-0001-7910-3421](https://orcid.org/0000-0001-7910-3421)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry Brandeis University Waltham United States\n2. Department of Biochemistry University of Wisconsin Madison United States\n3. New England Biolabs Ipswich United States\n4. Department of Biochemistry and Molecular Biology University of Massachusetts Amherst United States\n5. Department of Bacteriology University of Wisconsin Madison United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRNA polymerases (RNAPs) contain a conserved \u2018secondary channel\u2019 which binds regulatory factors that modulate transcription initiation. In Escherichia coli, the secondary channel factors (SCFs) GreB and DksA both repress ribosomal RNA (rRNA) transcription, but SCF loading and repression mechanisms are unclear. We observed in vitro fluorescently labeled GreB molecules binding to single RNAPs and initiation of individual transcripts from an rRNA promoter. GreB arrived and departed from promoters only in complex with RNAP. GreB did not alter initial RNAP-promoter binding but instead blocked a step after conformational rearrangement of the initial RNAP-promoter complex. Strikingly, GreB-RNAP complexes never initiated at an rRNA promoter; only RNAP molecules arriving at the promoter without bound GreB produced transcript. The data reveal that a model SCF functions by a \u2018delayed inhibition\u2019 mechanism and suggest that rRNA promoters are inhibited by GreB/DksA because their short-lived RNAP complexes do not allow sufficient time for SCFs to dissociate.\n\n## Introduction\n\nMulti-subunit RNA polymerases (RNAPs), the molecular machines responsible for the synthesis of cellular mRNAs, contain catalytic subunits that are conserved across all domains of life (Cramer, 2002; Werner and Grohmann, 2011). In addition to their conserved catalytic machinery, RNAPs also contain conserved binding sites for regulatory proteins. An important such regulatory hot spot is the secondary channel, a pore that provides access to the deeply-buried active site of the enzyme (Nickels and Hochschild, 2004). Multiple regulators called secondary channel factors (SCFs) compete to control the activity of RNAPs by binding in the secondary channel. Two evolutionarily distinct SCF families have evolved in bacteria and eukaryotes, distinguished by insertion into the channel of either antiparallel \u03b1-helices (bacteria; GreA-like proteins) or of a \u03b2 hairpin (eukaryotes, TFIIS-like proteins). Escherichia coli uses at least five distinct GreA-like SCFs (Zenkin and Yuzenkova, 2015). Although the E. coli SCFs have related three-dimensional structures (Stepanova et al., 2009), they have distinct effects on transcription; in addition, some E. coli SCFs can act at multiple points in the transcription cycle. GreB, for example, was first identified as an SCF that stimulates endonucleolytic cleavage of the nascent transcript in transcription elongation complexes (ECs). GreB stimulates cleavage of RNA that has reverse threaded through the active site (backtracked) by multiple nucleotides, for instance after nucleotide misincorporation at the RNA 3\u2032 end (Borukhov et al., 2001; Borukhov et al., 1993; Laptenko et al., 2003). By causing removal of the backtracked segment of the nascent transcript both GreB and its paralog, GreA, can stimulate transcription by aiding promoter escape (Duchi et al., 2016; Feng et al., 1994; Hsu et al., 1995; Lerner et al., 2016; Shimamoto et al., 1986; Susa et al., 2002) and by allowing escape from promoter-proximal \u03c370-paused ECs (Deighan et al., 2011; Marr and Roberts, 2000).\n\nIn contrast, GreB (but not GreA) also can inhibit initiation by RNAP prior to phosphodiester bond formation at certain promoters with short-lived RNAP-promoter complexes such as the ribosomal RNA (rRNA) rrnB P1 promoter (Rutherford et al., 2007). This GreB activity is similar to one of the activities of a different E. coli SCF, DksA, which has a divergent domain that binds outside the secondary channel. DksA does not promote transcript cleavage and has other effects on transcript elongation (Zenkin and Yuzenkova, 2015; Zhang et al., 2014), but it can strongly affect initiation either negatively at \u2018stringent\u2019 promoters (e.g., rrnB P1) or positively at other promoters (e.g., the histidine biosynthetic operon promoter PhisG) (Gourse et al., 2018; Paul et al., 2005; Paul et al., 2004; Potrykus et al., 2006; Rutherford et al., 2007). Production of rRNA is suppressed during the stringent response, a global reprogramming of gene expression in response to amino acid starvation (Browning and Busby, 2016). DksA binds in the SC and reduces initiation from rrnB P1 during the stringent response (Paul et al., 2004; Ross et al., 2016; Rutherford et al., 2009; Rutherford et al., 2007); this effect is potentiated by binding of guanosine tetraphosphate (ppGpp), which is accumulated at concentrations up to\u00a0~1 mM to signal amino acid starvation. ppGpp binds two sites on RNAP to modulate transcription: one at the interface of the omega and \u03b2\u2032 subunits and a second created by DksA upon binding in the SC (Molodtsov et al., 2018; Ross et al., 2016). There are multiple proposals for mechanisms by which DksA and ppGpp suppress rrnB P1 initiation in the stringent response (Paul et al., 2005; Rutherford et al., 2009; Rutherford et al., 2007).\n\nAlthough much study has focused on stringent regulation of rRNA production, cells must also maintain appropriate levels of rRNA during rapid-growth (i.e., non-starvation) conditions, conditions in which rRNAs are the most abundant transcripts produced. A growth rate-dependent control (Bartlett and Gourse, 1994) system maintains rRNA levels relative to total cellular protein by making rRNA synthesis proportional to the steady-state growth rate rather than to amino acid availability (Gourse et al., 1986; Josaitis et al., 1995). This regulation occurs at micromolar cellular concentrations of ppGpp (Ross et al., 2016; Ryals et al., 1982) rather than the millimolar concentrations that mediate stringent regulation. In contrast to stringent regulation of rRNA transcription (in which DksA is clearly implicated), there is potential for involvement of both GreB and DksA in growth rate dependent control (Mallik et al., 2006; Rutherford et al., 2007). The mechanism for growth rate-dependent control of rRNA synthesis by the two SCFs is unknown, and the point in the transcription cycle at which the SCFs load onto RNAP has not been defined.\n\nTo elucidate the mechanism(s) of rRNA initiation regulation by DksA and GreB, it is essential to define how these SCFs load onto RNAP and modulate the kinetics of rrnB P1 promoter complexes at different stages in the process of initiation. Here we used both fluorescence correlation spectroscopy (FCS) and colocalization single-molecule spectroscopy (CoSMoS) (Friedman et al., 2006), a multiwavelength single-molecule fluorescence microscopy technique, to directly observe and quantify the dynamic interactions in vitro of fluorescently labeled GreB molecules with individual RNAP molecules and rrnB P1 promoter\u2022RNAP complexes. We also visualized the inhibition of individual RNAP molecules by GreB and DksA in the presence and absence of the micromolar concentrations of ppGpp corresponding to those present in rapidly growing (non-stringent) cells. Our results suggest that GreB binds to core RNAP and \u03c370RNAP holoenzyme an order of magnitude more tightly than previously thought and that GreB/DksA competition for binding to RNAP free in the cytoplasm likely determines the relative importance of these two factors in modulating rRNA initiation under rapid growth conditions. Using GreB as a model to investigate the mechanism(s) of SCF\u2022RNAP binding and action at rrnB P1, we reveal the \u2018delayed inhibition\u2019 mechanism for SCF loading onto RNAP and suggest how short-lived promoter-RNAP complexes are selectively inhibited by SCFs.\n\n## Results\n\n### GreB tightly binds RNAP and \u03c370RNAP\n\nAlthough the dynamics of GreB interactions with ECs have been directly observed and quantitatively characterized (Furman et al., 2013; Tetone et al., 2017), analogous measurements of GreB dynamics with core RNAP and \u03c370RNAP holoenzyme are lacking. To begin investigating the effects of GreB on transcription initiation, we first measured the equilibrium dissociation constant (KD) for the GreB\u2022\u03c370RNAP complex (Figure 1A) using fluorescence correlation spectroscopy (FCS). The experiments used a fluorescently labeled GreBCy3 construct shown to be fully active in transcript cleavage assays (Tetone et al., 2017). The large size difference between GreB and RNAP clearly distinguishes the FCS autocorrelation curves of free GreBCy3 (fast-diffusing species) from\u00a0\u03c370RNAP\u2022GreBCy3 complex (slow-diffusing species) (Figure 1B). The autocorrelation curves for free GreBCy3 were fit to obtain a diffusion constant of 60\u00a0\u00b1\u00a010 \u03bcm2 s\u22121 (all uncertainties are SE unless otherwise indicated). Autocorrelation curves obtained for \u03c370RNAP yielded (see Materials and methods) the diffusion constant of GreBCy3 bound to \u03c370RNAP (10\u201320 \u03bcm2 s\u22121) and fraction GreBCy3 bound. A hyperbolic fit to the fraction bound data at varying \u03c370RNAP concentrations revealed tight binding with KD\u00a0=\u00a010\u00a0\u00b1\u00a01 nM (Figure 1C). Similar experiments performed with core RNAP again yielded KD\u00a0=\u00a010\u00a0\u00b1\u00a01 nM (Figure 1D). These measurements demonstrate that GreB binds both core and \u03c370RNAP an order of magnitude more tightly than was estimated in previous non-equilibrium measurements of binding (Furman et al., 2013; Loizos and Darst, 1999; Rutherford et al., 2007) and an order of magnitude more tightly than previously measured for GreB binding to ECs (Tetone et al., 2017; Table 1). The dissociation constant for the interaction is also\u00a0~10 fold tighter than the values reported for DksA in the absence of ppGpp (KD\u00a0=\u00a0101\u00a0\u00b1\u00a019 or 112 [no S.E. reported] nM for core, KD\u00a0=\u00a099\u00a0\u00b1\u00a015 or 52 [no S.E. reported] nM for \u03c370 holoenzyme) (Lennon et al., 2009; Molodtsov et al., 2018). GreBCy3 binding to \u03c370RNAP was quantitatively indistinguishable from that of unlabeled GreB (see Materials and methods), indicating that the high binding affinity is not an artefact of dye labeling.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40576/elife-40576-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experimental scheme for measuring by FCS the affinity with which Cy3- (green star) labeled GreB binds \u03c370RNAP. (B) Examples of normalized FCS autocorrelation curves obtained after adding the indicated amount of \u03c370RNAP to GreBCy3. (C) Fraction of GreBCy3 bound to RNAP determined at different \u03c370RNAP (black) and RNAP core (red) concentrations in the presence of 10 nM GreBCy3, determined by fitting FCS autocorrelation curves including those shown in (B). Fraction bound measurements (points;\u00a0\u00b1SE) were fit to a Langmuir binding equation (lines). (D) Dissociation equilibrium constants KD (\u00b1SE) determined from the fits in (C).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40576/elife-40576-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Experimental scheme for observing dissociation of GreBCy3-RNAP complexes by FCS. (B) GreBCy3 remaining bound (\u00b1SE) to \u03c370RNAP (black) or RNAP (red) at different times after the addition of 100-fold excess unlabeled GreB, calculated from fits to FCS autocorrelation curves.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40576/elife-40576-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Experimental scheme for single-molecule measurement of the kinetics of GreB binding to and dissociation from surface-tethered \u03c370RNAP. \u03c370RNAP488-PEG-biotin was tethered to the slide surface via a neutravidin linkage and the co-localization of GreBCy3B (5 nM, 93% labeled) was monitored. (B) Example GreBCy3B intensity record from the location of a single \u03c370RNAP488-PEG-biotin molecule. An objective image analysis algorithm (see Materials and methods) detected a spot of GreBCy3B fluorescence at the times shown in green. (C) Cumulative distribution of the time until the first GreBCy3B appearance at the location of each \u03c370RNAP488-PEG-biotin molecule (dark green). Exponential fit (black) is corrected for non-specific binding of GreBCy3B to the chamber surface measured at control locations where no \u03c370RNAP488-PEG-biotin was detected (gray), yielding kon\u00a0=\u00a01.5\u00a0\u00b1\u00a00.9\u00d7107 M\u22121 s\u22121. Also shown are data from experiments with added 50 nM GreB or rcGreB (light green curves) demonstrating that either species effectively competed with 5 nM GreBCy3B, indicating that GreBCy3B binding is specific. The curve shown (black) is the predicted cumulative distribution of times until\u00a0the first GreBCy3B binding\u00a0event at 50 nM GreB or rcGreB based on a competition model which assumes that GreB and rcGreB exhibit the same kinetics of binding to and release from \u03c370RNAP488-PEG-biotin as GreBCy3B (i.e., the same kon, Af, and \u03c41 reported in Table 1). (D) Cumulative distribution of GreBCy3B dwell times on surface-tethered \u03c370RNAP488-PEG-biotin molecules. Data (green) were fit to a biexponential model (black) with the parameters listed in Table 1. (E and F) Same as (C) and (D), but with core RNAP488-PEG-biotin instead of holoenzyme. Fit parameters and numbers of observations distributions in C-F are given in Table 1. (G) GreBCy3B photobleaching control. Cumulative frequency distribution (Friedman and Gelles, 2015)\u00a0of GreBCy3Bdwell\u00a0times\u00a0on surface-tethered RNAP core measured as in (F) but at different 532 nm laser excitation powers. Data show no evidence for shorter lifetimes at higher power, suggesting that there is no appreciable photobleaching under the conditions of the experiments.\n\n**Table 1.**\n Kinetics of GreBCy3B interactions with RNAPs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Experiment</th>\n      <th rowspan=\"2\">Species</th>\n      <th colspan=\"3\">Time to first binding measurement</th>\n      <th rowspan=\"2\">Dwell time distribution fit parameters\u2020</th>\n      <th rowspan=\"2\">KD (nM)</th>\n    </tr>\n    <tr>\n      <th>kbkgnd (107 M\u22121 s\u22121)</th>\n      <th>kon (107 M\u22121 s\u22121)</th>\n      <th>Af\u2021</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>FCS (Figure 1)</td>\n      <td>RNAP core</td>\n      <td>N.D.</td>\n      <td>N.D.</td>\n      <td>N.D.</td>\n      <td>N.D.</td>\n      <td>10\u00a0\u00b1\u00a01</td>\n    </tr>\n    <tr>\n      <td>FCS (Figure 1)</td>\n      <td>\u03c370RNAP</td>\n      <td>N.D.</td>\n      <td>N.D.</td>\n      <td>N.D.</td>\n      <td>N.D.</td>\n      <td>10\u00a0\u00b1\u00a01</td>\n    </tr>\n    <tr>\n      <td>CoSMoS (Figure 1\u2014figure supplement 2)</td>\n      <td>RNAP core</td>\n      <td>0.00023\u00a0\u00b1\u00a00.00009 (N\u00a0=\u00a012)</td>\n      <td>0.94\u00a0\u00b1\u00a00.06 (N\u00a0=\u00a0163)</td>\n      <td>0.87\u00a0\u00b1\u00a00.13</td>\n      <td>a\u00a0=\u00a091 \u00b1 4% \u03c41 = 5.3 \u00b1 0.5 \u03c42 = 27 \u00b1 3 s (N\u00a0=\u00a0872)</td>\n      <td>18 \u00b1 2*</td>\n    </tr>\n    <tr>\n      <td>CoSMoS (Figure 1\u2014figure supplement 2)</td>\n      <td>\u03c370RNAP</td>\n      <td>0.0017\u00a0\u00b1\u00a00.0008 (N\u00a0=\u00a029)</td>\n      <td>1.5\u00a0\u00b1\u00a00.9 (N\u00a0=\u00a0152)</td>\n      <td>0.43\u00a0\u00b1\u00a00.11</td>\n      <td>a\u00a0=\u00a089 \u00b1 7% \u03c41 = 5.6 \u00b1 0.6 \u03c42 = 25 \u00b1 7 (N\u00a0=\u00a0943)</td>\n      <td>11 \u00b1 1*</td>\n    </tr>\n    <tr>\n      <td>CoSMoS\u00a7</td>\n      <td>EC</td>\n      <td>N.R.</td>\n      <td>2.7\u00a0\u00b1\u00a01.0</td>\n      <td>0.80\u00a0\u00b1\u00a00.06</td>\n      <td>\u03c4\u00a0=\u00a00.4\u00a0\u00b1\u00a00.1 s</td>\n      <td>93\u00a0\u00b1\u00a036</td>\n    </tr>\n    <tr>\n      <td>CoSMoS\u00a7</td>\n      <td>Static EC\u22126</td>\n      <td>N.R.</td>\n      <td>1.9\u00a0\u00b1\u00a00.1</td>\n      <td>1</td>\n      <td>\u03c4\u00a0=\u00a00.29\u00a0\u00b1\u00a00.02 s</td>\n      <td>184\u00a0\u00b1\u00a08</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Calculated as KD = (kon \u03c41)\u22121.\u2020From single- or bi-exponential fit.\u2021Active fraction of surface-tethered molecules (Friedman and Gelles, 2015).\u00a7Data from Tetone et al. (2017).N.D., not determined; N.R., not reported._\n\nTo measure the kinetics of GreB-polymerase interactions, we collected FCS data at different time points after initiating the dissociation of GreBCy3\u2022\u03c370RNAP complexes by addition of 100-fold excess unlabeled wild-type GreB (Figure 1\u2014figure supplement 1). Dissociation of GreBCy3 from \u03c370RNAP was observed, but the rate of dissociation was comparable to the time scale of FCS data collection, making reproducible measurement difficult. Therefore, we performed CoSMoS single-molecule fluorescence equilibrium kinetics experiments (Friedman and Gelles, 2015) with tethered \u03c370RNAP or core RNAP to measure GreBCy3 binding and dissociation rates (Figure 1\u2014figure supplement 2). These experiments facilitated comparison with measurements on ECs using a similar method (Table 1;\u00a0Tetone et al., 2017). The single-molecule data showed evidence of a minor subpopulation (~10%) of polymerase molecules with distinct kinetics (see Discussion). Nevertheless, all data were consistent with the conclusions that core RNAP and \u03c370RNAP interact similarly with GreBCy3, that binding is very fast (of order 107 M\u22121 s\u22121, close to the diffusion limit for molecules of these sizes), and that dissociation was 0.2 s\u22121 or slower. The KD values derived from the kinetic parameters for the surface-tethered RNAP are close to those measured in solution by FCS (Table 1), indicating that tethering does not greatly alter binding affinity. In additional experiments, we saw that wild-type GreB and the single-cysteine mutant rcGreB effectively compete with GreBCy3B for binding to tethered \u03c370RNAP. Binding kinetics for all three proteins were indistinguishable, indicating that the GreB mutation and labeling do not affect binding to \u03c370RNAP (Figure 1\u2014figure supplement 2C). We also observed that GreBCy3B lifetimes were not limited by photobleaching under the conditions of the experiments (Figure 1\u2014figure supplement 2G). Taken together, these kinetic and equilibrium data show that even though GreB is principally viewed as an elongation factor, it binds to \u03c370RNAP roughly an order of magnitude more tightly than to ECs and its dissociation is at least an order of magnitude slower (Table 1; Furman et al., 2013; Tetone et al., 2017). Thus, in the cell \u03c370RNAP holoenzyme is expected to effectively compete with ECs for GreB binding if pools of GreB are limiting.\n\n### The tight-binding interaction of GreB or DksA with \u03c370RNAP inhibits transcription initiation from rrnB P1\n\nNear-saturating (2 \u00b5M) concentrations GreB and DksA equally inhibited initiation in vitro from the rRNA promoter rrnB P1 and inhibition by both proteins was equally enhanced by 100 \u00b5M ppGpp (Rutherford et al., 2007). However, these experiments followed only initiation reaction endpoints, not rates, complicating mechanistic interpretation. Furthermore, an SCF may be capable of multiple modes of interaction with RNAP (Molodtsov et al., 2018; Zenkin, 2014) and these different interactions may have a range of affinities. To ask whether the high affinity (DksA, KD =~100 nM) or very high affinity (GreB, KD =~10 nM) binding of the proteins to \u03c370RNAP inhibits rrnB P1 initiation, we measured the rate of the overall initiation pathway (i.e., starting with free holoenzyme binding to DNA) at low SCF concentrations equal to these KDs. In a CoSMoS experiment (Friedman and Gelles, 2012), template DNA molecules with rrnB P1 were tethered to the surface of an observation chamber, and transcription was initiated by introducing \u03c370RNAP and NTPs (Figure 2A). The reaction mixture also contained two TAMRA-labeled oligonucleotide probes complementary to transcript nucleotides 1\u201327 and 29\u201354. Initiation was detected as co-localization of a spot of green-excited TAMRA fluorescence with a spot of blue-excited fluorescence from the AF488 dye coupled to the DNA template (Figure 2B and Figure 2\u2014figure supplement 1). As expected, probe co-localization was dependent on the presence of NTPs and RNAP. Measured times to first probe binding on each DNA molecule were fit with an exponential model (Figure 2C\u2013F), yielding the apparent first-order initiation rate constants (Table 2; see Materials and methods).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40576/elife-40576-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of CoSMoS transcription initiation rate measurement in the presence of GreB or DksA. DNA molecules (314 bp) containing the rrnB P1 promoter (bent arrow) and labeled with AF488 (blue star) were tethered to the chamber surface via a biotin-neutravidin linkage. Initiation in the presence or absence of DksA, GreB, and/or ppGpp is detected as co-localization of two oligonucleotide probes labeled with TAMRA (green star) that hybridize near the 5\u2032 end of the nascent transcript. (B) Example transcript probe fluorescence images (1.1\u00a0\u00d7\u00a01.1 \u00b5m) taken at 5 s intervals (top) and corresponding intensity record (bottom) from the location of a single template DNA molecule. An objective image analysis algorithm (see Materials and methods) detected a spot of probe fluorescence at the times shown in green. (C\u2013F) Cumulative distributions of the time until first probe detection on each DNA molecule. Only probe colocalization events 5 s or longer in duration were scored. Measurements were made in the absence (purple) or presence (green and blue) of secondary channel factors GreB (C, E) or DksA (D, F), without (C, D) or with (E, F) 100 \u03bcM ppGpp. Exponential fits (lines) are corrected (see Materials and methods) for non-specific binding of probe to the chamber surface measured at control locations that lack DNA molecules (gray). (G) Inhibition of initiation by secondary channel factors with and without 10 nM GreB, 100 nM DksA, and/or 100 \u03bcM ppGpp derived from experiments in (C\u2013F), taken from the fit parameters (Table 2). Graph indicates the rate of initiation in the presence of the indicated factors (blue and green) relative to that measured in the same experiment without the factors (purple). Error bars: S.E.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40576/elife-40576-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Data are plotted as in Figure 2B.\n\n**Table 2.**\n Fit parameters for single molecule initiation experiments*.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Conditions</th>\n      <th>Active fraction</th>\n      <th>N\u2020</th>\n      <th>kbkgnd (10\u22125 s\u22121)</th>\n      <th>kinit (10\u22124 s\u22121)</th>\n      <th>Avg kinit (10\u22124 s\u22121) (Fold inhibition)\u2021</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"7\">\u03c370RNAP</td>\n      <td>0.63\u00a0\u00b1\u00a00.12</td>\n      <td>42/225</td>\n      <td>1.1\u00a0\u00b1\u00a00.4</td>\n      <td>6.1\u00a0\u00b1\u00a00.6</td>\n      <td rowspan=\"7\">5.8\u00a0\u00b1\u00a00.6 (1)</td>\n    </tr>\n    <tr>\n      <td>0.37\u00a0\u00b1\u00a00.08</td>\n      <td>55/253</td>\n      <td>1.3\u00a0\u00b1\u00a00.2</td>\n      <td>6.4\u00a0\u00b1\u00a00.3</td>\n    </tr>\n    <tr>\n      <td>0.29\u00a0\u00b1\u00a00.05</td>\n      <td>90/373</td>\n      <td>0.9\u00a0\u00b1\u00a00.4</td>\n      <td>5.6\u00a0\u00b1\u00a00.5</td>\n    </tr>\n    <tr>\n      <td>0.47\u00a0\u00b1\u00a00.09</td>\n      <td>143/307</td>\n      <td>0.9\u00a0\u00b1\u00a00.6</td>\n      <td>4.9\u00a0\u00b1\u00a00.8</td>\n    </tr>\n    <tr>\n      <td>0.68\u00a0\u00b1\u00a00.10</td>\n      <td>185/298</td>\n      <td>0.6\u00a0\u00b1\u00a00.3</td>\n      <td>3.1\u00a0\u00b1\u00a00.5</td>\n    </tr>\n    <tr>\n      <td>0.62\u00a0\u00b1\u00a00.14</td>\n      <td>124/201</td>\n      <td>1.1\u00a0\u00b1\u00a00.9</td>\n      <td>7.0\u00a0\u00b1\u00a00.9</td>\n    </tr>\n    <tr>\n      <td>0.87\u00a0\u00b1\u00a00.13</td>\n      <td>279/322</td>\n      <td>7.7\u00a0\u00b1\u00a00.2</td>\n      <td>8.5\u00a0\u00b1\u00a00.3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">\u03c370RNAP +10 nM rcGreB</td>\n      <td>0.63\u00a0\u00b1\u00a00.12</td>\n      <td>19/278</td>\n      <td>1.1\u00a0\u00b1\u00a00.4</td>\n      <td>1.5\u00a0\u00b1\u00a00.3</td>\n      <td rowspan=\"2\">1.3\u00a0\u00b1\u00a00.4 (4.4\u00a0\u00b1\u00a00.7)</td>\n    </tr>\n    <tr>\n      <td>0.47\u00a0\u00b1\u00a00.09</td>\n      <td>24/252</td>\n      <td>0.9\u00a0\u00b1\u00a00.6</td>\n      <td>1.2\u00a0\u00b1\u00a00.6</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">\u03c370RNAP +10 nM GreB (Figure 2C)</td>\n      <td>0.62\u00a0\u00b1\u00a00.14</td>\n      <td>21/246</td>\n      <td>2.6\u00a0\u00b1\u00a00.6</td>\n      <td>1.2\u00a0\u00b1\u00a00.2</td>\n      <td rowspan=\"2\">1.9\u00a0\u00b1\u00a00.5 (3.1\u00a0\u00b1\u00a00.9)</td>\n    </tr>\n    <tr>\n      <td>0.87\u00a0\u00b1\u00a00.13</td>\n      <td>16/198</td>\n      <td>7.7\u00a0\u00b1\u00a00.2</td>\n      <td>2.3\u00a0\u00b1\u00a00.4</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">\u03c370RNAP +10 nM GreB +100 \u03bcM ppGpp (Figure 2E)</td>\n      <td>0.37\u00a0\u00b1\u00a00.08</td>\n      <td>18/276</td>\n      <td>1.3\u00a0\u00b1\u00a00.2</td>\n      <td>1.1\u00a0\u00b1\u00a00.4</td>\n      <td rowspan=\"2\">1.0\u00a0\u00b1\u00a00.7 (5.8\u00a0\u00b1\u00a01.1)</td>\n    </tr>\n    <tr>\n      <td>0.47\u00a0\u00b1\u00a00.09</td>\n      <td>14/231</td>\n      <td>0.9\u00a0\u00b1\u00a00.6</td>\n      <td>0.9\u00a0\u00b1\u00a00.3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">\u03c370RNAP +100 nM DksA (Figure 2D)</td>\n      <td>0.29\u00a0\u00b1\u00a00.05</td>\n      <td>25/302</td>\n      <td>0.9\u00a0\u00b1\u00a00.4</td>\n      <td>0.6\u00a0\u00b1\u00a00.3</td>\n      <td rowspan=\"2\">1.7\u00a0\u00b1\u00a00.6 (3.4\u00a0\u00b1\u00a01.0)</td>\n    </tr>\n    <tr>\n      <td>0.68\u00a0\u00b1\u00a00.10</td>\n      <td>36/305</td>\n      <td>0.6\u00a0\u00b1\u00a00.3</td>\n      <td>1.7\u00a0\u00b1\u00a00.8</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">\u03c370RNAP +100 nM DksA\u00a0+\u00a0100 \u03bcM ppGpp (Figure 2F)</td>\n      <td>0.37\u00a0\u00b1\u00a00.08</td>\n      <td>14/202</td>\n      <td>1.3\u00a0\u00b1\u00a00.2</td>\n      <td>1.3\u00a0\u00b1\u00a00.5</td>\n      <td rowspan=\"2\">1.1\u00a0\u00b1\u00a00.6 (5.3\u00a0\u00b1\u00a01.0)</td>\n    </tr>\n    <tr>\n      <td>0.68\u00a0\u00b1\u00a00.10</td>\n      <td>24/299</td>\n      <td>0.6\u00a0\u00b1\u00a00.3</td>\n      <td>1.0\u00a0\u00b1\u00a00.6</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">\u03c370RNAP647</td>\n      <td>0.71\u00a0\u00b1\u00a00.19</td>\n      <td>265/377</td>\n      <td>0.7\u00a0\u00b1\u00a00.4</td>\n      <td>5.3\u00a0\u00b1\u00a00.8</td>\n      <td rowspan=\"2\">5.5\u00a0\u00b1\u00a00.7 (0.95\u00a0\u00b1\u00a00.6)</td>\n    </tr>\n    <tr>\n      <td>0.49\u00a0\u00b1\u00a00.13</td>\n      <td>104/215</td>\n      <td>0.8\u00a0\u00b1\u00a00.3</td>\n      <td>5.8\u00a0\u00b1\u00a00.5</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">\u03c370RNAP647 +10 nM GreBCy3B</td>\n      <td>0.71\u00a0\u00b1\u00a00.19</td>\n      <td>29/306</td>\n      <td>0.7\u00a0\u00b1\u00a00.4</td>\n      <td>1.2\u00a0\u00b1\u00a00.9</td>\n      <td rowspan=\"2\">1.4\u00a0\u00b1\u00a00.7 (3.9\u00a0\u00b1\u00a01.0)</td>\n    </tr>\n    <tr>\n      <td>0.49\u00a0\u00b1\u00a00.13</td>\n      <td>14/147</td>\n      <td>0.8\u00a0\u00b1\u00a00.3</td>\n      <td>1.6\u00a0\u00b1\u00a00.6</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">\u03c370RNAP647 +10 nM GreBCy3B +100 \u03bcM ppGpp</td>\n      <td>0.71\u00a0\u00b1\u00a00.19</td>\n      <td>12/228</td>\n      <td>0.7\u00a0\u00b1\u00a00.4</td>\n      <td>0.9\u00a0\u00b1\u00a00.5</td>\n      <td rowspan=\"2\">0.9\u00a0\u00b1\u00a00.5 (6.1\u00a0\u00b1\u00a00.7)</td>\n    </tr>\n    <tr>\n      <td>0.49\u00a0\u00b1\u00a00.13</td>\n      <td>17/311</td>\n      <td>0.8\u00a0\u00b1\u00a00.3</td>\n      <td>0.9\u00a0\u00b1\u00a00.4</td>\n    </tr>\n  </tbody>\n</table>\n\n_*At least two replicates per experimental condition were performed due to variability in active fraction between trials. The rate of TAMRA-probe binding to AF488-DNA locations (kinit) and rate of TAMRA-probe binding to locations without AF488-DNA molecules (kbkgnd) were obtained for each individual replicate. The mean initiation rate (Avg kinit) was then calculated for each set of experimental conditions.\u2020The two numbers given for each replicate are the number of rrnB P1 DNA molecules on which a TAMRA-probe binding lasting\u00a0>5 s was observed and the total number of DNA molecules in that replicate.\u2021 Fold-inhibition was determined by dividing the Avg kinit for the relevant RNAP (\u03c3 70RNAP or \u03c370RNAP647) by the calculated Avg kinit in the presence of the specified SCF/ppGpp. For the \u03c370 RNAP647 alone condition, fold inhibition is calculated relative to unlabeled \u03c370RNAP._\n\nAddition to the experiment of 10 nM GreB reduced the rate of initiation approximately four-fold (Figure 2C, purple vs. green curves; Figure 2G, leftmost two bars). This substantial inhibition in rate contrasts with the only 8% reduction of the initiation end point seen at even higher (100 nM) GreB concentrations (Rutherford et al., 2007). Significantly, the inhibitory effect of DksA is identical to that of GreB (within experimental uncertainty) when we performed the analogous experiment with DksA at its KD in place of GreB. (Figure 2D; Figure 2G). Thus, GreB and DksA have identical effects on the rate of the full initiation process when the effects are measured at the same fractional occupancy of \u03c370RNAP. We found similarly indistinguishable inhibitory effects of GreB and DksA in the presence of 100 \u03bcM ppGpp (Figure 2E\u2013G; Rutherford et al., 2007). Thus, GreB inhibits initiation\u00a0~10 fold more potently than DksA on a concentration basis, but the difference can be fully accounted for by the difference in the binding affinities of the two proteins, without reference to any functional differences between GreB- and DksA-bound RNAP.\n\n### GreB arrives at and departs from an rRNA promoter in complex with \u03c370RNAP\n\nSince SCF occupancy of holoenzyme paralleled inhibition of rrnB initiation, we next asked at which stage(s) of the rrnB initiation process the SCFs bind to RNAP. We simultaneously examined binding of 1 nM \u03c370RNAP647 (a fluorescently-labeled holoenzyme preparation; see Materials and methods) and 10 nM GreBCy3B to the surface-tethered rrnB P1 DNA. The experiments (Figure 3A) were conducted without NTPs, which allows for promoter complex formation but not initiation (Rutherford et al., 2009). As expected, we observed transient co-localization of \u03c370RNAP647 molecules with individual template molecules, reflecting formation of promoter complexes (Figure 3B, red). Control experiments demonstrated that the observed lifetimes of these complexes were not appreciably limited by photobleaching (Figure 3\u2014figure supplement 1). Separate control experiments in the presence of NTPs confirmed that transcription initiation kinetics with GreBCy3B and/or \u03c370RNAP647 are similar to those seen with the unlabeled proteins (Table 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40576/elife-40576-fig3-v2.jpg)\n\n**Figure 3.:** (A) Experiment design. Experiments were conducted in the absence of NTPs to monitor colocalization of \u03c370RNAP647 (1 nM) and GreBCy3B (10 nM) with the same surface-tethered rrnB P1 DNA used in Figure 2. (B) Recording excerpt of fluorescence co-localized with a single DNA molecule. Colored portions of the traces indicate detection of a DNA-colocalized spot of \u03c370RNAP647 (red) or GreBCy3B (green) fluorescence. Events in which molecules of \u03c370RNAP647 and GreBCy3B simultaneously arrive at and later simultaneously depart from the DNA molecule (orange) and events in which \u03c370RNAP647 arrives alone (purple) are highlighted. Inset shows time series images (0.5 s per frame; each 1.1\u00a0\u00d7\u00a01.1 \u00b5m) of one of these events. (C) Fraction (\u00b1SE) of \u03c370RNAP647 DNA binding events (N\u00a0=\u00a02,408) in which a GreBCy3B arrived simultaneously (\u00b11 frame) with \u03c370RNAP647 (left) and the fraction predicted by an equilibrium model (see Materials and methods) in which \u03c370RNAP and GreB\u00b7\u03c370RNAP bind to the promoter with equal association rate constants (right). (D) Histogram of time differences between \u03c370RNAP647 departure and GreBCy3B departure from \u03c370RNAP647\u2022GreBCy3B\u2022DNA complexes (solid bars). Only complexes that formed by simultaneous arrival (C; N\u00a0=\u00a01,053) were analyzed. Departure was simultaneous (\u00b11 frame; orange highlight) in 91% of complexes. In a control analysis of the same data (red, open bars) in which departure events from different molecules were randomly paired (see Materials and methods), less than 3% were simultaneous. Plot shows the center of the distributions; 6% of experimental data and 61% of control fall outside the plotted range. In (C) and (D), data are aggregated from three replicate experiments. (E) Cumulative fraction of DNA molecules to which the first binding of \u03c370RNAP647 occurred at or before the indicated time. Experiments were conducted with or without SCFs as indicated. Background curve (gray) is collected from randomly selected locations without detected DNA molecules. (For clarity, only the background curve from the experiment without SCFs is shown). Exponential fits (lines), each corrected using background data taken from the same recording yielded RNAP-DNA association rate constants (Table 3). (F) Cumulative distributions of \u03c370RNAP647 dwell times on rrnB P1 DNA in the absence or presence of added SCFs (points). Also shown is the distribution of the subset of \u03c370RNAP647 dwell times observed in the presence of 10 nM GreBCy3B for which GreBCy3B arrived and departed simultaneously with \u03c370RNAP647 (orange). Inset: magnified view. Fits to a biexponential dwell time distribution (black) yielded parameters reported in Table 3.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40576/elife-40576-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Cumulative\u00a0frequency\u00a0distributions (Friedman and Gelles, 2015)\u00a0of \u03c370RNAP647dwell\u00a0times\u00a0recorded at 450 \u03bcW (blue; N\u00a0=\u00a02,143) and 600 \u03bcW (red; N\u00a0=\u00a02,576) 633 nm laser excitation powers using the experimental design shown in Figure 3A. Data show no evidence for systematically shorter lifetimes at higher power, suggesting that there is not significant photobleaching under the conditions of the experiments.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40576/elife-40576-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Data are plotted as in Figure 3B. Events in which molecules of \u03c370RNAP647 and GreBCy3B simultaneously arrive at and later simultaneously depart from the DNA molecule (orange) and events in which \u03c370RNAP647 arrives alone (purple) are highlighted. Occasional events in which GreBCy3B is present without \u03c370RNAP647 (examples marked by asterisks) are presumed to be due to the presence of a fraction of unlabeled \u03c370RNAP molecules, since little GreB binding is observed in the absence of RNAP (see text).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/40576/elife-40576-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Data are taken from the same experiment and analysis as Figure 3E, green curve, except that the set of \u03c370RNAP647 binding events were separated into two disjoint subsets: \u03c370RNAP647 that arrived at DNA without (red) and with (orange) GreBCy3B. Background curve (gray) was collected from randomly selected locations without detected DNA molecules in the same experiment. Data were fit to background-corrected exponential models as in Figure 3E; fit parameters and number of observations are reported in Table 3.\n\nIn these three-color CoSMoS experiments, we observed that some \u03c370RNAP647 molecules arrived at DNA locations in complex with GreBCy3B molecules (orange highlights in Figure 3B and Figure 3\u2014figure supplement 2), whereas others arrived without detectable GreBCy3B fluorescence (purple highlights). Even though essentially all GreBCy3B molecules are labeled (see Materials and methods), this result is nevertheless expected since the experiment is conducted at 10 nM GreBCy3B, the concentration at which only 50% of the polymerase molecules in solution have GreB bound. The fraction of \u03c370RNAP647 molecules observed to arrive simultaneously with GreBCy3B agrees with that expected (Figure 3C), demonstrating that \u03c370RNAP\u2022GreBCy3B and \u03c370RNAP have similar rate constants for binding to DNA.\n\nOf the holoenzyme molecules that arrived at the promoter without bound GreB, very few recruited GreB after arrival. In particular, at 10 nM GreBCy3B we saw only 3.5 \u00b1 0.9% of \u03c370RNAP\u2022DNA complexes bind GreB (47 instances of binding to 1,355 complexes over a summed duration of 1,121 s, corresponding to kon = (0.42\u00a0\u00b1\u00a00.06)\u00d7107 M\u22121 s\u22121). This binding is specific -- it is much larger than the rate constant for background GreBCy3B binding to DNA in the absence of \u03c370RNAP (32 binding events recorded on 168 DNA molecules each observed for 1,342 s, corresponding to kon = (1.4\u00a0\u00b1\u00a00.3)\u00d7104 M\u22121 s\u22121) \u2013 and is comparable to the rate constant for GreB binding to holoenzyme (Table 1). However, given the short lifetime of rRNA promoter complexes this rate is still too small to allow more than a minor fraction of \u03c370RNAP\u2022DNA complexes to recruit GreB even at concentrations of GreB several times the 10 nM used here. At the higher concentrations essentially all holoenzyme would already have bound GreB (since KD\u00a0=\u00a010 nM), which would also eliminate the recruitment pathway. Thus these data suggest that GreB suppression of rrnB P1\u00a0initiation is essentially completely controlled by GreB binding to \u03c370RNAP off DNA rather than GreB binding to initiation complexes, and that this conclusion holds in both high (>>KD) and low (<<KD) GreB concentration regimes.\n\nJust as GreB arrived at the promoter in complex with holoenzyme, we saw that GreB departed from DNA when, and only when, \u03c370RNAP dissociated (e.g., Figure 3B and Figure 3\u2014figure supplement 2). More than 90% of recorded \u03c370RNAP\u2022GreB\u2022DNA complexes ended with simultaneous departure of GreBCy3B and \u03c370RNAP647 (Figure 3D, orange highlight). The few non-simultaneous events seen occurred with a frequency not much higher than expected from coincidental colocalization or photobleaching, as estimated by a randomized control analysis of the same data (Figure 3D, line). Thus, we see no evidence for GreB dissociation that leaves behind polymerase bound to the promoter. The observations that GreB nearly always arrives at the promoter together with RNAP and only dissociates with RNAP suggest that the extent of GreB inhibition of rrnB P1 initiation is quantitatively set by the amount of GreB holoenzyme occupancy.\n\n### DNA binding rates and closed complex lifetimes of \u03c370RNAP are unaffected by GreB or DksA\n\nWe next investigated how GreB or DksA bound to \u03c370RNAP affect the initial processes in initiation: formation, interconversion, and dissociation of promoter complexes. In our experiments, which use unmodified rrnB P1 in a linear DNA in the absence of NTPs, the promoter complexes formed are almost entirely in either the initial bound state or an early closed-complex intermediate. Later, open complex states form transiently under these conditions, but they are likely too short-lived to be resolved in the time resolution of our experiments (Barker et al., 2001; Haugen et al., 2008; Rutherford et al., 2009).\n\nEven at concentrations at which half of the holoenzyme molecules are occupied, the CoSMoS data show that neither SCF significantly altered ka, the second-order rate constant for initial binding of \u03c370RNAP647 to rrnB P1 DNA (Figure 3E; Table 3). This conclusion was confirmed by direct comparison of the DNA binding rates of the subsets of \u03c370RNAP647 molecules that either were or were not seen to have bound GreBCy3B (Figure 3\u2014figure supplement 3; Table 3). Since GreB and DksA do not slow \u03c370RNAP binding, inhibition of initiation must be caused by effects on other step(s) of the initiation pathway. However, we also saw no substantial alteration of \u03c370RNAP647 dwell times on rrnB P1 when GreB or DksA was present (Figure 3F; Table 3). Therefore, kinetic destabilization of the two resolvable closed complexes also cannot account for the observed inhibition of initiation from rrnB P1. Taken together, these data imply that the SCFs act at a step in initiation after formation of these initial closed complexes, such as isomerization to open complex or subsequent nucleotide addition reactions.\n\n**Table 3.**\n Fit parameters for time to first RNAP binding (Figure 3E and Figure 3\u2014figure supplement 3) and RNAP dwell time (Figure 3F) distributions on rrnB P1 DNA*.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Experimental conditions</th>\n      <th colspan=\"3\">Time to first binding measurement</th>\n      <th rowspan=\"2\">Dwell time measurement</th>\n    </tr>\n    <tr>\n      <th>kbkgnd (106 M\u22121s\u22121)</th>\n      <th>ka (106 M\u22121s\u22121)</th>\n      <th>Af</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03c370RNAP647 (Figure 3E)</td>\n      <td>0.037\u00a0\u00b1\u00a00.006 (N\u00a0=\u00a034)</td>\n      <td>2.2\u00a0\u00b1\u00a00.6 (N\u00a0=\u00a0227)</td>\n      <td>0.95\u00a0\u00b1\u00a00.04</td>\n      <td>a\u00a0=\u00a091 \u00b1 4% \u03c41 = 2.6 \u00b1 0.4 s \u03c42 = 29.7 \u00b1 0.2 s (N\u00a0=\u00a02,576)</td>\n    </tr>\n    <tr>\n      <td>+10 nM GreBCy3B (Figure 3E)</td>\n      <td>0.016\u00a0\u00b1\u00a00.002 (N\u00a0=\u00a019)</td>\n      <td>2.0\u00a0\u00b1\u00a00.4 (N\u00a0=\u00a0269)</td>\n      <td>0.93\u00a0\u00b1\u00a00.06</td>\n      <td>a\u00a0=\u00a091 \u00b1 6% \u03c41 = 3.1 \u00b1 0.7 s \u03c42 = 42.2 \u00b1 0.4 s (N\u00a0=\u00a02,408)</td>\n    </tr>\n    <tr>\n      <td>+100 nM DksA (Figure 3E)</td>\n      <td>0.0093\u00a0\u00b1\u00a00.0005 (N\u00a0=\u00a08)</td>\n      <td>1.9\u00a0\u00b1\u00a00.5 (N\u00a0=\u00a0187)</td>\n      <td>0.89\u00a0\u00b1\u00a00.05</td>\n      <td>a\u00a0=\u00a092 \u00b1 7% \u03c41 = 2.5 \u00b1 0.4 s \u03c42 = 29.9 \u00b1 0.8 s (N\u00a0=\u00a01,381)</td>\n    </tr>\n    <tr>\n      <td>+10 nM GreBCy3B; \u03c370RNAP647\u00b7 GreBCy3B subset\u2020 (Figure 3\u2014figure supplement 3)</td>\n      <td>0.016\u00a0\u00b1\u00a00.002 (N\u00a0=\u00a019)</td>\n      <td>2.4\u00a0\u00b1\u00a00.7 (N\u00a0=\u00a0124)</td>\n      <td>0.94\u00a0\u00b1\u00a00.05</td>\n      <td>a\u00a0=\u00a090 \u00b1 5% \u03c41 = 3.4 \u00b1 0.8 s \u03c42 = 44.6 \u00b1 0.7 s (N\u00a0=\u00a01,053)</td>\n    </tr>\n    <tr>\n      <td>+10 nM GreBCy3B; \u03c370RNAP647 subset\u2020 (Figure 3\u2014figure supplement 3)</td>\n      <td>0.016\u00a0\u00b1\u00a00.002 (N\u00a0=\u00a019)</td>\n      <td>1.8\u00a0\u00b1\u00a00.6 (N\u00a0=\u00a0145)</td>\n      <td>0.91\u00a0\u00b1\u00a00.08</td>\n      <td>N.D.</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Figure 3E and F each show curves from an individual experimental replicate; fit parameters here represent pooled data from all three replicates.\u2020Data in 10 nM GreBCy3B experiment were divided into two disjoint subsets of RNAP binding events \u03c370RNAP647 that arrived at DNA 1) without GreBCy3B and 2) as a \u03c370RNAP647\u2022GreBCy3B complex (Figure 3\u2014figure supplement 3)._\n\n### \u03c370RNAP does not initiate rRNA transcription while GreB is bound\n\nTo further investigate the mechanism of GreB inhibition of rrnB P1 initiation, we next performed experiments in which we monitored \u03c370RNAP647 binding, GreBCy3B binding, and initiation on the same DNA molecule. Since this required separate observation of four different fluorescently labeled molecules, we used an experimental design in which we first recorded the locations of AF488-labeled DNA molecules and then photobleached them so that we could later record the hybridization to nascent RNA of an oligo probe labeled with the same dye (Figure 4A). In these initiation experiments conducted in the presence of NTPs and GreB, we observed that a small fraction of RNAP binding events lead to transcript production (39 of 1,755 total RNAP binding events from two replicate experiments; examples are shown in Figure 4B and Figure 4\u2014figure supplement 1). Strikingly, in none (zero of 39) of these productive binding events did RNAP arrive accompanied by GreB. In contrast, RNAP arrived together with GreB in hundreds (~50% of 1,755 total RNAP binding events) of non-productive RNAP binding events. Just as was observed in the absence of NTPs (Figure 3C,D) RNAP molecules that arrived on the DNA with GreB retained bound GreB for the entire interval during which RNAP was bound to DNA. Taken together, these observations strongly suggest that \u03c370RNAP molecules that are complexed with GreB cannot initiate transcription on rrnB P1, and again show that GreB blockage of the rrnB initiation pathway occurs at a step after formation of the initial closed complex intermediates.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40576/elife-40576-fig4-v2.jpg)\n\n**Figure 4.:** (A) Experiment design. Template and labeled proteins were the same as in Figure 3A. DNA was first imaged, then the AF488 dye (blue star) was bleached (white star). Then AF488 oligonucleotide probes and 1 mM NTPs were introduced as in Figure 2, along with 1 nM \u03c370RNAP647 and 10 nM GreBCy3B. (B) Two excerpts from the record of fluorescence intensities colocalized with one template DNA molecule. Two events in which \u03c370RNAP647 bound to DNA accompanied by GreBCy3B (orange) and one in which \u03c370RNAP647 arrived alone (purple) are highlighted. Only the last resulted in transcription initiation as judged by AF488-probe colocalization. Time series images (1.1\u00a0\u00d7\u00a01.1 \u00b5m) from the time interval delimited by dashed lines confirm appearance of co-localized AF488-probe and \u03c370RNAP647.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40576/elife-40576-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Examples of simultaneous \u03c370RNAP647\u2022GreBCy3B co-localization events (orange) and initiation events (pink) are highlighted.\n\n## Discussion\n\nProteins that regulate transcription initiation can do so by affecting the initial binding of RNAP to the promoter or by modulating later step(s) such as promoter complex isomerization, initial RNA synthesis, or promoter escape (Browning and Busby, 2016). In this study, we show that GreB repression of initiation at a rRNA promoter falls into the latter category. We show by direct observation that GreB binds to free \u03c370RNAP in solution and its presence on RNAP does not affect the formation of initial closed complexes, their stabilities, or their rates of dissociation (Figure 5). Instead, GreB acts at a later stage: closed complexes with GreB bound were never observed to progress to ECs, indicating that the secondary channel factor presence introduces a barrier to initiation at, for example, the closed-to-open complex isomerization stage or a subsequent step; this barrier is effectively insurmountable because it cannot be overcome on the time scale of rrnB P1 promoter complex lifetimes. Our data suggest that GreB and DksA inhibit rrnB by similar mechanisms, and the results are therefore compatible with proposals that DksA inhibits rRNA synthesis at least in part by affecting isomerization or open complex decay (Paul et al., 2005; Rutherford et al., 2009; Rutherford et al., 2007). The data are also consistent with a mechanism inspired by structural data (e.g., Molodtsov et al., 2018) in which the two SCFs may additionally inhibit initiation by obstructing catalytic function of the open complex active site.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40576/elife-40576-fig5-v2.jpg)\n\n**Figure 5.:** \u03c370RNAP (purple) binds promoter DNA (blue) and forms closed complexes RP1 and RP2 before isomerization to open complex, initial transcript synthesis, and promoter escape in the productive initiation pathway (yellow). GreB (green) binds rapidly and reversibly to free \u03c370RNAP (Table 1), and GreB does not alter the kinetics of closed complex formation or decay (Table 4). However, GreB blocks a later step in initiation and GreB dissociation from RNAP cannot compete with RNAP dissociation from\u00a0the promoter; thus, promoter binding by GreB\u2022\u03c370RNAP is a non-productive pathway (gray) that does not initiate RNA synthesis. DksA likely regulates rRNA initiation by a similar mechanism.\n\n**Table 4.**\n Rate constants (\u00b1SE*) for kinetic scheme depicted in Figure 5.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>k1 or k1\u2032 (M\u22121s\u22121)\u2020</th>\n      <th>k-1 or k-1\u2032 (s\u22121)\u2021</th>\n      <th>k2 or k2\u2032 (s\u22121)\u2021</th>\n      <th>k-2 or k-2\u2032 (s\u22121) \u2021</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03c370RNAP</td>\n      <td>2.2\u00a0\u00b1\u00a00.6\u00a0\u00d7\u00a0106</td>\n      <td>0.48\u00a0\u00b1\u00a00.12</td>\n      <td>1.4\u00a0\u00b1\u00a00.6\u00a0\u00d7\u00a010\u22122</td>\n      <td>2.4\u00a0\u00b1\u00a00.8\u00a0\u00d7\u00a010\u22122</td>\n    </tr>\n    <tr>\n      <td>\u03c370RNAP\u00b7GreB</td>\n      <td>2.4\u00a0\u00b1\u00a00.7\u00a0\u00d7\u00a0106</td>\n      <td>0.30\u00a0\u00b1\u00a00.16</td>\n      <td>2.3\u00a0\u00b1\u00a00.7\u00a0\u00d7\u00a010\u22122</td>\n      <td>1.7\u00a0\u00b1\u00a00.4\u00a0\u00d7\u00a010\u22122</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Determined by bootstrapping (Friedman and Gelles, 2012).\u2020Identical to the corresponding ka values in Table 3.\u2021Calculated as described (Friedman and Gelles, 2012) from the dwell time fit parameters reported in Table 3._\n\nPerhaps unexpectedly for a factor affecting only later stage(s) of initiation, we find that GreB does not function by binding to rrnB promoter complexes during those stages. In our experiments, GreB was almost never observed to bind to or depart from \u03c370RNAP-promoter complexes. Instead, GreB arrived only at promoters that were not already bound by \u03c370RNAP and arrived only in complex with \u03c370RNAP. Similarly, it left the promoter only as a \u03c370RNAP\u2022GreB complex. However, rRNA promoter complexes are atypically short lived (Ruff et al., 2015). On more typical promoters, promoter complexes may be sufficiently long-lived to allow association of and dissociation of GreB. Dissociation of GreB during a long-lived promoter complex would prevent the suppression of initiation by the mechanism we observe with rrnB P1, providing a straightforward explanation for why GreB (and DksA) selectively inhibits initiation at promoters that have short-lived promoter complexes (Paul et al., 2005; Rutherford et al., 2007). On promoters with long-lived RNAP complexes, inhibition by this mechanism would be abolished or weakened, and stimulatory effects of Gre factors\u00a0(e.g.,\u00a0preventing abortive initiation [Chander et al., 2015; Duchi et al., 2016; Feng et al., 1994; Hsu et al., 1995; Lerner et al., 2016] or suppressing promoter-proximal pausing [Deighan et al., 2011; Marr and Roberts, 2000]) observed at some promoters could act to accelerate initiation.\n\nThe demonstration that GreB occupancy of holoenzyme is what dictates GreB inhibition of rrnB suggests that competition between SCFs for binding to \u03c370RNAP in solution (i.e., before it binds to promoter) may determine which SCFs are most important for rRNA transcription regulation under various growth conditions. Here we used three different methods to assess the affinity with which GreB binds to both core RNAP and \u03c370RNAP. First, we used FCS to measure the affinity of GreB for core and \u03c370RNAP (Figure 1 and Table 1). We then confirmed this affinity measurement using a single-molecule assay in which we also measured the kinetic parameters of GreB binding to and dissociating from surface-tethered core and \u03c370RNAP (Figure 1\u2014figure supplement 2 and Table 1). Finally, we measured the fraction of \u03c370RNAP molecules that arrive at and depart from surface-tethered DNA containing the rrnB P1 promoter in complex with GreB (Figure 3C). All three approaches showed that that GreB binds \u03c370RNAP with a KD more than 10-fold tighter than its binding to ECs (Table 1) and much tighter than prior estimates based on non-equilibrium studies of its affinity for core RNAP or initial transcription complexes (Furman et al., 2013; Lennon et al., 2012; Lennon et al., 2009; Loizos and Darst, 1999; Rutherford et al., 2007). The tight binding affinity of GreB for holoenzyme is also consistent with the observed potent inhibition of rrnB P1 initiation kinetics by low concentrations (10 nM) of GreB. Since the binding of GreB to holoenzyme is much tighter than to ECs, holoenzyme molecules are likely able to at least partially compete with ECs for association with unbound GreB, even if the latter are present in significant excess.\n\nOur observation that GreB binds to and releases from holoenzyme, not rRNA promoter complexes, provides strong support for the proposal (Rutherford et al., 2007) that the relative importance of GreB and DksA in regulation of initiation at rrnB P1 is simply determined by which one dominates occupation of the secondary channel in the cellular pool of \u03c370RNAP. Equilibrium occupancy is determined by both the binding affinities (measured here for GreB) and the ratios of unbound (not total) SCF concentrations, which are not known. The two proteins may have redundant functions in growth-rate dependent rRNA regulation, but the phenotypes of genetic deletion strains (Rutherford et al., 2007) are difficult to interpret unambiguously because of the other, non-overlapping functions of the two proteins in transcription elongation and other cellular processes (Furman et al., 2013; Furman et al., 2012; Tehranchi et al., 2010; Zhang et al., 2014). In contrast, the millimolar levels of ppGpp present during the stringent response may selectively promote DksA binding over that of GreB (Molodtsov et al., 2018; Ross et al., 2016). Thus, DksA may become the dominant regulator of the two during amino acid starvation. Further study will be required to determine the extent that competition with other SCFs (e.g., GreA) affects the function of GreB and DksA in rRNA regulation.\n\nInterestingly, the interaction of GreB with free RNAP may be more complex than a simple one-step binding mechanism. Single-molecule kinetic measurements show a biexponential dwell time distribution of GreB on surface-tethered core and \u03c370RNAP (Figure 1\u2014figure supplement 2D,F), indicating distinct short- and long-lived classes of binding events. Only a very small fraction of GreB interactions with holoenzyme (11%; calculated as (1 \u2013 a) from the value of a in Table 1) achieve the long-lived state, and what causes the different behaviors of the two classes is obscure.\n\nAll stages of the transcription cycle are thought to be modulated by SCFs, and each SCF is presumed to compete for the same binding site on RNAP. Therefore, knowing the steps in the transcription mechanism at which SCFs load onto and dissociate from RNAP, as well as the dynamics of this interaction and the manner in which SCF presence affects the kinetic properties of RNAP while bound, can illuminate how these factors are able to exert specific regulatory effects at precise stages in the cycle. Using GreB as a model SCF, we propose based on our data that transcription factor binding to free \u03c370RNAP, rather than to initiation complexes, is the critical factor that determines the relative importance of each SCF in inhibiting initiation from rRNA promoters. The data reveal that GreB functions by a \u2018delayed inhibition\u2019 mechanism, and imply that DksA functions by the same mechanism. Based on this mechanism, we propose that rRNA promoters are selectively inhibited by SCFs because their short-lived RNAP complexes do not allow sufficient time for SCFs to dissociate.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software</td>\n      <td>CoSMoS analysis software</td>\n      <td>https://github.com/gelles-brandeis/CoSMoS_Analysis</td>\n      <td>RRID:SCR_01689</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Hybridization probe oligonucleotides\n\nTranscription initiation was detected by hybridization of two fluorescently-labeled oligonucleotide probes to the nascent transcript. Probes were fluorescently labeled with either 5(6)-Carboxytetramethylrhodamine (TAMRA) (5\u2032-/56-TAMN/gcgtgtttgccgttgttccgtgtcagt-3\u2032 and 5\u2032-/56-TAMN/tctcaggagaaccccgctgacccggcg-3\u2032), or with AlexaFluor488 (AF488) (5\u2032-/5Alex488N/gcgtgtttgcc gttgttccgtgtcagt-3\u2032 and 5\u2032-/5Alex488N/tctcaggagaaccccgctgacccggcg) (all from IDT DNA).\n\n### rrnB P1 transcription template\n\nThe 314 bp AF488-labeled transcription template consisted of the E. coli rrnB gene from positions \u221265 to\u00a0+249 (relative to the transcription start site defined as\u00a0+1) and included the full rrnB P1\u00a0including the upstream promoter (UP) element. The template was synthesized by PCR using AF488- and biotin-labeled primers 5\u2019-/AF488/GCGGTCAGAAAATTATTTTAAATTTCC-3\u2019\u00a0and 5\u2019-/5Biosg/CGTGTTCACTCTTGAGACTTGGTATTC-3\u2019 (IDT DNA), E. coli genomic DNA from strain MG1655 (ATCC), and Herculase II Fusion DNA polymerase (Agilent) according to the manufacturer\u2019s protocol.\n\n### Synthesis of BG-488-PEG-biotin\n\nThe bifunctional benzylguanine (BG) adduct BG-488-PEG-biotin (which includes both an ATTO 488 dye and a biotin moiety) was prepared by coupling of synthetic intermediate BG-Lys(NH2)-PEG-biotin and commercially available ATTO 488 NHS ester (ATTO-Tec GmbH, Siegen, Germany). The synthetic intermediate BG-Lys(NH2)-PEG-Biotin was obtained from successive couplings of commercially available \u03b1-N-Fmoc-\u03b5-N-Dde-lysine (Merck KGaA, Darmstadt, Germany) with BG-NH2 (New England Biolabs, Ipswich, MA, USA) and N-(+)-biotin-6-aminocaproic acid N-succinimidyl ester (Sigma-Aldrich, St. Louis, MO) by the synthetic route described previously (Smith et al., 2013). BG-488-PEG-biotin was synthesized as follows: BG-Lys(NH2)-PEG-biotin (2.4 mg, 2.6 \u00b5mol) was dissolved in anhydrous DMF (1 mL). ATTO 488 NHS ester (2.8 mg, 2.9 \u00b5mol) and triethylamine (1.0 \u00b5L, 7.3 \u00b5mol) were added and the reaction mixture stirred overnight at room temperature. The solvent was removed under vacuum and the product purified by reversed-phase HPLC on a VYDAC 218TP series C18 column (22 \u00d7 250 mm, 10 \u00b5m particle size) at a flow rate of 20 mL/min using a 0.1 M triethyl ammonium bicarbonate/acetonitrile gradient. HPLC fractions containing the product were lyophilized to afford 1.13 \u00b5mol (43% yield) of BG-488-PEG-biotin. A high-resolution mass spectrum of BG-488-PEG-biotin was recorded by electrospray ionization (ESI) on an Agilent 6210 Time-of-Flight (TOF)\u00a0mass\u00a0spectrometer: ESI-TOFMS m/z 756.7879 [M\u00a0+\u00a02H]2+ (calc. for C69H89N15O18S3, m/z 756.7909).\n\n![Scheme 1.](https://cdn.elifesciences.org/articles/40576/elife-40576-fig6-v2.jpg)\n\n### Labeled E. coli RNAP preparations\n\nE. coli core RNAP (\u03b12\u03b2\u03b2\u2032\u03c9) with a SNAP-tag on the C-terminus of \u03b2\u2032 (Tetone et al., 2017) was labeled with SNAP-Surface 647 (New England Biolabs) as described (Mumm et al., 2020) to produce RNAP647. Labeling stoichiometry measured as in Mumm et al. (2020) was 54%. RNAP488-PEG-biotin was prepared in the same way, except that BG-488-PEG-biotin was used and unreacted dye was removed using a 30 kDa MWCO centrifugal filter (Microcon MRCF0R030; EMD Millipore); labeled protein was subjected to two cycles in which the protein was concentrated\u00a0~4 fold and then re-diluted to its original volume. To prepare \u03c370RNAP647 or \u03c370RNAP488-PEG-biotin, labeled core RNAP was incubated with \u03c370 as described (Harden et al., 2016).\n\n### GreB preparation and fluorescent labeling\n\nGreB proteins used in this study were either wild type (\u2018GreB\u2019) or contained a relocated cysteine (\u2018rcGreB\u2019; E82C/C68S mutant) and were purified as previously described (Tetone et al., 2017). rcGreB was labeled with either Cy3- or Cy3B-maleimide monoester (GE Healthcare, Piscataway, NJ) as previously described (Tetone et al., 2017). GreBCy3B was determined to be 93% labeled as described previously (Tetone et al., 2017) and GreBCy3 preparations were determined to be 80\u201390% labeled as described (Tetone et al., 2017) with the exception that \u03b5550,Cy3 = 150,000 M\u22121 cm\u22121. GreBCy3 is fully active in transcript cleavage assays (Tetone et al., 2017) and its binding to \u03c370RNAP was quantitatively indistinguishable from that of unlabeled GreB in competition experiments (Figure 1\u2014figure supplement 2C).\n\n### Fluorescence Correlation Spectroscopy and autocorrelation analysis\n\nAll FCS data was collected in a custom one-photon confocal instrument (Liu et al., 2006; Pu et al., 2009). In brief, the 514 nm line was selected from an air-cooled multiline argon-krypton ion laser (Melles-Griot) using a prism and used to excite the sample. A 535drlp dichroic mirror (Chroma Technology) reflected the laser light into a water immersion objective (Olympus, NA\u00a0=\u00a01.2) mounted on an inverted microscope (IX-70, Olympus); the objective also collected the emitted fluorescence. The same dichroic passed the fluorescence emission, and any remaining scattered laser light was blocked by an HQ540lp filter (Chroma Technology). A 30 \u03bcm confocal pinhole (Thorlabs) in the conjugate image plane was used to define the observation volume and to block out-of-focus fluorescence. The fluorescence was collimated, split by a 635dcxr dichroic mirror (Chroma Technology) and the reflected fluorescence passed through an HQ580/30 bandpass filter (Chroma Technology) before being focused unto an avalanche photodiode (APD, SPCM-AQR-14, Perkin-Elmer). The transmitted fluorescence passed through a D675/50 bandpass filter (Chroma Technology) to block Raman scattering before being focused on the second APD. The photon counts from the APDs were collected by a 2-channel data acquisition card and the auto- and cross-correlation curves were calculated by associated software (ISS). The ISS software was also used to analyze the FCS data. Excitation power was 30\u201340 \u03bcW. Data acquisition was at 24\u00a0\u00d7\u00a0106 Hz and 1\u20132\u00a0\u00d7\u00a0106 photons were collected per run.\n\nThe beam width (2\u03c9o) and height (2zo) were determined by acquiring data with a standard dye, rhodamine-6G (Rh6G) using a diffusion coefficient, DRh6G, of 280 \u03bcm2/s (Magde et al., 1974). Pulsed field gradient NMR experiments suggest that DRh6G may be closer to 400 \u03bcm2/s (Gendron et al., 2008). An increased value of DRh6G has no effect on our determinations of the fraction of bound GreB (fbound) or the associated dissociation constant (KD), but could result in underestimation of the diffusion coefficients of free and bound GreB. For all FCS acquisitions with GreBCy3, \u03c9o and S\u00a0=\u00a0zo/\u03c9o were held constant when fitting the autocorrelation traces.\n\nFor equilibrium binding measurements, fluorescence fluctuation data was first collected for GreBCy3 in assay buffer [40 mM Tris-Cl, pH 8.0, 130 mM KCl, 4 mM MgCl2, 0.1 mM EDTA, 0.1 mM DTT, 10 mg/mL BSA] supplemented with oxygen scavenging reagents (Friedman et al., 2006). Autocorrelation of the fluorescence signal was calculated using ISS-Vista software for FCS analysis. Assuming that GreBCy3:RNAP and GreBCy3:\u03c370RNAP binding is 1:1 and that the brightness (quantum yield) of Cy3 does not change upon binding, the correlation curves, G(\u03c4) may be fit to\n\n$$\nG(\\tau)=\\frac{1}{(\\pi\\sqrt{\\pi}\\omega_{o}^{3}S\u27e8C\u27e9)}\\sumif_{i}((1+\\frac{4D_{i}\\tau}{\\omega_{o}^{2}})\\sqrt{1+\\frac{4D_{i}\\tau}{S^{2}\\omega_{o}^{2}}})^{\u22121}\n$$\n\nwhere\u00a0<C>\u00a0is the time averaged concentration in the observation volume, fi is fraction of species i and Di is the diffusion coefficient of species i. The diffusion coefficient of GreBCy3 (DGreB) was obtained by fixing f\u00a0=\u00a01.\n\nCore RNAP or \u03c370RNAP was then added at a concentration (RT) ranging from 1 to 100 nM to a fixed C\u00a0=\u00a010 nM concentration of GreBCy3. Fluorescence records were collected at each RNAP concentration, and the autocorrelation was obtained as described above. Curves were then fit to Equation 1 for two species with fixed DGreB to obtain N, fbound, and the diffusion constant of the GreB\u00b7RNAP complex DGreB\u00b7RNAP. Standard errors of the fit parameters were obtained by bootstrapping.\n\nThe concentration of RNAP bound, Rbound, is\n\n$$\nR_{bound}=C\\timesf_{bound}.\n$$\n\nTherefore, concentration of free RNAP, Rfree, was calculated as\n\n$$\nR_{free}=R_{T}\u2212R_{bound}.\n$$\n\nKD was measured by performing a standard error weighted fit of the pairs of fbound and Rfree values from measurements at different RT to the Langmuir equation\n\n$$\nf_{bound}=[R_{free}]/([R_{free}]+K_{D}).\n$$\n\n### CoSMoS\n\nSingle-molecule fluorescence microscopy experiments were conducted using a multi-wavelength micromirror total internal reflection fluorescence microscope (Friedman et al., 2006) equipped with lasers at wavelengths 488, 532, and 633 nm for fluorescence excitation and at 785 nm for autofocus (Friedman and Gelles, 2015). Experiments were conducted in assay buffer supplemented with an oxygen scavenging system (Friedman et al., 2006). All experiments were conducted at 20\u201323\u00b0 C. Data were acquired at 0.5 s per frame except as otherwise noted.\n\nCoSMoS experiments were conducted in flow chambers (Friedman et al., 2006) using glass slides passivated with a mPEG-SG2000:biotin-PEG-SVA5000 (Laysan Bio) 200:1 w/w mixture (Friedman et al., 2013). Streptavidin-coated fluorescent beads (T-10711, Molecular Probes) were added to the chamber at a dilution of\u00a0~1:400,000 to serve as fiducial markers for drift correction (Friedman and Gelles, 2015). The chamber was then incubated with 0.013 mg/mL NeutrAvidin (31000, Thermo Fisher) in assay buffer for 45 s and then was flushed with three to five chamber volumes (20 \u00b5l) of assay buffer.\n\nInitiation experiments were performed essentially as described previously (Mumm et al., 2020) except that data were acquired at 1 s per frame.\n\nEquilibrium binding of GreBCy3B to surface-tethered RNAP was measured by incubating the chamber with\u00a0~20 pM RNAP488-PEG-biotin until a sufficient surface density of fluorescent spots (Friedman and Gelles, 2015) was obtained. The chamber was then flushed with buffer, and images of a new field of view were recorded to establish locations of the RNAP488-PEG-biotin molecules. GreBCy3B was then introduced and the association to and dissociation from surface-tethered RNAP488-PEG-biotin molecules was monitored.\n\n### CoSMoS data analysis\n\nImage and kinetic analysis was performed using custom software and algorithms for automatic spot detection, spatial drift correction, colocalization, plotting and analyzing kinetic data, and determining association and dissociation rates, active fractions, and amplitudes (https://github.com/gelles-brandeis/CoSMoS_Analysis) (Friedman and Gelles, 2015). The accompanying data archive (doi: 10.5281/zenodo.2530159) provides single-molecule source data for each figure and figure supplement; the files are \u2018intervals\u2019 files readable by the imscroll program in the Github repository cited above. The rates of association and dissociation of GreBCy3B to surface-tethered \u03c370RNAP488-PEG-biotin were measured as described previously (Tetone et al., 2017), except that the selected locations on the slide surface were tethered RNAP488-PEG-biotin molecules instead of DNA molecules.\n\nThe rate of transcription initiation on rrnB P1 templates tethered to the chamber surface was measured as described previously (Friedman and Gelles, 2015; Mumm et al., 2020). Initiation rates (kinit) were corrected for the rate of nonspecific TAMRA-probe or AF488-probe binding (kbkgnd) determined by analyzing randomly selected surface locations without AF488-labeled DNA molecules from the same recording. In Figure 2C\u2013F, experiments without SCF (purple curves) were used to obtain the active fraction as described (Friedman and Gelles, 2015; Friedman and Gelles, 2012). The corresponding experiments with SCF and SCF+ppGpp were performed on the same day and the active fraction Af of these curves was fixed to the value obtained in the experiment without SCF.\n\nThe association rate of \u03c370RNAP647 to rrnB P1 DNA locations in the absence and presence of SCFs was determined in the absence of NTPs essentially as described previously (Mumm et al., 2020), with the exception that the rate of background binding was determined by measuring the rate of non-specific binding to the chamber surface rather than to DNA templates lacking the rrnB P1 promoter. Fitting of the time to first binding distributions yielded values (Table 3) for the second-order association rate constant for non-specific surface binding (kbkgnd), the second-order association rate constant for promoter DNA binding (ka), and the fraction of DNA molecules that were active in binding (Af) (Friedman and Gelles, 2015). The dissociation of \u03c370RNAP647 from rrnB P1 DNA was measured essentially as previously described (Mumm et al., 2020). Photobleaching contributions for \u03c370RNAP647 dwell times on rrnB P1 DNA and GreBCy3B on surface-tethered \u03c370RNAP or RNAP core determined as described previously (Hoskins et al., 2016) and were negligible.\n",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "ec7b24b6-3fd4-411c-9e11-e3f3ff04cb8f",
+      "submission_id": "bee189b7-7098-4275-b52f-5bc896b49f6f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antoine M van Oijen, University of Wollongong Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.40576.sa1](https://doi.org/10.7554/eLife.40576.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Delayed inhibition mechanism for secondary channel factor regulation of ribosomal RNA transcription\" for consideration by eLife. Your article has been reviewed by Kevin Struhl as the Senior Editor, a Reviewing Editor, and two reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. As you can see from their comments, both reviewers are enthusiastic about the work. None of the issues they raise were seen as critical to the study, but would strengthen the manuscript if addressed.\n\nSummary:\n\nStumper et al. use single-molecule fluorescence experiments to study RNAP control through the secondary channel, providing a detailed view of the regulatory mechanism that could not be obtained from bulk experiments. The work is an elegant demonstration of the inhibitory role of GreB in transcription initiation from the classical rrnB P1 promoter. Using FCS and single-molecule surface assays the authors show that GreB binding to core or holoenzyme RNAP is tighter than previously thought (dissociation constant 10 nM). Using multiwavelength single-molecule assays the authors then demonstrate identical binding of both RNAP holoenzyme and RNAP holoenzyme complexed with GreB to the rrnB P1 promoter in the absence of nucleotides, and complete inhibition of escape from the rrnB P1 promoter of GreB-bound RNAP holoenzyme. The authors also examine the similar role of DksA and the synergistic, inhibitory role of ppGpp.\n\nEssential revisions:\n\nNone\n\nMinor points:\n\n1) The authors extend their conclusions to other SC factors, arguing that they bind to the enzyme similarly and all effects will be controlled by occupancy. It could be more interesting to point out differences and it is possible that some SC factors are not exchanging that rapidly. In their recent study (Tetone et al., 2017), the authors found that a cleavage-deficient D41N GreB remained bound to the elongation complex much longer. A \"native\" Gre-like Gfh, which inhibits catalysis, could have similar properties.\n\n2) The authors stress the point that GreB arrives and departs with the holoenzyme, instead of binding to the initiation complexes. This could in part be explained by the low stability of these complexes, and maybe this point could be made clearer. Alternatively, this result may suggest that GreB affinity for the DNA-bound RNAP is lower. Experimentally, this could be tested by including ATP which is expected to stabilize an otherwise absent open complex. This may also allow distinction between GreB effects on open complex vs nucleotide addition.\n\n3) While GreB is an excellent model to study control through the SC, the manuscript may convey a notion that GreB makes an important contribution to regulation of rRNA and perhaps other promoters that form very short-lived complexes. This scenario appears to be unlikely in the cell: unless the authors could cite evidence to the contrary, E. coli GreB is present in very low numbers (near KD determined here) and would not be able to shift the balance, particularly in the case of rRNA synthesis carried out by numerous RNAPs. Ten RNAP:GreB nonproductive complexes would not shift the balance \u2013 unless GreB is overexpressed under some yet TBD conditions. Even a much more abundant GreA affects initiation from just a handful of promoters. The authors should explicitly discuss this issue and cite known in vivo GreB concentrations.\n\n4) It would be helpful for the authors to comment on the results they presented in Figure 1D of Tetone et al. (2016), in which the PR' promoter was used and RNAP was in the presence of 1 \u03bcM of GreB and relate them to this work. In Tetone et al. the authors were able to observe RNA polymerases transcribing, yet according to the arguments here the polymerase is likely saturated with GreB and arrives at PR' promoter with GreB. Should readers expect that GreB dissociates from polymerase bound to the PR' promoter and that this allows transcription to take place, or that polymerase can escape from PR' with GreB bound?\n\n5) In Figure 2G, I was expecting a 50% inhibition of transcription initiation given that GreB was at 10 nM (where polymerase is 50% occupied) but it looks to be closer to 75% inhibition. Is this interpretation correct?\n\n6) It was somewhat unclear on what basis the authors assert which states are accessible to the polymerase bound to rrnB P1 in the absence of nucleotides.\n\n7) There are only a couple of places that should be in italics = E. coli (Subsection \u201cFluorescence Correlation Spectroscopy and Autocorrelation Analysis\u201d) and rrnB (subsection \u201cGreB arrives at and departs from an rRNA promoter in complex with \u03c370RNAP\u201d) are not in italics and a space is missing between # and nM (Figure 3 legend).\n",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "709c5115-51aa-48a2-ad3d-62d57f13895b",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C1",
+      "claim": "RNA polymerases (RNAPs) contain a conserved 'secondary channel' which binds regulatory factors that modulate transcription initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA polymerases (RNAPs) contain a conserved 'secondary channel' which binds regulatory factors that modulate transcription initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about RNAP structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "cd922328-023a-47ed-9f84-f492347d7838",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C3",
+      "claim": "GreB arrived and departed from promoters only in complex with RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "GreB arrived and departed from promoters only in complex with RNAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the single-molecule observations described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "9ae9e1b9-e078-4bf1-88d3-6d6619bf3f8b",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C4",
+      "claim": "GreB did not alter initial RNAP-promoter binding but instead blocked a step after conformational rearrangement of the initial RNAP-promoter complex.",
+      "claim_type": "EXPLICIT",
+      "source": "GreB did not alter initial RNAP-promoter binding but instead blocked a step after conformational rearrangement of the initial RNAP-promoter complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data showing no change in binding rates but inhibition of initiation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "3d4d881f-ff48-42b0-9423-cb10e38c8b91",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C5",
+      "claim": "GreB-RNAP complexes never initiated at an rRNA promoter; only RNAP molecules arriving at the promoter without bound GreB produced transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, GreB-RNAP complexes never initiated at an rRNA promoter; only RNAP molecules arriving at the promoter without bound GreB produced transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the single-molecule experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "2347a6ce-c801-4a92-b1d1-b8c31eb19c90",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C6",
+      "claim": "rRNA promoters are inhibited by GreB/DksA because their short-lived RNAP complexes do not allow sufficient time for SCFs to dissociate.",
+      "claim_type": "EXPLICIT",
+      "source": "The data reveal that a model SCF functions by a 'delayed inhibition' mechanism and suggest that rRNA promoters are inhibited by GreB/DksA because their short-lived RNAP complexes do not allow sufficient time for SCFs to dissociate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "1eeea15f-6086-4e5c-a043-a5dfeae7b28a",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C7",
+      "claim": "Multi-subunit RNA polymerases (RNAPs) contain catalytic subunits that are conserved across all domains of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-subunit RNA polymerases (RNAPs), the molecular machines responsible for the synthesis of cellular mRNAs, contain catalytic subunits that are conserved across all domains of life (Cramer, 2002; Werner and Grohmann, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "aaa9ba16-6bfc-47f9-acb8-6ad739769404",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C8",
+      "claim": "The secondary channel is a pore that provides access to the deeply-buried active site of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "An important such regulatory hot spot is the secondary channel, a pore that provides access to the deeply-buried active site of the enzyme (Nickels and Hochschild, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "61d09e2f-54a9-4522-814b-e38f99290bfc",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C9",
+      "claim": "Two evolutionarily distinct SCF families have evolved in bacteria and eukaryotes, distinguished by insertion into the channel of either antiparallel \u03b1-helices (bacteria; GreA-like proteins) or of a \u03b2 hairpin (eukaryotes, TFIIS-like proteins).",
+      "claim_type": "EXPLICIT",
+      "source": "Two evolutionarily distinct SCF families have evolved in bacteria and eukaryotes, distinguished by insertion into the channel of either antiparallel \u03b1-helices (bacteria; GreA-like proteins) or of a \u03b2 hairpin (eukaryotes, TFIIS-like proteins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established structural knowledge about SCF families.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "cf124649-f528-4103-86c8-0148946faeb7",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C10",
+      "claim": "Escherichia coli uses at least five distinct GreA-like SCFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Escherichia coli uses at least five distinct GreA-like SCFs (Zenkin and Yuzenkova, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "4d509638-5890-451c-839e-96cf15a6d09e",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C11",
+      "claim": "GreB stimulates endonucleolytic cleavage of the nascent transcript in transcription elongation complexes (ECs).",
+      "claim_type": "EXPLICIT",
+      "source": "GreB, for example, was first identified as an SCF that stimulates endonucleolytic cleavage of the nascent transcript in transcription elongation complexes (ECs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established function of GreB supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "0ff9a7d1-7e46-436b-b6b8-80f6c61fca16",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C12",
+      "claim": "GreB stimulates cleavage of RNA that has reverse threaded through the active site (backtracked) by multiple nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "GreB stimulates cleavage of RNA that has reverse threaded through the active site (backtracked) by multiple nucleotides, for instance after nucleotide misincorporation at the RNA 3\u2032 end (Borukhov et al., 2001; Borukhov et al., 1993; Laptenko et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "cf3f6e7b-d5b2-4a0f-8adc-7b4daa54c98e",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C13",
+      "claim": "GreB and GreA can stimulate transcription by aiding promoter escape.",
+      "claim_type": "EXPLICIT",
+      "source": "By causing removal of the backtracked segment of the nascent transcript both GreB and its paralog, GreA, can stimulate transcription by aiding promoter escape (Duchi et al., 2016; Feng et al., 1994; Hsu et al., 1995; Lerner et al., 2016; Shimamoto et al., 1986; Susa et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "3841a4eb-ae4d-4996-814e-3698f1569534",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C14",
+      "claim": "GreB and GreA can stimulate transcription by allowing escape from promoter-proximal \u03c370-paused ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "By causing removal of the backtracked segment of the nascent transcript both GreB and its paralog, GreA, can stimulate transcription by aiding promoter escape (Duchi et al., 2016; Feng et al., 1994; Hsu et al., 1995; Lerner et al., 2016; Shimamoto et al., 1986; Susa et al., 2002) and by allowing escape from promoter-proximal \u03c370-paused ECs (Deighan et al., 2011; Marr and Roberts, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "39a91b24-2a69-41eb-8801-b444b1a2000c",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C15",
+      "claim": "GreB (but not GreA) can inhibit initiation by RNAP prior to phosphodiester bond formation at certain promoters with short-lived RNAP-promoter complexes such as the ribosomal RNA (rRNA) rrnB P1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GreB (but not GreA) also can inhibit initiation by RNAP prior to phosphodiester bond formation at certain promoters with short-lived RNAP-promoter complexes such as the ribosomal RNA (rRNA) rrnB P1 promoter (Rutherford et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "518029b1-cf91-47e3-9b66-754de01574c8",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C16",
+      "claim": "DksA has a divergent domain that binds outside the secondary channel.",
+      "claim_type": "EXPLICIT",
+      "source": "This GreB activity is similar to one of the activities of a different E. coli SCF, DksA, which has a divergent domain that binds outside the secondary channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of DksA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "e02d0a36-d8d6-4a3b-963a-31d0d1205f2e",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C17",
+      "claim": "DksA does not promote transcript cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "DksA does not promote transcript cleavage and has other effects on transcript elongation (Zenkin and Yuzenkova, 2015; Zhang et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "0efc90d5-efe3-4ef2-b55f-c6f8cbdad783",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C18",
+      "claim": "DksA can strongly affect initiation either negatively at 'stringent' promoters (e.g., rrnB P1) or positively at other promoters (e.g., the histidine biosynthetic operon promoter PhisG).",
+      "claim_type": "EXPLICIT",
+      "source": "DksA does not promote transcript cleavage and has other effects on transcript elongation (Zenkin and Yuzenkova, 2015; Zhang et al., 2014), but it can strongly affect initiation either negatively at 'stringent' promoters (e.g., rrnB P1) or positively at other promoters (e.g., the histidine biosynthetic operon promoter PhisG) (Gourse et al., 2018; Paul et al., 2005; Paul et al., 2004; Potrykus et al., 2006; Rutherford et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "2dcdc8ff-5d1a-4bee-a13d-a1b4977bab59",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C19",
+      "claim": "Production of rRNA is suppressed during the stringent response, a global reprogramming of gene expression in response to amino acid starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Production of rRNA is suppressed during the stringent response, a global reprogramming of gene expression in response to amino acid starvation (Browning and Busby, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "35aa100c-7301-4b05-8eeb-aa08345566e4",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C20",
+      "claim": "DksA binds in the SC and reduces initiation from rrnB P1 during the stringent response.",
+      "claim_type": "EXPLICIT",
+      "source": "DksA binds in the SC and reduces initiation from rrnB P1 during the stringent response (Paul et al., 2004; Ross et al., 2016; Rutherford et al., 2009; Rutherford et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "426d2291-7e97-4d7e-9443-a500273a058d",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C21",
+      "claim": "The effect of DksA on rrnB P1 initiation is potentiated by binding of guanosine tetraphosphate (ppGpp), which is accumulated at concentrations up to ~1 mM to signal amino acid starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "DksA binds in the SC and reduces initiation from rrnB P1 during the stringent response (Paul et al., 2004; Ross et al., 2016; Rutherford et al., 2009; Rutherford et al., 2007); this effect is potentiated by binding of guanosine tetraphosphate (ppGpp), which is accumulated at concentrations up to ~1 mM to signal amino acid starvation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the role of ppGpp in the stringent response.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "30cf36a5-7231-485c-a1b7-ae6c688d45b6",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C22",
+      "claim": "ppGpp binds two sites on RNAP to modulate transcription: one at the interface of the omega and \u03b2\u2032 subunits and a second created by DksA upon binding in the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "ppGpp binds two sites on RNAP to modulate transcription: one at the interface of the omega and \u03b2\u2032 subunits and a second created by DksA upon binding in the SC (Molodtsov et al., 2018; Ross et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "d9282967-001c-4ab3-9d27-bc806c74ae41",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C23",
+      "claim": "Cells must maintain appropriate levels of rRNA during rapid-growth (i.e., non-starvation) conditions, conditions in which rRNAs are the most abundant transcripts produced.",
+      "claim_type": "EXPLICIT",
+      "source": "Although much study has focused on stringent regulation of rRNA production, cells must also maintain appropriate levels of rRNA during rapid-growth (i.e., non-starvation) conditions, conditions in which rRNAs are the most abundant transcripts produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of biological knowledge about rRNA regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "828a2b26-7fdd-4bf7-82d0-23cba03fe09a",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C24",
+      "claim": "A growth rate-dependent control system maintains rRNA levels relative to total cellular protein by making rRNA synthesis proportional to the steady-state growth rate rather than to amino acid availability.",
+      "claim_type": "EXPLICIT",
+      "source": "A growth rate-dependent control (Bartlett and Gourse, 1994) system maintains rRNA levels relative to total cellular protein by making rRNA synthesis proportional to the steady-state growth rate rather than to amino acid availability (Gourse et al., 1986; Josaitis et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "977122b3-625c-4f5c-b267-cf514d873be3",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C25",
+      "claim": "Growth rate-dependent regulation occurs at micromolar cellular concentrations of ppGpp rather than the millimolar concentrations that mediate stringent regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This regulation occurs at micromolar cellular concentrations of ppGpp (Ross et al., 2016; Ryals et al., 1982) rather than the millimolar concentrations that mediate stringent regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "e2c55569-30a8-4b55-afd2-2a44d12af80f",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C26",
+      "claim": "There is potential for involvement of both GreB and DksA in growth rate dependent control.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to stringent regulation of rRNA transcription (in which DksA is clearly implicated), there is potential for involvement of both GreB and DksA in growth rate dependent control (Mallik et al., 2006; Rutherford et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "cd95e810-c930-4787-a072-3fdf9dcf4975",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C27",
+      "claim": "The mechanism for growth rate-dependent control of rRNA synthesis by the two SCFs is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism for growth rate-dependent control of rRNA synthesis by the two SCFs is unknown, and the point in the transcription cycle at which the SCFs load onto RNAP has not been defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "5499c815-6cd7-4ee3-8f12-6aa406648b8b",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C28",
+      "claim": "The point in the transcription cycle at which the SCFs load onto RNAP has not been defined.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism for growth rate-dependent control of rRNA synthesis by the two SCFs is unknown, and the point in the transcription cycle at which the SCFs load onto RNAP has not been defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "929db00e-8002-4cc6-bfa8-8b3a9565ff3d",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C29",
+      "claim": "GreB binds both core and \u03c370RNAP with KD = 10 \u00b1 1 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "A hyperbolic fit to the fraction bound data at varying \u03c370RNAP concentrations revealed tight binding with KD = 10 \u00b1 1 nM (Figure 1C). Similar experiments performed with core RNAP again yielded KD = 10 \u00b1 1 nM (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from FCS experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "1e987a00-31e4-41c7-b37d-5cf93a76b2d6",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C30",
+      "claim": "GreB binds both core and \u03c370RNAP an order of magnitude more tightly than was estimated in previous non-equilibrium measurements of binding.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements demonstrate that GreB binds both core and \u03c370RNAP an order of magnitude more tightly than was estimated in previous non-equilibrium measurements of binding (Furman et al., 2013; Loizos and Darst, 1999; Rutherford et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current measurements to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "7465b721-7461-4583-bf54-e987e4a29d99",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C31",
+      "claim": "GreB binds both core and \u03c370RNAP an order of magnitude more tightly than previously measured for GreB binding to ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements demonstrate that GreB binds both core and \u03c370RNAP an order of magnitude more tightly than was estimated in previous non-equilibrium measurements of binding (Furman et al., 2013; Loizos and Darst, 1999; Rutherford et al., 2007) and an order of magnitude more tightly than previously measured for GreB binding to ECs (Tetone et al., 2017; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison to prior measurements, with reference to Table 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "e8da9ec8-ab29-41c1-8a46-50b9d4c73286",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C32",
+      "claim": "The dissociation constant for GreB interaction with RNAP is ~10 fold tighter than the values reported for DksA in the absence of ppGpp.",
+      "claim_type": "EXPLICIT",
+      "source": "The dissociation constant for the interaction is also ~10 fold tighter than the values reported for DksA in the absence of ppGpp (KD = 101 \u00b1 19 or 112 [no S.E. reported] nM for core, KD = 99 \u00b1 15 or 52 [no S.E. reported] nM for \u03c370 holoenzyme) (Lennon et al., 2009; Molodtsov et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to literature values for DksA binding.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "f8f43e52-1f1e-4a99-ba54-43b8f63d4f8f",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C33",
+      "claim": "GreBCy3 binding to \u03c370RNAP was quantitatively indistinguishable from that of unlabeled GreB, indicating that the high binding affinity is not an artefact of dye labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "GreBCy3 binding to \u03c370RNAP was quantitatively indistinguishable from that of unlabeled GreB (see Materials and methods), indicating that the high binding affinity is not an artefact of dye labeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a control experiment demonstrating that labeling does not affect binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "45ea04b5-ebab-49d7-98b6-97dcb26e6bd6",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C34",
+      "claim": "Addition of 10 nM GreB reduced the rate of initiation approximately four-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition to the experiment of 10 nM GreB reduced the rate of initiation approximately four-fold (Figure 2C, purple vs. green curves; Figure 2G, leftmost two bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the CoSMoS experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "92b9e583-1058-4206-b923-f15e1e7ccd6e",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C35",
+      "claim": "The inhibitory effect of DksA is identical to that of GreB (within experimental uncertainty) when measured at the same fractional occupancy of \u03c370RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, the inhibitory effect of DksA is identical to that of GreB (within experimental uncertainty) when we performed the analogous experiment with DksA at its KD in place of GreB. (Figure 2D; Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of experimental results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "11cc6802-3f59-4544-87f3-27df8e2856f5",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C36",
+      "claim": "GreB and DksA have indistinguishable inhibitory effects in the presence of 100 \u03bcM ppGpp.",
+      "claim_type": "EXPLICIT",
+      "source": "We found similarly indistinguishable inhibitory effects of GreB and DksA in the presence of 100 \u03bcM ppGpp (Figure 2E\u2013G; Rutherford et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "02816e3d-15d1-4970-b74f-de846f88a856",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C37",
+      "claim": "GreB inhibits initiation ~10 fold more potently than DksA on a concentration basis, but the difference can be fully accounted for by the difference in the binding affinities of the two proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, GreB inhibits initiation ~10 fold more potently than DksA on a concentration basis, but the difference can be fully accounted for by the difference in the binding affinities of the two proteins, without reference to any functional differences between GreB- and DksA-bound RNAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data comparing GreB and DksA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "82673144-34ba-4769-813d-a0dd6cd64c82",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C38",
+      "claim": "Some \u03c370RNAP647 molecules arrived at DNA locations in complex with GreBCy3B molecules, whereas others arrived without detectable GreBCy3B fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "In these three-color CoSMoS experiments, we observed that some \u03c370RNAP647 molecules arrived at DNA locations in complex with GreBCy3B molecules (orange highlights in Figure 3B and Figure 3\u2014figure supplement 2), whereas others arrived without detectable GreBCy3B fluorescence (purple highlights).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the CoSMoS experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "fb683444-4c8e-4ed4-8d9f-c750544293bb",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C39",
+      "claim": "The fraction of \u03c370RNAP647 molecules observed to arrive simultaneously with GreBCy3B agrees with that expected, demonstrating that \u03c370RNAP\u2022GreBCy3B and \u03c370RNAP have similar rate constants for binding to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of \u03c370RNAP647 molecules observed to arrive simultaneously with GreBCy3B agrees with that expected (Figure 3C), demonstrating that \u03c370RNAP\u2022GreBCy3B and \u03c370RNAP have similar rate constants for binding to DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on comparison of observed and predicted fractions in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "1762d9fa-5239-4a51-8953-116dac5a0bb0",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C40",
+      "claim": "At 10 nM GreBCy3B, only 3.5 \u00b1 0.9% of \u03c370RNAP\u2022DNA complexes bind GreB.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, at 10 nM GreBCy3B we saw only 3.5 \u00b1 0.9% of \u03c370RNAP\u2022DNA complexes bind GreB (47 instances of binding to 1,355 complexes over a summed duration of 1,121 s, corresponding to kon = (0.42 \u00b1 0.06)\u00d7107 M\u22121 s\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the CoSMoS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "eb5b510e-b62e-4b7c-9710-e554607b0d3d",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C41",
+      "claim": "GreB suppression of rrnB P1 initiation is essentially completely controlled by GreB binding to \u03c370RNAP off DNA rather than GreB binding to initiation complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus these data suggest that GreB suppression of rrnB P1 initiation is essentially completely controlled by GreB binding to \u03c370RNAP off DNA rather than GreB binding to initiation complexes, and that this conclusion holds in both high (>>KD) and low (<<KD) GreB concentration regimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "6685a774-1c3b-4283-b31a-8cee1fecb73e",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C42",
+      "claim": "More than 90% of recorded \u03c370RNAP\u2022GreB\u2022DNA complexes ended with simultaneous departure of GreBCy3B and \u03c370RNAP647.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 90% of recorded \u03c370RNAP\u2022GreB\u2022DNA complexes ended with simultaneous departure of GreBCy3B and \u03c370RNAP647 (Figure 3D, orange highlight).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the CoSMoS experiments shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "850f87df-3e01-4b94-8f32-b0a11789514f",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C43",
+      "claim": "There is no evidence for GreB dissociation that leaves behind polymerase bound to the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we see no evidence for GreB dissociation that leaves behind polymerase bound to the promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the simultaneous departure observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "de6c5dcd-ae9f-494d-a4c5-03e42e8c2468",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C44",
+      "claim": "The extent of GreB inhibition of rrnB P1 initiation is quantitatively set by the amount of GreB holoenzyme occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "The observations that GreB nearly always arrives at the promoter together with RNAP and only dissociates with RNAP suggest that the extent of GreB inhibition of rrnB P1 initiation is quantitatively set by the amount of GreB holoenzyme occupancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "033de23a-4e5d-49c0-a26f-dace7b99360b",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C45",
+      "claim": "Neither GreB nor DksA significantly altered ka, the second-order rate constant for initial binding of \u03c370RNAP647 to rrnB P1 DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Even at concentrations at which half of the holoenzyme molecules are occupied, the CoSMoS data show that neither SCF significantly altered ka, the second-order rate constant for initial binding of \u03c370RNAP647 to rrnB P1 DNA (Figure 3E; Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the CoSMoS experiments shown in Figure 3E and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "f4c01d18-d37b-4055-b663-c1350e483472",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C46",
+      "claim": "There was no substantial alteration of \u03c370RNAP647 dwell times on rrnB P1 when GreB or DksA was present.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also saw no substantial alteration of \u03c370RNAP647 dwell times on rrnB P1 when GreB or DksA was present (Figure 3F; Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the CoSMoS experiments shown in Figure 3F and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "8eab1f59-919d-42db-9bdd-6b84ccd74ae5",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C47",
+      "claim": "The SCFs act at a step in initiation after formation of initial closed complexes, such as isomerization to open complex or subsequent nucleotide addition reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, kinetic destabilization of the two resolvable closed complexes also cannot account for the observed inhibition of initiation from rrnB P1. Taken together, these data imply that the SCFs act at a step in initiation after formation of these initial closed complexes, such as isomerization to open complex or subsequent nucleotide addition reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "c478b2d8-ab6b-41bb-b9e8-e28f2b625373",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C48",
+      "claim": "In none (zero of 39) of the productive binding events did RNAP arrive accompanied by GreB.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in none (zero of 39) of these productive binding events did RNAP arrive accompanied by GreB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the four-color CoSMoS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "a4f1cc7c-132a-4f0c-bdf8-54ee923315b4",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C49",
+      "claim": "RNAP arrived together with GreB in hundreds (~50% of 1,755 total RNAP binding events) of non-productive RNAP binding events.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, RNAP arrived together with GreB in hundreds (~50% of 1,755 total RNAP binding events) of non-productive RNAP binding events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the four-color CoSMoS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "2cdddc8c-6e2d-4ca2-a60d-e92edc29507e",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C50",
+      "claim": "\u03c370RNAP molecules that are complexed with GreB cannot initiate transcription on rrnB P1.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations strongly suggest that \u03c370RNAP molecules that are complexed with GreB cannot initiate transcription on rrnB P1, and again show that GreB blockage of the rrnB initiation pathway occurs at a step after formation of the initial closed complex intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the observation that no GreB-bound RNAP initiated transcription.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "bc14bc83-5434-4d1d-9345-efea6f6ad4e0",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C51",
+      "claim": "GreB repression of initiation at a rRNA promoter does not affect the initial binding of RNAP to the promoter but modulates later step(s).",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins that regulate transcription initiation can do so by affecting the initial binding of RNAP to the promoter or by modulating later step(s) such as promoter complex isomerization, initial RNA synthesis, or promoter escape (Browning and Busby, 2016). In this study, we show that GreB repression of initiation at a rRNA promoter falls into the latter category.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "8f9b23ad-958a-4938-92c7-2a3a5abeaaf7",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C52",
+      "claim": "GreB presence on RNAP does not affect the formation of initial closed complexes, their stabilities, or their rates of dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "We show by direct observation that GreB binds to free \u03c370RNAP in solution and its presence on RNAP does not affect the formation of initial closed complexes, their stabilities, or their rates of dissociation (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of experimental findings illustrated in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "4fdcd97d-1a65-4579-bfc6-bcbe8433c3b0",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C53",
+      "claim": "Closed complexes with GreB bound were never observed to progress to ECs, indicating that the secondary channel factor presence introduces a barrier to initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, GreB acts at a later stage: closed complexes with GreB bound were never observed to progress to ECs, indicating that the secondary channel factor presence introduces a barrier to initiation at, for example, the closed-to-open complex isomerization stage or a subsequent step",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the observation that GreB-bound RNAP never initiated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "b347f99d-d060-4472-b60e-90acf9cfda42",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C54",
+      "claim": "The barrier to initiation introduced by GreB is effectively insurmountable because it cannot be overcome on the time scale of rrnB P1 promoter complex lifetimes.",
+      "claim_type": "EXPLICIT",
+      "source": "closed complexes with GreB bound were never observed to progress to ECs, indicating that the secondary channel factor presence introduces a barrier to initiation at, for example, the closed-to-open complex isomerization stage or a subsequent step; this barrier is effectively insurmountable because it cannot be overcome on the time scale of rrnB P1 promoter complex lifetimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "63abe2aa-6be7-4cf6-8ceb-8be343165116",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C55",
+      "claim": "GreB and DksA inhibit rrnB by similar mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that GreB and DksA inhibit rrnB by similar mechanisms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the similar inhibitory effects observed for both factors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "f8b9c76e-010f-481b-a89c-ac9a3fd57da4",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C56",
+      "claim": "The results are compatible with proposals that DksA inhibits rRNA synthesis at least in part by affecting isomerization or open complex decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that GreB and DksA inhibit rrnB by similar mechanisms, and the results are therefore compatible with proposals that DksA inhibits rRNA synthesis at least in part by affecting isomerization or open complex decay (Paul et al., 2005; Rutherford et al., 2009; Rutherford et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current findings to prior proposals in the literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "d8cec7b0-2f83-4956-a3a7-f872626e3b31",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C57",
+      "claim": "The data are consistent with a mechanism in which the two SCFs may additionally inhibit initiation by obstructing catalytic function of the open complex active site.",
+      "claim_type": "EXPLICIT",
+      "source": "The data are also consistent with a mechanism inspired by structural data (e.g., Molodtsov et al., 2018) in which the two SCFs may additionally inhibit initiation by obstructing catalytic function of the open complex active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation consistent with structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "1f773bcd-d5ff-493e-a7a3-b037a37d641e",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C58",
+      "claim": "GreB was almost never observed to bind to or depart from \u03c370RNAP-promoter complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps unexpectedly for a factor affecting only later stage(s) of initiation, we find that GreB does not function by binding to rrnB promoter complexes during those stages. In our experiments, GreB was almost never observed to bind to or depart from \u03c370RNAP-promoter complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the single-molecule experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "0cc0531b-2d19-402c-8037-dd64880484f4",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C59",
+      "claim": "GreB arrived only at promoters that were not already bound by \u03c370RNAP and arrived only in complex with \u03c370RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, GreB arrived only at promoters that were not already bound by \u03c370RNAP and arrived only in complex with \u03c370RNAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the single-molecule experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "f94f659c-6d19-4ff7-acfb-01d089ca13eb",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C60",
+      "claim": "GreB left the promoter only as a \u03c370RNAP\u2022GreB complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, it left the promoter only as a \u03c370RNAP\u2022GreB complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the single-molecule experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "ab36b655-5ab9-4322-8508-ee4292315f6d",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C61",
+      "claim": "rRNA promoter complexes are atypically short lived.",
+      "claim_type": "EXPLICIT",
+      "source": "However, rRNA promoter complexes are atypically short lived (Ruff et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "b539155d-e4d8-4f39-b251-3c1bc5ae6dc3",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C62",
+      "claim": "On more typical promoters, promoter complexes may be sufficiently long-lived to allow association of and dissociation of GreB.",
+      "claim_type": "EXPLICIT",
+      "source": "On more typical promoters, promoter complexes may be sufficiently long-lived to allow association of and dissociation of GreB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about behavior on other promoters based on the rrnB P1 findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "3b82a192-2d20-4ee6-af8d-6411b5067ec2",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C63",
+      "claim": "Dissociation of GreB during a long-lived promoter complex would prevent the suppression of initiation by the mechanism observed with rrnB P1, providing a straightforward explanation for why GreB (and DksA) selectively inhibits initiation at promoters that have short-lived promoter complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Dissociation of GreB during a long-lived promoter complex would prevent the suppression of initiation by the mechanism we observe with rrnB P1, providing a straightforward explanation for why GreB (and DksA) selectively inhibits initiation at promoters that have short-lived promoter complexes (Paul et al., 2005; Rutherford et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "b3fa12ff-8c6d-49ab-a429-35f18cb55b84",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C64",
+      "claim": "On promoters with long-lived RNAP complexes, inhibition by this mechanism would be abolished or weakened, and stimulatory effects of Gre factors could act to accelerate initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "On promoters with long-lived RNAP complexes, inhibition by this mechanism would be abolished or weakened, and stimulatory effects of Gre factors (e.g., preventing abortive initiation [Chander et al., 2015; Duchi et al., 2016; Feng et al., 1994; Hsu et al., 1995; Lerner et al., 2016] or suppressing promoter-proximal pausing [Deighan et al., 2011; Marr and Roberts, 2000]) observed at some promoters could act to accelerate initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about behavior on other promoters, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "4f0f0137-a2f5-4e10-b8b6-17d328178e6b",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C65",
+      "claim": "Competition between SCFs for binding to \u03c370RNAP in solution (i.e., before it binds to promoter) may determine which SCFs are most important for rRNA transcription regulation under various growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The demonstration that GreB occupancy of holoenzyme is what dictates GreB inhibition of rrnB suggests that competition between SCFs for binding to \u03c370RNAP in solution (i.e., before it binds to promoter) may determine which SCFs are most important for rRNA transcription regulation under various growth conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "1c0e5e2b-829e-444b-af93-ee0beed43f61",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C66",
+      "claim": "All three approaches (FCS, single-molecule kinetics, and fraction arriving/departing with DNA) showed that GreB binds \u03c370RNAP with a KD more than 10-fold tighter than its binding to ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "All three approaches showed that that GreB binds \u03c370RNAP with a KD more than 10-fold tighter than its binding to ECs (Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of measurements from multiple experimental approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "d62f2575-e70d-45c8-a152-935e20af8de3",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C67",
+      "claim": "GreB binds \u03c370RNAP much tighter than prior estimates based on non-equilibrium studies of its affinity for core RNAP or initial transcription complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "All three approaches showed that that GreB binds \u03c370RNAP with a KD more than 10-fold tighter than its binding to ECs (Table 1) and much tighter than prior estimates based on non-equilibrium studies of its affinity for core RNAP or initial transcription complexes (Furman et al., 2013; Lennon et al., 2012; Lennon et al., 2009; Loizos and Darst, 1999; Rutherford et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "2c1e08c9-dafc-400a-ada1-70f6e258d1a3",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C68",
+      "claim": "The tight binding affinity of GreB for holoenzyme is consistent with the observed potent inhibition of rrnB P1 initiation kinetics by low concentrations (10 nM) of GreB.",
+      "claim_type": "EXPLICIT",
+      "source": "The tight binding affinity of GreB for holoenzyme is also consistent with the observed potent inhibition of rrnB P1 initiation kinetics by low concentrations (10 nM) of GreB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consistency check between binding affinity and functional effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "acff6083-2993-4e58-a76c-25a606f1e2f7",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C69",
+      "claim": "Since the binding of GreB to holoenzyme is much tighter than to ECs, holoenzyme molecules are likely able to at least partially compete with ECs for association with unbound GreB, even if the latter are present in significant excess.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the binding of GreB to holoenzyme is much tighter than to ECs, holoenzyme molecules are likely able to at least partially compete with ECs for association with unbound GreB, even if the latter are present in significant excess.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relative binding affinities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "b4eb7b25-c30b-4e4c-aeea-b17ceb54292b",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C70",
+      "claim": "The relative importance of GreB and DksA in regulation of initiation at rrnB P1 is simply determined by which one dominates occupation of the secondary channel in the cellular pool of \u03c370RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation that GreB binds to and releases from holoenzyme, not rRNA promoter complexes, provides strong support for the proposal (Rutherford et al., 2007) that the relative importance of GreB and DksA in regulation of initiation at rrnB P1 is simply determined by which one dominates occupation of the secondary channel in the cellular pool of \u03c370RNAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion supported by the experimental observations and a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "a0fbecc5-8cdd-41fd-b56e-34f67d339777",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C71",
+      "claim": "Equilibrium occupancy is determined by both the binding affinities and the ratios of unbound (not total) SCF concentrations, which are not known.",
+      "claim_type": "EXPLICIT",
+      "source": "Equilibrium occupancy is determined by both the binding affinities (measured here for GreB) and the ratios of unbound (not total) SCF concentrations, which are not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what determines equilibrium occupancy and identifies a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "b5af460c-aa72-4e93-aea7-cb2e4152c00b",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C72",
+      "claim": "The two proteins (GreB and DksA) may have redundant functions in growth-rate dependent rRNA regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The two proteins may have redundant functions in growth-rate dependent rRNA regulation, but the phenotypes of genetic deletion strains (Rutherford et al., 2007) are difficult to interpret unambiguously because of the other, non-overlapping functions of the two proteins in transcription elongation and other cellular processes (Furman et al., 2013; Furman et al., 2012; Tehranchi et al., 2010; Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about functional redundancy, with citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "10502282-89a5-48b1-984b-b9e7e7e54ed2",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C73",
+      "claim": "The millimolar levels of ppGpp present during the stringent response may selectively promote DksA binding over that of GreB.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the millimolar levels of ppGpp present during the stringent response may selectively promote DksA binding over that of GreB (Molodtsov et al., 2018; Ross et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on citations to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "58038800-6acb-472a-bd65-e541be0b1628",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C74",
+      "claim": "DksA may become the dominant regulator of the two during amino acid starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, DksA may become the dominant regulator of the two during amino acid starvation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the differential effects of ppGpp.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "ac02ee17-3054-4f4a-a504-fc26efaa2ce4",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C75",
+      "claim": "Single-molecule kinetic measurements show a biexponential dwell time distribution of GreB on surface-tethered core and \u03c370RNAP, indicating distinct short- and long-lived classes of binding events.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule kinetic measurements show a biexponential dwell time distribution of GreB on surface-tethered core and \u03c370RNAP (Figure 1\u2014figure supplement 2D,F), indicating distinct short- and long-lived classes of binding events.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the single-molecule kinetic measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "5ba3fc9b-00cd-4b0c-ad2a-00669aa9398d",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C76",
+      "claim": "Only a very small fraction of GreB interactions with holoenzyme (11%) achieve the long-lived state.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a very small fraction of GreB interactions with holoenzyme (11%; calculated as (1 \u2013 a) from the value of a in Table 1) achieve the long-lived state, and what causes the different behaviors of the two classes is obscure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the fit parameters in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "cd92e03c-8654-4038-b0f7-8edf15d8d70a",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C77",
+      "claim": "Using GreB as a model SCF, transcription factor binding to free \u03c370RNAP, rather than to initiation complexes, is the critical factor that determines the relative importance of each SCF in inhibiting initiation from rRNA promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Using GreB as a model SCF, we propose based on our data that transcription factor binding to free \u03c370RNAP, rather than to initiation complexes, is the critical factor that determines the relative importance of each SCF in inhibiting initiation from rRNA promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic proposal based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "3a53837e-b935-4869-a315-7f780c926c2b",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C78",
+      "claim": "GreB functions by a 'delayed inhibition' mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The data reveal that GreB functions by a 'delayed inhibition' mechanism",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "165e1f11-b65b-4818-9dc4-f211f0190bda",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C79",
+      "claim": "DksA functions by the same 'delayed inhibition' mechanism as GreB.",
+      "claim_type": "EXPLICIT",
+      "source": "The data reveal that GreB functions by a 'delayed inhibition' mechanism, and imply that DksA functions by the same mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similar effects of GreB and DksA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "07aaf341-e203-4597-971a-c06a405f5006",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C80",
+      "claim": "The diffusion constant of GreBCy3 is 60 \u00b1 10 \u03bcm2 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The autocorrelation curves for free GreBCy3 were fit to obtain a diffusion constant of 60 \u00b1 10 \u03bcm2 s\u22121 (all uncertainties are SE unless otherwise indicated).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from FCS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "9a8c8a07-8b6f-4646-8bd7-9ec4c1cf74d6",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C81",
+      "claim": "The diffusion constant of GreBCy3 bound to \u03c370RNAP is 10\u201320 \u03bcm2 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Autocorrelation curves obtained for \u03c370RNAP yielded (see Materials and methods) the diffusion constant of GreBCy3 bound to \u03c370RNAP (10\u201320 \u03bcm2 s\u22121) and fraction GreBCy3 bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from FCS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "71a71d04-e1e0-492c-be77-4a1de1bedf65",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C82",
+      "claim": "Near-saturating (2 \u00b5M) concentrations GreB and DksA equally inhibited initiation in vitro from the rRNA promoter rrnB P1.",
+      "claim_type": "EXPLICIT",
+      "source": "Near-saturating (2 \u00b5M) concentrations GreB and DksA equally inhibited initiation in vitro from the rRNA promoter rrnB P1 and inhibition by both proteins was equally enhanced by 100 \u00b5M ppGpp (Rutherford et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "3b6effeb-15c6-4b9a-9b2a-a19ea48d6aad",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C83",
+      "claim": "Inhibition by both GreB and DksA was equally enhanced by 100 \u00b5M ppGpp.",
+      "claim_type": "EXPLICIT",
+      "source": "Near-saturating (2 \u00b5M) concentrations GreB and DksA equally inhibited initiation in vitro from the rRNA promoter rrnB P1 and inhibition by both proteins was equally enhanced by 100 \u00b5M ppGpp (Rutherford et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "94fc2f50-4bab-4f08-ad74-c38d3c1f3e9a",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C84",
+      "claim": "In the CoSMoS experiments, template DNA molecules with rrnB P1 were tethered to the surface of an observation chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "In a CoSMoS experiment (Friedman and Gelles, 2012), template DNA molecules with rrnB P1 were tethered to the surface of an observation chamber, and transcription was initiated by introducing \u03c370RNAP and NTPs (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "e3d347c6-1878-4721-b7cc-be45fc4dcb7c",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C85",
+      "claim": "Transcription was initiated by introducing \u03c370RNAP and NTPs.",
+      "claim_type": "EXPLICIT",
+      "source": "In a CoSMoS experiment (Friedman and Gelles, 2012), template DNA molecules with rrnB P1 were tethered to the surface of an observation chamber, and transcription was initiated by introducing \u03c370RNAP and NTPs (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "0d06c456-93a6-45af-b109-8d48d72c77c7",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C86",
+      "claim": "The reaction mixture contained two TAMRA-labeled oligonucleotide probes complementary to transcript nucleotides 1\u201327 and 29\u201354.",
+      "claim_type": "EXPLICIT",
+      "source": "The reaction mixture also contained two TAMRA-labeled oligonucleotide probes complementary to transcript nucleotides 1\u201327 and 29\u201354.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "dea53770-470a-477b-b5e8-71d59fc033c5",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C87",
+      "claim": "Initiation was detected as co-localization of a spot of green-excited TAMRA fluorescence with a spot of blue-excited fluorescence from the AF488 dye coupled to the DNA template.",
+      "claim_type": "EXPLICIT",
+      "source": "Initiation was detected as co-localization of a spot of green-excited TAMRA fluorescence with a spot of blue-excited fluorescence from the AF488 dye coupled to the DNA template (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental readout shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "ad1a9b4d-4404-422a-90f7-a0d668d22f01",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C88",
+      "claim": "Probe co-localization was dependent on the presence of NTPs and RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, probe co-localization was dependent on the presence of NTPs and RNAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a control experiment demonstrating specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "b1cbeedb-2226-4a80-817e-c341434e9a7d",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C89",
+      "claim": "In the experiments without NTPs, the promoter complexes formed are almost entirely in either the initial bound state or an early closed-complex intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, which use unmodified rrnB P1 in a linear DNA in the absence of NTPs, the promoter complexes formed are almost entirely in either the initial bound state or an early closed-complex intermediate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental conditions based on prior knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "e847b087-0c22-4213-8867-8eb5d36b3da5",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C90",
+      "claim": "Later, open complex states form transiently under these conditions, but they are likely too short-lived to be resolved in the time resolution of the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, open complex states form transiently under these conditions, but they are likely too short-lived to be resolved in the time resolution of our experiments (Barker et al., 2001; Haugen et al., 2008; Rutherford et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "887ab363-6750-4306-8a50-388c5f00a993",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C91",
+      "claim": "Control experiments demonstrated that the observed lifetimes of \u03c370RNAP647 complexes on DNA were not appreciably limited by photobleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments demonstrated that the observed lifetimes of these complexes were not appreciably limited by photobleaching (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "5f4b4b1b-c69c-4f86-9091-d1cd3e69d976",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C92",
+      "claim": "Transcription initiation kinetics with GreBCy3B and/or \u03c370RNAP647 are similar to those seen with the unlabeled proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Separate control experiments in the presence of NTPs confirmed that transcription initiation kinetics with GreBCy3B and/or \u03c370RNAP647 are similar to those seen with the unlabeled proteins (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment demonstrating that labeling does not affect function, with data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "9c920237-e05d-42a4-9fe3-32578692d8c1",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C93",
+      "claim": "The 314 bp AF488-labeled transcription template consisted of the E. coli rrnB gene from positions \u221265 to +249 (relative to the transcription start site defined as +1) and included the full rrnB P1 including the upstream promoter (UP) element.",
+      "claim_type": "EXPLICIT",
+      "source": "The 314 bp AF488-labeled transcription template consisted of the E. coli rrnB gene from positions \u221265 to +249 (relative to the transcription start site defined as +1) and included the full rrnB P1 including the upstream promoter (UP) element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the DNA template used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "aed5265f-8672-4459-889f-5de2a5b95f84",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C94",
+      "claim": "E. coli core RNAP (\u03b12\u03b2\u03b2\u2032\u03c9) with a SNAP-tag on the C-terminus of \u03b2\u2032 was labeled with SNAP-Surface 647 to produce RNAP647.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli core RNAP (\u03b12\u03b2\u03b2\u2032\u03c9) with a SNAP-tag on the C-terminus of \u03b2\u2032 (Tetone et al., 2017) was labeled with SNAP-Surface 647 (New England Biolabs) as described (Mumm et al., 2020) to produce RNAP647.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the preparation of labeled RNAP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "3aa5f462-f44e-46e3-b7a2-bf9b65da5908",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C95",
+      "claim": "Labeling stoichiometry of RNAP647 was 54%.",
+      "claim_type": "EXPLICIT",
+      "source": "Labeling stoichiometry measured as in Mumm et al. (2020) was 54%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of the labeling efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "c0d91e09-4bc0-43fd-b4b6-d8c4db7a8dbf",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C96",
+      "claim": "GreBCy3B was determined to be 93% labeled.",
+      "claim_type": "EXPLICIT",
+      "source": "GreBCy3B was determined to be 93% labeled as described previously (Tetone et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of the labeling efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "8139094b-6511-4670-9a89-05576c314a64",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C97",
+      "claim": "GreBCy3 preparations were determined to be 80\u201390% labeled.",
+      "claim_type": "EXPLICIT",
+      "source": "GreBCy3 preparations were determined to be 80\u201390% labeled as described (Tetone et al., 2017) with the exception that \u03b5550,Cy3 = 150,000 M\u22121 cm\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of the labeling efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "3896ae11-c082-416f-95b0-f961cbd787a2",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "claim_id": "C98",
+      "claim": "GreBCy3 is fully active in transcript cleavage assays.",
+      "claim_type": "EXPLICIT",
+      "source": "GreBCy3 is fully active in transcript cleavage assays (Tetone et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional validation of the labeled protein, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "04ca4e33-ccf1-48f5-9d1a-ca6b1aaad3e3",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GreB binds both core and \u03c370RNAP with KD = 10 \u00b1 1 nM, approximately 10-fold tighter than previously estimated and 10-fold tighter than its binding to elongation complexes (ECs). This tight binding was measured using three independent approaches: FCS, single-molecule kinetics, and fraction arriving/departing with DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33, C66-C67, and C80-C81 collectively demonstrate tight GreB binding through multiple independent experimental methods (FCS, CoSMoS kinetics, and DNA binding/departure analysis). The measurements are internally consistent across methods (Table 1), include appropriate controls (C33, C91, C92), and demonstrate that labeling does not affect binding affinity. The comparison to prior literature and to EC binding is well-supported by citations and data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "2d140a55-af4b-4dfc-945b-289fa797b11e",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GreB and DksA inhibit rrnB P1 transcription initiation with identical effects when measured at equivalent fractional RNAP occupancy. At 10 nM GreB (KD concentration), initiation rate was reduced ~4-fold. The ~10-fold difference in potency on a concentration basis is fully explained by the difference in binding affinities (GreB KD ~10 nM vs DksA KD ~100 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 and C82-C83 demonstrate equivalent inhibitory effects of GreB and DksA when normalized for RNAP occupancy, supported by direct measurements in Figure 2 and Table 2. The mechanistic interpretation (C37) that the potency difference is due solely to binding affinity differences is well-supported by the quantitative agreement between predicted and observed effects. Controls demonstrate NTP and RNAP dependence (C88).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "416883d6-ecd4-43ac-82ad-2060feb5727d",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GreB arrives at and departs from the rrnB P1 promoter only in complex with \u03c370RNAP. At 10 nM GreB, only 3.5 \u00b1 0.9% of RNAP\u2022DNA complexes recruited GreB after RNAP binding to DNA. More than 90% of RNAP\u2022GreB\u2022DNA complexes ended with simultaneous departure of both proteins. The extent of GreB inhibition is quantitatively determined by GreB occupancy of free holoenzyme.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C38-C44, and C58-C60 are strongly supported by direct single-molecule observations in three-color CoSMoS experiments (Figure 3). The fraction of RNAP arriving with GreB matches predictions based on equilibrium binding (C39, Figure 3C). The low rate of GreB recruitment to promoter complexes (C40) and high rate of simultaneous departure (C42, Figure 3D) are quantitatively measured with appropriate randomized controls. Photobleaching controls validate the measurements (C91).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "e38df8d4-57fd-469d-b59e-45596caeb504",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GreB does not alter initial RNAP-promoter binding (ka) or closed complex stability/dissociation rates, but instead blocks a step after conformational rearrangement of the initial RNAP-promoter complex, such as isomerization to open complex or subsequent nucleotide addition reactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C45-C47, C51-C52 are supported by direct measurements showing no significant change in ka (Figure 3E, Table 3) or dwell times (Figure 3F, Table 3) in the presence of GreB or DksA. The conclusion that SCFs act at a later step is a logical inference from the observation that inhibition occurs without affecting these early steps. The interpretation is consistent with prior proposals about DksA mechanism (C56).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "9018e631-0e3f-4ef6-93e7-ab55ffc6e19e",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GreB-RNAP complexes never initiated transcription at the rrnB P1 promoter. In four-color CoSMoS experiments with NTPs present, zero of 39 productive initiation events involved RNAP that arrived with GreB bound, while ~50% of non-productive RNAP binding events involved GreB-bound RNAP. This indicates that GreB presence introduces an effectively insurmountable barrier to initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C48-C50, C53-C54 are strongly supported by direct observations in four-color CoSMoS experiments (Figure 4). The striking observation that 0/39 productive events involved GreB-bound RNAP while hundreds of non-productive events did (C48-C49) provides compelling evidence for the mechanism. The conclusion that the barrier is insurmountable on the timescale of rrnB P1 complex lifetimes (C54) is a reasonable inference from these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "c419425f-520c-41a8-85ef-de6780f8f853",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GreB and DksA function by a 'delayed inhibition' mechanism in which SCF binding to free RNAP prevents initiation at later steps. rRNA promoters are selectively inhibited because their short-lived RNAP complexes do not allow sufficient time for SCF dissociation. On promoters with longer-lived complexes, SCF dissociation would prevent inhibition and allow stimulatory effects to dominate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C55-C57, C61-C64, C78-C79 present a mechanistic model well-supported by the experimental observations. The 'delayed inhibition' mechanism (C78-C79) is directly supported by the data showing GreB arrives with RNAP and blocks later steps. The explanation for promoter selectivity based on complex lifetime (C6, C63) is a logical inference from the observations, supported by citation to prior work showing rRNA promoters are short-lived (C61). The speculation about long-lived promoters (C62, C64) is appropriately qualified and supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "a9b0836e-6479-4d38-9a91-6e9c7b894315",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Competition between SCFs for binding to free \u03c370RNAP in solution determines which SCFs are most important for rRNA transcription regulation. The tight binding of GreB to holoenzyme allows it to compete with elongation complexes for GreB binding, and transcription factor binding to free \u03c370RNAP is the critical factor determining SCF importance in inhibiting rRNA initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65, C68-C70, C77 present mechanistic interpretations well-supported by the experimental data. The conclusion that competition for free RNAP determines SCF importance (C65, C70, C77) follows logically from the observations that GreB arrives only with RNAP and that occupancy determines inhibition. The inference that holoenzyme can compete with ECs for GreB (C69) is supported by the measured binding affinities. Claim C70 appropriately cites prior work proposing this model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "af0577dd-7b60-4b44-9f37-2e19e270bcc7",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The relative importance of GreB and DksA in growth-rate dependent regulation is uncertain. Equilibrium occupancy depends on unbound SCF concentrations, which are unknown. The two proteins may have redundant functions, but millimolar ppGpp during stringent response may selectively promote DksA binding, making DksA the dominant regulator during amino acid starvation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C74 acknowledge important uncertainties and limitations. C71 correctly identifies that unbound SCF concentrations are unknown, limiting conclusions about in vivo competition. C72 appropriately qualifies the speculation about redundancy and notes difficulties in interpreting genetic data. C73-C74 are speculations based on prior work but lack direct experimental support in this study. These claims appropriately identify areas requiring future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "e76136cf-53d2-436b-9166-535d98c47032",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Single-molecule kinetic measurements reveal biexponential dwell time distributions for GreB on RNAP, indicating distinct short- and long-lived binding classes. Only 11% of GreB interactions achieve the long-lived state, but the cause of this heterogeneity is unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 are supported by direct observations in Figure 1\u2014figure supplement 2D,F and quantitative analysis in Table 1. The biexponential distribution is clearly evident in the data, and the calculation of the 11% fraction (C76) is explicitly described. The acknowledgment that the cause is 'obscure' appropriately identifies a limitation in understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "c78325fe-aca1-4c11-9d23-517fb7ed0248",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The experimental system uses surface-tethered rrnB P1 DNA templates, fluorescently labeled RNAP and GreB, and oligonucleotide probes to detect transcription initiation. Multiple controls validate that labeling does not affect function, photobleaching is negligible, and probe binding is specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C98 describe the experimental design and validation controls. The methods are clearly described with appropriate detail (C84-C87, C93-C97). Multiple controls validate the approach: probe binding requires NTPs and RNAP (C88), photobleaching is negligible (C91), labeled proteins function like unlabeled proteins (C92, C98), and labeling efficiencies are quantified (C95-C97). These methodological claims are well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    },
+    {
+      "id": "390f303a-b74f-4666-93cd-fbcf90a428fb",
+      "content_id": "9a283b0c-1294-436e-a36b-2282e251b211",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on RNAP structure, SCF families, GreB and DksA functions, stringent response, and growth rate-dependent control. The mechanism for growth rate-dependent control by SCFs and the point in the transcription cycle at which SCFs load onto RNAP were previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C26 provide established background knowledge supported by appropriate citations. Claims C27-C28 correctly identify gaps in prior knowledge that the study addresses. These background claims appropriately contextualize the work and are well-supported by the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:29:58.842037Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "929db00e-8002-4cc6-bfa8-8b3a9565ff3d",
+      "result_id": "04ca4e33-ccf1-48f5-9d1a-ca6b1aaad3e3"
+    },
+    {
+      "claim_id": "1e987a00-31e4-41c7-b37d-5cf93a76b2d6",
+      "result_id": "04ca4e33-ccf1-48f5-9d1a-ca6b1aaad3e3"
+    },
+    {
+      "claim_id": "7465b721-7461-4583-bf54-e987e4a29d99",
+      "result_id": "04ca4e33-ccf1-48f5-9d1a-ca6b1aaad3e3"
+    },
+    {
+      "claim_id": "e8da9ec8-ab29-41c1-8a46-50b9d4c73286",
+      "result_id": "04ca4e33-ccf1-48f5-9d1a-ca6b1aaad3e3"
+    },
+    {
+      "claim_id": "f8f43e52-1f1e-4a99-ba54-43b8f63d4f8f",
+      "result_id": "04ca4e33-ccf1-48f5-9d1a-ca6b1aaad3e3"
+    },
+    {
+      "claim_id": "1c0e5e2b-829e-444b-af93-ee0beed43f61",
+      "result_id": "04ca4e33-ccf1-48f5-9d1a-ca6b1aaad3e3"
+    },
+    {
+      "claim_id": "d62f2575-e70d-45c8-a152-935e20af8de3",
+      "result_id": "04ca4e33-ccf1-48f5-9d1a-ca6b1aaad3e3"
+    },
+    {
+      "claim_id": "07aaf341-e203-4597-971a-c06a405f5006",
+      "result_id": "04ca4e33-ccf1-48f5-9d1a-ca6b1aaad3e3"
+    },
+    {
+      "claim_id": "9a8c8a07-8b6f-4646-8bd7-9ec4c1cf74d6",
+      "result_id": "04ca4e33-ccf1-48f5-9d1a-ca6b1aaad3e3"
+    },
+    {
+      "claim_id": "45ea04b5-ebab-49d7-98b6-97dcb26e6bd6",
+      "result_id": "2d140a55-af4b-4dfc-945b-289fa797b11e"
+    },
+    {
+      "claim_id": "92b9e583-1058-4206-b923-f15e1e7ccd6e",
+      "result_id": "2d140a55-af4b-4dfc-945b-289fa797b11e"
+    },
+    {
+      "claim_id": "11cc6802-3f59-4544-87f3-27df8e2856f5",
+      "result_id": "2d140a55-af4b-4dfc-945b-289fa797b11e"
+    },
+    {
+      "claim_id": "02816e3d-15d1-4970-b74f-de846f88a856",
+      "result_id": "2d140a55-af4b-4dfc-945b-289fa797b11e"
+    },
+    {
+      "claim_id": "71a71d04-e1e0-492c-be77-4a1de1bedf65",
+      "result_id": "2d140a55-af4b-4dfc-945b-289fa797b11e"
+    },
+    {
+      "claim_id": "3b6effeb-15c6-4b9a-9b2a-a19ea48d6aad",
+      "result_id": "2d140a55-af4b-4dfc-945b-289fa797b11e"
+    },
+    {
+      "claim_id": "cd922328-023a-47ed-9f84-f492347d7838",
+      "result_id": "416883d6-ecd4-43ac-82ad-2060feb5727d"
+    },
+    {
+      "claim_id": "82673144-34ba-4769-813d-a0dd6cd64c82",
+      "result_id": "416883d6-ecd4-43ac-82ad-2060feb5727d"
+    },
+    {
+      "claim_id": "fb683444-4c8e-4ed4-8d9f-c750544293bb",
+      "result_id": "416883d6-ecd4-43ac-82ad-2060feb5727d"
+    },
+    {
+      "claim_id": "1762d9fa-5239-4a51-8953-116dac5a0bb0",
+      "result_id": "416883d6-ecd4-43ac-82ad-2060feb5727d"
+    },
+    {
+      "claim_id": "eb5b510e-b62e-4b7c-9710-e554607b0d3d",
+      "result_id": "416883d6-ecd4-43ac-82ad-2060feb5727d"
+    },
+    {
+      "claim_id": "6685a774-1c3b-4283-b31a-8cee1fecb73e",
+      "result_id": "416883d6-ecd4-43ac-82ad-2060feb5727d"
+    },
+    {
+      "claim_id": "850f87df-3e01-4b94-8f32-b0a11789514f",
+      "result_id": "416883d6-ecd4-43ac-82ad-2060feb5727d"
+    },
+    {
+      "claim_id": "de6c5dcd-ae9f-494d-a4c5-03e42e8c2468",
+      "result_id": "416883d6-ecd4-43ac-82ad-2060feb5727d"
+    },
+    {
+      "claim_id": "1f773bcd-d5ff-493e-a7a3-b037a37d641e",
+      "result_id": "416883d6-ecd4-43ac-82ad-2060feb5727d"
+    },
+    {
+      "claim_id": "0cc0531b-2d19-402c-8037-dd64880484f4",
+      "result_id": "416883d6-ecd4-43ac-82ad-2060feb5727d"
+    },
+    {
+      "claim_id": "f94f659c-6d19-4ff7-acfb-01d089ca13eb",
+      "result_id": "416883d6-ecd4-43ac-82ad-2060feb5727d"
+    },
+    {
+      "claim_id": "9ae9e1b9-e078-4bf1-88d3-6d6619bf3f8b",
+      "result_id": "e38df8d4-57fd-469d-b59e-45596caeb504"
+    },
+    {
+      "claim_id": "033de23a-4e5d-49c0-a26f-dace7b99360b",
+      "result_id": "e38df8d4-57fd-469d-b59e-45596caeb504"
+    },
+    {
+      "claim_id": "f4c01d18-d37b-4055-b663-c1350e483472",
+      "result_id": "e38df8d4-57fd-469d-b59e-45596caeb504"
+    },
+    {
+      "claim_id": "8eab1f59-919d-42db-9bdd-6b84ccd74ae5",
+      "result_id": "e38df8d4-57fd-469d-b59e-45596caeb504"
+    },
+    {
+      "claim_id": "bc14bc83-5434-4d1d-9345-efea6f6ad4e0",
+      "result_id": "e38df8d4-57fd-469d-b59e-45596caeb504"
+    },
+    {
+      "claim_id": "8f9b23ad-958a-4938-92c7-2a3a5abeaaf7",
+      "result_id": "e38df8d4-57fd-469d-b59e-45596caeb504"
+    },
+    {
+      "claim_id": "3d4d881f-ff48-42b0-9423-cb10e38c8b91",
+      "result_id": "9018e631-0e3f-4ef6-93e7-ab55ffc6e19e"
+    },
+    {
+      "claim_id": "c478b2d8-ab6b-41bb-b9e8-e28f2b625373",
+      "result_id": "9018e631-0e3f-4ef6-93e7-ab55ffc6e19e"
+    },
+    {
+      "claim_id": "a4f1cc7c-132a-4f0c-bdf8-54ee923315b4",
+      "result_id": "9018e631-0e3f-4ef6-93e7-ab55ffc6e19e"
+    },
+    {
+      "claim_id": "2cdddc8c-6e2d-4ca2-a60d-e92edc29507e",
+      "result_id": "9018e631-0e3f-4ef6-93e7-ab55ffc6e19e"
+    },
+    {
+      "claim_id": "4fdcd97d-1a65-4579-bfc6-bcbe8433c3b0",
+      "result_id": "9018e631-0e3f-4ef6-93e7-ab55ffc6e19e"
+    },
+    {
+      "claim_id": "b347f99d-d060-4472-b60e-90acf9cfda42",
+      "result_id": "9018e631-0e3f-4ef6-93e7-ab55ffc6e19e"
+    },
+    {
+      "claim_id": "2347a6ce-c801-4a92-b1d1-b8c31eb19c90",
+      "result_id": "c419425f-520c-41a8-85ef-de6780f8f853"
+    },
+    {
+      "claim_id": "63abe2aa-6be7-4cf6-8ceb-8be343165116",
+      "result_id": "c419425f-520c-41a8-85ef-de6780f8f853"
+    },
+    {
+      "claim_id": "f8b9c76e-010f-481b-a89c-ac9a3fd57da4",
+      "result_id": "c419425f-520c-41a8-85ef-de6780f8f853"
+    },
+    {
+      "claim_id": "d8cec7b0-2f83-4956-a3a7-f872626e3b31",
+      "result_id": "c419425f-520c-41a8-85ef-de6780f8f853"
+    },
+    {
+      "claim_id": "ab36b655-5ab9-4322-8508-ee4292315f6d",
+      "result_id": "c419425f-520c-41a8-85ef-de6780f8f853"
+    },
+    {
+      "claim_id": "b539155d-e4d8-4f39-b251-3c1bc5ae6dc3",
+      "result_id": "c419425f-520c-41a8-85ef-de6780f8f853"
+    },
+    {
+      "claim_id": "3b82a192-2d20-4ee6-af8d-6411b5067ec2",
+      "result_id": "c419425f-520c-41a8-85ef-de6780f8f853"
+    },
+    {
+      "claim_id": "b3fa12ff-8c6d-49ab-a429-35f18cb55b84",
+      "result_id": "c419425f-520c-41a8-85ef-de6780f8f853"
+    },
+    {
+      "claim_id": "3a53837e-b935-4869-a315-7f780c926c2b",
+      "result_id": "c419425f-520c-41a8-85ef-de6780f8f853"
+    },
+    {
+      "claim_id": "165e1f11-b65b-4818-9dc4-f211f0190bda",
+      "result_id": "c419425f-520c-41a8-85ef-de6780f8f853"
+    },
+    {
+      "claim_id": "4f0f0137-a2f5-4e10-b8b6-17d328178e6b",
+      "result_id": "a9b0836e-6479-4d38-9a91-6e9c7b894315"
+    },
+    {
+      "claim_id": "2c1e08c9-dafc-400a-ada1-70f6e258d1a3",
+      "result_id": "a9b0836e-6479-4d38-9a91-6e9c7b894315"
+    },
+    {
+      "claim_id": "acff6083-2993-4e58-a76c-25a606f1e2f7",
+      "result_id": "a9b0836e-6479-4d38-9a91-6e9c7b894315"
+    },
+    {
+      "claim_id": "b4eb7b25-c30b-4e4c-aeea-b17ceb54292b",
+      "result_id": "a9b0836e-6479-4d38-9a91-6e9c7b894315"
+    },
+    {
+      "claim_id": "cd92e03c-8654-4038-b0f7-8edf15d8d70a",
+      "result_id": "a9b0836e-6479-4d38-9a91-6e9c7b894315"
+    },
+    {
+      "claim_id": "a0fbecc5-8cdd-41fd-b56e-34f67d339777",
+      "result_id": "af0577dd-7b60-4b44-9f37-2e19e270bcc7"
+    },
+    {
+      "claim_id": "b5af460c-aa72-4e93-aea7-cb2e4152c00b",
+      "result_id": "af0577dd-7b60-4b44-9f37-2e19e270bcc7"
+    },
+    {
+      "claim_id": "10502282-89a5-48b1-984b-b9e7e7e54ed2",
+      "result_id": "af0577dd-7b60-4b44-9f37-2e19e270bcc7"
+    },
+    {
+      "claim_id": "58038800-6acb-472a-bd65-e541be0b1628",
+      "result_id": "af0577dd-7b60-4b44-9f37-2e19e270bcc7"
+    },
+    {
+      "claim_id": "ac02ee17-3054-4f4a-a504-fc26efaa2ce4",
+      "result_id": "e76136cf-53d2-436b-9166-535d98c47032"
+    },
+    {
+      "claim_id": "5ba3fc9b-00cd-4b0c-ad2a-00669aa9398d",
+      "result_id": "e76136cf-53d2-436b-9166-535d98c47032"
+    },
+    {
+      "claim_id": "94fc2f50-4bab-4f08-ad74-c38d3c1f3e9a",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "e3d347c6-1878-4721-b7cc-be45fc4dcb7c",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "0d06c456-93a6-45af-b109-8d48d72c77c7",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "dea53770-470a-477b-b5e8-71d59fc033c5",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "ad1a9b4d-4404-422a-90f7-a0d668d22f01",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "b1cbeedb-2226-4a80-817e-c341434e9a7d",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "e847b087-0c22-4213-8867-8eb5d36b3da5",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "887ab363-6750-4306-8a50-388c5f00a993",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "5f4b4b1b-c69c-4f86-9091-d1cd3e69d976",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "9c920237-e05d-42a4-9fe3-32578692d8c1",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "aed5265f-8672-4459-889f-5de2a5b95f84",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "3aa5f462-f44e-46e3-b7a2-bf9b65da5908",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "c0d91e09-4bc0-43fd-b4b6-d8c4db7a8dbf",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "8139094b-6511-4670-9a89-05576c314a64",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "3896ae11-c082-416f-95b0-f961cbd787a2",
+      "result_id": "c78325fe-aca1-4c11-9d23-517fb7ed0248"
+    },
+    {
+      "claim_id": "709c5115-51aa-48a2-ad3d-62d57f13895b",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "1eeea15f-6086-4e5c-a043-a5dfeae7b28a",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "aaa9ba16-6bfc-47f9-acb8-6ad739769404",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "61d09e2f-54a9-4522-814b-e38f99290bfc",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "cf124649-f528-4103-86c8-0148946faeb7",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "4d509638-5890-451c-839e-96cf15a6d09e",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "0ff9a7d1-7e46-436b-b6b8-80f6c61fca16",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "cf3f6e7b-d5b2-4a0f-8adc-7b4daa54c98e",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "3841a4eb-ae4d-4996-814e-3698f1569534",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "39a91b24-2a69-41eb-8801-b444b1a2000c",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "518029b1-cf91-47e3-9b66-754de01574c8",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "e02d0a36-d8d6-4a3b-963a-31d0d1205f2e",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "0efc90d5-efe3-4ef2-b55f-c6f8cbdad783",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "2dcdc8ff-5d1a-4bee-a13d-a1b4977bab59",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "35aa100c-7301-4b05-8eeb-aa08345566e4",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "426d2291-7e97-4d7e-9443-a500273a058d",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "30cf36a5-7231-485c-a1b7-ae6c688d45b6",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "d9282967-001c-4ab3-9d27-bc806c74ae41",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "828a2b26-7fdd-4bf7-82d0-23cba03fe09a",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "977122b3-625c-4f5c-b267-cf514d873be3",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "e2c55569-30a8-4b55-afd2-2a44d12af80f",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "cd95e810-c930-4787-a072-3fdf9dcf4975",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    },
+    {
+      "claim_id": "5499c815-6cd7-4ee3-8f12-6aa406648b8b",
+      "result_id": "390f303a-b74f-4666-93cd-fbcf90a428fb"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript describes the established structural and functional architecture of AAA+ proteases, including ClpAP. These proteases consist of hexameric AAA+ unfoldase rings (with helical subunit arrangements) that stack with planar peptidase rings and use ATP hydrolysis to unfold and translocate substrates for degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C13, and C21-C23 collectively describe well-established knowledge about AAA+ protease structure and function, supported by appropriate citations (Sauer and Baker 2011; Puchades et al. 2020). These are background claims providing context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C25"
+    ],
+    "result": "Recent cryo-EM structures reveal that ClpA and ClpX hexamers have six flexible IGL/IGF loops that dock into 5-6 of the seven hydrophobic clefts on ClpP heptameric rings, creating a six-to-seven subunit mismatch with one or two empty clefts. The empty cleft is consistently positioned between clefts bound to the second-lowest and lowest subunits in the AAA+ spiral.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 and C25 describe structural features well-supported by multiple recent cryo-EM studies (Fei et al. 2020a,b; Ripstein et al. 2020; Lopez et al. 2020) and Figure 1A. These observations form the structural basis for the rotation hypothesis being tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C26"
+    ],
+    "result": "Based on cryo-EM structures showing asymmetric features and observations that different subunits can occupy different spiral positions, recent publications have proposed that ClpA/ClpX must rotate relative to ClpP during substrate translocation, following a sequential hand-over-hand mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, and C26 accurately describe the rotation model proposed in prior literature (Ripstein et al. 2020; Lopez et al. 2020; de la Pe\u00f1a et al. 2018; Dong et al. 2019). This is the hypothesis being tested, not a result of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Structural analysis shows that Glu613 residues in ClpA hexamer subunits are positioned close to Arg192 residues (the last visible amino acid in ClpP) in six of seven ClpP protomers, making E613C and ClpP+C mutations suitable for crosslinking neighboring ClpA and ClpP subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe the rational design of the crosslinking strategy based on structural analysis (Figure 2A) and cited cryo-EM structures (Lopez et al. 2020). The proximity analysis provides sound justification for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C68"
+    ],
+    "result": "Crosslinking of E613C ClpA to ClpP+C achieved 90\u00b11% efficiency, resulting in >99.99% of hexamers containing at least one crosslink and ~98% containing 4-6 crosslinks. SDS-PAGE molecular weight shifts are consistent with covalent linkage of single ClpA monomers (~83 kDa) to single ClpP monomers (~23 kDa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C68 are well-supported by experimental data (Figure 2C, Figure 2\u2014source data 1, Figure 2\u2014figure supplement 1). The crosslinking efficiency is quantified with appropriate replication (n=4), and the statistical calculations assuming independent crosslinking are reasonable. The molecular weight analysis confirms the expected crosslink stoichiometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The crosslinked A\u2013P pool hydrolyzes ATP at 412\u00b140 min\u207b\u00b9 enz\u207b\u00b9 (40% of the 1035\u00b178 min\u207b\u00b9 enz\u207b\u00b9 rate for uncrosslinked A\u2022P control). Control experiments demonstrate that the C47S, C203S, C243S, and E613C mutations do not impair ClpA activity, as A\u2022P performs comparably to wild-type ClpAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by experimental data (Figure 3\u2014figure supplement 1A-B, Figure 3\u2014source data 5). The ATP hydrolysis measurements include appropriate error estimates, and the control experiments properly validate that the mutations themselves do not cause the observed effects. The ~2.5-fold reduction in ATPase activity is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C47"
+    ],
+    "result": "Crosslinked A\u2013P degrades folded substrates (\u03bb cIN-ssrA and cp7GFP-ssrA) at 31\u00b15% and 32\u00b14% of control rates, partially unfolded substrate (5-IAF V13P titinI27-ssrA) at 46\u00b12%, and molten-globule substrate (FITC-casein) at 97\u00b17% of control rates, showing more prominent defects for native substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 and C47 are well-supported by experimental data (Figure 3A-B, Figure 3\u2014source datas 1-2) with appropriate replication (n\u22653). The pattern showing substrate-dependent effects is clear, with greater impairment for more stable substrates. This is a key finding demonstrating that crosslinked complexes retain substantial activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Substituting ATP\u03b3S for ATP reduces FITC-casein degradation by the A\u2013P pool ~6-fold, indicating that robust degradation of this molten-globule substrate requires ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by experimental data (Figure 3C, Figure 3\u2014source data 3). The control experiment with non-hydrolyzable ATP analog appropriately demonstrates that the observed degradation requires active ATP hydrolysis, not just ATP binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Michaelis-Menten analysis shows that crosslinked A\u2013P has Vmax of 1.4\u00b10.07 min\u207b\u00b9 ClpA6\u207b\u00b9 and KM of 13\u00b11.6 \u00b5M for cp7GFP-ssrA degradation, compared to control values of Vmax=3.0\u00b10.10 min\u207b\u00b9 ClpA6\u207b\u00b9 and KM=3.7\u00b10.5 \u00b5M. The ~50% reduction in Vmax is comparable to reduced ATPase activity, suggesting slower degradation results from slower ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 present kinetic data with appropriate statistical analysis (R\u00b2=0.96 for both fits, n=3). The Michaelis-Menten analysis is properly conducted, and the inference connecting reduced Vmax to reduced ATPase activity (C45) is reasonable given the similar magnitude of effects (~50% vs ~40%). The 3-fold weaker KM suggests additional substrate binding effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C48",
+      "C49"
+    ],
+    "result": "Multiple crosslinks between ClpA and ClpP cause modest slowing of ATP hydrolysis and protein degradation rates compared to uncrosslinked controls, but do not prevent protein unfolding or translocation steps required for proteolysis. The reduced enzymatic activities are direct consequences of crosslinking rather than other experimental modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C48-C49 represent well-supported conclusions from the experimental data. The retention of substantial activity despite crosslinking (C48) is the key finding. The attribution to crosslinking (C49) is justified by the comprehensive controls showing that mutations alone don't impair activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Crosslinked ClpAP complexes retain the ability to unfold, translocate, and degrade protein substrates in vitro, albeit modestly slower than uncrosslinked controls. This demonstrates that rotation of ClpA relative to ClpP is not required for protease activity, although some flexibility at the interface may be necessary for optimal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 represent the main conclusions of the study, well-supported by the comprehensive experimental data (C27-C49). The key finding that crosslinked complexes retain substantial activity (C4-C5) directly contradicts predictions of strict rotation models (C6). The caveat about flexibility (C7) is appropriately cautious given the reduced activity with folded substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The experimental results do not support models predicting that ClpA must rotate relative to ClpP for substrate translocation. Preventing rotation by 'riveting' ClpA to ClpP still permits substantial degradation of native and denatured substrates, contradicting the rotation requirement predicted by these models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 present the central mechanistic conclusion. The logic is sound: rotation models predict crosslinking would abolish activity (C50), but experiments show substantial retained activity (C52), therefore rotation models are not supported (C51). This is the paper's primary contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The high degree of crosslinking (98% of complexes with \u22654 crosslinks, ~50% with 6 crosslinks) would hinder each ClpA subunit from adopting each spiral position and prevent two empty ClpP clefts in half the enzymes. This is inconsistent with proposals that an intermediate with two empty clefts is requisite for translocation. Similar results are observed for ClpXP with single crosslinks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 extend the mechanistic interpretation. The inference about conformational constraints (C54) is reasonable given the crosslinking distribution. The argument against the two-empty-cleft model (C55-C56) is logical and supported by citation to Bell 2020 for ClpXP (C53). However, the two-empty-cleft model is specifically from Ripstein et al. 2020 for ClpXP, and its applicability to ClpAP is less certain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "While conformational flexibility between unfoldase and protease appears important for optimal unfolding (based on reduced activity with folded substrates), rotation is not a strict requirement for degradation. The authors suggest ring-ring rotation models should be considered unproven and unlikely absent direct evidence, though context-dependent rotation cannot be excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 present nuanced conclusions appropriately qualified with uncertainty. The inference about flexibility (C58) is reasonable from the substrate-dependent effects. The strong statement against rotation models (C60) is justified by the data but appropriately acknowledges the caveat from Lopez et al. 2020 (C57). The conclusion is measured and scientifically appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "AAA+ proteases in the FtsH/Yme1/Agf3l2 and Lon families have genetically tethered AAA+ and peptidase modules and therefore must operate without rotation between unfoldase and protease components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 cite established knowledge (Glynn 2017) about other AAA+ protease families to provide comparative context. The inference that genetic tethering precludes rotation (C62) is logical and strengthens the argument that rotation is not universal among AAA+ proteases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Alternative non-rotary mechanisms are proposed, including a modified sequential hand-over-hand mechanism where empty ClpP clefts can localize between any ClpA subunit pair, or reciprocating action of one or two AAA+ subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 are speculative proposals for alternative mechanisms (evidence_type: SPECULATION). While these are reasonable hypotheses consistent with the data, they are not tested experimentally. The authors appropriately acknowledge that 'further experiments will be required to discriminate between these models.' These are discussion points rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

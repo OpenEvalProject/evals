@@ -1,0 +1,1820 @@
+{
+  "submission": {
+    "id": "9ffa672f-3856-4a93-b1de-d663d97b2d60",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:18:37.170108Z",
+    "updated_at": "2025-12-02T12:18:37.170108Z"
+  },
+  "content": [
+    {
+      "id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "submission_id": "9ffa672f-3856-4a93-b1de-d663d97b2d60",
+      "content_type": "manuscript",
+      "content_text": "# TRAIP drives replisome disassembly and mitotic DNA repair synthesis at sites of incomplete DNA replication\n\n## Authors\n\n- Remi Sonneville<sup>1</sup>\n- Rahul Bhowmick<sup>2</sup>\n- Saskia Hoffmann<sup>3</sup>\n- Niels Mailand<sup>3</sup> \u2020\n- Ian D Hickson<sup>2</sup> \u2020\n- Karim Labib<sup>1</sup> ([ORCID: 0000-0001-8861-379X](https://orcid.org/0000-0001-8861-379X)) \u2020\n\n### Affiliations\n\n1. MRC Protein Phosphorylation and Ubiquitylation Unit, School of Life Sciences University of Dundee Dundee United Kingdom\n2. Department of Cellular and Molecular Medicine, Center for Chromosome Stability University of Copenhagen Copenhagen Denmark\n3. Novo Nordisk Foundation Center for Protein Research, Faculty of Health and Medical Sciences University of Copenhagen Copenhagen Denmark\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe faithful segregation of eukaryotic chromosomes in mitosis requires that the genome be duplicated completely prior to anaphase. However, cells with large genomes sometimes fail to complete replication during interphase and instead enter mitosis with regions of incompletely replicated DNA. These regions are processed in early mitosis via a process known as mitotic DNA repair synthesis (MiDAS), but little is known about how cells switch from conventional DNA replication to MiDAS. Using the early embryo of the nematode Caenorhabditis elegans as a model system, we show that the TRAIP ubiquitin ligase drives replisome disassembly in response to incomplete DNA replication, thereby providing access to replication forks for other factors. Moreover, TRAIP is essential for MiDAS in human cells, and is important in both systems to prevent mitotic segregation errors. Our data indicate that TRAIP is a master regulator of the processing of incomplete DNA replication during mitosis in metazoa.\n\n## Introduction\n\nChromosome duplication in eukaryotes is initiated from many origins of DNA replication on each chromosome, leading to the progression of DNA replication forks across the genome until fork convergence induces DNA replication termination. However, in species with genomes larger than about 100 Mb, it becomes increasingly likely that a small number of very late-replicating loci will not have completed DNA replication when cells enter mitosis (Al Mamun et al., 2016).\n\nMetazoa have evolved pathways that quickly process sites of incomplete replication during mitosis, in order to facilitate the completion of chromosome segregation before cell division (Bhowmick and Hickson, 2017; Moreno et al., 2016). In human cells, factors such as the FANCD2 protein mark sites of unreplicated DNA, and then SLX4-dependent nucleolytic cleavage in mitosis promotes RAD52-dependent DNA repair synthesis (Bhowmick et al., 2016; Minocherhomji et al., 2015). Loci prone to such breakage and repair, particularly in response to DNA replication stress, include common fragile sites that are defined cytologically as breaks or gaps in metaphase chromosomes (Glover et al., 2017). Nevertheless, the mechanism by which mitotic processing initiates at such sites is not well understood. In particular, little is known about how conventional DNA replication forks are converted during mitosis into sites of DNA repair synthesis. One possibility is that the processing of sites of incomplete DNA replication begins with disassembly of the replisome, which otherwise protects the parental DNA at replication forks from attack by nucleases. The replisome is assembled at origins of replication once per cell cycle, and is normally disassembled during DNA replication termination (Dewar and Walter, 2017; Maric et al., 2014; Moreno et al., 2014). Replisome disassembly is an active process, which is initiated by ubiquitylation of the CMG helicase via the ubiquitin ligase CUL-2LRR-1 (Dewar et al., 2017; Sonneville et al., 2017), leading to disassembly by the Cdc48 segregase and its essential co-factors Ufd1 and Npl4 (Franz et al., 2011; Maric et al., 2017).\n\nUsing the early embryo of C. elegans as a model system, we previously identified a mitotic pathway for CMG disassembly that also requires CDC-48_UFD-1_NPL-4, and is able to remove any post-termination replisomes that escape the normal disassembly process during S-phase (Sonneville et al., 2017). This mitotic pathway for replisome disassembly requires a ubiquitin ligase known as TRAIP (Deng et al., 2019; Priego Moreno et al., 2019), which is important for genome integrity in human cells (Feng et al., 2016; Harley et al., 2016; Hoffmann et al., 2016; Soo Lee et al., 2016) and is required to remove the replisome from converged DNA replication forks during the repair of inter-strand DNA crosslinks in extracts of Xenopus laevis eggs (Wu et al., 2019).\n\nVery recently, it was shown that addition of mitotic cyclin-dependent kinase to Xenopus egg extracts induces TRAIP-dependent replisome disassembly (Deng et al., 2019; Priego Moreno et al., 2019), even when DNA replication is incomplete, and leads to fork breakage and DNA rearrangements (Deng et al., 2019). However, it has yet to be determined whether TRAIP is important in metazoan cells and tissues for replisome disassembly in response to incomplete DNA replication, and whether TRAIP is required for mitotic DNA repair synthesis at common fragile sites. Here, we address these issues, using an integrated approach that combines the advantages of the C. elegans early embryo and human cell lines as model systems.\n\n## Results and discussion\n\n### Replisome disassembly after incomplete DNA replication in the C. elegans early embryo requires the CDC-48_UFD-1_NPL-4 segregase\n\nMonitoring replisome disassembly during mitosis is difficult in eukaryotic cells that have been exposed to DNA replication stress, since the S-phase checkpoint response usually blocks mitotic entry under such conditions. However, the C. elegans early embryo provides a useful model system in this regard, since the checkpoint response to replication stress is attenuated, such that mitotic entry is delayed but not blocked (Brauchle et al., 2003; Encalada et al., 2000). Moreover, the transparent nature of the embryo facilitates live cell imaging.\n\nWe previously established a live cell assay for replisome disassembly in the first cell cycles of the C. elegans embryo (Sonneville et al., 2017), based on monitoring the presence or absence of a GFP-tagged subunit of the CMG helicase on condensing chromatin (Figure 1A; chromatin is visualised via mCherry-tagged histone H2B). To assay for the presence of the replisome on mitotic chromatin after subjecting cells to DNA replication stress, we depleted the RPA-1 component of the RPA single-strand binding protein complex by RNAi (Figure 1B, Figure 1\u2014figure supplement 1A). As shown previously (Sonneville et al., 2015), chromosome condensation during prophase of the first mitotic cell cycle was impaired after depletion of RPA-1 (Figure 1C, Figure 1\u2014figure supplement 1B), reflecting mitotic entry in the presence of incomplete DNA replication. The chromatin subsequently aligned on the metaphase plate, but anaphase was impaired due to multiple chromatin bridges (Figure 1C, Figure 1\u2014figure supplement 1B; compare rpa-1 RNAi with control). Strikingly, components of the CMG helicase, such as the GINS subunits PSF-1 and SLD-5, and the CDC-45 protein, were not detected on the partially replicated chromatin during mitosis (Figure 1C\u2013D, metaphase; Figure 1\u2014figure supplement 1C\u2013D,F\u2013H). This reflected active disassembly of the CMG helicase by the CDC-48_UFD-1_NPL-4 segregase, since CMG components were retained on mitotic chromatin when NPL-4 and RPA-1 were depleted simultaneously (Figure 1B\u2013D; Figure 1\u2014figure supplement 1A,C\u2013D,F\u2013H; note that npl-4 depletion also induced chromatin bridges, reflecting the multiple roles of CDC-48_UFD-1_NPL-4 during the cell cycle, including during mitosis). These data indicate that the replisome is disassembled before metaphase when DNA replication is perturbed in the C. elegans early embryo.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48686/elife-48686-fig1-v2.jpg)\n\n**Figure 1.:** (A) Illustration of the first cell cycle in the C. elegans early embryo. (B) Worms expressing GFP-RPA-1 and mCherry-Histone H2B were exposed to the indicated RNAi treatments (control\u00a0=\u00a0no RNAi). Images of whole embryos are shown, during prophase of the first embryonic cell cycle (two minutes before nuclear envelope breakdown), in order to illustrate the efficiency of RPA-1 depletion. (C) Worms expressing GFP-PSF-1 and mCherry-Histone H2B were exposed to the indicated RNAi treatments, before time-lapse imaging of the first mitosis in isolated embryos. The arrows indicate persistence of CMG on mitotic chromatin. (D) Worms expressing the indicated GFP-tagged replication proteins, together with mCherry-Histone H2B, were exposed to the same range of RNAi treatments as in (C). Examples are shown of the metaphase stage of the first embryonic mitosis. Scale\u00a0bars\u00a0=\u00a020 \u00b5m in (B) and 5 \u00b5m in (C and D). Quantification of microscopy data is provided in Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48686/elife-48686-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The figure presents quantification of the microscopy data for the experiments in Figure 1B (A), Figure 1C (B\u2013E) and Figure 1D (F\u2013H). The signals for GFP-PSF-1 (D), mCherry-Histone-H2B (E), GFP-CDC-45 (G) and GFP-SLD-5 (H) were quantified as described in Materials and methods.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48686/elife-48686-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Videos of embryos expressing GFP-KLE-2 and mCherry-Histone, treated with the indicated RNAi. (B) Quantification of the microscopy data in (A). (C) Videos of embryos expressing GFP-CAPG-1 and mCherry-Histone, treated with the indicated RNAi. Arrows denote defective chromatin condensation. (D) Quantification of the microscopy data in (C).\n\nTo confirm the link between replisome disassembly and incomplete DNA replication, we depleted ribonucleotide reductase via RNAi against rnr-1 and thus depleted dNTPs. This produced a profound defect in DNA replication (Sonneville et al., 2015), as reflected by greatly impaired chromosome condensation during prophase (Figure 1C, Figure 1\u2014figure supplement 1B; Figure 1\u2014figure supplement 2A\u2013B show that condensin II was not detected on mitotic chromatin after RNR-1 depletion). RPA accumulated on metaphase chromatin under such conditions (Figure 1D; Figure 1\u2014figure supplement 1F), and chromosome segregation during anaphase was severely defective, thus blocking the subsequent reformation of the nuclear envelope (Figure 1C; 5 of 5 embryos examined behaved the same). CMG components were not detected on mitotic chromatin following rnr-1 RNAi, mirroring the defect seen after depletion of RPA-1, and this was due to active disassembly of the replisome by CDC-48_UFD-1_NPL-4, since CMG components persisted on mitotic chromatin in embryos treated with rnr-1 npl-4 double RNAi (Figure 1C\u2013D, Figure 1\u2014figure supplement 1C\u2013D,F\u2013H).\n\nInterestingly, the mCherry-H2B signal was barely detectable throughout mitosis upon co-depletion of RNR-1 and NPL-4 (Figure 1C\u2013D, Figure 1\u2014figure supplement 1E), and this reflected the absence from mitotic chromatin of both condensin II and condensin I (Figure 1\u2014figure supplement 2; note that condensin II normally associates with mitotic chromatin during prophase, whereas condensin I is loaded during metaphase). Most likely, the persistence of the CMG helicase at replication forks supported continued slow progression of the replisome throughout the genome, uncoupled from DNA synthesis, thereby unwinding the parental DNA duplex and displacing parental histones from unreplicated chromatin. In contrast, continued progression of the replisome in the presence of replication stress might be more limited following double RNAi to rpa-1 and npl-4, such that a significant amount of unreplicated chromatin (marked by mCherry-H2B) persists across the genome. This issue is explored further below.\n\n### TRAIP is dispensable for proliferation in C. elegans, but\u00a0preserves genome integrity in combination with CUL-2LRR-1\n\nTo investigate whether the TRAIP ubiquitin ligase is required for mitotic replisome disassembly and the preservation of genome integrity in response to incomplete DNA replication in the C. elegans early embryo, we used CRISPR-Cas9 to delete the trul-1 gene (Figure 2\u2014figure supplement 1; TRUL-1\u00a0=\u00a0TRAIP Ubiquitin Ligase 1). Interestingly, homozygous trul-1\u2206 worms are viable, in contrast to the lethality of previously reported deletions of TRAIP orthologues in the mouse and in Drosophila (Merkle et al., 2009; Park et al., 2007), probably reflecting the small number of cell divisions in the C. elegans life cycle and the relatively small size of the worm genome (around 100 Mb, compared to about 180 Mb in Drosophila and 1,500 Mb in mouse). Cell cycle progression appeared normal in homozygous trul-1\u2206 embryos (see below, Figure 2\u2014figure supplement 4), but RNAi depletion of LRR-1 in trul-1\u2206 worms caused the persistence of the CMG helicase on mitotic chromatin (Figure 2\u2014figure supplement 2A\u2013B). A similar observation was made using lrr-1 trul-1 double RNAi (Deng et al., 2019), confirming that TRUL-1 is required for the mitotic pathway that disassembles post-termination replisomes. Strikingly, LRR-1 depletion in trul-1\u2206 worms led to the appearance of anaphase DNA bridges in the early embryo (Figure 2\u2014figure supplement 2C), indicating that the S-phase and mitotic pathways for replisome disassembly are jointly important for the preservation of genome integrity.\n\n### TRAIP is required for replisome disassembly in response to DNA replication stress\n\nBy exposing control and trul-1\u2206 worms to rpa-1 RNAi, we observed that CMG persisted on mitotic chromatin when RPA-1 was depleted in the absence of TRAIP (Figure 2A, Figure 2\u2014figure supplement 3A). In contrast, rpa-1 lrr-1 double RNAi did not prevent replisome disassembly in wild type worms, and was equivalent to rpa-1 single RNAi (Figure 2A, Figure 2\u2014figure supplement 3A). These data indicated that replisome disassembly following RPA-1 depletion requires TRAIP, but is independent of the CUL-2LRR-1 pathway that acts when two converging replication forks encounter each other during DNA replication termination. Similarly, we observed that the CMG helicase accumulated on mitotic chromatin following rnr-1 RNAi in trul-1\u2206 worms. However, this effect was enhanced in combination with lrr-1 RNAi (Figure 2B, Figure 2\u2014figure supplement 3B; compare rnr-1 RNAi and rnr-1 lrr-1 double RNAi in trul-1\u2206). Moreover, mCherry-H2B on condensing chromatin was barely detectable throughout mitosis after rnr-1 lrr-1 double RNAi in trul-1\u2206 worms, equivalent to the effect of rnr-1 npl-4 double RNAi as discussed above (Figure 2B, Figure 2\u2014figure supplement 3B). These findings are consistent with the notion that TRUL-1 normally mediates replisome disassembly following rnr-1 RNAi, probably during mitosis (equivalent to TRAIP-dependent mitotic disassembly of post-termination replisomes). However, continued replisome progression in the absence of TRUL-1 allows some forks to converge, thereby leading to disassembly via the CUL-2LRR-1 pathway.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48686/elife-48686-fig2-v2.jpg)\n\n**Figure 2.:** (A) Videos of control and trul-1\u2206 embryos expressing GFP-PSF-1 and mCherry-Histone H2B, treated with RNAi to rpa-1, lrr-1 and npl-4 as indicated. Arrows indicate persistence of CMG on mitotic chromatin. (B) Videos of control and trul-1\u2206 embryos expressing GFP-PSF-1 and mCherry-Histone H2B, treated with the indicated RNAi treatments. Arrows indicate persistence of CMG on mitotic chromatin. (C) Embryonic viability was measured for the indicated strains, using worms grown at the temperatures shown. The data correspond to the mean and standard deviation from three independent experiments. (D) Videos of control and div-1(or148) temperature sensitive embryos expressing GFP-PSF-1 and mCherry-Histone H2B, treated with empty RNAi vector or RNAi to trul-1 as indicated. In order to inactivate DIV-1, the worms were grown at the restrictive temperature of 25\u00b0C for 24 hr before imaging. The images correspond to division of the AB cell during the second embryonic cell cycle. White arrows indicate defective chromosome condensation during prophase, whereas red arrows denote chromatin bridges during anaphase. (E) Quantification of the percentage of cells with anaphase bridges in the first two embryonic cell cycles, for the experiment shown in (D). Scale\u00a0bars in all microscopy images\u00a0=\u00a05 \u00b5m. Further quantification of microscopy data is provided in Figure 2\u2014figure supplement 3.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48686/elife-48686-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Illustration of the trul-1 locus in the C. elegans genome, and the region deleted in the trul-1\u2206 strains (dotted line \u2013 the deletion removes all but the last 249 bp of the trul-1 coding sequence). The red arrows denote PCR primers that were used to confirm the deletion. Red lines indicate the predicted size of the corresponding PCR products. (B) Confirmation of trul-1\u2206 via PCR. (C) Extracts of embryos from the indicated strains were used to monitor the indicated proteins by immunoblotting.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48686/elife-48686-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Videos of control and trul-1\u2206 embryos expressing GFP-PSF-1 and mCherry-Histone H2B, after treatment with the indicated RNAi (scalebars\u00a0=\u00a05 \u00b5m). The arrows indicate the persistence of CMG on mitotic chromatin. (B) Quantification of the percentage of cells with PSF-1 on mitotic chromatin during the first embryonic cell cycle, for the experiment in (A). (C) Quantification of the percentage of cells with anaphase bridges in the first two embryonic cell cycles, for the experiment in (A).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48686/elife-48686-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The figure presents quantification of the microscopy data for the experiments in Figure 2A (A), Figure 2B (B) and Figure 2D (C). The mCherry-Histone-H2B signal (A\u2013B) was quantified as described in Materials and methods.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/48686/elife-48686-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** For the experiment in Figure 2D\u2013E, the indicated cell cycle parameters were measured by time-lapse video microscopy, for control and div-1 worms expressing GFP-PSF-1 and mCherry-Histone. The figure indicates the mean and standard deviation of the data.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/48686/elife-48686-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Control and trul-1\u2206 worms were exposed to the indicated dilutions of rnr-1 RNAi, as described in Materials and methods, and embryos were then analysed by video microscopy and scored for chromatin bridges during mitosis of the P0 cell (first cell cycle). (B) Exposure to 100% rnr-1 RNAi leads to impaired chromosome condensation during prophase (red arrows) and increased chromatin bridges during anaphase (white arrows), in both control and trul-1\u2206 worms. (C) 10% rnr-1 RNAi specifically induces defective condensation during prophase (red arrows) and increased chromatin bridges during anaphase (white arrows), in the AB cell of trul-1\u2206 worms. (D) Quantification of the percentage of embryos with anaphase bridges in the AB cell of the second cell cycle, for the experiment in (C). (E) Quantification of the percentage of embryos with defective chromosome condensation during prophase in the AB cell, for the experiment in (C).\n\n### TRAIP preserves genome integrity and promotes survival in response to DNA replication stress\n\nTo investigate the physiological significance of the TRUL-1 pathway in response to incomplete DNA replication, we needed to use a milder form of DNA replication stress, since rpa-1 and rnr-1 RNAi both cause profound replication defects that prevent the successful completion of the first embryonic cell cycle. Initially, we used worms with a point mutation in the div-1 gene, encoding the second-largest subunit of DNA polymerase alpha, since previous work showed that div-1(or148ts) worms are inviable at 25\u00b0C but can grow at lower temperatures (Encalada et al., 2000). Whereas the viability of div-1 or trul-1\u2206 single mutants was close to that of the wild type control at the semi-permissive temperature of 20\u00b0C, the combination of trul-1\u2206 with div-1 at 20\u00b0C produced synthetic lethality in around 50% of embryos. This synthetic lethality was suppressed by growth at the permissive temperature of 15\u00b0C (Figure 2C). These findings indicated that C. elegans TRAIP is important for worms to survive DNA replication stress, though TRUL-1 is dispensable in unperturbed cell cycles. It was not possible to compare lrr-1 RNA with trul-1\u2206 in similar experiments, since depletion of LRR-1 is itself sufficient to produce DNA replication stress and lethality (Merlet et al., 2010).\n\nTo examine in greater detail how TRAIP contributes to the viability of div-1 worms experiencing replication stress, we monitored the formation of anaphase chromatin bridges in the first two embryonic cell cycles of control or div-1(or148ts) worms grown at the restrictive temperature of 25\u00b0C, after treatment with trul-1 RNAi or empty vector. As shown in Figure 2D\u2013E, depletion of TRUL-1 led to an accumulation of mitotic chromatin bridges in the div-1 mutant (red arrows in Figure 2D), indicating that TRAIP is important for chromosome integrity in response to replication stress. In the second embryonic cell cycle, the effect was greatest (around 90% of embryos, n\u00a0=\u00a018) in the anterior AB cell (Figure 1A), which is known to have a weak S-phase checkpoint and thus is vulnerable to entering mitosis with persistent DNA replication stress (Brauchle et al., 2003). Conversely, chromatin bridges were observed less frequently in the posterior P1 cell. This cell has an enhanced checkpoint response (Brauchle et al., 2003), which greatly delays mitosis in response to replication stress (Figure 2\u2014figure supplement 4), thereby providing more time to complete genome duplication. By carefully examining mitotic progression, we observed that chromosome condensation during prophase was partially defective in the AB cell but not the P1 cell of the div-1(or148ts) mutant, and this defect was exacerbated by depletion of TRUL-1 (Figure 2D, white arrows; Figure 2\u2014figure supplement 3C). These data suggest that the AB cell of the div-1(or148ts) mutant enters mitosis before replication has been completed, and that TRUL-1 becomes important for the preservation of chromosome integrity under those conditions.\n\nAs an alternative way of inducing a low level of DNA replication stress, we fed worms on plates where bacteria expressing rnr-1 RNAi were diluted with bacteria containing the empty RNAi vector (Figure 2\u2014figure supplement 5A). Whereas the exposure of worms to 100% rnr-1 RNAi caused a profound defect in condensation during prophase, and severe chromatin bridges during anaphase (Figure 2\u2014figure supplement 5B, reproducing the phenotype shown in Figure 1C), mitosis progressed normally in most control embryos exposed to 10% rnr-1 RNAi (Figure 2\u2014figure supplement 5C). However, exposure of trul-1\u2206 worms to 10% rnr-1 RNAi led to impaired condensation during prophase and chromatin bridges during anaphase (Figure 2\u2014figure supplement 5C\u2013E), thus reproducing the effect of combining trul-1 RNAi with the div-1(or148ts) mutant (Figure 2D). Together with our earlier findings (Deng et al., 2019), these data indicated that TRUL-1 helps to preserve genome integrity in C. elegans, when cells enter mitosis in the presence of incomplete DNA replication.\n\n### TRAIP is required for FANCD2 focus formation and mitotic DNA repair synthesis at common fragile sites in human cells\n\nTo determine whether TRAIP has an evolutionarily conserved role in metazoa, and is required to process sites of incomplete DNA replication during mitosis, we monitored the appearance of mitotic DNA repair synthesis in human cells subjected to a low level of DNA replication stress. We used siRNA to deplete TRAIP in human U2OS cells (Figure 3A), and then treated cells with a low dose of the DNA polymerase inhibitor aphidicolin, before synchronisation in the G2-M phase of the cell cycle (Figure 3B). Subsequently, cells were released into mitosis in the presence of the nucleoside analogue EdU, and then harvested by mitotic shake off, before detection of FANCD2 foci and sites of EdU incorporation, as described previously (Minocherhomji et al., 2015). Strikingly, depletion of TRAIP with either of two different siRNAs suppressed the appearance of both FANCD2 and EdU foci (Figure 3C\u2013E). Moreover, this defect was rescued by ectopic expression of an siRNA-resistant version of wild type TRAIP, but not by expression of mutant TRAIP that lacked a functional RING domain, which links the E3 ligase to its cognate E2 enzymes (Figure 3F\u2013H). These data indicated that the ubiquitin ligase activity of TRAIP is required upstream of FANCD2 recruitment for mitotic DNA repair synthesis at sites of incomplete DNA replication in human cells. In contrast, depletion of LRR1 in human U2OS cells did not impair MiDAS (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48686/elife-48686-fig3-v2.jpg)\n\n**Figure 3.:** (A) Immunoblots illustrating depletion of TRAIP by two specific siRNAs in human U2OS cells. (B) Experimental protocol: human U2OS cells were exposed to control siRNA or TRAIP-specific siRNA for 48 hr. During the last 16 hr of siRNA treatment, the cells were treated with the DNA polymerase inhibitor aphidicolin (APH), and the CDK1 inhibitor RO-3306 was then added for the final 12 hr of siRNA treatment to arrest the cells in G2-phase. Subsequently, the cells were released from G2-arrest in the absence of RO-3306 for 30 min in the presence of the nucleoside analogue EdU. Mitotic cells were harvested by mitotic shake-off and processed for markers of the mitotic pathway for DNA repair synthesis (foci of EdU incorporation that largely co-localise with foci of the FANCD2 protein). (C) Representative micrographs of \u2018prometaphase\u2019 mitotic cells treated as in (B). The scale bars correspond to 2 \u00b5m. (D) Quantification of the number of EdU foci per prometaphase cell. (E) Quantification of the number of FANCD2 foci per prometaphase cell. (F) U2OS control cells, U2OS cells expressing wild type TRAIP, and U2OS cells expressing a RING-mutant of TRAIP were treated as described above. Representative micrographs show EdU foci and FANCD2 foci in prometaphase cells. The scale bars correspond to 2 \u00b5m. (G) Quantification of the number of EdU foci per prometaphase cell. (H) Quantification of the number of FANCD2 foci per prometaphase cell. Note that ectopic expression of the TRAIPRING mutant causes a partial dominant negative phenotype (reduced frequency of EdU and FANCD2 foci, even with si Control), as seen previously (Hoffmann et al., 2016). For panels D-E and G-H, the broad horizontal lines represent the mean for the entire data set, and the shorter lines above and below denote the standard deviations. P-values were generated via a Mann-Whitney test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48686/elife-48686-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Cells were processed as indicated. (B) Immunoblots illustrating depletion of LRR1 in human U2OS cells by a pool of specific siRNAs (see Materials and methods, and Key Resource Table). (C) Prometaphase mitotic cells treated as in (B). The scale bars correspond to 2 \u00b5m. (D) Quantification of the number of EdU foci per prometaphase cell. (E) Quantification of the number of FANCD2 foci per prometaphase cell. Statistics for (D\u2013E) were calculated as described above for Figure 3.\n\nConsistent with the C. elegans data described above, siRNA depletion of TRAIP in human cells led to an increase in anaphase DNA bridges, as well as ultrafine anaphase bridges coated with the PICH ATPase (Figure 4A\u2013B). Previous studies have shown that the latter structures generally represent sites where incomplete DNA replication remains unresolved during mitosis (Bhowmick and Hickson, 2017). Moreover, cells in the subsequent G1-phase had an increased frequency of 53BP1 bodies (Figure 4C), which mark the persistence of sites of incomplete DNA replication from the previous cell cycle (Lukas et al., 2011; Minocherhomji et al., 2015; Moreno et al., 2016). Correspondingly, G1-phase cells also showed increased chromosomal instability in the form of micronuclei (Figure 4D). All of these phenotypes were rescued by expression of an siRNA-resistant form of TRAIP (Figure 4). These findings confirm that TRAIP is important for metazoan cells to process incomplete DNA replication during mitosis, thus preserving genome integrity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48686/elife-48686-fig4-v2.jpg)\n\n**Figure 4.:** (A) U2OS control cells and those expressing wild type TRAIP were treated as described in Figure 3B, except that cells were re-seeded onto plates for 15 min after mitotic shake-off, before detection of DAPI-positive DNA bridges in anaphase cells (white arrow denotes bridge - the data are quantified in the right-hand panel). (B) As per (A), except that ultra-fine DNA bridges were monitored by immunofluorescence detection of the PICH ATPase. Chromosomal DNA was detected by DAPI-staining. Note that the ultra-fine bridges are DAPI-negative. A quantification of the data is presented in the right-hand panel. (C) An analogous experiment to those above was performed, except that cells were re-seeded for 2.5 hr before detection of the 53BP1 protein by immunofluorescence in newly-born G1 cells. The number of 53BP1 bodies per G1-phase cell is quantified in the right-hand panel. (D) As per (C), except the number of micronuclei per G1-phase cell (indicated by white arrows) was determined by DAPI-staining. Statistics presented in this figure were calculated as described above for Figure 3.\u00a0The scale bars correspond to 2 \u00b5m.\n\nWhereas S-phase was traditionally thought to end before the G2-phase of the cell cycle, it now appears that DNA replication in some parts of the genome can extend almost to the point of cell division. Such extremely late replicating regions of the genome include common fragile sites, but might also correspond to areas where two converging replication forks have both stalled in a region that lacks intervening dormant origins. Together with recent findings (Deng et al., 2019; Priego Moreno et al., 2019), our data indicate that TRAIP activity during mitosis promotes replisome disassembly at any remaining replication forks, thus exposing the parental DNA at the junction of the fork (we cannot exclude that TRAIP also has other important targets during mitosis, in addition to CMG). This leads to nucleolytic cleavage and mitotic DNA repair synthesis. In this way, mitotic TRAIP activity brings to an end the period during which conventional DNA replication is possible during the metazoan cell cycle. Although it remains to be demonstrated that TRAIP does indeed drive CMG helicase disassembly during mitosis in human cells, we have recently found that mouse TRAIP is required for mitotic CMG disassembly (Ryo Fujisawa, Fabrizio Villa and Karim Labib, unpublished data), indicating that the role of TRAIP is well conserved in diverse metazoan species.\n\nAs noted recently (Deng et al., 2019), if cleavage at each of two converging replication forks is specific to the leading strand template, which is normally encircled and thus protected by the CMG helicase, then one intact chromosome would rapidly be restored by gap filling, whereas repair of the other would require the joining of two broken ends. The latter would be associated with a small deletion and with sister chromatid exchange, thus matching the known features of common fragile sites in human cells (Glover et al., 2017). Our data indicate that TRAIP preserves viability when metazoan cells enter mitosis with incomplete replication, by promoting a programmed pathway of breakage and repair. This comes at the price of localised genome rearrangements, but avoids the far more damaging random breakage of loci during cell division in the presence of unreplicated DNA.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>GFP-PSF-1; mCherry-Histone H2B</td>\n      <td>Sonneville et al., 2017 PMID: 28368371.</td>\n      <td>strain name: KAL3</td>\n      <td>psf-1(lab1[gfp::TEV::S-tag::psf-1 + loxP unc-119(+) loxP]); ltIs37[pie-1p::mCherry::his-58 + unc-119(+)]</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>GFP-CDC-45; mCherry-Histone H2B</td>\n      <td>Sonneville et al., 2012\u00a0PMID: 22249291.</td>\n      <td>strain name: TG1754</td>\n      <td>unc-119(ed3) III; gtIs65[pie-1p::gfp::cdc-45 + unc-119(+)]; ltIs37</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>GFP-SLD-5; mCherry-Histone H2B</td>\n      <td>Sonneville et al., 2012 PMID: 22249291.</td>\n      <td>strain name: TG1756</td>\n      <td>unc-119(ed3) III; gtIs65[pie-1p::gfp::sld-5 + unc-119(+)]; ltIs37</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>GFP-RPA-1; mCherry-Histone H2B</td>\n      <td>Sonneville et al., 2012 PMID: 22249291.</td>\n      <td>strain name: TG2368</td>\n      <td>unc-119(ed3) III; gtIs65[pie-1p::gfp::rpa-1 + unc-119(+)]; ltIs37</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>div-1(or148) allele</td>\n      <td>Encalada et al., 2000 PMID: 11112326.</td>\n      <td>strain name: EU548</td>\n      <td>div-1(or148[P352L]) III</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>GFP-CAPG-1; mCherry-Histone H2B</td>\n      <td>Collette et al., 2011 PMID: 22025633.</td>\n      <td>strain name: EKM36</td>\n      <td>unc-119(ed3) III; cldIs[pie-1p::gfp::capg-1 + unc-119(+)]; ltIs37</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>GFP-KLE-2; mCherry-Histone H2B</td>\n      <td>Sonneville et al., 2015 PMID: 26166571.</td>\n      <td>strain name: TG3828</td>\n      <td>unc-119(ed3) III; gtIs3828[pie-1p::gfp::kle-2 + unc-119(+)]; ltIs37</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>div-1(or148); GFP-PSF-1; mCherry-Histone H2B</td>\n      <td>This study</td>\n      <td>strain name: KAL60</td>\n      <td>div-1(or148) III; psf-1(lab1) II; ltIs37</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>trul-1\u2206</td>\n      <td>This study</td>\n      <td>strain name: KAL90</td>\n      <td>trul-1\u2206 (lab3 [3134 bp deletion])II</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>trul-1\u2206;div-1(or148)</td>\n      <td>This study</td>\n      <td>strain name: KAL139</td>\n      <td>div-1(or148) III; trul-1(lab3) II</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>trul-1\u2206; GFP-PSF-1; mCherry-Histone H2B</td>\n      <td>This study</td>\n      <td>strain name: KAL92</td>\n      <td>trul-1\u2206 (lab3) psf-1(lab1) II; ltIs37</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens, Female)</td>\n      <td>U-2 OS</td>\n      <td>ATCC</td>\n      <td>Cat# ATCC HTB-96; RRID:CVCL_0042</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens, Female)</td>\n      <td>U-2 OS expressing siRNA-resistant human TRAIP (wild type)</td>\n      <td>Hoffmann et al., 2016 PMID: 26711499</td>\n      <td></td>\n      <td>Generated by group of Niels Mailand, by transfection of U-2 OS cells with plasmid expressing siRNA-resistant human TRAIP (wild type)</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens, Female)</td>\n      <td>U-2 OS expressing siRNA-resistant human TRAIP (\u2206RING - lacking residues 7\u201350)</td>\n      <td>Hoffmann et al., 2016 PMID: 26711499</td>\n      <td></td>\n      <td>Generated by group of Niels Mailand, by transfection of U-2 OS cells with plasmid expressing siRNA-resistant human TRAIP (\u2206RING - lacking residues 7\u201350)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Sheep polyclonal, Ce TRUL-1</td>\n      <td>This study</td>\n      <td>C.e. TRUL-1 (70\u2013291) _MRC PPU Reagents and Services:SA607</td>\n      <td>Raised against residues 70\u2013291 of C.e. TRUL-1 (MRC PPU Reagents and Services); use at 1:1000 for immunoblotting.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Sheep polyclonal, Ce MCM-2</td>\n      <td>Sonneville et al., 2017 PMID: 28368371.</td>\n      <td>C.e. MCM-2 (1\u2013222)_MRC PPU Reagents and Services:S750D</td>\n      <td>Raised against residues 1\u2013222 of C.e. MCM-2 (MRC PPU Reagents and Services); use at 1:3000 for immunoblotting.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Sheep polyclonal, Ce CDC-45</td>\n      <td>Sonneville et al., 2017\u00a0PMID: 28368371.</td>\n      <td>C.e. CDC-45 (1-222)_MRC PPU Reagents and Services: S782D</td>\n      <td>Raised against residues 1\u2013222 of C.e. CDC-45 (MRC PPU Reagents and Services); use at 1:500 for immunoblotting.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Sheep polyclonal, TRAIP</td>\n      <td>Hoffmann et al., 2016 PMID: 26711499</td>\n      <td>Anti-TRAIP (human)</td>\n      <td>Raised against full length human TRAIP (Niels Mailand's group); use at 1:250 for immunoblotting.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Sheep polyclonal, LRR1</td>\n      <td>This paper</td>\n      <td>M.m. LRR1(1\u2013160)_MRC PPU Reagents and Services:SA279</td>\n      <td>Raised against residues 1\u2013160 of M.m. LRR-1 (MRC PPU Reagents and Services); use at 1:250 for immunoblotting.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal, Anti-GAPDH</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# PLA0125</td>\n      <td>Use at 1:1000 for immunoblotting.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal, Anti-Histone H3</td>\n      <td>Abcam</td>\n      <td>Cat# ab1791; RRID:AB-302613</td>\n      <td>Use at 1:2000 for immunoblotting.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal, FANCD2</td>\n      <td>Novus Biologicals</td>\n      <td>Cat# NB100-182; RRID:AB-10002867</td>\n      <td>Use at 1:400 for immunofluorescence.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal, Anti-PICH, clone 142-26-3</td>\n      <td>Millipore</td>\n      <td>Cat# 04\u20131540;RRID:AB-10616795</td>\n      <td>Use at 1:50 for immunofluorescence.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal, 53BP1 (6B3E10)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat# sc-517281</td>\n      <td>Use at 1:500 for immunofluorescence.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat polyclonal, Anti-Mouse IgG (whole molecule)\u2013peroxidase conjugated</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat# A4416; RRID:AB_258167</td>\n      <td>Use at 1:2000 for immunoblotting.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat polyclonal Anti-Rabbit IgG (whole molecule), F(ab\u2032)two fragment\u2212Peroxidase conjugated</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat# A6667; RRID: AB_258307</td>\n      <td>Use at 1:2000 for immunoblotting.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey polyclonal,Anti-Sheep IgG (whole molecule)\u2013Peroxidase conjugated</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat# A3415; RRID:AB_258076</td>\n      <td>Use at 1:2000 for immunoblotting.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat polyclonal, anti-Rabbit IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>\n      <td>Invitrogen</td>\n      <td>Cat# A-11008; RRID:AB_143165</td>\n      <td>Use at 1:1000 for immunofluorescence.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat polyclonal, anti-Rabbit IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 568</td>\n      <td>Invitrogen</td>\n      <td>Cat# A-11011; RRID:AB_143157</td>\n      <td>Use at 1:1000 for immunofluorescence.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat polyclonal, anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>\n      <td>Invitrogen</td>\n      <td>Cat# A-11029; RRID:AB_138404</td>\n      <td>Use at 1:1000 for immunofluorescence.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey polyclonal, anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 568</td>\n      <td>Invitrogen</td>\n      <td>Cat# A-10037; RRID:AB_2534013</td>\n      <td>Use at 1:1000 for immunofluorescence.</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>oligo to genotypetrul-1\u2206: Primer a</td>\n      <td>This study</td>\n      <td></td>\n      <td>5\u2019-ACACCATAGCGATTGTTTCCGG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>oligo to genotypetrul-1\u2206: Primer b</td>\n      <td>This study</td>\n      <td></td>\n      <td>5\u2019-CCGGTGGTTTTTCAGCTTCTCC-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>oligo to genotypetrul-1\u2206: Primer c</td>\n      <td>This study</td>\n      <td></td>\n      <td>5\u2019-GATTCGTGTGGATTTCTGCGGT-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ON-TARGETplusLRR1 siRNA</td>\n      <td>Dharmacon</td>\n      <td>Cat# LQ-016820\u201301</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TRAIP siRNA # 1 (5\u2019-GAACCAUUAUCAAUAAGCU-3')</td>\n      <td>Sigma-Aldrich</td>\n      <td>Custom synthesised</td>\n      <td>Hoffmann et al., 2016 PMID: 26711499</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Click-iT EdU Alexa Fluor 594 Imaging Kit</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat# C10339</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Aphidicolin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# A0781</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RO-3306</td>\n      <td>Millipore</td>\n      <td>Cat# 217699</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image processing using ImageJ software</td>\n      <td>ImageJ software (National Institutes of Health)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism data analysis software</td>\n      <td>Graphpad</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image processing using Fiji software</td>\n      <td>ImageJ</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Lipofectamine RNAimax</td>\n      <td>Life Technologies</td>\n      <td>Cat#13778075</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### C. elegans maintenance\n\nThe C. elegans strains were maintained according to standard procedures (Brenner, 1974) and were grown on \u2018Nematode Growth Medium\u2019 (NGM: 3 g / L NaCl; 2.5 g / L peptone; 20 g / L agar; 5 mg / L cholesterol; 1 mM CaCl2; 1 mM MgSO4; 2.7 g / L KH2PO4; 0.89 g / L K2HPO4). The following worm strains were used: KAL3 psf-1(lab1[gfp::TEV::S-tag::psf-1 + loxP unc-119(+) loxP]); ltIs37[pie-1p::mCherry::his-58 + unc-119(+)] (Sonneville et al., 2017), TG1754 unc-119(ed3) III; gtIs65[pie-1p::gfp::cdc-45 + unc-119(+)]; ltIs37 (Sonneville et al., 2012), TG1756 unc-119(ed3) III; gtIs65[pie-1p::gfp::sld-5 + unc-119(+)]; ltIs37 (Sonneville et al., 2012), TG2368 unc-119(ed3) III; gtIs65[pie-1p::gfp::rpa-1 + unc-119(+)]; ltIs37 (Sonneville et al., 2012), EU548 div-1(or148[P352L]) III (Encalada et al., 2000), EKM36 unc-119(ed3) III; cldIs[pie-1p::gfp::capg-1 + unc-119(+)]; ltIs37 (Collette et al., 2011), TG3828 unc-119(ed3) III; gtIs3828[pie-1p::gfp::kle-2 + unc-119(+)]; ltIs37 (Sonneville et al., 2015).\n\nThe following worm strains were made for this study: KAL60 div-1(or148) III; psf-1(lab1) II; ltIs37 was generated by crossing EU548 with KAL3. KAL90 trul-1\u2206 (lab3 [3134 bp deletion])II was generated using the CRISPR-CAS9 system (NemaMetrix) and trul-1\u2206 worms were out-crossed eight times with the N2 strain. KAL139 div-1(or148) III; trul-1(lab3) II was generated by crossing KAL90 with EU548. KAL92 trul-1\u2206 (lab3) psf-1(lab1) II; ltIs37 resulted from crossing KAL90 and KAL3.\n\n### C.\u00a0elegans progeny viability assay\n\nL4 worms (from a stock maintained at 15\u00b0C) were fed at 15\u00b0C for 72 hr, or at 20\u00b0C for 48 hr, and five adult worms were then transferred to a test plate for 150 min in order to lay embryos. The adult worms were then removed and the total number of embryos was counted (typically around 80 embryos). Subsequently, the number of embryos that developed into viable adults was determined and the embryonic viability was expressed as the ratio between the number of viable embryos and the total number of embryos.\n\n### RNA interference in C. elegans\n\nRNAi was performed by feeding worms with RNAse III-deficient HT115 bacteria transformed with an L4440-derived plasmid that express double-stranded RNA (dsRNA) (Timmons and Fire, 1998). Bacterial culture (grown to OD600\u00a0=\u00a01) was supplemented with 1 mM IPTG to express dsRNA. To titrate rnr-1 RNAi, we mixed bacteria expressing rnr-1 dsRNA with bacteria containing the empty vector. For example to obtain 10% rnr-1 RNAi, 1 vol of culture of bacteria expressing rnr-1 dsRNA was mixed with 9 volumes of control bacterial culture. Subsequently, 400 \u00b5l of bacteria were spread on a 6 cm RNAi plate (3 g / L NaCl, 20 g / L agarose, 5 mg / L cholesterol, 1 mM CaCl2, 1 mM MgSO4, 2.7 g / L KH2PO4, 0.89 g / L K2HPO4, 1 mM IPTG and 100 mg / L Ampicillin) and RNAi was induced overnight at room temperature.\n\nThe plasmids expressing dsRNA were made by cloning PCR products amplified from cDNA into the vector L4440 as described previously: rnr-1 and rpa-1 RNAi in Sonneville et al. (2015); npl-4 and lrr-1 RNAi in Sonneville et al. (2017); trul-1 RNAi in Deng et al. (2019). To target simultaneously rnr-1 + npl-4, rpa-1 + npl-4, rnr-1 + lrr-1 and rpa-1 + lrr-1, DNA fragments corresponding to each gene were cloned contiguously into a single L4440 plasmid. The empty L4440 plasmid was used as a negative control throughout the RNAi experiments in this study.\n\n### Microscopy\n\nWorms at the larval L4 stage were incubated on 6 cm RNAi feeding plates for 48 hr at 20\u00b0C. In the experiment using the div1(or148ts) mutant (Figure 2D\u2013E), all worms were shifted to the restrictive temperature of 25\u00b0C for 24 hr, prior to imaging. For each experimental condition, five embryos were dissected from different worms in M9 medium (6 g / L Na2HPO4, 3 g / L KH2PO4, 5 g / L NaCl, 0.25 g / L MgSO4) and mounted together on a 2% agarose pad. Embryos were then recorded simultaneously at 24\u00b0C, taking images every 10 s with 75% laser power and 200 milliseconds exposure time. Time lapse images were acquired using an Zeiss Cell Observer SD microscope with a Yokogawa CSU-X1 spinning disk, HAMAMATSU C13440 camera, fitted with a PECON incubator, using the ZEN blue software, and then processed with ImageJ software (National Institutes of Health) as previously described (Sonneville et al., 2017).\n\n### Quantification of signal intensity from C. elegans embryos\n\nThe GFP and mCherry signal intensity was evaluated during metaphase using ImageJ software (NIH). For each metaphase set of chromosomes, an area of fixed size was selected around the chromatin, and the integrated density was determined (the sum of the intensity of all pixels in the area). Subsequently, the data were adjusted for the background signal, by subtracting the integrated density of an area of equivalent size from the cytoplasm of the same embryo. The average signal intensity and standard deviation were then determined for five embryos per condition.\n\n### Genotyping worms\n\n10 worms were lysed in 10 \u00b5l of buffer (1X PCR buffer, 1 mM MgCl2, 0.45% Tween-20) supplemented with 1.7 \u03bcg of Proteinase K at 60\u00b0C for 1 hr. The protease was inactivated at 95\u00b0C for 15 min and PCR was then performed using 0.5 \u00b5l lysed worms in a 25 \u00b5l reaction volume using Phusion polymerase (Biolabs). The following oligonucleotides were used to genotype the trul-1\u2206 and wild-type worms (as shown in Figure 2\u2014figure supplement 1): Primer a 5\u2019-ACACCATAGCGATTGTTTCCGG-3\u2019, Primer b 5\u2019-CCGGTGGTTTTTCAGCTTCTCC-3\u2019 and Primer c 5\u2019-GATTCGTGTGGATTTCTGCGGT-3\u2019.\n\n### Extracts of worm embryos\n\nGravid adult worms from two 9 cm NGM plates were collected in M9 buffer and bleached with 10 ml of bleaching solution (for 100 ml: 36.5 ml H2O, 45.5 ml 2 N NaOH and 18 ml ClNaO 4%) for about 8 min to release the embryos. The embryos were then washed twice with M9 buffer, suspended in 150 \u00b5l of M9 buffer and frozen on dry ice. Pellets were thawed and supplemented with 150 \u00b5l of 40% Trichloroacetic acid and 300 \u00b5l of glass beads. The cells were then broken by vortexing for one minute and the supernatant was collected. The beads were washed with 300 \u00b5l of 5% Trichloroacetic acid and the supernatant was added to the previous one. The extracts were then spun at 3000 rpm for 10 min and the pellet was re-suspended in \u2018high pH Laemmli buffer\u2019 (Laemmli buffer supplemented with 0.15 M Tris base).\n\n### Antibodies\n\nThe C. elegans TRUL-1 protein was detected with a sheep polyclonal antibody that was raised against amino acids 70\u2013291 (MRC PPU reagents; SA607), whilst the anti-MCM-2 and anti-CDC-45 antibodies were described previously (Sonneville et al., 2017).\n\nPrimary antibodies specific for human PICH (1:50, 04\u20131540; Millipore), 53BP1 (1:500, sc-517281; Santa Cruz Biotechnology), FANCD2 (1:500, Novus Biologicals; NB100-182), TRAIP (1:250; Hoffmann et al \u2013 see Key Resources Table), GAPDH (1:1000, Sigma Aldrich; PLA0125), Histone H3 (1:2000, abcam; ab1791), were obtained from the indicated supplier. The corresponding secondary antibodies were: anti-mouse IgG (whole molecule peroxidase conjugate, 1:2,000, A4416; Sigma Aldrich), anti-rabbit IgG (whole molecule, F(ab\u2032)two fragment\u2212peroxidase antibody produced in goat (1:2,000, A6667; Sigma Aldrich). Secondary antibodies used for immunofluorescence analysis of human cells were the Alexa Fluor 488 goat anti-rabbit IgG (1:1000, A-11008; Invitrogen), Alexa Fluor 568 goat anti-rabbit IgG (1:1000, A- A-11011; Invitrogen), Alexa Fluor 488 goat anti-mouse IgG (1:1000, A-11029; Invitrogen) and Alexa Fluor 568 donkey anti-mouse IgG (1:1000, A-10037; Invitrogen).\n\n### Human cell culture\n\nU2OS osteosarcoma cells were maintained in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM; Invitrogen, 11960), supplemented with 10% fetal bovine serum (FBS; Invitrogen, 10500) and 1% penicillin-streptomycin-glutamine (P-S-G; Invitrogen, 10378016). U2OS cells stably expressing either wildtype TRAIP (U2OS_TRAIP) or RING domain deleted TRAIP (U2OS_\u2206RING TRAIP) were maintained similarly, except that the medium was supplemented with 5 \u00b5g / ml Blasticidin (Thermo Fisher Scientific, R21001) and 0.2 mg / ml Hygromycin B (Thermo Fisher Scientific, 10687010). All cells were maintained at 37\u00b0C in a humidified atmosphere containing 5% CO2. U2OS cells were obtained from the ATCC, and all cell lines were routinely tested for the absence of mycoplasma contamination (using MycoAlert; Lonza Group Ltd, LT07-318).\n\n### Human cell synchronisation\n\nAsynchronously growing cells were treated with 7 \u00b5M RO-3306 (CDK1 inhibitor) for 12 hr to synchronise/arrest at the G2 phase of the cell cycle. The arrested cells were washed 3 times with warm DMEM medium and were then allowed to progress synchronously for 30 mins into prometaphase. The prometaphase cells were shaken off to be reseeded onto poly-lysine-coated slides, and were then either fixed or allowed to progress for 20 mins (anaphase) or 2.5 hr (G1 phase).\n\n### RNA interference treatment of human cells\n\nHuman TRAIP was depleted with either of two previously validated siRNAs (5\u2019-GAACCAUUAUCAAUAAGCU-3\u2019; 5\u2019-CCGUGAUGAUAUUGAUCUCAA-3\u2019). All siRNAs were custom synthesised by Sigma Aldrich with a 3\u2019dTdT addition. In all transfection experiments, the \u2018Silencer-Select Control siRNA 2\u2019 (4390846, Ambion) was used as a negative control. For transient transfections, cells were seeded 12 hr prior to transfection in culture medium supplemented with FBS. The transfection was performed using lipofectamine RNAi Max reagent (Thermo Fisher Scientific, 13778030) according to the manufacturer\u2019s protocol.\n\n### EdU labelling and detection in human cells\n\nEdU labelling and detection was performed as described previously (Minocherhomji et al., 2015). Click-IT chemistry was performed according to the manufacturer\u2019s instructions, but with a final concentration of 10X of the Click-IT EdU buffer additive (Life Technologies).\n\n### Immunofluorescence\n\nCells on glass cover slips or poly-lysine glass slides were fixed and permeabilised using cold PTEMF buffer (20 mM PIPES, pH 6.8, 10 mM EGTA, 0.2% Triton X-100, 1 mM MgCl2 and 4% formaldehyde) for 20 mins at room temperature followed by blocking with PBSAT (0.5% Triton X in 3% BSA dissolved in PBS) for 20 mins at room temperature. Samples were then incubated with primary antibodies overnight at 4\u00b0C. Excess unbound primary antibody was removed by washing four times with PBSAT for 15 mins each. Samples were then incubated with secondary antibodies for 60 mins at room temperature, followed by four washes with PBSAT for 15 mins each. Air-dried slides or coverslips were mounted using VectaShield mounting medium with DAPI (Vector Laboratories). Images were captured using an Olympus BX63 microscope.\n\n### Statistics and reproducibility\n\nThe experiments were not randomised, no statistical method was used to predetermine sample size, and the investigators were not blinded to allocation during experiments and outcome assessment.\n\nFor C. elegans microscopy experiments, at least five embryos were analysed and seen to behave similarly, unless indicated otherwise. For C. elegans progeny viability assays, three biological replicates (independent experiments) were performed and the data represent the mean embryonic viability and the standard deviation for each condition. The PCR experiment in Figure 2\u2014figure supplement 1B was performed 10 times, whereas the immunoblotting experiments in Figure 2\u2014figure supplement 1B were performed 3 times, and those in Figure 3A were performed twice.\n\nFor work with human cells, at least 45\u201395 cells were examined per sample in the microscopy experiments (as indicated in Figures 3\u20134), and graphical and statistical analysis was carried out using \u2018Prism\u2019 software (GraphPad). At least three biological replicates were performed for each data set, which were then used to generate mean values and standard deviations. Statistical significance of these data was calculated using a Mann\u2013Whitney U test (to minimise the effect of outliers in the data).\n",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "45759186-8ff9-4b20-8b2e-8716d9f2e8ba",
+      "submission_id": "9ffa672f-3856-4a93-b1de-d663d97b2d60",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andr\u00e9s Aguilera, CABIMER, Universidad de Sevilla Spain\n\nReviewers:\n- Dirk Remus, MSKCC United States\n\n## Review text\n\nDOI: [10.7554/eLife.48686.016](https://doi.org/10.7554/eLife.48686.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"TRAIP drives replisome disassembly and mitotic DNA repair synthesis at sites of incomplete DNA replication\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Jessica Tyler as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Dirk Remus (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study investigates the role of TRAIP, a ubiquitin ligase important for genome maintenance, in the cellular response to replication stress. The data show that TRAIP is required for the removal of replisomes from mitotic chromosomes in early C. elegans embryos, in which normal DNA replication fork progression was impaired by RPA or RNR depletion, and that this defect correlates with reduced viability and chromosome segregation defects. The data in human cells show that TRAIP is required for mitotic DNA repair synthesis and for the prevention of anaphase chromosome bridges, which by extension suggests a requirement of stalled replisome disassembly for the completion of DNA replication in mitosis after replication stress, consistent with the models derived from the Xenopus system earlier. This study is of significant importance for the DNA replication and repair fields, providing critical experimental tests of existing hypotheses. A few suggestions are included below to make the manuscript stronger.\n\nEssential revisions:\n\n- It is necessary to quantify the intensity of the protein signal to appreciate differences between mutants that show the same phenotype but to different extents in Figure 1. That would be the case of CMG persistence on mitotic cells in npl-4 RNAi and npl-4 + rnr-1 RNAi cells or the barely detectable mCherry-H2B in rrn-1 RNAi and npl-4 + rnr-1 RNAi cells. Authors could also consider quantifying the amount of CMG components on chromatin during S phase should be quantified to exclude that possibility.\n\n- The authors show convincingly in Figure 2A and B that TRUL-1, but not LRR-1, is necessary to disassemble CMG from chromatin in the presence of replicative stress in rpa-1 or rnr-1 RNAi cells. However, this comparison is not made in Figure 2D in div-1 mutant cells. This comparison is important to confirm previous observations.\n\n- In Figure 3, authors clearly show the role of TRAIP in MiDAS. However, it would be important to link this phenomenon to the CMG disassembly from the chromatin to prove that upon these experimental conditions in U2OS cells, CMG components are retained in chromatin. In addition, TRAIP, but not LRR1, is involved in CMG disassembly when replication is not completed. In that sense, it is also important to show that LRR1 absence does not reduce MiDAS to confirm the observations made in C. elegans.\n\n- There is no evidence that human TRAIP leads to helicase stabilisation on unreplicated or even fully replicated chromatin. Therefore, it is not clear whether the phenotypes observed after TRAIP siRNA in human cells are due to helicase issues or another function of this protein, such as fork progression (Harley et al., 2016 and Hoffman et al., 2016). This could limit the impact of the study, so please discuss how this uncertainty affects your conclusions.\n\n- In C. elegans, TRAIP is required (with lrr-1) for mitotic helicase unloading. The authors show here that failure to unload the helicase in normal cell cycles leads to anaphase bridges (Figure 2\u2014figure supplement 2C). It is therefore unclear whether the genome instability that arises from loss of TRAIP in C. elegans or humans is due to incomplete replication, failure to unload the helicase or some other function of this ligase. It would be good to clarify this further or modify the message accordingly.\n\n- We appreciate that it is difficult to get a graded amount of replication stress in C. elegans, but the three types of stress here (RPA1 Rnai, Rnr1 RNAi and div-1) all give different results with helicase unloading and Trul-1 loss (Figure 2A, B and D). A useful experiment would be to use a titration of a replication inhibitor such as HU (see Brauchle et al., 2003).\n",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "de613772-38db-48cb-8781-f7f65aac2be9",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C1",
+      "claim": "Cells with large genomes sometimes fail to complete replication during interphase and instead enter mitosis with regions of incompletely replicated DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cells with large genomes sometimes fail to complete replication during interphase and instead enter mitosis with regions of incompletely replicated DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information in the abstract, drawing on established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "09ed5a2a-9b88-4c51-bf68-b4323edc3ae6",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C2",
+      "claim": "Regions of incompletely replicated DNA are processed in early mitosis via a process known as mitotic DNA repair synthesis (MiDAS).",
+      "claim_type": "EXPLICIT",
+      "source": "These regions are processed in early mitosis via a process known as mitotic DNA repair synthesis (MiDAS), but little is known about how cells switch from conventional DNA replication to MiDAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "aff8bac2-6be5-4864-9270-bb38fd39111c",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C3",
+      "claim": "The TRAIP ubiquitin ligase drives replisome disassembly in response to incomplete DNA replication in C. elegans early embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the early embryo of the nematode Caenorhabditis elegans as a model system, we show that the TRAIP ubiquitin ligase drives replisome disassembly in response to incomplete DNA replication, thereby providing access to replication forks for other factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "6ac4a573-843c-4082-9ede-572de7537b0e",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C4",
+      "claim": "TRAIP is essential for MiDAS in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TRAIP is essential for MiDAS in human cells, and is important in both systems to prevent mitotic segregation errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "e7fe2ae0-686b-4155-a210-d04ccae71c7c",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C5",
+      "claim": "TRAIP is important to prevent mitotic segregation errors in both C. elegans and human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TRAIP is essential for MiDAS in human cells, and is important in both systems to prevent mitotic segregation errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 2 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "60f28667-616a-4118-bdcc-5447607c9208",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C6",
+      "claim": "TRAIP is a master regulator of the processing of incomplete DNA replication during mitosis in metazoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that TRAIP is a master regulator of the processing of incomplete DNA replication during mitosis in metazoa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "6fda38eb-8939-4eaf-93ef-7767eb373120",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C7",
+      "claim": "In species with genomes larger than about 100 Mb, it becomes increasingly likely that a small number of very late-replicating loci will not have completed DNA replication when cells enter mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in species with genomes larger than about 100 Mb, it becomes increasingly likely that a small number of very late-replicating loci will not have completed DNA replication when cells enter mitosis (Al Mamun et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Al Mamun et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "9050810a-d756-4d88-863e-3d8d288581c2",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C8",
+      "claim": "Metazoa have evolved pathways that quickly process sites of incomplete replication during mitosis to facilitate the completion of chromosome segregation before cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Metazoa have evolved pathways that quickly process sites of incomplete replication during mitosis, in order to facilitate the completion of chromosome segregation before cell division (Bhowmick and Hickson, 2017; Moreno et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Bhowmick and Hickson, 2017 and Moreno et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "f34a1394-19d0-42b6-b979-bff2c2ed2105",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C9",
+      "claim": "In human cells, FANCD2 protein marks sites of unreplicated DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells, factors such as the FANCD2 protein mark sites of unreplicated DNA, and then SLX4-dependent nucleolytic cleavage in mitosis promotes RAD52-dependent DNA repair synthesis (Bhowmick et al., 2016; Minocherhomji et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Bhowmick et al., 2016 and Minocherhomji et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "a73c0004-812c-4685-9f4a-7f7250cafc53",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C10",
+      "claim": "SLX4-dependent nucleolytic cleavage in mitosis promotes RAD52-dependent DNA repair synthesis in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells, factors such as the FANCD2 protein mark sites of unreplicated DNA, and then SLX4-dependent nucleolytic cleavage in mitosis promotes RAD52-dependent DNA repair synthesis (Bhowmick et al., 2016; Minocherhomji et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Bhowmick et al., 2016 and Minocherhomji et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "1e55f1a4-a7cc-4b27-926e-485eb8921592",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C11",
+      "claim": "Common fragile sites are loci prone to breakage and repair, particularly in response to DNA replication stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Loci prone to such breakage and repair, particularly in response to DNA replication stress, include common fragile sites that are defined cytologically as breaks or gaps in metaphase chromosomes (Glover et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Glover et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "4462274a-125f-404e-9175-cb19cabce967",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C12",
+      "claim": "The replisome is assembled at origins of replication once per cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The replisome is assembled at origins of replication once per cell cycle, and is normally disassembled during DNA replication termination (Dewar and Walter, 2017; Maric et al., 2014; Moreno et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Dewar and Walter, 2017; Maric et al., 2014; and Moreno et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "615eea6c-8971-4382-a7fa-2771da9f6fba",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C13",
+      "claim": "The replisome is normally disassembled during DNA replication termination.",
+      "claim_type": "EXPLICIT",
+      "source": "The replisome is assembled at origins of replication once per cell cycle, and is normally disassembled during DNA replication termination (Dewar and Walter, 2017; Maric et al., 2014; Moreno et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Dewar and Walter, 2017; Maric et al., 2014; and Moreno et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "1436a959-c3dd-4241-8cc5-181da0dd49e5",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C14",
+      "claim": "Replisome disassembly is an active process initiated by ubiquitylation of the CMG helicase via the ubiquitin ligase CUL-2LRR-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Replisome disassembly is an active process, which is initiated by ubiquitylation of the CMG helicase via the ubiquitin ligase CUL-2LRR-1 (Dewar et al., 2017; Sonneville et al., 2017), leading to disassembly by the Cdc48 segregase and its essential co-factors Ufd1 and Npl4 (Franz et al., 2011; Maric et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Dewar et al., 2017 and Sonneville et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "73f414a8-4bf6-4fdc-beed-e4769641e5f7",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C15",
+      "claim": "CMG helicase ubiquitylation leads to disassembly by the Cdc48 segregase and its essential co-factors Ufd1 and Npl4.",
+      "claim_type": "EXPLICIT",
+      "source": "Replisome disassembly is an active process, which is initiated by ubiquitylation of the CMG helicase via the ubiquitin ligase CUL-2LRR-1 (Dewar et al., 2017; Sonneville et al., 2017), leading to disassembly by the Cdc48 segregase and its essential co-factors Ufd1 and Npl4 (Franz et al., 2011; Maric et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Franz et al., 2011 and Maric et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "0c950aea-4e81-46b6-92f5-193312c75178",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C16",
+      "claim": "A mitotic pathway for CMG disassembly requires CDC-48_UFD-1_NPL-4 and can remove post-termination replisomes that escape the normal disassembly process during S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the early embryo of C. elegans as a model system, we previously identified a mitotic pathway for CMG disassembly that also requires CDC-48_UFD-1_NPL-4, and is able to remove any post-termination replisomes that escape the normal disassembly process during S-phase (Sonneville et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to previous work by the authors, supported by a citation to Sonneville et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "47b568ab-87aa-4c68-a4c0-62f8ab320e2d",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C17",
+      "claim": "The mitotic pathway for replisome disassembly requires a ubiquitin ligase known as TRAIP.",
+      "claim_type": "EXPLICIT",
+      "source": "This mitotic pathway for replisome disassembly requires a ubiquitin ligase known as TRAIP (Deng et al., 2019; Priego Moreno et al., 2019), which is important for genome integrity in human cells (Feng et al., 2016; Harley et al., 2016; Hoffmann et al., 2016; Soo Lee et al., 2016) and is required to remove the replisome from converged DNA replication forks during the repair of inter-strand DNA crosslinks in extracts of Xenopus laevis eggs (Wu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Deng et al., 2019 and Priego Moreno et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "4428ef0d-d714-44cf-99a6-30efc287b022",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C18",
+      "claim": "TRAIP is important for genome integrity in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This mitotic pathway for replisome disassembly requires a ubiquitin ligase known as TRAIP (Deng et al., 2019; Priego Moreno et al., 2019), which is important for genome integrity in human cells (Feng et al., 2016; Harley et al., 2016; Hoffmann et al., 2016; Soo Lee et al., 2016) and is required to remove the replisome from converged DNA replication forks during the repair of inter-strand DNA crosslinks in extracts of Xenopus laevis eggs (Wu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Feng et al., 2016; Harley et al., 2016; Hoffmann et al., 2016; and Soo Lee et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "4d0130c7-dd8a-4cf2-a6e8-9a643de0e8cc",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C19",
+      "claim": "TRAIP is required to remove the replisome from converged DNA replication forks during the repair of inter-strand DNA crosslinks in extracts of Xenopus laevis eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "This mitotic pathway for replisome disassembly requires a ubiquitin ligase known as TRAIP (Deng et al., 2019; Priego Moreno et al., 2019), which is important for genome integrity in human cells (Feng et al., 2016; Harley et al., 2016; Hoffmann et al., 2016; Soo Lee et al., 2016) and is required to remove the replisome from converged DNA replication forks during the repair of inter-strand DNA crosslinks in extracts of Xenopus laevis eggs (Wu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "1f16bae1-2a12-4711-b08c-9ce0edeb152e",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C20",
+      "claim": "Addition of mitotic cyclin-dependent kinase to Xenopus egg extracts induces TRAIP-dependent replisome disassembly even when DNA replication is incomplete.",
+      "claim_type": "EXPLICIT",
+      "source": "Very recently, it was shown that addition of mitotic cyclin-dependent kinase to Xenopus egg extracts induces TRAIP-dependent replisome disassembly (Deng et al., 2019; Priego Moreno et al., 2019), even when DNA replication is incomplete, and leads to fork breakage and DNA rearrangements (Deng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Deng et al., 2019 and Priego Moreno et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "ec72d3ab-e2f0-4dd4-b711-77e24de0d1e6",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C21",
+      "claim": "TRAIP-dependent replisome disassembly in Xenopus egg extracts leads to fork breakage and DNA rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "Very recently, it was shown that addition of mitotic cyclin-dependent kinase to Xenopus egg extracts induces TRAIP-dependent replisome disassembly (Deng et al., 2019; Priego Moreno et al., 2019), even when DNA replication is incomplete, and leads to fork breakage and DNA rearrangements (Deng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Deng et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "9d2efd5b-49a4-4150-9700-fcd7f48ee38e",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C22",
+      "claim": "The S-phase checkpoint response to replication stress is attenuated in the C. elegans early embryo, such that mitotic entry is delayed but not blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the C. elegans early embryo provides a useful model system in this regard, since the checkpoint response to replication stress is attenuated, such that mitotic entry is delayed but not blocked (Brauchle et al., 2003; Encalada et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Brauchle et al., 2003 and Encalada et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "59eabebc-65e0-47e4-8847-064142577d21",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C23",
+      "claim": "Chromosome condensation during prophase of the first mitotic cell cycle was impaired after depletion of RPA-1.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown previously (Sonneville et al., 2015), chromosome condensation during prophase of the first mitotic cell cycle was impaired after depletion of RPA-1 (Figure 1C, Figure 1\u2014figure supplement 1B), reflecting mitotic entry in the presence of incomplete DNA replication.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 1B, and is consistent with previous findings cited as Sonneville et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "20b0f82a-c516-4aef-8627-a05d7afbb038",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C24",
+      "claim": "Impaired chromosome condensation after RPA-1 depletion reflects mitotic entry in the presence of incomplete DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown previously (Sonneville et al., 2015), chromosome condensation during prophase of the first mitotic cell cycle was impaired after depletion of RPA-1 (Figure 1C, Figure 1\u2014figure supplement 1B), reflecting mitotic entry in the presence of incomplete DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental observation, drawing on established knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "219b5fa6-980f-400a-9c95-598370ac01dd",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C25",
+      "claim": "After RPA-1 depletion, chromatin aligned on the metaphase plate, but anaphase was impaired due to multiple chromatin bridges.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromatin subsequently aligned on the metaphase plate, but anaphase was impaired due to multiple chromatin bridges (Figure 1C, Figure 1\u2014figure supplement 1B; compare rpa-1 RNAi with control).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "84d0ff62-9978-4f8b-aaea-1f597e4db662",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C26",
+      "claim": "Components of the CMG helicase (PSF-1, SLD-5, and CDC-45) were not detected on partially replicated chromatin during mitosis after RPA-1 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, components of the CMG helicase, such as the GINS subunits PSF-1 and SLD-5, and the CDC-45 protein, were not detected on the partially replicated chromatin during mitosis (Figure 1C\u2013D, metaphase; Figure 1\u2014figure supplement 1C\u2013D,F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C\u2013D and Figure 1\u2014figure supplement 1C\u2013D,F\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "531474c4-9b4a-43d4-8a80-90e590bfad5e",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C27",
+      "claim": "The absence of CMG components on mitotic chromatin after RPA-1 depletion reflects active disassembly of the CMG helicase by the CDC-48_UFD-1_NPL-4 segregase.",
+      "claim_type": "EXPLICIT",
+      "source": "This reflected active disassembly of the CMG helicase by the CDC-48_UFD-1_NPL-4 segregase, since CMG components were retained on mitotic chromatin when NPL-4 and RPA-1 were depleted simultaneously (Figure 1B\u2013D; Figure 1\u2014figure supplement 1A,C\u2013D,F\u2013H; note that npl-4 depletion also induced chromatin bridges, reflecting the multiple roles of CDC-48_UFD-1_NPL-4 during the cell cycle, including during mitosis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data showing that CMG components persist when NPL-4 is co-depleted with RPA-1, as shown in Figure 1B\u2013D and Figure 1\u2014figure supplement 1A,C\u2013D,F\u2013H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "09ad6631-402b-4e7c-862f-c9de2b266c3b",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C28",
+      "claim": "The replisome is disassembled before metaphase when DNA replication is perturbed in the C. elegans early embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the replisome is disassembled before metaphase when DNA replication is perturbed in the C. elegans early embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "bc64e349-1adc-4d71-bd1a-9ffef91978e0",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C29",
+      "claim": "Depletion of ribonucleotide reductase via RNAi against rnr-1 produces a profound defect in DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm the link between replisome disassembly and incomplete DNA replication, we depleted ribonucleotide reductase via RNAi against rnr-1 and thus depleted dNTPs. This produced a profound defect in DNA replication (Sonneville et al., 2015), as reflected by greatly impaired chromosome condensation during prophase (Figure 1C, Figure 1\u2014figure supplement 1B; Figure 1\u2014figure supplement 2A\u2013B show that condensin II was not detected on mitotic chromatin after RNR-1 depletion).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C, Figure 1\u2014figure supplement 1B, and Figure 1\u2014figure supplement 2A\u2013B, and is consistent with previous findings cited as Sonneville et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "262d99fd-21aa-4160-a7ba-af1b993554da",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C30",
+      "claim": "RPA accumulated on metaphase chromatin after RNR-1 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "RPA accumulated on metaphase chromatin under such conditions (Figure 1D; Figure 1\u2014figure supplement 1F), and chromosome segregation during anaphase was severely defective, thus blocking the subsequent reformation of the nuclear envelope (Figure 1C; 5 of 5 embryos examined behaved the same).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D and Figure 1\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "9265d3fe-13f7-495a-a7a2-6f427d0f219b",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C31",
+      "claim": "Chromosome segregation during anaphase was severely defective after RNR-1 depletion, blocking the subsequent reformation of the nuclear envelope.",
+      "claim_type": "EXPLICIT",
+      "source": "RPA accumulated on metaphase chromatin under such conditions (Figure 1D; Figure 1\u2014figure supplement 1F), and chromosome segregation during anaphase was severely defective, thus blocking the subsequent reformation of the nuclear envelope (Figure 1C; 5 of 5 embryos examined behaved the same).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C, with 5 of 5 embryos showing the same behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "a0e9722a-e5ff-41e9-8b0f-b1097fcff420",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C32",
+      "claim": "CMG components were not detected on mitotic chromatin following rnr-1 RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "CMG components were not detected on mitotic chromatin following rnr-1 RNAi, mirroring the defect seen after depletion of RPA-1, and this was due to active disassembly of the replisome by CDC-48_UFD-1_NPL-4, since CMG components persisted on mitotic chromatin in embryos treated with rnr-1 npl-4 double RNAi (Figure 1C\u2013D, Figure 1\u2014figure supplement 1C\u2013D,F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C\u2013D and Figure 1\u2014figure supplement 1C\u2013D,F\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "2cdf5396-2a5b-4448-b924-412d23fdc25a",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C33",
+      "claim": "The absence of CMG components on mitotic chromatin after rnr-1 RNAi is due to active disassembly of the replisome by CDC-48_UFD-1_NPL-4.",
+      "claim_type": "EXPLICIT",
+      "source": "CMG components were not detected on mitotic chromatin following rnr-1 RNAi, mirroring the defect seen after depletion of RPA-1, and this was due to active disassembly of the replisome by CDC-48_UFD-1_NPL-4, since CMG components persisted on mitotic chromatin in embryos treated with rnr-1 npl-4 double RNAi (Figure 1C\u2013D, Figure 1\u2014figure supplement 1C\u2013D,F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data showing that CMG components persist when NPL-4 is co-depleted with RNR-1, as shown in Figure 1C\u2013D and Figure 1\u2014figure supplement 1C\u2013D,F\u2013H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "34425f42-61de-4cd9-8afc-8b8814b5d52e",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C34",
+      "claim": "The mCherry-H2B signal was barely detectable throughout mitosis upon co-depletion of RNR-1 and NPL-4.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mCherry-H2B signal was barely detectable throughout mitosis upon co-depletion of RNR-1 and NPL-4 (Figure 1C\u2013D, Figure 1\u2014figure supplement 1E), and this reflected the absence from mitotic chromatin of both condensin II and condensin I (Figure 1\u2014figure supplement 2; note that condensin II normally associates with mitotic chromatin during prophase, whereas condensin I is loaded during metaphase).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C\u2013D, Figure 1\u2014figure supplement 1E, and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "dfc85237-fedd-44d8-b458-a94c8eb6573f",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C35",
+      "claim": "The weak mCherry-H2B signal upon co-depletion of RNR-1 and NPL-4 reflected the absence from mitotic chromatin of both condensin II and condensin I.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mCherry-H2B signal was barely detectable throughout mitosis upon co-depletion of RNR-1 and NPL-4 (Figure 1C\u2013D, Figure 1\u2014figure supplement 1E), and this reflected the absence from mitotic chromatin of both condensin II and condensin I (Figure 1\u2014figure supplement 2; note that condensin II normally associates with mitotic chromatin during prophase, whereas condensin I is loaded during metaphase).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "4bfbb486-2e52-4803-8fa6-cf32b7959122",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C36",
+      "claim": "Persistence of the CMG helicase at replication forks supports continued slow progression of the replisome throughout the genome, uncoupled from DNA synthesis, thereby unwinding the parental DNA duplex and displacing parental histones from unreplicated chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Most likely, the persistence of the CMG helicase at replication forks supported continued slow progression of the replisome throughout the genome, uncoupled from DNA synthesis, thereby unwinding the parental DNA duplex and displacing parental histones from unreplicated chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "c7e1b787-532c-4b5e-b867-6b370c65cf9e",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C37",
+      "claim": "Homozygous trul-1\u2206 worms are viable.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, homozygous trul-1\u2206 worms are viable, in contrast to the lethality of previously reported deletions of TRAIP orthologues in the mouse and in Drosophila (Merkle et al., 2009; Park et al., 2007), probably reflecting the small number of cell divisions in the C. elegans life cycle and the relatively small size of the worm genome (around 100 Mb, compared to about 180 Mb in Drosophila and 1,500 Mb in mouse).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "45119713-8e04-49d3-a48d-f58ec1fa303e",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C38",
+      "claim": "Deletions of TRAIP orthologues in the mouse and in Drosophila are lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, homozygous trul-1\u2206 worms are viable, in contrast to the lethality of previously reported deletions of TRAIP orthologues in the mouse and in Drosophila (Merkle et al., 2009; Park et al., 2007), probably reflecting the small number of cell divisions in the C. elegans life cycle and the relatively small size of the worm genome (around 100 Mb, compared to about 180 Mb in Drosophila and 1,500 Mb in mouse).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Merkle et al., 2009 and Park et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "e16402e7-6884-4d32-b498-06a6eb6f0b6d",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C39",
+      "claim": "The viability of homozygous trul-1\u2206 worms probably reflects the small number of cell divisions in the C. elegans life cycle and the relatively small size of the worm genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, homozygous trul-1\u2206 worms are viable, in contrast to the lethality of previously reported deletions of TRAIP orthologues in the mouse and in Drosophila (Merkle et al., 2009; Park et al., 2007), probably reflecting the small number of cell divisions in the C. elegans life cycle and the relatively small size of the worm genome (around 100 Mb, compared to about 180 Mb in Drosophila and 1,500 Mb in mouse).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental observation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "4d4eee75-2db0-46e3-80e3-468d6f2fc890",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C40",
+      "claim": "RNAi depletion of LRR-1 in trul-1\u2206 worms caused the persistence of the CMG helicase on mitotic chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell cycle progression appeared normal in homozygous trul-1\u2206 embryos (see below, Figure 2\u2014figure supplement 4), but RNAi depletion of LRR-1 in trul-1\u2206 worms caused the persistence of the CMG helicase on mitotic chromatin (Figure 2\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "09c1778d-969c-41f1-bde8-f118efbfe55c",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C41",
+      "claim": "TRUL-1 is required for the mitotic pathway that disassembles post-termination replisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar observation was made using lrr-1 trul-1 double RNAi (Deng et al., 2019), confirming that TRUL-1 is required for the mitotic pathway that disassembles post-termination replisomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and is consistent with findings cited as Deng et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "9faba21d-3077-4f4b-ac17-74fdb7286f7c",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C42",
+      "claim": "LRR-1 depletion in trul-1\u2206 worms led to the appearance of anaphase DNA bridges in the early embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, LRR-1 depletion in trul-1\u2206 worms led to the appearance of anaphase DNA bridges in the early embryo (Figure 2\u2014figure supplement 2C), indicating that the S-phase and mitotic pathways for replisome disassembly are jointly important for the preservation of genome integrity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "536743af-ad2f-498d-96a4-5a9ea8e25cec",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C43",
+      "claim": "The S-phase and mitotic pathways for replisome disassembly are jointly important for the preservation of genome integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, LRR-1 depletion in trul-1\u2206 worms led to the appearance of anaphase DNA bridges in the early embryo (Figure 2\u2014figure supplement 2C), indicating that the S-phase and mitotic pathways for replisome disassembly are jointly important for the preservation of genome integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "fb7cfcf2-56d2-41de-bbc2-c61f3fb028ed",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C44",
+      "claim": "CMG persisted on mitotic chromatin when RPA-1 was depleted in the absence of TRAIP.",
+      "claim_type": "EXPLICIT",
+      "source": "By exposing control and trul-1\u2206 worms to rpa-1 RNAi, we observed that CMG persisted on mitotic chromatin when RPA-1 was depleted in the absence of TRAIP (Figure 2A, Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "8e6a1207-d90c-40e7-86b1-7035ee6ce3b9",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C45",
+      "claim": "rpa-1 lrr-1 double RNAi did not prevent replisome disassembly in wild type worms, and was equivalent to rpa-1 single RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, rpa-1 lrr-1 double RNAi did not prevent replisome disassembly in wild type worms, and was equivalent to rpa-1 single RNAi (Figure 2A, Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "699e0095-5ced-46ce-8191-fcb738504624",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C46",
+      "claim": "Replisome disassembly following RPA-1 depletion requires TRAIP, but is independent of the CUL-2LRR-1 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicated that replisome disassembly following RPA-1 depletion requires TRAIP, but is independent of the CUL-2LRR-1 pathway that acts when two converging replication forks encounter each other during DNA replication termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 2A and Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "844691fe-13a7-43ce-bea3-20256ded38f0",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C47",
+      "claim": "The CMG helicase accumulated on mitotic chromatin following rnr-1 RNAi in trul-1\u2206 worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we observed that the CMG helicase accumulated on mitotic chromatin following rnr-1 RNAi in trul-1\u2206 worms. However, this effect was enhanced in combination with lrr-1 RNAi (Figure 2B, Figure 2\u2014figure supplement 3B; compare rnr-1 RNAi and rnr-1 lrr-1 double RNAi in trul-1\u2206).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "e554f6e1-51d4-4e98-875b-38fe61750ef6",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C48",
+      "claim": "The accumulation of CMG helicase on mitotic chromatin following rnr-1 RNAi in trul-1\u2206 worms was enhanced in combination with lrr-1 RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we observed that the CMG helicase accumulated on mitotic chromatin following rnr-1 RNAi in trul-1\u2206 worms. However, this effect was enhanced in combination with lrr-1 RNAi (Figure 2B, Figure 2\u2014figure supplement 3B; compare rnr-1 RNAi and rnr-1 lrr-1 double RNAi in trul-1\u2206).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "1c860baf-5469-473e-9174-60fb33136cae",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C49",
+      "claim": "mCherry-H2B on condensing chromatin was barely detectable throughout mitosis after rnr-1 lrr-1 double RNAi in trul-1\u2206 worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mCherry-H2B on condensing chromatin was barely detectable throughout mitosis after rnr-1 lrr-1 double RNAi in trul-1\u2206 worms, equivalent to the effect of rnr-1 npl-4 double RNAi as discussed above (Figure 2B, Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "eab01880-028f-4f63-a081-ccc47d6ae36d",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C50",
+      "claim": "TRUL-1 normally mediates replisome disassembly following rnr-1 RNAi, probably during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the notion that TRUL-1 normally mediates replisome disassembly following rnr-1 RNAi, probably during mitosis (equivalent to TRAIP-dependent mitotic disassembly of post-termination replisomes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "73a56606-16fc-4d3f-b9be-dcd23ff4aa05",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C51",
+      "claim": "Continued replisome progression in the absence of TRUL-1 allows some forks to converge, thereby leading to disassembly via the CUL-2LRR-1 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "However, continued replisome progression in the absence of TRUL-1 allows some forks to converge, thereby leading to disassembly via the CUL-2LRR-1 pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "8e21e808-1575-4f81-9708-b037ab9bde3f",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C52",
+      "claim": "The viability of div-1 or trul-1\u2206 single mutants was close to that of the wild type control at the semi-permissive temperature of 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the viability of div-1 or trul-1\u2206 single mutants was close to that of the wild type control at the semi-permissive temperature of 20\u00b0C, the combination of trul-1\u2206 with div-1 at 20\u00b0C produced synthetic lethality in around 50% of embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "a5e25916-b04b-4464-9dfb-767691a09460",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C53",
+      "claim": "The combination of trul-1\u2206 with div-1 at 20\u00b0C produced synthetic lethality in around 50% of embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the viability of div-1 or trul-1\u2206 single mutants was close to that of the wild type control at the semi-permissive temperature of 20\u00b0C, the combination of trul-1\u2206 with div-1 at 20\u00b0C produced synthetic lethality in around 50% of embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "2e5e5715-2838-4acc-b2d2-c8965e55c395",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C54",
+      "claim": "The synthetic lethality of trul-1\u2206 div-1 double mutants at 20\u00b0C was suppressed by growth at the permissive temperature of 15\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "This synthetic lethality was suppressed by growth at the permissive temperature of 15\u00b0C (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "181eec90-b5ed-4c5b-81ee-eab93ad40a26",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C55",
+      "claim": "C. elegans TRAIP is important for worms to survive DNA replication stress.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicated that C. elegans TRAIP is important for worms to survive DNA replication stress, though TRUL-1 is dispensable in unperturbed cell cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "66fd5db9-4085-48dd-8b10-e6d09dbf0d42",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C56",
+      "claim": "TRUL-1 is dispensable in unperturbed cell cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicated that C. elegans TRAIP is important for worms to survive DNA replication stress, though TRUL-1 is dispensable in unperturbed cell cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "bb303abc-b708-42cf-9de1-07cb4ca25bf0",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C57",
+      "claim": "Depletion of TRUL-1 led to an accumulation of mitotic chromatin bridges in the div-1 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2D\u2013E, depletion of TRUL-1 led to an accumulation of mitotic chromatin bridges in the div-1 mutant (red arrows in Figure 2D), indicating that TRAIP is important for chromosome integrity in response to replication stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "0232d708-3870-48df-a082-e3f78ed43b40",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C58",
+      "claim": "TRAIP is important for chromosome integrity in response to replication stress.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2D\u2013E, depletion of TRUL-1 led to an accumulation of mitotic chromatin bridges in the div-1 mutant (red arrows in Figure 2D), indicating that TRAIP is important for chromosome integrity in response to replication stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 2D\u2013E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "1e73dddd-e859-42d9-a4b9-0be48414fcee",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C59",
+      "claim": "In the second embryonic cell cycle, the effect of TRUL-1 depletion on chromatin bridges was greatest (around 90% of embryos, n = 18) in the anterior AB cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second embryonic cell cycle, the effect was greatest (around 90% of embryos, n = 18) in the anterior AB cell (Figure 1A), which is known to have a weak S-phase checkpoint and thus is vulnerable to entering mitosis with persistent DNA replication stress (Brauchle et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data with n = 18 embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "f2d458f9-a95d-4d0a-954a-ca74ae516a9f",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C60",
+      "claim": "The AB cell is known to have a weak S-phase checkpoint and thus is vulnerable to entering mitosis with persistent DNA replication stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second embryonic cell cycle, the effect was greatest (around 90% of embryos, n = 18) in the anterior AB cell (Figure 1A), which is known to have a weak S-phase checkpoint and thus is vulnerable to entering mitosis with persistent DNA replication stress (Brauchle et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Brauchle et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "5f113c53-23cc-45d0-8003-5789f2d7d4dc",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C61",
+      "claim": "Chromatin bridges were observed less frequently in the posterior P1 cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, chromatin bridges were observed less frequently in the posterior P1 cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "6b5efe35-a380-4d28-b8b8-9f3e0164fa67",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C62",
+      "claim": "The P1 cell has an enhanced checkpoint response which greatly delays mitosis in response to replication stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This cell has an enhanced checkpoint response (Brauchle et al., 2003), which greatly delays mitosis in response to replication stress (Figure 2\u2014figure supplement 4), thereby providing more time to complete genome duplication.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by a citation to Brauchle et al., 2003 and experimental data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "b76a8def-3988-40ce-97d0-984c4bba0431",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C63",
+      "claim": "Chromosome condensation during prophase was partially defective in the AB cell but not the P1 cell of the div-1(or148ts) mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "By carefully examining mitotic progression, we observed that chromosome condensation during prophase was partially defective in the AB cell but not the P1 cell of the div-1(or148ts) mutant, and this defect was exacerbated by depletion of TRUL-1 (Figure 2D, white arrows; Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D and Figure 2\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "ae795bfe-f161-4b75-bf9a-c439408f7b0c",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C64",
+      "claim": "The defect in chromosome condensation during prophase in the AB cell of the div-1(or148ts) mutant was exacerbated by depletion of TRUL-1.",
+      "claim_type": "EXPLICIT",
+      "source": "By carefully examining mitotic progression, we observed that chromosome condensation during prophase was partially defective in the AB cell but not the P1 cell of the div-1(or148ts) mutant, and this defect was exacerbated by depletion of TRUL-1 (Figure 2D, white arrows; Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D and Figure 2\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "7b4cb725-c653-4607-9499-c3d270faaa51",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C65",
+      "claim": "The AB cell of the div-1(or148ts) mutant enters mitosis before replication has been completed.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the AB cell of the div-1(or148ts) mutant enters mitosis before replication has been completed, and that TRUL-1 becomes important for the preservation of chromosome integrity under those conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "0199ee76-3838-41fb-81fe-522595a500bc",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C66",
+      "claim": "TRUL-1 becomes important for the preservation of chromosome integrity when the AB cell enters mitosis before replication has been completed.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the AB cell of the div-1(or148ts) mutant enters mitosis before replication has been completed, and that TRUL-1 becomes important for the preservation of chromosome integrity under those conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "300b7a7a-e736-4608-93df-35b12e6524b7",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C67",
+      "claim": "Exposure of worms to 100% rnr-1 RNAi caused a profound defect in condensation during prophase and severe chromatin bridges during anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the exposure of worms to 100% rnr-1 RNAi caused a profound defect in condensation during prophase, and severe chromatin bridges during anaphase (Figure 2\u2014figure supplement 5B, reproducing the phenotype shown in Figure 1C), mitosis progressed normally in most control embryos exposed to 10% rnr-1 RNAi (Figure 2\u2014figure supplement 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "b7a37d08-2991-47a7-b8f0-75b1456784d6",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C68",
+      "claim": "Mitosis progressed normally in most control embryos exposed to 10% rnr-1 RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the exposure of worms to 100% rnr-1 RNAi caused a profound defect in condensation during prophase, and severe chromatin bridges during anaphase (Figure 2\u2014figure supplement 5B, reproducing the phenotype shown in Figure 1C), mitosis progressed normally in most control embryos exposed to 10% rnr-1 RNAi (Figure 2\u2014figure supplement 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "174e1037-c64e-4cd7-bdf2-549586966bc8",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C69",
+      "claim": "Exposure of trul-1\u2206 worms to 10% rnr-1 RNAi led to impaired condensation during prophase and chromatin bridges during anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, exposure of trul-1\u2206 worms to 10% rnr-1 RNAi led to impaired condensation during prophase and chromatin bridges during anaphase (Figure 2\u2014figure supplement 5C\u2013E), thus reproducing the effect of combining trul-1 RNAi with the div-1(or148ts) mutant (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 5C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "c09ac433-98ac-4d28-8ab8-865284878946",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C70",
+      "claim": "TRUL-1 helps to preserve genome integrity in C. elegans when cells enter mitosis in the presence of incomplete DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our earlier findings (Deng et al., 2019), these data indicated that TRUL-1 helps to preserve genome integrity in C. elegans, when cells enter mitosis in the presence of incomplete DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and previous findings cited as Deng et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "00978802-916e-4f74-becb-abdad679960e",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C71",
+      "claim": "Depletion of TRAIP with either of two different siRNAs suppressed the appearance of both FANCD2 and EdU foci in human U2OS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, depletion of TRAIP with either of two different siRNAs suppressed the appearance of both FANCD2 and EdU foci (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "49098a25-428b-454b-82aa-916a9c2eef3c",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C72",
+      "claim": "The defect in FANCD2 and EdU foci after TRAIP depletion was rescued by ectopic expression of an siRNA-resistant version of wild type TRAIP.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this defect was rescued by ectopic expression of an siRNA-resistant version of wild type TRAIP, but not by expression of mutant TRAIP that lacked a functional RING domain, which links the E3 ligase to its cognate E2 enzymes (Figure 3F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "a41d0cc6-6fd8-4229-8f62-3480ca5dae3d",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C73",
+      "claim": "Expression of mutant TRAIP that lacked a functional RING domain did not rescue the defect in FANCD2 and EdU foci after TRAIP depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this defect was rescued by ectopic expression of an siRNA-resistant version of wild type TRAIP, but not by expression of mutant TRAIP that lacked a functional RING domain, which links the E3 ligase to its cognate E2 enzymes (Figure 3F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "647fcf2d-7b2c-41e4-b953-f5be5969cd0a",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C74",
+      "claim": "The ubiquitin ligase activity of TRAIP is required upstream of FANCD2 recruitment for mitotic DNA repair synthesis at sites of incomplete DNA replication in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicated that the ubiquitin ligase activity of TRAIP is required upstream of FANCD2 recruitment for mitotic DNA repair synthesis at sites of incomplete DNA replication in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "310ac98e-910e-4f6e-b094-d70b03d5d0ea",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C75",
+      "claim": "Depletion of LRR1 in human U2OS cells did not impair MiDAS.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, depletion of LRR1 in human U2OS cells did not impair MiDAS (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "ae9df56a-8959-4009-ada0-79a7cc38f9c8",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C76",
+      "claim": "siRNA depletion of TRAIP in human cells led to an increase in anaphase DNA bridges.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the C. elegans data described above, siRNA depletion of TRAIP in human cells led to an increase in anaphase DNA bridges, as well as ultrafine anaphase bridges coated with the PICH ATPase (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "6e8e83ae-f890-4d6d-89d5-db214dc447c2",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C77",
+      "claim": "siRNA depletion of TRAIP in human cells led to an increase in ultrafine anaphase bridges coated with the PICH ATPase.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the C. elegans data described above, siRNA depletion of TRAIP in human cells led to an increase in anaphase DNA bridges, as well as ultrafine anaphase bridges coated with the PICH ATPase (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "ddeb22df-a49e-4a07-ae32-23ca6ec460ff",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C78",
+      "claim": "Ultrafine anaphase bridges coated with the PICH ATPase generally represent sites where incomplete DNA replication remains unresolved during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the latter structures generally represent sites where incomplete DNA replication remains unresolved during mitosis (Bhowmick and Hickson, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Bhowmick and Hickson, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "a5d3bd82-2f67-432d-99ad-d69146a022b8",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C79",
+      "claim": "Cells in the subsequent G1-phase had an increased frequency of 53BP1 bodies after TRAIP depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cells in the subsequent G1-phase had an increased frequency of 53BP1 bodies (Figure 4C), which mark the persistence of sites of incomplete DNA replication from the previous cell cycle (Lukas et al., 2011; Minocherhomji et al., 2015; Moreno et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "795ede43-42e7-4dbc-92fe-0f2c74e25ef7",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C80",
+      "claim": "53BP1 bodies mark the persistence of sites of incomplete DNA replication from the previous cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cells in the subsequent G1-phase had an increased frequency of 53BP1 bodies (Figure 4C), which mark the persistence of sites of incomplete DNA replication from the previous cell cycle (Lukas et al., 2011; Minocherhomji et al., 2015; Moreno et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Lukas et al., 2011; Minocherhomji et al., 2015; and Moreno et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "584b0198-80c6-4235-80aa-9f60c6ffcfe1",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C81",
+      "claim": "G1-phase cells showed increased chromosomal instability in the form of micronuclei after TRAIP depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, G1-phase cells also showed increased chromosomal instability in the form of micronuclei (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "9496fc7f-3aca-4cf5-8398-5ca8caa68097",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C82",
+      "claim": "All phenotypes associated with TRAIP depletion were rescued by expression of an siRNA-resistant form of TRAIP.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these phenotypes were rescued by expression of an siRNA-resistant form of TRAIP (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "dca8937a-fc63-4461-b2f8-daf90ae53b85",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C83",
+      "claim": "TRAIP is important for metazoan cells to process incomplete DNA replication during mitosis, thus preserving genome integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings confirm that TRAIP is important for metazoan cells to process incomplete DNA replication during mitosis, thus preserving genome integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "3242a8e4-bc7a-4f81-b2ce-8d74f3e67f77",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C84",
+      "claim": "DNA replication in some parts of the genome can extend almost to the point of cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas S-phase was traditionally thought to end before the G2-phase of the cell cycle, it now appears that DNA replication in some parts of the genome can extend almost to the point of cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current understanding in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "29623af5-2367-4f47-8123-791f23596921",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C85",
+      "claim": "Extremely late replicating regions of the genome include common fragile sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Such extremely late replicating regions of the genome include common fragile sites, but might also correspond to areas where two converging replication forks have both stalled in a region that lacks intervening dormant origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current understanding in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "3a6d787c-a0f2-4865-badf-8321353b47af",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C86",
+      "claim": "TRAIP activity during mitosis promotes replisome disassembly at any remaining replication forks, thus exposing the parental DNA at the junction of the fork.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with recent findings (Deng et al., 2019; Priego Moreno et al., 2019), our data indicate that TRAIP activity during mitosis promotes replisome disassembly at any remaining replication forks, thus exposing the parental DNA at the junction of the fork (we cannot exclude that TRAIP also has other important targets during mitosis, in addition to CMG).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and recent findings cited as Deng et al., 2019 and Priego Moreno et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "8401ad7b-099e-4431-b04e-53bf841ff1f2",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C87",
+      "claim": "Replisome disassembly by TRAIP leads to nucleolytic cleavage and mitotic DNA repair synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to nucleolytic cleavage and mitotic DNA repair synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "ed676b0e-7efd-4226-b468-2f480b8f4831",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C88",
+      "claim": "Mitotic TRAIP activity brings to an end the period during which conventional DNA replication is possible during the metazoan cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, mitotic TRAIP activity brings to an end the period during which conventional DNA replication is possible during the metazoan cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "c59abb6a-c353-4d94-8d28-319cd28d8066",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C89",
+      "claim": "Mouse TRAIP is required for mitotic CMG disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it remains to be demonstrated that TRAIP does indeed drive CMG helicase disassembly during mitosis in human cells, we have recently found that mouse TRAIP is required for mitotic CMG disassembly (Ryo Fujisawa, Fabrizio Villa and Karim Labib, unpublished data), indicating that the role of TRAIP is well conserved in diverse metazoan species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as unpublished data from the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "132c2f24-9021-4578-811e-2ed9732b07cd",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C90",
+      "claim": "The role of TRAIP is well conserved in diverse metazoan species.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it remains to be demonstrated that TRAIP does indeed drive CMG helicase disassembly during mitosis in human cells, we have recently found that mouse TRAIP is required for mitotic CMG disassembly (Ryo Fujisawa, Fabrizio Villa and Karim Labib, unpublished data), indicating that the role of TRAIP is well conserved in diverse metazoan species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in C. elegans, human cells, and unpublished mouse data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "f5b3869e-8477-44fe-9d03-9d985c417215",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C91",
+      "claim": "If cleavage at each of two converging replication forks is specific to the leading strand template, one intact chromosome would rapidly be restored by gap filling, whereas repair of the other would require the joining of two broken ends.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted recently (Deng et al., 2019), if cleavage at each of two converging replication forks is specific to the leading strand template, which is normally encircled and thus protected by the CMG helicase, then one intact chromosome would rapidly be restored by gap filling, whereas repair of the other would require the joining of two broken ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model noted in a recent publication cited as Deng et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "b89aba46-2e1d-46fd-9fe5-56699d92145d",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C92",
+      "claim": "Repair requiring the joining of two broken ends would be associated with a small deletion and with sister chromatid exchange, matching the known features of common fragile sites in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter would be associated with a small deletion and with sister chromatid exchange, thus matching the known features of common fragile sites in human cells (Glover et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Glover et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "df5c40f4-0a8f-4e39-a836-58d0c8c08a62",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C93",
+      "claim": "TRAIP preserves viability when metazoan cells enter mitosis with incomplete replication by promoting a programmed pathway of breakage and repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that TRAIP preserves viability when metazoan cells enter mitosis with incomplete replication, by promoting a programmed pathway of breakage and repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "ff521d3e-cbe1-4a88-85fc-64aba1703f5e",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "claim_id": "C94",
+      "claim": "The TRAIP-mediated pathway of breakage and repair comes at the price of localised genome rearrangements, but avoids the far more damaging random breakage of loci during cell division in the presence of unreplicated DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This comes at the price of localised genome rearrangements, but avoids the far more damaging random breakage of loci during cell division in the presence of unreplicated DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and interpretation of the biological significance.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b0722ba5-60e6-426f-86e8-d7f6e89da235",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In C. elegans early embryos, depletion of RPA-1 leads to impaired chromosome condensation during prophase, reflecting mitotic entry with incomplete DNA replication. CMG helicase components are absent from mitotic chromatin after RPA-1 depletion due to active disassembly by CDC-48_UFD-1_NPL-4, as evidenced by CMG persistence when NPL-4 is co-depleted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 are supported by experimental data in Figure 1C-D and supplementary figures showing impaired condensation, absence of CMG components, and rescue by NPL-4 co-depletion. The interpretation that replisome disassembly occurs before metaphase is logically derived from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "a0071dc2-b4fe-465a-b138-01093f042dc0",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Depletion of ribonucleotide reductase (RNR-1) produces a profound DNA replication defect with impaired chromosome condensation, RPA accumulation on metaphase chromatin, and severely defective chromosome segregation. CMG components are absent from mitotic chromatin after rnr-1 RNAi due to active disassembly by CDC-48_UFD-1_NPL-4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 are supported by experimental data in Figure 1C-D showing the phenotypes after RNR-1 depletion and rescue by NPL-4 co-depletion. The data consistently demonstrate CDC-48_UFD-1_NPL-4-dependent replisome disassembly in response to severe replication stress.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "8e4b78ed-4c8c-45a6-af92-3da712c796cf",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Upon co-depletion of RNR-1 and NPL-4, the mCherry-H2B signal is barely detectable throughout mitosis, reflecting absence of both condensin II and condensin I from mitotic chromatin. This is interpreted as resulting from continued CMG helicase progression uncoupled from DNA synthesis, displacing parental histones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34-C35 are supported by experimental data in Figure 1 and supplementary figures. However, C36 is speculative interpretation without direct experimental validation. The mechanism proposed for histone displacement requires additional evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "d151e26a-66ab-4fe1-983a-4e1c4f694c2d",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Homozygous trul-1\u0394 worms are viable, contrasting with lethality of TRAIP deletions in mouse and Drosophila. This viability is attributed to the small number of cell divisions and relatively small genome size in C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is directly supported by experimental observation. C38 is supported by citations. C39 is a reasonable interpretation given the comparative genomic context, though it remains speculative without direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "b6bd8c66-735b-45b0-80f8-d8734c3b243f",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RNAi depletion of LRR-1 in trul-1\u0394 worms causes persistence of CMG helicase on mitotic chromatin and appearance of anaphase DNA bridges, indicating that S-phase and mitotic pathways for replisome disassembly are jointly important for genome integrity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 are supported by experimental data in Figure 2\u2014figure supplement 2. The appearance of DNA bridges when both pathways are compromised provides strong evidence for their joint importance in maintaining genome integrity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "afb102c8-9064-4fdd-a5bf-9dbede991bd9",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CMG persists on mitotic chromatin when RPA-1 is depleted in the absence of TRAIP (trul-1\u0394), but rpa-1 lrr-1 double RNAi does not prevent replisome disassembly in wild type worms. This indicates that replisome disassembly following RPA-1 depletion requires TRAIP but is independent of the CUL-2LRR-1 pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by experimental data in Figure 2A and supplementary figures. The genetic epistasis experiments clearly demonstrate TRAIP-dependent, CUL-2LRR-1-independent replisome disassembly in response to RPA-1 depletion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "e5c30dcb-af44-4f10-b2bf-5ca2c0e1df52",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Following rnr-1 RNAi in trul-1\u0394 worms, CMG helicase accumulates on mitotic chromatin, with enhanced accumulation when combined with lrr-1 RNAi. This suggests TRUL-1 normally mediates replisome disassembly during mitosis, while continued replisome progression in its absence allows some forks to converge and be disassembled via the CUL-2LRR-1 pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by experimental data in Figure 2B. Claims C50-C51 are interpretations that logically follow from the data, explaining the differential effects of single versus double RNAi treatments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "cc41a769-5081-4d16-b388-a1c3aea99c84",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The combination of trul-1\u0394 with div-1 at 20\u00b0C produces synthetic lethality in ~50% of embryos, which is suppressed at 15\u00b0C. This indicates C. elegans TRAIP is important for surviving DNA replication stress, though dispensable in unperturbed cell cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by experimental data in Figure 2C showing synthetic lethality and temperature-dependent rescue. The conclusion that TRAIP is important for replication stress response but dispensable in normal conditions is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "b7188467-1686-42a8-a3b7-0e8afda3bebe",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Depletion of TRUL-1 leads to accumulation of mitotic chromatin bridges in the div-1 mutant, with the greatest effect (~90%) in the AB cell which has a weak S-phase checkpoint. The P1 cell shows fewer bridges and has an enhanced checkpoint response that delays mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 are supported by experimental data in Figure 2D-E and supplementary figures. The differential effects in AB versus P1 cells are consistent with known checkpoint differences (C60, C62 supported by citations).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "3be6fe4e-4dbd-46f6-bb32-8276a4288fb0",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Chromosome condensation during prophase is partially defective in the AB cell but not P1 cell of the div-1(or148ts) mutant, with the defect exacerbated by TRUL-1 depletion. This suggests the AB cell enters mitosis before replication completion, and TRUL-1 becomes important for preserving chromosome integrity under these conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are supported by experimental data in Figure 2D and supplementary figures. Claims C65-C66 are reasonable interpretations of the data, though they remain inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "680c19cf-9d2d-49f2-933a-162581429dd0",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Exposure to 100% rnr-1 RNAi causes profound defects in both control and trul-1\u0394 worms, while 10% rnr-1 RNAi allows normal mitosis in controls but causes impaired condensation and chromatin bridges in trul-1\u0394 worms. This indicates TRUL-1 helps preserve genome integrity when cells enter mitosis with incomplete DNA replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 are supported by experimental data in Figure 2\u2014figure supplement 5. The dose-response experiment elegantly demonstrates TRAIP's specific role in responding to mild replication stress.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "89b798f0-346e-410c-b259-be5375ce0148",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In human U2OS cells, depletion of TRAIP with two different siRNAs suppresses appearance of both FANCD2 and EdU foci. This defect is rescued by wild type TRAIP but not by RING domain mutant TRAIP, indicating the ubiquitin ligase activity of TRAIP is required upstream of FANCD2 recruitment for mitotic DNA repair synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 are supported by experimental data in Figure 3C-H. The rescue experiments with wild type versus RING mutant TRAIP provide strong evidence for the requirement of ubiquitin ligase activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "84f2a01c-22c3-482e-abec-2a2ebccc896c",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Depletion of LRR1 in human U2OS cells does not impair MiDAS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is supported by experimental data in Figure 3\u2014figure supplement 1, demonstrating that the human LRR1 pathway is not required for MiDAS, unlike TRAIP.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "68798509-ad2e-4c28-90a7-8a9b146e03fc",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "siRNA depletion of TRAIP in human cells leads to increased anaphase DNA bridges, ultrafine bridges coated with PICH ATPase, increased 53BP1 bodies in G1-phase, and increased micronuclei. All phenotypes are rescued by siRNA-resistant TRAIP expression, confirming TRAIP is important for processing incomplete DNA replication during mitosis and preserving genome integrity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C82 are supported by experimental data in Figure 4. The multiple independent phenotypes and rescue experiments provide strong evidence for TRAIP's role in maintaining genome integrity in human cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "61f39f16-dd9a-4e57-981e-77e7d1470f4d",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TRAIP ubiquitin ligase drives replisome disassembly in response to incomplete DNA replication in C. elegans early embryos, is essential for MiDAS in human cells, is important to prevent mitotic segregation errors in both systems, and is a master regulator of processing incomplete DNA replication during mitosis in metazoa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 represent the main conclusions of the manuscript and are supported by the comprehensive experimental data from both C. elegans and human cells presented throughout Figures 1-4. The cross-species conservation strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "4a4883bb-c199-4023-bb28-8e123326fdeb",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "TRAIP activity during mitosis promotes replisome disassembly at remaining replication forks, exposing parental DNA at the fork junction, leading to nucleolytic cleavage and mitotic DNA repair synthesis. This brings to an end the period during which conventional DNA replication is possible during the metazoan cell cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 are supported by the experimental data and recent findings (Deng et al., 2019; Priego Moreno et al., 2019). The model integrates the current findings with prior work to provide a mechanistic framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "cc2ca348-bd99-4a33-b7eb-5c653301f97c",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Mouse TRAIP is required for mitotic CMG disassembly (unpublished data), indicating the role of TRAIP is well conserved in diverse metazoan species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C89 is based on unpublished data that cannot be independently evaluated. Claim C90 is a reasonable inference given the C. elegans and human data, but the mouse data supporting it is not available for review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    },
+    {
+      "id": "876cec10-7812-4ea2-be2b-4cb38f2d2d9e",
+      "content_id": "c8f116c6-d96b-45ab-8b74-429697e75647",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "TRAIP preserves viability when metazoan cells enter mitosis with incomplete replication by promoting a programmed pathway of breakage and repair. This comes at the price of localized genome rearrangements but avoids more damaging random breakage. The model proposes strand-specific cleavage leading to gap filling on one chromosome and end-joining with deletions and sister chromatid exchange on the other.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C94 are supported by the experimental data showing TRAIP's protective role. However, C91-C92 present a speculative mechanistic model based on Deng et al., 2019 that lacks direct experimental validation in this manuscript. The model is plausible but requires further testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:18:37.170108Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "59eabebc-65e0-47e4-8847-064142577d21",
+      "result_id": "b0722ba5-60e6-426f-86e8-d7f6e89da235"
+    },
+    {
+      "claim_id": "20b0f82a-c516-4aef-8627-a05d7afbb038",
+      "result_id": "b0722ba5-60e6-426f-86e8-d7f6e89da235"
+    },
+    {
+      "claim_id": "219b5fa6-980f-400a-9c95-598370ac01dd",
+      "result_id": "b0722ba5-60e6-426f-86e8-d7f6e89da235"
+    },
+    {
+      "claim_id": "84d0ff62-9978-4f8b-aaea-1f597e4db662",
+      "result_id": "b0722ba5-60e6-426f-86e8-d7f6e89da235"
+    },
+    {
+      "claim_id": "531474c4-9b4a-43d4-8a80-90e590bfad5e",
+      "result_id": "b0722ba5-60e6-426f-86e8-d7f6e89da235"
+    },
+    {
+      "claim_id": "09ad6631-402b-4e7c-862f-c9de2b266c3b",
+      "result_id": "b0722ba5-60e6-426f-86e8-d7f6e89da235"
+    },
+    {
+      "claim_id": "bc64e349-1adc-4d71-bd1a-9ffef91978e0",
+      "result_id": "a0071dc2-b4fe-465a-b138-01093f042dc0"
+    },
+    {
+      "claim_id": "262d99fd-21aa-4160-a7ba-af1b993554da",
+      "result_id": "a0071dc2-b4fe-465a-b138-01093f042dc0"
+    },
+    {
+      "claim_id": "9265d3fe-13f7-495a-a7a2-6f427d0f219b",
+      "result_id": "a0071dc2-b4fe-465a-b138-01093f042dc0"
+    },
+    {
+      "claim_id": "a0e9722a-e5ff-41e9-8b0f-b1097fcff420",
+      "result_id": "a0071dc2-b4fe-465a-b138-01093f042dc0"
+    },
+    {
+      "claim_id": "2cdf5396-2a5b-4448-b924-412d23fdc25a",
+      "result_id": "a0071dc2-b4fe-465a-b138-01093f042dc0"
+    },
+    {
+      "claim_id": "34425f42-61de-4cd9-8afc-8b8814b5d52e",
+      "result_id": "8e4b78ed-4c8c-45a6-af92-3da712c796cf"
+    },
+    {
+      "claim_id": "dfc85237-fedd-44d8-b458-a94c8eb6573f",
+      "result_id": "8e4b78ed-4c8c-45a6-af92-3da712c796cf"
+    },
+    {
+      "claim_id": "4bfbb486-2e52-4803-8fa6-cf32b7959122",
+      "result_id": "8e4b78ed-4c8c-45a6-af92-3da712c796cf"
+    },
+    {
+      "claim_id": "c7e1b787-532c-4b5e-b867-6b370c65cf9e",
+      "result_id": "d151e26a-66ab-4fe1-983a-4e1c4f694c2d"
+    },
+    {
+      "claim_id": "45119713-8e04-49d3-a48d-f58ec1fa303e",
+      "result_id": "d151e26a-66ab-4fe1-983a-4e1c4f694c2d"
+    },
+    {
+      "claim_id": "e16402e7-6884-4d32-b498-06a6eb6f0b6d",
+      "result_id": "d151e26a-66ab-4fe1-983a-4e1c4f694c2d"
+    },
+    {
+      "claim_id": "4d4eee75-2db0-46e3-80e3-468d6f2fc890",
+      "result_id": "b6bd8c66-735b-45b0-80f8-d8734c3b243f"
+    },
+    {
+      "claim_id": "09c1778d-969c-41f1-bde8-f118efbfe55c",
+      "result_id": "b6bd8c66-735b-45b0-80f8-d8734c3b243f"
+    },
+    {
+      "claim_id": "9faba21d-3077-4f4b-ac17-74fdb7286f7c",
+      "result_id": "b6bd8c66-735b-45b0-80f8-d8734c3b243f"
+    },
+    {
+      "claim_id": "536743af-ad2f-498d-96a4-5a9ea8e25cec",
+      "result_id": "b6bd8c66-735b-45b0-80f8-d8734c3b243f"
+    },
+    {
+      "claim_id": "fb7cfcf2-56d2-41de-bbc2-c61f3fb028ed",
+      "result_id": "afb102c8-9064-4fdd-a5bf-9dbede991bd9"
+    },
+    {
+      "claim_id": "8e6a1207-d90c-40e7-86b1-7035ee6ce3b9",
+      "result_id": "afb102c8-9064-4fdd-a5bf-9dbede991bd9"
+    },
+    {
+      "claim_id": "699e0095-5ced-46ce-8191-fcb738504624",
+      "result_id": "afb102c8-9064-4fdd-a5bf-9dbede991bd9"
+    },
+    {
+      "claim_id": "844691fe-13a7-43ce-bea3-20256ded38f0",
+      "result_id": "e5c30dcb-af44-4f10-b2bf-5ca2c0e1df52"
+    },
+    {
+      "claim_id": "e554f6e1-51d4-4e98-875b-38fe61750ef6",
+      "result_id": "e5c30dcb-af44-4f10-b2bf-5ca2c0e1df52"
+    },
+    {
+      "claim_id": "1c860baf-5469-473e-9174-60fb33136cae",
+      "result_id": "e5c30dcb-af44-4f10-b2bf-5ca2c0e1df52"
+    },
+    {
+      "claim_id": "eab01880-028f-4f63-a081-ccc47d6ae36d",
+      "result_id": "e5c30dcb-af44-4f10-b2bf-5ca2c0e1df52"
+    },
+    {
+      "claim_id": "73a56606-16fc-4d3f-b9be-dcd23ff4aa05",
+      "result_id": "e5c30dcb-af44-4f10-b2bf-5ca2c0e1df52"
+    },
+    {
+      "claim_id": "8e21e808-1575-4f81-9708-b037ab9bde3f",
+      "result_id": "cc41a769-5081-4d16-b388-a1c3aea99c84"
+    },
+    {
+      "claim_id": "a5e25916-b04b-4464-9dfb-767691a09460",
+      "result_id": "cc41a769-5081-4d16-b388-a1c3aea99c84"
+    },
+    {
+      "claim_id": "2e5e5715-2838-4acc-b2d2-c8965e55c395",
+      "result_id": "cc41a769-5081-4d16-b388-a1c3aea99c84"
+    },
+    {
+      "claim_id": "181eec90-b5ed-4c5b-81ee-eab93ad40a26",
+      "result_id": "cc41a769-5081-4d16-b388-a1c3aea99c84"
+    },
+    {
+      "claim_id": "66fd5db9-4085-48dd-8b10-e6d09dbf0d42",
+      "result_id": "cc41a769-5081-4d16-b388-a1c3aea99c84"
+    },
+    {
+      "claim_id": "bb303abc-b708-42cf-9de1-07cb4ca25bf0",
+      "result_id": "b7188467-1686-42a8-a3b7-0e8afda3bebe"
+    },
+    {
+      "claim_id": "0232d708-3870-48df-a082-e3f78ed43b40",
+      "result_id": "b7188467-1686-42a8-a3b7-0e8afda3bebe"
+    },
+    {
+      "claim_id": "1e73dddd-e859-42d9-a4b9-0be48414fcee",
+      "result_id": "b7188467-1686-42a8-a3b7-0e8afda3bebe"
+    },
+    {
+      "claim_id": "f2d458f9-a95d-4d0a-954a-ca74ae516a9f",
+      "result_id": "b7188467-1686-42a8-a3b7-0e8afda3bebe"
+    },
+    {
+      "claim_id": "5f113c53-23cc-45d0-8003-5789f2d7d4dc",
+      "result_id": "b7188467-1686-42a8-a3b7-0e8afda3bebe"
+    },
+    {
+      "claim_id": "6b5efe35-a380-4d28-b8b8-9f3e0164fa67",
+      "result_id": "b7188467-1686-42a8-a3b7-0e8afda3bebe"
+    },
+    {
+      "claim_id": "b76a8def-3988-40ce-97d0-984c4bba0431",
+      "result_id": "3be6fe4e-4dbd-46f6-bb32-8276a4288fb0"
+    },
+    {
+      "claim_id": "ae795bfe-f161-4b75-bf9a-c439408f7b0c",
+      "result_id": "3be6fe4e-4dbd-46f6-bb32-8276a4288fb0"
+    },
+    {
+      "claim_id": "7b4cb725-c653-4607-9499-c3d270faaa51",
+      "result_id": "3be6fe4e-4dbd-46f6-bb32-8276a4288fb0"
+    },
+    {
+      "claim_id": "0199ee76-3838-41fb-81fe-522595a500bc",
+      "result_id": "3be6fe4e-4dbd-46f6-bb32-8276a4288fb0"
+    },
+    {
+      "claim_id": "300b7a7a-e736-4608-93df-35b12e6524b7",
+      "result_id": "680c19cf-9d2d-49f2-933a-162581429dd0"
+    },
+    {
+      "claim_id": "b7a37d08-2991-47a7-b8f0-75b1456784d6",
+      "result_id": "680c19cf-9d2d-49f2-933a-162581429dd0"
+    },
+    {
+      "claim_id": "174e1037-c64e-4cd7-bdf2-549586966bc8",
+      "result_id": "680c19cf-9d2d-49f2-933a-162581429dd0"
+    },
+    {
+      "claim_id": "c09ac433-98ac-4d28-8ab8-865284878946",
+      "result_id": "680c19cf-9d2d-49f2-933a-162581429dd0"
+    },
+    {
+      "claim_id": "00978802-916e-4f74-becb-abdad679960e",
+      "result_id": "89b798f0-346e-410c-b259-be5375ce0148"
+    },
+    {
+      "claim_id": "49098a25-428b-454b-82aa-916a9c2eef3c",
+      "result_id": "89b798f0-346e-410c-b259-be5375ce0148"
+    },
+    {
+      "claim_id": "a41d0cc6-6fd8-4229-8f62-3480ca5dae3d",
+      "result_id": "89b798f0-346e-410c-b259-be5375ce0148"
+    },
+    {
+      "claim_id": "647fcf2d-7b2c-41e4-b953-f5be5969cd0a",
+      "result_id": "89b798f0-346e-410c-b259-be5375ce0148"
+    },
+    {
+      "claim_id": "310ac98e-910e-4f6e-b094-d70b03d5d0ea",
+      "result_id": "84f2a01c-22c3-482e-abec-2a2ebccc896c"
+    },
+    {
+      "claim_id": "ae9df56a-8959-4009-ada0-79a7cc38f9c8",
+      "result_id": "68798509-ad2e-4c28-90a7-8a9b146e03fc"
+    },
+    {
+      "claim_id": "6e8e83ae-f890-4d6d-89d5-db214dc447c2",
+      "result_id": "68798509-ad2e-4c28-90a7-8a9b146e03fc"
+    },
+    {
+      "claim_id": "ddeb22df-a49e-4a07-ae32-23ca6ec460ff",
+      "result_id": "68798509-ad2e-4c28-90a7-8a9b146e03fc"
+    },
+    {
+      "claim_id": "a5d3bd82-2f67-432d-99ad-d69146a022b8",
+      "result_id": "68798509-ad2e-4c28-90a7-8a9b146e03fc"
+    },
+    {
+      "claim_id": "795ede43-42e7-4dbc-92fe-0f2c74e25ef7",
+      "result_id": "68798509-ad2e-4c28-90a7-8a9b146e03fc"
+    },
+    {
+      "claim_id": "584b0198-80c6-4235-80aa-9f60c6ffcfe1",
+      "result_id": "68798509-ad2e-4c28-90a7-8a9b146e03fc"
+    },
+    {
+      "claim_id": "9496fc7f-3aca-4cf5-8398-5ca8caa68097",
+      "result_id": "68798509-ad2e-4c28-90a7-8a9b146e03fc"
+    },
+    {
+      "claim_id": "dca8937a-fc63-4461-b2f8-daf90ae53b85",
+      "result_id": "68798509-ad2e-4c28-90a7-8a9b146e03fc"
+    },
+    {
+      "claim_id": "aff8bac2-6be5-4864-9270-bb38fd39111c",
+      "result_id": "61f39f16-dd9a-4e57-981e-77e7d1470f4d"
+    },
+    {
+      "claim_id": "6ac4a573-843c-4082-9ede-572de7537b0e",
+      "result_id": "61f39f16-dd9a-4e57-981e-77e7d1470f4d"
+    },
+    {
+      "claim_id": "e7fe2ae0-686b-4155-a210-d04ccae71c7c",
+      "result_id": "61f39f16-dd9a-4e57-981e-77e7d1470f4d"
+    },
+    {
+      "claim_id": "60f28667-616a-4118-bdcc-5447607c9208",
+      "result_id": "61f39f16-dd9a-4e57-981e-77e7d1470f4d"
+    },
+    {
+      "claim_id": "3a6d787c-a0f2-4865-badf-8321353b47af",
+      "result_id": "4a4883bb-c199-4023-bb28-8e123326fdeb"
+    },
+    {
+      "claim_id": "8401ad7b-099e-4431-b04e-53bf841ff1f2",
+      "result_id": "4a4883bb-c199-4023-bb28-8e123326fdeb"
+    },
+    {
+      "claim_id": "ed676b0e-7efd-4226-b468-2f480b8f4831",
+      "result_id": "4a4883bb-c199-4023-bb28-8e123326fdeb"
+    },
+    {
+      "claim_id": "c59abb6a-c353-4d94-8d28-319cd28d8066",
+      "result_id": "cc2ca348-bd99-4a33-b7eb-5c653301f97c"
+    },
+    {
+      "claim_id": "132c2f24-9021-4578-811e-2ed9732b07cd",
+      "result_id": "cc2ca348-bd99-4a33-b7eb-5c653301f97c"
+    },
+    {
+      "claim_id": "f5b3869e-8477-44fe-9d03-9d985c417215",
+      "result_id": "876cec10-7812-4ea2-be2b-4cb38f2d2d9e"
+    },
+    {
+      "claim_id": "b89aba46-2e1d-46fd-9fe5-56699d92145d",
+      "result_id": "876cec10-7812-4ea2-be2b-4cb38f2d2d9e"
+    },
+    {
+      "claim_id": "df5c40f4-0a8f-4e39-a836-58d0c8c08a62",
+      "result_id": "876cec10-7812-4ea2-be2b-4cb38f2d2d9e"
+    },
+    {
+      "claim_id": "ff521d3e-cbe1-4a88-85fc-64aba1703f5e",
+      "result_id": "876cec10-7812-4ea2-be2b-4cb38f2d2d9e"
+    }
+  ],
+  "comparisons": []
+}

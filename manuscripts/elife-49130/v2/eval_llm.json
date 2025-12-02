@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C3",
+      "C4"
+    ],
+    "result": "Behavioral data reveal small costs for preparing two templates (2TMP-1TGT vs. 1TMP-1TGT: 52 ms RT increase, 1.2% accuracy decrease) but substantial costs for engaging two templates (2TMP-2TGT vs. 2TMP-1TGT: 185 ms RT increase, 4.0% accuracy decrease), with engagement costs significantly greater than preparation costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 provide converging behavioral evidence with appropriate statistical tests (t-tests, Bayes factors) showing reliable differences across conditions. The experimental design successfully dissociates template preparation from engagement, and the pattern of costs is consistent and well-quantified. Sample size (n=24) appears adequate given the strong effect sizes reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C54",
+      "C55"
+    ],
+    "result": "EEG decoding reveals small onset delays for preparing two templates (21 ms delay for 2TMP-1TGT vs. 1TMP-1TGT) but larger delays and reduced decoding strength when engaging two templates (25 ms additional delay for 2TMP-2TGT vs. 2TMP-1TGT, with sustained differences in decoding strength from 250-500 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 and C54-C55 provide neural evidence that parallels the behavioral findings. The jackknife-based onset latency estimation is appropriate, and cluster-based permutation testing properly corrects for multiple comparisons. The convergence between behavioral and neural measures strengthens the conclusion that the bottleneck is in template engagement rather than preparation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C34",
+      "C62",
+      "C63"
+    ],
+    "result": "Switch costs were observed both behaviorally (50 ms RT, 0.9% accuracy) and neurally (23 ms onset delay) when target color changed between trials in the 2TMP-1TGT condition, consistent with competitive interactions between templates carrying over across trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 and C34 provide converging behavioral and neural evidence for switch costs with appropriate statistics. Claims C62-C63 offer a mechanistic explanation consistent with the proposed model. The switch cost analysis strengthens the interpretation of template competition, though the mechanistic explanation remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Correlation analyses of classifier confidence scores between horizontal and vertical target dimensions revealed no systematic positive or negative correlations (average \u03c1 = 0.11), consistent with limited parallel independent selection rather than serial processing or common-mechanism parallel processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C51 and C67-C70 rely on null results from correlation analyses. While the authors conducted simulations (C49) showing that correlations should be detectable at sufficient SNR, the actual decoding performance (max AUC ~0.59) was below the threshold where correlations could be reliably detected (>0.55-0.60). The authors appropriately acknowledge this limitation (C52), but the conclusion favoring parallel independent selection over serial processing is not definitively supported. Alternative explanations (rapid switching, insufficient sensitivity) cannot be ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C99"
+    ],
+    "result": "Multivariate decoding successfully tracked attentional selection on both horizontal and vertical meridians with comparable performance, with topographical patterns resembling N2pc (200-350 ms) and SPCN/CDA (350-700 ms) components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C25-C30 demonstrate successful application of multivariate decoding methodology. The topographical patterns (C26-C27) are validated by comparison to known ERP components and supplementary traditional ERP analyses (C28). Claim C99 appropriately cites prior validation of the method. The ability to decode vertical targets represents a methodological advance over traditional N2pc analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C53",
+      "C58",
+      "C80",
+      "C93",
+      "C94"
+    ],
+    "result": "The main conclusion is that the bottleneck in multiple-target selection resides not in template preparation but in the concurrent engagement of multiple templates in selecting matching sensory information, with observers able to prepare multiple templates at little cost but facing substantial limitations when engaging them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C53, C58, C80, C93-C94 represent the central theoretical conclusion, which is well-supported by the converging behavioral (Result 1) and neural (Result 2) evidence. The experimental design successfully dissociates preparation from engagement, and the pattern of costs is consistent across measures. However, the mechanistic interpretation (limited parallel vs. serial) remains somewhat uncertain due to the limitations of the correlation analyses (Result 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "The authors propose a model where multiple templates hold each other in mutually competitive relationships through lateral suppression, with competition being disadvantageous when both templates are engaged, resulting in slower and weaker evidence accumulation for both targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 and C64 present a theoretical model that explains the observed pattern of results. The model is consistent with the data showing small preparation costs, large engagement costs, and switch costs. The proposal of lateral suppression (C59) is supported by citation to relevant work. However, the model remains somewhat speculative as it is not directly tested\u2014alternative mechanisms could potentially explain the same pattern of results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors acknowledge that their data do not exclude seriality, noting that serial processing may occur at stages not measured (e.g., alphanumeric identity access) or may depend on task context, and that their results show parallel processing can occur, not that it must.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 appropriately qualify the main conclusions by acknowledging limitations and alternative interpretations. This cautious interpretation is scientifically appropriate given the null correlation results and the possibility of unmeasured serial components. The acknowledgment strengthens rather than weakens the overall contribution by clearly delineating what can and cannot be concluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C95",
+      "C96",
+      "C100"
+    ],
+    "result": "Twenty-four participants (from 32 recruited) completed a visual search task requiring selection of two color-defined targets, with eight excluded for poor performance (<85% accuracy), and the study received appropriate ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C95-C96, and C100 describe the participant sample and ethical procedures. The exclusion criteria were predefined and appropriate for ensuring sufficient trial numbers for EEG analysis. The final sample size of 24 appears adequate given the strong effect sizes observed. Ethical approval is documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The proposed distinction between template preparation and engagement relates to but differs from the Boolean Map Theory, which posits capacity limitations at both stages, and has potential to resolve debates about whether observers can search for multiple targets simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 appropriately situate the work within existing theoretical frameworks and debates. The comparison to Boolean Map Theory (C76-C77) is accurate and highlights the novel contribution. The claim about resolving debates (C78-C79) is reasonable given the experimental design's ability to dissociate preparation from engagement, though the resolution is not complete given the uncertainty about serial vs. parallel processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors discuss how costs might scale with more than two templates, the potential role of long-term memory vs. working memory in template storage, and how limitations might differ when targets are defined by different feature dimensions rather than the same dimension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C92 represent appropriate speculation about boundary conditions and future directions. The discussion of VWM vs. LTM (C82-C90) is well-grounded in cited literature, and the point about within- vs. between-dimension selection (C91-C92) identifies an important limitation of the current study. These discussions appropriately acknowledge what the current data do and do not address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The introduction establishes that attentional templates bias selection through recurrent feedback loops, that there is controversy about whether multiple templates can be concurrently engaged, and that prior studies have not distinguished between limits in template preparation versus engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C6-C14 provide appropriate background and motivation. The characterization of the controversy (C8) is supported by extensive citations to both sides of the debate. The critical assessment that prior work has not distinguished preparation from engagement (C14) is accurate and motivates the current experimental design. The theoretical framework is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Selecting two objects by a single feature is more efficient and accurate than selecting two objects using two different features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is a direct inference from the behavioral data comparing 2TMP-1TGT and 2TMP-2TGT conditions. This conclusion is well-supported by the statistical analyses showing substantial costs when going from one to two target features in the display.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C65",
+      "C66"
+    ],
+    "result": "The cost of engaging in selection is attributed to neural competition resulting in limited parallel processing rather than a serial bottleneck, based on theoretical predictions about how serial vs. parallel processing should manifest in classifier confidence correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C5 represents a major conclusion, but it relies on the uncertain correlation analyses (Result 4). Claims C42-C44 and C65-C66 lay out clear theoretical predictions, but the empirical test (null correlations) is inconclusive due to insufficient decoding strength. The conclusion favoring limited parallel processing is plausible but not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "According to existing theoretical frameworks, template activation involves pre-activation of sensory features, and matching input triggers recurrent feedback loops that enhance target representations in visual working memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 accurately describe established theoretical frameworks with appropriate citations. These claims provide the theoretical foundation for the proposed model and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The N2pc component is characterized by increased negativity over contralateral posterior electrodes but can only distinguish left vs. right hemifield and cannot simultaneously track multiple targets at different locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 accurately describe the N2pc component and its limitations, supported by appropriate citations. This establishes the rationale for using multivariate decoding instead of traditional ERP analysis.",
+    "result_type": "MINOR"
+  }
+]

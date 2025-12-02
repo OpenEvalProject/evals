@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Stimulus validation in an independent sample (n=38) confirmed that both NS and FE vicarious pain stimuli were rated as significantly more painful, arousing, and negative compared to their respective control stimuli, with all comparisons reaching statistical significance (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C34 provide comprehensive validation data with specific means, standard errors, test statistics, and p-values. The statistical tests are appropriate (paired t-tests), sample size is adequate for validation, and all comparisons show large, significant differences between pain and control stimuli across multiple dimensions (pain intensity, arousal, valence).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Univariate fMRI analysis revealed spatially correlated activation patterns between NS and FE vicarious pain (r=0.171, p<0.1), with overlapping regions including bilateral anterior and mid-insula, dorsomedial prefrontal cortex, and inferior parietal lobule showing increased activation, and rostral/ventral anterior cingulate showing decreased activation (FDR q<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 report standard univariate GLM results with appropriate multiple comparison correction (FDR). The marginal significance (p<0.1) for the spatial correlation (C35) is appropriately noted. The identified regions are consistent with prior pain empathy literature and the analysis methods are standard for fMRI.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Multivariate pattern analysis successfully developed modality-specific predictive patterns for NS (88% accuracy) and FE (80% accuracy) vicarious pain. These patterns were spatially correlated (r=0.170, p<0.001) and showed significant cross-modality prediction: NS pattern predicted FE pain with 69% accuracy and FE pattern predicted NS pain with 78% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 demonstrate robust within-modality classification with large effect sizes (d>1.6) and significant cross-modality generalization. The 10-fold cross-validation repeated 10 times provides strong protection against overfitting. The reduced cross-modality effect sizes (<50% of within-modality) appropriately suggest both shared and distinct representations. Statistical significance is maintained after Bonferroni correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Thresholded multivariate patterns (FDR q<0.05) and searchlight analyses consistently identified overlapping regions contributing to both NS and FE vicarious pain prediction, particularly bilateral mid-insula, left putamen, left inferior parietal lobule, striatum, and ventromedial prefrontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 employ appropriate thresholding (bootstrap with 10,000 iterations, FDR corrected) and complementary searchlight analysis. The convergence of findings across different analytical approaches (whole-brain patterns and local searchlight) strengthens the conclusions. The identified regions are anatomically plausible for pain processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The bilateral mid-insula showed strong shared representations across NS and FE vicarious pain, with highly correlated activations (r=0.737, p=0.006) and pattern weights (r=0.538, p<0.001). Mid-insula partial patterns showed significant within-modality (60-71% accuracy) and between-modality (61-65% accuracy) classification, though with smaller effect sizes than whole-brain patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 provide converging evidence for mid-insula involvement through multiple analyses (activation correlation, pattern weight correlation, classification). The use of HCP-defined anatomical masks (C79) provides standardized regional definition. The lower effect sizes compared to whole-brain patterns appropriately indicate the mid-insula is important but not sufficient alone. Results survive Bonferroni correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Whole-brain vicarious pain patterns showed statistically significant but low accuracy (58-61%) and small effect sizes (d=0.34-0.42) in discriminating non-painful negative versus neutral emotional stimuli. Mid-insula partial patterns could not classify negative stimuli above chance level (56%, p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 demonstrate appropriate specificity testing using an independent emotional processing paradigm in the same subjects. The contrast between significant but weak whole-brain discrimination and non-significant mid-insula discrimination supports pain-specificity, particularly for the mid-insula. The statistical approach (cross-validated classification) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "A negative emotion-predictive pattern accurately classified negative versus neutral stimuli (86% accuracy, d=2.07) but showed lower accuracy for vicarious pain discrimination (61-70%) compared to cross-modality vicarious pain predictions (69-78%). Neither whole-brain nor mid-insula negative patterns predicted thermal pain intensity (r=0.101, p=0.157).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 provide important control analyses demonstrating that while negative emotion and vicarious pain share some neural representations, the vicarious pain patterns are more specific to pain-related processing. The comparison of effect sizes across different predictions and the failure to predict thermal pain strengthen the specificity argument. Results remain significant after Bonferroni correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A general vicarious pain pattern developed across NS and FE stimuli achieved 82% overall accuracy, accurately predicted both NS (95%) and FE (87%) vicarious pain, but showed poor discrimination of negative versus neutral emotional stimuli (59%). The pattern was highly correlated with modality-specific patterns (r=0.587-0.702) and meta-analytic decoding identified 'painful' and 'pain' as top features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 demonstrate successful development of a domain-general pattern with strong within-domain generalization and poor cross-domain generalization to emotional stimuli. The meta-analytic decoding using Neurosynth provides independent validation of pain-specificity. The high correlations with modality-specific patterns and convergent thresholded regions (bilateral mid-insula, inferior parietal lobule, ventromedial prefrontal cortex) support the validity of the general pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The general vicarious pain pattern predicted self-experienced thermal pain in an independent dataset (n=33), showing high correlations with temperature levels (r=0.538) and subjective pain ratings (r=0.507), and accurately discriminating pain intensity levels (82-94% accuracy). Mid-insula patterns showed similar predictive validity (r=0.440-0.454, 82-88% accuracy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75 provide strong validation of the vicarious pain patterns using an independent dataset with a different pain modality (thermal vs. observed). The correlations with both objective (temperature) and subjective (ratings) measures, along with accurate classification across multiple intensity levels, demonstrate generalizability to direct pain experience. The convergent findings for whole-brain and mid-insula patterns strengthen conclusions. All results survive Bonferroni correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior literature establishes that pain empathy can be evoked by observation of noxious stimulation (NS) or facial expressions (FE), with NS providing objective sensory cues and FE requiring interpretation. Meta-analyses show both commonly activate insula and cingulate cortices, though they engage different psychological processes (mirror neuron system vs. mentalizing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 accurately summarize prior literature with appropriate citations to meta-analyses and empirical studies. The characterization of NS as more objective and FE as more subjective is supported by cited work (Hadjistavropoulos et al., 2011; Vachon-Presseau et al., 2012). The distinction between shared activations and different psychological processes provides appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C22"
+    ],
+    "result": "Methodological considerations establish that overlapping univariate activations are insufficient to determine process-specific shared neural representations because brain regions contain multiple distinct neuronal populations. MVPA provides finer spatial resolution and is more suitable for testing shared neural mechanisms, though shared multivariate patterns do not necessarily imply process-specific representations without additional validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15-C19, C22 provide well-supported methodological rationale with appropriate citations to electrophysiological, optogenetic, and MVPA studies. The limitations of both univariate and multivariate approaches are appropriately acknowledged, justifying the study's multi-pronged validation approach (cross-modality prediction, emotional control, thermal pain validation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C23"
+    ],
+    "result": "Prior MVPA studies have demonstrated both shared neural representations across mental processes (including vicarious and self-experienced pain) and functional independence of overlapping activations. Corradi-Dell'Acqua et al. (2016) found shared patterns in left anterior insula that also represented disgust and unfairness, suggesting modality-unspecific processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C23 accurately represent prior MVPA literature with appropriate citations. The specific example from Corradi-Dell'Acqua et al. (2016) regarding anterior insula's non-specificity provides important context for the current study's focus on mid-insula and emphasis on specificity testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Prior anatomical and functional studies establish that the mid-insula receives nociceptive information from thalamic nuclei, electrical stimulation evokes pain sensations, and meta-analyses show vicarious pain uniquely activates bilateral mid-insula compared to empathy for non-pain negative states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 provide appropriate anatomical and functional context for the mid-insula findings with citations to anatomical studies (Craig et al.), stimulation studies (Afif et al., 2010), and meta-analyses (Timmers et al., 2018). This prior work supports the interpretation of mid-insula as pain-specific.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study enrolled 252 participants, excluded 14 due to technical issues, left-handedness, or excessive head motion, resulting in a final sample of 238 participants (118 females, mean age 21.58\u00b12.32 years) for pain empathy analyses. The study received ethics approval and was conducted in accordance with the Declaration of Helsinki.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C82-C85 provide clear documentation of sample size, exclusion criteria with specific numbers, and final sample characteristics. The exclusion criteria (head motion >3mm/3\u00b0) are standard for fMRI. The large sample size addresses methodological concerns about cross-validation error (C80-C81). Ethics approval is documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "An independent thermal pain dataset included 33 healthy right-handed subjects (22 females, mean age 27.9\u00b19.0 years) who received six temperature levels (44.3-49.3\u00b0C in 1\u00b0C increments) to the left forearm during fMRI acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 adequately describe the independent validation dataset with appropriate citation to prior publications (Wager et al., 2013; Woo et al., 2015). The use of an independent dataset with different pain modality provides strong validation, though the smaller sample size (n=33) is a limitation for generalization testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The mid-insula was anatomically defined using the Human Connectome Project multi-modal parcellation atlas, encompassing regions PoI2, FOP2, FOP3, and MI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 provides clear anatomical definition using a standardized, publicly available atlas (HCP) with specific region labels. This standardization facilitates replication and comparison with other studies. The mask availability on GitHub is noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Methodological considerations establish that small sample sizes lead to large cross-validation error and that fMRI-based inferences on predictive regions benefit from larger samples, justifying the inclusion of 238 participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 provide appropriate methodological justification for the large sample size with citations to relevant methodological papers (Varoquaux, 2018; Chang et al., 2015). This addresses a key limitation of many prior MVPA studies and is supported by supplementary analysis (Figure 7\u2014figure supplement 2) showing prediction accuracy increases with sample size.",
+    "result_type": "MINOR"
+  }
+]

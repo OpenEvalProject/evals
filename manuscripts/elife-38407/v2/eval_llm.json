@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The model approximates cells as point particles interacting with a subset of Voronoi neighbors defined by a line-of-sight constraint, which provides computational efficiency compared to vertex-based models while maintaining stable morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 describe the point particle approximation and neighborhood definition. The computational efficiency claim (C28) is supported by citation, the line-of-sight constraint is justified (C30), and robustness testing (C32) demonstrates the approach works with alternative neighborhood definitions. The modeling choices are well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The model implements cell polarity through directional adhesion forces where AB polarity and PCP are orthogonal, with adhesion strength modulated by relative polarity orientations between neighboring cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 describe the mathematical formulation of polarity-dependent adhesion. The assumptions are clearly stated (C33-C34), grounded in biological knowledge (C35, C40), and the model behavior follows logically from the formulation (C36-C37). The authors acknowledge uncertainty about PCP directional adhesion (C39) while providing supporting citations (C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Randomly polarized cell aggregates with AB polarity spontaneously form stable complex morphologies with interconnected channels that remain unchanged over time, are robust to noise and growth, but sensitive to initial conditions and neighborhood definitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C62 are well-supported by simulation data in Figure 3 and supplements. The stability (C51-C52), energy convergence (C53), robustness to noise and growth (C57-C62), and sensitivity to initial conditions (C56) are all demonstrated. The systematic testing of model parameters (C54-C55) strengthens confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Fixed boundary conditions with different symmetries (radial, axial, planar) produce corresponding morphologies (sphere, cylinder, planes), while dynamic polarities with symmetric initial conditions converge to nested spheres, demonstrating that polar adhesion enables stable morphologies sensitive to boundary conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by Figure 4 simulations. The emergence of different morphologies from different boundary conditions (C64-C66) and convergence to nested spheres without boundary constraints (C67) are clearly demonstrated. The conclusion about polar adhesion enabling stable shapes (C68) follows logically from the presented results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The model predicts that rapid proliferation and external pressure produce distinct folding patterns: rapid proliferation causes many shallow folds that continue to increase with size, while pressure causes fewer, deeper folds that reach an upper limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C78 and C95-C99 are supported by Figure 5 simulations showing quantitative differences between proliferation-driven and pressure-driven folding. The predictions are testable and consistent with cited experimental observations (C71, C73). The quantitative measurements of fold depth and circumference (C78, Figure 5\u2014supplement 1) provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C106"
+    ],
+    "result": "PCP induces convergent extension through cell intercalations and T1 transitions, with the relative strength of PCP to AB polarity determining tube length and width in non-proliferating cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 and C100-C106 are supported by Figure 6 simulations. The emergence of global PCP ordering (C81), cell intercalations (C82), T1 transitions (C83), and the relationship between polarity strength and tube dimensions (C85, C100) are demonstrated. The predictions about mutant phenotypes (C101-C102) are reasonable, with supporting citation for similar phenotypes (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C104",
+      "C107"
+    ],
+    "result": "The model recapitulates major stages of sea urchin gastrulation (invagination, tube formation, elongation, and merging) using AB polarity, PCP, and boundary conditions mimicking organizing signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C94 and C104-C107 show the model can produce gastrulation-like morphologies (Figure 7). However, the model requires an external force to reorient AB polarity (C92), which is phenomenological rather than mechanistic. While the results are qualitatively consistent with known biology (C88-C90, C94), the reliance on imposed forces and constraints limits the mechanistic insight. The model demonstrates sufficiency but not necessity of the proposed mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors propose that morphological stability, complexity, and diversity are emergent properties of polarized cell populations, with polar adhesion strength, restricted polarity directions, and proliferation rate as major determinants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C108-C112 represent the main hypothesis and conclusions. These are well-supported by the collective modeling results showing stable complex shapes (Figure 3), sensitivity to boundary conditions (Figure 4), effects of proliferation (Figure 5), and PCP-driven morphogenesis (Figures 6-7). The phenomenological approach successfully bridges cellular and tissue scales, though mechanistic details remain abstracted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The introduction establishes biological context about morphological stability, the role of cell polarity in development, and current knowledge gaps regarding how polarity controls morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 provide background knowledge supported by appropriate citations. These establish the biological motivation for the modeling work and identify open questions (C21, C26) that the study addresses. The claims accurately represent established knowledge in developmental biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The model predicts that turning AB polarity in one cell causes forces on neighbors, leading to tissue bending, and that PCP can exist independently of AB polarity while also regulating cell shape changes during invagination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 describe model implications and biological support. The mechanical coupling prediction (C41-C43) follows from the model formulation and is demonstrated in supplementary figures. The biological observations about PCP independence (C44) and its role in invagination (C46-C49) are well-supported by citations, justifying model assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C79",
+      "C80"
+    ],
+    "result": "Environmental signals can orient cell polarities, and there remain unresolved questions about whether oriented cell division or convergent extension controls tube dimensions and whether PCP is important for tube maintenance versus initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C79-C80 identify biological context and open questions that motivate the modeling work. These are supported by appropriate citations and accurately represent current uncertainties in the field.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors developed 6'-homosinefungin (HSF, compound 1) and its derivatives 2a and 5a as potent and selective CARM1 inhibitors. Compound 1 binds Type I PRMTs with IC50 of 13-300 nM, showing ~20-fold improved potency over SAH and SNF. Derivatives 2a and 5a demonstrate preferential CARM1 binding with IC50 values of 30\u00b13 nM and 43\u00b17 nM respectively, with >10-fold selectivity over 33 other methyltransferases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are well-supported by IC50 assay data presented in Figure 1c and Supplementary Table A. The selectivity panel is comprehensive (34 methyltransferases), and the potency improvements are clearly quantified with appropriate error estimates. The structure-activity relationship from 1 to 2a/5a is logical and data-driven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Compounds 2a and 5a were characterized as SAM-competitive, substrate-noncompetitive CARM1 inhibitors with Kd values of 17\u00b18 nM and 9\u00b15 nM respectively. SPR analysis revealed biphasic binding kinetics, and thermal shift assays showed that 2a and 5a increase CARM1 melting temperature by 4.4\u00b0C and 6.5\u00b0C respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by multiple orthogonal biochemical assays (competition assays, SPR, thermal shift). The SAM-competitive/substrate-noncompetitive characterization is appropriately demonstrated through systematic variation of cofactor and substrate concentrations (Figure 2b,c). The biphasic binding kinetics from SPR adds mechanistic depth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "X-ray crystal structures of CARM1 in complex with compounds 1 and 5a were solved at 2.00 \u00c5 resolution. Compound 5a adopts a noncanonical binding pose with its 6'-N-benzyl moiety occupying the pocket normally used by the \u03b1-amino carboxylate of canonical ligands. Compound 1 can adopt four alternative configurations and gains additional hydrogen bonds via its 6'-methyleneamine moiety compared to SAH and SNF, rationalizing its improved potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C57 are strongly supported by high-resolution crystallographic data (2.00 \u00c5) presented in Figures 3-4 and Tables 1-2. The structural analysis is detailed and explains the SAR observed in biochemical assays. The comparison with canonical ligands (SAH, SNF) is thorough and the hydrogen bonding networks are well-characterized across multiple crystal forms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C2",
+      "C3"
+    ],
+    "result": "SKI-73 (6a) functions as a prodrug that penetrates cell membranes and is processed intracellularly into active inhibitors 5a and 2a. Treatment with 10 \u03bcM 6a fully suppressed BAF155 Arg1064 methylation in MCF-7 cells, while direct treatment with 2a or 5a had no effect. Remarkably, >100 \u03bcM of 2a accumulates intracellularly for 2 days after a single 6-hour treatment with 5-10 \u03bcM 6a, representing ~10-fold enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C25-C28 are well-supported by Western blot data (Figure 5b) and LC-MS/MS quantification (Figure 5c). The prodrug strategy is validated by the differential cellular activity of 6a versus 2a/5a. The intracellular accumulation and retention data are quantitative and demonstrate the advantage of the prodrug approach. The SAM concentration measurement (89\u00b116 \u03bcM) provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Mathematical modeling based on LC-MS/MS quantification and Kd values shows that single doses of 2.5-10 \u03bcM 6a achieve >95% CARM1 occupancy within 6 hours, maintained for at least 48 hours. CETSA experiments confirmed that 6a treatment increases cellular CARM1 thermal stability by 4.3\u00b10.6\u00b0C, while control compound 6b does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by quantitative modeling (Figure 5e) based on measured intracellular concentrations and binding constants, and validated by orthogonal CETSA data (Figure 5f). The modeling approach is sound, using appropriate equations for competitive binding. The CETSA provides independent confirmation of target engagement in cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "SKI-73 (6a) suppresses CARM1-dependent methylation marks (BAF155 Arg1064 and PABP1 Arg455/460) in a dose-dependent manner with EC50 values of 0.45-0.75 \u03bcM, correlating well with the modeled 60% CARM1 occupancy at 0.5 \u03bcM 6a treatment for 48 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by Western blot dose-response data (Figure 6a,b). The EC50 values correlate well with the target occupancy modeling from C29, providing internal consistency. The use of two independent methylation marks (BAF155 and PABP1) strengthens the conclusion about on-target CARM1 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C4",
+      "C61"
+    ],
+    "result": "SKI-73 (6a) but not control compound SKI-73N (6b) suppresses MDA-MB-231 cell invasion with EC50 = 1.3 \u03bcM, achieving maximal 80% suppression at \u226510 \u03bcM. This effect recapitulates CARM1 knockout phenotype, and no additional inhibition is observed when 6a is applied to CARM1-KO cells, demonstrating on-target mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C35, C61 are strongly supported by invasion assay data (Figure 6c-e) with appropriate controls (6b negative control, CARM1-KO genetic validation). The lack of additivity between 6a treatment and CARM1-KO is critical evidence for on-target activity. The EC50 is consistent with cellular methylation suppression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C40"
+    ],
+    "result": "Treatment with SKI-73 (6a) or SKI-73N (6b) for 48 hours has no apparent impact on proliferation or cell cycle distribution of parental or CARM1-KO MDA-MB-231 cells, indicating that the anti-invasion effect is proliferation-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C40 are supported by MTT assay data (Figure 6\u2014supplement 1) and cell cycle distribution analysis (Figure 7\u2014supplement 6). This is an important control demonstrating specificity of the invasion phenotype. The consistency with other CARM1 probes (cited) adds confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors performed 10\u00d7 Genomics droplet-based scRNA-seq on 10,914 individual MDA-MB-231 cells treated with SKI-73 (6a), SKI-73N (6b), or DMSO for 48 hours. Cells were classified into G0/G1 (6885 cells), S (1520 cells), and G2/M (2509 cells) phases, then clustered into 21, 7, and 6 subpopulations respectively using a cell-cycle-aware algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 describe the experimental design and are supported by the scRNA-seq data presented in Figure 7 and supplements. The cell numbers are specific and the cell-cycle-aware clustering approach is methodologically sound. The quality control metrics appear appropriate (1000-5000 genes, <20% mitochondrial RNA).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C5"
+    ],
+    "result": "Subpopulation 8 of G0/G1-phase cells is the most sensitive to SKI-73 (6a), being depleted by ~80% with treatment. The authors argue that the invasive phenotype predominantly arises from this subpopulation, which accounts for only ~8% of G0/G1 cells (~5% of total cells), correlating with the ~80% invasion suppression observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41-C42 are supported by population analysis (Figure 7c) and correlation with invasion data. The quantitative correlation between subpopulation depletion (~80%) and invasion suppression (~80%) is compelling. However, the inference that Subpopulation 8 is THE invasion-prone population relies on correlation rather than direct functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Differential expression analysis revealed single-cell transcriptional signatures of metastasis-implicated genes (MORC4, S100A2, RPL39, IFI27, ARF6, CHD11, SDPR, KRT18) that are specific for G0/G1-phase Subpopulation 8 and invasive cells, distinguishing them from other invasion-prone candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by differential expression analysis (Figure 7e, Figure 7\u2014supplement 43). The identification of metastasis-associated genes provides molecular characterization of the invasion-prone subpopulation. However, the functional relevance of these specific genes to invasion in this context is inferred from literature rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C6",
+      "C62"
+    ],
+    "result": "CARM1 knockout or inhibition with SKI-73 (6a) alters epigenetic plasticity in a proliferation-independent manner by replacing the invasion-prone subpopulation with non-invasive subpopulations. Interestingly, SKI-73 (6a) and CARM1 knockout alter epigenetic plasticity with remarkable differences, suggesting distinct modes of action for pharmacological versus genetic perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C44, C62 are supported by comprehensive scRNA-seq analysis comparing SKI-73 treatment, CARM1-KO, and controls (Figure 7, Figure 7\u2014supplement 33). The observation that pharmacological and genetic perturbations produce different epigenetic landscapes is novel and well-documented. The proliferation-independence is established by C36/C40.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In rat liver microsomes, 6a showed decent metabolic stability with 24% remaining after one hour. The conversion of 6a to 5a accounted for 40% of processed 6a, with no 2a detected. Control compound 6b can similarly penetrate cells and be processed into 5b and 2b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by microsomal stability assay data (Figure 5\u2014supplement 5) and cellular LC-MS/MS data (Figure 5\u2014supplement 6). These are important pharmacological characterization data. The differential processing in microsomes (no 2a) versus cells (abundant 2a) suggests cell-specific peptidase activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background claims establishing CARM1 as a cancer-relevant Type I PRMT that methylates diverse transcriptional regulators and is particularly important in hematopoietic malignancies and metastatic breast cancer. CARM1 methylates BAF155 Arg1064 to facilitate SWI/SNF complex recruitment for breast cancer metastasis. EZM2302, TP-064, and SKI-73 are the only selective and cell-active CARM1 chemical probes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11 are background/context claims supported by appropriate citations to prior literature and established knowledge. These provide the scientific rationale for developing CARM1 inhibitors. The claim about the three chemical probes (C11) is based on literature review and appears accurate as of the publication date.",
+    "result_type": "MINOR"
+  }
+]

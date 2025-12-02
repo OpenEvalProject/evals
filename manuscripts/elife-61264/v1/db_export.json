@@ -1,0 +1,2186 @@
+{
+  "submission": {
+    "id": "c329a8d2-9203-4ca5-93f5-4a33d62c9685",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:37:08.593187Z",
+    "updated_at": "2025-12-02T21:37:08.593187Z"
+  },
+  "content": [
+    {
+      "id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "submission_id": "c329a8d2-9203-4ca5-93f5-4a33d62c9685",
+      "content_type": "manuscript",
+      "content_text": "# The deubiquitylase Ubp15 couples transcription to mRNA export\n\n## Authors\n\n- Fanny Eyboulet<sup>1</sup>\n- C\u00e9lia Jeronimo<sup>1</sup>\n- Jacques C\u00f4t\u00e9<sup>2</sup> ([ORCID: 0000-0001-6751-555X](https://orcid.org/0000-0001-6751-555X))\n- Fran\u00e7ois Robert<sup>1</sup> ([ORCID: 0000-0003-1054-5920](https://orcid.org/0000-0003-1054-5920)) \u2020\n\n### Affiliations\n\n1. Institut de recherches cliniques de Montr\u00e9al Montr\u00e9al Canada\n2. St-Patrick Research Group in Basic Oncology, Laval University Cancer Research Center, Axe Oncologie du Centre de Recherche du CHU de Qu\u00e9bec-Universit\u00e9 Laval Qu\u00e9bec City Canada\n3. D\u00e9partement de M\u00e9decine, Facult\u00e9 de M\u00e9decine, Universit\u00e9 de Montr\u00e9al Montr\u00e9al Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nNuclear export of messenger RNAs (mRNAs) is intimately coupled to their synthesis. pre-mRNAs assemble into dynamic ribonucleoparticles as they are being transcribed, processed, and exported. The role of ubiquitylation in this process is increasingly recognized but, while a few E3 ligases have been shown to regulate nuclear export, evidence for deubiquitylases is currently lacking. Here we identified deubiquitylase Ubp15 as a regulator of nuclear export in Saccharomyces cerevisiae. Ubp15 interacts with both RNA polymerase II and the nuclear pore complex, and its deletion reverts the nuclear export defect of E3 ligase Rsp5 mutants. The deletion of UBP15 leads to hyper-ubiquitylation of the main nuclear export receptor Mex67 and affects its association with THO, a complex coupling transcription to mRNA processing and involved in the recruitment of mRNA export factors to nascent transcripts. Collectively, our data support a role for Ubp15 in coupling transcription to mRNA export.\n\n## Introduction\n\nIn eukaryotes, RNA polymerase II (RNAPII) is the enzyme responsible for the transcription of all protein-coding genes, as well as several noncoding RNAs. Rpb1, the largest subunit of RNAPII, contains a C-terminal domain (CTD) composed of 26 to 52 repetitions (in yeast and mammals, respectively) of the heptapeptide Y1S2P3T4S5P6S7 (Chapman et al., 2008). The CTD is highly conserved and essential for the\u00a0viability in all organisms. During transcription, the CTD is extensively and dynamically phosphorylated to coordinate the binding of proteins involved in the different steps of transcription and to couple transcription to mRNA processing (Corden, 2013; Eick and Geyer, 2013; Harlen and Churchman, 2017; Jeronimo et al., 2013; Jeronimo et al., 2016).\n\nDuring their synthesis, processing and export, pre-mRNAs and mature mRNAs are packaged with RNA-binding proteins to form dynamic ribonucleoprotein particles (mRNPs) (Mitchell and Parker, 2014; Singh et al., 2015; Tutucci and Stutz, 2011). The mRNA export machinery is highly conserved from yeast to humans and mainly depends on the export factor Mex67-Mtr2 (TAP-NXF1 in mammals) (Ni\u00f1o et al., 2013; Scott et al., 2019; Wende et al., 2019). Mex67, in complex with Mtr2, mediates transport through the nuclear pore complex (NPC) via interactions with several FG-enriched nucleoporins (Nups) (Santos-Rosa et al., 1998; Str\u00e4sser et al., 2000a; Terry et al., 2007). Mex67 does interact with mRNAs via different mRNA-binding adaptors. Yra1 (ALY/REF in mammals) is the first adaptor to intervein by facilitating the recruitment of Mex67 to the mRNP (Str\u00e4sser and Hurt, 2000b; Zenklusen et al., 2001) while Nab2 has been reported to form a complex with Mex67 and Yra1 (Batisse et al., 2009; Iglesias et al., 2010). Interestingly, an excess of Nab2 can bypass the loss of Yra1 (Iglesias et al., 2010). Npl3, an RNA-binding protein, also directly interacts with Mex67 and participates in mRNA nuclear export (Lee et al., 1996).\n\nThe assembly of pre-mRNAs into mRNPs is functionally and physically coupled to transcription. Indeed, TREX, a protein complex composed of THO (Hpr1, Tho2, Mft1, and Thp2), the Mex67 adapters Yra1 and the DEAD-box ATPase Sub2 (Str\u00e4sser et al., 2002), is recruited to the transcribing RNAPII and helps in the assembly of an export competent mRNP. THO recruitment to active chromatin is facilitated by the Tho2 subunit (Pe\u00f1a et al., 2012). Then, Hpr1 binds Sub2 on nascent transcripts and is implicated in the early recruitment of Mex67, an interaction mediated by a ubiquitin-dependent process (Gwizdek et al., 2005; Gwizdek et al., 2006; Zenklusen et al., 2002). Yra1 is also co-transcriptionally recruited, notably by the cap binding complex (CBC) (Cheng et al., 2006; Sen et al., 2019; Viphakone et al., 2019) and transferred to Sub2 (Johnson et al., 2009; Johnson et al., 2011). Later, TREX-2 (Sac3, Thp1, Sus1, Cdc31, and Sem1) interacts with the nuclear side of the NPC and participates in the coordination between transcription and mRNA export (Cabal et al., 2006; Fischer et al., 2004; Jani et al., 2009; Rodr\u00edguez-Navarro et al., 2004).\n\nIn contrast to Yra1, which is removed from mRNP complexes before exiting the nucleus (Lund and Guthrie, 2005), Nab2 and Npl3 translocate together with the mRNP and are released at the cytoplasmic face of the NPC (Tran et al., 2007). Once the mRNA reaches the cytoplasm, Nup159 and Nup42 NPC subunits recruit two essential mRNA export factors, the DEAD-box ATPase Dbp5 and its ATPase activator Gle1, which are in charge of remodeling and disassembling the mRNPs emerging from the NPC (Adams et al., 2017; Hodge et al., 2011; Lund and Guthrie, 2005; Weirich et al., 2006). Disassembly of the mRNP in the cytoplasm prevents its return to the nucleus, resulting in unidirectional mRNA translocation. In addition, the release of mRNA export factors allow them to return to the nucleus where they can function in additional rounds of mRNA export (Stewart, 2007). Recently, it was shown that Dbp5 does not affect the interaction of Mex67 with the NPC. Instead, it was proposed that Mex67 does not translocate to the cytoplasmic face of the NPC with the mRNPs but rather functions as a mobile nucleoporin, facilitating their translocation to the cytoplasm (Derrer et al., 2019).\n\nProtein ubiquitylation plays very important roles in the control of numerous cellular pathways. In gene expression, ubiquitin has been shown to regulate the activity and turnover of several key transcription factors. The Rsp5 ubiquitin ligase was shown to target RNAPII for degradation during DNA damage (Beaudenon et al., 1999; Huibregtse et al., 1997; Wu et al., 2001). More recently, ubiquitylation of RNAPII in human cells was shown to play a role in transcription-coupled repair (Nakazawa et al., 2020; Tufegd\u017ei\u0107 Vidakovi\u0107 et al., 2020). RNAPII was also shown to be ubiquitylated in vivo by the ubiquitin ligase Asr1 (Daulny et al., 2008). In this case, the ubiquitylation occurs on transcribed genes and leads to the dissociation of two RNAPII subunits (Rpb4/7), a process involved in the silencing of subtelomeric genes (McCann et al., 2016). Ubiquitylation is also involved in mRNA export (Babour et al., 2012). The THO component Hpr1 is poly-ubiquitylated by Rsp5, which facilitates the co-transcriptional recruitment of the mRNA export factor Mex67, via its ubiquitin-associated (UBA) domain (Gwizdek et al., 2005; Gwizdek et al., 2006). The ubiquitin E3 ligase Tom1 is required for ubiquitylation of the Mex67 adaptor Yra1, which promotes its dissociation from mRNP complexes before export to the cytoplasm (Iglesias et al., 2010). H2B ubiquitylation, a histone modification deposited on genes co-transcriptionally, facilitates the assembly of Mex67, Yra1, Nab2, and Npl3 into mRNPs (Vitaliano-Prunier et al., 2012). Interestingly, while H2B ubiquitylation mediates the assembly of Npl3 directly, its effect on Mex67, Yra1, Nab2 assembly onto mRNPs involves the ubiquitylation of Swd2, a subunit of the cleavage and polyadenylation factor (CPF), connecting chromatin to transcriptional termination and mRNA export (Vitaliano-Prunier et al., 2012). Moreover, a systematic analysis of NPC ubiquitylation was conducted in yeast and showed that more than 50% of Nups can be ubiquitylated (Hayakawa et al., 2012). As this modification does not influence Nups localization within the NPC, it is tempting to speculate that it might regulate the interaction with the Mex67 UBA domain during mRNA export.\n\nHere we identified the deubiquitylase Ubp15 as an RNAPII CTD-interacting protein in Saccharomyces cerevisiae. The association of Ubp15 with RNAPII increased in a mutant for the CTD phosphatase Fcp1, suggesting a role in transcriptional elongation. Furthermore, the deletion of UBP15 rescued the sensitivity of transcription elongation factor mutants to 6-azauracil (6AU), an inhibitor of transcription elongation. While these experiments functionally connect Ubp15 to transcription elongation, the deletion of UBP15 did not rescue the transcription elongation processivity defect of dst1\u0394 cells in the presence of 6AU, suggesting that the link between Ubp15 and elongation may be indirect. The deletion of UBP15 rescued the thermosensitivity of a mutant for RSP5, an E3 ligase involved in DNA damage and mRNA export. Interestingly, the deletion of UBP15 suppressed the mRNA export defect of rsp5 mutants. Finally, we showed that Ubp15 regulates the ubiquitylation of Mex67, which in turn regulates its interaction with THO, a complex involved in mRNA processing and export. Collectively, our data support a role for Ubp15 in coupling transcription to mRNA export.\n\n## Results\n\n### Ubp15 associates with RNAPII and the NPC\n\nTo identify new factors interacting with RNAPII in a CTD phosphorylation-dependent manner, we performed a proteomic analysis of RNAPII complexes, affinity-purified from wild type (WT) and fcp1-1 cells (Figure 1A, Figure 1\u2014figure supplement 1). Fcp1 is a major CTD phosphatase and its mutation leads to increased CTD phosphorylation at serines 2, 5, and 7 (Bataille et al., 2012). Quantitative analysis of the RNAPII-associated proteins identified 45 proteins differentially associated with the polymerase in fcp1-1 cells (35 being more abundant and 10 being less abundant by at least twofold; Figure 1B, Supplementary file 1). One RNAPII-interacting protein identified in this experiment is Ubp15, a deubiquitylase known for its role in the regulation of endocytosis (Ho et al., 2017; Kouranti et al., 2010), progression into the\u00a0S phase (\u00c1lvarez et al., 2016; Ostapenko et al., 2015), peroxisomal export (Debelyy et al., 2011), and methylmercury susceptibility (Hwang et al., 2012), but with no known roles in transcription. The association of Ubp15 with RNAPII is increased in the fcp1-1 mutant, suggesting it is recruited (directly or indirectly) to the elongating polymerase via CTD phosphorylation. To confirm this interaction, we performed a reciprocal affinity purification experiment where Ubp15 was affinity-purified in WT cells and analyzed by mass spectrometry (Figure 1C) and western blot (Figure 1D). This experiment confirmed the interaction between Ubp15 and the phosphorylated form of RNAPII (Figure 1D) and, surprisingly, revealed the enrichment of almost the entire NPC (Figure 1C). Collectively, these experiments identified Ubp15 as an interactor of the phosphorylated RNAPII and the NPC.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig1-v1.jpg)\n\n**Figure 1.:** (A) A schematic representation of the proteomic experiment shown in panel B. (B) Volcano plot showing the average intensity versus relative abundance (log2) of proteins identified in RNAPII complexes purified from fcp1-1 versus WT cells using spectral counts as a proxy for relative protein abundance. RNAPII subunits are shown in black and other proteins of interest are indicated. Ubp15 is circled in red. In the interest of clarity, the maximum value of the y-axis was set at 100, resulting in Rpb1 and Rpb2 not appearing on the graph. See Supplementary file 1 for the complete list of values. (C) Spectral counts of the proteins identified in a TAP-tag purification of Ubp15. (D) Western blot confirming that Ubp15 is associated with a phosphorylated form of RNAPII (Rpb1-Ser5P).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A silver-stained SDS-PAGE gel showing RNAPII complexes purified from WT and fcp1-1 cells. Lanes 1 and 2 are control purifications from cells non-expressing Rpb1-TAP protein. The bait (Rpb1-TAP), the IgG (from the beads used to purify the complexes), and the TEV (used to cleave within the TAP-tag and eluate the complexes from the beads) are indicated. (B) Western blot showing Rpb1, Rpb1-Ser2P, Rpb3, and Spt16 in RNAPII complexes purified from WT and fcp1-1 cells. Lanes 1 and 2 are control purifications from cells non-expressing Rpb1-TAP protein.\n\n### Ubp15 genetically interacts with elongation factors\n\nInterestingly, the histone chaperone and elongation factor FACT (Spt16 and Pob3) is also enriched in RNAPII purified from fcp1-1 cells (Figure 1B, Figure 1\u2014figure supplement 1B, Supplementary file 1) and both FACT and Rpb1 are substrates of Ubp15 in Schizosaccharomyces pombe (Beckley et al., 2015). In addition, the association of Asr1, a ubiquitin ligase known to bind the CTD and to ubiquitylate RNAPII in the context of elongation (Daulny et al., 2008; McCann et al., 2016), is decreased in fcp1-1 cells (Figure 1B, Supplementary file 1). These results prompted us to investigate the possible role for Ubp15 in transcription elongation.\n\nFirst, we looked for sensitivity to 6-azauracil (6AU), an inhibitor of GTP biosynthesis commonly used to test for mutations that affect transcriptional elongation (Riles et al., 2004). While the ubp15\u0394 mutant did not show significant sensitivity to 6AU on its own, it rescued the 6AU sensitivity of several elongation factor mutants including dst1\u0394 (TFIIS), spt4\u0394 and spt5-CTR\u0394 (DSIF), spt6-1004 and hpr1\u0394 (THO) (Figure 2A, Figure 2\u2014figure supplement 1A). Interestingly, the 6AU sensitivity of other elongation factors such as bur2\u0394, ctk1\u0394, rtf1\u0394, and cdc73\u0394 mutants was not affected by the deletion of UBP15 (Figure 2\u2014figure supplement 1A). Then, we used a Ubp15 catalytic dead mutant, ubp15-C214A (Debelyy et al., 2011), to test whether the observed genetic interactions were mediated by its catalytic activity. Double mutants ubp15\u0394/dst1\u0394 and ubp15\u0394/spt4\u0394 were complemented with plasmids expressing WT or C214A versions of Ubp15 and spotted on 6AU. The ubp15-C214A mutant, but not the WT UBP15, rescued the dst1\u0394 and spt4\u0394 sensitivities to 6AU (Figure 2B), demonstrating that the effect of Ubp15 on elongation depends on its catalytic activity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig2-v1.jpg)\n\n**Figure 2.:** (A) Serial-dilution growth assays assessing the 6AU sensitivity of WT, dst1\u0394, and spt4\u0394 cells, alone and in combination with ubp15\u0394. The indicated yeast strains were grown to saturation in YNB medium lacking uracil (\u2212URA), washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on \u2013URA in the absence or presence of 6AU as indicated. Plates were incubated at 30\u00b0C for 3 days. (B) Top: Serial-dilution growth assays assessing the requirement of the catalytic activity of Ubp15 for its effect on the 6AU sensitivity of WT, dst1\u0394, and spt4\u0394 cells. Strains were deleted for UBP15, DST1, and SPT4, alone or in combinations, and transformed with empty vector, plasmids expressing Ubp15-3Flag (UBP15) or catalytic dead Ubp15-C214A-3Flag (ubp15-C214A) and spotted on \u2212URA lacking histidine (\u2212URA\u00a0/\u2212HIS) in the absence or presence of 6AU as indicated. Bottom: Equal expression levels of WT and catalytic dead versions of Ubp15-3Flag in WT, dst1\u0394, and spt4\u0394 cells were confirmed by western blot. Note that the 6AU concentration varies and has been optimized for each mutant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Deletion of UBP15 suppresses the 6AU sensitivity of spt5-CTR\u0394, spt6-1004, and hpr1\u0394 cells but not of bur2\u0394, ctk1\u0394, rtf1\u0394, and cdc73\u0394 cells.\u00a0Cells were grown, diluted, and spotted as described for Figure 2A. Note that the 6AU concentration varies and has been optimized for each mutant. (B) Serial-dilution growth assays assessing the sensitivity of WT and ubp15\u0394 cells to various conditions. Cells were grown to saturation in YPD medium, washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on the indicated media. For growth at 37\u00b0C and 15\u00b0C, spt6-11 was used as a positive control. For heat-shock, plates were placed for 30 min at 50\u00b0C before incubation at 30\u00b0C and mex67-5 was used as a positive control. For ultraviolet light (UV), the plates were subjected to the indicated doses of UV (UV Stratalinker 1800) right after spotting and rad6\u0394 was used as a positive control. For hydroxyurea (HU), bur2\u0394 was used as a positive control. For formamide and caffeine, rad6\u0394 was used as a positive control.\n\nNoteworthy, we also looked at the phenotype of ubp15\u0394 cells under several other growth conditions and confirmed previously described sensitivity to cold temperature and hydroxyurea (HU) (Amerik et al., 2000; Ostapenko et al., 2015), while elevated temperature, ultraviolet light, formamide or caffeine had no detectable effect (Figure 2\u2014figure supplement 1B). Collectively, these genetic interactions confirm the\u00a0previous literature on Ubp15 and demonstrate a functional link between Ubp15 deubiquitylase activity and transcription elongation.\n\n### Ubp15 does not regulate RNAPII processivity\n\nThe suppression of the 6AU sensitivity of several elongation factors is consistent with a role for Ubp15 in transcription elongation. In S. cerevisiae, elongation factors affect the processivity of RNAPII (i.e. the capacity of the polymerase to reach the end of the gene) but have no measurable impact on the elongation rate (Mason and Struhl, 2005). We, therefore, tested the effect of UBP15 deletion on RNAPII processivity in WT and dst1\u0394 cells. We first compared RNAPII occupancy at the beginning and the end of YLR454W (a\u00a0~\u00a08 kb-long gene) by chromatin immunoprecipitation (ChIP) followed by quantitative PCR (qPCR) as described before (Mason and Struhl, 2003; Mason and Struhl, 2005; Schwabish and Struhl, 2004; Str\u00e4sser et al., 2002). Surprisingly, we found that the deletion of UBP15 did not rescue the processivity defect of dst1\u0394 cells in the presence of 6AU (Figure 3A). To extend this analysis to the whole genome, we performed ChIP followed by hybridization on tiling microarrays (ChIP-chip) experiments in WT, ubp15\u0394, dst1\u0394, and ubp15\u0394/dst1\u0394 cells and mapped average RNAPII occupancy over transcribed genes (Figure 3B, Figure 3\u2014figure supplement 1). These experiments confirmed the processivity defect of dst1\u0394 cells but, consistently with our ChIP-qPCR analysis of the YLR454W gene (Figure 3A), revealed no effect of UBP15 deletion on RNAPII processivity in WT or dst1\u0394 cells. This result was somewhat unexpected given the genetic interactions described in Figure 2 and suggests that UBP15 deletion may rescue the 6AU sensitivity of elongation factor mutants indirectly. Alternatively, Ubp15 may affect elongation rate, a parameter not investigated here, but this appears unlikely since no elongation factor has been shown to affect this parameter in yeast (Mason and Struhl, 2005). One attractive possibility, given the interaction between Ubp15 and the NPC, is that UBP15 deletion affects a post-transcriptional process in a way that compensates for elongation defects of elongation factor mutants.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig3-v1.jpg)\n\n**Figure 3.:** (A) RNAPII processivity, defined as the ratio of the % of Input detected in the 3\u2019 amplicon divided by the % of Input detected in the 5\u2019 amplicon, after 30 min treatment with 6AU (dark gray) and absence of 6AU (light gray), as determined by ChIP-qPCR. Experiments were performed in two biological replicates. Bars show the average and circles show individual replicates. The position of PCR amplicons over the YLR454W gene used for the qPCR is indicated on the sketch above the graphs. (B) Aggregate profiles of RNAPII (Rpb3) occupancy over highly expressed yeast genes longer than 1 kb (n\u00a0=\u00a0234) as determined by ChIP-chip after 1 hr treatment with 6AU. TSS, transcription start site; pA, polyadenylation site.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** All genes with measurable values are shown (n\u00a0=\u00a04889).\n\n### Ubp15 controls nuclear polyA RNA accumulation\n\nTo identify a role for Ubp15 that may explain its indirect elongation phenotype, we looked for an E3 ligase that would oppose its function. Through testing several candidates (Figure 4A, Figure 4\u2014figure supplement 1A), we noticed that a mutant of the E3 ligase Rsp5 (rsp5-1) exacerbated the 6AU sensitivity of dst1\u0394 cells (Figure 4A). This effect of rsp5-1 on the dst1\u0394 6AU sensitivity is opposite to that of ubp15\u0394 (Figure 2A) suggesting that Rsp5 and Ubp15 may oppose each other in regulating a process genetically connected to transcription elongation. Furthermore, the deletion of UBP15 can partially rescue the 6AU sensitivity of rsp5-1/dst1\u0394 mutant (Figure 4A). The antagonistic relationship between Rsp5 and Ubp15 is also supported by the fact that the deletion of UBP15 rescued the thermosensitivity phenotype of rsp5-ts mutants (Figure 4B and Figure 4\u2014figure supplement 1B). Importantly, the rescue of rsp5-1 thermosensitivity was also observed with the ubp15-C214A mutant indicating it is dependent on the catalytic activity of Ubp15 (Figure 4C). Because we found that overexpression of Rps5-1 can rescue the rsp5-1 thermosensitivity phenotype (Figure 4\u2014figure supplement 1C), we next tested whether Rsp5 protein levels were affected by the deletion of UBP15. As shown in Figure 4\u2014figure supplement 1D, Rsp5 protein levels in rsp5-1 cells are actually decreased upon deletion of UBP15. This result suggests that UBP15 deletion suppresses the rsp5-1 thermosensitivity phenotype by other mechanisms, as explored further below.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig4-v1.jpg)\n\n**Figure 4.:** (A) Serial-dilution growth assays assessing the sensitivity of rsp5-1 cells, alone or in combination with dst1\u0394 and or ubp15\u0394, to 6AU. The indicated yeast strains were grown to saturation in YNB medium lacking uracil (\u2212URA), washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on \u2013URA in the absence or presence of 6AU as indicated. Plates were incubated at 30\u00b0C for 3 days. (B) Serial-dilution growth assays assessing the effect of UBP15 deletion on the viability of rsp5-1 cells at 33\u00b0C. The indicated yeast strains were grown to saturation in YPD, washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on YPD. Plates were incubated for 3 days at 30\u00b0C or 33\u00b0C as indicated. (C) Serial-dilution growth assays assessing the contribution of the catalytic activity of Ubp15 to the genetic interaction between RSP5 and UBP15 shown in panel B. Strains deleted for UBP15, alone or in combination with the rsp5-1 mutation, were transformed with empty vector, plasmids expressing Ubp15-3Flag (UBP15) or catalytic dead Ubp15-C214A-3Flag (ubp15-C214A), spotted on YNB medium lacking histidine (\u2212HIS), and incubated at 30\u00b0C or 33\u00b0C as indicated. (D) RNA FISH experiments looking at bulk polyA RNAs in WT, ubp15\u0394, rsp5-1, and ubp15\u0394/rsp5-1 cells (FY genetic background). The indicated strains were grown at 30\u00b0C in YPD then shifted to 37\u00b0C for 3 hr before being analyzed by FISH using Cy5-oligo-dT45. DNA was stained with DAPI. Scale bar, 10 \u00b5m. The percentage of cells (from at least 200 cells in each strain) with retention of polyA RNA in the nucleus is indicated on the graphic shown at the bottom (WT: 0/200, ubp15\u0394: 0/200, rsp5-1: 172/222, ubp15\u0394/rsp5-1: 11/227).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Serial-dilution growth assays to screen various E3 ligases for genetic interaction with DST1.\u00a0The indicated yeast strains were grown to saturation in YNB lacking uracil (\u2212URA), washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on \u2212URA in the absence or presence of 6AU as indicated. Plates were incubated for 3 days at 30\u00b0C. (B) Serial-dilution growth assays assessing the effect of UBP15 deletion on the\u00a0viability of rsp5-1, rsp5-sm1, and rsp5-3 cells at 33\u00b0C or 37\u00b0C. The indicated yeast strains were grown to saturation in YPD, washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on YPD. Plates were incubated for 3 days at 30\u00b0C or 33\u00b0C as indicated. (C) Serial-dilution growth assays assessing the effect of Rsp5-1 overexpression (when expressed under the ADH1 promoter) on the\u00a0viability of rsp5-1 cells at 33\u00b0C. The indicated yeast strains were grown to saturation in YPD, washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on YPD. Plates were incubated for 3 days at 30\u00b0C or 33\u00b0C as indicated. (D) Western blot showing HA-Rsp5 levels in WT, rsp5-1, ubp15\u0394, and ubp15\u0394/rsp5-1 cells. The expression of Rsp5-1 under the control of the ADH1 promoter (used in \u2018C\u2019) is also shown.\n\nRsp5 is an E3 ligase involved in DNA damage (Beaudenon et al., 1999) and mRNA export (Rodriguez et al., 2003). At high temperatures, the rsp5-1 mutant accumulates mRNA in the nucleus (Rodriguez et al., 2003). We, therefore, compared polyA RNA localization in rsp5-1 and ubp15\u0394/rsp5-1 cells by RNA fluorescent in situ hybridization (FISH) using a Cy5-labeled oligo-dT45 probe. Interestingly, these experiments showed that the deletion of UBP15 suppressed the mRNA export defect of the rsp5-1 mutant (Figure 4D). Indeed, the deletion of UBP15 reduced the number of cells retaining polyA RNAs in their nucleus from around 75% (172/222) to less than 5% (11/227). This suppression of mRNA export defect likely explains how UBP15 deletion restored the viability of rsp5 mutants and clearly establishes a role for Ubp15 in mRNA export.\n\n### Ubp15 and Rsp5 have opposite effects on Mex67 ubiquitylation\n\nTo identify potential substrates for Ubp15 in the mRNA export pathway, we measured ubiquitylation levels of Mex67 (Figure 5B,C), six NPC components (Nup82, Nup133, Nup57, Nup120, Nup145, and Nup159) (Figure 5\u2014figure supplement 1A) and four nuclear export factors (Hpr1, Nab2, Npl3, and Mtr2) (Figure 5\u2014figure supplement 1B) in ubp15\u0394 cells using a previously described in vivo ubiquitylation assay (Figure 5A; Gwizdek et al., 2005). These experiments identified Mex67 as a likely substrate of Ubp15 (Figure 5B,C). Interestingly, Mex67 ubiquitylation levels decreased in rsp5-1 (Figure 5B), suggesting that Rsp5 and Ubp15 may oppose each other in the control of Mex67 ubiquitylation. To assess this possibility more directly, we tested Mex67 ubiquitylation levels in ubp15\u0394/rsp5-1 double mutant and found that the deletion of UBP15 normalized Mex67 ubiquitylation of rsp5-1 cells (Figure 5C). Collectively, these experiments established Rsp5 and Ubp15 as an E3 ligase/deubiquitylase tandem regulating Mex67 ubiquitylation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig5-v1.jpg)\n\n**Figure 5.:** (A) A schematic representation of the in vivo ubiquitylation assay used in panels B and C. A plasmid expressing polyhistidine-tagged ubiquitin (6His-Ub) under the control of a copper-inducible promoter was transformed in WT and mutant cells. 6His-Ub expression was induced with copper sulfate (CuSO4) and His-tagged ubiquitin-conjugated proteins were purified using Ni-NTA beads and analyzed by western blot. (B) Western blots for Mex67-6HA levels from His-tagged ubiquitin-conjugated protein pulldowns (Ni-NTA) and their inputs expressing (+) or not (\u2212) 6His-Ub in WT, ubp15\u0394, and rsp5-1 cells. (C) Same as panel B but for WT, ubp15\u0394, rsp5-1, and ubp15\u0394/rsp5-1 cells. (D) Ubp15 regulates the interaction of THO and CBC with Mex67. A volcano plot showing the significance versus the log2 fold change for the proteins identified in Mex67-3Flag purifications by MS in ubp15\u0394 versus WT cells. Gray dots show the bulk of the data and the regions for significant (p value<0.1) twofold changes are boxed. THO, CBC, and NPC subunits are labeled in red, gold, and blue, respectively. See Supplementary file 2 for the complete list of values. (E) A graphical model illustrating how the ubiquitylation/deubiquitylation of Hpr1 and Mex67 by Rps5, Ubp15, and likely other deubiquitylases, may enable dynamic interactions between THO and Mex67. Both promoting and disrupting these interactions are surmise to be required for the mRNPs to mature into export-competent particles.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Western blots for NPC components (Nup82-6HA, Nup133-6HA, Nup57-6HA, Nup120-6HA, Nup145-6HA, and Nup159-6HA) levels from His-tagged ubiquitin-conjugated protein pulldowns (Ni-NTA) and their inputs expressing (+) or not (\u2212) 6His-Ub in WT and ubp15\u0394 cells. (B) Western blots for nuclear export factors (Hpr1-6HA, Nab2-6HA, Npl3-6HA, and Mtr2-6HA) levels from His-tagged ubiquitin-conjugated protein pulldowns (Ni-NTA) and their inputs expressing (+) or not (\u2212) 6His-Ub in WT and ubp15\u0394 cells.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Lanes 1 and 2 are control purifications from cells non-expressing any Mex67-3Flag protein. The bait (Mex67-3Flag) and IgG (from the beads used to purify the complexes) are indicated.\n\n### Ubp15 regulates the interaction of Mex67 with THO and the cap-binding complex\n\nOur data so far show that Rsp5 and Ubp15 oppose each other in the regulation of mRNA export and ubiquitylation of Mex67. Since Mex67 is known to function as part of a large and dynamic protein interaction network, we hypothesized that its ubiquitylation may modulate its interactome. Hence, we tested whether the proteome associated with Mex67 is modified in ubp15\u0394 cells. We performed a proteomic analysis of Mex67, affinity-purified from WT and ubp15\u0394 cells (Figure 5D, Figure 5\u2014figure supplement 2). As expected, based on previous studies (Batisse et al., 2009; Gwizdek et al., 2006; Oeffinger et al., 2007; Santos-Rosa et al., 1998; Saroufim et al., 2015; Str\u00e4sser and Hurt, 2000b; Zenklusen et al., 2001), we found a large number of Mex67-interacting proteins including Mtr2, Nab2, Yra2, the THO complex and nearly the entire NPC (Supplementary file 2). Among those, only seven were differentially associated with Mex67 in ubp15\u0394 cells by at least twofold (Figure 5D). Interestingly, all those interactors were less associated with Mex67 in ubp15\u0394 cells, suggesting that the ubiquitylation of Mex67 negatively regulates its association with these factors. Strikingly, these proteins include all four subunits of the THO complex (Hpr1, Tho2, Mft1, and Thp2) and both subunits of the heterodimeric cap-binding complex (CBC; Sto1 and Cbc2) known to recruit THO/TREX to the 5\u2019-cap of nascent pre-mRNAs (Figure 5D) in yeast and humans (Cheng et al., 2006; Sen et al., 2019; Viphakone et al., 2019). We noted also that several subunits of the NPC, including the nuclear basket protein Mlp1, showed a slightly increased association with Mex67 in ubp15\u0394 cells compared to WT cells (although below our significance threshold) (Figure 5D). Together, these results support a model where Mex67 ubiquitylation, controlled by Rsp5 and Ubp15, regulates the association of Mex67 to pre-mRNAs via interactions with THO and cap binding factors (Figure 5E).\n\n## Discussion\n\nIn this study, we characterized the role of the deubiquitylase Ubp15 in mRNA export in yeast. Initially, we identified Ubp15 as an interactor of the phosphorylated RNAPII and the NPC. We then investigated for a role in transcription elongation and showed that the deletion of UBP15 rescues the sensitivity of diverse transcription elongation factor mutants to 6AU but surprisingly does not rescue the transcription elongation processivity defect in these mutants. These results argue against a direct role of Ubp15 in transcriptional elongation and rather suggest that it regulates a post-transcriptional event in a way that indirectly suppresses the growth phenotype of elongation factor mutants. While looking for an E3 ligase that may oppose the function of Ubp15, we found that the deletion of UBP15 can rescue the thermosensitivity of a mutant of RSP5. Interestingly, the deletion of UBP15 suppresses the mRNA export defect of rsp5 ts mutants, establishing a role for Ubp15 in mRNA export. We then showed that Ubp15 and Rsp5 control the ubiquitylation levels of Mex67 and that Mex67 ubiquitylation negatively regulates its interaction with THO and CBC. Collectively, our data support a role for Ubp15 in coupling transcription to mRNA export.\n\nOur initial data showed that the interaction of Ubp15 with RNAPII is increased in the mutant for the CTD phosphatase fcp1-1. In this mutant, RNAPII is hyper-phosphorylated, notably on its Ser2, a phosphorylation state which is predominant towards the 3\u2019-end of genes (Bataille et al., 2012). mRNA processing and export factors also function near the 3\u2019-end of genes and some even require Ser2 phosphorylation for their recruitment (Jeronimo et al., 2013), which could explain the link between Ubp15, RNAPII CTD phosphorylation, and mRNA export.\n\nIn principle, one possible role of Mex67 ubiquitylation/deubiquitylation by Rsp5 and Ubp15, respectively, could be to regulate its nuclear localization. However,\u00a0we could not observe any effect of ubp15\u0394 or rsp5-1 mutants on Mex67 localization by immunofluorescence (Mex67 localized at the nuclear envelope in all strains tested, data not shown). This is consistent with a recent paper from Derrer et al., 2019 which demonstrated that Mex67 localization is restricted to the NPC. Instead, we showed that Mex67 ubiquitylation (i.e. UBP15 deletion) negatively affects its interaction with the THO and CBC complexes. Interestingly, CBC was shown to recruit THO/TREX to the 5\u2019-cap via interaction with Yra1 (Cheng et al., 2006; Sen et al., 2019; Viphakone et al., 2019). Hence, our data suggest that the assembly of Mex67 into mRNPs during transcription is counteracted by its ubiquitylation. In such a model, Ubp15, recruited by the phosphorylated RNAPII CTD, would antagonize Mex67 ubiquitylation, hence allowing Mex67 recruitment to the pre-mRNA by CBC and THO/TREX. However,\u00a0we were not able to show a reduction in Mex67 occupancy on genes in ubp15\u0394 cells using ChIP (data not shown). These results, however, should be interpreted with caution since the\u00a0Mex67 ChIP generated a\u00a0very low signal over the\u00a0background (data not shown). It is, therefore, possible that an effect on Mex67 occupancy had been missed due to technical limitations. Alternatively, Ubp15 may regulate a step in the assembly of Mex67 into mRNP that is not detectable by ChIP. For instance, Ubp15 may regulate the translocation of Mex67 from the RNAPII elongating complex onto the mRNA before its release, a step that would be more easily assayed by protein-RNA detection methods such as CRAC or PAR-CLIP.\n\nHow could ubiquitylation of Mex67 prevent its interaction with CBC and THO/TREX? Ubiquitylation of Mex67 may prevent interaction with CBC and THO/TREX by a simple sterical block or, \u2012since Mex67 contains a UBA domain\u2012 Mex67 ubiquitylation may trigger an intramolecular interaction between the conjugated ubiquitin and the UBA domain, creating a folded closed conformation. In line with such a scenario, the UBA is known to bind ubiquitylated Hpr1 (a component of THO/TREX) (Gwizdek et al., 2006). A competition of the UBA domain for binding to ubiquitylated Hpr1 and the internal Mex67 ubiquitylated site would provide a switch for Mex67 binding to THO/TREX.\n\nInterestingly, Hpr1 ubiquitylation is mediated by Rsp5 (Gwizdek et al., 2005; Gwizdek et al., 2006). Hence, Rsp5-mediated ubiquitylation of Hpr1 and Mex67 deubiquitylation by Ubp15 would work hand in hand towards the assembly of Mex67 into mRNPs. This model, however, is at odds with our observation that UBP15 deletion and catalytically inactive Ubp15 do revert Rsp5 export defects. Indeed, this genetic interaction suggests that the deletion of UBP15 promotes export (i.e. the activity of Ubp15 would impair export), while the effect we observed on Mex67 interactions with THO and CBC would intuitively have the opposite effect (by promoting Mex67 interaction with THO and CBC, Ubp15 should have a positive effect on export). This conundrum may be solved by considering alternative scenarios. For instance, in rsp5 mutant cells, Mex67 \u2012which lost the ability to interact with THO/TREX via Hpr1\u2012 may (hypothetically) find another route towards assembly into mRNPs when ubiquitylated, a condition that would be favored by the deletion of UBP15. This would be reminiscent of what happens during heat-shock, where stress-response mRNAs are rapidly exported by Mex67, without the need for adapters (Zander et al., 2016). This alternative mRNA export pathway allows fast export of stress response mRNAs but at the expense of mRNA quality control, which is bypassed. Assuming that UBP15 deletion re-routes mRNA export toward such a pathway, one would expect ubp15\u0394 cells to accumulate aberrant transcripts in their cytoplasm, which we were not able to detect (data not shown). An alternative model, consistent with all our data, would be that Mex67 and Hpr1 ubiquitylation need to turnover for mRNA export to optimally function (see model in Figure 5E). Indeed, it sounds reasonable to think that Mex67 and Hpr1 need to flip back and forth between their ubiquitylated and non-ubiquitylated forms, considering the very dynamic nature of the interactions that they form and the fact that mRNPs are being remodeled during their journey from the transcription site to the cytoplasmic side of the nuclear envelope. For example, one may envision that deubiquitylation of Mex67 is important for its recruitment by THO but that its ubiquitylation is also important to allow Mex67 to let go of THO and escort the mRNA to the NPC. In summary, the exact molecular mechanisms describing the role of Ubp15 in mRNA export and its coupling to transcription will require additional work, but the data presented here clearly establish this deubiquitylase as a new player in this arena.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>Various</td>\n      <td>This paper</td>\n      <td>NCBITaxon:4932</td>\n      <td>See Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Various</td>\n      <td>This paper</td>\n      <td>Plasmids</td>\n      <td>See Supplementary file 4</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Flag M2 mouse monoclonal antibody</td>\n      <td>Sigma</td>\n      <td>Cat# F3165, RRID:AB_259529</td>\n      <td>34 \u00b5g per IP</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Rpb3 mouse monoclonal antibody (W0012)</td>\n      <td>Neoclone/Biolegend</td>\n      <td>Cat# 665003, RRID:AB_2564529</td>\n      <td>3 \u03bcL per ChIP</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-HA F7 mouse monoclonal antibody</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat# sc-7392, RRID:AB_627809</td>\n      <td>(1:1000) for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit IgG</td>\n      <td>Sigma</td>\n      <td>Cat# I5006, RRID:AB_1163659</td>\n      <td>50 mg coupled to 2 \u00d7 1010 Dynabeads M-270 Epoxy</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Pan Mouse Dynabeads</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 11042</td>\n      <td>50 \u03bcL per ChIP 200 \u00b5L per IP</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dynabeads M-270 Epoxy</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 14302D</td>\n      <td>200 \u00b5L per IP</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ni-NTA agarose beads</td>\n      <td>Qiagen</td>\n      <td>Cat# 30210</td>\n      <td>100 \u00b5L per purification</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>mono-reactive NHS ester fluorescent Cy5 and Cy3 dyes</td>\n      <td>GE Healthcare</td>\n      <td>Cat# PA23001 Cat# PA25001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Versatile Aggregate Profiler (version 1.1.0)</td>\n      <td>Brunelle et al., 2015; Coulombe et al., 2014</td>\n      <td></td>\n      <td>http://lab-jacques.recherche.usherbrooke.ca/vap</td>\n    </tr>\n  </tbody>\n</table>\n\n### Yeast strains and plasmids\n\nGenotypes for the yeast strains used in this study are listed in Supplementary file 3. All tagged and deletion strains were done by homologous recombination of appropriate PCR cassettes. The catalytic dead ubp15 mutation (C214A) was introduced into pFR559 by inverted PCR (forward: p-GCCTATTTGAATTCGTTATTGC, reverse: TGTGGCACCCTGATTTCGGAAGCCA) to generate pFR560 (see Supplementary file 4). Each construct was validated by sequencing and their expression tested by western blot analysis.\n\n### Serial-dilution growth assays\n\nCells were grown to saturation in the indicated media at 30\u00b0C, washed, and resuspended to an OD600 of 1.0 in H2O. Cells were then subjected to fivefold serial dilutions and spotted onto the appropriate media. Plates were incubated at 30\u00b0C for 3 days unless specified otherwise. Images presented in figures are representative examples of at least two biological replicates, except for the cold sensitivity (15\u00b0C) assay in Figure 2\u2014figure supplement 1B and thermosensitivity assays in Figure 4\u2014figure supplement 1B\u2013C, which were done once. In addition, several phenotypes were confirmed in two different yeast genetic backgrounds.\n\n### Purification of proteins associated with RNAPII, Ubp15, and Mex67\n\nTAP-tagged Rpb1 subunit of RNAPII from WT and fcp1-1 cells was purified in two biological replicates by one-step affinity purification essentially as published previously (Jeronimo et al., 2015). In brief, following cryogenic disruption of cells (Trahan et al., 2016), frozen cell grindate (5 g) was thawed into nine volumes of EB150 extraction buffer (20 mM Tris-HCl pH 7.5, 150 mM KOAc, 1 mM EDTA pH 8.0, 0.5% Triton X-100, 10% glycerol, 1 mM DTT, protease and phosphatase inhibitors, and 1:5000 Antifoam B [Sigma]), vortexed for 30 s and homogenized (Polytron PT 1200E; Kinematica AG) for another 30 s, to allow for maximal recovery of chromatin proteins. The cleared extract was incubated for 1 hr at 4 \u00b0C with 200 \u00b5L of pre-washed magnetic Dynabeads M-270 Epoxy (Thermo Fisher Scientific) conjugated to rabbit IgG (Sigma). Dynabeads were then collected and washed five times with EB150 buffer and two times with TEV150 protease cleavage buffer (10 mM Tris-HCl pH 8.0, 150 mM KOAc, 0.5 mM EDTA pH 8.0, 0.1% Triton X-100, 10% glycerol, and 1 mM DTT). The isolated protein complex was eluted by incubating the beads overnight at 4 \u00b0C with 200 units of TEV protease (Thermo Fisher Scientific) in 500 \u00b5L of TEV150 buffer. After digestion, the collected eluate was incubated with pre-washed nickel-nitrilotriacetic acid (Ni-NTA) agarose beads (Qiagen) for 90 min at 4\u00b0C to remove the His-tagged TEV protease. The collected eluate was concentrated to\u00a0~300 \u00b5l by dialysis in PEG dialysis buffer (10 mM HEPES-KOH pH 7.9, 0.1 mM EDTA pH 8.0, 100 mM KOAc, 20% glycerol, 20% PEG-8000 and 1 mM DTT) and then dialyzed in No-PEG dialysis buffer (10 mM HEPES-KOH pH 7.9, 0.1 mM EDTA pH 8.0, 100 mM KOAc, 20% glycerol and 1 mM DTT). A fraction of the purified proteins was separated by SDS-PAGE on a 4\u201312% NuPAGE Novex Bis-Tris precast gel (Thermo Fisher Scientific) and visualized by silver staining and western blot analysis with the indicated antibodies. Proteins were precipitated with TCA before mass spectrometry analysis.\n\nFor the purification of the Ubp15-TAP complex, the same one-step affinity purification procedure was used except that the salt concentration of the buffers involved in the preparation of the extract and the purification step was increased to 500 mM. In brief, EB500 extraction buffer (20 mM Tris-HCl pH 7.5, 500 mM KOAc, 1 mM EDTA pH 8.0, 0.5% Triton X-100, 10% glycerol, 1 mM DTT, protease and phosphatase inhibitors and 1:5000 Antifoam B [Sigma]) and TEV500 protease cleavage buffer (10 mM Tris-HCl pH 8.0, 500 mM KOAc, 0.5 mM EDTA pH 8.0, 0.1% Triton X-100, 10% glycerol and 1 mM DTT) were used.\n\nFor the purification of the proteins associated with Mex67-3Flag from WT and ubp15\u0394 cells, frozen cell grindates (1 g), from three biological replicates, were thawed into nine volumes of TBT extraction buffer (20 mM HEPES-KOH pH 7.5, 110 mM KOAc, 1 mM MgCl2, 0.5% Triton X-100, 0.1% Tween 20, 1 mM DTT, protease inhibitor mixture, SUPERaseIn RNase inhibitor [Thermo Fisher Scientific] and 1:5000 Antifoam B [Sigma]) as previously described (Oeffinger et al., 2007). The cell extracts were then vortexed for 30 s, homogenized (Polytron PT 1200E; Kinematica AG) for another 30 s, and clarified by centrifugation at 3500 rpm for 10 min at 4\u00b0C. The Mex67-3Flag tagged protein was isolated using 200 \u00b5L of pre-washed magnetic Pan Mouse Dynabeads (Thermo Fisher Scientific) coupled to 34 \u00b5g of anti-Flag M2 mouse monoclonal antibody (Sigma). After binding for 1 hr at 4\u00b0C, Dynabeads were collected and washed five times with TBT extraction buffer and five times with TBT washing buffer (20 mM HEPES-KOH pH 7.5, 110 mM KOAc, 1 mM MgCl2). The isolated protein complex was eluted twice by incubating each time the beads 20 min at room temperature with 500 \u00b5L of NH4OH elution buffer (0.5 M NH4OH, 1 mM EDTA pH 8.0). The pooled eluates were split into four aliquots, then dried in a speed-vac at room temperature. One aliquot of purified proteins was separated by SDS-PAGE on a 4\u201312% NuPAGE Novex Bis-Tris precast gel and visualized by silver staining. Another aliquot was analyzed by mass spectrometry.\n\n### Protein identification by mass spectrometry\n\nThe experiments were essentially performed as described previously (Bataille et al., 2012). Protein samples were re-solubilized in 6 M urea buffer followed by reduction and alkylation before digestion with trypsin (Promega) at 37\u00b0C for 18 hr. The digested peptide mixtures were dried down in a\u00a0vacuum centrifuge and stored at \u221220\u00b0C until LC-MS/MS analysis. Prior to LC-MS/MS, the digested peptide mixtures were resolubilized in 0.2% formic acid and desalted/cleaned up by using C18 ZipTip pipette tips according to the manufacturer\u2019s instructions (Millipore). Eluates were dried down in a\u00a0vacuum centrifuge and then re-solubilized in 2% ACN/1% formic acid. The LC column used was a C18 reversed-phase column packed with a high-pressure packing cell. A 75 \u00b5m i.d. Self-Pack PicoFrit fused silica capillary column of 15 cm long (New Objective) was packed with the C18 Jupiter 5 \u00b5m 300 \u00c5 reverse-phase material (Phenomenex). This column was installed on the Easy-nLC II system (Proxeon Biosystems) and coupled to the LTQ Orbitrap Velos or the Orbitrap Fusion (Thermo Fisher Scientific) equipped with a Proxeon nanoelectrospray ion source.\n\n### Mass spectrometry data analysis\n\nProtein database searching was performed with Mascot 2.2 or 2.6 (Matrix Science) against the S. cerevisiae NCBInr protein database (2010-12-14 release) or the UniProt_Saccharomyces_cerevisiae (559292 - strain ATCC 204508/S288 c) database. The mass tolerances for precursor and fragment ions were set to 15 ppm and 0.60 Da, respectively. Trypsin was used as the enzyme allowing for up to two missed cleavages. Carbamidomethyl and oxidation of methionine were allowed as variable modifications. Data interpretation was performed using Scaffold 3.1.2 or 4.8 (Proteome Software). Spectral counts values were exported in Excel and processed as follows.\n\nFor RNAPII purifications in WT and fcp1-1 cells, spectral counts from two biological replicates of Rpb1-TAP purified from WT cells and two biological replicates of Rpb1-TAP purified from fcp1-1 cells, together with a collection of no-tag controls, were used as a measure of protein abundance. Spectral counts for the 706 identified proteins were floored to 0.1 and normalized to the bait protein level (Rpb1). Proteins with an average spectral count in no-tag controls above 10 (n\u00a0=\u00a044) were removed. Proteins with less than five average spectral counts in both WT and fcp1-1 conditions (n\u00a0=\u00a0495) were also removed. The final dataset contains 170 proteins. For these, the log2 relative abundance (log2 (fcp1-1/WT)) and the average intensity (across all four samples) were calculated. These values are available in Supplementary file 1 and displayed in Figure 1B.\n\nFor the Ubp15-TAP purification, spectral counts from Ubp15-TAP and a no-tag control were used as a measure of protein abundance. Proteins with more than 10 spectral counts in no-tag control (n\u00a0=\u00a091) were removed. A protein with less than twofold spectral count in the tag versus no-tag sample was also removed. Proteins with less than five spectral counts in the Ubp15-TAP sample (n\u00a0=\u00a0126) were also removed. Finally, duplicated proteins (different IDs referring to the same protein) were removed (n\u00a0=\u00a03). This analysis led to a final dataset of 41 proteins displayed in Figure 1C.\n\nFor Mex67-3Flag purifications in WT and ubp15\u0394 cells, spectral counts from three biological replicates of Mex67-3Flag from WT, ubp15\u0394 and a no-tag control were used as a measure of protein abundance. Proteins with less than fivefold enrichment in tagged versus no-tag, and with an average of less than eight spectral counts in tagged experiments were removed. This analysis resulted in 47 proteins displayed in Figure 5D. The data were normalized to set the ratio of the spectral count of the bait (Mex67) to one between the WT and ubp15\u0394 samples. The log2 of the ratio between the normalized average spectral count in ubp15\u0394 and WT cells were computed and a t-test on the spectral counts of the three WT and three ubp15\u0394 samples was used to assess significance.\n\n### ChIP-qPCR\n\nTo assess RNAPII (Rpb3) binding along the YLR454W gene, ChIP experiments were performed in two biological replicates as previously described (Collin et al., 2019). In brief, yeast cells containing the GAL1 promoter controlling the YLR454W gene were inoculated from an overnight preculture in 100 mL of yeast nitrogen-based (YNB) medium lacking uracil (\u2212URA) supplemented with 2% galactose and 2% raffinose (to induce YLR454W gene expression). Cells were grown at 30\u00b0C until OD600 reaches 0.6\u20130.8 and then 50 mL were treated with 100 \u00b5g/mL 6AU for 30 min while the rest was left untreated. Cells were cross-linked with 1% formaldehyde for 30 min at room temperature and quenched with 125 mM glycine. Immunoprecipitation of RNAPII was done using 3 \u03bcL of Rpb3 antibody (W0012 from Neoclone) coupled to magnetic Pan Mouse Dynabeads (Thermo Fisher Scientific). ChIP DNA was analyzed by qPCR using primers targeting the 5\u2019 (forward: ACGCAAAGGAACTAGAGAACG, reverse: AATAGGACTCTCCGCCTTGTT) and 3\u2019 (forward: GGTCACAGATCTATTACTTGCCC, reverse: TTCAGGCTCCGTGTAGGAATTA) regions of the YLR454W open reading frame. 1% of each Input sample was analyzed in parallel and enrichments were expressed as a\u00a0percent of Input using the following formula: 100*2[CtInput-6.644-CtIP].\n\n### ChIP-chip\n\nChIP-chip experiments from WT, ubp15\u0394, dst1\u0394, and ubp15\u0394/dst1\u0394 cells were performed in two biological replicates (except for the ubp15\u0394/dst1\u0394 strain in the absence of 6AU which was done only once) as previously described (Collin et al., 2019). In brief, yeast cells were inoculated from an overnight preculture in 50 mL of YNB\u2212URA supplemented with 2% glucose. Cells were grown at 30\u00b0C until OD600 reaches 0.6\u20130.8 and treated (or not) with 100 \u00b5g/mL 6AU for 60 min. Cells were cross-linked with 1% formaldehyde for 30 min at room temperature and quenched with 125 mM glycine. Immunoprecipitation of RNAPII was done using 3 \u03bcL of Rpb3 antibody (W0012 from Neoclone) coupled to magnetic Pan Mouse Dynabeads (Thermo Fisher Scientific). ChIP and Input samples were labeled with mono-reactive NHS ester fluorescent Cy5 and Cy3 dyes (GE Healthcare), respectively, combined and hybridized for at least 18 hr on custom-designed Agilent microarrays containing 180,000 Tm-adjusted 60-mer probes covering the entire yeast genome with virtually no gaps between probes (Jeronimo and Robert, 2014). Microarrays were washed and scanned using an InnoScan900 (Innopsys) at 2 \u03bcm resolution.\n\n### ChIP-chip data analysis\n\nThe ChIP-chip data were normalized using the Limma Loess method and replicates were combined as described previously (Ren et al., 2000). The data were subjected to one round of smoothing using a Gaussian sliding window with a standard deviation of 100 bp to generate data points in 10 bp intervals (Guillemette et al., 2005). Aggregate profiles were generated using the Versatile Aggregate Profiler (VAP) (Brunelle et al., 2015; Coulombe et al., 2014). In these analyses, only genes that are at least 1 kb long and with an average RNAPII enrichment log2 ratio over one were\u00a0retained. Genes were virtually split in the middle and their 5\u2019 and 3\u2019 halves were aligned on the TSS and polyA site, respectively. The signal was then averaged in 10 bp bins. Coordinates of TSS and polyA sites are from Xu et al., 2009. Violin plots of RNAPII processivity were built by calculating the log2 ratio of Rpb3 occupancy in the last versus first 300 bp for each gene using VAP. The plots were generated using PlotsOfData (Postma and Goedhart, 2019).\n\n### RNA FISH\n\nRNA FISH was performed as described previously (Babour et al., 2016) with a few modifications. Briefly, cells were grown in 50 mL of YPD medium to an OD600 of 0.6\u20130.8 and fixed with 4% paraformaldehyde for 45 min at room temperature on a rotating wheel. Cells were washed twice with cold phosphate buffer (100 mM KHPO4 pH 6.4) and once with cold spheroplast buffer (phosphate buffer supplemented with 1.2 M sorbitol). Digestion of yeast cell wall was performed at 30\u00b0C with 250 \u00b5g of zymolyase 100T (US Biological). Spheroplasts were carefully washed twice and resuspended in 1 mL of cold spheroplast buffer and 200 \u00b5L were attached to poly-L-lysine (Sigma)-coated coverslips for 30 min at room temperature. Unadhered cells were washed off and coverslips were stored in 70% ethanol at \u221220\u00b0C for at least 2 hr. Hybridization was carried out in hybridization buffer (50% formamide, 10% dextran sulfate, 4\u00d7 SSC, 1\u00d7 Denhardts, 125 \u03bcg/mL E. coli tRNA, 500 \u03bcg/mL ssDNA, 10 mM ribonucleoside-vanadyl complex [NEB]) supplemented with 50 ng of Cy5-oligo-dT45 probe for 12 hr at 37\u00b0C in the dark. Coverslips were washed twice with 2\u00d7 SSC at 37\u00b0C for 15 min, once with 1\u00d7 SSC at room temperature for 15 min and twice with 0.5\u00d7 SSC at room temperature for 15 min, and finally with 1\u00d7 PBS buffer containing 0.5 \u00b5g/mL 4\u2032,6-diamidino-2-phenylindole (DAPI) and mounted onto ProLong Gold antifade reagent (Thermo Fisher Scientific) mounting media.\n\n### Fluorescence microscopy\n\nFISH images were acquired with a Retiga EXi aqua camera (mount on 0.70\u00d7) mounted on a DM5500B upright microscope (Leica) and magnified through a 100\u00d7 oil immersion objective (NA\u00a0=\u00a01.3). Images of fluorescent probes were excited using an X-Cite Series 120Q light source (Lumen Dynamics) with the appropriate filters. All hardware parts were controlled with Volocity v5.0 software. Data presented in figures are representative fields of images from two biological replicates. For calculating the percentage of mRNA accumulation in the different strains, we manually visualized 150 to 300 cells and counted the ones with visible polyA RNA accumulation in the nucleus.\n\n### In vivo ubiquitylation assay\n\nUbiquitylated proteins were detected essentially as described previously (Muratani et al., 2005) with some modifications. Yeast strains transformed with a plasmid expressing polyhistidine-tagged ubiquitin (6His-Ub) under the control of a copper-inducible promoter (pFR453) or its non-tagged control (pFR452) (see Supplementary file 4) were grown in 50 mL of YNB\u2212URA. When OD600 reached 0.6\u20130.8, cells were induced with 500 \u00b5M CuSO4 for 2\u20133 hr at 30\u00b0C. Cell cultures were centrifuged and washed twice with ice-cold water, flash-frozen, and stored at \u221280\u00b0C. Cell pellets were resuspended in 1 mL of freshly prepared A2 buffer (6 M guanidine-HCl, 100 mM Na2HPO4/NaH2PO4 pH 8.0, 10 mM imidazole, 250 mM NaCl, 0.5% NP40) and lysed by glass bead beating 5 min twice. Cell Lysates were then clarified by centrifuging for 15 min at max speed at 4\u00b0C. 10 \u00b5L of the\u00a0cleared extract was kept as Input and the rest was used for Ni-NTA purification. His-tagged ubiquitin-conjugated proteins were purified by adding 100 \u00b5L of 50% Ni-NTA agarose beads (Qiagen) equilibrated in A2 buffer to 1 mL of cleared extracts and incubated with rotation for 2\u20134 hr at room temperature. Beads were pelleted and washed twice with 1 mL of A2 buffer, twice with 1 mL of A2/T2 buffer (1 vol A2 buffer + three volumes T2 buffer [50 mM Na2HPO4/NaH2PO4 pH 8.0, 20 mM imidazole, 250 mM NaCl, 0.5% NP40]) and twice with 1 mL of T2 buffer. Samples were rotated 5 min at room temperature for each wash. After the final wash, all liquid was removed from beads, and beads were resuspended in 50 \u00b5L of 2\u00d7 Laemmli buffer supplemented with 250 mM imidazole. Inputs were prepared as previously described (Pepinsky, 1991). Briefly, 800 \u00b5L of 100% ethanol was added to 10 \u00b5L of cleared extract, vortexed, and incubated for 1 hr at \u221220\u00b0C. Inputs were then centrifugated and washed twice with 100% ethanol for 15 min at \u221220\u00b0C. Ethanol was removed and, when completely dry, pellets were resuspended in 100 \u00b5L of 2\u00d7 Laemmli buffer. All samples were boiled for 5 min, centrifuged and supernatants were run on SDS-PAGE for western blot analysis with anti-HA F7 mouse monoclonal antibody (Santa Cruz Biotechnology). Images presented in figures are representative examples of at least three (Figure 5) or two (Figure 5\u2014figure supplement 1) biological replicates, except for Nup133, which was assayed only once.\n",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "8199a2e9-901a-4b66-a96d-43f99761aeb2",
+      "submission_id": "c329a8d2-9203-4ca5-93f5-4a33d62c9685",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jerry L Workman, Stowers Institute for Medical Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.61264.sa1](https://doi.org/10.7554/eLife.61264.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript uses a powerful combination of proteomics, genomics, biochemistry and genetics to identify Ubp15 as an RNA pol. II interacting protein that helps assemble mRNPs by deubiquitination of the major nuclear export receptor Mex67. This is the first ubiquitin protease shown to function in nuclear export.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The Deubiquitylase Ubp15 Couples Transcription to mRNA Export\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Jerry L Workman as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by James Manley as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper by Eyboulet et al. identifies a new role for the ubiquitin protease Ubp15 in coupling transcription and mRNA export. Briefly, the authors first show that Ubp15 interacts with hyperphosphorylated RNA PolII suggesting a role in transcription elongation (Figure 1). Interestingly, loss of Ubp15 suppresses the 6AU sensitivity of dst1\u0394 and several other elongation mutants (Figure 2). Unexpectedly however, loss of Ubp15 does not rescue the RNA PolII processivity defect of dst1\u0394, suggesting that ubp15\u0394 suppresses the phenotype more indirectly (Figure 3). The authors then identify Rsp5 as an E3 ligase opposing the effect of Ubp15 and show that the mRNA export defect observed in the rsp5-1 mutant is suppressed in the absence of Ubp15 (Figure 4). Furthermore, they show that the export receptor Mex67 is ubiquitinated by Rsp5 and that ubiquitination of Mex67 (but not of several other NUPs or mRNA export factors) is increased in the absence of Ubp15, indicating that Rsp5 and Ubp15 have opposing effects on Mex67 (Figure 5A, B, C). Finally, performing mass spec analyses of Mex67 interacting proteins in WT vs ubp15\u0394, they find that increased Mex67 ubiquitination in the absence of Ubp15 decreases the interaction of the export receptor with components of the Cap binding and THO complexes involved in the recruitment of Mex67 to nascent transcripts (Figure 5D).\n\nRevisions for this paper:\n\n1) Mechanistically, Eyboulet et al. shows many interesting results regarding novel finding of Ubp15 in mRNA export. The only problem is how ubiquitylation and deubiqutylation cycle can regulate Mex67-mediated mRNA export process. Especially, rescue phenotype of double mutants of Rsp5 and UBP15 seems to be counterintuitive. More detailed mechanistic approaches will be required to explain the function of Ubp15, which may be beyond the scope here. However, do the authors have this data or information of Mex67 occupancy in the absence of those mutants? Alternatively, they can discuss their model to explain how Ubp15 regulates Mex67 using current view about mRNA export.\n\n2) The authors should check Rsp5 protein levels in rsp5-1 ts mutant in the absence of UBP15. Sometimes, protein expression can be rescued by certain deletion mutants and thus they may see rescue phenotype.\n\n3) Mex67 distribution in the absence of UBP15 and/or RSP5 ts on chromatin. Does ubiquitylation cycle change its distribution (or any delay) on chromatin?\n\n4) From Figure 4 and 5 and related to #1 comment, absence of UBP15 alone did not show any defect in mRNA export but did deregulate the interaction of Mex67 with THO and the cap-binding complex. If ubiquitylation of Mex67 is important for downstream pathway of mRNA export, ubp15D should show mRNA export defect. How do you explain this?\n\nRevisions expected in follow-up work:\n\nHow ubiquitylation and deubiqutylation cycle can regulate Mex67-mediated mRNA export process.\n",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "379fb245-d9d0-49e7-b20e-cd19e346a39e",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C1",
+      "claim": "Ubp15 is a deubiquitylase that regulates nuclear export in Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we identified deubiquitylase Ubp15 as a regulator of nuclear export in Saccharomyces cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "b8d26c38-f4ca-4669-8f99-fbcf92dd33d8",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C2",
+      "claim": "Ubp15 interacts with RNA polymerase II.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubp15 interacts with both RNA polymerase II and the nuclear pore complex, and its deletion reverts the nuclear export defect of E3 ligase Rsp5 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interaction is demonstrated through proteomic analysis and confirmed by reciprocal affinity purification experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "69b6f4a6-c899-47e9-9175-0365b3e1e978",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C3",
+      "claim": "Ubp15 interacts with the nuclear pore complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubp15 interacts with both RNA polymerase II and the nuclear pore complex, and its deletion reverts the nuclear export defect of E3 ligase Rsp5 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reciprocal affinity purification of Ubp15 revealed enrichment of almost the entire NPC as shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "aff9e9f0-3714-4b52-b7cc-226a18ad987f",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C4",
+      "claim": "Deletion of UBP15 reverts the nuclear export defect of E3 ligase Rsp5 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubp15 interacts with both RNA polymerase II and the nuclear pore complex, and its deletion reverts the nuclear export defect of E3 ligase Rsp5 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by RNA FISH experiments showing that deletion of UBP15 suppressed the mRNA export defect of the rsp5-1 mutant (Figure 4D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "86099745-8430-45e3-9572-fd09ed88f79f",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C5",
+      "claim": "Deletion of UBP15 leads to hyper-ubiquitylation of the main nuclear export receptor Mex67.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of UBP15 leads to hyper-ubiquitylation of the main nuclear export receptor Mex67 and affects its association with THO, a complex coupling transcription to mRNA processing and involved in the recruitment of mRNA export factors to nascent transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown through in vivo ubiquitylation assays presented in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "57ece987-9e9a-4a0b-882e-4a97ebac05e6",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C6",
+      "claim": "Deletion of UBP15 affects Mex67 association with THO complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of UBP15 leads to hyper-ubiquitylation of the main nuclear export receptor Mex67 and affects its association with THO, a complex coupling transcription to mRNA processing and involved in the recruitment of mRNA export factors to nascent transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proteomic analysis of Mex67 complexes showed that all four subunits of THO were less associated with Mex67 in ubp15\u0394 cells (Figure 5D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "9d335bf3-bef3-4d5c-b537-f6d0861186d8",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C7",
+      "claim": "THO is a complex coupling transcription to mRNA processing and involved in the recruitment of mRNA export factors to nascent transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of UBP15 leads to hyper-ubiquitylation of the main nuclear export receptor Mex67 and affects its association with THO, a complex coupling transcription to mRNA processing and involved in the recruitment of mRNA export factors to nascent transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about THO function cited throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "a77b73fd-befa-4c2b-9ba5-a1888a3f8a7a",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C8",
+      "claim": "Rpb1, the largest subunit of RNAPII, contains a C-terminal domain (CTD) composed of 26 to 52 repetitions of the heptapeptide Y1S2P3T4S5P6S7 in yeast and mammals, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Rpb1, the largest subunit of RNAPII, contains a C-terminal domain (CTD) composed of 26 to 52 repetitions (in yeast and mammals, respectively) of the heptapeptide Y1S2P3T4S5P6S7 (Chapman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Chapman et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "d2c8558c-7e64-473c-955b-8988052ef427",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C9",
+      "claim": "The CTD of RNAPII is highly conserved and essential for viability in all organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The CTD is highly conserved and essential for the viability in all organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the CTD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "e75ca627-5bf0-43a9-9c84-4d6ec50c980c",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C10",
+      "claim": "During transcription, the CTD is extensively and dynamically phosphorylated to coordinate the binding of proteins involved in the different steps of transcription and to couple transcription to mRNA processing.",
+      "claim_type": "EXPLICIT",
+      "source": "During transcription, the CTD is extensively and dynamically phosphorylated to coordinate the binding of proteins involved in the different steps of transcription and to couple transcription to mRNA processing (Corden, 2013; Eick and Geyer, 2013; Harlen and Churchman, 2017; Jeronimo et al., 2013; Jeronimo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "49761b2f-2e60-418e-8911-e965c5220e12",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C11",
+      "claim": "Pre-mRNAs and mature mRNAs are packaged with RNA-binding proteins to form dynamic ribonucleoprotein particles (mRNPs) during their synthesis, processing and export.",
+      "claim_type": "EXPLICIT",
+      "source": "During their synthesis, processing and export, pre-mRNAs and mature mRNAs are packaged with RNA-binding proteins to form dynamic ribonucleoprotein particles (mRNPs) (Mitchell and Parker, 2014; Singh et al., 2015; Tutucci and Stutz, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mitchell and Parker, 2014; Singh et al., 2015; Tutucci and Stutz, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "dd885d27-70a1-4fc8-8be1-5019649fcb2d",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C12",
+      "claim": "The mRNA export machinery is highly conserved from yeast to humans and mainly depends on the export factor Mex67-Mtr2 (TAP-NXF1 in mammals).",
+      "claim_type": "EXPLICIT",
+      "source": "The mRNA export machinery is highly conserved from yeast to humans and mainly depends on the export factor Mex67-Mtr2 (TAP-NXF1 in mammals) (Ni\u00f1o et al., 2013; Scott et al., 2019; Wende et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ni\u00f1o et al., 2013; Scott et al., 2019; Wende et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "70547fe7-218c-4b52-a996-33a421fa7e10",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C13",
+      "claim": "Mex67, in complex with Mtr2, mediates transport through the nuclear pore complex (NPC) via interactions with several FG-enriched nucleoporins (Nups).",
+      "claim_type": "EXPLICIT",
+      "source": "Mex67, in complex with Mtr2, mediates transport through the nuclear pore complex (NPC) via interactions with several FG-enriched nucleoporins (Nups) (Santos-Rosa et al., 1998; Str\u00e4sser et al., 2000a; Terry et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Santos-Rosa et al., 1998; Str\u00e4sser et al., 2000a; Terry et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "0a421fdd-08e9-4838-93f7-3b9cd7167551",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C14",
+      "claim": "Yra1 (ALY/REF in mammals) is the first adaptor to intervene by facilitating the recruitment of Mex67 to the mRNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Yra1 (ALY/REF in mammals) is the first adaptor to intervein by facilitating the recruitment of Mex67 to the mRNP (Str\u00e4sser and Hurt, 2000b; Zenklusen et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Str\u00e4sser and Hurt, 2000b; Zenklusen et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "b9b4c419-40dc-4343-a081-9385ee654b7d",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C15",
+      "claim": "Nab2 has been reported to form a complex with Mex67 and Yra1.",
+      "claim_type": "EXPLICIT",
+      "source": "while Nab2 has been reported to form a complex with Mex67 and Yra1 (Batisse et al., 2009; Iglesias et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Batisse et al., 2009; Iglesias et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "94cf559d-bd15-462c-833c-ae12d9d23f63",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C16",
+      "claim": "An excess of Nab2 can bypass the loss of Yra1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, an excess of Nab2 can bypass the loss of Yra1 (Iglesias et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Iglesias et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "85248456-328f-4699-af50-39eed6bc045d",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C17",
+      "claim": "Npl3, an RNA-binding protein, directly interacts with Mex67 and participates in mRNA nuclear export.",
+      "claim_type": "EXPLICIT",
+      "source": "Npl3, an RNA-binding protein, also directly interacts with Mex67 and participates in mRNA nuclear export (Lee et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lee et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "79314378-8653-4b5a-b330-794e78b9a89a",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C18",
+      "claim": "TREX is a protein complex composed of THO (Hpr1, Tho2, Mft1, and Thp2), the Mex67 adapters Yra1 and the DEAD-box ATPase Sub2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, TREX, a protein complex composed of THO (Hpr1, Tho2, Mft1, and Thp2), the Mex67 adapters Yra1 and the DEAD-box ATPase Sub2 (Str\u00e4sser et al., 2002), is recruited to the transcribing RNAPII and helps in the assembly of an export competent mRNP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Str\u00e4sser et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "8bf05a1d-f33f-4708-8207-0fb893a1bf78",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C19",
+      "claim": "TREX is recruited to the transcribing RNAPII and helps in the assembly of an export competent mRNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, TREX, a protein complex composed of THO (Hpr1, Tho2, Mft1, and Thp2), the Mex67 adapters Yra1 and the DEAD-box ATPase Sub2 (Str\u00e4sser et al., 2002), is recruited to the transcribing RNAPII and helps in the assembly of an export competent mRNP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Str\u00e4sser et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "97c84e98-1d9b-4dd0-b81a-7af8a57e40e6",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C20",
+      "claim": "THO recruitment to active chromatin is facilitated by the Tho2 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "THO recruitment to active chromatin is facilitated by the Tho2 subunit (Pe\u00f1a et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pe\u00f1a et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "cd115d24-6130-4108-8e7e-c336be9bae36",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C21",
+      "claim": "Hpr1 binds Sub2 on nascent transcripts and is implicated in the early recruitment of Mex67, an interaction mediated by a ubiquitin-dependent process.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, Hpr1 binds Sub2 on nascent transcripts and is implicated in the early recruitment of Mex67, an interaction mediated by a ubiquitin-dependent process (Gwizdek et al., 2005; Gwizdek et al., 2006; Zenklusen et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gwizdek et al., 2005; Gwizdek et al., 2006; Zenklusen et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "d84645f1-1056-4724-a5e2-02c9850acee2",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C22",
+      "claim": "Yra1 is co-transcriptionally recruited, notably by the cap binding complex (CBC).",
+      "claim_type": "EXPLICIT",
+      "source": "Yra1 is also co-transcriptionally recruited, notably by the cap binding complex (CBC) (Cheng et al., 2006; Sen et al., 2019; Viphakone et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cheng et al., 2006; Sen et al., 2019; Viphakone et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "d6028547-8cdc-4672-9675-c836f9418af1",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C23",
+      "claim": "Yra1 is transferred to Sub2.",
+      "claim_type": "EXPLICIT",
+      "source": "and transferred to Sub2 (Johnson et al., 2009; Johnson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Johnson et al., 2009; Johnson et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "248baf13-f178-426a-90fc-b29fe752fb06",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C24",
+      "claim": "TREX-2 (Sac3, Thp1, Sus1, Cdc31, and Sem1) interacts with the nuclear side of the NPC and participates in the coordination between transcription and mRNA export.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, TREX-2 (Sac3, Thp1, Sus1, Cdc31, and Sem1) interacts with the nuclear side of the NPC and participates in the coordination between transcription and mRNA export (Cabal et al., 2006; Fischer et al., 2004; Jani et al., 2009; Rodr\u00edguez-Navarro et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cabal et al., 2006; Fischer et al., 2004; Jani et al., 2009; Rodr\u00edguez-Navarro et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "97c74e55-9521-400e-bca9-fc1f253442e6",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C25",
+      "claim": "Yra1 is removed from mRNP complexes before exiting the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Yra1, which is removed from mRNP complexes before exiting the nucleus (Lund and Guthrie, 2005), Nab2 and Npl3 translocate together with the mRNP and are released at the cytoplasmic face of the NPC (Tran et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lund and Guthrie, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "02d61610-d2ea-4e71-bd01-cac45ffeca79",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C26",
+      "claim": "Nab2 and Npl3 translocate together with the mRNP and are released at the cytoplasmic face of the NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Yra1, which is removed from mRNP complexes before exiting the nucleus (Lund and Guthrie, 2005), Nab2 and Npl3 translocate together with the mRNP and are released at the cytoplasmic face of the NPC (Tran et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tran et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "01cbfccf-48f0-48d1-be4c-5f83362a8142",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C27",
+      "claim": "Once the mRNA reaches the cytoplasm, Nup159 and Nup42 NPC subunits recruit two essential mRNA export factors, the DEAD-box ATPase Dbp5 and its ATPase activator Gle1, which are in charge of remodeling and disassembling the mRNPs emerging from the NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the mRNA reaches the cytoplasm, Nup159 and Nup42 NPC subunits recruit two essential mRNA export factors, the DEAD-box ATPase Dbp5 and its ATPase activator Gle1, which are in charge of remodeling and disassembling the mRNPs emerging from the NPC (Adams et al., 2017; Hodge et al., 2011; Lund and Guthrie, 2005; Weirich et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Adams et al., 2017; Hodge et al., 2011; Lund and Guthrie, 2005; Weirich et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "95d832d5-d2f7-42dc-8c05-0098eda21215",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C28",
+      "claim": "Disassembly of the mRNP in the cytoplasm prevents its return to the nucleus, resulting in unidirectional mRNA translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Disassembly of the mRNP in the cytoplasm prevents its return to the nucleus, resulting in unidirectional mRNA translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the described mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "cb26c648-4af7-49bb-934d-73ef0d1c6df0",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C29",
+      "claim": "The release of mRNA export factors allows them to return to the nucleus where they can function in additional rounds of mRNA export.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the release of mRNA export factors allow them to return to the nucleus where they can function in additional rounds of mRNA export (Stewart, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Stewart, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "ed5a996c-2b95-4159-bcea-0f38f44d9121",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C30",
+      "claim": "Dbp5 does not affect the interaction of Mex67 with the NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it was shown that Dbp5 does not affect the interaction of Mex67 with the NPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Derrer et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "f452de6c-34a1-4990-b3d9-cbb19458df43",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C31",
+      "claim": "Mex67 does not translocate to the cytoplasmic face of the NPC with the mRNPs but rather functions as a mobile nucleoporin, facilitating their translocation to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, it was proposed that Mex67 does not translocate to the cytoplasmic face of the NPC with the mRNPs but rather functions as a mobile nucleoporin, facilitating their translocation to the cytoplasm (Derrer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Derrer et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "3ad23f93-182f-4698-99f2-c91ec96db0c7",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C32",
+      "claim": "The Rsp5 ubiquitin ligase was shown to target RNAPII for degradation during DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rsp5 ubiquitin ligase was shown to target RNAPII for degradation during DNA damage (Beaudenon et al., 1999; Huibregtse et al., 1997; Wu et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Beaudenon et al., 1999; Huibregtse et al., 1997; Wu et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "5bd9e7f1-4d8e-40ee-a2f3-8696eacdf224",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C33",
+      "claim": "Ubiquitylation of RNAPII in human cells was shown to play a role in transcription-coupled repair.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, ubiquitylation of RNAPII in human cells was shown to play a role in transcription-coupled repair (Nakazawa et al., 2020; Tufegd\u017ei\u0107 Vidakovi\u0107 et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nakazawa et al., 2020; Tufegd\u017ei\u0107 Vidakovi\u0107 et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "27ddc673-630a-427c-91a7-8220ed7b8d09",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C34",
+      "claim": "RNAPII was shown to be ubiquitylated in vivo by the ubiquitin ligase Asr1.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAPII was also shown to be ubiquitylated in vivo by the ubiquitin ligase Asr1 (Daulny et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Daulny et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "db3ca898-b221-4293-aa23-05e806bb3f97",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C35",
+      "claim": "Ubiquitylation of RNAPII by Asr1 occurs on transcribed genes and leads to the dissociation of two RNAPII subunits (Rpb4/7), a process involved in the silencing of subtelomeric genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the ubiquitylation occurs on transcribed genes and leads to the dissociation of two RNAPII subunits (Rpb4/7), a process involved in the silencing of subtelomeric genes (McCann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to McCann et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "8eaa9d3b-0acc-4f98-9e48-fc3611f8634b",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C36",
+      "claim": "Ubiquitylation is involved in mRNA export.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitylation is also involved in mRNA export (Babour et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Babour et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "17c02772-3298-46b8-b9a9-d735de5c552f",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C37",
+      "claim": "The THO component Hpr1 is poly-ubiquitylated by Rsp5, which facilitates the co-transcriptional recruitment of the mRNA export factor Mex67, via its ubiquitin-associated (UBA) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The THO component Hpr1 is poly-ubiquitylated by Rsp5, which facilitates the co-transcriptional recruitment of the mRNA export factor Mex67, via its ubiquitin-associated (UBA) domain (Gwizdek et al., 2005; Gwizdek et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gwizdek et al., 2005; Gwizdek et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "d13c1857-8ddd-401f-91fb-f03c5fa7e553",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C38",
+      "claim": "The ubiquitin E3 ligase Tom1 is required for ubiquitylation of the Mex67 adaptor Yra1, which promotes its dissociation from mRNP complexes before export to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitin E3 ligase Tom1 is required for ubiquitylation of the Mex67 adaptor Yra1, which promotes its dissociation from mRNP complexes before export to the cytoplasm (Iglesias et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Iglesias et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "e245f65c-6f5c-4988-917a-8d581f06e268",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C39",
+      "claim": "H2B ubiquitylation facilitates the assembly of Mex67, Yra1, Nab2, and Npl3 into mRNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "H2B ubiquitylation, a histone modification deposited on genes co-transcriptionally, facilitates the assembly of Mex67, Yra1, Nab2, and Npl3 into mRNPs (Vitaliano-Prunier et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vitaliano-Prunier et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "1a07c650-2bf4-444c-9ae4-bf47dbd1f301",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C40",
+      "claim": "H2B ubiquitylation mediates the assembly of Npl3 directly.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while H2B ubiquitylation mediates the assembly of Npl3 directly, its effect on Mex67, Yra1, Nab2 assembly onto mRNPs involves the ubiquitylation of Swd2, a subunit of the cleavage and polyadenylation factor (CPF), connecting chromatin to transcriptional termination and mRNA export (Vitaliano-Prunier et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vitaliano-Prunier et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "af1ea53a-18a2-4836-aa19-0b40ce48dbac",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C41",
+      "claim": "H2B ubiquitylation's effect on Mex67, Yra1, Nab2 assembly onto mRNPs involves the ubiquitylation of Swd2, a subunit of the cleavage and polyadenylation factor (CPF), connecting chromatin to transcriptional termination and mRNA export.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while H2B ubiquitylation mediates the assembly of Npl3 directly, its effect on Mex67, Yra1, Nab2 assembly onto mRNPs involves the ubiquitylation of Swd2, a subunit of the cleavage and polyadenylation factor (CPF), connecting chromatin to transcriptional termination and mRNA export (Vitaliano-Prunier et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vitaliano-Prunier et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "a783b85c-dd38-431a-ad34-e692d31600a0",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C42",
+      "claim": "More than 50% of Nups can be ubiquitylated.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a systematic analysis of NPC ubiquitylation was conducted in yeast and showed that more than 50% of Nups can be ubiquitylated (Hayakawa et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hayakawa et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "eb771c5e-f997-41db-8334-21ee884b9170",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C43",
+      "claim": "Ubiquitylation of Nups does not influence Nups localization within the NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "As this modification does not influence Nups localization within the NPC, it is tempting to speculate that it might regulate the interaction with the Mex67 UBA domain during mRNA export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hayakawa et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "9cb86b98-4fce-40ea-b4ce-d5990c804d52",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C44",
+      "claim": "Ubiquitylation of Nups might regulate the interaction with the Mex67 UBA domain during mRNA export.",
+      "claim_type": "EXPLICIT",
+      "source": "As this modification does not influence Nups localization within the NPC, it is tempting to speculate that it might regulate the interaction with the Mex67 UBA domain during mRNA export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "598e42ea-a220-46eb-b956-51fdcd215924",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C45",
+      "claim": "The association of Ubp15 with RNAPII increased in a mutant for the CTD phosphatase Fcp1.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of Ubp15 with RNAPII increased in a mutant for the CTD phosphatase Fcp1, suggesting a role in transcriptional elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the proteomic analysis presented in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "cd20ce79-b1da-484e-b36a-f69b6fdb6210",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C46",
+      "claim": "The deletion of UBP15 rescued the sensitivity of transcription elongation factor mutants to 6-azauracil (6AU).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the deletion of UBP15 rescued the sensitivity of transcription elongation factor mutants to 6-azauracil (6AU), an inhibitor of transcription elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the serial-dilution growth assays shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "bc7d7bc3-5965-40fe-b8e3-ac77583341b5",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C47",
+      "claim": "The deletion of UBP15 did not rescue the transcription elongation processivity defect of dst1\u0394 cells in the presence of 6AU.",
+      "claim_type": "EXPLICIT",
+      "source": "While these experiments functionally connect Ubp15 to transcription elongation, the deletion of UBP15 did not rescue the transcription elongation processivity defect of dst1\u0394 cells in the presence of 6AU, suggesting that the link between Ubp15 and elongation may be indirect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the ChIP-qPCR and ChIP-chip experiments presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "c6e41a39-4848-413a-91a8-4c5bfedfa913",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C48",
+      "claim": "The deletion of UBP15 rescued the thermosensitivity of a mutant for RSP5.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of UBP15 rescued the thermosensitivity of a mutant for RSP5, an E3 ligase involved in DNA damage and mRNA export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the serial-dilution growth assays shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "a4265f3a-4cee-445b-971c-f9356c19d399",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C49",
+      "claim": "The deletion of UBP15 suppressed the mRNA export defect of rsp5 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the deletion of UBP15 suppressed the mRNA export defect of rsp5 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by RNA FISH experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "70253dff-fe1f-465d-932a-d490a8a8980f",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C50",
+      "claim": "Ubp15 regulates the ubiquitylation of Mex67.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we showed that Ubp15 regulates the ubiquitylation of Mex67, which in turn regulates its interaction with THO, a complex involved in mRNA processing and export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by in vivo ubiquitylation assays shown in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "fadbbbfc-5811-4083-8b64-977dcf48cb23",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C51",
+      "claim": "Mex67 ubiquitylation regulates its interaction with THO.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we showed that Ubp15 regulates the ubiquitylation of Mex67, which in turn regulates its interaction with THO, a complex involved in mRNA processing and export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by proteomic analysis of Mex67 complexes shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "29ad489e-395c-489a-8878-f35e588ef055",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C52",
+      "claim": "Fcp1 is a major CTD phosphatase and its mutation leads to increased CTD phosphorylation at serines 2, 5, and 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Fcp1 is a major CTD phosphatase and its mutation leads to increased CTD phosphorylation at serines 2, 5, and 7 (Bataille et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bataille et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "285516b6-fda3-4fec-954b-29e53df6eaed",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C53",
+      "claim": "Ubp15 is a deubiquitylase known for its role in the regulation of endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "One RNAPII-interacting protein identified in this experiment is Ubp15, a deubiquitylase known for its role in the regulation of endocytosis (Ho et al., 2017; Kouranti et al., 2010), progression into the S phase (\u00c1lvarez et al., 2016; Ostapenko et al., 2015), peroxisomal export (Debelyy et al., 2011), and methylmercury susceptibility (Hwang et al., 2012), but with no known roles in transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ho et al., 2017; Kouranti et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "f46e6e6b-1ac1-4d5e-8978-4ad0f79a3123",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C54",
+      "claim": "Ubp15 is known for its role in progression into the S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "One RNAPII-interacting protein identified in this experiment is Ubp15, a deubiquitylase known for its role in the regulation of endocytosis (Ho et al., 2017; Kouranti et al., 2010), progression into the S phase (\u00c1lvarez et al., 2016; Ostapenko et al., 2015), peroxisomal export (Debelyy et al., 2011), and methylmercury susceptibility (Hwang et al., 2012), but with no known roles in transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to \u00c1lvarez et al., 2016; Ostapenko et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "8da738eb-d4a8-472e-817c-cfcf9b38238e",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C55",
+      "claim": "Ubp15 is known for its role in peroxisomal export.",
+      "claim_type": "EXPLICIT",
+      "source": "One RNAPII-interacting protein identified in this experiment is Ubp15, a deubiquitylase known for its role in the regulation of endocytosis (Ho et al., 2017; Kouranti et al., 2010), progression into the S phase (\u00c1lvarez et al., 2016; Ostapenko et al., 2015), peroxisomal export (Debelyy et al., 2011), and methylmercury susceptibility (Hwang et al., 2012), but with no known roles in transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Debelyy et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "43aaebdf-5f06-493f-8099-cab4f6d63248",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C56",
+      "claim": "Ubp15 is known for its role in methylmercury susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "One RNAPII-interacting protein identified in this experiment is Ubp15, a deubiquitylase known for its role in the regulation of endocytosis (Ho et al., 2017; Kouranti et al., 2010), progression into the S phase (\u00c1lvarez et al., 2016; Ostapenko et al., 2015), peroxisomal export (Debelyy et al., 2011), and methylmercury susceptibility (Hwang et al., 2012), but with no known roles in transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hwang et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "84cb020d-a145-4b60-9e71-e52f2a3512fe",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C57",
+      "claim": "Ubp15 had no known roles in transcription prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "One RNAPII-interacting protein identified in this experiment is Ubp15, a deubiquitylase known for its role in the regulation of endocytosis (Ho et al., 2017; Kouranti et al., 2010), progression into the S phase (\u00c1lvarez et al., 2016; Ostapenko et al., 2015), peroxisomal export (Debelyy et al., 2011), and methylmercury susceptibility (Hwang et al., 2012), but with no known roles in transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated explicitly in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "8da1df3b-c3c0-4590-8f5e-19d17cc06f55",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C58",
+      "claim": "The association of Ubp15 with RNAPII is increased in the fcp1-1 mutant, suggesting it is recruited (directly or indirectly) to the elongating polymerase via CTD phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of Ubp15 with RNAPII is increased in the fcp1-1 mutant, suggesting it is recruited (directly or indirectly) to the elongating polymerase via CTD phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the proteomic data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "1d075200-6997-47f1-9b47-8c726b37f336",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C59",
+      "claim": "Ubp15 interacts with the phosphorylated form of RNAPII.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment confirmed the interaction between Ubp15 and the phosphorylated form of RNAPII (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is confirmed by western blot shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "2bd8f7ad-035c-4a62-869e-a16e259a1a26",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C60",
+      "claim": "The histone chaperone and elongation factor FACT (Spt16 and Pob3) is enriched in RNAPII purified from fcp1-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the histone chaperone and elongation factor FACT (Spt16 and Pob3) is also enriched in RNAPII purified from fcp1-1 cells (Figure 1B, Figure 1\u2014figure supplement 1B, Supplementary file 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the proteomic analysis and western blot presented in Figure 1B and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "03217faa-8b72-4410-95dd-9f576af869da",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C61",
+      "claim": "Both FACT and Rpb1 are substrates of Ubp15 in Schizosaccharomyces pombe.",
+      "claim_type": "EXPLICIT",
+      "source": "and both FACT and Rpb1 are substrates of Ubp15 in Schizosaccharomyces pombe (Beckley et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Beckley et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "61d76fd1-071d-4596-82f2-0c522753b185",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C62",
+      "claim": "The association of Asr1, a ubiquitin ligase known to bind the CTD and to ubiquitylate RNAPII in the context of elongation, is decreased in fcp1-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the association of Asr1, a ubiquitin ligase known to bind the CTD and to ubiquitylate RNAPII in the context of elongation (Daulny et al., 2008; McCann et al., 2016), is decreased in fcp1-1 cells (Figure 1B, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the proteomic analysis presented in Figure 1B and Supplementary file 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "2518db97-e480-4c96-94fc-d41e2a280cc1",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C63",
+      "claim": "6-azauracil (6AU) is an inhibitor of GTP biosynthesis commonly used to test for mutations that affect transcriptional elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we looked for sensitivity to 6-azauracil (6AU), an inhibitor of GTP biosynthesis commonly used to test for mutations that affect transcriptional elongation (Riles et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Riles et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "b1554cc5-a2e2-4f2c-b0ae-9c8a03ad6f03",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C64",
+      "claim": "The ubp15\u0394 mutant did not show significant sensitivity to 6AU on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "While the ubp15\u0394 mutant did not show significant sensitivity to 6AU on its own, it rescued the 6AU sensitivity of several elongation factor mutants including dst1\u0394 (TFIIS), spt4\u0394 and spt5-CTR\u0394 (DSIF), spt6-1004 and hpr1\u0394 (THO) (Figure 2A, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the serial-dilution growth assays presented in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "81b1d337-8997-4120-8530-426a52df91c0",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C65",
+      "claim": "The ubp15\u0394 mutation rescued the 6AU sensitivity of dst1\u0394 (TFIIS), spt4\u0394 and spt5-CTR\u0394 (DSIF), spt6-1004 and hpr1\u0394 (THO) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "While the ubp15\u0394 mutant did not show significant sensitivity to 6AU on its own, it rescued the 6AU sensitivity of several elongation factor mutants including dst1\u0394 (TFIIS), spt4\u0394 and spt5-CTR\u0394 (DSIF), spt6-1004 and hpr1\u0394 (THO) (Figure 2A, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the serial-dilution growth assays presented in Figure 2A and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "68e181dc-47f5-4c40-aedf-06529997713e",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C66",
+      "claim": "The 6AU sensitivity of bur2\u0394, ctk1\u0394, rtf1\u0394, and cdc73\u0394 mutants was not affected by the deletion of UBP15.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the 6AU sensitivity of other elongation factors such as bur2\u0394, ctk1\u0394, rtf1\u0394, and cdc73\u0394 mutants was not affected by the deletion of UBP15 (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the serial-dilution growth assays presented in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "9ed12497-c296-4439-b385-95d3fe769dc5",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C67",
+      "claim": "The ubp15-C214A mutant, but not the WT UBP15, rescued the dst1\u0394 and spt4\u0394 sensitivities to 6AU.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubp15-C214A mutant, but not the WT UBP15, rescued the dst1\u0394 and spt4\u0394 sensitivities to 6AU (Figure 2B), demonstrating that the effect of Ubp15 on elongation depends on its catalytic activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the serial-dilution growth assays presented in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "075161c1-8f48-452f-a2cf-2db1903540fa",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C68",
+      "claim": "The effect of Ubp15 on elongation depends on its catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubp15-C214A mutant, but not the WT UBP15, rescued the dst1\u0394 and spt4\u0394 sensitivities to 6AU (Figure 2B), demonstrating that the effect of Ubp15 on elongation depends on its catalytic activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the complementation experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "8282843a-663f-4918-ae3d-98e75ede6447",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C69",
+      "claim": "ubp15\u0394 cells show sensitivity to cold temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, we also looked at the phenotype of ubp15\u0394 cells under several other growth conditions and confirmed previously described sensitivity to cold temperature and hydroxyurea (HU) (Amerik et al., 2000; Ostapenko et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed in the serial-dilution growth assays shown in Figure 2\u2014figure supplement 1B and supported by citations to Amerik et al., 2000; Ostapenko et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "624dee6d-9522-4783-8fe7-56d9ab3759bc",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C70",
+      "claim": "ubp15\u0394 cells show sensitivity to hydroxyurea (HU).",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, we also looked at the phenotype of ubp15\u0394 cells under several other growth conditions and confirmed previously described sensitivity to cold temperature and hydroxyurea (HU) (Amerik et al., 2000; Ostapenko et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed in the serial-dilution growth assays shown in Figure 2\u2014figure supplement 1B and supported by citations to Amerik et al., 2000; Ostapenko et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "b19e00cd-e1ea-4b5f-a2a6-8ef28c4f23e5",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C71",
+      "claim": "Elevated temperature, ultraviolet light, formamide or caffeine had no detectable effect on ubp15\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "while elevated temperature, ultraviolet light, formamide or caffeine had no detectable effect (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the serial-dilution growth assays presented in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "cfd193be-b1eb-458d-8cc1-9c0be4b796fb",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C72",
+      "claim": "In S. cerevisiae, elongation factors affect the processivity of RNAPII but have no measurable impact on the elongation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. cerevisiae, elongation factors affect the processivity of RNAPII (i.e. the capacity of the polymerase to reach the end of the gene) but have no measurable impact on the elongation rate (Mason and Struhl, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mason and Struhl, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "e6987556-9cf0-4871-81e6-aca5885e141b",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C73",
+      "claim": "The deletion of UBP15 did not rescue the processivity defect of dst1\u0394 cells in the presence of 6AU.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that the deletion of UBP15 did not rescue the processivity defect of dst1\u0394 cells in the presence of 6AU (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the ChIP-qPCR analysis presented in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "8c0a2d2d-b25d-40e8-8568-326d3f9fdaa8",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C74",
+      "claim": "ChIP-chip experiments confirmed the processivity defect of dst1\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments confirmed the processivity defect of dst1\u0394 cells but, consistently with our ChIP-qPCR analysis of the YLR454W gene (Figure 3A), revealed no effect of UBP15 deletion on RNAPII processivity in WT or dst1\u0394 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the ChIP-chip experiments presented in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "7c8dd351-2877-42e7-8478-5069629f3c48",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C75",
+      "claim": "ChIP-chip experiments revealed no effect of UBP15 deletion on RNAPII processivity in WT or dst1\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments confirmed the processivity defect of dst1\u0394 cells but, consistently with our ChIP-qPCR analysis of the YLR454W gene (Figure 3A), revealed no effect of UBP15 deletion on RNAPII processivity in WT or dst1\u0394 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the ChIP-chip experiments presented in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "b03989eb-e86d-4441-8966-4b5b56ac2550",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C76",
+      "claim": "UBP15 deletion may rescue the 6AU sensitivity of elongation factor mutants indirectly.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was somewhat unexpected given the genetic interactions described in Figure 2 and suggests that UBP15 deletion may rescue the 6AU sensitivity of elongation factor mutants indirectly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the processivity data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "0a5b7fb3-38a3-45e6-a3e1-7b7a6cac1324",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C77",
+      "claim": "No elongation factor has been shown to affect elongation rate in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, Ubp15 may affect elongation rate, a parameter not investigated here, but this appears unlikely since no elongation factor has been shown to affect this parameter in yeast (Mason and Struhl, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mason and Struhl, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "f6fcc36f-2367-4626-8ea9-3366511e6e0b",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C78",
+      "claim": "A mutant of the E3 ligase Rsp5 (rsp5-1) exacerbated the 6AU sensitivity of dst1\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Through testing several candidates (Figure 4A, Figure 4\u2014figure supplement 1A), we noticed that a mutant of the E3 ligase Rsp5 (rsp5-1) exacerbated the 6AU sensitivity of dst1\u0394 cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the serial-dilution growth assays presented in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "9d917461-9506-439a-b0fc-346a36f7a87c",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C79",
+      "claim": "The effect of rsp5-1 on the dst1\u0394 6AU sensitivity is opposite to that of ubp15\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect of rsp5-1 on the dst1\u0394 6AU sensitivity is opposite to that of ubp15\u0394 (Figure 2A) suggesting that Rsp5 and Ubp15 may oppose each other in regulating a process genetically connected to transcription elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genetic interaction data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "4c34cb3e-001b-48f1-8bfa-ad84194229fd",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C80",
+      "claim": "Rsp5 and Ubp15 may oppose each other in regulating a process genetically connected to transcription elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect of rsp5-1 on the dst1\u0394 6AU sensitivity is opposite to that of ubp15\u0394 (Figure 2A) suggesting that Rsp5 and Ubp15 may oppose each other in regulating a process genetically connected to transcription elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genetic interaction data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "4b0b7292-af89-4464-97f4-fef4e23d96c6",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C81",
+      "claim": "The deletion of UBP15 can partially rescue the 6AU sensitivity of rsp5-1/dst1\u0394 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the deletion of UBP15 can partially rescue the 6AU sensitivity of rsp5-1/dst1\u0394 mutant (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the serial-dilution growth assays presented in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "ed4d19f5-a07b-4701-9351-44be4af1d37e",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C82",
+      "claim": "The deletion of UBP15 rescued the thermosensitivity phenotype of rsp5-ts mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The antagonistic relationship between Rsp5 and Ubp15 is also supported by the fact that the deletion of UBP15 rescued the thermosensitivity phenotype of rsp5-ts mutants (Figure 4B and Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the serial-dilution growth assays presented in Figure 4B and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "ada12d70-a27b-4f63-862b-b4c5b758163d",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C83",
+      "claim": "The rescue of rsp5-1 thermosensitivity by UBP15 deletion is dependent on the catalytic activity of Ubp15.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the rescue of rsp5-1 thermosensitivity was also observed with the ubp15-C214A mutant indicating it is dependent on the catalytic activity of Ubp15 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the serial-dilution growth assays presented in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "6a7c75cb-7a98-412f-a23c-2b42abb4b104",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C84",
+      "claim": "Overexpression of Rsp5-1 can rescue the rsp5-1 thermosensitivity phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we found that overexpression of Rps5-1 can rescue the rsp5-1 thermosensitivity phenotype (Figure 4\u2014figure supplement 1C), we next tested whether Rsp5 protein levels were affected by the deletion of UBP15.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the serial-dilution growth assays presented in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "174f2d04-59e8-4c22-acd5-b978893a6baa",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C85",
+      "claim": "Rsp5 protein levels in rsp5-1 cells are decreased upon deletion of UBP15.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4\u2014figure supplement 1D, Rsp5 protein levels in rsp5-1 cells are actually decreased upon deletion of UBP15.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the western blot presented in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "a553d8ea-3ba9-431e-9202-4189ed266183",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C86",
+      "claim": "UBP15 deletion suppresses the rsp5-1 thermosensitivity phenotype by mechanisms other than increasing Rsp5 protein levels.",
+      "claim_type": "IMPLICIT",
+      "source": "This result suggests that UBP15 deletion suppresses the rsp5-1 thermosensitivity phenotype by other mechanisms, as explored further below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that Rsp5 levels decrease upon UBP15 deletion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "d0c6434f-820d-43c7-9718-2ae79e4301b0",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C87",
+      "claim": "Rsp5 is an E3 ligase involved in DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Rsp5 is an E3 ligase involved in DNA damage (Beaudenon et al., 1999) and mRNA export (Rodriguez et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Beaudenon et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "26025968-07cc-4702-bd2f-72db353ed064",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C88",
+      "claim": "Rsp5 is an E3 ligase involved in mRNA export.",
+      "claim_type": "EXPLICIT",
+      "source": "Rsp5 is an E3 ligase involved in DNA damage (Beaudenon et al., 1999) and mRNA export (Rodriguez et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rodriguez et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "2cf4e914-80c0-4208-8bd6-87f299a179c0",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C89",
+      "claim": "At high temperatures, the rsp5-1 mutant accumulates mRNA in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "At high temperatures, the rsp5-1 mutant accumulates mRNA in the nucleus (Rodriguez et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rodriguez et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "7f905ed1-f0ed-4d14-aaf3-06a5b96525b7",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C90",
+      "claim": "The deletion of UBP15 suppressed the mRNA export defect of the rsp5-1 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these experiments showed that the deletion of UBP15 suppressed the mRNA export defect of the rsp5-1 mutant (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the RNA FISH experiments presented in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "4e2c39ff-3863-4a42-bb3d-8c05b2918b8e",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C91",
+      "claim": "The deletion of UBP15 reduced the number of cells retaining polyA RNAs in their nucleus from around 75% (172/222) to less than 5% (11/227).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the deletion of UBP15 reduced the number of cells retaining polyA RNAs in their nucleus from around 75% (172/222) to less than 5% (11/227).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified from the RNA FISH experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "2e2857c3-eaa2-4096-9090-97c74c8d4605",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C92",
+      "claim": "The suppression of mRNA export defect by UBP15 deletion likely explains how UBP15 deletion restored the viability of rsp5 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This suppression of mRNA export defect likely explains how UBP15 deletion restored the viability of rsp5 mutants and clearly establishes a role for Ubp15 in mRNA export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mRNA export data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "e3ff1f5e-05ab-42d5-921e-4c380b4c7571",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C93",
+      "claim": "Mex67 is a substrate of Ubp15.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments identified Mex67 as a likely substrate of Ubp15 (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the in vivo ubiquitylation assays presented in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "e04ef2d3-c217-4c5a-9472-1ffe6c36f5ba",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C94",
+      "claim": "Mex67 ubiquitylation levels decreased in rsp5-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Mex67 ubiquitylation levels decreased in rsp5-1 (Figure 5B), suggesting that Rsp5 and Ubp15 may oppose each other in the control of Mex67 ubiquitylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the in vivo ubiquitylation assays presented in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "a73d2ec0-8f7e-4dd9-b699-7516b3fa14cb",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C95",
+      "claim": "Rsp5 and Ubp15 may oppose each other in the control of Mex67 ubiquitylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Mex67 ubiquitylation levels decreased in rsp5-1 (Figure 5B), suggesting that Rsp5 and Ubp15 may oppose each other in the control of Mex67 ubiquitylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ubiquitylation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "739728e2-3c8e-4e7d-9270-79499a59e942",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C96",
+      "claim": "The deletion of UBP15 normalized Mex67 ubiquitylation of rsp5-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess this possibility more directly, we tested Mex67 ubiquitylation levels in ubp15\u0394/rsp5-1 double mutant and found that the deletion of UBP15 normalized Mex67 ubiquitylation of rsp5-1 cells (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the in vivo ubiquitylation assays presented in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "8542c54c-fa09-482c-8d69-9de987e72a94",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C97",
+      "claim": "Rsp5 and Ubp15 function as an E3 ligase/deubiquitylase tandem regulating Mex67 ubiquitylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these experiments established Rsp5 and Ubp15 as an E3 ligase/deubiquitylase tandem regulating Mex67 ubiquitylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the ubiquitylation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "d9e614d6-008c-4bb7-8d8f-04d72abca6e4",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C98",
+      "claim": "Mex67 is known to function as part of a large and dynamic protein interaction network.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Mex67 is known to function as part of a large and dynamic protein interaction network, we hypothesized that its ubiquitylation may modulate its interactome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Mex67.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "323cc3ec-6e56-4357-b970-4d16efcd3f94",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C99",
+      "claim": "Mex67 ubiquitylation may modulate its interactome.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Mex67 is known to function as part of a large and dynamic protein interaction network, we hypothesized that its ubiquitylation may modulate its interactome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated explicitly.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "b0b12219-d74e-4ff2-b173-5b97cdba58b6",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C100",
+      "claim": "Mex67 interacts with Mtr2, Nab2, Yra2, the THO complex and nearly the entire NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, based on previous studies (Batisse et al., 2009; Gwizdek et al., 2006; Oeffinger et al., 2007; Santos-Rosa et al., 1998; Saroufim et al., 2015; Str\u00e4sser and Hurt, 2000b; Zenklusen et al., 2001), we found a large number of Mex67-interacting proteins including Mtr2, Nab2, Yra2, the THO complex and nearly the entire NPC (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed by proteomic analysis and supported by multiple citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "f0143152-275b-487a-88b3-478a0616c3c2",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C101",
+      "claim": "Seven proteins were differentially associated with Mex67 in ubp15\u0394 cells by at least twofold.",
+      "claim_type": "EXPLICIT",
+      "source": "Among those, only seven were differentially associated with Mex67 in ubp15\u0394 cells by at least twofold (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the proteomic analysis presented in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "989b879a-f99e-4eff-ae89-a5255c1a471e",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C102",
+      "claim": "All proteins differentially associated with Mex67 in ubp15\u0394 cells were less associated with Mex67.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all those interactors were less associated with Mex67 in ubp15\u0394 cells, suggesting that the ubiquitylation of Mex67 negatively regulates its association with these factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the proteomic analysis presented in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "3927f908-3be7-48f7-8ef3-80c69c25bbee",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C103",
+      "claim": "The ubiquitylation of Mex67 negatively regulates its association with THO and CBC.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all those interactors were less associated with Mex67 in ubp15\u0394 cells, suggesting that the ubiquitylation of Mex67 negatively regulates its association with these factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the proteomic data showing decreased association in ubp15\u0394 cells where Mex67 is hyper-ubiquitylated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "3943fc17-2d2e-43c0-b3ab-adc755997351",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C104",
+      "claim": "The proteins less associated with Mex67 in ubp15\u0394 cells include all four subunits of the THO complex (Hpr1, Tho2, Mft1, and Thp2) and both subunits of the heterodimeric cap-binding complex (CBC; Sto1 and Cbc2).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, these proteins include all four subunits of the THO complex (Hpr1, Tho2, Mft1, and Thp2) and both subunits of the heterodimeric cap-binding complex (CBC; Sto1 and Cbc2) known to recruit THO/TREX to the 5'-cap of nascent pre-mRNAs (Figure 5D) in yeast and humans (Cheng et al., 2006; Sen et al., 2019; Viphakone et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the proteomic analysis presented in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "eec5008c-a205-4789-a2c5-d493480cbd89",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C105",
+      "claim": "CBC is known to recruit THO/TREX to the 5'-cap of nascent pre-mRNAs in yeast and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, these proteins include all four subunits of the THO complex (Hpr1, Tho2, Mft1, and Thp2) and both subunits of the heterodimeric cap-binding complex (CBC; Sto1 and Cbc2) known to recruit THO/TREX to the 5'-cap of nascent pre-mRNAs (Figure 5D) in yeast and humans (Cheng et al., 2006; Sen et al., 2019; Viphakone et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cheng et al., 2006; Sen et al., 2019; Viphakone et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "187b8490-4d7b-4cf7-916c-f90646243bee",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C106",
+      "claim": "Several subunits of the NPC, including the nuclear basket protein Mlp1, showed a slightly increased association with Mex67 in ubp15\u0394 cells compared to WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted also that several subunits of the NPC, including the nuclear basket protein Mlp1, showed a slightly increased association with Mex67 in ubp15\u0394 cells compared to WT cells (although below our significance threshold) (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the proteomic analysis presented in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "2cf1522f-1133-4954-b9d0-79697373efe6",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C107",
+      "claim": "Mex67 ubiquitylation, controlled by Rsp5 and Ubp15, regulates the association of Mex67 to pre-mRNAs via interactions with THO and cap binding factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results support a model where Mex67 ubiquitylation, controlled by Rsp5 and Ubp15, regulates the association of Mex67 to pre-mRNAs via interactions with THO and cap binding factors (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "f8a194f2-6a00-43de-86d5-d56cf44b5080",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C108",
+      "claim": "The interaction of Ubp15 with RNAPII is increased in the mutant for the CTD phosphatase fcp1-1, where RNAPII is hyper-phosphorylated, notably on its Ser2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial data showed that the interaction of Ubp15 with RNAPII is increased in the mutant for the CTD phosphatase fcp1-1. In this mutant, RNAPII is hyper-phosphorylated, notably on its Ser2, a phosphorylation state which is predominant towards the 3'-end of genes (Bataille et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bataille et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "0ab0431e-79b9-4fff-b55b-3c8051580c9e",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C109",
+      "claim": "Ser2 phosphorylation is predominant towards the 3'-end of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this mutant, RNAPII is hyper-phosphorylated, notably on its Ser2, a phosphorylation state which is predominant towards the 3'-end of genes (Bataille et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bataille et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "2fe10c28-fb52-41df-9fcb-455b895ef97b",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C110",
+      "claim": "mRNA processing and export factors function near the 3'-end of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "mRNA processing and export factors also function near the 3'-end of genes and some even require Ser2 phosphorylation for their recruitment (Jeronimo et al., 2013), which could explain the link between Ubp15, RNAPII CTD phosphorylation, and mRNA export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jeronimo et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "e666b8ee-e0c6-4f15-ab4b-dbcf2d6a8e9f",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C111",
+      "claim": "Some mRNA processing and export factors require Ser2 phosphorylation for their recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "mRNA processing and export factors also function near the 3'-end of genes and some even require Ser2 phosphorylation for their recruitment (Jeronimo et al., 2013), which could explain the link between Ubp15, RNAPII CTD phosphorylation, and mRNA export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jeronimo et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "30c17634-8c82-443f-9c22-f1533dca3a22",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C112",
+      "claim": "No effect of ubp15\u0394 or rsp5-1 mutants on Mex67 localization was observed by immunofluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, one possible role of Mex67 ubiquitylation/deubiquitylation by Rsp5 and Ubp15, respectively, could be to regulate its nuclear localization. However, we could not observe any effect of ubp15\u0394 or rsp5-1 mutants on Mex67 localization by immunofluorescence (Mex67 localized at the nuclear envelope in all strains tested, data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a negative result from immunofluorescence experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "dfa65dc7-e08d-467f-8a81-8d6163f87f83",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C113",
+      "claim": "Mex67 localization is restricted to the NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a recent paper from Derrer et al., 2019 which demonstrated that Mex67 localization is restricted to the NPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Derrer et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "5c7f2089-7658-44b2-ba11-9cd76892874d",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C114",
+      "claim": "Mex67 ubiquitylation negatively affects its interaction with the THO and CBC complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we showed that Mex67 ubiquitylation (i.e. UBP15 deletion) negatively affects its interaction with the THO and CBC complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the proteomic analysis presented in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "83ac45ef-7a4b-4fd8-9d74-cf1dbd20b1c8",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C115",
+      "claim": "CBC recruits THO/TREX to the 5'-cap via interaction with Yra1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CBC was shown to recruit THO/TREX to the 5'-cap via interaction with Yra1 (Cheng et al., 2006; Sen et al., 2019; Viphakone et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cheng et al., 2006; Sen et al., 2019; Viphakone et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "c8e18874-468c-4124-85d0-eedf15e31270",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C116",
+      "claim": "The assembly of Mex67 into mRNPs during transcription is counteracted by its ubiquitylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, our data suggest that the assembly of Mex67 into mRNPs during transcription is counteracted by its ubiquitylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data showing that ubiquitylation negatively affects Mex67 interaction with THO and CBC.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "d6a6a6c8-9538-4685-859d-bd92c247d27d",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C117",
+      "claim": "Ubp15, recruited by the phosphorylated RNAPII CTD, would antagonize Mex67 ubiquitylation, hence allowing Mex67 recruitment to the pre-mRNA by CBC and THO/TREX.",
+      "claim_type": "EXPLICIT",
+      "source": "In such a model, Ubp15, recruited by the phosphorylated RNAPII CTD, would antagonize Mex67 ubiquitylation, hence allowing Mex67 recruitment to the pre-mRNA by CBC and THO/TREX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "48c9e711-5717-4b64-ab13-382c3bfe3687",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C118",
+      "claim": "Ubiquitylation of Mex67 may prevent interaction with CBC and THO/TREX by a simple sterical block.",
+      "claim_type": "EXPLICIT",
+      "source": "How could ubiquitylation of Mex67 prevent its interaction with CBC and THO/TREX? Ubiquitylation of Mex67 may prevent interaction with CBC and THO/TREX by a simple sterical block",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "dac5bbdb-4181-4c16-a2c2-00f558b87eef",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C119",
+      "claim": "Mex67 ubiquitylation may trigger an intramolecular interaction between the conjugated ubiquitin and the UBA domain, creating a folded closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "or, \u2012since Mex67 contains a UBA domain\u2012 Mex67 ubiquitylation may trigger an intramolecular interaction between the conjugated ubiquitin and the UBA domain, creating a folded closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "36caf801-267b-46ca-b06b-6472d89c30f3",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C120",
+      "claim": "The UBA domain of Mex67 is known to bind ubiquitylated Hpr1.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with such a scenario, the UBA is known to bind ubiquitylated Hpr1 (a component of THO/TREX) (Gwizdek et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gwizdek et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "f87c14a9-215c-4dd6-bcbd-7bdd359b120c",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C121",
+      "claim": "A competition of the UBA domain for binding to ubiquitylated Hpr1 and the internal Mex67 ubiquitylated site would provide a switch for Mex67 binding to THO/TREX.",
+      "claim_type": "EXPLICIT",
+      "source": "A competition of the UBA domain for binding to ubiquitylated Hpr1 and the internal Mex67 ubiquitylated site would provide a switch for Mex67 binding to THO/TREX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "3729876c-bec8-49a6-9021-adaf308a5975",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C122",
+      "claim": "Hpr1 ubiquitylation is mediated by Rsp5.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Hpr1 ubiquitylation is mediated by Rsp5 (Gwizdek et al., 2005; Gwizdek et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gwizdek et al., 2005; Gwizdek et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "add50829-3721-473a-b552-f9e4f46b6409",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C123",
+      "claim": "Rsp5-mediated ubiquitylation of Hpr1 and Mex67 deubiquitylation by Ubp15 would work hand in hand towards the assembly of Mex67 into mRNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, Rsp5-mediated ubiquitylation of Hpr1 and Mex67 deubiquitylation by Ubp15 would work hand in hand towards the assembly of Mex67 into mRNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "c6a98142-95e1-441e-a66a-fb8bd81eafbd",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C124",
+      "claim": "In rsp5 mutant cells, Mex67 may find another route towards assembly into mRNPs when ubiquitylated, a condition that would be favored by the deletion of UBP15.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in rsp5 mutant cells, Mex67 \u2012which lost the ability to interact with THO/TREX via Hpr1\u2012 may (hypothetically) find another route towards assembly into mRNPs when ubiquitylated, a condition that would be favored by the deletion of UBP15.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation to explain the genetic interaction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "0f75cc46-17cc-4446-853a-2b4ace493fa1",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C125",
+      "claim": "During heat-shock, stress-response mRNAs are rapidly exported by Mex67, without the need for adapters.",
+      "claim_type": "EXPLICIT",
+      "source": "This would be reminiscent of what happens during heat-shock, where stress-response mRNAs are rapidly exported by Mex67, without the need for adapters (Zander et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zander et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "a7533999-48f0-4579-8134-010eb41e487b",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C126",
+      "claim": "The alternative mRNA export pathway during heat-shock allows fast export of stress response mRNAs but at the expense of mRNA quality control, which is bypassed.",
+      "claim_type": "EXPLICIT",
+      "source": "This alternative mRNA export pathway allows fast export of stress response mRNAs but at the expense of mRNA quality control, which is bypassed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zander et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "71d17f60-1ba3-4168-ba17-d75ed9318504",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C127",
+      "claim": "Mex67 and Hpr1 ubiquitylation need to turnover for mRNA export to optimally function.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative model, consistent with all our data, would be that Mex67 and Hpr1 ubiquitylation need to turnover for mRNA export to optimally function (see model in Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed to explain the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "a5c20934-893f-467b-9ab7-b0ba73f00bc4",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C128",
+      "claim": "Mex67 and Hpr1 need to flip back and forth between their ubiquitylated and non-ubiquitylated forms, considering the very dynamic nature of the interactions that they form and the fact that mRNPs are being remodeled during their journey from the transcription site to the cytoplasmic side of the nuclear envelope.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it sounds reasonable to think that Mex67 and Hpr1 need to flip back and forth between their ubiquitylated and non-ubiquitylated forms, considering the very dynamic nature of the interactions that they form and the fact that mRNPs are being remodeled during their journey from the transcription site to the cytoplasmic side of the nuclear envelope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the dynamic nature of mRNP assembly.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "d9e9213a-16ed-4b92-98ef-850e71249710",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C129",
+      "claim": "Deubiquitylation of Mex67 is important for its recruitment by THO.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, one may envision that deubiquitylation of Mex67 is important for its recruitment by THO but that its ubiquitylation is also important to allow Mex67 to let go of THO and escort the mRNA to the NPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "21dfa099-a79d-4424-a769-d79ff78ca4af",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "claim_id": "C130",
+      "claim": "Ubiquitylation of Mex67 is important to allow Mex67 to let go of THO and escort the mRNA to the NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, one may envision that deubiquitylation of Mex67 is important for its recruitment by THO but that its ubiquitylation is also important to allow Mex67 to let go of THO and escort the mRNA to the NPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a10780fd-c77c-4239-ad7d-facf6f706b56",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ubp15 is a deubiquitylase that interacts with both RNA polymerase II and the nuclear pore complex. The association of Ubp15 with RNAPII is increased in the fcp1-1 mutant where RNAPII is hyper-phosphorylated, suggesting recruitment via CTD phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C45, C58, and C59 are supported by proteomic analysis (Figure 1B,C) and reciprocal affinity purification with western blot confirmation (Figure 1D). The interaction with phosphorylated RNAPII and the entire NPC is demonstrated through multiple complementary approaches with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "3fe2d75f-baea-4925-8608-9496edda4c9a",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Deletion of UBP15 rescued the 6AU sensitivity of several elongation factor mutants (dst1\u0394, spt4\u0394, spt5-CTR\u0394, spt6-1004, hpr1\u0394) but not others (bur2\u0394, ctk1\u0394, rtf1\u0394, cdc73\u0394). This rescue depends on the catalytic activity of Ubp15.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C64-C68 are supported by serial-dilution growth assays (Figure 2A, 2B, Figure 2\u2014figure supplement 1A) showing selective genetic interactions. The catalytic requirement is demonstrated using the ubp15-C214A mutant with western blot confirmation of expression levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "3ed1e644-3feb-43d5-bfea-fcedda67efd7",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Despite rescuing 6AU sensitivity, deletion of UBP15 did not rescue the transcription elongation processivity defect of dst1\u0394 cells, suggesting an indirect link between Ubp15 and elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C73-C75 are supported by ChIP-qPCR (Figure 3A) and genome-wide ChIP-chip experiments (Figure 3B). The processivity measurements show no effect of UBP15 deletion on RNAPII distribution along genes, despite the genetic interactions observed. This apparent contradiction is acknowledged and leads to the inference in C76.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "dcc347d2-59b4-4765-b061-6340646395ef",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Deletion of UBP15 rescued both the thermosensitivity and mRNA export defect of rsp5 mutants in a catalytic activity-dependent manner. The deletion reduced nuclear polyA RNA accumulation from ~75% to <5% of cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C48-C49, C78-C83, C90-C92 are supported by serial-dilution growth assays (Figure 4A-C) and RNA FISH experiments (Figure 4D) with quantification. The catalytic dependence is demonstrated with the ubp15-C214A mutant. The rescue is dramatic and well-quantified, establishing a clear role for Ubp15 in mRNA export.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "edde5a41-1d39-4527-89fc-e31357b2521a",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ubp15 and Rsp5 function as an E3 ligase/deubiquitylase tandem regulating Mex67 ubiquitylation. Deletion of UBP15 leads to hyper-ubiquitylation of Mex67, while rsp5-1 shows decreased Mex67 ubiquitylation. The double mutant ubp15\u0394/rsp5-1 shows normalized Mex67 ubiquitylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C50, C93-C97 are supported by in vivo ubiquitylation assays (Figure 5B,C) showing opposing effects of Ubp15 and Rsp5 on Mex67 ubiquitylation. The epistasis experiment with the double mutant provides strong evidence for their antagonistic relationship in regulating Mex67 ubiquitylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "82f3aa62-9296-4fb8-8d1f-f58dde329624",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mex67 ubiquitylation negatively regulates its association with THO and CBC complexes. In ubp15\u0394 cells (where Mex67 is hyper-ubiquitylated), all four THO subunits and both CBC subunits show decreased association with Mex67.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C51, C101-C104, C114 are supported by proteomic analysis of Mex67 complexes (Figure 5D) showing that all seven differentially associated proteins were less abundant in ubp15\u0394 cells. The striking specificity for THO and CBC components provides strong evidence for the proposed regulatory mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "8ab8a3e7-25fc-45ca-b08f-c5a4534e67cf",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose a model where Mex67 ubiquitylation, controlled by Rsp5 and Ubp15, regulates the association of Mex67 to pre-mRNAs via interactions with THO and cap binding factors, potentially requiring dynamic ubiquitylation/deubiquitylation cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C107, C116-C117, C123, C127 represent models and inferences based on the data. While the individual observations supporting these models are sound, the mechanistic details remain speculative. The authors acknowledge alternative explanations and the need for additional experiments (e.g., ChIP experiments mentioned as unsuccessful).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "cd52b345-cca1-40a5-b2fe-7e7244280fa2",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "FACT (Spt16 and Pob3) is enriched in RNAPII purified from fcp1-1 cells, while Asr1 association is decreased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C62 are supported by proteomic analysis (Figure 1B, Supplementary file 1) and western blot (Figure 1\u2014figure supplement 1B). These observations provide context for the Ubp15-RNAPII interaction but are secondary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "a278bf61-0d86-496d-82ed-08d8b2dbe223",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ubp15\u0394 cells show sensitivity to cold temperature and hydroxyurea but not to elevated temperature, UV light, formamide, or caffeine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 are supported by serial-dilution growth assays (Figure 2\u2014figure supplement 1B) and confirm previously published phenotypes. These characterizations are useful but represent minor confirmatory findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "4c744662-dcbc-4837-be0c-1f88a39ba2e1",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Overexpression of Rsp5-1 can rescue the rsp5-1 thermosensitivity, but Rsp5 protein levels actually decrease upon UBP15 deletion, suggesting the rescue occurs through mechanisms other than increasing Rsp5 levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 are supported by serial-dilution growth assays (Figure 4\u2014figure supplement 1C) and western blot (Figure 4\u2014figure supplement 1D). This negative result helps rule out a simple mechanism and supports the more complex model proposed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "24bea9c5-ee56-4a6c-b16c-446c831d5d36",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Several NPC subunits, including Mlp1, showed slightly increased association with Mex67 in ubp15\u0394 cells, though below the significance threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C106 describes a trend in the proteomic data (Figure 5D) that did not reach statistical significance. While potentially interesting, this observation cannot be considered supported without additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "c93023f9-4f79-439a-a14e-1ae07e708a66",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "No effect of ubp15\u0394 or rsp5-1 mutants on Mex67 localization was observed by immunofluorescence, consistent with reports that Mex67 localization is restricted to the NPC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C113 represent negative results from immunofluorescence experiments (data not shown) supported by citation to Derrer et al., 2019. While the data are not shown, this negative result helps constrain the mechanism and is consistent with published work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    },
+    {
+      "id": "fb6512a6-59ec-42b5-a39a-e607fc450109",
+      "content_id": "7c228aec-6e2e-42e6-a620-bde5a7fef0b0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors speculate on multiple possible mechanisms for how ubiquitylation might regulate Mex67 interactions, including steric blocking, intramolecular UBA domain interactions, alternative export pathways, and dynamic ubiquitylation cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C118-C119, C121, C124, C128-C130 are explicitly speculative (using phrases like 'may', 'could', 'one may envision'). These represent reasonable hypotheses based on the data but lack experimental support and are acknowledged as speculation by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:37:08.593187Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "379fb245-d9d0-49e7-b20e-cd19e346a39e",
+      "result_id": "a10780fd-c77c-4239-ad7d-facf6f706b56"
+    },
+    {
+      "claim_id": "b8d26c38-f4ca-4669-8f99-fbcf92dd33d8",
+      "result_id": "a10780fd-c77c-4239-ad7d-facf6f706b56"
+    },
+    {
+      "claim_id": "69b6f4a6-c899-47e9-9175-0365b3e1e978",
+      "result_id": "a10780fd-c77c-4239-ad7d-facf6f706b56"
+    },
+    {
+      "claim_id": "598e42ea-a220-46eb-b956-51fdcd215924",
+      "result_id": "a10780fd-c77c-4239-ad7d-facf6f706b56"
+    },
+    {
+      "claim_id": "8da1df3b-c3c0-4590-8f5e-19d17cc06f55",
+      "result_id": "a10780fd-c77c-4239-ad7d-facf6f706b56"
+    },
+    {
+      "claim_id": "1d075200-6997-47f1-9b47-8c726b37f336",
+      "result_id": "a10780fd-c77c-4239-ad7d-facf6f706b56"
+    },
+    {
+      "claim_id": "cd20ce79-b1da-484e-b36a-f69b6fdb6210",
+      "result_id": "3fe2d75f-baea-4925-8608-9496edda4c9a"
+    },
+    {
+      "claim_id": "b1554cc5-a2e2-4f2c-b0ae-9c8a03ad6f03",
+      "result_id": "3fe2d75f-baea-4925-8608-9496edda4c9a"
+    },
+    {
+      "claim_id": "81b1d337-8997-4120-8530-426a52df91c0",
+      "result_id": "3fe2d75f-baea-4925-8608-9496edda4c9a"
+    },
+    {
+      "claim_id": "68e181dc-47f5-4c40-aedf-06529997713e",
+      "result_id": "3fe2d75f-baea-4925-8608-9496edda4c9a"
+    },
+    {
+      "claim_id": "9ed12497-c296-4439-b385-95d3fe769dc5",
+      "result_id": "3fe2d75f-baea-4925-8608-9496edda4c9a"
+    },
+    {
+      "claim_id": "075161c1-8f48-452f-a2cf-2db1903540fa",
+      "result_id": "3fe2d75f-baea-4925-8608-9496edda4c9a"
+    },
+    {
+      "claim_id": "bc7d7bc3-5965-40fe-b8e3-ac77583341b5",
+      "result_id": "3ed1e644-3feb-43d5-bfea-fcedda67efd7"
+    },
+    {
+      "claim_id": "e6987556-9cf0-4871-81e6-aca5885e141b",
+      "result_id": "3ed1e644-3feb-43d5-bfea-fcedda67efd7"
+    },
+    {
+      "claim_id": "8c0a2d2d-b25d-40e8-8568-326d3f9fdaa8",
+      "result_id": "3ed1e644-3feb-43d5-bfea-fcedda67efd7"
+    },
+    {
+      "claim_id": "7c8dd351-2877-42e7-8478-5069629f3c48",
+      "result_id": "3ed1e644-3feb-43d5-bfea-fcedda67efd7"
+    },
+    {
+      "claim_id": "b03989eb-e86d-4441-8966-4b5b56ac2550",
+      "result_id": "3ed1e644-3feb-43d5-bfea-fcedda67efd7"
+    },
+    {
+      "claim_id": "aff9e9f0-3714-4b52-b7cc-226a18ad987f",
+      "result_id": "dcc347d2-59b4-4765-b061-6340646395ef"
+    },
+    {
+      "claim_id": "c6e41a39-4848-413a-91a8-4c5bfedfa913",
+      "result_id": "dcc347d2-59b4-4765-b061-6340646395ef"
+    },
+    {
+      "claim_id": "a4265f3a-4cee-445b-971c-f9356c19d399",
+      "result_id": "dcc347d2-59b4-4765-b061-6340646395ef"
+    },
+    {
+      "claim_id": "f6fcc36f-2367-4626-8ea9-3366511e6e0b",
+      "result_id": "dcc347d2-59b4-4765-b061-6340646395ef"
+    },
+    {
+      "claim_id": "9d917461-9506-439a-b0fc-346a36f7a87c",
+      "result_id": "dcc347d2-59b4-4765-b061-6340646395ef"
+    },
+    {
+      "claim_id": "4c34cb3e-001b-48f1-8bfa-ad84194229fd",
+      "result_id": "dcc347d2-59b4-4765-b061-6340646395ef"
+    },
+    {
+      "claim_id": "4b0b7292-af89-4464-97f4-fef4e23d96c6",
+      "result_id": "dcc347d2-59b4-4765-b061-6340646395ef"
+    },
+    {
+      "claim_id": "ed4d19f5-a07b-4701-9351-44be4af1d37e",
+      "result_id": "dcc347d2-59b4-4765-b061-6340646395ef"
+    },
+    {
+      "claim_id": "ada12d70-a27b-4f63-862b-b4c5b758163d",
+      "result_id": "dcc347d2-59b4-4765-b061-6340646395ef"
+    },
+    {
+      "claim_id": "7f905ed1-f0ed-4d14-aaf3-06a5b96525b7",
+      "result_id": "dcc347d2-59b4-4765-b061-6340646395ef"
+    },
+    {
+      "claim_id": "4e2c39ff-3863-4a42-bb3d-8c05b2918b8e",
+      "result_id": "dcc347d2-59b4-4765-b061-6340646395ef"
+    },
+    {
+      "claim_id": "2e2857c3-eaa2-4096-9090-97c74c8d4605",
+      "result_id": "dcc347d2-59b4-4765-b061-6340646395ef"
+    },
+    {
+      "claim_id": "86099745-8430-45e3-9572-fd09ed88f79f",
+      "result_id": "edde5a41-1d39-4527-89fc-e31357b2521a"
+    },
+    {
+      "claim_id": "70253dff-fe1f-465d-932a-d490a8a8980f",
+      "result_id": "edde5a41-1d39-4527-89fc-e31357b2521a"
+    },
+    {
+      "claim_id": "e3ff1f5e-05ab-42d5-921e-4c380b4c7571",
+      "result_id": "edde5a41-1d39-4527-89fc-e31357b2521a"
+    },
+    {
+      "claim_id": "e04ef2d3-c217-4c5a-9472-1ffe6c36f5ba",
+      "result_id": "edde5a41-1d39-4527-89fc-e31357b2521a"
+    },
+    {
+      "claim_id": "a73d2ec0-8f7e-4dd9-b699-7516b3fa14cb",
+      "result_id": "edde5a41-1d39-4527-89fc-e31357b2521a"
+    },
+    {
+      "claim_id": "739728e2-3c8e-4e7d-9270-79499a59e942",
+      "result_id": "edde5a41-1d39-4527-89fc-e31357b2521a"
+    },
+    {
+      "claim_id": "8542c54c-fa09-482c-8d69-9de987e72a94",
+      "result_id": "edde5a41-1d39-4527-89fc-e31357b2521a"
+    },
+    {
+      "claim_id": "57ece987-9e9a-4a0b-882e-4a97ebac05e6",
+      "result_id": "82f3aa62-9296-4fb8-8d1f-f58dde329624"
+    },
+    {
+      "claim_id": "fadbbbfc-5811-4083-8b64-977dcf48cb23",
+      "result_id": "82f3aa62-9296-4fb8-8d1f-f58dde329624"
+    },
+    {
+      "claim_id": "f0143152-275b-487a-88b3-478a0616c3c2",
+      "result_id": "82f3aa62-9296-4fb8-8d1f-f58dde329624"
+    },
+    {
+      "claim_id": "989b879a-f99e-4eff-ae89-a5255c1a471e",
+      "result_id": "82f3aa62-9296-4fb8-8d1f-f58dde329624"
+    },
+    {
+      "claim_id": "3927f908-3be7-48f7-8ef3-80c69c25bbee",
+      "result_id": "82f3aa62-9296-4fb8-8d1f-f58dde329624"
+    },
+    {
+      "claim_id": "3943fc17-2d2e-43c0-b3ab-adc755997351",
+      "result_id": "82f3aa62-9296-4fb8-8d1f-f58dde329624"
+    },
+    {
+      "claim_id": "5c7f2089-7658-44b2-ba11-9cd76892874d",
+      "result_id": "82f3aa62-9296-4fb8-8d1f-f58dde329624"
+    },
+    {
+      "claim_id": "2cf1522f-1133-4954-b9d0-79697373efe6",
+      "result_id": "8ab8a3e7-25fc-45ca-b08f-c5a4534e67cf"
+    },
+    {
+      "claim_id": "c8e18874-468c-4124-85d0-eedf15e31270",
+      "result_id": "8ab8a3e7-25fc-45ca-b08f-c5a4534e67cf"
+    },
+    {
+      "claim_id": "d6a6a6c8-9538-4685-859d-bd92c247d27d",
+      "result_id": "8ab8a3e7-25fc-45ca-b08f-c5a4534e67cf"
+    },
+    {
+      "claim_id": "add50829-3721-473a-b552-f9e4f46b6409",
+      "result_id": "8ab8a3e7-25fc-45ca-b08f-c5a4534e67cf"
+    },
+    {
+      "claim_id": "71d17f60-1ba3-4168-ba17-d75ed9318504",
+      "result_id": "8ab8a3e7-25fc-45ca-b08f-c5a4534e67cf"
+    },
+    {
+      "claim_id": "2bd8f7ad-035c-4a62-869e-a16e259a1a26",
+      "result_id": "cd52b345-cca1-40a5-b2fe-7e7244280fa2"
+    },
+    {
+      "claim_id": "61d76fd1-071d-4596-82f2-0c522753b185",
+      "result_id": "cd52b345-cca1-40a5-b2fe-7e7244280fa2"
+    },
+    {
+      "claim_id": "8282843a-663f-4918-ae3d-98e75ede6447",
+      "result_id": "a278bf61-0d86-496d-82ed-08d8b2dbe223"
+    },
+    {
+      "claim_id": "624dee6d-9522-4783-8fe7-56d9ab3759bc",
+      "result_id": "a278bf61-0d86-496d-82ed-08d8b2dbe223"
+    },
+    {
+      "claim_id": "b19e00cd-e1ea-4b5f-a2a6-8ef28c4f23e5",
+      "result_id": "a278bf61-0d86-496d-82ed-08d8b2dbe223"
+    },
+    {
+      "claim_id": "6a7c75cb-7a98-412f-a23c-2b42abb4b104",
+      "result_id": "4c744662-dcbc-4837-be0c-1f88a39ba2e1"
+    },
+    {
+      "claim_id": "174f2d04-59e8-4c22-acd5-b978893a6baa",
+      "result_id": "4c744662-dcbc-4837-be0c-1f88a39ba2e1"
+    },
+    {
+      "claim_id": "a553d8ea-3ba9-431e-9202-4189ed266183",
+      "result_id": "4c744662-dcbc-4837-be0c-1f88a39ba2e1"
+    },
+    {
+      "claim_id": "187b8490-4d7b-4cf7-916c-f90646243bee",
+      "result_id": "24bea9c5-ee56-4a6c-b16c-446c831d5d36"
+    },
+    {
+      "claim_id": "30c17634-8c82-443f-9c22-f1533dca3a22",
+      "result_id": "c93023f9-4f79-439a-a14e-1ae07e708a66"
+    },
+    {
+      "claim_id": "dfa65dc7-e08d-467f-8a81-8d6163f87f83",
+      "result_id": "c93023f9-4f79-439a-a14e-1ae07e708a66"
+    },
+    {
+      "claim_id": "48c9e711-5717-4b64-ab13-382c3bfe3687",
+      "result_id": "fb6512a6-59ec-42b5-a39a-e607fc450109"
+    },
+    {
+      "claim_id": "dac5bbdb-4181-4c16-a2c2-00f558b87eef",
+      "result_id": "fb6512a6-59ec-42b5-a39a-e607fc450109"
+    },
+    {
+      "claim_id": "f87c14a9-215c-4dd6-bcbd-7bdd359b120c",
+      "result_id": "fb6512a6-59ec-42b5-a39a-e607fc450109"
+    },
+    {
+      "claim_id": "c6a98142-95e1-441e-a66a-fb8bd81eafbd",
+      "result_id": "fb6512a6-59ec-42b5-a39a-e607fc450109"
+    },
+    {
+      "claim_id": "a5c20934-893f-467b-9ab7-b0ba73f00bc4",
+      "result_id": "fb6512a6-59ec-42b5-a39a-e607fc450109"
+    },
+    {
+      "claim_id": "d9e9213a-16ed-4b92-98ef-850e71249710",
+      "result_id": "fb6512a6-59ec-42b5-a39a-e607fc450109"
+    },
+    {
+      "claim_id": "21dfa099-a79d-4424-a769-d79ff78ca4af",
+      "result_id": "fb6512a6-59ec-42b5-a39a-e607fc450109"
+    }
+  ],
+  "comparisons": []
+}

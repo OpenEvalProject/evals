@@ -1,0 +1,2244 @@
+{
+  "submission": {
+    "id": "547955e2-c23a-4298-964a-6fb1411bc4a4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:58:24.818487Z",
+    "updated_at": "2025-12-02T18:58:24.818487Z"
+  },
+  "content": [
+    {
+      "id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "submission_id": "547955e2-c23a-4298-964a-6fb1411bc4a4",
+      "content_type": "manuscript",
+      "content_text": "# Efficient coding of natural scene statistics predicts discrimination thresholds for grayscale textures\n\n## Authors\n\n- Tiberiu Tesileanu<sup>1</sup> ([ORCID: 0000-0003-3107-3088](https://orcid.org/0000-0003-3107-3088)) \u2020\n- Mary M Conte<sup>2</sup>\n- John J Briguglio<sup>3</sup>\n- Ann M Hermundstad<sup>3</sup> ([ORCID: 0000-0002-0377-0516](https://orcid.org/0000-0002-0377-0516))\n- Jonathan D Victor<sup>2</sup> ([ORCID: 0000-0002-9293-0111](https://orcid.org/0000-0002-9293-0111))\n- Vijay Balasubramanian<sup>4</sup> ([ORCID: 0000-0002-6497-3819](https://orcid.org/0000-0002-6497-3819))\n\n### Affiliations\n\n1. Flatiron Institute New York United States\n2. Feil Family Brain and Mind Institute, Weill Cornell Medical College New York United States\n3. Janelia Research Campus Ashburn United States\n4. David Rittenhouse Laboratories, University of Pennsylvania Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPreviously, in Hermundstad et al., 2014, we showed that when sampling is limiting, the efficient coding principle leads to a \u2018variance is salience\u2019 hypothesis, and that this hypothesis accounts for visual sensitivity to binary image statistics. Here, using extensive new psychophysical data and image analysis, we show that this hypothesis accounts for visual sensitivity to a large set of grayscale image statistics at a striking level of detail, and also identify the limits of the prediction. We define a 66-dimensional space of local grayscale light-intensity correlations, and measure the relevance of each direction to natural scenes. The \u2018variance is salience\u2019 hypothesis predicts that two-point correlations are most salient, and predicts their relative salience. We tested these predictions in a texture-segregation task using un-natural, synthetic textures. As predicted, correlations beyond second order are not salient, and predicted thresholds for over 300 second-order correlations match psychophysical thresholds closely (median fractional error <0.13).\n\n## Introduction\n\nNeural circuits in the periphery of the visual (Laughlin, 1981; Atick and Redlich, 1990; van Hateren, 1992; Fairhall et al., 2001; Ratliff et al., 2010; Liu et al., 2009; Borghuis et al., 2008; Garrigan et al., 2010; Kuang et al., 2012), auditory (Schwartz and Simoncelli, 2001; Lewicki, 2002; Smith and Lewicki, 2006; Carlson et al., 2012), and perhaps also olfactory (Te\u015fileanu et al., 2019) systems use limited resources efficiently to represent sensory information by adapting to the statistical structure of the environment (Sterling and Laughlin, 2015). There is some evidence that this sort of efficient coding might also occur more centrally, in the primary visual cortex (Olshausen and Field, 1996; Bell and Sejnowski, 1997; Vinje and Gallant, 2000; van Hateren and van der Schaaf, 1998) and perhaps also in the entorhinal cortex (Wei et al., 2015). Behaviorally, efficient coding implies that the threshold for perceiving a complex sensory cue, which depends on the collective behavior of many cells in a cortical circuit, should be set by its variance in the natural environment. However, the nature of this relationship depends on the regime in which the sensory system operates. Specifically, in conventional applications of efficient coding theory where sampling is abundant, high variance is predicted to be matched by high detection thresholds. The authors of Hermundstad et al., 2014 argued instead that texture perception occurs in a regime where sampling noise is the limiting factor. This leads to the opposite prediction (Tkacik et al., 2010; Doi and Lewicki, 2011; Hermundstad et al., 2014), namely that high variance should lead to a low detection threshold, summarized as variance is salience (Hermundstad et al., 2014). Tests of this prediction in Tkacik et al., 2010; Hermundstad et al., 2014 showed that it holds for the visual detection of simple black-and-white binary textures.\n\nThese binary textures, while informative about visual sensitivity, are a highly restricted set and do not capture many perceptually-salient properties of natural scenes. Moving to a complete description of visual textures, however, requires specifying the co-occurrence of all possible patterns of light across a visual image, and is generally intractable. One way to make this specification tractable is to construct a local and discretized grayscale texture space, in which luminance is drawn from a discrete set and correlations in luminance are only specified up to a given neighborhood size. For example, if we consider four spatially-contiguous squares (\u2018checks\u2019) with binary intensities, there are $2^{4}=16$ patterns that can each occur with different probabilities in a given texture. Imposing translation symmetry constrains these 16 parameters, leading to a 10-dimensional space of textures (Hermundstad et al., 2014). This space can be explored by synthesizing artificial binary textures with prescribed combinations of parameters (Victor et al., 2005; Victor and Conte, 2012), and by analyzing the relative contributions of these parameters to the correlated structure of natural images (Tkacik et al., 2010; Hermundstad et al., 2014). Here, we generalized these synthesis and analysis methods to multiple gray levels and used this to probe efficient encoding of grayscale textures composed of correlated patterns of three luminance levels (dark, gray, light) specified within blocks of four contiguous checks. We chose to add only one intermediate gray level compared to the binary case because it is the simplest generalization of binary textures that allows us to explore perceptual sensitivity to grayscale textures. Because the number of possible visual patterns increases as a power law in the number of distinguishable luminance values, this generalization already yields a very high-dimensional space: for intensities constrained to $G=3$ discrete values, there are $G^{4}=81$ patterns of four checks with three gray levels, leading to a 66-dimensional space of textures after accounting for the constraints of translation invariance.\n\nThis grayscale texture space enabled us to probe and interpret the relationship between natural scene statistics and psychophysics in much greater detail than is possible with binary textures. In particular, the \u2018variance is salience\u2019 hypothesis qualitatively predicts that directions corresponding to two-point correlations will be most perceptually salient, and it quantitatively predicts detection thresholds in different directions of this salient part of the texture space. (Two coordinates corresponding to contrast, which are also highly salient, are zeroed out by the preprocessing in our natural image analysis; we therefore do not probe these directions.) We tested these predictions by asking observers to report the location of textured strips presented rapidly against a background of white noise, and we found detailed agreement with the theory. By further exploiting symmetries in the distribution of grayscale textures, we show that human behavior not only reflects the relative informativeness of natural visual textures, but it also parallels known invariances in natural scenes. Natural scenes also have a notable, previously studied, asymmetry between bright and dark (Ratliff et al., 2010; Tkacik et al., 2010) which is reflected in the anatomy and physiology of visual circuits, and in visual behavior (Ratliff et al., 2010; Tkacik et al., 2010; Zemon et al., 1988; Chubb et al., 2004; Jin et al., 2008; Komban et al., 2014; Kremkow et al., 2014). The asymmetry is rooted ultimately in the lognormal distribution and spatial correlation structure of light intensities in natural scenes (Ratliff et al., 2010; Tka\u010dik et al., 2011). Our image processing pipeline (see Materials and methods) starts by taking the logarithm of the pixel intensities and removing the large-scale $1/f$ spatial correlations, and thus significantly reduces the dark-light asymmetry. The ternarization procedure that we then employ further diminishes the asymmetry, allowing us to focus on other aspects of natural scene statistics.\n\n## Results\n\n### Local textures with multiple gray levels\n\nWe define textures in terms of statistical correlations between luminance levels at nearby locations, generalizing the methods developed for binary images (Victor and Conte, 2012; Hermundstad et al., 2014) to three luminance levels. If we consider four \u2018checks\u2019 arranged in a $2\\times2$ square, the three luminance levels lead to $3^{4}=81$ possible patterns, and their frequency of occurrence in an image is equivalently parameterized by intensity correlations within the square. Thus there is an 81-dimensional space of ternary textures defined by correlations within square arrangements of checks. However, translation invariance constrains these 81 probabilities, reducing the number of independent statistics and thus the dimension of the texture space.\n\nWe can quantify the statistics of such textures in an image patch by gliding a $2\\times2$ block (a \u2018glider\u2019) over the patch and analyzing the luminance levels at different locations within this block (Figure 1A). At the most basic level, we can measure the luminance histogram at each of the four check locations in the glider. Check intensities can take three values (0, 1, or 2, for black, gray, or white), and the corresponding frequencies of occurrence must add to one, leaving two free parameters. If the histograms at each of the four locations within the glider were independent, this would lead to $4\\times2=8$ texture dimensions. However, because of translation invariance in natural images, the luminance histograms at each location must be the same, leaving only two independent dimensions of texture space from the single-check statistics.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54347/elife-54347-fig1-v2.jpg)\n\n**Figure 1.:** (A) With three luminance levels there are $3^{4}=81$ possible check configurations for a $2\\times2$ block (histogram on the right). We parametrize the pairwise correlations within these blocks using modular sums or differences of luminance values at nearby locations, $mod(A\\pmB,3)$ (see Materials and methods and Appendix 1 for details). This notation denotes the remainder after division by 3, so that for example $mod(4,3)=1$ and $mod(\u22121,3)=2$. The texture coordinates are defined by the probabilities $p_{0}$, $p_{1}$, $p_{2}$ with which $mod(A\\pmB,3)$ equals its three possible values, 0, 1, or 2. These three probabilities must sum to 1, so there are only two independent coordinates for each triplet of probabilities. (B) The eight second-order groups (planes) of texture coordinates in the ternary case. A texture group is identified by the choice of orientation of the pair of checks for which the correlation is calculated, and by whether a sum or a difference of luminance values is used. The greek letter notation ($\\beta$ for the second-order planes) mirrors the notation used in Hermundstad et al., 2014. (C and D) Example texture groups (\u2018simple\u2019 planes). The origin is the point $p_{0}=p_{1}=p_{2}=1/3$, representing an unbiased random texture. The interior of the triangle shows the allowed range in the plane where all the probability values are non-negative. The vertices are the points where only one of the probabilities is nonzero. An example texture patch is shown for the origin, as well as for each of the vertices of the probability space.\n\nNext, we can analyze the statistics of luminance levels at pairs of locations within the glider. Taking into account translation invariance, there are four ways to position these pairs (Figure 1B), each with a different orientation. For each orientation, we can calculate either the sum $A+B$ or the difference $A-B$ of the luminance values $A$ and $B$ at the two locations. This yields eight possible texture groups (Figure 1B). Within each group, we build texture coordinates by counting the fraction of occurrences in which $A\\pmB$ is equal to 0, 1, or 2, up to a multiple of 3; that\u00a0is, we are building a histogram of $A\\pmB$\u00a0modulo 3, here denoted $mod(A\\pmB,3)$. The appearance of the modulo function here is a consequence of using a Fourier transform in the space of luminance levels, which is convenient for incorporating translation invariance into our coordinate system (see Materials\u00a0and\u00a0methods and Appendix 1). The fractions of values of $mod(A+B,3)$ equal to 0, 1, or 2 must add up to 1, so that each texture group is characterized by two independent coordinates, that\u00a0is, a plane in texture space. These 8 planes constitute 16 independent dimensions of the texture space, in addition to the two dimensions needed to capture the histogram statistics at individual locations.\n\nWe can similarly analyze the joint statistics of luminance levels at three checks within the glider, or all four together. There are four ways to position 3-check gliders within the $2\\times2$ square, and, for each of these positions, eight parameters are needed to describe their occurrence frequencies, once the first- and second-order statistics have been fixed. This leads to $4\\times8=32$ third-order parameters. For configurations of all four checks, 16 parameters are required, once first-, second-, and third-order parameters are fixed. These $32+16=48$ parameters, in addition to the 18 parameters described above, lead to a 66-dimensional texture space. This provides a complete parameterization of the $2\\times2$ configurations with three gray levels. See Methods and Appendix 1 for a detailed derivation and a generalization to higher numbers of gray levels.\n\nIn order to probe human psychophysical sensitivity to visual textures, we need an algorithm for generating texture patches at different locations in texture space. To do so, we use an approach that generalizes the methods from Victor and Conte, 2012. Briefly, we randomly populate entries of the first row and/or column of the texture patch, and we then sequentially fill the rest of the entries in the patch using a Markov process that is designed to sample from a maximum-entropy distribution in which some of the texture coordinates are fixed (see Methods and Appendix 2 for details). Examples of texture patches obtained by co-varying coordinates within a single texture group are shown in Figure 1C and D. Examples of textures obtained by co-varying coordinates in two texture groups are shown in Figure 2. We refer to the first case as \u2018simple\u2019 planes, and the second as \u2018mixed\u2019 planes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54347/elife-54347-fig2-v2.jpg)\n\n**Figure 2.:** Each patch is obtained by choosing coordinates in two different texture groups: for instance, a point in the $(\\beta_{++}[0],\\beta_{+\u2212}[1])$ plane (row 1, column 2) corresponds to choosing the probabilities that $mod(A+B,3)=0$ and $mod(A\u2212B,3)=1$. Apart from these constraints, the texture is generated to maximize entropy (see Materials\u00a0and\u00a0methods and Appendix 2). The center of the coordinate system in all planes corresponds to an unbiased texture (i.e., the probability for each direction is 1/3), while a mixed-plane coordinate equal to one corresponds to full saturation\u00a0(i.e., the probability for that direction is 1). The dashed lines indicate the directions in texture space along which the illustrated patches were generated. The patches within a given plane are drawn at a constant distance from the center, but the precise amount of texture saturation varies, according to the largest saturation that could be generated in each direction. Note that along some directions, the maximum saturation is limited by the way in which the texture coordinates are defined, or by the texture synthesis procedure (see Appendix 2).\n\nWhen applying these methods to the analysis of natural images, we bin luminance values to produce equal numbers of black, white, and gray checks (details below), thus equalizing the previously studied brightness statistics in scenes (e.g., Zemon et al., 1988; Chubb et al., 2004; Jin et al., 2008; Ratliff et al., 2010; Tkacik et al., 2010; Tka\u010dik et al., 2011; Komban et al., 2014; Kremkow et al., 2014). This procedure allowed us to focus on higher-order correlations. In previous work, we found that median-binarized natural images show the highest variability in pairwise correlations, and that observers are correspondingly most sensitive to variations in these statistics (Tka\u010dik et al., 2011; Hermundstad et al., 2014). In view of this, we focused our attention on pairwise statistics. For three gray levels, these comprise a 16-dimensional \u2018salient\u2019 subspace of the overall texture space.\n\n### Natural image statistics predict perceptual thresholds\n\n#### Predictions from natural scene statistics\n\nThe \u2018variance is salience\u2019 hypothesis from Hermundstad et al., 2014 predicts that the most salient directions in texture space (for which detection thresholds are low) will be those along which there is the highest variance across image patches, while the least salient directions (for which detection thresholds are high) will be those with lowest variance. To test these predictions, we first mapped natural image patches to their corresponding locations within the texture space (as in Hermundstad et al., 2014). We then computed the inverse of the standard deviation of the natural image distribution along each direction, and we used this as our prediction of detection thresholds. The procedure is sketched in Figure 3 and described in more detail in Methods. We found that natural images have much higher variance in the second-order coordinate planes than in the third- and fourth-order planes. This predicted that textures exhibiting variability in the second-order planes would be most salient to observers, and thus would be amenable to a quantitative comparison between theory and behavior. Thus, we computed the predicted detection thresholds in four single and twenty-two mixed second-order coordinate planes, and we scaled this set of thresholds by a single overall scaling factor that was chosen to best match the behavioral measurements (blue dots in Figure 4C and Figure 5).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54347/elife-54347-fig3-v2.jpg)\n\n**Figure 3.:** (A) Images (which use a logarithmic encoding for luminance) are first downsampled by a factor $N$ and split into square patches of size $R$. The ensemble of patches is whitened by applying a filter that removes the average pairwise correlations (see panel C), and finally ternarized after histogram equalization (see panel D). (B) Blurry images are identified by fitting a two-component Gaussian mixture to the full distribution of image textures (shown in light gray). This is shown here in a particular projection involving a second-order direction ($\\beta_{+\u2212}$) and a fourth-order one $(\\alpha_{\\frac{+\u2212}{+\u2212}})$. The texture analysis is restricted to the component with higher contrast, which is shown in black on the plot. Note that a value of 1/3 on each axis corresponds to the origin of the texture space. (C) Power spectrum before and after filtering an image from the dataset. (D) Images are ternarized such that within each patch a third of the checks are converted to black, a third to gray, and a third to white. The processing pipeline illustrated here extends the analysis of Hermundstad et al., 2014 to multiple gray levels.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54347/elife-54347-fig4-v2.jpg)\n\n**Figure 4.:** (A) Psychophysical trials used a four-alternative forced-choice task in which the subjects identified the location of a strip sampled from a different texture on top of a background texture. (B) The subject\u2019s performance in terms of fraction of correct answers was fit with a Weibull function and the threshold was identified at the mid-point between chance and perfect performance. Note that if the subject\u2019s performance never reaches the mid-point on any of the trials, this procedure may extrapolate a threshold that falls outside the valid range for the coordinate system (see, e.g., the points outside the triangles in panel C). This signifies a low-sensitivity direction of texture space. (C) Measured thresholds (red crosses with pink error bars; the error bars are in most cases smaller than the symbol sizes) and predicted thresholds (blue dots) in second-order simple planes. Thresholds were predicted to be inversely proportional to the standard deviation observed in each texture direction in natural images. The plotted results used downsampling factor $N=2$ and patch size $R=32$. A single scaling factor for all planes was used to match to the psychophysics. The orange and green dashed lines show the effect of two symmetry transformations on the texture statistics (see text).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54347/elife-54347-fig5-v2.jpg)\n\n**Figure 5.:** Each plot corresponds to conditions in which the coordinates in two different texture groups are specified, according to the axis labels. For instance, column two in row one is the $(\\beta_{++}[0],\\beta_{+\u2212}[1])$ plane; the two coordinates correspond to choosing the probabilities that $mod(A+B,3)=0$ and $mod(A\u2212B,3)=1$. As in Figure 2, the center of the coordinate system in these planes corresponds to an unbiased texture (i.e., the probability for each direction is 1/3), while a coordinate equal to 1\u2014indicated by the gray dotted circle\u2014corresponds to full saturation (i.e., the probability for that direction is 1).\n\n#### Psychophysical measurements\n\nTo measure the sensitivity of human subjects to different kinds of textures, we used a four-alternative forced-choice paradigm following Hermundstad et al., 2014; Victor and Conte, 2012; Victor et al., 2013; Victor et al., 2015. Subjects were briefly shown an array in which a rectangular strip positioned near the left, right, top, or bottom edge was defined by a texture difference: either the strip was structured and the background was unstructured, or the background was structured and the strip was unstructured. Structured patterns were constructed using the texture generation method described above, and unstructured patterns were generated by randomly and independently drawing black, gray, or white checks with equal probability. The texture analysis procedure in Figure 3 included a whitening step that removed long-range correlations in natural images, and the local textures generated to test the predictions psychophysically also lacked these correlations. This is appropriate, because, during natural vision, dynamic stimuli engage fixational eye movements that whiten the visual input (Rucci and Victor, 2015). Spatial filtering has also been thought to play a role in whitening (Atick and Redlich, 1990), but in vitro experiments (Simmons et al., 2013 found that adaptive spatiotemporal receptive field processing did not by itself whiten the retinal output, but rather served to maintain a similar degree of correlation across stimulus conditions). We infer from these studies that short visual stimuli like our 120 ms presentations should be pre-whitened, to make up for the absence of fixational eye movements that produce whitening in natural, continuous viewing conditions.\n\nSubjects were asked to indicate the position of the differently textured strip within the array (Figure 4A). Thresholds were obtained by finding the value of a texture coordinate for which the subjects\u2019 performance was halfway between chance and perfect (Figure 4B; see Materials and methods for details). For the second-order planes, subjects were highly consistent in their relative sensitivity to different directions in texture space, with a single scaling factor accounting for a majority of the inter-subject variability (see Appendix 6). The subject-average thresholds in the second order planes are shown in Figure 4C and Figure 5 (red crosses and error bars). As predicted by the natural scene analysis, sensitivity in the third and fourth-order planes was low; in fact, detection thresholds could not be reliably measured in most directions beyond second order (Appendix 6).\n\n#### Variance predicts salience\n\nPredicted detection thresholds were in excellent agreement with those measured experimentally (Figure 4C and Figure 5), with a median absolute log error of about 0.13. Put differently, 50% of the measurements have relative errors below 13%, since in this regime, the log error is very well approximated by relative error (see Materials and methods and Appendix 4). This match is unlikely to be due to chance\u2014a permutation test yields $p<10^{-4}$ for the hypothesis that all measured thresholds were drawn independently from a single distribution that did not depend on the texture direction in which they were measured (see Materials and methods and Appendix 4 for details and further statistical tests; 95% of the 10,000 permutation samples exhibited median absolute log errors in the range [0.24,\u00a00.31]). The comparison between theory and experiment was tested in 12 directions in each of 26 single and mixed planes, for a total of 311 different thresholds (the measurement uncertainty in one direction in the $\\beta_{++}[0];\\beta_{\\frac{+}{+}}[1]$ mixed plane was too large, and we discarded that datapoint); a single scaling factor was used to align these two sets of measurements. Note that these measurements are not fully independent: the natural image predictions within each plane lie on an ellipse by construction; the psychophysical thresholds are measured independently at each point but are generally well-approximated by ellipses. Even taking this into account, the match between the predictions and the data is unlikely to be due to chance ($p<10^{\u22124}$; 95% range for the median absolute log error [0.16,\u00a00.22]; see Appendix 4).\n\nHowever, not all thresholds are accurately predicted from natural images. While some of the mismatches seem random and occur for directions in texture space where the experimental data have large variability (pink error bars in Figure 4C and Figure 5), there are also systematic discrepancies. Natural-image predictions tend to underestimate the threshold in the simple planes (median log prediction error \u22120.090) and overestimate the threshold in mixed planes (median log prediction error +0.008). That is, in human observers, detection of simultaneously-present multiple correlations is disproportionally better than predicted from the detection thresholds for single correlations, to a mild degree (see Appendix 5 for details).\n\nA second observation is that prediction errors tend to be larger for the sum-correlations (such as $\\beta_{++}$) than for the difference-correlations (such as $\\beta_{+\u2212}$), independent of the direction of the error. This may be a consequence of the way that modular arithmetic and gray-level discretization interact, leading to a kind of non-robustness of the sum-correlations. Specifically, the most prominent feature of the patterns induced by the sum-correlations is that there is a single gray level that occurs in runs (e.g., $p_{0}=1$ leads to runs of black checks, $p_{1}=1$ leads to runs of white checks, and $p_{2}=1$ leads to runs of gray checks; see Figure 1C). On the other hand, for difference correlations, $p_{0}=1$ leads to runs of all gray levels, while $p_{1}=1$ and $p_{2}=1$ lead to \u2018mini-gradients\u2019 that cycle between white, gray, and black (Figure 1D). Thus, the sum-correlations are subject to the particular assignment of gray levels and modulus while the difference-correlations rely on relationships that hold independent of these choices.\n\nIndependent of these trends, the natural-image predictions tend to underestimate the thresholds in directions with very low variance even while they match the thresholds in directions with high variance (see Appendix 5). This suggests the need to go beyond the linear efficient-coding model employed here. A simple generalization that interpolates between existing analytically solvable models (Hermundstad et al., 2014) involves a power-law transformation of the natural-image variances, $threshold\u221d(standard\u00a0deviation)^{\u2212\u03b7}$. We use a default exponent of $\u03b7=1$ throughout the text. The exponent $\u03b7$ that best matches our data is close but probably not equal to 1 (the 95% credible interval is [0.81,\u00a00.98]; see Appendix 4), suggesting that a weak power-law nonlinearity might be involved. The inferred range for $\u03b7$ also confirms that the measured thresholds are not independent of the predicted ones (which would have mapped to $\u03b7=0$).\n\nIn sum, the modest systematic discrepancies between the natural-image predictions and the measured thresholds indicate that the efficient-coding model has limitations, and the observed mismatches can guide future studies that go beyond this model. More generally, we do not expect the predictions of efficient coding to hold indefinitely: adapting to increasingly precise environmental statistics must ultimately become infeasible, both because of insufficient sampling, and because of the growing computational cost required for adaptation. Whether, and to what extent, these issues are at play is a subject for future work.\n\nThese results are robust to several variations in our analysis procedure. We obtain similar results when we either vary the sub-sampling factor $N$ and patch size $R$, modify the way in which we ternarize image patches, or analyze different image datasets (Figure 6A and Appendix 3). Eliminating downsampling completely (choosing $N=1$) does lead to slightly larger mismatches between predicted and measured thresholds (first three distributions on the left in Figure 6A) as expected from Hermundstad et al., 2014, a finding that we attribute to artifacts arising from imperfect demosaicing of the camera\u2019s filter array output.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54347/elife-54347-fig6-v2.jpg)\n\n**Figure 6.:** (A) The difference between the natural logarithms of the measured and predicted thresholds (red crosses and blue dots, respectively, in Figures 4C and 5) is approximately independent of the downsampling ratio $N$ and patch size $R$ used in preprocessing. The labels on the x-axis are in the format $N\\timesR$, with the violin plot and label in blue representing the analysis that we focused on in the rest of the paper. Each violin plot in the figure shows a kernel density estimate for the distribution of prediction errors for the 311 second-order single- and mixed-plane threshold measurements available in the psychophysics. The boxes show the 25th and 75th percentiles, and the lines indicate the medians. (B) Change in the natural logarithms of predicted (blue) or measured (red) thresholds following a symmetry transformation. Symmetry transformations that leave the natural image predictions unchanged also leave the psychophysical measurements unchanged. (See text for the special case of the exch(B,W) transformation.) The visualization style is the same as in panel A, except boxes and medians are not shown. The transformations starting with exch correspond to exchanges between gray levels; e.g., exch(B,W) exchanges black and white. lrFlip and udFlip are left-right and up-down geometric flips, respectively, while rot90 and rot180 are geometric rotations by the respective number of degrees (clockwise).\n\n### Invariances in psychophysics recapitulate symmetries in natural images\n\nThe \u2018variance is salience\u2019 hypothesis can be further tested by asking whether symmetries of the natural distribution of textures are reflected in invariances of psychophysical thresholds. Binary texture coordinates (Hermundstad et al., 2014) are not affected by many of these symmetry transformations, and so a test requires textures containing at least three gray levels. For instance, reflecting a texture around the vertical axis has no effect on second-order statistics in the binary case, but it leads to a flip around the $p_{0}$ direction in the $\\beta_{+\u2212}$ simple plane in ternary texture space (dashed green line in Figure 4C). To see this, recall that the coordinates in the $\\beta_{+\u2212}$ plane are given by the probabilities that $mod(A_{1}\u2212A_{2},3)=h$ for the three possible values of $h$ (Figure 1). Under a left-right flip, the values $A_{1}$ and $A_{2}$ are exchanged, leading to $mod(A_{1}\u2212A_{2},3)=mod(\u2212h,3)$. This means that the $h=1$ direction gets mapped to $h=2$, the $h=2$ direction gets mapped to $h=1$, and the $h=0$ direction remains unaffected. More details, and a generalization to additional symmetry transformations, can be found in Appendix 3. We find that the distribution of natural images is symmetric about the $p_{0}$ direction and is thus unaffected by this transformation, predicting that psychophysical thresholds should also be unaffected when textures are flipped about the vertical axis. This is indeed the case (Figure 6B). Similarly, the natural image distribution is symmetric under flips about the horizontal axis, and also under rotations by 90, 180, and 270 degrees, predicting perceptual invariances that are borne out in the psychophysical data (Figure 6B).\n\nReflecting a texture about the vertical axis also has an interesting effect on the $\\beta_{\\frac{+\u2212}{+\u2212}}$ plane: it not only flips the texture about the $p_{0}$ direction, but it also maps the texture onto the plane corresponding to the opposite diagonal orientation, $\\beta_{\\frac{\u2212+}{\u2212+}}$. The fact that a flip about the $p_{0}$ direction is a symmetry of natural images is thus related to the fact that the diagonal pairwise correlations are the same regardless of the orientation of the diagonal. This fact was already observed in the binary analysis (Hermundstad et al., 2014), and is related to the invariance under 90-degree rotations observed here (Figure 6B).\n\nIt is important to note that these symmetries were not guaranteed to exist for either natural images or human psychophysics. Most of the textures that we are using are not themselves invariant under rotations (see the examples from Figure 1C,D). This means that invariances of predicted thresholds arise from symmetries in the overall shape of the distribution of natural textures. Similarly, had observed thresholds been unrelated to natural texture statistics, we could have found a discrepancy between the symmetries observed in natural images and those observed in human perception. As an example, the up and down directions differ in meaning, as do vertical and horizontal directions. A system that preserves these semantic differences would not be invariant under flips and rotations. The fact that the psychophysical thresholds are, in fact, invariant under precisely those transformations that leave the natural image distribution unchanged supports the idea that this is an adaptation to symmetries present in the natural visual world.\n\nNatural images also have a well-known asymmetry between bright and dark contrasts (Ratliff et al., 2010; Tkacik et al., 2010) that is reflected in the anatomy and physiology of visual circuits, and in visual behavior (Ratliff et al., 2010; Tkacik et al., 2010; Zemon et al., 1988; Chubb et al., 2004; Jin et al., 2008; Komban et al., 2014; Kremkow et al., 2014). Our psychophysical data also show a bright/dark asymmetry. For instance, in Figure 4C, the threshold contour is not symmetric under the exchange of black and white checks, which has the effect of reflecting thresholds about the upper-left axis in the $\\beta_{++}$ plane (dashed orange line in the figure). Such bright-dark asymmetries lead to a wide distribution of relative changes in detection threshold upon the exchange of black and white (red violin plot in Figure 6B for the exch(B,W) transformation). Our natural image analysis does not show this asymmetry (blue violin plot in Figure 6B for the exch(B,W) transformation) because of our preprocessing, which follows previous work (Hermundstad et al., 2014). As observed in Ratliff et al., 2010, the bright-dark asymmetry rests on two main characteristics of natural images: a skewed distribution of light intensities such that the mean intensity is larger than the median, and a power-law spectrum of spatial correlations. Both of these are reduced or removed by our preprocessing pipeline, which starts by taking the logarithm of intensity values and thereby reduces the skewness in the intensity distribution, and continues with a whitening stage that removes the overall $1/f$ spatial correlation spectrum seen in natural images. The final ternarization step additionally reduces any remaining dark-bright asymmetry, since we ensure that each of the three gray levels occurs in equal proportions in the preprocessed patches. This explains why we do not see this asymmetry in our natural-image analysis.\n\n## Discussion\n\nThe efficient coding hypothesis posits that sensory systems are adapted to maximize information about natural sensory stimuli. In this work, we provided a rigorous quantitative test of this hypothesis in the context of visual processing of textures in a regime dominated by sampling noise. To this end, we extended the study of binary texture perception to grayscale images that capture a broader range of correlations to which the brain could conceivably adapt. We first generalized the definition of textures based on local multi-point correlations to accommodate multiple luminance levels. We then constructed algorithms for generating these textures, and we used these in our behavioral studies. By separately analyzing the distribution of textures across an ensemble of natural images, we showed that psychophysical thresholds can be predicted in remarkable detail based on the statistics of natural scenes. By further exploiting symmetry transformations that have non-trivial effects on ternary (but not binary) texture statistics, we provided a novel test of efficient coding and therein demonstrated that visually-guided behavior shows the same invariances as the distribution of natural textures. Overall, this work strengthens and refines the idea that the brain is adapted to efficiently encode visual texture information.\n\nThe methodology developed here can be used to address many hypotheses about visual perception. For example, if a specific set of textures was hypothesized to be particularly ethologically relevant, this set could be measured and compared against \u2018irrelevant\u2019 textures of equal signal-to-noise ratio. Because our hypothesis treats every dimension of texture space equally\u2014the symmetry only broken by properties of the natural environment\u2014we leveraged the rapidly increasing dimensionality of grayscale texture space to more stringently test the efficient coding hypothesis. In this vein, our construction can be generalized to larger numbers of gray levels and correlations over greater distances. However, the ability of neural systems to adapt to such correlations must ultimately be limited because, as texture complexity grows, it will eventually become impossible for the brain to collect sufficient statistics to determine optimal sensitivities. Even were it possible to accumulate these statistics, adapting to them might not be worth the computational cost of detecting and processing long-range correlations between many intensity values. Understanding the limits of texture adaptation will teach us about the cost-benefit tradeoffs of efficient coding in sensory cortex, in analogy with recently identified cost-benefit tradeoffs in optimal inference (Tavoni et al., 2019). And indeed, although our predictions are in excellent agreement with the data in most cases, we find a few systematic differences that may already be giving us a glimpse of these limits.\n\n## Materials and methods\n\n### Code and data\n\nThe code and data used to generate all of the results in the paper can be found on GitHub (RRID:SCR_002630), at https://github.com/ttesileanu/TextureAnalysis (Tesileanu et al., 2020;\u00a0copy archived at\u00a0https://github.com/elifesciences-publications/TextureAnalysis).\n\n### Definition of texture space\n\nA texture is defined here by the statistical properties of $2\\times2$ blocks of checks, each of which takes the value 0, 1, or 2, corresponding to the three luminance levels (black, gray, or white; see Appendix 1 for a generalization to more gray levels). The $3^{4}=81$ probabilities for all the possible configurations of such blocks form an overcomplete coordinate system because the statistical properties of textures are independent of position. To build a non-redundant parametrization of texture space, we use a construction based on a discrete Fourier transform (see Appendix 1). Starting with the luminance values $A_{i},i=1,\u2026,4$, of checks in a $2\\times2$ texture block (arranged as in Figure 1A), we define the coordinates $\\sigma_{\\frac{s_{1}s_{2}}{s_{3}s_{4}}}(h)$ which are equal to the fraction of locations where the linear combination $s_{1}\u2062A_{1}+s_{2}\u2062A_{2}+s_{3}\u2062A_{3}+s_{4}\u2062A_{4}$ has remainder equal to $h$ after division by three (the number of gray levels). In the case of three gray levels, the coefficients $s_{i}$ can be +1, \u22121, or 0.\n\nEach set of coefficients $s_{i}$ identifies a texture group, and within each texture group we have three probability values, one for each value of $h$. Since the probabilities sum up to 1, each texture group can be represented as a plane, and more specifically, as a triangle in a plane, since the probabilities are also non-negative. This is the representation shown in Figure 1C,D and used in subsequent figures. For compactness of notation, when referring to the coefficients $s_{i}$, we write + and \u2212 instead of +1 and \u22121, and omit coefficients that are 0, e.g., $\\sigma_{\\frac{+\u2212}{+\u2212}}$ instead of $\\sigma_{\\frac{+1\u22121}{+0\u22121}}$. We also use $\\gamma$ (rather than the generic symbol $\\sigma$) for 1-point correlations, $\\beta$ for 2-point correlations, $\\theta$ for 3-point correlations, and $\\alpha$ for 4-point correlation, matching the notation used in the binary case (Victor and Conte, 2012; Hermundstad et al., 2014). For instance, $\\beta_{\\frac{+}{\u2212}}$ is the plane identified by the linear combination $A_{1}\u2212A_{3}\u00a0(mod\u00a03)$.\n\n### Texture analysis and synthesis\n\nFinding the location in texture space that matches the statistics of a given image patch is straightforward given the definition above: we simply glide a $2\\times2$ block over the image patch and count the fraction of locations where the combination $s_{1}\u2062A_{1}+s_{2}\u2062A_{2}+s_{3}\u2062A_{3}+s_{4}\u2062A_{4}$ takes each of its possible values modulo three, for each texture group identified by the coefficients $s_{i}$. (As a technical detail, we glide the smallest shape that contains non-zero coefficients. For example, for $\\beta_{+\u2212}$, we glide a $1\\times2$ region instead of a $2\\times2$ one. This differs from gliding the $2\\times2$ block for all orders only through edge effects, and thus the difference decreases as the patch size $R$ increases.)\n\nIn order to generate a patch that corresponds to a given location in texture space, we use a maximum\u00a0entropy construction that is an extension of the methods from Victor and Conte, 2012. There are efficient algorithms based on 2d Markov models that can generate all single-group textures, namely, textures in which only the probabilities within a single texture group deviate from (1/3, 1/3, 1/3). For textures involving several groups, the construction is more involved, and in fact some combinations of texture coordinates cannot be achieved in a real texture. This restriction applies as textures become progressively more \u2018saturated\u2019, that\u00a0is, near the boundary of the space. In contrast, near the origin of the space all combinations can be achieved via the \u2018donut\u2019 construction for mixing textures, described in Victor and Conte, 2012. Details are provided in Appendix 2.\n\n### Visual stimulus design\n\nThe psychophysical task is adapted from Victor et al., 2005, and requires that the subject identify the location of a $16\\times64$-check target within a $64\\times64$-check array. The target is positioned near one of the four sides of the square array (chosen at random), with an 8-check margin. Target and background are distinguished by the texture used to color the checks: one is always the i.i.d. (unbiased) texture with three gray levels; the other is a texture specified by one or two of the coordinates defined in the text. In half of the trials, the target is structured and the background is i.i.d.; in the other half of the trials, the target is i.i.d. and the background is structured. To determine psychophysical sensitivity in a specific direction in the space of image statistics, we proceed as follows Hermundstad et al., 2014; Victor and Conte, 2012; Victor et al., 2013; Victor et al., 2015. We measure subject performance in this 4-alternative forced-choice task across a range of \u2018texture contrasts\u2019, that\u00a0is, distances from the origin in the direction of interest. Fraction correct, as a function of texture contrast, is fit to a Weibull function, and threshold is taken as the texture contrast corresponding to a fraction correct of 0.625, that\u00a0is, halfway between chance (0.25) and ceiling (1.0). Typically, 12 different directions in one plane of stimulus space are studied in a randomly interleaved fashion. Each of these 12 directions is sampled at 3 values of texture contrast, chosen in pilot experiments to yield performance between chance and ceiling. These trials are organized into 15 blocks of 288 trials each (a total of 4320 trials), so that each direction is sampled 360 times.\n\n### Visual stimulus display\n\nStimuli, as described above, were presented on a mean-gray background for 120 ms, followed by a mask consisting of an array of i.i.d. checks, each half the size of the stimulus checks. The display size was $15\\times15$ deg; viewing distance was 103 cm. Each of the $64\\times64$ array stimulus checks consisted of $10\\times10$ hardware pixels, and measured $14\\times14$ min. The display device was an LCD monitor with a refresh rate of 100 Hz, driven by a Cambridge Research ViSaGe system. The monitor was calibrated with a photometer prior to each day of data collection to ensure that the luminance of the gray checks was halfway between that of the black checks (<0.1) and white checks (23\u00a0cd/m2).\n\n### Psychophysics subjects\n\nSubjects were normal volunteers (three male, three female), ages 20 to 57, with visual acuities, corrected if necessary, of 20/20 or better. Of the six subjects, MC is an experienced psychophysical observer with thousands of hours of experience; the other subjects (SR, NM, WC, ZA, JWB) had approximately 10 (JWB), 40 (NM, WC, ZA) or 100 (SR) hours of experience at the start of the study, as subjects in related experiments. MC is an author. NM, WC, and ZA were na\u00efve to the purposes of the experiment.\n\nThis work was carried out with the subjects\u2019 informed consent, and in accordance with the Code of Ethics of the World Medical Association (Declaration of Helsinki) and the approval of the Institutional Review Board of Weill Cornell.\n\n### Psychophysics averaging\n\nThe average thresholds used in the main text were calculated by using the geometric mean of the subject thresholds, after applying a per-subject scaling factor chosen to best align the overall sensitivities of all the subjects; these multipliers ranged from 0.855 to 1.15. Rescaling a single consensus set of thresholds in this fashion accounted for 98.8% of the variance of individual thresholds across subjects. The average error bars were calculated by taking the root-mean-squared of the per-subject error bars in log space (determined from a bootstrap resampling of the Weibull-function fits, as in Victor et al., 2005), and then exponentiating.\n\n### Natural image preprocessing\n\nImages were taken from the UPenn Natural Image Database (Tka\u010dik et al., 2011) and preprocessed as shown in Figure 3A (see Materials\u00a0and\u00a0methods for details). Starting with a logarithmic encoding of luminance, we downsampled each image by averaging over $N\\timesN$ blocks of pixels to reduce potential camera sampling artifacts. We then split the images into non-overlapping patches of size $R$, filtered the patches to remove the average pairwise correlation expected in natural images (van Hateren, 1992), and finally ternarized patches to produce equal numbers of black, gray, and white checks (Figures 3A, C and D). For most figures shown in the main text, we used $N=2$ and $R=32$. Each patch was then analyzed in terms of its texture content and mapped to a point in ternary texture space following the procedure described in the main text. Finally, to avoid biases due to blurring artifacts, we fit a two-Gaussian mixture model to the texture distribution and used this to separate in-focus from blurred patches (Figure 3B; Hermundstad et al., 2014; details in Materials\u00a0and\u00a0methods).\n\n### Whitening of natural image patches\n\nTo generate the whitening filter that we used to remove average pairwise correlations, we started with the same preprocessing steps as for the texture analysis, up to and including the splitting into non-overlapping patches (first three steps in Figure 3A). We then took the average over all the patches of the power spectrum, which was obtained by taking the magnitude-squared of the 2d Fourier transform. Taking the reciprocal square root of each value in the resulting matrix yielded the Fourier transform of the filtering matrix.\n\n### Removal of blurred patches in natural images\n\nFollowing the procedure from Hermundstad et al., 2014, we fit a Gaussian mixture model with non-shared covariance matrices to the distribution of natural images in order to identify patches that are out of focus or motion blurred. This assigned each image patch to one of two multivariate Gaussian distributions. To identify which mixture component contained the sharper patches, we chose the component that had the higher median value of a measure of sharpness based on a Laplacian filter. Specifically, each patch was normalized so that its median luminance was set to 1, then convolved with the matrix $(0101\u221241010)$. The sharpness of the patch was calculated as the median absolute value over the pixels of the convolution result. This analysis was performed before any of the preprocessing steps, including the transformation to log intensities, and was restricted to the pixels that did not border image edges. There was thus no need to make assumptions regarding pixel values outside images.\n\n### Efficient coding calculations\n\nThreshold predictions from natural image statistics were obtained as in Hermundstad et al., 2014. We fit a multivariate Gaussian to the distribution of texture patches after removing the blurry component, and used the inverse of the standard deviation in the texture direction of interest as a prediction for the psychophysical threshold in that direction. The overall scale of the predictions is not fixed by this procedure. We chose the scaling so as to minimize the error between the $n$ measurements $x_{i}$ and the predictions $y_{i}$, $min\u2061\\frac{1}{n}\u2062\\sumi=1n(\\frac{log\u2061y_{i}-log\u2061x_{i}}{\u03f5_{i}})^{2}$, where $\u03f5_{i}$ are the measurement uncertainties in log space. This scaling factor was our single fitting parameter.\n\n### Calculating mismatch\n\nIn Figure 6 we show several comparisons of two sets of thresholds $x_{i}$ and $y_{i}$. These are either the set of measured thresholds and the set of natural image predictions for specific preprocessing options; or sets of either measured or predicted thresholds before and after the action of a symmetry transformation. We measure mismatch by the difference between the natural logarithms of the two quantities, $log\u2061y_{i}-log\u2061x_{i}$, which is approximately equal to the relative error when the mismatches are not too large ($log\u2061y_{i}-log\u2061x_{i}=log\u2061y_{i}/x_{i}=log\u2061(1+\\frac{y_{i}-x_{i}}{x_{i}})\u2248\\frac{y_{i}-x_{i}}{x_{i}}$). In panel A of the figure all 311 measured values and the corresponding predictions were used. For panel B, this set was restricted in two ways. First, for we ignored the measurements for which we did not have psychophysics data for the transformed direction. And second, we ignored directions on which the transformation acted trivially (see Appendix 3).\n",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "4b7675c4-d97d-4401-994b-631e0c10c7f0",
+      "submission_id": "547955e2-c23a-4298-964a-6fb1411bc4a4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephanie Palmer, University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54347.sa1](https://doi.org/10.7554/eLife.54347.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Sensitivity to grayscale textures is adapted to natural scene statistics\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Tesileanu and co-authors describe a new set of psychophysical experiments and analyses that ask how perceptual salience is related to natural scene variability, specifically looking at the statistics of pairs of ternary pixel values. They find strong concordance between perceptual threshold and the variability of statistics in natural scenes, so that lower detection thresholds exist for the more variable directions in their defined statistical space. This work is solid and follows nicely on their prior work published in eLife, making it a good Research Advance.\n\nEssential revisions:\n\n1) Can something be said about which directions showed the biggest differences between psychophysics and natural scenes? In the Discussion, it's stated that it's hard to be perfect and low variance dimensions are difficult. But is there any more specific significance to which patch patterns deviate most from this variance hypothesis?\n\n2) Please expand on how to interpret these results in light of the whitening process, which removed the average pairwise correlations from the image patches. The idea is that deviations from the mean 2-point correlations result in saliency, but is it troubling that the psychophysical stimulus itself did not have the mean 2-point correlations that exist in natural scenes? How would the visual system be exquisitely sensitive to deviations in natural scenes, but still work identically even in the absence of naturalistic pairwise correlations in the psychophysical stimulus? It seems as though this absence of naturalistic pairwise correlations would mean that the observer's visual system is pretty far from where it might reside under realistic natural viewing conditions. Yet the variability still predicts salience. Is this notable or is this easily explained?\n\n3) Enhance the clarity of the Results section:\n\nThe theoretical framework set up here is very nice, but challenging to grasp for a naive reader. Many details are left to the appendix that could be moved to the main text (as a summary) to improve the clarity of the presentation. On the other hand, there are some details in the Results that detract from the clarity of the presentation that could be moved to the Materials and methods. Please consider these points and revise the Results section accordingly.\n",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a0af6824-0a20-4fd0-b344-ecf0f9d0820d",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C1",
+      "claim": "When sampling is limiting, the efficient coding principle leads to a 'variance is salience' hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, in Hermundstad et al., 2014, we showed that when sampling is limiting, the efficient coding principle leads to a 'variance is salience' hypothesis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Hermundstad et al., 2014) that established this theoretical relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "54b98080-cda4-41b8-959e-94bd12bb881c",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C2",
+      "claim": "The 'variance is salience' hypothesis accounts for visual sensitivity to binary image statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, in Hermundstad et al., 2014, we showed that when sampling is limiting, the efficient coding principle leads to a 'variance is salience' hypothesis, and that this hypothesis accounts for visual sensitivity to binary image statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Hermundstad et al., 2014) that demonstrated this relationship experimentally.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "dd8ccd5d-fea3-497d-91c4-ebb97e19f8e8",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C3",
+      "claim": "The 'variance is salience' hypothesis accounts for visual sensitivity to a large set of grayscale image statistics at a striking level of detail.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using extensive new psychophysical data and image analysis, we show that this hypothesis accounts for visual sensitivity to a large set of grayscale image statistics at a striking level of detail",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the new psychophysical data and image analysis presented in this manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "0748c2e5-a8a0-45f0-9973-fea8b010dd82",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C4",
+      "claim": "A 66-dimensional space of local grayscale light-intensity correlations can be defined.",
+      "claim_type": "EXPLICIT",
+      "source": "We define a 66-dimensional space of local grayscale light-intensity correlations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim supported by the mathematical construction described in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "abb66bc9-7388-46c9-84bd-3a8748c7b499",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C5",
+      "claim": "The 'variance is salience' hypothesis predicts that two-point correlations are most salient.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'variance is salience' hypothesis predicts that two-point correlations are most salient",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction derived from the efficient coding framework applied to the texture space.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "1166c344-4229-4e0a-b0f5-0e50b9bb0c25",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C6",
+      "claim": "Correlations beyond second order are not salient.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, correlations beyond second order are not salient",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the psychophysical measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "893bcec6-4109-4a9d-92ed-511913cb887e",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C7",
+      "claim": "Predicted thresholds for over 300 second-order correlations match psychophysical thresholds closely with median fractional error <0.13.",
+      "claim_type": "EXPLICIT",
+      "source": "predicted thresholds for over 300 second-order correlations match psychophysical thresholds closely (median fractional error <0.13)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative comparison between theoretical predictions and experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "cc1f0395-d829-4639-8714-fd7d16d6817f",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C8",
+      "claim": "Neural circuits in the periphery of the visual system use limited resources efficiently to represent sensory information by adapting to the statistical structure of the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural circuits in the periphery of the visual (Laughlin, 1981; Atick and Redlich, 1990; van Hateren, 1992; Fairhall et al., 2001; Ratliff et al., 2010; Liu et al., 2009; Borghuis et al., 2008; Garrigan et al., 2010; Kuang et al., 2012), auditory (Schwartz and Simoncelli, 2001; Lewicki, 2002; Smith and Lewicki, 2006; Carlson et al., 2012), and perhaps also olfactory (Te\u015fileanu et al., 2019) systems use limited resources efficiently to represent sensory information by adapting to the statistical structure of the environment (Sterling and Laughlin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work across different sensory modalities.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "2fc93ae2-207b-4b46-a263-0a7fc9a8a877",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C9",
+      "claim": "Efficient coding might occur in the primary visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "There is some evidence that this sort of efficient coding might also occur more centrally, in the primary visual cortex (Olshausen and Field, 1996; Bell and Sejnowski, 1997; Vinje and Gallant, 2000; van Hateren and van der Schaaf, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work, though the claim is qualified as having 'some evidence'.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "ca292fc9-27ee-43c3-9b12-b13fefd65cc6",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C10",
+      "claim": "Efficient coding might occur in the entorhinal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "There is some evidence that this sort of efficient coding might also occur more centrally, in the primary visual cortex (Olshausen and Field, 1996; Bell and Sejnowski, 1997; Vinje and Gallant, 2000; van Hateren and van der Schaaf, 1998) and perhaps also in the entorhinal cortex (Wei et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work, though the claim is qualified as 'perhaps'.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "85d04e1a-57b2-4129-9c86-38af3e43b919",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C11",
+      "claim": "Efficient coding implies that the threshold for perceiving a complex sensory cue should be set by its variance in the natural environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Behaviorally, efficient coding implies that the threshold for perceiving a complex sensory cue, which depends on the collective behavior of many cells in a cortical circuit, should be set by its variance in the natural environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical inference from the efficient coding framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "c4bb5718-5c87-4237-906e-28cc06a58683",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C12",
+      "claim": "In conventional applications of efficient coding theory where sampling is abundant, high variance is predicted to be matched by high detection thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in conventional applications of efficient coding theory where sampling is abundant, high variance is predicted to be matched by high detection thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established theory in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "9bf1c99c-fa28-4a6b-9408-d623aa76e41a",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C13",
+      "claim": "Texture perception occurs in a regime where sampling noise is the limiting factor.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors of Hermundstad et al., 2014 argued instead that texture perception occurs in a regime where sampling noise is the limiting factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Hermundstad et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "101baefc-14ea-4bfe-939d-551259debdda",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C14",
+      "claim": "In the sampling-limited regime, high variance should lead to a low detection threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to the opposite prediction (Tkacik et al., 2010; Doi and Lewicki, 2011; Hermundstad et al., 2014), namely that high variance should lead to a low detection threshold, summarized as variance is salience (Hermundstad et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical and empirical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "13072cc6-2bfa-4baf-8e1a-db344a492ecd",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C15",
+      "claim": "The 'variance is salience' prediction holds for the visual detection of simple black-and-white binary textures.",
+      "claim_type": "EXPLICIT",
+      "source": "Tests of this prediction in Tkacik et al., 2010; Hermundstad et al., 2014 showed that it holds for the visual detection of simple black-and-white binary textures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "ae448dd8-db0d-46b8-82db-ab878d70ff11",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C16",
+      "claim": "Binary textures do not capture many perceptually-salient properties of natural scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "These binary textures, while informative about visual sensitivity, are a highly restricted set and do not capture many perceptually-salient properties of natural scenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of binary representations compared to natural scenes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "9f43a579-7467-466d-87a6-a8f4c9c0013c",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C18",
+      "claim": "Imposing translation symmetry on four binary checks leads to a 10-dimensional space of textures.",
+      "claim_type": "EXPLICIT",
+      "source": "Imposing translation symmetry constrains these 16 parameters, leading to a 10-dimensional space of textures (Hermundstad et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work and mathematical reasoning.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "10ae7520-87e7-4d16-85c8-95f9d09f277d",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C20",
+      "claim": "The 'variance is salience' hypothesis qualitatively predicts that directions corresponding to two-point correlations will be most perceptually salient.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the 'variance is salience' hypothesis qualitatively predicts that directions corresponding to two-point correlations will be most perceptually salient",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction derived from the efficient coding framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "4846fcc7-3796-41a0-bbbb-18f0b7bea3c9",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C21",
+      "claim": "The 'variance is salience' hypothesis quantitatively predicts detection thresholds in different directions of the salient part of the texture space.",
+      "claim_type": "EXPLICIT",
+      "source": "it quantitatively predicts detection thresholds in different directions of this salient part of the texture space",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction that is tested against experimental data in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "76f96d4e-2d14-43de-b818-d1913ddab599",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C22",
+      "claim": "Predicted thresholds match psychophysical measurements with detailed agreement.",
+      "claim_type": "EXPLICIT",
+      "source": "we found detailed agreement with the theory",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparison between theoretical predictions and experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "186131cc-28f1-46a5-ba25-a949f56b3e58",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C23",
+      "claim": "Human behavior reflects the relative informativeness of natural visual textures.",
+      "claim_type": "EXPLICIT",
+      "source": "we show that human behavior not only reflects the relative informativeness of natural visual textures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the psychophysical data showing correlation with natural scene statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "d7339a2b-5826-484f-8975-0e63979d011b",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C24",
+      "claim": "Human behavior parallels known invariances in natural scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "we show that human behavior not only reflects the relative informativeness of natural visual textures, but it also parallels known invariances in natural scenes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the symmetry analysis comparing natural images and psychophysical measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "be75d2ea-f0d8-4df0-add0-38b945cffb75",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C25",
+      "claim": "Natural scenes have a notable asymmetry between bright and dark.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural scenes also have a notable, previously studied, asymmetry between bright and dark (Ratliff et al., 2010; Tkacik et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "debd869d-028d-4734-8824-22f52201797e",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C26",
+      "claim": "The bright-dark asymmetry is reflected in the anatomy and physiology of visual circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural scenes also have a notable, previously studied, asymmetry between bright and dark (Ratliff et al., 2010; Tkacik et al., 2010) which is reflected in the anatomy and physiology of visual circuits, and in visual behavior (Ratliff et al., 2010; Tkacik et al., 2010; Zemon et al., 1988; Chubb et al., 2004; Jin et al., 2008; Komban et al., 2014; Kremkow et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "3dc39554-67c7-4bca-b5e4-88d384f93c9e",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C27",
+      "claim": "The bright-dark asymmetry is rooted in the lognormal distribution and spatial correlation structure of light intensities in natural scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetry is rooted ultimately in the lognormal distribution and spatial correlation structure of light intensities in natural scenes (Ratliff et al., 2010; Tka\u010dik et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "eaa2c67b-2749-4927-bb75-e816956ff7a7",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C29",
+      "claim": "The ternarization procedure further diminishes the dark-light asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The ternarization procedure that we then employ further diminishes the asymmetry",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about the effects of the preprocessing steps.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "5ae5c90c-c8c6-46f1-ae15-30560fd405a0",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C31",
+      "claim": "Translation invariance constrains the 81 probabilities, reducing the number of independent statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, translation invariance constrains these 81 probabilities, reducing the number of independent statistics and thus the dimension of the texture space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical inference based on symmetry constraints.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "241440dc-6b0b-4152-9fa9-9e847a2fceae",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C32",
+      "claim": "Check intensities can take three values (0, 1, or 2, for black, gray, or white).",
+      "claim_type": "EXPLICIT",
+      "source": "Check intensities can take three values (0, 1, or 2, for black, gray, or white)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the encoding scheme used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "9d86886b-54d2-4a44-97bf-33602d4ffe77",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C33",
+      "claim": "The frequencies of occurrence of the three intensity values must add to one, leaving two free parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "the corresponding frequencies of occurrence must add to one, leaving two free parameters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical constraint from probability theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "e431ad3e-be10-4ffa-862d-5319ad665199",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C34",
+      "claim": "Translation invariance in natural images means the luminance histograms at each location within the glider must be the same.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because of translation invariance in natural images, the luminance histograms at each location must be the same, leaving only two independent dimensions of texture space from the single-check statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the symmetry properties of natural images.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "7d63bd01-c095-4151-be07-e48fae067aab",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C35",
+      "claim": "There are four ways to position pairs of checks within the glider, each with a different orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking into account translation invariance, there are four ways to position these pairs (Figure 1B), each with a different orientation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B and is a consequence of the geometric arrangement.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "d13b0cc3-063b-44d4-9495-893e9f2ffba7",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C38",
+      "claim": "The 8 second-order planes constitute 16 independent dimensions of the texture space.",
+      "claim_type": "EXPLICIT",
+      "source": "These 8 planes constitute 16 independent dimensions of the texture space, in addition to the two dimensions needed to capture the histogram statistics at individual locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical consequence of having 8 planes with 2 independent coordinates each.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "6ffb59fa-f625-4a12-9e8a-7ea96b3f92d2",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C40",
+      "claim": "For each 3-check glider position, eight parameters are needed to describe their occurrence frequencies, once first- and second-order statistics have been fixed.",
+      "claim_type": "EXPLICIT",
+      "source": "for each of these positions, eight parameters are needed to describe their occurrence frequencies, once the first- and second-order statistics have been fixed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical consequence of the combinatorics and constraints.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "0196300d-d8e5-472f-9260-498c9eac4b15",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C42",
+      "claim": "For configurations of all four checks, 16 parameters are required, once first-, second-, and third-order parameters are fixed.",
+      "claim_type": "EXPLICIT",
+      "source": "For configurations of all four checks, 16 parameters are required, once first-, second-, and third-order parameters are fixed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical consequence of the combinatorics and constraints.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "dc339497-90aa-481f-b818-ae6094b44d6d",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C44",
+      "claim": "The texture generation algorithm uses a Markov process designed to sample from a maximum-entropy distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "we randomly populate entries of the first row and/or column of the texture patch, and we then sequentially fill the rest of the entries in the patch using a Markov process that is designed to sample from a maximum-entropy distribution in which some of the texture coordinates are fixed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the texture synthesis algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "c2de2725-ccb4-45b8-8fcb-a2113f8e386b",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C45",
+      "claim": "Natural images have much higher variance in the second-order coordinate planes than in the third- and fourth-order planes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that natural images have much higher variance in the second-order coordinate planes than in the third- and fourth-order planes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the natural image analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "df802d8b-4d91-4785-97b7-d8c02e8dde27",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C46",
+      "claim": "Textures exhibiting variability in the second-order planes would be most salient to observers.",
+      "claim_type": "EXPLICIT",
+      "source": "This predicted that textures exhibiting variability in the second-order planes would be most salient to observers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction derived from the 'variance is salience' hypothesis and the natural image statistics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "508f6437-5b13-4d58-bf49-95286b48e255",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C47",
+      "claim": "Predicted detection thresholds were computed in four single and twenty-two mixed second-order coordinate planes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we computed the predicted detection thresholds in four single and twenty-two mixed second-order coordinate planes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "5dc48265-3354-44fe-a548-4cf2e1aab77f",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C48",
+      "claim": "A single overall scaling factor was chosen to best match the behavioral measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "we scaled this set of thresholds by a single overall scaling factor that was chosen to best match the behavioral measurements",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of how the predictions were fit to the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "79804098-fe12-43c3-aa99-6ec60a53dd52",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C49",
+      "claim": "Subjects were briefly shown an array in which a rectangular strip was defined by a texture difference.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were briefly shown an array in which a rectangular strip positioned near the left, right, top, or bottom edge was defined by a texture difference",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the psychophysical task.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "bd6a7838-31d7-494f-bbaf-4af75255ae99",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C50",
+      "claim": "Structured patterns were constructed using the texture generation method, and unstructured patterns were generated by randomly drawing black, gray, or white checks with equal probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Structured patterns were constructed using the texture generation method described above, and unstructured patterns were generated by randomly and independently drawing black, gray, or white checks with equal probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the stimulus generation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "11135edb-4c87-418b-8d4e-da2f3c00cf23",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C51",
+      "claim": "The texture analysis procedure included a whitening step that removed long-range correlations in natural images.",
+      "claim_type": "EXPLICIT",
+      "source": "The texture analysis procedure in Figure 3 included a whitening step that removed long-range correlations in natural images",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological description shown in Figure 3.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "86eceb57-18a9-4218-82b5-fffa9fa7b6b6",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C52",
+      "claim": "During natural vision, dynamic stimuli engage fixational eye movements that whiten the visual input.",
+      "claim_type": "EXPLICIT",
+      "source": "This is appropriate, because, during natural vision, dynamic stimuli engage fixational eye movements that whiten the visual input (Rucci and Victor, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "2954c6b4-1fde-4aa0-8a23-8cf8891f7428",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C53",
+      "claim": "Adaptive spatiotemporal receptive field processing did not by itself whiten the retinal output.",
+      "claim_type": "EXPLICIT",
+      "source": "but in vitro experiments (Simmons et al., 2013 found that adaptive spatiotemporal receptive field processing did not by itself whiten the retinal output, but rather served to maintain a similar degree of correlation across stimulus conditions)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "3e7cda75-7a85-476d-8495-4b8b338abb97",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C54",
+      "claim": "Short visual stimuli like 120 ms presentations should be pre-whitened to make up for the absence of fixational eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "We infer from these studies that short visual stimuli like our 120 ms presentations should be pre-whitened, to make up for the absence of fixational eye movements that produce whitening in natural, continuous viewing conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited studies about fixational eye movements and retinal processing.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "e9d0cbf3-3f39-4d00-9c1c-1e897f58e7f5",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C55",
+      "claim": "Thresholds were obtained by finding the value of a texture coordinate for which the subjects' performance was halfway between chance and perfect.",
+      "claim_type": "EXPLICIT",
+      "source": "Thresholds were obtained by finding the value of a texture coordinate for which the subjects' performance was halfway between chance and perfect (Figure 4B; see Materials and methods for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological description shown in Figure 4B.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "08e913ad-cfb7-4722-926d-3188697fb798",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C56",
+      "claim": "Subjects were highly consistent in their relative sensitivity to different directions in texture space for the second-order planes.",
+      "claim_type": "EXPLICIT",
+      "source": "For the second-order planes, subjects were highly consistent in their relative sensitivity to different directions in texture space, with a single scaling factor accounting for a majority of the inter-subject variability",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the psychophysical data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "9a16955e-2815-4a9f-96a8-bb41b5a10818",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C57",
+      "claim": "Sensitivity in the third and fourth-order planes was low.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the natural scene analysis, sensitivity in the third and fourth-order planes was low",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the psychophysical measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "8f15c88d-b45d-479d-91f8-4aa4c6be09f3",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C58",
+      "claim": "Detection thresholds could not be reliably measured in most directions beyond second order.",
+      "claim_type": "EXPLICIT",
+      "source": "in fact, detection thresholds could not be reliably measured in most directions beyond second order",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the psychophysical measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "f2c71ed0-1a61-4915-a317-3f2600dc0738",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C59",
+      "claim": "Predicted detection thresholds were in excellent agreement with those measured experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Predicted detection thresholds were in excellent agreement with those measured experimentally (Figure 4C and Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison shown in Figures 4C and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "26644616-6872-407b-9a84-2eee7d9267a9",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C60",
+      "claim": "The median absolute log error between predictions and measurements is about 0.13.",
+      "claim_type": "EXPLICIT",
+      "source": "with a median absolute log error of about 0.13",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measure of the agreement between predictions and measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "046b42e6-0d63-4ea9-9f9e-6a1326465b95",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C61",
+      "claim": "50% of the measurements have relative errors below 13%.",
+      "claim_type": "EXPLICIT",
+      "source": "Put differently, 50% of the measurements have relative errors below 13%, since in this regime, the log error is very well approximated by relative error",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a restatement of the median absolute log error in terms of relative error.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "409483ca-6689-4335-8a52-4ec9736b141f",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C63",
+      "claim": "95% of the 10,000 permutation samples exhibited median absolute log errors in the range [0.24, 0.31].",
+      "claim_type": "EXPLICIT",
+      "source": "95% of the 10,000 permutation samples exhibited median absolute log errors in the range [0.24, 0.31]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the permutation test analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "5e93fd87-831b-40ee-b920-5ad1dd63a5cd",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C64",
+      "claim": "The comparison between theory and experiment was tested in 12 directions in each of 26 single and mixed planes, for a total of 311 different thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison between theory and experiment was tested in 12 directions in each of 26 single and mixed planes, for a total of 311 different thresholds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the scope of the experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "6ebf1b7b-c892-46d5-b624-02f5b50d6bc0",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C65",
+      "claim": "A single scaling factor was used to align the predictions and measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "a single scaling factor was used to align these two sets of measurements",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the fitting procedure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "69f6dc67-1489-486c-a584-f648f2a14988",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C66",
+      "claim": "The natural image predictions within each plane lie on an ellipse by construction.",
+      "claim_type": "EXPLICIT",
+      "source": "the natural image predictions within each plane lie on an ellipse by construction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consequence of the Gaussian model fit to the natural image distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "e3c58a4e-1e6a-4bf9-8e36-a84f45cd407d",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C67",
+      "claim": "The psychophysical thresholds are generally well-approximated by ellipses.",
+      "claim_type": "EXPLICIT",
+      "source": "the psychophysical thresholds are measured independently at each point but are generally well-approximated by ellipses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the psychophysical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "cfd0cad9-f157-46b8-a8e1-74ad5d010d63",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C69",
+      "claim": "Not all thresholds are accurately predicted from natural images.",
+      "claim_type": "EXPLICIT",
+      "source": "However, not all thresholds are accurately predicted from natural images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the limitations of the predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "ff405a35-e6a0-4126-bd5a-02ca2e43520b",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C70",
+      "claim": "Natural-image predictions tend to underestimate the threshold in the simple planes (median log prediction error \u22120.090).",
+      "claim_type": "EXPLICIT",
+      "source": "Natural-image predictions tend to underestimate the threshold in the simple planes (median log prediction error \u22120.090)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation about systematic discrepancies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "0ea47b62-6691-4ed2-8570-715a0cc31f50",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C71",
+      "claim": "Natural-image predictions tend to overestimate the threshold in mixed planes (median log prediction error +0.008).",
+      "claim_type": "EXPLICIT",
+      "source": "and overestimate the threshold in mixed planes (median log prediction error +0.008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation about systematic discrepancies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "cdf8418d-4136-411f-bd6c-b206b50817e7",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C72",
+      "claim": "In human observers, detection of simultaneously-present multiple correlations is disproportionally better than predicted from the detection thresholds for single correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, in human observers, detection of simultaneously-present multiple correlations is disproportionally better than predicted from the detection thresholds for single correlations, to a mild degree",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the systematic discrepancy between simple and mixed planes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "e492ea5b-0139-48cc-9b76-224976d62324",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C74",
+      "claim": "The larger errors for sum-correlations may be a consequence of how modular arithmetic and gray-level discretization interact.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be a consequence of the way that modular arithmetic and gray-level discretization interact, leading to a kind of non-robustness of the sum-correlations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed pattern.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "c9061448-ea65-464d-a96c-22d86befd747",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C77",
+      "claim": "Sum-correlations are subject to the particular assignment of gray levels and modulus while difference-correlations rely on relationships that hold independent of these choices.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the sum-correlations are subject to the particular assignment of gray levels and modulus while the difference-correlations rely on relationships that hold independent of these choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about why sum-correlations might be less robust.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "1eb9bbda-4513-47e0-912a-a953c90352c1",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C78",
+      "claim": "Natural-image predictions tend to underestimate the thresholds in directions with very low variance even while they match the thresholds in directions with high variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent of these trends, the natural-image predictions tend to underestimate the thresholds in directions with very low variance even while they match the thresholds in directions with high variance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about systematic patterns in the prediction errors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "cc6a3146-f3ab-48ae-97cf-8242fe386278",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C79",
+      "claim": "The systematic discrepancies suggest the need to go beyond the linear efficient-coding model.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the need to go beyond the linear efficient-coding model employed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed systematic discrepancies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "4af11559-6585-4d2a-a72e-434121120c76",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C82",
+      "claim": "A weak power-law nonlinearity might be involved in the relationship between variance and threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that a weak power-law nonlinearity might be involved",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the fitted exponent being close to but not exactly 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "aa4d5f28-ee7d-4e04-a9eb-7711fee2c681",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C84",
+      "claim": "The modest systematic discrepancies indicate that the efficient-coding model has limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, the modest systematic discrepancies between the natural-image predictions and the measured thresholds indicate that the efficient-coding model has limitations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observed discrepancies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "118c8b80-46d6-4bd8-98c1-0dbeaf1ad1d0",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C85",
+      "claim": "The observed mismatches can guide future studies that go beyond the efficient-coding model.",
+      "claim_type": "EXPLICIT",
+      "source": "and the observed mismatches can guide future studies that go beyond this model",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the implications of the findings for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "55cdf735-ebd2-4de4-b94e-fc9de62b84ab",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C86",
+      "claim": "Adapting to increasingly precise environmental statistics must ultimately become infeasible due to insufficient sampling and growing computational cost.",
+      "claim_type": "EXPLICIT",
+      "source": "adapting to increasingly precise environmental statistics must ultimately become infeasible, both because of insufficient sampling, and because of the growing computational cost required for adaptation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical argument about the limits of efficient coding.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "73392dd7-f1d7-42ce-93e9-0106e474e773",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C88",
+      "claim": "The results are robust to modifications in the way image patches are ternarized.",
+      "claim_type": "EXPLICIT",
+      "source": "modify the way in which we ternarize image patches",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the robustness analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "5f935120-660b-40c7-893f-5064b44dd6b7",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C89",
+      "claim": "The results are robust to analyzing different image datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "or analyze different image datasets (Figure 6A and Appendix 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the robustness analysis shown in Figure 6A and Appendix 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "2967fb23-2181-4976-ad19-552a2fbf1964",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C91",
+      "claim": "The larger mismatches with N=1 are attributed to artifacts from imperfect demosaicing of the camera's filter array output.",
+      "claim_type": "EXPLICIT",
+      "source": "as expected from Hermundstad et al., 2014, a finding that we attribute to artifacts arising from imperfect demosaicing of the camera's filter array output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observation, with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "1fbee676-d0f3-4d9e-bba6-4b5c363707fc",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C92",
+      "claim": "Reflecting a texture around the vertical axis has no effect on second-order statistics in the binary case.",
+      "claim_type": "EXPLICIT",
+      "source": "Binary texture coordinates (Hermundstad et al., 2014) are not affected by many of these symmetry transformations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the properties of binary textures, with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "67b53f37-db89-4bc7-ba55-01be2d8010f7",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C96",
+      "claim": "Psychophysical thresholds are unaffected when textures are flipped about the vertical axis.",
+      "claim_type": "EXPLICIT",
+      "source": "predicting that psychophysical thresholds should also be unaffected when textures are flipped about the vertical axis. This is indeed the case (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the psychophysical measurements shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "5cfb70ce-e176-4cf8-a374-56c951aa2d3b",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C97",
+      "claim": "The natural image distribution is symmetric under flips about the horizontal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the natural image distribution is symmetric under flips about the horizontal axis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the natural image analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "9ba3bba3-7aeb-43ee-8268-d46e434ea184",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C98",
+      "claim": "The natural image distribution is symmetric under rotations by 90, 180, and 270 degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "and also under rotations by 90, 180, and 270 degrees",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the natural image analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "967f2c9e-2fc4-4043-b3af-8517db5be794",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C99",
+      "claim": "Perceptual invariances under rotations are borne out in the psychophysical data.",
+      "claim_type": "EXPLICIT",
+      "source": "predicting perceptual invariances that are borne out in the psychophysical data (Figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the psychophysical measurements shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "0bf371b2-edc9-409c-9f6f-03727ff85af2",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C102",
+      "claim": "The symmetry of diagonal correlations was already observed in the binary analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This fact was already observed in the binary analysis (Hermundstad et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "8ebf6984-36f3-440a-9ba9-d1c4e5f70441",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C103",
+      "claim": "These symmetries were not guaranteed to exist for either natural images or human psychophysics.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that these symmetries were not guaranteed to exist for either natural images or human psychophysics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement emphasizing the non-trivial nature of the observed symmetries.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "84c52460-8b6f-4cc2-b283-c0d6b15bbe3a",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C104",
+      "claim": "Most of the textures used are not themselves invariant under rotations.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the textures that we are using are not themselves invariant under rotations (see the examples from Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation about the individual textures shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "c086616c-f0d0-4345-be59-63030b6cab0c",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C105",
+      "claim": "Invariances of predicted thresholds arise from symmetries in the overall shape of the distribution of natural textures.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that invariances of predicted thresholds arise from symmetries in the overall shape of the distribution of natural textures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the origin of the observed invariances.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "03b47b61-d5bf-4839-ba64-39921071be8e",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C106",
+      "claim": "The psychophysical thresholds are invariant under precisely those transformations that leave the natural image distribution unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the psychophysical thresholds are, in fact, invariant under precisely those transformations that leave the natural image distribution unchanged supports the idea that this is an adaptation to symmetries present in the natural visual world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of symmetries in natural images and psychophysics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "5691b145-04f5-40bc-b49f-e0f704fb4d53",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C107",
+      "claim": "The psychophysical data show a bright/dark asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Our psychophysical data also show a bright/dark asymmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the psychophysical measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "403e6e8b-4277-4cca-af00-790157ffe38c",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C108",
+      "claim": "The threshold contour is not symmetric under the exchange of black and white checks.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in Figure 4C, the threshold contour is not symmetric under the exchange of black and white checks",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "407b69e1-9602-48f2-973c-d5724a1172dc",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C109",
+      "claim": "Bright-dark asymmetries lead to a wide distribution of relative changes in detection threshold upon the exchange of black and white.",
+      "claim_type": "EXPLICIT",
+      "source": "Such bright-dark asymmetries lead to a wide distribution of relative changes in detection threshold upon the exchange of black and white (red violin plot in Figure 6B for the exch(B,W) transformation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "5f5510c6-1e26-4361-9178-1bf6eddf3bcf",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C110",
+      "claim": "The natural image analysis does not show bright-dark asymmetry because of preprocessing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our natural image analysis does not show this asymmetry (blue violin plot in Figure 6B for the exch(B,W) transformation) because of our preprocessing",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6B and explained by the preprocessing steps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "b459d8df-9539-4806-94e2-c969e0d1455b",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C111",
+      "claim": "The bright-dark asymmetry rests on a skewed distribution of light intensities and a power-law spectrum of spatial correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in Ratliff et al., 2010, the bright-dark asymmetry rests on two main characteristics of natural images: a skewed distribution of light intensities such that the mean intensity is larger than the median, and a power-law spectrum of spatial correlations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "8d21a155-47b4-497d-88b1-21f19322c094",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C113",
+      "claim": "The ternarization step additionally reduces any remaining dark-bright asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The final ternarization step additionally reduces any remaining dark-bright asymmetry, since we ensure that each of the three gray levels occurs in equal proportions in the preprocessed patches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of how the ternarization step affects the bright-dark asymmetry.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "1289440a-7f12-4dc3-99e1-cac639b60f5b",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C114",
+      "claim": "The efficient coding hypothesis posits that sensory systems are adapted to maximize information about natural sensory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficient coding hypothesis posits that sensory systems are adapted to maximize information about natural sensory stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the theoretical framework being tested.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "9d1462f4-0c83-46a8-877b-3cdcb67e6cb3",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C115",
+      "claim": "This work provided a rigorous quantitative test of the efficient coding hypothesis in the context of visual processing of textures in a regime dominated by sampling noise.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we provided a rigorous quantitative test of this hypothesis in the context of visual processing of textures in a regime dominated by sampling noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the contribution of the work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "954de2e1-7a80-47f6-aee0-24667fb59ef4",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C116",
+      "claim": "The study extended the analysis of binary texture perception to grayscale images.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we extended the study of binary texture perception to grayscale images that capture a broader range of correlations to which the brain could conceivably adapt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological contribution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "6d4003e7-7cd3-4753-bb6e-971f61d43ef0",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C117",
+      "claim": "Psychophysical thresholds can be predicted in remarkable detail based on the statistics of natural scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "By separately analyzing the distribution of textures across an ensemble of natural images, we showed that psychophysical thresholds can be predicted in remarkable detail based on the statistics of natural scenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "0060a92a-e9af-4a0e-b9be-a69665043797",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C118",
+      "claim": "Visually-guided behavior shows the same invariances as the distribution of natural textures.",
+      "claim_type": "EXPLICIT",
+      "source": "By further exploiting symmetry transformations that have non-trivial effects on ternary (but not binary) texture statistics, we provided a novel test of efficient coding and therein demonstrated that visually-guided behavior shows the same invariances as the distribution of natural textures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of a key finding about symmetries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "5d2048ed-b31c-4510-b7b1-293d5b265bd8",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C119",
+      "claim": "This work strengthens and refines the idea that the brain is adapted to efficiently encode visual texture information.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this work strengthens and refines the idea that the brain is adapted to efficiently encode visual texture information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the overall conclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "4de9063c-b879-49e1-9fb7-6f6b6636266c",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C120",
+      "claim": "The methodology can be used to address many hypotheses about visual perception.",
+      "claim_type": "EXPLICIT",
+      "source": "The methodology developed here can be used to address many hypotheses about visual perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the broader applicability of the methods.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "79d43585-5e40-42a5-9ee5-a07cc93c36a3",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C121",
+      "claim": "The ability of neural systems to adapt to correlations must ultimately be limited because it becomes impossible to collect sufficient statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the ability of neural systems to adapt to such correlations must ultimately be limited because, as texture complexity grows, it will eventually become impossible for the brain to collect sufficient statistics to determine optimal sensitivities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical argument about the limits of adaptation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "78d93069-d234-4c91-86d8-b642330fda5b",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C122",
+      "claim": "Adapting to complex correlations might not be worth the computational cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Even were it possible to accumulate these statistics, adapting to them might not be worth the computational cost of detecting and processing long-range correlations between many intensity values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical argument about cost-benefit tradeoffs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "37b0587a-67cb-49f7-be52-a78ce3c633c0",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C123",
+      "claim": "Understanding the limits of texture adaptation will teach us about the cost-benefit tradeoffs of efficient coding in sensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding the limits of texture adaptation will teach us about the cost-benefit tradeoffs of efficient coding in sensory cortex, in analogy with recently identified cost-benefit tradeoffs in optimal inference (Tavoni et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the implications for future research, with citation to related work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "28ffaca6-594f-466a-9ef3-778c70c1cf30",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C124",
+      "claim": "The predictions are in excellent agreement with the data in most cases.",
+      "claim_type": "EXPLICIT",
+      "source": "And indeed, although our predictions are in excellent agreement with the data in most cases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the overall quality of the predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "c85c6d92-1ec8-4b75-ace2-11a3e0cacdb3",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C125",
+      "claim": "There are a few systematic differences that may be giving a glimpse of the limits of efficient coding.",
+      "claim_type": "EXPLICIT",
+      "source": "we find a few systematic differences that may already be giving us a glimpse of these limits",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed discrepancies.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "fcdd5849-c778-45b2-b26d-3df912c470dd",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C126",
+      "claim": "Images were taken from the UPenn Natural Image Database.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were taken from the UPenn Natural Image Database (Tka\u010dik et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail with citation to the data source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "e73da560-5e9a-47c3-9581-d38ff62c1b65",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C129",
+      "claim": "Patches were filtered to remove the average pairwise correlation expected in natural images.",
+      "claim_type": "EXPLICIT",
+      "source": "filtered the patches to remove the average pairwise correlation expected in natural images (van Hateren, 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "9ea14582-0af8-4f41-b8bc-9822d941a350",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C130",
+      "claim": "Patches were ternarized to produce equal numbers of black, gray, and white checks.",
+      "claim_type": "EXPLICIT",
+      "source": "and finally ternarized patches to produce equal numbers of black, gray, and white checks",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the preprocessing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "4d9377fb-bb19-4661-b3bb-351158336109",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C132",
+      "claim": "A two-Gaussian mixture model was fit to the texture distribution to separate in-focus from blurred patches.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to avoid biases due to blurring artifacts, we fit a two-Gaussian mixture model to the texture distribution and used this to separate in-focus from blurred patches (Figure 3B; Hermundstad et al., 2014; details in Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological description shown in Figure 3B, with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "a7e6e367-52e3-4ac7-bb2b-e92d5932fd6c",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C133",
+      "claim": "Stimuli were presented on a mean-gray background for 120 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli, as described above, were presented on a mean-gray background for 120 ms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the stimulus presentation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "55bdc868-f56b-4d48-b3d6-152e0f41e9d4",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C134",
+      "claim": "Stimuli were followed by a mask consisting of an array of i.i.d. checks, each half the size of the stimulus checks.",
+      "claim_type": "EXPLICIT",
+      "source": "followed by a mask consisting of an array of i.i.d. checks, each half the size of the stimulus checks",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the stimulus presentation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "20a14e1b-e613-428c-aea8-2f927992f39b",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C136",
+      "claim": "Viewing distance was 103 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "viewing distance was 103 cm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental setup.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "ac682c10-c88b-4cb9-93d1-e30300c61b35",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C138",
+      "claim": "The display device was an LCD monitor with a refresh rate of 100 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The display device was an LCD monitor with a refresh rate of 100 Hz",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental equipment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "5b94e345-6693-4482-9ed7-9b96199a9cac",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C139",
+      "claim": "The monitor was calibrated with a photometer prior to each day of data collection.",
+      "claim_type": "EXPLICIT",
+      "source": "The monitor was calibrated with a photometer prior to each day of data collection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental procedure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "25e18e0b-da9b-4a14-9724-2001feb05ab4",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C140",
+      "claim": "The luminance of the gray checks was halfway between that of the black checks (<0.1) and white checks (23 cd/m2).",
+      "claim_type": "EXPLICIT",
+      "source": "to ensure that the luminance of the gray checks was halfway between that of the black checks (<0.1) and white checks (23 cd/m2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the stimulus calibration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "7a92cdd5-1aac-482a-9581-e4b27fec824b",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C141",
+      "claim": "Subjects were normal volunteers (three male, three female), ages 20 to 57.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were normal volunteers (three male, three female), ages 20 to 57",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study participants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "7d576bd4-059c-40bc-be8a-65279838b0e9",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C142",
+      "claim": "All subjects had visual acuities, corrected if necessary, of 20/20 or better.",
+      "claim_type": "EXPLICIT",
+      "source": "with visual acuities, corrected if necessary, of 20/20 or better",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the inclusion criteria for participants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "e9e62403-0787-4c98-b4e3-20223150a38d",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C143",
+      "claim": "MC is an experienced psychophysical observer with thousands of hours of experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the six subjects, MC is an experienced psychophysical observer with thousands of hours of experience",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of one of the participants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "f707324e-4ded-4aa9-82ba-c82001978c06",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C144",
+      "claim": "MC is an author.",
+      "claim_type": "EXPLICIT",
+      "source": "MC is an author.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a disclosure about one of the participants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "3802a417-a4d6-41ae-a821-14fa112e9d4d",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C145",
+      "claim": "NM, WC, and ZA were na\u00efve to the purposes of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "NM, WC, and ZA were na\u00efve to the purposes of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the blinding status of some participants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "86674774-ccdf-4e30-9726-e8cf3c2ef655",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C146",
+      "claim": "The work was carried out with the subjects' informed consent.",
+      "claim_type": "EXPLICIT",
+      "source": "This work was carried out with the subjects' informed consent",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "c0479a2b-5d88-4ab7-8f85-12a702c8f706",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C147",
+      "claim": "The work was carried out in accordance with the Code of Ethics of the World Medical Association (Declaration of Helsinki).",
+      "claim_type": "EXPLICIT",
+      "source": "and in accordance with the Code of Ethics of the World Medical Association (Declaration of Helsinki)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "e0e2501a-525e-432c-a318-434d2d8418a7",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C148",
+      "claim": "The work was carried out with the approval of the Institutional Review Board of Weill Cornell.",
+      "claim_type": "EXPLICIT",
+      "source": "and the approval of the Institutional Review Board of Weill Cornell",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "bcbf10f2-f7e3-4b70-99f0-e983297dc53d",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C149",
+      "claim": "Average thresholds were calculated using the geometric mean of the subject thresholds after applying per-subject scaling factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The average thresholds used in the main text were calculated by using the geometric mean of the subject thresholds, after applying a per-subject scaling factor chosen to best align the overall sensitivities of all the subjects",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the data analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "f39cc218-c820-4d61-b429-6eac40cfa313",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C150",
+      "claim": "Per-subject scaling multipliers ranged from 0.855 to 1.15.",
+      "claim_type": "EXPLICIT",
+      "source": "these multipliers ranged from 0.855 to 1.15",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "9dee3402-e6fd-4606-9ff3-8ae99bb6cbc6",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C151",
+      "claim": "Rescaling a single consensus set of thresholds accounted for 98.8% of the variance of individual thresholds across subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescaling a single consensus set of thresholds in this fashion accounted for 98.8% of the variance of individual thresholds across subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result showing consistency across subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "ffa92224-d9c8-46e6-814d-2532ef51e604",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C152",
+      "claim": "Average error bars were calculated by taking the root-mean-squared of the per-subject error bars in log space and then exponentiating.",
+      "claim_type": "EXPLICIT",
+      "source": "The average error bars were calculated by taking the root-mean-squared of the per-subject error bars in log space (determined from a bootstrap resampling of the Weibull-function fits, as in Victor et al., 2005), and then exponentiating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the error analysis, with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "9881a679-dcbc-4211-8511-3dbabc91e3c3",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C153",
+      "claim": "Threshold predictions from natural image statistics were obtained by fitting a multivariate Gaussian to the distribution of texture patches after removing the blurry component.",
+      "claim_type": "EXPLICIT",
+      "source": "Threshold predictions from natural image statistics were obtained as in Hermundstad et al., 2014. We fit a multivariate Gaussian to the distribution of texture patches after removing the blurry component",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "243aedc9-9715-4db3-926b-198e6f8cc731",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C154",
+      "claim": "The inverse of the standard deviation in the texture direction of interest was used as a prediction for the psychophysical threshold in that direction.",
+      "claim_type": "EXPLICIT",
+      "source": "and used the inverse of the standard deviation in the texture direction of interest as a prediction for the psychophysical threshold in that direction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of how predictions were generated.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "eeed1a09-fdaf-4e18-9c44-7b1b4f9a5355",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C155",
+      "claim": "The overall scale of the predictions is not fixed by the efficient coding procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall scale of the predictions is not fixed by this procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the theoretical framework.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "f7f72b40-f996-44d6-8fab-ba53dd06ce6a",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "claim_id": "C157",
+      "claim": "The scaling factor was the single fitting parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "This scaling factor was our single fitting parameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the number of free parameters in the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a21703d6-e51e-47ac-8bdf-04c0b9fdd5ad",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work established that the 'variance is salience' hypothesis, derived from efficient coding principles in sampling-limited regimes, successfully accounts for visual sensitivity to binary texture statistics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C15 all cite Hermundstad et al., 2014 and related work that established this theoretical framework and validated it for binary textures. These are well-documented prior results that provide the foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "2b7e1bb5-86c4-4b24-98e6-f7067758f629",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors define a 66-dimensional space of local grayscale texture correlations for 2\u00d72 blocks with three luminance levels, constrained by translation invariance to yield 2 first-order, 16 second-order, 32 third-order, and 16 fourth-order parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C31-C35, C38, C40, and C42 describe the mathematical construction of the texture space. The dimensionality calculations follow from combinatorics and symmetry constraints, and are internally consistent. The construction is shown in Figures 1-2 and detailed in Appendix 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "970d7004-f09d-494f-b920-f9ba98ad38ee",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors developed a texture synthesis algorithm using a Markov process to generate maximum-entropy textures with specified correlation statistics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C50 describe the texture generation methodology, which is detailed in Appendix 2. The approach extends prior methods (Victor and Conte, 2012) to grayscale textures and is demonstrated in Figures 1-2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "90d7fe64-c3cf-4547-a1f4-cea230a047ef",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Natural image analysis reveals that second-order texture correlations have much higher variance than third- and fourth-order correlations, leading to predictions of detection thresholds as the inverse of standard deviations in each texture direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 and C126-C154 describe the natural image analysis pipeline (Figure 3) and prediction methodology. The finding that second-order correlations dominate is supported by the data and follows from fitting a multivariate Gaussian to the preprocessed image distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "cbddd756-7931-4948-9577-89b11cacf21f",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The 'variance is salience' hypothesis predicts that two-point correlations are most salient, while correlations beyond second order are not salient. Psychophysical measurements confirm that detection thresholds could not be reliably measured in most directions beyond second order.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C20-C21, and C57-C58 present the theoretical prediction and its experimental confirmation. The psychophysical data (Appendix 6) show low sensitivity to third- and fourth-order planes, consistent with the low variance of these correlations in natural images.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "b16845df-c39a-48d1-ba17-ff0fcb84540b",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Predicted thresholds for over 300 second-order correlations match psychophysical thresholds with median fractional error <0.13, demonstrating that the 'variance is salience' hypothesis accounts for visual sensitivity to grayscale textures at a striking level of detail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C7, C22, C59-C61, C64, and C117 report the main quantitative finding shown in Figures 4-5. The agreement between 311 predicted and measured thresholds with only a single scaling parameter is statistically significant (p<10^-4) and represents the core validation of the hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "482d13f9-13df-4ec7-bc70-920b05212884",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Subjects showed high consistency in relative sensitivity across texture directions, with per-subject scaling factors (range 0.855-1.15) accounting for 98.8% of inter-subject variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56 and C149-C151 report the inter-subject consistency analysis. The high percentage of variance explained by simple scaling demonstrates that subjects share a common pattern of relative sensitivities, supporting the robustness of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "11a0c86a-af80-4093-b8e8-42a95183dd4e",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Systematic discrepancies exist between predictions and measurements: predictions underestimate thresholds in simple planes (median log error -0.090) and overestimate in mixed planes (+0.008), and underestimate thresholds in low-variance directions, suggesting limitations of the linear efficient coding model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72, C78-C79, C82, C84, and C125 identify systematic patterns in prediction errors (detailed in Appendix 5). The analysis of these discrepancies is thorough and the authors appropriately acknowledge model limitations. The fitted exponent \u03b7\u2208[0.81, 0.98] suggests a weak nonlinearity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "80f9b6a4-c6ca-4b86-bebb-025c1279aaf9",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Psychophysical thresholds show the same symmetry invariances as the natural image distribution (under vertical/horizontal flips and 90\u00b0/180\u00b0/270\u00b0 rotations), demonstrating that visually-guided behavior reflects symmetries in natural texture statistics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24, C96-C99, C106, and C118 report the symmetry analysis shown in Figure 6B. The correspondence between natural image symmetries and perceptual invariances provides a novel test of efficient coding beyond simple threshold matching, and the results are statistically robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "30f4ec60-4dee-4944-84d4-7882689cd25b",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The results are robust to variations in preprocessing parameters (downsampling factor N, patch size R, ternarization method) and different image datasets, though N=1 shows larger mismatches attributed to camera demosaicing artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 and C91 report robustness analyses shown in Figure 6A and Appendix 3. The consistency across parameter variations strengthens confidence in the findings, and the explanation for N=1 discrepancies is reasonable given prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "d8f3567a-f7cb-4800-b27a-949dc5937393",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Psychophysical data show bright-dark asymmetry, but the natural image analysis does not capture this due to preprocessing (log transform, whitening, ternarization) that removes the skewed intensity distribution and power-law correlations underlying this asymmetry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C111 and C113 explain the discrepancy in bright-dark asymmetry between psychophysics and predictions (Figure 6B). The explanation is well-reasoned and supported by citations to prior work (Ratliff et al., 2010). The preprocessing choices are justified but do limit the scope of predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "b1a522e5-9bbc-4b03-bad1-24b06f661c36",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The whitening preprocessing step is justified because fixational eye movements whiten visual input during natural viewing, and short stimulus presentations (120 ms) should be pre-whitened to compensate for the absence of these movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C54 provide the rationale for whitening. While C52 cites supporting evidence (Rucci and Victor, 2015), C54 is an inference that may not fully account for differences between natural viewing and the experimental paradigm. The justification is reasonable but involves assumptions about equivalence between preprocessing and natural mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "df6d7fb4-5b7a-4e58-9047-b25c68d68bd1",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This work provides a rigorous quantitative test of efficient coding in texture perception by extending binary texture analysis to grayscale images, strengthening the idea that the brain efficiently encodes visual texture information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C116 and C119 summarize the study's contribution. The extension to grayscale textures (66 dimensions vs. 10 for binary) with detailed quantitative predictions and validation across 311 thresholds represents a substantial advance over prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "6e6704fa-5d44-4faf-98dc-198a71030223",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Permutation testing confirms the match between predictions and measurements is unlikely due to chance (p<10^-4), with 95% of permutation samples showing median absolute log errors in [0.24, 0.31] compared to the observed 0.13.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C66-C67 report statistical validation (detailed in Appendix 4). The permutation test appropriately accounts for the elliptical structure of predictions within planes, and the highly significant p-value supports the conclusion that the match is not coincidental.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "807bae3d-60cd-4db7-b8f7-e1d3eb79c1b0",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prediction errors are larger for sum-correlations than difference-correlations, possibly because sum-correlations are less robust due to their dependence on specific gray-level assignments and modular arithmetic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74 and C77 offer a speculative explanation for an observed pattern. While the observation is supported by data (Appendix 5), the proposed mechanism is not directly tested and remains a hypothesis requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    },
+    {
+      "id": "99493341-a46a-453b-92fd-103d5a939345",
+      "content_id": "52e6bc3a-f967-45f1-b1f0-7a78f74db177",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Adaptation to increasingly complex texture statistics must ultimately be limited by insufficient sampling and computational costs, and understanding these limits will reveal cost-benefit tradeoffs in efficient coding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86 and C121-C123 present theoretical arguments about fundamental limits of efficient coding. While conceptually reasonable, these are speculative statements about future work rather than findings supported by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:24.818487Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a0af6824-0a20-4fd0-b344-ecf0f9d0820d",
+      "result_id": "a21703d6-e51e-47ac-8bdf-04c0b9fdd5ad"
+    },
+    {
+      "claim_id": "54b98080-cda4-41b8-959e-94bd12bb881c",
+      "result_id": "a21703d6-e51e-47ac-8bdf-04c0b9fdd5ad"
+    },
+    {
+      "claim_id": "13072cc6-2bfa-4baf-8e1a-db344a492ecd",
+      "result_id": "a21703d6-e51e-47ac-8bdf-04c0b9fdd5ad"
+    },
+    {
+      "claim_id": "0748c2e5-a8a0-45f0-9973-fea8b010dd82",
+      "result_id": "2b7e1bb5-86c4-4b24-98e6-f7067758f629"
+    },
+    {
+      "claim_id": "5ae5c90c-c8c6-46f1-ae15-30560fd405a0",
+      "result_id": "2b7e1bb5-86c4-4b24-98e6-f7067758f629"
+    },
+    {
+      "claim_id": "241440dc-6b0b-4152-9fa9-9e847a2fceae",
+      "result_id": "2b7e1bb5-86c4-4b24-98e6-f7067758f629"
+    },
+    {
+      "claim_id": "9d86886b-54d2-4a44-97bf-33602d4ffe77",
+      "result_id": "2b7e1bb5-86c4-4b24-98e6-f7067758f629"
+    },
+    {
+      "claim_id": "e431ad3e-be10-4ffa-862d-5319ad665199",
+      "result_id": "2b7e1bb5-86c4-4b24-98e6-f7067758f629"
+    },
+    {
+      "claim_id": "7d63bd01-c095-4151-be07-e48fae067aab",
+      "result_id": "2b7e1bb5-86c4-4b24-98e6-f7067758f629"
+    },
+    {
+      "claim_id": "d13b0cc3-063b-44d4-9495-893e9f2ffba7",
+      "result_id": "2b7e1bb5-86c4-4b24-98e6-f7067758f629"
+    },
+    {
+      "claim_id": "6ffb59fa-f625-4a12-9e8a-7ea96b3f92d2",
+      "result_id": "2b7e1bb5-86c4-4b24-98e6-f7067758f629"
+    },
+    {
+      "claim_id": "0196300d-d8e5-472f-9260-498c9eac4b15",
+      "result_id": "2b7e1bb5-86c4-4b24-98e6-f7067758f629"
+    },
+    {
+      "claim_id": "dc339497-90aa-481f-b818-ae6094b44d6d",
+      "result_id": "970d7004-f09d-494f-b920-f9ba98ad38ee"
+    },
+    {
+      "claim_id": "bd6a7838-31d7-494f-bbaf-4af75255ae99",
+      "result_id": "970d7004-f09d-494f-b920-f9ba98ad38ee"
+    },
+    {
+      "claim_id": "c2de2725-ccb4-45b8-8fcb-a2113f8e386b",
+      "result_id": "90d7fe64-c3cf-4547-a1f4-cea230a047ef"
+    },
+    {
+      "claim_id": "df802d8b-4d91-4785-97b7-d8c02e8dde27",
+      "result_id": "90d7fe64-c3cf-4547-a1f4-cea230a047ef"
+    },
+    {
+      "claim_id": "508f6437-5b13-4d58-bf49-95286b48e255",
+      "result_id": "90d7fe64-c3cf-4547-a1f4-cea230a047ef"
+    },
+    {
+      "claim_id": "fcdd5849-c778-45b2-b26d-3df912c470dd",
+      "result_id": "90d7fe64-c3cf-4547-a1f4-cea230a047ef"
+    },
+    {
+      "claim_id": "e73da560-5e9a-47c3-9581-d38ff62c1b65",
+      "result_id": "90d7fe64-c3cf-4547-a1f4-cea230a047ef"
+    },
+    {
+      "claim_id": "9ea14582-0af8-4f41-b8bc-9822d941a350",
+      "result_id": "90d7fe64-c3cf-4547-a1f4-cea230a047ef"
+    },
+    {
+      "claim_id": "4d9377fb-bb19-4661-b3bb-351158336109",
+      "result_id": "90d7fe64-c3cf-4547-a1f4-cea230a047ef"
+    },
+    {
+      "claim_id": "9881a679-dcbc-4211-8511-3dbabc91e3c3",
+      "result_id": "90d7fe64-c3cf-4547-a1f4-cea230a047ef"
+    },
+    {
+      "claim_id": "243aedc9-9715-4db3-926b-198e6f8cc731",
+      "result_id": "90d7fe64-c3cf-4547-a1f4-cea230a047ef"
+    },
+    {
+      "claim_id": "abb66bc9-7388-46c9-84bd-3a8748c7b499",
+      "result_id": "cbddd756-7931-4948-9577-89b11cacf21f"
+    },
+    {
+      "claim_id": "1166c344-4229-4e0a-b0f5-0e50b9bb0c25",
+      "result_id": "cbddd756-7931-4948-9577-89b11cacf21f"
+    },
+    {
+      "claim_id": "10ae7520-87e7-4d16-85c8-95f9d09f277d",
+      "result_id": "cbddd756-7931-4948-9577-89b11cacf21f"
+    },
+    {
+      "claim_id": "4846fcc7-3796-41a0-bbbb-18f0b7bea3c9",
+      "result_id": "cbddd756-7931-4948-9577-89b11cacf21f"
+    },
+    {
+      "claim_id": "9a16955e-2815-4a9f-96a8-bb41b5a10818",
+      "result_id": "cbddd756-7931-4948-9577-89b11cacf21f"
+    },
+    {
+      "claim_id": "8f15c88d-b45d-479d-91f8-4aa4c6be09f3",
+      "result_id": "cbddd756-7931-4948-9577-89b11cacf21f"
+    },
+    {
+      "claim_id": "dd8ccd5d-fea3-497d-91c4-ebb97e19f8e8",
+      "result_id": "b16845df-c39a-48d1-ba17-ff0fcb84540b"
+    },
+    {
+      "claim_id": "893bcec6-4109-4a9d-92ed-511913cb887e",
+      "result_id": "b16845df-c39a-48d1-ba17-ff0fcb84540b"
+    },
+    {
+      "claim_id": "76f96d4e-2d14-43de-b818-d1913ddab599",
+      "result_id": "b16845df-c39a-48d1-ba17-ff0fcb84540b"
+    },
+    {
+      "claim_id": "f2c71ed0-1a61-4915-a317-3f2600dc0738",
+      "result_id": "b16845df-c39a-48d1-ba17-ff0fcb84540b"
+    },
+    {
+      "claim_id": "26644616-6872-407b-9a84-2eee7d9267a9",
+      "result_id": "b16845df-c39a-48d1-ba17-ff0fcb84540b"
+    },
+    {
+      "claim_id": "046b42e6-0d63-4ea9-9f9e-6a1326465b95",
+      "result_id": "b16845df-c39a-48d1-ba17-ff0fcb84540b"
+    },
+    {
+      "claim_id": "5e93fd87-831b-40ee-b920-5ad1dd63a5cd",
+      "result_id": "b16845df-c39a-48d1-ba17-ff0fcb84540b"
+    },
+    {
+      "claim_id": "6d4003e7-7cd3-4753-bb6e-971f61d43ef0",
+      "result_id": "b16845df-c39a-48d1-ba17-ff0fcb84540b"
+    },
+    {
+      "claim_id": "08e913ad-cfb7-4722-926d-3188697fb798",
+      "result_id": "482d13f9-13df-4ec7-bc70-920b05212884"
+    },
+    {
+      "claim_id": "bcbf10f2-f7e3-4b70-99f0-e983297dc53d",
+      "result_id": "482d13f9-13df-4ec7-bc70-920b05212884"
+    },
+    {
+      "claim_id": "f39cc218-c820-4d61-b429-6eac40cfa313",
+      "result_id": "482d13f9-13df-4ec7-bc70-920b05212884"
+    },
+    {
+      "claim_id": "9dee3402-e6fd-4606-9ff3-8ae99bb6cbc6",
+      "result_id": "482d13f9-13df-4ec7-bc70-920b05212884"
+    },
+    {
+      "claim_id": "cfd0cad9-f157-46b8-a8e1-74ad5d010d63",
+      "result_id": "11a0c86a-af80-4093-b8e8-42a95183dd4e"
+    },
+    {
+      "claim_id": "ff405a35-e6a0-4126-bd5a-02ca2e43520b",
+      "result_id": "11a0c86a-af80-4093-b8e8-42a95183dd4e"
+    },
+    {
+      "claim_id": "0ea47b62-6691-4ed2-8570-715a0cc31f50",
+      "result_id": "11a0c86a-af80-4093-b8e8-42a95183dd4e"
+    },
+    {
+      "claim_id": "cdf8418d-4136-411f-bd6c-b206b50817e7",
+      "result_id": "11a0c86a-af80-4093-b8e8-42a95183dd4e"
+    },
+    {
+      "claim_id": "1eb9bbda-4513-47e0-912a-a953c90352c1",
+      "result_id": "11a0c86a-af80-4093-b8e8-42a95183dd4e"
+    },
+    {
+      "claim_id": "cc6a3146-f3ab-48ae-97cf-8242fe386278",
+      "result_id": "11a0c86a-af80-4093-b8e8-42a95183dd4e"
+    },
+    {
+      "claim_id": "4af11559-6585-4d2a-a72e-434121120c76",
+      "result_id": "11a0c86a-af80-4093-b8e8-42a95183dd4e"
+    },
+    {
+      "claim_id": "aa4d5f28-ee7d-4e04-a9eb-7711fee2c681",
+      "result_id": "11a0c86a-af80-4093-b8e8-42a95183dd4e"
+    },
+    {
+      "claim_id": "c85c6d92-1ec8-4b75-ace2-11a3e0cacdb3",
+      "result_id": "11a0c86a-af80-4093-b8e8-42a95183dd4e"
+    },
+    {
+      "claim_id": "186131cc-28f1-46a5-ba25-a949f56b3e58",
+      "result_id": "80f9b6a4-c6ca-4b86-bebb-025c1279aaf9"
+    },
+    {
+      "claim_id": "d7339a2b-5826-484f-8975-0e63979d011b",
+      "result_id": "80f9b6a4-c6ca-4b86-bebb-025c1279aaf9"
+    },
+    {
+      "claim_id": "67b53f37-db89-4bc7-ba55-01be2d8010f7",
+      "result_id": "80f9b6a4-c6ca-4b86-bebb-025c1279aaf9"
+    },
+    {
+      "claim_id": "5cfb70ce-e176-4cf8-a374-56c951aa2d3b",
+      "result_id": "80f9b6a4-c6ca-4b86-bebb-025c1279aaf9"
+    },
+    {
+      "claim_id": "9ba3bba3-7aeb-43ee-8268-d46e434ea184",
+      "result_id": "80f9b6a4-c6ca-4b86-bebb-025c1279aaf9"
+    },
+    {
+      "claim_id": "967f2c9e-2fc4-4043-b3af-8517db5be794",
+      "result_id": "80f9b6a4-c6ca-4b86-bebb-025c1279aaf9"
+    },
+    {
+      "claim_id": "03b47b61-d5bf-4839-ba64-39921071be8e",
+      "result_id": "80f9b6a4-c6ca-4b86-bebb-025c1279aaf9"
+    },
+    {
+      "claim_id": "0060a92a-e9af-4a0e-b9be-a69665043797",
+      "result_id": "80f9b6a4-c6ca-4b86-bebb-025c1279aaf9"
+    },
+    {
+      "claim_id": "73392dd7-f1d7-42ce-93e9-0106e474e773",
+      "result_id": "30f4ec60-4dee-4944-84d4-7882689cd25b"
+    },
+    {
+      "claim_id": "5f935120-660b-40c7-893f-5064b44dd6b7",
+      "result_id": "30f4ec60-4dee-4944-84d4-7882689cd25b"
+    },
+    {
+      "claim_id": "2967fb23-2181-4976-ad19-552a2fbf1964",
+      "result_id": "30f4ec60-4dee-4944-84d4-7882689cd25b"
+    },
+    {
+      "claim_id": "5691b145-04f5-40bc-b49f-e0f704fb4d53",
+      "result_id": "d8f3567a-f7cb-4800-b27a-949dc5937393"
+    },
+    {
+      "claim_id": "403e6e8b-4277-4cca-af00-790157ffe38c",
+      "result_id": "d8f3567a-f7cb-4800-b27a-949dc5937393"
+    },
+    {
+      "claim_id": "407b69e1-9602-48f2-973c-d5724a1172dc",
+      "result_id": "d8f3567a-f7cb-4800-b27a-949dc5937393"
+    },
+    {
+      "claim_id": "5f5510c6-1e26-4361-9178-1bf6eddf3bcf",
+      "result_id": "d8f3567a-f7cb-4800-b27a-949dc5937393"
+    },
+    {
+      "claim_id": "b459d8df-9539-4806-94e2-c969e0d1455b",
+      "result_id": "d8f3567a-f7cb-4800-b27a-949dc5937393"
+    },
+    {
+      "claim_id": "8d21a155-47b4-497d-88b1-21f19322c094",
+      "result_id": "d8f3567a-f7cb-4800-b27a-949dc5937393"
+    },
+    {
+      "claim_id": "11135edb-4c87-418b-8d4e-da2f3c00cf23",
+      "result_id": "b1a522e5-9bbc-4b03-bad1-24b06f661c36"
+    },
+    {
+      "claim_id": "86eceb57-18a9-4218-82b5-fffa9fa7b6b6",
+      "result_id": "b1a522e5-9bbc-4b03-bad1-24b06f661c36"
+    },
+    {
+      "claim_id": "2954c6b4-1fde-4aa0-8a23-8cf8891f7428",
+      "result_id": "b1a522e5-9bbc-4b03-bad1-24b06f661c36"
+    },
+    {
+      "claim_id": "3e7cda75-7a85-476d-8495-4b8b338abb97",
+      "result_id": "b1a522e5-9bbc-4b03-bad1-24b06f661c36"
+    },
+    {
+      "claim_id": "9d1462f4-0c83-46a8-877b-3cdcb67e6cb3",
+      "result_id": "df6d7fb4-5b7a-4e58-9047-b25c68d68bd1"
+    },
+    {
+      "claim_id": "954de2e1-7a80-47f6-aee0-24667fb59ef4",
+      "result_id": "df6d7fb4-5b7a-4e58-9047-b25c68d68bd1"
+    },
+    {
+      "claim_id": "5d2048ed-b31c-4510-b7b1-293d5b265bd8",
+      "result_id": "df6d7fb4-5b7a-4e58-9047-b25c68d68bd1"
+    },
+    {
+      "claim_id": "409483ca-6689-4335-8a52-4ec9736b141f",
+      "result_id": "6e6704fa-5d44-4faf-98dc-198a71030223"
+    },
+    {
+      "claim_id": "69f6dc67-1489-486c-a584-f648f2a14988",
+      "result_id": "6e6704fa-5d44-4faf-98dc-198a71030223"
+    },
+    {
+      "claim_id": "e3c58a4e-1e6a-4bf9-8e36-a84f45cd407d",
+      "result_id": "6e6704fa-5d44-4faf-98dc-198a71030223"
+    },
+    {
+      "claim_id": "e492ea5b-0139-48cc-9b76-224976d62324",
+      "result_id": "807bae3d-60cd-4db7-b8f7-e1d3eb79c1b0"
+    },
+    {
+      "claim_id": "c9061448-ea65-464d-a96c-22d86befd747",
+      "result_id": "807bae3d-60cd-4db7-b8f7-e1d3eb79c1b0"
+    },
+    {
+      "claim_id": "55cdf735-ebd2-4de4-b94e-fc9de62b84ab",
+      "result_id": "99493341-a46a-453b-92fd-103d5a939345"
+    },
+    {
+      "claim_id": "79d43585-5e40-42a5-9ee5-a07cc93c36a3",
+      "result_id": "99493341-a46a-453b-92fd-103d5a939345"
+    },
+    {
+      "claim_id": "78d93069-d234-4c91-86d8-b642330fda5b",
+      "result_id": "99493341-a46a-453b-92fd-103d5a939345"
+    },
+    {
+      "claim_id": "37b0587a-67cb-49f7-be52-a78ce3c633c0",
+      "result_id": "99493341-a46a-453b-92fd-103d5a939345"
+    }
+  ],
+  "comparisons": []
+}

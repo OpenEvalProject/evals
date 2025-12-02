@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C11",
+      "C12"
+    ],
+    "result": "The existing ORd model exhibits significant discrepancies with experimental data, including elevated action potential plateau, limited agreement in APD accommodation dynamics, and incorrect prediction of positive inotropic effects from sodium current block (contrary to established negative inotropic effects). Parameter optimization using genetic algorithms failed to resolve these issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 and C11-C12 collectively demonstrate well-documented limitations of the ORd model through comparison with multiple experimental datasets. The claims are supported by citations to experimental studies and simulation results showing specific quantitative discrepancies. The failure of optimization approaches (C12) strengthens the case that structural model changes were necessary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C72",
+      "C73"
+    ],
+    "result": "A theoretical inconsistency exists in previous cardiac models where the Nernstian driving force is used to derive ICaL activation curves from experimental data, but the Goldman-Hodgkin-Katz (GHK) driving force is then used in model calculations. The authors propose using GHK consistently for both activation curve extraction and current calculation, and implement dynamic ionic activity coefficients using the Davies equation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 and C72-C73 identify a fundamental theoretical inconsistency across multiple influential cardiac models with appropriate citations. The mathematical framework using the Davies equation is well-established (C18-C19), and the computed activity coefficients (C20-C21) are physically reasonable. This represents a significant theoretical contribution with broad applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C74"
+    ],
+    "result": "The ToR-ORd model places 20% of ICaL in the main cytosolic space (consistent with literature), which increases plateau-supporting capability due to weaker calcium-dependent inactivation. The updated ionic activity coefficients and activation curve improve agreement with experimental ICaL properties and contribute to improved sodium blockade response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C74 describe specific model design choices supported by citations (C24) and mechanistic reasoning (C25). The improvements are validated through comparison with experimental data from Magyar et al., 2000 (C74). The mechanistic explanation for increased plateau support is biophysically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The ORd IKr formulation lacks activation consistent with experimental data, causing incorrect APD prolongation in response to ICaL block. Replacement with the Lu-Vandenberg IKr model, based on comprehensive experimental data allowing dissection of activation and inactivation, resolved this issue and resulted in physiologically correct APD shortening upon ICaL block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 identify a specific mechanistic problem with the ORd IKr formulation (C27) supported by experimental data citations. The Lu-Vandenberg model is well-characterized (C28), and the claim that all calibrated models exhibited correct APD shortening after IKr replacement (C29) provides strong validation. The experimental observation (C26) is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "The INa formulation was replaced with the Grandi et al. 2010 model due to established limitations in conduction velocity and excitability, and the IK1 model was replaced with the Carro et al. 2011 formulation for improved hyperkalemia simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 describe model component replacements with clear rationales supported by citations. These are methodological choices based on known limitations of the original ORd formulations and established alternative models from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The baseline ORd model incorrectly shows hyperpolarization in response to IK1 reduction, contrary to experimental evidence showing depolarization. The ToR-ORd model, through altered diastolic current balance and inclusion of background chloride current, correctly manifests depolarization in response to IK1 block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 identify a specific discrepancy between ORd simulations and experimental data (C32-C33 with citation support), and demonstrate that ToR-ORd resolves this issue (C34). The mechanistic explanation involving diastolic current balance is provided. This represents successful calibration against an important physiological criterion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The ToR-ORd model's action potential morphology falls within or at the border of the interquartile range of experimental data, representing major improvement over ORd which overestimates plateau potentials. Calcium transient kinetics and conduction velocity (65 cm/s) also match experimental/clinical data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 demonstrate successful calibration through quantitative comparison with experimental data from multiple sources (Figures 2A-B, citations to Britton, Coppini, Jost, Taggart studies). The improvements over ORd are clearly documented (C36), and the experimental plateau potential value (C37) is corroborated by multiple independent studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "In conditions of elevated ICaL, the ORd model exhibits unphysical current reversal toward positive values despite a reversal potential of 60 mV, while ToR-ORd correctly maintains negative (inward) current values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 identify a biophysically implausible behavior in ORd (current reversal inconsistent with reversal potential) and demonstrate that ToR-ORd resolves this issue. The observation is supported by simulation data (Figure 2F). This validates the theoretical improvements to the ICaL formulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The ToR-ORd model correctly predicts negative inotropic effects of sodium current block (small reduction in calcium transient amplitude) for almost all combinations of INa and INaL block, consistent with experimental/clinical data. In contrast, ORd incorrectly predicts positive inotropic effects (increased calcium transient amplitude) for most block combinations. This improvement results from the interplay of reformulated ICaL and improved AP morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C67-C69 demonstrate a critical improvement in ToR-ORd through systematic comparison with experimental data from multiple studies (Gottlieb, Tucker, Legrand, Bhattacharyya). The systematic exploration of INa/INaL block combinations (Figure 3E-F) strengthens the evidence. The mechanistic explanation (C69) is provided, though detailed validation of the mechanism could be stronger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The ToR-ORd model manifests early afterdepolarizations (EADs) under experimental conditions used in nondiseased human endocardium, with simulated EAD amplitude (14 mV) matching the maximum amplitude reported experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 demonstrate successful calibration for EAD formation through quantitative comparison with experimental data from Guo et al. 2011 (Figure 4A-B). The matching of both conditions and amplitude provides strong validation of this proarrhythmic behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The ToR-ORd model exhibits calcium-driven alternans via sarcoplasmic reticulum calcium cycling refractoriness (same mechanism as ORd), with peak APD alternans amplitude of 12 ms matching experimental data (11 \u00b1 2 ms) from human hearts without structural disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 demonstrate successful calibration for alternans with quantitative agreement with experimental data from Koller et al. 2005. The mechanistic explanation is provided with citation (C47). Minor limitation noted in text regarding RV septum vs endocardial comparison, but overall agreement is strong.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The ToR-ORd model's predictions for drug action (IKr block, IKs block, multichannel block, ICaL block) are in good agreement with experimental data across multiple pacing rates, particularly notable given lack of optimization toward these specific results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by detailed comparison with experimental data shown in Figure 5 for four different drugs at three pacing rates. The fact that this represents validation (not calibration) data strengthens the credibility. The agreement is generally within experimental standard deviations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Population-based drug safety prediction using ToR-ORd achieved 87% accuracy (54/62 compounds) for Torsades de Pointes risk, similar to the original ORd-based study. ToR-ORd showed improved assessment of Mexiletine (corrected from false positive to true negative) and avoided EAD formation at high Mexiletine doses unlike ORd.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 demonstrate successful validation through population modeling with quantitative accuracy metrics (C51) and specific improvements over ORd (C52). The robustness under conductance perturbations (C50, Figure 7A) supports model stability. The Mexiletine improvement directly relates to the sodium blocker advances, providing mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Under hyperkalemia, ToR-ORd simulations show increased resting membrane potential, decreased AP upstroke amplitude, shortened APD, but prolonged effective refractory periods due to stronger sodium channel inactivation. This successfully reproduces experimental post-repolarization refractoriness, an improvement over the original ORd model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 demonstrate successful validation for hyperkalemia with mechanistic explanation (C55) and comparison to experimental observations (C56). The improvement over ORd is documented with citation (C57). The simulation results (Figure 8A-B) show physiologically reasonable responses to elevated extracellular potassium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The hypertrophic cardiomyopathy (HCM) variant of ToR-ORd reproduces key experimental features including elevated plateau potential, prolonged APD, altered calcium transient kinetics (reduced amplitude, longer time to peak and duration), and increased susceptibility to EAD formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 demonstrate successful validation for HCM disease modeling through comparison with experimental data from Coppini et al. 2013 (Figure 8C-E). Multiple features are correctly reproduced, and mechanistic explanation for increased EAD susceptibility is provided. This represents validation against complex multifactorial remodeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Whole-heart simulations using ToR-ORd produce physiological ECG features including QRS duration (80 ms, normal range 78\u00b18 ms), QT interval (350 ms, healthy <430 ms), normal morphological features (R wave progression, isoelectric ST segment, appropriate T wave polarity), activation sequence matching Durrer et al. 1970, and physiological APD distribution patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 demonstrate successful validation at the whole-heart level through quantitative ECG metrics within normal ranges (C61 with citations) and qualitative morphological features (C62-C64). The activation sequence validation (C63) and APD distribution (C64) are shown in Figure 9. This represents successful multi-scale validation from ion channels to ECG.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C65",
+      "C70",
+      "C71"
+    ],
+    "result": "The ToR-ORd model was developed using strict separation of calibration and validation criteria to demonstrate predictive power. The model's ability to reproduce a wide range of behaviors consistent with experimental studies without optimization toward those specific features suggests generality and high credibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C65, C70-C71 describe the methodological approach and its implications for model credibility. The separation of calibration and validation is clearly documented (Table 1), and the validation results across multiple independent datasets support the claim of predictive power (C71). The methodological principle (C70) is supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The reformulation of the L-type calcium current is broadly relevant and generally applicable to human and other species, representing a theoretical contribution beyond the ToR-ORd model itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by the demonstration that the theoretical inconsistency exists across multiple species models (C73) and the biophysical foundation of the corrections (Davies equation, GHK formulation). The improvements in ICaL properties (Figure 2D-F) validate the approach. The generalizability claim is reasonable given the fundamental nature of the corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Limitations of the ORd IKr model may result from single-pulse voltage clamp protocols, and approaches using more comprehensive experimental data enabling dissection of activation and recovery from inactivation may yield more general and plausible models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 represent speculation about the source of ORd IKr limitations and suggestions for future modeling approaches. While the Lu-Vandenberg model used in ToR-ORd demonstrates improvement, the specific claim about single-pulse protocols causing the limitations (C75) is not directly tested. These are reasonable hypotheses but lack definitive evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Future development of the ToR-ORd model should focus on the ryanodine receptor and sarcoplasmic reticulum calcium release. Current models (including ToR-ORd) have calcium release depend directly on ICaL rather than on calcium concentration adjacent to ryanodine receptors. Improved calcium handling would extend applicability to other arrhythmogenic modes like delayed afterdepolarizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 identify a known limitation of current cardiac models (C78, described as general knowledge) and propose future directions (C77, C79). These are reasonable assessments of model limitations and appropriate suggestions for future work. However, as these are prospective statements, they represent acknowledged limitations rather than current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "The ORd model was selected by a panel of experts as the model best suited for regulatory purposes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a factual statement about prior work supported by citation to Dutta et al., 2017a. This provides context for why improving upon the ORd model is important but is not a result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "AP plateau potential, APD adaptation, and response to sodium current block have strong dependencies on sodium and calcium dynamics, motivating in-depth re-evaluation of the L-type calcium current formulation given its fundamental role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 represent established knowledge about cardiac electrophysiology (C6) and the rationale for focusing on ICaL (C7). These provide scientific justification for the study's approach but are not novel results themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Calibration data were obtained using microelectrode recordings, unipolar electrograms, and monophasic APs (avoiding optical mapping artifacts), and the model was calibrated to show depolarization in response to IK1 block based on literature evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 describe methodological choices in model calibration. These are clearly documented with appropriate citations (C10) and represent sound experimental methodology (C9), but are methodological details rather than scientific results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "The ToR-ORd model follows the general ORd structure with compartmentalization into main cytosolic space, junctional subspace, and sarcoplasmic reticulum (subdivided into junctional and network SR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 describe the basic model structure shown in Figure 1A. These are straightforward descriptions of model architecture rather than scientific results, though they provide necessary context.",
+    "result_type": "MINOR"
+  }
+]

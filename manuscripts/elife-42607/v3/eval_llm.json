@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "LOTO is introduced as a novel, simple, efficient, and general method for estimating trial-by-trial parameter variability in cognitive models. The core principle is that the difference between parameter estimates from all trials versus all-but-one trial reflects the parameter value in the omitted trial. LOTO provides relative (not absolute) estimates of parameter deviations from average values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C24-C26, and C135-C137 establish the conceptual foundation of LOTO. The principle is clearly articulated and mathematically derived (C4, C25). The characterization as simple, efficient, and general is supported by subsequent demonstrations throughout the manuscript, including mathematical derivations, simulations, and comparisons with other methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "LOTO's performance characteristics are established through analysis of simple models (Bernoulli/binomial distributions). Performance depends on Fisher information, improves with parameter extremity, and can be enhanced by assuming parameters remain constant over multiple trials (m) rather than varying trial-by-trial. For simple binary models, LOTO provides limited additional information beyond observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C39 are supported by mathematical derivations and simulations shown in Figure 1. The Fisher information analysis (C32) provides theoretical grounding, and simulations (C33, C36) demonstrate predicted relationships. The recommendation to track fluctuations over multiple trials (C37) follows logically from the demonstrated improvement with larger m values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "For the hyperbolic discounting (HD) model, LOTO extracts information about trial-by-trial discount factor (\u03ba) variability beyond what is contained in choice observations alone, provided both choice options have been selected at least twice. LOTO outperforms single-trial fitting by capturing how expected or surprising decisions are given trial features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by mathematical derivations (Equations 8a-8c) and simulations (Figure 3). The mathematical analysis shows that derivatives depend on task features (C42), and simulations demonstrate that LOTO estimates correlate with true \u03ba values after accounting for choices (C47), while single-trial fitting does not. The requirement for both options to be chosen at least twice is mathematically justified (C44-C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Extending models to predict richer data (choices + RT) substantially improves LOTO's performance. For the HD-LBA model combining hyperbolic discounting with the Linear Ballistic Accumulator, LOTO shows much improved parameter recovery compared to the HD model alone, and significantly outperforms single-trial fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 are supported by simulations shown in Figure 4. Statistical tests confirm significant improvements: HD-LBA vs HD for LOTO (C53: t(29)=10.79, p<.001 for immediate; t(29)=8.79, p<.001 for delayed), and LOTO vs single-trial fitting for HD-LBA (C55: t(29)=7.24, p<.001 for immediate; t(29)=7.71, p<.001 for delayed). The conclusion about richer data improving performance (C56) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "A non-parametric, simulation-based test is proposed to distinguish systematic parameter variability from noise. The test exploits improvement in model fit when applying LOTO: systematic variability produces larger improvements than expected under the null hypothesis. The test successfully detects variability in the intended parameter (\u03ba) but not in other parameters (\u03b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 describe and validate the test for systematic variability. The rationale (C60-C61) is sound, and simulations (Figure 5A-B) demonstrate that the test correctly identifies systematic variability in \u03ba (C62) while not misattributing variability in \u03b2 to \u03ba (C63-C64). The approach is appropriately non-parametric and simulation-based.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "LOTO can potentially dissociate parameter variability from variability in input/output signals, but this requires careful experimental design. In two-option tasks, LOTO sometimes misattributes variability in delays or utilities to the discount factor. Extending to three-option tasks improves separability, with significant improvements only for the parameter of interest (\u03ba).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 address an important limitation and its solution. Simulations (Figure 5\u2014figure supplements 1-2) show that misattribution can occur in two-option tasks (C66) but is resolved with three-option designs (C68). The conclusion (C69) appropriately emphasizes the need for appropriate experimental design and careful simulations. The evidence supports both the problem and the proposed solution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "LOTO can infer trial-by-trial variability in multiple parameters simultaneously with minimal increase in computation time. When applied to two parameters (\u03ba and b) in the HD-LBA model, LOTO successfully recovers both parameters, though some cross-parameter correlations exist. These undesired correlations are largely explained away by observations (choices and RT) in regression analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C81 are supported by simulations (Figure 6) and statistical analyses. The test for systematic variability confirms presence of variability (C71: only 19/1000 null simulations better). Recovery of both parameters is demonstrated (C72-C73), and regression analyses show strong effects for correct parameter assignments (C77: t(29)=28.48, p<.001; C79: t(29)=30.40, p<.001) while wrong assignments are weaker or non-significant (C78-C79). The conclusion about observations explaining away misattributions (C81) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "LOTO's average correlation performance is largely unaffected by the number of trials (20-640), though variance decreases with more trials. This provides higher statistical power with more trials despite stable average correlations. Performance is slightly reduced for threshold parameter b with only 20 trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by simulations shown in Figure 7A. The observation that average correlations remain stable across trial numbers (C83) while variance decreases (C85) is clearly demonstrated. The slight reduction for parameter b with 20 trials (C84) is noted. The conclusion about statistical power benefits (C86) follows logically from reduced variance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "With very high trial numbers (\u22651,000), the tolerance criterion for the minimization algorithm becomes important. Default criteria can cause discrete jumps in LOTO estimates. However, the practical impact is small: for 1,600 trials, the correlation reduction is only 0.003 on average, though statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 address a technical implementation detail. Simulations (Figure 7B) demonstrate the discrete jumps with default tolerance (C88). Statistical comparisons show no significant difference at 160 trials (C89: t(29)=1.27, p=.213) but significant difference at 1,600 trials (C90: t(29)=4.59, p<.001) with small absolute effect. The recommendation (C91) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "LOTO does not require assumptions about parameter distributions (unlike some other methods). The distribution of LOTO estimates is largely invariant to the underlying parameter distribution, depending instead on how parameters map to observations via the likelihood function. LOTO's performance (correlation with true values) is also largely independent of the underlying distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by simulations (Figure 8 and supplements). Comparisons between normal and uniform distributions show markedly different true parameter distributions but similar LOTO estimate distributions (C93, C95). Performance is similar regardless of underlying distribution (C96). The conclusion that LOTO cannot infer distribution shape (C97) but remains efficient for detecting relationships (C98) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Comparison with alternative methods shows LOTO performs comparably or better. LOTO significantly outperforms GR17 for both LBA parameters (drift rate and start point), with the advantage attributed to LOTO's higher processing speed. LOTO also outperforms single-trial fitting, which fails completely for start point recovery. STLBA performs worse than LOTO for drift rate but better for start point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 are supported by simulations (Figure 9). Statistical comparisons show LOTO significantly better than GR17 (C100: drift rate t(19)=3.76, p=.001; start point t(19)=4.86, p<.001), better than single-trial fitting for drift rate (C103: t(19)=19.72, p<.001), and mixed results vs STLBA (C105). The explanation for GR17 performance (C101: step size limitation) is reasonable. Single-trial fitting's complete failure for start point (C104) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112"
+    ],
+    "result": "Comparison with Bayesian and joint modeling approaches shows all three methods provide significant relationships with true parameters and neural data. Joint modeling outperforms Bayesian modeling. LOTO outperforms both for recovering true parameter values (\u03ba) but is outperformed by joint modeling for neural signal correlation. Considering flexibility and implementation difficulty, LOTO offers an expedient alternative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 are supported by simulations (Figure 9\u2014figure supplement 1). All methods show significant effects (C107: all p<.001, BF10>1,000). Joint modeling beats Bayesian modeling (C108: \u03ba t(29)=3.61, p=.001; F(\u03ba) t(29)=4.32, p<.001). LOTO outperforms both for \u03ba (C109) but is outperformed by joint modeling for F(\u03ba) (C110: t(29)=-3.03, p=.005). The conclusion about LOTO as an expedient alternative (C112) is reasonable given the trade-offs demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Power analysis for linking LOTO estimates to neural data shows that with 30 participants and 160 trials, LOTO achieves 67% power for \u03ba and 76% for b (below the 80% threshold), with good specificity (false-positive rates just above 5%). Power improves to acceptable levels with either 50 participants or 267 trials per participant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 present a comprehensive power analysis (Figure 10). The baseline power values (C116) are clearly demonstrated, as is good specificity (C117). The conclusion that misattribution doesn't carry over to neural signals (C118) is supported. Improvements with increased sample size (C119) or trial number (C120) are demonstrated. The recommendation (C121) appropriately synthesizes these findings. This is a critical validation of LOTO's practical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Application of LOTO to real fMRI data (Gluth et al. 2015) successfully reproduces a model-based subsequent memory effect. LOTO-based memory estimates predict cued recall performance (t(29)=7.44, p<.001), show systematic variability, and correlate with bilateral hippocampal activation (left: Z=3.73, p=.033; right: Z=4.46, p=.002), consistent with the original study using GR2017.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C134 demonstrate LOTO's successful application to real data. The experimental design is clearly described (C122-C126). Behavioral validation shows LOTO estimates predict recall (C128: t(29)=7.44, p<.001). The test for systematic variability confirms true variability (C129). fMRI results show significant hippocampal activation (C131, C133) consistent with predictions (C127) and the original study (C132). This provides strong evidence for LOTO's practical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "LOTO's computational efficiency is characterized: runtime is approximately u\u00d7n (where u is time to fit once, n is number of trials), with minimal increase for multiple parameters. However, validation requires extensive simulations (e.g., ~5 million model fits for one power analysis), though this is still more feasible than for other methods like GR17 or hierarchical Bayesian modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C145 accurately characterize LOTO's computational demands. The runtime characterization (C138-C139) is straightforward. The advantage over GR17 for multiple parameters (C139) was demonstrated earlier. The computational demands of validation (C143-C144) are honestly reported, with appropriate context that other methods are even more demanding (C145). The limitation that LOTO requires prospective planning (C142) is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The jackknife principle underlying LOTO has historical precedent (1950s) and similarities to other leave-one-out methods in statistics and neuroscience. Previous applications include ERP onset latency estimation and functional connectivity quantification. Combining LOTO with jackknife-based brain activation pattern identification could be promising for future research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 appropriately contextualize LOTO within existing statistical methods. The historical citations (C146: Quenouille 1956, Tukey 1958) and methodological comparisons (C147-C148) are accurate. The suggestion for future research (C149) is speculative but reasonable given the established precedents. This provides appropriate scholarly context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "LOTO is characterized as a 'two-stage approach' where behavioral modeling precedes neural data analysis, missing the reciprocity advantage of joint modeling. However, LOTO's strengths lie in ease, speed, and generality of application, plus flexibility for exploratory whole-brain analyses without requiring a priori hypotheses about brain regions or testing different functional relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C155 provide an honest assessment of LOTO's position in the methodological landscape. The characterization as two-stage (C151) and acknowledgment of missing reciprocity (C152) are fair. The stated advantages (C153-C155) are supported by demonstrations throughout the manuscript. This represents a balanced evaluation of trade-offs rather than overclaiming.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript establishes the scientific context: model-based cognitive neuroscience aims to link trial-by-trial parameter fluctuations to brain signals, but existing methods are limited by difficulty of implementation, computational demands, or model-specificity. Cognitive models typically specify variability distributions but not single-trial values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C11 establish the motivation and context for LOTO. These are supported by citations to relevant literature and represent accurate characterizations of the field's challenges. The claims about existing methods' limitations (C2, C11) are substantiated through comparisons with specific methods (van Maanen et al., Wiecki et al., Turner et al.) discussed later in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The manuscript concludes that while neuroimaging techniques enable single-trial analysis, cognitive modeling has only partially kept up by focusing on invariant features through averaging. LOTO has potential to fill this gap due to its accessibility beyond a handful of experts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 provide appropriate framing of LOTO's potential impact. The observation about the gap between single-trial neuroimaging and averaging-based cognitive models (C157) is accurate. The claim about LOTO's potential (C158) is appropriately modest (\"has the potential\") and supported by the demonstrated ease of use and generality throughout the manuscript.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1826 @@
+{
+  "submission": {
+    "id": "51611c87-07b8-4517-a518-d6c7a9d987ca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:38:28.995611Z",
+    "updated_at": "2025-12-02T11:38:28.995611Z"
+  },
+  "content": [
+    {
+      "id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "submission_id": "51611c87-07b8-4517-a518-d6c7a9d987ca",
+      "content_type": "manuscript",
+      "content_text": "# Chronically implanted Neuropixels probes enable high-yield recordings in freely moving mice\n\n## Authors\n\n- Ashley L Juavinett<sup>1</sup> ([ORCID: 0000-0002-4254-3009](https://orcid.org/0000-0002-4254-3009))\n- George Bekheet<sup>2</sup>\n- Anne K Churchland<sup>3</sup> ([ORCID: 0000-0002-3205-3794](https://orcid.org/0000-0002-3205-3794)) \u2020\n\n### Affiliations\n\n1. Division of Biological Sciences University of California, San Diego San Diego United States\n2. University of Connecticut School of Medicine Farmington United States\n3. Cold Spring Harbor Laboratory Cold Spring Harbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe advent of high-yield electrophysiology using Neuropixels probes is now enabling researchers to simultaneously record hundreds of neurons with remarkably high signal to noise. However, these probes have not been well-suited to use in freely moving mice. It is critical to study neural activity in unrestricted animals for many reasons, such as leveraging ethological approaches to study neural circuits. We designed and implemented a novel device that allows Neuropixels probes to be customized for chronically implanted experiments in freely moving mice. We demonstrate the ease and utility of this approach in recording hundreds of neurons during an ethological behavior across weeks of experiments. We provide the technical drawings and procedures for other researchers to do the same. Importantly, our approach enables researchers to explant and reuse these valuable probes, a transformative step which has not been established for recordings with any type of chronically-implanted probe.\n\n## Introduction\n\nObserving behavior and recording neural activity in freely moving animals is crucial for our understanding of how the brain operates. Electrophysiology in freely moving rodents has been used to observe place and grid cell dynamics (Hafting et al., 2005; O'Keefe and Dostrovsky, 1971), cortical dynamics during attentional control (Bolkan et al., 2017), the role of oscillations during fear learning (Stujenske et al., 2014), whisking behavior during exploration (Kerekes et al., 2017), the effect of environmental context on neural activity (Whitlock et al., 2012), and the control of sensory selection in divided attention (Wimmer et al., 2015), to name a few. Although freely moving recordings can be challenging, recording from unrestrained mice enables researchers to investigate behaviors that involve natural movements and offers ethologically\u00a0valid insight into neural activity (Juavinett et al., 2018; Markowitz et al., 2018). Electrophysiology in freely moving animals is commonly performed with static electrode arrays or microdrives (Okun et al., 2016; Vandecasteele et al., 2012; Voigts et al., 2013). These techniques have contributed much to the field, but are not at pace with the spatiotemporal coverage of cutting edge recording techniques, such as Neuropixels probes (Jun et al., 2017; Steinmetz et al., 2018). Given the experimental tractability of the mouse and the increasing interest in ethological approaches in neuroscience research, we sought to develop a system that would enable researchers to perform repeatable high-yield recordings.\n\nRecent advancements in semiconductor technology have enabled the development of high-density silicon probes known as Neuropixels (Jun et al., 2017). The linear recording shank can record from 384 contacts across 3.84 mm (selectable from 960 available sites on a 10 mm length shank). In the mouse brain, which is at most 6 mm deep, this span of contacts means researchers can simultaneously record from more than half of the depth of the brain. Further, Neuropixels probes have low baseline noise levels (<6 \u00b5V RMS), comparable to other silicon probes (Steinmetz et al., 2018). However, Neuropixels probes also have on-site amplification and digitization, thereby enabling simultaneous recording of hundreds of cells across brain regions in an unprecedented low-noise, high-throughput manner. Importantly, methods have also been developed to automatically sort spikes from these recordings, and even correct for probe drift (Jaeyoon et al., 2017; Pachitariu et al., 2016).\n\nNeuropixels probes have already proved invaluable for neuroscientists conducting acute experiments in mice, or chronic experiments in freely moving rats (Jaeyoon et al., 2017; Krupic et al., 2018; V\u00e9lez-Fort et al., 2018). However, there is limited work with these probes in unrestrained mice (Evans et al., 2018), likely because of the difficulty designing small, lightweight recording devices. Still, there is plentiful interest in behaviors and computations that involve movements of the animal\u2019s head in space (V\u00e9lez-Fort et al., 2018), foraging (Lottem et al., 2018), pup retrieval (Marlin et al., 2015), or naturalistic fear responses (Evans et al., 2018). Further, although these probes have been very successful in freely moving rats (Jaeyoon et al., 2017; Krupic et al., 2018), there is\u00a0not an established method to recover them after the experiment.\n\nThe opportunity to explant and reuse Neuropixels probes is transformative. Given the cost ($1000 each, https://www.neuropixels.org/) and limited availability of the probes, many researchers will only be able to use them if it is possible to recycle them after experiments. The ability to recover these probes would enable researchers to repeat their experiments in different animals, boost the statistical power of their experimental findings, and thus enhance reproducibility of experimental data. We therefore sought to design a device for the Neuropixels probe that would allow experimenters to chronically implant it, run an experiment, and explant it for future experiments.\n\nSeveral major innovations are required to design a removable holder for chronic implants of Neuropixels probes in unrestrained mice. First, the current design of the probe has several components that need to be securely mounted onto the small mouse skull. Further, these sensitive onboard electronics need to be protected while the mouse is in its home cage. Most importantly, the shank of the probe must be secured to ensure consistent recordings across weeks of recording. In previous work, this required permanently mounting the biosensor using adhesive, which was effective but made it nearly impossible to remove the probe afterwards (Okun et al., 2016). We also opted to use a 3D printed device in order to limit the use of acrylic in our design and ensure that it would be lighter than alternative designs.\n\nTo address these needs, we designed the Apparatus to Mount Individual Electrodes (AMIE), a device that fully encases and protects the sensitive onboard electronics of the Neuropixels probe, allowing long term, freely moving experiments. Moreover, the Neuropixels AMIE allows explantation and recycling. Our design and protocol is applicable to laboratories that wish to adapt the Neuropixels probe, or similar silicon probes, for recording in freely moving mice. With the drawings, materials and instructions, our device can be implemented not only by labs with years of expertise in electrophysiological recordings, but also by labs with different expertise that encounter a new need to study neural activity during behavior. Researchers that are using this technology in primates, rats, or in acute mice experiments may also find aspects of this approach useful.\n\nWith this design we have successfully recorded\u00a0~100 neurons simultaneously from unrestrained mice while observing freely\u00a0moving behavior, and explanted the Neuropixels probe with a functioning recording shank. Further, because the AMIE is designed to allow implantation of a headbar (if desired), we recorded from the same mice in head-fixed experiments using systematic presentation of traditional visual stimuli. This feature of the AMIE allows experimenters to study neural activity in both psychophysical and ethological paradigms, affording the chance to build a bridge between the two.\n\n## Results\n\n### Design overview\n\nThe entire AMIE device weighs\u00a0~1.5 g (with cement:~2.0 g) and is assembled from three parts: the Neuropixels probe, the internal mount (IM), and external casing (EC) (Figure 1A,B; Video 1). The IM attaches directly to the Neuropixels PCB board with adhesive and is the core of the assembly (Figure 1a). On the backside of the IM is a slot for a stereotax adapter (SA) which allows for easy handling of the probe (Figure 1A). The IM attaches to the EC via a rail system (Figure 1B). During the implantation procedure, all adhesive binding the assembly to the rodent\u2019s skull exclusively contacts the EC, which acts as a protective shell (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47188/elife-47188-fig1-v2.jpg)\n\n**Figure 1.:** (A) Probe base mounted onto 3D printed internal casing and attached to machined metal stereotax adapter. Inset: Rear view, with screws that attach the internal mount (IM) to the stereotax adapter (SA). (B) Entire assembly in a. within 3D printed external casing. Inset: Rear view. (C) The headstage is positioned on the back of the encasing, with the flex wrapped in an \u2018S\u2019 shape. (D) Entire assembly in relation to size of mouse brain and skull. The EC is attached to the skull with cement. Silicon gel is used to as an artificial dura to protect the open craniotomy.\n\n![Video 1.](https://cdn.elifesciences.org/articles/47188/elife-47188-video1.mp4.jpg)\n\nOne difficulty in adapting the current Neuropixels design for freely moving experiments in mice is the\u00a0~3 cm long flex cable attached to a 1 g headstage (see Jaeyoon et al., 2017) for details). In early testing, we suspended the flex and headstage above the mouse\u2019s head during recording. However, we found that the flex very quickly twisted, potentially damaging it. In addition, the headstage added swinging weight above the mouse\u2019s head. With these observations in mind, we designed the encasing with a space for the headstage to be semi-permanently affixed. The probe flex wraps in an \u2018S\u2019 shape behind the implant, and attaches to the bottom (Figure 1C). In this way, the recording cable can be attached to the top of the implant, suspended above the mouse\u2019s head.\n\n### Protocol overview\n\nAt least one day prior to implant, we attach the probe to the internal mount (Figure 2A). Silicone is added to further secure the base of the recording shank (Figure 2B). Once this is dry, the internal mount is slid into the rails of the external casing and secured with cement (Figure 2C,D). This cement will be drilled away in order to explant the probe. When the entire AMIE assembly is dry, it is ready to be implanted (Figure 2E). The surgery to implant the probe and encasing typically takes\u00a0~3 hr (see Materials\u00a0and\u00a0methods for details). During this surgery, a headbar can also be implanted, which does not interfere with the encasing. The external casing is the only part of the assembly that is attached to the skull (Figure 2F). In a typical experiment, we implant the probe and encasing without the headstage attached. We wait\u00a0~3\u20134 days for the mouse to recover, and then add the headstage. The headstage can be removed after each experiment, if desired. After\u00a0~1 day of habituation to the additional weight of the headstage (~1 g), we begin recording during behavior.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47188/elife-47188-fig2-v2.jpg)\n\n**Figure 2.:** (A) The internal mount (IM) is attached to the stereotax adapter (SA) with two screws, and probe is attached to the internal mount using an epoxy. (B) Medical-grade silicon is added to the base of the shank to add extra support. (C) The external case (EC) is attached to a breadboard, and the IM+probe assembly is carefully guided into the internal compartment of the EC (top view). (D) After cementing the IM to the EC, the entire assembly is ready to be implanted. (E) During surgery, the the shank is lowered into the brain (here at a\u00a0~\u00a016\u00b0 angle). The ground wire extends down the side of the implant and is attached to the ground screw. (F) The entire encasing is attached to the headbar and skull using Metabond. Tape is added where necessary to add protection between the encasing and the skull. The stereotax adapter (not shown) is removed after this support structure is dry and secure. (G) Image of a mouse with the implant\u00a0~48 hr after surgery. The entire assembly is wrapped in Kapton tape to protect the onboard electronics.\n\n### Mice are mobile with the implant\n\nNeuropixels probes were not designed for chronic implants in freely moving mice, and the entire probe assembly is quite bulky in comparison to a mouse\u2019s head (Figure 1D; Jaeyoon et al., 2017). However, we have designed a very slim encasing for the probe, and mice can adjust to the weight and size of the implant (Video 2).\n\n![Video 2.](https://cdn.elifesciences.org/articles/47188/elife-47188-video2.mp4.jpg)\n\n**Video 2.:** Mouse was free to move around a 16\u201dx16\u2019 arena while implanted and tethered. Video is shown at 2x speed.\n\nBy approximately 48 hr post-surgery, mice were mobile with the Neuropixels AMIE (Figure 2G). To evaluate the suitability of the AMIE for use during behavior, we assessed the impact of the device on both spontaneous and stimulus-driven movements. For spontaneous behavior, we analyzed video data taken while mice explored an open arena (Figure 3A,B). Even while tethered, implanted mice were typically agile and active (Video 2). To quantify behavior and compare for implanted vs. naive mice, we calculated three metrics from video data: the percentage of time spent moving, the maximum velocity and the maximum acceleration. For all three metrics, considerable overlap was apparent in the distribution of values for implanted and naive mice (Figure 3D). Although implanted mice moved slightly less and were slightly slower, the differences failed to reach significance for any metric. In fact, the mouse with the highest max acceleration was implanted (Figure 3D, middle panel).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47188/elife-47188-fig3-v2.jpg)\n\n**Figure 3.:** (A) Behavioral testing arena, with a camera to track the position of the mouse and a monitor on top to present visual stimuli. (B) Snapshot of mouse with implant in arena. (C) Sample tracking of 2 min of open field behavior in an implanted mouse. Color of the line indicates the velocity of the mouse. (D) Open field behavior of implanted vs. naive mice. Random 30\u2013180 s exerpts of behavior (N\u00a0=\u00a08 videos per group, two videos from each mouse) in the open field were used to calculate a percent time moving (>5 cm/s), max velocity, and max acceleration. (E) Visual-looming evoked behavior of implanted vs. naive mice (N\u00a0=\u00a010 trials, two videos per mouse). A dark dot of linearly increasing diameter (40 cm/s) was presented over the mouse\u2019s head to evoke an escape response. The mean velocity, max velocity, and max acceleration during these responses is presented here. In all panels, orange line indicates the group mean, blue line indicates the median. p-Values (as computed by a two-sided Wilcoxon Rank Sum test) as well as effect sizes (computed by a Cohen\u2019s d) are reported on each panel. Outliers (defined as 1.5*IQR) are marked as light gray points.\n\nTo examine stimulus driven behavior, we measured responses to overhead visual looming stimuli (Figure 3E), which are known to elicit strong escape responses in mice (De Franceschi et al., 2016; Evans et al., 2018; Yilmaz and Meister, 2013). The distribution of values for the metrics tested (mean/max velocity and max acceleration) again overlapped considerably for na\u00efve vs. implanted mice (Figure 3E). Although we observed no significant changes, a few naive mice achieved max acceleration during their escapes at values unobserved in implanted mice (Figure 3E, right). A possible explanation is that naive mice were free from the weight of the device and thus were able to accelerate very quickly when motivated to do so by a threatening stimulus. Taken together, these behavioral observations argue that although the presence of the AMIE may have idiosyncratically slowed mice slightly, they remained active in an open arena and showed species-typical responses to threatening stimuli.\n\n### Neuropixels AMIE allows for 60\u2013100 simultaneously recorded neurons across weeks of freely moving behavior\n\nWe recorded spiking activity across multiple brain areas during freely moving behavior over the course of 1\u20132 weeks. Figure 4 illustrates an experiment with the probe implanted in medial visual cortex, subiculum, and midbrain. We isolated\u00a0~60\u2013100 units for each session in this experiment (Figure 4D,E), during which the mouse moved freely around the arena and was exposed to looming stimuli. The number of single units we were able to isolate ranged across mice and experiments from\u00a0~20\u00a0to\u00a0145, but these numbers were fairly consistent within each mouse across recording sessions (Figure 4C). This variability is likely dependent on the probe that was used (Phase 3A Option four probes used in mouse #3 and #4 had 270 rather than 374 recordable channels; see Materials and methods and Jun et al., 2017), recording noise, and brain region. The absolute number of isolated units depends on the quality of the sorting and the experimenter\u2019s manual curation of Kilosort output, which does present challenging edge cases and can be difficult to assess with drift in the experiment. Overall, these numbers are less than has been previously reported with acute experiments in mice (Jun et al., 2017), possibly because of the chronic recording environment or inability to completely reduce noise. The longest we left a probe in was 41 days, without any noticeable decay in the signal.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47188/elife-47188-fig4-v2.jpg)\n\n**Figure 4.:** (A) Probe location, marked with DiI. Sections from Paxinos and Franklin atlas provided for reference. Mouse #200 was implanted with a probe in visual cortex, hippocampus (subiculum), and the midbrain. (B) Schematic of probe depth in (A). (C) Number of isolated units across recording days for eight different mice. Mouse #3 and #4 were implanted with a probe with fewer recording sites (270 vs. 374). Mouse #2 is featured in the other panels of this figure. Mouse #7 had a probe that was previously implanted in Mouse #5; see Figure 6. (D) Scatter plot of units across days for Mouse #2. Size of circles denotes number of waveforms assigned to that unit. X axis is random for visualization. \u20ac Histogram of isolated units across days and brain depth for Mouse #2. (F) Waveforms (n\u00a0=\u00a0200, mean waveform in yellow) recorded from the same four contacts on the probe on day 5 (top) and day 6 (bottom). Units are the same as the yellow filled in circles in (D).\n\nTo test how automatic unit sorting and classification would compare with our approach, we also sorted one of these freely moving sessions with Kilosort2, which automatically classifies units as \u2018good.\u2019 Indeed, for mouse #7, Kilosort2 identified 77 well-isolated units, compared to 69 with Kilosort1 and manual post-Kilosort designations in phy, confirming that our manual criteria were effective.\n\nWe elected to be conservative about any claims that the same neurons were recorded across days of the experiment, because demonstrating a stable recording of the same neurons from day-to-day is difficult and often regarded with skepticism. However, we did indeed observe waveforms that were consistent in both shape and depth across recordings, and it is entirely possible that these originate from the same neurons (Figure 4F).\n\n### Researchers can also conduct headfixed recordings to further characterize neurons\n\nA major limitation of many chronic implant designs is that they do not enable researchers to also implant a headbar to restrain the animal. The ability to head-fix animals critical for two reasons. First, it allows the experimenter to easily restrain the mouse during experiments, for example to attach/replace the headstage or fix twisting in the tether. Moreover, it affords the opportunity to measure neural activity in response to traditional psychophysical stimuli after the freely moving recording (Figure 5). This makes it possible to connect the neural responses obtained during an unrestrained, ethological task with those obtained during more traditional sensory electrophysiology context (simple stimuli defined by parameters that are systematically varied). This opportunity could prove invaluable in bridging observations from these two very different contexts which are normally studied in separate laboratories.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/47188/elife-47188-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of headfixed setup. The mouse was implanted with a headbar (see Materials\u00a0and\u00a0methods) enabling it to be restrained above a wheel. Visual stimuli was presented on a monitor above the mouse\u2019s head (similar to the unrestrained condition). The mouse\u2019s pupil can be tracked with a high resolution IR camera, and movement can be tracked using a rotary encoder on a 3D printed wheel. (B) Eight sample waveforms (n\u00a0=\u00a0200, mean in yellow) from a restrained recording, same mouse as Figure 4D\u2013F (Mouse #2). (C) Distribution of sorted units across the probe, same mouse as in Figure 4D\u2013F (Mouse #2). (D) Peristimulus time histograms for three example neurons from different locations on the probe. The stimuli were a pseudorandomized set of 2 s full contrast sinusoidal drifting gratings in eight different directions. Shaded region is standard error of the mean. Stimuli began at the dotted line. (E) Raster plots for the neurons in (D). Shaded area indicates the duration of the stimulus.\n\nFor example, after six days of recording freely moving behavior, we presented a battery of visual stimuli while the mouse was head-fixed to determine whether cells were visually responsive (Figure 5A). We were able to isolate 60 units (63 with Kilosort2) in the restrained condition, just as in the freely moving condition (Figure 5B). The distribution of units was similar to previous experiments where the mouse was not restrained.\n\n### Implant allows researchers to recover the probe after the experiment\n\nBeyond providing a stable implant over many days, we also sought to design an implant that would allow for recycling of the Neuropixels probes. As demonstrated in Figure 1, the internal mount is separate from the external casing that is cemented to the mouse. After the completion of the experiment, researchers can drill away the cement and slowly remove the probe (see Materials\u00a0and\u00a0methods and Figure 6A). This same probe, still attached to the internal mount, can then be re-secured within an external casing and implanted in another mouse.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/47188/elife-47188-fig6-v2.jpg)\n\n**Figure 6.:** (A) Example successful probe explanation. Cement is drilled away from the wings of the internal casing in order to remove the internal mount from the external casing. (B) Outline of experiment timing. The same probe was used in the first implant and re-implant. (C) Sample mean waveforms (n\u00a0=\u00a0200, mean in yellow) from each mouse. (D) Detected event rate of the first implant versus the re-implanted probe across days of recording. (E) Median signal-to-noise ratio (SNR) for first implant and re-implanted probe across days (see Materials\u00a0and\u00a0methods.).\n\nWe were able to record from a mouse for over 2 weeks, explant the probe, and re-implant for a second experiment (Figure 6B). We were easily able to isolate clear units in both (Figure 4C and 6C). Although we initially were able to isolate comparable numbers of units to the probe\u2019s first implant, the number of isolated units fell over time (compare mouse #5 and #7 in Figure 4C). Still, the re-implanted probe yielded 43.6\u00a0\u00b1\u00a017.8 neurons which is ample for many studies, especially those conducted in labs for which Neuropixels probes are a scarce resource.\n\nIn another experiment, were able to explant a probe from a mouse that did not recover from surgery and reimplant it in a second mouse (see Table 1). Although this second mouse ultimately also had complications resulting from a poorly positioned ground wire, one successful session of recording yielded 145 units (Figure 4C; Table 1). Further experiments will determine the unit yields that can be typically expected following reimplantation.\n\n**Table 1.**\n Overview of experiments, with the Neuropixels probe option used and the outcome of the experiment.For each of these experiments, even the unsuccessful explants, neural data was obtained from the initial implant and recording sessions. For an explanation of the probe options, see Materials and methods. Starred mice are included in the paper; + sign indicates the experiment was sorted with Kilosort2; M\u00a0=\u00a0mean; SD\u00a0=\u00a0standard deviation.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Mouse</th>\n      <th colspan=\"2\">Probe option</th>\n      <th>Recordable channels</th>\n      <th>M\u00a0\u00b1\u00a0SD Isolated units</th>\n      <th>Silicone on shank</th>\n      <th>Outcome</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">NP6* (Figure 4; Mouse #3)</td>\n      <td colspan=\"2\">4</td>\n      <td>276</td>\n      <td>19.8\u00a0\u00b1\u00a06.23</td>\n      <td>No</td>\n      <td>Shank broke during explant</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">NP7* (Figure 4; Mouse #4)</td>\n      <td colspan=\"2\">4</td>\n      <td>276</td>\n      <td>20.0\u00a0\u00b1\u00a04.36</td>\n      <td>no</td>\n      <td>Shank broke during freely moving recording</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">NP8* (Figure 4; Mouse #2)</td>\n      <td colspan=\"2\">1</td>\n      <td>384</td>\n      <td>77.2\u00a0\u00b1\u00a013.7</td>\n      <td>no</td>\n      <td>Shank broke during explant</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">NP9* (Figure 4; Mouse #1)</td>\n      <td colspan=\"2\">1</td>\n      <td>384</td>\n      <td>117.4\u00a0\u00b1\u00a016.3</td>\n      <td>no</td>\n      <td>Shank broke during explant</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">NP11</td>\n      <td colspan=\"2\">1</td>\n      <td>384</td>\n      <td>-</td>\n      <td>no</td>\n      <td>Shank broke during freely moving recording</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">NP12</td>\n      <td colspan=\"2\">3</td>\n      <td>384</td>\n      <td>-</td>\n      <td>no</td>\n      <td>Mouse didn\u2019t recover from surgery, probe successfully explanted and re-implanted in NP13</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">NP13 (Figure 4; Mouse #8)</td>\n      <td colspan=\"2\">3</td>\n      <td>384</td>\n      <td>145+</td>\n      <td>yes</td>\n      <td>Ground wire issues after surgery; one session successfully recorded. Successful explant</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">NP14* (Figure 4 and 6; Mouse #5)</td>\n      <td colspan=\"2\">3</td>\n      <td>384</td>\n      <td>80.6\u00a0\u00b1\u00a013.6</td>\n      <td>yes</td>\n      <td>Successful explant, re-implanted in NP16</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">NP15* (Figure 4; Mouse #6)</td>\n      <td colspan=\"2\">3</td>\n      <td>384</td>\n      <td>64.3\u00a0\u00b1\u00a019.1</td>\n      <td>yes</td>\n      <td>Successful explant</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">NP16* (Figure 4 and 6; Mouse #7)</td>\n      <td colspan=\"2\">3</td>\n      <td>384</td>\n      <td>43.6\u00a0\u00b1\u00a017.8</td>\n      <td>yes</td>\n      <td>Successful explant</td>\n    </tr>\n  </tbody>\n</table>\n\nTo assess the stability of the probe and our ability to detect spikes, we computed the event rate (sum of temporally coincident spikes on a group of sites for which the maximum amplitude exceeds the threshold) and signal-to-noise (SNR; see Materials and methods) ratio for the first implant of the probe as well as its re-implantation in another animal. There was a drop in the event rate and a small drop in the SNR in the re-implanted probe (Figure 6D,E). However, even with the first implant there was a significant drop in both event rate and SNR on the 12th day of recording, suggesting that this may not be due to the re-implantation itself.\n\nSuccessful explant of probes depended on several factors. First, applying silicone to the base of the shank to add extra support appears to be necessary (Figure 1B). With silicone added to the base of the shank, 4/4 explant attempts were successful, whereas 1/6 explants were successful without the silicone (Table 1). Second, careful alignment of the probe, internal mount, and external casing will help ensure that the shank is being removed at the appropriate angle. Third, we only had success with Phase 3A Option three probes, suggesting that it may be easier with these, possibly due to the fact that the recording shanks on these probes are longer (10 mm) than Option 1 (5 mm). Fortunately, the shank of Phase 3B probes (now on the market) is also 10 mm long.\n\n## Discussion\n\nHere, we present a significant advance in our ability to use and recycle high-density silicon probes such as Neuropixels. Our device, the AMIE, and accompanying methods, allow researchers to perform recordings in both restrained and unrestrained conditions, and critically, to explant and reuse probes after experiments. This approach will enable researchers to capitalize on important technological advances to understand the complexity of brain activity during ethological behaviors, and to bridge the gap between ethological and psychophysical behaviors (Gomez-Marin et al., 2014).\n\nAlthough Neuropixels probes were not designed for unrestrained recording in mice, our AMIE customizes them so that they are ideally suited to this purpose. The AMIE has a slim enclosure for the probe as well as the headstage (Figures 1 and 2), that mice can easily handle (Figure 3). It is worth noting that the Neuropixels design featured here is 3A, but the 3B (Neuropixels 1.0) version is the one currently commercially available. AMIE designs for both probe generations are available in the resources for this paper (see Materials and methods). Our design can also be readily adapted to other types of silicon probes (e.g. Neuronexus).\n\nUnlike other electrophysiology systems, the current Neuropixels recording tether is not easily commutated due to heavy data demands. While this has not been a problem for recording from chronically-implanted rats in large arenas (Jun et al., 2017), it can be challenging for recordings from mice in smaller arenas, requiring constant monitoring of the mouse\u2019s position and occasional intervention from the experimenter to untangle the cord. In our experience, this is manageable, requiring the experimenter to stop an hour-long session once or twice to unplug the cord and untangle. Importantly, here we report similar behavior both during open field exploration and looming-evoked escape responses in implanted and naive mice (Figure 3).\n\nThe Neuropixels AMIE can be used to record in both restrained and unrestrained conditions, with similar yields in numbers of isolated units (Figures 4 and 5), although a direct comparison of yields across publications is challenging due to potential differences in spike sorting criteria across labs. The ability to restrain the mouse for passive stimulation enables researchers to obtain additional information about their recordings that may ultimately aid in uncovering the function of cells and brain regions. Remarkably, during our headfixed experiments we found that even cells deep in the midbrain showed clear visual responses to drifting gratings (Figure 5D,E). This demonstrates the power of Neuropixels to uncover signals relevant to decision-making and other behaviors in uncharted brain territories.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type/resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>Medical-grade clear silicon adhesive</td>\n      <td>Mastersil</td>\n      <td>912MED</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>Loctite Instant Adhesive 495</td>\n      <td>ULINE</td>\n      <td>S-7595</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>Medigel CPF</td>\n      <td>Clear H20</td>\n      <td>74-05-5022</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>Isoflurane</td>\n      <td>Allivet</td>\n      <td>50562</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>C and B Metabond 'B' Quick Base</td>\n      <td>Parkell</td>\n      <td>S398</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>C and B Metabond 'C' Quick Base</td>\n      <td>Parkell</td>\n      <td>S371</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>C and B Metabond Radiopaque L-Power</td>\n      <td>Parkell</td>\n      <td>S396</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>Optibond Solo Plus</td>\n      <td>Kerr</td>\n      <td>31514</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>Vetbond</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>sc-361931</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>Charisma A1 Syringe</td>\n      <td>Net32</td>\n      <td>66000085</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>Eye Ointment</td>\n      <td>Rugby</td>\n      <td>370435</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>Dental Cement</td>\n      <td>Stoelting</td>\n      <td>5217307</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>DiI</td>\n      <td>ThermoFisher Scientific</td>\n      <td>D282</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>Silicone Gel Kit</td>\n      <td>Dow Coning</td>\n      <td>3\u20134860.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound/drug</td>\n      <td>Bleach</td>\n      <td>Amazon</td>\n      <td>B01K8HT54G</td>\n      <td>Any brand bleach ok</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Neuropixel Probe</td>\n      <td>Neuropixel Stock Center (Neuropixels.org)</td>\n      <td>Neuropixel 1.0 Probe</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>3D Printed Internal Mount</td>\n      <td>\u2018this paper\u2019 - Github repository</td>\n      <td>IM_Neuropixel1.stl</td>\n      <td>Internal mount design file (.stl) can be downloaded from the following github repository: https://github.com/churchlandlab/ChronicNeuropixels</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>3D Printed External Casing</td>\n      <td>\u2018this paper\u2019 - Github repository</td>\n      <td>EC_Neuropixel1.stl</td>\n      <td>same as above</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sterotax Adapter</td>\n      <td>\u2018this paper\u2019 - Github repository</td>\n      <td>stereotax adapter v4.ipt</td>\n      <td>same as above</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>2-56A Screws</td>\n      <td>Amazon</td>\n      <td>B00F34U238</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Silver Wire</td>\n      <td>WPI</td>\n      <td>AGW1010</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>4\u2019 post holder with thumbscrew</td>\n      <td>Thorlabs</td>\n      <td>PH4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Slim right angle bracket</td>\n      <td>Thorlabs</td>\n      <td>AB90B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Aluminum Breadboard</td>\n      <td>Thorlabs</td>\n      <td>MB624</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>M6 Cap Screw</td>\n      <td>Thorlabs</td>\n      <td>SH6MS20</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>M6 Nut</td>\n      <td>Thorlabs</td>\n      <td>HW-KIT2/M</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Kapton Tape</td>\n      <td>ULINE</td>\n      <td>S-7595</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Kimwipes</td>\n      <td>Kimtech</td>\n      <td>34120</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Oxygen Cylinders</td>\n      <td>Airgas</td>\n      <td>OX USP300</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Mouse Anesthesia System with Isoflurance Box</td>\n      <td>Parkland Scientific</td>\n      <td>V3000PK</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Small rodent sterotax fitted with anesthesia mask</td>\n      <td>Narishige</td>\n      <td>SG-4N</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Dental Drill</td>\n      <td>Osada</td>\n      <td>EXL-M40</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>0.9 mm burrs for micro drill</td>\n      <td>Fine Science Tools</td>\n      <td>19007\u201309</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>T/Pump Warm Water Recirculator</td>\n      <td>Kent Scientific</td>\n      <td>TP-700</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Warming Pad for warm water recirculator</td>\n      <td>Kent Scientific</td>\n      <td>TPZ</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Cotton Applicators</td>\n      <td>Fisher Scientific</td>\n      <td>19-062-616</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Surgical Spears</td>\n      <td>Braintree Scientific Inc.</td>\n      <td>SP 40815</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Printing and machining parts\n\nTo conduct this experiment, researchers will need Neuropixels probes. We recommend performing the entire process of preparing and implanting the probe using a dummy probe for practice. We printed and tested in VeroWhite material using a Stratasys Eden 260VS PolyJet 3D Printer with 16 \u00b5m resolution. The stereotax adaptor should be machined from aluminum or stainless steel. The parts featured here were designed for Neuropixels 3A probes, but we have since adapted these for Neuropixels 3B probes (Neuropixels 1.0). All designs can be found on the CSHL repository (http://repository.cshl.edu/36808/) as well as on Github (Juavinett et al., 2019; (copy archived at https://github.com/elifesciences-publications/ChronicNeuropixels).\n\nThe probe options for Neuropixels 3A differ based on their probe length (and corresponding site count), as well as whether they are active or passive electrodes. Probe options 1 and 3 are both passive, and contain 384 (5 mm long shank) and 960 sites (10 mm long shank), respectively. Probe options 2 and 4 are both active, and contain 384 (5 mm long shank) and 966 sites (10 mm long shank) respectively. All the options have the option to record from 374 channels, with the exception of Option 4, which only has 270 recording channels. Readers should refer to the Supplementary Information in Jun et al. (2017) for additional details. Neuropixels 3B probes have the Phase 3A Option three shank.\n\n### Mounting the probe\n\nFirst, the internal mount is secured to the stereotax adapter (SA) using two 2-56A screws (Amazon, B00F34U238). As depicted in Figure 2A, we then attached the Neuropixels probe to the internal mount (IM) usingLoctite Instant Adhesive 495 (ULINE S-17190). Using a needle, we applied a medical-grade clear silicone adhesive, Mastersil 912MED, to the base of the shank (Figure 2B). The IM and probe was slid into the rails of the external casing (EC), and secured with cement (Figure 2D\u2013F).\n\n### Surgical methods\n\nAll surgical and behavioral procedures conformed to the 316 guidelines established by the National Institutes of Health and were approved by the Institutional 317 Animal Care and Use Committee of Cold Spring Harbor Laboratory. We used male 3\u20134 month old C57/BL6 mice (Jackson Laboratories, 000664). Male mice were used because they are typically larger, and we expected that they would better handle the weight of the implant. Mice were given medicated (carprofen) food cups (MediGel CPF, Clear H20 74-05-5022) 1\u20132 days prior to surgery.\n\nDuring surgery, the mouse was anesthetized with isoflurane. We cut away the skin and cleared any connective tissue. Tissue at the edges of the skull was glued down with Vetbond (Santa Cruz Biotechnology, cat. no. sc-361931). The skull was cleared and dried, using a skull scraper or blade to add additional texture. A boomerang shaped custom Titanium headbar was cemented to the skull, just posterior to the eyes, near Bregma. A burr hole was drilled for the ground screw, which was carefully screwed into the skull. We applied Optibond Solo Plus (Kerr, cat No. 31514) to the skull, and used UV light to cure it. We used Charisma (Net32, cat. No. 66000085) to create a base for the implant, and add additional support around the ground screw. Using a dental drill, a small craniotomy (1\u20132 mm) was made over visual cortex (2\u20132.5 ML,\u22123.4\u20133.5 AP relative to Bregma). The entire Neuropixels assembly (SA, IM, and EC) was placed in the stereotax. After carefully applying DiI (ThermoFisher Scientific, cat. no. D282, 0.5% in DMSO) to the probe, the shank was slowly lowered into the brain at a\u00a0~\u00a016 degree angle (Figure 2E). The ground wire is wrapped around the ground screw, and Metabond cement was carefully applied to attach the EC to the skull. The entire assembly was wrapped in Kapton Tape (ULINE S-7595) and the mouse was allowed to recover for 3\u20134 days. Mice were housed individually after surgery.\n\nOnce the mouse recovered, we removed the tape and added the headstage to the back of the implant. The entire assembly was re-wrapped with tape. On the next day, we began behavioral testing.\n\n### Behavioral data\n\nTo compare the behavior of implanted mice with na\u00efve/unimplanted mice, we tracked mice using a Basler Pylon camera and Ethovision XT13 in a 16\u2019 x 16\u2019 open arena. For open field tests, na\u00efve mice were allowed to explore a bare arena for 15 min. Implanted mice were tested in an arena with an inset nest; the data presented here are random excerpts of the mouse\u2019s activity while outside of the nest. We excerpted the same length time segments from the naive mice for comparison. Our behavioral data were not normally distributed, so a Wilson Rank Sum Test was used to test for differences between na\u00efve and implanted mice. We computed effect sizes using Cohen\u2019s d.\n\n### Visual stimulation\n\nFor visually-evoked responses during freely moving behavior (Figure 4), a linearly expanding dot (40 cm/s) was presented on a monitor directly over the mouse\u2019s head. This stimulus is known to elicit an escape response in mice (De Franceschi et al., 2016; Yilmaz and Meister, 2013). Unimplanted mice could escape into a small nest: a triangular prism with a 13 cm opening. Implanted mice could escape into a nest inset into the wall \u2013 this modification was necessary to enable mice to enter the enclosure with the implant. We found that being able to easily enter the nest increased the probability of flight (vs. freezing) responses. For visually\u00a0evoked responses during head restraint (Figure 5), a set of full contrast, full field drifting gratings in eight different directions (10 repeats) were presented above the mouse\u2019s head while the mouse was free to move on a wheel.\n\n### Electrophysiology data\n\nElectrophysiology data was collected with SpikeGLX (Bill Karsh, https://github.com/billkarsh/SpikeGLX). The data were first median subtracted across channels and time (see Jun et al., 2017). Unless otherwise noted, experiments were first sorted with Kilosort spike sorting software (Pachitariu et al., 2016) and manually curated using phy (https://github.com/kwikteam/phy). Numbers of recorded neurons here may be more conservative than previously published reports because we were careful to exclude any units that exhibited drift or had evidence of being more than one neuron. Specific experiments (as noted in the text) were sorted with Kilosort2 for comparison (https://github.com/MouseLand/Kilosort2). Additional analyses and plotting with data were done with MATLAB code modified from N. Steinmetz (https://github.com/cortex-lab/spikes). To assess the quality of our recordings, we computed two metrics. First, we calculated the rate of spikes above the noise floor (\u2018event rate\u2019). Events are temporally (<1 ms) and spatially (~50 \u00b5m radius) consistent events with amplitudes (on any site) that exceed six times the median absolute deviation (MAD, Jun et al., 2017). In addition, we computed the signal-to-noise ratio SNR for each event. As previously described, the event SNR is the ratio of peak amplitude of the site with largest amplitude (negative peak) in the event to 0.6745\u00a0\u00d7\u00a0MAD (Jun et al., 2017).\n\n### Probe explantation\n\nTo explant the probe, we first anesthetized the mouse with isoflurane and loosely positioned the mouse into the earbars. The SA was placed in the stereotax and aligned with its slot in the IM. We carefully lowered the SA into the IM, and put the two screws back into place. It was important that the SA was properly aligned with the IM so that no unnecessary tension was placed on the implant. We carefully drilled away the cement at the boundary of the IM and EC, unraveled or cut the ground wire, and slowly raised the SA+IM+probe assembly. The mouse was perfused and the brain was fixed in 4% PFA for sectioning. We were able to find DiI signals in the brain even 1 month after implantation (we did not test later time points).\n\nA detailed surgical protocol for mounting, implanting, and explanting the probe is located on Github (Juavinett et al., 2019; copy archived at https://github.com/elifesciences-publications/ChronicNeuropixels).\n",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "cb64a280-3b5e-4945-aa4a-0ea7436f5fc1",
+      "submission_id": "51611c87-07b8-4517-a518-d6c7a9d987ca",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Laura L Colgin, University of Texas at Austin United States\n\nReviewers:\n- Nick Steinmetz\n\n## Review text\n\nDOI: [10.7554/eLife.47188.019](https://doi.org/10.7554/eLife.47188.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Chronically-implanted Neuropixels probes enable high yield recordings in freely moving mice\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Laura Colgin as the Senior and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal their identity: Nick Steinmetz (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another, and the Senior Editor has consolidated their comments and discussion into this decision letter to help you prepare a revised submission.\n\nSummary:\n\nThe authors have presented a method and specifications for achieving chronic Neuropixels recordings in freely-moving mice and, importantly, for recovering the probes afterwards. Due to the financial cost and limited availability of Neuropixels probes, chronic implantation of these probes is currently challenging (i.e., researchers may not want to \"waste\" a probe by chronically implanting it). This paper presents a potential solution to this problem. Many labs have ordered Neuropixels probes since they were made available, so reviewers agreed that these methods provide a useful resource for many in the community. The proposed system consists of two main components: 1) an internal mount permanently fused to the probe base and 2) a removable casing (Apparatus to Mount Individual Electronics: AMIE) that adapts the probe and internal mount to a chronic implant. In addition to carrying the probe, the AMIE protects and holds the flex-cable and head stage. Reviewers found the paper to be clear and appreciated the authors' honesty about potential pitfalls (e.g., broken probes, early attempts with low yields). Reviewers appreciated that the authors made their surgical protocol and 3D printer files publicly available. However, a number of major concerns were raised that need to be addressed before the paper can be deemed suitable for publication.\n\nEssential revisions:\n\n1) Reviewers felt that the manuscript misses key data showing that the Neuropixel can be re-used without a significant drop in signal quality. Specifically, in Table 1 average numbers of isolated units are missing for NP13, 15 and 16 (i.e. the cases in which Neuropixels were implanted and then successfully explanted and re-implanted in a second mouse). These numbers are key (particularly NP16), as the authors claim that the \"quality of the recording did not noticeably change in the second mouse\", but do not provide any quantitative data to support their claim. Instead, they show 5 example units from NP14 and 16, which only demonstrates they could find at least 5 units in both recordings (Figure 6C). Additional quantification would also be bolster the manuscript's reusability claims. It would be useful to compare noise levels on the first implantation to that on the second for a given probe. This can be computed straightforwardly e.g. with this function (https://github.com/cortex-lab/spikes/blob/master/analysis/computeRawRMS.m). The authors should also run kilosort2 on all recordings (https://github.com/MouseLand/Kilosort2), which automatically assigns 'good' and 'mua' labels. This is not necessarily perfectly accurate, but at least it would provide a rapid and unbiased analysis that would be comparable to yields reported in other recordings (e.g. comparable to this dataset https://janelia.figshare.com/articles/Eight-probe_Neuropixels_recordings_during_spontaneous_behaviors/7739750). Alternatively, the authors could repeat the manual process that they did for some recordings already for at least one recording from each of the other mice in Table 1. The same argument applies to the comparison between restrained and unrestrained, which needs similar automatic (i.e., KS2) or manual quantification or both. The reusability of the probes is critical for the paper's significance, because (as the authors note) techniques without explanation already exist to chronically implant Neuropixels in freely moving mice and re-use (Introduction, fifth paragraph, Okun, 2016).\n\n2) A further concern is how the authors demonstrate that behavior in implanted vs. na\u00efve mice is comparable. Quantitatively, they do this by reporting non-significant p-values on rank-sum tests of differences between behavioral measures in implanted vs. na\u00efve mice. However, using non-significant p-values to argue for the null-hypothesis is not statistically valid; failing to reject the null hypothesis is not evidence for the null hypothesis. It's just as likely that the authors didn't use enough mice to have sufficient statistical power to show the effect. Indeed, visual inspection of Figure 3 makes this appear highly likely \u2013 clear changes in several activities can be seen in Figure 3 (most notably for % time moving, max acceleration and mean escape velocity). For instance, time moving declines from about 40% to 30%, and it's hard to believe that with additional samples this would remain non-significant, especially given that p = .0502. Relatedly, the authors claim that the correct critical value should be p = .0167 due to multiple comparisons. The meaning of a multiple-comparisons correction is difficult to interpret when the researcher's goal is to show that a difference isn't significant. Then, one could perform rank-sum tests on an arbitrarily large number of behavioral measures to reduce the critical value, and find no differences whatsoever between populations. A simple and more interpretable approach would be to simply report the effect sizes instead of p-values. Though there is a small reduction in exploratory behavior/ escape velocity, this is relatively small and essentially unavoidable due to the weight of any probe/casing being placed on the mouse's head.\n\n3) Currently shipping probes do not have the same geometry as the probes described in this manuscript. That is, the probes that are now on sale at neuropixels.org have a slightly different shape than the \"Phase 3A\" probes employed in this paper. The authors need to describe how their system could be adapted to other probe geometries (and future designs will almost certainly evolve in this regard). It would be extremely valuable if the authors could provide an updated design based on the changes to the probes. Even though it may only be subtly different, it will save others from having to replicate the work.\n\n4) Reviewers had trouble visualizing the exact shape of the pieces and how they fit together. One suggestion was that the authors could make a short video that shows someone putting the pieces together by hand with a dummy probe. Some sort of additional visual aid such as this would greatly help readers to understand what screws onto what, how things slide, etc. Another suggestion was that it could perhaps somehow be done with the 3D renderings from Figure 1.\n\n5) A concern was raised about whether the authors' system for recovering the probe might compromise the stability of the probe, since most of the body of the probe itself is not really directly attached to the skull, but only via a thin 3D printed piece. A potential way to test this that was suggested could be to plot a comparison of waveforms like in Figure 4F, but for the same neuron recorded during periods of high acceleration versus stationary periods. An even better test would be to compute a metric of waveform similarity between moving and stationary periods, which could be compared to a recording in which the probe was attached in a fixed way. Perhaps such a recording would be available from Evans et al., who may have performed chronic recordings in freely moving animals with a probe fixed in place in the manner of Okun et al., 2016. Other reasonable ideas about how to address this concern would also be acceptable.\n\n6) Some discussion of why this technology would be useful even if probes were less expensive and more accessible (or how/whether the approach would be modified under such conditions) would help extend the impact of this paper, assuming that limitations of the neuropixels purchasing scheme will be alleviated in the future.\n",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "22ae9ea4-ee90-4c39-9d5a-7da7aa879987",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C1",
+      "claim": "Neuropixels probes enable researchers to simultaneously record hundreds of neurons with remarkably high signal to noise.",
+      "claim_type": "EXPLICIT",
+      "source": "The advent of high-yield electrophysiology using Neuropixels probes is now enabling researchers to simultaneously record hundreds of neurons with remarkably high signal to noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established capability of Neuropixels probes in the abstract, drawing on general knowledge about the technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "6c8710ec-f180-4c41-837a-0c0af772cc48",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C2",
+      "claim": "Neuropixels probes have not been well-suited to use in freely moving mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these probes have not been well-suited to use in freely moving mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation in the abstract, based on the authors' assessment of existing technology.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "d55afb05-cd02-4877-aa17-2a8b7aa41afc",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C3",
+      "claim": "The AMIE device allows Neuropixels probes to be customized for chronically implanted experiments in freely moving mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed and implemented a novel device that allows Neuropixels probes to be customized for chronically implanted experiments in freely moving mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim of the paper, supported by the experimental data and methods described throughout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "2a20489a-42a6-4fb0-9d7e-7d72d0945b1e",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C4",
+      "claim": "The AMIE approach enables recording hundreds of neurons during ethological behavior across weeks of experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate the ease and utility of this approach in recording hundreds of neurons during an ethological behavior across weeks of experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "c6858503-df2f-4e3a-ad76-08e50e457a5f",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C5",
+      "claim": "The AMIE approach enables researchers to explant and reuse Neuropixels probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our approach enables researchers to explant and reuse these valuable probes, a transformative step which has not been established for recordings with any type of chronically-implanted probe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "5f7f65cf-ee82-4ca4-95e7-dddc973455a1",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C6",
+      "claim": "Place and grid cell dynamics have been observed using electrophysiology in freely moving rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiology in freely moving rodents has been used to observe place and grid cell dynamics (Hafting et al., 2005; O'Keefe and Dostrovsky, 1971)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "36808acb-e983-4585-937a-b159f1cec20c",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C7",
+      "claim": "Cortical dynamics during attentional control have been observed using electrophysiology in freely moving rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiology in freely moving rodents has been used to observe place and grid cell dynamics (Hafting et al., 2005; O'Keefe and Dostrovsky, 1971), cortical dynamics during attentional control (Bolkan et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "f27b3a50-6c0e-4b56-b09d-6d3deab18d2b",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C8",
+      "claim": "The role of oscillations during fear learning has been observed using electrophysiology in freely moving rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "the role of oscillations during fear learning (Stujenske et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "7b6da7fb-a54c-456d-b1ae-876efd4c6c4b",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C9",
+      "claim": "Whisking behavior during exploration has been observed using electrophysiology in freely moving rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "whisking behavior during exploration (Kerekes et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "77ad87ae-e80d-4bbf-b3f9-6e6babe31c7e",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C10",
+      "claim": "The effect of environmental context on neural activity has been observed using electrophysiology in freely moving rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "the effect of environmental context on neural activity (Whitlock et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "d9282c5f-88e2-449f-8d4f-b627618d8711",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C11",
+      "claim": "The control of sensory selection in divided attention has been observed using electrophysiology in freely moving rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "the control of sensory selection in divided attention (Wimmer et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "07b60247-e558-4981-aa4e-b621dd4993d3",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C12",
+      "claim": "Recording from unrestrained mice enables researchers to investigate behaviors that involve natural movements.",
+      "claim_type": "EXPLICIT",
+      "source": "recording from unrestrained mice enables researchers to investigate behaviors that involve natural movements and offers ethologically valid insight into neural activity (Juavinett et al., 2018; Markowitz et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "c6615b4f-e458-40e6-a98f-d7cef09856d4",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C13",
+      "claim": "Electrophysiology in freely moving animals is commonly performed with static electrode arrays or microdrives.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiology in freely moving animals is commonly performed with static electrode arrays or microdrives (Okun et al., 2016; Vandecasteele et al., 2012; Voigts et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "d6b3484e-d48d-4d7a-a4b4-fade30a294a5",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C14",
+      "claim": "Static electrode arrays and microdrives are not at pace with the spatiotemporal coverage of Neuropixels probes.",
+      "claim_type": "EXPLICIT",
+      "source": "These techniques have contributed much to the field, but are not at pace with the spatiotemporal coverage of cutting edge recording techniques, such as Neuropixels probes (Jun et al., 2017; Steinmetz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with cited work on Neuropixels.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "771bdecf-d452-472a-942f-0bda2cd83af5",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C15",
+      "claim": "The Neuropixels linear recording shank can record from 384 contacts across 3.84 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear recording shank can record from 384 contacts across 3.84 mm (selectable from 960 available sites on a 10 mm length shank).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the Neuropixels probe, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "58aa9188-ca8d-4a32-bd80-54878dab7cc2",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C16",
+      "claim": "The mouse brain is at most 6 mm deep.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mouse brain, which is at most 6 mm deep, this span of contacts means researchers can simultaneously record from more than half of the depth of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is anatomical knowledge about mouse brain dimensions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "a14361bd-b4ac-4cc6-937d-9317bcf2e78f",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C17",
+      "claim": "Neuropixels probes can record from more than half of the depth of the mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mouse brain, which is at most 6 mm deep, this span of contacts means researchers can simultaneously record from more than half of the depth of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the probe specifications and brain dimensions.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "0c34cdd9-925a-4c04-819c-bac31c8d7be4",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C18",
+      "claim": "Neuropixels probes have low baseline noise levels (<6 \u00b5V RMS).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, Neuropixels probes have low baseline noise levels (<6 \u00b5V RMS), comparable to other silicon probes (Steinmetz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "e19dee18-bf7f-4efe-91a0-e9e4b4516155",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C19",
+      "claim": "Neuropixels probes have on-site amplification and digitization.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Neuropixels probes also have on-site amplification and digitization, thereby enabling simultaneous recording of hundreds of cells across brain regions in an unprecedented low-noise, high-throughput manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical feature of Neuropixels probes, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "4ddd6c49-3ad8-43c5-b607-eaf3d9387e85",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C20",
+      "claim": "Methods have been developed to automatically sort spikes from Neuropixels recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, methods have also been developed to automatically sort spikes from these recordings, and even correct for probe drift (Jaeyoon et al., 2017; Pachitariu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "a86120e4-0ad2-4b8f-ad03-4ec18a221efe",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C21",
+      "claim": "Neuropixels probes have proved invaluable for neuroscientists conducting acute experiments in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropixels probes have already proved invaluable for neuroscientists conducting acute experiments in mice, or chronic experiments in freely moving rats (Jaeyoon et al., 2017; Krupic et al., 2018; V\u00e9lez-Fort et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "d6ad301b-0139-4ad3-acd8-d9c8062fe620",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C22",
+      "claim": "Neuropixels probes have proved invaluable for chronic experiments in freely moving rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropixels probes have already proved invaluable for neuroscientists conducting acute experiments in mice, or chronic experiments in freely moving rats (Jaeyoon et al., 2017; Krupic et al., 2018; V\u00e9lez-Fort et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "5a3d1618-1b0a-4532-b54d-2ec05f8ddf8b",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C23",
+      "claim": "There is limited work with Neuropixels probes in unrestrained mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is limited work with these probes in unrestrained mice (Evans et al., 2018), likely because of the difficulty designing small, lightweight recording devices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the literature with one citation and inference about the reason.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "113ca5c6-5b25-4abd-b0df-77464a58055e",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C24",
+      "claim": "There is plentiful interest in behaviors and computations that involve movements of the animal's head in space.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, there is plentiful interest in behaviors and computations that involve movements of the animal's head in space (V\u00e9lez-Fort et al., 2018), foraging (Lottem et al., 2018), pup retrieval (Marlin et al., 2015), or naturalistic fear responses (Evans et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "e9d9a80c-26b4-4253-bde8-a70499d93c5d",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C25",
+      "claim": "There is not an established method to recover Neuropixels probes after experiments in freely moving rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, although these probes have been very successful in freely moving rats (Jaeyoon et al., 2017; Krupic et al., 2018), there is not an established method to recover them after the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the state of the field based on the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "d31d90b9-aa71-4475-8f3d-65b09192f07b",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C26",
+      "claim": "Neuropixels probes cost $1000 each.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the cost ($1000 each, https://www.neuropixels.org/) and limited availability of the probes, many researchers will only be able to use them if it is possible to recycle them after experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information about the cost of the probes from the cited source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "4954bfad-8427-4e6f-9852-54b547880695",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C27",
+      "claim": "The ability to recover Neuropixels probes would enable researchers to repeat their experiments in different animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to recover these probes would enable researchers to repeat their experiments in different animals, boost the statistical power of their experimental findings, and thus enhance reproducibility of experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the benefits of probe recovery.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "756b678f-1bcc-4c11-a1ac-06f91e87c645",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C28",
+      "claim": "The current design of the Neuropixels probe has several components that need to be securely mounted onto the small mouse skull.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the current design of the probe has several components that need to be securely mounted onto the small mouse skull.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the technical challenges of the probe design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "88946adb-0700-4909-ab9e-9172db753444",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C29",
+      "claim": "The sensitive onboard electronics of Neuropixels probes need to be protected while the mouse is in its home cage.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, these sensitive onboard electronics need to be protected while the mouse is in its home cage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical consideration for chronic implants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "c26d0bbc-144b-475d-90e2-a44ea06947c0",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C30",
+      "claim": "The shank of the Neuropixels probe must be secured to ensure consistent recordings across weeks of recording.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, the shank of the probe must be secured to ensure consistent recordings across weeks of recording.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical requirement for chronic recordings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "4a855fc2-442d-4c2a-a142-901b2e855cfe",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C31",
+      "claim": "Previous work required permanently mounting the biosensor using adhesive, which made it nearly impossible to remove the probe afterwards.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous work, this required permanently mounting the biosensor using adhesive, which was effective but made it nearly impossible to remove the probe afterwards (Okun et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "be73a663-72a2-4054-8533-5d4ae71fa9c4",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C32",
+      "claim": "The AMIE device weighs ~1.5 g (with cement: ~2.0 g).",
+      "claim_type": "EXPLICIT",
+      "source": "The entire AMIE device weighs ~1.5 g (with cement:~2.0 g) and is assembled from three parts: the Neuropixels probe, the internal mount (IM), and external casing (EC) (Figure 1A,B; Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement reported by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "530b8068-16e8-424e-9d38-01e986d85d9a",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C33",
+      "claim": "The AMIE device is assembled from three parts: the Neuropixels probe, the internal mount (IM), and external casing (EC).",
+      "claim_type": "EXPLICIT",
+      "source": "The entire AMIE device weighs ~1.5 g (with cement:~2.0 g) and is assembled from three parts: the Neuropixels probe, the internal mount (IM), and external casing (EC) (Figure 1A,B; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the device design shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "c9df1879-b852-4bd2-82b3-30ddbb174b92",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C34",
+      "claim": "The internal mount attaches directly to the Neuropixels PCB board with adhesive.",
+      "claim_type": "EXPLICIT",
+      "source": "The IM attaches directly to the Neuropixels PCB board with adhesive and is the core of the assembly (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the assembly method shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "b8aa9d6e-3de6-4408-9664-085bd27e07f7",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C35",
+      "claim": "The internal mount attaches to the external casing via a rail system.",
+      "claim_type": "EXPLICIT",
+      "source": "The IM attaches to the EC via a rail system (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the device design shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "bbbf687a-9c70-499b-950a-ff373f4bbd61",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C36",
+      "claim": "During the implantation procedure, all adhesive binding the assembly to the rodent's skull exclusively contacts the external casing.",
+      "claim_type": "EXPLICIT",
+      "source": "During the implantation procedure, all adhesive binding the assembly to the rodent's skull exclusively contacts the EC, which acts as a protective shell (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the implantation procedure shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "507396e9-d9ae-42e4-871b-326d2afbe95e",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C37",
+      "claim": "The Neuropixels probe has a ~3 cm long flex cable attached to a 1 g headstage.",
+      "claim_type": "EXPLICIT",
+      "source": "One difficulty in adapting the current Neuropixels design for freely moving experiments in mice is the ~3 cm long flex cable attached to a 1 g headstage (see Jaeyoon et al., 2017) for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the Neuropixels probe supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "368a38ed-66b6-44c5-baae-f3c2d476ed14",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C38",
+      "claim": "In early testing, suspending the flex and headstage above the mouse's head caused the flex to twist quickly.",
+      "claim_type": "EXPLICIT",
+      "source": "In early testing, we suspended the flex and headstage above the mouse's head during recording. However, we found that the flex very quickly twisted, potentially damaging it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the authors' preliminary experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "5170e17b-43d5-455e-b4f1-4f84341272db",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C39",
+      "claim": "The AMIE encasing has a space for the headstage to be semi-permanently affixed.",
+      "claim_type": "EXPLICIT",
+      "source": "With these observations in mind, we designed the encasing with a space for the headstage to be semi-permanently affixed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the design solution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "567ad736-6015-47b3-9779-8edbf64cac96",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C40",
+      "claim": "The probe flex wraps in an 'S' shape behind the implant.",
+      "claim_type": "EXPLICIT",
+      "source": "The probe flex wraps in an 'S' shape behind the implant, and attaches to the bottom (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the design shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "08052824-8751-475c-a8e2-0a8b1cee4023",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C41",
+      "claim": "The surgery to implant the probe and encasing typically takes ~3 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The surgery to implant the probe and encasing typically takes ~3 hr (see Materials and methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reported duration from the authors' experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "d50f8ba8-d6da-40b1-bf8a-dca3539a427c",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C42",
+      "claim": "A headbar can be implanted during surgery without interfering with the encasing.",
+      "claim_type": "EXPLICIT",
+      "source": "During this surgery, a headbar can also be implanted, which does not interfere with the encasing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the surgical procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "db23c4a8-aa42-4271-8434-8d37301cdd92",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C43",
+      "claim": "The external casing is the only part of the assembly that is attached to the skull.",
+      "claim_type": "EXPLICIT",
+      "source": "The external casing is the only part of the assembly that is attached to the skull (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the implantation method shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "cba0baa3-e9d1-4e5a-a036-af3f8c46485e",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C44",
+      "claim": "Mice were mobile with the Neuropixels AMIE by approximately 48 hr post-surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "By approximately 48 hr post-surgery, mice were mobile with the Neuropixels AMIE (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the authors' experiments shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "818ac380-a950-495f-abc2-291c42a9ec46",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C45",
+      "claim": "Implanted mice were typically agile and active even while tethered.",
+      "claim_type": "EXPLICIT",
+      "source": "Even while tethered, implanted mice were typically agile and active (Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the authors' experiments shown in Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "819c3d02-1d95-4c33-b473-788b935c3815",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C46",
+      "claim": "Considerable overlap was apparent in the distribution of behavioral metrics for implanted and naive mice.",
+      "claim_type": "EXPLICIT",
+      "source": "For all three metrics, considerable overlap was apparent in the distribution of values for implanted and naive mice (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "8a56c361-afcc-4982-a7fd-41c718a463fb",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C47",
+      "claim": "Implanted mice moved slightly less and were slightly slower than naive mice, but the differences failed to reach significance.",
+      "claim_type": "EXPLICIT",
+      "source": "Although implanted mice moved slightly less and were slightly slower, the differences failed to reach significance for any metric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the behavioral analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "eb3e7cf6-01aa-4bf3-8084-12debe61f628",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C48",
+      "claim": "The mouse with the highest max acceleration was implanted.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the mouse with the highest max acceleration was implanted (Figure 3D, middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "6b47fff2-2103-4ab9-8ba9-2e04587f0832",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C49",
+      "claim": "Overhead visual looming stimuli are known to elicit strong escape responses in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine stimulus driven behavior, we measured responses to overhead visual looming stimuli (Figure 3E), which are known to elicit strong escape responses in mice (De Franceschi et al., 2016; Evans et al., 2018; Yilmaz and Meister, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "032d89cc-a9e8-4bd3-85df-c65153fe7e59",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C50",
+      "claim": "The distribution of values for escape response metrics overlapped considerably for na\u00efve vs. implanted mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of values for the metrics tested (mean/max velocity and max acceleration) again overlapped considerably for na\u00efve vs. implanted mice (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "f992a9cc-1773-4115-a932-c575cd0b5031",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C51",
+      "claim": "A few naive mice achieved max acceleration during escapes at values unobserved in implanted mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we observed no significant changes, a few naive mice achieved max acceleration during their escapes at values unobserved in implanted mice (Figure 3E, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "108f95bd-1d2b-4bec-a37e-02dfe32efabf",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C52",
+      "claim": "Implanted mice remained active in an open arena and showed species-typical responses to threatening stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these behavioral observations argue that although the presence of the AMIE may have idiosyncratically slowed mice slightly, they remained active in an open arena and showed species-typical responses to threatening stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "bc1ab6ec-b87f-4aff-bda5-fc5228fa1dbf",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C53",
+      "claim": "The authors isolated ~60\u2013100 units for each session in an experiment with the probe implanted in medial visual cortex, subiculum, and midbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "We isolated ~60\u2013100 units for each session in this experiment (Figure 4D,E), during which the mouse moved freely around the arena and was exposed to looming stimuli.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a report of the number of units isolated, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "988d236a-4287-491e-8bdf-1b2fb8404d53",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C54",
+      "claim": "The number of single units isolated ranged across mice and experiments from ~20 to 145.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of single units we were able to isolate ranged across mice and experiments from ~20 to 145, but these numbers were fairly consistent within each mouse across recording sessions (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a report of the range of units isolated, shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "e3f23ba3-bbe4-4cbf-9fc0-03f83d29bcf8",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C55",
+      "claim": "The variability in number of isolated units is likely dependent on the probe used, recording noise, and brain region.",
+      "claim_type": "EXPLICIT",
+      "source": "This variability is likely dependent on the probe that was used (Phase 3A Option four probes used in mouse #3 and #4 had 270 rather than 374 recordable channels; see Materials and methods and Jun et al., 2017), recording noise, and brain region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the factors affecting unit yield.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "66a0542b-77e6-4135-8306-2c4107a21d78",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C56",
+      "claim": "The absolute number of isolated units depends on the quality of the sorting and the experimenter's manual curation of Kilosort output.",
+      "claim_type": "EXPLICIT",
+      "source": "The absolute number of isolated units depends on the quality of the sorting and the experimenter's manual curation of Kilosort output, which does present challenging edge cases and can be difficult to assess with drift in the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of methodological factors affecting unit counts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "a8039834-acf4-41c7-971b-3a1df78e9859",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C57",
+      "claim": "The unit yields reported are less than has been previously reported with acute experiments in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these numbers are less than has been previously reported with acute experiments in mice (Jun et al., 2017), possibly because of the chronic recording environment or inability to completely reduce noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with prior work supported by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "e1c61094-c800-468d-b226-1353de0c7570",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C58",
+      "claim": "The longest the authors left a probe in was 41 days, without any noticeable decay in the signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The longest we left a probe in was 41 days, without any noticeable decay in the signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of the maximum duration tested.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "660ae0d0-7346-4bfb-9b15-e414263ef53c",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C59",
+      "claim": "Waveforms were consistent in both shape and depth across recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did indeed observe waveforms that were consistent in both shape and depth across recordings, and it is entirely possible that these originate from the same neurons (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "c4e14c97-2af3-4c58-a256-27ae478ade25",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C60",
+      "claim": "Kilosort2 identified 77 well-isolated units for mouse #7, compared to 69 with Kilosort1 and manual post-Kilosort designations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, for mouse #7, Kilosort2 identified 77 well-isolated units, compared to 69 with Kilosort1 and manual post-Kilosort designations in phy, confirming that our manual criteria were effective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of sorting methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "fb4a002c-77c4-463b-814e-d694b58ac20c",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C61",
+      "claim": "The AMIE design enables researchers to implant a headbar to restrain the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "A major limitation of many chronic implant designs is that they do not enable researchers to also implant a headbar to restrain the animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the AMIE design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "cb4efab9-8d85-4783-a9da-d0a12704350f",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C62",
+      "claim": "The ability to head-fix animals allows the experimenter to easily restrain the mouse during experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to head-fix animals critical for two reasons. First, it allows the experimenter to easily restrain the mouse during experiments, for example to attach/replace the headstage or fix twisting in the tether.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical advantage of the design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "c1f2479d-026d-49cb-b802-64410730f8bf",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C63",
+      "claim": "Head-fixing affords the opportunity to measure neural activity in response to traditional psychophysical stimuli after the freely moving recording.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it affords the opportunity to measure neural activity in response to traditional psychophysical stimuli after the freely moving recording (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "a693cfe6-44c9-482c-85ca-1b805418ef49",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C64",
+      "claim": "After six days of recording freely moving behavior, the authors presented a battery of visual stimuli while the mouse was head-fixed.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, after six days of recording freely moving behavior, we presented a battery of visual stimuli while the mouse was head-fixed to determine whether cells were visually responsive (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental procedure shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "643c85ce-c759-4ca5-aaf9-e343d93753fb",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C65",
+      "claim": "The authors were able to isolate 60 units in the restrained condition, just as in the freely moving condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to isolate 60 units (63 with Kilosort2) in the restrained condition, just as in the freely moving condition (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a report of the number of units isolated, shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "45177cee-9462-4fad-9714-248a01b53bee",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C66",
+      "claim": "Cells deep in the midbrain showed clear visual responses to drifting gratings during headfixed experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, during our headfixed experiments we found that even cells deep in the midbrain showed clear visual responses to drifting gratings (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 5D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "87b01a00-c2ad-44c5-a898-b144ad76acfe",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C67",
+      "claim": "The authors were able to record from a mouse for over 2 weeks, explant the probe, and re-implant for a second experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to record from a mouse for over 2 weeks, explant the probe, and re-implant for a second experiment (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental procedure shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "77b55554-37d4-4952-84d7-1d01b4f05330",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C68",
+      "claim": "The re-implanted probe yielded 43.6 \u00b1 17.8 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, the re-implanted probe yielded 43.6 \u00b1 17.8 neurons which is ample for many studies, especially those conducted in labs for which Neuropixels probes are a scarce resource.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of the number of neurons isolated from the re-implanted probe.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "0e8f3a43-1d9c-4f74-9615-e4c761235558",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C69",
+      "claim": "In another experiment, the authors were able to explant a probe from a mouse that did not recover from surgery and reimplant it in a second mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "In another experiment, were able to explant a probe from a mouse that did not recover from surgery and reimplant it in a second mouse (see Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of an experimental outcome shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "490972b2-34b3-430c-921a-b17b78b1f97a",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C70",
+      "claim": "One successful session of recording from a re-implanted probe yielded 145 units.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this second mouse ultimately also had complications resulting from a poorly positioned ground wire, one successful session of recording yielded 145 units (Figure 4C; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a report of the number of units isolated, shown in Figure 4C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "ac87ca2d-8162-45b5-aaf9-e8338c69d48d",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C71",
+      "claim": "There was a drop in the event rate in the re-implanted probe compared to the first implant.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a drop in the event rate and a small drop in the SNR in the re-implanted probe (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the data shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "63989455-a51f-453a-901e-eb32243807f0",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C72",
+      "claim": "There was a small drop in the SNR in the re-implanted probe compared to the first implant.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a drop in the event rate and a small drop in the SNR in the re-implanted probe (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the data shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "f6fb6208-5cd9-4da2-9790-0783c9065c6c",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C73",
+      "claim": "There was a significant drop in both event rate and SNR on the 12th day of recording in the first implant.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even with the first implant there was a significant drop in both event rate and SNR on the 12th day of recording, suggesting that this may not be due to the re-implantation itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data that provides context for the re-implantation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "f7bdb161-0e31-4f72-8f96-a63185fdc35b",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C74",
+      "claim": "Applying silicone to the base of the shank to add extra support appears to be necessary for successful explant.",
+      "claim_type": "EXPLICIT",
+      "source": "First, applying silicone to the base of the shank to add extra support appears to be necessary (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the experimental outcomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "f01b4e0c-a58e-4229-83f3-6fd7d90e68f7",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C75",
+      "claim": "With silicone added to the base of the shank, 4/4 explant attempts were successful.",
+      "claim_type": "EXPLICIT",
+      "source": "With silicone added to the base of the shank, 4/4 explant attempts were successful, whereas 1/6 explants were successful without the silicone (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a report of the success rates shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "5b26f5ed-6d72-4ebe-9781-f8d82f7a1e79",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C76",
+      "claim": "Without silicone added to the base of the shank, 1/6 explants were successful.",
+      "claim_type": "EXPLICIT",
+      "source": "With silicone added to the base of the shank, 4/4 explant attempts were successful, whereas 1/6 explants were successful without the silicone (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a report of the success rates shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "0c0c0c74-7e0a-4c11-bb0a-a7515903cf4b",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C77",
+      "claim": "The authors only had success explanting Phase 3A Option three probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we only had success with Phase 3A Option three probes, suggesting that it may be easier with these, possibly due to the fact that the recording shanks on these probes are longer (10 mm) than Option 1 (5 mm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of the experimental outcomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "8acf76d0-67ad-47bb-9d18-d4171f7e400b",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C78",
+      "claim": "The shank of Phase 3B probes is 10 mm long.",
+      "claim_type": "EXPLICIT",
+      "source": "Fortunately, the shank of Phase 3B probes (now on the market) is also 10 mm long.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the Phase 3B probes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "10a44c94-1bb0-4360-8cf4-01596636ed92",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C79",
+      "claim": "The AMIE allows researchers to perform recordings in both restrained and unrestrained conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our device, the AMIE, and accompanying methods, allow researchers to perform recordings in both restrained and unrestrained conditions, and critically, to explant and reuse probes after experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the capabilities demonstrated in the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "a7f51bb8-147d-4b10-b6b7-1f4a489a9141",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C80",
+      "claim": "The AMIE allows researchers to explant and reuse probes after experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our device, the AMIE, and accompanying methods, allow researchers to perform recordings in both restrained and unrestrained conditions, and critically, to explant and reuse probes after experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the capabilities demonstrated in the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "1cd89eb3-e08c-4ec7-b64a-d77c35602ae9",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C81",
+      "claim": "The AMIE has a slim enclosure for the probe as well as the headstage that mice can easily handle.",
+      "claim_type": "EXPLICIT",
+      "source": "The AMIE has a slim enclosure for the probe as well as the headstage (Figures 1 and 2), that mice can easily handle (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the design and its validation shown in Figures 1, 2, and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "ee19cfd6-b30a-4df0-ac77-363f9c200982",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C82",
+      "claim": "The Neuropixels 3B (Neuropixels 1.0) version is the one currently commercially available.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that the Neuropixels design featured here is 3A, but the 3B (Neuropixels 1.0) version is the one currently commercially available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information about the commercially available version.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "812f2a9a-d0aa-4d8d-829b-f99d82e3c3bc",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C83",
+      "claim": "AMIE designs for both Neuropixels 3A and 3B probe generations are available in the resources for this paper.",
+      "claim_type": "EXPLICIT",
+      "source": "AMIE designs for both probe generations are available in the resources for this paper (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the availability of resources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "6e791bc6-2375-4be5-ba1e-eecd3609d6ad",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C84",
+      "claim": "The AMIE design can be readily adapted to other types of silicon probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our design can also be readily adapted to other types of silicon probes (e.g. Neuronexus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the adaptability of the design.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "44d244c6-6ec9-4ebe-886b-fa1ef98e2b2f",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C85",
+      "claim": "The current Neuropixels recording tether is not easily commutated due to heavy data demands.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other electrophysiology systems, the current Neuropixels recording tether is not easily commutated due to heavy data demands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical limitation of the Neuropixels system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "6d0b76ed-906e-4e6b-bfd6-85e2bb048200",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C86",
+      "claim": "Recording from chronically-implanted rats in large arenas with Neuropixels has not been a problem despite the non-commutated tether.",
+      "claim_type": "EXPLICIT",
+      "source": "While this has not been a problem for recording from chronically-implanted rats in large arenas (Jun et al., 2017), it can be challenging for recordings from mice in smaller arenas, requiring constant monitoring of the mouse's position and occasional intervention from the experimenter to untangle the cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with prior work supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "a8d0c7a4-b273-44e7-9bf0-391ef6572cd6",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C87",
+      "claim": "Recording from mice in smaller arenas with Neuropixels can be challenging, requiring constant monitoring and occasional intervention to untangle the cord.",
+      "claim_type": "EXPLICIT",
+      "source": "While this has not been a problem for recording from chronically-implanted rats in large arenas (Jun et al., 2017), it can be challenging for recordings from mice in smaller arenas, requiring constant monitoring of the mouse's position and occasional intervention from the experimenter to untangle the cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the authors' experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "c6bec4be-45e0-4630-96da-c483f5374ebd",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C88",
+      "claim": "In the authors' experience, an hour-long session requires stopping once or twice to unplug the cord and untangle.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experience, this is manageable, requiring the experimenter to stop an hour-long session once or twice to unplug the cord and untangle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of the authors' practical experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "3d7d4931-3d7c-4512-ac33-f397c7fd843e",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C89",
+      "claim": "The Neuropixels AMIE can be used to record in both restrained and unrestrained conditions, with similar yields in numbers of isolated units.",
+      "claim_type": "EXPLICIT",
+      "source": "The Neuropixels AMIE can be used to record in both restrained and unrestrained conditions, with similar yields in numbers of isolated units (Figures 4 and 5), although a direct comparison of yields across publications is challenging due to potential differences in spike sorting criteria across labs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the results shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "c98bff78-d89c-4fcf-b04a-03370b3c824e",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C90",
+      "claim": "The ability to restrain the mouse for passive stimulation enables researchers to obtain additional information about their recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to restrain the mouse for passive stimulation enables researchers to obtain additional information about their recordings that may ultimately aid in uncovering the function of cells and brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of the design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "9e6aa77d-94ab-4801-929a-02de14a47e0b",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C91",
+      "claim": "Male 3\u20134 month old C57/BL6 mice were used in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We used male 3\u20134 month old C57/BL6 mice (Jackson Laboratories, 000664).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "503ee1ce-5b4e-4c80-9cf0-610a0632e951",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C92",
+      "claim": "Male mice were used because they are typically larger and expected to better handle the weight of the implant.",
+      "claim_type": "EXPLICIT",
+      "source": "Male mice were used because they are typically larger, and we expected that they would better handle the weight of the implant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the choice of experimental subjects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "823ec5da-1918-4da3-8fa7-935aabd2fd5a",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C93",
+      "claim": "Mice were given medicated (carprofen) food cups 1\u20132 days prior to surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were given medicated (carprofen) food cups (MediGel CPF, Clear H20 74-05-5022) 1\u20132 days prior to surgery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the pre-surgical care.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "3a793aad-36d6-4f56-8350-593c0a602c7f",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "claim_id": "C94",
+      "claim": "DiI signals could be found in the brain even 1 month after implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to find DiI signals in the brain even 1 month after implantation (we did not test later time points).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of the histological findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8e58e7e0-48fb-4e97-bf9c-a6867ca9443e",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors designed the AMIE device, a lightweight (~1.5-2.0 g) three-part assembly (probe, internal mount, external casing) that enables chronic Neuropixels implantation in freely moving mice. The design features a rail system connecting internal and external components, with only the external casing cemented to the skull, and accommodates both the probe and headstage while allowing optional headbar implantation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C32-C36, C39-C43 collectively describe the AMIE device design with specific technical details supported by Figures 1-2. The modular assembly, weight specifications, and surgical approach are clearly documented with visual evidence, providing strong support for this methodological result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "6533cb1c-334d-425d-9cd2-877dbda5d14c",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Implanted mice were mobile by 48 hours post-surgery and showed behavioral metrics (time moving, velocity, acceleration) that overlapped considerably with naive mice during both spontaneous exploration and looming-evoked escape responses, though implanted mice were slightly slower without reaching statistical significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C52 are supported by quantitative behavioral data in Figure 3 with appropriate statistical testing (Wilcoxon Rank Sum tests, effect sizes). The authors appropriately note non-significant trends and acknowledge that some naive mice achieved higher peak accelerations, providing balanced interpretation of the behavioral impact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "7e5fe689-956c-4480-a59d-8291b048735b",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The AMIE enabled recording of 20-145 single units per session across multiple brain regions during freely moving behavior, with yields consistent within individual mice across 1-2 weeks. Unit counts were lower than acute experiments, possibly due to chronic recording conditions, and the longest implant duration was 41 days without signal decay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C60 are supported by data in Figure 4 showing unit yields across mice and days. The authors appropriately acknowledge methodological factors affecting unit counts (probe type, sorting criteria, manual curation) and provide honest comparison with prior acute work. Validation with Kilosort2 (C60) strengthens confidence in manual curation criteria.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "98ff248d-3c07-4b17-8bcd-60fc1e70a5e3",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The AMIE design enables headbar implantation for head-fixed recordings, allowing researchers to record from the same neurons during both freely moving and restrained conditions with similar unit yields (~60 units). Visual responses to drifting gratings were observed even in deep midbrain structures during head-fixed experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C66 are supported by Figure 5 demonstrating successful head-fixed recordings after freely moving sessions. The ability to bridge ethological and psychophysical paradigms is a key advantage, and the observation of visual responses in midbrain (C66) is notable, though the functional interpretation requires caution without additional controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The AMIE enables probe explantation and reuse, with successful explantation in 4/4 attempts when silicone was added to the shank base versus 1/6 without silicone. Re-implanted probes yielded 43.6\u00b117.8 neurons with reduced event rate and SNR compared to first implants, though signal degradation was also observed in first implants over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C67-C77, C80 demonstrate proof-of-concept for probe reuse (Figure 6, Table 1), but the evidence is limited by small sample size (n=4 successful explants with silicone), reduced performance in re-implants, and confounding factors (signal decay in first implants, complications in some mice). The claim of successful reuse is technically accurate but requires qualification about reduced yield and success rate. Additional experiments are needed to establish reliability and optimal conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "a0ec60fd-92e8-4c78-90c1-a1387d808c28",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Prior to this work, Neuropixels probes were not well-suited for freely moving mice due to design challenges (mounting components, protecting electronics, securing the shank), and there was no established method to recover probes after chronic experiments despite their high cost ($1000) and limited availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C23, C25-C31 establish the motivation for the work through citations and logical inference. The assessment of prior limitations is supported by C31 (citation to Okun et al. 2016) and the cost information (C26) is factual. These claims appropriately frame the problem addressed by the AMIE device.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "aa3d3df4-da79-40c3-aeb3-b6e1eac82387",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Neuropixels probe has a ~3 cm flex cable attached to a 1 g headstage, and early testing showed that suspending this above the mouse's head caused rapid twisting of the flex cable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 describe a technical challenge and preliminary observation that motivated the design solution. C37 is supported by citation (Jaeyoon et al. 2017) and C38 reports empirical observation from pilot testing. These provide clear rationale for the headstage mounting approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "0e1f0dcc-a928-4988-a569-1c200abd06e1",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Neuropixels tether cannot be easily commutated due to data demands, which is manageable for rats in large arenas but challenging for mice in smaller arenas, requiring occasional experimenter intervention (1-2 times per hour) to untangle the cord.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C88 acknowledge a practical limitation of the system with appropriate comparison to prior work (C86, citing Jun et al. 2017) and honest reporting of the authors' experience (C88). This transparent discussion of limitations strengthens the overall credibility of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "85a2d185-3805-4da3-b35f-c7a18497578d",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Neuropixels probes enable high-yield, low-noise recordings with 384 contacts across 3.84 mm (covering >half the mouse brain depth), on-site amplification/digitization, and automated spike sorting capabilities. They have proven valuable for acute experiments in mice and chronic experiments in rats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C15-C22 provide background on Neuropixels technology supported by appropriate citations (Jun et al. 2017, Steinmetz et al. 2018, Pachitariu et al. 2016). These are established facts about the technology that contextualize the current work. The technical specifications and prior applications are well-documented in the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "6aa33613-93a1-4495-9e6f-390f3f0ce557",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Electrophysiology in freely moving rodents has enabled important discoveries across multiple domains (place/grid cells, attentional control, fear learning, etc.), though traditional methods (static arrays, microdrives) lack the spatiotemporal coverage of Neuropixels. There is substantial interest in studying behaviors involving natural movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C14, C24 provide literature context supported by multiple citations. These claims appropriately establish the scientific importance of freely moving recordings and the limitations of prior methods, motivating the need for adapting Neuropixels to this application. The assessment of prior work appears accurate based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "faf88bb7-8d44-4731-aef2-607a837650f1",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Visual looming stimuli elicit strong escape responses in mice (established in prior work), and the AMIE enables recordings in both restrained and unrestrained conditions with similar unit yields, allowing researchers to obtain complementary information about neural function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C89-C90 combine established knowledge (C49, supported by citations) with summary statements about AMIE capabilities demonstrated in the paper. These claims accurately reflect the data presented in Figures 4-5 and appropriately acknowledge limitations in cross-lab comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "486b3488-81f2-42d3-9783-02424befc119",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The AMIE design is compatible with both Neuropixels 3A and 3B (1.0) probes, with design files available for both versions. The authors suggest the design can be adapted to other silicon probes (e.g., Neuronexus).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C84 provide practical information about probe compatibility and design availability. C78 is a factual specification, C79-C83 are supported by the demonstrated capabilities and stated resource availability, while C84 is appropriately framed as a suggestion rather than demonstrated fact. The availability of design files enhances reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    },
+    {
+      "id": "135331b8-eb88-451b-a68f-630d9b151fa6",
+      "content_id": "9d6cdef3-9292-4f4d-aae1-9e123fa762ca",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Male 3-4 month old C57/BL6 mice were used because they are larger and expected to better handle implant weight. Mice received carprofen-medicated food pre-surgery, and DiI signals were detectable in brain tissue up to 1 month post-implantation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C94 describe methodological details that are straightforward and well-documented. C91 and C93 are factual descriptions of methods, C92 provides reasonable justification for subject selection, and C94 reports a histological observation. These are appropriately detailed for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:38:28.995611Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d55afb05-cd02-4877-aa17-2a8b7aa41afc",
+      "result_id": "8e58e7e0-48fb-4e97-bf9c-a6867ca9443e"
+    },
+    {
+      "claim_id": "be73a663-72a2-4054-8533-5d4ae71fa9c4",
+      "result_id": "8e58e7e0-48fb-4e97-bf9c-a6867ca9443e"
+    },
+    {
+      "claim_id": "530b8068-16e8-424e-9d38-01e986d85d9a",
+      "result_id": "8e58e7e0-48fb-4e97-bf9c-a6867ca9443e"
+    },
+    {
+      "claim_id": "c9df1879-b852-4bd2-82b3-30ddbb174b92",
+      "result_id": "8e58e7e0-48fb-4e97-bf9c-a6867ca9443e"
+    },
+    {
+      "claim_id": "b8aa9d6e-3de6-4408-9664-085bd27e07f7",
+      "result_id": "8e58e7e0-48fb-4e97-bf9c-a6867ca9443e"
+    },
+    {
+      "claim_id": "bbbf687a-9c70-499b-950a-ff373f4bbd61",
+      "result_id": "8e58e7e0-48fb-4e97-bf9c-a6867ca9443e"
+    },
+    {
+      "claim_id": "5170e17b-43d5-455e-b4f1-4f84341272db",
+      "result_id": "8e58e7e0-48fb-4e97-bf9c-a6867ca9443e"
+    },
+    {
+      "claim_id": "567ad736-6015-47b3-9779-8edbf64cac96",
+      "result_id": "8e58e7e0-48fb-4e97-bf9c-a6867ca9443e"
+    },
+    {
+      "claim_id": "08052824-8751-475c-a8e2-0a8b1cee4023",
+      "result_id": "8e58e7e0-48fb-4e97-bf9c-a6867ca9443e"
+    },
+    {
+      "claim_id": "d50f8ba8-d6da-40b1-bf8a-dca3539a427c",
+      "result_id": "8e58e7e0-48fb-4e97-bf9c-a6867ca9443e"
+    },
+    {
+      "claim_id": "db23c4a8-aa42-4271-8434-8d37301cdd92",
+      "result_id": "8e58e7e0-48fb-4e97-bf9c-a6867ca9443e"
+    },
+    {
+      "claim_id": "cba0baa3-e9d1-4e5a-a036-af3f8c46485e",
+      "result_id": "6533cb1c-334d-425d-9cd2-877dbda5d14c"
+    },
+    {
+      "claim_id": "818ac380-a950-495f-abc2-291c42a9ec46",
+      "result_id": "6533cb1c-334d-425d-9cd2-877dbda5d14c"
+    },
+    {
+      "claim_id": "819c3d02-1d95-4c33-b473-788b935c3815",
+      "result_id": "6533cb1c-334d-425d-9cd2-877dbda5d14c"
+    },
+    {
+      "claim_id": "8a56c361-afcc-4982-a7fd-41c718a463fb",
+      "result_id": "6533cb1c-334d-425d-9cd2-877dbda5d14c"
+    },
+    {
+      "claim_id": "eb3e7cf6-01aa-4bf3-8084-12debe61f628",
+      "result_id": "6533cb1c-334d-425d-9cd2-877dbda5d14c"
+    },
+    {
+      "claim_id": "032d89cc-a9e8-4bd3-85df-c65153fe7e59",
+      "result_id": "6533cb1c-334d-425d-9cd2-877dbda5d14c"
+    },
+    {
+      "claim_id": "f992a9cc-1773-4115-a932-c575cd0b5031",
+      "result_id": "6533cb1c-334d-425d-9cd2-877dbda5d14c"
+    },
+    {
+      "claim_id": "108f95bd-1d2b-4bec-a37e-02dfe32efabf",
+      "result_id": "6533cb1c-334d-425d-9cd2-877dbda5d14c"
+    },
+    {
+      "claim_id": "bc1ab6ec-b87f-4aff-bda5-fc5228fa1dbf",
+      "result_id": "7e5fe689-956c-4480-a59d-8291b048735b"
+    },
+    {
+      "claim_id": "988d236a-4287-491e-8bdf-1b2fb8404d53",
+      "result_id": "7e5fe689-956c-4480-a59d-8291b048735b"
+    },
+    {
+      "claim_id": "e3f23ba3-bbe4-4cbf-9fc0-03f83d29bcf8",
+      "result_id": "7e5fe689-956c-4480-a59d-8291b048735b"
+    },
+    {
+      "claim_id": "66a0542b-77e6-4135-8306-2c4107a21d78",
+      "result_id": "7e5fe689-956c-4480-a59d-8291b048735b"
+    },
+    {
+      "claim_id": "a8039834-acf4-41c7-971b-3a1df78e9859",
+      "result_id": "7e5fe689-956c-4480-a59d-8291b048735b"
+    },
+    {
+      "claim_id": "e1c61094-c800-468d-b226-1353de0c7570",
+      "result_id": "7e5fe689-956c-4480-a59d-8291b048735b"
+    },
+    {
+      "claim_id": "660ae0d0-7346-4bfb-9b15-e414263ef53c",
+      "result_id": "7e5fe689-956c-4480-a59d-8291b048735b"
+    },
+    {
+      "claim_id": "c4e14c97-2af3-4c58-a256-27ae478ade25",
+      "result_id": "7e5fe689-956c-4480-a59d-8291b048735b"
+    },
+    {
+      "claim_id": "fb4a002c-77c4-463b-814e-d694b58ac20c",
+      "result_id": "98ff248d-3c07-4b17-8bcd-60fc1e70a5e3"
+    },
+    {
+      "claim_id": "cb4efab9-8d85-4783-a9da-d0a12704350f",
+      "result_id": "98ff248d-3c07-4b17-8bcd-60fc1e70a5e3"
+    },
+    {
+      "claim_id": "c1f2479d-026d-49cb-b802-64410730f8bf",
+      "result_id": "98ff248d-3c07-4b17-8bcd-60fc1e70a5e3"
+    },
+    {
+      "claim_id": "a693cfe6-44c9-482c-85ca-1b805418ef49",
+      "result_id": "98ff248d-3c07-4b17-8bcd-60fc1e70a5e3"
+    },
+    {
+      "claim_id": "643c85ce-c759-4ca5-aaf9-e343d93753fb",
+      "result_id": "98ff248d-3c07-4b17-8bcd-60fc1e70a5e3"
+    },
+    {
+      "claim_id": "45177cee-9462-4fad-9714-248a01b53bee",
+      "result_id": "98ff248d-3c07-4b17-8bcd-60fc1e70a5e3"
+    },
+    {
+      "claim_id": "c6858503-df2f-4e3a-ad76-08e50e457a5f",
+      "result_id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8"
+    },
+    {
+      "claim_id": "87b01a00-c2ad-44c5-a898-b144ad76acfe",
+      "result_id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8"
+    },
+    {
+      "claim_id": "77b55554-37d4-4952-84d7-1d01b4f05330",
+      "result_id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8"
+    },
+    {
+      "claim_id": "0e8f3a43-1d9c-4f74-9615-e4c761235558",
+      "result_id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8"
+    },
+    {
+      "claim_id": "490972b2-34b3-430c-921a-b17b78b1f97a",
+      "result_id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8"
+    },
+    {
+      "claim_id": "ac87ca2d-8162-45b5-aaf9-e8338c69d48d",
+      "result_id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8"
+    },
+    {
+      "claim_id": "63989455-a51f-453a-901e-eb32243807f0",
+      "result_id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8"
+    },
+    {
+      "claim_id": "f6fb6208-5cd9-4da2-9790-0783c9065c6c",
+      "result_id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8"
+    },
+    {
+      "claim_id": "f7bdb161-0e31-4f72-8f96-a63185fdc35b",
+      "result_id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8"
+    },
+    {
+      "claim_id": "f01b4e0c-a58e-4229-83f3-6fd7d90e68f7",
+      "result_id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8"
+    },
+    {
+      "claim_id": "5b26f5ed-6d72-4ebe-9781-f8d82f7a1e79",
+      "result_id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8"
+    },
+    {
+      "claim_id": "0c0c0c74-7e0a-4c11-bb0a-a7515903cf4b",
+      "result_id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8"
+    },
+    {
+      "claim_id": "a7f51bb8-147d-4b10-b6b7-1f4a489a9141",
+      "result_id": "67df8de4-e09e-4d86-a86f-b89cab40c2d8"
+    },
+    {
+      "claim_id": "6c8710ec-f180-4c41-837a-0c0af772cc48",
+      "result_id": "a0ec60fd-92e8-4c78-90c1-a1387d808c28"
+    },
+    {
+      "claim_id": "5a3d1618-1b0a-4532-b54d-2ec05f8ddf8b",
+      "result_id": "a0ec60fd-92e8-4c78-90c1-a1387d808c28"
+    },
+    {
+      "claim_id": "e9d9a80c-26b4-4253-bde8-a70499d93c5d",
+      "result_id": "a0ec60fd-92e8-4c78-90c1-a1387d808c28"
+    },
+    {
+      "claim_id": "d31d90b9-aa71-4475-8f3d-65b09192f07b",
+      "result_id": "a0ec60fd-92e8-4c78-90c1-a1387d808c28"
+    },
+    {
+      "claim_id": "4954bfad-8427-4e6f-9852-54b547880695",
+      "result_id": "a0ec60fd-92e8-4c78-90c1-a1387d808c28"
+    },
+    {
+      "claim_id": "756b678f-1bcc-4c11-a1ac-06f91e87c645",
+      "result_id": "a0ec60fd-92e8-4c78-90c1-a1387d808c28"
+    },
+    {
+      "claim_id": "88946adb-0700-4909-ab9e-9172db753444",
+      "result_id": "a0ec60fd-92e8-4c78-90c1-a1387d808c28"
+    },
+    {
+      "claim_id": "c26d0bbc-144b-475d-90e2-a44ea06947c0",
+      "result_id": "a0ec60fd-92e8-4c78-90c1-a1387d808c28"
+    },
+    {
+      "claim_id": "4a855fc2-442d-4c2a-a142-901b2e855cfe",
+      "result_id": "a0ec60fd-92e8-4c78-90c1-a1387d808c28"
+    },
+    {
+      "claim_id": "507396e9-d9ae-42e4-871b-326d2afbe95e",
+      "result_id": "aa3d3df4-da79-40c3-aeb3-b6e1eac82387"
+    },
+    {
+      "claim_id": "368a38ed-66b6-44c5-baae-f3c2d476ed14",
+      "result_id": "aa3d3df4-da79-40c3-aeb3-b6e1eac82387"
+    },
+    {
+      "claim_id": "44d244c6-6ec9-4ebe-886b-fa1ef98e2b2f",
+      "result_id": "0e1f0dcc-a928-4988-a569-1c200abd06e1"
+    },
+    {
+      "claim_id": "6d0b76ed-906e-4e6b-bfd6-85e2bb048200",
+      "result_id": "0e1f0dcc-a928-4988-a569-1c200abd06e1"
+    },
+    {
+      "claim_id": "a8d0c7a4-b273-44e7-9bf0-391ef6572cd6",
+      "result_id": "0e1f0dcc-a928-4988-a569-1c200abd06e1"
+    },
+    {
+      "claim_id": "c6bec4be-45e0-4630-96da-c483f5374ebd",
+      "result_id": "0e1f0dcc-a928-4988-a569-1c200abd06e1"
+    },
+    {
+      "claim_id": "22ae9ea4-ee90-4c39-9d5a-7da7aa879987",
+      "result_id": "85a2d185-3805-4da3-b35f-c7a18497578d"
+    },
+    {
+      "claim_id": "771bdecf-d452-472a-942f-0bda2cd83af5",
+      "result_id": "85a2d185-3805-4da3-b35f-c7a18497578d"
+    },
+    {
+      "claim_id": "58aa9188-ca8d-4a32-bd80-54878dab7cc2",
+      "result_id": "85a2d185-3805-4da3-b35f-c7a18497578d"
+    },
+    {
+      "claim_id": "a14361bd-b4ac-4cc6-937d-9317bcf2e78f",
+      "result_id": "85a2d185-3805-4da3-b35f-c7a18497578d"
+    },
+    {
+      "claim_id": "0c34cdd9-925a-4c04-819c-bac31c8d7be4",
+      "result_id": "85a2d185-3805-4da3-b35f-c7a18497578d"
+    },
+    {
+      "claim_id": "e19dee18-bf7f-4efe-91a0-e9e4b4516155",
+      "result_id": "85a2d185-3805-4da3-b35f-c7a18497578d"
+    },
+    {
+      "claim_id": "4ddd6c49-3ad8-43c5-b607-eaf3d9387e85",
+      "result_id": "85a2d185-3805-4da3-b35f-c7a18497578d"
+    },
+    {
+      "claim_id": "a86120e4-0ad2-4b8f-ad03-4ec18a221efe",
+      "result_id": "85a2d185-3805-4da3-b35f-c7a18497578d"
+    },
+    {
+      "claim_id": "d6ad301b-0139-4ad3-acd8-d9c8062fe620",
+      "result_id": "85a2d185-3805-4da3-b35f-c7a18497578d"
+    },
+    {
+      "claim_id": "5f7f65cf-ee82-4ca4-95e7-dddc973455a1",
+      "result_id": "6aa33613-93a1-4495-9e6f-390f3f0ce557"
+    },
+    {
+      "claim_id": "36808acb-e983-4585-937a-b159f1cec20c",
+      "result_id": "6aa33613-93a1-4495-9e6f-390f3f0ce557"
+    },
+    {
+      "claim_id": "f27b3a50-6c0e-4b56-b09d-6d3deab18d2b",
+      "result_id": "6aa33613-93a1-4495-9e6f-390f3f0ce557"
+    },
+    {
+      "claim_id": "7b6da7fb-a54c-456d-b1ae-876efd4c6c4b",
+      "result_id": "6aa33613-93a1-4495-9e6f-390f3f0ce557"
+    },
+    {
+      "claim_id": "77ad87ae-e80d-4bbf-b3f9-6e6babe31c7e",
+      "result_id": "6aa33613-93a1-4495-9e6f-390f3f0ce557"
+    },
+    {
+      "claim_id": "d9282c5f-88e2-449f-8d4f-b627618d8711",
+      "result_id": "6aa33613-93a1-4495-9e6f-390f3f0ce557"
+    },
+    {
+      "claim_id": "07b60247-e558-4981-aa4e-b621dd4993d3",
+      "result_id": "6aa33613-93a1-4495-9e6f-390f3f0ce557"
+    },
+    {
+      "claim_id": "c6615b4f-e458-40e6-a98f-d7cef09856d4",
+      "result_id": "6aa33613-93a1-4495-9e6f-390f3f0ce557"
+    },
+    {
+      "claim_id": "d6b3484e-d48d-4d7a-a4b4-fade30a294a5",
+      "result_id": "6aa33613-93a1-4495-9e6f-390f3f0ce557"
+    },
+    {
+      "claim_id": "113ca5c6-5b25-4abd-b0df-77464a58055e",
+      "result_id": "6aa33613-93a1-4495-9e6f-390f3f0ce557"
+    },
+    {
+      "claim_id": "6b47fff2-2103-4ab9-8ba9-2e04587f0832",
+      "result_id": "faf88bb7-8d44-4731-aef2-607a837650f1"
+    },
+    {
+      "claim_id": "3d7d4931-3d7c-4512-ac33-f397c7fd843e",
+      "result_id": "faf88bb7-8d44-4731-aef2-607a837650f1"
+    },
+    {
+      "claim_id": "c98bff78-d89c-4fcf-b04a-03370b3c824e",
+      "result_id": "faf88bb7-8d44-4731-aef2-607a837650f1"
+    },
+    {
+      "claim_id": "8acf76d0-67ad-47bb-9d18-d4171f7e400b",
+      "result_id": "486b3488-81f2-42d3-9783-02424befc119"
+    },
+    {
+      "claim_id": "10a44c94-1bb0-4360-8cf4-01596636ed92",
+      "result_id": "486b3488-81f2-42d3-9783-02424befc119"
+    },
+    {
+      "claim_id": "1cd89eb3-e08c-4ec7-b64a-d77c35602ae9",
+      "result_id": "486b3488-81f2-42d3-9783-02424befc119"
+    },
+    {
+      "claim_id": "ee19cfd6-b30a-4df0-ac77-363f9c200982",
+      "result_id": "486b3488-81f2-42d3-9783-02424befc119"
+    },
+    {
+      "claim_id": "812f2a9a-d0aa-4d8d-829b-f99d82e3c3bc",
+      "result_id": "486b3488-81f2-42d3-9783-02424befc119"
+    },
+    {
+      "claim_id": "6e791bc6-2375-4be5-ba1e-eecd3609d6ad",
+      "result_id": "486b3488-81f2-42d3-9783-02424befc119"
+    },
+    {
+      "claim_id": "9e6aa77d-94ab-4801-929a-02de14a47e0b",
+      "result_id": "135331b8-eb88-451b-a68f-630d9b151fa6"
+    },
+    {
+      "claim_id": "503ee1ce-5b4e-4c80-9cf0-610a0632e951",
+      "result_id": "135331b8-eb88-451b-a68f-630d9b151fa6"
+    },
+    {
+      "claim_id": "823ec5da-1918-4da3-8fa7-935aabd2fd5a",
+      "result_id": "135331b8-eb88-451b-a68f-630d9b151fa6"
+    },
+    {
+      "claim_id": "3a793aad-36d6-4f56-8350-593c0a602c7f",
+      "result_id": "135331b8-eb88-451b-a68f-630d9b151fa6"
+    }
+  ],
+  "comparisons": []
+}

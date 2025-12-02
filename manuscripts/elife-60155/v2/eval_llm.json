@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "LOV2GIVe is an engineered optogenetic tool consisting of the LOV2 domain from Avena sativa fused to the GBA motif from GIV. The design principle is that blue light causes the C-terminal J\u03b1-helix of LOV2 to become disordered, uncaging the GBA motif to bind and activate Gi proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C12, C13, C68, C69, and C70 collectively describe the design and rationale of LOV2GIVe. The design is based on well-established properties of LOV2 (C68, C70) and GBA motifs (C12, C69), supported by appropriate citations. The design principle (C13) is clearly illustrated in Figure 1A and is consistent with known LOV2 photochemistry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C71",
+      "C72"
+    ],
+    "result": "The initial LOV2GIV prototype had suboptimal dynamic range (~3-fold difference between lit and dark conformations). Through rational design based on structural modeling, the optimized LOV2GIVe variant 'e' was developed with greatly improved dynamic range, showing almost undetectable binding in the dark conformation while maintaining robust binding in the lit conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 and C61-C63, C65, C71-C72 describe the optimization process from LOV2GIV to LOV2GIVe. The data in Figures 1B-F support the improvement in dynamic range. The use of well-validated LOV2 mutants (C61, C62) and structural modeling (C16, C63) provide a rational basis for the optimization. The experimental data clearly demonstrate the improved performance of variant 'e'.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C64"
+    ],
+    "result": "The F1685A mutation in the GBA motif of LOV2GIVe greatly diminishes binding to G\u03b1i3, confirming that this residue is critical for G-protein interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C64 are supported by data in Figure 1\u2014figure supplement 1 and by citations to prior work establishing the importance of F1685 for G-protein binding. This serves as an important negative control validating the specificity of the LOV2GIVe-G\u03b1i3 interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "LOV2GIVe binds G\u03b1i3 with orders of magnitude higher affinity in the lit conformation compared to the dark conformation. The KD for the lit conformation is similar to that previously reported for the native GIV-G\u03b1i3 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C22 are supported by concentration-dependent binding curves in Figure 2A. The comparison to published KD values for GIV-G\u03b1i3 (C22) validates that LOV2GIVe retains the native binding affinity. The quantitative binding data demonstrate the large dynamic range between conformations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "LOV2GIVe retains the same G-protein specificity as GIV, binding robustly only to G\u03b1i1, G\u03b1i2, and G\u03b1i3 within the Gi/o family, but not to G\u03b1o or to other G\u03b1 families (Gs, Gq/11, G12/13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by binding experiments in Figure 2B showing selective binding to specific Gi family members. The comparison to published GIV specificity data validates that the fusion construct maintains the native selectivity profile. This is important for demonstrating that the LOV2 fusion does not alter the fundamental binding properties of the GBA motif.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C73"
+    ],
+    "result": "LOV2GIVe functions as a guanine nucleotide exchange factor (GEF) for G\u03b1i3 in vitro. The lit conformation, but not the dark conformation, promotes dose-dependent increases in G\u03b1i3 GTPase activity and nucleotide exchange, with activity comparable to native GIV. The F1685A mutation impairs this GEF activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 and C73 describe the GEF activity of LOV2GIVe. The steady-state GTPase assay (Figure 2C) and GTP\u03b3S binding assay (Figure 2\u2014figure supplement 1) provide complementary evidence for GEF activity. The rationale for using steady-state GTPase as a readout is well-supported by citations (C26, C27). The lack of activity in the dark conformation (C32) and with the FA mutation (C30) serve as important negative controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C52",
+      "C60",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In a humanized yeast system, membrane-targeted mLOV2GIVe (L) induces strong \u03b2-galactosidase activity (several hundred-fold over basal), comparable to GPCR activation by mating pheromone. Cytosolic LOV2GIVe shows minimal activity, indicating that membrane localization is required for efficient G-protein activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C52 describe yeast experiments shown in Figure 3A. The humanized yeast system is well-characterized (C74-C77), and the requirement for membrane targeting (C52, C60) is clearly demonstrated by comparing cytosolic and membrane-targeted constructs. The magnitude of activation is appropriately compared to published data on the native pathway (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C83"
+    ],
+    "result": "In mammalian HEK293T cells, membrane-targeted mLOV2GIVe (L) activates Gi proteins as measured by a BRET biosensor, with dose-dependent increases in BRET signal. At the highest expression level, mLOV2GIVe (L) produces activation comparable to maximal stimulation of the M4 muscarinic receptor. The F1685A mutation abolishes this activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C83 describe BRET experiments in Figure 3B and supplements. The BRET biosensor directly measures G-protein activation, providing strong evidence for cellular activity. The comparison to M4 receptor activation (C37) provides a physiologically relevant benchmark. The FA mutation control (C38) confirms specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C84"
+    ],
+    "result": "Expression of LOV2GIVe (L) in mammalian cells leads to potentiation (~2-fold) of cAMP responses to isoproterenol, consistent with prolonged Gi activation and adenylyl cyclase sensitization. This effect is not observed with the F1685A mutant or dark conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 and C84 describe cAMP measurements in Figure 3\u2014figure supplement 3. The rationale for the assay is well-supported by citations explaining the biphasic effects of Gi activation on adenylyl cyclase (C39, C40). The magnitude of potentiation is appropriately compared to published data (C42). The negative controls with FA and dark mutants (C43, C44) support specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The lit conformation of LOV2GIVe activates G-protein signaling in different cell types (yeast and mammalian cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is a summary conclusion supported by the combined evidence from yeast (Figure 3A) and mammalian cell (Figures 3B and supplements) experiments. The consistency across different experimental systems and readouts strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C85"
+    ],
+    "result": "In mammalian cells, a single blue light pulse triggers a spike of G-protein activation that decays with kinetics similar to the LOV2 lit-to-dark transition (T1/2 ~1 min). This light-induced response requires the GEF-active GBA motif, as the F1685A mutant does not respond.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, and C85 describe kinetic BRET measurements in Figure 4A. The decay kinetics match known LOV2 photocycle properties (C85), providing strong evidence that the observed response is driven by LOV2 photoactivation. The FA mutant control (C47) confirms that the response requires GEF activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In yeast, mLOV2GIVe wt enables light-dependent growth in the absence of histidine. Growth occurs only under blue light illumination and requires the wild-type photoswitchable construct, as the dark-locked mutant fails to grow under illumination while the lit-locked mutant grows regardless of light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 describe yeast spot growth assays in Figure 4B. The light-dependent growth phenotype provides clear evidence of optogenetic control. The appropriate controls with dark (C49) and lit (C50) mutants demonstrate that the response is specifically due to light-induced conformational change in the wild-type construct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "LOV2GIVe can activate G-protein signaling in cellular systems lacking sufficient retinal synthesis to support opsin-based activation, such as S. cerevisiae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by the successful demonstration of light-dependent G-protein activation in yeast (Figures 3A and 4B). The citation regarding retinal synthesis in yeast supports the rationale. This represents an important advantage over opsin-based tools.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6"
+    ],
+    "result": "Heterotrimeric G-proteins are signal transducers that mediate the action of many extracellular stimuli and therapeutic agents. GPCRs function as GEFs for G-proteins, and this signaling axis is targeted by >30% of drugs on the market.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, and C6 provide background context supported by appropriate citations. These are well-established facts in the field and provide important motivation for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C82"
+    ],
+    "result": "Metazoan opsins have been repurposed as optogenetic tools but have limitations including desensitization, retinal dependence, and difficulty in modification due to their large size and post-translational modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C82 describe limitations of existing opsin-based tools, supported by appropriate citations. This provides important context for why an alternative approach is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "LOV2 uses FMN as a chromophore, does not desensitize, is small (~17 kDa), and expresses easily as a soluble protein in different systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C11 describe advantages of LOV2 as a scaffold for optogenetic tool development. These properties are well-established in the literature (supported by citations) and provide rationale for the design choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Targeting LOV2GIVe to cell membranes allowed for light-dependent activation of Gi proteins in different experimental systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is a high-level summary of the main finding, supported by data in Figures 3 and 4 across multiple experimental systems. This represents the core conclusion of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C59"
+    ],
+    "result": "Background claims about G-protein biology and optogenetics: opioid receptors can activate Gi in different subcellular compartments but GPCR activation cannot be spatially controlled; Gi proteins mediate inhibitory neuromodulation and control diverse processes; optogenetics offers advantages over chemogenetics in temporal control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C57, and C59 provide context about the biological importance of Gi signaling and advantages of optogenetic approaches. These are supported by appropriate citations and established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "A limitation of LOV2GIVe is that it only acts on G\u03b1i-containing G-proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 acknowledges a limitation of the tool, which is directly supported by the specificity data in Figure 2B. This is an honest assessment of the tool's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Speculative future applications: LOV2GIVe could be targeted to different organelles for subcellular compartment-specific activation, used to assess pre- vs post-synaptic inhibitory modulation, applied in organisms lacking retinal synthesis, and used to investigate Gi signaling over broad temporal scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C81 are speculative statements about potential future applications. While these are reasonable extrapolations based on the demonstrated properties of LOV2GIVe, they have not been experimentally validated in this manuscript. These represent hypotheses for future work rather than established results.",
+    "result_type": "MINOR"
+  }
+]

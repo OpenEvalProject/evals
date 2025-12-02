@@ -1,0 +1,1842 @@
+{
+  "submission": {
+    "id": "4150d7e2-501f-402e-8652-d5c47a04b898",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:56:54.386706Z",
+    "updated_at": "2025-12-02T07:56:54.386706Z"
+  },
+  "content": [
+    {
+      "id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "submission_id": "4150d7e2-501f-402e-8652-d5c47a04b898",
+      "content_type": "manuscript",
+      "content_text": "# High-throughput synapse-resolving two-photon fluorescence microendoscopy for deep-brain volumetric imaging in vivo\n\n## Authors\n\n- Guanghan Meng<sup>1</sup>\n- Yajie Liang<sup>2</sup>\n- Sarah Sarsfield<sup>6</sup>\n- Wan-chen Jiang<sup>2</sup>\n- Rongwen Lu<sup>2</sup>\n- Joshua Tate Dudman<sup>2</sup> ([ORCID: 0000-0002-4436-1057](https://orcid.org/0000-0002-4436-1057))\n- Yeka Aponte<sup>3</sup> ([ORCID: 0000-0002-5967-2579](https://orcid.org/0000-0002-5967-2579))\n- Na Ji<sup>1</sup> ([ORCID: 0000-0002-5527-1663](https://orcid.org/0000-0002-5527-1663)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California Berkeley United States\n2. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States\n3. Solomon H Snyder Department of Neuroscience Johns Hopkins University School of Medicine Baltimore United States\n4. Department of Physics University of California Berkeley United States\n5. Helen Wills Neuroscience Institute University of California Berkeley United States\n6. Intramural Research Program, Neuronal Circuits and Behavior Unit National Institute on Drug Abuse, National Institutes of Health Baltimore United States\n7. Molecular Biophysics and Integrated Bioimaging Division Lawrence Berkeley National Laboratory Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOptical imaging has become a powerful tool for studying brains in vivo. The opacity of adult brains makes microendoscopy, with an optical probe such as a gradient index (GRIN) lens embedded into brain tissue to provide optical relay, the method of choice for imaging neurons and neural activity in deeply buried brain structures. Incorporating a Bessel focus scanning module into two-photon fluorescence microendoscopy, we extended the excitation focus axially and improved its lateral resolution. Scanning the Bessel focus in 2D, we imaged volumes of neurons at high-throughput while resolving fine structures such as synaptic terminals. We applied this approach to the volumetric anatomical imaging of dendritic spines and axonal boutons in the mouse hippocampus, and functional imaging of GABAergic neurons in the mouse lateral hypothalamus in vivo.\n\n## Introduction\n\nNeural circuits and neurons therein are three-dimensional (3D) structures that may extend over hundreds or thousands of microns. Understanding their operations requires monitoring their activity at synaptic and cellular resolution in 3D at image rates that capture all activity events. In brains that strongly scatter light (i.e., all known adult mammalian brains), the image depth of conventional multiphoton microscopy is limited to 1\u20132 millimeters\u00a0(Ji et al., 2016). To reach depths beyond a few millimeters, the only practical methods currently available are based on microendoscopy, in which miniature probes, such as gradient refractive index (GRIN) lenses, are embedded within the brain to relay microscopic images of the neurons below\u00a0(Jung and Schnitzer, 2003; Jung et al., 2004; Levene et al., 2004). Such systems have been used for fluorescence activity imaging of neurons expressing genetically encoded calcium indicators in a variety of deep nuclei in the mouse brain\u00a0(Ghosh et al., 2011; Li et al., 2017; Ziv et al., 2013; Bocarsly et al., 2015; Jennings et al., 2015; Kitamura et al., 2015; Pinto and Dan, 2015; Harrison et al., 2016; Okuyama et al., 2016; Kamigaki and Dan, 2017; Kitamura et al., 2017; McHenry et al., 2017; Roy et al., 2017); however, the spatial resolution has been limited to the cellular level and synaptic structures such as dendritic spines or axonal boutons were not resolved in these studies.\n\nIn addition to its limited spatial resolution, compared to imaging superficial brain regions with a conventional microscope, experiments involving microendoscopy imaging of deep structures face additional challenges. First, surgeries to remove brain tissue and embed endoscope probes typically have lower success rates compared to conventional craniotomies in which no brain tissue is removed. Second, many microendoscopy experiments involve behaviors or brain states with large variability that either cannot be evoked with high fidelity over repeated trials or exhibit short-term adaptation. Finally, research interests are often centered on specific cell types (e.g., inhibitory subtypes\u00a0[Pinto and Dan, 2015] or cholinergic neurons\u00a0[Harrison et al., 2016]) that are usually sparsely distributed in 3D. All these factors limit the yield of experiments using conventional two-photon microendoscopes in which neurons are imaged one cellular layer at a time. For these reasons, a volumetric microendoscopic imaging method, which can simultaneously probe the activity of neural ensembles in 3D while maintaining synapse-resolving spatial resolution, would be greatly beneficial for interrogating neural circuit functions at depth but has yet to be demonstrated for in vivo volumetric imaging of deep brain structures.\n\nIn contrast to the paucity of high-throughput, high-resolution volumetric imaging solutions for microendoscopy, a suite of methods has been developed to image superficial structures at high speed with conventional microscopy\u00a0(Ji et al., 2016). Recently, we developed a Bessel focus scanning method that, when combined with two-photon fluorescence microscopy\u00a0(Denk et al., 1990), enabled fast volumetric imaging with synaptic resolution\u00a0(Lu et al., 2017) in vivo. By scanning an axially extended focus in two dimensions (2D), we obtained projection images of 3D volumes that increased imaging throughput and reduced data size by 10-to-100-fold. The elongation of the focus in the axial direction also makes imaging resistant to axial motion artifacts, making it ideally suited to the study of neural circuit functions in awake, behaving animals. Here, we showed that high-throughput, high-resolution volumetric imaging of neurons and neural activity in deeply buried nuclei is achievable by combining Bessel focus scanning with microendoscopy. We systematically evaluated and identified commercially available GRIN lenses through which high-quality Bessel foci can be generated. We demonstrated in brain slices ex vivo and in the mouse brain in vivo that volumetric imaging can be achieved with microendoscopy while maintaining synapse-resolving resolution for anatomical and functional imaging of neurons at depth.\n\n## Results\n\n### A two-photon excitation fluorescence microendoscopy system with Bessel focus scanning\n\nThe schematics of a two-photon excitation fluorescence microendoscopy system with a Bessel focus scanning module is shown in Figure 1A (see Materials\u00a0and\u00a0methods). Based on a standard two-photon excitation fluorescence microscope equipped with a pair of galvo scanners, the endoscopy part of the microscope was realized by having a GRIN lens relay the focus of a conventional microscope objective from the image side to the sample side (Figure 1B). Due to the small size of the mouse brain, we only considered GRIN lenses with 0.5 mm or 1 mm diameters and a numerical aperture (NA) of 0.5. For each diameter, the GRIN lens is either a singlet with NA\u00a0=\u00a00.5 on both sides or a doublet with an object NA of 0.5 and an image NA of 0.2 or 0.1 (Figure 1C). With part of the GRIN lens assembly having a lower NA, doublet GRIN lenses have lower intrinsic aberrations than singlets of similar lengths. A 0.45 NA microscope objective was used in conjunction with 0.5-NA singlet GRIN lenses, whereas a 0.2 NA objective was used with doublet GRIN lenses to match their NA on the image side.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40805/elife-40805-fig1-v3.jpg)\n\n**Figure 1.:** (A) A Bessel focus scanning module (blue rectangle) made of a spatial light modulator (SLM), a lens (L1), and an annular mask is incorporated into a two-photon fluorescence microendoscopy system. L2-L5: lenses for optical conjugation; M1, M2: turning mirrors; Galvos: x and y galvanometers; Obj: microscope objective; FM1, FM2: flip mirrors to switch between Gaussian (yellow) and Bessel (red) beam paths. (B) Enlarged view of a GRIN lens relaying the focus of the objective into a focus inside the brain. Image WD: image working distance, distance between the objective focus and the top surface of GRIN lens; Sample WD: sample working distance, distance between the bottom of the GRIN lens and the sample structure in focus. (C) Two singlet and two doublet GRIN lenses selected for further characterization. (D) To image a volume requires multiple 2D scans of a Gaussian focus but a single 2D scan with a Bessel focus.\n\nThe Bessel focus scanning module (blue rectangle, Figure 1A) was described in detail previously\u00a0(Lu et al., 2017). Briefly, a liquid crystal spatial light modulator (SLM) was used to impart specific phase patterns onto the excitation light. As a result, after passing through lenses and being spatially filtered by an annular mask, the excitation light formed a ring-like pattern at the back focal plane of the microscope objective, which in turn generated an axially-elongated, Bessel-like focus in the focal region. A pair of flip mirrors allowed an easy switch from the Bessel imaging mode back to the conventional illumination scheme with a Gaussian beam profile at the back focal plane and a more axially restricted focus (referred to as the Gaussian mode hereafter). In the Gaussian mode,, multiple planes were scanned to acquire anatomical or functional information from a brain volume; whereas in the Bessel mode, volumetric information was obtained via a single 2D scan (Figure 1D). The resulting fluorescence was collected by a photomultiplier tube following the detection scheme of standard two-photon excitation microscopy.\n\n### Characterization and identification of GRIN lenses with optimal imaging performance\n\nGRIN lenses have intrinsic aberrations\u00a0(Lee and Yun, 2011; Bortoletto et al., 2011), which limit the resolution and field of view (FOV) of microendoscopy under the conventional Gaussian mode\u00a0(Wang and Ji, 2013; Wang and Ji, 2012). To generate Gaussian and Bessel foci of the highest quality, GRIN lenses with minimal aberrations are required. However, a systematic evaluation of the imaging performance of commercially available GRIN lenses had not been undertaken. We therefore characterized GRIN lenses commonly used for in vivo brain imaging to identify GRIN lenses with optimal imaging performance for both Gaussian and Bessel modes.\n\nTo evaluate the imaging qualities of GRIN lenses, 2-\u00b5m-diameter fluorescent beads were fixed on a coverslip and immersed in water below each GRIN lens. With the distance between the microscope objective and the GRIN lens fixed, we moved the bead sample axially until the beads were in focus. The distance between the microscope objective focus and the GRIN lens top surface was defined as image working distance (WD), while the distance between the bottom surface of the GRIN lens and the bead sample was measured and defined as the sample WD (Figure 1B). Such measurements informed on the axial focal shifts inside the brain while the brain and the implanted GRIN lens were moved together axially during in vivo imaging experiments. At each sample/image WD, we measured the axial full width at half maximum (FWHM) of the 2 \u00b5m beads at the center of the FOV, and this measurement served as an indicator of spatial resolution. The optimal GRIN lens should have small axial FWHM, or equivalently, high resolution over a large FOV (with the edges of the FOV defined as where fluorescence signal from 2-\u00b5m-diameter beads dropped to 10% of the signal at the FOV center).\n\nOf the ten GRIN lenses tested (Figure 2), three were found to have the best axial FWHM \u2013 FOV combinations (green rectangles, Figure 2): a 1-mm-diameter, 8.1-mm-long doublet GRIN lens with 370-\u00b5m-diameter FOV (\u20181 mm doublet\u2019, GRIN No. 4); a 0.5-mm-diameter, 9.9-mm-long doublet GRIN lens with 220-\u00b5m-diameter FOV (\u20180.5 mm doublet\u2019, GRIN No. 5); and a 1-mm-diameter, 4.4-mm-long singlet GRIN lens with 510-\u00b5m-diameter FOV (\u20181 mm singlet\u2019, GRIN No. 6). For all three GRIN lenses, the axial FWHMs were below 15 \u00b5m over most of the sample/image WDs, substantially less than the other GRIN lenses tested (but still larger than the diffraction-limited value at 0.5 NA, 6.3 \u00b5m, indicating the existence of intrinsic aberrations). In addition to these best performing lenses, we chose an additional GRIN lens for further characterization, a 0.5-mm-diameter, 7.1-mm-long singlet GRIN lens with 310-\u00b5m-diameter FOV and an axial FWHM between 18 \u00b5m and 32 \u00b5m (\u20180.5 mm singlet\u2019, red rectangle, Figure 2, GRIN No. 10). Even though it had larger aberrations, this GRIN lens had the lowest cost of all GRIN lenses tested and the largest FOV for 0.5-mm-diameter GRIN lenses. These four GRIN lenses (Figure 1C) were selected for further experiments.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40805/elife-40805-fig2-v3.jpg)\n\n**Figure 2.:** (A) Factory information and field of view (FOV) sizes of ten GRIN lenses. (B) Maximal intensity projections of 3D image stacks of 2-\u00b5m-diameter fluorescent beads obtained under conventional Gaussian focus scanning mode (3D stack was required due to field curvature). Scale bar: 100 \u00b5m. (C) Top panel: the axial full width at half maximum (FWHM) of 2-\u00b5m-diameter beads at different image working distance (WD). Bottom panel: measured (black dot) relationship between image WD and sample WD, with k being the slope of a linear fit (blue line).\n\nApplying different binary phase patterns to the SLM in the Bessel module\u00a0(Lu et al., 2017), we generated axially extended foci of varying NAs and discovered that Bessel foci of 0.3 NA had the best performance, yielding higher quality images of fluorescent beads both in the center and towards the edges of the FOV (Figure 3). By changing the incident beam size onto the SLM, the axial FWHM of the Bessel focus could be easily adjusted from 40 \u03bcm to 120 \u03bcm. Furthermore, we found 0.3-NA Bessel foci to have higher lateral resolution than 0.5-NA Gaussian foci\u00a0(Welford, 1960; Sheppard and Wilson, 1979) at the center of the FOV, as indicated by the lateral point spread functions measured from 0.2-\u00b5m-diameter fluorescent beads (Figure 4) as well as superior performance when imaging 2-\u00b5m-diameter fluorescent beads away from the FOV center (Figure 5).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40805/elife-40805-fig3-v3.jpg)\n\n**Figure 3.:** (A,B) Images of 2-\u03bcm-diameter fluorescent beads obtained with Bessel foci of 0.3 NA, 51 \u00b5m axial FWHM and 0.4 NA, 45 \u00b5m axial FWHM, respectively. Insets show enlarged views of beads at FOV center (green squares). (C,D) Enlarged views of beads away from the FOV center (cyan squares in A and B). Scale bar: 20 \u00b5m.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40805/elife-40805-fig4-v3.jpg)\n\n**Figure 4.:** (A,B) Lateral point spread functions (PSFs) of 0.3-NA Bessel foci (axial FWHM: 57 \u00b5m) and 0.5-NA Gaussian foci measured with 0.2-\u00b5m-diameter fluorescent beads through 1 mm and 0.5 mm doublets, respectively, at 0 \u00b5m image WD. PSFs along x and y directions were fitted with a normalized Gaussian function. (C,D) Bessel foci have narrower lateral PSFs than Gaussian foci across the full range of image WDs tested (\u22121000 \u00b5m to 1000 \u00b5m) for 1 mm and 0.5 mm doublets. FWHMs: mean\u00a0\u00b1standard errors of 6\u201311 measurements. Sample size depends on the number of isolated beads in the acquired images. P values: non-paired t-tests.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40805/elife-40805-fig5-v3.jpg)\n\n**Figure 5.:** (A) Through a 1-mm-diameter singlet GRIN lens, Bessel focus scanning has a larger FOV and resolves 2-\u00b5m-diameter beads at the central FOV. (B) Through a 0.5-mm-diameter doublet GRIN lens, Bessel focus scanning has similar FOV to Gaussian focus scanning and resolves 2-\u00b5m-diameter beads at the central FOV. Insets: zoomed-in views of beads at FOV centers (green squares) indicate that Bessel foci have higher lateral resolution than Gaussian foci. Scale bar: 60 \u00b5m in (A); 20 \u00b5m in (B).\n\nFor all four GRIN lenses selected for further characterization, Bessel foci consistently resolved 2-\u00b5m-diameter beads at the center of their FOV (Figure 5, Figure 6). Their FOV sizes, when compared to those of Gaussian foci, varied among different GRIN lenses. For the three GRIN lenses of good quality, the image FOVs obtained with Bessel foci were larger than (1 mm doublet, Figure 6A; 1 mm singlet, Figure 5A) or equivalent to (0.5 mm doublet, Figure 5B) those of Gaussian foci. For example, the 1 mm doublet had a 390-\u00b5m-diameter FOV for a Bessel focus of 53 \u00b5m axial FWHM, which was larger than the 370 \u00b5m FOV of the Gaussian focus (Figure 6A,B,C). In contrast, for the 0.5 mm singlet with poorer imaging performance, a Bessel focus of similar axial length had its FOV slightly reduced when compared to that of the Gaussian focus (Figure 6D,E,F).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/40805/elife-40805-fig6-v3.jpg)\n\n**Figure 6.:** (A) Images of 2-\u00b5m-diameter fluorescent beads obtained with a 0.5-NA Gaussian and a 0.3-NA Bessel focus, respectively, through a 1-mm-diameter doublet GRIN lens. Insets: zoomed-in views of beads at the FOV center (green square). (B) Axial intensity profiles of the Gaussian and Bessel foci used in (A). (C) Signal variation across FOVs in (A); horizontal orange line indicates 10% of signal at the center, thus the border of the FOV. (D\u2013F) Same measurements as (A\u2013C), but for a 0.5-mm-diameter singlet GRIN lens of inferior imaging quality. (G, H) Gaussian image stacks of beads (upper panel) at FOV center (cyan square in A and D) and (lower panel) away from FOV center (purple square in A and D, 82 \u00b5m and 89 \u00b5m from center), respectively. Scale bars: 20 \u00b5m in (A, D), 2 \u00b5m in (G, H).\n\nFurthermore, within the FOV for both Gaussian and Bessel foci, the GRIN lenses of higher quality (Figure 5, Figure 6A) provided more uniform excitation efficiency than the GRIN lens with lower imaging quality (0.5 mm singlet, Figure 6D), as indicated by the variation of 2-\u00b5m-diameter bead signal across the FOV (cf., Figure 6C and Figure 6F). This rapid decrease of bead signal from the center in the 0.5 mm singlet GRIN lens (Figure 6F) was caused by its larger off-axis optical aberration, as demonstrated by the signal and the 3D image profiles of 2 \u00b5m beads located at the center (cyan squares, Figure 6A,D) or closer to the edge of the FOV (~85 \u03bcm from center, magenta squares, Figure 6A,D) taken with Gaussian foci. At the center of the FOV (upper panels, Figure 6G,H), the aberration modes of both 1 mm doublet and 0.5 mm singlet were dominated by spherical aberrations. The circular symmetry of spherical aberrations made them minimally degrade the imaging quality of the Bessel focus formed by annular illumination. As a result, we found the measured lateral FWHMs of the Bessel foci (0.93\u20131.27 \u00b5m, Figure 4) to be similar to their diffraction-limited value (1.06 \u00b5m) (Richards and Wolf, 1959), whereas the lateral resolution of the Gaussian foci (measured FWHMs: 1.02\u20131.47 \u00b5m, Figure 4, diffraction-limited value: 0.78 \u00b5m) were substantially degraded by aberrations. Away from the FOV center, the 3D bead profile obtained through the 1 mm doublet maintained similar characteristics to the profile at FOV center, suggesting a similar domination of spherical aberrations (lower panels, Figure 6G). In contrast, the off-axis aberrations of the 0.5 mm singlet GRIN lens bore strong characteristics of astigmatism (lower panels, Figure 6H), which deteriorated the quality of the Bessel focus more than the Gaussian focus. Therefore, the relative FOV change of Bessel versus Gaussian modes was correlated with the optical aberrations present in the GRIN lenses, with Bessel imaging mode performing better in GRIN lenses with higher imaging qualities.\n\nBy carefully characterizing the imaging performance of the four selected GRIN lenses, we found that Bessel focus scanning improves the lateral resolution at the FOV center while providing a comparable, if not larger, FOV compared to conventional Gaussian imaging. These four GRIN lenses have different diameters, lengths, resolutions, FOVs, are suitable for experiments with different goals, and can give us access to different structures throughout the mouse brain. For both Bessel and Gaussian modes, if budget and space allow, higher quality GRIN lenses should always be utilized to achieve optimal imaging performance.\n\n### Bessel focus scanning improves microendoscopic imaging throughput with synaptic lateral resolution in brain tissues\n\nAfter characterizing these GRIN lenses with fluorescent beads, we tested their imaging performance on fixed brain tissue. Two types of samples were imaged: coronal cortical sections from Gad2-ires-Cre mice transduced with AAV-Syn-Flex-GCaMP6s, providing expression of GCaMP6s in GABAergic neurons, and coronal cortical sections from Thy1-GFP-M mice, which provide sparse labeling of pyramidal neurons with GFP. Scanning 0.3-NA Bessel foci with axial FWHM ranging from 53 to 68 \u00b5m, we improved microendoscopic imaging throughput substantially while maintaining lateral resolution and FOV through all three best-performing GRIN lenses (Figure 7). For the 1 mm singlet (Figure 7C,D), a single 2D scan using a 0.3-NA, 68-\u00b5m-axial-FWHM Bessel focus captured all 233 interneurons distributed across a 510 \u00b5m\u00a0\u00d7\u00a0510 \u00b5m \u00d7 70 \u00b5m volume, which required 15 scans of the Gaussian focus to cover (Figure 7C). Similarly and without compromise in lateral resolution, Bessel focus scanning through this same GRIN lens imaged a 510 \u00b5m\u00a0\u00d7\u00a0510 \u00b5m \u00d7 72 \u00b5m volume of somata and neurites of sparsely labeled pyramidal neurons that otherwise required 19 Gaussian 2D planes to image (Figure 7D). For both 1.0 mm and 0.5 mm doublets (Figure 7E\u2013H), the significantly higher lateral resolution of the 0.3-NA Bessel foci allowed dendritic spines of the pyramidal neurons to be more easily visualized in the Bessel images than in the Gaussian image stacks (white arrowheads, Figure 7F,H). These data demonstrate that Bessel focus scanning improves imaging throughput of two-photon fluorescence microendoscopy by at least 10\u00a0\u00d7\u00a0while improving lateral resolution and producing sharper images of synapses in brain tissue.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/40805/elife-40805-fig7-v3.jpg)\n\n**Figure 7.:** (A) Left: GABAergic neurons in a 370\u00a0\u00d7\u00a0370\u00a0\u00d7\u00a055 \u00b5m3 volume color-coded by depth, imaged via 12 2D scans of a Gaussian focus through GRIN No. 4. Right: A single 2D scan of a Bessel focus imaged all the neurons. Post-GRIN lens power: 20 mW for Gaussian, 41 mW for Bessel. (B) GABAergic neurons in a 220\u00a0\u00d7\u00a0220\u00a0\u00d7\u00a060 \u00b5m3 volume imaged through GRIN No. 5: 13 2D scans of a Gaussian focus (21 mW) and a single 2D scan of Bessel focus (55 mW). (C) GABAergic neurons in a 510\u00a0\u00d7\u00a0510\u00a0\u00d7\u00a070 \u00b5m3 volume imaged through GRIN No. 6: 15 2D scans of a Gaussian focus (13 mW) and a single 2D scan of Bessel focus (50 mW). (D) Pyramidal neurons and their neurites across a 510\u00a0\u00d7\u00a0510\u00a0\u00d7\u00a072 \u00b5m3 volume imaged through GRIN No. 6: 19 2D scans of a Gaussian focus (39 mW) and a single 2D scan of a Bessel focus (100 mW). (E) Pyramidal neuron neurites in a 370\u00a0\u00d7\u00a0370\u00a0\u00d7\u00a056 \u00b5m3 volume imaged through GRIN No. 4: 15 2D scans of a Gaussian focus (45 mW) and a single 2D scan of Bessel focus (94 mW). (G): Pyramidal neuron dendrites in a 220\u00a0\u00d7\u00a0220\u00a0\u00d7\u00a056 \u00b5m3 volume imaged through GRIN lens No. 5: 15 2D scans of a Gaussian focus (34 mW) and a single 2D scan of a Bessel focus (95 mW). (F, H) Zoomed-in views of dendrites from the cyan boxes in (E, G). White arrowheads indicate dendritic spines that were more easily visualized by Bessel focus. Scale bar: 60 \u00b5m.\n\n### In vivo volumetric microendoscopic imaging of synapses with Bessel focus scanning\n\nWe next tested the performance of our volumetric microendoscopic imaging method in the mouse brain in vivo. A polyimide cannula\u00a0(Bocarsly et al., 2015) was implanted into brains of Thy1-GFP-M mice, in order to hold the 1 mm doublet GRIN lens above the CA1 region of the hippocampus during imaging sessions (Figure 8, Figure 9). To image the brain at different depths, we moved the animal with the implanted GRIN lens axially, thus changing the image WD. The axial shift of the focus within the brain was then calculated from the relationship between the image and sample WDs as characterized independently with beads (Figure 2C).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/40805/elife-40805-fig8-v3.jpg)\n\n**Figure 8.:** (A) Left panel: Hippocampal neurons and neurites within a 370 \u03bcm\u00a0\u00d7\u00a0370 \u03bcm \u00d7 53 \u03bcm volume color-coded by depth, imaged via 14 2D scans of a Gaussian focus through a 1-mm-diameter doublet GRIN lens. Right panel: Image obtained by a single 2D scan of a Bessel focus (NA: 0.3, axial FHWM: 53 \u03bcm). Post-GRIN lens power: 46 mW for Gaussian, 84 mW for Bessel. Image WD: 0 \u03bcm. (B) Zoomed-in views of dendritic spines and axonal boutons within the cyan box in (A). (C) Left panel: Hippocampal axons and dendrites within a 370 \u03bcm\u00a0\u00d7\u00a0370 \u03bcm \u00d7 45 \u03bcm volume color-coded by depth, imaged via 11 2D scans of a Gaussian focus. Right panel: Image obtained by a single 2D scan of the Bessel focus. Post-GRIN lens power: 60 mW for Gaussian, 110 mW for Bessel. Image WD: 400 \u03bcm. (D) Zoomed-in views of dendritic spines and axonal boutons within the cyan box in (C). White arrowheads point to dendritic spines. Scale bar: 20 \u03bcm.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/40805/elife-40805-fig9-v3.jpg)\n\n**Figure 9.:** (A) and (B) Representative brain slices labeled with GFAP antibody and Nissl staining, respectively. (C) Consecutive sections of a brain alternately stained against GFAP (odd number labels) and Nissl staining (even number labels). The green bars indicate the size of the field of view for this GRIN lens (GRIN lens No. 4). Scale bar: 1 mm.\n\nIn these mice, GFP was expressed in a sparse subset of CA1 pyramidal neurons, which allowed us to test for the ability of our microendoscopy system to image somata, dendrites, and axons, as well as their synaptic terminals in vivo. A volume of 370 \u00b5m\u00a0\u00d7\u00a0370 \u00b5m \u00d7 53 \u00b5m obtained by scanning the Gaussian focus over 14 2D planes was imaged by a single 2D scanning of a Bessel focus (NA\u00a0=\u00a00.3, axial FWHM\u00a0=\u00a053 \u00b5m, Figure 8A). Similar to the results in the fixed brain slices, all somata and neurites within this volume were imaged by 2D scanning the axially elongated Bessel focus, which also provided superior lateral resolution over the Gaussian focus and allowed dendritic spines to be more readily detected in vivo (cf., white arrowheads, Figure 8B). Moving the animal and GRIN lens down by 400 \u00b5m shifted the focus upward by 70 \u00b5m into a more dorsal layer of the hippocampus, where the structures were dominated by neuronal processes of the CA1 neurons. Bessel focus scanning again provided sharper volumetric images of axonal boutons and dendritic spines (Figure 8C,D). Combined with the increase of imaging throughput, two-photon fluorescence microendoscopy coupled with the Bessel module is clearly a more advantageous way to image deeply buried albeit sparsely labeled brain structures at synaptic resolution.\n\n### Volumetric imaging of population dynamics of lateral hypothalamic GABAergic neurons during different metabolic states in vivo\n\nTwo-dimensional scanning with a Bessel focus can also be used to monitor population activity dynamics of neurons distributed in 3D within deeply buried nuclei in vivo. In addition to increased image throughput, the axial extension of the Bessel focus also makes the microendoscopic imaging process resistant to axial-motion-induced artifacts\u00a0(Lu et al., 2017; Lu et al., 2018). As an example, we applied Bessel focus scanning microendoscopy to study the population activity of GABAergic neurons in the lateral hypothalamus (LH) of awake mice during native metabolic conditions that mimicked hunger and satiety.\n\nWith the LH located\u00a0~5 mm below the dorsal surface of the brain and our goal of studying cellular-level population activity, we chose to use the 0.5 mm singlet GRIN lens, because it had less insertion damage while providing cellular resolution over a relatively large FOV. A Cre-dependent GCaMP6s adeno-associated virus was injected and GRIN lenses were implanted into the LH of Vgat-Cre mice to visualize calcium activity in GABAergic neurons of the LH. One month after surgery, the GCaMP6s-expressing neurons were imaged during two sessions daily with 10 hr between sessions to record neuronal activity. One set of imaging experiments was carried out at the end of the light cycle, which is a period of increased motivation to eat; the other set was performed at the end of the dark cycle, when mice are usually sated and have decreased motivation to eat. We waited for three days before repeating the experiments to avoid any imaging-induced disruption of feeding and to ensure that mice returned to normal food intake schedules. During each imaging session with head-fixed awake mice, we recorded serial 3D scans with a Gaussian focus (axial FWHM 19 \u00b5m) to obtain anatomical information. We subsequently used a Bessel focus (axial FWHM 63 \u00b5m) to record the calcium transients from all the GABAergic neurons (N\u00a0=\u00a043 and 51 neurons in Mouse 1 and 2, respectively) across a 310 \u00b5m\u00a0\u00d7\u00a0310 \u00b5m \u00d7 63 \u00b5m volume for 30 min. With the absence of axial motion artifacts (e.g., Videos 1 and 2), the imaging data only needed to be registered in 2D, first with the TurboReg plugin\u00a0(Th\u00e9venaz et al., 1998) in Fiji\u00a0(Schindelin et al., 2012; Schneider et al., 2012) to correct rigid lateral motions, then by a non-rigid lateral motion correction method for optimal registration results\u00a0(Pnevmatikakis and Giovannucci, 2017). Regions of interest (ROIs) corresponding to the somata of GABAergic neurons were then segmented by hand, and their corresponding calcium transients were extracted from the time-lapse data and quantified as \u0394F/F (fluorescence change divided by baseline fluorescence signal).\n\n![Video 1.](https://cdn.elifesciences.org/articles/40805/elife-40805-video1.mp4.jpg)\n\n**Video 1.:** All the neurons within the 310 \u00b5m\u00a0\u00d7\u00a0310 \u00b5m \u00d7 63 \u00b5m volume were in focus throughout the recording, indicating the absence of axial motion artifact via Bessel focus scanning. Left panel: unregistered stack; Right panel: image stack after correcting lateral motion with TurboReg plugin\u00a0(Th\u00e9venaz et al., 1998) followed by a non-rigid lateral motion correction method\u00a0(Pnevmatikakis and Giovannucci, 2017).\n\n![Video 2.](https://cdn.elifesciences.org/articles/40805/elife-40805-video2.mp4.jpg)\n\n**Video 2.:** All the neurons within the 310 \u00b5m\u00a0\u00d7\u00a0310 \u00b5m \u00d7 63 \u00b5m volume were in focus throughout the recording, indicating the absence of axial motion artifact via Bessel focus scanning. Left panel: unregistered stack; Right panel: image stack after correcting lateral motion with TurboReg plugin\u00a0(Th\u00e9venaz et al., 1998) followed by a non-rigid lateral motion correction method\u00a0(Pnevmatikakis and Giovannucci, 2017).\n\nAlthough the neuronal recordings were taken during different experimental sessions that were hours and days apart with mice freely behaving in between, the same neurons could be identified and tracked across sessions both in Gaussian stacks and Bessel images for each mouse (Figure 10A,B). This enabled us to directly compare the activity of the same neurons across different sessions while the animal was under distinct metabolic states (Figure 10C\u2013K). We found that these GABAergic neurons exhibited frequent, mostly synchronous activity during both ends of light and dark cycles, as indicated by representative traces of calcium transients from selected neurons (Figure 10C,D). When mice were imaged at the end of light cycles, we observed increased activity, which was corroborated by quantitative analysis using the calcium transients from all detected neurons (Figure 10E,G). The activity of each neuron was quantified as the integrated value of its \u0394F/F curve, while the activity synchrony between two neurons was calculated as the correlation coefficient (R) of their \u0394F/F traces (Figure 10F,H). For both mice, the population activity and synchrony of these GABAergic neurons increased significantly from the end of dark cycles to the end of light cycles, that\u00a0is from a satiety-like state to a hunger-like state (175 neurons, 3820 correlation coefficients, non-paired t-test, Figure 10I\u2013K). As demonstrated in this example, 2D Bessel focus scanning microendoscopy enables high-throughput, simultaneous 3D imaging and subsequent analysis of population dynamics in deeply buried brain structures.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/40805/elife-40805-fig10-v3.jpg)\n\n**Figure 10.:** (A, B) In two mice, Gaussian stacks were taken through a 0.5-mm-diameter singlet GRIN lens of neurons in a 310 \u03bcm\u00a0\u00d7\u00a0310 \u03bcm \u00d7 63 \u03bcm volume (top panels, color-coded by depth), followed by functional volumetric imaging using Bessel focus scanning for 30 min to record spontaneous activity from these neurons at the ends of dark and light cycles (bottom panels show the time-averaged images). Post-GRIN lens power: 70 mW for Gaussian; 115 mW for Bessel; Axial FWHM: 19 \u03bcm for Gaussian; 63 \u03bcm for Bessel. Scale bar: 20 \u03bcm. (C,D) \u2206F/F calcium transient traces of neurons outlined in A and B, respectively. (E) Raster plots of \u2206F/F from all identified neurons in Mouse 1, sorted by their activity at the end of dark cycle. (F) Correlation coefficient (R) matrices between \u2206F/F traces from all neuron pairs in E. (G\u2013H) Raster plots and R matrices for Mouse 2. (I,J) Histograms of activity (integral of \u2206F/F traces) and R. Dashed lines: medians. (K) Notched box whisker plots of neuronal activity and R, showing statistically significant differences in neuronal activity and their correlation at the ends of dark and light cycles (non-paired t-test). Outliers highlighted in the box-whisker plots were included in the statistical\u00a0analysis.\n\n## Discussion\n\nVolumetric imaging of neurons and neuronal activity at high spatial and temporal resolution is crucial to study information processing of neuronal circuits. Deeply buried brain nuclei can now be accessed optically via microendoscopy through micro-optical probes embedded in the brain. For structures such as hippocampus and dorsal lateral geniculate nucleus (Mizrahi et al., 2004; Dombeck et al., 2010; Marshel et al., 2012), a cannula with a glass bottom can be embedded to provide optical access after the removal of overlying tissue, and a microscope objective with a long working distance can be used for imaging. Such an approach, however, is only applicable to more superficial structures. For deeper structures, providing optical access for a conventional microscope objective requires too much tissue removal. For example, to image the lateral hypothalamus, which is 5 mm from the top surface of the mouse brain, passing the light cone of a 0.5-NA microscope objective requires 22 mm3 of brain tissue to be removed, whereas an embedded 0.5-mm-diameter GRIN lens only displaces 1 mm3 of brain tissue. Therefore, microendoscopy employing GRIN lenses is the preferred method for imaging deep nuclei of the brain. In both cases, care must be taken to ensure that inflammation has abated before imaging starts and that the physiology of the structures of interest is minimally affected by tissue removal or displacement.\n\nExisting implementation of microendoscopy suffers from low resolution and/or low throughput. By scanning an axially elongated Bessel focus through selected commercially available GRIN lenses, we addressed both the issues of resolution and throughput. The intrinsically higher lateral resolution of Bessel foci allowed us to resolve dendritic spines and axonal boutons both ex vivo and in vivo, while improving imaging throughput up to 19\u00d7.\n\nThe axially extended two-photon fluorescence excitation in Bessel focus scanning microendoscopy also makes the imaging process immune to axial motion artifacts and allowed us to obtain high-quality functional imaging data from awake behaving mice without having to resort to complex post-processing. Because more energy is distributed in the side rings of a Bessel focus, the average power of the excitation light was increased by 1.5\u20134\u00d7, which remains within the safe range for two-photon fluorescence microscopy\u00a0(Podgorski and Ranganathan, 2016). Although we only demonstrated the applications in relatively sparsely labeled samples, Bessel focus scanning microendoscopy can also be applied to more densely labeled samples, and computational methods\u00a0(Liu et al., 2012; Pnevmatikakis et al., 2016; Zhou et al., 2018) can be used to demix activity from overlapping neurons. Finally, because Bessel focus scanning modules\u00a0(Lu et al., 2017; Lu et al., 2018) can be added to existing microendoscopy setups without additional changes in data acquisition software, we expect this method to be easily adoptable for high-throughput synaptic resolution volumetric imaging of deep brain structures.\n\n## Materials and methods\n\n### Animals\n\nAll animal experiments were conducted according to the United States National Institutes of Health guidelines for animal research. Procedures and protocols were approved by the Institutional Animal Care and Use Committee at Janelia Research Campus, Howard Hughes Medical Institute. Male and female mice (C57BL/6J background, Strain 664, The Jackson Laboratory, ME, USA) aged two months and older were used in this study: Gad2-IRES-cre\u00a0(Network NNBCD, 2009; Taniguchi et al., 2011), Thy1-GFP line M\u00a0(Feng et al., 2000), Ai93(24107)\u00d7ACTB tTA\u00d7Kcnd2 IRES-Cre 3G5\u00a0(Madisen et al., 2015; Li et al., 2010), Vgat-cre\u00a0(Vong et al., 2011). Prior to stereotaxic surgery, mice were group housed with littermates in temperature and humidity-controlled rooms with ad libitum access to water and rodent chow (PicoLab Rodent Diet 20, 5053 tablet, LabDiet/Land O\u2019Lakes Inc., MO, USA) on a 12 hr reverse light/dark cycle (9 p.m.\u22129 a.m. light cycle and 9 a.m\u2212 9 p.m. dark cycle).\n\n### Two-photon excitation fluorescence microendoscopy\n\nA homebuilt two-photon excitation fluorescence microscope was used for microendoscopic imaging and was described in detail previously\u00a0(Ji et al., 2010). 940 nm output from a femtosecond pulsed laser source with a built-in dispersion compensation unit (InSight DeepSee, Spectra Physics, CA, USA) was used to provide two-photon excitation. A 10\u00d7/0.45NA microscope objective (CFI Plan Apo Lambda 10X, Nikon, Tokyo, Japan) was used in conjunction with 0.5-NA singlet GRIN lenses, whereas a 4\u00d7/0.2NA objective (CFI Plan Apo Lambda 4X, Nikon) was used with doublet GRIN lenses to match their NA on the image side. Microscope control and data acquisition were executed using custom-written LabVIEW software.\n\n### Alignment of GRIN lenses\n\nObtaining optimal image quality from GRIN-lens-based microendoscopes requires the GRIN lens to share the same optical axis as the microscope objective and the excitation light. For the in vitro characterization, the GRIN lens was held with a custom-built clip mounted onto a tilt/tip adjustment platform mount (KM100B, Thorlabs, NJ, USA). The tilt/tip platform was further mounted onto a motorized 3D translational stage (3DMS, Sutter Instrument Company, CA, USA), which allowed us to adjust the tilt/tip and translational position of the GRIN lens. Looking through the eyepiece and the 10\u00d7/0.45NA objective, we adjusted the tilt/tip of the GRIN lens so that the entire top surface of the GRIN lens came into focus simultaneously, indicating that the optical axes of the GRIN lens and the objective were parallel. Failure to do this causes the excitation light to experience severe optical aberrations and degradation of image quality. To make the GRIN lens and the objective coaxial, we switched to Bessel mode with the excitation light forming an annular illumination pattern when entering the GRIN lens. We then adjusted the translational position of the GRIN lens until the annular illumination transmitted through the lens remained symmetrical when the GRIN lens was translated axially, indicating that the GRIN lens was coaxial with the microscope objective. We then recorded the position of the GRIN lens within the eyepiece field of view (FOV). For in vivo experiments, the mouse was mounted on a tilt/tip platform and was adjusted below the 10\u00d7/0.45NA objective until the top surface of the GRIN lens was in focus. We then translated the mouse until the GRIN lens occupied the same position as recorded during the in vitro alignment. For doublet GRIN lenses, tip/tilt\u00a0alignment was established using the 10\u00d7/0.45NA objective due to its smaller depth of field; this objective was then replaced by the 4\u00d7/0.2NA objective prior to adjustment of translational position and the imaging experiments to follow.\n\n### In vitro characterization of GRIN lenses\n\nThe imaging resolution and FOV of 10 commercially available GRIN lenses (GRINTECH GMbH, Inscopix, Go!Foton) were characterized. Prior to the experiment, precise alignment of each GRIN lens was completed as described above. For doublet GRIN lenses with 0.19 NA on the image side and 0.5 NA on the sample side, data were collected with the image WD within a 2000 \u00b5m range. For singlet GRIN lenses, data were collected with the image WD within a 400 \u00b5m range. For all the GRIN lenses tested, the sample WD versus image WD followed a linear relationship with a fitted slope k. For in vivo experiments, the change of the sample WD (i.e., focal shift in the brain), \u0394dsample, was calculated as \u0394dsample\u00a0=\u00a0k\u00a0\u00d7\u00a0\u0394dimage, where \u0394dimage is the change of image WD (e.g., the axial shift of the brain and the GRIN lens) and k is the slope determined by fitting the image WD and sample WD relationship (Figure 2C).\n\n### Stereotaxic surgery and brain slice preparation\n\nGABAergic neurons were labeled by in vivo injection of AAV2/1-Syn-Flex-GCaMP6s (1:2 diluted by PBS from stock solution with the titer of 2.7\u00a0\u00d7\u00a01013 GC/ml made by viral services at Janelia Research Campus, Howard Hughes Medical Institute) into the primary visual cortex of the Gad2-ires-Cre mouse (JAX, stock#010802). Thirty nanoliters of viral solution was injected at the following coordinate: Bregma, \u22123.80 mm; midline:+2.50 mm; depth 0.5 mm. Four weeks later, mice were perfused by 4% paraformaldehyde and the brain was cut using a vibratome (Leica VT1200S) into 100 \u00b5m-thick brain slices. Brain slices with positively labeled neurons were mounted with mounting medium (Vectashield, Vector Laboratory) onto slides for long-term preservation of the fluorescent signal. The same slice preparation procedure was followed for Thy1-GFP-M mice (JAX stock #007788).\n\n### Stereotaxic surgery for in vivo imaging\n\nAll surgeries were performed using a stereotaxic apparatus (Model 1900, David Kopf Instruments, CA, USA) and aseptic technique. A stereotaxic cannula holder (SCH_2.5, Doric Lenses Inc., Qu\u00e9bec, Canada) attached with a custom adapter (OD\u00a0=\u00a015.8 mm; ID\u00a0=\u00a07.9 mm, Doric Lenses Inc.) to a Model 1900\u201354-A tool block assembly (David Kopf Instruments) was used to insert a polyimide guide cannula into the brain.\n\nGuide cannulae (Bocarsly et al., 2015) (Doric Lenses Inc) were custom designed for hippocampus surgeries. The cannula body was made of a thin-walled polyimide tube (0.25 \u00b5m wall thickness). The sample-side end was sealed with a 0.13-mm-thick cover glass. The open end of the tube was surrounded by a cap (2.5-mm-diameter body, 3.5-mm-diameter base) that allowed the cannula to be held during implantation and provided a large surface for secure attachment to the skull by dental cement. To fit the 1-mm-diameter GRIN lenses, the polyimide tubes had an inner diameter of 1.07 mm and an outer diameter of 1.12 mm. The length of the polyimide tube was selected such that, with the bottom of the cap contacting the skull, the glass bottom of the cannula was positioned above the deep nuclei of interest (lengths from the bottom of the cap to the glass bottom: 1.55 mm).\n\n#### Hippocampus surgery\n\nThy1-GFP line M mice were anesthetized with 1.5% isoflurane and the skull was exposed. After both medial-lateral and anterior-posterior alignment of mouse head at Bregma, the coordinate of implantation center on the right hemisphere (Bregma, \u22122.06 mm; midline:+2.71 mm) was marked. The animal was then tilted mid-laterally by 10 degrees toward the left hemisphere to slightly compensate for the oblique surface of the hippocampus. Then a 1.5-mm-diameter craniotomy was made. The dura was removed with forceps, and aspiration with a 27G blunt needle was used to slowly remove the cortex and clear a 1.2-mm-diameter pathway within the craniotomy. Each aspiration (50\u2013100 \u03bcm-thick tissue removed per aspiration) was followed by repeated irrigation with saline until bleeding stopped completely. These steps continued until the external capsule was exposed. The cortex and topmost layers of the external capsule were carefully aspirated with a 30G blunt needle. After bleeding stopped, a guide cannula was inserted and cemented to the skull using C&B Metabond Cement System (Parkell, Inc., NY, USA). A titanium head-post was attached to the skull with cyanoacrylate glue and Metabond. The open end of the cannula was sealed with a small piece of Parafilm covered by Kwik-Sil (World Precision Instruments, LLC, FL, USA), and after the silicone cured, mice recovered from anesthesia. After one month of recovery from the surgery and habituation to head fixation, we inserted a 1-mm-diameter doublet GRIN lens into the cannula for in vivo imaging in anesthetized mice and removed the GRIN lens at the end of imaging. The cannula was resealed with Parafilm and Kwik-Sil to prevent debris from entering the guide tube.\n\n#### Lateral hypothalamus surgery\n\nSurgeries were performed as previously described\u00a0(Bocarsly et al., 2015), except 0.5-mm-diameter singlet GRIN lenses (Go!Foton Corporation) were directly implanted into the brains of Vgat-Cre mice (JAX stock #028862) without guide cannulae (Bregma, \u22121.4 mm; midline,+0.85 mm; dorsal surface: \u22125.0 mm; 50 nl AAV2/1-Syn-Flex-GCaMP6s virus)\u00a0(Bocarsly et al., 2015; Chen et al., 2013). Mice were returned to their reverse light cycle holding room after recovery from anesthesia. After post-surgical recovery and habituation to head fixation for at least four weeks, neuronal activity was monitored in awake mice at the end of the light cycle (9 a.m.) (i.e., after a period of low food intake) and at the end of the dark cycle (11 p.m.) (i.e., after a period of high food intake). Each mouse was imaged during two sessions daily (light cycle end and dark cycle end) with 10 hr between sessions to record neuronal activity when the mice were in native metabolic states similar to hunger and satiety (light cycle end and dark cycle end, respectively). These two sessions were repeated twice with at least 3 days between repetitions.\n\n### Immunohistochemistry characterization of the implant site\n\nAfter data acquisition, mice were anesthetized with an overdose of isoflurane and transcardially perfused with phosphate buffered saline (PBS) followed by 4% paraformaldehyde in PBS. Brains were postfixed in the same fixative overnight and stored at 4\u02daC for later histological process. Brains were coronally sectioned (50 \u00b5m thickness) with a Leica VT1200S vibratome. Alternate brain sections were either immunostained with the astrocyte marker, anti-glial fibrillary acidic protein (GFAP, Sigma Aldrich), or stained with NeuroTrace 530/615 red fluorescent Nissl Stain (ThermoFisher). Consecutive brain sections encompassing the implant site were mounted on glass slides using VECTASHIELD mounting medium with DAPI (Vector Laboratories) and coverslipped for imaging with TissueFAXS 200 (TissueGnostics) at wide-field mode using a 20\u00d7\u00a0objective.\n\nIn the example brain (Figure 9), only the thin layer of tissue right next to the implant site exhibited enhanced staining for GFAP, in agreement with a previous study\u00a0(Bocarsly et al., 2015). Nissl staining showed some tissue deformation in the hippocampal structures below the implant site. However, CA1 pyramidal neurons within the imaging FOV (indicated by the green bars in Figure 9) maintained laminar distribution. This is consistent with the in vivo imaging results in Figure 8 (same brain as in Figure 9), in which the GFP+ dendrites and axons were found to have normal morphology and were devoid of signs of cell death (e.g., fragmented axons).\n\n### Image processing and analysis\n\nImaging data were processed with Fiji\u00a0(Schindelin et al., 2012; Schneider et al., 2012) and MATLAB (Mathworks, MA, USA). Raw images were presented with standard color bars in Fiji without further processing, with the exception of Bessel images in Figure 8A,B in which, due to the overwhelmingly bright somata, gamma correction (\u03b3\u00a0=\u00a00.7 and \u03b3\u00a0=\u00a00.85, respectively) was applied to enhance the visibility of dendrites. Functional images were registered with TurboReg plugin\u00a0(Th\u00e9venaz et al., 1998) in Fiji for rigid motion and with a non-rigid motion correction algorithm in MATLAB\u00a0(Pnevmatikakis and Giovannucci, 2017). ROIs were selected and outlined manually in Fiji. The averaged fluorescent signal within the ROI was then extracted with custom MATLAB codes (available online as a source code file) and used to calculate calcium transients. The traces in Figure 10 were smoothed with a constrained deconvolution (CD) method in MATLAB\u00a0(Pnevmatikakis et al., 2016).\n",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "c715d882-cfd4-42c2-b4fa-afa9a97d90f7",
+      "submission_id": "4150d7e2-501f-402e-8652-d5c47a04b898",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Kleinfeld, University of California San Diego United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.40805.019](https://doi.org/10.7554/eLife.40805.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"High-throughput synapse-resolving two-photon fluorescence microendoscopy for deep-brain volumetric imaging in vivo\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including David Kleinfeld as the Reviewing Editor and Reviewer #2, and the evaluation has been overseen by Eve Marder as the Senior Editor. The other reviewer opted to remain anonymous.\n\nAll in all this is a fine and important technical addition to field of neuroimaging. There is overlap among the reviews. We ask that you supply histological data, as suggested by the Reviewing Editor; this may entail new measurements. We further ask that you revise the text to comment on the utility of a cannula versus a GRIN lens for imaging neurons in CA1, as suggested by both reviewers.\n\nReviewer #1:\n\nThe paper demonstrates the feasibility and advantages of 2P Bessel volumetric imaging through GRIN lenses. There is a nice comparison of the various available GRIN lenses with thorough characterization of field of view size and axial resolution. Then there are examples of recorded neurons in hippocampus, hypothalamus and striatum showing that the technique is feasible in-vivo. For sparsely expressed indicators this would be extremely effective and efficient.\n\nA GRIN lens is not needed for imaging dorsal CA1 hippocampal neuronal cell bodies or their dendrites or dorsal striatum. Imaging can be performed with a coverslip at the bottom of a cannula without any intervening lens. I would be curious to compare the performance of the Bessel beam technique through a GRIN lens and without a GRIN lens in these preparations.\n\nReviewer #2:\n\nThis is a very useful paper from Na Ji's group that expands on their 2017 Nature neuroscience paper on two photon imaging with axially extended beam. The key features are: (1) An assessment of different commercial GRIN lenses for in vivo neuroimaging; (2) Extension to GRIN lens scanning; and (3) Extension of Bessel beams to another imaging mode. While Bessel beams are primarily useful for the case of sparsely labeled cells, this is a common and reasonable limit. I have one substantive suggestion a number of editorial suggestions.\n\nMajor:\n\nThis paper will gain in value if the authors included histology of the recording region. Specifically, I would add alternate brain sections that span the recording site. One with just an image of the GCaMP along a measure of damage \u2013 such as GFAP stain (maybe with a red label) and alternating with Nissl stained sections -. This will allows users to gauge damage, a topic that the authors already allude to by their statement; \"\u2026 we chose to use the 0.5-mm singlet GRIN lens, because it had less insertion damage while providing cellular resolution over a relatively large FOV.\" This critical issue needs to be justified. It could be that the density of labeled neurons is reduced in the measurements volume under the lens. Or not. We are interested in typical \u2013 not \"typical best\", so that readers understand the limitations of measurements with GRIN lenses.\n",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9436c004-8941-456c-b218-23d70f4c4796",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C1",
+      "claim": "The opacity of adult brains makes microendoscopy the method of choice for imaging neurons and neural activity in deeply buried brain structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The opacity of adult brains makes microendoscopy, with an optical probe such as a gradient index (GRIN) lens embedded into brain tissue to provide optical relay, the method of choice for imaging neurons and neural activity in deeply buried brain structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about brain imaging methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "c5a8d9c0-9490-40d2-9878-71615229bd34",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C2",
+      "claim": "Incorporating a Bessel focus scanning module into two-photon fluorescence microendoscopy extended the excitation focus axially and improved its lateral resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating a Bessel focus scanning module into two-photon fluorescence microendoscopy, we extended the excitation focus axially and improved its lateral resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported by the authors based on their experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "c7765b3e-cd84-4b15-92f8-1ca31f84e40d",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C3",
+      "claim": "Scanning the Bessel focus in 2D enabled imaging volumes of neurons at high-throughput while resolving fine structures such as synaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Scanning the Bessel focus in 2D, we imaged volumes of neurons at high-throughput while resolving fine structures such as synaptic terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported by the authors based on their experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "a61c5a14-4243-4e3c-9978-5a6fea577c39",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C4",
+      "claim": "The approach was applied to volumetric anatomical imaging of dendritic spines and axonal boutons in the mouse hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied this approach to the volumetric anatomical imaging of dendritic spines and axonal boutons in the mouse hippocampus, and functional imaging of GABAergic neurons in the mouse lateral hypothalamus in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental applications performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "c6dc5bdf-9c0c-4687-96ee-f2513219b812",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C5",
+      "claim": "The approach was applied to functional imaging of GABAergic neurons in the mouse lateral hypothalamus in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied this approach to the volumetric anatomical imaging of dendritic spines and axonal boutons in the mouse hippocampus, and functional imaging of GABAergic neurons in the mouse lateral hypothalamus in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental applications performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "0360f641-0339-4e48-b26e-8d6b987b6c02",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C6",
+      "claim": "In brains that strongly scatter light, the image depth of conventional multiphoton microscopy is limited to 1\u20132 millimeters.",
+      "claim_type": "EXPLICIT",
+      "source": "In brains that strongly scatter light (i.e., all known adult mammalian brains), the image depth of conventional multiphoton microscopy is limited to 1\u20132 millimeters (Ji et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "6a3b9f06-9479-4975-9ebf-50bb8c8fee5a",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C7",
+      "claim": "All known adult mammalian brains strongly scatter light.",
+      "claim_type": "EXPLICIT",
+      "source": "In brains that strongly scatter light (i.e., all known adult mammalian brains), the image depth of conventional multiphoton microscopy is limited to 1\u20132 millimeters (Ji et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about mammalian brains.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "a70f9294-44de-4ed5-a857-e48035fc8287",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C8",
+      "claim": "To reach depths beyond a few millimeters, microendoscopy with GRIN lenses is the only practical method currently available.",
+      "claim_type": "EXPLICIT",
+      "source": "To reach depths beyond a few millimeters, the only practical methods currently available are based on microendoscopy, in which miniature probes, such as gradient refractive index (GRIN) lenses, are embedded within the brain to relay microscopic images of the neurons below (Jung and Schnitzer, 2003; Jung et al., 2004; Levene et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work establishing microendoscopy methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "8ac2b4f0-a41e-41bd-8cad-c956476aabca",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C9",
+      "claim": "Microendoscopy systems have been used for fluorescence activity imaging of neurons expressing genetically encoded calcium indicators in a variety of deep nuclei in the mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Such systems have been used for fluorescence activity imaging of neurons expressing genetically encoded calcium indicators in a variety of deep nuclei in the mouse brain (Ghosh et al., 2011; Li et al., 2017; Ziv et al., 2013; Bocarsly et al., 2015; Jennings et al., 2015; Kitamura et al., 2015; Pinto and Dan, 2015; Harrison et al., 2016; Okuyama et al., 2016; Kamigaki and Dan, 2017; Kitamura et al., 2017; McHenry et al., 2017; Roy et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "45f52560-aa47-4168-b2cb-400584539401",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C10",
+      "claim": "The spatial resolution of previous microendoscopy studies has been limited to the cellular level and synaptic structures such as dendritic spines or axonal boutons were not resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the spatial resolution has been limited to the cellular level and synaptic structures such as dendritic spines or axonal boutons were not resolved in these studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "b47638e3-6542-4d5e-b1f8-c223b6023da9",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C11",
+      "claim": "Surgeries to remove brain tissue and embed endoscope probes typically have lower success rates compared to conventional craniotomies in which no brain tissue is removed.",
+      "claim_type": "EXPLICIT",
+      "source": "First, surgeries to remove brain tissue and embed endoscope probes typically have lower success rates compared to conventional craniotomies in which no brain tissue is removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about surgical procedures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "c822ca05-7e77-43ee-92c1-8689c183cdb3",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C12",
+      "claim": "Many microendoscopy experiments involve behaviors or brain states with large variability that either cannot be evoked with high fidelity over repeated trials or exhibit short-term adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, many microendoscopy experiments involve behaviors or brain states with large variability that either cannot be evoked with high fidelity over repeated trials or exhibit short-term adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about experimental challenges.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "271b6650-82d8-47aa-834e-d090f1d03a37",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C13",
+      "claim": "Research interests are often centered on specific cell types that are usually sparsely distributed in 3D.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, research interests are often centered on specific cell types (e.g., inhibitory subtypes [Pinto and Dan, 2015] or cholinergic neurons [Harrison et al., 2016]) that are usually sparsely distributed in 3D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and stated as a general observation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "c68c10c3-2d1b-427f-aaef-c4839183d199",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C14",
+      "claim": "A volumetric microendoscopic imaging method that can simultaneously probe the activity of neural ensembles in 3D while maintaining synapse-resolving spatial resolution has yet to be demonstrated for in vivo volumetric imaging of deep brain structures.",
+      "claim_type": "EXPLICIT",
+      "source": "For these reasons, a volumetric microendoscopic imaging method, which can simultaneously probe the activity of neural ensembles in 3D while maintaining synapse-resolving spatial resolution, would be greatly beneficial for interrogating neural circuit functions at depth but has yet to be demonstrated for in vivo volumetric imaging of deep brain structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "dc3d6513-89d6-4f67-a926-358ba517633e",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C15",
+      "claim": "A suite of methods has been developed to image superficial structures at high speed with conventional microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the paucity of high-throughput, high-resolution volumetric imaging solutions for microendoscopy, a suite of methods has been developed to image superficial structures at high speed with conventional microscopy (Ji et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "4d9a8091-4309-4d3d-9bb5-b055e5289a80",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C16",
+      "claim": "Bessel focus scanning combined with two-photon fluorescence microscopy enabled fast volumetric imaging with synaptic resolution in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we developed a Bessel focus scanning method that, when combined with two-photon fluorescence microscopy (Denk et al., 1990), enabled fast volumetric imaging with synaptic resolution (Lu et al., 2017) in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "81b2c0e3-e71a-4fdb-a7ee-224713d3f11b",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C17",
+      "claim": "By scanning an axially extended focus in two dimensions, projection images of 3D volumes were obtained that increased imaging throughput and reduced data size by 10-to-100-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "By scanning an axially extended focus in two dimensions (2D), we obtained projection images of 3D volumes that increased imaging throughput and reduced data size by 10-to-100-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "b80ff204-4a98-402d-ad57-bbe60229f998",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C18",
+      "claim": "The elongation of the focus in the axial direction makes imaging resistant to axial motion artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "The elongation of the focus in the axial direction also makes imaging resistant to axial motion artifacts, making it ideally suited to the study of neural circuit functions in awake, behaving animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the Bessel focus method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "bbd03d77-1c79-4131-89f5-8ca0051ad21d",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C19",
+      "claim": "High-throughput, high-resolution volumetric imaging of neurons and neural activity in deeply buried nuclei is achievable by combining Bessel focus scanning with microendoscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we showed that high-throughput, high-resolution volumetric imaging of neurons and neural activity in deeply buried nuclei is achievable by combining Bessel focus scanning with microendoscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "a86c3dd5-acb5-4b54-85ed-93bc1c9b111b",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C20",
+      "claim": "The authors systematically evaluated and identified commercially available GRIN lenses through which high-quality Bessel foci can be generated.",
+      "claim_type": "EXPLICIT",
+      "source": "We systematically evaluated and identified commercially available GRIN lenses through which high-quality Bessel foci can be generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental work performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "e0ee3322-9ac2-416c-b36e-09a3b01ed83c",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C21",
+      "claim": "Volumetric imaging can be achieved with microendoscopy while maintaining synapse-resolving resolution for anatomical and functional imaging of neurons at depth.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated in brain slices ex vivo and in the mouse brain in vivo that volumetric imaging can be achieved with microendoscopy while maintaining synapse-resolving resolution for anatomical and functional imaging of neurons at depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported by the authors based on their experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "261163f1-3f07-49dd-a90d-21170e4ae2a3",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C22",
+      "claim": "The endoscopy part of the microscope was realized by having a GRIN lens relay the focus of a conventional microscope objective from the image side to the sample side.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a standard two-photon excitation fluorescence microscope equipped with a pair of galvo scanners, the endoscopy part of the microscope was realized by having a GRIN lens relay the focus of a conventional microscope objective from the image side to the sample side (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the technical implementation of the microscope system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "b6dc8afd-6f63-4da1-890c-91ef03c2a5ba",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C23",
+      "claim": "Only GRIN lenses with 0.5 mm or 1 mm diameters and a numerical aperture (NA) of 0.5 were considered due to the small size of the mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the small size of the mouse brain, we only considered GRIN lenses with 0.5 mm or 1 mm diameters and a numerical aperture (NA) of 0.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design choices made by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "915a65b5-3c5b-44e9-b410-757344fbb367",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C24",
+      "claim": "Doublet GRIN lenses have lower intrinsic aberrations than singlets of similar lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "With part of the GRIN lens assembly having a lower NA, doublet GRIN lenses have lower intrinsic aberrations than singlets of similar lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of doublet GRIN lenses based on their optical design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "a31ed6e3-55f7-4177-8bbb-06cebd56f979",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C25",
+      "claim": "A 0.45 NA microscope objective was used in conjunction with 0.5-NA singlet GRIN lenses.",
+      "claim_type": "EXPLICIT",
+      "source": "A 0.45 NA microscope objective was used in conjunction with 0.5-NA singlet GRIN lenses, whereas a 0.2 NA objective was used with doublet GRIN lenses to match their NA on the image side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "1dd29625-b9c2-481c-9841-63328870d15f",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C26",
+      "claim": "A 0.2 NA objective was used with doublet GRIN lenses to match their NA on the image side.",
+      "claim_type": "EXPLICIT",
+      "source": "A 0.45 NA microscope objective was used in conjunction with 0.5-NA singlet GRIN lenses, whereas a 0.2 NA objective was used with doublet GRIN lenses to match their NA on the image side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "35fad52b-3ea0-4f70-816d-a291f5c6a01b",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C27",
+      "claim": "GRIN lenses have intrinsic aberrations which limit the resolution and field of view of microendoscopy under the conventional Gaussian mode.",
+      "claim_type": "EXPLICIT",
+      "source": "GRIN lenses have intrinsic aberrations (Lee and Yun, 2011; Bortoletto et al., 2011), which limit the resolution and field of view (FOV) of microendoscopy under the conventional Gaussian mode (Wang and Ji, 2013; Wang and Ji, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "9ab622e5-a8f3-4fec-b25b-45ffb6396079",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C28",
+      "claim": "GRIN lenses with minimal aberrations are required to generate Gaussian and Bessel foci of the highest quality.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate Gaussian and Bessel foci of the highest quality, GRIN lenses with minimal aberrations are required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the optical properties of GRIN lenses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "7eebcfad-7f7e-4fd3-8005-97f1ed309b14",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C29",
+      "claim": "A systematic evaluation of the imaging performance of commercially available GRIN lenses had not been undertaken prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a systematic evaluation of the imaging performance of commercially available GRIN lenses had not been undertaken.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "aa6f24d6-d75e-4201-bbd1-bdbb0f1d7b8f",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C30",
+      "claim": "Three GRIN lenses were found to have the best axial FWHM \u2013 FOV combinations: a 1-mm-diameter, 8.1-mm-long doublet GRIN lens with 370-\u00b5m-diameter FOV, a 0.5-mm-diameter, 9.9-mm-long doublet GRIN lens with 220-\u00b5m-diameter FOV, and a 1-mm-diameter, 4.4-mm-long singlet GRIN lens with 510-\u00b5m-diameter FOV.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the ten GRIN lenses tested (Figure 2), three were found to have the best axial FWHM \u2013 FOV combinations (green rectangles, Figure 2): a 1-mm-diameter, 8.1-mm-long doublet GRIN lens with 370-\u00b5m-diameter FOV ('1 mm doublet', GRIN No. 4); a 0.5-mm-diameter, 9.9-mm-long doublet GRIN lens with 220-\u00b5m-diameter FOV ('0.5 mm doublet', GRIN No. 5); and a 1-mm-diameter, 4.4-mm-long singlet GRIN lens with 510-\u00b5m-diameter FOV ('1 mm singlet', GRIN No. 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' characterization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "b2177b40-e2ae-4d5f-84a9-763a61ffd706",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C31",
+      "claim": "For the three best performing GRIN lenses, the axial FWHMs were below 15 \u00b5m over most of the sample/image WDs.",
+      "claim_type": "EXPLICIT",
+      "source": "For all three GRIN lenses, the axial FWHMs were below 15 \u00b5m over most of the sample/image WDs, substantially less than the other GRIN lenses tested (but still larger than the diffraction-limited value at 0.5 NA, 6.3 \u00b5m, indicating the existence of intrinsic aberrations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' characterization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "0d1a6f88-d07c-435e-ba9c-5d606f9bdc6f",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C32",
+      "claim": "The axial FWHMs of the three best performing GRIN lenses were still larger than the diffraction-limited value at 0.5 NA (6.3 \u00b5m), indicating the existence of intrinsic aberrations.",
+      "claim_type": "EXPLICIT",
+      "source": "For all three GRIN lenses, the axial FWHMs were below 15 \u00b5m over most of the sample/image WDs, substantially less than the other GRIN lenses tested (but still larger than the diffraction-limited value at 0.5 NA, 6.3 \u00b5m, indicating the existence of intrinsic aberrations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing measured values to theoretical limits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "f8b4cb6e-aa04-4c8e-86fe-73c670ca459c",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C33",
+      "claim": "A 0.5-mm-diameter, 7.1-mm-long singlet GRIN lens with 310-\u00b5m-diameter FOV and an axial FWHM between 18 \u00b5m and 32 \u00b5m was chosen for further characterization despite having larger aberrations because it had the lowest cost and the largest FOV for 0.5-mm-diameter GRIN lenses.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these best performing lenses, we chose an additional GRIN lens for further characterization, a 0.5-mm-diameter, 7.1-mm-long singlet GRIN lens with 310-\u00b5m-diameter FOV and an axial FWHM between 18 \u00b5m and 32 \u00b5m ('0.5 mm singlet', red rectangle, Figure 2, GRIN No. 10). Even though it had larger aberrations, this GRIN lens had the lowest cost of all GRIN lenses tested and the largest FOV for 0.5-mm-diameter GRIN lenses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design choices made by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "8ec0e9c9-aefb-4448-85fc-c3bf3e7d9991",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C34",
+      "claim": "Bessel foci of 0.3 NA had the best performance, yielding higher quality images of fluorescent beads both in the center and towards the edges of the FOV.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying different binary phase patterns to the SLM in the Bessel module (Lu et al., 2017), we generated axially extended foci of varying NAs and discovered that Bessel foci of 0.3 NA had the best performance, yielding higher quality images of fluorescent beads both in the center and towards the edges of the FOV (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' characterization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "a534f05c-0612-438c-bf45-9cc375cd3729",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C35",
+      "claim": "By changing the incident beam size onto the SLM, the axial FWHM of the Bessel focus could be easily adjusted from 40 \u03bcm to 120 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "By changing the incident beam size onto the SLM, the axial FWHM of the Bessel focus could be easily adjusted from 40 \u03bcm to 120 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical capability of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "30b6e88f-dee5-446a-9a54-0c80720b95af",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C36",
+      "claim": "0.3-NA Bessel foci have higher lateral resolution than 0.5-NA Gaussian foci at the center of the FOV.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found 0.3-NA Bessel foci to have higher lateral resolution than 0.5-NA Gaussian foci (Welford, 1960; Sheppard and Wilson, 1979) at the center of the FOV, as indicated by the lateral point spread functions measured from 0.2-\u00b5m-diameter fluorescent beads (Figure 4) as well as superior performance when imaging 2-\u00b5m-diameter fluorescent beads away from the FOV center (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' characterization experiments, supported by citations to theoretical work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "519e2355-c13f-4b5a-a6f2-e00be7bdcbb2",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C37",
+      "claim": "Bessel focus scanning improves the lateral resolution at the FOV center while providing a comparable, if not larger, FOV compared to conventional Gaussian imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "By carefully characterizing the imaging performance of the four selected GRIN lenses, we found that Bessel focus scanning improves the lateral resolution at the FOV center while providing a comparable, if not larger, FOV compared to conventional Gaussian imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the authors' characterization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "ebbc7c1a-0e5d-4ebd-b1a4-9be79c0fecf7",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C38",
+      "claim": "For both Bessel and Gaussian modes, if budget and space allow, higher quality GRIN lenses should always be utilized to achieve optimal imaging performance.",
+      "claim_type": "EXPLICIT",
+      "source": "For both Bessel and Gaussian modes, if budget and space allow, higher quality GRIN lenses should always be utilized to achieve optimal imaging performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "e7677dbe-0344-4f1b-ad82-1d1745f0285e",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C39",
+      "claim": "For the 1 mm doublet, a single 2D scan using a 0.3-NA, 68-\u00b5m-axial-FWHM Bessel focus captured all 233 interneurons distributed across a 510 \u00b5m \u00d7 510 \u00b5m \u00d7 70 \u00b5m volume, which required 15 scans of the Gaussian focus to cover.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 1 mm singlet (Figure 7C,D), a single 2D scan using a 0.3-NA, 68-\u00b5m-axial-FWHM Bessel focus captured all 233 interneurons distributed across a 510 \u00b5m \u00d7 510 \u00b5m \u00d7 70 \u00b5m volume, which required 15 scans of the Gaussian focus to cover (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the authors' experiments in brain tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "86a35835-ca73-4da8-a68a-57b3e2bde203",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C40",
+      "claim": "Bessel focus scanning through the 1 mm singlet imaged a 510 \u00b5m \u00d7 510 \u00b5m \u00d7 72 \u00b5m volume of somata and neurites of sparsely labeled pyramidal neurons that otherwise required 19 Gaussian 2D planes to image.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly and without compromise in lateral resolution, Bessel focus scanning through this same GRIN lens imaged a 510 \u00b5m \u00d7 510 \u00b5m \u00d7 72 \u00b5m volume of somata and neurites of sparsely labeled pyramidal neurons that otherwise required 19 Gaussian 2D planes to image (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the authors' experiments in brain tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "3d50ed61-68b4-4344-9794-ffec2751af93",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C41",
+      "claim": "For both 1.0 mm and 0.5 mm doublets, the significantly higher lateral resolution of the 0.3-NA Bessel foci allowed dendritic spines of the pyramidal neurons to be more easily visualized in the Bessel images than in the Gaussian image stacks.",
+      "claim_type": "EXPLICIT",
+      "source": "For both 1.0 mm and 0.5 mm doublets (Figure 7E\u2013H), the significantly higher lateral resolution of the 0.3-NA Bessel foci allowed dendritic spines of the pyramidal neurons to be more easily visualized in the Bessel images than in the Gaussian image stacks (white arrowheads, Figure 7F,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' experiments in brain tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "93619a59-aa16-418a-825d-4fc545cae16b",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C42",
+      "claim": "Bessel focus scanning improves imaging throughput of two-photon fluorescence microendoscopy by at least 10 \u00d7 while improving lateral resolution and producing sharper images of synapses in brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that Bessel focus scanning improves imaging throughput of two-photon fluorescence microendoscopy by at least 10 \u00d7 while improving lateral resolution and producing sharper images of synapses in brain tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the authors' experiments in brain tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "a9d0a18a-f4e1-4cb4-85b1-b4101e689c5d",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C43",
+      "claim": "A polyimide cannula was implanted into brains of Thy1-GFP-M mice to hold the 1 mm doublet GRIN lens above the CA1 region of the hippocampus during imaging sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "A polyimide cannula (Bocarsly et al., 2015) was implanted into brains of Thy1-GFP-M mice, in order to hold the 1 mm doublet GRIN lens above the CA1 region of the hippocampus during imaging sessions (Figure 8, Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "45d07358-45e1-4fc4-a6d2-2bb1427d5325",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C44",
+      "claim": "A volume of 370 \u00b5m \u00d7 370 \u00b5m \u00d7 53 \u00b5m obtained by scanning the Gaussian focus over 14 2D planes was imaged by a single 2D scanning of a Bessel focus (NA = 0.3, axial FWHM = 53 \u00b5m) in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "A volume of 370 \u00b5m \u00d7 370 \u00b5m \u00d7 53 \u00b5m obtained by scanning the Gaussian focus over 14 2D planes was imaged by a single 2D scanning of a Bessel focus (NA = 0.3, axial FWHM = 53 \u00b5m, Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the authors' in vivo experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "5e9e087d-d729-4cac-9f73-da02e866dae7",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C45",
+      "claim": "Bessel focus scanning provided superior lateral resolution over the Gaussian focus and allowed dendritic spines to be more readily detected in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the results in the fixed brain slices, all somata and neurites within this volume were imaged by 2D scanning the axially elongated Bessel focus, which also provided superior lateral resolution over the Gaussian focus and allowed dendritic spines to be more readily detected in vivo (cf., white arrowheads, Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' in vivo experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "9a4242a4-569b-4ba3-b6d6-105c66420938",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C46",
+      "claim": "Moving the animal and GRIN lens down by 400 \u00b5m shifted the focus upward by 70 \u00b5m into a more dorsal layer of the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Moving the animal and GRIN lens down by 400 \u00b5m shifted the focus upward by 70 \u00b5m into a more dorsal layer of the hippocampus, where the structures were dominated by neuronal processes of the CA1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure and observation by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "ce6e9c41-8134-4193-9451-c1bd73739b3e",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C47",
+      "claim": "Two-photon fluorescence microendoscopy coupled with the Bessel module is a more advantageous way to image deeply buried albeit sparsely labeled brain structures at synaptic resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with the increase of imaging throughput, two-photon fluorescence microendoscopy coupled with the Bessel module is clearly a more advantageous way to image deeply buried albeit sparsely labeled brain structures at synaptic resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from their experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "7ed1179a-50cf-4778-8c77-2005c8a6dfe6",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C48",
+      "claim": "Two-dimensional scanning with a Bessel focus can be used to monitor population activity dynamics of neurons distributed in 3D within deeply buried nuclei in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-dimensional scanning with a Bessel focus can also be used to monitor population activity dynamics of neurons distributed in 3D within deeply buried nuclei in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' functional imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "40067708-38b1-4563-84ed-9378f0eb76b5",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C49",
+      "claim": "The axial extension of the Bessel focus makes the microendoscopic imaging process resistant to axial-motion-induced artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to increased image throughput, the axial extension of the Bessel focus also makes the microendoscopic imaging process resistant to axial-motion-induced artifacts (Lu et al., 2017; Lu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "0ef267ec-7d44-4df7-a4bb-0775f53df43e",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C50",
+      "claim": "The 0.5 mm singlet GRIN lens was chosen for lateral hypothalamus imaging because it had less insertion damage while providing cellular resolution over a relatively large FOV.",
+      "claim_type": "EXPLICIT",
+      "source": "With the LH located ~5 mm below the dorsal surface of the brain and our goal of studying cellular-level population activity, we chose to use the 0.5 mm singlet GRIN lens, because it had less insertion damage while providing cellular resolution over a relatively large FOV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design choices made by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "44a9aefb-2149-43c3-bd90-13e7ec8676a3",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C51",
+      "claim": "The lateral hypothalamus is located approximately 5 mm below the dorsal surface of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "With the LH located ~5 mm below the dorsal surface of the brain and our goal of studying cellular-level population activity, we chose to use the 0.5 mm singlet GRIN lens, because it had less insertion damage while providing cellular resolution over a relatively large FOV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as anatomical knowledge about the mouse brain.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "1eef3301-606c-4725-9dd1-c254050e95b3",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C52",
+      "claim": "The same neurons could be identified and tracked across sessions both in Gaussian stacks and Bessel images for each mouse, despite recordings being taken during different experimental sessions that were hours and days apart with mice freely behaving in between.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the neuronal recordings were taken during different experimental sessions that were hours and days apart with mice freely behaving in between, the same neurons could be identified and tracked across sessions both in Gaussian stacks and Bessel images for each mouse (Figure 10A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' functional imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "e0a86799-3685-4d9e-ac13-28419bb3b6b5",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C53",
+      "claim": "GABAergic neurons in the lateral hypothalamus exhibited frequent, mostly synchronous activity during both ends of light and dark cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these GABAergic neurons exhibited frequent, mostly synchronous activity during both ends of light and dark cycles, as indicated by representative traces of calcium transients from selected neurons (Figure 10C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' functional imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "6fe68035-7695-49e5-a650-c1e4c6388cf3",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C54",
+      "claim": "When mice were imaged at the end of light cycles, increased activity was observed in lateral hypothalamic GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "When mice were imaged at the end of light cycles, we observed increased activity, which was corroborated by quantitative analysis using the calcium transients from all detected neurons (Figure 10E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' functional imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "45a23515-2e8d-4f7c-97f6-84c14ae59be7",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C55",
+      "claim": "For both mice, the population activity and synchrony of GABAergic neurons in the lateral hypothalamus increased significantly from the end of dark cycles to the end of light cycles, that is from a satiety-like state to a hunger-like state.",
+      "claim_type": "EXPLICIT",
+      "source": "For both mice, the population activity and synchrony of these GABAergic neurons increased significantly from the end of dark cycles to the end of light cycles, that is from a satiety-like state to a hunger-like state (175 neurons, 3820 correlation coefficients, non-paired t-test, Figure 10I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' functional imaging experiments with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "f8611e0b-359e-4323-b635-325388d79393",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C56",
+      "claim": "2D Bessel focus scanning microendoscopy enables high-throughput, simultaneous 3D imaging and subsequent analysis of population dynamics in deeply buried brain structures.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated in this example, 2D Bessel focus scanning microendoscopy enables high-throughput, simultaneous 3D imaging and subsequent analysis of population dynamics in deeply buried brain structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from their functional imaging experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "c99d4a20-c879-48f9-b075-5b3a1b209ba0",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C57",
+      "claim": "Volumetric imaging of neurons and neuronal activity at high spatial and temporal resolution is crucial to study information processing of neuronal circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Volumetric imaging of neurons and neuronal activity at high spatial and temporal resolution is crucial to study information processing of neuronal circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about neuroscience research needs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "61f9aaa7-26a8-4a44-9e0d-13deb2a2d323",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C58",
+      "claim": "Deeply buried brain nuclei can now be accessed optically via microendoscopy through micro-optical probes embedded in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Deeply buried brain nuclei can now be accessed optically via microendoscopy through micro-optical probes embedded in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about current imaging capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "a447199f-a887-4f34-8389-24a944f9836d",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C59",
+      "claim": "For structures such as hippocampus and dorsal lateral geniculate nucleus, a cannula with a glass bottom can be embedded to provide optical access after the removal of overlying tissue, and a microscope objective with a long working distance can be used for imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "For structures such as hippocampus and dorsal lateral geniculate nucleus (Mizrahi et al., 2004; Dombeck et al., 2010; Marshel et al., 2012), a cannula with a glass bottom can be embedded to provide optical access after the removal of overlying tissue, and a microscope objective with a long working distance can be used for imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "2306d414-5b0f-44ad-ae2b-d54f3fd89bd8",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C60",
+      "claim": "To image the lateral hypothalamus, which is 5 mm from the top surface of the mouse brain, passing the light cone of a 0.5-NA microscope objective requires 22 mm3 of brain tissue to be removed, whereas an embedded 0.5-mm-diameter GRIN lens only displaces 1 mm3 of brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, to image the lateral hypothalamus, which is 5 mm from the top surface of the mouse brain, passing the light cone of a 0.5-NA microscope objective requires 22 mm3 of brain tissue to be removed, whereas an embedded 0.5-mm-diameter GRIN lens only displaces 1 mm3 of brain tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on optical geometry.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "8b7bf627-8f41-41fd-9f50-25b197d602a9",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C61",
+      "claim": "Microendoscopy employing GRIN lenses is the preferred method for imaging deep nuclei of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, microendoscopy employing GRIN lenses is the preferred method for imaging deep nuclei of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of tissue damage between methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "b1f93278-c77f-40b3-ae8a-126806f40ecb",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C62",
+      "claim": "Care must be taken to ensure that inflammation has abated before imaging starts and that the physiology of the structures of interest is minimally affected by tissue removal or displacement.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, care must be taken to ensure that inflammation has abated before imaging starts and that the physiology of the structures of interest is minimally affected by tissue removal or displacement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological consideration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "32eee0d2-9def-4330-a93a-78f06ce8fb91",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C63",
+      "claim": "Existing implementation of microendoscopy suffers from low resolution and/or low throughput.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing implementation of microendoscopy suffers from low resolution and/or low throughput.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "df89e74c-ae88-4b54-81ea-cc74e940da28",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C64",
+      "claim": "The intrinsically higher lateral resolution of Bessel foci allowed the authors to resolve dendritic spines and axonal boutons both ex vivo and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The intrinsically higher lateral resolution of Bessel foci allowed us to resolve dendritic spines and axonal boutons both ex vivo and in vivo, while improving imaging throughput up to 19\u00d7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the authors' findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "158a73a2-d16f-49d9-a727-323008875b13",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C65",
+      "claim": "Bessel focus scanning improved imaging throughput up to 19\u00d7.",
+      "claim_type": "EXPLICIT",
+      "source": "The intrinsically higher lateral resolution of Bessel foci allowed us to resolve dendritic spines and axonal boutons both ex vivo and in vivo, while improving imaging throughput up to 19\u00d7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the authors' experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "b6757c68-18b6-477c-b41a-98b2c874042f",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C66",
+      "claim": "The axially extended two-photon fluorescence excitation in Bessel focus scanning microendoscopy makes the imaging process immune to axial motion artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "The axially extended two-photon fluorescence excitation in Bessel focus scanning microendoscopy also makes the imaging process immune to axial motion artifacts and allowed us to obtain high-quality functional imaging data from awake behaving mice without having to resort to complex post-processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' functional imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "4cb363a2-0f40-4376-9bcb-0580dcfe48e8",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C67",
+      "claim": "Because more energy is distributed in the side rings of a Bessel focus, the average power of the excitation light was increased by 1.5\u20134\u00d7, which remains within the safe range for two-photon fluorescence microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Because more energy is distributed in the side rings of a Bessel focus, the average power of the excitation light was increased by 1.5\u20134\u00d7, which remains within the safe range for two-photon fluorescence microscopy (Podgorski and Ranganathan, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' experiments, supported by a citation about safety limits.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "b9b28a0b-969c-4403-8c51-b86cd997d1a8",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C68",
+      "claim": "Bessel focus scanning microendoscopy can be applied to more densely labeled samples, and computational methods can be used to demix activity from overlapping neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we only demonstrated the applications in relatively sparsely labeled samples, Bessel focus scanning microendoscopy can also be applied to more densely labeled samples, and computational methods (Liu et al., 2012; Pnevmatikakis et al., 2016; Zhou et al., 2018) can be used to demix activity from overlapping neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications, supported by citations to computational methods.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "492c82f4-6756-4c70-a5c1-76b1fc67685b",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C69",
+      "claim": "Bessel focus scanning modules can be added to existing microendoscopy setups without additional changes in data acquisition software.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, because Bessel focus scanning modules (Lu et al., 2017; Lu et al., 2018) can be added to existing microendoscopy setups without additional changes in data acquisition software, we expect this method to be easily adoptable for high-throughput synaptic resolution volumetric imaging of deep brain structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical feature of the method, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "4c719746-599c-40b8-8e91-e0f2c7987926",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C70",
+      "claim": "The method is expected to be easily adoptable for high-throughput synaptic resolution volumetric imaging of deep brain structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, because Bessel focus scanning modules (Lu et al., 2017; Lu et al., 2018) can be added to existing microendoscopy setups without additional changes in data acquisition software, we expect this method to be easily adoptable for high-throughput synaptic resolution volumetric imaging of deep brain structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future adoption of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "05b0acba-9819-464c-9771-7dc696c7bec8",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C71",
+      "claim": "All animal experiments were conducted according to the United States National Institutes of Health guidelines for animal research.",
+      "claim_type": "EXPLICIT",
+      "source": "All animal experiments were conducted according to the United States National Institutes of Health guidelines for animal research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental procedures and ethics compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "50c66868-452f-4d40-9f67-d0bc301f283c",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C72",
+      "claim": "Procedures and protocols were approved by the Institutional Animal Care and Use Committee at Janelia Research Campus, Howard Hughes Medical Institute.",
+      "claim_type": "EXPLICIT",
+      "source": "Procedures and protocols were approved by the Institutional Animal Care and Use Committee at Janelia Research Campus, Howard Hughes Medical Institute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental procedures and ethics compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "0d684b51-51c6-49fa-b3c7-92fb055b5912",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C73",
+      "claim": "940 nm output from a femtosecond pulsed laser source was used to provide two-photon excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "940 nm output from a femtosecond pulsed laser source with a built-in dispersion compensation unit (InSight DeepSee, Spectra Physics, CA, USA) was used to provide two-photon excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "a33e1ec5-05dd-4791-a5ec-8cb4284c2ece",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C74",
+      "claim": "Only the thin layer of tissue right next to the implant site exhibited enhanced staining for GFAP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the example brain (Figure 9), only the thin layer of tissue right next to the implant site exhibited enhanced staining for GFAP, in agreement with a previous study (Bocarsly et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' histological analysis, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "600a4ab3-e463-4277-b4b0-31de4f8cab88",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C75",
+      "claim": "Nissl staining showed some tissue deformation in the hippocampal structures below the implant site.",
+      "claim_type": "EXPLICIT",
+      "source": "Nissl staining showed some tissue deformation in the hippocampal structures below the implant site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' histological analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "72114bb3-a03c-439c-a68a-7204eb4a4455",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C76",
+      "claim": "CA1 pyramidal neurons within the imaging FOV maintained laminar distribution despite tissue deformation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CA1 pyramidal neurons within the imaging FOV (indicated by the green bars in Figure 9) maintained laminar distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' histological analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "928c5cf5-80f7-43c0-b0d6-ab00ef2c2bd7",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C77",
+      "claim": "The GFP+ dendrites and axons in the imaged region had normal morphology and were devoid of signs of cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the in vivo imaging results in Figure 8 (same brain as in Figure 9), in which the GFP+ dendrites and axons were found to have normal morphology and were devoid of signs of cell death (e.g., fragmented axons).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' in vivo imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "7c020544-6622-4a74-a013-3f8a160303b0",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C78",
+      "claim": "The measured lateral FWHMs of the Bessel foci (0.93\u20131.27 \u00b5m) were similar to their diffraction-limited value (1.06 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, we found the measured lateral FWHMs of the Bessel foci (0.93\u20131.27 \u00b5m, Figure 4) to be similar to their diffraction-limited value (1.06 \u00b5m) (Richards and Wolf, 1959)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' characterization experiments, compared to theoretical values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "0331eafd-c9c5-447f-8c2a-d11ef6bcf11f",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C79",
+      "claim": "The lateral resolution of the Gaussian foci (measured FWHMs: 1.02\u20131.47 \u00b5m, diffraction-limited value: 0.78 \u00b5m) were substantially degraded by aberrations.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the lateral resolution of the Gaussian foci (measured FWHMs: 1.02\u20131.47 \u00b5m, Figure 4, diffraction-limited value: 0.78 \u00b5m) were substantially degraded by aberrations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' characterization experiments, compared to theoretical values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "a8396f41-d541-41d7-a478-3f25d81a5d38",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C80",
+      "claim": "The circular symmetry of spherical aberrations made them minimally degrade the imaging quality of the Bessel focus formed by annular illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "The circular symmetry of spherical aberrations made them minimally degrade the imaging quality of the Bessel focus formed by annular illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the optical properties of Bessel foci.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "16ee5db0-4949-4915-9684-bcb449cc3008",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C81",
+      "claim": "The off-axis aberrations of the 0.5 mm singlet GRIN lens bore strong characteristics of astigmatism, which deteriorated the quality of the Bessel focus more than the Gaussian focus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the off-axis aberrations of the 0.5 mm singlet GRIN lens bore strong characteristics of astigmatism (lower panels, Figure 6H), which deteriorated the quality of the Bessel focus more than the Gaussian focus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' characterization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "3aa1edf7-45b9-427a-a2eb-52bd1eda5e14",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C82",
+      "claim": "The relative FOV change of Bessel versus Gaussian modes was correlated with the optical aberrations present in the GRIN lenses, with Bessel imaging mode performing better in GRIN lenses with higher imaging qualities.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the relative FOV change of Bessel versus Gaussian modes was correlated with the optical aberrations present in the GRIN lenses, with Bessel imaging mode performing better in GRIN lenses with higher imaging qualities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from their characterization experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "ea56d644-07a9-4bcd-94fc-3648f4852750",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C83",
+      "claim": "For the three GRIN lenses of good quality, the image FOVs obtained with Bessel foci were larger than or equivalent to those of Gaussian foci.",
+      "claim_type": "EXPLICIT",
+      "source": "For the three GRIN lenses of good quality, the image FOVs obtained with Bessel foci were larger than (1 mm doublet, Figure 6A; 1 mm singlet, Figure 5A) or equivalent to (0.5 mm doublet, Figure 5B) those of Gaussian foci.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' characterization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "ffe6087e-b22d-4a54-9a65-9c54cc7d2c17",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C84",
+      "claim": "For the 0.5 mm singlet with poorer imaging performance, a Bessel focus of similar axial length had its FOV slightly reduced when compared to that of the Gaussian focus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for the 0.5 mm singlet with poorer imaging performance, a Bessel focus of similar axial length had its FOV slightly reduced when compared to that of the Gaussian focus (Figure 6D,E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' characterization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "6a9acae0-3284-47e3-9c76-b3d72dd04dae",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C85",
+      "claim": "The GRIN lenses of higher quality provided more uniform excitation efficiency than the GRIN lens with lower imaging quality within the FOV for both Gaussian and Bessel foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, within the FOV for both Gaussian and Bessel foci, the GRIN lenses of higher quality (Figure 5, Figure 6A) provided more uniform excitation efficiency than the GRIN lens with lower imaging quality (0.5 mm singlet, Figure 6D), as indicated by the variation of 2-\u00b5m-diameter bead signal across the FOV (cf., Figure 6C and Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' characterization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "5be92054-f973-41a5-a128-4918fb7c3c1e",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C86",
+      "claim": "The rapid decrease of bead signal from the center in the 0.5 mm singlet GRIN lens was caused by its larger off-axis optical aberration.",
+      "claim_type": "EXPLICIT",
+      "source": "This rapid decrease of bead signal from the center in the 0.5 mm singlet GRIN lens (Figure 6F) was caused by its larger off-axis optical aberration, as demonstrated by the signal and the 3D image profiles of 2 \u00b5m beads located at the center (cyan squares, Figure 6A,D) or closer to the edge of the FOV (~85 \u03bcm from center, magenta squares, Figure 6A,D) taken with Gaussian foci.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the characterization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "f386e67b-9153-4841-a393-012827eda357",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C87",
+      "claim": "At the center of the FOV, the aberration modes of both 1 mm doublet and 0.5 mm singlet were dominated by spherical aberrations.",
+      "claim_type": "EXPLICIT",
+      "source": "At the center of the FOV (upper panels, Figure 6G,H), the aberration modes of both 1 mm doublet and 0.5 mm singlet were dominated by spherical aberrations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' characterization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "f0b7365c-7fac-496b-ae20-2967d8477f88",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C88",
+      "claim": "The 3D bead profile obtained through the 1 mm doublet maintained similar characteristics to the profile at FOV center away from the FOV center, suggesting a similar domination of spherical aberrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Away from the FOV center, the 3D bead profile obtained through the 1 mm doublet maintained similar characteristics to the profile at FOV center, suggesting a similar domination of spherical aberrations (lower panels, Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' characterization experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "23c18a7d-a88d-4d22-998a-ae7cbe1859ca",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C89",
+      "claim": "Bessel focus scanning consistently resolved 2-\u00b5m-diameter beads at the center of the FOV for all four GRIN lenses selected for further characterization.",
+      "claim_type": "EXPLICIT",
+      "source": "For all four GRIN lenses selected for further characterization, Bessel foci consistently resolved 2-\u00b5m-diameter beads at the center of their FOV (Figure 5, Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' characterization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "f2600255-674a-442f-9e7a-5661cb5c04bc",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "claim_id": "C90",
+      "claim": "The 1 mm doublet had a 390-\u00b5m-diameter FOV for a Bessel focus of 53 \u00b5m axial FWHM, which was larger than the 370 \u00b5m FOV of the Gaussian focus.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the 1 mm doublet had a 390-\u00b5m-diameter FOV for a Bessel focus of 53 \u00b5m axial FWHM, which was larger than the 370 \u00b5m FOV of the Gaussian focus (Figure 6A,B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the authors' characterization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bca804ff-8497-4ac7-afe7-f2962bb40423",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors systematically characterized 10 commercially available GRIN lenses and identified three with optimal imaging performance (axial FWHM <15 \u00b5m over most working distances) and one lower-cost alternative with acceptable performance for further testing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C30-C33 describe a systematic characterization with quantitative metrics (axial FWHM, FOV) across multiple GRIN lenses. The data in Figure 2 supports the identification of best-performing lenses, and the comparison to diffraction-limited values (C32) provides appropriate context for the observed aberrations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "a73671f8-45e0-4f7d-9599-52c00b708c9a",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Bessel foci with 0.3 NA provided superior lateral resolution compared to 0.5 NA Gaussian foci through GRIN lenses, with measured lateral FWHMs (0.93-1.27 \u00b5m) approaching the diffraction limit (1.06 \u00b5m), while Gaussian foci showed substantial aberration-induced degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C36, C78-C80 are supported by quantitative PSF measurements from fluorescent beads (Figure 4) with statistical comparisons. The explanation that spherical aberrations minimally degrade Bessel foci due to circular symmetry (C80) is physically reasonable and consistent with the annular illumination geometry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "6d47ee66-b16f-48a2-9ecb-a85a8091e6b1",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Bessel focus scanning maintained or improved FOV compared to Gaussian imaging for high-quality GRIN lenses, with FOV performance correlating with lens aberration characteristics. Lower-quality lenses with astigmatism showed reduced Bessel FOV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C82-C90 describe systematic FOV characterization across different GRIN lenses with supporting data in Figures 5-6. The correlation between aberration type (spherical vs. astigmatic) and Bessel performance (C82, C87-C88) is supported by 3D bead profiles and provides mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "402bdaa0-a5f2-4fce-acf0-56e0e4ee95dc",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In fixed brain tissue, Bessel focus scanning achieved 10-19\u00d7 throughput improvement over Gaussian imaging while maintaining or improving lateral resolution, enabling visualization of dendritic spines and axonal boutons across 3D volumes with single 2D scans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 provide quantitative comparisons (15-19 Gaussian planes vs. 1 Bessel scan) with specific volume dimensions and neuron counts. Figure 7 shows visual evidence of improved spine visualization. The throughput improvement is directly calculable from the reported plane numbers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "5e6c1d28-1ea3-4168-aa35-136275767408",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In vivo hippocampal imaging through implanted GRIN lenses demonstrated that Bessel focus scanning captured dendritic spines and axonal boutons across 3D volumes with superior resolution compared to Gaussian imaging, with histology confirming minimal tissue damage beyond the immediate implant site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 describe in vivo validation with quantitative volume specifications and visual evidence in Figure 8. The histological characterization (C74-C77, Figure 9) appropriately validates tissue integrity, showing limited GFAP staining and maintained laminar organization, which supports the physiological relevance of the imaging data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "c86b9cfd-e4f2-4da1-b090-8d09135413b0",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Bessel focus scanning microendoscopy enabled volumetric functional imaging of GABAergic neurons in the lateral hypothalamus of awake mice, revealing significantly increased population activity and synchrony during hunger-like states compared to satiety-like states, with imaging resistant to motion artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C56 describe functional imaging experiments with appropriate statistical analysis (175 neurons, 3820 correlation coefficients, non-paired t-test, Figure 10). The ability to track neurons across sessions (C52) and the absence of motion artifacts (C49, C66, Videos 1-2) support data quality. The biological finding about metabolic state-dependent activity is appropriately supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "b8cd995f-7864-4118-975a-a47d7053824e",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Incorporating Bessel focus scanning into two-photon microendoscopy enabled high-throughput (up to 19\u00d7 improvement), synapse-resolving volumetric imaging of deep brain structures by extending the excitation focus axially while improving lateral resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C19, C21, C64-C65 represent the core findings of the manuscript, synthesizing the technical advances and biological applications. These summary claims are well-supported by the detailed characterization (Results 1-3) and demonstration experiments (Results 4-5).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "c0b7e11d-155f-4145-a71b-2039ff6f2f64",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The microendoscopy system used GRIN lenses (0.5 or 1 mm diameter, 0.5 NA) to relay the microscope objective focus, with doublet lenses having lower aberrations than singlets and appropriate NA-matched objectives selected for each lens type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 describe the technical implementation with appropriate optical design considerations. The choice of lens diameters (C23) is justified by mouse brain size, and the NA matching (C25-C26) follows standard optical principles. Figure 1 provides schematic support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "64f435f6-aadb-4f3a-b19b-7ff2db3ac72b",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "GRIN lenses have intrinsic aberrations that limit microendoscopy performance, requiring systematic evaluation to identify optimal lenses, which had not been previously undertaken for commercially available options.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 establish the motivation for the characterization work, with C27 supported by citations to prior work on GRIN aberrations. The statement that systematic evaluation was lacking (C29) is reasonable given the absence of cited comprehensive comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "fb2ec9ff-e3d7-40b8-88ca-ee7e2b74f0e2",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Microendoscopy with GRIN lenses is the method of choice for imaging deep brain structures beyond 1-2 mm depth in light-scattering mammalian brains, though previous implementations were limited to cellular-level resolution without resolving synaptic structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C10 establish the context and motivation, supported by appropriate citations to prior work. The depth limitation of conventional multiphoton microscopy (C6) and the cellular-level resolution of previous microendoscopy (C10) are well-established in the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "b4490223-5c34-48b8-93f0-6a7561809b3d",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Microendoscopy experiments face challenges including lower surgical success rates, behavioral variability, and sparse 3D distribution of target cell types, motivating the need for volumetric imaging methods with synapse-resolving resolution that had not been previously demonstrated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 describe experimental challenges that motivate the technical development. These are stated as general knowledge (C11-C12) or supported by citations (C13), and collectively establish the need for the presented method (C14).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "44638ee5-f94b-4308-9c87-e0e69f744ffd",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work by the authors demonstrated that Bessel focus scanning with two-photon microscopy enabled fast volumetric imaging with 10-100\u00d7 throughput improvement and resistance to axial motion artifacts for superficial brain structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 describe prior work that forms the foundation for the current study, appropriately supported by citations to the authors' previous publications. This establishes the technical basis for extending the method to microendoscopy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "c28e045e-522a-4c2f-b8bd-2673717a0128",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Microendoscopy with GRIN lenses is preferred over cannula-based approaches for deep structures due to minimal tissue displacement (1 mm\u00b3 vs. 22 mm\u00b3 for lateral hypothalamus), though both require careful attention to inflammation and physiological integrity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63 provide discussion context comparing different deep imaging approaches. The tissue volume calculation (C60) is geometrically sound for a 0.5 NA light cone over 5 mm depth. The methodological considerations (C62) are appropriate caveats.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "93ac4299-f39a-47dd-a20b-85b2333c8334",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Bessel focus scanning required 1.5-4\u00d7 higher average excitation power due to energy distribution in side rings, remaining within safe limits for two-photon microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 reports increased power requirements with appropriate citation to safety limits. The power increases are consistent with values reported in Figure 7-8 legends and represent a reasonable tradeoff for the axial extension.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "9223cd7e-3fe9-4603-a29b-ab30e597889d",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Higher quality GRIN lenses should be used when budget and space constraints allow to achieve optimal imaging performance in both Bessel and Gaussian modes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 is a reasonable recommendation based on the characterization data showing superior performance of higher-quality lenses (C30-C31, C83, C85). This represents practical guidance derived from the systematic comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "934e28a2-cc2d-419d-bdda-e6c02f4b3a8b",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The Bessel focus scanning method can potentially be applied to more densely labeled samples using computational demixing and is expected to be easily adoptable as it can be added to existing setups without software changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C70 represent speculation about future applications and adoption. While C69 is supported by citations to the modular design, C68 and C70 are expectations rather than demonstrated results. The potential for dense labeling (C68) is plausible but unvalidated in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "922f1b29-61fd-453f-8c30-f1cb94874573",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The Bessel focus scanning microendoscopy approach was applied to anatomical imaging in hippocampus and functional imaging in lateral hypothalamus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 accurately summarize the two main application demonstrations, which are detailed in Results 4 and 5. These represent appropriate proof-of-concept applications for the method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "2c3d3e52-b709-4380-a989-23938b99d206",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Animal experiments followed NIH guidelines with IACUC approval, using 940 nm two-photon excitation from a femtosecond laser.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 describe standard methodological details and ethics compliance. These are appropriately documented procedural statements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    },
+    {
+      "id": "9cabb3ac-a7a6-4d49-8d8a-96a65ffb4420",
+      "content_id": "40d9e0fa-d7a1-4a1a-9df1-7c617d178726",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The 0.5 mm singlet GRIN lens exhibited astigmatic off-axis aberrations that degraded Bessel focus quality more than Gaussian focus quality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is supported by the 3D bead profiles in Figure 6H showing asymmetric aberrations. This explains the differential FOV performance between Bessel and Gaussian modes for this lens (C84) and contributes to understanding the aberration-dependence of Bessel imaging.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:54.386706Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a86c3dd5-acb5-4b54-85ed-93bc1c9b111b",
+      "result_id": "bca804ff-8497-4ac7-afe7-f2962bb40423"
+    },
+    {
+      "claim_id": "aa6f24d6-d75e-4201-bbd1-bdbb0f1d7b8f",
+      "result_id": "bca804ff-8497-4ac7-afe7-f2962bb40423"
+    },
+    {
+      "claim_id": "b2177b40-e2ae-4d5f-84a9-763a61ffd706",
+      "result_id": "bca804ff-8497-4ac7-afe7-f2962bb40423"
+    },
+    {
+      "claim_id": "0d1a6f88-d07c-435e-ba9c-5d606f9bdc6f",
+      "result_id": "bca804ff-8497-4ac7-afe7-f2962bb40423"
+    },
+    {
+      "claim_id": "f8b4cb6e-aa04-4c8e-86fe-73c670ca459c",
+      "result_id": "bca804ff-8497-4ac7-afe7-f2962bb40423"
+    },
+    {
+      "claim_id": "8ec0e9c9-aefb-4448-85fc-c3bf3e7d9991",
+      "result_id": "a73671f8-45e0-4f7d-9599-52c00b708c9a"
+    },
+    {
+      "claim_id": "a534f05c-0612-438c-bf45-9cc375cd3729",
+      "result_id": "a73671f8-45e0-4f7d-9599-52c00b708c9a"
+    },
+    {
+      "claim_id": "30b6e88f-dee5-446a-9a54-0c80720b95af",
+      "result_id": "a73671f8-45e0-4f7d-9599-52c00b708c9a"
+    },
+    {
+      "claim_id": "7c020544-6622-4a74-a013-3f8a160303b0",
+      "result_id": "a73671f8-45e0-4f7d-9599-52c00b708c9a"
+    },
+    {
+      "claim_id": "0331eafd-c9c5-447f-8c2a-d11ef6bcf11f",
+      "result_id": "a73671f8-45e0-4f7d-9599-52c00b708c9a"
+    },
+    {
+      "claim_id": "a8396f41-d541-41d7-a478-3f25d81a5d38",
+      "result_id": "a73671f8-45e0-4f7d-9599-52c00b708c9a"
+    },
+    {
+      "claim_id": "519e2355-c13f-4b5a-a6f2-e00be7bdcbb2",
+      "result_id": "6d47ee66-b16f-48a2-9ecb-a85a8091e6b1"
+    },
+    {
+      "claim_id": "3aa1edf7-45b9-427a-a2eb-52bd1eda5e14",
+      "result_id": "6d47ee66-b16f-48a2-9ecb-a85a8091e6b1"
+    },
+    {
+      "claim_id": "ea56d644-07a9-4bcd-94fc-3648f4852750",
+      "result_id": "6d47ee66-b16f-48a2-9ecb-a85a8091e6b1"
+    },
+    {
+      "claim_id": "ffe6087e-b22d-4a54-9a65-9c54cc7d2c17",
+      "result_id": "6d47ee66-b16f-48a2-9ecb-a85a8091e6b1"
+    },
+    {
+      "claim_id": "6a9acae0-3284-47e3-9c76-b3d72dd04dae",
+      "result_id": "6d47ee66-b16f-48a2-9ecb-a85a8091e6b1"
+    },
+    {
+      "claim_id": "5be92054-f973-41a5-a128-4918fb7c3c1e",
+      "result_id": "6d47ee66-b16f-48a2-9ecb-a85a8091e6b1"
+    },
+    {
+      "claim_id": "f386e67b-9153-4841-a393-012827eda357",
+      "result_id": "6d47ee66-b16f-48a2-9ecb-a85a8091e6b1"
+    },
+    {
+      "claim_id": "f0b7365c-7fac-496b-ae20-2967d8477f88",
+      "result_id": "6d47ee66-b16f-48a2-9ecb-a85a8091e6b1"
+    },
+    {
+      "claim_id": "23c18a7d-a88d-4d22-998a-ae7cbe1859ca",
+      "result_id": "6d47ee66-b16f-48a2-9ecb-a85a8091e6b1"
+    },
+    {
+      "claim_id": "f2600255-674a-442f-9e7a-5661cb5c04bc",
+      "result_id": "6d47ee66-b16f-48a2-9ecb-a85a8091e6b1"
+    },
+    {
+      "claim_id": "e7677dbe-0344-4f1b-ad82-1d1745f0285e",
+      "result_id": "402bdaa0-a5f2-4fce-acf0-56e0e4ee95dc"
+    },
+    {
+      "claim_id": "86a35835-ca73-4da8-a68a-57b3e2bde203",
+      "result_id": "402bdaa0-a5f2-4fce-acf0-56e0e4ee95dc"
+    },
+    {
+      "claim_id": "3d50ed61-68b4-4344-9794-ffec2751af93",
+      "result_id": "402bdaa0-a5f2-4fce-acf0-56e0e4ee95dc"
+    },
+    {
+      "claim_id": "93619a59-aa16-418a-825d-4fc545cae16b",
+      "result_id": "402bdaa0-a5f2-4fce-acf0-56e0e4ee95dc"
+    },
+    {
+      "claim_id": "a9d0a18a-f4e1-4cb4-85b1-b4101e689c5d",
+      "result_id": "5e6c1d28-1ea3-4168-aa35-136275767408"
+    },
+    {
+      "claim_id": "45d07358-45e1-4fc4-a6d2-2bb1427d5325",
+      "result_id": "5e6c1d28-1ea3-4168-aa35-136275767408"
+    },
+    {
+      "claim_id": "5e9e087d-d729-4cac-9f73-da02e866dae7",
+      "result_id": "5e6c1d28-1ea3-4168-aa35-136275767408"
+    },
+    {
+      "claim_id": "9a4242a4-569b-4ba3-b6d6-105c66420938",
+      "result_id": "5e6c1d28-1ea3-4168-aa35-136275767408"
+    },
+    {
+      "claim_id": "ce6e9c41-8134-4193-9451-c1bd73739b3e",
+      "result_id": "5e6c1d28-1ea3-4168-aa35-136275767408"
+    },
+    {
+      "claim_id": "a33e1ec5-05dd-4791-a5ec-8cb4284c2ece",
+      "result_id": "5e6c1d28-1ea3-4168-aa35-136275767408"
+    },
+    {
+      "claim_id": "600a4ab3-e463-4277-b4b0-31de4f8cab88",
+      "result_id": "5e6c1d28-1ea3-4168-aa35-136275767408"
+    },
+    {
+      "claim_id": "72114bb3-a03c-439c-a68a-7204eb4a4455",
+      "result_id": "5e6c1d28-1ea3-4168-aa35-136275767408"
+    },
+    {
+      "claim_id": "928c5cf5-80f7-43c0-b0d6-ab00ef2c2bd7",
+      "result_id": "5e6c1d28-1ea3-4168-aa35-136275767408"
+    },
+    {
+      "claim_id": "7ed1179a-50cf-4778-8c77-2005c8a6dfe6",
+      "result_id": "c86b9cfd-e4f2-4da1-b090-8d09135413b0"
+    },
+    {
+      "claim_id": "40067708-38b1-4563-84ed-9378f0eb76b5",
+      "result_id": "c86b9cfd-e4f2-4da1-b090-8d09135413b0"
+    },
+    {
+      "claim_id": "0ef267ec-7d44-4df7-a4bb-0775f53df43e",
+      "result_id": "c86b9cfd-e4f2-4da1-b090-8d09135413b0"
+    },
+    {
+      "claim_id": "1eef3301-606c-4725-9dd1-c254050e95b3",
+      "result_id": "c86b9cfd-e4f2-4da1-b090-8d09135413b0"
+    },
+    {
+      "claim_id": "e0a86799-3685-4d9e-ac13-28419bb3b6b5",
+      "result_id": "c86b9cfd-e4f2-4da1-b090-8d09135413b0"
+    },
+    {
+      "claim_id": "6fe68035-7695-49e5-a650-c1e4c6388cf3",
+      "result_id": "c86b9cfd-e4f2-4da1-b090-8d09135413b0"
+    },
+    {
+      "claim_id": "45a23515-2e8d-4f7c-97f6-84c14ae59be7",
+      "result_id": "c86b9cfd-e4f2-4da1-b090-8d09135413b0"
+    },
+    {
+      "claim_id": "f8611e0b-359e-4323-b635-325388d79393",
+      "result_id": "c86b9cfd-e4f2-4da1-b090-8d09135413b0"
+    },
+    {
+      "claim_id": "b6757c68-18b6-477c-b41a-98b2c874042f",
+      "result_id": "c86b9cfd-e4f2-4da1-b090-8d09135413b0"
+    },
+    {
+      "claim_id": "c5a8d9c0-9490-40d2-9878-71615229bd34",
+      "result_id": "b8cd995f-7864-4118-975a-a47d7053824e"
+    },
+    {
+      "claim_id": "c7765b3e-cd84-4b15-92f8-1ca31f84e40d",
+      "result_id": "b8cd995f-7864-4118-975a-a47d7053824e"
+    },
+    {
+      "claim_id": "bbd03d77-1c79-4131-89f5-8ca0051ad21d",
+      "result_id": "b8cd995f-7864-4118-975a-a47d7053824e"
+    },
+    {
+      "claim_id": "e0ee3322-9ac2-416c-b36e-09a3b01ed83c",
+      "result_id": "b8cd995f-7864-4118-975a-a47d7053824e"
+    },
+    {
+      "claim_id": "df89e74c-ae88-4b54-81ea-cc74e940da28",
+      "result_id": "b8cd995f-7864-4118-975a-a47d7053824e"
+    },
+    {
+      "claim_id": "158a73a2-d16f-49d9-a727-323008875b13",
+      "result_id": "b8cd995f-7864-4118-975a-a47d7053824e"
+    },
+    {
+      "claim_id": "261163f1-3f07-49dd-a90d-21170e4ae2a3",
+      "result_id": "c0b7e11d-155f-4145-a71b-2039ff6f2f64"
+    },
+    {
+      "claim_id": "b6dc8afd-6f63-4da1-890c-91ef03c2a5ba",
+      "result_id": "c0b7e11d-155f-4145-a71b-2039ff6f2f64"
+    },
+    {
+      "claim_id": "915a65b5-3c5b-44e9-b410-757344fbb367",
+      "result_id": "c0b7e11d-155f-4145-a71b-2039ff6f2f64"
+    },
+    {
+      "claim_id": "a31ed6e3-55f7-4177-8bbb-06cebd56f979",
+      "result_id": "c0b7e11d-155f-4145-a71b-2039ff6f2f64"
+    },
+    {
+      "claim_id": "1dd29625-b9c2-481c-9841-63328870d15f",
+      "result_id": "c0b7e11d-155f-4145-a71b-2039ff6f2f64"
+    },
+    {
+      "claim_id": "35fad52b-3ea0-4f70-816d-a291f5c6a01b",
+      "result_id": "64f435f6-aadb-4f3a-b19b-7ff2db3ac72b"
+    },
+    {
+      "claim_id": "9ab622e5-a8f3-4fec-b25b-45ffb6396079",
+      "result_id": "64f435f6-aadb-4f3a-b19b-7ff2db3ac72b"
+    },
+    {
+      "claim_id": "7eebcfad-7f7e-4fd3-8005-97f1ed309b14",
+      "result_id": "64f435f6-aadb-4f3a-b19b-7ff2db3ac72b"
+    },
+    {
+      "claim_id": "9436c004-8941-456c-b218-23d70f4c4796",
+      "result_id": "fb2ec9ff-e3d7-40b8-88ca-ee7e2b74f0e2"
+    },
+    {
+      "claim_id": "0360f641-0339-4e48-b26e-8d6b987b6c02",
+      "result_id": "fb2ec9ff-e3d7-40b8-88ca-ee7e2b74f0e2"
+    },
+    {
+      "claim_id": "6a3b9f06-9479-4975-9ebf-50bb8c8fee5a",
+      "result_id": "fb2ec9ff-e3d7-40b8-88ca-ee7e2b74f0e2"
+    },
+    {
+      "claim_id": "a70f9294-44de-4ed5-a857-e48035fc8287",
+      "result_id": "fb2ec9ff-e3d7-40b8-88ca-ee7e2b74f0e2"
+    },
+    {
+      "claim_id": "8ac2b4f0-a41e-41bd-8cad-c956476aabca",
+      "result_id": "fb2ec9ff-e3d7-40b8-88ca-ee7e2b74f0e2"
+    },
+    {
+      "claim_id": "45f52560-aa47-4168-b2cb-400584539401",
+      "result_id": "fb2ec9ff-e3d7-40b8-88ca-ee7e2b74f0e2"
+    },
+    {
+      "claim_id": "b47638e3-6542-4d5e-b1f8-c223b6023da9",
+      "result_id": "b4490223-5c34-48b8-93f0-6a7561809b3d"
+    },
+    {
+      "claim_id": "c822ca05-7e77-43ee-92c1-8689c183cdb3",
+      "result_id": "b4490223-5c34-48b8-93f0-6a7561809b3d"
+    },
+    {
+      "claim_id": "271b6650-82d8-47aa-834e-d090f1d03a37",
+      "result_id": "b4490223-5c34-48b8-93f0-6a7561809b3d"
+    },
+    {
+      "claim_id": "c68c10c3-2d1b-427f-aaef-c4839183d199",
+      "result_id": "b4490223-5c34-48b8-93f0-6a7561809b3d"
+    },
+    {
+      "claim_id": "dc3d6513-89d6-4f67-a926-358ba517633e",
+      "result_id": "44638ee5-f94b-4308-9c87-e0e69f744ffd"
+    },
+    {
+      "claim_id": "4d9a8091-4309-4d3d-9bb5-b055e5289a80",
+      "result_id": "44638ee5-f94b-4308-9c87-e0e69f744ffd"
+    },
+    {
+      "claim_id": "81b2c0e3-e71a-4fdb-a7ee-224713d3f11b",
+      "result_id": "44638ee5-f94b-4308-9c87-e0e69f744ffd"
+    },
+    {
+      "claim_id": "b80ff204-4a98-402d-ad57-bbe60229f998",
+      "result_id": "44638ee5-f94b-4308-9c87-e0e69f744ffd"
+    },
+    {
+      "claim_id": "c99d4a20-c879-48f9-b075-5b3a1b209ba0",
+      "result_id": "c28e045e-522a-4c2f-b8bd-2673717a0128"
+    },
+    {
+      "claim_id": "61f9aaa7-26a8-4a44-9e0d-13deb2a2d323",
+      "result_id": "c28e045e-522a-4c2f-b8bd-2673717a0128"
+    },
+    {
+      "claim_id": "a447199f-a887-4f34-8389-24a944f9836d",
+      "result_id": "c28e045e-522a-4c2f-b8bd-2673717a0128"
+    },
+    {
+      "claim_id": "2306d414-5b0f-44ad-ae2b-d54f3fd89bd8",
+      "result_id": "c28e045e-522a-4c2f-b8bd-2673717a0128"
+    },
+    {
+      "claim_id": "8b7bf627-8f41-41fd-9f50-25b197d602a9",
+      "result_id": "c28e045e-522a-4c2f-b8bd-2673717a0128"
+    },
+    {
+      "claim_id": "b1f93278-c77f-40b3-ae8a-126806f40ecb",
+      "result_id": "c28e045e-522a-4c2f-b8bd-2673717a0128"
+    },
+    {
+      "claim_id": "32eee0d2-9def-4330-a93a-78f06ce8fb91",
+      "result_id": "c28e045e-522a-4c2f-b8bd-2673717a0128"
+    },
+    {
+      "claim_id": "4cb363a2-0f40-4376-9bcb-0580dcfe48e8",
+      "result_id": "93ac4299-f39a-47dd-a20b-85b2333c8334"
+    },
+    {
+      "claim_id": "ebbc7c1a-0e5d-4ebd-b1a4-9be79c0fecf7",
+      "result_id": "9223cd7e-3fe9-4603-a29b-ab30e597889d"
+    },
+    {
+      "claim_id": "b9b28a0b-969c-4403-8c51-b86cd997d1a8",
+      "result_id": "934e28a2-cc2d-419d-bdda-e6c02f4b3a8b"
+    },
+    {
+      "claim_id": "492c82f4-6756-4c70-a5c1-76b1fc67685b",
+      "result_id": "934e28a2-cc2d-419d-bdda-e6c02f4b3a8b"
+    },
+    {
+      "claim_id": "4c719746-599c-40b8-8e91-e0f2c7987926",
+      "result_id": "934e28a2-cc2d-419d-bdda-e6c02f4b3a8b"
+    },
+    {
+      "claim_id": "a61c5a14-4243-4e3c-9978-5a6fea577c39",
+      "result_id": "922f1b29-61fd-453f-8c30-f1cb94874573"
+    },
+    {
+      "claim_id": "c6dc5bdf-9c0c-4687-96ee-f2513219b812",
+      "result_id": "922f1b29-61fd-453f-8c30-f1cb94874573"
+    },
+    {
+      "claim_id": "05b0acba-9819-464c-9771-7dc696c7bec8",
+      "result_id": "2c3d3e52-b709-4380-a989-23938b99d206"
+    },
+    {
+      "claim_id": "50c66868-452f-4d40-9f67-d0bc301f283c",
+      "result_id": "2c3d3e52-b709-4380-a989-23938b99d206"
+    },
+    {
+      "claim_id": "0d684b51-51c6-49fa-b3c7-92fb055b5912",
+      "result_id": "2c3d3e52-b709-4380-a989-23938b99d206"
+    },
+    {
+      "claim_id": "16ee5db0-4949-4915-9684-bcb449cc3008",
+      "result_id": "9cabb3ac-a7a6-4d49-8d8a-96a65ffb4420"
+    }
+  ],
+  "comparisons": []
+}

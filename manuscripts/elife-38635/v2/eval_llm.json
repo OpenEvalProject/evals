@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5"
+    ],
+    "result": "IIS reduction modulates global SUMOylation patterns and specifically reduces CAR-1 SUMOylation approximately threefold without affecting CAR-1 protein levels or car-1 gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging evidence from western blots (C1), mass spectrometry (C2, C3), and protein quantification (C5) demonstrating that daf-2 RNAi reduces CAR-1 SUMOylation while maintaining stable CAR-1 protein levels. The multiple independent experimental approaches strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "CAR-1 contains multiple SUMOylation sites, with K185 and K257 identified as predicted SUMOylation motifs, and K185 being the more likely site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by computational prediction (GPS-SUMO tool) and immunoprecipitation data showing that mutation of either K185 or K257 alone does not abolish SUMOylation, confirming multiple modification sites. The computational and experimental approaches are complementary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C48"
+    ],
+    "result": "SUMOylation of CAR-1 at lysine 185, but not lysine 257, regulates lifespan, as CAR-1 K185R expression extends lifespan by approximately 53% while CAR-1 K257R has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C48 demonstrate site-specific effects of SUMOylation on lifespan through multiple independent experiments showing significant lifespan extension with K185R mutation but not K257R mutation. The differential effects of the two mutations provide strong evidence for K185-specific regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C72",
+      "C73"
+    ],
+    "result": "car-1 is required for normal lifespan and full longevity of daf-2 mutants in a DAF-16-dependent manner, as car-1 knockout or RNAi shortens lifespan in wild-type and daf-2 mutant worms but has no effect in daf-16 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C72-C73 provide consistent evidence across multiple genetic backgrounds showing that car-1 regulates lifespan through DAF-16. The lack of effect in daf-16 mutants (C11) combined with lifespan shortening in wild-type and daf-2 mutants (C9-C10) establishes epistatic relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C49"
+    ],
+    "result": "CAR-1 K185R-mediated longevity requires DAF-16, but CAR-1 also regulates lifespan through DAF-16-independent mechanisms, as daf-16 RNAi reduces CAR-1 K185R worm lifespan to wild-type levels rather than below.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12 and C49 present an apparent paradox: CAR-1 K185R longevity is DAF-16-dependent (C12), yet the authors infer DAF-16-independent mechanisms exist (C49) because daf-16 RNAi doesn't shorten lifespan below wild-type. This interpretation is speculative and could alternatively reflect incomplete RNAi knockdown or ceiling effects in short-lived worms. Additional experiments are needed to definitively establish DAF-16-independent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C46",
+      "C47"
+    ],
+    "result": "CAR-1 mediates its lifespan effects through the GLP-1 pathway, as car-1 RNAi does not affect lifespan in glp-1 or kri-1 mutant worms, suggesting CAR-1 negatively regulates GLP-1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C46-C47 demonstrate genetic epistasis through loss-of-function experiments showing car-1 RNAi has no effect when glp-1 or kri-1 are mutated. This places CAR-1 upstream or parallel to GLP-1 in the longevity pathway. The inference of negative regulation (C47) is supported by gene expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "car-1 regulates lifespan independently of the daf-9/daf-12 pathway, as car-1 RNAi shortens lifespan similarly in wild-type, daf-9, and daf-12 mutant worms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 show that car-1 RNAi produces similar lifespan shortening effects across different genetic backgrounds (wild-type, daf-9, daf-12 mutants), indicating independence from the TGF-\u03b2/steroid hormone pathway. The similar magnitude of effects supports pathway independence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C15"
+    ],
+    "result": "CAR-1 regulates germ cell number in a dose-dependent manner: car-1 RNAi has no effect, wild-type CAR-1 overexpression reduces germ cells, and CAR-1 K185R overexpression further reduces germ cells by approximately 22%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 and C15 demonstrate dose-dependent effects through germ cell counting experiments. The graded response (no effect \u2192 reduction \u2192 greater reduction) with increasing CAR-1 activity supports a direct regulatory role. However, the lack of effect with car-1 RNAi (C50) is explained by the authors as due to SUMOylation-mediated inactivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C77",
+      "C78"
+    ],
+    "result": "car-1 RNAi and CAR-1 K185R expression both increase germline apoptosis approximately 2.5-fold and 80% respectively, despite having opposite effects on lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C77-C78 are supported by acridine orange staining data showing increased apoptosis with both car-1 knockdown and K185R overexpression. However, this creates an apparent paradox where both interventions increase apoptosis but have opposite lifespan effects, suggesting apoptosis level alone doesn't determine longevity outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C79",
+      "C80"
+    ],
+    "result": "CAR-1 K185R expression reduces brood size to approximately 105 progeny compared to 271 in wild-type worms, while car-1 RNAi reduces brood size by 45% in wild-type and 91% in kri-1 mutant worms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C79-C80 are supported by egg-laying assays showing consistent reductions in progeny across different genetic manipulations. The more severe effect in kri-1 mutants (C80) suggests genetic interaction between car-1 and kri-1 in reproduction control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "CAR-1 regulates reproduction through both GLP-1-dependent and GLP-1-independent mechanisms, with effects dependent on functional daf-9 and daf-12, as car-1 RNAi causes near-sterility in daf-2 and daf-16 mutants but has no effect in daf-9 and daf-12 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C81-C83 demonstrate complex genetic interactions through egg-laying assays in multiple mutant backgrounds. The differential effects across genetic backgrounds support multiple regulatory mechanisms. However, the severe sterility in daf-2/daf-16 mutants could reflect additive defects rather than specific pathway interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C54"
+    ],
+    "result": "GLP-1 positively regulates car-1 expression (approximately 65% reduction when glp-1 is inactivated) and the expression of its target genes sygl-1 and lst-1, establishing a regulatory circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C54 are supported by qPCR data showing temperature-dependent effects in glp-1 mutants. The reciprocal regulation between CAR-1 and GLP-1 suggests a feedback loop. However, the magnitude of car-1 reduction (65%) is substantial and could have pleiotropic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C55",
+      "C56"
+    ],
+    "result": "CAR-1 differentially regulates GLP-1 target genes, negatively controlling sygl-1 expression (increased upon car-1 knockdown) but positively affecting lst-1 expression (decreased upon car-1 knockdown).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C55-C56 demonstrate gene-specific regulatory effects through qPCR in daf-2 mutants. The opposing effects on different GLP-1 targets indicate CAR-1 acts as a context-dependent co-regulator rather than a simple repressor. This complexity is consistent with transcriptional co-factor biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "CAR-1 regulates A\u03b2 proteotoxicity in a DAF-16-dependent manner: car-1 RNAi increases paralysis, concurrent daf-2/car-1 knockdown partially protects, and CAR-1 K185R expression provides significant protection from day 7 onward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 provide consistent evidence from paralysis assays across five independent experiments showing CAR-1's role in proteostasis. The partial protection with concurrent knockdown (C24) and DAF-16 dependence (C26) establish mechanistic relationships. The delayed protection onset (day 7, C25) suggests age-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C57"
+    ],
+    "result": "CAR-1 controls polyglutamine proteotoxicity through GLP-1, as car-1 RNAi decreases motility in polyQ67-YFP worms at day 4 and enhances paralysis in polyQ35-YFP worms but not in polyQ35-YFP/glp-1 double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C57 demonstrate GLP-1-dependent proteostasis regulation through genetic epistasis experiments. The lack of car-1 RNAi effect in glp-1 mutants (C28) provides strong evidence for pathway dependence. The age-specific effect at day 4 (C27) indicates progressive proteotoxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The CAR-1-associated RNA helicase CGH-1 also modulates lifespan and proteostasis, as cgh-1 RNAi significantly increases paralysis rates in A\u03b2 worms, suggesting CAR-1 and CGH-1 cooperatively regulate proteostasis through GLP-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C58-C60 extend the CAR-1 findings to its binding partner CGH-1 through parallel experiments. The similar effects of car-1 and cgh-1 RNAi on proteotoxicity support a cooperative mechanism. However, the inference that both act through GLP-1 (C60) is based primarily on analogy to CAR-1 rather than direct testing of CGH-1/GLP-1 epistasis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "car-1 has minimal effects on heat stress resistance: car-1 RNAi shows no significant effect in CF512 and N2 worms, while CAR-1 K185R expression provides modest but significant protection (p<0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by heat stress survival assays, though the effects are small. The lack of car-1 RNAi effect (C30) contrasts with the modest K185R protection (C31), suggesting SUMOylation state matters for heat resistance. However, the small effect size and marginal significance (p<0.04) warrant cautious interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "CAR-1 has opposing effects on different stress responses: car-1 RNAi provides small but significant protection against P. aeruginosa and UV radiation, while CAR-1 overexpression (wild-type or K185R) reduces survival after these stresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 demonstrate stress-specific and direction-dependent effects through survival assays. The protective effect of car-1 RNAi contrasts with its detrimental effects on proteostasis and lifespan, supporting the authors' conclusion that stress resistance and longevity are uncoupled. The reciprocal effects of knockdown versus overexpression strengthen the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C91"
+    ],
+    "result": "The IIS suppresses CAR-1 activity through SUMOylation at K185, which activates GLP-1 to shorten lifespan and impair proteostasis, with SUMOylation serving as a functional switch governed by IIS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C91 synthesize multiple experimental observations into a mechanistic model. The model is supported by: (1) IIS reduction lowers CAR-1 SUMOylation, (2) SUMOylation-resistant CAR-1 K185R extends lifespan and protects from proteotoxicity, (3) car-1 acts through GLP-1, and (4) effects are largely DAF-16-dependent. The convergence of genetic, biochemical, and phenotypic data supports this integrative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Two potential mechanisms are proposed for how IIS controls CAR-1 SUMOylation: (1) IIS reduction lowers AKT activity, destabilizing SMO-1 and reducing UBC-9 activity, or (2) IIS positively regulates expression of genes encoding CAR-1 SUMOylation machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 present speculative mechanisms without direct experimental support. C92 is based on mammalian studies (Lin et al., 2016) that may not apply to C. elegans, and C93 is purely hypothetical. Neither mechanism is tested in this study. The differential SUMOylation of different proteins upon IIS reduction (Figure 1A) argues against a global SMO-1 destabilization mechanism (C92).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "IIS reduction protects from proteotoxicity and extends lifespan through additional CAR-1-independent mechanisms, as simultaneous daf-2 and car-1 knockdown only partially reduces daf-2 RNAi protective effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by the observation that concurrent daf-2/car-1 RNAi still provides partial protection from A\u03b2 paralysis (C24), indicating CAR-1 is not the sole mediator of IIS effects. However, the interpretation is complicated by potential additive effects and incomplete RNAi knockdown. Additional experiments with complete loss-of-function alleles would strengthen this conclusion.",
+    "result_type": "MINOR"
+  }
+]

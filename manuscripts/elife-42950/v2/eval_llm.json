@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors argue that traditional multivariate autoregressive models and non-parametric spectral methods have significant limitations for analyzing neural data. These limitations include failure to account for signal complexity (C1), assumptions of independence across time and frequency that are violated by neural data (C22, C23), univariate application that neglects spatial structure (C24), and controversy over frequency band selection (C19, C20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C14, C19-C24 collectively establish the motivation for the study by documenting known limitations of existing methods. These claims are supported by multiple citations to prior work (C15, C21, C23) and represent established knowledge in the field. The characterization of these limitations is consistent with the neuroscience literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors describe parametric VAR models and Granger causality methods as alternatives to non-parametric approaches, noting their use in neuroscience and other fields. However, they emphasize that these methods critically depend on assumptions of linearity and variance-stationarity (C30), and that violation of these assumptions\u2014particularly variance non-stationarity in EEG signals (C32)\u2014leads to inconsistent and misleading conclusions (C31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 provide well-cited background on parametric methods and their limitations. The characterization of VAR model assumptions and their violations is supported by appropriate citations (C26, C29, C31, C32). This establishes the rationale for developing stochastic volatility approaches that relax variance-stationarity assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors motivate the use of stochastic volatility models by drawing parallels between neural and financial time series data. They demonstrate that iEEG volatility exhibits log-normality (C51, C52), similar to financial data (C50), and argue that stochastic volatility models are more appropriate than GARCH models because they allow volatility to be non-deterministic (C46, C48, C49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C54 establish the theoretical foundation for applying stochastic volatility models to neural data. The log-normality of iEEG volatility is demonstrated empirically in Figure 1 (C52), and the comparison to financial data is well-cited (C33, C50, C54). The critique of GARCH models is supported by appropriate citations (C48, C49).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors propose a multivariate stochastic volatility (MSV) model that generalizes previous univariate approaches by allowing a full (non-diagonal) coefficient matrix in the VAR process for volatility. This enables modeling of directional interactions between brain regions (C35, C59). The model is estimated using Bayesian methods with forward filtering backward sampling and Metropolis-Hastings algorithms (C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C58-C60 describe the core methodological contribution. The model specification is clearly stated (C34, C35), the generalization from diagonal to full coefficient matrix is justified (C58, C59), and the estimation approach is specified (C36). The feasibility argument based on high temporal resolution data (C60) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C61",
+      "C62",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study analyzed iEEG data from 96 neurosurgical patients with drug-resistant epilepsy performing a verbal free-recall memory task. The experimental design, data acquisition parameters, and preprocessing steps are described in detail, including electrode placement, recording parameters, filtering, re-referencing, and spectral analysis methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C61-C62, C103-C118 provide comprehensive methodological details about the dataset, experimental paradigm, and data processing. The sample size is substantial (96 patients), ethical approvals are documented (C105), and technical specifications are clearly stated. The methods are sufficiently detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C63",
+      "C64",
+      "C65",
+      "C99"
+    ],
+    "result": "The MSV model provides a substantially superior fit to MTL recordings compared to univariate stochastic volatility (SV) models. Model comparison using the Deviance Information Criterion (DIC) showed the MSV model had consistently lower DIC values with a mean difference of 23 (\u00b15.9 SEM) (C64), indicating the MSV model is approximately 150 times more probable than SV models (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C63-C65, C99 demonstrate the superiority of the multivariate approach. The use of DIC for Bayesian model comparison is appropriate (C63), the quantitative results are clearly stated (C64), and the interpretation using Bayes factors is properly cited (C65). The conclusion that accounting for inter-regional interactions improves model fit is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C66",
+      "C78"
+    ],
+    "result": "The implied volatility from the MSV model positively correlates with spectral power across the frequency spectrum, with correlation increasing with frequency. The correlation is significantly positive across all frequencies and particularly strong in the gamma frequency band (C40), as demonstrated using Gaussian process regression (C66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C40, C66, C78 establish the relationship between model-derived volatility and traditional spectral measures. The analysis uses appropriate statistical methods (Gaussian process regression) to account for correlations among frequencies, and the results are clearly visualized in Figure 3. The finding validates the volatility measure against established neural activity markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C41",
+      "C68",
+      "C69",
+      "C70",
+      "C79",
+      "C80",
+      "C101"
+    ],
+    "result": "Volatility features derived from the MSV model can reliably decode memory states, with an average AUC of 0.53 (95% CI: 0.51-0.55) (C68). The volatility-based classifier performs as well as or better than spectral power classifiers across nearly all frequencies (C70), with the difference being statistically significant (C79). This suggests volatility can serve as a reliable biomarker for cognitive processes (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C8, C41, C68-C70, C79-C80, C101 present classification results, but there are concerns. The AUC of 0.53 (C68) is only marginally above chance (0.5), and while statistically significant, the effect size is small. The claim that volatility 'significantly outperforms' spectral features (C79) is overstated\u2014Figure 4B shows \u0394AUC is positive but small. The nested cross-validation approach is appropriate, but only 42 of 96 subjects had sufficient sessions for this analysis. The conclusion that volatility is a 'promising biomarker' (C101) requires more substantial performance improvements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C42",
+      "C74",
+      "C75",
+      "C82",
+      "C83",
+      "C88"
+    ],
+    "result": "Using the MSV model to construct directional connectivity networks, the authors found significant bidirectional desynchronization between the perirhinal cortex and hippocampus in the left MTL during successful memory encoding (C42, C83). This finding is consistent with prior work showing memory-related high-frequency desynchronization (C74). No other significant directional connections were found (C75), and effects were more reliable in the left than right MTL (C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C42, C74-C75, C82-C83, C88 present the main connectivity findings. The statistical analysis is appropriate with FDR correction, the results are clearly stated with effect sizes and p-values, and the findings align with recent literature (C74, Solomon et al. 2017). The lateralization to left MTL is consistent with the verbal nature of the task. The negative result (C75) is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors compare their findings to prior work, noting agreement with Solomon et al. (2019) regarding high-frequency desynchronization during memory formation (C85, C97), but acknowledge that low-frequency connectivity increases found by Solomon et al. were not captured by their model (C86). They also note their results contradict earlier work by Fell et al. (2006) suggesting gamma-range coupling during memory formation (C95, C96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87, C95-C97 appropriately contextualize the findings within existing literature. The authors acknowledge both agreements and discrepancies with prior work, and offer reasonable interpretations (e.g., that volatility features may primarily reflect high-frequency processes, C87). The discussion of conflicting findings is balanced and appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors discuss the functional roles of the perirhinal cortex (familiarity and recency discrimination) and hippocampus (contextual binding) based on prior literature (C91, C92), and note that while these regions are important for memory retrieval (C93), the mechanisms of their interaction during memory processing remain unclear (C94). They speculate that the verbal nature of their task may explain the left MTL lateralization (C90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 provide appropriate theoretical context for interpreting the connectivity findings. The characterization of MTL subregion functions is well-cited (C91, C92, C93), and the acknowledgment of remaining uncertainties (C94) is appropriate. The speculation about task-related lateralization (C90) is reasonable but clearly marked as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C76",
+      "C77",
+      "C81",
+      "C98",
+      "C100",
+      "C102"
+    ],
+    "result": "The authors claim their MSV framework provides 'new insights into the dynamics of brain function' (C4) by allowing analysis of directed interactions without assuming variance-stationarity (C77, C81). They state this is the 'first major application of stochastic volatility models to neural time-series data' (C98) and that the model 'fully captures' how volatility changes in one region influence another (C100).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C76-C77, C81, C98, C100, C102 make broad claims about the contribution and capabilities of the method. While the MSV approach is novel in neuroscience (C98 appears accurate), the claim that it 'fully captures' inter-regional influences (C100) is overstated\u2014the model captures lag-1 linear relationships in log-volatility but may miss nonlinear or longer-lag effects. The claim of 'new insights' (C4) is supported by the specific findings but is somewhat generic. The statement that researchers 'can extend these models' (C102) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors describe additional methodological details including model assumptions (C119), referencing choices and their justification (C121-C123), anatomical localization procedures (C124-C126), and statistical analysis approaches including the use of MAP estimates for group-level inference (C127-C128) and Gaussian process regression for frequency-dependent analyses (C129-C130).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119, C121-C130 provide important methodological details. The choice of common average reference over bipolar reference is justified with clear reasoning (C122-C123). The anatomical localization using ASHS is well-cited (C124). The statistical approaches are appropriate and properly cited (C128, C129). These details support reproducibility and interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C38",
+      "C67"
+    ],
+    "result": "The authors provide background on neural recordings and memory research, including the utility of iEEG for studying cognition (C12), the role of MTL in episodic memory (C38), and prior findings on spectral correlates of memory encoding (C67). They note that high-frequency activity correlates with neuronal activity (C6) but is less clearly oscillatory than low-frequency activity (C17) and may reflect stochastic volatility (C18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C12-C13, C15-C18, C38, C67 provide well-cited background establishing the context for the study. The characterization of high-frequency activity as potentially reflecting stochastic volatility (C18) is appropriately marked as speculative and supported by citation. This background appropriately motivates the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors note that while latent process models have been applied in neuroscience for modeling spiking activity and motor cortical activity (C55), and GARCH models have been applied to EEG for studying anesthesia, sleep, and seizures (C56), these applications have been small-scale and focused on individual recording locations, neglecting inter-regional connectivity (C57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 accurately characterize prior applications of volatility models in neuroscience. The citations support the claims about previous applications (C55, C56), and the characterization of these as small-scale and univariate (C57) appropriately distinguishes the current multivariate approach.",
+    "result_type": "MINOR"
+  }
+]

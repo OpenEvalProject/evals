@@ -1,0 +1,451 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12"
+    ],
+    "result": "The study analyzed 67,885 preprints posted to bioRxiv between 2013 and 2019. BioRxiv is the largest preprint server in life sciences, with over 90,000 preprints posted since 2013, including 29,178 in 2019 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C12 provide consistent descriptive statistics about the dataset and bioRxiv's status. The numbers are internally consistent and supported by cited references and the study's own data collection methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C21",
+      "C85"
+    ],
+    "result": "The US dominates bioRxiv preprint authorship with 39.2% of preprints by senior author (26,598 manuscripts) and 51.1% with at least one US author (34,676 manuscripts), followed distantly by the UK (10.5%) and Germany.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15, C21, C85 present consistent data on country-level participation. The percentages and absolute numbers align with the total dataset size (67,885 preprints), and the findings are supported by referenced figures and tables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Country-level proportions on bioRxiv have remained remarkably stable over time from 2015-2019, though the proportion from countries outside the top seven grew slowly from 19.4% to 23.1%, with bioRxiv hosting preprints from 136 countries by end of 2019.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 describe temporal trends with specific data points that are internally consistent and supported by Figure 1d. The stability claim is substantiated by the example of Germany's proportion changing only from 4.7% to 5.4% over this period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C86",
+      "C87"
+    ],
+    "result": "Using a 'bioRxiv adoption' score that adjusts for overall scientific output, the US (2.31) and UK are overrepresented on bioRxiv, while Turkey (0.10), Iran, Malaysia, and China (0.26) are underrepresented. Ethiopia has the 10th-highest adoption score (1.08) despite only 57 preprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35, C86-C87 present a novel metric (bioRxiv adoption score) with consistent methodology and data. The calculation method is clearly described, and the results are supported by Figure 2 and SCImago data. The findings reveal meaningful patterns beyond raw preprint counts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C43"
+    ],
+    "result": "The number of authors per preprint increased linearly from 3.08 in 2014 to 4.56 in 2019 (Pearson's r=0.949, p=8.73\u00d710\u207b\u00b3\u2078), while the mean number of countries per preprint remained stable at 1.612, similar to patterns observed in published literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C42-C43 present temporal trends with strong statistical support. The correlation coefficient and p-value indicate robust linear relationship. The comparison to published literature (C38) is appropriately cited, and the stability of countries per preprint despite growing author lists is an interesting finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "36.7% of preprints (24,927) included authors from two or more countries, 4.5% (3,041) from four or more countries, with one preprint listing 343 authors from 38 countries as the maximum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 provide descriptive statistics on international collaboration that are internally consistent with the total dataset size. The specific example of the breast cancer preprint provides concrete illustration of the maximum observed collaboration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C90",
+      "C91"
+    ],
+    "result": "17 'contributor countries' were identified that appear on at least 50 international preprints but as senior author on less than 20% of them. These countries show strongly correlated characteristics: low international collaboration count, high international collaboration rate, and low senior authorship rate. The US and UK dominate as senior authors on these collaborative preprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52, C90-C91 define and characterize a novel category of countries with consistent criteria and supporting data. The three characteristics are shown to be strongly correlated (Figure 3), and specific examples (Uganda at 6%, Vietnam, etc.) support the pattern. The statistical relationships strengthen the validity of this categorization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Four statistically significant links were found between contributor countries and senior-author countries using Fisher's exact test: Australia-Bangladesh (22 of 82 preprints), Australia-Vietnam (9 of 67), UK-Thailand (50 of 187), and UK-Greece (41 of 155).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 present specific statistical findings with appropriate methodology (Fisher's exact test with Benjamini-Hochberg correction). The specific numbers are provided and the relationships are clearly documented in Figure 3d and source data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Among countries with at least 100 preprints, median downloads per preprint (first 6 months) ranged from 138.5 (Argentina) to 261.5 (Austria), with overall median of 210. Austria, Germany (235.0), Switzerland (233.0), and US (233.0) had highest medians, while Argentina, Taiwan (142), Brazil (145), and Russia (145) had lowest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 present download metrics with clear methodology (first 6 months to control for age effects). The range of values is reasonable and the country-specific data are internally consistent. Figure 4a supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Adjusted and unadjusted download counts per country are highly correlated (Spearman's rho=0.989, p=3.33\u00d710\u207b\u00b9\u2070\u2079), indicating no temporal bias from countries posting more preprints during high-download periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 present a methodological validation with extremely strong statistical support. The correlation is near-perfect, and the interpretation (C68) logically follows from the high correlation, though it is somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C92",
+      "C94"
+    ],
+    "result": "There is a weak correlation between total preprints and median downloads per country, and a positive correlation between downloads per preprint and publication rate at the country level, indicating countries with more downloads tend to have higher publication rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C92, C94 describe correlational relationships supported by Figures 4b and 4c. The characterization of one correlation as 'weak' is appropriate, and the positive relationship between downloads and publication rate is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Overall, 62.6% of pre-2019 preprints were published. Ireland had the highest publication rate (73.1%), followed by New Zealand (70.4%) and Switzerland (69.8%), while China had the lowest (43.4%), with Iran and Taiwan also in the bottom three.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 present publication rate data with clear methodology (pre-2019 preprints only to allow time for publication). The country-specific rates are supported by Figure 4d and are plausible given known differences in publication practices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C95"
+    ],
+    "result": "63 significant journal-country links were found after multiple testing correction. The US had more links than any other country (33 of 63), being listed as senior author on 41.7% of published preprints overall but 74.5% in Cell, 72.7% in Science, and 61.0% in PNAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84, C95 present statistical findings with appropriate methodology (\u03c7\u00b2 test with Benjamini-Hochberg correction). The disproportionate representation of US preprints in high-impact journals is clearly documented with specific percentages supported by Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C96"
+    ],
+    "result": "BioRxiv readers are reviewing a biased sample of worldwide scholarship, with the preprint corpus containing similar disparities to published literature. Journals can embrace preprints while perpetuating existing imbalances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C96 present interpretive conclusions that logically follow from the documented country-level disparities. C89 is supported by citations to similar findings in published literature. These are reasonable inferences from the data, though somewhat interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C138"
+    ],
+    "result": "The senior author (last position) convention is well-established in life sciences, with 91% of publications having corresponding authors in first or last position. Complete-normalized and straight counting methods are highly correlated (r=0.9971, p=4.48\u00d710\u207b\u00b9\u2079\u2077), validating senior authors as a proxy for overall authorship at the country level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112, C138 provide methodological justification for the senior author approach with strong statistical and literature support. The extremely high correlation between counting methods validates the approach, and the convention is well-documented in cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Three characteristics of contributor countries are correlated: countries with fewer international collaborations appear as senior author on fewer of those preprints; there is a negative correlation between total international collaborations and collaboration rate; and countries with high international collaboration rates are less likely to be senior authors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 describe statistical relationships supported by Figure 3 supplement 2. The correlations are clearly documented and the interpretations (C116, C118) logically follow from the data, though they involve some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C145",
+      "C146"
+    ],
+    "result": "4,985 preprints (7.3%) could not be confidently assigned a country. The most prolific 27 countries account for 95.3% of categorized preprints. Evaluation of uncategorized preprints suggests countries with low participation may be slightly undercounted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104, C145-C146 acknowledge data limitations with appropriate statistical evaluation. The sampling approach (n=307) is properly justified, and the finding that less prolific countries are underrepresented in the 'unknown' category (12.6\u00b13.9%) is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Manual corrections improved country-level accuracy of institutional assignments from 92.2\u00b12.4% to 96.5\u00b11.6% after initial corrections, and final accuracy was 95.7\u00b12.2%. A total of 12,487 institutional assignments were corrected, affecting 52,037 author entries (10.6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C144 document data quality control procedures with appropriate statistical validation using random sampling. The improvement in accuracy is clearly documented, and the extent of manual corrections (10.6% of entries) is substantial but reasonable for this type of analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "BioRxiv was chosen for analysis because it is the most broadly integrated preprint server in traditional publishing, holds the largest collection of biology preprints, has automated publication detection, but only accepts English-language submissions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 provide methodological justification for focusing on bioRxiv. The claims are supported by citations (C97) and knowledge of bioRxiv's features (C98-C100). The limitation regarding English-only submissions is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C105",
+      "C106"
+    ],
+    "result": "Bibliometric databases have well-documented biases favoring English-language publications, and field-level differences exist (genomics preprints downloaded twice as much as microbiology), which could confound country-level download differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C105-C106 acknowledge important limitations with appropriate citations. The potential confounding of country and field effects (C106) is a reasonable inference from the documented field differences (C105), showing appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Similar patterns of contributor countries have been observed in prior studies: Gonz\u00e1lez-Alcaide et al. found countries lower on the Human Development Index participated more in international collaborations, and Wong et al. found researchers from low/middle-income countries collaborated on trials but rarely as senior author.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 appropriately contextualize the findings within existing literature. The citations support the claims that similar patterns have been observed previously, strengthening the validity of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "There is a modest correlation (Spearman's rho=0.295, p=0.0489) between preprint publication rate and DOI assignment rate by country. DOI assignment varies widely: 96-99% in Germany, UK, and Brazil, but only 31% in China and 2% in Russia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122, C132-C137 document an important potential bias in publication detection. The correlation is modest but statistically significant, and the wide variation in DOI assignment rates (supported by Boudry & Chartron citation) suggests publication rates may be systematically underestimated for some countries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "It is possible that many preprint publications go undetected by bioRxiv's system. Fraser et al. found most published preprints were detected, but bioRxiv states preprints with changed titles/authors can go undetected, potentially affecting thousands of preprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C131 acknowledge an important limitation. While C129 provides some validation of detection, C128 is speculative and C131 cites only 'preliminary data.' The magnitude of this issue and its country-specific effects remain unclear, making the overall impact on results uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Published papers receive more citations if they first appeared as preprints, some journals solicit submissions from preprint servers, but relatively little is known about who benefits from preprints. Prior studies have found biases favoring wealthy English-speaking countries in citations and editorial decisions, and preprints have been praised as democratizing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10 provide appropriate background context with citations. These claims establish the motivation for the study by documenting both the potential benefits of preprints and existing concerns about bias in scientific publishing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "Country-level participation on bioRxiv differs significantly from existing patterns in scientific publishing, with comparatively wealthy countries in Europe and North America posting more preprints that are downloaded more frequently, published more consistently, and favored by major journals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is a summary conclusion that integrates findings from multiple analyses throughout the paper. It is well-supported by the documented disparities in preprint counts, downloads, publication rates, and journal preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Using harmonic mean to measure average author contribution, authors were responsible for about one-third of a preprint in 2014 but less than one-fourth as of 2019.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 presents a methodologically appropriate measure of author contribution that accounts for growing author lists. The finding is supported by the documented increase in authors per paper and is properly cited to Gl\u00e4nzel & Schubert 2005.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The average Brazilian preprint receives 37% fewer downloads than the average Dutch preprint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is presented as a rhetorical question in the discussion and appears to be calculated from the download data, but the specific comparison between Brazil and Netherlands is not explicitly documented in the results. The calculation would need to be verified against the reported median downloads.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The study was determined not to require IRB oversight. 95 preprints were excluded due to metadata collection errors, 2,409 manuscripts (3.6%) had incomplete affiliation data, and the bioRxiv API only includes corresponding author affiliations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 document methodological details and data collection limitations. These are straightforward factual statements about the study procedures and data quality issues encountered.",
+    "result_type": "MINOR"
+  }
+]

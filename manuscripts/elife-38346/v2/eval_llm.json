@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C39"
+    ],
+    "result": "Closed-loop optogenetic modulation of pyramidal cells enables bidirectional and dissociable control of gamma oscillation frequency and power. By adjusting the phase relationship between LED stimulation and the LFP, the authors demonstrate that gamma frequency and amplitude can be independently manipulated in any desired direction within frequency-power space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13-C17, and C39 collectively demonstrate robust bidirectional control of gamma oscillations through phase-specific optogenetic feedback. The experimental data in Figures 2-3 show systematic relationships between LED-LFP phase differences and changes in oscillation properties, with statistical support (n=19 experiments). The ability to independently modulate frequency and power is well-documented across multiple phase conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C40"
+    ],
+    "result": "The frequency modulation achieved through closed-loop feedback is broadly consistent with predictions from the phase response curve (PRC) previously characterized for hippocampal gamma oscillations. The relationship between LED-LFP phase difference and frequency change can be explained by the biphasic PRC shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C40 establish mechanistic consistency between current results and prior PRC characterization (Akam et al., 2012). The circular cross-correlation analysis in Figure 3d provides quantitative support for this relationship. However, the PRC alone does not explain power changes, which the authors acknowledge, suggesting additional mechanisms are involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C3"
+    ],
+    "result": "Gamma clamp modulates oscillation power by altering the temporal synchrony of pyramidal cell firing rather than changing their average firing rate. Increases in power correspond to tighter phase-locking of action potentials, while decreases in power reflect desynchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are well-supported by cell-attached recordings (Figure 4) showing that vector length changes significantly with power (p=0.02, n=12 for increases; p=0.025, n=5 for decreases) while firing rates remain constant. This dissociation between synchrony and rate is a key mechanistic insight. Statistical tests are appropriate and sample sizes are reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C35"
+    ],
+    "result": "Increases in gamma frequency are accompanied by phase advances of pyramidal cell firing relative to the LFP, suggesting that changes in pyramidal neuron spike timing are causally upstream of frequency changes. Frequency increases occur because pyramidal neurons are brought to threshold earlier in the oscillation cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is strongly supported by statistical analysis (p=8\u00d710\u207b\u2077, n=7, Hotellier test) shown in Figure 4b,c. Claims C29 and C35 represent reasonable inferences from this data combined with knowledge that inhibitory currents dominate the LFP. However, the causal claim in C29 is inferential rather than directly demonstrated through manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C4"
+    ],
+    "result": "Modulation of phasic excitatory currents in pyramidal neurons is sufficient to manipulate gamma oscillations. The phase of optogenetically-induced excitatory current relative to the LFP determines whether frequency or power increases or decreases, with excitation during the LFP downstroke increasing frequency and excitation near the trough increasing power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by voltage-clamp recordings at -70 mV (Figures 5-6, n=13). The data show clear phase-dependent effects of excitatory currents on oscillation properties. Claim C36 provides a mechanistic interpretation consistent with the timing of pyramidal cell firing. The lag between LED command and actual excitatory current (C32) due to opsin kinetics is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Phasic inhibitory currents in pyramidal neurons are large under baseline conditions, consistent with the dominant role of feedback inhibition in gamma. Changes in inhibitory currents during gamma clamp are relatively smaller than excitatory current changes and primarily affect oscillation power rather than frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by voltage-clamp recordings at 0 mV (Figure 7, n=8 cells). The data show that baseline inhibitory currents are substantial and that gamma clamp produces relatively modest changes in inhibition compared to excitation. This is consistent with established models of gamma generation emphasizing inhibitory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C7",
+      "C8"
+    ],
+    "result": "The present data, combined with prior evidence that pyramidal cells can entrain gamma oscillations, underline the importance of action potential timing in principal cells for determining the spectral and temporal properties of hippocampal gamma, arguing against models where pyramidal cells only provide tonic depolarization to interneuron networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 represents a well-supported synthesis of current results with prior work (C7, C8 citing Akam et al., 2012). The ability to manipulate gamma through pyramidal cell excitation, combined with the phase-dependent effects and changes in pyramidal cell spike timing, provides strong evidence for an active role of principal cells beyond tonic drive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C49"
+    ],
+    "result": "The gamma clamp maintains approximately constant average illumination intensity because the LFP and its derivative fluctuate around zero. This allows manipulation of oscillation properties without net changes in average neuronal firing rates, potentially preserving rate-coded information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is a valid mathematical inference from the feedback function design. Claim C49 is supported by experimental data in Figure 4c showing no change in firing rate despite power changes. However, the inference that this preserves rate-coded information is speculative, as it depends on assumptions about how information is encoded that are not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C42"
+    ],
+    "result": "Attempts to achieve gamma clamp by targeting interneurons were unsuccessful due to powerful suppression of oscillations. The weaker phase-locking and sparse firing of pyramidal cells compared to PV+ interneurons may provide a broader dynamic range for influencing oscillation properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C43 reports negative results that are not shown (\"data not shown\"), making it impossible to evaluate the quality of these experiments or whether sufficient parameter space was explored. Claim C44 is speculative, using \"may\" to indicate uncertainty. While C42 correctly cites prior work on PV+ cell properties, the inference about dynamic range lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "Closed-loop optogenetic modulation offers advantages over periodic electrical stimulation for manipulating oscillations, including the ability to desynchronize networks, avoid imposing external phase constraints, and distribute modulation across neuronal populations. This approach could provide a versatile tool for testing gamma's role in cognition and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C50 represent established knowledge about the properties and limitations of different stimulation approaches. Claim C46 is a reasonable speculation about future applications based on the demonstrated capabilities. However, the actual utility for testing gamma's role in behavior remains to be demonstrated in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study employed appropriate methodology including viral expression of C1V1 in CA1 pyramidal cells, FPGA-based real-time closed-loop control at 10 kHz, and multiple recording modalities (LFP, cell-attached, voltage-clamp) to characterize oscillation properties and underlying currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 and C51-C62 describe methodological details that appear technically sound. The use of CaMKIIa promoter for pyramidal cell targeting, CA3 ablation to isolate local circuits, appropriate filtering and sampling rates, and multiple complementary recording approaches strengthen the experimental design. However, some details are missing (e.g., number of animals, blinding procedures, criteria for slice selection).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6"
+    ],
+    "result": "Gamma-band oscillations are implicated in attention, sensory integration, and flexible communication between brain areas. Prior work has shown that hippocampal CA1 can switch between coherence states with different regions at different frequencies, and that gamma can be generated through inhibitory mechanisms alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, and C6 accurately represent established knowledge from prior literature with appropriate citations. These provide important context for the current work but do not constitute novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Inhibitory currents in principal neurons are the main determinant of the LFP during gamma oscillations, and pyramidal cells spike sparsely near the trough of the oscillation under baseline conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 appropriately cites prior work (Oren et al., 2010) establishing that inhibitory currents dominate the LFP. Claim C22 is supported by the current cell-attached recordings and consistent with prior literature (Fisahn et al., 1998). These observations provide important context for interpreting the clamp effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The principles uncovered regarding gamma modulation are not specific to the method of oscillation induction, as optogenetically and pharmacologically induced gamma show similar dynamical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is a reasonable inference based on comparison with prior work (Akam et al., 2012) showing similar PRC properties for different induction methods. However, this generalization is based on limited prior data and has not been directly tested in the current study with multiple induction methods.",
+    "result_type": "MINOR"
+  }
+]
